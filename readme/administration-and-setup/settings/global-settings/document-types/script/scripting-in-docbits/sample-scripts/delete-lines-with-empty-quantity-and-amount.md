@@ -1,4 +1,4 @@
-# Zeilen mit leerer Menge und Betrag löschen
+# Leere Zeilen löschen
 
 #### Teil 1: Zeilen mit leerer Menge und Betrag löschen
 
@@ -17,12 +17,12 @@ Dieser Abschnitt berechnet den Gesamtbetrag aus allen Zeilen einer Rechnung und 
 
 * **Initialisierung der Zeilensumme:** Beginnt mit dem Setzen einer Variable `lines_total` auf 0.0, um den Gesamtbetrag aus allen Zeilen zu akkumulieren.
 * **Summierung der Zeilenbeträge:** Iteriert über jede Zeile in der `INVOICE_TABLE`, extrahiert den `TOTAL_AMOUNT` aus jeder und addiert ihn zu `lines_total`.
-* **Abruf und Konvertierung der Rechnungssumme:** Ruft die Gesamtrechnungssumme mit einer Hilfsfunktion `get_field_value` ab und konvertiert sie in eine Gleitkommazahl.
-* **Vergleich der Summen:** Schließlich prüft es, ob die absolute Differenz zwischen der berechneten Zeilensumme (`lines_total`) und der gemeldeten Rechnungssumme (`total_amount`) einen Schwellenwert von 0,05 überschreitet. Falls ja, markiert es das Rechnungssummenfeld als ungültig mit einer anderen Hilfsfunktion `set_field_as_invalid` und gibt eine Abweichung an.
+* **Abruf und Konvertierung der Rechnungssumme:** Ruft die Gesamtrechnungssumme mit der Hilfsfunktion `get_field_value` ab und konvertiert sie in eine Gleitkommazahl.
+* **Vergleich der Summen:** Schließlich prüft es, ob die absolute Differenz zwischen der berechneten Zeilensumme (`lines_total`) und der gemeldeten Rechnungssumme (`total_amount`) einen Schwellenwert von 0,05 überschreitet. Falls ja, markiert es das Rechnungssummenfeld als ungültig mit der Hilfsfunktion `set_field_as_invalid` und gibt eine Abweichung an.
 
 ```python
 ##################################################
-# Delete lines with empty quantity and amount
+# Zeilen mit leerer Menge und Betrag löschen
 ##################################################
 
 
@@ -49,14 +49,14 @@ if tables_dict.get('INVOICE_TABLE'):
             row['is_deleted'] = True
 
 ##################################################
-# End: Delete lines with empty quantity and amount
+# Ende: Zeilen mit leerer Menge und Betrag löschen
 ##################################################
 
 ##################################################
-# Validating Line total againg invoice total
+# Zeilensumme gegen Rechnungssumme validieren
 ##################################################
 lines_total = 0.0
-# Getting Lines Total
+# Zeilensumme ermitteln
 if tables_dict.get('INVOICE_TABLE'):
     for row in tables_dict['INVOICE_TABLE']['rows']:
         line_amount = 0.0
@@ -68,23 +68,18 @@ if tables_dict.get('INVOICE_TABLE'):
                 break
         lines_total += line_amount
 
-# Getting Invoice total
+# Rechnungssumme abrufen
 total_amount = get_field_value(fields_dict, "net_amount", "0.0")
 if total_amount:
     total_amount = float(total_amount)
 
-# Comparing lines total with invoice total
+# Zeilensumme mit Rechnungssumme vergleichen
 if abs(total_amount - lines_total) > 0.05:
     set_field_as_invalid(fields_dict, "net_amount", "Invoice total mismatches lines total", "AMOUNTS_MISMATCH")
 
 ##################################################
-# End: Validating Line total againg invoice total
+# Ende: Zeilensumme gegen Rechnungssumme validieren
 ##################################################
-
-
-
-
-
 ```
 
 #### Zusammenfassung
@@ -95,5 +90,3 @@ Das Skript gewährleistet effektiv die Datenintegrität durch:
 2. Validierung der Konsistenz zwischen der Summe der einzelnen Zeilenbeträge und der Gesamtrechnungssumme, wobei Abweichungen für weitere Maßnahmen hervorgehoben werden.
 
 Diese Automatisierung hilft, genaue Finanzaufzeichnungen zu führen und kann für Systeme wie ERP, die präzise Daten für Buchhaltung und Finanzberichterstattung benötigen, entscheidend sein.
-
-

@@ -1,6 +1,6 @@
-# Skript zur Generierung erweiterter Rechnungsnummern für Docbits
+# Generierung erweiterter Rechnungsnummern - Skript für DocBits
 
-Dieses Dokument beschreibt das Skript "Generating Extended Invoice Numbers", das die Erstellung erweiterter Rechnungsnummern in Docbits automatisiert. Erweiterte Rechnungsnummern kombinieren mehrere Dokumentkennungen, wie die Rechnungs-ID und die Bestellnummer, zu einem einzigen, umfassenden Identifikator. Dieses Skript verbessert die Dokumentenrückverfolgbarkeit und vereinfacht die Datenhaltung.
+Dieses Dokument beschreibt das Skript "Generierung erweiterter Rechnungsnummern", das die Erstellung erweiterter Rechnungsnummern in DocBits automatisiert. Erweiterte Rechnungsnummern kombinieren mehrere Dokumentkennungen, wie die Rechnungs-ID und die Bestellnummer, zu einem einzigen, umfassenden Identifikator. Dieses Skript verbessert die Dokumentenrückverfolgbarkeit und vereinfacht die Datenhaltung.
 
 ### Zweck
 
@@ -16,12 +16,12 @@ Das Skript prüft das Vorhandensein der Felder Rechnungs-ID und Bestellnummer in
 invoice_id = get_field_value(fields_dict, 'invoice_id')
 purchase_order = get_field_value(fields_dict, 'purchase_order')
 
-# Combining invoice ID and purchase order number with a hyphen separator
+# Rechnungs-ID und Bestellnummer mit Bindestrich als Trennzeichen kombinieren
 extended_number = '-'.join(filter(None, [invoice_id, purchase_order]))
 
-# Check if there is an extended number to set
+# Prüfen ob eine erweiterte Nummer zum Setzen vorhanden ist
 if extended_number:
-    # Updating the 'invoice_extended_number' field with the combined value
+    # Feld 'invoice_extended_number' mit dem kombinierten Wert aktualisieren
     if not 'invoice_extended_number' in fields_dict:
         new_field = create_new_field('invoice_extended_number', extended_number)
         fields_dict['invoice_extended_number'] = new_field
@@ -29,5 +29,3 @@ if extended_number:
     else:
         set_field_value(fields_dict, 'invoice_extended_number', extended_number)
 ```
-
-

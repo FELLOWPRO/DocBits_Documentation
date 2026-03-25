@@ -1,6 +1,6 @@
-# Script de Calcul des Frais Totaux pour Docbits
+# Script de Calcul des Frais Totaux pour DocBits
 
-Le script "Calculating Total Charges" automatise le processus de sommation de divers frais et montants supplémentaires dans les documents de facture. Ce guide vous explique la configuration, la logique et l'application du script pour garantir des calculs précis des frais totaux dans vos documents.
+Le script "Calcul des Frais Totaux" automatise le processus de sommation de divers frais et montants supplémentaires dans les documents de facture. Ce guide vous explique la configuration, la logique et l'application du script pour garantir des calculs précis des frais totaux dans vos documents.
 
 ### Objectif
 
@@ -17,23 +17,23 @@ total_charges = get_field_value(fields_dict, 'total_charges', None)
 fracht = get_field_value(fields_dict, 'additional_amount_2', None)
 verpackung = get_field_value(fields_dict, 'additional_amount', None)
 
-# Initialize total to 0
+# Initialiser le total à 0
 total = 0
 
-# Add fracht to total if it exists
+# Ajouter le fret au total s'il existe
 if fracht:
     fracht = float(fracht)
     total += fracht
 
-# Add verpackung to total if it exists
+# Ajouter l'emballage au total s'il existe
 if verpackung:
     verpackung = float(verpackung)
     total += verpackung
 
-# Formatting the total to two decimal places
+# Formatage du total à deux décimales
 formatted_total = "{0:.2f}".format(total)
 
-# Checking if the total_charges field exists and updating or creating accordingly
+# Vérifier si le champ total_charges existe et mettre à jour ou créer en conséquence
 if 'total_charges' not in fields_dict:
     new_field = create_new_field('total_charges', formatted_total)
     fields_dict['total_charges'] = new_field

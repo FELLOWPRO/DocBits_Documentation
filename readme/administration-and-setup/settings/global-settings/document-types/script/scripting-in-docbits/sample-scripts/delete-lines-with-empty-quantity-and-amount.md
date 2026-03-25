@@ -22,7 +22,7 @@ Cette section calcule le montant total de toutes les lignes d'une facture et le 
 
 ```python
 ##################################################
-# Delete lines with empty quantity and amount
+# Supprimer les lignes avec quantité et montant vides
 ##################################################
 
 
@@ -49,14 +49,14 @@ if tables_dict.get('INVOICE_TABLE'):
             row['is_deleted'] = True
 
 ##################################################
-# End: Delete lines with empty quantity and amount
+# Fin : Supprimer les lignes avec quantité et montant vides
 ##################################################
 
 ##################################################
-# Validating Line total againg invoice total
+# Validation du total des lignes par rapport au total de la facture
 ##################################################
 lines_total = 0.0
-# Getting Lines Total
+# Obtenir le total des lignes
 if tables_dict.get('INVOICE_TABLE'):
     for row in tables_dict['INVOICE_TABLE']['rows']:
         line_amount = 0.0
@@ -68,23 +68,18 @@ if tables_dict.get('INVOICE_TABLE'):
                 break
         lines_total += line_amount
 
-# Getting Invoice total
+# Obtenir le total de la facture
 total_amount = get_field_value(fields_dict, "net_amount", "0.0")
 if total_amount:
     total_amount = float(total_amount)
 
-# Comparing lines total with invoice total
+# Comparer le total des lignes avec le total de la facture
 if abs(total_amount - lines_total) > 0.05:
     set_field_as_invalid(fields_dict, "net_amount", "Invoice total mismatches lines total", "AMOUNTS_MISMATCH")
 
 ##################################################
-# End: Validating Line total againg invoice total
+# Fin : Validation du total des lignes par rapport au total de la facture
 ##################################################
-
-
-
-
-
 ```
 
 #### Résumé
@@ -95,5 +90,3 @@ Le script assure efficacement l'intégrité des données en :
 2. Validant la cohérence entre la somme des montants individuels des lignes et le total global de la facture, en mettant en évidence les écarts pour des actions ultérieures.
 
 Cette automatisation aide à maintenir des registres financiers précis et peut être cruciale pour les systèmes tels que les ERP qui nécessitent des données précises pour la comptabilité et les rapports financiers.
-
-

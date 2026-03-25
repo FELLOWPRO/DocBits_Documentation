@@ -1,6 +1,6 @@
-# Script de Génération de Numéros de Facture Étendus pour Docbits
+# Script de Génération de Numéros de Facture Étendus pour DocBits
 
-Ce document détaille le script "Generating Extended Invoice Numbers", qui automatise la création de numéros de facture étendus dans Docbits. Les numéros de facture étendus combinent plusieurs identifiants de documents, tels que l'ID de facture et le numéro de bon de commande, en un seul identifiant complet. Ce script améliore la traçabilité des documents et simplifie la tenue des registres.
+Ce document détaille le script "Génération de Numéros de Facture Étendus", qui automatise la création de numéros de facture étendus dans DocBits. Les numéros de facture étendus combinent plusieurs identifiants de documents, tels que l'ID de facture et le numéro de bon de commande, en un seul identifiant complet. Ce script améliore la traçabilité des documents et simplifie la tenue des registres.
 
 ### Objectif
 
@@ -16,12 +16,12 @@ Le script vérifie la présence des champs ID de facture et numéro de bon de co
 invoice_id = get_field_value(fields_dict, 'invoice_id')
 purchase_order = get_field_value(fields_dict, 'purchase_order')
 
-# Combining invoice ID and purchase order number with a hyphen separator
+# Combiner l'ID de facture et le numéro de bon de commande avec un tiret comme séparateur
 extended_number = '-'.join(filter(None, [invoice_id, purchase_order]))
 
-# Check if there is an extended number to set
+# Vérifier s'il y a un numéro étendu à définir
 if extended_number:
-    # Updating the 'invoice_extended_number' field with the combined value
+    # Mettre à jour le champ 'invoice_extended_number' avec la valeur combinée
     if not 'invoice_extended_number' in fields_dict:
         new_field = create_new_field('invoice_extended_number', extended_number)
         fields_dict['invoice_extended_number'] = new_field
@@ -29,5 +29,3 @@ if extended_number:
     else:
         set_field_value(fields_dict, 'invoice_extended_number', extended_number)
 ```
-
-

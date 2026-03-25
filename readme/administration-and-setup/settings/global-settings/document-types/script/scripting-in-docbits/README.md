@@ -1,27 +1,27 @@
 # Scripting dans DocBits
 
-## Guide de script Docbits
+## Guide de Scripting DocBits
 
-Bienvenue dans le guide de script Docbits ! Ici, vous apprendrez à utiliser des scripts pour automatiser et améliorer le traitement de vos documents dans Docbits. Les scripts permettent la manipulation personnalisée des champs, la transformation des données et l'implémentation de la logique à travers divers types de documents.
+Bienvenue dans le guide de scripting DocBits ! Ici, vous apprendrez comment utiliser les scripts pour automatiser et améliorer votre traitement de documents dans DocBits. Les scripts permettent la manipulation personnalisée des champs, la transformation des données et l'implémentation de logique sur différents types de documents.
 
-### Pour Commencer
+### Premiers pas
 
-Les scripts dans Docbits sont écrits en Python. Ils interagissent avec les champs de documents et les métadonnées pour effectuer une large gamme d'opérations, allant du formatage simple des données à une logique complexe.
+Les scripts dans DocBits sont écrits en Python. Ils interagissent avec les champs et les métadonnées des documents pour effectuer un large éventail d'opérations, de la simple mise en forme de données à la logique complexe.
 
-**Fonctions Clés**
+#### Fonctions clés
 
-* `get_field_value(fields_dict, field_name, default=None)`: Récupère la valeur d'un champ spécifié.
-* `set_field_value(fields_dict, field_name, value)`: Définit la valeur d'un champ spécifié.
-* `create_new_field(field_name, value)`: Crée un nouveau champ avec un nom et une valeur spécifiés.
-* `format_decimal_to_locale(value, locale)`: Formate une valeur décimale selon une locale spécifiée.
+* `get_field_value(fields_dict, field_name, default=None)` : Récupère la valeur d'un champ spécifié.
+* `set_field_value(fields_dict, field_name, value)` : Définit la valeur d'un champ spécifié.
+* `create_new_field(field_name, value)` : Crée un nouveau champ avec un nom et une valeur spécifiés.
+* `format_decimal_to_locale(value, locale)` : Formate une valeur décimale selon une locale spécifiée.
 
 ### Exemples de Scripts
 
-Ci-dessous, plusieurs exemples démontrant des tâches de script courantes.
+Voici plusieurs exemples illustrant les tâches de scripting courantes.
 
-**Exemple 1 : Mapping de Devise pour les Factures**
+#### Exemple 1 : Mapping de devises pour les factures
 
-Standardiser les symboles ou textes de devise en codes de devise ISO.
+Standardiser les symboles ou textes de devises en codes ISO de devises.
 
 ```python
 currency_map = {

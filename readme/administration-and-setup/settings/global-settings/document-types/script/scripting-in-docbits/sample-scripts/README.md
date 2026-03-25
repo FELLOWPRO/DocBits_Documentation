@@ -18,6 +18,13 @@ Yaygın DocBits otomasyon kullanım senaryoları için üretime hazır script ö
 - [Yüksek Tutar için Görev](task-high-amount.md) — Büyük faturalar için onay görevi oluşturma
 - [Dinamik Zorunlu Alanlar](dynamic-required-fields.md) — Para birimine göre zorunlu alanları ayarlama
 
+### Fulltext ve Vektör Arama
+- [Yinelenen Fatura Tespiti](duplicate-invoice-detection.md) — Fulltext arama kullanarak yinelenen faturaları bulma
+- [Benzer Belge Tespiti](similar-document-detection.md) — Vektör arama kullanarak benzer belgeleri işaretleme
+- [Uyumluluk Metin Araması](compliance-text-search.md) — Uyumluluk anahtar kelimelerini arama (ör. Reverse Charge)
+- [ERP Tedarikçi Doğrulaması](erp-vendor-validation.md) — Tedarikçiyi ERP ana verilerine karşı doğrulama
+- [Eksik Alanları Geçmişten Doldurma](fill-missing-fields-from-history.md) — Benzer geçmiş belgelerden alanları otomatik doldurma
+
 ### Eski Örnekler
 - [Toplam Masrafların Hesaplanması](calculating-total-charges-script-for-docbits-1.md) — Navlun ve paketleme tutarlarını toplama
 - [Boş Satırları Silme](delete-lines-with-empty-quantity-and-amount.md) — Sıfır miktar/tutarlı satırları kaldırma

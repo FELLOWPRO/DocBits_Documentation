@@ -17,7 +17,7 @@
 ```python
 # Претрага "REVERSE CHARGE" у архиву докумената организације
 rc_docs = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="match_phrase",
     doc_type="INVOICE",
     size=5
@@ -32,7 +32,7 @@ if rc_docs:
 ```python
 # Fuzzy претрага толерише OCR грешке попут "REVERS CHARG" или "REVERSE GHARGE"
 rc_fuzzy = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="fuzzy",
     vendor_name="ACME Corp"
 )

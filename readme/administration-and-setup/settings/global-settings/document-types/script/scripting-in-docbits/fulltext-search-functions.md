@@ -8,6 +8,10 @@
 
 Функције за претрагу архива докумената, проналажење сличних докумената и упит ERP главних података. Оне претражују **све документе** организације — за разлику од `get_document_content()` који чита само текст тренутног документа.
 
+{% hint style="success" %}
+**Security:** The `org_id` is automatically injected by the script sandbox. You never need to pass it — your scripts always operate within your own organization's data.
+{% endhint %}
+
 **Извор:** `module/script/helper/document_script_functions.py`
 
 ---
@@ -17,14 +21,13 @@
 Претражује комплетан OCR текст **свих докумената** у организацији. Проналази текст у пољима `pages.pageText`, `tfidfCustomPageText` и `ai_text` преко fulltextsearch микросервиса.
 
 ```python
-fulltext_search(org_id, query, **kwargs)
+fulltext_search(query, **kwargs)
 ```
 
 **Параметри:**
 
 | Назив | Тип | Подразумевано | Опис |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | обавезно | UUID организације (користите контекстну варијаблу `org_id`) |
 | `query` | `str` | обавезно | Термин претраге (претражује се у OCR тексту свих докумената) |
 | `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (тачна фраза), `"fuzzy"` (толерантно на грешке, до 2 карактера разлике), `"prefix"` (почиње са) |
 | `doc_type` | `str` | `None` | Филтрирај по типу документа (раздвојено зарезом, нпр. `"INVOICE,CREDIT_NOTE"`) |
@@ -49,7 +52,7 @@ fulltext_search(org_id, query, **kwargs)
 **Пример — Претрага тачне фразе:**
 
 ```python
-results = fulltext_search(org_id, "REVERSE CHARGE",
+results = fulltext_search("REVERSE CHARGE",
                           doc_type="INVOICE", size=10)
 for doc in results:
     print(doc["name"], doc["ocr_content"])
@@ -59,7 +62,7 @@ for doc in results:
 
 ```python
 # Проналази "REVERSE CHARGE" чак и са OCR грешкама попут "REVERS CHARG"
-results = fulltext_search(org_id, "REVERSE CHARGE",
+results = fulltext_search("REVERSE CHARGE",
                           search_type="fuzzy",
                           vendor_name="ACME Corp")
 ```
@@ -68,7 +71,7 @@ results = fulltext_search(org_id, "REVERSE CHARGE",
 
 ```python
 # Проналази све документе који садрже речи које почињу са "Rechn"
-results = fulltext_search(org_id, "Rechn", search_type="prefix",
+results = fulltext_search("Rechn", search_type="prefix",
                           date_range="last_90_days")
 ```
 
@@ -87,14 +90,13 @@ results = fulltext_search(org_id, "Rechn", search_type="prefix",
 Проналази семантички сличне документе користећи векторска уграђивања (k-NN претрага са 384-димензионалним векторима). Корисно за проналажење докумената са сличним садржајем без обзира на тачно формулисање.
 
 ```python
-vector_search(org_id, doc_id, **kwargs)
+vector_search(doc_id, **kwargs)
 ```
 
 **Параметри:**
 
 | Назив | Тип | Подразумевано | Опис |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | обавезно | UUID организације |
 | `doc_id` | `str` | обавезно | UUID изворног документа (документ за који се траже слични) |
 | `k` | `int` | `5` | Број сличних докумената за враћање (ограничено на 50) |
 
@@ -112,7 +114,7 @@ vector_search(org_id, doc_id, **kwargs)
 
 ```python
 doc_id = document_json["doc_id"]
-similar = vector_search(org_id, doc_id, k=5)
+similar = vector_search(doc_id, k=5)
 for doc in similar:
     print(f"{doc['name']}: {doc['similarity_percent']}% слично")
 ```
@@ -128,14 +130,13 @@ for doc in similar:
 Претражује ERP главне податке (добављачи, наруџбенице, клијенти, материјали) индексиране у OpenSearch-у.
 
 ```python
-fulltext_search_erp(org_id, query, **kwargs)
+fulltext_search_erp(query, **kwargs)
 ```
 
 **Параметри:**
 
 | Назив | Тип | Подразумевано | Опис |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | обавезно | UUID организације |
 | `query` | `str` | обавезно | Термин претраге |
 | `entity_types` | `str` | `None` | Филтрирај по типу ентитета (раздвојено зарезом: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
 | `vendor_number` | `str` | `None` | Филтрирај по броју добављача |
@@ -150,7 +151,7 @@ fulltext_search_erp(org_id, query, **kwargs)
 ```python
 vendor = get_field_value(document_data, "supplier_name", "")
 if vendor:
-    matches = fulltext_search_erp(org_id, vendor,
+    matches = fulltext_search_erp(vendor,
                                    entity_types="vendor", size=5)
     if not matches:
         set_field_as_invalid(document_data, "supplier_name",
@@ -162,7 +163,7 @@ if vendor:
 ```python
 po_number = get_field_value(document_data, "purchase_order", "")
 if po_number:
-    results = fulltext_search_erp(org_id, po_number,
+    results = fulltext_search_erp(po_number,
                                    entity_types="purchase_order")
     if results:
         # Наруџбеница пронађена у ERP-у
@@ -176,14 +177,13 @@ if po_number:
 Враћа предлоге за аутоматско довршавање за термине претраге. Групише резултате по категорији (добављачи, називи фајлова, бројеви фактура).
 
 ```python
-fulltext_suggestions(org_id, query, **kwargs)
+fulltext_suggestions(query, **kwargs)
 ```
 
 **Параметри:**
 
 | Назив | Тип | Подразумевано | Опис |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | обавезно | UUID организације |
 | `query` | `str` | обавезно | Префикс / термин претраге |
 | `limit` | `int` | `10` | Максимално предлога по категорији (ограничено на 20) |
 
@@ -200,7 +200,7 @@ fulltext_suggestions(org_id, query, **kwargs)
 **Пример — Добијање предлога добављача:**
 
 ```python
-suggestions = fulltext_suggestions(org_id, "ACM", limit=5)
+suggestions = fulltext_suggestions("ACM", limit=5)
 vendor_list = suggestions.get("vendors", [])
 ```
 
@@ -214,10 +214,10 @@ vendor_list = suggestions.get("vendors", [])
 
 | Функција | Намена | Враћа |
 | -------- | ------- | ------- |
-| `fulltext_search()` | Претрага OCR текста у свим документима | `list[dict]` |
-| `vector_search()` | Проналажење семантички сличних докумената | `list[dict]` |
-| `fulltext_search_erp()` | Претрага ERP главних података | `list[dict]` |
-| `fulltext_suggestions()` | Предлози за аутоматско довршавање | `dict` |
+| `fulltext_search(query, ...)` | Претрага OCR текста у свим документима | `list[dict]` |
+| `vector_search(doc_id, ...)` | Проналажење семантички сличних докумената | `list[dict]` |
+| `fulltext_search_erp(query, ...)` | Претрага ERP главних података | `list[dict]` |
+| `fulltext_suggestions(query, ...)` | Предлози за аутоматско довршавање | `dict` |
 
 ---
 
@@ -229,14 +229,14 @@ vendor_list = suggestions.get("vendors", [])
 
 ```python
 # Ово ће бацити RuntimeError("Fulltext search license is missing")
-results = fulltext_search(org_id, "test")
+results = fulltext_search("test")
 ```
 
 За елегантно руковање овим у скриптама:
 
 ```python
 try:
-    results = fulltext_search(org_id, "test")
+    results = fulltext_search("test")
 except RuntimeError:
     # OpenSearch није активиран за ову организацију — прескочи претрагу
     results = []
@@ -246,7 +246,7 @@ except RuntimeError:
 
 ```python
 # Претражи → валидирај → постави поље
-results = fulltext_search(org_id, invoice_number,
+results = fulltext_search(invoice_number,
                           status="exported", size=1)
 if results:
     set_field_as_invalid(document_data, "invoice_id",

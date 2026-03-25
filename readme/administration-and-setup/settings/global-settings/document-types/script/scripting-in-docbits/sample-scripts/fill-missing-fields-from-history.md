@@ -21,7 +21,7 @@ supplier = get_field_value(document_data, "supplier_name", "")
 if po and not supplier:
     # Претрага архива за документе са овим бројем наруџбенице
     history = fulltext_search(
-        org_id, po,
+        po,
         doc_type="INVOICE",
         size=3
     )
@@ -46,7 +46,7 @@ po = get_field_value(document_data, "purchase_order", "")
 supplier = get_field_value(document_data, "supplier_name", "")
 
 if po and not supplier:
-    history = fulltext_search(org_id, po, doc_type="INVOICE", size=3)
+    history = fulltext_search(po, doc_type="INVOICE", size=3)
 
     for doc in history:
         if doc.get("vendor_name"):

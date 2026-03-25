@@ -1,20 +1,20 @@
 ---
-description: Un script que establece USD como moneda predeterminada y verifica si es válida o no
+description: Un script que establece USD como moneda predeterminada y verifica si es valida o no
 ---
 
 # USD como Moneda Predeterminada
 
-### Descripción General
+### Descripcion General
 
-El script está diseñado para establecer USD (Dólar estadounidense) como la moneda predeterminada para una aplicación o sistema, asegurando que todos los valores monetarios se muestren y procesen en USD a menos que se especifique lo contrario.
+El script esta disenado para establecer USD (Dolar estadounidense) como la moneda predeterminada para una aplicacion o sistema, asegurando que todos los valores monetarios se muestren y procesen en USD a menos que se especifique lo contrario.
 
 ### Objetivo
 
-El objetivo principal de este script es llenar automáticamente el campo de moneda con USD y verificar si es válido o no.
+El objetivo principal de este script es llenar automaticamente el campo de moneda con USD y verificar si es valido o no.
 
-### Implementación del Script
+### Implementacion del Script
 
-#### Fragmento de Código
+#### Fragmento de Codigo
 
 ```
 // currency = get_field_value(document_data, 'currency', None)

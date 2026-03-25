@@ -1,27 +1,27 @@
-# Script de Generación de Números de Factura Extendidos para Docbits
+# Script de Generacion de Numeros de Factura Extendidos para DocBits
 
-Este documento detalla el script "Generating Extended Invoice Numbers", que automatiza la creación de números de factura extendidos en Docbits. Los números de factura extendidos combinan múltiples identificadores de documentos, como el ID de factura y el número de orden de compra, en un solo identificador completo. Este script mejora la trazabilidad de documentos y simplifica el mantenimiento de registros.
+Este documento detalla el script "Generating Extended Invoice Numbers", que automatiza la creacion de numeros de factura extendidos en DocBits. Los numeros de factura extendidos combinan multiples identificadores de documentos, como el ID de factura y el numero de orden de compra, en un solo identificador completo. Este script mejora la trazabilidad de documentos y simplifica el mantenimiento de registros.
 
-### Propósito
+### Proposito
 
-El propósito de este script es optimizar el proceso de generación de números de factura extendidos concatenando automáticamente el ID de factura y el número de orden de compra, proporcionando así un identificador unificado y único para cada documento de factura.
+El proposito de este script es optimizar el proceso de generacion de numeros de factura extendidos concatenando automaticamente el ID de factura y el numero de orden de compra, proporcionando asi un identificador unificado y unico para cada documento de factura.
 
-### Descripción del Script
+### Descripcion del Script
 
-El script verifica la presencia de los campos ID de factura y número de orden de compra dentro del documento, concatena sus valores si ambos están presentes (separados por un guión), y actualiza o crea un nuevo campo para almacenar el valor combinado.
+El script verifica la presencia de los campos ID de factura y numero de orden de compra dentro del documento, concatena sus valores si ambos estan presentes (separados por un guion), y actualiza o crea un nuevo campo para almacenar el valor combinado.
 
-#### Fragmento de Código
+#### Fragmento de Codigo
 
 ```python
 invoice_id = get_field_value(fields_dict, 'invoice_id')
 purchase_order = get_field_value(fields_dict, 'purchase_order')
 
-# Combining invoice ID and purchase order number with a hyphen separator
+# Combinar ID de factura y numero de orden de compra con un separador de guion
 extended_number = '-'.join(filter(None, [invoice_id, purchase_order]))
 
-# Check if there is an extended number to set
+# Verificar si hay un numero extendido para establecer
 if extended_number:
-    # Updating the 'invoice_extended_number' field with the combined value
+    # Actualizar el campo 'invoice_extended_number' con el valor combinado
     if not 'invoice_extended_number' in fields_dict:
         new_field = create_new_field('invoice_extended_number', extended_number)
         fields_dict['invoice_extended_number'] = new_field
@@ -29,5 +29,3 @@ if extended_number:
     else:
         set_field_value(fields_dict, 'invoice_extended_number', extended_number)
 ```
-
-

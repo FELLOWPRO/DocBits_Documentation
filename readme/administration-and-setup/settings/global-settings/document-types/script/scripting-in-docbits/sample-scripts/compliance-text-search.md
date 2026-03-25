@@ -16,7 +16,7 @@ Sucht nach compliance-relevantem Text wie "REVERSE CHARGE" im Dokumentarchiv und
 
 ```python
 rc_docs = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="match_phrase",
     doc_type="INVOICE",
     size=5
@@ -30,7 +30,7 @@ if rc_docs:
 
 ```python
 rc_fuzzy = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="fuzzy",
     vendor_name="ACME Corp"
 )

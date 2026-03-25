@@ -19,7 +19,7 @@ vendor = get_field_value(document_data, "supplier_name", "")
 
 if vendor:
     erp_matches = fulltext_search_erp(
-        org_id, vendor,
+        vendor,
         entity_types="vendor",
         size=5
     )

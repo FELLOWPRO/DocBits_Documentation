@@ -20,7 +20,7 @@ supplier = get_field_value(document_data, "supplier_name", "")
 
 if po and not supplier:
     history = fulltext_search(
-        org_id, po,
+        po,
         doc_type="INVOICE",
         size=3
     )

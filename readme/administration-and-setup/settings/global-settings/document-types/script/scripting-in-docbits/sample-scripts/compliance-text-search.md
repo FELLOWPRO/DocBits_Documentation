@@ -17,7 +17,7 @@ Zoekt naar compliance-relevante tekst zoals "REVERSE CHARGE" in het documentarch
 ```python
 # Zoek naar "REVERSE CHARGE" in het documentarchief van de organisatie
 rc_docs = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="match_phrase",
     doc_type="INVOICE",
     size=5
@@ -32,7 +32,7 @@ if rc_docs:
 ```python
 # Fuzzy zoeken tolereert OCR-fouten zoals "REVERS CHARG" of "REVERSE GHARGE"
 rc_fuzzy = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="fuzzy",
     vendor_name="ACME Corp"
 )

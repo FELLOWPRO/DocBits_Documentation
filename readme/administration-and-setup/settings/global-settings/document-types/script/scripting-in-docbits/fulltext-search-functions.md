@@ -8,6 +8,10 @@ Deze functies vereisen dat de **OPENSEARCH\_ENABLED** licentie/voorkeur is geact
 
 Functies voor het doorzoeken van documentarchieven, het vinden van vergelijkbare documenten en het opvragen van ERP-stamgegevens. Deze zoeken in **alle documenten** van de organisatie — in tegenstelling tot `get_document_content()` dat alleen de tekst van het huidige document leest.
 
+{% hint style="success" %}
+**Security:** The `org_id` is automatically injected by the script sandbox. You never need to pass it — your scripts always operate within your own organization's data.
+{% endhint %}
+
 **Bron:** `module/script/helper/document_script_functions.py`
 
 ---
@@ -17,14 +21,13 @@ Functies voor het doorzoeken van documentarchieven, het vinden van vergelijkbare
 Doorzoekt de volledige OCR-tekst van **alle documenten** in de organisatie. Vindt tekst in de velden `pages.pageText`, `tfidfCustomPageText` en `ai_text` via de fulltextsearch-microservice.
 
 ```python
-fulltext_search(org_id, query, **kwargs)
+fulltext_search(query, **kwargs)
 ```
 
 **Parameters:**
 
 | Naam | Type | Standaard | Beschrijving |
 | ---- | ---- | --------- | ------------ |
-| `org_id` | `str` | verplicht | Organisatie-UUID (gebruik de contextvariabele `org_id`) |
 | `query` | `str` | verplicht | Zoekterm (gezocht in OCR-tekst van alle documenten) |
 | `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (exacte frase), `"fuzzy"` (fouttolerant, tot 2 tekens verschil), `"prefix"` (begint met) |
 | `doc_type` | `str` | `None` | Filter op documenttype (kommagescheiden, bijv. `"INVOICE,CREDIT_NOTE"`) |
@@ -49,7 +52,7 @@ fulltext_search(org_id, query, **kwargs)
 **Voorbeeld — Zoeken naar exacte frase:**
 
 ```python
-results = fulltext_search(org_id, "REVERSE CHARGE",
+results = fulltext_search("REVERSE CHARGE",
                           doc_type="INVOICE", size=10)
 for doc in results:
     print(doc["name"], doc["ocr_content"])
@@ -59,7 +62,7 @@ for doc in results:
 
 ```python
 # Vindt "REVERSE CHARGE" ook bij OCR-fouten zoals "REVERS CHARG"
-results = fulltext_search(org_id, "REVERSE CHARGE",
+results = fulltext_search("REVERSE CHARGE",
                           search_type="fuzzy",
                           vendor_name="ACME Corp")
 ```
@@ -68,7 +71,7 @@ results = fulltext_search(org_id, "REVERSE CHARGE",
 
 ```python
 # Vindt alle documenten met woorden die beginnen met "Rechn"
-results = fulltext_search(org_id, "Rechn", search_type="prefix",
+results = fulltext_search("Rechn", search_type="prefix",
                           date_range="last_90_days")
 ```
 
@@ -87,14 +90,13 @@ results = fulltext_search(org_id, "Rechn", search_type="prefix",
 Vindt semantisch vergelijkbare documenten met behulp van vectorembeddings (k-NN-zoekopdracht met 384-dimensionale vectoren). Handig voor het vinden van documenten met vergelijkbare inhoud ongeacht de exacte bewoording.
 
 ```python
-vector_search(org_id, doc_id, **kwargs)
+vector_search(doc_id, **kwargs)
 ```
 
 **Parameters:**
 
 | Naam | Type | Standaard | Beschrijving |
 | ---- | ---- | --------- | ------------ |
-| `org_id` | `str` | verplicht | Organisatie-UUID |
 | `doc_id` | `str` | verplicht | Brondocument-UUID (het document waarvoor vergelijkbare overeenkomsten gevonden moeten worden) |
 | `k` | `int` | `5` | Aantal vergelijkbare documenten om te retourneren (begrensd op 50) |
 
@@ -112,7 +114,7 @@ vector_search(org_id, doc_id, **kwargs)
 
 ```python
 doc_id = document_json["doc_id"]
-similar = vector_search(org_id, doc_id, k=5)
+similar = vector_search(doc_id, k=5)
 for doc in similar:
     print(f"{doc['name']}: {doc['similarity_percent']}% similar")
 ```
@@ -128,14 +130,13 @@ for doc in similar:
 Doorzoekt ERP-stamgegevens (leveranciers, inkooporders, klanten, materialen) die in OpenSearch zijn geindexeerd.
 
 ```python
-fulltext_search_erp(org_id, query, **kwargs)
+fulltext_search_erp(query, **kwargs)
 ```
 
 **Parameters:**
 
 | Naam | Type | Standaard | Beschrijving |
 | ---- | ---- | --------- | ------------ |
-| `org_id` | `str` | verplicht | Organisatie-UUID |
 | `query` | `str` | verplicht | Zoekterm |
 | `entity_types` | `str` | `None` | Filter op entiteittype (kommagescheiden: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
 | `vendor_number` | `str` | `None` | Filter op leveranciersnummer |
@@ -150,7 +151,7 @@ fulltext_search_erp(org_id, query, **kwargs)
 ```python
 vendor = get_field_value(document_data, "supplier_name", "")
 if vendor:
-    matches = fulltext_search_erp(org_id, vendor,
+    matches = fulltext_search_erp(vendor,
                                    entity_types="vendor", size=5)
     if not matches:
         set_field_as_invalid(document_data, "supplier_name",
@@ -162,7 +163,7 @@ if vendor:
 ```python
 po_number = get_field_value(document_data, "purchase_order", "")
 if po_number:
-    results = fulltext_search_erp(org_id, po_number,
+    results = fulltext_search_erp(po_number,
                                    entity_types="purchase_order")
     if results:
         # PO gevonden in ERP
@@ -176,14 +177,13 @@ if po_number:
 Retourneert autocomplete-suggesties voor zoektermen. Groepeert resultaten per categorie (leveranciers, bestandsnamen, factuurnummers).
 
 ```python
-fulltext_suggestions(org_id, query, **kwargs)
+fulltext_suggestions(query, **kwargs)
 ```
 
 **Parameters:**
 
 | Naam | Type | Standaard | Beschrijving |
 | ---- | ---- | --------- | ------------ |
-| `org_id` | `str` | verplicht | Organisatie-UUID |
 | `query` | `str` | verplicht | Prefix / zoekterm |
 | `limit` | `int` | `10` | Max suggesties per categorie (begrensd op 20) |
 
@@ -200,7 +200,7 @@ fulltext_suggestions(org_id, query, **kwargs)
 **Voorbeeld — Leverancierssuggesties ophalen:**
 
 ```python
-suggestions = fulltext_suggestions(org_id, "ACM", limit=5)
+suggestions = fulltext_suggestions("ACM", limit=5)
 vendor_list = suggestions.get("vendors", [])
 ```
 
@@ -214,10 +214,10 @@ vendor_list = suggestions.get("vendors", [])
 
 | Functie | Doel | Retourneert |
 | ------- | ---- | ----------- |
-| `fulltext_search()` | OCR-tekst doorzoeken in alle documenten | `list[dict]` |
-| `vector_search()` | Semantisch vergelijkbare documenten vinden | `list[dict]` |
-| `fulltext_search_erp()` | ERP-stamgegevens doorzoeken | `list[dict]` |
-| `fulltext_suggestions()` | Autocomplete-suggesties | `dict` |
+| `fulltext_search(query, ...)` | OCR-tekst doorzoeken in alle documenten | `list[dict]` |
+| `vector_search(doc_id, ...)` | Semantisch vergelijkbare documenten vinden | `list[dict]` |
+| `fulltext_search_erp(query, ...)` | ERP-stamgegevens doorzoeken | `list[dict]` |
+| `fulltext_suggestions(query, ...)` | Autocomplete-suggesties | `dict` |
 
 ---
 
@@ -229,14 +229,14 @@ Alle vier functies controleren automatisch de `OPENSEARCH_ENABLED`-voorkeur. Ind
 
 ```python
 # Dit genereert RuntimeError("Fulltext search license is missing")
-results = fulltext_search(org_id, "test")
+results = fulltext_search("test")
 ```
 
 Om dit elegant af te handelen in scripts:
 
 ```python
 try:
-    results = fulltext_search(org_id, "test")
+    results = fulltext_search("test")
 except RuntimeError:
     # OpenSearch niet geactiveerd voor deze organisatie — zoeken overslaan
     results = []
@@ -246,7 +246,7 @@ except RuntimeError:
 
 ```python
 # Zoeken -> valideren -> veld instellen
-results = fulltext_search(org_id, invoice_number,
+results = fulltext_search(invoice_number,
                           status="exported", size=1)
 if results:
     set_field_as_invalid(document_data, "invoice_id",

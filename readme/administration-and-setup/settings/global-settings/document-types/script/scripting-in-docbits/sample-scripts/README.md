@@ -18,6 +18,13 @@ Productieklare scriptvoorbeelden voor veelvoorkomende DocBits-automatiseringstoe
 - [Taak bij Hoog Bedrag](task-high-amount.md) — Goedkeuringstaak aanmaken voor grote facturen
 - [Dynamische Verplichte Velden](dynamic-required-fields.md) — Verplichte velden aanpassen op basis van valuta
 
+### Fulltext & Vector Zoeken
+- [Dubbele Factuur Detectie](duplicate-invoice-detection.md) — Dubbele facturen vinden via fulltext-zoekopdracht
+- [Vergelijkbare Documenten Detectie](similar-document-detection.md) — Vergelijkbare documenten markeren via vectorzoekopdracht
+- [Compliance Tekstzoeken](compliance-text-search.md) — Zoeken naar compliance-trefwoorden (bijv. Reverse Charge)
+- [ERP Leverancier Validatie](erp-vendor-validation.md) — Leverancier valideren tegen ERP-stamgegevens
+- [Ontbrekende Velden Invullen uit Historie](fill-missing-fields-from-history.md) — Velden automatisch invullen vanuit vergelijkbare eerdere documenten
+
 ### Verouderde Voorbeelden
 - [Berekening Totale Kosten](calculating-total-charges-script-for-docbits-1.md) — Vracht- en verpakkingsbedragen optellen
 - [Lege Regels Verwijderen](delete-lines-with-empty-quantity-and-amount.md) — Rijen met nul hoeveelheid/bedrag verwijderen

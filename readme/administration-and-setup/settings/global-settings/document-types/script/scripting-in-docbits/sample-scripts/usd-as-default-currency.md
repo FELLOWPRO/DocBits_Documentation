@@ -1,16 +1,16 @@
 ---
-description: Uno script che imposta USD come valuta predefinita e verifica se è valida o meno
+description: Uno script che imposta USD come valuta predefinita e verifica se e valida o meno
 ---
 
 # USD come Valuta Predefinita
 
 ### Panoramica
 
-Lo script è progettato per impostare USD (Dollaro statunitense) come valuta predefinita per un'applicazione o sistema, assicurando che tutti i valori monetari vengano visualizzati e elaborati in USD a meno che non sia specificato diversamente.
+Lo script e progettato per impostare USD (Dollaro statunitense) come valuta predefinita per un'applicazione o sistema, assicurando che tutti i valori monetari vengano visualizzati ed elaborati in USD a meno che non sia specificato diversamente.
 
 ### Obiettivo
 
-L'obiettivo principale di questo script è riempire automaticamente il campo valuta con USD e verificare se è valido o meno.
+L'obiettivo principale di questo script e compilare automaticamente il campo valuta con USD e verificare se e valida o meno.
 
 ### Implementazione dello Script
 

@@ -1,27 +1,27 @@
 # Scripting in DocBits
 
-## Guida alla Scripting di Docbits
+## Guida allo Scripting di Docbits
 
-Benvenuto nella guida alla scripting di Docbits! Qui imparerai come utilizzare gli script per automatizzare e migliorare l'elaborazione dei documenti all'interno di Docbits. Gli script consentono la manipolazione personalizzata dei campi, la trasformazione dei dati e l'implementazione della logica su vari tipi di documenti.
+Benvenuti nella guida allo scripting di Docbits! Qui imparerete come utilizzare gli script per automatizzare e migliorare l'elaborazione dei documenti in Docbits. Gli script consentono la manipolazione personalizzata dei campi, la trasformazione dei dati e l'implementazione di logiche su vari tipi di documento.
 
 ### Per Iniziare
 
-Gli script in Docbits sono scritti in Python. Interagiscono con i campi e i metadati dei documenti per eseguire una vasta gamma di operazioni, dalla semplice formattazione dei dati alla logica complessa.
+Gli script in Docbits sono scritti in Python. Interagiscono con i campi e i metadati dei documenti per eseguire un'ampia gamma di operazioni, dalla semplice formattazione dei dati alla logica complessa.
 
-**Funzioni Chiave**
+#### Funzioni Chiave
 
 * `get_field_value(fields_dict, field_name, default=None)`: Recupera il valore di un campo specificato.
 * `set_field_value(fields_dict, field_name, value)`: Imposta il valore di un campo specificato.
 * `create_new_field(field_name, value)`: Crea un nuovo campo con un nome e un valore specificati.
-* `format_decimal_to_locale(value, locale)`: Formatizza un valore decimale secondo una località specificata.
+* `format_decimal_to_locale(value, locale)`: Formatta un valore decimale secondo una localizzazione specificata.
 
-### Esempi di Script
+### Script di Esempio
 
-Di seguito sono riportati diversi esempi che dimostrano compiti comuni di scripting.
+Di seguito sono riportati diversi esempi che dimostrano attivita di scripting comuni.
 
-**Esempio 1: Mappatura della Valuta per le Fatture**
+#### Esempio 1: Mappatura Valute per Fatture
 
-Standardizza i simboli o il testo della valuta ai codici di valuta ISO.
+Standardizzare i simboli o il testo delle valute nei codici valuta ISO.
 
 ```python
 currency_map = {

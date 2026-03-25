@@ -1,10 +1,10 @@
-# Script per il Calcolo delle Spese Totali per Docbits
+# Script per il Calcolo degli Addebiti Totali per Docbits
 
-Lo script "Calculating Total Charges" automatizza il processo di somma di vari addebiti e importi aggiuntivi all'interno dei documenti di fattura. Questa guida ti illustra la configurazione, la logica e l'applicazione dello script per garantire calcoli accurati delle spese totali nei tuoi documenti.
+Lo script "Calculating Total Charges" automatizza il processo di somma di vari addebiti e importi aggiuntivi all'interno dei documenti di fattura. Questa guida illustra la configurazione, la logica e l'applicazione dello script per garantire calcoli accurati degli addebiti totali nei documenti.
 
 ### Scopo
 
-Questo script mira a fornire un modo dinamico per calcolare le spese totali su una fattura sommando diversi tipi di addebiti, come spese base, trasporto (Fracht) e imballaggio (Verpackung). Aggiorna quindi il campo delle spese totali della fattura con la somma calcolata, garantendo informazioni di fatturazione accurate.
+Questo script mira a fornire un modo dinamico per calcolare gli addebiti totali su una fattura sommando diversi tipi di addebiti, come spese base, trasporto (Fracht) e imballaggio (Verpackung). Aggiorna quindi il campo degli addebiti totali della fattura con la somma calcolata, garantendo informazioni di fatturazione accurate.
 
 ### Panoramica dello Script
 
@@ -17,23 +17,23 @@ total_charges = get_field_value(fields_dict, 'total_charges', None)
 fracht = get_field_value(fields_dict, 'additional_amount_2', None)
 verpackung = get_field_value(fields_dict, 'additional_amount', None)
 
-# Initialize total to 0
+# Inizializzare il totale a 0
 total = 0
 
-# Add fracht to total if it exists
+# Aggiungere il trasporto al totale se esiste
 if fracht:
     fracht = float(fracht)
     total += fracht
 
-# Add verpackung to total if it exists
+# Aggiungere l'imballaggio al totale se esiste
 if verpackung:
     verpackung = float(verpackung)
     total += verpackung
 
-# Formatting the total to two decimal places
+# Formattare il totale a due cifre decimali
 formatted_total = "{0:.2f}".format(total)
 
-# Checking if the total_charges field exists and updating or creating accordingly
+# Verificare se il campo total_charges esiste e aggiornare o creare di conseguenza
 if 'total_charges' not in fields_dict:
     new_field = create_new_field('total_charges', formatted_total)
     fields_dict['total_charges'] = new_field

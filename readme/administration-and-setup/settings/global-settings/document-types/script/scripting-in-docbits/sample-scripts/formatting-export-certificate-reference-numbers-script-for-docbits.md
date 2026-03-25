@@ -4,7 +4,7 @@ Questo documento descrive lo script "Formatting Export Certificate Reference Num
 
 ### Scopo
 
-L'obiettivo principale dello script è formattare i numeri di riferimento sui certificati di esportazione, assicurando che soddisfino un requisito di lunghezza predefinito aggiungendo zeri iniziali. Questa coerenza aiuta a mantenere un formato standardizzato per tutti i documenti di esportazione elaborati tramite Docbits.
+L'obiettivo principale dello script e formattare i numeri di riferimento sui certificati di esportazione, assicurando che soddisfino un requisito di lunghezza predefinito aggiungendo zeri iniziali. Questa coerenza aiuta a mantenere un formato standardizzato per tutti i documenti di esportazione elaborati tramite Docbits.
 
 ### Panoramica dello Script
 
@@ -14,10 +14,8 @@ Lo script identifica il campo `reference_number` in un certificato di esportazio
 
 ```python
 ref_number = get_field_value(fields_dict, 'reference_number')
-# Ensure the reference number meets a minimum length of 10 characters
+# Assicurarsi che il numero di riferimento abbia una lunghezza minima di 10 caratteri
 if len(ref_number) < 10:
     ref_number = ref_number.zfill(10)
     set_field_value(fields_dict, 'reference_number', ref_number)
 ```
-
-

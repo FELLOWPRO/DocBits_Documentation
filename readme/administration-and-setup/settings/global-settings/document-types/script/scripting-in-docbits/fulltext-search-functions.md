@@ -8,6 +8,10 @@ Bu fonksiyonlar, kuruluşunuz için **OPENSEARCH\_ENABLED** lisansının/tercihi
 
 Belge arşivlerini aramak, benzer belgeleri bulmak ve ERP ana verilerini sorgulamak için fonksiyonlar. Bunlar kuruluşun **tüm belgelerini** arar — yalnızca mevcut belgenin metnini okuyan `get_document_content()` fonksiyonundan farklı olarak.
 
+{% hint style="success" %}
+**Security:** The `org_id` is automatically injected by the script sandbox. You never need to pass it — your scripts always operate within your own organization's data.
+{% endhint %}
+
 **Kaynak:** `module/script/helper/document_script_functions.py`
 
 ---
@@ -17,14 +21,13 @@ Belge arşivlerini aramak, benzer belgeleri bulmak ve ERP ana verilerini sorgula
 Kuruluştaki **tüm belgelerin** tam OCR metnini arar. `pages.pageText`, `tfidfCustomPageText` ve `ai_text` alanlarında fulltextsearch mikroservisi aracılığıyla metin bulur.
 
 ```python
-fulltext_search(org_id, query, **kwargs)
+fulltext_search(query, **kwargs)
 ```
 
 **Parametreler:**
 
 | Ad | Tip | Varsayılan | Açıklama |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | zorunlu | Kuruluş UUID'si (`org_id` bağlam değişkenini kullanın) |
 | `query` | `str` | zorunlu | Arama terimi (tüm belgelerin OCR metninde aranır) |
 | `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (tam ifade), `"fuzzy"` (hata toleranslı, 2 karakter farkına kadar), `"prefix"` (ile başlayan) |
 | `doc_type` | `str` | `None` | Belge türüne göre filtrele (virgülle ayrılmış, ör. `"INVOICE,CREDIT_NOTE"`) |
@@ -49,7 +52,7 @@ fulltext_search(org_id, query, **kwargs)
 **Örnek — Tam ifade arama:**
 
 ```python
-results = fulltext_search(org_id, "REVERSE CHARGE",
+results = fulltext_search("REVERSE CHARGE",
                           doc_type="INVOICE", size=10)
 for doc in results:
     print(doc["name"], doc["ocr_content"])
@@ -59,7 +62,7 @@ for doc in results:
 
 ```python
 # "REVERS CHARG" gibi OCR hatalarında bile "REVERSE CHARGE" bulur
-results = fulltext_search(org_id, "REVERSE CHARGE",
+results = fulltext_search("REVERSE CHARGE",
                           search_type="fuzzy",
                           vendor_name="ACME Corp")
 ```
@@ -68,7 +71,7 @@ results = fulltext_search(org_id, "REVERSE CHARGE",
 
 ```python
 # "Rechn" ile başlayan kelimeleri içeren tüm belgeleri bulur
-results = fulltext_search(org_id, "Rechn", search_type="prefix",
+results = fulltext_search("Rechn", search_type="prefix",
                           date_range="last_90_days")
 ```
 
@@ -87,14 +90,13 @@ results = fulltext_search(org_id, "Rechn", search_type="prefix",
 Vektör gömmeleri kullanarak anlamsal olarak benzer belgeleri bulur (384 boyutlu vektörlerle k-NN araması). Tam ifadeden bağımsız olarak benzer içeriğe sahip belgeleri bulmak için kullanışlıdır.
 
 ```python
-vector_search(org_id, doc_id, **kwargs)
+vector_search(doc_id, **kwargs)
 ```
 
 **Parametreler:**
 
 | Ad | Tip | Varsayılan | Açıklama |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | zorunlu | Kuruluş UUID'si |
 | `doc_id` | `str` | zorunlu | Kaynak belge UUID'si (benzer eşleşmeleri bulmak istediğiniz belge) |
 | `k` | `int` | `5` | Döndürülecek benzer belge sayısı (50 ile sınırlı) |
 
@@ -112,7 +114,7 @@ vector_search(org_id, doc_id, **kwargs)
 
 ```python
 doc_id = document_json["doc_id"]
-similar = vector_search(org_id, doc_id, k=5)
+similar = vector_search(doc_id, k=5)
 for doc in similar:
     print(f"{doc['name']}: {doc['similarity_percent']}% benzer")
 ```
@@ -128,14 +130,13 @@ for doc in similar:
 OpenSearch'te indekslenmiş ERP ana verilerini (tedarikçiler, satın alma siparişleri, müşteriler, malzemeler) arar.
 
 ```python
-fulltext_search_erp(org_id, query, **kwargs)
+fulltext_search_erp(query, **kwargs)
 ```
 
 **Parametreler:**
 
 | Ad | Tip | Varsayılan | Açıklama |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | zorunlu | Kuruluş UUID'si |
 | `query` | `str` | zorunlu | Arama terimi |
 | `entity_types` | `str` | `None` | Varlık türüne göre filtrele (virgülle ayrılmış: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
 | `vendor_number` | `str` | `None` | Tedarikçi numarasına göre filtrele |
@@ -150,7 +151,7 @@ fulltext_search_erp(org_id, query, **kwargs)
 ```python
 vendor = get_field_value(document_data, "supplier_name", "")
 if vendor:
-    matches = fulltext_search_erp(org_id, vendor,
+    matches = fulltext_search_erp(vendor,
                                    entity_types="vendor", size=5)
     if not matches:
         set_field_as_invalid(document_data, "supplier_name",
@@ -162,7 +163,7 @@ if vendor:
 ```python
 po_number = get_field_value(document_data, "purchase_order", "")
 if po_number:
-    results = fulltext_search_erp(org_id, po_number,
+    results = fulltext_search_erp(po_number,
                                    entity_types="purchase_order")
     if results:
         # SB ERP'de bulundu
@@ -176,14 +177,13 @@ if po_number:
 Arama terimleri için otomatik tamamlama önerileri döndürür. Sonuçları kategoriye göre gruplar (tedarikçiler, dosya adları, fatura numaraları).
 
 ```python
-fulltext_suggestions(org_id, query, **kwargs)
+fulltext_suggestions(query, **kwargs)
 ```
 
 **Parametreler:**
 
 | Ad | Tip | Varsayılan | Açıklama |
 | ---- | ---- | ------- | ----------- |
-| `org_id` | `str` | zorunlu | Kuruluş UUID'si |
 | `query` | `str` | zorunlu | Önek / arama terimi |
 | `limit` | `int` | `10` | Kategori başına maksimum öneri (20 ile sınırlı) |
 
@@ -200,7 +200,7 @@ fulltext_suggestions(org_id, query, **kwargs)
 **Örnek — Tedarikçi önerileri alma:**
 
 ```python
-suggestions = fulltext_suggestions(org_id, "ACM", limit=5)
+suggestions = fulltext_suggestions("ACM", limit=5)
 vendor_list = suggestions.get("vendors", [])
 ```
 
@@ -214,10 +214,10 @@ vendor_list = suggestions.get("vendors", [])
 
 | Fonksiyon | Amaç | Döndürür |
 | -------- | ------- | ------- |
-| `fulltext_search()` | Tüm belgelerde OCR metni arama | `list[dict]` |
-| `vector_search()` | Anlamsal olarak benzer belgeleri bulma | `list[dict]` |
-| `fulltext_search_erp()` | ERP ana verilerini arama | `list[dict]` |
-| `fulltext_suggestions()` | Otomatik tamamlama önerileri | `dict` |
+| `fulltext_search(query, ...)` | Tüm belgelerde OCR metni arama | `list[dict]` |
+| `vector_search(doc_id, ...)` | Anlamsal olarak benzer belgeleri bulma | `list[dict]` |
+| `fulltext_search_erp(query, ...)` | ERP ana verilerini arama | `list[dict]` |
+| `fulltext_suggestions(query, ...)` | Otomatik tamamlama önerileri | `dict` |
 
 ---
 
@@ -229,14 +229,14 @@ Dört fonksiyonun tümü `OPENSEARCH_ENABLED` tercihini otomatik olarak kontrol 
 
 ```python
 # Bu RuntimeError("Fulltext search license is missing") fırlatır
-results = fulltext_search(org_id, "test")
+results = fulltext_search("test")
 ```
 
 Scriptlerde bunu zarif bir şekilde yönetmek için:
 
 ```python
 try:
-    results = fulltext_search(org_id, "test")
+    results = fulltext_search("test")
 except RuntimeError:
     # Bu kuruluş için OpenSearch etkin değil — aramayı atla
     results = []
@@ -246,7 +246,7 @@ except RuntimeError:
 
 ```python
 # Ara → doğrula → alan ayarla
-results = fulltext_search(org_id, invoice_number,
+results = fulltext_search(invoice_number,
                           status="exported", size=1)
 if results:
     set_field_as_invalid(document_data, "invoice_id",

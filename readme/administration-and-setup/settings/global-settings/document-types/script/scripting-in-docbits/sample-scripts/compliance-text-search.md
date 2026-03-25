@@ -17,7 +17,7 @@ Belge arşivinde "REVERSE CHARGE" gibi uyumlulukla ilgili metinleri arar. Eşle�
 ```python
 # Kuruluşun belge arşivinde "REVERSE CHARGE" ara
 rc_docs = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="match_phrase",
     doc_type="INVOICE",
     size=5
@@ -32,7 +32,7 @@ if rc_docs:
 ```python
 # Bulanık arama "REVERS CHARG" veya "REVERSE GHARGE" gibi OCR hatalarını tolere eder
 rc_fuzzy = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="fuzzy",
     vendor_name="ACME Corp"
 )

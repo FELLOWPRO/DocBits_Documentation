@@ -16,7 +16,7 @@ Wykorzystuje wyszukiwanie podobienstwa oparte na wektorach do znajdowania dokume
 
 ```python
 doc_id = document_json["doc_id"]
-similar = vector_search(org_id, doc_id, k=5)
+similar = vector_search(doc_id, k=5)
 
 for doc in similar:
     if doc["similarity_percent"] > 95:

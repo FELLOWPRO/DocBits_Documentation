@@ -17,7 +17,7 @@ Wyszukuje tekst zwiazany ze zgodnosciami, taki jak "REVERSE CHARGE", w archiwum 
 ```python
 # Szukaj "REVERSE CHARGE" w archiwum dokumentow organizacji
 rc_docs = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="match_phrase",
     doc_type="INVOICE",
     size=5
@@ -32,7 +32,7 @@ if rc_docs:
 ```python
 # Wyszukiwanie rozmyte toleruje bledy OCR jak "REVERS CHARG" lub "REVERSE GHARGE"
 rc_fuzzy = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="fuzzy",
     vendor_name="ACME Corp"
 )

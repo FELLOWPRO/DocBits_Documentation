@@ -18,6 +18,13 @@ Gotowe do użycia przykłady skryptów dla typowych przypadków automatyzacji w 
 - [Zadanie dla Wysokiej Kwoty](task-high-amount.md) — Tworzenie zadania zatwierdzenia dla dużych faktur
 - [Dynamiczne Pola Wymagane](dynamic-required-fields.md) — Dostosowywanie wymaganych pól na podstawie waluty
 
+### Wyszukiwanie Fulltext i Wektorowe
+- [Wykrywanie Duplikatow Faktur](duplicate-invoice-detection.md) — Znajdowanie zduplikowanych faktur za pomoca wyszukiwania fulltext
+- [Wykrywanie Podobnych Dokumentow](similar-document-detection.md) — Oznaczanie podobnych dokumentow za pomoca wyszukiwania wektorowego
+- [Wyszukiwanie Tekstu Zgodnosci](compliance-text-search.md) — Wyszukiwanie slow kluczowych zgodnosci (np. Reverse Charge)
+- [Walidacja Dostawcy ERP](erp-vendor-validation.md) — Walidacja dostawcy wzgledem danych bazowych ERP
+- [Uzupelnianie Brakujacych Pol z Historii](fill-missing-fields-from-history.md) — Automatyczne uzupelnianie pol z podobnych wczesniejszych dokumentow
+
 ### Starsze przykłady
 - [Obliczanie Łącznych Opłat](calculating-total-charges-script-for-docbits-1.md) — Sumowanie kwot frachtu i pakowania
 - [Usuwanie Pustych Wierszy](delete-lines-with-empty-quantity-and-amount.md) — Usuwanie wierszy z zerową ilością/kwotą

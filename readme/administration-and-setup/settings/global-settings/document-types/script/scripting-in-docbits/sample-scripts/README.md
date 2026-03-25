@@ -18,6 +18,13 @@ Produkcijski spremni primeri skripti za uobicajene slucajeve automatizacije u Do
 - [Zadatak za visok iznos](task-high-amount.md) -- Kreiranje zadatka za odobrenje velikih faktura
 - [Dinamicka obavezna polja](dynamic-required-fields.md) -- Prilagodjavanje obaveznih polja na osnovu valute
 
+### Fulltext и векторска претрага
+- [Детекција дупликата фактура](duplicate-invoice-detection.md) — Проналажење дупликата фактура коришћењем fulltext претраге
+- [Детекција сличних докумената](similar-document-detection.md) — Означавање сличних докумената коришћењем векторске претраге
+- [Претрага текста усклађености](compliance-text-search.md) — Претрага кључних речи усклађености (нпр. Reverse Charge)
+- [ERP валидација добављача](erp-vendor-validation.md) — Валидација добављача према ERP главним подацима
+- [Попуњавање недостајућих поља из историје](fill-missing-fields-from-history.md) — Аутоматско попуњавање поља из сличних претходних докумената
+
 ### Stari primeri
 - [Obracun ukupnih troskova](calculating-total-charges-script-for-docbits-1.md) -- Sabiranje troskova prevoza i pakovanja
 - [Brisanje praznih redova](delete-lines-with-empty-quantity-and-amount.md) -- Uklanjanje redova sa nultom kolicinom/iznosom

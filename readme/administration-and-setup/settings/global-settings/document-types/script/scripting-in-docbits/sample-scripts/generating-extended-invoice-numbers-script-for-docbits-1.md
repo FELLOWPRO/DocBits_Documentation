@@ -16,12 +16,12 @@ Het script controleert de aanwezigheid van de velden factuur-ID en inkoopordernu
 invoice_id = get_field_value(fields_dict, 'invoice_id')
 purchase_order = get_field_value(fields_dict, 'purchase_order')
 
-# Combining invoice ID and purchase order number with a hyphen separator
+# Factuurnummer en inkoopordernummer combineren met een koppelteken als scheidingsteken
 extended_number = '-'.join(filter(None, [invoice_id, purchase_order]))
 
-# Check if there is an extended number to set
+# Controleren of er een uitgebreid nummer is om in te stellen
 if extended_number:
-    # Updating the 'invoice_extended_number' field with the combined value
+    # Het veld 'invoice_extended_number' bijwerken met de gecombineerde waarde
     if not 'invoice_extended_number' in fields_dict:
         new_field = create_new_field('invoice_extended_number', extended_number)
         fields_dict['invoice_extended_number'] = new_field

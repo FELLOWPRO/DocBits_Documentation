@@ -17,23 +17,23 @@ total_charges = get_field_value(fields_dict, 'total_charges', None)
 fracht = get_field_value(fields_dict, 'additional_amount_2', None)
 verpackung = get_field_value(fields_dict, 'additional_amount', None)
 
-# Initialize total to 0
+# Totaal initialiseren op 0
 total = 0
 
-# Add fracht to total if it exists
+# Vracht optellen bij totaal als het bestaat
 if fracht:
     fracht = float(fracht)
     total += fracht
 
-# Add verpackung to total if it exists
+# Verpakking optellen bij totaal als het bestaat
 if verpackung:
     verpackung = float(verpackung)
     total += verpackung
 
-# Formatting the total to two decimal places
+# Totaal opmaken naar twee decimalen
 formatted_total = "{0:.2f}".format(total)
 
-# Checking if the total_charges field exists and updating or creating accordingly
+# Controleren of het veld total_charges bestaat en dienovereenkomstig bijwerken of aanmaken
 if 'total_charges' not in fields_dict:
     new_field = create_new_field('total_charges', formatted_total)
     fields_dict['total_charges'] = new_field

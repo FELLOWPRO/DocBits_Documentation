@@ -22,7 +22,7 @@ Dit gedeelte berekent het totaalbedrag van alle regels in een factuur en vergeli
 
 ```python
 ##################################################
-# Delete lines with empty quantity and amount
+# Regels met lege hoeveelheid en bedrag verwijderen
 ##################################################
 
 
@@ -49,14 +49,14 @@ if tables_dict.get('INVOICE_TABLE'):
             row['is_deleted'] = True
 
 ##################################################
-# End: Delete lines with empty quantity and amount
+# Einde: Regels met lege hoeveelheid en bedrag verwijderen
 ##################################################
 
 ##################################################
-# Validating Line total againg invoice total
+# Regeltotaal valideren tegen factuurtotaal
 ##################################################
 lines_total = 0.0
-# Getting Lines Total
+# Regeltotalen ophalen
 if tables_dict.get('INVOICE_TABLE'):
     for row in tables_dict['INVOICE_TABLE']['rows']:
         line_amount = 0.0
@@ -68,17 +68,17 @@ if tables_dict.get('INVOICE_TABLE'):
                 break
         lines_total += line_amount
 
-# Getting Invoice total
+# Factuurtotaal ophalen
 total_amount = get_field_value(fields_dict, "net_amount", "0.0")
 if total_amount:
     total_amount = float(total_amount)
 
-# Comparing lines total with invoice total
+# Regeltotalen vergelijken met factuurtotaal
 if abs(total_amount - lines_total) > 0.05:
     set_field_as_invalid(fields_dict, "net_amount", "Invoice total mismatches lines total", "AMOUNTS_MISMATCH")
 
 ##################################################
-# End: Validating Line total againg invoice total
+# Einde: Regeltotaal valideren tegen factuurtotaal
 ##################################################
 
 

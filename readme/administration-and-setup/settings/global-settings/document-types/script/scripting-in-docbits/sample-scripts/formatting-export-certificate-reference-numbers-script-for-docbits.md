@@ -14,7 +14,7 @@ Het script identificeert het veld `reference_number` in een exportcertificaat, c
 
 ```python
 ref_number = get_field_value(fields_dict, 'reference_number')
-# Ensure the reference number meets a minimum length of 10 characters
+# Controleren of het referentienummer minimaal 10 tekens lang is
 if len(ref_number) < 10:
     ref_number = ref_number.zfill(10)
     set_field_value(fields_dict, 'reference_number', ref_number)

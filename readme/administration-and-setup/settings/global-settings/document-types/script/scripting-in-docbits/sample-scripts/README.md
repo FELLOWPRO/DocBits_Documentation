@@ -1,26 +1,33 @@
-# Script di Esempio
+# Scripts de Ejemplo
 
-Esempi di script pronti per la produzione per i casi d'uso comuni di automazione DocBits. Ogni esempio include lo script completo, una spiegazione passo dopo passo e i collegamenti alle funzioni utilizzate.
+Scripts de ejemplo listos para producción para casos de uso comunes de automatización en DocBits. Cada ejemplo incluye el script completo, una explicación paso a paso y enlaces a las funciones utilizadas.
 
-## Esempi per Caso d'Uso
+## Ejemplos por Caso de Uso
 
-### Validazione dei Dati
-- [Validazione Fornitore tramite Lookup](lookup-supplier-validation.md) — Validare il fornitore rispetto ai dati master
-- [Validazione Somma Tabella](table-sum-validation.md) — Verificare che i totali delle voci corrispondano all'importo netto
+### Validación de Datos
+- [Validación de Proveedor por Lookup](lookup-supplier-validation.md) — Validar proveedor contra datos maestros
+- [Validación de Suma de Tabla](table-sum-validation.md) — Verificar que los totales de línea coincidan con el importe neto
 
-### Automazione
-- [Corrispondenza Automatica OA](auto-po-matching.md) — Attivare l'abbinamento automatico OA
-- [Auto-Esportazione per Condizioni](status-auto-export.md) — Saltare la validazione per fatture a basso rischio
-- [Calcolo della Data di Scadenza](due-date-calculation.md) — Calcolare i termini di pagamento con salto dei fine settimana
+### Automatización
+- [Coincidencia Automática de OC](auto-po-matching.md) — Activar coincidencia automática de OC
+- [Auto-Exportación por Condiciones](status-auto-export.md) — Saltar validación para facturas de bajo riesgo
+- [Cálculo de Fecha de Vencimiento](due-date-calculation.md) — Calcular condiciones de pago con salto de fines de semana
 
-### Regole Aziendali
-- [Rilevamento Codice Fiscale](tax-code-detection.md) — Determinare il codice fiscale dal testo completo e dagli importi
-- [Attivita per Importo Elevato](task-high-amount.md) — Creare un'attivita di approvazione per fatture con importi elevati
-- [Campi Obbligatori Dinamici](dynamic-required-fields.md) — Regolare i campi obbligatori in base alla valuta
+### Reglas de Negocio
+- [Detección de Código Fiscal](tax-code-detection.md) — Determinar código fiscal a partir del texto completo y montos
+- [Tarea para Monto Elevado](task-high-amount.md) — Crear tarea de aprobación para facturas grandes
+- [Campos Obligatorios Dinámicos](dynamic-required-fields.md) — Ajustar campos obligatorios según la moneda
 
-### Esempi Legacy
-- [Calcolo degli Addebiti Totali](calculating-total-charges-script-for-docbits-1.md) — Sommare importi di trasporto e imballaggio
-- [Eliminare Righe Vuote](delete-lines-with-empty-quantity-and-amount.md) — Rimuovere righe con quantita/importo a zero
-- [Numeri Certificato di Esportazione](formatting-export-certificate-reference-numbers-script-for-docbits.md) — Aggiungere zeri iniziali ai numeri di riferimento
-- [Numeri Fattura Estesi](generating-extended-invoice-numbers-script-for-docbits-1.md) — Concatenare ID fattura e numero OA
-- [USD come Valuta Predefinita](usd-as-default-currency.md) — Impostare USD come valuta predefinita
+### Fulltext & Vector Search
+- [Detección de Facturas Duplicadas](duplicate-invoice-detection.md) — Encontrar duplicados de facturas mediante búsqueda fulltext
+- [Detección de Documentos Similares](similar-document-detection.md) — Marcar documentos similares mediante búsqueda vectorial
+- [Búsqueda de Texto de Cumplimiento](compliance-text-search.md) — Buscar palabras clave de cumplimiento (ej. Reverse Charge)
+- [Validación de Proveedor ERP](erp-vendor-validation.md) — Validar proveedor contra datos maestros ERP
+- [Completar Campos desde el Historial](fill-missing-fields-from-history.md) — Completar campos automáticamente desde documentos anteriores
+
+### Ejemplos Legacy
+- [Cálculo de Cargos Totales](calculating-total-charges-script-for-docbits-1.md) — Sumar montos de flete y embalaje
+- [Eliminar Líneas Vacías](delete-lines-with-empty-quantity-and-amount.md) — Eliminar filas con cantidad/monto cero
+- [Números de Certificado de Exportación](formatting-export-certificate-reference-numbers-script-for-docbits.md) — Rellenar números de referencia con ceros a la izquierda
+- [Números de Factura Extendidos](generating-extended-invoice-numbers-script-for-docbits-1.md) — Concatenar ID de factura y número de OC
+- [USD como Moneda Predeterminada](usd-as-default-currency.md) — Establecer USD como moneda predeterminada

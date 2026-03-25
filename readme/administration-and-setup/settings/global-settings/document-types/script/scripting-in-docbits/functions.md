@@ -1,30 +1,35 @@
-# Funzioni
+# Funciones
 
-La documentazione delle funzioni di scripting e stata riorganizzata in categorie mirate per una navigazione piu semplice.
+La documentación de funciones de scripting se ha reorganizado en categorías específicas para facilitar la navegación.
 
-## Categorie di Funzioni
+## Categorías de Funciones
 
-### [Funzioni di Campo](field-functions.md)
+### [Funciones de Campo](field-functions.md)
 
-Leggere, scrivere e controllare i campi del documento — `get_field_value()`, `set_field_value()`, `set_date_value()`, `set_amount_value()`, `set_field_as_invalid()`, `set_is_required()`, `set_is_hidden()`, `set_is_readonly()` e altre.
+Leer, escribir y controlar campos de documentos — `get_field_value()`, `set_field_value()`, `set_date_value()`, `set_amount_value()`, `set_field_as_invalid()`, `set_is_required()`, `set_is_hidden()`, `set_is_readonly()` y más.
 
-### [Funzioni di Tabella](table-functions.md)
+### [Funciones de Tabla](table-functions.md)
 
-Leggere, scrivere e manipolare tabelle e righe di tabella — `get_column_value()`, `set_column_value()`, `add_table_column()`, `remove_rows_from_table()`, `delete_tables()` e altre.
+Leer, escribir y manipular tablas y filas de tablas — `get_column_value()`, `set_column_value()`, `add_table_column()`, `remove_rows_from_table()`, `delete_tables()` y más.
 
-### [Funzioni di Logica Aziendale](business-logic-functions.md)
+### [Funciones de Lógica de Negocio](business-logic-functions.md)
 
-Ricerche, abbinamento OA, attivita, gestione utenti/gruppi e cambiamenti di stato — `get_lookup_records()`, `auto_po_match_for_purchase_orders()`, `get_next_sequence_number()`, `create_document_task()`, `get_group_by_name()` e altre.
+Lookups, coincidencia de OC, tareas, gestión de usuarios/grupos y cambios de estado — `get_lookup_records()`, `auto_po_match_for_purchase_orders()`, `get_next_sequence_number()`, `create_document_task()`, `get_group_by_name()` y más.
 
-### [Funzioni di Utilita](utility-functions.md)
+### [Funciones de Utilidad](utility-functions.md)
 
-Funzioni built-in di Python, operazioni su stringhe, matematica, regex, data/ora e strutture dati — `re_search()`, `strptime()`, `levenshtein_distance()`, `parse_decimal()` e altre.
+Built-ins de Python, operaciones de cadena, matemáticas, regex, fecha/hora y estructuras de datos — `re_search()`, `strptime()`, `levenshtein_distance()`, `parse_decimal()` y más.
 
-## Riferimento Rapido
+### [Funciones de Búsqueda Fulltext y Vectorial](fulltext-search-functions.md)
 
-| Categoria | Funzioni Chiave |
-| -------- | ------------- |
-| **Campi** | `get_field_value`, `set_field_value`, `set_date_value`, `set_amount_value`, `set_field_as_invalid`, `set_field_as_valid`, `set_is_required`, `set_is_readonly`, `set_is_hidden` |
-| **Tabelle** | `get_column_value`, `set_column_value`, `set_column_date_value`, `set_column_amount_value`, `add_table_column`, `remove_rows_from_table` |
-| **Logica Aziendale** | `get_lookup_records`, `auto_po_match_for_purchase_orders`, `get_next_sequence_number`, `create_document_task`, `update_document_status_with_doc_id`, `get_group_by_name` |
-| **Utilita** | `re_search`, `re_sub`, `re_findall`, `strptime`, `strftime`, `levenshtein_distance`, `parse_decimal`, `deepcopy` |
+Buscar en archivos de documentos, encontrar documentos similares y consultar datos maestros de ERP — `fulltext_search()`, `vector_search()`, `fulltext_search_erp()`, `fulltext_suggestions()`. **Disponible desde la versión 11.48.0**, requiere licencia `OPENSEARCH_ENABLED`.
+
+## Referencia Rápida
+
+| Categoría | Funciones Principales |
+| --------- | --------------------- |
+| **Campos** | `get_field_value`, `set_field_value`, `set_date_value`, `set_amount_value`, `set_field_as_invalid`, `set_field_as_valid`, `set_is_required`, `set_is_readonly`, `set_is_hidden` |
+| **Tablas** | `get_column_value`, `set_column_value`, `set_column_date_value`, `set_column_amount_value`, `add_table_column`, `remove_rows_from_table` |
+| **Lógica de Negocio** | `get_lookup_records`, `auto_po_match_for_purchase_orders`, `get_next_sequence_number`, `create_document_task`, `update_document_status_with_doc_id`, `get_group_by_name` |
+| **Búsqueda** | `fulltext_search`, `vector_search`, `fulltext_search_erp`, `fulltext_suggestions` |
+| **Utilidad** | `re_search`, `re_sub`, `re_findall`, `strptime`, `strftime`, `levenshtein_distance`, `parse_decimal`, `deepcopy` |

@@ -10,7 +10,7 @@ O script é projetado para definir USD (Dólar Americano) como a moeda padrão p
 
 ### Objetivo
 
-O objetivo principal deste script é preencher automaticamente o campo de moeda com USD e verificar se é válido ou não.
+O objetivo principal deste script é preencher automaticamente o campo de moeda com USD e verificar se é válida ou não.
 
 ### Implementação do Script
 

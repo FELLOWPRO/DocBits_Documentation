@@ -1,52 +1,52 @@
-# Funciones de Búsqueda Fulltext y Vectorial
+# Funzioni di Ricerca Fulltext e Vettoriale
 
 {% hint style="info" %}
-**Disponible desde la versión 11.48.0**
+**Disponibile dalla versione 11.48.0**
 
-Estas funciones requieren que la licencia/preferencia **OPENSEARCH\_ENABLED** esté activada para su organización. Sin ella, todas las funciones lanzan un `RuntimeError("Fulltext search license is missing")`.
+Queste funzioni richiedono che la licenza/preferenza **OPENSEARCH\_ENABLED** sia attivata per la vostra organizzazione. Senza di essa, tutte le funzioni generano un `RuntimeError("Fulltext search license is missing")`.
 {% endhint %}
 
-Funciones para buscar en archivos de documentos, encontrar documentos similares y consultar datos maestros de ERP. Estas buscan en **todos los documentos** de la organización — a diferencia de `get_document_content()` que solo lee el texto del documento actual.
+Funzioni per la ricerca negli archivi documentali, il rilevamento di documenti simili e l'interrogazione dei dati master ERP. Queste ricercano su **tutti i documenti** dell'organizzazione — a differenza di `get_document_content()` che legge solo il testo del documento corrente.
 
-**Fuente:** `module/script/helper/document_script_functions.py`
+**Sorgente:** `module/script/helper/document_script_functions.py`
 
 ---
 
 ## fulltext\_search()
 
-Busca en el texto OCR completo de **todos los documentos** de la organización. Encuentra texto en los campos `pages.pageText`, `tfidfCustomPageText` y `ai_text` a través del microservicio fulltextsearch.
+Cerca nel testo OCR completo di **tutti i documenti** dell'organizzazione. Trova testo nei campi `pages.pageText`, `tfidfCustomPageText` e `ai_text` tramite il microservizio fulltextsearch.
 
 ```python
 fulltext_search(org_id, query, **kwargs)
 ```
 
-**Parámetros:**
+**Parametri:**
 
-| Nombre | Tipo | Por defecto | Descripción |
-| ------ | ---- | ----------- | ----------- |
-| `org_id` | `str` | obligatorio | UUID de la organización (use la variable de contexto `org_id`) |
-| `query` | `str` | obligatorio | Término de búsqueda (buscado en el texto OCR de todos los documentos) |
-| `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (frase exacta), `"fuzzy"` (tolerante a errores, hasta 2 caracteres de diferencia), `"prefix"` (comienza con) |
-| `doc_type` | `str` | `None` | Filtrar por tipo de documento (separado por comas, ej. `"INVOICE,CREDIT_NOTE"`) |
-| `status` | `str` | `None` | Filtrar por estado del documento (separado por comas, ej. `"ready_for_validation,exported"`) |
-| `vendor_name` | `str` | `None` | Filtrar por nombre del proveedor |
+| Nome | Tipo | Default | Descrizione |
+| ---- | ---- | ------- | ----------- |
+| `org_id` | `str` | obbligatorio | UUID dell'organizzazione (usare la variabile di contesto `org_id`) |
+| `query` | `str` | obbligatorio | Termine di ricerca (cercato nel testo OCR di tutti i documenti) |
+| `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (frase esatta), `"fuzzy"` (tollerante agli errori, fino a 2 caratteri di differenza), `"prefix"` (inizia con) |
+| `doc_type` | `str` | `None` | Filtra per tipo di documento (separato da virgola, es. `"INVOICE,CREDIT_NOTE"`) |
+| `status` | `str` | `None` | Filtra per stato del documento (separato da virgola, es. `"ready_for_validation,exported"`) |
+| `vendor_name` | `str` | `None` | Filtra per nome del fornitore |
 | `date_range` | `str` | `None` | `"last_30_days"`, `"last_90_days"`, `"last_180_days"`, `"last_365_days"` |
-| `size` | `int` | `10` | Máx. resultados (limitado a 50) |
+| `size` | `int` | `10` | Risultati massimi (limitato a 50) |
 
-**Retorna:** `list[dict]` — Cada dict contiene:
+**Restituisce:** `list[dict]` — Ogni dict contiene:
 
-| Campo | Descripción |
+| Campo | Descrizione |
 | ----- | ----------- |
 | `doc_id` | UUID del documento |
-| `name` | Nombre del archivo (ej. `"INV-2026-001.pdf"`) |
-| `doc_type` | Tipo de documento (`"INVOICE"`, `"ORDER_CONFIRMATION"`, etc.) |
-| `vendor_name` | Nombre del proveedor |
-| `status` | Estado del documento |
-| `total_amount` | Importe total |
-| `ocr_content` | Extracto de texto coincidente del documento |
-| `highlights` | Dict con coincidencias resaltadas por campo |
+| `name` | Nome del file (es. `"INV-2026-001.pdf"`) |
+| `doc_type` | Tipo di documento (`"INVOICE"`, `"ORDER_CONFIRMATION"`, ecc.) |
+| `vendor_name` | Nome del fornitore |
+| `status` | Stato del documento |
+| `total_amount` | Importo totale |
+| `ocr_content` | Estratto del testo corrispondente dal documento |
+| `highlights` | Dict con le corrispondenze evidenziate per campo |
 
-**Ejemplo — Búsqueda de frase exacta:**
+**Esempio — Ricerca frase esatta:**
 
 ```python
 results = fulltext_search(org_id, "REVERSE CHARGE",
@@ -55,50 +55,60 @@ for doc in results:
     print(doc["name"], doc["ocr_content"])
 ```
 
-**Ejemplo — Búsqueda fuzzy (tolerante a errores OCR):**
+**Esempio — Ricerca fuzzy (tollerante agli errori OCR):**
 
 ```python
+# Trova "REVERSE CHARGE" anche con errori OCR come "REVERS CHARG"
 results = fulltext_search(org_id, "REVERSE CHARGE",
                           search_type="fuzzy",
                           vendor_name="ACME Corp")
 ```
 
-**Ejemplo — Búsqueda por prefijo:**
+**Esempio — Ricerca per prefisso:**
 
 ```python
+# Trova tutti i documenti contenenti parole che iniziano con "Rechn"
 results = fulltext_search(org_id, "Rechn", search_type="prefix",
                           date_range="last_90_days")
 ```
 
 {% hint style="warning" %}
-**Consulta vacía:** Pasar una cadena vacía retorna `[]` inmediatamente sin realizar una llamada HTTP.
+**Query vuota:** Passare una stringa vuota restituisce `[]` immediatamente senza effettuare una chiamata HTTP.
 {% endhint %}
 
 {% hint style="info" %}
-**Manejo de errores:** Si el servicio fulltextsearch no está disponible, la función retorna `[]` y registra una advertencia. **No** lanza una excepción.
+**Gestione errori:** Se il servizio fulltextsearch non e raggiungibile, la funzione restituisce `[]` e registra un avviso. **Non** genera un'eccezione.
 {% endhint %}
 
 ---
 
 ## vector\_search()
 
-Encuentra documentos semánticamente similares mediante embeddings vectoriales (búsqueda k-NN con vectores de 384 dimensiones).
+Trova documenti semanticamente simili utilizzando embedding vettoriali (ricerca k-NN con vettori a 384 dimensioni). Utile per trovare documenti con contenuto simile indipendentemente dalle parole esatte.
 
 ```python
 vector_search(org_id, doc_id, **kwargs)
 ```
 
-**Parámetros:**
+**Parametri:**
 
-| Nombre | Tipo | Por defecto | Descripción |
-| ------ | ---- | ----------- | ----------- |
-| `org_id` | `str` | obligatorio | UUID de la organización |
-| `doc_id` | `str` | obligatorio | UUID del documento fuente |
-| `k` | `int` | `5` | Número de documentos similares a retornar (limitado a 50) |
+| Nome | Tipo | Default | Descrizione |
+| ---- | ---- | ------- | ----------- |
+| `org_id` | `str` | obbligatorio | UUID dell'organizzazione |
+| `doc_id` | `str` | obbligatorio | UUID del documento sorgente (il documento per cui trovare corrispondenze simili) |
+| `k` | `int` | `5` | Numero di documenti simili da restituire (limitato a 50) |
 
-**Retorna:** `list[dict]` — Cada dict contiene: `doc_id`, `name`, `doc_type`, `similarity_score` (0-1), `similarity_percent` (0-100).
+**Restituisce:** `list[dict]` — Ogni dict contiene:
 
-**Ejemplo:**
+| Campo | Descrizione |
+| ----- | ----------- |
+| `doc_id` | UUID del documento simile |
+| `name` | Nome del file |
+| `doc_type` | Tipo di documento |
+| `similarity_score` | Punteggio di similarita grezzo (0-1) |
+| `similarity_percent` | Similarita in percentuale (0-100) |
+
+**Esempio — Trovare documenti simili:**
 
 ```python
 doc_id = document_json["doc_id"]
@@ -108,32 +118,34 @@ for doc in similar:
 ```
 
 {% hint style="info" %}
-**Cómo funciona:** Cada documento se convierte en un vector de 384 dimensiones al indexarse. La búsqueda vectorial encuentra los vecinos más cercanos en este espacio vectorial, que corresponden a documentos semánticamente similares.
+**Come funziona:** Ogni documento viene convertito in un vettore a 384 dimensioni quando viene indicizzato. La ricerca vettoriale trova i vicini piu prossimi in questo spazio vettoriale, che corrispondono a documenti semanticamente simili.
 {% endhint %}
 
 ---
 
 ## fulltext\_search\_erp()
 
-Busca en datos maestros de ERP (proveedores, órdenes de compra, clientes, materiales) indexados en OpenSearch.
+Cerca nei dati master ERP (fornitori, ordini di acquisto, clienti, materiali) indicizzati in OpenSearch.
 
 ```python
 fulltext_search_erp(org_id, query, **kwargs)
 ```
 
-**Parámetros:**
+**Parametri:**
 
-| Nombre | Tipo | Por defecto | Descripción |
-| ------ | ---- | ----------- | ----------- |
-| `org_id` | `str` | obligatorio | UUID de la organización |
-| `query` | `str` | obligatorio | Término de búsqueda |
-| `entity_types` | `str` | `None` | Filtrar por tipo de entidad (separado por comas: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
-| `vendor_number` | `str` | `None` | Filtrar por número de proveedor |
-| `vendor_name` | `str` | `None` | Filtrar por nombre del proveedor |
-| `company_code` | `str` | `None` | Filtrar por código de empresa |
-| `size` | `int` | `10` | Máx. resultados (limitado a 50) |
+| Nome | Tipo | Default | Descrizione |
+| ---- | ---- | ------- | ----------- |
+| `org_id` | `str` | obbligatorio | UUID dell'organizzazione |
+| `query` | `str` | obbligatorio | Termine di ricerca |
+| `entity_types` | `str` | `None` | Filtra per tipo di entita (separato da virgola: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
+| `vendor_number` | `str` | `None` | Filtra per numero fornitore |
+| `vendor_name` | `str` | `None` | Filtra per nome fornitore |
+| `company_code` | `str` | `None` | Filtra per codice azienda |
+| `size` | `int` | `10` | Risultati massimi (limitato a 50) |
 
-**Ejemplo — Validar proveedor en ERP:**
+**Restituisce:** `list[dict]` — Campi specifici per tipo di entita (i record fornitore hanno `vendor_number`, `vendor_name`, ecc.)
+
+**Esempio — Validare fornitore in ERP:**
 
 ```python
 vendor = get_field_value(document_data, "supplier_name", "")
@@ -142,66 +154,103 @@ if vendor:
                                    entity_types="vendor", size=5)
     if not matches:
         set_field_as_invalid(document_data, "supplier_name",
-                             "Proveedor no encontrado en datos maestros ERP")
+                             "Vendor not found in ERP master data")
+```
+
+**Esempio — Cercare ordini di acquisto:**
+
+```python
+po_number = get_field_value(document_data, "purchase_order", "")
+if po_number:
+    results = fulltext_search_erp(org_id, po_number,
+                                   entity_types="purchase_order")
+    if results:
+        # OdA trovato in ERP
+        set_field_as_valid(document_data, "purchase_order", "PO verified in ERP")
 ```
 
 ---
 
 ## fulltext\_suggestions()
 
-Retorna sugerencias de autocompletado para términos de búsqueda. Agrupa resultados por categoría (proveedores, nombres de archivo, números de factura).
+Restituisce suggerimenti di autocompletamento per i termini di ricerca. Raggruppa i risultati per categoria (fornitori, nomi file, numeri fattura).
 
 ```python
 fulltext_suggestions(org_id, query, **kwargs)
 ```
 
-**Parámetros:**
+**Parametri:**
 
-| Nombre | Tipo | Por defecto | Descripción |
-| ------ | ---- | ----------- | ----------- |
-| `org_id` | `str` | obligatorio | UUID de la organización |
-| `query` | `str` | obligatorio | Prefijo / término de búsqueda |
-| `limit` | `int` | `10` | Máx. sugerencias por categoría (limitado a 20) |
+| Nome | Tipo | Default | Descrizione |
+| ---- | ---- | ------- | ----------- |
+| `org_id` | `str` | obbligatorio | UUID dell'organizzazione |
+| `query` | `str` | obbligatorio | Prefisso / termine di ricerca |
+| `limit` | `int` | `10` | Suggerimenti massimi per categoria (limitato a 20) |
 
-**Ejemplo:**
+**Restituisce:** `dict` con suggerimenti raggruppati:
+
+```python
+{
+    "vendors": ["ACME Corp", "ACME International"],
+    "filenames": ["INV-2026-001.pdf", "INV-2026-002.pdf"],
+    "invoice_numbers": ["INV-2026-001", "INV-2026-002"]
+}
+```
+
+**Esempio — Ottenere suggerimenti fornitori:**
 
 ```python
 suggestions = fulltext_suggestions(org_id, "ACM", limit=5)
 vendor_list = suggestions.get("vendors", [])
 ```
 
----
-
-## Referencia Rápida
-
-| Función | Propósito | Retorna |
-| ------- | --------- | ------- |
-| `fulltext_search()` | Buscar texto OCR en todos los documentos | `list[dict]` |
-| `vector_search()` | Encontrar documentos semánticamente similares | `list[dict]` |
-| `fulltext_search_erp()` | Buscar en datos maestros ERP | `list[dict]` |
-| `fulltext_suggestions()` | Sugerencias de autocompletado | `dict` |
+{% hint style="warning" %}
+**Query vuota:** Passare una stringa vuota restituisce `{}` immediatamente.
+{% endhint %}
 
 ---
 
-## Patrones Comunes
+## Riferimento Rapido
 
-### Verificación de Licencia
+| Funzione | Scopo | Restituisce |
+| -------- | ----- | ----------- |
+| `fulltext_search()` | Cerca nel testo OCR di tutti i documenti | `list[dict]` |
+| `vector_search()` | Trova documenti semanticamente simili | `list[dict]` |
+| `fulltext_search_erp()` | Cerca nei dati master ERP | `list[dict]` |
+| `fulltext_suggestions()` | Suggerimenti di autocompletamento | `dict` |
+
+---
+
+## Pattern Comuni
+
+### Controllo Licenza
+
+Tutte e quattro le funzioni controllano automaticamente la preferenza `OPENSEARCH_ENABLED`. Se non abilitata:
+
+```python
+# Questo genera RuntimeError("Fulltext search license is missing")
+results = fulltext_search(org_id, "test")
+```
+
+Per gestire questo in modo elegante negli script:
 
 ```python
 try:
     results = fulltext_search(org_id, "test")
 except RuntimeError:
+    # OpenSearch non abilitato per questa organizzazione — salta la ricerca
     results = []
 ```
 
-### Combinación con Funciones de Campo
+### Combinazione con le Funzioni dei Campi
 
 ```python
+# Cerca -> valida -> imposta campo
 results = fulltext_search(org_id, invoice_number,
                           status="exported", size=1)
 if results:
     set_field_as_invalid(document_data, "invoice_id",
-                         f"Ya existe: {results[0]['name']}")
+                         f"Already exists: {results[0]['name']}")
 else:
-    set_field_as_valid(document_data, "invoice_id", "No se encontró duplicado")
+    set_field_as_valid(document_data, "invoice_id", "No duplicate found")
 ```

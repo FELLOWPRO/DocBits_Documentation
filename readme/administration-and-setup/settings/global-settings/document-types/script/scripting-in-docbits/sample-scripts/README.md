@@ -18,6 +18,13 @@ Scripts de exemplo prontos para produção para casos de uso comuns de automaç�
 - [Tarefa para Valor Elevado](task-high-amount.md) — Criar tarefa de aprovação para faturas grandes
 - [Campos Obrigatórios Dinâmicos](dynamic-required-fields.md) — Ajustar campos obrigatórios com base na moeda
 
+### Pesquisa Fulltext e Vetorial
+- [Detecção de Faturas Duplicadas](duplicate-invoice-detection.md) — Encontrar faturas duplicadas usando pesquisa fulltext
+- [Detecção de Documentos Semelhantes](similar-document-detection.md) — Sinalizar documentos semelhantes usando pesquisa vetorial
+- [Pesquisa de Texto de Conformidade](compliance-text-search.md) — Pesquisar palavras-chave de conformidade (ex: Reverse Charge)
+- [Validação de Fornecedor ERP](erp-vendor-validation.md) — Validar fornecedor contra dados mestre do ERP
+- [Preencher Campos Ausentes do Histórico](fill-missing-fields-from-history.md) — Preencher automaticamente campos a partir de documentos anteriores semelhantes
+
 ### Exemplos Legados
 - [Cálculo de Encargos Totais](calculating-total-charges-script-for-docbits-1.md) — Somar valores de frete e embalagem
 - [Eliminar Linhas Vazias](delete-lines-with-empty-quantity-and-amount.md) — Remover linhas com quantidade/valor zero

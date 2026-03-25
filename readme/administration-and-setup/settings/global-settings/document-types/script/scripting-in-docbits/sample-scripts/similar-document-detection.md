@@ -6,7 +6,7 @@
 
 ## Que fait ce script ?
 
-Utilise la recherche de similarité basée sur les vecteurs pour trouver des documents sémantiquement similaires. Si un document avec plus de 95% de similarité est trouvé, le numéro de facture est signalé comme potentiellement frauduleux ou en double.
+Utilise la recherche de similarité vectorielle pour trouver des documents sémantiquement similaires. Si un document avec plus de 95 % de similarité est trouvé, le numéro de facture est signalé comme potentiellement frauduleux ou en double.
 
 ## Déclencheur
 
@@ -16,7 +16,7 @@ Utilise la recherche de similarité basée sur les vecteurs pour trouver des doc
 
 ```python
 doc_id = document_json["doc_id"]
-similar = vector_search(org_id, doc_id, k=5)
+similar = vector_search(doc_id, k=5)
 
 for doc in similar:
     if doc["similarity_percent"] > 95:

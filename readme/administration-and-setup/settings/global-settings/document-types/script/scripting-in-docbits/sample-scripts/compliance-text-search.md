@@ -1,4 +1,4 @@
-# Recherche de Texte de Conformité (Reverse Charge)
+# Recherche de Texte de Conformité (Autoliquidation)
 
 {% hint style="info" %}
 **Disponible à partir de la version 11.48.0** — Nécessite la licence `OPENSEARCH_ENABLED`.
@@ -16,7 +16,7 @@ Recherche du texte pertinent pour la conformité comme "REVERSE CHARGE" dans l'a
 
 ```python
 rc_docs = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="match_phrase",
     doc_type="INVOICE",
     size=5
@@ -26,11 +26,11 @@ if rc_docs:
     set_field_value(document_data, "tax_code", "RC")
 ```
 
-## Variante : Recherche Fuzzy (Tolérante aux Erreurs OCR)
+## Variante : Recherche Floue (Tolérante aux Erreurs OCR)
 
 ```python
 rc_fuzzy = fulltext_search(
-    org_id, "REVERSE CHARGE",
+    "REVERSE CHARGE",
     search_type="fuzzy",
     vendor_name="ACME Corp"
 )

@@ -6,7 +6,7 @@
 
 ## Que fait ce script ?
 
-Recherche dans l'archive de documents les factures existantes avec le même numéro de facture du même fournisseur. Si un doublon potentiel est trouvé, le champ du numéro de facture est marqué comme invalide.
+Recherche dans l'archive de documents les factures existantes avec le même numéro de facture du même fournisseur. Si un doublon potentiel est trouvé, le champ numéro de facture est marqué comme invalide.
 
 ## Déclencheur
 
@@ -20,7 +20,7 @@ vendor = get_field_value(document_data, "supplier_name", "")
 
 if inv_id and vendor:
     existing = fulltext_search(
-        org_id, inv_id,
+        inv_id,
         vendor_name=vendor,
         status="ready_for_validation,exported",
         size=5

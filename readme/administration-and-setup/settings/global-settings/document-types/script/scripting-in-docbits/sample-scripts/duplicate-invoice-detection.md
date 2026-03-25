@@ -21,7 +21,7 @@ vendor = get_field_value(document_data, "supplier_name", "")
 if inv_id and vendor:
     # Cerca documenti con lo stesso numero fattura dallo stesso fornitore
     existing = fulltext_search(
-        org_id, inv_id,
+        inv_id,
         vendor_name=vendor,
         status="ready_for_validation,exported",
         size=5

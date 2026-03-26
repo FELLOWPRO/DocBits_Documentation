@@ -1,6 +1,6 @@
 # Instalacja WatchDog
 
-<figure><img src="../../.gitbook/assets/watchdog-infographic-pl.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-infographic-pl.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
 
 ### Konfigurowanie WatchDog w DocBits
 

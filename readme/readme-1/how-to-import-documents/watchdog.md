@@ -1,5 +1,7 @@
 # Vigilante
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-pt.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 **Instalação e Configurações**
 
 Após baixar o arquivo WatchDog.exe, procure por Prompt de Comando → Executar como administrador em seu dispositivo Windows.

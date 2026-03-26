@@ -70,6 +70,7 @@
     * [E-mail](end-user-and-partner-section/end-user-section/how-to-import-documents/email/README.md)
       * [IMAP](end-user-and-partner-section/end-user-section/how-to-import-documents/email/imap.md)
       * [OAuth Office365](end-user-and-partner-section/end-user-section/how-to-import-documents/email/oauth-office365.md)
+    * [WatchDog](readme-1/how-to-import-documents/watchdog.md)
   * [Errore](end-user-and-partner-section/end-user-section/error-page.md)
   * [Supporto tecnico in DocBits](end-user-and-partner-section/end-user-section/technical-support-in-docbits/README.md)
     * [Crea un ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
@@ -269,6 +270,7 @@
     * [Registrazione Fornitore](administration-and-setup/setup/supplier-portal/supplier-registration.md)
   * [Installazione di WatchDog](administration-and-setup/setup/watchdog-installation.md)
   * [Configuração do WatchDog V2](administration-and-setup/setup/watchdog-v2-configuration.md)
+  * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog-admin-faq.md)
 * [Pagina del Report](administration-and-setup/report-page.md)
 
 ## Integrazione e Configurazione Infor <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>

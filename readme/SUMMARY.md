@@ -289,9 +289,10 @@
       * [M3](setup/testing/auto-accounting/m3.md)
   * [Lieferanten-Portal](administration-and-setup/setup/supplier-portal/README.md)
     * [Lieferantenregistrierung](administration-and-setup/setup/supplier-portal/supplier-registration.md)
-  * [WatchDog Installation](administration-and-setup/setup/watchdog-installation.md)
-  * [WatchDog Konfiguration V2](administration-and-setup/setup/watchdog-v2-configuration.md)
-  * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog-admin-faq.md)
+  * [WatchDog](administration-and-setup/setup/watchdog/README.md)
+    * [WatchDog Installation](administration-and-setup/setup/watchdog/watchdog-installation.md)
+    * [WatchDog Konfiguration V2](administration-and-setup/setup/watchdog/watchdog-v2-configuration.md)
+    * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
   * [SSO-Konfiguration](setup/sso-configuration.md)
 * [Berichtsseite](administration-and-setup/report-page.md)
 

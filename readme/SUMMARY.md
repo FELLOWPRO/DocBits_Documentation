@@ -256,9 +256,10 @@
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)
   * [Tableau de bord du fournisseur](administration-and-setup/setup/supplier-portal/README.md)
     * [Inscription du Fournisseur](administration-and-setup/setup/supplier-portal/supplier-registration.md)
-  * [Installation de WatchDog](administration-and-setup/setup/watchdog-installation.md)
-  * [Configuration de WatchDog V2](administration-and-setup/setup/watchdog-v2-configuration.md)
-  * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog-admin-faq.md)
+  * [WatchDog](administration-and-setup/setup/watchdog/README.md)
+    * [Installation de WatchDog](administration-and-setup/setup/watchdog/watchdog-installation.md)
+    * [Configuration de WatchDog V2](administration-and-setup/setup/watchdog/watchdog-v2-configuration.md)
+    * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Page de rapport](administration-and-setup/report-page.md)
 
 ## Intégration et configuration d'Infor <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>

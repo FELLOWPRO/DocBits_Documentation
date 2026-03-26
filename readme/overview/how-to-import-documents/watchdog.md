@@ -1,5 +1,7 @@
 # Watchdog
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-de.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 **Installation and Settings**
 
 After downloading the WatchDog.exe file, search for Command Prompt → Run as administrator on your Windows device.

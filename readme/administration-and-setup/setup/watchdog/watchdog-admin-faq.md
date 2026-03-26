@@ -1,8 +1,8 @@
 # WatchDog Admin FAQ & Troubleshooting
 
-<figure><img src="../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog Troubleshooting Quick Reference"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-troubleshooting-infographic.svg" alt="WatchDog Troubleshooting Quick Reference"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/watchdog-infographic-tr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-infographic-tr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
 
 This documentation helps administrators understand WatchDog error messages and troubleshoot issues.
 

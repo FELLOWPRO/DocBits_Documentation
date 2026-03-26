@@ -1,5 +1,7 @@
 # WatchDog Installatie
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-nl.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 ### Configureren van WatchDog in DocBits
 
 1. **Toegang tot WatchDog-instellingen**

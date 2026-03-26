@@ -390,6 +390,7 @@
     * [Leverancier Registratie](administration-and-setup/setup/supplier-portal/supplier-registration.md)
   * [WatchDog Installatie](administration-and-setup/setup/watchdog-installation.md)
   * [WatchDog Configuratie V2](administration-and-setup/setup/watchdog-v2-configuration.md)
+  * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog-admin-faq.md)
 * [Rapport Pagina](administration-and-setup/report-page.md)
 
 ## Infor integratie en configuratie <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>

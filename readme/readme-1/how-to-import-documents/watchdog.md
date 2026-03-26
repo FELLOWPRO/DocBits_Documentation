@@ -1,5 +1,7 @@
 # Čuvar
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-sr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 **Instalacija i podešavanja**
 
 Nakon preuzimanja fajla WatchDog.exe, potražite Command Prompt → Pokreni kao administrator na vašem Windows uređaju.

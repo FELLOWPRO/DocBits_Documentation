@@ -21,6 +21,8 @@
     * [Manual Import](overview/how-to-import-documents/manual-import.md)
     * [Watchdog](overview/how-to-import-documents/watchdog.md)
     * [WatchDog Konfiguracija V2](overview/how-to-import-documents/watchdog-v2-configuration.md)
+    * [WatchDog Installation](administration-and-setup/setup/watchdog-installation.md)
+    * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog-admin-faq.md)
     * [Webhook](overview/how-to-import-documents/webhook.md)
     * [Email](overview/how-to-import-documents/email/README.md)
       * [IMAP](overview/how-to-import-documents/email/imap.md)

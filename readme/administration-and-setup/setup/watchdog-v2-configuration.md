@@ -1,5 +1,7 @@
 # Konfiguracja WatchDog
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-pl.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 Ten przewodnik wyjaśnia, jak skonfigurować WatchDog w aplikacji DocBits.
 
 ## 1. Przegląd

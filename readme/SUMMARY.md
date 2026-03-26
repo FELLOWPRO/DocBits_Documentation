@@ -388,9 +388,10 @@
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)
   * [Leveranciersportaal](administration-and-setup/setup/supplier-portal/README.md)
     * [Leverancier Registratie](administration-and-setup/setup/supplier-portal/supplier-registration.md)
-  * [WatchDog Installatie](administration-and-setup/setup/watchdog-installation.md)
-  * [WatchDog Configuratie V2](administration-and-setup/setup/watchdog-v2-configuration.md)
-  * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog-admin-faq.md)
+  * [WatchDog](administration-and-setup/setup/watchdog/README.md)
+    * [WatchDog Installatie](administration-and-setup/setup/watchdog/watchdog-installation.md)
+    * [WatchDog Configuratie V2](administration-and-setup/setup/watchdog/watchdog-v2-configuration.md)
+    * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Rapport Pagina](administration-and-setup/report-page.md)
 
 ## Infor integratie en configuratie <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>

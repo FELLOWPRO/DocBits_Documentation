@@ -1,5 +1,7 @@
 # Bekçi
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-tr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 **Kurulum ve Ayarlar**
 
 WatchDog.exe dosyasını indirdikten sonra, Windows cihazınızda Yönetici olarak çalıştır → Komut İstemi arayın.

@@ -1,5 +1,7 @@
 # WatchDog Yapılandırması
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-tr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 Bu kılavuz, WatchDog'un DocBits uygulaması içinde nasıl yapılandırılacağını açıklar.
 
 ## 1. Genel Bakış

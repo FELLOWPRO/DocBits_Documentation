@@ -4,6 +4,8 @@ This guide explains how to configure the WatchDog service within the DocBits app
 
 <figure><img src="../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="WatchDog Configuration Overview"><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-tr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 ---
 
 ## 1. General Tab

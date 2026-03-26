@@ -2,6 +2,8 @@
 
 <figure><img src="../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog Installation Steps"><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/watchdog-infographic-tr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+
 > **Recommended:** Use the modern setup described below. WatchDog configurations are now created directly in the DocBits application — no local config files needed.
 
 ## Prerequisites

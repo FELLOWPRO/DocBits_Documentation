@@ -1,8 +1,8 @@
 # WatchDog Installation
 
-<figure><img src="../../.gitbook/assets/watchdog-infographic-sr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-infographic-sr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog Installation Steps"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog Installation Steps"><figcaption></figcaption></figure>
 
 > **Recommended:** Use the modern setup described below. WatchDog configurations are now created directly in the DocBits application — no local config files needed.
 
@@ -116,21 +116,21 @@ The following V1 setup method using local config files is **deprecated**. Use th
 2. **Folder Settings**
    * Define the paths: `C:/WatchDog/Read` and `C:/WatchDog/Processed`
 
-   <figure><img src="../../.gitbook/assets/watchdog_folder_settings.png" alt="WatchDog Folder Settings"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="WatchDog Folder Settings"><figcaption></figcaption></figure>
 
 3. **General Settings**
    * Select document types, configure export destination
 
-   <figure><img src="../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="WatchDog General Settings"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="WatchDog General Settings"><figcaption></figcaption></figure>
 
 4. **Export Configurations**
    * Shows configured exports for on-premise processing
 
-   <figure><img src="../../.gitbook/assets/watchdog_export_configurations_list.png" alt="WatchDog Export Configurations"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="WatchDog Export Configurations"><figcaption></figcaption></figure>
 
 5. **Download Configuration**
    * Download `watchdog-config.json` and place in `C:\WatchDog\`
 
-   <figure><img src="../../.gitbook/assets/watchdog_download_configuration.png" alt="Download Configuration"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Download Configuration"><figcaption></figcaption></figure>
 
 </details>

@@ -204,6 +204,7 @@ Dostępność na Sandbox: 27–29 kwietnia 2026
 * Naprawiono wiele problemów z wyświetlaniem i zachowaniem zapisu udostępnionych dashboardów.
 * Naprawiono problem, w którym pole numer artykułu dostawcy było ograniczone do 30 znaków, uniemożliwiając przechowywanie dłuższych wartości.
 * Naprawiono problem, w którym wartości ceny jednostkowej i ceny jednostkowej za jednostkę powodowały błąd podczas eksportu.
+* Naprawiono problem, w którym linie PO z wykluczonym statusem (np. "Closed") nadal mogły być przeciągane i dopasowywane na ekranie PO Matching pomimo wykluczenia przez reguły dopasowania.
 
 ### Zmiany konfiguracji:
 

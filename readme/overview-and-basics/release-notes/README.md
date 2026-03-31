@@ -149,6 +149,103 @@ Sandbox-beschikbaarheid: 27–29 april 2026
 * Een probleem opgelost met datum- en tijdconversie naar US-formaat.
 * Een probleem opgelost waarbij workflows in de verkeerde volgorde werden getriggerd — workflow-uitvoering gebruikt nu correcte documentvergrendeling en wachtrijprioriteiten.
 
+## **Release HotFix 2 31 maart 2026**
+
+### DocBits-verbeteringen:
+
+* **Hybride PDF-verwerking — Door de gebruiker gestuurde XML-extractie:**\
+  Wanneer een PDF ingebedde XML-gegevens bevat, kunnen gebruikers nu kiezen of DocBits de ingebedde XML moet gebruiken voor extractie of het document als een standaard PDF moet verwerken. Dit geeft organisaties volledige controle over hoe hybride documenten worden verwerkt, zodat de extractiemethode die het beste past bij hun workflow wordt toegepast.
+
+* **AP Assignment Code op het Approval-scherm:**\
+  De AP Manager Approval-pagina bevat nu een AP Assignment Code-veld, geïntegreerd met Infor M3 CRS620. Dit stelt goedkeurders in staat om toewijzingscodes direct tijdens het goedkeuringsproces te controleren en te bevestigen zonder naar externe systemen te hoeven schakelen.
+
+* **PO-totaal afstemming met documenttotaal:**\
+  DocBits ondersteunt nu het vergelijken van het inkoopordertotaal met het totaal op het document, wat een extra validatielaag biedt tijdens PO Matching om afwijkingen eerder in het proces te detecteren.
+
+* **Update van leveranciersartikelnummer en VPE:**\
+  DocBits ondersteunt nu het bijwerken van de velden leveranciersartikelnummer en VPE (Verpackungseinheit / verpakkingseenheid) tijdens documentverwerking, waarbij de waarden bij export worden teruggesynchroniseerd naar M3.
+
+* **Verbeterde documentlayout-classificatie:**\
+  Het documentlayout-ID (tfidf_id) wordt nu alleen gegenereerd op basis van koptekst, met uitsluiting van voettekst. Dit verbetert de classificatienauwkeurigheid door te voorkomen dat voettekstinhoud de documenttypedetectie beïnvloedt.
+
+* **Export & Next-knop:**\
+  Er is een nieuwe "Export & Next"-knop toegevoegd, waarmee gebruikers het huidige document kunnen exporteren en onmiddellijk naar het volgende in de wachtrij kunnen gaan, wat de beoordelings- en exportworkflow stroomlijnt.
+
+* **Goedkeuringsproces voor kostenfacturen:**\
+  Het goedkeuringsproces voor kostenfacturen is verbeterd met geoptimaliseerde routering- en validatielogica.
+
+### Bugfixes:
+
+* Een probleem opgelost waarbij de Infor SFTP-export mislukte met een fout door een onjuist bibliotheekcommando.
+* Een probleem opgelost waarbij booleaanse selectievakjes niet konden worden weergegeven op het goedkeuringsscherm.
+* Een probleem opgelost waarbij UNMU-berichten werden verzonden, zelfs wanneer er geen afwijkingen in de inkoopeenheid waren.
+* Een probleem opgelost waarbij omzetbelasting onjuist werd geclassificeerd als toeslag op het PO Matching-scherm, wat resulteerde in een negatief onverrekend bedrag.
+* Een probleem opgelost waarbij de export mislukte wanneer de inkoopeenheid niet was ingesteld in de orderbevestiging maar wel aanwezig was in de inkooporder.
+* Een probleem opgelost waarbij de e-mailtekst ontbrak bij meerdere documenten.
+* Een probleem opgelost waarbij het artikelnummer van de leverancier niet zichtbaar was op het goedkeuringsscherm en updates niet naar M3 werden verzonden.
+* Een probleem opgelost waarbij de leveranciersexport naar Infor een fout retourneerde.
+* Een probleem opgelost waarbij PO Matching fouten produceerde tijdens de verwerking.
+* Een probleem opgelost waarbij de `findAll`-functie niet correct werkte in documentscripts.
+* Een probleem opgelost waarbij de Watchdog-kolom "Updated By" onjuist de Fellow Admin-gebruiker toonde in plaats van de werkelijke gebruiker.
+* Een probleem opgelost waarbij BOD-Mapping niet kon worden geconfigureerd in de Watchdog-interface.
+* Een probleem opgelost waarbij toeslagen onjuist werden weergegeven als onverrekende bedragen in plaats van als toeslagen.
+* Een probleem opgelost waarbij automatische matching niet werkte voor facturen met meerdere regels ondanks een bestaande matchingconfiguratie.
+* Een probleem opgelost waarbij een koppelteken ("-") in het artikelnummer werd meegenomen bij PO Matching voor de inkooporder maar werd genegeerd op de factuur, wat een valse afwijking veroorzaakte.
+* Een probleem opgelost waarbij zowel PDF- als XML-bestanden naar de exportmap werden geüpload, zelfs wanneer de "Export PDF"-schakelaar was uitgeschakeld.
+* Een probleem opgelost waarbij een ontbrekende status op de workflow-kaart verhinderde dat documenten door de workflow voortgingen.
+* Een probleem opgelost waarbij de documentkwaliteit aanzienlijk was verslechterd na import.
+* Een probleem opgelost waarbij het PO Match-scherm een fout gaf ("Cannot read properties of null").
+* Een probleem opgelost waarbij de standaard waardelijst niet kon worden bewerkt.
+* Een probleem opgelost waarbij de workflow de veldstatus niet correct kon lezen, wat onjuiste routering veroorzaakte.
+* Een probleem opgelost waarbij inkomende e-mailimports mislukten met een fout.
+* Een probleem opgelost waarbij ontbrekende regels niet correct in M3 aankwamen tijdens de export.
+* Een probleem opgelost waarbij gecodeerde en goedgekeurde facturen af en toe niet werden bijgewerkt naar de status "goedgekeurd" in M3 via de APS110-API.
+* Een probleem opgelost met de Multi Banking-configuratie die niet correct werkte.
+* Meerdere problemen opgelost met de weergave en het opslaggedrag van gedeelde dashboards.
+* Een probleem opgelost waarbij het veld leveranciersartikelnummer was beperkt tot 30 tekens, waardoor langere waarden niet konden worden opgeslagen.
+* Een probleem opgelost waarbij eenheidsprijs- en eenheidsprijs-per-waarden een fout veroorzaakten tijdens de export.
+
+### Configuratiewijzigingen:
+
+* E-mailsjablonen bijgewerkt om de "Go to Task"-knop te verwijderen.
+* Scripts en verplichte veldinstellingen voor kostenelementen aangepast.
+
+## **Release HotFix 1 16 maart 2026**
+
+### DocBits-verbeteringen:
+
+* **Documentgeschiedenis in SFTP-export:**\
+  DocBits ondersteunt nu het opnemen van de volledige documentgeschiedenis als onderdeel van de geëxporteerde XML-payload bij export naar SFTP. Deze functie is configureerbaar via de Export Settings en biedt downstream-systemen een compleet auditspoor van elke statuswijziging en actie die op een document in DocBits is uitgevoerd — inclusief wie de wijziging heeft aangebracht, wanneer deze plaatsvond en wat de vorige en huidige statussen waren. Dit is bijzonder waardevol voor compliance, traceerbaarheid en operationele analyse.
+* **Toeslagupdate bij orderbevestiging voor Infor On Premise:**\
+  Infor On Premise-klanten kunnen nu orderbevestigingen met toeslagen direct in DocBits verwerken. De toeslagen worden volledig bijgewerkt via de export, waardoor het end-to-end orderbevestigingsproces naadloos verloopt en handmatige aanpassingen downstream overbodig worden.
+*   **Standaard Layout toepassen op alle Origins:**\
+    Een nieuwe **Apply Default Layout to Origins**-knop is geïntroduceerd in het layout-configuratiescherm. Beheerders kunnen nu het standaard layout met één enkele actie naar alle origins binnen een organisatie pushen, waardoor het tijdrovende handmatige proces van het kopiëren en plakken van layout-JSON per origin vervalt. Dit is vooral nuttig bij het onboarden van nieuwe klanten waarbij meerdere origins consistent moeten worden geconfigureerd.
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(5).png)
+*   **Documenttype-selectie voor FTP-import:**\
+    FTP-importconfiguraties ondersteunen nu documenttype-toewijzing per map. Bij het configureren van een FTP-import kunnen gebruikers specificeren welk documenttype — zoals Factuur of Orderbevestiging — moet worden toegepast op alle documenten die uit die map worden geïmporteerd. Documenten worden automatisch geclassificeerd bij import, waardoor handmatige documenttype-toewijzing na opname overbodig wordt. Dit ondersteunt organisaties die meerdere documenttypen beheren over verschillende suborganisaties en mappen.
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(4).png)
+* **Export naar GLS840 voor Infor On Premise:**\
+  DocBits ondersteunt nu de export van documenten naar het GLS840-programma voor Infor On Premise-klanten, waardoor het scala aan ondersteunde exportbestemmingen voor on-premise omgevingen wordt uitgebreid.
+*   **UI-verbeteringen voor Watchdog en exportconfiguratie:**\
+    De Watchdog-configuratie- en exportconfiguratieschermen zijn vernieuwd met een verbeterde gebruikersinterface, met een overzichtelijkere lay-out en een intuïtievere ervaring voor beheerders die deze instellingen beheren.
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(1).png)
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(2).png)
+
+### Bugfixes:
+
+* Een probleem opgelost waarbij gebruikers met geldige weergaverechten geen documenten konden bekijken — de permissielogica is herschreven met een toegangsniveaucontrole ter vervanging van de eerdere groepsgebaseerde filterbenadering.
+* Verbeterde uitzonderingsafhandeling in meerdere gebieden van de applicatie voor grotere stabiliteit.
+* Een probleem opgelost waarbij booleaanse kolomtypen niet correct werden verwerkt tijdens veldextractie.
+* Een asynchroon authenticatieprobleem in het bestandsupload-endpoint opgelost.
+* UI-weergaveproblemen voor de PO-tabel op het validatiescherm opgelost.
+* Het scriptsjabloon bijgewerkt met opmerkingen voor het bijhouden van wijzigingen voor betere controleerbaarheid.
+* Een probleem opgelost met dropdownvelden die zich niet correct gedroegen op het validatiescherm.
+* Een probleem opgelost waarbij het suborganisatieveld niet vooraf was ingevuld bij het bijwerken van documenttoewijzingen vanuit het dashboard.
+
 ## **Release Winter Summit 10 december 2025**
 
 ### DocBits Verbeteringen:

@@ -159,6 +159,21 @@ Sandbox-Verfügbarkeit: 27.–29. April 2026
 * **AP Assignment Code auf dem Approval Screen:**\
   Die AP Manager Approval-Seite enthält jetzt ein AP Assignment Code-Feld, integriert mit Infor M3 CRS620. Dies ermöglicht es Genehmigern, Assignment Codes direkt während des Genehmigungsprozesses zu überprüfen und zu bestätigen, ohne zu externen Systemen wechseln zu müssen.
 
+* **PO-Gesamtabgleich mit Dokumentensumme:**\
+  DocBits unterstützt jetzt den Abgleich der Bestellsumme mit der Gesamtsumme auf dem Dokument und bietet eine zusätzliche Validierungsebene beim PO-Matching, um Abweichungen früher im Prozess zu erkennen.
+
+* **Aktualisierung von Lieferanten-Artikelnummer und VPE:**\
+  DocBits unterstützt jetzt die Aktualisierung der Felder Lieferanten-Artikelnummer und VPE (Verpackungseinheit) während der Dokumentenverarbeitung, wobei die Werte beim Export zurück nach M3 synchronisiert werden.
+
+* **Verbesserte Dokument-Layout-Klassifizierung:**\
+  Die Dokument-Layout-ID (tfidf_id) wird jetzt nur basierend auf dem Kopftext generiert, ohne Fußzeilentext. Dies verbessert die Klassifizierungsgenauigkeit, indem verhindert wird, dass Fußzeileninhalte die Dokumenttyp-Erkennung beeinflussen.
+
+* **Export & Next Button:**\
+  Ein neuer "Export & Next"-Button wurde hinzugefügt, der es Benutzern ermöglicht, das aktuelle Dokument zu exportieren und sofort zum nächsten in der Warteschlange überzugehen, was den Überprüfungs- und Export-Workflow optimiert.
+
+* **Genehmigungsprozess für Kostenrechnungen:**\
+  Der Genehmigungsprozess für Kostenrechnungen wurde mit verbesserter Routing- und Validierungslogik erweitert.
+
 ### Fehlerbehebungen:
 
 * Ein Problem wurde behoben, bei dem der Infor SFTP-Export aufgrund eines falschen Library-Befehls mit einem Fehler fehlschlug.
@@ -168,7 +183,6 @@ Sandbox-Verfügbarkeit: 27.–29. April 2026
 * Ein Problem wurde behoben, bei dem der Export fehlschlug, wenn die Bestelleinheit nicht in der Auftragsbestätigung festgelegt war, aber in der Bestellung vorhanden war.
 * Ein Problem wurde behoben, bei dem der E-Mail-Text bei mehreren Dokumenten fehlte.
 * Ein Problem wurde behoben, bei dem die Lieferanten-Artikelnummer auf dem Approval Screen nicht sichtbar war und Aktualisierungen nicht an M3 gesendet wurden.
-* Ein Problem wurde behoben, bei dem die Zuordnung von Unterorganisationen in der Produktion nicht korrekt funktionierte.
 * Ein Problem wurde behoben, bei dem der Lieferantenexport zu Infor einen Fehler zurückgab.
 * Ein Problem wurde behoben, bei dem PO-Matching während der Verarbeitung Fehler produzierte.
 * Ein Problem wurde behoben, bei dem die `findAll`-Funktion in Dokumentskripten nicht korrekt funktionierte.
@@ -183,6 +197,13 @@ Sandbox-Verfügbarkeit: 27.–29. April 2026
 * Ein Problem wurde behoben, bei dem der PO-Match-Bildschirm einen Fehler auslöste ("Cannot read properties of null").
 * Ein Problem wurde behoben, bei dem die Standard-Werteliste nicht bearbeitet werden konnte.
 * Ein Problem wurde behoben, bei dem der Workflow den Feldstatus nicht korrekt lesen konnte, was zu einer fehlerhaften Weiterleitung führte.
+* Ein Problem wurde behoben, bei dem eingehende E-Mail-Importe mit einem Fehler fehlschlugen.
+* Ein Problem wurde behoben, bei dem fehlende Positionen beim Export nicht korrekt in M3 ankamen.
+* Ein Problem wurde behoben, bei dem codierte und genehmigte Rechnungen gelegentlich nicht über die APS110-API auf den Status "genehmigt" in M3 aktualisiert wurden.
+* Ein Problem mit der Multi-Banking-Konfiguration wurde behoben, die nicht korrekt funktionierte.
+* Mehrere Probleme mit der Anzeige und dem Speicherverhalten von geteilten Dashboards wurden behoben.
+* Ein Problem wurde behoben, bei dem das Feld Lieferanten-Artikelnummer auf 30 Zeichen begrenzt war, was die Speicherung längerer Werte verhinderte.
+* Ein Problem wurde behoben, bei dem Stückpreis- und Stückpreis-pro-Werte beim Export einen Fehler verursachten.
 
 ### Konfigurationsänderungen:
 

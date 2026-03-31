@@ -159,6 +159,21 @@ Disponibilidad en Sandbox: 27–29 de abril de 2026
 * **AP Assignment Code en la pantalla de Approval:**\
   La página de AP Manager Approval ahora incluye un campo de AP Assignment Code, integrado con Infor M3 CRS620. Esto permite a los aprobadores revisar y confirmar los códigos de asignación directamente durante el proceso de aprobación sin cambiar a sistemas externos.
 
+* **Coincidencia del total de PO con el total del documento:**\
+  DocBits ahora admite la comparación del total de la orden de compra con el total del documento, proporcionando una capa de validación adicional durante el PO Matching para detectar discrepancias más temprano en el proceso.
+
+* **Actualización de número de artículo del proveedor y VPE:**\
+  DocBits ahora admite la actualización de los campos de número de artículo del proveedor y VPE (Verpackungseinheit / unidad de embalaje) durante el procesamiento de documentos, con los valores sincronizados de vuelta a M3 en la exportación.
+
+* **Clasificación mejorada del layout de documentos:**\
+  El ID de layout del documento (tfidf_id) ahora se genera basándose únicamente en el texto del encabezado, excluyendo el texto del pie de página. Esto mejora la precisión de la clasificación al evitar que el contenido del pie de página influya en la detección del tipo de documento.
+
+* **Botón Export & Next:**\
+  Se ha añadido un nuevo botón "Export & Next", que permite a los usuarios exportar el documento actual y pasar inmediatamente al siguiente en la cola, agilizando el flujo de trabajo de revisión y exportación.
+
+* **Proceso de aprobación para facturas de costos:**\
+  El proceso de aprobación para facturas de costos se ha mejorado con una lógica de enrutamiento y validación optimizada.
+
 ### Corrección de errores:
 
 * Se corrigió un problema en el que la exportación Infor SFTP fallaba con un error debido a un comando de biblioteca incorrecto.
@@ -168,7 +183,6 @@ Disponibilidad en Sandbox: 27–29 de abril de 2026
 * Se corrigió un problema en el que la exportación fallaba cuando la unidad de compra no estaba establecida en la confirmación de pedido pero estaba presente en la orden de compra.
 * Se corrigió un problema en el que faltaba el cuerpo del correo electrónico en varios documentos.
 * Se corrigió un problema en el que el número de artículo del proveedor no era visible en la pantalla de aprobación y las actualizaciones no se enviaban a M3.
-* Se corrigió un problema en el que la asignación de suborganizaciones no funcionaba correctamente en producción.
 * Se corrigió un problema en el que la exportación de proveedores a Infor devolvía un error.
 * Se corrigió un problema en el que PO Matching producía errores durante el procesamiento.
 * Se corrigió un problema en el que la función `findAll` no funcionaba correctamente en los scripts de documentos.
@@ -183,6 +197,13 @@ Disponibilidad en Sandbox: 27–29 de abril de 2026
 * Se corrigió un problema en el que la pantalla de PO Match generaba un error ("Cannot read properties of null").
 * Se corrigió un problema en el que la lista de valores predeterminada no podía editarse.
 * Se corrigió un problema en el que el workflow no podía leer el estado del campo correctamente, causando un enrutamiento incorrecto.
+* Se corrigió un problema en el que las importaciones de correo electrónico entrante fallaban con un error.
+* Se corrigió un problema en el que las líneas faltantes no llegaban correctamente a M3 durante la exportación.
+* Se corrigió un problema en el que las facturas codificadas y aprobadas ocasionalmente no se actualizaban al estado "aprobado" en M3 a través de la API APS110.
+* Se corrigió un problema con la configuración de Multi Banking que no funcionaba correctamente.
+* Se corrigieron múltiples problemas con la visualización y el comportamiento de guardado de dashboards compartidos.
+* Se corrigió un problema en el que el campo de número de artículo del proveedor estaba limitado a 30 caracteres, impidiendo el almacenamiento de valores más largos.
+* Se corrigió un problema en el que los valores de precio unitario y precio unitario por unidad causaban un error durante la exportación.
 
 ### Cambios de configuración:
 

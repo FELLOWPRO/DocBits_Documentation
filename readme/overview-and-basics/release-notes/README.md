@@ -149,6 +149,103 @@ Disponibilité sur Sandbox : 27–29 avril 2026
 * Correction d'un problème de conversion de date et heure au format américain.
 * Correction d'un problème où les flux de travail étaient déclenchés dans le mauvais ordre — l'exécution des flux de travail utilise désormais un verrouillage de document et des priorités de file d'attente appropriés.
 
+## **Release HotFix 2 31 mars 2026**
+
+### Améliorations de DocBits :
+
+* **Traitement hybride des PDF — Extraction XML contrôlée par l'utilisateur :**\
+  Lorsqu'un PDF contient des données XML intégrées, les utilisateurs peuvent désormais choisir si DocBits doit utiliser le XML intégré pour l'extraction ou traiter le document comme un PDF standard. Cela donne aux organisations un contrôle total sur la manière dont les documents hybrides sont traités, garantissant que la méthode d'extraction la plus adaptée à leur flux de travail est appliquée.
+
+* **AP Assignment Code sur l'écran d'Approval :**\
+  La page AP Manager Approval inclut désormais un champ AP Assignment Code, intégré avec Infor M3 CRS620. Cela permet aux approbateurs de vérifier et confirmer les codes d'affectation directement pendant le processus d'approbation sans passer par des systèmes externes.
+
+* **Correspondance du total PO avec le total du document :**\
+  DocBits prend désormais en charge la correspondance du total du bon de commande avec le total du document, fournissant une couche de validation supplémentaire lors du PO Matching pour détecter les écarts plus tôt dans le processus.
+
+* **Mise à jour du numéro d'article fournisseur et VPE :**\
+  DocBits prend désormais en charge la mise à jour des champs numéro d'article fournisseur et VPE (Verpackungseinheit / unité d'emballage) pendant le traitement des documents, avec synchronisation des valeurs vers M3 lors de l'exportation.
+
+* **Classification améliorée du layout de document :**\
+  L'identifiant de layout du document (tfidf_id) est désormais généré uniquement à partir du texte d'en-tête, en excluant le texte de pied de page. Cela améliore la précision de la classification en empêchant le contenu du pied de page d'influencer la détection du type de document.
+
+* **Bouton Export & Next :**\
+  Un nouveau bouton "Export & Next" a été ajouté, permettant aux utilisateurs d'exporter le document en cours et de passer immédiatement au suivant dans la file d'attente, rationalisant le flux de travail de révision et d'exportation.
+
+* **Processus d'approbation pour les factures de coûts :**\
+  Le processus d'approbation pour les factures de coûts a été amélioré avec une logique de routage et de validation optimisée.
+
+### Corrections de bugs :
+
+* Correction d'un problème où l'exportation Infor SFTP échouait avec une erreur due à une commande de bibliothèque incorrecte.
+* Correction d'un problème où les cases à cocher booléennes ne pouvaient pas être affichées sur l'écran d'approbation.
+* Correction d'un problème où des messages UNMU étaient envoyés même en l'absence de divergences dans l'unité d'achat.
+* Correction d'un problème où la taxe de vente était incorrectement classifiée comme frais sur l'écran de PO Matching, entraînant un montant non réglé négatif.
+* Correction d'un problème où l'exportation échouait lorsque l'unité d'achat n'était pas définie dans la confirmation de commande mais était présente dans le bon de commande.
+* Correction d'un problème où le corps de l'e-mail était manquant pour plusieurs documents.
+* Correction d'un problème où le numéro d'article du fournisseur n'était pas visible sur l'écran d'approbation et les mises à jour n'étaient pas envoyées à M3.
+* Correction d'un problème où l'exportation des fournisseurs vers Infor retournait une erreur.
+* Correction d'un problème où le PO Matching produisait des erreurs lors du traitement.
+* Correction d'un problème où la fonction `findAll` ne fonctionnait pas correctement dans les scripts de documents.
+* Correction d'un problème où la colonne "Updated By" de Watchdog affichait incorrectement l'utilisateur Fellow Admin au lieu de l'utilisateur réel.
+* Correction d'un problème où le BOD-Mapping ne pouvait pas être configuré dans l'interface Watchdog.
+* Correction d'un problème où les frais étaient incorrectement affichés comme montants non réglés au lieu d'être affichés comme frais.
+* Correction d'un problème où l'appariement automatique ne fonctionnait pas pour les factures multi-lignes malgré une configuration d'appariement en place.
+* Correction d'un problème où un tiret ("-") dans le numéro d'article était pris en compte lors du PO Matching pour le bon de commande mais ignoré sur la facture, provoquant une fausse divergence.
+* Correction d'un problème où les fichiers PDF et XML étaient tous deux téléchargés dans le dossier d'exportation même lorsque le bouton "Export PDF" était désactivé.
+* Correction d'un problème où un statut manquant sur la carte de workflow empêchait les documents de progresser dans le flux de travail.
+* Correction d'un problème où la qualité du document était significativement dégradée après l'importation.
+* Correction d'un problème où l'écran PO Match générait une erreur ("Cannot read properties of null").
+* Correction d'un problème où la liste de valeurs par défaut ne pouvait pas être modifiée.
+* Correction d'un problème où le workflow ne pouvait pas lire correctement le statut du champ, causant un routage incorrect.
+* Correction d'un problème où les importations d'e-mails entrants échouaient avec une erreur.
+* Correction d'un problème où des lignes manquantes n'arrivaient pas correctement dans M3 lors de l'exportation.
+* Correction d'un problème où les factures codées et approuvées n'étaient occasionnellement pas mises à jour au statut "approuvé" dans M3 via l'API APS110.
+* Correction d'un problème avec la configuration Multi Banking qui ne fonctionnait pas correctement.
+* Correction de plusieurs problèmes avec l'affichage et le comportement de sauvegarde des dashboards partagés.
+* Correction d'un problème où le champ numéro d'article fournisseur était limité à 30 caractères, empêchant le stockage de valeurs plus longues.
+* Correction d'un problème où les valeurs de prix unitaire et prix unitaire par unité causaient une erreur lors de l'exportation.
+
+### Modifications de configuration :
+
+* Mise à jour des modèles d'e-mail pour supprimer le bouton "Go to Task".
+* Ajustement des scripts et des paramètres de champs obligatoires sur les éléments de coûts.
+
+## **Release HotFix 1 16 mars 2026**
+
+### Améliorations de DocBits :
+
+* **Historique des documents dans l'exportation SFTP :**\
+  DocBits prend désormais en charge l'inclusion de l'historique complet du document dans le payload XML exporté lors de l'exportation vers SFTP. Cette fonctionnalité est configurable via les Export Settings et fournit aux systèmes en aval un journal d'audit complet de chaque changement de statut et action effectuée sur un document dans DocBits — y compris qui a effectué le changement, quand il s'est produit, et quels étaient les statuts précédent et actuel. Ceci est particulièrement précieux pour la conformité, la traçabilité et l'analyse opérationnelle.
+* **Mise à jour des frais sur la confirmation de commande pour Infor On Premise :**\
+  Les clients Infor On Premise peuvent désormais traiter les confirmations de commande incluant des frais directement dans DocBits. Les frais sont entièrement mis à jour via l'exportation, rendant le processus de confirmation de commande de bout en bout transparent et éliminant le besoin d'ajustements manuels en aval.
+*   **Appliquer le Layout par défaut à tous les Origins :**\
+    Un nouveau bouton **Apply Default Layout to Origins** a été introduit dans l'écran de configuration du layout. Les administrateurs peuvent désormais déployer le layout par défaut sur tous les origins au sein d'une organisation en une seule action, éliminant le processus manuel fastidieux de copier-coller du JSON de layout pour chaque origin individuellement. Ceci est particulièrement utile lors de l'intégration de nouveaux clients où plusieurs origins doivent être configurés de manière cohérente.
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(5).png)
+*   **Sélection du type de document pour l'importation FTP :**\
+    Les configurations d'importation FTP prennent désormais en charge l'attribution du type de document par dossier. Lors de la configuration d'une importation FTP, les utilisateurs peuvent spécifier quel type de document — tel que Facture ou Confirmation de commande — doit être appliqué à tous les documents importés depuis ce dossier. Les documents sont automatiquement classifiés lors de l'importation, supprimant le besoin d'attribution manuelle du type de document après l'ingestion. Cela prend en charge les organisations qui gèrent plusieurs types de documents à travers différentes sous-organisations et dossiers.
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(4).png)
+* **Exportation vers GLS840 pour Infor On Premise :**\
+  DocBits prend désormais en charge l'exportation de documents vers le programme GLS840 pour les clients Infor On Premise, élargissant la gamme des cibles d'exportation prises en charge pour les environnements on-premise.
+*   **Améliorations de l'interface pour Watchdog et la configuration d'exportation :**\
+    Les écrans de configuration Watchdog et de configuration d'exportation ont été rafraîchis avec une interface utilisateur améliorée, offrant une mise en page plus claire et une expérience plus intuitive pour les administrateurs gérant ces paramètres.
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(1).png)
+
+    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20(2).png)
+
+### Corrections de bugs :
+
+* Correction d'un problème où les utilisateurs ayant des droits de consultation valides ne pouvaient pas voir les documents — la logique de permissions a été refactorisée avec une vérification du niveau d'accès remplaçant l'approche précédente de filtrage basé sur les groupes.
+* Amélioration de la gestion des exceptions dans plusieurs domaines de l'application pour une meilleure stabilité.
+* Résolution d'un problème où les colonnes de type booléen n'étaient pas correctement gérées lors de l'extraction des champs.
+* Correction d'un problème d'authentification asynchrone dans le endpoint de téléchargement de fichiers.
+* Résolution de problèmes d'affichage de l'interface pour la table PO sur l'écran de validation.
+* Mise à jour du modèle de script pour inclure des commentaires de suivi des modifications pour une meilleure auditabilité.
+* Correction d'un problème avec les champs déroulants qui ne se comportaient pas correctement sur l'écran de validation.
+* Correction d'un problème où le champ de sous-organisation n'était pas pré-rempli lors de la mise à jour des affectations de documents depuis le dashboard.
+
 ## **Version Winter Summit 10 décembre 2025**
 
 ### Améliorations de DocBits :

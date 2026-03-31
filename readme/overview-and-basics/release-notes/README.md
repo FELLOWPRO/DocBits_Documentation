@@ -204,6 +204,7 @@ Disponibilidad en Sandbox: 27–29 de abril de 2026
 * Se corrigieron múltiples problemas con la visualización y el comportamiento de guardado de dashboards compartidos.
 * Se corrigió un problema en el que el campo de número de artículo del proveedor estaba limitado a 30 caracteres, impidiendo el almacenamiento de valores más largos.
 * Se corrigió un problema en el que los valores de precio unitario y precio unitario por unidad causaban un error durante la exportación.
+* Se corrigió un problema en el que las líneas de PO con un estado excluido (p. ej., "Closed") aún podían arrastrarse y emparejarse en la pantalla de PO Matching a pesar de estar excluidas por las reglas de emparejamiento.
 
 ### Cambios de configuración:
 

@@ -159,6 +159,21 @@ Disponibilità su Sandbox: 27–29 aprile 2026
 * **AP Assignment Code nella schermata di Approval:**\
   La pagina AP Manager Approval ora include un campo AP Assignment Code, integrato con Infor M3 CRS620. Questo consente agli approvatori di verificare e confermare i codici di assegnazione direttamente durante il processo di approvazione senza passare a sistemi esterni.
 
+* **Corrispondenza del totale PO con il totale del documento:**\
+  DocBits ora supporta la corrispondenza del totale dell'ordine di acquisto con il totale del documento, fornendo un ulteriore livello di validazione durante il PO Matching per rilevare le discrepanze più precocemente nel processo.
+
+* **Aggiornamento del numero di articolo fornitore e VPE:**\
+  DocBits ora supporta l'aggiornamento dei campi numero di articolo fornitore e VPE (Verpackungseinheit / unità di imballaggio) durante l'elaborazione dei documenti, con i valori sincronizzati verso M3 in fase di esportazione.
+
+* **Classificazione migliorata del layout del documento:**\
+  L'ID del layout del documento (tfidf_id) viene ora generato basandosi solo sul testo dell'intestazione, escludendo il testo del piè di pagina. Questo migliora la precisione della classificazione impedendo al contenuto del piè di pagina di influenzare il rilevamento del tipo di documento.
+
+* **Pulsante Export & Next:**\
+  È stato aggiunto un nuovo pulsante "Export & Next", che consente agli utenti di esportare il documento corrente e passare immediatamente al successivo nella coda, ottimizzando il flusso di lavoro di revisione ed esportazione.
+
+* **Processo di approvazione per fatture di costo:**\
+  Il processo di approvazione per le fatture di costo è stato migliorato con una logica di instradamento e validazione ottimizzata.
+
 ### Correzioni di bug:
 
 * Corretto un problema in cui l'esportazione Infor SFTP falliva con un errore a causa di un comando di libreria errato.
@@ -168,7 +183,6 @@ Disponibilità su Sandbox: 27–29 aprile 2026
 * Corretto un problema in cui l'esportazione falliva quando l'unità di acquisto non era impostata nella conferma d'ordine ma era presente nell'ordine di acquisto.
 * Corretto un problema in cui il corpo dell'e-mail mancava per diversi documenti.
 * Corretto un problema in cui il numero di articolo del fornitore non era visibile nella schermata di approvazione e gli aggiornamenti non venivano inviati a M3.
-* Corretto un problema in cui l'assegnazione delle sotto-organizzazioni non funzionava correttamente in produzione.
 * Corretto un problema in cui l'esportazione dei fornitori verso Infor restituiva un errore.
 * Corretto un problema in cui il PO Matching produceva errori durante l'elaborazione.
 * Corretto un problema in cui la funzione `findAll` non funzionava correttamente negli script dei documenti.
@@ -183,6 +197,13 @@ Disponibilità su Sandbox: 27–29 aprile 2026
 * Corretto un problema in cui la schermata PO Match generava un errore ("Cannot read properties of null").
 * Corretto un problema in cui l'elenco dei valori predefiniti non poteva essere modificato.
 * Corretto un problema in cui il workflow non riusciva a leggere correttamente lo stato del campo, causando un instradamento errato.
+* Corretto un problema in cui le importazioni di e-mail in entrata fallivano con un errore.
+* Corretto un problema in cui le righe mancanti non arrivavano correttamente in M3 durante l'esportazione.
+* Corretto un problema in cui le fatture codificate e approvate occasionalmente non venivano aggiornate allo stato "approvato" in M3 tramite l'API APS110.
+* Corretto un problema con la configurazione Multi Banking che non funzionava correttamente.
+* Corretti molteplici problemi con la visualizzazione e il comportamento di salvataggio dei dashboard condivisi.
+* Corretto un problema in cui il campo numero di articolo fornitore era limitato a 30 caratteri, impedendo la memorizzazione di valori più lunghi.
+* Corretto un problema in cui i valori di prezzo unitario e prezzo unitario per unità causavano un errore durante l'esportazione.
 
 ### Modifiche alla configurazione:
 

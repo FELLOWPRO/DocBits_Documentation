@@ -149,6 +149,68 @@ Sandbox availability: 27–29 April 2026
 * Fixed an issue with date and time conversion to US format.
 * Fixed an issue where workflows were triggered in the wrong order — workflow execution now uses proper document locking and queue priorities.
 
+## **Release HotFix 2 31st March 2026**
+
+### DocBits Enhancements:
+
+* **Hybrid PDF Processing — User-Controlled XML Extraction:**\
+  When a PDF contains embedded XML data, users can now choose whether DocBits should use the embedded XML for extraction or process the document as a standard PDF. This gives organizations full control over how hybrid documents are handled, ensuring the extraction method best suited to their workflow is applied.
+
+* **AP Assignment Code on Approval Screen:**\
+  The AP Manager Approval page now includes an AP Assignment Code field, integrated with Infor M3 CRS620. This allows approvers to review and confirm assignment codes directly during the approval process without switching to external systems.
+
+* **PO Total Matching with Document Total:**\
+  DocBits now supports matching the purchase order total against the total on the document, providing an additional validation layer during PO matching to catch discrepancies earlier in the process.
+
+* **Supplier Item Number and VPE Update:**\
+  DocBits now supports updating Supplier Item Number and VPE (Verpackungseinheit / packaging unit) fields during document processing, with the values being synchronized back to M3 upon export.
+
+* **Improved Document Layout Classification:**\
+  The document layout ID (tfidf_id) is now generated based on header text only, excluding footer text. This improves classification accuracy by preventing footer content from influencing document type detection.
+
+* **Export & Next Button:**\
+  A new "Export & Next" button has been added, allowing users to export the current document and immediately proceed to the next one in the queue, streamlining the review and export workflow.
+
+* **Approval Process for Cost Invoices:**\
+  The approval process for cost invoices has been enhanced with improved routing and validation logic.
+
+### Bug Fixes:
+
+* Fixed an issue where the Infor SFTP export failed with an error due to an incorrect library command.
+* Fixed an issue where boolean checkboxes could not be displayed on the approval screen.
+* Fixed an issue where UNMU messages were sent even when there were no mismatches in the purchase unit.
+* Fixed an issue where sales tax was incorrectly classified as a charge on the PO Matching screen, resulting in a negative unsettled amount.
+* Fixed an issue where the export failed when the purchase unit was not set in the order confirmation but was present in the purchase order.
+* Fixed an issue where the email body was missing for several documents.
+* Fixed an issue where the Supplier Item Number was not visible on the approval screen and updates were not sent to M3.
+* Fixed an issue where the supplier export to Infor returned an error.
+* Fixed an issue where PO Matching produced errors during processing.
+* Fixed an issue where the `findAll` function was not working correctly in document scripts.
+* Fixed an issue where the Watchdog "Updated By" column incorrectly showed the Fellow Admin user instead of the actual user.
+* Fixed an issue where BOD-Mapping could not be configured in the Watchdog UI.
+* Fixed an issue where charges were incorrectly shown as unsettled amounts instead of being displayed as charges.
+* Fixed an issue where auto-matching did not work for multi-line invoices despite a matching configuration being in place.
+* Fixed an issue where a hyphen ("-") in the item number was considered during PO matching for the purchase order but ignored on the invoice, causing a false mismatch.
+* Fixed an issue where both PDF and XML files were uploaded to the export folder even when the "Export PDF" toggle was disabled.
+* Fixed an issue where a missing status on the workflow card prevented documents from progressing through the workflow.
+* Fixed an issue where document quality was significantly degraded after import.
+* Fixed an issue where the PO Match screen threw an error ("Cannot read properties of null").
+* Fixed an issue where the default list of values could not be edited.
+* Fixed an issue where the workflow could not read the field status properly, causing incorrect routing.
+* Fixed an issue where inbound email imports failed with an error.
+* Fixed an issue where missing lines were not arriving correctly in M3 during export.
+* Fixed an issue where coded and approved invoices were occasionally not being updated to "approved" status in M3 via the APS110 API.
+* Fixed an issue with the Multi Banking configuration not working correctly.
+* Fixed multiple issues with shared dashboard display and save behavior.
+* Fixed an issue where the Supplier Item Number field was limited to 30 characters, preventing longer values from being stored.
+* Fixed an issue where unit price and unit price per values caused an error during export.
+* Fixed an issue where PO lines with an excluded status (e.g., "Closed") could still be dragged and matched on the PO Matching screen despite being excluded by matching rules.
+
+### Configuration Changes:
+
+* Updated email templates to remove the "Go to Task" button.
+* Adjusted scripts and mandatory field settings on costing elements.
+
 ## **Release HotFix 1 16th March 2026**
 
 ### DocBits Enhancements:

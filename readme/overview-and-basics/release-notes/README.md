@@ -204,6 +204,7 @@ Sandbox-Verfügbarkeit: 27.–29. April 2026
 * Mehrere Probleme mit der Anzeige und dem Speicherverhalten von geteilten Dashboards wurden behoben.
 * Ein Problem wurde behoben, bei dem das Feld Lieferanten-Artikelnummer auf 30 Zeichen begrenzt war, was die Speicherung längerer Werte verhinderte.
 * Ein Problem wurde behoben, bei dem Stückpreis- und Stückpreis-pro-Werte beim Export einen Fehler verursachten.
+* Ein Problem wurde behoben, bei dem PO-Positionen mit einem ausgeschlossenen Status (z. B. "Closed") auf dem PO-Matching-Bildschirm trotz Ausschluss durch Matching-Regeln weiterhin gezogen und abgeglichen werden konnten.
 
 ### Konfigurationsänderungen:
 

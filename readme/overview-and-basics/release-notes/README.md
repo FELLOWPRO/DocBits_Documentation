@@ -204,6 +204,7 @@ Sandbox-beschikbaarheid: 27–29 april 2026
 * Meerdere problemen opgelost met de weergave en het opslaggedrag van gedeelde dashboards.
 * Een probleem opgelost waarbij het veld leveranciersartikelnummer was beperkt tot 30 tekens, waardoor langere waarden niet konden worden opgeslagen.
 * Een probleem opgelost waarbij eenheidsprijs- en eenheidsprijs-per-waarden een fout veroorzaakten tijdens de export.
+* Een probleem opgelost waarbij PO-regels met een uitgesloten status (bijv. "Closed") nog steeds konden worden gesleept en gematcht op het PO Matching-scherm ondanks uitsluiting door matchingregels.
 
 ### Configuratiewijzigingen:
 

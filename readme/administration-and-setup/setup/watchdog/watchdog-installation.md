@@ -78,7 +78,9 @@ Navigate to **Settings → Document Processing → WatchDog → Configurations T
 
 After installation, check the WatchDog status in DocBits:
 
-**Settings → WatchDog → Status Tab**
+**Settings → WatchDog → General Tab**
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog General Tab — Service Status"><figcaption></figcaption></figure>
 
 * ✅ **Online** — WatchDog is connected and sending heartbeats
 * Version, last restart, and system information should be visible

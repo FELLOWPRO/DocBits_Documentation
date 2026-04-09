@@ -16,6 +16,8 @@
 
 ## Quick Start
 
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog General Tab"><figcaption></figcaption></figure>
+
 ### 1. Download WatchDog
 
 Download `WatchDog.exe` from **Settings → Document Processing → WatchDog → General Tab** in the DocBits application.

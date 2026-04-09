@@ -12,6 +12,8 @@ This documentation helps administrators understand WatchDog error messages and t
 
 ### 1.1 General Tab
 
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog General Tab"><figcaption></figcaption></figure>
+
 * **Download:** Get the latest WatchDog.exe
 * **API Key:** Copy the configuration command
 * **Auto-Update Schedule:** Configure update frequency
@@ -28,11 +30,15 @@ This documentation helps administrators understand WatchDog error messages and t
 
 ### 1.3 Status Tab
 
+<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="WatchDog Service Status"><figcaption></figcaption></figure>
+
 * Shows real-time WatchDog connection status
 * **New fields:** `last_restart`, `version_first_seen`, `latest_version_checked_at`
 * **System info:** Installation path, free RAM, free disk space
 
 ### 1.4 Logs Tab
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="WatchDog Logs"><figcaption></figcaption></figure>
 
 * Shows all WatchDog events from OpenSearch
 * Filterable by event type, time period, etc.
@@ -49,6 +55,8 @@ This documentation helps administrators understand WatchDog error messages and t
   * `SERVICE_RESTART_COMPLETED`: Service restarted
 
 ### 1.5 XSLT Templates Tab
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="XSLT Templates List"><figcaption></figcaption></figure>
 
 * Upload and manage XSLT transformation templates
 * Live validation with field analysis

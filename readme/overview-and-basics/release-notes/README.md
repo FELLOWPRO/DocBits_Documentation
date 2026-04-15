@@ -1,5 +1,127 @@
 # Release Notes
 
+## **Release R1.0 12th May 2026**
+
+> **Sandbox Availability:** 28th April 2026
+
+### New Features:
+
+* **Activity Logging / Access Audit:**\
+  Detailed activity logging and access audit trail across the application for compliance and monitoring. Different type of logging for all microservices and based on time range.
+
+* **Global Quick Search:**\
+  Press Cmd+K / Ctrl+K from anywhere in the app to search across 200+ routes and 40+ in-page features. Shows top 8 results with fuzzy matching, arrow key navigation, and links to the full App Index Page.
+
+* **Sitemap (App Index Page):**\
+  Searchable index page cataloging every navigable page and in-page feature (dialogs, sidebars, panels) across DocBits. Organized into 18 categories with type filters, category pills, URL-synced search, and permission-gated entries shown as locked for non-admin users.
+
+* **Analytics Dashboard:**\
+  Comprehensive document processing analytics with Executive Overview, API Metrics, Quality Metrics, Processing Performance, Document Flow Analytics, Activity Log, Event Log, and Audit Trail.
+
+* **Dashboard Export Functionality:**\
+  New dashboard export functionality allowing a list export in CSV or XLSX formats.
+
+* **Full-Text Search / DocSearch:**\
+  AI-driven vector search across all indexed documents with real-time vendor filtering, "Find Similar" feature, and configurable indexing settings.
+
+* **Supplier Delivery Statistics:**\
+  New views providing insights into supplier-related document processing metrics.
+
+* **Debug Collector:**\
+  Press Ctrl+Shift+P to capture a full debug snapshot including API calls, WebSocket state, errors, console logs, performance metrics, and environment info. Snapshots can be copied to clipboard or sent directly as a support ticket with an HTML-formatted report and attached JSON file.
+
+* **AI Agents (DocNet):**\
+  Autonomous background agents that automatically process incoming emails — classifying, extracting, and routing documents without manual intervention. Agents work through assigned tasks independently and escalate to users via approval requests when human judgment is needed. Includes a dedicated agent dashboard for monitoring activity and performance.
+
+* **New E-Documents:**\
+  Over 80 new global e-invoice types and 40+ new formats including XRechnung 3.0.2, ZUGFeRD 2.2/2.3.2, Factur-X variants, and Asia-Pacific PINT Credit Notes. 100% classification and extraction coverage.
+
+* **AI Script Chat:**\
+  AI-powered chat assistant for basic script development with real-time streaming responses.
+
+* **Script Versioning:**\
+  Full version history for scripts with change tracking, comparison, and restore capabilities. Provides version management to scripts similar to how versions of E-Docs are maintained.
+
+* **Export History in Dashboard Actions:**\
+  Access export history for a document directly from the dashboard action menu.
+
+* **Generic API Exporter (APS450, GLS840):**\
+  Configurable generic API export target via a Mapping-File-configuration, for flexible integration with external systems. Support for APS450 and GLS840 were implemented.
+
+* **Multiple Export Configurations:**\
+  Support for multiple active export configurations per document type with execution ordering and a re-export button for retrying from the failed step.
+
+* **New Watchdog Version:**\
+  Complete rework of the WatchDog Settings page. Added new quality of life features, including current WatchDog Status, guide and commands for installing, XSLT-template configuration and a setting for autoupdate. Also implemented the functionality for WatchDog to handle multiple configurations at the same time.
+
+* **Vertex Integration:**\
+  Consumer Use Tax integration via Vertex for automated tax calculation and compliance during document processing.
+
+* **UI Redesign & Settings Rework:**\
+  Comprehensive UI refresh across the application. Redesigned login and auth pages. Redesigned settings area with collapsible sidebar, organized subcategories, anchor-based navigation, context help panel, and status tracking badges. Document scripts UI changes. Document flow new UI. Enhanced List of Values UI.
+
+* **Idea Board:**\
+  Feature request board for users to submit, discuss, and vote on new features, enhancements, bugfixes needed, etc. with rich text editor and image support.
+
+* **API Key Management:**\
+  Dedicated settings page for creating, viewing, and managing multiple API keys.
+
+* **Master Data Lookup Search Functionality:**\
+  Improved Master Data search capability by providing suitable search options based on selected fields.
+
+* **User Activity Chart:**\
+  Visual chart displaying user activity patterns and engagement metrics. Dashboard for login activity with trend comparison charts, daily/weekly aggregation, and GeoLite2-based geolocation.
+
+* **User Login History:**\
+  Users Detail View with login history.
+
+* **Customizable Sidebar:**\
+  Drag-and-drop reordering, show/hide toggle, and pin-to-top for sidebar menu items. Preferences are persisted per user with a "Reset to default" option. Respects feature flags.
+
+* **Video Carousel:**\
+  Autoplay video carousel on the prepare-dashboard page showing short animated product tip videos (Global Search, Keyboard Shortcuts, Document Upload, Table Customization). Two-column layout with videos on the left and dashboard preparation on the right. Auto-redirect pauses while users browse videos.
+
+* **Advanced Workflow Designer:**\
+  Visual, node-based automation builder with drag-and-drop canvas for multi-step processing pipelines. Supports wait steps, parallel paths, reusable templates, Or condition cards, manual test/run button, "Test from Here" partial execution, and per-node execution logs with visual flow highlighting showing exactly which nodes were executed.
+
+* **Workflow KPI Dashboard:**\
+  Key metrics dashboard for monitoring workflow execution.
+
+* **Workflow Partner Card SDK:**\
+  SDK for third-party developers to build custom workflow cards, with AI-powered review, sandboxed validation, and getting-started documentation.
+
+* **Workflow Test Manager:**\
+  Automated test manager for workflows, allowing administrators to create and run tests individually or in bulk.
+
+### Enhancements:
+
+* **Database (All Modules) — Migration of ID Columns:**\
+  All DocBits "ID" database columns were internally migrated from strings to dedicated ID-type (UUID7). Underlying Postgres database has been migrated to V18 to support this enhancement.
+
+* **Document Processing — Further Enhancements:**\
+  Changing the export logic related to maximum amount of pages to consider — now the whole document will be exported. During the document validation the user will have the option to override the default maximum pages limit for this specific document. The computation of Pending Document Counter has been enhanced.
+
+* **Services Versions, Status & Deployment Date:**\
+  Service availability status provided in the "Service Versions" popup.
+
+* **Language Expansion:**\
+  Support expanded to 22 languages with updated language selector.
+
+* **Access Control Design on Field Level:**\
+  Redesigned/improved access control with clearer activation state, field level access, consistent rule handling, and simplified group-based permissions. Fixes conflicting rules between Access Control and View Permissions, shows import owner in the UI, and applies access control consistently across field validation, AI-extracted tables, and all views.
+
+* **Activity Stream for All Screens:**\
+  Activity stream now available on all document processing screens (Ready for Validation, PO Matching, Accounting, Quote Details, Reject) — not just Pending Approval. Moved to a consistent right-panel position across all screens.
+
+* **Document Flow Page:**\
+  Dedicated page for visualizing and tracking the document processing flow, showing status transitions and progress through the pipeline.
+
+* **Dual Monitor Mode (Global User Setting):**\
+  Dual monitor mode moved to a global user setting, persistent across sessions.
+
+* **Layout Builder Enhancements:**\
+  Support for hidden and read-only fields with visual indicators, resizable panel divider, and field length settings. Apply the Default Layout to multiple origins without visiting each one individually.
+
 ## **Release HotFix 2 31st March 2026**
 
 ### DocBits Enhancements:

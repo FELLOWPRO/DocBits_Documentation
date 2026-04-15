@@ -1,6 +1,6 @@
 # Release Notes
 
-## **Release R1.0 12th May 2026**
+## **Release R1.0 12/13th May 2026**
 
 > **Sandbox Availability:** 28th April 2026
 

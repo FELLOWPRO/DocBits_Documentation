@@ -1,63 +1,63 @@
 ---
-description: Suporte ao documento eletrónico BRAZIL CT-E no DocBits
+description: Soporte del documento electrónico BRAZIL CT-E en DocBits
 ---
 
 # 🇧🇷 BRAZIL CT-E
 
-| Propriedade | Valor |
-|-------------|-------|
-| **País / Região** | Brasil |
-| **Tipos de Documento** | Fatura de Transporte (Conhecimento de Transporte Eletrônico) |
+| Propiedad | Valor |
+|-----------|-------|
+| **País / Región** | Brasil |
+| **Tipos de documento** | Factura de transporte (Conhecimento de Transporte Eletrônico) |
 | **Formato** | XML |
-| **Norma** | CT-e 3.0 (conhecimento eletrónico de frete/transporte) |
-| **Localidade** | `pt_BR` |
+| **Estándar** | CT-e 3.0 (conocimiento electrónico de flete/transporte) |
+| **Idioma** | `pt_BR` |
 
-CT-e (Conhecimento de Transporte Eletrônico, `<mod>57</mod>`) é o documento eletrónico de transporte brasileiro emitido por empresas de logística e carga. Documenta o serviço de transporte, o valor da carga, os municípios de origem e destino (`cMunIni` / `cMunFim`) e o preço do frete (`vTPrest`). Ao contrário da NF-e, o CT-e utiliza `cteProc` como elemento raiz e referencia documentos NF-e associados.
+CT-e (Conhecimento de Transporte Eletrônico, `<mod>57</mod>`) es el documento electrónico de transporte brasileño emitido por empresas de logística y carga. Documenta el servicio de transporte, el valor de la carga, los municipios de origen y destino (`cMunIni` / `cMunFim`) y el precio del flete (`vTPrest`). A diferencia de la NF-e, el CT-e utiliza `cteProc` como elemento raíz y referencia documentos NF-e asociados.
 
-## Estado de Suporte
+## Estado de soporte
 
 | Componente | Estado |
 |------------|--------|
-| Pré-visualização | ✅ Suportado |
-| Extração de Campos | ✅ Suportado |
-| Transformação | ✅ Suportado |
+| Vista previa | ✅ Compatible |
+| Extracción de campos | ✅ Compatible |
+| Transformación | ✅ Compatible |
 
-## Pré-visualização Padrão
+## Vista previa predeterminada
 
-<figure><img src="brazil-cte-preview.png" alt="Pré-visualização Brazil CT-e no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para um documento BRAZIL CT-E</p></figcaption></figure>
+<figure><img src="brazil-cte-preview.png" alt="Vista previa de Brazil CT-e en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para un documento BRAZIL CT-E</p></figcaption></figure>
 
-## Mapeamento de Campos
+## Mapeo de campos
 
-### Campos de Cabeçalho
+### Campos de cabecera
 
-| Campo DocBits | XPath de Origem | Notas |
+| Campo DocBits | XPath de origen | Notas |
 |---|---|---|
-| `invoice_id` | `//*[local-name()='ide']/*[local-name()='nCT']` | Número do CT-e |
-| `invoice_date` | `//*[local-name()='ide']/*[local-name()='dhEmi']` | ISO 8601 com offset BRT |
-| `currency` | Fixo: `BRL` | Sempre Real Brasileiro |
-| `total_amount` | `//*[local-name()='vPrest']/*[local-name()='vTPrest']` | Valor total do serviço de transporte |
-| `net_amount` | `//*[local-name()='vPrest']/*[local-name()='vRec']` | Valor a receber |
-| `tax_amount` | `//*[local-name()='ICMS']//*[local-name()='vICMS']` | ICMS sobre o serviço de transporte |
-| `supplier_name` | `//*[local-name()='emit']/*[local-name()='xNome']` | Nome da transportadora (emit) |
-| `supplier_id` | `//*[local-name()='emit']/*[local-name()='CNPJ']` | CNPJ da transportadora |
-| `buyer_name` | `//*[local-name()='dest']/*[local-name()='xNome']` | Nome do destinatário (dest) |
-| `buyer_id` | `//*[local-name()='dest']/*[local-name()='CNPJ']` | CNPJ do destinatário |
+| `invoice_id` | `//*[local-name()='ide']/*[local-name()='nCT']` | Número del CT-e |
+| `invoice_date` | `//*[local-name()='ide']/*[local-name()='dhEmi']` | ISO 8601 con desplazamiento BRT |
+| `currency` | Fijo: `BRL` | Siempre Real Brasileño |
+| `total_amount` | `//*[local-name()='vPrest']/*[local-name()='vTPrest']` | Valor total del servicio de transporte |
+| `net_amount` | `//*[local-name()='vPrest']/*[local-name()='vRec']` | Valor a cobrar |
+| `tax_amount` | `//*[local-name()='ICMS']//*[local-name()='vICMS']` | ICMS sobre el servicio de transporte |
+| `supplier_name` | `//*[local-name()='emit']/*[local-name()='xNome']` | Nombre de la transportista (emit) |
+| `supplier_id` | `//*[local-name()='emit']/*[local-name()='CNPJ']` | CNPJ de la transportista |
+| `buyer_name` | `//*[local-name()='dest']/*[local-name()='xNome']` | Nombre del destinatario (dest) |
+| `buyer_id` | `//*[local-name()='dest']/*[local-name()='CNPJ']` | CNPJ del destinatario |
 
-> O CT-e não inclui uma tabela de itens — o serviço de transporte é um encargo único ao nível do documento.
+> El CT-e no incluye tabla de líneas — el servicio de transporte es un cargo único a nivel de documento.
 
-## Regra de Classificação
+## Regla de clasificación
 
-O DocBits deteta documentos BRAZIL CT-E através de:
+DocBits detecta documentos BRAZIL CT-E mediante:
 
 ```
 http://www.portalfiscal.inf.br/cte
 ```
 
-no namespace XML (elemento raiz `<cteProc>`).
+en el namespace XML (elemento raíz `<cteProc>`).
 
 ## Relacionados
 
 - [BRAZIL NF-E](brazil-nfe.md)
 - [BRAZIL NFC-E](brazil-nfce.md)
 - [BRAZIL NFS-E](brazil-nfse.md)
-- [Documentos Eletrónicos Suportados](./)
+- [Documentos electrónicos compatibles](./)

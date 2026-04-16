@@ -1,75 +1,75 @@
 ---
-description: Obsługa elektronicznego dokumentu BRAZIL NFC-E w DocBits
+description: Soporte del documento electrónico BRAZIL NFC-E en DocBits
 ---
 
 # 🇧🇷 BRAZIL NFC-E
 
-| Właściwość | Wartość |
-|------------|---------|
-| **Kraj / Region** | Brazylia |
-| **Typy dokumentów** | Faktura konsumencka (Nota Fiscal de Consumidor Eletrônica) |
-| **Format** | XML |
-| **Standard** | NFC-e 4.0 (detaliczna faktura dla konsumenta końcowego) |
-| **Locale** | `pt_BR` |
+| Propiedad | Valor |
+|-----------|-------|
+| **País / Región** | Brasil |
+| **Tipos de documento** | Factura al consumidor (Nota Fiscal de Consumidor Eletrônica) |
+| **Formato** | XML |
+| **Estándar** | NFC-e 4.0 (factura minorista para el consumidor final) |
+| **Idioma** | `pt_BR` |
 
-NFC-e (Nota Fiscal de Consumidor Eletrônica, `<mod>65</mod>`) jest brazylijską e-fakturą dla sprzedaży detalicznej konsumentom końcowym. Używa tej samej przestrzeni nazw co NF-e (`http://www.portalfiscal.inf.br/nfe`), lecz z kodem modelu 65. Nabywca w NFC-e posiada zazwyczaj numer CPF (indywidualny identyfikator podatkowy) zamiast CNPJ. W przypadku prostych transakcji detalicznych pozycje nie zawierają podatków PIS/COFINS.
+NFC-e (Nota Fiscal de Consumidor Eletrônica, `<mod>65</mod>`) es la factura electrónica brasileña para ventas minoristas al consumidor final. Utiliza el mismo namespace que NF-e (`http://www.portalfiscal.inf.br/nfe`), pero con el código de modelo 65. El comprador en una NFC-e normalmente tiene un número CPF (identificador fiscal individual) en lugar de CNPJ. En transacciones minoristas simples, las líneas no incluyen impuestos PIS/COFINS.
 
-## Status wsparcia
+## Estado de soporte
 
-| Komponent | Status |
-|-----------|--------|
-| Podgląd | ✅ Obsługiwane |
-| Ekstrakcja pól | ✅ Obsługiwane |
-| Transformacja | ✅ Obsługiwane |
+| Componente | Estado |
+|------------|--------|
+| Vista previa | ✅ Compatible |
+| Extracción de campos | ✅ Compatible |
+| Transformación | ✅ Compatible |
 
-## Domyślny podgląd
+## Vista previa predeterminada
 
-<figure><img src="brazil-nfce-preview.png" alt="Podgląd Brazil NFC-e w DocBits"><figcaption><p>Domyślny podgląd DocBits dla dokumentu BRAZIL NFC-E</p></figcaption></figure>
+<figure><img src="brazil-nfce-preview.png" alt="Vista previa de Brazil NFC-e en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para un documento BRAZIL NFC-E</p></figcaption></figure>
 
-## Mapowanie pól
+## Mapeo de campos
 
-### Pola nagłówka
+### Campos de cabecera
 
-| Pole DocBits | Źródłowy XPath | Uwagi |
+| Campo DocBits | XPath de origen | Notas |
 |---|---|---|
-| `invoice_id` | `//*[local-name()='ide']/*[local-name()='nNF']` | Numer Nota Fiscal |
-| `invoice_date` | `//*[local-name()='ide']/*[local-name()='dhEmi']` | ISO 8601 z przesunięciem BRT |
-| `currency` | Stałe: `BRL` | Zawsze brazylijski real |
-| `total_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vNF']` | Łączna wartość NFC-e |
-| `net_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vProd']` | Suma częściowa produktów |
-| `tax_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vICMS']` | Łączna kwota podatku ICMS |
-| `supplier_name` | `//*[local-name()='emit']/*[local-name()='xNome']` | Nazwa sprzedawcy detalicznego |
-| `supplier_id` | `//*[local-name()='emit']/*[local-name()='CNPJ']` lub `CPF` | CNPJ lub CPF |
-| `buyer_name` | `//*[local-name()='dest']/*[local-name()='xNome']` | Imię i nazwisko konsumenta |
-| `buyer_id` | `//*[local-name()='dest']/*[local-name()='CPF']` lub `CNPJ` | CPF (osoba fizyczna) lub CNPJ |
+| `invoice_id` | `//*[local-name()='ide']/*[local-name()='nNF']` | Número de Nota Fiscal |
+| `invoice_date` | `//*[local-name()='ide']/*[local-name()='dhEmi']` | ISO 8601 con desplazamiento BRT |
+| `currency` | Fijo: `BRL` | Siempre Real Brasileño |
+| `total_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vNF']` | Valor total de la NFC-e |
+| `net_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vProd']` | Subtotal de productos |
+| `tax_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vICMS']` | Importe total del impuesto ICMS |
+| `supplier_name` | `//*[local-name()='emit']/*[local-name()='xNome']` | Nombre del comercio minorista |
+| `supplier_id` | `//*[local-name()='emit']/*[local-name()='CNPJ']` o `CPF` | CNPJ o CPF |
+| `buyer_name` | `//*[local-name()='dest']/*[local-name()='xNome']` | Nombre del consumidor |
+| `buyer_id` | `//*[local-name()='dest']/*[local-name()='CPF']` o `CNPJ` | CPF (persona física) o CNPJ |
 
-### Tabela pozycji (`INVOICE_TABLE`)
+### Tabla de líneas (`INVOICE_TABLE`)
 
-Ścieżka wiersza: `//*[local-name()='det']`
+Ruta de fila: `//*[local-name()='det']`
 
-| Kolumna | Względny XPath | Uwagi |
+| Columna | XPath relativo | Notas |
 |---|---|---|
-| `POSITION` | `@nItem` | Numer sekwencyjny pozycji |
-| `ITEM_CODE` | `*[local-name()='prod']/*[local-name()='cProd']` | Kod produktu |
-| `DESCRIPTION` | `*[local-name()='prod']/*[local-name()='xProd']` | Opis produktu |
-| `NCM_CODE` | `*[local-name()='prod']/*[local-name()='NCM']` | Klasyfikacja celna NCM |
-| `CFOP_CODE` | `*[local-name()='prod']/*[local-name()='CFOP']` | Fiskalny kod operacji |
-| `UNIT` | `*[local-name()='prod']/*[local-name()='uCom']` | Jednostka miary |
-| `QUANTITY` | `*[local-name()='prod']/*[local-name()='qCom']` | Ilość handlowa |
-| `UNIT_PRICE` | `*[local-name()='prod']/*[local-name()='vUnCom']` | Cena jednostkowa |
-| `TOTAL_AMOUNT` | `*[local-name()='prod']/*[local-name()='vProd']` | Suma wiersza |
-| `ICMS_AMOUNT` | `*[local-name()='imposto']/*[local-name()='ICMS']//*[local-name()='vICMS']` | Podatek ICMS na pozycję |
-| `VAT_RATE` | `*[local-name()='imposto']/*[local-name()='ICMS']//*[local-name()='pICMS']` | Stawka ICMS (%) |
+| `POSITION` | `@nItem` | Número de posición secuencial |
+| `ITEM_CODE` | `*[local-name()='prod']/*[local-name()='cProd']` | Código de producto |
+| `DESCRIPTION` | `*[local-name()='prod']/*[local-name()='xProd']` | Descripción del producto |
+| `NCM_CODE` | `*[local-name()='prod']/*[local-name()='NCM']` | Clasificación arancelaria NCM |
+| `CFOP_CODE` | `*[local-name()='prod']/*[local-name()='CFOP']` | Código de operación fiscal |
+| `UNIT` | `*[local-name()='prod']/*[local-name()='uCom']` | Unidad de medida |
+| `QUANTITY` | `*[local-name()='prod']/*[local-name()='qCom']` | Cantidad comercial |
+| `UNIT_PRICE` | `*[local-name()='prod']/*[local-name()='vUnCom']` | Precio unitario |
+| `TOTAL_AMOUNT` | `*[local-name()='prod']/*[local-name()='vProd']` | Total de línea |
+| `ICMS_AMOUNT` | `*[local-name()='imposto']/*[local-name()='ICMS']//*[local-name()='vICMS']` | Impuesto ICMS por línea |
+| `VAT_RATE` | `*[local-name()='imposto']/*[local-name()='ICMS']//*[local-name()='pICMS']` | Tasa ICMS (%) |
 
-> NFC-e nie zawiera podatków PIS/COFINS na poziomie pozycji w przypadku prostych transakcji detalicznych.
+> La NFC-e no incluye impuestos PIS/COFINS a nivel de línea en transacciones minoristas simples.
 
-## Reguła klasyfikacji
+## Regla de clasificación
 
-DocBits wykrywa dokumenty BRAZIL NFC-E poprzez wzorzec `<mod>65</mod>` wewnątrz przestrzeni nazw `http://www.portalfiscal.inf.br/nfe` w pliku XML.
+DocBits detecta documentos BRAZIL NFC-E mediante el patrón `<mod>65</mod>` dentro del namespace `http://www.portalfiscal.inf.br/nfe` en el XML.
 
-## Powiązane dokumenty
+## Relacionados
 
 - [BRAZIL NF-E](brazil-nfe.md)
 - [BRAZIL CT-E](brazil-cte.md)
 - [BRAZIL NFS-E](brazil-nfse.md)
-- [Obsługiwane dokumenty elektroniczne](./)
+- [Documentos electrónicos compatibles](./)

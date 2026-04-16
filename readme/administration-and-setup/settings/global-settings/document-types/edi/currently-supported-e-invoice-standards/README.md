@@ -33,10 +33,10 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 
 | Standard | Estado |
 |---|---|
-| CT-e | Compatible |
-| NF-e | Compatible |
-| NFC-e | Compatible |
-| NFS-e | Compatible |
+| [CT-e](../supported-electronic-documents/brazil-cte.md) | Compatible |
+| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Compatible |
+| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Compatible |
+| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Compatible |
 
 ### 🇨🇱 Chile
 

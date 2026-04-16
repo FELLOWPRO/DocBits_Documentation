@@ -122,6 +122,34 @@
 * **Layout Builder Enhancements:**\
   Support for hidden and read-only fields with visual indicators, resizable panel divider, and field length settings. Apply the Default Layout to multiple origins without visiting each one individually.
 
+## **Release HotFix 3 16th April 2026**
+
+### DocBits Enhancements:
+
+* **QR Code Extraction for Polish Invoices:**\
+  DocBits now supports QR code extraction specifically for Polish invoices, improving automated data capture for documents originating from Poland.
+
+### Bug Fixes:
+
+* Fixed an issue where auto export failed when PO matching had already taken place but the purchase order was not associated with the document.
+* Fixed an issue where unit prices were incorrectly rounded for invoices with packaging units (Verpackungseinheiten / VPE).
+* Fixed an issue where export error messages from ION/MEC (e.g., Acknowledge.PurchaseOrder failures) were not displayed in DocBits, showing "Exported" status despite the export having failed.
+* Fixed an issue where the unit price on the approval screen was incorrect when AI table extraction was used.
+* Fixed an issue where the Total Matching script threw an error on the validation screen.
+* Fixed an issue where document processing failed with an error ("UserAuthentication object has no setter for 'org_id'").
+* Fixed an issue where table training was not working for specific vendors, with columns landing in hidden columns instead of mapped fields.
+* Fixed an issue where PO matching failed on large invoices (10+ pages) due to the multipart request size limit being exceeded.
+* Fixed an issue where script-populated column values were not persisted after a document restart.
+* Fixed an issue where the "Ignore Table Validation" toggle showed as active (green) in the UI but was actually deactivated in the background.
+* Fixed an issue where document quality was significantly degraded after import.
+* Fixed an issue where microservice versions and deployment dates displayed in the app were inconsistent across environments after a complete deployment push.
+* Fixed an issue where barcode extraction failed due to an error when building the user authentication object from task data.
+* Fixed an issue where supplier contact details were emptied when saving in the supplier portal.
+* Fixed an issue where documents ran into a NoneType error on export.
+* Fixed an issue where the email body was not included when the first attached file was a PNG or JPEG image.
+* Fixed an issue where the email body was missing for several documents.
+* Fixed an issue where the DocBits Operator "ai-exporting" did not produce export results in the target systems (LN/D3).
+
 ## **Release HotFix 2 31st March 2026**
 
 ### DocBits Enhancements:

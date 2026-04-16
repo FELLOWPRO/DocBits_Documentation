@@ -54,6 +54,8 @@
           * [🇦🇺 AUNZ PINT](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint.md)
           * [🇦🇺 AUNZ PINT Self-Billing](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint-self-billing.md)
           * [🇦🇺 PINT A-NZ](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/pint-a-nz.md)
+
+        * [🇨🇱 CHILE DTE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/chile-dte.md)
     * [Global Settings](overview/settings/global-settings/README.md)
       * [Company Information](overview/settings/global-settings/company-information.md)
       * [Custom Filters](overview/settings/global-settings/custom-filters.md)

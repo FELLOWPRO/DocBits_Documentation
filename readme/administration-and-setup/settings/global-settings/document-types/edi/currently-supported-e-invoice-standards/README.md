@@ -13,6 +13,15 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 | [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Destekleniyor |
 | [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Destekleniyor |
 
+### 🇧🇷 Brezilya
+
+| Standart | Durum |
+|---|---|
+| [BRAZIL NF-E](../supported-electronic-documents/brazil-nfe.md) | Destekleniyor |
+| [BRAZIL NFC-E](../supported-electronic-documents/brazil-nfce.md) | Destekleniyor |
+| [BRAZIL CT-E](../supported-electronic-documents/brazil-cte.md) | Destekleniyor |
+| [BRAZIL NFS-E](../supported-electronic-documents/brazil-nfse.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

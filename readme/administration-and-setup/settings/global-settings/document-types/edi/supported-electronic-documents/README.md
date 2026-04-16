@@ -17,3 +17,21 @@ DocBits, **30'dan fazla ülkede 120'den fazla elektronik fatura ve belge standar
 {% hint style="info" %}
 Ayrıntılı yapılandırma için bkz. [EDI Ayarları](../README.md).
 {% endhint %}
+
+## Latin Amerika
+
+### 🇦🇷 Arjantin
+
+| Standart | Sayfa |
+|----------|-------|
+| AFIP (Factura A) | [ARGENTINA AFIP](argentina-afip.md) |
+| Factura Electrónica (diğer tüm türler) | [ARGENTINA FACTURA ELECTRONICA](argentina-factura-electronica.md) |
+
+### 🇧🇷 Brezilya
+
+| Standart | Sayfa |
+|----------|-------|
+| NF-e (Nota Fiscal Eletrônica) | [BRAZIL NF-E](brazil-nfe.md) |
+| NFC-e (Nota Fiscal de Consumidor Eletrônica) | [BRAZIL NFC-E](brazil-nfce.md) |
+| CT-e (Conhecimento de Transporte Eletrônico) | [BRAZIL CT-E](brazil-cte.md) |
+| NFS-e (Nota Fiscal de Serviços Eletrônica) | [BRAZIL NFS-E](brazil-nfse.md) |

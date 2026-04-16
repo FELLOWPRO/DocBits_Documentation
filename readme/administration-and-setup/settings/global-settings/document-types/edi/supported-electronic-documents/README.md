@@ -251,7 +251,10 @@ For detailed configuration, see [EDI Settings](../README.md). For Peppol, XRechn
 
 | Standard | Page |
 |----------|------|
-| NF-e | [BRAZIL NFE](brazil-nfe.md) |
+| NF-e (Nota Fiscal Eletrônica) | [BRAZIL NF-E](brazil-nfe.md) |
+| NFC-e (Nota Fiscal de Consumidor Eletrônica) | [BRAZIL NFC-E](brazil-nfce.md) |
+| CT-e (Conhecimento de Transporte Eletrônico) | [BRAZIL CT-E](brazil-cte.md) |
+| NFS-e (Nota Fiscal de Serviços Eletrônica) | [BRAZIL NFS-E](brazil-nfse.md) |
 
 ### 🇨🇱 Chile
 

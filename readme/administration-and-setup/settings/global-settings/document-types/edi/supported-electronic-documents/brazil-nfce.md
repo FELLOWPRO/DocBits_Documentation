@@ -1,18 +1,18 @@
 ---
-description: BRAZIL NF-E electronic document support in DocBits
+description: BRAZIL NFC-E electronic document support in DocBits
 ---
 
-# 🇧🇷 BRAZIL NF-E
+# 🇧🇷 BRAZIL NFC-E
 
 | Property | Value |
 |----------|-------|
 | **Country / Region** | Brazil |
-| **Document Types** | Invoice (Nota Fiscal Eletrônica) |
+| **Document Types** | Consumer Invoice (Nota Fiscal de Consumidor Eletrônica) |
 | **Format** | XML |
-| **Standard** | NF-e 4.0 (Nota Fiscal Eletrônica — goods & interstate commerce) |
+| **Standard** | NFC-e 4.0 (retail / point-of-sale consumer invoice) |
 | **Locale** | `pt_BR` |
 
-NF-e (Nota Fiscal Eletrônica, `<mod>55</mod>`) is the Brazilian electronic invoice for goods and interstate commerce, regulated by SEFAZ. Each NF-e contains a unique 44-digit access key (`chNFe`), detailed product line items, and multi-tier tax data (ICMS, IPI, PIS, COFINS). DocBits classifies NF-e by detecting the `http://www.portalfiscal.inf.br/nfe` namespace.
+NFC-e (Nota Fiscal de Consumidor Eletrônica, `<mod>65</mod>`) is the Brazilian electronic invoice for retail sales to end consumers. It shares the NF-e XML schema (`nfeProc` namespace) but uses model code 65. NFC-e documents typically carry a CPF (individual tax ID) for the buyer instead of a CNPJ, and do not include PIS/COFINS per line for simple retail transactions.
 
 ## Support Status
 
@@ -24,7 +24,7 @@ NF-e (Nota Fiscal Eletrônica, `<mod>55</mod>`) is the Brazilian electronic invo
 
 ## Default Preview
 
-<figure><img src="brazil-nfe-preview.png" alt="Brazil NF-e preview in DocBits"><figcaption><p>Default DocBits preview for a BRAZIL NF-E document</p></figcaption></figure>
+<figure><img src="brazil-nfce-preview.png" alt="Brazil NFC-e preview in DocBits"><figcaption><p>Default DocBits preview for a BRAZIL NFC-E document</p></figcaption></figure>
 
 ## Field Mapping
 
@@ -35,13 +35,13 @@ NF-e (Nota Fiscal Eletrônica, `<mod>55</mod>`) is the Brazilian electronic invo
 | `invoice_id` | `//*[local-name()='ide']/*[local-name()='nNF']` | Nota Fiscal number |
 | `invoice_date` | `//*[local-name()='ide']/*[local-name()='dhEmi']` | ISO 8601 with BRT offset |
 | `currency` | Fixed: `BRL` | Always Brazilian Real |
-| `total_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vNF']` | Total NF-e value |
-| `net_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vProd']` | Total products value |
+| `total_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vNF']` | Total NFC-e value |
+| `net_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vProd']` | Products subtotal |
 | `tax_amount` | `//*[local-name()='ICMSTot']/*[local-name()='vICMS']` | ICMS tax total |
-| `supplier_name` | `//*[local-name()='emit']/*[local-name()='xNome']` | Emitter company name |
-| `supplier_id` | `//*[local-name()='emit']/*[local-name()='CNPJ']` or `CPF` | CNPJ (14 digits) or CPF (11 digits) |
-| `buyer_name` | `//*[local-name()='dest']/*[local-name()='xNome']` | Recipient company name |
-| `buyer_id` | `//*[local-name()='dest']/*[local-name()='CNPJ']` or `CPF` | CNPJ or CPF |
+| `supplier_name` | `//*[local-name()='emit']/*[local-name()='xNome']` | Retailer name |
+| `supplier_id` | `//*[local-name()='emit']/*[local-name()='CNPJ']` or `CPF` | CNPJ or CPF |
+| `buyer_name` | `//*[local-name()='dest']/*[local-name()='xNome']` | Consumer name |
+| `buyer_id` | `//*[local-name()='dest']/*[local-name()='CPF']` or `CNPJ` | CPF (individual) or CNPJ |
 
 ### Line Item Table (`INVOICE_TABLE`)
 
@@ -59,23 +59,15 @@ Row path: `//*[local-name()='det']`
 | `UNIT_PRICE` | `*[local-name()='prod']/*[local-name()='vUnCom']` | Unit price |
 | `TOTAL_AMOUNT` | `*[local-name()='prod']/*[local-name()='vProd']` | Line total |
 | `ICMS_AMOUNT` | `*[local-name()='imposto']/*[local-name()='ICMS']//*[local-name()='vICMS']` | ICMS tax per line |
-| `PIS_AMOUNT` | `*[local-name()='imposto']/*[local-name()='PIS']//*[local-name()='vPIS']` | PIS tax per line |
-| `COFINS_AMOUNT` | `*[local-name()='imposto']/*[local-name()='COFINS']//*[local-name()='vCOFINS']` | COFINS tax per line |
 | `VAT_RATE` | `*[local-name()='imposto']/*[local-name()='ICMS']//*[local-name()='pICMS']` | ICMS rate (%) |
 
 ## Classification Rule
 
-DocBits detects BRAZIL NF-E documents by checking for the string:
-
-```
-http://www.portalfiscal.inf.br/nfe
-```
-
-in the XML namespace (`mod=55` for NF-e, `mod=65` for NFC-e are distinguished separately).
+DocBits detects BRAZIL NFC-E documents via the pattern `<mod>65</mod>` within the `http://www.portalfiscal.inf.br/nfe` namespace XML.
 
 ## Related
 
-- [BRAZIL NFC-E](brazil-nfce.md)
+- [BRAZIL NF-E](brazil-nfe.md)
 - [BRAZIL CT-E](brazil-cte.md)
 - [BRAZIL NFS-E](brazil-nfse.md)
 - [Supported Electronic Documents](./)

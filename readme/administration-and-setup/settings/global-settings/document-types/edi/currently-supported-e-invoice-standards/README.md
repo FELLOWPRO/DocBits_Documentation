@@ -33,10 +33,10 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| CT-e | Supported |
-| NF-e | Supported |
-| NFC-e | Supported |
-| NFS-e | Supported |
+| [CT-e](../supported-electronic-documents/brazil-cte.md) | Supported |
+| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Supported |
+| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Supported |
+| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Supported |
 
 ### 🇨🇱 Chile
 

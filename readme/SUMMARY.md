@@ -659,6 +659,8 @@
   * [Workflow Tools](advanced-functions-and-tools/docflow-mcp/workflow-tools.md)
   * [Card SDK Tools](advanced-functions-and-tools/docflow-mcp/card-sdk-tools.md)
   * [Examples](advanced-functions-and-tools/docflow-mcp/examples.md)
+* [eDocs MCP](advanced-functions-and-tools/edocs-mcp/README.md)
+  * [Examples](advanced-functions-and-tools/edocs-mcp/examples.md)
 * [DocBits Operator](advanced-functions-and-tools/docbits-operator/README.md)
   * [Prompt Writing Guide](advanced-functions-and-tools/docbits-operator/prompt-writing-guide.md)
   * [Triggering Prompts with a Workflow](advanced-functions-and-tools/docbits-operator/triggering-prompts-with-a-workflow/README.md)

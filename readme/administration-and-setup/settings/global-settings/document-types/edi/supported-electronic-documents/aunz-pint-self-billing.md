@@ -1,27 +1,51 @@
 ---
-description: AUNZ PINT SELF-BILLING electronic document support in DocBits
+description: Suporte a documentos eletrônicos AUNZ PINT SELF-BILLING no DocBits
 ---
 
 # 🇦🇺 AUNZ PINT SELF-BILLING
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
-| **Country / Region** | Australia / New Zealand |
-| **Document Types** | Self-Billed Invoice |
-| **Format** | UBL 2.1 XML |
-| **Standard** | PINT A-NZ Self-Billing |
+| **País / Região** | Austrália / Nova Zelândia |
+| **Tipos de documento** | Fatura de auto-faturação |
+| **Formato** | UBL 2.1 XML |
+| **Padrão** | PINT A-NZ Self-Billing |
+| **Locale** | `en_AU` |
 
-AUNZ PINT Self-Billing is the self-billing variant of the A-NZ Peppol International invoice model. In self-billing scenarios, the buyer creates the invoice on behalf of the supplier. This document type follows the same PINT A-NZ structure but with reversed party roles.
+AUNZ PINT Self-Billing é a variante de auto-faturação do modelo de faturação Peppol International A-NZ. Em cenários de auto-faturação, o comprador cria a fatura em nome do fornecedor. Este tipo de documento segue a mesma estrutura PINT A-NZ, mas com papéis de parte invertidos — o `AccountingCustomerParty` torna-se a parte faturadora e o `AccountingSupplierParty` é a parte faturada.
 
-## Support Status
+## Estado do suporte
 
-| Component | Status |
+| Componente | Estado |
 |-----------|--------|
-| Preview | ✅ Supported |
-| Field Extraction | ✅ Supported |
-| Transformation | ✅ Supported |
+| Pré-visualização | ✅ Suportado |
+| Extração de campos | ✅ Suportado |
+| Transformação | ✅ Suportado |
 
-## Related
+## Pré-visualização padrão
 
-- [Supported Electronic Documents](./)
+<figure><img src="aunz-pint-preview.png" alt="Pré-visualização da fatura AUNZ PINT Self-Billing no DocBits"><figcaption><p>Pré-visualização padrão do DocBits para uma fatura AUNZ PINT Self-Billing</p></figcaption></figure>
+
+## Mapeamento de campos
+
+O mapeamento de campos é idêntico ao [AUNZ PINT](aunz-pint.md) com a seguinte diferença principal:
+
+- **Os papéis das partes são invertidos**: Na auto-faturação, o comprador é a parte faturadora e o fornecedor é a parte faturada
+- O `CustomizationID` contém `urn:peppol.org:pint:selfbilling-1@aunz` em vez de `billing-1@aunz`
+
+Para a tabela completa de mapeamento de campos, consulte [AUNZ PINT](aunz-pint.md#field-mapping).
+
+## Regra de classificação
+
+O DocBits detecta documentos de auto-faturação correspondendo ao `CustomizationID`:
+
+```
+urn:peppol.org:pint:selfbilling-1@aunz
+```
+
+Tanto a auto-faturação como a faturação regular são classificadas sob o tipo de documento eletrônico `PINT A-NZ`.
+
+## Veja também
+
 - [AUNZ PINT](aunz-pint.md)
+- [Documentos eletrônicos suportados](./)

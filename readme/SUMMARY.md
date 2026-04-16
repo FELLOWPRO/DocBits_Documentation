@@ -157,6 +157,7 @@
           * [🇦🇺 AUNZ PINT](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint.md)
           * [🇦🇺 AUNZ PINT SELF-BILLING](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint-self-billing.md)
           * [🇦🇺 PINT A-NZ](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/pint-a-nz.md)
+          * [🇨🇱 CHILE DTE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/chile-dte.md)
           * [🇧🇷 BRAZIL NF-E](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/brazil-nfe.md)
           * [🇧🇷 BRAZIL NFC-E](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/brazil-nfce.md)
           * [🇧🇷 BRAZIL CT-E](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/brazil-cte.md)

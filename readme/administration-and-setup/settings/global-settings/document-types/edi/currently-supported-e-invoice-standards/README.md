@@ -18,10 +18,9 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| ebInterface 4.3 | Supported |
-| ebInterface 5.0 | Supported |
-| ebInterface 6.0 | Supported |
-| ebInterface 6.1 | Supported |
+| [AUSTRIA EBINTERFACE](../supported-electronic-documents/austria-ebinterface.md) (4.3 – 6.1) | Supported |
+| [AUSTRIA EBINTERFACE 6.0](../supported-electronic-documents/austria-ebinterface-6-0.md) | Supported |
+| [AUSTRIA EBINTERFACE 6.1](../supported-electronic-documents/austria-ebinterface-6-1.md) | Supported |
 
 ### 🇦🇺 Australia / 🇳🇿 New Zealand
 

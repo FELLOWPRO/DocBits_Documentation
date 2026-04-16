@@ -52,6 +52,8 @@
           * [🇦🇺 AUNZ PINT](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint.md)
           * [🇦🇺 AUNZ PINT Self-Billing](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint-self-billing.md)
           * [🇦🇺 PINT A-NZ](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/pint-a-nz.md)
+
+        * [🇨🇱 CHILE DTE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/chile-dte.md)
         * [ZUGFeRD Genel Bakış](administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)
           * [ZUGFeRD Yapılandırması](administration-and-setup/settings/global-settings/document-types/edi/zugferd/configuration.md)
           * [ZUGFeRD 1.0 Eşleştirme](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-1-0.md)

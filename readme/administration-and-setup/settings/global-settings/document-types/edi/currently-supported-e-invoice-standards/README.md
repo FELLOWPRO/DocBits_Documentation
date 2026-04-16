@@ -11,8 +11,8 @@ DocBits suporta **120+** padrões de faturamento eletrônico e documentos em **3
 
 | Standard | Status |
 |---|---|
-| ARGENTINA AFIP | Suportado |
-| ARGENTINA FACTURA ELECTRONICA | Suportado |
+| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Suportado |
+| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Suportado |
 
 ### 🇦🇹 Austria
 

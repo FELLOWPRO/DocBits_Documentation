@@ -33,10 +33,10 @@ DocBits unterstützt **120+** elektronische Rechnungs- und Dokumentenstandards i
 
 | Standard | Status |
 |---|---|
-| CT-e | Unterstützt |
-| NF-e | Unterstützt |
-| NFC-e | Unterstützt |
-| NFS-e | Unterstützt |
+| [CT-e](../supported-electronic-documents/brazil-cte.md) | Unterstützt |
+| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Unterstützt |
+| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Unterstützt |
+| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Unterstützt |
 
 ### 🇨🇱 Chile
 

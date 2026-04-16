@@ -251,7 +251,10 @@ Für die detaillierte Konfiguration, siehe [EDI-Einstellungen](../README.md). F�
 
 | Standard | Seite |
 |----------|-------|
-| NF-e | [BRAZIL NFE](brazil-nfe.md) |
+| NF-e | [BRAZIL NF-E](brazil-nfe.md) |
+| NFC-e | [BRAZIL NFC-E](brazil-nfce.md) |
+| CT-e | [BRAZIL CT-E](brazil-cte.md) |
+| NFS-e | [BRAZIL NFS-E](brazil-nfse.md) |
 
 ### 🇨🇱 Chile
 

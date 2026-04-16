@@ -245,6 +245,7 @@ For detailed configuration, see [EDI Settings](../README.md). For Peppol, XRechn
 | Standard | Page |
 |----------|------|
 | AFIP (Factura A) | [ARGENTINA AFIP](argentina-afip.md) |
+| Factura Electrónica (all other types) | [ARGENTINA FACTURA ELECTRONICA](argentina-factura-electronica.md) |
 
 ### 🇧🇷 Brazil
 

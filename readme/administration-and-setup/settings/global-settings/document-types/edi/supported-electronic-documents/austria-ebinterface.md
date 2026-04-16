@@ -1,11 +1,13 @@
 ---
 description: Supporto per documenti elettronici AUSTRIA EBINTERFACE in DocBits
 ---
+
 # 🇦🇹 AUSTRIA EBINTERFACE
+
 | Proprietà | Valore |
 |-----------|--------|
 | **Paese / Regione** | Austria |
-| **Tipi di documento** | Fattura, Nota di credito |
+| **Tipi di documento** | Invoice, Credit Note |
 | **Formato** | XML |
 | **Standard** | ebInterface (versioni 4.3 – 6.1) |
 | **Locale** | `de_AT` |
@@ -13,17 +15,21 @@ description: Supporto per documenti elettronici AUSTRIA EBINTERFACE in DocBits
 ebInterface è lo standard austriaco per la fatturazione elettronica gestito dalla Camera Economica Federale Austriaca (WKÖ — Wirtschaftskammer Österreich). Definisce un formato XML strutturato per le fatture elettroniche utilizzato principalmente nelle transazioni B2G (business-to-government) e B2B in Austria. DocBits supporta tutte le versioni dalla 4.3 alla 6.1, ognuna identificata dal proprio namespace XML.
 
 ## Stato del supporto
+
 | Componente | Stato |
 |------------|-------|
-| Anteprima | ✅ Supportato |
-| Estrazione campi | ✅ Supportato |
-| Trasformazione | ✅ Supportato |
+| Anteprima | ✅ Supported |
+| Estrazione campi | ✅ Supported |
+| Trasformazione | ✅ Supported |
 
 ## Anteprima predefinita
+
 <figure><img src="austria-ebinterface-preview.png" alt="Anteprima fattura Austria ebInterface in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura AUSTRIA EBINTERFACE</p></figcaption></figure>
 
 ## Mappatura dei campi
+
 ### Campi intestazione
+
 | Campo DocBits | Elemento XML sorgente | Note |
 |---|---|---|
 | `invoice_id` | `eb:InvoiceNumber` | Numero fattura |
@@ -54,10 +60,12 @@ ebInterface è lo standard austriaco per la fatturazione elettronica gestito dal
 | `bic` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:BIC` | BIC per il pagamento |
 
 ### Tabella righe (`INVOICE_TABLE`)
+
 Percorso riga: `eb:Details/eb:ItemList/eb:ListLineItem`
+
 | Colonna | Elemento XML sorgente | Note |
 |---|---|---|
-| `POSITION` | Indice sequenziale | Numero riga a partire da 1 |
+| `POSITION` | Sequential index | Numero riga a partire da 1 |
 | `DESCRIPTION` | `eb:Description` | Descrizione del prodotto/servizio |
 | `QUANTITY` | `eb:Quantity` | Quantità numerica |
 | `UNIT` | `eb:Quantity/@eb:Unit` | Codice unità (es. `STK` = pezzo) |
@@ -67,6 +75,9 @@ Percorso riga: `eb:Details/eb:ItemList/eb:ListLineItem`
 | `NET_AMOUNT` | `eb:LineItemAmount` | Totale riga IVA esclusa |
 
 ## Regole di classificazione
+
+DocBits rileva la versione ebInterface tramite la corrispondenza del namespace XML:
+
 | Versione | Namespace |
 |----------|-----------|
 | ebInterface 4.3 | `http://www.ebinterface.at/schema/4p3/` |
@@ -77,6 +88,7 @@ Percorso riga: `eb:Details/eb:ItemList/eb:ListLineItem`
 Tutte le versioni condividono l'elemento radice `<eb:Invoice>` con il rispettivo URI di namespace.
 
 ## Correlati
+
 - [Austria ebInterface 6.0](austria-ebinterface-6-0.md)
 - [Austria ebInterface 6.1](austria-ebinterface-6-1.md)
 - [Documenti elettronici supportati](./)

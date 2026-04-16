@@ -18,10 +18,9 @@ DocBits ondersteunt **120+** elektronische facturerings- en documentstandaarden 
 
 | Standard | Status |
 |---|---|
-| ebInterface 4.3 | Ondersteund |
-| ebInterface 5.0 | Ondersteund |
-| ebInterface 6.0 | Ondersteund |
-| ebInterface 6.1 | Ondersteund |
+| [AUSTRIA EBINTERFACE](../supported-electronic-documents/austria-ebinterface.md) (4.3 – 6.1) | Ondersteund |
+| [AUSTRIA EBINTERFACE 6.0](../supported-electronic-documents/austria-ebinterface-6-0.md) | Ondersteund |
+| [AUSTRIA EBINTERFACE 6.1](../supported-electronic-documents/austria-ebinterface-6-1.md) | Ondersteund |
 
 ### 🇦🇺 Australia / 🇳🇿 New Zealand
 

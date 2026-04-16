@@ -6,8 +6,8 @@ description: Prise en charge du document électronique AUSTRIA EBINTERFACE 6.1 d
 
 | Propriété | Valeur |
 |-----------|--------|
-| **Pays / Région** | Autriche |
-| **Types de documents** | Facture, Note de crédit |
+| **Pays / Région** | Austria |
+| **Types de documents** | Invoice, Credit Note |
 | **Format** | XML |
 | **Norme** | ebInterface 6.1 |
 | **Paramètres régionaux** | `de_AT` |
@@ -18,9 +18,9 @@ ebInterface 6.1 est la dernière version de la norme autrichienne de facturation
 
 | Composant | Statut |
 |-----------|--------|
-| Aperçu | ✅ Pris en charge |
-| Extraction des champs | ✅ Pris en charge |
-| Transformation | ✅ Pris en charge |
+| Aperçu | ✅ Supported |
+| Extraction des champs | ✅ Supported |
+| Transformation | ✅ Supported |
 
 ## Aperçu par défaut
 
@@ -65,7 +65,7 @@ Chemin de la ligne : `eb:Details/eb:ItemList/eb:ListLineItem`
 
 | Colonne | Élément XML source | Remarques |
 |---|---|---|
-| `POSITION` | Index séquentiel | Numéro de ligne (base 1) |
+| `POSITION` | Sequential index | Numéro de ligne (base 1) |
 | `DESCRIPTION` | `eb:Description` | Description du produit/service |
 | `QUANTITY` | `eb:Quantity` | Quantité numérique |
 | `UNIT` | `eb:Quantity/@eb:Unit` | Code unité (ex. `STK` = pièce) |

@@ -1,11 +1,13 @@
 ---
 description: Prise en charge du document électronique AUSTRIA EBINTERFACE dans DocBits
 ---
+
 # 🇦🇹 AUSTRIA EBINTERFACE
+
 | Propriété | Valeur |
 |-----------|--------|
-| **Pays / Région** | Autriche |
-| **Types de documents** | Facture, Note de crédit |
+| **Pays / Région** | Austria |
+| **Types de documents** | Invoice, Credit Note |
 | **Format** | XML |
 | **Norme** | ebInterface (versions 4.3 – 6.1) |
 | **Paramètres régionaux** | `de_AT` |
@@ -13,17 +15,21 @@ description: Prise en charge du document électronique AUSTRIA EBINTERFACE dans 
 ebInterface est la norme autrichienne de facturation électronique maintenue par la Chambre économique fédérale autrichienne (WKÖ — Wirtschaftskammer Österreich). Elle définit un format XML structuré pour les factures électroniques utilisées principalement dans les transactions B2G (entreprise vers administration) et B2B en Autriche. DocBits prend en charge toutes les versions de 4.3 à 6.1, chacune identifiée par son propre espace de noms XML.
 
 ## Statut de prise en charge
+
 | Composant | Statut |
 |-----------|--------|
-| Aperçu | ✅ Pris en charge |
-| Extraction des champs | ✅ Pris en charge |
-| Transformation | ✅ Pris en charge |
+| Aperçu | ✅ Supported |
+| Extraction des champs | ✅ Supported |
+| Transformation | ✅ Supported |
 
 ## Aperçu par défaut
+
 <figure><img src="austria-ebinterface-preview.png" alt="Aperçu de la facture Austria ebInterface dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture AUSTRIA EBINTERFACE</p></figcaption></figure>
 
 ## Correspondance des champs
+
 ### Champs d'en-tête
+
 | Champ DocBits | Élément XML source | Remarques |
 |---|---|---|
 | `invoice_id` | `eb:InvoiceNumber` | Numéro de facture |
@@ -54,10 +60,12 @@ ebInterface est la norme autrichienne de facturation électronique maintenue par
 | `bic` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:BIC` | BIC de paiement |
 
 ### Tableau des lignes de facturation (`INVOICE_TABLE`)
+
 Chemin de la ligne : `eb:Details/eb:ItemList/eb:ListLineItem`
+
 | Colonne | Élément XML source | Remarques |
 |---|---|---|
-| `POSITION` | Index séquentiel | Numéro de ligne (base 1) |
+| `POSITION` | Sequential index | Numéro de ligne (base 1) |
 | `DESCRIPTION` | `eb:Description` | Description du produit/service |
 | `QUANTITY` | `eb:Quantity` | Quantité numérique |
 | `UNIT` | `eb:Quantity/@eb:Unit` | Code unité (ex. `STK` = pièce) |
@@ -67,6 +75,9 @@ Chemin de la ligne : `eb:Details/eb:ItemList/eb:ListLineItem`
 | `NET_AMOUNT` | `eb:LineItemAmount` | Total de la ligne hors TVA |
 
 ## Règles de classification
+
+DocBits détecte la version ebInterface en faisant correspondre l'espace de noms XML :
+
 | Version | Espace de noms |
 |---------|----------------|
 | ebInterface 4.3 | `http://www.ebinterface.at/schema/4p3/` |
@@ -77,6 +88,7 @@ Chemin de la ligne : `eb:Details/eb:ItemList/eb:ListLineItem`
 Toutes les versions partagent l'élément racine `<eb:Invoice>` avec l'URI d'espace de noms correspondant.
 
 ## Voir aussi
+
 - [Austria ebInterface 6.0](austria-ebinterface-6-0.md)
 - [Austria ebInterface 6.1](austria-ebinterface-6-1.md)
 - [Documents électroniques pris en charge](./)

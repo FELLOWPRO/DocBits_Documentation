@@ -26,7 +26,8 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| PINT A-NZ | Supported |
+| [AUNZ PINT](../supported-electronic-documents/aunz-pint.md) (incl. Self-Billing) | Supported |
+| [PINT A-NZ](../supported-electronic-documents/pint-a-nz.md) | Supported |
 
 ### 🇧🇷 Brazil
 

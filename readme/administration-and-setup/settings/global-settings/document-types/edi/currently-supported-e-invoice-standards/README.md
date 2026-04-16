@@ -33,10 +33,10 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| CT-e | Pris en charge |
-| NF-e | Pris en charge |
-| NFC-e | Pris en charge |
-| NFS-e | Pris en charge |
+| [CT-e](../supported-electronic-documents/brazil-cte.md) | Pris en charge |
+| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Pris en charge |
+| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Pris en charge |
+| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Pris en charge |
 
 ### 🇨🇱 Chile
 

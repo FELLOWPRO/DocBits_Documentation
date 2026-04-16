@@ -176,6 +176,7 @@
           * [🇦🇺 AUNZ PINT](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint.md)
           * [🇦🇺 AUNZ PINT SELF-BILLING](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint-self-billing.md)
           * [🇦🇺 PINT A-NZ](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/pint-a-nz.md)
+          * [🇨🇱 CHILE DTE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/chile-dte.md)
           * [🇦🇹 AUSTRIA EBINTERFACE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/austria-ebinterface.md)
           * [🇦🇹 AUSTRIA EBINTERFACE 6.0](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/austria-ebinterface-6-0.md)
           * [🇦🇹 AUSTRIA EBINTERFACE 6.1](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/austria-ebinterface-6-1.md)

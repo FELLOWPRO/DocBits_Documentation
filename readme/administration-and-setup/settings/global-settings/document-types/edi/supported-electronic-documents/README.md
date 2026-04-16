@@ -240,6 +240,12 @@ For detailed configuration, see [EDI Settings](../README.md). For Peppol, XRechn
 
 <figure><img src="edocs-infographic-latam.png" alt="Latin American Electronic Document Standards supported by DocBits"><figcaption><p>Latin America E-Invoice Standards Overview</p></figcaption></figure>
 
+### 🇦🇷 Argentina
+
+| Standard | Page |
+|----------|------|
+| AFIP (Factura A) | [ARGENTINA AFIP](argentina-afip.md) |
+
 ### 🇧🇷 Brazil
 
 | Standard | Page |

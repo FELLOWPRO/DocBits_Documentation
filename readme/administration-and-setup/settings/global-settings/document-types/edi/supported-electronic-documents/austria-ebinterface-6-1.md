@@ -6,8 +6,8 @@ description: Unterstützung für das elektronische Dokument AUSTRIA EBINTERFACE 
 
 | Eigenschaft | Wert |
 |-------------|------|
-| **Land / Region** | Österreich |
-| **Dokumenttypen** | Rechnung, Gutschrift |
+| **Land / Region** | Austria |
+| **Dokumenttypen** | Invoice, Credit Note |
 | **Format** | XML |
 | **Standard** | ebInterface 6.1 |
 | **Locale** | `de_AT` |
@@ -18,9 +18,9 @@ ebInterface 6.1 ist die neueste Version des österreichischen E-Rechnungsstandar
 
 | Komponente | Status |
 |------------|--------|
-| Vorschau | ✅ Unterstützt |
-| Feldextraktion | ✅ Unterstützt |
-| Transformation | ✅ Unterstützt |
+| Vorschau | ✅ Supported |
+| Feldextraktion | ✅ Supported |
+| Transformation | ✅ Supported |
 
 ## Standard-Vorschau
 
@@ -48,7 +48,7 @@ ebInterface 6.1 ist die neueste Version des österreichischen E-Rechnungsstandar
 | `supplier_city` | `eb:Biller/eb:Address/eb:Town` | Stadt des Rechnungsstellers |
 | `supplier_postal_code` | `eb:Biller/eb:Address/eb:ZIP` | Postleitzahl des Rechnungsstellers |
 | `supplier_country` | `eb:Biller/eb:Address/eb:Country/@eb:CountryCode` | ISO-Ländercode |
-| `supplier_email` | `eb:Biller/eb:Address/eb:Email` | E-Mail des Rechnungsstellers |
+| `supplier_email` | `eb:Biller/eb:Address/eb:Email` | E-Mail-Adresse des Rechnungsstellers |
 | `supplier_iban` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:IBAN` | IBAN des Rechnungsstellers |
 | `customer_name` | `eb:InvoiceRecipient/eb:Address/eb:Name` | Firmenname des Empfängers |
 | `customer_tax_id` | `eb:InvoiceRecipient/eb:VATIdentificationNumber` | UID des Empfängers |
@@ -65,7 +65,7 @@ Zeilenpfad: `eb:Details/eb:ItemList/eb:ListLineItem`
 
 | Spalte | Quell-XML-Element | Hinweise |
 |---|---|---|
-| `POSITION` | Fortlaufender Index | Zeilennummer (beginnt bei 1) |
+| `POSITION` | Sequential index | Zeilennummer (beginnt bei 1) |
 | `DESCRIPTION` | `eb:Description` | Produkt-/Leistungsbeschreibung |
 | `QUANTITY` | `eb:Quantity` | Numerische Menge |
 | `UNIT` | `eb:Quantity/@eb:Unit` | Einheitencode (z. B. `STK` = Stück) |

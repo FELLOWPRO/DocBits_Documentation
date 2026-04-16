@@ -6,21 +6,21 @@ description: Unterstützung für das elektronische Dokument AUSTRIA EBINTERFACE 
 
 | Eigenschaft | Wert |
 |-------------|------|
-| **Land / Region** | Österreich |
-| **Dokumenttypen** | Rechnung, Gutschrift |
+| **Land / Region** | Austria |
+| **Dokumenttypen** | Invoice, Credit Note |
 | **Format** | XML |
-| **Standard** | ebInterface (Versionen 4.3 – 6.1) |
+| **Standard** | ebInterface (versions 4.3 – 6.1) |
 | **Locale** | `de_AT` |
 
-ebInterface ist der österreichische E-Rechnungsstandard, der von der Wirtschaftskammer Österreich (WKÖ) gepflegt wird. Er definiert ein strukturiertes XML-Format für elektronische Rechnungen, das hauptsächlich im B2G- (Business-to-Government) und B2B-Bereich in Österreich eingesetzt wird. DocBits unterstützt alle Versionen von 4.3 bis 6.1, die jeweils durch ihren eigenen XML-Namespace identifiziert werden.
+ebInterface ist der österreichische E-Rechnungsstandard, der von der Wirtschaftskammer Österreich (WKÖ — Wirtschaftskammer Österreich) gepflegt wird. Er definiert ein strukturiertes XML-Format für elektronische Rechnungen, das hauptsächlich im B2G- (Business-to-Government) und B2B-Bereich in Österreich eingesetzt wird. DocBits unterstützt alle Versionen von 4.3 bis 6.1, die jeweils durch ihren eigenen XML-Namespace identifiziert werden.
 
 ## Unterstützungsstatus
 
 | Komponente | Status |
 |------------|--------|
-| Vorschau | ✅ Unterstützt |
-| Feldextraktion | ✅ Unterstützt |
-| Transformation | ✅ Unterstützt |
+| Vorschau | ✅ Supported |
+| Feldextraktion | ✅ Supported |
+| Transformation | ✅ Supported |
 
 ## Standard-Vorschau
 
@@ -65,7 +65,7 @@ Zeilenpfad: `eb:Details/eb:ItemList/eb:ListLineItem`
 
 | Spalte | Quell-XML-Element | Hinweise |
 |---|---|---|
-| `POSITION` | Fortlaufender Index | Zeilennummer (beginnt bei 1) |
+| `POSITION` | Sequential index | Zeilennummer (beginnt bei 1) |
 | `DESCRIPTION` | `eb:Description` | Produkt-/Leistungsbeschreibung |
 | `QUANTITY` | `eb:Quantity` | Numerische Menge |
 | `UNIT` | `eb:Quantity/@eb:Unit` | Einheitencode (z. B. `STK` = Stück) |
@@ -74,7 +74,7 @@ Zeilenpfad: `eb:Details/eb:ItemList/eb:ListLineItem`
 | `VAT` | `eb:VAT/eb:VATItem/eb:TaxedAmount` | MwSt.-Betrag je Position |
 | `NET_AMOUNT` | `eb:LineItemAmount` | Zeilensumme exkl. MwSt. |
 
-## Klassifizierungsregel
+## Klassifizierungsregeln
 
 DocBits erkennt die ebInterface-Version anhand des XML-Namespace:
 

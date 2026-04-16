@@ -4,6 +4,15 @@
 DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extraction Paths
 {% endembed %}
 
+## Ülkeye Göre Desteklenen Elektronik Belgeler
+
+### 🇦🇷 Arjantin
+
+| Standart | Durum |
+|---|---|
+| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Destekleniyor |
+| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

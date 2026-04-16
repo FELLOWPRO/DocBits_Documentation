@@ -42,9 +42,9 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| DTE | Supported |
-| DTE FACTURA | Supported |
-| FACTURA ELECTRONICA | Supported |
+| [CHILE DTE](../supported-electronic-documents/chile-dte.md) | Supported |
+| [CHILE DTE FACTURA](../supported-electronic-documents/chile-dte.md) | Supported |
+| [CHILE DTE NOTA CREDITO](../supported-electronic-documents/chile-dte.md) | Supported |
 
 ### 🇨🇳 China
 

@@ -1,94 +1,94 @@
 ---
-description: Ondersteuning voor elektronisch document AUSTRIA EBINTERFACE in DocBits
+description: AUSTRIA EBINTERFACE electronic document support in DocBits
 ---
 
 # 🇦🇹 AUSTRIA EBINTERFACE
 
-| Eigenschap | Waarde |
+| Property | Value |
 |----------|-------|
-| **Land/Regio** | Oostenrijk |
-| **Documenttypen** | Factuur, Creditnota |
-| **Formaat** | XML |
-| **Standaard** | ebInterface (versies 4.3 – 6.1) |
+| **Country / Region** | Austria |
+| **Document Types** | Invoice, Credit Note |
+| **Format** | XML |
+| **Standard** | ebInterface (versions 4.3 – 6.1) |
 | **Locale** | `de_AT` |
 
-ebInterface is de Oostenrijkse standaard voor elektronisch factureren, onderhouden door de Oostenrijkse Federale Economische Kamer (WKO — Wirtschaftskammer Osterreich). Het definieert een gestructureerd XML-formaat voor elektronische facturen dat voornamelijk wordt gebruikt in B2G (business-to-government) en B2B-transacties in Oostenrijk. DocBits ondersteunt alle versies van 4.3 tot en met 6.1, die elk worden geidentificeerd aan de hand van hun eigen XML-namespace.
+ebInterface is the Austrian e-invoicing standard maintained by the Austrian Federal Economic Chamber (WKÖ — Wirtschaftskammer Österreich). It defines a structured XML format for electronic invoices used primarily in B2G (business-to-government) and B2B transactions in Austria. DocBits supports all versions from 4.3 through 6.1, each identified by its own XML namespace.
 
-## Ondersteuningsstatus
+## Support Status
 
 | Component | Status |
 |-----------|--------|
-| Preview | ✅ Ondersteund |
-| Veldextractie | ✅ Ondersteund |
-| Transformatie | ✅ Ondersteund |
+| Preview | ✅ Supported |
+| Field Extraction | ✅ Supported |
+| Transformation | ✅ Supported |
 
-## Standaardvoorbeeld
+## Default Preview
 
-<figure><img src="austria-ebinterface-preview.png" alt="Austria ebInterface factuurvoorbeeld in DocBits"><figcaption><p>Standaard DocBits-voorbeeld voor een AUSTRIA EBINTERFACE-factuur</p></figcaption></figure>
+<figure><img src="austria-ebinterface-preview.png" alt="Austria ebInterface invoice preview in DocBits"><figcaption><p>Default DocBits preview for an AUSTRIA EBINTERFACE invoice</p></figcaption></figure>
 
-## Veldtoewijzing
+## Field Mapping
 
-### Koptekstvelden
+### Header Fields
 
-| DocBits-veld | Bron XML-element | Opmerkingen |
+| DocBits Field | Source XML Element | Notes |
 |---|---|---|
-| `invoice_id` | `eb:InvoiceNumber` | Factuurnummer |
-| `invoice_date` | `eb:InvoiceDate` | ISO 8601-datum |
-| `due_date` | `eb:PaymentConditions/eb:DueDate` | Betalingsvervaldatum |
-| `delivery_date` | `eb:Delivery/eb:Date` | Leveringsdatum |
-| `currency` | `@eb:InvoiceCurrency` | Root-attribuut, altijd `EUR` voor AT |
-| `total_amount` | `eb:TotalGrossAmount` | Bruto totaal incl. btw |
-| `net_amount` | `eb:Tax/eb:VAT/eb:VATItem/eb:TaxedAmount` | Netto belastbare grondslag |
-| `tax_amount` | `eb:Tax/eb:VAT/eb:VATItem/eb:Amount` | Btw-bedrag |
-| `purchase_order` | `eb:OrderReference/eb:OrderID` | Inkooporderreferentie |
-| `payment_terms` | `eb:PaymentConditions/eb:Comment` | Vrije-tekst betalingsvoorwaarden |
-| `supplier_name` | `eb:Biller/eb:Address/eb:Name` | Bedrijfsnaam factuuruitzender |
-| `supplier_tax_id` | `eb:Biller/eb:VATIdentificationNumber` | Oostenrijkse UID (bijv. ATU12345678) |
-| `supplier_street` | `eb:Biller/eb:Address/eb:Street` | Straat factuuruitzender |
-| `supplier_city` | `eb:Biller/eb:Address/eb:Town` | Plaats factuuruitzender |
-| `supplier_postal_code` | `eb:Biller/eb:Address/eb:ZIP` | Postcode factuuruitzender |
-| `supplier_country` | `eb:Biller/eb:Address/eb:Country/@eb:CountryCode` | ISO-landcode |
-| `supplier_email` | `eb:Biller/eb:Address/eb:Email` | E-mail factuuruitzender |
-| `supplier_iban` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:IBAN` | IBAN factuuruitzender |
-| `customer_name` | `eb:InvoiceRecipient/eb:Address/eb:Name` | Bedrijfsnaam ontvanger |
-| `customer_tax_id` | `eb:InvoiceRecipient/eb:VATIdentificationNumber` | UID ontvanger |
-| `customer_street` | `eb:InvoiceRecipient/eb:Address/eb:Street` | Straat ontvanger |
-| `customer_city` | `eb:InvoiceRecipient/eb:Address/eb:Town` | Plaats ontvanger |
-| `customer_postal_code` | `eb:InvoiceRecipient/eb:Address/eb:ZIP` | Postcode ontvanger |
-| `customer_country` | `eb:InvoiceRecipient/eb:Address/eb:Country/@eb:CountryCode` | ISO-landcode |
-| `iban` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:IBAN` | Betalings-IBAN |
-| `bic` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:BIC` | Betalings-BIC |
+| `invoice_id` | `eb:InvoiceNumber` | Invoice number |
+| `invoice_date` | `eb:InvoiceDate` | ISO 8601 date |
+| `due_date` | `eb:PaymentConditions/eb:DueDate` | Payment due date |
+| `delivery_date` | `eb:Delivery/eb:Date` | Delivery date |
+| `currency` | `@eb:InvoiceCurrency` | Root attribute, always `EUR` for AT |
+| `total_amount` | `eb:TotalGrossAmount` | Gross total incl. VAT |
+| `net_amount` | `eb:Tax/eb:VAT/eb:VATItem/eb:TaxedAmount` | Net taxable base |
+| `tax_amount` | `eb:Tax/eb:VAT/eb:VATItem/eb:Amount` | VAT amount |
+| `purchase_order` | `eb:OrderReference/eb:OrderID` | Purchase order reference |
+| `payment_terms` | `eb:PaymentConditions/eb:Comment` | Free-text payment terms |
+| `supplier_name` | `eb:Biller/eb:Address/eb:Name` | Biller company name |
+| `supplier_tax_id` | `eb:Biller/eb:VATIdentificationNumber` | Austrian UID (e.g. ATU12345678) |
+| `supplier_street` | `eb:Biller/eb:Address/eb:Street` | Biller street address |
+| `supplier_city` | `eb:Biller/eb:Address/eb:Town` | Biller city |
+| `supplier_postal_code` | `eb:Biller/eb:Address/eb:ZIP` | Biller postal code |
+| `supplier_country` | `eb:Biller/eb:Address/eb:Country/@eb:CountryCode` | ISO country code |
+| `supplier_email` | `eb:Biller/eb:Address/eb:Email` | Biller email |
+| `supplier_iban` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:IBAN` | Biller IBAN |
+| `customer_name` | `eb:InvoiceRecipient/eb:Address/eb:Name` | Recipient company name |
+| `customer_tax_id` | `eb:InvoiceRecipient/eb:VATIdentificationNumber` | Recipient UID |
+| `customer_street` | `eb:InvoiceRecipient/eb:Address/eb:Street` | Recipient street address |
+| `customer_city` | `eb:InvoiceRecipient/eb:Address/eb:Town` | Recipient city |
+| `customer_postal_code` | `eb:InvoiceRecipient/eb:Address/eb:ZIP` | Recipient postal code |
+| `customer_country` | `eb:InvoiceRecipient/eb:Address/eb:Country/@eb:CountryCode` | ISO country code |
+| `iban` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:IBAN` | Payment IBAN |
+| `bic` | `eb:PaymentMethod/eb:UniversalBankTransaction/eb:BeneficiaryAccount/eb:BIC` | Payment BIC |
 
-### Regelitemtabel (`INVOICE_TABLE`)
+### Line Item Table (`INVOICE_TABLE`)
 
-Rijpad: `eb:Details/eb:ItemList/eb:ListLineItem`
+Row path: `eb:Details/eb:ItemList/eb:ListLineItem`
 
-| Kolom | Bron XML-element | Opmerkingen |
+| Column | Source XML Element | Notes |
 |---|---|---|
-| `POSITION` | Sequentiele index | 1-gebaseerd regelnummer |
-| `DESCRIPTION` | `eb:Description` | Product/dienstbeschrijving |
-| `QUANTITY` | `eb:Quantity` | Numerieke hoeveelheid |
-| `UNIT` | `eb:Quantity/@eb:Unit` | Eenheidscode (bijv. `STK` = stuk) |
-| `UNIT_PRICE` | `eb:UnitPrice` | Eenheidsprijs excl. btw |
-| `VAT_RATE` | `eb:VAT/eb:VATItem/eb:VATRate` | Btw-tarief in % |
-| `VAT` | `eb:VAT/eb:VATItem/eb:TaxedAmount` | Btw-bedrag per regel |
-| `NET_AMOUNT` | `eb:LineItemAmount` | Regeltotaal excl. btw |
+| `POSITION` | Sequential index | 1-based line number |
+| `DESCRIPTION` | `eb:Description` | Product/service description |
+| `QUANTITY` | `eb:Quantity` | Numeric quantity |
+| `UNIT` | `eb:Quantity/@eb:Unit` | Unit code (e.g. `STK` = piece) |
+| `UNIT_PRICE` | `eb:UnitPrice` | Unit price excl. VAT |
+| `VAT_RATE` | `eb:VAT/eb:VATItem/eb:VATRate` | VAT rate in % |
+| `VAT` | `eb:VAT/eb:VATItem/eb:TaxedAmount` | VAT amount per line |
+| `NET_AMOUNT` | `eb:LineItemAmount` | Line total excl. VAT |
 
-## Classificatieregel
+## Classification Rules
 
-DocBits detecteert de ebInterface-versie door de XML-namespace te matchen:
+DocBits detects the ebInterface version by matching the XML namespace:
 
-| Versie | Namespace |
+| Version | Namespace |
 |---------|-----------|
 | ebInterface 4.3 | `http://www.ebinterface.at/schema/4p3/` |
 | ebInterface 5.0 | `http://www.ebinterface.at/schema/5p0/` |
 | ebInterface 6.0 | `http://www.ebinterface.at/schema/6p0/` |
 | ebInterface 6.1 | `http://www.ebinterface.at/schema/6p1/` |
 
-Alle versies delen het root-element `<eb:Invoice>` met de respectievelijke namespace-URI.
+All versions share the root element `<eb:Invoice>` with the respective namespace URI.
 
-## Gerelateerd
+## Related
 
 - [Austria ebInterface 6.0](austria-ebinterface-6-0.md)
 - [Austria ebInterface 6.1](austria-ebinterface-6-1.md)
-- [Ondersteunde elektronische documenten](./)
+- [Supported Electronic Documents](./)

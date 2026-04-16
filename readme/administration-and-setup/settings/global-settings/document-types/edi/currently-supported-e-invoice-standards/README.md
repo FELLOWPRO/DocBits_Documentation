@@ -33,10 +33,10 @@ DocBits ondersteunt **120+** elektronische facturerings- en documentstandaarden 
 
 | Standard | Status |
 |---|---|
-| CT-e | Ondersteund |
-| NF-e | Ondersteund |
-| NFC-e | Ondersteund |
-| NFS-e | Ondersteund |
+| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Ondersteund |
+| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Ondersteund |
+| [CT-e](../supported-electronic-documents/brazil-cte.md) | Ondersteund |
+| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Ondersteund |
 
 ### 🇨🇱 Chile
 

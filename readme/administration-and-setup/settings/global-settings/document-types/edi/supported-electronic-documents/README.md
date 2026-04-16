@@ -38,3 +38,12 @@ Voor gedetailleerde configuratie, zie [EDI-instellingen](../README.md). Voor Pep
 |----------|------|
 | AFIP (Factura A) | [ARGENTINA AFIP](argentina-afip.md) |
 | Factura Electrónica (alle andere typen) | [ARGENTINA FACTURA ELECTRONICA](argentina-factura-electronica.md) |
+
+### 🇧🇷 Brazilië
+
+| Standaard | Pagina |
+|----------|------|
+| NF-e (Nota Fiscal Eletrônica — goederen) | [BRAZIL NF-E](brazil-nfe.md) |
+| NFC-e (Nota Fiscal de Consumidor Eletrônica — retail) | [BRAZIL NFC-E](brazil-nfce.md) |
+| CT-e (Conhecimento de Transporte Eletrônico — transport) | [BRAZIL CT-E](brazil-cte.md) |
+| NFS-e (Nota Fiscal de Serviços Eletrônica — diensten) | [BRAZIL NFS-E](brazil-nfse.md) |

@@ -11,8 +11,8 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| ARGENTINA AFIP | Pris en charge |
-| ARGENTINA FACTURA ELECTRONICA | Pris en charge |
+| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Pris en charge |
+| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Pris en charge |
 
 ### 🇦🇹 Austria
 

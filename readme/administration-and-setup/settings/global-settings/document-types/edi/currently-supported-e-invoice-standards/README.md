@@ -11,8 +11,8 @@ DocBits obsługuje **120+** standardów fakturowania elektronicznego i dokument�
 
 | Standard | Status |
 |---|---|
-| ARGENTINA AFIP | Obsługiwane |
-| ARGENTINA FACTURA ELECTRONICA | Obsługiwane |
+| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Obsługiwane |
+| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Obsługiwane |
 
 ### 🇦🇹 Austria
 

@@ -21,6 +21,10 @@ Korea E-Tax Invoice is the electronic tax invoice standard operated by the Natio
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="korea-e-tax-invoice-preview.png" alt="Korea e-Tax Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Korea e-Tax Invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

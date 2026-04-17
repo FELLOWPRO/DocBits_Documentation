@@ -66,7 +66,7 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| OIOUBL 2.1 | Supported |
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Supported |
 
 ### 🇪🇨 Ecuador
 

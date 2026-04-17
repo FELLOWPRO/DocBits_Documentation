@@ -83,10 +83,10 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| Facturae | Supported |
-| Facturae 3.2 | Supported |
-| Facturae 3.2.1 | Supported |
-| Facturae 3.2.2 | Supported |
+| [Facturae](../supported-electronic-documents/spain-facturae.md) | Supported |
+| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Supported |
+| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Supported |
+| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Supported |
 
 ### 🇪🇺 European Union
 

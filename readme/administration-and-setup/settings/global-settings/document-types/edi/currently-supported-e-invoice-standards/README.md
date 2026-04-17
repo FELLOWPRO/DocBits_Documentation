@@ -59,8 +59,8 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| DOCUMENTO SOPORTE | Supported |
-| FACTURA ELECTRONICA | Supported |
+| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Supported |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Supported |
 
 ### 🇩🇰 Denmark
 

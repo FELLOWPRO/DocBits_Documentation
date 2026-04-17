@@ -1,99 +1,87 @@
 ---
-description: Prise en charge des documents électroniques CHINA FAPIAO dans DocBits
+description: China Fapiao (FAPIAO, E-FAPIAO, General VAT Invoice, Special VAT Invoice) electronic document support in DocBits
 ---
 
-# 🇨🇳 CHINA FAPIAO
+# 🇨🇳 China Fapiao
 
-| Propriété | Valeur |
+| Property | Value |
 |----------|-------|
-| **Pays / Région** | Chine |
-| **Types de documents** | Facture TVA générale, Facture TVA spéciale, E-Fapiao |
+| **Country / Region** | China |
+| **Document Types** | General VAT Invoice (普通发票), Special VAT Invoice (专用发票), E-Fapiao |
 | **Format** | XML |
-| **Norme** | Fapiao (发票), State Taxation Administration |
+| **Standard** | Fapiao (发票), State Taxation Administration |
 | **Locale** | `zh_CN` |
-| **Namespace XML** | `urn:china:tax:fapiao:1.0` |
 
-Fapiao (发票) est le système chinois de facturation fiscale électronique réglementé par la State Taxation Administration (国家税务总局). Tous les documents Fapiao partagent le namespace XML `urn:china:tax:fapiao:1.0`. DocBits détecte automatiquement le type de Fapiao et achemine vers les règles d'extraction appropriées :
+Fapiao (发票) is the Chinese tax invoice standard issued under the authority of the State Taxation Administration (STA / 国家税务总局). All Fapiao documents share the `urn:china:tax:fapiao:1.0` namespace. DocBits auto-detects the Fapiao type via the `fapiao_type` element and routes to the appropriate extraction rules:
 
-| Type de Fapiao | Code | Description |
-|-----------|------|-------------|
-| 普通发票 | General VAT Invoice | Facture TVA générale (普通发票) |
-| 专用发票 | Special VAT Invoice | Facture TVA spéciale (专用发票) — déductible |
+| fapiao_type value | Document Type |
+|-------------------|--------------|
+| 普通发票 | General VAT Invoice (FAPIAO / GENERAL VAT INVOICE) |
+| 专用发票 | Special VAT Invoice (SPECIAL VAT INVOICE) |
+| 电子发票 | E-Fapiao (E-FAPIAO) |
 
-## Statut de prise en charge
+## Support Status
 
-| Composant | Statut |
+| Component | Status |
 |-----------|--------|
-| Aperçu | ✅ Pris en charge |
-| Extraction des champs | ✅ Pris en charge |
-| Transformation | ✅ Pris en charge |
+| Preview | ✅ Supported |
+| Field Extraction | ✅ Supported |
+| Transformation | ✅ Supported |
 
-## Aperçu par défaut
+## Default Preview
 
-<figure><img src="china-fapiao-preview.png" alt="Aperçu de facture China Fapiao dans DocBits"><figcaption><p>Aperçu par défaut DocBits pour une CHINA GENERAL VAT INVOICE (普通发票)</p></figcaption></figure>
+<figure><img src="china-fapiao-preview.png" alt="China Fapiao General VAT Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a China Fapiao General VAT Invoice (普通发票)</p></figcaption></figure>
 
-## Mappage des champs
+## Field Mapping
 
-### Champs d'en-tête
+### Header Fields
 
-| Champ DocBits | Élément XML source | Remarques |
+| DocBits Field | Source XML Element | Notes |
 |---|---|---|
-| `invoice_id` | `fapiao_number` | Numéro de facture (8 chiffres) |
-| `invoice_code` | `fapiao_code` | Code de facture (10-12 chiffres) |
-| `invoice_date` | `issue_date` | Date d'émission ISO 8601 |
-| `fapiao_type` | `fapiao_type` | Type : 普通发票 ou 专用发票 |
-| `check_code` | `check_code` | Code de vérification (20 chiffres) |
-| `machine_code` | `machine_code` | Numéro de machine fiscale |
-| `currency` | Fixe : `CNY` | Toujours yuan chinois |
-| `total_amount` | `total_with_tax` | Montant total TTC (价税合计) |
-| `net_amount` | `total_amount` | Montant net HT (金额) |
-| `tax_amount` | `total_tax` | Montant de la TVA (税额) |
-| `amount_in_words` | `amount_in_words` | Montant en caractères chinois (大写) |
-| `supplier_name` | `seller/name` | Nom de l'entreprise émettrice (销售方) |
-| `supplier_id` | `seller/taxpayer_id` | Identifiant fiscal de l'émetteur (18 caractères) |
-| `supplier_address` | `seller/address` | Adresse de l'émetteur |
-| `supplier_telephone` | `seller/telephone` | Téléphone de l'émetteur |
-| `supplier_bank_name` | `seller/bank_name` | Banque de l'émetteur |
-| `supplier_bank_account` | `seller/bank_account` | Compte bancaire de l'émetteur |
-| `buyer_name` | `buyer/name` | Nom de l'entreprise destinataire (购买方) |
-| `buyer_id` | `buyer/taxpayer_id` | Identifiant fiscal du destinataire |
-| `buyer_address` | `buyer/address` | Adresse du destinataire |
-| `buyer_telephone` | `buyer/telephone` | Téléphone du destinataire |
-| `remarks` | `remarks` | Remarques (备注) |
-| `issuer` | `issuer` | Émetteur (开票人) |
-| `tax_authority` | `tax_authority` | Autorité fiscale (税务机关) |
+| `invoice_id` | `fapiao_head/fapiao_number` | Fapiao number — 8 digits (发票号码) |
+| `invoice_date` | `fapiao_head/issue_date` | Issue date (ISO 8601) |
+| `currency` | Fixed: `CNY` | Always Chinese Yuan Renminbi |
+| `total_amount` | `total/total_with_tax` | Total amount incl. VAT (价税合计) |
+| `net_amount` | `total/total_amount` | Net taxable amount excl. VAT (金额) |
+| `tax_amount` | `total/total_tax` | Total VAT amount (税额) |
+| `supplier_name` | `seller/name` | Seller company name (销售方名称) |
+| `supplier_id` | `seller/taxpayer_id` | Seller taxpayer ID — 18 chars (纳税人识别号) |
+| `supplier_address` | `seller/address` | Seller address |
+| `supplier_country` | Fixed: `CN` | Always China |
+| `iban` | `seller/bank_account` | Seller bank account number |
+| `buyer_name` | `buyer/name` | Buyer company name (购买方名称) |
+| `buyer_id` | `buyer/taxpayer_id` | Buyer taxpayer ID (纳税人识别号) |
+| `buyer_address` | `buyer/address` | Buyer address |
+| `buyer_country` | Fixed: `CN` | Always China |
 
-### Tableau des lignes (`INVOICE_TABLE`)
+### Line Item Table (`INVOICE_TABLE`)
 
-Chemin de la ligne : `items/item`
+Row path: `items/item`
 
-| Colonne | Élément XML source | Remarques |
+| Column | Source XML Element | Notes |
 |---|---|---|
-| `SEQ` | `seq` | Numéro de ligne |
-| `ITEM_NAME` | `name` | Désignation de l'article |
-| `SPEC` | `spec` | Spécification / modèle |
-| `UNIT` | `unit` | Unité de mesure |
-| `QUANTITY` | `quantity` | Quantité |
-| `UNIT_PRICE` | `unit_price` | Prix unitaire HT |
-| `AMOUNT` | `amount` | Total de la ligne HT |
-| `TAX_RATE` | `tax_rate` | Taux de TVA en % (13% ou 9%) |
-| `TAX_AMOUNT` | `tax_amount` | TVA par ligne |
+| `POSITION` | `seq` | Line sequence number |
+| `DESCRIPTION` | `name` + `spec` | Item name and specification (concatenated) |
+| `QUANTITY` | `quantity` | Quantity |
+| `UNIT` | `unit` | Unit of measure (e.g. 箱, 台, 项) |
+| `UNIT_PRICE` | `unit_price` | Unit price excl. VAT |
+| `VAT_RATE` | `tax_rate` | VAT rate in % (typically 6%, 9%, or 13%) |
+| `VAT` | `tax_amount` | VAT amount per line |
+| `NET_AMOUNT` | `amount` | Line total excl. VAT |
 
-## Règles de classification
+## Classification Rules
 
-DocBits détecte les documents China Fapiao en faisant correspondre le namespace XML et le type de Fapiao :
+DocBits detects China Fapiao documents by matching the XML namespace and `fapiao_type`:
 
-| Type de document électronique | Modèle |
+| Electronic Document Type | Pattern |
 |--------------------------|---------|
-| CHINA GENERAL VAT INVOICE | `<fapiao xmlns="urn:china:tax:fapiao:1.0" version="1.0">` |
-| CHINA SPECIAL VAT INVOICE | `<fapiao xmlns="urn:china:tax:fapiao:1.0"` + `<fapiao_type>专用发票</fapiao_type>` |
-| CHINA FAPIAO | `<fapiao` (correspondance générique) |
-| CHINA FAPIAO | `税务总局` (correspondance texte) |
-| CHINA VAT INVOICE | `<VATInvoice` (format hérité) |
+| CHINA GENERAL VAT INVOICE | `urn:china:tax:fapiao:1.0` + `<fapiao_type>普通发票</fapiao_type>` |
+| CHINA SPECIAL VAT INVOICE | `urn:china:tax:fapiao:1.0` + `<fapiao_type>专用发票</fapiao_type>` |
+| CHINA E-FAPIAO | `urn:china:tax:fapiao:1.0` + `<fapiao_type>电子发票</fapiao_type>` |
 
-La classification utilise le principe **FIRST MATCH WINS** trié par longueur de motif (le plus long d'abord). L'élément racine est `<fapiao>` avec le namespace `urn:china:tax:fapiao:1.0`.
+The root element is `<fapiao>` with namespace `urn:china:tax:fapiao:1.0`. Classification uses the **first-match-wins** principle, sorted by pattern length (longest first).
 
-## Voir aussi
+## Related
 
-- [Normes de e-facturation actuellement prises en charge](../../currently-supported-e-invoice-standards/)
-- [Documents électroniques pris en charge](./)
+- [Currently Supported E-Invoice Standards](../../currently-supported-e-invoice-standards/)
+- [Supported Electronic Documents](./)

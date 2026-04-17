@@ -59,8 +59,8 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| DOCUMENTO SOPORTE | Pris en charge |
-| FACTURA ELECTRONICA | Pris en charge |
+| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Pris en charge |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Pris en charge |
 
 ### 🇩🇰 Denmark
 

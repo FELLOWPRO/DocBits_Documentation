@@ -21,6 +21,10 @@ CFE (Comprobante Fiscal Electrónico) is the Uruguayan electronic tax document s
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="uruguay-cfe-preview.png" alt="Uruguay CFE invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay CFE invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

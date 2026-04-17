@@ -21,6 +21,10 @@ Philippines EIS is the Electronic Invoicing System under the Bureau of Internal 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="philippines-eis-preview.png" alt="Philippines EIS invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Philippines EIS invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

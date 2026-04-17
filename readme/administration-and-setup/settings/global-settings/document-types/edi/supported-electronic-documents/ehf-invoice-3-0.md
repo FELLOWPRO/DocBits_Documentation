@@ -21,6 +21,10 @@ EHF (Elektronisk Handelsformat) Invoice 3.0 is the Norwegian e-invoicing standar
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="ehf-invoice-3-0-preview.png" alt="EHF Invoice 3.0 preview in DocBits"><figcaption><p>Default DocBits preview for a Norway EHF Invoice 3.0</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

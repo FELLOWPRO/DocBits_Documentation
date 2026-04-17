@@ -21,6 +21,10 @@ Facturae is the Spanish electronic invoicing standard mandated for B2G transacti
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="spain-facturae-preview.png" alt="Facturae invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Spain Facturae invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

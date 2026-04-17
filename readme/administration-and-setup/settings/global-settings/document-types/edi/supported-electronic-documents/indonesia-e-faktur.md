@@ -21,6 +21,10 @@ e-Faktur is the Indonesian electronic tax invoice system operated by the Directo
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="indonesia-e-faktur-preview.png" alt="Indonesia E-Faktur invoice preview in DocBits"><figcaption><p>Default DocBits preview for an Indonesia E-Faktur invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

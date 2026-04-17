@@ -21,6 +21,10 @@ Uruguay e-Factura is the electronic invoice document type within the CFE system,
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="uruguay-e-factura-preview.png" alt="Uruguay E-Factura invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay E-Factura invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

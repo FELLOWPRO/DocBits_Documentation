@@ -21,6 +21,10 @@ Peru Factura Electrónica is the electronic invoice document type within the SUN
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="peru-factura-electronica-preview.png" alt="Peru Factura Electronica preview in DocBits"><figcaption><p>Default DocBits preview for a Peru Factura Electronica</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

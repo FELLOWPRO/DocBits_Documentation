@@ -22,6 +22,10 @@ Factur-X 1.0.05 is equivalent to ZUGFeRD 2.1. Released in 2020, it was the first
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="facturx-preview.png" alt="Factur-X 1.0.05 / ZUGFeRD 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Factur-X 1.0.05 / ZUGFeRD 2.1 invoice</p></figcaption></figure>
+
 ## Related
 
 - [ZUGFeRD Configuration](../zugferd/)

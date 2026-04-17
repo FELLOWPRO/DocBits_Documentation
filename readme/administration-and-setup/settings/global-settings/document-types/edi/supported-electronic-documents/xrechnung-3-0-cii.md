@@ -22,6 +22,10 @@ XRechnung 3.0 is the current generation of the German e-invoicing standard, alig
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="xrechnung-cii-preview.png" alt="XRechnung 3.0 CII invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany XRechnung 3.0 CII invoice</p></figcaption></figure>
+
 ## Related
 
 - [XRechnung Configuration](../xrechnung/)

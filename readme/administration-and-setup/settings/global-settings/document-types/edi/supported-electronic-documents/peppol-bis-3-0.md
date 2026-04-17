@@ -21,6 +21,10 @@ Peppol BIS Billing 3.0 is the pan-European e-invoicing standard used across the 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="peppol-bis-3-0-preview.png" alt="Peppol BIS 3.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peppol BIS 3.0 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

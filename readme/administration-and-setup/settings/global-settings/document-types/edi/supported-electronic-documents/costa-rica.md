@@ -21,6 +21,10 @@ Costa Rica's electronic invoicing system is regulated by the Ministerio de Hacie
 | Field Extraction | ✅ Supported |
 | Transformation | N/A |
 
+## Default Preview
+
+<figure><img src="costa-rica-preview.png" alt="Costa Rica e-invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Costa Rica e-invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

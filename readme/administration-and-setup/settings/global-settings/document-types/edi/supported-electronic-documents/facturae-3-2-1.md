@@ -21,6 +21,10 @@ Facturae 3.2.1 is a maintenance update that introduced corrections to the XML sc
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="spain-facturae-preview.png" alt="Facturae 3.2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Spain Facturae 3.2.1 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

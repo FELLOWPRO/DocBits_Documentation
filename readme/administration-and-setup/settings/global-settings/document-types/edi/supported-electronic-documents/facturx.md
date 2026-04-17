@@ -22,6 +22,10 @@ Factur-X is the French implementation of the Franco-German hybrid invoice standa
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="facturx-preview.png" alt="Factur-X invoice preview in DocBits"><figcaption><p>Default DocBits preview for a France Factur-X invoice</p></figcaption></figure>
+
 ## Related
 
 - [ZUGFeRD Configuration](../zugferd/)

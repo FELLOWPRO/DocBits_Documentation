@@ -21,6 +21,10 @@ TEAPPSXML is a Finnish e-invoicing format used by Tieto (now TietoEVRY) for invo
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="finland-teappsxml-preview.png" alt="TEAPPSXML invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Finland TEAPPSXML invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

@@ -22,6 +22,10 @@ XRechnung 2.3 implements the EN 16931 Core Invoice standard with German CIUS (Co
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="xrechnung-ubl-preview.png" alt="XRechnung 2.3 UBL invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany XRechnung 2.3 UBL invoice</p></figcaption></figure>
+
 ## Related
 
 - [XRechnung Configuration](../xrechnung/)

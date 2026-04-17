@@ -21,6 +21,10 @@ Finvoice 2.0 extended the standard with improved support for payment terms, deli
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="finland-finvoice-preview.png" alt="Finvoice 2.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Finland Finvoice 2.0 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

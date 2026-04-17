@@ -21,6 +21,10 @@ InvoiceNow SG is the Singapore-specific localization of the Peppol BIS Billing s
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="invoicenow-sg-preview.png" alt="InvoiceNow SG invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Singapore InvoiceNow SG invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

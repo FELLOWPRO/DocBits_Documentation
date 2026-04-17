@@ -21,6 +21,10 @@ Turkey e-Arşiv (e-Archive) is the electronic invoice format used for invoices i
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="turkey-e-arsiv-preview.png" alt="Turkey E-Arsiv invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Turkey E-Arsiv invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

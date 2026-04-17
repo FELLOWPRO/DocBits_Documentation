@@ -21,6 +21,10 @@ Peru CPE UBL 2.1 is the current format for Peruvian electronic invoices submitte
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="peru-cpe-preview.png" alt="Peru CPE UBL 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peru CPE UBL 2.1 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

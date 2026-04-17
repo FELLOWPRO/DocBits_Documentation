@@ -21,6 +21,10 @@ Uruguay CFE 24 refers to schema version 24 of the Uruguayan CFE system. This ver
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="uruguay-cfe-preview.png" alt="Uruguay CFE v24 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay CFE v24 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

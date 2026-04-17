@@ -22,6 +22,10 @@ ZUGFeRD 2.2, released in 2022, aligns with the EN 16931 European standard and is
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zugferd-preview.png" alt="ZUGFeRD 2.2 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany ZUGFeRD 2.2 invoice</p></figcaption></figure>
+
 ## Related
 
 - [ZUGFeRD Configuration](../zugferd/)

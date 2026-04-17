@@ -21,6 +21,10 @@ UBL 2.1 (Universal Business Language) is the OASIS open standard for business do
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="ubl-2-1-preview.png" alt="UBL 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a UBL 2.1 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

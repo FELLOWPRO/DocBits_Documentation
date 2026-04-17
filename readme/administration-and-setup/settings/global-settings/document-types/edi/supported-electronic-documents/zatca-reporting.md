@@ -21,6 +21,10 @@ ZATCA Reporting refers to the Phase 2 integration mode where standard tax invoic
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zatca-reporting-preview.png" alt="ZATCA Reporting invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Saudi Arabia ZATCA Reporting invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

@@ -22,6 +22,10 @@ The Basic profile of ZUGFeRD 1.0 includes essential invoice fields such as invoi
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zugferd-preview.png" alt="ZUGFeRD 1.0 Basic invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany ZUGFeRD 1.0 Basic invoice</p></figcaption></figure>
+
 ## Related
 
 - [ZUGFeRD Configuration](../zugferd/)

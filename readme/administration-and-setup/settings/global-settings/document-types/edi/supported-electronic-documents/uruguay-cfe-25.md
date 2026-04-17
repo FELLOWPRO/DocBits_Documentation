@@ -21,6 +21,10 @@ Uruguay CFE 25 is the latest schema version of the Uruguayan CFE system. It incl
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="uruguay-cfe-preview.png" alt="Uruguay CFE v25 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay CFE v25 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

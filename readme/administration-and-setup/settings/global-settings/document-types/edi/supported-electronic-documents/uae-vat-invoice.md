@@ -21,6 +21,10 @@ UAE VAT Invoice is the electronic invoice format aligned with the Federal Tax Au
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="uae-vat-invoice-preview.png" alt="UAE VAT Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a UAE VAT Invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

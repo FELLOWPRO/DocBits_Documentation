@@ -21,6 +21,10 @@ Vietnam E-Invoice is the electronic invoicing standard mandated by the General D
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="vietnam-e-invoice-preview.png" alt="Vietnam E-Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Vietnam E-Invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

@@ -22,6 +22,10 @@ The Extended profile of ZUGFeRD 1.0 is the most comprehensive profile, supportin
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zugferd-preview.png" alt="ZUGFeRD 1.0 Extended invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany ZUGFeRD 1.0 Extended invoice</p></figcaption></figure>
+
 ## Related
 
 - [ZUGFeRD Configuration](../zugferd/)

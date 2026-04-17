@@ -21,6 +21,10 @@ Paraguay DTE is the Paraguayan electronic tax document standard regulated by the
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="paraguay-dte-preview.png" alt="Paraguay DTE invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Paraguay DTE invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

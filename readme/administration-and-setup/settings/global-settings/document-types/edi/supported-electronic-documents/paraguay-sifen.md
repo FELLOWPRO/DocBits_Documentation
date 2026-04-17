@@ -21,6 +21,10 @@ SIFEN is Paraguay's national integrated electronic invoicing system operated by 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="paraguay-sifen-preview.png" alt="Paraguay SIFEN invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Paraguay SIFEN invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

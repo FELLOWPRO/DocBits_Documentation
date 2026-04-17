@@ -22,6 +22,10 @@ Early version of the XRechnung standard. Superseded by newer versions but still 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="xrechnung-ubl-preview.png" alt="XRechnung 1.0 UBL invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany XRechnung 1.0 UBL invoice</p></figcaption></figure>
+
 ## Related
 
 - [XRechnung Configuration](../xrechnung/)

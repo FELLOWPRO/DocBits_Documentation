@@ -21,6 +21,10 @@ SIFEN 150 refers to schema version 150 of the Paraguayan SIFEN system. This vers
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="paraguay-sifen-preview.png" alt="Paraguay SIFEN 150 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Paraguay SIFEN 150 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

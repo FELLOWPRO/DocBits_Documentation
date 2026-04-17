@@ -21,6 +21,10 @@ KSeF FA2 is the second schema version of the Polish National e-Invoice System. I
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="ksef-preview.png" alt="KSeF FA(2) invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Poland KSeF FA(2) invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

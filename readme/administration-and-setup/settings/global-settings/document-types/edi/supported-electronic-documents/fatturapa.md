@@ -21,6 +21,10 @@ FatturaPA is the Italian electronic invoicing standard mandated by the Agenzia d
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="fatturapa-preview.png" alt="FatturaPA invoice preview in DocBits"><figcaption><p>Default DocBits preview for an Italy FatturaPA invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

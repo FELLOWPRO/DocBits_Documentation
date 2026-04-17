@@ -21,6 +21,10 @@ Uruguay e-Nota de Crédito is the electronic credit note document type within th
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="uruguay-e-nota-credito-preview.png" alt="Uruguay E-Nota Credito invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Uruguay E-Nota Credito invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

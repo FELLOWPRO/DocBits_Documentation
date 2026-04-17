@@ -21,6 +21,10 @@ ZATCA Simplified Tax Invoice is used for B2C transactions in Saudi Arabia where 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zatca-simplified-preview.png" alt="ZATCA Simplified invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Saudi Arabia ZATCA Simplified invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

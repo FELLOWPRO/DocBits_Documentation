@@ -22,6 +22,10 @@ XRechnung 2.0 implements the EN 16931 Core Invoice standard with German CIUS (Co
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="xrechnung-cii-preview.png" alt="XRechnung 2.0 CII invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany XRechnung 2.0 CII invoice</p></figcaption></figure>
+
 ## Related
 
 - [XRechnung Configuration](../xrechnung/)

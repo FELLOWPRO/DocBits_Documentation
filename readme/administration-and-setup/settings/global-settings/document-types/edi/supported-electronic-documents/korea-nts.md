@@ -21,6 +21,10 @@ Korea NTS refers to the broader National Tax Service electronic document system 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="korea-nts-preview.png" alt="Korea NTS invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Korea NTS invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

@@ -21,6 +21,10 @@ CFDI 3.3 is the previous generation of the Mexican digital tax receipt standard 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="mexico-cfdi-3-3-preview.png" alt="Mexico CFDI 3.3 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Mexico CFDI 3.3 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

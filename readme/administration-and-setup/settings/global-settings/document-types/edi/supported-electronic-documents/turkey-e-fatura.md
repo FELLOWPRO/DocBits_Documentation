@@ -21,6 +21,10 @@ Turkey e-Fatura is the primary electronic invoice standard mandated by the GİB 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="turkey-e-fatura-preview.png" alt="Turkey E-Fatura invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Turkey E-Fatura invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

@@ -21,6 +21,10 @@ Peru CPE UBL 2.0 is the earlier UBL-based format for Peruvian electronic invoice
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="peru-cpe-preview.png" alt="Peru CPE UBL 2.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peru CPE UBL 2.0 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

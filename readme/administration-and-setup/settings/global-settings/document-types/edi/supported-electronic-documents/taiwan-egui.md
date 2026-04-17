@@ -21,6 +21,10 @@ Taiwan eGUI is the electronic Government Uniform Invoice system operated by the 
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="taiwan-egui-preview.png" alt="Taiwan eGUI invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Taiwan eGUI invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

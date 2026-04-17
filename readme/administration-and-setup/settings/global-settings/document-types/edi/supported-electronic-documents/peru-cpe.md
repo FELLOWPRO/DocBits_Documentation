@@ -21,6 +21,10 @@ CPE (Comprobante de Pago Electrónico) is the Peruvian electronic payment vouche
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="peru-cpe-preview.png" alt="Peru CPE invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Peru CPE invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

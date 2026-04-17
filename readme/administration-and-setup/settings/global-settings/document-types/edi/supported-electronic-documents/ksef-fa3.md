@@ -21,6 +21,10 @@ KSeF FA3 is the latest schema version of the Polish National e-Invoice System. I
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="ksef-preview.png" alt="KSeF FA(3) invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Poland KSeF FA(3) invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

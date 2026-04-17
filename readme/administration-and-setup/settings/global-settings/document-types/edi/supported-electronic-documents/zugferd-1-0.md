@@ -22,6 +22,10 @@ ZUGFeRD 1.0 was the original German hybrid invoice standard, released in 2014. I
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zugferd-preview.png" alt="ZUGFeRD 1.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany ZUGFeRD 1.0 invoice</p></figcaption></figure>
+
 ## Related
 
 - [ZUGFeRD Configuration](../zugferd/)

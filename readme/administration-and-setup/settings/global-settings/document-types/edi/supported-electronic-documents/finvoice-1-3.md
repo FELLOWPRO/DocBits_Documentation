@@ -21,6 +21,10 @@ Finvoice 1.3 is an earlier version of the Finnish e-invoicing standard maintaine
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="finland-finvoice-preview.png" alt="Finvoice 1.3 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Finland Finvoice 1.3 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

@@ -21,6 +21,10 @@ OIOUBL 2.1 is the current version of the Danish e-invoicing standard. Based on O
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="denmark-oioubl-preview.png" alt="OIOUBL 2.1 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Denmark OIOUBL 2.1 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

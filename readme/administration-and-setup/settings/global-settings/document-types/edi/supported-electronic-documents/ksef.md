@@ -21,6 +21,10 @@ KSeF is the Polish National e-Invoice System operated by the Ministry of Finance
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="ksef-preview.png" alt="KSeF invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Poland KSeF invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

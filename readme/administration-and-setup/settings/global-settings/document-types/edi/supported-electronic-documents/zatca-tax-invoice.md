@@ -21,6 +21,10 @@ ZATCA Tax Invoice is the standard B2B tax invoice format in the Saudi Arabian e-
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zatca-tax-invoice-preview.png" alt="ZATCA Tax Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Saudi Arabia ZATCA Tax Invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

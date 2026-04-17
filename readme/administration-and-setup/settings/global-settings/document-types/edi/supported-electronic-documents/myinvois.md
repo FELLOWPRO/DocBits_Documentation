@@ -21,6 +21,10 @@ MyInvois is Malaysia's e-invoicing system operated by the Inland Revenue Board (
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="myinvois-preview.png" alt="MyInvois invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Malaysia MyInvois invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

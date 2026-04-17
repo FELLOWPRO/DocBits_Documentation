@@ -21,6 +21,10 @@ Finvoice 3.0 is the current version of the Finnish e-invoicing standard. It intr
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="finland-finvoice-preview.png" alt="Finvoice 3.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Finland Finvoice 3.0 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

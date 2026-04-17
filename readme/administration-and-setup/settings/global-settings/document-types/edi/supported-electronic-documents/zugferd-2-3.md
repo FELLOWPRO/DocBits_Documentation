@@ -22,6 +22,10 @@ ZUGFeRD 2.3, released in September 2024, is equivalent to Factur-X 1.0.07. It up
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zugferd-preview.png" alt="ZUGFeRD 2.3 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Germany ZUGFeRD 2.3 invoice</p></figcaption></figure>
+
 ## Related
 
 - [ZUGFeRD Configuration](../zugferd/)

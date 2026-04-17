@@ -21,6 +21,10 @@ CFDI 4.0 is the current version of the Mexican digital tax receipt standard, man
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="mexico-cfdi-4-0-preview.png" alt="Mexico CFDI 4.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Mexico CFDI 4.0 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

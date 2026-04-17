@@ -65,7 +65,7 @@ DocBits ondersteunt **120+** elektronische facturerings- en documentstandaarden 
 
 | Standard | Status |
 |---|---|
-| OIOUBL 2.1 | Ondersteund |
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Ondersteund |
 
 ### 🇪🇨 Ecuador
 

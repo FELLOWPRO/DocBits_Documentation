@@ -83,10 +83,10 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| Facturae | Pris en charge |
-| Facturae 3.2 | Pris en charge |
-| Facturae 3.2.1 | Pris en charge |
-| Facturae 3.2.2 | Pris en charge |
+| [Facturae](../supported-electronic-documents/spain-facturae.md) | Pris en charge |
+| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Pris en charge |
+| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Pris en charge |
+| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Pris en charge |
 
 ### 🇪🇺 European Union
 

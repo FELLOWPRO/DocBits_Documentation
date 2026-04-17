@@ -98,11 +98,11 @@ DocBits podržava **120+** standarda elektronskih faktura i dokumenata u **30+ z
 
 | Standard | Status |
 |---|---|
-| Finvoice 1.3 | Podržano |
-| Finvoice 2.0 | Podržano |
-| Finvoice 2.01 | Podržano |
-| Finvoice 3.0 | Podržano |
-| TEAPPSXML | Podržano |
+| [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Podržano |
+| [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Podržano |
+| [Finvoice 2.01](../supported-electronic-documents/finland-finvoice.md) | Podržano |
+| [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Podržano |
+| [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Podržano |
 
 ### 🇫🇷 Francuska
 

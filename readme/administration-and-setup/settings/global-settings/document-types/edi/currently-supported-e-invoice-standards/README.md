@@ -154,7 +154,7 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| GST E-Invoice | Supported |
+| [GST E-Invoice](../supported-electronic-documents/india-gst-e-invoice.md) | Supported |
 
 ### 🇮🇩 Indonesia
 

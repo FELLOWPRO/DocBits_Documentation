@@ -66,7 +66,7 @@ DocBits obsługuje **120+** standardów fakturowania elektronicznego i dokument�
 
 | Standard | Status |
 |---|---|
-| OIOUBL 2.1 | Obsługiwane |
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Obsługiwane |
 
 ### 🇪🇨 Ecuador
 

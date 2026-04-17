@@ -22,6 +22,13 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 | [BRAZIL CT-E](../supported-electronic-documents/brazil-cte.md) | Destekleniyor |
 | [BRAZIL NFS-E](../supported-electronic-documents/brazil-nfse.md) | Destekleniyor |
 
+### 🇨🇴 Kolombiya
+
+| Standart | Durum |
+|---|---|
+| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Destekleniyor |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

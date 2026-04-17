@@ -21,6 +21,10 @@ InvoiceNow is Singapore's national e-invoicing initiative built on the Peppol ne
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="invoicenow-preview.png" alt="InvoiceNow invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Singapore InvoiceNow invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

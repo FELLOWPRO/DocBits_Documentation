@@ -21,6 +21,10 @@ Svefaktura 1.0 is the Swedish e-invoicing format based on UBL, maintained by the
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="svefaktura-1-0-preview.png" alt="Svefaktura 1.0 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Sweden Svefaktura 1.0 invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

@@ -21,6 +21,10 @@ Thailand e-Tax Invoice is the electronic tax invoice and receipt standard regula
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="thailand-e-tax-invoice-preview.png" alt="Thailand e-Tax Invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Thailand e-Tax Invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

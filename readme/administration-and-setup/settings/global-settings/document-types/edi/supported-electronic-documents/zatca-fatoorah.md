@@ -21,6 +21,10 @@ ZATCA Fatoorah is the Saudi Arabian electronic invoicing standard operated by th
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="zatca-fatoorah-preview.png" alt="ZATCA Fatoorah invoice preview in DocBits"><figcaption><p>Default DocBits preview for a ZATCA Fatoorah invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

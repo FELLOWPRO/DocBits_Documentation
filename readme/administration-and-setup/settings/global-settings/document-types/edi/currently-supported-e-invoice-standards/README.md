@@ -83,10 +83,10 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 
 | Standard | Estado |
 |---|---|
-| Facturae | Compatible |
-| Facturae 3.2 | Compatible |
-| Facturae 3.2.1 | Compatible |
-| Facturae 3.2.2 | Compatible |
+| [Facturae](../supported-electronic-documents/spain-facturae.md) | Compatible |
+| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Compatible |
+| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Compatible |
+| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Compatible |
 
 ### 🇪🇺 European Union
 

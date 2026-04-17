@@ -72,12 +72,12 @@ DocBits supporta **120+** standard di fatturazione elettronica e documenti in **
 
 | Standard | Stato |
 |---|---|
-| FACTURA ELECTRONICA | Supportato |
-| SRI | Supportato |
-| SRI 1.0.0 | Supportato |
-| SRI 1.1.0 | Supportato |
-| SRI 2.0.0 | Supportato |
-| SRI 2.1.0 | Supportato |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Supportato |
+| [SRI](../supported-electronic-documents/ecuador-sri.md) | Supportato |
+| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Supportato |
+| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Supportato |
+| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Supportato |
+| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Supportato |
 
 ### 🇪🇸 Spain
 

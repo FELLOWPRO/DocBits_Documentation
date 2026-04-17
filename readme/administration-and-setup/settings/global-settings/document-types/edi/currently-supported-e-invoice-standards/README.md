@@ -59,8 +59,8 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 
 | Standard | Estado |
 |---|---|
-| DOCUMENTO SOPORTE | Compatible |
-| FACTURA ELECTRONICA | Compatible |
+| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Compatible |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Compatible |
 
 ### 🇩🇰 Denmark
 

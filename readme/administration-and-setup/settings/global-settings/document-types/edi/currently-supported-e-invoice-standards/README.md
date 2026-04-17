@@ -154,7 +154,7 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| GST E-Invoice | Pris en charge |
+| [GST E-Invoice](../supported-electronic-documents/india-gst-e-invoice.md) | Pris en charge |
 
 ### 🇮🇩 Indonesia
 

@@ -72,12 +72,12 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 
 | Standard | Estado |
 |---|---|
-| FACTURA ELECTRONICA | Compatible |
-| SRI | Compatible |
-| SRI 1.0.0 | Compatible |
-| SRI 1.1.0 | Compatible |
-| SRI 2.0.0 | Compatible |
-| SRI 2.1.0 | Compatible |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Compatible |
+| [SRI](../supported-electronic-documents/ecuador-sri.md) | Compatible |
+| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
+| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
+| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
+| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
 
 ### 🇪🇸 Spain
 

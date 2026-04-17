@@ -98,11 +98,11 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| Finvoice 1.3 | Supported |
-| Finvoice 2.0 | Supported |
-| Finvoice 2.01 | Supported |
-| Finvoice 3.0 | Supported |
-| TEAPPSXML | Supported |
+| [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
+| [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
+| [Finvoice 2.01](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
+| [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Ondersteund |
+| [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Ondersteund |
 
 ### 🇫🇷 France
 

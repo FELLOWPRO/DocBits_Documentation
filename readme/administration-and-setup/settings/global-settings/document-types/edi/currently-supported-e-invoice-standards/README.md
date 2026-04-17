@@ -83,10 +83,10 @@ DocBits podržava **120+** standarda elektronskih faktura i dokumenata u **30+ z
 
 | Standard | Status |
 |---|---|
-| Facturae | Podržano |
-| Facturae 3.2 | Podržano |
-| Facturae 3.2.1 | Podržano |
-| Facturae 3.2.2 | Podržano |
+| [Facturae](../supported-electronic-documents/spain-facturae.md) | Podržano |
+| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Podržano |
+| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Podržano |
+| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Podržano |
 
 ### 🇪🇺 Evropska unija
 

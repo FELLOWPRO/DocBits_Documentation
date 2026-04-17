@@ -92,7 +92,7 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| PEPPOL BIS 3.0 | Supported |
+| [PEPPOL BIS 3.0](../supported-electronic-documents/peppol-bis-3-0.md) | Supported |
 
 ### 🇫🇮 Finland
 
@@ -108,157 +108,157 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| Factur-X | Supported |
-| Factur-X 1.0.05 / ZUGFeRD 2.1 | Supported |
-| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Supported |
+| [Factur-X](../supported-electronic-documents/facturx.md) | Supported |
+| [Factur-X 1.0.05 / ZUGFeRD 2.1](../supported-electronic-documents/facturx-1-0-05-zugferd-2-1.md) | Supported |
+| [Factur-X 1.0.07.2 / ZUGFeRD 2.3.2](../supported-electronic-documents/facturx-1-0-07-2-zugferd-2-3-2.md) | Supported |
 
 ### 🇩🇪 Germany
 
 | Standard | Status |
 |---|---|
-| XRechnung 1.0 CII | Supported |
-| XRechnung 1.0 UBL | Supported |
-| XRechnung 1.1 CII | Supported |
-| XRechnung 1.1 UBL | Supported |
-| XRechnung 1.2 CII | Supported |
-| XRechnung 1.2 UBL | Supported |
-| XRechnung 1.2.1 CII | Supported |
-| XRechnung 1.2.1 UBL | Supported |
-| XRechnung 1.2.2 CII | Supported |
-| XRechnung 1.2.2 UBL | Supported |
-| XRechnung 2.0 CII | Supported |
-| XRechnung 2.0 UBL | Supported |
-| XRechnung 2.0.1 CII | Supported |
-| XRechnung 2.0.1 UBL | Supported |
-| XRechnung 2.1 CII | Supported |
-| XRechnung 2.1 UBL | Supported |
-| XRechnung 2.2 CII | Supported |
-| XRechnung 2.2 UBL | Supported |
-| XRechnung 2.3 CII | Supported |
-| XRechnung 2.3 UBL | Supported |
-| XRechnung 3.0 CII | Supported |
-| XRechnung 3.0 UBL | Supported |
-| XRechnung 3.0.1 CII | Supported |
-| XRechnung 3.0.1 UBL | Supported |
-| XRechnung 3.0.2 CII | Supported |
-| XRechnung 3.0.2 UBL | Supported |
-| ZUGFeRD 1.0 | Supported |
-| ZUGFeRD 1.0 Basic | Supported |
-| ZUGFeRD 1.0 Comfort | Supported |
-| ZUGFeRD 1.0 Extended | Supported |
-| ZUGFeRD 2.2 | Supported |
-| ZUGFeRD 2.3 | Supported |
-| ZUGFeRD 2.3.2 | Supported |
+| [XRechnung 1.0 CII](../supported-electronic-documents/xrechnung-1-0-cii.md) | Supported |
+| [XRechnung 1.0 UBL](../supported-electronic-documents/xrechnung-1-0-ubl.md) | Supported |
+| [XRechnung 1.1 CII](../supported-electronic-documents/xrechnung-1-1-cii.md) | Supported |
+| [XRechnung 1.1 UBL](../supported-electronic-documents/xrechnung-1-1-ubl.md) | Supported |
+| [XRechnung 1.2 CII](../supported-electronic-documents/xrechnung-1-2-cii.md) | Supported |
+| [XRechnung 1.2 UBL](../supported-electronic-documents/xrechnung-1-2-ubl.md) | Supported |
+| [XRechnung 1.2.1 CII](../supported-electronic-documents/xrechnung-1-2-1-cii.md) | Supported |
+| [XRechnung 1.2.1 UBL](../supported-electronic-documents/xrechnung-1-2-1-ubl.md) | Supported |
+| [XRechnung 1.2.2 CII](../supported-electronic-documents/xrechnung-1-2-2-cii.md) | Supported |
+| [XRechnung 1.2.2 UBL](../supported-electronic-documents/xrechnung-1-2-2-ubl.md) | Supported |
+| [XRechnung 2.0 CII](../supported-electronic-documents/xrechnung-2-0-cii.md) | Supported |
+| [XRechnung 2.0 UBL](../supported-electronic-documents/xrechnung-2-0-ubl.md) | Supported |
+| [XRechnung 2.0.1 CII](../supported-electronic-documents/xrechnung-2-0-1-cii.md) | Supported |
+| [XRechnung 2.0.1 UBL](../supported-electronic-documents/xrechnung-2-0-1-ubl.md) | Supported |
+| [XRechnung 2.1 CII](../supported-electronic-documents/xrechnung-2-1-cii.md) | Supported |
+| [XRechnung 2.1 UBL](../supported-electronic-documents/xrechnung-2-1-ubl.md) | Supported |
+| [XRechnung 2.2 CII](../supported-electronic-documents/xrechnung-2-2-cii.md) | Supported |
+| [XRechnung 2.2 UBL](../supported-electronic-documents/xrechnung-2-2-ubl.md) | Supported |
+| [XRechnung 2.3 CII](../supported-electronic-documents/xrechnung-2-3-cii.md) | Supported |
+| [XRechnung 2.3 UBL](../supported-electronic-documents/xrechnung-2-3-ubl.md) | Supported |
+| [XRechnung 3.0 CII](../supported-electronic-documents/xrechnung-3-0-cii.md) | Supported |
+| [XRechnung 3.0 UBL](../supported-electronic-documents/xrechnung-3-0-ubl.md) | Supported |
+| [XRechnung 3.0.1 CII](../supported-electronic-documents/xrechnung-3-0-1-cii.md) | Supported |
+| [XRechnung 3.0.1 UBL](../supported-electronic-documents/xrechnung-3-0-1-ubl.md) | Supported |
+| [XRechnung 3.0.2 CII](../supported-electronic-documents/xrechnung-3-0-2-cii.md) | Supported |
+| [XRechnung 3.0.2 UBL](../supported-electronic-documents/xrechnung-3-0-2-ubl.md) | Supported |
+| [ZUGFeRD 1.0](../supported-electronic-documents/zugferd-1-0.md) | Supported |
+| [ZUGFeRD 1.0 Basic](../supported-electronic-documents/zugferd-1-0-basic.md) | Supported |
+| [ZUGFeRD 1.0 Comfort](../supported-electronic-documents/zugferd-1-0-comfort.md) | Supported |
+| [ZUGFeRD 1.0 Extended](../supported-electronic-documents/zugferd-1-0-extended.md) | Supported |
+| [ZUGFeRD 2.2](../supported-electronic-documents/zugferd-2-2.md) | Supported |
+| [ZUGFeRD 2.3](../supported-electronic-documents/zugferd-2-3.md) | Supported |
+| [ZUGFeRD 2.3.2](../supported-electronic-documents/zugferd-2-3-2.md) | Supported |
 
 ### 🇮🇳 India
 
 | Standard | Status |
 |---|---|
-| GST E-Invoice | Supported |
+| [GST E-Invoice](../supported-electronic-documents/india-gst-e-invoice.md) | Supported |
 
 ### 🇮🇩 Indonesia
 
 | Standard | Status |
 |---|---|
-| E-Faktur | Supported |
+| [E-Faktur](../supported-electronic-documents/indonesia-e-faktur.md) | Supported |
 
 ### 🇮🇹 Italy
 
 | Standard | Status |
 |---|---|
-| FatturaPA | Supported |
+| [FatturaPA](../supported-electronic-documents/fatturapa.md) | Supported |
 
 ### 🇯🇵 Japan
 
 | Standard | Status |
 |---|---|
-| JP PINT | Supported |
-| JP PINT Self-Billing | Supported |
+| [JP PINT](../supported-electronic-documents/jp-pint.md) | Supported |
+| [JP PINT Self-Billing](../supported-electronic-documents/jp-pint-self-billing.md) | Supported |
 
 ### 🇰🇿 Kazakhstan
 
 | Standard | Status |
 |---|---|
-| ESF | Supported |
+| [ESF](../supported-electronic-documents/kazakhstan-esf.md) | Supported |
 
 ### 🇰🇷 Korea
 
 | Standard | Status |
 |---|---|
-| E-Tax Invoice | Supported |
-| NTS | Supported |
+| [E-Tax Invoice](../supported-electronic-documents/korea-e-tax-invoice.md) | Supported |
+| [NTS](../supported-electronic-documents/korea-nts.md) | Supported |
 
 ### 🇲🇾 Malaysia
 
 | Standard | Status |
 |---|---|
-| MyInvois | Supported |
+| [MyInvois](../supported-electronic-documents/myinvois.md) | Supported |
 
 ### 🇲🇽 Mexico
 
 | Standard | Status |
 |---|---|
-| CFDI 3.3 | Supported |
-| CFDI 4.0 | Supported |
+| [CFDI 3.3](../supported-electronic-documents/mexico-cfdi-3-3.md) | Supported |
+| [CFDI 4.0](../supported-electronic-documents/mexico-cfdi-4-0.md) | Supported |
 
 ### 🇳🇱 Netherlands
 
 | Standard | Status |
 |---|---|
-| SI-UBL 2.0 | Supported |
+| [SI-UBL 2.0](../supported-electronic-documents/si-ubl-2-0.md) | Supported |
 
 ### 🇳🇴 Norway
 
 | Standard | Status |
 |---|---|
-| EHF Invoice 3.0 | Supported |
+| [EHF Invoice 3.0](../supported-electronic-documents/ehf-invoice-3-0.md) | Supported |
 
 ### 🇵🇾 Paraguay
 
 | Standard | Status |
 |---|---|
-| DTE | Supported |
-| SIFEN | Supported |
-| SIFEN 150 | Supported |
+| [DTE](../supported-electronic-documents/paraguay-dte.md) | Supported |
+| [SIFEN](../supported-electronic-documents/paraguay-sifen.md) | Supported |
+| [SIFEN 150](../supported-electronic-documents/paraguay-sifen-150.md) | Supported |
 
 ### 🇵🇪 Peru
 
 | Standard | Status |
 |---|---|
-| CPE | Supported |
-| CPE UBL 2.0 | Supported |
-| CPE UBL 2.1 | Supported |
-| FACTURA ELECTRONICA | Supported |
+| [CPE](../supported-electronic-documents/peru-cpe.md) | Supported |
+| [CPE UBL 2.0](../supported-electronic-documents/peru-cpe-ubl-2-0.md) | Supported |
+| [CPE UBL 2.1](../supported-electronic-documents/peru-cpe-ubl-2-1.md) | Supported |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/peru-factura-electronica.md) | Supported |
 
 ### 🇵🇭 Philippines
 
 | Standard | Status |
 |---|---|
-| EIS | Supported |
+| [EIS](../supported-electronic-documents/philippines-eis.md) | Supported |
 
 ### 🇵🇱 Poland
 
 | Standard | Status |
 |---|---|
-| KSeF | Supported |
-| KSeF FA2 | Supported |
-| KSeF FA3 | Supported |
+| [KSeF](../supported-electronic-documents/ksef.md) | Supported |
+| [KSeF FA2](../supported-electronic-documents/ksef-fa2.md) | Supported |
+| [KSeF FA3](../supported-electronic-documents/ksef-fa3.md) | Supported |
 
 ### 🇸🇦 Saudi Arabia
 
 | Standard | Status |
 |---|---|
-| ZATCA Fatoorah | Supported |
-| ZATCA Reporting | Supported |
-| ZATCA Simplified | Supported |
-| ZATCA Tax Invoice | Supported |
+| [ZATCA Fatoorah](../supported-electronic-documents/zatca-fatoorah.md) | Supported |
+| [ZATCA Reporting](../supported-electronic-documents/zatca-reporting.md) | Supported |
+| [ZATCA Simplified](../supported-electronic-documents/zatca-simplified.md) | Supported |
+| [ZATCA Tax Invoice](../supported-electronic-documents/zatca-tax-invoice.md) | Supported |
 
 ### 🇸🇬 Singapore
 
 | Standard | Status |
 |---|---|
-| InvoiceNow | Supported |
-| InvoiceNow SG | Supported |
+| [InvoiceNow](../supported-electronic-documents/invoicenow.md) | Supported |
+| [InvoiceNow SG](../supported-electronic-documents/invoicenow-sg.md) | Supported |
 
 ### 🇸🇮 Slovenia
 
@@ -271,48 +271,48 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| Svefaktura 1.0 | Supported |
+| [Svefaktura 1.0](../supported-electronic-documents/svefaktura-1-0.md) | Supported |
 
 ### 🇹🇼 Taiwan
 
 | Standard | Status |
 |---|---|
-| eGUI | Supported |
+| [eGUI](../supported-electronic-documents/taiwan-egui.md) | Supported |
 
 ### 🇹🇭 Thailand
 
 | Standard | Status |
 |---|---|
-| E-Tax Invoice | Supported |
+| [E-Tax Invoice](../supported-electronic-documents/thailand-e-tax-invoice.md) | Supported |
 
 ### 🇹🇷 Turkey
 
 | Standard | Status |
 |---|---|
-| E-Arsiv | Supported |
-| E-Fatura | Supported |
+| [E-Arsiv](../supported-electronic-documents/turkey-e-arsiv.md) | Supported |
+| [E-Fatura](../supported-electronic-documents/turkey-e-fatura.md) | Supported |
 
 ### 🇦🇪 United Arab Emirates
 
 | Standard | Status |
 |---|---|
-| VAT Invoice | Supported |
+| [VAT Invoice](../supported-electronic-documents/uae-vat-invoice.md) | Supported |
 
 ### 🇺🇾 Uruguay
 
 | Standard | Status |
 |---|---|
-| CFE | Supported |
-| CFE 24 | Supported |
-| CFE 25 | Supported |
-| E-Factura | Supported |
-| E-Nota Credito | Supported |
+| [CFE](../supported-electronic-documents/uruguay-cfe.md) | Supported |
+| [CFE 24](../supported-electronic-documents/uruguay-cfe-24.md) | Supported |
+| [CFE 25](../supported-electronic-documents/uruguay-cfe-25.md) | Supported |
+| [E-Factura](../supported-electronic-documents/uruguay-e-factura.md) | Supported |
+| [E-Nota Credito](../supported-electronic-documents/uruguay-e-nota-credito.md) | Supported |
 
 ### 🇻🇳 Vietnam
 
 | Standard | Status |
 |---|---|
-| E-Invoice | Supported |
+| [E-Invoice](../supported-electronic-documents/vietnam-e-invoice.md) | Supported |
 
 ### International / Multi-Country Standards
 
@@ -320,9 +320,9 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 |---|---|
 | BOD | Supported |
 | EDI | Supported |
-| INVOIC02 | Supported |
-| SPS Commerce RSX 7.7.4 | Supported |
-| UBL 2.1 | Supported |
+| [INVOIC02](../supported-electronic-documents/invoic02.md) | Supported |
+| [SPS Commerce RSX 7.7.4](../supported-electronic-documents/sps-commerce-rsx-7-7-4.md) | Supported |
+| [UBL 2.1](../supported-electronic-documents/ubl-2-1.md) | Supported |
 
 ## Roadmap for Upcoming Implementation
 

@@ -50,10 +50,10 @@ DocBits supports **120+** electronic invoice and document standards across **30+
 
 | Standard | Status |
 |---|---|
-| E-FAPIAO | Supported |
-| FAPIAO | Supported |
-| GENERAL VAT INVOICE | Supported |
-| SPECIAL VAT INVOICE | Supported |
+| [E-FAPIAO](../supported-electronic-documents/china-fapiao.md) | Supported |
+| [FAPIAO](../supported-electronic-documents/china-fapiao.md) | Supported |
+| [GENERAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Supported |
+| [SPECIAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Supported |
 
 ### 🇨🇴 Colombia
 

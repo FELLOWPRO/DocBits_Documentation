@@ -287,6 +287,7 @@
           * [🇫🇮 FINVOICE 3.0](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/finvoice-3-0.md)
           * [🇮🇳 INDIA GST E-INVOICE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/india-gst-e-invoice.md)
           * [🇮🇩 INDONESIA E-FAKTUR](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/indonesia-e-faktur.md)
+          * [🇨🇳 CHINA FAPIAO](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/china-fapiao.md)
           * [INVOIC02](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/invoic02.md)
           * [🇸🇬 INVOICENOW](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/invoicenow.md)
           * [🇸🇬 INVOICENOW SG](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/invoicenow-sg.md)

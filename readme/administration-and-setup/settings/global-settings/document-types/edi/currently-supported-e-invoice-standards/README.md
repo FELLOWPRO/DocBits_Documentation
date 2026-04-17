@@ -72,12 +72,12 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| FACTURA ELECTRONICA | Pris en charge |
-| SRI | Pris en charge |
-| SRI 1.0.0 | Pris en charge |
-| SRI 1.1.0 | Pris en charge |
-| SRI 2.0.0 | Pris en charge |
-| SRI 2.1.0 | Pris en charge |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Pris en charge |
+| [SRI](../supported-electronic-documents/ecuador-sri.md) | Pris en charge |
+| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Pris en charge |
+| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Pris en charge |
+| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Pris en charge |
+| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Pris en charge |
 
 ### 🇪🇸 Spain
 

@@ -5,323 +5,324 @@
 
 ## Supported Electronic Documents by Country
 
-DocBits ondersteunt **120+** elektronische facturerings- en documentstandaarden in **30+ landen**. De onderstaande tabel is geordend per land.
+DocBits supports **120+** electronic invoice and document standards across **30+ countries**. The table below is organized by country.
 
 ### 🇦🇷 Argentina
 
 | Standard | Status |
 |---|---|
-| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Ondersteund |
-| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Ondersteund |
+| [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Supported |
+| [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Supported |
 
 ### 🇦🇹 Austria
 
 | Standard | Status |
 |---|---|
-| [AUSTRIA EBINTERFACE](../supported-electronic-documents/austria-ebinterface.md) (4.3 – 6.1) | Ondersteund |
-| [AUSTRIA EBINTERFACE 6.0](../supported-electronic-documents/austria-ebinterface-6-0.md) | Ondersteund |
-| [AUSTRIA EBINTERFACE 6.1](../supported-electronic-documents/austria-ebinterface-6-1.md) | Ondersteund |
+| [AUSTRIA EBINTERFACE](../supported-electronic-documents/austria-ebinterface.md) (4.3 – 6.1) | Supported |
+| [AUSTRIA EBINTERFACE 6.0](../supported-electronic-documents/austria-ebinterface-6-0.md) | Supported |
+| [AUSTRIA EBINTERFACE 6.1](../supported-electronic-documents/austria-ebinterface-6-1.md) | Supported |
 
 ### 🇦🇺 Australia / 🇳🇿 New Zealand
 
 | Standard | Status |
 |---|---|
-| PINT A-NZ | Ondersteund |
+| [AUNZ PINT](../supported-electronic-documents/aunz-pint.md) (incl. Self-Billing) | Supported |
+| [PINT A-NZ](../supported-electronic-documents/pint-a-nz.md) | Supported |
 
 ### 🇧🇷 Brazil
 
 | Standard | Status |
 |---|---|
-| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Ondersteund |
-| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Ondersteund |
-| [CT-e](../supported-electronic-documents/brazil-cte.md) | Ondersteund |
-| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Ondersteund |
+| [CT-e](../supported-electronic-documents/brazil-cte.md) | Supported |
+| [NF-e](../supported-electronic-documents/brazil-nfe.md) | Supported |
+| [NFC-e](../supported-electronic-documents/brazil-nfce.md) | Supported |
+| [NFS-e](../supported-electronic-documents/brazil-nfse.md) | Supported |
 
 ### 🇨🇱 Chile
 
 | Standard | Status |
 |---|---|
-| DTE | Ondersteund |
-| DTE FACTURA | Ondersteund |
-| FACTURA ELECTRONICA | Ondersteund |
+| [CHILE DTE](../supported-electronic-documents/chile-dte.md) | Supported |
+| [CHILE DTE FACTURA](../supported-electronic-documents/chile-dte.md) | Supported |
+| [CHILE DTE NOTA CREDITO](../supported-electronic-documents/chile-dte.md) | Supported |
 
 ### 🇨🇳 China
 
 | Standard | Status |
 |---|---|
-| E-FAPIAO | Ondersteund |
-| FAPIAO | Ondersteund |
-| GENERAL VAT INVOICE | Ondersteund |
-| SPECIAL VAT INVOICE | Ondersteund |
+| [E-FAPIAO](../supported-electronic-documents/china-fapiao.md) | Supported |
+| [FAPIAO](../supported-electronic-documents/china-fapiao.md) | Supported |
+| [GENERAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Supported |
+| [SPECIAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Supported |
 
 ### 🇨🇴 Colombia
 
 | Standard | Status |
 |---|---|
-| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Ondersteund |
-| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Ondersteund |
+| [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Supported |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Supported |
 
 ### 🇩🇰 Denmark
 
 | Standard | Status |
 |---|---|
-| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Ondersteund |
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Supported |
 
 ### 🇪🇨 Ecuador
 
 | Standard | Status |
 |---|---|
-| FACTURA ELECTRONICA | Ondersteund |
-| SRI | Ondersteund |
-| SRI 1.0.0 | Ondersteund |
-| SRI 1.1.0 | Ondersteund |
-| SRI 2.0.0 | Ondersteund |
-| SRI 2.1.0 | Ondersteund |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Supported |
+| [SRI](../supported-electronic-documents/ecuador-sri.md) | Supported |
+| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
+| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
+| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
+| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Supported |
 
 ### 🇪🇸 Spain
 
 | Standard | Status |
 |---|---|
-| Facturae | Ondersteund |
-| Facturae 3.2 | Ondersteund |
-| Facturae 3.2.1 | Ondersteund |
-| Facturae 3.2.2 | Ondersteund |
+| Facturae | Supported |
+| Facturae 3.2 | Supported |
+| Facturae 3.2.1 | Supported |
+| Facturae 3.2.2 | Supported |
 
 ### 🇪🇺 European Union
 
 | Standard | Status |
 |---|---|
-| PEPPOL BIS 3.0 | Ondersteund |
+| PEPPOL BIS 3.0 | Supported |
 
 ### 🇫🇮 Finland
 
 | Standard | Status |
 |---|---|
-| Finvoice 1.3 | Ondersteund |
-| Finvoice 2.0 | Ondersteund |
-| Finvoice 2.01 | Ondersteund |
-| Finvoice 3.0 | Ondersteund |
-| TEAPPSXML | Ondersteund |
+| Finvoice 1.3 | Supported |
+| Finvoice 2.0 | Supported |
+| Finvoice 2.01 | Supported |
+| Finvoice 3.0 | Supported |
+| TEAPPSXML | Supported |
 
 ### 🇫🇷 France
 
 | Standard | Status |
 |---|---|
-| Factur-X | Ondersteund |
-| Factur-X 1.0.05 / ZUGFeRD 2.1 | Ondersteund |
-| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Ondersteund |
+| Factur-X | Supported |
+| Factur-X 1.0.05 / ZUGFeRD 2.1 | Supported |
+| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Supported |
 
 ### 🇩🇪 Germany
 
 | Standard | Status |
 |---|---|
-| XRechnung 1.0 CII | Ondersteund |
-| XRechnung 1.0 UBL | Ondersteund |
-| XRechnung 1.1 CII | Ondersteund |
-| XRechnung 1.1 UBL | Ondersteund |
-| XRechnung 1.2 CII | Ondersteund |
-| XRechnung 1.2 UBL | Ondersteund |
-| XRechnung 1.2.1 CII | Ondersteund |
-| XRechnung 1.2.1 UBL | Ondersteund |
-| XRechnung 1.2.2 CII | Ondersteund |
-| XRechnung 1.2.2 UBL | Ondersteund |
-| XRechnung 2.0 CII | Ondersteund |
-| XRechnung 2.0 UBL | Ondersteund |
-| XRechnung 2.0.1 CII | Ondersteund |
-| XRechnung 2.0.1 UBL | Ondersteund |
-| XRechnung 2.1 CII | Ondersteund |
-| XRechnung 2.1 UBL | Ondersteund |
-| XRechnung 2.2 CII | Ondersteund |
-| XRechnung 2.2 UBL | Ondersteund |
-| XRechnung 2.3 CII | Ondersteund |
-| XRechnung 2.3 UBL | Ondersteund |
-| XRechnung 3.0 CII | Ondersteund |
-| XRechnung 3.0 UBL | Ondersteund |
-| XRechnung 3.0.1 CII | Ondersteund |
-| XRechnung 3.0.1 UBL | Ondersteund |
-| XRechnung 3.0.2 CII | Ondersteund |
-| XRechnung 3.0.2 UBL | Ondersteund |
-| ZUGFeRD 1.0 | Ondersteund |
-| ZUGFeRD 1.0 Basic | Ondersteund |
-| ZUGFeRD 1.0 Comfort | Ondersteund |
-| ZUGFeRD 1.0 Extended | Ondersteund |
-| ZUGFeRD 2.2 | Ondersteund |
-| ZUGFeRD 2.3 | Ondersteund |
-| ZUGFeRD 2.3.2 | Ondersteund |
+| XRechnung 1.0 CII | Supported |
+| XRechnung 1.0 UBL | Supported |
+| XRechnung 1.1 CII | Supported |
+| XRechnung 1.1 UBL | Supported |
+| XRechnung 1.2 CII | Supported |
+| XRechnung 1.2 UBL | Supported |
+| XRechnung 1.2.1 CII | Supported |
+| XRechnung 1.2.1 UBL | Supported |
+| XRechnung 1.2.2 CII | Supported |
+| XRechnung 1.2.2 UBL | Supported |
+| XRechnung 2.0 CII | Supported |
+| XRechnung 2.0 UBL | Supported |
+| XRechnung 2.0.1 CII | Supported |
+| XRechnung 2.0.1 UBL | Supported |
+| XRechnung 2.1 CII | Supported |
+| XRechnung 2.1 UBL | Supported |
+| XRechnung 2.2 CII | Supported |
+| XRechnung 2.2 UBL | Supported |
+| XRechnung 2.3 CII | Supported |
+| XRechnung 2.3 UBL | Supported |
+| XRechnung 3.0 CII | Supported |
+| XRechnung 3.0 UBL | Supported |
+| XRechnung 3.0.1 CII | Supported |
+| XRechnung 3.0.1 UBL | Supported |
+| XRechnung 3.0.2 CII | Supported |
+| XRechnung 3.0.2 UBL | Supported |
+| ZUGFeRD 1.0 | Supported |
+| ZUGFeRD 1.0 Basic | Supported |
+| ZUGFeRD 1.0 Comfort | Supported |
+| ZUGFeRD 1.0 Extended | Supported |
+| ZUGFeRD 2.2 | Supported |
+| ZUGFeRD 2.3 | Supported |
+| ZUGFeRD 2.3.2 | Supported |
 
 ### 🇮🇳 India
 
 | Standard | Status |
 |---|---|
-| GST E-Invoice | Ondersteund |
+| GST E-Invoice | Supported |
 
 ### 🇮🇩 Indonesia
 
 | Standard | Status |
 |---|---|
-| E-Faktur | Ondersteund |
+| E-Faktur | Supported |
 
 ### 🇮🇹 Italy
 
 | Standard | Status |
 |---|---|
-| FatturaPA | Ondersteund |
+| FatturaPA | Supported |
 
 ### 🇯🇵 Japan
 
 | Standard | Status |
 |---|---|
-| JP PINT | Ondersteund |
-| JP PINT Self-Billing | Ondersteund |
+| JP PINT | Supported |
+| JP PINT Self-Billing | Supported |
 
 ### 🇰🇿 Kazakhstan
 
 | Standard | Status |
 |---|---|
-| ESF | Ondersteund |
+| ESF | Supported |
 
 ### 🇰🇷 Korea
 
 | Standard | Status |
 |---|---|
-| E-Tax Invoice | Ondersteund |
-| NTS | Ondersteund |
+| E-Tax Invoice | Supported |
+| NTS | Supported |
 
 ### 🇲🇾 Malaysia
 
 | Standard | Status |
 |---|---|
-| MyInvois | Ondersteund |
+| MyInvois | Supported |
 
 ### 🇲🇽 Mexico
 
 | Standard | Status |
 |---|---|
-| CFDI 3.3 | Ondersteund |
-| CFDI 4.0 | Ondersteund |
+| CFDI 3.3 | Supported |
+| CFDI 4.0 | Supported |
 
 ### 🇳🇱 Netherlands
 
 | Standard | Status |
 |---|---|
-| SI-UBL 2.0 | Ondersteund |
+| SI-UBL 2.0 | Supported |
 
 ### 🇳🇴 Norway
 
 | Standard | Status |
 |---|---|
-| EHF Invoice 3.0 | Ondersteund |
+| EHF Invoice 3.0 | Supported |
 
 ### 🇵🇾 Paraguay
 
 | Standard | Status |
 |---|---|
-| DTE | Ondersteund |
-| SIFEN | Ondersteund |
-| SIFEN 150 | Ondersteund |
+| DTE | Supported |
+| SIFEN | Supported |
+| SIFEN 150 | Supported |
 
 ### 🇵🇪 Peru
 
 | Standard | Status |
 |---|---|
-| CPE | Ondersteund |
-| CPE UBL 2.0 | Ondersteund |
-| CPE UBL 2.1 | Ondersteund |
-| FACTURA ELECTRONICA | Ondersteund |
+| CPE | Supported |
+| CPE UBL 2.0 | Supported |
+| CPE UBL 2.1 | Supported |
+| FACTURA ELECTRONICA | Supported |
 
 ### 🇵🇭 Philippines
 
 | Standard | Status |
 |---|---|
-| EIS | Ondersteund |
+| EIS | Supported |
 
 ### 🇵🇱 Poland
 
 | Standard | Status |
 |---|---|
-| KSeF | Ondersteund |
-| KSeF FA2 | Ondersteund |
-| KSeF FA3 | Ondersteund |
+| KSeF | Supported |
+| KSeF FA2 | Supported |
+| KSeF FA3 | Supported |
 
 ### 🇸🇦 Saudi Arabia
 
 | Standard | Status |
 |---|---|
-| ZATCA Fatoorah | Ondersteund |
-| ZATCA Reporting | Ondersteund |
-| ZATCA Simplified | Ondersteund |
-| ZATCA Tax Invoice | Ondersteund |
+| ZATCA Fatoorah | Supported |
+| ZATCA Reporting | Supported |
+| ZATCA Simplified | Supported |
+| ZATCA Tax Invoice | Supported |
 
 ### 🇸🇬 Singapore
 
 | Standard | Status |
 |---|---|
-| InvoiceNow | Ondersteund |
-| InvoiceNow SG | Ondersteund |
+| InvoiceNow | Supported |
+| InvoiceNow SG | Supported |
 
 ### 🇸🇮 Slovenia
 
 | Standard | Status |
 |---|---|
-| e-SLOG 1.6 | Ondersteund |
-| e-SLOG 2.0 | Ondersteund |
+| e-SLOG 1.6 | Supported |
+| e-SLOG 2.0 | Supported |
 
 ### 🇸🇪 Sweden
 
 | Standard | Status |
 |---|---|
-| Svefaktura 1.0 | Ondersteund |
+| Svefaktura 1.0 | Supported |
 
 ### 🇹🇼 Taiwan
 
 | Standard | Status |
 |---|---|
-| eGUI | Ondersteund |
+| eGUI | Supported |
 
 ### 🇹🇭 Thailand
 
 | Standard | Status |
 |---|---|
-| E-Tax Invoice | Ondersteund |
+| E-Tax Invoice | Supported |
 
 ### 🇹🇷 Turkey
 
 | Standard | Status |
 |---|---|
-| E-Arsiv | Ondersteund |
-| E-Fatura | Ondersteund |
+| E-Arsiv | Supported |
+| E-Fatura | Supported |
 
 ### 🇦🇪 United Arab Emirates
 
 | Standard | Status |
 |---|---|
-| VAT Invoice | Ondersteund |
+| VAT Invoice | Supported |
 
 ### 🇺🇾 Uruguay
 
 | Standard | Status |
 |---|---|
-| CFE | Ondersteund |
-| CFE 24 | Ondersteund |
-| CFE 25 | Ondersteund |
-| E-Factura | Ondersteund |
-| E-Nota Credito | Ondersteund |
+| CFE | Supported |
+| CFE 24 | Supported |
+| CFE 25 | Supported |
+| E-Factura | Supported |
+| E-Nota Credito | Supported |
 
 ### 🇻🇳 Vietnam
 
 | Standard | Status |
 |---|---|
-| E-Invoice | Ondersteund |
+| E-Invoice | Supported |
 
 ### International / Multi-Country Standards
 
 | Standard | Status |
 |---|---|
-| BOD | Ondersteund |
-| EDI | Ondersteund |
-| INVOIC02 | Ondersteund |
-| SPS Commerce RSX 7.7.4 | Ondersteund |
-| UBL 2.1 | Ondersteund |
+| BOD | Supported |
+| EDI | Supported |
+| INVOIC02 | Supported |
+| SPS Commerce RSX 7.7.4 | Supported |
+| UBL 2.1 | Supported |
 
 ## Roadmap for Upcoming Implementation
 

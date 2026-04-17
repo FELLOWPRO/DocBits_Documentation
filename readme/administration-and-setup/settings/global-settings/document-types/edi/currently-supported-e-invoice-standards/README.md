@@ -29,6 +29,12 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 | [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Destekleniyor |
 | [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Destekleniyor |
 
+### 🇩🇰 Danimarka
+
+| Standart | Durum |
+|---|---|
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

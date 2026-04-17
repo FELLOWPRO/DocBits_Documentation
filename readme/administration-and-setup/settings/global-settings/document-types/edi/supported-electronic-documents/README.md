@@ -183,6 +183,12 @@ Für die detaillierte Konfiguration, siehe [EDI-Einstellungen](../README.md). F�
 |----------|-------|
 | E-Faktur | [INDONESIA E-FAKTUR](indonesia-e-faktur.md) |
 
+### 🇨🇳 China
+
+| Standard | Seite |
+|----------|-------|
+| Fapiao (Übersicht) | [CHINA FAPIAO](china-fapiao.md) |
+
 ### 🇯🇵 Japan
 
 | Standard | Seite |

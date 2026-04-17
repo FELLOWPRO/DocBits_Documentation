@@ -50,10 +50,10 @@ DocBits unterstützt **120+** elektronische Rechnungs- und Dokumentenstandards i
 
 | Standard | Status |
 |---|---|
-| E-FAPIAO | Unterstützt |
-| FAPIAO | Unterstützt |
-| GENERAL VAT INVOICE | Unterstützt |
-| SPECIAL VAT INVOICE | Unterstützt |
+| [E-FAPIAO](../supported-electronic-documents/china-fapiao.md) | Unterstützt |
+| [FAPIAO](../supported-electronic-documents/china-fapiao.md) | Unterstützt |
+| [GENERAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Unterstützt |
+| [SPECIAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Unterstützt |
 
 ### 🇨🇴 Colombia
 

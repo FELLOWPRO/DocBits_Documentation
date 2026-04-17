@@ -66,7 +66,7 @@ DocBits podržava **120+** standarda elektronskih faktura i dokumenata u **30+ z
 
 | Standard | Status |
 |---|---|
-| OIOUBL 2.1 | Podržano |
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Podržano |
 
 ### 🇪🇨 Ekvador
 

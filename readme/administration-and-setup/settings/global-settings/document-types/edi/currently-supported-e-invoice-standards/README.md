@@ -66,7 +66,7 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 
 | Standard | Estado |
 |---|---|
-| OIOUBL 2.1 | Compatible |
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Compatible |
 
 ### 🇪🇨 Ecuador
 

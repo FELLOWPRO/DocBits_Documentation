@@ -66,7 +66,7 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| OIOUBL 2.1 | Pris en charge |
+| [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Pris en charge |
 
 ### 🇪🇨 Ecuador
 

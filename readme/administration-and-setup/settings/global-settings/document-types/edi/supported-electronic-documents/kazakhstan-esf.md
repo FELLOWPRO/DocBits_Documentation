@@ -21,6 +21,10 @@ Kazakhstan ESF (Электронные счета-фактуры) is the electro
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="kazakhstan-esf-preview.png" alt="Kazakhstan ESF invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Kazakhstan ESF invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

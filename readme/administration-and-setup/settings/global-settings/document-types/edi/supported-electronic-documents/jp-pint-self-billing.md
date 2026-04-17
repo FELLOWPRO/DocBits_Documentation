@@ -21,6 +21,10 @@ JP PINT Self-Billing is the self-billing variant of the Japanese Peppol Internat
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="jp-pint-self-billing-preview.png" alt="JP PINT Self-Billing invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Japan JP PINT Self-Billing invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

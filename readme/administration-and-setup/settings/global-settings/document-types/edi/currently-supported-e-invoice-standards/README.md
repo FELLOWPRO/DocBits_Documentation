@@ -98,11 +98,11 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| Finvoice 1.3 | Pris en charge |
-| Finvoice 2.0 | Pris en charge |
-| Finvoice 2.01 | Pris en charge |
-| Finvoice 3.0 | Pris en charge |
-| TEAPPSXML | Pris en charge |
+| [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Pris en charge |
+| [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Pris en charge |
+| [Finvoice 2.01](../supported-electronic-documents/finland-finvoice.md) | Pris en charge |
+| [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Pris en charge |
+| [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Pris en charge |
 
 ### 🇫🇷 France
 

@@ -46,6 +46,15 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 | [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
 | [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
 
+### 🇪🇸 İspanya
+
+| Standart | Durum |
+|---|---|
+| [Facturae](../supported-electronic-documents/spain-facturae.md) | Destekleniyor |
+| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Destekleniyor |
+| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Destekleniyor |
+| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

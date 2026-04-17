@@ -35,6 +35,17 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 |---|---|
 | [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Destekleniyor |
 
+### 🇪🇨 Ekvador
+
+| Standart | Durum |
+|---|---|
+| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
+| [SRI](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
+| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
+| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
+| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
+| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

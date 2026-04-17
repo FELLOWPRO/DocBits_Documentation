@@ -50,10 +50,10 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 
 | Standard | Statut |
 |---|---|
-| E-FAPIAO | Pris en charge |
-| FAPIAO | Pris en charge |
-| GENERAL VAT INVOICE | Pris en charge |
-| SPECIAL VAT INVOICE | Pris en charge |
+| [E-FAPIAO](../supported-electronic-documents/china-fapiao.md) | Pris en charge |
+| [FAPIAO](../supported-electronic-documents/china-fapiao.md) | Pris en charge |
+| [GENERAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Pris en charge |
+| [SPECIAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Pris en charge |
 
 ### 🇨🇴 Colombia
 

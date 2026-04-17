@@ -183,6 +183,12 @@ For detailed configuration, see [EDI Settings](../README.md). For Peppol, XRechn
 |----------|------|
 | E-Faktur | [INDONESIA E-FAKTUR](indonesia-e-faktur.md) |
 
+### 🇨🇳 Chine
+
+| Norme | Page |
+|----------|------|
+| Fapiao (Aperçu) | [CHINA FAPIAO](china-fapiao.md) |
+
 ### 🇯🇵 Japan
 
 | Standard | Page |

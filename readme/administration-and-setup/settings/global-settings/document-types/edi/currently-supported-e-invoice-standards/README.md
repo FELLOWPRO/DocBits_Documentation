@@ -72,12 +72,12 @@ DocBits podržava **120+** standarda elektronskih faktura i dokumenata u **30+ z
 
 | Standard | Status |
 |---|---|
-| FACTURA ELECTRONICA | Podržano |
-| SRI | Podržano |
-| SRI 1.0.0 | Podržano |
-| SRI 1.1.0 | Podržano |
-| SRI 2.0.0 | Podržano |
-| SRI 2.1.0 | Podržano |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Podržano |
+| [SRI](../supported-electronic-documents/ecuador-sri.md) | Podržano |
+| [SRI 1.0.0](../supported-electronic-documents/ecuador-sri.md) | Podržano |
+| [SRI 1.1.0](../supported-electronic-documents/ecuador-sri.md) | Podržano |
+| [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Podržano |
+| [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Podržano |
 
 ### 🇪🇸 Španija
 

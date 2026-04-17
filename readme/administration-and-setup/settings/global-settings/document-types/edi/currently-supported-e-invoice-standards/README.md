@@ -55,6 +55,16 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 | [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Destekleniyor |
 | [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Destekleniyor |
 
+### 🇫🇮 Finlandiya
+
+| Standart | Durum |
+|---|---|
+| [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Destekleniyor |
+| [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Destekleniyor |
+| [Finvoice 2.01](../supported-electronic-documents/finland-finvoice.md) | Destekleniyor |
+| [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Destekleniyor |
+| [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

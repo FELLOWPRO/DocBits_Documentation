@@ -83,10 +83,10 @@ DocBits suporta **120+** padrões de faturamento eletrônico e documentos em **3
 
 | Standard | Status |
 |---|---|
-| Facturae | Suportado |
-| Facturae 3.2 | Suportado |
-| Facturae 3.2.1 | Suportado |
-| Facturae 3.2.2 | Suportado |
+| [Facturae](../supported-electronic-documents/spain-facturae.md) | Suportado |
+| [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Suportado |
+| [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Suportado |
+| [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Suportado |
 
 ### 🇪🇺 European Union
 
@@ -98,11 +98,11 @@ DocBits suporta **120+** padrões de faturamento eletrônico e documentos em **3
 
 | Standard | Status |
 |---|---|
-| Finvoice 1.3 | Suportado |
-| Finvoice 2.0 | Suportado |
-| Finvoice 2.01 | Suportado |
-| Finvoice 3.0 | Suportado |
-| TEAPPSXML | Suportado |
+| [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Suportado |
+| [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Suportado |
+| [Finvoice 2.01](../supported-electronic-documents/finland-finvoice.md) | Suportado |
+| [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Suportado |
+| [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Suportado |
 
 ### 🇫🇷 France
 

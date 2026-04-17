@@ -65,6 +65,12 @@ DocBits EDI Configuration Guide: Structure Descriptors, Transformation & Extract
 | [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Destekleniyor |
 | [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Destekleniyor |
 
+### 🇮🇳 Hindistan
+
+| Standart | Durum |
+|---|---|
+| [GST E-Invoice](../supported-electronic-documents/india-gst-e-invoice.md) | Destekleniyor |
+
 ## Desteklenen Formatlar
 
 DocBits aşağıdaki e-fatura formatlarını destekler:

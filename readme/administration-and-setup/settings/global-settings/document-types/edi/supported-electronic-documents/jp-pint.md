@@ -21,6 +21,10 @@ JP PINT is the Japanese implementation of the Peppol International (PINT) invoic
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
+## Default Preview
+
+<figure><img src="jp-pint-preview.png" alt="JP PINT invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Japan JP PINT invoice</p></figcaption></figure>
+
 ## Related
 
 - [Supported Electronic Documents](./)

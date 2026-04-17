@@ -1,89 +1,89 @@
 ---
-description: Unterstützung elektronischer Dokumente nach dänischem OIOUBL 2.1-Standard in DocBits
+description: Soporte de documentos electrónicos Denmark OIOUBL 2.1 en DocBits
 ---
 
 # 🇩🇰 Denmark OIOUBL 2.1
 
-| Eigenschaft | Wert |
-|-------------|------|
-| **Land / Region** | Dänemark |
-| **Dokumenttypen** | Rechnung (Faktura), Gutschrift |
-| **Format** | XML (UBL 2.1) |
-| **Standard** | OIOUBL 2.1 (Offentlig Information Online UBL) |
-| **Locale** | `da_DK` |
+| Propiedad | Valor |
+|----------|-------|
+| **País / Región** | Denmark |
+| **Tipos de documento** | Invoice (Faktura), Credit Note |
+| **Formato** | XML (UBL 2.1) |
+| **Estándar** | OIOUBL 2.1 (Offentlig Information Online UBL) |
+| **Configuración regional** | `da_DK` |
 
-OIOUBL (Offentlig Information Online UBL) ist der dänische E-Invoicing-Standard auf Basis von UBL 2.1. Er ist für Rechnungen an dänische Behörden und öffentliche Einrichtungen verpflichtend und wird auch im B2B-Bereich häufig eingesetzt. DocBits erkennt OIOUBL 2.1-Dokumente anhand des Elements `<cbc:CustomizationID>OIOUBL-2.1</cbc:CustomizationID>`. Der Profilbezeichner `urn:www.nesubl.eu:profiles:profile5:ver2.0` kennzeichnet das NES (Northern European Subset) Rechnungsprofil.
+OIOUBL (Offentlig Information Online UBL) es el estándar danés de facturación electrónica basado en UBL 2.1. Es obligatorio para facturas dirigidas a entidades del sector público danés y se utiliza ampliamente en transacciones B2B. DocBits detecta documentos OIOUBL 2.1 por la presencia de `<cbc:CustomizationID>OIOUBL-2.1</cbc:CustomizationID>`. El identificador de perfil `urn:www.nesubl.eu:profiles:profile5:ver2.0` indica el perfil de factura NES (Northern European Subset).
 
-## Unterstützungsstatus
+## Estado de soporte
 
-| Komponente | Status |
-|------------|--------|
-| Vorschau | ✅ Unterstützt |
-| Feldextraktion | ✅ Unterstützt |
-| Transformation | ✅ Unterstützt |
+| Componente | Estado |
+|-----------|--------|
+| Vista previa | ✅ Soportado |
+| Extracción de campos | ✅ Soportado |
+| Transformación | ✅ Soportado |
 
-## Standardvorschau
+## Vista previa predeterminada
 
-<figure><img src="denmark-oioubl-preview.png" alt="Denmark OIOUBL 2.1 invoice preview in DocBits"><figcaption><p>Standardvorschau in DocBits für eine dänische OIOUBL 2.1-Rechnung (Faktura)</p></figcaption></figure>
+<figure><img src="denmark-oioubl-preview.png" alt="Denmark OIOUBL 2.1 invoice preview in DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una factura Denmark OIOUBL 2.1 (Faktura)</p></figcaption></figure>
 
-## Feldzuordnung
+## Mapeo de campos
 
-### Kopfzeilenfelder
+### Campos de cabecera
 
-| DocBits-Feld | Quell-XML-Element | Hinweise |
+| Campo DocBits | Elemento XML fuente | Notas |
 |---|---|---|
-| `invoice_id` | `cbc:ID` | Rechnungsnummer |
-| `invoice_date` | `cbc:IssueDate` | Ausstellungsdatum nach ISO 8601 |
-| `due_date` | `cbc:DueDate` | Fälligkeitsdatum der Zahlung |
-| `invoice_type` | `cbc:InvoiceTypeCode` | UNCL 1001-Code (380=Rechnung, 381=Gutschrift) |
-| `currency` | `cbc:DocumentCurrencyCode` | Immer `DKK` (Dänische Krone) |
-| `purchase_order` | `cac:OrderReference/cbc:ID` | Bestellreferenznummer des Käufers |
-| `buyer_reference` | `cbc:BuyerReference` | Interne Referenz des Käufers / EAN-Standortnummer |
-| `note` | `cbc:Note` | Freitext-Zahlungshinweise oder Anmerkungen |
-| `net_amount` | `cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount` | Nettobetrag ohne MwSt. |
-| `tax_amount` | `cac:TaxTotal/cbc:TaxAmount` | Gesamter MwSt.-Betrag (Standardsatz 25 %) |
-| `total_amount` | `cac:LegalMonetaryTotal/cbc:PayableAmount` | Gesamtbetrag inkl. MwSt. |
-| `tax_rate` | `cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:Percent` | MwSt.-Satz in % |
-| `supplier_name` | `cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name` | Firmenname des Lieferanten |
-| `supplier_id` | `cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID` | CVR-Nummer (z. B. `DK12345678`) |
-| `supplier_vat` | `cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID` | Umsatzsteuer-/CVR-Nummer |
-| `supplier_address` | `cac:AccountingSupplierParty/.../cbc:StreetName` | Straßenadresse des Lieferanten |
-| `supplier_city` | `cac:AccountingSupplierParty/.../cbc:CityName` | Stadt des Lieferanten |
-| `supplier_postal_code` | `cac:AccountingSupplierParty/.../cbc:PostalZone` | Postleitzahl des Lieferanten |
-| `supplier_country` | `cac:AccountingSupplierParty/.../cbc:IdentificationCode` | ISO-Ländercode (`DK`) |
-| `customer_name` | `cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name` | Firmenname des Kunden |
-| `customer_id` | `cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID` | CVR-Nummer |
-| `customer_vat` | `cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID` | Umsatzsteuer-/CVR-Nummer |
-| `customer_address` | `cac:AccountingCustomerParty/.../cbc:StreetName` | Straßenadresse des Kunden |
-| `customer_city` | `cac:AccountingCustomerParty/.../cbc:CityName` | Stadt des Kunden |
-| `customer_postal_code` | `cac:AccountingCustomerParty/.../cbc:PostalZone` | Postleitzahl des Kunden |
-| `customer_country` | `cac:AccountingCustomerParty/.../cbc:IdentificationCode` | ISO-Ländercode (`DK`) |
-| `iban` | `cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID` | Bankkonto / IBAN |
-| `bic` | `cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID` | BIC/SWIFT-Code |
+| `invoice_id` | `cbc:ID` | Número de factura |
+| `invoice_date` | `cbc:IssueDate` | Fecha de emisión ISO 8601 |
+| `due_date` | `cbc:DueDate` | Fecha de vencimiento del pago |
+| `invoice_type` | `cbc:InvoiceTypeCode` | Código UNCL 1001 (380=Factura, 381=Nota de crédito) |
+| `currency` | `cbc:DocumentCurrencyCode` | Siempre `DKK` (Corona danesa) |
+| `purchase_order` | `cac:OrderReference/cbc:ID` | Número de referencia del pedido del comprador |
+| `buyer_reference` | `cbc:BuyerReference` | Referencia interna del comprador / número de ubicación EAN |
+| `note` | `cbc:Note` | Instrucciones de pago o notas en texto libre |
+| `net_amount` | `cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount` | Importe neto sin IVA |
+| `tax_amount` | `cac:TaxTotal/cbc:TaxAmount` | Importe total de IVA (tipo estándar del 25%) |
+| `total_amount` | `cac:LegalMonetaryTotal/cbc:PayableAmount` | Importe total con IVA |
+| `tax_rate` | `cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/cbc:Percent` | Tipo de IVA en % |
+| `supplier_name` | `cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name` | Nombre de la empresa proveedora |
+| `supplier_id` | `cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID` | Número CVR (p. ej. `DK12345678`) |
+| `supplier_vat` | `cac:AccountingSupplierParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID` | Número de IVA/CVR |
+| `supplier_address` | `cac:AccountingSupplierParty/.../cbc:StreetName` | Dirección del proveedor |
+| `supplier_city` | `cac:AccountingSupplierParty/.../cbc:CityName` | Ciudad del proveedor |
+| `supplier_postal_code` | `cac:AccountingSupplierParty/.../cbc:PostalZone` | Código postal del proveedor |
+| `supplier_country` | `cac:AccountingSupplierParty/.../cbc:IdentificationCode` | Código de país ISO (`DK`) |
+| `customer_name` | `cac:AccountingCustomerParty/cac:Party/cac:PartyName/cbc:Name` | Nombre de la empresa cliente |
+| `customer_id` | `cac:AccountingCustomerParty/cac:Party/cac:PartyIdentification/cbc:ID` | Número CVR |
+| `customer_vat` | `cac:AccountingCustomerParty/cac:Party/cac:PartyTaxScheme/cbc:CompanyID` | Número de IVA/CVR |
+| `customer_address` | `cac:AccountingCustomerParty/.../cbc:StreetName` | Dirección del cliente |
+| `customer_city` | `cac:AccountingCustomerParty/.../cbc:CityName` | Ciudad del cliente |
+| `customer_postal_code` | `cac:AccountingCustomerParty/.../cbc:PostalZone` | Código postal del cliente |
+| `customer_country` | `cac:AccountingCustomerParty/.../cbc:IdentificationCode` | Código de país ISO (`DK`) |
+| `iban` | `cac:PaymentMeans/cac:PayeeFinancialAccount/cbc:ID` | Cuenta bancaria / IBAN |
+| `bic` | `cac:PaymentMeans/cac:PayeeFinancialAccount/cac:FinancialInstitutionBranch/cbc:ID` | Código BIC/SWIFT |
 
-### Positionstabelle (`INVOICE_TABLE`)
+### Tabla de líneas de artículo (`INVOICE_TABLE`)
 
-Zeilenpfad: `cac:InvoiceLine`
+Ruta de fila: `cac:InvoiceLine`
 
-| Spalte | Quell-XML-Element | Hinweise |
+| Columna | Elemento XML fuente | Notas |
 |---|---|---|
-| `POSITION` | `cbc:ID` | Positionsfolgenummer |
-| `DESCRIPTION` | `cac:Item/cbc:Name` | Artikelname / Beschreibung |
-| `QUANTITY` | `cbc:InvoicedQuantity` | Berechnete Menge |
-| `UNIT_PRICE` | `cac:Price/cbc:PriceAmount` | Stückpreis ohne MwSt. |
-| `NET_AMOUNT` | `cbc:LineExtensionAmount` | Zeilensumme ohne MwSt. |
+| `POSITION` | `cbc:ID` | Número de secuencia de línea |
+| `DESCRIPTION` | `cac:Item/cbc:Name` | Nombre / descripción del artículo |
+| `QUANTITY` | `cbc:InvoicedQuantity` | Cantidad facturada |
+| `UNIT_PRICE` | `cac:Price/cbc:PriceAmount` | Precio unitario sin IVA |
+| `NET_AMOUNT` | `cbc:LineExtensionAmount` | Total de línea sin IVA |
 
-## Klassifizierungsregel
+## Regla de clasificación
 
-DocBits erkennt OIOUBL 2.1-Dokumente durch Abgleich des `CustomizationID`-Elements:
+DocBits detecta documentos OIOUBL 2.1 comparando el elemento `CustomizationID`:
 
-| Elektronischer Dokumenttyp | Muster |
-|---------------------------|--------|
+| Tipo de documento electrónico | Patrón |
+|--------------------------|---------|
 | OIOUBL 2.1 | `<cbc:CustomizationID>OIOUBL-2\.1\s*</cbc:CustomizationID>` |
 
-Das Wurzelelement ist `<Invoice>` (oder `<CreditNote>`) im UBL 2.1-Namespace `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`.
+El elemento raíz es `<Invoice>` (o `<CreditNote>`) en el espacio de nombres UBL 2.1 `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`.
 
-## Verwandte Themen
+## Relacionado
 
-- [Aktuell unterstützte E-Invoice-Standards](../../currently-supported-e-invoice-standards/)
-- [Unterstützte elektronische Dokumente](./)
+- [Estándares de e-factura actualmente soportados](../../currently-supported-e-invoice-standards/)
+- [Documentos electrónicos soportados](./)

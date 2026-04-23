@@ -1,153 +1,154 @@
 # Release Notes
 
-## **Release Spring Spark 13 mei 2026**
+## **Release R1.0 12/13 mei 2026**
 
-Sandbox-beschikbaarheid: 27–29 april 2026
+> **Sandbox-beschikbaarheid:** 28 april 2026
 
-### DocBits Verbeteringen:
+### Nieuwe functies:
 
-*   **Advanced Workflow Designer:**\
-    DocBits presenteert een geheel nieuwe Advanced Workflow Designer — een visuele, op knooppunten gebaseerde automatiseringsbouwer die volledige workflow-orkestratie binnen handbereik brengt. Via een intuïtief drag-and-drop canvas kunnen beheerders DocBits workflow-kaarten verbinden tot complexe, meervoudige verwerkingspipelines. Elk knooppunt op het canvas vertegenwoordigt een actie of beslispunt, en de verbindingen tussen knooppunten definiëren de documentenstroom door de pipeline. De designer ondersteunt wachtstappen voor getimede vertragingen, parallelle paden waarbij alle of sommige vertakkingen moeten worden voltooid voordat wordt verdergegaan, en de mogelijkheid om elke combinatie van ingebouwde of door partners gemaakte kaarten te koppelen. Workflows kunnen worden opgeslagen als herbruikbare sjablonen, geïmporteerd en geëxporteerd tussen omgevingen, en direct vanuit de designer worden getest voordat ze live gaan. De editor biedt een canvas met snap-to-grid en mini-map navigatie voor grote workflows, sneltoetsen voor kopiëren en plakken, realtime validatie met foutmarkering tijdens het bouwen, en bescherming tegen gelijktijdig bewerken om het overschrijven van wijzigingen door andere gebruikers te voorkomen. Gedetailleerde uitvoeringslogboeken bieden monitoring per knooppunt, waardoor beheerders precies kunnen traceren hoe elke stap in een workflow is uitgevoerd en waar problemen zijn opgetreden.
+* **Activity Logging / Access Audit:**\
+  Gedetailleerde activiteitslogging en audit trail voor toegang in de gehele applicatie voor compliance en monitoring. Verschillende typen logging voor alle microservices en op basis van tijdsbereik.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_advanced_workflow_designer.png)
+* **Globale snelzoekfunctie:**\
+  Druk op Cmd+K / Ctrl+K vanaf elke plek in de app om te zoeken in meer dan 200 routes en meer dan 40 in-page functies. Toont de top 8 resultaten met fuzzy matching, navigatie met pijltoetsen en links naar de volledige App Index Page.
 
-*   **Workflow Designer Verbeteringen:**\
-    De bestaande workflow designer is verbeterd met if/else vertakkingslogica, waardoor meer geavanceerde op beslissingen gebaseerde workflows mogelijk zijn. Verschillende nieuwe conditiekaarten zijn toegevoegd, wat het bereik van beschikbare automatiseringslogica verder uitbreidt. Een nieuwe Workflow Test Manager stelt beheerders in staat geautomatiseerde tests voor workflows individueel of allemaal tegelijk te maken en uit te voeren, zodat wijzigingen zich gedragen zoals verwacht vóór implementatie. De Workflow-sectie bevat nu ook een KPI-dashboard met belangrijke statistieken over workflow-uitvoeringsprestaties.
+* **Sitemap (App Index Page):**\
+  Doorzoekbare indexpagina die elke navigeerbare pagina en elke in-page functie (dialogen, zijbalken, panelen) in DocBits catalogiseert. Georganiseerd in 18 categorieën met typefilters, categoriepillen, URL-gesynchroniseerd zoeken en op rechten gebaseerde vermeldingen die voor niet-beheerders als vergrendeld worden getoond.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_workflow_branching.png)
+* **Analytics Dashboard:**\
+  Uitgebreide analyses van documentverwerking met Executive Overview, API Metrics, Quality Metrics, Processing Performance, Document Flow Analytics, Activity Log, Event Log en Audit Trail.
 
-*   **DocNet AI Agents:**\
-    DocBits bevat nu DocNet AI Agents — intelligente, autonome agenten die op de achtergrond draaien om documentverwerkingstaken af te handelen zoals inkooporder-matching en factuurvalidatie. Agenten werken onafhankelijk, werken toegewezen taken af en escaleren alleen naar gebruikers wanneer menselijk oordeel nodig is. Wanneer een agent een uitzondering tegenkomt of bevestiging nodig heeft, maakt deze een goedkeuringsverzoek aan dat direct in de inbox van de gebruiker verschijnt, zodat niets wordt gemist zonder constante supervisie. Agenten kunnen met elkaar coördineren, subtaken delegeren en werk organiseren in missies en projecten voor complexe meerstapsprocessen. Een speciaal agenten-dashboard biedt volledig inzicht in agentenactiviteit, prestatiestatistieken en auditlogboeken, zodat beheerders kunnen monitoren wat agenten doen en hoe efficiënt ze werken. Realtime notificaties houden gebruikers op de hoogte wanneer agenten taken voltooien of items markeren voor beoordeling.
+* **Dashboard-exportfunctionaliteit:**\
+  Nieuwe dashboard-exportfunctionaliteit die het exporteren van een lijst in CSV- of XLSX-formaat mogelijk maakt.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_docnet_ai_agents.png)
+* **Full-Text Search / DocSearch:**\
+  AI-gedreven vectorzoekfunctie over alle geïndexeerde documenten met realtime leveranciersfiltering, "Find Similar"-functie en configureerbare indexeringsinstellingen.
 
-*   **Partner Card SDK:**\
-    Een nieuw Partner Card SDK stelt externe ontwikkelaars en partners in staat aangepaste workflow-kaarten voor DocBits te bouwen. Partners kunnen kaartpakketten uploaden voor validatie en beoordeling, kaarten importeren vanuit GitHub repositories, en inzendingen beheren via een speciale Card SDK instellingenpagina. Een AI-gestuurd beoordelingssysteem evalueert automatisch ingediende kaarten op kwaliteit en naleving. Het SDK bevat op voorbeelden gebaseerde downloads met kaartselectiedialogen, gedragsvalidatie in een sandbox-omgeving, en uitgebreide startdocumentatie. Het Card SDK is beveiligd met licentiecontroles en is nu zichtbaar voor alle gebruikers, niet alleen beheerders.
+* **Supplier Delivery Statistics:**\
+  Nieuwe weergaven met inzichten in documentverwerkingsstatistieken met betrekking tot leveranciers.
 
-*   **Full-Text Search / DocSearch:**\
-    Een nieuwe full-text zoekmogelijkheid is toegevoegd aan DocBits, aangedreven door AI-gestuurde vectorzoeking. Gebruikers kunnen zoeken over alle geïndexeerde documenten met realtime leveranciersfiltering en een "Find Similar" functie om documenten te vinden die lijken op een geselecteerd document. Een speciale instellingenpagina stelt beheerders in staat AI-gegevensindexering, vectoropslagvoorkeuren te configureren en indexeringsvoortgang in realtime te monitoren. DocSearch-toegang wordt beheerd via abonnementsplannen.
+* **Debug Collector:**\
+  Druk op Ctrl+Shift+P om een volledige debug-snapshot vast te leggen, inclusief API-aanroepen, WebSocket-status, fouten, console-logs, prestatiemetrics en omgevingsinformatie. Snapshots kunnen naar het klembord worden gekopieerd of direct als supportticket worden verzonden met een HTML-geformatteerd rapport en een bijgevoegd JSON-bestand.
 
-*   **E-Invoice Format Uitbreiding:**\
-    DocBits heeft de ondersteuning voor elektronische factuurformaten aanzienlijk uitgebreid met meer dan 80 nieuwe wereldwijde e-invoice types en meer dan 40 nieuwe formaten. Nieuw ondersteunde formaten omvatten onder andere Taiwan EGUI, Thailand E-Tax, India GST Credit Note, SPS Commerce RSX 7.7.4, XRechnung 3.0.2, ZUGFeRD 2.2 en 2.3.2, Factur-X varianten, Uruguay CFE, Ecuador SRI Retención, SVEFAKTURA 1.0, EHF 3.0, OIOUBL, Finvoice en Asia-Pacific PINT Credit Notes. DocBits bereikt nu 100% classificatie- en extractiedekking voor alle ondersteunde elektronische documentformaten.
+* **AI Agents (DocNet):**\
+  Autonome achtergrondagenten die inkomende e-mails automatisch verwerken — documenten classificeren, extraheren en routeren zonder handmatige tussenkomst. Agenten werken zelfstandig aan toegewezen taken en escaleren via goedkeuringsverzoeken naar gebruikers wanneer menselijk oordeel nodig is. Bevat een speciaal agent-dashboard voor het monitoren van activiteit en prestaties.
 
-*   **Login Analytics:**\
-    Een nieuw Login Analytics dashboard geeft beheerders volledig inzicht in loginactiviteit binnen de organisatie. Het dashboard bevat vergelijkingsgrafieken die logintrends in de tijd tonen, dagelijkse en wekelijkse aggregatieweergaven, en GeoLite2-gebaseerde geolocatie om te zien waar logins vandaan komen. Dit biedt een snelle manier om ongebruikelijke loginpatronen te herkennen en accountbeveiliging te monitoren.
+* **Nieuwe E-Documents:**\
+  Meer dan 80 nieuwe wereldwijde e-invoice-types en meer dan 40 nieuwe formaten, waaronder XRechnung 3.0.2, ZUGFeRD 2.2/2.3.2, Factur-X-varianten en Asia-Pacific PINT Credit Notes. 100 % classificatie- en extractiedekking.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_login_analytics.png)
+* **AI Script Chat:**\
+  AI-gestuurde chatassistent voor basale scriptontwikkeling met realtime streaming-antwoorden.
 
-*   **Analytics Dashboard:**\
-    Een uitgebreide documentverwerkingsanalysemodule is geïntroduceerd met meerdere dashboardweergaven waaronder Executive Overview, API Metrics, Quality Metrics en Processing Performance. Document Flow Analytics biedt statistieken op organisatieniveau over documentverwerkingstijden en statusovergangen. Een compleet Activity Log en Event Log systeem stelt beheerders in staat gebeurtenisgegevens te doorzoeken, filteren en exporteren met grafiekvisualisaties en JSON-syntaxmarkering. Een Audit Trail functie biedt gedetailleerde wijzigingsgeschiedenisregistratie met popup-details voor elke wijziging.
+* **Script Versioning:**\
+  Volledige versiegeschiedenis voor scripts met wijzigingen traceren, vergelijken en herstellen. Biedt versiebeheer voor scripts, vergelijkbaar met hoe versies van E-Docs worden onderhouden.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_analytics_dashboard.png)
+* **Exportgeschiedenis in Dashboard Actions:**\
+  Toegang tot de exportgeschiedenis van een document direct vanuit het dashboard-actiemenu.
 
-*   **Verbeteringen Toegangscontrole:**\
-    Toegangscontrole is toegepast op de gehele applicatie, inclusief het veldvalidatiescherm, AI-geëxtraheerde tabellen en meerdere andere weergaven. Beheerders hebben nu de optie om toegangscontrole globaal uit te schakelen indien nodig. Het ontwerp van de toegangscontrole is vernieuwd voor een consistentere en intuïtievere ervaring op alle schermen.
+* **Generic API Exporter (APS450, GLS840):**\
+  Configureerbaar generiek API-exportdoel via een Mapping-File-configuratie, voor flexibele integratie met externe systemen. Ondersteuning voor APS450 en GLS840 is geïmplementeerd.
 
-*   **Layout Builder Verbeteringen:**\
-    De Layout Builder ondersteunt nu verborgen en alleen-lezen velden met visuele indicatoren, waardoor beheerders gemakkelijker kunnen zien welke velden zichtbaar en bewerkbaar zijn voor gebruikers. Een aanpasbaar scheidingselement tussen panelen verbetert de werkruimteflexibiliteit, en veldlengte-instellingen bieden meer precieze controle over gegevensinvoervelden.
+* **Meerdere exportconfiguraties:**\
+  Ondersteuning voor meerdere actieve exportconfiguraties per documenttype, met uitvoeringsvolgorde en een re-export-knop om opnieuw te proberen vanaf de mislukte stap.
 
-*   **Exportgeschiedenis in Dashboard Acties:**\
-    Gebruikers kunnen nu de exportgeschiedenis van een document direct openen vanuit het dashboard actiemenu, waardoor het sneller is om eerdere exportpogingen te bekijken zonder de hoofdweergave te verlaten.
+* **Nieuwe Watchdog-versie:**\
+  Volledige herwerking van de WatchDog Settings-pagina. Nieuwe quality-of-life-functies toegevoegd, waaronder de huidige WatchDog-status, gids en commando's voor installatie, XSLT-template-configuratie en een instelling voor automatische updates. Ook is de functionaliteit geïmplementeerd waarmee WatchDog meerdere configuraties tegelijk kan afhandelen.
 
-*   **Export Verbeteringen:**\
-    Exportconfiguraties ondersteunen nu uitvoeringsvolgorde, waardoor beheerders de volgorde kunnen definiëren waarin meerdere exportmethoden worden verwerkt. Een nieuwe herexport-knop op foutschermen stelt gebruikers in staat opnieuw te proberen vanaf de mislukte stap in plaats van het hele proces opnieuw te starten. DocBits ondersteunt nu ook het GLS840MI API exportdoel, met een bijgewerkte interface voor het beheren van meerdere actieve exportconfiguraties per documenttype.
+* **Vertex-integratie:**\
+  Consumer Use Tax-integratie via Vertex voor geautomatiseerde belastingberekening en compliance tijdens documentverwerking.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_export_improvements.png)
+* **UI-herontwerp & herziening van instellingen:**\
+  Uitgebreide UI-vernieuwing in de gehele applicatie. Herontworpen login- en authenticatiepagina's. Herontworpen instellingengebied met inklapbare zijbalk, georganiseerde subcategorieën, ankergebaseerde navigatie, contextueel hulppaneel en status-tracking-badges. UI-wijzigingen in Document scripts. Nieuwe UI voor Document flow. Verbeterde List of Values-UI.
 
-*   **Script Versioning & AI Chat:**\
-    Documentscripts ondersteunen nu volledige versiegeschiedenis, waardoor beheerders wijzigingen kunnen traceren, versies vergelijken en eerdere scriptversies kunnen herstellen. Standaardscripts zijn beschermd tegen onbedoelde bewerkingen, en scriptnamen kunnen inline worden bewerkt met breadcrumb-navigatie. Velden kunnen nu programmatisch als alleen-lezen worden ingesteld via de nieuwe set\_is\_readonly functie. Een nieuwe AI-gestuurde chatassistent helpt bij scriptontwikkeling met realtime streaming-antwoorden.
+* **Idea Board:**\
+  Feature-request-bord waarop gebruikers nieuwe functies, verbeteringen, benodigde bugfixes enz. kunnen indienen, bespreken en daarop kunnen stemmen, met een rich text editor en ondersteuning voor afbeeldingen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_script_versioning.png)
+* **API Key Management:**\
+  Speciale instellingenpagina voor het aanmaken, bekijken en beheren van meerdere API-sleutels.
 
-*   **API Key Management:**\
-    Een nieuwe API Key Management pagina in de integratie-instellingen stelt beheerders in staat meerdere API-sleutels aan te maken, te bekijken en te beheren met Redis-gebaseerde caching voor prestaties.
+* **Master Data Lookup-zoekfunctionaliteit:**\
+  Verbeterde Master Data-zoekmogelijkheden door geschikte zoekopties te bieden op basis van de geselecteerde velden.
 
-*   **Idea Board:**\
-    Een nieuwe Idea Board functie stelt gebruikers in staat functie-ideeën en suggesties in te dienen, te bespreken en erop te stemmen. Het bord bevat een rich text editor met ondersteuning voor het uploaden van afbeeldingen, reacties en stemfunctionaliteit.
+* **User Activity Chart:**\
+  Visuele grafiek die gebruikersactiviteitspatronen en engagement-statistieken toont. Dashboard voor login-activiteit met vergelijkende trendgrafieken, dagelijkse/wekelijkse aggregatie en GeoLite2-gebaseerde geolocatie.
 
-*   **Leveranciersstatistieken:**\
-    Nieuwe leveranciersstatistieken-weergaven bieden inzicht in leverancier-gerelateerde documentverwerkingsstatistieken.
+* **User Login History:**\
+  Users Detail View met login-geschiedenis.
 
-*   **Taaluitbreiding:**\
-    DocBits ondersteunt nu 22 talen, uitgebreid ten opzichte van de vorige selectie. De taalkiezer is bijgewerkt met een 4-koloms rasterindeling, en gebruikers kunnen nu hun voorkeurstaal direct in hun gebruikersinstellingen instellen.
+* **Aanpasbare zijbalk:**\
+  Drag-and-drop herordenen, show/hide-toggle en pin-to-top voor menu-items in de zijbalk. Voorkeuren worden per gebruiker opgeslagen met een "Reset to default"-optie. Respecteert feature flags.
 
-*   **Abonnementplan Herontwerp:**\
-    De abonnementplankiezer is herontworpen met verbeterde tokeninformatie-weergave en een nieuwe DocNet-gebruiksrij in de abonnementstabel.
+* **Video Carousel:**\
+  Autoplay video-carousel op de prepare-dashboard-pagina met korte, geanimeerde productvideo's (Global Search, Keyboard Shortcuts, Document Upload, Table Customization). Indeling met twee kolommen met video's links en dashboardvoorbereiding rechts. Auto-redirect wordt gepauzeerd terwijl gebruikers door de video's bladeren.
 
-*   **Dual Monitor Mode:**\
-    Dual Monitor Mode is verplaatst naar een globale gebruikersinstelling, waardoor het toegankelijk en persistent is tussen sessies voor gebruikers die met meerdere schermen werken.
+* **Advanced Workflow Designer:**\
+  Visuele, op knooppunten gebaseerde automatiseringsbouwer met drag-and-drop-canvas voor meerstaps verwerkingspipelines. Ondersteunt wait steps, parallelle paden, herbruikbare templates, Or condition cards, handmatige test/run-knop, "Test from Here"-gedeeltelijke uitvoering en uitvoeringslogs per knooppunt met visuele flow-markering die precies laat zien welke knooppunten zijn uitgevoerd.
 
-*   **Fuzzy Zoeken voor Duitse Tekens:**\
-    De zoekfunctionaliteit ondersteunt nu correct Duitse speciale tekens (umlauten), waardoor zoekopdrachten naar woorden zoals "Rechnungsnummer" ook overeenkomen met alternatieve tekenrepresentaties.
+* **Workflow KPI Dashboard:**\
+  Dashboard met kernmetrieken voor het monitoren van workflow-uitvoering.
 
-*   **Verbeteringen E-mailnotificaties:**\
-    De parametervervanging in e-mailsjablonen is verbeterd met betere ontvangersvalidatie en afhandeling van gebruikersvoorkeuren.
+* **Workflow Partner Card SDK:**\
+  SDK voor externe ontwikkelaars om aangepaste workflow-kaarten te bouwen, met AI-gedreven review, sandbox-validatie en getting-started-documentatie.
 
-*   **Kredietgebruik Tracking:**\
-    Organisaties kunnen nu hun AI-kredietgebruik in de tijd bekijken en volgen met filteropties, wat betere zichtbaarheid biedt in verbruikspatronen.
+* **Workflow Test Manager:**\
+  Geautomatiseerde test manager voor workflows, waarmee beheerders tests afzonderlijk of in bulk kunnen aanmaken en uitvoeren.
 
-### Algemene Verbeteringen:
+### Verbeteringen:
 
-*   Het instellingengebied is herontworpen met een inklapbare zijbalk, georganiseerde subcategorieën en ankergebaseerde navigatie voor snellere toegang. Een contextueel hulppaneel biedt inline begeleiding, en statusvolgbadges tonen configuratievolledigheid in één oogopslag.
+* **Database (alle modules) — Migratie van ID-kolommen:**\
+  Alle "ID"-databasekolommen in DocBits zijn intern gemigreerd van strings naar een speciaal ID-type (UUID7). De onderliggende Postgres-database is gemigreerd naar V18 om deze verbetering te ondersteunen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_may_2026_settings_redesign.png)
+* **Documentverwerking — Verdere verbeteringen:**\
+  De exportlogica met betrekking tot het maximaal aantal te overwegen pagina's is gewijzigd — nu wordt het hele document geëxporteerd. Tijdens documentvalidatie heeft de gebruiker de mogelijkheid om de standaard maximale pagina-limiet voor dat specifieke document te overschrijven. De berekening van de Pending Document Counter is verbeterd.
 
-* Documenten met barcodes worden nu betrouwbaarder gesplitst, met betere afhandeling van randgevallen en foutherstel.
-* PO-matching detecteert en converteert nu automatisch eenheidsprijzen bij het splitsen van gematchte regels, waardoor handmatige correcties worden verminderd.
-* Documenten blijven niet meer vastzitten tijdens extractie — een nieuw statusvolgsysteem zorgt ervoor dat elk document door de pipeline gaat.
-* Bij extractiefouten biedt DocBits nu duidelijkere foutmeldingen met stapsgewijze details om het probleem sneller op te lossen.
-* De algehele applicatieprestaties zijn verbeterd met snellere responstijden op alle schermen.
-* Auto Accounting regels ondersteunen nu nummergebaseerde filtering voor nauwkeurigere matchingcondities.
+* **Serviceversies, status & deploymentdatum:**\
+  De beschikbaarheidsstatus van services wordt verstrekt in de "Service Versions"-popup.
+
+* **Taaluitbreiding:**\
+  Ondersteuning uitgebreid naar 22 talen met bijgewerkte taalkiezer.
+
+* **Access Control-ontwerp op veldniveau:**\
+  Herontworpen/verbeterde toegangscontrole met duidelijkere activatiestatus, toegang op veldniveau, consistente regelafhandeling en vereenvoudigde groepsgebaseerde rechten. Lost regelconflicten op tussen Access Control en View Permissions, toont de import-eigenaar in de UI en past toegangscontrole consistent toe op veldvalidatie, AI-geëxtraheerde tabellen en alle weergaven.
+
+* **Activity Stream voor alle schermen:**\
+  De Activity Stream is nu beschikbaar op alle documentverwerkingsschermen (Ready for Validation, PO Matching, Accounting, Quote Details, Reject) — niet alleen op Pending Approval. Verplaatst naar een consistente positie in het rechterpaneel op alle schermen.
+
+* **Document Flow-pagina:**\
+  Speciale pagina voor het visualiseren en volgen van de documentverwerkingsstroom, die statusovergangen en voortgang door de pipeline toont.
+
+* **Dual Monitor Mode (globale gebruikersinstelling):**\
+  Dual Monitor Mode is verplaatst naar een globale gebruikersinstelling en blijft behouden tussen sessies.
+
+* **Layout Builder-verbeteringen:**\
+  Ondersteuning voor verborgen en alleen-lezen velden met visuele indicatoren, een in grootte aanpasbare paneelverdeler en instellingen voor veldlengte. Pas de Default Layout toe op meerdere Origins zonder elke origin afzonderlijk te hoeven openen.
+
+## **Release HotFix 3 16 april 2026**
+
+### DocBits-verbeteringen:
+
+* **QR-code-extractie voor Poolse facturen:**\
+  DocBits ondersteunt nu QR-code-extractie specifiek voor Poolse facturen, wat de geautomatiseerde gegevensvastlegging verbetert voor documenten afkomstig uit Polen.
 
 ### Bugfixes:
 
-* Een probleem opgelost waarbij de aangepaste dashboardnaam niet was uitgelijnd met het dashboardpictogram.
-* Een probleem opgelost waarbij het dashboard kolommen toonde die niet in de zichtbare kolommenconfiguratie waren opgenomen.
-* Een probleem opgelost waarbij de geselecteerde tabnaam niet op het dashboard werd weergegeven.
-* Een probleem opgelost waarbij de "Nieuwe versie beschikbaar" popup verscheen bij elke suborganisatiewijziging.
-* Een probleem opgelost waarbij de documenten-per-pagina instelling niet werd bewaard na paginaverversing.
-* Een probleem opgelost waarbij het documentenaantal op het dashboard niet correct werd bijgewerkt.
-* Een probleem opgelost waarbij gebruikers onterecht het foutbericht "Dashboard bestaat al" ontvingen.
-* Een probleem opgelost waarbij de bevestigingspopup voor bulkverwijdering niet werd weergegeven.
-* Meerdere problemen opgelost met de weergave en het opslaggedrag van gedeelde dashboards.
-* Een probleem opgelost waarbij documenttabellen niet werden weergegeven op het validatiescherm.
-* Een probleem opgelost waarbij een onjuist foutbericht werd getoond voor ongeldige PDF-bestanden.
-* Een probleem opgelost waarbij de kolomverkleiner achter rijactieknoppen verscheen.
-* Een probleem opgelost waarbij onjuiste waarden werden geëxtraheerd voor nettobedrag, belastingbedrag en belastingtarief.
-* Een probleem opgelost waarbij exportconfiguraties niet konden worden aangemaakt zonder een documenttype op te geven wanneer dit als optioneel was gemarkeerd.
-* Een probleem opgelost waarbij een duplicaatconfiguratiefout optrad bij het toevoegen van nieuwe exportconfiguraties.
-* Een probleem opgelost waarbij fouten optraden bij het aanmaken van meerdere exportconfiguraties.
-* Een probleem opgelost waarbij de configuratietitel werd gewist na het selecteren van Watchdog als exporttype.
-* Een interne serverfout opgelost bij het aanmaken van Infor exportconfiguraties.
-* Een probleem opgelost dat het opnieuw starten van meerdere geëxporteerde documenten verhinderde.
-* Een probleem opgelost waarbij sommige instellingenpagina's niet konden worden gevonden.
-* Een probleem opgelost waarbij de Watchdog downloadlink een fout retourneerde.
-* Een probleem opgelost waarbij de List of Values aanmaakknop geen actie triggerde.
-* Een probleem opgelost waarbij groepsbeschrijvingen niet werden weergegeven.
-* Een probleem opgelost waarbij de wachtwoordvalidatiestatus bleef bestaan na het annuleren van een gebruikersbewerking.
-* Een probleem opgelost waarbij documenten in de status "Pending Watcher Export" niet klikbaar waren.
-* Een probleem opgelost waarbij duplicaat lookup-configuraties konden worden aangemaakt.
-* Een probleem opgelost waarbij gebruikerssortering niet correct werkte.
-* Een weergaveprobleem opgelost waarbij alle applicatietekst in blauw verscheen.
-* Een probleem opgelost waarbij de taalformaatweergave inconsistent was.
-* Een probleem opgelost waarbij de taalinstelling leeg verscheen wanneer geen voorkeur was geselecteerd.
-* Een probleem opgelost waarbij de hoofdletters van de bedrijfsnaam werden genegeerd.
-* Een probleem opgelost waarbij zoeken niet werkte voor groepen en rechten.
-* Een probleem opgelost waarbij de verwijder-gebruiker actie de gebruiker niet correct verwijderde.
-* Een probleem opgelost waarbij documentstroom-iconen niet zichtbaar waren.
-* Een interne serverfout opgelost bij het opslaan van e-mailsjablonen.
-* Een probleem opgelost waarbij dubbele variabelen werden ingevoegd in e-mailsjabloon-onderwerpen.
-* Een fout opgelost bij het opslaan van inkomende e-mailaccountgegevens.
-* Een probleem opgelost waarbij documenten vastzaten op "nieuw" status na uploaden.
-* Een probleem opgelost waarbij tabelkolommen niet beschikbaar waren na deactivering en heractivering.
-* Een probleem opgelost waarbij het aanmaken van beslisbomen mislukte voor aangepaste documenttypen.
-* Een probleem opgelost waarbij tabelextractie geen resultaten retourneerde.
-* Een probleem opgelost waarbij het documenttype CREDIT\_NOTE niet correct werd herkend.
-* Een probleem opgelost waarbij gebruikers zonder beheerdersrechten alle aangemaakte taken konden bekijken.
-* Een probleem opgelost waarbij de suborganisatie-popup niet sloot na drag-and-drop bestandsuploaden.
-* Een probleem opgelost waarbij tijdsperiodefilters niet correct werden toegepast.
-* Een probleem opgelost met datum- en tijdconversie naar US-formaat.
-* Een probleem opgelost waarbij workflows in de verkeerde volgorde werden getriggerd — workflow-uitvoering gebruikt nu correcte documentvergrendeling en wachtrijprioriteiten.
+* Een probleem opgelost waarbij auto-export mislukte wanneer PO Matching al had plaatsgevonden maar de inkooporder niet aan het document was gekoppeld.
+* Een probleem opgelost waarbij eenheidsprijzen onjuist werden afgerond voor facturen met verpakkingseenheden (Verpackungseinheiten / VPE).
+* Een probleem opgelost waarbij exportfoutmeldingen van ION/MEC (bijv. Acknowledge.PurchaseOrder-fouten) niet werden weergegeven in DocBits, en de status "Exported" werd getoond ondanks dat de export was mislukt.
+* Een probleem opgelost waarbij de eenheidsprijs op het goedkeuringsscherm onjuist was wanneer AI-tabelextractie werd gebruikt.
+* Een probleem opgelost waarbij het Total Matching-script een fout genereerde op het validatiescherm.
+* Een probleem opgelost waarbij documentverwerking mislukte met een fout ("UserAuthentication object has no setter for 'org_id'").
+* Een probleem opgelost waarbij tabeltraining niet werkte voor specifieke leveranciers — kolommen belandden in verborgen kolommen in plaats van in de toegewezen velden.
+* Een probleem opgelost waarbij PO Matching mislukte bij grote facturen (meer dan 10 pagina's) vanwege overschrijding van de multipart-request-groottelimiet.
+* Een probleem opgelost waarbij door script gevulde kolomwaarden niet behouden bleven na een documentherstart.
+* Een probleem opgelost waarbij de "Ignore Table Validation"-toggle in de UI als actief (groen) werd getoond, maar op de achtergrond feitelijk gedeactiveerd was.
+* Een probleem opgelost waarbij de documentkwaliteit aanzienlijk verslechterde na import.
+* Een probleem opgelost waarbij microservice-versies en deployment-datums in de app inconsistent werden weergegeven tussen omgevingen na een volledige deployment-push.
+* Een probleem opgelost waarbij barcode-extractie mislukte vanwege een fout bij het opbouwen van het gebruikersauthenticatie-object uit taakdata.
+* Een probleem opgelost waarbij leverancierscontactgegevens werden geleegd bij het opslaan in de Supplier Portal.
+* Een probleem opgelost waarbij documenten tegen een NoneType-fout aanliepen bij export.
+* Een probleem opgelost waarbij de e-mailbody niet werd meegenomen wanneer het eerste bijgevoegde bestand een PNG- of JPEG-afbeelding was.
+* Een probleem opgelost waarbij de e-mailbody ontbrak voor meerdere documenten.
+* Een probleem opgelost waarbij de DocBits Operator "ai-exporting" geen exportresultaten produceerde in de doelsystemen (LN/D3).
 
 ## **Release HotFix 2 31 maart 2026**
 

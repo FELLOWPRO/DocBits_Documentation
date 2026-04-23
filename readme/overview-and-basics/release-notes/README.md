@@ -1,5 +1,155 @@
 # Notes de version
 
+## **Release R1.0 12/13 mai 2026**
+
+> **Disponibilité Sandbox :** 28 avril 2026
+
+### Nouvelles fonctionnalités :
+
+* **Activity Logging / Access Audit :**\
+  Journalisation détaillée de l'activité et piste d'audit des accès dans toute l'application pour la conformité et la surveillance. Différents types de journalisation pour tous les microservices, basés sur des plages horaires.
+
+* **Recherche rapide globale :**\
+  Appuyez sur Cmd+K / Ctrl+K depuis n'importe où dans l'application pour rechercher parmi plus de 200 routes et plus de 40 fonctionnalités internes aux pages. Affiche les 8 meilleurs résultats avec correspondance approximative (fuzzy), navigation au clavier et liens vers la App Index Page complète.
+
+* **Sitemap (App Index Page) :**\
+  Page d'index consultable cataloguant chaque page navigable et chaque fonctionnalité interne (dialogues, barres latérales, panneaux) dans DocBits. Organisée en 18 catégories avec filtres par type, pastilles de catégorie, recherche synchronisée à l'URL et entrées protégées par permission affichées comme verrouillées pour les utilisateurs non administrateurs.
+
+* **Analytics Dashboard :**\
+  Analyses complètes du traitement des documents avec Executive Overview, API Metrics, Quality Metrics, Processing Performance, Document Flow Analytics, Activity Log, Event Log et Audit Trail.
+
+* **Fonctionnalité d'exportation du dashboard :**\
+  Nouvelle fonctionnalité d'exportation du dashboard permettant l'exportation d'une liste au format CSV ou XLSX.
+
+* **Full-Text Search / DocSearch :**\
+  Recherche vectorielle pilotée par IA sur tous les documents indexés, avec filtrage par fournisseur en temps réel, fonctionnalité "Find Similar" et paramètres d'indexation configurables.
+
+* **Supplier Delivery Statistics :**\
+  Nouvelles vues apportant des informations sur les métriques de traitement des documents liées aux fournisseurs.
+
+* **Debug Collector :**\
+  Appuyez sur Ctrl+Shift+P pour capturer un snapshot de débogage complet incluant appels API, état WebSocket, erreurs, logs de console, métriques de performance et informations d'environnement. Les snapshots peuvent être copiés dans le presse-papiers ou envoyés directement comme ticket de support avec un rapport au format HTML et un fichier JSON joint.
+
+* **AI Agents (DocNet) :**\
+  Agents autonomes en arrière-plan qui traitent automatiquement les e-mails entrants — classant, extrayant et routant les documents sans intervention manuelle. Les agents travaillent de manière indépendante sur les tâches qui leur sont assignées et escaladent vers les utilisateurs via des demandes d'approbation lorsque le jugement humain est nécessaire. Inclut un tableau de bord dédié pour surveiller l'activité et les performances des agents.
+
+* **Nouveaux E-Documents :**\
+  Plus de 80 nouveaux types de e-invoice mondiaux et plus de 40 nouveaux formats incluant XRechnung 3.0.2, ZUGFeRD 2.2/2.3.2, variantes Factur-X et Asia-Pacific PINT Credit Notes. 100 % de couverture de classification et d'extraction.
+
+* **AI Script Chat :**\
+  Assistant de chat alimenté par IA pour le développement basique de scripts, avec réponses en streaming en temps réel.
+
+* **Script Versioning :**\
+  Historique complet des versions des scripts avec suivi des modifications, comparaison et capacités de restauration. Offre une gestion des versions pour les scripts similaire à celle utilisée pour les versions d'E-Docs.
+
+* **Historique d'exportation dans les Dashboard Actions :**\
+  Accès à l'historique d'exportation d'un document directement depuis le menu d'actions du dashboard.
+
+* **Generic API Exporter (APS450, GLS840) :**\
+  Cible d'exportation API générique configurable via une configuration Mapping-File, pour une intégration flexible avec des systèmes externes. Le support pour APS450 et GLS840 a été implémenté.
+
+* **Configurations d'exportation multiples :**\
+  Prise en charge de plusieurs configurations d'exportation actives par type de document, avec ordre d'exécution et bouton de ré-exportation pour réessayer à partir de l'étape échouée.
+
+* **Nouvelle version de Watchdog :**\
+  Refonte complète de la page WatchDog Settings. Ajout de nouvelles fonctionnalités d'agrément, incluant le statut actuel de WatchDog, un guide et des commandes pour l'installation, la configuration des templates XSLT et un paramètre de mise à jour automatique. Implémentation également de la fonctionnalité permettant à WatchDog de gérer plusieurs configurations simultanément.
+
+* **Intégration Vertex :**\
+  Intégration Consumer Use Tax via Vertex pour le calcul automatisé des taxes et la conformité lors du traitement des documents.
+
+* **Refonte de l'UI & réorganisation des paramètres :**\
+  Rafraîchissement complet de l'UI dans toute l'application. Pages de login et d'authentification redessinées. Zone de paramètres redessinée avec barre latérale rétractable, sous-catégories organisées, navigation basée sur des ancres, panneau d'aide contextuel et badges de suivi de statut. Modifications de l'UI des scripts de document. Nouvelle UI pour Document flow. UI améliorée de List of Values.
+
+* **Idea Board :**\
+  Tableau de demandes de fonctionnalités permettant aux utilisateurs de soumettre, discuter et voter pour de nouvelles fonctionnalités, améliorations, corrections de bugs nécessaires, etc., avec éditeur de texte enrichi et prise en charge des images.
+
+* **API Key Management :**\
+  Page de paramètres dédiée à la création, la visualisation et la gestion de plusieurs clés API.
+
+* **Fonctionnalité de recherche Master Data Lookup :**\
+  Capacité de recherche Master Data améliorée grâce à des options de recherche adaptées aux champs sélectionnés.
+
+* **User Activity Chart :**\
+  Graphique visuel affichant les modèles d'activité des utilisateurs et les métriques d'engagement. Dashboard de l'activité de connexion avec graphiques de comparaison de tendances, agrégation quotidienne/hebdomadaire et géolocalisation basée sur GeoLite2.
+
+* **User Login History :**\
+  Users Detail View avec historique de connexion.
+
+* **Barre latérale personnalisable :**\
+  Réorganisation par drag-and-drop, bascule afficher/masquer et épinglage en haut pour les éléments de menu de la barre latérale. Les préférences sont conservées par utilisateur avec une option "Reset to default". Respecte les feature flags.
+
+* **Video Carousel :**\
+  Carousel vidéo avec lecture automatique sur la page prepare-dashboard affichant de courtes vidéos animées de conseils produit (Global Search, Keyboard Shortcuts, Document Upload, Table Customization). Mise en page à deux colonnes avec les vidéos à gauche et la préparation du dashboard à droite. La redirection automatique est mise en pause pendant que les utilisateurs parcourent les vidéos.
+
+* **Advanced Workflow Designer :**\
+  Constructeur d'automatisation visuel basé sur des nœuds, avec canvas drag-and-drop pour des pipelines de traitement multi-étapes. Prend en charge les wait steps, les chemins parallèles, les templates réutilisables, les Or condition cards, un bouton manuel de test/run, l'exécution partielle "Test from Here" et des logs d'exécution par nœud avec surlignage visuel du flux montrant exactement quels nœuds ont été exécutés.
+
+* **Workflow KPI Dashboard :**\
+  Dashboard de métriques clés pour surveiller l'exécution des workflows.
+
+* **Workflow Partner Card SDK :**\
+  SDK pour les développeurs tiers permettant de créer des cartes de workflow personnalisées, avec revue pilotée par IA, validation en sandbox et documentation de démarrage.
+
+* **Workflow Test Manager :**\
+  Gestionnaire de tests automatisés pour workflows, permettant aux administrateurs de créer et d'exécuter des tests individuellement ou en masse.
+
+### Améliorations :
+
+* **Base de données (tous les modules) — Migration des colonnes ID :**\
+  Toutes les colonnes "ID" de la base de données DocBits ont été migrées en interne de chaînes de caractères vers un type ID dédié (UUID7). La base de données Postgres sous-jacente a été migrée vers V18 pour prendre en charge cette amélioration.
+
+* **Traitement des documents — Améliorations supplémentaires :**\
+  Modification de la logique d'exportation concernant le nombre maximum de pages à considérer — l'intégralité du document sera désormais exportée. Pendant la validation du document, l'utilisateur aura la possibilité de remplacer la limite maximale de pages par défaut pour ce document spécifique. Le calcul du Pending Document Counter a été amélioré.
+
+* **Versions, statut et date de déploiement des services :**\
+  Le statut de disponibilité des services est fourni dans le popup "Service Versions".
+
+* **Extension linguistique :**\
+  Prise en charge étendue à 22 langues avec sélecteur de langue mis à jour.
+
+* **Design de l'Access Control au niveau du champ :**\
+  Contrôle d'accès redessiné/amélioré avec un état d'activation plus clair, accès au niveau du champ, gestion cohérente des règles et permissions basées sur les groupes simplifiées. Corrige les conflits de règles entre Access Control et View Permissions, affiche le propriétaire de l'importation dans l'UI et applique le contrôle d'accès de manière cohérente à la validation des champs, aux tables extraites par IA et à toutes les vues.
+
+* **Activity Stream pour tous les écrans :**\
+  L'Activity Stream est désormais disponible sur tous les écrans de traitement de documents (Ready for Validation, PO Matching, Accounting, Quote Details, Reject) — pas seulement sur Pending Approval. Déplacé vers une position cohérente dans le panneau droit sur tous les écrans.
+
+* **Page Document Flow :**\
+  Page dédiée à la visualisation et au suivi du flux de traitement des documents, montrant les transitions de statut et la progression dans la pipeline.
+
+* **Dual Monitor Mode (paramètre utilisateur global) :**\
+  Dual Monitor Mode déplacé vers un paramètre utilisateur global, persistant entre les sessions.
+
+* **Améliorations du Layout Builder :**\
+  Prise en charge des champs cachés et en lecture seule avec indicateurs visuels, séparateur de panneau redimensionnable et paramètres de longueur de champ. Appliquez le Default Layout à plusieurs Origins sans avoir à visiter chacun individuellement.
+
+## **Release HotFix 3 16 avril 2026**
+
+### Améliorations de DocBits :
+
+* **Extraction de code QR pour les factures polonaises :**\
+  DocBits prend désormais en charge l'extraction de codes QR spécifiquement pour les factures polonaises, améliorant la capture automatisée des données pour les documents provenant de Pologne.
+
+### Corrections de bugs :
+
+* Correction d'un problème où l'exportation automatique échouait lorsque le PO Matching avait déjà eu lieu mais que le bon de commande n'était pas associé au document.
+* Correction d'un problème où les prix unitaires étaient arrondis incorrectement pour les factures avec unités d'emballage (Verpackungseinheiten / VPE).
+* Correction d'un problème où les messages d'erreur d'exportation d'ION/MEC (par ex. les échecs Acknowledge.PurchaseOrder) n'étaient pas affichés dans DocBits, le statut "Exported" étant affiché malgré l'échec de l'exportation.
+* Correction d'un problème où le prix unitaire sur l'écran d'approbation était incorrect lorsque l'extraction de table par IA était utilisée.
+* Correction d'un problème où le script Total Matching générait une erreur sur l'écran de validation.
+* Correction d'un problème où le traitement de document échouait avec une erreur ("UserAuthentication object has no setter for 'org_id'").
+* Correction d'un problème où l'entraînement des tables ne fonctionnait pas pour certains fournisseurs, les colonnes atterrissant dans des colonnes cachées au lieu des champs mappés.
+* Correction d'un problème où le PO Matching échouait sur les grandes factures (plus de 10 pages) à cause du dépassement de la limite de taille de la requête multipart.
+* Correction d'un problème où les valeurs de colonnes remplies par script n'étaient pas conservées après un redémarrage du document.
+* Correction d'un problème où le toggle "Ignore Table Validation" s'affichait comme actif (vert) dans l'UI alors qu'il était en réalité désactivé en arrière-plan.
+* Correction d'un problème où la qualité du document était significativement dégradée après l'importation.
+* Correction d'un problème où les versions de microservices et les dates de déploiement affichées dans l'application étaient incohérentes entre les environnements après un déploiement complet.
+* Correction d'un problème où l'extraction de code-barres échouait à cause d'une erreur lors de la construction de l'objet d'authentification utilisateur à partir des données de tâche.
+* Correction d'un problème où les coordonnées de contact du fournisseur étaient vidées lors de la sauvegarde dans le Supplier Portal.
+* Correction d'un problème où les documents rencontraient une erreur NoneType lors de l'exportation.
+* Correction d'un problème où le corps de l'e-mail n'était pas inclus lorsque le premier fichier joint était une image PNG ou JPEG.
+* Correction d'un problème où le corps de l'e-mail était manquant pour plusieurs documents.
+* Correction d'un problème où le DocBits Operator "ai-exporting" ne produisait pas de résultats d'exportation dans les systèmes cibles (LN/D3).
+
 ## **Release HotFix 2 31 mars 2026**
 
 ### Améliorations de DocBits :

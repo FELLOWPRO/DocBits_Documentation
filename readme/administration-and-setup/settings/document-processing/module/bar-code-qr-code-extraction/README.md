@@ -34,8 +34,22 @@ DocBits ondersteunt extractie van de volgende code typen:
 * **PDF-417**
 * **SQ-CODE**
 
+## Betalings-QR-code Standaarden
+
+Naast de generieke QR-decodering herkent DocBits **zeven afzonderlijke betalings-QR-codestandaarden** en extraheert hun betalingsvelden automatisch in de API-respons van het document. Klanten hoeven deze QR-strings niet meer handmatig te decoderen — elke standaard levert een eigen veldprefix (bijv. `swissqr_*`, `girocode_*`), zodat de waarden rechtstreeks doorstromen naar matching, validatie en export.
+
+| # | Standaard | Regio | Veldprefix | Typisch gebruik |
+|---|-----------|-------|------------|-----------------|
+| 1 | [Zwitserse QR Bill](swiss-qr-code.md) | Zwitserland | `swissqr_*` | Elke Zwitserse factuur sinds 2020 |
+| 2 | [GiroCode (EPC069-12)](girocode.md) | DE, AT, NL, BE, FI | `girocode_*` | SEPA-betalingen |
+| 3 | [SPAYD / SPD](spayd.md) | CZ, gedeeltelijk SK | `spayd_*` | Standaard van de Tsjechische Bankiersvereniging |
+| 4 | [PagoPA](pagopa.md) | IT (overheid) | `pagopa_*` | Verplicht op Italiaanse PA-facturen |
+| 5 | [Crypto-betalings-URIs](crypto-uris.md) | Wereldwijd (crypto) | `crypto_*` | Bitcoin, Lightning, Ethereum, Zcash, Litecoin |
+| 6 | [EMVCo MPM](emvco-mpm.md) | BR, IN, SG, TH, MY, ID, PH, VN, HK e.a. | `emvmpm_*` | Pix, UPI, PayNow, PromptPay, QRIS, QR Ph, VietQR, FPS |
+| 7 | [ZATCA Fatoora](zatca-fatoora.md) | Saoedi-Arabië | `zatca_*` | Verplicht op elke KSA-factuur |
+
+**Detectie is automatisch.** Elke gedecodeerde QR-string wordt gecontroleerd op zijn magische prefix (bijv. `SPC\n0200` voor Zwitserse QR Bill v2.0 of `PAGOPA|002|` voor PagoPA); alleen herkende standaarden worden omgezet in gestructureerde velden.
+
 ### **Gerelateerde Pagina's**
 
 [Details Barcode Extractie](bar-code-extractions.md)
-
-[Details QR-Code Extractie](swiss-qr-code.md)

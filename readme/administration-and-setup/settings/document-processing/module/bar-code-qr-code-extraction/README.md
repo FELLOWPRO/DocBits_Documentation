@@ -1,27 +1,27 @@
-# Bar-Code / QR Code Extraction
+# Extraction de codes-barres / QR
 
-## **Overview**
+## **Vue d'ensemble**
 
-This feature enables automatic extraction of information from **both barcodes and QR codes** embedded in documents. It is an all-or-nothing setting — enabling it activates extraction for both types.
+Cette fonctionnalité permet l'extraction automatique d'informations contenues dans **les codes-barres et les QR codes** présents dans les documents. Il s'agit d'un réglage « tout ou rien » — l'activer déclenche l'extraction pour les deux types de codes.
 
-## How to Enable Bar-Code / QR Code Extraction
+## Comment activer l'extraction de codes-barres / QR
 
-To enable the Bar-Code / QR Code Extraction feature, follow these steps:
+Pour activer la fonctionnalité, procédez ainsi :
 
-1. **Navigate to Settings**:
-   * From the Dashboard, go to **Settings**.
-   * Select **Document Processing** and then choose **Module**.
-2. **Enable the Feature**:
-   * Scroll down to locate the **Bar-Code / QR Code Extraction** option.
-   *   Toggle the slider to enable Bar-Code / QR Code Extraction.\
+1. **Ouvrez les Paramètres** :
+   * Depuis le tableau de bord, allez dans **Paramètres**.
+   * Choisissez **Traitement des documents**, puis **Module**.
+2. **Activez la fonctionnalité** :
+   * Faites défiler jusqu'à l'option **Extraction de codes-barres / QR**.
+   *   Basculez le curseur pour activer l'extraction.\
        \
 
 
        <figure><img src="../../../../../.gitbook/assets/image (445).png" alt=""><figcaption></figcaption></figure>
 
-## **Supported Code Types**
+## **Types de codes pris en charge**
 
-DocBits supports extraction of the following code types:
+DocBits prend en charge l'extraction des types de codes suivants :
 
 * **QR-CODE**
 * **EAN-2**, **EAN-5**, **EAN-8**, **EAN-13**
@@ -35,8 +35,22 @@ DocBits supports extraction of the following code types:
 * **PDF-417**
 * **SQ-CODE**
 
-### **Related Pages**
+## Standards de QR codes de paiement
 
-[Barcode Extraction Details](bar-code-extractions.md)
+Au-delà du décodage générique, DocBits reconnaît **sept standards distincts de QR codes de paiement** et extrait automatiquement leurs champs de paiement dans la réponse API du document. Les clients n'ont plus besoin de décoder manuellement ces chaînes — chaque standard dispose de son propre préfixe de champ (p. ex. `swissqr_*`, `girocode_*`) afin que les valeurs alimentent directement le matching, la validation et l'export.
 
-[QR Code Extraction Details](swiss-qr-code.md)
+| # | Standard | Région | Préfixe de champ | Usage typique |
+|---|----------|--------|------------------|---------------|
+| 1 | [Swiss QR Bill](swiss-qr-code.md) | Suisse | `swissqr_*` | Toute facture suisse depuis 2020 |
+| 2 | [GiroCode (EPC069-12)](girocode.md) | DE, AT, NL, BE, FI | `girocode_*` | Paiements SEPA |
+| 3 | [SPAYD / SPD](spayd.md) | CZ, partiellement SK | `spayd_*` | Standard de l'Association bancaire tchèque |
+| 4 | [PagoPA](pagopa.md) | IT (administration publique) | `pagopa_*` | Obligatoire sur les factures de la PA italienne |
+| 5 | [URIs de paiement crypto](crypto-uris.md) | Mondial (crypto) | `crypto_*` | Bitcoin, Lightning, Ethereum, Zcash, Litecoin |
+| 6 | [EMVCo MPM](emvco-mpm.md) | BR, IN, SG, TH, MY, ID, PH, VN, HK et plus | `emvmpm_*` | Pix, UPI, PayNow, PromptPay, QRIS, QR Ph, VietQR, FPS |
+| 7 | [ZATCA Fatoora](zatca-fatoora.md) | Arabie saoudite | `zatca_*` | Obligatoire sur toute facture KSA |
+
+**La détection est automatique.** Chaque chaîne QR décodée est inspectée pour son préfixe magique (p. ex. `SPC\n0200` pour Swiss QR Bill v2.0 ou `PAGOPA|002|` pour PagoPA) ; seuls les standards reconnus sont convertis en champs structurés.
+
+### **Pages associées**
+
+[Détails sur l'extraction de codes-barres](bar-code-extractions.md)

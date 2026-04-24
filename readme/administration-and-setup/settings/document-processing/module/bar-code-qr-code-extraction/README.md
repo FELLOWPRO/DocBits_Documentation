@@ -31,8 +31,22 @@ DocBits supports extraction of the following code types:
 * **PDF-417**
 * **SQ-CODE**
 
+## Payment QR Code Standards
+
+Beyond generic QR decoding, DocBits recognises **seven distinct Payment QR Code standards** and auto-extracts their payment fields into the document API response. Customers no longer need to decode these QR strings manually — every standard comes with its own field prefix (e.g. `swissqr_*`, `girocode_*`) so values flow straight into matching, validation, and export.
+
+| # | Standard | Region | Field prefix | Typical use |
+|---|----------|--------|--------------|-------------|
+| 1 | [Swiss QR Bill](swiss-qr-code.md) | Switzerland | `swissqr_*` | Every Swiss invoice since 2020 |
+| 2 | [GiroCode (EPC069-12)](girocode.md) | DE, AT, NL, BE, FI | `girocode_*` | SEPA payments |
+| 3 | [SPAYD / SPD](spayd.md) | CZ, partially SK | `spayd_*` | Czech Banking Association standard |
+| 4 | [PagoPA](pagopa.md) | IT (public admin) | `pagopa_*` | Mandatory on Italian PA invoices |
+| 5 | [Crypto Payment URIs](crypto-uris.md) | Global crypto | `crypto_*` | Bitcoin, Lightning, Ethereum, Zcash, Litecoin |
+| 6 | [EMVCo MPM](emvco-mpm.md) | BR, IN, SG, TH, MY, ID, PH, VN, HK + more | `emvmpm_*` | Pix, UPI, PayNow, PromptPay, QRIS, QR Ph, VietQR, FPS |
+| 7 | [ZATCA Fatoora](zatca-fatoora.md) | Saudi Arabia | `zatca_*` | Mandatory on every KSA invoice |
+
+**Detection is automatic.** Each decoded QR string is inspected for its magic prefix (e.g. `SPC\n0200` for Swiss QR Bill v2.0, `PAGOPA|002|` for PagoPA) and only recognised standards are parsed into structured fields.
+
 ### **Related Pages**
 
 [Barcode Extraction Details](bar-code-extractions.md)
-
-[QR Code Extraction Details](swiss-qr-code.md)

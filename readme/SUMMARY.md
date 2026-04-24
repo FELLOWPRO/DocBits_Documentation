@@ -1,6 +1,7 @@
 # Table of contents
 
 * [DocBits](README.md)
+* [Sertifikacije](certifications.md)
 * [End User Section](<README (1).md>)
   * [Key Features of DocBits](overview/key-features-of-docbits.md)
   * [User Support](overview/user-support.md)

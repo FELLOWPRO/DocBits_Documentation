@@ -71,6 +71,6 @@ To start WatchDog automatically on boot:
 
 ## Further Resources
 
-* [WatchDog Installation V1](../../administration-and-setup/setup/watchdog-installation.md)
-* [WatchDog V2 Configuration](../../administration-and-setup/setup/watchdog-v2-configuration.md)
-* [WatchDog Admin FAQ](../../administration-and-setup/setup/watchdog-admin-faq.md)
+* [WatchDog Installation V1](../../administration-and-setup/setup/watchdog/watchdog-installation.md)
+* [WatchDog V2 Configuration](../../administration-and-setup/setup/watchdog/watchdog-v2-configuration.md)
+* [WatchDog Admin FAQ](../../administration-and-setup/setup/watchdog/watchdog-admin-faq.md)

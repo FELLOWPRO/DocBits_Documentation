@@ -17,15 +17,66 @@ Anything outside these fields is ignored. There is no content-level search and n
 
 ## With the module enabled
 
-Activating Fulltext Search unlocks search across every extracted field on a document and adds a query language to the dashboard search bar:
+Activating Fulltext Search unlocks search across every extracted field on a document and replaces the dashboard search bar with a richer query language. Queries can combine field filters, range comparisons, logical operators, relative dates, and smart-filter shortcuts.
 
-* Search across **every extracted field** — supplier name, dates, amounts, custom fields, line items.
-* **Range queries** — `total_amount > 5000`, `invoice_due_date between 2026-01-01 and 2026-04-30`.
-* **Logical operators** — `AND`, `OR`, parentheses, `NOT`, and `IN`-lists.
-* **Relative dates** — `today()`, `last_week`, `this_quarter`.
-* **Smart filters** — `overdue`, `@User`, `#INV-1234`, `$5k+`.
+<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Dashboard search bar showing a range query and the resulting filtered document list"><figcaption><p>The dashboard search bar accepts the extended query language. Type a query and press <kbd>Enter</kbd> to filter the document list.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Dashboard search bar with a vector query typed in"><figcaption><p>The dashboard search bar accepts the extended query language. A "Fulltext required" tag appears next to the bar when the module is disabled.</p></figcaption></figure>
+### Field-scoped queries
+
+Match a specific extracted field by prefixing the field name with a colon. Field names follow the API identifier convention (lowercase, snake\_case) and apply to every field captured by your document types — supplier, invoice metadata, line items, custom fields.
+
+```
+supplier_name: Acme
+invoice_id: INV-1234
+status: ready_for_validation
+```
+
+### Range queries
+
+Use comparison operators on numeric and date fields. Both open-ended comparisons and bounded ranges are supported.
+
+```
+total_amount > 5000
+total_amount <= 10000
+invoice_due_date between 2026-01-01 and 2026-04-30
+```
+
+### Logical operators
+
+Combine clauses with `AND`, `OR`, and `NOT`, grouping with parentheses for precedence. `IN`-lists match any value from a set on a single field.
+
+```
+supplier_name: Acme AND total_amount > 1000
+(status: ready_for_validation OR status: validated) AND invoice_date: this_month
+NOT status: archived
+status IN (ready_for_validation, exported)
+```
+
+### Relative dates
+
+Time expressions evaluated against the query timestamp. Use them anywhere a date is expected.
+
+```
+imported_on: today()
+invoice_date: last_week
+imported_on: this_quarter
+```
+
+### Smart filters
+
+Single-token shortcuts for common queries. They work on their own or as part of a larger expression.
+
+```
+overdue
+@User
+#INV-1234
+$5k+
+```
+
+* `overdue` — documents past their due date.
+* `@User` — filter by assignee; replace `User` with the assignee's name.
+* `#INV-1234` — quick lookup by document identifier.
+* `$5k+` — monetary amounts greater than 5,000 in the document's currency.
 
 ## Sub-features
 

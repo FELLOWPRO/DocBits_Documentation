@@ -232,6 +232,7 @@
       * [IDM ACL Updater](admin-section/settings/document-processing/module/idm-acl-updater.md)
       * [Swiss QR Code](admin-section/settings/document-processing/module/swiss-qr-code.md)
       * [PO Versandauftragseinstellung](administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md)
+      * [Volltextsuche](administration-and-setup/settings/document-processing/module/fulltext-search.md)
     * [Entscheidungsbäume](administration-and-setup/settings/document-processing/decision-trees.md)
   * [Log Einstellungen](administration-and-setup/settings/log-settings/README.md)
     * [Aufgabenverwaltung](administration-and-setup/settings/log-settings/task-management.md)

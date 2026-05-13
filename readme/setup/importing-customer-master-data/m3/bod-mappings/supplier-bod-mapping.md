@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Ödeme koşulları tanımlayıcısı. |
 | `paymentMethodCode` | — | Sağlandığında ödeme yöntemi kodu. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Atanmış alıcı (M3 kullanıcı referansı ve görüntüleme adı). |
-| `supplier_category` | — | `Classification/Codes/Code[@listID='Supplier Categories']` üzerinden okunur. Müşteriye özgü UserArea uzantısı; standart M3 kurulumlarında NULL. |
+| `supplier_category` | — | `Classification/Codes/Code[@listID='Supplier Categories']` üzerinden okunur. İsteğe bağlı UserArea uzantısı; standart M3 kurulumlarında NULL. |
 | `supplier_group` | `CIDVEN.IISUCL` | Tedarikçi sınıflandırma grubu. |
-| `discount_terms_description` | — | DocBits'in iskonto tarihi hesaplayıcısı tarafından kullanılan müşteriye özgü UserArea uzantısı (`eam.UDFCHAR06`). Tedarikçi burada iskonto günü değeri verdiğinde, DocBits onu fatura tarihiyle birleştirerek AP ekibi için bir iskonto vade tarihi üretir. |
+| `discount_terms_description` | — | DocBits'in iskonto tarihi hesaplayıcısı tarafından kullanılan isteğe bağlı UserArea uzantısı (`eam.UDFCHAR06`). Tedarikçi burada iskonto günü değeri verdiğinde, DocBits onu fatura tarihiyle birleştirerek AP ekibi için bir iskonto vade tarihi üretir. |
 | `status` | `CIDMAS.IDSTAT` | Tedarikçi aktif/pasif durumu, `SupplierPartyMaster/Status/Code` üzerinden. |
 | `bank_id` | `CBANAC.BCBKNO` | Varsayılan banka hesabı, *son* `FinancialParty` üzerinden. Her `FinancialParty`'yi `supplier_account` tablosuna senkronize etmek için `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC` özelliğini etkinleştirin. |
 
@@ -113,7 +113,7 @@ Hayır. Her BOD türü yalnızca gönderdiği alanlara sahiptir ve güncellemele
 
 ### `Supplier Categories` ve `eam.UDFCHAR06` M3'üm tarafından hiç teslim edilmiyor — ne yapmalıyım?
 
-Her ikisi de müşteriye özel UserArea uzantılarıdır. Uzantı olmadan sütunlar NULL kalır ve hiçbir DocBits özelliği bunlara bağlı değildir. İskonto tarihi mantığını yalnızca M3'ünüz `eam.UDFCHAR06` yayacak şekilde yapılandırıldığında etkinleştirin.
+Her ikisi de isteğe bağlı UserArea uzantılarıdır. Uzantı olmadan sütunlar NULL kalır ve hiçbir DocBits özelliği bunlara bağlı değildir. İskonto tarihi mantığını yalnızca M3'ünüz `eam.UDFCHAR06` yayacak şekilde yapılandırıldığında etkinleştirin.
 
 ### `vatNo`, `schemeName='TaxIdentificationNumber'` üzerinde filtrelemeli mi?
 

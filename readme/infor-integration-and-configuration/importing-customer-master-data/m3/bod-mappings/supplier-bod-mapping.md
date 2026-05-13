@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Identifier van betalingsvoorwaarden. |
 | `paymentMethodCode` | — | Betalingsmethodecode, indien aangeleverd. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Toegewezen inkoper (M3-gebruikersreferentie en weergavenaam). |
-| `supplier_category` | — | Gelezen uit `Classification/Codes/Code[@listID='Supplier Categories']`. Klantspecifieke UserArea-uitbreiding; blijft NULL bij standaard M3-installaties. |
+| `supplier_category` | — | Gelezen uit `Classification/Codes/Code[@listID='Supplier Categories']`. Optionele UserArea-uitbreiding; blijft NULL bij standaard M3-installaties. |
 | `supplier_group` | `CIDVEN.IISUCL` | Classificatiegroep van de leverancier. |
-| `discount_terms_description` | — | Klantspecifieke UserArea-uitbreiding (`eam.UDFCHAR06`) gebruikt door de kortingsdatum-rekenmodule van DocBits. Wanneer de leverancier hier een kortingsdagenwaarde aanlevert, combineert DocBits deze met de factuurdatum tot een kortingsvervaldatum voor het AP-team. |
+| `discount_terms_description` | — | Optionele UserArea-uitbreiding (`eam.UDFCHAR06`) gebruikt door de kortingsdatum-rekenmodule van DocBits. Wanneer de leverancier hier een kortingsdagenwaarde aanlevert, combineert DocBits deze met de factuurdatum tot een kortingsvervaldatum voor het AP-team. |
 | `status` | `CIDMAS.IDSTAT` | Actief/inactief-status van de leverancier, uit `SupplierPartyMaster/Status/Code`. |
 | `bank_id` | `CBANAC.BCBKNO` | Standaard bankrekening, uit de *laatste* `FinancialParty`. Schakel `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC` in om elke `FinancialParty` in de `supplier_account`-tabel te synchroniseren. |
 
@@ -113,7 +113,7 @@ Nee. Elk BOD-type bezit alleen de velden die het verstuurt, en updates worden ge
 
 ### `Supplier Categories` en `eam.UDFCHAR06` worden nooit door mijn M3 geleverd — wat te doen?
 
-Beide zijn klantspecifieke UserArea-uitbreidingen. Zonder de uitbreiding blijven de kolommen NULL en geen DocBits-functie hangt ervan af. Schakel de kortingsdatumlogica alleen in als jouw M3 is geconfigureerd om `eam.UDFCHAR06` te emitteren.
+Beide zijn optionele UserArea-uitbreidingen. Zonder de uitbreiding blijven de kolommen NULL en geen DocBits-functie hangt ervan af. Schakel de kortingsdatumlogica alleen in als jouw M3 is geconfigureerd om `eam.UDFCHAR06` te emitteren.
 
 ### Moet `vatNo` filteren op `schemeName='TaxIdentificationNumber'`?
 

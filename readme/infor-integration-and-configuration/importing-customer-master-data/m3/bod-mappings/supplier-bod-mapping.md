@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Payment-terms identifier. |
 | `paymentMethodCode` | — | Payment method code, when supplied. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Assigned buyer (M3 user) reference and display name. |
-| `supplier_category` | — | Read from `Classification/Codes/Code[@listID='Supplier Categories']`. Customer-specific UserArea extension; left NULL by stock M3 installations. |
+| `supplier_category` | — | Read from `Classification/Codes/Code[@listID='Supplier Categories']`. Optional UserArea extension; left NULL by stock M3 installations. |
 | `supplier_group` | `CIDVEN.IISUCL` | Supplier classification group. |
-| `discount_terms_description` | — | Customer-specific UserArea extension (`eam.UDFCHAR06`) used by DocBits' discount-date calculator. When the supplier provides a discount-days value here, DocBits combines it with the invoice date to produce a discount due date for the AP team. |
+| `discount_terms_description` | — | Optional UserArea extension (`eam.UDFCHAR06`) used by DocBits' discount-date calculator. When the supplier provides a discount-days value here, DocBits combines it with the invoice date to produce a discount due date for the AP team. |
 | `status` | `CIDMAS.IDSTAT` | Supplier active/inactive status, taken from `SupplierPartyMaster/Status/Code`. |
 | `bank_id` | `CBANAC.BCBKNO` | Default bank account, taken from the *last* `FinancialParty`. Enable `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC` to sync every `FinancialParty` into the `supplier_account` table instead. |
 
@@ -113,7 +113,7 @@ No. Each BOD type only owns the fields it sends, and updates are gated by an ind
 
 ### `Supplier Categories` and `eam.UDFCHAR06` are never delivered by my M3 — what should I do?
 
-Both are customer-specific UserArea extensions. Without the extension the columns stay NULL and no DocBits feature depends on them. Enable the discount-date logic only when your M3 is configured to emit `eam.UDFCHAR06`.
+Both are optional UserArea extensions. Without the extension the columns stay NULL and no DocBits feature depends on them. Enable the discount-date logic only when your M3 is configured to emit `eam.UDFCHAR06`.
 
 ### Should `vatNo` filter for `schemeName='TaxIdentificationNumber'`?
 

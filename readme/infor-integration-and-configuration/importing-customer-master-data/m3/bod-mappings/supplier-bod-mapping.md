@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Identifiant des conditions de paiement. |
 | `paymentMethodCode` | — | Code de mode de paiement, lorsqu'il est fourni. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Référence (utilisateur M3) et nom d'affichage de l'acheteur assigné. |
-| `supplier_category` | — | Lu depuis `Classification/Codes/Code[@listID='Supplier Categories']`. Extension UserArea spécifique client ; NULL sur installations M3 standard. |
+| `supplier_category` | — | Lu depuis `Classification/Codes/Code[@listID='Supplier Categories']`. Extension UserArea optionnelle ; NULL sur installations M3 standard. |
 | `supplier_group` | `CIDVEN.IISUCL` | Groupe de classification du fournisseur. |
-| `discount_terms_description` | — | Extension UserArea spécifique client (`eam.UDFCHAR06`) utilisée par le calculateur de date d'escompte de DocBits. Quand le fournisseur fournit ici une valeur de jours d'escompte, DocBits la combine avec la date de facture pour produire une date d'échéance d'escompte pour l'équipe comptable. |
+| `discount_terms_description` | — | Extension UserArea optionnelle (`eam.UDFCHAR06`) utilisée par le calculateur de date d'escompte de DocBits. Quand le fournisseur fournit ici une valeur de jours d'escompte, DocBits la combine avec la date de facture pour produire une date d'échéance d'escompte pour l'équipe comptable. |
 | `status` | `CIDMAS.IDSTAT` | Statut actif/inactif du fournisseur, pris depuis `SupplierPartyMaster/Status/Code`. |
 | `bank_id` | `CBANAC.BCBKNO` | Compte bancaire par défaut, pris depuis la *dernière* `FinancialParty`. Activez `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC` pour synchroniser chaque `FinancialParty` dans la table `supplier_account`. |
 
@@ -113,7 +113,7 @@ Non. Chaque type de BOD ne possède que les champs qu'il envoie, et les mises à
 
 ### `Supplier Categories` et `eam.UDFCHAR06` ne sont jamais émis par mon M3 — que faire ?
 
-Ce sont des extensions UserArea spécifiques au client. Sans l'extension, les colonnes restent NULL et aucune fonction DocBits n'en dépend. Activez la logique de date d'escompte uniquement quand votre M3 est configuré pour émettre `eam.UDFCHAR06`.
+Ce sont des extensions UserArea optionnelles. Sans l'extension, les colonnes restent NULL et aucune fonction DocBits n'en dépend. Activez la logique de date d'escompte uniquement quand votre M3 est configuré pour émettre `eam.UDFCHAR06`.
 
 ### `vatNo` doit-il filtrer sur `schemeName='TaxIdentificationNumber'` ?
 

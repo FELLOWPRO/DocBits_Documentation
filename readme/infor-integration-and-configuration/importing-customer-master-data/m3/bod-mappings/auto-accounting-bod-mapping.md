@@ -1,8 +1,17 @@
 # Auto Accounting BOD Mapping
 
+O fluxo de Auto-Accounting do DocBits consome dois BODs do Infor M3 para enriquecer faturas de custo com dimensões contabilísticas válidas:
+
+- **`Sync.CodeDefinition`** — fornece a lista de valores válidos por dimensão contabilística (centro de custo, projeto, grupo de contas, …).
+- **`Sync.ChartOfAccounts`** — fornece o plano de contas juntamente com o perfil dimensional associado a cada conta.
+
+{% file src="../../../../.gitbook/assets/Sync.CodeDefinition.pdf" %}
+CodeDefinition — Referência original do mapeamento BOD (PDF)
+{% endfile %}
+
 ## Sync.CodeDefinition
 
-→ DocBits Master Data Lookup Table: **m3flexdimension**
+→ Tabela de dados mestres DocBits: **m3flexdimension**
 
 #### Caso 1: O mesmo ID ocorre em múltiplas Dimensões
 
@@ -16,7 +25,7 @@
 }
 ```
 
-#### Caso 2: O ID ocorre em uma única Dimensão
+#### Caso 2: O ID ocorre numa única Dimensão
 
 ```json
 {
@@ -28,9 +37,27 @@
 }
 ```
 
+### Referência dos campos
+
+| Campo DocBits | Descrição |
+|---|---|
+| `ID` | Chave primária em `m3flexdimension`. No **Caso 1**, o código de dimensão é anteposto ao `DocumentID/ID` M3 para manter as entradas únicas quando o mesmo código aparece em dimensões diferentes; o **Caso 2** usa o ID M3 puro. |
+| `Dimension` | Nome da dimensão (ex. centro de custo, projeto). Extraído de `CodeValue/@listID` via `substring(..., 21)` — ver a nota abaixo. |
+| `ListID` | Valor completo e não recortado de `ListID`. Mantido ao lado de `Dimension` para que o prefixo de namespace original permaneça disponível para auditoria e ferramentas downstream. |
+| `CodeValue` | Valor real do código da dimensão (ex. número de centro de custo `1000`). |
+| `Description` | Descrição legível do código (ex. "Marketing"). |
+
+### Sobre a expressão `substring(..., 21)`
+
+O segundo argumento da função XPath `substring()` é uma posição inicial baseada em 1. O M3 emite `@listID` com um prefixo tipo namespace de 20 caracteres (por exemplo `lng.m3.dimension.D1`), pelo que `substring(value, 21)` devolve o código da dimensão após esse prefixo (`D1` no exemplo). Se o seu M3 emitir um prefixo de comprimento diferente, o offset tem de ser ajustado — contacte-nos com um BOD de exemplo antes de configurar Auto-Accounting num tenant não padrão.
+
+### Como as dimensões alimentam as faturas de custo
+
+Quando uma fatura é classificada como fatura de custo, o DocBits propõe linhas contabilísticas com base no plano de contas (ver abaixo). Para cada dimensão exigida pela conta nominal proposta, a UI oferece os valores armazenados em `m3flexdimension` — pré-preenchidos a partir dos últimos BODs `Sync.CodeDefinition`. O utilizador AP escolhe o valor correto ou aceita a sugestão automática, e o resultado é exportado de volta para o M3 com o BOD `Sync.SupplierInvoice` correspondente.
+
 ## Sync.ChartOfAccounts
 
-→ DocBits Master Data Lookup Table: **ChartOfAccounts**
+→ Tabela de dados mestres DocBits: **ChartOfAccounts**
 
 ```json
 {

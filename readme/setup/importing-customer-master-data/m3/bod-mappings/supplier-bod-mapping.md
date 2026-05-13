@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Identifikator uslova plaćanja. |
 | `paymentMethodCode` | — | Kod načina plaćanja, kada je dostavljen. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Dodeljen kupac (M3 referenca korisnika i prikazno ime). |
-| `supplier_category` | — | Čita se iz `Classification/Codes/Code[@listID='Supplier Categories']`. Prilagođeno UserArea proširenje za klijenta; ostaje NULL na standardnim M3 instalacijama. |
+| `supplier_category` | — | Čita se iz `Classification/Codes/Code[@listID='Supplier Categories']`. Opcionalno UserArea proširenje; ostaje NULL na standardnim M3 instalacijama. |
 | `supplier_group` | `CIDVEN.IISUCL` | Grupa klasifikacije dobavljača. |
-| `discount_terms_description` | — | Prilagođeno UserArea proširenje za klijenta (`eam.UDFCHAR06`) koje koristi DocBits-ov kalkulator datuma popusta. Kada dobavljač ovde isporuči vrednost dana popusta, DocBits je kombinuje sa datumom fakture kako bi proizveo datum dospeća popusta za AP tim. |
+| `discount_terms_description` | — | Opcionalno UserArea proširenje (`eam.UDFCHAR06`) koje koristi DocBits-ov kalkulator datuma popusta. Kada dobavljač ovde isporuči vrednost dana popusta, DocBits je kombinuje sa datumom fakture kako bi proizveo datum dospeća popusta za AP tim. |
 | `status` | `CIDMAS.IDSTAT` | Aktivan/neaktivan status dobavljača, uzet iz `SupplierPartyMaster/Status/Code`. |
 | `bank_id` | `CBANAC.BCBKNO` | Podrazumevani bankovni račun, uzet iz *poslednje* `FinancialParty`. Omogućite `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC` da biste sinhronizovali svaki `FinancialParty` u tabelu `supplier_account`. |
 
@@ -113,7 +113,7 @@ Ne. Svaki tip BOD-a poseduje samo polja koja šalje, a ažuriranja se upravljaju
 
 ### `Supplier Categories` i `eam.UDFCHAR06` moj M3 nikada ne isporučuje — šta da radim?
 
-Oba su UserArea proširenja specifična za klijenta. Bez proširenja kolone ostaju NULL i nijedna DocBits funkcija ne zavisi od njih. Logiku datuma popusta uključite samo kada je vaš M3 konfigurisan da emituje `eam.UDFCHAR06`.
+Oba su opcionalna UserArea proširenja. Bez proširenja kolone ostaju NULL i nijedna DocBits funkcija ne zavisi od njih. Logiku datuma popusta uključite samo kada je vaš M3 konfigurisan da emituje `eam.UDFCHAR06`.
 
 ### Da li `vatNo` treba da filtrira po `schemeName='TaxIdentificationNumber'`?
 

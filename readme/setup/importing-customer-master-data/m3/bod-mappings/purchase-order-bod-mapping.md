@@ -162,4 +162,4 @@ Obe kolone postoje radi istorijske/UI kompatibilnosti. `total_amount` se rešava
 
 ### Neka polja su dokumentovana ali uvek prazna (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Zašto su mapirana?
 
-Ova mapiranja su defanzivna: BOD šema dozvoljava polja, a drugi ERP-ovi ili prilagođena M3 proširenja mogu ih popunjavati. Kada ih M3 ostavi prazna, kolone su jednostavno NULL u DocBits-u.
+Ova mapiranja su defanzivna: BOD šema dozvoljava polja, a drugi ERP-ovi ili opciona M3 proširenja mogu ih popunjavati. Kada ih M3 ostavi prazna, kolone su jednostavno NULL u DocBits-u.

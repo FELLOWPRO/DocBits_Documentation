@@ -451,6 +451,7 @@
       * [How to Create Database Access for a Specific Organization User](administration-and-setup/settings/document-processing/module/how-to-create-database-access-for-a-specific-organization-user/README.md)
         * [SQL Example](administration-and-setup/settings/document-processing/module/how-to-create-database-access-for-a-specific-organization-user/sql-example.md)
       * [PO Shipment Order Setting](administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md)
+      * [Fulltext Search](administration-and-setup/settings/document-processing/module/fulltext-search.md)
     * [Decision Trees](administration-and-setup/settings/document-processing/decision-trees.md)
   * [Log Settings](administration-and-setup/settings/log-settings/README.md)
     * [Task Management](administration-and-setup/settings/log-settings/task-management.md)

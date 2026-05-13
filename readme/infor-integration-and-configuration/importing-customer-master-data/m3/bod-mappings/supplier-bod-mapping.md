@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Identyfikator warunków płatności. |
 | `paymentMethodCode` | — | Kod metody płatności, gdy dostarczony. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Przypisany kupiec (referencja użytkownika M3 i nazwa wyświetlana). |
-| `supplier_category` | — | Czytane z `Classification/Codes/Code[@listID='Supplier Categories']`. Rozszerzenie UserArea specyficzne dla klienta; w standardowych instalacjach M3 pozostaje NULL. |
+| `supplier_category` | — | Czytane z `Classification/Codes/Code[@listID='Supplier Categories']`. Opcjonalne rozszerzenie UserArea; w standardowych instalacjach M3 pozostaje NULL. |
 | `supplier_group` | `CIDVEN.IISUCL` | Grupa klasyfikacji dostawcy. |
-| `discount_terms_description` | — | Rozszerzenie UserArea specyficzne dla klienta (`eam.UDFCHAR06`) używane przez kalkulator daty rabatu DocBits. Gdy dostawca dostarcza tu wartość dni rabatu, DocBits łączy ją z datą faktury, aby wyprodukować datę wymagalności rabatu dla zespołu AP. |
+| `discount_terms_description` | — | Opcjonalne rozszerzenie UserArea (`eam.UDFCHAR06`) używane przez kalkulator daty rabatu DocBits. Gdy dostawca dostarcza tu wartość dni rabatu, DocBits łączy ją z datą faktury, aby wyprodukować datę wymagalności rabatu dla zespołu AP. |
 | `status` | `CIDMAS.IDSTAT` | Status aktywny/nieaktywny dostawcy, pobierany z `SupplierPartyMaster/Status/Code`. |
 | `bank_id` | `CBANAC.BCBKNO` | Domyślne konto bankowe, pobierane z *ostatniej* `FinancialParty`. Włącz `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC`, aby zsynchronizować każdą `FinancialParty` w tabeli `supplier_account`. |
 
@@ -113,7 +113,7 @@ Nie. Każdy typ BOD posiada tylko pola, które wysyła, a aktualizacje są stero
 
 ### `Supplier Categories` i `eam.UDFCHAR06` nigdy nie są dostarczane przez mój M3 — co robić?
 
-Oba to rozszerzenia UserArea specyficzne dla klienta. Bez rozszerzenia kolumny pozostają NULL i żadna funkcja DocBits od nich nie zależy. Włącz logikę daty rabatu tylko wtedy, gdy twój M3 jest skonfigurowany do emitowania `eam.UDFCHAR06`.
+Oba to opcjonalne rozszerzenia UserArea. Bez rozszerzenia kolumny pozostają NULL i żadna funkcja DocBits od nich nie zależy. Włącz logikę daty rabatu tylko wtedy, gdy twój M3 jest skonfigurowany do emitowania `eam.UDFCHAR06`.
 
 ### Czy `vatNo` powinno filtrować po `schemeName='TaxIdentificationNumber'`?
 

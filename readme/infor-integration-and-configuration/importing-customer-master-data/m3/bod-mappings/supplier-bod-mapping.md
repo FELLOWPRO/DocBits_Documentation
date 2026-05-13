@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Zahlungsbedingungs-Identifikator. |
 | `paymentMethodCode` | — | Zahlungsmethoden-Code, sofern geliefert. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Zugeordneter Käufer (M3-User-Referenz und Anzeigename). |
-| `supplier_category` | — | Lesen aus `Classification/Codes/Code[@listID='Supplier Categories']`. Kundenspezifische UserArea-Erweiterung; bei Standard-M3-Installationen NULL. |
+| `supplier_category` | — | Lesen aus `Classification/Codes/Code[@listID='Supplier Categories']`. Optionale UserArea-Erweiterung; bei Standard-M3-Installationen NULL. |
 | `supplier_group` | `CIDVEN.IISUCL` | Lieferanten-Klassifikationsgruppe. |
-| `discount_terms_description` | — | Kundenspezifische UserArea-Erweiterung (`eam.UDFCHAR06`) für DocBits' Skontodatum-Berechnung. Wenn der Lieferant hier einen Skonto-Tage-Wert liefert, kombiniert DocBits ihn mit dem Rechnungsdatum, um ein Skontofälligkeitsdatum für das AP-Team zu erzeugen. |
+| `discount_terms_description` | — | Optionale UserArea-Erweiterung (`eam.UDFCHAR06`) für DocBits' Skontodatum-Berechnung. Wenn der Lieferant hier einen Skonto-Tage-Wert liefert, kombiniert DocBits ihn mit dem Rechnungsdatum, um ein Skontofälligkeitsdatum für das AP-Team zu erzeugen. |
 | `status` | `CIDMAS.IDSTAT` | Lieferanten-Aktiv-/Inaktiv-Status aus `SupplierPartyMaster/Status/Code`. |
 | `bank_id` | `CBANAC.BCBKNO` | Standard-Bankverbindung, gelesen aus der *letzten* `FinancialParty`. Aktivieren Sie `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC`, um stattdessen jede `FinancialParty` in die `supplier_account`-Tabelle zu synchronisieren. |
 
@@ -113,7 +113,7 @@ Nein. Jeder BOD-Typ besitzt nur die Felder, die er sendet, und Updates werden ü
 
 ### `Supplier Categories` und `eam.UDFCHAR06` werden von meinem M3 nie geliefert — was tun?
 
-Beides sind kundenspezifische UserArea-Erweiterungen. Ohne die Erweiterung bleiben die Spalten NULL, und kein DocBits-Feature hängt davon ab. Aktivieren Sie die Skontodatum-Logik nur, wenn Ihr M3 `eam.UDFCHAR06` emittiert.
+Beides sind optionale UserArea-Erweiterungen. Ohne die Erweiterung bleiben die Spalten NULL, und kein DocBits-Feature hängt davon ab. Aktivieren Sie die Skontodatum-Logik nur, wenn Ihr M3 `eam.UDFCHAR06` emittiert.
 
 ### Soll `vatNo` auf `schemeName='TaxIdentificationNumber'` filtern?
 

@@ -162,4 +162,4 @@ Beide Spalten existieren aus historischen/UI-Kompatibilitätsgründen. `total_am
 
 ### Einige Felder sind dokumentiert, aber immer leer (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Warum sind sie gemappt?
 
-Die Mappings sind defensiv: das BOD-Schema erlaubt diese Felder, und andere ERPs oder kundenspezifische M3-Erweiterungen können sie befüllen. Wenn M3 sie leer lässt, sind die Spalten in DocBits einfach NULL.
+Die Mappings sind defensiv: das BOD-Schema erlaubt diese Felder, und andere ERPs oder individuelle M3-Erweiterungen können sie befüllen. Wenn M3 sie leer lässt, sind die Spalten in DocBits einfach NULL.

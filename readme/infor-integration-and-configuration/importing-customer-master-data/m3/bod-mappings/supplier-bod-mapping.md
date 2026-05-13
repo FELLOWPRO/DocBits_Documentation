@@ -55,9 +55,9 @@ header_mappings = {
 | `paymentTermId` | `CIDVEN.IITEPY` | Identificatore termini di pagamento. |
 | `paymentMethodCode` | — | Codice metodo di pagamento, quando fornito. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Riferimento (utente M3) e nome di visualizzazione del buyer assegnato. |
-| `supplier_category` | — | Letto da `Classification/Codes/Code[@listID='Supplier Categories']`. Estensione UserArea specifica del cliente; rimane NULL su installazioni M3 standard. |
+| `supplier_category` | — | Letto da `Classification/Codes/Code[@listID='Supplier Categories']`. Estensione UserArea opzionale; rimane NULL su installazioni M3 standard. |
 | `supplier_group` | `CIDVEN.IISUCL` | Gruppo di classificazione del fornitore. |
-| `discount_terms_description` | — | Estensione UserArea specifica del cliente (`eam.UDFCHAR06`) usata dalla logica di calcolo della data di sconto di DocBits. Quando il fornitore fornisce qui un valore di giorni di sconto, DocBits lo combina con la data fattura per produrre una data di scadenza dello sconto per il team AP. |
+| `discount_terms_description` | — | Estensione UserArea opzionale (`eam.UDFCHAR06`) usata dalla logica di calcolo della data di sconto di DocBits. Quando il fornitore fornisce qui un valore di giorni di sconto, DocBits lo combina con la data fattura per produrre una data di scadenza dello sconto per il team AP. |
 | `status` | `CIDMAS.IDSTAT` | Stato attivo/inattivo del fornitore, preso da `SupplierPartyMaster/Status/Code`. |
 | `bank_id` | `CBANAC.BCBKNO` | Conto bancario di default, preso dall'*ultima* `FinancialParty`. Attiva `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC` per sincronizzare invece ogni `FinancialParty` nella tabella `supplier_account`. |
 
@@ -113,7 +113,7 @@ No. Ogni tipo di BOD possiede solo i campi che invia, e gli aggiornamenti sono g
 
 ### `Supplier Categories` e `eam.UDFCHAR06` non vengono mai inviati dal mio M3 — cosa faccio?
 
-Sono estensioni UserArea specifiche del cliente. Senza l'estensione, le colonne restano NULL e nessuna funzione DocBits ne dipende. Attiva la logica di data sconto solo quando il tuo M3 è configurato per emettere `eam.UDFCHAR06`.
+Sono estensioni UserArea opzionali. Senza l'estensione, le colonne restano NULL e nessuna funzione DocBits ne dipende. Attiva la logica di data sconto solo quando il tuo M3 è configurato per emettere `eam.UDFCHAR06`.
 
 ### `vatNo` deve filtrare per `schemeName='TaxIdentificationNumber'`?
 

@@ -7,14 +7,14 @@ O DocFlow expõe um servidor **Model Context Protocol (MCP)** que permite que as
 Com o DocFlow MCP você pode:
 
 - **Listar, criar, atualizar e excluir** workflows avançados
-- **Testar workflows** com documentos reais ou simulados
-- **Criar cards personalizados** usando o Partner Card SDK
+- **Testar workflows** com documentos reais ou fictícios
+- **Construir cards personalizados** usando o Partner Card SDK
 - **Validar, testar, aprovar e gerenciar** submissões de cards de parceiros
-- **Importar cards** diretamente de repositórios GitHub
+- **Importar cards** diretamente de repositórios do GitHub
 
 ## Visão Geral das Ferramentas
 
-O DocFlow MCP fornece **18 ferramentas** em quatro categorias:
+O DocFlow MCP agrupa suas ferramentas nas seguintes categorias. A maioria das ferramentas Workflow e Card SDK espelha endpoints REST existentes — consulte lá a referência da API. As categorias abaixo cobrem a superfície específica do MCP e os conceitos de workflow necessários para usá-la.
 
 ### Gerenciamento de Workflows
 
@@ -26,13 +26,13 @@ O DocFlow MCP fornece **18 ferramentas** em quatro categorias:
 | `update_advanced_workflow` | Atualizar um workflow avançado existente |
 | `delete_workflow` | Excluir um workflow por ID |
 
-### Teste de Workflows
+### Testes de Workflows
 
 | Ferramenta | Descrição |
 |------|-------------|
-| `test_advanced_workflow` | Testar a execução de um workflow avançado com documento opcional |
-| `list_test_scenarios` | Listar todos os cenários de teste de workflow |
-| `list_cards` | Listar cards/ações de workflow disponíveis |
+| `test_advanced_workflow` | Testar a execução de um workflow avançado, opcionalmente com documento |
+| `list_test_scenarios` | Listar todos os cenários de teste de workflows |
+| `list_cards` | Listar os cards / ações de workflow disponíveis |
 
 ### Gerenciamento do Card SDK
 
@@ -43,24 +43,24 @@ O DocFlow MCP fornece **18 ferramentas** em quatro categorias:
 | `sdk_approve_card` | Aprovar um card de parceiro validado (admin) |
 | `sdk_reject_card` | Rejeitar uma submissão de card de parceiro (admin) |
 | `sdk_delete_submission` | Desativar ou excluir uma submissão (admin) |
-| `sdk_list_cards_picker` | Listar todos os cards habilitados com flags de função |
+| `sdk_list_cards_picker` | Listar todos os cards habilitados com flags de papel |
 
 ### Desenvolvimento do Card SDK
 
 | Ferramenta | Descrição |
 |------|-------------|
-| `sdk_create_card` | Criar um novo card de parceiro a partir de código-fonte |
-| `sdk_validate_card` | Executar validação em 5 etapas sem salvar |
-| `sdk_test_card` | Executar um card em um ambiente isolado (sandbox) |
+| `sdk_create_card` | Criar um novo card de parceiro a partir do código-fonte |
+| `sdk_validate_card` | Executar a pipeline de validação sem salvar |
+| `sdk_test_card` | Executar um card em um ambiente sandbox |
 | `sdk_import_github` | Importar um app de parceiro do GitHub |
 
-## Primeiros Passos
+## Começando
 
-1. [Configure seu cliente MCP](setup-and-configuration-pt.md)
-2. Aprenda sobre as [Ferramentas de Workflow](workflow-tools-pt.md)
-3. Explore as [Ferramentas do Card SDK](card-sdk-tools-pt.md)
-4. Siga os [Exemplos](examples-pt.md) completos
+1. [Configure seu cliente MCP](setup-and-configuration.md)
+2. Conheça as [Workflow Tools](workflow-tools.md)
+3. Explore as [Card SDK Tools](card-sdk-tools.md)
+4. Siga os [exemplos](examples.md) de ponta a ponta
 
 {% hint style="info" %}
-O DocFlow MCP usa transporte **Streamable HTTP**. O endpoint do servidor é `/api/mcp/` no seu host da API DocBits.
+O DocFlow MCP usa o transporte **Streamable HTTP**. O endpoint do servidor é `/v3/mcp/` no host DocFlow (ex.: `https://docflow.docbits.com/v3/mcp/`). Consulte [Configuração e Setup](setup-and-configuration.md) para a lista completa de URLs.
 {% endhint %}

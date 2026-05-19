@@ -3,23 +3,41 @@
 ## Punkty koncowe API
 
 | Srodowisko | Punkt koncowy MCP |
-|------------|-------------------|
-| Deweloperskie | `https://dev.api.docbits.com/api/mcp/` |
-| Stage | `https://stage.api.docbits.com/api/mcp/` |
-| Produkcyjne | `https://api.docbits.com/api/mcp/` |
+|-------------|-------------|
+| Deweloperskie | `https://dev.docflow.docbits.com/v3/mcp/` |
+| Sandbox | `https://sandbox.docflow.docbits.com/v3/mcp/` |
+| Produkcyjne | `https://docflow.docbits.com/v3/mcp/` |
+
+Konczacy slash jest istotny — `https://docflow.docbits.com/v3/mcp` (bez niego) nie dopasuje sie do trasy.
 
 ## Uwierzytelnianie
 
-Wszystkie zadania MCP wymagaja prawidlowego klucza API DocBits przekazanego jako token Bearer. Klucz API mozesz znalezc w **Settings > Integration** w interfejsie DocBits.
+Wszystkie zadania MCP wymagaja wazonego klucza API DocBits. Klucz API znajdziesz w **Ustawienia > Integracja** w interfejsie DocBits.
 
-Token jest wysylany za pomoca naglowka `Authorization`:
+Serwer akceptuje klucz za pomoca jednego z tych naglowkow:
 
 ```
-Authorization: Bearer <your-api-key>
+Authorization: Bearer <twoj-klucz-api>
 ```
+
+lub
+
+```
+x-api-key: <twoj-klucz-api>
+```
+
+### Kontekst organizacji
+
+Jesli twoj klucz API jest powiazany z wiecej niz jedna organizacja, wyslij rowniez naglowek `x-org-id`, aby serwer wybral wlasciwa organizacje i rozpoznal twoja role administratora:
+
+```
+x-org-id: <uuid-organizacji>
+```
+
+W praktyce ten naglowek jest wymagany dla narzedzi tylko dla adminow wymienionych ponizej — bez niego serwer moze wrocic do widoku tokena bez uprawnien admina i odrzucic zadanie.
 
 {% hint style="warning" %}
-Narzedzia dostepne tylko dla administratorow (`sdk_approve_card`, `sdk_reject_card`, `sdk_delete_submission`) wymagaja tokenu administratora organizacji.
+**Narzedzia tylko dla adminow.** `sdk_approve_card`, `sdk_reject_card` i `sdk_delete_submission` wymagaja, aby uzytkownik wywolujacy byl administratorem organizacji. Wyslij `x-org-id` razem z kluczem API dla tych wywolan.
 {% endhint %}
 
 ## Konfiguracja klienta
@@ -29,10 +47,11 @@ Narzedzia dostepne tylko dla administratorow (`sdk_approve_card`, `sdk_reject_ca
 Dodaj serwer DocFlow MCP za pomoca CLI:
 
 ```bash
-claude mcp add docflow-dev \
+claude mcp add docflow \
   --transport http \
   --header "Authorization: Bearer YOUR_API_KEY" \
-  -- https://dev.api.docbits.com/api/mcp/
+  --header "x-org-id: YOUR_ORG_UUID" \
+  -- https://docflow.docbits.com/v3/mcp/
 ```
 
 Lub dodaj go do pliku konfiguracyjnego `.claude.json`:
@@ -40,27 +59,29 @@ Lub dodaj go do pliku konfiguracyjnego `.claude.json`:
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
 }
 ```
 
-Mozesz rowniez dodac go do pliku `.mcp.json` na poziomie projektu:
+Mozesz go rowniez dodac do pliku `.mcp.json` na poziomie projektu:
 
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -69,16 +90,17 @@ Mozesz rowniez dodac go do pliku `.mcp.json` na poziomie projektu:
 
 ### Claude Desktop
 
-Dodaj nastepujaca konfiguracje do pliku `claude_desktop_config.json`:
+Dodaj nastepujace do pliku `claude_desktop_config.json`:
 
 ```json
 {
   "mcpServers": {
     "docflow": {
       "type": "streamable-http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -91,16 +113,17 @@ Na macOS plik konfiguracyjny znajduje sie w `~/Library/Application Support/Claud
 
 ### OpenAI Codex
 
-Codex CLI obsluguje serwery MCP. Dodaj do konfiguracji projektu:
+CLI Codex obsluguje serwery MCP. Dodaj do konfiguracji projektu:
 
 ```json
 {
   "mcpServers": {
     "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -109,7 +132,7 @@ Codex CLI obsluguje serwery MCP. Dodaj do konfiguracji projektu:
 
 ### Ogolny klient MCP (Python)
 
-Dla niestandardowych integracji z uzyciem MCP Python SDK:
+Dla niestandardowych integracji uzywajacych Python SDK MCP:
 
 ```python
 from mcp.client.streamable_http import streamablehttp_client
@@ -117,8 +140,11 @@ from mcp import ClientSession
 
 async def connect():
     async with streamablehttp_client(
-        url="https://dev.api.docbits.com/api/mcp/",
-        headers={"Authorization": "Bearer YOUR_API_KEY"},
+        url="https://docflow.docbits.com/v3/mcp/",
+        headers={
+            "Authorization": "Bearer YOUR_API_KEY",
+            "x-org-id": "YOUR_ORG_UUID",
+        },
     ) as (read_stream, write_stream, _):
         async with ClientSession(read_stream, write_stream) as session:
             await session.initialize()
@@ -126,10 +152,10 @@ async def connect():
             print(f"Available tools: {[t.name for t in tools.tools]}")
 ```
 
-## Weryfikacja polaczenia
+## Sprawdzanie polaczenia
 
-Po skonfigurowaniu klienta przetestuj polaczenie, wywolujac narzedzie `list_workflows`. Nie wymaga ono zadnych parametrow i powinno zwrocic tablice przepływow pracy (lub pusta tablice dla nowych organizacji).
+Po skonfigurowaniu klienta przetestuj polaczenie wywolujac narzedzie `list_workflows`. Nie wymaga zadnych parametrow i powinno zwrocic tablice przepływow pracy (lub pusta tablice dla nowych organizacji).
 
 {% hint style="info" %}
-Jesli otrzymujesz bledy uwierzytelniania, sprawdz, czy Twoj klucz API jest prawidlowy i czy naglowek `Authorization` jest wysylany. Niektorzy klienci MCP wymagaja ponownego uruchomienia po zmianie konfiguracji.
+Jesli otrzymujesz bledy uwierzytelniania, sprawdz, czy klucz API jest poprawny i czy wysylany jest naglowek `Authorization`. Niektorzy klienci MCP wymagaja ponownego uruchomienia po zmianie konfiguracji.
 {% endhint %}

@@ -14,7 +14,7 @@ With DocFlow MCP you can:
 
 ## Tools Overview
 
-DocFlow MCP provides **18 tools** across four categories:
+DocFlow MCP groups its tools into the following categories. Most workflow- and Card-SDK tools mirror existing REST endpoints — see the API reference for those. The categories below cover the MCP-specific surface and the workflow concepts you need to use it.
 
 ### Workflow Management
 
@@ -50,7 +50,7 @@ DocFlow MCP provides **18 tools** across four categories:
 | Tool | Description |
 |------|-------------|
 | `sdk_create_card` | Create a new partner card from source code |
-| `sdk_validate_card` | Run 5-stage validation without saving |
+| `sdk_validate_card` | Run validation pipeline without saving |
 | `sdk_test_card` | Execute a card in a sandboxed environment |
 | `sdk_import_github` | Import a partner app from GitHub |
 
@@ -62,5 +62,5 @@ DocFlow MCP provides **18 tools** across four categories:
 4. Follow end-to-end [Examples](examples.md)
 
 {% hint style="info" %}
-DocFlow MCP uses **Streamable HTTP** transport. The server endpoint is `/api/mcp/` on your DocBits API host.
+DocFlow MCP uses **Streamable HTTP** transport. The server endpoint is `/v3/mcp/` on the DocFlow host (e.g. `https://docflow.docbits.com/v3/mcp/`). See [Setup & Configuration](setup-and-configuration.md) for the full URL list.
 {% endhint %}

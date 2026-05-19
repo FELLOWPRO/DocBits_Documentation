@@ -1,29 +1,12 @@
 # Workflow Tools
 
-DocFlow MCP provides 8 tools for managing and testing advanced workflows.
+DocFlow MCP exposes tools for managing and testing advanced workflows, plus tools for reading workflow logs and managing workflow variables. The Card SDK tools live in their own page — see [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
 List all workflows for the current organization.
 
 **Parameters:** None
-
-**Example Response:**
-
-```json
-[
-  {
-    "id": "a1b2c3d4-...",
-    "name": "Invoice Approval",
-    "version": 3,
-    "enabled": true,
-    "doc_types": ["INVOICE"],
-    "workflow_type": "advanced",
-    "created_on": "2025-01-15 10:30:00",
-    "last_modified_on": "2025-03-20 14:22:00"
-  }
-]
-```
 
 ## get\_workflow
 
@@ -34,29 +17,6 @@ Get details of a specific workflow including its node and edge structure.
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Yes | UUID of the workflow |
-
-**Example Response:**
-
-```json
-{
-  "id": "a1b2c3d4-...",
-  "name": "Invoice Approval",
-  "version": 3,
-  "enabled": true,
-  "doc_types": ["INVOICE"],
-  "workflow_type": "advanced",
-  "description": "Routes invoices based on amount",
-  "advanced_config": {
-    "nodes": [
-      {"node_id": "when-1", "node_type": "when", "label": "Amount > 1000"},
-      {"node_id": "then-1", "node_type": "then", "label": "Send for Approval"}
-    ],
-    "edges": [
-      {"source_node_id": "when-1", "target_node_id": "then-1"}
-    ]
-  }
-}
-```
 
 ## create\_advanced\_workflow
 
@@ -78,10 +38,24 @@ Each node requires:
 | Field | Type | Description |
 |-------|------|-------------|
 | `node_id` | string | Unique identifier for the node |
-| `node_type` | string | `when`, `then`, `and`, `or`, or `delay` |
+| `node_type` | string | See node types below |
 | `position` | object | `{x: number, y: number}` position on canvas |
 | `label` | string | Display label |
-| `card` | object | Card configuration (see below) |
+| `card` | object | Card configuration (required for `when`, `and`, `then` — see below) |
+
+**Node types:**
+
+| Type | Card requirement | Purpose |
+|------|------------------|---------|
+| `start` | No card | Trigger node — entry point of the workflow |
+| `when` | Condition card | Trigger condition (also a valid entry point) |
+| `and` | Condition card | Additional condition gate after a `when` |
+| `or` | No card | Branch node — proceeds if any incoming branch succeeds |
+| `then` | Action card | Action to execute |
+| `delay` | No card | Wait node — pauses execution for a configured duration |
+| `all` | No card | Merge node — waits for all incoming branches |
+| `any` | No card | Merge node — proceeds on the first incoming branch |
+| `note` | No card | Sticky note / annotation; not executed |
 
 ### Edge Structure
 
@@ -92,8 +66,14 @@ Each edge requires:
 | `edge_id` | string | Unique identifier for the edge |
 | `source_node_id` | string | ID of the source node |
 | `target_node_id` | string | ID of the target node |
-| `source_handle` | string | `success` or `error` (optional) |
+| `source_handle` | string | `success`, `error`, or `failed_condition` (optional) |
 | `target_handle` | string | `input` (optional) |
+
+**Source handles:**
+
+- `success` — taken when the source node succeeds (available on every executable node).
+- `failed_condition` — taken when a `when` or `and` condition card evaluates to false.
+- `error` — taken when an `and` or `then` node raises an error.
 
 ### Card Configuration
 
@@ -160,16 +140,6 @@ You only need to provide `id`, `card_type`, `version`, and `variables` for each 
 }
 ```
 
-**Example Response:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
 ## update\_advanced\_workflow
 
 Update an existing advanced workflow. You can update any combination of name, description, nodes, and edges.
@@ -184,15 +154,6 @@ Update an existing advanced workflow. You can update any combination of name, de
 | `nodes` | array | No | New nodes (replaces all existing nodes) |
 | `edges` | array | No | New edges (replaces all existing edges) |
 
-**Example Response:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
-
 ## delete\_workflow
 
 Delete a workflow by ID (soft delete).
@@ -202,15 +163,6 @@ Delete a workflow by ID (soft delete).
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Yes | UUID of workflow to delete |
-
-**Example Response:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
 
 ## test\_advanced\_workflow
 
@@ -223,83 +175,17 @@ Test an advanced workflow execution. Optionally provide a document ID to test wi
 | `workflow_id` | string | Yes | UUID of the advanced workflow |
 | `doc_id` | string | No | UUID of a document to test with |
 
-**Example Response:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-...",
-  "execution_time": 0.234,
-  "workflow_result": "completed",
-  "node_results": {
-    "when-1": {"status": "success", "output": true},
-    "then-1": {"status": "success"}
-  },
-  "logs": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "status": "success",
-      "error": null,
-      "duration_ms": 12
-    }
-  ]
-}
-```
-
 ## list\_test\_scenarios
 
 List all workflow test scenarios for the organization.
 
 **Parameters:** None
 
-**Example Response:**
-
-```json
-[
-  {
-    "id": "scenario-uuid",
-    "name": "Invoice over 1000 EUR",
-    "workflow_id": "a1b2c3d4-...",
-    "enabled": true,
-    "status": "passed",
-    "last_run": "2025-03-20 14:00:00"
-  }
-]
-```
-
 ## list\_cards
 
 List all available workflow cards with their conditions and configuration.
 
 **Parameters:** None
-
-**Example Response:**
-
-```json
-[
-  {
-    "id": "card-uuid",
-    "text": "Document Type Is",
-    "card_type": "document_type_is",
-    "card_version": 1,
-    "category": "Document",
-    "when_condition": true,
-    "and_condition": false,
-    "then_condition": false
-  },
-  {
-    "id": "card-uuid-2",
-    "text": "Send Email Notification",
-    "card_type": "send_email",
-    "card_version": 1,
-    "category": "Communication",
-    "when_condition": false,
-    "and_condition": false,
-    "then_condition": true
-  }
-]
-```
 
 {% hint style="info" %}
 Cards have role flags: `when_condition` (trigger), `and_condition` (additional condition), and `then_condition` (action). Use these to determine which node types a card can be used in.

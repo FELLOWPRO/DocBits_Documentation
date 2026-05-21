@@ -10,9 +10,9 @@ Oorspronkelijke BOD mapping referentie (PDF)
 
 - **Geen valutaconversie in DocBits.** Bedragen worden precies opgeslagen zoals M3 ze in de BOD aanlevert, samen met hun `@currencyID`. Drie header-bedragen zijn beschikbaar: `ExtendedAmount` (transactievaluta), `ExtendedBaseAmount` (basisvaluta van de onderneming), `ExtendedReportAmount` (rapportagevaluta).
 - **Geen conversie van meeteenheden in DocBits.** Hoeveelheden worden opgeslagen met hun `@unitCode`. `ReceivedBaseUOMQuantity` is de door M3 vooraf berekende basis-UoM-waarde — DocBits slaat die op zoals ze is.
-- **De header-status wordt overgenomen uit de SXE-stage indien beschikbaar.** DocBits leest `UserArea/Property[@name='poeh.stagecd']` (waarden `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) en gebruikt deze als de autoritatieve header-status. De standaard `Status/Code` wordt ook opgeslagen ter referentie.
+- **De header-status wordt overgenomen uit de SXE-stage indien beschikbaar.** DocBits leest `UserArea/Property[@name='poeh.stagecd']` (waarden `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) en gebruikt deze als de autoritatieve header-status. De standaard `Status/Code` wordt ook opgeslagen als fallback voor BODs waarin `poeh.stagecd` niet is gevuld — de emissie van deze UserArea-property is tenant-specifiek.
 - **Geen automatische statuslogica op deelhoeveelheden.** DocBits leidt geen status af uit ontvangen vs. bestelde hoeveelheden; de door M3 geleverde status wordt 1:1 overgenomen.
-- **`CONO`/`AccountingEntityID` maakt geen deel uit van de PurchaseOrder-BOD.** Routering op bedrijfsnummer geldt voor leveranciers-stamgegevens (zie [Supplier BOD Mapping](supplier-bod-mapping.md)); inkooporders worden gekoppeld via `LocationID`.
+- **`CONO`/`AccountingEntityID` maakt geen deel uit van de PurchaseOrder-BOD.** Routering op bedrijfsnummer geldt voor leveranciers-stamgegevens (zie [Supplier BOD Mapping](supplier-bod-mapping.md)); inkooporders worden gekoppeld via `LocationID`. Let op dat `LocationID` **niet globaal uniek** is — wanneer een M3-bedrijf (CONO) tussen omgevingen wordt gekopieerd (bijvoorbeeld PRD → TST), kan hetzelfde `LocationID` onder meerdere CONOs bestaan. In zulke setups: filter de inkomende BOD-stroom op de verwachte `AccountingEntity` in je ION-DataFlow om cross-environment-botsingen te vermijden.
 
 ## Header Mapping
 
@@ -62,8 +62,8 @@ header_mappings = {
 | `requested_shipment_date` | — | Wordt gelezen uit `RequiredDeliveryDateTime` op header-niveau indien aanwezig. De meeste M3-installaties hebben dit alleen op regel-niveau; gebruik in dat geval `requested_ship_date` op regel-niveau. |
 | `total_amount` | `MPHEAD.IAOURR` | Ordertotaal in transactievaluta. Opgeslagen 1:1 uit `ExtendedAmount`. |
 | `extended_amount` | `MPHEAD.IAOURR` | Zelfde bron als `total_amount`. Bewaard als separate ruwe kolom voor traceerbaarheid en downstream-consumenten die het canonieke BOD-pad verwachten. |
-| `extended_base_amount` | `MPHEAD.IAOUVA` | Ordertotaal uitgedrukt in de basisvaluta van de onderneming. Door M3 gevuld indien beschikbaar. |
-| `extended_report_amount` | `MPHEAD.IAOUVB` | Ordertotaal uitgedrukt in de rapportagevaluta. |
+| `extended_base_amount` | `MPHEAD.IAOUVA` | Ordertotaal uitgedrukt in de basisvaluta van de onderneming. Door M3 gevuld indien beschikbaar — de vulling is tenant-specifiek; als je geen gevulde waarde kunt reproduceren, deel dan een voorbeeld-BOD. |
+| `extended_report_amount` | `MPHEAD.IAOUVB` | Ordertotaal uitgedrukt in de rapportagevaluta. De vulling is tenant-specifiek (zoals `extended_base_amount`). |
 | `canceled_amount` / `canceled_base_amount` / `canceled_reporting_amount` | — | Annuleringsbedragen in transactie- / basis- / rapportagevaluta. Worden alleen door M3 gevuld na annuleringsgebeurtenissen. |
 | `type_code` / `type_description` | — | Inkoopordertype uit `Classification/Codes/Code[@listID='Purchase Order Types']` (en bijbehorende `Description`). Voorbeelden: `P10` normale PO, `P20` voorraadaanvulling. Alleen opgeslagen voor weergave — geen filterlogica. |
 | `buyer_contact_id` / `buyer_contact_name` | `MPHEAD.IABUYE` / gekoppelde gebruiker | Aan PO toegewezen inkoper. |
@@ -163,3 +163,15 @@ Beide kolommen bestaan om historische/UI-redenen. `total_amount` wordt opgelost 
 ### Sommige velden zijn gedocumenteerd maar altijd leeg (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Waarom zijn ze gemapt?
 
 Deze mappings zijn defensief: het BOD-schema staat de velden toe, en andere ERPs of M3-uitbreidingen op maat kunnen ze vullen. Wanneer M3 ze leeg laat, zijn de kolommen eenvoudigweg NULL in DocBits.
+
+### Moet ik `AccountingEntity` (CONO) filteren in de ION-DataFlow, ook al bevat de PurchaseOrder-BOD geen `CONO`?
+
+Ja, in omgevingen waarin hetzelfde M3-bedrijf gekopieerd is (bijvoorbeeld PRD → TST, of twee parallelle tenants). `LocationID` alleen is in zulke setups niet uniek tussen CONOs, dus een BOD afkomstig uit een gekopieerd bedrijf kan botsen met een actief bedrijf. Het aanbevolen patroon is om de inkomende stroom in ION te filteren op de verwachte `AccountingEntity`-waarde voordat de BOD DocBits bereikt.
+
+### Mijn BODs bevatten nooit `UserArea/Property[@name='poeh.stagecd']` — wat gebeurt er?
+
+DocBits valt terug op het standaardelement `Status/Code` op de header. Emissie van `poeh.stagecd` is tenant-specifiek. Als je deze property verwacht maar niet in je BODs vindt, deel dan een voorbeeld-BOD met het DocBits-team zodat we de M3-customisatie kunnen bevestigen die deze produceert.
+
+### Worden `ExtendedBaseAmount` / `ExtendedReportAmount` echt gevuld op de header?
+
+Zodra M3 ze op de header verstuurt, slaat DocBits ze op in dedicated kolommen (`extended_base_amount`, `extended_report_amount`). De vulling hangt af van de M3-valuta-instelling: bedrijven met een basis- of rapportagevaluta die afwijkt van de transactievaluta ontvangen doorgaans beide. Als je geen gevulde waarde kunt reproduceren in je eigen tenant, deel dan een voorbeeld-BOD zodat we de condities samen kunnen verifiëren.

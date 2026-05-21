@@ -28,6 +28,9 @@
 ## End User and Partner Section
 
 * [End User Section](end-user-and-partner-section/end-user-section/README.md)
+  * [Global Quick Search](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
+  * [Customizable Sidebar](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Dashboard](end-user-and-partner-section/end-user-section/dashboard/README.md)
     * [Dashboard Tools](end-user-and-partner-section/end-user-section/dashboard/dashboard-tools.md)
     * [Change Document Columns](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)
@@ -39,6 +42,7 @@
     * [Task Counter](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)
     * [Validated Extracted Fields](end-user-and-partner-section/end-user-section/dashboard/validated-extracted-fields.md)
     * [Document Flow](end-user-and-partner-section/end-user-section/dashboard/document-flow.md)
+    * [Video Carousel](end-user-and-partner-section/end-user-section/dashboard/video-carousel.md)
     * [Best Practice](end-user-and-partner-section/end-user-section/dashboard/best-practice.md)
     * [Troubleshooting](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
     * [Keyboard Shortcuts](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
@@ -77,6 +81,8 @@
   * [Technical Support in DocBits](end-user-and-partner-section/end-user-section/technical-support-in-docbits/README.md)
     * [Create a ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Help Icons](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
+    * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)
+  * [Idea Board](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Course](end-user-and-partner-section/end-user-section/course/README.md)
     * [Introduction](end-user-and-partner-section/end-user-section/course/introduction.md)
     * [Dashboard](end-user-and-partner-section/end-user-section/course/dashboard.md)
@@ -93,6 +99,7 @@
 ## Administration and Setup
 
 * [Settings](administration-and-setup/settings/README.md)
+  * [Getting Around the New Layout](administration-and-setup/settings/ui-redesign-guide.md)
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)
     * [Company Information](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Company Preferences](administration-and-setup/settings/global-settings/company-information/company-preferences.md)

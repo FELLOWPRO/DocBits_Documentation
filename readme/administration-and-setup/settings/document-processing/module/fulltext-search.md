@@ -38,7 +38,7 @@ Use comparison operators on numeric and date fields. Both open-ended comparisons
 ```
 total_amount > 5000
 total_amount <= 10000
-invoice_due_date between 2026-01-01 and 2026-04-30
+invoice_due_date between 2026-01-01, 2026-04-30
 ```
 
 ### Logical operators

@@ -16,7 +16,7 @@ RemitToPartyMaster — Referencia original del mapeo BOD (PDF)
 - **`variationID` protege contra BODs fuera de orden.** M3 puede emitir el mismo registro maestro varias veces en rápida sucesión; la `variationID` entrante debe ser mayor que la almacenada para que un update sea aceptado. Ambos BODs trackean su `variationID` de forma independiente (`variation_id_supplier_bod`, `variation_id_remit_to_party`).
 - **Sin sobrescritura silenciosa.** SupplierPartyMaster y RemitToPartyMaster comparten varios campos (nombre, teléfono, IVA, banco, estado). Cada BOD actualiza sólo los campos que posee y sólo si su `variationID` avanza. Dentro del conjunto compartido, gana el BOD recibido más recientemente (por tipo de BOD).
 - **El multi-banco se controla mediante preferencia.** Comportamiento por defecto: la última `FinancialParty` se escribe en `bank_id` en la cabecera. Con la preferencia `ALLOW_MULTIPLE_SUPPLIER_ACCOUNTS_SYNC` activada, cada entrada `FinancialParty` se persiste en `supplier_account` (IBAN, ID de cuenta, código de moneda, indicador de preferencia).
-- **Recorte opcional del sufijo CONO.** Algunas instalaciones M3 añaden un sufijo de división al número de empresa (p. ej. `100_01`). La preferencia `EXCLUDE_DIVISION_FOR_CUSTOMER_NUMBER` corta los sufijos `_*` para mantener las claves DocBits consistentes.
+- **Recorte opcional del sufijo CONO.** Algunas instalaciones M3 añaden un sufijo de división al número de empresa (p. ej. `100_01`). La preferencia `EXCLUDE_DIVISION_FOR_CUSTOMER_NUMBER` corta los sufijos `_*` para mantener las claves DocBits consistentes. Tenga en cuenta que con el recorte activado, múltiples BODs RemitToPartyMaster por división colapsan en una única clave de coincidencia — y gana el BOD con la `variationID` más alta. Vea la FAQ "*¿Qué ocurre cuando se emite un BOD RemitToPartyMaster por división?*" más abajo.
 
 ## Sync.SupplierPartyMaster
 
@@ -51,7 +51,7 @@ header_mappings = {
 | `variationID` | Atributo del BOD | Se almacena como `variation_id_supplier_bod`. Los BODs entrantes sólo se aceptan si su `variationID` supera la almacenada. Un atributo ausente se trata como `0` (force-update). |
 | `supplierName` | `CIDMAS.IDSUNM` | Nombre de visualización del proveedor. |
 | `phone` | `CIDMAS.PHNO/PHN2/IDTFNO` | Número de teléfono del canal de comunicación `Phone`. |
-| `vatNo` | `CIDMAS.IDVRNO` | Identificador IVA. Se lee de `PartyIDs/TaxID` (sin filtro `@schemeName` en la ruta de ingesta M3). |
+| `vatNo` | `CIDMAS.IDVRNO` | Identificador IVA. Se lee de `PartyIDs/TaxID` (sin filtro `@schemeName` en la ruta de ingesta M3). **PENDIENTE** — cuando M3 emite múltiples elementos `TaxID` con distintos valores de `@schemeName` (p. ej. `VatCode`, `TaxIdentificationNumber`), gana la primera ocurrencia. Está planificado un filtro `schemeName` configurable; comparta un BOD de ejemplo para definir el default correcto. <!-- tracked in DOCB-12313 --> |
 | `paymentTermId` | `CIDVEN.IITEPY` | Identificador de condiciones de pago. |
 | `paymentMethodCode` | — | Código de método de pago, cuando se suministra. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Referencia (usuario M3) y nombre del comprador asignado. |
@@ -86,7 +86,7 @@ header_mappings = {
 | `variationID` | Atributo del BOD | Se almacena como `variation_id_remit_to_party` — trackeada de forma independiente del `variationID` de SupplierPartyMaster. |
 | `supplierName` | `CIDMAS.IDSUNM` | Nombre de visualización de la parte remit-to. Escribe en la columna compartida `supplier_name`. |
 | `phone` | `CIDREF.IRPHNO` | Número de teléfono del bloque de comunicación remit-to. |
-| `vatNo` | `CIDMAS.IDCORG` | Identificador IVA de la parte remit-to. |
+| `vatNo` | `CIDMAS.IDCORG` | Identificador IVA de la parte remit-to. Misma limitación de `@schemeName` que en SupplierPartyMaster — gana la primera ocurrencia. <!-- tracked in DOCB-12313 --> |
 | `bank_id` | `CBANAC.BCBKNO` | Cuenta bancaria remit-to (`FinancialParty[last()]`). Aplica la misma preferencia multi-banco. |
 | `status` | `CIDMAS.IDSTAT` | Estado activo/inactivo de la parte remit-to. |
 
@@ -99,7 +99,7 @@ Ambos BODs llenan la misma fila `supplier_header`. Para los campos que comparten
 3. Si la `variationID` entrante es mayor (o `0`, force-update), actualizar los campos que posee ese BOD. De lo contrario, descartar el BOD.
 4. La `variationID` del otro tipo de BOD no se toca y sus valores previamente almacenados permanecen.
 
-Las filas `supplier_address` y `supplier_account` asociadas al proveedor se eliminan y reinsertan al actualizar, de modo que las tablas secundarias siempre reflejan el BOD más reciente.
+Las filas `supplier_address` y `supplier_account` asociadas al proveedor se eliminan y reinsertan al actualizar, de modo que las tablas secundarias siempre reflejan el BOD más reciente. Esto tiene un efecto colateral cuando M3 emite un BOD RemitToPartyMaster *por división* (algunos tenants lo hacen cuando las conexiones bancarias se mantienen tanto en una división vacía como en divisiones específicas): después de que `EXCLUDE_DIVISION_FOR_CUSTOMER_NUMBER` elimina el sufijo de división, cada BOD por división apunta a la misma clave `(customer_number, supplier_number)`. Gana el BOD con la `variationID` más alta. Si ese BOD "ganador" pertenece a una división sin conexiones bancarias, las cuentas bancarias del BOD anterior se borran en el re-insert.
 
 ## Preguntas frecuentes
 
@@ -117,7 +117,16 @@ Ambas son extensiones UserArea opcionales. Sin la extensión las columnas quedan
 
 ### ¿`vatNo` debe filtrar por `schemeName='TaxIdentificationNumber'`?
 
-La ruta de ingesta BOD de M3 lee actualmente `PartyIDs/TaxID` sin filtro `schemeName`. El filtro se usa en las rutas XSLT de e-factura (Facturae, XRechnung, KSeF), no en la ingesta M3. Si su M3 emite múltiples elementos TaxID con distintos atributos `schemeName`, contáctenos con un BOD de ejemplo antes de confiar en el comportamiento sin filtro.
+La ruta de ingesta BOD de M3 lee actualmente `PartyIDs/TaxID` sin filtro `schemeName`. El filtro se usa en las rutas XSLT de e-factura (Facturae, XRechnung, KSeF), no en la ingesta M3. Cuando M3 emite múltiples elementos `TaxID` con distintos valores de `@schemeName`, gana la primera ocurrencia — lo que puede producir identificadores IVA incorrectos. Está planificado un filtro configurable; un BOD de ejemplo de su tenant nos ayuda a definir el `schemeName` default correcto. <!-- tracked in DOCB-12313 -->
+
+### ¿Qué ocurre cuando se emite un BOD RemitToPartyMaster por división?
+
+Algunos tenants M3 mantienen conexiones bancarias tanto en una división vacía como en divisiones específicas, lo que provoca que M3 emita un BOD RemitToPartyMaster separado por división. La clave de coincidencia en DocBits es `(customer_number = sharedCONO, supplier_number = sharedSUNO)` — la división no forma parte de ella.
+
+- Con `EXCLUDE_DIVISION_FOR_CUSTOMER_NUMBER` activado, los BODs por división colapsan en la misma fila. Gana el BOD con la `variationID` más alta, y las filas `supplier_account` se reinsertan únicamente desde ese BOD. Si el BOD ganador procede de una división sin conexiones bancarias, las cuentas bancarias almacenadas previamente se borran.
+- Con la preferencia desactivada (la CONO mantiene su sufijo de división), los BODs por división apuntan a claves distintas y coexisten.
+
+Si su tenant envía BODs RemitToPartyMaster por división y depende de la lista de bancos consolidada, contáctenos con un ejemplo para planificar una mejora.
 
 ### Quiero sincronizar todas las cuentas bancarias del proveedor, no sólo la última. ¿Cómo?
 

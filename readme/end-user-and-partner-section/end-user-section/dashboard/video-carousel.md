@@ -6,8 +6,6 @@ The Video Carousel on the Prepare Dashboard shows short, narrated product tips w
 
 The Video Carousel appears on the [Prepare Dashboard](README.md) — the page you see when documents are being imported and prepared. On wide screens it sits in the right column next to the progress indicator. On smaller screens it is hidden to keep the layout focused on the progress information.
 
-<figure><img src="../../../.gitbook/assets/video-carousel-prepare-dashboard.png" alt="Video Carousel on Prepare Dashboard"><figcaption><p>The Video Carousel shows short product tips while documents are being prepared.</p></figcaption></figure>
-
 ## How it works
 
 Each visit to the Prepare Dashboard picks six tips at random from the current catalog. Videos autoplay one after the other, muted by default. Each clip runs for roughly seven seconds. The dot indicator below the video fills as the timer counts down, then advances to the next clip.

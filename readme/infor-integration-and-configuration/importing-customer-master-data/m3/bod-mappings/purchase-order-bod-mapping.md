@@ -10,9 +10,9 @@ Original BOD mapping reference (PDF)
 
 - **No currency conversion in DocBits.** Amounts are persisted exactly as M3 delivers them in the BOD, together with their `@currencyID`. Three header amounts are available: `ExtendedAmount` (transaction currency), `ExtendedBaseAmount` (company base currency), `ExtendedReportAmount` (reporting currency).
 - **No unit-of-measure conversion in DocBits.** Quantities are stored with their `@unitCode`. `ReceivedBaseUOMQuantity` is the base-UOM value pre-computed by M3 — DocBits stores it as-is.
-- **Header status is taken from the SXE stage when available.** DocBits reads `UserArea/Property[@name='poeh.stagecd']` (values `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) and uses it as the authoritative header status. The standard `Status/Code` is also stored for reference.
+- **Header status is taken from the SXE stage when available.** DocBits reads `UserArea/Property[@name='poeh.stagecd']` (values `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) and uses it as the authoritative header status. The standard `Status/Code` is also stored as a fallback for BODs in which `poeh.stagecd` is not populated — emission of this UserArea property is tenant-specific.
 - **No automatic partial-quantity status logic.** DocBits does not derive a status from received vs. ordered quantities; the status delivered by M3 is taken 1:1.
-- **`CONO`/`AccountingEntityID` is not part of the PurchaseOrder BOD.** Company-number routing applies to supplier master data (see [Supplier BOD Mapping](supplier-bod-mapping.md)); purchase orders are scoped via `LocationID`.
+- **`CONO`/`AccountingEntityID` is not part of the PurchaseOrder BOD.** Company-number routing applies to supplier master data (see [Supplier BOD Mapping](supplier-bod-mapping.md)); purchase orders are scoped via `LocationID`. Note that `LocationID` is **not globally unique** — when an M3 company (CONO) is copied between environments (for example PRD → TST), the same `LocationID` can exist under multiple CONOs. In those setups, filter the inbound BOD stream on the expected `AccountingEntity` in your ION DataFlow to avoid cross-environment collisions.
 
 ## Header mapping
 
@@ -62,8 +62,8 @@ header_mappings = {
 | `requested_shipment_date` | — | Read from header-level `RequiredDeliveryDateTime` if present. Most M3 setups carry this only on the line; in that case use the line-level `requested_ship_date`. |
 | `total_amount` | `MPHEAD.IAOURR` | Order total in transaction currency. Stored 1:1 from `ExtendedAmount`. |
 | `extended_amount` | `MPHEAD.IAOURR` | Same source as `total_amount`. Kept as a separate raw column for traceability and downstream consumers that expect the canonical BOD path. |
-| `extended_base_amount` | `MPHEAD.IAOUVA` | Order total expressed in the company base currency. Filled by M3 when available. |
-| `extended_report_amount` | `MPHEAD.IAOUVB` | Order total expressed in the company reporting currency. |
+| `extended_base_amount` | `MPHEAD.IAOUVA` | Order total expressed in the company base currency. Filled by M3 when available — population is tenant-specific; if you cannot reproduce a populated value, please share an example BOD. |
+| `extended_report_amount` | `MPHEAD.IAOUVB` | Order total expressed in the company reporting currency. Population is tenant-specific (same as `extended_base_amount`). |
 | `canceled_amount` / `canceled_base_amount` / `canceled_reporting_amount` | — | Cancellation amounts in transaction / base / reporting currency. Populated by M3 only after cancellation events. |
 | `type_code` / `type_description` | — | Purchase order type from `Classification/Codes/Code[@listID='Purchase Order Types']` (and its `Description`). Examples: `P10` Normal PO, `P20` Stock-replenishment PO. Stored for display only — no filtering logic. |
 | `buyer_contact_id` / `buyer_contact_name` | `MPHEAD.IABUYE` / linked user | Buyer assigned to the PO. |
@@ -163,3 +163,15 @@ Both columns exist for historical/UI compatibility. `total_amount` resolves thro
 ### Some fields are documented but always empty (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Why are they mapped?
 
 These mappings are defensive: the BOD schema allows the fields, and other ERPs or custom M3 extensions can populate them. When M3 leaves them empty, the columns are simply NULL in DocBits.
+
+### Should I filter `AccountingEntity` (CONO) in the ION DataFlow even though the PurchaseOrder BOD has no `CONO`?
+
+Yes, in environments where the same M3 company has been copied (for example PRD → TST, or two parallel tenants). `LocationID` alone is not unique across CONOs in those setups, so a BOD originating from a copied company can collide with an active one. The recommended pattern is to filter the inbound flow on the expected `AccountingEntity` value in ION before the BOD reaches DocBits.
+
+### My BODs never contain `UserArea/Property[@name='poeh.stagecd']` — what happens?
+
+DocBits falls back to the standard `Status/Code` element on the header. Emission of `poeh.stagecd` is tenant-specific. If you expect this property but cannot find it in your BODs, share an example BOD with the DocBits team so we can confirm the M3 customisation that produces it.
+
+### Are `ExtendedBaseAmount` / `ExtendedReportAmount` on the header really populated?
+
+Whenever M3 sends them on the header, DocBits stores them in dedicated columns (`extended_base_amount`, `extended_report_amount`). Population depends on the M3 currency setup: companies with a base/reporting currency different from the transaction currency typically receive both. If you cannot reproduce a populated value in your own tenant, please share an example BOD so we can verify the conditions together.

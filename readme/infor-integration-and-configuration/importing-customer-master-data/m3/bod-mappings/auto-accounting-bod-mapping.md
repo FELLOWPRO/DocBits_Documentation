@@ -51,11 +51,11 @@ CodeDefinition — original BOD mapping reference (PDF)
 
 The second argument to XPath's `substring()` is a 1-based start position — it is **not** a `listID` value. M3 emits `@listID` with a namespace-style prefix of 20 characters (for example `lng.m3.dimension.D1`), so `substring(value, 21)` returns the dimension code after that prefix (`D1` in the example). If your M3 emits a different prefix length, the offset has to be adjusted — please share an example BOD before configuring auto-accounting against a non-standard tenant.
 
-The canonical source for the dimension code value is `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. The `substring(@listID, 21)` form is retained here as a fallback for tenants where `DocumentID/ID` is not populated. Aligning the mapping to prefer `DocumentID/ID` and to filter by `CodeDefinitionVariant='Accounting Dimension'` (see next section) is tracked in [DOCB-12315](https://fellowpro.atlassian.net/browse/DOCB-12315).
+The canonical source for the dimension code value is `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. The `substring(@listID, 21)` form is retained here as a fallback for tenants where `DocumentID/ID` is not populated. Aligning the mapping to prefer `DocumentID/ID` and to filter by `CodeDefinitionVariant='Accounting Dimension'` (see next section) is a planned refinement. <!-- tracked in DOCB-12315 -->
 
 ### Which `CodeDefinition` variants does DocBits process?
 
-`Sync.CodeDefinition` is a generic BOD that M3 emits for many different objects (accounting dimensions, status codes, classification lists, …). For the auto-accounting workflow, only entries that carry `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'` are relevant. Until [DOCB-12315](https://fellowpro.atlassian.net/browse/DOCB-12315) ships, the recommendation is to filter on `CodeDefinitionVariant` in your ION DataFlow before the BOD reaches DocBits — otherwise non-dimension `CodeDefinition` BODs are ingested into `m3flexdimension` and clutter the picker in the cost-invoice UI.
+`Sync.CodeDefinition` is a generic BOD that M3 emits for many different objects (accounting dimensions, status codes, classification lists, …). For the auto-accounting workflow, only entries that carry `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'` are relevant. Until the processor enforces this filter natively, the recommendation is to filter on `CodeDefinitionVariant` in your ION DataFlow before the BOD reaches DocBits — otherwise non-dimension `CodeDefinition` BODs are ingested into `m3flexdimension` and clutter the picker in the cost-invoice UI. <!-- tracked in DOCB-12315 -->
 
 ### How the dimensions feed into cost invoices
 

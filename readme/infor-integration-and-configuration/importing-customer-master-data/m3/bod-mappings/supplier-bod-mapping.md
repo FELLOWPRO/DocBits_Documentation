@@ -51,7 +51,7 @@ header_mappings = {
 | `variationID` | BOD attribute | Stored as `variation_id_supplier_bod`. Incoming BODs are accepted only if their `variationID` exceeds the stored value. A missing attribute is treated as `0` (force-update). |
 | `supplierName` | `CIDMAS.IDSUNM` | Supplier display name. |
 | `phone` | `CIDMAS.PHNO/PHN2/IDTFNO` | Phone number from the `Phone` communication channel. |
-| `vatNo` | `CIDMAS.IDVRNO` | VAT identifier. Read from `PartyIDs/TaxID` (no `@schemeName` filter in the M3 ingest path). **OPEN** — when M3 emits multiple `TaxID` elements with different `@schemeName` values (e.g. `VatCode`, `TaxIdentificationNumber`), the first occurrence wins. A configurable `schemeName` filter is tracked in [DOCB-12313](https://fellowpro.atlassian.net/browse/DOCB-12313). |
+| `vatNo` | `CIDMAS.IDVRNO` | VAT identifier. Read from `PartyIDs/TaxID` (no `@schemeName` filter in the M3 ingest path). **OPEN** — when M3 emits multiple `TaxID` elements with different `@schemeName` values (e.g. `VatCode`, `TaxIdentificationNumber`), the first occurrence wins. A configurable `schemeName` filter is planned; share an example BOD so we can pin down the right default. <!-- tracked in DOCB-12313 --> |
 | `paymentTermId` | `CIDVEN.IITEPY` | Payment-terms identifier. |
 | `paymentMethodCode` | — | Payment method code, when supplied. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Assigned buyer (M3 user) reference and display name. |
@@ -86,7 +86,7 @@ header_mappings = {
 | `variationID` | BOD attribute | Stored as `variation_id_remit_to_party` — tracked independently from the SupplierPartyMaster `variationID`. |
 | `supplierName` | `CIDMAS.IDSUNM` | Remit-to display name. Writes to the shared `supplier_name` column. |
 | `phone` | `CIDREF.IRPHNO` | Phone number from the remit-to communication block. |
-| `vatNo` | `CIDMAS.IDCORG` | VAT identifier on the remit-to party. Same `@schemeName` limitation as on the SupplierPartyMaster — see [DOCB-12313](https://fellowpro.atlassian.net/browse/DOCB-12313). |
+| `vatNo` | `CIDMAS.IDCORG` | VAT identifier on the remit-to party. Same `@schemeName` limitation as on the SupplierPartyMaster — first occurrence wins. <!-- tracked in DOCB-12313 --> |
 | `bank_id` | `CBANAC.BCBKNO` | Remit-to bank account (`FinancialParty[last()]`). Same multi-bank preference applies. |
 | `status` | `CIDMAS.IDSTAT` | Remit-to active/inactive status. |
 
@@ -117,7 +117,7 @@ Both are optional UserArea extensions. Without the extension the columns stay NU
 
 ### Should `vatNo` filter for `schemeName='TaxIdentificationNumber'`?
 
-The M3 BOD ingest path currently reads `PartyIDs/TaxID` without a `schemeName` filter. The filter is used in the e-invoice XSLT paths (Facturae, XRechnung, KSeF), not in the M3 ingest. When M3 emits multiple `TaxID` elements with different `@schemeName` values, the first occurrence wins — which can yield incorrect VAT identifiers. A configurable filter is tracked in [DOCB-12313](https://fellowpro.atlassian.net/browse/DOCB-12313); a sample BOD from your tenant helps us nail down the right default `schemeName`.
+The M3 BOD ingest path currently reads `PartyIDs/TaxID` without a `schemeName` filter. The filter is used in the e-invoice XSLT paths (Facturae, XRechnung, KSeF), not in the M3 ingest. When M3 emits multiple `TaxID` elements with different `@schemeName` values, the first occurrence wins — which can yield incorrect VAT identifiers. A configurable filter is planned; a sample BOD from your tenant helps us nail down the right default `schemeName`. <!-- tracked in DOCB-12313 -->
 
 ### What happens when one RemitToPartyMaster BOD is emitted per division?
 

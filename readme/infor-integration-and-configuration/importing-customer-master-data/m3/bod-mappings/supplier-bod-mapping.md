@@ -51,7 +51,7 @@ header_mappings = {
 | `variationID` | BOD-Attribut | Wird in `variation_id_supplier_bod` gespeichert. Eingehende BODs werden nur akzeptiert, wenn ihre `variationID` größer ist als die gespeicherte. Ein fehlendes Attribut wird als `0` interpretiert (Force-Update). |
 | `supplierName` | `CIDMAS.IDSUNM` | Anzeigename des Lieferanten. |
 | `phone` | `CIDMAS.PHNO/PHN2/IDTFNO` | Telefonnummer aus dem `Phone`-Communication-Channel. |
-| `vatNo` | `CIDMAS.IDVRNO` | USt-Identifikation. Wird aus `PartyIDs/TaxID` gelesen (kein `@schemeName`-Filter im M3-Ingest-Pfad). **OFFEN** — wenn M3 mehrere `TaxID`-Elemente mit unterschiedlichen `@schemeName`-Werten emittiert (z. B. `VatCode`, `TaxIdentificationNumber`), gewinnt das erste Vorkommen. Ein konfigurierbarer `schemeName`-Filter wird in [DOCB-12313](https://fellowpro.atlassian.net/browse/DOCB-12313) getrackt. |
+| `vatNo` | `CIDMAS.IDVRNO` | USt-Identifikation. Wird aus `PartyIDs/TaxID` gelesen (kein `@schemeName`-Filter im M3-Ingest-Pfad). **OFFEN** — wenn M3 mehrere `TaxID`-Elemente mit unterschiedlichen `@schemeName`-Werten emittiert (z. B. `VatCode`, `TaxIdentificationNumber`), gewinnt das erste Vorkommen. Ein konfigurierbarer `schemeName`-Filter ist geplant; ein Beispiel-BOD aus Ihrem Mandanten hilft uns, den richtigen Default festzulegen. <!-- tracked in DOCB-12313 --> |
 | `paymentTermId` | `CIDVEN.IITEPY` | Zahlungsbedingungs-Identifikator. |
 | `paymentMethodCode` | — | Zahlungsmethoden-Code, sofern geliefert. |
 | `buyerPersonReferenceId` / `buyerPersonReference` | `CIDVEN.IIBUYE` / `CSYUSR.CRRENM` | Zugeordneter Käufer (M3-User-Referenz und Anzeigename). |
@@ -86,7 +86,7 @@ header_mappings = {
 | `variationID` | BOD-Attribut | Wird in `variation_id_remit_to_party` gespeichert — unabhängig vom SupplierPartyMaster-`variationID` getrackt. |
 | `supplierName` | `CIDMAS.IDSUNM` | Anzeigename der Zahlungsempfänger-Partei. Schreibt in die geteilte `supplier_name`-Spalte. |
 | `phone` | `CIDREF.IRPHNO` | Telefonnummer aus dem RemitTo-Kommunikationsblock. |
-| `vatNo` | `CIDMAS.IDCORG` | USt-Identifikation der Zahlungsempfänger-Partei. Gleiche `@schemeName`-Einschränkung wie beim SupplierPartyMaster — siehe [DOCB-12313](https://fellowpro.atlassian.net/browse/DOCB-12313). |
+| `vatNo` | `CIDMAS.IDCORG` | USt-Identifikation der Zahlungsempfänger-Partei. Gleiche `@schemeName`-Einschränkung wie beim SupplierPartyMaster — das erste Vorkommen gewinnt. <!-- tracked in DOCB-12313 --> |
 | `bank_id` | `CBANAC.BCBKNO` | Zahlungsempfänger-Bankverbindung (`FinancialParty[last()]`). Gleiche Multi-Bank-Preference greift. |
 | `status` | `CIDMAS.IDSTAT` | Aktiv-/Inaktiv-Status der Zahlungsempfänger-Partei. |
 
@@ -117,7 +117,7 @@ Beides sind optionale UserArea-Erweiterungen. Ohne die Erweiterung bleiben die S
 
 ### Soll `vatNo` auf `schemeName='TaxIdentificationNumber'` filtern?
 
-Der M3-BOD-Ingest-Pfad liest aktuell `PartyIDs/TaxID` ohne `schemeName`-Filter. Der Filter wird in den e-Invoice-XSLT-Pfaden (Facturae, XRechnung, KSeF) verwendet, nicht im M3-Ingest. Wenn M3 mehrere `TaxID`-Elemente mit unterschiedlichen `@schemeName`-Werten emittiert, gewinnt das erste Vorkommen — was zu falschen USt-Identifikationen führen kann. Ein konfigurierbarer Filter wird in [DOCB-12313](https://fellowpro.atlassian.net/browse/DOCB-12313) getrackt; ein Beispiel-BOD aus Ihrem Mandanten hilft uns, den richtigen Default-`schemeName` festzulegen.
+Der M3-BOD-Ingest-Pfad liest aktuell `PartyIDs/TaxID` ohne `schemeName`-Filter. Der Filter wird in den e-Invoice-XSLT-Pfaden (Facturae, XRechnung, KSeF) verwendet, nicht im M3-Ingest. Wenn M3 mehrere `TaxID`-Elemente mit unterschiedlichen `@schemeName`-Werten emittiert, gewinnt das erste Vorkommen — was zu falschen USt-Identifikationen führen kann. Ein konfigurierbarer Filter ist geplant; ein Beispiel-BOD aus Ihrem Mandanten hilft uns, den richtigen Default-`schemeName` festzulegen. <!-- tracked in DOCB-12313 -->
 
 ### Was passiert, wenn pro Division ein RemitToPartyMaster-BOD gesendet wird?
 

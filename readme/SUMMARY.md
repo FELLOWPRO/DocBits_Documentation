@@ -25,6 +25,9 @@
 ## Sección de usuarios finales y socios <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sección de usuario final](end-user-and-partner-section/end-user-section/README.md)
+  * [Búsqueda Rápida Global](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
+  * [Barra Lateral Personalizable](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Panel](end-user-and-partner-section/end-user-section/dashboard/README.md)
     * [Herramientas del Panel](end-user-and-partner-section/end-user-section/dashboard/dashboard-tools.md)
     * [Cambiar columnas del documento](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)
@@ -36,6 +39,7 @@
     * [Contador de tareas](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)
     * [Campos extraídos validados](end-user-and-partner-section/end-user-section/dashboard/validated-extracted-fields.md)
     * [Documento-Flujo](end-user-and-partner-section/end-user-section/dashboard/document-flow.md)
+    * [Carrusel de Vídeos](end-user-and-partner-section/end-user-section/dashboard/video-carousel.md)
     * [Mejores prácticas](end-user-and-partner-section/end-user-section/dashboard/mejores-practicas.md)
     * [Solución de problemas](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
     * [Atajos de Teclado](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
@@ -74,6 +78,8 @@
   * [Soporte técnico en DocBits](end-user-and-partner-section/end-user-section/technical-support-in-docbits/README.md)
     * [Crear un ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Iconos de ayuda](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
+    * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)
+  * [Tablero de Ideas](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Curso](end-user-and-partner-section/end-user-section/course/README.md)
     * [Introducción](end-user-and-partner-section/end-user-section/course/introduction.md)
     * [Panel](end-user-and-partner-section/end-user-section/course/dashboard.md)
@@ -90,6 +96,7 @@
 ## Administración y configuración <a href="#administration-and-setup" id="administration-and-setup"></a>
 
 * [Configuración](administration-and-setup/settings/README.md)
+  * [Orientación en el Nuevo Diseño](administration-and-setup/settings/ui-redesign-guide.md)
   * [Configuración Global](administration-and-setup/settings/global-settings/README.md)
     * [Información de la Empresa](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Preferencias de la empresa](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
@@ -234,6 +241,7 @@
   * [Configuración de Registros](administration-and-setup/settings/log-settings/README.md)
     * [Gestión de Tareas](administration-and-setup/settings/log-settings/task-management.md)
     * [Sincronización de Datos](administration-and-setup/settings/log-settings/data-synchronization.md)
+    * [Configuración de Búsqueda de Texto Completo](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
   * [Licencias de API](administration-and-setup/settings/api-licenses.md)
   * [Configuración del Proveedor](administration-and-setup/settings/supplier-setting/README.md)
     * [Configuración General del Proveedor](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)

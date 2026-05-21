@@ -10,9 +10,9 @@ Oryginalna referencja mapowania BOD (PDF)
 
 - **Brak konwersji walut w DocBits.** Kwoty są zapisywane dokładnie tak, jak M3 dostarcza je w BOD, wraz z ich `@currencyID`. Dostępne są trzy kwoty nagłówka: `ExtendedAmount` (waluta transakcji), `ExtendedBaseAmount` (waluta bazowa firmy), `ExtendedReportAmount` (waluta raportowa).
 - **Brak konwersji jednostek miary w DocBits.** Ilości są przechowywane z ich `@unitCode`. `ReceivedBaseUOMQuantity` to wartość w jednostce bazowej wstępnie obliczona przez M3 — DocBits zapisuje ją bez zmian.
-- **Status nagłówka jest pobierany z etapu SXE, gdy jest dostępny.** DocBits czyta `UserArea/Property[@name='poeh.stagecd']` (wartości `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) i używa ich jako miarodajnego statusu nagłówka. Standardowe `Status/Code` jest również przechowywane jako referencja.
+- **Status nagłówka jest pobierany z etapu SXE, gdy jest dostępny.** DocBits czyta `UserArea/Property[@name='poeh.stagecd']` (wartości `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) i używa ich jako miarodajnego statusu nagłówka. Standardowe `Status/Code` jest również przechowywane jako fallback dla BOD-ów, w których `poeh.stagecd` nie jest wypełnione — emisja tej właściwości UserArea zależy od tenanta.
 - **Brak automatycznej logiki statusu dla częściowych ilości.** DocBits nie wyprowadza statusu z ilości otrzymanych vs. zamówionych; status dostarczony przez M3 jest przyjmowany 1:1.
-- **`CONO`/`AccountingEntityID` nie jest częścią BOD PurchaseOrder.** Routing po numerze firmy dotyczy danych głównych dostawców (zob. [Supplier BOD Mapping](supplier-bod-mapping.md)); zamówienia zakupu są przypisywane przez `LocationID`.
+- **`CONO`/`AccountingEntityID` nie jest częścią BOD PurchaseOrder.** Routing po numerze firmy dotyczy danych głównych dostawców (zob. [Supplier BOD Mapping](supplier-bod-mapping.md)); zamówienia zakupu są przypisywane przez `LocationID`. Zauważ, że `LocationID` **nie jest globalnie unikalny** — gdy firma M3 (CONO) jest kopiowana między środowiskami (na przykład PRD → TST), ten sam `LocationID` może istnieć w wielu CONO. W takich konfiguracjach filtruj przychodzący strumień BOD na oczekiwanym `AccountingEntity` w swoim DataFlow ION, aby uniknąć kolizji między środowiskami.
 
 ## Mapowanie Nagłówka
 
@@ -62,8 +62,8 @@ header_mappings = {
 | `requested_shipment_date` | — | Czytane z `RequiredDeliveryDateTime` na poziomie nagłówka, jeśli istnieje. Większość konfiguracji M3 zawiera to pole tylko na poziomie linii; w takim przypadku użyj `requested_ship_date` z linii. |
 | `total_amount` | `MPHEAD.IAOURR` | Suma zamówienia w walucie transakcji. Zapisywana 1:1 z `ExtendedAmount`. |
 | `extended_amount` | `MPHEAD.IAOURR` | To samo źródło co `total_amount`. Zachowane jako osobna surowa kolumna dla śledzenia i konsumentów oczekujących kanonicznej ścieżki BOD. |
-| `extended_base_amount` | `MPHEAD.IAOUVA` | Suma wyrażona w walucie bazowej firmy. Wypełniana przez M3, gdy jest dostępna. |
-| `extended_report_amount` | `MPHEAD.IAOUVB` | Suma wyrażona w walucie raportowej firmy. |
+| `extended_base_amount` | `MPHEAD.IAOUVA` | Suma wyrażona w walucie bazowej firmy. Wypełniana przez M3, gdy jest dostępna — wypełnienie zależy od tenanta; jeśli nie możesz odtworzyć wypełnionej wartości, prześlij przykładowy BOD. |
+| `extended_report_amount` | `MPHEAD.IAOUVB` | Suma wyrażona w walucie raportowej firmy. Wypełnienie zależy od tenanta (tak jak `extended_base_amount`). |
 | `canceled_amount` / `canceled_base_amount` / `canceled_reporting_amount` | — | Kwoty anulowania w walucie transakcji / bazowej / raportowej. Wypełniane przez M3 dopiero po zdarzeniach anulowania. |
 | `type_code` / `type_description` | — | Typ zamówienia zakupu z `Classification/Codes/Code[@listID='Purchase Order Types']` (oraz jego `Description`). Przykłady: `P10` zwykłe PO, `P20` PO uzupełnienia magazynu. Zapisywane tylko do wyświetlania — bez logiki filtrowania. |
 | `buyer_contact_id` / `buyer_contact_name` | `MPHEAD.IABUYE` / powiązany użytkownik | Kupiec przypisany do PO. |
@@ -163,3 +163,15 @@ Obie kolumny istnieją ze względów historycznych/UI. `total_amount` jest rozwi
 ### Niektóre pola są udokumentowane, ale zawsze puste (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Dlaczego są zmapowane?
 
 Te mapowania są defensywne: schemat BOD pozwala na te pola, a inne ERP-y lub niestandardowe rozszerzenia M3 mogą je wypełniać. Gdy M3 pozostawia je puste, kolumny w DocBits są po prostu NULL.
+
+### Czy powinienem filtrować `AccountingEntity` (CONO) w DataFlow ION, nawet jeśli BOD PurchaseOrder nie zawiera `CONO`?
+
+Tak, w środowiskach, w których ta sama firma M3 została skopiowana (na przykład PRD → TST lub dwóch równoległych tenantów). Sam `LocationID` nie jest unikalny między CONO w takich konfiguracjach, więc BOD pochodzący ze skopiowanej firmy może kolidować z aktywną. Zalecanym wzorcem jest filtrowanie strumienia przychodzącego na oczekiwanej wartości `AccountingEntity` w ION, zanim BOD dotrze do DocBits.
+
+### Moje BOD-y nigdy nie zawierają `UserArea/Property[@name='poeh.stagecd']` — co się dzieje?
+
+DocBits przechodzi do standardowego elementu `Status/Code` w nagłówku. Emisja `poeh.stagecd` zależy od tenanta. Jeśli oczekujesz tej właściwości, ale nie znajdujesz jej w swoich BOD-ach, prześlij przykładowy BOD zespołowi DocBits, abyśmy mogli potwierdzić personalizację M3, która ją produkuje.
+
+### Czy `ExtendedBaseAmount` / `ExtendedReportAmount` są naprawdę wypełniane na nagłówku?
+
+Gdy M3 wysyła je na nagłówku, DocBits przechowuje je w dedykowanych kolumnach (`extended_base_amount`, `extended_report_amount`). Wypełnienie zależy od konfiguracji walut M3: firmy z walutą bazową/raportową inną niż waluta transakcji zwykle otrzymują obie. Jeśli nie możesz odtworzyć wypełnionej wartości we własnym tenancie, prześlij przykładowy BOD, abyśmy mogli wspólnie zweryfikować warunki.

@@ -49,7 +49,13 @@ CodeDefinition — Oryginalna referencja mapowania BOD (PDF)
 
 ### O wyrażeniu `substring(..., 21)`
 
-Drugi argument funkcji XPath `substring()` to pozycja początkowa w bazie 1. M3 emituje `@listID` z prefiksem typu przestrzeń nazw o długości 20 znaków (na przykład `lng.m3.dimension.D1`), więc `substring(value, 21)` zwraca kod wymiaru po tym prefiksie (`D1` w przykładzie). Jeśli twój M3 emituje prefiks o innej długości, offset musi zostać dostosowany — prosimy o przykładowy BOD przed konfiguracją Auto-Accounting dla niestandardowego tenanta.
+Drugi argument funkcji XPath `substring()` to pozycja początkowa w bazie 1 — **nie jest** wartością `listID`. M3 emituje `@listID` z prefiksem typu przestrzeń nazw o długości 20 znaków (na przykład `lng.m3.dimension.D1`), więc `substring(value, 21)` zwraca kod wymiaru po tym prefiksie (`D1` w przykładzie). Jeśli twój M3 emituje prefiks o innej długości, offset musi zostać dostosowany — prosimy o przykładowy BOD przed konfiguracją Auto-Accounting dla niestandardowego tenanta.
+
+Kanonicznym źródłem wartości kodu wymiaru jest `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. Forma `substring(@listID, 21)` jest tu zachowana jako fallback dla tenantów, w których `DocumentID/ID` nie jest wypełnione. Dostosowanie mapowania, by preferować `DocumentID/ID` i filtrować po `CodeDefinitionVariant='Accounting Dimension'` (zob. następną sekcję), to planowane ulepszenie. <!-- tracked in DOCB-12315 -->
+
+### Które warianty `CodeDefinition` przetwarza DocBits?
+
+`Sync.CodeDefinition` to generyczny BOD, który M3 emituje dla wielu różnych obiektów (wymiarów księgowych, kodów statusu, list klasyfikacji …). Dla workflow Auto-Accounting istotne są tylko wpisy z `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'`. Dopóki processor nie wymusza natywnie tego filtra, zalecamy filtrowanie po `CodeDefinitionVariant` w twoim DataFlow ION, zanim BOD dotrze do DocBits — w przeciwnym razie BOD-y `CodeDefinition` nie-wymiarowe są pobierane do `m3flexdimension` i zaśmiecają picker w UI faktur kosztowych. <!-- tracked in DOCB-12315 -->
 
 ### Jak wymiary trafiają do faktur kosztowych
 

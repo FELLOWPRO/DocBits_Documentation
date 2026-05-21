@@ -25,6 +25,9 @@
 ## Endnutzer und Partner Bereich <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Endbenutzer Abschnitt](end-user-section/README.md)
+  * [Globale Schnellsuche](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
+  * [Anpassbare Seitenleiste](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Dashboard](end-user-section/dashboard/README.md)
     * [Dashboard-Tools](end-user-section/dashboard/dashboard-tools.md)
     * [Dokumentspalten ändern](end-user-section/dashboard/change-document-columns.md)
@@ -36,6 +39,7 @@
     * [Aufgabenzähler](end-user-section/dashboard/task-counter.md)
     * [Validierte extrahierte Felder](end-user-section/dashboard/validated-extracted-fields.md)
     * [Dokument-Flow](end-user-and-partner-section/end-user-section/dashboard/document-flow.md)
+    * [Video-Karussell](end-user-and-partner-section/end-user-section/dashboard/video-carousel.md)
     * [Best Practice](end-user-section/dashboard/best-practices.md)
     * [Fehlerbehebung](end-user-section/dashboard/troubleshooting.md)
     * [Tastenkombinationen](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
@@ -74,6 +78,8 @@
   * [Technischer Support in DocBits](end-user-section/technical-support-in-docbits/README.md)
     * [Ticket erstellen](end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Hilfe-Symbole](end-user-section/technical-support-in-docbits/help-icons.md)
+    * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)
+  * [Ideenboard](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Kurs](end-user-section/course/README.md)
     * [Einführung](end-user-section/course/introduction.md)
     * [Dashboard](end-user-section/course/dashboard.md)
@@ -90,6 +96,7 @@
 ## Administration und Einrichtung <a href="#administration-and-setup" id="administration-and-setup"></a>
 
 * [Einstellungen](admin-section/settings/README.md)
+  * [Orientierung im neuen Layout](administration-and-setup/settings/ui-redesign-guide.md)
   * [Globale Einstellungen](admin-section/settings/global-settings/README.md)
     * [Firmeninformationen](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Unternehmenspräferenzen](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
@@ -237,6 +244,7 @@
   * [Log Einstellungen](administration-and-setup/settings/log-settings/README.md)
     * [Aufgabenverwaltung](administration-and-setup/settings/log-settings/task-management.md)
     * [Daten Synchronization](administration-and-setup/settings/log-settings/data-synchronization.md)
+    * [Volltextsuche-Einstellungen](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
   * [API Lizenzen](administration-and-setup/settings/api-licenses.md)
   * [Lieferanten Einstellungen](administration-and-setup/settings/supplier-setting/README.md)
     * [Generelle Lieferanten Einstellungen](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)

@@ -49,7 +49,13 @@ CodeDefinition — Original BOD Mapping Referenz (PDF)
 
 ### Zum Ausdruck `substring(..., 21)`
 
-Das zweite Argument der XPath-Funktion `substring()` ist eine 1-basierte Startposition. M3 emittiert `@listID` mit einem 20 Zeichen langen Namespace-Präfix (zum Beispiel `lng.m3.dimension.D1`), sodass `substring(value, 21)` den Dimensions-Code nach dem Präfix zurückliefert (`D1` im Beispiel). Wenn Ihr M3 einen anderen Präfix verwendet, muss der Offset angepasst werden — kontaktieren Sie uns bitte mit einem Beispiel-BOD, bevor Sie Auto-Accounting gegen einen nicht-standardmäßigen Mandanten konfigurieren.
+Das zweite Argument der XPath-Funktion `substring()` ist eine 1-basierte Startposition — es ist **kein** `listID`-Wert. M3 emittiert `@listID` mit einem 20 Zeichen langen Namespace-Präfix (zum Beispiel `lng.m3.dimension.D1`), sodass `substring(value, 21)` den Dimensions-Code nach dem Präfix zurückliefert (`D1` im Beispiel). Wenn Ihr M3 einen anderen Präfix verwendet, muss der Offset angepasst werden — kontaktieren Sie uns bitte mit einem Beispiel-BOD, bevor Sie Auto-Accounting gegen einen nicht-standardmäßigen Mandanten konfigurieren.
+
+Die kanonische Quelle für den Dimensions-Code ist `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. Die `substring(@listID, 21)`-Form bleibt hier als Fallback für Mandanten erhalten, in denen `DocumentID/ID` nicht befüllt ist. Die Umstellung des Mappings auf `DocumentID/ID` als bevorzugte Quelle sowie die Filterung auf `CodeDefinitionVariant='Accounting Dimension'` (siehe nächster Abschnitt) wird in [DOCB-12315](https://fellowpro.atlassian.net/browse/DOCB-12315) getrackt.
+
+### Welche `CodeDefinition`-Varianten verarbeitet DocBits?
+
+`Sync.CodeDefinition` ist ein generischer BOD, den M3 für viele unterschiedliche Objekte emittiert (Buchhaltungsdimensionen, Status-Codes, Klassifikationslisten …). Für den Auto-Accounting-Workflow sind nur Einträge mit `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'` relevant. Bis [DOCB-12315](https://fellowpro.atlassian.net/browse/DOCB-12315) ausgeliefert ist, empfehlen wir, im ION-DataFlow auf `CodeDefinitionVariant` zu filtern, bevor der BOD DocBits erreicht — andernfalls werden Nicht-Dimensions-`CodeDefinition`-BODs in `m3flexdimension` ingestiert und überfrachten den Picker in der Kostenrechnungs-UI.
 
 ### Wie die Dimensionen in Kostenrechnungen einfließen
 

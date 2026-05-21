@@ -10,9 +10,9 @@ Original BOD Mapping Referenz (PDF)
 
 - **Keine Währungs-Konvertierung in DocBits.** Beträge werden genau so persistiert, wie M3 sie im BOD liefert, zusammen mit ihrer `@currencyID`. Drei Header-Beträge stehen zur Verfügung: `ExtendedAmount` (Transaktionswährung), `ExtendedBaseAmount` (Basiswährung des Mandanten), `ExtendedReportAmount` (Reportwährung).
 - **Keine Maßeinheiten-Konvertierung in DocBits.** Mengen werden mit ihrer `@unitCode` gespeichert. `ReceivedBaseUOMQuantity` ist der von M3 vorberechnete Basis-UoM-Wert — DocBits speichert ihn unverändert.
-- **Der Header-Status wird aus der SXE-Stage übernommen, sofern verfügbar.** DocBits liest `UserArea/Property[@name='poeh.stagecd']` (Werte `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) und nutzt diesen Wert als maßgeblichen Header-Status. Das Standard-Feld `Status/Code` wird zusätzlich zur Referenz gespeichert.
+- **Der Header-Status wird aus der SXE-Stage übernommen, sofern verfügbar.** DocBits liest `UserArea/Property[@name='poeh.stagecd']` (Werte `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) und nutzt diesen Wert als maßgeblichen Header-Status. Das Standard-Feld `Status/Code` wird als Fallback gespeichert für BODs, in denen `poeh.stagecd` nicht befüllt ist — die Belegung dieser UserArea-Property ist mandantenspezifisch.
 - **Keine automatische Teilmengen-Status-Logik.** DocBits leitet keinen Status aus erhaltener vs. bestellter Menge ab; der von M3 gelieferte Status wird 1:1 übernommen.
-- **`CONO`/`AccountingEntityID` ist nicht Bestandteil des PurchaseOrder-BODs.** Die Mandanten-Zuordnung über die Company-Number gilt für Stammdaten (siehe [Supplier BOD Mapping](supplier-bod-mapping.md)); Bestellungen werden über `LocationID` zugeordnet.
+- **`CONO`/`AccountingEntityID` ist nicht Bestandteil des PurchaseOrder-BODs.** Die Mandanten-Zuordnung über die Company-Number gilt für Stammdaten (siehe [Supplier BOD Mapping](supplier-bod-mapping.md)); Bestellungen werden über `LocationID` zugeordnet. Beachten Sie, dass `LocationID` **nicht global eindeutig** ist — wenn ein M3-Mandant (CONO) zwischen Umgebungen kopiert wird (zum Beispiel PRD → TST), kann dieselbe `LocationID` unter mehreren CONOs existieren. In solchen Setups sollten Sie den eingehenden BOD-Strom im ION-DataFlow auf die erwartete `AccountingEntity` filtern, um Cross-Environment-Kollisionen zu vermeiden.
 
 ## Header-Mapping
 
@@ -62,8 +62,8 @@ header_mappings = {
 | `requested_shipment_date` | — | Lesen aus dem Header-`RequiredDeliveryDateTime`, falls vorhanden. Die meisten M3-Installationen führen dieses Feld nur auf Zeilenebene; in diesem Fall ist das zeilenbasierte `requested_ship_date` zu verwenden. |
 | `total_amount` | `MPHEAD.IAOURR` | Bestellsumme in Transaktionswährung. 1:1 aus `ExtendedAmount` übernommen. |
 | `extended_amount` | `MPHEAD.IAOURR` | Gleiche Quelle wie `total_amount`. Wird als separate Rohspalte erhalten — zur Nachvollziehbarkeit und für Downstream-Konsumenten, die den kanonischen BOD-Pfad erwarten. |
-| `extended_base_amount` | `MPHEAD.IAOUVA` | Bestellsumme in der Basiswährung des Mandanten. Von M3 geliefert, sofern vorhanden. |
-| `extended_report_amount` | `MPHEAD.IAOUVB` | Bestellsumme in der Reportwährung des Mandanten. |
+| `extended_base_amount` | `MPHEAD.IAOUVA` | Bestellsumme in der Basiswährung des Mandanten. Von M3 geliefert, sofern vorhanden — die Belegung ist mandantenspezifisch; wenn Sie keinen befüllten Wert reproduzieren können, teilen Sie uns bitte einen Beispiel-BOD mit. |
+| `extended_report_amount` | `MPHEAD.IAOUVB` | Bestellsumme in der Reportwährung des Mandanten. Belegung mandantenspezifisch (analog zu `extended_base_amount`). |
 | `canceled_amount` / `canceled_base_amount` / `canceled_reporting_amount` | — | Stornierte Beträge in Transaktions-/Basis-/Reportwährung. Wird von M3 nur nach Storno-Ereignissen befüllt. |
 | `type_code` / `type_description` | — | Bestellart aus `Classification/Codes/Code[@listID='Purchase Order Types']` (und deren `Description`). Beispiele: `P10` Normale Bestellung, `P20` Lagerauffüllbestellung. Wird nur zur Anzeige gespeichert — keine Filterlogik. |
 | `buyer_contact_id` / `buyer_contact_name` | `MPHEAD.IABUYE` / verknüpfter User | Der für die PO zuständige Käufer. |
@@ -163,3 +163,15 @@ Beide Spalten existieren aus historischen/UI-Kompatibilitätsgründen. `total_am
 ### Einige Felder sind dokumentiert, aber immer leer (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Warum sind sie gemappt?
 
 Die Mappings sind defensiv: das BOD-Schema erlaubt diese Felder, und andere ERPs oder individuelle M3-Erweiterungen können sie befüllen. Wenn M3 sie leer lässt, sind die Spalten in DocBits einfach NULL.
+
+### Soll ich `AccountingEntity` (CONO) im ION-DataFlow filtern, obwohl der PurchaseOrder-BOD keine `CONO` enthält?
+
+Ja, in Umgebungen, in denen derselbe M3-Mandant kopiert wurde (zum Beispiel PRD → TST, oder zwei parallele Mandanten). `LocationID` ist in solchen Setups nicht eindeutig über CONOs hinweg, sodass ein BOD aus einer kopierten Company mit einem aktiven kollidieren kann. Empfohlenes Vorgehen: den eingehenden Flow auf die erwartete `AccountingEntity` filtern, bevor der BOD DocBits erreicht.
+
+### Meine BODs enthalten nie `UserArea/Property[@name='poeh.stagecd']` — was passiert?
+
+DocBits fällt auf das Standard-Element `Status/Code` im Header zurück. Die Belegung von `poeh.stagecd` ist mandantenspezifisch. Wenn Sie diese Property erwarten, aber in Ihren BODs nicht finden, teilen Sie uns einen Beispiel-BOD mit — wir prüfen die M3-Customizing-Einstellung, die diese Property emittiert.
+
+### Werden `ExtendedBaseAmount` / `ExtendedReportAmount` auf Header-Ebene tatsächlich befüllt?
+
+Sobald M3 sie auf dem Header sendet, speichert DocBits sie in dedizierten Spalten (`extended_base_amount`, `extended_report_amount`). Die Belegung hängt vom M3-Währungs-Setup ab: Mandanten mit abweichender Basis- oder Reportwährung erhalten typischerweise beide Werte. Wenn Sie in Ihrem Mandanten keinen befüllten Wert reproduzieren können, teilen Sie uns einen Beispiel-BOD mit, sodass wir die Voraussetzungen gemeinsam verifizieren können.

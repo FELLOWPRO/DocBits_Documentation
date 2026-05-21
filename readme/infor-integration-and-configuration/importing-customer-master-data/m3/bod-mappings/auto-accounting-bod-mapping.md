@@ -49,7 +49,13 @@ CodeDefinition — Referência original do mapeamento BOD (PDF)
 
 ### Sobre a expressão `substring(..., 21)`
 
-O segundo argumento da função XPath `substring()` é uma posição inicial baseada em 1. O M3 emite `@listID` com um prefixo tipo namespace de 20 caracteres (por exemplo `lng.m3.dimension.D1`), pelo que `substring(value, 21)` devolve o código da dimensão após esse prefixo (`D1` no exemplo). Se o seu M3 emitir um prefixo de comprimento diferente, o offset tem de ser ajustado — contacte-nos com um BOD de exemplo antes de configurar Auto-Accounting num tenant não padrão.
+O segundo argumento da função XPath `substring()` é uma posição inicial baseada em 1 — **não é** um valor `listID`. O M3 emite `@listID` com um prefixo tipo namespace de 20 caracteres (por exemplo `lng.m3.dimension.D1`), pelo que `substring(value, 21)` devolve o código da dimensão após esse prefixo (`D1` no exemplo). Se o seu M3 emitir um prefixo de comprimento diferente, o offset tem de ser ajustado — contacte-nos com um BOD de exemplo antes de configurar Auto-Accounting num tenant não padrão.
+
+A fonte canónica do valor do código da dimensão é `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. A forma `substring(@listID, 21)` é mantida aqui como fallback para tenants em que `DocumentID/ID` não esteja preenchido. Alinhar o mapeamento para preferir `DocumentID/ID` e filtrar por `CodeDefinitionVariant='Accounting Dimension'` (ver próxima secção) é uma melhoria planeada. <!-- tracked in DOCB-12315 -->
+
+### Que variantes de `CodeDefinition` o DocBits processa?
+
+`Sync.CodeDefinition` é um BOD genérico que o M3 emite para muitos objetos diferentes (dimensões contabilísticas, códigos de estado, listas de classificação …). Para o fluxo de Auto-Accounting, apenas são relevantes as entradas que apresentem `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'`. Até o processor aplicar este filtro nativamente, recomendamos filtrar por `CodeDefinitionVariant` no seu DataFlow ION antes de o BOD chegar ao DocBits — caso contrário, BODs `CodeDefinition` não-dimensão são ingeridos em `m3flexdimension` e atravancam o seletor na UI das faturas de custo. <!-- tracked in DOCB-12315 -->
 
 ### Como as dimensões alimentam as faturas de custo
 

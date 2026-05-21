@@ -1,57 +1,52 @@
-# UI Redesign Guide
+# Getting Around the New Layout
 
-Release R1.0 23/24 ships a refreshed user interface across DocBits — a redesigned sign-in, a collapsible sidebar, reorganised settings, anchor-based navigation, and inline help. This page walks through what's different and how to use the new affordances.
+This page is a quick orientation to the current DocBits layout — where to find things, how the navigation works, and how to use the new help affordances. Use it as a reference if a screen looks different from what you remember or if you can't immediately find a setting.
 
-## Redesigned login and authentication
+## The sidebar
 
-The sign-in screen, password reset, and SSO entry points have been reworked to match the new design system.
+The main sidebar lists every section of DocBits you have permission to use. Two ways to control it:
 
-<figure><img src="../../.gitbook/assets/ui-redesign-login.png" alt="Redesigned login screen"><figcaption><p>The new sign-in screen — clearer hierarchy, brand colour applied to the action button.</p></figcaption></figure>
+* **Mini mode** — click the toggle at the top of the sidebar to collapse it to icons only. Hover any icon to read its label. The sidebar remembers whether you last had it expanded or collapsed.
+* **Customize** — at the bottom of the expanded sidebar there is a **Customize** entry. Use it to reorder the menu, hide entries you don't use, or pin the ones you open most often.
 
-What changed:
+For the full walkthrough of reordering, hiding, and pinning, see [Customizable Sidebar](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
 
-* A single primary action ("Sign in") is now the focus of the page.
-* SSO providers (Microsoft 365, Google, Infor OS) appear as labelled buttons under the email field.
-* Password reset and "Need help signing in?" links are grouped at the bottom for visual calm.
-* Error messages appear directly under the input that triggered them, instead of as a banner.
+## Where settings live now
 
-The flow is unchanged — only the layout and styling were updated.
+The Settings menu is grouped by intent rather than by data model. If you remember a setting but can't find it, try the matching group below:
 
-## Collapsible sidebar
+| Looking for… | Open Settings → |
+|---|---|
+| Your company name, logo, time zone, app colour | Company & Users → Company Information |
+| Users, groups, permissions | Company & Users → Groups, Users and Permissions |
+| API keys, ERP connections, export configurations | Integration |
+| Document types, fields, scripts, EDI, model training | Document Types |
+| OCR settings, decision trees, list of values, rule manager | Document Processing |
+| Access audit, analytics, full-text index, event log | Logging & Search |
+| Supplier portal, Watchdog | Setup |
 
-The main sidebar can now be collapsed to an icon-only mini mode, freeing up horizontal space on the current screen.
+Page positions inside each group are arranged with the most-used pages near the top.
 
-* Click the toggle at the top of the sidebar to switch between expanded and mini mode.
-* In mini mode, hover an icon to see its label.
-* Mini mode is remembered per browser, so the next visit opens in the same state.
+## Long settings pages — anchor navigation
 
-For deeper customisation of the sidebar itself — reorder, hide, pin items — see [Customizable Sidebar](../../end-user-and-partner-section/end-user-section/customizable-sidebar.md).
+Settings pages that contain many sections (for example Global Settings or a Document Type configuration) show a list of anchor links in the page header. Click an anchor to jump to that section. The URL updates as you scroll, so the link to a specific section can be copied or bookmarked.
 
-## Organised settings subcategories
+## Finding documentation while you work — help icons
 
-Settings has been regrouped into clearer subcategories so related options sit together. Top-level groups now reflect how administrators actually work:
+Most settings pages, dialogs, and tooling screens now show a small **?** icon in the header.
 
-* **Company & Users** — company details, users, groups, permissions.
-* **Document Processing** — modules, OCR, decision trees, rules.
-* **Document Types** — document type definitions and per-type settings (scripts, EDI, fields, model training).
-* **Integration** — API keys, exports, ERP connections.
-* **Logging & Search** — access audit, analytics, fulltext index.
-* **Setup** — supplier portal, watchdog.
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Help icon in a page header"><figcaption><p>The help icon opens the matching documentation page in a new tab.</p></figcaption></figure>
 
-Page positions inside each group have been adjusted to put the most frequently used pages near the top.
+Clicking the icon opens the matching page on `docs.docbits.com` in a new tab — no need to search the docs for the right page. The icon respects your selected UI language and opens the localised documentation when one is published; otherwise it falls back to English.
 
-## Anchor-based navigation inside long pages
+## Signing in
 
-Settings pages with many sections (such as Global Settings or Document Type configuration) now expose anchor links in the page header. Click an anchor to jump to that section and the URL updates so the link is shareable.
+The sign-in screen, password reset, and SSO entry points (Microsoft 365, Google, Infor OS) share the same layout as the rest of DocBits. Errors appear directly under the field that triggered them; the password reset and help links live at the bottom of the form. The flow is the same as before — only the layout changed.
 
-The current section is highlighted in the anchor list as you scroll, making it easier to keep your place on long pages.
+## If something feels missing
 
-## Context help panels
+If a page or setting seems to have moved and you can't find it:
 
-A small help icon now appears in the header of most settings pages and feature dialogs. Clicking it opens the matching page on the [DocBits documentation site](https://docs.docbits.com/) in a new tab — no more searching the docs for the right page.
-
-<mark>The help icon is locale-aware. If your user language is German, French, Spanish, Dutch, Italian, or Chinese, the icon opens the matching translated page on the docs site. Languages without a published translation fall back to English.</mark>
-
-## What hasn't changed
-
-The redesign is visual and navigational — no settings, fields, or processing behaviour have changed. Existing URLs continue to work, so bookmarked links and external integrations are not affected.
+1. Open [Global Quick Search](../../end-user-and-partner-section/end-user-section/global-quick-search.md) with <kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>K</kbd> and type the feature name — Quick Search indexes every page across the app.
+2. Open the [Sitemap](../../end-user-and-partner-section/end-user-section/sitemap.md) at `/sitemap` for the full, filterable catalog.
+3. Use the help icon on the closest screen to jump into the documentation.

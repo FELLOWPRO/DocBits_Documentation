@@ -1,18 +1,16 @@
 # Debug Collector
 
-The Debug Collector captures a complete snapshot of your DocBits session — network activity, errors, browser environment, and performance metrics — and packages it as a single HTML report. Attach the report to a support ticket and we have everything needed to reproduce what you saw.
+The Debug Collector captures a complete snapshot of your DocBits session — network activity, errors, browser environment, and performance metrics — packages it as a JSON report, and (optionally) opens a support ticket directly from the same dialog.
 
 ## How to access
 
-Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on Windows and Linux, or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on macOS. The Performance Analysis dialog opens immediately.
+Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on Windows and Linux, or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> on macOS. The Performance Report dialog opens immediately.
 
-<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Debug Collector dialog"><figcaption><p>The Performance Analysis dialog shows the last collected snapshot.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/debug-collector-dialog.png" alt="Debug Collector dialog"><figcaption><p>The Performance Report dialog shows the captured snapshot and a built-in support ticket form.</p></figcaption></figure>
 
 ## What gets captured
 
-A snapshot contains everything support needs to investigate an issue:
-
-* **API calls** — the last 60 REST and WebSocket calls, with timing, status codes, and the URLs that were hit. Long-running calls (over two seconds) are flagged separately.
+* **API calls** — the last 60 REST and WebSocket calls, with timing, status codes, and the URLs that were hit. Calls slower than two seconds are flagged separately.
 * **Errors** — recent JavaScript errors and unhandled promise rejections from the browser console.
 * **Console logs** — the most recent log messages from the application.
 * **Environment** — browser version, operating system, screen size, and active feature flags.
@@ -20,20 +18,20 @@ A snapshot contains everything support needs to investigate an issue:
 * **Performance metrics** — page load timings (LCP, FCP), memory usage, and DOM size.
 * **Trace IDs** — correlation IDs that link the snapshot to backend log entries.
 
-## Generating a snapshot
+## Creating a support ticket from the dialog
 
-Open the dialog with the shortcut and review the data. Use the **Generate report** button to produce an HTML file you can save locally or attach to a support ticket. The report opens in a new tab and can be downloaded with the browser's Save As dialog.
+You don't need to download or attach anything manually — the dialog has a **Create Support Ticket** form built in.
 
-## Submitting to support
+1. Fill in your email, leave the suggested subject or replace it, pick a priority, and add any notes that explain what you were doing when the issue happened.
+2. Click **Send Report**. The JSON snapshot is attached and the ticket is created in one step.
 
-The Debug Collector report includes trace IDs (Faro, support_trace_id, search_trace_id) that link your snapshot to the backend. When you open a ticket, attach the HTML report — our support team can correlate it with server-side logs without asking you for additional information.
+That's it — support receives the ticket with all the data needed to reproduce.
+
+If you want a local copy of the snapshot, use **Copy Debug Data** to copy the JSON to your clipboard, or your browser's Save As to keep the report as a `.json` file.
 
 ## Privacy and data handling
 
-The Debug Collector is designed to be safe to attach to a ticket:
+* Authentication tokens and sensitive headers are redacted from captured API calls before the snapshot is built.
+* Nothing leaves your browser until you press **Send Report** — the shortcut only opens the dialog.
 
-* Authentication tokens and sensitive headers are redacted from captured API calls.
-* The snapshot is local until you explicitly export or share it.
-* No data is sent automatically — pressing the shortcut only shows you the dialog.
-
-<mark>Review the snapshot before sharing if you handled documents containing customer data. Any document IDs visible in URLs will appear in the report.</mark>
+<mark>Review the snapshot before sending if you were handling documents containing customer data. Document IDs visible in URLs will appear in the report.</mark>

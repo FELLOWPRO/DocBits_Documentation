@@ -25,6 +25,9 @@
 ## Eindgebruiker en partners <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Eindgebruikerssectie](end-user-and-partner-section/end-user-section/README.md)
+  * [Globale Snelzoek](end-user-and-partner-section/end-user-section/global-quick-search.md)
+  * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
+  * [Aanpasbare Zijbalk](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Dashboard](end-user-and-partner-section/end-user-section/dashboard/README.md)
     * [Dashboard-hulpmiddelen](end-user-and-partner-section/end-user-section/dashboard/dashboard-tools.md)
     * [Wijzig Document Kolommen](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)
@@ -36,6 +39,7 @@
     * [Taakenteller](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)
     * [Gevalideerde Geëxtraheerde Velden](end-user-and-partner-section/end-user-section/dashboard/validated-extracted-fields.md)
     * [Documentflow](end-user-and-partner-section/end-user-section/dashboard/document-flow.md)
+    * [Videocarrousel](end-user-and-partner-section/end-user-section/dashboard/video-carousel.md)
     * [Beste Praktijken](end-user-and-partner-section/end-user-section/dashboard/best-practice.md)
     * [Problemen oplossen](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)
     * [Toetsenbord Sneltoetsen](end-user-and-partner-section/end-user-section/dashboard/keyboard-shortcuts.md)
@@ -74,6 +78,8 @@
   * [Technische Ondersteuning in DocBits](end-user-and-partner-section/end-user-section/technical-support-in-docbits/README.md)
     * [Maak een ticket aan](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Help-pictogrammen](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
+    * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)
+  * [Ideeënbord](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Cursus](end-user-and-partner-section/end-user-section/course/README.md)
     * [Introductie](end-user-and-partner-section/end-user-section/course/introduction.md)
     * [Dashboard](end-user-and-partner-section/end-user-section/course/dashboard.md)
@@ -90,6 +96,7 @@
 ## Administratie en instelling <a href="#administration-and-setup" id="administration-and-setup"></a>
 
 * [Instellingen](administration-and-setup/settings/README.md)
+  * [Wegwijs in de Nieuwe Indeling](administration-and-setup/settings/ui-redesign-guide.md)
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)
     * [Bedrijfsinformatie](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Bedrijfsvoorkeuren](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
@@ -329,6 +336,7 @@
   * [Loginstellingen](administration-and-setup/settings/log-settings/README.md)
     * [Taakbeheer](administration-and-setup/settings/log-settings/task-management.md)
     * [Gegevenssynchronisatie](administration-and-setup/settings/log-settings/data-synchronization.md)
+    * [Volledige-Tekstzoek-Instellingen](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
   * [Leverancier Instelling](administration-and-setup/settings/supplier-setting/README.md)
     * [Leverancier Algemene Instellingen](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
     * [E-mail Sjablonen Bewerken](administration-and-setup/settings/supplier-setting/editing-email-templates.md)

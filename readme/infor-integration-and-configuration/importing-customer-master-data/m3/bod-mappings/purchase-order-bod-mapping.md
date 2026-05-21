@@ -10,9 +10,9 @@ Référence d'origine du mappage BOD (PDF)
 
 - **Aucune conversion de devise dans DocBits.** Les montants sont persistés exactement tels que M3 les délivre dans le BOD, avec leur `@currencyID`. Trois montants d'en-tête sont disponibles : `ExtendedAmount` (devise de transaction), `ExtendedBaseAmount` (devise de base de la société), `ExtendedReportAmount` (devise de reporting).
 - **Aucune conversion d'unité de mesure dans DocBits.** Les quantités sont stockées avec leur `@unitCode`. `ReceivedBaseUOMQuantity` est la valeur UoM de base déjà calculée par M3 — DocBits la stocke telle quelle.
-- **Le statut de l'en-tête est pris dans le SXE stage lorsqu'il est disponible.** DocBits lit `UserArea/Property[@name='poeh.stagecd']` (valeurs `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) et l'utilise comme statut d'en-tête de référence. Le `Status/Code` standard est également stocké pour référence.
+- **Le statut de l'en-tête est pris dans le SXE stage lorsqu'il est disponible.** DocBits lit `UserArea/Property[@name='poeh.stagecd']` (valeurs `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) et l'utilise comme statut d'en-tête de référence. Le `Status/Code` standard est également stocké comme repli pour les BODs dans lesquels `poeh.stagecd` n'est pas renseignée — l'émission de cette propriété UserArea dépend du tenant.
 - **Pas de logique automatique de statut sur quantité partielle.** DocBits ne dérive pas de statut à partir des quantités reçues vs. commandées ; le statut délivré par M3 est repris tel quel.
-- **`CONO`/`AccountingEntityID` ne fait pas partie du BOD PurchaseOrder.** Le routage par numéro de société s'applique aux données de base fournisseurs (voir [Supplier BOD Mapping](supplier-bod-mapping.md)) ; les bons de commande sont rattachés via `LocationID`.
+- **`CONO`/`AccountingEntityID` ne fait pas partie du BOD PurchaseOrder.** Le routage par numéro de société s'applique aux données de base fournisseurs (voir [Supplier BOD Mapping](supplier-bod-mapping.md)) ; les bons de commande sont rattachés via `LocationID`. Notez que `LocationID` **n'est pas globalement unique** — lorsqu'une société M3 (CONO) est copiée entre environnements (par exemple PRD → TST), le même `LocationID` peut exister sous plusieurs CONOs. Dans ces configurations, filtrez le flux BOD entrant sur l'`AccountingEntity` attendue dans votre DataFlow ION afin d'éviter les collisions entre environnements.
 
 ## Mappage de l'en-tête
 
@@ -62,8 +62,8 @@ header_mappings = {
 | `requested_shipment_date` | — | Lu depuis `RequiredDeliveryDateTime` au niveau en-tête s'il existe. La plupart des configurations M3 ne portent ce champ qu'au niveau ligne ; dans ce cas, utilisez `requested_ship_date` de la ligne. |
 | `total_amount` | `MPHEAD.IAOURR` | Total de la commande en devise de transaction. Stocké tel quel depuis `ExtendedAmount`. |
 | `extended_amount` | `MPHEAD.IAOURR` | Même source que `total_amount`. Conservé comme colonne brute distincte pour la traçabilité et les consommateurs en aval attendant le chemin BOD canonique. |
-| `extended_base_amount` | `MPHEAD.IAOUVA` | Total exprimé dans la devise de base de la société. Rempli par M3 lorsque disponible. |
-| `extended_report_amount` | `MPHEAD.IAOUVB` | Total exprimé dans la devise de reporting de la société. |
+| `extended_base_amount` | `MPHEAD.IAOUVA` | Total exprimé dans la devise de base de la société. Rempli par M3 lorsque disponible — le remplissage dépend du tenant ; si vous ne parvenez pas à reproduire une valeur renseignée, merci de partager un BOD d'exemple. |
+| `extended_report_amount` | `MPHEAD.IAOUVB` | Total exprimé dans la devise de reporting de la société. Le remplissage dépend du tenant (comme `extended_base_amount`). |
 | `canceled_amount` / `canceled_base_amount` / `canceled_reporting_amount` | — | Montants d'annulation en devise de transaction / de base / de reporting. Renseignés par M3 uniquement après événements d'annulation. |
 | `type_code` / `type_description` | — | Type de bon de commande depuis `Classification/Codes/Code[@listID='Purchase Order Types']` (et sa `Description`). Exemples : `P10` PO normale, `P20` PO de réapprovisionnement. Stocké uniquement pour affichage — aucune logique de filtrage. |
 | `buyer_contact_id` / `buyer_contact_name` | `MPHEAD.IABUYE` / utilisateur lié | Acheteur affecté à la PO. |
@@ -163,3 +163,15 @@ Les deux colonnes existent pour compatibilité historique/UI. `total_amount` est
 ### Certains champs sont documentés mais toujours vides (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Pourquoi sont-ils mappés ?
 
 Ces mappages sont défensifs : le schéma BOD autorise les champs, et d'autres ERPs ou extensions M3 sur mesure peuvent les renseigner. Quand M3 les laisse vides, les colonnes sont simplement NULL dans DocBits.
+
+### Dois-je filtrer `AccountingEntity` (CONO) dans le DataFlow ION même si le BOD PurchaseOrder n'a pas de `CONO` ?
+
+Oui, dans les environnements où la même société M3 a été copiée (par exemple PRD → TST, ou deux tenants parallèles). `LocationID` seul n'est pas unique entre CONOs dans ces configurations, et un BOD provenant d'une société copiée peut entrer en collision avec une société active. Le motif recommandé est de filtrer le flux entrant sur la valeur `AccountingEntity` attendue dans ION avant que le BOD n'atteigne DocBits.
+
+### Mes BODs ne contiennent jamais `UserArea/Property[@name='poeh.stagecd']` — que se passe-t-il ?
+
+DocBits bascule sur l'élément standard `Status/Code` dans l'en-tête. L'émission de `poeh.stagecd` dépend du tenant. Si vous attendez cette propriété mais ne la trouvez pas dans vos BODs, partagez un BOD d'exemple avec l'équipe DocBits afin que nous puissions confirmer la personnalisation M3 qui la produit.
+
+### `ExtendedBaseAmount` / `ExtendedReportAmount` sont-ils vraiment renseignés sur l'en-tête ?
+
+Lorsque M3 les envoie sur l'en-tête, DocBits les stocke dans des colonnes dédiées (`extended_base_amount`, `extended_report_amount`). Le remplissage dépend de la configuration des devises M3 : les sociétés avec une devise de base/reporting différente de la devise de transaction les reçoivent généralement toutes deux. Si vous ne parvenez pas à reproduire une valeur renseignée dans votre propre tenant, partagez un BOD d'exemple afin que nous puissions vérifier ensemble les conditions.

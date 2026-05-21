@@ -99,6 +99,7 @@
 ## Administration and Setup
 
 * [Settings](administration-and-setup/settings/README.md)
+  * [UI Redesign Guide](administration-and-setup/settings/ui-redesign-guide.md)
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)
     * [Company Information](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Company Preferences](administration-and-setup/settings/global-settings/company-information/company-preferences.md)

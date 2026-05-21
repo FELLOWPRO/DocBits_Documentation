@@ -37,7 +37,7 @@ Picker mode honours the dashboard's status permissions, so you only see document
 
 ## View all results
 
-If the eight visible results aren't enough, press the **View all results** link in the footer (or press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Enter</kbd>) to open the [Sitemap](sitemap.md) pre-filtered with your current search.
+If the eight visible results aren't enough, click the **View all results** link in the footer to open the [Sitemap](sitemap.md) pre-filtered with your current search.
 
 ## Keyboard reference
 
@@ -47,4 +47,3 @@ If the eight visible results aren't enough, press the **View all results** link 
 | <kbd>↑</kbd> / <kbd>↓</kbd> | Move between results |
 | <kbd>Enter</kbd> | Open the highlighted result |
 | <kbd>Esc</kbd> | Close the modal |
-| <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Enter</kbd> | View all results in the Sitemap |

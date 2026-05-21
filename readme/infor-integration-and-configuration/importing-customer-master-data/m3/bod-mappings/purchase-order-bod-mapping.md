@@ -10,9 +10,9 @@ Riferimento originale della mappatura BOD (PDF)
 
 - **Nessuna conversione di valuta in DocBits.** Gli importi vengono persistiti esattamente come M3 li consegna nel BOD, insieme al loro `@currencyID`. Tre importi di intestazione sono disponibili: `ExtendedAmount` (valuta di transazione), `ExtendedBaseAmount` (valuta base della società), `ExtendedReportAmount` (valuta di reporting).
 - **Nessuna conversione di unità di misura in DocBits.** Le quantità vengono salvate con il loro `@unitCode`. `ReceivedBaseUOMQuantity` è il valore in UoM base pre-calcolato da M3 — DocBits lo salva così com'è.
-- **Lo stato dell'intestazione viene preso dallo stage SXE quando disponibile.** DocBits legge `UserArea/Property[@name='poeh.stagecd']` (valori `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) e lo usa come stato di intestazione autoritativo. Lo `Status/Code` standard viene comunque salvato come riferimento.
+- **Lo stato dell'intestazione viene preso dallo stage SXE quando disponibile.** DocBits legge `UserArea/Property[@name='poeh.stagecd']` (valori `1..8` → Ordered / Entered / Released / Allocated / Picked / Delivered / Invoiced / Cancelled) e lo usa come stato di intestazione autoritativo. Lo `Status/Code` standard viene comunque salvato come fallback per i BOD in cui `poeh.stagecd` non è popolato — l'emissione di questa proprietà UserArea dipende dal tenant.
 - **Nessuna logica automatica di stato per quantità parziale.** DocBits non deriva uno stato dalle quantità ricevute vs. ordinate; lo stato consegnato da M3 viene preso 1:1.
-- **`CONO`/`AccountingEntityID` non fa parte del BOD PurchaseOrder.** Il routing per numero azienda si applica ai dati anagrafici fornitori (vedi [Supplier BOD Mapping](supplier-bod-mapping.md)); gli ordini d'acquisto sono assegnati tramite `LocationID`.
+- **`CONO`/`AccountingEntityID` non fa parte del BOD PurchaseOrder.** Il routing per numero azienda si applica ai dati anagrafici fornitori (vedi [Supplier BOD Mapping](supplier-bod-mapping.md)); gli ordini d'acquisto sono assegnati tramite `LocationID`. Nota che `LocationID` **non è globalmente univoco** — quando un'azienda M3 (CONO) viene copiata tra ambienti (ad esempio PRD → TST), lo stesso `LocationID` può esistere sotto più CONO. In tali configurazioni, filtra il flusso BOD in ingresso sull'`AccountingEntity` attesa nel tuo DataFlow ION per evitare collisioni tra ambienti.
 
 ## Mappatura dell'Intestazione
 
@@ -62,8 +62,8 @@ header_mappings = {
 | `requested_shipment_date` | — | Letto da `RequiredDeliveryDateTime` a livello intestazione se presente. La maggior parte delle installazioni M3 lo gestisce solo a livello riga; in tal caso usare `requested_ship_date` a livello riga. |
 | `total_amount` | `MPHEAD.IAOURR` | Totale ordine in valuta di transazione. Salvato 1:1 da `ExtendedAmount`. |
 | `extended_amount` | `MPHEAD.IAOURR` | Stessa origine di `total_amount`. Mantenuto come colonna grezza separata per tracciabilità e consumatori downstream che si aspettano il percorso BOD canonico. |
-| `extended_base_amount` | `MPHEAD.IAOUVA` | Totale espresso nella valuta base aziendale. Riempito da M3 quando disponibile. |
-| `extended_report_amount` | `MPHEAD.IAOUVB` | Totale espresso nella valuta di reporting aziendale. |
+| `extended_base_amount` | `MPHEAD.IAOUVA` | Totale espresso nella valuta base aziendale. Riempito da M3 quando disponibile — la popolazione dipende dal tenant; se non riesci a riprodurre un valore popolato, condividi un BOD di esempio. |
+| `extended_report_amount` | `MPHEAD.IAOUVB` | Totale espresso nella valuta di reporting aziendale. La popolazione dipende dal tenant (come `extended_base_amount`). |
 | `canceled_amount` / `canceled_base_amount` / `canceled_reporting_amount` | — | Importi di cancellazione in valuta di transazione / base / reporting. Riempiti da M3 solo dopo eventi di cancellazione. |
 | `type_code` / `type_description` | — | Tipologia di ordine d'acquisto da `Classification/Codes/Code[@listID='Purchase Order Types']` (e sua `Description`). Esempi: `P10` PO normale, `P20` PO di riapprovvigionamento. Salvato solo per visualizzazione — nessuna logica di filtraggio. |
 | `buyer_contact_id` / `buyer_contact_name` | `MPHEAD.IABUYE` / utente collegato | Buyer assegnato alla PO. |
@@ -163,3 +163,15 @@ Entrambe le colonne esistono per compatibilità storica/UI. `total_amount` viene
 ### Alcuni campi sono documentati ma sempre vuoti (`buyer_name`, `geo_code`, `confirmed_quantity`, `sub_line_number`, …). Perché sono mappati?
 
 Queste mappature sono difensive: lo schema BOD consente i campi e altri ERP o estensioni M3 personalizzate possono riempirli. Quando M3 li lascia vuoti, le colonne sono semplicemente NULL in DocBits.
+
+### Devo filtrare `AccountingEntity` (CONO) nel DataFlow ION anche se il BOD PurchaseOrder non contiene `CONO`?
+
+Sì, negli ambienti in cui la stessa azienda M3 è stata copiata (ad esempio PRD → TST, o due tenant paralleli). `LocationID` da solo non è univoco tra CONO in tali configurazioni, quindi un BOD originato da un'azienda copiata può collidere con uno attivo. Il pattern raccomandato è filtrare il flusso in ingresso sul valore `AccountingEntity` atteso in ION prima che il BOD raggiunga DocBits.
+
+### I miei BOD non contengono mai `UserArea/Property[@name='poeh.stagecd']` — cosa succede?
+
+DocBits ricade sull'elemento standard `Status/Code` nell'intestazione. L'emissione di `poeh.stagecd` dipende dal tenant. Se ti aspetti questa proprietà ma non la trovi nei tuoi BOD, condividi un BOD di esempio con il team DocBits per confermare la personalizzazione M3 che la produce.
+
+### `ExtendedBaseAmount` / `ExtendedReportAmount` sono effettivamente popolati sull'intestazione?
+
+Ogni volta che M3 li invia sull'intestazione, DocBits li salva in colonne dedicate (`extended_base_amount`, `extended_report_amount`). La popolazione dipende dalla configurazione delle valute M3: le aziende con una valuta base/reporting diversa dalla valuta di transazione tipicamente ricevono entrambi. Se non riesci a riprodurre un valore popolato nel tuo tenant, condividi un BOD di esempio così possiamo verificare le condizioni insieme.

@@ -318,6 +318,7 @@
     * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
   * [SSO-Konfiguration](setup/sso-configuration.md)
 * [Berichtsseite](administration-and-setup/report-page.md)
+* [Analytics Dashboard](administration-and-setup/analytics-dashboard.md)
 
 ## Infor Integration und Konfiguration <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

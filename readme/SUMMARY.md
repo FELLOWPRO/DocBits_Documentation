@@ -414,6 +414,7 @@
     * [WatchDog Configuratie V2](administration-and-setup/setup/watchdog/watchdog-v2-configuration.md)
     * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Rapport Pagina](administration-and-setup/report-page.md)
+* [Analyse-dashboard](administration-and-setup/analytics-dashboard.md)
 
 ## Infor integratie en configuratie <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

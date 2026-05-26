@@ -40,25 +40,25 @@ Wählen Sie die passende Perspektive für Ihre Analyse. Jeder Flow-Typ bietet Ih
 
 Verwenden Sie den Schalter **Flow-Typ** oben im Dashboard, um zwischen den Perspektiven zu wechseln.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_flow_types.png" alt="Flow Type Switch"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
 
 ### Status-Flow
 
 Verfolgt den Dokumentenweg von **Neu** bis **Exportiert** – nützlich für eine End-to-End-Lebenszyklusanalyse.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_status_flow.png" alt="Status Flow"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
 
 ### Verarbeitungs-Flow
 
 Analysiert die Leistung über alle **technischen Verarbeitungsmodule** (OCR, Klassifizierung, Extraktion, Validierung) hinweg – nützlich zur Identifizierung systemseitiger Engpässe.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_processing_flow.png" alt="Processing Flow"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
 
 ### Benutzerinteraktions-Flow
 
 Konzentriert sich auf **menschliche Berührungspunkte** – Wartezeit in der Warteschlange, manuelle Validierung, Prüfung und Genehmigung – nützlich zur Identifizierung von Workflow- und Personal-Engpässen.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_user_interaction_flow.png" alt="User Interaction Flow"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
 
 ## Filteroptionen
 
@@ -68,13 +68,13 @@ Das Dashboard unterstützt leistungsstarke mehrdimensionale Filterung. Alle Diag
 
 Lokalisieren Sie sofort jedes Dokument anhand des **Namens** oder der **eindeutigen ID**.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_search.png" alt="Search Filter"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
 
 ### Flow-Schritte
 
 Wählen Sie bestimmte Schritte aus, um Ihre Analyse zu fokussieren. Das Ein-/Ausschalten von Schritten berechnet auch die Zeitmetriken der anderen Komponenten des Dashboards neu.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_flow_steps.png" alt="Flow Steps Filter"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
 
 ### Unterorganisation, Dokumenttyp, Lieferant, Gruppe
 
@@ -85,7 +85,7 @@ Vergleichen Sie die Leistung über:
 * **Lieferanten** – um zu identifizieren, welche Lieferanten die längsten Verarbeitungszeiten verursachen
 * **Gruppen** – um die Leistung über zugewiesene Benutzergruppen zu vergleichen (verfügbar für die Flow-Typen **Status** und **Benutzerinteraktion**)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_dimensions.png" alt="Sub-Organization, Document Type, Supplier, Group Filters"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
 
 <mark style="color:red;">**Hinweis**</mark>: Der Filter **Gruppe** gilt nur für Dokumente, die **direkt einer Gruppe zugewiesen** sind. Dokumente, die einem einzelnen Benutzer zugewiesen sind – selbst wenn dieser Benutzer Mitglied einer Gruppe ist – sind **nicht** in den Gruppenfilterergebnissen enthalten.
 
@@ -93,7 +93,7 @@ Vergleichen Sie die Leistung über:
 
 Analysieren Sie einen beliebigen Zeitraum von **7 Tagen** bis zu einem **vollen Jahr**, oder legen Sie einen **benutzerdefinierten Bereich** mit der Datumsauswahl fest.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="Time Range Filter"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
 
 ## Flow-Schritt-Karten
 
@@ -107,9 +107,9 @@ Jede Karte zeigt:
 
 Ein **Alle auswählen**-Schalter im Header ermöglicht es Ihnen, alle Schritte gleichzeitig ein- oder auszuschließen.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_flow_steps_card.png" alt="Flow Steps Card showing Min, Avg, Max"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_step_toggle.png" alt="Toggle Steps On/Off"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Mit Global Average vergleichen
 
@@ -119,7 +119,7 @@ Der Schalter **Mit Global Average vergleichen** steuert, ob der DocBits Global A
 * **Orange** – Ihre durchschnittliche Zeit liegt bis zu **+25 %** über dem Global Average
 * **Rot** – Ihre durchschnittliche Zeit liegt **+25 %** oder mehr über dem Global Average
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_global_average_comparison.png" alt="Compare with DocBits Global Average"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
 
 ## Durchschnittszeit-Diagramm
 
@@ -133,7 +133,7 @@ Das Durchschnittszeit-Diagramm visualisiert, wie sich die Verarbeitungszeit auf 
 
 Wenn **Mit Global Average vergleichen** aktiviert ist, zeigt das Diagramm auch den DocBits Global Average als Benchmark an.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_average_time_chart.png" alt="Average Time Chart"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Top-Dokumente
 
@@ -145,7 +145,7 @@ Die Karte **Top-Dokumente** listet einzelne Dokumente auf, die dem aktiven Filte
 * **Alle Dokumente ausblenden / anzeigen** im Filter über das Augensymbol im Header.
 * **Klicken Sie auf ein Dokument** (Dateiname oder Fortschrittsbalken), um seine Document ID in die Zwischenablage zu kopieren.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_top_documents.png" alt="Top Documents"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Zeittrend-Diagramm
 
@@ -159,9 +159,9 @@ Verfolgen Sie Leistungstrends im Zeitverlauf und erkennen Sie Anomalien. Das Zei
 
 Dadurch lässt sich leicht ein plötzlicher Anstieg bei einem bestimmten Lieferanten oder ein allmählicher Anstieg bei einem bestimmten Dokumenttyp erkennen, bevor er zu einem kritischen Problem wird.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend.png" alt="Time Trend Chart"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend_grouped.png" alt="Time Trend Chart Grouped"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Datentabelle
 
@@ -171,8 +171,8 @@ Die Datentabelle bietet vollständigen Zugriff auf alle zugrunde liegenden Zeile
 * **Sortieren** Sie durch Klicken auf Spaltenüberschriften und **ordnen Sie Spalten neu** per Drag-and-Drop.
 * **CSV herunterladen** über die Schaltfläche im Karten-Header – nur die aktuell sichtbaren Spalten werden exportiert.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table.png" alt="Data Table"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_hide_columns.png" alt="Hide Columns to Recalculate Aggregations"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_export.png" alt="Export Data Table as CSV"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)

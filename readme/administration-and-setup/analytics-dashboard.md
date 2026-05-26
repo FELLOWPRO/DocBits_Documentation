@@ -40,17 +40,25 @@ Choose the right lens for your analysis. Each flow type gives you a different pe
 
 Use the **Flow Type** switch at the top of the dashboard to toggle between perspectives.
 
+<figure><img src="../.gitbook/assets/analytics_dashboard_flow_types.png" alt="Flow Type Switch"><figcaption></figcaption></figure>
+
 ### Status Flow
 
 Tracks the document journey from **New** to **Exported** — useful for end-to-end lifecycle analysis.
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_status_flow.png" alt="Status Flow"><figcaption></figcaption></figure>
 
 ### Processing Flow
 
 Analyzes performance across all **technical processing modules** (OCR, classification, extraction, validation) — useful for identifying system-side bottlenecks.
 
+<figure><img src="../.gitbook/assets/analytics_dashboard_processing_flow.png" alt="Processing Flow"><figcaption></figcaption></figure>
+
 ### User Interaction Flow
 
 Focuses on **human touchpoints** — queue wait time, manual validation, review and approval — useful for identifying workflow and staffing bottlenecks.
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_user_interaction_flow.png" alt="User Interaction Flow"><figcaption></figcaption></figure>
 
 ## Filter Options
 
@@ -60,9 +68,13 @@ The dashboard supports powerful multi-dimensional filtering. All charts, cards, 
 
 Instantly locate any document by **name** or **unique ID**.
 
+<figure><img src="../.gitbook/assets/analytics_dashboard_filter_search.png" alt="Search Filter"><figcaption></figcaption></figure>
+
 ### Flow Steps
 
 Select specific steps to focus your analysis. Toggling steps on/off also recalculates timing metrics on the other components of the dashboard.
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_filter_flow_steps.png" alt="Flow Steps Filter"><figcaption></figcaption></figure>
 
 ### Sub-Organization, Document Type, Supplier, Group
 
@@ -73,11 +85,15 @@ Compare performance across:
 * **Suppliers** — to identify which suppliers cause the longest processing times
 * **Groups** — to compare performance across assigned user groups (available for the **Status** and **User Interaction** flow types)
 
+<figure><img src="../.gitbook/assets/analytics_dashboard_filter_dimensions.png" alt="Sub-Organization, Document Type, Supplier, Group Filters"><figcaption></figcaption></figure>
+
 <mark style="color:red;">**Note**</mark>: The **Group** filter only applies to documents that are **assigned directly to a group**. Documents assigned to an individual user — even if that user is a member of a group — are **not** included in the group filter results.
 
 ### Time Range
 
 Analyze any period from **7 days** up to a **full year**, or set a **custom range** using the date picker.
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="Time Range Filter"><figcaption></figcaption></figure>
 
 ## Flow Steps Cards
 
@@ -91,6 +107,10 @@ Each card displays:
 
 A **Select All** toggle in the header lets you include or exclude every step at once.
 
+<figure><img src="../.gitbook/assets/analytics_dashboard_flow_steps_card.png" alt="Flow Steps Card showing Min, Avg, Max"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_step_toggle.png" alt="Toggle Steps On/Off"><figcaption></figcaption></figure>
+
 ### Compare with Global Average
 
 The **Compare with Global Average** toggle controls whether the DocBits Global Average is shown on the cards and in the chart. When enabled, the average time on each card is color-coded:
@@ -98,6 +118,8 @@ The **Compare with Global Average** toggle controls whether the DocBits Global A
 * **Green** — your Avg Time is at or below the Global Average
 * **Orange** — your Avg Time is up to **+25%** above the Global Average
 * **Red** — your Avg Time is **+25%** or more above the Global Average
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_global_average_comparison.png" alt="Compare with DocBits Global Average"><figcaption></figcaption></figure>
 
 ## Average Time Chart
 
@@ -111,6 +133,8 @@ The Average Time Chart visualizes how processing time is distributed for the sel
 
 When **Compare with Global Average** is enabled, the chart also displays the DocBits Global Average for benchmarking.
 
+<figure><img src="../.gitbook/assets/analytics_dashboard_average_time_chart.png" alt="Average Time Chart"><figcaption></figcaption></figure>
+
 ## Top Documents
 
 The **Top Documents** card lists individual documents matching the active filter set, ranked by total time spent.
@@ -120,6 +144,8 @@ The **Top Documents** card lists individual documents matching the active filter
 * **Hide / show** a document via the eye icon next to it — hidden documents are excluded from all timing calculations on the dashboard.
 * **Hide / show all** documents in the filter via the eye icon in the header.
 * **Click a document** (filename or progress bar) to copy its Document ID to the clipboard.
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_top_documents.png" alt="Top Documents"><figcaption></figcaption></figure>
 
 ## Time Trend Chart
 
@@ -133,6 +159,10 @@ Track performance trends over time and spot anomalies. The Time Trend Chart show
 
 This makes it easy to detect a sudden spike for a specific supplier, or a gradual increase for a specific document type, before it becomes a critical problem.
 
+<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend.png" alt="Time Trend Chart"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend_grouped.png" alt="Time Trend Chart Grouped"><figcaption></figcaption></figure>
+
 ## Data Table
 
 The Data Table provides full access to all underlying row data for the active filter set.
@@ -140,3 +170,9 @@ The Data Table provides full access to all underlying row data for the active fi
 * **Drag columns into the Hidden Columns panel** (left of the table) to remove them from the view. Hidden columns are used for aggregation — **Min / Max / Avg** timings are recalculated dynamically based on the visible columns. Drag a chip back to the table (or click the **+** icon) to restore the column.
 * **Sort** by clicking column headers and **reorder** columns by drag-and-drop.
 * **Download CSV** via the button in the card header — only the currently visible columns are exported.
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_data_table.png" alt="Data Table"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_hide_columns.png" alt="Hide Columns to Recalculate Aggregations"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_export.png" alt="Export Data Table as CSV"><figcaption></figcaption></figure>

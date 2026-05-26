@@ -34,7 +34,7 @@ This Target Endpoint URL can be found at api.docbits.com
 
 The information underneath this field should look as follows.
 
-<figure><img src="../../../../.gitbook/assets/infor_api_gateway.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/infor_api_gateway.png" alt=""><figcaption></figcaption></figure>
 
 Once you have filled in this information, to the right of these fields there is a “Target Endpoint Security” field with a drop down. Select API Key from this drop down.
 

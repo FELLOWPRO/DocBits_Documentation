@@ -40,25 +40,25 @@ Elija la perspectiva adecuada para su análisis. Cada tipo de flujo le ofrece un
 
 Utilice el conmutador **Tipo de flujo** en la parte superior del panel para alternar entre perspectivas.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_flow_types.png" alt="Conmutador de Tipo de flujo"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
 
 ### Flujo de Estado
 
 Realiza el seguimiento del recorrido del documento desde **Nuevo** hasta **Exportado** — útil para el análisis del ciclo de vida de extremo a extremo.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_status_flow.png" alt="Flujo de Estado"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
 
 ### Flujo de Procesamiento
 
 Analiza el rendimiento en todos los **módulos técnicos de procesamiento** (OCR, clasificación, extracción, validación) — útil para identificar cuellos de botella del lado del sistema.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_processing_flow.png" alt="Flujo de Procesamiento"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
 
 ### Flujo de Interacción del Usuario
 
 Se centra en los **puntos de contacto humanos** — tiempo de espera en cola, validación manual, revisión y aprobación — útil para identificar cuellos de botella del flujo de trabajo y de personal.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_user_interaction_flow.png" alt="Flujo de Interacción del Usuario"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
 
 ## Opciones de filtro
 
@@ -68,13 +68,13 @@ El panel admite un potente filtrado multidimensional. Todos los gráficos, tarje
 
 Localice cualquier documento al instante por **nombre** o **ID único**.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_search.png" alt="Filtro de búsqueda"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
 
 ### Pasos de flujo
 
 Seleccione pasos específicos para centrar su análisis. Activar/desactivar pasos también recalcula las métricas de tiempo en los demás componentes del panel.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_flow_steps.png" alt="Filtro de Pasos de flujo"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
 
 ### Suborganización, Tipo de Documento, Proveedor, Grupo
 
@@ -85,7 +85,7 @@ Compare el rendimiento entre:
 * **Proveedores** — para identificar qué proveedores provocan los tiempos de procesamiento más largos
 * **Grupos** — para comparar el rendimiento entre los grupos de usuarios asignados (disponible para los tipos de flujo **Estado** e **Interacción del usuario**)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_dimensions.png" alt="Filtros de Suborganización, Tipo de Documento, Proveedor, Grupo"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
 
 <mark style="color:red;">**Nota**</mark>: El filtro **Grupo** solo se aplica a los documentos que están **asignados directamente a un grupo**. Los documentos asignados a un usuario individual — incluso si ese usuario es miembro de un grupo — **no** se incluyen en los resultados del filtro de grupo.
 
@@ -93,7 +93,7 @@ Compare el rendimiento entre:
 
 Analice cualquier período desde **7 días** hasta un **año completo**, o establezca un **intervalo personalizado** mediante el selector de fechas.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="Filtro de Intervalo de tiempo"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
 
 ## Tarjetas de Pasos de flujo
 
@@ -107,9 +107,9 @@ Cada tarjeta muestra:
 
 Un conmutador **Seleccionar todo** en el encabezado le permite incluir o excluir cada paso a la vez.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_flow_steps_card.png" alt="Tarjeta de Pasos de flujo mostrando Mínimo, Promedio, Máximo"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_step_toggle.png" alt="Activar/Desactivar Pasos"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Comparar con el Promedio Mundial
 
@@ -119,7 +119,7 @@ El conmutador **Comparar con el Promedio Mundial** controla si el Promedio Mundi
 * **Naranja** — su Tiempo Promedio está hasta un **+25%** por encima del Promedio Mundial
 * **Rojo** — su Tiempo Promedio está un **+25%** o más por encima del Promedio Mundial
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_global_average_comparison.png" alt="Comparar con el Promedio Mundial de DocBits"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
 
 ## Gráfico de Tiempo Promedio
 
@@ -133,7 +133,7 @@ El Gráfico de Tiempo Promedio visualiza cómo se distribuye el tiempo de proces
 
 Cuando **Comparar con el Promedio Mundial** está activado, el gráfico también muestra el Promedio Mundial de DocBits para realizar la comparación.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_average_time_chart.png" alt="Gráfico de Tiempo Promedio"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Documentos principales
 
@@ -145,7 +145,7 @@ La tarjeta **Documentos principales** enumera los documentos individuales que co
 * **Ocultar / mostrar todos** los documentos del filtro mediante el icono del ojo del encabezado.
 * **Haga clic en un documento** (nombre de archivo o barra de progreso) para copiar su ID de Documento al portapapeles.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_top_documents.png" alt="Documentos principales"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Gráfico de Tendencia Temporal
 
@@ -159,9 +159,9 @@ Realice un seguimiento de las tendencias de rendimiento a lo largo del tiempo y 
 
 Esto facilita la detección de un aumento repentino para un proveedor específico, o un incremento gradual para un tipo de documento específico, antes de que se convierta en un problema crítico.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend.png" alt="Gráfico de Tendencia Temporal"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend_grouped.png" alt="Gráfico de Tendencia Temporal Agrupado"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Tabla de Datos
 
@@ -171,8 +171,8 @@ La Tabla de Datos proporciona acceso completo a todos los datos de fila subyacen
 * **Clasifique** haciendo clic en los encabezados de columna y **reordene** las columnas arrastrándolas y soltándolas.
 * **Descargar CSV** mediante el botón del encabezado de la tarjeta — solo se exportan las columnas visibles actualmente.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table.png" alt="Tabla de Datos"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_hide_columns.png" alt="Ocultar Columnas para Recalcular Agregaciones"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_export.png" alt="Exportar Tabla de Datos como CSV"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)

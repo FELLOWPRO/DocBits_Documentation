@@ -40,25 +40,25 @@ Kies de juiste invalshoek voor uw analyse. Elk flow-type geeft u een ander persp
 
 Gebruik de **Flow-type**-schakelaar boven aan het dashboard om tussen perspectieven te wisselen.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_flow_types.png" alt="Flow Type Switch"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_types.png)
 
 ### Status-flow
 
 Volgt het documenttraject van **Nieuw** tot **Geëxporteerd** — nuttig voor end-to-end levenscyclusanalyse.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_status_flow.png" alt="Status Flow"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_status_flow.png)
 
 ### Verwerkings-flow
 
 Analyseert prestaties over alle **technische verwerkingsmodules** (OCR, classificatie, extractie, validatie) — nuttig voor het identificeren van knelpunten aan de systeemkant.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_processing_flow.png" alt="Processing Flow"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_processing_flow.png)
 
 ### Gebruikersinteractie-flow
 
 Richt zich op **menselijke contactpunten** — wachttijd in de wachtrij, handmatige validatie, beoordeling en goedkeuring — nuttig voor het identificeren van knelpunten in workflow en personeelsinzet.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_user_interaction_flow.png" alt="User Interaction Flow"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_user_interaction_flow.png)
 
 ## Filteropties
 
@@ -68,13 +68,13 @@ Het dashboard ondersteunt krachtige multidimensionale filtering. Alle grafieken,
 
 Vind direct elk document op **naam** of **unieke ID**.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_search.png" alt="Search Filter"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_search.png)
 
 ### Flow-stappen
 
 Selecteer specifieke stappen om uw analyse te richten. Het in-/uitschakelen van stappen herberekent ook de timingstatistieken voor de andere componenten van het dashboard.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_flow_steps.png" alt="Flow Steps Filter"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_flow_steps.png)
 
 ### Suborganisatie, documenttype, leverancier, groep
 
@@ -85,7 +85,7 @@ Vergelijk prestaties tussen:
 * **Leveranciers** — om te identificeren welke leveranciers de langste verwerkingstijden veroorzaken
 * **Groepen** — om prestaties te vergelijken tussen toegewezen gebruikersgroepen (beschikbaar voor de flow-typen **Status** en **Gebruikersinteractie**)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_dimensions.png" alt="Sub-Organization, Document Type, Supplier, Group Filters"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_dimensions.png)
 
 <mark style="color:red;">**Opmerking**</mark>: Het filter **Groep** is alleen van toepassing op documenten die **rechtstreeks aan een groep zijn toegewezen**. Documenten die zijn toegewezen aan een individuele gebruiker — zelfs als die gebruiker lid is van een groep — worden **niet** opgenomen in de resultaten van het groepsfilter.
 
@@ -93,7 +93,7 @@ Vergelijk prestaties tussen:
 
 Analyseer elke periode van **7 dagen** tot een **volledig jaar**, of stel een **aangepast bereik** in met behulp van de datumkiezer.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_filter_time_range.png" alt="Time Range Filter"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_filter_time_range.png)
 
 ## Flow-stappen-kaarten
 
@@ -107,9 +107,9 @@ Elke kaart toont:
 
 Met een schakelaar **Alles selecteren** in de header kunt u alle stappen tegelijk in- of uitschakelen.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_flow_steps_card.png" alt="Flow Steps Card showing Min, Avg, Max"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_flow_steps_card.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_step_toggle.png" alt="Toggle Steps On/Off"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_step_toggle.png)
 
 ### Vergelijk met het wereldwijde gemiddelde
 
@@ -119,7 +119,7 @@ De schakelaar **Vergelijk met het wereldwijde gemiddelde** bepaalt of het DocBit
 * **Oranje** — uw Gem. tijd is tot **+25%** boven het Global Average
 * **Rood** — uw Gem. tijd is **+25%** of meer boven het Global Average
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_global_average_comparison.png" alt="Compare with DocBits Global Average"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_global_average_comparison.png)
 
 ## Grafiek Gemiddelde Tijd
 
@@ -133,7 +133,7 @@ De Grafiek Gemiddelde Tijd visualiseert hoe de verwerkingstijd is verdeeld over 
 
 Wanneer **Vergelijk met het wereldwijde gemiddelde** is ingeschakeld, toont de grafiek ook het DocBits Global Average voor benchmarking.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_average_time_chart.png" alt="Average Time Chart"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_average_time_chart.png)
 
 ## Topdocumenten
 
@@ -145,7 +145,7 @@ De kaart **Topdocumenten** somt individuele documenten op die overeenkomen met d
 * **Verberg / toon alle** documenten in het filter via het oogpictogram in de header.
 * **Klik op een document** (bestandsnaam of voortgangsbalk) om de document-ID naar het klembord te kopiëren.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_top_documents.png" alt="Top Documents"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_top_documents.png)
 
 ## Tijdtrendgrafiek
 
@@ -159,9 +159,9 @@ Volg prestatietrends in de tijd en spot afwijkingen. De Tijdtrendgrafiek toont d
 
 Hierdoor is het eenvoudig om een plotselinge piek voor een specifieke leverancier te detecteren, of een geleidelijke toename voor een specifiek documenttype, voordat het een kritiek probleem wordt.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend.png" alt="Time Trend Chart"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_time_trend_grouped.png" alt="Time Trend Chart Grouped"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_time_trend_grouped.png)
 
 ## Datatabel
 
@@ -171,8 +171,8 @@ De Datatabel biedt volledige toegang tot alle onderliggende rijgegevens voor de 
 * **Sorteer** door op kolomkoppen te klikken en **herschik** kolommen via drag-and-drop.
 * **CSV downloaden** via de knop in de kaartheader — alleen de momenteel zichtbare kolommen worden geëxporteerd.
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table.png" alt="Data Table"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_hide_columns.png" alt="Hide Columns to Recalculate Aggregations"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
-<figure><img src="../.gitbook/assets/analytics_dashboard_data_table_export.png" alt="Export Data Table as CSV"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)

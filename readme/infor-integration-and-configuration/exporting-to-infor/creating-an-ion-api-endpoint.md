@@ -28,13 +28,13 @@ Next, select the + at the bottom of the screen
 
 ![](https://lh7-us.googleusercontent.com/dtYP0O6Abzd-9yDgqtLMJh\_4p1GNGqqtJMCySJEzw-3-hcvySwdXoznQBQ-6fkCGCHVrKXRFSint8\_HuL6BpjRizZ-zIpornm7F-JH\_jU48OQ1s1kPCQyV-9mKkQkPh1ge8xbINKuV0ps7gvKuddqDs)
 
-This Target Endpoint URL can be found at doc2api.cloudintegration.eu
+This Target Endpoint URL can be found at api.docbits.com
 
 ![](https://lh7-us.googleusercontent.com/-olPQPbkiOSYtKh6JeDtVGDypj5xfS1vsb78vLAFDE3hETqHvzDC4VjiAwR0F3Le0seqxicUDNhXjOoOGrXgCe-cByPrp\_q-bg-nKG2Y1JngREWyekzdQ5Cbnxi0aWv\_VySw0LdcwpAElcXG\_b5Vmlo)
 
 The information underneath this field should look as follows.
 
-![](https://lh7-us.googleusercontent.com/DKI7Ewpn6\_3euuarVLThq6Hdatfje8i44dhUCjWUtWcA0Dq38s8Idm3DbjE0HkAv3hGmYrdgUtuRF-skv6-d\_QghuHsFR8C3Vcf72IR8diP30ixrgd0YU7oEb6DWInIqK9ccH\_X-7VotPo5sCO379NA)
+<figure><img src="../../../../.gitbook/assets/infor_api_gateway.png" alt=""><figcaption></figcaption></figure>
 
 Once you have filled in this information, to the right of these fields there is a “Target Endpoint Security” field with a drop down. Select API Key from this drop down.
 
@@ -70,7 +70,7 @@ Enter the following details:
 
 * Name = DocBits-”environment”
 * Type = Swagger
-* URL = go to doc2api.cloudintegration.eu, once on this page, open the following link
+* URL = go to api.docbits.com, once on this page, open the following link
 
 ![](https://lh7-us.googleusercontent.com/tazrpqtgWhLRr5O08CVo\_gUjK1EuN\_vvRGTWnw89euSYQrQWd4Jnxx-1mdaydY56\_I2otnGdg6\_3dOJhBFp3OU8i9rIlXV5-1ApKYRRPqxVhBviUQ\_VhlQAWfAKe18NMtYBFXd3QVo5i6Za7315dqqQ)
 

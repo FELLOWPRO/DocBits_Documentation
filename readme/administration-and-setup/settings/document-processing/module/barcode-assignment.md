@@ -2,26 +2,26 @@
 
 ### Überblick
 
-Die Einstellung **Barcode-Zuordnung** (Barcode Assignment) ermöglicht es DocBits, **Barcodes innerhalb einer Datei zu nutzen, um sie in einzelne Dokumente zu trennen**. Das ist nützlich, wenn mehrere Dokumente gemeinsam in eine große PDF gescannt werden und ein Barcode markiert, wo ein Dokument endet und das nächste beginnt.
+Die Einstellung **Barcode-Zuordnung** (Barcode Assignment) fügt dem **Validierungs-Bildschirm** ein Barcode-Werkzeug hinzu. Es liest die in einem Dokument gefundenen Barcodes und QR-Codes aus und ermöglicht Ihnen, **deren Werte den Feldern des Dokuments zuzuordnen** — zum Beispiel eine Referenz-, Bestell- oder Lieferscheinnummer aus einem Barcode zu übernehmen, statt sie abzutippen.
 
 Diese Einstellung ist **standardmäßig deaktiviert**.
 
 ### Was bewirkt die Einstellung?
 
-Wenn diese Einstellung aktiviert ist, sucht DocBits in einer eingehenden mehrseitigen Datei nach Barcodes und teilt diese Datei an den markierten Stellen in separate Dokumente auf. Jedes entstandene Dokument wird anschließend einzeln verarbeitet.
+Wenn diese Einstellung aktiviert ist, erscheint beim Validieren eines Dokuments ein kleiner **Barcode-Button** (ein QR-Code-Symbol) in der Werkzeugleiste. Ein Klick darauf zeigt die Barcodes, die DocBits im Dokument gefunden hat, und Sie können jeden davon einem Feld zuordnen. Das Feld wird dann mit dem aus dem Barcode ausgelesenen Wert befüllt.
 
-* **Aktiviert** — DocBits erkennt Barcodes und trennt eine zusammengefasste Datei automatisch anhand dieser in einzelne Dokumente.
-* **Deaktiviert** — Die Datei wird als ein einziges Dokument verarbeitet; Barcodes werden nicht zum Aufteilen verwendet.
+* **Aktiviert** — Der Barcode-Button wird im Validierungs-Bildschirm angezeigt. Sie können die Barcodes im Dokument auslesen und ihre Werte den Feldern zuordnen.
+* **Deaktiviert** — Der Button ist ausgeblendet, und Barcode-Werte werden bei der Validierung nicht zur Zuordnung angeboten.
 
 {% hint style="info" %}
-Hier geht es um das **Aufteilen und Zuordnen** von Seiten anhand von Barcodes. Das Auslesen der in einem Barcode kodierten Daten (z. B. bei Zahlungs-QR-Codes) erfolgt separat unter **Bar-Code / QR Code Extraction**.
+**Hier geht es darum, einen Barcode-/QR-Wert auszulesen und ihn bei der Validierung einem Feld zuzuordnen.** Das automatische Extrahieren strukturierter Daten aus Zahlungscodes (z. B. Swiss QR Bill oder GiroCode) — sowie das Aufteilen einer mehrseitigen Datei an Barcode-Trennseiten — übernimmt eine **andere** Einstellung: [Bar-Code / QR-Code-Extraktion](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Vorteile
 
-* **Schnelleres Stapel-Scannen**: Scannen Sie einen ganzen Stapel Dokumente in einem Durchgang, getrennt durch Barcode-Trennblätter, statt jedes Dokument einzeln zu scannen.
-* **Weniger manuelles Sortieren**: DocBits erstellt die einzelnen Dokumente für Sie, sodass niemand die PDF von Hand aufteilen muss.
-* **Weniger Fehler**: Dokumente werden jedes Mal exakt an den markierten Stellen getrennt.
+* **Schnellere, fehlerfreie Erfassung**: Übernehmen Sie Werte direkt aus einem Barcode, statt sie abzulesen und abzutippen.
+* **Weniger Tippfehler**: Ein gescannter Wert entspricht genau dem, was im Barcode kodiert ist.
+* **Volle Kontrolle**: Sie entscheiden bei der Validierung, welcher Barcode in welches Feld kommt.
 
 ### Verwendung
 
@@ -30,9 +30,10 @@ Hier geht es um das **Aufteilen und Zuordnen** von Seiten anhand von Barcodes. D
 3. Wählen Sie **Modul**.
 4. Öffnen Sie den Abschnitt **Dokumenttyp**.
 5. Finden Sie **Barcode-Zuordnung** und schalten Sie den Schalter ein.
+6. Klicken Sie anschließend beim Validieren eines Dokuments auf den **Barcode-Button** in der Werkzeugleiste und ordnen Sie die erkannten Barcode-Werte den passenden Feldern zu.
 
 ### Wann diese Funktion nutzen
 
-* **Hohes Scan-Volumen**: Wenn Sie viele Dokumente gemeinsam scannen und Barcode-Trennblätter dazwischen verwenden.
-* **Gemischte Stapel**: Wenn eine einzelne eingehende Datei mehrere verschiedene Dokumente enthält, die separat verarbeitet werden müssen.
-* **Ausgeschaltet lassen**, wenn Ihre Dokumente immer als separate Dateien ankommen — ein Aufteilen ist dann nicht nötig.
+* **Dokumente mit Barcodes**: Wenn Ihre Dokumente Barcodes/QR-Codes enthalten, deren Werte in bestimmte Felder gehören (z. B. Bestell- oder Referenznummern).
+* **Manuelle Validierungs-Workflows**: Wenn eine Person Dokumente prüft und Felder schnell aus Barcodes befüllen möchte.
+* **Ausgeschaltet lassen**, wenn Ihre Dokumente keine nutzbaren Barcodes haben oder Sie nur die automatische Barcode-/QR-**Extraktion** benötigen — siehe [Bar-Code / QR-Code-Extraktion](bar-code-qr-code-extraction/README.md).

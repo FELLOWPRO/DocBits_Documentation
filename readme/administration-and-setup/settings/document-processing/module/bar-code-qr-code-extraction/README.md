@@ -1,5 +1,9 @@
 # Bar-Code / QR-Code-Extraktion
 
+{% hint style="info" %}
+**Verwandt:** Um beim Validieren eines Dokuments einen Barcode-/QR-Wert manuell auszulesen und einem Feld zuzuordnen, siehe [Barcode-Zuordnung](../barcode-assignment.md).
+{% endhint %}
+
 ## **Überblick**
 
 Diese Funktion ermöglicht die automatische Extraktion von Informationen aus **Barcodes und QR-Codes**, die in Dokumenten eingebettet sind. Es handelt sich um eine Alles-oder-Nichts-Einstellung — das Aktivieren schaltet die Extraktion für beide Code-Typen zugleich frei.

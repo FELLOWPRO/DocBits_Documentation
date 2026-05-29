@@ -2,26 +2,26 @@
 
 ### Przegląd
 
-Ustawienie **Przypisanie na podstawie kodu kreskowego** (Barcode Assignment) pozwala DocBits używać **kodów kreskowych wewnątrz pliku do rozdzielenia go na pojedyncze dokumenty**. Jest to przydatne, gdy kilka dokumentów jest skanowanych razem do jednego dużego pliku PDF, a kod kreskowy oznacza, gdzie kończy się jeden dokument, a zaczyna następny.
+Ustawienie **Przypisanie na podstawie kodu kreskowego** (Barcode Assignment) dodaje narzędzie kodów kreskowych do **ekranu walidacji dokumentów**. Odczytuje kody kreskowe i kody QR znalezione w dokumencie i pozwala **przypisać ich wartości do pól dokumentu** — na przykład wypełnić numer referencyjny, zamówienia lub dowodu dostawy z kodu kreskowego zamiast go wpisywać.
 
 To ustawienie jest **domyślnie wyłączone**.
 
 ### Co robi to ustawienie?
 
-Gdy to ustawienie jest włączone, DocBits wyszukuje kody kreskowe w przychodzącym wielostronicowym pliku i dzieli go na osobne dokumenty w oznaczonych miejscach. Każdy powstały dokument jest następnie przetwarzany osobno.
+Gdy to ustawienie jest włączone, podczas walidacji dokumentu na pasku narzędzi pojawia się mały **przycisk kodu kreskowego** (ikona kodu QR). Kliknięcie go pokazuje kody kreskowe, które DocBits znalazł w dokumencie, i możesz przypisać każdy z nich do pola. Pole zostaje następnie wypełnione wartością odczytaną z kodu kreskowego.
 
-* **Włączone** — DocBits wykrywa kody kreskowe i automatycznie rozdziela połączony plik na pojedyncze dokumenty na ich podstawie.
-* **Wyłączone** — Plik jest przetwarzany jako jeden dokument; kody kreskowe nie są używane do jego podziału.
+* **Włączone** — Przycisk kodu kreskowego jest wyświetlany na ekranie walidacji. Możesz odczytywać kody kreskowe w dokumencie i przypisywać ich wartości do pól.
+* **Wyłączone** — Przycisk jest ukryty, a wartości kodów kreskowych nie są oferowane do przypisania podczas walidacji.
 
 {% hint style="info" %}
-Chodzi tu o **podział i przypisanie** stron na podstawie kodów kreskowych. Odczyt danych zakodowanych w kodzie kreskowym (np. dla płatniczych kodów QR) jest obsługiwany osobno w sekcji **Bar-Code / QR Code Extraction**.
+**To służy do odczytania wartości kodu kreskowego/QR i przypisania jej do pola podczas walidacji.** Automatyczne wyodrębnianie ustrukturyzowanych danych z kodów płatności (takich jak Swiss QR Bill lub GiroCode) — oraz dzielenie wielostronicowego pliku w miejscach stron rozdzielających z kodem kreskowym — obsługuje **inne** ustawienie: [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Korzyści
 
-* **Szybsze skanowanie wsadowe**: Zeskanuj cały stos dokumentów za jednym razem, oddzielonych arkuszami z kodem kreskowym, zamiast skanować każdy dokument osobno.
-* **Mniej ręcznego sortowania**: DocBits tworzy pojedyncze dokumenty za Ciebie, więc nikt nie musi ręcznie dzielić pliku PDF.
-* **Mniej błędów**: Dokumenty są za każdym razem rozdzielane dokładnie w oznaczonych miejscach.
+* **Szybsze, bezbłędne wprowadzanie**: Pobieraj wartości bezpośrednio z kodu kreskowego, zamiast je odczytywać i wpisywać ręcznie.
+* **Mniej literówek**: Zeskanowana wartość to dokładnie to, co jest zakodowane w kodzie kreskowym.
+* **Zachowujesz kontrolę**: To Ty decydujesz, który kod kreskowy trafia do którego pola podczas walidacji.
 
 ### Jak używać
 
@@ -30,9 +30,10 @@ Chodzi tu o **podział i przypisanie** stron na podstawie kodów kreskowych. Odc
 3. Wybierz **Moduł**.
 4. Otwórz sekcję **Typ dokumentu**.
 5. Znajdź **Przypisanie na podstawie kodu kreskowego** i włącz suwak.
+6. Następnie podczas walidacji dokumentu kliknij **przycisk kodu kreskowego** na pasku narzędzi i przypisz wykryte wartości kodów kreskowych do odpowiednich pól.
 
 ### Kiedy używać tej funkcji
 
-* **Skanowanie o dużej objętości**: Gdy skanujesz wiele dokumentów razem i używasz między nimi arkuszy rozdzielających z kodem kreskowym.
-* **Mieszane partie**: Gdy jeden przychodzący plik zawiera kilka różnych dokumentów, które trzeba przetworzyć osobno.
-* **Pozostaw wyłączone**, jeśli dokumenty zawsze przychodzą jako osobne pliki — podział nie jest wtedy potrzebny.
+* **Dokumenty z kodami kreskowymi**: Gdy Twoje dokumenty zawierają kody kreskowe/QR, których wartości należą do określonych pól (np. numery zamówień lub referencyjne).
+* **Ręczne procesy walidacji**: Gdy osoba przegląda dokumenty i chce szybko wypełnić pola z kodów kreskowych.
+* **Pozostaw wyłączone**, jeśli Twoje dokumenty nie mają użytecznych kodów kreskowych lub jeśli potrzebujesz tylko automatycznego **wyodrębniania** kodów kreskowych/QR — zobacz [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).

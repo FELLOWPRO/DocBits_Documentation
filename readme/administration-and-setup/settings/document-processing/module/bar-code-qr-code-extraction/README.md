@@ -1,5 +1,9 @@
 # Ekstrakcja kodów kreskowych / QR
 
+{% hint style="info" %}
+**Powiązane:** Aby podczas walidacji dokumentu ręcznie odczytać wartość kodu kreskowego/QR i przypisać ją do pola, zobacz [Przypisanie na podstawie kodu kreskowego](../barcode-assignment.md).
+{% endhint %}
+
 ## **Przegląd**
 
 Ta funkcja umożliwia automatyczne wyodrębnianie informacji z **kodów kreskowych i kodów QR** osadzonych w dokumentach. Jest to ustawienie „wszystko albo nic" — włączenie aktywuje ekstrakcję dla obu typów.

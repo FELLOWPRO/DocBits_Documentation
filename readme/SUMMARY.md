@@ -332,6 +332,7 @@
       * [Auto Export if PO Matched 100%](administration-and-setup/settings/document-processing/module/auto-export-if-po-matched-100.md)
       * [PO Verzendingsorder Instelling](administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md)
       * [Volledige tekstzoekopdracht](administration-and-setup/settings/document-processing/module/fulltext-search.md)
+      * [Hybride PDF-XML-extractie overslaan](administration-and-setup/settings/document-processing/module/skip-hybrid-pdf-xml-extraction.md)
     * [Beslisbomen](administration-and-setup/settings/document-processing/decision-trees.md)
   * [Loginstellingen](administration-and-setup/settings/log-settings/README.md)
     * [Taakbeheer](administration-and-setup/settings/log-settings/task-management.md)

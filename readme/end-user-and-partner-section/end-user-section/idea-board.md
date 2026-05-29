@@ -1,23 +1,28 @@
 # Ideenboard
 
-Das Ideenboard ist der Ort, an dem Funktionswünsche eingereicht, fehlende Funktionen gemeldet und Vorschläge mit Stimmen versehen werden, um dem Produktteam Prioritäten zu signalisieren. Ideen sind für alle in Ihrer Organisation sichtbar, mit Kommentaren und Abstimmung.
+Das Ideenboard ist der Ort, um Funktionswünsche einzureichen, fehlende Funktionen zu melden und darüber abzustimmen, was das Produktteam als Nächstes umsetzen soll. Ideen sind nach Kanal organisiert und für alle in Ihrer Organisation sichtbar, mit Kommentaren und Abstimmung.
 
 ## Aufrufen
 
 Öffnen Sie die Seitenleiste und klicken Sie auf **Ideen** oder navigieren Sie direkt zu `/ideas`.
 
-<figure><img src="../../.gitbook/assets/idea-board-overview.png" alt="Übersicht Ideenboard"><figcaption><p>Das Ideenboard listet aktuelle Ideen mit Stimmen, Kategorie und Status.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/idea-board-overview.png" alt="Übersicht Ideenboard"><figcaption><p>Das Ideenboard mit Kanal-Chips, Filtern und Ideenkarten.</p></figcaption></figure>
+
+## Kanäle
+
+Am oberen Rand des Boards befindet sich eine Reihe von Kanal-Chips: **Alle**, **Allgemein**, **DocNet**, **Workflow**, **Dashboard**, **Import / Export** und **Verarbeitung von Dokumenten**. Klicken Sie auf einen Chip, um nur die Ideen aus diesem Produktbereich anzuzeigen; **Alle** hebt den Kanalfilter auf. Jede Idee gehört zu genau einem Kanal, der als Abzeichen auf ihrer Karte angezeigt wird.
 
 ## Ideen durchstöbern
 
 Jede Idee wird als Karte mit folgenden Angaben angezeigt:
 
-* Titel und eine Beschreibung im Rich-Text-Format (Bilder werden eingebettet).
-* Eine Schaltfläche zum Abstimmen mit aktueller Stimmenanzahl.
-* Ein Kategorie-Abzeichen — Funktion, Verbesserung, Fehler, Integration oder Sonstiges.
+* Titel und eine Beschreibung im Rich-Text-Format, die Bilder enthalten kann.
+* Getrennte Schaltflächen für **Zustimmung** und **Ablehnung**, jeweils mit eigener Zählung.
+* Ein Kategorie-Abzeichen — Feature, Verbesserung, Fehler, Integration oder Sonstiges.
+* Ein Kanal-Abzeichen — Allgemein, DocNet, Workflow, Dashboard, Import / Export oder Verarbeitung von Dokumenten.
 * Einen Status — Neu, In Prüfung, Geplant, In Bearbeitung, Erledigt oder Abgelehnt.
 * Name und Organisation der einreichenden Person sowie ein relativer Zeitstempel.
-* Einen Umschalter für Kommentare, der den Diskussionsverlauf unter der Karte ein- und ausklappt.
+* Einen Umschalter für Kommentare, der den Diskussionsverlauf unter der Karte aufklappt.
 
 Eine Seitennavigation am unteren Listenende blättert zwischen Seiten.
 
@@ -26,32 +31,36 @@ Eine Seitennavigation am unteren Listenende blättert zwischen Seiten.
 Klicken Sie im Kopfbereich auf **Neue Idee**. Der Dialog fragt nach:
 
 * **Titel** — ein kurzer, beschreibender Name für die Idee.
-* **Beschreibung** — ein Rich-Text-Editor mit Fett, Kursiv, Unterstrichen, Durchgestrichen, Listen und Links. Sie können Bilder direkt in die Beschreibung einfügen oder hochladen.
-* **Kategorie** — wählen Sie die passendste. Das Produktteam nutzt diese Information, um Ideen zu sortieren.
+* **Beschreibung** — ein optionaler Rich-Text-Editor mit Fett, Kursiv, Unterstrichen, Durchgestrichen, Listen und Links. Sie können auch Bilder hinzufügen: direkt einfügen oder über die Schaltfläche **Bild hinzufügen** in die Beschreibung einbetten.
+* **Kategorie** — wählen Sie die passendste. Das Produktteam nutzt diese Information, um Ideen zuzuordnen.
+* **Kanal** — der Produktbereich, zu dem die Idee gehört.
 
 Drücken Sie **Absenden**, um zu veröffentlichen. Die Idee erscheint mit dem Status **Neu** in der Liste.
 
+<figure><img src="../../.gitbook/assets/idea-board-new-idea.png" alt="Dialog Neue Idee"><figcaption><p>Der Dialog „Neue Idee" mit Kategorie- und Kanalauswahl.</p></figcaption></figure>
+
 ## Abstimmen
 
-Klicken Sie auf einer beliebigen Karte auf die Stimm-Schaltfläche, um eine Stimme abzugeben. Erneutes Klicken entfernt Ihre Stimme. Die Stimmenanzahl bestimmt die Sortierung **Meiste Stimmen** und signalisiert dem Produktteam Nachfrage.
+Jede Idee hat getrennte Schaltflächen für **Zustimmung** und **Ablehnung**, jeweils mit eigener Zählung. Klicken Sie auf eine Schaltfläche, um Ihre Stimme abzugeben, klicken Sie erneut darauf, um sie zu entfernen, oder klicken Sie auf die gegenüberliegende, um zu wechseln. Stimmen signalisieren dem Produktteam die Nachfrage und fließen in die Sortierungen **Heiß** und **Top-Bewertung** ein.
 
 ## Kommentieren
 
-Öffnen Sie den Kommentarbereich einer Idee, um Fragen zu stellen, Kontext zu ergänzen oder Workarounds zu teilen. Sie können Ihre eigenen Kommentare bearbeiten und löschen. Die einreichende Person und Administratoren können zudem Kommentare löschen, um Diskussionen beim Thema zu halten.
+Öffnen Sie den Kommentarbereich einer Idee, um Fragen zu stellen, Kontext zu ergänzen oder Workarounds zu teilen. Sie können Kommentare mit Zustimmung oder Ablehnung bewerten (aber nicht Ihre eigenen) und von Ihnen verfasste Kommentare löschen. Die einreichende Person und Administratoren können zudem Kommentare löschen, um Diskussionen beim Thema zu halten.
 
 ## Filtern und Sortieren
 
-Über der Liste finden Sie:
+Über der Liste können Sie kombinieren:
 
-* Ein Suchfeld, das in Titel und Beschreibung sucht.
-* Eine Kategorie-Auswahl.
-* Eine Status-Auswahl.
-* Eine Sortierung — **Neueste** oder **Meiste Stimmen**.
+* die **Kanal**-Chips.
+* ein Suchfeld, das in Titel und Beschreibung sucht.
+* eine Kategorie-Auswahl.
+* eine Status-Auswahl.
+* einen Sortierwähler — **Neueste**, **Heiß** oder **Top-Bewertung**.
 
-Die Filter werden kombiniert, sodass Sie zum Beispiel in drei Klicks auf "Meiste Stimmen Verbesserungen, die in Prüfung sind" eingrenzen können.
+Die Filter werden kombiniert, sodass Sie zum Beispiel mit wenigen Klicks auf „Top-bewertete Verbesserungen in Prüfung" eingrenzen können.
 
 ## Eigene Ideen bearbeiten oder löschen
 
-Das Menü auf einer Karte (Drei-Punkte-Schaltfläche) erlaubt es Ihnen, eine von Ihnen eingereichte Idee zu bearbeiten oder zu löschen. Sobald das Produktteam den Status einer Idee von **Neu** auf einen anderen Wert geändert hat, ist das Bearbeiten von Titel und Kategorie gesperrt — kommentieren Sie die Idee stattdessen.
+Das Menü auf einer Karte (Drei-Punkte-Schaltfläche) erlaubt es Ihnen, eine von Ihnen eingereichte Idee zu bearbeiten oder zu löschen.
 
 <mark>Das Ideenboard ist für Produktrückmeldungen gedacht, nicht für Vorfallsmeldungen. Verwenden Sie ein Support-Ticket für Probleme, die Ihre Arbeit heute blockieren.</mark>

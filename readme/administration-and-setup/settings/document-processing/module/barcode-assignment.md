@@ -2,26 +2,26 @@
 
 ### Aperçu
 
-Le paramètre **Affectation par code-barres** (Barcode Assignment) permet à DocBits d'utiliser les **codes-barres présents dans un fichier pour le séparer en documents individuels**. C'est utile lorsque plusieurs documents sont numérisés ensemble dans un seul grand PDF et qu'un code-barres indique où un document se termine et où commence le suivant.
+Le paramètre **Affectation par code-barres** (Barcode Assignment) ajoute un outil de code-barres à l'**écran de validation des documents**. Il lit les codes-barres et QR codes présents dans un document et vous permet d'**affecter leurs valeurs aux champs du document** — par exemple, renseigner un numéro de référence, de commande ou de bon de livraison à partir d'un code-barres au lieu de le saisir.
 
 Ce paramètre est **désactivé par défaut**.
 
 ### Que fait ce paramètre ?
 
-Lorsque ce paramètre est activé, DocBits recherche les codes-barres dans un fichier entrant de plusieurs pages et le divise en documents distincts aux positions marquées. Chaque document obtenu est ensuite traité séparément.
+Lorsque ce paramètre est activé, un petit **bouton code-barres** (une icône QR code) apparaît dans la barre d'outils pendant que vous validez un document. En cliquant dessus, vous voyez les codes-barres que DocBits a trouvés dans le document, et vous pouvez affecter chacun à un champ. Le champ est alors renseigné avec la valeur lue dans le code-barres.
 
-* **Activé** — DocBits détecte les codes-barres et sépare automatiquement un fichier combiné en documents individuels en fonction de ceux-ci.
-* **Désactivé** — Le fichier est traité comme un seul document ; les codes-barres ne servent pas à le diviser.
+* **Activé** — Le bouton code-barres est affiché sur l'écran de validation. Vous pouvez lire les codes-barres du document et affecter leurs valeurs aux champs.
+* **Désactivé** — Le bouton est masqué et les valeurs des codes-barres ne sont pas proposées pour l'affectation pendant la validation.
 
 {% hint style="info" %}
-Il s'agit ici de **diviser et d'affecter** des pages en fonction des codes-barres. La lecture des données encodées dans un code-barres (par exemple pour les QR codes de paiement) est gérée séparément dans **Bar-Code / QR Code Extraction**.
+**Ceci sert à lire une valeur de code-barres/QR et à l'affecter à un champ pendant la validation.** L'extraction automatique de données structurées à partir de codes de paiement (comme Swiss QR Bill ou GiroCode) — ainsi que la division d'un fichier de plusieurs pages aux pages séparatrices à code-barres — sont gérées par un paramètre **différent** : [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Avantages
 
-* **Numérisation par lots plus rapide** : Numérisez une pile entière de documents en une seule passe, séparés par des feuilles à code-barres, au lieu de numériser chaque document individuellement.
-* **Moins de tri manuel** : DocBits crée les documents individuels pour vous, personne n'a donc à diviser le PDF à la main.
-* **Moins d'erreurs** : Les documents sont séparés exactement aux positions marquées à chaque fois.
+* **Saisie plus rapide et sans erreur** : Reprenez les valeurs directement depuis un code-barres au lieu de les lire et de les saisir à la main.
+* **Moins de fautes de frappe** : Une valeur scannée correspond exactement à ce qui est encodé dans le code-barres.
+* **Vous gardez le contrôle** : Vous décidez quel code-barres va dans quel champ pendant la validation.
 
 ### Utilisation
 
@@ -30,9 +30,10 @@ Il s'agit ici de **diviser et d'affecter** des pages en fonction des codes-barre
 3. Sélectionnez **Module**.
 4. Ouvrez la section **Type de document**.
 5. Repérez **Affectation par code-barres** et activez le commutateur.
+6. Ensuite, lors de la validation d'un document, cliquez sur le **bouton code-barres** dans la barre d'outils et affectez les valeurs des codes-barres détectés aux champs correspondants.
 
 ### Quand utiliser cette fonction
 
-* **Numérisation en grand volume** : Lorsque vous numérisez de nombreux documents ensemble et utilisez des feuilles séparatrices à code-barres entre eux.
-* **Lots mixtes** : Lorsqu'un seul fichier entrant contient plusieurs documents différents à traiter séparément.
-* **Laissez-le désactivé** si vos documents arrivent toujours sous forme de fichiers distincts — la division n'est alors pas nécessaire.
+* **Documents avec codes-barres** : Lorsque vos documents comportent des codes-barres/QR dont les valeurs doivent aller dans des champs précis (p. ex. numéros de commande ou de référence).
+* **Flux de validation manuelle** : Lorsqu'une personne examine les documents et souhaite renseigner les champs rapidement à partir des codes-barres.
+* **Laissez-le désactivé** si vos documents n'ont pas de codes-barres exploitables, ou si vous n'avez besoin que de l'**extraction** automatique des codes-barres/QR — voir [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).

@@ -4,6 +4,10 @@
 
 This feature enables automatic extraction of information from **both barcodes and QR codes** embedded in documents. It is an all-or-nothing setting — enabling it activates extraction for both types.
 
+{% hint style="info" %}
+**Related:** To manually read a barcode/QR value while validating a document and assign it to a field, see [Barcode Assignment](../barcode-assignment.md).
+{% endhint %}
+
 ## How to Enable Bar-Code / QR Code Extraction
 
 To enable the Bar-Code / QR Code Extraction feature, follow these steps:

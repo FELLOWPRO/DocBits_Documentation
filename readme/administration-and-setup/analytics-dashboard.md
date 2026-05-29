@@ -89,6 +89,14 @@ Vergleichen Sie die Leistung über:
 
 <mark style="color:red;">**Hinweis**</mark>: Der Filter **Gruppe** gilt nur für Dokumente, die **direkt einer Gruppe zugewiesen** sind. Dokumente, die einem einzelnen Benutzer zugewiesen sind – selbst wenn dieser Benutzer Mitglied einer Gruppe ist – sind **nicht** in den Gruppenfilterergebnissen enthalten.
 
+### Nur exportierte Dokumente
+
+Standardmäßig aktiviert – nur Dokumente, die den Export abgeschlossen haben, werden in den Dashboard-Metriken berücksichtigt.
+
+<mark style="color:red;">**Hinweis**</mark>: Das Deaktivieren dieser Option kann zu ungenauen Durchschnittswerten führen, da auch Dokumente, die noch nicht abgeschlossen sind, in die Berechnungen einbezogen werden.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+
 ### Zeitbereich
 
 Analysieren Sie einen beliebigen Zeitraum von **7 Tagen** bis zu einem **vollen Jahr**, oder legen Sie einen **benutzerdefinierten Bereich** mit der Datumsauswahl fest.

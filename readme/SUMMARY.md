@@ -226,6 +226,7 @@
       * [Swiss QR Code](administration-and-setup/settings/document-processing/module/swiss-qr-code.md)
       * [Paramètres de commande d'expédition PO](administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md)
       * [Recherche plein texte](administration-and-setup/settings/document-processing/module/fulltext-search.md)
+      * [Ignorer l'extraction XML des PDF hybrides](administration-and-setup/settings/document-processing/module/skip-hybrid-pdf-xml-extraction.md)
     * [Arbres de Décision](administration-and-setup/settings/document-processing/decision-trees.md)
   * [Paramètres de Journal](administration-and-setup/settings/log-settings/README.md)
     * [Gestion des tâches](administration-and-setup/settings/log-settings/task-management.md)

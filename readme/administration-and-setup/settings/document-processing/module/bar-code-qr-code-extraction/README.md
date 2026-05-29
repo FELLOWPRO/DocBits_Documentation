@@ -1,5 +1,9 @@
 # Barcode / QR-Code Extractie
 
+{% hint style="info" %}
+**Gerelateerd:** Om tijdens het valideren van een document handmatig een barcode-/QR-waarde uit te lezen en aan een veld toe te wijzen, zie [Barcodetoewijzing](../barcode-assignment.md).
+{% endhint %}
+
 ## **Overzicht**
 
 Deze functie maakt automatische extractie van informatie mogelijk van **zowel barcodes als QR-codes** die in documenten zijn ingesloten. Het is een alles-of-niets instelling — inschakelen activeert de extractie voor beide typen.

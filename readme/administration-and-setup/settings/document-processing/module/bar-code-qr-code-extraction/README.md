@@ -1,5 +1,9 @@
 # Extração de códigos de barras / QR
 
+{% hint style="info" %}
+**Relacionado:** Para ler manualmente um valor de código de barras/QR durante a validação de um documento e atribuí-lo a um campo, consulte [Atribuição por código de barras](../barcode-assignment.md).
+{% endhint %}
+
 ## **Visão geral**
 
 Esta funcionalidade permite a extração automática de informações a partir de **códigos de barras e códigos QR** incorporados em documentos. É uma configuração tudo-ou-nada — ativá-la habilita a extração para ambos os tipos.

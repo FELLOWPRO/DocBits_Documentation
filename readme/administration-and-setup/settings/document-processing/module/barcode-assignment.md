@@ -2,26 +2,26 @@
 
 ### Visão geral
 
-A configuração **Atribuição por código de barras** (Barcode Assignment) permite que o DocBits use os **códigos de barras dentro de um arquivo para separá-lo em documentos individuais**. Isso é útil quando vários documentos são digitalizados juntos em um único PDF grande e um código de barras marca onde um documento termina e o próximo começa.
+A configuração **Atribuição por código de barras** (Barcode Assignment) adiciona uma ferramenta de código de barras à **tela de validação de documentos**. Ela lê os códigos de barras e códigos QR encontrados em um documento e permite que você **atribua os valores deles aos campos do documento** — por exemplo, preencher um número de referência, de pedido ou de nota de entrega a partir de um código de barras em vez de digitá-lo.
 
 Esta configuração está **desativada por padrão**.
 
 ### O que faz?
 
-Quando esta configuração está ativada, o DocBits procura códigos de barras em um arquivo recebido com várias páginas e o divide em documentos separados nas posições marcadas. Cada documento resultante é então processado individualmente.
+Quando esta configuração está ativada, um pequeno **botão de código de barras** (um ícone de código QR) aparece na barra de ferramentas enquanto você valida um documento. Ao clicar nele, são exibidos os códigos de barras que o DocBits encontrou no documento, e você pode mapear cada um para um campo. O campo é então preenchido com o valor lido do código de barras.
 
-* **Ativada** — O DocBits detecta os códigos de barras e separa automaticamente um arquivo combinado em documentos individuais com base neles.
-* **Desativada** — O arquivo é processado como um único documento; os códigos de barras não são usados para dividi-lo.
+* **Ativada** — O botão de código de barras é exibido na tela de validação. Você pode ler os códigos de barras do documento e atribuir os valores deles aos campos.
+* **Desativada** — O botão fica oculto e os valores dos códigos de barras não são oferecidos para atribuição durante a validação.
 
 {% hint style="info" %}
-Aqui trata-se de **dividir e atribuir** páginas com base em códigos de barras. A leitura dos dados codificados em um código de barras (por exemplo, para códigos QR de pagamento) é tratada separadamente em **Bar-Code / QR Code Extraction**.
+**Isto serve para ler um valor de código de barras/QR e atribuí-lo a um campo durante a validação.** A extração automática de dados estruturados de códigos de pagamento (como Swiss QR Bill ou GiroCode) — e a divisão de um arquivo de várias páginas nas páginas separadoras com código de barras — são tratadas por uma configuração **diferente**: [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Benefícios
 
-* **Digitalização em lote mais rápida**: Digitalize uma pilha inteira de documentos de uma só vez, separados por folhas com código de barras, em vez de digitalizar cada documento individualmente.
-* **Menos triagem manual**: O DocBits cria os documentos individuais para você, então ninguém precisa dividir o PDF manualmente.
-* **Menos erros**: Os documentos são separados exatamente nas posições marcadas todas as vezes.
+* **Entrada mais rápida e sem erros**: Pegue os valores diretamente de um código de barras em vez de lê-los e digitá-los manualmente.
+* **Menos erros de digitação**: Um valor escaneado é exatamente o que está codificado no código de barras.
+* **Mantém o controle**: Você decide qual código de barras vai em qual campo durante a validação.
 
 ### Como usar
 
@@ -30,9 +30,10 @@ Aqui trata-se de **dividir e atribuir** páginas com base em códigos de barras.
 3. Selecione **Módulo**.
 4. Abra a seção **Tipo de Documento**.
 5. Encontre **Atribuição por código de barras** e ligue o botão.
+6. Depois, ao validar um documento, clique no **botão de código de barras** na barra de ferramentas e atribua os valores dos códigos de barras detectados aos campos correspondentes.
 
 ### Quando usar este recurso
 
-* **Digitalização de alto volume**: Quando você digitaliza muitos documentos juntos e usa folhas separadoras com código de barras entre eles.
-* **Lotes mistos**: Quando um único arquivo recebido contém vários documentos diferentes que precisam ser processados separadamente.
-* **Deixe desativado** se os seus documentos sempre chegam como arquivos separados — a divisão não é necessária nesse caso.
+* **Documentos com códigos de barras**: Quando os seus documentos têm códigos de barras/QR cujos valores pertencem a campos específicos (por exemplo, números de pedido ou de referência).
+* **Fluxos de validação manual**: Quando uma pessoa revisa documentos e quer preencher campos rapidamente a partir dos códigos de barras.
+* **Deixe desativado** se os seus documentos não tiverem códigos de barras utilizáveis, ou se você só precisar da **extração** automática de códigos de barras/QR — consulte [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).

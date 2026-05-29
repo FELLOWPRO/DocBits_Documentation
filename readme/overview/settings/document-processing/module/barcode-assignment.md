@@ -2,26 +2,26 @@
 
 ### Pregled
 
-Podešavanje **Dodela putem barkoda** (Barcode Assignment) omogućava DocBits-u da koristi **barkodove unutar datoteke kako bi je razdvojio na pojedinačne dokumente**. Ovo je korisno kada se više dokumenata skenira zajedno u jedan veliki PDF, a barkod označava gde se jedan dokument završava, a sledeći počinje.
+Podešavanje **Dodela putem barkoda** (Barcode Assignment) dodaje alatku za barkodove na **ekran za validaciju dokumenata**. Ona čita barkodove i QR kodove pronađene u dokumentu i omogućava vam da **njihove vrednosti dodelite poljima dokumenta** — na primer, da popunite referentni broj, broj narudžbine ili otpremnice iz barkoda umesto da ga kucate.
 
 Ovo podešavanje je **podrazumevano isključeno**.
 
 ### Šta radi?
 
-Kada je ovo podešavanje uključeno, DocBits traži barkodove u dolaznoj višestraničnoj datoteci i deli je na zasebne dokumente na označenim pozicijama. Svaki dobijeni dokument se zatim obrađuje pojedinačno.
+Kada je ovo podešavanje uključeno, tokom validacije dokumenta na traci sa alatkama se pojavljuje malo **dugme za barkod** (ikona QR koda). Klik na njega prikazuje barkodove koje je DocBits pronašao u dokumentu, a vi možete da svaki od njih povežete sa poljem. Polje se zatim popunjava vrednošću pročitanom iz barkoda.
 
-* **Uključeno** — DocBits detektuje barkodove i automatski razdvaja kombinovanu datoteku na pojedinačne dokumente na osnovu njih.
-* **Isključeno** — Datoteka se obrađuje kao jedan dokument; barkodovi se ne koriste za njeno deljenje.
+* **Uključeno** — Dugme za barkod se prikazuje na ekranu za validaciju. Možete da čitate barkodove u dokumentu i da njihove vrednosti dodeljujete poljima.
+* **Isključeno** — Dugme je skriveno i vrednosti barkodova se ne nude za dodelu tokom validacije.
 
 {% hint style="info" %}
-Ovde je reč o **deljenju i dodeli** stranica na osnovu barkodova. Čitanje podataka kodiranih u barkodu (na primer za platne QR kodove) obrađuje se zasebno u odeljku **Bar-Code / QR Code Extraction**.
+**Ovo služi za čitanje vrednosti barkoda/QR koda i njeno dodeljivanje polju tokom validacije.** Automatsko izvlačenje strukturiranih podataka iz platnih kodova (kao što su Swiss QR Bill ili GiroCode) — kao i deljenje višestranične datoteke na stranicama razdvajačima sa barkodom — obrađuje **drugo** podešavanje: **Bar-Code / QR Code Extraction**.
 {% endhint %}
 
 ### Prednosti
 
-* **Brže grupno skeniranje**: Skenirajte celu gomilu dokumenata u jednom prolazu, razdvojenih listovima sa barkodom, umesto da skenirate svaki dokument pojedinačno.
-* **Manje ručnog razvrstavanja**: DocBits kreira pojedinačne dokumente umesto vas, pa niko ne mora ručno da deli PDF.
-* **Manje grešaka**: Dokumenti se svaki put razdvajaju tačno na označenim pozicijama.
+* **Brži unos bez grešaka**: Uzmite vrednosti direktno iz barkoda umesto da ih čitate i kucate ručno.
+* **Manje grešaka u kucanju**: Skenirana vrednost je tačno ono što je kodirano u barkodu.
+* **Vi zadržavate kontrolu**: Vi odlučujete koji barkod ide u koje polje tokom validacije.
 
 ### Kako se koristi
 
@@ -30,9 +30,10 @@ Ovde je reč o **deljenju i dodeli** stranica na osnovu barkodova. Čitanje poda
 3. Izaberite **Modul**.
 4. Otvorite odeljak **Tip dokumenta**.
 5. Pronađite **Dodela putem barkoda** i uključite prekidač.
+6. Zatim, tokom validacije dokumenta, kliknite na **dugme za barkod** na traci sa alatkama i dodelite otkrivene vrednosti barkodova odgovarajućim poljima.
 
 ### Kada koristiti ovu funkciju
 
-* **Skeniranje velikog obima**: Kada skenirate mnogo dokumenata zajedno i između njih koristite listove razdvajače sa barkodom.
-* **Mešovite grupe**: Kada jedna dolazna datoteka sadrži više različitih dokumenata koji moraju da se obrade zasebno.
-* **Ostavite isključeno** ako vaši dokumenti uvek stižu kao zasebne datoteke — deljenje tada nije potrebno.
+* **Dokumenti sa barkodovima**: Kada vaši dokumenti sadrže barkodove/QR kodove čije vrednosti pripadaju određenim poljima (npr. brojevi narudžbine ili referentni brojevi).
+* **Tokovi ručne validacije**: Kada osoba pregleda dokumente i želi brzo da popuni polja iz barkodova.
+* **Ostavite isključeno** ako vaši dokumenti nemaju upotrebljive barkodove ili ako vam je potrebno samo automatsko **izvlačenje** barkodova/QR kodova.

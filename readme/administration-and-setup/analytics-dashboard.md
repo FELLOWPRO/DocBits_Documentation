@@ -89,6 +89,14 @@ Vergelijk prestaties tussen:
 
 <mark style="color:red;">**Opmerking**</mark>: Het filter **Groep** is alleen van toepassing op documenten die **rechtstreeks aan een groep zijn toegewezen**. Documenten die zijn toegewezen aan een individuele gebruiker — zelfs als die gebruiker lid is van een groep — worden **niet** opgenomen in de resultaten van het groepsfilter.
 
+### Alleen geëxporteerde documenten
+
+Standaard ingeschakeld — alleen documenten die de export hebben voltooid, worden meegenomen in de dashboardstatistieken.
+
+<mark style="color:red;">**Opmerking**</mark>: Het uitschakelen hiervan kan leiden tot onnauwkeurige gemiddelde waarden, omdat documenten die nog niet zijn voltooid ook in de berekeningen worden meegenomen.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+
 ### Tijdsbereik
 
 Analyseer elke periode van **7 dagen** tot een **volledig jaar**, of stel een **aangepast bereik** in met behulp van de datumkiezer.

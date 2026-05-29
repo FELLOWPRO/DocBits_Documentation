@@ -89,6 +89,14 @@ Comparez les performances entre :
 
 <mark style="color:red;">**Remarque**</mark> : Le filtre **Groupe** ne s'applique qu'aux documents qui sont **directement assignés à un groupe**. Les documents assignés à un utilisateur individuel — même si cet utilisateur est membre d'un groupe — ne sont **pas** inclus dans les résultats du filtre de groupe.
 
+### Documents exportés uniquement
+
+Activé par défaut — seuls les documents dont l'exportation est terminée sont pris en compte dans les métriques du tableau de bord.
+
+<mark style="color:red;">**Remarque**</mark> : Désactiver cette option peut entraîner des valeurs moyennes inexactes, car les documents qui ne sont pas encore terminés sont également inclus dans les calculs.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+
 ### Période
 
 Analysez n'importe quelle période, de **7 jours** jusqu'à une **année complète**, ou définissez une **plage personnalisée** à l'aide du sélecteur de dates.

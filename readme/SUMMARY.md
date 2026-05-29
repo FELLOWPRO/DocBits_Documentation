@@ -50,6 +50,7 @@
         * [Doc Script](overview/settings/document-processing/module/doc-script.md)
         * [IDM ACL Updater](overview/settings/document-processing/module/idm-acl-updater.md)
         * [Swiss QR Code](overview/settings/document-processing/module/swiss-qr-code.md)
+        * [Hibrit PDF XML Çıkarımını Atla](overview/settings/document-processing/module/skip-hybrid-pdf-xml-extraction.md)
         * [ZUGFeRD + Swiss QR Code Alan Eşlemesi](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)
         * [Desteklenen Elektronik Belgeler](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md)
           * [🇦🇷 ARGENTINA AFIP](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/argentina-afip.md)

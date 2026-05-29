@@ -89,6 +89,14 @@ Compare o desempenho entre:
 
 <mark style="color:red;">**Observação**</mark>: O filtro **Grupo** aplica-se apenas a documentos que estão **atribuídos diretamente a um grupo**. Documentos atribuídos a um usuário individual — mesmo que esse usuário seja membro de um grupo — **não** são incluídos nos resultados do filtro de grupo.
 
+### Somente documentos exportados
+
+Ativado por padrão — apenas os documentos que concluíram a exportação são considerados nas métricas do painel.
+
+<mark style="color:red;">**Observação**</mark>: Desativar essa opção pode resultar em valores médios imprecisos, pois os documentos que ainda não foram concluídos também são incluídos nos cálculos.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+
 ### Intervalo de Tempo
 
 Analise qualquer período, de **7 dias** até **um ano completo**, ou defina um **intervalo personalizado** usando o seletor de datas.

@@ -89,6 +89,14 @@ Porównaj wydajność między:
 
 <mark style="color:red;">**Notatka**</mark>: Filtr **Grupa** dotyczy tylko dokumentów, które są **przypisane bezpośrednio do grupy**. Dokumenty przypisane do indywidualnego użytkownika — nawet jeśli ten użytkownik jest członkiem grupy — **nie są** uwzględniane w wynikach filtra grupy.
 
+### Tylko eksportowane dokumenty
+
+Włączone domyślnie — w metrykach panelu uwzględniane są tylko dokumenty, które zakończyły eksport.
+
+<mark style="color:red;">**Notatka**</mark>: Wyłączenie tej opcji może skutkować niedokładnymi wartościami średnimi, ponieważ w obliczeniach uwzględniane są również dokumenty, które nie zostały jeszcze zakończone.
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_only_exported_toggle.png)
+
 ### Zakres czasu
 
 Analizuj dowolny okres od **7 dni** do **pełnego roku** lub ustaw **niestandardowy zakres** za pomocą selektora dat.

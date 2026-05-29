@@ -89,6 +89,14 @@ Compare performance across:
 
 <mark style="color:red;">**Note**</mark>: The **Group** filter only applies to documents that are **assigned directly to a group**. Documents assigned to an individual user — even if that user is a member of a group — are **not** included in the group filter results.
 
+### Only Exported Documents
+
+On by default — only documents that have completed export are considered in the dashboard metrics.
+
+<mark style="color:red;">**Note**</mark>: Disabling this can result in inaccurate average values, since documents that have not yet completed are also included in the calculations.
+
+<figure><img src="../.gitbook/assets/analytics_dashboard_only_exported_toggle.png" alt="Only Exported Documents Toggle"><figcaption></figcaption></figure>
+
 ### Time Range
 
 Analyze any period from **7 days** up to a **full year**, or set a **custom range** using the date picker.

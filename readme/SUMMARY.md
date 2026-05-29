@@ -50,6 +50,7 @@
         * [Doc Script](overview/settings/document-processing/module/doc-script.md)
         * [IDM ACL Updater](overview/settings/document-processing/module/idm-acl-updater.md)
         * [Swiss QR Code](overview/settings/document-processing/module/swiss-qr-code.md)
+        * [Preskoči hibridnu ekstrakciju XML iz PDF-a](overview/settings/document-processing/module/skip-hybrid-pdf-xml-extraction.md)
         * [ZUGFeRD + Swiss QR Code Field Mapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)
         * [Pregled ZUGFeRD-a](administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)
           * [ZUGFeRD konfiguracija](administration-and-setup/settings/global-settings/document-types/edi/zugferd/configuration.md)

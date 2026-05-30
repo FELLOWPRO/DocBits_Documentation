@@ -1,57 +1,74 @@
 # Inbound Emails
 
-## Activating Inbound Email for Document Processing
+### Overview
 
-To begin using inbound email for document processing, follow these steps:
+DocBits can pick up documents straight from email — no manual upload needed. There are **two ways** to bring email documents in, both managed under **Settings → Document Processing → Import**:
 
-1. **Go to Settings**: Start by navigating to the app’s **Settings** menu.
-2. **Select Document Processing**: Under settings, choose **Document Processing** to access related configuration options.
-3. **Open Modules**: In the Document Processing section, click on **Modules**.
-4. **Scroll to Document Type**: Scroll down until you find **Document Type**.
-5. **Activate Inbound Email**: Find **Inbound Email** and activate it by toggling the switch.
+| Method | How it works | Best for |
+|--------|--------------|----------|
+| **Email Import account** | DocBits connects to a mailbox you own (**IMAP**, **OAuth Office365**, or **OAuth Office365 – Tenant**) and imports the documents it finds. | A dedicated mailbox that already receives your documents (e.g. `invoices@yourcompany.com`). |
+| **Forward Emails (Inbound Emails)** | DocBits gives you a unique address; anyone you authorise can **forward** documents to it. | Ad‑hoc forwarding from many senders without sharing mailbox credentials. |
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt=""><figcaption></figcaption></figure>
+You can use either method on its own or both together.
 
-## Configuring Inbound Email for Document Import
+### Method 1 — Connect a mailbox (Email Import)
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_2.png" alt=""><figcaption></figcaption></figure>
+Go to **Settings → Document Processing → Import** and open the **Email Import** section. Click **New** to add a mailbox connection.
 
-After activating inbound email, configure the settings to control how documents are imported. Here’s how:
+<figure><img src="../../../../.gitbook/assets/inbound_emails_email_import_entry.png" alt="Email Import section with the New button"><figcaption><p>In the Email Import section, click <strong>New</strong> to connect a mailbox.</p></figcaption></figure>
 
-1. **Go back Document Processing**: In the settings, navigate to **Document Processing**.
-2.  **Select Import**: Choose **Import** to access inbound email settings.
+The setup wizard opens. The first field, **Protocol**, decides how DocBits connects — choose **IMAP**, **OAuth Office365**, or **OAuth Office365 – Tenant**.
 
-    You’ll see the following options:
+<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="The Protocol dropdown showing IMAP, OAuth Office365 and OAuth Office365 - Tenant"><figcaption><p>The <strong>Protocol</strong> dropdown offers the three connection types.</p></figcaption></figure>
 
-    * **Email Field**: This field displays a unique, system-generated email address based on your organization ID. The format is `org_id@environment.inbound.docbits.com`. Send or forward emails with documents to this address for automated import.
-    * **Import Document Only from Predefined E-Mail(s)**: Toggle this option to restrict imports to emails received only from specific, predefined addresses.
-    * **Reply to this Email if Import Cannot Be Done**: Toggle this option if you want the system to automatically reply when an import attempt fails.
-3. **Save Settings**: After configuring these options, click **Save** to apply them.
+#### IMAP
 
-## Predefined E-Mail(s)
+For a standard mailbox, choose **IMAP** and fill in the server details and account credentials:
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_3.png" alt=""><figcaption></figcaption></figure>
+* **Server name** and **Port** (default `993`) of your mail server.
+* **Encryption** — `SSL`, `TLS` or `None`.
+* **Username**, **E‑Mail** and **Password** of the mailbox.
 
-When the **Import Document Only from Predefined E-Mail(s)** option is enabled, you can manage which email addresses are authorized to send documents to the inbound email.
+<figure><img src="../../../../.gitbook/assets/inbound_emails_imap.png" alt="IMAP connection form with server, port, encryption and credentials"><figcaption><p>The IMAP form: mail server connection plus the mailbox credentials.</p></figcaption></figure>
 
-1. **Enter Authorized Emails**: In the **Put E-mail here** field, type each email address you want to authorize.
-2. **Assign to Sub-Organization (Optional)**:
-   * If no sub-organization is selected, the document will be assigned to the main organization.
-   * If a sub-organization is selected, the document will be directed to that sub-organization only.
-3. **Add Email**: Click **Add** to save each email to the list of authorized addresses.
-4. **Delete Email**: To remove an authorized email, click **Delete** next to the email entry.
+#### OAuth Office365
 
-With this setup, documents from unauthorized email addresses will be ignored, ensuring only specific sources can send documents for import.
+For a single Microsoft 365 user mailbox, choose **OAuth Office365**. Instead of a password, you authorise DocBits through Microsoft: pick the **Document Routing** target, then click **Authenticate** and complete the Microsoft sign‑in.
 
-## **Reply to this email if import can not be done**
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365.png" alt="OAuth Office365 form with Document Routing and an Authenticate button"><figcaption><p>OAuth Office365 connects through Microsoft sign‑in — no password is stored in DocBits.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_4.png" alt=""><figcaption></figcaption></figure>
+#### OAuth Office365 – Tenant
 
-If you enable **Reply to this email if import can not be done**, an additional field appears where you can enter an email address. This email address will receive a notification if any document import attempt fails, allowing you to stay informed of any issues in the import process.
+To connect at the tenant (organisation) level via an Azure app registration, choose **OAuth Office365 – Tenant** and enter the Azure credentials: **Tenant ID**, **Client App ID** and **Client App Value** (client secret). Use **Test connection** to verify, then **Save**.
 
-1. **Enable Failure Notification**: Toggle on **Reply to this email if import can not be done**.
-2. **Enter Notification Email**: In the new field, enter the email address where you’d like to receive failure notifications.
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365_tenant.png" alt="Azure Tenant Configuration with Tenant ID, Client App ID and Client App Value"><figcaption><p>OAuth Office365 – Tenant uses an Azure app registration (Tenant ID, Client App ID, client secret).</p></figcaption></figure>
 
-With this feature enabled, any failed import attempts will trigger an automatic reply to the specified email, helping you quickly address import issues.
+{% hint style="info" %}
+**Document Routing** decides where the imported documents go — **DocBits** (the standard dashboard) or **AI Workforce**. After connecting, the wizard’s next steps let you choose which mailbox **folder** to import from, an optional **shared mailbox**, and whether to **move** processed emails to another folder.
+{% endhint %}
 
-**After configuring all settings, don’t forget to click Save to apply your changes.**
+### Method 2 — Forward emails to DocBits (Inbound Emails)
+
+This method needs the **Inbound Email** module to be switched on first. Go to **Settings → Document Processing → Module**, open the **Document Type** section, find **Inbound Email** and enable the toggle.
+
+<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt="Enabling the Inbound Email module"><figcaption><p>Enable <strong>Inbound Email</strong> under Settings → Document Processing → Module.</p></figcaption></figure>
+
+Once enabled, an **Inbound Emails** section appears under **Settings → Document Processing → Import**. It gives you everything needed to receive forwarded documents:
+
+<figure><img src="../../../../.gitbook/assets/inbound_emails_forward.png" alt="Inbound Emails section: import address, predefined senders and failure-reply address"><figcaption><p>The Inbound Emails section: your import address, the predefined‑senders list, and the failure‑notification address.</p></figcaption></figure>
+
+* **Import address** — a unique, system‑generated address in the form `org_id@environment.inbound.docbits.com`. Forward or send documents to this address and DocBits imports them automatically. Use the copy icon to grab it.
+* **Import Document only from predefined E‑Mail(s)** — when enabled, only the sender addresses you list here are accepted; emails from anyone else are ignored. For each sender you may pick a **Sub‑Organization** (leave it empty to assign to the main organisation). Use **Add** to list more senders and **Delete** to remove one.
+* **Reply to this email if import can not be done** — when enabled, enter an address that should be notified whenever an import attempt fails, so problems don’t go unnoticed.
+
+Click **Save** to apply your changes.
+
+### When to use which
+
+* **Use an Email Import account** when documents already land in a dedicated mailbox and you want DocBits to fetch them on its own — IMAP for generic mail servers, OAuth Office365 for Microsoft 365.
+* **Use Forward Emails** when people should forward documents on demand, or when you don’t want to share mailbox credentials with DocBits.
+* **Combine both** if some documents arrive in a fixed mailbox while others are forwarded ad‑hoc.
+
+{% hint style="info" %}
+Restricting senders (Method 2) and choosing the right **Document Routing** target (Method 1) are the two most common ways to keep an inbound pipeline clean — only the documents you expect, sent where you want them.
+{% endhint %}

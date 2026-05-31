@@ -1,57 +1,74 @@
 # Inkomende e-mails
 
-## Inkomende e-mail activeren voor Documentverwerking
+### Overzicht
 
-Om te beginnen met het gebruik van inkomende e-mail voor documentverwerking, volg je deze stappen:
+DocBits kan documenten rechtstreeks uit e-mail ophalen — geen handmatig uploaden nodig. Er zijn **twee manieren** om e-maildocumenten binnen te halen, beide onder **Instellingen → Documentverwerking → Importeren**:
 
-1. **Ga naar Instellingen**: Begin met het navigeren naar het **Instellingen** menu van de app.
-2. **Selecteer Documentverwerking**: Kies onder instellingen voor **Documentverwerking** om toegang te krijgen tot gerelateerde configuratieopties.
-3. **Open Module**: Klik in de sectie Documentverwerking op **Module**.
-4. **Scroll naar Documenttype**: Scroll naar beneden totdat je **Documenttype** vindt.
-5. **Activeer Inkomende e-mail**: Zoek **Inkomende e-mail** en activeer deze door de schakelaar om te zetten.
+| Methode | Hoe het werkt | Het meest geschikt voor |
+|---------|---------------|--------------------------|
+| **E-mailimportaccount** | DocBits maakt verbinding met een postbus die van u is (**IMAP**, **OAuth Office365** of **OAuth Office365 – Tenant**) en importeert de documenten die het vindt. | Een speciale postbus die uw documenten al ontvangt (bijv. `facturen@uwbedrijf.com`). |
+| **Doorgestuurde e-mails (Inkomende e-mails)** | DocBits geeft u een uniek adres; elke geautoriseerde afzender kan documenten daarheen **doorsturen**. | Incidenteel doorsturen vanaf veel afzenders zonder postbusgegevens te delen. |
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/inbound_emails_1.png)
+U kunt elke methode afzonderlijk of beide samen gebruiken.
 
-## Inkomende e-mail configureren voor Document Importeren
+### Methode 1 — Een postbus verbinden (E-mailimport)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/inbound_emails_2.png)
+Ga naar **Instellingen → Documentverwerking → Importeren** en open de sectie **E-mailimport**. Klik op **Nieuw** om een postbusverbinding toe te voegen.
 
-Nadat je inkomende e-mail hebt geactiveerd, configureer je de instellingen om te bepalen hoe documenten worden geïmporteerd. Zo doe je dat:
+<figure><img src="../../../../.gitbook/assets/inbound_emails_email_import_entry.png" alt="Sectie E-mailimport met de knop Nieuw"><figcaption><p>Klik in de sectie E-mailimport op <strong>Nieuw</strong> om een postbus te verbinden.</p></figcaption></figure>
 
-1. **Ga terug naar Documentverwerking**: Navigeer in de instellingen naar **Documentverwerking**.
-2.  **Selecteer Importeren**: Kies **Importeren** om toegang te krijgen tot de instellingen voor inkomende e-mail.
+De installatiewizard opent. Het eerste veld, **Protocol**, bepaalt hoe DocBits verbinding maakt — kies **IMAP**, **OAuth Office365** of **OAuth Office365 – Tenant**.
 
-    Je ziet de volgende opties:
+<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Vervolgkeuzelijst Protocol met IMAP, OAuth Office365 en OAuth Office365 - Tenant"><figcaption><p>De lijst <strong>Protocol</strong> biedt de drie verbindingstypen.</p></figcaption></figure>
 
-    * **E-mailveld**: Dit veld toont een uniek, door het systeem gegenereerd e-mailadres op basis van je organisatie-ID. Het formaat is `org_id@environment.inbound.docbits.com`. Stuur of stuur e-mails met documenten door naar dit adres voor automatische import.
-    * **Document alleen importeren vanuit vooraf gedefinieerde e-mailadressen**: Zet deze optie aan om imports te beperken tot e-mails die alleen van specifieke, vooraf gedefinieerde adressen zijn ontvangen.
-    * **Beantwoord deze e-mail als de import niet kan worden uitgevoerd**: Zet deze optie aan als je wilt dat het systeem automatisch reageert wanneer een importpoging mislukt.
-3. **Instellingen Opslaan**: Klik op **Opslaan** om de configuraties toe te passen.
+#### IMAP
 
-## Vooraf gedefinieerde e-mailadressen
+Voor een standaardpostbus kiest u **IMAP** en vult u de servergegevens en accountgegevens in:
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/inbound_emails_3.png)
+* **Servernaam** en **Poort** (standaard `993`) van uw mailserver.
+* **Versleuteling** — `SSL`, `TLS` of `None`.
+* **Gebruikersnaam**, **e-mail** en **wachtwoord** van de postbus.
 
-Wanneer de optie **Document alleen importeren vanuit vooraf gedefinieerde e-mailadressen** is ingeschakeld, kun je beheren welke e-mailadressen zijn gemachtigd om documenten naar de inkomende e-mail te sturen.
+<figure><img src="../../../../.gitbook/assets/inbound_emails_imap.png" alt="IMAP-verbindingsformulier met server, poort, versleuteling en inloggegevens"><figcaption><p>Het IMAP-formulier: de verbinding met de mailserver plus de inloggegevens van de postbus.</p></figcaption></figure>
 
-1. **Voer Geautoriseerde E-mails in**: Typ in het veld **Voer e-mail hier in** elk e-mailadres dat je wilt autoriseren.
-2. **Toewijzen aan Suborganisatie (Optioneel)**:
-   * Als er geen suborganisatie is geselecteerd, wordt het document toegewezen aan de hoofdorganisatie.
-   * Als er een suborganisatie is geselecteerd, wordt het document alleen naar die suborganisatie gestuurd.
-3. **E-mail Toevoegen**: Klik op **Toevoegen** om elk e-mailadres op te slaan in de lijst met geautoriseerde adressen.
-4. **E-mail Verwijderen**: Klik op **Verwijderen** naast de e-mailinvoer om een geautoriseerde e-mail te verwijderen.
+#### OAuth Office365
 
-Met deze opzet worden documenten van ongeautoriseerde e-mailadressen genegeerd, zodat alleen specifieke bronnen documenten voor import kunnen verzenden.
+Voor één Microsoft 365-gebruikerspostbus kiest u **OAuth Office365**. In plaats van een wachtwoord autoriseert u DocBits via Microsoft: kies de bestemming voor **Documentroutering**, klik vervolgens op **Verifiëren** en voltooi de Microsoft-aanmelding.
 
-## **Beantwoord deze e-mail als de import niet kan worden uitgevoerd**
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365.png" alt="OAuth Office365-formulier met Documentroutering en een knop Verifiëren"><figcaption><p>OAuth Office365 maakt verbinding via de Microsoft-aanmelding — er wordt geen wachtwoord in DocBits opgeslagen.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/inbound_emails_4.png)
+#### OAuth Office365 – Tenant
 
-Als je **Beantwoord deze e-mail als de import niet kan worden uitgevoerd** inschakelt, verschijnt er een extra veld waarin je een e-mailadres kunt invoeren. Dit e-mailadres ontvangt een melding als een documentimportpoging mislukt, zodat je op de hoogte blijft van eventuele problemen in het importproces.
+Om op tenant-niveau (organisatie) verbinding te maken via een Azure-app-registratie, kiest u **OAuth Office365 – Tenant** en voert u de Azure-gegevens in: **Tenant-ID** (Tenant ID), **Client-app-ID** (Client App ID) en **Client-app-waarde** (clientgeheim). Gebruik **Verbinding testen** om te verifiëren en klik daarna op **Opslaan**.
 
-1. **Schakel Foutmelding in**: Zet **Beantwoord deze e-mail als de import niet kan worden uitgevoerd** aan.
-2. **Voer Melding E-mail in**: Voer in het nieuwe veld het e-mailadres in waar je foutmeldingen wilt ontvangen.
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365_tenant.png" alt="Azure-tenantconfiguratie met Tenant-ID, Client-app-ID en Client-app-waarde"><figcaption><p>OAuth Office365 – Tenant gebruikt een Azure-app-registratie (Tenant-ID, Client-app-ID, clientgeheim).</p></figcaption></figure>
 
-Met deze functie ingeschakeld, zullen mislukte importpogingen een automatische reactie naar het opgegeven e-mailadres triggeren, zodat je snel importproblemen kunt aanpakken.
+{% hint style="info" %}
+**Documentroutering** bepaalt waar de geïmporteerde documenten naartoe gaan — **DocBits** (het standaarddashboard) of **AI Workforce**. Na het verbinden kunt u in de volgende stappen van de wizard kiezen uit welke **map** wordt geïmporteerd, een optionele **gedeelde postbus**, en of verwerkte e-mails naar een andere map worden **verplaatst**.
+{% endhint %}
 
-**Vergeet niet op Opslaan te klikken om je wijzigingen toe te passen na het configureren van alle instellingen.**
+### Methode 2 — E-mails doorsturen naar DocBits (Inkomende e-mails)
+
+Voor deze methode moet eerst de module **Inkomende e-mails** zijn ingeschakeld. Ga naar **Instellingen → Documentverwerking → Module**, open de sectie **Documenttype**, zoek **Inkomende e-mails** en zet de schakelaar aan.
+
+<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt="De module Inkomende e-mails inschakelen"><figcaption><p>Schakel <strong>Inkomende e-mails</strong> in onder Instellingen → Documentverwerking → Module.</p></figcaption></figure>
+
+Zodra deze is ingeschakeld, verschijnt er een sectie **Inkomende e-mails** onder **Instellingen → Documentverwerking → Importeren**. Deze bevat alles wat nodig is om doorgestuurde documenten te ontvangen:
+
+<figure><img src="../../../../.gitbook/assets/inbound_emails_forward.png" alt="Sectie Inkomende e-mails: importadres, vooraf gedefinieerde afzenders en adres voor foutmelding"><figcaption><p>De sectie Inkomende e-mails: uw importadres, de lijst met vooraf gedefinieerde afzenders en het adres voor foutmeldingen.</p></figcaption></figure>
+
+* **Importadres** — een uniek, door het systeem gegenereerd adres in de vorm `org_id@environment.inbound.docbits.com`. Stuur of stuur documenten door naar dit adres en DocBits importeert ze automatisch. Gebruik het kopieerpictogram om het adres over te nemen.
+* **Document alleen importeren vanuit vooraf gedefinieerde e-mailadressen** — wanneer ingeschakeld, worden alleen de hier vermelde afzenderadressen geaccepteerd; e-mails van anderen worden genegeerd. Voor elke afzender kunt u een **Suborganisatie** kiezen (laat leeg om aan de hoofdorganisatie toe te wijzen). Gebruik **Toevoegen** om meer afzenders toe te voegen en **Verwijderen** om er een te verwijderen.
+* **Beantwoord deze e-mail als de import niet kan worden uitgevoerd** — wanneer ingeschakeld, voert u een adres in dat moet worden gewaarschuwd telkens als een importpoging mislukt, zodat problemen niet onopgemerkt blijven.
+
+Klik op **Opslaan** om uw wijzigingen toe te passen.
+
+### Welke methode wanneer
+
+* **Gebruik een e-mailimportaccount** wanneer documenten al in een speciale postbus binnenkomen en u wilt dat DocBits ze zelf ophaalt — IMAP voor algemene mailservers, OAuth Office365 voor Microsoft 365.
+* **Gebruik doorgestuurde e-mails** wanneer mensen documenten op aanvraag moeten doorsturen, of wanneer u de postbusgegevens niet met DocBits wilt delen.
+* **Combineer beide** als sommige documenten in een vaste postbus aankomen terwijl andere incidenteel worden doorgestuurd.
+
+{% hint style="info" %}
+Het beperken van afzenders (Methode 2) en het kiezen van de juiste bestemming voor **Documentroutering** (Methode 1) zijn de twee meest gebruikelijke manieren om een inkomende pijplijn schoon te houden — alleen de documenten die u verwacht, gestuurd naar waar u ze wilt hebben.
+{% endhint %}

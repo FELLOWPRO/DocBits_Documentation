@@ -224,7 +224,7 @@
     * [Exportação](administration-and-setup/settings/document-processing/export.md)
     * [Moduli](administration-and-setup/settings/document-processing/module/README.md)
       * [Modalità Annotazione](administration-and-setup/settings/document-processing/module/annotation-mode.md)
-      * [Email in entrata](administration-and-setup/settings/document-processing/module/inbound-emails.md)
+      * [E-mails recebidos](administration-and-setup/settings/document-processing/module/inbound-emails.md)
       * [Approval Before Export](administration-and-setup/settings/document-processing/module/approval-before-export.md)
       * [Doc Scan](administration-and-setup/settings/document-processing/module/doc-scan.md)
       * [Doc Script](administration-and-setup/settings/document-processing/module/doc-script.md)

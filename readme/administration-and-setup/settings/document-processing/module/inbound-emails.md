@@ -1,57 +1,74 @@
-# Inbound Emails
+# E-mails recebidos
 
-## Activating Inbound Email for Document Processing
+### Visão geral
 
-To begin using inbound email for document processing, follow these steps:
+O DocBits pode buscar documentos diretamente do e-mail — sem upload manual. Há **duas formas** de trazer documentos por e-mail, ambas em **Configurações → Processamento de Documentos → Importar**:
 
-1. **Go to Settings**: Start by navigating to the app’s **Settings** menu.
-2. **Select Document Processing**: Under settings, choose **Document Processing** to access related configuration options.
-3. **Open Modules**: In the Document Processing section, click on **Modules**.
-4. **Scroll to Document Type**: Scroll down until you find **Document Type**.
-5. **Activate Inbound Email**: Find **Inbound Email** and activate it by toggling the switch.
+| Método | Como funciona | Ideal para |
+|--------|---------------|------------|
+| **Conta de importação de e-mail** | O DocBits se conecta a uma caixa de correio sua (**IMAP**, **OAuth Office365** ou **OAuth Office365 – Tenant**) e importa os documentos que encontra. | Uma caixa dedicada que já recebe seus documentos (p. ex. `faturas@suaempresa.com`). |
+| **E-mails encaminhados (E-mails recebidos)** | O DocBits fornece um endereço exclusivo; qualquer remetente autorizado pode **encaminhar** documentos para ele. | Encaminhamento pontual de muitos remetentes sem compartilhar credenciais da caixa. |
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt=""><figcaption></figcaption></figure>
+Você pode usar cada método separadamente ou ambos juntos.
 
-## Configuring Inbound Email for Document Import
+### Método 1 — Conectar uma caixa de correio (Importação de e-mail)
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_2.png" alt=""><figcaption></figcaption></figure>
+Vá para **Configurações → Processamento de Documentos → Importar** e abra a seção **Importação de e-mail**. Clique em **Novo** para adicionar uma conexão de caixa de correio.
 
-After activating inbound email, configure the settings to control how documents are imported. Here’s how:
+<figure><img src="../../../../.gitbook/assets/inbound_emails_email_import_entry.png" alt="Seção Importação de e-mail com o botão Novo"><figcaption><p>Na seção Importação de e-mail, clique em <strong>Novo</strong> para conectar uma caixa de correio.</p></figcaption></figure>
 
-1. **Go back Document Processing**: In the settings, navigate to **Document Processing**.
-2.  **Select Import**: Choose **Import** to access inbound email settings.
+O assistente de configuração abre. O primeiro campo, **Protocolo**, determina como o DocBits se conecta — escolha **IMAP**, **OAuth Office365** ou **OAuth Office365 – Tenant**.
 
-    You’ll see the following options:
+<figure><img src="../../../../.gitbook/assets/inbound_emails_protocol_select.png" alt="Lista suspensa Protocolo com IMAP, OAuth Office365 e OAuth Office365 - Tenant"><figcaption><p>A lista <strong>Protocolo</strong> oferece os três tipos de conexão.</p></figcaption></figure>
 
-    * **Email Field**: This field displays a unique, system-generated email address based on your organization ID. The format is `org_id@environment.inbound.docbits.com`. Send or forward emails with documents to this address for automated import.
-    * **Import Document Only from Predefined E-Mail(s)**: Toggle this option to restrict imports to emails received only from specific, predefined addresses.
-    * **Reply to this Email if Import Cannot Be Done**: Toggle this option if you want the system to automatically reply when an import attempt fails.
-3. **Save Settings**: After configuring these options, click **Save** to apply them.
+#### IMAP
 
-## Predefined E-Mail(s)
+Para uma caixa padrão, escolha **IMAP** e preencha os dados do servidor e as credenciais da conta:
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_3.png" alt=""><figcaption></figcaption></figure>
+* **Nome do servidor** e **Porta** (padrão `993`) do seu servidor de e-mail.
+* **Criptografia** — `SSL`, `TLS` ou `None`.
+* **Nome de usuário**, **e-mail** e **senha** da caixa.
 
-When the **Import Document Only from Predefined E-Mail(s)** option is enabled, you can manage which email addresses are authorized to send documents to the inbound email.
+<figure><img src="../../../../.gitbook/assets/inbound_emails_imap.png" alt="Formulário de conexão IMAP com servidor, porta, criptografia e credenciais"><figcaption><p>O formulário IMAP: a conexão com o servidor de e-mail mais as credenciais da caixa.</p></figcaption></figure>
 
-1. **Enter Authorized Emails**: In the **Put E-mail here** field, type each email address you want to authorize.
-2. **Assign to Sub-Organization (Optional)**:
-   * If no sub-organization is selected, the document will be assigned to the main organization.
-   * If a sub-organization is selected, the document will be directed to that sub-organization only.
-3. **Add Email**: Click **Add** to save each email to the list of authorized addresses.
-4. **Delete Email**: To remove an authorized email, click **Delete** next to the email entry.
+#### OAuth Office365
 
-With this setup, documents from unauthorized email addresses will be ignored, ensuring only specific sources can send documents for import.
+Para uma única caixa de usuário do Microsoft 365, escolha **OAuth Office365**. Em vez de uma senha, você autoriza o DocBits pela Microsoft: escolha o destino do **Roteamento de documentos**, depois clique em **Autenticar** e conclua o login da Microsoft.
 
-## **Reply to this email if import can not be done**
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365.png" alt="Formulário OAuth Office365 com Roteamento de documentos e um botão Autenticar"><figcaption><p>O OAuth Office365 conecta-se pelo login da Microsoft — nenhuma senha é armazenada no DocBits.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_4.png" alt=""><figcaption></figcaption></figure>
+#### OAuth Office365 – Tenant
 
-If you enable **Reply to this email if import can not be done**, an additional field appears where you can enter an email address. This email address will receive a notification if any document import attempt fails, allowing you to stay informed of any issues in the import process.
+Para conectar no nível do locatário (organização) por meio de um registro de aplicativo do Azure, escolha **OAuth Office365 – Tenant** e insira as credenciais do Azure: **ID do locatário** (Tenant ID), **ID do aplicativo cliente** (Client App ID) e **Valor do aplicativo cliente** (segredo do cliente). Use **Testar conexão** para verificar e depois **Salvar**.
 
-1. **Enable Failure Notification**: Toggle on **Reply to this email if import can not be done**.
-2. **Enter Notification Email**: In the new field, enter the email address where you’d like to receive failure notifications.
+<figure><img src="../../../../.gitbook/assets/inbound_emails_o365_tenant.png" alt="Configuração do locatário do Azure com ID do locatário, ID do aplicativo cliente e Valor do aplicativo cliente"><figcaption><p>O OAuth Office365 – Tenant usa um registro de aplicativo do Azure (ID do locatário, ID do aplicativo cliente, segredo do cliente).</p></figcaption></figure>
 
-With this feature enabled, any failed import attempts will trigger an automatic reply to the specified email, helping you quickly address import issues.
+{% hint style="info" %}
+O **Roteamento de documentos** decide para onde vão os documentos importados — **DocBits** (o painel padrão) ou **AI Workforce**. Após conectar, as próximas etapas do assistente permitem escolher de qual **pasta** importar, uma **caixa compartilhada** opcional e se os e-mails processados devem ser **movidos** para outra pasta.
+{% endhint %}
 
-**After configuring all settings, don’t forget to click Save to apply your changes.**
+### Método 2 — Encaminhar e-mails para o DocBits (E-mails recebidos)
+
+Este método requer que o módulo **E-mails recebidos** esteja ativado primeiro. Vá para **Configurações → Processamento de Documentos → Módulo**, abra a seção **Tipo de Documento**, encontre **E-mails recebidos** e ative o botão.
+
+<figure><img src="../../../../.gitbook/assets/inbound_emails_1.png" alt="Ativando o módulo E-mails recebidos"><figcaption><p>Ative <strong>E-mails recebidos</strong> em Configurações → Processamento de Documentos → Módulo.</p></figcaption></figure>
+
+Uma vez ativado, uma seção **E-mails recebidos** aparece em **Configurações → Processamento de Documentos → Importar**. Ela contém tudo o que é necessário para receber documentos encaminhados:
+
+<figure><img src="../../../../.gitbook/assets/inbound_emails_forward.png" alt="Seção E-mails recebidos: endereço de importação, remetentes predefinidos e endereço de notificação de falha"><figcaption><p>A seção E-mails recebidos: seu endereço de importação, a lista de remetentes predefinidos e o endereço de notificação de falhas.</p></figcaption></figure>
+
+* **Endereço de importação** — um endereço exclusivo gerado pelo sistema no formato `org_id@environment.inbound.docbits.com`. Encaminhe ou envie documentos para este endereço e o DocBits os importa automaticamente. Use o ícone de copiar para obtê-lo.
+* **Importar documentos apenas de e-mails predefinidos** — quando ativado, somente os endereços de remetente listados aqui são aceitos; e-mails de qualquer outro são ignorados. Para cada remetente, você pode escolher uma **Suborganização** (deixe vazio para atribuir à organização principal). Use **Adicionar** para listar mais remetentes e **Excluir** para remover um.
+* **Responder a este e-mail se a importação não puder ser feita** — quando ativado, insira um endereço a ser notificado sempre que uma tentativa de importação falhar, para que os problemas não passem despercebidos.
+
+Clique em **Salvar** para aplicar suas alterações.
+
+### Quando usar cada método
+
+* **Use uma conta de importação de e-mail** quando os documentos já chegam a uma caixa dedicada e você quer que o DocBits os busque sozinho — IMAP para servidores de e-mail genéricos, OAuth Office365 para Microsoft 365.
+* **Use e-mails encaminhados** quando as pessoas devem encaminhar documentos sob demanda, ou quando você não quer compartilhar as credenciais da caixa com o DocBits.
+* **Combine ambos** se alguns documentos chegam a uma caixa fixa enquanto outros são encaminhados pontualmente.
+
+{% hint style="info" %}
+Restringir os remetentes (Método 2) e escolher o destino correto do **Roteamento de documentos** (Método 1) são as duas formas mais comuns de manter um fluxo de entrada limpo — apenas os documentos que você espera, direcionados para onde você quer.
+{% endhint %}

@@ -34,6 +34,7 @@
     * [Documenten Samenvoegen](end-user-and-partner-section/end-user-section/dashboard/document-merging.md)
     * [Documentstatus](end-user-and-partner-section/end-user-section/dashboard/document-status.md)
     * [Documenten filteren](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
+    * [Snel zoeken](end-user-and-partner-section/end-user-section/dashboard/quick-search.md)
     * [Persoonlijke Dashboards](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [Overzicht van Geüploade Documenten](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [Taakenteller](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)

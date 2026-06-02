@@ -34,6 +34,7 @@
     * [Dokumentenzusammenführung](end-user-section/dashboard/document-merging.md)
     * [Dokumentenstatus](end-user-section/dashboard/document-status.md)
     * [Dokumente filtern](end-user-section/dashboard/filtering-documents.md)
+    * [Schnellsuche](end-user-section/dashboard/quick-search.md)
     * [Persönliche Dashboards](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [Übersicht der hochgeladenen Dokumente](end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [Aufgabenzähler](end-user-section/dashboard/task-counter.md)

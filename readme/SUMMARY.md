@@ -38,6 +38,7 @@
     * [Document Merging](end-user-and-partner-section/end-user-section/dashboard/document-merging.md)
     * [Document Status](end-user-and-partner-section/end-user-section/dashboard/document-status.md)
     * [Filtering Documents](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
+    * [Quick Search](end-user-and-partner-section/end-user-section/dashboard/quick-search.md)
     * [Personal Dashboards](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [Overview of Uploaded Documents](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [Task Counter](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)

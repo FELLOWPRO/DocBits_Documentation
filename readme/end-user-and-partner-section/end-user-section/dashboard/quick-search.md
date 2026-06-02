@@ -37,10 +37,18 @@ all **case-insensitive**:
 filename=invoice
 ```
 
-Finds documents whose name **starts with** "invoice": `Invoice.pdf`,
-`invoice_2026.xml`, `INVOICE-001.pdf`.
+Finds documents whose name **starts with** "invoice". Matching ignores case, so
+all of these match `filename=invoice`:
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice"><figcaption><p><code>filename=invoice</code> — only names that <strong>start with</strong> "Invoice" (3 results). Compare with <code>:</code> below, which returns far more.</p></figcaption></figure>
+```
+Invoice.pdf   iNVoice.pdf   iNvoiCE.pdf   INVOICE.pdf
+Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
+```
+
+It does **not** match `XYZ_Invoice.pdf` (there "invoice" is in the middle — use
+`:` for that).
+
+<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice, any case"><figcaption><p><code>filename=invoice</code> — only names that <strong>start with</strong> "invoice", any capitalisation (<code>INVOICE.pdf</code>, <code>iNvoiCE.pdf</code>, <code>iNVoice.pdf</code>, <code>Invoice.pdf</code> all match — 7 results). Compare with <code>:</code> below.</p></figcaption></figure>
 
 #### `:` → contains (anywhere)
 
@@ -161,6 +169,29 @@ ap_assignment_code=""
 
 ---
 
+## Smart Filters — one click
+
+At the top of the Quick Search dropdown (click into the search bar) you'll find
+**Smart Filters**: ready-made searches you apply with a single click. Each one
+is just a shortcut for a query you could also type yourself:
+
+| Smart Filter | Finds | Same as typing |
+|--------------|-------|----------------|
+| ⚠️ **Overdue** | Past their due date | `invoice_due_date<today()` |
+| 🕐 **Due soon** | Within the next 7 days | `invoice_due_date<=today()+7` |
+| 👤 **Assigned to me** | Items waiting for your action | `assigned_to=<you>` |
+| 📅 **Today's inbox** | Imported today | `imported_on>=today()` |
+| 📋 **Pending validation** | Ready to be validated | `status=ready_for_validation` |
+| 🧾 **Electronic documents** | E-invoices (XML, ZUGFeRD, EDI) | `is_edoc=true` |
+| ✅ **Full PO match** | Fully matched to a purchase order | `po_match_status=full_matched` |
+| ➗ **Partial PO match** | Partially matched to a purchase order | `po_match_status=partial_matched` |
+| 📉 **Under PO match** | Quantity or unit price under the purchase order | `po_match_status=under_matched` |
+
+The three **PO match** filters and the fulltext fields require fulltext search
+to be enabled for your organisation.
+
+---
+
 ## Part 3 — Operators, connectors, shortcuts
 
 ### The built-in help
@@ -230,6 +261,54 @@ Shorter phrasings for the same queries — use whichever reads better:
 | `#INV-1234` | `invoice_id:INV-1234` | Twitter-style prefix for invoice id |
 | `@User` | `assigned_to:User` | Twitter-style prefix for assignee |
 | `$5000+` | `total_amount>=5000` | `$` prefix for amount thresholds |
+
+---
+
+## Part 4 — Advanced search modes
+
+Beyond field search, three prefix modes search the document content itself.
+
+### Vector (semantic) search — `vector:`
+
+Matches by **meaning**, not exact text — useful for "find documents about XYZ".
+Requires the Vector module; applies to document content.
+
+```
+vector: invoices about office supplies
+vector: shipping delays with Hamburg port
+```
+
+<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Semantic vector search results"><figcaption><p><code>vector: invoices about office supplies</code> — semantically related documents, even without those exact words.</p></figcaption></figure>
+
+### OCR text search — `ocr:`
+
+Searches **inside the page text** the OCR engine extracted — not just the
+structured columns. Useful when the value you remember is in the document body.
+
+```
+ocr: Versandkosten
+ocr: "purchase order PO-12345"
+ocr: Hamburg AND doc_type=INVOICE
+ocr: IBAN
+```
+
+<figure><img src="../../../.gitbook/assets/quick_search_18_ocr.png" alt="OCR text search results"><figcaption><p><code>ocr: demo invoice</code> — matches text found anywhere on the document pages.</p></figcaption></figure>
+
+### Natural-language (AI) search — `ai:`
+
+Describe what you want in plain English; the AI reads your phrase and extracts
+filters (supplier, dates, amounts) into a structured query. Unlike Vector, it
+**builds a query** rather than finding similar documents.
+
+```
+ai: invoices from Ruiz over 1000 last quarter
+ai: overdue invoices waiting on approval
+ai: shipping documents from Hamburg last month
+```
+
+<figure><img src="../../../.gitbook/assets/quick_search_19_ai.png" alt="Natural-language AI search results"><figcaption><p><code>ai: invoices over 1000 from this year</code> — the AI turns the sentence into filters automatically.</p></figcaption></figure>
+
+---
 
 ### Recipes
 

@@ -127,6 +127,16 @@ Use `>`, `<`, `>=`, `<=`, or `between 100 and 500` for a span.
 
 <figure><img src="../../../.gitbook/assets/quick_search_07_amount.png" alt="Filtering by total amount"><figcaption><p><code>total_amount&#62;5000</code> — invoices above 5,000.</p></figcaption></figure>
 
+For a window, use `between`:
+
+```
+total_amount between 1000 and 5000
+```
+
+This is shorthand for `total_amount>=1000 AND total_amount<=5000`.
+
+<figure><img src="../../../.gitbook/assets/quick_search_14_between.png" alt="Amount window with between"><figcaption><p><code>total_amount between 1000 and 5000</code> — every result falls inside the window.</p></figcaption></figure>
+
 ### Find what's missing
 
 ```
@@ -137,6 +147,15 @@ supplier_name=""
 supplier".
 
 <figure><img src="../../../.gitbook/assets/quick_search_12_empty.png" alt="Finding documents with no supplier"><figcaption><p><code>supplier_name=""</code> — documents that have no supplier yet.</p></figcaption></figure>
+
+The same presence check works on any field — for example documents still
+missing an AP assignment code:
+
+```
+ap_assignment_code=""
+```
+
+<figure><img src="../../../.gitbook/assets/quick_search_15_ap_empty.png" alt="Documents missing an AP assignment code"><figcaption><p><code>ap_assignment_code=""</code> — documents that have no AP assignment code. Use <code>ap_assignment_code!=""</code> for those that do.</p></figcaption></figure>
 
 ---
 

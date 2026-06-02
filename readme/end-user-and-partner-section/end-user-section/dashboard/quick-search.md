@@ -40,6 +40,8 @@ filename=invoice
 Finds documents whose name **starts with** "invoice": `Invoice.pdf`,
 `invoice_2026.xml`, `INVOICE-001.pdf`.
 
+<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice"><figcaption><p><code>filename=invoice</code> — only names that <strong>start with</strong> "Invoice" (3 results). Compare with <code>:</code> below, which returns far more.</p></figcaption></figure>
+
 #### `:` → contains (anywhere)
 
 ```

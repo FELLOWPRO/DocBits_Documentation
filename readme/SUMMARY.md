@@ -34,6 +34,7 @@
     * [Unione di Documenti](end-user-and-partner-section/end-user-section/dashboard/document-merging.md)
     * [Stato del documento](end-user-and-partner-section/end-user-section/dashboard/document-status.md)
     * [Filtrar documentos](end-user-and-partner-section/end-user-section/dashboard/filtering-documents.md)
+    * [Pesquisa rápida](end-user-and-partner-section/end-user-section/dashboard/quick-search.md)
     * [Cruscotti personali](end-user-and-partner-section/end-user-section/dashboard/personal-dashboards.md)
     * [Panoramica dei documenti caricati](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [Contatore di attività](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)

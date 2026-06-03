@@ -1,5 +1,9 @@
 # Purchase Order (PO) Matching Cards - Complete Guide
 
+Karty dopasowania zamówień na tej stronie trafiają do grupy **And** w Kreatorze przepływów — porównują dane faktury z dopasowanym zamówieniem przed wykonaniem akcji Then:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty dopasowania zamówień dodaje się do grupy <strong>And</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
 {% endembed %}

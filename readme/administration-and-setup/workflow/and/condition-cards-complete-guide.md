@@ -1,5 +1,9 @@
 # Condition Cards - Complete Guide
 
+Karty warunków na tej stronie trafiają do grup **When** i **And** w Kreatorze przepływów — decydują, czy akcje Then zostaną wykonane:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty warunków dodaje się do grup <strong>When</strong> i <strong>And</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
+
 **Covers:** 31 remaining condition cards
 
 ---

@@ -1,5 +1,9 @@
 # Purchase Order (PO) Matching Cards - Complete Guide
 
+Os cartões de correspondência de pedidos desta página ficam no grupo **And** do Construtor de fluxos de trabalho — comparam os dados da fatura com o pedido correspondente antes de as ações Then serem executadas:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Os cartões de correspondência de pedidos são adicionados ao grupo <strong>And</strong> através de <strong>Add Card</strong>.</p></figcaption></figure>
+
 **Status:** Covers 15 PO comparison cards with detailed calculations
 
 ---

@@ -1,5 +1,9 @@
 # Document Assignment & User Cards - Complete Guide
 
+Estes cartões ficam no grupo **Then** do Construtor de fluxos de trabalho — as ações executadas assim que as condições When/And são atendidas:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Os cartões são adicionados ao grupo <strong>Then</strong> através de <strong>Add Card</strong>.</p></figcaption></figure>
+
 **Covers:** 13 assignment and user-related cards
 
 ---

@@ -1,5 +1,9 @@
 # Purchase Order (PO) Matching Cards - Complete Guide
 
+Die PO-Abgleichskarten auf dieser Seite gehören in die **And**-Gruppe des Workflow-Builders – sie vergleichen die Rechnungsdaten mit der zugeordneten Bestellung, bevor die Then-Aktionen laufen:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>PO-Abgleichskarten werden über <strong>Add Card</strong> zur <strong>And</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
 {% endembed %}

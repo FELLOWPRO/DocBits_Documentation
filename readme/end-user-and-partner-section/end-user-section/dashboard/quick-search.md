@@ -190,6 +190,8 @@ is just a shortcut for a query you could also type yourself:
 The three **PO match** filters and the fulltext fields require fulltext search
 to be enabled for your organisation.
 
+<figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="The Smart Filters dropdown panel"><figcaption><p>The Smart Filters at the top of the Quick Search dropdown — one click applies the filter (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Full / Partial / Under PO match).</p></figcaption></figure>
+
 ---
 
 ## Part 3 — Operators, connectors, shortcuts

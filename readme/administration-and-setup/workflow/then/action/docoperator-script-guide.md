@@ -1,5 +1,9 @@
 # Run DocOperator Prompt (Automation Script)
 
+Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+
 ## Purpose
 This card runs an automated browser action or script using DocOperator. Think of it as a robot that can interact with websites or systems exactly like a human would - clicking buttons, filling forms, extracting data, etc.
 

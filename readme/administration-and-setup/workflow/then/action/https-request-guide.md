@@ -1,5 +1,9 @@
 # Send HTTPS Request
 
+Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+
 ## Purpose
 This card sends a secure message to a website or service and can receive a response back. It's simpler than the "Call API" card and is useful for quick integrations.
 

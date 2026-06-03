@@ -1,5 +1,9 @@
 # Send Email to Groups
 
+Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+
 ## Purpose
 This card automatically sends email notifications to groups of users. Instead of assigning work to individual people, you send the message to a group, and all members of that group receive it.
 

@@ -1,5 +1,9 @@
 # Condition Cards - Complete Guide
 
+De voorwaardekaarten op deze pagina horen in de **When**- en **And**-groep van de Workflow Builder — ze bepalen of de Then-acties worden uitgevoerd:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Voorwaardekaarten worden via <strong>Add Card</strong> aan de <strong>When</strong>- en <strong>And</strong>-groep toegevoegd.</p></figcaption></figure>
+
 **Covers:** 31 remaining condition cards
 
 ---

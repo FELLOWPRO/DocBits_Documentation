@@ -1,5 +1,9 @@
 # Purchase Order (PO) Matching Cards - Complete Guide
 
+De PO-matchingkaarten op deze pagina horen in de **And**-groep van de Workflow Builder — ze vergelijken de factuurgegevens met de gekoppelde inkooporder voordat de Then-acties worden uitgevoerd:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>PO-matchingkaarten worden via <strong>Add Card</strong> aan de <strong>And</strong>-groep toegevoegd.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
 {% endembed %}

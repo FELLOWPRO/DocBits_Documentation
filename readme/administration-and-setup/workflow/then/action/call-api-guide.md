@@ -1,5 +1,9 @@
 # Call External API
 
+Deze kaarten horen in de **Then**-groep van de Workflow Builder — de acties die worden uitgevoerd zodra aan de When/And-voorwaarden is voldaan:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Kaarten worden via <strong>Add Card</strong> aan de <strong>Then</strong>-groep toegevoegd.</p></figcaption></figure>
+
 ## Purpose
 This card allows you to send data to an external website or service and receive information back. Think of it like sending a question to an external service and getting an answer that you can use in your workflow.
 

@@ -1,5 +1,9 @@
 # Condition Cards - Complete Guide
 
+Les cartes de condition de cette page se placent dans les groupes **When** et **And** du Concepteur de workflow — elles déterminent si les actions Then s'exécutent :
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Les cartes de condition sont ajoutées aux groupes <strong>When</strong> et <strong>And</strong> via <strong>Add Card</strong>.</p></figcaption></figure>
+
 **Covers:** 31 remaining condition cards
 
 ---

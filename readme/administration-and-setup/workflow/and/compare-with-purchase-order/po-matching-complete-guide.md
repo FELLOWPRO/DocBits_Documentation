@@ -1,5 +1,9 @@
 # Purchase Order (PO) Matching Cards - Complete Guide
 
+Les cartes de rapprochement de commande de cette page se placent dans le groupe **And** du Concepteur de workflow — elles comparent les données de la facture à la commande associée avant l'exécution des actions Then :
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Les cartes de rapprochement de commande sont ajoutées au groupe <strong>And</strong> via <strong>Add Card</strong>.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
 {% endembed %}

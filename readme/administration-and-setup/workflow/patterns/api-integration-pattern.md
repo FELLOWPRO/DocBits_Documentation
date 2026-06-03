@@ -7,6 +7,12 @@
 
 ---
 
+You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** to open the card library and pick the cards this pattern uses — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` and `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — pick the API, condition and field cards used by this pattern from these categories.</p></figcaption></figure>
+
+---
+
 ## Pattern Overview
 
 This pattern demonstrates how to integrate DocBits with external APIs to fetch, validate, and store data from external systems. It's one of the most common workflow patterns for connecting DocBits to pricing systems, validation services, ERP systems, and other external data sources.

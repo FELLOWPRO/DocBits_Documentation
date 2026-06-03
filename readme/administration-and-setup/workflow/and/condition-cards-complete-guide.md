@@ -4,6 +4,12 @@
 
 ---
 
+The condition cards on this page go in the **When** and **And** groups of the Workflow Builder — they decide whether the Then actions run:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>Condition cards are added to the <strong>When</strong> and <strong>And</strong> groups via <strong>Add Card</strong>.</p></figcaption></figure>
+
+---
+
 ## 📌 Version Information
 
 **Status:** Most condition cards are stable with single or dual-version structures

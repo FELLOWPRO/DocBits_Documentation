@@ -4,6 +4,12 @@
 
 ---
 
+The cards on this page go in the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>Assignment and user cards are added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+
+---
+
 ## 📌 Version Information
 
 **Multi-Version Cards:** DOC_USER_ASSIGN (v2 latest, v3 deprecated), DOC_GROUP_ASSIGN (v2 latest, v3 deprecated), OC_ASSIGN_DOC (v2)

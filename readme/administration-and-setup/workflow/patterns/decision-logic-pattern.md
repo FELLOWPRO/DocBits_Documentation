@@ -7,6 +7,12 @@
 
 ---
 
+You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Logic** category — it holds the condition and branching cards that drive the decision tree, which you combine with the **And** group to evaluate multiple conditions:
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — condition and branching cards live under the <strong>Logic</strong> category.</p></figcaption></figure>
+
+---
+
 ## Pattern Overview
 
 This pattern demonstrates how to implement complex decision logic in DocBits workflows using condition cards to route documents through different processing paths based on document attributes, field values, and business rules.

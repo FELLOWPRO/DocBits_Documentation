@@ -1,5 +1,9 @@
 # Purchase Order (PO) Matching Cards - Complete Guide
 
+Las tarjetas de cotejo de pedidos de esta página van en el grupo **And** del Generador de flujos de trabajo: comparan los datos de la factura con el pedido asociado antes de ejecutar las acciones Then:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Las tarjetas de cotejo de pedidos se añaden al grupo <strong>And</strong> mediante <strong>Add Card</strong>.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
 {% endembed %}

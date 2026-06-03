@@ -1,5 +1,9 @@
 # Condition Cards - Complete Guide
 
+Las tarjetas de condición de esta página van en los grupos **When** y **And** del Generador de flujos de trabajo: deciden si se ejecutan las acciones Then:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Las tarjetas de condición se añaden a los grupos <strong>When</strong> y <strong>And</strong> mediante <strong>Add Card</strong>.</p></figcaption></figure>
+
 **Covers:** 31 remaining condition cards
 
 ---

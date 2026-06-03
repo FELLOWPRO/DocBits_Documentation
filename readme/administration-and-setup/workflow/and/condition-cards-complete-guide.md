@@ -1,5 +1,9 @@
 # Condition Cards - Complete Guide
 
+Le schede di condizione di questa pagina vanno nei gruppi **When** e **And** del Generatore di workflow — decidono se eseguire le azioni Then:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Le schede di condizione vengono aggiunte ai gruppi <strong>When</strong> e <strong>And</strong> tramite <strong>Add Card</strong>.</p></figcaption></figure>
+
 **Covers:** 31 remaining condition cards
 
 ---

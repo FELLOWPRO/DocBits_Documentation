@@ -1,5 +1,9 @@
 # Purchase Order (PO) Matching Cards - Complete Guide
 
+Le schede di abbinamento ordini di questa pagina vanno nel gruppo **And** del Generatore di workflow — confrontano i dati della fattura con l'ordine abbinato prima dell'esecuzione delle azioni Then:
+
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Le schede di abbinamento ordini vengono aggiunte al gruppo <strong>And</strong> tramite <strong>Add Card</strong>.</p></figcaption></figure>
+
 {% embed url="https://youtu.be/qR-lrSaj4Ug" %}
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
 {% endembed %}

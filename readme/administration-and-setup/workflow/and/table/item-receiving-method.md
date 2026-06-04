@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This DocBits card checks whether items in a dataset have a specified receiving method. Users can choose to validate **any** item or **all** items in the dataset based on a selected condition, making it suitable for scenarios where workflows depend on item receiving methods, such as in supply chain management or inventory tracking.
+Este cartão DocBits verifica se os itens de um conjunto de dados têm um método de receção especificado. Os utilizadores podem optar por validar **qualquer** item ou **todos** os itens do conjunto de dados com base numa condição selecionada, tornando-o adequado para cenários em que os fluxos de trabalho dependem dos métodos de receção dos itens, como na gestão da cadeia de abastecimento ou no controlo de inventário.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Receiving Method Validation:** This card verifies the receiving method of items against a specified condition. Users can choose between **any** item or **all** items in the dataset and set the condition as **equals** or **not equals**.
-* **Item Selection:** Users can specify:
-  * **Any Item:** The card triggers if at least one item meets the specified receiving method condition.
-  * **All Items:** The card triggers only if all items meet the specified receiving method condition.
-* **Operators:** The following operators are available to define the condition:
-  * **Equals (=):** Checks if the receiving method matches the specified value.
-  * **Not Equals (≠):** Ensures the receiving method does not match the specified value.
+* **Validação do método de receção:** Este cartão verifica o método de receção dos itens face a uma condição especificada. Os utilizadores podem escolher entre **qualquer** item ou **todos** os itens do conjunto de dados e definir a condição como **equals** ou **not equals**.
+* **Seleção de itens:** Os utilizadores podem especificar:
+  * **Any Item:** O cartão é acionado se pelo menos um item cumprir a condição de método de receção especificada.
+  * **All Items:** O cartão é acionado apenas se todos os itens cumprirem a condição de método de receção especificada.
+* **Operadores:** Os seguintes operadores estão disponíveis para definir a condição:
+  * **Equals (=):** Verifica se o método de receção corresponde ao valor especificado.
+  * **Not Equals (≠):** Garante que o método de receção não corresponde ao valor especificado.
 
-## **Usage:**
+## **Utilização:**
 
-This card is ideal for warehouse managers, inventory coordinators, or logistics personnel who need to validate item receiving methods before allowing further actions, such as processing, storage, or shipping.
+Este cartão é ideal para gestores de armazém, coordenadores de inventário ou pessoal de logística que precisam de validar os métodos de receção dos itens antes de permitir ações adicionais, como processamento, armazenamento ou expedição.
 
-## **Example Scenario:**
+## **Exemplo de cenário:**
 
-* A user configures the card to check if **all items** have the receiving method **equals "Direct Delivery"**. If every item meets this condition, the workflow proceeds, confirming that all items are intended for direct delivery.
+* Um utilizador configura o cartão para verificar se **todos os itens** têm o método de receção **igual a "Direct Delivery"**. Se todos os itens cumprirem esta condição, o fluxo de trabalho prossegue, confirmando que todos os itens se destinam a entrega direta.
 
-By using the "Receiving Method Validation" card, organizations can ensure compliance with receiving protocols, improve logistics workflows, and maintain accuracy in item handling based on specific receiving methods.
+Ao utilizar o cartão "Receiving Method Validation", as organizações podem assegurar a conformidade com os protocolos de receção, melhorar os fluxos de trabalho de logística e manter a precisão no tratamento dos itens com base em métodos de receção específicos.

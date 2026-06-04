@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This DocBits card checks whether a specific module in the system is active or inactive. It enables workflows to proceed based on the activation status of a module, ensuring actions are only performed if the necessary module is available.
+Este cartão DocBits verifica se um módulo específico do sistema está ativo ou inativo. Permite que os fluxos de trabalho prossigam com base no estado de ativação de um módulo, assegurando que as ações só são realizadas se o módulo necessário estiver disponível.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Module Status Validation:** This card verifies the activation status of a specified module and evaluates it against a user-defined condition.
-* **Module Selection:** Users specify the name of the module to be checked, ensuring precise validation.
-* **Operators:** The following conditions can be applied:
-  * **Is:** The workflow continues if the selected module is active.
-  * **Is Not:** The workflow continues if the selected module is inactive.
+* **Validação do estado do módulo:** Este cartão verifica o estado de ativação de um módulo especificado e avalia-o face a uma condição definida pelo utilizador.
+* **Seleção do módulo:** Os utilizadores especificam o nome do módulo a verificar, assegurando uma validação precisa.
+* **Operadores:** As seguintes condições podem ser aplicadas:
+  * **Is:** O fluxo de trabalho continua se o módulo selecionado estiver ativo.
+  * **Is Not:** O fluxo de trabalho continua se o módulo selecionado estiver inativo.
 
-## **Usage:**
+## **Utilização:**
 
-This card is particularly useful for administrators or system managers who need to create workflows dependent on the availability or functionality of specific modules. It helps ensure that workflows are only executed when all required modules are appropriately configured.
+Este cartão é particularmente útil para administradores ou gestores de sistema que precisam de criar fluxos de trabalho dependentes da disponibilidade ou funcionalidade de módulos específicos. Ajuda a assegurar que os fluxos de trabalho só são executados quando todos os módulos necessários estão devidamente configurados.
 
-## **Example Scenario**
+## **Exemplo de cenário**
 
-* A user configures the card to check if the **"Document Processing"** module **is active.** If the module is active, the workflow proceeds, triggering automated document processing tasks. If the module is inactive, the workflow halts, preventing unnecessary actions.
+* Um utilizador configura o cartão para verificar se o módulo **"Document Processing"** **está ativo.** Se o módulo estiver ativo, o fluxo de trabalho prossegue, acionando tarefas automatizadas de processamento de documentos. Se o módulo estiver inativo, o fluxo de trabalho é interrompido, evitando ações desnecessárias.
 
-By using the "Module Active Check" card, organizations can improve workflow reliability, avoid errors due to inactive modules, and ensure processes align with the system configuration.
+Ao utilizar o cartão "Module Active Check", as organizações podem melhorar a fiabilidade do fluxo de trabalho, evitar erros devido a módulos inativos e assegurar que os processos estão alinhados com a configuração do sistema.

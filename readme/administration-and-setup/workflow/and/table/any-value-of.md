@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This DocBits card is used to validate whether any value in a specific column of a table matches a provided regex pattern. If any single entry in the column matches the pattern, the workflow will continue, making it ideal for use cases where identifying even a single match triggers the next steps in the process.
+Este cartão DocBits é utilizado para validar se algum valor numa coluna específica de uma tabela corresponde a um padrão regex fornecido. Se uma única entrada da coluna corresponder ao padrão, o fluxo de trabalho continuará, sendo ideal para casos de utilização em que identificar uma única correspondência aciona os passos seguintes do processo.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Regex Pattern Validation:** This card checks if any value in a given column of a table matches the provided regular expression pattern. The card will trigger and allow the workflow to continue if at least one entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that at least one value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for regex pattern matches.
+* **Validação de padrão regex:** Este cartão verifica se algum valor numa determinada coluna de uma tabela corresponde ao padrão de expressão regular fornecido. O cartão será acionado e permitirá a continuação do fluxo de trabalho se pelo menos uma entrada da coluna cumprir a condição.
+* **Operador:** Os utilizadores definem a coluna e especificam o padrão regex. A condição disponível inclui:
+  * **Matches Regex Pattern:** Verifica se pelo menos um valor na coluna especificada corresponde ao padrão regex.
+* **Seleção de tabela e coluna:** Os utilizadores especificam a tabela e a coluna que pretendem verificar quanto à correspondência do padrão regex.
 
-## **Usage:**
+## **Utilização:**
 
-This card is particularly useful for scenarios where a table contains data that might require specific matches, such as validating email addresses, invoice numbers, or product IDs. It ensures that workflows proceed when any relevant entry matches the defined pattern, without needing to check every entry.
+Este cartão é particularmente útil para cenários em que uma tabela contém dados que podem exigir correspondências específicas, como validar endereços de e-mail, números de fatura ou IDs de produto. Assegura que os fluxos de trabalho prosseguem quando alguma entrada relevante corresponde ao padrão definido, sem ser necessário verificar todas as entradas.
 
-## **Example Scenario:**
+## **Exemplo de cenário:**
 
-* A user sets the card to check for entries in the "Email Address" column of the "Customers" table, using a regex pattern for valid email formats. If at least one email address in the column matches the pattern, the card will trigger the next workflow step, ensuring that the system processes the valid entry.
+* Um utilizador configura o cartão para verificar entradas na coluna "Email Address" da tabela "Customers", utilizando um padrão regex para formatos de e-mail válidos. Se pelo menos um endereço de e-mail na coluna corresponder ao padrão, o cartão aciona o passo seguinte do fluxo de trabalho, assegurando que o sistema processa a entrada válida.
 
-By using the "Regex Pattern Matching" card, organizations can automate workflows based on dynamic, pattern-based validations, streamlining processes and ensuring that only relevant entries trigger further actions.
+Ao utilizar o cartão "Regex Pattern Matching", as organizações podem automatizar fluxos de trabalho com base em validações dinâmicas baseadas em padrões, simplificando processos e assegurando que apenas as entradas relevantes acionam ações adicionais.

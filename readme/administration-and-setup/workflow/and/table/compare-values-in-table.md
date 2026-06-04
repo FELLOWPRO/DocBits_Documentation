@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This DocBits card performs a comparison between values in two specified columns within a table, based on a chosen condition. It’s useful for scenarios that require validating relationships between data points, such as quality control, data consistency checks, or compliance verification.
+Este cartão DocBits realiza uma comparação entre os valores de duas colunas especificadas dentro de uma tabela, com base numa condição escolhida. É útil para cenários que exigem a validação de relações entre pontos de dados, como controlo de qualidade, verificações de consistência de dados ou verificação de conformidade.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Column Comparison:** This card allows users to set conditions to compare values between two columns in the same table.
-* **Operators:** The following operators are available to define the comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Table and Column Selection:** Users specify the table and the two columns they wish to compare.
+* **Comparação de colunas:** Este cartão permite aos utilizadores definir condições para comparar valores entre duas colunas na mesma tabela.
+* **Operadores:** Os seguintes operadores estão disponíveis para definir a comparação:
+  * **Equals (=):** Verifica se os valores das duas colunas são exatamente iguais.
+  * **Not Equals (≠):** Garante que os valores das duas colunas não são iguais.
+  * **Greater Than (>):** Confirma que os valores da primeira coluna são superiores aos da segunda coluna.
+  * **Greater or Equals (≥):** Garante que os valores da primeira coluna são superiores ou iguais aos da segunda coluna.
+  * **Lesser Than (<):** Verifica se os valores da primeira coluna são inferiores aos da segunda coluna.
+  * **Less or Equals (≤):** Garante que os valores da primeira coluna são inferiores ou iguais aos da segunda coluna.
+* **Seleção de tabela e colunas:** Os utilizadores especificam a tabela e as duas colunas que pretendem comparar.
 
-## **Usage:**
+## **Utilização:**
 
-This card is ideal for data analysts, quality control teams, or compliance officers who need to ensure that values in one column relate to values in another according to specific rules, allowing for advanced data validation.
+Este cartão é ideal para analistas de dados, equipas de controlo de qualidade ou responsáveis de conformidade que precisam de assegurar que os valores de uma coluna se relacionam com os de outra de acordo com regras específicas, permitindo uma validação de dados avançada.
 
-## **Example Scenario:**
+## **Exemplo de cenário:**
 
-* A user configures the card to check if values in the "Current Stock" column are **greater than or equal to (≥)** values in the "Minimum Stock Level" column in the "Inventory" table. If all values meet this condition, the workflow proceeds, confirming that stock levels are adequate.
+* Um utilizador configura o cartão para verificar se os valores na coluna "Current Stock" são **superiores ou iguais a (≥)** aos valores na coluna "Minimum Stock Level" na tabela "Inventory". Se todos os valores cumprirem esta condição, o fluxo de trabalho prossegue, confirmando que os níveis de stock são adequados.
 
-By using the "Column Value Comparison" card, organizations can ensure data consistency, maintain quality standards, and validate data relationships within tables.
+Ao utilizar o cartão "Column Value Comparison", as organizações podem assegurar a consistência dos dados, manter padrões de qualidade e validar relações de dados dentro das tabelas.

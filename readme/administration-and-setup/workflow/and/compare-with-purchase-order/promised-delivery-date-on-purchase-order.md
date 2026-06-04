@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-This DocBits card is designed to facilitate the precise comparison of promised delivery dates on purchase orders with delivery dates specified for line items in a table. By integrating a tolerance value, the card ensures flexibility in monitoring delivery timelines, helping maintain inventory planning accuracy and customer satisfaction.
+Esta tarjeta de DocBits está diseñada para facilitar la comparación precisa de las fechas de entrega prometidas en las órdenes de compra con las fechas de entrega especificadas para las líneas de una tabla. Al integrar un valor de tolerancia, la tarjeta garantiza flexibilidad en el seguimiento de los plazos de entrega, ayudando a mantener la precisión de la planificación de inventario y la satisfacción del cliente.
 
-## **Components of the Card**
+## **Componentes de la tarjeta**
 
 1. **Operator**
-   * **Description:** Defines the condition applied to compare delivery dates.
-   * **Options:**
-     * **Equals (=):** Checks if the promised delivery date on the line item matches the purchase order’s delivery date.
-     * **Not Equal (≠):** Ensures the promised delivery date on the line item does not match the date on the purchase order.
-     * **Greater Than (>):** Verifies if the line item’s promised delivery date is later than the purchase order’s delivery date.
-     * **Greater or Equals (≥):** Checks if the line item’s promised delivery date equals or is later than the purchase order’s delivery date.
-     * **Less Than (<):** Confirms if the line item’s promised delivery date is earlier than the purchase order’s delivery date.
-     * **Less or Equals (≤):** Validates if the line item’s promised delivery date equals or is earlier than the purchase order’s delivery date.
+   * **Descripción:** Define la condición que se aplica para comparar las fechas de entrega.
+   * **Opciones:**
+     * **Equals (=):** Comprueba si la fecha de entrega prometida de la línea coincide con la fecha de entrega de la orden de compra.
+     * **Not Equal (≠):** Garantiza que la fecha de entrega prometida de la línea no coincida con la fecha de la orden de compra.
+     * **Greater Than (>):** Verifica si la fecha de entrega prometida de la línea es posterior a la fecha de entrega de la orden de compra.
+     * **Greater or Equals (≥):** Comprueba si la fecha de entrega prometida de la línea es igual o posterior a la fecha de entrega de la orden de compra.
+     * **Less Than (<):** Confirma si la fecha de entrega prometida de la línea es anterior a la fecha de entrega de la orden de compra.
+     * **Less or Equals (≤):** Valida si la fecha de entrega prometida de la línea es igual o anterior a la fecha de entrega de la orden de compra.
 2. **Value**
-   * **Description:** Specifies an allowable margin of error in the delivery date comparison.
-   * **Detail:** Users define the number of days by which the line item delivery date can differ from the promised delivery date.
+   * **Descripción:** Especifica un margen de error admisible en la comparación de fechas de entrega.
+   * **Detalle:** Los usuarios definen el número de días en que la fecha de entrega de la línea puede diferir de la fecha de entrega prometida.
 
-## **Functionality**
+## **Funcionalidad**
 
-* **Condition Evaluation:**\
-  The card calculates the difference between the purchase order's promised delivery date and the delivery dates for line items in the table. The selected operator is then applied to determine if the condition is met.
-* **Action Execution:**
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Evaluación de la condición:**\
+  La tarjeta calcula la diferencia entre la fecha de entrega prometida de la orden de compra y las fechas de entrega de las líneas de la tabla. A continuación, se aplica el operador seleccionado para determinar si se cumple la condición.
+* **Ejecución de la acción:**
+  * **Condición verdadera:** Si la diferencia de fecha de entrega está dentro del rango de tolerancia y cumple la condición establecida por el operador, el flujo de trabajo continúa.
+  * **Condición falsa:** Si la condición no se cumple, el flujo de trabajo no continuará.
 
-## **Setup and Configuration**
+## **Configuración**
 
-* The operator is selected to define the desired comparison condition, such as equal to, greater than or less than. Finally, users specify a tolerance value in days, which allows for small variations in the comparison without triggering alerts.
+* Se selecciona el operador para definir la condición de comparación deseada, como igual a, mayor que o menor que. Por último, los usuarios especifican un valor de tolerancia en días, que permite pequeñas variaciones en la comparación sin disparar alertas.
 
-## **Example Scenario**
+## **Ejemplo de escenario**
 
-* A purchase order specifies a promised delivery date of December 1st. A line item in the table has a promised delivery date of December 3rd. With a tolerance value set to 2 days and the **Equals (≥)** operator selected, the card considers the delivery date within the acceptable range. No alert is triggered, ensuring minor variances are tolerated without disrupting operations.
+* Una orden de compra especifica una fecha de entrega prometida del 1 de diciembre. Una línea de la tabla tiene una fecha de entrega prometida del 3 de diciembre. Con un valor de tolerancia establecido en 2 días y el operador **Equals (≥)** seleccionado, la tarjeta considera que la fecha de entrega está dentro del rango aceptable. No se dispara ninguna alerta, garantizando que las variaciones menores se toleren sin interrumpir las operaciones.
 
-## **Conclusion**
+## **Conclusión**
 
-The "Promised Delivery Date Comparison" card helps streamline supply chain operations by enabling precise monitoring of delivery timelines. With its ability to incorporate tolerances and flexible comparison operators, it ensures adherence to delivery expectations while avoiding unnecessary alerts for minor deviations. This enhances vendor management and overall workflow efficiency.
+La tarjeta "Promised Delivery Date Comparison" ayuda a agilizar las operaciones de la cadena de suministro al permitir un seguimiento preciso de los plazos de entrega. Con su capacidad para incorporar tolerancias y operadores de comparación flexibles, garantiza el cumplimiento de las expectativas de entrega evitando alertas innecesarias por desviaciones menores. Esto mejora la gestión de proveedores y la eficiencia general del flujo de trabajo.

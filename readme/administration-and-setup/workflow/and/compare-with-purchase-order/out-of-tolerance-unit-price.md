@@ -2,43 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to evaluate whether the combined value of unit prices and a specified field exceeds or falls short of a defined threshold. It helps identify any discrepancies where the unit prices, when combined with other fields, are out of tolerance, ensuring that pricing conditions meet expectations and flagging any issues for review or further action.
+Esta tarjeta de flujo de trabajo está diseñada para evaluar si el valor combinado de los precios unitarios y un campo especificado supera o queda por debajo de un umbral definido. Ayuda a identificar cualquier discrepancia en la que los precios unitarios, al combinarse con otros campos, queden fuera de tolerancia, garantizando que las condiciones de precios cumplan las expectativas y señalando cualquier problema para su revisión o acción adicional.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Field Name:**
-   * **Description**: Specifies the document field that contains the value to be combined with the unit price.
-   * **Detail**: The value in this field will be combined with the unit price to create the total combined value for comparison.
+   * **Descripción**: Especifica el campo del documento que contiene el valor que se combinará con el precio unitario.
+   * **Detalle**: El valor de este campo se combinará con el precio unitario para crear el valor combinado total para la comparación.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the combined value of the unit price and the field value against the specified value.
-   * **Options**:
-     * **Equals (=)**: Verifies if the combined value of the unit price and the field matches the specified value.
-     * **Not Equals (≠)**: Ensures the combined value of the unit price and the field is different from the specified value.
-     * **Greater Than (>)**: Verifies if the combined value of the unit price and the field exceeds the specified value.
-     * **Greater or Equals (≥)**: Verifies if the combined value of the unit price and the field is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the combined value of the unit price and the field is less than the specified value.
-     * **Lesser or Equals (≤)**: Verifies if the combined value of the unit price and the field is less than or equal to the specified value.
+   * **Descripción**: Define la condición para comparar el valor combinado del precio unitario y el valor del campo con el valor especificado.
+   * **Opciones**:
+     * **Equals (=)**: Verifica si el valor combinado del precio unitario y el campo coincide con el valor especificado.
+     * **Not Equals (≠)**: Garantiza que el valor combinado del precio unitario y el campo sea distinto del valor especificado.
+     * **Greater Than (>)**: Verifica si el valor combinado del precio unitario y el campo supera el valor especificado.
+     * **Greater or Equals (≥)**: Verifica si el valor combinado del precio unitario y el campo es mayor o igual que el valor especificado.
+     * **Lesser Than (<)**: Verifica si el valor combinado del precio unitario y el campo es menor que el valor especificado.
+     * **Lesser or Equals (≤)**: Verifica si el valor combinado del precio unitario y el campo es menor o igual que el valor especificado.
 3. **Value:**
-   * **Description**: Specifies the value against which the combined unit price and field value will be compared.
-   * **Detail**: This numeric value represents the threshold for comparison. If the combined value of the unit price and field exceeds or falls short of this value (based on the selected operator), the condition will trigger the specified actions.
+   * **Descripción**: Especifica el valor con el que se comparará el valor combinado del precio unitario y el campo.
+   * **Detalle**: Este valor numérico representa el umbral para la comparación. Si el valor combinado del precio unitario y el campo supera o queda por debajo de este valor (según el operador seleccionado), la condición disparará las acciones especificadas.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* &#x20;**Condition Evaluation:** The system calculates the combined value by multiplying or adding the unit price with the field value, depending on the configuration. The result is then compared to the specified value using the selected operator. If the condition is met (i.e., the combined value is out of tolerance), the workflow proceeds with the next step, whether that’s approval, rejection, or further review.
-* **Action Execution:**
-  * **True Condition**: If the comparison results in true (i.e., the combined value meets the condition), the workflow triggers the action associated with the true condition (e.g., approval or notification).
-  * **False Condition**: If the comparison results in false (i.e., the combined value does not meet the condition), the workflow will not proceed.
+* &#x20;**Evaluación de la condición:** El sistema calcula el valor combinado multiplicando o sumando el precio unitario con el valor del campo, según la configuración. A continuación, el resultado se compara con el valor especificado usando el operador seleccionado. Si la condición se cumple (es decir, el valor combinado está fuera de tolerancia), el flujo de trabajo continúa con el siguiente paso, ya sea aprobación, rechazo o revisión adicional.
+* **Ejecución de la acción:**
+  * **Condición verdadera**: Si la comparación resulta verdadera (es decir, el valor combinado cumple la condición), el flujo de trabajo dispara la acción asociada a la condición verdadera (p. ej., aprobación o notificación).
+  * **Condición falsa**: Si la comparación resulta falsa (es decir, el valor combinado no cumple la condición), el flujo de trabajo no continuará.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-* Users select the field that contains the value to be combined with the unit price. Next, they choose the appropriate operator to determine how the combined value will be compared to the specified value. Finally, the user sets the value that the combined price will be compared to.
+* Los usuarios seleccionan el campo que contiene el valor que se combinará con el precio unitario. A continuación, eligen el operador adecuado para determinar cómo se comparará el valor combinado con el valor especificado. Por último, el usuario establece el valor con el que se comparará el precio combinado.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-* An invoice lists 50 units of a product at $30 each, totaling $1500. The related document has a quantity field with a value of 10. The combined price is calculated by multiplying the unit price ($30) and the quantity (10), resulting in $300. The card then compares this combined value to a threshold of $250. Using the “Greater Than” operator, the card identifies that $300 is greater than $250, triggering an approval process for the document.
+* Una factura incluye 50 unidades de un producto a 30 $ cada una, con un total de 1500 $. El documento relacionado tiene un campo de cantidad con un valor de 10. El precio combinado se calcula multiplicando el precio unitario (30 $) y la cantidad (10), lo que da 300 $. A continuación, la tarjeta compara este valor combinado con un umbral de 250 $. Usando el operador "Greater Than", la tarjeta identifica que 300 $ es mayor que 250 $, lo que dispara un proceso de aprobación para el documento.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The "Out of Tolerance Unit Prices Combined with Fields" workflow card helps ensure that pricing and field values are in alignment with business rules. By automating this check, organizations can identify discrepancies early in the process, ensuring that any out-of-tolerance unit prices are flagged for review or necessary action.
+La tarjeta de flujo de trabajo "Out of Tolerance Unit Prices Combined with Fields" ayuda a garantizar que los valores de precios y campos estén alineados con las reglas de negocio. Al automatizar esta comprobación, las organizaciones pueden identificar discrepancias de forma temprana en el proceso, garantizando que cualquier precio unitario fuera de tolerancia se señale para su revisión o la acción necesaria.

@@ -6,23 +6,23 @@ hidden: true
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-This DocBits card allows detailed comparison, comparing the supplier of the invoice and that of the order confirmation. It should be ensured that the supplier who issued the invoice is the same as the one in the order confirmation.
+Esta tarjeta de DocBits permite una comparación detallada, comparando el proveedor de la factura con el de la confirmación de pedido. Debe garantizarse que el proveedor que emitió la factura sea el mismo que el de la confirmación de pedido.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** This card checks whether the supplier in the invoice is the same as in the order confirmation or not.
-* **Operator Value:** Users can set specific conditions such as: Is the supplier who issued the invoice the same as in the PO or not. Available operators include:
-  * **Is (=):** Checks whether the supplier in the invoice matches the supplier in the order confirmation.
-  * **Is not (≠):** Ensures that the supplier who issued the invoice is the same as in the order confirmation.
+* **Supplier on Invoice Supplier on Purchase Order:** Esta tarjeta comprueba si el proveedor de la factura es el mismo que el de la confirmación de pedido o no.
+* **Valor del operador:** Los usuarios pueden establecer condiciones específicas como: si el proveedor que emitió la factura es el mismo que el de la orden de compra o no. Los operadores disponibles incluyen:
+  * **Is (=):** Comprueba si el proveedor de la factura coincide con el proveedor de la confirmación de pedido.
+  * **Is not (≠):** Garantiza que el proveedor que emitió la factura sea el mismo que el de la confirmación de pedido.
 
-## **Usage:**
+## **Uso:**
 
-This Card is helpful to ensure the entire process is handled with the same supplier and everything fits together. This ensures that if there are discrepancies, attention is drawn to checking these discrepancies and not paying the invoice to an incorrect supplier who has nothing to do with the order and order confirmation.
+Esta tarjeta resulta útil para garantizar que todo el proceso se gestione con el mismo proveedor y que todo encaje. Esto garantiza que, si hay discrepancias, se preste atención a comprobarlas y no se pague la factura a un proveedor incorrecto que no tiene nada que ver con el pedido y la confirmación de pedido.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-* An order is placed, then the order confirmation comes and then the invoice is issued. The entire ordering process is carried out with one supplier. If this is not the case, the card can immediately determine that there are discrepancies between the suppliers and thus ensures that no incorrect payments are made and that the invoice is only made with the supplier who was also involved in the entire process.
+* Se realiza un pedido, luego llega la confirmación de pedido y, a continuación, se emite la factura. Todo el proceso de pedido se lleva a cabo con un proveedor. Si no es así, la tarjeta puede determinar de inmediato que hay discrepancias entre los proveedores y, de este modo, garantiza que no se realicen pagos incorrectos y que la factura solo se realice con el proveedor que también participó en todo el proceso.
 
-By using the “Supplier on Invoice … Supplier on Purchase Order” card, companies can automate the verification of suppliers who issue invoices and the associated order confirmations.
+Al usar la tarjeta "Supplier on Invoice … Supplier on Purchase Order", las empresas pueden automatizar la verificación de los proveedores que emiten facturas y las confirmaciones de pedido asociadas.

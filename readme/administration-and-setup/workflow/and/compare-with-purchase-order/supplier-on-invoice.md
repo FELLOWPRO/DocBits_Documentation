@@ -2,33 +2,33 @@
 
 <figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to compare the supplier information on an invoice against the supplier information on the related purchase order. The card ensures that the supplier on the invoice matches the supplier on the purchase order. This comparison helps verify that the correct supplier is invoicing for the order and can trigger actions based on any discrepancies.
+Esta tarjeta de flujo de trabajo está diseñada para comparar la información del proveedor de una factura con la información del proveedor de la orden de compra relacionada. La tarjeta garantiza que el proveedor de la factura coincida con el proveedor de la orden de compra. Esta comparación ayuda a verificar que el proveedor correcto está facturando el pedido y puede disparar acciones según cualquier discrepancia.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Operator:**
-   * **Description**: Defines the condition for comparing the supplier on the invoice to the supplier on the purchase order.
-   * **Options**:
-     * **Is**: Checks if the supplier on the invoice matches the supplier on the purchase order.
-     * **Is Not**: Ensures that the supplier on the invoice does not match the supplier on the purchase order.
+   * **Descripción**: Define la condición para comparar el proveedor de la factura con el proveedor de la orden de compra.
+   * **Opciones**:
+     * **Is**: Comprueba si el proveedor de la factura coincide con el proveedor de la orden de compra.
+     * **Is Not**: Garantiza que el proveedor de la factura no coincida con el proveedor de la orden de compra.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Condition Evaluation:** The system compares the supplier on the invoice to the supplier on the purchase order based on the selected operator. If the comparison condition is true (e.g., the supplier is the same or different as required), the workflow will proceed accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the supplier on the invoice matches the supplier on the purchase order), the workflow continues without triggering any errors.
-  * **False Condition**: If the condition evaluates to false (e.g., the supplier on the invoice does not match the supplier on the purchase order), the workflow will not continue.
+* **Evaluación de la condición:** El sistema compara el proveedor de la factura con el proveedor de la orden de compra según el operador seleccionado. Si la condición de comparación es verdadera (p. ej., el proveedor es el mismo o diferente según se requiera), el flujo de trabajo continuará en consecuencia.
+* **Ejecución de la acción:**
+  * **Condición verdadera**: Si la condición se evalúa como verdadera (p. ej., el proveedor de la factura coincide con el proveedor de la orden de compra), el flujo de trabajo continúa sin disparar ningún error.
+  * **Condición falsa**: Si la condición se evalúa como falsa (p. ej., el proveedor de la factura no coincide con el proveedor de la orden de compra), el flujo de trabajo no continuará.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-* Users choose the appropriate operator ("Is" or "Is Not") to define how the suppliers will be compared.
+* Los usuarios eligen el operador adecuado ("Is" o "Is Not") para definir cómo se compararán los proveedores.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-* An invoice lists a supplier with the ID "SUP123" and the related purchase order also lists "SUP123" as the supplier. Using the "Is" operator, the card compares the suppliers and finds them to be the same, so the workflow proceeds without any issue.
+* Una factura indica un proveedor con el ID "SUP123" y la orden de compra relacionada también indica "SUP123" como proveedor. Usando el operador "Is", la tarjeta compara los proveedores y los encuentra iguales, por lo que el flujo de trabajo continúa sin problemas.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The "Supplier Comparison" workflow card ensures that the correct supplier is invoicing for the purchase order, helping to prevent discrepancies and errors in the procurement process. By automatically verifying supplier information, organizations can streamline their invoice approval process and reduce the risk of fraud or errors in supplier billing.
+La tarjeta de flujo de trabajo "Supplier Comparison" garantiza que el proveedor correcto esté facturando la orden de compra, ayudando a evitar discrepancias y errores en el proceso de compras. Al verificar automáticamente la información del proveedor, las organizaciones pueden agilizar su proceso de aprobación de facturas y reducir el riesgo de fraude o errores en la facturación de proveedores.

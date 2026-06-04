@@ -1,19 +1,19 @@
 # Cards
 
-Cards are the building blocks of every workflow. You combine them in the **When / And / Then** groups to describe when a workflow runs and what it does. This section explains the available cards and what each one does.
+Karty to elementy składowe każdego przepływu pracy. Łączysz je w grupach **When / And / Then**, aby opisać, kiedy przepływ pracy jest uruchamiany i co robi. Ta sekcja wyjaśnia dostępne karty i działanie każdej z nich.
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library grouped by category"><figcaption><p>The <strong>Add Card</strong> library — cards are grouped by category.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library grouped by category"><figcaption><p>Biblioteka <strong>Add Card</strong> — karty są pogrupowane według kategorii.</p></figcaption></figure>
 
-## Card groups
+## Grupy kart
 
-- **When** — the trigger cards that start a workflow (e.g. document type, document type one of).
-- **And** — condition cards that must also be true before the actions run. These include *Compare with Purchase Order* (PO matching), *Document Field* comparisons, *Date & Time*, *Logic*, *Status*, *Table* and *Assignee* conditions.
-- **Then** — action cards that do the work: set fields, approve/reject, change status, export, create tasks, assign documents, manipulate tables, and run actions (Call API, Send HTTPS request, Run Workflow, AI calculations).
+- **When** — karty wyzwalaczy, które uruchamiają przepływ pracy (np. typ dokumentu, typ dokumentu będący jednym z).
+- **And** — karty warunków, które również muszą być spełnione, zanim akcje zostaną uruchomione. Należą do nich warunki *Compare with Purchase Order* (dopasowanie PO), porównania *Document Field*, *Date & Time*, *Logic*, *Status*, *Table* oraz *Assignee*.
+- **Then** — karty akcji, które wykonują pracę: ustawiają pola, zatwierdzają/odrzucają, zmieniają status, eksportują, tworzą zadania, przypisują dokumenty, manipulują tabelami oraz uruchamiają akcje (Call API, Send HTTPS request, Run Workflow, obliczenia AI).
 
-## Card reference guides
+## Przewodniki referencyjne kart
 
-For a complete reference of each card and its options, see the *complete guide* pages in this section (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards, and the Action cards).
+Pełną dokumentację każdej karty i jej opcji znajdziesz na stronach *complete guide* w tej sekcji (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards oraz karty Action).
 
-## Combining cards
+## Łączenie kart
 
-To see proven combinations of cards that solve common business scenarios, see the **Workflow Pattern Guides**.
+Aby zobaczyć sprawdzone kombinacje kart rozwiązujące typowe scenariusze biznesowe, zobacz **Workflow Pattern Guides**.

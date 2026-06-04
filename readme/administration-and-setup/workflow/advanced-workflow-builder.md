@@ -1,28 +1,28 @@
 # Advanced Workflow
 
-The **Advanced Workflow** builder is a node-graph editor for workflows that need branching, parallel paths and flow control — beyond the linear When/And/Then of the Standard builder. You arrange nodes on a canvas and connect them to define the execution flow.
+Kreator **Advanced Workflow** to edytor grafu węzłów dla przepływów pracy, które wymagają rozgałęzień, równoległych ścieżek i kontroli przepływu — wykraczających poza liniowy model When/And/Then z kreatora Standard. Układasz węzły na obszarze roboczym i łączysz je, aby zdefiniować przebieg wykonywania.
 
-## How to access
+## Jak uzyskać dostęp
 
-Open the Advanced Workflow designer from the workflow area (the advanced builder canvas). You start from a **Start** node and build out the flow by adding nodes.
+Otwórz projektant Advanced Workflow z obszaru przepływów pracy (obszar roboczy kreatora zaawansowanego). Rozpoczynasz od węzła **Start** i budujesz przepływ, dodając węzły.
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_canvas.png" alt="Advanced Workflow node-graph canvas with toolbar"><figcaption><p>The Advanced Workflow canvas — a node graph with zoom, run, grid and save controls. Give the workflow a name in the toolbar.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_advanced_canvas.png" alt="Advanced Workflow node-graph canvas with toolbar"><figcaption><p>Obszar roboczy Advanced Workflow — graf węzłów z elementami sterującymi powiększeniem, uruchamianiem, siatką i zapisem. Nadaj przepływowi pracy nazwę na pasku narzędzi.</p></figcaption></figure>
 
-## Adding nodes
+## Dodawanie węzłów
 
-Click **+ Add** to open the node menu. In addition to the familiar **When**, **And** and **Then** cards, the advanced builder adds flow-control nodes:
+Kliknij **+ Add**, aby otworzyć menu węzłów. Oprócz znanych kart **When**, **And** i **Then** kreator zaawansowany dodaje węzły kontroli przepływu:
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced Workflow Add menu with node types"><figcaption><p>The <strong>+ Add</strong> node menu: When / And / Then plus Wait ALL, Wait ANY, OR and Note.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced Workflow Add menu with node types"><figcaption><p>Menu węzłów <strong>+ Add</strong>: When / And / Then oraz Wait ALL, Wait ANY, OR i Note.</p></figcaption></figure>
 
-- **When / And / Then** — the same condition and action cards as the Standard builder.
-- **Wait ALL** — wait until *all* incoming branches complete before continuing.
-- **Wait ANY** — continue as soon as *any* incoming branch completes.
-- **OR** — branch the flow down alternative paths.
-- **Note** — a free-text annotation on the canvas (does not affect execution).
+- **When / And / Then** — te same karty warunków i akcji co w kreatorze Standard.
+- **Wait ALL** — czekaj, aż *wszystkie* przychodzące gałęzie zostaną ukończone, zanim przejdziesz dalej.
+- **Wait ANY** — kontynuuj, gdy tylko *którakolwiek* przychodząca gałąź zostanie ukończona.
+- **OR** — rozgałęź przepływ na alternatywne ścieżki.
+- **Note** — swobodna adnotacja tekstowa na obszarze roboczym (nie wpływa na wykonywanie).
 
-Run the flow with the play control, validate it, and save with the save button in the toolbar.
+Uruchom przepływ za pomocą elementu sterującego odtwarzaniem, zweryfikuj go i zapisz przyciskiem zapisu na pasku narzędzi.
 
-## Next steps
+## Następne kroki
 
-- See what each card does in the **Cards** section.
-- For simple linear automations, the **Standard Workflow** builder is faster to set up.
+- Zobacz, co robi każda karta, w sekcji **Cards**.
+- W przypadku prostych liniowych automatyzacji szybszy w konfiguracji jest kreator **Standard Workflow**.

@@ -1,22 +1,21 @@
-# Validation & Testing
+# Validatie & Testen
 
-Voordat je op een Advanced Workflow vertrouwt, gebruik je de werkbalkbedieningen om te bevestigen dat deze correct is en zich gedraagt zoals verwacht.
+Terwijl u een Advanced Workflow bouwt, kunt u deze met twee knoppen in de werkbalk controleren zonder de builder te verlaten. Deze zijn bedoeld voor *snelle controles tijdens het bouwen* — voor opgeslagen, herhaalbare tests gebruikt u de [Test Manager](../test-manager.md).
 
 ## Validate
 
-Klik op de **validate**-knop (het check-circle-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Validatie controleert de graaf op problemen — niet-verbonden nodes, ontbrekende configuratie en ongeldige verbindingen — zodat je ze kunt oplossen voordat de workflow op echte documenten wordt uitgevoerd.
+Klik op de **Validate**-knop (het check-circle-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Validatie controleert de graaf op problemen — niet-verbonden nodes, ontbrekende configuratie en ongeldige verbindingen — en wijst ze aan zodat u ze kunt oplossen voordat de workflow op echte documenten wordt uitgevoerd.
 
 ## Test
 
-Klik op de **test**-knop (het play-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) om de workflow tegen een voorbeeld uit te voeren en te zien hoe deze zich gedraagt, zonder live documenten te beïnvloeden.
+Klik op de **Test**-knop (het play-pictogram, of druk op <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) om de huidige flow tegen een voorbeeld uit te voeren en te zien hoe deze zich gedraagt, zonder live documenten te beïnvloeden. Dit is de snelste manier om een wijziging die u zojuist op het canvas hebt gemaakt te controleren.
 
-## Testscenario's
+## Wanneer welke gebruiken
 
-Voor herhaalbare controles sla je **testscenario's** op in de **Test Manager** (zie het [Dashboard](../workflow-dashboard.md)). Elk scenario registreert een verwachte uitkomst en toont een geslaagd/mislukt-resultaat, en **Run All Tests** voert ze samen opnieuw uit — zodat je kunt bevestigen dat je workflows zich na een wijziging nog steeds correct gedragen.
-
-<figure><img src="../../../.gitbook/assets/workflow_test_manager.png" alt="Lijst van de Workflow Test Manager met testscenario's en Run All Tests"><figcaption><p>De Test Manager — opgeslagen scenario's met geslaagd/mislukt-resultaten en <strong>Run All Tests</strong>.</p></figcaption></figure>
+- **Validate / Test in de builder** (deze pagina) — directe feedback terwijl u de flow ontwerpt.
+- **[Test Manager](../test-manager.md)** — sla het scenario op zodat u het later opnieuw kunt uitvoeren (en samen met al uw andere scenario's) om regressies na toekomstige wijzigingen op te sporen.
 
 ## Volgende stappen
 
-- Bekijk de nodetypes en verbindingen in [Nodes](nodes.md).
-- Bekijk alle werkbalk- en canvasbedieningen in [Toolbar & Canvas](toolbar-and-canvas.md).
+- Bekijk de nodetypen en verbindingen in [Nodes](nodes.md).
+- Bekijk alle werkbalk- en canvasknoppen in [Werkbalk & Canvas](toolbar-and-canvas.md).

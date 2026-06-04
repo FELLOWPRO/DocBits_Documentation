@@ -1,22 +1,21 @@
-# Walidacja i Testowanie
+# Walidacja i testowanie
 
-Zanim zaczniesz polegać na Zaawansowanym Workflow, użyj elementów sterujących paska narzędzi, aby potwierdzić, że jest poprawny i zachowuje się zgodnie z oczekiwaniami.
+Podczas budowania Advanced Workflow dwa elementy sterujące na pasku narzędzi pozwalają sprawdzić go bez opuszczania kreatora. Służą one do *szybkich kontroli podczas budowania* — w przypadku zapisanych, powtarzalnych testów użyj [Test Managera](../test-manager.md).
 
 ## Validate
 
-Kliknij element **Validate** (ikona okręgu z haczykiem lub naciśnij <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Walidacja sprawdza graf pod kątem problemów — niepołączonych węzłów, brakującej konfiguracji i nieprawidłowych połączeń — dzięki czemu możesz je naprawić, zanim workflow zostanie uruchomiony na rzeczywistych dokumentach.
+Kliknij element sterujący **Validate** (ikona okręgu z zaznaczeniem lub naciśnij <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Walidacja sprawdza graf pod kątem problemów — niepołączonych węzłów, brakującej konfiguracji i nieprawidłowych połączeń — i wskazuje je, abyś mógł je naprawić, zanim przepływ pracy zostanie uruchomiony na rzeczywistych dokumentach.
 
 ## Test
 
-Kliknij element **Test** (ikona odtwarzania lub naciśnij <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>), aby uruchomić workflow na próbce i zobaczyć, jak się zachowuje, bez wpływu na bieżące dokumenty.
+Kliknij element sterujący **Test** (ikona odtwarzania lub naciśnij <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>), aby uruchomić bieżący przepływ na przykładowych danych i obserwować, jak się zachowuje, bez wpływu na rzeczywiste dokumenty. To najszybszy sposób na sprawdzenie poprawności zmiany, którą właśnie wprowadziłeś na kanwie.
 
-## Scenariusze testowe
+## Kiedy czego używać
 
-Aby przeprowadzać powtarzalne kontrole, zapisz **scenariusze testowe** w **Test Manager** (zobacz [Pulpit](../workflow-dashboard.md)). Każdy scenariusz rejestruje oczekiwany wynik i pokazuje rezultat pass/fail, a **Run All Tests** uruchamia je ponownie wszystkie razem — dzięki czemu możesz potwierdzić, że Twoje workflow nadal zachowują się poprawnie po zmianie.
-
-<figure><img src="../../../.gitbook/assets/workflow_test_manager.png" alt="Lista Test Managera ze scenariuszami testowymi i przyciskiem Run All Tests"><figcaption><p>Test Manager — zapisane scenariusze z wynikami pass/fail oraz przyciskiem <strong>Run All Tests</strong>.</p></figcaption></figure>
+- **Validate / Test w kreatorze** (ta strona) — natychmiastowa informacja zwrotna podczas projektowania przepływu.
+- **[Test Manager](../test-manager.md)** — zapisz scenariusz, aby móc go uruchomić ponownie później (i razem ze wszystkimi pozostałymi scenariuszami) w celu wykrycia regresji po przyszłych zmianach.
 
 ## Następne kroki
 
-- Przejrzyj typy węzłów i połączenia w sekcji [Węzły](nodes.md).
-- Zobacz wszystkie elementy sterujące paska narzędzi i kanwy w [Pasku narzędzi i Kanwie](toolbar-and-canvas.md).
+- Zapoznaj się z typami węzłów i połączeniami w [Węzły](nodes.md).
+- Zobacz wszystkie elementy sterujące paska narzędzi i kanwy w [Pasek narzędzi i kanwa](toolbar-and-canvas.md).

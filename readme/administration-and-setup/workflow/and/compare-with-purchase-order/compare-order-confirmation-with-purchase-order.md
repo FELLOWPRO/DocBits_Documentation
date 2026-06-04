@@ -4,49 +4,49 @@
 
 <figure><img src="../../../../.gitbook/assets/image (267).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-This DocBits card is designed to compare a specific order data field—such as quantity, discount, or unit price—between an order confirmation and a purchase order. By allowing a focused comparison of one field at a time, it ensures precision in validating key data points, maintaining order accuracy. **Version 4** expands this functionality by allowing comparisons between different entities such as the purchase order, received quantities, and the document itself, adding more flexibility and control to the workflow.
+Ova DocBits kartica je dizajnirana da uporedi određeno polje podataka porudžbine — kao što su količina, popust ili jedinična cena — između potvrde porudžbine i naloga za nabavku. Omogućavanjem fokusiranog poređenja jednog po jednog polja, ona obezbeđuje preciznost u validaciji ključnih tačaka podataka, održavajući tačnost porudžbine. **Verzija 4** proširuje ovu funkcionalnost omogućavajući poređenja između različitih entiteta kao što su nalog za nabavku, primljene količine i sam dokument, dodajući veću fleksibilnost i kontrolu radnom toku.
 
-## Components of the Card:
+## Komponente kartice:
 
 1. **Any/All**&#x20;
-   * **Description:** Determines whether the condition applies to any or all lines in the order confirmation.\
-     **Options:**
-     * **Any**: The comparison will trigger if the selected field value in any line of the order confirmation matches the corresponding value in the purchase order.
-     * **All**: The comparison will trigger only if the selected field value in all lines of the order confirmation matches the corresponding value in the purchase order.
+   * **Opis:** Određuje da li se uslov primenjuje na bilo koju ili sve linije u potvrdi porudžbine.\
+     **Opcije:**
+     * **Any**: Poređenje će se pokrenuti ako se vrednost izabranog polja u bilo kojoj liniji potvrde porudžbine poklapa sa odgovarajućom vrednošću u nalogu za nabavku.
+     * **All**: Poređenje će se pokrenuti samo ako se vrednost izabranog polja u svim linijama potvrde porudžbine poklapa sa odgovarajućom vrednošću u nalogu za nabavku.
 2. **Order Data Field**
-   * **Description**: Specifies the data field to be compared between the order confirmation and the purchase order.
-   * **Detail**: Users can select one of the following fields for comparison:
-     * **Quantity**: Compares the quantity ordered with the confirmed quantity.
-     * **Discount**: Validates that the discount in the confirmation matches the purchase order.
-     * **Unit Price**: Ensures that the unit price in the confirmation aligns with the purchase order.
+   * **Opis**: Navodi polje podataka koje treba uporediti između potvrde porudžbine i naloga za nabavku.
+   * **Detalj**: Korisnici mogu izabrati jedno od sledećih polja za poređenje:
+     * **Quantity**: Upoređuje naručenu količinu sa potvrđenom količinom.
+     * **Discount**: Proverava da li se popust u potvrdi poklapa sa nalogom za nabavku.
+     * **Unit Price**: Obezbeđuje da je jedinična cena u potvrdi usklađena sa nalogom za nabavku.
 3. **Operator**
-   * **Description**: Defines the condition applied to the comparison of the selected data field.
-   * **Options**:
-     * **Equals (=)**: Confirms that the value matches the purchase order.
-     * **Not Equals (≠)**: Ensures the value is different from the purchase order.
-     * **Greater Than (>)**: Verifies that the value exceeds the purchase order’s value.
-     * **Greater or Equals (≥)**: Confirms that the value equals or exceeds the purchase order’s value.
-     * **Less Than (<)**: Checks that the value is below the purchase order’s value.
-     * **Less or Equals (≤)**: Confirms that the value is below or equals the purchase order’s value.
+   * **Opis**: Definiše uslov koji se primenjuje na poređenje izabranog polja podataka.
+   * **Opcije**:
+     * **Equals (=)**: Potvrđuje da se vrednost poklapa sa nalogom za nabavku.
+     * **Not Equals (≠)**: Obezbeđuje da se vrednost razlikuje od naloga za nabavku.
+     * **Greater Than (>)**: Proverava da li vrednost prekoračuje vrednost naloga za nabavku.
+     * **Greater or Equals (≥)**: Potvrđuje da je vrednost jednaka ili veća od vrednosti naloga za nabavku.
+     * **Less Than (<)**: Proverava da li je vrednost ispod vrednosti naloga za nabavku.
+     * **Less or Equals (≤)**: Potvrđuje da je vrednost ispod ili jednaka vrednosti naloga za nabavku.
 
-## **Additional Components in Version 4**:
+## **Dodatne komponente u Verziji 4**:
 
-* **Comparison Type**: Selects the entities to compare. The options include:
-  * **Purchase Order to Document**: Compares the purchase order data with the related document.
-  * **Received to Document**: Compares the received data (e.g., quantities received) with the document.
-  * **Purchase Order to Received**: Compares the purchase order data with the received quantities.
+* **Comparison Type**: Bira entitete za poređenje. Opcije uključuju:
+  * **Purchase Order to Document**: Upoređuje podatke naloga za nabavku sa povezanim dokumentom.
+  * **Received to Document**: Upoređuje primljene podatke (npr. primljene količine) sa dokumentom.
+  * **Purchase Order to Received**: Upoređuje podatke naloga za nabavku sa primljenim količinama.
 
-## Functionality:
+## Funkcionalnost:
 
-* **Field Comparison**: The system compares the selected order data field (Unit Price, Discount, or Quantity) from the order confirmation to the corresponding value in the purchase order.
-* **Action Execution**: Based on the comparison result and operator condition, the card can trigger follow-up actions, such as notifications or alerts.
+* **Poređenje polja**: Sistem upoređuje izabrano polje podataka porudžbine (Unit Price, Discount ili Quantity) iz potvrde porudžbine sa odgovarajućom vrednošću u nalogu za nabavku.
+* **Izvršavanje akcije**: Na osnovu rezultata poređenja i uslova operatora, kartica može pokrenuti naredne akcije, kao što su obaveštenja ili upozorenja.
 
-## Example Scenario:
+## Primer scenarija:
 
-* An order confirmation specifies a **unit price** of $50, while the purchase order states $45. Using the "Greater Than" operator, the card flags the discrepancy, enabling the procurement team to address it before processing.
+* Potvrda porudžbine navodi **jediničnu cenu** od $50, dok nalog za nabavku navodi $45. Koristeći operator "Greater Than", kartica označava nepodudaranje, omogućavajući timu za nabavku da ga reši pre obrade.
 
-## Conclusion:
+## Zaključak:
 
-This card simplifies the validation of individual order data fields, ensuring compliance with purchase order terms. By isolating one field at a time for comparison, it supports targeted reviews and error prevention in order processing.
+Ova kartica pojednostavljuje validaciju pojedinačnih polja podataka porudžbine, obezbeđujući usklađenost sa uslovima naloga za nabavku. Izdvajanjem jednog po jednog polja za poređenje, ona podržava ciljane preglede i sprečavanje grešaka u obradi porudžbina.

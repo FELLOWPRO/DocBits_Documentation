@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-This DocBits card is designed to facilitate the precise comparison of promised delivery dates on purchase orders with delivery dates specified for line items in a table. By integrating a tolerance value, the card ensures flexibility in monitoring delivery timelines, helping maintain inventory planning accuracy and customer satisfaction.
+Ova DocBits kartica je dizajnirana da olakša precizno poređenje obećanih datuma isporuke na nalozima za nabavku sa datumima isporuke navedenim za stavke u tabeli. Integracijom vrednosti tolerancije, kartica obezbeđuje fleksibilnost u praćenju vremenskih rokova isporuke, pomažući u održavanju tačnosti planiranja zaliha i zadovoljstva kupaca.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Operator**
-   * **Description:** Defines the condition applied to compare delivery dates.
-   * **Options:**
-     * **Equals (=):** Checks if the promised delivery date on the line item matches the purchase order’s delivery date.
-     * **Not Equal (≠):** Ensures the promised delivery date on the line item does not match the date on the purchase order.
-     * **Greater Than (>):** Verifies if the line item’s promised delivery date is later than the purchase order’s delivery date.
-     * **Greater or Equals (≥):** Checks if the line item’s promised delivery date equals or is later than the purchase order’s delivery date.
-     * **Less Than (<):** Confirms if the line item’s promised delivery date is earlier than the purchase order’s delivery date.
-     * **Less or Equals (≤):** Validates if the line item’s promised delivery date equals or is earlier than the purchase order’s delivery date.
+   * **Opis:** Definiše uslov koji se primenjuje za poređenje datuma isporuke.
+   * **Opcije:**
+     * **Equals (=):** Proverava da li se obećani datum isporuke na stavci poklapa sa datumom isporuke iz naloga za nabavku.
+     * **Not Equal (≠):** Obezbeđuje da se obećani datum isporuke na stavci ne poklapa sa datumom iz naloga za nabavku.
+     * **Greater Than (>):** Proverava da li je obećani datum isporuke stavke kasniji od datuma isporuke iz naloga za nabavku.
+     * **Greater or Equals (≥):** Proverava da li je obećani datum isporuke stavke jednak ili kasniji od datuma isporuke iz naloga za nabavku.
+     * **Less Than (<):** Potvrđuje da li je obećani datum isporuke stavke raniji od datuma isporuke iz naloga za nabavku.
+     * **Less or Equals (≤):** Proverava da li je obećani datum isporuke stavke jednak ili raniji od datuma isporuke iz naloga za nabavku.
 2. **Value**
-   * **Description:** Specifies an allowable margin of error in the delivery date comparison.
-   * **Detail:** Users define the number of days by which the line item delivery date can differ from the promised delivery date.
+   * **Opis:** Navodi dozvoljenu marginu greške u poređenju datuma isporuke.
+   * **Detalj:** Korisnici definišu broj dana za koji se datum isporuke stavke može razlikovati od obećanog datuma isporuke.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Condition Evaluation:**\
-  The card calculates the difference between the purchase order's promised delivery date and the delivery dates for line items in the table. The selected operator is then applied to determine if the condition is met.
-* **Action Execution:**
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Procena uslova:**\
+  Kartica izračunava razliku između obećanog datuma isporuke iz naloga za nabavku i datuma isporuke za stavke u tabeli. Izabrani operator se zatim primenjuje da bi se utvrdilo da li je uslov ispunjen.
+* **Izvršavanje akcije:**
+  * **Tačan uslov:** Ako je razlika u datumu isporuke unutar opsega tolerancije i poklapa se sa uslovom postavljenim operatorom, radni tok se nastavlja.
+  * **Netačan uslov:** Ako uslov nije ispunjen, radni tok se neće nastaviti.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-* The operator is selected to define the desired comparison condition, such as equal to, greater than or less than. Finally, users specify a tolerance value in days, which allows for small variations in the comparison without triggering alerts.
+* Operator se bira da definiše željeni uslov poređenja, kao što su jednako, veće od ili manje od. Na kraju, korisnici navode vrednost tolerancije u danima, koja dozvoljava male varijacije u poređenju bez pokretanja upozorenja.
 
-## **Example Scenario**
+## **Primer scenarija**
 
-* A purchase order specifies a promised delivery date of December 1st. A line item in the table has a promised delivery date of December 3rd. With a tolerance value set to 2 days and the **Equals (≥)** operator selected, the card considers the delivery date within the acceptable range. No alert is triggered, ensuring minor variances are tolerated without disrupting operations.
+* Nalog za nabavku navodi obećani datum isporuke 1. decembra. Stavka u tabeli ima obećani datum isporuke 3. decembra. Sa vrednošću tolerancije postavljenom na 2 dana i izabranim operatorom **Equals (≥)**, kartica smatra datum isporuke unutar prihvatljivog opsega. Nijedno upozorenje se ne pokreće, obezbeđujući da se manja odstupanja tolerišu bez ometanja operacija.
 
-## **Conclusion**
+## **Zaključak**
 
-The "Promised Delivery Date Comparison" card helps streamline supply chain operations by enabling precise monitoring of delivery timelines. With its ability to incorporate tolerances and flexible comparison operators, it ensures adherence to delivery expectations while avoiding unnecessary alerts for minor deviations. This enhances vendor management and overall workflow efficiency.
+Kartica "Promised Delivery Date Comparison" pomaže u pojednostavljenju operacija lanca snabdevanja omogućavajući precizno praćenje vremenskih rokova isporuke. Svojom sposobnošću da uključi tolerancije i fleksibilne operatore poređenja, ona obezbeđuje pridržavanje očekivanja isporuke uz izbegavanje nepotrebnih upozorenja za manja odstupanja. Ovo poboljšava upravljanje dobavljačima i ukupnu efikasnost radnog toka.

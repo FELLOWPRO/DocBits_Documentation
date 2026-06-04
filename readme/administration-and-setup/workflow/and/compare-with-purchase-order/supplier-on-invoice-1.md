@@ -6,23 +6,23 @@ hidden: true
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-This DocBits card allows detailed comparison, comparing the supplier of the invoice and that of the order confirmation. It should be ensured that the supplier who issued the invoice is the same as the one in the order confirmation.
+Ova DocBits kartica omogućava detaljno poređenje, upoređujući dobavljača sa fakture i dobavljača iz potvrde porudžbine. Treba obezbediti da je dobavljač koji je izdao fakturu isti kao onaj u potvrdi porudžbine.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** This card checks whether the supplier in the invoice is the same as in the order confirmation or not.
-* **Operator Value:** Users can set specific conditions such as: Is the supplier who issued the invoice the same as in the PO or not. Available operators include:
-  * **Is (=):** Checks whether the supplier in the invoice matches the supplier in the order confirmation.
-  * **Is not (≠):** Ensures that the supplier who issued the invoice is the same as in the order confirmation.
+* **Supplier on Invoice Supplier on Purchase Order:** Ova kartica proverava da li je dobavljač na fakturi isti kao u potvrdi porudžbine ili ne.
+* **Vrednost operatora:** Korisnici mogu postaviti određene uslove kao što su: da li je dobavljač koji je izdao fakturu isti kao u PO ili ne. Dostupni operatori uključuju:
+  * **Is (=):** Proverava da li se dobavljač na fakturi poklapa sa dobavljačem u potvrdi porudžbine.
+  * **Is not (≠):** Obezbeđuje da je dobavljač koji je izdao fakturu isti kao u potvrdi porudžbine.
 
-## **Usage:**
+## **Upotreba:**
 
-This Card is helpful to ensure the entire process is handled with the same supplier and everything fits together. This ensures that if there are discrepancies, attention is drawn to checking these discrepancies and not paying the invoice to an incorrect supplier who has nothing to do with the order and order confirmation.
+Ova kartica je korisna da bi se obezbedilo da se ceo proces obavlja sa istim dobavljačem i da sve odgovara jedno drugom. Ovo obezbeđuje da se, ako postoje nepodudaranja, skrene pažnja na proveru tih nepodudaranja i da se faktura ne plati pogrešnom dobavljaču koji nema veze sa porudžbinom i potvrdom porudžbine.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* An order is placed, then the order confirmation comes and then the invoice is issued. The entire ordering process is carried out with one supplier. If this is not the case, the card can immediately determine that there are discrepancies between the suppliers and thus ensures that no incorrect payments are made and that the invoice is only made with the supplier who was also involved in the entire process.
+* Porudžbina se postavlja, zatim dolazi potvrda porudžbine i potom se izdaje faktura. Ceo proces naručivanja se obavlja sa jednim dobavljačem. Ako to nije slučaj, kartica može odmah utvrditi da postoje nepodudaranja između dobavljača i time obezbeđuje da se ne vrše nepravilna plaćanja i da se faktura izdaje samo sa dobavljačem koji je takođe bio uključen u ceo proces.
 
-By using the “Supplier on Invoice … Supplier on Purchase Order” card, companies can automate the verification of suppliers who issue invoices and the associated order confirmations.
+Korišćenjem kartice "Supplier on Invoice … Supplier on Purchase Order", kompanije mogu automatizovati proveru dobavljača koji izdaju fakture i povezanih potvrda porudžbina.

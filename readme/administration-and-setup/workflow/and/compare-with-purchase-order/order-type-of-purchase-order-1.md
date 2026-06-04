@@ -6,24 +6,24 @@ hidden: true
 
 <figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose**:
+## **Svrha**:
 
-This DocBits card enables verification of the order type on a purchase order, ensuring that it aligns with specified criteria.
+Ova DocBits kartica omogućava proveru tipa porudžbine na nalogu za nabavku, obezbeđujući da bude usklađen sa navedenim kriterijumima.
 
-## **Functionality**:
+## **Funkcionalnost**:
 
-* **Order Type Comparison**: This card compares the order type of the purchase order to a specified value, allowing users to verify whether the order type meets certain conditions.
-* **Any/All Selection**: Users can choose to apply the comparison to **any** (at least one selected order type matches) or **all** (all selected order types match) specified order types.
-* **Operator**: Users can set conditions for comparing the order type in the purchase order. Available operators include:
-  * **Equals (=)**: Confirms that the order type in the purchase order matches the specified type.
-  * **Not Equal (≠)**: Ensures that the order type in the purchase order does not match the specified type.
+* **Poređenje tipa porudžbine**: Ova kartica upoređuje tip porudžbine naloga za nabavku sa navedenom vrednošću, omogućavajući korisnicima da provere da li tip porudžbine ispunjava određene uslove.
+* **Izbor Any/All**: Korisnici mogu odabrati da primene poređenje na **any** (najmanje jedan izabrani tip porudžbine se poklapa) ili **all** (svi izabrani tipovi porudžbine se poklapaju) navedene tipove porudžbine.
+* **Operator**: Korisnici mogu postaviti uslove za poređenje tipa porudžbine u nalogu za nabavku. Dostupni operatori uključuju:
+  * **Equals (=)**: Potvrđuje da se tip porudžbine u nalogu za nabavku poklapa sa navedenim tipom.
+  * **Not Equal (≠)**: Obezbeđuje da se tip porudžbine u nalogu za nabavku ne poklapa sa navedenim tipom.
 
-## **Usage**:
+## **Upotreba**:
 
-This card is particularly valuable for procurement teams, inventory planners, and operations managers who need to categorize and prioritize orders accurately. By ensuring that order types match the intended classifications, users can streamline order handling, optimize resource allocation, and adhere to service level agreements.
+Ova kartica je posebno vredna za timove za nabavku, planere zaliha i menadžere operacija kojima je potrebno da tačno kategorizuju i prioritizuju porudžbine. Obezbeđivanjem da se tipovi porudžbina poklapaju sa predviđenim klasifikacijama, korisnici mogu pojednostaviti rukovanje porudžbinama, optimizovati raspodelu resursa i pridržavati se sporazuma o nivou usluge.
 
-## **Example Scenario**:
+## **Primer scenarija**:
 
-* A purchase order is categorized as "IGR." The system uses the "Equals" operator to verify that this order type aligns with the intended classification for processing.&#x20;
+* Nalog za nabavku je kategorizovan kao "IGR". Sistem koristi operator "Equals" da proveri da li je ovaj tip porudžbine usklađen sa predviđenom klasifikacijom za obradu.&#x20;
 
-By using the "Compare with Purchase Order: Order Type" card, organizations can automate the validation of order types, ensuring consistency in processing priorities and reducing manual classification errors.
+Korišćenjem kartice "Compare with Purchase Order: Order Type", organizacije mogu automatizovati validaciju tipova porudžbina, obezbeđujući doslednost u prioritetima obrade i smanjujući greške u ručnoj klasifikaciji.

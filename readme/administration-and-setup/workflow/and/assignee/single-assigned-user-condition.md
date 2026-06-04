@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
-**Purpose**
+**Svrha**
 
-This workflow card facilitates operations based on the assignment of a task or document to a single, specific user. Using a direct conditional logic approach, it manages workflows that require targeted user engagement, ensuring precision in user-based task handling.
+Ova kartica radnog toka olakšava operacije zasnovane na dodeli zadatka ili dokumenta jednom, određenom korisniku. Koristeći direktan pristup uslovnoj logici, ona upravlja radnim tokovima koji zahtevaju ciljano angažovanje korisnika, obezbeđujući preciznost u rukovanju zadacima zasnovanom na korisnicima.
 
-**Components of the Card**
+**Komponente kartice**
 
 1. **Operator**
-   * **Description**: Specifies the logic to apply to the user assignment.
-   * **Options**:
-     * **IS**: Triggers the operation if the assigned user of the document or task matches the specified user.
-     * **IS NOT**: Triggers the operation if the assigned user does not match the specified user.
-2. **User**
-   * **Description**: Allows selection of a single user against whom the assigned user will be compared.
-   * **Detail**: This involves a simple dropdown or autocomplete field where one user can be selected at a time.
+   * **Opis**: Navodi logiku koja se primenjuje na dodelu korisnika.
+   * **Opcije**:
+     * **IS**: Pokreće operaciju ako se dodeljeni korisnik dokumenta ili zadatka poklapa sa navedenim korisnikom.
+     * **IS NOT**: Pokreće operaciju ako se dodeljeni korisnik ne poklapa sa navedenim korisnikom.
+2. **Korisnik**
+   * **Opis**: Omogućava izbor jednog korisnika sa kojim će se uporediti dodeljeni korisnik.
+   * **Detalj**: Ovo uključuje jednostavno padajuće polje ili polje sa automatskim dovršavanjem gde se može izabrati jedan korisnik istovremeno.
 
-**Functionality**
+**Funkcionalnost**
 
-* **User Assignment Identification**: Identifies the user currently assigned to a specific task or document.
-* **Condition Evaluation**:
-  * For the **IS** operator, the card checks if the assigned user is the same as the user selected.
-  * For the **IS NOT** operator, it verifies that the assigned user is different from the selected user.
-* **Action Execution**:
-  * **True Condition**: If the assignment meets the set condition (IS or IS NOT), it triggers predefined actions, which could include moving forward with approvals, initiating further tasks, sending notifications, or other related workflows.
-  * **False Condition**: If the condition is not met, the workflow will not continue.
+* **Identifikacija dodele korisnika**: Identifikuje korisnika trenutno dodeljenog određenom zadatku ili dokumentu.
+* **Procena uslova**:
+  * Za operator **IS**, kartica proverava da li je dodeljeni korisnik isti kao izabrani korisnik.
+  * Za operator **IS NOT**, ona proverava da li se dodeljeni korisnik razlikuje od izabranog korisnika.
+* **Izvršavanje akcije**:
+  * **Tačan uslov**: Ako dodela ispunjava zadati uslov (IS ili IS NOT), pokreću se unapred definisane akcije, koje mogu uključivati nastavak sa odobrenjima, pokretanje daljih zadataka, slanje obaveštenja ili druge povezane radne tokove.
+  * **Netačan uslov**: Ako uslov nije ispunjen, radni tok se neće nastaviti.
 
-**User Interactions**
+**Korisničke interakcije**
 
-* **Setup and Configuration**: Users set up the card by choosing an operator and selecting a user from the user field. This setup should be straightforward, ensuring easy user selection and configuration.
-* **Monitoring and Reporting**: Offers tools for monitoring the card’s performance, such as tracking which tasks are triggered by specific user assignments and the outcomes of these triggers.
-* **Error Handling and Notifications**: Provides mechanisms to alert users if tasks are incorrectly assigned or if operational errors occur due to assignment issues.
+* **Podešavanje i konfiguracija**: Korisnici podešavaju karticu izborom operatora i izborom korisnika iz polja korisnika. Ovo podešavanje treba da bude jednostavno, obezbeđujući lak izbor korisnika i konfiguraciju.
+* **Praćenje i izveštavanje**: Nudi alate za praćenje performansi kartice, kao što je praćenje koji se zadaci pokreću određenim dodelama korisnika i ishodi tih pokretanja.
+* **Rukovanje greškama i obaveštenja**: Pruža mehanizme za upozoravanje korisnika ako su zadaci pogrešno dodeljeni ili ako dođe do operativnih grešaka usled problema sa dodelama.
 
-#### Conclusion
+#### Zaključak
 
-The "Single Assigned User Condition" workflow card is essential for precise, user-specific document and task management within an ERP system. It simplifies workflows by focusing on individual user assignments, thus ensuring that actions are only executed when appropriate, based on the user's role and responsibilities. Documenting this card clearly will assist users in understanding its application, allowing them to implement and manage it effectively within their daily operations. This documentation ensures that all potential users can easily grasp the card's purpose and integrate it seamlessly into their workflows.
+Kartica radnog toka "Single Assigned User Condition" je od suštinskog značaja za precizno upravljanje dokumentima i zadacima specifično za korisnika unutar ERP sistema. Ona pojednostavljuje radne tokove fokusirajući se na pojedinačne dodele korisnika, čime obezbeđuje da se akcije izvršavaju samo kada je to prikladno, na osnovu uloge i odgovornosti korisnika. Jasno dokumentovanje ove kartice pomoći će korisnicima da razumeju njenu primenu, omogućavajući im da je efikasno implementiraju i njome upravljaju u svom svakodnevnom poslovanju. Ova dokumentacija obezbeđuje da svi potencijalni korisnici lako shvate svrhu kartice i da je neometano integrišu u svoje radne tokove.

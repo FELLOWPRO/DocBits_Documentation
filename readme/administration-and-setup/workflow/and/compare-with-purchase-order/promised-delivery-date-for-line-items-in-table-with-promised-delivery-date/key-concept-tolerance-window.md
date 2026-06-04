@@ -1,20 +1,20 @@
 # Key Concept: Tolerance Window
 
-Before looking at operators, it is important to understand how the tolerance window is calculated.
+Pre nego što pogledamo operatore, važno je razumeti kako se izračunava prozor tolerancije.
 
-## What is a tolerance window?
+## Šta je prozor tolerancije?
 
-The tolerance window defines a range of acceptable dates around the purchase order promised delivery date.
+Prozor tolerancije definiše opseg prihvatljivih datuma oko obećanog datuma isporuke iz naloga za nabavku.
 
-**Example:**
+**Primer:**
 
-* Purchase Order Date: **9 January**
-* Tolerance Days: **3**
-* Tolerance Window: **6 January → 12 January**
+* Datum naloga za nabavku: **9. januar**
+* Dani tolerancije: **3**
+* Prozor tolerancije: **6. januar → 12. januar**
 
-> <mark style="color:red;">Only the selected</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">(weekdays) are counted when calculating this window.</mark>
+> <mark style="color:red;">Samo izabrani</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">(radni dani) se računaju pri izračunavanju ovog prozora.</mark>
 
-### Visual Timeline Example
+### Primer vizuelne vremenske ose
 
 ```
 ← Past                           Future →
@@ -23,102 +23,102 @@ The tolerance window defines a range of acceptable dates around the purchase ord
    (Start)    (PO Date)     (End)
 ```
 
-### Operator Behavior Explained with Examples
+### Ponašanje operatora objašnjeno primerima
 
 * **Equals (=)**
-  * **Meaning:**\
-    The line item delivery date must fall _inside_ the tolerance window.
-  * **Valid Dates:**
-    * Any date between **6 Jan and 12 Jan** (inclusive)
-  * **Invalid Dates:**
-    * Any date **before 6 Jan**
-    * Any date **after 12 Jan**
+  * **Značenje:**\
+    Datum isporuke stavke mora pasti _unutar_ prozora tolerancije.
+  * **Validni datumi:**
+    * Bilo koji datum između **6. jan i 12. jan** (uključujući)
+  * **Nevalidni datumi:**
+    * Bilo koji datum **pre 6. jan**
+    * Bilo koji datum **posle 12. jan**
 * **Not Equals (≠)**
-  * **Meaning:**\
-    The line item delivery date must fall _outside_ the tolerance window.
-  * **Valid Dates:**
-    * Any date **before 6 Jan**
-    * Any date **after 12 Jan**
-  * **Invalid Dates:**
-    * Dates between **6 Jan and 12 Jan**
+  * **Značenje:**\
+    Datum isporuke stavke mora pasti _izvan_ prozora tolerancije.
+  * **Validni datumi:**
+    * Bilo koji datum **pre 6. jan**
+    * Bilo koji datum **posle 12. jan**
+  * **Nevalidni datumi:**
+    * Datumi između **6. jan i 12. jan**
 * **Greater or Equals (≥)**
-  * **Meaning:**\
-    The line item delivery date must be on or after the **start of the tolerance window**.
-  * **Valid Dates:**
-    * **6 Jan → any future date**
-  * **Invalid Dates:**
-    * Any date **before 6 Jan**
-  * <mark style="color:red;">**Important:**</mark>\
-    This operator allows dates _inside_ the tolerance window **and beyond it**.
+  * **Značenje:**\
+    Datum isporuke stavke mora biti na ili posle **početka prozora tolerancije**.
+  * **Validni datumi:**
+    * **6. jan → bilo koji budući datum**
+  * **Nevalidni datumi:**
+    * Bilo koji datum **pre 6. jan**
+  * <mark style="color:red;">**Važno:**</mark>\
+    Ovaj operator dozvoljava datume _unutar_ prozora tolerancije **i izvan njega**.
 * **Lesser or Equals (≤)**
-  * **Meaning:**\
-    The line item delivery date must be on or before the **end of the tolerance window**.
-  * **Valid Dates:**
-    * Any past date up to **12 Jan**
-  * **Invalid Dates:**
-    * Any date **after 12 Jan**
+  * **Značenje:**\
+    Datum isporuke stavke mora biti na ili pre **kraja prozora tolerancije**.
+  * **Validni datumi:**
+    * Bilo koji prošli datum do **12. jan**
+  * **Nevalidni datumi:**
+    * Bilo koji datum **posle 12. jan**
 * **Greater Than (>)**
-  * **Meaning:**\
-    The line item delivery date must be _strictly after_ the tolerance window.
-  * **Valid Dates:**
-    * **13 Jan → any future date**
-  * **Invalid Dates:**
-    * Any date **on or before 12 Jan**
+  * **Značenje:**\
+    Datum isporuke stavke mora biti _strogo posle_ prozora tolerancije.
+  * **Validni datumi:**
+    * **13. jan → bilo koji budući datum**
+  * **Nevalidni datumi:**
+    * Bilo koji datum **na ili pre 12. jan**
 * **Lesser Than (<)**
-  * **Meaning:**\
-    The line item delivery date must be _strictly before_ the tolerance window.
-  * **Valid Dates:**
-    * Any date **before 6 Jan**
-  * **Invalid Dates:**
-    * Any date **on or after 6 Jan**
+  * **Značenje:**\
+    Datum isporuke stavke mora biti _strogo pre_ prozora tolerancije.
+  * **Validni datumi:**
+    * Bilo koji datum **pre 6. jan**
+  * **Nevalidni datumi:**
+    * Bilo koji datum **na ili posle 6. jan**
 
-## How “Allowed Tolerance Days” Affect the Tolerance Window
+## Kako "Allowed Tolerance Days" utiču na prozor tolerancije
 
-When calculating the tolerance window, **only the selected weekdays are counted**.\
-Days that are not selected (such as weekends or excluded weekdays) are **skipped entirely**
+Pri izračunavanju prozora tolerancije, **računaju se samo izabrani radni dani**.\
+Dani koji nisu izabrani (kao što su vikendi ili isključeni radni dani) se **u potpunosti preskaču**
 
-#### Example: Weekday-Based Tolerance Calculation
+#### Primer: Izračunavanje tolerancije zasnovano na radnim danima
 
-**Configuration:**
+**Konfiguracija:**
 
-* Purchase Order Date: **Wednesday, 9 January**
-* Tolerance Days: **3**
-* Allowed Tolerance Days: **Monday, Tuesday, Wednesday, Thursday, Friday**
-* Weekends (Saturday, Sunday): **Not selected**
+* Datum naloga za nabavku: **sreda, 9. januar**
+* Dani tolerancije: **3**
+* Dozvoljeni dani tolerancije: **ponedeljak, utorak, sreda, četvrtak, petak**
+* Vikendi (subota, nedelja): **nisu izabrani**
 
-#### Step-by-Step Calculation
+#### Izračunavanje korak po korak
 
-Starting from the PO date (**9 Jan**):
+Počevši od datuma naloga za nabavku (**9. jan**):
 
-**Counting backward (3 tolerance days):**
+**Brojanje unazad (3 dana tolerancije):**
 
-* Tuesday, 8 Jan → **Day 1**
-* Monday, 7 Jan → **Day 2**
-* Sunday, 6 Jan → _Skipped (not allowed)_
-* Saturday, 5 Jan → _Skipped (not allowed)_
-* Friday, 4 Jan → **Day 3**
+* Utorak, 8. jan → **Dan 1**
+* Ponedeljak, 7. jan → **Dan 2**
+* Nedelja, 6. jan → _Preskočeno (nije dozvoljeno)_
+* Subota, 5. jan → _Preskočeno (nije dozvoljeno)_
+* Petak, 4. jan → **Dan 3**
 
-➡ **Tolerance start date: Friday, 4 January**
+➡ **Datum početka tolerancije: petak, 4. januar**
 
-**Counting forward (3 tolerance days):**
+**Brojanje unapred (3 dana tolerancije):**
 
-* Thursday, 10 Jan → **Day 1**
-* Friday, 11 Jan → **Day 2**
-* Saturday, 12 Jan → _Skipped_
-* Sunday, 13 Jan → _Skipped_
-* Monday, 14 Jan → **Day 3**
+* Četvrtak, 10. jan → **Dan 1**
+* Petak, 11. jan → **Dan 2**
+* Subota, 12. jan → _Preskočeno_
+* Nedelja, 13. jan → _Preskočeno_
+* Ponedeljak, 14. jan → **Dan 3**
 
-➡ **Tolerance end date: Monday, 14 January**
+➡ **Datum kraja tolerancije: ponedeljak, 14. januar**
 
-#### Resulting Tolerance Window
+#### Rezultujući prozor tolerancije
 
 ```
 4 January  →  14 January
 ```
 
-#### Why This Matters
+#### Zašto je ovo važno
 
-If Allowed Tolerance Days are configured incorrectly:
+Ako su Allowed Tolerance Days pogrešno konfigurisani:
 
-* Delivery dates may appear **unexpectedly valid or invalid**
-* Early or late deliveries may not be detected correctly
+* Datumi isporuke mogu izgledati **neočekivano validni ili nevalidni**
+* Rane ili kasne isporuke možda neće biti ispravno otkrivene

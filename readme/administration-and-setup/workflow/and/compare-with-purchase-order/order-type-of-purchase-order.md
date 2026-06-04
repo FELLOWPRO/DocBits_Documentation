@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to compare the order type of a purchase order against a specified value. The card checks whether the order type of the purchase order meets the specified condition (e.g., whether it equals, does not equal, is greater than, or meets another condition) to ensure that the purchase order is classified correctly. This comparison can trigger actions based on specific conditions, such as routing the order for further review or approval if discrepancies are found.
+Ova kartica radnog toka je dizajnirana da uporedi tip porudžbine naloga za nabavku sa navedenom vrednošću. Kartica proverava da li tip porudžbine naloga za nabavku ispunjava navedeni uslov (npr. da li je jednak, nije jednak, veći je ili ispunjava drugi uslov) kako bi se obezbedilo da nalog za nabavku bude ispravno klasifikovan. Ovo poređenje može pokrenuti akcije na osnovu određenih uslova, kao što je usmeravanje porudžbine na dalji pregled ili odobrenje ako se pronađu nepodudaranja.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Any/All:**
-   * **Description**: Defines whether the condition applies to any or all purchase orders being evaluated in the workflow.
-   * **Options**:
-     * **Any**: The condition is met if any one of the purchase orders matches the specified condition.
-     * **All**: The condition is met only if all of the purchase orders meet the specified condition.
+   * **Opis**: Definiše da li se uslov primenjuje na bilo koji ili na sve naloge za nabavku koji se procenjuju u radnom toku.
+   * **Opcije**:
+     * **Any**: Uslov je ispunjen ako bilo koji od naloga za nabavku ispunjava navedeni uslov.
+     * **All**: Uslov je ispunjen samo ako svi nalozi za nabavku ispunjavaju navedeni uslov.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to compare the order type against a specified value.
-   * **Options**:
-     * **Equals (=)**: Checks if the order type matches the specified value.
-     * **Not Equals (≠)**: Ensures the order type is different from the specified value.
+   * **Opis**: Definiše uslov koji će se primeniti za poređenje tipa porudžbine sa navedenom vrednošću.
+   * **Opcije**:
+     * **Equals (=)**: Proverava da li se tip porudžbine poklapa sa navedenom vrednošću.
+     * **Not Equals (≠)**: Obezbeđuje da se tip porudžbine razlikuje od navedene vrednosti.
 3. **Order Type:**
-   * **Description**: Specifies the value to which the order type of the purchase order will be compared.
-   * **Detail**: The value must match the order type or classification in the system.
+   * **Opis**: Navodi vrednost sa kojom će se uporediti tip porudžbine naloga za nabavku.
+   * **Detalj**: Vrednost mora da se poklapa sa tipom porudžbine ili klasifikacijom u sistemu.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system evaluates the order type of the purchase order against the specified condition using the selected operator. If the order type matches (or does not match) the specified value, the workflow proceeds accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the order type matches the specified value), the workflow will continue, possibly triggering additional actions or processing steps.
-  * **False Condition**: If the condition evaluates to false (e.g., the order type does not match the specified value), the workflow will not continue.
+* **Procena uslova:** Sistem procenjuje tip porudžbine naloga za nabavku u odnosu na navedeni uslov koristeći izabrani operator. Ako se tip porudžbine poklapa (ili ne poklapa) sa navedenom vrednošću, radni tok se nastavlja u skladu sa tim.
+* **Izvršavanje akcije:**
+  * **Tačan uslov**: Ako se uslov proceni kao tačan (npr. tip porudžbine se poklapa sa navedenom vrednošću), radni tok će se nastaviti, moguće pokretanjem dodatnih akcija ili koraka obrade.
+  * **Netačan uslov**: Ako se uslov proceni kao netačan (npr. tip porudžbine se ne poklapa sa navedenom vrednošću), radni tok se neće nastaviti.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* Users configure the card by selecting the order type field of the purchase order and choosing the operator that defines how the order type will be compared. Then, they set the specified value and decide whether to apply the condition to any or all of the purchase order lines.
+* Korisnici konfigurišu karticu izborom polja tipa porudžbine naloga za nabavku i izborom operatora koji definiše kako će se tip porudžbine upoređivati. Zatim postavljaju navedenu vrednost i odlučuju da li će primeniti uslov na bilo koju ili sve linije naloga za nabavku.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A purchase order has the order type "Standard." The workflow is configured to check if the order type is "Urgent." Using the "Equals" operator, the card compares the order type and finds that it does not match the specified value, triggering the workflow to send the order for review due to the mismatch.
+* Nalog za nabavku ima tip porudžbine "Standard". Radni tok je konfigurisan da proveri da li je tip porudžbine "Urgent". Koristeći operator "Equals", kartica upoređuje tip porudžbine i utvrđuje da se ne poklapa sa navedenom vrednošću, pokrećući radni tok da pošalje porudžbinu na pregled zbog nepodudaranja.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Order Type of Purchase Order" workflow card ensures that purchase orders are classified correctly according to their specified order type. By automating the comparison of order types, organizations can ensure that purchase orders are processed according to their expected classifications, helping to enforce compliance and streamline procurement workflows.
+Kartica radnog toka "Order Type of Purchase Order" obezbeđuje da nalozi za nabavku budu ispravno klasifikovani u skladu sa svojim navedenim tipom porudžbine. Automatizacijom poređenja tipova porudžbina, organizacije mogu obezbediti da se nalozi za nabavku obrađuju u skladu sa svojim očekivanim klasifikacijama, pomažući u sprovođenju usklađenosti i pojednostavljenju radnih tokova nabavke.

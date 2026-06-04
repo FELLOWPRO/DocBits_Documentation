@@ -4,48 +4,48 @@
 
 <figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**:
+## **Svrha**:
 
-This workflow card evaluates the combined price of a quantity difference, comparing it against a specified value. It helps automate actions based on price and quantity discrepancies across related documents, improving procurement and receiving workflows. **Version 4** expands this functionality by allowing comparisons between different entities such as the purchase order, received quantities, and the document itself, adding more flexibility and control to the workflow.
+Ova kartica radnog toka procenjuje kombinovanu cenu razlike u količini, upoređujući je sa navedenom vrednošću. Pomaže u automatizaciji akcija na osnovu nepodudaranja u ceni i količini između povezanih dokumenata, poboljšavajući radne tokove nabavke i prijema. **Verzija 4** proširuje ovu funkcionalnost omogućavajući poređenja između različitih entiteta kao što su nalog za nabavku, primljene količine i sam dokument, dodajući veću fleksibilnost i kontrolu radnom toku.
 
-## **Components of the Card**:
+## **Komponente kartice**:
 
 1. **Operator**:&#x20;
-   * **Description:** The condition for comparing the combined price against a specified value.
-   * **Options:**
-     * **Equals (=)**: Checks if the combined price matches the specified value.
-     * **Not Equals (≠)**: Ensures the combined price is different from the specified value.
-     * **Greater Than (>)**: Verifies if the combined price is greater than the specified value.
-     * **Greater or Equals (≥)**: Checks if the combined price is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the combined price is less than the specified value.
-     * **Lesser or Equals (≤)**: Checks if the combined price is less than or equal to the specified value
-2. **Value**:&#x20;
-   * **Description:** Specifies the value against which the combined  price of quantity value will be compared.
-   * **Detail:** The value has to be a numeric value.
+   * **Opis:** Uslov za poređenje kombinovane cene sa navedenom vrednošću.
+   * **Opcije:**
+     * **Equals (=)**: Proverava da li se kombinovana cena poklapa sa navedenom vrednošću.
+     * **Not Equals (≠)**: Obezbeđuje da se kombinovana cena razlikuje od navedene vrednosti.
+     * **Greater Than (>)**: Proverava da li je kombinovana cena veća od navedene vrednosti.
+     * **Greater or Equals (≥)**: Proverava da li je kombinovana cena veća ili jednaka navedenoj vrednosti.
+     * **Lesser Than (<)**: Proverava da li je kombinovana cena manja od navedene vrednosti.
+     * **Lesser or Equals (≤)**: Proverava da li je kombinovana cena manja ili jednaka navedenoj vrednosti
+2. **Vrednost**:&#x20;
+   * **Opis:** Navodi vrednost sa kojom će se uporediti kombinovana cena vrednosti količine.
+   * **Detalj:** Vrednost mora biti numerička.
 
-## **Additional Components in Version 4**:
+## **Dodatne komponente u Verziji 4**:
 
-* **Comparison Type**: Selects the entities to compare. The options include:
-  * **Purchase Order to Document**: Compares the quantities and prices between the purchase order and the related document.
-  * **Received to Document**: Compares the received quantities to the quantities in the document.
-  * **Purchase Order to Received**: Compares the purchase order quantities to the received quantities.
+* **Comparison Type**: Bira entitete za poređenje. Opcije uključuju:
+  * **Purchase Order to Document**: Upoređuje količine i cene između naloga za nabavku i povezanog dokumenta.
+  * **Received to Document**: Upoređuje primljene količine sa količinama u dokumentu.
+  * **Purchase Order to Received**: Upoređuje količine iz naloga za nabavku sa primljenim količinama.
 
-## **Functionality**:
+## **Funkcionalnost**:
 
-* **Condition Evaluation**: Calculates the combined price by multiplying the quantity difference by the price per unit and compares it against the specified value using the selected operator.\
-  **Version 4** adds the option to compare additional entities based on the user’s configuration, such as purchase order to received or purchase order to document.
-* **Action Execution**: Based on whether the combined price meets the specified condition, the workflow will continue with true or false conditions to trigger actions or halt the workflow. **Version 4** also allows for more dynamic action execution, where the condition type (e.g., purchase order to received) influences the next step.
+* **Procena uslova**: Izračunava kombinovanu cenu množenjem razlike u količini sa cenom po jedinici i upoređuje je sa navedenom vrednošću koristeći izabrani operator.\
+  **Verzija 4** dodaje opciju poređenja dodatnih entiteta na osnovu korisnikove konfiguracije, kao što su nalog za nabavku prema primljenom ili nalog za nabavku prema dokumentu.
+* **Izvršavanje akcije**: Na osnovu toga da li kombinovana cena ispunjava navedeni uslov, radni tok će se nastaviti sa tačnim ili netačnim uslovima da bi pokrenuo akcije ili zaustavio radni tok. **Verzija 4** takođe omogućava dinamičnije izvršavanje akcija, gde tip uslova (npr. nalog za nabavku prema primljenom) utiče na sledeći korak.
 
-## **Setup and Configuration**:
+## **Podešavanje i konfiguracija**:
 
-* **Version 3**: Users configure the card by selecting the document fields for the quantity difference and price per unit. The operator is then chosen to define how the combined price will be compared to the specified value. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
-* **Version 4**: In addition to the configuration in **Version 3**, users have an additional option to configure the **Comparison Type**. This defines what entities will be compared, such as **Purchase Order to Document**, **Received to Document**, or **Purchase Order to Received**.
+* **Verzija 3**: Korisnici konfigurišu karticu izborom polja dokumenta za razliku u količini i cenu po jedinici. Operator se zatim bira da definiše kako će se kombinovana cena upoređivati sa navedenom vrednošću. Na kraju, korisnici postavljaju uslov za nastavak (tačan ili netačan), koji određuje sledeći korak u radnom toku.
+* **Verzija 4**: Pored konfiguracije iz **Verzije 3**, korisnici imaju dodatnu opciju da konfigurišu **Comparison Type**. Ovo definiše koji će se entiteti upoređivati, kao što su **Purchase Order to Document**, **Received to Document** ili **Purchase Order to Received**.
 
-## **Example Scenario**:
+## **Primer scenarija**:
 
-* An invoice shows 50 units of a product at $100 each, totaling $5000. The related purchase order authorized a purchase of $4500 for 45 units. The quantity difference is 5 units, and the combined price of the difference is $500. The card compares the purchase order quantity (45 units) to the received quantity (50 units) and checks if the combined price is greater than $400 (the specified value). Using the **Greater Than (>)** operator, the card identifies the discrepancy and flags it for review by the finance team.
+* Faktura pokazuje 50 jedinica proizvoda po $100 svaka, što ukupno iznosi $5000. Povezani nalog za nabavku je odobrio kupovinu od $4500 za 45 jedinica. Razlika u količini je 5 jedinica, a kombinovana cena razlike je $500. Kartica upoređuje količinu iz naloga za nabavku (45 jedinica) sa primljenom količinom (50 jedinica) i proverava da li je kombinovana cena veća od $400 (navedena vrednost). Koristeći operator **Greater Than (>)**, kartica identifikuje nepodudaranje i označava ga za pregled finansijskog tima.
 
-## **Conclusion**:
+## **Zaključak**:
 
-**Version 3** of the "Combined Price of Quantity Difference" workflow card offers a straightforward approach for comparing quantity discrepancies and triggering actions based on price thresholds.\
-**Version 4** extends this functionality by allowing comparisons between different entities (purchase order, received, document), providing more flexibility and control over the workflow. Organizations can now automate more complex scenarios and enforce tighter control over their procurement and receiving processes.
+**Verzija 3** kartice radnog toka "Combined Price of Quantity Difference" nudi jednostavan pristup za poređenje nepodudaranja u količini i pokretanje akcija na osnovu pragova cena.\
+**Verzija 4** proširuje ovu funkcionalnost omogućavajući poređenja između različitih entiteta (nalog za nabavku, primljeno, dokument), pružajući veću fleksibilnost i kontrolu nad radnim tokom. Organizacije sada mogu automatizovati složenije scenarije i sprovoditi strožiju kontrolu nad svojim procesima nabavke i prijema.

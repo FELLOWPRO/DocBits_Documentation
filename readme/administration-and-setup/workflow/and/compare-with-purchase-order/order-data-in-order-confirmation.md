@@ -2,48 +2,48 @@
 
 <figure><img src="../../../../.gitbook/assets/image (265).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-This workflow card is designed to compare specific fields—**Unit Price**, **Discount**, or **Quantity**—between an order confirmation and a purchase order. It ensures consistency and compliance with agreed terms. Based on the comparison result, the card allows users to write specified text into a chosen field when the condition evaluates as **true** or **false**, streamlining document processing and reducing manual intervention.
+Ova kartica radnog toka je dizajnirana da uporedi određena polja — **Unit Price**, **Discount** ili **Quantity** — između potvrde porudžbine i naloga za nabavku. Ona obezbeđuje doslednost i usklađenost sa dogovorenim uslovima. Na osnovu rezultata poređenja, kartica omogućava korisnicima da upišu navedeni tekst u izabrano polje kada se uslov proceni kao **tačan** ili **netačan**, pojednostavljujući obradu dokumenata i smanjujući ručnu intervenciju.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Order Data**
-   * **Description:** Specifies the field to be compared between the order confirmation and the purchase order.
-   * **Options:**
-     * **Unit Price**: Compares the unit price in both documents.
-     * **Discount**: Compares the discount percentage or value.
-     * **Quantity**: Compares the ordered quantity.
+   * **Opis:** Navodi polje koje treba uporediti između potvrde porudžbine i naloga za nabavku.
+   * **Opcije:**
+     * **Unit Price**: Upoređuje jediničnu cenu u oba dokumenta.
+     * **Discount**: Upoređuje procenat ili vrednost popusta.
+     * **Quantity**: Upoređuje naručenu količinu.
 2. **Operator**
-   * **Description:** Defines the condition applied during the comparison.
-   * **Options:**
-     * **Equals (=):** Checks if the value in the selected field matches between the order confirmation and the purchase order.
-     * **Not Equals (≠):** Ensures the value in the selected field differs between the two documents.
+   * **Opis:** Definiše uslov koji se primenjuje tokom poređenja.
+   * **Opcije:**
+     * **Equals (=):** Proverava da li se vrednost u izabranom polju poklapa između potvrde porudžbine i naloga za nabavku.
+     * **Not Equals (≠):** Obezbeđuje da se vrednost u izabranom polju razlikuje između dva dokumenta.
 3. **Text**
-   * **Description:** Specifies the text to be written into the target field upon condition evaluation.
-   * **Detail:** This text can include custom notes, status updates, or predefined values.
+   * **Opis:** Navodi tekst koji treba upisati u ciljno polje nakon procene uslova.
+   * **Detalj:** Ovaj tekst može uključivati prilagođene napomene, ažuriranja statusa ili unapred definisane vrednosti.
 4. **Field Name**
-   * **Description:** Specifies the field where the text will be written.
-   * **Detail:** The target field is selected from available editable fields within the system.
+   * **Opis:** Navodi polje u koje će tekst biti upisan.
+   * **Detalj:** Ciljno polje se bira iz dostupnih polja koja se mogu uređivati u sistemu.
 5. **Condition Result**
-   * **Description:** Determines when the text should be written, based on the comparison result.
-   * **Options:**
-     * **True:** Writes the text if the comparison condition is met.
-     * **False:** Writes the text if the comparison condition is not met.
+   * **Opis:** Određuje kada tekst treba upisati, na osnovu rezultata poređenja.
+   * **Opcije:**
+     * **True:** Upisuje tekst ako je uslov poređenja ispunjen.
+     * **False:** Upisuje tekst ako uslov poređenja nije ispunjen.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Comparison Evaluation:** The system compares the selected field between the order confirmation and the purchase order using the specified operator.
-* **Action Execution:** If the condition evaluates as **true** or **false**, the specified text is written into the designated field.
+* **Procena poređenja:** Sistem upoređuje izabrano polje između potvrde porudžbine i naloga za nabavku koristeći navedeni operator.
+* **Izvršavanje akcije:** Ako se uslov proceni kao **tačan** ili **netačan**, navedeni tekst se upisuje u određeno polje.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-* To set up this card, users first select the field to be compared—**Unit Price**, **Discount**, or **Quantity**. Then, they choose an operator to define the comparison condition, such as **equals** or **not equals**. Users specify the text to be written into a target field and select when this action should occur, based on the condition result (**true** or **false**).
+* Da bi podesili ovu karticu, korisnici prvo biraju polje koje treba uporediti — **Unit Price**, **Discount** ili **Quantity**. Zatim biraju operator da definišu uslov poređenja, kao što su **equals** ili **not equals**. Korisnici navode tekst koji treba upisati u ciljno polje i biraju kada ova akcija treba da se dogodi, na osnovu rezultata uslova (**true** ili **false**).
 
-## **Example Scenario**
+## **Primer scenarija**
 
-* An order confirmation lists a unit price of $50 for a product, while the purchase order specifies a price of $45. Using the **Not Equals (≠)** operator, the card identifies the discrepancy and writes the text "Price Mismatch" into a designated field when the condition evaluates as **true**.
+* Potvrda porudžbine navodi jediničnu cenu od $50 za proizvod, dok nalog za nabavku navodi cenu od $45. Koristeći operator **Not Equals (≠)**, kartica identifikuje nepodudaranje i upisuje tekst "Price Mismatch" u određeno polje kada se uslov proceni kao **tačan**.
 
-## **Conclusion**
+## **Zaključak**
 
-The "\[Unit Price/Discount/Quantity] in Order Confirmation" workflow card provides a practical solution for ensuring document consistency. By automatically flagging discrepancies and writing relevant text into specified fields, it enhances efficiency and reduces errors in order management processes.
+Kartica radnog toka "\[Unit Price/Discount/Quantity] in Order Confirmation" pruža praktično rešenje za obezbeđivanje doslednosti dokumenata. Automatskim označavanjem nepodudaranja i upisivanjem relevantnog teksta u navedena polja, ona poboljšava efikasnost i smanjuje greške u procesima upravljanja porudžbinama.

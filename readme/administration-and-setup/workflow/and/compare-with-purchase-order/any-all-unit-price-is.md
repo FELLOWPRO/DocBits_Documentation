@@ -4,57 +4,57 @@
 
 <figure><img src="../../../../.gitbook/assets/image (273).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is used to compare the unit price in a document against the unit price in a purchase order, ensuring that prices align within defined tolerance levels. The comparison can trigger actions if the unit price does not meet expectations. **Version 4** adds more flexibility by allowing users to choose different entities for comparison, providing a deeper level of control over pricing and procurement processes.
+Ova kartica radnog toka se koristi za poređenje jedinične cene u dokumentu sa jediničnom cenom u nalogu za nabavku, obezbeđujući da cene budu usklađene unutar definisanih nivoa tolerancije. Poređenje može pokrenuti akcije ako jedinična cena ne ispunjava očekivanja. **Verzija 4** dodaje veću fleksibilnost omogućavajući korisnicima da izaberu različite entitete za poređenje, pružajući dublji nivo kontrole nad procesima određivanja cena i nabavke.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Any / All:**
-   * **Description**: Defines whether the condition applies to any or all instances where the unit price is compared.
-   * **Options**:
-     * **Any**: The condition is met if any unit price meets the specified comparison condition.
-     * **All**: The condition is met only if all unit prices meet the specified comparison condition.
+   * **Opis**: Definiše da li se uslov primenjuje na bilo koju ili na sve instance u kojima se upoređuje jedinična cena.
+   * **Opcije**:
+     * **Any**: Uslov je ispunjen ako bilo koja jedinična cena ispunjava navedeni uslov poređenja.
+     * **All**: Uslov je ispunjen samo ako sve jedinične cene ispunjavaju navedeni uslov poređenja.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the unit price against the specified value.
-   * **Options**:
-     * **Equals (=)**: Verifies if the unit price matches the specified value.
-     * **Not Equals (≠)**: Ensures the unit price is different from the specified value.
-     * **Greater Than (>)**: Verifies if the unit price is greater than the specified value.
-     * **Greater or Equals (≥)**: Verifies if the unit price is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the unit price is less than the specified value.
-     * **Lesser or Equals (≤)**: Verifies if the unit price is less than or equal to the specified value.
+   * **Opis**: Definiše uslov za poređenje jedinične cene sa navedenom vrednošću.
+   * **Opcije**:
+     * **Equals (=)**: Proverava da li se jedinična cena poklapa sa navedenom vrednošću.
+     * **Not Equals (≠)**: Obezbeđuje da se jedinična cena razlikuje od navedene vrednosti.
+     * **Greater Than (>)**: Proverava da li je jedinična cena veća od navedene vrednosti.
+     * **Greater or Equals (≥)**: Proverava da li je jedinična cena veća ili jednaka navedenoj vrednosti.
+     * **Lesser Than (<)**: Proverava da li je jedinična cena manja od navedene vrednosti.
+     * **Lesser or Equals (≤)**: Proverava da li je jedinična cena manja ili jednaka navedenoj vrednosti.
 
-## **Additional Components in Version 4:**
+## **Dodatne komponente u Verziji 4:**
 
 **Comparison Type:**
 
-* **Description**: Allows users to choose what entities will be compared in addition to the unit price.
-* **Options**:
-  * **Purchase Order to Document**: Compares the unit price in the purchase order with the unit price in the document.
-  * **Received to Document**: Compares the received quantity to the unit price in the document.
-  * **Purchase Order to Received**: Compares the unit price in the purchase order with the received quantity.
+* **Opis**: Omogućava korisnicima da izaberu koji će se entiteti upoređivati pored jedinične cene.
+* **Opcije**:
+  * **Purchase Order to Document**: Upoređuje jediničnu cenu u nalogu za nabavku sa jediničnom cenom u dokumentu.
+  * **Received to Document**: Upoređuje primljenu količinu sa jediničnom cenom u dokumentu.
+  * **Purchase Order to Received**: Upoređuje jediničnu cenu u nalogu za nabavku sa primljenom količinom.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system compares the unit price in the document to the unit price in the purchase order (or other selected entity, in Version 4) based on the selected operator. If the comparison is true, the workflow proceeds according to the next steps, either triggering approval or stopping the process.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., unit price in the document is greater than the specified value), the workflow will proceed with the true action (e.g., approval, document processing).
-  * **False Condition**: If the condition evaluates to false (e.g., unit price in the document does not meet the comparison), the workflow will not  proceed.
+* **Procena uslova:** Sistem upoređuje jediničnu cenu u dokumentu sa jediničnom cenom u nalogu za nabavku (ili drugim izabranim entitetom, u Verziji 4) na osnovu izabranog operatora. Ako je poređenje tačno, radni tok se nastavlja prema sledećim koracima, bilo pokretanjem odobrenja ili zaustavljanjem procesa.
+* **Izvršavanje akcije:**
+  * **Tačan uslov**: Ako se uslov proceni kao tačan (npr. jedinična cena u dokumentu je veća od navedene vrednosti), radni tok će se nastaviti sa tačnom akcijom (npr. odobrenje, obrada dokumenta).
+  * **Netačan uslov**: Ako se uslov proceni kao netačan (npr. jedinična cena u dokumentu ne ispunjava poređenje), radni tok se neće nastaviti.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Version 3 Setup:** Users configure the card by selecting the unit price in the document, choosing the appropriate operator to define how the unit price will be compared to the specified value, and setting the value to compare against. Additionally, users select whether the condition applies to any or all instances of the unit price comparison.
-* **Version 4 Setup:** In Version 4, users have the additional option to select the Comparison Type. This allows them to define the entities to compare, such as Purchase Order to Document, Received to Document, or Purchase Order to Received. This enhances the flexibility of the card to compare unit prices in more complex scenarios.
+* **Podešavanje u Verziji 3:** Korisnici konfigurišu karticu izborom jedinične cene u dokumentu, izborom odgovarajućeg operatora za definisanje načina na koji će se jedinična cena upoređivati sa navedenom vrednošću i postavljanjem vrednosti za poređenje. Pored toga, korisnici biraju da li se uslov primenjuje na bilo koju ili sve instance poređenja jedinične cene.
+* **Podešavanje u Verziji 4:** U Verziji 4, korisnici imaju dodatnu opciju da izaberu Comparison Type. Ovo im omogućava da definišu entitete za poređenje, kao što su Purchase Order to Document, Received to Document ili Purchase Order to Received. Ovo poboljšava fleksibilnost kartice za poređenje jediničnih cena u složenijim scenarijima.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-*   **Version 3 Example:**&#x20;
+*   **Primer u Verziji 3:**&#x20;
 
-    An invoice shows a unit price of $50. The related purchase order has a unit price of $45. The card compares the two unit prices using the "Greater Than" operator. Since the unit price in the document ($50) is greater than the unit price in the purchase order ($45), the workflow will trigger the true condition (e.g., send the document for review).
-* **Version 4 Example:**\
-  An invoice shows a unit price of $50, and the related purchase order authorized a unit price of $45. Additionally, the received quantity is 60 units. The card compares the received quantity to the document's unit price using the "Greater Than" operator. Since the received quantity (60) is greater than the unit price ($50), the workflow triggers the true condition, and the document is flagged for further review.
+    Faktura pokazuje jediničnu cenu od $50. Povezani nalog za nabavku ima jediničnu cenu od $45. Kartica upoređuje dve jedinične cene koristeći operator "Greater Than". Pošto je jedinična cena u dokumentu ($50) veća od jedinične cene u nalogu za nabavku ($45), radni tok će pokrenuti tačan uslov (npr. slanje dokumenta na pregled).
+* **Primer u Verziji 4:**\
+  Faktura pokazuje jediničnu cenu od $50, a povezani nalog za nabavku je odobrio jediničnu cenu od $45. Pored toga, primljena količina je 60 jedinica. Kartica upoređuje primljenu količinu sa jediničnom cenom u dokumentu koristeći operator "Greater Than". Pošto je primljena količina (60) veća od jedinične cene ($50), radni tok pokreće tačan uslov, i dokument se označava za dalji pregled.
 
-## **Conclusion:**
+## **Zaključak:**
 
-Version 3 of the "Unit Price Comparison" workflow card is designed to ensure that unit prices in documents align with those in purchase orders, triggering actions based on defined conditions. Version 4 extends this functionality by introducing more complex comparison options, such as comparing purchase orders to documents, received quantities to documents, and purchase orders to received quantities. This added flexibility allows organizations to handle more sophisticated pricing and procurement scenarios, improving control and accuracy in their workflows.
+Verzija 3 kartice radnog toka "Unit Price Comparison" je dizajnirana da obezbedi da jedinične cene u dokumentima budu usklađene sa onima u nalozima za nabavku, pokrećući akcije na osnovu definisanih uslova. Verzija 4 proširuje ovu funkcionalnost uvođenjem složenijih opcija poređenja, kao što su poređenje naloga za nabavku sa dokumentima, primljenih količina sa dokumentima i naloga za nabavku sa primljenim količinama. Ova dodatna fleksibilnost omogućava organizacijama da rukuju sofisticiranijim scenarijima određivanja cena i nabavke, poboljšavajući kontrolu i tačnost u svojim radnim tokovima.

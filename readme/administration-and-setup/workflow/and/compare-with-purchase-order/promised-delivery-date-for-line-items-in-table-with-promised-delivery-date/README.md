@@ -2,47 +2,47 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-This workflow card is designed to validate the **promised delivery date of line items** against the **promised delivery date on the purchase order**, using comparison operators and configurable tolerance rules. It allows workflows to automatically detect compliant, early, or late delivery dates and react accordingly.
+Ova kartica radnog toka je dizajnirana da proveri **obećani datum isporuke stavki** u odnosu na **obećani datum isporuke na nalogu za nabavku**, koristeći operatore poređenja i podesiva pravila tolerancije. Omogućava radnim tokovima da automatski otkriju usklađene, rane ili kasne datume isporuke i da u skladu sa tim reaguju.
 
-## Components of the Card:
+## Komponente kartice:
 
 1. **Operator**
-   * **Description:**\
-     Defines how the line item promised delivery date is compared to the purchase order promised delivery date.
-   * **Options:**
-     * **Equals (=):** The line item date must fall within the tolerance window.
-     * **Not Equals (≠):** The line item date must fall outside the tolerance window.
-     * **Greater Than (>):** The line item date must be after the tolerance window.
-     * **Greater or Equals (≥):** The line item date must be on or after the start of the tolerance window.
-     * **Lesser Than (<):** The line item date must be before the tolerance window.
-     * **Lesser or Equals (≤):** The line item date must be on or before the end of the tolerance window.<br>
+   * **Opis:**\
+     Definiše kako se obećani datum isporuke stavke upoređuje sa obećanim datumom isporuke iz naloga za nabavku.
+   * **Opcije:**
+     * **Equals (=):** Datum stavke mora pasti unutar prozora tolerancije.
+     * **Not Equals (≠):** Datum stavke mora pasti izvan prozora tolerancije.
+     * **Greater Than (>):** Datum stavke mora biti posle prozora tolerancije.
+     * **Greater or Equals (≥):** Datum stavke mora biti na ili posle početka prozora tolerancije.
+     * **Lesser Than (<):** Datum stavke mora biti pre prozora tolerancije.
+     * **Lesser or Equals (≤):** Datum stavke mora biti na ili pre kraja prozora tolerancije.<br>
 2. **Tolerance Days**
-   * **Description:**\
-     Specifies the number of days used to calculate the acceptable tolerance window around the purchase order promised delivery date.
-   * **Detail:**\
-     This value is an integer and defines how many days before and after the purchase order date are considered during validation.<br>
+   * **Opis:**\
+     Navodi broj dana koji se koristi za izračunavanje prihvatljivog prozora tolerancije oko obećanog datuma isporuke iz naloga za nabavku.
+   * **Detalj:**\
+     Ova vrednost je ceo broj i definiše koliko se dana pre i posle datuma naloga za nabavku uzima u obzir tokom validacije.<br>
 3. **Allowed Tolerance Days**
-   * **Description:**\
-     Defines which weekdays are counted when calculating tolerance days.
-   * **Detail:**\
-     Users can select specific weekdays (for example, Monday to Friday). Only the selected days are included when calculating the tolerance window.
+   * **Opis:**\
+     Definiše koji se radni dani računaju pri izračunavanju dana tolerancije.
+   * **Detalj:**\
+     Korisnici mogu izabrati određene radne dane (na primer, od ponedeljka do petka). Samo izabrani dani se uključuju pri izračunavanju prozora tolerancije.
 
-### Functionality:
+### Funkcionalnost:
 
-* **Condition Evaluation:** The system calculates a tolerance window around the purchase order promised delivery date based on the configured **Tolerance Days** and **Allowed Tolerance Days**.\
-  Each line item’s promised delivery date is then compared to this window using the selected operator.
-* Action Execution:
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Procena uslova:** Sistem izračunava prozor tolerancije oko obećanog datuma isporuke iz naloga za nabavku na osnovu konfigurisanih **Tolerance Days** i **Allowed Tolerance Days**.\
+  Obećani datum isporuke svake stavke se zatim upoređuje sa ovim prozorom koristeći izabrani operator.
+* Izvršavanje akcije:
+  * **Tačan uslov:** Ako je razlika u datumu isporuke unutar opsega tolerancije i poklapa se sa uslovom postavljenim operatorom, radni tok se nastavlja.
+  * **Netačan uslov:** Ako uslov nije ispunjen, radni tok se neće nastaviti.
 
-### Setup and Configuration:
+### Podešavanje i konfiguracija:
 
-* Select the appropriate comparison operator.
-* Enter the number of tolerance days.
-* Choose which weekdays should be counted as tolerance days.
+* Izaberite odgovarajući operator poređenja.
+* Unesite broj dana tolerancije.
+* Izaberite koji radni dani treba da se računaju kao dani tolerancije.
 
-### Conclusion:
+### Zaključak:
 
-The **Compare with Purchase Order – Promised Delivery Date for Line Items** workflow card provides a flexible way to enforce delivery date rules. By combining operators with weekday-aware tolerance handling, it enables precise validation of delivery commitments while reducing manual checks and exceptions.
+Kartica radnog toka **Compare with Purchase Order – Promised Delivery Date for Line Items** pruža fleksibilan način za sprovođenje pravila o datumima isporuke. Kombinovanjem operatora sa rukovanjem tolerancijom koje uzima u obzir radne dane, ona omogućava preciznu validaciju obaveza isporuke uz smanjenje ručnih provera i izuzetaka.

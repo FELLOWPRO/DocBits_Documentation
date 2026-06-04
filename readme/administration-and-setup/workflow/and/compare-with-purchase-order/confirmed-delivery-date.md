@@ -2,36 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/image (266).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-This workflow card is designed to verify that confirmed delivery dates on invoices or shipping documents align with the accepted delivery dates defined in a master data lookup table. By comparing these dates, it helps ensure compliance with agreed delivery schedules and enhances supply chain reliability.
+Ova kartica radnog toka je dizajnirana da proveri da li su potvrđeni datumi isporuke na fakturama ili otpremnim dokumentima usklađeni sa prihvaćenim datumima isporuke definisanim u tabeli za pretragu matičnih podataka. Poređenjem ovih datuma, ona pomaže da se obezbedi usklađenost sa dogovorenim rasporedima isporuke i poboljša pouzdanost lanca snabdevanja.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Operator**
-   * **Description:** Defines the condition for comparing the confirmed delivery date to the accepted delivery date.
-   * **Options:**
-     * **Is:** Confirms that the delivery date matches the accepted delivery date in the master data.
-     * **Is Not:** Ensures that the delivery date does not match the accepted delivery date in the master data.
-2. **Master Data Table Lookup**
-   * **Description:** Specifies the reference table containing accepted delivery dates for comparison.
-   * **Detail:** The table is defined by the **Master Data Table** parameter and may include additional metadata such as order numbers or delivery regions.
+   * **Opis:** Definiše uslov za poređenje potvrđenog datuma isporuke sa prihvaćenim datumom isporuke.
+   * **Opcije:**
+     * **Is:** Potvrđuje da se datum isporuke poklapa sa prihvaćenim datumom isporuke u matičnim podacima.
+     * **Is Not:** Obezbeđuje da se datum isporuke ne poklapa sa prihvaćenim datumom isporuke u matičnim podacima.
+2. **Pretraga tabele matičnih podataka**
+   * **Opis:** Navodi referentnu tabelu koja sadrži prihvaćene datume isporuke za poređenje.
+   * **Detalj:** Tabela je definisana parametrom **Master Data Table** i može uključivati dodatne metapodatke kao što su brojevi porudžbina ili regioni isporuke.
 
 
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Date Comparison:** The system compares the confirmed delivery date from the invoice or shipping document to the accepted delivery date in the specified master data lookup table.
-* **Action Execution:** Based on the comparison result, the card can trigger follow-up actions such as notifications.
+* **Poređenje datuma:** Sistem upoređuje potvrđeni datum isporuke iz fakture ili otpremnog dokumenta sa prihvaćenim datumom isporuke u navedenoj tabeli za pretragu matičnih podataka.
+* **Izvršavanje akcije:** Na osnovu rezultata poređenja, kartica može pokrenuti naredne akcije kao što su obaveštenja.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-* To configure this card, users select the field representing the confirmed delivery date in the document and specify the master data lookup table containing the accepted delivery dates. An operator is then chosen to define how the two dates should be compared (e.g., **Is** or **Is Not**).
+* Da bi konfigurisali ovu karticu, korisnici biraju polje koje predstavlja potvrđeni datum isporuke u dokumentu i navode tabelu za pretragu matičnih podataka koja sadrži prihvaćene datume isporuke. Operator se zatim bira da definiše kako treba upoređivati dva datuma (npr. **Is** ili **Is Not**).
 
-## **Example Scenario**
+## **Primer scenarija**
 
-* An invoice lists a confirmed delivery date of June 10th, while the master data lookup table specifies an accepted delivery date of June 15th. Using the **Is Not** operator, the card flags the discrepancy for review, allowing the logistics team to investigate the cause and adjust schedules accordingly.
+* Faktura navodi potvrđeni datum isporuke 10. juna, dok tabela za pretragu matičnih podataka navodi prihvaćeni datum isporuke 15. juna. Koristeći operator **Is Not**, kartica označava nepodudaranje za pregled, omogućavajući logističkom timu da istraži uzrok i u skladu sa tim prilagodi rasporede.
 
-## **Conclusion**
+## **Zaključak**
 
-The **"Confirmed Delivery Date vs. Accepted Delivery Date"** workflow card helps organizations maintain adherence to agreed-upon delivery schedules by automating the comparison of confirmed and accepted delivery dates. This proactive approach to delivery management enhances operational efficiency, reduces delays, and fosters better collaboration across the supply chain.
+Kartica radnog toka **"Confirmed Delivery Date vs. Accepted Delivery Date"** pomaže organizacijama da održe pridržavanje dogovorenih rasporeda isporuke automatizacijom poređenja potvrđenih i prihvaćenih datuma isporuke. Ovaj proaktivan pristup upravljanju isporukom poboljšava operativnu efikasnost, smanjuje kašnjenja i podstiče bolju saradnju u celom lancu snabdevanja.

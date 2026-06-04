@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
-**Purpose**
+**Svrha**
 
-This workflow card manages the execution of operations based on whether a task or document is assigned to a particular user or set of users. It employs conditional logic to either trigger or prevent specific actions, making it ideal for workflows that require user-specific handling.
+Ova kartica radnog toka upravlja izvršavanjem operacija na osnovu toga da li je zadatak ili dokument dodeljen određenom korisniku ili skupu korisnika. Koristi uslovnu logiku da pokrene ili spreči određene akcije, što je čini idealnom za radne tokove koji zahtevaju rukovanje specifično za korisnika.
 
-**Components of the Card**
+**Komponente kartice**
 
 1. **Operator**
-   * **Description**: Defines the logical condition to apply to the user assignment.
-   * **Options**:
-     * **IS**: Triggers the operation if the assigned user of the document or task matches any user in the specified list.
-     * **IS NOT**: Triggers the operation if the assigned user of the document or task does not match any user in the specified list.
-2. **User List**
-   * **Description**: A list or selection of users to compare against the assigned user.
-   * **Detail**: This list can include one or multiple users, allowing the card to handle both singular and multiple user conditions effectively. The selection can be made through checkboxes, a multi-select dropdown, or similar UI elements.
+   * **Opis**: Definiše logički uslov koji se primenjuje na dodelu korisnika.
+   * **Opcije**:
+     * **IS**: Pokreće operaciju ako se dodeljeni korisnik dokumenta ili zadatka poklapa sa bilo kojim korisnikom u navedenoj listi.
+     * **IS NOT**: Pokreće operaciju ako se dodeljeni korisnik dokumenta ili zadatka ne poklapa ni sa jednim korisnikom u navedenoj listi.
+2. **Lista korisnika**
+   * **Opis**: Lista ili izbor korisnika za poređenje sa dodeljenim korisnikom.
+   * **Detalj**: Ova lista može uključivati jednog ili više korisnika, omogućavajući kartici da efikasno rukuje i pojedinačnim i višestrukim uslovima korisnika. Izbor se može vršiti pomoću polja za potvrdu, padajuće liste sa višestrukim izborom ili sličnih elemenata korisničkog interfejsa.
 
-**Functionality**
+**Funkcionalnost**
 
-* **User Assignment Identification**: Automatically identifies the user or users assigned to a particular task or document within the ERP system.
-* **Condition Evaluation**:
-  * Using the **IS** operator, the card checks if the assigned user is among those listed in the User List.
-  * Using the **IS NOT** operator, the card ensures the assigned user is not among those listed.
-* **Action Execution**:
-  * **True Condition**: If the user assignment meets the condition (either IS or IS NOT), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition**: If the condition is not met, the workflow will not continue.
+* **Identifikacija dodele korisnika**: Automatski identifikuje korisnika ili korisnike dodeljene određenom zadatku ili dokumentu u ERP sistemu.
+* **Procena uslova**:
+  * Koristeći operator **IS**, kartica proverava da li je dodeljeni korisnik među onima navedenim u Listi korisnika.
+  * Koristeći operator **IS NOT**, kartica obezbeđuje da dodeljeni korisnik nije među navedenima.
+* **Izvršavanje akcije**:
+  * **Tačan uslov**: Ako dodela korisnika ispunjava uslov (bilo IS ili IS NOT), pokreću se relevantne akcije, kao što su obaveštenja, pokretanja zadataka, odobrenja ili drugi koraci radnog toka.
+  * **Netačan uslov**: Ako uslov nije ispunjen, radni tok se neće nastaviti.
 
-**User Interactions**
+**Korisničke interakcije**
 
-* **Setup and Configuration**: Users configure the card by selecting an operator and specifying the relevant users from the User List. Setup should be user-friendly and intuitive to accommodate selections from potentially large user bases.
-* **Monitoring and Reporting**: The ERP system should provide functionality to monitor and report on the operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications**: Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in user selection.
+* **Podešavanje i konfiguracija**: Korisnici konfigurišu karticu izborom operatora i navođenjem relevantnih korisnika iz Liste korisnika. Podešavanje treba da bude jednostavno za korišćenje i intuitivno kako bi se prilagodilo izborima iz potencijalno velikih baza korisnika.
+* **Praćenje i izveštavanje**: ERP sistem treba da pruži funkcionalnost za praćenje i izveštavanje o operacijama pokrenutim ovom karticom, nudeći uvid u tačnost dodela i efikasnost procesa.
+* **Rukovanje greškama i obaveštenja**: Korisnici treba da imaju opcije da primaju upozorenja ili obaveštenja ako postoje problemi sa dodelama, kao što su nedodeljeni zadaci ili greške u izboru korisnika.
 
-#### Conclusion
+#### Zaključak
 
-The "Assigned User Condition" workflow card is a critical tool for managing document and task workflows that depend on user assignments. By allowing conditions based on whether a task or document is assigned to specific users, it ensures that workflows are only triggered by appropriate user interactions, enhancing both accountability and task alignment within teams. Clearly documenting this card will help users understand its significance and integrate it effectively into their workflows, ensuring smooth and efficient operations tailored to user roles and responsibilities.
+Kartica radnog toka "Assigned User Condition" je ključni alat za upravljanje radnim tokovima dokumenata i zadataka koji zavise od dodela korisnika. Omogućavajući uslove zasnovane na tome da li je zadatak ili dokument dodeljen određenim korisnicima, ona obezbeđuje da radne tokove pokreću samo odgovarajuće interakcije korisnika, poboljšavajući i odgovornost i usklađenost zadataka unutar timova. Jasno dokumentovanje ove kartice pomoći će korisnicima da razumeju njen značaj i da je efikasno integrišu u svoje radne tokove, obezbeđujući neometano i efikasno poslovanje prilagođeno ulogama i odgovornostima korisnika.

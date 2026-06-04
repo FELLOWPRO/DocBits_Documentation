@@ -2,43 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to evaluate whether the combined value of unit prices and a specified field exceeds or falls short of a defined threshold. It helps identify any discrepancies where the unit prices, when combined with other fields, are out of tolerance, ensuring that pricing conditions meet expectations and flagging any issues for review or further action.
+Ova kartica radnog toka je dizajnirana da proceni da li kombinovana vrednost jediničnih cena i navedenog polja prekoračuje ili je ispod definisanog praga. Pomaže u identifikaciji svih nepodudaranja gde su jedinične cene, kada se kombinuju sa drugim poljima, izvan tolerancije, obezbeđujući da uslovi određivanja cena ispunjavaju očekivanja i označavajući sve probleme za pregled ili dalju akciju.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name:**
-   * **Description**: Specifies the document field that contains the value to be combined with the unit price.
-   * **Detail**: The value in this field will be combined with the unit price to create the total combined value for comparison.
+   * **Opis**: Navodi polje dokumenta koje sadrži vrednost koja se kombinuje sa jediničnom cenom.
+   * **Detalj**: Vrednost u ovom polju biće kombinovana sa jediničnom cenom da bi se stvorila ukupna kombinovana vrednost za poređenje.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the combined value of the unit price and the field value against the specified value.
-   * **Options**:
-     * **Equals (=)**: Verifies if the combined value of the unit price and the field matches the specified value.
-     * **Not Equals (≠)**: Ensures the combined value of the unit price and the field is different from the specified value.
-     * **Greater Than (>)**: Verifies if the combined value of the unit price and the field exceeds the specified value.
-     * **Greater or Equals (≥)**: Verifies if the combined value of the unit price and the field is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the combined value of the unit price and the field is less than the specified value.
-     * **Lesser or Equals (≤)**: Verifies if the combined value of the unit price and the field is less than or equal to the specified value.
+   * **Opis**: Definiše uslov za poređenje kombinovane vrednosti jedinične cene i vrednosti polja sa navedenom vrednošću.
+   * **Opcije**:
+     * **Equals (=)**: Proverava da li se kombinovana vrednost jedinične cene i polja poklapa sa navedenom vrednošću.
+     * **Not Equals (≠)**: Obezbeđuje da se kombinovana vrednost jedinične cene i polja razlikuje od navedene vrednosti.
+     * **Greater Than (>)**: Proverava da li kombinovana vrednost jedinične cene i polja prekoračuje navedenu vrednost.
+     * **Greater or Equals (≥)**: Proverava da li je kombinovana vrednost jedinične cene i polja veća ili jednaka navedenoj vrednosti.
+     * **Lesser Than (<)**: Proverava da li je kombinovana vrednost jedinične cene i polja manja od navedene vrednosti.
+     * **Lesser or Equals (≤)**: Proverava da li je kombinovana vrednost jedinične cene i polja manja ili jednaka navedenoj vrednosti.
 3. **Value:**
-   * **Description**: Specifies the value against which the combined unit price and field value will be compared.
-   * **Detail**: This numeric value represents the threshold for comparison. If the combined value of the unit price and field exceeds or falls short of this value (based on the selected operator), the condition will trigger the specified actions.
+   * **Opis**: Navodi vrednost sa kojom će se uporediti kombinovana jedinična cena i vrednost polja.
+   * **Detalj**: Ova numerička vrednost predstavlja prag za poređenje. Ako kombinovana vrednost jedinične cene i polja prekorači ili je ispod ove vrednosti (na osnovu izabranog operatora), uslov će pokrenuti navedene akcije.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* &#x20;**Condition Evaluation:** The system calculates the combined value by multiplying or adding the unit price with the field value, depending on the configuration. The result is then compared to the specified value using the selected operator. If the condition is met (i.e., the combined value is out of tolerance), the workflow proceeds with the next step, whether that’s approval, rejection, or further review.
-* **Action Execution:**
-  * **True Condition**: If the comparison results in true (i.e., the combined value meets the condition), the workflow triggers the action associated with the true condition (e.g., approval or notification).
-  * **False Condition**: If the comparison results in false (i.e., the combined value does not meet the condition), the workflow will not proceed.
+* &#x20;**Procena uslova:** Sistem izračunava kombinovanu vrednost množenjem ili sabiranjem jedinične cene sa vrednošću polja, u zavisnosti od konfiguracije. Rezultat se zatim upoređuje sa navedenom vrednošću koristeći izabrani operator. Ako je uslov ispunjen (tj. kombinovana vrednost je izvan tolerancije), radni tok se nastavlja sa sledećim korakom, bilo da je to odobrenje, odbijanje ili dalji pregled.
+* **Izvršavanje akcije:**
+  * **Tačan uslov**: Ako poređenje rezultira tačnim (tj. kombinovana vrednost ispunjava uslov), radni tok pokreće akciju povezanu sa tačnim uslovom (npr. odobrenje ili obaveštenje).
+  * **Netačan uslov**: Ako poređenje rezultira netačnim (tj. kombinovana vrednost ne ispunjava uslov), radni tok se neće nastaviti.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* Users select the field that contains the value to be combined with the unit price. Next, they choose the appropriate operator to determine how the combined value will be compared to the specified value. Finally, the user sets the value that the combined price will be compared to.
+* Korisnici biraju polje koje sadrži vrednost koja se kombinuje sa jediničnom cenom. Zatim biraju odgovarajući operator da odrede kako će se kombinovana vrednost upoređivati sa navedenom vrednošću. Na kraju, korisnik postavlja vrednost sa kojom će se kombinovana cena upoređivati.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* An invoice lists 50 units of a product at $30 each, totaling $1500. The related document has a quantity field with a value of 10. The combined price is calculated by multiplying the unit price ($30) and the quantity (10), resulting in $300. The card then compares this combined value to a threshold of $250. Using the “Greater Than” operator, the card identifies that $300 is greater than $250, triggering an approval process for the document.
+* Faktura navodi 50 jedinica proizvoda po $30 svaka, što ukupno iznosi $1500. Povezani dokument ima polje količine sa vrednošću 10. Kombinovana cena se izračunava množenjem jedinične cene ($30) i količine (10), što daje $300. Kartica zatim upoređuje ovu kombinovanu vrednost sa pragom od $250. Koristeći operator "Greater Than", kartica utvrđuje da je $300 veće od $250, pokrećući proces odobrenja za dokument.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Out of Tolerance Unit Prices Combined with Fields" workflow card helps ensure that pricing and field values are in alignment with business rules. By automating this check, organizations can identify discrepancies early in the process, ensuring that any out-of-tolerance unit prices are flagged for review or necessary action.
+Kartica radnog toka "Out of Tolerance Unit Prices Combined with Fields" pomaže da se obezbedi da vrednosti cena i polja budu usklađene sa poslovnim pravilima. Automatizacijom ove provere, organizacije mogu rano identifikovati nepodudaranja u procesu, obezbeđujući da se sve jedinične cene izvan tolerancije označe za pregled ili neophodnu akciju.

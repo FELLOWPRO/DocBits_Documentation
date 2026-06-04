@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to compare item IDs between a purchase order and a related document to ensure that the correct items are included. The card evaluates whether the item ID in the purchase order matches the item ID in the document. This comparison can trigger actions if discrepancies are found, ensuring that the items in the document align with the purchase order.
+Ova kartica radnog toka je dizajnirana da uporedi ID-ove stavki između naloga za nabavku i povezanog dokumenta kako bi se obezbedilo da su uključene ispravne stavke. Kartica procenjuje da li se ID stavke u nalogu za nabavku poklapa sa ID-om stavke u dokumentu. Ovo poređenje može pokrenuti akcije ako se pronađu nepodudaranja, obezbeđujući da stavke u dokumentu budu usklađene sa nalogom za nabavku.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Any / All:**
-   * **Description**: Defines whether the condition applies to any or all instances of item ID comparisons.
-   * **Options**:
-     * **Any**: The condition is met if any item ID in the purchase order matches the item ID in the document.
-     * **All**: The condition is met only if all item IDs in the purchase order match the item IDs in the document.
+   * **Opis**: Definiše da li se uslov primenjuje na bilo koju ili na sve instance poređenja ID-a stavke.
+   * **Opcije**:
+     * **Any**: Uslov je ispunjen ako se bilo koji ID stavke u nalogu za nabavku poklapa sa ID-om stavke u dokumentu.
+     * **All**: Uslov je ispunjen samo ako se svi ID-ovi stavki u nalogu za nabavku poklapaju sa ID-ovima stavki u dokumentu.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the item ID on the purchase order to the item ID on the document.
-   * **Options**:
-     * **Equals (=)**: Verifies if the item ID in the purchase order exactly matches the item ID in the document.
-     * **Not Equals (≠)**: Ensures that the item ID in the purchase order does not match the item ID in the document.
+   * **Opis**: Definiše uslov za poređenje ID-a stavke u nalogu za nabavku sa ID-om stavke u dokumentu.
+   * **Opcije**:
+     * **Equals (=)**: Proverava da li se ID stavke u nalogu za nabavku tačno poklapa sa ID-om stavke u dokumentu.
+     * **Not Equals (≠)**: Obezbeđuje da se ID stavke u nalogu za nabavku ne poklapa sa ID-om stavke u dokumentu.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system compares the item ID in the purchase order to the item ID in the document based on the selected operator. If the comparison condition is true (e.g., item IDs match or do not match), the workflow will proceed accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the item ID in the purchase order equals the item ID in the document), the workflow will proceed with the true action (e.g., approval or further processing).
-  * **False Condition**: If the condition evaluates to false (e.g., the item ID in the purchase order does not match the item ID in the document), the workflow will not proceed.
+* **Procena uslova:** Sistem upoređuje ID stavke u nalogu za nabavku sa ID-om stavke u dokumentu na osnovu izabranog operatora. Ako je uslov poređenja tačan (npr. ID-ovi stavki se poklapaju ili ne poklapaju), radni tok će se nastaviti u skladu sa tim.
+* **Izvršavanje akcije:**
+  * **Tačan uslov**: Ako se uslov proceni kao tačan (npr. ID stavke u nalogu za nabavku jednak je ID-u stavke u dokumentu), radni tok će se nastaviti sa tačnom akcijom (npr. odobrenje ili dalja obrada).
+  * **Netačan uslov**: Ako se uslov proceni kao netačan (npr. ID stavke u nalogu za nabavku se ne poklapa sa ID-om stavke u dokumentu), radni tok se neće nastaviti.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* Users configure the card by selecting the item ID in both the purchase order and the document. They then choose the appropriate operator (Equals or Not Equals) to define how the item IDs will be compared. Lastly, users select whether the condition applies to any or all of the item IDs in the comparison.
+* Korisnici konfigurišu karticu izborom ID-a stavke i u nalogu za nabavku i u dokumentu. Zatim biraju odgovarajući operator (Equals ili Not Equals) da definišu kako će se ID-ovi stavki upoređivati. Na kraju, korisnici biraju da li se uslov primenjuje na bilo koji ili na sve ID-ove stavki u poređenju.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* An invoice lists an item with ID "ABC123" and the related purchase order also includes an item with ID "ABC123". Using the "Equals" operator, the card compares the item ID in the document with the item ID in the purchase order. Since the item IDs match, the workflow continues without issue
+* Faktura navodi stavku sa ID-om "ABC123", a povezani nalog za nabavku takođe uključuje stavku sa ID-om "ABC123". Koristeći operator "Equals", kartica upoređuje ID stavke u dokumentu sa ID-om stavke u nalogu za nabavku. Pošto se ID-ovi stavki poklapaju, radni tok se nastavlja bez problema
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Item ID Comparison" workflow card ensures that the item IDs in documents align with those in purchase orders. This helps prevent discrepancies in item listings and ensures that the correct items are processed according to the purchase order. The ability to compare based on any or all instances provides flexibility in different use cases, improving the accuracy and efficiency of procurement workflows.
+Kartica radnog toka "Item ID Comparison" obezbeđuje da ID-ovi stavki u dokumentima budu usklađeni sa onima u nalozima za nabavku. Ovo pomaže u sprečavanju nepodudaranja u listama stavki i obezbeđuje da se ispravne stavke obrađuju u skladu sa nalogom za nabavku. Mogućnost poređenja na osnovu bilo koje ili svih instanci pruža fleksibilnost u različitim slučajevima upotrebe, poboljšavajući tačnost i efikasnost radnih tokova nabavke.

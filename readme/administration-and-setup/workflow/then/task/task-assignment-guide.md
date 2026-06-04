@@ -4,38 +4,38 @@ Te karty trafiają do grupy **Then** w Kreatorze przepływów — akcje uruchami
 
 <figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty dodaje się do grupy <strong>Then</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
 
-**Covers:** 12 task-related cards
+**Obejmuje:** 12 kart związanych z zadaniami
 
 ---
 
-## Overview
+## Przegląd
 
-Task cards create work assignments for team members. When an invoice needs approval, you can automatically create a task and assign it to the right person.
+Karty zadań tworzą przydziały pracy dla członków zespołu. Gdy faktura wymaga zatwierdzenia, możesz automatycznie utworzyć zadanie i przypisać je do właściwej osoby.
 
 ---
 
-# Basic Task Creation
+# Podstawowe tworzenie zadań
 
-## Card: tasks_create / Create Task and Assign to User
+## Karta: tasks_create / Create Task and Assign to User
 
-### Purpose
-Creates a task and assigns it to a specific person
+### Cel
+Tworzy zadanie i przypisuje je do konkretnej osoby
 
-### When to Use
-- Invoice needs specific person's review
-- Approval required from named individual
-- Handoff to specific team member
+### Kiedy używać
+- Faktura wymaga przeglądu przez konkretną osobę
+- Wymagane zatwierdzenie od imiennie wskazanej osoby
+- Przekazanie konkretnemu członkowi zespołu
 
-### Parameters
+### Parametry
 
 **Title**
-The task name/subject
+Nazwa/temat zadania
 ```
 Example: "Review Invoice #INV-2025-001 for approval"
 ```
 
 **Description**
-Details about the task
+Szczegóły zadania
 ```
 Example: "Invoice from Supplier ABC needs review.
 Amount: €5000
@@ -44,24 +44,24 @@ Please verify pricing and quality."
 ```
 
 **Priority**
-- 🔴 **High**: Urgent, do immediately
-- 🟡 **Medium**: Normal priority
-- 🟢 **Low**: Can be done later
+- 🔴 **High**: Pilne, wykonaj natychmiast
+- 🟡 **Medium**: Normalny priorytet
+- 🟢 **Low**: Może być wykonane później
 
 **Assigned User**
-Who gets the task
+Kto otrzymuje zadanie
 ```
 Example: John Smith (Finance Manager)
 ```
 
 **Email Notification**
-Send email alert to assigned person?
+Wysłać alert e-mail do przypisanej osoby?
 ```
 ✅ Yes: Person gets email
 ❌ No: Task only in system
 ```
 
-### Example
+### Przykład
 ```
 Condition: "Invoice amount > €10,000"
     ↓
@@ -77,17 +77,17 @@ Sarah receives task and email notification
 
 ---
 
-## Card: ACTION_TASK_FOR_GROUP / Create Task for Group
+## Karta: ACTION_TASK_FOR_GROUP / Create Task for Group
 
-### Purpose
-Creates a task and assigns it to a group (all members can see it)
+### Cel
+Tworzy zadanie i przypisuje je do grupy (wszyscy członkowie mogą je zobaczyć)
 
-### When to Use
-- Multiple people can do the task
-- Task for team, not individual
-- First person available should handle
+### Kiedy używać
+- Wiele osób może wykonać zadanie
+- Zadanie dla zespołu, nie dla osoby indywidualnej
+- Pierwsza dostępna osoba powinna je obsłużyć
 
-### Difference from Individual Task
+### Różnica względem zadania indywidualnego
 ```
 Individual Task:
 - Only John sees it
@@ -100,7 +100,7 @@ Group Task:
 - Distributed workload
 ```
 
-### Example Workflow
+### Przykładowy przepływ pracy
 ```
 Document arrives
     ↓
@@ -119,12 +119,12 @@ First person available takes it
 
 ---
 
-## Card: ACTION_DECISION_TREE_CREATE_TASKS
+## Karta: ACTION_DECISION_TREE_CREATE_TASKS
 
-### Purpose
-Creates tasks based on decision table logic
+### Cel
+Tworzy zadania na podstawie logiki tabeli decyzyjnej
 
-### How It Works
+### Jak to działa
 ```
 Decision Table Returns:
   If invoice from Supplier A → Assign to Procurement
@@ -135,12 +135,12 @@ Task is automatically created and assigned
 based on which condition is true
 ```
 
-### When to Use
-- Different suppliers need different approval
-- Complex routing based on multiple factors
-- Different team based on document type
+### Kiedy używać
+- Różni dostawcy wymagają różnego zatwierdzenia
+- Złożony routing na podstawie wielu czynników
+- Różny zespół na podstawie typu dokumentu
 
-### Example
+### Przykład
 ```
 Document: Invoice from ABC Corp (Supplier A)
     ↓
@@ -153,18 +153,18 @@ Create and assign task to Procurement Team
 
 ---
 
-## Card: ACTION_DECISION_TREE_TASKS_SEQUENTIAL
+## Karta: ACTION_DECISION_TREE_TASKS_SEQUENTIAL
 
-### Purpose
-Creates tasks sequentially based on decision table
-Tasks are assigned one at a time with priority order
+### Cel
+Tworzy zadania sekwencyjnie na podstawie tabeli decyzyjnej
+Zadania są przypisywane pojedynczo z kolejnością priorytetów
 
-### When to Use
-- Multiple approvals needed in sequence
-- Workflow approval chain
-- Each person reviews then passes to next
+### Kiedy używać
+- Potrzeba wielu zatwierdzeń w sekwencji
+- Łańcuch zatwierdzania przepływu pracy
+- Każda osoba przegląda, a następnie przekazuje dalej
 
-### How It Works
+### Jak to działa
 ```
 Step 1: Create Task for Procurement Manager
         (Priority 1)
@@ -179,7 +179,7 @@ Step 4: Finance Manager approves
 Step 5: Export
 ```
 
-### Priority System
+### System priorytetów
 ```
 Priority 1 → Assign to: Person A
 Priority 2 → Assign to: Person B
@@ -188,7 +188,7 @@ Priority 3 → Assign to: Person C
 They must complete in order (1→2→3)
 ```
 
-### Example Configuration
+### Przykładowa konfiguracja
 ```
 Decision Table Returns:
   Level 1: Sarah Johnson (Finance)
@@ -204,17 +204,17 @@ Task Flow:
 
 ---
 
-## Card: ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL
+## Karta: ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL
 
-### Purpose
-Assigns document to one user AND creates sequential task
+### Cel
+Przypisuje dokument do jednego użytkownika ORAZ tworzy zadanie sekwencyjne
 
-### When to Use
-- Assign document AND create task at same time
-- Document needs to be reviewed by specific person
-- Track both assignment and task creation
+### Kiedy używać
+- Przypisz dokument ORAZ utwórz zadanie jednocześnie
+- Dokument wymaga przeglądu przez konkretną osobę
+- Śledzenie zarówno przypisania, jak i tworzenia zadania
 
-### How It Works
+### Jak to działa
 ```
 Two things happen:
 1. Document is assigned to: Person A
@@ -223,7 +223,7 @@ Two things happen:
 Both in one action
 ```
 
-### Example
+### Przykład
 ```
 High-value invoice arrives
     ↓
@@ -237,17 +237,17 @@ Document AND task both go to Finance Manager
 
 ---
 
-## Card: ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL
+## Karta: ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL
 
-### Purpose
-Assigns document to group AND creates task
+### Cel
+Przypisuje dokument do grupy ORAZ tworzy zadanie
 
-### When to Use
-- Document needs group attention
-- Want to track task creation
-- Create initial task then document assignment
+### Kiedy używać
+- Dokument wymaga uwagi grupy
+- Chcesz śledzić tworzenie zadania
+- Utwórz początkowe zadanie, a następnie przypisanie dokumentu
 
-### Example
+### Przykład
 ```
 New supplier evaluation
     ↓
@@ -262,19 +262,19 @@ Group members see document and task
 
 ---
 
-# Advanced Task Creation
+# Zaawansowane tworzenie zadań
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP
+## Karta: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP
 
-### Purpose
-Creates task for specific facility group
+### Cel
+Tworzy zadanie dla określonej grupy obiektu
 
-### When to Use
-- Task for warehouse/facility team
-- Facility-specific operations
-- Physical location matters
+### Kiedy używać
+- Zadanie dla zespołu magazynu/obiektu
+- Operacje specyficzne dla obiektu
+- Liczy się fizyczna lokalizacja
 
-### Example
+### Przykład
 ```
 Document: Shipment notification
     ↓
@@ -288,17 +288,17 @@ Berlin warehouse team gets task
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL
+## Karta: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL
 
-### Purpose
-Sequential task assignment across facilities
+### Cel
+Sekwencyjne przypisanie zadań między obiektami
 
-### When to Use
-- Multi-facility operations
-- Tasks pass from facility to facility
-- Sequential facility processing
+### Kiedy używać
+- Operacje wieloobiektowe
+- Zadania przechodzą z obiektu do obiektu
+- Sekwencyjne przetwarzanie obiektów
 
-### How It Works
+### Jak to działa
 ```
 Factory A (Step 1): Production
     ↓
@@ -309,7 +309,7 @@ Warehouse (Step 3): Packaging
 Shipping (Step 4): Dispatch
 ```
 
-### Example
+### Przykład
 ```
 Manufacturing Document
     ↓
@@ -324,17 +324,17 @@ Each team completes → Passes to next
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
+## Karta: ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
 
-### Purpose
-Creates task for procurement department
+### Cel
+Tworzy zadanie dla działu zakupów
 
-### When to Use
-- Task for procurement team
-- Supplier management tasks
-- Purchase-related work
+### Kiedy używać
+- Zadanie dla zespołu zakupowego
+- Zadania zarządzania dostawcami
+- Praca związana z zakupami
 
-### Example
+### Przykład
 ```
 Supplier status change notification
     ↓
@@ -349,17 +349,17 @@ Procurement team is notified
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL
+## Karta: ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL
 
-### Purpose
-Sequential task routing within procurement
+### Cel
+Sekwencyjny routing zadań w ramach zakupów
 
-### When to Use
-- Multi-step procurement processes
-- Approval chain in procurement
-- Escalation path
+### Kiedy używać
+- Wieloetapowe procesy zakupowe
+- Łańcuch zatwierdzania w zakupach
+- Ścieżka eskalacji
 
-### Example
+### Przykład
 ```
 Purchase Requisition received
     ↓
@@ -374,18 +374,18 @@ All sign-offs complete → Release to supplier
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
+## Karta: ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
 
-### Purpose
-Get user from document field, assign task
-If user not found, use fallback user
+### Cel
+Pobierz użytkownika z pola dokumentu, przypisz zadanie
+Jeśli użytkownik nie zostanie znaleziony, użyj użytkownika zapasowego
 
-### When to Use
-- User stored in document field
-- Document specifies who should review
-- Have backup person if specified user unavailable
+### Kiedy używać
+- Użytkownik przechowywany w polu dokumentu
+- Dokument określa, kto powinien przeprowadzić przegląd
+- Miej osobę zapasową, jeśli określony użytkownik jest niedostępny
 
-### How It Works
+### Jak to działa
 ```
 Document has field: "Approver Name: John Smith"
 
@@ -394,7 +394,7 @@ Card checks: Is John in system?
     If NO → Assign to Fallback User (Sarah)
 ```
 
-### Example
+### Przykład
 ```
 Invoice field: "Contact: Mike Johnson"
 
@@ -405,7 +405,7 @@ If Mike doesn't exist in system:
 Use Fallback: Team Lead (Robert Brown)
 ```
 
-### Parameters
+### Parametry
 ```
 - Field to Read: "Approver Name"
 - Fallback User: Robert Brown
@@ -414,9 +414,9 @@ Use Fallback: Team Lead (Robert Brown)
 
 ---
 
-# Common Task Parameters
+# Typowe parametry zadań
 
-All task cards use these parameters:
+Wszystkie karty zadań używają tych parametrów:
 
 ### Title
 ```
@@ -434,7 +434,7 @@ Should include:
 ✅ Link to document
 ```
 
-### Priority Levels
+### Poziomy priorytetu
 ```
 🔴 HIGH
    - Action needed within hours
@@ -452,7 +452,7 @@ Should include:
    - Example: Archive old documents
 ```
 
-### Due Date (if available)
+### Due Date (jeśli dostępne)
 ```
 When should task be completed by?
 Example: 2025-10-30 (5 days from now)
@@ -460,9 +460,9 @@ Example: 2025-10-30 (5 days from now)
 
 ---
 
-# Task Workflow Scenarios
+# Scenariusze przepływu pracy zadań
 
-## Scenario 1: Simple Approval
+## Scenariusz 1: Proste zatwierdzenie
 ```
 Invoice Arrives (€2000)
     ↓
@@ -473,7 +473,7 @@ YES: Create Task for Finance Manager
 Finance Manager reviews and approves
 ```
 
-## Scenario 2: Multi-Level Approval
+## Scenariusz 2: Zatwierdzenie wielopoziomowe
 ```
 Invoice Arrives (€50,000 - High Value)
     ↓
@@ -485,7 +485,7 @@ Create Sequential Tasks:
 Each level completes → Next begins
 ```
 
-## Scenario 3: Parallel Tasks
+## Scenariusz 3: Zadania równoległe
 ```
 Invoice Arrives (From New Supplier)
     ↓
@@ -497,7 +497,7 @@ All teams work simultaneously
 All must complete before proceeding
 ```
 
-## Scenario 4: Conditional Routing
+## Scenariusz 4: Routing warunkowy
 ```
 Invoice Arrives
     ↓
@@ -511,87 +511,86 @@ Task created for correct person
 
 ---
 
-# Task Assignment Best Practices
+# Najlepsze praktyki przypisywania zadań
 
-✅ **Do:**
-- Include specific details in task title
-- Set appropriate priority levels
-- Set realistic deadlines
-- Notify assignees
-- Include link to document
-- Use clear, actionable descriptions
+✅ **Rób:**
+- Uwzględnij konkretne szczegóły w tytule zadania
+- Ustaw odpowiednie poziomy priorytetu
+- Ustaw realistyczne terminy
+- Powiadom osoby przypisane
+- Dołącz łącze do dokumentu
+- Używaj jasnych, gotowych do działania opisów
 
-❌ **Don't:**
-- Create vague task titles ("Review this")
-- Set everything as High priority
-- Forget to notify assigned person
-- Create multiple tasks for same work
-- Assign to unavailable people
+❌ **Nie rób:**
+- Nie twórz niejasnych tytułów zadań ("Review this")
+- Nie ustawiaj wszystkiego jako wysoki priorytet
+- Nie zapominaj o powiadomieniu przypisanej osoby
+- Nie twórz wielu zadań dla tej samej pracy
+- Nie przypisuj do niedostępnych osób
 
 ---
 
-# Troubleshooting Tasks
+# Rozwiązywanie problemów z zadaniami
 
 ## "Task not assigned to anyone"
-**Cause:** User doesn't exist or group is empty
+**Przyczyna:** Użytkownik nie istnieje lub grupa jest pusta
 
-**Solution:**
-- Verify user name spelling
-- Check user is active in system
-- Verify group has members
-- Use fallback if needed
+**Rozwiązanie:**
+- Zweryfikuj pisownię nazwy użytkownika
+- Sprawdź, czy użytkownik jest aktywny w systemie
+- Zweryfikuj, czy grupa ma członków
+- W razie potrzeby użyj rozwiązania zapasowego
 
 ## "Person says they didn't get notification"
-**Cause:** Email notification disabled or email wrong
+**Przyczyna:** Powiadomienie e-mail wyłączone lub nieprawidłowy e-mail
 
-**Solution:**
-- Check "Send Email" checkbox is enabled
-- Verify recipient email address
-- Check spam folder
-- Resend notification manually
+**Rozwiązanie:**
+- Sprawdź, czy pole wyboru "Send Email" jest włączone
+- Zweryfikuj adres e-mail odbiorcy
+- Sprawdź folder spamu
+- Wyślij powiadomienie ponownie ręcznie
 
 ## "Wrong person got task"
-**Cause:** Routing logic incorrect
+**Przyczyna:** Nieprawidłowa logika routingu
 
-**Solution:**
-- Check decision table conditions
-- Verify fallback settings
-- Test with sample document
-- Check for typos in user names
+**Rozwiązanie:**
+- Sprawdź warunki tabeli decyzyjnej
+- Zweryfikuj ustawienia rozwiązania zapasowego
+- Przetestuj z przykładowym dokumentem
+- Sprawdź literówki w nazwach użytkowników
 
 ## "Too many tasks created"
-**Cause:** Card firing multiple times
+**Przyczyna:** Karta uruchamia się wielokrotnie
 
-**Solution:**
-- Check conditions are specific enough
-- Verify card only runs once per document
-- Review "And" conditions
-- Add additional filtering
+**Rozwiązanie:**
+- Sprawdź, czy warunki są wystarczająco konkretne
+- Zweryfikuj, czy karta uruchamia się tylko raz na dokument
+- Przejrzyj warunki "And"
+- Dodaj dodatkowe filtrowanie
 
 ---
 
-# Task Card Comparison Table
+# Tabela porównawcza kart zadań
 
-| Card | Creates Task | Assigns To | When |
+| Karta | Tworzy zadanie | Przypisuje do | Kiedy |
 |------|-------------|-----------|------|
-| tasks_create | Yes | Individual | Always |
-| ACTION_TASK_FOR_GROUP | Yes | Group | Always |
-| ACTION_DECISION_TREE_CREATE_TASKS | Yes | Decision Table Result | Conditional |
-| ACTION_DECISION_TREE_TASKS_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL | Yes | User + Document | Conditional |
-| ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL | Yes | Group + Document | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP | Yes | Facility Group | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL | Yes | Multiple Facilities | Conditional |
-| ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP | Yes | Procurement Team | Conditional |
-| ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK | Yes | Field/Fallback | Conditional |
+| tasks_create | Tak | Osoba indywidualna | Zawsze |
+| ACTION_TASK_FOR_GROUP | Tak | Grupa | Zawsze |
+| ACTION_DECISION_TREE_CREATE_TASKS | Tak | Wynik tabeli decyzyjnej | Warunkowo |
+| ACTION_DECISION_TREE_TASKS_SEQUENTIAL | Tak | Wiele (sekwencyjnie) | Warunkowo |
+| ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL | Tak | Użytkownik + dokument | Warunkowo |
+| ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL | Tak | Grupa + dokument | Warunkowo |
+| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP | Tak | Grupa obiektu | Warunkowo |
+| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL | Tak | Wiele obiektów | Warunkowo |
+| ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP | Tak | Zespół zakupowy | Warunkowo |
+| ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL | Tak | Wiele (sekwencyjnie) | Warunkowo |
+| ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK | Tak | Pole/Rozwiązanie zapasowe | Warunkowo |
 
 ---
 
-# Related Cards
+# Powiązane karty
 
-- **ACTION_ASSIGN_DOCUMENT_TO_USER** - Assign document without creating task
-- **ACTION_SEND_EMAIL** - Notify people directly
-- **STAUS_CHANGE** - Change status instead of creating task
-- **RUN_WORKFLOW** - Trigger different workflow instead
-
+- **ACTION_ASSIGN_DOCUMENT_TO_USER** - Przypisz dokument bez tworzenia zadania
+- **ACTION_SEND_EMAIL** - Powiadom osoby bezpośrednio
+- **STAUS_CHANGE** - Zmień status zamiast tworzyć zadanie
+- **RUN_WORKFLOW** - Uruchom inny przepływ pracy zamiast tego

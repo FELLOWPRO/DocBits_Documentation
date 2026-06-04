@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_invoice_2.png" alt="DocBits Fattura 2"><figcaption></figcaption></figure>
 
-This title indicates that the rule is designed to manage cases where the invoice total is greater than the maximum amount an approver is authorized to handle.
+Questo titolo indica che la regola è progettata per gestire i casi in cui il totale della fattura è maggiore dell'importo massimo che un approvatore è autorizzato a gestire.
 
-#### Rule Configuration:
+#### Configurazione della Regola:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule applies only to invoices, which is essential for directing the workflow correctly.
+   * **Document Type is Invoice**: questa condizione garantisce che la regola si applichi solo alle fatture, aspetto essenziale per instradare correttamente il workflow.
 2. **And…**
-   * **Document Status is Pending Approval**: The invoice must be in a "Pending Approval" status. This status is crucial to ensure that the rule is applied to invoices that are still being processed and have not yet been finalized.
-   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: This condition checks if the invoice's total amount exceeds the maximum amount an approver is allowed to handle. This comparison might also include a tolerance setting, allowing for minor variations based on predefined criteria.
+   * **Document Status is Pending Approval**: la fattura deve trovarsi nello stato "Pending Approval". Questo stato è fondamentale per garantire che la regola venga applicata alle fatture ancora in elaborazione e non ancora finalizzate.
+   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: questa condizione verifica se l'importo totale della fattura supera l'importo massimo che un approvatore è autorizzato a gestire. Questo confronto può includere anche un'impostazione di tolleranza, consentendo lievi variazioni in base a criteri predefiniti.
 
-#### Action (Then…):
+#### Azione (Then…):
 
-* **Assign user from field Next Level Approver, use user User as fallback**: If the invoice exceeds the specified maximum amount, it is automatically assigned to a higher-level approver, indicated by the 'Next Level Approver' field. If this field is not filled or the specified user is unavailable, a default user (likely an admin or another designated staff member) is used as a fallback to ensure the invoice is reviewed without delay.
+* **Assign user from field Next Level Approver, use user User as fallback**: se la fattura supera l'importo massimo specificato, viene assegnata automaticamente a un approvatore di livello superiore, indicato dal campo 'Next Level Approver'. Se questo campo non è compilato o l'utente specificato non è disponibile, viene utilizzato un utente predefinito (probabilmente un amministratore o un altro membro del personale designato) come fallback per garantire che la fattura venga esaminata senza ritardi.
 
-#### Interface Elements:
+#### Elementi dell'Interfaccia:
 
-* **Add Card**: This option allows additional conditions or actions to be added to the rule, providing flexibility to address complex scenarios.
-* **Save**: This button saves the rule configuration to the system.
+* **Add Card**: questa opzione consente di aggiungere condizioni o azioni aggiuntive alla regola, offrendo flessibilità per affrontare scenari complessi.
+* **Save**: questo pulsante salva la configurazione della regola nel sistema.
 
-#### Purpose of This Rule:
+#### Scopo di Questa Regola:
 
-The purpose of this rule is to ensure that invoices which exceed certain financial thresholds are reviewed by approvers with the appropriate authorization levels. This helps in maintaining financial control and oversight, ensuring that expenditures are reviewed by personnel with the requisite approval limits, thereby safeguarding the organization against unauthorized or inappropriate expenditures.
+Lo scopo di questa regola è garantire che le fatture che superano determinate soglie finanziarie vengano esaminate da approvatori con i livelli di autorizzazione appropriati. Questo aiuta a mantenere il controllo e la supervisione finanziaria, assicurando che le spese vengano esaminate da personale con i limiti di approvazione richiesti, tutelando così l'organizzazione da spese non autorizzate o inappropriate.
 
-This rule, like the previous one, helps automate the workflow, reducing manual effort and enhancing compliance with the organization's financial policies. It is an example of how workflow automation can be effectively used to manage complex financial processes within a company.
+Questa regola, come la precedente, aiuta ad automatizzare il workflow, riducendo lo sforzo manuale e migliorando la conformità alle politiche finanziarie dell'organizzazione. È un esempio di come l'automazione dei workflow possa essere utilizzata efficacemente per gestire processi finanziari complessi all'interno di un'azienda.

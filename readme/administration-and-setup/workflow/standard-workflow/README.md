@@ -1,36 +1,36 @@
-# Standard Workflow
+# Workflow Standard
 
 <figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Flusso di lavoro Acquisto Ordine 4"><figcaption></figcaption></figure>
 
-#### Overview of Workflow Components:
+#### Panoramica dei Componenti del Workflow:
 
-* **AP Invoice Email**: The process likely begins with an invoice received via email.
-* **DocBits**: This tool might be used for initial document management tasks such as capturing and digitizing invoices.
-* **Finance Review**: Invoices undergo a finance review where decisions are made regarding their validity and accuracy.
+* **AP Invoice Email**: il processo probabilmente inizia con una fattura ricevuta via email.
+* **DocBits**: questo strumento può essere utilizzato per le attività iniziali di gestione documentale, come l'acquisizione e la digitalizzazione delle fatture.
+* **Finance Review**: le fatture sono sottoposte a una revisione finanziaria in cui vengono prese decisioni sulla loro validità e accuratezza.
 
-#### Steps in the Workflow:
+#### Passaggi del Workflow:
 
 1. **Initial Review**:
-   * Invoices are received and initially processed using DocBits.
-   * They are then reviewed by the finance team to ensure they are removed from the workflow if they are complete, or pushed forward for further processing.
+   * Le fatture vengono ricevute ed elaborate inizialmente con DocBits.
+   * Vengono quindi esaminate dal team finanziario per assicurarsi che siano rimosse dal workflow se complete, oppure inoltrate per ulteriore elaborazione.
 2. **PO vs Non-PO Invoices**:
-   * The workflow distinguishes between PO-related and non-PO invoices.
-   * Non-PO invoices are routed for further approval or rejection based on predefined criteria like supplier ID, quantity, unit price, and item number.
+   * Il workflow distingue tra fatture correlate a PO e fatture non correlate a PO.
+   * Le fatture non correlate a PO vengono instradate per ulteriore approvazione o rifiuto in base a criteri predefiniti come ID fornitore, quantità, prezzo unitario e numero di articolo.
 3. **Matching and Mismatching**:
-   * Invoices are checked against goods receipts to ensure that details match (like supplier ID and quantity).
-   * If mismatches occur, the invoice is subject to further review and possibly rejection.
+   * Le fatture vengono confrontate con i ricevimenti merci per garantire che i dettagli corrispondano (come ID fornitore e quantità).
+   * In caso di discrepanze, la fattura è soggetta a ulteriore revisione e possibilmente al rifiuto.
 4. **Finance and Buyer Review**:
-   * For PO-related invoices, a detailed matching process is conducted involving a buyer review.
-   * Adjustments to purchase orders or goods receipts might be required.
+   * Per le fatture correlate a PO, viene condotto un dettagliato processo di abbinamento che coinvolge una revisione da parte dell'acquirente.
+   * Potrebbero essere necessarie modifiche agli ordini di acquisto o ai ricevimenti merci.
 5. **Final Decisions**:
-   * Invoices that pass all checks are approved and integrated into financial systems for record-keeping.
-   * Rejected invoices trigger notifications, and a new invoice may be requested by the buyer.
+   * Le fatture che superano tutti i controlli vengono approvate e integrate nei sistemi finanziari per la conservazione dei registri.
+   * Le fatture rifiutate attivano notifiche e l'acquirente può richiedere una nuova fattura.
 6. **Integration with Infor IDM & LN+M3**:
-   * Approved invoices are likely sent to Infor's IDM for document management and LN for ledger noting.
-   * This integration ensures that all financial records are up-to-date and that the workflow seamlessly feeds into the broader ERP system.
+   * Le fatture approvate vengono probabilmente inviate all'IDM di Infor per la gestione documentale e a LN per la registrazione contabile.
+   * Questa integrazione garantisce che tutti i registri finanziari siano aggiornati e che il workflow si integri senza soluzione di continuità nel più ampio sistema ERP.
 
-#### Decision Points:
+#### Punti Decisionali:
 
-* Throughout the workflow, there are various decision points where an invoice might be approved, rejected, or sent back for additional information. Notifications are sent out after delays, ensuring timely processing.
+* In tutto il workflow sono presenti vari punti decisionali in cui una fattura può essere approvata, rifiutata o rinviata per ulteriori informazioni. Le notifiche vengono inviate dopo eventuali ritardi, garantendo un'elaborazione tempestiva.
 
-These Workflows will be included in the Standard Workflow
+Questi Workflow saranno inclusi nel Workflow Standard

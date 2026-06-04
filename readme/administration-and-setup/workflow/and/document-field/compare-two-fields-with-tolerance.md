@@ -2,49 +2,49 @@
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card is designed to automate actions by comparing the values of two specified document fields, with the added ability to apply a tolerance value. This feature enables the system to consider a margin of error (tolerance) when comparing field values, allowing for more flexible decision-making within workflows.
+Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie die Werte zweier angegebener Dokumentfelder vergleicht, mit der zusätzlichen Möglichkeit, einen Toleranzwert anzuwenden. Diese Funktion ermöglicht es dem System, beim Vergleich von Feldwerten eine Fehlertoleranz (Toleranz) zu berücksichtigen, und erlaubt so eine flexiblere Entscheidungsfindung innerhalb von Workflows.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Field Name (1)**
-   * **Description:** Specifies the first document field to be compared.
-   * **Detail:** This must match the exact identifier of the first field within the document.
+1. **Feldname (1)**
+   * **Beschreibung:** Gibt das erste zu vergleichende Dokumentfeld an.
+   * **Detail:** Dieser muss exakt mit dem Bezeichner des ersten Feldes innerhalb des Dokuments übereinstimmen.
 2. **Operator**
-   * **Description:** Defines the type of comparison to be performed between the two fields.
-   * **Options:**
-     * **Equals (=):** Checks if the values of the two fields are equal.
-     * **Not Equals (≠):** Ensures the values of the two fields are different.
-     * **Greater Than (>):** Confirms that the value of the first field is greater than the second field.
-     * **Greater or Equals (≥):** Validates that the value of the first field is equal to or greater than the second field.
-     * **Lesser Than (<):** Checks if the value of the first field is less than the second field.
-     * **Less or Equals (≤):** Ensures the value of the first field is less than or equal to the second field.
-3. **Field Name (2)**
-   * **Description:** Specifies the second document field to be compared against the first field.
-   * **Detail:** This should match the exact identifier of the second field within the document.&#x20;
-4. **Tolerance Amount**
-   * **Description:** Defines the acceptable margin of error for the comparison.
-   * **Detail:** The tolerance amount is a numeric value that indicates the maximum allowable difference between the two field values for the comparison to be considered true.
-5. **Tolerance Type**
-   * **Description:** Specifies the unit of measurement for the tolerance amount.
-   * **Options:**
-     * **Value:** The tolerance is an absolute value, meaning the two fields can differ by the specified tolerance amount.
-     * **Percent:** The tolerance is calculated as a percentage of the second field value, allowing for a relative margin of error.
+   * **Beschreibung:** Legt die Art des Vergleichs fest, der zwischen den beiden Feldern durchgeführt wird.
+   * **Optionen:**
+     * **Gleich (=):** Prüft, ob die Werte der beiden Felder gleich sind.
+     * **Ungleich (≠):** Stellt sicher, dass sich die Werte der beiden Felder unterscheiden.
+     * **Größer als (>):** Bestätigt, dass der Wert des ersten Feldes größer als der des zweiten Feldes ist.
+     * **Größer oder gleich (≥):** Überprüft, dass der Wert des ersten Feldes gleich oder größer als der des zweiten Feldes ist.
+     * **Kleiner als (<):** Prüft, ob der Wert des ersten Feldes kleiner als der des zweiten Feldes ist.
+     * **Kleiner oder gleich (≤):** Stellt sicher, dass der Wert des ersten Feldes kleiner oder gleich dem des zweiten Feldes ist.
+3. **Feldname (2)**
+   * **Beschreibung:** Gibt das zweite Dokumentfeld an, das mit dem ersten Feld verglichen wird.
+   * **Detail:** Dieser sollte exakt mit dem Bezeichner des zweiten Feldes innerhalb des Dokuments übereinstimmen.&#x20;
+4. **Toleranzbetrag**
+   * **Beschreibung:** Legt die zulässige Fehlertoleranz für den Vergleich fest.
+   * **Detail:** Der Toleranzbetrag ist ein numerischer Wert, der die maximal zulässige Differenz zwischen den beiden Feldwerten angibt, damit der Vergleich als erfüllt gilt.
+5. **Toleranztyp**
+   * **Beschreibung:** Gibt die Maßeinheit für den Toleranzbetrag an.
+   * **Optionen:**
+     * **Wert:** Die Toleranz ist ein absoluter Wert, das heißt, die beiden Felder dürfen sich um den angegebenen Toleranzbetrag unterscheiden.
+     * **Prozent:** Die Toleranz wird als Prozentsatz des zweiten Feldwerts berechnet und lässt so eine relative Fehlertoleranz zu.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:** The system evaluates whether the values in the two specified fields satisfy the comparison condition, considering the defined tolerance. If the absolute or relative difference between the two fields falls within the tolerance, the condition is considered true.
-* **Action Execution:**
-  * **True Condition:**\
-    If the values of the two fields, after considering the tolerance, match the comparison condition, the system triggers the associated actions. These actions could include progressing the workflow, updating records, triggering alerts, or enabling certain operations.
-  * **False Condition:**\
-    If the values of the two fields, after considering the tolerance, do not match the specified condition, alternative actions or no actions may be executed, depending on the configuration of the workflow.
+* **Bedingungsauswertung:** Das System wertet aus, ob die Werte in den beiden angegebenen Feldern die Vergleichsbedingung unter Berücksichtigung der definierten Toleranz erfüllen. Liegt die absolute oder relative Differenz zwischen den beiden Feldern innerhalb der Toleranz, gilt die Bedingung als erfüllt.
+* **Ausführung der Aktion:**
+  * **Bedingung erfüllt (True):**\
+    Stimmen die Werte der beiden Felder unter Berücksichtigung der Toleranz mit der Vergleichsbedingung überein, löst das System die zugehörigen Aktionen aus. Diese Aktionen können das Fortführen des Workflows, das Aktualisieren von Datensätzen, das Auslösen von Warnungen oder das Aktivieren bestimmter Vorgänge umfassen.
+  * **Bedingung nicht erfüllt (False):**\
+    Stimmen die Werte der beiden Felder unter Berücksichtigung der Toleranz nicht mit der angegebenen Bedingung überein, werden je nach Konfiguration des Workflows alternative oder keine Aktionen ausgeführt.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* Users configure the card by selecting the two fields to be compared from a list of available fields in the system. The operator is selected from a dropdown list of available comparison options. Users enter the tolerance amount and choose the tolerance type (value or percent).&#x20;
+* Benutzer konfigurieren die Karte, indem sie die beiden zu vergleichenden Felder aus einer Liste der im System verfügbaren Felder auswählen. Der Operator wird aus einer Dropdown-Liste der verfügbaren Vergleichsoptionen ausgewählt. Benutzer geben den Toleranzbetrag ein und wählen den Toleranztyp (Wert oder Prozent).&#x20;
 
-## **Conclusion:**
+## **Fazit:**
 
-The "Compare Two Fields with Tolerance" workflow card is a powerful tool for comparing document fields while accounting for permissible deviations in the data. By applying tolerance to field comparisons, this card adds flexibility to the workflow, enabling it to handle real-world data variations. It improves decision-making, supports data validation, and enhances overall workflow automation.
+Die Workflow-Karte "Compare Two Fields with Tolerance" ist ein leistungsstarkes Werkzeug, um Dokumentfelder zu vergleichen und dabei zulässige Datenabweichungen zu berücksichtigen. Indem sie Toleranz auf Feldvergleiche anwendet, verleiht diese Karte dem Workflow Flexibilität und ermöglicht es ihm, reale Datenabweichungen zu handhaben. Sie verbessert die Entscheidungsfindung, unterstützt die Datenvalidierung und steigert die Workflow-Automatisierung insgesamt.

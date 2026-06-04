@@ -2,47 +2,47 @@
 
 <figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card is designed to compare a field's value with a specified reference value while allowing for tolerances. It enables precise conditional processing in workflows where small deviations are acceptable, making it ideal for scenarios like quality assurance, financial analysis, or threshold-based actions.
+Diese Workflow-Karte ist darauf ausgelegt, den Wert eines Feldes mit einem angegebenen Referenzwert zu vergleichen und dabei Toleranzen zuzulassen. Sie ermöglicht eine präzise bedingte Verarbeitung in Workflows, in denen kleine Abweichungen akzeptabel sind, und eignet sich damit ideal für Szenarien wie Qualitätssicherung, Finanzanalyse oder schwellenwertbasierte Aktionen.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Field Name**
-   * **Description:** The field to be evaluated in the comparison.
-   * **Detail:** This must match the exact identifier of the first field within the document.
-2. **Comparison Operator**
-   * **Description:** Specifies how the selected field value will be compared to the reference value.
-   * **Options:**
-     * **Equals (=):** Verifies if the field value matches the reference value exactly.
-     * **Not Equals (≠):** Verifies if the field value does not match the reference value.
-     * **Greater Than (>):** Checks if the field value is greater than the reference value.
-     * **Greater or Equals (≥):** Checks if the field value is greater than or equal to the reference value.
-     * **Lesser Than (<):** Checks if the field value is less than the reference value.
-     * **Lesser or Equals (≤):** Checks if the field value is less than or equal to the reference value.
-3. **Reference Value**
-   * **Description:** The value against which the field is compared.
-   * **Detail:** This value can be numeric, text, or date-based, depending on the context of the comparison.
-4. **Tolerance Amount**
-   * **Description:** Defines the acceptable margin of error for the comparison.
-   * **Detail:** The tolerance amount is a numeric value that indicates the maximum allowable difference between the two field values for the comparison to be considered true.
-5. **Tolerance Type**
-   * **Description:** Specifies the unit of measurement for the tolerance amount.
-   * **Options:**
-     * **Value:** The tolerance is an absolute value, meaning the two fields can differ by the specified tolerance amount.
-     * **Percent:** The tolerance is calculated as a percentage of the second field value, allowing for a relative margin of error.
+1. **Feldname**
+   * **Beschreibung:** Das im Vergleich auszuwertende Feld.
+   * **Detail:** Dieser muss exakt mit dem Bezeichner des ersten Feldes innerhalb des Dokuments übereinstimmen.
+2. **Vergleichsoperator**
+   * **Beschreibung:** Gibt an, wie der ausgewählte Feldwert mit dem Referenzwert verglichen wird.
+   * **Optionen:**
+     * **Gleich (=):** Überprüft, ob der Feldwert exakt mit dem Referenzwert übereinstimmt.
+     * **Ungleich (≠):** Überprüft, ob der Feldwert nicht mit dem Referenzwert übereinstimmt.
+     * **Größer als (>):** Prüft, ob der Feldwert größer als der Referenzwert ist.
+     * **Größer oder gleich (≥):** Prüft, ob der Feldwert größer oder gleich dem Referenzwert ist.
+     * **Kleiner als (<):** Prüft, ob der Feldwert kleiner als der Referenzwert ist.
+     * **Kleiner oder gleich (≤):** Prüft, ob der Feldwert kleiner oder gleich dem Referenzwert ist.
+3. **Referenzwert**
+   * **Beschreibung:** Der Wert, mit dem das Feld verglichen wird.
+   * **Detail:** Dieser Wert kann je nach Kontext des Vergleichs numerisch, textbasiert oder datumsbasiert sein.
+4. **Toleranzbetrag**
+   * **Beschreibung:** Legt die zulässige Fehlertoleranz für den Vergleich fest.
+   * **Detail:** Der Toleranzbetrag ist ein numerischer Wert, der die maximal zulässige Differenz zwischen den beiden Feldwerten angibt, damit der Vergleich als erfüllt gilt.
+5. **Toleranztyp**
+   * **Beschreibung:** Gibt die Maßeinheit für den Toleranzbetrag an.
+   * **Optionen:**
+     * **Wert:** Die Toleranz ist ein absoluter Wert, das heißt, die beiden Felder dürfen sich um den angegebenen Toleranzbetrag unterscheiden.
+     * **Prozent:** Die Toleranz wird als Prozentsatz des zweiten Feldwerts berechnet und lässt so eine relative Fehlertoleranz zu.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:** The system evaluates the field's value against the reference value using the selected comparison operator. If a tolerance is configured, the system considers the comparison successful if the field value falls within the defined tolerance range.
-* **Action Execution:**
-  * **Within Tolerance:** If the field value satisfies the condition within the specified tolerance, the workflow continues, triggering the associated actions.
-  * **Outside Tolerance:** If the field value does not meet the condition or falls outside the tolerance range, alternative actions may be executed, such as logging, sending alerts, or halting the workflow.
+* **Bedingungsauswertung:** Das System wertet den Wert des Feldes anhand des Referenzwerts mithilfe des ausgewählten Vergleichsoperators aus. Ist eine Toleranz konfiguriert, betrachtet das System den Vergleich als erfolgreich, wenn der Feldwert innerhalb des definierten Toleranzbereichs liegt.
+* **Ausführung der Aktion:**
+  * **Innerhalb der Toleranz:** Erfüllt der Feldwert die Bedingung innerhalb der angegebenen Toleranz, wird der Workflow fortgesetzt und löst die zugehörigen Aktionen aus.
+  * **Außerhalb der Toleranz:** Erfüllt der Feldwert die Bedingung nicht oder liegt er außerhalb des Toleranzbereichs, können alternative Aktionen ausgeführt werden, etwa Protokollierung, das Senden von Warnungen oder das Anhalten des Workflows.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* Users configure the card by selecting the field to be evaluated from a list of available fields and choosing the comparison operator (e.g., equals, greater than) from a dropdown list. They then specify the reference value to compare against and define the tolerance amount, then they select the tolerance type (e.g.  percent or value).&#x20;
+* Benutzer konfigurieren die Karte, indem sie das auszuwertende Feld aus einer Liste verfügbarer Felder auswählen und den Vergleichsoperator (z. B. gleich, größer als) aus einer Dropdown-Liste wählen. Anschließend geben sie den Referenzwert an, mit dem verglichen wird, und legen den Toleranzbetrag fest; danach wählen sie den Toleranztyp (z. B. Prozent oder Wert).&#x20;
 
-## **Conclusion:**
+## **Fazit:**
 
-The "Field Comparison with Tolerances" card is a versatile tool for workflows requiring flexible evaluations. By enabling comparisons with tolerances, it ensures workflows remain efficient and adaptable, accommodating real-world variations without compromising on accuracy.
+Die Karte "Field Comparison with Tolerances" ist ein vielseitiges Werkzeug für Workflows, die flexible Auswertungen erfordern. Indem sie Vergleiche mit Toleranzen ermöglicht, sorgt sie dafür, dass Workflows effizient und anpassungsfähig bleiben und reale Abweichungen berücksichtigen, ohne Kompromisse bei der Genauigkeit einzugehen.

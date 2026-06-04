@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card is designed to automate actions based on the presence or absence of specific text within a specified document field. It ensures workflows can adapt dynamically to the content of documents, supporting efficient processing and accurate decision-making.
+Diese Workflow-Karte ist darauf ausgelegt, Aktionen auf Basis des Vorhandenseins oder Fehlens eines bestimmten Textes innerhalb eines angegebenen Dokumentfelds zu automatisieren. Sie sorgt dafür, dass sich Workflows dynamisch an den Inhalt von Dokumenten anpassen können, und unterstützt so eine effiziente Verarbeitung und eine präzise Entscheidungsfindung.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
 1. **Text**
-   * **Description:** Specifies the text string to be checked within the field.
-   * **Detail:** This can be a word, phrase, or sequence of characters relevant to the workflow.
+   * **Beschreibung:** Gibt die Textzeichenfolge an, die innerhalb des Feldes geprüft wird.
+   * **Detail:** Dies kann ein Wort, eine Phrase oder eine Zeichenfolge sein, die für den Workflow relevant ist.
 2. **Operator**
-   * **Description:** Defines the condition for text presence in the field.
-   * **Options:**
-     * **Is:** Triggers the workflow if the specified text is present in the field.
-     * **Is Not:** Triggers the workflow if the specified text is not present in the field.
-3. **Field Name**
-   * **Description:** Specifies the name of the document field to be evaluated.
-   * **Detail:** This must match the exact identifier of the field within the document.
+   * **Beschreibung:** Legt die Bedingung für das Vorhandensein des Textes im Feld fest.
+   * **Optionen:**
+     * **Is:** Löst den Workflow aus, wenn der angegebene Text im Feld vorhanden ist.
+     * **Is Not:** Löst den Workflow aus, wenn der angegebene Text im Feld nicht vorhanden ist.
+3. **Feldname**
+   * **Beschreibung:** Gibt den Namen des auszuwertenden Dokumentfelds an.
+   * **Detail:** Dieser muss exakt mit dem Bezeichner des Feldes innerhalb des Dokuments übereinstimmen.
 
-## **Functionality:**
+## **Funktionalität:**
 
-1. **Condition Evaluation:** The system checks whether the specified text exists in the field, based on the selected operator (Is or Is Not).
-2. **Action Execution:**
-   * **True Condition:**\
-     If the text's presence in the field matches the specified condition, the system initiates the associated actions. These could include triggering alerts, progressing workflows, or updating records.
-   * **False Condition:**\
-     If the text's presence in the field does not match the condition, alternative actions or no actions may be taken, depending on the workflow configuration.
+1. **Bedingungsauswertung:** Das System prüft auf Basis des ausgewählten Operators (Is oder Is Not), ob der angegebene Text im Feld vorhanden ist.
+2. **Ausführung der Aktion:**
+   * **Bedingung erfüllt (True):**\
+     Stimmt das Vorhandensein des Textes im Feld mit der angegebenen Bedingung überein, leitet das System die zugehörigen Aktionen ein. Dazu können das Auslösen von Warnungen, das Fortführen von Workflows oder das Aktualisieren von Datensätzen gehören.
+   * **Bedingung nicht erfüllt (False):**\
+     Stimmt das Vorhandensein des Textes im Feld nicht mit der Bedingung überein, werden je nach Workflow-Konfiguration alternative oder keine Aktionen ausgeführt.
 
-## **Setup and Configuration:**&#x20;
+## **Einrichtung und Konfiguration:**&#x20;
 
-* The user inputs the text to be checked. They then select the field name of the relevant document.
+* Der Benutzer gibt den zu prüfenden Text ein. Anschließend wählt er den Feldnamen des relevanten Dokuments aus.
 
-## **Conclusion:**
+## **Fazit:**
 
-The "Text Presence in Field" workflow card is a simple yet powerful tool for document content analysis. By automating actions based on text detection, this card supports more intelligent workflows, improves document handling accuracy, and reduces manual effort.
+Die Workflow-Karte "Text Presence in Field" ist ein einfaches, aber leistungsstarkes Werkzeug für die Analyse von Dokumentinhalten. Indem sie Aktionen auf Basis der Texterkennung automatisiert, unterstützt diese Karte intelligentere Workflows, verbessert die Genauigkeit der Dokumentbearbeitung und reduziert den manuellen Aufwand.

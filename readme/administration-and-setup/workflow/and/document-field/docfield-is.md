@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card is designed to automate actions by comparing a specified document field's value with a reference value or condition. It ensures dynamic and accurate decision-making in workflows based on document data validation.
+Diese Workflow-Karte ist darauf ausgelegt, Aktionen zu automatisieren, indem sie den Wert eines angegebenen Dokumentfelds mit einem Referenzwert oder einer Bedingung vergleicht. Sie sorgt für eine dynamische und präzise Entscheidungsfindung in Workflows auf Basis der Validierung von Dokumentdaten.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Field Name**
-   * **Description:** Specifies the name of the document field to be evaluated.
-   * **Detail:** This must match the exact identifier of the field within the document.
-2. **Operators**
-   * **Description:** Defines the type of comparison to be performed between the field value and the reference value.
-   * **Options:**
-     * **Equals (=):** Checks if the field value matches the reference value.
-     * **Not Equals (≠):** Ensures the field value differs from the reference value.
-     * **Greater Than (>):** Confirms the field value is greater than the reference value.
-     * **Greater or Equals (≥):** Validates the field value is equal to or greater than the reference value.
-     * **Lesser Than (<):** Checks if the field value is less than the reference value.
-     * **Less or Equals (≤):** Ensures the field value is less than or equal to the reference value.
+1. **Feldname**
+   * **Beschreibung:** Gibt den Namen des auszuwertenden Dokumentfelds an.
+   * **Detail:** Dieser muss exakt mit dem Bezeichner des Feldes innerhalb des Dokuments übereinstimmen.
+2. **Operatoren**
+   * **Beschreibung:** Legt die Art des Vergleichs fest, der zwischen dem Feldwert und dem Referenzwert durchgeführt wird.
+   * **Optionen:**
+     * **Gleich (=):** Prüft, ob der Feldwert mit dem Referenzwert übereinstimmt.
+     * **Ungleich (≠):** Stellt sicher, dass sich der Feldwert vom Referenzwert unterscheidet.
+     * **Größer als (>):** Bestätigt, dass der Feldwert größer als der Referenzwert ist.
+     * **Größer oder gleich (≥):** Überprüft, dass der Feldwert gleich oder größer als der Referenzwert ist.
+     * **Kleiner als (<):** Prüft, ob der Feldwert kleiner als der Referenzwert ist.
+     * **Kleiner oder gleich (≤):** Stellt sicher, dass der Feldwert kleiner oder gleich dem Referenzwert ist.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:** The system checks whether the document field's value, in relation to its associated column, satisfies the comparison condition specified by the operator and reference value.
-* **Action Execution:**
-  * **True Condition:**\
-    If the document field's value meets the specified condition (e.g., equals the reference value), the system triggers the associated actions. These could include updating records, progressing the workflow, or generating notifications.
-  * **False Condition:**\
-    If the document field's value does not meet the specified condition, alternative actions or no actions are executed, based on the workflow configuration.
+* **Bedingungsauswertung:** Das System prüft, ob der Wert des Dokumentfelds in Bezug auf seine zugehörige Spalte die durch den Operator und den Referenzwert angegebene Vergleichsbedingung erfüllt.
+* **Ausführung der Aktion:**
+  * **Bedingung erfüllt (True):**\
+    Erfüllt der Wert des Dokumentfelds die angegebene Bedingung (z. B. ist er gleich dem Referenzwert), löst das System die zugehörigen Aktionen aus. Dazu können das Aktualisieren von Datensätzen, das Fortführen des Workflows oder das Erzeugen von Benachrichtigungen gehören.
+  * **Bedingung nicht erfüllt (False):**\
+    Erfüllt der Wert des Dokumentfelds die angegebene Bedingung nicht, werden je nach Workflow-Konfiguration alternative oder keine Aktionen ausgeführt.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* The user selects the field name of the relevant document and chooses the operator from the drop-down menu. The user then specifies the reference field value to complete the configuration.
+* Der Benutzer wählt den Feldnamen des relevanten Dokuments aus und wählt den Operator aus dem Dropdown-Menü. Anschließend gibt der Benutzer den Referenzfeldwert an, um die Konfiguration abzuschließen.
 
-## **Conclusion:**
+## **Fazit:**
 
-The "DocField Comparison Validation" workflow card is a robust tool for dynamic document processing. By automating actions based on field comparisons, this card streamlines workflows, enhances accuracy, and supports data-driven decision-making.
+Die Workflow-Karte "DocField Comparison Validation" ist ein robustes Werkzeug für die dynamische Dokumentverarbeitung. Indem sie Aktionen auf Basis von Feldvergleichen automatisiert, optimiert diese Karte Workflows, erhöht die Genauigkeit und unterstützt datengestützte Entscheidungen.

@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (278).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This workflow card is designed to automatically set a specified field in the document to a predefined text value based on the conditions defined in the **"Where"** and **"And Sections."** It allows users to streamline data entry by ensuring fields are populated with consistent values when certain criteria are met.
+Cette carte de workflow est conçue pour définir automatiquement un champ spécifié du document sur une valeur texte prédéfinie en fonction des conditions définies dans les sections **« Where »** et **« And »**. Elle permet aux utilisateurs de rationaliser la saisie de données en garantissant que les champs sont renseignés avec des valeurs cohérentes lorsque certains critères sont satisfaits.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
 1. **Field Name**
-   * **Description**: Specifies the field that will be updated with the text value.&#x20;
-   * **Detail**: The field selected will be updated with the specified text value if the conditions in the **"Where"** and **"And Sections"** are met.
+   * **Description** : spécifie le champ qui sera mis à jour avec la valeur texte.&#x20;
+   * **Détail** : le champ sélectionné sera mis à jour avec la valeur texte spécifiée si les conditions des sections **« Where »** et **« And »** sont satisfaites.
 2. **Text**
-   * **Description**: Defines the text value that will be set in the target field when the conditions evaluate as true.
-   * **Detail**: This can be a custom message, status, or predefined value that the user wishes to write into the field. The text should align with the field's expected input format (e.g., alphanumeric, date, or other types of textual information).
+   * **Description** : définit la valeur texte qui sera définie dans le champ cible lorsque les conditions sont évaluées comme vraies.
+   * **Détail** : il peut s'agir d'un message personnalisé, d'un statut ou d'une valeur prédéfinie que l'utilisateur souhaite écrire dans le champ. Le texte doit être conforme au format de saisie attendu du champ (par ex. alphanumérique, date ou autres types d'informations textuelles).
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation**: The system evaluates the conditions in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the actions defined in the **"Then Section"** will be executed. Specifically, the target field (Field Name) will be populated with the specified text.
-  * If **either the "Where" or the "And" section is false**, no action is taken, and the field remains unchanged. The **Then Section** actions are skipped entirely if either condition is false.
-* **Action Execution**: If both conditions in the **"Where"** and **"And Sections"** are met, the system automatically populates the specified field with the chosen text value. If the conditions are not met, no changes are made to the field.
+* **Évaluation de la condition** : le système évalue les conditions des sections **« Where »** et **« And »** :
+  * Si **les deux conditions sont vraies**, les actions définies dans la **« Then Section »** seront exécutées. Plus précisément, le champ cible (Field Name) sera renseigné avec le texte spécifié.
+  * Si **la section « Where » ou la section « And » est fausse**, aucune action n'est effectuée et le champ reste inchangé. Les actions de la **Then Section** sont entièrement ignorées si l'une des conditions est fausse.
+* **Exécution de l'action** : si les deux conditions des sections **« Where »** et **« And »** sont satisfaites, le système renseigne automatiquement le champ spécifié avec la valeur texte choisie. Si les conditions ne sont pas satisfaites, aucune modification n'est apportée au champ.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-To set up this card:
+Pour configurer cette carte :
 
-1. **Select the field** (Field Name) that will be updated with the text value. The available fields in the document are listed for selection.
-2. **Specify the text value** that will be written into the target field when the conditions are true.
-3. The action will only execute if both the **"Where"** and **"And Sections"** conditions evaluate to true.
+1. **Sélectionnez le champ** (Field Name) qui sera mis à jour avec la valeur texte. Les champs disponibles dans le document sont répertoriés pour la sélection.
+2. **Spécifiez la valeur texte** qui sera écrite dans le champ cible lorsque les conditions sont vraies.
+3. L'action ne s'exécute que si les conditions des sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Set Field to Text"** workflow card offers a straightforward way to automate the population of text values into specific document fields based on predefined conditions. This reduces manual data entry and ensures consistency in document processing, making it a useful tool for automating workflows and enhancing efficiency.
+La carte de workflow **« Set Field to Text »** offre un moyen simple d'automatiser le renseignement de valeurs texte dans des champs de document spécifiques en fonction de conditions prédéfinies. Cela réduit la saisie manuelle de données et garantit la cohérence du traitement des documents, en faisant un outil utile pour automatiser les workflows et améliorer l'efficacité.

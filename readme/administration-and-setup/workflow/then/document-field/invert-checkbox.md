@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This workflow card is designed to invert the current state of a checkbox field. If the checkbox is checked (true), it will be unchecked (false), and vice versa. The inversion occurs based on the conditions set in the **"Where"** and **"And Sections."** This card helps automate workflows where a condition requires toggling a checkbox based on specific criteria.
+Cette carte de workflow est conçue pour inverser l'état actuel d'un champ de type case à cocher. Si la case est cochée (true), elle sera décochée (false), et vice versa. L'inversion se produit en fonction des conditions définies dans les sections **« Where »** et **« And »**. Cette carte aide à automatiser les workflows où une condition nécessite de basculer l'état d'une case à cocher selon des critères spécifiques.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
 1. **Field Name**
-   * **Description**: Specifies the checkbox field to be inverted.&#x20;
-   * **Detail**: The selected checkbox field will have its state toggled from true to false or from false to true based on its current state.
+   * **Description** : spécifie le champ de case à cocher à inverser.&#x20;
+   * **Détail** : l'état du champ de case à cocher sélectionné sera basculé de true à false ou de false à true en fonction de son état actuel.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation**: The system evaluates the conditions defined in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the **"Then Section"** action will execute, which in this case means the checkbox field will be toggled.
-  * If **either condition is false**, the card will not execute and no change will be made to the checkbox field.
-* **Action Execution**: If the conditions in the **"Where"** and **"And Sections"** evaluate to true, the checkbox field's state will be inverted:
-  * If the checkbox is checked (true), it will be unchecked (false).
-  * If the checkbox is unchecked (false), it will be checked (true).
+* **Évaluation de la condition** : le système évalue les conditions définies dans les sections **« Where »** et **« And »** :
+  * Si **les deux conditions sont vraies**, l'action de la **« Then Section »** s'exécute, ce qui signifie ici que l'état du champ de case à cocher sera basculé.
+  * Si **l'une des conditions est fausse**, la carte ne s'exécute pas et aucune modification n'est apportée au champ de case à cocher.
+* **Exécution de l'action** : si les conditions des sections **« Where »** et **« And »** sont évaluées comme vraies, l'état du champ de case à cocher sera inversé :
+  * Si la case est cochée (true), elle sera décochée (false).
+  * Si la case est décochée (false), elle sera cochée (true).
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-To configure this card, users need to:
+Pour configurer cette carte, les utilisateurs doivent :
 
-1. **Select the checkbox field** (Field Name) that will be inverted. The available checkbox fields in the document are listed for selection.
-2. The checkbox field will only be inverted if the conditions in both the **"Where"** and **"And Sections"** are true.
+1. **Sélectionner le champ de case à cocher** (Field Name) qui sera inversé. Les champs de case à cocher disponibles dans le document sont répertoriés pour la sélection.
+2. Le champ de case à cocher ne sera inversé que si les conditions des sections **« Where »** et **« And »** sont vraies.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Invert checkbox \[Field Name]"** workflow card offers a simple yet powerful automation tool to toggle checkbox values based on specific conditions. By reducing the need for manual checkbox adjustments, this card enhances efficiency in document processing and ensures consistency across workflows.
+La carte de workflow **« Invert checkbox \[Field Name] »** offre un outil d'automatisation simple mais puissant pour basculer les valeurs de cases à cocher en fonction de conditions spécifiques. En réduisant le besoin d'ajustements manuels des cases à cocher, cette carte améliore l'efficacité du traitement des documents et garantit la cohérence entre les workflows.

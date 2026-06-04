@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (279).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This workflow card is designed to set a checkbox field to a specified value (true or false) based on the conditions defined in the **"Where"** and **"And"** sections. It provides a simple yet effective way to automate checkbox updates when certain criteria are met, ensuring streamlined document processing.
+Cette carte de workflow est conçue pour définir un champ de type case à cocher sur une valeur spécifiée (true ou false) en fonction des conditions définies dans les sections **« Where »** et **« And »**. Elle offre un moyen simple mais efficace d'automatiser la mise à jour des cases à cocher lorsque certains critères sont satisfaits, garantissant un traitement rationalisé des documents.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
-1. **Field Name:**
-   * **Description**: Specifies the field where the checkbox will be set.
-   * **Detail**: The checkbox field to be updated is identified by the field name.
+1. **Field Name :**
+   * **Description** : spécifie le champ où la case à cocher sera définie.
+   * **Détail** : le champ de case à cocher à mettre à jour est identifié par le nom du champ.
 2. **Boolean**
-   * **Description**: Defines the value that the checkbox field will be set to when the conditions in the **Where** and **And Sections** are both true.
-   * **Options**:
-     * **True**: The checkbox will be set to **true** if the conditions are met.
-     * **False**: The checkbox will be set to **false** if the conditions are met.
+   * **Description** : définit la valeur sur laquelle le champ de case à cocher sera défini lorsque les conditions des sections **Where** et **And** sont toutes deux vraies.
+   * **Options** :
+     * **True** : la case sera définie sur **true** si les conditions sont satisfaites.
+     * **False** : la case sera définie sur **false** si les conditions sont satisfaites.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation**: The system evaluates the conditions in both the **"Where"** and **"And"**&#x20;
-* **Action Execution**: If both the **"Where"** and **"And Sections"** evaluate to true, the checkbox field will be updated to the specified value (true or false). If either condition is false, no actions are taken, and the checkbox remains as it was.
+* **Évaluation de la condition** : le système évalue les conditions des sections **« Where »** et **« And »**.&#x20;
+* **Exécution de l'action** : si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies, le champ de case à cocher sera mis à jour avec la valeur spécifiée (true ou false). Si l'une des conditions est fausse, aucune action n'est effectuée et la case reste dans son état initial.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-To configure this card, users need to:
+Pour configurer cette carte, les utilisateurs doivent :
 
-1. **Specify the target checkbox field** that will be set to true or false when the conditions are met.
-2. **Choose the value (true or false)** that the checkbox will be set to upon condition evaluation.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. **Spécifier le champ de case à cocher cible** qui sera défini sur true ou false lorsque les conditions sont satisfaites.
+2. **Choisir la valeur (true ou false)** sur laquelle la case sera définie lors de l'évaluation de la condition.
+3. La carte n'exécute son action que si les deux conditions des sections **« Where »** et **« And »** sont évaluées comme vraies.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Set Checkbox"** workflow card is a simple and effective automation tool to update checkbox fields based on specific conditions. By ensuring both **"Where"** and **"And Sections"** are met, it allows users to automate processes and reduce manual intervention, ensuring smoother and more efficient document processing.
+La carte de workflow **« Set Checkbox »** est un outil d'automatisation simple et efficace pour mettre à jour les champs de case à cocher en fonction de conditions spécifiques. En garantissant que les sections **« Where »** et **« And »** sont toutes deux satisfaites, elle permet aux utilisateurs d'automatiser les processus et de réduire l'intervention manuelle, garantissant un traitement des documents plus fluide et plus efficace.

@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card compares today's date to a specified date, allowing workflows to execute based on the relationship between the current date and the provided date. It is particularly useful for time-based automation, deadline management, or triggering scheduled tasks.
+Ova DocBits kartica upoređuje današnji datum sa navedenim datumom, omogućavajući radnim tokovima da se izvršavaju na osnovu odnosa između trenutnog datuma i navedenog datuma. Posebno je korisna za automatizaciju zasnovanu na vremenu, upravljanje rokovima ili pokretanje planiranih zadataka.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Date Comparison:** This card evaluates today's date against a specified date using the following conditions:
-  * **Equals (=):** Checks if today's date matches the specified date.
-  * **Not Equals (≠):** Ensures today's date is different from the specified date.
-  * **Greater Than (>):** Confirms that today's date is after the specified date.
-  * **Greater or Equals (≥):** Ensures today's date is on or after the specified date.
-  * **Lesser Than (<):** Checks if today's date is before the specified date.
-  * **Less or Equals (≤):** Ensures today's date is on or before the specified date.
-* **Date Input:** Users provide the date to compare against today's date.
+* **Poređenje datuma:** Ova kartica procenjuje današnji datum u odnosu na navedeni datum koristeći sledeće uslove:
+  * **Equals (=):** Proverava da li se današnji datum poklapa sa navedenim datumom.
+  * **Not Equals (≠):** Obezbeđuje da se današnji datum razlikuje od navedenog datuma.
+  * **Greater Than (>):** Potvrđuje da je današnji datum posle navedenog datuma.
+  * **Greater or Equals (≥):** Obezbeđuje da je današnji datum na ili posle navedenog datuma.
+  * **Lesser Than (<):** Proverava da li je današnji datum pre navedenog datuma.
+  * **Less or Equals (≤):** Obezbeđuje da je današnji datum na ili pre navedenog datuma.
+* **Unos datuma:** Korisnici navode datum sa kojim će se uporediti današnji datum.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is ideal for workflows involving deadlines, reminders, or time-sensitive conditions, ensuring actions are taken or restricted based on the current date.
+Ova kartica je idealna za radne tokove koji uključuju rokove, podsetnike ili vremenski osetljive uslove, obezbeđujući da se akcije preduzimaju ili ograničavaju na osnovu trenutnog datuma.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user configures the card to check if **today is greater than (>) "2024-11-15"**. If the condition is met, the workflow triggers a follow-up notification for overdue tasks. If not, the workflow continues without interruption.
+* Korisnik konfiguriše karticu da proveri da li je **danas veće od (>) "2024-11-15"**. Ako je uslov ispunjen, radni tok pokreće naknadno obaveštenje za zakasnele zadatke. Ako ne, radni tok se nastavlja bez prekida.
 
-By using the "Today's Date Validation" card, organizations can automate time-based processes, meet deadlines efficiently, and maintain workflow accuracy.
+Korišćenjem kartice "Today's Date Validation", organizacije mogu automatizovati procese zasnovane na vremenu, efikasno ispunjavati rokove i održavati tačnost radnog toka.

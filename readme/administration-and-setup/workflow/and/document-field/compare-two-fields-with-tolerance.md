@@ -2,49 +2,49 @@
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to automate actions by comparing the values of two specified document fields, with the added ability to apply a tolerance value. This feature enables the system to consider a margin of error (tolerance) when comparing field values, allowing for more flexible decision-making within workflows.
+Ova kartica radnog toka je dizajnirana da automatizuje akcije poređenjem vrednosti dva navedena polja dokumenta, sa dodatnom mogućnošću primene vrednosti tolerancije. Ova funkcija omogućava sistemu da uzme u obzir marginu greške (toleranciju) pri poređenju vrednosti polja, dozvoljavajući fleksibilnije donošenje odluka unutar radnih tokova.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name (1)**
-   * **Description:** Specifies the first document field to be compared.
-   * **Detail:** This must match the exact identifier of the first field within the document.
+   * **Opis:** Navodi prvo polje dokumenta koje treba uporediti.
+   * **Detalj:** Ovo mora da se poklapa sa tačnim identifikatorom prvog polja unutar dokumenta.
 2. **Operator**
-   * **Description:** Defines the type of comparison to be performed between the two fields.
-   * **Options:**
-     * **Equals (=):** Checks if the values of the two fields are equal.
-     * **Not Equals (≠):** Ensures the values of the two fields are different.
-     * **Greater Than (>):** Confirms that the value of the first field is greater than the second field.
-     * **Greater or Equals (≥):** Validates that the value of the first field is equal to or greater than the second field.
-     * **Lesser Than (<):** Checks if the value of the first field is less than the second field.
-     * **Less or Equals (≤):** Ensures the value of the first field is less than or equal to the second field.
+   * **Opis:** Definiše tip poređenja koji treba izvršiti između dva polja.
+   * **Opcije:**
+     * **Equals (=):** Proverava da li su vrednosti dva polja jednake.
+     * **Not Equals (≠):** Obezbeđuje da su vrednosti dva polja različite.
+     * **Greater Than (>):** Potvrđuje da je vrednost prvog polja veća od drugog polja.
+     * **Greater or Equals (≥):** Proverava da li je vrednost prvog polja jednaka ili veća od drugog polja.
+     * **Lesser Than (<):** Proverava da li je vrednost prvog polja manja od drugog polja.
+     * **Less or Equals (≤):** Obezbeđuje da je vrednost prvog polja manja ili jednaka drugom polju.
 3. **Field Name (2)**
-   * **Description:** Specifies the second document field to be compared against the first field.
-   * **Detail:** This should match the exact identifier of the second field within the document.&#x20;
-4. **Tolerance Amount**
-   * **Description:** Defines the acceptable margin of error for the comparison.
-   * **Detail:** The tolerance amount is a numeric value that indicates the maximum allowable difference between the two field values for the comparison to be considered true.
-5. **Tolerance Type**
-   * **Description:** Specifies the unit of measurement for the tolerance amount.
-   * **Options:**
-     * **Value:** The tolerance is an absolute value, meaning the two fields can differ by the specified tolerance amount.
-     * **Percent:** The tolerance is calculated as a percentage of the second field value, allowing for a relative margin of error.
+   * **Opis:** Navodi drugo polje dokumenta koje treba uporediti sa prvim poljem.
+   * **Detalj:** Ovo treba da se poklapa sa tačnim identifikatorom drugog polja unutar dokumenta.&#x20;
+4. **Iznos tolerancije**
+   * **Opis:** Definiše prihvatljivu marginu greške za poređenje.
+   * **Detalj:** Iznos tolerancije je numerička vrednost koja označava maksimalno dozvoljenu razliku između dve vrednosti polja da bi se poređenje smatralo tačnim.
+5. **Tip tolerancije**
+   * **Opis:** Navodi mernu jedinicu za iznos tolerancije.
+   * **Opcije:**
+     * **Value:** Tolerancija je apsolutna vrednost, što znači da se dva polja mogu razlikovati za navedeni iznos tolerancije.
+     * **Percent:** Tolerancija se izračunava kao procenat vrednosti drugog polja, dozvoljavajući relativnu marginu greške.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system evaluates whether the values in the two specified fields satisfy the comparison condition, considering the defined tolerance. If the absolute or relative difference between the two fields falls within the tolerance, the condition is considered true.
-* **Action Execution:**
-  * **True Condition:**\
-    If the values of the two fields, after considering the tolerance, match the comparison condition, the system triggers the associated actions. These actions could include progressing the workflow, updating records, triggering alerts, or enabling certain operations.
-  * **False Condition:**\
-    If the values of the two fields, after considering the tolerance, do not match the specified condition, alternative actions or no actions may be executed, depending on the configuration of the workflow.
+* **Procena uslova:** Sistem procenjuje da li vrednosti u dva navedena polja zadovoljavaju uslov poređenja, uzimajući u obzir definisanu toleranciju. Ako apsolutna ili relativna razlika između dva polja pada unutar tolerancije, uslov se smatra tačnim.
+* **Izvršavanje akcije:**
+  * **Tačan uslov:**\
+    Ako vrednosti dva polja, nakon uzimanja u obzir tolerancije, odgovaraju uslovu poređenja, sistem pokreće povezane akcije. Ove akcije mogu uključivati napredovanje radnog toka, ažuriranje zapisa, pokretanje upozorenja ili omogućavanje određenih operacija.
+  * **Netačan uslov:**\
+    Ako vrednosti dva polja, nakon uzimanja u obzir tolerancije, ne odgovaraju navedenom uslovu, mogu se izvršiti alternativne akcije ili nikakve akcije, u zavisnosti od konfiguracije radnog toka.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* Users configure the card by selecting the two fields to be compared from a list of available fields in the system. The operator is selected from a dropdown list of available comparison options. Users enter the tolerance amount and choose the tolerance type (value or percent).&#x20;
+* Korisnici konfigurišu karticu izborom dva polja koja treba uporediti iz liste dostupnih polja u sistemu. Operator se bira iz padajuće liste dostupnih opcija poređenja. Korisnici unose iznos tolerancije i biraju tip tolerancije (vrednost ili procenat).&#x20;
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Compare Two Fields with Tolerance" workflow card is a powerful tool for comparing document fields while accounting for permissible deviations in the data. By applying tolerance to field comparisons, this card adds flexibility to the workflow, enabling it to handle real-world data variations. It improves decision-making, supports data validation, and enhances overall workflow automation.
+Kartica radnog toka "Compare Two Fields with Tolerance" je moćan alat za poređenje polja dokumenta uz uzimanje u obzir dozvoljenih odstupanja u podacima. Primenom tolerancije na poređenja polja, ova kartica dodaje fleksibilnost radnom toku, omogućavajući mu da rukuje varijacijama stvarnih podataka. Ona poboljšava donošenje odluka, podržava validaciju podataka i poboljšava ukupnu automatizaciju radnog toka.

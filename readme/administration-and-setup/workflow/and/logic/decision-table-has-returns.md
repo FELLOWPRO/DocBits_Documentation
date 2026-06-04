@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card checks whether a specified decision table has return values for a given document and determines if the returned data should be used in subsequent workflow steps. It ensures that workflows can dynamically adapt based on decision table outcomes.
+Ova DocBits kartica proverava da li navedena tabela odlučivanja ima povratne vrednosti za dati dokument i određuje da li vraćene podatke treba koristiti u narednim koracima radnog toka. Obezbeđuje da se radni tokovi mogu dinamično prilagoditi na osnovu ishoda tabele odlučivanja.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Decision Table Validation:** This card verifies if the selected decision table provides return values for the document being processed.
-* **Decision Table Selection:** Users specify the name of the decision table to be checked.
-* **Use Return Data:** Users can specify whether to use the return data in later cards with a **Boolean** setting:
-  * **True:** The return data is available and will be used in subsequent workflow steps.
-  * **False:** The return data will not be used, and the workflow proceeds without it.
+* **Validacija tabele odlučivanja:** Ova kartica proverava da li izabrana tabela odlučivanja pruža povratne vrednosti za dokument koji se obrađuje.
+* **Izbor tabele odlučivanja:** Korisnici navode ime tabele odlučivanja koju treba proveriti.
+* **Korišćenje povratnih podataka:** Korisnici mogu navesti da li će koristiti povratne podatke u kasnijim karticama pomoću **Boolean** postavke:
+  * **True:** Povratni podaci su dostupni i biće korišćeni u narednim koracima radnog toka.
+  * **False:** Povratni podaci se neće koristiti, i radni tok se nastavlja bez njih.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is ideal for workflows involving conditional logic or decision-making based on predefined rules in a decision table. It ensures seamless integration of decision table outputs into workflow processes.
+Ova kartica je idealna za radne tokove koji uključuju uslovnu logiku ili donošenje odluka na osnovu unapred definisanih pravila u tabeli odlučivanja. Obezbeđuje neometanu integraciju izlaza tabele odlučivanja u procese radnog toka.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user configures the card to check the **"Invoice Processing Rules"** decision table for return values. The **Boolean** is set to **True**, indicating that the return data (e.g. approval requirements) will be utilized in later cards to guide workflow decisions.
+* Korisnik konfiguriše karticu da proveri tabelu odlučivanja **"Invoice Processing Rules"** za povratne vrednosti. **Boolean** je postavljen na **True**, što ukazuje da će se povratni podaci (npr. zahtevi za odobrenje) koristiti u kasnijim karticama da bi se vodile odluke radnog toka.
 
-By using the "Decision Table Check" card, organizations can enhance workflow flexibility, streamline rule-based processing, and ensure consistency in decision-making across automated workflows.
+Korišćenjem kartice "Decision Table Check", organizacije mogu poboljšati fleksibilnost radnog toka, pojednostaviti obradu zasnovanu na pravilima i obezbediti doslednost u donošenju odluka u automatizovanim radnim tokovima.

@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card is designed to facilitate interaction with external systems by sending HTTPS requests to specified URLs. It enables workflows to perform actions like data retrieval, updates, or deletion by making API calls, ensuring seamless integration with external services.
+Ova DocBits kartica je dizajnirana da olakša interakciju sa eksternim sistemima slanjem HTTPS zahteva na navedene URL-ove. Omogućava radnim tokovima da izvršavaju akcije kao što su preuzimanje, ažuriranje ili brisanje podataka pozivanjem API-ja, obezbeđujući neometanu integraciju sa eksternim servisima.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **HTTPS Request Execution:** The card sends a request to a specified URL using the configured HTTP method (e.g., GET, POST, PUT, DELETE).
-* **Headers and Parameters:** Users can include custom headers and query parameters to ensure the request meets the requirements of the external API.
-* **Request Data:** Allows users to define the data payload (if applicable) to be sent with the request, such as JSON or form-encoded data.
-* **Response Evaluation:** The workflow checks if the received status code matches the expected value, ensuring successful communication before proceeding.
-* **Supported HTTP Methods:**
-  * GET: Retrieves data from the specified URL.
-  * POST: Submits data to the specified URL to create resources.
-  * PUT: Updates existing resources at the specified URL.
-  * DELETE: Removes resources from the specified URL.
+* **Izvršavanje HTTPS zahteva:** Kartica šalje zahtev na navedeni URL koristeći konfigurisanu HTTP metodu (npr. GET, POST, PUT, DELETE).
+* **Zaglavlja i parametri:** Korisnici mogu uključiti prilagođena zaglavlja i parametre upita kako bi obezbedili da zahtev ispunjava zahteve eksternog API-ja.
+* **Podaci zahteva:** Omogućava korisnicima da definišu sadržaj podataka (ako je primenljivo) koji se šalje sa zahtevom, kao što su JSON ili podaci kodirani u formularu.
+* **Procena odgovora:** Radni tok proverava da li se primljeni statusni kod poklapa sa očekivanom vrednošću, obezbeđujući uspešnu komunikaciju pre nastavka.
+* **Podržane HTTP metode:**
+  * GET: Preuzima podatke sa navedenog URL-a.
+  * POST: Šalje podatke na navedeni URL radi kreiranja resursa.
+  * PUT: Ažurira postojeće resurse na navedenom URL-u.
+  * DELETE: Uklanja resurse sa navedenog URL-a.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is particularly useful in scenarios where workflows need to interact with external APIs for data exchange, such as sending updates to a CRM, retrieving order statuses, or posting new entries to a database.
+Ova kartica je posebno korisna u scenarijima gde radni tokovi treba da komuniciraju sa eksternim API-jima radi razmene podataka, kao što su slanje ažuriranja CRM-u, preuzimanje statusa porudžbina ili objavljivanje novih unosa u bazu podataka.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user configures the card to send a POST request to an external order management system with a payload containing new order details. Custom headers are added to include API authentication tokens. The card is set to continue only if the response status code is 201 (Created). If the status code differs, the workflow triggers an error notification for manual intervention.
+* Korisnik konfiguriše karticu da pošalje POST zahtev eksternom sistemu za upravljanje porudžbinama sa sadržajem koji obuhvata detalje nove porudžbine. Prilagođena zaglavlja se dodaju da bi se uključili tokeni za autentifikaciju API-ja. Kartica je podešena da se nastavi samo ako je statusni kod odgovora 201 (Created). Ako se statusni kod razlikuje, radni tok pokreće obaveštenje o grešci za ručnu intervenciju.
 
-By using the "Send HTTPS Request" card, organizations can automate external integrations, improve communication between systems, and streamline complex workflows.
+Korišćenjem kartice "Send HTTPS Request", organizacije mogu automatizovati eksterne integracije, poboljšati komunikaciju između sistema i pojednostaviti složene radne tokove.

@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to automate actions based on the presence or absence of specific text within a specified document field. It ensures workflows can adapt dynamically to the content of documents, supporting efficient processing and accurate decision-making.
+Ova kartica radnog toka je dizajnirana da automatizuje akcije na osnovu prisustva ili odsustva određenog teksta unutar navedenog polja dokumenta. Obezbeđuje da se radni tokovi mogu dinamično prilagoditi sadržaju dokumenata, podržavajući efikasnu obradu i tačno donošenje odluka.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Text**
-   * **Description:** Specifies the text string to be checked within the field.
-   * **Detail:** This can be a word, phrase, or sequence of characters relevant to the workflow.
+   * **Opis:** Navodi tekstualni niz koji treba proveriti unutar polja.
+   * **Detalj:** Ovo može biti reč, fraza ili niz znakova relevantan za radni tok.
 2. **Operator**
-   * **Description:** Defines the condition for text presence in the field.
-   * **Options:**
-     * **Is:** Triggers the workflow if the specified text is present in the field.
-     * **Is Not:** Triggers the workflow if the specified text is not present in the field.
+   * **Opis:** Definiše uslov za prisustvo teksta u polju.
+   * **Opcije:**
+     * **Is:** Pokreće radni tok ako je navedeni tekst prisutan u polju.
+     * **Is Not:** Pokreće radni tok ako navedeni tekst nije prisutan u polju.
 3. **Field Name**
-   * **Description:** Specifies the name of the document field to be evaluated.
-   * **Detail:** This must match the exact identifier of the field within the document.
+   * **Opis:** Navodi ime polja dokumenta koje treba proceniti.
+   * **Detalj:** Ovo mora da se poklapa sa tačnim identifikatorom polja unutar dokumenta.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-1. **Condition Evaluation:** The system checks whether the specified text exists in the field, based on the selected operator (Is or Is Not).
-2. **Action Execution:**
-   * **True Condition:**\
-     If the text's presence in the field matches the specified condition, the system initiates the associated actions. These could include triggering alerts, progressing workflows, or updating records.
-   * **False Condition:**\
-     If the text's presence in the field does not match the condition, alternative actions or no actions may be taken, depending on the workflow configuration.
+1. **Procena uslova:** Sistem proverava da li navedeni tekst postoji u polju, na osnovu izabranog operatora (Is ili Is Not).
+2. **Izvršavanje akcije:**
+   * **Tačan uslov:**\
+     Ako se prisustvo teksta u polju poklapa sa navedenim uslovom, sistem pokreće povezane akcije. One mogu uključivati pokretanje upozorenja, napredovanje radnih tokova ili ažuriranje zapisa.
+   * **Netačan uslov:**\
+     Ako se prisustvo teksta u polju ne poklapa sa uslovom, mogu se preduzeti alternativne akcije ili nikakve akcije, u zavisnosti od konfiguracije radnog toka.
 
-## **Setup and Configuration:**&#x20;
+## **Podešavanje i konfiguracija:**&#x20;
 
-* The user inputs the text to be checked. They then select the field name of the relevant document.
+* Korisnik unosi tekst koji treba proveriti. Zatim bira ime polja relevantnog dokumenta.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Text Presence in Field" workflow card is a simple yet powerful tool for document content analysis. By automating actions based on text detection, this card supports more intelligent workflows, improves document handling accuracy, and reduces manual effort.
+Kartica radnog toka "Text Presence in Field" je jednostavan ali moćan alat za analizu sadržaja dokumenta. Automatizacijom akcija na osnovu detekcije teksta, ova kartica podržava inteligentnije radne tokove, poboljšava tačnost rukovanja dokumentima i smanjuje ručni rad.

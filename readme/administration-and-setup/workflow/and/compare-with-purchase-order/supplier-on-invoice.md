@@ -2,33 +2,33 @@
 
 <figure><img src="../../../../.gitbook/assets/image (276).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to compare the supplier information on an invoice against the supplier information on the related purchase order. The card ensures that the supplier on the invoice matches the supplier on the purchase order. This comparison helps verify that the correct supplier is invoicing for the order and can trigger actions based on any discrepancies.
+Ova kartica radnog toka je dizajnirana da uporedi dobavljača na fakturi sa dobavljačem na nalogu za nabavku. Kartica obezbeđuje da dobavljač koji izdaje fakturu bude isti kao onaj naveden u nalogu za nabavku, pomažući u sprečavanju nepodudaranja i grešaka u procesu nabavke.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Operator:**
-   * **Description**: Defines the condition for comparing the supplier on the invoice to the supplier on the purchase order.
-   * **Options**:
-     * **Is**: Checks if the supplier on the invoice matches the supplier on the purchase order.
-     * **Is Not**: Ensures that the supplier on the invoice does not match the supplier on the purchase order.
+   * **Opis**: Definiše uslov za poređenje dobavljača na fakturi sa dobavljačem na nalogu za nabavku.
+   * **Opcije**:
+     * **Is**: Proverava da li se dobavljač na fakturi poklapa sa dobavljačem na nalogu za nabavku.
+     * **Is Not**: Obezbeđuje da se dobavljač na fakturi ne poklapa sa dobavljačem na nalogu za nabavku.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system compares the supplier on the invoice to the supplier on the purchase order based on the selected operator. If the comparison condition is true (e.g., the supplier is the same or different as required), the workflow will proceed accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the supplier on the invoice matches the supplier on the purchase order), the workflow continues without triggering any errors.
-  * **False Condition**: If the condition evaluates to false (e.g., the supplier on the invoice does not match the supplier on the purchase order), the workflow will not continue.
+* **Procena uslova:** Sistem upoređuje dobavljača na fakturi sa dobavljačem na nalogu za nabavku na osnovu izabranog operatora. Ako je uslov poređenja tačan (npr. dobavljač je isti ili različit kao što je potrebno), radni tok će se nastaviti u skladu sa tim.
+* **Izvršavanje akcije:**
+  * **Tačan uslov**: Ako se uslov proceni kao tačan (npr. dobavljač na fakturi se poklapa sa dobavljačem na nalogu za nabavku), radni tok se nastavlja bez pokretanja bilo kakvih grešaka.
+  * **Netačan uslov**: Ako se uslov proceni kao netačan (npr. dobavljač na fakturi se ne poklapa sa dobavljačem na nalogu za nabavku), radni tok se neće nastaviti.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* Users choose the appropriate operator ("Is" or "Is Not") to define how the suppliers will be compared.
+* Korisnici biraju odgovarajući operator ("Is" ili "Is Not") da definišu kako će se dobavljači upoređivati.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* An invoice lists a supplier with the ID "SUP123" and the related purchase order also lists "SUP123" as the supplier. Using the "Is" operator, the card compares the suppliers and finds them to be the same, so the workflow proceeds without any issue.
+* Faktura navodi dobavljača sa ID-om "SUP123", a povezani nalog za nabavku takođe navodi "SUP123" kao dobavljača. Koristeći operator "Is", kartica upoređuje dobavljače i utvrđuje da su isti, pa se radni tok nastavlja bez ikakvih problema.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Supplier Comparison" workflow card ensures that the correct supplier is invoicing for the purchase order, helping to prevent discrepancies and errors in the procurement process. By automatically verifying supplier information, organizations can streamline their invoice approval process and reduce the risk of fraud or errors in supplier billing.
+Kartica radnog toka "Supplier Comparison" obezbeđuje da ispravan dobavljač izdaje fakturu za nalog za nabavku, pomažući u sprečavanju nepodudaranja i grešaka u procesu nabavke. Automatskom proverom informacija o dobavljaču, organizacije mogu pojednostaviti svoj proces odobravanja faktura i smanjiti rizik od prevare ili grešaka u fakturisanju dobavljača.

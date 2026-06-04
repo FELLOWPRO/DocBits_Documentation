@@ -2,51 +2,51 @@
 
 <figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to evaluate whether the tax value in a document field matches the tax value in a purchase order, considering tolerances based on charge ID. The card compares these two tax values (one from the document field and one from the purchase order) and checks if they meet a specified condition (e.g., equals, greater than, lesser than, etc.). This helps ensure tax values are consistent and flag discrepancies for further review or approval in procurement workflows.
+Ova kartica radnog toka je dizajnirana da proceni da li se vrednost poreza u polju dokumenta poklapa sa vrednošću poreza u nalogu za nabavku, uzimajući u obzir tolerancije zasnovane na Charge ID-u. Kartica upoređuje ove dve vrednosti poreza (jednu iz polja dokumenta i jednu iz naloga za nabavku) i proverava da li ispunjavaju navedeni uslov (npr. jednako, veće od, manje od, itd.). Ovo pomaže da se obezbedi doslednost vrednosti poreza i da se nepodudaranja označe za dalji pregled ili odobrenje u radnim tokovima nabavke.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name**
-   * **Description**: Specifies the document field that contains the tax value to be compared with the tax value in the purchase order.
-   * **Detail**: This field must match the exact identifier for the tax value in the document.
+   * **Opis**: Navodi polje dokumenta koje sadrži vrednost poreza za poređenje sa vrednošću poreza u nalogu za nabavku.
+   * **Detalj**: Ovo polje mora da se poklapa sa tačnim identifikatorom za vrednost poreza u dokumentu.
 2. **Operator**
-   * **Description**: Defines the condition to be applied to the comparison between the document's tax value and the purchase order's tax value.
-   * **Options**:
-     * **Equals (=)**: Checks if the tax in the document field matches the tax in the purchase order.
-     * **Not Equals (≠)**: Ensures the tax in the document field does not match the tax in the purchase order.
-     * **Greater Than (>)**: Verifies if the tax in the document field is greater than the tax in the purchase order.
-     * **Greater or Equals (≥)**: Checks if the tax in the document field is greater than or equal to the tax in the purchase order.
-     * **Lesser Than (<)**: Verifies if the tax in the document field is less than the tax in the purchase order.
-     * **Lesser or Equals (≤)**: Checks if the tax in the document field is less than or equal to the tax in the purchase order.
+   * **Opis**: Definiše uslov koji se primenjuje na poređenje između vrednosti poreza u dokumentu i vrednosti poreza u nalogu za nabavku.
+   * **Opcije**:
+     * **Equals (=)**: Proverava da li se porez u polju dokumenta poklapa sa porezom u nalogu za nabavku.
+     * **Not Equals (≠)**: Obezbeđuje da se porez u polju dokumenta ne poklapa sa porezom u nalogu za nabavku.
+     * **Greater Than (>)**: Proverava da li je porez u polju dokumenta veći od poreza u nalogu za nabavku.
+     * **Greater or Equals (≥)**: Proverava da li je porez u polju dokumenta veći ili jednak porezu u nalogu za nabavku.
+     * **Lesser Than (<)**: Proverava da li je porez u polju dokumenta manji od poreza u nalogu za nabavku.
+     * **Lesser or Equals (≤)**: Proverava da li je porez u polju dokumenta manji ili jednak porezu u nalogu za nabavku.
 3. **Master Data Table**
-   * **Description**: The table that contains the purchase order details, including the charge ID and tax values.
-   * **Detail**: This table must have a reference to the charge ID associated with the purchase order tax value.
-4. **Tolerance Amount**
-   * **Description**: The threshold amount within which the tax values can vary. This is used to account for minor discrepancies in tax calculations.
-   * **Detail**: The tolerance amount should be a numeric value, defining the maximum allowed difference between the tax values.
-5. **Tolerance Type**
-   * **Description**: Specifies the type of tolerance being applied, either absolute or percentage-based.
-   * **Options**:
-     * **Value**: The tolerance is a fixed numeric value.
-     * **Percentage**: The tolerance is calculated as a percentage of the tax value.
+   * **Opis**: Tabela koja sadrži detalje naloga za nabavku, uključujući Charge ID i vrednosti poreza.
+   * **Detalj**: Ova tabela mora da ima referencu na Charge ID povezan sa vrednošću poreza iz naloga za nabavku.
+4. **Iznos tolerancije**
+   * **Opis**: Iznos praga unutar kojeg vrednosti poreza mogu varirati. Ovo se koristi da bi se uzela u obzir manja nepodudaranja u obračunima poreza.
+   * **Detalj**: Iznos tolerancije treba da bude numerička vrednost, koja definiše maksimalno dozvoljenu razliku između vrednosti poreza.
+5. **Tip tolerancije**
+   * **Opis**: Navodi tip tolerancije koji se primenjuje, bilo apsolutni ili zasnovan na procentu.
+   * **Opcije**:
+     * **Value**: Tolerancija je fiksna numerička vrednost.
+     * **Percentage**: Tolerancija se izračunava kao procenat vrednosti poreza.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system evaluates whether the tax value in the document field meets the condition specified when compared to the tax value in the purchase order (with the charge ID reference from the master data table). The tolerance amount and type are considered in this evaluation to allow for minor differences in tax calculations.
-* **Action Execution:**
-  * **True Condition**: If the tax in the document field meets the condition when compared to the purchase order's tax (within the tolerance amount and type), the workflow continues.
-  * **False Condition**: If the tax in the document field does not meet the condition (either not within the tolerance range or the comparison fails), the workflow will stop.
+* **Procena uslova:** Sistem procenjuje da li vrednost poreza u polju dokumenta ispunjava navedeni uslov kada se uporedi sa vrednošću poreza u nalogu za nabavku (sa referencom Charge ID-a iz tabele matičnih podataka). Iznos i tip tolerancije se uzimaju u obzir u ovoj proceni kako bi se dozvolile manje razlike u obračunima poreza.
+* **Izvršavanje akcije:**
+  * **Tačan uslov**: Ako porez u polju dokumenta ispunjava uslov kada se uporedi sa porezom iz naloga za nabavku (unutar iznosa i tipa tolerancije), radni tok se nastavlja.
+  * **Netačan uslov**: Ako porez u polju dokumenta ne ispunjava uslov (bilo da nije unutar opsega tolerancije ili poređenje nije uspelo), radni tok će se zaustaviti.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* Users must select the document field that contains the tax value to be compared. They will then choose the operator for how the comparison should be made (e.g., equals, greater than). Following this, users need to specify the master data table reference and set the tolerance amount and type to account for minor tax discrepancies.
+* Korisnici moraju izabrati polje dokumenta koje sadrži vrednost poreza za poređenje. Zatim biraju operator za način na koji treba izvršiti poređenje (npr. jednako, veće od). Nakon toga, korisnici treba da navedu referencu na tabelu matičnih podataka i postave iznos i tip tolerancije kako bi se uzela u obzir manja nepodudaranja u porezu.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* An invoice lists a tax amount of $100. The corresponding purchase order, found in the master data table, specifies a tax value of $95. Using the "Greater Than" operator, the system compares the document’s tax value ($100) to the purchase order tax value ($95) with a tolerance of $10 (absolute tolerance type). Since the difference of $5 is within the tolerance range, the workflow proceeds without triggering any alerts.
+* Faktura navodi iznos poreza od $100. Odgovarajući nalog za nabavku, pronađen u tabeli matičnih podataka, navodi vrednost poreza od $95. Koristeći operator "Greater Than", sistem upoređuje vrednost poreza iz dokumenta ($100) sa vrednošću poreza iz naloga za nabavku ($95) sa tolerancijom od $10 (apsolutni tip tolerancije). Pošto je razlika od $5 unutar opsega tolerancije, radni tok se nastavlja bez pokretanja bilo kakvih upozorenja.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Tax in Document Field Comparison" workflow card ensures that tax values in documents align with purchase order details, allowing for minor discrepancies based on specified tolerances. By automating this check, organizations can minimize errors in tax calculations and streamline procurement processes, reducing the need for manual intervention or approvals.
+Kartica radnog toka "Tax in Document Field Comparison" obezbeđuje da vrednosti poreza u dokumentima budu usklađene sa detaljima naloga za nabavku, dozvoljavajući manja nepodudaranja na osnovu navedenih tolerancija. Automatizacijom ove provere, organizacije mogu smanjiti greške u obračunima poreza i pojednostaviti procese nabavke, smanjujući potrebu za ručnom intervencijom ili odobrenjima.

@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to automate actions based on the presence or state of a specified field within a document. By evaluating whether the field is empty, missing, or populated, it enables workflows to handle documents with precision and accuracy.
+Ova kartica radnog toka je dizajnirana da automatizuje akcije na osnovu prisustva ili stanja navedenog polja unutar dokumenta. Procenom da li je polje prazno, nedostaje ili je popunjeno, ona omogućava radnim tokovima da rukuju dokumentima sa preciznošću i tačnošću.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name**
-   * **Description:** Specifies the name of the field to be evaluated.
-   * **Detail:** This must match the exact identifier used in the document to ensure accurate field detection.
-2. **Operators**
-   * **Description**: Defines the condition that triggers the workflow, based on the presence or state of the field.
-   * **Options**:
-     * **Empty/Not in Document:** The workflow triggers if the field is either missing from the document or is present but empty.
-     * **In Document/Not Empty:** The workflow triggers if the field exists in the document and contains a value.
+   * **Opis:** Navodi ime polja koje treba proceniti.
+   * **Detalj:** Ovo mora da se poklapa sa tačnim identifikatorom koji se koristi u dokumentu kako bi se obezbedila tačna detekcija polja.
+2. **Operatori**
+   * **Opis**: Definiše uslov koji pokreće radni tok, na osnovu prisustva ili stanja polja.
+   * **Opcije**:
+     * **Empty/Not in Document:** Radni tok se pokreće ako polje ili nedostaje u dokumentu ili je prisutno ali prazno.
+     * **In Document/Not Empty:** Radni tok se pokreće ako polje postoji u dokumentu i sadrži vrednost.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **State Detection:** The card monitors the specified field to evaluate its presence and state.
-* **Condition Evaluation:**
-  * The system evaluates whether the specified field is in the state (Empty/Not in Document or In Document/Not Empty) defined by the selected operator.
+* **Detekcija stanja:** Kartica prati navedeno polje da bi procenila njegovo prisustvo i stanje.
+* **Procena uslova:**
+  * Sistem procenjuje da li je navedeno polje u stanju (Empty/Not in Document ili In Document/Not Empty) definisanom izabranim operatorom.
 *
 
-    **Action Execution:**
+    **Izvršavanje akcije:**
 
-    * **Empty/Not in Document Condition:** If the field's state matches this condition (i.e., the field is either absent from the document or present but empty), the system initiates the associated actions. These may include generating alerts, flagging the document for review, or halting the workflow.
-    * **In Document/Not Empty Condition:** If the field's state matches this condition (i.e., the field exists in the document and contains a value), the system triggers the associated actions. These could involve enabling subsequent workflow steps, updating records, or triggering notifications.
+    * **Uslov Empty/Not in Document:** Ako se stanje polja poklapa sa ovim uslovom (tj. polje je odsutno iz dokumenta ili je prisutno ali prazno), sistem pokreće povezane akcije. One mogu uključivati generisanje upozorenja, označavanje dokumenta za pregled ili zaustavljanje radnog toka.
+    * **Uslov In Document/Not Empty:** Ako se stanje polja poklapa sa ovim uslovom (tj. polje postoji u dokumentu i sadrži vrednost), sistem pokreće povezane akcije. One mogu uključivati omogućavanje narednih koraka radnog toka, ažuriranje zapisa ili pokretanje obaveštenja.
 
-## **Setup and Configuration:**&#x20;
+## **Podešavanje i konfiguracija:**&#x20;
 
-* Users select the field from a list of available document fields. The operator is chosen via a dropdown menu, offering clear options for "Empty/Not in Document" or "In Document/Not Empty."
+* Korisnici biraju polje iz liste dostupnih polja dokumenta. Operator se bira preko padajućeg menija, nudeći jasne opcije za "Empty/Not in Document" ili "In Document/Not Empty".
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Field Presence and State Validation" workflow card is a critical tool for document processing workflows, ensuring accurate handling of missing or populated fields. By automating actions based on field states, this card enhances data integrity, reduces errors, and ensures workflows operate smoothly and efficiently.
+Kartica radnog toka "Field Presence and State Validation" je ključni alat za radne tokove obrade dokumenata, obezbeđujući tačno rukovanje poljima koja nedostaju ili su popunjena. Automatizacijom akcija na osnovu stanja polja, ova kartica poboljšava integritet podataka, smanjuje greške i obezbeđuje da radni tokovi funkcionišu neometano i efikasno.

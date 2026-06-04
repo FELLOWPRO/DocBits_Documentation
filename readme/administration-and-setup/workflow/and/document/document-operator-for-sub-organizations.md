@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-This workflow card evaluates whether a document is part of a specific sub-organization. Based on this evaluation, the workflow can either continue or trigger different actions depending on whether the document is associated with the specified sub-organization or not.
+Ova kartica radnog toka procenjuje da li je dokument deo određene pod-organizacije. Na osnovu ove procene, radni tok se može nastaviti ili pokrenuti različite akcije u zavisnosti od toga da li je dokument povezan sa navedenom pod-organizacijom ili ne.
 
-## Components of the Card:
+## Komponente kartice:
 
 1. **Operator**
-   * **Description:** Defines whether the document must be part of the specified sub-organization or not.
-   * **Options:**
-     * **Is:** The document must be part of the specified sub-organization for the condition to be true.
-     * **Is Not:** The document must not be part of the specified sub-organization for the condition to be true.
+   * **Opis:** Definiše da li dokument mora biti deo navedene pod-organizacije ili ne.
+   * **Opcije:**
+     * **Is:** Dokument mora biti deo navedene pod-organizacije da bi uslov bio tačan.
+     * **Is Not:** Dokument ne sme biti deo navedene pod-organizacije da bi uslov bio tačan.
 2. **Sub-org**
-   * **Description:** Specifies the sub-organization to which the document should be compared.
-   * **Detail:** This should match the sub-organization identifier. The comparison checks if the document belongs to the specified sub-organization.
+   * **Opis:** Navodi pod-organizaciju sa kojom dokument treba uporediti.
+   * **Detalj:** Ovo treba da se poklapa sa identifikatorom pod-organizacije. Poređenje proverava da li dokument pripada navedenoj pod-organizaciji.
 
-## Functionality:
+## Funkcionalnost:
 
-* **Condition Evaluation:** The system evaluates whether the document is part of the specified sub-organization. This evaluation checks the document's sub-organization against the one provided by the user.
-* **Action Execution:**
-  * **True Condition:**\
-    If the document is part of the specified sub-organization, the workflow continues with the true condition. This could trigger further actions, such as routing the document to a specific department, applying sub-organization-specific rules, or enabling features tailored to that sub-organization.
-  * **False Condition:**\
-    If the document is not part of the specified sub-organization, the workflow continues with the false condition. This allows for executing alternative actions, such as sending notifications, halting the workflow, or applying general rules outside of the sub-organization's scope.
+* **Procena uslova:** Sistem procenjuje da li je dokument deo navedene pod-organizacije. Ova procena proverava pod-organizaciju dokumenta u odnosu na onu koju je naveo korisnik.
+* **Izvršavanje akcije:**
+  * **Tačan uslov:**\
+    Ako je dokument deo navedene pod-organizacije, radni tok se nastavlja sa tačnim uslovom. Ovo može pokrenuti dalje akcije, kao što su usmeravanje dokumenta određenom odeljenju, primena pravila specifičnih za pod-organizaciju ili omogućavanje funkcija prilagođenih toj pod-organizaciji.
+  * **Netačan uslov:**\
+    Ako dokument nije deo navedene pod-organizacije, radni tok se nastavlja sa netačnim uslovom. Ovo omogućava izvršavanje alternativnih akcija, kao što su slanje obaveštenja, zaustavljanje radnog toka ili primena opštih pravila izvan opsega pod-organizacije.
 
-## Setup and Configuration:
+## Podešavanje i konfiguracija:
 
-* Users configure the card by selecting the document field containing the document and specifying the sub-organization to check against. The operator is then chosen from a dropdown list to define whether the document must be part of or not part of the specified sub-organization. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
+* Korisnici konfigurišu karticu izborom polja dokumenta koje sadrži dokument i navođenjem pod-organizacije za proveru. Operator se zatim bira iz padajuće liste da definiše da li dokument mora biti deo ili ne deo navedene pod-organizacije. Na kraju, korisnici postavljaju uslov za nastavak (tačan ili netačan), koji određuje sledeći korak u radnom toku.
 
-## Conclusion:
+## Zaključak:
 
-The "Document in Sub-organization" workflow card is a helpful tool for automating actions based on whether a document belongs to a particular sub-organization. By ensuring documents are processed according to sub-organization-specific rules, this card improves workflow efficiency and ensures that actions are executed within the correct organizational context.
+Kartica radnog toka "Document in Sub-organization" je koristan alat za automatizaciju akcija na osnovu toga da li dokument pripada određenoj pod-organizaciji. Obezbeđivanjem da se dokumenti obrađuju u skladu sa pravilima specifičnim za pod-organizaciju, ova kartica poboljšava efikasnost radnog toka i obezbeđuje da se akcije izvršavaju u ispravnom organizacionom kontekstu.

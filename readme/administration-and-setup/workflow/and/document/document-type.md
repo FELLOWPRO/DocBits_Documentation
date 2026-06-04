@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-This workflow card is designed to evaluate whether a document matches a specific type. By checking if the document corresponds to the given type, workflows can continue or take alternative actions based on this condition. This helps to automate processes where the document type dictates the next steps in the workflow.
+Ova kartica radnog toka je dizajnirana da proceni da li se dokument poklapa sa određenim tipom. Proverom da li dokument odgovara datom tipu, radni tokovi se mogu nastaviti ili preduzeti alternativne akcije na osnovu ovog uslova. Ovo pomaže u automatizaciji procesa gde tip dokumenta diktira sledeće korake u radnom toku.
 
-## Components of the Card:
+## Komponente kartice:
 
 1. **Operator**
-   * **Description**: Defines whether the document should be of the specified type or not.
-   * **Options**:
-     * **Is**: The document must match the specified type for the condition to be true.
-     * **Is Not**: The document must not match the specified type for the condition to be true.
+   * **Opis**: Definiše da li dokument treba da bude navedenog tipa ili ne.
+   * **Opcije**:
+     * **Is**: Dokument mora da se poklapa sa navedenim tipom da bi uslov bio tačan.
+     * **Is Not**: Dokument ne sme da se poklapa sa navedenim tipom da bi uslov bio tačan.
 2. **Type**
-   * **Description**: Specifies the document type to compare against.
-   * **Detail**: This includes a variety of document types such as "Invoice", "Purchase Order", etc., based on which the condition (is/is not) will be evaluated.
+   * **Opis**: Navodi tip dokumenta sa kojim treba uporediti.
+   * **Detalj**: Ovo uključuje različite tipove dokumenata kao što su "Invoice", "Purchase Order", itd., na osnovu kojih će se uslov (is/is not) proceniti.
 
-## Functionality:
+## Funkcionalnost:
 
-* **Condition Evaluation**: The system evaluates whether the document type in the specified field matches the condition defined by the operator. It compares the field value with the provided document type.
-* **Action Execution**:
-  * **True Condition**: If the document type matches the specified type (or does not, based on the operator), the workflow proceeds with the true condition. This can trigger actions such as further processing of the document, sending it for approval, or applying specific rules based on the document type.
-  * **False Condition**: If the document type does not match the specified type, the workflow proceeds with the false condition. This can trigger alternative actions, such as routing the document to a different process or stopping further actions.
+* **Procena uslova**: Sistem procenjuje da li se tip dokumenta u navedenom polju poklapa sa uslovom definisanim operatorom. Upoređuje vrednost polja sa datim tipom dokumenta.
+* **Izvršavanje akcije**:
+  * **Tačan uslov**: Ako se tip dokumenta poklapa sa navedenim tipom (ili ne, na osnovu operatora), radni tok se nastavlja sa tačnim uslovom. Ovo može pokrenuti akcije kao što su dalja obrada dokumenta, slanje na odobrenje ili primena određenih pravila na osnovu tipa dokumenta.
+  * **Netačan uslov**: Ako se tip dokumenta ne poklapa sa navedenim tipom, radni tok se nastavlja sa netačnim uslovom. Ovo može pokrenuti alternativne akcije, kao što su usmeravanje dokumenta u drugi proces ili zaustavljanje daljih akcija.
 
-## Setup and Configuration:
+## Podešavanje i konfiguracija:
 
-* Users configure the card by selecting the document field that contains the document type from a list of available fields. Then, the operator is selected to define whether the document must be the specified type or not. Finally, users set the continue condition (true or false), which determines the next action based on the document type.
+* Korisnici konfigurišu karticu izborom polja dokumenta koje sadrži tip dokumenta iz liste dostupnih polja. Zatim se bira operator da definiše da li dokument mora biti navedenog tipa ili ne. Na kraju, korisnici postavljaju uslov za nastavak (tačan ili netačan), koji određuje sledeću akciju na osnovu tipa dokumenta.
 
-## Conclusion:
+## Zaključak:
 
-The "Document Type Comparison" workflow card is essential for ensuring that workflows proceed based on the type of document being processed. By comparing the document type, it helps organizations automate document routing and processing tasks, ensuring that documents are handled appropriately based on their type.
+Kartica radnog toka "Document Type Comparison" je od suštinskog značaja za obezbeđivanje da se radni tokovi nastave na osnovu tipa dokumenta koji se obrađuje. Poređenjem tipa dokumenta, ona pomaže organizacijama da automatizuju zadatke usmeravanja i obrade dokumenata, obezbeđujući da se dokumentima rukuje na odgovarajući način na osnovu njihovog tipa.

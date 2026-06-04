@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card checks if a specified date/time value falls within a defined range. It enables workflows to proceed or halt based on whether the condition is met, making it suitable for time-sensitive operations or scheduling workflows.
+Ova DocBits kartica proverava da li navedena vrednost datuma/vremena pada unutar definisanog opsega. Omogućava radnim tokovima da se nastave ili zaustave na osnovu toga da li je uslov ispunjen, što je čini pogodnom za vremenski osetljive operacije ili planiranje radnih tokova.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Date/Time Validation:** This card evaluates whether a given date/time is within a specified range using the following conditions:
-  * **Is:** Checks if the date/time is within the defined start and end range (inclusive).
-  * **Is Not:** Ensures the date/time falls outside the defined range.
+* **Validacija datuma/vremena:** Ova kartica procenjuje da li je dati datum/vreme unutar navedenog opsega koristeći sledeće uslove:
+  * **Is:** Proverava da li je datum/vreme unutar definisanog opsega početka i kraja (uključujući).
+  * **Is Not:** Obezbeđuje da datum/vreme pada izvan definisanog opsega.
 
-**Date/Time Range:** Users specify the start and end date/time values to define the range for comparison.
+**Opseg datuma/vremena:** Korisnici navode vrednosti datuma/vremena početka i kraja da definišu opseg za poređenje.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is ideal for scheduling, compliance checks, or validating time-based conditions in workflows. For example, it can be used to ensure tasks are executed only during predefined timeframes or verify deadlines.
+Ova kartica je idealna za planiranje, provere usklađenosti ili validaciju uslova zasnovanih na vremenu u radnim tokovima. Na primer, može se koristiti da bi se obezbedilo da se zadaci izvršavaju samo tokom unapred definisanih vremenskih okvira ili da bi se proverili rokovi.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user configures the card to check if the **submission date** of an invoice **is between** **"2024-11-01"** and **"2024-11-30"**. If the submission date falls within this range, the workflow proceeds to payment processing. If not, the workflow triggers a notification for further review.
+* Korisnik konfiguriše karticu da proveri da li je **datum podnošenja** fakture **između** **"2024-11-01"** i **"2024-11-30"**. Ako datum podnošenja pada unutar ovog opsega, radni tok se nastavlja na obradu plaćanja. Ako ne, radni tok pokreće obaveštenje za dalji pregled.
 
-By using the "Date/Time Range Validation" card, organizations can ensure accurate scheduling, enhance compliance, and streamline workflows by adhering to predefined time constraints.
+Korišćenjem kartice "Date/Time Range Validation", organizacije mogu obezbediti tačno planiranje, poboljšati usklađenost i pojednostaviti radne tokove pridržavanjem unapred definisanih vremenskih ograničenja.

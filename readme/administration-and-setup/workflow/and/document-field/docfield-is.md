@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to automate actions by comparing a specified document field's value with a reference value or condition. It ensures dynamic and accurate decision-making in workflows based on document data validation.
+Ova kartica radnog toka je dizajnirana da automatizuje akcije poređenjem vrednosti navedenog polja dokumenta sa referentnom vrednošću ili uslovom. Obezbeđuje dinamičko i tačno donošenje odluka u radnim tokovima na osnovu validacije podataka dokumenta.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name**
-   * **Description:** Specifies the name of the document field to be evaluated.
-   * **Detail:** This must match the exact identifier of the field within the document.
-2. **Operators**
-   * **Description:** Defines the type of comparison to be performed between the field value and the reference value.
-   * **Options:**
-     * **Equals (=):** Checks if the field value matches the reference value.
-     * **Not Equals (≠):** Ensures the field value differs from the reference value.
-     * **Greater Than (>):** Confirms the field value is greater than the reference value.
-     * **Greater or Equals (≥):** Validates the field value is equal to or greater than the reference value.
-     * **Lesser Than (<):** Checks if the field value is less than the reference value.
-     * **Less or Equals (≤):** Ensures the field value is less than or equal to the reference value.
+   * **Opis:** Navodi ime polja dokumenta koje treba proceniti.
+   * **Detalj:** Ovo mora da se poklapa sa tačnim identifikatorom polja unutar dokumenta.
+2. **Operatori**
+   * **Opis:** Definiše tip poređenja koji treba izvršiti između vrednosti polja i referentne vrednosti.
+   * **Opcije:**
+     * **Equals (=):** Proverava da li se vrednost polja poklapa sa referentnom vrednošću.
+     * **Not Equals (≠):** Obezbeđuje da se vrednost polja razlikuje od referentne vrednosti.
+     * **Greater Than (>):** Potvrđuje da je vrednost polja veća od referentne vrednosti.
+     * **Greater or Equals (≥):** Proverava da li je vrednost polja jednaka ili veća od referentne vrednosti.
+     * **Lesser Than (<):** Proverava da li je vrednost polja manja od referentne vrednosti.
+     * **Less or Equals (≤):** Obezbeđuje da je vrednost polja manja ili jednaka referentnoj vrednosti.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system checks whether the document field's value, in relation to its associated column, satisfies the comparison condition specified by the operator and reference value.
-* **Action Execution:**
-  * **True Condition:**\
-    If the document field's value meets the specified condition (e.g., equals the reference value), the system triggers the associated actions. These could include updating records, progressing the workflow, or generating notifications.
-  * **False Condition:**\
-    If the document field's value does not meet the specified condition, alternative actions or no actions are executed, based on the workflow configuration.
+* **Procena uslova:** Sistem proverava da li vrednost polja dokumenta, u odnosu na svoju povezanu kolonu, zadovoljava uslov poređenja naveden operatorom i referentnom vrednošću.
+* **Izvršavanje akcije:**
+  * **Tačan uslov:**\
+    Ako vrednost polja dokumenta ispunjava navedeni uslov (npr. jednaka je referentnoj vrednosti), sistem pokreće povezane akcije. One mogu uključivati ažuriranje zapisa, napredovanje radnog toka ili generisanje obaveštenja.
+  * **Netačan uslov:**\
+    Ako vrednost polja dokumenta ne ispunjava navedeni uslov, izvršavaju se alternativne akcije ili nikakve akcije, na osnovu konfiguracije radnog toka.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* The user selects the field name of the relevant document and chooses the operator from the drop-down menu. The user then specifies the reference field value to complete the configuration.
+* Korisnik bira ime polja relevantnog dokumenta i bira operator iz padajućeg menija. Korisnik zatim navodi vrednost referentnog polja da bi dovršio konfiguraciju.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "DocField Comparison Validation" workflow card is a robust tool for dynamic document processing. By automating actions based on field comparisons, this card streamlines workflows, enhances accuracy, and supports data-driven decision-making.
+Kartica radnog toka "DocField Comparison Validation" je robustan alat za dinamičku obradu dokumenata. Automatizacijom akcija na osnovu poređenja polja, ova kartica pojednostavljuje radne tokove, poboljšava tačnost i podržava donošenje odluka zasnovano na podacima.

@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This card is designed to manage actions on documents contingent upon their type, employing simple conditional logic (is/is not) to either trigger or prevent specific workflows. This enables precise control over how different types of documents are processed within the ERP system.
+Ova kartica je dizajnirana da upravlja akcijama nad dokumentima u zavisnosti od njihovog tipa, koristeći jednostavnu uslovnu logiku (is/is not) da pokrene ili spreči određene radne tokove. Ovo omogućava preciznu kontrolu nad time kako se različiti tipovi dokumenata obrađuju unutar ERP sistema.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Operator**
-   * **Description**: Determines the conditional logic applied to the document types.
-   * **Options**:
-     * **is**: The operation will trigger if the document's type matches one of the specified types in the list.
-     * **is not**: The operation will trigger if the document's type does not match any of the types listed.
-2. **Document Types List**
-   * **Description**: Specifies a list of document types to which the condition will apply.
-   * **Detail**: This includes a variety of document types such as "Invoice", "Purchase Order", etc., based on which the condition (is/is not) will be evaluated.
+   * **Opis**: Određuje uslovnu logiku koja se primenjuje na tipove dokumenata.
+   * **Opcije**:
+     * **is**: Operacija će se pokrenuti ako se tip dokumenta poklapa sa jednim od navedenih tipova u listi.
+     * **is not**: Operacija će se pokrenuti ako se tip dokumenta ne poklapa ni sa jednim od navedenih tipova.
+2. **Lista tipova dokumenata**
+   * **Opis**: Navodi listu tipova dokumenata na koje će se uslov primeniti.
+   * **Detalj**: Ovo uključuje različite tipove dokumenata kao što su "Invoice", "Purchase Order", itd., na osnovu kojih će se uslov (is/is not) proceniti.
 
-## Functionality:
+## Funkcionalnost:
 
-* **Condition Evaluation:** The system checks if the document type matches the operator condition (is or is not) against the specified list of document types.
-* **Action Execution:**
-  * **True Condition:**\
-    If the document type satisfies the specified condition (either is or is not in the list), the workflow continues. This could trigger processes like document approvals, specific validations, or routing actions.
-  * **False Condition:**\
-    If the document type does not meet the condition, alternative actions are executed, such as rejecting the document or halting the workflow.
+* **Procena uslova:** Sistem proverava da li se tip dokumenta poklapa sa uslovom operatora (is ili is not) u odnosu na navedenu listu tipova dokumenata.
+* **Izvršavanje akcije:**
+  * **Tačan uslov:**\
+    Ako tip dokumenta zadovoljava navedeni uslov (bilo is ili is not u listi), radni tok se nastavlja. Ovo može pokrenuti procese kao što su odobrenja dokumenata, određene validacije ili akcije usmeravanja.
+  * **Netačan uslov:**\
+    Ako tip dokumenta ne ispunjava uslov, izvršavaju se alternativne akcije, kao što su odbijanje dokumenta ili zaustavljanje radnog toka.
 
-## Setup and Configuration:
+## Podešavanje i konfiguracija:
 
-* Users configure the card by selecting the document type field and defining the operator (is or is not). They then specify the list of document types to check against. The setup is straightforward, involving dropdown menus for field and operator selection and a field for entering the list of document types.
+* Korisnici konfigurišu karticu izborom polja tipa dokumenta i definisanjem operatora (is ili is not). Zatim navode listu tipova dokumenata za proveru. Podešavanje je jednostavno, uključuje padajuće menije za izbor polja i operatora i polje za unos liste tipova dokumenata.
 
-## Conclusion:
+## Zaključak:
 
-The "Document Type Condition" workflow card plays a crucial role in managing document-based operations with precision and flexibility. By using simple conditional logic, it helps ensure that documents are processed appropriately, enhancing efficiency and compliance. Documenting this card clearly will help users understand how to implement and utilize it effectively, making it a valuable part of your ERP system's documentation.
+Kartica radnog toka "Document Type Condition" igra ključnu ulogu u upravljanju operacijama zasnovanim na dokumentima sa preciznošću i fleksibilnošću. Korišćenjem jednostavne uslovne logike, ona pomaže da se obezbedi da se dokumenti obrađuju na odgovarajući način, poboljšavajući efikasnost i usklađenost. Jasno dokumentovanje ove kartice pomoći će korisnicima da razumeju kako da je efikasno implementiraju i koriste, čineći je vrednim delom dokumentacije vašeg ERP sistema.

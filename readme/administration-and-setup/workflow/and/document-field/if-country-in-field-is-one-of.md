@@ -2,42 +2,42 @@
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-This workflow card is designed to evaluate whether a specified country, located in a designated field, is part of a predefined list of countries. Based on this evaluation, the workflow can continue with a true or false condition. It helps automate processes where actions depend on whether the country is listed among a set of allowed or restricted countries.
+Ova kartica radnog toka je dizajnirana da proceni da li je navedena zemlja, smeštena u određenom polju, deo unapred definisane liste zemalja. Na osnovu ove procene, radni tok se može nastaviti sa tačnim ili netačnim uslovom. Pomaže u automatizaciji procesa gde akcije zavise od toga da li je zemlja navedena među skupom dozvoljenih ili ograničenih zemalja.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field where the country name or code is stored.
-   * **Detail:** This should match the exact field identifier of the country data within the document.&#x20;
+   * **Opis:** Navodi polje dokumenta u kojem je sačuvano ime ili kod zemlje.
+   * **Detalj:** Ovo treba da se poklapa sa tačnim identifikatorom polja podataka o zemlji unutar dokumenta.&#x20;
 2. **Operator**
-   * **Description:** Defines whether the country in the field must be part of a predefined list of countries.
-   * **Options:**
-     * **Is:** The country must be included in the list of specified countries for the condition to be true.
-     * **Is Not:** The country must not be included in the list of specified countries for the condition to be true.
+   * **Opis:** Definiše da li zemlja u polju mora biti deo unapred definisane liste zemalja.
+   * **Opcije:**
+     * **Is:** Zemlja mora biti uključena u listu navedenih zemalja da bi uslov bio tačan.
+     * **Is Not:** Zemlja ne sme biti uključena u listu navedenih zemalja da bi uslov bio tačan.
 3. **Countries**
-   * **Description:** Specifies the list of countries against which the selected country will be compared.
-   * **Detail:** This is a comma-separated list of countries. The comparison checks if the country in the field is included in this list.
+   * **Opis:** Navodi listu zemalja sa kojima će se uporediti izabrana zemlja.
+   * **Detalj:** Ovo je lista zemalja razdvojenih zarezima. Poređenje proverava da li je zemlja u polju uključena u ovu listu.
 4. **Continue Condition**
-   * **Description:** Defines the result of the comparison. If the country meets the condition, the workflow continues with the specified Boolean value.
-   * **Options:**
-     * **True:** The workflow continues if the condition matches.
-     * **False:** The workflow continues if the condition does not match.
+   * **Opis:** Definiše rezultat poređenja. Ako zemlja ispunjava uslov, radni tok se nastavlja sa navedenom Boolean vrednošću.
+   * **Opcije:**
+     * **True:** Radni tok se nastavlja ako se uslov poklapa.
+     * **False:** Radni tok se nastavlja ako se uslov ne poklapa.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:** The system evaluates whether the country specified in the field is part of the list of predefined countries. This evaluation checks the country name or code against the provided list.
-* **Action Execution:**
-  * **True Condition:**\
-    If the country in the field is part of the specified list of countries, the workflow continues with the true condition. This can trigger further actions, such as routing documents to the appropriate department, applying specific processing rules, or enabling region-specific features.
-  * **False Condition:**\
-    If the country does not match the list, the workflow continues with the false condition. This allows for executing alternative actions or halting the workflow based on the system setup.
+* **Procena uslova:** Sistem procenjuje da li je zemlja navedena u polju deo liste unapred definisanih zemalja. Ova procena proverava ime ili kod zemlje u odnosu na datu listu.
+* **Izvršavanje akcije:**
+  * **Tačan uslov:**\
+    Ako je zemlja u polju deo navedene liste zemalja, radni tok se nastavlja sa tačnim uslovom. Ovo može pokrenuti dalje akcije, kao što su usmeravanje dokumenata odgovarajućem odeljenju, primena određenih pravila obrade ili omogućavanje funkcija specifičnih za region.
+  * **Netačan uslov:**\
+    Ako se zemlja ne poklapa sa listom, radni tok se nastavlja sa netačnim uslovom. Ovo omogućava izvršavanje alternativnih akcija ili zaustavljanje radnog toka na osnovu podešavanja sistema.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* Users configure the card by selecting the document field containing the country and specifying the list of countries to check against. The operator is then chosen from a dropdown list to define whether the country must be part of or not part of the specified list of countries. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
+* Korisnici konfigurišu karticu izborom polja dokumenta koje sadrži zemlju i navođenjem liste zemalja za proveru. Operator se zatim bira iz padajuće liste da definiše da li zemlja mora biti deo ili ne deo navedene liste zemalja. Na kraju, korisnici postavljaju uslov za nastavak (tačan ili netačan), koji određuje sledeći korak u radnom toku.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Country in Field Comparison with List" workflow card is a valuable tool for automating actions based on whether a country is part of a predefined group. By comparing the country data with a list of allowed or restricted countries, this card enhances workflow efficiency and ensures that system processes follow the correct geographic rules.
+Kartica radnog toka "Country in Field Comparison with List" je vredan alat za automatizaciju akcija na osnovu toga da li je zemlja deo unapred definisane grupe. Poređenjem podataka o zemlji sa listom dozvoljenih ili ograničenih zemalja, ova kartica poboljšava efikasnost radnog toka i obezbeđuje da sistemski procesi prate ispravna geografska pravila.

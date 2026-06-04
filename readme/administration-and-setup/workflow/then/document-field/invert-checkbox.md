@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to invert the current state of a checkbox field. If the checkbox is checked (true), it will be unchecked (false), and vice versa. The inversion occurs based on the conditions set in the **"Where"** and **"And Sections."** This card helps automate workflows where a condition requires toggling a checkbox based on specific criteria.
+Deze workflow-kaart is ontworpen om de huidige status van een selectievakjeveld om te keren. Als het selectievakje is aangevinkt (true), wordt het niet-aangevinkt (false), en omgekeerd. De omkering vindt plaats op basis van de voorwaarden die zijn ingesteld in de **"Where"**- en **"And"**-secties. Deze kaart helpt workflows te automatiseren waarbij een voorwaarde vereist dat een selectievakje wordt omgewisseld op basis van specifieke criteria.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name**
-   * **Description**: Specifies the checkbox field to be inverted.&#x20;
-   * **Detail**: The selected checkbox field will have its state toggled from true to false or from false to true based on its current state.
+   * **Beschrijving**: Geeft het om te keren selectievakjeveld op.&#x20;
+   * **Detail**: Bij het geselecteerde selectievakjeveld wordt de status omgewisseld van true naar false of van false naar true, op basis van de huidige status.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation**: The system evaluates the conditions defined in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the **"Then Section"** action will execute, which in this case means the checkbox field will be toggled.
-  * If **either condition is false**, the card will not execute and no change will be made to the checkbox field.
-* **Action Execution**: If the conditions in the **"Where"** and **"And Sections"** evaluate to true, the checkbox field's state will be inverted:
-  * If the checkbox is checked (true), it will be unchecked (false).
-  * If the checkbox is unchecked (false), it will be checked (true).
+* **Voorwaarde-evaluatie**: Het systeem evalueert de voorwaarden die zijn gedefinieerd in de **"Where"**- en **"And"**-secties:
+  * Als **beide voorwaarden true zijn**, wordt de actie in de **"Then"**-sectie uitgevoerd, wat in dit geval betekent dat het selectievakjeveld wordt omgewisseld.
+  * Als **een van beide voorwaarden false is**, wordt de kaart niet uitgevoerd en wordt er geen wijziging aan het selectievakjeveld aangebracht.
+* **Actie-uitvoering**: Als de voorwaarden in de **"Where"**- en **"And"**-secties als true worden geëvalueerd, wordt de status van het selectievakjeveld omgekeerd:
+  * Als het selectievakje is aangevinkt (true), wordt het niet-aangevinkt (false).
+  * Als het selectievakje niet is aangevinkt (false), wordt het aangevinkt (true).
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-To configure this card, users need to:
+Om deze kaart te configureren, moeten gebruikers:
 
-1. **Select the checkbox field** (Field Name) that will be inverted. The available checkbox fields in the document are listed for selection.
-2. The checkbox field will only be inverted if the conditions in both the **"Where"** and **"And Sections"** are true.
+1. **Het selectievakjeveld selecteren** (Field Name) dat wordt omgekeerd. De beschikbare selectievakjevelden in het document worden weergegeven om uit te selecteren.
+2. Het selectievakjeveld wordt alleen omgekeerd als de voorwaarden in zowel de **"Where"**- als de **"And"**-secties true zijn.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Invert checkbox \[Field Name]"** workflow card offers a simple yet powerful automation tool to toggle checkbox values based on specific conditions. By reducing the need for manual checkbox adjustments, this card enhances efficiency in document processing and ensures consistency across workflows.
+De workflow-kaart **"Invert checkbox \[Field Name]"** biedt een eenvoudig maar krachtig automatiseringshulpmiddel om selectievakjewaarden om te wisselen op basis van specifieke voorwaarden. Door de noodzaak van handmatige aanpassingen aan selectievakjes te verminderen, verbetert deze kaart de efficiëntie in de documentverwerking en zorgt hij voor consistentie over workflows heen.

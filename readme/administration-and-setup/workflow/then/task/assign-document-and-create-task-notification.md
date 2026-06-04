@@ -2,68 +2,68 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_email_settings.png" alt="DocBits E-mail Instellingen" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Doel**
 
-The "**Assign Document and Create Task/Notification Based on Decision Table**" workflow card assigns a document and creates a task or notification with configurable details. The assignee is determined by the return of a decision table, and the card allows for setting priorities and sending email notifications.
+De workflow-kaart "**Assign Document and Create Task/Notification Based on Decision Table**" wijst een document toe en maakt een taak of melding aan met configureerbare details. De toegewezene wordt bepaald door de retourwaarde van een decision table, en de kaart maakt het mogelijk prioriteiten in te stellen en e-mailmeldingen te verzenden.
 
-## **Components of the Card**
+## **Onderdelen van de kaart**
 
 1. **Assignee Type**
-   * **Description:** Specifies whether the decision table’s return assigns the document and task/notification to a user or group.
-   * **Detail:** A field to configure the assignee type as either "User" or "Group" based on the decision table output.
+   * **Beschrijving:** Geeft op of de retourwaarde van de decision table het document en de taak/melding aan een gebruiker of groep toewijst.
+   * **Detail:** Een veld om het toegewezene-type te configureren als ofwel "User" ofwel "Group" op basis van de uitvoer van de decision table.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the assignee.
-   * **Detail:** A dropdown to select either "Task" or "Notification" based on the workflow needs.
+   * **Beschrijving:** Geeft het type actie op dat voor de toegewezene wordt aangemaakt.
+   * **Detail:** Een dropdown om ofwel "Task" ofwel "Notification" te selecteren op basis van de workflow-behoeften.
 3. **Title**
-   * **Description:** The title of the task or notification.
-   * **Detail:** A field for providing a concise title that identifies the task or notification.
+   * **Beschrijving:** De titel van de taak of melding.
+   * **Detail:** Een veld om een beknopte titel te bieden die de taak of melding identificeert.
 4. **Description**
-   * **Description:** Additional details about the task or notification.
-   * **Detail:** A field for describing the purpose and context of the task or notification.
+   * **Beschrijving:** Aanvullende details over de taak of melding.
+   * **Detail:** Een veld om het doel en de context van de taak of melding te beschrijven.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Beschrijving:** Definieert het urgentieniveau van de taak of melding.
+   * **Opties:**
+     * **High:** Vereist onmiddellijke aandacht.
+     * **Medium:** Belangrijk maar niet urgent.
+     * **Low:** Kan later worden afgehandeld.
 6. **Assignee Type**
-   * **Description:** This field determines the type of assignee (User or Group) to whom the document and task/notification are assigned.
-   * **Detail:** A dropdown menu to select whether the task/notification is assigned to a user or a group based on the decision table's output.
+   * **Beschrijving:** Dit veld bepaalt het type toegewezene (User of Group) aan wie het document en de taak/melding worden toegewezen.
+   * **Detail:** Een dropdownmenu om te selecteren of de taak/melding aan een gebruiker of een groep wordt toegewezen op basis van de uitvoer van de decision table.
 7. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the assignee.
-   * **Options:**
-     * **True:** Sends an email notification.
-     * **False:** No email notification is sent.
+   * **Beschrijving:** Configureert of er een e-mailmelding naar de toegewezene wordt verzonden.
+   * **Opties:**
+     * **True:** Verzendt een e-mailmelding.
+     * **False:** Er wordt geen e-mailmelding verzonden.
 8. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where lower numbers indicate higher priority.
+   * **Beschrijving:** Stelt de numerieke prioriteit voor de documenttoewijzing in.
+   * **Detail:** Een veld om een numerieke waarde in te voeren, waarbij lagere getallen een hogere prioriteit aangeven.
 
-## **Functionality**
+## **Functionaliteit**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the workflow conditions are satisfied.
-* **Decision Table Evaluation:**\
-  The decision table determines whether the document and task/notification are assigned to a user or group.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the decision table's result. A task or notification is created with the specified title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email notification is sent to the assignee.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de acties alleen uit als aan de workflow-voorwaarden wordt voldaan.
+* **Decision table-evaluatie:**\
+  De decision table bepaalt of het document en de taak/melding aan een gebruiker of groep worden toegewezen.
+* **Documenttoewijzing en aanmaak van taak/melding:**\
+  Het document wordt toegewezen aan het resultaat van de decision table. Er wordt een taak of melding aangemaakt met de opgegeven titel, beschrijving en prioriteitsniveau.
+* **E-mailmelding:**\
+  Als "Send Mail" op True is ingesteld, wordt er een e-mailmelding naar de toegewezene verzonden.
 
-## **Setup and Configuration**
+## **Opzet en configuratie**
 
-1. **Define Assignee Type:**
-   * Configure the Assignee Type field to either "User" or "Group" based on the decision table's output.
-2. **Select Task/Notification:**
-   * Choose "Task" or "Notification" from the Task/Notification dropdown.
-3. **Set Task/Notification Details:**
-   * Enter the Title and Description for the task or notification.
-   * Select the Priority (High, Medium, or Low) from the dropdown.
-4. **Enable Email Notification:**
-   * Set the Send Mail option to True or False, depending on whether an email notification should be sent.
-5. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment priority, where lower numbers are processed first.
-6. Save the card configuration and activate the workflow.
+1. **Assignee Type definiëren:**
+   * Configureer het veld Assignee Type als ofwel "User" ofwel "Group" op basis van de uitvoer van de decision table.
+2. **Task/Notification selecteren:**
+   * Kies "Task" of "Notification" in de Task/Notification-dropdown.
+3. **Taak-/meldingsdetails instellen:**
+   * Voer de Title en Description voor de taak of melding in.
+   * Selecteer de Priority (High, Medium of Low) in de dropdown.
+4. **E-mailmelding inschakelen:**
+   * Stel de optie Send Mail in op True of False, afhankelijk van of er een e-mailmelding moet worden verzonden.
+5. **Numerieke prioriteit instellen:**
+   * Voer een numerieke waarde in het veld Value in om de toewijzingsprioriteit te bepalen, waarbij lagere getallen het eerst worden verwerkt.
+6. Sla de kaartconfiguratie op en activeer de workflow.
 
-## **Conclusion**
+## **Conclusie**
 
-The "Assign Document and Create Task/Notification Based on Decision Table" workflow card ensures tasks or notifications are dynamically assigned to the appropriate user or group based on decision table results. This card facilitates efficient task delegation, customizable priorities, and optional email notifications to enhance workflow responsiveness.
+De workflow-kaart "Assign Document and Create Task/Notification Based on Decision Table" zorgt ervoor dat taken of meldingen dynamisch aan de juiste gebruiker of groep worden toegewezen op basis van de resultaten van de decision table. Deze kaart faciliteert efficiënte taakdelegatie, aanpasbare prioriteiten en optionele e-mailmeldingen om de responsiviteit van de workflow te verbeteren.

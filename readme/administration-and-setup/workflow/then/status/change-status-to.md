@@ -2,40 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/image (283).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Change Status"** workflow card is used to change the status of a document to one of the predefined states—**Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval**—and optionally trigger associated workflows based on the status change. This card automates the process of status updates and workflow triggers, ensuring efficient document management and error handling.
+De workflow-kaart **"Change Status"** wordt gebruikt om de status van een document te wijzigen naar een van de vooraf gedefinieerde toestanden — **Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval** — en optioneel bijbehorende workflows te triggeren op basis van de statuswijziging. Deze kaart automatiseert het proces van statusupdates en workflow-triggers, wat zorgt voor efficiënt documentbeheer en foutafhandeling.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Status**
-   * **Description**: Specifies the new status to be applied to the document.
-   * **Options**:
-     * **Error**: Marks the document as having encountered an error.
-     * **Rejected**: Indicates the document has been rejected and will not proceed further.
-     * **Ready for Validation**: Sets the document to be reviewed and validated by the next user or system process.
-     * **Pending Approval**: Places the document in a pending state for approval.
-     * **Pending Second Approval**: Puts the document on hold for a second level of approval if applicable.
+   * **Beschrijving**: Geeft de nieuwe status op die op het document wordt toegepast.
+   * **Opties**:
+     * **Error**: Markeert het document als zijnde waarbij een fout is opgetreden.
+     * **Rejected**: Geeft aan dat het document is afgekeurd en niet verder doorgaat.
+     * **Ready for Validation**: Stelt het document in om door de volgende gebruiker of het volgende systeemproces te worden beoordeeld en gevalideerd.
+     * **Pending Approval**: Plaatst het document in een wachtstand voor goedkeuring.
+     * **Pending Second Approval**: Zet het document in de wacht voor een tweede goedkeuringsniveau indien van toepassing.
 2. **Trigger Workflows**
-   * **Description**: Determines whether any subsequent workflows should be triggered after the status change.
-   * **Options**:
-     * **True**: Initiates any relevant workflows based on the status change.
-     * **False**: Prevents workflow execution after the status change.
+   * **Beschrijving**: Bepaalt of er na de statuswijziging eventuele vervolgworkflows moeten worden getriggerd.
+   * **Opties**:
+     * **True**: Start eventuele relevante workflows op basis van de statuswijziging.
+     * **False**: Voorkomt de uitvoering van workflows na de statuswijziging.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections."** If these conditions are true, the card proceeds to change the document's status to the selected value.
-* **Status Update**: Once the conditions are satisfied, the document's status is updated to one of the predefined options (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), depending on the user’s selection.
-* **Trigger Workflow Action**: If **Trigger Workflows** is set to **True**, the system automatically initiates any associated workflows following the status update. If set to **False**, no additional workflows are triggered, and the process ends with the status change.
+* **Voorwaarde-evaluatie**: Het systeem evalueert de voorwaarden die zijn ingesteld in de **"Where"**- en **"And"**-secties. Als aan deze voorwaarden wordt voldaan, gaat de kaart verder met het wijzigen van de status van het document naar de geselecteerde waarde.
+* **Statusupdate**: Zodra aan de voorwaarden is voldaan, wordt de status van het document bijgewerkt naar een van de vooraf gedefinieerde opties (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), afhankelijk van de selectie van de gebruiker.
+* **Workflow-trigger-actie**: Als **Trigger Workflows** op **True** is ingesteld, start het systeem automatisch eventuele bijbehorende workflows na de statusupdate. Als het op **False** is ingesteld, worden er geen aanvullende workflows getriggerd en eindigt het proces met de statuswijziging.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-To configure this card, users need to:
+Om deze kaart te configureren, moeten gebruikers:
 
-1. Specify the desired **Status** that the document will be set to upon condition evaluation (Error, Rejected, Ready for Validation, Pending Approval, or Pending Second Approval).
-2. Choose whether to **Trigger Workflows** after the status change by selecting **True** or **False**.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. De gewenste **Status** opgeven waarop het document wordt ingesteld bij de voorwaarde-evaluatie (Error, Rejected, Ready for Validation, Pending Approval of Pending Second Approval).
+2. Kiezen of **Trigger Workflows** na de statuswijziging wordt uitgevoerd door **True** of **False** te selecteren.
+3. De kaart voert de actie alleen uit als beide voorwaarden in de **"Where"**- en **"And"**-secties als true worden geëvalueerd.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Change Status"** workflow card offers a streamlined approach to managing document statuses and triggering related workflows. It ensures documents are automatically routed to the correct status and that the necessary actions are taken, depending on the status change. By setting clear conditions for execution, it reduces manual effort and enhances workflow efficiency.
+De workflow-kaart **"Change Status"** biedt een gestroomlijnde benadering voor het beheren van documentstatussen en het triggeren van gerelateerde workflows. Hij zorgt ervoor dat documenten automatisch naar de juiste status worden gerouteerd en dat de noodzakelijke acties worden ondernomen, afhankelijk van de statuswijziging. Door duidelijke voorwaarden voor de uitvoering in te stellen, vermindert hij handmatige inspanning en verbetert hij de workflow-efficiëntie.

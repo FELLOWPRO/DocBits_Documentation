@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (278).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to automatically set a specified field in the document to a predefined text value based on the conditions defined in the **"Where"** and **"And Sections."** It allows users to streamline data entry by ensuring fields are populated with consistent values when certain criteria are met.
+Deze workflow-kaart is ontworpen om een opgegeven veld in het document automatisch op een vooraf gedefinieerde tekstwaarde in te stellen op basis van de voorwaarden die zijn gedefinieerd in de **"Where"**- en **"And"**-secties. Hiermee kunnen gebruikers de gegevensinvoer stroomlijnen door ervoor te zorgen dat velden met consistente waarden worden gevuld wanneer aan bepaalde criteria wordt voldaan.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name**
-   * **Description**: Specifies the field that will be updated with the text value.&#x20;
-   * **Detail**: The field selected will be updated with the specified text value if the conditions in the **"Where"** and **"And Sections"** are met.
+   * **Beschrijving**: Geeft het veld op dat met de tekstwaarde wordt bijgewerkt.&#x20;
+   * **Detail**: Het geselecteerde veld wordt bijgewerkt met de opgegeven tekstwaarde als aan de voorwaarden in de **"Where"**- en **"And"**-secties wordt voldaan.
 2. **Text**
-   * **Description**: Defines the text value that will be set in the target field when the conditions evaluate as true.
-   * **Detail**: This can be a custom message, status, or predefined value that the user wishes to write into the field. The text should align with the field's expected input format (e.g., alphanumeric, date, or other types of textual information).
+   * **Beschrijving**: Definieert de tekstwaarde die in het doelveld wordt ingesteld wanneer de voorwaarden als true worden geëvalueerd.
+   * **Detail**: Dit kan een aangepast bericht, een status of een vooraf gedefinieerde waarde zijn die de gebruiker in het veld wil schrijven. De tekst moet overeenkomen met het verwachte invoerformaat van het veld (bijv. alfanumeriek, datum of andere soorten tekstuele informatie).
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation**: The system evaluates the conditions in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the actions defined in the **"Then Section"** will be executed. Specifically, the target field (Field Name) will be populated with the specified text.
-  * If **either the "Where" or the "And" section is false**, no action is taken, and the field remains unchanged. The **Then Section** actions are skipped entirely if either condition is false.
-* **Action Execution**: If both conditions in the **"Where"** and **"And Sections"** are met, the system automatically populates the specified field with the chosen text value. If the conditions are not met, no changes are made to the field.
+* **Voorwaarde-evaluatie**: Het systeem evalueert de voorwaarden in de **"Where"**- en **"And"**-secties:
+  * Als **beide voorwaarden true zijn**, worden de in de **"Then"**-sectie gedefinieerde acties uitgevoerd. Specifiek wordt het doelveld (Field Name) gevuld met de opgegeven tekst.
+  * Als **de "Where"- of de "And"-sectie false is**, wordt er geen actie ondernomen en blijft het veld ongewijzigd. De acties van de **Then**-sectie worden volledig overgeslagen als een van beide voorwaarden false is.
+* **Actie-uitvoering**: Als aan beide voorwaarden in de **"Where"**- en **"And"**-secties wordt voldaan, vult het systeem automatisch het opgegeven veld met de gekozen tekstwaarde. Als niet aan de voorwaarden wordt voldaan, worden er geen wijzigingen aan het veld aangebracht.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-To set up this card:
+Om deze kaart op te zetten:
 
-1. **Select the field** (Field Name) that will be updated with the text value. The available fields in the document are listed for selection.
-2. **Specify the text value** that will be written into the target field when the conditions are true.
-3. The action will only execute if both the **"Where"** and **"And Sections"** conditions evaluate to true.
+1. **Selecteer het veld** (Field Name) dat met de tekstwaarde wordt bijgewerkt. De beschikbare velden in het document worden weergegeven om uit te selecteren.
+2. **Geef de tekstwaarde op** die in het doelveld wordt geschreven wanneer de voorwaarden true zijn.
+3. De actie wordt alleen uitgevoerd als zowel de **"Where"**- als de **"And"**-voorwaarden als true worden geëvalueerd.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Set Field to Text"** workflow card offers a straightforward way to automate the population of text values into specific document fields based on predefined conditions. This reduces manual data entry and ensures consistency in document processing, making it a useful tool for automating workflows and enhancing efficiency.
+De workflow-kaart **"Set Field to Text"** biedt een eenvoudige manier om het vullen van tekstwaarden in specifieke documentvelden te automatiseren op basis van vooraf gedefinieerde voorwaarden. Dit vermindert handmatige gegevensinvoer en zorgt voor consistentie in de documentverwerking, waardoor het een nuttig hulpmiddel is voor het automatiseren van workflows en het verbeteren van de efficiëntie.

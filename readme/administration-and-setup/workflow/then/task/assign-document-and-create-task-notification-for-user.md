@@ -2,62 +2,62 @@
 
 <figure><img src="../../../../.gitbook/assets/image (13) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Doel**
 
-The "**Assign Document and Create Task/Notification for User**" workflow card assigns a document to a specified user, creates a task or notification with configurable details, and optionally sends an email notification to the user. This card also enables setting a numeric priority value to determine the order of execution.
+De workflow-kaart "**Assign Document and Create Task/Notification for User**" wijst een document toe aan een opgegeven gebruiker, maakt een taak of melding aan met configureerbare details en verzendt optioneel een e-mailmelding naar de gebruiker. Deze kaart maakt het ook mogelijk een numerieke prioriteitswaarde in te stellen om de uitvoeringsvolgorde te bepalen.
 
-## **Components of the Card**
+## **Onderdelen van de kaart**
 
 1. **User**
-   * **Description:** Specifies the user who will receive the task or notification.
-   * **Detail:** A dropdown menu to select the user to whom the document and task/notification will be assigned.
+   * **Beschrijving:** Geeft de gebruiker op die de taak of melding ontvangt.
+   * **Detail:** Een dropdownmenu om de gebruiker te selecteren aan wie het document en de taak/melding worden toegewezen.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the user.
-   * **Detail:** A dropdown to choose either "Task" or "Notification" based on the intended action.
+   * **Beschrijving:** Geeft het type actie op dat voor de gebruiker wordt aangemaakt.
+   * **Detail:** Een dropdown om ofwel "Task" ofwel "Notification" te kiezen op basis van de beoogde actie.
 3. **Title**
-   * **Description:** The title of the task or notification.
-   * **Detail:** A field to provide a concise, descriptive title for the task or notification.
+   * **Beschrijving:** De titel van de taak of melding.
+   * **Detail:** Een veld om een beknopte, beschrijvende titel voor de taak of melding te bieden.
 4. **Description**
-   * **Description:** Additional details about the task or notification.
-   * **Detail:** A field to describe the task’s purpose or provide context for the notification.
+   * **Beschrijving:** Aanvullende details over de taak of melding.
+   * **Detail:** Een veld om het doel van de taak te beschrijven of context voor de melding te bieden.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Beschrijving:** Definieert het urgentieniveau van de taak of melding.
+   * **Opties:**
+     * **High:** Vereist onmiddellijke aandacht.
+     * **Medium:** Belangrijk maar niet urgent.
+     * **Low:** Kan later worden afgehandeld.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the user.
-   * **Options:**
-     * **True:** Sends an email notification to the user.
-     * **False:** No email notification is sent.
+   * **Beschrijving:** Configureert of er een e-mailmelding naar de gebruiker wordt verzonden.
+   * **Opties:**
+     * **True:** Verzendt een e-mailmelding naar de gebruiker.
+     * **False:** Er wordt geen e-mailmelding verzonden.
 7. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where lower numbers indicate higher priority.
+   * **Beschrijving:** Stelt de numerieke prioriteit voor de documenttoewijzing in.
+   * **Detail:** Een veld om een numerieke waarde in te voeren, waarbij lagere getallen een hogere prioriteit aangeven.
 
-## **Functionality**
+## **Functionaliteit**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the configured workflow conditions are met.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the user specified in the "User" field. A task or notification is created with the provided title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email is sent to the user notifying them about the task or notification.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de acties alleen uit als aan de geconfigureerde workflow-voorwaarden wordt voldaan.
+* **Documenttoewijzing en aanmaak van taak/melding:**\
+  Het document wordt toegewezen aan de gebruiker die in het veld "User" is opgegeven. Er wordt een taak of melding aangemaakt met de opgegeven titel, beschrijving en prioriteitsniveau.
+* **E-mailmelding:**\
+  Als "Send Mail" op True is ingesteld, wordt er een e-mail naar de gebruiker verzonden om hem op de hoogte te stellen van de taak of melding.
 
-## **Setup and Configuration**
+## **Opzet en configuratie**
 
-1. **Select User:**
-   * Choose the user from the User dropdown menu.
-2. **Configure Task/Notification Details:**
-   * Select "Task" or "Notification" from the Task/Notification dropdown.
-   * Enter the Title and Description for the task or notification.
-   * Set the Priority by selecting High, Medium, or Low from the dropdown.
-3. **Enable Email Notification:**
-   * Configure the Send Mail option to True or False, depending on whether an email notification should be sent.
-4. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment’s priority, where lower values are processed first.
-5. Save the card configuration and activate the workflow.
+1. **Gebruiker selecteren:**
+   * Kies de gebruiker uit het User-dropdownmenu.
+2. **Taak-/meldingsdetails configureren:**
+   * Selecteer "Task" of "Notification" in de Task/Notification-dropdown.
+   * Voer de Title en Description voor de taak of melding in.
+   * Stel de Priority in door High, Medium of Low in de dropdown te selecteren.
+3. **E-mailmelding inschakelen:**
+   * Configureer de optie Send Mail op True of False, afhankelijk van of er een e-mailmelding moet worden verzonden.
+4. **Numerieke prioriteit instellen:**
+   * Voer een numerieke waarde in het veld Value in om de prioriteit van de toewijzing te bepalen, waarbij lagere waarden het eerst worden verwerkt.
+5. Sla de kaartconfiguratie op en activeer de workflow.
 
-## **Conclusion**
+## **Conclusie**
 
-The "Assign Document and Create Task/Notification for User" workflow card ensures documents are assigned to the appropriate user while creating tasks or notifications with defined priorities and optional email notifications. This card helps streamline task delegation and enhances workflow efficiency.
+De workflow-kaart "Assign Document and Create Task/Notification for User" zorgt ervoor dat documenten aan de juiste gebruiker worden toegewezen, terwijl taken of meldingen worden aangemaakt met gedefinieerde prioriteiten en optionele e-mailmeldingen. Deze kaart helpt de taakdelegatie te stroomlijnen en de workflow-efficiëntie te verbeteren.

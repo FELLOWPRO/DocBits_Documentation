@@ -4,23 +4,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (281).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Approve the Document"** workflow card is used to mark a document as approved. It allows the document to progress to the next stage in the workflow, enabling automated processing or approval workflows to be executed. This card helps streamline document management processes, ensuring that only approved documents move forward for further actions.
+De workflow-kaart **"Approve the Document"** wordt gebruikt om een document als goedgekeurd te markeren. Hiermee kan het document doorgaan naar de volgende fase in de workflow, waardoor geautomatiseerde verwerkings- of goedkeuringsworkflows kunnen worden uitgevoerd. Deze kaart helpt documentbeheerprocessen te stroomlijnen en zorgt ervoor dat alleen goedgekeurde documenten doorgaan voor verdere acties.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Approval Status**
-   * **Description**: This component marks the document as approved.
-   * **Detail**: When this card is triggered, the document's approval status is updated to indicate approval. This action can be set based on the conditions defined in the **"Where"** and **"And Sections."**
+   * **Beschrijving**: Dit onderdeel markeert het document als goedgekeurd.
+   * **Detail**: Wanneer deze kaart wordt getriggerd, wordt de goedkeuringsstatus van het document bijgewerkt om goedkeuring aan te geven. Deze actie kan worden ingesteld op basis van de voorwaarden die zijn gedefinieerd in de **"Where"**- en **"And"**-secties.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"**.
-  * If **both conditions are true**, the document will be marked as approved.
-  * If **either condition is false**, the card will not execute, and the document’s approval status will remain unchanged.
-* **Action Execution**: When the conditions are met, the document is approved. This change is reflected in the document status, allowing it to continue further in the workflow.
+* **Voorwaarde-evaluatie**: Het systeem evalueert de voorwaarden die zijn ingesteld in de **"Where"**- en **"And"**-secties.
+  * Als **beide voorwaarden true zijn**, wordt het document als goedgekeurd gemarkeerd.
+  * Als **een van beide voorwaarden false is**, wordt de kaart niet uitgevoerd en blijft de goedkeuringsstatus van het document ongewijzigd.
+* **Actie-uitvoering**: Wanneer aan de voorwaarden wordt voldaan, wordt het document goedgekeurd. Deze wijziging wordt weergegeven in de documentstatus, waardoor het verder in de workflow kan doorgaan.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Approve the Document"** workflow card is a key component for automating document approval in business workflows. By ensuring that only documents that meet specific criteria are approved, it helps maintain consistency, reduces manual oversight, and allows for smoother document processing.
+De workflow-kaart **"Approve the Document"** is een belangrijk onderdeel voor het automatiseren van documentgoedkeuring in bedrijfsworkflows. Door ervoor te zorgen dat alleen documenten die aan specifieke criteria voldoen worden goedgekeurd, helpt hij consistentie te behouden, vermindert hij handmatig toezicht en zorgt hij voor een soepelere documentverwerking.

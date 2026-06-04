@@ -2,61 +2,61 @@
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Doel**
 
-The "**Assign Document to Procurement Group and Create Task/Notification**" workflow card assigns a document to a specified procurement group, creates a task or notification with defined details, and optionally notifies the group via email. It prioritizes task execution based on a configurable numeric priority value.
+De workflow-kaart "**Assign Document to Procurement Group and Create Task/Notification**" wijst een document toe aan een opgegeven inkoopgroep, maakt een taak of melding aan met gedefinieerde details en stelt de groep optioneel via e-mail op de hoogte. Hij prioriteert de taakuitvoering op basis van een configureerbare numerieke prioriteitswaarde.
 
-## **Components of the Card**
+## **Onderdelen van de kaart**
 
 1. **Group Name**
-   * **Description:** Specifies the procurement group responsible for handling the document.
-   * **Detail:** A field where the user can manually enter the name of the procurement group.
+   * **Beschrijving:** Geeft de inkoopgroep op die verantwoordelijk is voor het afhandelen van het document.
+   * **Detail:** Een veld waarin de gebruiker handmatig de naam van de inkoopgroep kan invoeren.
 2. **Task/Notification**
-   * **Description:** Defines whether a task or notification is created for the group.
-   * **Detail:** A field where the user can choose between creating a task or a notificatio
+   * **Beschrijving:** Definieert of er een taak of melding voor de groep wordt aangemaakt.
+   * **Detail:** Een veld waarin de gebruiker kan kiezen tussen het aanmaken van een taak of een melding
 3. **Title**
-   * **Description:** The title of the task or notification created for the group.
-   * **Detail:** A field to provide a concise and identifiable title for the task or notification.
+   * **Beschrijving:** De titel van de taak of melding die voor de groep wordt aangemaakt.
+   * **Detail:** Een veld om een beknopte en herkenbare titel voor de taak of melding te bieden.
 4. **Description**
-   * **Description:** Further details about the task or notification.
-   * **Detail:** A field to describe the task’s purpose and provide context or instructions.
+   * **Beschrijving:** Verdere details over de taak of melding.
+   * **Detail:** Een veld om het doel van de taak te beschrijven en context of instructies te bieden.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Task requires immediate attention.
-     * **Medium:** Task is important but not urgent.
-     * **Low:** Task can be handled at a later time.
+   * **Beschrijving:** Definieert het urgentieniveau van de taak of melding.
+   * **Opties:**
+     * **High:** Taak vereist onmiddellijke aandacht.
+     * **Medium:** Taak is belangrijk maar niet urgent.
+     * **Low:** Taak kan op een later tijdstip worden afgehandeld.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification should be sent to the group.
-   * **Options:**
-     * **True:** Sends an email notification to the procurement group.
-     * **False:** No email notification is sent.
+   * **Beschrijving:** Configureert of er een e-mailmelding naar de groep moet worden verzonden.
+   * **Opties:**
+     * **True:** Verzendt een e-mailmelding naar de inkoopgroep.
+     * **False:** Er wordt geen e-mailmelding verzonden.
 7. **Value**
-   * **Description:** Sets the numeric priority for task execution.
-   * **Detail:** A field to input a numeric value, where a lower number represents a higher priority.
+   * **Beschrijving:** Stelt de numerieke prioriteit voor de taakuitvoering in.
+   * **Detail:** Een veld om een numerieke waarde in te voeren, waarbij een lager getal een hogere prioriteit vertegenwoordigt.
 
-## **Functionality**
+## **Functionaliteit**
 
-* **Condition Evaluation:**\
-  The card performs its actions only if the defined workflow conditions are met.
-* **Group Assignment and Task/Notification Creation:**\
-  The document is assigned to the specified procurement group. A task or notification is created with the provided title, description, and priority.
-* **Email Notification:**\
-  If "Send Mail" is set to True, the group receives an email about the task or notification.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de acties alleen uit als aan de gedefinieerde workflow-voorwaarden wordt voldaan.
+* **Groepstoewijzing en aanmaak van taak/melding:**\
+  Het document wordt toegewezen aan de opgegeven inkoopgroep. Er wordt een taak of melding aangemaakt met de opgegeven titel, beschrijving en prioriteit.
+* **E-mailmelding:**\
+  Als "Send Mail" op True is ingesteld, ontvangt de groep een e-mail over de taak of melding.
 
-## **Setup and Configuration**
+## **Opzet en configuratie**
 
-1. **Define Group Name:**
-   * Enter the name of the procurement group in the Group Name field.
-2. **Configure Task/Notification Details:**
-   * Specify the Title and Description for the task or notification.
-   * Select the Priority from the dropdown menu (High, Medium, or Low).
-3. **Enable Email Notification:**
-   * Set "Send Mail" to True or False based on whether the group should receive an email.
-4. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the task's priority, where lower values are processed first.
-5. Save the card configuration and activate the workflow.
+1. **Group Name definiëren:**
+   * Voer de naam van de inkoopgroep in het veld Group Name in.
+2. **Taak-/meldingsdetails configureren:**
+   * Geef de Title en Description voor de taak of melding op.
+   * Selecteer de Priority in het dropdownmenu (High, Medium of Low).
+3. **E-mailmelding inschakelen:**
+   * Stel "Send Mail" in op True of False, afhankelijk van of de groep een e-mail moet ontvangen.
+4. **Numerieke prioriteit instellen:**
+   * Voer een numerieke waarde in het veld Value in om de prioriteit van de taak te bepalen, waarbij lagere waarden het eerst worden verwerkt.
+5. Sla de kaartconfiguratie op en activeer de workflow.
 
-## **Conclusion**
+## **Conclusie**
 
-The "Assign Document to Procurement Group and Create Task/Notification" workflow card ensures documents are directed to the appropriate group with clear task instructions and priority levels. By enabling optional email notifications, this card improves task visibility and ensures smooth workflow execution.
+De workflow-kaart "Assign Document to Procurement Group and Create Task/Notification" zorgt ervoor dat documenten naar de juiste groep worden geleid met duidelijke taakinstructies en prioriteitsniveaus. Door optionele e-mailmeldingen mogelijk te maken, verbetert deze kaart de zichtbaarheid van taken en zorgt hij voor een soepele workflow-uitvoering.

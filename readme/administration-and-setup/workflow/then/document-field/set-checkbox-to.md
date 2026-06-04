@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (279).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to set a checkbox field to a specified value (true or false) based on the conditions defined in the **"Where"** and **"And"** sections. It provides a simple yet effective way to automate checkbox updates when certain criteria are met, ensuring streamlined document processing.
+Deze workflow-kaart is ontworpen om een selectievakjeveld op een opgegeven waarde (true of false) in te stellen op basis van de voorwaarden die zijn gedefinieerd in de **"Where"**- en **"And"**-secties. Hij biedt een eenvoudige maar effectieve manier om selectievakje-updates te automatiseren wanneer aan bepaalde criteria wordt voldaan, wat zorgt voor een gestroomlijnde documentverwerking.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name:**
-   * **Description**: Specifies the field where the checkbox will be set.
-   * **Detail**: The checkbox field to be updated is identified by the field name.
+   * **Beschrijving**: Geeft het veld op waar het selectievakje wordt ingesteld.
+   * **Detail**: Het bij te werken selectievakjeveld wordt geïdentificeerd door de veldnaam.
 2. **Boolean**
-   * **Description**: Defines the value that the checkbox field will be set to when the conditions in the **Where** and **And Sections** are both true.
-   * **Options**:
-     * **True**: The checkbox will be set to **true** if the conditions are met.
-     * **False**: The checkbox will be set to **false** if the conditions are met.
+   * **Beschrijving**: Definieert de waarde waarop het selectievakjeveld wordt ingesteld wanneer de voorwaarden in de **Where**- en **And**-secties beide true zijn.
+   * **Opties**:
+     * **True**: Het selectievakje wordt op **true** ingesteld als aan de voorwaarden wordt voldaan.
+     * **False**: Het selectievakje wordt op **false** ingesteld als aan de voorwaarden wordt voldaan.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation**: The system evaluates the conditions in both the **"Where"** and **"And"**&#x20;
-* **Action Execution**: If both the **"Where"** and **"And Sections"** evaluate to true, the checkbox field will be updated to the specified value (true or false). If either condition is false, no actions are taken, and the checkbox remains as it was.
+* **Voorwaarde-evaluatie**: Het systeem evalueert de voorwaarden in zowel de **"Where"**- als de **"And"**-secties.&#x20;
+* **Actie-uitvoering**: Als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd, wordt het selectievakjeveld bijgewerkt naar de opgegeven waarde (true of false). Als een van beide voorwaarden false is, worden er geen acties ondernomen en blijft het selectievakje zoals het was.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-To configure this card, users need to:
+Om deze kaart te configureren, moeten gebruikers:
 
-1. **Specify the target checkbox field** that will be set to true or false when the conditions are met.
-2. **Choose the value (true or false)** that the checkbox will be set to upon condition evaluation.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. **Het doel-selectievakjeveld opgeven** dat op true of false wordt ingesteld wanneer aan de voorwaarden wordt voldaan.
+2. **De waarde (true of false) kiezen** waarop het selectievakje wordt ingesteld bij de voorwaarde-evaluatie.
+3. De kaart voert de actie alleen uit als beide voorwaarden in de **"Where"**- en **"And"**-secties als true worden geëvalueerd.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Set Checkbox"** workflow card is a simple and effective automation tool to update checkbox fields based on specific conditions. By ensuring both **"Where"** and **"And Sections"** are met, it allows users to automate processes and reduce manual intervention, ensuring smoother and more efficient document processing.
+De workflow-kaart **"Set Checkbox"** is een eenvoudig en effectief automatiseringshulpmiddel om selectievakjevelden bij te werken op basis van specifieke voorwaarden. Door ervoor te zorgen dat aan zowel de **"Where"**- als de **"And"**-secties wordt voldaan, kunnen gebruikers processen automatiseren en handmatige interventie verminderen, wat zorgt voor een soepelere en efficiëntere documentverwerking.

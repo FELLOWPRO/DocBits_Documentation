@@ -2,47 +2,47 @@
 
 <figure><img src="../../../../.gitbook/assets/image (293).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Change Entries in Table"** workflow card is used to update entries in a specified database table. It allows you to select a **table** and **column**, then perform mathematical operations (addition, subtraction, multiplication, or division) on the values in that column, using a specified value.
+De workflow-kaart **"Change Entries in Table"** wordt gebruikt om vermeldingen in een opgegeven databasetabel bij te werken. Hiermee kunt u een **tabel** en **kolom** selecteren en vervolgens wiskundige bewerkingen (optellen, aftrekken, vermenigvuldigen of delen) op de waarden in die kolom uitvoeren, met een opgegeven waarde.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which entries will be updated.
-   * **Detail:** A dropdown list of available **tables** is provided, allowing you to select the target table for updating entries.
+   * **Beschrijving:** Geeft de **tabel** op waarin vermeldingen worden bijgewerkt.
+   * **Detail:** Er wordt een dropdownlijst van beschikbare **tabellen** geboden, waarmee u de doeltabel voor het bijwerken van vermeldingen kunt selecteren.
 2. **Column Name**
-   * **Description:** Specifies the **column** within the selected table to be updated.
-   * **Detail:** A list of all available **columns** will be provided for selection.
+   * **Beschrijving:** Geeft de **kolom** binnen de geselecteerde tabel op die wordt bijgewerkt.
+   * **Detail:** Er wordt een lijst van alle beschikbare **kolommen** geboden om uit te selecteren.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be performed on the **column** values.
-   * **Options:**
-     * **Add (+):** Adds a specified **value** to the current value in the selected column.
-     * **Subtract (-):** Subtracts a specified **value** from the current value in the selected column.
-     * **Multiply (\*):** Multiplies the current value in the selected column by a specified **value**.
-     * **Divide (/):** Divides the current value in the selected column by a specified **value**.
+   * **Beschrijving:** Definieert de wiskundige bewerking die op de **kolom**waarden wordt uitgevoerd.
+   * **Opties:**
+     * **Add (+):** Telt een opgegeven **waarde** op bij de huidige waarde in de geselecteerde kolom.
+     * **Subtract (-):** Trekt een opgegeven **waarde** af van de huidige waarde in de geselecteerde kolom.
+     * **Multiply (\*):** Vermenigvuldigt de huidige waarde in de geselecteerde kolom met een opgegeven **waarde**.
+     * **Divide (/):** Deelt de huidige waarde in de geselecteerde kolom door een opgegeven **waarde**.
 4. **Value**
-   * **Description:** Specifies the **value** to be used in the selected operation.
-   * **Detail:** This is the number that will be added, subtracted, multiplied, or divided with the entries in the selected column.
+   * **Beschrijving:** Geeft de **waarde** op die in de geselecteerde bewerking wordt gebruikt.
+   * **Detail:** Dit is het getal dat wordt opgeteld, afgetrokken, vermenigvuldigd of gedeeld met de vermeldingen in de geselecteerde kolom.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Table Entry Update:**\
-  The card performs the selected operation (**+**, **-**, **\***, or **/**) on the values in the chosen **column** of the selected **table, u**sing the specified **value**.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Tabelvermelding bijwerken:**\
+  De kaart voert de geselecteerde bewerking (**+**, **-**, **\*** of **/**) uit op de waarden in de gekozen **kolom** van de geselecteerde **tabel**, met de opgegeven **waarde**.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Select Table:**\
-  Choose the **table** where the changes will be applied.
-* **Choose Column:**\
-  Select the **column** within the table that you want to update.
-* **Select Operation:**\
-  Choose the mathematical operation (**+**, **-**, **\***, **/**) to be applied to the selected column's values.
-* **Enter Value:**\
-  Provide the **value** to be used in the selected operation.
+* **Tabel selecteren:**\
+  Kies de **tabel** waarin de wijzigingen worden toegepast.
+* **Kolom kiezen:**\
+  Selecteer de **kolom** binnen de tabel die u wilt bijwerken.
+* **Bewerking selecteren:**\
+  Kies de wiskundige bewerking (**+**, **-**, **\***, **/**) die op de waarden van de geselecteerde kolom wordt toegepast.
+* **Waarde invoeren:**\
+  Geef de **waarde** op die in de geselecteerde bewerking wordt gebruikt.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Change Entries in Table"** workflow card enables automated updates to database entries by selecting a **table**, **column**, and desired **mathematical operation**. This card is essential for performing bulk data modifications or calculations within your database.
+De workflow-kaart **"Change Entries in Table"** maakt geautomatiseerde updates van databasevermeldingen mogelijk door een **tabel**, **kolom** en gewenste **wiskundige bewerking** te selecteren. Deze kaart is essentieel voor het uitvoeren van bulkgegevensaanpassingen of berekeningen binnen uw database.

@@ -2,55 +2,55 @@
 
 <figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Create Task with Fallback"** workflow card ensures efficient task delegation by assigning tasks to specific roles—dispatcher or purchaser—while incorporating a fallback mechanism to prevent task assignment failures. This card improves workflow reliability and adaptability in dynamic scenarios.
+De workflow-kaart **"Create Task with Fallback"** zorgt voor efficiënte taakdelegatie door taken toe te wijzen aan specifieke rollen — disponent of purchaser — terwijl een terugvalmechanisme wordt geïntegreerd om mislukte taaktoewijzingen te voorkomen. Deze kaart verbetert de betrouwbaarheid en aanpasbaarheid van de workflow in dynamische scenario's.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Title**
-   * **Description**: Specifies the title of the task being created.
-   * **Detail**: Provides a concise identifier for the task.
+   * **Beschrijving**: Geeft de titel van de taak die wordt aangemaakt op.
+   * **Detail**: Biedt een beknopte identifier voor de taak.
 2. **Description**
-   * **Description**: Describes the purpose or context of the task.
-   * **Detail**: Clarifies the details of the task.
+   * **Beschrijving**: Beschrijft het doel of de context van de taak.
+   * **Detail**: Verduidelijkt de details van de taak.
 3. **Priority**
-   * **Description**: Sets the urgency level for the task.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but not urgent.
-     * **Low**: Can be addressed later.
+   * **Beschrijving**: Stelt het urgentieniveau voor de taak in.
+   * **Opties**:
+     * **High**: Vereist onmiddellijke aandacht.
+     * **Medium**: Belangrijk maar niet urgent.
+     * **Low**: Kan later worden afgehandeld.
 4. **Assigned Role**
-   * **Description**: Specifies the primary role to which the task is assigned.
-   * **Options**:
-     * **Disponent**: Assigns the task to the disponent.
-     * **Purchaser**: Assigns the task to the purchaser.
+   * **Beschrijving**: Geeft de primaire rol op aan wie de taak wordt toegewezen.
+   * **Opties**:
+     * **Disponent**: Wijst de taak toe aan de disponent.
+     * **Purchaser**: Wijst de taak toe aan de purchaser.
 5. **Email Notification**
-   * **Description**: Enables notifying the assigned user via email.
-   * **Options**:
-     * **True**: Sends an email notification to the user.
-     * **False**: No email notification is sent.
+   * **Beschrijving**: Maakt het mogelijk de toegewezen gebruiker via e-mail op de hoogte te stellen.
+   * **Opties**:
+     * **True**: Verzendt een e-mailmelding naar de gebruiker.
+     * **False**: Er wordt geen e-mailmelding verzonden.
 6. **Fallback User**
-   * **Description**: Provides a fallback option for task assignment if the recipient role is not found.
-   * **Detail**: Allows selecting a user from a dropdown list to ensure task delegation.
+   * **Beschrijving**: Biedt een terugvaloptie voor taaktoewijzing als de ontvangerrol niet wordt gevonden.
+   * **Detail**: Maakt het mogelijk een gebruiker uit een dropdownlijst te selecteren om de taakdelegatie te waarborgen.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation**:\
-  The card executes only if the conditions in the **"Where"** and **"And Sections"** are met.
-* **Task Assignment**:
-  * The task is assigned to the selected role (dispatcher or purchaser).
-  * If the specified role is not found, the task is assigned to a user from the fallback dropdown list.
-* **Email Notification**:\
-  Sends an email to the assigned user if email notification is enabled.
+* **Voorwaarde-evaluatie**:\
+  De kaart wordt alleen uitgevoerd als aan de voorwaarden in de **"Where"**- en **"And"**-secties wordt voldaan.
+* **Taaktoewijzing**:
+  * De taak wordt toegewezen aan de geselecteerde rol (disponent of purchaser).
+  * Als de opgegeven rol niet wordt gevonden, wordt de taak toegewezen aan een gebruiker uit de terugval-dropdownlijst.
+* **E-mailmelding**:\
+  Verzendt een e-mail naar de toegewezen gebruiker als e-mailmelding is ingeschakeld.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-1. **Specify Task Details**: Enter the title, description, and priority of the task.
-2. **Select Primary Role**: Choose the role to which the task will be assigned (dispatcher or purchaser).
-3. **Configure Fallback User**: Select a fallback user from the dropdown list to ensure task assignment if the primary role is not found.
-4. **Enable Email Notification**: Indicate whether the assigned user should receive an email notification.
+1. **Taakdetails opgeven**: Voer de titel, beschrijving en prioriteit van de taak in.
+2. **Primaire rol selecteren**: Kies de rol aan wie de taak wordt toegewezen (disponent of purchaser).
+3. **Terugvalgebruiker configureren**: Selecteer een terugvalgebruiker uit de dropdownlijst om de taaktoewijzing te waarborgen als de primaire rol niet wordt gevonden.
+4. **E-mailmelding inschakelen**: Geef aan of de toegewezen gebruiker een e-mailmelding moet ontvangen.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Create Task with Fallback"** workflow card ensures seamless task delegation by integrating a fallback mechanism. By assigning tasks based on roles and providing an alternate user option, it enhances reliability and flexibility in task management processes.
+De workflow-kaart **"Create Task with Fallback"** zorgt voor een naadloze taakdelegatie door een terugvalmechanisme te integreren. Door taken op basis van rollen toe te wijzen en een alternatieve gebruikersoptie te bieden, verbetert hij de betrouwbaarheid en flexibiliteit in taakbeheerprocessen.

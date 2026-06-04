@@ -2,52 +2,52 @@
 
 <figure><img src="../../../../.gitbook/assets/image (294).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Calculate Columns in Table"** workflow card is used to perform calculations between columns in a selected table. It allows users to select columns, apply a mathematical operation, and store the result in a specified result column.
+De workflow-kaart **"Calculate Columns in Table"** wordt gebruikt om berekeningen tussen kolommen in een geselecteerde tabel uit te voeren. Hiermee kunnen gebruikers kolommen selecteren, een wiskundige bewerking toepassen en het resultaat in een opgegeven resultaatkolom opslaan.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which the columns will be calculated.
-   * **Detail:** A dropdown list of all available **tables** is provided for selection.
+   * **Beschrijving:** Geeft de **tabel** op waarin de kolommen worden berekend.
+   * **Detail:** Er wordt een dropdownlijst van alle beschikbare **tabellen** geboden om uit te selecteren.
 2. **Column Name (1st Column)**
-   * **Description:** Specifies the **first column** to be involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+   * **Beschrijving:** Geeft de **eerste kolom** op die bij de berekening betrokken is.
+   * **Detail:** Er wordt een lijst van alle beschikbare **kolommen** geboden om uit te selecteren.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be applied between the selected columns.
-   * **Options:**
-     * **Add (+):** Adds the value of the second column to the value of the first column.
-     * **Subtract (-):** Subtracts the value of the second column from the value of the first column.
-     * **Multiply (\*):** Multiplies the value in the first column by the value in the second column.
-     * **Divide (/):** Divides the value in the first column by the value in the second column.
+   * **Beschrijving:** Definieert de wiskundige bewerking die tussen de geselecteerde kolommen wordt toegepast.
+   * **Opties:**
+     * **Add (+):** Telt de waarde van de tweede kolom op bij de waarde van de eerste kolom.
+     * **Subtract (-):** Trekt de waarde van de tweede kolom af van de waarde van de eerste kolom.
+     * **Multiply (\*):** Vermenigvuldigt de waarde in de eerste kolom met de waarde in de tweede kolom.
+     * **Divide (/):** Deelt de waarde in de eerste kolom door de waarde in de tweede kolom.
 4. **Column Name (2nd Column)**
-   * **Description:** Specifies the **second column** to be involved in the calculation.
-   * **Detail:** A list of available **columns** is provided for selection.
+   * **Beschrijving:** Geeft de **tweede kolom** op die bij de berekening betrokken is.
+   * **Detail:** Er wordt een lijst van beschikbare **kolommen** geboden om uit te selecteren.
 5. **Result Column**
-   * **Description:** Specifies the **column** where the result of the calculation will be stored.
-   * **Detail:** A list of available **columns** is provided where the calculated value will be saved.
+   * **Beschrijving:** Geeft de **kolom** op waarin het resultaat van de berekening wordt opgeslagen.
+   * **Detail:** Er wordt een lijst van beschikbare **kolommen** geboden waarin de berekende waarde wordt opgeslagen.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Column Calculation:**\
-  The card performs the selected mathematical operation between the two chosen columns.
-* **Result Storage:**\
-  The result of the calculation is stored in the selected **result column**.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Kolomberekening:**\
+  De kaart voert de geselecteerde wiskundige bewerking uit tussen de twee gekozen kolommen.
+* **Resultaatopslag:**\
+  Het resultaat van de berekening wordt opgeslagen in de geselecteerde **resultaatkolom**.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Select Table:**\
-  Choose the **table** where the columns will be calculated.
-* **Choose Columns:**\
-  Select the **first column** and **second column** that will be used in the calculation.
-* **Select Operation:**\
-  Choose the mathematical operation (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) to be applied between the columns.
-* **Select Result Column:**\
-  Choose the **result column** where the calculation will be stored.
+* **Tabel selecteren:**\
+  Kies de **tabel** waarin de kolommen worden berekend.
+* **Kolommen kiezen:**\
+  Selecteer de **eerste kolom** en **tweede kolom** die in de berekening worden gebruikt.
+* **Bewerking selecteren:**\
+  Kies de wiskundige bewerking (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) die tussen de kolommen wordt toegepast.
+* **Resultaatkolom selecteren:**\
+  Kies de **resultaatkolom** waarin de berekening wordt opgeslagen.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Calculate Columns in Table"** workflow card enables users to perform dynamic calculations between columns in a table, and store the results in a designated column. The card offers flexibility to apply different mathematical operations and ensures the result is stored in the specified column.
+De workflow-kaart **"Calculate Columns in Table"** stelt gebruikers in staat dynamische berekeningen tussen kolommen in een tabel uit te voeren en de resultaten in een aangewezen kolom op te slaan. De kaart biedt flexibiliteit om verschillende wiskundige bewerkingen toe te passen en zorgt ervoor dat het resultaat in de opgegeven kolom wordt opgeslagen.

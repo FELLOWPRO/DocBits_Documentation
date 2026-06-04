@@ -2,51 +2,51 @@
 
 <figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Create Task for Procurement Group"** workflow card creates a new task dynamically assigned to the procurement group specified in the configuration. This task can be assigned with different priority levels, and an optional email notification can be sent to inform the group about the task. This card ensures that the right team is alerted based on workflow conditions.
+De workflow-kaart **"Create Task for Procurement Group"** maakt een nieuwe taak aan die dynamisch wordt toegewezen aan de inkoopgroep die in de configuratie is opgegeven. Deze taak kan met verschillende prioriteitsniveaus worden toegewezen, en er kan een optionele e-mailmelding worden verzonden om de groep over de taak te informeren. Deze kaart zorgt ervoor dat het juiste team wordt gewaarschuwd op basis van workflow-voorwaarden.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Title**
-   * **Description:** Specifies the title of the task.
-   * **Detail:** This field identifies the task being created, providing a concise title for easy identification.
+   * **Beschrijving:** Geeft de titel van de taak op.
+   * **Detail:** Dit veld identificeert de taak die wordt aangemaakt en biedt een beknopte titel voor eenvoudige identificatie.
 2. **Description**
-   * **Description:** Provides further details about the task.
-   * **Detail:** This field is used to describe the task’s objective and any necessary context or instructions.
+   * **Beschrijving:** Biedt verdere details over de taak.
+   * **Detail:** Dit veld wordt gebruikt om het doel van de taak en eventuele noodzakelijke context of instructies te beschrijven.
 3. **Priority**
-   * **Description:** Defines the urgency of the task.
-   * **Options:**
-     * **High:** Task requires immediate attention.
-     * **Medium:** Task is important but not urgent.
-     * **Low:** Task can be handled at a later time.
+   * **Beschrijving:** Definieert de urgentie van de taak.
+   * **Opties:**
+     * **High:** Taak vereist onmiddellijke aandacht.
+     * **Medium:** Taak is belangrijk maar niet urgent.
+     * **Low:** Taak kan op een later tijdstip worden afgehandeld.
 4. **Group Name**
-   * **Description:** Specifies the procurement group to whom the task will be assigned.
-   * **Detail:** This field designates the procurement group responsible for the task. It ensures the task is directed to the right team.
+   * **Beschrijving:** Geeft de inkoopgroep op aan wie de taak wordt toegewezen.
+   * **Detail:** Dit veld wijst de inkoopgroep aan die verantwoordelijk is voor de taak. Het zorgt ervoor dat de taak naar het juiste team wordt geleid.
 5. **Email Notification**
-   * **Description:** Configures whether an email notification should be sent to the assigned procurement group.
-   * **Options:**
-     * **True:** Sends an email notification to the procurement group.
-     * **False:** No email notification is sent.
+   * **Beschrijving:** Configureert of er een e-mailmelding naar de toegewezen inkoopgroep moet worden verzonden.
+   * **Opties:**
+     * **True:** Verzendt een e-mailmelding naar de inkoopgroep.
+     * **False:** Er wordt geen e-mailmelding verzonden.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task Creation:**\
-  The card creates a new task, assigning it to the procurement group defined in the "Group Name" field. This task will include the specified title, description, and priority level.
-* **Email Notification:**\
-  If the email notification option is set to true, an email is sent to the procurement group informing them about the task.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Taakaanmaak:**\
+  De kaart maakt een nieuwe taak aan en wijst deze toe aan de inkoopgroep die in het veld "Group Name" is gedefinieerd. Deze taak bevat de opgegeven titel, beschrijving en prioriteitsniveau.
+* **E-mailmelding:**\
+  Als de e-mailmeldingsoptie op true is ingesteld, wordt er een e-mail naar de inkoopgroep verzonden om hen over de taak te informeren.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Define Task Details:**\
-  Enter the task's title, description, and priority level.
-* **Select Procurement Group:**\
-  Choose the procurement group that will be responsible for the task.
-* **Enable Email Notification:**\
-  Specify whether an email notification should be sent to the group upon task creation.
+* **Taakdetails definiëren:**\
+  Voer de titel, beschrijving en het prioriteitsniveau van de taak in.
+* **Inkoopgroep selecteren:**\
+  Kies de inkoopgroep die verantwoordelijk is voor de taak.
+* **E-mailmelding inschakelen:**\
+  Geef op of er bij het aanmaken van de taak een e-mailmelding naar de groep moet worden verzonden.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The "Create Task for Procurement Group" workflow card ensures that tasks are automatically assigned to the appropriate procurement group with defined priorities. This card can also notify the group via email to ensure tasks are attended to promptly, improving workflow efficiency and task management.
+De workflow-kaart "Create Task for Procurement Group" zorgt ervoor dat taken automatisch aan de juiste inkoopgroep worden toegewezen met gedefinieerde prioriteiten. Deze kaart kan de groep ook via e-mail op de hoogte stellen om ervoor te zorgen dat taken snel worden afgehandeld, wat de workflow-efficiëntie en het taakbeheer verbetert.

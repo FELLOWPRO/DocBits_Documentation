@@ -2,64 +2,64 @@
 
 <figure><img src="../../../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Create Field-Based Task or Notification"** workflow card is used to create tasks or notifications dynamically assigned to users identified within specific document fields. This card provides an optional fallback mechanism to ensure smooth workflow execution even when the document field does not specify a valid user.
+De workflow-kaart **"Create Field-Based Task or Notification"** wordt gebruikt om taken of meldingen aan te maken die dynamisch worden toegewezen aan gebruikers die binnen specifieke documentvelden zijn geïdentificeerd. Deze kaart biedt een optioneel terugvalmechanisme om een soepele workflow-uitvoering te waarborgen, zelfs wanneer het documentveld geen geldige gebruiker opgeeft.
 
-## **Components of the Card:**&#x20;
+## **Onderdelen van de kaart:**&#x20;
 
 1. **Title**
-   * **Description**: Specifies the task or notification title.
-   * **Detail**: Used to name and identify the task or notification being created.
+   * **Beschrijving**: Geeft de titel van de taak of melding op.
+   * **Detail**: Wordt gebruikt om de taak of melding die wordt aangemaakt een naam te geven en te identificeren.
 2. **Description**
-   * **Description**: Provides additional details about the task or notification.
-   * **Detail**: Ensures the recipient understands the purpose and context of the task or notification.
+   * **Beschrijving**: Biedt aanvullende details over de taak of melding.
+   * **Detail**: Zorgt ervoor dat de ontvanger het doel en de context van de taak of melding begrijpt.
 3. **Priority**
-   * **Description**: Defines the urgency of the task or notification.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but less urgent.
-     * **Low**: Can be addressed at a later time.
+   * **Beschrijving**: Definieert de urgentie van de taak of melding.
+   * **Opties**:
+     * **High**: Vereist onmiddellijke aandacht.
+     * **Medium**: Belangrijk maar minder urgent.
+     * **Low**: Kan op een later tijdstip worden afgehandeld.
 4. **Field Name**
-   * **Description**: Specifies the document field that will be used to assign the task or notification.
-   * **Detail**: The field selected will dynamically determine the user to whom the task or notification will be assigned. If the field is empty or invalid, the task or notification will be assigned to the fallback user selected from the dropdown list.
+   * **Beschrijving**: Geeft het documentveld op dat wordt gebruikt om de taak of melding toe te wijzen.
+   * **Detail**: Het geselecteerde veld bepaalt dynamisch de gebruiker aan wie de taak of melding wordt toegewezen. Als het veld leeg of ongeldig is, wordt de taak of melding toegewezen aan de terugvalgebruiker die uit de dropdownlijst is geselecteerd.
 5. **Email Notification**
-   * **Description**: Configures whether the assigned user is notified by email.
-   * **Options**:
-     * **True**: Sends an email notification to the assigned user.
-     * **False**: No email notification is sent.
+   * **Beschrijving**: Configureert of de toegewezen gebruiker via e-mail op de hoogte wordt gesteld.
+   * **Opties**:
+     * **True**: Verzendt een e-mailmelding naar de toegewezen gebruiker.
+     * **False**: Er wordt geen e-mailmelding verzonden.
 6. **Fallback User**
-   * **Description**: Allows the selection of a user from a dropdown list to assign the task or notification when no valid user is found in the document field.
-   * **Detail**: Ensures the task or notification is assigned even if the document field is empty or invalid.
+   * **Beschrijving**: Maakt de selectie van een gebruiker uit een dropdownlijst mogelijk om de taak of melding toe te wijzen wanneer er geen geldige gebruiker in het documentveld wordt gevonden.
+   * **Detail**: Zorgt ervoor dat de taak of melding wordt toegewezen, zelfs als het documentveld leeg of ongeldig is.
 
-## **Additional Components in Version 3:**
+## **Aanvullende onderdelen in Version 3:**
 
 1. **Notification Type**&#x20;
-   * **Description**: Specifies whether the card creates a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task assigned to the specified user.
-     * **Notification**: Sends a notification instead of creating a task.
+   * **Beschrijving**: Geeft op of de kaart een taak of een melding aanmaakt.
+   * **Opties**:
+     * **Task**: Maakt een taak aan die wordt toegewezen aan de opgegeven gebruiker.
+     * **Notification**: Verzendt een melding in plaats van een taak aan te maken.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation**:\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task or Notification Creation**:
-  * Assigns the task or notification to the user identified in the document field.
-  * In Version 3, allows creating either a task or a notification.
-* **Fallback Mechanism**:\
-  If the document field does not identify a valid user, the card assigns the task or notification to the fallback user selected from the dropdown list.
-* **Email Notification**:\
-  Sends an email notification to the assigned user if configured to do so.
+* **Voorwaarde-evaluatie**:\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Aanmaak van taak of melding**:
+  * Wijst de taak of melding toe aan de gebruiker die in het documentveld is geïdentificeerd.
+  * In Version 3 is het mogelijk ofwel een taak ofwel een melding aan te maken.
+* **Terugvalmechanisme**:\
+  Als het documentveld geen geldige gebruiker identificeert, wijst de kaart de taak of melding toe aan de terugvalgebruiker die uit de dropdownlijst is geselecteerd.
+* **E-mailmelding**:\
+  Verzendt een e-mailmelding naar de toegewezen gebruiker indien zo geconfigureerd.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-1. **Define Task or Notification Details**: Enter the title, description, and priority.
-2. **Select the Document Field**: Choose the field that specifies the user for task or notification assignment.
-3. **Enable Email Notification**: Specify whether an email notification should be sent to the assigned user.
-4. **Select Fallback User**: Choose a fallback user from the dropdown list for assignment if the document field does not identify a valid user.
-5. **Specify Notification Type (Version 3)**: Indicate whether the card creates a task or notification.
+1. **Taak- of meldingsdetails definiëren**: Voer de titel, beschrijving en prioriteit in.
+2. **Het documentveld selecteren**: Kies het veld dat de gebruiker voor de taak- of meldingstoewijzing opgeeft.
+3. **E-mailmelding inschakelen**: Geef op of er een e-mailmelding naar de toegewezen gebruiker moet worden verzonden.
+4. **Terugvalgebruiker selecteren**: Kies een terugvalgebruiker uit de dropdownlijst voor toewijzing als het documentveld geen geldige gebruiker identificeert.
+5. **Notification Type opgeven (Version 3)**: Geef aan of de kaart een taak of melding aanmaakt.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Create Field-Based Task or Notification"** workflow card streamlines task and notification management by dynamically assigning responsibilities based on document fields. Its fallback user mechanism and enhanced options in Version 3 provide flexibility, ensuring tasks or notifications are always assigned, even when document data is incomplete.
+De workflow-kaart **"Create Field-Based Task or Notification"** stroomlijnt het taak- en meldingsbeheer door verantwoordelijkheden dynamisch toe te wijzen op basis van documentvelden. Het terugvalgebruikermechanisme en de uitgebreide opties in Version 3 bieden flexibiliteit en zorgen ervoor dat taken of meldingen altijd worden toegewezen, zelfs wanneer documentgegevens onvolledig zijn.

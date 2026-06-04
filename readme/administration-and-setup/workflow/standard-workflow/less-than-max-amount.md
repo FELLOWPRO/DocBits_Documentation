@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_invoice.png" alt="DocBits Factura"><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
+Este título sugiere que la regla o condición que se está configurando está diseñada para gestionar las facturas cuyo importe total es menor o igual que un importe máximo especificado.
 
-#### Rule Configuration:
+#### Configuración de la regla:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
+   * **Document Type is Invoice**: Esta condición comprueba si el documento que se está procesando es una factura. Esto es crucial para garantizar que la regla se aplique únicamente a las facturas y no a otros tipos de documentos.
 2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+   * **Document Status is Pending Approval**: Esto especifica que la factura debe estar en estado "Pending Approval". Esta comprobación de estado garantiza que la regla se aplique únicamente a las facturas pendientes de aprobación.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: Esta condición compara el importe total de la factura con el importe máximo autorizado de un aprobador. Si el importe total de la factura es menor o igual que este importe máximo, la regla continúa con el siguiente paso. Esto probablemente incluye un nivel de tolerancia que permite desviaciones menores dentro de los límites especificados.
 
-#### Action (Then…):
+#### Acción (Then…):
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Approver Name, use user User as fallback**: Si se cumplen las condiciones especificadas, la factura se asigna automáticamente a un aprobador cuyo nombre se especifica en un campo. Si este campo está vacío o no está disponible, se asigna un usuario predeterminado (probablemente un administrador u otro miembro del personal designado) como alternativa para gestionar la aprobación.
 
-#### Interface Elements:
+#### Elementos de la interfaz:
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+* **Add Card**: Este botón probablemente permite a los usuarios añadir más condiciones o acciones a la regla, mejorando la flexibilidad y especificidad del flujo de trabajo.
+* **Save**: Guarda la regla configurada en el sistema.
 
-#### Purpose of This Rule:
+#### Propósito de esta regla:
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+Esta configuración está diseñada para agilizar el proceso de aprobación de facturas dirigiéndolas automáticamente al aprobador adecuado según el importe y garantizando que solo las que se encuentran dentro de un determinado umbral se gestionen de esta manera automatizada. Ayuda a gestionar los controles financieros y acelera el flujo de trabajo al reducir las comprobaciones manuales de cada factura.
 
 \

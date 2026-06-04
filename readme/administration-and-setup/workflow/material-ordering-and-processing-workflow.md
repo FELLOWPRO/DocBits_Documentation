@@ -7,43 +7,43 @@ description: >-
 
 # Material Ordering and Processing Workflow
 
-This document outlines the workflow for ordering materials from suppliers, receiving goods, and processing invoices with integration between suppliers, INFOR ERP system, and DocBits for document management.
+Este documento describe el flujo de trabajo para pedir materiales a los proveedores, recibir mercancías y procesar facturas, con la integración entre los proveedores, el sistema INFOR ERP y DocBits para la gestión documental.
 
-### Process Overview
+### Resumen del proceso
 
 1. **Ordering Materials**
-   * Initiate order with the supplier.
-   * Send the order to the supplier through INFOR.
+   * Iniciar el pedido con el proveedor.
+   * Enviar el pedido al proveedor a través de INFOR.
 2. **Receiving Order Confirmation**
-   * Supplier confirms the receipt of the order.
-   * Creation and sending of order confirmation.
+   * El proveedor confirma la recepción del pedido.
+   * Creación y envío de la confirmación del pedido.
 3. **Goods Receipt and Inspection**
-   * Receive goods from the supplier.
-   * Post goods receipt in INFOR and check against the delivery bill.
+   * Recibir las mercancías del proveedor.
+   * Registrar la entrada de mercancías en INFOR y cotejarla con el albarán de entrega.
 4. **Invoice Processing**
-   * Receive invoice and send to DocBits for processing.
-   * Check and verify invoice details with order and goods receipt.
+   * Recibir la factura y enviarla a DocBits para su procesamiento.
+   * Comprobar y verificar los detalles de la factura con el pedido y la entrada de mercancías.
 5. **Final Steps**
-   * Archive the order and related documents in DocBits.
-   * Update INFOR with transaction details for financial accounting.
+   * Archivar el pedido y los documentos relacionados en DocBits.
+   * Actualizar INFOR con los detalles de la transacción para la contabilidad financiera.
 
-### Decision Points and Actions
+### Puntos de decisión y acciones
 
-* **Does the received goods match the order?**
-  * Yes: Proceed with invoice processing.
-  * No: Manual check and update required.
-* **Is the invoice correct according to the goods received and order details?**
-  * Yes: Complete the transaction and update financial records.
-  * No: Further examination and corrections needed.
+* **¿Las mercancías recibidas coinciden con el pedido?**
+  * Sí: Continuar con el procesamiento de la factura.
+  * No: Se requiere una comprobación y actualización manual.
+* **¿Es correcta la factura según las mercancías recibidas y los detalles del pedido?**
+  * Sí: Completar la transacción y actualizar los registros financieros.
+  * No: Se necesitan más comprobaciones y correcciones.
 
-### Integration Points
+### Puntos de integración
 
-* **INFOR ERP**: Main system for order processing, goods receipt, and financial accounting.
-* **DocBits**: Document management for processing and archiving invoices and order confirmations.
+* **INFOR ERP**: Sistema principal para el procesamiento de pedidos, la entrada de mercancías y la contabilidad financiera.
+* **DocBits**: Gestión documental para el procesamiento y archivado de facturas y confirmaciones de pedidos.
 
-### Notes
+### Notas
 
-* Ensure all documents are verified and archived for record-keeping.
-* Discrepancies in order or invoice details must be resolved promptly to avoid delays.
+* Asegúrese de que todos los documentos estén verificados y archivados para su registro.
+* Las discrepancias en los detalles del pedido o de la factura deben resolverse con prontitud para evitar retrasos.
 
 <figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>

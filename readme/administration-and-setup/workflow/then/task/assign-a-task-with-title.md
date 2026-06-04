@@ -2,63 +2,63 @@
 
 <figure><img src="../../../../.gitbook/assets/image (291).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The "Assign Task / Notification from Decision Table" workflow card is designed to dynamically assign tasks or notifications based on the results of a decision table. This card ensures tasks or notifications are assigned to the correct user or group according to the logic defined in the decision table, with an optional email notification sent to the recipient.
+Die Workflow-Karte "Assign Task / Notification from Decision Table" ist darauf ausgelegt, Aufgaben oder Benachrichtigungen dynamisch auf Basis der Ergebnisse einer Entscheidungstabelle zuzuweisen. Diese Karte stellt sicher, dass Aufgaben oder Benachrichtigungen gemäß der in der Entscheidungstabelle definierten Logik dem richtigen Benutzer oder der richtigen Gruppe zugewiesen werden, mit einer optionalen E-Mail-Benachrichtigung an den Empfänger.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Title**
-   * **Description**: Specifies the title of the task or notification being created.
-   * **Detail**: The title should provide context and describe the purpose of the task or notification.
-2. **Description**
-   * **Description**: Defines the content or purpose of the task or notification.
-   * **Detail**: Provides additional information about the task or notification, explaining the context or action required.
-3. **Priority**
-   * **Description**: Defines the urgency level of the task or notification.
-   * **Options**:
-     * **High**: Tasks or notifications requiring immediate attention.
-     * **Medium**: Important tasks that should be addressed promptly.
-     * **Low**: Tasks that can be attended to at a later time.
-4. **Assignee Type**
-   * **Description**: Specifies the user or group assigned to the task or notification based on the decision table’s output.
-   * **Detail**: The decision table dynamically evaluates conditions and returns the appropriate user or group for assignment.
-5. **Email Notification**
-   * **Description**: Configures whether an email notification will be sent to the assigned user or group.
-   * **Options**:
-     * **True**: Sends an email notification to the recipient.
-     * **False**: No email notification is sent.
+1. **Titel**
+   * **Beschreibung**: Gibt den Titel der erstellten Aufgabe oder Benachrichtigung an.
+   * **Detail**: Der Titel sollte Kontext bieten und den Zweck der Aufgabe oder Benachrichtigung beschreiben.
+2. **Beschreibung**
+   * **Beschreibung**: Legt den Inhalt oder Zweck der Aufgabe oder Benachrichtigung fest.
+   * **Detail**: Bietet zusätzliche Informationen über die Aufgabe oder Benachrichtigung und erläutert den Kontext oder die erforderliche Aktion.
+3. **Priorität**
+   * **Beschreibung**: Legt die Dringlichkeitsstufe der Aufgabe oder Benachrichtigung fest.
+   * **Optionen**:
+     * **Hoch**: Aufgaben oder Benachrichtigungen, die sofortige Aufmerksamkeit erfordern.
+     * **Mittel**: Wichtige Aufgaben, die zeitnah bearbeitet werden sollten.
+     * **Niedrig**: Aufgaben, die zu einem späteren Zeitpunkt bearbeitet werden können.
+4. **Zuweisungstyp**
+   * **Beschreibung**: Gibt den Benutzer oder die Gruppe an, der bzw. die der Aufgabe oder Benachrichtigung auf Basis der Ausgabe der Entscheidungstabelle zugewiesen wird.
+   * **Detail**: Die Entscheidungstabelle wertet Bedingungen dynamisch aus und gibt den passenden Benutzer oder die passende Gruppe für die Zuweisung zurück.
+5. **E-Mail-Benachrichtigung**
+   * **Beschreibung**: Konfiguriert, ob eine E-Mail-Benachrichtigung an den zugewiesenen Benutzer oder die zugewiesene Gruppe gesendet wird.
+   * **Optionen**:
+     * **True**: Sendet eine E-Mail-Benachrichtigung an den Empfänger.
+     * **False**: Es wird keine E-Mail-Benachrichtigung gesendet.
 
-#### **Additional Components in Version 3**
+#### **Zusätzliche Komponenten in Version 3**
 
-1. **Notification Type**
-   * **Description**: Specifies whether the card creates a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task assigned to the user or group from the decision table.
-     * **Notification**: Sends a notification to the user or group from the decision table.
+1. **Benachrichtigungstyp**
+   * **Beschreibung**: Gibt an, ob die Karte eine Aufgabe oder eine Benachrichtigung erstellt.
+   * **Optionen**:
+     * **Task**: Erstellt eine Aufgabe, die dem Benutzer oder der Gruppe aus der Entscheidungstabelle zugewiesen wird.
+     * **Notification**: Sendet eine Benachrichtigung an den Benutzer oder die Gruppe aus der Entscheidungstabelle.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task / Notification Assignment**\
-  The card assigns the task or notification to the user or group identified by the decision table. The decision table dynamically evaluates predefined conditions and returns the corresponding recipient.
-* **Email Notification**\
-  If configured to do so, an email notification is sent to the assigned user or group.
-* **Version 3 Functionality**\
-  In Version 3, the card allows the creation of either a Task or a Notification, providing more flexibility for task management and communication.
+* **Bedingungsauswertung:**\
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Zuweisung der Aufgabe / Benachrichtigung**\
+  Die Karte weist die Aufgabe oder Benachrichtigung dem Benutzer oder der Gruppe zu, der bzw. die durch die Entscheidungstabelle identifiziert wird. Die Entscheidungstabelle wertet vordefinierte Bedingungen dynamisch aus und gibt den entsprechenden Empfänger zurück.
+* **E-Mail-Benachrichtigung**\
+  Sofern entsprechend konfiguriert, wird eine E-Mail-Benachrichtigung an den zugewiesenen Benutzer oder die zugewiesene Gruppe gesendet.
+* **Funktionalität in Version 3**\
+  In Version 3 ermöglicht die Karte die Erstellung entweder einer Task oder einer Notification und bietet so mehr Flexibilität für Aufgabenmanagement und Kommunikation.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-1. **Define Task or Notification Details**:\
-   Enter the title, description, and priority for the task or notification.
-2. **Configure Decision Table**:\
-   Set up the decision table to dynamically determine which user or group should be assigned the task or notification.
-3. **Enable Email Notification**:\
-   Specify whether an email notification should be sent to the assigned user or group.
-4. **Specify Notification Type (Version 3)**:\
-   Choose whether the card will create a task or send a notification.
+1. **Details der Aufgabe oder Benachrichtigung definieren**:\
+   Geben Sie Titel, Beschreibung und Priorität für die Aufgabe oder Benachrichtigung ein.
+2. **Entscheidungstabelle konfigurieren**:\
+   Richten Sie die Entscheidungstabelle so ein, dass sie dynamisch bestimmt, welchem Benutzer oder welcher Gruppe die Aufgabe oder Benachrichtigung zugewiesen werden soll.
+3. **E-Mail-Benachrichtigung aktivieren**:\
+   Legen Sie fest, ob eine E-Mail-Benachrichtigung an den zugewiesenen Benutzer oder die zugewiesene Gruppe gesendet werden soll.
+4. **Benachrichtigungstyp angeben (Version 3)**:\
+   Wählen Sie, ob die Karte eine Aufgabe erstellt oder eine Benachrichtigung sendet.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Assign Task / Notification from Decision Table"** workflow card automates the assignment of tasks or notifications based on dynamic conditions defined in a decision table. Version 3 enhances its functionality by allowing users to choose between creating a task or notification, and ensures the correct recipient is always assigned. The email notification feature keeps users informed, streamlining communication and task management.
+Die Workflow-Karte **"Assign Task / Notification from Decision Table"** automatisiert die Zuweisung von Aufgaben oder Benachrichtigungen auf Basis dynamischer, in einer Entscheidungstabelle definierter Bedingungen. Version 3 erweitert ihre Funktionalität, indem sie es Benutzern ermöglicht, zwischen der Erstellung einer Aufgabe oder einer Benachrichtigung zu wählen, und stellt sicher, dass stets der richtige Empfänger zugewiesen wird. Die Funktion der E-Mail-Benachrichtigung hält Benutzer auf dem Laufenden und optimiert so Kommunikation und Aufgabenmanagement.

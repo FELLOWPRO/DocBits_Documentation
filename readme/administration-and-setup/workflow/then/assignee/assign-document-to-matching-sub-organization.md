@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card assigns a document to a sub-organization dynamically, based on a specified field in the document. If no matching sub-organization is found, the card uses a predefined fallback sub-organization.
+Karta przepływu pracy **"Assign Document to Matching Sub-Organization Based on Field"** dynamicznie przypisuje dokument do sub-organizacji na podstawie określonego pola w dokumencie. Jeśli nie zostanie znaleziona pasująca sub-organizacja, karta używa predefiniowanej zapasowej sub-organizacji.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field to be used for determining the matching sub-organization.
-   * **Detail:** The card looks for a value in the specified field to match with an available sub-organization.
+   * **Opis:** Określa pole dokumentu, które ma być użyte do ustalenia pasującej sub-organizacji.
+   * **Szczegóły:** Karta wyszukuje wartość w określonym polu, aby dopasować ją do dostępnej sub-organizacji.
 2. **Sub-Organization (Fallback)**
-   * **Description:** Defines the fallback sub-organization to be used if no match is found in the specified field.
-   * **Detail:** If the field value does not match any sub-organization, the document will be assigned to the fallback sub-organization selected.
+   * **Opis:** Definiuje zapasową sub-organizację, która ma być użyta, jeśli nie zostanie znalezione dopasowanie w określonym polu.
+   * **Szczegóły:** Jeśli wartość pola nie pasuje do żadnej sub-organizacji, dokument zostanie przypisany do wybranej zapasowej sub-organizacji.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Dynamic Assignment:**\
-  The card checks the value of the specified field and assigns the document to the sub-organization that matches this value.
-* **Fallback Mechanism:**\
-  If no matching sub-organization is found, the document is assigned to the fallback sub-organization.
+* **Ocena warunku:**\
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+* **Dynamiczne przypisanie:**\
+  Karta sprawdza wartość określonego pola i przypisuje dokument do sub-organizacji, która odpowiada tej wartości.
+* **Mechanizm zapasowy:**\
+  Jeśli nie zostanie znaleziona pasująca sub-organizacja, dokument jest przypisywany do zapasowej sub-organizacji.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
 * **Select Field Name:**\
-  Choose the field from the document that contains the value to match with a sub-organization.
+  Wybierz pole z dokumentu zawierające wartość do dopasowania do sub-organizacji.
 * **Select Fallback Sub-Organization:**\
-  Choose the sub-organization that will be used if no match is found in the document field.
+  Wybierz sub-organizację, która zostanie użyta, jeśli nie zostanie znalezione dopasowanie w polu dokumentu.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card offers flexibility by dynamically routing documents to the appropriate sub-organization, with an added fallback option to ensure no document is left unassigned.
+Karta przepływu pracy **"Assign Document to Matching Sub-Organization Based on Field"** oferuje elastyczność, dynamicznie kierując dokumenty do odpowiedniej sub-organizacji, z dodatkową opcją zapasową, aby zapewnić, że żaden dokument nie pozostanie nieprzypisany.

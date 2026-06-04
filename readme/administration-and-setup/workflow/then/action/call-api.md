@@ -2,56 +2,56 @@
 
 <figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Cel:
 
-The **"Call API"** workflow card allows users to make HTTP requests to specified API endpoints directly from the workflow. This card supports various HTTP methods and enables dynamic interaction with external systems by sending parameters and data. It streamlines integration with third-party services and custom APIs, ensuring seamless communication.
+Karta przepływu pracy **"Call API"** umożliwia użytkownikom wykonywanie żądań HTTP do określonych punktów końcowych API bezpośrednio z przepływu pracy. Ta karta obsługuje różne metody HTTP i umożliwia dynamiczną interakcję z systemami zewnętrznymi poprzez wysyłanie parametrów i danych. Usprawnia integrację z usługami zewnętrznymi i niestandardowymi interfejsami API, zapewniając bezproblemową komunikację.
 
-## Components of the Card:
+## Komponenty karty:
 
 1. **API Endpoint**
-   * **Description:** The target endpoint of the **DocBits API** that this card will interact with.
-   * **Detail:** A text field where users specify the endpoint for the API request.
+   * **Opis:** Docelowy punkt końcowy **DocBits API**, z którym ta karta będzie wchodzić w interakcję.
+   * **Szczegóły:** Pole tekstowe, w którym użytkownicy określają punkt końcowy dla żądania API.
 2. **HTTP Method**
-   * **Description:** The type of HTTP request to be made.
-   * **Options:**
-     1. **GET:** Retrieves data from the specified endpoint.
-     2. **POST:** Sends data to the endpoint.
-     3. **PUT:** Updates existing data at the endpoint.
-     4. **DELETE:** Removes data at the endpoint.
+   * **Opis:** Typ żądania HTTP, które ma zostać wykonane.
+   * **Opcje:**
+     1. **GET:** Pobiera dane z określonego punktu końcowego.
+     2. **POST:** Wysyła dane do punktu końcowego.
+     3. **PUT:** Aktualizuje istniejące dane w punkcie końcowym.
+     4. **DELETE:** Usuwa dane w punkcie końcowym.
 3. **Parameters**
-   * **Description:** Query parameters to be included in the API request.
-   * **Detail:** A text field or list for entering key-value pairs for the request URL.
+   * **Opis:** Parametry zapytania, które mają zostać uwzględnione w żądaniu API.
+   * **Szczegóły:** Pole tekstowe lub lista do wprowadzania par klucz-wartość dla adresu URL żądania.
 4. **Data**
-   1. **Description:** The payload to be sent in the body of the API request (applicable for POST and PUT methods).
-   2. **Detail:** A field for entering the data in JSON.
+   1. **Opis:** Ładunek, który ma zostać wysłany w treści żądania API (dotyczy metod POST i PUT).
+   2. **Szczegóły:** Pole do wprowadzania danych w formacie JSON.
 
-## Functionality:
+## Funkcjonalność:
 
-**Condition Evaluation:** The system evaluates the conditions defined in the "Where" and "And Sections":
+**Ocena warunku:** System ocenia warunki zdefiniowane w sekcjach "Where" i "And Sections":
 
-* If both conditions are **true**, the API request is executed as configured.
-* If either condition is **false**, the card does not execute, and no API call is made.
+* Jeśli oba warunki są **prawdziwe**, żądanie API jest wykonywane zgodnie z konfiguracją.
+* Jeśli którykolwiek z warunków jest **fałszywy**, karta nie jest wykonywana i nie jest wykonywane żadne wywołanie API.
 
-**API Request Execution:**
+**Wykonanie żądania API:**
 
-* The card sends the HTTP request to the specified endpoint using the selected method.
-* Any provided parameters are appended to the URL, and the data is included in the request body (if applicable).
+* Karta wysyła żądanie HTTP do określonego punktu końcowego przy użyciu wybranej metody.
+* Wszelkie podane parametry są dołączane do adresu URL, a dane są uwzględniane w treści żądania (jeśli dotyczy).
 
-## Setup and Configuration:
+## Konfiguracja:
 
 1. **Define API Endpoint:**\
-   Enter the URL of the API you wish to call.
+   Wprowadź adres URL API, które chcesz wywołać.
 2. **Select HTTP Method:**\
-   Choose one of the supported methods (GET, POST, PUT, DELETE) based on your API's requirements.
+   Wybierz jedną z obsługiwanych metod (GET, POST, PUT, DELETE) na podstawie wymagań Twojego API.
 3. **Provide Parameters:**\
-   Add any required query parameters as key-value pairs.
+   Dodaj wymagane parametry zapytania jako pary klucz-wartość.
 4. **Include Data (if applicable):**\
-   For POST or PUT methods, specify the data to be sent in the request body.
+   Dla metod POST lub PUT określ dane, które mają zostać wysłane w treści żądania.
 5. **Condition Configuration:**\
-   Configure the "Where" and "And Sections" to define when the API call should occur.
+   Skonfiguruj sekcje "Where" i "And Sections", aby zdefiniować, kiedy ma nastąpić wywołanie API.
 
-## Conclusion:
+## Podsumowanie:
 
-The **"Call API"** workflow card enhances workflow automation by enabling direct interaction with external systems. By providing flexible configurations for endpoints, methods, and data, it ensures workflows can integrate seamlessly with third-party APIs or custom backends. The ability to conditionally execute API calls ensures precision and efficiency in automating external communications.
+Karta przepływu pracy **"Call API"** zwiększa automatyzację przepływu pracy, umożliwiając bezpośrednią interakcję z systemami zewnętrznymi. Zapewniając elastyczne konfiguracje punktów końcowych, metod i danych, gwarantuje, że przepływy pracy mogą bezproblemowo integrować się z zewnętrznymi interfejsami API lub niestandardowymi backendami. Możliwość warunkowego wykonywania wywołań API zapewnia precyzję i efektywność w automatyzacji komunikacji zewnętrznej.
 
 ***

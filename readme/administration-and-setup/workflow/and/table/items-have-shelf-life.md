@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This DocBits card verifies if items in a dataset meet specified conditions based on their shelf life. The card allows users to choose between "any" or "all" items for validation and supports various comparison operators. This is ideal for scenarios where workflow decisions depend on the shelf life of items, such as quality control, inventory management, or compliance checks
+Ta karta DocBits weryfikuje, czy pozycje w zbiorze danych spełniają określone warunki na podstawie ich okresu przydatności (shelf life). Karta umożliwia użytkownikom wybór między "any" a "all" pozycjami do walidacji i obsługuje różne operatory porównania. Jest idealna dla scenariuszy, w których decyzje przepływu pracy zależą od okresu przydatności pozycji, takich jak kontrola jakości, zarządzanie zapasami lub kontrole zgodności.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Shelf Life Validation:** This card checks the shelf life of items against a specified condition. Users can choose to validate **any** item or **all** items in the dataset and apply various comparison operators to define the condition.
-* **Item Selection:** Users can choose between:
-  * **Any Item:** The card triggers if at least one item meets the specified shelf life condition.
-  * **All Items:** The card triggers only if all items meet the specified shelf life condition.
-* **Operators:** The following operators are available to set the shelf life condition:
-  * **Equals (=):** Checks if the shelf life is exactly equal to the specified value.
-  * **Not Equals (≠):** Ensures the shelf life is not equal to the specified value.
-  * **Greater Than (>):** Confirms that the shelf life is greater than the specified value.
-  * **Greater or Equals (≥):** Ensures the shelf life is greater than or equal to the specified value.
-  * **Less Than (<):** Checks if the shelf life is less than the specified value.
-  * **Less or Equals (≤):** Ensures the shelf life is less than or equal to the specified value.
+* **Walidacja okresu przydatności:** Ta karta sprawdza okres przydatności pozycji względem określonego warunku. Użytkownicy mogą wybrać walidację **dowolnej** pozycji lub **wszystkich** pozycji w zbiorze danych i zastosować różne operatory porównania do zdefiniowania warunku.
+* **Item Selection:** Użytkownicy mogą wybrać między:
+  * **Any Item:** Karta jest wyzwalana, jeśli co najmniej jedna pozycja spełnia określony warunek okresu przydatności.
+  * **All Items:** Karta jest wyzwalana tylko wtedy, gdy wszystkie pozycje spełniają określony warunek okresu przydatności.
+* **Operators:** Dostępne są następujące operatory do ustawienia warunku okresu przydatności:
+  * **Equals (=):** Sprawdza, czy okres przydatności jest dokładnie równy określonej wartości.
+  * **Not Equals (≠):** Zapewnia, że okres przydatności nie jest równy określonej wartości.
+  * **Greater Than (>):** Potwierdza, że okres przydatności jest większy niż określona wartość.
+  * **Greater or Equals (≥):** Zapewnia, że okres przydatności jest większy lub równy określonej wartości.
+  * **Less Than (<):** Sprawdza, czy okres przydatności jest mniejszy niż określona wartość.
+  * **Less or Equals (≤):** Zapewnia, że okres przydatności jest mniejszy lub równy określonej wartości.
 
 
 
-## **Usage:**
+## **Zastosowanie:**
 
-This card is suitable for quality control teams, inventory managers, or compliance officers who need to ensure items meet specific shelf life requirements before proceeding with further actions or workflows.
+Ta karta jest odpowiednia dla zespołów kontroli jakości, menedżerów zapasów lub specjalistów ds. zgodności, którzy muszą zapewnić, że pozycje spełniają określone wymagania dotyczące okresu przydatności przed kontynuowaniem dalszych akcji lub przepływów pracy.
 
-## **Example Scenario:**
+## **Przykładowy scenariusz:**
 
-* A user configures the card to check if **all items** have a shelf life **greater than or equal to 30 days**. If every item meets this condition, the workflow proceeds, confirming that all items have sufficient shelf life for sale or distribution.
+* Użytkownik konfiguruje kartę, aby sprawdzić, czy **wszystkie pozycje** mają okres przydatności **większy lub równy 30 dni**. Jeśli każda pozycja spełnia ten warunek, przepływ pracy jest kontynuowany, potwierdzając, że wszystkie pozycje mają wystarczający okres przydatności do sprzedaży lub dystrybucji.
 
-By using the "Shelf Life Validation" card, organizations can enforce shelf life standards, maintain product quality, and ensure workflow accuracy based on item shelf life conditions.
+Korzystając z karty "Shelf Life Validation", organizacje mogą egzekwować standardy okresu przydatności, utrzymać jakość produktów i zapewnić dokładność przepływu pracy na podstawie warunków okresu przydatności pozycji.

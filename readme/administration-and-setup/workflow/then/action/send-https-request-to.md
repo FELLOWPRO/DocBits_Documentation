@@ -2,52 +2,52 @@
 
 <figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Cel:
 
-The **"Send HTTPS Request"** workflow card enables users to send HTTPS requests to a specified URL with customizable headers, parameters, and data payload. This card is ideal for integrating external APIs or web services directly into the workflow.
+Karta przepływu pracy **"Send HTTPS Request"** umożliwia użytkownikom wysyłanie żądań HTTPS do określonego adresu URL z konfigurowalnymi nagłówkami, parametrami i ładunkiem danych. Ta karta jest idealna do integracji zewnętrznych interfejsów API lub usług sieciowych bezpośrednio z przepływem pracy.
 
-## Components of the Card:
+## Komponenty karty:
 
 1. **URL**
-   * **Description:** Specifies the endpoint where the HTTPS request will be sent.
-   * **Detail:** Enter the full URL of the API or web service to connect with.
+   * **Opis:** Określa punkt końcowy, do którego zostanie wysłane żądanie HTTPS.
+   * **Szczegóły:** Wprowadź pełny adres URL API lub usługi sieciowej, z którą chcesz się połączyć.
 2. **Headers**
-   * **Description:** Defines the headers to be included in the HTTPS request.
-   * **Detail:** Provide **key-value pairs** in a **valid JSON format** to specify headers such as authentication tokens or content types. Example: {"Authorization": "Bearer example\_value"}
+   * **Opis:** Definiuje nagłówki, które mają zostać uwzględnione w żądaniu HTTPS.
+   * **Szczegóły:** Podaj **pary klucz-wartość** w **prawidłowym formacie JSON**, aby określić nagłówki, takie jak tokeny uwierzytelniania lub typy treści. Przykład: {"Authorization": "Bearer example\_value"}
 3. **Method**
-   * **Description:** Specifies the HTTP method to be used for the request.
-   * **Options:**
-     * **GET:** Retrieves data from the endpoint.
-     * **POST:** Sends data to the endpoint to create or update resources.
-     * **PUT:** Updates existing resources at the endpoint.
-     * **DELETE:** Removes resources from the endpoint.
+   * **Opis:** Określa metodę HTTP, która ma być użyta w żądaniu.
+   * **Opcje:**
+     * **GET:** Pobiera dane z punktu końcowego.
+     * **POST:** Wysyła dane do punktu końcowego w celu utworzenia lub aktualizacji zasobów.
+     * **PUT:** Aktualizuje istniejące zasoby w punkcie końcowym.
+     * **DELETE:** Usuwa zasoby z punktu końcowego.
 4. **Parameters**
-   * **Description:** Key-value pairs to be included in the URL as query parameters.
-   * **Detail:** Use this to send filters or additional data required by the endpoint a valid JSON formant. See example for Headers.
+   * **Opis:** Pary klucz-wartość, które mają zostać uwzględnione w adresie URL jako parametry zapytania.
+   * **Szczegóły:** Użyj tego, aby wysłać filtry lub dodatkowe dane wymagane przez punkt końcowy w prawidłowym formacie JSON. Zobacz przykład dla Headers.
 5. **Data**
-   * **Description:** The body of the HTTPS request.
-   * **Detail:** Provide the payload in a valid JSON formant. See example for Headers.
+   * **Opis:** Treść żądania HTTPS.
+   * **Szczegóły:** Podaj ładunek w prawidłowym formacie JSON. Zobacz przykład dla Headers.
 
-## Functionality:
+## Funkcjonalność:
 
-* **Condition Evaluation:** The card only sends the HTTPS request if the **"Where"** and **"And Sections"** evaluate as true.&#x20;
-  * If either condition is false, the request is not sent.
-* **Request Execution:**
-  * When the conditions are met, the system sends the HTTPS request with the specified configurations.
+* **Ocena warunku:** Karta wysyła żądanie HTTPS tylko wtedy, gdy sekcje **"Where"** i **"And Sections"** są prawdziwe.&#x20;
+  * Jeśli którykolwiek z warunków jest fałszywy, żądanie nie jest wysyłane.
+* **Wykonanie żądania:**
+  * Gdy warunki są spełnione, system wysyła żądanie HTTPS z określonymi konfiguracjami.
 
-## Setup and Configuration:
+## Konfiguracja:
 
-1. **Define URL:** Enter the endpoint where the HTTPS request should be sent.
-2. **Set Headers:** Provide the required headers as key-value pairs.
-3. **Select HTTP Method:** Choose the appropriate method (**GET**, **POST**, **PUT**, or **DELETE**) based on the action to perform.
-4. **Add Parameters:** Specify any query parameters required by the endpoint.
-5. **Provide Data Payload:** Enter the request body in the required format (e.g., JSON) if needed.
-6. **Configure Conditions:** Define the **"Where"** and **"And Sections"** to ensure the request is sent only when specific conditions are met.
+1. **Define URL:** Wprowadź punkt końcowy, do którego ma zostać wysłane żądanie HTTPS.
+2. **Set Headers:** Podaj wymagane nagłówki jako pary klucz-wartość.
+3. **Select HTTP Method:** Wybierz odpowiednią metodę (**GET**, **POST**, **PUT** lub **DELETE**) na podstawie akcji do wykonania.
+4. **Add Parameters:** Określ wszelkie parametry zapytania wymagane przez punkt końcowy.
+5. **Provide Data Payload:** Wprowadź treść żądania w wymaganym formacie (np. JSON), jeśli jest to potrzebne.
+6. **Configure Conditions:** Zdefiniuj sekcje **"Where"** i **"And Sections"**, aby zapewnić, że żądanie jest wysyłane tylko wtedy, gdy spełnione są określone warunki.
 
-## Example Card:
+## Przykładowa karta:
 
 <figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Conclusion:
+## Podsumowanie:
 
-The **"Send HTTPS Request"** workflow card simplifies API integration by allowing users to make customized requests to external services directly from their workflows. By automating the process of sending HTTPS requests and managing responses, this card enhances workflow flexibility and functionality.
+Karta przepływu pracy **"Send HTTPS Request"** upraszcza integrację API, umożliwiając użytkownikom wykonywanie niestandardowych żądań do usług zewnętrznych bezpośrednio z ich przepływów pracy. Automatyzując proces wysyłania żądań HTTPS i zarządzania odpowiedziami, karta ta zwiększa elastyczność i funkcjonalność przepływu pracy.

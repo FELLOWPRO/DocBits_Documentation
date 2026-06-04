@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card assigns a document to either a **Disponent** or **Purchaser**. If no valid user is found, a fallback user is selected to ensure the document is always assigned to someone.
+Karta przepływu pracy **"Assign Document to Disponent / Purchaser"** przypisuje dokument do **Disponenta** lub **Purchasera**. Jeśli nie zostanie znaleziony prawidłowy użytkownik, wybierany jest użytkownik zapasowy, aby zapewnić, że dokument jest zawsze do kogoś przypisany.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Disponent / Purchaser**
-   * **Description:** Specifies whether the document will be assigned to a Disponent or Purchaser.
-   * **Options:**
-     * **Disponent:** Assign the document to the Disponent.
-     * **Purchaser:** Assign the document to the Purchaser.
+   * **Opis:** Określa, czy dokument zostanie przypisany do Disponenta, czy Purchasera.
+   * **Opcje:**
+     * **Disponent:** Przypisz dokument do Disponenta.
+     * **Purchaser:** Przypisz dokument do Purchasera.
 2. **Fallback User**
-   * **Description:** Specifies a fallback user in case the document cannot be assigned to the selected Disponent or Purchaser.
-   * **Detail:** The dropdown list of available users lets you choose a fallback user to ensure the document is assigned even if the primary user cannot be determined.
+   * **Opis:** Określa użytkownika zapasowego na wypadek, gdyby dokumentu nie można było przypisać do wybranego Disponenta lub Purchasera.
+   * **Szczegóły:** Lista rozwijana dostępnych użytkowników umożliwia wybór użytkownika zapasowego, aby zapewnić, że dokument zostanie przypisany, nawet jeśli podstawowego użytkownika nie można ustalić.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to either the **Disponent** or **Purchaser** as selected. If the selected person is unavailable or not valid, the document is assigned to the fallback user.
+* **Ocena warunku:**\
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+* **Przypisanie dokumentu:**\
+  Karta przypisuje dokument do **Disponenta** lub **Purchasera** zgodnie z wyborem. Jeśli wybrana osoba jest niedostępna lub nieprawidłowa, dokument jest przypisywany do użytkownika zapasowego.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
 * **Select Disponent / Purchaser:**\
-  Choose whether to assign the document to the **Disponent** or **Purchaser**.
+  Wybierz, czy przypisać dokument do **Disponenta**, czy **Purchasera**.
 * **Select Fallback User:**\
-  Choose a fallback user from the dropdown list who will receive the document if the primary assignment is not possible.
+  Wybierz użytkownika zapasowego z listy rozwijanej, który otrzyma dokument, jeśli podstawowe przypisanie nie będzie możliwe.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card ensures the document is always assigned, either to the selected Disponent/Purchaser or, if needed, to the fallback user. This minimizes workflow disruptions and ensures document processing continues smoothly.
+Karta przepływu pracy **"Assign Document to Disponent / Purchaser"** zapewnia, że dokument jest zawsze przypisany, albo do wybranego Disponenta/Purchasera, albo, w razie potrzeby, do użytkownika zapasowego. Minimalizuje to zakłócenia w przepływie pracy i zapewnia płynne kontynuowanie przetwarzania dokumentów.

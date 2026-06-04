@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This DocBits card compares the quoted price of an item to its contracted price, allowing workflows to trigger actions based on whether the two values match or differ. It helps ensure pricing consistency and compliance with contract terms.
+Ta karta DocBits porównuje cenę oferowaną pozycji z jej ceną kontraktową, umożliwiając przepływom pracy wyzwalanie akcji na podstawie tego, czy obie wartości są zgodne, czy różne. Pomaga zapewnić spójność cen i zgodność z warunkami umowy.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Price Comparison:** This card evaluates whether the quoted item price meets the specified condition relative to the contracted price.
-* **Operators:** The following conditions can be applied:
-  * **Equals (=):** Checks if the quoted price matches the contracted price.
-  * **Not Equals (≠):** Ensures the quoted price is different from the contracted price.
+* **Porównanie cen:** Ta karta ocenia, czy cena oferowana pozycji spełnia określony warunek względem ceny kontraktowej.
+* **Operators:** Można zastosować następujące warunki:
+  * **Equals (=):** Sprawdza, czy cena oferowana odpowiada cenie kontraktowej.
+  * **Not Equals (≠):** Zapewnia, że cena oferowana różni się od ceny kontraktowej.
 
-## **Usage:**
+## **Zastosowanie:**
 
-This card is particularly useful in procurement, sales, or contract management workflows, where it is crucial to validate that quoted prices align with agreed-upon contract terms before proceeding with approvals or order processing.
+Ta karta jest szczególnie przydatna w przepływach pracy zakupów, sprzedaży lub zarządzania umowami, gdzie kluczowe jest zweryfikowanie, że ceny oferowane są zgodne z uzgodnionymi warunkami umowy przed kontynuowaniem zatwierdzeń lub przetwarzania zamówień.
 
-## **Example Scenario:**
+## **Przykładowy scenariusz:**
 
-* A user configures the card to check if the **quoted price equals (=)** the **contracted price**. If the prices match, the workflow proceeds to approval; if not, it triggers a notification for manual review to resolve the discrepancy.
+* Użytkownik konfiguruje kartę, aby sprawdzić, czy **cena oferowana równa się (=)** **cenie kontraktowej**. Jeśli ceny są zgodne, przepływ pracy przechodzi do zatwierdzenia; jeśli nie, wyzwala powiadomienie do ręcznego przeglądu w celu rozwiązania rozbieżności.
 
-By using the "Quoted Item Price vs. Contracted Price" card, organizations can enforce pricing policies, maintain contract compliance, and reduce errors in financial transactions.
+Korzystając z karty "Quoted Item Price vs. Contracted Price", organizacje mogą egzekwować polityki cenowe, utrzymywać zgodność z umowami i redukować błędy w transakcjach finansowych.

@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Assign to Procurement Group"** workflow card is used to assign a document to a specified procurement group within the system. This helps streamline document management by ensuring that the appropriate team handles the document based on its assigned procurement group.
+Karta przepływu pracy **"Assign to Procurement Group"** służy do przypisywania dokumentu do określonej grupy zakupowej w systemie. Pomaga to usprawnić zarządzanie dokumentami, zapewniając, że odpowiedni zespół obsługuje dokument na podstawie przypisanej mu grupy zakupowej.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Procurement Group**
-   * **Description:** Specifies the procurement group to which the document will be assigned.
-   * **Detail:** The selected procurement group will be responsible for processing and managing the document.
+   * **Opis:** Określa grupę zakupową, do której zostanie przypisany dokument.
+   * **Szczegóły:** Wybrana grupa zakupowa będzie odpowiedzialna za przetwarzanie i zarządzanie dokumentem.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Action Execution:**\
-  If both conditions are true, the document is assigned to the specified procurement group. If either condition is false, no actions are taken, and the document remains unassigned.
+* **Ocena warunku:**\
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+* **Wykonanie akcji:**\
+  Jeśli oba warunki są prawdziwe, dokument jest przypisywany do określonej grupy zakupowej. Jeśli którykolwiek z warunków jest fałszywy, nie są podejmowane żadne akcje, a dokument pozostaje nieprzypisany.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-* **Select Procurement Group:** Choose the procurement group to assign the document to from the dropdown list.
+* **Select Procurement Group:** Wybierz grupę zakupową, do której ma zostać przypisany dokument, z listy rozwijanej.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Assign to Procurement Group"** workflow card provides a simple yet effective way to ensure that documents are automatically assigned to the correct procurement team for further processing.
+Karta przepływu pracy **"Assign to Procurement Group"** zapewnia prosty, ale skuteczny sposób na zapewnienie, że dokumenty są automatycznie przypisywane do właściwego zespołu zakupowego w celu dalszego przetwarzania.

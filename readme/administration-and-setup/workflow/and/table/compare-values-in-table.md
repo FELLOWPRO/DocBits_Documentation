@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This DocBits card performs a comparison between values in two specified columns within a table, based on a chosen condition. It’s useful for scenarios that require validating relationships between data points, such as quality control, data consistency checks, or compliance verification.
+Ta karta DocBits wykonuje porównanie wartości w dwóch określonych kolumnach w tabeli, na podstawie wybranego warunku. Jest przydatna w scenariuszach wymagających walidacji relacji między punktami danych, takich jak kontrola jakości, kontrole spójności danych lub weryfikacja zgodności.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Column Comparison:** This card allows users to set conditions to compare values between two columns in the same table.
-* **Operators:** The following operators are available to define the comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Table and Column Selection:** Users specify the table and the two columns they wish to compare.
+* **Porównanie kolumn:** Ta karta umożliwia użytkownikom ustawienie warunków porównania wartości między dwiema kolumnami w tej samej tabeli.
+* **Operators:** Dostępne są następujące operatory do zdefiniowania porównania:
+  * **Equals (=):** Sprawdza, czy wartości w dwóch kolumnach są dokładnie równe.
+  * **Not Equals (≠):** Zapewnia, że wartości w dwóch kolumnach nie są równe.
+  * **Greater Than (>):** Potwierdza, że wartości w pierwszej kolumnie są większe niż w drugiej kolumnie.
+  * **Greater or Equals (≥):** Zapewnia, że wartości w pierwszej kolumnie są większe lub równe wartościom w drugiej kolumnie.
+  * **Lesser Than (<):** Sprawdza, czy wartości w pierwszej kolumnie są mniejsze niż w drugiej kolumnie.
+  * **Less or Equals (≤):** Zapewnia, że wartości w pierwszej kolumnie są mniejsze lub równe wartościom w drugiej kolumnie.
+* **Table and Column Selection:** Użytkownicy określają tabelę i dwie kolumny, które chcą porównać.
 
-## **Usage:**
+## **Zastosowanie:**
 
-This card is ideal for data analysts, quality control teams, or compliance officers who need to ensure that values in one column relate to values in another according to specific rules, allowing for advanced data validation.
+Ta karta jest idealna dla analityków danych, zespołów kontroli jakości lub specjalistów ds. zgodności, którzy muszą zapewnić, że wartości w jednej kolumnie odnoszą się do wartości w innej zgodnie z określonymi regułami, umożliwiając zaawansowaną walidację danych.
 
-## **Example Scenario:**
+## **Przykładowy scenariusz:**
 
-* A user configures the card to check if values in the "Current Stock" column are **greater than or equal to (≥)** values in the "Minimum Stock Level" column in the "Inventory" table. If all values meet this condition, the workflow proceeds, confirming that stock levels are adequate.
+* Użytkownik konfiguruje kartę, aby sprawdzić, czy wartości w kolumnie "Current Stock" są **większe lub równe (≥)** wartościom w kolumnie "Minimum Stock Level" w tabeli "Inventory". Jeśli wszystkie wartości spełniają ten warunek, przepływ pracy jest kontynuowany, potwierdzając, że poziomy zapasów są wystarczające.
 
-By using the "Column Value Comparison" card, organizations can ensure data consistency, maintain quality standards, and validate data relationships within tables.
+Korzystając z karty "Column Value Comparison", organizacje mogą zapewnić spójność danych, utrzymać standardy jakości i zweryfikować relacje danych w tabelach.

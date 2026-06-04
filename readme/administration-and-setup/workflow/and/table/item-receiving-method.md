@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This DocBits card checks whether items in a dataset have a specified receiving method. Users can choose to validate **any** item or **all** items in the dataset based on a selected condition, making it suitable for scenarios where workflows depend on item receiving methods, such as in supply chain management or inventory tracking.
+Ta karta DocBits sprawdza, czy pozycje w zbiorze danych mają określoną metodę przyjęcia. Użytkownicy mogą wybrać walidację **dowolnej** pozycji lub **wszystkich** pozycji w zbiorze danych na podstawie wybranego warunku, co czyni ją odpowiednią dla scenariuszy, w których przepływy pracy zależą od metod przyjęcia pozycji, takich jak zarządzanie łańcuchem dostaw lub śledzenie zapasów.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Receiving Method Validation:** This card verifies the receiving method of items against a specified condition. Users can choose between **any** item or **all** items in the dataset and set the condition as **equals** or **not equals**.
-* **Item Selection:** Users can specify:
-  * **Any Item:** The card triggers if at least one item meets the specified receiving method condition.
-  * **All Items:** The card triggers only if all items meet the specified receiving method condition.
-* **Operators:** The following operators are available to define the condition:
-  * **Equals (=):** Checks if the receiving method matches the specified value.
-  * **Not Equals (≠):** Ensures the receiving method does not match the specified value.
+* **Walidacja metody przyjęcia:** Ta karta weryfikuje metodę przyjęcia pozycji względem określonego warunku. Użytkownicy mogą wybrać między **dowolną** pozycją a **wszystkimi** pozycjami w zbiorze danych i ustawić warunek jako **equals** lub **not equals**.
+* **Item Selection:** Użytkownicy mogą określić:
+  * **Any Item:** Karta jest wyzwalana, jeśli co najmniej jedna pozycja spełnia określony warunek metody przyjęcia.
+  * **All Items:** Karta jest wyzwalana tylko wtedy, gdy wszystkie pozycje spełniają określony warunek metody przyjęcia.
+* **Operators:** Dostępne są następujące operatory do zdefiniowania warunku:
+  * **Equals (=):** Sprawdza, czy metoda przyjęcia odpowiada określonej wartości.
+  * **Not Equals (≠):** Zapewnia, że metoda przyjęcia nie odpowiada określonej wartości.
 
-## **Usage:**
+## **Zastosowanie:**
 
-This card is ideal for warehouse managers, inventory coordinators, or logistics personnel who need to validate item receiving methods before allowing further actions, such as processing, storage, or shipping.
+Ta karta jest idealna dla menedżerów magazynów, koordynatorów zapasów lub personelu logistycznego, którzy muszą zweryfikować metody przyjęcia pozycji przed umożliwieniem dalszych akcji, takich jak przetwarzanie, magazynowanie lub wysyłka.
 
-## **Example Scenario:**
+## **Przykładowy scenariusz:**
 
-* A user configures the card to check if **all items** have the receiving method **equals "Direct Delivery"**. If every item meets this condition, the workflow proceeds, confirming that all items are intended for direct delivery.
+* Użytkownik konfiguruje kartę, aby sprawdzić, czy **wszystkie pozycje** mają metodę przyjęcia **equals "Direct Delivery"**. Jeśli każda pozycja spełnia ten warunek, przepływ pracy jest kontynuowany, potwierdzając, że wszystkie pozycje są przeznaczone do dostawy bezpośredniej.
 
-By using the "Receiving Method Validation" card, organizations can ensure compliance with receiving protocols, improve logistics workflows, and maintain accuracy in item handling based on specific receiving methods.
+Korzystając z karty "Receiving Method Validation", organizacje mogą zapewnić zgodność z protokołami przyjęcia, poprawić przepływy pracy logistyki i utrzymać dokładność obsługi pozycji na podstawie określonych metod przyjęcia.

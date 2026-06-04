@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
 
-**Purpose**
+**Cel**
 
-This workflow card is tailored to manage operations on documents based on a single, specified document status. By simplifying the condition to one status, the card is focused on very specific workflow triggers, making it ideal for targeted document processing activities within an ERP system.
+Ta karta przepływu pracy jest dostosowana do zarządzania operacjami na dokumentach na podstawie pojedynczego, określonego statusu dokumentu. Upraszczając warunek do jednego statusu, karta skupia się na bardzo specyficznych wyzwalaczach przepływu pracy, co czyni ją idealną dla ukierunkowanych działań przetwarzania dokumentów w systemie ERP.
 
-**Components of the Card**
+**Komponenty karty**
 
 1. **Operator**
-   * **Description**: Specifies the method for evaluating the document’s status against the selected condition.
-   * **Options**:
-     * **is**: Triggers the operation if the document's current status matches the selected status.
-     * **is not**: Triggers the operation if the document's current status does not match the selected status.
+   * **Opis**: Określa metodę oceny statusu dokumentu względem wybranego warunku.
+   * **Opcje**:
+     * **is**: Wyzwala operację, jeśli bieżący status dokumentu odpowiada wybranemu statusowi.
+     * **is not**: Wyzwala operację, jeśli bieżący status dokumentu nie odpowiada wybranemu statusowi.
 2. **Status**
-   * **Description**: Allows the selection of a single document status to set the condition.
-   * **Examples of Statuses**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
-   * **Detail**: Users choose one status from a dropdown or a set of radio buttons. This status then serves as the criterion for the card’s operation.
+   * **Opis**: Umożliwia wybór pojedynczego statusu dokumentu w celu ustawienia warunku.
+   * **Przykłady statusów**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Szczegóły**: Użytkownicy wybierają jeden status z listy rozwijanej lub zestawu przycisków radiowych. Status ten służy następnie jako kryterium działania karty.
 
-**Functionality**
+**Funkcjonalność**
 
-* **Document Status Identification**: Identifies the current status of a document as it is processed through the ERP system.
-* **Condition Evaluation**:
-  * Based on the operator selected (`is` or `is not`), the card checks whether the document's current status aligns with the chosen status criterion.
-* **Action Execution**:
-  * **True Condition**: If the status matches (or does not match, based on the operator), the corresponding action is initiated. This could be routing for further processing, notification generation, or other predefined workflows.
-  * **False Condition**: If the condition is not met, no action is taken, or an alternate pathway is triggered.
-* **Integration with Other Workflows**: Even though it's designed for single-status evaluation, this card can be effectively integrated into broader workflow sequences to ensure precise document handling.
+* **Identyfikacja statusu dokumentu**: Identyfikuje bieżący status dokumentu w miarę jego przetwarzania przez system ERP.
+* **Ocena warunku**:
+  * Na podstawie wybranego operatora (`is` lub `is not`) karta sprawdza, czy bieżący status dokumentu jest zgodny z wybranym kryterium statusu.
+* **Wykonanie akcji**:
+  * **Warunek prawdziwy**: Jeśli status jest zgodny (lub niezgodny, w zależności od operatora), inicjowana jest odpowiednia akcja. Może to być routing do dalszego przetwarzania, generowanie powiadomień lub inne predefiniowane przepływy pracy.
+  * **Warunek fałszywy**: Jeśli warunek nie jest spełniony, nie jest podejmowana żadna akcja lub wyzwalana jest alternatywna ścieżka.
+* **Integracja z innymi przepływami pracy**: Mimo że jest zaprojektowana do oceny pojedynczego statusu, karta ta może być skutecznie zintegrowana z szerszymi sekwencjami przepływu pracy w celu zapewnienia precyzyjnej obsługi dokumentów.
 
-**User Interactions**
+**Interakcje użytkownika**
 
-* **Setup and Configuration**: Users set up the card by selecting an operator and then choosing one status from the available options. This selection process is straightforward and designed to prevent confusion.
-* **Monitoring and Reporting**: Enables monitoring through system-generated reports or dashboards that track the processing of documents based on their status, helping to oversee the effectiveness of the implemented workflows.
-* **Error Handling and Notifications**: Configurable to alert users to any processing anomalies or to flag documents that do not meet the set conditions, ensuring prompt attention and resolution.
+* **Konfiguracja**: Użytkownicy konfigurują kartę, wybierając operator, a następnie wybierając jeden status z dostępnych opcji. Proces wyboru jest prosty i zaprojektowany tak, aby zapobiec nieporozumieniom.
+* **Monitorowanie i raportowanie**: Umożliwia monitorowanie za pośrednictwem raportów lub pulpitów generowanych przez system, które śledzą przetwarzanie dokumentów na podstawie ich statusu, pomagając nadzorować skuteczność wdrożonych przepływów pracy.
+* **Obsługa błędów i powiadomienia**: Konfigurowalna w celu ostrzegania użytkowników o wszelkich anomaliach przetwarzania lub oznaczania dokumentów, które nie spełniają ustawionych warunków, zapewniając szybką uwagę i rozwiązanie.
 
-#### Conclusion
+#### Podsumowanie
 
-The "Single Document Status Condition" workflow card simplifies document management by focusing on individual status conditions. This specification helps in cases where precise control over document flows is necessary, especially in environments with stringent processing criteria. Documenting this version of the card clearly will ensure that users fully understand its application and can effectively integrate it within their daily operations, enhancing both compliance and efficiency in document processing.
+Karta przepływu pracy "Single Document Status Condition" upraszcza zarządzanie dokumentami, skupiając się na pojedynczych warunkach statusu. Ta specyfikacja pomaga w przypadkach, gdy konieczna jest precyzyjna kontrola nad przepływami dokumentów, szczególnie w środowiskach o rygorystycznych kryteriach przetwarzania. Jasne udokumentowanie tej wersji karty zapewni, że użytkownicy w pełni zrozumieją jej zastosowanie i będą mogli skutecznie zintegrować ją z codziennymi operacjami, zwiększając zarówno zgodność, jak i efektywność przetwarzania dokumentów.

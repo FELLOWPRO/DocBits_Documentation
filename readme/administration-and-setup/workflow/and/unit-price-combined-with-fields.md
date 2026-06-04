@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_purchase_order_invoice_2.png" alt="DocBits Zakup Zamówienie Faktura 2"><figcaption></figcaption></figure>
 
-Purpose: This Docbits card facilitates the detailed comparison of unit prices on invoices against those specified in the corresponding purchase orders. It enhances accuracy in financial reporting by ensuring adherence to agreed pricing.
+Cel: Ta karta DocBits ułatwia szczegółowe porównanie cen jednostkowych na fakturach z cenami określonymi w odpowiadających im zamówieniach zakupu. Zwiększa dokładność raportowania finansowego, zapewniając przestrzeganie uzgodnionych cen.
 
-Functionality:
+Funkcjonalność:
 
-* Unit Price Combined with Fields: This card calculates the total amount for a specific item by combining the unit price with additional specified fields from the invoice. The combined total is then compared against the purchase order's recorded unit price for that item.
-* Operator Value: Users can set specific conditions for how the invoice's combined unit price should be compared to the purchase order's unit price. Available operators include:
+* Unit Price Combined with Fields: Ta karta oblicza całkowitą kwotę dla określonej pozycji, łącząc cenę jednostkową z dodatkowymi określonymi polami z faktury. Połączona suma jest następnie porównywana z zapisaną w zamówieniu zakupu ceną jednostkową tej pozycji.
+* Operator Value: Użytkownicy mogą ustawić konkretne warunki dotyczące sposobu porównania połączonej ceny jednostkowej faktury z ceną jednostkową zamówienia zakupu. Dostępne operatory obejmują:
 *
-  * Equals (=): Verifies that the combined invoice price matches the price on the purchase order.
-  * Not Equal (≠): Ensures the combined invoice price does not match the price on the purchase order.
-  * Greater Than (>): Checks if the combined invoice price exceeds the price on the purchase order.
-  * Less Than (<): Confirms the combined invoice price is below the price on the purchase order.
+  * Equals (=): Weryfikuje, czy połączona cena faktury odpowiada cenie na zamówieniu zakupu.
+  * Not Equal (≠): Zapewnia, że połączona cena faktury nie odpowiada cenie na zamówieniu zakupu.
+  * Greater Than (>): Sprawdza, czy połączona cena faktury przekracza cenę na zamówieniu zakupu.
+  * Less Than (<): Potwierdza, że połączona cena faktury jest niższa niż cena na zamówieniu zakupu.
 
-Usage: This card is particularly valuable for ERP Managers and financial accountants tasked with maintaining stringent control over purchasing and payment processes. It ensures that invoiced prices conform to those agreed upon in purchase orders, thereby mitigating financial discrepancies.
+Zastosowanie: Ta karta jest szczególnie cenna dla menedżerów ERP i księgowych finansowych, których zadaniem jest utrzymanie ścisłej kontroli nad procesami zakupowymi i płatniczymi. Zapewnia, że ceny fakturowane są zgodne z tymi uzgodnionymi w zamówieniach zakupu, łagodząc tym samym rozbieżności finansowe.
 
-Example Scenario:
+Przykładowy scenariusz:
 
-* An invoice presents a unit price of $50 for a product. The "field name" specified includes an additional handling fee of $5 per unit. When combined, the total per unit amounts to $55. Using the "Equals" operator with a value set to $55, the card verifies that the invoiced price aligns with the purchase order, ensuring agreement compliance.
+* Faktura przedstawia cenę jednostkową 50 USD za produkt. Określona "field name" obejmuje dodatkową opłatę manipulacyjną w wysokości 5 USD za jednostkę. Po połączeniu łączna kwota za jednostkę wynosi 55 USD. Przy użyciu operatora "Equals" z wartością ustawioną na 55 USD karta weryfikuje, czy cena fakturowana jest zgodna z zamówieniem zakupu, zapewniając zgodność z umową.
 
-By deploying the "Compare with Purchase Order: Unit Price Combined" card, businesses can automate the verification of pricing accuracy against purchase orders, streamlining financial operations and safeguarding against overcharges.
+Wdrażając kartę "Compare with Purchase Order: Unit Price Combined", firmy mogą zautomatyzować weryfikację dokładności cen względem zamówień zakupu, usprawniając operacje finansowe i chroniąc przed zawyżonymi opłatami.
 
 \

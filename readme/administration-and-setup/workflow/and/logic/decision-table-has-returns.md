@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This DocBits card checks whether a specified decision table has return values for a given document and determines if the returned data should be used in subsequent workflow steps. It ensures that workflows can dynamically adapt based on decision table outcomes.
+Ta karta DocBits sprawdza, czy określona tabela decyzyjna ma wartości zwracane dla danego dokumentu, i określa, czy zwrócone dane powinny zostać użyte w kolejnych krokach przepływu pracy. Zapewnia, że przepływy pracy mogą dynamicznie dostosowywać się na podstawie wyników tabeli decyzyjnej.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Decision Table Validation:** This card verifies if the selected decision table provides return values for the document being processed.
-* **Decision Table Selection:** Users specify the name of the decision table to be checked.
-* **Use Return Data:** Users can specify whether to use the return data in later cards with a **Boolean** setting:
-  * **True:** The return data is available and will be used in subsequent workflow steps.
-  * **False:** The return data will not be used, and the workflow proceeds without it.
+* **Walidacja tabeli decyzyjnej:** Ta karta weryfikuje, czy wybrana tabela decyzyjna dostarcza wartości zwracane dla przetwarzanego dokumentu.
+* **Wybór tabeli decyzyjnej:** Użytkownicy określają nazwę tabeli decyzyjnej do sprawdzenia.
+* **Use Return Data:** Użytkownicy mogą określić, czy użyć danych zwracanych w późniejszych kartach, za pomocą ustawienia **Boolean**:
+  * **True:** Dane zwracane są dostępne i zostaną użyte w kolejnych krokach przepływu pracy.
+  * **False:** Dane zwracane nie zostaną użyte, a przepływ pracy jest kontynuowany bez nich.
 
-## **Usage:**
+## **Zastosowanie:**
 
-This card is ideal for workflows involving conditional logic or decision-making based on predefined rules in a decision table. It ensures seamless integration of decision table outputs into workflow processes.
+Ta karta jest idealna dla przepływów pracy obejmujących logikę warunkową lub podejmowanie decyzji na podstawie predefiniowanych reguł w tabeli decyzyjnej. Zapewnia bezproblemową integrację wyników tabeli decyzyjnej z procesami przepływu pracy.
 
-## **Example Scenario:**
+## **Przykładowy scenariusz:**
 
-* A user configures the card to check the **"Invoice Processing Rules"** decision table for return values. The **Boolean** is set to **True**, indicating that the return data (e.g. approval requirements) will be utilized in later cards to guide workflow decisions.
+* Użytkownik konfiguruje kartę, aby sprawdzić tabelę decyzyjną **"Invoice Processing Rules"** pod kątem wartości zwracanych. Ustawienie **Boolean** ustawiono na **True**, co wskazuje, że dane zwracane (np. wymagania dotyczące zatwierdzania) zostaną wykorzystane w późniejszych kartach do kierowania decyzjami przepływu pracy.
 
-By using the "Decision Table Check" card, organizations can enhance workflow flexibility, streamline rule-based processing, and ensure consistency in decision-making across automated workflows.
+Korzystając z karty "Decision Table Check", organizacje mogą zwiększyć elastyczność przepływu pracy, usprawnić przetwarzanie oparte na regułach i zapewnić spójność w podejmowaniu decyzji w zautomatyzowanych przepływach pracy.

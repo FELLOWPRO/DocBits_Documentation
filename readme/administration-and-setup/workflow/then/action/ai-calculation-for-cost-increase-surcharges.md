@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Cel:
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card uses AI to automatically compute surcharge amounts based on cost increases. It ensures consistent and accurate surcharge calculations, streamlining workflows and reducing manual effort.
+Karta przepływu pracy **"AI Calculation for Cost Increase Surcharges"** wykorzystuje AI do automatycznego obliczania kwot dopłat na podstawie wzrostu kosztów. Zapewnia spójne i dokładne obliczenia dopłat, usprawniając przepływy pracy i redukując ręczny wysiłek.
 
-## Components of the Card:
+## Komponenty karty:
 
 * **Cost Increase Factor**
-  * **Description:** The multiplier or percentage applied to the base cost to calculate the surcharge.
-  * **Detail:** Determines the surcharge amount based on the cost increase (e.g., a factor of 1.10 for a 10% increase).
+  * **Opis:** Mnożnik lub procent stosowany do kosztu bazowego w celu obliczenia dopłaty.
+  * **Szczegóły:** Określa kwotę dopłaty na podstawie wzrostu kosztów (np. współczynnik 1,10 dla wzrostu o 10%).
 * **Base Cost Field**
-  * **Description:** The field containing the original cost value used as the basis for the surcharge calculation.
-  * **Detail:** Selected automatically or defined within the workflow for reference during the calculation.
+  * **Opis:** Pole zawierające pierwotną wartość kosztu używaną jako podstawa obliczenia dopłaty.
+  * **Szczegóły:** Wybierane automatycznie lub definiowane w przepływie pracy w celu odniesienia podczas obliczeń.
 * **Surcharge Field**
-  * **Description:** The field where the AI-calculated surcharge value is stored.
-  * **Detail:** This field reflects the calculated surcharge, making it available for further processing or reporting.
+  * **Opis:** Pole, w którym przechowywana jest obliczona przez AI wartość dopłaty.
+  * **Szczegóły:** Pole to odzwierciedla obliczoną dopłatę, udostępniając ją do dalszego przetwarzania lub raportowania.
 
-## Functionality:
+## Funkcjonalność:
 
-**Condition Evaluation:**
+**Ocena warunku:**
 
-* The card activates only if both the **"Where"** and **"And Sections"** conditions evaluate as true.
-* If either condition evaluates as false, no surcharge calculation is performed.
+* Karta aktywuje się tylko wtedy, gdy zarówno warunki **"Where"**, jak i **"And Sections"** są prawdziwe.
+* Jeśli którykolwiek z warunków jest fałszywy, obliczenie dopłaty nie jest wykonywane.
 
-**AI-Driven Calculation:**
+**Obliczenia napędzane AI:**
 
-* The system applies the **Cost Increase Factor** to the **Base Cost Field** to calculate the surcharge.
-* The result is stored in the **Surcharge Field**, ensuring accessibility for subsequent workflow steps.
+* System stosuje **Cost Increase Factor** do **Base Cost Field** w celu obliczenia dopłaty.
+* Wynik jest przechowywany w **Surcharge Field**, zapewniając dostępność dla kolejnych kroków przepływu pracy.
 
-## Conclusion:
+## Podsumowanie:
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card automates the application of surcharges based on cost increases. By leveraging AI for precision and consistency, this card eliminates manual calculations, enhances efficiency, and supports accurate cost management in automated workflows.
+Karta przepływu pracy **"AI Calculation for Cost Increase Surcharges"** automatyzuje stosowanie dopłat na podstawie wzrostu kosztów. Wykorzystując AI do precyzji i spójności, karta ta eliminuje ręczne obliczenia, zwiększa efektywność i wspiera dokładne zarządzanie kosztami w zautomatyzowanych przepływach pracy.

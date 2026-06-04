@@ -2,39 +2,39 @@
 
 <figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This workflow card is designed to automate actions based on the state (checked or unchecked) of a checkbox within your ERP system. By evaluating the checkbox's condition, it facilitates the triggering of specific processes or the enforcement of certain rules within the application.
+Ta karta przepływu pracy służy do automatyzacji akcji na podstawie stanu (zaznaczone lub niezaznaczone) pola wyboru w systemie ERP. Oceniając stan pola wyboru, ułatwia wyzwalanie określonych procesów lub egzekwowanie określonych reguł w aplikacji.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 * **Field Name**
-  * **Description:** Specifies the name of the checkbox field that will be evaluated.
-  * **Detail:** This should match the exact field identifier used in the system. It determines which checkbox's state is being monitored.
+  * **Opis:** Określa nazwę pola wyboru, które będzie oceniane.
+  * **Szczegóły:** Powinna ona odpowiadać dokładnemu identyfikatorowi pola używanemu w systemie. Określa, którego pola wyboru stan jest monitorowany.
 * **Boolean**
-  * **Description:** Defines the condition that triggers the workflow.
-  * **Options:**
-    * **True:** The workflow triggers if the checkbox is checked.
-    * **False:** The workflow triggers if the checkbox is unchecked.
+  * **Opis:** Definiuje warunek wyzwalający przepływ pracy.
+  * **Opcje:**
+    * **True:** Przepływ pracy jest wyzwalany, jeśli pole wyboru jest zaznaczone.
+    * **False:** Przepływ pracy jest wyzwalany, jeśli pole wyboru jest niezaznaczone.
 
-#### **Functionality:**
+#### **Funkcjonalność:**
 
-* **State Detection:** The card continuously monitors the state of the specified checkbox field.
-* **Condition Evaluation:** The system checks whether the checkbox is in the state (checked or unchecked) specified by the Boolean condition.
-* **Action Execution:**
-  * **True Condition:**\
-    If the checkbox’s state matches the specified Boolean condition (either true for checked or false for unchecked), the system initiates the associated actions. These could include enabling or disabling form fields, triggering notifications, starting workflows, or updating records.
-  * **False Condition:**\
-    If the checkbox’s state does not match the condition, alternative or no actions may be taken, depending on the workflow setup.
+* **Wykrywanie stanu:** Karta na bieżąco monitoruje stan określonego pola wyboru.
+* **Ocena warunku:** System sprawdza, czy pole wyboru znajduje się w stanie (zaznaczone lub niezaznaczone) określonym przez warunek Boolean.
+* **Wykonanie akcji:**
+  * **Warunek prawdziwy:**\
+    Jeśli stan pola wyboru odpowiada określonemu warunkowi Boolean (true dla zaznaczonego lub false dla niezaznaczonego), system inicjuje powiązane akcje. Mogą one obejmować włączanie lub wyłączanie pól formularza, wyzwalanie powiadomień, uruchamianie przepływów pracy lub aktualizację rekordów.
+  * **Warunek fałszywy:**\
+    Jeśli stan pola wyboru nie odpowiada warunkowi, mogą zostać podjęte alternatywne akcje lub żadne, w zależności od konfiguracji przepływu pracy.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-* Users configure the card by selecting the checkbox field from a list of available fields and setting the Boolean condition.&#x20;
+* Użytkownicy konfigurują kartę, wybierając pole wyboru z listy dostępnych pól i ustawiając warunek Boolean.&#x20;
 
-## Conclusion :
+## Podsumowanie:
 
-The "Checkbox Field Condition" workflow card is a fundamental tool for managing dynamic forms and documents within an ERP system, where user inputs can dictate subsequent data processes. By automating actions based on the state of a checkbox, this card enhances workflow efficiency and ensures that system behaviors align with user inputs. Clear documentation of this card will help users effectively implement it within their operations, allowing for better control over form behaviors and process automations.
+Karta przepływu pracy "Checkbox Field Condition" jest podstawowym narzędziem do zarządzania dynamicznymi formularzami i dokumentami w systemie ERP, gdzie dane wprowadzane przez użytkownika mogą dyktować kolejne procesy danych. Automatyzując akcje na podstawie stanu pola wyboru, karta ta zwiększa efektywność przepływu pracy i zapewnia, że zachowania systemu są zgodne z danymi wprowadzanymi przez użytkownika. Jasna dokumentacja tej karty pomoże użytkownikom skutecznie wdrożyć ją w swoich operacjach, umożliwiając lepszą kontrolę nad zachowaniami formularzy i automatyzacją procesów.
 
 
 
-**Note: Not every customer has the checkbox, but it can be added if desired.**
+**Note: Nie każdy klient ma to pole wyboru, ale można je dodać w razie potrzeby.**

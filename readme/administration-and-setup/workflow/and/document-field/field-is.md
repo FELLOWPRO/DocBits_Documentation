@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This workflow card is designed to automate actions based on the presence or state of a specified field within a document. By evaluating whether the field is empty, missing, or populated, it enables workflows to handle documents with precision and accuracy.
+Ta karta przepływu pracy służy do automatyzacji akcji na podstawie obecności lub stanu określonego pola w dokumencie. Oceniając, czy pole jest puste, brakujące, czy wypełnione, umożliwia przepływom pracy precyzyjną i dokładną obsługę dokumentów.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Field Name**
-   * **Description:** Specifies the name of the field to be evaluated.
-   * **Detail:** This must match the exact identifier used in the document to ensure accurate field detection.
+   * **Opis:** Określa nazwę pola, które ma być oceniane.
+   * **Szczegóły:** Musi to odpowiadać dokładnemu identyfikatorowi używanemu w dokumencie, aby zapewnić dokładne wykrywanie pola.
 2. **Operators**
-   * **Description**: Defines the condition that triggers the workflow, based on the presence or state of the field.
-   * **Options**:
-     * **Empty/Not in Document:** The workflow triggers if the field is either missing from the document or is present but empty.
-     * **In Document/Not Empty:** The workflow triggers if the field exists in the document and contains a value.
+   * **Opis**: Definiuje warunek wyzwalający przepływ pracy, na podstawie obecności lub stanu pola.
+   * **Opcje**:
+     * **Empty/Not in Document:** Przepływ pracy jest wyzwalany, jeśli pole jest albo nieobecne w dokumencie, albo obecne, ale puste.
+     * **In Document/Not Empty:** Przepływ pracy jest wyzwalany, jeśli pole istnieje w dokumencie i zawiera wartość.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **State Detection:** The card monitors the specified field to evaluate its presence and state.
-* **Condition Evaluation:**
-  * The system evaluates whether the specified field is in the state (Empty/Not in Document or In Document/Not Empty) defined by the selected operator.
+* **Wykrywanie stanu:** Karta monitoruje określone pole, aby ocenić jego obecność i stan.
+* **Ocena warunku:**
+  * System ocenia, czy określone pole jest w stanie (Empty/Not in Document lub In Document/Not Empty) zdefiniowanym przez wybrany operator.
 *
 
-    **Action Execution:**
+    **Wykonanie akcji:**
 
-    * **Empty/Not in Document Condition:** If the field's state matches this condition (i.e., the field is either absent from the document or present but empty), the system initiates the associated actions. These may include generating alerts, flagging the document for review, or halting the workflow.
-    * **In Document/Not Empty Condition:** If the field's state matches this condition (i.e., the field exists in the document and contains a value), the system triggers the associated actions. These could involve enabling subsequent workflow steps, updating records, or triggering notifications.
+    * **Warunek Empty/Not in Document:** Jeśli stan pola odpowiada temu warunkowi (tj. pole jest albo nieobecne w dokumencie, albo obecne, ale puste), system inicjuje powiązane akcje. Mogą one obejmować generowanie alertów, oznaczanie dokumentu do przeglądu lub zatrzymanie przepływu pracy.
+    * **Warunek In Document/Not Empty:** Jeśli stan pola odpowiada temu warunkowi (tj. pole istnieje w dokumencie i zawiera wartość), system wyzwala powiązane akcje. Mogą one obejmować włączanie kolejnych kroków przepływu pracy, aktualizację rekordów lub wyzwalanie powiadomień.
 
-## **Setup and Configuration:**&#x20;
+## **Konfiguracja:**&#x20;
 
-* Users select the field from a list of available document fields. The operator is chosen via a dropdown menu, offering clear options for "Empty/Not in Document" or "In Document/Not Empty."
+* Użytkownicy wybierają pole z listy dostępnych pól dokumentu. Operator jest wybierany za pomocą menu rozwijanego, oferującego jasne opcje "Empty/Not in Document" lub "In Document/Not Empty".
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The "Field Presence and State Validation" workflow card is a critical tool for document processing workflows, ensuring accurate handling of missing or populated fields. By automating actions based on field states, this card enhances data integrity, reduces errors, and ensures workflows operate smoothly and efficiently.
+Karta przepływu pracy "Field Presence and State Validation" jest kluczowym narzędziem dla przepływów pracy przetwarzania dokumentów, zapewniając dokładną obsługę brakujących lub wypełnionych pól. Automatyzując akcje na podstawie stanów pól, karta ta zwiększa integralność danych, redukuje błędy i zapewnia płynne i wydajne działanie przepływów pracy.

@@ -2,42 +2,42 @@
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Cel**
 
-This workflow card is designed to evaluate whether a specified country, located in a designated field, is part of a predefined list of countries. Based on this evaluation, the workflow can continue with a true or false condition. It helps automate processes where actions depend on whether the country is listed among a set of allowed or restricted countries.
+Ta karta przepływu pracy służy do oceny, czy określony kraj, znajdujący się w wyznaczonym polu, należy do predefiniowanej listy krajów. Na podstawie tej oceny przepływ pracy może być kontynuowany z warunkiem prawdziwym lub fałszywym. Pomaga zautomatyzować procesy, w których akcje zależą od tego, czy kraj znajduje się na liście dozwolonych lub ograniczonych krajów.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field where the country name or code is stored.
-   * **Detail:** This should match the exact field identifier of the country data within the document.&#x20;
+   * **Opis:** Określa pole dokumentu, w którym przechowywana jest nazwa lub kod kraju.
+   * **Szczegóły:** Powinno to odpowiadać dokładnemu identyfikatorowi pola danych kraju w dokumencie.&#x20;
 2. **Operator**
-   * **Description:** Defines whether the country in the field must be part of a predefined list of countries.
-   * **Options:**
-     * **Is:** The country must be included in the list of specified countries for the condition to be true.
-     * **Is Not:** The country must not be included in the list of specified countries for the condition to be true.
+   * **Opis:** Definiuje, czy kraj w polu musi należeć do predefiniowanej listy krajów.
+   * **Opcje:**
+     * **Is:** Kraj musi być uwzględniony na liście określonych krajów, aby warunek był prawdziwy.
+     * **Is Not:** Kraj nie może być uwzględniony na liście określonych krajów, aby warunek był prawdziwy.
 3. **Countries**
-   * **Description:** Specifies the list of countries against which the selected country will be compared.
-   * **Detail:** This is a comma-separated list of countries. The comparison checks if the country in the field is included in this list.
+   * **Opis:** Określa listę krajów, z którymi porównywany będzie wybrany kraj.
+   * **Szczegóły:** Jest to lista krajów oddzielonych przecinkami. Porównanie sprawdza, czy kraj w polu jest uwzględniony na tej liście.
 4. **Continue Condition**
-   * **Description:** Defines the result of the comparison. If the country meets the condition, the workflow continues with the specified Boolean value.
-   * **Options:**
-     * **True:** The workflow continues if the condition matches.
-     * **False:** The workflow continues if the condition does not match.
+   * **Opis:** Definiuje wynik porównania. Jeśli kraj spełnia warunek, przepływ pracy jest kontynuowany z określoną wartością Boolean.
+   * **Opcje:**
+     * **True:** Przepływ pracy jest kontynuowany, jeśli warunek jest spełniony.
+     * **False:** Przepływ pracy jest kontynuowany, jeśli warunek nie jest spełniony.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation:** The system evaluates whether the country specified in the field is part of the list of predefined countries. This evaluation checks the country name or code against the provided list.
-* **Action Execution:**
-  * **True Condition:**\
-    If the country in the field is part of the specified list of countries, the workflow continues with the true condition. This can trigger further actions, such as routing documents to the appropriate department, applying specific processing rules, or enabling region-specific features.
-  * **False Condition:**\
-    If the country does not match the list, the workflow continues with the false condition. This allows for executing alternative actions or halting the workflow based on the system setup.
+* **Ocena warunku:** System ocenia, czy kraj określony w polu należy do listy predefiniowanych krajów. Ocena ta sprawdza nazwę lub kod kraju względem podanej listy.
+* **Wykonanie akcji:**
+  * **Warunek prawdziwy:**\
+    Jeśli kraj w polu należy do określonej listy krajów, przepływ pracy jest kontynuowany z warunkiem prawdziwym. Może to wyzwolić dalsze akcje, takie jak przekierowanie dokumentów do odpowiedniego działu, zastosowanie określonych reguł przetwarzania lub włączenie funkcji specyficznych dla regionu.
+  * **Warunek fałszywy:**\
+    Jeśli kraj nie odpowiada liście, przepływ pracy jest kontynuowany z warunkiem fałszywym. Umożliwia to wykonanie alternatywnych akcji lub zatrzymanie przepływu pracy na podstawie konfiguracji systemu.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-* Users configure the card by selecting the document field containing the country and specifying the list of countries to check against. The operator is then chosen from a dropdown list to define whether the country must be part of or not part of the specified list of countries. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
+* Użytkownicy konfigurują kartę, wybierając pole dokumentu zawierające kraj i określając listę krajów do sprawdzenia. Następnie operator jest wybierany z listy rozwijanej, aby zdefiniować, czy kraj musi być częścią określonej listy krajów, czy nie. Na koniec użytkownicy ustawiają warunek kontynuacji (true lub false), który dyktuje kolejny krok w przepływie pracy.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The "Country in Field Comparison with List" workflow card is a valuable tool for automating actions based on whether a country is part of a predefined group. By comparing the country data with a list of allowed or restricted countries, this card enhances workflow efficiency and ensures that system processes follow the correct geographic rules.
+Karta przepływu pracy "Country in Field Comparison with List" jest cennym narzędziem do automatyzacji akcji na podstawie tego, czy kraj należy do predefiniowanej grupy. Porównując dane kraju z listą dozwolonych lub ograniczonych krajów, karta ta zwiększa efektywność przepływu pracy i zapewnia, że procesy systemowe przestrzegają właściwych reguł geograficznych.

@@ -8,31 +8,31 @@
 
 #### Logic Card: Quantity or Unit Price or Discount Match
 
-This logic card is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+Ta karta logiczna służy do automatycznej weryfikacji, czy ilość, cena jednostkowa lub rabat wyszczególnione w potwierdzeniu zamówienia są zgodne z odpowiadającymi im wartościami w zamówieniu zakupu. Weryfikacja ta zapewnia spójność i dokładność między tym, co zostało zamówione, a tym, co dostawca potwierdza dostarczyć.
 
 #### Trigger Condition
 
-The logic is activated when any of the following conditions are met in an order confirmation relative to the original purchase order:
+Logika jest aktywowana, gdy którykolwiek z następujących warunków jest spełniony w potwierdzeniu zamówienia w odniesieniu do oryginalnego zamówienia zakupu:
 
-* **Quantity**: The quantity of items ordered matches the quantity confirmed by the supplier.
-* **Unit Price**: The price per item agreed upon matches the supplier's confirmation.
-* **Discount**: Any discounts applied are consistent between the purchase order and the order confirmation.
+* **Quantity**: Ilość zamówionych pozycji odpowiada ilości potwierdzonej przez dostawcę.
+* **Unit Price**: Uzgodniona cena za pozycję odpowiada potwierdzeniu dostawcy.
+* **Discount**: Wszelkie zastosowane rabaty są spójne między zamówieniem zakupu a potwierdzeniem zamówienia.
 
 #### Outcomes
 
-* **Equals**: If the order confirmation's quantity, unit price, or discount exactly matches the purchase order, the system considers the confirmation as valid and proceeds with the next steps in the procurement process.
-* **Not Equal**: If there's a discrepancy in the quantity, unit price, or discount, the system flags the order confirmation for manual review. This ensures any mismatches are resolved before moving forward.
+* **Equals**: Jeśli ilość, cena jednostkowa lub rabat w potwierdzeniu zamówienia dokładnie odpowiadają zamówieniu zakupu, system uznaje potwierdzenie za prawidłowe i kontynuuje kolejne kroki w procesie zakupowym.
+* **Not Equal**: Jeśli istnieje rozbieżność w ilości, cenie jednostkowej lub rabacie, system oznacza potwierdzenie zamówienia do ręcznego przeglądu. Zapewnia to rozwiązanie wszelkich niezgodności przed kontynuowaniem.
 
 #### Benefits
 
-* **Accuracy and Consistency**: Maintains accuracy in the procurement process, ensuring that payments and deliveries are made based on correct figures.
-* **Efficiency**: Automates the verification process, reducing the need for manual checks and speeding up order processing.
-* **Cost Control**: Helps prevent overpayments or incorrect deliveries by catching discrepancies early in the process.
+* **Accuracy and Consistency**: Utrzymuje dokładność w procesie zakupowym, zapewniając, że płatności i dostawy są realizowane na podstawie poprawnych wartości.
+* **Efficiency**: Automatyzuje proces weryfikacji, redukując potrzebę ręcznych kontroli i przyspieszając przetwarzanie zamówień.
+* **Cost Control**: Pomaga zapobiegać nadpłatom lub nieprawidłowym dostawom, wcześnie wychwytując rozbieżności w procesie.
 
 <figure><img src="https://lh7-us.googleusercontent.com/DRTMJxJ9XLeC5zWSU8QuZwPLkqHzmCUm9RwiUZIkcc8pVxMZsxLv56dX9spzqr7KeDkTigbeBX2DvAZRe-6MdqOgAnrO-QPnCbi4e6hP4--P_O0A0DSoQJxjGeefOS1p6GuXHs1YXv-A73DXYaE8qlI" alt="" width="563"><figcaption></figcaption></figure>
 
-1. **Define Comparison Parameters**: Set up the specific fields (quantity, unit price, discount) that the logic card will check for a match.
-2. **Automate Verification**: Configure the system to automatically compare these details upon receipt of an order confirmation.
-3. **Customize Alerts**: Decide on the workflow for handling discrepancies, including customization of alerts for manual review.
+1. **Define Comparison Parameters**: Skonfiguruj konkretne pola (ilość, cena jednostkowa, rabat), które karta logiczna będzie sprawdzać pod kątem zgodności.
+2. **Automate Verification**: Skonfiguruj system tak, aby automatycznie porównywał te szczegóły po otrzymaniu potwierdzenia zamówienia.
+3. **Customize Alerts**: Zdecyduj o przepływie pracy do obsługi rozbieżności, w tym dostosowaniu alertów do ręcznego przeglądu.
 
-This logic card is vital for ensuring that the details of an order confirmation align with the original purchase order, safeguarding the integrity of the procurement cycle. \`\`
+Ta karta logiczna jest kluczowa dla zapewnienia, że szczegóły potwierdzenia zamówienia są zgodne z oryginalnym zamówieniem zakupu, chroniąc integralność cyklu zakupowego. \`\`

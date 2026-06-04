@@ -1,28 +1,28 @@
 # Advanced Workflow
 
-The **Advanced Workflow** builder is a node-graph editor for workflows that need branching, parallel paths and flow control — beyond the linear When/And/Then of the Standard builder. You arrange nodes on a canvas and connect them to define the execution flow.
+Il builder **Advanced Workflow** è un editor a grafo di nodi per i workflow che necessitano di ramificazioni, percorsi paralleli e controllo del flusso — oltre il modello lineare When/And/Then del builder Standard. Disponi i nodi su un canvas e li colleghi per definire il flusso di esecuzione.
 
-## How to access
+## Come accedere
 
-Open the Advanced Workflow designer from the workflow area (the advanced builder canvas). You start from a **Start** node and build out the flow by adding nodes.
+Apri il designer Advanced Workflow dall'area dei workflow (il canvas del builder avanzato). Parti da un nodo **Start** e costruisci il flusso aggiungendo nodi.
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_canvas.png" alt="Advanced Workflow node-graph canvas with toolbar"><figcaption><p>The Advanced Workflow canvas — a node graph with zoom, run, grid and save controls. Give the workflow a name in the toolbar.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_advanced_canvas.png" alt="Canvas a grafo di nodi Advanced Workflow con barra degli strumenti"><figcaption><p>Il canvas Advanced Workflow — un grafo di nodi con controlli di zoom, esecuzione, griglia e salvataggio. Assegna un nome al workflow nella barra degli strumenti.</p></figcaption></figure>
 
-## Adding nodes
+## Aggiungere nodi
 
-Click **+ Add** to open the node menu. In addition to the familiar **When**, **And** and **Then** cards, the advanced builder adds flow-control nodes:
+Clicca su **+ Add** per aprire il menu dei nodi. Oltre alle familiari schede **When**, **And** e **Then**, il builder avanzato aggiunge nodi di controllo del flusso:
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced Workflow Add menu with node types"><figcaption><p>The <strong>+ Add</strong> node menu: When / And / Then plus Wait ALL, Wait ANY, OR and Note.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Menu Add di Advanced Workflow con i tipi di nodo"><figcaption><p>Il menu dei nodi <strong>+ Add</strong>: When / And / Then più Wait ALL, Wait ANY, OR e Note.</p></figcaption></figure>
 
-- **When / And / Then** — the same condition and action cards as the Standard builder.
-- **Wait ALL** — wait until *all* incoming branches complete before continuing.
-- **Wait ANY** — continue as soon as *any* incoming branch completes.
-- **OR** — branch the flow down alternative paths.
-- **Note** — a free-text annotation on the canvas (does not affect execution).
+- **When / And / Then** — le stesse schede di condizione e azione del builder Standard.
+- **Wait ALL** — attende che *tutte* le ramificazioni in ingresso siano completate prima di continuare.
+- **Wait ANY** — continua non appena *una qualsiasi* ramificazione in ingresso è completata.
+- **OR** — dirama il flusso lungo percorsi alternativi.
+- **Note** — un'annotazione di testo libero sul canvas (non influisce sull'esecuzione).
 
-Run the flow with the play control, validate it, and save with the save button in the toolbar.
+Esegui il flusso con il controllo di riproduzione, validalo e salvalo con il pulsante di salvataggio nella barra degli strumenti.
 
-## Next steps
+## Prossimi passi
 
-- See what each card does in the **Cards** section.
-- For simple linear automations, the **Standard Workflow** builder is faster to set up.
+- Scopri cosa fa ogni scheda nella sezione **Cards**.
+- Per automazioni lineari semplici, il builder **Standard Workflow** è più rapido da configurare.

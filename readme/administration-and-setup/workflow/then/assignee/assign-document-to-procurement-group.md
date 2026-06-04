@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The **"Assign to Procurement Group"** workflow card is used to assign a document to a specified procurement group within the system. This helps streamline document management by ensuring that the appropriate team handles the document based on its assigned procurement group.
+Die Workflow-Karte **"Assign to Procurement Group"** wird verwendet, um ein Dokument einer angegebenen Beschaffungsgruppe innerhalb des Systems zuzuweisen. Dies hilft, das Dokumentenmanagement zu optimieren, indem sichergestellt wird, dass das passende Team das Dokument auf Basis seiner zugewiesenen Beschaffungsgruppe bearbeitet.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Procurement Group**
-   * **Description:** Specifies the procurement group to which the document will be assigned.
-   * **Detail:** The selected procurement group will be responsible for processing and managing the document.
+1. **Beschaffungsgruppe**
+   * **Beschreibung:** Gibt die Beschaffungsgruppe an, der das Dokument zugewiesen wird.
+   * **Detail:** Die ausgewählte Beschaffungsgruppe ist für die Verarbeitung und Verwaltung des Dokuments verantwortlich.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Action Execution:**\
-  If both conditions are true, the document is assigned to the specified procurement group. If either condition is false, no actions are taken, and the document remains unassigned.
+* **Bedingungsauswertung:**\
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Ausführung der Aktion:**\
+  Sind beide Bedingungen erfüllt, wird das Dokument der angegebenen Beschaffungsgruppe zugewiesen. Ist eine der Bedingungen nicht erfüllt, wird keine Aktion ausgeführt, und das Dokument bleibt unzugewiesen.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* **Select Procurement Group:** Choose the procurement group to assign the document to from the dropdown list.
+* **Beschaffungsgruppe auswählen:** Wählen Sie die Beschaffungsgruppe, der das Dokument zugewiesen werden soll, aus der Dropdown-Liste.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Assign to Procurement Group"** workflow card provides a simple yet effective way to ensure that documents are automatically assigned to the correct procurement team for further processing.
+Die Workflow-Karte **"Assign to Procurement Group"** bietet eine einfache, aber effektive Möglichkeit, sicherzustellen, dass Dokumente automatisch dem richtigen Beschaffungsteam zur weiteren Verarbeitung zugewiesen werden.

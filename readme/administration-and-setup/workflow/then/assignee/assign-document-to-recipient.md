@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card assigns a document to either a **Disponent** or **Purchaser**. If no valid user is found, a fallback user is selected to ensure the document is always assigned to someone.
+Die Workflow-Karte **"Assign Document to Disponent / Purchaser"** weist ein Dokument entweder einem **Disponenten** oder einem **Einkäufer** zu. Wird kein gültiger Benutzer gefunden, wird ein Ersatzbenutzer ausgewählt, um sicherzustellen, dass das Dokument immer jemandem zugewiesen ist.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Disponent / Purchaser**
-   * **Description:** Specifies whether the document will be assigned to a Disponent or Purchaser.
-   * **Options:**
-     * **Disponent:** Assign the document to the Disponent.
-     * **Purchaser:** Assign the document to the Purchaser.
-2. **Fallback User**
-   * **Description:** Specifies a fallback user in case the document cannot be assigned to the selected Disponent or Purchaser.
-   * **Detail:** The dropdown list of available users lets you choose a fallback user to ensure the document is assigned even if the primary user cannot be determined.
+1. **Disponent / Einkäufer**
+   * **Beschreibung:** Gibt an, ob das Dokument einem Disponenten oder einem Einkäufer zugewiesen wird.
+   * **Optionen:**
+     * **Disponent:** Weist das Dokument dem Disponenten zu.
+     * **Einkäufer:** Weist das Dokument dem Einkäufer zu.
+2. **Ersatzbenutzer**
+   * **Beschreibung:** Gibt einen Ersatzbenutzer für den Fall an, dass das Dokument dem ausgewählten Disponenten oder Einkäufer nicht zugewiesen werden kann.
+   * **Detail:** Die Dropdown-Liste der verfügbaren Benutzer ermöglicht es Ihnen, einen Ersatzbenutzer auszuwählen, um sicherzustellen, dass das Dokument auch dann zugewiesen wird, wenn der primäre Benutzer nicht bestimmt werden kann.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to either the **Disponent** or **Purchaser** as selected. If the selected person is unavailable or not valid, the document is assigned to the fallback user.
+* **Bedingungsauswertung:**\
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Dokumentzuweisung:**\
+  Die Karte weist das Dokument je nach Auswahl entweder dem **Disponenten** oder dem **Einkäufer** zu. Ist die ausgewählte Person nicht verfügbar oder nicht gültig, wird das Dokument dem Ersatzbenutzer zugewiesen.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* **Select Disponent / Purchaser:**\
-  Choose whether to assign the document to the **Disponent** or **Purchaser**.
-* **Select Fallback User:**\
-  Choose a fallback user from the dropdown list who will receive the document if the primary assignment is not possible.
+* **Disponent / Einkäufer auswählen:**\
+  Wählen Sie, ob das Dokument dem **Disponenten** oder dem **Einkäufer** zugewiesen werden soll.
+* **Ersatzbenutzer auswählen:**\
+  Wählen Sie aus der Dropdown-Liste einen Ersatzbenutzer, der das Dokument erhält, wenn die primäre Zuweisung nicht möglich ist.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card ensures the document is always assigned, either to the selected Disponent/Purchaser or, if needed, to the fallback user. This minimizes workflow disruptions and ensures document processing continues smoothly.
+Die Workflow-Karte **"Assign Document to Disponent / Purchaser"** stellt sicher, dass das Dokument immer zugewiesen wird – entweder dem ausgewählten Disponenten/Einkäufer oder bei Bedarf dem Ersatzbenutzer. Dies minimiert Workflow-Unterbrechungen und stellt sicher, dass die Dokumentverarbeitung reibungslos fortgesetzt wird.

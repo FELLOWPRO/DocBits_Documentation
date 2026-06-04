@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Zweck:
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card uses AI to automatically compute surcharge amounts based on cost increases. It ensures consistent and accurate surcharge calculations, streamlining workflows and reducing manual effort.
+Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** nutzt KI, um Zuschlagsbeträge auf Basis von Kostensteigerungen automatisch zu berechnen. Sie sorgt für konsistente und präzise Zuschlagsberechnungen, optimiert Workflows und reduziert den manuellen Aufwand.
 
-## Components of the Card:
+## Bestandteile der Karte:
 
-* **Cost Increase Factor**
-  * **Description:** The multiplier or percentage applied to the base cost to calculate the surcharge.
-  * **Detail:** Determines the surcharge amount based on the cost increase (e.g., a factor of 1.10 for a 10% increase).
-* **Base Cost Field**
-  * **Description:** The field containing the original cost value used as the basis for the surcharge calculation.
-  * **Detail:** Selected automatically or defined within the workflow for reference during the calculation.
-* **Surcharge Field**
-  * **Description:** The field where the AI-calculated surcharge value is stored.
-  * **Detail:** This field reflects the calculated surcharge, making it available for further processing or reporting.
+* **Kostensteigerungsfaktor**
+  * **Beschreibung:** Der Multiplikator oder Prozentsatz, der auf die Basiskosten angewendet wird, um den Zuschlag zu berechnen.
+  * **Detail:** Bestimmt den Zuschlagsbetrag auf Basis der Kostensteigerung (z. B. ein Faktor von 1,10 für eine Steigerung um 10 %).
+* **Basiskostenfeld**
+  * **Beschreibung:** Das Feld, das den ursprünglichen Kostenwert enthält, der als Grundlage für die Zuschlagsberechnung dient.
+  * **Detail:** Wird automatisch ausgewählt oder innerhalb des Workflows definiert, um während der Berechnung als Referenz zu dienen.
+* **Zuschlagsfeld**
+  * **Beschreibung:** Das Feld, in dem der per KI berechnete Zuschlagswert gespeichert wird.
+  * **Detail:** Dieses Feld spiegelt den berechneten Zuschlag wider und macht ihn für die weitere Verarbeitung oder Berichterstattung verfügbar.
 
-## Functionality:
+## Funktionalität:
 
-**Condition Evaluation:**
+**Bedingungsauswertung:**
 
-* The card activates only if both the **"Where"** and **"And Sections"** conditions evaluate as true.
-* If either condition evaluates as false, no surcharge calculation is performed.
+* Die Karte wird nur aktiviert, wenn sowohl die Bedingungen im **"Where"**- als auch im **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* Wird eine der beiden Bedingungen als nicht erfüllt ausgewertet, wird keine Zuschlagsberechnung durchgeführt.
 
-**AI-Driven Calculation:**
+**KI-gestützte Berechnung:**
 
-* The system applies the **Cost Increase Factor** to the **Base Cost Field** to calculate the surcharge.
-* The result is stored in the **Surcharge Field**, ensuring accessibility for subsequent workflow steps.
+* Das System wendet den **Kostensteigerungsfaktor** auf das **Basiskostenfeld** an, um den Zuschlag zu berechnen.
+* Das Ergebnis wird im **Zuschlagsfeld** gespeichert und stellt so die Verfügbarkeit für nachfolgende Workflow-Schritte sicher.
 
-## Conclusion:
+## Fazit:
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card automates the application of surcharges based on cost increases. By leveraging AI for precision and consistency, this card eliminates manual calculations, enhances efficiency, and supports accurate cost management in automated workflows.
+Die Workflow-Karte **"AI Calculation for Cost Increase Surcharges"** automatisiert die Anwendung von Zuschlägen auf Basis von Kostensteigerungen. Indem sie KI für Präzision und Konsistenz nutzt, eliminiert diese Karte manuelle Berechnungen, steigert die Effizienz und unterstützt ein präzises Kostenmanagement in automatisierten Workflows.

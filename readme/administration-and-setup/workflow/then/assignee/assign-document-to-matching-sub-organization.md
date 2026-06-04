@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card assigns a document to a sub-organization dynamically, based on a specified field in the document. If no matching sub-organization is found, the card uses a predefined fallback sub-organization.
+Die Workflow-Karte **"Assign Document to Matching Sub-Organization Based on Field"** weist ein Dokument dynamisch einer Unterorganisation zu, basierend auf einem angegebenen Feld im Dokument. Wird keine passende Unterorganisation gefunden, verwendet die Karte eine vordefinierte Ersatz-Unterorganisation.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Field Name**
-   * **Description:** Specifies the document field to be used for determining the matching sub-organization.
-   * **Detail:** The card looks for a value in the specified field to match with an available sub-organization.
-2. **Sub-Organization (Fallback)**
-   * **Description:** Defines the fallback sub-organization to be used if no match is found in the specified field.
-   * **Detail:** If the field value does not match any sub-organization, the document will be assigned to the fallback sub-organization selected.
+1. **Feldname**
+   * **Beschreibung:** Gibt das Dokumentfeld an, das zur Bestimmung der passenden Unterorganisation verwendet wird.
+   * **Detail:** Die Karte sucht nach einem Wert im angegebenen Feld, um ihn mit einer verfügbaren Unterorganisation abzugleichen.
+2. **Unterorganisation (Ersatz)**
+   * **Beschreibung:** Legt die Ersatz-Unterorganisation fest, die verwendet wird, wenn im angegebenen Feld keine Übereinstimmung gefunden wird.
+   * **Detail:** Stimmt der Feldwert mit keiner Unterorganisation überein, wird das Dokument der ausgewählten Ersatz-Unterorganisation zugewiesen.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Dynamic Assignment:**\
-  The card checks the value of the specified field and assigns the document to the sub-organization that matches this value.
-* **Fallback Mechanism:**\
-  If no matching sub-organization is found, the document is assigned to the fallback sub-organization.
+* **Bedingungsauswertung:**\
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Dynamische Zuweisung:**\
+  Die Karte prüft den Wert des angegebenen Feldes und weist das Dokument der Unterorganisation zu, die diesem Wert entspricht.
+* **Ersatzmechanismus:**\
+  Wird keine passende Unterorganisation gefunden, wird das Dokument der Ersatz-Unterorganisation zugewiesen.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* **Select Field Name:**\
-  Choose the field from the document that contains the value to match with a sub-organization.
-* **Select Fallback Sub-Organization:**\
-  Choose the sub-organization that will be used if no match is found in the document field.
+* **Feldnamen auswählen:**\
+  Wählen Sie das Feld aus dem Dokument, das den Wert enthält, der mit einer Unterorganisation abgeglichen werden soll.
+* **Ersatz-Unterorganisation auswählen:**\
+  Wählen Sie die Unterorganisation, die verwendet wird, wenn im Dokumentfeld keine Übereinstimmung gefunden wird.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card offers flexibility by dynamically routing documents to the appropriate sub-organization, with an added fallback option to ensure no document is left unassigned.
+Die Workflow-Karte **"Assign Document to Matching Sub-Organization Based on Field"** bietet Flexibilität, indem sie Dokumente dynamisch an die passende Unterorganisation weiterleitet, mit einer zusätzlichen Ersatzoption, um sicherzustellen, dass kein Dokument unzugewiesen bleibt.

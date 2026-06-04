@@ -4,43 +4,43 @@ Estas tarjetas van en el grupo **Then** del Generador de flujos de trabajo: las 
 
 <figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Las tarjetas se añaden al grupo <strong>Then</strong> mediante <strong>Add Card</strong>.</p></figcaption></figure>
 
-**Covers:** 9 cards for modifying document fields and tables
+**Cubre:** 9 tarjetas para modificar campos y tablas de documentos
 
 ---
 
-## 📌 Version Information
+## 📌 Información de versión
 
-**Multi-Version Cards:** CALC_COLUMNS (v2), CALC_COLUMNS_REGEX (v2), EDIT_COLUMN (v2), AI_CALC_MTZ_ETZ (v2)
+**Tarjetas con varias versiones:** CALC_COLUMNS (v2), CALC_COLUMNS_REGEX (v2), EDIT_COLUMN (v2), AI_CALC_MTZ_ETZ (v2)
 
-**Version Pattern:** All field manipulation cards follow v1 → v2 pattern
-**Key Change:** v2 adds internationalization (i18n) support with translation keys
+**Patrón de versión:** Todas las tarjetas de manipulación de campos siguen el patrón v1 → v2
+**Cambio clave:** v2 añade soporte de internacionalización (i18n) con claves de traducción
 
 📖 [Complete Version History](../../../changelog/release.md#-data-manipulation-cards) | [Card Version Database](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-# Document Field Manipulation
+# Manipulación de campos de documento
 
-## Card: ACTION_SET_FIELD_TO_TEXT / Set Field to Text Value
+## Tarjeta: ACTION_SET_FIELD_TO_TEXT / Set Field to Text Value
 
-### Purpose
-Automatically fills a document field with specific text
+### Propósito
+Rellena automáticamente un campo del documento con un texto específico
 
-### When to Use
-- Populate field from decision
-- Set default values
-- Fill in standardized information
-- Update field based on conditions
+### Cuándo usar
+- Rellenar un campo a partir de una decisión
+- Establecer valores predeterminados
+- Rellenar información estandarizada
+- Actualizar un campo según condiciones
 
-### How It Works
+### Cómo funciona
 ```
 IF Condition is true
     THEN Set Field "Category" to Value "Premium"
 ```
 
-### Example Scenarios
+### Escenarios de ejemplo
 
-**Scenario 1: Set Approval Category**
+**Escenario 1: Establecer la categoría de aprobación**
 ```
 Condition: Invoice amount > €10,000
     ↓
@@ -49,7 +49,7 @@ Action: Set "Approval_Category" field to "High Value"
 Result: Document now shows "Approval_Category: High Value"
 ```
 
-**Scenario 2: Set Supplier Category**
+**Escenario 2: Establecer la categoría del proveedor**
 ```
 Condition: Supplier name contains "ABC"
     ↓
@@ -58,7 +58,7 @@ Action: Set "Supplier_Type" field to "Preferred Supplier"
 Result: Document marked as "Preferred Supplier"
 ```
 
-**Scenario 3: Set Processing Notes**
+**Escenario 3: Establecer notas de procesamiento**
 ```
 Condition: Document has been rejected
     ↓
@@ -67,50 +67,50 @@ Action: Set "Processing_Notes" to "Requires supplier revision"
 Result: Note appears for next processor
 ```
 
-### Parameters
+### Parámetros
 
 **Field Name**
-Which field to update
+Qué campo actualizar
 ```
 Examples: Category, Type, Status, Comment, Notes
 ```
 
 **Text Value**
-What to put in the field
+Qué poner en el campo
 ```
 Examples: "Approved", "Pending Review", "High Priority"
 ```
 
-### Configuration Steps
-1. Choose the field to fill
-2. Enter the text value
-3. Set conditions (when to fill)
-4. Save
+### Pasos de configuración
+1. Elija el campo que se va a rellenar
+2. Introduzca el valor de texto
+3. Establezca las condiciones (cuándo rellenarlo)
+4. Guarde
 
 ---
 
-## Card: ACTION_SET_BOOLEAN_FIELD / Set Checkbox Field
+## Tarjeta: ACTION_SET_BOOLEAN_FIELD / Set Checkbox Field
 
-### Purpose
-Automatically checks or unchecks a checkbox field
+### Propósito
+Marca o desmarca automáticamente un campo de casilla de verificación
 
-### When to Use
-- Mark as processed
-- Set approval flags
-- Enable/disable options
-- Mark for export
+### Cuándo usar
+- Marcar como procesado
+- Establecer indicadores de aprobación
+- Habilitar/deshabilitar opciones
+- Marcar para exportación
 
-### How It Works
+### Cómo funciona
 ```
 IF Condition is true
     THEN Check/Uncheck the "Approved" box
 ```
 
-### True = Checked, False = Unchecked
+### True = Marcada, False = Sin marcar
 
-**Examples:**
+**Ejemplos:**
 
-**Example 1: Mark as Verified**
+**Ejemplo 1: Marcar como verificado**
 ```
 Condition: PO matches perfectly
     ↓
@@ -119,7 +119,7 @@ Action: Check "Verified" checkbox
 Result: ✅ Verified (checked)
 ```
 
-**Example 2: Flag for Manual Review**
+**Ejemplo 2: Marcar para revisión manual**
 ```
 Condition: Price variance > 10%
     ↓
@@ -128,7 +128,7 @@ Action: Check "Requires_Manual_Review" checkbox
 Result: ✅ Requires_Manual_Review (marked)
 ```
 
-**Example 3: Uncheck Pre-filled Box**
+**Ejemplo 3: Desmarcar una casilla pre-marcada**
 ```
 Condition: Supplier is blacklisted
     ↓
@@ -137,7 +137,7 @@ Action: Uncheck "Approved_for_Payment" checkbox
 Result: ☐ Approved_for_Payment (unchecked - blocked)
 ```
 
-### Parameters
+### Parámetros
 ```
 Checkbox Field: [Choose field]
 Set To: ☑ Checked (✅ True)
@@ -146,18 +146,18 @@ Set To: ☑ Checked (✅ True)
 
 ---
 
-## Card: ACTION_INVERT_BOOLEAN_FIELD / Toggle Checkbox
+## Tarjeta: ACTION_INVERT_BOOLEAN_FIELD / Toggle Checkbox
 
-### Purpose
-Flips checkbox state (checked → unchecked, vice versa)
+### Propósito
+Invierte el estado de la casilla (marcada → sin marcar, y viceversa)
 
-### When to Use
-- Toggle approval status
-- Switch processing mode
-- Reverse previous state
-- Update boolean flags
+### Cuándo usar
+- Alternar el estado de aprobación
+- Cambiar el modo de procesamiento
+- Invertir el estado anterior
+- Actualizar indicadores booleanos
 
-### How It Works
+### Cómo funciona
 ```
 Current state: ✅ (Checked)
     ↓
@@ -174,7 +174,7 @@ ACTION_INVERT: Toggle the box
 New state: ✅ (Checked)
 ```
 
-### Example
+### Ejemplo
 ```
 Invoice received with "Priority" checked
     ↓
@@ -185,18 +185,18 @@ Checkbox now unchecked (no longer priority)
 
 ---
 
-## Card: ACTION_COPY_DOCFIELD_TO_DOCFIELD / Copy Field Value
+## Tarjeta: ACTION_COPY_DOCFIELD_TO_DOCFIELD / Copy Field Value
 
-### Purpose
-Copies value from one field to another field
+### Propósito
+Copia el valor de un campo a otro campo
 
-### When to Use
-- Copy supplier info to billing info
-- Duplicate data across fields
-- Standardize data format
-- Create backup of value
+### Cuándo usar
+- Copiar la información del proveedor a la información de facturación
+- Duplicar datos entre campos
+- Estandarizar el formato de los datos
+- Crear una copia de seguridad de un valor
 
-### How It Works
+### Cómo funciona
 ```
 Source Field: "Invoice_Supplier"  Value: "ABC Corp"
     ↓
@@ -207,9 +207,9 @@ Target Field: "Billing_Partner"  Value: "ABC Corp"
 Both fields now have same value
 ```
 
-### Real Examples
+### Ejemplos reales
 
-**Example 1: Copy Delivery Address**
+**Ejemplo 1: Copiar la dirección de entrega**
 ```
 Source: "Delivery_Address" = "123 Main St, Berlin"
     ↓
@@ -218,7 +218,7 @@ Copy to: "Billing_Address"
 Result: Both fields show "123 Main St, Berlin"
 ```
 
-**Example 2: Copy Supplier Code**
+**Ejemplo 2: Copiar el código del proveedor**
 ```
 Source: "Supplier_Code_External" = "SUPP-789"
     ↓
@@ -227,7 +227,7 @@ Copy to: "Supplier_Code_Internal"
 Result: Both codes match, system recognizes supplier
 ```
 
-**Example 3: Copy Amount for Validation**
+**Ejemplo 3: Copiar el importe para validación**
 ```
 Source: "Invoice_Total" = "€5000"
     ↓
@@ -236,33 +236,33 @@ Copy to: "Amount_to_Validate"
 Result: Validation field has correct amount
 ```
 
-### Parameters
+### Parámetros
 ```
 Source Field: [Choose field to copy FROM]
 Target Field: [Choose field to copy TO]
 ```
 
-### Notes
-- Original field unchanged
-- Target field overwritten with source value
-- Good for standardizing data
+### Notas
+- El campo original permanece sin cambios
+- El campo de destino se sobrescribe con el valor de origen
+- Útil para estandarizar datos
 
 ---
 
-# Table Manipulation
+# Manipulación de tablas
 
-## Card: EDIT_COLUMN / Edit Table Column
+## Tarjeta: EDIT_COLUMN / Edit Table Column
 
-### Purpose
-Changes values in a table column based on conditions
+### Propósito
+Cambia los valores de una columna de tabla según condiciones
 
-### When to Use
-- Fix pricing errors in line items
-- Update quantities
-- Correct item descriptions
-- Standardize values
+### Cuándo usar
+- Corregir errores de precios en las líneas
+- Actualizar cantidades
+- Corregir descripciones de artículos
+- Estandarizar valores
 
-### How It Works
+### Cómo funciona
 ```
 Table Column: "Unit_Price"
 Original Values: [100, 105, 103]
@@ -273,9 +273,9 @@ REPLACE: With new value
 Updated Column: [100, 110, 110] (example)
 ```
 
-### Example: Fix Pricing
+### Ejemplo: Corregir precios
 
-**Scenario: Prices in wrong currency**
+**Escenario: Precios en moneda incorrecta**
 ```
 Table "Line_Items" with column "Price"
 
@@ -288,7 +288,7 @@ Action: Replace with 95 (corrected price)
 Result: [95, 95, 95] (prices corrected)
 ```
 
-### Parameters
+### Parámetros
 ```
 Table: [Choose table]
 Column: [Choose column to edit]
@@ -297,26 +297,26 @@ Replace with: [New value]
 Condition: [When to apply]
 ```
 
-### Common Uses
-- Fix unit prices
-- Standardize descriptions
-- Correct quantities
-- Update SKU numbers
+### Usos comunes
+- Corregir precios unitarios
+- Estandarizar descripciones
+- Corregir cantidades
+- Actualizar números de SKU
 
 ---
 
-## Card: CALC_COLUMNS / Calculate Column Values
+## Tarjeta: CALC_COLUMNS / Calculate Column Values
 
-### Purpose
-Performs calculation on table columns and stores result
+### Propósito
+Realiza un cálculo sobre las columnas de la tabla y almacena el resultado
 
-### When to Use
-- Calculate line totals (Qty × Unit Price)
-- Sum columns
-- Calculate discounts
-- Compute percentages
+### Cuándo usar
+- Calcular los totales de línea (Qty × Unit Price)
+- Sumar columnas
+- Calcular descuentos
+- Calcular porcentajes
 
-### How It Works
+### Cómo funciona
 ```
 Column A (Quantity): 100
 Column B (Unit Price): €50
@@ -326,9 +326,9 @@ CALCULATE: A × B
 Column C (Line Total): €5000
 ```
 
-### Calculation Types
+### Tipos de cálculo
 
-**Type 1: Simple Multiplication**
+**Tipo 1: Multiplicación simple**
 ```
 Formula: Qty × Unit Price = Line Total
 
@@ -342,7 +342,7 @@ Config:
   Result Column: Line Total
 ```
 
-**Type 2: Addition**
+**Tipo 2: Suma**
 ```
 Formula: Base Price + Shipping + Tax = Total
 
@@ -358,7 +358,7 @@ Config:
   Result Column: Total
 ```
 
-**Type 3: Percentage Calculation**
+**Tipo 3: Cálculo de porcentaje**
 ```
 Formula: Amount × (1 + Tax%) = Total with Tax
 
@@ -371,7 +371,7 @@ Config:
   Result Column: Amount_with_Tax
 ```
 
-**Type 4: Subtraction**
+**Tipo 4: Resta**
 ```
 Formula: Original Price - Discount = Final Price
 
@@ -385,9 +385,9 @@ Config:
   Result Column: Final Price
 ```
 
-### Real-World Example
+### Ejemplo real
 
-**Invoice Line Items Calculation:**
+**Cálculo de las líneas de una factura:**
 ```
 Table: Invoice_Lines
 
@@ -412,7 +412,7 @@ Shipping: €100.00
 TOTAL: €7835.00
 ```
 
-### Parameters
+### Parámetros
 ```
 Table: [Select table]
 Column 1: [First column]
@@ -423,20 +423,20 @@ Result Column: [Where to put answer]
 
 ---
 
-## Card: CALC_COLUMNS_REGEX / Calculate with Regex Pattern
+## Tarjeta: CALC_COLUMNS_REGEX / Calculate with Regex Pattern
 
-### Purpose
-Calculates column values based on pattern matching
+### Propósito
+Calcula los valores de columna según la coincidencia de patrones
 
-### When to Use
-- Extract values from text using patterns
-- Format data based on rules
-- Convert values based on patterns
-- Parse structured text
+### Cuándo usar
+- Extraer valores de texto mediante patrones
+- Dar formato a los datos según reglas
+- Convertir valores según patrones
+- Analizar texto estructurado
 
-### How It Works
+### Cómo funciona
 
-**Regex Pattern Matching:**
+**Coincidencia de patrones regex:**
 ```
 Original Value: "ABC-12345-XYZ"
 Pattern: Extract numbers only
@@ -444,9 +444,9 @@ Calculation: Convert to "12345"
 Result: "12345"
 ```
 
-### Example: Extract Supplier Code
+### Ejemplo: Extraer el código del proveedor
 
-**Scenario: Article numbers contain supplier info**
+**Escenario: Los números de artículo contienen información del proveedor**
 ```
 Table Column: "Article_Code"
 Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
@@ -462,25 +462,25 @@ Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
 
-### Example: Format Phone Numbers
+### Ejemplo: Dar formato a números de teléfono
 
-**Scenario: Unformatted phone numbers**
+**Escenario: Números de teléfono sin formato**
 ```
 Original: "491234567890"
 Pattern: Format as: +49 123 4567 890
 Result: "+49 123 4567 890"
 ```
 
-### Example: Extract Prices from Text
+### Ejemplo: Extraer precios de un texto
 
-**Scenario: Prices in text format**
+**Escenario: Precios en formato de texto**
 ```
 Original: "Price is 99.99 EUR"
 Pattern: Extract number only
 Result: "99.99"
 ```
 
-### Parameters
+### Parámetros
 ```
 Table: [Select table]
 Column: [Column to analyze]
@@ -489,7 +489,7 @@ Replacement: [What to replace with]
 Result Column: [Where to store result]
 ```
 
-### Common Regex Patterns
+### Patrones regex comunes
 ```
 Numbers only: [0-9]+
 Letters only: [a-zA-Z]+
@@ -500,9 +500,9 @@ Date format: \d{4}-\d{2}-\d{2}
 
 ---
 
-# Calculation Examples
+# Ejemplos de cálculo
 
-## Example 1: Invoice Total Calculation
+## Ejemplo 1: Cálculo del total de una factura
 ```
 Step 1: Calculate line totals
   Each row: Qty × Unit Price
@@ -517,7 +517,7 @@ Step 4: Add shipping
   Final: €6500 + €1235 + €100 = €7835
 ```
 
-## Example 2: Variance Calculation
+## Ejemplo 2: Cálculo de variación
 ```
 PO Price: €100
 Invoice Price: €103
@@ -528,7 +528,7 @@ Variance = |3| / 100 × 100 = 3%
 Store in "Price_Variance%" column
 ```
 
-## Example 3: Discount Application
+## Ejemplo 3: Aplicación de descuento
 ```
 Original Price: €100
 Discount %: 10%
@@ -538,7 +538,7 @@ Final Price: €100 - €10 = €90
 
 ---
 
-# Field Manipulation Workflow Example
+# Ejemplo de flujo de trabajo de manipulación de campos
 
 ```
 Document arrives
@@ -562,60 +562,59 @@ Document now has all calculated and populated fields
 
 ---
 
-# Best Practices
+# Buenas prácticas
 
-✅ **Do:**
-- Keep formulas simple
-- Test calculations with sample data
-- Verify results make sense
-- Document why you're changing fields
-- Use copy field when data is same
+✅ **Haga:**
+- Mantenga las fórmulas simples
+- Pruebe los cálculos con datos de muestra
+- Verifique que los resultados tengan sentido
+- Documente por qué cambia los campos
+- Use la copia de campo cuando los datos sean los mismos
 
-❌ **Don't:**
-- Create circular references (A=B, B=A)
-- Overwrite important data without reason
-- Create overly complex regex patterns
-- Forget to verify calculation results
-- Calculate on wrong table/columns
+❌ **No haga:**
+- Crear referencias circulares (A=B, B=A)
+- Sobrescribir datos importantes sin motivo
+- Crear patrones regex demasiado complejos
+- Olvidar verificar los resultados de los cálculos
+- Calcular sobre la tabla/columnas incorrectas
 
 ---
 
-# Troubleshooting
+# Resolución de problemas
 
 ## "Field not updating"
-**Cause:** Condition not met or card not triggered
+**Causa:** No se cumple la condición o la tarjeta no se activa
 
-**Solution:**
-- Check condition is true
-- Verify card is in workflow
-- Test with sample data
-- Check for typos in field name
+**Solución:**
+- Compruebe que la condición es verdadera
+- Verifique que la tarjeta está en el flujo de trabajo
+- Pruebe con datos de muestra
+- Compruebe si hay errores tipográficos en el nombre del campo
 
 ## "Calculation result wrong"
-**Cause:** Wrong columns selected or formula incorrect
+**Causa:** Columnas incorrectas seleccionadas o fórmula incorrecta
 
-**Solution:**
-- Verify source columns
-- Check formula is correct
-- Test manually
-- Review decimal places/rounding
+**Solución:**
+- Verifique las columnas de origen
+- Compruebe que la fórmula es correcta
+- Pruebe manualmente
+- Revise los decimales/el redondeo
 
 ## "Table shows error"
-**Cause:** Referenced column doesn't exist
+**Causa:** La columna referenciada no existe
 
-**Solution:**
-- Verify column name spelling
-- Check column has data
-- Ensure column data type matches calculation
-- Add missing columns if needed
+**Solución:**
+- Verifique la ortografía del nombre de la columna
+- Compruebe que la columna tiene datos
+- Asegúrese de que el tipo de datos de la columna coincide con el cálculo
+- Añada las columnas que falten si es necesario
 
 ---
 
-# Related Cards
+# Tarjetas relacionadas
 
-- **ACTION_COPY_DOCFIELD_TO_DOCFIELD** - Copy values
-- **EDIT_COLUMN** - Change table values
-- **CALC_COLUMNS** - Calculate formulas
-- **ACTION_SET_FIELD_TO_TEXT** - Set text values
-- **ACTION_SET_BOOLEAN_FIELD** - Check boxes
-
+- **ACTION_COPY_DOCFIELD_TO_DOCFIELD** - Copiar valores
+- **EDIT_COLUMN** - Cambiar valores de tabla
+- **CALC_COLUMNS** - Calcular fórmulas
+- **ACTION_SET_FIELD_TO_TEXT** - Establecer valores de texto
+- **ACTION_SET_BOOLEAN_FIELD** - Marcar casillas

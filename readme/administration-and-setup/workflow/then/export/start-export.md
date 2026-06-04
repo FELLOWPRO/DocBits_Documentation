@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (285).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Start Export"** workflow card is designed to initiate the export process for a document. This card functions as a trigger within the workflow to seamlessly start the export operation once the conditions in the preceding sections are satisfied.
+La scheda di workflow **"Start Export"** è progettata per avviare il processo di esportazione di un documento. Questa scheda funge da trigger all'interno del workflow per avviare in modo fluido l'operazione di esportazione una volta soddisfatte le condizioni nelle sezioni precedenti.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Action**
-   1. **Description**: Initiates the export process for the document.
-   2. **Detail**: The card uses the configured export settings in the system to process and export the document.
+   1. **Descrizione**: Avvia il processo di esportazione del documento.
+   2. **Dettaglio**: La scheda utilizza le impostazioni di esportazione configurate nel sistema per elaborare ed esportare il documento.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. If all conditions are true, the export process begins.
-* **Document Export**: The document is processed and exported using the default or previously defined export configuration.
+* **Valutazione della condizione**: Il sistema valuta le condizioni impostate nelle sezioni **"Where"** e **"And"** del workflow. Se tutte le condizioni sono vere, il processo di esportazione inizia.
+* **Esportazione del documento**: Il documento viene elaborato ed esportato utilizzando la configurazione di esportazione predefinita o precedentemente definita.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-This card does not require specific configuration as it uses the export settings already defined in the system. Users need to ensure that:
+Questa scheda non richiede una configurazione specifica poiché utilizza le impostazioni di esportazione già definite nel sistema. Gli utenti devono assicurarsi che:
 
-1. The **"Where"** and **"And Sections"** conditions are correctly configured, as the card only executes if these conditions evaluate to true.
-2. A valid export configuration is associated with the document in the system.
+1. Le condizioni delle sezioni **"Where"** e **"And"** siano configurate correttamente, poiché la scheda viene eseguita solo se queste condizioni risultano vere.
+2. Una configurazione di esportazione valida sia associata al documento nel sistema.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Start Export"** workflow card provides a streamlined and automated way to trigger the export process. By relying on pre-configured settings and conditional evaluations, it ensures efficient and accurate document processing.
+La scheda di workflow **"Start Export"** offre un modo semplificato e automatizzato per attivare il processo di esportazione. Basandosi su impostazioni preconfigurate e valutazioni condizionali, garantisce un'elaborazione dei documenti efficiente e accurata.

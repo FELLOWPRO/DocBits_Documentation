@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (279).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This workflow card is designed to set a checkbox field to a specified value (true or false) based on the conditions defined in the **"Where"** and **"And"** sections. It provides a simple yet effective way to automate checkbox updates when certain criteria are met, ensuring streamlined document processing.
+Questa scheda di workflow è progettata per impostare un campo casella di controllo su un valore specificato (true o false) in base alle condizioni definite nelle sezioni **"Where"** e **"And"**. Offre un modo semplice ma efficace per automatizzare gli aggiornamenti delle caselle di controllo quando determinati criteri sono soddisfatti, garantendo un'elaborazione dei documenti semplificata.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Field Name:**
-   * **Description**: Specifies the field where the checkbox will be set.
-   * **Detail**: The checkbox field to be updated is identified by the field name.
+   * **Descrizione**: Specifica il campo in cui verrà impostata la casella di controllo.
+   * **Dettaglio**: Il campo casella di controllo da aggiornare è identificato dal nome del campo.
 2. **Boolean**
-   * **Description**: Defines the value that the checkbox field will be set to when the conditions in the **Where** and **And Sections** are both true.
-   * **Options**:
-     * **True**: The checkbox will be set to **true** if the conditions are met.
-     * **False**: The checkbox will be set to **false** if the conditions are met.
+   * **Descrizione**: Definisce il valore su cui verrà impostato il campo casella di controllo quando entrambe le condizioni nelle sezioni **Where** e **And** sono vere.
+   * **Opzioni**:
+     * **True**: La casella di controllo verrà impostata su **true** se le condizioni sono soddisfatte.
+     * **False**: La casella di controllo verrà impostata su **false** se le condizioni sono soddisfatte.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation**: The system evaluates the conditions in both the **"Where"** and **"And"**&#x20;
-* **Action Execution**: If both the **"Where"** and **"And Sections"** evaluate to true, the checkbox field will be updated to the specified value (true or false). If either condition is false, no actions are taken, and the checkbox remains as it was.
+* **Valutazione della condizione**: Il sistema valuta le condizioni sia nella sezione **"Where"** che nella sezione **"And"**.&#x20;
+* **Esecuzione dell'azione**: Se sia la sezione **"Where"** che la sezione **"And"** risultano vere, il campo casella di controllo verrà aggiornato al valore specificato (true o false). Se una delle condizioni è falsa, non viene intrapresa alcuna azione e la casella di controllo rimane com'era.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-To configure this card, users need to:
+Per configurare questa scheda, gli utenti devono:
 
-1. **Specify the target checkbox field** that will be set to true or false when the conditions are met.
-2. **Choose the value (true or false)** that the checkbox will be set to upon condition evaluation.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. **Specificare il campo casella di controllo di destinazione** che verrà impostato su true o false quando le condizioni sono soddisfatte.
+2. **Scegliere il valore (true o false)** su cui verrà impostata la casella di controllo al momento della valutazione della condizione.
+3. La scheda esegue la sua azione solo se entrambe le condizioni nelle sezioni **"Where"** e **"And"** risultano vere.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Set Checkbox"** workflow card is a simple and effective automation tool to update checkbox fields based on specific conditions. By ensuring both **"Where"** and **"And Sections"** are met, it allows users to automate processes and reduce manual intervention, ensuring smoother and more efficient document processing.
+La scheda di workflow **"Set Checkbox"** è uno strumento di automazione semplice ed efficace per aggiornare i campi casella di controllo in base a condizioni specifiche. Garantendo che sia la sezione **"Where"** che la sezione **"And"** siano soddisfatte, consente agli utenti di automatizzare i processi e ridurre l'intervento manuale, assicurando un'elaborazione dei documenti più fluida ed efficiente.

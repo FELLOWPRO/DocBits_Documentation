@@ -2,40 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/image (283).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Change Status"** workflow card is used to change the status of a document to one of the predefined states—**Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval**—and optionally trigger associated workflows based on the status change. This card automates the process of status updates and workflow triggers, ensuring efficient document management and error handling.
+La scheda di workflow **"Change Status"** viene utilizzata per cambiare lo stato di un documento in uno degli stati predefiniti — **Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval** — e, facoltativamente, attivare i workflow associati in base al cambiamento di stato. Questa scheda automatizza il processo di aggiornamento degli stati e di attivazione dei workflow, garantendo una gestione documentale efficiente e una corretta gestione degli errori.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Status**
-   * **Description**: Specifies the new status to be applied to the document.
-   * **Options**:
-     * **Error**: Marks the document as having encountered an error.
-     * **Rejected**: Indicates the document has been rejected and will not proceed further.
-     * **Ready for Validation**: Sets the document to be reviewed and validated by the next user or system process.
-     * **Pending Approval**: Places the document in a pending state for approval.
-     * **Pending Second Approval**: Puts the document on hold for a second level of approval if applicable.
+   * **Descrizione**: Specifica il nuovo stato da applicare al documento.
+   * **Opzioni**:
+     * **Error**: Contrassegna il documento come affetto da un errore.
+     * **Rejected**: Indica che il documento è stato rifiutato e non proseguirà ulteriormente.
+     * **Ready for Validation**: Imposta il documento per essere revisionato e validato dall'utente o dal processo di sistema successivo.
+     * **Pending Approval**: Mette il documento in uno stato di attesa per l'approvazione.
+     * **Pending Second Approval**: Mette il documento in attesa di un secondo livello di approvazione, se applicabile.
 2. **Trigger Workflows**
-   * **Description**: Determines whether any subsequent workflows should be triggered after the status change.
-   * **Options**:
-     * **True**: Initiates any relevant workflows based on the status change.
-     * **False**: Prevents workflow execution after the status change.
+   * **Descrizione**: Determina se eventuali workflow successivi debbano essere attivati dopo il cambiamento di stato.
+   * **Opzioni**:
+     * **True**: Avvia eventuali workflow pertinenti in base al cambiamento di stato.
+     * **False**: Impedisce l'esecuzione dei workflow dopo il cambiamento di stato.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections."** If these conditions are true, the card proceeds to change the document's status to the selected value.
-* **Status Update**: Once the conditions are satisfied, the document's status is updated to one of the predefined options (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), depending on the user’s selection.
-* **Trigger Workflow Action**: If **Trigger Workflows** is set to **True**, the system automatically initiates any associated workflows following the status update. If set to **False**, no additional workflows are triggered, and the process ends with the status change.
+* **Valutazione della condizione**: Il sistema valuta le condizioni impostate nelle sezioni **"Where"** e **"And"**. Se queste condizioni sono vere, la scheda procede a cambiare lo stato del documento al valore selezionato.
+* **Aggiornamento dello stato**: Una volta soddisfatte le condizioni, lo stato del documento viene aggiornato a una delle opzioni predefinite (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), a seconda della selezione dell'utente.
+* **Attivazione dell'azione di workflow**: Se **Trigger Workflows** è impostato su **True**, il sistema avvia automaticamente eventuali workflow associati dopo l'aggiornamento dello stato. Se impostato su **False**, non vengono attivati workflow aggiuntivi e il processo termina con il cambiamento di stato.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-To configure this card, users need to:
+Per configurare questa scheda, gli utenti devono:
 
-1. Specify the desired **Status** that the document will be set to upon condition evaluation (Error, Rejected, Ready for Validation, Pending Approval, or Pending Second Approval).
-2. Choose whether to **Trigger Workflows** after the status change by selecting **True** or **False**.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. Specificare lo **Status** desiderato su cui verrà impostato il documento al momento della valutazione della condizione (Error, Rejected, Ready for Validation, Pending Approval o Pending Second Approval).
+2. Scegliere se **Trigger Workflows** dopo il cambiamento di stato selezionando **True** o **False**.
+3. La scheda esegue la sua azione solo se entrambe le condizioni nelle sezioni **"Where"** e **"And"** risultano vere.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Change Status"** workflow card offers a streamlined approach to managing document statuses and triggering related workflows. It ensures documents are automatically routed to the correct status and that the necessary actions are taken, depending on the status change. By setting clear conditions for execution, it reduces manual effort and enhances workflow efficiency.
+La scheda di workflow **"Change Status"** offre un approccio semplificato per gestire gli stati dei documenti e attivare i workflow correlati. Garantisce che i documenti vengano automaticamente instradati allo stato corretto e che vengano intraprese le azioni necessarie, a seconda del cambiamento di stato. Impostando condizioni chiare per l'esecuzione, riduce lo sforzo manuale e migliora l'efficienza del workflow.

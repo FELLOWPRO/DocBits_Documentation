@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (278).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This workflow card is designed to automatically set a specified field in the document to a predefined text value based on the conditions defined in the **"Where"** and **"And Sections."** It allows users to streamline data entry by ensuring fields are populated with consistent values when certain criteria are met.
+Questa scheda di workflow è progettata per impostare automaticamente un campo specificato del documento su un valore testuale predefinito in base alle condizioni definite nelle sezioni **"Where"** e **"And"**. Consente agli utenti di semplificare l'inserimento dei dati garantendo che i campi vengano popolati con valori coerenti quando determinati criteri sono soddisfatti.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Field Name**
-   * **Description**: Specifies the field that will be updated with the text value.&#x20;
-   * **Detail**: The field selected will be updated with the specified text value if the conditions in the **"Where"** and **"And Sections"** are met.
+   * **Descrizione**: Specifica il campo che verrà aggiornato con il valore testuale.&#x20;
+   * **Dettaglio**: Il campo selezionato verrà aggiornato con il valore testuale specificato se le condizioni nelle sezioni **"Where"** e **"And"** sono soddisfatte.
 2. **Text**
-   * **Description**: Defines the text value that will be set in the target field when the conditions evaluate as true.
-   * **Detail**: This can be a custom message, status, or predefined value that the user wishes to write into the field. The text should align with the field's expected input format (e.g., alphanumeric, date, or other types of textual information).
+   * **Descrizione**: Definisce il valore testuale che verrà impostato nel campo di destinazione quando le condizioni risultano vere.
+   * **Dettaglio**: Può essere un messaggio personalizzato, uno stato o un valore predefinito che l'utente desidera scrivere nel campo. Il testo dovrebbe essere allineato al formato di input previsto del campo (es. alfanumerico, data o altri tipi di informazioni testuali).
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation**: The system evaluates the conditions in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the actions defined in the **"Then Section"** will be executed. Specifically, the target field (Field Name) will be populated with the specified text.
-  * If **either the "Where" or the "And" section is false**, no action is taken, and the field remains unchanged. The **Then Section** actions are skipped entirely if either condition is false.
-* **Action Execution**: If both conditions in the **"Where"** and **"And Sections"** are met, the system automatically populates the specified field with the chosen text value. If the conditions are not met, no changes are made to the field.
+* **Valutazione della condizione**: Il sistema valuta le condizioni nelle sezioni **"Where"** e **"And"**:
+  * Se **entrambe le condizioni sono vere**, verranno eseguite le azioni definite nella sezione **"Then"**. Nello specifico, il campo di destinazione (Field Name) verrà popolato con il testo specificato.
+  * Se **la sezione "Where" o la sezione "And" è falsa**, non viene intrapresa alcuna azione e il campo rimane invariato. Le azioni della sezione **Then** vengono completamente saltate se una delle condizioni è falsa.
+* **Esecuzione dell'azione**: Se entrambe le condizioni nelle sezioni **"Where"** e **"And"** sono soddisfatte, il sistema popola automaticamente il campo specificato con il valore testuale scelto. Se le condizioni non sono soddisfatte, non viene apportata alcuna modifica al campo.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-To set up this card:
+Per configurare questa scheda:
 
-1. **Select the field** (Field Name) that will be updated with the text value. The available fields in the document are listed for selection.
-2. **Specify the text value** that will be written into the target field when the conditions are true.
-3. The action will only execute if both the **"Where"** and **"And Sections"** conditions evaluate to true.
+1. **Seleziona il campo** (Field Name) che verrà aggiornato con il valore testuale. I campi disponibili nel documento sono elencati per la selezione.
+2. **Specifica il valore testuale** che verrà scritto nel campo di destinazione quando le condizioni sono vere.
+3. L'azione verrà eseguita solo se entrambe le condizioni nelle sezioni **"Where"** e **"And"** risultano vere.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Set Field to Text"** workflow card offers a straightforward way to automate the population of text values into specific document fields based on predefined conditions. This reduces manual data entry and ensures consistency in document processing, making it a useful tool for automating workflows and enhancing efficiency.
+La scheda di workflow **"Set Field to Text"** offre un modo diretto per automatizzare il popolamento di valori testuali in campi specifici del documento in base a condizioni predefinite. Ciò riduce l'inserimento manuale dei dati e garantisce coerenza nell'elaborazione dei documenti, rendendola uno strumento utile per automatizzare i workflow e migliorare l'efficienza.

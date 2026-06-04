@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (282).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Reject the Document"** workflow card is used to mark a document as rejected within a workflow. This action halts the document’s progress and prevents it from moving to the next stage in the workflow. It ensures that documents which do not meet the necessary conditions or criteria are flagged and prevented from further processing.
+La scheda di workflow **"Reject the Document"** viene utilizzata per contrassegnare un documento come rifiutato all'interno di un workflow. Questa azione arresta l'avanzamento del documento e ne impedisce il passaggio alla fase successiva del workflow. Garantisce che i documenti che non soddisfano le condizioni o i criteri necessari vengano segnalati e bloccati da ulteriori elaborazioni.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Rejection Status**
-   * **Description**: This component marks the document as rejected, signaling that it did not meet the required conditions for approval.
-   * **Detail**: When triggered, this card updates the document’s status to "rejected." This decision is made based on the conditions set in the **"Where"** and **"And Sections."**
+   * **Descrizione**: Questo componente contrassegna il documento come rifiutato, segnalando che non ha soddisfatto le condizioni richieste per l'approvazione.
+   * **Dettaglio**: Quando viene attivata, questa scheda aggiorna lo stato del documento a "rifiutato". Questa decisione viene presa in base alle condizioni impostate nelle sezioni **"Where"** e **"And"**.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"**.
-  * If **both conditions are true**, the document will be rejected.
-  * If **either condition is false**, the card will not execute, and the document’s status will remain unchanged.
-* **Action Execution**: When the conditions are satisfied, the document is marked as rejected. This action ensures that only documents that meet specific criteria proceed further, while others are flagged and halted for review or correction.
+* **Valutazione della condizione**: Il sistema valuta le condizioni impostate nelle sezioni **"Where"** e **"And"**.
+  * Se **entrambe le condizioni sono vere**, il documento verrà rifiutato.
+  * Se **una delle condizioni è falsa**, la scheda non verrà eseguita e lo stato del documento rimarrà invariato.
+* **Esecuzione dell'azione**: Quando le condizioni sono soddisfatte, il documento viene contrassegnato come rifiutato. Questa azione garantisce che solo i documenti che soddisfano criteri specifici proseguano, mentre gli altri vengono segnalati e bloccati per la revisione o la correzione.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Reject the Document"** workflow card is an essential tool for controlling document flow in automated processes. By allowing rejection of non-compliant documents, it ensures that only valid and accurate documents continue through the workflow, improving efficiency and accuracy in document management.
+La scheda di workflow **"Reject the Document"** è uno strumento essenziale per controllare il flusso dei documenti nei processi automatizzati. Consentendo il rifiuto dei documenti non conformi, garantisce che solo i documenti validi e accurati proseguano attraverso il workflow, migliorando l'efficienza e l'accuratezza nella gestione documentale.

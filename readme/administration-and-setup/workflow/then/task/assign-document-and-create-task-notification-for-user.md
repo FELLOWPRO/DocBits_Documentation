@@ -2,62 +2,62 @@
 
 <figure><img src="../../../../.gitbook/assets/image (13) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The "**Assign Document and Create Task/Notification for User**" workflow card assigns a document to a specified user, creates a task or notification with configurable details, and optionally sends an email notification to the user. This card also enables setting a numeric priority value to determine the order of execution.
+Kartica radnog toka "**Assign Document and Create Task/Notification for User**" dodeljuje dokument navedenom korisniku, kreira zadatak ili obaveštenje sa podesivim detaljima i opciono šalje obaveštenje putem e-pošte korisniku. Ova kartica takođe omogućava postavljanje numeričke vrednosti prioriteta za određivanje redosleda izvršavanja.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **User**
-   * **Description:** Specifies the user who will receive the task or notification.
-   * **Detail:** A dropdown menu to select the user to whom the document and task/notification will be assigned.
+   * **Opis:** Navodi korisnika koji će primiti zadatak ili obaveštenje.
+   * **Detalj:** Padajući meni za izbor korisnika kome će dokument i zadatak/obaveštenje biti dodeljeni.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the user.
-   * **Detail:** A dropdown to choose either "Task" or "Notification" based on the intended action.
+   * **Opis:** Navodi tip akcije koja se kreira za korisnika.
+   * **Detalj:** Padajući meni za izbor "Task" ili "Notification" na osnovu nameravane akcije.
 3. **Title**
-   * **Description:** The title of the task or notification.
-   * **Detail:** A field to provide a concise, descriptive title for the task or notification.
+   * **Opis:** Naslov zadatka ili obaveštenja.
+   * **Detalj:** Polje za pružanje sažetog, opisnog naslova za zadatak ili obaveštenje.
 4. **Description**
-   * **Description:** Additional details about the task or notification.
-   * **Detail:** A field to describe the task’s purpose or provide context for the notification.
+   * **Opis:** Dodatni detalji o zadatku ili obaveštenju.
+   * **Detalj:** Polje za opisivanje svrhe zadatka ili pružanje konteksta za obaveštenje.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Opis:** Definiše nivo hitnosti zadatka ili obaveštenja.
+   * **Opcije:**
+     * **High:** Zahteva neposrednu pažnju.
+     * **Medium:** Važno ali ne hitno.
+     * **Low:** Može se rešiti kasnije.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the user.
-   * **Options:**
-     * **True:** Sends an email notification to the user.
-     * **False:** No email notification is sent.
+   * **Opis:** Konfiguriše da li se obaveštenje putem e-pošte šalje korisniku.
+   * **Opcije:**
+     * **True:** Šalje obaveštenje putem e-pošte korisniku.
+     * **False:** Ne šalje se obaveštenje putem e-pošte.
 7. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where lower numbers indicate higher priority.
+   * **Opis:** Postavlja numerički prioritet za dodelu dokumenta.
+   * **Detalj:** Polje za unos numeričke vrednosti, gde niži brojevi označavaju viši prioritet.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the configured workflow conditions are met.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the user specified in the "User" field. A task or notification is created with the provided title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email is sent to the user notifying them about the task or notification.
+* **Procena uslova:**\
+  Kartica izvršava svoje akcije samo ako su konfigurisani uslovi radnog toka ispunjeni.
+* **Dodela dokumenta i kreiranje zadatka/obaveštenja:**\
+  Dokument se dodeljuje korisniku navedenom u polju "User". Kreira se zadatak ili obaveštenje sa pruženim naslovom, opisom i nivoom prioriteta.
+* **Obaveštenje putem e-pošte:**\
+  Ako je "Send Mail" postavljeno na True, e-pošta se šalje korisniku da ga obavesti o zadatku ili obaveštenju.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-1. **Select User:**
-   * Choose the user from the User dropdown menu.
-2. **Configure Task/Notification Details:**
-   * Select "Task" or "Notification" from the Task/Notification dropdown.
-   * Enter the Title and Description for the task or notification.
-   * Set the Priority by selecting High, Medium, or Low from the dropdown.
-3. **Enable Email Notification:**
-   * Configure the Send Mail option to True or False, depending on whether an email notification should be sent.
-4. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment’s priority, where lower values are processed first.
-5. Save the card configuration and activate the workflow.
+1. **Izbor korisnika:**
+   * Izaberite korisnika iz padajućeg menija User.
+2. **Konfiguracija detalja zadatka/obaveštenja:**
+   * Izaberite "Task" ili "Notification" iz padajućeg menija Task/Notification.
+   * Unesite Title i Description za zadatak ili obaveštenje.
+   * Postavite Priority izborom High, Medium ili Low iz padajućeg menija.
+3. **Omogućavanje obaveštenja putem e-pošte:**
+   * Konfigurišite opciju Send Mail na True ili False, u zavisnosti od toga da li obaveštenje putem e-pošte treba poslati.
+4. **Postavljanje numeričkog prioriteta:**
+   * Unesite numeričku vrednost u polje Value da odredite prioritet dodele, gde se niže vrednosti obrađuju prve.
+5. Sačuvajte konfiguraciju kartice i aktivirajte radni tok.
 
-## **Conclusion**
+## **Zaključak**
 
-The "Assign Document and Create Task/Notification for User" workflow card ensures documents are assigned to the appropriate user while creating tasks or notifications with defined priorities and optional email notifications. This card helps streamline task delegation and enhances workflow efficiency.
+Kartica radnog toka "Assign Document and Create Task/Notification for User" obezbeđuje da se dokumenti dodeljuju odgovarajućem korisniku uz kreiranje zadataka ili obaveštenja sa definisanim prioritetima i opcionim obaveštenjima putem e-pošte. Ova kartica pomaže u pojednostavljenju delegiranja zadataka i poboljšava efikasnost radnog toka.

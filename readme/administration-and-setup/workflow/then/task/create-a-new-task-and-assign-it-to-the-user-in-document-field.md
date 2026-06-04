@@ -2,64 +2,64 @@
 
 <figure><img src="../../../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Create Field-Based Task or Notification"** workflow card is used to create tasks or notifications dynamically assigned to users identified within specific document fields. This card provides an optional fallback mechanism to ensure smooth workflow execution even when the document field does not specify a valid user.
+Kartica radnog toka **"Create Field-Based Task or Notification"** se koristi za kreiranje zadataka ili obaveštenja koja se dinamično dodeljuju korisnicima identifikovanim unutar određenih polja dokumenta. Ova kartica pruža opcioni mehanizam rezerve kako bi se obezbedilo neometano izvršavanje radnog toka čak i kada polje dokumenta ne navodi validnog korisnika.
 
-## **Components of the Card:**&#x20;
+## **Komponente kartice:**&#x20;
 
 1. **Title**
-   * **Description**: Specifies the task or notification title.
-   * **Detail**: Used to name and identify the task or notification being created.
+   * **Opis**: Navodi naslov zadatka ili obaveštenja.
+   * **Detalj**: Koristi se za imenovanje i identifikaciju zadatka ili obaveštenja koje se kreira.
 2. **Description**
-   * **Description**: Provides additional details about the task or notification.
-   * **Detail**: Ensures the recipient understands the purpose and context of the task or notification.
+   * **Opis**: Pruža dodatne detalje o zadatku ili obaveštenju.
+   * **Detalj**: Obezbeđuje da primalac razume svrhu i kontekst zadatka ili obaveštenja.
 3. **Priority**
-   * **Description**: Defines the urgency of the task or notification.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but less urgent.
-     * **Low**: Can be addressed at a later time.
+   * **Opis**: Definiše hitnost zadatka ili obaveštenja.
+   * **Opcije**:
+     * **High**: Zahteva neposrednu pažnju.
+     * **Medium**: Važno ali manje hitno.
+     * **Low**: Može se rešiti kasnije.
 4. **Field Name**
-   * **Description**: Specifies the document field that will be used to assign the task or notification.
-   * **Detail**: The field selected will dynamically determine the user to whom the task or notification will be assigned. If the field is empty or invalid, the task or notification will be assigned to the fallback user selected from the dropdown list.
+   * **Opis**: Navodi polje dokumenta koje će se koristiti za dodelu zadatka ili obaveštenja.
+   * **Detalj**: Izabrano polje će dinamično odrediti korisnika kome će zadatak ili obaveštenje biti dodeljeni. Ako je polje prazno ili nevažeće, zadatak ili obaveštenje će biti dodeljeni rezervnom korisniku izabranom iz padajuće liste.
 5. **Email Notification**
-   * **Description**: Configures whether the assigned user is notified by email.
-   * **Options**:
-     * **True**: Sends an email notification to the assigned user.
-     * **False**: No email notification is sent.
+   * **Opis**: Konfiguriše da li je dodeljeni korisnik obavešten putem e-pošte.
+   * **Opcije**:
+     * **True**: Šalje obaveštenje putem e-pošte dodeljenom korisniku.
+     * **False**: Ne šalje se obaveštenje putem e-pošte.
 6. **Fallback User**
-   * **Description**: Allows the selection of a user from a dropdown list to assign the task or notification when no valid user is found in the document field.
-   * **Detail**: Ensures the task or notification is assigned even if the document field is empty or invalid.
+   * **Opis**: Omogućava izbor korisnika iz padajuće liste za dodelu zadatka ili obaveštenja kada se ne pronađe validan korisnik u polju dokumenta.
+   * **Detalj**: Obezbeđuje da se zadatak ili obaveštenje dodele čak i ako je polje dokumenta prazno ili nevažeće.
 
-## **Additional Components in Version 3:**
+## **Dodatne komponente u Verziji 3:**
 
 1. **Notification Type**&#x20;
-   * **Description**: Specifies whether the card creates a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task assigned to the specified user.
-     * **Notification**: Sends a notification instead of creating a task.
+   * **Opis**: Navodi da li kartica kreira zadatak ili obaveštenje.
+   * **Opcije**:
+     * **Task**: Kreira zadatak dodeljen navedenom korisniku.
+     * **Notification**: Šalje obaveštenje umesto kreiranja zadatka.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**:\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task or Notification Creation**:
-  * Assigns the task or notification to the user identified in the document field.
-  * In Version 3, allows creating either a task or a notification.
-* **Fallback Mechanism**:\
-  If the document field does not identify a valid user, the card assigns the task or notification to the fallback user selected from the dropdown list.
-* **Email Notification**:\
-  Sends an email notification to the assigned user if configured to do so.
+* **Procena uslova**:\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Kreiranje zadatka ili obaveštenja**:
+  * Dodeljuje zadatak ili obaveštenje korisniku identifikovanom u polju dokumenta.
+  * U Verziji 3, omogućava kreiranje bilo zadatka bilo obaveštenja.
+* **Mehanizam rezerve**:\
+  Ako polje dokumenta ne identifikuje validnog korisnika, kartica dodeljuje zadatak ili obaveštenje rezervnom korisniku izabranom iz padajuće liste.
+* **Obaveštenje putem e-pošte**:\
+  Šalje obaveštenje putem e-pošte dodeljenom korisniku ako je tako konfigurisano.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-1. **Define Task or Notification Details**: Enter the title, description, and priority.
-2. **Select the Document Field**: Choose the field that specifies the user for task or notification assignment.
-3. **Enable Email Notification**: Specify whether an email notification should be sent to the assigned user.
-4. **Select Fallback User**: Choose a fallback user from the dropdown list for assignment if the document field does not identify a valid user.
-5. **Specify Notification Type (Version 3)**: Indicate whether the card creates a task or notification.
+1. **Definisanje detalja zadatka ili obaveštenja**: Unesite naslov, opis i prioritet.
+2. **Izbor polja dokumenta**: Izaberite polje koje navodi korisnika za dodelu zadatka ili obaveštenja.
+3. **Omogućavanje obaveštenja putem e-pošte**: Navedite da li obaveštenje putem e-pošte treba poslati dodeljenom korisniku.
+4. **Izbor rezervnog korisnika**: Izaberite rezervnog korisnika iz padajuće liste za dodelu ako polje dokumenta ne identifikuje validnog korisnika.
+5. **Navođenje tipa obaveštenja (Verzija 3)**: Naznačite da li kartica kreira zadatak ili obaveštenje.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Create Field-Based Task or Notification"** workflow card streamlines task and notification management by dynamically assigning responsibilities based on document fields. Its fallback user mechanism and enhanced options in Version 3 provide flexibility, ensuring tasks or notifications are always assigned, even when document data is incomplete.
+Kartica radnog toka **"Create Field-Based Task or Notification"** pojednostavljuje upravljanje zadacima i obaveštenjima dinamičkim dodeljivanjem odgovornosti na osnovu polja dokumenta. Njen mehanizam rezervnog korisnika i poboljšane opcije u Verziji 3 pružaju fleksibilnost, obezbeđujući da zadaci ili obaveštenja uvek budu dodeljeni, čak i kada su podaci dokumenta nepotpuni.

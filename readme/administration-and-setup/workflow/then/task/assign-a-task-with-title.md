@@ -2,63 +2,63 @@
 
 <figure><img src="../../../../.gitbook/assets/image (291).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The "Assign Task / Notification from Decision Table" workflow card is designed to dynamically assign tasks or notifications based on the results of a decision table. This card ensures tasks or notifications are assigned to the correct user or group according to the logic defined in the decision table, with an optional email notification sent to the recipient.
+Kartica radnog toka "Assign Task / Notification from Decision Table" je dizajnirana da dinamično dodeljuje zadatke ili obaveštenja na osnovu rezultata tabele odlučivanja. Ova kartica obezbeđuje da se zadaci ili obaveštenja dodeljuju ispravnom korisniku ili grupi u skladu sa logikom definisanom u tabeli odlučivanja, uz opciono obaveštenje putem e-pošte koje se šalje primaocu.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Title**
-   * **Description**: Specifies the title of the task or notification being created.
-   * **Detail**: The title should provide context and describe the purpose of the task or notification.
+   * **Opis**: Navodi naslov zadatka ili obaveštenja koje se kreira.
+   * **Detalj**: Naslov treba da pruži kontekst i opiše svrhu zadatka ili obaveštenja.
 2. **Description**
-   * **Description**: Defines the content or purpose of the task or notification.
-   * **Detail**: Provides additional information about the task or notification, explaining the context or action required.
+   * **Opis**: Definiše sadržaj ili svrhu zadatka ili obaveštenja.
+   * **Detalj**: Pruža dodatne informacije o zadatku ili obaveštenju, objašnjavajući kontekst ili potrebnu akciju.
 3. **Priority**
-   * **Description**: Defines the urgency level of the task or notification.
-   * **Options**:
-     * **High**: Tasks or notifications requiring immediate attention.
-     * **Medium**: Important tasks that should be addressed promptly.
-     * **Low**: Tasks that can be attended to at a later time.
+   * **Opis**: Definiše nivo hitnosti zadatka ili obaveštenja.
+   * **Opcije**:
+     * **High**: Zadaci ili obaveštenja koji zahtevaju neposrednu pažnju.
+     * **Medium**: Važni zadaci koji treba da se reše bez odlaganja.
+     * **Low**: Zadaci kojima se može posvetiti pažnja kasnije.
 4. **Assignee Type**
-   * **Description**: Specifies the user or group assigned to the task or notification based on the decision table’s output.
-   * **Detail**: The decision table dynamically evaluates conditions and returns the appropriate user or group for assignment.
+   * **Opis**: Navodi korisnika ili grupu dodeljenu zadatku ili obaveštenju na osnovu izlaza tabele odlučivanja.
+   * **Detalj**: Tabela odlučivanja dinamično procenjuje uslove i vraća odgovarajućeg korisnika ili grupu za dodelu.
 5. **Email Notification**
-   * **Description**: Configures whether an email notification will be sent to the assigned user or group.
-   * **Options**:
-     * **True**: Sends an email notification to the recipient.
-     * **False**: No email notification is sent.
+   * **Opis**: Konfiguriše da li će se obaveštenje putem e-pošte poslati dodeljenom korisniku ili grupi.
+   * **Opcije**:
+     * **True**: Šalje obaveštenje putem e-pošte primaocu.
+     * **False**: Ne šalje se obaveštenje putem e-pošte.
 
-#### **Additional Components in Version 3**
+#### **Dodatne komponente u Verziji 3**
 
 1. **Notification Type**
-   * **Description**: Specifies whether the card creates a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task assigned to the user or group from the decision table.
-     * **Notification**: Sends a notification to the user or group from the decision table.
+   * **Opis**: Navodi da li kartica kreira zadatak ili obaveštenje.
+   * **Opcije**:
+     * **Task**: Kreira zadatak dodeljen korisniku ili grupi iz tabele odlučivanja.
+     * **Notification**: Šalje obaveštenje korisniku ili grupi iz tabele odlučivanja.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task / Notification Assignment**\
-  The card assigns the task or notification to the user or group identified by the decision table. The decision table dynamically evaluates predefined conditions and returns the corresponding recipient.
-* **Email Notification**\
-  If configured to do so, an email notification is sent to the assigned user or group.
-* **Version 3 Functionality**\
-  In Version 3, the card allows the creation of either a Task or a Notification, providing more flexibility for task management and communication.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Dodela zadatka / obaveštenja**\
+  Kartica dodeljuje zadatak ili obaveštenje korisniku ili grupi identifikovanoj tabelom odlučivanja. Tabela odlučivanja dinamično procenjuje unapred definisane uslove i vraća odgovarajućeg primaoca.
+* **Obaveštenje putem e-pošte**\
+  Ako je tako konfigurisano, obaveštenje putem e-pošte se šalje dodeljenom korisniku ili grupi.
+* **Funkcionalnost Verzije 3**\
+  U Verziji 3, kartica omogućava kreiranje bilo zadatka bilo obaveštenja, pružajući veću fleksibilnost za upravljanje zadacima i komunikaciju.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-1. **Define Task or Notification Details**:\
-   Enter the title, description, and priority for the task or notification.
-2. **Configure Decision Table**:\
-   Set up the decision table to dynamically determine which user or group should be assigned the task or notification.
-3. **Enable Email Notification**:\
-   Specify whether an email notification should be sent to the assigned user or group.
-4. **Specify Notification Type (Version 3)**:\
-   Choose whether the card will create a task or send a notification.
+1. **Definisanje detalja zadatka ili obaveštenja**:\
+   Unesite naslov, opis i prioritet za zadatak ili obaveštenje.
+2. **Konfiguracija tabele odlučivanja**:\
+   Podesite tabelu odlučivanja da dinamično odredi koji korisnik ili grupa treba da budu dodeljeni zadatku ili obaveštenju.
+3. **Omogućavanje obaveštenja putem e-pošte**:\
+   Navedite da li obaveštenje putem e-pošte treba poslati dodeljenom korisniku ili grupi.
+4. **Navođenje tipa obaveštenja (Verzija 3)**:\
+   Izaberite da li će kartica kreirati zadatak ili poslati obaveštenje.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Assign Task / Notification from Decision Table"** workflow card automates the assignment of tasks or notifications based on dynamic conditions defined in a decision table. Version 3 enhances its functionality by allowing users to choose between creating a task or notification, and ensures the correct recipient is always assigned. The email notification feature keeps users informed, streamlining communication and task management.
+Kartica radnog toka **"Assign Task / Notification from Decision Table"** automatizuje dodelu zadataka ili obaveštenja na osnovu dinamičkih uslova definisanih u tabeli odlučivanja. Verzija 3 poboljšava njenu funkcionalnost omogućavajući korisnicima da biraju između kreiranja zadatka ili obaveštenja i obezbeđuje da ispravan primalac uvek bude dodeljen. Funkcija obaveštenja putem e-pošte održava korisnike informisanim, pojednostavljujući komunikaciju i upravljanje zadacima.

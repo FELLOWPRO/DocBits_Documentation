@@ -2,71 +2,71 @@
 
 <figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The **"Create Task or Notification"** workflow card streamlines task management and notifications within workflows. Depending on the version, the card can create tasks, send notifications, and leverage additional functionality such as decision trees for dynamic processing.
+Kartica radnog toka **"Create Task or Notification"** pojednostavljuje upravljanje zadacima i obaveštenjima unutar radnih tokova. U zavisnosti od verzije, kartica može kreirati zadatke, slati obaveštenja i koristiti dodatnu funkcionalnost kao što su stabla odlučivanja za dinamičku obradu.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Title**
-   * **Description**: Defines the title of the task or notification being created.
-   * **Detail**: The title provides a clear and concise identifier for the task or notification.
+   * **Opis**: Definiše naslov zadatka ili obaveštenja koje se kreira.
+   * **Detalj**: Naslov pruža jasan i sažet identifikator za zadatak ili obaveštenje.
 2. **Description**
-   * **Description**: Provides details about the task or notification.
-   * **Detail**: Helps clarify the purpose or context of the task or notification for the assigned user.
+   * **Opis**: Pruža detalje o zadatku ili obaveštenju.
+   * **Detalj**: Pomaže da se pojasni svrha ili kontekst zadatka ili obaveštenja za dodeljenog korisnika.
 3. **Priority**
-   * **Description**: Sets the urgency level for the task.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but not urgent.
-     * **Low**: Can be addressed later.
+   * **Opis**: Postavlja nivo hitnosti za zadatak.
+   * **Opcije**:
+     * **High**: Zahteva neposrednu pažnju.
+     * **Medium**: Važno ali ne hitno.
+     * **Low**: Može se rešiti kasnije.
 4. **Assigned User**
-   1. **Description**: Specifies the user to whom the task is assigned.
-   2. **Detail**: Users are selected from a dropdown list of available personnel.
+   1. **Opis**: Navodi korisnika kome je zadatak dodeljen.
+   2. **Detalj**: Korisnici se biraju iz padajuće liste dostupnog osoblja.
 5. **Email Notification**
-   * **Description**: Determines whether the assigned user receives an email notification.
-   * **Options**:
-     * **True**: Sends an email notification to the user.
-     * **False**: No email notification is sent.
+   * **Opis**: Određuje da li dodeljeni korisnik prima obaveštenje putem e-pošte.
+   * **Opcije**:
+     * **True**: Šalje obaveštenje putem e-pošte korisniku.
+     * **False**: Ne šalje se obaveštenje putem e-pošte.
 
-## Additional Components **in Version 3 and Version 4**
+## Dodatne komponente **u Verziji 3 i Verziji 4**
 
-1. **Decision Tree (Version 3 Only)**
-   * **Description**: Enables the use of a decision tree for dynamic task creation.
-   * **Options**:
-     * **True**: Activates decision tree processing.
-     * **False**: Disables decision tree processing.
-2. **Task or Notification (Version 4 Only)**
-   * **Description**: Allows selection between creating a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task.
-     * **Notification**: Creates a notification instead of a task.
+1. **Decision Tree (samo Verzija 3)**
+   * **Opis**: Omogućava korišćenje stabla odlučivanja za dinamičko kreiranje zadatka.
+   * **Opcije**:
+     * **True**: Aktivira obradu stabla odlučivanja.
+     * **False**: Onemogućava obradu stabla odlučivanja.
+2. **Task or Notification (samo Verzija 4)**
+   * **Opis**: Omogućava izbor između kreiranja zadatka ili obaveštenja.
+   * **Opcije**:
+     * **Task**: Kreira zadatak.
+     * **Notification**: Kreira obaveštenje umesto zadatka.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**:\
-  This card is triggered only if conditions in the **"Where"** and **"And Sections"** are met.
-* **Task or Notification Creation**:
-  * Versions 2 and 3: A task is created with the specified title, description, priority, and assigned user.
-  * Version 4: Allows creating either a task or a notification.
-* **Dynamic Assignment**:
-  * In Version 3, the decision tree dynamically determines the user to be assigned the task based on workflow parameters.
-* **Email Notification**:\
-  Sends an email to the assigned user if the notification option is enabled.
+* **Procena uslova**:\
+  Ova kartica se pokreće samo ako su uslovi u odeljcima **"Where"** i **"And"** ispunjeni.
+* **Kreiranje zadatka ili obaveštenja**:
+  * Verzije 2 i 3: Zadatak se kreira sa navedenim naslovom, opisom, prioritetom i dodeljenim korisnikom.
+  * Verzija 4: Omogućava kreiranje bilo zadatka bilo obaveštenja.
+* **Dinamička dodela**:
+  * U Verziji 3, stablo odlučivanja dinamično određuje korisnika kome će zadatak biti dodeljen na osnovu parametara radnog toka.
+* **Obaveštenje putem e-pošte**:\
+  Šalje e-poštu dodeljenom korisniku ako je opcija obaveštenja omogućena.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-1. **Select Version**: Choose the version of the card based on the functionality required:
-   * Version 2: Basic task creation with manual user assignment and email notifications.
-   * Version 3: Includes decision tree functionality for dynamic user assignment.
-   * Version 4: Adds the ability to create a notification instead of a task.
-2. **Enter Task Details**: Specify the title, description, and priority of the task or notification.
-3. **Assign User**:
-   * For Versions 2 and 4, manually select a user from the dropdown list.
-   * For Version 3, enable the decision tree to determine the assigned user dynamically.
-4. **Enable Email Notification**: Specify whether the assigned user should receive an email notification.
-5. (For Version 4) **Choose Task or Notification**: Indicate whether to create a task or notification.
+1. **Izbor verzije**: Izaberite verziju kartice na osnovu potrebne funkcionalnosti:
+   * Verzija 2: Osnovno kreiranje zadatka sa ručnom dodelom korisnika i obaveštenjima putem e-pošte.
+   * Verzija 3: Uključuje funkcionalnost stabla odlučivanja za dinamičku dodelu korisnika.
+   * Verzija 4: Dodaje mogućnost kreiranja obaveštenja umesto zadatka.
+2. **Unos detalja zadatka**: Navedite naslov, opis i prioritet zadatka ili obaveštenja.
+3. **Dodela korisnika**:
+   * Za Verzije 2 i 4, ručno izaberite korisnika iz padajuće liste.
+   * Za Verziju 3, omogućite stablo odlučivanja da dinamično odredi dodeljenog korisnika.
+4. **Omogućavanje obaveštenja putem e-pošte**: Navedite da li dodeljeni korisnik treba da primi obaveštenje putem e-pošte.
+5. (Za Verziju 4) **Izbor zadatka ili obaveštenja**: Naznačite da li treba kreirati zadatak ili obaveštenje.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Create Task or Notification"** workflow card is a versatile tool for managing tasks and notifications. By supporting dynamic user assignment through decision trees and providing options for task or notification creation, it enhances workflow adaptability and collaboration efficiency.
+Kartica radnog toka **"Create Task or Notification"** je svestran alat za upravljanje zadacima i obaveštenjima. Podržavanjem dinamičke dodele korisnika kroz stabla odlučivanja i pružanjem opcija za kreiranje zadatka ili obaveštenja, ona poboljšava prilagodljivost radnog toka i efikasnost saradnje.

@@ -2,51 +2,51 @@
 
 <figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Create Task for Procurement Group"** workflow card creates a new task dynamically assigned to the procurement group specified in the configuration. This task can be assigned with different priority levels, and an optional email notification can be sent to inform the group about the task. This card ensures that the right team is alerted based on workflow conditions.
+Kartica radnog toka **"Create Task for Procurement Group"** kreira novi zadatak koji se dinamično dodeljuje nabavnoj grupi navedenoj u konfiguraciji. Ovaj zadatak se može dodeliti sa različitim nivoima prioriteta, a opciono obaveštenje putem e-pošte se može poslati da informiše grupu o zadatku. Ova kartica obezbeđuje da pravi tim bude upozoren na osnovu uslova radnog toka.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Title**
-   * **Description:** Specifies the title of the task.
-   * **Detail:** This field identifies the task being created, providing a concise title for easy identification.
+   * **Opis:** Navodi naslov zadatka.
+   * **Detalj:** Ovo polje identifikuje zadatak koji se kreira, pružajući sažet naslov za lako prepoznavanje.
 2. **Description**
-   * **Description:** Provides further details about the task.
-   * **Detail:** This field is used to describe the task’s objective and any necessary context or instructions.
+   * **Opis:** Pruža dodatne detalje o zadatku.
+   * **Detalj:** Ovo polje se koristi za opisivanje cilja zadatka i bilo kog neophodnog konteksta ili uputstava.
 3. **Priority**
-   * **Description:** Defines the urgency of the task.
-   * **Options:**
-     * **High:** Task requires immediate attention.
-     * **Medium:** Task is important but not urgent.
-     * **Low:** Task can be handled at a later time.
+   * **Opis:** Definiše hitnost zadatka.
+   * **Opcije:**
+     * **High:** Zadatak zahteva neposrednu pažnju.
+     * **Medium:** Zadatak je važan ali ne hitan.
+     * **Low:** Zadatak se može rešiti kasnije.
 4. **Group Name**
-   * **Description:** Specifies the procurement group to whom the task will be assigned.
-   * **Detail:** This field designates the procurement group responsible for the task. It ensures the task is directed to the right team.
+   * **Opis:** Navodi nabavnu grupu kojoj će zadatak biti dodeljen.
+   * **Detalj:** Ovo polje označava nabavnu grupu odgovornu za zadatak. Obezbeđuje da zadatak bude usmeren pravom timu.
 5. **Email Notification**
-   * **Description:** Configures whether an email notification should be sent to the assigned procurement group.
-   * **Options:**
-     * **True:** Sends an email notification to the procurement group.
-     * **False:** No email notification is sent.
+   * **Opis:** Konfiguriše da li obaveštenje putem e-pošte treba poslati dodeljenoj nabavnoj grupi.
+   * **Opcije:**
+     * **True:** Šalje obaveštenje putem e-pošte nabavnoj grupi.
+     * **False:** Ne šalje se obaveštenje putem e-pošte.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task Creation:**\
-  The card creates a new task, assigning it to the procurement group defined in the "Group Name" field. This task will include the specified title, description, and priority level.
-* **Email Notification:**\
-  If the email notification option is set to true, an email is sent to the procurement group informing them about the task.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Kreiranje zadatka:**\
+  Kartica kreira novi zadatak, dodeljujući ga nabavnoj grupi definisanoj u polju "Group Name". Ovaj zadatak će uključivati navedeni naslov, opis i nivo prioriteta.
+* **Obaveštenje putem e-pošte:**\
+  Ako je opcija obaveštenja putem e-pošte postavljena na true, e-pošta se šalje nabavnoj grupi koja je informiše o zadatku.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Define Task Details:**\
-  Enter the task's title, description, and priority level.
-* **Select Procurement Group:**\
-  Choose the procurement group that will be responsible for the task.
-* **Enable Email Notification:**\
-  Specify whether an email notification should be sent to the group upon task creation.
+* **Definisanje detalja zadatka:**\
+  Unesite naslov, opis i nivo prioriteta zadatka.
+* **Izbor nabavne grupe:**\
+  Izaberite nabavnu grupu koja će biti odgovorna za zadatak.
+* **Omogućavanje obaveštenja putem e-pošte:**\
+  Navedite da li obaveštenje putem e-pošte treba poslati grupi prilikom kreiranja zadatka.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The "Create Task for Procurement Group" workflow card ensures that tasks are automatically assigned to the appropriate procurement group with defined priorities. This card can also notify the group via email to ensure tasks are attended to promptly, improving workflow efficiency and task management.
+Kartica radnog toka "Create Task for Procurement Group" obezbeđuje da se zadaci automatski dodeljuju odgovarajućoj nabavnoj grupi sa definisanim prioritetima. Ova kartica takođe može obavestiti grupu putem e-pošte kako bi se obezbedilo da se zadaci reše bez odlaganja, poboljšavajući efikasnost radnog toka i upravljanje zadacima.

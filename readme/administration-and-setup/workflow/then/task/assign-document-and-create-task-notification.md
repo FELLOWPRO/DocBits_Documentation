@@ -2,68 +2,68 @@
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The "**Assign Document and Create Task/Notification Based on Decision Table**" workflow card assigns a document and creates a task or notification with configurable details. The assignee is determined by the return of a decision table, and the card allows for setting priorities and sending email notifications.
+Kartica radnog toka "**Assign Document and Create Task/Notification Based on Decision Table**" dodeljuje dokument i kreira zadatak ili obaveštenje sa podesivim detaljima. Osoba kojoj se dodeljuje određuje se vraćanjem tabele odlučivanja, a kartica omogućava postavljanje prioriteta i slanje obaveštenja putem e-pošte.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Assignee Type**
-   * **Description:** Specifies whether the decision table’s return assigns the document and task/notification to a user or group.
-   * **Detail:** A field to configure the assignee type as either "User" or "Group" based on the decision table output.
+   * **Opis:** Navodi da li vraćanje tabele odlučivanja dodeljuje dokument i zadatak/obaveštenje korisniku ili grupi.
+   * **Detalj:** Polje za konfigurisanje tipa osobe kojoj se dodeljuje kao "User" ili "Group" na osnovu izlaza tabele odlučivanja.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the assignee.
-   * **Detail:** A dropdown to select either "Task" or "Notification" based on the workflow needs.
+   * **Opis:** Navodi tip akcije koja se kreira za osobu kojoj se dodeljuje.
+   * **Detalj:** Padajući meni za izbor "Task" ili "Notification" na osnovu potreba radnog toka.
 3. **Title**
-   * **Description:** The title of the task or notification.
-   * **Detail:** A field for providing a concise title that identifies the task or notification.
+   * **Opis:** Naslov zadatka ili obaveštenja.
+   * **Detalj:** Polje za pružanje sažetog naslova koji identifikuje zadatak ili obaveštenje.
 4. **Description**
-   * **Description:** Additional details about the task or notification.
-   * **Detail:** A field for describing the purpose and context of the task or notification.
+   * **Opis:** Dodatni detalji o zadatku ili obaveštenju.
+   * **Detalj:** Polje za opisivanje svrhe i konteksta zadatka ili obaveštenja.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Opis:** Definiše nivo hitnosti zadatka ili obaveštenja.
+   * **Opcije:**
+     * **High:** Zahteva neposrednu pažnju.
+     * **Medium:** Važno ali ne hitno.
+     * **Low:** Može se rešiti kasnije.
 6. **Assignee Type**
-   * **Description:** This field determines the type of assignee (User or Group) to whom the document and task/notification are assigned.
-   * **Detail:** A dropdown menu to select whether the task/notification is assigned to a user or a group based on the decision table's output.
+   * **Opis:** Ovo polje određuje tip osobe kojoj se dodeljuje (User ili Group) kome se dodeljuju dokument i zadatak/obaveštenje.
+   * **Detalj:** Padajući meni za izbor da li se zadatak/obaveštenje dodeljuje korisniku ili grupi na osnovu izlaza tabele odlučivanja.
 7. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the assignee.
-   * **Options:**
-     * **True:** Sends an email notification.
-     * **False:** No email notification is sent.
+   * **Opis:** Konfiguriše da li se obaveštenje putem e-pošte šalje osobi kojoj se dodeljuje.
+   * **Opcije:**
+     * **True:** Šalje obaveštenje putem e-pošte.
+     * **False:** Ne šalje se obaveštenje putem e-pošte.
 8. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where lower numbers indicate higher priority.
+   * **Opis:** Postavlja numerički prioritet za dodelu dokumenta.
+   * **Detalj:** Polje za unos numeričke vrednosti, gde niži brojevi označavaju viši prioritet.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the workflow conditions are satisfied.
-* **Decision Table Evaluation:**\
-  The decision table determines whether the document and task/notification are assigned to a user or group.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the decision table's result. A task or notification is created with the specified title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email notification is sent to the assignee.
+* **Procena uslova:**\
+  Kartica izvršava svoje akcije samo ako su uslovi radnog toka zadovoljeni.
+* **Procena tabele odlučivanja:**\
+  Tabela odlučivanja određuje da li se dokument i zadatak/obaveštenje dodeljuju korisniku ili grupi.
+* **Dodela dokumenta i kreiranje zadatka/obaveštenja:**\
+  Dokument se dodeljuje rezultatu tabele odlučivanja. Kreira se zadatak ili obaveštenje sa navedenim naslovom, opisom i nivoom prioriteta.
+* **Obaveštenje putem e-pošte:**\
+  Ako je "Send Mail" postavljeno na True, obaveštenje putem e-pošte se šalje osobi kojoj se dodeljuje.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-1. **Define Assignee Type:**
-   * Configure the Assignee Type field to either "User" or "Group" based on the decision table's output.
-2. **Select Task/Notification:**
-   * Choose "Task" or "Notification" from the Task/Notification dropdown.
-3. **Set Task/Notification Details:**
-   * Enter the Title and Description for the task or notification.
-   * Select the Priority (High, Medium, or Low) from the dropdown.
-4. **Enable Email Notification:**
-   * Set the Send Mail option to True or False, depending on whether an email notification should be sent.
-5. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment priority, where lower numbers are processed first.
-6. Save the card configuration and activate the workflow.
+1. **Definisanje Assignee Type:**
+   * Konfigurišite polje Assignee Type na "User" ili "Group" na osnovu izlaza tabele odlučivanja.
+2. **Izbor Task/Notification:**
+   * Izaberite "Task" ili "Notification" iz padajućeg menija Task/Notification.
+3. **Postavljanje detalja zadatka/obaveštenja:**
+   * Unesite Title i Description za zadatak ili obaveštenje.
+   * Izaberite Priority (High, Medium ili Low) iz padajućeg menija.
+4. **Omogućavanje obaveštenja putem e-pošte:**
+   * Postavite opciju Send Mail na True ili False, u zavisnosti od toga da li obaveštenje putem e-pošte treba poslati.
+5. **Postavljanje numeričkog prioriteta:**
+   * Unesite numeričku vrednost u polje Value da odredite prioritet dodele, gde se niži brojevi obrađuju prvi.
+6. Sačuvajte konfiguraciju kartice i aktivirajte radni tok.
 
-## **Conclusion**
+## **Zaključak**
 
-The "Assign Document and Create Task/Notification Based on Decision Table" workflow card ensures tasks or notifications are dynamically assigned to the appropriate user or group based on decision table results. This card facilitates efficient task delegation, customizable priorities, and optional email notifications to enhance workflow responsiveness.
+Kartica radnog toka "Assign Document and Create Task/Notification Based on Decision Table" obezbeđuje da se zadaci ili obaveštenja dinamično dodeljuju odgovarajućem korisniku ili grupi na osnovu rezultata tabele odlučivanja. Ova kartica olakšava efikasno delegiranje zadataka, prilagodljive prioritete i opciona obaveštenja putem e-pošte radi poboljšanja odzivnosti radnog toka.

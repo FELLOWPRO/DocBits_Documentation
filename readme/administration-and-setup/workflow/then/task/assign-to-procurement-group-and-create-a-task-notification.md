@@ -2,61 +2,61 @@
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The "**Assign Document to Procurement Group and Create Task/Notification**" workflow card assigns a document to a specified procurement group, creates a task or notification with defined details, and optionally notifies the group via email. It prioritizes task execution based on a configurable numeric priority value.
+Kartica radnog toka "**Assign Document to Procurement Group and Create Task/Notification**" dodeljuje dokument navedenoj nabavnoj grupi, kreira zadatak ili obaveštenje sa definisanim detaljima i opciono obaveštava grupu putem e-pošte. Prioritetizuje izvršavanje zadataka na osnovu podesive numeričke vrednosti prioriteta.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Group Name**
-   * **Description:** Specifies the procurement group responsible for handling the document.
-   * **Detail:** A field where the user can manually enter the name of the procurement group.
+   * **Opis:** Navodi nabavnu grupu odgovornu za rukovanje dokumentom.
+   * **Detalj:** Polje u kojem korisnik može ručno uneti ime nabavne grupe.
 2. **Task/Notification**
-   * **Description:** Defines whether a task or notification is created for the group.
-   * **Detail:** A field where the user can choose between creating a task or a notificatio
+   * **Opis:** Definiše da li se za grupu kreira zadatak ili obaveštenje.
+   * **Detalj:** Polje u kojem korisnik može birati između kreiranja zadatka ili obaveštenja
 3. **Title**
-   * **Description:** The title of the task or notification created for the group.
-   * **Detail:** A field to provide a concise and identifiable title for the task or notification.
+   * **Opis:** Naslov zadatka ili obaveštenja kreiranog za grupu.
+   * **Detalj:** Polje za pružanje sažetog i prepoznatljivog naslova za zadatak ili obaveštenje.
 4. **Description**
-   * **Description:** Further details about the task or notification.
-   * **Detail:** A field to describe the task’s purpose and provide context or instructions.
+   * **Opis:** Dodatni detalji o zadatku ili obaveštenju.
+   * **Detalj:** Polje za opisivanje svrhe zadatka i pružanje konteksta ili uputstava.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Task requires immediate attention.
-     * **Medium:** Task is important but not urgent.
-     * **Low:** Task can be handled at a later time.
+   * **Opis:** Definiše nivo hitnosti zadatka ili obaveštenja.
+   * **Opcije:**
+     * **High:** Zadatak zahteva neposrednu pažnju.
+     * **Medium:** Zadatak je važan ali ne hitan.
+     * **Low:** Zadatak se može rešiti kasnije.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification should be sent to the group.
-   * **Options:**
-     * **True:** Sends an email notification to the procurement group.
-     * **False:** No email notification is sent.
+   * **Opis:** Konfiguriše da li obaveštenje putem e-pošte treba poslati grupi.
+   * **Opcije:**
+     * **True:** Šalje obaveštenje putem e-pošte nabavnoj grupi.
+     * **False:** Ne šalje se obaveštenje putem e-pošte.
 7. **Value**
-   * **Description:** Sets the numeric priority for task execution.
-   * **Detail:** A field to input a numeric value, where a lower number represents a higher priority.
+   * **Opis:** Postavlja numerički prioritet za izvršavanje zadatka.
+   * **Detalj:** Polje za unos numeričke vrednosti, gde niži broj predstavlja viši prioritet.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Condition Evaluation:**\
-  The card performs its actions only if the defined workflow conditions are met.
-* **Group Assignment and Task/Notification Creation:**\
-  The document is assigned to the specified procurement group. A task or notification is created with the provided title, description, and priority.
-* **Email Notification:**\
-  If "Send Mail" is set to True, the group receives an email about the task or notification.
+* **Procena uslova:**\
+  Kartica izvršava svoje akcije samo ako su definisani uslovi radnog toka ispunjeni.
+* **Dodela grupi i kreiranje zadatka/obaveštenja:**\
+  Dokument se dodeljuje navedenoj nabavnoj grupi. Kreira se zadatak ili obaveštenje sa pruženim naslovom, opisom i prioritetom.
+* **Obaveštenje putem e-pošte:**\
+  Ako je "Send Mail" postavljeno na True, grupa prima e-poštu o zadatku ili obaveštenju.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-1. **Define Group Name:**
-   * Enter the name of the procurement group in the Group Name field.
-2. **Configure Task/Notification Details:**
-   * Specify the Title and Description for the task or notification.
-   * Select the Priority from the dropdown menu (High, Medium, or Low).
-3. **Enable Email Notification:**
-   * Set "Send Mail" to True or False based on whether the group should receive an email.
-4. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the task's priority, where lower values are processed first.
-5. Save the card configuration and activate the workflow.
+1. **Definisanje imena grupe:**
+   * Unesite ime nabavne grupe u polje Group Name.
+2. **Konfiguracija detalja zadatka/obaveštenja:**
+   * Navedite Title i Description za zadatak ili obaveštenje.
+   * Izaberite Priority iz padajućeg menija (High, Medium ili Low).
+3. **Omogućavanje obaveštenja putem e-pošte:**
+   * Postavite "Send Mail" na True ili False na osnovu toga da li grupa treba da primi e-poštu.
+4. **Postavljanje numeričkog prioriteta:**
+   * Unesite numeričku vrednost u polje Value da odredite prioritet zadatka, gde se niže vrednosti obrađuju prve.
+5. Sačuvajte konfiguraciju kartice i aktivirajte radni tok.
 
-## **Conclusion**
+## **Zaključak**
 
-The "Assign Document to Procurement Group and Create Task/Notification" workflow card ensures documents are directed to the appropriate group with clear task instructions and priority levels. By enabling optional email notifications, this card improves task visibility and ensures smooth workflow execution.
+Kartica radnog toka "Assign Document to Procurement Group and Create Task/Notification" obezbeđuje da se dokumenti usmeravaju odgovarajućoj grupi sa jasnim uputstvima za zadatak i nivoima prioriteta. Omogućavanjem opcionih obaveštenja putem e-pošte, ova kartica poboljšava vidljivost zadataka i obezbeđuje neometano izvršavanje radnog toka.

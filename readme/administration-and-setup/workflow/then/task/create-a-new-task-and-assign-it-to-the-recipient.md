@@ -2,55 +2,55 @@
 
 <figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Create Task with Fallback"** workflow card ensures efficient task delegation by assigning tasks to specific roles—dispatcher or purchaser—while incorporating a fallback mechanism to prevent task assignment failures. This card improves workflow reliability and adaptability in dynamic scenarios.
+Kartica radnog toka **"Create Task with Fallback"** obezbeđuje efikasno delegiranje zadataka dodeljivanjem zadataka određenim ulogama — disponentu ili nabavljaču — uz uključivanje mehanizma rezerve radi sprečavanja neuspeha u dodeli zadataka. Ova kartica poboljšava pouzdanost i prilagodljivost radnog toka u dinamičkim scenarijima.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Title**
-   * **Description**: Specifies the title of the task being created.
-   * **Detail**: Provides a concise identifier for the task.
+   * **Opis**: Navodi naslov zadatka koji se kreira.
+   * **Detalj**: Pruža sažet identifikator za zadatak.
 2. **Description**
-   * **Description**: Describes the purpose or context of the task.
-   * **Detail**: Clarifies the details of the task.
+   * **Opis**: Opisuje svrhu ili kontekst zadatka.
+   * **Detalj**: Pojašnjava detalje zadatka.
 3. **Priority**
-   * **Description**: Sets the urgency level for the task.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but not urgent.
-     * **Low**: Can be addressed later.
+   * **Opis**: Postavlja nivo hitnosti za zadatak.
+   * **Opcije**:
+     * **High**: Zahteva neposrednu pažnju.
+     * **Medium**: Važno ali ne hitno.
+     * **Low**: Može se rešiti kasnije.
 4. **Assigned Role**
-   * **Description**: Specifies the primary role to which the task is assigned.
-   * **Options**:
-     * **Disponent**: Assigns the task to the disponent.
-     * **Purchaser**: Assigns the task to the purchaser.
+   * **Opis**: Navodi primarnu ulogu kojoj se zadatak dodeljuje.
+   * **Opcije**:
+     * **Disponent**: Dodeljuje zadatak disponentu.
+     * **Purchaser**: Dodeljuje zadatak nabavljaču.
 5. **Email Notification**
-   * **Description**: Enables notifying the assigned user via email.
-   * **Options**:
-     * **True**: Sends an email notification to the user.
-     * **False**: No email notification is sent.
+   * **Opis**: Omogućava obaveštavanje dodeljenog korisnika putem e-pošte.
+   * **Opcije**:
+     * **True**: Šalje obaveštenje putem e-pošte korisniku.
+     * **False**: Ne šalje se obaveštenje putem e-pošte.
 6. **Fallback User**
-   * **Description**: Provides a fallback option for task assignment if the recipient role is not found.
-   * **Detail**: Allows selecting a user from a dropdown list to ensure task delegation.
+   * **Opis**: Pruža rezervnu opciju za dodelu zadatka ako se uloga primaoca ne pronađe.
+   * **Detalj**: Omogućava izbor korisnika iz padajuće liste kako bi se obezbedilo delegiranje zadatka.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**:\
-  The card executes only if the conditions in the **"Where"** and **"And Sections"** are met.
-* **Task Assignment**:
-  * The task is assigned to the selected role (dispatcher or purchaser).
-  * If the specified role is not found, the task is assigned to a user from the fallback dropdown list.
-* **Email Notification**:\
-  Sends an email to the assigned user if email notification is enabled.
+* **Procena uslova**:\
+  Kartica se izvršava samo ako su uslovi u odeljcima **"Where"** i **"And"** ispunjeni.
+* **Dodela zadatka**:
+  * Zadatak se dodeljuje izabranoj ulozi (disponentu ili nabavljaču).
+  * Ako se navedena uloga ne pronađe, zadatak se dodeljuje korisniku iz rezervne padajuće liste.
+* **Obaveštenje putem e-pošte**:\
+  Šalje e-poštu dodeljenom korisniku ako je obaveštenje putem e-pošte omogućeno.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-1. **Specify Task Details**: Enter the title, description, and priority of the task.
-2. **Select Primary Role**: Choose the role to which the task will be assigned (dispatcher or purchaser).
-3. **Configure Fallback User**: Select a fallback user from the dropdown list to ensure task assignment if the primary role is not found.
-4. **Enable Email Notification**: Indicate whether the assigned user should receive an email notification.
+1. **Navođenje detalja zadatka**: Unesite naslov, opis i prioritet zadatka.
+2. **Izbor primarne uloge**: Izaberite ulogu kojoj će zadatak biti dodeljen (disponentu ili nabavljaču).
+3. **Konfiguracija rezervnog korisnika**: Izaberite rezervnog korisnika iz padajuće liste kako biste obezbedili dodelu zadatka ako se primarna uloga ne pronađe.
+4. **Omogućavanje obaveštenja putem e-pošte**: Naznačite da li dodeljeni korisnik treba da primi obaveštenje putem e-pošte.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Create Task with Fallback"** workflow card ensures seamless task delegation by integrating a fallback mechanism. By assigning tasks based on roles and providing an alternate user option, it enhances reliability and flexibility in task management processes.
+Kartica radnog toka **"Create Task with Fallback"** obezbeđuje neometano delegiranje zadataka integracijom mehanizma rezerve. Dodeljivanjem zadataka na osnovu uloga i pružanjem alternativne opcije korisnika, ona poboljšava pouzdanost i fleksibilnost u procesima upravljanja zadacima.

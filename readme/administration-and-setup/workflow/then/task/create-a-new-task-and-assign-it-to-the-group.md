@@ -2,66 +2,66 @@
 
 <figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Create Group Task or Notification"** workflow card facilitates task or notification creation for specified groups, ensuring efficient communication and task management. Enhanced with decision tree functionality in later versions, it dynamically determines the assigned group or method, streamlining operations.
+Kartica radnog toka **"Create Group Task or Notification"** olakšava kreiranje zadatka ili obaveštenja za navedene grupe, obezbeđujući efikasnu komunikaciju i upravljanje zadacima. Poboljšana funkcionalnošću stabla odlučivanja u kasnijim verzijama, ona dinamično određuje dodeljenu grupu ili metod, pojednostavljujući poslovanje.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Title**
-   * **Description**: Specifies the title of the task or notification.
-   * **Detail**: Acts as the identifier for the created task or notification.
+   * **Opis**: Navodi naslov zadatka ili obaveštenja.
+   * **Detalj**: Deluje kao identifikator za kreirani zadatak ili obaveštenje.
 2. **Description**
-   * **Description**: Describes the context or details of the task or notification.
-   * **Detail**: Provides clarity on its purpose.
+   * **Opis**: Opisuje kontekst ili detalje zadatka ili obaveštenja.
+   * **Detalj**: Pruža jasnoću o njegovoj svrsi.
 3. **Priority**
-   * **Description**: Sets the importance level of the task.
-   * **Options**:
-     * **High**: Requires immediate action.
-     * **Medium**: Important but less urgent.
-     * **Low**: Can be addressed later.
+   * **Opis**: Postavlja nivo važnosti zadatka.
+   * **Opcije**:
+     * **High**: Zahteva neposrednu akciju.
+     * **Medium**: Važno ali manje hitno.
+     * **Low**: Može se rešiti kasnije.
 4. **Assigned Group**
-   * **Description**: Specifies the group responsible for the task or notification.
-   * **Detail**: Selected from a dropdown list of available groups.
+   * **Opis**: Navodi grupu odgovornu za zadatak ili obaveštenje.
+   * **Detalj**: Bira se iz padajuće liste dostupnih grupa.
 5. **Email Notification**
-   * **Description**: Enables sending an email to notify the assigned group.
-   * **Options**:
-     * **True**: Sends an email notification.
-     * **False**: No email notification is sent.
+   * **Opis**: Omogućava slanje e-pošte za obaveštavanje dodeljene grupe.
+   * **Opcije**:
+     * **True**: Šalje obaveštenje putem e-pošte.
+     * **False**: Ne šalje se obaveštenje putem e-pošte.
 
-## **Additional Components in Version 3 and Version 4**
+## **Dodatne komponente u Verziji 3 i Verziji 4**
 
-1. **Decision Tree  (Version 3 Only)**
-   * **Description**: Enables the use of a decision tree for dynamic task creation.
-   * **Options**:
-     * **True**: Activates decision tree processing.
-     * **False**: Disables decision tree processing.
-2. **Task/Notification Option** **(Version 4 Only)**
-   * **Description**: Allows creating either a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task for the selected group.
-     * **Notification**: Sends a notification instead of creating a task.
+1. **Decision Tree (samo Verzija 3)**
+   * **Opis**: Omogućava korišćenje stabla odlučivanja za dinamičko kreiranje zadatka.
+   * **Opcije**:
+     * **True**: Aktivira obradu stabla odlučivanja.
+     * **False**: Onemogućava obradu stabla odlučivanja.
+2. **Task/Notification Option** **(samo Verzija 4)**
+   * **Opis**: Omogućava kreiranje bilo zadatka bilo obaveštenja.
+   * **Opcije**:
+     * **Task**: Kreira zadatak za izabranu grupu.
+     * **Notification**: Šalje obaveštenje umesto kreiranja zadatka.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**:\
-  Executes the card action only when the **"Where"** and **"And Sections"** are true.
-* **Task or Notification Creation**:
-  * A task is created for the selected group with the specified title, description, and priority.
-  * In Version 4, the card can create a notification instead of a task.
-* **Dynamic Assignment (Version 3 only)**:\
-  If enabled, the decision tree determines the target group dynamically.
-* **Email Notification**:\
-  Sends an email notification to the group if the email option is set to true.
+* **Procena uslova**:\
+  Izvršava akciju kartice samo kada su odeljci **"Where"** i **"And"** tačni.
+* **Kreiranje zadatka ili obaveštenja**:
+  * Zadatak se kreira za izabranu grupu sa navedenim naslovom, opisom i prioritetom.
+  * U Verziji 4, kartica može kreirati obaveštenje umesto zadatka.
+* **Dinamička dodela (samo Verzija 3)**:\
+  Ako je omogućeno, stablo odlučivanja dinamično određuje ciljnu grupu.
+* **Obaveštenje putem e-pošte**:\
+  Šalje obaveštenje putem e-pošte grupi ako je opcija e-pošte postavljena na true.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-1. **Define Task or Notification Details**: Enter the title, description, and priority.
-2. **Assign to a Group**: Select a group from the dropdown list for task or notification assignment.
-3. **Enable Email Notification**: Indicate whether the group should be notified via email.
-4. **Use Decision Tree (Version 3 only)**: Enable the decision tree to dynamically assign the group.
-5. **Select Output Type (Version 4 only)**: Choose whether the card creates a task or a notification.
+1. **Definisanje detalja zadatka ili obaveštenja**: Unesite naslov, opis i prioritet.
+2. **Dodela grupi**: Izaberite grupu iz padajuće liste za dodelu zadatka ili obaveštenja.
+3. **Omogućavanje obaveštenja putem e-pošte**: Naznačite da li grupa treba da bude obaveštena putem e-pošte.
+4. **Korišćenje stabla odlučivanja (samo Verzija 3)**: Omogućite stablo odlučivanja za dinamičku dodelu grupe.
+5. **Izbor tipa izlaza (samo Verzija 4)**: Izaberite da li kartica kreira zadatak ili obaveštenje.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Create Group Task or Notification"** workflow card simplifies task and notification management by targeting groups directly. Its dynamic assignment feature, enabled by the decision tree, enhances flexibility, while email notifications ensure timely communication. Versions 3 and 4 add advanced functionality, making it a versatile tool for efficient workflow execution.
+Kartica radnog toka **"Create Group Task or Notification"** pojednostavljuje upravljanje zadacima i obaveštenjima ciljanjem grupa direktno. Njena funkcija dinamičke dodele, omogućena stablom odlučivanja, poboljšava fleksibilnost, dok obaveštenja putem e-pošte obezbeđuju pravovremenu komunikaciju. Verzije 3 i 4 dodaju naprednu funkcionalnost, čineći je svestranim alatom za efikasno izvršavanje radnog toka.

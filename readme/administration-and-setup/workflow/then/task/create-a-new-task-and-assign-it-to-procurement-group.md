@@ -2,51 +2,51 @@
 
 <figure><img src="../../../../.gitbook/assets/image (292).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The **"Create Task for Procurement Group"** workflow card creates a new task dynamically assigned to the procurement group specified in the configuration. This task can be assigned with different priority levels, and an optional email notification can be sent to inform the group about the task. This card ensures that the right team is alerted based on workflow conditions.
+Die Workflow-Karte **"Create Task for Procurement Group"** erstellt eine neue Aufgabe, die dynamisch der in der Konfiguration angegebenen Beschaffungsgruppe zugewiesen wird. Diese Aufgabe kann mit unterschiedlichen Prioritätsstufen zugewiesen werden, und es kann eine optionale E-Mail-Benachrichtigung gesendet werden, um die Gruppe über die Aufgabe zu informieren. Diese Karte stellt sicher, dass das richtige Team auf Basis der Workflow-Bedingungen benachrichtigt wird.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Title**
-   * **Description:** Specifies the title of the task.
-   * **Detail:** This field identifies the task being created, providing a concise title for easy identification.
-2. **Description**
-   * **Description:** Provides further details about the task.
-   * **Detail:** This field is used to describe the task’s objective and any necessary context or instructions.
-3. **Priority**
-   * **Description:** Defines the urgency of the task.
-   * **Options:**
-     * **High:** Task requires immediate attention.
-     * **Medium:** Task is important but not urgent.
-     * **Low:** Task can be handled at a later time.
-4. **Group Name**
-   * **Description:** Specifies the procurement group to whom the task will be assigned.
-   * **Detail:** This field designates the procurement group responsible for the task. It ensures the task is directed to the right team.
-5. **Email Notification**
-   * **Description:** Configures whether an email notification should be sent to the assigned procurement group.
-   * **Options:**
-     * **True:** Sends an email notification to the procurement group.
-     * **False:** No email notification is sent.
+1. **Titel**
+   * **Beschreibung:** Gibt den Titel der Aufgabe an.
+   * **Detail:** Dieses Feld kennzeichnet die erstellte Aufgabe und liefert einen prägnanten Titel zur leichten Identifizierung.
+2. **Beschreibung**
+   * **Beschreibung:** Liefert weitere Details zur Aufgabe.
+   * **Detail:** Dieses Feld wird verwendet, um das Ziel der Aufgabe sowie notwendigen Kontext oder Anweisungen zu beschreiben.
+3. **Priorität**
+   * **Beschreibung:** Legt die Dringlichkeit der Aufgabe fest.
+   * **Optionen:**
+     * **Hoch:** Die Aufgabe erfordert sofortige Aufmerksamkeit.
+     * **Mittel:** Die Aufgabe ist wichtig, aber nicht dringend.
+     * **Niedrig:** Die Aufgabe kann zu einem späteren Zeitpunkt bearbeitet werden.
+4. **Gruppenname**
+   * **Beschreibung:** Gibt die Beschaffungsgruppe an, der die Aufgabe zugewiesen wird.
+   * **Detail:** Dieses Feld bestimmt die für die Aufgabe verantwortliche Beschaffungsgruppe. Es stellt sicher, dass die Aufgabe an das richtige Team geleitet wird.
+5. **E-Mail-Benachrichtigung**
+   * **Beschreibung:** Konfiguriert, ob eine E-Mail-Benachrichtigung an die zugewiesene Beschaffungsgruppe gesendet werden soll.
+   * **Optionen:**
+     * **True:** Sendet eine E-Mail-Benachrichtigung an die Beschaffungsgruppe.
+     * **False:** Es wird keine E-Mail-Benachrichtigung gesendet.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task Creation:**\
-  The card creates a new task, assigning it to the procurement group defined in the "Group Name" field. This task will include the specified title, description, and priority level.
-* **Email Notification:**\
-  If the email notification option is set to true, an email is sent to the procurement group informing them about the task.
+* **Bedingungsauswertung:**\
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Aufgabenerstellung:**\
+  Die Karte erstellt eine neue Aufgabe und weist sie der im Feld "Gruppenname" definierten Beschaffungsgruppe zu. Diese Aufgabe enthält den angegebenen Titel, die Beschreibung und die Prioritätsstufe.
+* **E-Mail-Benachrichtigung:**\
+  Ist die Option für die E-Mail-Benachrichtigung auf true gesetzt, wird eine E-Mail an die Beschaffungsgruppe gesendet, um sie über die Aufgabe zu informieren.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* **Define Task Details:**\
-  Enter the task's title, description, and priority level.
-* **Select Procurement Group:**\
-  Choose the procurement group that will be responsible for the task.
-* **Enable Email Notification:**\
-  Specify whether an email notification should be sent to the group upon task creation.
+* **Aufgabendetails definieren:**\
+  Geben Sie Titel, Beschreibung und Prioritätsstufe der Aufgabe ein.
+* **Beschaffungsgruppe auswählen:**\
+  Wählen Sie die Beschaffungsgruppe, die für die Aufgabe verantwortlich ist.
+* **E-Mail-Benachrichtigung aktivieren:**\
+  Legen Sie fest, ob bei der Erstellung der Aufgabe eine E-Mail-Benachrichtigung an die Gruppe gesendet werden soll.
 
-## **Conclusion:**
+## **Fazit:**
 
-The "Create Task for Procurement Group" workflow card ensures that tasks are automatically assigned to the appropriate procurement group with defined priorities. This card can also notify the group via email to ensure tasks are attended to promptly, improving workflow efficiency and task management.
+Die Workflow-Karte "Create Task for Procurement Group" stellt sicher, dass Aufgaben automatisch der passenden Beschaffungsgruppe mit definierten Prioritäten zugewiesen werden. Diese Karte kann die Gruppe außerdem per E-Mail benachrichtigen, um sicherzustellen, dass Aufgaben zeitnah bearbeitet werden, und steigert so die Workflow-Effizienz und das Aufgabenmanagement.

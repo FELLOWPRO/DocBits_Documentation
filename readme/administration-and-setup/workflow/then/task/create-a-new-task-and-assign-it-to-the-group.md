@@ -2,66 +2,66 @@
 
 <figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The **"Create Group Task or Notification"** workflow card facilitates task or notification creation for specified groups, ensuring efficient communication and task management. Enhanced with decision tree functionality in later versions, it dynamically determines the assigned group or method, streamlining operations.
+Die Workflow-Karte **"Create Group Task or Notification"** ermöglicht die Erstellung von Aufgaben oder Benachrichtigungen für bestimmte Gruppen und gewährleistet so eine effiziente Kommunikation und ein effizientes Aufgabenmanagement. In späteren Versionen um eine Entscheidungsbaum-Funktionalität erweitert, bestimmt sie die zugewiesene Gruppe oder Methode dynamisch und optimiert so die Abläufe.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Title**
-   * **Description**: Specifies the title of the task or notification.
-   * **Detail**: Acts as the identifier for the created task or notification.
-2. **Description**
-   * **Description**: Describes the context or details of the task or notification.
-   * **Detail**: Provides clarity on its purpose.
-3. **Priority**
-   * **Description**: Sets the importance level of the task.
-   * **Options**:
-     * **High**: Requires immediate action.
-     * **Medium**: Important but less urgent.
-     * **Low**: Can be addressed later.
-4. **Assigned Group**
-   * **Description**: Specifies the group responsible for the task or notification.
-   * **Detail**: Selected from a dropdown list of available groups.
-5. **Email Notification**
-   * **Description**: Enables sending an email to notify the assigned group.
-   * **Options**:
-     * **True**: Sends an email notification.
-     * **False**: No email notification is sent.
+1. **Titel**
+   * **Beschreibung**: Gibt den Titel der Aufgabe oder Benachrichtigung an.
+   * **Detail**: Dient als Bezeichner für die erstellte Aufgabe oder Benachrichtigung.
+2. **Beschreibung**
+   * **Beschreibung**: Beschreibt den Kontext oder die Details der Aufgabe oder Benachrichtigung.
+   * **Detail**: Schafft Klarheit über ihren Zweck.
+3. **Priorität**
+   * **Beschreibung**: Legt die Wichtigkeitsstufe der Aufgabe fest.
+   * **Optionen**:
+     * **Hoch**: Erfordert sofortiges Handeln.
+     * **Mittel**: Wichtig, aber weniger dringend.
+     * **Niedrig**: Kann später bearbeitet werden.
+4. **Zugewiesene Gruppe**
+   * **Beschreibung**: Gibt die Gruppe an, die für die Aufgabe oder Benachrichtigung verantwortlich ist.
+   * **Detail**: Wird aus einer Dropdown-Liste der verfügbaren Gruppen ausgewählt.
+5. **E-Mail-Benachrichtigung**
+   * **Beschreibung**: Ermöglicht das Senden einer E-Mail, um die zugewiesene Gruppe zu benachrichtigen.
+   * **Optionen**:
+     * **True**: Sendet eine E-Mail-Benachrichtigung.
+     * **False**: Es wird keine E-Mail-Benachrichtigung gesendet.
 
-## **Additional Components in Version 3 and Version 4**
+## **Zusätzliche Komponenten in Version 3 und Version 4**
 
-1. **Decision Tree  (Version 3 Only)**
-   * **Description**: Enables the use of a decision tree for dynamic task creation.
-   * **Options**:
-     * **True**: Activates decision tree processing.
-     * **False**: Disables decision tree processing.
-2. **Task/Notification Option** **(Version 4 Only)**
-   * **Description**: Allows creating either a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task for the selected group.
-     * **Notification**: Sends a notification instead of creating a task.
+1. **Entscheidungsbaum (nur Version 3)**
+   * **Beschreibung**: Ermöglicht die Verwendung eines Entscheidungsbaums für die dynamische Aufgabenerstellung.
+   * **Optionen**:
+     * **True**: Aktiviert die Verarbeitung über den Entscheidungsbaum.
+     * **False**: Deaktiviert die Verarbeitung über den Entscheidungsbaum.
+2. **Task/Notification-Option** **(nur Version 4)**
+   * **Beschreibung**: Ermöglicht die Erstellung entweder einer Aufgabe oder einer Benachrichtigung.
+   * **Optionen**:
+     * **Task**: Erstellt eine Aufgabe für die ausgewählte Gruppe.
+     * **Notification**: Sendet eine Benachrichtigung, anstatt eine Aufgabe zu erstellen.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation**:\
-  Executes the card action only when the **"Where"** and **"And Sections"** are true.
-* **Task or Notification Creation**:
-  * A task is created for the selected group with the specified title, description, and priority.
-  * In Version 4, the card can create a notification instead of a task.
-* **Dynamic Assignment (Version 3 only)**:\
-  If enabled, the decision tree determines the target group dynamically.
-* **Email Notification**:\
-  Sends an email notification to the group if the email option is set to true.
+* **Bedingungsauswertung**:\
+  Führt die Kartenaktion nur aus, wenn die Abschnitte **"Where"** und **"And"** erfüllt sind.
+* **Erstellung von Aufgabe oder Benachrichtigung**:
+  * Es wird eine Aufgabe für die ausgewählte Gruppe mit dem angegebenen Titel, der Beschreibung und der Priorität erstellt.
+  * In Version 4 kann die Karte anstelle einer Aufgabe eine Benachrichtigung erstellen.
+* **Dynamische Zuweisung (nur Version 3)**:\
+  Sofern aktiviert, bestimmt der Entscheidungsbaum die Zielgruppe dynamisch.
+* **E-Mail-Benachrichtigung**:\
+  Sendet eine E-Mail-Benachrichtigung an die Gruppe, wenn die E-Mail-Option auf true gesetzt ist.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-1. **Define Task or Notification Details**: Enter the title, description, and priority.
-2. **Assign to a Group**: Select a group from the dropdown list for task or notification assignment.
-3. **Enable Email Notification**: Indicate whether the group should be notified via email.
-4. **Use Decision Tree (Version 3 only)**: Enable the decision tree to dynamically assign the group.
-5. **Select Output Type (Version 4 only)**: Choose whether the card creates a task or a notification.
+1. **Details der Aufgabe oder Benachrichtigung definieren**: Geben Sie Titel, Beschreibung und Priorität ein.
+2. **Einer Gruppe zuweisen**: Wählen Sie eine Gruppe aus der Dropdown-Liste für die Zuweisung der Aufgabe oder Benachrichtigung.
+3. **E-Mail-Benachrichtigung aktivieren**: Geben Sie an, ob die Gruppe per E-Mail benachrichtigt werden soll.
+4. **Entscheidungsbaum verwenden (nur Version 3)**: Aktivieren Sie den Entscheidungsbaum, um die Gruppe dynamisch zuzuweisen.
+5. **Ausgabetyp auswählen (nur Version 4)**: Wählen Sie, ob die Karte eine Aufgabe oder eine Benachrichtigung erstellt.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Create Group Task or Notification"** workflow card simplifies task and notification management by targeting groups directly. Its dynamic assignment feature, enabled by the decision tree, enhances flexibility, while email notifications ensure timely communication. Versions 3 and 4 add advanced functionality, making it a versatile tool for efficient workflow execution.
+Die Workflow-Karte **"Create Group Task or Notification"** vereinfacht das Management von Aufgaben und Benachrichtigungen, indem sie Gruppen direkt anspricht. Ihre dynamische Zuweisungsfunktion, die durch den Entscheidungsbaum ermöglicht wird, erhöht die Flexibilität, während E-Mail-Benachrichtigungen eine zeitnahe Kommunikation gewährleisten. Die Versionen 3 und 4 fügen erweiterte Funktionalität hinzu und machen sie zu einem vielseitigen Werkzeug für eine effiziente Workflow-Ausführung.

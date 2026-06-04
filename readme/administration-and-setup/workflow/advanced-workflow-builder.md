@@ -1,28 +1,28 @@
 # Advanced Workflow
 
-The **Advanced Workflow** builder is a node-graph editor for workflows that need branching, parallel paths and flow control — beyond the linear When/And/Then of the Standard builder. You arrange nodes on a canvas and connect them to define the execution flow.
+**Advanced Workflow** alat za izradu je editor grafa čvorova za radne tokove kojima su potrebni grananje, paralelne putanje i kontrola toka — iznad linearnog When/And/Then modela Standard alata. Raspoređujete čvorove na platnu i povezujete ih da definišete tok izvršavanja.
 
-## How to access
+## Kako pristupiti
 
-Open the Advanced Workflow designer from the workflow area (the advanced builder canvas). You start from a **Start** node and build out the flow by adding nodes.
+Otvorite Advanced Workflow dizajner iz oblasti radnih tokova (platno naprednog alata za izradu). Počinjete od **Start** čvora i gradite tok dodavanjem čvorova.
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_canvas.png" alt="Advanced Workflow node-graph canvas with toolbar"><figcaption><p>The Advanced Workflow canvas — a node graph with zoom, run, grid and save controls. Give the workflow a name in the toolbar.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_advanced_canvas.png" alt="Advanced Workflow platno grafa čvorova sa trakom alata"><figcaption><p>Advanced Workflow platno — graf čvorova sa kontrolama za zumiranje, pokretanje, mrežu i čuvanje. Dajte radnom toku ime u traci alata.</p></figcaption></figure>
 
-## Adding nodes
+## Dodavanje čvorova
 
-Click **+ Add** to open the node menu. In addition to the familiar **When**, **And** and **Then** cards, the advanced builder adds flow-control nodes:
+Kliknite na **+ Add** da otvorite meni čvorova. Pored poznatih **When**, **And** i **Then** kartica, napredni alat za izradu dodaje i čvorove za kontrolu toka:
 
-<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced Workflow Add menu with node types"><figcaption><p>The <strong>+ Add</strong> node menu: When / And / Then plus Wait ALL, Wait ANY, OR and Note.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_advanced_add_menu.png" alt="Advanced Workflow Add meni sa tipovima čvorova"><figcaption><p><strong>+ Add</strong> meni čvorova: When / And / Then plus Wait ALL, Wait ANY, OR i Note.</p></figcaption></figure>
 
-- **When / And / Then** — the same condition and action cards as the Standard builder.
-- **Wait ALL** — wait until *all* incoming branches complete before continuing.
-- **Wait ANY** — continue as soon as *any* incoming branch completes.
-- **OR** — branch the flow down alternative paths.
-- **Note** — a free-text annotation on the canvas (does not affect execution).
+- **When / And / Then** — iste kartice uslova i akcija kao u Standard alatu za izradu.
+- **Wait ALL** — čeka dok se *sve* dolazne grane ne završe pre nego što nastavi.
+- **Wait ANY** — nastavlja čim se *bilo koja* dolazna grana završi.
+- **OR** — grana tok niz alternativne putanje.
+- **Note** — slobodna tekstualna napomena na platnu (ne utiče na izvršavanje).
 
-Run the flow with the play control, validate it, and save with the save button in the toolbar.
+Pokrenite tok pomoću kontrole za reprodukciju, proverite ga, i sačuvajte dugmetom za čuvanje u traci alata.
 
-## Next steps
+## Sledeći koraci
 
-- See what each card does in the **Cards** section.
-- For simple linear automations, the **Standard Workflow** builder is faster to set up.
+- Pogledajte šta svaka kartica radi u odeljku **Cards**.
+- Za jednostavne linearne automatizacije, **Standard Workflow** alat za izradu se brže podešava.

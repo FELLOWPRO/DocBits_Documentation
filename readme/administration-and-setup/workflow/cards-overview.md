@@ -1,19 +1,19 @@
 # Cards
 
-Cards are the building blocks of every workflow. You combine them in the **When / And / Then** groups to describe when a workflow runs and what it does. This section explains the available cards and what each one does.
+Kartice su građevni blokovi svakog radnog toka. Kombinujete ih u **When / And / Then** grupama da opišete kada se radni tok izvršava i šta radi. Ovaj odeljak objašnjava dostupne kartice i šta svaka od njih radi.
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library grouped by category"><figcaption><p>The <strong>Add Card</strong> library — cards are grouped by category.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card biblioteka grupisana po kategorijama"><figcaption><p><strong>Add Card</strong> biblioteka — kartice su grupisane po kategorijama.</p></figcaption></figure>
 
-## Card groups
+## Grupe kartica
 
-- **When** — the trigger cards that start a workflow (e.g. document type, document type one of).
-- **And** — condition cards that must also be true before the actions run. These include *Compare with Purchase Order* (PO matching), *Document Field* comparisons, *Date & Time*, *Logic*, *Status*, *Table* and *Assignee* conditions.
-- **Then** — action cards that do the work: set fields, approve/reject, change status, export, create tasks, assign documents, manipulate tables, and run actions (Call API, Send HTTPS request, Run Workflow, AI calculations).
+- **When** — kartice okidača koje pokreću radni tok (npr. tip dokumenta, tip dokumenta jedan od).
+- **And** — kartice uslova koje takođe moraju biti ispunjene pre nego što se akcije izvrše. One uključuju *Compare with Purchase Order* (PO usaglašavanje), poređenja *Document Field*, *Date & Time*, *Logic*, *Status*, *Table* i *Assignee* uslove.
+- **Then** — kartice akcija koje obavljaju posao: postavljanje polja, odobravanje/odbijanje, promenu statusa, izvoz, kreiranje zadataka, dodelu dokumenata, manipulaciju tabelama i pokretanje akcija (Call API, Send HTTPS request, Run Workflow, AI proračuni).
 
-## Card reference guides
+## Referentni vodiči za kartice
 
-For a complete reference of each card and its options, see the *complete guide* pages in this section (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards, and the Action cards).
+Za potpunu referencu svake kartice i njenih opcija, pogledajte *complete guide* stranice u ovom odeljku (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards i Action kartice).
 
-## Combining cards
+## Kombinovanje kartica
 
-To see proven combinations of cards that solve common business scenarios, see the **Workflow Pattern Guides**.
+Da biste videli proverene kombinacije kartica koje rešavaju uobičajene poslovne scenarije, pogledajte **Workflow Pattern Guides**.

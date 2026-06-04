@@ -2,30 +2,30 @@
 
 <figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card ensures the correct classification of a document by verifying if it matches any of the specified document types. This is useful for situations where a document could belong to more than one category, allowing for broader validation and automated handling.
+Ova DocBits kartica obezbeđuje ispravnu klasifikaciju dokumenta proverom da li se poklapa sa bilo kojim od navedenih tipova dokumenata. Ovo je korisno u situacijama kada dokument može pripadati više od jedne kategorije, omogućavajući širu validaciju i automatizovano rukovanje.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Multiple Document Type Validation:** This card allows users to check if a document matches any of a set of specified document types, ensuring flexible categorization for more complex document workflows.
-* **Operator:** Users can define conditions to validate the document against multiple types. Available operators include:
-  * **Is:** Confirms that the document matches one of the specified document types.
-  * **Is Not:** Ensures that the document does not match any of the selected document types.
-* **Document Types:** Users can select from multiple supported document types, including:
-  * **Invoice:** Financial records submitted for payment.
-  * **Debit Note:** Documents indicating an adjustment that increases the amount owed.
-  * **Credit Note:** Documents indicating a reduction in the amount owed.
-  * **Purchase Order:** Documents detailing a buyer’s order.
-  * **Order Confirmation:** Documents that confirm an order has been accepted.
-  * **Advance Shipment Notice:** Documents notifying of an upcoming shipment.
+* **Validacija više tipova dokumenata:** Ova kartica omogućava korisnicima da provere da li se dokument poklapa sa bilo kojim od skupa navedenih tipova dokumenata, obezbeđujući fleksibilnu kategorizaciju za složenije radne tokove dokumenata.
+* **Operator:** Korisnici mogu definisati uslove za validaciju dokumenta u odnosu na više tipova. Dostupni operatori uključuju:
+  * **Is:** Potvrđuje da se dokument poklapa sa jednim od navedenih tipova dokumenata.
+  * **Is Not:** Obezbeđuje da se dokument ne poklapa ni sa jednim od izabranih tipova dokumenata.
+* **Tipovi dokumenata:** Korisnici mogu birati iz više podržanih tipova dokumenata, uključujući:
+  * **Invoice:** Finansijski zapisi podneti radi plaćanja.
+  * **Debit Note:** Dokumenti koji ukazuju na korekciju koja povećava dugovani iznos.
+  * **Credit Note:** Dokumenti koji ukazuju na smanjenje dugovanog iznosa.
+  * **Purchase Order:** Dokumenti koji detaljno opisuju kupčevu porudžbinu.
+  * **Order Confirmation:** Dokumenti koji potvrđuju da je porudžbina prihvaćena.
+  * **Advance Shipment Notice:** Dokumenti koji obaveštavaju o predstojećoj isporuci.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is ideal for document managers and administrators who need to ensure that documents are categorized into one of several types. It is especially useful for document workflows where a document may be classified under multiple categories, improving automation and classification accuracy.
+Ova kartica je idealna za menadžere dokumenata i administratore kojima je potrebno da obezbede da dokumenti budu kategorizovani u jedan od nekoliko tipova. Posebno je korisna za radne tokove dokumenata gde dokument može biti klasifikovan pod više kategorija, poboljšavajući automatizaciju i tačnost klasifikacije.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user uploads a document that could be either an "Invoice" or "Debit Note." Using the "Is" operator, the card confirms that the document matches one of the selected types, allowing the system to apply the appropriate rules and categorization.
+* Korisnik otprema dokument koji bi mogao biti ili "Invoice" ili "Debit Note". Korišćenjem operatora "Is", kartica potvrđuje da se dokument poklapa sa jednim od izabranih tipova, omogućavajući sistemu da primeni odgovarajuća pravila i kategorizaciju.
 
-By using the "Multiple Document Type Validation" card, organizations can enhance workflow flexibility, automate categorization, and ensure that documents are properly handled even when multiple types are applicable.
+Korišćenjem kartice "Validacija više tipova dokumenata", organizacije mogu poboljšati fleksibilnost radnog toka, automatizovati kategorizaciju i obezbediti da se dokumentima pravilno rukuje čak i kada je primenljivo više tipova.

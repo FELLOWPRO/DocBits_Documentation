@@ -1,31 +1,31 @@
 # Standard Workflow
 
-The **Standard Workflow** builder is the linear, card-based editor for automating document processing. A workflow is made of three groups of cards — **When** (the trigger), **And** (additional conditions) and **Then** (the actions to run). When a document matches the When/And conditions, the Then actions run automatically.
+**Standard Workflow** alat za izradu je linearni editor zasnovan na karticama za automatizaciju obrade dokumenata. Radni tok se sastoji od tri grupe kartica — **When** (okidač), **And** (dodatni uslovi) i **Then** (akcije koje se izvršavaju). Kada dokument ispuni When/And uslove, Then akcije se izvršavaju automatski.
 
-## How to access
+## Kako pristupiti
 
-Open **Workflow Dashboard → Workflow List**, then click **Add Workflow** to create a new Standard workflow, or click an existing workflow to edit it.
+Otvorite **Workflow Dashboard → Workflow List**, zatim kliknite na **Add Workflow** da kreirate novi Standard radni tok, ili kliknite na postojeći radni tok da ga izmenite.
 
-<figure><img src="../../.gitbook/assets/workflow_list.png" alt="Workflow List with type, execution order and trigger"><figcaption><p>The Workflow List — each row is a workflow you can open, toggle on/off or edit.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_list.png" alt="Workflow List sa tipom, redosledom izvršavanja i okidačem"><figcaption><p>Workflow List — svaki red je radni tok koji možete otvoriti, uključiti/isključiti ili izmeniti.</p></figcaption></figure>
 
-## The When / And / Then model
+## When / And / Then model
 
-<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Standard Workflow canvas with When, And and Then cards"><figcaption><p>The Standard Workflow canvas. This example triggers on invoices in a sub-organization and assigns them to a user.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Standard Workflow platno sa When, And i Then karticama"><figcaption><p>Standard Workflow platno. Ovaj primer se pokreće na fakturama u pod-organizaciji i dodeljuje ih korisniku.</p></figcaption></figure>
 
-- **When** — the trigger that starts the workflow (e.g. *Document type is Invoice*).
-- **And** — extra conditions that must also be true (e.g. *Document is part of sub-organization*). Leave empty to run on every match of the When card.
-- **Then** — the actions to perform (e.g. *Assign the document to the user*, create a task, call an API, send an email).
+- **When** — okidač koji pokreće radni tok (npr. *Document type is Invoice*).
+- **And** — dodatni uslovi koji takođe moraju biti ispunjeni (npr. *Document is part of sub-organization*). Ostavite prazno da bi se izvršavao na svakom poklapanju When kartice.
+- **Then** — akcije koje treba izvršiti (npr. *Assign the document to the user*, kreiranje zadatka, poziv API-ja, slanje e-pošte).
 
-## Adding cards
+## Dodavanje kartica
 
-Click **Add Card** in any group to open the card library. Cards are organised by category so you can find the building block you need:
+Kliknite na **Add Card** u bilo kojoj grupi da otvorite biblioteku kartica. Kartice su organizovane po kategorijama tako da lako pronađete građevni blok koji vam je potreban:
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library grouped by category"><figcaption><p>The <strong>Add Card</strong> library — condition cards, comparison cards, action cards and more, grouped by category.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card biblioteka grupisana po kategorijama"><figcaption><p><strong>Add Card</strong> biblioteka — kartice uslova, kartice poređenja, kartice akcija i još mnogo toga, grupisane po kategorijama.</p></figcaption></figure>
 
-Save with **Save Workflow**, or save the layout as a reusable template with **Save Template**.
+Sačuvajte pomoću **Save Workflow**, ili sačuvajte raspored kao šablon za ponovnu upotrebu pomoću **Save Template**.
 
-## Next steps
+## Sledeći koraci
 
-- See what each card does in the **Cards** section.
-- Combine cards into proven solutions with the **Workflow Pattern Guides**.
-- For branching flows with parallel paths (Wait ALL / Wait ANY / OR), use the **Advanced Workflow** builder.
+- Pogledajte šta svaka kartica radi u odeljku **Cards**.
+- Kombinujte kartice u proverena rešenja pomoću **Workflow Pattern Guides**.
+- Za tokove sa grananjem i paralelnim putanjama (Wait ALL / Wait ANY / OR), koristite **Advanced Workflow** alat za izradu.

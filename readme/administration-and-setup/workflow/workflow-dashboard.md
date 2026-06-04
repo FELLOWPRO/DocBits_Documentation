@@ -1,22 +1,22 @@
 # Dashboard
 
-The **Workflow Dashboard** is the home of the workflow area. It shows how your workflows are performing — run totals, success and fail rates, a runs-over-time chart and recent activity — and gives you access to the workflow list, the test manager and the Card SDK.
+**Workflow Dashboard** je polazna tačka oblasti radnih tokova. Prikazuje koliko uspešno funkcionišu vaši radni tokovi — ukupan broj izvršavanja, stope uspeha i neuspeha, grafikon izvršavanja tokom vremena i nedavne aktivnosti — i omogućava vam pristup listi radnih tokova, menadžeru testova i Card SDK-u.
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard with run totals, success and fail rates, the runs chart and recent activity"><figcaption><p>The Workflow Dashboard — run totals, success/fail rates and recent activity for every workflow.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard sa ukupnim brojem izvršavanja, stopama uspeha i neuspeha, grafikonom izvršavanja i nedavnim aktivnostima"><figcaption><p>Workflow Dashboard — ukupan broj izvršavanja, stope uspeha/neuspeha i nedavne aktivnosti za svaki radni tok.</p></figcaption></figure>
 
 ## Tabs
 
-- **Dashboard** — run metrics and recent activity (shown above).
-- **Workflow List** — every workflow with its type, execution order and trigger. Create a new one with **Add Workflow**.
-- **Test Manager List** — test scenarios that validate your workflows; run them with **Run All Tests**.
-- **License** — workflow licensing information.
-- **Card SDK** — build and upload custom workflow cards (see [Card SDK](card-sdk.md)).
+- **Dashboard** — metrike izvršavanja i nedavne aktivnosti (prikazano iznad).
+- **Workflow List** — svaki radni tok sa njegovim tipom, redosledom izvršavanja i okidačem. Kreirajte novi pomoću **Add Workflow**.
+- **Test Manager List** — testni scenariji koji proveravaju vaše radne tokove; pokrenite ih pomoću **Run All Tests**.
+- **License** — informacije o licenciranju radnih tokova.
+- **Card SDK** — izradite i otpremite prilagođene kartice radnog toka (pogledajte [Card SDK](card-sdk.md)).
 
-The **Test Manager** lets you save test scenarios per workflow and run them together, so you can confirm your workflows still behave correctly after changes:
+**Test Manager** vam omogućava da sačuvate testne scenarije po radnom toku i pokrenete ih zajedno, kako biste potvrdili da se vaši radni tokovi i dalje ponašaju ispravno nakon izmena:
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List with test scenarios and Run All Tests"><figcaption><p>The Test Manager List — each scenario shows a pass/fail result; use <strong>Run All Tests</strong> to re-run them all.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List sa testnim scenarijima i Run All Tests"><figcaption><p>Test Manager List — svaki scenario prikazuje rezultat prošao/pao; koristite <strong>Run All Tests</strong> da ih sve ponovo pokrenete.</p></figcaption></figure>
 
-## Next steps
+## Sledeći koraci
 
-- Build a linear automation with the **Standard Workflow** builder.
-- Build a branching flow with the **Advanced Workflow** builder.
+- Izgradite linearnu automatizaciju pomoću **Standard Workflow** alata za izradu.
+- Izgradite tok sa grananjem pomoću **Advanced Workflow** alata za izradu.

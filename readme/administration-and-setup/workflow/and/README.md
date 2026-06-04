@@ -1,64 +1,64 @@
 # And
 
-## Understanding "And" Cards
+## Razumevanje "And" kartica
 
-### **Purpose of 'And' Cards:**
+### **Svrha "And" kartica:**
 
-* **And** cards serve as condition cards that specify criteria that must be met for the workflow to continue. They effectively act as logical "AND" operators, meaning all conditions specified in these cards must be satisfied for the subsequent action to be triggered.
+* **And** kartice služe kao kartice uslova koje navode kriterijume koji moraju biti ispunjeni da bi se radni tok nastavio. One zapravo deluju kao logički "AND" operatori, što znači da svi uslovi navedeni u ovim karticama moraju biti zadovoljeni da bi se pokrenula naredna akcija.
 
-#### Categories of 'And' Cards
+#### Kategorije "And" kartica
 
-From the screenshots, it's clear that these cards cover a wide range of conditions, which include:
+Iz snimaka ekrana jasno je da ove kartice pokrivaju širok spektar uslova, koji uključuju:
 
 * **Compare with Purchase Order**:
-  * Conditions related to validation and comparison against purchase orders, such as comparing delivery dates, unit prices, or quantity differences. These are crucial for ensuring that transactions align with agreed terms.
+  * Uslovi vezani za validaciju i poređenje sa nalozima za nabavku, kao što su poređenje datuma isporuke, jediničnih cena ili razlika u količinama. Ovo je ključno za obezbeđivanje da transakcije budu usklađene sa dogovorenim uslovima.
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Document Field**:
-  * These involve conditions based on specific fields within documents, such as checkboxes being marked, comparison of field values, or ensuring a document field meets a specified tolerance. This is particularly important for data integrity and automated checks within forms or document management systems.
+  * Ovo uključuje uslove zasnovane na određenim poljima unutar dokumenata, kao što su označena polja za potvrdu, poređenje vrednosti polja ili obezbeđivanje da polje dokumenta zadovoljava navedenu toleranciju. Ovo je posebno važno za integritet podataka i automatizovane provere unutar formulara ili sistema za upravljanje dokumentima.
 
 <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Date & Time:**
-  * Conditions based on dates and times
+  * Uslovi zasnovani na datumima i vremenima
 
 <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Document**:
-  * Conditions based on document characteristics, such as type or association with a particular sub-organization. These conditions can direct workflows based on document categorization or departmental involvement.
+  * Uslovi zasnovani na karakteristikama dokumenta, kao što su tip ili povezanost sa određenom pod-organizacijom. Ovi uslovi mogu usmeravati radne tokove na osnovu kategorizacije dokumenata ili uključenosti odeljenja.
 
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Logic**:
-  * Logical conditions that might involve evaluations like "Continue with a chance of X%" or executing HTTPS requests, which are vital for integrations and probabilistic decision-making within workflows.
+  * Logički uslovi koji mogu uključivati procene kao što su "Nastavi sa verovatnoćom od X%" ili izvršavanje HTTPS zahteva, koji su od ključnog značaja za integracije i probabilističko odlučivanje unutar radnih tokova.
 
 <figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Status**:
-  * Focusing on the status of documents or tasks, these conditions ensure that only items in certain states trigger specific workflows, crucial for status-driven process management.
+  * Fokusirajući se na status dokumenata ili zadataka, ovi uslovi obezbeđuju da samo stavke u određenim stanjima pokreću određene radne tokove, što je ključno za upravljanje procesima vođenim statusom.
 
 <figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Table**:
-  * These involve conditions based on table data, such as matching regex patterns or comparing values within a table. Such conditions are essential for validating and manipulating large data sets.
+  * Ovo uključuje uslove zasnovane na podacima tabele, kao što su poklapanje regex obrazaca ili poređenje vrednosti unutar tabele. Takvi uslovi su od suštinskog značaja za validaciju i manipulaciju velikim skupovima podataka.
 
 <figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Assignee**:
-  * Conditions based on task or document assignees. This ensures that actions are only taken when certain users are involved, enhancing accountability and task specificity.
+  * Uslovi zasnovani na osobama kojima su dodeljeni zadaci ili dokumenti. Ovo obezbeđuje da se akcije preduzimaju samo kada su određeni korisnici uključeni, čime se poboljšava odgovornost i specifičnost zadataka.
 
 <figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Practical Application
+### Praktična primena
 
-These "And" cards are configured within the workflow to perform checks and validations that ensure the process adheres strictly to business rules and data integrity standards. For example:
+Ove "And" kartice se konfigurišu unutar radnog toka da bi vršile provere i validacije koje obezbeđuju da se proces strogo pridržava poslovnih pravila i standarda integriteta podataka. Na primer:
 
-* **A workflow might use an 'And' card to verify that an invoice's total amount matches the purchase order before triggering payment.**
-* **Another workflow could use an 'And' card to ensure a document is reviewed by specific team members before it progresses to the next stage.**
+* **Radni tok može koristiti "And" karticu da proveri da li se ukupan iznos fakture poklapa sa nalogom za nabavku pre nego što pokrene plaćanje.**
+* **Drugi radni tok bi mogao koristiti "And" karticu da obezbedi da određeni članovi tima pregledaju dokument pre nego što pređe u sledeću fazu.**
 
-### Conclusion
+### Zaključak
 
-"And" cards are a fundamental component of workflow systems that require precise control over process execution based on multiple conditions. They ensure that each step of a workflow only proceeds when all necessary criteria are thoroughly met, thus automating complex decision trees within business processes.
+"And" kartice su osnovna komponenta sistema radnih tokova koji zahtevaju preciznu kontrolu nad izvršavanjem procesa na osnovu više uslova. One obezbeđuju da svaki korak radnog toka nastavi samo kada su svi neophodni kriterijumi temeljno ispunjeni, čime se automatizuju složena stabla odlučivanja unutar poslovnih procesa.
 
-Understanding and configuring these cards correctly is crucial for leveraging the full capabilities of your workflow management system to enhance efficiency, accuracy, and compliance within organizational processes.
+Pravilno razumevanje i konfigurisanje ovih kartica je ključno za iskorišćavanje punih mogućnosti vašeg sistema za upravljanje radnim tokovima radi poboljšanja efikasnosti, tačnosti i usklađenosti unutar organizacionih procesa.

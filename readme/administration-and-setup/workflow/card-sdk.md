@@ -1,14 +1,14 @@
 # Card SDK
 
-The **Card SDK** lets partners and developers build custom workflow cards for DocFlow. You package a card as a partner app and upload it, or import it directly from GitHub.
+**Card SDK** omogućava partnerima i programerima da izrade prilagođene kartice radnog toka za DocFlow. Karticu pakujete kao partnersku aplikaciju i otpremate je, ili je uvozite direktno sa GitHub-a.
 
-<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Card SDK tab with Upload ZIP, GitHub Import and Submissions"><figcaption><p>The Card SDK — upload a partner app ZIP, import from GitHub, or review your submissions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Card SDK tab sa Upload ZIP, GitHub Import i Submissions"><figcaption><p>Card SDK — otpremite ZIP partnerske aplikacije, uvezite sa GitHub-a, ili pregledajte svoje prijave.</p></figcaption></figure>
 
-## How it works
+## Kako funkcioniše
 
-- **Download SDK Template** — start from the official template that contains the expected structure.
-- **Upload ZIP** — the ZIP must contain `app.json` and a `.docflowcompose/flow/` folder with the card definitions (max 10 MB). Upload &#x26; Validate checks the package before it is accepted.
-- **GitHub Import** — import a card definition straight from a GitHub repository.
-- **Submissions** — track the status of cards you have submitted.
+- **Download SDK Template** — počnite od zvaničnog šablona koji sadrži očekivanu strukturu.
+- **Upload ZIP** — ZIP mora da sadrži `app.json` i `.docflowcompose/flow/` fasciklu sa definicijama kartica (najviše 10 MB). Upload &#x26; Validate proverava paket pre nego što bude prihvaćen.
+- **GitHub Import** — uvezite definiciju kartice direktno iz GitHub repozitorijuma.
+- **Submissions** — pratite status kartica koje ste prijavili.
 
-Once validated and accepted, your custom cards appear in the **Add Card** library alongside the built-in cards.
+Nakon što budu proverene i prihvaćene, vaše prilagođene kartice se pojavljuju u **Add Card** biblioteci pored ugrađenih kartica.

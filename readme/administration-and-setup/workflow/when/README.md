@@ -2,38 +2,38 @@
 
 <figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
-#### Understanding the "When" in Workflow Configurations
+#### Razumevanje "When" u konfiguracijama radnog toka
 
-**Purpose of "When"**
+**Svrha "When"**
 
-* The "When" section in a workflow configuration defines the trigger conditions that initiate a particular workflow action. These conditions are based on specified criteria related to document attributes or user activities within the ERP system.
+* "When" odeljak u konfiguraciji radnog toka definiše uslove okidača koji pokreću određenu akciju radnog toka. Ovi uslovi se zasnivaju na navedenim kriterijumima vezanim za atribute dokumenta ili korisničke aktivnosti unutar ERP sistema.
 
-**How It Works**
+**Kako funkcioniše**
 
-* In your interface, "When" appears to be a starting point where users can select different trigger cards. Each card specifies conditions under which subsequent actions (defined in "And" section) will be executed.
+* U vašem interfejsu, "When" predstavlja polaznu tačku na kojoj korisnici mogu da izaberu različite kartice okidača. Svaka kartica navodi uslove pod kojima će se izvršiti naredne akcije (definisane u "And" odeljku).
 
-**Document Type Condition Cards**
+**Kartice uslova za tip dokumenta**
 
-* The cards with the document icon displayed in the screenshot are variations of "Document Type" conditions, which are used to trigger workflows based on the type of document being processed. Here’s a breakdown of each type of condition card shown:
-  * **Document type (Operator) one of (Type)**: This card triggers an action when the type of a document matches one of the specified types in a list. The operator might include options like "is" or "is not," allowing for inclusive or exclusive conditions.
-  * **Document type (Operator) (Type)**: This simpler variant triggers based on a single document type condition. It would typically check if the document type "is" or "is not" a specific type, without the option to select from multiple types.
+* Kartice sa ikonom dokumenta prikazane na snimku ekrana su varijacije "Document Type" uslova, koji se koriste za pokretanje radnih tokova na osnovu tipa dokumenta koji se obrađuje. Evo pregleda svakog tipa prikazane kartice uslova:
+  * **Document type (Operator) one of (Type)**: Ova kartica pokreće akciju kada se tip dokumenta poklapa sa jednim od navedenih tipova u listi. Operator može uključivati opcije kao što su "is" ili "is not", omogućavajući inkluzivne ili ekskluzivne uslove.
+  * **Document type (Operator) (Type)**: Ova jednostavnija varijanta pokreće akciju na osnovu uslova jednog tipa dokumenta. Tipično bi proveravala da li tip dokumenta "is" ili "is not" određeni tip, bez opcije izbora iz više tipova.
   *
 
 **Celery Beat**
 
-* The card with the clock icon in the screenshot is a "Celery Beat" condition, which is used to trigger workflows based on date and time.
+* Kartica sa ikonom sata na snimku ekrana je "Celery Beat" uslov, koji se koristi za pokretanje radnih tokova na osnovu datuma i vremena.
 
-#### Setting Up a "When" Trigger Card
+#### Podešavanje "When" kartice okidača
 
-1. **Selection of Condition Type**: Users begin by selecting a condition type that is relevant to the workflow they want to automate. In this case, document types are the focus.
-2. **Defining the Operator**: Users must decide the logical operator—such as "is" or "is not"—which sets the basis for comparing actual document types against the defined conditions.
-3. **Specifying Document Types**: Depending on the card, users may select one or multiple document types that will trigger the workflow when documents of those types are processed.
-4. **Finalizing the Trigger**: Once the condition is set up, it becomes the basis for triggering specific actions defined in the workflow. If a document meets the set condition, the defined actions will automatically be initiated.
+1. **Izbor tipa uslova**: Korisnici počinju izborom tipa uslova koji je relevantan za radni tok koji žele da automatizuju. U ovom slučaju, fokus su tipovi dokumenata.
+2. **Definisanje operatora**: Korisnici moraju da odluče logički operator — kao što su "is" ili "is not" — koji postavlja osnovu za poređenje stvarnih tipova dokumenata sa definisanim uslovima.
+3. **Navođenje tipova dokumenata**: U zavisnosti od kartice, korisnici mogu izabrati jedan ili više tipova dokumenata koji će pokrenuti radni tok kada se obrađuju dokumenti tih tipova.
+4. **Finaliziranje okidača**: Kada se uslov podesi, on postaje osnova za pokretanje određenih akcija definisanih u radnom toku. Ako dokument ispuni zadati uslov, definisane akcije će se automatski pokrenuti.
 
-#### Practical Application
+#### Praktična primena
 
-In practice, these trigger cards are crucial for automating processes like approvals, notifications, or any procedure that depends on the type of document being handled. For example, if a document type "is" an "Invoice," and it matches the conditions set in the "When" card, the workflow might automatically route the document for payment processing.
+U praksi, ove kartice okidača su ključne za automatizaciju procesa kao što su odobrenja, obaveštenja ili bilo koja procedura koja zavisi od tipa dokumenta koji se obrađuje. Na primer, ako je tip dokumenta "is" "Invoice", i poklapa se sa uslovima zadatim u "When" kartici, radni tok bi mogao automatski usmeriti dokument na obradu plaćanja.
 
-This setup ensures that workflows are not only efficient but also tailored to the specific operational needs of the organization, reducing manual oversight and speeding up document handling processes.
+Ovo podešavanje obezbeđuje da radni tokovi budu ne samo efikasni već i prilagođeni specifičnim operativnim potrebama organizacije, smanjujući ručni nadzor i ubrzavajući procese rukovanja dokumentima.
 
-In summary, the "When" part of your workflow configuration is about setting the stage for automated actions based on specific, predefined conditions. It’s a powerful tool for ensuring that your ERP system reacts dynamically to the needs of the business, enhancing both productivity and accuracy in document management.
+Ukratko, "When" deo vaše konfiguracije radnog toka odnosi se na postavljanje osnove za automatizovane akcije na osnovu određenih, unapred definisanih uslova. To je moćan alat za obezbeđivanje da vaš ERP sistem dinamično reaguje na potrebe poslovanja, poboljšavajući i produktivnost i tačnost u upravljanju dokumentima.

@@ -2,17 +2,17 @@
 
 <figure><img src="../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452 (1).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is specifically designed to perform predefined operations on documents categorized by type. It streamlines the handling of various document forms within an ERP system, ensuring that each type is processed according to its unique requirements and organizational policies.
+Ova kartica radnog toka je posebno dizajnirana za izvršavanje unapred definisanih operacija nad dokumentima kategorizovanim po tipu. Pojednostavljuje rukovanje različitim oblicima dokumenata unutar ERP sistema, obezbeđujući da se svaki tip obrađuje u skladu sa svojim jedinstvenim zahtevima i organizacionim politikama.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Document Type Validation**: This card verifies if a document matches a particular type, enabling users to confirm its categorization.
-* **Operator**: Users can set conditions to determine the document's type. Available operators include:
-  * **Is**: Confirms that the document matches the specified document type.
-  * **Is Not**: Ensures that the document does not match the specified document type.
-* **Document Types**: Supported document types include:
+* **Validacija tipa dokumenta**: Ova kartica proverava da li se dokument poklapa sa određenim tipom, omogućavajući korisnicima da potvrde njegovu kategorizaciju.
+* **Operator**: Korisnici mogu postaviti uslove za određivanje tipa dokumenta. Dostupni operatori uključuju:
+  * **Is**: Potvrđuje da se dokument poklapa sa navedenim tipom dokumenta.
+  * **Is Not**: Obezbeđuje da se dokument ne poklapa sa navedenim tipom dokumenta.
+* **Tipovi dokumenata**: Podržani tipovi dokumenata uključuju:
   * **Invoice**
   * **Debit Note**
   * **Credit Note**
@@ -20,12 +20,12 @@ This workflow card is specifically designed to perform predefined operations on 
   * **Order Confirmation**
   * **Advance Shipment Notice**
 
-## **Usage**:
+## **Upotreba**:
 
-This card is useful for document managers and administrators who need to ensure that documents are correctly classified for streamlined processing. Validating document types enhances workflow automation, enables document-specific actions, and keeps records organized.
+Ova kartica je korisna za menadžere dokumenata i administratore kojima je potrebno da obezbede da dokumenti budu ispravno klasifikovani radi pojednostavljene obrade. Validacija tipova dokumenata poboljšava automatizaciju radnog toka, omogućava akcije specifične za dokument i održava zapise organizovanim.
 
-## **Example Scenario**:
+## **Primer scenarija**:
 
-* A user uploads a document labeled as a "Debit Note." Using the "Is" operator, the card confirms that the document type is indeed "Debit Note," allowing the system to apply relevant processing rules and categorize it appropriately.
+* Korisnik otprema dokument označen kao "Debit Note". Korišćenjem operatora "Is", kartica potvrđuje da je tip dokumenta zaista "Debit Note", omogućavajući sistemu da primeni relevantna pravila obrade i da ga odgovarajuće kategorizuje.
 
-By deploying the "Document Type" card, organizations can automate document classification, ensure consistency in document handling, and improve the efficiency of document management workflows.
+Primenom kartice "Document Type", organizacije mogu automatizovati klasifikaciju dokumenata, obezbediti doslednost u rukovanju dokumentima i poboljšati efikasnost radnih tokova upravljanja dokumentima.

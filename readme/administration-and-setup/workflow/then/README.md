@@ -1,76 +1,76 @@
 # Then
 
-## Overview of "Then..." Action Cards
+## Pregled "Then..." kartica akcija
 
-### **1. Document Field Actions:**
+### **1. Akcije nad poljima dokumenta:**
 
-* **Invert Checkbox:** This action toggles the state of a checkbox field in a document.
-* **Set Checkbox:** This sets the state of a checkbox field to either true (checked) or false (unchecked).
-* **Set Field to Text:** This action sets a specified document field to a given text value.
+* **Invert Checkbox:** Ova akcija prebacuje stanje polja za potvrdu u dokumentu.
+* **Set Checkbox:** Postavlja stanje polja za potvrdu na tačno (označeno) ili netačno (neoznačeno).
+* **Set Field to Text:** Ova akcija postavlja navedeno polje dokumenta na zadatu tekstualnu vrednost.
 
 <figure><img src="../../../.gitbook/assets/then1 (1).png" alt=""><figcaption></figcaption></figure>
 
-### **2. Document Actions:**
+### **2. Akcije nad dokumentom:**
 
-* **Approve the Document:** Marks a document as approved within the system.
-* **Reject the Document:** Marks a document as rejected.
+* **Approve the Document:** Označava dokument kao odobren u sistemu.
+* **Reject the Document:** Označava dokument kao odbijen.
 
 <figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
-### **3. Export Actions:**
+### **3. Akcije izvoza:**
 
-* **Export document with export configuration:** Starts the export process with a specific export configuration.
-* **Start Export:** Starts the Export process.
+* **Export document with export configuration:** Pokreće proces izvoza sa određenom konfiguracijom izvoza.
+* **Start Export:** Pokreće proces izvoza.
 
 <figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
-### **4. Status Actions:**
+### **4. Akcije statusa:**
 
-* **Change Status:** Changes the status of a document or task to a specified new status.
+* **Change Status:** Menja status dokumenta ili zadatka u navedeni novi status.
 
 <figure><img src="../../../.gitbook/assets/then3 (1).png" alt=""><figcaption></figcaption></figure>
 
-### **5. Task Actions:**
+### **5. Akcije zadataka:**
 
-* Assignments and notifications:
-  * **Assign Task:** Creates and assigns a task with specific details to an individual or group, including options to notify them via email.
-  * **Create a New Task:** Similar to assign but focused on setting up a completely new task within the system.
+* Dodele i obaveštenja:
+  * **Assign Task:** Kreira i dodeljuje zadatak sa određenim detaljima pojedincu ili grupi, uključujući opcije za obaveštavanje putem e-pošte.
+  * **Create a New Task:** Slično dodeljivanju, ali fokusirano na postavljanje potpuno novog zadatka u sistemu.
 
 <figure><img src="../../../.gitbook/assets/then4 (1).png" alt=""><figcaption></figcaption></figure>
 
-### **6. Table Actions:**
+### **6. Akcije nad tabelama:**
 
-* **Calculate in Table:** Performs calculations on table data based on specified conditions and stores the results in a designated column.
-* **Change Entries:** Updates entries in a table based on specified conditions.
+* **Calculate in Table:** Vrši proračune nad podacima tabele na osnovu navedenih uslova i čuva rezultate u određenoj koloni.
+* **Change Entries:** Ažurira unose u tabeli na osnovu navedenih uslova.
 
 <figure><img src="../../../.gitbook/assets/then5 (1).png" alt=""><figcaption></figcaption></figure>
 
-### **7. Assignee Actions:**
+### **7. Akcije osobe kojoj je dodeljeno (Assignee):**
 
-* **Assign User from Field:** Assigns a user to a task or document based on user data stored in a specific field, with an option for a fallback user if the primary is unavailable.
-* **Assign Document to User or Group:** Directly assigns a document to a user or group, ensuring responsibility is designated appropriately.
+* **Assign User from Field:** Dodeljuje korisnika zadatku ili dokumentu na osnovu korisničkih podataka sačuvanih u određenom polju, uz opciju rezervnog korisnika ako primarni nije dostupan.
+* **Assign Document to User or Group:** Direktno dodeljuje dokument korisniku ili grupi, obezbeđujući da odgovornost bude odgovarajuće dodeljena.
 
 <figure><img src="../../../.gitbook/assets/then6 (1).png" alt=""><figcaption></figcaption></figure>
 
-### **8. External Interaction Actions:**
+### **8. Akcije eksterne interakcije:**
 
-* **Call API:** Sends a request to an external API, which can be customized with specific methods, parameters, and data.
-* **Send HTTPS Request:** Similar to API calls but specifically formatted for HTTPS protocols.
+* **Call API:** Šalje zahtev eksternom API-ju, koji se može prilagoditi određenim metodama, parametrima i podacima.
+* **Send HTTPS Request:** Slično pozivima API-ja, ali posebno formatirano za HTTPS protokole.
 
 <figure><img src="../../../.gitbook/assets/then7 (1).png" alt=""><figcaption></figcaption></figure>
 
-### **9. Advanced Processing:**
+### **9. Napredna obrada:**
 
-* **Run Workflow:** Triggers another workflow within the system, allowing for complex process chaining.
+* **Run Workflow:** Pokreće drugi radni tok unutar sistema, omogućavajući složeno ulančavanje procesa.
 
-#### Practical Application
+#### Praktična primena
 
-These action cards are used to automate responses based on specific triggers identified in the earlier parts of the workflow setup. For instance:
+Ove kartice akcija se koriste za automatizaciju odgovora na osnovu određenih okidača identifikovanih u ranijim delovima podešavanja radnog toka. Na primer:
 
-* If a document is identified as needing review, the "Approve the Document" action can be automatically triggered once it passes all specified conditions.
-* For data management tasks, "Set Checkbox" or "Set Field to Text" actions ensure that document fields are updated automatically, reducing manual data entry and the potential for errors.
-* Complex tasks like API interactions or status changes streamline interactions not only within the ERP system but also with external services and tools, enhancing integration and functionality.
+* Ako se utvrdi da dokument zahteva pregled, akcija "Approve the Document" se može automatski pokrenuti kada prođe sve navedene uslove.
+* Za zadatke upravljanja podacima, akcije "Set Checkbox" ili "Set Field to Text" obezbeđuju da se polja dokumenta automatski ažuriraju, smanjujući ručni unos podataka i mogućnost grešaka.
+* Složeni zadaci kao što su interakcije sa API-jem ili promene statusa pojednostavljuju interakcije ne samo unutar ERP sistema već i sa eksternim servisima i alatima, čime se poboljšavaju integracija i funkcionalnost.
 
-### Conclusion
+### Zaključak
 
-The "Then..." section in your workflow system provides robust tools for defining precise actions that should occur as a result of conditions being met in the workflow. By effectively using these actions, businesses can automate routine processes, ensure data accuracy, and respond dynamically to changing information and system states. Understanding how to configure and utilize these actions is key to maximizing the efficiency and effectiveness of your ERP system's workflow capabilities.
+"Then..." odeljak u vašem sistemu radnih tokova pruža robustne alate za definisanje preciznih akcija koje treba da se dogode kao rezultat ispunjenosti uslova u radnom toku. Efikasnim korišćenjem ovih akcija, preduzeća mogu automatizovati rutinske procese, obezbediti tačnost podataka i dinamično reagovati na promenljive informacije i stanja sistema. Razumevanje kako konfigurisati i koristiti ove akcije ključno je za maksimalno iskorišćavanje efikasnosti i delotvornosti mogućnosti radnih tokova vašeg ERP sistema.

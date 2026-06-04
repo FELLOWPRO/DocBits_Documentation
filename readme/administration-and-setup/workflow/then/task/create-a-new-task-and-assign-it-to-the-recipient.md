@@ -2,55 +2,55 @@
 
 <figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-The **"Create Task with Fallback"** workflow card ensures efficient task delegation by assigning tasks to specific roles—dispatcher or purchaser—while incorporating a fallback mechanism to prevent task assignment failures. This card improves workflow reliability and adaptability in dynamic scenarios.
+La tarjeta de flujo de trabajo **"Create Task with Fallback"** garantiza una delegación de tareas eficiente al asignar tareas a roles específicos —disponent o purchaser— a la vez que incorpora un mecanismo alternativo para evitar fallos en la asignación de tareas. Esta tarjeta mejora la fiabilidad y la adaptabilidad del flujo de trabajo en escenarios dinámicos.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Title**
-   * **Description**: Specifies the title of the task being created.
-   * **Detail**: Provides a concise identifier for the task.
+   * **Descripción**: Especifica el título de la tarea que se está creando.
+   * **Detalle**: Proporciona un identificador conciso para la tarea.
 2. **Description**
-   * **Description**: Describes the purpose or context of the task.
-   * **Detail**: Clarifies the details of the task.
+   * **Descripción**: Describe el propósito o el contexto de la tarea.
+   * **Detalle**: Aclara los detalles de la tarea.
 3. **Priority**
-   * **Description**: Sets the urgency level for the task.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but not urgent.
-     * **Low**: Can be addressed later.
+   * **Descripción**: Establece el nivel de urgencia de la tarea.
+   * **Opciones**:
+     * **High**: Requiere atención inmediata.
+     * **Medium**: Importante pero no urgente.
+     * **Low**: Puede abordarse más adelante.
 4. **Assigned Role**
-   * **Description**: Specifies the primary role to which the task is assigned.
-   * **Options**:
-     * **Disponent**: Assigns the task to the disponent.
-     * **Purchaser**: Assigns the task to the purchaser.
+   * **Descripción**: Especifica el rol principal al que se asigna la tarea.
+   * **Opciones**:
+     * **Disponent**: Asigna la tarea al disponent.
+     * **Purchaser**: Asigna la tarea al purchaser.
 5. **Email Notification**
-   * **Description**: Enables notifying the assigned user via email.
-   * **Options**:
-     * **True**: Sends an email notification to the user.
-     * **False**: No email notification is sent.
+   * **Descripción**: Posibilita notificar al usuario asignado por correo electrónico.
+   * **Opciones**:
+     * **True**: Envía una notificación por correo electrónico al usuario.
+     * **False**: No se envía ninguna notificación por correo electrónico.
 6. **Fallback User**
-   * **Description**: Provides a fallback option for task assignment if the recipient role is not found.
-   * **Detail**: Allows selecting a user from a dropdown list to ensure task delegation.
+   * **Descripción**: Proporciona una opción alternativa para la asignación de la tarea si no se encuentra el rol del destinatario.
+   * **Detalle**: Permite seleccionar un usuario de una lista desplegable para garantizar la delegación de la tarea.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Condition Evaluation**:\
-  The card executes only if the conditions in the **"Where"** and **"And Sections"** are met.
-* **Task Assignment**:
-  * The task is assigned to the selected role (dispatcher or purchaser).
-  * If the specified role is not found, the task is assigned to a user from the fallback dropdown list.
-* **Email Notification**:\
-  Sends an email to the assigned user if email notification is enabled.
+* **Evaluación de la condición**:\
+  La tarjeta se ejecuta solo si se cumplen las condiciones de las secciones **"Where"** y **"And"**.
+* **Asignación de la tarea**:
+  * La tarea se asigna al rol seleccionado (disponent o purchaser).
+  * Si no se encuentra el rol especificado, la tarea se asigna a un usuario de la lista desplegable alternativa.
+* **Notificación por correo electrónico**:\
+  Envía un correo electrónico al usuario asignado si la notificación por correo electrónico está habilitada.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-1. **Specify Task Details**: Enter the title, description, and priority of the task.
-2. **Select Primary Role**: Choose the role to which the task will be assigned (dispatcher or purchaser).
-3. **Configure Fallback User**: Select a fallback user from the dropdown list to ensure task assignment if the primary role is not found.
-4. **Enable Email Notification**: Indicate whether the assigned user should receive an email notification.
+1. **Especificar los detalles de la tarea**: Introduzca el título, la descripción y la prioridad de la tarea.
+2. **Seleccionar el rol principal**: Elija el rol al que se asignará la tarea (disponent o purchaser).
+3. **Configurar el usuario alternativo**: Seleccione un usuario alternativo de la lista desplegable para garantizar la asignación de la tarea si no se encuentra el rol principal.
+4. **Habilitar la notificación por correo electrónico**: Indique si el usuario asignado debe recibir una notificación por correo electrónico.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The **"Create Task with Fallback"** workflow card ensures seamless task delegation by integrating a fallback mechanism. By assigning tasks based on roles and providing an alternate user option, it enhances reliability and flexibility in task management processes.
+La tarjeta de flujo de trabajo **"Create Task with Fallback"** garantiza una delegación de tareas fluida al integrar un mecanismo alternativo. Al asignar tareas según los roles y proporcionar una opción de usuario alternativo, mejora la fiabilidad y la flexibilidad en los procesos de gestión de tareas.

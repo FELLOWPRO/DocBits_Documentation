@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This DocBits card verifies if items in a dataset meet specified conditions based on their shelf life. The card allows users to choose between "any" or "all" items for validation and supports various comparison operators. This is ideal for scenarios where workflow decisions depend on the shelf life of items, such as quality control, inventory management, or compliance checks
+Cette carte DocBits vérifie si les articles d'un ensemble de données satisfont des conditions spécifiées en fonction de leur durée de conservation. La carte permet aux utilisateurs de choisir entre « any » ou « all » articles pour la validation et prend en charge divers opérateurs de comparaison. C'est idéal pour les scénarios où les décisions du workflow dépendent de la durée de conservation des articles, comme le contrôle qualité, la gestion des stocks ou les contrôles de conformité.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Shelf Life Validation:** This card checks the shelf life of items against a specified condition. Users can choose to validate **any** item or **all** items in the dataset and apply various comparison operators to define the condition.
-* **Item Selection:** Users can choose between:
-  * **Any Item:** The card triggers if at least one item meets the specified shelf life condition.
-  * **All Items:** The card triggers only if all items meet the specified shelf life condition.
-* **Operators:** The following operators are available to set the shelf life condition:
-  * **Equals (=):** Checks if the shelf life is exactly equal to the specified value.
-  * **Not Equals (≠):** Ensures the shelf life is not equal to the specified value.
-  * **Greater Than (>):** Confirms that the shelf life is greater than the specified value.
-  * **Greater or Equals (≥):** Ensures the shelf life is greater than or equal to the specified value.
-  * **Less Than (<):** Checks if the shelf life is less than the specified value.
-  * **Less or Equals (≤):** Ensures the shelf life is less than or equal to the specified value.
+* **Validation de la durée de conservation :** cette carte vérifie la durée de conservation des articles par rapport à une condition spécifiée. Les utilisateurs peuvent choisir de valider **un quelconque** article ou **tous** les articles de l'ensemble de données et d'appliquer divers opérateurs de comparaison pour définir la condition.
+* **Sélection des articles :** les utilisateurs peuvent choisir entre :
+  * **Any Item :** la carte se déclenche si au moins un article satisfait la condition de durée de conservation spécifiée.
+  * **All Items :** la carte ne se déclenche que si tous les articles satisfont la condition de durée de conservation spécifiée.
+* **Operators :** les opérateurs suivants sont disponibles pour définir la condition de durée de conservation :
+  * **Equals (=) :** vérifie si la durée de conservation est exactement égale à la valeur spécifiée.
+  * **Not Equals (≠) :** s'assure que la durée de conservation n'est pas égale à la valeur spécifiée.
+  * **Greater Than (>) :** confirme que la durée de conservation est supérieure à la valeur spécifiée.
+  * **Greater or Equals (≥) :** s'assure que la durée de conservation est supérieure ou égale à la valeur spécifiée.
+  * **Less Than (<) :** vérifie si la durée de conservation est inférieure à la valeur spécifiée.
+  * **Less or Equals (≤) :** s'assure que la durée de conservation est inférieure ou égale à la valeur spécifiée.
 
 
 
-## **Usage:**
+## **Utilisation :**
 
-This card is suitable for quality control teams, inventory managers, or compliance officers who need to ensure items meet specific shelf life requirements before proceeding with further actions or workflows.
+Cette carte convient aux équipes de contrôle qualité, aux gestionnaires de stock ou aux responsables de la conformité qui doivent garantir que les articles satisfont des exigences spécifiques de durée de conservation avant de poursuivre des actions ou des workflows complémentaires.
 
-## **Example Scenario:**
+## **Scénario d'exemple :**
 
-* A user configures the card to check if **all items** have a shelf life **greater than or equal to 30 days**. If every item meets this condition, the workflow proceeds, confirming that all items have sufficient shelf life for sale or distribution.
+* Un utilisateur configure la carte pour vérifier si **tous les articles** ont une durée de conservation **supérieure ou égale à 30 jours**. Si chaque article satisfait cette condition, le workflow se poursuit, confirmant que tous les articles ont une durée de conservation suffisante pour la vente ou la distribution.
 
-By using the "Shelf Life Validation" card, organizations can enforce shelf life standards, maintain product quality, and ensure workflow accuracy based on item shelf life conditions.
+En utilisant la carte « Shelf Life Validation », les organisations peuvent appliquer des normes de durée de conservation, maintenir la qualité des produits et garantir l'exactitude du workflow en fonction des conditions de durée de conservation des articles.

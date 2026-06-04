@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This DocBits card checks whether items in a dataset have a specified receiving method. Users can choose to validate **any** item or **all** items in the dataset based on a selected condition, making it suitable for scenarios where workflows depend on item receiving methods, such as in supply chain management or inventory tracking.
+Cette carte DocBits vérifie si les articles d'un ensemble de données disposent d'une méthode de réception spécifiée. Les utilisateurs peuvent choisir de valider **un quelconque** article ou **tous** les articles de l'ensemble de données en fonction d'une condition sélectionnée, ce qui la rend adaptée aux scénarios où les workflows dépendent des méthodes de réception des articles, comme la gestion de la chaîne d'approvisionnement ou le suivi des stocks.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Receiving Method Validation:** This card verifies the receiving method of items against a specified condition. Users can choose between **any** item or **all** items in the dataset and set the condition as **equals** or **not equals**.
-* **Item Selection:** Users can specify:
-  * **Any Item:** The card triggers if at least one item meets the specified receiving method condition.
-  * **All Items:** The card triggers only if all items meet the specified receiving method condition.
-* **Operators:** The following operators are available to define the condition:
-  * **Equals (=):** Checks if the receiving method matches the specified value.
-  * **Not Equals (≠):** Ensures the receiving method does not match the specified value.
+* **Validation de la méthode de réception :** cette carte vérifie la méthode de réception des articles par rapport à une condition spécifiée. Les utilisateurs peuvent choisir entre **un quelconque** article ou **tous** les articles de l'ensemble de données et définir la condition comme **equals** ou **not equals**.
+* **Sélection des articles :** les utilisateurs peuvent spécifier :
+  * **Any Item :** la carte se déclenche si au moins un article satisfait la condition de méthode de réception spécifiée.
+  * **All Items :** la carte ne se déclenche que si tous les articles satisfont la condition de méthode de réception spécifiée.
+* **Operators :** les opérateurs suivants sont disponibles pour définir la condition :
+  * **Equals (=) :** vérifie si la méthode de réception correspond à la valeur spécifiée.
+  * **Not Equals (≠) :** s'assure que la méthode de réception ne correspond pas à la valeur spécifiée.
 
-## **Usage:**
+## **Utilisation :**
 
-This card is ideal for warehouse managers, inventory coordinators, or logistics personnel who need to validate item receiving methods before allowing further actions, such as processing, storage, or shipping.
+Cette carte est idéale pour les responsables d'entrepôt, les coordinateurs de stock ou le personnel logistique qui doivent valider les méthodes de réception des articles avant d'autoriser des actions supplémentaires, comme le traitement, le stockage ou l'expédition.
 
-## **Example Scenario:**
+## **Scénario d'exemple :**
 
-* A user configures the card to check if **all items** have the receiving method **equals "Direct Delivery"**. If every item meets this condition, the workflow proceeds, confirming that all items are intended for direct delivery.
+* Un utilisateur configure la carte pour vérifier si **tous les articles** ont la méthode de réception **égale à « Direct Delivery »**. Si chaque article satisfait cette condition, le workflow se poursuit, confirmant que tous les articles sont destinés à une livraison directe.
 
-By using the "Receiving Method Validation" card, organizations can ensure compliance with receiving protocols, improve logistics workflows, and maintain accuracy in item handling based on specific receiving methods.
+En utilisant la carte « Receiving Method Validation », les organisations peuvent garantir le respect des protocoles de réception, améliorer les workflows logistiques et maintenir l'exactitude du traitement des articles selon des méthodes de réception spécifiques.

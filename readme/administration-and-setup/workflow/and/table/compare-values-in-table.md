@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This DocBits card performs a comparison between values in two specified columns within a table, based on a chosen condition. It’s useful for scenarios that require validating relationships between data points, such as quality control, data consistency checks, or compliance verification.
+Cette carte DocBits effectue une comparaison entre les valeurs de deux colonnes spécifiées au sein d'un tableau, en fonction d'une condition choisie. Elle est utile pour les scénarios qui nécessitent de valider les relations entre points de données, comme le contrôle qualité, les contrôles de cohérence des données ou la vérification de conformité.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Column Comparison:** This card allows users to set conditions to compare values between two columns in the same table.
-* **Operators:** The following operators are available to define the comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Table and Column Selection:** Users specify the table and the two columns they wish to compare.
+* **Comparaison de colonnes :** cette carte permet aux utilisateurs de définir des conditions pour comparer les valeurs entre deux colonnes du même tableau.
+* **Operators :** les opérateurs suivants sont disponibles pour définir la comparaison :
+  * **Equals (=) :** vérifie si les valeurs des deux colonnes sont exactement égales.
+  * **Not Equals (≠) :** s'assure que les valeurs des deux colonnes ne sont pas égales.
+  * **Greater Than (>) :** confirme que les valeurs de la première colonne sont supérieures à celles de la seconde colonne.
+  * **Greater or Equals (≥) :** s'assure que les valeurs de la première colonne sont supérieures ou égales à celles de la seconde colonne.
+  * **Lesser Than (<) :** vérifie si les valeurs de la première colonne sont inférieures à celles de la seconde colonne.
+  * **Less or Equals (≤) :** s'assure que les valeurs de la première colonne sont inférieures ou égales à celles de la seconde colonne.
+* **Sélection de la table et des colonnes :** les utilisateurs spécifient la table et les deux colonnes qu'ils souhaitent comparer.
 
-## **Usage:**
+## **Utilisation :**
 
-This card is ideal for data analysts, quality control teams, or compliance officers who need to ensure that values in one column relate to values in another according to specific rules, allowing for advanced data validation.
+Cette carte est idéale pour les analystes de données, les équipes de contrôle qualité ou les responsables de la conformité qui doivent garantir que les valeurs d'une colonne sont liées aux valeurs d'une autre selon des règles spécifiques, permettant une validation avancée des données.
 
-## **Example Scenario:**
+## **Scénario d'exemple :**
 
-* A user configures the card to check if values in the "Current Stock" column are **greater than or equal to (≥)** values in the "Minimum Stock Level" column in the "Inventory" table. If all values meet this condition, the workflow proceeds, confirming that stock levels are adequate.
+* Un utilisateur configure la carte pour vérifier si les valeurs de la colonne « Current Stock » sont **supérieures ou égales à (≥)** aux valeurs de la colonne « Minimum Stock Level » dans la table « Inventory ». Si toutes les valeurs satisfont cette condition, le workflow se poursuit, confirmant que les niveaux de stock sont adéquats.
 
-By using the "Column Value Comparison" card, organizations can ensure data consistency, maintain quality standards, and validate data relationships within tables.
+En utilisant la carte « Column Value Comparison », les organisations peuvent garantir la cohérence des données, maintenir des normes de qualité et valider les relations entre données au sein des tableaux.

@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This DocBits card is used to validate whether any value in a specific column of a table matches a provided regex pattern. If any single entry in the column matches the pattern, the workflow will continue, making it ideal for use cases where identifying even a single match triggers the next steps in the process.
+Cette carte DocBits sert à valider si une quelconque valeur d'une colonne spécifique d'un tableau correspond à un motif regex fourni. Si une seule entrée de la colonne correspond au motif, le workflow se poursuit, ce qui la rend idéale pour les cas d'usage où l'identification d'une seule correspondance déclenche les étapes suivantes du processus.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Regex Pattern Validation:** This card checks if any value in a given column of a table matches the provided regular expression pattern. The card will trigger and allow the workflow to continue if at least one entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that at least one value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for regex pattern matches.
+* **Validation par motif regex :** cette carte vérifie si une quelconque valeur d'une colonne donnée d'un tableau correspond au motif d'expression régulière fourni. La carte se déclenche et permet la poursuite du workflow si au moins une entrée de la colonne satisfait la condition.
+* **Operator :** les utilisateurs définissent la colonne et spécifient le motif regex. La condition disponible inclut :
+  * **Matches Regex Pattern :** vérifie qu'au moins une valeur de la colonne spécifiée correspond au motif regex.
+* **Sélection de la table et de la colonne :** les utilisateurs spécifient la table et la colonne qu'ils souhaitent vérifier pour des correspondances au motif regex.
 
-## **Usage:**
+## **Utilisation :**
 
-This card is particularly useful for scenarios where a table contains data that might require specific matches, such as validating email addresses, invoice numbers, or product IDs. It ensures that workflows proceed when any relevant entry matches the defined pattern, without needing to check every entry.
+Cette carte est particulièrement utile dans les scénarios où un tableau contient des données pouvant nécessiter des correspondances spécifiques, comme la validation d'adresses e-mail, de numéros de facture ou d'identifiants de produit. Elle garantit que les workflows se poursuivent lorsqu'une entrée pertinente correspond au motif défini, sans avoir à vérifier chaque entrée.
 
-## **Example Scenario:**
+## **Scénario d'exemple :**
 
-* A user sets the card to check for entries in the "Email Address" column of the "Customers" table, using a regex pattern for valid email formats. If at least one email address in the column matches the pattern, the card will trigger the next workflow step, ensuring that the system processes the valid entry.
+* Un utilisateur configure la carte pour vérifier les entrées de la colonne « Email Address » de la table « Customers », à l'aide d'un motif regex pour les formats d'e-mail valides. Si au moins une adresse e-mail de la colonne correspond au motif, la carte déclenche l'étape suivante du workflow, garantissant que le système traite l'entrée valide.
 
-By using the "Regex Pattern Matching" card, organizations can automate workflows based on dynamic, pattern-based validations, streamlining processes and ensuring that only relevant entries trigger further actions.
+En utilisant la carte « Regex Pattern Matching », les organisations peuvent automatiser des workflows fondés sur des validations dynamiques basées sur des motifs, rationalisant les processus et garantissant que seules les entrées pertinentes déclenchent des actions supplémentaires.

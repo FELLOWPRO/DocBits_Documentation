@@ -2,40 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-The **"Assign Document to User"** workflow card allows users to assign a document to a specific user, ensuring smooth workflow management by routing documents to the appropriate person. Version 3 adds the capability to use a decision tree to dynamically determine the user assignment based on available conditions.
+La carte de workflow **« Assign Document to User »** permet aux utilisateurs d'assigner un document à un utilisateur spécifique, garantissant une gestion fluide du workflow en acheminant les documents vers la personne appropriée. La Version 3 ajoute la possibilité d'utiliser un arbre de décision pour déterminer dynamiquement l'attribution de l'utilisateur en fonction des conditions disponibles.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
 1. **User**
-   * **Description:** Specifies the user to whom the document will be assigned.
-   * **Detail:** A dropdown list of all available users is provided for selection. The selected user will be assigned the document for further action.
+   * **Description :** spécifie l'utilisateur auquel le document sera assigné.
+   * **Détail :** une liste déroulante de tous les utilisateurs disponibles est proposée pour la sélection. L'utilisateur sélectionné se verra attribuer le document pour une action complémentaire.
 
-## **Additional Components in Version 3:**
+## **Composants supplémentaires dans la Version 3 :**
 
 1. **Use Decision Tree**
-   * **Description:** If enabled, the card uses a decision tree to dynamically determine the user assignment.
-   * **Options:**
-     * **True:** Uses the decision tree for dynamic user assignment.
-     * **False:** Assigns the document to the selected user without using the decision tree.
+   * **Description :** si elle est activée, la carte utilise un arbre de décision pour déterminer dynamiquement l'attribution de l'utilisateur.
+   * **Options :**
+     * **True :** utilise l'arbre de décision pour l'attribution dynamique de l'utilisateur.
+     * **False :** assigne le document à l'utilisateur sélectionné sans utiliser l'arbre de décision.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to the selected user, ensuring that the task is routed to the appropriate person for action. This helps with accountability and effective document management.
-* **Decision Tree (Version 3):**\
-  If the decision tree is enabled, the card evaluates the conditions defined within the tree to dynamically select the user for document assignment.
+* **Évaluation de la condition :**\
+  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* **Attribution du document :**\
+  La carte assigne le document à l'utilisateur sélectionné, garantissant que la tâche est acheminée vers la personne appropriée pour action. Cela favorise la responsabilité et une gestion efficace des documents.
+* **Arbre de décision (Version 3) :**\
+  Si l'arbre de décision est activé, la carte évalue les conditions définies dans l'arbre pour sélectionner dynamiquement l'utilisateur de l'attribution du document.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-* **Select User:**\
-  Choose the **user** from the dropdown list to whom the document will be assigned.
-* **Use Decision Tree (Version 3):**\
-  Enable or disable the use of the decision tree to dynamically select the user.
+* **Sélectionner l'utilisateur :**\
+  Choisissez l'**utilisateur** dans la liste déroulante auquel le document sera assigné.
+* **Use Decision Tree (Version 3) :**\
+  Activez ou désactivez l'utilisation de l'arbre de décision pour sélectionner dynamiquement l'utilisateur.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Assign Document to User"** workflow card facilitates efficient document routing by assigning it to the selected user, with the added flexibility in Version 3 to dynamically determine the user using a decision tree. This ensures a more adaptive and efficient workflow process.
+La carte de workflow **« Assign Document to User »** facilite un acheminement efficace des documents en les assignant à l'utilisateur sélectionné, avec la flexibilité supplémentaire de la Version 3 de déterminer dynamiquement l'utilisateur à l'aide d'un arbre de décision. Cela garantit un processus de workflow plus adaptatif et efficace.

@@ -2,29 +2,29 @@
 
 <figure><img src="../../../../.gitbook/assets/image (306).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Objectif :
 
-The **"Assign document to \[User/group] based on decision table"** workflow card dynamically assigns documents to users or groups based on the outcome of a **decision table**. This feature ensures that document assignment is handled efficiently and consistently based on predefined conditions.
+La carte de workflow **« Assign document to \[User/group] based on decision table »** assigne dynamiquement des documents à des utilisateurs ou à des groupes en fonction du résultat d'une **table de décision**. Cette fonctionnalité garantit que l'attribution des documents est gérée de manière efficace et cohérente sur la base de conditions prédéfinies.
 
-## Components of the Card:
+## Composants de la carte :
 
 1. **User/Group**
-   * **Description:** Specifies the **user** or **group** to whom the document will be assigned.
-   * **Detail:** Selected based on the outcome of the **decision table**.
+   * **Description :** spécifie l'**utilisateur** ou le **groupe** auquel le document sera assigné.
+   * **Détail :** sélectionné en fonction du résultat de la **table de décision**.
 2. **Decision Table**
-   * **Description:** A **decision table** is used to determine the appropriate **user** or **group** for document assignment.
-   * **Detail:** Uses the decision table defined in the **"and"** section.
+   * **Description :** une **table de décision** est utilisée pour déterminer l'**utilisateur** ou le **groupe** approprié pour l'attribution du document.
+   * **Détail :** utilise la table de décision définie dans la section **« and »**.
 
-## Functionality:
+## Fonctionnalité :
 
-* **Condition Evaluation:** The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Dynamic Document Assignment:** The document is assigned to the **user** or **group** determined by the **decision table**.
+* **Évaluation de la condition :** la carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* **Attribution dynamique du document :** le document est assigné à l'**utilisateur** ou au **groupe** déterminé par la **table de décision**.
 
-## Setup and Configuration:
+## Mise en place et configuration :
 
-* **Define Decision Table:** Set up the **decision table** to include the conditions for determining the target **user** or **group**.
-* **Assign Document to User/Group:** The document will be dynamically assigned based on the decision table's outcome.
+* **Définir la table de décision :** configurez la **table de décision** pour inclure les conditions de détermination de l'**utilisateur** ou du **groupe** cible.
+* **Assigner le document à l'utilisateur/groupe :** le document sera assigné dynamiquement en fonction du résultat de la table de décision.
 
-## Conclusion:
+## Conclusion :
 
-The **"Assign document to \[User/group] based on decision table"** workflow card provides dynamic document assignment capabilities based on decision logic. This ensures accurate and efficient processing by automatically directing documents to the appropriate **user** or **group**, enhancing workflow automation.
+La carte de workflow **« Assign document to \[User/group] based on decision table »** offre des capacités d'attribution dynamique des documents fondées sur une logique de décision. Cela garantit un traitement précis et efficace en dirigeant automatiquement les documents vers l'**utilisateur** ou le **groupe** approprié, renforçant l'automatisation du workflow.

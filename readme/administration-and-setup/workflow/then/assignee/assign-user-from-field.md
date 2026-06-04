@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (299).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-The **"Assign User from Field with Fallback"** workflow card dynamically assigns a user based on the value found in a specified document field. If the field does not contain a valid user, a fallback user is selected from a predefined list of available users to ensure the task or action is properly assigned.
+La carte de workflow **« Assign User from Field with Fallback »** assigne dynamiquement un utilisateur en fonction de la valeur trouvée dans un champ de document spécifié. Si le champ ne contient pas d'utilisateur valide, un utilisateur de repli est sélectionné dans une liste prédéfinie d'utilisateurs disponibles pour garantir que la tâche ou l'action est correctement assignée.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
 1. **Field Name**
-   * **Description:** Specifies the **document field** that contains the user information to be assigned.
-   * **Detail:** This field is evaluated to determine which user should be assigned. If the field contains a valid user, that user will be assigned the task. If the field is empty or invalid, the fallback user will be assigned.
+   * **Description :** spécifie le **champ de document** qui contient les informations de l'utilisateur à assigner.
+   * **Détail :** ce champ est évalué pour déterminer quel utilisateur doit être assigné. Si le champ contient un utilisateur valide, cet utilisateur se verra attribuer la tâche. Si le champ est vide ou invalide, l'utilisateur de repli sera assigné.
 2. **User (Fallback)**
-   * **Description:** Specifies the **fallback user** to be assigned if the document field does not contain a valid user.
-   * **Detail:** A dropdown list of all available users is provided for selection. This user will be assigned if the document field is empty or does not contain a valid user.
+   * **Description :** spécifie l'**utilisateur de repli** à assigner si le champ de document ne contient pas d'utilisateur valide.
+   * **Détail :** une liste déroulante de tous les utilisateurs disponibles est proposée pour la sélection. Cet utilisateur sera assigné si le champ de document est vide ou ne contient pas d'utilisateur valide.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Field-Based User Assignment:**\
-  The card first attempts to assign the task or action to the user identified in the **Field Name**.
-* **Fallback User Assignment:**\
-  If the field does not contain a valid user (or is empty), the card assigns the task to the fallback user selected from the **User (Fallback)** dropdown list.
+* **Évaluation de la condition :**\
+  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* **Attribution d'utilisateur basée sur un champ :**\
+  La carte tente d'abord d'assigner la tâche ou l'action à l'utilisateur identifié dans le **Field Name**.
+* **Attribution d'utilisateur de repli :**\
+  Si le champ ne contient pas d'utilisateur valide (ou est vide), la carte assigne la tâche à l'utilisateur de repli sélectionné dans la liste déroulante **User (Fallback)**.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-* **Select Field Name:**\
-  Choose the **document field** that specifies the user for assignment.
-* **Select Fallback User:**\
-  Choose the **fallback user** from the dropdown list. This user will be assigned the task if the document field does not contain a valid user.
+* **Sélectionner le Field Name :**\
+  Choisissez le **champ de document** qui spécifie l'utilisateur de l'attribution.
+* **Sélectionner l'utilisateur de repli :**\
+  Choisissez l'**utilisateur de repli** dans la liste déroulante. Cet utilisateur se verra attribuer la tâche si le champ de document ne contient pas d'utilisateur valide.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Assign User from Field with Fallback"** workflow card ensures that a task or action is always assigned to a valid user. If the user in the document field is not available, the fallback user is automatically assigned, providing flexibility and ensuring task completion.
+La carte de workflow **« Assign User from Field with Fallback »** garantit qu'une tâche ou une action est toujours assignée à un utilisateur valide. Si l'utilisateur du champ de document n'est pas disponible, l'utilisateur de repli est automatiquement assigné, offrant de la flexibilité et garantissant l'achèvement de la tâche.

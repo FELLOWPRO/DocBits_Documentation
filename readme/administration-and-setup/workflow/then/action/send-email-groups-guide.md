@@ -4,51 +4,51 @@ Te karty trafiają do grupy **Then** w Kreatorze przepływów — akcje uruchami
 
 <figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty dodaje się do grupy <strong>Then</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
 
-## Purpose
-This card automatically sends email notifications to groups of users. Instead of assigning work to individual people, you send the message to a group, and all members of that group receive it.
+## Cel
+Ta karta automatycznie wysyła powiadomienia e-mail do grup użytkowników. Zamiast przypisywać pracę pojedynczym osobom, wysyłasz wiadomość do grupy, a wszyscy członkowie tej grupy ją otrzymują.
 
-**Real-world example:** When a high-value invoice arrives, automatically send an email notification to everyone in the "Finance Team" group so they're aware it needs review.
-
----
-
-## When to Use This Card
-
-Use this card when you need to:
-- Notify multiple people at once
-- Send alerts to team groups
-- Broadcast updates to departments
-- Notify groups about document status changes
-- Send reminders to group members
-
-**Common scenarios:**
-- Notify procurement team about new suppliers
-- Alert finance team about high-value invoices
-- Notify warehouse team about shipments
-- Broadcast document status changes
+**Rzeczywisty przykład:** Gdy przybywa faktura o wysokiej wartości, automatycznie wyślij powiadomienie e-mail do wszystkich w grupie "Finance Team", aby byli świadomi, że wymaga ona przeglądu.
 
 ---
 
-## How It Works
+## Kiedy używać tej karty
 
-1. **Condition Check**: Workflow checks "Where" and "And" conditions
-2. **Prepare Email**: System prepares the email using template
-3. **Get Group Members**: System finds all members of specified group
-4. **Send**: Email is sent to each group member
-5. **Log**: Email sending is recorded
+Użyj tej karty, gdy musisz:
+- Powiadomić wiele osób jednocześnie
+- Wysyłać alerty do grup zespołów
+- Rozsyłać aktualizacje do działów
+- Powiadamiać grupy o zmianach statusu dokumentu
+- Wysyłać przypomnienia członkom grupy
+
+**Typowe scenariusze:**
+- Powiadamianie zespołu zakupowego o nowych dostawcach
+- Alarmowanie zespołu finansowego o fakturach o wysokiej wartości
+- Powiadamianie zespołu magazynowego o wysyłkach
+- Rozsyłanie zmian statusu dokumentu
 
 ---
 
-## Parameters Explained
+## Jak to działa
+
+1. **Sprawdzenie warunku**: Przepływ pracy sprawdza warunki "Where" i "And"
+2. **Przygotowanie e-maila**: System przygotowuje wiadomość e-mail przy użyciu szablonu
+3. **Pobranie członków grupy**: System znajduje wszystkich członków określonej grupy
+4. **Wysłanie**: Wiadomość e-mail jest wysyłana do każdego członka grupy
+5. **Rejestracja**: Wysłanie wiadomości e-mail jest rejestrowane
+
+---
+
+## Wyjaśnienie parametrów
 
 ### Email Template
-The email message to be sent
+Wiadomość e-mail do wysłania
 
-**Options:**
-- Choose from existing templates
-- Each template has predefined subject, body, and formatting
-- Templates can include placeholders like {document_number}, {supplier_name}
+**Opcje:**
+- Wybierz spośród istniejących szablonów
+- Każdy szablon ma wstępnie zdefiniowany temat, treść i formatowanie
+- Szablony mogą zawierać symbole zastępcze takie jak {document_number}, {supplier_name}
 
-**Example Template:**
+**Przykładowy szablon:**
 ```
 Subject: Document {document_number} requires review
 
@@ -68,9 +68,9 @@ DocBits Automation
 ```
 
 ### Group
-The group of users to send the email to
+Grupa użytkowników, do której zostanie wysłana wiadomość e-mail
 
-**Example groups:**
+**Przykładowe grupy:**
 - Finance Team
 - Procurement Team
 - Warehouse Team
@@ -79,32 +79,32 @@ The group of users to send the email to
 
 ---
 
-## Configuration Steps
+## Kroki konfiguracji
 
-### Step 1: Choose Email Template
-1. Click "Select Email Template"
-2. Choose template from list
-3. Verify subject and content
+### Krok 1: Wybierz szablon e-mail
+1. Kliknij "Select Email Template"
+2. Wybierz szablon z listy
+3. Zweryfikuj temat i treść
 
-### Step 2: Select Group
-1. Click "Select Group"
-2. Choose the group you want to notify
-3. Verify group members (usually shows count)
+### Krok 2: Wybierz grupę
+1. Kliknij "Select Group"
+2. Wybierz grupę, którą chcesz powiadomić
+3. Zweryfikuj członków grupy (zwykle pokazuje liczbę)
 
-### Step 3: Set Conditions
-1. Add condition: "When [condition] is true"
-2. Example: "When invoice amount is greater than €5000"
+### Krok 3: Ustaw warunki
+1. Dodaj warunek: "When [condition] is true"
+2. Przykład: "When invoice amount is greater than €5000"
 
-### Step 4: Test
-1. Test with sample document
-2. Verify email sends to group
-3. Check template rendering
+### Krok 4: Przetestuj
+1. Przetestuj z przykładowym dokumentem
+2. Zweryfikuj, czy wiadomość e-mail jest wysyłana do grupy
+3. Sprawdź renderowanie szablonu
 
 ---
 
-## Email Template Examples
+## Przykłady szablonów e-mail
 
-### Template 1: High-Value Invoice Alert
+### Szablon 1: Alert o fakturze o wysokiej wartości
 ```
 Subject: High-Value Invoice Alert - {document_number}
 
@@ -125,7 +125,7 @@ This requires immediate review and approval.
 Sent automatically by DocBits
 ```
 
-### Template 2: Supplier Status Change
+### Szablon 2: Zmiana statusu dostawcy
 ```
 Subject: Supplier Status Update - {supplier_name}
 
@@ -145,7 +145,7 @@ Please update your systems accordingly.
 Sent automatically by DocBits
 ```
 
-### Template 3: Document Ready for Export
+### Szablon 3: Dokument gotowy do eksportu
 ```
 Subject: Document Approved for Export - {document_number}
 
@@ -166,26 +166,26 @@ Sent automatically by DocBits
 
 ---
 
-## Common Use Cases
+## Typowe przypadki użycia
 
-### Use Case 1: Quality Control Alerts
-**Trigger:** When discrepancy is found between invoice and PO
+### Przypadek użycia 1: Alerty kontroli jakości
+**Wyzwalacz:** Gdy znaleziono rozbieżność między fakturą a PO
 
-**Email Group:** Quality Team
+**Grupa e-mail:** Quality Team
 
-**Content:**
+**Treść:**
 ```
 Invoice {number} has quality issues:
 - Unit Price variance: 12% (exceeds 5% tolerance)
 - Please review and take action
 ```
 
-### Use Case 2: Approval Notifications
-**Trigger:** When document reaches certain status
+### Przypadek użycia 2: Powiadomienia o zatwierdzeniu
+**Wyzwalacz:** Gdy dokument osiąga określony status
 
-**Email Group:** Approval Committee
+**Grupa e-mail:** Approval Committee
 
-**Content:**
+**Treść:**
 ```
 Document {number} is awaiting approval:
 - Amount: {amount}
@@ -193,12 +193,12 @@ Document {number} is awaiting approval:
 - Please login to approve/reject
 ```
 
-### Use Case 3: Exception Notifications
-**Trigger:** When conditions not met
+### Przypadek użycia 3: Powiadomienia o wyjątkach
+**Wyzwalacz:** Gdy warunki nie są spełnione
 
-**Email Group:** Managers
+**Grupa e-mail:** Managers
 
-**Content:**
+**Treść:**
 ```
 Exception alert for document {number}:
 - Supplier code missing
@@ -206,12 +206,12 @@ Exception alert for document {number}:
 - Manual review required
 ```
 
-### Use Case 4: Status Updates
-**Trigger:** When document status changes
+### Przypadek użycia 4: Aktualizacje statusu
+**Wyzwalacz:** Gdy zmienia się status dokumentu
 
-**Email Group:** Team responsible for next step
+**Grupa e-mail:** Zespół odpowiedzialny za następny krok
 
-**Content:**
+**Treść:**
 ```
 Document {number} status changed to: {status}
 Assigned to: {assigned_user}
@@ -220,56 +220,56 @@ Next steps: {next_steps}
 
 ---
 
-## Troubleshooting
+## Rozwiązywanie problemów
 
 ### "Email not received"
 
-**Possible Causes:**
-- [ ] Users in group don't have email addresses
-- [ ] Email blocked by spam filter
-- [ ] Email address is incorrect in group
-- [ ] Group has no members
+**Możliwe przyczyny:**
+- [ ] Użytkownicy w grupie nie mają adresów e-mail
+- [ ] Wiadomość e-mail zablokowana przez filtr spamu
+- [ ] Adres e-mail jest nieprawidłowy w grupie
+- [ ] Grupa nie ma członków
 
-**Solutions:**
-1. Verify all group members have email addresses
-2. Check spam/junk folder
-3. Verify group membership is correct
-4. Add users to group if missing
-5. Check with IT that email service is working
+**Rozwiązania:**
+1. Zweryfikuj, czy wszyscy członkowie grupy mają adresy e-mail
+2. Sprawdź folder spamu/wiadomości-śmieci
+3. Zweryfikuj, czy członkostwo w grupie jest poprawne
+4. Dodaj użytkowników do grupy, jeśli ich brakuje
+5. Sprawdź z działem IT, czy usługa e-mail działa
 
 ### "Template not rendering correctly"
 
-**Cause:** Placeholder variables not found
+**Przyczyna:** Nie znaleziono zmiennych symboli zastępczych
 
-**Solution:**
-- [ ] Verify field names match exactly
-- [ ] Check if field has a value in the document
-- [ ] Use correct placeholder format: {field_name}
-- [ ] Test with sample document that has all fields
+**Rozwiązanie:**
+- [ ] Zweryfikuj, czy nazwy pól są dokładnie zgodne
+- [ ] Sprawdź, czy pole ma wartość w dokumencie
+- [ ] Użyj poprawnego formatu symbolu zastępczego: {field_name}
+- [ ] Przetestuj z przykładowym dokumentem zawierającym wszystkie pola
 
 ### "Some people getting email, others not"
 
-**Cause:** Incomplete group membership or invalid emails
+**Przyczyna:** Niekompletne członkostwo w grupie lub nieprawidłowe adresy e-mail
 
-**Solutions:**
-- [ ] Verify all members have valid email
-- [ ] Check if some users have opted out
-- [ ] Verify group membership is current
-- [ ] Contact IT to validate email addresses
+**Rozwiązania:**
+- [ ] Zweryfikuj, czy wszyscy członkowie mają prawidłowy e-mail
+- [ ] Sprawdź, czy niektórzy użytkownicy zrezygnowali
+- [ ] Zweryfikuj, czy członkostwo w grupie jest aktualne
+- [ ] Skontaktuj się z działem IT w celu walidacji adresów e-mail
 
 ### "Want to add/remove people from group"
 
-**Solution:**
-- Contact your administrator
-- Groups are managed in system settings
-- Can't be changed from this card
-- Request group membership changes in IT
+**Rozwiązanie:**
+- Skontaktuj się ze swoim administratorem
+- Grupy są zarządzane w ustawieniach systemu
+- Nie można ich zmienić z tej karty
+- Poproś o zmiany w członkostwie grupy w dziale IT
 
 ---
 
-## Email Template Customization
+## Dostosowywanie szablonu e-mail
 
-### Available Placeholders
+### Dostępne symbole zastępcze
 ```
 {document_number} - Document ID
 {invoice_number} - Invoice ID
@@ -286,55 +286,55 @@ Next steps: {next_steps}
 {comment} - Comments or notes
 ```
 
-### Creating Custom Placeholders
-If you need additional data in emails:
-1. Contact your administrator
-2. Request new placeholder
-3. Add necessary field to document
-4. Update email template
+### Tworzenie niestandardowych symboli zastępczych
+Jeśli potrzebujesz dodatkowych danych w wiadomościach e-mail:
+1. Skontaktuj się ze swoim administratorem
+2. Poproś o nowy symbol zastępczy
+3. Dodaj niezbędne pole do dokumentu
+4. Zaktualizuj szablon e-mail
 
 ---
 
-## Best Practices
+## Najlepsze praktyki
 
-✅ **Do:**
-- Keep email content brief and clear
-- Include action items (what should recipients do?)
-- Include link or instructions to access document
-- Test template with sample data
-- Send to right group (don't over-notify)
-- Use templates for consistency
+✅ **Rób:**
+- Utrzymuj treść wiadomości e-mail zwięzłą i jasną
+- Uwzględnij elementy do działania (co powinni zrobić odbiorcy?)
+- Dołącz łącze lub instrukcje dostępu do dokumentu
+- Przetestuj szablon z przykładowymi danymi
+- Wysyłaj do właściwej grupy (nie powiadamiaj nadmiernie)
+- Używaj szablonów dla spójności
 
-❌ **Don't:**
-- Send too many emails (notification fatigue)
-- Include sensitive data in emails
-- Send to groups that don't need info
-- Use unclear subject lines
-- Forget to include how to take action
-- Send emails to individuals (use group instead)
-
----
-
-## Performance Notes
-
-- Each email takes ~1 second to send
-- Large groups may take time (100 people = ~100 seconds)
-- Don't create loops that send thousands of emails
-- Monitor email service capacity
-- Consider batching if many documents
+❌ **Nie rób:**
+- Nie wysyłaj zbyt wielu wiadomości e-mail (zmęczenie powiadomieniami)
+- Nie dołączaj danych wrażliwych w wiadomościach e-mail
+- Nie wysyłaj do grup, które nie potrzebują informacji
+- Nie używaj niejasnych tematów
+- Nie zapominaj dołączyć informacji, jak podjąć działanie
+- Nie wysyłaj wiadomości e-mail do osób indywidualnych (zamiast tego użyj grupy)
 
 ---
 
-## Related Cards
+## Uwagi dotyczące wydajności
 
-- **ACTION_SEND_EMAIL** - Send to individual person
-- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Assign task instead of just notifying
-- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Create task and notify
-- **STAUS_CHANGE** - Change status and notify
+- Każda wiadomość e-mail trwa ~1 sekundę na wysłanie
+- Duże grupy mogą zająć czas (100 osób = ~100 sekund)
+- Nie twórz pętli wysyłających tysiące wiadomości e-mail
+- Monitoruj pojemność usługi e-mail
+- Rozważ grupowanie w razie wielu dokumentów
 
 ---
 
-## Typical Workflow Example
+## Powiązane karty
+
+- **ACTION_SEND_EMAIL** - Wyślij do osoby indywidualnej
+- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Przypisz zadanie zamiast tylko powiadamiać
+- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Utwórz zadanie i powiadom
+- **STAUS_CHANGE** - Zmień status i powiadom
+
+---
+
+## Typowy przykład przepływu pracy
 
 ```
 Document Arrives
@@ -352,20 +352,19 @@ Workflow Continues
 
 ---
 
-## FAQ
+## Często zadawane pytania
 
-**Q: Can I send to multiple groups?**
-A: Create separate cards for each group
+**P: Czy mogę wysyłać do wielu grup?**
+O: Utwórz oddzielne karty dla każdej grupy
 
-**Q: What if someone's email bounces?**
-A: Email is logged as failed, IT can troubleshoot
+**P: Co się stanie, jeśli czyjaś wiadomość e-mail zostanie odbita?**
+O: Wiadomość e-mail jest rejestrowana jako nieudana, dział IT może rozwiązać problem
 
-**Q: Can I change the email template?**
-A: Contact your administrator to modify templates
+**P: Czy mogę zmienić szablon e-mail?**
+O: Skontaktuj się ze swoim administratorem, aby zmodyfikować szablony
 
-**Q: Can I send based on conditions?**
-A: Yes! Use "Where" and "And" conditions to control when emails send
+**P: Czy mogę wysyłać na podstawie warunków?**
+O: Tak! Użyj warunków "Where" i "And", aby kontrolować, kiedy wysyłane są wiadomości e-mail
 
-**Q: How do I know if email was received?**
-A: Check email logs in DocBits for sending status
-
+**P: Skąd mam wiedzieć, czy wiadomość e-mail została odebrana?**
+O: Sprawdź dzienniki e-mail w DocBits, aby uzyskać status wysyłania

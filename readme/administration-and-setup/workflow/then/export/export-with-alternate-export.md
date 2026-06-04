@@ -2,31 +2,31 @@
 
 <figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Zweck**
 
-The **"Export Document with Alternate Export"** workflow card enables exporting a document using an alternate export configuration. It offers flexibility by allowing users to bypass the default export configuration and use an alternate one, ensuring compatibility with specific requirements or scenarios.
+Die Workflow-Karte **"Export Document with Alternate Export"** ermöglicht den Export eines Dokuments mithilfe einer alternativen Exportkonfiguration. Sie bietet Flexibilität, indem sie es Benutzern ermöglicht, die Standard-Exportkonfiguration zu umgehen und eine alternative zu verwenden, und so die Kompatibilität mit bestimmten Anforderungen oder Szenarien sicherstellt.
 
-## **Components of the Card**
+## **Bestandteile der Karte**
 
-**Alternate Export Configuration**
+**Alternative Exportkonfiguration**
 
-* **Description**: Specifies the export configuration to be used for the document.
-* **Detail**: This configuration overrides the default settings and applies the alternate export configuration specified in the workflow.
+* **Beschreibung**: Gibt die Exportkonfiguration an, die für das Dokument verwendet wird.
+* **Detail**: Diese Konfiguration überschreibt die Standardeinstellungen und wendet die im Workflow angegebene alternative Exportkonfiguration an.
 
-## **Functionality**
+## **Funktionalität**
 
-* **Condition Evaluation**:\
-  The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. The card executes only if all conditions are true.
-* **Document Export**:\
-  Once executed, the card uses the alternate export configuration to process and export the document. This enables tailored export handling for specific workflows.
+* **Bedingungsauswertung**:\
+  Das System wertet die in den Abschnitten **"Where"** und **"And"** des Workflows festgelegten Bedingungen aus. Die Karte wird nur ausgeführt, wenn alle Bedingungen erfüllt sind.
+* **Dokumentexport**:\
+  Sobald sie ausgeführt wird, verwendet die Karte die alternative Exportkonfiguration, um das Dokument zu verarbeiten und zu exportieren. Dies ermöglicht eine maßgeschneiderte Exportbehandlung für bestimmte Workflows.
 
-## **Setup and Configuration**
+## **Einrichtung und Konfiguration**
 
-To configure this card:
+Um diese Karte zu konfigurieren:
 
-1. Ensure the **"Where"** and **"And Sections"** are configured correctly, as the card only executes if these conditions evaluate to true.
-2. Verify that the alternate export configuration is valid and active in the system.
+1. Stellen Sie sicher, dass die Abschnitte **"Where"** und **"And"** korrekt konfiguriert sind, da die Karte nur ausgeführt wird, wenn diese Bedingungen als erfüllt ausgewertet werden.
+2. Überprüfen Sie, ob die alternative Exportkonfiguration im System gültig und aktiv ist.
 
-## **Conclusion**
+## **Fazit**
 
-The **"Export Document with Alternate Export"** workflow card enhances flexibility and control in document export processes. By allowing the selection of an alternate export configuration, it accommodates diverse export requirements while maintaining efficient workflow automation.
+Die Workflow-Karte **"Export Document with Alternate Export"** erhöht die Flexibilität und Kontrolle bei Dokumentexportprozessen. Indem sie die Auswahl einer alternativen Exportkonfiguration ermöglicht, berücksichtigt sie unterschiedliche Exportanforderungen und erhält gleichzeitig eine effiziente Workflow-Automatisierung.

@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card is designed to invert the current state of a checkbox field. If the checkbox is checked (true), it will be unchecked (false), and vice versa. The inversion occurs based on the conditions set in the **"Where"** and **"And Sections."** This card helps automate workflows where a condition requires toggling a checkbox based on specific criteria.
+Diese Workflow-Karte ist darauf ausgelegt, den aktuellen Zustand eines Kontrollkästchenfelds umzukehren. Ist das Kontrollkästchen aktiviert (true), wird es deaktiviert (false), und umgekehrt. Die Umkehrung erfolgt auf Basis der in den Abschnitten **"Where"** und **"And"** festgelegten Bedingungen. Diese Karte hilft, Workflows zu automatisieren, bei denen eine Bedingung das Umschalten eines Kontrollkästchens auf Basis bestimmter Kriterien erfordert.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Field Name**
-   * **Description**: Specifies the checkbox field to be inverted.&#x20;
-   * **Detail**: The selected checkbox field will have its state toggled from true to false or from false to true based on its current state.
+1. **Feldname**
+   * **Beschreibung**: Gibt das umzukehrende Kontrollkästchenfeld an.&#x20;
+   * **Detail**: Der Zustand des ausgewählten Kontrollkästchenfelds wird je nach aktuellem Zustand von true auf false oder von false auf true umgeschaltet.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation**: The system evaluates the conditions defined in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the **"Then Section"** action will execute, which in this case means the checkbox field will be toggled.
-  * If **either condition is false**, the card will not execute and no change will be made to the checkbox field.
-* **Action Execution**: If the conditions in the **"Where"** and **"And Sections"** evaluate to true, the checkbox field's state will be inverted:
-  * If the checkbox is checked (true), it will be unchecked (false).
-  * If the checkbox is unchecked (false), it will be checked (true).
+* **Bedingungsauswertung**: Das System wertet die in den Abschnitten **"Where"** und **"And"** definierten Bedingungen aus:
+  * Sind **beide Bedingungen erfüllt**, wird die Aktion im **"Then"-Abschnitt** ausgeführt, was in diesem Fall bedeutet, dass das Kontrollkästchenfeld umgeschaltet wird.
+  * Ist **eine der beiden Bedingungen nicht erfüllt**, wird die Karte nicht ausgeführt, und es erfolgt keine Änderung am Kontrollkästchenfeld.
+* **Ausführung der Aktion**: Werden die Bedingungen in den Abschnitten **"Where"** und **"And"** als erfüllt ausgewertet, wird der Zustand des Kontrollkästchenfelds umgekehrt:
+  * Ist das Kontrollkästchen aktiviert (true), wird es deaktiviert (false).
+  * Ist das Kontrollkästchen deaktiviert (false), wird es aktiviert (true).
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-To configure this card, users need to:
+Um diese Karte zu konfigurieren, müssen Benutzer:
 
-1. **Select the checkbox field** (Field Name) that will be inverted. The available checkbox fields in the document are listed for selection.
-2. The checkbox field will only be inverted if the conditions in both the **"Where"** and **"And Sections"** are true.
+1. **Das umzukehrende Kontrollkästchenfeld auswählen** (Feldname). Die verfügbaren Kontrollkästchenfelder im Dokument werden zur Auswahl aufgelistet.
+2. Das Kontrollkästchenfeld wird nur umgekehrt, wenn die Bedingungen in beiden Abschnitten **"Where"** und **"And"** erfüllt sind.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Invert checkbox \[Field Name]"** workflow card offers a simple yet powerful automation tool to toggle checkbox values based on specific conditions. By reducing the need for manual checkbox adjustments, this card enhances efficiency in document processing and ensures consistency across workflows.
+Die Workflow-Karte **"Invert checkbox \[Field Name]"** bietet ein einfaches, aber leistungsstarkes Automatisierungswerkzeug, um Kontrollkästchenwerte auf Basis bestimmter Bedingungen umzuschalten. Indem sie den Bedarf an manuellen Anpassungen von Kontrollkästchen reduziert, steigert diese Karte die Effizienz bei der Dokumentverarbeitung und sorgt für Konsistenz über Workflows hinweg.

@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (284).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The **"Export Document with Export Configuration"** workflow card is designed to export a document using a specified export configuration. It provides the flexibility to ignore any pending tasks associated with the document, ensuring a smooth export process regardless of its current state.
+Die Workflow-Karte **"Export Document with Export Configuration"** ist darauf ausgelegt, ein Dokument mithilfe einer angegebenen Exportkonfiguration zu exportieren. Sie bietet die Flexibilität, alle mit dem Dokument verbundenen offenen Aufgaben zu ignorieren, und gewährleistet so einen reibungslosen Exportprozess unabhängig vom aktuellen Zustand des Dokuments.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Export Configuration**
-   * **Description**: Specifies the export configuration to be used for processing the document.
-   * **Detail**: This configuration determines the format, structure, and destination of the exported document.
-2. **Ignore Pending Tasks**
-   * **Description**: Determines whether pending tasks linked to the document should be disregarded during the export process.
-   * **Options**:
-     * **True**: Exports the document regardless of pending tasks.
-     * **False**: Ensures pending tasks are completed before the export.
+1. **Exportkonfiguration**
+   * **Beschreibung**: Gibt die Exportkonfiguration an, die zur Verarbeitung des Dokuments verwendet wird.
+   * **Detail**: Diese Konfiguration bestimmt das Format, die Struktur und das Ziel des exportierten Dokuments.
+2. **Offene Aufgaben ignorieren**
+   * **Beschreibung**: Legt fest, ob mit dem Dokument verknüpfte offene Aufgaben während des Exportprozesses ignoriert werden sollen.
+   * **Optionen**:
+     * **True**: Exportiert das Dokument unabhängig von offenen Aufgaben.
+     * **False**: Stellt sicher, dass offene Aufgaben vor dem Export abgeschlossen werden.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. If both conditions are true, the export process is initiated.
-* **Document Export**: Using the specified **Export Configuration**, the document is processed and exported in the defined format and destination.
-* **Pending Tasks Handling**: If **Ignore Pending Tasks** is set to **True**, the export process bypasses any outstanding tasks linked to the document. If set to **False**, the export is deferred until all tasks are resolved.
+* **Bedingungsauswertung**: Das System wertet die in den Abschnitten **"Where"** und **"And"** des Workflows festgelegten Bedingungen aus. Sind beide Bedingungen erfüllt, wird der Exportprozess gestartet.
+* **Dokumentexport**: Mithilfe der angegebenen **Exportkonfiguration** wird das Dokument im definierten Format und Ziel verarbeitet und exportiert.
+* **Umgang mit offenen Aufgaben**: Ist **Offene Aufgaben ignorieren** auf **True** gesetzt, umgeht der Exportprozess alle ausstehenden, mit dem Dokument verknüpften Aufgaben. Ist die Einstellung auf **False** gesetzt, wird der Export aufgeschoben, bis alle Aufgaben erledigt sind.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-To configure this card, users need to:
+Um diese Karte zu konfigurieren, müssen Benutzer:
 
-1. Select the desired **Export Configuration** to define how the document will be exported.
-2. Choose whether to **Ignore Pending Tasks** by setting the value to **True** or **False.**
-3. Ensure the conditions in the **"Where"** and **"And Sections"** are correctly set, as the card only executes its action when these conditions are true.
+1. Die gewünschte **Exportkonfiguration** auswählen, um festzulegen, wie das Dokument exportiert wird.
+2. Wählen, ob **Offene Aufgaben ignorieren** werden sollen, indem der Wert auf **True** oder **False** gesetzt wird.
+3. Sicherstellen, dass die Bedingungen in den Abschnitten **"Where"** und **"And"** korrekt festgelegt sind, da die Karte ihre Aktion nur ausführt, wenn diese Bedingungen erfüllt sind.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Export Document with Export Configuration"** workflow card ensures documents are exported efficiently and according to predefined configurations. With the ability to ignore pending tasks, this card offers flexibility in handling documents at various stages, reducing delays and streamlining the export process.
+Die Workflow-Karte **"Export Document with Export Configuration"** stellt sicher, dass Dokumente effizient und gemäß vordefinierter Konfigurationen exportiert werden. Mit der Möglichkeit, offene Aufgaben zu ignorieren, bietet diese Karte Flexibilität bei der Bearbeitung von Dokumenten in verschiedenen Phasen, reduziert Verzögerungen und optimiert den Exportprozess.

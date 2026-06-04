@@ -1,36 +1,36 @@
-# Workflow Description: Conditional Export Trigger
+# Descrizione del Workflow: Trigger di Esportazione Condizionale
 
 
 
 <figure><img src="../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Impostazioni Flusso di lavoro"><figcaption></figcaption></figure>
 
-This workflow outlines the conditions under which an export process should be initiated. It ensures that only documents meeting all specified criteria are processed for export, enhancing data integrity and alignment with business rules.
+Questo workflow descrive le condizioni in cui deve essere avviato un processo di esportazione. Garantisce che solo i documenti che soddisfano tutti i criteri specificati vengano elaborati per l'esportazione, migliorando l'integrità dei dati e l'allineamento con le regole aziendali.
 
 ### When:
 
-* A document within the system is evaluated for export eligibility.
+* Un documento all'interno del sistema viene valutato per l'idoneità all'esportazione.
 
-### Logic:
+### Logica:
 
 1. **Document Type Check**
-   * The document must be of a certain type (e.g., "Invoice" or "Receipt"). Specify the document type that qualifies for the export process.
+   * Il documento deve essere di un determinato tipo (es. "Invoice" o "Receipt"). Specifica il tipo di documento che si qualifica per il processo di esportazione.
 2. **Status Verification**
-   * The document's current status must meet predefined criteria (e.g., "Approved" or "Ready for Export") indicating it is ready for further processing.
+   * Lo stato corrente del documento deve soddisfare criteri predefiniti (es. "Approved" o "Ready for Export") che indicano che è pronto per l'ulteriore elaborazione.
 3. **Contextual Conditions**
-   * Additional checks are performed to ensure the document's details align with specific requirements. These checks might involve verifying information within order confirmations or purchase orders. Specify the particular conditions that need to be met. For example:
-     * All items listed in the order confirmation match those in the purchase order.
-     * The total amount in the order confirmation matches the total amount in the purchase order.
-     * The delivery dates specified in the order confirmation align with those in the purchase order.
+   * Vengono eseguiti controlli aggiuntivi per garantire che i dettagli del documento siano allineati a requisiti specifici. Questi controlli possono includere la verifica delle informazioni all'interno delle conferme d'ordine o degli ordini di acquisto. Specifica le condizioni particolari che devono essere soddisfatte. Ad esempio:
+     * Tutti gli articoli elencati nella conferma d'ordine corrispondono a quelli nell'ordine di acquisto.
+     * L'importo totale nella conferma d'ordine corrisponde all'importo totale nell'ordine di acquisto.
+     * Le date di consegna specificate nella conferma d'ordine sono allineate a quelle nell'ordine di acquisto.
 
 ### Then:
 
-#### Action:
+#### Azione:
 
 * **Initiate Export**
-  * If all the above conditions are satisfied, the system automatically starts the export process for the document.
-  * This may involve generating an export file, sending data to an external system, or triggering a workflow in another application.
+  * Se tutte le condizioni precedenti sono soddisfatte, il sistema avvia automaticamente il processo di esportazione per il documento.
+  * Questo può comportare la generazione di un file di esportazione, l'invio di dati a un sistema esterno o l'attivazione di un workflow in un'altra applicazione.
 
-#### Implementation Example:
+#### Esempio di Implementazione:
 
 ```yaml
 rules:

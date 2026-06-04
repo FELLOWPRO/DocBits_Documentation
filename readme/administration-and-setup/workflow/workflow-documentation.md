@@ -1,18 +1,18 @@
-# Workflow Documentation
+# Documentazione del Workflow
 
-**Workflow Documentation**
+**Documentazione del Workflow**
 
-To keep an overview, you can give the workflows different headings so that you can immediately know what task this workflow is about.
+Per mantenere una visione d'insieme, puoi assegnare ai workflow intestazioni diverse, così da capire immediatamente di quale attività si occupa ciascun workflow.
 
-Create a new Workflow: Click on + ADD WORKFLOW
+Crea un nuovo Workflow: fai clic su + ADD WORKFLOW
 
 ![](<../../../.gitbook/assets/0 (1).png>)
 
-You can use these workflows (Test 1,2,3) to automatically assign various documents to the right employee in the company.
+Puoi utilizzare questi workflow (Test 1,2,3) per assegnare automaticamente i vari documenti al dipendente giusto in azienda.
 
 ![](<../../../.gitbook/assets/1 (1).png>)
 
-If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be immediately assigned to the correct person.
+Se una fattura o un altro documento supera un determinato importo totale che richiede una revisione e un'approvazione preventive, questi documenti possono essere assegnati immediatamente alla persona corretta.
 
 <figure><img src="../../../.gitbook/assets/docbits_error_approval.png" alt="DocBits Errore Approvazione"><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@ Then:               **Assign document to:**   James Edwards
 
 
 
-It is also possible, if the document is not assigned to a single person, to assign it to a specific employee from the start.
+È inoltre possibile, se il documento non è assegnato a una singola persona, assegnarlo fin dall'inizio a un dipendente specifico.
 
 <figure><img src="../../../.gitbook/assets/docbits_workflow_purchase_order_6.png" alt="DocBits Flusso di lavoro Acquisto Ordine 6" width="375"><figcaption></figcaption></figure>
 
@@ -58,7 +58,7 @@ It is also possible, if the document is not assigned to a single person, to assi
 
 
 
-For an easier overview of what should happen to a document, you can set the status for incoming documents in this workflow. This workflow makes it possible to immediately see whether there is, for example, a pending approval.
+Per avere una visione più semplice di cosa debba accadere a un documento, puoi impostare lo stato dei documenti in entrata in questo workflow. Questo workflow consente di vedere immediatamente se, ad esempio, è presente un'approvazione in sospeso.
 
 
 
@@ -92,7 +92,7 @@ Then:                 **Change Status to:**           Pending Second Approval
 
 
 
-If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be assigned to the right person immediately.
+Se una fattura o un altro documento supera un determinato importo totale che richiede una revisione e un'approvazione preventive, questi documenti possono essere assegnati immediatamente alla persona giusta.
 
 ![](<../../../.gitbook/assets/11 (1).png>)
 
@@ -112,7 +112,7 @@ Then:                    **Assign document to:**   Asad Usman Khan
 
 
 
-It is also possible to enter the status into the workflow, so the assigned person can immediately see what status this document is and what should happen next with it.
+È inoltre possibile inserire lo stato nel workflow, in modo che la persona assegnata possa vedere immediatamente in quale stato si trova il documento e cosa dovrà accadere successivamente.
 
 
 
@@ -134,7 +134,7 @@ It is also possible to enter the status into the workflow, so the assigned perso
 
 
 
-For example, if certain or important information is missing from a document, but is important and must be included for further processing, you can set up the workflow so that these documents are immediately forwarded to the buyer and a substitute (replacement).
+Ad esempio, se in un documento mancano informazioni specifiche o importanti, ma necessarie e che devono essere incluse per l'ulteriore elaborazione, puoi configurare il workflow in modo che questi documenti vengano immediatamente inoltrati all'acquirente e a un sostituto (rimpiazzo).
 
 <figure><img src="../../../.gitbook/assets/docbits_settings_workflow_2.png" alt="DocBits Impostazioni Flusso di lavoro 2"><figcaption></figcaption></figure>
 
@@ -142,9 +142,9 @@ For example, if certain or important information is missing from a document, but
 
 **Test 9:**
 
-The Workflow with these logic cards is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+Il Workflow con queste logic card è progettato per verificare automaticamente che la quantità, il prezzo unitario o lo sconto indicati in una conferma d'ordine corrispondano ai valori corrispondenti nell'ordine di acquisto. Questa verifica garantisce coerenza e accuratezza tra ciò che è stato ordinato e ciò che il fornitore conferma di consegnare.
 
-You can give these documents a specific status or assign them to a specific employee.
+Puoi assegnare a questi documenti uno stato specifico o assegnarli a un dipendente specifico.
 
 <div align="center">
 
@@ -156,56 +156,56 @@ You can give these documents a specific status or assign them to a specific empl
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
-This logic card is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+Questa logic card è progettata per verificare automaticamente che la quantità, il prezzo unitario o lo sconto indicati in una conferma d'ordine corrispondano ai valori corrispondenti nell'ordine di acquisto. Questa verifica garantisce coerenza e accuratezza tra ciò che è stato ordinato e ciò che il fornitore conferma di consegnare.
 
 
 
 **Trigger Condition**
 
-The logic is activated when any of the following conditions are met in an order confirmation relative to the original purchase order:
+La logica si attiva quando una qualsiasi delle seguenti condizioni viene soddisfatta in una conferma d'ordine rispetto all'ordine di acquisto originale:
 
-* **Quantity**: The quantity of items ordered matches the quantity confirmed by the supplier.
-* **Unit Price**: The price per item agreed upon matches the supplier's confirmation.
-* **Discount**: Any discounts applied are consistent between the purchase order and the order confirmation.
+* **Quantity**: la quantità degli articoli ordinati corrisponde alla quantità confermata dal fornitore.
+* **Unit Price**: il prezzo per articolo concordato corrisponde alla conferma del fornitore.
+* **Discount**: eventuali sconti applicati sono coerenti tra l'ordine di acquisto e la conferma d'ordine.
 
 
 
-* **Define Comparison Parameters**: Set up the specific fields (quantity, unit price, discount) that the logic card will check for a match.
-* **Automate Verification**: Configure the system to automatically compare these details upon receipt of an order confirmation.
-* **Customize Alerts**: Decide on the workflow for handling discrepancies, including customization of alerts for manual review.
+* **Define Comparison Parameters**: configura i campi specifici (quantità, prezzo unitario, sconto) di cui la logic card verificherà la corrispondenza.
+* **Automate Verification**: configura il sistema per confrontare automaticamente questi dettagli alla ricezione di una conferma d'ordine.
+* **Customize Alerts**: decidi il workflow per la gestione delle discrepanze, inclusa la personalizzazione degli avvisi per la revisione manuale.
 
-This logic card is vital for ensuring that the details of an order confirmation align with the original purchase order, safeguarding the integrity of the procurement cycle.
+Questa logic card è fondamentale per garantire che i dettagli di una conferma d'ordine siano allineati con l'ordine di acquisto originale, salvaguardando l'integrità del ciclo di approvvigionamento.
 
 
 
 **Test 10:**
 
-If you have a different calculation for surcharges, or only have them on some items, you can use the generic table calculation cards, some of them also allow to filter for regular expressions.
+Se hai un calcolo diverso per i sovrapprezzi, oppure li applichi solo ad alcuni articoli, puoi utilizzare le card generiche di calcolo della tabella; alcune di esse consentono anche di filtrare tramite espressioni regolari.
 
 <figure><img src="../../../.gitbook/assets/docbits_table_invoice.png" alt="DocBits Tabella Fattura"><figcaption></figcaption></figure>
 
-Above is a calculation example for MTZ with a filter for item numbers starting with 01, 06, 9, 001 or 000.
+Sopra è riportato un esempio di calcolo per MTZ con un filtro per i numeri di articolo che iniziano con 01, 06, 9, 001 o 000.
 
 
 
-With a manual setup it’s advised to split calculations that depend on new columns into a separate workflow. To continue with the calculation you can use the Run Workflow card.
+Con una configurazione manuale è consigliabile suddividere i calcoli che dipendono da nuove colonne in un workflow separato. Per proseguire con il calcolo puoi utilizzare la card Run Workflow.
 
 **Run Workflow**
 
 <figure><img src="../../../.gitbook/assets/docbits_workflow_2.png" alt="DocBits Flusso di lavoro 2"><figcaption></figcaption></figure>
 
-With this card you can specify the name of a workflow that is to be run after the current workflow if its conditions are met and after previous then cards of the current workflow. While it prioritises runnable, active workflows, it also allows you to run deactivated workflows if the document fulfills the workflows conditions.
+Con questa card puoi specificare il nome di un workflow che deve essere eseguito dopo il workflow corrente, se le sue condizioni sono soddisfatte e dopo le precedenti card "then" del workflow corrente. Pur dando priorità ai workflow eseguibili e attivi, consente anche di eseguire workflow disattivati se il documento soddisfa le condizioni del workflow.
 
 ### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
 <figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
 
-If you want to add all surcharges as a negative discount into the discount column, you can use the calculation card. There might be entries in this column, you can set it as one of the variables on the card, have the MTZ subtracted from it and add the result back into this column. In case there are empty fields (surcharges only for some items) it will assume a 0 for its calculation
+Se desideri aggiungere tutti i sovrapprezzi come sconto negativo nella colonna dello sconto, puoi utilizzare la card di calcolo. Potrebbero esserci già voci in questa colonna: puoi impostarla come una delle variabili sulla card, sottrarvi il MTZ e aggiungere nuovamente il risultato in questa colonna. Nel caso siano presenti campi vuoti (sovrapprezzi solo per alcuni articoli), assumerà uno 0 per il suo calcolo.
 
 **Notify user to authorize the order confirmation in DocBits**
 
-After calculating the surcharges you might want to notify a specific user to authorize the order confirmation. For this you can use the notification card
+Dopo aver calcolato i sovrapprezzi, potresti voler notificare a un utente specifico di autorizzare la conferma d'ordine. A tale scopo puoi utilizzare la card di notifica.
 
 <figure><img src="../../../.gitbook/assets/docbits_email_settings.png" alt="DocBits E-mail Impostazioni"><figcaption></figcaption></figure>
 
-Depending on settings, the user gets assigned a new task in DocBits and optionally an email to notify them of their new task.
+A seconda delle impostazioni, all'utente viene assegnata una nuova attività in DocBits e, facoltativamente, un'email per notificargli la nuova attività.

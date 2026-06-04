@@ -1,49 +1,50 @@
 ---
 description: >-
-  Explore the step-by-step workflow for material ordering, goods receipt, and
-  invoice processing with INFOR ERP and DocBits integration. Effective supplier
-  and document management in one.
+  Esplora il workflow passo dopo passo per l'ordinazione dei materiali, il
+  ricevimento merci e l'elaborazione delle fatture con l'integrazione tra INFOR
+  ERP e DocBits. Gestione efficace di fornitori e documenti in un'unica
+  soluzione.
 ---
 
-# Material Ordering and Processing Workflow
+# Workflow di Ordinazione ed Elaborazione dei Materiali
 
-This document outlines the workflow for ordering materials from suppliers, receiving goods, and processing invoices with integration between suppliers, INFOR ERP system, and DocBits for document management.
+Questo documento illustra il workflow per l'ordinazione dei materiali dai fornitori, il ricevimento delle merci e l'elaborazione delle fatture, con l'integrazione tra fornitori, sistema INFOR ERP e DocBits per la gestione dei documenti.
 
-### Process Overview
+### Panoramica del Processo
 
-1. **Ordering Materials**
-   * Initiate order with the supplier.
-   * Send the order to the supplier through INFOR.
-2. **Receiving Order Confirmation**
-   * Supplier confirms the receipt of the order.
-   * Creation and sending of order confirmation.
-3. **Goods Receipt and Inspection**
-   * Receive goods from the supplier.
-   * Post goods receipt in INFOR and check against the delivery bill.
-4. **Invoice Processing**
-   * Receive invoice and send to DocBits for processing.
-   * Check and verify invoice details with order and goods receipt.
-5. **Final Steps**
-   * Archive the order and related documents in DocBits.
-   * Update INFOR with transaction details for financial accounting.
+1. **Ordinazione dei Materiali**
+   * Avvia l'ordine con il fornitore.
+   * Invia l'ordine al fornitore tramite INFOR.
+2. **Ricezione della Conferma d'Ordine**
+   * Il fornitore conferma la ricezione dell'ordine.
+   * Creazione e invio della conferma d'ordine.
+3. **Ricevimento e Ispezione delle Merci**
+   * Ricevi le merci dal fornitore.
+   * Registra il ricevimento merci in INFOR e verifica rispetto alla bolla di consegna.
+4. **Elaborazione della Fattura**
+   * Ricevi la fattura e inviala a DocBits per l'elaborazione.
+   * Controlla e verifica i dettagli della fattura con l'ordine e il ricevimento merci.
+5. **Passaggi Finali**
+   * Archivia l'ordine e i documenti correlati in DocBits.
+   * Aggiorna INFOR con i dettagli della transazione per la contabilità finanziaria.
 
-### Decision Points and Actions
+### Punti Decisionali e Azioni
 
-* **Does the received goods match the order?**
-  * Yes: Proceed with invoice processing.
-  * No: Manual check and update required.
-* **Is the invoice correct according to the goods received and order details?**
-  * Yes: Complete the transaction and update financial records.
-  * No: Further examination and corrections needed.
+* **Le merci ricevute corrispondono all'ordine?**
+  * Sì: prosegui con l'elaborazione della fattura.
+  * No: è necessario un controllo e un aggiornamento manuali.
+* **La fattura è corretta in base alle merci ricevute e ai dettagli dell'ordine?**
+  * Sì: completa la transazione e aggiorna i registri finanziari.
+  * No: sono necessari ulteriori esami e correzioni.
 
-### Integration Points
+### Punti di Integrazione
 
-* **INFOR ERP**: Main system for order processing, goods receipt, and financial accounting.
-* **DocBits**: Document management for processing and archiving invoices and order confirmations.
+* **INFOR ERP**: sistema principale per l'elaborazione degli ordini, il ricevimento merci e la contabilità finanziaria.
+* **DocBits**: gestione documentale per l'elaborazione e l'archiviazione di fatture e conferme d'ordine.
 
-### Notes
+### Note
 
-* Ensure all documents are verified and archived for record-keeping.
-* Discrepancies in order or invoice details must be resolved promptly to avoid delays.
+* Assicurati che tutti i documenti siano verificati e archiviati per la conservazione dei registri.
+* Le discrepanze nei dettagli dell'ordine o della fattura devono essere risolte tempestivamente per evitare ritardi.
 
 <figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>

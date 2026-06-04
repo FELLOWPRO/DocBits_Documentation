@@ -1,80 +1,76 @@
 # Then
 
-## Overview of "Then..." Action Cards
+## Resumen de las tarjetas de acción "Then..."
 
-### **1. Document Field Actions:**
+### **1. Acciones de Document Field:**
 
-* **Invert Checkbox:** This action toggles the state of a checkbox field in a document.
-* **Set Checkbox:** This sets the state of a checkbox field to either true (checked) or false (unchecked).
-* **Set Field to Text:** This action sets a specified document field to a given text value.
+* **Invert Checkbox:** Esta acción invierte el estado de un campo de casilla de verificación en un documento.
+* **Set Checkbox:** Establece el estado de un campo de casilla de verificación a verdadero (marcado) o falso (sin marcar).
+* **Set Field to Text:** Esta acción establece un campo de documento determinado a un valor de texto dado.
 
 <figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
 
-### **2. Document Actions:**
+### **2. Acciones de Document:**
 
-* **Approve the Document:** Marks a document as approved within the system.
-* **Reject the Document:** Marks a document as rejected.
+* **Approve the Document:** Marca un documento como aprobado en el sistema.
+* **Reject the Document:** Marca un documento como rechazado.
 
 <figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
-### **3. Export Actions:**
+### **3. Acciones de Export:**
 
-* **Export document with export configuration:**   Starts the export process  with a specific export configuration.
-* **Start Export:** Starts the Export process.
-
-
+* **Export document with export configuration:** Inicia el proceso de exportación con una configuración de exportación específica.
+* **Start Export:** Inicia el proceso de exportación.
 
 <figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
-### **4. Status Actions:**
+### **4. Acciones de Status:**
 
-
-
-* **Change Status:** Changes the status of a document or task to a specified new status.
+* **Change Status:** Cambia el estado de un documento o tarea a un nuevo estado especificado.
 
 <figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
 
-### **5. Task Actions:**
+### **5. Acciones de Task:**
 
-* Assignments and notifications:
-  * **Assign Task:** Creates and assigns a task with specific details to an individual or group, including options to notify them via email.
-  * **Create a New Task:** Similar to assign but focused on setting up a completely new task within the system.
+* Asignaciones y notificaciones:
+  * **Assign Task:** Crea y asigna una tarea con detalles específicos a una persona o grupo, incluyendo opciones para notificarles por correo electrónico.
+  * **Create a New Task:** Similar a asignar, pero centrado en configurar una tarea completamente nueva en el sistema.
 
 <figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
 
-### **6. Table Actions:**
+### **6. Acciones de Table:**
 
-* **Calculate in Table:** Performs calculations on table data based on specified conditions and stores the results in a designated column.
-* **Change Entries:** Updates entries in a table based on specified conditions.
+* **Calculate in Table:** Realiza cálculos sobre los datos de la tabla según las condiciones especificadas y almacena los resultados en una columna designada.
+* **Change Entries:** Actualiza las entradas de una tabla según las condiciones especificadas.
 
 <figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
 
-### **7. Assignee Actions:**
+### **7. Acciones de Assignee:**
 
-* **Assign User from Field:** Assigns a user to a task or document based on user data stored in a specific field, with an option for a fallback user if the primary is unavailable.
-* **Assign Document to User or Group:** Directly assigns a document to a user or group, ensuring responsibility is designated appropriately.
+* **Assign User from Field:** Asigna un usuario a una tarea o documento basándose en los datos de usuario almacenados en un campo específico, con la opción de un usuario alternativo si el principal no está disponible.
+* **Assign Document to User or Group:** Asigna directamente un documento a un usuario o grupo, garantizando que la responsabilidad se designe de forma adecuada.
 
 <figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
 
-### **8. External Interaction Actions:**
+### **8. Acciones de interacción externa:**
 
-* **Call API:** Sends a request to an external API, which can be customized with specific methods, parameters, and data.
-* **Send HTTPS Request:** Similar to API calls but specifically formatted for HTTPS protocols.
+* **Call API:** Envía una solicitud a una API externa, que se puede personalizar con métodos, parámetros y datos específicos.
+* **Send HTTPS Request:** Similar a las llamadas a la API, pero con formato específico para protocolos HTTPS.
 
 <figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
 
-### **9. Advanced Processing:**
+### **9. Procesamiento avanzado:**
 
-* **Run Workflow:** Triggers another workflow within the system, allowing for complex process chaining.
+* **Run Workflow:** Dispara otro flujo de trabajo en el sistema, lo que permite encadenar procesos complejos.
 
-#### Practical Application
+#### Aplicación práctica
 
-These action cards are used to automate responses based on specific triggers identified in the earlier parts of the workflow setup. For instance:
+Estas tarjetas de acción se utilizan para automatizar respuestas basadas en disparadores específicos identificados en las partes anteriores de la configuración del flujo de trabajo. Por ejemplo:
 
-* If a document is identified as needing review, the "Approve the Document" action can be automatically triggered once it passes all specified conditions.
-* For data management tasks, "Set Checkbox" or "Set Field to Text" actions ensure that document fields are updated automatically, reducing manual data entry and the potential for errors.
-* Complex tasks like API interactions or status changes streamline interactions not only within the ERP system but also with external services and tools, enhancing integration and functionality.
+* Si un documento se identifica como que necesita revisión, la acción "Approve the Document" se puede disparar automáticamente una vez que cumple todas las condiciones especificadas.
+* Para tareas de gestión de datos, las acciones "Set Checkbox" o "Set Field to Text" garantizan que los campos del documento se actualicen automáticamente, reduciendo la entrada manual de datos y el potencial de errores.
+* Tareas complejas como interacciones con la API o cambios de estado agilizan las interacciones no solo dentro del sistema ERP, sino también con servicios y herramientas externos, mejorando la integración y la funcionalidad.
 
-### Conclusion
+### Conclusión
 
-The "Then..." section in your workflow system provides robust tools for defining precise actions that should occur as a result of conditions being met in the workflow. By effectively using these actions, businesses can automate routine processes, ensure data accuracy, and respond dynamically to changing information and system states. Understanding how to configure and utilize these actions is key to maximizing the efficiency and effectiveness of your ERP system's workflow capabilities.
+La sección "Then..." de su sistema de flujos de trabajo proporciona herramientas robustas para definir acciones precisas que deben ocurrir como resultado del cumplimiento de las condiciones del flujo de trabajo. Al utilizar estas acciones de forma eficaz, las empresas pueden automatizar procesos rutinarios, garantizar la precisión de los datos y responder dinámicamente a la información y los estados del sistema cambiantes. Comprender cómo configurar y utilizar estas acciones es clave para maximizar la eficiencia y la eficacia de las capacidades de flujo de trabajo de su sistema ERP.

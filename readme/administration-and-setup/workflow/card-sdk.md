@@ -1,14 +1,14 @@
 # Card SDK
 
-The **Card SDK** lets partners and developers build custom workflow cards for DocFlow. You package a card as a partner app and upload it, or import it directly from GitHub.
+El **Card SDK** permite a partners y desarrolladores crear tarjetas de flujo de trabajo personalizadas para DocFlow. Empaquete una tarjeta como una aplicación de partner y súbala, o impórtela directamente desde GitHub.
 
-<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Card SDK tab with Upload ZIP, GitHub Import and Submissions"><figcaption><p>The Card SDK — upload a partner app ZIP, import from GitHub, or review your submissions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Pestaña Card SDK con Upload ZIP, GitHub Import y Submissions"><figcaption><p>El Card SDK — suba un ZIP de aplicación de partner, importe desde GitHub o revise sus envíos.</p></figcaption></figure>
 
-## How it works
+## Cómo funciona
 
-- **Download SDK Template** — start from the official template that contains the expected structure.
-- **Upload ZIP** — the ZIP must contain `app.json` and a `.docflowcompose/flow/` folder with the card definitions (max 10 MB). Upload &#x26; Validate checks the package before it is accepted.
-- **GitHub Import** — import a card definition straight from a GitHub repository.
-- **Submissions** — track the status of cards you have submitted.
+- **Download SDK Template** — comience a partir de la plantilla oficial que contiene la estructura esperada.
+- **Upload ZIP** — el ZIP debe contener `app.json` y una carpeta `.docflowcompose/flow/` con las definiciones de las tarjetas (máx. 10 MB). Upload &#x26; Validate comprueba el paquete antes de aceptarlo.
+- **GitHub Import** — importe una definición de tarjeta directamente desde un repositorio de GitHub.
+- **Submissions** — haga seguimiento del estado de las tarjetas que ha enviado.
 
-Once validated and accepted, your custom cards appear in the **Add Card** library alongside the built-in cards.
+Una vez validadas y aceptadas, sus tarjetas personalizadas aparecen en la biblioteca **Add Card** junto a las tarjetas integradas.

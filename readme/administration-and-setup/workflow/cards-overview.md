@@ -1,19 +1,19 @@
 # Cards
 
-Cards are the building blocks of every workflow. You combine them in the **When / And / Then** groups to describe when a workflow runs and what it does. This section explains the available cards and what each one does.
+Las tarjetas son los bloques de construcción de cada flujo de trabajo. Las combina en los grupos **When / And / Then** para describir cuándo se ejecuta un flujo de trabajo y qué hace. Esta sección explica las tarjetas disponibles y qué hace cada una.
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library grouped by category"><figcaption><p>The <strong>Add Card</strong> library — cards are grouped by category.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card agrupada por categoría"><figcaption><p>La biblioteca <strong>Add Card</strong> — las tarjetas se agrupan por categoría.</p></figcaption></figure>
 
-## Card groups
+## Grupos de tarjetas
 
-- **When** — the trigger cards that start a workflow (e.g. document type, document type one of).
-- **And** — condition cards that must also be true before the actions run. These include *Compare with Purchase Order* (PO matching), *Document Field* comparisons, *Date & Time*, *Logic*, *Status*, *Table* and *Assignee* conditions.
-- **Then** — action cards that do the work: set fields, approve/reject, change status, export, create tasks, assign documents, manipulate tables, and run actions (Call API, Send HTTPS request, Run Workflow, AI calculations).
+- **When** — las tarjetas de disparador que inician un flujo de trabajo (p. ej. tipo de documento, tipo de documento uno de).
+- **And** — tarjetas de condición que también deben cumplirse antes de que se ejecuten las acciones. Incluyen condiciones de *Compare with Purchase Order* (coincidencia de PO), comparaciones de *Document Field*, *Date & Time*, *Logic*, *Status*, *Table* y *Assignee*.
+- **Then** — tarjetas de acción que realizan el trabajo: establecer campos, aprobar/rechazar, cambiar el estado, exportar, crear tareas, asignar documentos, manipular tablas y ejecutar acciones (Call API, Send HTTPS request, Run Workflow, cálculos de IA).
 
-## Card reference guides
+## Guías de referencia de tarjetas
 
-For a complete reference of each card and its options, see the *complete guide* pages in this section (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards, and the Action cards).
+Para una referencia completa de cada tarjeta y sus opciones, consulte las páginas de *complete guide* de esta sección (Condition Cards, PO Matching Cards, Assignment & User Cards, Task Cards, Field & Table Cards y las tarjetas de Action).
 
-## Combining cards
+## Combinar tarjetas
 
-To see proven combinations of cards that solve common business scenarios, see the **Workflow Pattern Guides**.
+Para ver combinaciones probadas de tarjetas que resuelven escenarios de negocio comunes, consulte las **Workflow Pattern Guides**.

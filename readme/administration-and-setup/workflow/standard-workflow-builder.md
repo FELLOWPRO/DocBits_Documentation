@@ -1,31 +1,31 @@
 # Standard Workflow
 
-The **Standard Workflow** builder is the linear, card-based editor for automating document processing. A workflow is made of three groups of cards — **When** (the trigger), **And** (additional conditions) and **Then** (the actions to run). When a document matches the When/And conditions, the Then actions run automatically.
+El constructor **Standard Workflow** es el editor lineal basado en tarjetas para automatizar el procesamiento de documentos. Un flujo de trabajo se compone de tres grupos de tarjetas: **When** (el disparador), **And** (condiciones adicionales) y **Then** (las acciones a ejecutar). Cuando un documento cumple las condiciones When/And, las acciones Then se ejecutan automáticamente.
 
-## How to access
+## Cómo acceder
 
-Open **Workflow Dashboard → Workflow List**, then click **Add Workflow** to create a new Standard workflow, or click an existing workflow to edit it.
+Abra **Workflow Dashboard → Workflow List** y, a continuación, haga clic en **Add Workflow** para crear un nuevo flujo de trabajo Standard, o haga clic en un flujo de trabajo existente para editarlo.
 
-<figure><img src="../../.gitbook/assets/workflow_list.png" alt="Workflow List with type, execution order and trigger"><figcaption><p>The Workflow List — each row is a workflow you can open, toggle on/off or edit.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_list.png" alt="Lista de flujos de trabajo con tipo, orden de ejecución y disparador"><figcaption><p>El Workflow List — cada fila es un flujo de trabajo que puede abrir, activar/desactivar o editar.</p></figcaption></figure>
 
-## The When / And / Then model
+## El modelo When / And / Then
 
-<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Standard Workflow canvas with When, And and Then cards"><figcaption><p>The Standard Workflow canvas. This example triggers on invoices in a sub-organization and assigns them to a user.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Lienzo de Standard Workflow con tarjetas When, And y Then"><figcaption><p>El lienzo de Standard Workflow. Este ejemplo se dispara con facturas en una suborganización y se las asigna a un usuario.</p></figcaption></figure>
 
-- **When** — the trigger that starts the workflow (e.g. *Document type is Invoice*).
-- **And** — extra conditions that must also be true (e.g. *Document is part of sub-organization*). Leave empty to run on every match of the When card.
-- **Then** — the actions to perform (e.g. *Assign the document to the user*, create a task, call an API, send an email).
+- **When** — el disparador que inicia el flujo de trabajo (p. ej. *Document type is Invoice*).
+- **And** — condiciones adicionales que también deben cumplirse (p. ej. *Document is part of sub-organization*). Déjelo vacío para ejecutarlo en cada coincidencia de la tarjeta When.
+- **Then** — las acciones a realizar (p. ej. *Assign the document to the user*, crear una tarea, llamar a una API, enviar un correo electrónico).
 
-## Adding cards
+## Añadir tarjetas
 
-Click **Add Card** in any group to open the card library. Cards are organised by category so you can find the building block you need:
+Haga clic en **Add Card** en cualquier grupo para abrir la biblioteca de tarjetas. Las tarjetas están organizadas por categoría para que pueda encontrar el bloque de construcción que necesita:
 
-<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library grouped by category"><figcaption><p>The <strong>Add Card</strong> library — condition cards, comparison cards, action cards and more, grouped by category.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card agrupada por categoría"><figcaption><p>La biblioteca <strong>Add Card</strong> — tarjetas de condición, tarjetas de comparación, tarjetas de acción y más, agrupadas por categoría.</p></figcaption></figure>
 
-Save with **Save Workflow**, or save the layout as a reusable template with **Save Template**.
+Guarde con **Save Workflow**, o guarde el diseño como una plantilla reutilizable con **Save Template**.
 
-## Next steps
+## Próximos pasos
 
-- See what each card does in the **Cards** section.
-- Combine cards into proven solutions with the **Workflow Pattern Guides**.
-- For branching flows with parallel paths (Wait ALL / Wait ANY / OR), use the **Advanced Workflow** builder.
+- Vea qué hace cada tarjeta en la sección **Cards**.
+- Combine tarjetas en soluciones probadas con las **Workflow Pattern Guides**.
+- Para flujos con ramificaciones y rutas paralelas (Wait ALL / Wait ANY / OR), utilice el constructor **Advanced Workflow**.

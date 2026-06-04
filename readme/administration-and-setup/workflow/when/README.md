@@ -1,5 +1,10 @@
 # When
 
+
+Bu kategorideki kartlar, Workflow Builder'ın **Add Card** kütüphanesinde gösterildiği gibi:
+
+<figure><img src="../../../.gitbook/assets/workflow_cards_when.png" alt="Workflow Builder card category"><figcaption><p>Bu kategorideki kartlar.</p></figcaption></figure>
+
 <figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 #### İş Akışı Yapılandırmalarında "When" Bölümünü Anlamak

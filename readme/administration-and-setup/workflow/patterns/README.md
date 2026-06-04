@@ -1,227 +1,227 @@
-# Workflow Pattern Guides
+# Guide ai pattern di workflow
 
-**Version:** 1.0
-**Last Updated:** October 23, 2025
-
----
-
-## Overview
-
-This directory contains comprehensive workflow pattern guides that demonstrate how to combine multiple workflow cards to solve common business scenarios. Each pattern provides step-by-step implementation instructions, complete examples, and best practices.
-
-**What are Workflow Patterns?**
-
-Workflow patterns are proven, reusable solutions to common documentation processing challenges. Instead of starting from scratch, you can use these patterns as templates and adapt them to your specific needs.
+**Versione:** 1.0
+**Ultimo aggiornamento:** 23 ottobre 2025
 
 ---
 
-## The Workflow Builder at a glance
+## Panoramica
 
-Every pattern on this page is assembled in the **Workflow Builder**. You reach it from **Workflow Dashboard → Workflow List → Add Workflow** (or by opening an existing workflow). The dashboard gives you the run history and success/fail rates for all of your workflows:
+Questa directory contiene guide complete ai pattern di workflow che mostrano come combinare più card di workflow per risolvere scenari aziendali comuni. Ogni pattern fornisce istruzioni di implementazione passo passo, esempi completi e best practice.
 
-<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard showing run totals, success and fail rates, the workflow-runs chart and recent activity"><figcaption><p>The Workflow Dashboard — run totals, success/fail rates and recent activity for every workflow.</p></figcaption></figure>
+**Cosa sono i pattern di workflow?**
 
-The **Workflow List** tab lists every workflow with its type, execution order and trigger. Use **Add Workflow** to create a new one, or click a workflow to open it in the builder:
-
-<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Workflow List tab listing workflows with type, execution order and trigger"><figcaption><p>The Workflow List — each row is a workflow you can open, toggle on/off or edit.</p></figcaption></figure>
-
-A workflow is built from three groups of cards — **When** (the trigger), **And** (additional conditions) and **Then** (the actions to run). The example below triggers on invoices belonging to a sub-organization and assigns them to a user:
-
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then cards"><figcaption><p>The Workflow Builder canvas. Each pattern below is just a different combination of When / And / Then cards.</p></figcaption></figure>
-
-Click **Add Card** in any group to open the card library. Cards are organised by category (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) so you can find the building block each pattern calls for:
-
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card dialog showing the card categories and available cards"><figcaption><p>The <strong>Add Card</strong> library — every card referenced in the patterns below is picked from here.</p></figcaption></figure>
+I pattern di workflow sono soluzioni comprovate e riutilizzabili per le sfide comuni di elaborazione dei documenti. Invece di partire da zero, puoi usare questi pattern come modelli e adattarli alle tue esigenze specifiche.
 
 ---
 
-## Available Patterns
+## Il Workflow Builder in breve
+
+Ogni pattern di questa pagina viene assemblato nel **Workflow Builder**. Lo raggiungi da **Workflow Dashboard → Workflow List → Add Workflow** (oppure aprendo un workflow esistente). La dashboard ti mostra la cronologia delle esecuzioni e i tassi di successo/fallimento di tutti i tuoi workflow:
+
+<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard che mostra i totali delle esecuzioni, i tassi di successo e fallimento, il grafico delle esecuzioni del workflow e l'attività recente"><figcaption><p>La Workflow Dashboard — totali delle esecuzioni, tassi di successo/fallimento e attività recente per ogni workflow.</p></figcaption></figure>
+
+La scheda **Workflow List** elenca ogni workflow con il suo tipo, l'ordine di esecuzione e il trigger. Usa **Add Workflow** per crearne uno nuovo, oppure clicca su un workflow per aprirlo nel builder:
+
+<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Scheda Workflow List che elenca i workflow con tipo, ordine di esecuzione e trigger"><figcaption><p>La Workflow List — ogni riga è un workflow che puoi aprire, attivare/disattivare o modificare.</p></figcaption></figure>
+
+Un workflow è costruito da tre gruppi di card — **When** (il trigger), **And** (condizioni aggiuntive) e **Then** (le azioni da eseguire). L'esempio qui sotto si attiva sulle fatture appartenenti a una sotto-organizzazione e le assegna a un utente:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Canvas del Workflow Builder con card When, And e Then"><figcaption><p>Il canvas del Workflow Builder. Ogni pattern qui sotto è semplicemente una diversa combinazione di card When / And / Then.</p></figcaption></figure>
+
+Clicca **Add Card** in qualsiasi gruppo per aprire la libreria delle card. Le card sono organizzate per categoria (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) così puoi trovare il blocco costitutivo richiesto da ciascun pattern:
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Finestra di dialogo Add Card che mostra le categorie di card e le card disponibili"><figcaption><p>La libreria <strong>Add Card</strong> — ogni card a cui si fa riferimento nei pattern qui sotto viene scelta da qui.</p></figcaption></figure>
+
+---
+
+## Pattern disponibili
 
 ### 1. [API Integration Pattern](api-integration-pattern.md)
 
-**Complexity:** Medium | **Setup Time:** 45-60 minutes
+**Complessità:** Media | **Tempo di configurazione:** 45-60 minuti
 
-Learn how to integrate DocBits with external APIs to fetch, validate, and store data from external systems.
+Scopri come integrare DocBits con API esterne per recuperare, validare e memorizzare dati da sistemi esterni.
 
-**Use Cases:**
-- Fetch real-time pricing from external systems
-- Validate supplier information against master databases
-- Look up product details from catalog systems
-- Get exchange rates from currency services
-- Verify addresses with geocoding services
+**Casi d'uso:**
+- Recuperare prezzi in tempo reale da sistemi esterni
+- Validare le informazioni dei fornitori rispetto a database master
+- Cercare i dettagli dei prodotti dai sistemi di catalogo
+- Ottenere i tassi di cambio dai servizi valutari
+- Verificare gli indirizzi con servizi di geocodifica
 
-**Cards Used:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Card utilizzate:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
 
-**[View Full Pattern →](api-integration-pattern.md)**
+**[Visualizza il pattern completo →](api-integration-pattern.md)**
 
 ---
 
 ### 2. [Task Management Pattern](task-management-pattern.md)
 
-**Complexity:** Low-Medium | **Setup Time:** 30-45 minutes
+**Complessità:** Bassa-Media | **Tempo di configurazione:** 30-45 minuti
 
-Master the art of creating, assigning, tracking, and managing tasks within DocBits workflows for approval and review processes.
+Padroneggia l'arte di creare, assegnare, monitorare e gestire i task all'interno dei workflow di DocBits per i processi di approvazione e revisione.
 
-**Use Cases:**
-- Create approval workflows
-- Assign review tasks to users
-- Handle exceptions requiring human intervention
-- Escalate issues to managers
-- Create multi-level approval chains
-- Track task completion and deadlines
+**Casi d'uso:**
+- Creare workflow di approvazione
+- Assegnare task di revisione agli utenti
+- Gestire le eccezioni che richiedono intervento umano
+- Inoltrare i problemi ai manager
+- Creare catene di approvazione multi-livello
+- Monitorare il completamento dei task e le scadenze
 
-**Cards Used:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
+**Card utilizzate:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
 
-**[View Full Pattern →](task-management-pattern.md)**
+**[Visualizza il pattern completo →](task-management-pattern.md)**
 
 ---
 
 ### 3. [PO Matching Pattern](po-matching-pattern.md)
 
-**Complexity:** Medium-High | **Setup Time:** 60-90 minutes
+**Complessità:** Media-Alta | **Tempo di configurazione:** 60-90 minuti
 
-Implement comprehensive Purchase Order matching workflows to validate invoices against POs with tolerance-based routing.
+Implementa workflow completi di matching degli ordini di acquisto per validare le fatture rispetto ai PO con instradamento basato sulla tolleranza.
 
-**Use Cases:**
-- Validate invoices against purchase orders
-- Detect pricing errors before payment
-- Identify quantity discrepancies
-- Enforce procurement controls
-- Prevent duplicate payments
-- Automate three-way matching
+**Casi d'uso:**
+- Validare le fatture rispetto agli ordini di acquisto
+- Rilevare errori di prezzo prima del pagamento
+- Identificare discrepanze nelle quantità
+- Applicare controlli sugli approvvigionamenti
+- Prevenire pagamenti duplicati
+- Automatizzare il matching a tre vie
 
-**Cards Used:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
+**Card utilizzate:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
 
-**[View Full Pattern →](po-matching-pattern.md)**
+**[Visualizza il pattern completo →](po-matching-pattern.md)**
 
 ---
 
 ### 4. [Decision Logic Pattern](decision-logic-pattern.md)
 
-**Complexity:** Medium | **Setup Time:** 30-45 minutes
+**Complessità:** Media | **Tempo di configurazione:** 30-45 minuti
 
-Implement complex decision trees and conditional routing logic to process documents through different paths based on business rules.
+Implementa alberi decisionali complessi e logica di instradamento condizionale per elaborare i documenti attraverso percorsi diversi in base alle regole aziendali.
 
-**Use Cases:**
-- Route documents by amount thresholds
-- Apply different rules for different document types
-- Implement multi-level approval logic
-- Handle complex business policies
-- Create dynamic routing based on multiple criteria
-- Implement approval matrices
+**Casi d'uso:**
+- Instradare i documenti per soglie di importo
+- Applicare regole diverse per tipi di documento diversi
+- Implementare logica di approvazione multi-livello
+- Gestire policy aziendali complesse
+- Creare instradamento dinamico basato su più criteri
+- Implementare matrici di approvazione
 
-**Cards Used:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
+**Card utilizzate:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
 
-**[View Full Pattern →](decision-logic-pattern.md)**
+**[Visualizza il pattern completo →](decision-logic-pattern.md)**
 
 ---
 
 ### 5. [Data Transformation Pattern](data-transformation-pattern.md)
 
-**Complexity:** Medium | **Setup Time:** 30-45 minutes
+**Complessità:** Media | **Tempo di configurazione:** 30-45 minuti
 
-Transform, calculate, format, and enrich document data to prepare for export, perform calculations, and standardize formats.
+Trasforma, calcola, formatta e arricchisci i dati dei documenti per prepararli all'esportazione, eseguire calcoli e standardizzare i formati.
 
-**Use Cases:**
-- Calculate totals, subtotals, taxes
-- Convert currencies or units
-- Format dates, numbers, text
-- Derive values from existing fields
-- Enrich data from external sources
-- Standardize data formats
-- Validate calculations
+**Casi d'uso:**
+- Calcolare totali, subtotali, imposte
+- Convertire valute o unità di misura
+- Formattare date, numeri, testo
+- Derivare valori da campi esistenti
+- Arricchire i dati da fonti esterne
+- Standardizzare i formati dei dati
+- Validare i calcoli
 
-**Cards Used:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Card utilizzate:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
 
-**[View Full Pattern →](data-transformation-pattern.md)**
+**[Visualizza il pattern completo →](data-transformation-pattern.md)**
 
 ---
 
-## Pattern Selection Guide
+## Guida alla scelta del pattern
 
-### By Complexity
+### Per complessità
 
-| Complexity | Patterns | Best For |
+| Complessità | Pattern | Ideale per |
 |------------|----------|----------|
-| **Low-Medium** | [Task Management](task-management-pattern.md) | Beginners, simple workflows |
-| **Medium** | [API Integration](api-integration-pattern.md)<br>[Decision Logic](decision-logic-pattern.md)<br>[Data Transformation](data-transformation-pattern.md) | Intermediate users, standard workflows |
-| **Medium-High** | [PO Matching](po-matching-pattern.md) | Advanced users, complex validation |
+| **Bassa-Media** | [Task Management](task-management-pattern.md) | Principianti, workflow semplici |
+| **Media** | [API Integration](api-integration-pattern.md)<br>[Decision Logic](decision-logic-pattern.md)<br>[Data Transformation](data-transformation-pattern.md) | Utenti intermedi, workflow standard |
+| **Media-Alta** | [PO Matching](po-matching-pattern.md) | Utenti avanzati, validazione complessa |
 
 ---
 
-### By Use Case
+### Per caso d'uso
 
-| I Need To... | Use This Pattern |
+| Ho bisogno di... | Usa questo pattern |
 |--------------|------------------|
-| Integrate with external systems | [API Integration Pattern](api-integration-pattern.md) |
-| Create approval workflows | [Task Management Pattern](task-management-pattern.md) |
-| Validate against purchase orders | [PO Matching Pattern](po-matching-pattern.md) |
-| Route based on conditions | [Decision Logic Pattern](decision-logic-pattern.md) |
-| Calculate and transform data | [Data Transformation Pattern](data-transformation-pattern.md) |
+| Integrare con sistemi esterni | [API Integration Pattern](api-integration-pattern.md) |
+| Creare workflow di approvazione | [Task Management Pattern](task-management-pattern.md) |
+| Validare rispetto agli ordini di acquisto | [PO Matching Pattern](po-matching-pattern.md) |
+| Instradare in base alle condizioni | [Decision Logic Pattern](decision-logic-pattern.md) |
+| Calcolare e trasformare i dati | [Data Transformation Pattern](data-transformation-pattern.md) |
 
 ---
 
-### By Industry/Department
+### Per settore/reparto
 
-| Industry/Department | Recommended Patterns |
+| Settore/Reparto | Pattern consigliati |
 |---------------------|---------------------|
-| **Finance/Accounting** | [PO Matching](po-matching-pattern.md), [Task Management](task-management-pattern.md), [Data Transformation](data-transformation-pattern.md) |
-| **Procurement** | [PO Matching](po-matching-pattern.md), [Decision Logic](decision-logic-pattern.md), [API Integration](api-integration-pattern.md) |
+| **Finanza/Contabilità** | [PO Matching](po-matching-pattern.md), [Task Management](task-management-pattern.md), [Data Transformation](data-transformation-pattern.md) |
+| **Approvvigionamenti** | [PO Matching](po-matching-pattern.md), [Decision Logic](decision-logic-pattern.md), [API Integration](api-integration-pattern.md) |
 | **Operations** | [Task Management](task-management-pattern.md), [Decision Logic](decision-logic-pattern.md) |
-| **IT/Integration** | [API Integration](api-integration-pattern.md), [Data Transformation](data-transformation-pattern.md) |
-| **All Departments** | [Decision Logic](decision-logic-pattern.md), [Task Management](task-management-pattern.md) |
+| **IT/Integrazione** | [API Integration](api-integration-pattern.md), [Data Transformation](data-transformation-pattern.md) |
+| **Tutti i reparti** | [Decision Logic](decision-logic-pattern.md), [Task Management](task-management-pattern.md) |
 
 ---
 
-## How to Use These Patterns
+## Come usare questi pattern
 
-### Step 1: Choose a Pattern
+### Passo 1: Scegli un pattern
 
-1. Review the pattern descriptions above
-2. Identify which pattern matches your use case
-3. Check the complexity and estimated setup time
-4. Review the "When to Use" section in the pattern guide
+1. Esamina le descrizioni dei pattern qui sopra
+2. Identifica quale pattern corrisponde al tuo caso d'uso
+3. Verifica la complessità e il tempo di configurazione stimato
+4. Esamina la sezione "Quando usarlo" nella guida del pattern
 
-### Step 2: Review Prerequisites
+### Passo 2: Esamina i prerequisiti
 
-Each pattern guide lists:
-- Required knowledge
-- Related guides to read first
-- Cards that will be used
-- Configuration requirements
+Ogni guida al pattern elenca:
+- Conoscenze richieste
+- Guide correlate da leggere prima
+- Card che verranno utilizzate
+- Requisiti di configurazione
 
-### Step 3: Follow Step-by-Step Instructions
+### Passo 3: Segui le istruzioni passo passo
 
-Each pattern provides:
-- Complete workflow example
-- Step-by-step implementation guide
-- Configuration templates
-- Real-world examples
-- Troubleshooting tips
+Ogni pattern fornisce:
+- Esempio completo di workflow
+- Guida all'implementazione passo passo
+- Modelli di configurazione
+- Esempi reali
+- Suggerimenti per la risoluzione dei problemi
 
-### Step 4: Customize to Your Needs
+### Passo 4: Personalizza in base alle tue esigenze
 
-- Adapt the example to your business rules
-- Adjust thresholds and tolerances
-- Modify routing logic
-- Add/remove steps as needed
-- Test thoroughly before production use
+- Adatta l'esempio alle tue regole aziendali
+- Regola soglie e tolleranze
+- Modifica la logica di instradamento
+- Aggiungi/rimuovi passaggi secondo necessità
+- Esegui test approfonditi prima dell'uso in produzione
 
-### Step 5: Monitor and Optimize
+### Passo 5: Monitora e ottimizza
 
-- Track workflow performance
-- Monitor success rates
-- Gather user feedback
-- Refine configuration
-- Document customizations
+- Monitora le prestazioni del workflow
+- Monitora i tassi di successo
+- Raccogli il feedback degli utenti
+- Affina la configurazione
+- Documenta le personalizzazioni
 
 ---
 
-## Pattern Combinations
+## Combinazioni di pattern
 
-Many real-world scenarios require combining multiple patterns:
+Molti scenari reali richiedono la combinazione di più pattern:
 
-### Example 1: Complete Invoice Processing
+### Esempio 1: Elaborazione completa della fattura
 
 ```
 1. API Integration Pattern → Fetch current pricing
@@ -231,7 +231,7 @@ Many real-world scenarios require combining multiple patterns:
 5. Task Management Pattern → Create approval tasks
 ```
 
-### Example 2: High-Value Invoice Approval
+### Esempio 2: Approvazione di fatture di valore elevato
 
 ```
 1. Data Transformation Pattern → Calculate amounts
@@ -240,7 +240,7 @@ Many real-world scenarios require combining multiple patterns:
 4. API Integration Pattern → Notify external systems
 ```
 
-### Example 3: Exception Handling
+### Esempio 3: Gestione delle eccezioni
 
 ```
 1. PO Matching Pattern → Detect variances
@@ -251,128 +251,128 @@ Many real-world scenarios require combining multiple patterns:
 
 ---
 
-## Pattern Templates
+## Modelli di pattern
 
-Each pattern includes these standardized sections:
+Ogni pattern include queste sezioni standardizzate:
 
-1. **Overview** - What the pattern does
-2. **When to Use** - Appropriate use cases
-3. **Complete Example** - Real-world scenario
-4. **Step-by-Step** - Implementation instructions
-5. **Configuration** - Card setup templates
-6. **Workflow Diagram** - Visual representation
-7. **Advanced Variations** - Alternative implementations
-8. **Error Handling** - Common issues and solutions
-9. **Testing Checklist** - Validation steps
-10. **Related Patterns** - Complementary patterns
-11. **Related Guides** - Reference documentation
-
----
-
-## Getting Help
-
-### Pattern Support Resources
-
-**Documentation:**
-- [Complete Workflow Guide Index](../README.md)
-- [Individual Card Guides](../then/action/)
-- [Condition Cards Reference](../and/condition-cards-complete-guide.md)
-- [Workflow Linking Map](../../../../WORKFLOW_LINKING_MAP.md)
-
-**Additional Resources:**
-- [Quick Reference Guide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- [October 2025 Release Notes](../changelog/2025-10-october.md)
-- [Card Versioning Reference](../../../docs/card_version.md)
-
-**Contact:**
-- Pattern Feedback: docs@docbits.com
-- Technical Support: support@docbits.com
-- Implementation Help: consulting@docbits.com
+1. **Panoramica** - Cosa fa il pattern
+2. **Quando usarlo** - Casi d'uso appropriati
+3. **Esempio completo** - Scenario reale
+4. **Passo passo** - Istruzioni di implementazione
+5. **Configurazione** - Modelli di configurazione delle card
+6. **Diagramma del workflow** - Rappresentazione visiva
+7. **Varianti avanzate** - Implementazioni alternative
+8. **Gestione degli errori** - Problemi comuni e soluzioni
+9. **Checklist di test** - Passaggi di validazione
+10. **Pattern correlati** - Pattern complementari
+11. **Guide correlate** - Documentazione di riferimento
 
 ---
 
-## Pattern Statistics
+## Ottenere aiuto
 
-| Metric | Value |
+### Risorse di supporto per i pattern
+
+**Documentazione:**
+- [Indice completo delle guide ai workflow](../README.md)
+- [Guide alle singole card](../then/action/)
+- [Riferimento alle card di condizione](../and/condition-cards-complete-guide.md)
+- [Mappa di collegamento dei workflow](../../../../WORKFLOW_LINKING_MAP.md)
+
+**Risorse aggiuntive:**
+- [Guida di riferimento rapido](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- [Note di rilascio ottobre 2025](../changelog/2025-10-october.md)
+- [Riferimento al versionamento delle card](../../../docs/card_version.md)
+
+**Contatti:**
+- Feedback sui pattern: docs@docbits.com
+- Supporto tecnico: support@docbits.com
+- Aiuto all'implementazione: consulting@docbits.com
+
+---
+
+## Statistiche dei pattern
+
+| Metrica | Valore |
 |--------|-------|
-| **Total Patterns** | 5 |
-| **Total Cards Covered** | 30+ |
-| **Combined Documentation** | ~1,200 lines |
-| **Example Scenarios** | 25+ |
-| **Configuration Templates** | 15+ |
-| **Workflow Diagrams** | 5 complete diagrams |
-| **Cross-References** | 87+ internal links |
+| **Totale pattern** | 5 |
+| **Totale card coperte** | 30+ |
+| **Documentazione combinata** | ~1.200 righe |
+| **Scenari di esempio** | 25+ |
+| **Modelli di configurazione** | 15+ |
+| **Diagrammi di workflow** | 5 diagrammi completi |
+| **Riferimenti incrociati** | 87+ link interni |
 
 ---
 
-## Contributing to Patterns
+## Contribuire ai pattern
 
-Have a workflow pattern that would benefit others?
+Hai un pattern di workflow che potrebbe essere utile ad altri?
 
-**Pattern Contribution Guidelines:**
+**Linee guida per contribuire ai pattern:**
 
-1. **Document Your Workflow**
-   - Clear business scenario
-   - Step-by-step implementation
-   - Working configuration examples
-   - Real-world test results
+1. **Documenta il tuo workflow**
+   - Scenario aziendale chiaro
+   - Implementazione passo passo
+   - Esempi di configurazione funzionanti
+   - Risultati di test reali
 
-2. **Follow Pattern Template**
-   - Use standard section structure
-   - Include all required elements
-   - Provide diagrams/examples
-   - Add troubleshooting guide
+2. **Segui il modello di pattern**
+   - Usa la struttura standard delle sezioni
+   - Includi tutti gli elementi richiesti
+   - Fornisci diagrammi/esempi
+   - Aggiungi una guida alla risoluzione dei problemi
 
-3. **Submit for Review**
-   - Email to: docs@docbits.com
-   - Include: Pattern description, use cases, implementation guide
-   - We'll review and potentially add to official documentation
+3. **Invia per la revisione**
+   - Email a: docs@docbits.com
+   - Includi: descrizione del pattern, casi d'uso, guida all'implementazione
+   - Lo esamineremo e potenzialmente lo aggiungeremo alla documentazione ufficiale
 
-**Benefits:**
-- Help other DocBits users
-- Get recognized in documentation
-- Improve overall product knowledge base
-- Receive feedback on your implementation
+**Vantaggi:**
+- Aiutare altri utenti DocBits
+- Essere riconosciuti nella documentazione
+- Migliorare la base di conoscenza complessiva del prodotto
+- Ricevere feedback sulla tua implementazione
 
 ---
 
 ## Changelog
 
-### Version 1.0 (October 23, 2025)
-- Initial release of 5 comprehensive workflow patterns
-- API Integration Pattern added
-- Task Management Pattern added
-- PO Matching Pattern added
-- Decision Logic Pattern added
-- Data Transformation Pattern added
-- Cross-reference linking implemented (87 links)
-- Pattern selection guide created
+### Versione 1.0 (23 ottobre 2025)
+- Rilascio iniziale di 5 pattern di workflow completi
+- Aggiunto API Integration Pattern
+- Aggiunto Task Management Pattern
+- Aggiunto PO Matching Pattern
+- Aggiunto Decision Logic Pattern
+- Aggiunto Data Transformation Pattern
+- Implementato il collegamento con riferimenti incrociati (87 link)
+- Creata la guida alla scelta del pattern
 
 ---
 
-## Next Steps
+## Prossimi passi
 
-**New to Workflow Patterns?**
-1. Start with [Task Management Pattern](task-management-pattern.md) - easiest to understand
-2. Review [Decision Logic Pattern](decision-logic-pattern.md) - foundational for all workflows
-3. Explore [API Integration Pattern](api-integration-pattern.md) - common integration need
+**Nuovo ai pattern di workflow?**
+1. Inizia con il [Task Management Pattern](task-management-pattern.md) - il più facile da comprendere
+2. Esamina il [Decision Logic Pattern](decision-logic-pattern.md) - fondamentale per tutti i workflow
+3. Esplora l'[API Integration Pattern](api-integration-pattern.md) - esigenza di integrazione comune
 
-**Ready to Implement?**
-1. Choose your pattern from the list above
-2. Read the complete pattern guide
-3. Review prerequisites and related guides
-4. Follow step-by-step instructions
-5. Test with sample documents
-6. Deploy to production
-7. Monitor and optimize
+**Pronto a implementare?**
+1. Scegli il tuo pattern dall'elenco qui sopra
+2. Leggi la guida completa al pattern
+3. Esamina i prerequisiti e le guide correlate
+4. Segui le istruzioni passo passo
+5. Esegui test con documenti di esempio
+6. Distribuisci in produzione
+7. Monitora e ottimizza
 
-**Need More Help?**
-- Review [Workflow Documentation Overview](../README.md)
-- Check [Quick Reference Guide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- Contact support team
+**Hai bisogno di altro aiuto?**
+- Esamina la [Panoramica della documentazione dei workflow](../README.md)
+- Consulta la [Guida di riferimento rapido](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- Contatta il team di supporto
 
 ---
 
-**Last Updated:** October 23, 2025
-**Maintained By:** Documentation Team
-**Version:** 1.0
+**Ultimo aggiornamento:** 23 ottobre 2025
+**Gestito da:** Team di documentazione
+**Versione:** 1.0

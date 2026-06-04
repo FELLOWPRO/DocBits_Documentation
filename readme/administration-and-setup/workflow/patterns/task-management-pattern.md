@@ -1,78 +1,78 @@
 # Task Management Pattern
 
-**Pattern Type:** Workflow Management
-**Complexity:** Low-Medium
-**Estimated Setup:** 30-45 minutes
-**Common Use Cases:** Approval workflows, review tasks, exception handling, escalation
+**Tipo di pattern:** Gestione dei workflow
+**Complessità:** Bassa-Media
+**Configurazione stimata:** 30-45 minuti
+**Casi d'uso comuni:** Workflow di approvazione, task di revisione, gestione delle eccezioni, escalation
 
 ---
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** to open the card library and pick the cards this pattern uses — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` and `CONDITION_TASK_STATUS` (the **Assignee** category holds the task and assignment cards):
+Costruisci questo pattern nel **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Clicca **Add Card** per aprire la libreria delle card e scegli le card usate da questo pattern — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` e `CONDITION_TASK_STATUS` (la categoria **Assignee** contiene le card di task e assegnazione):
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — the task, assignment and notification cards live under the <strong>Assignee</strong> and <strong>Status</strong> categories.</p></figcaption></figure>
-
----
-
-## Pattern Overview
-
-This pattern demonstrates how to create, assign, track, and manage tasks within DocBits workflows. Tasks are actionable work items assigned to users or groups that require completion before the document workflow can continue.
-
-**What This Pattern Does:**
-1. Creates tasks based on workflow conditions
-2. Assigns tasks to appropriate users or groups
-3. Sets task properties (priority, deadline, description)
-4. Sends notifications when tasks are created
-5. Tracks task status and completion
-6. Routes documents based on task outcomes
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Libreria Add Card nel Workflow Builder, raggruppata per categoria"><figcaption><p>La libreria <strong>Add Card</strong> — le card di task, assegnazione e notifica si trovano nelle categorie <strong>Assignee</strong> e <strong>Status</strong>.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Panoramica del pattern
 
-Use this pattern when you need to:
-- ✅ Create approval workflows
-- ✅ Assign review tasks to users
-- ✅ Handle exceptions requiring human intervention
-- ✅ Escalate issues to managers
-- ✅ Create multi-level approval chains
-- ✅ Track who needs to do what
-- ✅ Set deadlines for actions
+Questo pattern mostra come creare, assegnare, monitorare e gestire i task all'interno dei workflow di DocBits. I task sono elementi di lavoro azionabili assegnati a utenti o gruppi che richiedono il completamento prima che il workflow del documento possa proseguire.
 
-**Don't use this pattern when:**
-- ❌ No human action required (use auto-processing instead)
-- ❌ Just need to notify (use email instead)
-- ❌ Simple document routing (use assignment instead)
+**Cosa fa questo pattern:**
+1. Crea task in base alle condizioni del workflow
+2. Assegna i task agli utenti o ai gruppi appropriati
+3. Imposta le proprietà del task (priorità, scadenza, descrizione)
+4. Invia notifiche quando i task vengono creati
+5. Monitora lo stato e il completamento dei task
+6. Instrada i documenti in base agli esiti dei task
 
 ---
 
-## Complete Workflow Example
+## Quando usare questo pattern
 
-### Scenario: Invoice Approval with Amount-Based Routing
+Usa questo pattern quando devi:
+- ✅ Creare workflow di approvazione
+- ✅ Assegnare task di revisione agli utenti
+- ✅ Gestire le eccezioni che richiedono intervento umano
+- ✅ Inoltrare i problemi ai manager
+- ✅ Creare catene di approvazione multi-livello
+- ✅ Monitorare chi deve fare cosa
+- ✅ Impostare scadenze per le azioni
 
-**Business Requirement:**
-- Invoices < €1,000: Auto-approve (no task needed)
-- Invoices €1,000-€10,000: Approval task to Manager
-- Invoices > €10,000: Dual approval (Manager + Director)
-- All approvers receive email notification
-- Tasks have 3-day deadline
-
-**Workflow Cards Used:**
-1. CONDITION_DOC_FIELD_AMOUNT - Check invoice amount
-2. tasks_create - Create approval task
-3. ACTION_ASSIGN_TO_USER - Assign task to approver
-4. ACTION_SEND_EMAIL_TO_GROUPS - Send notification
-5. CONDITION_TASK_STATUS - Check if task completed
-6. ACTION_APPROVE_DOCUMENT - Approve after task completion
+**Non usare questo pattern quando:**
+- ❌ Non è richiesta alcuna azione umana (usa invece l'elaborazione automatica)
+- ❌ Devi solo notificare (usa invece l'email)
+- ❌ Semplice instradamento dei documenti (usa invece l'assegnazione)
 
 ---
 
-## Step-by-Step Implementation
+## Esempio completo di workflow
 
-### Step 1: Check Amount Threshold
+### Scenario: Approvazione delle fatture con instradamento basato sull'importo
 
-**Card:** CONDITION_DOC_FIELD_AMOUNT or similar field condition
+**Requisito aziendale:**
+- Fatture < €1.000: Approvazione automatica (nessun task necessario)
+- Fatture €1.000-€10.000: Task di approvazione al Manager
+- Fatture > €10.000: Doppia approvazione (Manager + Director)
+- Tutti gli approvatori ricevono una notifica via email
+- I task hanno una scadenza di 3 giorni
 
-**Configuration for Path 1 (< €1,000):**
+**Card di workflow utilizzate:**
+1. CONDITION_DOC_FIELD_AMOUNT - Verifica l'importo della fattura
+2. tasks_create - Crea il task di approvazione
+3. ACTION_ASSIGN_TO_USER - Assegna il task all'approvatore
+4. ACTION_SEND_EMAIL_TO_GROUPS - Invia la notifica
+5. CONDITION_TASK_STATUS - Verifica se il task è completato
+6. ACTION_APPROVE_DOCUMENT - Approva dopo il completamento del task
+
+---
+
+## Implementazione passo passo
+
+### Passo 1: Verifica la soglia di importo
+
+**Card:** CONDITION_DOC_FIELD_AMOUNT o condizione di campo simile
+
+**Configurazione per il Percorso 1 (< €1.000):**
 ```
 Field: Total_Amount
 Operator: IS LESS THAN
@@ -80,7 +80,7 @@ Value: 1000
 Currency: EUR
 ```
 
-**Configuration for Path 2 (€1,000-€10,000):**
+**Configurazione per il Percorso 2 (€1.000-€10.000):**
 ```
 Field: Total_Amount
 Operator: IS BETWEEN
@@ -89,7 +89,7 @@ Value Max: 10000
 Currency: EUR
 ```
 
-**Configuration for Path 3 (> €10,000):**
+**Configurazione per il Percorso 3 (> €10.000):**
 ```
 Field: Total_Amount
 Operator: IS GREATER THAN
@@ -97,29 +97,29 @@ Value: 10000
 Currency: EUR
 ```
 
-**Guide Reference:** [Condition Cards Guide](../and/condition-cards-complete-guide.md)
+**Riferimento alla guida:** [Condition Cards Guide](../and/condition-cards-complete-guide.md)
 
 ---
 
-### Step 2A: Auto-Approve Small Invoices (< €1,000)
+### Passo 2A: Approva automaticamente le fatture di piccolo importo (< €1.000)
 
-**No task needed for small amounts**
+**Nessun task necessario per gli importi piccoli**
 
-**Cards:**
+**Card:**
 - ACTION_SET_FIELD_TO_TEXT
-  - Set "Approval_Type" = "AUTO"
-  - Set "Approval_Reason" = "Amount below threshold"
+  - Imposta "Approval_Type" = "AUTO"
+  - Imposta "Approval_Reason" = "Amount below threshold"
 - ACTION_APPROVE_DOCUMENT
 
-**Result:** Document automatically approved, no task created
+**Risultato:** Documento approvato automaticamente, nessun task creato
 
 ---
 
-### Step 2B: Create Manager Approval Task (€1,000-€10,000)
+### Passo 2B: Crea il task di approvazione del Manager (€1.000-€10.000)
 
-**Card:** tasks_create (v4 recommended)
+**Card:** tasks_create (v4 consigliata)
 
-**Configuration:**
+**Configurazione:**
 ```json
 {
   "task_type": "Approval",
@@ -133,23 +133,23 @@ Currency: EUR
 }
 ```
 
-**Field Mapping:**
-- `{{DOCUMENT_NUMBER}}` - Automatic document ID
-- `{{Total_Amount}}` - Field: Total_Amount
-- `{{Supplier_Name}}` - Field: Supplier_Name
-- `{{Invoice_Number}}` - Field: Invoice_Number
-- `{{Invoice_Date}}` - Field: Invoice_Date
-- `{{Approving_Manager}}` - Field or fixed user
+**Mappatura dei campi:**
+- `{{DOCUMENT_NUMBER}}` - ID documento automatico
+- `{{Total_Amount}}` - Campo: Total_Amount
+- `{{Supplier_Name}}` - Campo: Supplier_Name
+- `{{Invoice_Number}}` - Campo: Invoice_Number
+- `{{Invoice_Date}}` - Campo: Invoice_Date
+- `{{Approving_Manager}}` - Campo o utente fisso
 
-**Guide Reference:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+**Riferimento alla guida:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
 
 ---
 
-### Step 2C: Create Dual Approval Tasks (> €10,000)
+### Passo 2C: Crea i task di doppia approvazione (> €10.000)
 
-**Two sequential tasks for high-value invoices**
+**Due task sequenziali per le fatture di valore elevato**
 
-**Task 1: Manager Approval**
+**Task 1: Approvazione del Manager**
 ```json
 {
   "task_type": "First Approval",
@@ -163,7 +163,7 @@ Currency: EUR
 }
 ```
 
-**Task 2: Director Approval (Created after Task 1 completion)**
+**Task 2: Approvazione del Director (creato dopo il completamento del Task 1)**
 ```json
 {
   "task_type": "Second Approval",
@@ -179,18 +179,18 @@ Currency: EUR
 
 ---
 
-### Step 3: Assign Task to User/Group
+### Passo 3: Assegna il task a un utente/gruppo
 
-**Card:** ACTION_ASSIGN_TO_USER or ACTION_ASSIGN_TO_GROUP
+**Card:** ACTION_ASSIGN_TO_USER o ACTION_ASSIGN_TO_GROUP
 
-**Option 1: Assign to Specific User**
+**Opzione 1: Assegna a un utente specifico**
 ```
 User: John.Smith@company.com
 OR
 User Field: {{DOCUMENT_FIELD:Approving_Manager}}
 ```
 
-**Option 2: Assign to Group**
+**Opzione 2: Assegna a un gruppo**
 ```
 Group: Finance Managers
 Assignment Mode: First Available
@@ -200,7 +200,7 @@ OR
 Assignment Mode: All (everyone in group gets task)
 ```
 
-**Option 3: Sequential Assignment**
+**Opzione 3: Assegnazione sequenziale**
 ```
 Card: ACTION_ASSIGN_SEQUENTIALLY_TO_USER
 
@@ -209,15 +209,15 @@ User 2: Finance_Director (only if User 1 approves)
 User 3: CFO (only if User 2 approves)
 ```
 
-**Guide Reference:** [Assignment User Guide](../then/assignee/assignment-user-guide.md)
+**Riferimento alla guida:** [Assignment User Guide](../then/assignee/assignment-user-guide.md)
 
 ---
 
-### Step 4: Send Email Notification
+### Passo 4: Invia la notifica via email
 
 **Card:** ACTION_SEND_EMAIL_TO_GROUPS
 
-**Configuration:**
+**Configurazione:**
 ```json
 {
   "recipients": [
@@ -229,39 +229,39 @@ User 3: CFO (only if User 2 approves)
 }
 ```
 
-**Email Variables:**
-- `{{TASK_ASSIGNEE_EMAIL}}` - Task assignee's email
-- `{{TASK_ASSIGNEE_NAME}}` - Task assignee's name
-- `{{DOCUMENT_NUMBER}}` - Document ID
-- `{{TASK_DEADLINE}}` - Task due date
-- `{{TASK_PRIORITY}}` - Task priority level
-- `{{DOCUMENT_LINK}}` - Direct link to document
+**Variabili dell'email:**
+- `{{TASK_ASSIGNEE_EMAIL}}` - Email dell'assegnatario del task
+- `{{TASK_ASSIGNEE_NAME}}` - Nome dell'assegnatario del task
+- `{{DOCUMENT_NUMBER}}` - ID documento
+- `{{TASK_DEADLINE}}` - Data di scadenza del task
+- `{{TASK_PRIORITY}}` - Livello di priorità del task
+- `{{DOCUMENT_LINK}}` - Link diretto al documento
 
-**Guide Reference:** [Send Email Groups Guide](../then/action/send-email-groups-guide.md)
+**Riferimento alla guida:** [Send Email Groups Guide](../then/action/send-email-groups-guide.md)
 
 ---
 
-### Step 5: Track Task Status
+### Passo 5: Monitora lo stato del task
 
-**Card:** CONDITION_TASK_STATUS or similar task status checker
+**Card:** CONDITION_TASK_STATUS o controllo di stato del task simile
 
-**Configuration:**
+**Configurazione:**
 ```
 Task ID: {{CREATED_TASK_ID}}
 Status Check: IS COMPLETED
 ```
 
-**Status Options:**
-- CREATED - Task just created
-- ASSIGNED - Task assigned to user
-- IN_PROGRESS - User started working on task
-- COMPLETED - Task finished
-- APPROVED - Task approved
-- REJECTED - Task rejected
-- CANCELLED - Task cancelled
-- OVERDUE - Task past deadline
+**Opzioni di stato:**
+- CREATED - Task appena creato
+- ASSIGNED - Task assegnato a un utente
+- IN_PROGRESS - L'utente ha iniziato a lavorare sul task
+- COMPLETED - Task terminato
+- APPROVED - Task approvato
+- REJECTED - Task rifiutato
+- CANCELLED - Task annullato
+- OVERDUE - Task oltre la scadenza
 
-**Logic:**
+**Logica:**
 ```
 IF TASK_STATUS = COMPLETED AND TASK_RESULT = APPROVED:
   → Continue to next step (or next approval level)
@@ -281,11 +281,11 @@ IF TASK_STATUS = OVERDUE:
 
 ---
 
-### Step 6: Complete Workflow Based on Task Result
+### Passo 6: Completa il workflow in base al risultato del task
 
-**After Task Completion:**
+**Dopo il completamento del task:**
 
-**Scenario A: Task Approved**
+**Scenario A: Task approvato**
 ```
 1. Set field "Approval_Status" = "APPROVED"
 2. Set field "Approved_By" = {{TASK_COMPLETED_BY}}
@@ -294,7 +294,7 @@ IF TASK_STATUS = OVERDUE:
 5. Export document (if configured)
 ```
 
-**Scenario B: Task Rejected**
+**Scenario B: Task rifiutato**
 ```
 1. Set field "Approval_Status" = "REJECTED"
 2. Set field "Rejected_By" = {{TASK_COMPLETED_BY}}
@@ -304,7 +304,7 @@ IF TASK_STATUS = OVERDUE:
 6. Create "Correction Needed" task
 ```
 
-**Scenario C: Task Overdue**
+**Scenario C: Task in ritardo**
 ```
 1. Set field "Task_Status" = "OVERDUE"
 2. Create escalation task for manager
@@ -315,7 +315,7 @@ IF TASK_STATUS = OVERDUE:
 
 ---
 
-## Complete Workflow Diagram
+## Diagramma completo del workflow
 
 ```
 INVOICE ARRIVES
@@ -420,9 +420,9 @@ INVOICE ARRIVES
 
 ---
 
-## Configuration Templates
+## Modelli di configurazione
 
-### Template 1: Simple Approval Task
+### Modello 1: Task di approvazione semplice
 
 ```json
 {
@@ -438,7 +438,7 @@ INVOICE ARRIVES
 
 ---
 
-### Template 2: Review Task with Details
+### Modello 2: Task di revisione con dettagli
 
 ```json
 {
@@ -454,7 +454,7 @@ INVOICE ARRIVES
 
 ---
 
-### Template 3: Escalation Task
+### Modello 3: Task di escalation
 
 ```json
 {
@@ -471,11 +471,11 @@ INVOICE ARRIVES
 
 ---
 
-## Advanced Patterns
+## Pattern avanzati
 
-### Pattern 1: Sequential Multi-Level Approval
+### Pattern 1: Approvazione sequenziale multi-livello
 
-**Use:** Invoices must go through multiple approvers in sequence
+**Uso:** Le fatture devono passare attraverso più approvatori in sequenza
 
 ```
 Level 1: Accounts Clerk (verify data)
@@ -487,7 +487,7 @@ Level 1: Accounts Clerk (verify data)
             Document Approved ✅
 ```
 
-**Implementation:**
+**Implementazione:**
 ```
 1. Create Task 1 for Clerk
 2. Wait for Task 1 completion
@@ -503,9 +503,9 @@ Level 1: Accounts Clerk (verify data)
 
 ---
 
-### Pattern 2: Parallel Multi-Approver
+### Pattern 2: Approvazione parallela di più approvatori
 
-**Use:** Multiple people must approve simultaneously
+**Uso:** Più persone devono approvare simultaneamente
 
 ```
 Send to ALL approvers at once:
@@ -516,7 +516,7 @@ Send to ALL approvers at once:
 Document approved only when ALL approve
 ```
 
-**Implementation:**
+**Implementazione:**
 ```
 1. Create 3 tasks simultaneously
 2. Track all 3 task statuses
@@ -529,9 +529,9 @@ Document approved only when ALL approve
 
 ---
 
-### Pattern 3: Conditional Task Creation
+### Pattern 3: Creazione condizionale dei task
 
-**Use:** Create different tasks based on conditions
+**Uso:** Creare task diversi in base alle condizioni
 
 ```
 IF Supplier = "New":
@@ -546,9 +546,9 @@ ELSE:
 
 ---
 
-### Pattern 4: Deadline-Based Escalation
+### Pattern 4: Escalation basata sulla scadenza
 
-**Use:** Auto-escalate if task not completed on time
+**Uso:** Escalation automatica se il task non viene completato in tempo
 
 ```
 Day 0: Create task for User A (3-day deadline)
@@ -564,13 +564,13 @@ Day 5: IF still not completed:
 
 ---
 
-## Error Handling
+## Gestione degli errori
 
-### Scenario 1: Assignee Not Found
+### Scenario 1: Assegnatario non trovato
 
-**Problem:** User doesn't exist or is inactive
+**Problema:** L'utente non esiste o è inattivo
 
-**Solution:**
+**Soluzione:**
 ```
 1. Check user status with CONDITION_USER_IS_ISNOT
 2. IF User = INACTIVE:
@@ -582,11 +582,11 @@ Day 5: IF still not completed:
 
 ---
 
-### Scenario 2: Task Creation Failed
+### Scenario 2: Creazione del task fallita
 
-**Problem:** System error creating task
+**Problema:** Errore di sistema nella creazione del task
 
-**Solution:**
+**Soluzione:**
 ```
 1. Check task creation status
 2. IF Failed:
@@ -598,11 +598,11 @@ Day 5: IF still not completed:
 
 ---
 
-### Scenario 3: No Response to Task
+### Scenario 3: Nessuna risposta al task
 
-**Problem:** User doesn't complete task by deadline
+**Problema:** L'utente non completa il task entro la scadenza
 
-**Solution:**
+**Soluzione:**
 ```
 1. Monitor task deadline
 2. Day before deadline:
@@ -617,29 +617,29 @@ Day 5: IF still not completed:
 
 ---
 
-## Testing Checklist
+## Checklist di test
 
-- [ ] Task created successfully
-- [ ] Task assigned to correct user/group
-- [ ] Email notification sent
-- [ ] Task appears in user's task list
-- [ ] Task properties correct (title, description, priority, deadline)
-- [ ] User can complete task
-- [ ] Workflow continues after task completion
-- [ ] Approval workflow works correctly
-- [ ] Rejection workflow works correctly
-- [ ] Escalation triggers at right time
-- [ ] Overdue handling works
-- [ ] All email notifications sent
-- [ ] Field updates work correctly
+- [ ] Task creato con successo
+- [ ] Task assegnato all'utente/gruppo corretto
+- [ ] Notifica via email inviata
+- [ ] Il task compare nell'elenco dei task dell'utente
+- [ ] Proprietà del task corrette (titolo, descrizione, priorità, scadenza)
+- [ ] L'utente può completare il task
+- [ ] Il workflow continua dopo il completamento del task
+- [ ] Il workflow di approvazione funziona correttamente
+- [ ] Il workflow di rifiuto funziona correttamente
+- [ ] L'escalation si attiva al momento giusto
+- [ ] La gestione dei ritardi funziona
+- [ ] Tutte le notifiche via email vengono inviate
+- [ ] Gli aggiornamenti dei campi funzionano correttamente
 
 ---
 
-## Real-World Examples
+## Esempi reali
 
-### Example 1: Three-Way PO Matching Exception
+### Esempio 1: Eccezione del matching a tre vie del PO
 
-**Scenario:** Invoice doesn't match PO, needs review
+**Scenario:** La fattura non corrisponde al PO, necessita di revisione
 
 ```
 1. PO Matching fails (price variance > 5%)
@@ -655,9 +655,9 @@ Day 5: IF still not completed:
 
 ---
 
-### Example 2: Supplier Invoice Approval
+### Esempio 2: Approvazione della fattura del fornitore
 
-**Scenario:** New supplier invoice needs special approval
+**Scenario:** La fattura di un nuovo fornitore necessita di un'approvazione speciale
 
 ```
 1. Check if supplier is new (< 6 months old)
@@ -673,9 +673,9 @@ Day 5: IF still not completed:
 
 ---
 
-### Example 3: Month-End Processing
+### Esempio 3: Elaborazione di fine mese
 
-**Scenario:** Month-end invoices need urgent processing
+**Scenario:** Le fatture di fine mese necessitano di elaborazione urgente
 
 ```
 1. Check if document date in last 3 days of month
@@ -691,62 +691,62 @@ Day 5: IF still not completed:
 
 ---
 
-## Performance Tips
+## Suggerimenti sulle prestazioni
 
-✅ **Best Practices:**
-- Set realistic deadlines
-- Use clear task titles and descriptions
-- Include all necessary information in task
-- Send timely notifications
-- Monitor task completion rates
-- Escalate overdue tasks automatically
-- Log all task activities
-- Review task patterns monthly
+✅ **Best practice:**
+- Imposta scadenze realistiche
+- Usa titoli e descrizioni dei task chiari
+- Includi tutte le informazioni necessarie nel task
+- Invia notifiche tempestive
+- Monitora i tassi di completamento dei task
+- Escalation automatica dei task in ritardo
+- Registra tutte le attività dei task
+- Esamina i pattern dei task mensilmente
 
-❌ **Avoid:**
-- Creating tasks for everything
-- Vague task descriptions
-- Unrealistic deadlines
-- Too many notification emails
-- No escalation path
-- Ignoring overdue tasks
-- Not tracking task metrics
-
----
-
-## Related Patterns
-
-### Patterns That Work Well Together:
-
-- **[API Integration Pattern](api-integration-pattern.md)** - Create tasks for API errors
-- **[PO Matching Pattern](po-matching-pattern.md)** - Create tasks for PO mismatches
-- **[Decision Logic Pattern](decision-logic-pattern.md)** - Route to appropriate task type
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transform data before creating task
+❌ **Da evitare:**
+- Creare task per qualsiasi cosa
+- Descrizioni dei task vaghe
+- Scadenze irrealistiche
+- Troppe email di notifica
+- Nessun percorso di escalation
+- Ignorare i task in ritardo
+- Non monitorare le metriche dei task
 
 ---
 
-## Related Guides
+## Pattern correlati
 
-### Prerequisites
-- [Task Assignment Guide](../then/task/task-assignment-guide.md) - Task card documentation
-- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - User assignment
-- [Send Email Groups Guide](../then/action/send-email-groups-guide.md) - Email notifications
+### Pattern che funzionano bene insieme:
 
-### Related Cards
+- **[API Integration Pattern](api-integration-pattern.md)** - Crea task per gli errori API
+- **[PO Matching Pattern](po-matching-pattern.md)** - Crea task per le mancate corrispondenze del PO
+- **[Decision Logic Pattern](decision-logic-pattern.md)** - Instrada al tipo di task appropriato
+- **[Data Transformation Pattern](data-transformation-pattern.md)** - Trasforma i dati prima di creare il task
+
+---
+
+## Guide correlate
+
+### Prerequisiti
+- [Task Assignment Guide](../then/task/task-assignment-guide.md) - Documentazione della card di task
+- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - Assegnazione agli utenti
+- [Send Email Groups Guide](../then/action/send-email-groups-guide.md) - Notifiche via email
+
+### Card correlate
 - **tasks_create** - [Task Assignment Guide](../then/task/task-assignment-guide.md)
 - **ACTION_ASSIGN_TO_USER** - [Assignment Guide](../then/assignee/assignment-user-guide.md)
 - **ACTION_SEND_EMAIL_TO_GROUPS** - [Email Guide](../then/action/send-email-groups-guide.md)
 - **CONDITION_TASK_STATUS** - [Condition Cards Guide](../and/condition-cards-complete-guide.md)
 
-### Next Steps
-- Add email notifications: [Send Email Guide](../then/action/send-email-groups-guide.md)
-- Implement complex routing: [Decision Logic Pattern](decision-logic-pattern.md)
-- Handle errors: [Error Handling Pattern](error-handling-pattern.md)
+### Prossimi passi
+- Aggiungi le notifiche via email: [Send Email Guide](../then/action/send-email-groups-guide.md)
+- Implementa l'instradamento complesso: [Decision Logic Pattern](decision-logic-pattern.md)
+- Gestisci gli errori: [Error Handling Pattern](error-handling-pattern.md)
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Low-Medium
-**Estimated Time:** 30-45 minutes
-**Success Rate:** Very High
+**Versione del pattern:** 1.0
+**Ultimo aggiornamento:** 23 ottobre 2025
+**Difficoltà:** Bassa-Media
+**Tempo stimato:** 30-45 minuti
+**Tasso di successo:** Molto alto

@@ -1,76 +1,76 @@
 # API Integration Pattern
 
-**Pattern Type:** Integration
-**Complexity:** Medium
-**Estimated Setup:** 45-60 minutes
-**Common Use Cases:** External data fetching, pricing validation, master data lookup
+**Tipo di pattern:** Integrazione
+**Complessità:** Media
+**Configurazione stimata:** 45-60 minuti
+**Casi d'uso comuni:** Recupero di dati esterni, validazione dei prezzi, lookup dei dati master
 
 ---
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** to open the card library and pick the cards this pattern uses — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` and `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
+Costruisci questo pattern nel **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Clicca **Add Card** per aprire la libreria delle card e scegli le card usate da questo pattern — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` e `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — pick the API, condition and field cards used by this pattern from these categories.</p></figcaption></figure>
-
----
-
-## Pattern Overview
-
-This pattern demonstrates how to integrate DocBits with external APIs to fetch, validate, and store data from external systems. It's one of the most common workflow patterns for connecting DocBits to pricing systems, validation services, ERP systems, and other external data sources.
-
-**What This Pattern Does:**
-1. Calls an external API to fetch data
-2. Validates the API response
-3. Stores response data in document fields
-4. Makes decisions based on fetched data
-5. Routes documents accordingly
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Libreria Add Card nel Workflow Builder, raggruppata per categoria"><figcaption><p>La libreria <strong>Add Card</strong> — scegli le card API, di condizione e di campo usate da questo pattern da queste categorie.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Panoramica del pattern
 
-Use this pattern when you need to:
-- ✅ Fetch real-time pricing from external systems
-- ✅ Validate supplier information against master database
-- ✅ Look up product details from catalog systems
-- ✅ Get exchange rates from currency services
-- ✅ Verify addresses with geocoding services
-- ✅ Check inventory levels from warehouse systems
-- ✅ Validate tax rates from tax services
+Questo pattern mostra come integrare DocBits con API esterne per recuperare, validare e memorizzare dati da sistemi esterni. È uno dei pattern di workflow più comuni per collegare DocBits a sistemi di pricing, servizi di validazione, sistemi ERP e altre fonti di dati esterne.
 
-**Don't use this pattern when:**
-- ❌ Data is already in DocBits master data (use master data lookup instead)
-- ❌ External system doesn't have an API (use DocOperator Script pattern instead)
-- ❌ Data doesn't change frequently (consider manual import)
+**Cosa fa questo pattern:**
+1. Chiama un'API esterna per recuperare dati
+2. Valida la risposta dell'API
+3. Memorizza i dati della risposta nei campi del documento
+4. Prende decisioni in base ai dati recuperati
+5. Instrada i documenti di conseguenza
 
 ---
 
-## Complete Workflow Example
+## Quando usare questo pattern
 
-### Scenario: Validate Invoice Price Against Current Pricing API
+Usa questo pattern quando devi:
+- ✅ Recuperare prezzi in tempo reale da sistemi esterni
+- ✅ Validare le informazioni dei fornitori rispetto a un database master
+- ✅ Cercare i dettagli dei prodotti dai sistemi di catalogo
+- ✅ Ottenere i tassi di cambio dai servizi valutari
+- ✅ Verificare gli indirizzi con servizi di geocodifica
+- ✅ Controllare i livelli di inventario dai sistemi di magazzino
+- ✅ Validare le aliquote fiscali dai servizi fiscali
 
-**Business Requirement:**
-- Supplier sends invoice
-- Invoice shows unit price of €52.00
-- We need to verify this matches current supplier pricing
-- If price varies more than 5%, escalate for review
-
-**Workflow Cards Used:**
-1. CALL_API - Fetch current price from supplier API
-2. CONDITION_HTTPS_REQUEST_STATUS - Check if API call succeeded
-3. ACTION_SET_FIELD_TO_TEXT - Store API price in document field
-4. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Compare invoice price vs API price
-5. ACTION_ASSIGN_TO_USER - Route based on comparison result
-6. tasks_create - Create review task if needed
+**Non usare questo pattern quando:**
+- ❌ I dati sono già nei dati master di DocBits (usa invece il lookup dei dati master)
+- ❌ Il sistema esterno non ha un'API (usa invece il pattern DocOperator Script)
+- ❌ I dati non cambiano frequentemente (considera l'importazione manuale)
 
 ---
 
-## Step-by-Step Implementation
+## Esempio completo di workflow
 
-### Step 1: Call External API
+### Scenario: Validare il prezzo della fattura rispetto a un'API di pricing corrente
 
-**Card:** CALL_API or ACTION_CALL_EXTERNAL_API
+**Requisito aziendale:**
+- Il fornitore invia una fattura
+- La fattura mostra un prezzo unitario di €52,00
+- Dobbiamo verificare che corrisponda al prezzo corrente del fornitore
+- Se il prezzo varia di oltre il 5%, inoltra per la revisione
 
-**Configuration:**
+**Card di workflow utilizzate:**
+1. CALL_API - Recupera il prezzo corrente dall'API del fornitore
+2. CONDITION_HTTPS_REQUEST_STATUS - Verifica se la chiamata API è andata a buon fine
+3. ACTION_SET_FIELD_TO_TEXT - Memorizza il prezzo dell'API in un campo del documento
+4. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Confronta il prezzo della fattura con il prezzo dell'API
+5. ACTION_ASSIGN_TO_USER - Instrada in base al risultato del confronto
+6. tasks_create - Crea un task di revisione se necessario
+
+---
+
+## Implementazione passo passo
+
+### Passo 1: Chiama l'API esterna
+
+**Card:** CALL_API o ACTION_CALL_EXTERNAL_API
+
+**Configurazione:**
 ```json
 {
   "api_endpoint": "https://api.supplier-system.com/v1/pricing",
@@ -88,7 +88,7 @@ Use this pattern when you need to:
 }
 ```
 
-**Expected Response:**
+**Risposta attesa:**
 ```json
 {
   "success": true,
@@ -102,21 +102,21 @@ Use this pattern when you need to:
 }
 ```
 
-**Guide Reference:** [Call API Guide](../then/action/call-api-guide.md)
+**Riferimento alla guida:** [Call API Guide](../then/action/call-api-guide.md)
 
 ---
 
-### Step 2: Validate API Response
+### Passo 2: Valida la risposta dell'API
 
 **Card:** CONDITION_HTTPS_REQUEST_STATUS
 
-**Configuration:**
+**Configurazione:**
 ```
 Operator: IS EQUAL TO
 Status Code: 200
 ```
 
-**Logic:**
+**Logica:**
 ```
 IF API returns 200 (success):
   → Continue to store data
@@ -126,48 +126,48 @@ ELSE:
   → Create manual review task
 ```
 
-**Guide Reference:** [Condition Cards Guide - HTTP Status](../and/condition-cards-complete-guide.md#condition-https-request-status)
+**Riferimento alla guida:** [Condition Cards Guide - HTTP Status](../and/condition-cards-complete-guide.md#condition-https-request-status)
 
 ---
 
-### Step 3: Store API Response in Document Fields
+### Passo 3: Memorizza la risposta dell'API nei campi del documento
 
-**Card:** ACTION_SET_FIELD_TO_TEXT (or equivalent field setter)
+**Card:** ACTION_SET_FIELD_TO_TEXT (o equivalente impostatore di campo)
 
-**Configuration:**
+**Configurazione:**
 
-**Field 1: Current_API_Price**
+**Campo 1: Current_API_Price**
 ```
 Field Name: Current_API_Price
 Field Value: {{API_RESPONSE:data.unit_price}}
 Field Type: Number
 ```
 
-**Field 2: API_Price_Valid_Until**
+**Campo 2: API_Price_Valid_Until**
 ```
 Field Name: API_Price_Valid_Until
 Field Value: {{API_RESPONSE:data.valid_until}}
 Field Type: Date
 ```
 
-**Field 3: API_Discount_Available**
+**Campo 3: API_Discount_Available**
 ```
 Field Name: API_Discount_Available
 Field Value: {{API_RESPONSE:data.discount_applicable}}
 Field Type: Boolean
 ```
 
-**Result:** Data from API is now stored in document fields for later use
+**Risultato:** I dati dell'API sono ora memorizzati nei campi del documento per un uso successivo
 
-**Guide Reference:** [Field Manipulation Guide - API Data Storage](../then/document-field/field-manipulation-guide.md#storing-api-data)
+**Riferimento alla guida:** [Field Manipulation Guide - API Data Storage](../then/document-field/field-manipulation-guide.md#storing-api-data)
 
 ---
 
-### Step 4: Compare Invoice Price with API Price
+### Passo 4: Confronta il prezzo della fattura con il prezzo dell'API
 
 **Card:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
 
-**Configuration:**
+**Configurazione:**
 ```
 Field 1: Invoice_Unit_Price (from OCR extraction)
 Field 2: Current_API_Price (from API response)
@@ -175,7 +175,7 @@ Operator: Calculate variance percentage
 Tolerance: 5%
 ```
 
-**Calculation:**
+**Calcolo:**
 ```
 Variance % = |(Invoice_Price - API_Price)| / API_Price × 100
 
@@ -188,44 +188,44 @@ Example:
   Result: PASS
 ```
 
-**Guide Reference:** [Condition Cards Guide - Field Comparison](../and/condition-cards-complete-guide.md#field-comparison)
+**Riferimento alla guida:** [Condition Cards Guide - Field Comparison](../and/condition-cards-complete-guide.md#field-comparison)
 
 ---
 
-### Step 5: Route Based on Validation Result
+### Passo 5: Instrada in base al risultato della validazione
 
-**Scenario A: Price Within Tolerance (Pass)**
+**Scenario A: Prezzo entro la tolleranza (Pass)**
 
-**Cards:**
+**Card:**
 - ACTION_SET_FIELD_TO_TEXT
-  - Set field "Price_Validation_Status" = "PASS"
-  - Set field "Price_Variance_Percent" = "4%"
+  - Imposta il campo "Price_Validation_Status" = "PASS"
+  - Imposta il campo "Price_Variance_Percent" = "4%"
 - ACTION_APPROVE_DOCUMENT
-  - Auto-approve document
+  - Approva automaticamente il documento
 
-**Scenario B: Price Outside Tolerance (Fail)**
+**Scenario B: Prezzo oltre la tolleranza (Fail)**
 
-**Cards:**
+**Card:**
 - ACTION_SET_FIELD_TO_TEXT
-  - Set field "Price_Validation_Status" = "FAIL"
-  - Set field "Price_Variance_Percent" = "12%" (example)
+  - Imposta il campo "Price_Validation_Status" = "FAIL"
+  - Imposta il campo "Price_Variance_Percent" = "12%" (esempio)
 - tasks_create
-  - Task Title: "Review Price Variance - {{DOCUMENT_NUMBER}}"
-  - Task Description: "Invoice price (€{{Invoice_Unit_Price}}) exceeds API price (€{{Current_API_Price}}) by {{Price_Variance_Percent}}"
-  - Priority: High
+  - Titolo del task: "Review Price Variance - {{DOCUMENT_NUMBER}}"
+  - Descrizione del task: "Invoice price (€{{Invoice_Unit_Price}}) exceeds API price (€{{Current_API_Price}}) by {{Price_Variance_Percent}}"
+  - Priorità: Alta
 - ACTION_ASSIGN_TO_USER
-  - Assign to: Procurement Manager
+  - Assegna a: Procurement Manager
 - ACTION_SEND_EMAIL_TO_GROUPS
-  - Send notification to Procurement Team
+  - Invia notifica al team Approvvigionamenti
 
-**Guide References:**
+**Riferimenti alle guide:**
 - [Assignment Guide](../then/assignee/assignment-user-guide.md)
 - [Task Assignment Guide](../then/task/task-assignment-guide.md)
 - [Send Email Guide](../then/action/send-email-groups-guide.md)
 
 ---
 
-## Complete Workflow Diagram
+## Diagramma completo del workflow
 
 ```
 DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
@@ -280,9 +280,9 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 
 ---
 
-## Configuration Templates
+## Modelli di configurazione
 
-### Template 1: Simple GET Request (Lookup)
+### Modello 1: Semplice richiesta GET (Lookup)
 
 ```json
 {
@@ -298,11 +298,11 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 }
 ```
 
-**Use:** Simple data lookup by ID
+**Uso:** Semplice lookup di dati per ID
 
 ---
 
-### Template 2: POST Request with Body (Validation)
+### Modello 2: Richiesta POST con corpo (Validazione)
 
 ```json
 {
@@ -322,11 +322,11 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 }
 ```
 
-**Use:** Send document data for validation
+**Uso:** Invia i dati del documento per la validazione
 
 ---
 
-### Template 3: Complex Request with Nested Data
+### Modello 3: Richiesta complessa con dati annidati
 
 ```json
 {
@@ -358,21 +358,21 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 }
 ```
 
-**Use:** Complex document processing with table data
+**Uso:** Elaborazione complessa di documenti con dati tabellari
 
 ---
 
-## Error Handling
+## Gestione degli errori
 
-### Common Errors and Solutions
+### Errori comuni e soluzioni
 
-#### Error 1: Connection Timeout
+#### Errore 1: Timeout della connessione
 
-**Symptoms:**
-- API doesn't respond
-- Workflow stuck waiting
+**Sintomi:**
+- L'API non risponde
+- Il workflow rimane bloccato in attesa
 
-**Solution:**
+**Soluzione:**
 ```
 1. Check API endpoint URL (typo?)
 2. Verify network connectivity
@@ -386,13 +386,13 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Use fallback value (if available)
 ```
 
-#### Error 2: 401 Unauthorized
+#### Errore 2: 401 Unauthorized
 
-**Symptoms:**
-- API returns 401 status
-- Authentication failed
+**Sintomi:**
+- L'API restituisce lo stato 401
+- Autenticazione fallita
 
-**Solution:**
+**Soluzione:**
 ```
 1. Verify API key is correct
 2. Check if API key expired
@@ -406,13 +406,13 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Stop workflow execution
 ```
 
-#### Error 3: Invalid Response Format
+#### Errore 3: Formato di risposta non valido
 
-**Symptoms:**
-- Response received but can't parse
-- Missing expected fields
+**Sintomi:**
+- Risposta ricevuta ma non analizzabile
+- Campi attesi mancanti
 
-**Solution:**
+**Soluzione:**
 ```
 1. Verify API documentation
 2. Check response structure matches expectations
@@ -424,15 +424,15 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Log response for debugging
 ```
 
-**Guide Reference:** [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
+**Riferimento alla guida:** [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
 
 ---
 
-## Advanced Variations
+## Varianti avanzate
 
-### Variation 1: Multi-API Chaining
+### Variante 1: Concatenamento di più API
 
-**Scenario:** Need data from multiple APIs
+**Scenario:** Servono dati da più API
 
 ```
 Step 1: Call Supplier API → Get Supplier Details
@@ -443,9 +443,9 @@ Step 4: Validate & Store all data
 
 ---
 
-### Variation 2: Conditional API Calls
+### Variante 2: Chiamate API condizionali
 
-**Scenario:** Only call API under certain conditions
+**Scenario:** Chiamare l'API solo in determinate condizioni
 
 ```
 IF DOCUMENT_TYPE = "Invoice" AND AMOUNT > 10000:
@@ -457,9 +457,9 @@ ELSE:
 
 ---
 
-### Variation 3: API Response Caching
+### Variante 3: Caching delle risposte API
 
-**Scenario:** Reduce API calls by caching responses
+**Scenario:** Ridurre le chiamate API memorizzando in cache le risposte
 
 ```
 1. Check if "API_Last_Called" date is today
@@ -473,139 +473,139 @@ ELSE:
 
 ---
 
-## Performance Considerations
+## Considerazioni sulle prestazioni
 
-### Best Practices
+### Best practice
 
-✅ **Do:**
-- Cache API responses when possible
-- Use timeout settings (30-60 seconds)
-- Implement retry logic for temporary failures
-- Log API calls for debugging
-- Monitor API usage/costs
-- Test with sample documents first
+✅ **Cosa fare:**
+- Memorizzare in cache le risposte API quando possibile
+- Usare le impostazioni di timeout (30-60 secondi)
+- Implementare la logica di retry per i guasti temporanei
+- Registrare le chiamate API per il debug
+- Monitorare l'utilizzo/i costi delle API
+- Eseguire prima dei test con documenti di esempio
 
-❌ **Don't:**
-- Call APIs synchronously for every document (consider batch processing)
-- Ignore response errors
-- Hardcode credentials in workflow
-- Make unnecessary API calls
-- Forget to handle timeouts
-
----
-
-## Testing Checklist
-
-Before deploying this pattern:
-
-- [ ] Test API call with valid data
-- [ ] Test API call with invalid data
-- [ ] Test timeout scenario (what happens if API is slow?)
-- [ ] Test authentication failure
-- [ ] Test invalid response format
-- [ ] Test field storage (data stored correctly?)
-- [ ] Test comparison logic (correct calculation?)
-- [ ] Test routing (documents go to right place?)
-- [ ] Test error handling (errors handled gracefully?)
-- [ ] Test with high volume (performance acceptable?)
+❌ **Cosa non fare:**
+- Chiamare le API in modo sincrono per ogni documento (considerare l'elaborazione batch)
+- Ignorare gli errori di risposta
+- Codificare in modo fisso le credenziali nel workflow
+- Effettuare chiamate API non necessarie
+- Dimenticare di gestire i timeout
 
 ---
 
-## Real-World Examples
+## Checklist di test
 
-### Example 1: Currency Exchange Rate Lookup
+Prima di distribuire questo pattern:
+
+- [ ] Testa la chiamata API con dati validi
+- [ ] Testa la chiamata API con dati non validi
+- [ ] Testa lo scenario di timeout (cosa succede se l'API è lenta?)
+- [ ] Testa il fallimento dell'autenticazione
+- [ ] Testa il formato di risposta non valido
+- [ ] Testa la memorizzazione dei campi (i dati sono memorizzati correttamente?)
+- [ ] Testa la logica di confronto (calcolo corretto?)
+- [ ] Testa l'instradamento (i documenti vanno al posto giusto?)
+- [ ] Testa la gestione degli errori (gli errori sono gestiti correttamente?)
+- [ ] Testa con volumi elevati (prestazioni accettabili?)
+
+---
+
+## Esempi reali
+
+### Esempio 1: Lookup del tasso di cambio valutario
 
 **API:** https://api.exchangerate-api.com/v4/latest/USD
 
 **Workflow:**
-1. Extract invoice currency: "GBP"
-2. Call exchange rate API
-3. Get GBP→EUR exchange rate
-4. Calculate EUR equivalent
-5. Store in "Amount_EUR" field
-6. Continue processing with EUR amount
+1. Estrai la valuta della fattura: "GBP"
+2. Chiama l'API dei tassi di cambio
+3. Ottieni il tasso di cambio GBP→EUR
+4. Calcola l'equivalente in EUR
+5. Memorizza nel campo "Amount_EUR"
+6. Continua l'elaborazione con l'importo in EUR
 
 ---
 
-### Example 2: Supplier Credit Check
+### Esempio 2: Controllo del credito del fornitore
 
-**API:** Internal credit check service
+**API:** Servizio interno di controllo del credito
 
 **Workflow:**
-1. Extract supplier code
-2. Call credit check API
-3. Get credit status: "APPROVED" or "BLOCKED"
+1. Estrai il codice del fornitore
+2. Chiama l'API di controllo del credito
+3. Ottieni lo stato del credito: "APPROVED" o "BLOCKED"
 4. IF BLOCKED:
-   - Stop processing
-   - Create urgent task
-   - Notify finance team
+   - Interrompi l'elaborazione
+   - Crea un task urgente
+   - Notifica il team finanziario
 5. IF APPROVED:
-   - Continue normal workflow
+   - Continua il workflow normale
 
 ---
 
-### Example 3: Product Master Data Enrichment
+### Esempio 3: Arricchimento dei dati master del prodotto
 
-**API:** Product catalog service
+**API:** Servizio di catalogo prodotti
 
 **Workflow:**
-1. Extract product code from invoice
-2. Call product API
-3. Get: Product name, category, GL account
-4. Store in document fields
-5. Use for auto-accounting
+1. Estrai il codice del prodotto dalla fattura
+2. Chiama l'API del prodotto
+3. Ottieni: nome del prodotto, categoria, conto contabile
+4. Memorizza nei campi del documento
+5. Usa per la contabilizzazione automatica
 
 ---
 
-## Related Patterns
+## Pattern correlati
 
-### This Pattern Works Well With:
+### Questo pattern funziona bene con:
 
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transform API response data
-- **[Decision Logic Pattern](decision-logic-pattern.md)** - Route based on API data
-- **[Task Management Pattern](task-management-pattern.md)** - Create tasks for API errors
-- **[PO Matching Pattern](po-matching-pattern.md)** - Combine API pricing with PO validation
+- **[Data Transformation Pattern](data-transformation-pattern.md)** - Trasforma i dati della risposta API
+- **[Decision Logic Pattern](decision-logic-pattern.md)** - Instrada in base ai dati dell'API
+- **[Task Management Pattern](task-management-pattern.md)** - Crea task per gli errori API
+- **[PO Matching Pattern](po-matching-pattern.md)** - Combina il pricing dell'API con la validazione del PO
 
 ---
 
-## Related Guides
+## Guide correlate
 
-### Prerequisites
-- [Call API Guide](../then/action/call-api-guide.md) - API card documentation
-- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Condition logic
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Field operations
+### Prerequisiti
+- [Call API Guide](../then/action/call-api-guide.md) - Documentazione della card API
+- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Logica delle condizioni
+- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Operazioni sui campi
 
-### Related Cards
+### Card correlate
 - **CALL_API** - [Call API Guide](../then/action/call-api-guide.md)
 - **ACTION_HTTPS_REQUEST** - [HTTPS Request Guide](../then/action/https-request-guide.md)
 - **CONDITION_HTTPS_REQUEST_STATUS** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-https-request-status)
 - **ACTION_SET_FIELD_TO_TEXT** - [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#field-comparison)
 
-### Next Steps
-- Implement error handling: [Error Handling Pattern](error-handling-pattern.md)
-- Add task creation: [Task Management Pattern](task-management-pattern.md)
-- Transform data: [Data Transformation Pattern](data-transformation-pattern.md)
+### Prossimi passi
+- Implementa la gestione degli errori: [Error Handling Pattern](error-handling-pattern.md)
+- Aggiungi la creazione di task: [Task Management Pattern](task-management-pattern.md)
+- Trasforma i dati: [Data Transformation Pattern](data-transformation-pattern.md)
 
 ---
 
-## Support & Resources
+## Supporto e risorse
 
-**Need Help?**
-- Review [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
-- Check [API Response Codes](../then/action/call-api-guide.md#response-scenarios)
-- Test API with Postman first
-- Contact API provider support
+**Hai bisogno di aiuto?**
+- Esamina il [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
+- Consulta i [Codici di risposta dell'API](../then/action/call-api-guide.md#response-scenarios)
+- Testa prima l'API con Postman
+- Contatta il supporto del provider dell'API
 
 **Feedback:**
-- Report pattern issues to: docs@docbits.com
-- Suggest improvements
-- Share your use cases
+- Segnala i problemi del pattern a: docs@docbits.com
+- Suggerisci miglioramenti
+- Condividi i tuoi casi d'uso
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Medium
-**Estimated Time:** 45-60 minutes
-**Success Rate:** High (when API is stable)
+**Versione del pattern:** 1.0
+**Ultimo aggiornamento:** 23 ottobre 2025
+**Difficoltà:** Media
+**Tempo stimato:** 45-60 minuti
+**Tasso di successo:** Alto (quando l'API è stabile)

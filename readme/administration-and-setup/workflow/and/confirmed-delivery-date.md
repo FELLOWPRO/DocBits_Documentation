@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_docbits_image_5.png" alt="DocBits DocBits Afbeelding 5"><figcaption></figcaption></figure>
 
-Purpose: This Docbits card is designed to ensure that the confirmed delivery dates on invoices or shipping documents align with the accepted delivery dates as stipulated in the master data lookup table. It helps manage expectations and adherence to scheduled deliveries within the supply chain.
+Doel: Deze Docbits-kaart is ontworpen om ervoor te zorgen dat de bevestigde leverdata op facturen of verzenddocumenten overeenkomen met de geaccepteerde leverdata zoals vastgelegd in de master-data-opzoektabel. Hij helpt verwachtingen te beheren en de naleving van geplande leveringen binnen de toeleveringsketen te waarborgen.
 
-## Functionality:
+## Functionaliteit:
 
-* Confirmed Delivery Date: This component of the card captures the delivery date as confirmed on the invoice or shipping documentation.
-* Master Data Table Lookup: The card references a master data lookup table specified by the user (identified by the \<Master Data Table> parameter). This table contains the accepted delivery dates for comparison.
-* Operator Value: Users can specify how the confirmed delivery date should compare to the accepted delivery date from the master data table. Available operators include:
+* Confirmed Delivery Date: Dit onderdeel van de kaart legt de leverdatum vast zoals bevestigd op de factuur of verzenddocumentatie.
+* Master Data Table Lookup: De kaart verwijst naar een master-data-opzoektabel die door de gebruiker is opgegeven (geïdentificeerd door de parameter \<Master Data Table>). Deze tabel bevat de geaccepteerde leverdata voor vergelijking.
+* Operatorwaarde: Gebruikers kunnen opgeven hoe de bevestigde leverdatum moet worden vergeleken met de geaccepteerde leverdatum uit de master-data-tabel. Beschikbare operatoren zijn:
 *
-  * Equals (=): Ensures that the confirmed delivery date is the same as the accepted delivery date.
-  * Not Equal (≠): Indicates a discrepancy between the confirmed and accepted delivery dates.
-  * Before (<): Verifies that the confirmed delivery date is earlier than the accepted delivery date.
-  * After (>): Checks if the confirmed delivery date is later than the accepted delivery date.
+  * Equals (=): Zorgt ervoor dat de bevestigde leverdatum hetzelfde is als de geaccepteerde leverdatum.
+  * Not Equal (≠): Geeft een afwijking aan tussen de bevestigde en geaccepteerde leverdata.
+  * Before (<): Verifieert dat de bevestigde leverdatum eerder is dan de geaccepteerde leverdatum.
+  * After (>): Controleert of de bevestigde leverdatum later is dan de geaccepteerde leverdatum.
 
-Usage: This card is invaluable for ERP Managers and financial accountants who need to monitor and ensure compliance with delivery schedules. It is particularly useful in sectors where timely delivery is critical, such as manufacturing, retail, and distribution.
+Gebruik: Deze kaart is van onschatbare waarde voor ERP-managers en financiële boekhouders die de naleving van leverschema's moeten monitoren en waarborgen. Hij is met name nuttig in sectoren waar tijdige levering cruciaal is, zoals productie, retail en distributie.
 
-## Example Scenario:
+## Voorbeeldscenario:
 
-* An invoice lists a confirmed delivery date of June 10th. The master data table, however, shows an accepted delivery date of June 15th. Setting the operator to "Before," the card confirms that the goods are scheduled for early delivery, allowing logistics planning to adjust accordingly.
+* Een factuur vermeldt een bevestigde leverdatum van 10 juni. De master-data-tabel toont echter een geaccepteerde leverdatum van 15 juni. Door de operator op "Before" in te stellen, bevestigt de kaart dat de goederen voor vroege levering zijn ingepland, zodat de logistieke planning dienovereenkomstig kan worden aangepast.
 
-By implementing the "Compare with Purchase Order: Confirmed vs. Accepted Delivery Dates" card, organizations can proactively manage their supply chain, ensuring that deliveries are planned and executed in accordance with agreed-upon timelines, thus enhancing operational efficiency and customer satisfaction.
+Door de kaart "Compare with Purchase Order: Confirmed vs. Accepted Delivery Dates" te implementeren, kunnen organisaties hun toeleveringsketen proactief beheren en ervoor zorgen dat leveringen volgens de afgesproken tijdlijnen worden gepland en uitgevoerd, wat de operationele efficiëntie en klanttevredenheid verbetert.
 
 \
 \\

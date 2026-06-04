@@ -2,43 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to automate actions by comparing the values of two specified document fields. It enables dynamic decision-making based on field data and ensures workflows execute based on comparisons between different document values.
+Deze workflow-kaart is ontworpen om acties te automatiseren door de waarden van twee opgegeven documentvelden te vergelijken. Hij maakt dynamische besluitvorming op basis van veldgegevens mogelijk en zorgt ervoor dat workflows worden uitgevoerd op basis van vergelijkingen tussen verschillende documentwaarden.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name (1)**
-   * **Description:** Specifies the first document field to be compared.
-   * **Detail:** This must match the exact identifier of the first field within the document.
+   * **Beschrijving:** Geeft het eerste te vergelijken documentveld op.
+   * **Detail:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
 2. **Operator**
-   * **Description:** Defines the type of comparison to be performed between the two fields.
-   * **Options:**
-     * **Equals (=):** Checks if the values of the two fields are equal.
-     * **Not Equals (≠):** Ensures the values of the two fields are different.
-     * **Greater Than (>):** Confirms that the value of the first field is greater than the second field.
-     * **Greater or Equals (≥):** Validates that the value of the first field is equal to or greater than the second field.
-     * **Lesser Than (<):** Checks if the value of the first field is less than the second field.
-     * **Less or Equals (≤):** Ensures the value of the first field is less than or equal to the second field.
+   * **Beschrijving:** Definieert het type vergelijking dat tussen de twee velden wordt uitgevoerd.
+   * **Opties:**
+     * **Equals (=):** Controleert of de waarden van de twee velden gelijk zijn.
+     * **Not Equals (≠):** Zorgt ervoor dat de waarden van de twee velden verschillend zijn.
+     * **Greater Than (>):** Bevestigt dat de waarde van het eerste veld groter is dan het tweede veld.
+     * **Greater or Equals (≥):** Valideert dat de waarde van het eerste veld gelijk is aan of groter is dan het tweede veld.
+     * **Lesser Than (<):** Controleert of de waarde van het eerste veld kleiner is dan het tweede veld.
+     * **Less or Equals (≤):** Zorgt ervoor dat de waarde van het eerste veld kleiner dan of gelijk is aan het tweede veld.
 3. **Field Name (2)**
-   * **Description:** Specifies the second document field to be compared against the first field.
-   * **Detail:** This should match the exact identifier of the second field within the document.
+   * **Beschrijving:** Geeft het tweede documentveld op dat met het eerste veld wordt vergeleken.
+   * **Detail:** Dit moet exact overeenkomen met de identifier van het tweede veld binnen het document.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-**Condition Evaluation:** The system evaluates whether the values in the two specified fields satisfy the comparison condition defined by the operator.
+**Voorwaarde-evaluatie:** Het systeem evalueert of de waarden in de twee opgegeven velden aan de door de operator gedefinieerde vergelijkingsvoorwaarde voldoen.
 
-**Action Execution:**
+**Actie-uitvoering:**
 
-* **True Condition:**\
-  If the values of the two fields match the comparison condition, the system triggers the associated actions. These actions could include updating records or triggering alerts.
-* **False Condition:**\
-  If the values of the two fields do not match the specified condition, alternative actions or no actions may be executed, depending on the configuration of the workflows.
+* **True-voorwaarde:**\
+  Als de waarden van de twee velden overeenkomen met de vergelijkingsvoorwaarde, triggert het systeem de bijbehorende acties. Deze acties kunnen het bijwerken van records of het triggeren van waarschuwingen omvatten.
+* **False-voorwaarde:**\
+  Als de waarden van de twee velden niet overeenkomen met de opgegeven voorwaarde, kunnen alternatieve acties of geen acties worden uitgevoerd, afhankelijk van de configuratie van de workflows.
 
-## **Setup and Configuration:**&#x20;
+## **Opzet en configuratie:**&#x20;
 
-* Users configure the card by selecting the two fields to be compared from a list of available fields in the system. The operator is selected from a dropdown list of available comparison options.
+* Gebruikers configureren de kaart door de twee te vergelijken velden uit een lijst van beschikbare velden in het systeem te selecteren. De operator wordt geselecteerd uit een dropdownlijst van beschikbare vergelijkingsopties.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The "Compare Two Fields" workflow card is an essential tool for comparing data between fields within documents. By automating actions based on field comparisons, this card helps optimize decision-making, supports data validation, and enhances workflow automation.
+De workflow-kaart "Compare Two Fields" is een essentieel hulpmiddel voor het vergelijken van gegevens tussen velden binnen documenten. Door acties te automatiseren op basis van veldvergelijkingen helpt deze kaart de besluitvorming te optimaliseren, ondersteunt hij gegevensvalidatie en verbetert hij de workflow-automatisering.

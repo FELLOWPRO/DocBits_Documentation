@@ -2,44 +2,44 @@
 
 <figure><img src="../../../../.gitbook/assets/image (13) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to evaluate whether a specified country, located in a designated field, is part of a particular trade or political area (European Union, Schengen Area, or NAFTA). Based on this evaluation, the workflow can continue with a true or false condition, enabling further actions within the system. It is particularly useful for automating region-specific business rules, ensuring compliance, or triggering specific workflows based on geographical affiliations.
+Deze workflow-kaart is ontworpen om te evalueren of een opgegeven land, dat zich in een aangewezen veld bevindt, deel uitmaakt van een bepaald handels- of politiek gebied (Europese Unie, Schengengebied of NAFTA). Op basis van deze evaluatie kan de workflow doorgaan met een true- of false-voorwaarde, waardoor verdere acties binnen het systeem mogelijk zijn. Hij is met name nuttig voor het automatiseren van regiospecifieke bedrijfsregels, het waarborgen van naleving of het triggeren van specifieke workflows op basis van geografische affiliaties.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field where the country name or code is stored.
-   * **Detail:** This should match the exact field identifier of the country data within the document.&#x20;
+   * **Beschrijving:** Geeft het documentveld op waar de landnaam of -code is opgeslagen.
+   * **Detail:** Dit moet exact overeenkomen met de identifier van het veld met de landgegevens binnen het document.&#x20;
 2. **Operator**
-   * **Description:** Specifies whether the country in the selected field should match or not match the selected region or agreement.
-   * **Options:**
-     * **Is:** The country must be part of the selected agreement (EU, Schengen, or NAFTA) for the condition to be true.
-     * **Is Not:** The country must not be part of the selected agreement for the condition to be true.
+   * **Beschrijving:** Geeft op of het land in het geselecteerde veld wel of niet moet overeenkomen met de geselecteerde regio of overeenkomst.
+   * **Opties:**
+     * **Is:** Het land moet deel uitmaken van de geselecteerde overeenkomst (EU, Schengen of NAFTA) om de voorwaarde true te maken.
+     * **Is Not:** Het land mag geen deel uitmaken van de geselecteerde overeenkomst om de voorwaarde true te maken.
 3. **Country Comparison**
-   * **Description:** Defines whether the country in the field is checked against a specific political or trade agreement.
-   * **Options:**
-     * **European Union:** The card checks if the country is a member of the European Union.
-     * **Schengen Area:** The card checks if the country is part of the Schengen Area.
-     * **NAFTA:** The card checks if the country is a member of the NAFTA agreement.
+   * **Beschrijving:** Definieert of het land in het veld wordt gecontroleerd ten opzichte van een specifieke politieke of handelsovereenkomst.
+   * **Opties:**
+     * **European Union:** De kaart controleert of het land lid is van de Europese Unie.
+     * **Schengen Area:** De kaart controleert of het land deel uitmaakt van het Schengengebied.
+     * **NAFTA:** De kaart controleert of het land lid is van de NAFTA-overeenkomst.
 4. **Boolean**
-   * **Description:** Defines the result of the comparison. If the country meets the condition, the workflow continues with the specified Boolean value.
-   * **Options:**
-     * **True:** The workflow continues if the condition matches.
-     * **False:** The workflow continues if the condition does not match.
+   * **Beschrijving:** Definieert het resultaat van de vergelijking. Als het land aan de voorwaarde voldoet, gaat de workflow verder met de opgegeven Boolean-waarde.
+   * **Opties:**
+     * **True:** De workflow gaat verder als de voorwaarde overeenkomt.
+     * **False:** De workflow gaat verder als de voorwaarde niet overeenkomt.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**
-  * The system evaluates whether the country specified in the field is part of the chosen region or agreement (EU, Schengen Area, or NAFTA) based on the operator selected. This evaluation checks the country name or code against a predefined list of countries that belong to each respective group.
-* **Action Execution:**
-  * **True Condition:** If the country in the field matches the selected region (as per the operator), the workflow continues with the specified true condition. This can trigger further actions, such as routing documents, applying special processing rules, or enabling region-specific features.
-  * **False Condition:** If the country does not match the selected region (as per the operator), the workflow continues with the specified false condition, allowing for the execution of alternative actions or terminating the workflow based on the system setup.
+* **Voorwaarde-evaluatie:**
+  * Het systeem evalueert of het in het veld opgegeven land deel uitmaakt van de gekozen regio of overeenkomst (EU, Schengengebied of NAFTA) op basis van de geselecteerde operator. Bij deze evaluatie wordt de landnaam of -code vergeleken met een vooraf gedefinieerde lijst van landen die tot elke respectieve groep behoren.
+* **Actie-uitvoering:**
+  * **True-voorwaarde:** Als het land in het veld overeenkomt met de geselecteerde regio (volgens de operator), gaat de workflow verder met de opgegeven true-voorwaarde. Dit kan verdere acties triggeren, zoals het omleiden van documenten, het toepassen van speciale verwerkingsregels of het inschakelen van regiospecifieke functies.
+  * **False-voorwaarde:** Als het land niet overeenkomt met de geselecteerde regio (volgens de operator), gaat de workflow verder met de opgegeven false-voorwaarde, waardoor alternatieve acties kunnen worden uitgevoerd of de workflow kan worden beëindigd, afhankelijk van de systeemopzet.
 
-## **Setup and Configuration:**&#x20;
+## **Opzet en configuratie:**&#x20;
 
-* Users configure the card by selecting the document field containing the country and specifying the region (European Union, Schengen Area, or NAFTA). The operator is then chosen from a dropdown list to define whether the country must be part of or not part of the selected region. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
+* Gebruikers configureren de kaart door het documentveld met het land te selecteren en de regio (Europese Unie, Schengengebied of NAFTA) op te geven. De operator wordt vervolgens uit een dropdownlijst gekozen om te definiëren of het land wel of niet deel moet uitmaken van de geselecteerde regio. Ten slotte stellen gebruikers de doorgaan-voorwaarde (true of false) in, die de volgende stap in de workflow bepaalt.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The "Country in Field Comparison" workflow card is an essential tool for automating processes that depend on geographical rules, such as compliance with trade agreements or political affiliations. By comparing country data with specific regions like the European Union, Schengen Area, or NAFTA, this card ensures that the system applies the right processing logic, improving efficiency and ensuring accurate workflow execution based on geographical conditions.
+De workflow-kaart "Country in Field Comparison" is een essentieel hulpmiddel voor het automatiseren van processen die afhankelijk zijn van geografische regels, zoals naleving van handelsovereenkomsten of politieke affiliaties. Door landgegevens te vergelijken met specifieke regio's zoals de Europese Unie, het Schengengebied of NAFTA, zorgt deze kaart ervoor dat het systeem de juiste verwerkingslogica toepast, wat de efficiëntie verbetert en zorgt voor een nauwkeurige workflow-uitvoering op basis van geografische voorwaarden.

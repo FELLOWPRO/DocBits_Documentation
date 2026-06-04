@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to automate actions based on the presence or absence of specific text within a specified document field. It ensures workflows can adapt dynamically to the content of documents, supporting efficient processing and accurate decision-making.
+Deze workflow-kaart is ontworpen om acties te automatiseren op basis van de aanwezigheid of afwezigheid van specifieke tekst binnen een opgegeven documentveld. Hij zorgt ervoor dat workflows zich dynamisch kunnen aanpassen aan de inhoud van documenten, wat efficiënte verwerking en nauwkeurige besluitvorming ondersteunt.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Text**
-   * **Description:** Specifies the text string to be checked within the field.
-   * **Detail:** This can be a word, phrase, or sequence of characters relevant to the workflow.
+   * **Beschrijving:** Geeft de tekenreeks op die binnen het veld wordt gecontroleerd.
+   * **Detail:** Dit kan een woord, zin of reeks tekens zijn die relevant is voor de workflow.
 2. **Operator**
-   * **Description:** Defines the condition for text presence in the field.
-   * **Options:**
-     * **Is:** Triggers the workflow if the specified text is present in the field.
-     * **Is Not:** Triggers the workflow if the specified text is not present in the field.
+   * **Beschrijving:** Definieert de voorwaarde voor de aanwezigheid van tekst in het veld.
+   * **Opties:**
+     * **Is:** Triggert de workflow als de opgegeven tekst in het veld aanwezig is.
+     * **Is Not:** Triggert de workflow als de opgegeven tekst niet in het veld aanwezig is.
 3. **Field Name**
-   * **Description:** Specifies the name of the document field to be evaluated.
-   * **Detail:** This must match the exact identifier of the field within the document.
+   * **Beschrijving:** Geeft de naam op van het te evalueren documentveld.
+   * **Detail:** Dit moet exact overeenkomen met de identifier van het veld binnen het document.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-1. **Condition Evaluation:** The system checks whether the specified text exists in the field, based on the selected operator (Is or Is Not).
-2. **Action Execution:**
-   * **True Condition:**\
-     If the text's presence in the field matches the specified condition, the system initiates the associated actions. These could include triggering alerts, progressing workflows, or updating records.
-   * **False Condition:**\
-     If the text's presence in the field does not match the condition, alternative actions or no actions may be taken, depending on the workflow configuration.
+1. **Voorwaarde-evaluatie:** Het systeem controleert of de opgegeven tekst in het veld bestaat, op basis van de geselecteerde operator (Is of Is Not).
+2. **Actie-uitvoering:**
+   * **True-voorwaarde:**\
+     Als de aanwezigheid van de tekst in het veld overeenkomt met de opgegeven voorwaarde, start het systeem de bijbehorende acties. Deze kunnen het triggeren van waarschuwingen, het voortzetten van workflows of het bijwerken van records omvatten.
+   * **False-voorwaarde:**\
+     Als de aanwezigheid van de tekst in het veld niet overeenkomt met de voorwaarde, kunnen alternatieve acties of geen acties worden uitgevoerd, afhankelijk van de workflow-configuratie.
 
-## **Setup and Configuration:**&#x20;
+## **Opzet en configuratie:**&#x20;
 
-* The user inputs the text to be checked. They then select the field name of the relevant document.
+* De gebruiker voert de te controleren tekst in. Vervolgens selecteert hij de veldnaam van het relevante document.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The "Text Presence in Field" workflow card is a simple yet powerful tool for document content analysis. By automating actions based on text detection, this card supports more intelligent workflows, improves document handling accuracy, and reduces manual effort.
+De workflow-kaart "Text Presence in Field" is een eenvoudig maar krachtig hulpmiddel voor het analyseren van documentinhoud. Door acties te automatiseren op basis van tekstdetectie ondersteunt deze kaart intelligentere workflows, verbetert hij de nauwkeurigheid van documentafhandeling en vermindert hij handmatige inspanning.

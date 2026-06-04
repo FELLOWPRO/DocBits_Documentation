@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card checks if a specified date/time value falls within a defined range. It enables workflows to proceed or halt based on whether the condition is met, making it suitable for time-sensitive operations or scheduling workflows.
+Deze DocBits-kaart controleert of een opgegeven datum-/tijdwaarde binnen een gedefinieerd bereik valt. Hij maakt het mogelijk dat workflows doorgaan of stoppen op basis van de vraag of aan de voorwaarde wordt voldaan, waardoor hij geschikt is voor tijdgevoelige bewerkingen of planningsworkflows.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Date/Time Validation:** This card evaluates whether a given date/time is within a specified range using the following conditions:
-  * **Is:** Checks if the date/time is within the defined start and end range (inclusive).
-  * **Is Not:** Ensures the date/time falls outside the defined range.
+* **Datum-/tijdvalidatie:** Deze kaart evalueert of een bepaalde datum/tijd binnen een opgegeven bereik valt met behulp van de volgende voorwaarden:
+  * **Is:** Controleert of de datum/tijd binnen het gedefinieerde start- en eindbereik valt (inclusief).
+  * **Is Not:** Zorgt ervoor dat de datum/tijd buiten het gedefinieerde bereik valt.
 
-**Date/Time Range:** Users specify the start and end date/time values to define the range for comparison.
+**Datum-/tijdbereik:** Gebruikers geven de start- en einddatum-/tijdwaarden op om het bereik voor vergelijking te definiëren.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is ideal for scheduling, compliance checks, or validating time-based conditions in workflows. For example, it can be used to ensure tasks are executed only during predefined timeframes or verify deadlines.
+Deze kaart is ideaal voor planning, nalevingscontroles of het valideren van tijdgebaseerde voorwaarden in workflows. Hij kan bijvoorbeeld worden gebruikt om ervoor te zorgen dat taken alleen tijdens vooraf gedefinieerde tijdvakken worden uitgevoerd of om deadlines te verifiëren.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user configures the card to check if the **submission date** of an invoice **is between** **"2024-11-01"** and **"2024-11-30"**. If the submission date falls within this range, the workflow proceeds to payment processing. If not, the workflow triggers a notification for further review.
+* Een gebruiker configureert de kaart om te controleren of de **indieningsdatum** van een factuur **ligt tussen** **"2024-11-01"** en **"2024-11-30"**. Als de indieningsdatum binnen dit bereik valt, gaat de workflow verder naar de betalingsverwerking. Zo niet, dan triggert de workflow een melding voor verdere beoordeling.
 
-By using the "Date/Time Range Validation" card, organizations can ensure accurate scheduling, enhance compliance, and streamline workflows by adhering to predefined time constraints.
+Door de kaart "Date/Time Range Validation" te gebruiken, kunnen organisaties nauwkeurige planning waarborgen, de naleving verbeteren en workflows stroomlijnen door zich te houden aan vooraf gedefinieerde tijdsbeperkingen.

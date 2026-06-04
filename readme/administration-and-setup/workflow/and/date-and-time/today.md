@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card compares today's date to a specified date, allowing workflows to execute based on the relationship between the current date and the provided date. It is particularly useful for time-based automation, deadline management, or triggering scheduled tasks.
+Deze DocBits-kaart vergelijkt de datum van vandaag met een opgegeven datum, waardoor workflows kunnen worden uitgevoerd op basis van de relatie tussen de huidige datum en de opgegeven datum. Hij is met name nuttig voor tijdgebaseerde automatisering, deadlinebeheer of het triggeren van geplande taken.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Date Comparison:** This card evaluates today's date against a specified date using the following conditions:
-  * **Equals (=):** Checks if today's date matches the specified date.
-  * **Not Equals (≠):** Ensures today's date is different from the specified date.
-  * **Greater Than (>):** Confirms that today's date is after the specified date.
-  * **Greater or Equals (≥):** Ensures today's date is on or after the specified date.
-  * **Lesser Than (<):** Checks if today's date is before the specified date.
-  * **Less or Equals (≤):** Ensures today's date is on or before the specified date.
-* **Date Input:** Users provide the date to compare against today's date.
+* **Datumvergelijking:** Deze kaart evalueert de datum van vandaag ten opzichte van een opgegeven datum met behulp van de volgende voorwaarden:
+  * **Equals (=):** Controleert of de datum van vandaag overeenkomt met de opgegeven datum.
+  * **Not Equals (≠):** Zorgt ervoor dat de datum van vandaag verschilt van de opgegeven datum.
+  * **Greater Than (>):** Bevestigt dat de datum van vandaag na de opgegeven datum ligt.
+  * **Greater or Equals (≥):** Zorgt ervoor dat de datum van vandaag op of na de opgegeven datum ligt.
+  * **Lesser Than (<):** Controleert of de datum van vandaag vóór de opgegeven datum ligt.
+  * **Less or Equals (≤):** Zorgt ervoor dat de datum van vandaag op of vóór de opgegeven datum ligt.
+* **Datuminvoer:** Gebruikers geven de datum op om met de datum van vandaag te vergelijken.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is ideal for workflows involving deadlines, reminders, or time-sensitive conditions, ensuring actions are taken or restricted based on the current date.
+Deze kaart is ideaal voor workflows met deadlines, herinneringen of tijdgevoelige voorwaarden, en zorgt ervoor dat acties worden uitgevoerd of beperkt op basis van de huidige datum.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user configures the card to check if **today is greater than (>) "2024-11-15"**. If the condition is met, the workflow triggers a follow-up notification for overdue tasks. If not, the workflow continues without interruption.
+* Een gebruiker configureert de kaart om te controleren of **vandaag groter is dan (>) "2024-11-15"**. Als aan de voorwaarde wordt voldaan, triggert de workflow een vervolgmelding voor achterstallige taken. Zo niet, dan gaat de workflow zonder onderbreking verder.
 
-By using the "Today's Date Validation" card, organizations can automate time-based processes, meet deadlines efficiently, and maintain workflow accuracy.
+Door de kaart "Today's Date Validation" te gebruiken, kunnen organisaties tijdgebaseerde processen automatiseren, deadlines efficiënt halen en de workflow-nauwkeurigheid behouden.

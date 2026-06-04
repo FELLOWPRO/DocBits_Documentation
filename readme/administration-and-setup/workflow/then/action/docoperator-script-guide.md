@@ -1,72 +1,72 @@
-# Run DocOperator Prompt (Automation Script)
+# Pokreni DocOperator Prompt (Automatizacioni skript)
 
 ---
 
-Add this card to the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+Dodajte ovu karticu u grupu **Then** u Workflow Builder-u — akcije koje se pokreću kada se When/And uslovi poklope:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>The <strong>Run DocOperator Prompt</strong> card is added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Kartica <strong>Run DocOperator Prompt</strong> se dodaje u grupu <strong>Then</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Current Version:** v3 (Latest & Recommended)
-**Status:** ✅ Active
+**Trenutna verzija:** v3 (Najnovija i preporučena)
+**Status:** ✅ Aktivna
 
-**Version History:**
-- v2 → Original DocOperator implementation
-- **v3 → CURRENT** (added execution control parameter)
-- v4 → Deprecated (features reverted)
+**Istorija verzija:**
+- v2 → Originalna DocOperator implementacija
+- **v3 → TRENUTNA** (dodat parametar kontrole izvršavanja)
+- v4 → Zastarela (funkcije vraćene unazad)
 
-**What Changed:** v3 added optional "Execute the prompt" parameter for more control. v4 attempted to revert this but was deprecated.
+**Šta se promenilo:** v3 je dodala opcioni parametar „Execute the prompt" za veću kontrolu. v4 je pokušala da ovo vrati unazad ali je zastarela.
 
-📖 [Version History & Changes](../../../changelog/release.md#3-action_run_docoperator_script--) | [Complete Card Database](../../../../DocFlow/docs/card_version.md#action_run_docoperator_script)
-
----
-
-## Purpose
-This card runs an automated browser action or script using DocOperator. Think of it as a robot that can interact with websites or systems exactly like a human would - clicking buttons, filling forms, extracting data, etc.
-
-**Real-world example:** Your company uses a web-based purchasing system. This card can automatically log in, search for a product, check availability, and get the current price - all without anyone doing it manually.
+📖 [Istorija verzija i promene](../../../changelog/release.md#3-action_run_docoperator_script--) | [Kompletna baza podataka kartica](../../../../DocFlow/docs/card_version.md#action_run_docoperator_script)
 
 ---
 
-## When to Use This Card
+## Svrha
+Ova kartica pokreće automatizovanu akciju pretraživača ili skript koristeći DocOperator. Zamislite to kao robota koji može da interaguje sa veb-sajtovima ili sistemima tačno kao što bi to čovek radio — klikajući dugmad, popunjavajući formulare, izvlačeći podatke, itd.
 
-Use this card when you need to:
-- Automate tasks on websites that don't have APIs
-- Extract data from web pages
-- Fill forms automatically
-- Log into systems and retrieve information
-- Automate repetitive manual tasks
-- Interact with legacy systems that aren't integrated
-
-**Common scenarios:**
-- Log into supplier websites and get real-time inventory
-- Automatically fill out forms on external systems
-- Extract data from web pages that don't offer APIs
-- Check delivery status on courier websites
-- Get pricing from systems without API access
+**Primer iz stvarnog sveta:** Vaša kompanija koristi veb-bazirani sistem nabavke. Ova kartica može automatski da se prijavi, pretraži proizvod, proveri dostupnost i dobije trenutnu cenu — sve bez ikoga da to radi ručno.
 
 ---
 
-## How It Works
+## Kada koristiti ovu karticu
 
-1. **Card Triggered**: Workflow reaches this card and conditions are met
-2. **Script Starts**: DocOperator bot starts running your automation script
-3. **Bot Actions**: The bot performs actions like clicking, typing, scrolling, extracting
-4. **Data Extraction**: Bot collects information from web pages
-5. **Return Data**: Data comes back to DocFlow for use in next cards
-6. **Timeout Handling**: If script takes too long, it stops and returns what it has
+Koristite ovu karticu kada treba da:
+- Automatizujete zadatke na veb-sajtovima koji nemaju API-je
+- Izvučete podatke sa veb-stranica
+- Automatski popunite formulare
+- Prijavite se u sisteme i preuzmete informacije
+- Automatizujete ponavljajuće ručne zadatke
+- Interagujete sa nasleđenim sistemima koji nisu integrisani
+
+**Uobičajeni scenariji:**
+- Prijavljivanje na veb-sajtove dobavljača i dobijanje zaliha u realnom vremenu
+- Automatsko popunjavanje formulara na eksternim sistemima
+- Izvlačenje podataka sa veb-stranica koje ne nude API-je
+- Provera statusa isporuke na veb-sajtovima kurira
+- Dobijanje cena iz sistema bez API pristupa
 
 ---
 
-## Parameters Explained
+## Kako funkcioniše
 
-### DocOperator Prompt/Script
-The automation script that tells DocOperator exactly what to do
+1. **Kartica okinuta**: Tok rada stiže do ove kartice i uslovi su ispunjeni
+2. **Skript počinje**: DocOperator bot počinje da pokreće vaš automatizacioni skript
+3. **Akcije bota**: Bot izvodi akcije kao što su klikanje, kucanje, skrolovanje, izvlačenje
+4. **Izvlačenje podataka**: Bot prikuplja informacije sa veb-stranica
+5. **Vraćanje podataka**: Podaci se vraćaju u DocFlow za upotrebu u sledećim karticama
+6. **Rukovanje istekom vremena**: Ako skript predugo traje, zaustavlja se i vraća ono što ima
 
-**Example (Plain English):**
+---
+
+## Objašnjenje parametara
+
+### DocOperator Prompt/Skript
+Automatizacioni skript koji govori DocOperator-u tačno šta da radi
+
+**Primer (Običan jezik):**
 ```
 1. Go to https://supplier.com/login
 2. Enter username: myuser
@@ -77,46 +77,46 @@ The automation script that tells DocOperator exactly what to do
 7. Return the price
 ```
 
-### Variables
-Data you want to pass INTO the script
+### Promenljive
+Podaci koje želite da prosledite U skript
 
-**Example:**
+**Primer:**
 ```
 product_id: "ABC123"
 supplier_code: "SUPP-001"
 ```
 
-These variables can be used in the script like:
+Ove promenljive mogu se koristiti u skriptu ovako:
 ```
 Search for product "{product_id}"
 Find supplier "{supplier_code}"
 ```
 
-### Maximum Steps
-How many actions the bot is allowed to perform
+### Maksimalni broj koraka
+Koliko akcija je botu dozvoljeno da izvede
 
-**Typical values:**
-- Simple task (like getting one price): 10-20 steps
-- Medium complexity (fill form + extract): 20-50 steps
-- Complex workflow (login + search + validate): 50-100 steps
+**Tipične vrednosti:**
+- Jednostavan zadatak (kao dobijanje jedne cene): 10-20 koraka
+- Srednja složenost (popunjavanje formulara + izvlačenje): 20-50 koraka
+- Složen tok rada (prijava + pretraga + validacija): 50-100 koraka
 
-**Why it matters:** Prevents infinite loops and very long running scripts
+**Zašto je važno:** Sprečava beskonačne petlje i veoma dugotrajne skripte
 
-### Maximum Retries
-If the bot fails an action, how many times should it try again?
+### Maksimalni broj ponovnih pokušaja
+Ako bot ne uspe akciju, koliko puta treba ponovo da pokuša?
 
-**Examples:**
-- 1: Try once, if it fails move on
-- 3: Try 3 times before giving up
-- 5: Very persistent - try 5 times
+**Primeri:**
+- 1: Pokušaj jednom, ako ne uspe nastavi dalje
+- 3: Pokušaj 3 puta pre odustajanja
+- 5: Veoma uporno - pokušaj 5 puta
 
 ---
 
-## Step-by-Step Example
+## Primer korak po korak
 
-### Scenario: Get Supplier Pricing from Website
+### Scenario: Dobijanje cene dobavljača sa veb-sajta
 
-**Script Definition:**
+**Definicija skripta:**
 ```
 Step 1: Open website https://prices.supplier-xyz.com
 Step 2: Click on "Product Lookup"
@@ -128,20 +128,20 @@ Step 7: Extract available quantity
 Step 8: Return both values
 ```
 
-**Variables Passed In:**
+**Prosleđene promenljive:**
 ```
 product_code = "ABC-123"
 supplier_name = "Supplier XYZ"
 ```
 
-**Script Using Variables:**
+**Skript koji koristi promenljive:**
 ```
 Open website https://prices.{supplier_name}.com
 Enter product code: {product_code}
 Extract price and quantity
 ```
 
-**Expected Result:**
+**Očekivani rezultat:**
 ```
 price: 45.50
 quantity_available: 500
@@ -149,44 +149,44 @@ quantity_available: 500
 
 ---
 
-## Types of Actions DocOperator Can Perform
+## Tipovi akcija koje DocOperator može da izvede
 
-### Navigation
-- Go to URL
-- Click links
-- Press buttons
-- Scroll page
+### Navigacija
+- Idi na URL
+- Klikni na veze
+- Pritisni dugmad
+- Skroluj stranicu
 
-### Form Filling
-- Type text into fields
-- Select dropdown options
-- Check/uncheck boxes
-- Click buttons
+### Popunjavanje formulara
+- Kucaj tekst u polja
+- Izaberi opcije padajućeg menija
+- Označi/poništi polja za potvrdu
+- Klikni dugmad
 
-### Data Extraction
-- Read text from page
-- Extract numbers
-- Get table data
-- Copy information
+### Izvlačenje podataka
+- Čitaj tekst sa stranice
+- Izvuci brojeve
+- Dobij podatke tabele
+- Kopiraj informacije
 
-### Waiting
-- Wait for page to load
-- Wait for elements to appear
-- Wait for dynamic content
+### Čekanje
+- Čekaj da se stranica učita
+- Čekaj da se elementi pojave
+- Čekaj dinamički sadržaj
 
-### Conditional Logic
-- If something exists, do this
-- If text matches, then...
-- Count results and act accordingly
+### Uslovna logika
+- Ako nešto postoji, uradi ovo
+- Ako se tekst poklapa, onda...
+- Prebroji rezultate i postupi u skladu sa tim
 
 ---
 
-## Common Use Cases
+## Uobičajeni slučajevi upotrebe
 
-### 1. Get Real-Time Pricing
-**Scenario:** Supplier doesn't have API but website shows prices
+### 1. Dobijanje cena u realnom vremenu
+**Scenario:** Dobavljač nema API ali veb-sajt prikazuje cene
 
-**Script:**
+**Skript:**
 ```
 1. Go to supplier website
 2. Search for product
@@ -195,10 +195,10 @@ quantity_available: 500
 5. Use price to validate invoice
 ```
 
-### 2. Check Inventory Availability
-**Scenario:** Need to know if supplier has stock
+### 2. Provera dostupnosti zaliha
+**Scenario:** Treba da znate da li dobavljač ima zalihe
 
-**Script:**
+**Skript:**
 ```
 1. Log into supplier portal
 2. Search for product
@@ -207,10 +207,10 @@ quantity_available: 500
 5. Return both to DocFlow
 ```
 
-### 3. Automatic Form Submission
-**Scenario:** Need to fill out a form on an external site
+### 3. Automatsko slanje formulara
+**Scenario:** Treba da popunite formular na eksternom sajtu
 
-**Script:**
+**Skript:**
 ```
 1. Navigate to form page
 2. Fill Company Name field
@@ -221,10 +221,10 @@ quantity_available: 500
 7. Capture confirmation message
 ```
 
-### 4. Data Entry Verification
-**Scenario:** Verify data matches on two different systems
+### 4. Verifikacija unosa podataka
+**Scenario:** Verifikujte da se podaci poklapaju na dva različita sistema
 
-**Script:**
+**Skript:**
 ```
 1. Go to System A
 2. Search for Order #123
@@ -238,171 +238,171 @@ quantity_available: 500
 
 ---
 
-## Configuration Steps
+## Koraci konfiguracije
 
-### Step 1: Create the Script
-1. Define what you want to accomplish
-2. Break it into small steps
-3. Write each step clearly
-4. Test manually first (open the website, do it yourself)
-5. Document exactly what you click, where you type, what you extract
+### Korak 1: Kreirajte skript
+1. Definišite šta želite da postignete
+2. Razbijte to na male korake
+3. Jasno napišite svaki korak
+4. Prvo testirajte ručno (otvorite veb-sajt, uradite to sami)
+5. Dokumentujte tačno na šta kliknete, gde kucate, šta izvlačite
 
-### Step 2: Identify Variables
-1. What data will change between documents?
-2. What should be passed into the script?
-3. Define variable names
-4. Specify where variables are used in the script
+### Korak 2: Identifikujte promenljive
+1. Koji podaci će se menjati između dokumenata?
+2. Šta treba proslediti u skript?
+3. Definišite nazive promenljivih
+4. Navedite gde se promenljive koriste u skriptu
 
-### Step 3: Set Parameters
-- **Maximum Steps**: Based on script complexity
-- **Maximum Retries**: How persistent should bot be?
-- **Timeout**: How long should it wait for pages?
+### Korak 3: Postavite parametre
+- **Maksimalni broj koraka**: Na osnovu složenosti skripta
+- **Maksimalni broj ponovnih pokušaja**: Koliko uporan bot treba da bude?
+- **Isticanje vremena**: Koliko dugo treba da čeka stranice?
 
-### Step 4: Test
-1. Test with sample data
-2. Verify bot can access the website
-3. Verify extraction is correct
-4. Check if variables work properly
+### Korak 4: Testirajte
+1. Testirajte sa uzorcima podataka
+2. Verifikujte da bot može da pristupi veb-sajtu
+3. Verifikujte da je izvlačenje ispravno
+4. Proverite da li promenljive ispravno funkcionišu
 
 ---
 
-## Script Writing Tips
+## Saveti za pisanje skripta
 
-### Clear Language
-✅ **Do:**
+### Jasan jezik
+✅ **Radite:**
 ```
 1. Click the "Login" button
 2. Type the username in the login field
 3. Wait 2 seconds for form to process
 ```
 
-❌ **Don't:**
+❌ **Ne radite:**
 ```
 1. Do the login thing
 2. Enter stuff
 3. Wait for it
 ```
 
-### Specific Selectors
-✅ **Do:**
+### Specifični selektori
+✅ **Radite:**
 ```
 Click the button labeled "Submit Order"
 Type in the field with placeholder "Enter Email"
 ```
 
-❌ **Don't:**
+❌ **Ne radite:**
 ```
 Click somewhere
 Type in a field
 ```
 
-### Error Handling
-✅ **Do:**
+### Rukovanje greškama
+✅ **Radite:**
 ```
 1. Try to click "Next" button
 2. If button not found, extract data from current page
 3. Return what we have
 ```
 
-❌ **Don't:**
+❌ **Ne radite:**
 ```
 Click "Next" (assumes it's always there)
 ```
 
 ---
 
-## Troubleshooting
+## Rešavanje problema
 
-### "Script Timed Out"
-**Cause:** Script took too long to complete
+### „Script Timed Out"
+**Uzrok:** Skript je predugo trajao da se završi
 
-**Solutions:**
-- [ ] Reduce the number of actions
-- [ ] Increase "Maximum Steps" value
-- [ ] Optimize the script for faster execution
-- [ ] Simplify what you're trying to extract
+**Rešenja:**
+- [ ] Smanjite broj akcija
+- [ ] Povećajte vrednost „Maximum Steps"
+- [ ] Optimizujte skript za brže izvršavanje
+- [ ] Pojednostavite ono što pokušavate da izvučete
 
-### "Element Not Found"
-**Cause:** DocOperator couldn't find the button/field you specified
+### „Element Not Found"
+**Uzrok:** DocOperator nije mogao da pronađe dugme/polje koje ste naveli
 
-**Solutions:**
-- [ ] Verify button/field name is exactly correct
-- [ ] Check if website layout changed
-- [ ] Add wait time before clicking
-- [ ] Check if button only appears under certain conditions
+**Rešenja:**
+- [ ] Verifikujte da je naziv dugmeta/polja tačno ispravan
+- [ ] Proverite da li se promenio raspored veb-sajta
+- [ ] Dodajte vreme čekanja pre klika
+- [ ] Proverite da li se dugme pojavljuje samo pod određenim uslovima
 
-### "Login Failed"
-**Cause:** Authentication failed
+### „Login Failed"
+**Uzrok:** Autentifikacija nije uspela
 
-**Solutions:**
-- [ ] Verify username/password are correct
-- [ ] Check if password has special characters
-- [ ] Verify account isn't locked
-- [ ] Check if login process changed
+**Rešenja:**
+- [ ] Verifikujte da su korisničko ime/lozinka ispravni
+- [ ] Proverite da li lozinka ima specijalne znakove
+- [ ] Verifikujte da nalog nije zaključan
+- [ ] Proverite da li se promenio proces prijave
 
-### "Data Not Extracted Correctly"
-**Cause:** The script ran but extracted wrong information
+### „Data Not Extracted Correctly"
+**Uzrok:** Skript je radio ali je izvukao pogrešne informacije
 
-**Solutions:**
-- [ ] Verify the correct field was selected
-- [ ] Check if data is in expected location
-- [ ] Test extraction logic manually
-- [ ] Add debugging steps to verify what's on page
+**Rešenja:**
+- [ ] Verifikujte da je izabrano ispravno polje
+- [ ] Proverite da li su podaci na očekivanoj lokaciji
+- [ ] Testirajte logiku izvlačenja ručno
+- [ ] Dodajte korake za otklanjanje grešaka da verifikujete šta je na stranici
 
-### "Script Runs Slowly"
-**Cause:** Too many steps or slow website
+### „Script Runs Slowly"
+**Uzrok:** Previše koraka ili spor veb-sajt
 
-**Solutions:**
-- [ ] Remove unnecessary steps
-- [ ] Optimize wait times
-- [ ] Check internet connection
-- [ ] Consider if API alternative exists
-
----
-
-## Best Practices
-
-✅ **Do:**
-- Test scripts thoroughly before deploying
-- Keep scripts simple and focused
-- Add comments explaining each step
-- Use meaningful variable names
-- Monitor script performance
-- Have fallback for when scripts fail
-
-❌ **Don't:**
-- Create extremely long scripts (>100 steps)
-- Put sensitive passwords in logs
-- Rely on exact coordinates (websites change)
-- Create loops without exit conditions
-- Ignore error messages
+**Rešenja:**
+- [ ] Uklonite nepotrebne korake
+- [ ] Optimizujte vremena čekanja
+- [ ] Proverite internet vezu
+- [ ] Razmotrite da li postoji API alternativa
 
 ---
 
-## Performance Tips
+## Najbolje prakse
 
-- **Remove unused steps** - Every step takes time
-- **Combine similar actions** - Group related clicks
-- **Optimize waits** - Use only necessary delays
-- **Cache data** - Don't extract same data twice
-- **Parallel processing** - Run multiple scripts if possible
+✅ **Radite:**
+- Temeljno testirajte skripte pre postavljanja
+- Održavajte skripte jednostavnim i fokusiranim
+- Dodajte komentare koji objašnjavaju svaki korak
+- Koristite smislene nazive promenljivih
+- Pratite performanse skripta
+- Imajte rezervu za slučaj kada skripte ne uspeju
 
----
-
-## Security Considerations
-
-⚠️ **Important:**
-- Don't store passwords in DocFlow
-- Use secure methods to pass credentials
-- Don't log sensitive data
-- Monitor what's being extracted
-- Ensure bot activity is logged and auditable
+❌ **Ne radite:**
+- Ne kreirajte ekstremno duge skripte (>100 koraka)
+- Ne stavljajte osetljive lozinke u zapise
+- Ne oslanjajte se na tačne koordinate (veb-sajtovi se menjaju)
+- Ne kreirajte petlje bez izlaznih uslova
+- Ne ignorišite poruke o greškama
 
 ---
 
-## Variables Example
+## Saveti za performanse
 
-### Available Variables You Can Use:
+- **Uklonite nekorišćene korake** - Svaki korak oduzima vreme
+- **Kombinujte slične akcije** - Grupišite povezane klikove
+- **Optimizujte čekanja** - Koristite samo neophodna kašnjenja
+- **Keširajte podatke** - Ne izvlačite iste podatke dvaput
+- **Paralelna obrada** - Pokrenite više skripti ako je moguće
+
+---
+
+## Razmatranja bezbednosti
+
+⚠️ **Važno:**
+- Ne čuvajte lozinke u DocFlow-u
+- Koristite bezbedne metode za prosleđivanje akreditiva
+- Ne beležite osetljive podatke
+- Pratite šta se izvlači
+- Obezbedite da je aktivnost bota zabeležena i da se može revidirati
+
+---
+
+## Primer promenljivih
+
+### Dostupne promenljive koje možete koristiti:
 ```
 {invoice_number} - From document field
 {supplier_code} - From document field
@@ -411,7 +411,7 @@ Click "Next" (assumes it's always there)
 {currency} - From document field
 ```
 
-### Script Using Variables:
+### Skript koji koristi promenljive:
 ```
 1. Go to https://supplier.com/api/lookup
 2. Enter supplier code: {supplier_code}
@@ -423,23 +423,22 @@ Click "Next" (assumes it's always there)
 
 ---
 
-## Comparison: When to Use DocOperator vs API
+## Poređenje: Kada koristiti DocOperator vs API
 
-| Situation | Use DocOperator | Use API |
+| Situacija | Koristi DocOperator | Koristi API |
 |-----------|-----------------|---------|
-| Website has API | ❌ No | ✅ Yes |
-| Website is interactive | ✅ Yes | ❌ No |
-| Requires login | ✅ Yes | Depends |
-| Very fast needed | ❌ No | ✅ Yes |
-| Complex workflow | ✅ Yes | ❌ Maybe not |
-| Data changes daily | ✅ Yes | ✅ Yes |
+| Veb-sajt ima API | ❌ Ne | ✅ Da |
+| Veb-sajt je interaktivan | ✅ Da | ❌ Ne |
+| Zahteva prijavu | ✅ Da | Zavisi |
+| Potrebno veoma brzo | ❌ Ne | ✅ Da |
+| Složen tok rada | ✅ Da | ❌ Možda ne |
+| Podaci se menjaju dnevno | ✅ Da | ✅ Da |
 
 ---
 
-## Related Cards
+## Povezane kartice
 
-- **CALL_API** - Use when API is available instead
-- **ACTION_HTTPS_REQUEST** - Simpler requests
-- **ACTION_SET_FIELD_TO_TEXT** - Use extracted data
-- **CONDITION_HTTPS_REQUEST_STATUS** - Check request status
-
+- **CALL_API** - Koristite kada je API dostupan umesto toga
+- **ACTION_HTTPS_REQUEST** - Jednostavniji zahtevi
+- **ACTION_SET_FIELD_TO_TEXT** - Koristite izvučene podatke
+- **CONDITION_HTTPS_REQUEST_STATUS** - Proverite status zahteva

@@ -1,48 +1,48 @@
-# Field & Table Manipulation Cards - Complete Guide
+# Kartice za manipulaciju poljima i tabelama - Kompletan vodič
 
-**Covers:** 9 cards for modifying document fields and tables
+**Pokriva:** 9 kartica za izmenu polja i tabela dokumenta
 
 ---
 
-The field and table cards on this page go in the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+Kartice za polja i tabele na ovoj stranici idu u grupu **Then** u Workflow Builder-u — akcije koje se pokreću kada se When/And uslovi poklope:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>Field and table manipulation cards are added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Kartice za manipulaciju poljima i tabelama se dodaju u grupu <strong>Then</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Multi-Version Cards:** CALC_COLUMNS (v2), CALC_COLUMNS_REGEX (v2), EDIT_COLUMN (v2), AI_CALC_MTZ_ETZ (v2)
+**Kartice sa više verzija:** CALC_COLUMNS (v2), CALC_COLUMNS_REGEX (v2), EDIT_COLUMN (v2), AI_CALC_MTZ_ETZ (v2)
 
-**Version Pattern:** All field manipulation cards follow v1 → v2 pattern
-**Key Change:** v2 adds internationalization (i18n) support with translation keys
+**Obrazac verzija:** Sve kartice za manipulaciju poljima prate obrazac v1 → v2
+**Ključna promena:** v2 dodaje podršku za internacionalizaciju (i18n) sa ključevima za prevod
 
-📖 [Complete Version History](../../../changelog/release.md#-data-manipulation-cards) | [Card Version Database](../../../../DocFlow/docs/card_version.md)
+📖 [Kompletna istorija verzija](../../../changelog/release.md#-data-manipulation-cards) | [Baza podataka verzija kartica](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-# Document Field Manipulation
+# Manipulacija poljima dokumenta
 
-## Card: ACTION_SET_FIELD_TO_TEXT / Set Field to Text Value
+## Kartica: ACTION_SET_FIELD_TO_TEXT / Postavi polje na tekstualnu vrednost
 
-### Purpose
-Automatically fills a document field with specific text
+### Svrha
+Automatski popunjava polje dokumenta određenim tekstom
 
-### When to Use
-- Populate field from decision
-- Set default values
-- Fill in standardized information
-- Update field based on conditions
+### Kada koristiti
+- Popunjavanje polja na osnovu odluke
+- Postavljanje podrazumevanih vrednosti
+- Popunjavanje standardizovanih informacija
+- Ažuriranje polja na osnovu uslova
 
-### How It Works
+### Kako funkcioniše
 ```
 IF Condition is true
     THEN Set Field "Category" to Value "Premium"
 ```
 
-### Example Scenarios
+### Primeri scenarija
 
-**Scenario 1: Set Approval Category**
+**Scenario 1: Postavi kategoriju odobravanja**
 ```
 Condition: Invoice amount > €10,000
     ↓
@@ -51,7 +51,7 @@ Action: Set "Approval_Category" field to "High Value"
 Result: Document now shows "Approval_Category: High Value"
 ```
 
-**Scenario 2: Set Supplier Category**
+**Scenario 2: Postavi kategoriju dobavljača**
 ```
 Condition: Supplier name contains "ABC"
     ↓
@@ -60,7 +60,7 @@ Action: Set "Supplier_Type" field to "Preferred Supplier"
 Result: Document marked as "Preferred Supplier"
 ```
 
-**Scenario 3: Set Processing Notes**
+**Scenario 3: Postavi napomene o obradi**
 ```
 Condition: Document has been rejected
     ↓
@@ -69,50 +69,50 @@ Action: Set "Processing_Notes" to "Requires supplier revision"
 Result: Note appears for next processor
 ```
 
-### Parameters
+### Parametri
 
 **Field Name**
-Which field to update
+Koje polje ažurirati
 ```
 Examples: Category, Type, Status, Comment, Notes
 ```
 
 **Text Value**
-What to put in the field
+Šta staviti u polje
 ```
 Examples: "Approved", "Pending Review", "High Priority"
 ```
 
-### Configuration Steps
-1. Choose the field to fill
-2. Enter the text value
-3. Set conditions (when to fill)
-4. Save
+### Koraci konfiguracije
+1. Izaberite polje za popunjavanje
+2. Unesite tekstualnu vrednost
+3. Postavite uslove (kada popuniti)
+4. Sačuvajte
 
 ---
 
-## Card: ACTION_SET_BOOLEAN_FIELD / Set Checkbox Field
+## Kartica: ACTION_SET_BOOLEAN_FIELD / Postavi polje za potvrdu
 
-### Purpose
-Automatically checks or unchecks a checkbox field
+### Svrha
+Automatski označava ili poništava polje za potvrdu
 
-### When to Use
-- Mark as processed
-- Set approval flags
-- Enable/disable options
-- Mark for export
+### Kada koristiti
+- Označavanje kao obrađeno
+- Postavljanje oznaka odobravanja
+- Omogućavanje/onemogućavanje opcija
+- Označavanje za izvoz
 
-### How It Works
+### Kako funkcioniše
 ```
 IF Condition is true
     THEN Check/Uncheck the "Approved" box
 ```
 
-### True = Checked, False = Unchecked
+### True = Označeno, False = Neoznačeno
 
-**Examples:**
+**Primeri:**
 
-**Example 1: Mark as Verified**
+**Primer 1: Označi kao verifikovano**
 ```
 Condition: PO matches perfectly
     ↓
@@ -121,7 +121,7 @@ Action: Check "Verified" checkbox
 Result: ✅ Verified (checked)
 ```
 
-**Example 2: Flag for Manual Review**
+**Primer 2: Označi za ručni pregled**
 ```
 Condition: Price variance > 10%
     ↓
@@ -130,7 +130,7 @@ Action: Check "Requires_Manual_Review" checkbox
 Result: ✅ Requires_Manual_Review (marked)
 ```
 
-**Example 3: Uncheck Pre-filled Box**
+**Primer 3: Poništi unapred popunjeno polje**
 ```
 Condition: Supplier is blacklisted
     ↓
@@ -139,7 +139,7 @@ Action: Uncheck "Approved_for_Payment" checkbox
 Result: ☐ Approved_for_Payment (unchecked - blocked)
 ```
 
-### Parameters
+### Parametri
 ```
 Checkbox Field: [Choose field]
 Set To: ☑ Checked (✅ True)
@@ -148,18 +148,18 @@ Set To: ☑ Checked (✅ True)
 
 ---
 
-## Card: ACTION_INVERT_BOOLEAN_FIELD / Toggle Checkbox
+## Kartica: ACTION_INVERT_BOOLEAN_FIELD / Prebaci polje za potvrdu
 
-### Purpose
-Flips checkbox state (checked → unchecked, vice versa)
+### Svrha
+Menja stanje polja za potvrdu (označeno → neoznačeno, i obrnuto)
 
-### When to Use
-- Toggle approval status
-- Switch processing mode
-- Reverse previous state
-- Update boolean flags
+### Kada koristiti
+- Prebacivanje statusa odobravanja
+- Promena režima obrade
+- Vraćanje prethodnog stanja
+- Ažuriranje logičkih oznaka
 
-### How It Works
+### Kako funkcioniše
 ```
 Current state: ✅ (Checked)
     ↓
@@ -176,7 +176,7 @@ ACTION_INVERT: Toggle the box
 New state: ✅ (Checked)
 ```
 
-### Example
+### Primer
 ```
 Invoice received with "Priority" checked
     ↓
@@ -187,18 +187,18 @@ Checkbox now unchecked (no longer priority)
 
 ---
 
-## Card: ACTION_COPY_DOCFIELD_TO_DOCFIELD / Copy Field Value
+## Kartica: ACTION_COPY_DOCFIELD_TO_DOCFIELD / Kopiraj vrednost polja
 
-### Purpose
-Copies value from one field to another field
+### Svrha
+Kopira vrednost iz jednog polja u drugo polje
 
-### When to Use
-- Copy supplier info to billing info
-- Duplicate data across fields
-- Standardize data format
-- Create backup of value
+### Kada koristiti
+- Kopiranje informacija o dobavljaču u informacije o naplati
+- Dupliranje podataka kroz polja
+- Standardizacija formata podataka
+- Kreiranje rezervne kopije vrednosti
 
-### How It Works
+### Kako funkcioniše
 ```
 Source Field: "Invoice_Supplier"  Value: "ABC Corp"
     ↓
@@ -209,9 +209,9 @@ Target Field: "Billing_Partner"  Value: "ABC Corp"
 Both fields now have same value
 ```
 
-### Real Examples
+### Stvarni primeri
 
-**Example 1: Copy Delivery Address**
+**Primer 1: Kopiraj adresu isporuke**
 ```
 Source: "Delivery_Address" = "123 Main St, Berlin"
     ↓
@@ -220,7 +220,7 @@ Copy to: "Billing_Address"
 Result: Both fields show "123 Main St, Berlin"
 ```
 
-**Example 2: Copy Supplier Code**
+**Primer 2: Kopiraj kod dobavljača**
 ```
 Source: "Supplier_Code_External" = "SUPP-789"
     ↓
@@ -229,7 +229,7 @@ Copy to: "Supplier_Code_Internal"
 Result: Both codes match, system recognizes supplier
 ```
 
-**Example 3: Copy Amount for Validation**
+**Primer 3: Kopiraj iznos za validaciju**
 ```
 Source: "Invoice_Total" = "€5000"
     ↓
@@ -238,33 +238,33 @@ Copy to: "Amount_to_Validate"
 Result: Validation field has correct amount
 ```
 
-### Parameters
+### Parametri
 ```
 Source Field: [Choose field to copy FROM]
 Target Field: [Choose field to copy TO]
 ```
 
-### Notes
-- Original field unchanged
-- Target field overwritten with source value
-- Good for standardizing data
+### Napomene
+- Originalno polje ostaje nepromenjeno
+- Ciljno polje se prepisuje vrednošću izvora
+- Dobro za standardizaciju podataka
 
 ---
 
-# Table Manipulation
+# Manipulacija tabelama
 
-## Card: EDIT_COLUMN / Edit Table Column
+## Kartica: EDIT_COLUMN / Uredi kolonu tabele
 
-### Purpose
-Changes values in a table column based on conditions
+### Svrha
+Menja vrednosti u koloni tabele na osnovu uslova
 
-### When to Use
-- Fix pricing errors in line items
-- Update quantities
-- Correct item descriptions
-- Standardize values
+### Kada koristiti
+- Ispravljanje grešaka u cenama u stavkama
+- Ažuriranje količina
+- Ispravljanje opisa stavki
+- Standardizacija vrednosti
 
-### How It Works
+### Kako funkcioniše
 ```
 Table Column: "Unit_Price"
 Original Values: [100, 105, 103]
@@ -275,9 +275,9 @@ REPLACE: With new value
 Updated Column: [100, 110, 110] (example)
 ```
 
-### Example: Fix Pricing
+### Primer: Ispravi cene
 
-**Scenario: Prices in wrong currency**
+**Scenario: Cene u pogrešnoj valuti**
 ```
 Table "Line_Items" with column "Price"
 
@@ -290,7 +290,7 @@ Action: Replace with 95 (corrected price)
 Result: [95, 95, 95] (prices corrected)
 ```
 
-### Parameters
+### Parametri
 ```
 Table: [Choose table]
 Column: [Choose column to edit]
@@ -299,26 +299,26 @@ Replace with: [New value]
 Condition: [When to apply]
 ```
 
-### Common Uses
-- Fix unit prices
-- Standardize descriptions
-- Correct quantities
-- Update SKU numbers
+### Uobičajene upotrebe
+- Ispravljanje jediničnih cena
+- Standardizacija opisa
+- Ispravljanje količina
+- Ažuriranje SKU brojeva
 
 ---
 
-## Card: CALC_COLUMNS / Calculate Column Values
+## Kartica: CALC_COLUMNS / Izračunaj vrednosti kolona
 
-### Purpose
-Performs calculation on table columns and stores result
+### Svrha
+Izvodi izračunavanje nad kolonama tabele i čuva rezultat
 
-### When to Use
-- Calculate line totals (Qty × Unit Price)
-- Sum columns
-- Calculate discounts
-- Compute percentages
+### Kada koristiti
+- Izračunavanje ukupnih iznosa stavki (Količina × Jedinična cena)
+- Sabiranje kolona
+- Izračunavanje popusta
+- Računanje procenata
 
-### How It Works
+### Kako funkcioniše
 ```
 Column A (Quantity): 100
 Column B (Unit Price): €50
@@ -328,9 +328,9 @@ CALCULATE: A × B
 Column C (Line Total): €5000
 ```
 
-### Calculation Types
+### Tipovi izračunavanja
 
-**Type 1: Simple Multiplication**
+**Tip 1: Jednostavno množenje**
 ```
 Formula: Qty × Unit Price = Line Total
 
@@ -344,7 +344,7 @@ Config:
   Result Column: Line Total
 ```
 
-**Type 2: Addition**
+**Tip 2: Sabiranje**
 ```
 Formula: Base Price + Shipping + Tax = Total
 
@@ -360,7 +360,7 @@ Config:
   Result Column: Total
 ```
 
-**Type 3: Percentage Calculation**
+**Tip 3: Procentualno izračunavanje**
 ```
 Formula: Amount × (1 + Tax%) = Total with Tax
 
@@ -373,7 +373,7 @@ Config:
   Result Column: Amount_with_Tax
 ```
 
-**Type 4: Subtraction**
+**Tip 4: Oduzimanje**
 ```
 Formula: Original Price - Discount = Final Price
 
@@ -387,9 +387,9 @@ Config:
   Result Column: Final Price
 ```
 
-### Real-World Example
+### Primer iz stvarnog sveta
 
-**Invoice Line Items Calculation:**
+**Izračunavanje stavki fakture:**
 ```
 Table: Invoice_Lines
 
@@ -414,7 +414,7 @@ Shipping: €100.00
 TOTAL: €7835.00
 ```
 
-### Parameters
+### Parametri
 ```
 Table: [Select table]
 Column 1: [First column]
@@ -425,20 +425,20 @@ Result Column: [Where to put answer]
 
 ---
 
-## Card: CALC_COLUMNS_REGEX / Calculate with Regex Pattern
+## Kartica: CALC_COLUMNS_REGEX / Izračunaj sa regex obrascem
 
-### Purpose
-Calculates column values based on pattern matching
+### Svrha
+Izračunava vrednosti kolone na osnovu poklapanja obrasca
 
-### When to Use
-- Extract values from text using patterns
-- Format data based on rules
-- Convert values based on patterns
-- Parse structured text
+### Kada koristiti
+- Izvlačenje vrednosti iz teksta pomoću obrazaca
+- Formatiranje podataka na osnovu pravila
+- Konverzija vrednosti na osnovu obrazaca
+- Parsiranje strukturiranog teksta
 
-### How It Works
+### Kako funkcioniše
 
-**Regex Pattern Matching:**
+**Poklapanje regex obrasca:**
 ```
 Original Value: "ABC-12345-XYZ"
 Pattern: Extract numbers only
@@ -446,9 +446,9 @@ Calculation: Convert to "12345"
 Result: "12345"
 ```
 
-### Example: Extract Supplier Code
+### Primer: Izvuci kod dobavljača
 
-**Scenario: Article numbers contain supplier info**
+**Scenario: Brojevi artikala sadrže informacije o dobavljaču**
 ```
 Table Column: "Article_Code"
 Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
@@ -464,25 +464,25 @@ Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
 
-### Example: Format Phone Numbers
+### Primer: Formatiraj brojeve telefona
 
-**Scenario: Unformatted phone numbers**
+**Scenario: Neformatirani brojevi telefona**
 ```
 Original: "491234567890"
 Pattern: Format as: +49 123 4567 890
 Result: "+49 123 4567 890"
 ```
 
-### Example: Extract Prices from Text
+### Primer: Izvuci cene iz teksta
 
-**Scenario: Prices in text format**
+**Scenario: Cene u tekstualnom formatu**
 ```
 Original: "Price is 99.99 EUR"
 Pattern: Extract number only
 Result: "99.99"
 ```
 
-### Parameters
+### Parametri
 ```
 Table: [Select table]
 Column: [Column to analyze]
@@ -491,7 +491,7 @@ Replacement: [What to replace with]
 Result Column: [Where to store result]
 ```
 
-### Common Regex Patterns
+### Uobičajeni regex obrasci
 ```
 Numbers only: [0-9]+
 Letters only: [a-zA-Z]+
@@ -502,9 +502,9 @@ Date format: \d{4}-\d{2}-\d{2}
 
 ---
 
-# Calculation Examples
+# Primeri izračunavanja
 
-## Example 1: Invoice Total Calculation
+## Primer 1: Izračunavanje ukupnog iznosa fakture
 ```
 Step 1: Calculate line totals
   Each row: Qty × Unit Price
@@ -519,7 +519,7 @@ Step 4: Add shipping
   Final: €6500 + €1235 + €100 = €7835
 ```
 
-## Example 2: Variance Calculation
+## Primer 2: Izračunavanje odstupanja
 ```
 PO Price: €100
 Invoice Price: €103
@@ -530,7 +530,7 @@ Variance = |3| / 100 × 100 = 3%
 Store in "Price_Variance%" column
 ```
 
-## Example 3: Discount Application
+## Primer 3: Primena popusta
 ```
 Original Price: €100
 Discount %: 10%
@@ -540,7 +540,7 @@ Final Price: €100 - €10 = €90
 
 ---
 
-# Field Manipulation Workflow Example
+# Primer toka rada za manipulaciju poljima
 
 ```
 Document arrives
@@ -564,60 +564,59 @@ Document now has all calculated and populated fields
 
 ---
 
-# Best Practices
+# Najbolje prakse
 
-✅ **Do:**
-- Keep formulas simple
-- Test calculations with sample data
-- Verify results make sense
-- Document why you're changing fields
-- Use copy field when data is same
+✅ **Radite:**
+- Održavajte formule jednostavnim
+- Testirajte izračunavanja sa uzorcima podataka
+- Verifikujte da rezultati imaju smisla
+- Dokumentujte zašto menjate polja
+- Koristite kopiranje polja kada su podaci isti
 
-❌ **Don't:**
-- Create circular references (A=B, B=A)
-- Overwrite important data without reason
-- Create overly complex regex patterns
-- Forget to verify calculation results
-- Calculate on wrong table/columns
-
----
-
-# Troubleshooting
-
-## "Field not updating"
-**Cause:** Condition not met or card not triggered
-
-**Solution:**
-- Check condition is true
-- Verify card is in workflow
-- Test with sample data
-- Check for typos in field name
-
-## "Calculation result wrong"
-**Cause:** Wrong columns selected or formula incorrect
-
-**Solution:**
-- Verify source columns
-- Check formula is correct
-- Test manually
-- Review decimal places/rounding
-
-## "Table shows error"
-**Cause:** Referenced column doesn't exist
-
-**Solution:**
-- Verify column name spelling
-- Check column has data
-- Ensure column data type matches calculation
-- Add missing columns if needed
+❌ **Ne radite:**
+- Ne kreirajte kružne reference (A=B, B=A)
+- Ne prepisujte važne podatke bez razloga
+- Ne kreirajte previše složene regex obrasce
+- Ne zaboravljajte da verifikujete rezultate izračunavanja
+- Ne izračunavajte na pogrešnoj tabeli/kolonama
 
 ---
 
-# Related Cards
+# Rešavanje problema
 
-- **ACTION_COPY_DOCFIELD_TO_DOCFIELD** - Copy values
-- **EDIT_COLUMN** - Change table values
-- **CALC_COLUMNS** - Calculate formulas
-- **ACTION_SET_FIELD_TO_TEXT** - Set text values
-- **ACTION_SET_BOOLEAN_FIELD** - Check boxes
+## „Field not updating"
+**Uzrok:** Uslov nije ispunjen ili kartica nije okinuta
 
+**Rešenje:**
+- Proverite da li je uslov istinit
+- Verifikujte da je kartica u toku rada
+- Testirajte sa uzorcima podataka
+- Proverite greške u kucanju naziva polja
+
+## „Calculation result wrong"
+**Uzrok:** Izabrane pogrešne kolone ili formula nije ispravna
+
+**Rešenje:**
+- Verifikujte izvorne kolone
+- Proverite da je formula ispravna
+- Testirajte ručno
+- Pregledajte decimalna mesta/zaokruživanje
+
+## „Table shows error"
+**Uzrok:** Referencirana kolona ne postoji
+
+**Rešenje:**
+- Verifikujte ispravnost naziva kolone
+- Proverite da kolona ima podatke
+- Obezbedite da tip podataka kolone odgovara izračunavanju
+- Dodajte nedostajuće kolone ako je potrebno
+
+---
+
+# Povezane kartice
+
+- **ACTION_COPY_DOCFIELD_TO_DOCFIELD** - Kopiraj vrednosti
+- **EDIT_COLUMN** - Promeni vrednosti tabele
+- **CALC_COLUMNS** - Izračunaj formule
+- **ACTION_SET_FIELD_TO_TEXT** - Postavi tekstualne vrednosti
+- **ACTION_SET_BOOLEAN_FIELD** - Označi polja za potvrdu

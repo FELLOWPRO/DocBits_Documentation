@@ -1,56 +1,56 @@
-# Task Assignment & Creation Cards - Complete Guide
+# Kartice za dodeljivanje i kreiranje zadataka - Kompletan vodič
 
-**Covers:** 12 task-related cards
+**Pokriva:** 12 kartica povezanih sa zadacima
 
 ---
 
-The task cards on this page go in the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+Kartice za zadatke na ovoj stranici idu u grupu **Then** u Workflow Builder-u — akcije koje se pokreću kada se When/And uslovi poklope:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>Task and creation cards are added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Kartice za zadatke i kreiranje se dodaju u grupu <strong>Then</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Most Evolved Card:** tasks_create (4 versions, v4 latest)
-**Other Multi-Version Cards:** ACTION_TASK_FOR_GROUP (v4), ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP (v3), ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK (v3), ACTION_DECISION_TREE_CREATE_TASKS (v3)
+**Najrazvijenija kartica:** tasks_create (4 verzije, v4 najnovija)
+**Druge kartice sa više verzija:** ACTION_TASK_FOR_GROUP (v4), ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP (v3), ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK (v3), ACTION_DECISION_TREE_CREATE_TASKS (v3)
 
-**Key Changes:**
-- **v3 → v4 Evolution:** Removed decision tree approach, added generic work item types (Task, Ticket, Issue)
-- **v2 → v3 Migration:** Added decision tree support (now mostly deprecated)
+**Ključne promene:**
+- **v3 → v4 evolucija:** Uklonjen pristup stabla odlučivanja, dodati generički tipovi radnih stavki (Task, Ticket, Issue)
+- **v2 → v3 migracija:** Dodata podrška za stablo odlučivanja (sada uglavnom zastarela)
 
-📖 [Complete Version History](../../../changelog/release.md#-task-management-cards) | [Card Version Database](../../../../DocFlow/docs/card_version.md)
-
----
-
-## Overview
-
-Task cards create work assignments for team members. When an invoice needs approval, you can automatically create a task and assign it to the right person.
+📖 [Kompletna istorija verzija](../../../changelog/release.md#-task-management-cards) | [Baza podataka verzija kartica](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-# Basic Task Creation
+## Pregled
 
-## Card: tasks_create / Create Task and Assign to User
+Kartice za zadatke kreiraju radna dodeljivanja za članove tima. Kada faktura zahteva odobravanje, možete automatski kreirati zadatak i dodeliti ga pravoj osobi.
 
-### Purpose
-Creates a task and assigns it to a specific person
+---
 
-### When to Use
-- Invoice needs specific person's review
-- Approval required from named individual
-- Handoff to specific team member
+# Osnovno kreiranje zadataka
 
-### Parameters
+## Kartica: tasks_create / Kreiraj zadatak i dodeli korisniku
+
+### Svrha
+Kreira zadatak i dodeljuje ga određenoj osobi
+
+### Kada koristiti
+- Faktura zahteva pregled određene osobe
+- Potrebno odobravanje od imenovane osobe
+- Predaja određenom članu tima
+
+### Parametri
 
 **Title**
-The task name/subject
+Naziv/predmet zadatka
 ```
 Example: "Review Invoice #INV-2025-001 for approval"
 ```
 
 **Description**
-Details about the task
+Detalji o zadatku
 ```
 Example: "Invoice from Supplier ABC needs review.
 Amount: €5000
@@ -59,24 +59,24 @@ Please verify pricing and quality."
 ```
 
 **Priority**
-- 🔴 **High**: Urgent, do immediately
-- 🟡 **Medium**: Normal priority
-- 🟢 **Low**: Can be done later
+- 🔴 **High**: Hitno, uradite odmah
+- 🟡 **Medium**: Normalan prioritet
+- 🟢 **Low**: Može se uraditi kasnije
 
 **Assigned User**
-Who gets the task
+Ko dobija zadatak
 ```
 Example: John Smith (Finance Manager)
 ```
 
 **Email Notification**
-Send email alert to assigned person?
+Poslati upozorenje e-poštom dodeljenoj osobi?
 ```
 ✅ Yes: Person gets email
 ❌ No: Task only in system
 ```
 
-### Example
+### Primer
 ```
 Condition: "Invoice amount > €10,000"
     ↓
@@ -92,17 +92,17 @@ Sarah receives task and email notification
 
 ---
 
-## Card: ACTION_TASK_FOR_GROUP / Create Task for Group
+## Kartica: ACTION_TASK_FOR_GROUP / Kreiraj zadatak za grupu
 
-### Purpose
-Creates a task and assigns it to a group (all members can see it)
+### Svrha
+Kreira zadatak i dodeljuje ga grupi (svi članovi mogu da ga vide)
 
-### When to Use
-- Multiple people can do the task
-- Task for team, not individual
-- First person available should handle
+### Kada koristiti
+- Više ljudi može da uradi zadatak
+- Zadatak za tim, ne za pojedinca
+- Prva dostupna osoba treba da rukuje
 
-### Difference from Individual Task
+### Razlika u odnosu na pojedinačni zadatak
 ```
 Individual Task:
 - Only John sees it
@@ -115,7 +115,7 @@ Group Task:
 - Distributed workload
 ```
 
-### Example Workflow
+### Primer toka rada
 ```
 Document arrives
     ↓
@@ -134,12 +134,12 @@ First person available takes it
 
 ---
 
-## Card: ACTION_DECISION_TREE_CREATE_TASKS
+## Kartica: ACTION_DECISION_TREE_CREATE_TASKS
 
-### Purpose
-Creates tasks based on decision table logic
+### Svrha
+Kreira zadatke na osnovu logike tabele odlučivanja
 
-### How It Works
+### Kako funkcioniše
 ```
 Decision Table Returns:
   If invoice from Supplier A → Assign to Procurement
@@ -150,12 +150,12 @@ Task is automatically created and assigned
 based on which condition is true
 ```
 
-### When to Use
-- Different suppliers need different approval
-- Complex routing based on multiple factors
-- Different team based on document type
+### Kada koristiti
+- Različiti dobavljači zahtevaju različito odobravanje
+- Složeno rutiranje na osnovu više faktora
+- Različit tim na osnovu tipa dokumenta
 
-### Example
+### Primer
 ```
 Document: Invoice from ABC Corp (Supplier A)
     ↓
@@ -168,18 +168,18 @@ Create and assign task to Procurement Team
 
 ---
 
-## Card: ACTION_DECISION_TREE_TASKS_SEQUENTIAL
+## Kartica: ACTION_DECISION_TREE_TASKS_SEQUENTIAL
 
-### Purpose
-Creates tasks sequentially based on decision table
-Tasks are assigned one at a time with priority order
+### Svrha
+Kreira zadatke sekvencijalno na osnovu tabele odlučivanja
+Zadaci se dodeljuju jedan po jedan sa redosledom prioriteta
 
-### When to Use
-- Multiple approvals needed in sequence
-- Workflow approval chain
-- Each person reviews then passes to next
+### Kada koristiti
+- Potrebno više odobravanja u nizu
+- Lanac odobravanja toka rada
+- Svaka osoba pregleda pa prosleđuje sledećoj
 
-### How It Works
+### Kako funkcioniše
 ```
 Step 1: Create Task for Procurement Manager
         (Priority 1)
@@ -194,7 +194,7 @@ Step 4: Finance Manager approves
 Step 5: Export
 ```
 
-### Priority System
+### Sistem prioriteta
 ```
 Priority 1 → Assign to: Person A
 Priority 2 → Assign to: Person B
@@ -203,7 +203,7 @@ Priority 3 → Assign to: Person C
 They must complete in order (1→2→3)
 ```
 
-### Example Configuration
+### Primer konfiguracije
 ```
 Decision Table Returns:
   Level 1: Sarah Johnson (Finance)
@@ -219,17 +219,17 @@ Task Flow:
 
 ---
 
-## Card: ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL
+## Kartica: ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL
 
-### Purpose
-Assigns document to one user AND creates sequential task
+### Svrha
+Dodeljuje dokument jednom korisniku I kreira sekvencijalni zadatak
 
-### When to Use
-- Assign document AND create task at same time
-- Document needs to be reviewed by specific person
-- Track both assignment and task creation
+### Kada koristiti
+- Dodeljivanje dokumenta I kreiranje zadatka istovremeno
+- Dokument treba da pregleda određena osoba
+- Praćenje i dodeljivanja i kreiranja zadatka
 
-### How It Works
+### Kako funkcioniše
 ```
 Two things happen:
 1. Document is assigned to: Person A
@@ -238,7 +238,7 @@ Two things happen:
 Both in one action
 ```
 
-### Example
+### Primer
 ```
 High-value invoice arrives
     ↓
@@ -252,17 +252,17 @@ Document AND task both go to Finance Manager
 
 ---
 
-## Card: ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL
+## Kartica: ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL
 
-### Purpose
-Assigns document to group AND creates task
+### Svrha
+Dodeljuje dokument grupi I kreira zadatak
 
-### When to Use
-- Document needs group attention
-- Want to track task creation
-- Create initial task then document assignment
+### Kada koristiti
+- Dokument zahteva pažnju grupe
+- Želite da pratite kreiranje zadatka
+- Kreiranje početnog zadatka pa dodeljivanje dokumenta
 
-### Example
+### Primer
 ```
 New supplier evaluation
     ↓
@@ -277,19 +277,19 @@ Group members see document and task
 
 ---
 
-# Advanced Task Creation
+# Napredno kreiranje zadataka
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP
+## Kartica: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP
 
-### Purpose
-Creates task for specific facility group
+### Svrha
+Kreira zadatak za određenu grupu objekta
 
-### When to Use
-- Task for warehouse/facility team
-- Facility-specific operations
-- Physical location matters
+### Kada koristiti
+- Zadatak za tim skladišta/objekta
+- Operacije specifične za objekat
+- Fizička lokacija je važna
 
-### Example
+### Primer
 ```
 Document: Shipment notification
     ↓
@@ -303,17 +303,17 @@ Berlin warehouse team gets task
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL
+## Kartica: ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL
 
-### Purpose
-Sequential task assignment across facilities
+### Svrha
+Sekvencijalno dodeljivanje zadataka kroz objekte
 
-### When to Use
-- Multi-facility operations
-- Tasks pass from facility to facility
-- Sequential facility processing
+### Kada koristiti
+- Operacije na više objekata
+- Zadaci prelaze sa objekta na objekat
+- Sekvencijalna obrada po objektu
 
-### How It Works
+### Kako funkcioniše
 ```
 Factory A (Step 1): Production
     ↓
@@ -324,7 +324,7 @@ Warehouse (Step 3): Packaging
 Shipping (Step 4): Dispatch
 ```
 
-### Example
+### Primer
 ```
 Manufacturing Document
     ↓
@@ -339,17 +339,17 @@ Each team completes → Passes to next
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
+## Kartica: ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
 
-### Purpose
-Creates task for procurement department
+### Svrha
+Kreira zadatak za odeljenje nabavke
 
-### When to Use
-- Task for procurement team
-- Supplier management tasks
-- Purchase-related work
+### Kada koristiti
+- Zadatak za tim nabavke
+- Zadaci upravljanja dobavljačima
+- Posao povezan sa kupovinom
 
-### Example
+### Primer
 ```
 Supplier status change notification
     ↓
@@ -364,17 +364,17 @@ Procurement team is notified
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL
+## Kartica: ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL
 
-### Purpose
-Sequential task routing within procurement
+### Svrha
+Sekvencijalno rutiranje zadataka unutar nabavke
 
-### When to Use
-- Multi-step procurement processes
-- Approval chain in procurement
-- Escalation path
+### Kada koristiti
+- Višekoračni procesi nabavke
+- Lanac odobravanja u nabavci
+- Putanja eskalacije
 
-### Example
+### Primer
 ```
 Purchase Requisition received
     ↓
@@ -389,18 +389,18 @@ All sign-offs complete → Release to supplier
 
 ---
 
-## Card: ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
+## Kartica: ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
 
-### Purpose
-Get user from document field, assign task
-If user not found, use fallback user
+### Svrha
+Dobija korisnika iz polja dokumenta, dodeljuje zadatak
+Ako korisnik nije pronađen, koristi rezervnog korisnika
 
-### When to Use
-- User stored in document field
-- Document specifies who should review
-- Have backup person if specified user unavailable
+### Kada koristiti
+- Korisnik sačuvan u polju dokumenta
+- Dokument navodi ko treba da pregleda
+- Imate rezervnu osobu ako navedeni korisnik nije dostupan
 
-### How It Works
+### Kako funkcioniše
 ```
 Document has field: "Approver Name: John Smith"
 
@@ -409,7 +409,7 @@ Card checks: Is John in system?
     If NO → Assign to Fallback User (Sarah)
 ```
 
-### Example
+### Primer
 ```
 Invoice field: "Contact: Mike Johnson"
 
@@ -420,7 +420,7 @@ If Mike doesn't exist in system:
 Use Fallback: Team Lead (Robert Brown)
 ```
 
-### Parameters
+### Parametri
 ```
 - Field to Read: "Approver Name"
 - Fallback User: Robert Brown
@@ -429,9 +429,9 @@ Use Fallback: Team Lead (Robert Brown)
 
 ---
 
-# Common Task Parameters
+# Uobičajeni parametri zadataka
 
-All task cards use these parameters:
+Sve kartice za zadatke koriste ove parametre:
 
 ### Title
 ```
@@ -449,7 +449,7 @@ Should include:
 ✅ Link to document
 ```
 
-### Priority Levels
+### Nivoi prioriteta
 ```
 🔴 HIGH
    - Action needed within hours
@@ -467,7 +467,7 @@ Should include:
    - Example: Archive old documents
 ```
 
-### Due Date (if available)
+### Due Date (ako je dostupno)
 ```
 When should task be completed by?
 Example: 2025-10-30 (5 days from now)
@@ -475,9 +475,9 @@ Example: 2025-10-30 (5 days from now)
 
 ---
 
-# Task Workflow Scenarios
+# Scenariji tokova rada zadataka
 
-## Scenario 1: Simple Approval
+## Scenario 1: Jednostavno odobravanje
 ```
 Invoice Arrives (€2000)
     ↓
@@ -488,7 +488,7 @@ YES: Create Task for Finance Manager
 Finance Manager reviews and approves
 ```
 
-## Scenario 2: Multi-Level Approval
+## Scenario 2: Višenivovsko odobravanje
 ```
 Invoice Arrives (€50,000 - High Value)
     ↓
@@ -500,7 +500,7 @@ Create Sequential Tasks:
 Each level completes → Next begins
 ```
 
-## Scenario 3: Parallel Tasks
+## Scenario 3: Paralelni zadaci
 ```
 Invoice Arrives (From New Supplier)
     ↓
@@ -512,7 +512,7 @@ All teams work simultaneously
 All must complete before proceeding
 ```
 
-## Scenario 4: Conditional Routing
+## Scenario 4: Uslovno rutiranje
 ```
 Invoice Arrives
     ↓
@@ -526,87 +526,86 @@ Task created for correct person
 
 ---
 
-# Task Assignment Best Practices
+# Najbolje prakse za dodeljivanje zadataka
 
-✅ **Do:**
-- Include specific details in task title
-- Set appropriate priority levels
-- Set realistic deadlines
-- Notify assignees
-- Include link to document
-- Use clear, actionable descriptions
+✅ **Radite:**
+- Uključite specifične detalje u naslov zadatka
+- Postavite odgovarajuće nivoe prioriteta
+- Postavite realne rokove
+- Obavestite osobe kojima je dodeljeno
+- Uključite vezu ka dokumentu
+- Koristite jasne opise sa jasnom akcijom
 
-❌ **Don't:**
-- Create vague task titles ("Review this")
-- Set everything as High priority
-- Forget to notify assigned person
-- Create multiple tasks for same work
-- Assign to unavailable people
-
----
-
-# Troubleshooting Tasks
-
-## "Task not assigned to anyone"
-**Cause:** User doesn't exist or group is empty
-
-**Solution:**
-- Verify user name spelling
-- Check user is active in system
-- Verify group has members
-- Use fallback if needed
-
-## "Person says they didn't get notification"
-**Cause:** Email notification disabled or email wrong
-
-**Solution:**
-- Check "Send Email" checkbox is enabled
-- Verify recipient email address
-- Check spam folder
-- Resend notification manually
-
-## "Wrong person got task"
-**Cause:** Routing logic incorrect
-
-**Solution:**
-- Check decision table conditions
-- Verify fallback settings
-- Test with sample document
-- Check for typos in user names
-
-## "Too many tasks created"
-**Cause:** Card firing multiple times
-
-**Solution:**
-- Check conditions are specific enough
-- Verify card only runs once per document
-- Review "And" conditions
-- Add additional filtering
+❌ **Ne radite:**
+- Ne kreirajte nejasne naslove zadataka („Review this")
+- Ne postavljajte sve kao visok prioritet
+- Ne zaboravljajte da obavestite dodeljenu osobu
+- Ne kreirajte više zadataka za isti posao
+- Ne dodeljujte nedostupnim osobama
 
 ---
 
-# Task Card Comparison Table
+# Rešavanje problema sa zadacima
 
-| Card | Creates Task | Assigns To | When |
+## „Task not assigned to anyone"
+**Uzrok:** Korisnik ne postoji ili je grupa prazna
+
+**Rešenje:**
+- Verifikujte ispravnost imena korisnika
+- Proverite da je korisnik aktivan u sistemu
+- Verifikujte da grupa ima članove
+- Koristite rezervu ako je potrebno
+
+## „Person says they didn't get notification"
+**Uzrok:** Obaveštenje e-poštom onemogućeno ili e-pošta pogrešna
+
+**Rešenje:**
+- Proverite da je polje za potvrdu „Send Email" omogućeno
+- Verifikujte adresu e-pošte primaoca
+- Proverite folder neželjene pošte
+- Ručno ponovo pošaljite obaveštenje
+
+## „Wrong person got task"
+**Uzrok:** Logika rutiranja nije ispravna
+
+**Rešenje:**
+- Proverite uslove tabele odlučivanja
+- Verifikujte podešavanja rezerve
+- Testirajte sa uzorkom dokumenta
+- Proverite greške u kucanju imena korisnika
+
+## „Too many tasks created"
+**Uzrok:** Kartica se okida više puta
+
+**Rešenje:**
+- Proverite da su uslovi dovoljno specifični
+- Verifikujte da se kartica pokreće samo jednom po dokumentu
+- Pregledajte „And" uslove
+- Dodajte dodatno filtriranje
+
+---
+
+# Tabela poređenja kartica za zadatke
+
+| Kartica | Kreira zadatak | Dodeljuje | Kada |
 |------|-------------|-----------|------|
-| tasks_create | Yes | Individual | Always |
-| ACTION_TASK_FOR_GROUP | Yes | Group | Always |
-| ACTION_DECISION_TREE_CREATE_TASKS | Yes | Decision Table Result | Conditional |
-| ACTION_DECISION_TREE_TASKS_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL | Yes | User + Document | Conditional |
-| ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL | Yes | Group + Document | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP | Yes | Facility Group | Conditional |
-| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL | Yes | Multiple Facilities | Conditional |
-| ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP | Yes | Procurement Team | Conditional |
-| ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL | Yes | Multiple (Sequential) | Conditional |
-| ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK | Yes | Field/Fallback | Conditional |
+| tasks_create | Da | Pojedincu | Uvek |
+| ACTION_TASK_FOR_GROUP | Da | Grupi | Uvek |
+| ACTION_DECISION_TREE_CREATE_TASKS | Da | Rezultatu tabele odlučivanja | Uslovno |
+| ACTION_DECISION_TREE_TASKS_SEQUENTIAL | Da | Više (sekvencijalno) | Uslovno |
+| ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL | Da | Korisnik + Dokument | Uslovno |
+| ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL | Da | Grupa + Dokument | Uslovno |
+| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP | Da | Grupi objekta | Uslovno |
+| ACTION_ASSIGN_TASK_TO_FACILITY_GROUP_SEQUENTIAL | Da | Više objekata | Uslovno |
+| ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP | Da | Timu nabavke | Uslovno |
+| ACTION_ASSIGN_TASK_PROCUREMENT_GROUP_SEQUENTIAL | Da | Više (sekvencijalno) | Uslovno |
+| ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK | Da | Polje/Rezerva | Uslovno |
 
 ---
 
-# Related Cards
+# Povezane kartice
 
-- **ACTION_ASSIGN_DOCUMENT_TO_USER** - Assign document without creating task
-- **ACTION_SEND_EMAIL** - Notify people directly
-- **STAUS_CHANGE** - Change status instead of creating task
-- **RUN_WORKFLOW** - Trigger different workflow instead
-
+- **ACTION_ASSIGN_DOCUMENT_TO_USER** - Dodeli dokument bez kreiranja zadatka
+- **ACTION_SEND_EMAIL** - Obavesti osobe direktno
+- **STAUS_CHANGE** - Promeni status umesto kreiranja zadatka
+- **RUN_WORKFLOW** - Pokreni drugi tok rada umesto toga

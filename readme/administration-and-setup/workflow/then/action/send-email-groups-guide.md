@@ -1,68 +1,68 @@
-# Send Email to Groups
+# Pošalji e-poštu grupama
 
 ---
 
-Add this card to the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+Dodajte ovu karticu u grupu **Then** u Workflow Builder-u — akcije koje se pokreću kada se When/And uslovi poklope:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>The <strong>Send Email to Groups</strong> card is added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Kartica <strong>Send Email to Groups</strong> se dodaje u grupu <strong>Then</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Status:** ✅ Single Version (No Breaking Changes)
-**Latest Version:** v1 (Active)
-**Note:** This card uses single version model with multi-language support via translation keys.
+**Status:** ✅ Jedna verzija (Bez prekidajućih promena)
+**Najnovija verzija:** v1 (Aktivna)
+**Napomena:** Ova kartica koristi model sa jednom verzijom sa podrškom za više jezika preko ključeva za prevod.
 
-📖 [Complete Card Database](../../../../DocFlow/docs/card_version.md)
-
----
-
-## Purpose
-This card automatically sends email notifications to groups of users. Instead of assigning work to individual people, you send the message to a group, and all members of that group receive it.
-
-**Real-world example:** When a high-value invoice arrives, automatically send an email notification to everyone in the "Finance Team" group so they're aware it needs review.
+📖 [Kompletna baza podataka kartica](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-## When to Use This Card
+## Svrha
+Ova kartica automatski šalje obaveštenja e-poštom grupama korisnika. Umesto dodeljivanja posla pojedinačnim osobama, šaljete poruku grupi, i svi članovi te grupe je primaju.
 
-Use this card when you need to:
-- Notify multiple people at once
-- Send alerts to team groups
-- Broadcast updates to departments
-- Notify groups about document status changes
-- Send reminders to group members
-
-**Common scenarios:**
-- Notify procurement team about new suppliers
-- Alert finance team about high-value invoices
-- Notify warehouse team about shipments
-- Broadcast document status changes
+**Primer iz stvarnog sveta:** Kada stigne faktura velike vrednosti, automatski pošaljite obaveštenje e-poštom svima u grupi „Finance Team" tako da znaju da zahteva pregled.
 
 ---
 
-## How It Works
+## Kada koristiti ovu karticu
 
-1. **Condition Check**: Workflow checks "Where" and "And" conditions
-2. **Prepare Email**: System prepares the email using template
-3. **Get Group Members**: System finds all members of specified group
-4. **Send**: Email is sent to each group member
-5. **Log**: Email sending is recorded
+Koristite ovu karticu kada treba da:
+- Obavestite više ljudi odjednom
+- Pošaljete upozorenja timskim grupama
+- Emitujete ažuriranja odeljenjima
+- Obavestite grupe o promenama statusa dokumenta
+- Pošaljete podsetnike članovima grupe
+
+**Uobičajeni scenariji:**
+- Obaveštavanje tima za nabavku o novim dobavljačima
+- Upozoravanje finansijskog tima o fakturama velike vrednosti
+- Obaveštavanje tima skladišta o pošiljkama
+- Emitovanje promena statusa dokumenta
 
 ---
 
-## Parameters Explained
+## Kako funkcioniše
 
-### Email Template
-The email message to be sent
+1. **Provera uslova**: Tok rada proverava „Where" i „And" uslove
+2. **Priprema e-pošte**: Sistem priprema e-poštu koristeći šablon
+3. **Dobijanje članova grupe**: Sistem pronalazi sve članove navedene grupe
+4. **Slanje**: E-pošta se šalje svakom članu grupe
+5. **Zapisivanje**: Slanje e-pošte se beleži
 
-**Options:**
-- Choose from existing templates
-- Each template has predefined subject, body, and formatting
-- Templates can include placeholders like {document_number}, {supplier_name}
+---
 
-**Example Template:**
+## Objašnjenje parametara
+
+### Šablon e-pošte
+Poruka e-pošte koja se šalje
+
+**Opcije:**
+- Izaberite iz postojećih šablona
+- Svaki šablon ima unapred definisan predmet, telo i formatiranje
+- Šabloni mogu uključivati čuvare mesta kao što su {document_number}, {supplier_name}
+
+**Primer šablona:**
 ```
 Subject: Document {document_number} requires review
 
@@ -81,10 +81,10 @@ Best regards,
 DocBits Automation
 ```
 
-### Group
-The group of users to send the email to
+### Grupa
+Grupa korisnika kojoj se šalje e-pošta
 
-**Example groups:**
+**Primeri grupa:**
 - Finance Team
 - Procurement Team
 - Warehouse Team
@@ -93,32 +93,32 @@ The group of users to send the email to
 
 ---
 
-## Configuration Steps
+## Koraci konfiguracije
 
-### Step 1: Choose Email Template
-1. Click "Select Email Template"
-2. Choose template from list
-3. Verify subject and content
+### Korak 1: Izaberite šablon e-pošte
+1. Kliknite na „Select Email Template"
+2. Izaberite šablon sa liste
+3. Verifikujte predmet i sadržaj
 
-### Step 2: Select Group
-1. Click "Select Group"
-2. Choose the group you want to notify
-3. Verify group members (usually shows count)
+### Korak 2: Izaberite grupu
+1. Kliknite na „Select Group"
+2. Izaberite grupu koju želite da obavestite
+3. Verifikujte članove grupe (obično prikazuje broj)
 
-### Step 3: Set Conditions
-1. Add condition: "When [condition] is true"
-2. Example: "When invoice amount is greater than €5000"
+### Korak 3: Postavite uslove
+1. Dodajte uslov: „When [condition] is true"
+2. Primer: „When invoice amount is greater than €5000"
 
-### Step 4: Test
-1. Test with sample document
-2. Verify email sends to group
-3. Check template rendering
+### Korak 4: Testirajte
+1. Testirajte sa uzorkom dokumenta
+2. Verifikujte da se e-pošta šalje grupi
+3. Proverite renderovanje šablona
 
 ---
 
-## Email Template Examples
+## Primeri šablona e-pošte
 
-### Template 1: High-Value Invoice Alert
+### Šablon 1: Upozorenje o fakturi velike vrednosti
 ```
 Subject: High-Value Invoice Alert - {document_number}
 
@@ -139,7 +139,7 @@ This requires immediate review and approval.
 Sent automatically by DocBits
 ```
 
-### Template 2: Supplier Status Change
+### Šablon 2: Promena statusa dobavljača
 ```
 Subject: Supplier Status Update - {supplier_name}
 
@@ -159,7 +159,7 @@ Please update your systems accordingly.
 Sent automatically by DocBits
 ```
 
-### Template 3: Document Ready for Export
+### Šablon 3: Dokument spreman za izvoz
 ```
 Subject: Document Approved for Export - {document_number}
 
@@ -180,26 +180,26 @@ Sent automatically by DocBits
 
 ---
 
-## Common Use Cases
+## Uobičajeni slučajevi upotrebe
 
-### Use Case 1: Quality Control Alerts
-**Trigger:** When discrepancy is found between invoice and PO
+### Slučaj upotrebe 1: Upozorenja kontrole kvaliteta
+**Okidač:** Kada se pronađe neslaganje između fakture i PO
 
-**Email Group:** Quality Team
+**Grupa e-pošte:** Quality Team
 
-**Content:**
+**Sadržaj:**
 ```
 Invoice {number} has quality issues:
 - Unit Price variance: 12% (exceeds 5% tolerance)
 - Please review and take action
 ```
 
-### Use Case 2: Approval Notifications
-**Trigger:** When document reaches certain status
+### Slučaj upotrebe 2: Obaveštenja o odobravanju
+**Okidač:** Kada dokument dostigne određeni status
 
-**Email Group:** Approval Committee
+**Grupa e-pošte:** Approval Committee
 
-**Content:**
+**Sadržaj:**
 ```
 Document {number} is awaiting approval:
 - Amount: {amount}
@@ -207,12 +207,12 @@ Document {number} is awaiting approval:
 - Please login to approve/reject
 ```
 
-### Use Case 3: Exception Notifications
-**Trigger:** When conditions not met
+### Slučaj upotrebe 3: Obaveštenja o izuzecima
+**Okidač:** Kada uslovi nisu ispunjeni
 
-**Email Group:** Managers
+**Grupa e-pošte:** Managers
 
-**Content:**
+**Sadržaj:**
 ```
 Exception alert for document {number}:
 - Supplier code missing
@@ -220,12 +220,12 @@ Exception alert for document {number}:
 - Manual review required
 ```
 
-### Use Case 4: Status Updates
-**Trigger:** When document status changes
+### Slučaj upotrebe 4: Ažuriranja statusa
+**Okidač:** Kada se status dokumenta promeni
 
-**Email Group:** Team responsible for next step
+**Grupa e-pošte:** Tim odgovoran za sledeći korak
 
-**Content:**
+**Sadržaj:**
 ```
 Document {number} status changed to: {status}
 Assigned to: {assigned_user}
@@ -234,56 +234,56 @@ Next steps: {next_steps}
 
 ---
 
-## Troubleshooting
+## Rešavanje problema
 
-### "Email not received"
+### „Email not received"
 
-**Possible Causes:**
-- [ ] Users in group don't have email addresses
-- [ ] Email blocked by spam filter
-- [ ] Email address is incorrect in group
-- [ ] Group has no members
+**Mogući uzroci:**
+- [ ] Korisnici u grupi nemaju adrese e-pošte
+- [ ] E-pošta blokirana filterom za neželjenu poštu
+- [ ] Adresa e-pošte je netačna u grupi
+- [ ] Grupa nema članove
 
-**Solutions:**
-1. Verify all group members have email addresses
-2. Check spam/junk folder
-3. Verify group membership is correct
-4. Add users to group if missing
-5. Check with IT that email service is working
+**Rešenja:**
+1. Verifikujte da svi članovi grupe imaju adrese e-pošte
+2. Proverite folder neželjene/đubrišne pošte
+3. Verifikujte da je članstvo u grupi ispravno
+4. Dodajte korisnike u grupu ako nedostaju
+5. Proverite sa IT-jem da li servis e-pošte radi
 
-### "Template not rendering correctly"
+### „Template not rendering correctly"
 
-**Cause:** Placeholder variables not found
+**Uzrok:** Promenljive čuvara mesta nisu pronađene
 
-**Solution:**
-- [ ] Verify field names match exactly
-- [ ] Check if field has a value in the document
-- [ ] Use correct placeholder format: {field_name}
-- [ ] Test with sample document that has all fields
+**Rešenje:**
+- [ ] Verifikujte da se nazivi polja tačno poklapaju
+- [ ] Proverite da li polje ima vrednost u dokumentu
+- [ ] Koristite ispravan format čuvara mesta: {field_name}
+- [ ] Testirajte sa uzorkom dokumenta koji ima sva polja
 
-### "Some people getting email, others not"
+### „Some people getting email, others not"
 
-**Cause:** Incomplete group membership or invalid emails
+**Uzrok:** Nepotpuno članstvo u grupi ili nevažeće e-pošte
 
-**Solutions:**
-- [ ] Verify all members have valid email
-- [ ] Check if some users have opted out
-- [ ] Verify group membership is current
-- [ ] Contact IT to validate email addresses
+**Rešenja:**
+- [ ] Verifikujte da svi članovi imaju važeću e-poštu
+- [ ] Proverite da li su se neki korisnici isključili
+- [ ] Verifikujte da je članstvo u grupi ažurno
+- [ ] Kontaktirajte IT da validira adrese e-pošte
 
-### "Want to add/remove people from group"
+### „Want to add/remove people from group"
 
-**Solution:**
-- Contact your administrator
-- Groups are managed in system settings
-- Can't be changed from this card
-- Request group membership changes in IT
+**Rešenje:**
+- Kontaktirajte svog administratora
+- Grupe se upravljaju u podešavanjima sistema
+- Ne mogu se menjati sa ove kartice
+- Zatražite promene članstva u grupi u IT-ju
 
 ---
 
-## Email Template Customization
+## Prilagođavanje šablona e-pošte
 
-### Available Placeholders
+### Dostupni čuvari mesta
 ```
 {document_number} - Document ID
 {invoice_number} - Invoice ID
@@ -300,55 +300,55 @@ Next steps: {next_steps}
 {comment} - Comments or notes
 ```
 
-### Creating Custom Placeholders
-If you need additional data in emails:
-1. Contact your administrator
-2. Request new placeholder
-3. Add necessary field to document
-4. Update email template
+### Kreiranje prilagođenih čuvara mesta
+Ako vam je potrebno više podataka u e-pošti:
+1. Kontaktirajte svog administratora
+2. Zatražite novi čuvar mesta
+3. Dodajte potrebno polje u dokument
+4. Ažurirajte šablon e-pošte
 
 ---
 
-## Best Practices
+## Najbolje prakse
 
-✅ **Do:**
-- Keep email content brief and clear
-- Include action items (what should recipients do?)
-- Include link or instructions to access document
-- Test template with sample data
-- Send to right group (don't over-notify)
-- Use templates for consistency
+✅ **Radite:**
+- Održavajte sadržaj e-pošte kratkim i jasnim
+- Uključite stavke akcije (šta primaoci treba da urade?)
+- Uključite vezu ili uputstva za pristup dokumentu
+- Testirajte šablon sa uzorcima podataka
+- Šaljite pravoj grupi (ne prekomerno obaveštavajte)
+- Koristite šablone radi doslednosti
 
-❌ **Don't:**
-- Send too many emails (notification fatigue)
-- Include sensitive data in emails
-- Send to groups that don't need info
-- Use unclear subject lines
-- Forget to include how to take action
-- Send emails to individuals (use group instead)
-
----
-
-## Performance Notes
-
-- Each email takes ~1 second to send
-- Large groups may take time (100 people = ~100 seconds)
-- Don't create loops that send thousands of emails
-- Monitor email service capacity
-- Consider batching if many documents
+❌ **Ne radite:**
+- Ne šaljite previše e-poruka (umor od obaveštenja)
+- Ne uključujte osetljive podatke u e-poštu
+- Ne šaljite grupama kojima informacija nije potrebna
+- Ne koristite nejasne predmete
+- Ne zaboravljajte da uključite kako preduzeti akciju
+- Ne šaljite e-poštu pojedincima (umesto toga koristite grupu)
 
 ---
 
-## Related Cards
+## Napomene o performansama
 
-- **ACTION_SEND_EMAIL** - Send to individual person
-- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Assign task instead of just notifying
-- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Create task and notify
-- **STAUS_CHANGE** - Change status and notify
+- Svaka e-pošta zahteva ~1 sekundu za slanje
+- Velike grupe mogu da potraju (100 ljudi = ~100 sekundi)
+- Ne kreirajte petlje koje šalju hiljade e-poruka
+- Pratite kapacitet servisa e-pošte
+- Razmotrite paketnu obradu ako ima mnogo dokumenata
 
 ---
 
-## Typical Workflow Example
+## Povezane kartice
+
+- **ACTION_SEND_EMAIL** - Slanje pojedinačnoj osobi
+- **ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP** - Dodelite zadatak umesto samo obaveštavanja
+- **ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL** - Kreirajte zadatak i obavestite
+- **STAUS_CHANGE** - Promenite status i obavestite
+
+---
+
+## Tipičan primer toka rada
 
 ```
 Document Arrives
@@ -366,20 +366,19 @@ Workflow Continues
 
 ---
 
-## FAQ
+## Često postavljana pitanja
 
-**Q: Can I send to multiple groups?**
-A: Create separate cards for each group
+**P: Mogu li da pošaljem na više grupa?**
+O: Kreirajte odvojene kartice za svaku grupu
 
-**Q: What if someone's email bounces?**
-A: Email is logged as failed, IT can troubleshoot
+**P: Šta ako se nečija e-pošta odbije?**
+O: E-pošta se beleži kao neuspela, IT može da rešava problem
 
-**Q: Can I change the email template?**
-A: Contact your administrator to modify templates
+**P: Mogu li da promenim šablon e-pošte?**
+O: Kontaktirajte svog administratora da izmeni šablone
 
-**Q: Can I send based on conditions?**
-A: Yes! Use "Where" and "And" conditions to control when emails send
+**P: Mogu li da šaljem na osnovu uslova?**
+O: Da! Koristite „Where" i „And" uslove da kontrolišete kada se e-pošte šalju
 
-**Q: How do I know if email was received?**
-A: Check email logs in DocBits for sending status
-
+**P: Kako da znam da li je e-pošta primljena?**
+O: Proverite zapise e-pošte u DocBits-u za status slanja

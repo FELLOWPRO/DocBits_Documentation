@@ -1,86 +1,86 @@
-# Send HTTPS Request
+# Pošalji HTTPS zahtev
 
 ---
 
-Add this card to the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+Dodajte ovu karticu u grupu **Then** u Workflow Builder-u — akcije koje se pokreću kada se When/And uslovi poklope:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>The <strong>Send HTTPS Request</strong> card is added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Kartica <strong>Send HTTPS Request</strong> se dodaje u grupu <strong>Then</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Current Version:** v2 (Latest & Recommended)
-**Status:** ✅ Active
+**Trenutna verzija:** v2 (Najnovija i preporučena)
+**Status:** ✅ Aktivna
 
-**Version History:**
-- v1 → Simple HTTP request (no longer recommended)
-- **v2 → CURRENT** (added multi-language support)
+**Istorija verzija:**
+- v1 → Jednostavan HTTP zahtev (više se ne preporučuje)
+- **v2 → TRENUTNA** (dodata podrška za više jezika)
 
-**What Changed:** v2 added internationalization (i18n) support. Core webhook/request functionality remains unchanged.
+**Šta se promenilo:** v2 je dodala podršku za internacionalizaciju (i18n). Osnovna funkcionalnost webhook-a/zahteva ostaje nepromenjena.
 
-📖 [Version History & Changes](../../../changelog/release.md#2-https-request-https_request) | [Complete Card Database](../../../../DocFlow/docs/card_version.md)
-
----
-
-## Purpose
-This card sends a secure message to a website or service and can receive a response back. It's simpler than the "Call API" card and is useful for quick integrations.
-
-**Real-world example:** Send invoice data to your accounting system, or ask an external system if an employee is approved to process this purchase.
+📖 [Istorija verzija i promene](../../../changelog/release.md#2-https-request-https_request) | [Kompletna baza podataka kartica](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-## When to Use This Card
+## Svrha
+Ova kartica šalje bezbednu poruku veb-sajtu ili servisu i može da primi odgovor nazad. Jednostavnija je od kartice „Call API" i korisna je za brze integracije.
 
-Use this card when you need to:
-- Send webhook notifications to external services
-- Trigger actions in other systems
-- Query a simple web service
-- Send status updates to other applications
-- Perform simple integrations without complex API requirements
+**Primer iz stvarnog sveta:** Pošaljite podatke fakture svom računovodstvenom sistemu, ili pitajte eksterni sistem da li je zaposleni odobren da obradi ovu kupovinu.
 
 ---
 
-## How It Works
+## Kada koristiti ovu karticu
 
-1. **Trigger Check**: System checks if the "Where" and "And" conditions are met
-2. **Build Request**: System prepares the HTTPS request with your parameters
-3. **Send Securely**: Data is sent using secure HTTPS connection
-4. **Receive Response**: External service responds
-5. **Continue**: Workflow proceeds with the response data
+Koristite ovu karticu kada treba da:
+- Pošaljete webhook obaveštenja eksternim servisima
+- Pokrenete akcije u drugim sistemima
+- Upitate jednostavan veb-servis
+- Pošaljete ažuriranja statusa drugim aplikacijama
+- Izvedete jednostavne integracije bez složenih API zahteva
 
 ---
 
-## Parameters
+## Kako funkcioniše
+
+1. **Provera okidača**: Sistem proverava da li su „Where" i „And" uslovi ispunjeni
+2. **Izgradnja zahteva**: Sistem priprema HTTPS zahtev sa vašim parametrima
+3. **Bezbedno slanje**: Podaci se šalju koristeći bezbednu HTTPS vezu
+4. **Prijem odgovora**: Eksterni servis odgovara
+5. **Nastavak**: Tok rada se nastavlja sa podacima odgovora
+
+---
+
+## Parametri
 
 ### URL
-The website address to send the request to
+Adresa veb-sajta na koju se šalje zahtev
 
-**Example:** `https://webhook.company.com/process`
+**Primer:** `https://webhook.company.com/process`
 
-### Headers
-Special instructions for the recipient
+### Zaglavlja
+Posebna uputstva za primaoca
 
-**Example:**
+**Primer:**
 ```
 Content-Type: application/json
 Authorization: Bearer token123
 ```
 
-### Method
-- **GET**: Request information
-- **POST**: Send data
-- **PUT**: Update data
+### Metoda
+- **GET**: Zahteva informacije
+- **POST**: Šalje podatke
+- **PUT**: Ažurira podatke
 
-### Parameters (Query String)
-Data added to the URL
+### Parametri (Niska upita)
+Podaci dodati u URL
 
-**Example:** `?action=approve&user_id=123`
+**Primer:** `?action=approve&user_id=123`
 
-### Request Data
-The actual information being sent (in JSON format)
+### Podaci zahteva
+Stvarne informacije koje se šalju (u JSON formatu)
 
-**Example:**
+**Primer:**
 ```json
 {
   "invoice_number": "INV-2025-001",
@@ -91,15 +91,15 @@ The actual information being sent (in JSON format)
 
 ---
 
-## Step-by-Step Example
+## Primer korak po korak
 
-### Scenario: Send Invoice to Accounting System
+### Scenario: Slanje fakture računovodstvenom sistemu
 
-**Card Configuration:**
+**Konfiguracija kartice:**
 - **URL:** `https://accounting.company.com/invoices/create`
-- **Method:** POST
-- **Headers:** `Authorization: Bearer YOUR-TOKEN`
-- **Request Data:**
+- **Metoda:** POST
+- **Zaglavlja:** `Authorization: Bearer YOUR-TOKEN`
+- **Podaci zahteva:**
 ```json
 {
   "supplier_id": "SUPP001",
@@ -110,7 +110,7 @@ The actual information being sent (in JSON format)
 }
 ```
 
-**Expected Response:**
+**Očekivani odgovor:**
 ```json
 {
   "status": "success",
@@ -121,58 +121,58 @@ The actual information being sent (in JSON format)
 
 ---
 
-## Common Use Cases
+## Uobičajeni slučajevi upotrebe
 
-### 1. Webhook Notifications
-Send real-time notifications to other systems whenever something happens in DocFlow
+### 1. Webhook obaveštenja
+Šaljite obaveštenja u realnom vremenu drugim sistemima kad god se nešto dogodi u DocFlow-u
 
-**Example:**
-- Document approved → Send notification to fulfillment system
-- Supplier changed → Notify purchasing team via Slack/Teams webhook
+**Primer:**
+- Dokument odobren → Pošalji obaveštenje sistemu za realizaciju
+- Dobavljač promenjen → Obavesti tim za kupovinu preko Slack/Teams webhook-a
 
-### 2. External System Integration
-Connect DocFlow with other business systems for automatic data exchange
+### 2. Integracija eksternih sistema
+Povežite DocFlow sa drugim poslovnim sistemima za automatsku razmenu podataka
 
-**Example:**
-- After document is processed → Sync to ERP system
-- New supplier added → Create supplier record in master data system
+**Primer:**
+- Nakon obrade dokumenta → Sinhronizuj sa ERP sistemom
+- Dodat novi dobavljač → Kreiraj zapis dobavljača u sistemu glavnih podataka
 
-### 3. Approval Workflows
-Send document to external approval system and receive decision
+### 3. Tokovi rada za odobravanje
+Pošaljite dokument eksternom sistemu za odobravanje i primite odluku
 
-**Example:**
-- High-value invoice → Send to Finance for approval
-- Return document to external system with decision
+**Primer:**
+- Faktura velike vrednosti → Pošalji finansijama na odobravanje
+- Vrati dokument eksternom sistemu sa odlukom
 
 ---
 
-## Configuration Guide
+## Vodič za konfiguraciju
 
-### Step 1: Get Endpoint Information
-Ask the receiving system for:
+### Korak 1: Dobijte informacije o endpoint-u
+Pitajte sistem primalac za:
 - [ ] HTTPS URL
-- [ ] Required headers
-- [ ] Authentication method
-- [ ] Expected request format
-- [ ] Expected response format
+- [ ] Potrebna zaglavlja
+- [ ] Metodu autentifikacije
+- [ ] Očekivani format zahteva
+- [ ] Očekivani format odgovora
 
-### Step 2: Configure the Card
-1. Enter the HTTPS URL
-2. Set HTTP method (usually POST)
-3. Add authentication if required
-4. Format request data as JSON
-5. Add any custom headers
+### Korak 2: Konfigurišite karticu
+1. Unesite HTTPS URL
+2. Postavite HTTP metodu (obično POST)
+3. Dodajte autentifikaciju ako je potrebno
+4. Formatirajte podatke zahteva kao JSON
+5. Dodajte sva prilagođena zaglavlja
 
-### Step 3: Test
-Send a test request and verify response
+### Korak 3: Testirajte
+Pošaljite test zahtev i verifikujte odgovor
 
 ---
 
-## Response Handling
+## Rukovanje odgovorom
 
-Your HTTPS request will get a response. Common responses:
+Vaš HTTPS zahtev će dobiti odgovor. Uobičajeni odgovori:
 
-### Success (200, 201)
+### Uspeh (200, 201)
 ```json
 {
   "success": true,
@@ -196,52 +196,52 @@ Your HTTPS request will get a response. Common responses:
 ```
 
 ### Server Error (500)
-The receiving system has an internal problem
+Sistem primalac ima interni problem
 
 ---
 
-## Troubleshooting
+## Rešavanje problema
 
-### "Certificate Error"
-**Cause:** HTTPS security certificate issue
+### „Certificate Error"
+**Uzrok:** Problem sa HTTPS bezbednosnim sertifikatom
 
-**Solution:**
-- Verify the URL is correct
-- Check if the website's certificate is valid
-- Ensure you're using HTTPS (not HTTP)
+**Rešenje:**
+- Verifikujte da je URL ispravan
+- Proverite da li je sertifikat veb-sajta važeći
+- Obezbedite da koristite HTTPS (ne HTTP)
 
-### "Connection Refused"
-**Cause:** Cannot connect to the server
+### „Connection Refused"
+**Uzrok:** Nije moguće povezati se sa serverom
 
-**Solution:**
-- Verify the URL/IP address is correct
-- Check if the service is running
-- Check firewall rules
-- Verify internet connectivity
+**Rešenje:**
+- Verifikujte da je URL/IP adresa ispravna
+- Proverite da li servis radi
+- Proverite pravila zaštitnog zida
+- Verifikujte internet povezanost
 
-### "No Response / Timeout"
-**Cause:** Server not responding within time limit
+### „No Response / Timeout"
+**Uzrok:** Server ne odgovara u okviru vremenskog ograničenja
 
-**Solution:**
-- Check if the service is available
-- Verify the endpoint URL
-- Check if there are rate limits
-- Contact system administrator
+**Rešenje:**
+- Proverite da li je servis dostupan
+- Verifikujte endpoint URL
+- Proverite da li postoje ograničenja brzine
+- Kontaktirajte administratora sistema
 
-### "Invalid JSON"
-**Cause:** The request data is malformed
+### „Invalid JSON"
+**Uzrok:** Podaci zahteva su nepravilno formirani
 
-**Solution:**
-- Check for missing commas in JSON
-- Verify all quotes are correct
-- Validate JSON format (use online JSON validator)
-- Check for special characters
+**Rešenje:**
+- Proverite nedostajuće zareze u JSON-u
+- Verifikujte da su svi navodnici ispravni
+- Validirajte JSON format (koristite onlajn JSON validator)
+- Proverite specijalne znakove
 
 ---
 
-## Examples
+## Primeri
 
-### Example 1: Send to Webhook Service
+### Primer 1: Slanje webhook servisu
 ```
 URL: https://webhook.site/your-unique-id
 Method: POST
@@ -253,7 +253,7 @@ Data:
 }
 ```
 
-### Example 2: Update External System
+### Primer 2: Ažuriranje eksternog sistema
 ```
 URL: https://api.company.com/update
 Method: PUT
@@ -265,7 +265,7 @@ Data:
 }
 ```
 
-### Example 3: Query External Service
+### Primer 3: Upit eksternog servisa
 ```
 URL: https://lookup.company.com/validate?id=SUP-789
 Method: GET
@@ -274,51 +274,50 @@ Headers: Authorization: Bearer token
 
 ---
 
-## Difference from "Call API" Card
+## Razlika u odnosu na karticu „Call API"
 
-| Feature | HTTPS Request | Call API |
+| Karakteristika | HTTPS Request | Call API |
 |---------|---------------|----------|
-| Simplicity | Simple | More complex |
-| Parameters | Basic | Advanced |
-| Error Handling | Basic | Detailed |
-| Use for | Quick integrations | Complex APIs |
-| Best for | Webhooks | Professional APIs |
+| Jednostavnost | Jednostavna | Složenija |
+| Parametri | Osnovni | Napredni |
+| Rukovanje greškama | Osnovno | Detaljno |
+| Koristi za | Brze integracije | Složene API-je |
+| Najbolje za | Webhook-ove | Profesionalne API-je |
 
 ---
 
-## Security Considerations
+## Razmatranja bezbednosti
 
-✅ **Always use HTTPS** (secure connection)
+✅ **Uvek koristite HTTPS** (bezbedna veza)
 
-⚠️ **Never:**
-- Put passwords in the URL
-- Expose API keys in logs
-- Include personal data in parameters
-- Use HTTP for sensitive data
-
----
-
-## Best Practices
-
-✅ **Do:**
-- Test with small amounts of data first
-- Include error handling
-- Log important requests
-- Document the integration
-- Monitor for failures
-
-❌ **Don't:**
-- Call the same endpoint repeatedly if not needed
-- Ignore response errors
-- Include sensitive data in plain text
-- Exceed service rate limits
+⚠️ **Nikada:**
+- Ne stavljajte lozinke u URL
+- Ne izlažite API ključeve u zapisima
+- Ne uključujte lične podatke u parametre
+- Ne koristite HTTP za osetljive podatke
 
 ---
 
-## Related Cards
+## Najbolje prakse
 
-- **CALL_API** - More advanced API integration
-- **CONDITION_HTTPS_REQUEST_STATUS** - Check if request succeeded
-- **ACTION_SEND_EMAIL** - Send via email instead
-- **ACTION_RUN_DOCOPERATOR_SCRIPT** - Automated scripts
+✅ **Radite:**
+- Prvo testirajte sa malim količinama podataka
+- Uključite rukovanje greškama
+- Beležite važne zahteve
+- Dokumentujte integraciju
+- Pratite neuspehe
 
+❌ **Ne radite:**
+- Ne pozivajte isti endpoint više puta ako nije potrebno
+- Ne ignorišite greške u odgovoru
+- Ne uključujte osetljive podatke u običnom tekstu
+- Ne prekoračujte ograničenja brzine servisa
+
+---
+
+## Povezane kartice
+
+- **CALL_API** - Naprednija API integracija
+- **CONDITION_HTTPS_REQUEST_STATUS** - Proverite da li je zahtev uspeo
+- **ACTION_SEND_EMAIL** - Slanje putem e-pošte umesto toga
+- **ACTION_RUN_DOCOPERATOR_SCRIPT** - Automatizovani skripti

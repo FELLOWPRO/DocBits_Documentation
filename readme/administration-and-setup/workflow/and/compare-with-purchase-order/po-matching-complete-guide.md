@@ -1,34 +1,34 @@
-# Purchase Order (PO) Matching Cards - Complete Guide
+# Kartice za uparivanje narudžbenica (PO) - Kompletan vodič
 
-**Status:** Covers 15 PO comparison cards with detailed calculations
+**Status:** Pokriva 15 kartica za poređenje PO sa detaljnim izračunavanjima
 
 ---
 
-The PO comparison cards on this page go in the **And** group of the Workflow Builder — they compare invoice data against the matched purchase order before the Then actions run:
+Kartice za poređenje PO na ovoj stranici idu u grupu **And** u Workflow Builder-u — one porede podatke fakture sa uparenom narudžbenicom pre nego što se Then akcije pokrenu:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>PO comparison cards are added to the <strong>And</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Kartice za poređenje PO se dodaju u grupu <strong>And</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Most Evolved Card:** CONDITION_DOC_TO_PO_UNIT_PRICE (5 versions, v5 latest)
-**Other Complex Cards:** CONDITION_OC_TO_PO_ITEMS (v4), CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY (v4)
+**Najrazvijenija kartica:** CONDITION_DOC_TO_PO_UNIT_PRICE (5 verzija, v5 najnovija)
+**Druge složene kartice:** CONDITION_OC_TO_PO_ITEMS (v4), CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY (v4)
 
-**Key Patterns:**
-- **v2 → v3+:** Addition of tolerance parameters for flexible matching
-- **v3 → v4:** Addition of comparison mode parameters
-- **v4 → v5:** Enhanced tolerance with multiple units (%, EUR, $, etc.)
+**Ključni obrasci:**
+- **v2 → v3+:** Dodavanje parametara tolerancije za fleksibilno uparivanje
+- **v3 → v4:** Dodavanje parametara režima poređenja
+- **v4 → v5:** Poboljšana tolerancija sa više jedinica (%, EUR, $, itd.)
 
-📖 [Complete Version History](../../../changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](../../../../DocFlow/docs/card_version.md)
+📖 [Kompletna istorija verzija](../../../changelog/release.md#-po-comparison--validation-cards) | [Baza podataka verzija kartica](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-## Understanding PO Matching
+## Razumevanje uparivanja PO
 
-When you receive an invoice, it should match the Purchase Order (PO) placed earlier. PO matching cards automatically check if invoice data matches PO data.
+Kada primite fakturu, ona treba da se poklapa sa narudžbenicom (PO) koja je ranije postavljena. Kartice za uparivanje PO automatski proveravaju da li se podaci fakture poklapaju sa podacima PO.
 
-**The Big Picture:**
+**Šira slika:**
 ```
 PO Placed     Invoice Arrives     PO Matching     Decision
 (€100)    →   (€103)          →   (Check if       → Approve/Reject
@@ -37,28 +37,28 @@ Qty: 100      Qty: 100            within tolerance)
 
 ---
 
-# 1. Purchase Order Full Match
+# 1. Potpuno uparivanje narudžbenice
 
-## Purpose
-Checks if the entire invoice matches the PO perfectly or within tolerance
+## Svrha
+Proverava da li se cela faktura savršeno poklapa sa PO ili unutar tolerancije
 
-## When to Use
-- Before approving an invoice
-- As a preliminary quality check
-- To identify problems early
+## Kada koristiti
+- Pre odobravanja fakture
+- Kao preliminarna provera kvaliteta
+- Za rano identifikovanje problema
 
-## How It Works
-System compares:
-- Invoice quantities vs PO quantities
-- Invoice prices vs PO prices
-- Invoice items vs PO items
-- Invoice total vs PO total
+## Kako funkcioniše
+Sistem poredi:
+- Količine na fakturi vs količine na PO
+- Cene na fakturi vs cene na PO
+- Stavke fakture vs stavke PO
+- Ukupan iznos fakture vs ukupan iznos PO
 
-## Result
-- **TRUE** (Full Match): Everything matches, proceed
-- **FALSE** (Mismatch): Something doesn't match, needs review
+## Rezultat
+- **TRUE** (Potpuno uparivanje): Sve se poklapa, nastavite
+- **FALSE** (Neslaganje): Nešto se ne poklapa, potreban je pregled
 
-## Example
+## Primer
 ```
 PO:
 - Item ABC: Qty 100, Unit Price €50 = €5000
@@ -75,17 +75,17 @@ Result: ✅ FULL MATCH
 
 ---
 
-# 2. Unit Price Comparison (Document vs PO)
+# 2. Poređenje jedinične cene (Dokument vs PO)
 
-## Purpose
-Compares the unit price on the invoice with the unit price on the PO
+## Svrha
+Poredi jediničnu cenu na fakturi sa jediničnom cenom na PO
 
-## Parameters
-- **Unit Price Tolerance**: Allow variance up to this amount
-- **Tolerance Type**: Percentage (%) or Absolute (€/$)
-- **Operator**: Is Equal to, Is Greater than, Is Less than, etc.
+## Parametri
+- **Tolerancija jedinične cene**: Dozvolite odstupanje do ovog iznosa
+- **Tip tolerancije**: Procenat (%) ili apsolutno (€/$)
+- **Operator**: Is Equal to, Is Greater than, Is Less than, itd.
 
-## How It Works (Percentage Tolerance)
+## Kako funkcioniše (Procentualna tolerancija)
 
 **Formula:**
 ```
@@ -94,7 +94,7 @@ Variance % = |(Invoice Price - PO Price)| / PO Price × 100
 Check: Is Variance % ≤ Tolerance %?
 ```
 
-**Step-by-Step Example:**
+**Primer korak po korak:**
 ```
 Step 1: Get prices
   PO Unit Price: €100.00
@@ -112,9 +112,9 @@ Step 4: Check tolerance (5% allowed)
 Result: PASS - Within tolerance
 ```
 
-## Real-World Examples
+## Primeri iz stvarnog sveta
 
-### Example 1: Small Increase (Accepted)
+### Primer 1: Malo povećanje (Prihvaćeno)
 ```
 PO Price: €50.00
 Invoice Price: €51.50
@@ -127,7 +127,7 @@ Calculation:
 Is 3% ≤ 3%? YES ✅ ACCEPT
 ```
 
-### Example 2: Large Increase (Rejected)
+### Primer 2: Veliko povećanje (Odbijeno)
 ```
 PO Price: €50.00
 Invoice Price: €55.00
@@ -140,7 +140,7 @@ Calculation:
 Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
 ```
 
-### Example 3: Discount (Also Checked)
+### Primer 3: Popust (Takođe proveren)
 ```
 PO Price: €100.00
 Invoice Price: €97.00
@@ -153,7 +153,7 @@ Calculation:
 Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
 ```
 
-### Example 4: Absolute Value Tolerance
+### Primer 4: Tolerancija apsolutne vrednosti
 ```
 PO Price: €10.00
 Invoice Price: €10.50
@@ -165,34 +165,34 @@ Calculation:
 Is €0.50 ≤ €1.00? YES ✅ ACCEPT
 ```
 
-## What to Do With Results
+## Šta raditi sa rezultatima
 
-**If PASS ✅:**
-- Continue to next check
-- Or approve invoice
-- Or proceed with export
+**Ako PROLAZI ✅:**
+- Nastavite na sledeću proveru
+- Ili odobrite fakturu
+- Ili nastavite sa izvozom
 
-**If FAIL ❌:**
-- Flag for manual review
-- Ask supplier for explanation
-- Contact procurement team
-- Approve with note if acceptable
+**Ako NE USPE ❌:**
+- Označite za ručni pregled
+- Pitajte dobavljača za objašnjenje
+- Kontaktirajte tim za nabavku
+- Odobrite uz napomenu ako je prihvatljivo
 
 ---
 
-# 3. Quantity Comparison
+# 3. Poređenje količine
 
-## Purpose
-Checks if the quantity ordered matches the quantity invoiced
+## Svrha
+Proverava da li se naručena količina poklapa sa fakturisanom količinom
 
-## Parameters
-- **Tolerance**: Amount or % allowed to differ
+## Parametri
+- **Tolerancija**: Iznos ili % dozvoljeno za odstupanje
 - **Operator**: Equals, Greater than, Less than
-- **Quantity Type**: Ordered, Received, Open
+- **Tip količine**: Ordered, Received, Open
 
-## Calculation Example
+## Primer izračunavanja
 
-**Percentage Tolerance:**
+**Procentualna tolerancija:**
 ```
 Formula:
   Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
@@ -208,7 +208,7 @@ Example:
   Is 3% ≤ 5%? YES ✅ ACCEPT
 ```
 
-**Absolute Tolerance:**
+**Apsolutna tolerancija:**
 ```
 Formula:
   Quantity Variance = |Invoice Qty - PO Qty|
@@ -223,9 +223,9 @@ Example:
   Is 2 units ≤ 5 units? YES ✅ ACCEPT
 ```
 
-## Real-World Scenarios
+## Scenariji iz stvarnog sveta
 
-### Over-Delivery (More than Ordered)
+### Prekomerna isporuka (Više od naručenog)
 ```
 Ordered: 100 units
 Invoiced: 110 units
@@ -239,7 +239,7 @@ Decision: Contact supplier - more delivered than ordered
 Possible reason: Error by supplier, partial shipment already received
 ```
 
-### Under-Delivery (Less than Ordered)
+### Manjkava isporuka (Manje od naručenog)
 ```
 Ordered: 100 units
 Invoiced: 95 units
@@ -255,12 +255,12 @@ Possible reason: Partial shipment, rest to follow
 
 ---
 
-# 4. Combined Price of Quantity Difference
+# 4. Kombinovana cena razlike u količini
 
-## Purpose
-When quantity differs, calculates if the total price difference is acceptable
+## Svrha
+Kada se količina razlikuje, izračunava da li je ukupna razlika u ceni prihvatljiva
 
-## Why This Matters
+## Zašto je ovo važno
 ```
 Scenario: You ordered 100 units but received 110
 - Quantity is 10% over (bad)
@@ -268,7 +268,7 @@ Scenario: You ordered 100 units but received 110
 - Combined effect might be acceptable
 ```
 
-## Calculation
+## Izračunavanje
 
 **Formula:**
 ```
@@ -277,7 +277,7 @@ Combined Variance = Quantity Variance × Price Variance
 If both are within tolerance, combined is usually acceptable
 ```
 
-**Example:**
+**Primer:**
 ```
 PO:
 - Unit Price: €100
@@ -299,21 +299,21 @@ Is combined variance acceptable? Usually YES ✅
 
 ---
 
-# 5. Item ID / Supplier Item Number Comparison
+# 5. Poređenje ID-a stavke / Broja stavke dobavljača
 
-## Purpose
-Checks if the items in the invoice match the items in the PO
+## Svrha
+Proverava da li se stavke na fakturi poklapaju sa stavkama na PO
 
-## How It Works
+## Kako funkcioniše
 
-**Exact Match (Simplest):**
+**Tačno poklapanje (Najjednostavnije):**
 ```
 PO Item ID: ABC-123
 Invoice Item ID: ABC-123
 Result: ✅ MATCH
 ```
 
-**Supplier Item Number (More Common):**
+**Broj stavke dobavljača (Češće):**
 ```
 PO Item: ABC-123 (Our internal code)
 Supplier Item: SUPP-456 (Their code for same item)
@@ -321,7 +321,7 @@ System matches these as same item
 Result: ✅ MATCH
 ```
 
-## Scenario: What If It Doesn't Match?
+## Scenario: Šta ako se ne poklapa?
 
 ```
 PO Item: ABC-123 (Copper Wire, 2mm)
@@ -337,19 +337,19 @@ Actions:
 
 ---
 
-# 6. Order Type Verification
+# 6. Verifikacija tipa narudžbine
 
-## Purpose
-Verifies the purchase order type is correct
+## Svrha
+Verifikuje da je tip narudžbenice ispravan
 
-## Order Types
-- **Standard Order**: Regular purchase
-- **Rush Order**: Urgent, may have premium
-- **Frame Agreement**: Long-term contract
-- **Blanket Order**: Open-ended contract
-- **Consignment**: You don't pay until used
+## Tipovi narudžbine
+- **Standard Order**: Redovna kupovina
+- **Rush Order**: Hitno, može imati premiju
+- **Frame Agreement**: Dugoročni ugovor
+- **Blanket Order**: Otvoreni ugovor
+- **Consignment**: Ne plaćate dok ne iskoristite
 
-## Check Example
+## Primer provere
 ```
 PO Order Type: Standard Order
 Invoice Order Type: Standard Order
@@ -360,14 +360,14 @@ If mismatch: Could affect terms, payment, pricing
 
 ---
 
-# 7. Delivery Date Verification
+# 7. Verifikacija datuma isporuke
 
-## Purpose
-Checks if delivery date matches the promised date on the PO
+## Svrha
+Proverava da li se datum isporuke poklapa sa obećanim datumom na PO
 
-## Calculation
+## Izračunavanje
 
-**Late Delivery:**
+**Zakasnela isporuka:**
 ```
 Formula:
   Days Late = Invoice Delivery Date - PO Promised Date
@@ -381,7 +381,7 @@ If tolerance is ±3 days:
   Is 7 ≤ 3? NO ❌ LATE
 ```
 
-**Early Delivery:**
+**Rana isporuka:**
 ```
 Formula:
   Days Early = PO Promised Date - Invoice Delivery Date
@@ -395,7 +395,7 @@ Early delivery is usually OK ✅
 Unless you need it at specific time
 ```
 
-## Tolerance Settings
+## Podešavanja tolerancije
 ```
 ±3 days: Allow 3 days late or early
 ±5 days: Allow up to 5 days variance
@@ -404,12 +404,12 @@ Unless you need it at specific time
 
 ---
 
-# 8. Charge Verification (Taxes, Shipping, Etc.)
+# 8. Verifikacija troškova (Porezi, dostava, itd.)
 
-## Purpose
-Checks if additional charges (taxes, shipping, handling) match PO
+## Svrha
+Proverava da li se dodatni troškovi (porezi, dostava, manipulacija) poklapaju sa PO
 
-## Common Charges
+## Uobičajeni troškovi
 ```
 - Shipping: €50
 - Handling: €10
@@ -418,9 +418,9 @@ Checks if additional charges (taxes, shipping, handling) match PO
 - Taxes: €300
 ```
 
-## Calculation
+## Izračunavanje
 
-**Example: Shipping Charge Check**
+**Primer: Provera troška dostave**
 ```
 PO Shipping: €50.00
 Invoice Shipping: €51.00
@@ -431,7 +431,7 @@ Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
 Is 2% ≤ 3%? YES ✅ ACCEPT
 ```
 
-**Example: Multiple Charges**
+**Primer: Više troškova**
 ```
 PO Total Charges:
   - Shipping: €50
@@ -451,12 +451,12 @@ Check if within tolerance ✅ or ❌
 
 ---
 
-# 9. Tax Verification
+# 9. Verifikacija poreza
 
-## Purpose
-Verifies tax amounts are calculated correctly
+## Svrha
+Verifikuje da su iznosi poreza ispravno izračunati
 
-## Calculation
+## Izračunavanje
 
 **Formula:**
 ```
@@ -471,7 +471,7 @@ Invoice Tax: €190
 Match? YES ✅
 ```
 
-**Common Issues:**
+**Uobičajeni problemi:**
 ```
 1. Tax rate changed (region-based)
 2. Tax applied to wrong amount (before/after discounts)
@@ -479,7 +479,7 @@ Match? YES ✅
 4. Tax exempt items (0% tax)
 ```
 
-**Example: Multi-Rate Taxation**
+**Primer: Oporezivanje sa više stopa**
 ```
 Item A: €100 @ 19% tax = €119
 Item B: €100 @ 7% tax = €107
@@ -493,12 +493,12 @@ Check: Within tolerance or needs attention?
 
 ---
 
-# 10. Facility/Cost Center Matching
+# 10. Uparivanje objekta/troškovnog centra
 
-## Purpose
-Ensures the invoice is for the correct facility/cost center
+## Svrha
+Obezbeđuje da je faktura za ispravan objekat/troškovni centar
 
-## Example
+## Primer
 ```
 PO is for:
 - Facility: Berlin Plant
@@ -513,12 +513,12 @@ If different facility: May need different approval
 
 ---
 
-# 11. Supplier Status Validation
+# 11. Validacija statusa dobavljača
 
-## Purpose
-Checks if the supplier is still approved/active
+## Svrha
+Proverava da li je dobavljač i dalje odobren/aktivan
 
-## Status Types
+## Tipovi statusa
 ```
 ✅ ACTIVE: Approved, can do business
 ⚠️ ON HOLD: Temporarily blocked
@@ -526,7 +526,7 @@ Checks if the supplier is still approved/active
 ⚠️ CONDITIONAL: Only for specific items
 ```
 
-## Check Example
+## Primer provere
 ```
 Supplier: ABC Corp
 Status in Database: ACTIVE
@@ -538,9 +538,9 @@ Alert: Supplier status changed! Investigate why.
 
 ---
 
-# Which Tolerance Should I Use?
+# Koju toleranciju da koristim?
 
-## Strict Tolerances (Lower Risk, More Manual Work)
+## Stroge tolerancije (Niži rizik, više ručnog rada)
 ```
 Use for:
 - High-value items
@@ -554,7 +554,7 @@ Settings:
 - Charges: ±1%
 ```
 
-## Moderate Tolerances (Balanced)
+## Umerene tolerancije (Izbalansirano)
 ```
 Use for:
 - Most business transactions
@@ -568,7 +568,7 @@ Settings:
 - Charges: ±5%
 ```
 
-## Loose Tolerances (Higher Risk, Less Manual Work)
+## Labave tolerancije (Viši rizik, manje ručnog rada)
 ```
 Use for:
 - Low-value items
@@ -584,7 +584,7 @@ Settings:
 
 ---
 
-# PO Matching Workflow Example
+# Primer toka rada za uparivanje PO
 
 ```
 Invoice Arrives
@@ -609,9 +609,9 @@ If Rejected: Return to Supplier
 
 ---
 
-# Troubleshooting PO Matching
+# Rešavanje problema sa uparivanjem PO
 
-## "PO Not Found"
+## „PO Not Found"
 ```
 Cause: Invoice PO number doesn't exist in system
 Fix:
@@ -621,7 +621,7 @@ Fix:
 4. Ask supplier for PO reference
 ```
 
-## "Items Don't Match"
+## „Items Don't Match"
 ```
 Cause: Invoice items are different from PO items
 Possible Reasons:
@@ -631,7 +631,7 @@ Possible Reasons:
 Fix: Contact procurement or supplier
 ```
 
-## "Price Higher Than PO"
+## „Price Higher Than PO"
 ```
 Cause: Invoice price > PO price
 Possible Reasons:
@@ -642,7 +642,7 @@ Possible Reasons:
 Fix: Verify with procurement
 ```
 
-## "Delivery Date Wrong"
+## „Delivery Date Wrong"
 ```
 Cause: Invoice dated after promised delivery
 Possible Reasons:
@@ -654,28 +654,27 @@ Fix: Check shipping documents or contact supplier
 
 ---
 
-# Summary Table
+# Zbirna tabela
 
-| Card | What It Checks | Main Calculation | Common Tolerance |
+| Kartica | Šta proverava | Glavno izračunavanje | Uobičajena tolerancija |
 |------|----------------|------------------|-----------------|
-| Full Match | Everything | All checks | Varies |
-| Unit Price | Price per unit | % or € difference | ±3-5% |
-| Quantity | Amount ordered | % or unit difference | ±3-5% |
-| Combined Price | Total with qty change | Qty × Price | ±5-10% |
-| Item ID | Right items | String match | Exact |
-| Order Type | Type of purchase | String match | Exact |
-| Delivery Date | When arrived | Day difference | ±3 days |
-| Charges | Extra fees | % or € difference | ±5% |
-| Tax | Tax amount | Tax % calculation | ±1% |
-| Facility | Cost center | String match | Exact |
-| Supplier | Approved? | Status check | Active only |
+| Full Match | Sve | Sve provere | Varira |
+| Unit Price | Cena po jedinici | Razlika u % ili € | ±3-5% |
+| Quantity | Naručeni iznos | Razlika u % ili jedinici | ±3-5% |
+| Combined Price | Ukupno sa promenom količine | Količina × Cena | ±5-10% |
+| Item ID | Ispravne stavke | Poklapanje stringa | Tačno |
+| Order Type | Tip kupovine | Poklapanje stringa | Tačno |
+| Delivery Date | Kada je stiglo | Razlika u danima | ±3 dana |
+| Charges | Dodatne naknade | Razlika u % ili € | ±5% |
+| Tax | Iznos poreza | Izračunavanje % poreza | ±1% |
+| Facility | Troškovni centar | Poklapanje stringa | Tačno |
+| Supplier | Odobren? | Provera statusa | Samo aktivni |
 
 ---
 
-# Related Documentation
+# Povezana dokumentacija
 
-- See "Invoice Validation" guide for complete workflow
-- See "Tolerance Settings" for recommended values by industry
-- See "Exception Handling" for what to do with failures
-- Contact your procurement team for specific tolerance policies
-
+- Pogledajte vodič „Invoice Validation" za kompletan tok rada
+- Pogledajte „Tolerance Settings" za preporučene vrednosti po industriji
+- Pogledajte „Exception Handling" za to šta raditi sa neuspesima
+- Kontaktirajte svoj tim za nabavku za specifične politike tolerancije

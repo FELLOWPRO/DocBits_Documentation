@@ -1,40 +1,40 @@
-# Condition Cards - Complete Guide
+# Uslovne kartice - Kompletan vodič
 
-**Covers:** 31 remaining condition cards
+**Pokriva:** 31 preostalu uslovnu karticu
 
 ---
 
-The condition cards on this page go in the **When** and **And** groups of the Workflow Builder — they decide whether the Then actions run:
+Uslovne kartice na ovoj stranici idu u grupe **When** i **And** u Workflow Builder-u — one odlučuju da li će se Then akcije pokrenuti:
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>Condition cards are added to the <strong>When</strong> and <strong>And</strong> groups via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Uslovne kartice se dodaju u grupe <strong>When</strong> i <strong>And</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Status:** Most condition cards are stable with single or dual-version structures
-**Version Pattern:** Most follow v1 → v2 pattern (adding i18n support)
-**Multi-Version Example:** CONDITION_DECISION_TREE_DATA (v2-v3)
+**Status:** Većina uslovnih kartica je stabilna sa jednoverzijskim ili dvoverzijskim strukturama
+**Obrazac verzija:** Većina prati obrazac v1 → v2 (dodavanje i18n podrške)
+**Primer sa više verzija:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Note:** Some PO comparison condition cards have 4-5 versions (see PO Matching Guide for details)
+**Napomena:** Neke uslovne kartice za poređenje PO imaju 4-5 verzija (videti PO Matching Guide za detalje)
 
-📖 [Complete Version History](../../../changelog/release.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Kompletna istorija verzija](../../../changelog/release.md) | [Baza podataka verzija kartica](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 
-# Document State & Status Conditions
+# Uslovi stanja i statusa dokumenta
 
-## Card: CONDITION_DOC_STATUS_IS_ISNOT / Document Status Check
+## Kartica: CONDITION_DOC_STATUS_IS_ISNOT / Provera statusa dokumenta
 
-### Purpose
-Checks if document has specific status
+### Svrha
+Proverava da li dokument ima određeni status
 
-### When to Use
-- Before approving
-- At specific workflow stage
-- Status-based routing
+### Kada koristiti
+- Pre odobravanja
+- U određenoj fazi toka rada
+- Rutiranje zasnovano na statusu
 
-### Document Status Types
+### Tipovi statusa dokumenta
 ```
 - Upload: Being uploaded
 - OCR: Being scanned
@@ -48,7 +48,7 @@ Checks if document has specific status
 - Error: Problem occurred
 ```
 
-### How It Works
+### Kako funkcioniše
 ```
 Current Status: "Pending Approval"
     ↓
@@ -58,7 +58,7 @@ YES → Continue with action
 NO → Stop or do alternative action
 ```
 
-### Example
+### Primer
 ```
 Condition: "Document status IS Pending Approval?"
     ↓
@@ -66,7 +66,7 @@ If YES: Create approval task
 If NO: Do something else
 ```
 
-### Parameters
+### Parametri
 ```
 Operator: IS / IS NOT
 Status: [Select status]
@@ -74,16 +74,16 @@ Status: [Select status]
 
 ---
 
-## Card: CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST
+## Kartica: CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST
 
-### Purpose
-Checks if status matches any in a list
+### Svrha
+Proverava da li se status poklapa sa bilo kojim u listi
 
-### When to Use
-- Multiple valid statuses
-- OR logic for status
+### Kada koristiti
+- Više važećih statusa
+- OR logika za status
 
-### Example
+### Primer
 ```
 Condition: "Status is one of: [Pending Approval, Pending Second Approval, Workflow]?"
     ↓
@@ -93,12 +93,12 @@ If doesn't match: Stop
 
 ---
 
-## Card: CONDITION_DOC_TYPE_IS_ISNOT / Document Type Check
+## Kartica: CONDITION_DOC_TYPE_IS_ISNOT / Provera tipa dokumenta
 
-### Purpose
-Checks if document is specific type
+### Svrha
+Proverava da li je dokument određenog tipa
 
-### Document Types
+### Tipovi dokumenata
 ```
 - Invoice
 - Credit Note
@@ -110,7 +110,7 @@ Checks if document is specific type
 - Custom Types
 ```
 
-### How It Works
+### Kako funkcioniše
 ```
 Document type: "Invoice"
     ↓
@@ -120,7 +120,7 @@ YES → Process as invoice
 NO → Process differently
 ```
 
-### Example
+### Primer
 ```
 Condition: "Document type IS Invoice?"
     ↓
@@ -130,12 +130,12 @@ If NO: Skip PO validation
 
 ---
 
-## Card: CONDITION_DOC_TYPE_IS_ISNOT_LIST
+## Kartica: CONDITION_DOC_TYPE_IS_ISNOT_LIST
 
-### Purpose
-Checks if type matches any in list
+### Svrha
+Proverava da li se tip poklapa sa bilo kojim u listi
 
-### Example
+### Primer
 ```
 Condition: "Type is one of: [Invoice, Credit Note]?"
     ↓
@@ -145,12 +145,12 @@ NO: Skip financial checks
 
 ---
 
-## Card: CONDITION_SUB_ORG_IS_ISNOT / Sub-Organization Check
+## Kartica: CONDITION_SUB_ORG_IS_ISNOT / Provera pod-organizacije
 
-### Purpose
-Checks which organization/department owns document
+### Svrha
+Proverava koja organizacija/odeljenje poseduje dokument
 
-### Organizations
+### Organizacije
 ```
 - Finance Department
 - Procurement
@@ -161,7 +161,7 @@ Checks which organization/department owns document
 - Regional Offices
 ```
 
-### Example
+### Primer
 ```
 Document belongs to: "Berlin Office"
     ↓
@@ -173,12 +173,12 @@ NO: Check other offices
 
 ---
 
-## Card: CONDITION_PURCHASE_ORDER_IMPORT / PO Import Check
+## Kartica: CONDITION_PURCHASE_ORDER_IMPORT / Provera uvoza PO
 
-### Purpose
-Checks if PO is newly imported or existing
+### Svrha
+Proverava da li je PO novouvezen ili postojeći
 
-### How It Works
+### Kako funkcioniše
 ```
 PO Status: "Newly Imported" (First time seeing this PO)
     ↓
@@ -188,21 +188,21 @@ YES: Do initial validation
 NO: Use cached PO data
 ```
 
-### When to Use
-- Different handling for new POs
-- Skip validation for known POs
-- Track first time seeing supplier
+### Kada koristiti
+- Različito rukovanje za nove PO
+- Preskakanje validacije za poznate PO
+- Praćenje prvog viđenja dobavljača
 
 ---
 
-# Assignee Conditions
+# Uslovi osobe za dodeljivanje
 
-## Card: CONDITION_USER_IS_ISNOT / User Check
+## Kartica: CONDITION_USER_IS_ISNOT / Provera korisnika
 
-### Purpose
-Checks if document assigned to specific user
+### Svrha
+Proverava da li je dokument dodeljen određenom korisniku
 
-### How It Works
+### Kako funkcioniše
 ```
 Assigned to: "John Smith"
     ↓
@@ -212,7 +212,7 @@ YES: Continue
 NO: Stop
 ```
 
-### Example
+### Primer
 ```
 Condition: "Assigned to IS 'Finance Manager'"?
     ↓
@@ -222,12 +222,12 @@ If NO: Skip approval
 
 ---
 
-## Card: CONDITION_USER_IS_ISNOT_IN_LIST
+## Kartica: CONDITION_USER_IS_ISNOT_IN_LIST
 
-### Purpose
-Checks if assigned to any user in list
+### Svrha
+Proverava da li je dodeljen bilo kom korisniku u listi
 
-### Example
+### Primer
 ```
 Condition: "Assigned to one of: [John, Sarah, Mike]?"
     ↓
@@ -237,12 +237,12 @@ NO: Stop
 
 ---
 
-## Card: CONDITION_GROUP_IS_ISNOT / Group Check
+## Kartica: CONDITION_GROUP_IS_ISNOT / Provera grupe
 
-### Purpose
-Checks if assigned to specific group
+### Svrha
+Proverava da li je dodeljen određenoj grupi
 
-### Example
+### Primer
 ```
 Assigned to: "Finance Team" (10 members)
     ↓
@@ -254,12 +254,12 @@ NO: Check other groups
 
 ---
 
-## Card: CONDITION_GROUP_IS_ISNOT_IN_LIST
+## Kartica: CONDITION_GROUP_IS_ISNOT_IN_LIST
 
-### Purpose
-Checks if assigned to any group in list
+### Svrha
+Proverava da li je dodeljen bilo kojoj grupi u listi
 
-### Example
+### Primer
 ```
 Condition: "Assigned to one of: [Finance, Procurement, Quality]?"
     ↓
@@ -269,14 +269,14 @@ NO: Stop
 
 ---
 
-# Date & Time Conditions
+# Uslovi datuma i vremena
 
-## Card: CONDITION_TIME_IS_ISNOT_BETWEEN / Date Range Check
+## Kartica: CONDITION_TIME_IS_ISNOT_BETWEEN / Provera opsega datuma
 
-### Purpose
-Checks if date falls between two dates
+### Svrha
+Proverava da li datum spada između dva datuma
 
-### How It Works
+### Kako funkcioniše
 ```
 Document Date: 2025-10-23
     ↓
@@ -286,7 +286,7 @@ YES (October) → Continue
 NO (Other month) → Stop
 ```
 
-### Calculation
+### Izračunavanje
 ```
 Formula:
   Start Date ≤ Document Date ≤ End Date?
@@ -296,12 +296,12 @@ Example:
   YES ✅ Within range
 ```
 
-### When to Use
-- Check if in fiscal period
-- Check if within deadline
-- Check if in promotional period
+### Kada koristiti
+- Provera da li je u fiskalnom periodu
+- Provera da li je unutar roka
+- Provera da li je u promotivnom periodu
 
-### Example
+### Primer
 ```
 Condition: "Document date between Oct 1 and Oct 31?"
     ↓
@@ -309,7 +309,7 @@ If YES: Oct invoices (monthly processing)
 If NO: Other month invoices
 ```
 
-### Parameters
+### Parametri
 ```
 Start Date: [Select or enter]
 End Date: [Select or enter]
@@ -318,12 +318,12 @@ Date Field: [Which field to check]
 
 ---
 
-## Card: CONDITION_TODAY_IS_ISNOT / Today Check
+## Kartica: CONDITION_TODAY_IS_ISNOT / Provera današnjeg dana
 
-### Purpose
-Checks if today's date matches criteria
+### Svrha
+Proverava da li današnji datum ispunjava kriterijume
 
-### How It Works
+### Kako funkcioniše
 ```
 Today: 2025-10-23
     ↓
@@ -333,14 +333,14 @@ NO → Deadline not passed
 YES → Deadline passed (overdue)
 ```
 
-### Use Cases
+### Slučajevi upotrebe
 ```
 Is today past deadline? → Invoice is overdue
 Is today past promotion date? → Promotion ended
 Is today in quarter? → For quarterly reporting
 ```
 
-### Example
+### Primer
 ```
 Condition: "Is today AFTER invoice due date?"
     ↓
@@ -350,12 +350,12 @@ If NO: Invoice still within deadline
 
 ---
 
-## Card: CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
+## Kartica: CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
 
-### Purpose
-Checks if delivery date matches approved delivery dates in calendar
+### Svrha
+Proverava da li se datum isporuke poklapa sa odobrenim datumima isporuke u kalendaru
 
-### How It Works
+### Kako funkcioniše
 ```
 Delivery Date from Invoice: 2025-10-25
     ↓
@@ -367,12 +367,12 @@ YES: Date is acceptable
 NO: Date not in approved list
 ```
 
-### When to Use
-- Verify delivery matches agreed dates
-- Check against holiday calendar
-- Validate against contracted dates
+### Kada koristiti
+- Verifikacija da se isporuka poklapa sa dogovorenim datumima
+- Provera u odnosu na kalendar praznika
+- Validacija u odnosu na ugovorene datume
 
-### Example
+### Primer
 ```
 Supplier promised: 2025-10-25
 Invoice shows delivery: 2025-10-25
@@ -383,14 +383,14 @@ YES: Delivery date acceptable ✅
 
 ---
 
-# Logic Conditions
+# Logički uslovi
 
-## Card: CONDITION_DECISION_TREE_DATA / Decision Table Returns
+## Kartica: CONDITION_DECISION_TREE_DATA / Povratne vrednosti tabele odlučivanja
 
-### Purpose
-Checks if decision table has return values
+### Svrha
+Proverava da li tabela odlučivanja ima povratne vrednosti
 
-### How It Works
+### Kako funkcioniše
 ```
 Run Decision Table
     ↓
@@ -400,12 +400,12 @@ YES: Data is available for next cards
 NO: No matching results
 ```
 
-### When to Use
-- Before using decision table results
-- As gate condition
-- To check if routing available
+### Kada koristiti
+- Pre korišćenja rezultata tabele odlučivanja
+- Kao uslov kapije
+- Za proveru da li je rutiranje dostupno
 
-### Example
+### Primer
 ```
 Decision Table: "Route by supplier"
     ↓
@@ -417,12 +417,12 @@ If NO: Use default routing
 
 ---
 
-## Card: CONDITION_CONTINUE_CHANCE / Random Probability
+## Kartica: CONDITION_CONTINUE_CHANCE / Slučajna verovatnoća
 
-### Purpose
-Continues with specified probability
+### Svrha
+Nastavlja sa navedenom verovatnoćom
 
-### How It Works
+### Kako funkcioniše
 ```
 Probability: 50%
     ↓
@@ -431,12 +431,12 @@ Roll dice
 Random chance: 50% YES, 50% NO
 ```
 
-### When to Use
-- A/B testing workflows
-- Sampling documents
-- Random quality checks
+### Kada koristiti
+- A/B testiranje tokova rada
+- Uzorkovanje dokumenata
+- Slučajne provere kvaliteta
 
-### Example
+### Primer
 ```
 Condition: "Continue with 10% chance?"
     ↓
@@ -444,7 +444,7 @@ Condition: "Continue with 10% chance?"
 10% of documents: Continue for detailed review
 ```
 
-### Calculation
+### Izračunavanje
 ```
 If probability = 50%:
   - 50% of documents continue
@@ -457,12 +457,12 @@ If probability = 10%:
 
 ---
 
-## Card: CONDITION_MODULE_IS_ISNOT_ACTIVE / Feature Check
+## Kartica: CONDITION_MODULE_IS_ISNOT_ACTIVE / Provera funkcije
 
-### Purpose
-Checks if specific module/feature is enabled
+### Svrha
+Proverava da li je određeni modul/funkcija omogućen
 
-### Modules
+### Moduli
 ```
 - PO Matching
 - Auto Accounting
@@ -472,7 +472,7 @@ Checks if specific module/feature is enabled
 - Custom Modules
 ```
 
-### How It Works
+### Kako funkcioniše
 ```
 Module: "PO Matching"
     ↓
@@ -482,19 +482,19 @@ YES: Do PO match validation
 NO: Skip PO checks
 ```
 
-### When to Use
-- Feature-dependent workflows
-- Optional processing
-- Check if licensed feature active
+### Kada koristiti
+- Tokovi rada zavisni od funkcije
+- Opciona obrada
+- Provera da li je licencirana funkcija aktivna
 
 ---
 
-## Card: CONDITION_HTTPS_REQUEST_STATUS / Request Result Check
+## Kartica: CONDITION_HTTPS_REQUEST_STATUS / Provera rezultata zahteva
 
-### Purpose
-Checks if HTTPS request was successful
+### Svrha
+Proverava da li je HTTPS zahtev bio uspešan
 
-### Status Codes
+### Statusni kodovi
 ```
 200-299: ✅ Success
 300-399: ↪️ Redirect
@@ -502,7 +502,7 @@ Checks if HTTPS request was successful
 500-599: ❌ Server Error
 ```
 
-### How It Works
+### Kako funkcioniše
 ```
 Send HTTPS request
     ↓
@@ -514,7 +514,7 @@ YES: Continue with response data
 NO: Error handling
 ```
 
-### Example
+### Primer
 ```
 Send pricing request to API
     ↓
@@ -526,12 +526,12 @@ If NO: Use fallback price
 
 ---
 
-## Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT / Supplier Status Check
+## Kartica: CONDITION_SUPPLIER_STATUS_IS_ISNOT / Provera statusa dobavljača
 
-### Purpose
-Checks supplier's status in system
+### Svrha
+Proverava status dobavljača u sistemu
 
-### Supplier Statuses
+### Statusi dobavljača
 ```
 ✅ ACTIVE: Can do business
 ⚠️ ON HOLD: Temporarily blocked
@@ -539,7 +539,7 @@ Checks supplier's status in system
 ⚠️ CONDITIONAL: Only for specific items
 ```
 
-### How It Works
+### Kako funkcioniše
 ```
 Supplier: ABC Corp
 Status in Database: ACTIVE
@@ -550,7 +550,7 @@ YES: Process normally
 NO: Flag for review
 ```
 
-### Example
+### Primer
 ```
 Invoice from ABC Corp
     ↓
@@ -562,12 +562,12 @@ If NO: Block or escalate
 
 ---
 
-## Card: CONDITION_SPECIFY_SUPPLIER_TYPE
+## Kartica: CONDITION_SPECIFY_SUPPLIER_TYPE
 
-### Purpose
-Specifies/checks supplier type
+### Svrha
+Navodi/proverava tip dobavljača
 
-### Supplier Types
+### Tipovi dobavljača
 ```
 - Preferred Supplier
 - Standard Supplier
@@ -576,7 +576,7 @@ Specifies/checks supplier type
 - Strategic Partner
 ```
 
-### How It Works
+### Kako funkcioniše
 ```
 Supplier Type: "Preferred"
     ↓
@@ -588,9 +588,9 @@ NO: Standard pricing
 
 ---
 
-# Example Decision Flows
+# Primeri tokova odlučivanja
 
-## Flow 1: Status-Based Processing
+## Tok 1: Obrada zasnovana na statusu
 ```
 Document Arrives
     ↓
@@ -607,7 +607,7 @@ Check: Status = "Error"?
 YES: Escalate to manager
 ```
 
-## Flow 2: Supplier-Based Processing
+## Tok 2: Obrada zasnovana na dobavljaču
 ```
 Invoice Arrives
     ↓
@@ -621,7 +621,7 @@ YES: Fast track approval
 NO: Standard approval
 ```
 
-## Flow 3: Amount-Based with Date Check
+## Tok 3: Zasnovano na iznosu sa proverom datuma
 ```
 Invoice Arrives
     ↓
@@ -635,48 +635,48 @@ NO: Assign to Finance Manager
 
 ---
 
-# Condition Card Comparison
+# Poređenje uslovnih kartica
 
-| Card | Checks | Operator | Use |
+| Kartica | Proverava | Operator | Upotreba |
 |------|--------|----------|-----|
-| CONDITION_DOC_STATUS_IS_ISNOT | Document status | IS / IS NOT | Stage check |
-| CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST | Status in list | IN / NOT IN | Multiple statuses |
-| CONDITION_DOC_TYPE_IS_ISNOT | Document type | IS / IS NOT | Type filtering |
-| CONDITION_DOC_TYPE_IS_ISNOT_LIST | Type in list | IN / NOT IN | Multiple types |
-| CONDITION_SUB_ORG_IS_ISNOT | Organization | IS / IS NOT | Department check |
-| CONDITION_USER_IS_ISNOT | Assigned user | IS / IS NOT | User check |
-| CONDITION_USER_IS_ISNOT_IN_LIST | User in list | IN / NOT IN | Multiple users |
-| CONDITION_GROUP_IS_ISNOT | Assigned group | IS / IS NOT | Group check |
-| CONDITION_GROUP_IS_ISNOT_IN_LIST | Group in list | IN / NOT IN | Multiple groups |
-| CONDITION_TIME_IS_ISNOT_BETWEEN | Date range | BETWEEN | Date window |
-| CONDITION_TODAY_IS_ISNOT | Today's date | IS / IS NOT | Today check |
-| CONDITION_DECISION_TREE_DATA | DT returns | HAS / HAS NOT | DT result check |
-| CONDITION_CONTINUE_CHANCE | Probability | CHANCE | Random gate |
-| CONDITION_MODULE_IS_ISNOT_ACTIVE | Feature enabled | IS / IS NOT | Feature check |
-| CONDITION_HTTPS_REQUEST_STATUS | Request result | STATUS | Response check |
-| CONDITION_SUPPLIER_STATUS_IS_ISNOT | Supplier status | IS / IS NOT | Supplier check |
+| CONDITION_DOC_STATUS_IS_ISNOT | Status dokumenta | IS / IS NOT | Provera faze |
+| CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST | Status u listi | IN / NOT IN | Više statusa |
+| CONDITION_DOC_TYPE_IS_ISNOT | Tip dokumenta | IS / IS NOT | Filtriranje po tipu |
+| CONDITION_DOC_TYPE_IS_ISNOT_LIST | Tip u listi | IN / NOT IN | Više tipova |
+| CONDITION_SUB_ORG_IS_ISNOT | Organizacija | IS / IS NOT | Provera odeljenja |
+| CONDITION_USER_IS_ISNOT | Dodeljeni korisnik | IS / IS NOT | Provera korisnika |
+| CONDITION_USER_IS_ISNOT_IN_LIST | Korisnik u listi | IN / NOT IN | Više korisnika |
+| CONDITION_GROUP_IS_ISNOT | Dodeljena grupa | IS / IS NOT | Provera grupe |
+| CONDITION_GROUP_IS_ISNOT_IN_LIST | Grupa u listi | IN / NOT IN | Više grupa |
+| CONDITION_TIME_IS_ISNOT_BETWEEN | Opseg datuma | BETWEEN | Vremenski prozor |
+| CONDITION_TODAY_IS_ISNOT | Današnji datum | IS / IS NOT | Provera današnjeg dana |
+| CONDITION_DECISION_TREE_DATA | Povratne vrednosti DT | HAS / HAS NOT | Provera rezultata DT |
+| CONDITION_CONTINUE_CHANCE | Verovatnoća | CHANCE | Slučajna kapija |
+| CONDITION_MODULE_IS_ISNOT_ACTIVE | Funkcija omogućena | IS / IS NOT | Provera funkcije |
+| CONDITION_HTTPS_REQUEST_STATUS | Rezultat zahteva | STATUS | Provera odgovora |
+| CONDITION_SUPPLIER_STATUS_IS_ISNOT | Status dobavljača | IS / IS NOT | Provera dobavljača |
 
 ---
 
-# Best Practices for Conditions
+# Najbolje prakse za uslove
 
-✅ **Do:**
-- Use specific conditions
-- Test logic with samples
-- Order conditions logically
-- Have fallback for all paths
-- Document complex logic
+✅ **Radite:**
+- Koristite specifične uslove
+- Testirajte logiku sa uzorcima
+- Logički poređajte uslove
+- Imajte rezervnu opciju za sve putanje
+- Dokumentujte složenu logiku
 
-❌ **Don't:**
-- Create circular conditions (A if B, B if A)
-- Make conditions too complex
-- Forget about edge cases
-- Assume field always has value
-- Create impossible conditions
+❌ **Ne radite:**
+- Ne kreirajte kružne uslove (A ako B, B ako A)
+- Ne pravite uslove previše složenim
+- Ne zaboravljajte granične slučajeve
+- Ne pretpostavljajte da polje uvek ima vrednost
+- Ne kreirajte nemoguće uslove
 
 ---
 
-# Combining Multiple Conditions
+# Kombinovanje više uslova
 
 ```
 Condition 1: Type = Invoice?
@@ -691,9 +691,8 @@ SOME FALSE → Stop
 
 ---
 
-# Related Cards
+# Povezane kartice
 
-- **CONDITION_DOC_FIELD_CONTAINS** - Field content check
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - Field comparison
-- **CONDITION_CHECKBOX_IS** - Checkbox check
-
+- **CONDITION_DOC_FIELD_CONTAINS** - Provera sadržaja polja
+- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - Poređenje polja
+- **CONDITION_CHECKBOX_IS** - Provera polja za potvrdu

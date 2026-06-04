@@ -1,47 +1,47 @@
-# Document Assignment & User Cards - Complete Guide
+# Kartice za dodeljivanje dokumenata i korisnike - Kompletan vodič
 
-**Covers:** 13 assignment and user-related cards
+**Pokriva:** 13 kartica povezanih sa dodeljivanjem i korisnicima
 
 ---
 
-The cards on this page go in the **Then** group of the Workflow Builder — the actions that run once the When/And conditions match:
+Kartice na ovoj stranici idu u grupu **Then** u Workflow Builder-u — akcije koje se pokreću kada se When/And uslovi poklope:
 
-<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then card groups"><figcaption><p>Assignment and user cards are added to the <strong>Then</strong> group via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa grupama kartica When, And i Then"><figcaption><p>Kartice za dodeljivanje i korisnike se dodaju u grupu <strong>Then</strong> preko <strong>Add Card</strong>.</p></figcaption></figure>
 
 ---
 
 ## 📌 Version Information
 
-**Multi-Version Cards:** DOC_USER_ASSIGN (v2 latest, v3 deprecated), DOC_GROUP_ASSIGN (v2 latest, v3 deprecated), OC_ASSIGN_DOC (v2)
+**Kartice sa više verzija:** DOC_USER_ASSIGN (v2 najnovija, v3 zastarela), DOC_GROUP_ASSIGN (v2 najnovija, v3 zastarela), OC_ASSIGN_DOC (v2)
 
-**Important:** v3 versions added decision tree support but are now deprecated
-**Recommendation:** Use v2 for both DOC_USER_ASSIGN and DOC_GROUP_ASSIGN
+**Važno:** v3 verzije su dodale podršku za stablo odlučivanja ali su sada zastarele
+**Preporuka:** Koristite v2 i za DOC_USER_ASSIGN i za DOC_GROUP_ASSIGN
 
-📖 [Complete Version History](../../../changelog/release.md#-assignment--routing-cards) | [Card Version Database](../../../../DocFlow/docs/card_version.md)
+📖 [Kompletna istorija verzija](../../../changelog/release.md#-assignment--routing-cards) | [Baza podataka verzija kartica](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-# Basic Document Assignment
+# Osnovno dodeljivanje dokumenata
 
-## Card: DOC_USER_ASSIGN / Assign Document to User
+## Kartica: DOC_USER_ASSIGN / Dodeli dokument korisniku
 
-### Purpose
-Assigns document to a specific person for their action
+### Svrha
+Dodeljuje dokument određenoj osobi za njenu akciju
 
-### When to Use
-- Document needs specific person's review
-- Handoff to individual team member
-- Accountability tracking
-- Assign work to named person
+### Kada koristiti
+- Dokument zahteva pregled određene osobe
+- Predaja pojedinačnom članu tima
+- Praćenje odgovornosti
+- Dodeljivanje posla imenovanoj osobi
 
-### How It Works
+### Kako funkcioniše
 ```
 Document is "assigned to" = John Smith
 Only John can see it as assigned to him
 John is responsible for this document
 ```
 
-### Example
+### Primer
 ```
 Invoice arrives
     ↓
@@ -51,39 +51,39 @@ Only John sees "Assigned to Me"
 John must take action on it
 ```
 
-### Parameters
+### Parametri
 ```
 User: [Select which person]
 ```
 
-### Note
-Assigning means:
-- Document shows as "assigned to me" for that person
-- That person is responsible
-- Others can still see document (but not as assigned to them)
-- One assignment at a time per document
+### Napomena
+Dodeljivanje znači:
+- Dokument se prikazuje kao „assigned to me" za tu osobu
+- Ta osoba je odgovorna
+- Drugi i dalje mogu videti dokument (ali ne kao dodeljen njima)
+- Jedno dodeljivanje po dokumentu istovremeno
 
 ---
 
-## Card: DOC_GROUP_ASSIGN / Assign Document to Group
+## Kartica: DOC_GROUP_ASSIGN / Dodeli dokument grupi
 
-### Purpose
-Assigns document to a group (all members see it as assigned to them)
+### Svrha
+Dodeljuje dokument grupi (svi članovi ga vide kao dodeljen njima)
 
-### When to Use
-- Document for team, not individual
-- Multiple people can handle
-- Shared responsibility
-- Team workload distribution
+### Kada koristiti
+- Dokument za tim, ne za pojedinca
+- Više ljudi može da rukuje
+- Deljena odgovornost
+- Raspodela radnog opterećenja tima
 
-### How It Works
+### Kako funkcioniše
 ```
 Document is "assigned to" = Finance Team (10 people)
 All 10 team members see "Assigned to My Group"
 Any team member can take action
 ```
 
-### Example
+### Primer
 ```
 New vendor invoice
     ↓
@@ -93,12 +93,12 @@ All procurement team members see it
 First available person handles it
 ```
 
-### Parameters
+### Parametri
 ```
 Group: [Select which group]
 ```
 
-### Difference
+### Razlika
 ```
 Individual Assignment:
 - One person responsible
@@ -113,18 +113,18 @@ Group Assignment:
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE
+## Kartica: ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE
 
-### Purpose
-Assigns document based on decision table logic
+### Svrha
+Dodeljuje dokument na osnovu logike tabele odlučivanja
 
-### When to Use
-- Different suppliers need different handlers
-- Assignment based on amount
-- Complex routing logic
-- Multiple conditions for assignment
+### Kada koristiti
+- Različiti dobavljači zahtevaju različite obrađivače
+- Dodeljivanje na osnovu iznosa
+- Složena logika rutiranja
+- Više uslova za dodeljivanje
 
-### How It Works
+### Kako funkcioniše
 ```
 Decision Table Logic:
   If Supplier = "ABC Corp" → Assign to: Procurement Team
@@ -138,7 +138,7 @@ Check: Which condition matches?
 Assign accordingly
 ```
 
-### Example: Amount-Based Assignment
+### Primer: Dodeljivanje na osnovu iznosa
 ```
 Invoice: €2000 from ABC Corp
 
@@ -150,7 +150,7 @@ Decision Table checks:
 Result: Assign to: Finance Manager
 ```
 
-### Example: Supplier-Based Assignment
+### Primer: Dodeljivanje na osnovu dobavljača
 ```
 Invoice from: Preferred Supplier
 
@@ -162,7 +162,7 @@ Decision Table:
 Result: Assign to: Finance Team
 ```
 
-### Parameters
+### Parametri
 ```
 Decision Table: [Select decision table]
 (Decision table contains assignment logic)
@@ -170,18 +170,18 @@ Decision Table: [Select decision table]
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL
+## Kartica: ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL
 
-### Purpose
-Assigns document sequentially based on decision table with priorities
+### Svrha
+Dodeljuje dokument sekvencijalno na osnovu tabele odlučivanja sa prioritetima
 
-### When to Use
-- Multiple sequential approvals
-- Different people at different levels
-- Approval chain based on amount
-- Escalation path
+### Kada koristiti
+- Više sekvencijalnih odobravanja
+- Različite osobe na različitim nivoima
+- Lanac odobravanja na osnovu iznosa
+- Putanja eskalacije
 
-### How It Works
+### Kako funkcioniše
 ```
 First Decision: Who approves first?
     ↓
@@ -198,7 +198,7 @@ Person 2 approves (final)
 Document Complete
 ```
 
-### Priority System
+### Sistem prioriteta
 ```
 Priority 1: First assignment
 Priority 2: Second assignment
@@ -208,7 +208,7 @@ Priority 3: Third assignment
 Each must complete before next begins
 ```
 
-### Example: Multi-Level Approval
+### Primer: Višenivovsko odobravanje
 ```
 Invoice: €50,000
 
@@ -225,7 +225,7 @@ Invoice Flow:
 Each step depends on previous completion
 ```
 
-### Parameters
+### Parametri
 ```
 Decision Table: [Select]
 Priority Order: [Determined by decision table]
@@ -233,17 +233,17 @@ Priority Order: [Determined by decision table]
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL
+## Kartica: ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL
 
-### Purpose
-Assigns document to user with sequential priority
+### Svrha
+Dodeljuje dokument korisniku sa sekvencijalnim prioritetom
 
-### When to Use
-- Document needs specific person
-- Clear sequential processing
-- Single assignment with order
+### Kada koristiti
+- Dokument zahteva određenu osobu
+- Jasna sekvencijalna obrada
+- Jedno dodeljivanje sa redosledom
 
-### How It Works
+### Kako funkcioniše
 ```
 Assign Document to: User A (Priority 1)
     ↓
@@ -254,7 +254,7 @@ Then: Assign to User B (Priority 2)
 User B processes
 ```
 
-### Example
+### Primer
 ```
 Invoice processing:
 1. Assign to: Accounts Payable Clerk
@@ -266,17 +266,17 @@ Each person has their turn
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL
+## Kartica: ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL
 
-### Purpose
-Assigns document sequentially to groups
+### Svrha
+Dodeljuje dokument sekvencijalno grupama
 
-### When to Use
-- Multiple group approvals
-- Different departments at each stage
-- Team-based sequential processing
+### Kada koristiti
+- Više odobravanja grupa
+- Različita odeljenja u svakoj fazi
+- Sekvencijalna obrada zasnovana na timu
 
-### How It Works
+### Kako funkcioniše
 ```
 Step 1: Assign to Group A (Quality Team)
         Quality verifies
@@ -288,7 +288,7 @@ Step 3: Assign to Group C (Procurement)
         Procurement approves
 ```
 
-### Example
+### Primer
 ```
 New Supplier Onboarding:
 
@@ -309,17 +309,17 @@ Document passes through all three
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP
+## Kartica: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP
 
-### Purpose
-Assigns document to specific facility group
+### Svrha
+Dodeljuje dokument određenoj grupi objekta
 
-### When to Use
-- Document for specific warehouse/facility
-- Facility-based operations
-- Location-specific processing
+### Kada koristiti
+- Dokument za određeno skladište/objekat
+- Operacije zasnovane na objektu
+- Obrada specifična za lokaciju
 
-### Example
+### Primer
 ```
 Shipment notification
 
@@ -336,17 +336,17 @@ Munich warehouse processes shipment
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL
+## Kartica: ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL
 
-### Purpose
-Assigns sequentially across facilities
+### Svrha
+Dodeljuje sekvencijalno kroz objekte
 
-### When to Use
-- Multi-location processing
-- Shipment passes through facilities
-- Location-based workflow
+### Kada koristiti
+- Obrada na više lokacija
+- Pošiljka prolazi kroz objekte
+- Tok rada zasnovan na lokaciji
 
-### Example
+### Primer
 ```
 Manufacturing Order:
 
@@ -360,17 +360,17 @@ Document/shipment passes through each
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP
+## Kartica: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP
 
-### Purpose
-Assigns document to procurement department
+### Svrha
+Dodeljuje dokument odeljenju nabavke
 
-### When to Use
-- Procurement team handling
-- Supplier-related work
-- Purchase order related
+### Kada koristiti
+- Rukovanje od strane tima za nabavku
+- Posao povezan sa dobavljačem
+- Povezano sa narudžbenicom
 
-### Example
+### Primer
 ```
 Vendor evaluation document
     ↓
@@ -381,16 +381,16 @@ Procurement team evaluates vendor
 
 ---
 
-## Card: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL
+## Kartica: ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL
 
-### Purpose
-Sequential assignment within procurement
+### Svrha
+Sekvencijalno dodeljivanje unutar nabavke
 
-### When to Use
-- Multi-step procurement process
-- Approval chain in procurement
+### Kada koristiti
+- Višekoračni proces nabavke
+- Lanac odobravanja u nabavci
 
-### Example
+### Primer
 ```
 Purchase Requisition:
 
@@ -403,17 +403,17 @@ Each step in sequence
 
 ---
 
-## Card: ACTION_CHANGE_DOC_SUBORG / Change Document Sub-Organization
+## Kartica: ACTION_CHANGE_DOC_SUBORG / Promeni pod-organizaciju dokumenta
 
-### Purpose
-Assigns document to different sub-organization
+### Svrha
+Dodeljuje dokument drugoj pod-organizaciji
 
-### When to Use
-- Wrong organization selected
-- Need to move to correct department
-- Organizational restructuring
+### Kada koristiti
+- Izabrana pogrešna organizacija
+- Potrebno premeštanje u ispravno odeljenje
+- Reorganizacija
 
-### How It Works
+### Kako funkcioniše
 ```
 Current Sub-Org: Finance Department
     ↓
@@ -422,7 +422,7 @@ Change to: Accounting Department
 Document now belongs to Accounting
 ```
 
-### Example
+### Primer
 ```
 Document for: Berlin Office
     ↓
@@ -433,17 +433,17 @@ Change Sub-Organization to: Munich Office
 
 ---
 
-## Card: ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT
+## Kartica: ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT
 
-### Purpose
-Changes sub-organization based on document field value
+### Svrha
+Menja pod-organizaciju na osnovu vrednosti polja dokumenta
 
-### When to Use
-- Sub-organization stored in field
-- Match document location with field
-- Automatic org assignment
+### Kada koristiti
+- Pod-organizacija sačuvana u polju
+- Poklapanje lokacije dokumenta sa poljem
+- Automatsko dodeljivanje organizacije
 
-### How It Works
+### Kako funkcioniše
 ```
 Document Field: "Delivery_Location" = "Berlin"
     ↓
@@ -455,7 +455,7 @@ Decision Table:
 Document assigned to: Berlin Sub-Org
 ```
 
-### Example
+### Primer
 ```
 Invoice field: "Cost Center: CC-Berlin-001"
     ↓
@@ -466,17 +466,17 @@ Change document to: Berlin Sub-Organization
 
 ---
 
-## Card: ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK
+## Kartica: ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK
 
-### Purpose
-Assigns document to user from field, with fallback if user not found
+### Svrha
+Dodeljuje dokument korisniku iz polja, sa rezervnom opcijom ako korisnik nije pronađen
 
-### When to Use
-- User name stored in document field
-- May not exist in system
-- Need backup if user unavailable
+### Kada koristiti
+- Ime korisnika sačuvano u polju dokumenta
+- Možda ne postoji u sistemu
+- Potrebna rezerva ako korisnik nije dostupan
 
-### How It Works
+### Kako funkcioniše
 ```
 Document Field: "Approver: John Smith"
     ↓
@@ -489,13 +489,13 @@ Use Fallback: Sarah Johnson (Manager)
 Document assigned to: Sarah Johnson
 ```
 
-### Parameters
+### Parametri
 ```
 Source Field: [Field containing user name]
 Fallback User: [If source user not found]
 ```
 
-### Example
+### Primer
 ```
 Invoice has field: "Contact Person: Mike Johnson"
 
@@ -508,17 +508,17 @@ Fallback to: Finance Manager (Robert)
 
 ---
 
-## Card: ACTION_ASSIGN_USER_TO_SUPPLIER
+## Kartica: ACTION_ASSIGN_USER_TO_SUPPLIER
 
-### Purpose
-Assigns document to user who manages that supplier
+### Svrha
+Dodeljuje dokument korisniku koji upravlja tim dobavljačem
 
-### When to Use
-- User linked to supplier
-- Supplier account manager
-- Supplier relationship owner
+### Kada koristiti
+- Korisnik povezan sa dobavljačem
+- Menadžer naloga dobavljača
+- Vlasnik odnosa sa dobavljačem
 
-### How It Works
+### Kako funkcioniše
 ```
 Document Supplier: ABC Corp
     ↓
@@ -529,9 +529,9 @@ Assign to: John Smith (ABC Corp Account Manager)
 
 ---
 
-# Assignment Decision Trees
+# Stabla odlučivanja za dodeljivanje
 
-## Decision Table Example 1: Amount-Based
+## Primer tabele odlučivanja 1: Zasnovano na iznosu
 ```
 Amount ≤ €1000
   → Assign to: Finance Team
@@ -546,7 +546,7 @@ Amount > €20000
   → Assign to: CFO
 ```
 
-## Decision Table Example 2: Supplier-Based
+## Primer tabele odlučivanja 2: Zasnovano na dobavljaču
 ```
 Supplier Type = "Preferred"
   → Assign to: Account Manager
@@ -558,7 +558,7 @@ Supplier Type = "Problem"
   → Assign to: Procurement Director
 ```
 
-## Decision Table Example 3: Document Type-Based
+## Primer tabele odlučivanja 3: Zasnovano na tipu dokumenta
 ```
 Document Type = "Invoice"
   → Assign to: Accounts Payable Team
@@ -572,9 +572,9 @@ Document Type = "PO"
 
 ---
 
-# Assignment Workflow Examples
+# Primeri tokova rada za dodeljivanje
 
-## Example 1: Simple Routing
+## Primer 1: Jednostavno rutiranje
 ```
 Document Arrives
     ↓
@@ -586,7 +586,7 @@ Assign to: John Smith
 John reviews and approves
 ```
 
-## Example 2: Sequential Approval
+## Primer 2: Sekvencijalno odobravanje
 ```
 Document Arrives
     ↓
@@ -603,7 +603,7 @@ Passes to: CFO (Step 3)
 CFO approves final
 ```
 
-## Example 3: Amount-Based Routing
+## Primer 3: Rutiranje zasnovano na iznosu
 ```
 Invoice: €50,000
     ↓
@@ -614,7 +614,7 @@ YES → Assign to: CFO
 CFO approves directly
 ```
 
-## Example 4: Facility-Based
+## Primer 4: Zasnovano na objektu
 ```
 Shipment for: Berlin Office
     ↓
@@ -627,79 +627,78 @@ Both teams process in sequence
 
 ---
 
-# Assignment Best Practices
+# Najbolje prakse za dodeljivanje
 
-✅ **Do:**
-- Keep decision tables simple
-- Test routing logic with samples
-- Ensure all paths lead somewhere
-- Have fallback for missing users
-- Document routing decisions
+✅ **Radite:**
+- Održavajte tabele odlučivanja jednostavnim
+- Testirajte logiku rutiranja sa uzorcima
+- Obezbedite da sve putanje vode nekuda
+- Imajte rezervu za nedostajuće korisnike
+- Dokumentujte odluke o rutiranju
 
-❌ **Don't:**
-- Create circular assignments (A→B→A)
-- Assign to non-existent users (without fallback)
-- Make routing too complex
-- Forget to test routing
-- Assign to unavailable people
-
----
-
-# Troubleshooting Assignment
-
-## "Document not assigned"
-**Cause:** Condition not met or user doesn't exist
-
-**Solution:**
-- Check condition is true
-- Verify user exists in system
-- Check fallback settings
-- Review decision table logic
-
-## "Wrong person assigned"
-**Cause:** Decision table or routing logic incorrect
-
-**Solution:**
-- Test decision table
-- Check conditions
-- Verify user mapping
-- Review field values
-
-## "Assignment seems to skip someone"
-**Cause:** Sequential order incorrect
-
-**Solution:**
-- Check priority numbers
-- Verify sequence is correct
-- Test with sample
-- Review decision table ordering
+❌ **Ne radite:**
+- Ne kreirajte kružna dodeljivanja (A→B→A)
+- Ne dodeljujte nepostojećim korisnicima (bez rezerve)
+- Ne pravite rutiranje previše složenim
+- Ne zaboravljajte da testirate rutiranje
+- Ne dodeljujte nedostupnim osobama
 
 ---
 
-# Assignment Cards Comparison
+# Rešavanje problema sa dodeljivanjem
 
-| Card | Assigns To | Route Type | Use Case |
+## „Document not assigned"
+**Uzrok:** Uslov nije ispunjen ili korisnik ne postoji
+
+**Rešenje:**
+- Proverite da li je uslov istinit
+- Verifikujte da korisnik postoji u sistemu
+- Proverite podešavanja rezerve
+- Pregledajte logiku tabele odlučivanja
+
+## „Wrong person assigned"
+**Uzrok:** Tabela odlučivanja ili logika rutiranja nije ispravna
+
+**Rešenje:**
+- Testirajte tabelu odlučivanja
+- Proverite uslove
+- Verifikujte mapiranje korisnika
+- Pregledajte vrednosti polja
+
+## „Assignment seems to skip someone"
+**Uzrok:** Sekvencijalni redosled nije ispravan
+
+**Rešenje:**
+- Proverite brojeve prioriteta
+- Verifikujte da je redosled ispravan
+- Testirajte sa uzorkom
+- Pregledajte redosled tabele odlučivanja
+
+---
+
+# Poređenje kartica za dodeljivanje
+
+| Kartica | Dodeljuje | Tip rutiranja | Slučaj upotrebe |
 |------|-----------|-----------|----------|
-| DOC_USER_ASSIGN | Individual | Direct | Simple assignment |
-| DOC_GROUP_ASSIGN | Group | Direct | Team assignment |
-| ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE | Decision Result | Conditional | Complex routing |
-| ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL | Multiple (Sequential) | Conditional | Approval chain |
-| ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL | User (Sequential) | Ordered | Sequential user steps |
-| ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL | Groups (Sequential) | Ordered | Sequential group steps |
-| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP | Facility Group | Direct | Facility-specific |
-| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL | Facilities (Sequential) | Ordered | Multi-facility |
-| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP | Procurement | Direct | Procurement workflow |
-| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL | Procurement (Sequential) | Ordered | Procurement approval chain |
-| ACTION_CHANGE_DOC_SUBORG | Sub-Organization | Direct | Department change |
-| ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT | Sub-Org by Field | Conditional | Field-based assignment |
-| ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK | Field/Fallback | Conditional | Dynamic user assignment |
+| DOC_USER_ASSIGN | Pojedincu | Direktno | Jednostavno dodeljivanje |
+| DOC_GROUP_ASSIGN | Grupi | Direktno | Dodeljivanje timu |
+| ACTION_ASSIGN_DOC_BASED_ON_DECISION_TABLE | Rezultatu odluke | Uslovno | Složeno rutiranje |
+| ACTION_ASSIGN_DOC_DECISION_TABLE_SEQUENTIAL | Više (sekvencijalno) | Uslovno | Lanac odobravanja |
+| ACTION_ASSIGN_DOC_TO_USER_SEQUENTIAL | Korisniku (sekvencijalno) | Poređano | Sekvencijalni koraci korisnika |
+| ACTION_ASSIGN_DOC_TO_GROUP_SEQUENTIAL | Grupama (sekvencijalno) | Poređano | Sekvencijalni koraci grupa |
+| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP | Grupi objekta | Direktno | Specifično za objekat |
+| ACTION_ASSIGN_DOC_TO_FACILITY_GROUP_SEQUENTIAL | Objektima (sekvencijalno) | Poređano | Više objekata |
+| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP | Nabavci | Direktno | Tok rada nabavke |
+| ACTION_ASSIGN_DOC_TO_PROCUREMENT_GROUP_SEQUENTIAL | Nabavci (sekvencijalno) | Poređano | Lanac odobravanja nabavke |
+| ACTION_CHANGE_DOC_SUBORG | Pod-organizaciji | Direktno | Promena odeljenja |
+| ACTION_CHANGE_DOC_SUBORG_BY_FIELD_TEXT | Pod-organizaciji po polju | Uslovno | Dodeljivanje zasnovano na polju |
+| ACTION_ASSIGN_USER_FROM_FIELD_WITH_FALLBACK | Polje/Rezerva | Uslovno | Dinamičko dodeljivanje korisnika |
 
 ---
 
-# Related Cards
+# Povezane kartice
 
-- **ACTION_CREATE_TASK_FOR_USER** - Assign task to same person
-- **ACTION_SEND_EMAIL** - Notify assigned person
-- **CONDITION_USER_IS_ISNOT** - Check if correct person assigned
-- **CONDITION_GROUP_IS_ISNOT** - Check if correct group assigned
-
+- **ACTION_CREATE_TASK_FOR_USER** - Dodeli zadatak istoj osobi
+- **ACTION_SEND_EMAIL** - Obavesti dodeljenu osobu
+- **CONDITION_USER_IS_ISNOT** - Proveri da li je dodeljena ispravna osoba
+- **CONDITION_GROUP_IS_ISNOT** - Proveri da li je dodeljena ispravna grupa

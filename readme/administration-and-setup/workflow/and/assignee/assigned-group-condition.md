@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_7.png" alt="DocBits Aankoop Bestelling Exporteren 7" width="563"><figcaption></figcaption></figure>
 
-**Purpose:**
+**Doel:**
 
-This workflow card executes operations based on whether a task or document is assigned to a particular group or set of groups. It utilizes conditional logic to either trigger or prevent specific actions depending on the group assignment, making it ideal for workflows that require group-specific handling.
+Deze workflow-kaart voert bewerkingen uit op basis van de vraag of een taak of document is toegewezen aan een bepaalde groep of set groepen. Hij gebruikt voorwaardelijke logica om specifieke acties te triggeren of te voorkomen, afhankelijk van de groepstoewijzing, waardoor hij ideaal is voor workflows die een groepsspecifieke afhandeling vereisen.
 
-**Components of the Card:**
+**Onderdelen van de kaart:**
 
 1. **Operator**
-   * **Description:** Defines the logical condition to apply to the group assignment.
-   * **Options:**
-     * **IS:** Triggers the operation if the assigned group of the document or task matches one of the groups in the specified list.
-     * **IS NOT:** Triggers the operation if the assigned group of the document or task does not match any of the groups in the specified list.
+   * **Beschrijving:** Definieert de logische voorwaarde die op de groepstoewijzing wordt toegepast.
+   * **Opties:**
+     * **IS:** Triggert de bewerking als de toegewezen groep van het document of de taak overeenkomt met een van de groepen in de opgegeven lijst.
+     * **IS NOT:** Triggert de bewerking als de toegewezen groep van het document of de taak met geen van de groepen in de opgegeven lijst overeenkomt.
 2. **Groups List**
-   * **Description:** A list or selection of groups to compare against the assigned group.
-   * **Detail:** This list can include one or multiple groups, allowing the card to handle both singular and multiple group conditions effectively.
+   * **Beschrijving:** Een lijst of selectie van groepen om mee te vergelijken met de toegewezen groep.
+   * **Detail:** Deze lijst kan een of meerdere groepen bevatten, waardoor de kaart zowel enkelvoudige als meervoudige groepsvoorwaarden effectief kan verwerken.
 
-**Functionality:**
+**Functionaliteit:**
 
-* **Group Assignment Identification:** Automatically identifies the group or groups assigned to a particular task or document within the system.
-* **Condition Evaluation:**
-  * Using the **IS** operator, the card checks if the assigned group is one of the groups listed in the Groups List.
-  * Using the **IS NOT** operator, the card ensures the assigned group is not part of the groups listed.
-* **Action Execution:**
-  * **True Condition:** If the group assignment meets the condition (either **IS** or **IS NOT**), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition:**  If the condition is not met, the workflow will not continue.
+* **Identificatie van groepstoewijzing:** Identificeert automatisch de groep of groepen die aan een bepaalde taak of document binnen het systeem zijn toegewezen.
+* **Voorwaarde-evaluatie:**
+  * Met de **IS**-operator controleert de kaart of de toegewezen groep een van de groepen in de Groups List is.
+  * Met de **IS NOT**-operator zorgt de kaart ervoor dat de toegewezen groep geen deel uitmaakt van de vermelde groepen.
+* **Actie-uitvoering:**
+  * **True-voorwaarde:** Als de groepstoewijzing aan de voorwaarde voldoet (**IS** of **IS NOT**), worden relevante acties getriggerd, zoals meldingen, het starten van taken, goedkeuringen of andere workflow-stappen.
+  * **False-voorwaarde:** Als niet aan de voorwaarde wordt voldaan, gaat de workflow niet verder.
 
-**User Interactions:**
+**Gebruikersinteracties:**
 
-* **Setup and Configuration:**&#x55;sers configure the card by selecting an operator and specifying the relevant groups from the Groups List. Setup should be user-friendly and intuitive to accommodate selections from potentially large group bases.
-* **Monitoring and Reporting:**\
-  The system should provide functionality to monitor and report on the operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications:**\
-  Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in group selection.
+* **Opzet en configuratie:** Gebruikers configureren de kaart door een operator te kiezen en de relevante groepen uit de Groups List op te geven. De opzet moet gebruiksvriendelijk en intuïtief zijn om selecties uit potentieel grote groepsbestanden mogelijk te maken.
+* **Monitoring en rapportage:**\
+  Het systeem moet functionaliteit bieden om de door deze kaart getriggerde bewerkingen te monitoren en erover te rapporteren, met inzicht in de nauwkeurigheid van toewijzingen en de procesefficiëntie.
+* **Foutafhandeling en meldingen:**\
+  Gebruikers moeten opties hebben om waarschuwingen of meldingen te ontvangen als er problemen zijn met de toewijzingen, zoals niet-toegewezen taken of fouten in de groepsselectie.
 
-**Conclusion:**\
-The "Assigned Group Condition" workflow card is essential for managing document and task workflows that depend on group assignments. By allowing conditions based on whether a task or document is assigned to specific groups, it ensures that workflows are only triggered by appropriate group interactions, improving accountability and task management across teams.
+**Conclusie:**\
+De workflow-kaart "Assigned Group Condition" is essentieel voor het beheren van document- en taakworkflows die afhankelijk zijn van groepstoewijzingen. Door voorwaarden toe te staan op basis van de vraag of een taak of document aan specifieke groepen is toegewezen, zorgt hij ervoor dat workflows alleen worden getriggerd door de juiste groepsinteracties, wat de verantwoording en het taakbeheer tussen teams verbetert.

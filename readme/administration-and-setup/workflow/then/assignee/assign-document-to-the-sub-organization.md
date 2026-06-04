@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (302).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-The **"Assign Document to Sub-Organization"** workflow card assigns a document to a specific sub-organization within the system, ensuring that it is routed to the appropriate organizational unit for processing.
+O cartão de fluxo de trabalho **"Assign Document to Sub-Organization"** atribui um documento a uma sub-organização específica dentro do sistema, assegurando que é encaminhado para a unidade organizacional adequada para processamento.
 
-## **Components of the Card:**
+## **Componentes do cartão:**
 
 1. **Sub-Organization**
-   * **Description:** Specifies the sub-organization to which the document will be assigned.
-   * **Detail:** A dropdown list of available sub-organizations is provided for selecting the target sub-organization.
+   * **Descrição:** Especifica a sub-organização à qual o documento será atribuído.
+   * **Detalhe:** É disponibilizada uma lista pendente das sub-organizações disponíveis para selecionar a sub-organização de destino.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to the sub-organization selected from the dropdown list.
+* **Avaliação da condição:**\
+  O cartão só executa a sua ação se tanto a secção **"Where"** como as **"And Sections"** forem avaliadas como verdadeiras.
+* **Atribuição do documento:**\
+  O cartão atribui o documento à sub-organização selecionada na lista pendente.
 
-## **Setup and Configuration:**
+## **Configuração:**
 
-* **Select Sub-Organization:**\
-  Choose the appropriate sub-organization from the dropdown list to which the document should be assigned.
+* **Selecionar a Sub-Organization:**\
+  Escolha a sub-organização adequada a partir da lista pendente à qual o documento deve ser atribuído.
 
-## **Conclusion:**
+## **Conclusão:**
 
-The **"Assign Document to Sub-Organization"** workflow card ensures that documents are routed to the correct sub-organization, streamlining the document management process by assigning responsibility based on organizational structure.
+O cartão de fluxo de trabalho **"Assign Document to Sub-Organization"** assegura que os documentos são encaminhados para a sub-organização correta, simplificando o processo de gestão de documentos ao atribuir responsabilidades com base na estrutura organizacional.

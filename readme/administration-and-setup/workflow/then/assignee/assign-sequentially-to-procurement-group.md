@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-The "**Assign the Document Sequentially to the Procurement Group**" workflow card enables the sequential assignment of documents to a specified procurement group. The priority value determines the order of assignment, where lower numbers represent higher priority.
+O cartão de fluxo de trabalho "**Assign the Document Sequentially to the Procurement Group**" permite a atribuição sequencial de documentos a um grupo de compras especificado. O valor de prioridade determina a ordem de atribuição, sendo que números mais baixos representam uma prioridade mais elevada.
 
-## **Components of the Card**
+## **Componentes do cartão**
 
 1. **Group**
-   * **Description**: A text input field where the name of the procurement group can be entered.
-   * **Detail**: Specifies the procurement group to which the document will be assigned.
+   * **Descrição**: Um campo de introdução de texto onde se pode inserir o nome do grupo de compras.
+   * **Detalhe**: Especifica o grupo de compras ao qual o documento será atribuído.
 2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the group can be set.
-   * **Detail**: Lower numbers signify higher priority, ensuring that documents are assigned to groups in ascending order of priority.
+   * **Descrição**: Um campo de introdução numérica onde se pode definir o nível de prioridade do grupo.
+   * **Detalhe**: Números mais baixos significam prioridade mais elevada, assegurando que os documentos são atribuídos aos grupos por ordem crescente de prioridade.
 
-## **Functionality**
+## **Funcionalidade**
 
-* **Document Assignment**:\
-  The card assigns documents to the specified procurement group in a sequential manner.\
-  Priority values dictate the assignment order, with lower numbers being processed first.
+* **Atribuição de documentos**:\
+  O cartão atribui documentos ao grupo de compras especificado de forma sequencial.\
+  Os valores de prioridade ditam a ordem de atribuição, sendo os números mais baixos processados em primeiro lugar.
 
-## **Setup and Configuration**
+## **Configuração**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Group** field:
-   * Enter the name of the procurement group in the text field.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Adicione o cartão **Assign the Document Sequentially** ao seu fluxo de trabalho.
+2. Configure o campo **Group**:
+   * Introduza o nome do grupo de compras no campo de texto.
+3. Configure o campo **Priority (Value)**:
+   * Introduza um valor numérico para definir a prioridade de atribuição.
+4. Guarde e ative o fluxo de trabalho para aplicar a configuração.
 
-## **Conclusion**
+## **Conclusão**
 
-The "Assign the Document Sequentially to the Procurement Group " workflow card ensures effective document allocation to procurement groups based on priority. This enhances organizational efficiency and task management.
+O cartão de fluxo de trabalho "Assign the Document Sequentially to the Procurement Group" assegura uma alocação eficaz de documentos aos grupos de compras com base na prioridade. Isto melhora a eficiência organizacional e a gestão de tarefas.

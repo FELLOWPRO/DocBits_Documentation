@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-The "**Assign Sequentially to User**" workflow card automates the assignment of documents to a selected user in a sequential manner. The priority value determines the order of assignment, with lower numbers representing higher priority.
+O cartão de fluxo de trabalho "**Assign Sequentially to User**" automatiza a atribuição de documentos a um utilizador selecionado de forma sequencial. O valor de prioridade determina a ordem de atribuição, sendo que números mais baixos representam uma prioridade mais elevada.
 
-## **Components of the Card**
+## **Componentes do cartão**
 
 1. **User**
-   * **Description**: The selected user will be assigned the document based on the workflow sequence.
-   * **Detail**: A dropdown menu that lists all available users for assignment.
+   * **Descrição**: O utilizador selecionado receberá o documento com base na sequência do fluxo de trabalho.
+   * **Detalhe**: Um menu pendente que lista todos os utilizadores disponíveis para atribuição.
 2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the user can be set.
-   * **Detail**: Lower numbers signify higher priority. Documents are assigned to users in ascending order of priority.
+   * **Descrição**: Um campo de introdução numérica onde se pode definir o nível de prioridade do utilizador.
+   * **Detalhe**: Números mais baixos significam prioridade mais elevada. Os documentos são atribuídos aos utilizadores por ordem crescente de prioridade.
 
-## **Functionality**
+## **Funcionalidade**
 
-* **Document Assignment**:\
-  The card assigns documents to the selected user sequentially, considering the priority level.\
-  If multiple users have the same priority, the documents are assigned in the order users appear in the dropdown menu.
+* **Atribuição de documentos**:\
+  O cartão atribui documentos ao utilizador selecionado de forma sequencial, tendo em conta o nível de prioridade.\
+  Se vários utilizadores tiverem a mesma prioridade, os documentos são atribuídos pela ordem em que os utilizadores aparecem no menu pendente.
 
-## **Setup and Configuration**
+## **Configuração**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **User** field:
-   * Select a user from the dropdown menu.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Adicione o cartão **Assign the Document Sequentially** ao seu fluxo de trabalho.
+2. Configure o campo **User**:
+   * Selecione um utilizador no menu pendente.
+3. Configure o campo **Priority (Value)**:
+   * Introduza um valor numérico para definir a prioridade de atribuição.
+4. Guarde e ative o fluxo de trabalho para aplicar a configuração.
 
-## **Conclusion**
+## **Conclusão**
 
-The "Assign the Document Sequentially to User" workflow card ensures organized document distribution by assigning documents in a prioritized sequence. This enhances task management and reduces delays in processing.
+O cartão de fluxo de trabalho "Assign the Document Sequentially to User" assegura uma distribuição organizada de documentos ao atribuí-los numa sequência priorizada. Isto melhora a gestão de tarefas e reduz atrasos no processamento.

@@ -2,31 +2,31 @@
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card dynamically assigns documents to either a user or a group, depending on the decision table's evaluation. This ensures that documents are routed appropriately based on predefined rules.
+O cartão de fluxo de trabalho "**Assign the Document Sequentially to User/Group Based on Decision Table**" atribui dinamicamente documentos a um utilizador ou a um grupo, consoante a avaliação da decision table. Isto assegura que os documentos são encaminhados de forma adequada com base em regras predefinidas.
 
-## **Components of the Card**
+## **Componentes do cartão**
 
 1. **Priority (Value)**
-   * **Description**: Specifies the priority level for assignments, where lower numbers represent higher priority.
-   * **Detail**: A numeric input field where the priority value can be set to control the sequence of assignment.
+   * **Descrição**: Especifica o nível de prioridade das atribuições, sendo que números mais baixos representam uma prioridade mais elevada.
+   * **Detalhe**: Um campo de introdução numérica onde se pode definir o valor de prioridade para controlar a sequência de atribuição.
 
-## **Functionality**
+## **Funcionalidade**
 
-* **Decision Table Evaluation**:\
-  The decision table evaluates predefined conditions to decide whether the document is assigned to a user or a group.
-* **Document Assignment**:
-  * If the decision table returns a user, the document is assigned directly to that user.
-  * If the decision table returns a group, the document is assigned to the group sequentially, respecting the specified priority value.
+* **Avaliação da decision table**:\
+  A decision table avalia condições predefinidas para decidir se o documento é atribuído a um utilizador ou a um grupo.
+* **Atribuição de documentos**:
+  * Se a decision table devolver um utilizador, o documento é atribuído diretamente a esse utilizador.
+  * Se a decision table devolver um grupo, o documento é atribuído ao grupo de forma sequencial, respeitando o valor de prioridade especificado.
 
-## **Setup and Configuration**
+## **Configuração**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-3. Save and activate the workflow to apply the configuration.
+1. Adicione o cartão **Assign the Document Sequentially** ao seu fluxo de trabalho.
+2. Configure o campo **Priority (Value)**:
+   * Introduza um valor numérico para definir a prioridade de atribuição.
+3. Guarde e ative o fluxo de trabalho para aplicar a configuração.
 
-## **Conclusion**
+## **Conclusão**
 
-The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card ensures efficient and dynamic document routing. By leveraging decision table logic and priority values, the card facilitates accurate assignment to either a user or a group, streamlining document workflows.
+O cartão de fluxo de trabalho "**Assign the Document Sequentially to User/Group Based on Decision Table**" assegura um encaminhamento de documentos eficiente e dinâmico. Ao recorrer à lógica da decision table e aos valores de prioridade, o cartão facilita uma atribuição precisa a um utilizador ou a um grupo, simplificando os fluxos de trabalho de documentos.

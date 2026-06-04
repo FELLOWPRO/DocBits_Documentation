@@ -1,48 +1,48 @@
-# Promised delivery date for line items in table with promised delivery date
+# Zugesagtes Lieferdatum für Positionen in Tabelle mit zugesagtem Lieferdatum
 
 <figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Purpose:
+## Zweck:
 
-This workflow card is designed to validate the **promised delivery date of line items** against the **promised delivery date on the purchase order**, using comparison operators and configurable tolerance rules. It allows workflows to automatically detect compliant, early, or late delivery dates and react accordingly.
+Diese Workflow-Karte ist darauf ausgelegt, das **zugesagte Lieferdatum von Positionen** mit dem **zugesagten Lieferdatum auf der Bestellung** zu vergleichen, wobei Vergleichsoperatoren und konfigurierbare Toleranzregeln verwendet werden. Sie ermöglicht es Workflows, termingerechte, frühe oder verspätete Lieferdaten automatisch zu erkennen und entsprechend zu reagieren.
 
-## Components of the Card:
+## Bestandteile der Karte:
 
 1. **Operator**
-   * **Description:**\
-     Defines how the line item promised delivery date is compared to the purchase order promised delivery date.
-   * **Options:**
-     * **Equals (=):** The line item date must fall within the tolerance window.
-     * **Not Equals (≠):** The line item date must fall outside the tolerance window.
-     * **Greater Than (>):** The line item date must be after the tolerance window.
-     * **Greater or Equals (≥):** The line item date must be on or after the start of the tolerance window.
-     * **Lesser Than (<):** The line item date must be before the tolerance window.
-     * **Lesser or Equals (≤):** The line item date must be on or before the end of the tolerance window.<br>
-2. **Tolerance Days**
-   * **Description:**\
-     Specifies the number of days used to calculate the acceptable tolerance window around the purchase order promised delivery date.
+   * **Beschreibung:**\
+     Legt fest, wie das zugesagte Lieferdatum der Position mit dem zugesagten Lieferdatum der Bestellung verglichen wird.
+   * **Optionen:**
+     * **Gleich (=):** Das Positionsdatum muss innerhalb des Toleranzfensters liegen.
+     * **Ungleich (≠):** Das Positionsdatum muss außerhalb des Toleranzfensters liegen.
+     * **Größer als (>):** Das Positionsdatum muss nach dem Toleranzfenster liegen.
+     * **Größer oder gleich (≥):** Das Positionsdatum muss am oder nach dem Beginn des Toleranzfensters liegen.
+     * **Kleiner als (<):** Das Positionsdatum muss vor dem Toleranzfenster liegen.
+     * **Kleiner oder gleich (≤):** Das Positionsdatum muss am oder vor dem Ende des Toleranzfensters liegen.<br>
+2. **Toleranztage**
+   * **Beschreibung:**\
+     Gibt die Anzahl der Tage an, die zur Berechnung des zulässigen Toleranzfensters um das zugesagte Lieferdatum der Bestellung verwendet werden.
    * **Detail:**\
-     This value is an integer and defines how many days before and after the purchase order date are considered during validation.<br>
-3. **Allowed Tolerance Days**
-   * **Description:**\
-     Defines which weekdays are counted when calculating tolerance days.
+     Dieser Wert ist eine Ganzzahl und legt fest, wie viele Tage vor und nach dem Bestelldatum bei der Validierung berücksichtigt werden.<br>
+3. **Zulässige Toleranztage**
+   * **Beschreibung:**\
+     Legt fest, welche Wochentage bei der Berechnung der Toleranztage gezählt werden.
    * **Detail:**\
-     Users can select specific weekdays (for example, Monday to Friday). Only the selected days are included when calculating the tolerance window.
+     Benutzer können bestimmte Wochentage auswählen (zum Beispiel Montag bis Freitag). Nur die ausgewählten Tage werden bei der Berechnung des Toleranzfensters einbezogen.
 
-### Functionality:
+### Funktionalität:
 
-* **Condition Evaluation:** The system calculates a tolerance window around the purchase order promised delivery date based on the configured **Tolerance Days** and **Allowed Tolerance Days**.\
-  Each line item’s promised delivery date is then compared to this window using the selected operator.
-* Action Execution:
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Bedingungsauswertung:** Das System berechnet auf Basis der konfigurierten **Toleranztage** und **Zulässigen Toleranztage** ein Toleranzfenster um das zugesagte Lieferdatum der Bestellung.\
+  Anschließend wird das zugesagte Lieferdatum jeder Position mithilfe des ausgewählten Operators mit diesem Fenster verglichen.
+* Ausführung der Aktion:
+  * **Bedingung erfüllt (True):** Liegt die Differenz des Lieferdatums innerhalb des Toleranzbereichs und entspricht der durch den Operator festgelegten Bedingung, wird der Workflow fortgesetzt.
+  * **Bedingung nicht erfüllt (False):** Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.
 
-### Setup and Configuration:
+### Einrichtung und Konfiguration:
 
-* Select the appropriate comparison operator.
-* Enter the number of tolerance days.
-* Choose which weekdays should be counted as tolerance days.
+* Wählen Sie den passenden Vergleichsoperator aus.
+* Geben Sie die Anzahl der Toleranztage ein.
+* Wählen Sie aus, welche Wochentage als Toleranztage gezählt werden sollen.
 
-### Conclusion:
+### Fazit:
 
-The **Compare with Purchase Order – Promised Delivery Date for Line Items** workflow card provides a flexible way to enforce delivery date rules. By combining operators with weekday-aware tolerance handling, it enables precise validation of delivery commitments while reducing manual checks and exceptions.
+Die Workflow-Karte **Compare with Purchase Order – Promised Delivery Date for Line Items** bietet eine flexible Möglichkeit, Regeln für Lieferdaten durchzusetzen. Durch die Kombination von Operatoren mit einer wochentagsbewussten Toleranzbehandlung ermöglicht sie eine präzise Validierung von Lieferzusagen und reduziert gleichzeitig manuelle Prüfungen und Ausnahmen.

@@ -1,52 +1,52 @@
-# Decision Logic Pattern
+# Patrón de lógica de decisión
 
-**Pattern Type:** Conditional Routing & Logic
-**Complexity:** Medium
-**Estimated Setup:** 30-45 minutes
-**Common Use Cases:** Multi-path routing, conditional processing, decision trees, business rule implementation
-
----
-
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Logic** category — it holds the condition and branching cards that drive the decision tree, which you combine with the **And** group to evaluate multiple conditions:
-
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — condition and branching cards live under the <strong>Logic</strong> category.</p></figcaption></figure>
+**Tipo de patrón:** Enrutamiento condicional y lógica
+**Complejidad:** Media
+**Configuración estimada:** 30-45 minutos
+**Casos de uso habituales:** Enrutamiento multirruta, procesamiento condicional, árboles de decisión, implementación de reglas de negocio
 
 ---
 
-## Pattern Overview
+Este patrón se monta en el **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Add Card** y abra la categoría **Logic**: contiene las tarjetas de condición y ramificación que impulsan el árbol de decisión, que combina con el grupo **And** para evaluar varias condiciones:
 
-This pattern demonstrates how to implement complex decision logic in DocBits workflows using condition cards to route documents through different processing paths based on document attributes, field values, and business rules.
-
-**What This Pattern Does:**
-1. Evaluates multiple conditions in sequence or parallel
-2. Routes documents to different paths based on conditions
-3. Implements business rules and policies
-4. Handles complex decision trees
-5. Combines multiple criteria for routing decisions
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card del Workflow Builder, agrupada por categoría"><figcaption><p>La biblioteca <strong>Add Card</strong>: las tarjetas de condición y ramificación se encuentran en la categoría <strong>Logic</strong>.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Resumen del patrón
 
-Use this pattern when you need to:
-- ✅ Route documents by amount thresholds
-- ✅ Apply different rules for different document types
-- ✅ Implement multi-level approval logic
-- ✅ Handle complex business policies
-- ✅ Create dynamic routing based on multiple criteria
-- ✅ Implement exception handling logic
-- ✅ Create approval matrices
+Este patrón muestra cómo implementar lógica de decisión compleja en los flujos de trabajo de DocBits usando tarjetas de condición para enrutar documentos por distintas rutas de procesamiento según los atributos del documento, los valores de los campos y las reglas de negocio.
 
-**Don't use this pattern when:**
-- ❌ Simple linear workflow is sufficient
-- ❌ All documents follow same path
-- ❌ No conditional processing needed
+**Qué hace este patrón:**
+1. Evalúa varias condiciones en secuencia o en paralelo
+2. Enruta los documentos por distintas rutas según las condiciones
+3. Implementa reglas y políticas de negocio
+4. Gestiona árboles de decisión complejos
+5. Combina varios criterios para las decisiones de enrutamiento
 
 ---
 
-## Decision Logic Types
+## Cuándo usar este patrón
 
-### 1. Simple IF-THEN Logic
+Use este patrón cuando necesite:
+- ✅ Enrutar documentos por umbrales de importe
+- ✅ Aplicar distintas reglas para distintos tipos de documento
+- ✅ Implementar lógica de aprobación multinivel
+- ✅ Gestionar políticas de negocio complejas
+- ✅ Crear enrutamiento dinámico basado en varios criterios
+- ✅ Implementar lógica de gestión de excepciones
+- ✅ Crear matrices de aprobación
+
+**No use este patrón cuando:**
+- ❌ Un flujo de trabajo lineal simple sea suficiente
+- ❌ Todos los documentos sigan la misma ruta
+- ❌ No se necesite procesamiento condicional
+
+---
+
+## Tipos de lógica de decisión
+
+### 1. Lógica IF-THEN simple
 
 ```
 IF condition:
@@ -55,7 +55,7 @@ ELSE:
   → Action B
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 IF Amount > €10,000:
   → Assign to Director
@@ -63,7 +63,7 @@ ELSE:
   → Assign to Manager
 ```
 
-### 2. Multiple Criteria (AND Logic)
+### 2. Varios criterios (lógica AND)
 
 ```
 IF condition1 AND condition2 AND condition3:
@@ -72,7 +72,7 @@ ELSE:
   → Action B
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
   → Assign to IT Director + CFO (dual approval)
@@ -80,7 +80,7 @@ ELSE:
   → Standard approval workflow
 ```
 
-### 3. Alternative Criteria (OR Logic)
+### 3. Criterios alternativos (lógica OR)
 
 ```
 IF condition1 OR condition2 OR condition3:
@@ -89,7 +89,7 @@ ELSE:
   → Action B
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
   → Escalate immediately
@@ -97,7 +97,7 @@ ELSE:
   → Standard processing
 ```
 
-### 4. Nested Decision Tree
+### 4. Árbol de decisión anidado
 
 ```
 IF condition1:
@@ -112,7 +112,7 @@ ELSE:
     → Action D
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
@@ -128,19 +128,19 @@ ELSE IF Document_Type = "Credit Note":
 
 ---
 
-## Complete Workflow Example
+## Ejemplo de flujo de trabajo completo
 
-### Scenario: Invoice Approval Matrix
+### Escenario: Matriz de aprobación de facturas
 
-**Business Rules:**
-1. Amount < €1,000: Auto-approve
-2. Amount €1,000-€10,000: Manager approval
-3. Amount > €10,000 AND New Supplier: Director + CFO approval
-4. Amount > €10,000 AND Existing Supplier: Director approval only
-5. Any amount with PO mismatch: Procurement approval first
-6. Urgent invoices (flagged): Expedited workflow
+**Reglas de negocio:**
+1. Importe < 1.000 €: Aprobación automática
+2. Importe 1.000 €-10.000 €: Aprobación del Manager
+3. Importe > 10.000 € Y proveedor nuevo: Aprobación de Director + CFO
+4. Importe > 10.000 € Y proveedor existente: Aprobación solo de Director
+5. Cualquier importe con discrepancia de PO: Aprobación de Procurement primero
+6. Facturas urgentes (marcadas): Flujo de trabajo acelerado
 
-**Implementation:**
+**Implementación:**
 
 ```
 STEP 1: Check for PO Mismatch
@@ -181,11 +181,11 @@ STEP 3: Amount-Based Routing (if not urgent)
 
 ---
 
-## Step-by-Step Implementation
+## Implementación paso a paso
 
-### Step 1: Define Condition Cards
+### Paso 1: Definir las tarjetas de condición
 
-**Condition 1: Amount Threshold**
+**Condición 1: Umbral de importe**
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
 Field: Total_Amount
@@ -194,21 +194,21 @@ Value: 1000
 Currency: EUR
 ```
 
-**Condition 2: Document Type Check**
+**Condición 2: Comprobación del tipo de documento**
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
 Document Type: IS
 Type: Invoice
 ```
 
-**Condition 3: Supplier Status**
+**Condición 3: Estado del proveedor**
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
 Supplier Status: IS
 Status: ACTIVE
 ```
 
-**Condition 4: New Supplier Check**
+**Condición 4: Comprobación de proveedor nuevo**
 ```
 Card: CONDITION_DOC_FIELD_DATE
 Field: Supplier_First_Transaction_Date
@@ -216,13 +216,13 @@ Operator: IS AFTER
 Value: {{TODAY_MINUS_180_DAYS}}
 ```
 
-**Guide Reference:** [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)
+**Referencia de guía:** [Guía completa de tarjetas de condición](../and/condition-cards-complete-guide.md)
 
 ---
 
-### Step 2: Build Decision Tree
+### Paso 2: Construir el árbol de decisión
 
-**Level 1: Document Type**
+**Nivel 1: Tipo de documento**
 ```
 Workflow: "Invoice Processing"
 
@@ -239,7 +239,7 @@ ELSE:
   → Route to "Unknown Document Type" handling
 ```
 
-**Level 2: Amount Thresholds (for Invoices)**
+**Nivel 2: Umbrales de importe (para facturas)**
 ```
 IF Amount < €1,000:
   → Branch to "Auto-Approve Path"
@@ -256,7 +256,7 @@ ELSE (Amount ≥ €50,000):
   → Dual or triple approval required
 ```
 
-**Level 3: Supplier Analysis (for high-value invoices)**
+**Nivel 3: Análisis del proveedor (para facturas de alto valor)**
 ```
 IF Supplier_Status = "BLOCKED":
   → STOP processing
@@ -279,9 +279,9 @@ ELSE:
 
 ---
 
-### Step 3: Create Routing Actions
+### Paso 3: Crear las acciones de enrutamiento
 
-**Path A: Auto-Approve (Amount < €1,000)**
+**Ruta A: Aprobación automática (importe < 1.000 €)**
 ```
 Actions:
 1. Set field "Approval_Type" = "AUTO"
@@ -291,7 +291,7 @@ Actions:
 5. Send confirmation email (optional)
 ```
 
-**Path B: Manager Approval (€1,000-€10,000)**
+**Ruta B: Aprobación del Manager (1.000 €-10.000 €)**
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -307,7 +307,7 @@ Actions:
 7. If rejected: Return to supplier
 ```
 
-**Path C: Director Approval (€10,000-€50,000)**
+**Ruta C: Aprobación del Director (10.000 €-50.000 €)**
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -327,7 +327,7 @@ Actions:
 9. If any rejected: Return to supplier
 ```
 
-**Path D: Executive Approval (≥ €50,000)**
+**Ruta D: Aprobación ejecutiva (≥ 50.000 €)**
 ```
 Actions:
 1. Set field "Approval_Type" = "EXECUTIVE"
@@ -347,11 +347,11 @@ Actions:
 
 ---
 
-## Advanced Decision Logic Patterns
+## Patrones avanzados de lógica de decisión
 
-### Pattern 1: Score-Based Routing
+### Patrón 1: Enrutamiento basado en puntuación
 
-**Calculate a risk score and route accordingly:**
+**Calcule una puntuación de riesgo y enrute en consecuencia:**
 
 ```
 Risk Score Calculation:
@@ -372,7 +372,7 @@ Routing:
   IF Score > 75: Executive approval + fraud check
 ```
 
-**Implementation:**
+**Implementación:**
 ```
 1. ACTION_CALCULATE_FIELD: Calculate risk score
 2. ACTION_SET_FIELD_TO_NUMBER: Store score
@@ -382,9 +382,9 @@ Routing:
 
 ---
 
-### Pattern 2: Department-Based Matrix
+### Patrón 2: Matriz basada en departamentos
 
-**Different approval rules by department:**
+**Distintas reglas de aprobación por departamento:**
 
 ```
 Department Matrix:
@@ -406,7 +406,7 @@ Department Matrix:
     Amount ≥ €2,000: Department Director
 ```
 
-**Implementation:**
+**Implementación:**
 ```
 1. Check Department field
 2. Based on department, check amount threshold
@@ -416,9 +416,9 @@ Department Matrix:
 
 ---
 
-### Pattern 3: Time-Based Logic
+### Patrón 3: Lógica basada en el tiempo
 
-**Different rules based on timing:**
+**Distintas reglas según el momento:**
 
 ```
 Month-End Processing (Last 3 days of month):
@@ -450,9 +450,9 @@ Fiscal Period:
 
 ---
 
-### Pattern 4: Exception-Based Routing
+### Patrón 4: Enrutamiento basado en excepciones
 
-**Route exceptions separately:**
+**Enrute las excepciones por separado:**
 
 ```
 Exception Detection:
@@ -487,7 +487,7 @@ Exception Types:
 
 ---
 
-## Complete Decision Logic Diagram
+## Diagrama completo de lógica de decisión
 
 ```
 INVOICE ARRIVES
@@ -618,11 +618,11 @@ INVOICE ARRIVES
 
 ---
 
-## Configuration Best Practices
+## Buenas prácticas de configuración
 
-### 1. Keep Logic Clear and Maintainable
+### 1. Mantenga la lógica clara y mantenible
 
-✅ **Good:**
+✅ **Bien:**
 ```
 IF Amount > 10000:
   → High value path
@@ -630,13 +630,13 @@ ELSE:
   → Standard path
 ```
 
-❌ **Bad (Too Complex):**
+❌ **Mal (demasiado complejo):**
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
   → Complex path
 ```
 
-**Better: Break into steps:**
+**Mejor: divídalo en pasos:**
 ```
 Step 1: IF Amount > 10000: Continue, ELSE: Standard path
 Step 2: IF Supplier in allowed list: Continue, ELSE: Review
@@ -646,15 +646,15 @@ Step 4: IF Department authorized: Approve, ELSE: Escalate
 
 ---
 
-### 2. Document Decision Logic
+### 2. Documente la lógica de decisión
 
-**Always include:**
-- Purpose of each decision point
-- Business rule being implemented
-- Expected outcomes
-- Exception handling
+**Incluya siempre:**
+- El propósito de cada punto de decisión
+- La regla de negocio que se implementa
+- Los resultados esperados
+- La gestión de excepciones
 
-**Example Documentation:**
+**Ejemplo de documentación:**
 ```
 Decision Point: Amount Threshold Check
 Business Rule: BR-INV-001 (Invoice Approval Matrix)
@@ -670,32 +670,32 @@ Owner: Finance Department
 
 ---
 
-### 3. Test All Paths
+### 3. Pruebe todas las rutas
 
-**Testing Matrix:**
+**Matriz de pruebas:**
 
-| Test Case | Amount | Type | Supplier | Expected Path | Status |
+| Caso de prueba | Importe | Tipo | Proveedor | Ruta esperada | Estado |
 |-----------|--------|------|----------|---------------|--------|
-| TC1 | €500 | Invoice | Existing | Auto-approve | ✅ |
-| TC2 | €5,000 | Invoice | Existing | Manager | ✅ |
-| TC3 | €15,000 | Invoice | New | Director+CFO | ✅ |
-| TC4 | €60,000 | Invoice | Existing | Executive | ✅ |
-| TC5 | €2,000 | Credit Note | Existing | Credit workflow | ✅ |
-| TC6 | €100,000 | Invoice | Blocked | Stop & Escalate | ✅ |
+| TC1 | 500 € | Invoice | Existing | Auto-approve | ✅ |
+| TC2 | 5.000 € | Invoice | Existing | Manager | ✅ |
+| TC3 | 15.000 € | Invoice | New | Director+CFO | ✅ |
+| TC4 | 60.000 € | Invoice | Existing | Executive | ✅ |
+| TC5 | 2.000 € | Credit Note | Existing | Credit workflow | ✅ |
+| TC6 | 100.000 € | Invoice | Blocked | Stop & Escalate | ✅ |
 
 ---
 
-### 4. Monitor Decision Metrics
+### 4. Supervise las métricas de decisión
 
-**Track:**
-- Distribution across decision paths
-- Auto-approval rate
-- Manual review rate
-- Average processing time per path
-- Exception rates
-- Path utilization
+**Haga seguimiento de:**
+- La distribución entre las rutas de decisión
+- La tasa de aprobación automática
+- La tasa de revisión manual
+- El tiempo medio de procesamiento por ruta
+- Las tasas de excepción
+- La utilización de cada ruta
 
-**Example Metrics:**
+**Ejemplo de métricas:**
 ```
 Month: October 2025
 Total Invoices: 1,250
@@ -717,40 +717,40 @@ Exceptions: 15 (1.2%)
 
 ---
 
-## Related Patterns
+## Patrones relacionados
 
-### Patterns That Work Well Together:
+### Patrones que funcionan bien juntos:
 
-- **[Task Management Pattern](task-management-pattern.md)** - Create tasks based on decisions
-- **[API Integration Pattern](api-integration-pattern.md)** - Fetch data for decision-making
-- **[PO Matching Pattern](po-matching-pattern.md)** - Use PO results in decisions
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transform data before decisions
-
----
-
-## Related Guides
-
-### Prerequisites
-- [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md) - All condition cards
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Field operations
-- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - Routing logic
-
-### Related Cards
-- **CONDITION_DOC_FIELD_AMOUNT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#field-conditions)
-- **CONDITION_DOC_TYPE_IS_ISNOT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-doc-type-is-isnot)
-- **CONDITION_SUPPLIER_STATUS_IS_ISNOT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
-- **ACTION_ASSIGN_TO_USER** - [Assignment Guide](../then/assignee/assignment-user-guide.md)
-- **tasks_create** - [Task Assignment Guide](../then/task/task-assignment-guide.md)
-
-### Next Steps
-- Create tasks: [Task Management Pattern](task-management-pattern.md)
-- Add complex matching: [PO Matching Pattern](po-matching-pattern.md)
-- Integrate APIs: [API Integration Pattern](api-integration-pattern.md)
+- **[Patrón de gestión de tareas](task-management-pattern.md)** - Crea tareas según las decisiones
+- **[Patrón de integración de API](api-integration-pattern.md)** - Obtiene datos para la toma de decisiones
+- **[Patrón de cotejo de PO](po-matching-pattern.md)** - Usa los resultados de PO en las decisiones
+- **[Patrón de transformación de datos](data-transformation-pattern.md)** - Transforma los datos antes de las decisiones
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Medium
-**Estimated Time:** 30-45 minutes
-**Success Rate:** High
+## Guías relacionadas
+
+### Requisitos previos
+- [Guía completa de tarjetas de condición](../and/condition-cards-complete-guide.md) - Todas las tarjetas de condición
+- [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md) - Operaciones con campos
+- [Guía de asignación a usuario](../then/assignee/assignment-user-guide.md) - Lógica de enrutamiento
+
+### Tarjetas relacionadas
+- **CONDITION_DOC_FIELD_AMOUNT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#field-conditions)
+- **CONDITION_DOC_TYPE_IS_ISNOT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#condition-doc-type-is-isnot)
+- **CONDITION_SUPPLIER_STATUS_IS_ISNOT** - [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
+- **ACTION_ASSIGN_TO_USER** - [Guía de asignación](../then/assignee/assignment-user-guide.md)
+- **tasks_create** - [Guía de asignación de tareas](../then/task/task-assignment-guide.md)
+
+### Próximos pasos
+- Crear tareas: [Patrón de gestión de tareas](task-management-pattern.md)
+- Añadir cotejo complejo: [Patrón de cotejo de PO](po-matching-pattern.md)
+- Integrar API: [Patrón de integración de API](api-integration-pattern.md)
+
+---
+
+**Versión del patrón:** 1.0
+**Última actualización:** 23 de octubre de 2025
+**Dificultad:** Media
+**Tiempo estimado:** 30-45 minutos
+**Tasa de éxito:** Alta

@@ -1,56 +1,56 @@
-# PO Matching Pattern
+# Patrón de cotejo de PO
 
-**Pattern Type:** Validation & Comparison
-**Complexity:** Medium-High
-**Estimated Setup:** 60-90 minutes
-**Common Use Cases:** Three-way matching, invoice validation, variance checking, tolerance management
-
----
-
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Compare with Purchase Order** category — it holds every matching card this pattern uses (price, quantity, tolerance and line-item comparison cards):
-
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library showing the Compare with Purchase Order cards"><figcaption><p>The <strong>Compare with Purchase Order</strong> category — price, quantity, tolerance and line-item matching cards used throughout this pattern.</p></figcaption></figure>
+**Tipo de patrón:** Validación y comparación
+**Complejidad:** Media-Alta
+**Configuración estimada:** 60-90 minutos
+**Casos de uso habituales:** Cotejo a tres bandas, validación de facturas, comprobación de desviaciones, gestión de tolerancias
 
 ---
 
-## Pattern Overview
+Este patrón se monta en el **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Haga clic en **Add Card** y abra la categoría **Compare with Purchase Order**: contiene todas las tarjetas de cotejo que usa este patrón (tarjetas de comparación de precio, cantidad, tolerancia y líneas):
 
-This pattern demonstrates how to implement comprehensive Purchase Order (PO) matching workflows in DocBits. PO matching is a critical control process that compares invoice data against purchase order data to detect discrepancies before payment approval.
-
-**What This Pattern Does:**
-1. Retrieves PO data based on PO number from invoice
-2. Compares invoice line items with PO line items
-3. Calculates variances (price, quantity, totals)
-4. Applies tolerance rules
-5. Routes for approval or escalation based on match results
-6. Tracks matching history and exceptions
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteca Add Card mostrando las tarjetas Compare with Purchase Order"><figcaption><p>La categoría <strong>Compare with Purchase Order</strong>: tarjetas de cotejo de precio, cantidad, tolerancia y líneas usadas en todo este patrón.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Resumen del patrón
 
-Use this pattern when you need to:
-- ✅ Validate invoices against purchase orders
-- ✅ Detect pricing errors before payment
-- ✅ Identify quantity discrepancies
-- ✅ Enforce procurement controls
-- ✅ Prevent duplicate payments
-- ✅ Automate three-way matching
-- ✅ Reduce manual invoice review workload
+Este patrón muestra cómo implementar flujos de trabajo completos de cotejo de pedidos de compra (PO) en DocBits. El cotejo de PO es un proceso de control crítico que compara los datos de la factura con los datos del pedido de compra para detectar discrepancias antes de la aprobación del pago.
 
-**Don't use this pattern when:**
-- ❌ No PO exists for the invoice (non-PO invoices)
-- ❌ PO data not available in DocBits
-- ❌ Manual review preferred over automation
-- ❌ PO matching not required by business policy
+**Qué hace este patrón:**
+1. Recupera los datos de la PO según el número de PO de la factura
+2. Compara las líneas de la factura con las líneas de la PO
+3. Calcula las desviaciones (precio, cantidad, totales)
+4. Aplica reglas de tolerancia
+5. Enruta para aprobación o escalado según los resultados del cotejo
+6. Hace seguimiento del historial de cotejos y de las excepciones
 
 ---
 
-## Understanding PO Matching
+## Cuándo usar este patrón
 
-### The Three-Way Match
+Use este patrón cuando necesite:
+- ✅ Validar facturas contra pedidos de compra
+- ✅ Detectar errores de precio antes del pago
+- ✅ Identificar discrepancias de cantidad
+- ✅ Aplicar controles de compras
+- ✅ Evitar pagos duplicados
+- ✅ Automatizar el cotejo a tres bandas
+- ✅ Reducir la carga de revisión manual de facturas
 
-**Traditional procurement control:**
+**No use este patrón cuando:**
+- ❌ No exista ninguna PO para la factura (facturas sin PO)
+- ❌ Los datos de la PO no estén disponibles en DocBits
+- ❌ Se prefiera la revisión manual a la automatización
+- ❌ La política de negocio no requiera el cotejo de PO
+
+---
+
+## Comprender el cotejo de PO
+
+### El cotejo a tres bandas
+
+**Control de compras tradicional:**
 ```
 Purchase Order (PO)  →  Created when ordering
         ↓
@@ -61,7 +61,7 @@ Invoice              →  Created by supplier
 THREE-WAY MATCH = PO + GR + Invoice all match
 ```
 
-**DocBits Implementation (Two-Way Match):**
+**Implementación en DocBits (cotejo a dos bandas):**
 ```
 Purchase Order (PO)  →  Imported to DocBits
         ↓
@@ -72,16 +72,16 @@ COMPARISON           →  Invoice vs PO validation
 
 ---
 
-## Variance Calculation Formulas
+## Fórmulas de cálculo de desviaciones
 
-### Unit Price Variance
+### Desviación del precio unitario
 
-**Formula:**
+**Fórmula:**
 ```
 Variance % = |(Invoice Unit Price - PO Unit Price)| / PO Unit Price × 100
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 PO Unit Price:       €100.00
 Invoice Unit Price:  €103.00
@@ -96,14 +96,14 @@ Result: 3% ≤ 5% → PASS ✅
 
 ---
 
-### Quantity Variance
+### Desviación de cantidad
 
-**Formula:**
+**Fórmula:**
 ```
 Variance % = |(Invoice Quantity - PO Quantity)| / PO Quantity × 100
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 PO Quantity:        100 units
 Invoice Quantity:   98 units
@@ -118,14 +118,14 @@ Result: 2% ≤ 10% → PASS ✅
 
 ---
 
-### Total Amount Variance
+### Desviación del importe total
 
-**Formula:**
+**Fórmula:**
 ```
 Variance % = |(Invoice Total - PO Total)| / PO Total × 100
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 PO Total:       €10,000.00
 Invoice Total:  €10,450.00
@@ -140,44 +140,44 @@ Result: 4.5% ≤ 5% → PASS ✅
 
 ---
 
-## Complete Workflow Example
+## Ejemplo de flujo de trabajo completo
 
-### Scenario: Invoice Validation with Tolerance-Based Routing
+### Escenario: Validación de facturas con enrutamiento basado en tolerancia
 
-**Business Requirement:**
-- All invoices with PO reference must be validated
-- Price variance tolerance: 5%
-- Quantity variance tolerance: 10%
-- Total amount variance tolerance: 3%
-- Within tolerance: Auto-approve
-- Outside tolerance: Create review task
-- Missing PO: Escalate to procurement
+**Requisito de negocio:**
+- Todas las facturas con referencia de PO deben validarse
+- Tolerancia de desviación de precio: 5 %
+- Tolerancia de desviación de cantidad: 10 %
+- Tolerancia de desviación del importe total: 3 %
+- Dentro de la tolerancia: Aprobación automática
+- Fuera de la tolerancia: Crear tarea de revisión
+- Sin PO: Escalar a compras
 
-**Workflow Cards Used:**
-1. CONDITION_DOC_FIELD_EXISTS - Check if PO number present
-2. PURCHASE_ORDER_FULL_MATCH - Attempt full match
-3. CONDITION_DOC_TO_PO_UNIT_PRICE - Check price variance
-4. CONDITION_DOC_TO_PO_QUANTITY - Check quantity variance
-5. CONDITION_DOC_TO_PO_TAX_LINES - Check tax alignment
-6. ACTION_SET_FIELD_TO_TEXT - Store match results
-7. tasks_create - Create review tasks
-8. ACTION_SEND_EMAIL_TO_GROUPS - Send notifications
+**Tarjetas de flujo de trabajo utilizadas:**
+1. CONDITION_DOC_FIELD_EXISTS - Comprueba si el número de PO está presente
+2. PURCHASE_ORDER_FULL_MATCH - Intenta el cotejo completo
+3. CONDITION_DOC_TO_PO_UNIT_PRICE - Comprueba la desviación de precio
+4. CONDITION_DOC_TO_PO_QUANTITY - Comprueba la desviación de cantidad
+5. CONDITION_DOC_TO_PO_TAX_LINES - Comprueba la alineación de los impuestos
+6. ACTION_SET_FIELD_TO_TEXT - Almacena los resultados del cotejo
+7. tasks_create - Crea las tareas de revisión
+8. ACTION_SEND_EMAIL_TO_GROUPS - Envía las notificaciones
 
 ---
 
-## Step-by-Step Implementation
+## Implementación paso a paso
 
-### Step 1: Check for PO Reference
+### Paso 1: Comprobar la referencia de PO
 
-**Card:** CONDITION_DOC_FIELD_EXISTS or CONDITION_DOC_FIELD_CONTAINS
+**Tarjeta:** CONDITION_DOC_FIELD_EXISTS o CONDITION_DOC_FIELD_CONTAINS
 
-**Configuration:**
+**Configuración:**
 ```
 Field: PO_Number
 Operator: IS NOT EMPTY
 ```
 
-**Logic:**
+**Lógica:**
 ```
 IF PO_Number exists:
   → Continue to PO matching
@@ -187,18 +187,18 @@ ELSE:
   → Skip PO matching
 ```
 
-**Guide Reference:** [Condition Cards Guide](../and/condition-cards-complete-guide.md)
+**Referencia de guía:** [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md)
 
 ---
 
-### Step 2: Retrieve PO Data
+### Paso 2: Recuperar los datos de la PO
 
-**Automatic in DocBits:**
-- System looks up PO by PO_Number field
-- Retrieves PO line items
-- Makes data available for comparison
+**Automático en DocBits:**
+- El sistema busca la PO por el campo PO_Number
+- Recupera las líneas de la PO
+- Pone los datos a disposición para la comparación
 
-**Manual Configuration (if needed):**
+**Configuración manual (si es necesaria):**
 ```
 PO Source: DocBits Master Data
 PO Lookup Field: PO_Number
@@ -208,20 +208,20 @@ Include Closed POs: No (or Yes if policy allows)
 
 ---
 
-### Step 3: Full PO Match Check
+### Paso 3: Comprobación de cotejo completo de PO
 
-**Card:** PURCHASE_ORDER_FULL_MATCH
+**Tarjeta:** PURCHASE_ORDER_FULL_MATCH
 
-**Purpose:** Quick check if everything matches perfectly
+**Propósito:** Comprobación rápida de si todo coincide perfectamente
 
-**Configuration:**
+**Configuración:**
 ```
 Match Level: Full Match
 Include: All line items, prices, quantities, totals
 Tolerance: None (exact match)
 ```
 
-**Logic:**
+**Lógica:**
 ```
 IF Full Match = TRUE:
   → Set "PO_Match_Status" = "FULL MATCH"
@@ -234,17 +234,17 @@ IF Full Match = FALSE:
   → Identify specific variances
 ```
 
-**Result:**
-- **TRUE**: Perfect match, auto-approve
-- **FALSE**: Proceed to detailed checks
+**Resultado:**
+- **TRUE**: Coincidencia perfecta, aprobación automática
+- **FALSE**: Continuar con las comprobaciones detalladas
 
 ---
 
-### Step 4: Check Unit Price Variance
+### Paso 4: Comprobar la desviación del precio unitario
 
-**Card:** CONDITION_DOC_TO_PO_UNIT_PRICE (v5 recommended)
+**Tarjeta:** CONDITION_DOC_TO_PO_UNIT_PRICE (se recomienda la v5)
 
-**Configuration:**
+**Configuración:**
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 5%
@@ -252,7 +252,7 @@ Operator: Variance is Less Than or Equal To
 Apply To: All line items
 ```
 
-**Step-by-Step:**
+**Paso a paso:**
 ```
 For each line item:
   1. Get Invoice Unit Price
@@ -262,7 +262,7 @@ For each line item:
   5. Store result
 ```
 
-**Example Calculation:**
+**Ejemplo de cálculo:**
 ```
 Line Item 1:
   Product: ABC123
@@ -283,15 +283,15 @@ Line Item 2:
 Overall Result: FAIL (one or more items failed)
 ```
 
-**Guide Reference:** [PO Matching Complete Guide - Unit Price](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
+**Referencia de guía:** [Guía completa de cotejo de PO - Precio unitario](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
 
 ---
 
-### Step 5: Check Quantity Variance
+### Paso 5: Comprobar la desviación de cantidad
 
-**Card:** CONDITION_DOC_TO_PO_QUANTITY
+**Tarjeta:** CONDITION_DOC_TO_PO_QUANTITY
 
-**Configuration:**
+**Configuración:**
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 10%
@@ -301,7 +301,7 @@ Allow Under-Delivery: Yes (within tolerance)
 Allow Over-Delivery: No (strict)
 ```
 
-**Logic:**
+**Lógica:**
 ```
 For each line item:
   1. Get Invoice Quantity
@@ -313,7 +313,7 @@ For each line item:
      - Over-delivery: Reject (or apply stricter tolerance)
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 Line Item 1:
   Product: ABC123
@@ -332,15 +332,15 @@ Line Item 2:
   Result: FAIL ❌ (Escalate)
 ```
 
-**Guide Reference:** [PO Matching Complete Guide - Quantity](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
+**Referencia de guía:** [Guía completa de cotejo de PO - Cantidad](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
 
 ---
 
-### Step 6: Check Tax Lines Alignment
+### Paso 6: Comprobar la alineación de las líneas de impuestos
 
-**Card:** CONDITION_DOC_TO_PO_TAX_LINES
+**Tarjeta:** CONDITION_DOC_TO_PO_TAX_LINES
 
-**Configuration:**
+**Configuración:**
 ```
 Match Tax Codes: Yes
 Match Tax Rates: Yes
@@ -348,7 +348,7 @@ Match Tax Amounts: With 1% tolerance
 Tax Calculation: Verify recalculation
 ```
 
-**Validation:**
+**Validación:**
 ```
 1. Check tax codes match (e.g., "VAT19" on both)
 2. Check tax rates match (19% on both)
@@ -357,7 +357,7 @@ Tax Calculation: Verify recalculation
 4. Allow small rounding differences
 ```
 
-**Example:**
+**Ejemplo:**
 ```
 Invoice:
   Net Amount: €100.00
@@ -376,46 +376,46 @@ Result: Tax alignment PASS ✅
 
 ---
 
-### Step 7: Store Match Results
+### Paso 7: Almacenar los resultados del cotejo
 
-**Card:** ACTION_SET_FIELD_TO_TEXT (multiple instances)
+**Tarjeta:** ACTION_SET_FIELD_TO_TEXT (varias instancias)
 
-**Configuration:**
+**Configuración:**
 
-**Field 1: PO_Match_Status**
+**Campo 1: PO_Match_Status**
 ```
 Field: PO_Match_Status
 Value: {{CALCULATED}}
 Options: "FULL MATCH" | "WITHIN TOLERANCE" | "OUT OF TOLERANCE" | "NO MATCH"
 ```
 
-**Field 2: Price_Variance_Percent**
+**Campo 2: Price_Variance_Percent**
 ```
 Field: Price_Variance_Percent
 Value: {{CALCULATED_PRICE_VARIANCE}}
 Format: "4.5%" (example)
 ```
 
-**Field 3: Quantity_Variance_Percent**
+**Campo 3: Quantity_Variance_Percent**
 ```
 Field: Quantity_Variance_Percent
 Value: {{CALCULATED_QUANTITY_VARIANCE}}
 Format: "2.0%" (example)
 ```
 
-**Field 4: Match_Details**
+**Campo 4: Match_Details**
 ```
 Field: Match_Details
 Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (within 10% tolerance)\nTotal: PASS"
 ```
 
-**Guide Reference:** [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md)
+**Referencia de guía:** [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md)
 
 ---
 
-### Step 8: Route Based on Match Results
+### Paso 8: Enrutar según los resultados del cotejo
 
-**Scenario A: Perfect Match (Full Match)**
+**Escenario A: Coincidencia perfecta (cotejo completo)**
 ```
 IF PO_Match_Status = "FULL MATCH":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -426,7 +426,7 @@ IF PO_Match_Status = "FULL MATCH":
   → END ✅
 ```
 
-**Scenario B: Within Tolerance**
+**Escenario B: Dentro de la tolerancia**
 ```
 IF PO_Match_Status = "WITHIN TOLERANCE":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -437,7 +437,7 @@ IF PO_Match_Status = "WITHIN TOLERANCE":
   → END ✅
 ```
 
-**Scenario C: Outside Tolerance (Minor)**
+**Escenario C: Fuera de la tolerancia (menor)**
 ```
 IF Variance < 15% (minor exceptions):
   1. Set Match_Status = "REVIEW REQUIRED"
@@ -451,7 +451,7 @@ IF Variance < 15% (minor exceptions):
      IF Rejected: Return to supplier
 ```
 
-**Scenario D: Outside Tolerance (Major)**
+**Escenario D: Fuera de la tolerancia (mayor)**
 ```
 IF Variance ≥ 15% (major exceptions):
   1. Set Match_Status = "ESCALATION REQUIRED"
@@ -467,7 +467,7 @@ IF Variance ≥ 15% (major exceptions):
   5. Wait for resolution
 ```
 
-**Scenario E: Missing PO or No Match**
+**Escenario E: PO ausente o sin coincidencia**
 ```
 IF PO not found OR no items match:
   1. Set Match_Status = "NO MATCH"
@@ -481,7 +481,7 @@ IF PO not found OR no items match:
 
 ---
 
-## Complete Workflow Diagram
+## Diagrama del flujo de trabajo completo
 
 ```
 INVOICE ARRIVES
@@ -625,9 +625,9 @@ INVOICE ARRIVES
 
 ---
 
-## Configuration Templates
+## Plantillas de configuración
 
-### Template 1: Standard PO Matching (Conservative)
+### Plantilla 1: Cotejo de PO estándar (conservador)
 
 ```json
 {
@@ -661,11 +661,11 @@ INVOICE ARRIVES
 }
 ```
 
-**Use:** Strict control environment, low tolerance for variance
+**Uso:** Entorno de control estricto, baja tolerancia a la desviación
 
 ---
 
-### Template 2: Flexible PO Matching (Lenient)
+### Plantilla 2: Cotejo de PO flexible (permisivo)
 
 ```json
 {
@@ -699,11 +699,11 @@ INVOICE ARRIVES
 }
 ```
 
-**Use:** Flexible environment, trusted suppliers, higher tolerance
+**Uso:** Entorno flexible, proveedores de confianza, mayor tolerancia
 
 ---
 
-### Template 3: Price-Only Matching
+### Plantilla 3: Cotejo solo de precio
 
 ```json
 {
@@ -726,17 +726,17 @@ INVOICE ARRIVES
 }
 ```
 
-**Use:** When only price matters, quantity variations expected
+**Uso:** Cuando solo importa el precio y se esperan variaciones de cantidad
 
 ---
 
-## Advanced Scenarios
+## Escenarios avanzados
 
-### Scenario 1: Partial Delivery Handling
+### Escenario 1: Gestión de entregas parciales
 
-**Challenge:** Invoice for partial PO delivery
+**Reto:** Factura por una entrega parcial de la PO
 
-**Solution:**
+**Solución:**
 ```
 1. Allow quantity under-delivery within tolerance
 2. Track cumulative invoiced quantity vs PO quantity
@@ -745,7 +745,7 @@ INVOICE ARRIVES
 5. When 100% invoiced: Close PO automatically
 ```
 
-**Implementation:**
+**Implementación:**
 ```
 IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
   Calculate: Percentage = (Cumulative/PO) × 100
@@ -757,11 +757,11 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 
 ---
 
-### Scenario 2: Multi-Currency PO Matching
+### Escenario 2: Cotejo de PO multidivisa
 
-**Challenge:** Invoice currency different from PO currency
+**Reto:** La divisa de la factura es distinta de la de la PO
 
-**Solution:**
+**Solución:**
 ```
 1. Detect currency mismatch
 2. Get exchange rate (from API or master data)
@@ -770,7 +770,7 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 5. Store both original and converted amounts
 ```
 
-**Implementation:**
+**Implementación:**
 ```
 IF Invoice_Currency ≠ PO_Currency:
   1. Get exchange rate for Invoice_Currency → PO_Currency
@@ -782,11 +782,11 @@ IF Invoice_Currency ≠ PO_Currency:
 
 ---
 
-### Scenario 3: Blanket PO / Framework Agreement
+### Escenario 3: PO global / Contrato marco
 
-**Challenge:** Multiple invoices against single PO
+**Reto:** Varias facturas contra una sola PO
 
-**Solution:**
+**Solución:**
 ```
 1. Identify PO type = "Blanket"
 2. Track cumulative invoiced value
@@ -795,7 +795,7 @@ IF Invoice_Currency ≠ PO_Currency:
 5. Alert when approaching PO limit
 ```
 
-**Implementation:**
+**Implementación:**
 ```
 IF PO_Type = "Blanket":
   Calculate: Total_Invoiced_To_Date
@@ -809,13 +809,13 @@ IF PO_Type = "Blanket":
 
 ---
 
-## Error Handling & Edge Cases
+## Gestión de errores y casos límite
 
-### Edge Case 1: Missing Line Item on Invoice
+### Caso límite 1: Falta una línea en la factura
 
-**Problem:** Invoice has item not on PO
+**Problema:** La factura tiene un artículo que no está en la PO
 
-**Solution:**
+**Solución:**
 ```
 1. Identify unmatched line items
 2. Calculate: Unmatched_Amount
@@ -829,11 +829,11 @@ IF PO_Type = "Blanket":
 
 ---
 
-### Edge Case 2: PO Closed but Invoice Arrives
+### Caso límite 2: PO cerrada pero llega una factura
 
-**Problem:** PO already closed, late invoice received
+**Problema:** La PO ya está cerrada y se recibe una factura tardía
 
-**Solution:**
+**Solución:**
 ```
 1. Check: PO_Status = "CLOSED"
 2. Check: Invoice_Date vs PO_Close_Date
@@ -849,11 +849,11 @@ IF PO_Type = "Blanket":
 
 ---
 
-### Edge Case 3: Multiple POs on Single Invoice
+### Caso límite 3: Varias PO en una sola factura
 
-**Problem:** Invoice references multiple POs
+**Problema:** La factura hace referencia a varias PO
 
-**Solution:**
+**Solución:**
 ```
 1. Parse invoice for multiple PO numbers
 2. For each PO:
@@ -866,107 +866,107 @@ IF PO_Type = "Blanket":
 
 ---
 
-## Performance Tips
+## Consejos de rendimiento
 
-✅ **Best Practices:**
-- Cache PO data to reduce lookups
-- Set appropriate tolerances (not too strict, not too lenient)
-- Use full match check first (faster)
-- Log all variance calculations
-- Review tolerance settings quarterly
-- Monitor auto-approval rates
-- Track common variance reasons
+✅ **Buenas prácticas:**
+- Almacene en caché los datos de la PO para reducir las búsquedas
+- Establezca tolerancias adecuadas (ni demasiado estrictas ni demasiado permisivas)
+- Use primero la comprobación de cotejo completo (más rápida)
+- Registre todos los cálculos de desviación
+- Revise la configuración de tolerancias trimestralmente
+- Supervise las tasas de aprobación automática
+- Haga seguimiento de los motivos de desviación habituales
 
-❌ **Avoid:**
-- Zero tolerance (too strict, too many manual reviews)
-- Extremely high tolerance (defeats purpose)
-- Ignoring systematic variances
-- Not tracking variance trends
-- Processing without PO (when required)
+❌ **Evite:**
+- La tolerancia cero (demasiado estricta, demasiadas revisiones manuales)
+- Una tolerancia extremadamente alta (anula el propósito)
+- Ignorar las desviaciones sistemáticas
+- No hacer seguimiento de las tendencias de desviación
+- Procesar sin PO (cuando es obligatoria)
 
 ---
 
-## Monitoring & Reporting
+## Supervisión e informes
 
-### Key Metrics to Track
+### Métricas clave para hacer seguimiento
 
-1. **Match Rate:**
+1. **Tasa de coincidencia:**
    - Full Match: X%
    - Within Tolerance: Y%
    - Outside Tolerance: Z%
 
-2. **Variance Analysis:**
-   - Average price variance
-   - Average quantity variance
-   - Common variance reasons
+2. **Análisis de desviaciones:**
+   - Desviación de precio media
+   - Desviación de cantidad media
+   - Motivos de desviación habituales
 
-3. **Processing Efficiency:**
-   - Auto-approval rate
-   - Manual review rate
-   - Average review time
+3. **Eficiencia del procesamiento:**
+   - Tasa de aprobación automática
+   - Tasa de revisión manual
+   - Tiempo medio de revisión
 
-4. **Supplier Performance:**
-   - Variances by supplier
-   - Match rate by supplier
-   - Problem suppliers
-
----
-
-## Testing Checklist
-
-- [ ] Perfect match scenario (full match)
-- [ ] Within tolerance scenario (minor variance)
-- [ ] Outside tolerance scenario (major variance)
-- [ ] Missing PO scenario
-- [ ] Wrong PO number scenario
-- [ ] Partial delivery scenario
-- [ ] Over-delivery scenario
-- [ ] Currency mismatch scenario
-- [ ] Multiple POs scenario
-- [ ] Closed PO scenario
-- [ ] Tax variance scenario
-- [ ] Escalation workflow
-- [ ] Task creation
-- [ ] Email notifications
-- [ ] Field updates
-- [ ] Export after approval
+4. **Rendimiento del proveedor:**
+   - Desviaciones por proveedor
+   - Tasa de coincidencia por proveedor
+   - Proveedores problemáticos
 
 ---
 
-## Related Patterns
+## Lista de comprobación para pruebas
 
-### Patterns That Work Well Together:
-
-- **[Task Management Pattern](task-management-pattern.md)** - Create review tasks for variances
-- **[Decision Logic Pattern](decision-logic-pattern.md)** - Complex routing based on variance levels
-- **[API Integration Pattern](api-integration-pattern.md)** - Fetch current pricing for comparison
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Currency conversion, unit conversion
-
----
-
-## Related Guides
-
-### Prerequisites
-- [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md) - All PO matching cards
-- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Condition logic
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Field operations
-
-### Related Cards
-- **PURCHASE_ORDER_FULL_MATCH** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#full-match)
-- **CONDITION_DOC_TO_PO_UNIT_PRICE** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price)
-- **CONDITION_DOC_TO_PO_QUANTITY** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity)
-- **CONDITION_DOC_TO_PO_TAX_LINES** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#tax-lines)
-- **tasks_create** - [Task Assignment Guide](../then/task/task-assignment-guide.md)
-
-### Next Steps
-- Create review tasks: [Task Management Pattern](task-management-pattern.md)
-- Add email notifications: [Send Email Guide](../then/action/send-email-groups-guide.md)
-- Implement complex routing: [Decision Logic Pattern](decision-logic-pattern.md)
+- [ ] Escenario de coincidencia perfecta (cotejo completo)
+- [ ] Escenario dentro de la tolerancia (desviación menor)
+- [ ] Escenario fuera de la tolerancia (desviación mayor)
+- [ ] Escenario de PO ausente
+- [ ] Escenario de número de PO incorrecto
+- [ ] Escenario de entrega parcial
+- [ ] Escenario de entrega excesiva
+- [ ] Escenario de discrepancia de divisa
+- [ ] Escenario de varias PO
+- [ ] Escenario de PO cerrada
+- [ ] Escenario de desviación de impuestos
+- [ ] Flujo de trabajo de escalado
+- [ ] Creación de tareas
+- [ ] Notificaciones por correo electrónico
+- [ ] Actualizaciones de campos
+- [ ] Exportación tras la aprobación
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Medium-High
-**Estimated Time:** 60-90 minutes
-**Success Rate:** High (when properly configured)
+## Patrones relacionados
+
+### Patrones que funcionan bien juntos:
+
+- **[Patrón de gestión de tareas](task-management-pattern.md)** - Crea tareas de revisión para las desviaciones
+- **[Patrón de lógica de decisión](decision-logic-pattern.md)** - Enrutamiento complejo según los niveles de desviación
+- **[Patrón de integración de API](api-integration-pattern.md)** - Obtiene el precio actual para la comparación
+- **[Patrón de transformación de datos](data-transformation-pattern.md)** - Conversión de divisas y de unidades
+
+---
+
+## Guías relacionadas
+
+### Requisitos previos
+- [Guía completa de cotejo de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md) - Todas las tarjetas de cotejo de PO
+- [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md) - Lógica de condiciones
+- [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md) - Operaciones con campos
+
+### Tarjetas relacionadas
+- **PURCHASE_ORDER_FULL_MATCH** - [Guía de cotejo de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md#full-match)
+- **CONDITION_DOC_TO_PO_UNIT_PRICE** - [Guía de cotejo de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price)
+- **CONDITION_DOC_TO_PO_QUANTITY** - [Guía de cotejo de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity)
+- **CONDITION_DOC_TO_PO_TAX_LINES** - [Guía de cotejo de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md#tax-lines)
+- **tasks_create** - [Guía de asignación de tareas](../then/task/task-assignment-guide.md)
+
+### Próximos pasos
+- Crear tareas de revisión: [Patrón de gestión de tareas](task-management-pattern.md)
+- Añadir notificaciones por correo electrónico: [Guía de envío de correo](../then/action/send-email-groups-guide.md)
+- Implementar enrutamiento complejo: [Patrón de lógica de decisión](decision-logic-pattern.md)
+
+---
+
+**Versión del patrón:** 1.0
+**Última actualización:** 23 de octubre de 2025
+**Dificultad:** Media-Alta
+**Tiempo estimado:** 60-90 minutos
+**Tasa de éxito:** Alta (cuando se configura correctamente)

@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This DocBits card is used to validate whether any value in a specific column of a table matches a provided regex pattern. If any single entry in the column matches the pattern, the workflow will continue, making it ideal for use cases where identifying even a single match triggers the next steps in the process.
+Esta tarjeta de DocBits se utiliza para validar si algún valor de una columna específica de una tabla coincide con un patrón regex proporcionado. Si una sola entrada de la columna coincide con el patrón, el flujo de trabajo continuará, lo que la hace ideal para casos de uso en los que identificar incluso una única coincidencia dispara los siguientes pasos del proceso.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Regex Pattern Validation:** This card checks if any value in a given column of a table matches the provided regular expression pattern. The card will trigger and allow the workflow to continue if at least one entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that at least one value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for regex pattern matches.
+* **Validación de patrón regex:** Esta tarjeta comprueba si algún valor de una columna dada de una tabla coincide con el patrón de expresión regular proporcionado. La tarjeta se disparará y permitirá que el flujo de trabajo continúe si al menos una entrada de la columna cumple la condición.
+* **Operator:** Los usuarios definen la columna y especifican el patrón regex. La condición disponible incluye:
+  * **Matches Regex Pattern:** Verifica que al menos un valor de la columna especificada coincida con el patrón regex.
+* **Selección de tabla y columna:** Los usuarios especifican la tabla y la columna que desean comprobar para detectar coincidencias del patrón regex.
 
-## **Usage:**
+## **Uso:**
 
-This card is particularly useful for scenarios where a table contains data that might require specific matches, such as validating email addresses, invoice numbers, or product IDs. It ensures that workflows proceed when any relevant entry matches the defined pattern, without needing to check every entry.
+Esta tarjeta es especialmente útil para escenarios en los que una tabla contiene datos que pueden requerir coincidencias específicas, como validar direcciones de correo electrónico, números de factura o ID de producto. Garantiza que los flujos de trabajo continúen cuando alguna entrada pertinente coincida con el patrón definido, sin necesidad de comprobar todas las entradas.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-* A user sets the card to check for entries in the "Email Address" column of the "Customers" table, using a regex pattern for valid email formats. If at least one email address in the column matches the pattern, the card will trigger the next workflow step, ensuring that the system processes the valid entry.
+* Un usuario configura la tarjeta para buscar entradas en la columna "Email Address" de la tabla "Customers", usando un patrón regex para formatos de correo electrónico válidos. Si al menos una dirección de correo electrónico de la columna coincide con el patrón, la tarjeta dispara el siguiente paso del flujo de trabajo, garantizando que el sistema procese la entrada válida.
 
-By using the "Regex Pattern Matching" card, organizations can automate workflows based on dynamic, pattern-based validations, streamlining processes and ensuring that only relevant entries trigger further actions.
+Al usar la tarjeta "Regex Pattern Matching", las organizaciones pueden automatizar flujos de trabajo basados en validaciones dinámicas basadas en patrones, agilizando los procesos y garantizando que solo las entradas pertinentes disparen acciones adicionales.

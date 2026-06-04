@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This DocBits card checks whether items in a dataset have a specified receiving method. Users can choose to validate **any** item or **all** items in the dataset based on a selected condition, making it suitable for scenarios where workflows depend on item receiving methods, such as in supply chain management or inventory tracking.
+Esta tarjeta de DocBits comprueba si los artículos de un conjunto de datos tienen un método de recepción especificado. Los usuarios pueden optar por validar **algún** artículo o **todos** los artículos del conjunto de datos según una condición seleccionada, lo que la hace adecuada para escenarios en los que los flujos de trabajo dependen de los métodos de recepción de artículos, como en la gestión de la cadena de suministro o el seguimiento de inventario.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Receiving Method Validation:** This card verifies the receiving method of items against a specified condition. Users can choose between **any** item or **all** items in the dataset and set the condition as **equals** or **not equals**.
-* **Item Selection:** Users can specify:
-  * **Any Item:** The card triggers if at least one item meets the specified receiving method condition.
-  * **All Items:** The card triggers only if all items meet the specified receiving method condition.
-* **Operators:** The following operators are available to define the condition:
-  * **Equals (=):** Checks if the receiving method matches the specified value.
-  * **Not Equals (≠):** Ensures the receiving method does not match the specified value.
+* **Validación del método de recepción:** Esta tarjeta verifica el método de recepción de los artículos frente a una condición especificada. Los usuarios pueden elegir entre **algún** artículo o **todos** los artículos del conjunto de datos y establecer la condición como **equals** o **not equals**.
+* **Selección de artículos:** Los usuarios pueden especificar:
+  * **Any Item:** La tarjeta se dispara si al menos un artículo cumple la condición de método de recepción especificada.
+  * **All Items:** La tarjeta se dispara solo si todos los artículos cumplen la condición de método de recepción especificada.
+* **Operators:** Los siguientes operadores están disponibles para definir la condición:
+  * **Equals (=):** Comprueba si el método de recepción coincide con el valor especificado.
+  * **Not Equals (≠):** Garantiza que el método de recepción no coincida con el valor especificado.
 
-## **Usage:**
+## **Uso:**
 
-This card is ideal for warehouse managers, inventory coordinators, or logistics personnel who need to validate item receiving methods before allowing further actions, such as processing, storage, or shipping.
+Esta tarjeta es ideal para los responsables de almacén, los coordinadores de inventario o el personal de logística que necesitan validar los métodos de recepción de los artículos antes de permitir acciones adicionales, como el procesamiento, el almacenamiento o el envío.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-* A user configures the card to check if **all items** have the receiving method **equals "Direct Delivery"**. If every item meets this condition, the workflow proceeds, confirming that all items are intended for direct delivery.
+* Un usuario configura la tarjeta para comprobar si **todos los artículos** tienen el método de recepción **igual a "Direct Delivery"**. Si todos los artículos cumplen esta condición, el flujo de trabajo continúa, confirmando que todos los artículos están destinados a la entrega directa.
 
-By using the "Receiving Method Validation" card, organizations can ensure compliance with receiving protocols, improve logistics workflows, and maintain accuracy in item handling based on specific receiving methods.
+Al usar la tarjeta "Receiving Method Validation", las organizaciones pueden garantizar el cumplimiento de los protocolos de recepción, mejorar los flujos de trabajo logísticos y mantener la precisión en el manejo de los artículos según los métodos de recepción específicos.

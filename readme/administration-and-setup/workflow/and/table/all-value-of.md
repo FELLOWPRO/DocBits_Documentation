@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This DocBits card is used to validate whether **all values** in a specific column of a table match a provided regex pattern. For the workflow to continue, every entry in the column must meet the condition, making this card ideal for ensuring consistency and data integrity across all entries.
+Esta tarjeta de DocBits se utiliza para validar si **todos los valores** de una columna específica de una tabla coinciden con un patrón regex proporcionado. Para que el flujo de trabajo continúe, todas las entradas de la columna deben cumplir la condición, lo que hace que esta tarjeta sea ideal para garantizar la coherencia y la integridad de los datos en todas las entradas.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Regex Pattern Validation:** This card checks that **all values** in a specified column of a table match the provided regular expression pattern. The workflow will only proceed if every entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that every value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for complete regex pattern matches.
+* **Validación de patrón regex:** Esta tarjeta comprueba que **todos los valores** de una columna especificada de una tabla coincidan con el patrón de expresión regular proporcionado. El flujo de trabajo solo continuará si todas las entradas de la columna cumplen la condición.
+* **Operator:** Los usuarios definen la columna y especifican el patrón regex. La condición disponible incluye:
+  * **Matches Regex Pattern:** Verifica que todos los valores de la columna especificada coincidan con el patrón regex.
+* **Selección de tabla y columna:** Los usuarios especifican la tabla y la columna que desean comprobar para detectar coincidencias completas del patrón regex.
 
-## **Usage:**
+## **Uso:**
 
-This card is ideal for cases where data uniformity is required, such as ensuring all phone numbers, product IDs, or other field entries adhere to a specific format. It ensures that workflows only proceed when every relevant entry is consistent with the pattern.
+Esta tarjeta es ideal para los casos en los que se requiere uniformidad de datos, como garantizar que todos los números de teléfono, los ID de producto u otras entradas de campo se ajusten a un formato específico. Garantiza que los flujos de trabajo solo continúen cuando todas las entradas pertinentes sean coherentes con el patrón.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-* A user sets the card to check the "Phone Number" column in the "Contacts" table, using a regex pattern to validate phone number formats. If every phone number entry in the column matches the pattern, the card will trigger the next step in the workflow, confirming uniform data formatting.
+* Un usuario configura la tarjeta para comprobar la columna "Phone Number" de la tabla "Contacts", usando un patrón regex para validar los formatos de los números de teléfono. Si todas las entradas de números de teléfono de la columna coinciden con el patrón, la tarjeta dispara el siguiente paso del flujo de trabajo, confirmando un formato de datos uniforme.
 
-By using the "All Values Regex Pattern Matching" card, organizations can enforce strict data standards and enhance workflow accuracy, ensuring that every entry in a specified column meets the required format before proceeding.
+Al usar la tarjeta "All Values Regex Pattern Matching", las organizaciones pueden aplicar estándares de datos estrictos y mejorar la precisión del flujo de trabajo, garantizando que todas las entradas de una columna especificada cumplan el formato requerido antes de continuar.

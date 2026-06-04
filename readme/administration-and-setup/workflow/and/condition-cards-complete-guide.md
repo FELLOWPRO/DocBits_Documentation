@@ -4,35 +4,35 @@ Os cartões de condição desta página ficam nos grupos **When** e **And** do C
 
 <figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Os cartões de condição são adicionados aos grupos <strong>When</strong> e <strong>And</strong> através de <strong>Add Card</strong>.</p></figcaption></figure>
 
-**Covers:** 31 remaining condition cards
+**Abrange:** 31 cartões de condição restantes
 
 ---
 
-## 📌 Version Information
+## 📌 Informações de versão
 
-**Status:** Most condition cards are stable with single or dual-version structures
-**Version Pattern:** Most follow v1 → v2 pattern (adding i18n support)
-**Multi-Version Example:** CONDITION_DECISION_TREE_DATA (v2-v3)
+**Estado:** A maioria dos cartões de condição é estável, com estruturas de versão única ou dupla
+**Padrão de versão:** A maioria segue o padrão v1 → v2 (adição de suporte de i18n)
+**Exemplo multiversão:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Note:** Some PO comparison condition cards have 4-5 versions (see PO Matching Guide for details)
+**Nota:** Alguns cartões de condição de comparação de PO têm 4-5 versões (consulte o PO Matching Guide para mais detalhes)
 
 📖 [Complete Version History](../../../changelog/release.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 
-# Document State & Status Conditions
+# Condições de estado do documento
 
-## Card: CONDITION_DOC_STATUS_IS_ISNOT / Document Status Check
+## Cartão: CONDITION_DOC_STATUS_IS_ISNOT / Document Status Check
 
-### Purpose
-Checks if document has specific status
+### Objetivo
+Verifica se o documento tem um estado específico
 
-### When to Use
-- Before approving
-- At specific workflow stage
-- Status-based routing
+### Quando utilizar
+- Antes de aprovar
+- Numa fase específica do fluxo de trabalho
+- Encaminhamento baseado no estado
 
-### Document Status Types
+### Tipos de estado do documento
 ```
 - Upload: Being uploaded
 - OCR: Being scanned
@@ -46,7 +46,7 @@ Checks if document has specific status
 - Error: Problem occurred
 ```
 
-### How It Works
+### Como funciona
 ```
 Current Status: "Pending Approval"
     ↓
@@ -56,7 +56,7 @@ YES → Continue with action
 NO → Stop or do alternative action
 ```
 
-### Example
+### Exemplo
 ```
 Condition: "Document status IS Pending Approval?"
     ↓
@@ -64,7 +64,7 @@ If YES: Create approval task
 If NO: Do something else
 ```
 
-### Parameters
+### Parâmetros
 ```
 Operator: IS / IS NOT
 Status: [Select status]
@@ -72,16 +72,16 @@ Status: [Select status]
 
 ---
 
-## Card: CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST
+## Cartão: CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST
 
-### Purpose
-Checks if status matches any in a list
+### Objetivo
+Verifica se o estado corresponde a algum de uma lista
 
-### When to Use
-- Multiple valid statuses
-- OR logic for status
+### Quando utilizar
+- Vários estados válidos
+- Lógica OR para o estado
 
-### Example
+### Exemplo
 ```
 Condition: "Status is one of: [Pending Approval, Pending Second Approval, Workflow]?"
     ↓
@@ -91,12 +91,12 @@ If doesn't match: Stop
 
 ---
 
-## Card: CONDITION_DOC_TYPE_IS_ISNOT / Document Type Check
+## Cartão: CONDITION_DOC_TYPE_IS_ISNOT / Document Type Check
 
-### Purpose
-Checks if document is specific type
+### Objetivo
+Verifica se o documento é de um tipo específico
 
-### Document Types
+### Tipos de documento
 ```
 - Invoice
 - Credit Note
@@ -108,7 +108,7 @@ Checks if document is specific type
 - Custom Types
 ```
 
-### How It Works
+### Como funciona
 ```
 Document type: "Invoice"
     ↓
@@ -118,7 +118,7 @@ YES → Process as invoice
 NO → Process differently
 ```
 
-### Example
+### Exemplo
 ```
 Condition: "Document type IS Invoice?"
     ↓
@@ -128,12 +128,12 @@ If NO: Skip PO validation
 
 ---
 
-## Card: CONDITION_DOC_TYPE_IS_ISNOT_LIST
+## Cartão: CONDITION_DOC_TYPE_IS_ISNOT_LIST
 
-### Purpose
-Checks if type matches any in list
+### Objetivo
+Verifica se o tipo corresponde a algum de uma lista
 
-### Example
+### Exemplo
 ```
 Condition: "Type is one of: [Invoice, Credit Note]?"
     ↓
@@ -143,12 +143,12 @@ NO: Skip financial checks
 
 ---
 
-## Card: CONDITION_SUB_ORG_IS_ISNOT / Sub-Organization Check
+## Cartão: CONDITION_SUB_ORG_IS_ISNOT / Sub-Organization Check
 
-### Purpose
-Checks which organization/department owns document
+### Objetivo
+Verifica que organização/departamento é proprietário do documento
 
-### Organizations
+### Organizações
 ```
 - Finance Department
 - Procurement
@@ -159,7 +159,7 @@ Checks which organization/department owns document
 - Regional Offices
 ```
 
-### Example
+### Exemplo
 ```
 Document belongs to: "Berlin Office"
     ↓
@@ -171,12 +171,12 @@ NO: Check other offices
 
 ---
 
-## Card: CONDITION_PURCHASE_ORDER_IMPORT / PO Import Check
+## Cartão: CONDITION_PURCHASE_ORDER_IMPORT / PO Import Check
 
-### Purpose
-Checks if PO is newly imported or existing
+### Objetivo
+Verifica se a PO foi recém-importada ou já existe
 
-### How It Works
+### Como funciona
 ```
 PO Status: "Newly Imported" (First time seeing this PO)
     ↓
@@ -186,21 +186,21 @@ YES: Do initial validation
 NO: Use cached PO data
 ```
 
-### When to Use
-- Different handling for new POs
-- Skip validation for known POs
-- Track first time seeing supplier
+### Quando utilizar
+- Tratamento diferente para novas POs
+- Ignorar a validação para POs conhecidas
+- Acompanhar a primeira vez que se vê um fornecedor
 
 ---
 
-# Assignee Conditions
+# Condições de responsável (Assignee)
 
-## Card: CONDITION_USER_IS_ISNOT / User Check
+## Cartão: CONDITION_USER_IS_ISNOT / User Check
 
-### Purpose
-Checks if document assigned to specific user
+### Objetivo
+Verifica se o documento está atribuído a um utilizador específico
 
-### How It Works
+### Como funciona
 ```
 Assigned to: "John Smith"
     ↓
@@ -210,7 +210,7 @@ YES: Continue
 NO: Stop
 ```
 
-### Example
+### Exemplo
 ```
 Condition: "Assigned to IS 'Finance Manager'"?
     ↓
@@ -220,12 +220,12 @@ If NO: Skip approval
 
 ---
 
-## Card: CONDITION_USER_IS_ISNOT_IN_LIST
+## Cartão: CONDITION_USER_IS_ISNOT_IN_LIST
 
-### Purpose
-Checks if assigned to any user in list
+### Objetivo
+Verifica se está atribuído a algum utilizador de uma lista
 
-### Example
+### Exemplo
 ```
 Condition: "Assigned to one of: [John, Sarah, Mike]?"
     ↓
@@ -235,12 +235,12 @@ NO: Stop
 
 ---
 
-## Card: CONDITION_GROUP_IS_ISNOT / Group Check
+## Cartão: CONDITION_GROUP_IS_ISNOT / Group Check
 
-### Purpose
-Checks if assigned to specific group
+### Objetivo
+Verifica se está atribuído a um grupo específico
 
-### Example
+### Exemplo
 ```
 Assigned to: "Finance Team" (10 members)
     ↓
@@ -252,12 +252,12 @@ NO: Check other groups
 
 ---
 
-## Card: CONDITION_GROUP_IS_ISNOT_IN_LIST
+## Cartão: CONDITION_GROUP_IS_ISNOT_IN_LIST
 
-### Purpose
-Checks if assigned to any group in list
+### Objetivo
+Verifica se está atribuído a algum grupo de uma lista
 
-### Example
+### Exemplo
 ```
 Condition: "Assigned to one of: [Finance, Procurement, Quality]?"
     ↓
@@ -267,14 +267,14 @@ NO: Stop
 
 ---
 
-# Date & Time Conditions
+# Condições de data e hora
 
-## Card: CONDITION_TIME_IS_ISNOT_BETWEEN / Date Range Check
+## Cartão: CONDITION_TIME_IS_ISNOT_BETWEEN / Date Range Check
 
-### Purpose
-Checks if date falls between two dates
+### Objetivo
+Verifica se uma data se situa entre duas datas
 
-### How It Works
+### Como funciona
 ```
 Document Date: 2025-10-23
     ↓
@@ -284,7 +284,7 @@ YES (October) → Continue
 NO (Other month) → Stop
 ```
 
-### Calculation
+### Cálculo
 ```
 Formula:
   Start Date ≤ Document Date ≤ End Date?
@@ -294,12 +294,12 @@ Example:
   YES ✅ Within range
 ```
 
-### When to Use
-- Check if in fiscal period
-- Check if within deadline
-- Check if in promotional period
+### Quando utilizar
+- Verificar se está num período fiscal
+- Verificar se está dentro de um prazo
+- Verificar se está num período promocional
 
-### Example
+### Exemplo
 ```
 Condition: "Document date between Oct 1 and Oct 31?"
     ↓
@@ -307,7 +307,7 @@ If YES: Oct invoices (monthly processing)
 If NO: Other month invoices
 ```
 
-### Parameters
+### Parâmetros
 ```
 Start Date: [Select or enter]
 End Date: [Select or enter]
@@ -316,12 +316,12 @@ Date Field: [Which field to check]
 
 ---
 
-## Card: CONDITION_TODAY_IS_ISNOT / Today Check
+## Cartão: CONDITION_TODAY_IS_ISNOT / Today Check
 
-### Purpose
-Checks if today's date matches criteria
+### Objetivo
+Verifica se a data de hoje cumpre determinados critérios
 
-### How It Works
+### Como funciona
 ```
 Today: 2025-10-23
     ↓
@@ -331,14 +331,14 @@ NO → Deadline not passed
 YES → Deadline passed (overdue)
 ```
 
-### Use Cases
+### Casos de utilização
 ```
 Is today past deadline? → Invoice is overdue
 Is today past promotion date? → Promotion ended
 Is today in quarter? → For quarterly reporting
 ```
 
-### Example
+### Exemplo
 ```
 Condition: "Is today AFTER invoice due date?"
     ↓
@@ -348,12 +348,12 @@ If NO: Invoice still within deadline
 
 ---
 
-## Card: CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
+## Cartão: CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
 
-### Purpose
-Checks if delivery date matches approved delivery dates in calendar
+### Objetivo
+Verifica se a data de entrega corresponde às datas de entrega aprovadas no calendário
 
-### How It Works
+### Como funciona
 ```
 Delivery Date from Invoice: 2025-10-25
     ↓
@@ -365,12 +365,12 @@ YES: Date is acceptable
 NO: Date not in approved list
 ```
 
-### When to Use
-- Verify delivery matches agreed dates
-- Check against holiday calendar
-- Validate against contracted dates
+### Quando utilizar
+- Verificar se a entrega corresponde às datas acordadas
+- Confrontar com o calendário de feriados
+- Validar com base nas datas contratadas
 
-### Example
+### Exemplo
 ```
 Supplier promised: 2025-10-25
 Invoice shows delivery: 2025-10-25
@@ -381,14 +381,14 @@ YES: Delivery date acceptable ✅
 
 ---
 
-# Logic Conditions
+# Condições de lógica
 
-## Card: CONDITION_DECISION_TREE_DATA / Decision Table Returns
+## Cartão: CONDITION_DECISION_TREE_DATA / Decision Table Returns
 
-### Purpose
-Checks if decision table has return values
+### Objetivo
+Verifica se a tabela de decisão tem valores de retorno
 
-### How It Works
+### Como funciona
 ```
 Run Decision Table
     ↓
@@ -398,12 +398,12 @@ YES: Data is available for next cards
 NO: No matching results
 ```
 
-### When to Use
-- Before using decision table results
-- As gate condition
-- To check if routing available
+### Quando utilizar
+- Antes de utilizar os resultados da tabela de decisão
+- Como condição de barreira
+- Para verificar se o encaminhamento está disponível
 
-### Example
+### Exemplo
 ```
 Decision Table: "Route by supplier"
     ↓
@@ -415,12 +415,12 @@ If NO: Use default routing
 
 ---
 
-## Card: CONDITION_CONTINUE_CHANCE / Random Probability
+## Cartão: CONDITION_CONTINUE_CHANCE / Random Probability
 
-### Purpose
-Continues with specified probability
+### Objetivo
+Continua com uma probabilidade especificada
 
-### How It Works
+### Como funciona
 ```
 Probability: 50%
     ↓
@@ -429,12 +429,12 @@ Roll dice
 Random chance: 50% YES, 50% NO
 ```
 
-### When to Use
-- A/B testing workflows
-- Sampling documents
-- Random quality checks
+### Quando utilizar
+- Fluxos de trabalho de testes A/B
+- Amostragem de documentos
+- Verificações de qualidade aleatórias
 
-### Example
+### Exemplo
 ```
 Condition: "Continue with 10% chance?"
     ↓
@@ -442,7 +442,7 @@ Condition: "Continue with 10% chance?"
 10% of documents: Continue for detailed review
 ```
 
-### Calculation
+### Cálculo
 ```
 If probability = 50%:
   - 50% of documents continue
@@ -455,12 +455,12 @@ If probability = 10%:
 
 ---
 
-## Card: CONDITION_MODULE_IS_ISNOT_ACTIVE / Feature Check
+## Cartão: CONDITION_MODULE_IS_ISNOT_ACTIVE / Feature Check
 
-### Purpose
-Checks if specific module/feature is enabled
+### Objetivo
+Verifica se um módulo/funcionalidade específico está ativado
 
-### Modules
+### Módulos
 ```
 - PO Matching
 - Auto Accounting
@@ -470,7 +470,7 @@ Checks if specific module/feature is enabled
 - Custom Modules
 ```
 
-### How It Works
+### Como funciona
 ```
 Module: "PO Matching"
     ↓
@@ -480,19 +480,19 @@ YES: Do PO match validation
 NO: Skip PO checks
 ```
 
-### When to Use
-- Feature-dependent workflows
-- Optional processing
-- Check if licensed feature active
+### Quando utilizar
+- Fluxos de trabalho dependentes de funcionalidades
+- Processamento opcional
+- Verificar se uma funcionalidade licenciada está ativa
 
 ---
 
-## Card: CONDITION_HTTPS_REQUEST_STATUS / Request Result Check
+## Cartão: CONDITION_HTTPS_REQUEST_STATUS / Request Result Check
 
-### Purpose
-Checks if HTTPS request was successful
+### Objetivo
+Verifica se um pedido HTTPS foi bem-sucedido
 
-### Status Codes
+### Códigos de estado
 ```
 200-299: ✅ Success
 300-399: ↪️ Redirect
@@ -500,7 +500,7 @@ Checks if HTTPS request was successful
 500-599: ❌ Server Error
 ```
 
-### How It Works
+### Como funciona
 ```
 Send HTTPS request
     ↓
@@ -512,7 +512,7 @@ YES: Continue with response data
 NO: Error handling
 ```
 
-### Example
+### Exemplo
 ```
 Send pricing request to API
     ↓
@@ -524,12 +524,12 @@ If NO: Use fallback price
 
 ---
 
-## Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT / Supplier Status Check
+## Cartão: CONDITION_SUPPLIER_STATUS_IS_ISNOT / Supplier Status Check
 
-### Purpose
-Checks supplier's status in system
+### Objetivo
+Verifica o estado do fornecedor no sistema
 
-### Supplier Statuses
+### Estados de fornecedor
 ```
 ✅ ACTIVE: Can do business
 ⚠️ ON HOLD: Temporarily blocked
@@ -537,7 +537,7 @@ Checks supplier's status in system
 ⚠️ CONDITIONAL: Only for specific items
 ```
 
-### How It Works
+### Como funciona
 ```
 Supplier: ABC Corp
 Status in Database: ACTIVE
@@ -548,7 +548,7 @@ YES: Process normally
 NO: Flag for review
 ```
 
-### Example
+### Exemplo
 ```
 Invoice from ABC Corp
     ↓
@@ -560,12 +560,12 @@ If NO: Block or escalate
 
 ---
 
-## Card: CONDITION_SPECIFY_SUPPLIER_TYPE
+## Cartão: CONDITION_SPECIFY_SUPPLIER_TYPE
 
-### Purpose
-Specifies/checks supplier type
+### Objetivo
+Especifica/verifica o tipo de fornecedor
 
-### Supplier Types
+### Tipos de fornecedor
 ```
 - Preferred Supplier
 - Standard Supplier
@@ -574,7 +574,7 @@ Specifies/checks supplier type
 - Strategic Partner
 ```
 
-### How It Works
+### Como funciona
 ```
 Supplier Type: "Preferred"
     ↓
@@ -586,9 +586,9 @@ NO: Standard pricing
 
 ---
 
-# Example Decision Flows
+# Exemplos de fluxos de decisão
 
-## Flow 1: Status-Based Processing
+## Fluxo 1: Processamento baseado no estado
 ```
 Document Arrives
     ↓
@@ -605,7 +605,7 @@ Check: Status = "Error"?
 YES: Escalate to manager
 ```
 
-## Flow 2: Supplier-Based Processing
+## Fluxo 2: Processamento baseado no fornecedor
 ```
 Invoice Arrives
     ↓
@@ -619,7 +619,7 @@ YES: Fast track approval
 NO: Standard approval
 ```
 
-## Flow 3: Amount-Based with Date Check
+## Fluxo 3: Baseado no montante com verificação de data
 ```
 Invoice Arrives
     ↓
@@ -633,48 +633,48 @@ NO: Assign to Finance Manager
 
 ---
 
-# Condition Card Comparison
+# Comparação de cartões de condição
 
-| Card | Checks | Operator | Use |
+| Cartão | Verifica | Operador | Utilização |
 |------|--------|----------|-----|
-| CONDITION_DOC_STATUS_IS_ISNOT | Document status | IS / IS NOT | Stage check |
-| CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST | Status in list | IN / NOT IN | Multiple statuses |
-| CONDITION_DOC_TYPE_IS_ISNOT | Document type | IS / IS NOT | Type filtering |
-| CONDITION_DOC_TYPE_IS_ISNOT_LIST | Type in list | IN / NOT IN | Multiple types |
-| CONDITION_SUB_ORG_IS_ISNOT | Organization | IS / IS NOT | Department check |
-| CONDITION_USER_IS_ISNOT | Assigned user | IS / IS NOT | User check |
-| CONDITION_USER_IS_ISNOT_IN_LIST | User in list | IN / NOT IN | Multiple users |
-| CONDITION_GROUP_IS_ISNOT | Assigned group | IS / IS NOT | Group check |
-| CONDITION_GROUP_IS_ISNOT_IN_LIST | Group in list | IN / NOT IN | Multiple groups |
-| CONDITION_TIME_IS_ISNOT_BETWEEN | Date range | BETWEEN | Date window |
-| CONDITION_TODAY_IS_ISNOT | Today's date | IS / IS NOT | Today check |
-| CONDITION_DECISION_TREE_DATA | DT returns | HAS / HAS NOT | DT result check |
-| CONDITION_CONTINUE_CHANCE | Probability | CHANCE | Random gate |
-| CONDITION_MODULE_IS_ISNOT_ACTIVE | Feature enabled | IS / IS NOT | Feature check |
-| CONDITION_HTTPS_REQUEST_STATUS | Request result | STATUS | Response check |
-| CONDITION_SUPPLIER_STATUS_IS_ISNOT | Supplier status | IS / IS NOT | Supplier check |
+| CONDITION_DOC_STATUS_IS_ISNOT | Estado do documento | IS / IS NOT | Verificação de fase |
+| CONDITION_DOC_STATUS_IS_ISNOT_IN_LIST | Estado numa lista | IN / NOT IN | Vários estados |
+| CONDITION_DOC_TYPE_IS_ISNOT | Tipo de documento | IS / IS NOT | Filtragem por tipo |
+| CONDITION_DOC_TYPE_IS_ISNOT_LIST | Tipo numa lista | IN / NOT IN | Vários tipos |
+| CONDITION_SUB_ORG_IS_ISNOT | Organização | IS / IS NOT | Verificação de departamento |
+| CONDITION_USER_IS_ISNOT | Utilizador atribuído | IS / IS NOT | Verificação de utilizador |
+| CONDITION_USER_IS_ISNOT_IN_LIST | Utilizador numa lista | IN / NOT IN | Vários utilizadores |
+| CONDITION_GROUP_IS_ISNOT | Grupo atribuído | IS / IS NOT | Verificação de grupo |
+| CONDITION_GROUP_IS_ISNOT_IN_LIST | Grupo numa lista | IN / NOT IN | Vários grupos |
+| CONDITION_TIME_IS_ISNOT_BETWEEN | Intervalo de datas | BETWEEN | Janela de datas |
+| CONDITION_TODAY_IS_ISNOT | Data de hoje | IS / IS NOT | Verificação de hoje |
+| CONDITION_DECISION_TREE_DATA | Retornos da DT | HAS / HAS NOT | Verificação de resultado da DT |
+| CONDITION_CONTINUE_CHANCE | Probabilidade | CHANCE | Barreira aleatória |
+| CONDITION_MODULE_IS_ISNOT_ACTIVE | Funcionalidade ativada | IS / IS NOT | Verificação de funcionalidade |
+| CONDITION_HTTPS_REQUEST_STATUS | Resultado do pedido | STATUS | Verificação de resposta |
+| CONDITION_SUPPLIER_STATUS_IS_ISNOT | Estado do fornecedor | IS / IS NOT | Verificação de fornecedor |
 
 ---
 
-# Best Practices for Conditions
+# Boas práticas para condições
 
-✅ **Do:**
-- Use specific conditions
-- Test logic with samples
-- Order conditions logically
-- Have fallback for all paths
-- Document complex logic
+✅ **Faça:**
+- Utilize condições específicas
+- Teste a lógica com amostras
+- Ordene as condições de forma lógica
+- Tenha uma alternativa para todos os caminhos
+- Documente a lógica complexa
 
-❌ **Don't:**
-- Create circular conditions (A if B, B if A)
-- Make conditions too complex
-- Forget about edge cases
-- Assume field always has value
-- Create impossible conditions
+❌ **Não faça:**
+- Criar condições circulares (A se B, B se A)
+- Tornar as condições demasiado complexas
+- Esquecer os casos extremos
+- Assumir que um campo tem sempre um valor
+- Criar condições impossíveis
 
 ---
 
-# Combining Multiple Conditions
+# Combinar várias condições
 
 ```
 Condition 1: Type = Invoice?
@@ -689,9 +689,8 @@ SOME FALSE → Stop
 
 ---
 
-# Related Cards
+# Cartões relacionados
 
-- **CONDITION_DOC_FIELD_CONTAINS** - Field content check
-- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - Field comparison
-- **CONDITION_CHECKBOX_IS** - Checkbox check
-
+- **CONDITION_DOC_FIELD_CONTAINS** - Verificação do conteúdo de um campo
+- **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - Comparação de campos
+- **CONDITION_CHECKBOX_IS** - Verificação de caixa de verificação

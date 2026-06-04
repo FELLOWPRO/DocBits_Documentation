@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This DocBits card performs a comparison between values in two specified columns within a table, based on a chosen condition. It’s useful for scenarios that require validating relationships between data points, such as quality control, data consistency checks, or compliance verification.
+Questa scheda DocBits esegue un confronto tra i valori di due colonne specificate all'interno di una tabella, in base a una condizione scelta. È utile per gli scenari che richiedono la validazione delle relazioni tra punti dati, come il controllo qualità, le verifiche di coerenza dei dati o le verifiche di conformità.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Column Comparison:** This card allows users to set conditions to compare values between two columns in the same table.
-* **Operators:** The following operators are available to define the comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Table and Column Selection:** Users specify the table and the two columns they wish to compare.
+* **Confronto di colonne:** Questa scheda consente agli utenti di impostare condizioni per confrontare i valori tra due colonne nella stessa tabella.
+* **Operatori:** Sono disponibili i seguenti operatori per definire il confronto:
+  * **Equals (=):** Verifica se i valori nelle due colonne sono esattamente uguali.
+  * **Not Equals (≠):** Garantisce che i valori nelle due colonne non siano uguali.
+  * **Greater Than (>):** Conferma che i valori nella prima colonna siano maggiori di quelli nella seconda colonna.
+  * **Greater or Equals (≥):** Garantisce che i valori nella prima colonna siano maggiori o uguali a quelli nella seconda colonna.
+  * **Lesser Than (<):** Verifica se i valori nella prima colonna sono minori di quelli nella seconda colonna.
+  * **Less or Equals (≤):** Garantisce che i valori nella prima colonna siano minori o uguali a quelli nella seconda colonna.
+* **Selezione di tabella e colonne:** Gli utenti specificano la tabella e le due colonne che desiderano confrontare.
 
-## **Usage:**
+## **Utilizzo:**
 
-This card is ideal for data analysts, quality control teams, or compliance officers who need to ensure that values in one column relate to values in another according to specific rules, allowing for advanced data validation.
+Questa scheda è ideale per analisti di dati, team di controllo qualità o responsabili della conformità che devono garantire che i valori di una colonna siano in relazione con i valori di un'altra secondo regole specifiche, consentendo una validazione avanzata dei dati.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* A user configures the card to check if values in the "Current Stock" column are **greater than or equal to (≥)** values in the "Minimum Stock Level" column in the "Inventory" table. If all values meet this condition, the workflow proceeds, confirming that stock levels are adequate.
+* Un utente configura la scheda per verificare se i valori nella colonna "Current Stock" sono **maggiori o uguali (≥)** ai valori nella colonna "Minimum Stock Level" nella tabella "Inventory". Se tutti i valori soddisfano questa condizione, il workflow procede, confermando che i livelli di stock sono adeguati.
 
-By using the "Column Value Comparison" card, organizations can ensure data consistency, maintain quality standards, and validate data relationships within tables.
+Utilizzando la scheda "Column Value Comparison", le organizzazioni possono garantire la coerenza dei dati, mantenere gli standard di qualità e validare le relazioni tra i dati all'interno delle tabelle.

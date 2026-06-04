@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
-**Purpose**
+**Scopo**
 
-This workflow card manages the execution of operations based on whether a task or document is assigned to a particular user or set of users. It employs conditional logic to either trigger or prevent specific actions, making it ideal for workflows that require user-specific handling.
+Questa scheda di workflow gestisce l'esecuzione di operazioni in base al fatto che un'attività o un documento sia assegnato a un determinato utente o insieme di utenti. Impiega una logica condizionale per attivare o impedire azioni specifiche, rendendola ideale per i workflow che richiedono una gestione specifica per utente.
 
-**Components of the Card**
+**Componenti della scheda**
 
 1. **Operator**
-   * **Description**: Defines the logical condition to apply to the user assignment.
-   * **Options**:
-     * **IS**: Triggers the operation if the assigned user of the document or task matches any user in the specified list.
-     * **IS NOT**: Triggers the operation if the assigned user of the document or task does not match any user in the specified list.
+   * **Descrizione**: Definisce la condizione logica da applicare all'assegnazione dell'utente.
+   * **Opzioni**:
+     * **IS**: Attiva l'operazione se l'utente assegnato del documento o dell'attività corrisponde a un utente qualsiasi nell'elenco specificato.
+     * **IS NOT**: Attiva l'operazione se l'utente assegnato del documento o dell'attività non corrisponde a nessun utente nell'elenco specificato.
 2. **User List**
-   * **Description**: A list or selection of users to compare against the assigned user.
-   * **Detail**: This list can include one or multiple users, allowing the card to handle both singular and multiple user conditions effectively. The selection can be made through checkboxes, a multi-select dropdown, or similar UI elements.
+   * **Descrizione**: Un elenco o una selezione di utenti da confrontare con l'utente assegnato.
+   * **Dettaglio**: Questo elenco può includere uno o più utenti, consentendo alla scheda di gestire efficacemente sia condizioni di utente singolo che multiplo. La selezione può avvenire tramite caselle di controllo, un menu a discesa a selezione multipla o elementi UI simili.
 
-**Functionality**
+**Funzionalità**
 
-* **User Assignment Identification**: Automatically identifies the user or users assigned to a particular task or document within the ERP system.
-* **Condition Evaluation**:
-  * Using the **IS** operator, the card checks if the assigned user is among those listed in the User List.
-  * Using the **IS NOT** operator, the card ensures the assigned user is not among those listed.
-* **Action Execution**:
-  * **True Condition**: If the user assignment meets the condition (either IS or IS NOT), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition**: If the condition is not met, the workflow will not continue.
+* **Identificazione dell'assegnazione dell'utente**: Identifica automaticamente l'utente o gli utenti assegnati a una determinata attività o documento all'interno del sistema ERP.
+* **Valutazione della condizione**:
+  * Con l'operatore **IS**, la scheda verifica se l'utente assegnato è tra quelli elencati nella User List.
+  * Con l'operatore **IS NOT**, la scheda garantisce che l'utente assegnato non sia tra quelli elencati.
+* **Esecuzione dell'azione**:
+  * **Condizione vera**: Se l'assegnazione dell'utente soddisfa la condizione (IS o IS NOT), vengono attivate le azioni pertinenti, come notifiche, avvio di attività, approvazioni o altri passaggi del workflow.
+  * **Condizione falsa**: Se la condizione non è soddisfatta, il workflow non proseguirà.
 
-**User Interactions**
+**Interazioni dell'utente**
 
-* **Setup and Configuration**: Users configure the card by selecting an operator and specifying the relevant users from the User List. Setup should be user-friendly and intuitive to accommodate selections from potentially large user bases.
-* **Monitoring and Reporting**: The ERP system should provide functionality to monitor and report on the operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications**: Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in user selection.
+* **Configurazione e impostazione**: Gli utenti configurano la scheda selezionando un operatore e specificando gli utenti pertinenti dalla User List. La configurazione dovrebbe essere semplice e intuitiva per gestire selezioni da basi di utenti potenzialmente ampie.
+* **Monitoraggio e reporting**: Il sistema ERP dovrebbe fornire funzionalità per monitorare e generare report sulle operazioni attivate da questa scheda, offrendo informazioni sull'accuratezza delle assegnazioni e sull'efficienza del processo.
+* **Gestione degli errori e notifiche**: Gli utenti dovrebbero avere la possibilità di ricevere avvisi o notifiche in caso di problemi con le assegnazioni, come attività non assegnate o errori nella selezione degli utenti.
 
-#### Conclusion
+#### Conclusione
 
-The "Assigned User Condition" workflow card is a critical tool for managing document and task workflows that depend on user assignments. By allowing conditions based on whether a task or document is assigned to specific users, it ensures that workflows are only triggered by appropriate user interactions, enhancing both accountability and task alignment within teams. Clearly documenting this card will help users understand its significance and integrate it effectively into their workflows, ensuring smooth and efficient operations tailored to user roles and responsibilities.
+La scheda di workflow "Assigned User Condition" è uno strumento fondamentale per gestire i workflow di documenti e attività che dipendono dalle assegnazioni agli utenti. Consentendo condizioni basate sul fatto che un'attività o un documento sia assegnato a utenti specifici, garantisce che i workflow vengano attivati solo da interazioni utente appropriate, migliorando sia la responsabilità che l'allineamento delle attività all'interno dei team. Documentare chiaramente questa scheda aiuterà gli utenti a comprenderne l'importanza e a integrarla efficacemente nei loro workflow, garantendo operazioni fluide ed efficienti adattate ai ruoli e alle responsabilità degli utenti.

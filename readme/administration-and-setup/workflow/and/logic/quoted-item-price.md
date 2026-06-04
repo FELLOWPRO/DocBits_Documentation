@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This DocBits card compares the quoted price of an item to its contracted price, allowing workflows to trigger actions based on whether the two values match or differ. It helps ensure pricing consistency and compliance with contract terms.
+Questa scheda DocBits confronta il prezzo quotato di un articolo con il suo prezzo contrattuale, consentendo ai workflow di attivare azioni in base al fatto che i due valori corrispondano o differiscano. Aiuta a garantire la coerenza dei prezzi e la conformità ai termini contrattuali.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Price Comparison:** This card evaluates whether the quoted item price meets the specified condition relative to the contracted price.
-* **Operators:** The following conditions can be applied:
-  * **Equals (=):** Checks if the quoted price matches the contracted price.
-  * **Not Equals (≠):** Ensures the quoted price is different from the contracted price.
+* **Confronto dei prezzi:** Questa scheda valuta se il prezzo quotato dell'articolo soddisfa la condizione specificata rispetto al prezzo contrattuale.
+* **Operatori:** Possono essere applicate le seguenti condizioni:
+  * **Equals (=):** Verifica se il prezzo quotato corrisponde al prezzo contrattuale.
+  * **Not Equals (≠):** Garantisce che il prezzo quotato sia diverso dal prezzo contrattuale.
 
-## **Usage:**
+## **Utilizzo:**
 
-This card is particularly useful in procurement, sales, or contract management workflows, where it is crucial to validate that quoted prices align with agreed-upon contract terms before proceeding with approvals or order processing.
+Questa scheda è particolarmente utile nei workflow di approvvigionamento, vendite o gestione dei contratti, dove è cruciale validare che i prezzi quotati siano allineati ai termini contrattuali concordati prima di procedere con le approvazioni o l'elaborazione degli ordini.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* A user configures the card to check if the **quoted price equals (=)** the **contracted price**. If the prices match, the workflow proceeds to approval; if not, it triggers a notification for manual review to resolve the discrepancy.
+* Un utente configura la scheda per verificare se il **prezzo quotato è uguale (=)** al **prezzo contrattuale**. Se i prezzi corrispondono, il workflow procede all'approvazione; in caso contrario, attiva una notifica per la revisione manuale al fine di risolvere la discrepanza.
 
-By using the "Quoted Item Price vs. Contracted Price" card, organizations can enforce pricing policies, maintain contract compliance, and reduce errors in financial transactions.
+Utilizzando la scheda "Quoted Item Price vs. Contracted Price", le organizzazioni possono applicare le politiche di prezzo, mantenere la conformità contrattuale e ridurre gli errori nelle transazioni finanziarie.

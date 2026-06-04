@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
 
-**Purpose**
+**Scopo**
 
-This workflow card is tailored to manage operations on documents based on a single, specified document status. By simplifying the condition to one status, the card is focused on very specific workflow triggers, making it ideal for targeted document processing activities within an ERP system.
+Questa scheda di workflow è concepita per gestire le operazioni sui documenti in base a un singolo stato del documento specificato. Semplificando la condizione a un solo stato, la scheda si concentra su trigger di workflow molto specifici, rendendola ideale per attività mirate di elaborazione dei documenti all'interno di un sistema ERP.
 
-**Components of the Card**
+**Componenti della scheda**
 
 1. **Operator**
-   * **Description**: Specifies the method for evaluating the document’s status against the selected condition.
-   * **Options**:
-     * **is**: Triggers the operation if the document's current status matches the selected status.
-     * **is not**: Triggers the operation if the document's current status does not match the selected status.
+   * **Descrizione**: Specifica il metodo per valutare lo stato del documento rispetto alla condizione selezionata.
+   * **Opzioni**:
+     * **is**: Attiva l'operazione se lo stato corrente del documento corrisponde allo stato selezionato.
+     * **is not**: Attiva l'operazione se lo stato corrente del documento non corrisponde allo stato selezionato.
 2. **Status**
-   * **Description**: Allows the selection of a single document status to set the condition.
-   * **Examples of Statuses**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
-   * **Detail**: Users choose one status from a dropdown or a set of radio buttons. This status then serves as the criterion for the card’s operation.
+   * **Descrizione**: Consente la selezione di un singolo stato del documento per impostare la condizione.
+   * **Esempi di stati**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Dettaglio**: Gli utenti scelgono uno stato da un menu a discesa o da un set di pulsanti di opzione. Questo stato funge quindi da criterio per l'operazione della scheda.
 
-**Functionality**
+**Funzionalità**
 
-* **Document Status Identification**: Identifies the current status of a document as it is processed through the ERP system.
-* **Condition Evaluation**:
-  * Based on the operator selected (`is` or `is not`), the card checks whether the document's current status aligns with the chosen status criterion.
-* **Action Execution**:
-  * **True Condition**: If the status matches (or does not match, based on the operator), the corresponding action is initiated. This could be routing for further processing, notification generation, or other predefined workflows.
-  * **False Condition**: If the condition is not met, no action is taken, or an alternate pathway is triggered.
-* **Integration with Other Workflows**: Even though it's designed for single-status evaluation, this card can be effectively integrated into broader workflow sequences to ensure precise document handling.
+* **Identificazione dello stato del documento**: Identifica lo stato corrente di un documento mentre viene elaborato attraverso il sistema ERP.
+* **Valutazione della condizione**:
+  * In base all'operatore selezionato (`is` o `is not`), la scheda verifica se lo stato corrente del documento è allineato al criterio di stato scelto.
+* **Esecuzione dell'azione**:
+  * **Condizione vera**: Se lo stato corrisponde (o non corrisponde, a seconda dell'operatore), viene avviata l'azione corrispondente. Potrebbe trattarsi di instradamento per ulteriore elaborazione, generazione di notifiche o altri workflow predefiniti.
+  * **Condizione falsa**: Se la condizione non è soddisfatta, non viene intrapresa alcuna azione, oppure viene attivato un percorso alternativo.
+* **Integrazione con altri workflow**: Anche se è progettata per la valutazione di un singolo stato, questa scheda può essere integrata efficacemente in sequenze di workflow più ampie per garantire una gestione precisa dei documenti.
 
-**User Interactions**
+**Interazioni dell'utente**
 
-* **Setup and Configuration**: Users set up the card by selecting an operator and then choosing one status from the available options. This selection process is straightforward and designed to prevent confusion.
-* **Monitoring and Reporting**: Enables monitoring through system-generated reports or dashboards that track the processing of documents based on their status, helping to oversee the effectiveness of the implemented workflows.
-* **Error Handling and Notifications**: Configurable to alert users to any processing anomalies or to flag documents that do not meet the set conditions, ensuring prompt attention and resolution.
+* **Configurazione e impostazione**: Gli utenti configurano la scheda selezionando un operatore e poi scegliendo uno stato tra le opzioni disponibili. Questo processo di selezione è semplice e progettato per prevenire confusione.
+* **Monitoraggio e reporting**: Consente il monitoraggio tramite report o dashboard generati dal sistema che tracciano l'elaborazione dei documenti in base al loro stato, aiutando a supervisionare l'efficacia dei workflow implementati.
+* **Gestione degli errori e notifiche**: Configurabile per avvisare gli utenti di eventuali anomalie di elaborazione o per segnalare i documenti che non soddisfano le condizioni impostate, garantendo attenzione e risoluzione tempestive.
 
-#### Conclusion
+#### Conclusione
 
-The "Single Document Status Condition" workflow card simplifies document management by focusing on individual status conditions. This specification helps in cases where precise control over document flows is necessary, especially in environments with stringent processing criteria. Documenting this version of the card clearly will ensure that users fully understand its application and can effectively integrate it within their daily operations, enhancing both compliance and efficiency in document processing.
+La scheda di workflow "Single Document Status Condition" semplifica la gestione dei documenti concentrandosi su singole condizioni di stato. Questa specifica è utile nei casi in cui è necessario un controllo preciso sui flussi documentali, specialmente in ambienti con criteri di elaborazione rigorosi. Documentare chiaramente questa versione della scheda garantirà che gli utenti ne comprendano appieno l'applicazione e possano integrarla efficacemente nelle operazioni quotidiane, migliorando sia la conformità che l'efficienza nell'elaborazione dei documenti.

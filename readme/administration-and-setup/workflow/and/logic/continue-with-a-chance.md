@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (49).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This DocBits card introduces a probabilistic condition, allowing workflows to continue with a set likelihood. The card is useful for testing scenarios, randomized selections, or controlled variability within processes.
+Questa scheda DocBits introduce una condizione probabilistica, consentendo ai workflow di proseguire con una probabilità stabilita. La scheda è utile per scenari di test, selezioni casuali o variabilità controllata all'interno dei processi.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Conditional Continuation:** This card continues the workflow based on a specified probability, set by the user as a percentage value. The card generates a random outcome and compares it against the given percentage, creating a controlled chance for workflow continuation.
-* **Chance Percentage:** Users specify a percentage value (0-100%) that represents the probability of the workflow continuing. For example:
-  * **0%:** Workflow will never continue.
-  * **50%:** Workflow has a 50/50 chance of continuing.
-  * **100%:** Workflow will always continue.
+* **Continuazione condizionale:** Questa scheda fa proseguire il workflow in base a una probabilità specificata, impostata dall'utente come valore percentuale. La scheda genera un esito casuale e lo confronta con la percentuale fornita, creando una possibilità controllata di continuazione del workflow.
+* **Percentuale di probabilità:** Gli utenti specificano un valore percentuale (0-100%) che rappresenta la probabilità che il workflow prosegua. Ad esempio:
+  * **0%:** Il workflow non proseguirà mai.
+  * **50%:** Il workflow ha una probabilità del 50/50 di proseguire.
+  * **100%:** Il workflow proseguirà sempre.
 
-## **Usage:**
+## **Utilizzo:**
 
-This card is useful in scenarios where randomized workflow paths are needed, such as A/B testing, controlled sampling, or process simulation. It can also be applied to add variability in automated workflows.
+Questa scheda è utile negli scenari in cui sono necessari percorsi di workflow casuali, come test A/B, campionamento controllato o simulazione di processi. Può anche essere applicata per aggiungere variabilità nei workflow automatizzati.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* A user configures the card with a **chance of 30%**. When the workflow reaches this card, there is a 30% probability that the workflow will proceed to the next step. This setup is ideal for scenarios where random sampling or partial processing is desired.
+* Un utente configura la scheda con una **probabilità del 30%**. Quando il workflow raggiunge questa scheda, c'è una probabilità del 30% che il workflow proceda al passaggio successivo. Questa configurazione è ideale per scenari in cui si desidera un campionamento casuale o un'elaborazione parziale.
 
-By using the "Conditional Continuation" card, organizations can introduce controlled randomness into workflows, facilitate process experiments, and enhance decision-making with probabilistic conditions.
+Utilizzando la scheda "Conditional Continuation", le organizzazioni possono introdurre casualità controllata nei workflow, facilitare esperimenti di processo e migliorare il processo decisionale con condizioni probabilistiche.

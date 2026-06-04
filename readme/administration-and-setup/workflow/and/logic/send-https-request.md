@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This DocBits card is designed to facilitate interaction with external systems by sending HTTPS requests to specified URLs. It enables workflows to perform actions like data retrieval, updates, or deletion by making API calls, ensuring seamless integration with external services.
+Questa scheda DocBits è progettata per facilitare l'interazione con i sistemi esterni inviando richieste HTTPS a URL specificati. Consente ai workflow di eseguire azioni come il recupero, l'aggiornamento o l'eliminazione di dati effettuando chiamate API, garantendo un'integrazione fluida con i servizi esterni.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **HTTPS Request Execution:** The card sends a request to a specified URL using the configured HTTP method (e.g., GET, POST, PUT, DELETE).
-* **Headers and Parameters:** Users can include custom headers and query parameters to ensure the request meets the requirements of the external API.
-* **Request Data:** Allows users to define the data payload (if applicable) to be sent with the request, such as JSON or form-encoded data.
-* **Response Evaluation:** The workflow checks if the received status code matches the expected value, ensuring successful communication before proceeding.
-* **Supported HTTP Methods:**
-  * GET: Retrieves data from the specified URL.
-  * POST: Submits data to the specified URL to create resources.
-  * PUT: Updates existing resources at the specified URL.
-  * DELETE: Removes resources from the specified URL.
+* **Esecuzione della richiesta HTTPS:** La scheda invia una richiesta a un URL specificato utilizzando il metodo HTTP configurato (es. GET, POST, PUT, DELETE).
+* **Header e parametri:** Gli utenti possono includere header personalizzati e parametri di query per garantire che la richiesta soddisfi i requisiti dell'API esterna.
+* **Dati della richiesta:** Consente agli utenti di definire il payload di dati (se applicabile) da inviare con la richiesta, come dati JSON o form-encoded.
+* **Valutazione della risposta:** Il workflow verifica se il codice di stato ricevuto corrisponde al valore atteso, garantendo una comunicazione riuscita prima di proseguire.
+* **Metodi HTTP supportati:**
+  * GET: Recupera dati dall'URL specificato.
+  * POST: Invia dati all'URL specificato per creare risorse.
+  * PUT: Aggiorna risorse esistenti all'URL specificato.
+  * DELETE: Rimuove risorse dall'URL specificato.
 
-## **Usage:**
+## **Utilizzo:**
 
-This card is particularly useful in scenarios where workflows need to interact with external APIs for data exchange, such as sending updates to a CRM, retrieving order statuses, or posting new entries to a database.
+Questa scheda è particolarmente utile negli scenari in cui i workflow devono interagire con API esterne per lo scambio di dati, come l'invio di aggiornamenti a un CRM, il recupero degli stati degli ordini o la pubblicazione di nuove voci in un database.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* A user configures the card to send a POST request to an external order management system with a payload containing new order details. Custom headers are added to include API authentication tokens. The card is set to continue only if the response status code is 201 (Created). If the status code differs, the workflow triggers an error notification for manual intervention.
+* Un utente configura la scheda per inviare una richiesta POST a un sistema esterno di gestione degli ordini con un payload contenente i dettagli di un nuovo ordine. Vengono aggiunti header personalizzati per includere i token di autenticazione dell'API. La scheda è impostata per proseguire solo se il codice di stato della risposta è 201 (Created). Se il codice di stato è diverso, il workflow attiva una notifica di errore per l'intervento manuale.
 
-By using the "Send HTTPS Request" card, organizations can automate external integrations, improve communication between systems, and streamline complex workflows.
+Utilizzando la scheda "Send HTTPS Request", le organizzazioni possono automatizzare le integrazioni esterne, migliorare la comunicazione tra i sistemi e semplificare i workflow complessi.

@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This DocBits card compares today's date to a specified date, allowing workflows to execute based on the relationship between the current date and the provided date. It is particularly useful for time-based automation, deadline management, or triggering scheduled tasks.
+Questa scheda DocBits confronta la data odierna con una data specificata, consentendo ai workflow di essere eseguiti in base alla relazione tra la data corrente e la data fornita. È particolarmente utile per l'automazione basata sul tempo, la gestione delle scadenze o l'attivazione di attività pianificate.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Date Comparison:** This card evaluates today's date against a specified date using the following conditions:
-  * **Equals (=):** Checks if today's date matches the specified date.
-  * **Not Equals (≠):** Ensures today's date is different from the specified date.
-  * **Greater Than (>):** Confirms that today's date is after the specified date.
-  * **Greater or Equals (≥):** Ensures today's date is on or after the specified date.
-  * **Lesser Than (<):** Checks if today's date is before the specified date.
-  * **Less or Equals (≤):** Ensures today's date is on or before the specified date.
-* **Date Input:** Users provide the date to compare against today's date.
+* **Confronto di date:** Questa scheda valuta la data odierna rispetto a una data specificata utilizzando le seguenti condizioni:
+  * **Equals (=):** Verifica se la data odierna corrisponde alla data specificata.
+  * **Not Equals (≠):** Garantisce che la data odierna sia diversa dalla data specificata.
+  * **Greater Than (>):** Conferma che la data odierna sia successiva alla data specificata.
+  * **Greater or Equals (≥):** Garantisce che la data odierna sia uguale o successiva alla data specificata.
+  * **Lesser Than (<):** Verifica se la data odierna è precedente alla data specificata.
+  * **Less or Equals (≤):** Garantisce che la data odierna sia uguale o precedente alla data specificata.
+* **Inserimento della data:** Gli utenti forniscono la data da confrontare con la data odierna.
 
-## **Usage:**
+## **Utilizzo:**
 
-This card is ideal for workflows involving deadlines, reminders, or time-sensitive conditions, ensuring actions are taken or restricted based on the current date.
+Questa scheda è ideale per i workflow che coinvolgono scadenze, promemoria o condizioni sensibili al tempo, garantendo che le azioni vengano intraprese o limitate in base alla data corrente.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* A user configures the card to check if **today is greater than (>) "2024-11-15"**. If the condition is met, the workflow triggers a follow-up notification for overdue tasks. If not, the workflow continues without interruption.
+* Un utente configura la scheda per verificare se **oggi è maggiore di (>) "2024-11-15"**. Se la condizione è soddisfatta, il workflow attiva una notifica di follow-up per le attività scadute. In caso contrario, il workflow continua senza interruzioni.
 
-By using the "Today's Date Validation" card, organizations can automate time-based processes, meet deadlines efficiently, and maintain workflow accuracy.
+Utilizzando la scheda "Today's Date Validation", le organizzazioni possono automatizzare i processi basati sul tempo, rispettare le scadenze in modo efficiente e mantenere l'accuratezza del workflow.

@@ -2,40 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Assign Document to User"** workflow card allows users to assign a document to a specific user, ensuring smooth workflow management by routing documents to the appropriate person. Version 3 adds the capability to use a decision tree to dynamically determine the user assignment based on available conditions.
+Karta przepływu pracy **"Assign Document to User"** umożliwia użytkownikom przypisanie dokumentu do określonego użytkownika, zapewniając płynne zarządzanie przepływem pracy poprzez kierowanie dokumentów do odpowiedniej osoby. Version 3 dodaje możliwość użycia drzewa decyzyjnego do dynamicznego określania przypisania użytkownika na podstawie dostępnych warunków.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **User**
-   * **Description:** Specifies the user to whom the document will be assigned.
-   * **Detail:** A dropdown list of all available users is provided for selection. The selected user will be assigned the document for further action.
+   * **Opis:** Określa użytkownika, do którego zostanie przypisany dokument.
+   * **Szczegóły:** Do wyboru udostępniana jest lista rozwijana wszystkich dostępnych użytkowników. Wybrany użytkownik otrzyma dokument do dalszego działania.
 
-## **Additional Components in Version 3:**
+## **Dodatkowe komponenty w Version 3:**
 
 1. **Use Decision Tree**
-   * **Description:** If enabled, the card uses a decision tree to dynamically determine the user assignment.
-   * **Options:**
-     * **True:** Uses the decision tree for dynamic user assignment.
-     * **False:** Assigns the document to the selected user without using the decision tree.
+   * **Opis:** Jeśli włączone, karta używa drzewa decyzyjnego do dynamicznego określania przypisania użytkownika.
+   * **Opcje:**
+     * **True:** Używa drzewa decyzyjnego do dynamicznego przypisania użytkownika.
+     * **False:** Przypisuje dokument do wybranego użytkownika bez używania drzewa decyzyjnego.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to the selected user, ensuring that the task is routed to the appropriate person for action. This helps with accountability and effective document management.
-* **Decision Tree (Version 3):**\
-  If the decision tree is enabled, the card evaluates the conditions defined within the tree to dynamically select the user for document assignment.
+* **Ocena warunku:**\
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+* **Przypisanie dokumentu:**\
+  Karta przypisuje dokument do wybranego użytkownika, zapewniając, że zadanie jest kierowane do odpowiedniej osoby do działania. Pomaga to w odpowiedzialności i efektywnym zarządzaniu dokumentami.
+* **Drzewo decyzyjne (Version 3):**\
+  Jeśli drzewo decyzyjne jest włączone, karta ocenia warunki zdefiniowane w drzewie, aby dynamicznie wybrać użytkownika do przypisania dokumentu.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
 * **Select User:**\
-  Choose the **user** from the dropdown list to whom the document will be assigned.
+  Wybierz **użytkownika** z listy rozwijanej, do którego zostanie przypisany dokument.
 * **Use Decision Tree (Version 3):**\
-  Enable or disable the use of the decision tree to dynamically select the user.
+  Włącz lub wyłącz użycie drzewa decyzyjnego do dynamicznego wyboru użytkownika.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Assign Document to User"** workflow card facilitates efficient document routing by assigning it to the selected user, with the added flexibility in Version 3 to dynamically determine the user using a decision tree. This ensures a more adaptive and efficient workflow process.
+Karta przepływu pracy **"Assign Document to User"** ułatwia efektywne kierowanie dokumentów, przypisując je do wybranego użytkownika, z dodatkową elastycznością w Version 3 umożliwiającą dynamiczne określanie użytkownika za pomocą drzewa decyzyjnego. Zapewnia to bardziej adaptacyjny i efektywny proces przepływu pracy.

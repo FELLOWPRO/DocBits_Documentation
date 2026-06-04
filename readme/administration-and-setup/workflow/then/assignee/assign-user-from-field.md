@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (299).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Assign User from Field with Fallback"** workflow card dynamically assigns a user based on the value found in a specified document field. If the field does not contain a valid user, a fallback user is selected from a predefined list of available users to ensure the task or action is properly assigned.
+Karta przepływu pracy **"Assign User from Field with Fallback"** dynamicznie przypisuje użytkownika na podstawie wartości znalezionej w określonym polu dokumentu. Jeśli pole nie zawiera prawidłowego użytkownika, wybierany jest użytkownik zapasowy z predefiniowanej listy dostępnych użytkowników, aby zapewnić prawidłowe przypisanie zadania lub akcji.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Field Name**
-   * **Description:** Specifies the **document field** that contains the user information to be assigned.
-   * **Detail:** This field is evaluated to determine which user should be assigned. If the field contains a valid user, that user will be assigned the task. If the field is empty or invalid, the fallback user will be assigned.
+   * **Opis:** Określa **pole dokumentu** zawierające informacje o użytkowniku do przypisania.
+   * **Szczegóły:** To pole jest oceniane w celu określenia, który użytkownik powinien zostać przypisany. Jeśli pole zawiera prawidłowego użytkownika, ten użytkownik zostanie przypisany do zadania. Jeśli pole jest puste lub nieprawidłowe, zostanie przypisany użytkownik zapasowy.
 2. **User (Fallback)**
-   * **Description:** Specifies the **fallback user** to be assigned if the document field does not contain a valid user.
-   * **Detail:** A dropdown list of all available users is provided for selection. This user will be assigned if the document field is empty or does not contain a valid user.
+   * **Opis:** Określa **użytkownika zapasowego**, który ma zostać przypisany, jeśli pole dokumentu nie zawiera prawidłowego użytkownika.
+   * **Szczegóły:** Do wyboru udostępniana jest lista rozwijana wszystkich dostępnych użytkowników. Ten użytkownik zostanie przypisany, jeśli pole dokumentu jest puste lub nie zawiera prawidłowego użytkownika.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Field-Based User Assignment:**\
-  The card first attempts to assign the task or action to the user identified in the **Field Name**.
-* **Fallback User Assignment:**\
-  If the field does not contain a valid user (or is empty), the card assigns the task to the fallback user selected from the **User (Fallback)** dropdown list.
+* **Ocena warunku:**\
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+* **Przypisanie użytkownika na podstawie pola:**\
+  Karta najpierw próbuje przypisać zadanie lub akcję do użytkownika zidentyfikowanego w **Field Name**.
+* **Przypisanie użytkownika zapasowego:**\
+  Jeśli pole nie zawiera prawidłowego użytkownika (lub jest puste), karta przypisuje zadanie do użytkownika zapasowego wybranego z listy rozwijanej **User (Fallback)**.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
 * **Select Field Name:**\
-  Choose the **document field** that specifies the user for assignment.
+  Wybierz **pole dokumentu**, które określa użytkownika do przypisania.
 * **Select Fallback User:**\
-  Choose the **fallback user** from the dropdown list. This user will be assigned the task if the document field does not contain a valid user.
+  Wybierz **użytkownika zapasowego** z listy rozwijanej. Ten użytkownik zostanie przypisany do zadania, jeśli pole dokumentu nie zawiera prawidłowego użytkownika.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Assign User from Field with Fallback"** workflow card ensures that a task or action is always assigned to a valid user. If the user in the document field is not available, the fallback user is automatically assigned, providing flexibility and ensuring task completion.
+Karta przepływu pracy **"Assign User from Field with Fallback"** zapewnia, że zadanie lub akcja jest zawsze przypisane do prawidłowego użytkownika. Jeśli użytkownik w polu dokumentu jest niedostępny, użytkownik zapasowy jest automatycznie przypisywany, zapewniając elastyczność i gwarantując ukończenie zadania.

@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (284).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Export Document with Export Configuration"** workflow card is designed to export a document using a specified export configuration. It provides the flexibility to ignore any pending tasks associated with the document, ensuring a smooth export process regardless of its current state.
+Karta przepływu pracy **"Export Document with Export Configuration"** służy do eksportu dokumentu przy użyciu określonej konfiguracji eksportu. Zapewnia elastyczność ignorowania wszelkich oczekujących zadań powiązanych z dokumentem, zapewniając płynny proces eksportu niezależnie od jego bieżącego stanu.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Export Configuration**
-   * **Description**: Specifies the export configuration to be used for processing the document.
-   * **Detail**: This configuration determines the format, structure, and destination of the exported document.
+   * **Opis**: Określa konfigurację eksportu, która ma być użyta do przetworzenia dokumentu.
+   * **Szczegóły**: Konfiguracja ta określa format, strukturę i miejsce docelowe eksportowanego dokumentu.
 2. **Ignore Pending Tasks**
-   * **Description**: Determines whether pending tasks linked to the document should be disregarded during the export process.
-   * **Options**:
-     * **True**: Exports the document regardless of pending tasks.
-     * **False**: Ensures pending tasks are completed before the export.
+   * **Opis**: Określa, czy oczekujące zadania powiązane z dokumentem powinny zostać pominięte podczas procesu eksportu.
+   * **Opcje**:
+     * **True**: Eksportuje dokument niezależnie od oczekujących zadań.
+     * **False**: Zapewnia ukończenie oczekujących zadań przed eksportem.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. If both conditions are true, the export process is initiated.
-* **Document Export**: Using the specified **Export Configuration**, the document is processed and exported in the defined format and destination.
-* **Pending Tasks Handling**: If **Ignore Pending Tasks** is set to **True**, the export process bypasses any outstanding tasks linked to the document. If set to **False**, the export is deferred until all tasks are resolved.
+* **Ocena warunku**: System ocenia warunki ustawione w sekcjach **"Where"** i **"And Sections"** przepływu pracy. Jeśli oba warunki są prawdziwe, proces eksportu jest inicjowany.
+* **Eksport dokumentu**: Przy użyciu określonej **Export Configuration** dokument jest przetwarzany i eksportowany w zdefiniowanym formacie i miejscu docelowym.
+* **Obsługa oczekujących zadań**: Jeśli **Ignore Pending Tasks** jest ustawione na **True**, proces eksportu pomija wszelkie zaległe zadania powiązane z dokumentem. Jeśli ustawione na **False**, eksport jest odroczony do czasu rozwiązania wszystkich zadań.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-To configure this card, users need to:
+Aby skonfigurować tę kartę, użytkownicy muszą:
 
-1. Select the desired **Export Configuration** to define how the document will be exported.
-2. Choose whether to **Ignore Pending Tasks** by setting the value to **True** or **False.**
-3. Ensure the conditions in the **"Where"** and **"And Sections"** are correctly set, as the card only executes its action when these conditions are true.
+1. Wybrać żądaną **Export Configuration**, aby zdefiniować, jak dokument zostanie wyeksportowany.
+2. Wybrać, czy **Ignore Pending Tasks**, ustawiając wartość na **True** lub **False.**
+3. Upewnić się, że warunki w sekcjach **"Where"** i **"And Sections"** są prawidłowo ustawione, ponieważ karta wykonuje swoją akcję tylko wtedy, gdy te warunki są prawdziwe.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Export Document with Export Configuration"** workflow card ensures documents are exported efficiently and according to predefined configurations. With the ability to ignore pending tasks, this card offers flexibility in handling documents at various stages, reducing delays and streamlining the export process.
+Karta przepływu pracy **"Export Document with Export Configuration"** zapewnia, że dokumenty są eksportowane efektywnie i zgodnie z predefiniowanymi konfiguracjami. Dzięki możliwości ignorowania oczekujących zadań karta ta oferuje elastyczność w obsłudze dokumentów na różnych etapach, redukując opóźnienia i usprawniając proces eksportu.

@@ -1,33 +1,33 @@
 # Assign Sequentially to Groups
 
-## **Purpose**
+## **Cel**
 
-The "**Assign the Document Sequentially to the Groups**" workflow card enables the sequential assignment of documents to one or more selected groups. The priority value determines the order of assignment, with lower numbers representing higher priority.
+Karta przepływu pracy "**Assign the Document Sequentially to the Groups**" umożliwia sekwencyjne przypisywanie dokumentów do jednej lub więcej wybranych grup. Wartość priorytetu określa kolejność przypisywania, przy czym niższe liczby reprezentują wyższy priorytet.
 
-## **Components of the Card**
+## **Komponenty karty**
 
 1. **Group**
-   * **Description**: Specifies the groups that will receive the document assignment.
-   * **Detail**: A dropdown menu where one or multiple groups can be selected for document assignment.
+   * **Opis**: Określa grupy, które otrzymają przypisanie dokumentu.
+   * **Szczegóły**: Menu rozwijane, w którym można wybrać jedną lub wiele grup do przypisania dokumentu.
 2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the groups can be set.
-   * **Detail**: Lower numbers signify higher priority, ensuring that documents are assigned to groups in ascending order of priority.
+   * **Opis**: Numeryczne pole wprowadzania, w którym można ustawić poziom priorytetu dla grup.
+   * **Szczegóły**: Niższe liczby oznaczają wyższy priorytet, zapewniając przypisywanie dokumentów do grup w rosnącej kolejności priorytetu.
 
-## **Functionality**
+## **Funkcjonalność**
 
-* **Document Assignment**:\
-  The card assigns documents sequentially to the selected groups based on their priority values.\
-  If multiple groups share the same priority, documents are assigned in the order the groups were selected.
+* **Przypisanie dokumentu**:\
+  Karta przypisuje dokumenty sekwencyjnie do wybranych grup na podstawie ich wartości priorytetu.\
+  Jeśli wiele grup ma ten sam priorytet, dokumenty są przypisywane w kolejności, w jakiej grupy zostały wybrane.
 
-## **Setup and Configuration**
+## **Konfiguracja**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Group** field:
-   * Select one or multiple groups from the dropdown menu.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Dodaj kartę **Assign the Document Sequentially** do swojego przepływu pracy.
+2. Skonfiguruj pole **Group**:
+   * Wybierz jedną lub wiele grup z menu rozwijanego.
+3. Skonfiguruj pole **Priority (Value)**:
+   * Wprowadź wartość liczbową, aby ustawić priorytet przypisania.
+4. Zapisz i aktywuj przepływ pracy, aby zastosować konfigurację.
 
-## **Conclusion**
+## **Podsumowanie**
 
-The "Assign the Document Sequentially to Groups" workflow card ensures efficient document allocation to one or more groups based on priority. This feature supports flexible and organized document processing across multiple teams or departments.
+Karta przepływu pracy "Assign the Document Sequentially to Groups" zapewnia efektywną alokację dokumentów do jednej lub więcej grup na podstawie priorytetu. Funkcja ta wspiera elastyczne i zorganizowane przetwarzanie dokumentów w wielu zespołach lub działach.

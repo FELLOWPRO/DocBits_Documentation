@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This workflow card is designed to invert the current state of a checkbox field. If the checkbox is checked (true), it will be unchecked (false), and vice versa. The inversion occurs based on the conditions set in the **"Where"** and **"And Sections."** This card helps automate workflows where a condition requires toggling a checkbox based on specific criteria.
+Ta karta przepływu pracy służy do odwrócenia bieżącego stanu pola wyboru. Jeśli pole wyboru jest zaznaczone (true), zostanie odznaczone (false) i odwrotnie. Odwrócenie następuje na podstawie warunków ustawionych w sekcjach **"Where"** i **"And Sections."** Ta karta pomaga zautomatyzować przepływy pracy, w których warunek wymaga przełączania pola wyboru na podstawie określonych kryteriów.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Field Name**
-   * **Description**: Specifies the checkbox field to be inverted.&#x20;
-   * **Detail**: The selected checkbox field will have its state toggled from true to false or from false to true based on its current state.
+   * **Opis**: Określa pole wyboru, które ma zostać odwrócone.&#x20;
+   * **Szczegóły**: Wybrane pole wyboru będzie miało przełączony stan z true na false lub z false na true na podstawie jego bieżącego stanu.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation**: The system evaluates the conditions defined in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the **"Then Section"** action will execute, which in this case means the checkbox field will be toggled.
-  * If **either condition is false**, the card will not execute and no change will be made to the checkbox field.
-* **Action Execution**: If the conditions in the **"Where"** and **"And Sections"** evaluate to true, the checkbox field's state will be inverted:
-  * If the checkbox is checked (true), it will be unchecked (false).
-  * If the checkbox is unchecked (false), it will be checked (true).
+* **Ocena warunku**: System ocenia warunki zdefiniowane w sekcjach **"Where"** i **"And Sections"**:
+  * Jeśli **oba warunki są prawdziwe**, zostanie wykonana akcja **"Then Section"**, co w tym przypadku oznacza przełączenie pola wyboru.
+  * Jeśli **którykolwiek z warunków jest fałszywy**, karta nie zostanie wykonana i nie zostanie wprowadzona żadna zmiana w polu wyboru.
+* **Wykonanie akcji**: Jeśli warunki w sekcjach **"Where"** i **"And Sections"** są prawdziwe, stan pola wyboru zostanie odwrócony:
+  * Jeśli pole wyboru jest zaznaczone (true), zostanie odznaczone (false).
+  * Jeśli pole wyboru jest odznaczone (false), zostanie zaznaczone (true).
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-To configure this card, users need to:
+Aby skonfigurować tę kartę, użytkownicy muszą:
 
-1. **Select the checkbox field** (Field Name) that will be inverted. The available checkbox fields in the document are listed for selection.
-2. The checkbox field will only be inverted if the conditions in both the **"Where"** and **"And Sections"** are true.
+1. **Wybrać pole wyboru** (Field Name), które zostanie odwrócone. Dostępne pola wyboru w dokumencie są wymienione do wyboru.
+2. Pole wyboru zostanie odwrócone tylko wtedy, gdy warunki w sekcjach **"Where"** i **"And Sections"** są prawdziwe.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Invert checkbox \[Field Name]"** workflow card offers a simple yet powerful automation tool to toggle checkbox values based on specific conditions. By reducing the need for manual checkbox adjustments, this card enhances efficiency in document processing and ensures consistency across workflows.
+Karta przepływu pracy **"Invert checkbox \[Field Name]"** oferuje proste, ale potężne narzędzie automatyzacji do przełączania wartości pól wyboru na podstawie określonych warunków. Redukując potrzebę ręcznego dostosowywania pól wyboru, karta ta zwiększa efektywność przetwarzania dokumentów i zapewnia spójność w przepływach pracy.

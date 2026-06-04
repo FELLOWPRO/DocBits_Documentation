@@ -2,47 +2,47 @@
 
 <figure><img src="../../../../.gitbook/assets/image (293).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Change Entries in Table"** workflow card is used to update entries in a specified database table. It allows you to select a **table** and **column**, then perform mathematical operations (addition, subtraction, multiplication, or division) on the values in that column, using a specified value.
+Karta przepływu pracy **"Change Entries in Table"** służy do aktualizacji wpisów w określonej tabeli bazy danych. Umożliwia wybór **tabeli** i **kolumny**, a następnie wykonanie operacji matematycznych (dodawanie, odejmowanie, mnożenie lub dzielenie) na wartościach w tej kolumnie, przy użyciu określonej wartości.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which entries will be updated.
-   * **Detail:** A dropdown list of available **tables** is provided, allowing you to select the target table for updating entries.
+   * **Opis:** Określa **tabelę**, w której wpisy zostaną zaktualizowane.
+   * **Szczegóły:** Udostępniana jest lista rozwijana dostępnych **tabel**, umożliwiająca wybór docelowej tabeli do aktualizacji wpisów.
 2. **Column Name**
-   * **Description:** Specifies the **column** within the selected table to be updated.
-   * **Detail:** A list of all available **columns** will be provided for selection.
+   * **Opis:** Określa **kolumnę** w wybranej tabeli, która ma zostać zaktualizowana.
+   * **Szczegóły:** Do wyboru udostępniana jest lista wszystkich dostępnych **kolumn**.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be performed on the **column** values.
-   * **Options:**
-     * **Add (+):** Adds a specified **value** to the current value in the selected column.
-     * **Subtract (-):** Subtracts a specified **value** from the current value in the selected column.
-     * **Multiply (\*):** Multiplies the current value in the selected column by a specified **value**.
-     * **Divide (/):** Divides the current value in the selected column by a specified **value**.
+   * **Opis:** Definiuje operację matematyczną, która ma być wykonana na wartościach **kolumny**.
+   * **Opcje:**
+     * **Add (+):** Dodaje określoną **wartość** do bieżącej wartości w wybranej kolumnie.
+     * **Subtract (-):** Odejmuje określoną **wartość** od bieżącej wartości w wybranej kolumnie.
+     * **Multiply (\*):** Mnoży bieżącą wartość w wybranej kolumnie przez określoną **wartość**.
+     * **Divide (/):** Dzieli bieżącą wartość w wybranej kolumnie przez określoną **wartość**.
 4. **Value**
-   * **Description:** Specifies the **value** to be used in the selected operation.
-   * **Detail:** This is the number that will be added, subtracted, multiplied, or divided with the entries in the selected column.
+   * **Opis:** Określa **wartość**, która ma być użyta w wybranej operacji.
+   * **Szczegóły:** Jest to liczba, która zostanie dodana, odjęta, pomnożona lub podzielona z wpisami w wybranej kolumnie.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Table Entry Update:**\
-  The card performs the selected operation (**+**, **-**, **\***, or **/**) on the values in the chosen **column** of the selected **table, u**sing the specified **value**.
+* **Ocena warunku:**\
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+* **Aktualizacja wpisu tabeli:**\
+  Karta wykonuje wybraną operację (**+**, **-**, **\*** lub **/**) na wartościach w wybranej **kolumnie** wybranej **tabeli**, używając określonej **wartości**.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
 * **Select Table:**\
-  Choose the **table** where the changes will be applied.
+  Wybierz **tabelę**, w której zostaną zastosowane zmiany.
 * **Choose Column:**\
-  Select the **column** within the table that you want to update.
+  Wybierz **kolumnę** w tabeli, którą chcesz zaktualizować.
 * **Select Operation:**\
-  Choose the mathematical operation (**+**, **-**, **\***, **/**) to be applied to the selected column's values.
+  Wybierz operację matematyczną (**+**, **-**, **\***, **/**), która ma być zastosowana do wartości wybranej kolumny.
 * **Enter Value:**\
-  Provide the **value** to be used in the selected operation.
+  Podaj **wartość**, która ma być użyta w wybranej operacji.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Change Entries in Table"** workflow card enables automated updates to database entries by selecting a **table**, **column**, and desired **mathematical operation**. This card is essential for performing bulk data modifications or calculations within your database.
+Karta przepływu pracy **"Change Entries in Table"** umożliwia zautomatyzowane aktualizacje wpisów w bazie danych poprzez wybór **tabeli**, **kolumny** i żądanej **operacji matematycznej**. Karta ta jest niezbędna do wykonywania zbiorczych modyfikacji danych lub obliczeń w bazie danych.

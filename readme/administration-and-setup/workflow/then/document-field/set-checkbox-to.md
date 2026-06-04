@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (279).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This workflow card is designed to set a checkbox field to a specified value (true or false) based on the conditions defined in the **"Where"** and **"And"** sections. It provides a simple yet effective way to automate checkbox updates when certain criteria are met, ensuring streamlined document processing.
+Ta karta przepływu pracy służy do ustawienia pola wyboru na określoną wartość (true lub false) na podstawie warunków zdefiniowanych w sekcjach **"Where"** i **"And"**. Zapewnia prosty, ale skuteczny sposób automatyzacji aktualizacji pól wyboru, gdy spełnione są określone kryteria, zapewniając usprawnione przetwarzanie dokumentów.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Field Name:**
-   * **Description**: Specifies the field where the checkbox will be set.
-   * **Detail**: The checkbox field to be updated is identified by the field name.
+   * **Opis**: Określa pole, w którym zostanie ustawione pole wyboru.
+   * **Szczegóły**: Pole wyboru do aktualizacji jest identyfikowane przez nazwę pola.
 2. **Boolean**
-   * **Description**: Defines the value that the checkbox field will be set to when the conditions in the **Where** and **And Sections** are both true.
-   * **Options**:
-     * **True**: The checkbox will be set to **true** if the conditions are met.
-     * **False**: The checkbox will be set to **false** if the conditions are met.
+   * **Opis**: Definiuje wartość, na którą zostanie ustawione pole wyboru, gdy warunki w sekcjach **Where** i **And** są oba prawdziwe.
+   * **Opcje**:
+     * **True**: Pole wyboru zostanie ustawione na **true**, jeśli warunki są spełnione.
+     * **False**: Pole wyboru zostanie ustawione na **false**, jeśli warunki są spełnione.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation**: The system evaluates the conditions in both the **"Where"** and **"And"**&#x20;
-* **Action Execution**: If both the **"Where"** and **"And Sections"** evaluate to true, the checkbox field will be updated to the specified value (true or false). If either condition is false, no actions are taken, and the checkbox remains as it was.
+* **Ocena warunku**: System ocenia warunki zarówno w sekcji **"Where"**, jak i **"And"**&#x20;
+* **Wykonanie akcji**: Jeśli zarówno **"Where"**, jak i **"And Sections"** są prawdziwe, pole wyboru zostanie zaktualizowane do określonej wartości (true lub false). Jeśli którykolwiek z warunków jest fałszywy, nie są podejmowane żadne akcje, a pole wyboru pozostaje bez zmian.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-To configure this card, users need to:
+Aby skonfigurować tę kartę, użytkownicy muszą:
 
-1. **Specify the target checkbox field** that will be set to true or false when the conditions are met.
-2. **Choose the value (true or false)** that the checkbox will be set to upon condition evaluation.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. **Określić docelowe pole wyboru**, które zostanie ustawione na true lub false, gdy warunki są spełnione.
+2. **Wybrać wartość (true lub false)**, na którą zostanie ustawione pole wyboru po ocenie warunku.
+3. Karta wykonuje swoją akcję tylko wtedy, gdy oba warunki w sekcjach **"Where"** i **"And Sections"** są prawdziwe.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Set Checkbox"** workflow card is a simple and effective automation tool to update checkbox fields based on specific conditions. By ensuring both **"Where"** and **"And Sections"** are met, it allows users to automate processes and reduce manual intervention, ensuring smoother and more efficient document processing.
+Karta przepływu pracy **"Set Checkbox"** jest prostym i skutecznym narzędziem automatyzacji do aktualizacji pól wyboru na podstawie określonych warunków. Zapewniając, że zarówno **"Where"**, jak i **"And Sections"** są spełnione, umożliwia użytkownikom automatyzację procesów i redukcję ręcznej interwencji, zapewniając płynniejsze i bardziej efektywne przetwarzanie dokumentów.

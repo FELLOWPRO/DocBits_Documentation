@@ -2,40 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/image (283).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Change Status"** workflow card is used to change the status of a document to one of the predefined states—**Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval**—and optionally trigger associated workflows based on the status change. This card automates the process of status updates and workflow triggers, ensuring efficient document management and error handling.
+Karta przepływu pracy **"Change Status"** służy do zmiany statusu dokumentu na jeden z predefiniowanych stanów — **Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval** — i opcjonalnie wyzwala powiązane przepływy pracy na podstawie zmiany statusu. Karta ta automatyzuje proces aktualizacji statusów i wyzwalania przepływów pracy, zapewniając efektywne zarządzanie dokumentami i obsługę błędów.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Status**
-   * **Description**: Specifies the new status to be applied to the document.
-   * **Options**:
-     * **Error**: Marks the document as having encountered an error.
-     * **Rejected**: Indicates the document has been rejected and will not proceed further.
-     * **Ready for Validation**: Sets the document to be reviewed and validated by the next user or system process.
-     * **Pending Approval**: Places the document in a pending state for approval.
-     * **Pending Second Approval**: Puts the document on hold for a second level of approval if applicable.
+   * **Opis**: Określa nowy status, który ma zostać zastosowany do dokumentu.
+   * **Opcje**:
+     * **Error**: Oznacza dokument jako taki, który napotkał błąd.
+     * **Rejected**: Wskazuje, że dokument został odrzucony i nie będzie dalej procesowany.
+     * **Ready for Validation**: Ustawia dokument do przeglądu i walidacji przez następnego użytkownika lub proces systemowy.
+     * **Pending Approval**: Umieszcza dokument w stanie oczekiwania na zatwierdzenie.
+     * **Pending Second Approval**: Wstrzymuje dokument do drugiego poziomu zatwierdzenia, jeśli dotyczy.
 2. **Trigger Workflows**
-   * **Description**: Determines whether any subsequent workflows should be triggered after the status change.
-   * **Options**:
-     * **True**: Initiates any relevant workflows based on the status change.
-     * **False**: Prevents workflow execution after the status change.
+   * **Opis**: Określa, czy po zmianie statusu powinny zostać wyzwolone jakiekolwiek kolejne przepływy pracy.
+   * **Opcje**:
+     * **True**: Inicjuje wszelkie istotne przepływy pracy na podstawie zmiany statusu.
+     * **False**: Zapobiega wykonaniu przepływu pracy po zmianie statusu.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections."** If these conditions are true, the card proceeds to change the document's status to the selected value.
-* **Status Update**: Once the conditions are satisfied, the document's status is updated to one of the predefined options (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), depending on the user’s selection.
-* **Trigger Workflow Action**: If **Trigger Workflows** is set to **True**, the system automatically initiates any associated workflows following the status update. If set to **False**, no additional workflows are triggered, and the process ends with the status change.
+* **Ocena warunku**: System ocenia warunki ustawione w sekcjach **"Where"** i **"And Sections."** Jeśli te warunki są prawdziwe, karta przystępuje do zmiany statusu dokumentu na wybraną wartość.
+* **Aktualizacja statusu**: Gdy warunki są spełnione, status dokumentu jest aktualizowany na jedną z predefiniowanych opcji (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), w zależności od wyboru użytkownika.
+* **Akcja wyzwalania przepływu pracy**: Jeśli **Trigger Workflows** jest ustawione na **True**, system automatycznie inicjuje wszelkie powiązane przepływy pracy po aktualizacji statusu. Jeśli ustawione na **False**, nie są wyzwalane żadne dodatkowe przepływy pracy, a proces kończy się zmianą statusu.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-To configure this card, users need to:
+Aby skonfigurować tę kartę, użytkownicy muszą:
 
-1. Specify the desired **Status** that the document will be set to upon condition evaluation (Error, Rejected, Ready for Validation, Pending Approval, or Pending Second Approval).
-2. Choose whether to **Trigger Workflows** after the status change by selecting **True** or **False**.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. Określić żądany **Status**, na który dokument zostanie ustawiony po ocenie warunku (Error, Rejected, Ready for Validation, Pending Approval lub Pending Second Approval).
+2. Wybrać, czy **Trigger Workflows** po zmianie statusu, wybierając **True** lub **False**.
+3. Karta wykonuje swoją akcję tylko wtedy, gdy oba warunki w sekcjach **"Where"** i **"And Sections"** są prawdziwe.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Change Status"** workflow card offers a streamlined approach to managing document statuses and triggering related workflows. It ensures documents are automatically routed to the correct status and that the necessary actions are taken, depending on the status change. By setting clear conditions for execution, it reduces manual effort and enhances workflow efficiency.
+Karta przepływu pracy **"Change Status"** oferuje usprawnione podejście do zarządzania statusami dokumentów i wyzwalania powiązanych przepływów pracy. Zapewnia, że dokumenty są automatycznie kierowane do właściwego statusu i że podejmowane są niezbędne akcje, w zależności od zmiany statusu. Ustawiając jasne warunki wykonania, redukuje ręczny wysiłek i zwiększa efektywność przepływu pracy.

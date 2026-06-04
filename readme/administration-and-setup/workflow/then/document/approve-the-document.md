@@ -4,23 +4,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (281).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Approve the Document"** workflow card is used to mark a document as approved. It allows the document to progress to the next stage in the workflow, enabling automated processing or approval workflows to be executed. This card helps streamline document management processes, ensuring that only approved documents move forward for further actions.
+Karta przepływu pracy **"Approve the Document"** służy do oznaczenia dokumentu jako zatwierdzonego. Umożliwia dokumentowi przejście do następnego etapu w przepływie pracy, umożliwiając wykonanie zautomatyzowanego przetwarzania lub przepływów zatwierdzania. Ta karta pomaga usprawnić procesy zarządzania dokumentami, zapewniając, że tylko zatwierdzone dokumenty są kierowane do dalszych akcji.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Approval Status**
-   * **Description**: This component marks the document as approved.
-   * **Detail**: When this card is triggered, the document's approval status is updated to indicate approval. This action can be set based on the conditions defined in the **"Where"** and **"And Sections."**
+   * **Opis**: Ten komponent oznacza dokument jako zatwierdzony.
+   * **Szczegóły**: Gdy ta karta jest wyzwalana, status zatwierdzenia dokumentu jest aktualizowany w celu wskazania zatwierdzenia. Akcja ta może być ustawiona na podstawie warunków zdefiniowanych w sekcjach **"Where"** i **"And Sections."**
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"**.
-  * If **both conditions are true**, the document will be marked as approved.
-  * If **either condition is false**, the card will not execute, and the document’s approval status will remain unchanged.
-* **Action Execution**: When the conditions are met, the document is approved. This change is reflected in the document status, allowing it to continue further in the workflow.
+* **Ocena warunku**: System ocenia warunki ustawione w sekcjach **"Where"** i **"And Sections"**.
+  * Jeśli **oba warunki są prawdziwe**, dokument zostanie oznaczony jako zatwierdzony.
+  * Jeśli **którykolwiek z warunków jest fałszywy**, karta nie zostanie wykonana, a status zatwierdzenia dokumentu pozostanie bez zmian.
+* **Wykonanie akcji**: Gdy warunki są spełnione, dokument zostaje zatwierdzony. Zmiana ta jest odzwierciedlona w statusie dokumentu, umożliwiając jego dalsze przejście w przepływie pracy.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Approve the Document"** workflow card is a key component for automating document approval in business workflows. By ensuring that only documents that meet specific criteria are approved, it helps maintain consistency, reduces manual oversight, and allows for smoother document processing.
+Karta przepływu pracy **"Approve the Document"** jest kluczowym komponentem do automatyzacji zatwierdzania dokumentów w przepływach pracy biznesowych. Zapewniając, że tylko dokumenty spełniające określone kryteria są zatwierdzane, pomaga utrzymać spójność, redukuje ręczny nadzór i umożliwia płynniejsze przetwarzanie dokumentów.

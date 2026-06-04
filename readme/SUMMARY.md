@@ -397,6 +397,7 @@
       * [PO Matching Pattern](administration-and-setup/workflow/patterns/po-matching-pattern.md)
       * [Decision Logic Pattern](administration-and-setup/workflow/patterns/decision-logic-pattern.md)
       * [Data Transformation Pattern](administration-and-setup/workflow/patterns/data-transformation-pattern.md)
+  * [Test Manager](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)
   * [Workflow Logs](administration-and-setup/workflow/workflow-logs.md)
   * [Workflow Documentation](administration-and-setup/workflow/workflow-documentation.md)

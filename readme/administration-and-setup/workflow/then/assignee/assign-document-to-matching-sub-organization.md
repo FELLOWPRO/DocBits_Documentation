@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card assigns a document to a sub-organization dynamically, based on a specified field in the document. If no matching sub-organization is found, the card uses a predefined fallback sub-organization.
+La scheda di workflow **"Assign Document to Matching Sub-Organization Based on Field"** assegna un documento a una sotto-organizzazione in modo dinamico, in base a un campo specificato nel documento. Se non viene trovata alcuna sotto-organizzazione corrispondente, la scheda utilizza una sotto-organizzazione di riserva predefinita.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field to be used for determining the matching sub-organization.
-   * **Detail:** The card looks for a value in the specified field to match with an available sub-organization.
+   * **Descrizione:** Specifica il campo del documento da utilizzare per determinare la sotto-organizzazione corrispondente.
+   * **Dettaglio:** La scheda cerca un valore nel campo specificato per abbinarlo a una sotto-organizzazione disponibile.
 2. **Sub-Organization (Fallback)**
-   * **Description:** Defines the fallback sub-organization to be used if no match is found in the specified field.
-   * **Detail:** If the field value does not match any sub-organization, the document will be assigned to the fallback sub-organization selected.
+   * **Descrizione:** Definisce la sotto-organizzazione di riserva da utilizzare se non viene trovata alcuna corrispondenza nel campo specificato.
+   * **Dettaglio:** Se il valore del campo non corrisponde a nessuna sotto-organizzazione, il documento verrà assegnato alla sotto-organizzazione di riserva selezionata.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Dynamic Assignment:**\
-  The card checks the value of the specified field and assigns the document to the sub-organization that matches this value.
-* **Fallback Mechanism:**\
-  If no matching sub-organization is found, the document is assigned to the fallback sub-organization.
+* **Valutazione della condizione:**\
+  La scheda esegue la sua azione solo se sia la sezione **"Where"** che la sezione **"And"** risultano vere.
+* **Assegnazione dinamica:**\
+  La scheda verifica il valore del campo specificato e assegna il documento alla sotto-organizzazione che corrisponde a tale valore.
+* **Meccanismo di riserva:**\
+  Se non viene trovata alcuna sotto-organizzazione corrispondente, il documento viene assegnato alla sotto-organizzazione di riserva.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* **Select Field Name:**\
-  Choose the field from the document that contains the value to match with a sub-organization.
-* **Select Fallback Sub-Organization:**\
-  Choose the sub-organization that will be used if no match is found in the document field.
+* **Seleziona il Field Name:**\
+  Scegli il campo del documento che contiene il valore da abbinare a una sotto-organizzazione.
+* **Seleziona la Sub-Organization di riserva:**\
+  Scegli la sotto-organizzazione che verrà utilizzata se non viene trovata alcuna corrispondenza nel campo del documento.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card offers flexibility by dynamically routing documents to the appropriate sub-organization, with an added fallback option to ensure no document is left unassigned.
+La scheda di workflow **"Assign Document to Matching Sub-Organization Based on Field"** offre flessibilità instradando dinamicamente i documenti alla sotto-organizzazione appropriata, con un'opzione di riserva aggiuntiva per garantire che nessun documento rimanga non assegnato.

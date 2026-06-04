@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/image (305).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Assign to Procurement Group"** workflow card is used to assign a document to a specified procurement group within the system. This helps streamline document management by ensuring that the appropriate team handles the document based on its assigned procurement group.
+La scheda di workflow **"Assign to Procurement Group"** viene utilizzata per assegnare un documento a un gruppo di approvvigionamento specificato all'interno del sistema. Ciò aiuta a semplificare la gestione documentale garantendo che il team appropriato gestisca il documento in base al gruppo di approvvigionamento assegnato.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Procurement Group**
-   * **Description:** Specifies the procurement group to which the document will be assigned.
-   * **Detail:** The selected procurement group will be responsible for processing and managing the document.
+   * **Descrizione:** Specifica il gruppo di approvvigionamento a cui verrà assegnato il documento.
+   * **Dettaglio:** Il gruppo di approvvigionamento selezionato sarà responsabile dell'elaborazione e della gestione del documento.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Action Execution:**\
-  If both conditions are true, the document is assigned to the specified procurement group. If either condition is false, no actions are taken, and the document remains unassigned.
+* **Valutazione della condizione:**\
+  La scheda esegue la sua azione solo se sia la sezione **"Where"** che la sezione **"And"** risultano vere.
+* **Esecuzione dell'azione:**\
+  Se entrambe le condizioni sono vere, il documento viene assegnato al gruppo di approvvigionamento specificato. Se una delle condizioni è falsa, non viene intrapresa alcuna azione e il documento rimane non assegnato.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* **Select Procurement Group:** Choose the procurement group to assign the document to from the dropdown list.
+* **Seleziona il Procurement Group:** Scegli dal menu a discesa il gruppo di approvvigionamento a cui assegnare il documento.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Assign to Procurement Group"** workflow card provides a simple yet effective way to ensure that documents are automatically assigned to the correct procurement team for further processing.
+La scheda di workflow **"Assign to Procurement Group"** offre un modo semplice ma efficace per garantire che i documenti vengano automaticamente assegnati al team di approvvigionamento corretto per l'ulteriore elaborazione.

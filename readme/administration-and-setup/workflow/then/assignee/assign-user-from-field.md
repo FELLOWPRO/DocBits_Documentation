@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (299).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Assign User from Field with Fallback"** workflow card dynamically assigns a user based on the value found in a specified document field. If the field does not contain a valid user, a fallback user is selected from a predefined list of available users to ensure the task or action is properly assigned.
+La scheda di workflow **"Assign User from Field with Fallback"** assegna dinamicamente un utente in base al valore trovato in un campo specificato del documento. Se il campo non contiene un utente valido, viene selezionato un utente di riserva da un elenco predefinito di utenti disponibili per garantire che l'attività o l'azione venga assegnata correttamente.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Field Name**
-   * **Description:** Specifies the **document field** that contains the user information to be assigned.
-   * **Detail:** This field is evaluated to determine which user should be assigned. If the field contains a valid user, that user will be assigned the task. If the field is empty or invalid, the fallback user will be assigned.
+   * **Descrizione:** Specifica il **campo del documento** che contiene le informazioni sull'utente da assegnare.
+   * **Dettaglio:** Questo campo viene valutato per determinare quale utente debba essere assegnato. Se il campo contiene un utente valido, a tale utente verrà assegnata l'attività. Se il campo è vuoto o non valido, verrà assegnato l'utente di riserva.
 2. **User (Fallback)**
-   * **Description:** Specifies the **fallback user** to be assigned if the document field does not contain a valid user.
-   * **Detail:** A dropdown list of all available users is provided for selection. This user will be assigned if the document field is empty or does not contain a valid user.
+   * **Descrizione:** Specifica l'**utente di riserva** da assegnare se il campo del documento non contiene un utente valido.
+   * **Dettaglio:** Viene fornito un menu a discesa con tutti gli utenti disponibili per la selezione. Questo utente verrà assegnato se il campo del documento è vuoto o non contiene un utente valido.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Field-Based User Assignment:**\
-  The card first attempts to assign the task or action to the user identified in the **Field Name**.
-* **Fallback User Assignment:**\
-  If the field does not contain a valid user (or is empty), the card assigns the task to the fallback user selected from the **User (Fallback)** dropdown list.
+* **Valutazione della condizione:**\
+  La scheda esegue la sua azione solo se sia la sezione **"Where"** che la sezione **"And"** risultano vere.
+* **Assegnazione dell'utente basata sul campo:**\
+  La scheda tenta innanzitutto di assegnare l'attività o l'azione all'utente identificato nel **Field Name**.
+* **Assegnazione dell'utente di riserva:**\
+  Se il campo non contiene un utente valido (o è vuoto), la scheda assegna l'attività all'utente di riserva selezionato dal menu a discesa **User (Fallback)**.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* **Select Field Name:**\
-  Choose the **document field** that specifies the user for assignment.
-* **Select Fallback User:**\
-  Choose the **fallback user** from the dropdown list. This user will be assigned the task if the document field does not contain a valid user.
+* **Seleziona il Field Name:**\
+  Scegli il **campo del documento** che specifica l'utente per l'assegnazione.
+* **Seleziona il Fallback User:**\
+  Scegli l'**utente di riserva** dal menu a discesa. A questo utente verrà assegnata l'attività se il campo del documento non contiene un utente valido.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Assign User from Field with Fallback"** workflow card ensures that a task or action is always assigned to a valid user. If the user in the document field is not available, the fallback user is automatically assigned, providing flexibility and ensuring task completion.
+La scheda di workflow **"Assign User from Field with Fallback"** garantisce che un'attività o un'azione venga sempre assegnata a un utente valido. Se l'utente nel campo del documento non è disponibile, l'utente di riserva viene assegnato automaticamente, offrendo flessibilità e garantendo il completamento dell'attività.

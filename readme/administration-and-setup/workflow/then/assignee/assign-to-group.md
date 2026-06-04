@@ -2,36 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Scopo:
 
-The **"Assign to Group"** workflow card facilitates the assignment of documents to a specific **group** within the system. This ensures that the document is processed by the appropriate team, streamlining workflow. Enhanced in later versions, it introduces decision tree functionality for dynamic group assignment.
+La scheda di workflow **"Assign to Group"** facilita l'assegnazione dei documenti a un **gruppo** specifico all'interno del sistema. Ciò garantisce che il documento venga elaborato dal team appropriato, semplificando il workflow. Potenziata nelle versioni successive, introduce la funzionalità decision tree per l'assegnazione dinamica dei gruppi.
 
-## Components of the Card:
+## Componenti della scheda:
 
 1. **Groups**
-   * **Description:** Specifies the **group** to which the document will be assigned.
-   * **Detail:** Selected from a dropdown list of available **groups**.
+   * **Descrizione:** Specifica il **gruppo** a cui verrà assegnato il documento.
+   * **Dettaglio:** Selezionato da un menu a discesa dei **gruppi** disponibili.
 
 
 
-## **Additional Components in Version 3**
+## **Componenti aggiuntivi nella Versione 3**
 
-1. **Decision Tree (Version 3 Only)**
-   * **Description:** Allows the use of a decision tree to dynamically determine the **group** to which the document should be assigned.
-   * **Options:**
-     * **True:** Enables decision tree processing.
-     * **False:** Disables decision tree processing.
+1. **Decision Tree (solo Versione 3)**
+   * **Descrizione:** Consente l'utilizzo di una decision tree per determinare dinamicamente il **gruppo** a cui assegnare il documento.
+   * **Opzioni:**
+     * **True:** Abilita l'elaborazione della decision tree.
+     * **False:** Disabilita l'elaborazione della decision tree.
 
-## Functionality:
+## Funzionalità:
 
-* **Condition Evaluation:** The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:** Assigns the document to the selected **group**. In **Version 3**, the **decision tree** determines the target group dynamically if enabled.
+* **Valutazione della condizione:** La scheda esegue la sua azione solo se sia la sezione **"Where"** che la sezione **"And"** risultano vere.
+* **Assegnazione del documento:** Assegna il documento al **gruppo** selezionato. Nella **Versione 3**, la **decision tree** determina dinamicamente il gruppo di destinazione se abilitata.
 
-## Setup and Configuration:
+## Configurazione e impostazione:
 
-* **Select Group:** Choose the **group** from the dropdown list to assign the document.
-* **Use Decision Tree (Version 3 Only):** Enable this option if the **decision tree** should be used for dynamic assignment.
+* **Seleziona il Group:** Scegli il **gruppo** dal menu a discesa a cui assegnare il documento.
+* **Use Decision Tree (solo Versione 3):** Abilita questa opzione se la **decision tree** deve essere utilizzata per l'assegnazione dinamica.
 
-## Conclusion:
+## Conclusione:
 
-The **"Assign to Group"** workflow card automates document assignment to predefined **groups**, enhancing team coordination. **Version 3** introduces the ability to dynamically assign groups based on decision tree logic.
+La scheda di workflow **"Assign to Group"** automatizza l'assegnazione dei documenti a **gruppi** predefiniti, migliorando il coordinamento del team. La **Versione 3** introduce la possibilità di assegnare dinamicamente i gruppi in base alla logica della decision tree.

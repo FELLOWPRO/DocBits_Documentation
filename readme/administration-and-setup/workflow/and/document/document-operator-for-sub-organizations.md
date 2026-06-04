@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Propósito:
 
-This workflow card evaluates whether a document is part of a specific sub-organization. Based on this evaluation, the workflow can either continue or trigger different actions depending on whether the document is associated with the specified sub-organization or not.
+Este cartão de fluxo de trabalho avalia se um documento faz parte de uma sub-organização específica. Com base nesta avaliação, o fluxo de trabalho pode continuar ou acionar diferentes ações consoante o documento esteja ou não associado à sub-organização especificada.
 
-## Components of the Card:
+## Componentes do cartão:
 
-1. **Operator**
-   * **Description:** Defines whether the document must be part of the specified sub-organization or not.
-   * **Options:**
-     * **Is:** The document must be part of the specified sub-organization for the condition to be true.
-     * **Is Not:** The document must not be part of the specified sub-organization for the condition to be true.
+1. **Operador**
+   * **Descrição:** Define se o documento tem de fazer parte da sub-organização especificada ou não.
+   * **Opções:**
+     * **Is:** O documento tem de fazer parte da sub-organização especificada para que a condição seja verdadeira.
+     * **Is Not:** O documento não pode fazer parte da sub-organização especificada para que a condição seja verdadeira.
 2. **Sub-org**
-   * **Description:** Specifies the sub-organization to which the document should be compared.
-   * **Detail:** This should match the sub-organization identifier. The comparison checks if the document belongs to the specified sub-organization.
+   * **Descrição:** Especifica a sub-organização com a qual o documento deve ser comparado.
+   * **Detalhe:** Deve corresponder ao identificador da sub-organização. A comparação verifica se o documento pertence à sub-organização especificada.
 
-## Functionality:
+## Funcionalidade:
 
-* **Condition Evaluation:** The system evaluates whether the document is part of the specified sub-organization. This evaluation checks the document's sub-organization against the one provided by the user.
-* **Action Execution:**
-  * **True Condition:**\
-    If the document is part of the specified sub-organization, the workflow continues with the true condition. This could trigger further actions, such as routing the document to a specific department, applying sub-organization-specific rules, or enabling features tailored to that sub-organization.
-  * **False Condition:**\
-    If the document is not part of the specified sub-organization, the workflow continues with the false condition. This allows for executing alternative actions, such as sending notifications, halting the workflow, or applying general rules outside of the sub-organization's scope.
+* **Avaliação da condição:** O sistema avalia se o documento faz parte da sub-organização especificada. Esta avaliação verifica a sub-organização do documento face à fornecida pelo utilizador.
+* **Execução da ação:**
+  * **Condição Verdadeira:**\
+    Se o documento fizer parte da sub-organização especificada, o fluxo de trabalho continua com a condição verdadeira. Isto pode acionar ações adicionais, como encaminhar o documento para um departamento específico, aplicar regras específicas da sub-organização ou ativar funcionalidades adaptadas a essa sub-organização.
+  * **Condição Falsa:**\
+    Se o documento não fizer parte da sub-organização especificada, o fluxo de trabalho continua com a condição falsa. Isto permite executar ações alternativas, como enviar notificações, interromper o fluxo de trabalho ou aplicar regras gerais fora do âmbito da sub-organização.
 
-## Setup and Configuration:
+## Configuração:
 
-* Users configure the card by selecting the document field containing the document and specifying the sub-organization to check against. The operator is then chosen from a dropdown list to define whether the document must be part of or not part of the specified sub-organization. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
+* Os utilizadores configuram o cartão selecionando o campo do documento que contém o documento e especificando a sub-organização a verificar. O operador é depois escolhido a partir de uma lista pendente para definir se o documento tem de fazer parte ou não da sub-organização especificada. Por fim, os utilizadores definem a condição de continuação (verdadeira ou falsa), que determina o passo seguinte no fluxo de trabalho.
 
-## Conclusion:
+## Conclusão:
 
-The "Document in Sub-organization" workflow card is a helpful tool for automating actions based on whether a document belongs to a particular sub-organization. By ensuring documents are processed according to sub-organization-specific rules, this card improves workflow efficiency and ensures that actions are executed within the correct organizational context.
+O cartão de fluxo de trabalho "Document in Sub-organization" é uma ferramenta útil para automatizar ações com base no facto de um documento pertencer a uma sub-organização específica. Ao assegurar que os documentos são processados de acordo com regras específicas da sub-organização, este cartão melhora a eficiência do fluxo de trabalho e garante que as ações são executadas no contexto organizacional correto.

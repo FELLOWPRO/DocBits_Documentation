@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to automate actions based on the presence or absence of specific text within a specified document field. It ensures workflows can adapt dynamically to the content of documents, supporting efficient processing and accurate decision-making.
+Este cartão de fluxo de trabalho foi concebido para automatizar ações com base na presença ou ausência de texto específico dentro de um campo de documento especificado. Assegura que os fluxos de trabalho se podem adaptar dinamicamente ao conteúdo dos documentos, apoiando um processamento eficiente e uma tomada de decisões precisa.
 
-## **Components of the Card:**
+## **Componentes do cartão:**
 
 1. **Text**
-   * **Description:** Specifies the text string to be checked within the field.
-   * **Detail:** This can be a word, phrase, or sequence of characters relevant to the workflow.
-2. **Operator**
-   * **Description:** Defines the condition for text presence in the field.
-   * **Options:**
-     * **Is:** Triggers the workflow if the specified text is present in the field.
-     * **Is Not:** Triggers the workflow if the specified text is not present in the field.
+   * **Descrição:** Especifica a cadeia de texto a verificar dentro do campo.
+   * **Detalhe:** Pode ser uma palavra, frase ou sequência de caracteres relevante para o fluxo de trabalho.
+2. **Operador**
+   * **Descrição:** Define a condição para a presença de texto no campo.
+   * **Opções:**
+     * **Is:** Aciona o fluxo de trabalho se o texto especificado estiver presente no campo.
+     * **Is Not:** Aciona o fluxo de trabalho se o texto especificado não estiver presente no campo.
 3. **Field Name**
-   * **Description:** Specifies the name of the document field to be evaluated.
-   * **Detail:** This must match the exact identifier of the field within the document.
+   * **Descrição:** Especifica o nome do campo de documento a avaliar.
+   * **Detalhe:** Tem de corresponder ao identificador exato do campo dentro do documento.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-1. **Condition Evaluation:** The system checks whether the specified text exists in the field, based on the selected operator (Is or Is Not).
-2. **Action Execution:**
-   * **True Condition:**\
-     If the text's presence in the field matches the specified condition, the system initiates the associated actions. These could include triggering alerts, progressing workflows, or updating records.
-   * **False Condition:**\
-     If the text's presence in the field does not match the condition, alternative actions or no actions may be taken, depending on the workflow configuration.
+1. **Avaliação da condição:** O sistema verifica se o texto especificado existe no campo, com base no operador selecionado (Is ou Is Not).
+2. **Execução da ação:**
+   * **Condição Verdadeira:**\
+     Se a presença do texto no campo corresponder à condição especificada, o sistema inicia as ações associadas. Estas podem incluir o acionamento de alertas, o avanço de fluxos de trabalho ou a atualização de registos.
+   * **Condição Falsa:**\
+     Se a presença do texto no campo não corresponder à condição, podem ser tomadas ações alternativas ou nenhuma ação, consoante a configuração do fluxo de trabalho.
 
-## **Setup and Configuration:**&#x20;
+## **Configuração:**&#x20;
 
-* The user inputs the text to be checked. They then select the field name of the relevant document.
+* O utilizador introduz o texto a verificar. De seguida, seleciona o nome do campo do documento relevante.
 
-## **Conclusion:**
+## **Conclusão:**
 
-The "Text Presence in Field" workflow card is a simple yet powerful tool for document content analysis. By automating actions based on text detection, this card supports more intelligent workflows, improves document handling accuracy, and reduces manual effort.
+O cartão de fluxo de trabalho "Text Presence in Field" é uma ferramenta simples mas poderosa para a análise de conteúdo de documentos. Ao automatizar ações com base na deteção de texto, este cartão apoia fluxos de trabalho mais inteligentes, melhora a precisão do tratamento de documentos e reduz o esforço manual.

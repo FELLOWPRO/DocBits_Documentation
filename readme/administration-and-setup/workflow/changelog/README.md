@@ -1,240 +1,240 @@
-# Workflow Changelog
+# Journal des modifications des flux de travail
 
-**Last Updated:** October 23, 2025
-
----
-
-## Overview
-
-This changelog documents all significant changes, improvements, and updates to the DocBits Workflow Engine. It includes new features, documentation enhancements, card versioning updates, and system improvements.
+**Dernière mise à jour :** 23 octobre 2025
 
 ---
 
-## Quick Links
+## Aperçu
 
-### Latest Release
-📦 **[October 2025 Release](./2025-10-october.md)** - Major documentation and versioning improvements
-
-### By Category
-- 📚 [Documentation Enhancements](./documentation-enhancements.md) - New guides and cross-references
-- 🔄 [Card Versioning System](./card-versioning.md) - Version management and evolution
-- 🚀 [System Improvements](./2025-10-october.md) - Feature additions and fixes
+Ce journal des modifications documente tous les changements, améliorations et mises à jour significatifs du moteur de flux de travail DocBits. Il inclut les nouvelles fonctionnalités, les améliorations de la documentation, les mises à jour du versionnage des cartes et les améliorations du système.
 
 ---
 
-## Version History
+## Liens rapides
 
-### 2025-10 (October 2025) - Current Release
+### Dernière version
+📦 **[Version d'octobre 2025](./2025-10-october.md)** - Améliorations majeures de la documentation et du versionnage
 
-**Summary:** Comprehensive documentation expansion with 9 new workflow card guides, card versioning system documentation, and workflow linking improvements.
-
-**Key Highlights:**
-- ✅ 9 comprehensive workflow card guides created (4,642 lines)
-- ✅ Card versioning documentation with evolution paths
-- ✅ Workflow linking analysis (87 cross-reference opportunities)
-- ✅ Multilingual support (8 languages: English, German, Spanish, French, Italian, Polish, Portuguese, Dutch)
-- ✅ 72 total documentation files deployed
-
-**See:** [October 2025 Release Notes](./2025-10-october.md)
+### Par catégorie
+- 📚 [Améliorations de la documentation](./documentation-enhancements.md) - Nouveaux guides et références croisées
+- 🔄 [Système de versionnage des cartes](./card-versioning.md) - Gestion des versions et évolution
+- 🚀 [Améliorations du système](./2025-10-october.md) - Ajouts de fonctionnalités et corrections
 
 ---
 
-## Guides Added in October 2025
+## Historique des versions
 
-### Action Cards (External Integration)
-1. **[Call API Guide](../then/action/call-api-guide.md)** - Integrate with external APIs with full parameter support
-2. **[HTTPS Request Guide](../then/action/https-request-guide.md)** - Send secure HTTP/HTTPS requests to external services
-3. **[DocOperator Script Guide](../then/action/docoperator-script-guide.md)** - Browser automation and form filling
+### 2025-10 (octobre 2025) - Version actuelle
 
-### Action Cards (Communication)
-4. **[Send Email to Groups Guide](../then/action/send-email-groups-guide.md)** - Notify multiple users via email groups
+**Résumé :** Extension complète de la documentation avec 9 nouveaux guides de cartes de flux de travail, documentation du système de versionnage des cartes et améliorations de la liaison des flux de travail.
 
-### Data & Field Manipulation
-5. **[Field Manipulation Guide](../then/document-field/field-manipulation-guide.md)** - Update, calculate, and transform document fields
+**Points clés :**
+- ✅ 9 guides complets de cartes de flux de travail créés (4 642 lignes)
+- ✅ Documentation du versionnage des cartes avec chemins d'évolution
+- ✅ Analyse de la liaison des flux de travail (87 opportunités de références croisées)
+- ✅ Prise en charge multilingue (8 langues : anglais, allemand, espagnol, français, italien, polonais, portugais, néerlandais)
+- ✅ 72 fichiers de documentation au total déployés
 
-### Task & Assignment
-6. **[Task Assignment Guide](../then/task/task-assignment-guide.md)** - Create and assign tasks with priority and routing
-7. **[Document Assignment Guide](../then/assignee/assignment-user-guide.md)** - Assign documents to users and groups
-
-### Comparison & Validation
-8. **[PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md)** - Match invoices with purchase orders and calculate variances
-9. **[Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)** - Comprehensive reference for 31+ condition cards
+**Voir :** [Notes de version d'octobre 2025](./2025-10-october.md)
 
 ---
 
-## Documentation Resources
+## Guides ajoutés en octobre 2025
 
-### Main References
-- 📖 **Card Versioning:** Understanding version evolution and migration paths
-- 🔗 **Linking Map:** 87 identified cross-reference opportunities for documentation
-- 🎯 **Best Practices:** Recommendations for workflow design and card selection
+### Cartes d'action (intégration externe)
+1. **[Guide d'appel d'API](../then/action/call-api-guide.md)** - S'intégrer à des API externes avec une prise en charge complète des paramètres
+2. **[Guide des requêtes HTTPS](../then/action/https-request-guide.md)** - Envoyer des requêtes HTTP/HTTPS sécurisées à des services externes
+3. **[Guide des scripts DocOperator](../then/action/docoperator-script-guide.md)** - Automatisation du navigateur et remplissage de formulaires
 
-### Language Support
-All guides available in:
-- 🇺🇸 English
-- 🇩🇪 Deutsch (German)
-- 🇪🇸 Español (Spanish)
-- 🇫🇷 Français (French)
-- 🇮🇹 Italiano (Italian)
-- 🇵🇱 Polski (Polish)
-- 🇵🇹 Português (Portuguese)
-- 🇳🇱 Nederlands (Dutch)
+### Cartes d'action (communication)
+4. **[Guide d'envoi d'e-mails aux groupes](../then/action/send-email-groups-guide.md)** - Notifier plusieurs utilisateurs via des groupes d'e-mails
 
----
+### Manipulation des données et des champs
+5. **[Guide de manipulation des champs](../then/document-field/field-manipulation-guide.md)** - Mettre à jour, calculer et transformer les champs de document
 
-## How to Use This Changelog
+### Tâches et assignation
+6. **[Guide d'assignation de tâches](../then/task/task-assignment-guide.md)** - Créer et assigner des tâches avec priorité et routage
+7. **[Guide d'assignation de documents](../then/assignee/assignment-user-guide.md)** - Assigner des documents aux utilisateurs et aux groupes
 
-### Find Information By:
-- **Date:** Look for version folders (e.g., 2025-10-october.md)
-- **Category:** Check category-specific pages (documentation, versioning, improvements)
-- **Card Type:** Link from specific card guides back to changelog entries
-
-### Understanding Version Numbers:
-- Format: `YYYY-MM` (e.g., 2025-10)
-- Comprehensive changes documented for each release
-- Breaking changes clearly marked
-
-### Related Documentation:
-- [Card Versioning Reference](../../docs/card_version.md) - Detailed version history and evolution
-- [Workflow Documentation Guides](../then/) - Step-by-step guides for card usage
-- [Workflow Linking Analysis](../../WORKFLOW_LINKING_MAP.md) - Cross-reference mapping (87 opportunities)
+### Comparaison et validation
+8. **[Guide complet du rapprochement de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md)** - Rapprocher les factures des commandes d'achat et calculer les écarts
+9. **[Guide complet des cartes de condition](../and/condition-cards-complete-guide.md)** - Référence complète pour plus de 31 cartes de condition
 
 ---
 
-## Change Categories
+## Ressources de documentation
+
+### Références principales
+- 📖 **Versionnage des cartes :** Comprendre l'évolution des versions et les chemins de migration
+- 🔗 **Carte de liaison :** 87 opportunités de références croisées identifiées pour la documentation
+- 🎯 **Bonnes pratiques :** Recommandations pour la conception des flux de travail et la sélection des cartes
+
+### Prise en charge linguistique
+Tous les guides sont disponibles en :
+- 🇺🇸 Anglais
+- 🇩🇪 Deutsch (allemand)
+- 🇪🇸 Español (espagnol)
+- 🇫🇷 Français
+- 🇮🇹 Italiano (italien)
+- 🇵🇱 Polski (polonais)
+- 🇵🇹 Português (portugais)
+- 🇳🇱 Nederlands (néerlandais)
+
+---
+
+## Comment utiliser ce journal des modifications
+
+### Rechercher des informations par :
+- **Date :** Recherchez les dossiers de versions (par ex. 2025-10-october.md)
+- **Catégorie :** Consultez les pages spécifiques à une catégorie (documentation, versionnage, améliorations)
+- **Type de carte :** Liez depuis les guides de cartes spécifiques vers les entrées du journal des modifications
+
+### Comprendre les numéros de version :
+- Format : `YYYY-MM` (par ex. 2025-10)
+- Modifications complètes documentées pour chaque version
+- Modifications majeures (breaking changes) clairement signalées
+
+### Documentation associée :
+- [Référence du versionnage des cartes](../../docs/card_version.md) - Historique détaillé des versions et évolution
+- [Guides de documentation des flux de travail](../then/) - Guides étape par étape pour l'utilisation des cartes
+- [Analyse de la liaison des flux de travail](../../WORKFLOW_LINKING_MAP.md) - Cartographie des références croisées (87 opportunités)
+
+---
+
+## Catégories de modifications
 
 ### 📚 Documentation
-- New comprehensive guides
-- Improved examples and use cases
-- Cross-reference linking
-- Multi-language translations
+- Nouveaux guides complets
+- Exemples et cas d'usage améliorés
+- Liaison par références croisées
+- Traductions multilingues
 
-### 🔄 Versioning
-- Card version tracking
-- Version evolution paths
-- Deprecation information
-- Migration guides
+### 🔄 Versionnage
+- Suivi des versions de cartes
+- Chemins d'évolution des versions
+- Informations sur l'obsolescence
+- Guides de migration
 
-### 🚀 System Improvements
-- New features
-- Enhanced capabilities
-- Bug fixes
-- Performance improvements
+### 🚀 Améliorations du système
+- Nouvelles fonctionnalités
+- Capacités améliorées
+- Corrections de bugs
+- Améliorations des performances
 
-### 🌍 Localization
-- Language expansion
-- Translation improvements
-- Region-specific content
-
----
-
-## Most Recent Changes
-
-### Documentation Expansion (October 23, 2025)
-- 9 comprehensive workflow card guides added
-- 72 files created across 8 language branches
-- 4,642 lines of English documentation
-- 87 workflow linking opportunities identified
-
-### Card Versioning System (October 23, 2025)
-- Card version history documented
-- Evolution patterns identified
-- Migration paths defined
-- 30+ cards with multiple versions catalogued
-
-### Workflow Analysis (October 23, 2025)
-- 87 cross-reference opportunities mapped
-- 4 analysis documents created
-- Linking implementation plan prepared
+### 🌍 Localisation
+- Extension linguistique
+- Améliorations des traductions
+- Contenu spécifique aux régions
 
 ---
 
-## Planned Future Improvements
+## Modifications les plus récentes
 
-### Q4 2025
-- [ ] Implement internal cross-reference linking (87 opportunities)
-- [ ] Add screenshots and diagrams to guides
-- [ ] Create video tutorials for complex workflows
-- [ ] User feedback collection and implementation
+### Extension de la documentation (23 octobre 2025)
+- 9 guides complets de cartes de flux de travail ajoutés
+- 72 fichiers créés sur 8 branches linguistiques
+- 4 642 lignes de documentation en anglais
+- 87 opportunités de liaison des flux de travail identifiées
 
-### Q1 2026
-- [ ] Advanced workflow templates
-- [ ] Performance optimization guides
-- [ ] Integration patterns documentation
-- [ ] Best practices library
+### Système de versionnage des cartes (23 octobre 2025)
+- Historique des versions de cartes documenté
+- Modèles d'évolution identifiés
+- Chemins de migration définis
+- Plus de 30 cartes avec plusieurs versions cataloguées
+
+### Analyse des flux de travail (23 octobre 2025)
+- 87 opportunités de références croisées cartographiées
+- 4 documents d'analyse créés
+- Plan de mise en œuvre de la liaison préparé
 
 ---
 
-## Statistics
+## Améliorations futures prévues
 
-| Metric | Value |
+### T4 2025
+- [ ] Mettre en œuvre la liaison interne par références croisées (87 opportunités)
+- [ ] Ajouter des captures d'écran et des diagrammes aux guides
+- [ ] Créer des tutoriels vidéo pour les flux de travail complexes
+- [ ] Collecte et mise en œuvre des retours utilisateurs
+
+### T1 2026
+- [ ] Modèles de flux de travail avancés
+- [ ] Guides d'optimisation des performances
+- [ ] Documentation des modèles d'intégration
+- [ ] Bibliothèque de bonnes pratiques
+
+---
+
+## Statistiques
+
+| Métrique | Valeur |
 |--------|-------|
-| **Total Documentation Files** | 72 |
-| **Languages Supported** | 8 |
-| **New Guides** | 9 |
-| **Total Lines of Documentation** | ~334,224 |
-| **English Documentation Lines** | 4,642 |
-| **Cross-Reference Opportunities** | 87 |
-| **Versioned Cards** | 30+ |
-| **Card Versions Total** | 90+ |
+| **Total des fichiers de documentation** | 72 |
+| **Langues prises en charge** | 8 |
+| **Nouveaux guides** | 9 |
+| **Total des lignes de documentation** | ~334 224 |
+| **Lignes de documentation en anglais** | 4 642 |
+| **Opportunités de références croisées** | 87 |
+| **Cartes versionnées** | 30+ |
+| **Total des versions de cartes** | 90+ |
 
 ---
 
-## Contributing to Changelog
+## Contribuer au journal des modifications
 
-When making changes to workflow documentation:
+Lors de modifications de la documentation des flux de travail :
 
-1. **Document Changes:** Explain what was changed and why
-2. **Version Updates:** Include version number if applicable
-3. **Multi-Language:** Update changelog in all language branches
-4. **Link References:** Connect to related guides and documentation
-5. **Date Format:** Use YYYY-MM-DD for consistency
+1. **Documenter les modifications :** Expliquez ce qui a été modifié et pourquoi
+2. **Mises à jour de version :** Incluez le numéro de version le cas échéant
+3. **Multilingue :** Mettez à jour le journal des modifications dans toutes les branches linguistiques
+4. **Références de liens :** Reliez aux guides et à la documentation associés
+5. **Format de date :** Utilisez YYYY-MM-DD pour la cohérence
 
 ---
 
-## Workflow Module Status
+## Statut du module de flux de travail
 
-| Component | Status | Notes |
+| Composant | Statut | Remarques |
 |-----------|--------|-------|
-| **Core Workflow Engine** | ✅ Active | Running smoothly |
-| **Action Cards** | ✅ Documented | 9+ comprehensive guides |
-| **Condition Cards** | ✅ Documented | 31+ cards documented |
-| **Assignment Cards** | ✅ Documented | Complete coverage |
-| **Integration Cards** | ✅ Documented | API, HTTPS, Script execution |
-| **Versioning System** | ✅ Documented | All versions tracked |
-| **Linking System** | 🔄 In Progress | 87 opportunities mapped |
+| **Moteur de flux de travail principal** | ✅ Actif | Fonctionne correctement |
+| **Cartes d'action** | ✅ Documentées | 9+ guides complets |
+| **Cartes de condition** | ✅ Documentées | 31+ cartes documentées |
+| **Cartes d'assignation** | ✅ Documentées | Couverture complète |
+| **Cartes d'intégration** | ✅ Documentées | API, HTTPS, exécution de scripts |
+| **Système de versionnage** | ✅ Documenté | Toutes les versions suivies |
+| **Système de liaison** | 🔄 En cours | 87 opportunités cartographiées |
 
 ---
 
-## Quick Reference Links
+## Liens de référence rapide
 
-### Workflow Guides
-- [Action Cards](../then/action/)
-- [Condition Cards](../and/)
-- [Assignment Cards](../then/assignee/)
-- [Export & Data Cards](../then/export/)
+### Guides de flux de travail
+- [Cartes d'action](../then/action/)
+- [Cartes de condition](../and/)
+- [Cartes d'assignation](../then/assignee/)
+- [Cartes d'exportation et de données](../then/export/)
 
 ### Documentation
-- [Card Versioning Reference](../../docs/card_version.md)
-- [Workflow Linking Map](../../WORKFLOW_LINKING_MAP.md)
-- [Workflow Linking Summary](../../WORKFLOW_LINKING_SUMMARY.md)
+- [Référence du versionnage des cartes](../../docs/card_version.md)
+- [Carte de liaison des flux de travail](../../WORKFLOW_LINKING_MAP.md)
+- [Résumé de la liaison des flux de travail](../../WORKFLOW_LINKING_SUMMARY.md)
 
 ### Support
-- [Workflow Logs](../workflow-logs/)
-- [Standard Workflows](../standard-workflow/)
-- [Release Notes](../release.md)
+- [Journaux de flux de travail](../workflow-logs/)
+- [Flux de travail standard](../standard-workflow/)
+- [Notes de version](../release.md)
 
 ---
 
-## Contact & Support
+## Contact et support
 
-For questions about workflow changes or documentation:
-- 📖 Review the specific guide for the card you're using
-- 🔍 Check the [Card Versioning Reference](../../docs/card_version.md) for version-specific information
-- 📋 See [Workflow Logs](../workflow-logs/) for execution details
+Pour toute question concernant les modifications des flux de travail ou la documentation :
+- 📖 Consultez le guide spécifique de la carte que vous utilisez
+- 🔍 Consultez la [Référence du versionnage des cartes](../../docs/card_version.md) pour des informations spécifiques à une version
+- 📋 Consultez les [Journaux de flux de travail](../workflow-logs/) pour les détails d'exécution
 
 ---
 
-**Last Updated:** October 23, 2025
-**Repository:** github.com/Fellow-Consulting-AG/docbits
-**GitBook:** docs.docbits.com
+**Dernière mise à jour :** 23 octobre 2025
+**Dépôt :** github.com/Fellow-Consulting-AG/docbits
+**GitBook :** docs.docbits.com

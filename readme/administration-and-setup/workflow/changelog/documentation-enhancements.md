@@ -1,548 +1,548 @@
-# Documentation Enhancements - October 2025
+# Améliorations de la documentation - Octobre 2025
 
-**Document:** New Workflow Card Guides and Cross-Reference Improvements
-**Release Date:** October 23, 2025
-**Status:** Complete & Deployed
-
----
-
-## Overview
-
-This document details the 9 comprehensive workflow card guides added in October 2025, along with the workflow linking analysis that identified 87 cross-reference opportunities for future enhancement.
+**Document :** Nouveaux guides de cartes de flux de travail et améliorations des références croisées
+**Date de publication :** 23 octobre 2025
+**Statut :** Complet et déployé
 
 ---
 
-## New Documentation Guides (9 Total)
+## Aperçu
 
-### 1. Call API Guide
-
-**File:** `then/action/call-api-guide.md` (320 lines)
-
-**Purpose:** External API integration with full control and advanced parameters
-
-**Coverage:**
-- ✅ API configuration and endpoints
-- ✅ HTTP methods (GET, POST, PUT, DELETE, PATCH)
-- ✅ Request parameters and data payloads
-- ✅ Response parsing and error handling
-- ✅ Real-world examples
-- ✅ Troubleshooting guide
-
-**Key Topics:**
-- Authentication methods
-- Header configuration
-- JSON request bodies
-- Response variable extraction
-- Timeout and retry handling
-- Error response codes
-
-**Related Cards:**
-- HTTPS Request Guide (simpler alternative)
-- DocOperator Script Guide (for non-API systems)
-- Condition Cards (for response validation)
-- Field Manipulation (for storing API responses)
-
-**Deployment Status:** ✅ All 8 languages
+Ce document détaille les 9 guides complets de cartes de flux de travail ajoutés en octobre 2025, ainsi que l'analyse de la liaison des flux de travail qui a identifié 87 opportunités de références croisées pour de futures améliorations.
 
 ---
 
-### 2. HTTPS Request Guide
+## Nouveaux guides de documentation (9 au total)
 
-**File:** `then/action/https-request-guide.md` (302 lines)
+### 1. Guide d'appel d'API
 
-**Purpose:** Simple HTTP/HTTPS requests for webhooks and basic integrations
+**Fichier :** `then/action/call-api-guide.md` (320 lignes)
 
-**Coverage:**
-- ✅ Basic request setup
-- ✅ URL and endpoint configuration
-- ✅ Simple data payloads
-- ✅ Webhook integration
-- ✅ Response handling
-- ✅ Common use cases
+**Objectif :** Intégration d'API externes avec un contrôle complet et des paramètres avancés
 
-**Key Topics:**
-- Webhook triggers and callbacks
-- Status code handling
-- Basic parameter passing
-- Response validation
-- Integration patterns
-- Failure handling
+**Couverture :**
+- ✅ Configuration des API et points de terminaison
+- ✅ Méthodes HTTP (GET, POST, PUT, DELETE, PATCH)
+- ✅ Paramètres de requête et charges utiles de données
+- ✅ Analyse des réponses et gestion des erreurs
+- ✅ Exemples concrets
+- ✅ Guide de dépannage
 
-**Compared to Call API:**
-- Simpler configuration
-- Fewer advanced options
-- Faster setup
-- Ideal for webhooks
-- Call API for complex needs
+**Sujets clés :**
+- Méthodes d'authentification
+- Configuration des en-têtes
+- Corps de requête JSON
+- Extraction de variables de réponse
+- Gestion des délais d'attente et des nouvelles tentatives
+- Codes de réponse d'erreur
 
-**Related Cards:**
-- Call API Guide (advanced alternative)
-- DocOperator Script Guide (for form automation)
-- Send Email Guide (for notifications)
+**Cartes associées :**
+- Guide des requêtes HTTPS (alternative plus simple)
+- Guide des scripts DocOperator (pour les systèmes sans API)
+- Cartes de condition (pour la validation des réponses)
+- Manipulation des champs (pour le stockage des réponses d'API)
 
-**Deployment Status:** ✅ All 8 languages
+**Statut de déploiement :** ✅ Les 8 langues
 
 ---
 
-### 3. DocOperator Script Guide
+### 2. Guide des requêtes HTTPS
 
-**File:** `then/action/docoperator-script-guide.md` (422 lines)
+**Fichier :** `then/action/https-request-guide.md` (302 lignes)
 
-**Purpose:** Browser automation and form filling for systems without APIs
+**Objectif :** Requêtes HTTP/HTTPS simples pour les webhooks et les intégrations basiques
 
-**Coverage:**
-- ✅ Script configuration and variables
-- ✅ Form field identification
-- ✅ Data input automation
-- ✅ Page navigation
-- ✅ Data extraction
-- ✅ Error handling and timeouts
-- ✅ Troubleshooting
+**Couverture :**
+- ✅ Configuration de requête basique
+- ✅ Configuration de l'URL et du point de terminaison
+- ✅ Charges utiles de données simples
+- ✅ Intégration de webhooks
+- ✅ Gestion des réponses
+- ✅ Cas d'usage courants
 
-**Key Topics:**
-- CSS selectors and element identification
-- Form filling patterns
-- Button clicking and navigation
-- Data extraction from pages
-- Variable usage and substitution
-- Script execution timeout
-- Retry mechanisms
-- Legacy system integration
+**Sujets clés :**
+- Déclencheurs et rappels de webhooks
+- Gestion des codes de statut
+- Passage de paramètres basiques
+- Validation des réponses
+- Modèles d'intégration
+- Gestion des échecs
 
-**Real-World Use Cases:**
-- Integrate with legacy web-based systems
-- Automate supplier portals
-- Collect data from websites
-- Fill forms automatically
-- Extract pricing information
+**Comparé à l'appel d'API :**
+- Configuration plus simple
+- Moins d'options avancées
+- Configuration plus rapide
+- Idéal pour les webhooks
+- Utilisez l'appel d'API pour les besoins complexes
 
-**Related Cards:**
-- Call API Guide (for API-based systems)
-- HTTPS Request Guide (for simple webhooks)
-- Field Manipulation (for storing extracted data)
+**Cartes associées :**
+- Guide d'appel d'API (alternative avancée)
+- Guide des scripts DocOperator (pour l'automatisation de formulaires)
+- Guide d'envoi d'e-mails (pour les notifications)
 
-**Deployment Status:** ✅ All 8 languages
+**Statut de déploiement :** ✅ Les 8 langues
 
 ---
 
-### 4. Send Email to Groups Guide
+### 3. Guide des scripts DocOperator
 
-**File:** `then/action/send-email-groups-guide.md` (368 lines)
+**Fichier :** `then/action/docoperator-script-guide.md` (422 lignes)
 
-**Purpose:** Notify user groups via email with customizable templates
+**Objectif :** Automatisation du navigateur et remplissage de formulaires pour les systèmes sans API
 
-**Coverage:**
-- ✅ Group recipient configuration
-- ✅ Email subject and body
-- ✅ Template variable substitution
-- ✅ HTML formatting options
-- ✅ Attachment handling
-- ✅ Email scheduling
-- ✅ Bounce handling
+**Couverture :**
+- ✅ Configuration des scripts et variables
+- ✅ Identification des champs de formulaire
+- ✅ Automatisation de la saisie de données
+- ✅ Navigation entre les pages
+- ✅ Extraction de données
+- ✅ Gestion des erreurs et délais d'attente
+- ✅ Dépannage
 
-**Key Topics:**
-- Define recipient groups
-- Email template variables
-- Dynamic content insertion
-- HTML and plain text options
-- Field value embedding
-- File attachments
-- Send conditions
-- Delivery confirmation
+**Sujets clés :**
+- Sélecteurs CSS et identification des éléments
+- Modèles de remplissage de formulaires
+- Clic sur les boutons et navigation
+- Extraction de données des pages
+- Utilisation et substitution des variables
+- Délai d'expiration de l'exécution des scripts
+- Mécanismes de nouvelle tentative
+- Intégration de systèmes hérités
 
-**Template Variables:**
-- Document fields
-- Workflow variables
-- User information
-- System dates and times
-- Custom parameters
+**Cas d'usage concrets :**
+- S'intégrer à des systèmes hérités basés sur le web
+- Automatiser les portails fournisseurs
+- Collecter des données depuis des sites web
+- Remplir des formulaires automatiquement
+- Extraire des informations de tarification
 
-**Examples:**
-- Invoice processing notifications
-- Approval request emails
-- Status change alerts
-- Group escalations
-- Document ready notifications
+**Cartes associées :**
+- Guide d'appel d'API (pour les systèmes basés sur API)
+- Guide des requêtes HTTPS (pour les webhooks simples)
+- Manipulation des champs (pour le stockage des données extraites)
 
-**Related Cards:**
-- Task Assignment (alternative to email)
-- Field Manipulation (for preparing email data)
-- Condition Cards (for email triggers)
-- Document Assignment (for combined actions)
-
-**Deployment Status:** ✅ All 8 languages
+**Statut de déploiement :** ✅ Les 8 langues
 
 ---
 
-### 5. Task Assignment Guide
+### 4. Guide d'envoi d'e-mails aux groupes
 
-**File:** `then/task/task-assignment-guide.md` (593 lines)
+**Fichier :** `then/action/send-email-groups-guide.md` (368 lignes)
 
-**Purpose:** Create and assign tasks with priority, routing, and notifications
+**Objectif :** Notifier des groupes d'utilisateurs par e-mail avec des modèles personnalisables
 
-**Coverage:**
-- ✅ Task creation parameters
-- ✅ Title and description setup
-- ✅ Priority levels
-- ✅ User and group assignment
-- ✅ Task routing logic
-- ✅ Notification configuration
-- ✅ Task templates
-- ✅ Due date handling
-- ✅ Fallback assignment
-- ✅ 12 task-related cards documented
+**Couverture :**
+- ✅ Configuration des destinataires de groupe
+- ✅ Objet et corps de l'e-mail
+- ✅ Substitution de variables de modèle
+- ✅ Options de formatage HTML
+- ✅ Gestion des pièces jointes
+- ✅ Planification des e-mails
+- ✅ Gestion des rebonds
 
-**Key Topics:**
-- Task creation cards (user assignment, group assignment)
-- Priority level options
-- Sequential assignment
-- Fallback users
-- Email notifications
-- Task status tracking
-- Decision tree integration
-- Assignment rules
+**Sujets clés :**
+- Définir des groupes de destinataires
+- Variables de modèle d'e-mail
+- Insertion de contenu dynamique
+- Options HTML et texte brut
+- Intégration de valeurs de champ
+- Pièces jointes
+- Conditions d'envoi
+- Confirmation de livraison
 
-**Task Cards Covered:**
+**Variables de modèle :**
+- Champs de document
+- Variables de flux de travail
+- Informations utilisateur
+- Dates et heures système
+- Paramètres personnalisés
+
+**Exemples :**
+- Notifications de traitement de factures
+- E-mails de demande d'approbation
+- Alertes de changement de statut
+- Escalades de groupe
+- Notifications de document prêt
+
+**Cartes associées :**
+- Assignation de tâches (alternative à l'e-mail)
+- Manipulation des champs (pour la préparation des données d'e-mail)
+- Cartes de condition (pour les déclencheurs d'e-mail)
+- Assignation de documents (pour les actions combinées)
+
+**Statut de déploiement :** ✅ Les 8 langues
+
+---
+
+### 5. Guide d'assignation de tâches
+
+**Fichier :** `then/task/task-assignment-guide.md` (593 lignes)
+
+**Objectif :** Créer et assigner des tâches avec priorité, routage et notifications
+
+**Couverture :**
+- ✅ Paramètres de création de tâches
+- ✅ Configuration du titre et de la description
+- ✅ Niveaux de priorité
+- ✅ Assignation à des utilisateurs et à des groupes
+- ✅ Logique de routage des tâches
+- ✅ Configuration des notifications
+- ✅ Modèles de tâches
+- ✅ Gestion des dates d'échéance
+- ✅ Assignation de repli
+- ✅ 12 cartes liées aux tâches documentées
+
+**Sujets clés :**
+- Cartes de création de tâches (assignation à un utilisateur, assignation à un groupe)
+- Options de niveau de priorité
+- Assignation séquentielle
+- Utilisateurs de repli
+- Notifications par e-mail
+- Suivi du statut des tâches
+- Intégration de l'arbre de décision
+- Règles d'assignation
+
+**Cartes de tâches couvertes :**
 1. ACTION_TASK_FOR_GROUP
 2. tasks_create
 3. ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
 4. ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
 5. OC_TASK
 6. ACTION_DECISION_TREE_CREATE_TASKS
-7. And 6 more assignment cards
+7. Et 6 cartes d'assignation supplémentaires
 
-**Routing Scenarios:**
-- Direct user assignment
-- Group-based assignment
-- Field-based user lookup
-- Fallback assignment
-- Sequential routing
+**Scénarios de routage :**
+- Assignation directe à un utilisateur
+- Assignation basée sur un groupe
+- Recherche d'utilisateur basée sur un champ
+- Assignation de repli
+- Routage séquentiel
 
-**Related Cards:**
-- Document Assignment (for document routing)
-- Field Manipulation (for task data preparation)
-- Condition Cards (for assignment logic)
-- Send Email (for task notifications)
+**Cartes associées :**
+- Assignation de documents (pour le routage des documents)
+- Manipulation des champs (pour la préparation des données de tâche)
+- Cartes de condition (pour la logique d'assignation)
+- Envoi d'e-mails (pour les notifications de tâches)
 
-**Deployment Status:** ✅ All 8 languages
-
----
-
-### 6. Field Manipulation Guide
-
-**File:** `then/document-field/field-manipulation-guide.md` (607 lines)
-
-**Purpose:** Update, calculate, and transform document field values
-
-**Coverage:**
-- ✅ Set field to text
-- ✅ Set field to number
-- ✅ Calculation formulas
-- ✅ Date/time operations
-- ✅ Field concatenation
-- ✅ Table column calculations
-- ✅ Regular expressions
-- ✅ Field validation
-- ✅ Conditional updates
-
-**Key Topics:**
-- Simple field assignment
-- Calculation expressions
-- Formula syntax
-- Supported operators
-- Field referencing
-- Table column operations
-- String manipulation
-- Date calculations
-- Number formatting
-- Regex pattern matching
-
-**Calculation Examples:**
-- Variance calculation: `|(Invoice-PO)|/PO×100`
-- Tax calculations
-- Currency conversions
-- Date arithmetic
-- String operations
-- Conditional values
-
-**Field Types Supported:**
-- Text fields
-- Number fields
-- Date fields
-- Dropdown fields
-- Table columns
-- Currency fields
-- Percentage fields
-
-**Related Cards:**
-- Task Assignment (for task data setup)
-- PO Matching (for variance calculation)
-- Condition Cards (for field evaluation)
-- Call API/HTTPS Request (for storing API responses)
-
-**Deployment Status:** ✅ All 8 languages
+**Statut de déploiement :** ✅ Les 8 langues
 
 ---
 
-### 7. Document Assignment Guide
+### 6. Guide de manipulation des champs
 
-**File:** `then/assignee/assignment-user-guide.md` (688 lines)
+**Fichier :** `then/document-field/field-manipulation-guide.md` (607 lignes)
 
-**Purpose:** Assign documents to users and groups with routing logic
+**Objectif :** Mettre à jour, calculer et transformer les valeurs des champs de document
 
-**Coverage:**
-- ✅ User assignment
-- ✅ Group assignment
-- ✅ Sub-organization routing
-- ✅ Conditional assignment
-- ✅ Fallback options
-- ✅ Sequential assignment
-- ✅ Assignment rules
-- ✅ Permission management
-- ✅ Workflow integration
+**Couverture :**
+- ✅ Définir un champ en texte
+- ✅ Définir un champ en nombre
+- ✅ Formules de calcul
+- ✅ Opérations de date/heure
+- ✅ Concaténation de champs
+- ✅ Calculs de colonnes de tableau
+- ✅ Expressions régulières
+- ✅ Validation de champ
+- ✅ Mises à jour conditionnelles
 
-**Key Topics:**
-- Direct user assignment
-- Group-based assignment
-- Procurement group routing
-- Field-based assignment lookup
-- Sequential assignment patterns
-- Fallback user specification
-- Assignment conditions
-- Permission levels
-- Document routing
+**Sujets clés :**
+- Affectation simple de champ
+- Expressions de calcul
+- Syntaxe des formules
+- Opérateurs pris en charge
+- Référencement de champ
+- Opérations sur les colonnes de tableau
+- Manipulation de chaînes
+- Calculs de date
+- Formatage des nombres
+- Correspondance de motifs regex
 
-**Assignment Cards Covered:**
+**Exemples de calcul :**
+- Calcul d'écart : `|(Invoice-PO)|/PO×100`
+- Calculs de taxes
+- Conversions de devises
+- Arithmétique des dates
+- Opérations sur les chaînes
+- Valeurs conditionnelles
+
+**Types de champs pris en charge :**
+- Champs texte
+- Champs numériques
+- Champs de date
+- Champs de liste déroulante
+- Colonnes de tableau
+- Champs de devise
+- Champs de pourcentage
+
+**Cartes associées :**
+- Assignation de tâches (pour la configuration des données de tâche)
+- Rapprochement de PO (pour le calcul des écarts)
+- Cartes de condition (pour l'évaluation des champs)
+- Appel d'API/Requête HTTPS (pour le stockage des réponses d'API)
+
+**Statut de déploiement :** ✅ Les 8 langues
+
+---
+
+### 7. Guide d'assignation de documents
+
+**Fichier :** `then/assignee/assignment-user-guide.md` (688 lignes)
+
+**Objectif :** Assigner des documents à des utilisateurs et à des groupes avec une logique de routage
+
+**Couverture :**
+- ✅ Assignation à un utilisateur
+- ✅ Assignation à un groupe
+- ✅ Routage vers une sous-organisation
+- ✅ Assignation conditionnelle
+- ✅ Options de repli
+- ✅ Assignation séquentielle
+- ✅ Règles d'assignation
+- ✅ Gestion des permissions
+- ✅ Intégration aux flux de travail
+
+**Sujets clés :**
+- Assignation directe à un utilisateur
+- Assignation basée sur un groupe
+- Routage vers un groupe d'approvisionnement
+- Recherche d'assignation basée sur un champ
+- Modèles d'assignation séquentielle
+- Spécification de l'utilisateur de repli
+- Conditions d'assignation
+- Niveaux de permission
+- Routage des documents
+
+**Cartes d'assignation couvertes :**
 1. DOC_USER_ASSIGN
 2. DOC_GROUP_ASSIGN
 3. OC_ASSIGN_DOC
-4. Assignment with fallback options
-5. Sub-organization routing
-6. And more...
+4. Assignation avec options de repli
+5. Routage vers une sous-organisation
+6. Et plus...
 
-**Routing Patterns:**
-- Simple user assignment
-- Group distribution
-- Conditional routing
-- Sequential workflows
-- Fallback chains
-- Hierarchy-based routing
+**Modèles de routage :**
+- Assignation simple à un utilisateur
+- Distribution à un groupe
+- Routage conditionnel
+- Flux de travail séquentiels
+- Chaînes de repli
+- Routage basé sur la hiérarchie
 
-**Related Cards:**
-- Task Assignment (for task creation)
-- Condition Cards (for conditional routing)
-- Field Manipulation (for data preparation)
-- Send Email (for assignment notifications)
+**Cartes associées :**
+- Assignation de tâches (pour la création de tâches)
+- Cartes de condition (pour le routage conditionnel)
+- Manipulation des champs (pour la préparation des données)
+- Envoi d'e-mails (pour les notifications d'assignation)
 
-**Deployment Status:** ✅ All 8 languages
+**Statut de déploiement :** ✅ Les 8 langues
 
 ---
 
-### 8. PO Matching Complete Guide
+### 8. Guide complet du rapprochement de PO
 
-**File:** `and/compare-with-purchase-order/po-matching-complete-guide.md` (661 lines)
+**Fichier :** `and/compare-with-purchase-order/po-matching-complete-guide.md` (661 lignes)
 
-**Purpose:** Match invoices with purchase orders and calculate variances
+**Objectif :** Rapprocher les factures des commandes d'achat et calculer les écarts
 
-**Coverage:**
-- ✅ Matching process overview
-- ✅ Item-level matching
-- ✅ Quantity comparison
-- ✅ Unit price validation
-- ✅ Total amount verification
-- ✅ Variance calculation
-- ✅ Tolerance thresholds
-- ✅ PO matching cards (10+)
-- ✅ Error scenarios
-- ✅ Best practices
+**Couverture :**
+- ✅ Aperçu du processus de rapprochement
+- ✅ Rapprochement au niveau des articles
+- ✅ Comparaison des quantités
+- ✅ Validation du prix unitaire
+- ✅ Vérification du montant total
+- ✅ Calcul des écarts
+- ✅ Seuils de tolérance
+- ✅ Cartes de rapprochement de PO (10+)
+- ✅ Scénarios d'erreur
+- ✅ Bonnes pratiques
 
-**Key Topics:**
-- Three-way matching logic
-- Quantity tolerance handling
-- Price variance calculation
-- Date validation (delivery dates)
-- Item reconciliation
-- Duplicate detection
-- Partial shipment handling
-- Overbilling prevention
+**Sujets clés :**
+- Logique de rapprochement à trois voies
+- Gestion de la tolérance de quantité
+- Calcul des écarts de prix
+- Validation des dates (dates de livraison)
+- Réconciliation des articles
+- Détection des doublons
+- Gestion des expéditions partielles
+- Prévention de la surfacturation
 
-**Variance Formulas:**
-- Quantity Variance: `|Document - PO| / PO × 100%`
-- Price Variance: `|(Invoice - PO)| / PO × 100%`
-- Amount Variance: `|(Invoice Total - PO Total)| / PO Total × 100%`
+**Formules d'écart :**
+- Écart de quantité : `|Document - PO| / PO × 100%`
+- Écart de prix : `|(Invoice - PO)| / PO × 100%`
+- Écart de montant : `|(Invoice Total - PO Total)| / PO Total × 100%`
 
-**PO Matching Cards Documented:**
+**Cartes de rapprochement de PO documentées :**
 1. CONDITION_OC_TO_PO_ITEMS
 2. CONDITION_DOC_TO_PO_UNIT_PRICE
 3. CONDITION_DATES_OPERATOR_OC_LINE_ITEMS
 4. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
 5. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE
-6. And 5+ more comparison cards
+6. Et 5+ cartes de comparaison supplémentaires
 
-**Tolerance Configuration:**
-- % based tolerance
-- Fixed amount tolerance
-- Combined tolerance rules
-- Custom acceptance criteria
+**Configuration de la tolérance :**
+- Tolérance basée sur un pourcentage
+- Tolérance de montant fixe
+- Règles de tolérance combinées
+- Critères d'acceptation personnalisés
 
-**Real-World Scenarios:**
-- Small quantity overages accepted
-- Minor price differences allowed
-- Late delivery handling
-- Partial receipt processing
-- Return processing
+**Scénarios concrets :**
+- Petits excédents de quantité acceptés
+- Différences de prix mineures autorisées
+- Gestion des livraisons tardives
+- Traitement des réceptions partielles
+- Traitement des retours
 
-**Related Cards:**
-- Condition Cards (for PO validation logic)
-- Field Manipulation (for variance storage)
-- Task Assignment (for PO exception escalation)
-- Send Email (for discrepancy alerts)
+**Cartes associées :**
+- Cartes de condition (pour la logique de validation de PO)
+- Manipulation des champs (pour le stockage des écarts)
+- Assignation de tâches (pour l'escalade des exceptions de PO)
+- Envoi d'e-mails (pour les alertes de divergence)
 
-**Deployment Status:** ✅ All 8 languages
-
----
-
-### 9. Condition Cards Complete Guide
-
-**File:** `and/condition-cards-complete-guide.md` (681 lines)
-
-**Purpose:** Comprehensive reference for 31+ condition cards and decision logic
-
-**Coverage:**
-- ✅ 31+ condition card reference
-- ✅ Decision logic flow
-- ✅ Conditional branching
-- ✅ Boolean operators
-- ✅ Field comparisons
-- ✅ Table conditions
-- ✅ Date/time conditions
-- ✅ Document conditions
-- ✅ PO comparison conditions
-- ✅ Status conditions
-
-**Condition Categories:**
-
-**Document Conditions:**
-- Document type checking
-- Document status
-- Document operator verification
-- Sub-organization conditions
-
-**Field Conditions:**
-- Text field matching
-- Number comparisons
-- Field presence checking
-- Country/region conditions
-- Date comparisons
-- Checkbox states
-
-**Table Conditions:**
-- Item presence in tables
-- Value matching in tables
-- Row count conditions
-- Cell value comparisons
-
-**PO Comparison Conditions:**
-- Quantity matching
-- Unit price comparison
-- Delivery date validation
-- Item reconciliation
-- Tolerance-based matching
-
-**Logical Operators:**
-- AND (all conditions must match)
-- OR (any condition matches)
-- NOT (negate condition)
-- Complex boolean logic
-
-**Assignment/Status Conditions:**
-- User assignment checks
-- Group assignment verification
-- Status condition verification
-
-**Date/Time Conditions:**
-- Date range checking
-- Today's date conditions
-- Scheduled execution
-
-**Decision Logic Patterns:**
-- Simple if/then conditions
-- Multi-branch conditions
-- Nested conditions
-- Fall-through logic
-
-**31+ Cards Documented:**
-All condition card types with:
-- Purpose and use case
-- Parameter configuration
-- Real-world examples
-- Integration with actions
-
-**Related Cards:**
-- All action cards (triggered by conditions)
-- All assignment cards (routed by conditions)
-- Field Manipulation (data prep for conditions)
-- PO Matching (condition-based matching)
-
-**Deployment Status:** ✅ All 8 languages
+**Statut de déploiement :** ✅ Les 8 langues
 
 ---
 
-## Documentation Statistics
+### 9. Guide complet des cartes de condition
 
-### Overall Metrics
+**Fichier :** `and/condition-cards-complete-guide.md` (681 lignes)
 
-| Metric | Value |
+**Objectif :** Référence complète pour plus de 31 cartes de condition et la logique de décision
+
+**Couverture :**
+- ✅ Référence de plus de 31 cartes de condition
+- ✅ Flux de logique de décision
+- ✅ Branchement conditionnel
+- ✅ Opérateurs booléens
+- ✅ Comparaisons de champs
+- ✅ Conditions de tableau
+- ✅ Conditions de date/heure
+- ✅ Conditions de document
+- ✅ Conditions de comparaison de PO
+- ✅ Conditions de statut
+
+**Catégories de conditions :**
+
+**Conditions de document :**
+- Vérification du type de document
+- Statut du document
+- Vérification de l'opérateur de document
+- Conditions de sous-organisation
+
+**Conditions de champ :**
+- Correspondance de champ texte
+- Comparaisons numériques
+- Vérification de la présence d'un champ
+- Conditions de pays/région
+- Comparaisons de dates
+- États des cases à cocher
+
+**Conditions de tableau :**
+- Présence d'articles dans les tableaux
+- Correspondance de valeurs dans les tableaux
+- Conditions de nombre de lignes
+- Comparaisons de valeurs de cellule
+
+**Conditions de comparaison de PO :**
+- Correspondance des quantités
+- Comparaison du prix unitaire
+- Validation de la date de livraison
+- Réconciliation des articles
+- Rapprochement basé sur la tolérance
+
+**Opérateurs logiques :**
+- AND (toutes les conditions doivent correspondre)
+- OR (n'importe quelle condition correspond)
+- NOT (nier la condition)
+- Logique booléenne complexe
+
+**Conditions d'assignation/de statut :**
+- Vérifications d'assignation d'utilisateur
+- Vérification d'assignation de groupe
+- Vérification de la condition de statut
+
+**Conditions de date/heure :**
+- Vérification de plage de dates
+- Conditions de date du jour
+- Exécution planifiée
+
+**Modèles de logique de décision :**
+- Conditions simples if/then
+- Conditions à plusieurs branches
+- Conditions imbriquées
+- Logique de repli (fall-through)
+
+**31+ cartes documentées :**
+Tous les types de cartes de condition avec :
+- Objectif et cas d'usage
+- Configuration des paramètres
+- Exemples concrets
+- Intégration avec les actions
+
+**Cartes associées :**
+- Toutes les cartes d'action (déclenchées par les conditions)
+- Toutes les cartes d'assignation (routées par les conditions)
+- Manipulation des champs (préparation des données pour les conditions)
+- Rapprochement de PO (rapprochement basé sur les conditions)
+
+**Statut de déploiement :** ✅ Les 8 langues
+
+---
+
+## Statistiques de la documentation
+
+### Métriques globales
+
+| Métrique | Valeur |
 |--------|-------|
-| **Total Files Created** | 72 (9 guides × 8 languages) |
-| **English Documentation** | 4,642 lines |
-| **Total Documentation Lines** | ~334,224 |
-| **Average Guide Length** | 516 lines |
-| **Cards Covered** | 80+ |
-| **Card Versions Documented** | 90+ |
-| **Code Examples** | 50+ |
-| **Parameter References** | 200+ |
-| **Use Cases** | 80+ |
-| **Formulas/Calculations** | 10+ |
+| **Total des fichiers créés** | 72 (9 guides × 8 langues) |
+| **Documentation en anglais** | 4 642 lignes |
+| **Total des lignes de documentation** | ~334 224 |
+| **Longueur moyenne des guides** | 516 lignes |
+| **Cartes couvertes** | 80+ |
+| **Versions de cartes documentées** | 90+ |
+| **Exemples de code** | 50+ |
+| **Références de paramètres** | 200+ |
+| **Cas d'usage** | 80+ |
+| **Formules/Calculs** | 10+ |
 
-### By Guide
+### Par guide
 
-| Guide | Lines | Cards | Examples |
+| Guide | Lignes | Cartes | Exemples |
 |-------|-------|-------|----------|
-| Call API | 320 | 1 | 6 |
-| HTTPS Request | 302 | 1 | 5 |
-| DocOperator Script | 422 | 1 | 8 |
-| Send Email Groups | 368 | 1 | 7 |
-| Task Assignment | 593 | 12 | 10 |
-| Field Manipulation | 607 | 6 | 12 |
-| Document Assignment | 688 | 6 | 10 |
-| PO Matching | 661 | 10+ | 15 |
-| Condition Cards | 681 | 31+ | 25+ |
+| Appel d'API | 320 | 1 | 6 |
+| Requête HTTPS | 302 | 1 | 5 |
+| Script DocOperator | 422 | 1 | 8 |
+| Envoi d'e-mails aux groupes | 368 | 1 | 7 |
+| Assignation de tâches | 593 | 12 | 10 |
+| Manipulation des champs | 607 | 6 | 12 |
+| Assignation de documents | 688 | 6 | 10 |
+| Rapprochement de PO | 661 | 10+ | 15 |
+| Cartes de condition | 681 | 31+ | 25+ |
 
 ---
 
-## Workflow Linking Analysis
+## Analyse de la liaison des flux de travail
 
-### Cross-Reference Opportunities: 87 Total
+### Opportunités de références croisées : 87 au total
 
-An analysis identified 87 opportunities to link guides together for improved navigation and user understanding.
+Une analyse a identifié 87 opportunités de lier les guides entre eux pour améliorer la navigation et la compréhension des utilisateurs.
 
-### Linking Categories
+### Catégories de liaison
 
-#### 1. Condition Card References (15 links)
-**Why Important:** Conditions control workflow logic
+#### 1. Références aux cartes de condition (15 liens)
+**Pourquoi c'est important :** Les conditions contrôlent la logique des flux de travail
 
-**Examples:**
-- Call API Guide → Condition Cards (for response validation)
-- Task Assignment → Condition Cards (for routing logic)
-- PO Matching → Condition Cards (for result evaluation)
+**Exemples :**
+- Guide d'appel d'API → Cartes de condition (pour la validation des réponses)
+- Assignation de tâches → Cartes de condition (pour la logique de routage)
+- Rapprochement de PO → Cartes de condition (pour l'évaluation des résultats)
 
-**Impact:** Users see how conditions filter actions
+**Impact :** Les utilisateurs voient comment les conditions filtrent les actions
 
-#### 2. Data Flow Links (12 links)
-**Why Important:** Show how data moves through cards
+#### 2. Liens de flux de données (12 liens)
+**Pourquoi c'est important :** Montrer comment les données circulent à travers les cartes
 
-**Pattern:**
+**Modèle :**
 ```
 API/HTTPS Request
     ↓
@@ -553,212 +553,212 @@ Conditions (evaluate data)
 Task/Email/Assignment (take action)
 ```
 
-**Benefit:** Clear understanding of data flow
+**Avantage :** Compréhension claire du flux de données
 
-#### 3. Action Card Comparisons (8 links)
-**Why Important:** Help users choose correct card
+#### 3. Comparaisons de cartes d'action (8 liens)
+**Pourquoi c'est important :** Aider les utilisateurs à choisir la bonne carte
 
-**Examples:**
-- Call API vs HTTPS Request vs DocOperator Script
-- Task Creation vs Document Assignment
-- Email vs Task for notifications
+**Exemples :**
+- Appel d'API vs Requête HTTPS vs Script DocOperator
+- Création de tâche vs Assignation de document
+- E-mail vs Tâche pour les notifications
 
-**Benefit:** Users make informed decisions
+**Avantage :** Les utilisateurs prennent des décisions éclairées
 
-#### 4. Error Handling Patterns (9 links)
-**Why Important:** Show graceful failure scenarios
+#### 4. Modèles de gestion des erreurs (9 liens)
+**Pourquoi c'est important :** Montrer les scénarios d'échec gracieux
 
-**Patterns:**
-- API failures → Email alert → Manual task
-- Script timeouts → Escalation
-- Matching errors → Human review
+**Modèles :**
+- Échecs d'API → Alerte e-mail → Tâche manuelle
+- Délais d'expiration de script → Escalade
+- Erreurs de rapprochement → Révision humaine
 
-**Benefit:** Anticipate and handle failures
+**Avantage :** Anticiper et gérer les échecs
 
-#### 5. Workflow Integration Patterns (8 links)
-**Why Important:** Show real-world scenarios
+#### 5. Modèles d'intégration de flux de travail (8 liens)
+**Pourquoi c'est important :** Montrer des scénarios concrets
 
-**Examples:**
-- Invoice processing: API → Fields → Conditions → PO Match → Route
-- Approval flow: Conditions → Assignment → Email → Task
-- Integration flow: API → Store → Validate → Action
+**Exemples :**
+- Traitement des factures : API → Champs → Conditions → Rapprochement de PO → Routage
+- Flux d'approbation : Conditions → Assignation → E-mail → Tâche
+- Flux d'intégration : API → Stockage → Validation → Action
 
-**Benefit:** Users understand complete flows
+**Avantage :** Les utilisateurs comprennent les flux complets
 
-#### 6. Enhancement Suggestions (35+ links)
-**Why Important:** Improve navigation and completeness
+#### 6. Suggestions d'amélioration (35+ liens)
+**Pourquoi c'est important :** Améliorer la navigation et l'exhaustivité
 
-**Examples:**
-- Link variations of similar cards
-- Cross-reference related scenarios
-- Connect to standard workflows
+**Exemples :**
+- Lier les variantes de cartes similaires
+- Référencer les scénarios associés
+- Relier aux flux de travail standard
 
-**Benefit:** Better discoverability
-
----
-
-## Implementation Plan
-
-### Phase 1: High-Impact Links (45 minutes)
-**Focus:** Navigation and core flows
-
-- Condition card references in all guides
-- API response handling in field manipulation
-- PO matching condition validation
-- Task creation routing logic
-- Document assignment conditions
-
-**Expected Impact:** Immediate improvement to user experience
-
-### Phase 2: Workflow Pattern Links (60 minutes)
-**Focus:** Complete workflow scenarios
-
-- API → Field → Condition → Action flows
-- Invoice processing workflows
-- Assignment and routing patterns
-- Error handling scenarios
-- Integration patterns
-
-**Expected Impact:** Improved workflow understanding
-
-### Phase 3: Enhancement Links (30 minutes)
-**Focus:** Polish and completeness
-
-- Comparison tables with links
-- Related card sections
-- Best practice patterns
-- Navigation optimization
-
-**Expected Impact:** Enhanced usability
-
-**Total Time Estimate:** 2-3 hours for complete implementation
+**Avantage :** Meilleure découvrabilité
 
 ---
 
-## Language Coverage
+## Plan de mise en œuvre
 
-All 9 guides available in 8 languages:
+### Phase 1 : Liens à fort impact (45 minutes)
+**Objectif :** Navigation et flux principaux
 
-| Language | Branch | Status | Files |
+- Références aux cartes de condition dans tous les guides
+- Gestion des réponses d'API dans la manipulation des champs
+- Validation des conditions de rapprochement de PO
+- Logique de routage de la création de tâches
+- Conditions d'assignation de documents
+
+**Impact attendu :** Amélioration immédiate de l'expérience utilisateur
+
+### Phase 2 : Liens de modèles de flux de travail (60 minutes)
+**Objectif :** Scénarios complets de flux de travail
+
+- Flux API → Champ → Condition → Action
+- Flux de travail de traitement des factures
+- Modèles d'assignation et de routage
+- Scénarios de gestion des erreurs
+- Modèles d'intégration
+
+**Impact attendu :** Compréhension améliorée des flux de travail
+
+### Phase 3 : Liens d'amélioration (30 minutes)
+**Objectif :** Peaufinage et exhaustivité
+
+- Tableaux de comparaison avec liens
+- Sections de cartes associées
+- Modèles de bonnes pratiques
+- Optimisation de la navigation
+
+**Impact attendu :** Convivialité améliorée
+
+**Estimation du temps total :** 2-3 heures pour une mise en œuvre complète
+
+---
+
+## Couverture linguistique
+
+Les 9 guides sont disponibles en 8 langues :
+
+| Langue | Branche | Statut | Fichiers |
 |----------|--------|--------|-------|
-| 🇺🇸 English | main | ✅ Deployed | 9 |
-| 🇩🇪 Deutsch | de | ✅ Deployed | 9 |
-| 🇪🇸 Español | es | ✅ Deployed | 9 |
-| 🇫🇷 Français | fr | ✅ Deployed | 9 |
-| 🇮🇹 Italiano | it | ✅ Deployed | 9 |
-| 🇵🇱 Polski | pl | ✅ Deployed | 9 |
-| 🇵🇹 Português | pt | ✅ Deployed | 9 |
-| 🇳🇱 Nederlands | nl | ✅ Deployed | 9 |
+| 🇺🇸 Anglais | main | ✅ Déployé | 9 |
+| 🇩🇪 Deutsch | de | ✅ Déployé | 9 |
+| 🇪🇸 Español | es | ✅ Déployé | 9 |
+| 🇫🇷 Français | fr | ✅ Déployé | 9 |
+| 🇮🇹 Italiano | it | ✅ Déployé | 9 |
+| 🇵🇱 Polski | pl | ✅ Déployé | 9 |
+| 🇵🇹 Português | pt | ✅ Déployé | 9 |
+| 🇳🇱 Nederlands | nl | ✅ Déployé | 9 |
 
-**Translation Quality:** Professional business language, 100% technical accuracy maintained
-
----
-
-## Quality Assurance
-
-### Verification Completed
-- ✅ All 9 guides present on all 8 branches
-- ✅ Consistent directory structure
-- ✅ Card names preserved exactly
-- ✅ Formulas unchanged
-- ✅ Code blocks intact
-- ✅ Examples complete
-- ✅ Parameter references accurate
-- ✅ Cross-references identified
-
-### Technical Accuracy
-- ✅ Card names: ACTION_SET_FIELD_TO_TEXT, etc.
-- ✅ Formulas: Variance % = |(Invoice-PO)|/PO×100
-- ✅ All code examples: JSON, regex, calculations
-- ✅ Parameter UUIDs: __%uuid%__ format preserved
-- ✅ Translation keys: trnsl_% pattern maintained
+**Qualité de la traduction :** Langage professionnel des affaires, précision technique de 100 % maintenue
 
 ---
 
-## Access & Navigation
+## Assurance qualité
 
-### In GitBook
-Path: `/administration-and-setup/workflow/`
+### Vérification effectuée
+- ✅ Les 9 guides présents sur les 8 branches
+- ✅ Structure de répertoires cohérente
+- ✅ Noms des cartes préservés exactement
+- ✅ Formules inchangées
+- ✅ Blocs de code intacts
+- ✅ Exemples complets
+- ✅ Références de paramètres exactes
+- ✅ Références croisées identifiées
 
-**Action Cards:**
+### Précision technique
+- ✅ Noms des cartes : ACTION_SET_FIELD_TO_TEXT, etc.
+- ✅ Formules : Variance % = |(Invoice-PO)|/PO×100
+- ✅ Tous les exemples de code : JSON, regex, calculs
+- ✅ UUID des paramètres : format __%uuid%__ préservé
+- ✅ Clés de traduction : modèle trnsl_% maintenu
+
+---
+
+## Accès et navigation
+
+### Dans GitBook
+Chemin : `/administration-and-setup/workflow/`
+
+**Cartes d'action :**
 - then/action/call-api-guide
 - then/action/https-request-guide
 - then/action/docoperator-script-guide
 - then/action/send-email-groups-guide
 
-**Task & Assignment:**
+**Tâches et assignation :**
 - then/task/task-assignment-guide
 - then/assignee/assignment-user-guide
 - then/document-field/field-manipulation-guide
 
-**Validation & Comparison:**
+**Validation et comparaison :**
 - and/compare-with-purchase-order/po-matching-complete-guide
 - and/condition-cards-complete-guide
 
-### In GitHub
-Repository: github.com/Fellow-Consulting-AG/docbits
-Branches: main, de, es, fr, it, pl, pt, nl
-Path: readme/administration-and-setup/workflow/
+### Dans GitHub
+Dépôt : github.com/Fellow-Consulting-AG/docbits
+Branches : main, de, es, fr, it, pl, pt, nl
+Chemin : readme/administration-and-setup/workflow/
 
 ---
 
-## Next Steps
+## Prochaines étapes
 
-### Immediate (0-2 weeks)
-1. Gather user feedback on new guides
-2. Identify additional documentation needs
-3. Plan implementation of 87 cross-references
+### Immédiat (0-2 semaines)
+1. Recueillir les retours des utilisateurs sur les nouveaux guides
+2. Identifier les besoins de documentation supplémentaires
+3. Planifier la mise en œuvre des 87 références croisées
 
-### Short-term (2-4 weeks)
-1. Implement high-impact linking (45 min)
-2. Add screenshots and diagrams
-3. Create quick reference cards
+### Court terme (2-4 semaines)
+1. Mettre en œuvre la liaison à fort impact (45 min)
+2. Ajouter des captures d'écran et des diagrammes
+3. Créer des cartes de référence rapide
 
-### Medium-term (1-2 months)
-1. Complete workflow pattern linking (60 min)
-2. Create video tutorials
-3. Update standard workflows
+### Moyen terme (1-2 mois)
+1. Compléter la liaison des modèles de flux de travail (60 min)
+2. Créer des tutoriels vidéo
+3. Mettre à jour les flux de travail standard
 
-### Long-term (3+ months)
-1. Advanced workflow templates
-2. Best practices library
-3. Integration patterns guide
-4. Performance optimization guide
-
----
-
-## Related Documentation
-
-### Complete References
-- 📖 [Card Versioning Reference](../../docs/card_version.md)
-- 🔗 [Workflow Linking Map](../../WORKFLOW_LINKING_MAP.md)
-- 📋 [Workflow Linking Summary](../../WORKFLOW_LINKING_SUMMARY.md)
-
-### Guide Index
-- 🎯 [Workflow Guides](../)
-- 📚 [All Guides by Category](../then/ and ../and/)
+### Long terme (3+ mois)
+1. Modèles de flux de travail avancés
+2. Bibliothèque de bonnes pratiques
+3. Guide des modèles d'intégration
+4. Guide d'optimisation des performances
 
 ---
 
-## Summary
+## Documentation associée
 
-This documentation enhancement provides:
-- ✅ Comprehensive guides for 80+ workflow cards
-- ✅ Real-world examples and use cases
-- ✅ Step-by-step setup instructions
-- ✅ Parameter reference tables
-- ✅ Troubleshooting and best practices
-- ✅ Multi-language support (8 languages)
-- ✅ 87 identified linking opportunities
-- ✅ 100% technical accuracy
+### Références complètes
+- 📖 [Référence du versionnage des cartes](../../docs/card_version.md)
+- 🔗 [Carte de liaison des flux de travail](../../WORKFLOW_LINKING_MAP.md)
+- 📋 [Résumé de la liaison des flux de travail](../../WORKFLOW_LINKING_SUMMARY.md)
 
-**Total Effort:** 9 guides, 72 files, 334,224 lines of documentation across 8 languages
-
-**User Impact:** Reduced training time, faster workflow creation, self-service support
+### Index des guides
+- 🎯 [Guides de flux de travail](../)
+- 📚 [Tous les guides par catégorie](../then/ et ../and/)
 
 ---
 
-**Last Updated:** October 23, 2025
-**Repository:** https://github.com/Fellow-Consulting-AG/docbits
-**GitBook:** docs.docbits.com
-**Status:** Complete & Deployed
+## Résumé
+
+Cette amélioration de la documentation fournit :
+- ✅ Des guides complets pour plus de 80 cartes de flux de travail
+- ✅ Des exemples concrets et des cas d'usage
+- ✅ Des instructions de configuration étape par étape
+- ✅ Des tableaux de référence des paramètres
+- ✅ Du dépannage et des bonnes pratiques
+- ✅ Une prise en charge multilingue (8 langues)
+- ✅ 87 opportunités de liaison identifiées
+- ✅ Une précision technique de 100 %
+
+**Effort total :** 9 guides, 72 fichiers, 334 224 lignes de documentation sur 8 langues
+
+**Impact utilisateur :** Temps de formation réduit, création de flux de travail plus rapide, support en libre-service
+
+---
+
+**Dernière mise à jour :** 23 octobre 2025
+**Dépôt :** https://github.com/Fellow-Consulting-AG/docbits
+**GitBook :** docs.docbits.com
+**Statut :** Complet et déployé

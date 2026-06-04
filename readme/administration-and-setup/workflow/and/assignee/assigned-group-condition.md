@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (15) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Purpose:**
+**Objectif :**
 
-This workflow card executes operations based on whether a task or document is assigned to a particular group or set of groups. It utilizes conditional logic to either trigger or prevent specific actions depending on the group assignment, making it ideal for workflows that require group-specific handling.
+Cette carte de workflow exécute des opérations selon qu'une tâche ou un document est assigné à un groupe particulier ou à un ensemble de groupes. Elle utilise une logique conditionnelle pour déclencher ou empêcher des actions spécifiques en fonction de l'attribution de groupe, ce qui la rend idéale pour les workflows nécessitant un traitement propre à un groupe.
 
-**Components of the Card:**
+**Composants de la carte :**
 
 1. **Operator**
-   * **Description:** Defines the logical condition to apply to the group assignment.
-   * **Options:**
-     * **IS:** Triggers the operation if the assigned group of the document or task matches one of the groups in the specified list.
-     * **IS NOT:** Triggers the operation if the assigned group of the document or task does not match any of the groups in the specified list.
+   * **Description :** définit la condition logique à appliquer à l'attribution de groupe.
+   * **Options :**
+     * **IS :** déclenche l'opération si le groupe assigné au document ou à la tâche correspond à l'un des groupes de la liste spécifiée.
+     * **IS NOT :** déclenche l'opération si le groupe assigné au document ou à la tâche ne correspond à aucun des groupes de la liste spécifiée.
 2. **Groups List**
-   * **Description:** A list or selection of groups to compare against the assigned group.
-   * **Detail:** This list can include one or multiple groups, allowing the card to handle both singular and multiple group conditions effectively.
+   * **Description :** une liste ou une sélection de groupes à comparer au groupe assigné.
+   * **Détail :** cette liste peut inclure un ou plusieurs groupes, permettant à la carte de gérer efficacement les conditions à un seul groupe comme à plusieurs groupes.
 
-**Functionality:**
+**Fonctionnalité :**
 
-* **Group Assignment Identification:** Automatically identifies the group or groups assigned to a particular task or document within the system.
-* **Condition Evaluation:**
-  * Using the **IS** operator, the card checks if the assigned group is one of the groups listed in the Groups List.
-  * Using the **IS NOT** operator, the card ensures the assigned group is not part of the groups listed.
-* **Action Execution:**
-  * **True Condition:** If the group assignment meets the condition (either **IS** or **IS NOT**), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition:**  If the condition is not met, the workflow will not continue.
+* **Identification de l'attribution de groupe :** identifie automatiquement le ou les groupes assignés à une tâche ou à un document particulier dans le système.
+* **Évaluation de la condition :**
+  * Avec l'opérateur **IS**, la carte vérifie si le groupe assigné fait partie des groupes répertoriés dans la Groups List.
+  * Avec l'opérateur **IS NOT**, la carte s'assure que le groupe assigné ne fait pas partie des groupes répertoriés.
+* **Exécution de l'action :**
+  * **Condition vraie :** si l'attribution de groupe satisfait la condition (**IS** ou **IS NOT**), les actions pertinentes sont déclenchées, telles que des notifications, le lancement de tâches, des approbations ou d'autres étapes du workflow.
+  * **Condition fausse :** si la condition n'est pas remplie, le workflow ne se poursuit pas.
 
-**User Interactions:**
+**Interactions utilisateur :**
 
-* **Setup and Configuration:**&#x55;sers configure the card by selecting an operator and specifying the relevant groups from the Groups List. Setup should be user-friendly and intuitive to accommodate selections from potentially large group bases.
-* **Monitoring and Reporting:**\
-  The system should provide functionality to monitor and report on the operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications:**\
-  Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in group selection.
+* **Mise en place et configuration :** les utilisateurs configurent la carte en sélectionnant un opérateur et en spécifiant les groupes concernés dans la Groups List. La configuration doit être conviviale et intuitive pour permettre des sélections à partir de bases de groupes potentiellement étendues.
+* **Surveillance et reporting :**\
+  Le système doit offrir la possibilité de surveiller et de rendre compte des opérations déclenchées par cette carte, donnant un aperçu de l'exactitude des attributions et de l'efficacité des processus.
+* **Gestion des erreurs et notifications :**\
+  Les utilisateurs doivent avoir la possibilité de recevoir des alertes ou des notifications en cas de problème d'attribution, comme des tâches non assignées ou des erreurs de sélection de groupe.
 
-**Conclusion:**\
-The "Assigned Group Condition" workflow card is essential for managing document and task workflows that depend on group assignments. By allowing conditions based on whether a task or document is assigned to specific groups, it ensures that workflows are only triggered by appropriate group interactions, improving accountability and task management across teams.
+**Conclusion :**\
+La carte de workflow « Assigned Group Condition » est essentielle pour gérer les workflows de documents et de tâches qui dépendent d'attributions de groupe. En autorisant des conditions basées sur l'attribution ou non d'une tâche ou d'un document à des groupes spécifiques, elle garantit que les workflows ne sont déclenchés que par les interactions de groupe appropriées, améliorant la responsabilité et la gestion des tâches entre les équipes.

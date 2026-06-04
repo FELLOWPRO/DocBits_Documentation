@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (16) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Purpose:**\
-This workflow card executes operations based on whether a task or document is assigned to a particular group. It uses a straightforward condition to trigger or prevent actions based on group assignment.
+**Objectif :**\
+Cette carte de workflow exécute des opérations selon qu'une tâche ou un document est assigné à un groupe particulier. Elle utilise une condition simple pour déclencher ou empêcher des actions en fonction de l'attribution de groupe.
 
-**Components of the Card:**
+**Composants de la carte :**
 
 1. **Operator**
-   * **Description:** Defines the logical condition to apply to the group assignment.
-   * **Options:**
-     * **IS:** Triggers the operation if the assigned group of the document or task matches the specified group.
-     * **IS NOT:** Triggers the operation if the assigned group of the document or task does not match the specified group.
+   * **Description :** définit la condition logique à appliquer à l'attribution de groupe.
+   * **Options :**
+     * **IS :** déclenche l'opération si le groupe assigné au document ou à la tâche correspond au groupe spécifié.
+     * **IS NOT :** déclenche l'opération si le groupe assigné au document ou à la tâche ne correspond pas au groupe spécifié.
 2. **Group**
-   * **Description:** Specifies the group to compare against the assigned group.
-   * **Detail:** This field allows you to select a single group to compare the assignment.
+   * **Description :** spécifie le groupe à comparer au groupe assigné.
+   * **Détail :** ce champ vous permet de sélectionner un seul groupe pour comparer l'attribution.
 
-**Functionality:**
+**Fonctionnalité :**
 
-* **Group Assignment Identification:** Automatically identifies the group assigned to a particular task or document.
-* **Condition Evaluation:**
-  * Using the **IS** operator, the card checks if the assigned group matches the specified group.
-  * Using the **IS NOT** operator, the card ensures the assigned group does not match the specified group.
-* **Action Execution:**
-  * **True Condition:** If the group assignment meets the condition (either **IS** or **IS NOT**), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition:** If the condition is not met, the document or task may pass through different routing, or alternative actions may be specified.
+* **Identification de l'attribution de groupe :** identifie automatiquement le groupe assigné à une tâche ou à un document particulier.
+* **Évaluation de la condition :**
+  * Avec l'opérateur **IS**, la carte vérifie si le groupe assigné correspond au groupe spécifié.
+  * Avec l'opérateur **IS NOT**, la carte s'assure que le groupe assigné ne correspond pas au groupe spécifié.
+* **Exécution de l'action :**
+  * **Condition vraie :** si l'attribution de groupe satisfait la condition (**IS** ou **IS NOT**), les actions pertinentes sont déclenchées, telles que des notifications, le lancement de tâches, des approbations ou d'autres étapes du workflow.
+  * **Condition fausse :** si la condition n'est pas remplie, le document ou la tâche peut suivre un routage différent, ou des actions alternatives peuvent être spécifiées.
 
-**User Interactions:**
+**Interactions utilisateur :**
 
-* **Setup and Configuration:**\
-  Users configure the card by selecting an operator and specifying the relevant group. The setup should be simple and intuitive.
-* **Monitoring and Reporting:**\
-  The system should provide functionality to monitor and report on operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications:**\
-  Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in group selection.
+* **Mise en place et configuration :**\
+  Les utilisateurs configurent la carte en sélectionnant un opérateur et en spécifiant le groupe concerné. La configuration doit être simple et intuitive.
+* **Surveillance et reporting :**\
+  Le système doit offrir la possibilité de surveiller et de rendre compte des opérations déclenchées par cette carte, donnant un aperçu de l'exactitude des attributions et de l'efficacité des processus.
+* **Gestion des erreurs et notifications :**\
+  Les utilisateurs doivent avoir la possibilité de recevoir des alertes ou des notifications en cas de problème d'attribution, comme des tâches non assignées ou des erreurs de sélection de groupe.
 
-**Conclusion:**\
-The "Assigned Group Condition" workflow card is essential for managing document and task workflows based on group assignments. By allowing conditions based on whether a task or document is assigned to a specific group, it ensures that workflows are only triggered by the appropriate group interactions, enhancing task management and workflow efficiency.
+**Conclusion :**\
+La carte de workflow « Assigned Group Condition » est essentielle pour gérer les workflows de documents et de tâches basés sur des attributions de groupe. En autorisant des conditions basées sur l'attribution ou non d'une tâche ou d'un document à un groupe spécifique, elle garantit que les workflows ne sont déclenchés que par les interactions de groupe appropriées, améliorant la gestion des tâches et l'efficacité du workflow.

@@ -2,71 +2,71 @@
 
 <figure><img src="../../../../.gitbook/assets/image (287).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-The **"Create Task or Notification"** workflow card streamlines task management and notifications within workflows. Depending on the version, the card can create tasks, send notifications, and leverage additional functionality such as decision trees for dynamic processing.
+O cartão de fluxo de trabalho **"Create Task or Notification"** simplifica a gestão de tarefas e notificações dentro dos fluxos de trabalho. Consoante a versão, o cartão pode criar tarefas, enviar notificações e aproveitar funcionalidades adicionais, como árvores de decisão, para um processamento dinâmico.
 
-## **Components of the Card**
+## **Componentes do cartão**
 
 1. **Title**
-   * **Description**: Defines the title of the task or notification being created.
-   * **Detail**: The title provides a clear and concise identifier for the task or notification.
+   * **Descrição**: Define o título da tarefa ou notificação que está a ser criada.
+   * **Detalhe**: O título fornece um identificador claro e conciso para a tarefa ou notificação.
 2. **Description**
-   * **Description**: Provides details about the task or notification.
-   * **Detail**: Helps clarify the purpose or context of the task or notification for the assigned user.
+   * **Descrição**: Fornece detalhes sobre a tarefa ou notificação.
+   * **Detalhe**: Ajuda a clarificar o propósito ou o contexto da tarefa ou notificação para o utilizador atribuído.
 3. **Priority**
-   * **Description**: Sets the urgency level for the task.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but not urgent.
-     * **Low**: Can be addressed later.
+   * **Descrição**: Define o nível de urgência da tarefa.
+   * **Opções**:
+     * **High**: Exige atenção imediata.
+     * **Medium**: Importante mas não urgente.
+     * **Low**: Pode ser tratado posteriormente.
 4. **Assigned User**
-   1. **Description**: Specifies the user to whom the task is assigned.
-   2. **Detail**: Users are selected from a dropdown list of available personnel.
+   1. **Descrição**: Especifica o utilizador ao qual a tarefa é atribuída.
+   2. **Detalhe**: Os utilizadores são selecionados a partir de uma lista pendente de pessoal disponível.
 5. **Email Notification**
-   * **Description**: Determines whether the assigned user receives an email notification.
-   * **Options**:
-     * **True**: Sends an email notification to the user.
-     * **False**: No email notification is sent.
+   * **Descrição**: Determina se o utilizador atribuído recebe uma notificação por e-mail.
+   * **Opções**:
+     * **True**: Envia uma notificação por e-mail ao utilizador.
+     * **False**: Não é enviada qualquer notificação por e-mail.
 
-## Additional Components **in Version 3 and Version 4**
+## Componentes adicionais **na Versão 3 e na Versão 4**
 
-1. **Decision Tree (Version 3 Only)**
-   * **Description**: Enables the use of a decision tree for dynamic task creation.
-   * **Options**:
-     * **True**: Activates decision tree processing.
-     * **False**: Disables decision tree processing.
-2. **Task or Notification (Version 4 Only)**
-   * **Description**: Allows selection between creating a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task.
-     * **Notification**: Creates a notification instead of a task.
+1. **Decision Tree (apenas na Versão 3)**
+   * **Descrição**: Permite a utilização de uma árvore de decisão para a criação dinâmica de tarefas.
+   * **Opções**:
+     * **True**: Ativa o processamento da árvore de decisão.
+     * **False**: Desativa o processamento da árvore de decisão.
+2. **Task or Notification (apenas na Versão 4)**
+   * **Descrição**: Permite escolher entre criar uma tarefa ou uma notificação.
+   * **Opções**:
+     * **Task**: Cria uma tarefa.
+     * **Notification**: Cria uma notificação em vez de uma tarefa.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Condition Evaluation**:\
-  This card is triggered only if conditions in the **"Where"** and **"And Sections"** are met.
-* **Task or Notification Creation**:
-  * Versions 2 and 3: A task is created with the specified title, description, priority, and assigned user.
-  * Version 4: Allows creating either a task or a notification.
-* **Dynamic Assignment**:
-  * In Version 3, the decision tree dynamically determines the user to be assigned the task based on workflow parameters.
-* **Email Notification**:\
-  Sends an email to the assigned user if the notification option is enabled.
+* **Avaliação da condição**:\
+  Este cartão só é acionado se as condições nas secções **"Where"** e **"And Sections"** forem cumpridas.
+* **Criação de tarefa ou notificação**:
+  * Versões 2 e 3: É criada uma tarefa com o título, descrição, prioridade e utilizador atribuído especificados.
+  * Versão 4: Permite criar uma tarefa ou uma notificação.
+* **Atribuição dinâmica**:
+  * Na Versão 3, a árvore de decisão determina dinamicamente o utilizador ao qual a tarefa será atribuída com base nos parâmetros do fluxo de trabalho.
+* **Notificação por e-mail**:\
+  Envia um e-mail ao utilizador atribuído se a opção de notificação estiver ativada.
 
-## **Setup and Configuration:**
+## **Configuração:**
 
-1. **Select Version**: Choose the version of the card based on the functionality required:
-   * Version 2: Basic task creation with manual user assignment and email notifications.
-   * Version 3: Includes decision tree functionality for dynamic user assignment.
-   * Version 4: Adds the ability to create a notification instead of a task.
-2. **Enter Task Details**: Specify the title, description, and priority of the task or notification.
-3. **Assign User**:
-   * For Versions 2 and 4, manually select a user from the dropdown list.
-   * For Version 3, enable the decision tree to determine the assigned user dynamically.
-4. **Enable Email Notification**: Specify whether the assigned user should receive an email notification.
-5. (For Version 4) **Choose Task or Notification**: Indicate whether to create a task or notification.
+1. **Selecionar a versão**: Escolha a versão do cartão com base na funcionalidade necessária:
+   * Versão 2: Criação básica de tarefas com atribuição manual de utilizador e notificações por e-mail.
+   * Versão 3: Inclui a funcionalidade de árvore de decisão para a atribuição dinâmica de utilizador.
+   * Versão 4: Acrescenta a capacidade de criar uma notificação em vez de uma tarefa.
+2. **Introduzir os detalhes da tarefa**: Especifique o título, a descrição e a prioridade da tarefa ou notificação.
+3. **Atribuir utilizador**:
+   * Para as Versões 2 e 4, selecione manualmente um utilizador na lista pendente.
+   * Para a Versão 3, ative a árvore de decisão para determinar dinamicamente o utilizador atribuído.
+4. **Ativar a notificação por e-mail**: Especifique se o utilizador atribuído deve receber uma notificação por e-mail.
+5. (Para a Versão 4) **Escolher Task ou Notification**: Indique se pretende criar uma tarefa ou uma notificação.
 
-## **Conclusion:**
+## **Conclusão:**
 
-The **"Create Task or Notification"** workflow card is a versatile tool for managing tasks and notifications. By supporting dynamic user assignment through decision trees and providing options for task or notification creation, it enhances workflow adaptability and collaboration efficiency.
+O cartão de fluxo de trabalho **"Create Task or Notification"** é uma ferramenta versátil para gerir tarefas e notificações. Ao suportar a atribuição dinâmica de utilizadores através de árvores de decisão e ao oferecer opções para a criação de tarefas ou notificações, melhora a adaptabilidade do fluxo de trabalho e a eficiência da colaboração.

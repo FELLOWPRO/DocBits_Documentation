@@ -2,68 +2,68 @@
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-The "**Assign Document and Create Task/Notification Based on Decision Table**" workflow card assigns a document and creates a task or notification with configurable details. The assignee is determined by the return of a decision table, and the card allows for setting priorities and sending email notifications.
+O cartão de fluxo de trabalho "**Assign Document and Create Task/Notification Based on Decision Table**" atribui um documento e cria uma tarefa ou notificação com detalhes configuráveis. O responsável é determinado pelo retorno de uma decision table, e o cartão permite definir prioridades e enviar notificações por e-mail.
 
-## **Components of the Card**
+## **Componentes do cartão**
 
 1. **Assignee Type**
-   * **Description:** Specifies whether the decision table’s return assigns the document and task/notification to a user or group.
-   * **Detail:** A field to configure the assignee type as either "User" or "Group" based on the decision table output.
+   * **Descrição:** Especifica se o retorno da decision table atribui o documento e a tarefa/notificação a um utilizador ou a um grupo.
+   * **Detalhe:** Um campo para configurar o tipo de responsável como "User" ou "Group" com base no resultado da decision table.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the assignee.
-   * **Detail:** A dropdown to select either "Task" or "Notification" based on the workflow needs.
+   * **Descrição:** Especifica o tipo de ação a criar para o responsável.
+   * **Detalhe:** Uma lista pendente para selecionar "Task" ou "Notification" consoante as necessidades do fluxo de trabalho.
 3. **Title**
-   * **Description:** The title of the task or notification.
-   * **Detail:** A field for providing a concise title that identifies the task or notification.
+   * **Descrição:** O título da tarefa ou notificação.
+   * **Detalhe:** Um campo para fornecer um título conciso que identifica a tarefa ou notificação.
 4. **Description**
-   * **Description:** Additional details about the task or notification.
-   * **Detail:** A field for describing the purpose and context of the task or notification.
+   * **Descrição:** Detalhes adicionais sobre a tarefa ou notificação.
+   * **Detalhe:** Um campo para descrever o propósito e o contexto da tarefa ou notificação.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Descrição:** Define o nível de urgência da tarefa ou notificação.
+   * **Opções:**
+     * **High:** Exige atenção imediata.
+     * **Medium:** Importante mas não urgente.
+     * **Low:** Pode ser tratado posteriormente.
 6. **Assignee Type**
-   * **Description:** This field determines the type of assignee (User or Group) to whom the document and task/notification are assigned.
-   * **Detail:** A dropdown menu to select whether the task/notification is assigned to a user or a group based on the decision table's output.
+   * **Descrição:** Este campo determina o tipo de responsável (User ou Group) ao qual o documento e a tarefa/notificação são atribuídos.
+   * **Detalhe:** Um menu pendente para selecionar se a tarefa/notificação é atribuída a um utilizador ou a um grupo com base no resultado da decision table.
 7. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the assignee.
-   * **Options:**
-     * **True:** Sends an email notification.
-     * **False:** No email notification is sent.
+   * **Descrição:** Configura se é enviada uma notificação por e-mail ao responsável.
+   * **Opções:**
+     * **True:** Envia uma notificação por e-mail.
+     * **False:** Não é enviada qualquer notificação por e-mail.
 8. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where lower numbers indicate higher priority.
+   * **Descrição:** Define a prioridade numérica para a atribuição do documento.
+   * **Detalhe:** Um campo para introduzir um valor numérico, em que números mais baixos indicam uma prioridade mais elevada.
 
-## **Functionality**
+## **Funcionalidade**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the workflow conditions are satisfied.
-* **Decision Table Evaluation:**\
-  The decision table determines whether the document and task/notification are assigned to a user or group.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the decision table's result. A task or notification is created with the specified title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email notification is sent to the assignee.
+* **Avaliação da condição:**\
+  O cartão só executa as suas ações se as condições do fluxo de trabalho forem cumpridas.
+* **Avaliação da decision table:**\
+  A decision table determina se o documento e a tarefa/notificação são atribuídos a um utilizador ou a um grupo.
+* **Atribuição do documento e criação de tarefa/notificação:**\
+  O documento é atribuído ao resultado da decision table. É criada uma tarefa ou notificação com o título, descrição e nível de prioridade especificados.
+* **Notificação por e-mail:**\
+  Se "Send Mail" estiver definido como True, é enviada uma notificação por e-mail ao responsável.
 
-## **Setup and Configuration**
+## **Configuração**
 
-1. **Define Assignee Type:**
-   * Configure the Assignee Type field to either "User" or "Group" based on the decision table's output.
-2. **Select Task/Notification:**
-   * Choose "Task" or "Notification" from the Task/Notification dropdown.
-3. **Set Task/Notification Details:**
-   * Enter the Title and Description for the task or notification.
-   * Select the Priority (High, Medium, or Low) from the dropdown.
-4. **Enable Email Notification:**
-   * Set the Send Mail option to True or False, depending on whether an email notification should be sent.
-5. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment priority, where lower numbers are processed first.
-6. Save the card configuration and activate the workflow.
+1. **Definir o Assignee Type:**
+   * Configure o campo Assignee Type como "User" ou "Group" com base no resultado da decision table.
+2. **Selecionar Task/Notification:**
+   * Escolha "Task" ou "Notification" na lista pendente Task/Notification.
+3. **Definir os detalhes da tarefa/notificação:**
+   * Introduza o Title e a Description da tarefa ou notificação.
+   * Selecione a Priority (High, Medium ou Low) na lista pendente.
+4. **Ativar a notificação por e-mail:**
+   * Defina a opção Send Mail como True ou False, consoante deva ser enviada uma notificação por e-mail.
+5. **Definir a prioridade numérica:**
+   * Introduza um valor numérico no campo Value para determinar a prioridade da atribuição, em que os números mais baixos são processados em primeiro lugar.
+6. Guarde a configuração do cartão e ative o fluxo de trabalho.
 
-## **Conclusion**
+## **Conclusão**
 
-The "Assign Document and Create Task/Notification Based on Decision Table" workflow card ensures tasks or notifications are dynamically assigned to the appropriate user or group based on decision table results. This card facilitates efficient task delegation, customizable priorities, and optional email notifications to enhance workflow responsiveness.
+O cartão de fluxo de trabalho "Assign Document and Create Task/Notification Based on Decision Table" assegura que as tarefas ou notificações são atribuídas dinamicamente ao utilizador ou grupo adequado com base nos resultados da decision table. Este cartão facilita uma delegação de tarefas eficiente, prioridades personalizáveis e notificações por e-mail opcionais para melhorar a capacidade de resposta do fluxo de trabalho.

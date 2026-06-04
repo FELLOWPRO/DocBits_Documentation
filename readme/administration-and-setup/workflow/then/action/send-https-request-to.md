@@ -2,52 +2,52 @@
 
 <figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_1.png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-The **"Send HTTPS Request"** workflow card enables users to send HTTPS requests to a specified URL with customizable headers, parameters, and data payload. This card is ideal for integrating external APIs or web services directly into the workflow.
+Kartica radnog toka **"Send HTTPS Request"** omogućava korisnicima da šalju HTTPS zahteve navedenom URL-u sa prilagodljivim zaglavljima, parametrima i sadržajem podataka. Ova kartica je idealna za integraciju eksternih API-ja ili veb servisa direktno u radni tok.
 
-## Components of the Card:
+## Komponente kartice:
 
 1. **URL**
-   * **Description:** Specifies the endpoint where the HTTPS request will be sent.
-   * **Detail:** Enter the full URL of the API or web service to connect with.
+   * **Opis:** Navodi krajnju tačku na koju će se poslati HTTPS zahtev.
+   * **Detalj:** Unesite potpuni URL API-ja ili veb servisa za povezivanje.
 2. **Headers**
-   * **Description:** Defines the headers to be included in the HTTPS request.
-   * **Detail:** Provide **key-value pairs** in a **valid JSON format** to specify headers such as authentication tokens or content types. Example: {"Authorization": "Bearer example\_value"}
+   * **Opis:** Definiše zaglavlja koja se uključuju u HTTPS zahtev.
+   * **Detalj:** Navedite **parove ključ-vrednost** u **validnom JSON formatu** da biste naveli zaglavlja kao što su tokeni za autentifikaciju ili tipovi sadržaja. Primer: {"Authorization": "Bearer example\_value"}
 3. **Method**
-   * **Description:** Specifies the HTTP method to be used for the request.
-   * **Options:**
-     * **GET:** Retrieves data from the endpoint.
-     * **POST:** Sends data to the endpoint to create or update resources.
-     * **PUT:** Updates existing resources at the endpoint.
-     * **DELETE:** Removes resources from the endpoint.
+   * **Opis:** Navodi HTTP metodu koja se koristi za zahtev.
+   * **Opcije:**
+     * **GET:** Preuzima podatke sa krajnje tačke.
+     * **POST:** Šalje podatke krajnjoj tački radi kreiranja ili ažuriranja resursa.
+     * **PUT:** Ažurira postojeće resurse na krajnjoj tački.
+     * **DELETE:** Uklanja resurse sa krajnje tačke.
 4. **Parameters**
-   * **Description:** Key-value pairs to be included in the URL as query parameters.
-   * **Detail:** Use this to send filters or additional data required by the endpoint a valid JSON formant. See example for Headers.
+   * **Opis:** Parovi ključ-vrednost koji se uključuju u URL kao parametri upita.
+   * **Detalj:** Koristite ovo za slanje filtera ili dodatnih podataka koje zahteva krajnja tačka u validnom JSON formatu. Pogledajte primer za Headers.
 5. **Data**
-   * **Description:** The body of the HTTPS request.
-   * **Detail:** Provide the payload in a valid JSON formant. See example for Headers.
+   * **Opis:** Telo HTTPS zahteva.
+   * **Detalj:** Navedite sadržaj u validnom JSON formatu. Pogledajte primer za Headers.
 
-## Functionality:
+## Funkcionalnost:
 
-* **Condition Evaluation:** The card only sends the HTTPS request if the **"Where"** and **"And Sections"** evaluate as true.&#x20;
-  * If either condition is false, the request is not sent.
-* **Request Execution:**
-  * When the conditions are met, the system sends the HTTPS request with the specified configurations.
+* **Procena uslova:** Kartica šalje HTTPS zahtev samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.&#x20;
+  * Ako je bilo koji uslov netačan, zahtev se ne šalje.
+* **Izvršavanje zahteva:**
+  * Kada su uslovi ispunjeni, sistem šalje HTTPS zahtev sa navedenim konfiguracijama.
 
-## Setup and Configuration:
+## Podešavanje i konfiguracija:
 
-1. **Define URL:** Enter the endpoint where the HTTPS request should be sent.
-2. **Set Headers:** Provide the required headers as key-value pairs.
-3. **Select HTTP Method:** Choose the appropriate method (**GET**, **POST**, **PUT**, or **DELETE**) based on the action to perform.
-4. **Add Parameters:** Specify any query parameters required by the endpoint.
-5. **Provide Data Payload:** Enter the request body in the required format (e.g., JSON) if needed.
-6. **Configure Conditions:** Define the **"Where"** and **"And Sections"** to ensure the request is sent only when specific conditions are met.
+1. **Definisanje URL-a:** Unesite krajnju tačku na koju treba poslati HTTPS zahtev.
+2. **Postavljanje zaglavlja:** Navedite potrebna zaglavlja kao parove ključ-vrednost.
+3. **Izbor HTTP metode:** Izaberite odgovarajuću metodu (**GET**, **POST**, **PUT** ili **DELETE**) na osnovu akcije koju treba izvršiti.
+4. **Dodavanje parametara:** Navedite sve parametre upita koje zahteva krajnja tačka.
+5. **Navođenje sadržaja podataka:** Unesite telo zahteva u traženom formatu (npr. JSON) ako je potrebno.
+6. **Konfiguracija uslova:** Definišite odeljke **"Where"** i **"And"** da biste obezbedili da se zahtev šalje samo kada su određeni uslovi ispunjeni.
 
-## Example Card:
+## Primer kartice:
 
 <figure><img src="../../../../.gitbook/assets/Then_Send_HTTPS_2.png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Conclusion:
+## Zaključak:
 
-The **"Send HTTPS Request"** workflow card simplifies API integration by allowing users to make customized requests to external services directly from their workflows. By automating the process of sending HTTPS requests and managing responses, this card enhances workflow flexibility and functionality.
+Kartica radnog toka **"Send HTTPS Request"** pojednostavljuje API integraciju omogućavajući korisnicima da upućuju prilagođene zahteve eksternim servisima direktno iz svojih radnih tokova. Automatizacijom procesa slanja HTTPS zahteva i upravljanja odgovorima, ova kartica poboljšava fleksibilnost i funkcionalnost radnog toka.

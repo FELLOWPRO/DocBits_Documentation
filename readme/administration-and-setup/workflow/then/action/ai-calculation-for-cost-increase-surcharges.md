@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card uses AI to automatically compute surcharge amounts based on cost increases. It ensures consistent and accurate surcharge calculations, streamlining workflows and reducing manual effort.
+Kartica radnog toka **"AI Calculation for Cost Increase Surcharges"** koristi AI za automatsko izračunavanje iznosa doplata na osnovu povećanja troškova. Obezbeđuje dosledne i tačne obračune doplata, pojednostavljujući radne tokove i smanjujući ručni rad.
 
-## Components of the Card:
+## Komponente kartice:
 
 * **Cost Increase Factor**
-  * **Description:** The multiplier or percentage applied to the base cost to calculate the surcharge.
-  * **Detail:** Determines the surcharge amount based on the cost increase (e.g., a factor of 1.10 for a 10% increase).
+  * **Opis:** Množilac ili procenat koji se primenjuje na osnovni trošak za izračunavanje doplate.
+  * **Detalj:** Određuje iznos doplate na osnovu povećanja troškova (npr. faktor 1.10 za povećanje od 10%).
 * **Base Cost Field**
-  * **Description:** The field containing the original cost value used as the basis for the surcharge calculation.
-  * **Detail:** Selected automatically or defined within the workflow for reference during the calculation.
+  * **Opis:** Polje koje sadrži originalnu vrednost troška koja se koristi kao osnova za obračun doplate.
+  * **Detalj:** Bira se automatski ili se definiše unutar radnog toka radi reference tokom obračuna.
 * **Surcharge Field**
-  * **Description:** The field where the AI-calculated surcharge value is stored.
-  * **Detail:** This field reflects the calculated surcharge, making it available for further processing or reporting.
+  * **Opis:** Polje u kojem se čuva vrednost doplate izračunata pomoću AI.
+  * **Detalj:** Ovo polje odražava izračunatu doplatu, čineći je dostupnom za dalju obradu ili izveštavanje.
 
-## Functionality:
+## Funkcionalnost:
 
-**Condition Evaluation:**
+**Procena uslova:**
 
-* The card activates only if both the **"Where"** and **"And Sections"** conditions evaluate as true.
-* If either condition evaluates as false, no surcharge calculation is performed.
+* Kartica se aktivira samo ako se uslovi u oba odeljka, **"Where"** i **"And"**, procene kao tačni.
+* Ako se bilo koji uslov proceni kao netačan, ne vrši se nikakav obračun doplate.
 
-**AI-Driven Calculation:**
+**Obračun vođen AI:**
 
-* The system applies the **Cost Increase Factor** to the **Base Cost Field** to calculate the surcharge.
-* The result is stored in the **Surcharge Field**, ensuring accessibility for subsequent workflow steps.
+* Sistem primenjuje **Cost Increase Factor** na **Base Cost Field** da izračuna doplatu.
+* Rezultat se čuva u **Surcharge Field**, obezbeđujući dostupnost za naredne korake radnog toka.
 
-## Conclusion:
+## Zaključak:
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card automates the application of surcharges based on cost increases. By leveraging AI for precision and consistency, this card eliminates manual calculations, enhances efficiency, and supports accurate cost management in automated workflows.
+Kartica radnog toka **"AI Calculation for Cost Increase Surcharges"** automatizuje primenu doplata na osnovu povećanja troškova. Korišćenjem AI za preciznost i doslednost, ova kartica eliminiše ručne obračune, poboljšava efikasnost i podržava tačno upravljanje troškovima u automatizovanim radnim tokovima.

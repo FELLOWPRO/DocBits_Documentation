@@ -2,56 +2,56 @@
 
 <figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-The **"Call API"** workflow card allows users to make HTTP requests to specified API endpoints directly from the workflow. This card supports various HTTP methods and enables dynamic interaction with external systems by sending parameters and data. It streamlines integration with third-party services and custom APIs, ensuring seamless communication.
+Kartica radnog toka **"Call API"** omogućava korisnicima da upućuju HTTP zahteve navedenim API krajnjim tačkama direktno iz radnog toka. Ova kartica podržava različite HTTP metode i omogućava dinamičku interakciju sa eksternim sistemima slanjem parametara i podataka. Pojednostavljuje integraciju sa servisima trećih strana i prilagođenim API-jima, obezbeđujući neometanu komunikaciju.
 
-## Components of the Card:
+## Komponente kartice:
 
 1. **API Endpoint**
-   * **Description:** The target endpoint of the **DocBits API** that this card will interact with.
-   * **Detail:** A text field where users specify the endpoint for the API request.
+   * **Opis:** Ciljna krajnja tačka **DocBits API**-ja sa kojom će ova kartica komunicirati.
+   * **Detalj:** Tekstualno polje u kojem korisnici navode krajnju tačku za API zahtev.
 2. **HTTP Method**
-   * **Description:** The type of HTTP request to be made.
-   * **Options:**
-     1. **GET:** Retrieves data from the specified endpoint.
-     2. **POST:** Sends data to the endpoint.
-     3. **PUT:** Updates existing data at the endpoint.
-     4. **DELETE:** Removes data at the endpoint.
+   * **Opis:** Tip HTTP zahteva koji treba uputiti.
+   * **Opcije:**
+     1. **GET:** Preuzima podatke sa navedene krajnje tačke.
+     2. **POST:** Šalje podatke krajnjoj tački.
+     3. **PUT:** Ažurira postojeće podatke na krajnjoj tački.
+     4. **DELETE:** Uklanja podatke sa krajnje tačke.
 3. **Parameters**
-   * **Description:** Query parameters to be included in the API request.
-   * **Detail:** A text field or list for entering key-value pairs for the request URL.
+   * **Opis:** Parametri upita koji se uključuju u API zahtev.
+   * **Detalj:** Tekstualno polje ili lista za unos parova ključ-vrednost za URL zahteva.
 4. **Data**
-   1. **Description:** The payload to be sent in the body of the API request (applicable for POST and PUT methods).
-   2. **Detail:** A field for entering the data in JSON.
+   1. **Opis:** Sadržaj koji se šalje u telu API zahteva (primenljivo za POST i PUT metode).
+   2. **Detalj:** Polje za unos podataka u JSON formatu.
 
-## Functionality:
+## Funkcionalnost:
 
-**Condition Evaluation:** The system evaluates the conditions defined in the "Where" and "And Sections":
+**Procena uslova:** Sistem procenjuje uslove definisane u odeljcima "Where" i "And":
 
-* If both conditions are **true**, the API request is executed as configured.
-* If either condition is **false**, the card does not execute, and no API call is made.
+* Ako su oba uslova **tačna**, API zahtev se izvršava kao što je konfigurisan.
+* Ako je bilo koji uslov **netačan**, kartica se ne izvršava, i ne upućuje se nijedan API poziv.
 
-**API Request Execution:**
+**Izvršavanje API zahteva:**
 
-* The card sends the HTTP request to the specified endpoint using the selected method.
-* Any provided parameters are appended to the URL, and the data is included in the request body (if applicable).
+* Kartica šalje HTTP zahtev navedenoj krajnjoj tački koristeći izabranu metodu.
+* Svi navedeni parametri se dodaju URL-u, a podaci se uključuju u telo zahteva (ako je primenljivo).
 
-## Setup and Configuration:
+## Podešavanje i konfiguracija:
 
-1. **Define API Endpoint:**\
-   Enter the URL of the API you wish to call.
-2. **Select HTTP Method:**\
-   Choose one of the supported methods (GET, POST, PUT, DELETE) based on your API's requirements.
-3. **Provide Parameters:**\
-   Add any required query parameters as key-value pairs.
-4. **Include Data (if applicable):**\
-   For POST or PUT methods, specify the data to be sent in the request body.
-5. **Condition Configuration:**\
-   Configure the "Where" and "And Sections" to define when the API call should occur.
+1. **Definisanje API Endpoint-a:**\
+   Unesite URL API-ja koji želite da pozovete.
+2. **Izbor HTTP metode:**\
+   Izaberite jednu od podržanih metoda (GET, POST, PUT, DELETE) na osnovu zahteva vašeg API-ja.
+3. **Navođenje parametara:**\
+   Dodajte sve potrebne parametre upita kao parove ključ-vrednost.
+4. **Uključivanje podataka (ako je primenljivo):**\
+   Za POST ili PUT metode, navedite podatke koji se šalju u telu zahteva.
+5. **Konfiguracija uslova:**\
+   Konfigurišite odeljke "Where" i "And" da definišete kada API poziv treba da se dogodi.
 
-## Conclusion:
+## Zaključak:
 
-The **"Call API"** workflow card enhances workflow automation by enabling direct interaction with external systems. By providing flexible configurations for endpoints, methods, and data, it ensures workflows can integrate seamlessly with third-party APIs or custom backends. The ability to conditionally execute API calls ensures precision and efficiency in automating external communications.
+Kartica radnog toka **"Call API"** poboljšava automatizaciju radnog toka omogućavanjem direktne interakcije sa eksternim sistemima. Pružanjem fleksibilnih konfiguracija za krajnje tačke, metode i podatke, ona obezbeđuje da se radni tokovi neometano integrišu sa API-jima trećih strana ili prilagođenim pozadinskim sistemima. Mogućnost uslovnog izvršavanja API poziva obezbeđuje preciznost i efikasnost u automatizaciji eksterne komunikacije.
 
 ***

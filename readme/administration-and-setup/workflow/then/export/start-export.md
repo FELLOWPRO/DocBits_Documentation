@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (285).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Start Export"** workflow card is designed to initiate the export process for a document. This card functions as a trigger within the workflow to seamlessly start the export operation once the conditions in the preceding sections are satisfied.
+Kartica radnog toka **"Start Export"** je dizajnirana da pokrene proces izvoza dokumenta. Ova kartica funkcioniše kao okidač unutar radnog toka da neometano pokrene operaciju izvoza kada su uslovi u prethodnim odeljcima zadovoljeni.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Action**
-   1. **Description**: Initiates the export process for the document.
-   2. **Detail**: The card uses the configured export settings in the system to process and export the document.
+   1. **Opis**: Pokreće proces izvoza dokumenta.
+   2. **Detalj**: Kartica koristi konfigurisana podešavanja izvoza u sistemu za obradu i izvoz dokumenta.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. If all conditions are true, the export process begins.
-* **Document Export**: The document is processed and exported using the default or previously defined export configuration.
+* **Procena uslova**: Sistem procenjuje uslove postavljene u odeljcima **"Where"** i **"And"** radnog toka. Ako su svi uslovi tačni, proces izvoza počinje.
+* **Izvoz dokumenta**: Dokument se obrađuje i izvozi korišćenjem podrazumevane ili prethodno definisane konfiguracije izvoza.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-This card does not require specific configuration as it uses the export settings already defined in the system. Users need to ensure that:
+Ova kartica ne zahteva posebnu konfiguraciju jer koristi podešavanja izvoza već definisana u sistemu. Korisnici treba da obezbede da:
 
-1. The **"Where"** and **"And Sections"** conditions are correctly configured, as the card only executes if these conditions evaluate to true.
-2. A valid export configuration is associated with the document in the system.
+1. Uslovi u odeljcima **"Where"** i **"And"** budu ispravno konfigurisani, jer se kartica izvršava samo ako se ovi uslovi procene kao tačni.
+2. Validna konfiguracija izvoza bude povezana sa dokumentom u sistemu.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Start Export"** workflow card provides a streamlined and automated way to trigger the export process. By relying on pre-configured settings and conditional evaluations, it ensures efficient and accurate document processing.
+Kartica radnog toka **"Start Export"** pruža pojednostavljen i automatizovan način za pokretanje procesa izvoza. Oslanjajući se na unapred konfigurisana podešavanja i uslovne procene, ona obezbeđuje efikasnu i tačnu obradu dokumenata.

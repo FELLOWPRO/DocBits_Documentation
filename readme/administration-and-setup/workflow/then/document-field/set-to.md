@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (278).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This workflow card is designed to automatically set a specified field in the document to a predefined text value based on the conditions defined in the **"Where"** and **"And Sections."** It allows users to streamline data entry by ensuring fields are populated with consistent values when certain criteria are met.
+Ova kartica radnog toka je dizajnirana da automatski postavi navedeno polje u dokumentu na unapred definisanu tekstualnu vrednost na osnovu uslova definisanih u odeljcima **"Where"** i **"And"**. Omogućava korisnicima da pojednostave unos podataka obezbeđujući da se polja popune doslednim vrednostima kada su određeni kriterijumi ispunjeni.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name**
-   * **Description**: Specifies the field that will be updated with the text value.&#x20;
-   * **Detail**: The field selected will be updated with the specified text value if the conditions in the **"Where"** and **"And Sections"** are met.
+   * **Opis**: Navodi polje koje će biti ažurirano tekstualnom vrednošću.&#x20;
+   * **Detalj**: Izabrano polje će biti ažurirano navedenom tekstualnom vrednošću ako su uslovi u odeljcima **"Where"** i **"And"** ispunjeni.
 2. **Text**
-   * **Description**: Defines the text value that will be set in the target field when the conditions evaluate as true.
-   * **Detail**: This can be a custom message, status, or predefined value that the user wishes to write into the field. The text should align with the field's expected input format (e.g., alphanumeric, date, or other types of textual information).
+   * **Opis**: Definiše tekstualnu vrednost koja će se postaviti u ciljno polje kada se uslovi procene kao tačni.
+   * **Detalj**: Ovo može biti prilagođena poruka, status ili unapred definisana vrednost koju korisnik želi da upiše u polje. Tekst treba da bude usklađen sa očekivanim formatom unosa polja (npr. alfanumerički, datum ili drugi tipovi tekstualnih informacija).
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**: The system evaluates the conditions in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the actions defined in the **"Then Section"** will be executed. Specifically, the target field (Field Name) will be populated with the specified text.
-  * If **either the "Where" or the "And" section is false**, no action is taken, and the field remains unchanged. The **Then Section** actions are skipped entirely if either condition is false.
-* **Action Execution**: If both conditions in the **"Where"** and **"And Sections"** are met, the system automatically populates the specified field with the chosen text value. If the conditions are not met, no changes are made to the field.
+* **Procena uslova**: Sistem procenjuje uslove u odeljcima **"Where"** i **"And"**:
+  * Ako su **oba uslova tačna**, izvršiće se akcije definisane u odeljku **"Then"**. Konkretno, ciljno polje (Field Name) će biti popunjeno navedenim tekstom.
+  * Ako je **bilo odeljak "Where" ili "And" netačan**, ne preduzima se nikakva akcija, i polje ostaje nepromenjeno. Akcije odeljka **"Then"** se u potpunosti preskaču ako je bilo koji uslov netačan.
+* **Izvršavanje akcije**: Ako su oba uslova u odeljcima **"Where"** i **"And"** ispunjena, sistem automatski popunjava navedeno polje izabranom tekstualnom vrednošću. Ako uslovi nisu ispunjeni, ne vrše se nikakve promene polja.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-To set up this card:
+Da bi podesili ovu karticu:
 
-1. **Select the field** (Field Name) that will be updated with the text value. The available fields in the document are listed for selection.
-2. **Specify the text value** that will be written into the target field when the conditions are true.
-3. The action will only execute if both the **"Where"** and **"And Sections"** conditions evaluate to true.
+1. **Izaberite polje** (Field Name) koje će biti ažurirano tekstualnom vrednošću. Dostupna polja u dokumentu su navedena za izbor.
+2. **Navedite tekstualnu vrednost** koja će se upisati u ciljno polje kada su uslovi tačni.
+3. Akcija će se izvršiti samo ako se uslovi oba odeljka, **"Where"** i **"And"**, procene kao tačni.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Set Field to Text"** workflow card offers a straightforward way to automate the population of text values into specific document fields based on predefined conditions. This reduces manual data entry and ensures consistency in document processing, making it a useful tool for automating workflows and enhancing efficiency.
+Kartica radnog toka **"Set Field to Text"** nudi jednostavan način za automatizaciju popunjavanja tekstualnih vrednosti u određena polja dokumenta na osnovu unapred definisanih uslova. Ovo smanjuje ručni unos podataka i obezbeđuje doslednost u obradi dokumenata, čineći je korisnim alatom za automatizaciju radnih tokova i poboljšanje efikasnosti.

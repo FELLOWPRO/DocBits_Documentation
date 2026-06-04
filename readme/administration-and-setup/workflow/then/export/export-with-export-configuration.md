@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (284).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Export Document with Export Configuration"** workflow card is designed to export a document using a specified export configuration. It provides the flexibility to ignore any pending tasks associated with the document, ensuring a smooth export process regardless of its current state.
+Kartica radnog toka **"Export Document with Export Configuration"** je dizajnirana da izveze dokument korišćenjem navedene konfiguracije izvoza. Pruža fleksibilnost da se zanemare svi zadaci na čekanju povezani sa dokumentom, obezbeđujući neometan proces izvoza bez obzira na njegovo trenutno stanje.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Export Configuration**
-   * **Description**: Specifies the export configuration to be used for processing the document.
-   * **Detail**: This configuration determines the format, structure, and destination of the exported document.
+   * **Opis**: Navodi konfiguraciju izvoza koja se koristi za obradu dokumenta.
+   * **Detalj**: Ova konfiguracija određuje format, strukturu i odredište izvezenog dokumenta.
 2. **Ignore Pending Tasks**
-   * **Description**: Determines whether pending tasks linked to the document should be disregarded during the export process.
-   * **Options**:
-     * **True**: Exports the document regardless of pending tasks.
-     * **False**: Ensures pending tasks are completed before the export.
+   * **Opis**: Određuje da li zadatke na čekanju povezane sa dokumentom treba zanemariti tokom procesa izvoza.
+   * **Opcije**:
+     * **True**: Izvozi dokument bez obzira na zadatke na čekanju.
+     * **False**: Obezbeđuje da se zadaci na čekanju završe pre izvoza.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. If both conditions are true, the export process is initiated.
-* **Document Export**: Using the specified **Export Configuration**, the document is processed and exported in the defined format and destination.
-* **Pending Tasks Handling**: If **Ignore Pending Tasks** is set to **True**, the export process bypasses any outstanding tasks linked to the document. If set to **False**, the export is deferred until all tasks are resolved.
+* **Procena uslova**: Sistem procenjuje uslove postavljene u odeljcima **"Where"** i **"And"** radnog toka. Ako su oba uslova tačna, proces izvoza se pokreće.
+* **Izvoz dokumenta**: Korišćenjem navedene **Export Configuration**, dokument se obrađuje i izvozi u definisanom formatu i odredištu.
+* **Rukovanje zadacima na čekanju**: Ako je **Ignore Pending Tasks** postavljeno na **True**, proces izvoza zaobilazi sve neizvršene zadatke povezane sa dokumentom. Ako je postavljeno na **False**, izvoz se odlaže dok se svi zadaci ne reše.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-To configure this card, users need to:
+Da bi konfigurisali ovu karticu, korisnici treba da:
 
-1. Select the desired **Export Configuration** to define how the document will be exported.
-2. Choose whether to **Ignore Pending Tasks** by setting the value to **True** or **False.**
-3. Ensure the conditions in the **"Where"** and **"And Sections"** are correctly set, as the card only executes its action when these conditions are true.
+1. Izaberu željenu **Export Configuration** da definišu kako će dokument biti izvezen.
+2. Izaberu da li će **Ignore Pending Tasks** postavljanjem vrednosti na **True** ili **False**.
+3. Obezbede da su uslovi u odeljcima **"Where"** i **"And"** ispravno postavljeni, jer kartica izvršava svoju akciju samo kada su ovi uslovi tačni.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Export Document with Export Configuration"** workflow card ensures documents are exported efficiently and according to predefined configurations. With the ability to ignore pending tasks, this card offers flexibility in handling documents at various stages, reducing delays and streamlining the export process.
+Kartica radnog toka **"Export Document with Export Configuration"** obezbeđuje da se dokumenti izvoze efikasno i u skladu sa unapred definisanim konfiguracijama. Sa mogućnošću zanemarivanja zadataka na čekanju, ova kartica nudi fleksibilnost u rukovanju dokumentima u različitim fazama, smanjujući kašnjenja i pojednostavljujući proces izvoza.

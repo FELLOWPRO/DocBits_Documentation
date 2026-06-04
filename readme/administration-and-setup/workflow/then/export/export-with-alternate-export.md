@@ -2,31 +2,31 @@
 
 <figure><img src="../../../../.gitbook/assets/image (286).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The **"Export Document with Alternate Export"** workflow card enables exporting a document using an alternate export configuration. It offers flexibility by allowing users to bypass the default export configuration and use an alternate one, ensuring compatibility with specific requirements or scenarios.
+Kartica radnog toka **"Export Document with Alternate Export"** omogućava izvoz dokumenta korišćenjem alternativne konfiguracije izvoza. Pruža fleksibilnost omogućavajući korisnicima da zaobiđu podrazumevanu konfiguraciju izvoza i koriste alternativnu, obezbeđujući kompatibilnost sa određenim zahtevima ili scenarijima.
 
-## **Components of the Card**
+## **Komponente kartice**
 
-**Alternate Export Configuration**
+**Alternativna konfiguracija izvoza**
 
-* **Description**: Specifies the export configuration to be used for the document.
-* **Detail**: This configuration overrides the default settings and applies the alternate export configuration specified in the workflow.
+* **Opis**: Navodi konfiguraciju izvoza koja se koristi za dokument.
+* **Detalj**: Ova konfiguracija nadjačava podrazumevana podešavanja i primenjuje alternativnu konfiguraciju izvoza navedenu u radnom toku.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Condition Evaluation**:\
-  The system evaluates the conditions set in the **"Where"** and **"And Sections"** of the workflow. The card executes only if all conditions are true.
-* **Document Export**:\
-  Once executed, the card uses the alternate export configuration to process and export the document. This enables tailored export handling for specific workflows.
+* **Procena uslova**:\
+  Sistem procenjuje uslove postavljene u odeljcima **"Where"** i **"And"** radnog toka. Kartica se izvršava samo ako su svi uslovi tačni.
+* **Izvoz dokumenta**:\
+  Kada se izvrši, kartica koristi alternativnu konfiguraciju izvoza za obradu i izvoz dokumenta. Ovo omogućava prilagođeno rukovanje izvozom za određene radne tokove.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-To configure this card:
+Da bi konfigurisali ovu karticu:
 
-1. Ensure the **"Where"** and **"And Sections"** are configured correctly, as the card only executes if these conditions evaluate to true.
-2. Verify that the alternate export configuration is valid and active in the system.
+1. Obezbedite da su odeljci **"Where"** i **"And"** ispravno konfigurisani, jer se kartica izvršava samo ako se ovi uslovi procene kao tačni.
+2. Proverite da je alternativna konfiguracija izvoza validna i aktivna u sistemu.
 
-## **Conclusion**
+## **Zaključak**
 
-The **"Export Document with Alternate Export"** workflow card enhances flexibility and control in document export processes. By allowing the selection of an alternate export configuration, it accommodates diverse export requirements while maintaining efficient workflow automation.
+Kartica radnog toka **"Export Document with Alternate Export"** poboljšava fleksibilnost i kontrolu u procesima izvoza dokumenata. Omogućavanjem izbora alternativne konfiguracije izvoza, ona se prilagođava različitim zahtevima izvoza uz održavanje efikasne automatizacije radnog toka.

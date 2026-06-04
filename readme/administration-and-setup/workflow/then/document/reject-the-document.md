@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (282).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Reject the Document"** workflow card is used to mark a document as rejected within a workflow. This action halts the document’s progress and prevents it from moving to the next stage in the workflow. It ensures that documents which do not meet the necessary conditions or criteria are flagged and prevented from further processing.
+Kartica radnog toka **"Reject the Document"** se koristi za označavanje dokumenta kao odbijenog unutar radnog toka. Ova akcija zaustavlja napredovanje dokumenta i sprečava ga da pređe u sledeću fazu radnog toka. Obezbeđuje da se dokumenti koji ne ispunjavaju neophodne uslove ili kriterijume označe i spreče u daljoj obradi.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
-1. **Rejection Status**
-   * **Description**: This component marks the document as rejected, signaling that it did not meet the required conditions for approval.
-   * **Detail**: When triggered, this card updates the document’s status to "rejected." This decision is made based on the conditions set in the **"Where"** and **"And Sections."**
+1. **Status odbijanja**
+   * **Opis**: Ova komponenta označava dokument kao odbijen, signalizirajući da nije ispunio tražene uslove za odobrenje.
+   * **Detalj**: Kada se pokrene, ova kartica ažurira status dokumenta u "rejected". Ova odluka se donosi na osnovu uslova postavljenih u odeljcima **"Where"** i **"And"**.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections"**.
-  * If **both conditions are true**, the document will be rejected.
-  * If **either condition is false**, the card will not execute, and the document’s status will remain unchanged.
-* **Action Execution**: When the conditions are satisfied, the document is marked as rejected. This action ensures that only documents that meet specific criteria proceed further, while others are flagged and halted for review or correction.
+* **Procena uslova**: Sistem procenjuje uslove postavljene u odeljcima **"Where"** i **"And"**.
+  * Ako su **oba uslova tačna**, dokument će biti odbijen.
+  * Ako je **bilo koji uslov netačan**, kartica se neće izvršiti, i status dokumenta će ostati nepromenjen.
+* **Izvršavanje akcije**: Kada su uslovi zadovoljeni, dokument se označava kao odbijen. Ova akcija obezbeđuje da samo dokumenti koji ispunjavaju određene kriterijume idu dalje, dok se ostali označavaju i zaustavljaju radi pregleda ili ispravke.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Reject the Document"** workflow card is an essential tool for controlling document flow in automated processes. By allowing rejection of non-compliant documents, it ensures that only valid and accurate documents continue through the workflow, improving efficiency and accuracy in document management.
+Kartica radnog toka **"Reject the Document"** je suštinski alat za kontrolu toka dokumenata u automatizovanim procesima. Omogućavanjem odbijanja neusklađenih dokumenata, ona obezbeđuje da samo validni i tačni dokumenti nastave kroz radni tok, poboljšavajući efikasnost i tačnost u upravljanju dokumentima.

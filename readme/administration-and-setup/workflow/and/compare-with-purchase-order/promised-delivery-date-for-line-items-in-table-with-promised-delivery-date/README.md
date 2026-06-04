@@ -2,47 +2,47 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Purpose:
+## Scopo:
 
-This workflow card is designed to validate the **promised delivery date of line items** against the **promised delivery date on the purchase order**, using comparison operators and configurable tolerance rules. It allows workflows to automatically detect compliant, early, or late delivery dates and react accordingly.
+Questa scheda di workflow è progettata per validare la **data di consegna promessa delle righe articolo** rispetto alla **data di consegna promessa sull'ordine d'acquisto**, utilizzando operatori di confronto e regole di tolleranza configurabili. Consente ai workflow di rilevare automaticamente date di consegna conformi, anticipate o in ritardo e di reagire di conseguenza.
 
-## Components of the Card:
+## Componenti della scheda:
 
 1. **Operator**
-   * **Description:**\
-     Defines how the line item promised delivery date is compared to the purchase order promised delivery date.
-   * **Options:**
-     * **Equals (=):** The line item date must fall within the tolerance window.
-     * **Not Equals (≠):** The line item date must fall outside the tolerance window.
-     * **Greater Than (>):** The line item date must be after the tolerance window.
-     * **Greater or Equals (≥):** The line item date must be on or after the start of the tolerance window.
-     * **Lesser Than (<):** The line item date must be before the tolerance window.
-     * **Lesser or Equals (≤):** The line item date must be on or before the end of the tolerance window.<br>
+   * **Descrizione:**\
+     Definisce come la data di consegna promessa della riga articolo viene confrontata con la data di consegna promessa dell'ordine d'acquisto.
+   * **Opzioni:**
+     * **Equals (=):** La data della riga articolo deve rientrare nella finestra di tolleranza.
+     * **Not Equals (≠):** La data della riga articolo deve ricadere al di fuori della finestra di tolleranza.
+     * **Greater Than (>):** La data della riga articolo deve essere successiva alla finestra di tolleranza.
+     * **Greater or Equals (≥):** La data della riga articolo deve essere all'inizio della finestra di tolleranza o successiva.
+     * **Lesser Than (<):** La data della riga articolo deve essere precedente alla finestra di tolleranza.
+     * **Lesser or Equals (≤):** La data della riga articolo deve essere alla fine della finestra di tolleranza o precedente.<br>
 2. **Tolerance Days**
-   * **Description:**\
-     Specifies the number of days used to calculate the acceptable tolerance window around the purchase order promised delivery date.
-   * **Detail:**\
-     This value is an integer and defines how many days before and after the purchase order date are considered during validation.<br>
+   * **Descrizione:**\
+     Specifica il numero di giorni utilizzati per calcolare la finestra di tolleranza accettabile attorno alla data di consegna promessa dell'ordine d'acquisto.
+   * **Dettaglio:**\
+     Questo valore è un intero e definisce quanti giorni prima e dopo la data dell'ordine d'acquisto vengono considerati durante la validazione.<br>
 3. **Allowed Tolerance Days**
-   * **Description:**\
-     Defines which weekdays are counted when calculating tolerance days.
-   * **Detail:**\
-     Users can select specific weekdays (for example, Monday to Friday). Only the selected days are included when calculating the tolerance window.
+   * **Descrizione:**\
+     Definisce quali giorni della settimana vengono conteggiati nel calcolo dei giorni di tolleranza.
+   * **Dettaglio:**\
+     Gli utenti possono selezionare giorni della settimana specifici (ad esempio, da lunedì a venerdì). Solo i giorni selezionati vengono inclusi nel calcolo della finestra di tolleranza.
 
-### Functionality:
+### Funzionalità:
 
-* **Condition Evaluation:** The system calculates a tolerance window around the purchase order promised delivery date based on the configured **Tolerance Days** and **Allowed Tolerance Days**.\
-  Each line item’s promised delivery date is then compared to this window using the selected operator.
-* Action Execution:
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Valutazione della condizione:** Il sistema calcola una finestra di tolleranza attorno alla data di consegna promessa dell'ordine d'acquisto in base ai **Tolerance Days** e agli **Allowed Tolerance Days** configurati.\
+  La data di consegna promessa di ciascuna riga articolo viene quindi confrontata con questa finestra utilizzando l'operatore selezionato.
+* Esecuzione dell'azione:
+  * **Condizione vera:** Se la differenza tra le date di consegna rientra nell'intervallo di tolleranza e soddisfa la condizione impostata dall'operatore, il workflow prosegue.
+  * **Condizione falsa:** Se la condizione non è soddisfatta, il workflow non continuerà.
 
-### Setup and Configuration:
+### Configurazione e impostazione:
 
-* Select the appropriate comparison operator.
-* Enter the number of tolerance days.
-* Choose which weekdays should be counted as tolerance days.
+* Seleziona l'operatore di confronto appropriato.
+* Inserisci il numero di giorni di tolleranza.
+* Scegli quali giorni della settimana devono essere conteggiati come giorni di tolleranza.
 
-### Conclusion:
+### Conclusione:
 
-The **Compare with Purchase Order – Promised Delivery Date for Line Items** workflow card provides a flexible way to enforce delivery date rules. By combining operators with weekday-aware tolerance handling, it enables precise validation of delivery commitments while reducing manual checks and exceptions.
+La scheda di workflow **Compare with Purchase Order – Promised Delivery Date for Line Items** offre un modo flessibile per applicare le regole sulle date di consegna. Combinando gli operatori con una gestione della tolleranza basata sui giorni della settimana, consente una validazione precisa degli impegni di consegna riducendo al contempo i controlli manuali e le eccezioni.

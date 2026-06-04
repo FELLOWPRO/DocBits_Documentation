@@ -2,43 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This workflow card is designed to evaluate whether the unit price, when combined with a specified field value (such as quantity, discount, or additional charges), meets a defined condition. The card compares the unit price and field value to a specified threshold to help ensure that pricing aligns with expectations. This comparison can trigger actions based on specific conditions, such as flagging discrepancies or automating approval processes in procurement or receiving workflows.
+Questa scheda di workflow è progettata per valutare se il prezzo unitario, combinato con il valore di un campo specificato (come quantità, sconto o costi aggiuntivi), soddisfa una condizione definita. La scheda confronta il prezzo unitario e il valore del campo con una soglia specificata per aiutare a garantire che i prezzi siano allineati alle aspettative. Questo confronto può attivare azioni in base a condizioni specifiche, come la segnalazione di discrepanze o l'automazione dei processi di approvazione nei workflow di approvvigionamento o ricezione.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field that contains the value to be combined with the unit price.
-   * **Detail:** This must match the exact identifier of the first field within the document.
+   * **Descrizione:** Specifica il campo del documento che contiene il valore da combinare con il prezzo unitario.
+   * **Dettaglio:** Deve corrispondere all'identificatore esatto del primo campo all'interno del documento.
 2. **Operator**
-   * **Description:** Defines the condition that will be applied to the comparison between the combined value and the specified value.
-   * **Options:**
-     * **Equals (=):** Checks if the combined value of the unit price and field matches the specified value.
-     * **Not Equals (≠):** Ensures the combined value of the unit price and field is different from the specified value.
-     * **Greater Than (>):** Verifies if the combined value is greater than the specified value.
-     * **Greater or Equals (≥):** Checks if the combined value is greater than or equal to the specified value.
-     * **Lesser Than (<):** Verifies if the combined value is less than the specified value.
-     * **Lesser or Equals (≤):** Checks if the combined value is less than or equal to the specified value.
+   * **Descrizione:** Definisce la condizione che verrà applicata al confronto tra il valore combinato e il valore specificato.
+   * **Opzioni:**
+     * **Equals (=):** Verifica se il valore combinato del prezzo unitario e del campo corrisponde al valore specificato.
+     * **Not Equals (≠):** Garantisce che il valore combinato del prezzo unitario e del campo sia diverso dal valore specificato.
+     * **Greater Than (>):** Verifica se il valore combinato è maggiore del valore specificato.
+     * **Greater or Equals (≥):** Verifica se il valore combinato è maggiore o uguale al valore specificato.
+     * **Lesser Than (<):** Verifica se il valore combinato è minore del valore specificato.
+     * **Lesser or Equals (≤):** Verifica se il valore combinato è minore o uguale al valore specificato.
 3. **Value**
-   * **Description:** Specifies the value against which the combined unit price and field value will be compared.
-   * **Detail:** The value has to be a numeric value.
+   * **Descrizione:** Specifica il valore con cui verrà confrontato il valore combinato del prezzo unitario e del campo.
+   * **Dettaglio:** Il valore deve essere numerico.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation:** The system evaluates the combined unit price and field value based on the selected operator and compares it to the specified value. The result of this evaluation determines whether the condition is true or false.
-* **Action Execution:**
-  * **True Condition:** If the comparison results in true (e.g., the combined value exceeds the specified value), the workflow proceeds with the true condition. This might trigger actions such as approval, document routing, or applying processing rules.
-  * **False Condition:** If the comparison results in false (e.g., the combined value does not meet the condition), the workflow proceeds with the false condition. This could trigger a notification, send the document for manual review, or stop the workflow.
+* **Valutazione della condizione:** Il sistema valuta il valore combinato del prezzo unitario e del campo in base all'operatore selezionato e lo confronta con il valore specificato. Il risultato di questa valutazione determina se la condizione è vera o falsa.
+* **Esecuzione dell'azione:**
+  * **Condizione vera:** Se il confronto risulta vero (es. il valore combinato supera il valore specificato), il workflow prosegue con la condizione vera. Ciò potrebbe attivare azioni come l'approvazione, l'instradamento del documento o l'applicazione di regole di elaborazione.
+  * **Condizione falsa:** Se il confronto risulta falso (es. il valore combinato non soddisfa la condizione), il workflow prosegue con la condizione falsa. Ciò potrebbe attivare una notifica, inviare il documento per la revisione manuale o arrestare il workflow.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* Users begin by selecting the document field(s) that contains the value(s) to be combined with the unit price. After selecting the field, they then choose the appropriate operator to define how the combined value will be compared to the specified value. Then they can set the value.
+* Gli utenti iniziano selezionando il campo o i campi del documento che contengono il valore o i valori da combinare con il prezzo unitario. Dopo aver selezionato il campo, scelgono l'operatore appropriato per definire come il valore combinato verrà confrontato con il valore specificato. Quindi possono impostare il valore.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* An invoice lists 50 units of a product at $20 each, totaling $1000. The related document has a quantity field with a value of 10. Using the "Greater Than" operator, the card compares the combined value of the unit price ($20) and the quantity (10), which equals $200. The card checks if the combined value is greater than $150 (the specified value). Since the combined value of $200 is greater than the threshold of $150, the workflow proceeds to trigger an approval for the document.
+* Una fattura elenca 50 unità di un prodotto a $20 ciascuna, per un totale di $1000. Il documento correlato ha un campo quantità con un valore di 10. Utilizzando l'operatore "Greater Than", la scheda confronta il valore combinato del prezzo unitario ($20) e della quantità (10), che equivale a $200. La scheda verifica se il valore combinato è maggiore di $150 (il valore specificato). Poiché il valore combinato di $200 è maggiore della soglia di $150, il workflow procede ad attivare un'approvazione per il documento.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The "Unit Price Combined with Fields" workflow card ensures that pricing conditions are met by evaluating the combined value of the unit price and a specified field. By automating this comparison, organizations can ensure consistency and flag discrepancies in pricing or quantities before proceeding with approval, helping to streamline procurement and financial processes.
+La scheda di workflow "Unit Price Combined with Fields" garantisce che le condizioni di prezzo siano soddisfatte valutando il valore combinato del prezzo unitario e di un campo specificato. Automatizzando questo confronto, le organizzazioni possono garantire coerenza e segnalare discrepanze nei prezzi o nelle quantità prima di procedere con l'approvazione, contribuendo a semplificare i processi di approvvigionamento e finanziari.

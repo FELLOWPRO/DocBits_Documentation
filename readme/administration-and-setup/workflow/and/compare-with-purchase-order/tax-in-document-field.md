@@ -2,51 +2,51 @@
 
 <figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This workflow card is designed to evaluate whether the tax value in a document field matches the tax value in a purchase order, considering tolerances based on charge ID. The card compares these two tax values (one from the document field and one from the purchase order) and checks if they meet a specified condition (e.g., equals, greater than, lesser than, etc.). This helps ensure tax values are consistent and flag discrepancies for further review or approval in procurement workflows.
+Questa scheda di workflow è progettata per valutare se il valore dell'imposta in un campo del documento corrisponde al valore dell'imposta in un ordine d'acquisto, tenendo conto delle tolleranze basate sul charge ID. La scheda confronta questi due valori d'imposta (uno dal campo del documento e uno dall'ordine d'acquisto) e verifica se soddisfano una condizione specificata (es. equals, greater than, lesser than, ecc.). Ciò aiuta a garantire che i valori delle imposte siano coerenti e a segnalare le discrepanze per un'ulteriore revisione o approvazione nei workflow di approvvigionamento.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Field Name**
-   * **Description**: Specifies the document field that contains the tax value to be compared with the tax value in the purchase order.
-   * **Detail**: This field must match the exact identifier for the tax value in the document.
+   * **Descrizione**: Specifica il campo del documento che contiene il valore dell'imposta da confrontare con il valore dell'imposta nell'ordine d'acquisto.
+   * **Dettaglio**: Questo campo deve corrispondere all'identificatore esatto del valore dell'imposta nel documento.
 2. **Operator**
-   * **Description**: Defines the condition to be applied to the comparison between the document's tax value and the purchase order's tax value.
-   * **Options**:
-     * **Equals (=)**: Checks if the tax in the document field matches the tax in the purchase order.
-     * **Not Equals (≠)**: Ensures the tax in the document field does not match the tax in the purchase order.
-     * **Greater Than (>)**: Verifies if the tax in the document field is greater than the tax in the purchase order.
-     * **Greater or Equals (≥)**: Checks if the tax in the document field is greater than or equal to the tax in the purchase order.
-     * **Lesser Than (<)**: Verifies if the tax in the document field is less than the tax in the purchase order.
-     * **Lesser or Equals (≤)**: Checks if the tax in the document field is less than or equal to the tax in the purchase order.
+   * **Descrizione**: Definisce la condizione da applicare al confronto tra il valore dell'imposta del documento e il valore dell'imposta dell'ordine d'acquisto.
+   * **Opzioni**:
+     * **Equals (=)**: Verifica se l'imposta nel campo del documento corrisponde all'imposta nell'ordine d'acquisto.
+     * **Not Equals (≠)**: Garantisce che l'imposta nel campo del documento non corrisponda all'imposta nell'ordine d'acquisto.
+     * **Greater Than (>)**: Verifica se l'imposta nel campo del documento è maggiore dell'imposta nell'ordine d'acquisto.
+     * **Greater or Equals (≥)**: Verifica se l'imposta nel campo del documento è maggiore o uguale all'imposta nell'ordine d'acquisto.
+     * **Lesser Than (<)**: Verifica se l'imposta nel campo del documento è minore dell'imposta nell'ordine d'acquisto.
+     * **Lesser or Equals (≤)**: Verifica se l'imposta nel campo del documento è minore o uguale all'imposta nell'ordine d'acquisto.
 3. **Master Data Table**
-   * **Description**: The table that contains the purchase order details, including the charge ID and tax values.
-   * **Detail**: This table must have a reference to the charge ID associated with the purchase order tax value.
+   * **Descrizione**: La tabella che contiene i dettagli dell'ordine d'acquisto, inclusi il charge ID e i valori delle imposte.
+   * **Dettaglio**: Questa tabella deve avere un riferimento al charge ID associato al valore dell'imposta dell'ordine d'acquisto.
 4. **Tolerance Amount**
-   * **Description**: The threshold amount within which the tax values can vary. This is used to account for minor discrepancies in tax calculations.
-   * **Detail**: The tolerance amount should be a numeric value, defining the maximum allowed difference between the tax values.
+   * **Descrizione**: L'importo soglia entro il quale i valori delle imposte possono variare. Viene utilizzato per tenere conto di piccole discrepanze nei calcoli delle imposte.
+   * **Dettaglio**: La quantità di tolleranza deve essere un valore numerico, che definisce la differenza massima consentita tra i valori delle imposte.
 5. **Tolerance Type**
-   * **Description**: Specifies the type of tolerance being applied, either absolute or percentage-based.
-   * **Options**:
-     * **Value**: The tolerance is a fixed numeric value.
-     * **Percentage**: The tolerance is calculated as a percentage of the tax value.
+   * **Descrizione**: Specifica il tipo di tolleranza applicata, assoluta o basata su percentuale.
+   * **Opzioni**:
+     * **Value**: La tolleranza è un valore numerico fisso.
+     * **Percentage**: La tolleranza è calcolata come percentuale del valore dell'imposta.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation:** The system evaluates whether the tax value in the document field meets the condition specified when compared to the tax value in the purchase order (with the charge ID reference from the master data table). The tolerance amount and type are considered in this evaluation to allow for minor differences in tax calculations.
-* **Action Execution:**
-  * **True Condition**: If the tax in the document field meets the condition when compared to the purchase order's tax (within the tolerance amount and type), the workflow continues.
-  * **False Condition**: If the tax in the document field does not meet the condition (either not within the tolerance range or the comparison fails), the workflow will stop.
+* **Valutazione della condizione:** Il sistema valuta se il valore dell'imposta nel campo del documento soddisfa la condizione specificata quando confrontato con il valore dell'imposta nell'ordine d'acquisto (con il riferimento al charge ID dalla master data table). La quantità e il tipo di tolleranza vengono considerati in questa valutazione per consentire piccole differenze nei calcoli delle imposte.
+* **Esecuzione dell'azione:**
+  * **Condizione vera**: Se l'imposta nel campo del documento soddisfa la condizione quando confrontata con l'imposta dell'ordine d'acquisto (entro la quantità e il tipo di tolleranza), il workflow continua.
+  * **Condizione falsa**: Se l'imposta nel campo del documento non soddisfa la condizione (non rientra nell'intervallo di tolleranza o il confronto fallisce), il workflow si arresterà.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* Users must select the document field that contains the tax value to be compared. They will then choose the operator for how the comparison should be made (e.g., equals, greater than). Following this, users need to specify the master data table reference and set the tolerance amount and type to account for minor tax discrepancies.
+* Gli utenti devono selezionare il campo del documento che contiene il valore dell'imposta da confrontare. Sceglieranno quindi l'operatore per definire come effettuare il confronto (es. equals, greater than). Successivamente, gli utenti devono specificare il riferimento alla master data table e impostare la quantità e il tipo di tolleranza per tenere conto di piccole discrepanze nelle imposte.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* An invoice lists a tax amount of $100. The corresponding purchase order, found in the master data table, specifies a tax value of $95. Using the "Greater Than" operator, the system compares the document’s tax value ($100) to the purchase order tax value ($95) with a tolerance of $10 (absolute tolerance type). Since the difference of $5 is within the tolerance range, the workflow proceeds without triggering any alerts.
+* Una fattura elenca un importo d'imposta di $100. L'ordine d'acquisto corrispondente, presente nella master data table, specifica un valore d'imposta di $95. Utilizzando l'operatore "Greater Than", il sistema confronta il valore dell'imposta del documento ($100) con il valore dell'imposta dell'ordine d'acquisto ($95) con una tolleranza di $10 (tipo di tolleranza assoluta). Poiché la differenza di $5 rientra nell'intervallo di tolleranza, il workflow procede senza attivare alcun avviso.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The "Tax in Document Field Comparison" workflow card ensures that tax values in documents align with purchase order details, allowing for minor discrepancies based on specified tolerances. By automating this check, organizations can minimize errors in tax calculations and streamline procurement processes, reducing the need for manual intervention or approvals.
+La scheda di workflow "Tax in Document Field Comparison" garantisce che i valori delle imposte nei documenti siano allineati ai dettagli dell'ordine d'acquisto, consentendo piccole discrepanze in base alle tolleranze specificate. Automatizzando questo controllo, le organizzazioni possono ridurre al minimo gli errori nei calcoli delle imposte e semplificare i processi di approvvigionamento, riducendo la necessità di interventi o approvazioni manuali.

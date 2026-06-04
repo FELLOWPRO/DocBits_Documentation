@@ -2,39 +2,39 @@
 
 <figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This workflow card is designed to automate actions based on the state (checked or unchecked) of a checkbox within your ERP system. By evaluating the checkbox's condition, it facilitates the triggering of specific processes or the enforcement of certain rules within the application.
+Questa scheda di workflow è progettata per automatizzare le azioni in base allo stato (selezionato o deselezionato) di una casella di controllo all'interno del tuo sistema ERP. Valutando la condizione della casella di controllo, facilita l'attivazione di processi specifici o l'applicazione di determinate regole all'interno dell'applicazione.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 * **Field Name**
-  * **Description:** Specifies the name of the checkbox field that will be evaluated.
-  * **Detail:** This should match the exact field identifier used in the system. It determines which checkbox's state is being monitored.
+  * **Descrizione:** Specifica il nome del campo casella di controllo che verrà valutato.
+  * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo utilizzato nel sistema. Determina lo stato di quale casella di controllo viene monitorato.
 * **Boolean**
-  * **Description:** Defines the condition that triggers the workflow.
-  * **Options:**
-    * **True:** The workflow triggers if the checkbox is checked.
-    * **False:** The workflow triggers if the checkbox is unchecked.
+  * **Descrizione:** Definisce la condizione che attiva il workflow.
+  * **Opzioni:**
+    * **True:** Il workflow si attiva se la casella di controllo è selezionata.
+    * **False:** Il workflow si attiva se la casella di controllo è deselezionata.
 
-#### **Functionality:**
+#### **Funzionalità:**
 
-* **State Detection:** The card continuously monitors the state of the specified checkbox field.
-* **Condition Evaluation:** The system checks whether the checkbox is in the state (checked or unchecked) specified by the Boolean condition.
-* **Action Execution:**
-  * **True Condition:**\
-    If the checkbox’s state matches the specified Boolean condition (either true for checked or false for unchecked), the system initiates the associated actions. These could include enabling or disabling form fields, triggering notifications, starting workflows, or updating records.
-  * **False Condition:**\
-    If the checkbox’s state does not match the condition, alternative or no actions may be taken, depending on the workflow setup.
+* **Rilevamento dello stato:** La scheda monitora continuamente lo stato del campo casella di controllo specificato.
+* **Valutazione della condizione:** Il sistema verifica se la casella di controllo è nello stato (selezionato o deselezionato) specificato dalla condizione Boolean.
+* **Esecuzione dell'azione:**
+  * **Condizione vera:**\
+    Se lo stato della casella di controllo corrisponde alla condizione Boolean specificata (true per selezionato o false per deselezionato), il sistema avvia le azioni associate. Queste potrebbero includere l'abilitazione o la disabilitazione di campi del modulo, l'attivazione di notifiche, l'avvio di workflow o l'aggiornamento di record.
+  * **Condizione falsa:**\
+    Se lo stato della casella di controllo non corrisponde alla condizione, possono essere intraprese azioni alternative o nessuna azione, a seconda della configurazione del workflow.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* Users configure the card by selecting the checkbox field from a list of available fields and setting the Boolean condition.&#x20;
+* Gli utenti configurano la scheda selezionando il campo casella di controllo da un elenco di campi disponibili e impostando la condizione Boolean.&#x20;
 
-## Conclusion :
+## Conclusione:
 
-The "Checkbox Field Condition" workflow card is a fundamental tool for managing dynamic forms and documents within an ERP system, where user inputs can dictate subsequent data processes. By automating actions based on the state of a checkbox, this card enhances workflow efficiency and ensures that system behaviors align with user inputs. Clear documentation of this card will help users effectively implement it within their operations, allowing for better control over form behaviors and process automations.
+La scheda di workflow "Checkbox Field Condition" è uno strumento fondamentale per gestire moduli e documenti dinamici all'interno di un sistema ERP, dove gli input dell'utente possono determinare i successivi processi sui dati. Automatizzando le azioni in base allo stato di una casella di controllo, questa scheda migliora l'efficienza del workflow e garantisce che i comportamenti del sistema siano allineati con gli input dell'utente. Una documentazione chiara di questa scheda aiuterà gli utenti a implementarla efficacemente nelle loro operazioni, consentendo un migliore controllo sui comportamenti dei moduli e sulle automazioni dei processi.
 
 
 
-**Note: Not every customer has the checkbox, but it can be added if desired.**
+**Nota: Non tutti i clienti dispongono della casella di controllo, ma può essere aggiunta se desiderato.**

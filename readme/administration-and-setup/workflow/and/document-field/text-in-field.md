@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This workflow card is designed to automate actions based on the presence or absence of specific text within a specified document field. It ensures workflows can adapt dynamically to the content of documents, supporting efficient processing and accurate decision-making.
+Questa scheda di workflow è progettata per automatizzare le azioni in base alla presenza o all'assenza di un testo specifico all'interno di un campo del documento specificato. Garantisce che i workflow possano adattarsi dinamicamente al contenuto dei documenti, supportando un'elaborazione efficiente e un processo decisionale accurato.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Text**
-   * **Description:** Specifies the text string to be checked within the field.
-   * **Detail:** This can be a word, phrase, or sequence of characters relevant to the workflow.
+   * **Descrizione:** Specifica la stringa di testo da verificare all'interno del campo.
+   * **Dettaglio:** Può essere una parola, una frase o una sequenza di caratteri pertinente al workflow.
 2. **Operator**
-   * **Description:** Defines the condition for text presence in the field.
-   * **Options:**
-     * **Is:** Triggers the workflow if the specified text is present in the field.
-     * **Is Not:** Triggers the workflow if the specified text is not present in the field.
+   * **Descrizione:** Definisce la condizione per la presenza del testo nel campo.
+   * **Opzioni:**
+     * **Is:** Attiva il workflow se il testo specificato è presente nel campo.
+     * **Is Not:** Attiva il workflow se il testo specificato non è presente nel campo.
 3. **Field Name**
-   * **Description:** Specifies the name of the document field to be evaluated.
-   * **Detail:** This must match the exact identifier of the field within the document.
+   * **Descrizione:** Specifica il nome del campo del documento da valutare.
+   * **Dettaglio:** Deve corrispondere all'identificatore esatto del campo all'interno del documento.
 
-## **Functionality:**
+## **Funzionalità:**
 
-1. **Condition Evaluation:** The system checks whether the specified text exists in the field, based on the selected operator (Is or Is Not).
-2. **Action Execution:**
-   * **True Condition:**\
-     If the text's presence in the field matches the specified condition, the system initiates the associated actions. These could include triggering alerts, progressing workflows, or updating records.
-   * **False Condition:**\
-     If the text's presence in the field does not match the condition, alternative actions or no actions may be taken, depending on the workflow configuration.
+1. **Valutazione della condizione:** Il sistema verifica se il testo specificato esiste nel campo, in base all'operatore selezionato (Is o Is Not).
+2. **Esecuzione dell'azione:**
+   * **Condizione vera:**\
+     Se la presenza del testo nel campo corrisponde alla condizione specificata, il sistema avvia le azioni associate. Queste potrebbero includere l'attivazione di avvisi, l'avanzamento dei workflow o l'aggiornamento di record.
+   * **Condizione falsa:**\
+     Se la presenza del testo nel campo non corrisponde alla condizione, possono essere intraprese azioni alternative o nessuna azione, a seconda della configurazione del workflow.
 
-## **Setup and Configuration:**&#x20;
+## **Configurazione e impostazione:**&#x20;
 
-* The user inputs the text to be checked. They then select the field name of the relevant document.
+* L'utente inserisce il testo da verificare. Seleziona quindi il nome del campo del documento pertinente.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The "Text Presence in Field" workflow card is a simple yet powerful tool for document content analysis. By automating actions based on text detection, this card supports more intelligent workflows, improves document handling accuracy, and reduces manual effort.
+La scheda di workflow "Text Presence in Field" è uno strumento semplice ma potente per l'analisi del contenuto dei documenti. Automatizzando le azioni in base al rilevamento del testo, questa scheda supporta workflow più intelligenti, migliora l'accuratezza nella gestione dei documenti e riduce lo sforzo manuale.

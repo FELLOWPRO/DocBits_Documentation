@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This DocBits card is designed to facilitate interaction with external systems by sending HTTPS requests to specified URLs. It enables workflows to perform actions like data retrieval, updates, or deletion by making API calls, ensuring seamless integration with external services.
+Cette carte DocBits est conçue pour faciliter l'interaction avec des systèmes externes en envoyant des requêtes HTTPS vers des URL spécifiées. Elle permet aux workflows d'effectuer des actions telles que la récupération, la mise à jour ou la suppression de données en réalisant des appels d'API, garantissant une intégration fluide avec des services externes.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **HTTPS Request Execution:** The card sends a request to a specified URL using the configured HTTP method (e.g., GET, POST, PUT, DELETE).
-* **Headers and Parameters:** Users can include custom headers and query parameters to ensure the request meets the requirements of the external API.
-* **Request Data:** Allows users to define the data payload (if applicable) to be sent with the request, such as JSON or form-encoded data.
-* **Response Evaluation:** The workflow checks if the received status code matches the expected value, ensuring successful communication before proceeding.
-* **Supported HTTP Methods:**
-  * GET: Retrieves data from the specified URL.
-  * POST: Submits data to the specified URL to create resources.
-  * PUT: Updates existing resources at the specified URL.
-  * DELETE: Removes resources from the specified URL.
+* **Exécution de requête HTTPS :** la carte envoie une requête vers une URL spécifiée à l'aide de la méthode HTTP configurée (par ex. GET, POST, PUT, DELETE).
+* **En-têtes et paramètres :** les utilisateurs peuvent inclure des en-têtes personnalisés et des paramètres de requête pour s'assurer que la requête respecte les exigences de l'API externe.
+* **Données de la requête :** permet aux utilisateurs de définir la charge utile (le cas échéant) à envoyer avec la requête, comme des données JSON ou encodées sous forme de formulaire.
+* **Évaluation de la réponse :** le workflow vérifie si le code de statut reçu correspond à la valeur attendue, garantissant une communication réussie avant de poursuivre.
+* **Méthodes HTTP prises en charge :**
+  * GET : récupère des données depuis l'URL spécifiée.
+  * POST : soumet des données à l'URL spécifiée pour créer des ressources.
+  * PUT : met à jour des ressources existantes à l'URL spécifiée.
+  * DELETE : supprime des ressources de l'URL spécifiée.
 
-## **Usage:**
+## **Utilisation :**
 
-This card is particularly useful in scenarios where workflows need to interact with external APIs for data exchange, such as sending updates to a CRM, retrieving order statuses, or posting new entries to a database.
+Cette carte est particulièrement utile dans les scénarios où les workflows doivent interagir avec des API externes pour échanger des données, comme envoyer des mises à jour à un CRM, récupérer des statuts de commande ou publier de nouvelles entrées dans une base de données.
 
-## **Example Scenario:**
+## **Scénario d'exemple :**
 
-* A user configures the card to send a POST request to an external order management system with a payload containing new order details. Custom headers are added to include API authentication tokens. The card is set to continue only if the response status code is 201 (Created). If the status code differs, the workflow triggers an error notification for manual intervention.
+* Un utilisateur configure la carte pour envoyer une requête POST à un système externe de gestion des commandes avec une charge utile contenant les détails d'une nouvelle commande. Des en-têtes personnalisés sont ajoutés pour inclure des jetons d'authentification d'API. La carte est configurée pour ne se poursuivre que si le code de statut de la réponse est 201 (Created). Si le code de statut diffère, le workflow déclenche une notification d'erreur pour une intervention manuelle.
 
-By using the "Send HTTPS Request" card, organizations can automate external integrations, improve communication between systems, and streamline complex workflows.
+En utilisant la carte « Send HTTPS Request », les organisations peuvent automatiser les intégrations externes, améliorer la communication entre les systèmes et rationaliser les workflows complexes.

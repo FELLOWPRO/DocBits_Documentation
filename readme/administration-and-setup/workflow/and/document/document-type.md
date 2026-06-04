@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Objectif :
 
-This workflow card is designed to evaluate whether a document matches a specific type. By checking if the document corresponds to the given type, workflows can continue or take alternative actions based on this condition. This helps to automate processes where the document type dictates the next steps in the workflow.
+Cette carte de workflow est conçue pour évaluer si un document correspond à un type spécifique. En vérifiant si le document correspond au type donné, les workflows peuvent se poursuivre ou effectuer des actions alternatives en fonction de cette condition. Cela aide à automatiser les processus où le type de document dicte les étapes suivantes du workflow.
 
-## Components of the Card:
+## Composants de la carte :
 
 1. **Operator**
-   * **Description**: Defines whether the document should be of the specified type or not.
-   * **Options**:
-     * **Is**: The document must match the specified type for the condition to be true.
-     * **Is Not**: The document must not match the specified type for the condition to be true.
+   * **Description** : définit si le document doit ou non être du type spécifié.
+   * **Options** :
+     * **Is** : le document doit correspondre au type spécifié pour que la condition soit vraie.
+     * **Is Not** : le document ne doit pas correspondre au type spécifié pour que la condition soit vraie.
 2. **Type**
-   * **Description**: Specifies the document type to compare against.
-   * **Detail**: This includes a variety of document types such as "Invoice", "Purchase Order", etc., based on which the condition (is/is not) will be evaluated.
+   * **Description** : spécifie le type de document à comparer.
+   * **Détail** : il inclut divers types de documents tels que « Invoice », « Purchase Order », etc., en fonction desquels la condition (is/is not) sera évaluée.
 
-## Functionality:
+## Fonctionnalité :
 
-* **Condition Evaluation**: The system evaluates whether the document type in the specified field matches the condition defined by the operator. It compares the field value with the provided document type.
-* **Action Execution**:
-  * **True Condition**: If the document type matches the specified type (or does not, based on the operator), the workflow proceeds with the true condition. This can trigger actions such as further processing of the document, sending it for approval, or applying specific rules based on the document type.
-  * **False Condition**: If the document type does not match the specified type, the workflow proceeds with the false condition. This can trigger alternative actions, such as routing the document to a different process or stopping further actions.
+* **Évaluation de la condition** : le système évalue si le type de document du champ spécifié satisfait la condition définie par l'opérateur. Il compare la valeur du champ au type de document fourni.
+* **Exécution de l'action** :
+  * **Condition vraie** : si le type de document correspond au type spécifié (ou non, selon l'opérateur), le workflow se poursuit avec la condition vraie. Cela peut déclencher des actions telles que le traitement complémentaire du document, son envoi pour approbation ou l'application de règles spécifiques en fonction du type de document.
+  * **Condition fausse** : si le type de document ne correspond pas au type spécifié, le workflow se poursuit avec la condition fausse. Cela peut déclencher des actions alternatives, comme l'acheminement du document vers un processus différent ou l'arrêt des actions ultérieures.
 
-## Setup and Configuration:
+## Mise en place et configuration :
 
-* Users configure the card by selecting the document field that contains the document type from a list of available fields. Then, the operator is selected to define whether the document must be the specified type or not. Finally, users set the continue condition (true or false), which determines the next action based on the document type.
+* Les utilisateurs configurent la carte en sélectionnant le champ de document qui contient le type de document dans une liste de champs disponibles. Ensuite, l'opérateur est sélectionné pour définir si le document doit ou non être du type spécifié. Enfin, les utilisateurs définissent la condition de poursuite (vraie ou fausse), qui détermine l'action suivante en fonction du type de document.
 
-## Conclusion:
+## Conclusion :
 
-The "Document Type Comparison" workflow card is essential for ensuring that workflows proceed based on the type of document being processed. By comparing the document type, it helps organizations automate document routing and processing tasks, ensuring that documents are handled appropriately based on their type.
+La carte de workflow « Document Type Comparison » est essentielle pour garantir que les workflows se poursuivent en fonction du type de document traité. En comparant le type de document, elle aide les organisations à automatiser les tâches d'acheminement et de traitement des documents, garantissant que les documents sont traités de manière appropriée selon leur type.

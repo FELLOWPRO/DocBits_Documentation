@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This DocBits card is used to validate whether any value in a specific column of a table matches a provided regex pattern. If any single entry in the column matches the pattern, the workflow will continue, making it ideal for use cases where identifying even a single match triggers the next steps in the process.
+Diese DocBits-Karte wird verwendet, um zu validieren, ob irgendein Wert in einer bestimmten Tabellenspalte mit einem angegebenen Regex-Muster übereinstimmt. Stimmt ein einzelner Eintrag in der Spalte mit dem Muster überein, wird der Workflow fortgesetzt, wodurch sie sich ideal für Anwendungsfälle eignet, in denen bereits eine einzige Übereinstimmung die nächsten Schritte im Prozess auslöst.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Regex Pattern Validation:** This card checks if any value in a given column of a table matches the provided regular expression pattern. The card will trigger and allow the workflow to continue if at least one entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that at least one value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for regex pattern matches.
+* **Validierung mit Regex-Muster:** Diese Karte prüft, ob irgendein Wert in einer bestimmten Tabellenspalte mit dem angegebenen regulären Ausdruck übereinstimmt. Die Karte wird ausgelöst und lässt den Workflow fortfahren, wenn mindestens ein Eintrag in der Spalte die Bedingung erfüllt.
+* **Operator:** Benutzer definieren die Spalte und geben das Regex-Muster an. Die verfügbare Bedingung umfasst:
+  * **Matches Regex Pattern:** Überprüft, ob mindestens ein Wert in der angegebenen Spalte mit dem Regex-Muster übereinstimmt.
+* **Tabellen- und Spaltenauswahl:** Benutzer geben die Tabelle und die Spalte an, die sie auf Regex-Muster-Übereinstimmungen prüfen möchten.
 
-## **Usage:**
+## **Verwendung:**
 
-This card is particularly useful for scenarios where a table contains data that might require specific matches, such as validating email addresses, invoice numbers, or product IDs. It ensures that workflows proceed when any relevant entry matches the defined pattern, without needing to check every entry.
+Diese Karte ist besonders nützlich für Szenarien, in denen eine Tabelle Daten enthält, die bestimmte Übereinstimmungen erfordern könnten, etwa die Validierung von E-Mail-Adressen, Rechnungsnummern oder Produkt-IDs. Sie stellt sicher, dass Workflows fortfahren, wenn irgendein relevanter Eintrag dem definierten Muster entspricht, ohne dass jeder Eintrag geprüft werden muss.
 
-## **Example Scenario:**
+## **Beispiel-Szenario:**
 
-* A user sets the card to check for entries in the "Email Address" column of the "Customers" table, using a regex pattern for valid email formats. If at least one email address in the column matches the pattern, the card will trigger the next workflow step, ensuring that the system processes the valid entry.
+* Ein Benutzer stellt die Karte so ein, dass sie Einträge in der Spalte "Email Address" der Tabelle "Customers" prüft, und verwendet ein Regex-Muster für gültige E-Mail-Formate. Stimmt mindestens eine E-Mail-Adresse in der Spalte mit dem Muster überein, löst die Karte den nächsten Workflow-Schritt aus und stellt so sicher, dass das System den gültigen Eintrag verarbeitet.
 
-By using the "Regex Pattern Matching" card, organizations can automate workflows based on dynamic, pattern-based validations, streamlining processes and ensuring that only relevant entries trigger further actions.
+Durch die Verwendung der Karte "Regex Pattern Matching" können Organisationen Workflows auf Basis dynamischer, musterbasierter Validierungen automatisieren, Prozesse optimieren und sicherstellen, dass nur relevante Einträge weitere Aktionen auslösen.

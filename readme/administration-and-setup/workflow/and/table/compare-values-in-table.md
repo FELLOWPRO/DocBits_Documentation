@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This DocBits card performs a comparison between values in two specified columns within a table, based on a chosen condition. It’s useful for scenarios that require validating relationships between data points, such as quality control, data consistency checks, or compliance verification.
+Diese DocBits-Karte führt auf Basis einer gewählten Bedingung einen Vergleich zwischen Werten in zwei angegebenen Spalten innerhalb einer Tabelle durch. Sie ist nützlich für Szenarien, die die Validierung von Beziehungen zwischen Datenpunkten erfordern, etwa Qualitätskontrolle, Datenkonsistenzprüfungen oder Compliance-Überprüfungen.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Column Comparison:** This card allows users to set conditions to compare values between two columns in the same table.
-* **Operators:** The following operators are available to define the comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Table and Column Selection:** Users specify the table and the two columns they wish to compare.
+* **Spaltenvergleich:** Diese Karte ermöglicht es Benutzern, Bedingungen festzulegen, um Werte zwischen zwei Spalten in derselben Tabelle zu vergleichen.
+* **Operatoren:** Die folgenden Operatoren stehen zur Definition des Vergleichs zur Verfügung:
+  * **Gleich (=):** Prüft, ob die Werte in den beiden Spalten exakt gleich sind.
+  * **Ungleich (≠):** Stellt sicher, dass sich die Werte in den beiden Spalten unterscheiden.
+  * **Größer als (>):** Bestätigt, dass die Werte in der ersten Spalte größer sind als die in der zweiten Spalte.
+  * **Größer oder gleich (≥):** Stellt sicher, dass die Werte in der ersten Spalte größer oder gleich denen in der zweiten Spalte sind.
+  * **Kleiner als (<):** Prüft, ob die Werte in der ersten Spalte kleiner sind als die in der zweiten Spalte.
+  * **Kleiner oder gleich (≤):** Stellt sicher, dass die Werte in der ersten Spalte kleiner oder gleich denen in der zweiten Spalte sind.
+* **Tabellen- und Spaltenauswahl:** Benutzer geben die Tabelle und die beiden Spalten an, die sie vergleichen möchten.
 
-## **Usage:**
+## **Verwendung:**
 
-This card is ideal for data analysts, quality control teams, or compliance officers who need to ensure that values in one column relate to values in another according to specific rules, allowing for advanced data validation.
+Diese Karte eignet sich ideal für Datenanalysten, Qualitätskontrollteams oder Compliance-Verantwortliche, die sicherstellen müssen, dass die Werte in einer Spalte gemäß bestimmten Regeln mit den Werten in einer anderen Spalte in Beziehung stehen, und ermöglicht so eine fortgeschrittene Datenvalidierung.
 
-## **Example Scenario:**
+## **Beispiel-Szenario:**
 
-* A user configures the card to check if values in the "Current Stock" column are **greater than or equal to (≥)** values in the "Minimum Stock Level" column in the "Inventory" table. If all values meet this condition, the workflow proceeds, confirming that stock levels are adequate.
+* Ein Benutzer konfiguriert die Karte so, dass sie prüft, ob die Werte in der Spalte "Current Stock" **größer oder gleich (≥)** den Werten in der Spalte "Minimum Stock Level" in der Tabelle "Inventory" sind. Erfüllen alle Werte diese Bedingung, wird der Workflow fortgesetzt und bestätigt, dass die Lagerbestände ausreichend sind.
 
-By using the "Column Value Comparison" card, organizations can ensure data consistency, maintain quality standards, and validate data relationships within tables.
+Durch die Verwendung der Karte "Column Value Comparison" können Organisationen Datenkonsistenz sicherstellen, Qualitätsstandards wahren und Datenbeziehungen innerhalb von Tabellen validieren.

@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This DocBits card checks whether items in a dataset have a specified receiving method. Users can choose to validate **any** item or **all** items in the dataset based on a selected condition, making it suitable for scenarios where workflows depend on item receiving methods, such as in supply chain management or inventory tracking.
+Diese DocBits-Karte prüft, ob Artikel in einem Datensatz eine angegebene Wareneingangsmethode haben. Benutzer können wählen, ob sie **irgendeinen** Artikel oder **alle** Artikel im Datensatz auf Basis einer ausgewählten Bedingung validieren, wodurch sie sich für Szenarien eignet, in denen Workflows von den Wareneingangsmethoden der Artikel abhängen, etwa im Lieferkettenmanagement oder bei der Bestandsverfolgung.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Receiving Method Validation:** This card verifies the receiving method of items against a specified condition. Users can choose between **any** item or **all** items in the dataset and set the condition as **equals** or **not equals**.
-* **Item Selection:** Users can specify:
-  * **Any Item:** The card triggers if at least one item meets the specified receiving method condition.
-  * **All Items:** The card triggers only if all items meet the specified receiving method condition.
-* **Operators:** The following operators are available to define the condition:
-  * **Equals (=):** Checks if the receiving method matches the specified value.
-  * **Not Equals (≠):** Ensures the receiving method does not match the specified value.
+* **Validierung der Wareneingangsmethode:** Diese Karte überprüft die Wareneingangsmethode von Artikeln anhand einer angegebenen Bedingung. Benutzer können zwischen **irgendeinem** Artikel oder **allen** Artikeln im Datensatz wählen und die Bedingung als **gleich** oder **ungleich** festlegen.
+* **Artikelauswahl:** Benutzer können angeben:
+  * **Any Item:** Die Karte wird ausgelöst, wenn mindestens ein Artikel die angegebene Bedingung für die Wareneingangsmethode erfüllt.
+  * **All Items:** Die Karte wird nur ausgelöst, wenn alle Artikel die angegebene Bedingung für die Wareneingangsmethode erfüllen.
+* **Operatoren:** Die folgenden Operatoren stehen zur Definition der Bedingung zur Verfügung:
+  * **Gleich (=):** Prüft, ob die Wareneingangsmethode mit dem angegebenen Wert übereinstimmt.
+  * **Ungleich (≠):** Stellt sicher, dass die Wareneingangsmethode nicht mit dem angegebenen Wert übereinstimmt.
 
-## **Usage:**
+## **Verwendung:**
 
-This card is ideal for warehouse managers, inventory coordinators, or logistics personnel who need to validate item receiving methods before allowing further actions, such as processing, storage, or shipping.
+Diese Karte eignet sich ideal für Lagerleiter, Bestandskoordinatoren oder Logistikpersonal, die die Wareneingangsmethoden von Artikeln validieren müssen, bevor weitere Aktionen wie Verarbeitung, Lagerung oder Versand zugelassen werden.
 
-## **Example Scenario:**
+## **Beispiel-Szenario:**
 
-* A user configures the card to check if **all items** have the receiving method **equals "Direct Delivery"**. If every item meets this condition, the workflow proceeds, confirming that all items are intended for direct delivery.
+* Ein Benutzer konfiguriert die Karte so, dass sie prüft, ob **alle Artikel** die Wareneingangsmethode **gleich "Direct Delivery"** haben. Erfüllt jeder Artikel diese Bedingung, wird der Workflow fortgesetzt und bestätigt, dass alle Artikel für die Direktlieferung vorgesehen sind.
 
-By using the "Receiving Method Validation" card, organizations can ensure compliance with receiving protocols, improve logistics workflows, and maintain accuracy in item handling based on specific receiving methods.
+Durch die Verwendung der Karte "Receiving Method Validation" können Organisationen die Einhaltung von Wareneingangsprotokollen sicherstellen, Logistik-Workflows verbessern und die Genauigkeit bei der Artikelbehandlung auf Basis bestimmter Wareneingangsmethoden wahren.

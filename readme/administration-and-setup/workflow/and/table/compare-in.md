@@ -2,30 +2,30 @@
 
 <figure><img src="../../../../.gitbook/assets/image (43).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This DocBits card performs a comparison between two columns in a specified table, allowing users to set conditions based on values in each column. Additionally, this card includes a dependency feature, where the comparison will only take place if the value in a third column matches a specified Python regex pattern. This setup is useful for conditional checks that depend on multiple data points within a dataset.
+Diese DocBits-Karte führt einen Vergleich zwischen zwei Spalten in einer angegebenen Tabelle durch und ermöglicht es Benutzern, Bedingungen auf Basis der Werte in jeder Spalte festzulegen. Zusätzlich enthält diese Karte eine Abhängigkeitsfunktion, bei der der Vergleich nur stattfindet, wenn der Wert in einer dritten Spalte mit einem angegebenen Python-Regex-Muster übereinstimmt. Diese Einrichtung ist nützlich für bedingte Prüfungen, die von mehreren Datenpunkten innerhalb eines Datensatzes abhängen.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Column Comparison with Dependency:** This card compares values in two specified columns based on a set condition, which is only applied if the value in a third "dependency" column matches a defined Python regex pattern.
-* **Operators:** Users can choose the following operators for the column comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Regex Dependency:** This card includes a dependency feature that allows users to define a regex pattern for a third column. The comparison condition is only applied if at least one value in the dependency column matches the regex pattern.
+* **Spaltenvergleich mit Abhängigkeit:** Diese Karte vergleicht Werte in zwei angegebenen Spalten auf Basis einer festgelegten Bedingung, die nur angewendet wird, wenn der Wert in einer dritten "Abhängigkeitsspalte" mit einem definierten Python-Regex-Muster übereinstimmt.
+* **Operatoren:** Benutzer können die folgenden Operatoren für den Spaltenvergleich auswählen:
+  * **Gleich (=):** Prüft, ob die Werte in den beiden Spalten exakt gleich sind.
+  * **Ungleich (≠):** Stellt sicher, dass sich die Werte in den beiden Spalten unterscheiden.
+  * **Größer als (>):** Bestätigt, dass die Werte in der ersten Spalte größer sind als die in der zweiten Spalte.
+  * **Größer oder gleich (≥):** Stellt sicher, dass die Werte in der ersten Spalte größer oder gleich denen in der zweiten Spalte sind.
+  * **Kleiner als (<):** Prüft, ob die Werte in der ersten Spalte kleiner sind als die in der zweiten Spalte.
+  * **Kleiner oder gleich (≤):** Stellt sicher, dass die Werte in der ersten Spalte kleiner oder gleich denen in der zweiten Spalte sind.
+* **Regex-Abhängigkeit:** Diese Karte enthält eine Abhängigkeitsfunktion, mit der Benutzer ein Regex-Muster für eine dritte Spalte definieren können. Die Vergleichsbedingung wird nur angewendet, wenn mindestens ein Wert in der Abhängigkeitsspalte mit dem Regex-Muster übereinstimmt.
 
-## **Usage:**
+## **Verwendung:**
 
-This card is particularly useful in scenarios where complex conditional logic is required, such as quality checks that depend on relationships between data points, with additional conditions based on data formatting or specific patterns.
+Diese Karte ist besonders nützlich in Szenarien, in denen eine komplexe bedingte Logik erforderlich ist, etwa Qualitätsprüfungen, die von Beziehungen zwischen Datenpunkten abhängen, mit zusätzlichen Bedingungen auf Basis der Datenformatierung oder bestimmter Muster.
 
 ***
 
-## **Example Scenario:**
+## **Beispiel-Szenario:**
 
-* A user configures the card to compare the "Quantity" and "Threshold" columns in a "Stock" table with the condition **Quantity ≥ Threshold**. This comparison only takes place if the "Item Code" column matches the regex pattern for specific code formats, such as **^A\d{3}$** (indicating an item code starting with "A" followed by three digits).
+* Ein Benutzer konfiguriert die Karte so, dass sie die Spalten "Quantity" und "Threshold" in einer Tabelle "Stock" mit der Bedingung **Quantity ≥ Threshold** vergleicht. Dieser Vergleich findet nur statt, wenn die Spalte "Item Code" mit dem Regex-Muster für bestimmte Codeformate übereinstimmt, etwa **^A\d{3}$** (was einen Artikelcode angibt, der mit "A" beginnt und von drei Ziffern gefolgt wird).
 
-By using the "Conditional Column Comparison" card, organizations can create advanced, pattern-dependent comparisons within datasets, enabling fine-tuned data processing and enhanced accuracy in conditional workflows.
+Durch die Verwendung der Karte "Conditional Column Comparison" können Organisationen fortgeschrittene, musterabhängige Vergleiche innerhalb von Datensätzen erstellen und so eine feinabgestimmte Datenverarbeitung und höhere Genauigkeit in bedingten Workflows ermöglichen.

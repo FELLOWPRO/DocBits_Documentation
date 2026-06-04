@@ -2,40 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/image (283).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-The **"Change Status"** workflow card is used to change the status of a document to one of the predefined states—**Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval**—and optionally trigger associated workflows based on the status change. This card automates the process of status updates and workflow triggers, ensuring efficient document management and error handling.
+O cartão de fluxo de trabalho **"Change Status"** é utilizado para alterar o estado de um documento para um dos estados predefinidos — **Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval** — e, opcionalmente, acionar fluxos de trabalho associados com base na alteração de estado. Este cartão automatiza o processo de atualização de estados e de acionamento de fluxos de trabalho, assegurando uma gestão de documentos eficiente e um tratamento de erros adequado.
 
-## **Components of the Card:**
+## **Componentes do cartão:**
 
 1. **Status**
-   * **Description**: Specifies the new status to be applied to the document.
-   * **Options**:
-     * **Error**: Marks the document as having encountered an error.
-     * **Rejected**: Indicates the document has been rejected and will not proceed further.
-     * **Ready for Validation**: Sets the document to be reviewed and validated by the next user or system process.
-     * **Pending Approval**: Places the document in a pending state for approval.
-     * **Pending Second Approval**: Puts the document on hold for a second level of approval if applicable.
+   * **Descrição**: Especifica o novo estado a aplicar ao documento.
+   * **Opções**:
+     * **Error**: Marca o documento como tendo encontrado um erro.
+     * **Rejected**: Indica que o documento foi rejeitado e não prosseguirá.
+     * **Ready for Validation**: Define o documento para ser revisto e validado pelo utilizador ou processo de sistema seguinte.
+     * **Pending Approval**: Coloca o documento num estado pendente de aprovação.
+     * **Pending Second Approval**: Coloca o documento em espera para um segundo nível de aprovação, se aplicável.
 2. **Trigger Workflows**
-   * **Description**: Determines whether any subsequent workflows should be triggered after the status change.
-   * **Options**:
-     * **True**: Initiates any relevant workflows based on the status change.
-     * **False**: Prevents workflow execution after the status change.
+   * **Descrição**: Determina se devem ser acionados quaisquer fluxos de trabalho subsequentes após a alteração de estado.
+   * **Opções**:
+     * **True**: Inicia quaisquer fluxos de trabalho relevantes com base na alteração de estado.
+     * **False**: Impede a execução de fluxos de trabalho após a alteração de estado.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Condition Evaluation**: The system evaluates the conditions set in the **"Where"** and **"And Sections."** If these conditions are true, the card proceeds to change the document's status to the selected value.
-* **Status Update**: Once the conditions are satisfied, the document's status is updated to one of the predefined options (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), depending on the user’s selection.
-* **Trigger Workflow Action**: If **Trigger Workflows** is set to **True**, the system automatically initiates any associated workflows following the status update. If set to **False**, no additional workflows are triggered, and the process ends with the status change.
+* **Avaliação da condição**: O sistema avalia as condições definidas nas secções **"Where"** e **"And Sections."** Se estas condições forem verdadeiras, o cartão procede à alteração do estado do documento para o valor selecionado.
+* **Atualização de estado**: Uma vez cumpridas as condições, o estado do documento é atualizado para uma das opções predefinidas (Error, Rejected, Ready for Validation, Pending Approval, Pending Second Approval), consoante a seleção do utilizador.
+* **Ação de acionamento de fluxos de trabalho**: Se **Trigger Workflows** estiver definido como **True**, o sistema inicia automaticamente quaisquer fluxos de trabalho associados após a atualização de estado. Se estiver definido como **False**, não são acionados fluxos de trabalho adicionais e o processo termina com a alteração de estado.
 
-## **Setup and Configuration:**
+## **Configuração:**
 
-To configure this card, users need to:
+Para configurar este cartão, os utilizadores precisam de:
 
-1. Specify the desired **Status** that the document will be set to upon condition evaluation (Error, Rejected, Ready for Validation, Pending Approval, or Pending Second Approval).
-2. Choose whether to **Trigger Workflows** after the status change by selecting **True** or **False**.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. Especificar o **Status** pretendido para o qual o documento será definido após a avaliação da condição (Error, Rejected, Ready for Validation, Pending Approval ou Pending Second Approval).
+2. Escolher se devem **Trigger Workflows** após a alteração de estado, selecionando **True** ou **False**.
+3. O cartão só executa a sua ação se ambas as condições nas secções **"Where"** e **"And Sections"** forem avaliadas como verdadeiras.
 
-## **Conclusion:**
+## **Conclusão:**
 
-The **"Change Status"** workflow card offers a streamlined approach to managing document statuses and triggering related workflows. It ensures documents are automatically routed to the correct status and that the necessary actions are taken, depending on the status change. By setting clear conditions for execution, it reduces manual effort and enhances workflow efficiency.
+O cartão de fluxo de trabalho **"Change Status"** oferece uma abordagem simplificada para gerir os estados dos documentos e acionar fluxos de trabalho relacionados. Assegura que os documentos são automaticamente encaminhados para o estado correto e que as ações necessárias são tomadas, consoante a alteração de estado. Ao definir condições claras para a execução, reduz o esforço manual e aumenta a eficiência do fluxo de trabalho.

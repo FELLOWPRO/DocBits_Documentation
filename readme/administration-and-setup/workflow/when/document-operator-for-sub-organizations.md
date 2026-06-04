@@ -2,36 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_dbb4cc2e8f2f4b59ec15726545d9e502.png" alt=""><figcaption></figcaption></figure>
 
-**Purpose**
+**Cel**
 
-This workflow card is designed to perform specific operations on documents that are associated with a particular sub-organization or department within a company. It ensures that document processing adheres to the policies and requirements specific to different segments of the organization.
+Ta karta przepływu pracy służy do wykonywania określonych operacji na dokumentach powiązanych z konkretną sub-organizacją lub działem w firmie. Zapewnia, że przetwarzanie dokumentów jest zgodne z politykami i wymaganiami specyficznymi dla różnych segmentów organizacji.
 
-**Components of the Card**
+**Komponenty karty**
 
 1. **Operator**
-   * **Description**: Defines the action or set of actions to be performed on the document.
-   * **Examples**: This could include operators like "Review", "Approve", "Archive", "Distribute", or any other custom operation relevant to document management within the organization.
+   * **Opis**: Definiuje akcję lub zestaw akcji, które mają być wykonane na dokumencie.
+   * **Przykłady**: Może to obejmować operatory takie jak "Review", "Approve", "Archive", "Distribute" lub dowolną inną niestandardową operację istotną dla zarządzania dokumentami w organizacji.
 2. **Sub-Organization**
-   * **Description**: Specifies the part of the organization or department for which the document operation is relevant.
-   * **Detail**: This could be any designated area of the company, such as Human Resources, Finance, Marketing, etc., or smaller, specialized teams within these broader categories.
+   * **Opis**: Określa część organizacji lub dział, dla którego operacja na dokumencie jest istotna.
+   * **Szczegóły**: Może to być dowolny wyznaczony obszar firmy, taki jak Human Resources, Finance, Marketing itp., lub mniejsze, wyspecjalizowane zespoły w ramach tych szerszych kategorii.
 
-**Functionality**
+**Funkcjonalność**
 
-* **Document Identification**: The card first identifies the document(s) that need to be processed. This identification could be based on document type, source, date, or any other metadata.
-* **Operation Execution**: Based on the specified operator, the card executes the designated operation. This could be:
-  * **Review**: Sending the document to the appropriate personnel or department for review.
-  * **Approve**: Routing the document for necessary approvals within the sub-organization.
-  * **Archive**: Moving the document to an archival system designed to store records as per organizational policies.
-  * **Distribute**: Disseminating the document internally within the sub-organization or externally if required.
-* **Compliance Checks**: The card checks that all operations comply with the internal policies and legal requirements applicable to the specific sub-organization.
-* **Feedback and Logging**: Post-operation, the card provides feedback on the action taken and logs this information for audit trails and compliance tracking.
+* **Identyfikacja dokumentu**: Karta najpierw identyfikuje dokument(y), które wymagają przetworzenia. Identyfikacja ta może być oparta na typie dokumentu, źródle, dacie lub dowolnych innych metadanych.
+* **Wykonanie operacji**: Na podstawie określonego operatora karta wykonuje wyznaczoną operację. Może to być:
+  * **Review**: Wysłanie dokumentu do odpowiedniego personelu lub działu do przeglądu.
+  * **Approve**: Przekierowanie dokumentu w celu uzyskania niezbędnych zatwierdzeń w ramach sub-organizacji.
+  * **Archive**: Przeniesienie dokumentu do systemu archiwizacji przeznaczonego do przechowywania rekordów zgodnie z politykami organizacyjnymi.
+  * **Distribute**: Rozpowszechnianie dokumentu wewnętrznie w ramach sub-organizacji lub zewnętrznie, jeśli jest to wymagane.
+* **Kontrole zgodności**: Karta sprawdza, czy wszystkie operacje są zgodne z politykami wewnętrznymi i wymaganiami prawnymi mającymi zastosowanie do konkretnej sub-organizacji.
+* **Informacje zwrotne i rejestrowanie**: Po operacji karta dostarcza informacji zwrotnych o podjętej akcji i rejestruje te informacje na potrzeby ścieżek audytu i śledzenia zgodności.
 
-**User Interactions**
+**Interakcje użytkownika**
 
-* **Configuration**: Users set up the card by specifying the operator and the sub-organization. They might also define specific rules or triggers for when the card should activate.
-* **Monitoring**: Users can monitor the card's activity via a dashboard that shows ongoing and completed operations, providing transparency into document handling processes.
-* **Manual Override**: In some cases, users might have the ability to manually intervene or alter the course of an operation, such as escalating an issue or correcting document routing errors.
+* **Konfiguracja**: Użytkownicy konfigurują kartę, określając operator i sub-organizację. Mogą również zdefiniować konkretne reguły lub wyzwalacze określające, kiedy karta powinna się aktywować.
+* **Monitorowanie**: Użytkownicy mogą monitorować aktywność karty za pośrednictwem pulpitu, który pokazuje trwające i ukończone operacje, zapewniając przejrzystość procesów obsługi dokumentów.
+* **Ręczne nadpisanie**: W niektórych przypadkach użytkownicy mogą mieć możliwość ręcznej interwencji lub zmiany przebiegu operacji, takiej jak eskalacja problemu lub poprawienie błędów routingu dokumentów.
 
-#### Conclusion
+#### Podsumowanie
 
-The "Document Operator for Sub-Organizations" card is a crucial tool for managing documents in a structured and efficient manner, particularly in larger organizations where different departments have unique operational needs and compliance requirements. Documenting this card clearly in your ERP system's manual will help users understand its importance and implement it effectively within their workflows. If additional customization or functionality descriptions are needed, feel free to expand based on specific organizational needs and technical capabilities.
+Karta "Document Operator for Sub-Organizations" jest kluczowym narzędziem do zarządzania dokumentami w sposób ustrukturyzowany i efektywny, szczególnie w większych organizacjach, w których różne działy mają unikalne potrzeby operacyjne i wymagania dotyczące zgodności. Jasne udokumentowanie tej karty w instrukcji systemu ERP pomoże użytkownikom zrozumieć jej znaczenie i skutecznie wdrożyć ją w przepływach pracy. Jeśli potrzebne są dodatkowe opisy dostosowania lub funkcjonalności, można je rozszerzyć na podstawie konkretnych potrzeb organizacyjnych i możliwości technicznych.

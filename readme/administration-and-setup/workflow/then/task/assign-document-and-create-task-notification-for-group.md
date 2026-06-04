@@ -2,63 +2,63 @@
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Cel**
 
-The "**Assign Document and Create Task/Notification for Group**" workflow card assigns a document to a specified group, creates a task or notification with customizable details, and optionally sends an email notification to the group. This card also supports assigning a numeric priority value to determine the order of execution.
+Karta przepływu pracy "**Assign Document and Create Task/Notification for Group**" przypisuje dokument do określonej grupy, tworzy zadanie lub powiadomienie z konfigurowalnymi szczegółami i opcjonalnie wysyła powiadomienie e-mail do grupy. Karta ta obsługuje również przypisywanie numerycznej wartości priorytetu w celu określenia kolejności wykonywania.
 
-## **Components of the Card**
+## **Komponenty karty**
 
 1. **Group Name**
-   * **Description:** Specifies the group that will receive the task or notification.
-   * **Detail:** A dropdown to choose the name of the group to which the document and task/notification will be assigned.
+   * **Opis:** Określa grupę, która otrzyma zadanie lub powiadomienie.
+   * **Szczegóły:** Lista rozwijana do wyboru nazwy grupy, do której zostanie przypisany dokument i zadanie/powiadomienie.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the group.
-   * **Detail:** A dropdown to select either "Task" or "Notification" based on the desired action.
+   * **Opis:** Określa typ akcji do utworzenia dla grupy.
+   * **Szczegóły:** Lista rozwijana do wyboru "Task" lub "Notification" w zależności od pożądanej akcji.
 3. **Title**
-   * **Description:** Provides the title of the task or notification.
-   * **Detail:** A field to add a concise, descriptive title for the task or notification.
+   * **Opis:** Zapewnia tytuł zadania lub powiadomienia.
+   * **Szczegóły:** Pole do dodania zwięzłego, opisowego tytułu zadania lub powiadomienia.
 4. **Description**
-   * **Description:** Further describes the task or notification.
-   * **Detail:** A field to provide additional details about the task’s purpose or the notification’s content.
+   * **Opis:** Dokładniej opisuje zadanie lub powiadomienie.
+   * **Szczegóły:** Pole do podania dodatkowych szczegółów o celu zadania lub treści powiadomienia.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Opis:** Definiuje poziom pilności zadania lub powiadomienia.
+   * **Opcje:**
+     * **High:** Wymaga natychmiastowej uwagi.
+     * **Medium:** Ważne, ale nie pilne.
+     * **Low:** Można obsłużyć później.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the group.
-   * **Options:**
-     * **True:** Sends an email notification.
-     * **False:** Does not send an email.
+   * **Opis:** Konfiguruje, czy powiadomienie e-mail jest wysyłane do grupy.
+   * **Opcje:**
+     * **True:** Wysyła powiadomienie e-mail.
+     * **False:** Nie wysyła e-maila.
 7. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where a lower number indicates a higher priority.
+   * **Opis:** Ustawia numeryczny priorytet dla przypisania dokumentu.
+   * **Szczegóły:** Pole do wprowadzenia wartości liczbowej, gdzie niższa liczba oznacza wyższy priorytet.
 
-## **Functionality**
+## **Funkcjonalność**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the configured workflow conditions are satisfied.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the group specified in the "Group Name" field. A task or notification is created with the configured title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email notification is sent to the group to inform them about the task or notification.
+* **Ocena warunku:**\
+  Karta wykonuje swoje akcje tylko wtedy, gdy skonfigurowane warunki przepływu pracy są spełnione.
+* **Przypisanie dokumentu i utworzenie zadania/powiadomienia:**\
+  Dokument jest przypisywany do grupy określonej w polu "Group Name". Tworzone jest zadanie lub powiadomienie ze skonfigurowanym tytułem, opisem i poziomem priorytetu.
+* **Powiadomienie e-mail:**\
+  Jeśli "Send Mail" jest ustawione na True, powiadomienie e-mail jest wysyłane do grupy, aby poinformować ją o zadaniu lub powiadomieniu.
 
-## **Setup and Configuration**
+## **Konfiguracja**
 
 1. **Define Group Name:**
-   * Input the name of the group in the Group Name field.
+   * Wprowadź nazwę grupy w polu Group Name.
 2. **Select Task/Notification:**
-   * Choose "Task" or "Notification" from the Task/Notification dropdown.
+   * Wybierz "Task" lub "Notification" z listy rozwijanej Task/Notification.
 3. **Set Task/Notification Details:**
-   * Enter the Title and Description for the task or notification.
-   * Select the Priority from the dropdown (High, Medium, or Low).
+   * Wprowadź Title i Description dla zadania lub powiadomienia.
+   * Wybierz Priority z listy rozwijanej (High, Medium lub Low).
 4. **Enable Email Notification:**
-   * Configure the Send Mail option to True or False, depending on whether an email notification should be sent.
+   * Skonfiguruj opcję Send Mail na True lub False, w zależności od tego, czy powiadomienie e-mail powinno zostać wysłane.
 5. **Assign Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment’s priority, where lower values take precedence.
-6. Save the card configuration and activate the workflow.
+   * Wprowadź wartość liczbową w polu Value, aby określić priorytet przypisania, gdzie niższe wartości mają pierwszeństwo.
+6. Zapisz konfigurację karty i aktywuj przepływ pracy.
 
-## **Conclusion**
+## **Podsumowanie**
 
-The "Assign Document and Create Task/Notification for Group" workflow card ensures documents are assigned to the appropriate group while creating tasks or notifications with customizable priority and email notification options. This streamlines document management and enhances workflow efficiency.
+Karta przepływu pracy "Assign Document and Create Task/Notification for Group" zapewnia, że dokumenty są przypisywane do odpowiedniej grupy, jednocześnie tworząc zadania lub powiadomienia z konfigurowalnymi opcjami priorytetu i powiadomień e-mail. Usprawnia to zarządzanie dokumentami i zwiększa efektywność przepływu pracy.

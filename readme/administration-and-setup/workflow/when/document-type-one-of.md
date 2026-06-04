@@ -2,30 +2,30 @@
 
 <figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This DocBits card ensures the correct classification of a document by verifying if it matches any of the specified document types. This is useful for situations where a document could belong to more than one category, allowing for broader validation and automated handling.
+Ta karta DocBits zapewnia prawidłową klasyfikację dokumentu, weryfikując, czy odpowiada on któremukolwiek z określonych typów dokumentów. Jest to przydatne w sytuacjach, gdy dokument może należeć do więcej niż jednej kategorii, umożliwiając szerszą walidację i zautomatyzowaną obsługę.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Multiple Document Type Validation:** This card allows users to check if a document matches any of a set of specified document types, ensuring flexible categorization for more complex document workflows.
-* **Operator:** Users can define conditions to validate the document against multiple types. Available operators include:
-  * **Is:** Confirms that the document matches one of the specified document types.
-  * **Is Not:** Ensures that the document does not match any of the selected document types.
-* **Document Types:** Users can select from multiple supported document types, including:
-  * **Invoice:** Financial records submitted for payment.
-  * **Debit Note:** Documents indicating an adjustment that increases the amount owed.
-  * **Credit Note:** Documents indicating a reduction in the amount owed.
-  * **Purchase Order:** Documents detailing a buyer’s order.
-  * **Order Confirmation:** Documents that confirm an order has been accepted.
-  * **Advance Shipment Notice:** Documents notifying of an upcoming shipment.
+* **Walidacja wielu typów dokumentów:** Ta karta umożliwia użytkownikom sprawdzenie, czy dokument odpowiada któremukolwiek z zestawu określonych typów dokumentów, zapewniając elastyczną kategoryzację dla bardziej złożonych przepływów pracy dokumentów.
+* **Operator:** Użytkownicy mogą definiować warunki walidacji dokumentu względem wielu typów. Dostępne operatory obejmują:
+  * **Is:** Potwierdza, że dokument odpowiada jednemu z określonych typów dokumentów.
+  * **Is Not:** Zapewnia, że dokument nie odpowiada żadnemu z wybranych typów dokumentów.
+* **Document Types:** Użytkownicy mogą wybierać spośród wielu obsługiwanych typów dokumentów, w tym:
+  * **Invoice:** Dokumenty finansowe przedłożone do zapłaty.
+  * **Debit Note:** Dokumenty wskazujące korektę zwiększającą należną kwotę.
+  * **Credit Note:** Dokumenty wskazujące zmniejszenie należnej kwoty.
+  * **Purchase Order:** Dokumenty szczegółowo opisujące zamówienie kupującego.
+  * **Order Confirmation:** Dokumenty potwierdzające przyjęcie zamówienia.
+  * **Advance Shipment Notice:** Dokumenty powiadamiające o nadchodzącej dostawie.
 
-## **Usage:**
+## **Zastosowanie:**
 
-This card is ideal for document managers and administrators who need to ensure that documents are categorized into one of several types. It is especially useful for document workflows where a document may be classified under multiple categories, improving automation and classification accuracy.
+Ta karta jest idealna dla menedżerów dokumentów i administratorów, którzy muszą zapewnić, że dokumenty są kategoryzowane do jednego z kilku typów. Jest szczególnie przydatna dla przepływów pracy dokumentów, w których dokument może być sklasyfikowany w wielu kategoriach, poprawiając automatyzację i dokładność klasyfikacji.
 
-## **Example Scenario:**
+## **Przykładowy scenariusz:**
 
-* A user uploads a document that could be either an "Invoice" or "Debit Note." Using the "Is" operator, the card confirms that the document matches one of the selected types, allowing the system to apply the appropriate rules and categorization.
+* Użytkownik przesyła dokument, który może być "Invoice" lub "Debit Note". Przy użyciu operatora "Is" karta potwierdza, że dokument odpowiada jednemu z wybranych typów, umożliwiając systemowi zastosowanie odpowiednich reguł i kategoryzacji.
 
-By using the "Multiple Document Type Validation" card, organizations can enhance workflow flexibility, automate categorization, and ensure that documents are properly handled even when multiple types are applicable.
+Korzystając z karty "Multiple Document Type Validation", organizacje mogą zwiększyć elastyczność przepływu pracy, zautomatyzować kategoryzację i zapewnić właściwą obsługę dokumentów nawet wtedy, gdy zastosowanie ma wiele typów.

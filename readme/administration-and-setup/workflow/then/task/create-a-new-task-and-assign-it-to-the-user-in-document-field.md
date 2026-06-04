@@ -2,64 +2,64 @@
 
 <figure><img src="../../../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Create Field-Based Task or Notification"** workflow card is used to create tasks or notifications dynamically assigned to users identified within specific document fields. This card provides an optional fallback mechanism to ensure smooth workflow execution even when the document field does not specify a valid user.
+Karta przepływu pracy **"Create Field-Based Task or Notification"** służy do tworzenia zadań lub powiadomień dynamicznie przypisanych do użytkowników zidentyfikowanych w określonych polach dokumentu. Karta ta zapewnia opcjonalny mechanizm zapasowy, aby zapewnić płynne wykonywanie przepływu pracy nawet wtedy, gdy pole dokumentu nie określa prawidłowego użytkownika.
 
-## **Components of the Card:**&#x20;
+## **Komponenty karty:**&#x20;
 
 1. **Title**
-   * **Description**: Specifies the task or notification title.
-   * **Detail**: Used to name and identify the task or notification being created.
+   * **Opis**: Określa tytuł zadania lub powiadomienia.
+   * **Szczegóły**: Służy do nazwania i identyfikacji tworzonego zadania lub powiadomienia.
 2. **Description**
-   * **Description**: Provides additional details about the task or notification.
-   * **Detail**: Ensures the recipient understands the purpose and context of the task or notification.
+   * **Opis**: Dostarcza dodatkowych szczegółów o zadaniu lub powiadomieniu.
+   * **Szczegóły**: Zapewnia, że odbiorca rozumie cel i kontekst zadania lub powiadomienia.
 3. **Priority**
-   * **Description**: Defines the urgency of the task or notification.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but less urgent.
-     * **Low**: Can be addressed at a later time.
+   * **Opis**: Definiuje pilność zadania lub powiadomienia.
+   * **Opcje**:
+     * **High**: Wymaga natychmiastowej uwagi.
+     * **Medium**: Ważne, ale mniej pilne.
+     * **Low**: Można obsłużyć później.
 4. **Field Name**
-   * **Description**: Specifies the document field that will be used to assign the task or notification.
-   * **Detail**: The field selected will dynamically determine the user to whom the task or notification will be assigned. If the field is empty or invalid, the task or notification will be assigned to the fallback user selected from the dropdown list.
+   * **Opis**: Określa pole dokumentu, które zostanie użyte do przypisania zadania lub powiadomienia.
+   * **Szczegóły**: Wybrane pole dynamicznie określi użytkownika, do którego zostanie przypisane zadanie lub powiadomienie. Jeśli pole jest puste lub nieprawidłowe, zadanie lub powiadomienie zostanie przypisane do użytkownika zapasowego wybranego z listy rozwijanej.
 5. **Email Notification**
-   * **Description**: Configures whether the assigned user is notified by email.
-   * **Options**:
-     * **True**: Sends an email notification to the assigned user.
-     * **False**: No email notification is sent.
+   * **Opis**: Konfiguruje, czy przypisany użytkownik jest powiadamiany za pośrednictwem e-maila.
+   * **Opcje**:
+     * **True**: Wysyła powiadomienie e-mail do przypisanego użytkownika.
+     * **False**: Nie jest wysyłane powiadomienie e-mail.
 6. **Fallback User**
-   * **Description**: Allows the selection of a user from a dropdown list to assign the task or notification when no valid user is found in the document field.
-   * **Detail**: Ensures the task or notification is assigned even if the document field is empty or invalid.
+   * **Opis**: Umożliwia wybór użytkownika z listy rozwijanej w celu przypisania zadania lub powiadomienia, gdy w polu dokumentu nie zostanie znaleziony prawidłowy użytkownik.
+   * **Szczegóły**: Zapewnia przypisanie zadania lub powiadomienia, nawet jeśli pole dokumentu jest puste lub nieprawidłowe.
 
-## **Additional Components in Version 3:**
+## **Dodatkowe komponenty w Version 3:**
 
 1. **Notification Type**&#x20;
-   * **Description**: Specifies whether the card creates a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task assigned to the specified user.
-     * **Notification**: Sends a notification instead of creating a task.
+   * **Opis**: Określa, czy karta tworzy zadanie, czy powiadomienie.
+   * **Opcje**:
+     * **Task**: Tworzy zadanie przypisane do określonego użytkownika.
+     * **Notification**: Wysyła powiadomienie zamiast tworzenia zadania.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation**:\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task or Notification Creation**:
-  * Assigns the task or notification to the user identified in the document field.
-  * In Version 3, allows creating either a task or a notification.
-* **Fallback Mechanism**:\
-  If the document field does not identify a valid user, the card assigns the task or notification to the fallback user selected from the dropdown list.
-* **Email Notification**:\
-  Sends an email notification to the assigned user if configured to do so.
+* **Ocena warunku**:\
+  Karta wykonuje swoją akcję tylko wtedy, gdy zarówno **"Where"**, jak i **"And Sections"** są prawdziwe.
+* **Tworzenie zadania lub powiadomienia**:
+  * Przypisuje zadanie lub powiadomienie do użytkownika zidentyfikowanego w polu dokumentu.
+  * W Version 3 umożliwia utworzenie zadania lub powiadomienia.
+* **Mechanizm zapasowy**:\
+  Jeśli pole dokumentu nie identyfikuje prawidłowego użytkownika, karta przypisuje zadanie lub powiadomienie do użytkownika zapasowego wybranego z listy rozwijanej.
+* **Powiadomienie e-mail**:\
+  Wysyła powiadomienie e-mail do przypisanego użytkownika, jeśli tak skonfigurowano.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-1. **Define Task or Notification Details**: Enter the title, description, and priority.
-2. **Select the Document Field**: Choose the field that specifies the user for task or notification assignment.
-3. **Enable Email Notification**: Specify whether an email notification should be sent to the assigned user.
-4. **Select Fallback User**: Choose a fallback user from the dropdown list for assignment if the document field does not identify a valid user.
-5. **Specify Notification Type (Version 3)**: Indicate whether the card creates a task or notification.
+1. **Define Task or Notification Details**: Wprowadź tytuł, opis i priorytet.
+2. **Select the Document Field**: Wybierz pole, które określa użytkownika do przypisania zadania lub powiadomienia.
+3. **Enable Email Notification**: Określ, czy powiadomienie e-mail powinno zostać wysłane do przypisanego użytkownika.
+4. **Select Fallback User**: Wybierz użytkownika zapasowego z listy rozwijanej do przypisania, jeśli pole dokumentu nie identyfikuje prawidłowego użytkownika.
+5. **Specify Notification Type (Version 3)**: Wskaż, czy karta tworzy zadanie, czy powiadomienie.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Create Field-Based Task or Notification"** workflow card streamlines task and notification management by dynamically assigning responsibilities based on document fields. Its fallback user mechanism and enhanced options in Version 3 provide flexibility, ensuring tasks or notifications are always assigned, even when document data is incomplete.
+Karta przepływu pracy **"Create Field-Based Task or Notification"** usprawnia zarządzanie zadaniami i powiadomieniami poprzez dynamiczne przypisywanie obowiązków na podstawie pól dokumentu. Jej mechanizm użytkownika zapasowego i rozszerzone opcje w Version 3 zapewniają elastyczność, gwarantując, że zadania lub powiadomienia są zawsze przypisywane, nawet gdy dane dokumentu są niekompletne.

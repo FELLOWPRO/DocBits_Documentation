@@ -2,55 +2,55 @@
 
 <figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-The **"Create Task with Fallback"** workflow card ensures efficient task delegation by assigning tasks to specific roles—dispatcher or purchaser—while incorporating a fallback mechanism to prevent task assignment failures. This card improves workflow reliability and adaptability in dynamic scenarios.
+Karta przepływu pracy **"Create Task with Fallback"** zapewnia efektywne delegowanie zadań poprzez przypisywanie zadań do określonych ról — dyspozytora lub purchasera — przy jednoczesnym zastosowaniu mechanizmu zapasowego, aby zapobiec niepowodzeniom przypisywania zadań. Karta ta poprawia niezawodność i elastyczność przepływu pracy w dynamicznych scenariuszach.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Title**
-   * **Description**: Specifies the title of the task being created.
-   * **Detail**: Provides a concise identifier for the task.
+   * **Opis**: Określa tytuł tworzonego zadania.
+   * **Szczegóły**: Zapewnia zwięzły identyfikator zadania.
 2. **Description**
-   * **Description**: Describes the purpose or context of the task.
-   * **Detail**: Clarifies the details of the task.
+   * **Opis**: Opisuje cel lub kontekst zadania.
+   * **Szczegóły**: Wyjaśnia szczegóły zadania.
 3. **Priority**
-   * **Description**: Sets the urgency level for the task.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but not urgent.
-     * **Low**: Can be addressed later.
+   * **Opis**: Ustawia poziom pilności zadania.
+   * **Opcje**:
+     * **High**: Wymaga natychmiastowej uwagi.
+     * **Medium**: Ważne, ale nie pilne.
+     * **Low**: Można obsłużyć później.
 4. **Assigned Role**
-   * **Description**: Specifies the primary role to which the task is assigned.
-   * **Options**:
-     * **Disponent**: Assigns the task to the disponent.
-     * **Purchaser**: Assigns the task to the purchaser.
+   * **Opis**: Określa podstawową rolę, do której przypisywane jest zadanie.
+   * **Opcje**:
+     * **Disponent**: Przypisuje zadanie do disponenta.
+     * **Purchaser**: Przypisuje zadanie do purchasera.
 5. **Email Notification**
-   * **Description**: Enables notifying the assigned user via email.
-   * **Options**:
-     * **True**: Sends an email notification to the user.
-     * **False**: No email notification is sent.
+   * **Opis**: Umożliwia powiadomienie przypisanego użytkownika za pośrednictwem e-maila.
+   * **Opcje**:
+     * **True**: Wysyła powiadomienie e-mail do użytkownika.
+     * **False**: Nie jest wysyłane powiadomienie e-mail.
 6. **Fallback User**
-   * **Description**: Provides a fallback option for task assignment if the recipient role is not found.
-   * **Detail**: Allows selecting a user from a dropdown list to ensure task delegation.
+   * **Opis**: Zapewnia opcję zapasową dla przypisania zadania, jeśli rola odbiorcy nie zostanie znaleziona.
+   * **Szczegóły**: Umożliwia wybór użytkownika z listy rozwijanej w celu zapewnienia delegowania zadania.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* **Condition Evaluation**:\
-  The card executes only if the conditions in the **"Where"** and **"And Sections"** are met.
-* **Task Assignment**:
-  * The task is assigned to the selected role (dispatcher or purchaser).
-  * If the specified role is not found, the task is assigned to a user from the fallback dropdown list.
-* **Email Notification**:\
-  Sends an email to the assigned user if email notification is enabled.
+* **Ocena warunku**:\
+  Karta wykonuje się tylko wtedy, gdy warunki w sekcjach **"Where"** i **"And Sections"** są spełnione.
+* **Przypisanie zadania**:
+  * Zadanie jest przypisywane do wybranej roli (disponent lub purchaser).
+  * Jeśli określona rola nie zostanie znaleziona, zadanie jest przypisywane do użytkownika z zapasowej listy rozwijanej.
+* **Powiadomienie e-mail**:\
+  Wysyła e-mail do przypisanego użytkownika, jeśli powiadomienie e-mail jest włączone.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-1. **Specify Task Details**: Enter the title, description, and priority of the task.
-2. **Select Primary Role**: Choose the role to which the task will be assigned (dispatcher or purchaser).
-3. **Configure Fallback User**: Select a fallback user from the dropdown list to ensure task assignment if the primary role is not found.
-4. **Enable Email Notification**: Indicate whether the assigned user should receive an email notification.
+1. **Specify Task Details**: Wprowadź tytuł, opis i priorytet zadania.
+2. **Select Primary Role**: Wybierz rolę, do której zostanie przypisane zadanie (disponent lub purchaser).
+3. **Configure Fallback User**: Wybierz użytkownika zapasowego z listy rozwijanej, aby zapewnić przypisanie zadania, jeśli podstawowa rola nie zostanie znaleziona.
+4. **Enable Email Notification**: Wskaż, czy przypisany użytkownik powinien otrzymać powiadomienie e-mail.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The **"Create Task with Fallback"** workflow card ensures seamless task delegation by integrating a fallback mechanism. By assigning tasks based on roles and providing an alternate user option, it enhances reliability and flexibility in task management processes.
+Karta przepływu pracy **"Create Task with Fallback"** zapewnia bezproblemowe delegowanie zadań poprzez zintegrowanie mechanizmu zapasowego. Przypisując zadania na podstawie ról i zapewniając alternatywną opcję użytkownika, zwiększa niezawodność i elastyczność w procesach zarządzania zadaniami.

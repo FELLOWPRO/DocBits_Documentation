@@ -1,6 +1,6 @@
 # Card description
 
-## **When Cards: Document type**
+## **Karty When: Typ dokumentu**
 
 
 
@@ -8,7 +8,7 @@
 
 <figure><img src="https://lh7-us.googleusercontent.com/8Pt-riQL3WjD0KiWKQhHIEYfnsvTRWcLkNcAReJVEf5ESegVWxLfkxhq9myJv_uzlnbnSFZ9Q32-1EIb0GIFQyC5TylOFBl3x0PMJz3w1N5EUbwZEl5xfRkB3M1jMRZvQ61tqTwdFPL8dsSE6NYlmEU" alt=""><figcaption></figcaption></figure>
 
-A workflow can be started with these two cards. Here you can decide with which document type the workflow begins or whether it should not affect selected document types.
+Przepływ pracy można uruchomić za pomocą tych dwóch kart. Tutaj możesz zdecydować, od jakiego typu dokumentu przepływ pracy się rozpoczyna lub czy nie powinien wpływać na wybrane typy dokumentów.
 
 \
 
@@ -17,7 +17,7 @@ A workflow can be started with these two cards. Here you can decide with which d
 
 <figure><img src="../../../../.gitbook/assets/docbits_settings_email.png" alt="DocBits Ustawienia E-mail"><figcaption></figcaption></figure>
 
-This card can also be used to specify multiple document types that the workflow should affect.
+Tej karty można również użyć do określenia wielu typów dokumentów, na które przepływ pracy powinien wpływać.
 
 
 

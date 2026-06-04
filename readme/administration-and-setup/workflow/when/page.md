@@ -2,36 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt=""><figcaption></figcaption></figure>
 
-**Purpose**
+**Cel**
 
-This workflow card is specifically designed to perform predefined operations on documents categorized by type. It streamlines the handling of various document forms within an ERP system, ensuring that each type is processed according to its unique requirements and organizational policies.
+Ta karta przepływu pracy jest specjalnie zaprojektowana do wykonywania predefiniowanych operacji na dokumentach kategoryzowanych według typu. Usprawnia obsługę różnych form dokumentów w systemie ERP, zapewniając, że każdy typ jest przetwarzany zgodnie ze swoimi unikalnymi wymaganiami i politykami organizacyjnymi.
 
-**Components of the Card**
+**Komponenty karty**
 
 1. **Operator**
-   * **Description**: Specifies the action to be executed on the document.
-   * **Examples**: Common operations include "Validate", "Store", "Process", "Send", etc. Each operator defines a set of tasks that the system automates based on the document type.
+   * **Opis**: Określa akcję, która ma zostać wykonana na dokumencie.
+   * **Przykłady**: Typowe operacje obejmują "Validate", "Store", "Process", "Send" itp. Każdy operator definiuje zestaw zadań, które system automatyzuje na podstawie typu dokumentu.
 2. **Document Type**
-   * **Description**: Identifies the category of the document to which the operation will apply.
-   * **Detail**: Types could include invoices, purchase orders, contracts, employee records, etc. Each type has specific rules and workflows associated with it.
+   * **Opis**: Identyfikuje kategorię dokumentu, do której zostanie zastosowana operacja.
+   * **Szczegóły**: Typy mogą obejmować faktury, zamówienia zakupu, umowy, rekordy pracowników itp. Każdy typ ma powiązane z nim określone reguły i przepływy pracy.
 
-**Functionality**
+**Funkcjonalność**
 
-* **Document Classification**: Automatically identifies and classifies documents as they enter the ERP system based on their metadata, content, or other identifiers.
-* **Operation Execution**: Executes the specified operation for documents of the identified type. This execution could involve:
-  * **Validate**: Checking the document for completeness, correctness, and compliance with standards.
-  * **Store**: Saving the document in the designated repository with proper indexing.
-  * **Process**: Applying business logic to the document, such as calculating totals on an invoice or updating database records.
-  * **Send**: Distributing the document to other business units or external partners based on workflow requirements.
-* **Compliance and Security**: Ensures that all operations adhere to regulatory compliance and security protocols specific to the document type.
-* **Automation and Integration**: Seamlessly integrates with other workflows in the ERP system, facilitating automated transitions between different operational stages.
+* **Klasyfikacja dokumentu**: Automatycznie identyfikuje i klasyfikuje dokumenty w momencie ich wejścia do systemu ERP na podstawie ich metadanych, treści lub innych identyfikatorów.
+* **Wykonanie operacji**: Wykonuje określoną operację dla dokumentów zidentyfikowanego typu. Wykonanie to może obejmować:
+  * **Validate**: Sprawdzanie dokumentu pod kątem kompletności, poprawności i zgodności ze standardami.
+  * **Store**: Zapisywanie dokumentu w wyznaczonym repozytorium z odpowiednim indeksowaniem.
+  * **Process**: Stosowanie logiki biznesowej do dokumentu, takiej jak obliczanie sum na fakturze lub aktualizacja rekordów bazy danych.
+  * **Send**: Dystrybucja dokumentu do innych jednostek biznesowych lub partnerów zewnętrznych na podstawie wymagań przepływu pracy.
+* **Zgodność i bezpieczeństwo**: Zapewnia, że wszystkie operacje są zgodne z przepisami regulacyjnymi i protokołami bezpieczeństwa specyficznymi dla typu dokumentu.
+* **Automatyzacja i integracja**: Bezproblemowo integruje się z innymi przepływami pracy w systemie ERP, ułatwiając zautomatyzowane przejścia między różnymi etapami operacyjnymi.
 
-**User Interactions**
+**Interakcje użytkownika**
 
-* **Setup and Configuration**: Users configure the card by defining both the operator and the document type. Additional parameters might be set depending on the complexity of the operation.
-* **Monitoring and Reporting**: Users can monitor the operations applied to various document types through a dashboard that provides real-time status updates, logs, and reports.
-* **Error Handling and Overrides**: Provides mechanisms for handling errors or exceptions during operation execution. Users can intervene manually if necessary, adjusting processes or rerouting documents.
+* **Konfiguracja**: Użytkownicy konfigurują kartę, definiując zarówno operator, jak i typ dokumentu. W zależności od złożoności operacji można ustawić dodatkowe parametry.
+* **Monitorowanie i raportowanie**: Użytkownicy mogą monitorować operacje stosowane do różnych typów dokumentów za pośrednictwem pulpitu, który dostarcza aktualizacji statusu w czasie rzeczywistym, dzienniki i raporty.
+* **Obsługa błędów i nadpisania**: Zapewnia mechanizmy obsługi błędów lub wyjątków podczas wykonywania operacji. Użytkownicy mogą w razie potrzeby interweniować ręcznie, dostosowując procesy lub przekierowując dokumenty.
 
-#### Conclusion
+#### Podsumowanie
 
-The "Document Type Operation" workflow card is a vital component for managing document-based processes within an ERP system efficiently. It automates routine tasks, reduces errors, and ensures consistency across similar types of documents, thereby enhancing overall productivity and compliance. Documenting this card effectively in your system's manual will assist users in understanding its functionality and how to leverage it to optimize document management processes in their daily operations. If there are additional specific details or examples that need to be included based on your ERP system's capabilities or industry-specific needs, those should be tailored accordingly.
+Karta przepływu pracy "Document Type Operation" jest kluczowym komponentem do efektywnego zarządzania procesami opartymi na dokumentach w systemie ERP. Automatyzuje rutynowe zadania, redukuje błędy i zapewnia spójność w podobnych typach dokumentów, zwiększając tym samym ogólną produktywność i zgodność. Skuteczne udokumentowanie tej karty w instrukcji systemu pomoże użytkownikom zrozumieć jej funkcjonalność oraz sposób jej wykorzystania do optymalizacji procesów zarządzania dokumentami w codziennych operacjach. Jeśli istnieją dodatkowe konkretne szczegóły lub przykłady, które należy uwzględnić na podstawie możliwości systemu ERP lub potrzeb specyficznych dla branży, należy je odpowiednio dostosować.

@@ -2,56 +2,56 @@
 
 <figure><img src="../../../../.gitbook/assets/Then_Call_API.png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Objectif :
 
-The **"Call API"** workflow card allows users to make HTTP requests to specified API endpoints directly from the workflow. This card supports various HTTP methods and enables dynamic interaction with external systems by sending parameters and data. It streamlines integration with third-party services and custom APIs, ensuring seamless communication.
+La carte de workflow **« Call API »** permet aux utilisateurs d'effectuer des requêtes HTTP vers des points de terminaison d'API spécifiés directement depuis le workflow. Cette carte prend en charge diverses méthodes HTTP et permet une interaction dynamique avec des systèmes externes en envoyant des paramètres et des données. Elle rationalise l'intégration avec des services tiers et des API personnalisées, garantissant une communication fluide.
 
-## Components of the Card:
+## Composants de la carte :
 
 1. **API Endpoint**
-   * **Description:** The target endpoint of the **DocBits API** that this card will interact with.
-   * **Detail:** A text field where users specify the endpoint for the API request.
+   * **Description :** le point de terminaison cible de l'**API DocBits** avec lequel cette carte interagira.
+   * **Détail :** un champ de texte où les utilisateurs spécifient le point de terminaison de la requête d'API.
 2. **HTTP Method**
-   * **Description:** The type of HTTP request to be made.
-   * **Options:**
-     1. **GET:** Retrieves data from the specified endpoint.
-     2. **POST:** Sends data to the endpoint.
-     3. **PUT:** Updates existing data at the endpoint.
-     4. **DELETE:** Removes data at the endpoint.
+   * **Description :** le type de requête HTTP à effectuer.
+   * **Options :**
+     1. **GET :** récupère des données depuis le point de terminaison spécifié.
+     2. **POST :** envoie des données au point de terminaison.
+     3. **PUT :** met à jour des données existantes au point de terminaison.
+     4. **DELETE :** supprime des données au point de terminaison.
 3. **Parameters**
-   * **Description:** Query parameters to be included in the API request.
-   * **Detail:** A text field or list for entering key-value pairs for the request URL.
+   * **Description :** les paramètres de requête à inclure dans la requête d'API.
+   * **Détail :** un champ de texte ou une liste pour saisir des paires clé-valeur pour l'URL de la requête.
 4. **Data**
-   1. **Description:** The payload to be sent in the body of the API request (applicable for POST and PUT methods).
-   2. **Detail:** A field for entering the data in JSON.
+   1. **Description :** la charge utile à envoyer dans le corps de la requête d'API (applicable aux méthodes POST et PUT).
+   2. **Détail :** un champ pour saisir les données au format JSON.
 
-## Functionality:
+## Fonctionnalité :
 
-**Condition Evaluation:** The system evaluates the conditions defined in the "Where" and "And Sections":
+**Évaluation de la condition :** le système évalue les conditions définies dans les sections « Where » et « And » :
 
-* If both conditions are **true**, the API request is executed as configured.
-* If either condition is **false**, the card does not execute, and no API call is made.
+* Si les deux conditions sont **vraies**, la requête d'API est exécutée telle que configurée.
+* Si l'une des conditions est **fausse**, la carte ne s'exécute pas et aucun appel d'API n'est effectué.
 
-**API Request Execution:**
+**Exécution de la requête d'API :**
 
-* The card sends the HTTP request to the specified endpoint using the selected method.
-* Any provided parameters are appended to the URL, and the data is included in the request body (if applicable).
+* La carte envoie la requête HTTP au point de terminaison spécifié à l'aide de la méthode sélectionnée.
+* Tous les paramètres fournis sont ajoutés à l'URL, et les données sont incluses dans le corps de la requête (le cas échéant).
 
-## Setup and Configuration:
+## Mise en place et configuration :
 
-1. **Define API Endpoint:**\
-   Enter the URL of the API you wish to call.
-2. **Select HTTP Method:**\
-   Choose one of the supported methods (GET, POST, PUT, DELETE) based on your API's requirements.
-3. **Provide Parameters:**\
-   Add any required query parameters as key-value pairs.
-4. **Include Data (if applicable):**\
-   For POST or PUT methods, specify the data to be sent in the request body.
-5. **Condition Configuration:**\
-   Configure the "Where" and "And Sections" to define when the API call should occur.
+1. **Définir le point de terminaison de l'API :**\
+   Saisissez l'URL de l'API que vous souhaitez appeler.
+2. **Sélectionner la méthode HTTP :**\
+   Choisissez l'une des méthodes prises en charge (GET, POST, PUT, DELETE) selon les exigences de votre API.
+3. **Fournir les paramètres :**\
+   Ajoutez tous les paramètres de requête requis sous forme de paires clé-valeur.
+4. **Inclure les données (le cas échéant) :**\
+   Pour les méthodes POST ou PUT, spécifiez les données à envoyer dans le corps de la requête.
+5. **Configuration des conditions :**\
+   Configurez les sections « Where » et « And » pour définir quand l'appel d'API doit avoir lieu.
 
-## Conclusion:
+## Conclusion :
 
-The **"Call API"** workflow card enhances workflow automation by enabling direct interaction with external systems. By providing flexible configurations for endpoints, methods, and data, it ensures workflows can integrate seamlessly with third-party APIs or custom backends. The ability to conditionally execute API calls ensures precision and efficiency in automating external communications.
+La carte de workflow **« Call API »** améliore l'automatisation du workflow en permettant une interaction directe avec des systèmes externes. En offrant des configurations flexibles pour les points de terminaison, les méthodes et les données, elle garantit que les workflows peuvent s'intégrer en toute fluidité à des API tierces ou à des backends personnalisés. La possibilité d'exécuter conditionnellement les appels d'API assure précision et efficacité dans l'automatisation des communications externes.
 
 ***

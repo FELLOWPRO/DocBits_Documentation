@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card assigns a document to either a **Disponent** or **Purchaser**. If no valid user is found, a fallback user is selected to ensure the document is always assigned to someone.
+La carte de workflow **« Assign Document to Disponent / Purchaser »** assigne un document soit à un **Disponent**, soit à un **Purchaser**. Si aucun utilisateur valide n'est trouvé, un utilisateur de repli est sélectionné pour garantir que le document est toujours assigné à quelqu'un.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
 1. **Disponent / Purchaser**
-   * **Description:** Specifies whether the document will be assigned to a Disponent or Purchaser.
-   * **Options:**
-     * **Disponent:** Assign the document to the Disponent.
-     * **Purchaser:** Assign the document to the Purchaser.
+   * **Description :** spécifie si le document sera assigné à un Disponent ou à un Purchaser.
+   * **Options :**
+     * **Disponent :** assigne le document au Disponent.
+     * **Purchaser :** assigne le document au Purchaser.
 2. **Fallback User**
-   * **Description:** Specifies a fallback user in case the document cannot be assigned to the selected Disponent or Purchaser.
-   * **Detail:** The dropdown list of available users lets you choose a fallback user to ensure the document is assigned even if the primary user cannot be determined.
+   * **Description :** spécifie un utilisateur de repli au cas où le document ne pourrait pas être assigné au Disponent ou au Purchaser sélectionné.
+   * **Détail :** la liste déroulante des utilisateurs disponibles vous permet de choisir un utilisateur de repli pour garantir que le document est assigné même si l'utilisateur principal ne peut pas être déterminé.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to either the **Disponent** or **Purchaser** as selected. If the selected person is unavailable or not valid, the document is assigned to the fallback user.
+* **Évaluation de la condition :**\
+  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* **Attribution du document :**\
+  La carte assigne le document soit au **Disponent**, soit au **Purchaser** selon la sélection. Si la personne sélectionnée n'est pas disponible ou n'est pas valide, le document est assigné à l'utilisateur de repli.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-* **Select Disponent / Purchaser:**\
-  Choose whether to assign the document to the **Disponent** or **Purchaser**.
-* **Select Fallback User:**\
-  Choose a fallback user from the dropdown list who will receive the document if the primary assignment is not possible.
+* **Sélectionner Disponent / Purchaser :**\
+  Choisissez d'assigner le document au **Disponent** ou au **Purchaser**.
+* **Sélectionner l'utilisateur de repli :**\
+  Choisissez un utilisateur de repli dans la liste déroulante qui recevra le document si l'attribution principale n'est pas possible.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card ensures the document is always assigned, either to the selected Disponent/Purchaser or, if needed, to the fallback user. This minimizes workflow disruptions and ensures document processing continues smoothly.
+La carte de workflow **« Assign Document to Disponent / Purchaser »** garantit que le document est toujours assigné, soit au Disponent/Purchaser sélectionné, soit, si nécessaire, à l'utilisateur de repli. Cela minimise les interruptions du workflow et garantit que le traitement des documents se poursuit en toute fluidité.

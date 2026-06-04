@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (309).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Objectif :
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card uses AI to automatically compute surcharge amounts based on cost increases. It ensures consistent and accurate surcharge calculations, streamlining workflows and reducing manual effort.
+La carte de workflow **« AI Calculation for Cost Increase Surcharges »** utilise l'IA pour calculer automatiquement les montants de surcharge en fonction des augmentations de coûts. Elle garantit des calculs de surcharge cohérents et précis, rationalisant les workflows et réduisant l'effort manuel.
 
-## Components of the Card:
+## Composants de la carte :
 
 * **Cost Increase Factor**
-  * **Description:** The multiplier or percentage applied to the base cost to calculate the surcharge.
-  * **Detail:** Determines the surcharge amount based on the cost increase (e.g., a factor of 1.10 for a 10% increase).
+  * **Description :** le multiplicateur ou le pourcentage appliqué au coût de base pour calculer la surcharge.
+  * **Détail :** détermine le montant de la surcharge en fonction de l'augmentation de coût (par ex. un facteur de 1,10 pour une augmentation de 10 %).
 * **Base Cost Field**
-  * **Description:** The field containing the original cost value used as the basis for the surcharge calculation.
-  * **Detail:** Selected automatically or defined within the workflow for reference during the calculation.
+  * **Description :** le champ contenant la valeur de coût d'origine utilisée comme base du calcul de la surcharge.
+  * **Détail :** sélectionné automatiquement ou défini au sein du workflow pour référence lors du calcul.
 * **Surcharge Field**
-  * **Description:** The field where the AI-calculated surcharge value is stored.
-  * **Detail:** This field reflects the calculated surcharge, making it available for further processing or reporting.
+  * **Description :** le champ où la valeur de surcharge calculée par l'IA est stockée.
+  * **Détail :** ce champ reflète la surcharge calculée, la rendant disponible pour un traitement ou un reporting complémentaire.
 
-## Functionality:
+## Fonctionnalité :
 
-**Condition Evaluation:**
+**Évaluation de la condition :**
 
-* The card activates only if both the **"Where"** and **"And Sections"** conditions evaluate as true.
-* If either condition evaluates as false, no surcharge calculation is performed.
+* La carte ne s'active que si les conditions des sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* Si l'une des conditions est évaluée comme fausse, aucun calcul de surcharge n'est effectué.
 
-**AI-Driven Calculation:**
+**Calcul piloté par l'IA :**
 
-* The system applies the **Cost Increase Factor** to the **Base Cost Field** to calculate the surcharge.
-* The result is stored in the **Surcharge Field**, ensuring accessibility for subsequent workflow steps.
+* Le système applique le **Cost Increase Factor** au **Base Cost Field** pour calculer la surcharge.
+* Le résultat est stocké dans le **Surcharge Field**, garantissant son accessibilité pour les étapes ultérieures du workflow.
 
-## Conclusion:
+## Conclusion :
 
-The **"AI Calculation for Cost Increase Surcharges"** workflow card automates the application of surcharges based on cost increases. By leveraging AI for precision and consistency, this card eliminates manual calculations, enhances efficiency, and supports accurate cost management in automated workflows.
+La carte de workflow **« AI Calculation for Cost Increase Surcharges »** automatise l'application des surcharges en fonction des augmentations de coûts. En s'appuyant sur l'IA pour la précision et la cohérence, cette carte élimine les calculs manuels, améliore l'efficacité et facilite une gestion précise des coûts dans les workflows automatisés.

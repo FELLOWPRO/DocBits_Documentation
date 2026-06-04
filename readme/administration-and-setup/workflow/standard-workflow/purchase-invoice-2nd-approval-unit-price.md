@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_approval_invoice_3.png" alt="DocBits Aprovação Fatura 3"><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase of a purchase invoice, with a specific focus on validating the unit price.
+Este título indica que a regra está configurada para gerir a fase de segunda aprovação de uma fatura de compra, com enfoque específico na validação do preço unitário.
 
-#### Rule Configuration:
+#### Configuração da regra:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents that are identified as invoices, filtering out other document types and maintaining the relevance of the workflow.
+   * **Document Type is Invoice**: Esta condição garante que a regra é acionada apenas para documentos identificados como faturas, filtrando outros tipos de documento e mantendo a relevância do fluxo de trabalho.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is in the phase where it is awaiting a second approval. This is usually a step designed to ensure additional oversight before final processing.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This further narrows down the application of this rule to only those invoices that are classified as "Purchase Invoices", distinguishing them from other invoice subtypes.
-   * **Logic Unit Price in order confirmation Not Equals purchase order**: This logical check is crucial as it compares the unit price listed in the order confirmation against the unit price in the original purchase order. The action is triggered if these values do not match, which could indicate a discrepancy that needs resolution.
+   * **Document Status is Pending Second Approval**: Isto especifica que a fatura está na fase em que aguarda uma segunda aprovação. Trata-se normalmente de um passo concebido para garantir uma supervisão adicional antes do processamento final.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Isto restringe ainda mais a aplicação desta regra apenas às faturas classificadas como "Purchase Invoices", distinguindo-as de outros subtipos de fatura.
+   * **Logic Unit Price in order confirmation Not Equals purchase order**: Esta verificação lógica é fundamental, pois compara o preço unitário indicado na confirmação da encomenda com o preço unitário da ordem de compra original. A ação é acionada caso estes valores não coincidam, o que pode indicar uma discrepância que necessita de resolução.
 
-#### Action (Then…):
+#### Ação (Then…):
 
-* **Assign user from field Buyer Name, use user User as fallback**: If the conditions specified are met (i.e., there's a mismatch in unit prices), the invoice is automatically assigned to a buyer (the name specified in the 'Buyer Name' field) for further review. If the 'Buyer Name' field is empty or unspecified, a default user (likely an administrator or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Buyer Name, use user User as fallback**: Se as condições especificadas forem cumpridas (ou seja, se existir uma divergência nos preços unitários), a fatura é automaticamente atribuída a um comprador (o nome indicado no campo 'Buyer Name') para revisão adicional. Se o campo 'Buyer Name' estiver vazio ou não especificado, é atribuído um utilizador predefinido (provavelmente um administrador ou outro colaborador designado) como alternativa para tratar da aprovação.
 
-#### Purpose of This Rule:
+#### Objetivo desta regra:
 
-* **Ensure Accuracy and Compliance**: This rule is critical in ensuring that the invoicing process is accurate and complies with agreed terms. By triggering a review when there is a discrepancy in unit prices, the system helps prevent financial errors or potential fraud.
-* **Streamline Approvals**: Automating the assignment for review based on specific discrepancies helps streamline the approval process and ensures that issues are promptly addressed by the appropriate personnel.
-* **Financial Oversight**: Requiring a second approval, especially based on price matching, reinforces financial controls and accountability within the organization.
+* **Ensure Accuracy and Compliance**: Esta regra é fundamental para garantir que o processo de faturação é exato e está em conformidade com os termos acordados. Ao desencadear uma revisão sempre que existe uma discrepância nos preços unitários, o sistema ajuda a prevenir erros financeiros ou possíveis fraudes.
+* **Streamline Approvals**: A automatização da atribuição para revisão com base em discrepâncias específicas ajuda a simplificar o processo de aprovação e garante que os problemas são prontamente resolvidos pelo pessoal adequado.
+* **Financial Oversight**: A exigência de uma segunda aprovação, especialmente com base na correspondência de preços, reforça os controlos financeiros e a responsabilização dentro da organização.

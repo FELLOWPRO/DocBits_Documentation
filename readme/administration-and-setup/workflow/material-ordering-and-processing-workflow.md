@@ -1,49 +1,49 @@
 ---
 description: >-
-  Explore the step-by-step workflow for material ordering, goods receipt, and
-  invoice processing with INFOR ERP and DocBits integration. Effective supplier
-  and document management in one.
+  Explore o fluxo de trabalho passo a passo para encomenda de materiais, receção
+  de mercadorias e processamento de faturas com a integração do INFOR ERP e do
+  DocBits. Gestão eficaz de fornecedores e documentos num só lugar.
 ---
 
 # Material Ordering and Processing Workflow
 
-This document outlines the workflow for ordering materials from suppliers, receiving goods, and processing invoices with integration between suppliers, INFOR ERP system, and DocBits for document management.
+Este documento descreve o fluxo de trabalho para encomendar materiais a fornecedores, rececionar mercadorias e processar faturas, com integração entre os fornecedores, o sistema INFOR ERP e o DocBits para gestão de documentos.
 
-### Process Overview
+### Visão geral do processo
 
 1. **Ordering Materials**
-   * Initiate order with the supplier.
-   * Send the order to the supplier through INFOR.
+   * Iniciar a encomenda junto do fornecedor.
+   * Enviar a encomenda ao fornecedor através do INFOR.
 2. **Receiving Order Confirmation**
-   * Supplier confirms the receipt of the order.
-   * Creation and sending of order confirmation.
+   * O fornecedor confirma a receção da encomenda.
+   * Criação e envio da confirmação da encomenda.
 3. **Goods Receipt and Inspection**
-   * Receive goods from the supplier.
-   * Post goods receipt in INFOR and check against the delivery bill.
+   * Rececionar as mercadorias do fornecedor.
+   * Registar a receção das mercadorias no INFOR e confrontar com a guia de entrega.
 4. **Invoice Processing**
-   * Receive invoice and send to DocBits for processing.
-   * Check and verify invoice details with order and goods receipt.
+   * Rececionar a fatura e enviá-la para o DocBits para processamento.
+   * Verificar e confirmar os detalhes da fatura com a encomenda e a receção das mercadorias.
 5. **Final Steps**
-   * Archive the order and related documents in DocBits.
-   * Update INFOR with transaction details for financial accounting.
+   * Arquivar a encomenda e os documentos relacionados no DocBits.
+   * Atualizar o INFOR com os detalhes da transação para a contabilidade financeira.
 
-### Decision Points and Actions
+### Pontos de decisão e ações
 
-* **Does the received goods match the order?**
-  * Yes: Proceed with invoice processing.
-  * No: Manual check and update required.
-* **Is the invoice correct according to the goods received and order details?**
-  * Yes: Complete the transaction and update financial records.
-  * No: Further examination and corrections needed.
+* **As mercadorias rececionadas correspondem à encomenda?**
+  * Sim: Prosseguir com o processamento da fatura.
+  * Não: É necessária uma verificação e atualização manual.
+* **A fatura está correta de acordo com as mercadorias rececionadas e os detalhes da encomenda?**
+  * Sim: Concluir a transação e atualizar os registos financeiros.
+  * Não: São necessárias análise e correções adicionais.
 
-### Integration Points
+### Pontos de integração
 
-* **INFOR ERP**: Main system for order processing, goods receipt, and financial accounting.
-* **DocBits**: Document management for processing and archiving invoices and order confirmations.
+* **INFOR ERP**: Sistema principal para o processamento de encomendas, a receção de mercadorias e a contabilidade financeira.
+* **DocBits**: Gestão de documentos para o processamento e o arquivo de faturas e confirmações de encomenda.
 
-### Notes
+### Notas
 
-* Ensure all documents are verified and archived for record-keeping.
-* Discrepancies in order or invoice details must be resolved promptly to avoid delays.
+* Garanta que todos os documentos são verificados e arquivados para efeitos de arquivo.
+* As discrepâncias nos detalhes da encomenda ou da fatura devem ser resolvidas prontamente para evitar atrasos.
 
 <figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>

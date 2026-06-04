@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Fluxo de trabalho Compra Pedido 4"><figcaption></figcaption></figure>
 
-#### Overview of Workflow Components:
+#### Visão geral dos componentes do fluxo de trabalho:
 
-* **AP Invoice Email**: The process likely begins with an invoice received via email.
-* **DocBits**: This tool might be used for initial document management tasks such as capturing and digitizing invoices.
-* **Finance Review**: Invoices undergo a finance review where decisions are made regarding their validity and accuracy.
+* **AP Invoice Email**: O processo começa provavelmente com uma fatura recebida por e-mail.
+* **DocBits**: Esta ferramenta pode ser utilizada para tarefas iniciais de gestão de documentos, tais como a captura e a digitalização de faturas.
+* **Finance Review**: As faturas são submetidas a uma revisão financeira, onde se tomam decisões quanto à sua validade e exatidão.
 
-#### Steps in the Workflow:
+#### Etapas do fluxo de trabalho:
 
 1. **Initial Review**:
-   * Invoices are received and initially processed using DocBits.
-   * They are then reviewed by the finance team to ensure they are removed from the workflow if they are complete, or pushed forward for further processing.
+   * As faturas são recebidas e inicialmente processadas com o DocBits.
+   * São depois revistas pela equipa financeira para garantir que são removidas do fluxo de trabalho caso estejam completas, ou encaminhadas para processamento adicional.
 2. **PO vs Non-PO Invoices**:
-   * The workflow distinguishes between PO-related and non-PO invoices.
-   * Non-PO invoices are routed for further approval or rejection based on predefined criteria like supplier ID, quantity, unit price, and item number.
+   * O fluxo de trabalho distingue entre faturas associadas a PO e faturas sem PO.
+   * As faturas sem PO são encaminhadas para aprovação ou rejeição adicional com base em critérios predefinidos, como o ID do fornecedor, a quantidade, o preço unitário e o número do artigo.
 3. **Matching and Mismatching**:
-   * Invoices are checked against goods receipts to ensure that details match (like supplier ID and quantity).
-   * If mismatches occur, the invoice is subject to further review and possibly rejection.
+   * As faturas são confrontadas com as receções de mercadorias para garantir que os detalhes correspondem (como o ID do fornecedor e a quantidade).
+   * Se ocorrerem discrepâncias, a fatura fica sujeita a uma revisão adicional e, possivelmente, à rejeição.
 4. **Finance and Buyer Review**:
-   * For PO-related invoices, a detailed matching process is conducted involving a buyer review.
-   * Adjustments to purchase orders or goods receipts might be required.
+   * No caso de faturas associadas a PO, é realizado um processo de correspondência detalhado que envolve uma revisão por parte do comprador.
+   * Poderão ser necessários ajustes às ordens de compra ou às receções de mercadorias.
 5. **Final Decisions**:
-   * Invoices that pass all checks are approved and integrated into financial systems for record-keeping.
-   * Rejected invoices trigger notifications, and a new invoice may be requested by the buyer.
+   * As faturas que passam em todas as verificações são aprovadas e integradas nos sistemas financeiros para efeitos de arquivo.
+   * As faturas rejeitadas desencadeiam notificações, e o comprador poderá solicitar uma nova fatura.
 6. **Integration with Infor IDM & LN+M3**:
-   * Approved invoices are likely sent to Infor's IDM for document management and LN for ledger noting.
-   * This integration ensures that all financial records are up-to-date and that the workflow seamlessly feeds into the broader ERP system.
+   * As faturas aprovadas são provavelmente enviadas para o Infor IDM para gestão de documentos e para o LN para registo contabilístico.
+   * Esta integração garante que todos os registos financeiros estão atualizados e que o fluxo de trabalho alimenta de forma transparente o sistema ERP mais alargado.
 
-#### Decision Points:
+#### Pontos de decisão:
 
-* Throughout the workflow, there are various decision points where an invoice might be approved, rejected, or sent back for additional information. Notifications are sent out after delays, ensuring timely processing.
+* Ao longo do fluxo de trabalho, existem vários pontos de decisão em que uma fatura pode ser aprovada, rejeitada ou devolvida para obtenção de informações adicionais. São enviadas notificações após atrasos, garantindo um processamento atempado.
 
-These Workflows will be included in the Standard Workflow
+Estes fluxos de trabalho serão incluídos no Standard Workflow

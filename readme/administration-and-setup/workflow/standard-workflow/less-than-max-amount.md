@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_invoice.png" alt="DocBits Fatura"><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
+Este título sugere que a regra ou condição a configurar foi concebida para tratar faturas em que o montante total é inferior ou igual a um montante máximo especificado.
 
-#### Rule Configuration:
+#### Configuração da regra:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
+   * **Document Type is Invoice**: Esta condição verifica se o documento que está a ser processado é uma fatura. Isto é fundamental para garantir que a regra só se aplica a faturas e não a outros tipos de documentos.
 2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+   * **Document Status is Pending Approval**: Isto especifica que a fatura tem de estar no estado "Pending Approval". Esta verificação de estado garante que a regra se aplica apenas a faturas que aguardam aprovação.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: Esta condição compara o montante total da fatura com o montante máximo autorizado de um aprovador. Se o montante total da fatura for inferior ou igual a esse montante máximo, a regra prossegue para o passo seguinte. Isto inclui provavelmente um nível de tolerância que permite pequenos desvios dentro dos limites especificados.
 
-#### Action (Then…):
+#### Ação (Then…):
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Approver Name, use user User as fallback**: Se as condições especificadas forem cumpridas, a fatura é automaticamente atribuída a um aprovador cujo nome está especificado num campo. Se este campo estiver vazio ou indisponível, é atribuído um utilizador predefinido (provavelmente um administrador ou outro colaborador designado) como alternativa para tratar da aprovação.
 
-#### Interface Elements:
+#### Elementos da interface:
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+* **Add Card**: Este botão permite provavelmente aos utilizadores adicionar mais condições ou ações à regra, aumentando a flexibilidade e a especificidade do fluxo de trabalho.
+* **Save**: Guarda a regra configurada no sistema.
 
-#### Purpose of This Rule:
+#### Objetivo desta regra:
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+Esta configuração foi concebida para simplificar o processo de aprovação de faturas, encaminhando-as automaticamente para o aprovador adequado com base no montante e garantindo que apenas as que se encontram dentro de um determinado limiar são tratadas desta forma automatizada. Ajuda a gerir os controlos financeiros e acelera o fluxo de trabalho, reduzindo as verificações manuais para cada fatura.
 
 \

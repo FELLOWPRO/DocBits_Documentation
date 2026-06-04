@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_4.png" alt="DocBits Compra Pedido Exportar 4"><figcaption></figcaption></figure>
 
-This title indicates that the rule is specifically configured for managing cost invoices and involves an export action, possibly for reporting, further processing, or integration with other systems.
+Este título indica que a regra está especificamente configurada para gerir faturas de custo e envolve uma ação de exportação, possivelmente para relatórios, processamento adicional ou integração com outros sistemas.
 
-#### Rule Configuration:
+#### Configuração da regra:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents categorized as invoices, maintaining the workflow's specificity to invoice management.
+   * **Document Type is Invoice**: Esta condição garante que a regra é acionada apenas para documentos categorizados como faturas, mantendo a especificidade do fluxo de trabalho na gestão de faturas.
 2. **And…**
-   * **Document Field Invoice Sub Type is Equals Cost Invoice**: This specifies that the rule applies only to those invoices that are explicitly marked as "Cost Invoices" in a particular field within the document. This helps in distinguishing them from other types of invoices.
-   * **Document Status is Pending Second Approval**: The invoice must be in a "Pending Second Approval" status. This indicates that the invoice has already undergone an initial approval and is awaiting a second, possibly final, review.
+   * **Document Field Invoice Sub Type is Equals Cost Invoice**: Isto especifica que a regra se aplica apenas às faturas que estão explicitamente marcadas como "Cost Invoices" num determinado campo do documento. Isto ajuda a distingui-las de outros tipos de faturas.
+   * **Document Status is Pending Second Approval**: A fatura tem de estar no estado "Pending Second Approval". Isto indica que a fatura já foi submetida a uma aprovação inicial e aguarda uma segunda revisão, possivelmente final.
 
-#### Action (Then…):
+#### Ação (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (being a cost invoice and pending second approval), the action to "Start Export" is executed. This could involve sending the invoice data to another system for financial analysis, reporting, or compliance purposes.
+* **Start Export**: Assim que a fatura cumpre as condições especificadas (ser uma fatura de custo e estar pendente de segunda aprovação), é executada a ação "Start Export". Isto pode envolver o envio dos dados da fatura para outro sistema, para fins de análise financeira, relatórios ou conformidade.
 
-#### Purpose of This Rule:
+#### Objetivo desta regra:
 
-* **Workflow Efficiency**: This rule helps automate the handling of cost invoices by ensuring they are processed through the necessary approval stages without manual intervention, increasing the speed and accuracy of financial operations.
-* **Control and Compliance**: By requiring a second approval, the system enforces a control mechanism that ensures cost invoices are thoroughly reviewed, enhancing financial oversight.
-* **Integration and Reporting**: The export action suggests that once invoices are fully approved, they may be integrated into other systems for further processing or analysis, which is critical for financial reporting and audits.
+* **Workflow Efficiency**: Esta regra ajuda a automatizar o tratamento das faturas de custo, garantindo que são processadas através das fases de aprovação necessárias sem intervenção manual, aumentando a rapidez e a exatidão das operações financeiras.
+* **Control and Compliance**: Ao exigir uma segunda aprovação, o sistema impõe um mecanismo de controlo que garante que as faturas de custo são minuciosamente revistas, reforçando a supervisão financeira.
+* **Integration and Reporting**: A ação de exportação sugere que, assim que as faturas estiverem totalmente aprovadas, podem ser integradas noutros sistemas para processamento ou análise adicional, o que é fundamental para os relatórios financeiros e as auditorias.
 
-This kind of rule is vital for organizations that deal with various types of invoices and need to ensure that each type is handled according to specific protocols. It reduces the risk of errors and ensures compliance with internal controls and external regulations.
+Este tipo de regra é vital para as organizações que lidam com vários tipos de faturas e que precisam de garantir que cada tipo é tratado de acordo com protocolos específicos. Reduz o risco de erros e assegura a conformidade com os controlos internos e as regulamentações externas.

@@ -1,34 +1,34 @@
-# Workflow Example: Conditional Export Trigger
+# Workflow-Beispiel: Bedingter Export-Trigger
 
 <figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
-This workflow outlines the conditions under which an export process should be initiated. It ensures that only documents meeting all specified criteria are processed for export, enhancing data integrity and alignment with business rules.
+Dieser Workflow beschreibt die Bedingungen, unter denen ein Export-Prozess gestartet werden soll. Er stellt sicher, dass nur Dokumente, die alle festgelegten Kriterien erfüllen, für den Export verarbeitet werden, wodurch die Datenintegrität und die Übereinstimmung mit Geschäftsregeln verbessert werden.
 
 ### When:
 
-* A document within the system is evaluated for export eligibility.
+* Ein Dokument im System wird auf seine Export-Eignung geprüft.
 
-### Logic:
+### Logik:
 
-1. **Document Type Check**
-   * The document must be of a certain type (e.g., "Invoice" or "Receipt"). Specify the document type that qualifies for the export process.
-2. **Status Verification**
-   * The document's current status must meet predefined criteria (e.g., "Approved" or "Ready for Export") indicating it is ready for further processing.
-3. **Contextual Conditions**
-   * Additional checks are performed to ensure the document's details align with specific requirements. These checks might involve verifying information within order confirmations or purchase orders. Specify the particular conditions that need to be met. For example:
-     * All items listed in the order confirmation match those in the purchase order.
-     * The total amount in the order confirmation matches the total amount in the purchase order.
-     * The delivery dates specified in the order confirmation align with those in the purchase order.
+1. **Prüfung des Dokumenttyps**
+   * Das Dokument muss von einem bestimmten Typ sein (z. B. „Rechnung" oder „Beleg"). Geben Sie den Dokumenttyp an, der für den Export-Prozess infrage kommt.
+2. **Statusprüfung**
+   * Der aktuelle Status des Dokuments muss vordefinierte Kriterien erfüllen (z. B. „Genehmigt" oder „Bereit für Export"), die anzeigen, dass es für die weitere Verarbeitung bereit ist.
+3. **Kontextbezogene Bedingungen**
+   * Es werden zusätzliche Prüfungen durchgeführt, um sicherzustellen, dass die Details des Dokuments mit bestimmten Anforderungen übereinstimmen. Diese Prüfungen können die Überprüfung von Informationen in Auftragsbestätigungen oder Bestellungen umfassen. Geben Sie die konkreten Bedingungen an, die erfüllt sein müssen. Zum Beispiel:
+     * Alle in der Auftragsbestätigung aufgeführten Positionen stimmen mit denen in der Bestellung überein.
+     * Der Gesamtbetrag in der Auftragsbestätigung stimmt mit dem Gesamtbetrag in der Bestellung überein.
+     * Die in der Auftragsbestätigung angegebenen Lieferdaten stimmen mit denen in der Bestellung überein.
 
 ### Then:
 
-#### Action:
+#### Aktion:
 
-* **Initiate Export**
-  * If all the above conditions are satisfied, the system automatically starts the export process for the document.
-  * This may involve generating an export file, sending data to an external system, or triggering a workflow in another application.
+* **Export auslösen**
+  * Wenn alle oben genannten Bedingungen erfüllt sind, startet das System automatisch den Export-Prozess für das Dokument.
+  * Dies kann das Erzeugen einer Exportdatei, das Senden von Daten an ein externes System oder das Auslösen eines Workflows in einer anderen Anwendung umfassen.
 
-#### Implementation Example:
+#### Implementierungsbeispiel:
 
 ```yaml
 rules:

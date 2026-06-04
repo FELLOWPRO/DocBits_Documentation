@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-This workflow card is designed to compare the order type of a purchase order against a specified value. The card checks whether the order type of the purchase order meets the specified condition (e.g., whether it equals, does not equal, is greater than, or meets another condition) to ensure that the purchase order is classified correctly. This comparison can trigger actions based on specific conditions, such as routing the order for further review or approval if discrepancies are found.
+Questa scheda di workflow è progettata per confrontare il tipo di ordine di un ordine d'acquisto con un valore specificato. La scheda verifica se il tipo di ordine dell'ordine d'acquisto soddisfa la condizione specificata (es. se è uguale, diverso, maggiore o soddisfa un'altra condizione) per garantire che l'ordine d'acquisto sia classificato correttamente. Questo confronto può attivare azioni in base a condizioni specifiche, come l'instradamento dell'ordine per un'ulteriore revisione o approvazione se vengono rilevate discrepanze.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Any/All:**
-   * **Description**: Defines whether the condition applies to any or all purchase orders being evaluated in the workflow.
-   * **Options**:
-     * **Any**: The condition is met if any one of the purchase orders matches the specified condition.
-     * **All**: The condition is met only if all of the purchase orders meet the specified condition.
+   * **Descrizione**: Definisce se la condizione si applica ad alcuni o a tutti gli ordini d'acquisto valutati nel workflow.
+   * **Opzioni**:
+     * **Any**: La condizione è soddisfatta se uno qualsiasi degli ordini d'acquisto corrisponde alla condizione specificata.
+     * **All**: La condizione è soddisfatta solo se tutti gli ordini d'acquisto soddisfano la condizione specificata.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to compare the order type against a specified value.
-   * **Options**:
-     * **Equals (=)**: Checks if the order type matches the specified value.
-     * **Not Equals (≠)**: Ensures the order type is different from the specified value.
+   * **Descrizione**: Definisce la condizione che verrà applicata per confrontare il tipo di ordine con un valore specificato.
+   * **Opzioni**:
+     * **Equals (=)**: Verifica se il tipo di ordine corrisponde al valore specificato.
+     * **Not Equals (≠)**: Garantisce che il tipo di ordine sia diverso dal valore specificato.
 3. **Order Type:**
-   * **Description**: Specifies the value to which the order type of the purchase order will be compared.
-   * **Detail**: The value must match the order type or classification in the system.
+   * **Descrizione**: Specifica il valore con cui verrà confrontato il tipo di ordine dell'ordine d'acquisto.
+   * **Dettaglio**: Il valore deve corrispondere al tipo di ordine o alla classificazione nel sistema.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation:** The system evaluates the order type of the purchase order against the specified condition using the selected operator. If the order type matches (or does not match) the specified value, the workflow proceeds accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the order type matches the specified value), the workflow will continue, possibly triggering additional actions or processing steps.
-  * **False Condition**: If the condition evaluates to false (e.g., the order type does not match the specified value), the workflow will not continue.
+* **Valutazione della condizione:** Il sistema valuta il tipo di ordine dell'ordine d'acquisto rispetto alla condizione specificata utilizzando l'operatore selezionato. Se il tipo di ordine corrisponde (o non corrisponde) al valore specificato, il workflow procede di conseguenza.
+* **Esecuzione dell'azione:**
+  * **Condizione vera**: Se la condizione risulta vera (es. il tipo di ordine corrisponde al valore specificato), il workflow continuerà, eventualmente attivando azioni o passaggi di elaborazione aggiuntivi.
+  * **Condizione falsa**: Se la condizione risulta falsa (es. il tipo di ordine non corrisponde al valore specificato), il workflow non continuerà.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* Users configure the card by selecting the order type field of the purchase order and choosing the operator that defines how the order type will be compared. Then, they set the specified value and decide whether to apply the condition to any or all of the purchase order lines.
+* Gli utenti configurano la scheda selezionando il campo del tipo di ordine dell'ordine d'acquisto e scegliendo l'operatore che definisce come verrà confrontato il tipo di ordine. Quindi impostano il valore specificato e decidono se applicare la condizione ad alcune o a tutte le righe dell'ordine d'acquisto.
 
-## **Example Scenario:**
+## **Scenario di esempio:**
 
-* A purchase order has the order type "Standard." The workflow is configured to check if the order type is "Urgent." Using the "Equals" operator, the card compares the order type and finds that it does not match the specified value, triggering the workflow to send the order for review due to the mismatch.
+* Un ordine d'acquisto ha il tipo di ordine "Standard". Il workflow è configurato per verificare se il tipo di ordine è "Urgent". Utilizzando l'operatore "Equals", la scheda confronta il tipo di ordine e rileva che non corrisponde al valore specificato, attivando il workflow per inviare l'ordine alla revisione a causa della discordanza.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The "Order Type of Purchase Order" workflow card ensures that purchase orders are classified correctly according to their specified order type. By automating the comparison of order types, organizations can ensure that purchase orders are processed according to their expected classifications, helping to enforce compliance and streamline procurement workflows.
+La scheda di workflow "Order Type of Purchase Order" garantisce che gli ordini d'acquisto siano classificati correttamente in base al loro tipo di ordine specificato. Automatizzando il confronto dei tipi di ordine, le organizzazioni possono garantire che gli ordini d'acquisto vengano elaborati secondo le classificazioni previste, contribuendo ad applicare la conformità e a semplificare i workflow di approvvigionamento.

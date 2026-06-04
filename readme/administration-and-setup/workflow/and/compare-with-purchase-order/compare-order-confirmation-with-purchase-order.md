@@ -4,49 +4,49 @@
 
 <figure><img src="../../../../.gitbook/assets/image (267).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Scopo:
 
-This DocBits card is designed to compare a specific order data field—such as quantity, discount, or unit price—between an order confirmation and a purchase order. By allowing a focused comparison of one field at a time, it ensures precision in validating key data points, maintaining order accuracy. **Version 4** expands this functionality by allowing comparisons between different entities such as the purchase order, received quantities, and the document itself, adding more flexibility and control to the workflow.
+Questa scheda DocBits è progettata per confrontare un campo specifico dei dati dell'ordine — come quantità, sconto o prezzo unitario — tra una conferma d'ordine e un ordine d'acquisto. Consentendo un confronto mirato di un campo alla volta, garantisce precisione nella validazione dei punti dati chiave, mantenendo l'accuratezza dell'ordine. La **Versione 4** espande questa funzionalità consentendo confronti tra entità diverse come l'ordine d'acquisto, le quantità ricevute e il documento stesso, aggiungendo maggiore flessibilità e controllo al workflow.
 
-## Components of the Card:
+## Componenti della scheda:
 
 1. **Any/All**&#x20;
-   * **Description:** Determines whether the condition applies to any or all lines in the order confirmation.\
-     **Options:**
-     * **Any**: The comparison will trigger if the selected field value in any line of the order confirmation matches the corresponding value in the purchase order.
-     * **All**: The comparison will trigger only if the selected field value in all lines of the order confirmation matches the corresponding value in the purchase order.
+   * **Descrizione:** Determina se la condizione si applica ad alcune o a tutte le righe della conferma d'ordine.\
+     **Opzioni:**
+     * **Any**: Il confronto si attiva se il valore del campo selezionato in una riga qualsiasi della conferma d'ordine corrisponde al valore corrispondente nell'ordine d'acquisto.
+     * **All**: Il confronto si attiva solo se il valore del campo selezionato in tutte le righe della conferma d'ordine corrisponde al valore corrispondente nell'ordine d'acquisto.
 2. **Order Data Field**
-   * **Description**: Specifies the data field to be compared between the order confirmation and the purchase order.
-   * **Detail**: Users can select one of the following fields for comparison:
-     * **Quantity**: Compares the quantity ordered with the confirmed quantity.
-     * **Discount**: Validates that the discount in the confirmation matches the purchase order.
-     * **Unit Price**: Ensures that the unit price in the confirmation aligns with the purchase order.
+   * **Descrizione**: Specifica il campo dati da confrontare tra la conferma d'ordine e l'ordine d'acquisto.
+   * **Dettaglio**: Gli utenti possono selezionare uno dei seguenti campi per il confronto:
+     * **Quantity**: Confronta la quantità ordinata con la quantità confermata.
+     * **Discount**: Verifica che lo sconto nella conferma corrisponda all'ordine d'acquisto.
+     * **Unit Price**: Garantisce che il prezzo unitario nella conferma sia allineato all'ordine d'acquisto.
 3. **Operator**
-   * **Description**: Defines the condition applied to the comparison of the selected data field.
-   * **Options**:
-     * **Equals (=)**: Confirms that the value matches the purchase order.
-     * **Not Equals (≠)**: Ensures the value is different from the purchase order.
-     * **Greater Than (>)**: Verifies that the value exceeds the purchase order’s value.
-     * **Greater or Equals (≥)**: Confirms that the value equals or exceeds the purchase order’s value.
-     * **Less Than (<)**: Checks that the value is below the purchase order’s value.
-     * **Less or Equals (≤)**: Confirms that the value is below or equals the purchase order’s value.
+   * **Descrizione**: Definisce la condizione applicata al confronto del campo dati selezionato.
+   * **Opzioni**:
+     * **Equals (=)**: Conferma che il valore corrisponda all'ordine d'acquisto.
+     * **Not Equals (≠)**: Garantisce che il valore sia diverso dall'ordine d'acquisto.
+     * **Greater Than (>)**: Verifica che il valore superi quello dell'ordine d'acquisto.
+     * **Greater or Equals (≥)**: Conferma che il valore sia uguale o superiore a quello dell'ordine d'acquisto.
+     * **Less Than (<)**: Verifica che il valore sia inferiore a quello dell'ordine d'acquisto.
+     * **Less or Equals (≤)**: Conferma che il valore sia inferiore o uguale a quello dell'ordine d'acquisto.
 
-## **Additional Components in Version 4**:
+## **Componenti aggiuntivi nella Versione 4**:
 
-* **Comparison Type**: Selects the entities to compare. The options include:
-  * **Purchase Order to Document**: Compares the purchase order data with the related document.
-  * **Received to Document**: Compares the received data (e.g., quantities received) with the document.
-  * **Purchase Order to Received**: Compares the purchase order data with the received quantities.
+* **Comparison Type**: Seleziona le entità da confrontare. Le opzioni includono:
+  * **Purchase Order to Document**: Confronta i dati dell'ordine d'acquisto con il documento correlato.
+  * **Received to Document**: Confronta i dati ricevuti (es. quantità ricevute) con il documento.
+  * **Purchase Order to Received**: Confronta i dati dell'ordine d'acquisto con le quantità ricevute.
 
-## Functionality:
+## Funzionalità:
 
-* **Field Comparison**: The system compares the selected order data field (Unit Price, Discount, or Quantity) from the order confirmation to the corresponding value in the purchase order.
-* **Action Execution**: Based on the comparison result and operator condition, the card can trigger follow-up actions, such as notifications or alerts.
+* **Confronto dei campi**: Il sistema confronta il campo dati dell'ordine selezionato (Unit Price, Discount o Quantity) della conferma d'ordine con il valore corrispondente nell'ordine d'acquisto.
+* **Esecuzione dell'azione**: In base al risultato del confronto e alla condizione dell'operatore, la scheda può attivare azioni di follow-up, come notifiche o avvisi.
 
-## Example Scenario:
+## Scenario di esempio:
 
-* An order confirmation specifies a **unit price** of $50, while the purchase order states $45. Using the "Greater Than" operator, the card flags the discrepancy, enabling the procurement team to address it before processing.
+* Una conferma d'ordine specifica un **prezzo unitario** di $50, mentre l'ordine d'acquisto indica $45. Utilizzando l'operatore "Greater Than", la scheda segnala la discrepanza, consentendo al team di approvvigionamento di gestirla prima dell'elaborazione.
 
-## Conclusion:
+## Conclusione:
 
-This card simplifies the validation of individual order data fields, ensuring compliance with purchase order terms. By isolating one field at a time for comparison, it supports targeted reviews and error prevention in order processing.
+Questa scheda semplifica la validazione dei singoli campi dati dell'ordine, garantendo la conformità ai termini dell'ordine d'acquisto. Isolando un campo alla volta per il confronto, supporta revisioni mirate e la prevenzione degli errori nell'elaborazione degli ordini.

@@ -2,48 +2,48 @@
 
 <figure><img src="../../../../.gitbook/assets/image (265).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Scopo**
 
-This workflow card is designed to compare specific fields—**Unit Price**, **Discount**, or **Quantity**—between an order confirmation and a purchase order. It ensures consistency and compliance with agreed terms. Based on the comparison result, the card allows users to write specified text into a chosen field when the condition evaluates as **true** or **false**, streamlining document processing and reducing manual intervention.
+Questa scheda di workflow è progettata per confrontare campi specifici — **Unit Price**, **Discount** o **Quantity** — tra una conferma d'ordine e un ordine d'acquisto. Garantisce coerenza e conformità ai termini concordati. In base al risultato del confronto, la scheda consente agli utenti di scrivere un testo specificato in un campo scelto quando la condizione risulta **vera** o **falsa**, semplificando l'elaborazione dei documenti e riducendo l'intervento manuale.
 
-## **Components of the Card**
+## **Componenti della scheda**
 
 1. **Order Data**
-   * **Description:** Specifies the field to be compared between the order confirmation and the purchase order.
-   * **Options:**
-     * **Unit Price**: Compares the unit price in both documents.
-     * **Discount**: Compares the discount percentage or value.
-     * **Quantity**: Compares the ordered quantity.
+   * **Descrizione:** Specifica il campo da confrontare tra la conferma d'ordine e l'ordine d'acquisto.
+   * **Opzioni:**
+     * **Unit Price**: Confronta il prezzo unitario in entrambi i documenti.
+     * **Discount**: Confronta la percentuale o il valore dello sconto.
+     * **Quantity**: Confronta la quantità ordinata.
 2. **Operator**
-   * **Description:** Defines the condition applied during the comparison.
-   * **Options:**
-     * **Equals (=):** Checks if the value in the selected field matches between the order confirmation and the purchase order.
-     * **Not Equals (≠):** Ensures the value in the selected field differs between the two documents.
+   * **Descrizione:** Definisce la condizione applicata durante il confronto.
+   * **Opzioni:**
+     * **Equals (=):** Verifica se il valore nel campo selezionato corrisponde tra la conferma d'ordine e l'ordine d'acquisto.
+     * **Not Equals (≠):** Garantisce che il valore nel campo selezionato differisca tra i due documenti.
 3. **Text**
-   * **Description:** Specifies the text to be written into the target field upon condition evaluation.
-   * **Detail:** This text can include custom notes, status updates, or predefined values.
+   * **Descrizione:** Specifica il testo da scrivere nel campo di destinazione al momento della valutazione della condizione.
+   * **Dettaglio:** Questo testo può includere note personalizzate, aggiornamenti di stato o valori predefiniti.
 4. **Field Name**
-   * **Description:** Specifies the field where the text will be written.
-   * **Detail:** The target field is selected from available editable fields within the system.
+   * **Descrizione:** Specifica il campo in cui verrà scritto il testo.
+   * **Dettaglio:** Il campo di destinazione viene selezionato tra i campi modificabili disponibili nel sistema.
 5. **Condition Result**
-   * **Description:** Determines when the text should be written, based on the comparison result.
-   * **Options:**
-     * **True:** Writes the text if the comparison condition is met.
-     * **False:** Writes the text if the comparison condition is not met.
+   * **Descrizione:** Determina quando il testo deve essere scritto, in base al risultato del confronto.
+   * **Opzioni:**
+     * **True:** Scrive il testo se la condizione di confronto è soddisfatta.
+     * **False:** Scrive il testo se la condizione di confronto non è soddisfatta.
 
-## **Functionality**
+## **Funzionalità**
 
-* **Comparison Evaluation:** The system compares the selected field between the order confirmation and the purchase order using the specified operator.
-* **Action Execution:** If the condition evaluates as **true** or **false**, the specified text is written into the designated field.
+* **Valutazione del confronto:** Il sistema confronta il campo selezionato tra la conferma d'ordine e l'ordine d'acquisto utilizzando l'operatore specificato.
+* **Esecuzione dell'azione:** Se la condizione risulta **vera** o **falsa**, il testo specificato viene scritto nel campo designato.
 
-## **Setup and Configuration**
+## **Configurazione e impostazione**
 
-* To set up this card, users first select the field to be compared—**Unit Price**, **Discount**, or **Quantity**. Then, they choose an operator to define the comparison condition, such as **equals** or **not equals**. Users specify the text to be written into a target field and select when this action should occur, based on the condition result (**true** or **false**).
+* Per configurare questa scheda, gli utenti selezionano innanzitutto il campo da confrontare — **Unit Price**, **Discount** o **Quantity**. Quindi scelgono un operatore per definire la condizione di confronto, come **equals** o **not equals**. Gli utenti specificano il testo da scrivere in un campo di destinazione e selezionano quando questa azione deve verificarsi, in base al risultato della condizione (**true** o **false**).
 
-## **Example Scenario**
+## **Scenario di esempio**
 
-* An order confirmation lists a unit price of $50 for a product, while the purchase order specifies a price of $45. Using the **Not Equals (≠)** operator, the card identifies the discrepancy and writes the text "Price Mismatch" into a designated field when the condition evaluates as **true**.
+* Una conferma d'ordine indica un prezzo unitario di $50 per un prodotto, mentre l'ordine d'acquisto specifica un prezzo di $45. Utilizzando l'operatore **Not Equals (≠)**, la scheda identifica la discrepanza e scrive il testo "Price Mismatch" in un campo designato quando la condizione risulta **vera**.
 
-## **Conclusion**
+## **Conclusione**
 
-The "\[Unit Price/Discount/Quantity] in Order Confirmation" workflow card provides a practical solution for ensuring document consistency. By automatically flagging discrepancies and writing relevant text into specified fields, it enhances efficiency and reduces errors in order management processes.
+La scheda di workflow "\[Unit Price/Discount/Quantity] in Order Confirmation" fornisce una soluzione pratica per garantire la coerenza dei documenti. Segnalando automaticamente le discrepanze e scrivendo il testo pertinente nei campi specificati, migliora l'efficienza e riduce gli errori nei processi di gestione degli ordini.

@@ -2,68 +2,68 @@
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Objectif**
 
-The "**Assign Document and Create Task/Notification Based on Decision Table**" workflow card assigns a document and creates a task or notification with configurable details. The assignee is determined by the return of a decision table, and the card allows for setting priorities and sending email notifications.
+La carte de workflow « **Assign Document and Create Task/Notification Based on Decision Table** » assigne un document et crée une tâche ou une notification avec des détails configurables. Le destinataire est déterminé par le retour d'une table de décision, et la carte permet de définir des priorités et d'envoyer des notifications par e-mail.
 
-## **Components of the Card**
+## **Composants de la carte**
 
 1. **Assignee Type**
-   * **Description:** Specifies whether the decision table’s return assigns the document and task/notification to a user or group.
-   * **Detail:** A field to configure the assignee type as either "User" or "Group" based on the decision table output.
+   * **Description :** spécifie si le retour de la table de décision assigne le document et la tâche/notification à un utilisateur ou à un groupe.
+   * **Détail :** un champ pour configurer le type de destinataire comme « User » ou « Group » en fonction de la sortie de la table de décision.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the assignee.
-   * **Detail:** A dropdown to select either "Task" or "Notification" based on the workflow needs.
+   * **Description :** spécifie le type d'action à créer pour le destinataire.
+   * **Détail :** une liste déroulante pour sélectionner « Task » ou « Notification » selon les besoins du workflow.
 3. **Title**
-   * **Description:** The title of the task or notification.
-   * **Detail:** A field for providing a concise title that identifies the task or notification.
+   * **Description :** le titre de la tâche ou de la notification.
+   * **Détail :** un champ pour fournir un titre concis qui identifie la tâche ou la notification.
 4. **Description**
-   * **Description:** Additional details about the task or notification.
-   * **Detail:** A field for describing the purpose and context of the task or notification.
+   * **Description :** des détails supplémentaires sur la tâche ou la notification.
+   * **Détail :** un champ pour décrire l'objet et le contexte de la tâche ou de la notification.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Description :** définit le niveau d'urgence de la tâche ou de la notification.
+   * **Options :**
+     * **High :** nécessite une attention immédiate.
+     * **Medium :** important mais non urgent.
+     * **Low :** peut être traité plus tard.
 6. **Assignee Type**
-   * **Description:** This field determines the type of assignee (User or Group) to whom the document and task/notification are assigned.
-   * **Detail:** A dropdown menu to select whether the task/notification is assigned to a user or a group based on the decision table's output.
+   * **Description :** ce champ détermine le type de destinataire (User ou Group) auquel le document et la tâche/notification sont assignés.
+   * **Détail :** un menu déroulant pour sélectionner si la tâche/notification est assignée à un utilisateur ou à un groupe en fonction de la sortie de la table de décision.
 7. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the assignee.
-   * **Options:**
-     * **True:** Sends an email notification.
-     * **False:** No email notification is sent.
+   * **Description :** configure si une notification par e-mail est envoyée au destinataire.
+   * **Options :**
+     * **True :** envoie une notification par e-mail.
+     * **False :** aucune notification par e-mail n'est envoyée.
 8. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where lower numbers indicate higher priority.
+   * **Description :** définit la priorité numérique de l'attribution du document.
+   * **Détail :** un champ pour saisir une valeur numérique, où les nombres les plus faibles indiquent une priorité plus élevée.
 
-## **Functionality**
+## **Fonctionnalité**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the workflow conditions are satisfied.
-* **Decision Table Evaluation:**\
-  The decision table determines whether the document and task/notification are assigned to a user or group.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the decision table's result. A task or notification is created with the specified title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email notification is sent to the assignee.
+* **Évaluation de la condition :**\
+  La carte n'exécute ses actions que si les conditions du workflow sont satisfaites.
+* **Évaluation de la table de décision :**\
+  La table de décision détermine si le document et la tâche/notification sont assignés à un utilisateur ou à un groupe.
+* **Attribution du document et création de tâche/notification :**\
+  Le document est assigné au résultat de la table de décision. Une tâche ou une notification est créée avec le titre, la description et le niveau de priorité spécifiés.
+* **Notification par e-mail :**\
+  Si « Send Mail » est défini sur True, une notification par e-mail est envoyée au destinataire.
 
-## **Setup and Configuration**
+## **Mise en place et configuration**
 
-1. **Define Assignee Type:**
-   * Configure the Assignee Type field to either "User" or "Group" based on the decision table's output.
-2. **Select Task/Notification:**
-   * Choose "Task" or "Notification" from the Task/Notification dropdown.
-3. **Set Task/Notification Details:**
-   * Enter the Title and Description for the task or notification.
-   * Select the Priority (High, Medium, or Low) from the dropdown.
-4. **Enable Email Notification:**
-   * Set the Send Mail option to True or False, depending on whether an email notification should be sent.
-5. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment priority, where lower numbers are processed first.
-6. Save the card configuration and activate the workflow.
+1. **Définir le type de destinataire :**
+   * Configurez le champ Assignee Type sur « User » ou « Group » en fonction de la sortie de la table de décision.
+2. **Sélectionner Task/Notification :**
+   * Choisissez « Task » ou « Notification » dans la liste déroulante Task/Notification.
+3. **Définir les détails de la tâche/notification :**
+   * Saisissez le Title et la Description de la tâche ou de la notification.
+   * Sélectionnez la Priority (High, Medium ou Low) dans la liste déroulante.
+4. **Activer la notification par e-mail :**
+   * Définissez l'option Send Mail sur True ou False, selon qu'une notification par e-mail doit être envoyée.
+5. **Définir la priorité numérique :**
+   * Saisissez une valeur numérique dans le champ Value pour déterminer la priorité de l'attribution, où les nombres les plus faibles sont traités en premier.
+6. Enregistrez la configuration de la carte et activez le workflow.
 
 ## **Conclusion**
 
-The "Assign Document and Create Task/Notification Based on Decision Table" workflow card ensures tasks or notifications are dynamically assigned to the appropriate user or group based on decision table results. This card facilitates efficient task delegation, customizable priorities, and optional email notifications to enhance workflow responsiveness.
+La carte de workflow « Assign Document and Create Task/Notification Based on Decision Table » garantit que les tâches ou notifications sont assignées dynamiquement à l'utilisateur ou au groupe approprié en fonction des résultats de la table de décision. Cette carte facilite une délégation efficace des tâches, des priorités personnalisables et des notifications par e-mail facultatives pour améliorer la réactivité du workflow.

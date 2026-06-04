@@ -2,63 +2,63 @@
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Objectif**
 
-The "**Assign Document and Create Task/Notification for Group**" workflow card assigns a document to a specified group, creates a task or notification with customizable details, and optionally sends an email notification to the group. This card also supports assigning a numeric priority value to determine the order of execution.
+La carte de workflow « **Assign Document and Create Task/Notification for Group** » assigne un document à un groupe spécifié, crée une tâche ou une notification avec des détails personnalisables, et envoie éventuellement une notification par e-mail au groupe. Cette carte prend également en charge l'attribution d'une valeur de priorité numérique pour déterminer l'ordre d'exécution.
 
-## **Components of the Card**
+## **Composants de la carte**
 
 1. **Group Name**
-   * **Description:** Specifies the group that will receive the task or notification.
-   * **Detail:** A dropdown to choose the name of the group to which the document and task/notification will be assigned.
+   * **Description :** spécifie le groupe qui recevra la tâche ou la notification.
+   * **Détail :** une liste déroulante pour choisir le nom du groupe auquel le document et la tâche/notification seront assignés.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the group.
-   * **Detail:** A dropdown to select either "Task" or "Notification" based on the desired action.
+   * **Description :** spécifie le type d'action à créer pour le groupe.
+   * **Détail :** une liste déroulante pour sélectionner « Task » ou « Notification » selon l'action souhaitée.
 3. **Title**
-   * **Description:** Provides the title of the task or notification.
-   * **Detail:** A field to add a concise, descriptive title for the task or notification.
+   * **Description :** fournit le titre de la tâche ou de la notification.
+   * **Détail :** un champ pour ajouter un titre concis et descriptif à la tâche ou à la notification.
 4. **Description**
-   * **Description:** Further describes the task or notification.
-   * **Detail:** A field to provide additional details about the task’s purpose or the notification’s content.
+   * **Description :** décrit plus en détail la tâche ou la notification.
+   * **Détail :** un champ pour fournir des détails supplémentaires sur l'objet de la tâche ou le contenu de la notification.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Description :** définit le niveau d'urgence de la tâche ou de la notification.
+   * **Options :**
+     * **High :** nécessite une attention immédiate.
+     * **Medium :** important mais non urgent.
+     * **Low :** peut être traité plus tard.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the group.
-   * **Options:**
-     * **True:** Sends an email notification.
-     * **False:** Does not send an email.
+   * **Description :** configure si une notification par e-mail est envoyée au groupe.
+   * **Options :**
+     * **True :** envoie une notification par e-mail.
+     * **False :** n'envoie pas d'e-mail.
 7. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where a lower number indicates a higher priority.
+   * **Description :** définit la priorité numérique de l'attribution du document.
+   * **Détail :** un champ pour saisir une valeur numérique, où un nombre plus faible indique une priorité plus élevée.
 
-## **Functionality**
+## **Fonctionnalité**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the configured workflow conditions are satisfied.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the group specified in the "Group Name" field. A task or notification is created with the configured title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email notification is sent to the group to inform them about the task or notification.
+* **Évaluation de la condition :**\
+  La carte n'exécute ses actions que si les conditions de workflow configurées sont satisfaites.
+* **Attribution du document et création de tâche/notification :**\
+  Le document est assigné au groupe spécifié dans le champ « Group Name ». Une tâche ou une notification est créée avec le titre, la description et le niveau de priorité configurés.
+* **Notification par e-mail :**\
+  Si « Send Mail » est défini sur True, une notification par e-mail est envoyée au groupe pour l'informer de la tâche ou de la notification.
 
-## **Setup and Configuration**
+## **Mise en place et configuration**
 
-1. **Define Group Name:**
-   * Input the name of the group in the Group Name field.
-2. **Select Task/Notification:**
-   * Choose "Task" or "Notification" from the Task/Notification dropdown.
-3. **Set Task/Notification Details:**
-   * Enter the Title and Description for the task or notification.
-   * Select the Priority from the dropdown (High, Medium, or Low).
-4. **Enable Email Notification:**
-   * Configure the Send Mail option to True or False, depending on whether an email notification should be sent.
-5. **Assign Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment’s priority, where lower values take precedence.
-6. Save the card configuration and activate the workflow.
+1. **Définir le Group Name :**
+   * Saisissez le nom du groupe dans le champ Group Name.
+2. **Sélectionner Task/Notification :**
+   * Choisissez « Task » ou « Notification » dans la liste déroulante Task/Notification.
+3. **Définir les détails de la tâche/notification :**
+   * Saisissez le Title et la Description de la tâche ou de la notification.
+   * Sélectionnez la Priority dans la liste déroulante (High, Medium ou Low).
+4. **Activer la notification par e-mail :**
+   * Configurez l'option Send Mail sur True ou False, selon qu'une notification par e-mail doit être envoyée.
+5. **Attribuer la priorité numérique :**
+   * Saisissez une valeur numérique dans le champ Value pour déterminer la priorité de l'attribution, où les valeurs les plus faibles ont la préséance.
+6. Enregistrez la configuration de la carte et activez le workflow.
 
 ## **Conclusion**
 
-The "Assign Document and Create Task/Notification for Group" workflow card ensures documents are assigned to the appropriate group while creating tasks or notifications with customizable priority and email notification options. This streamlines document management and enhances workflow efficiency.
+La carte de workflow « Assign Document and Create Task/Notification for Group » garantit que les documents sont assignés au groupe approprié tout en créant des tâches ou des notifications avec des options personnalisables de priorité et de notification par e-mail. Cela rationalise la gestion des documents et améliore l'efficacité du workflow.

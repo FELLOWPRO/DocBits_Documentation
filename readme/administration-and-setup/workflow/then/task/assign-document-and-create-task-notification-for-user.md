@@ -2,62 +2,62 @@
 
 <figure><img src="../../../../.gitbook/assets/image (13) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Objectif**
 
-The "**Assign Document and Create Task/Notification for User**" workflow card assigns a document to a specified user, creates a task or notification with configurable details, and optionally sends an email notification to the user. This card also enables setting a numeric priority value to determine the order of execution.
+La carte de workflow « **Assign Document and Create Task/Notification for User** » assigne un document à un utilisateur spécifié, crée une tâche ou une notification avec des détails configurables, et envoie éventuellement une notification par e-mail à l'utilisateur. Cette carte permet également de définir une valeur de priorité numérique pour déterminer l'ordre d'exécution.
 
-## **Components of the Card**
+## **Composants de la carte**
 
 1. **User**
-   * **Description:** Specifies the user who will receive the task or notification.
-   * **Detail:** A dropdown menu to select the user to whom the document and task/notification will be assigned.
+   * **Description :** spécifie l'utilisateur qui recevra la tâche ou la notification.
+   * **Détail :** un menu déroulant pour sélectionner l'utilisateur auquel le document et la tâche/notification seront assignés.
 2. **Task/Notification**
-   * **Description:** Specifies the type of action to create for the user.
-   * **Detail:** A dropdown to choose either "Task" or "Notification" based on the intended action.
+   * **Description :** spécifie le type d'action à créer pour l'utilisateur.
+   * **Détail :** une liste déroulante pour choisir « Task » ou « Notification » selon l'action prévue.
 3. **Title**
-   * **Description:** The title of the task or notification.
-   * **Detail:** A field to provide a concise, descriptive title for the task or notification.
+   * **Description :** le titre de la tâche ou de la notification.
+   * **Détail :** un champ pour fournir un titre concis et descriptif à la tâche ou à la notification.
 4. **Description**
-   * **Description:** Additional details about the task or notification.
-   * **Detail:** A field to describe the task’s purpose or provide context for the notification.
+   * **Description :** des détails supplémentaires sur la tâche ou la notification.
+   * **Détail :** un champ pour décrire l'objet de la tâche ou fournir un contexte à la notification.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Requires immediate attention.
-     * **Medium:** Important but not urgent.
-     * **Low:** Can be addressed later.
+   * **Description :** définit le niveau d'urgence de la tâche ou de la notification.
+   * **Options :**
+     * **High :** nécessite une attention immédiate.
+     * **Medium :** important mais non urgent.
+     * **Low :** peut être traité plus tard.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification is sent to the user.
-   * **Options:**
-     * **True:** Sends an email notification to the user.
-     * **False:** No email notification is sent.
+   * **Description :** configure si une notification par e-mail est envoyée à l'utilisateur.
+   * **Options :**
+     * **True :** envoie une notification par e-mail à l'utilisateur.
+     * **False :** aucune notification par e-mail n'est envoyée.
 7. **Value**
-   * **Description:** Sets the numeric priority for the document assignment.
-   * **Detail:** A field to input a numeric value, where lower numbers indicate higher priority.
+   * **Description :** définit la priorité numérique de l'attribution du document.
+   * **Détail :** un champ pour saisir une valeur numérique, où les nombres les plus faibles indiquent une priorité plus élevée.
 
-## **Functionality**
+## **Fonctionnalité**
 
-* **Condition Evaluation:**\
-  The card executes its actions only if the configured workflow conditions are met.
-* **Document Assignment and Task/Notification Creation:**\
-  The document is assigned to the user specified in the "User" field. A task or notification is created with the provided title, description, and priority level.
-* **Email Notification:**\
-  If "Send Mail" is set to True, an email is sent to the user notifying them about the task or notification.
+* **Évaluation de la condition :**\
+  La carte n'exécute ses actions que si les conditions de workflow configurées sont satisfaites.
+* **Attribution du document et création de tâche/notification :**\
+  Le document est assigné à l'utilisateur spécifié dans le champ « User ». Une tâche ou une notification est créée avec le titre, la description et le niveau de priorité fournis.
+* **Notification par e-mail :**\
+  Si « Send Mail » est défini sur True, un e-mail est envoyé à l'utilisateur pour l'informer de la tâche ou de la notification.
 
-## **Setup and Configuration**
+## **Mise en place et configuration**
 
-1. **Select User:**
-   * Choose the user from the User dropdown menu.
-2. **Configure Task/Notification Details:**
-   * Select "Task" or "Notification" from the Task/Notification dropdown.
-   * Enter the Title and Description for the task or notification.
-   * Set the Priority by selecting High, Medium, or Low from the dropdown.
-3. **Enable Email Notification:**
-   * Configure the Send Mail option to True or False, depending on whether an email notification should be sent.
-4. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the assignment’s priority, where lower values are processed first.
-5. Save the card configuration and activate the workflow.
+1. **Sélectionner l'utilisateur :**
+   * Choisissez l'utilisateur dans le menu déroulant User.
+2. **Configurer les détails de la tâche/notification :**
+   * Sélectionnez « Task » ou « Notification » dans la liste déroulante Task/Notification.
+   * Saisissez le Title et la Description de la tâche ou de la notification.
+   * Définissez la Priority en sélectionnant High, Medium ou Low dans la liste déroulante.
+3. **Activer la notification par e-mail :**
+   * Configurez l'option Send Mail sur True ou False, selon qu'une notification par e-mail doit être envoyée.
+4. **Définir la priorité numérique :**
+   * Saisissez une valeur numérique dans le champ Value pour déterminer la priorité de l'attribution, où les valeurs les plus faibles sont traitées en premier.
+5. Enregistrez la configuration de la carte et activez le workflow.
 
 ## **Conclusion**
 
-The "Assign Document and Create Task/Notification for User" workflow card ensures documents are assigned to the appropriate user while creating tasks or notifications with defined priorities and optional email notifications. This card helps streamline task delegation and enhances workflow efficiency.
+La carte de workflow « Assign Document and Create Task/Notification for User » garantit que les documents sont assignés à l'utilisateur approprié tout en créant des tâches ou des notifications avec des priorités définies et des notifications par e-mail facultatives. Cette carte aide à rationaliser la délégation des tâches et améliore l'efficacité du workflow.

@@ -2,52 +2,52 @@
 
 <figure><img src="../../../../.gitbook/assets/image (294).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-The **"Calculate Columns in Table"** workflow card is used to perform calculations between columns in a selected table. It allows users to select columns, apply a mathematical operation, and store the result in a specified result column.
+La carte de workflow **« Calculate Columns in Table »** sert à effectuer des calculs entre les colonnes d'un tableau sélectionné. Elle permet aux utilisateurs de sélectionner des colonnes, d'appliquer une opération mathématique et de stocker le résultat dans une colonne de résultat spécifiée.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which the columns will be calculated.
-   * **Detail:** A dropdown list of all available **tables** is provided for selection.
-2. **Column Name (1st Column)**
-   * **Description:** Specifies the **first column** to be involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+   * **Description :** spécifie la **table** dans laquelle les colonnes seront calculées.
+   * **Détail :** une liste déroulante de toutes les **tables** disponibles est proposée pour la sélection.
+2. **Column Name (1re colonne)**
+   * **Description :** spécifie la **première colonne** à impliquer dans le calcul.
+   * **Détail :** une liste de toutes les **colonnes** disponibles est proposée pour la sélection.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be applied between the selected columns.
-   * **Options:**
-     * **Add (+):** Adds the value of the second column to the value of the first column.
-     * **Subtract (-):** Subtracts the value of the second column from the value of the first column.
-     * **Multiply (\*):** Multiplies the value in the first column by the value in the second column.
-     * **Divide (/):** Divides the value in the first column by the value in the second column.
-4. **Column Name (2nd Column)**
-   * **Description:** Specifies the **second column** to be involved in the calculation.
-   * **Detail:** A list of available **columns** is provided for selection.
+   * **Description :** définit l'opération mathématique à appliquer entre les colonnes sélectionnées.
+   * **Options :**
+     * **Add (+) :** ajoute la valeur de la seconde colonne à la valeur de la première colonne.
+     * **Subtract (-) :** soustrait la valeur de la seconde colonne de la valeur de la première colonne.
+     * **Multiply (\*) :** multiplie la valeur de la première colonne par la valeur de la seconde colonne.
+     * **Divide (/) :** divise la valeur de la première colonne par la valeur de la seconde colonne.
+4. **Column Name (2e colonne)**
+   * **Description :** spécifie la **seconde colonne** à impliquer dans le calcul.
+   * **Détail :** une liste des **colonnes** disponibles est proposée pour la sélection.
 5. **Result Column**
-   * **Description:** Specifies the **column** where the result of the calculation will be stored.
-   * **Detail:** A list of available **columns** is provided where the calculated value will be saved.
+   * **Description :** spécifie la **colonne** où le résultat du calcul sera stocké.
+   * **Détail :** une liste des **colonnes** disponibles est proposée, où la valeur calculée sera enregistrée.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Column Calculation:**\
-  The card performs the selected mathematical operation between the two chosen columns.
-* **Result Storage:**\
-  The result of the calculation is stored in the selected **result column**.
+* **Évaluation de la condition :**\
+  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* **Calcul de colonnes :**\
+  La carte effectue l'opération mathématique sélectionnée entre les deux colonnes choisies.
+* **Stockage du résultat :**\
+  Le résultat du calcul est stocké dans la **colonne de résultat** sélectionnée.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-* **Select Table:**\
-  Choose the **table** where the columns will be calculated.
-* **Choose Columns:**\
-  Select the **first column** and **second column** that will be used in the calculation.
-* **Select Operation:**\
-  Choose the mathematical operation (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) to be applied between the columns.
-* **Select Result Column:**\
-  Choose the **result column** where the calculation will be stored.
+* **Sélectionner la table :**\
+  Choisissez la **table** où les colonnes seront calculées.
+* **Choisir les colonnes :**\
+  Sélectionnez la **première colonne** et la **seconde colonne** qui seront utilisées dans le calcul.
+* **Sélectionner l'opération :**\
+  Choisissez l'opération mathématique (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) à appliquer entre les colonnes.
+* **Sélectionner la colonne de résultat :**\
+  Choisissez la **colonne de résultat** où le calcul sera stocké.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Calculate Columns in Table"** workflow card enables users to perform dynamic calculations between columns in a table, and store the results in a designated column. The card offers flexibility to apply different mathematical operations and ensures the result is stored in the specified column.
+La carte de workflow **« Calculate Columns in Table »** permet aux utilisateurs d'effectuer des calculs dynamiques entre les colonnes d'un tableau et de stocker les résultats dans une colonne désignée. La carte offre la flexibilité d'appliquer différentes opérations mathématiques et garantit que le résultat est stocké dans la colonne spécifiée.

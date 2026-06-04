@@ -2,37 +2,37 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
-**Purpose**
+**Propósito**
 
-This workflow card manages the execution of operations based on whether a task or document is assigned to a particular user or set of users. It employs conditional logic to either trigger or prevent specific actions, making it ideal for workflows that require user-specific handling.
+Esta tarjeta de flujo de trabajo gestiona la ejecución de operaciones en función de si una tarea o documento está asignado a un usuario o conjunto de usuarios en particular. Emplea lógica condicional para disparar o impedir acciones específicas, lo que la hace ideal para flujos de trabajo que requieren un tratamiento específico por usuario.
 
-**Components of the Card**
+**Componentes de la tarjeta**
 
 1. **Operator**
-   * **Description**: Defines the logical condition to apply to the user assignment.
-   * **Options**:
-     * **IS**: Triggers the operation if the assigned user of the document or task matches any user in the specified list.
-     * **IS NOT**: Triggers the operation if the assigned user of the document or task does not match any user in the specified list.
+   * **Descripción**: Define la condición lógica que se aplica a la asignación de usuario.
+   * **Opciones**:
+     * **IS**: Dispara la operación si el usuario asignado del documento o tarea coincide con algún usuario de la lista especificada.
+     * **IS NOT**: Dispara la operación si el usuario asignado del documento o tarea no coincide con ningún usuario de la lista especificada.
 2. **User List**
-   * **Description**: A list or selection of users to compare against the assigned user.
-   * **Detail**: This list can include one or multiple users, allowing the card to handle both singular and multiple user conditions effectively. The selection can be made through checkboxes, a multi-select dropdown, or similar UI elements.
+   * **Descripción**: Una lista o selección de usuarios con los que comparar el usuario asignado.
+   * **Detalle**: Esta lista puede incluir uno o varios usuarios, lo que permite a la tarjeta manejar de forma eficaz tanto condiciones de un solo usuario como de varios. La selección puede realizarse mediante casillas de verificación, un desplegable de selección múltiple o elementos de interfaz similares.
 
-**Functionality**
+**Funcionalidad**
 
-* **User Assignment Identification**: Automatically identifies the user or users assigned to a particular task or document within the ERP system.
-* **Condition Evaluation**:
-  * Using the **IS** operator, the card checks if the assigned user is among those listed in the User List.
-  * Using the **IS NOT** operator, the card ensures the assigned user is not among those listed.
-* **Action Execution**:
-  * **True Condition**: If the user assignment meets the condition (either IS or IS NOT), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition**: If the condition is not met, the workflow will not continue.
+* **Identificación de la asignación de usuario**: Identifica automáticamente el usuario o usuarios asignados a una tarea o documento concreto dentro del sistema ERP.
+* **Evaluación de la condición**:
+  * Con el operador **IS**, la tarjeta comprueba si el usuario asignado está entre los enumerados en la User List.
+  * Con el operador **IS NOT**, la tarjeta garantiza que el usuario asignado no esté entre los enumerados.
+* **Ejecución de la acción**:
+  * **Condición verdadera**: Si la asignación de usuario cumple la condición (ya sea IS o IS NOT), se disparan las acciones pertinentes, como notificaciones, inicios de tareas, aprobaciones u otros pasos del flujo de trabajo.
+  * **Condición falsa**: Si la condición no se cumple, el flujo de trabajo no continuará.
 
-**User Interactions**
+**Interacciones del usuario**
 
-* **Setup and Configuration**: Users configure the card by selecting an operator and specifying the relevant users from the User List. Setup should be user-friendly and intuitive to accommodate selections from potentially large user bases.
-* **Monitoring and Reporting**: The ERP system should provide functionality to monitor and report on the operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications**: Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in user selection.
+* **Configuración**: Los usuarios configuran la tarjeta seleccionando un operador y especificando los usuarios pertinentes de la User List. La configuración debe ser fácil de usar e intuitiva para acomodar selecciones de bases de usuarios potencialmente grandes.
+* **Supervisión e informes**: El sistema ERP debe ofrecer funcionalidad para supervisar e informar sobre las operaciones disparadas por esta tarjeta, proporcionando información sobre la precisión de las asignaciones y la eficiencia del proceso.
+* **Gestión de errores y notificaciones**: Los usuarios deben tener opciones para recibir alertas o notificaciones si hay problemas con las asignaciones, como tareas sin asignar o errores en la selección de usuarios.
 
-#### Conclusion
+#### Conclusión
 
-The "Assigned User Condition" workflow card is a critical tool for managing document and task workflows that depend on user assignments. By allowing conditions based on whether a task or document is assigned to specific users, it ensures that workflows are only triggered by appropriate user interactions, enhancing both accountability and task alignment within teams. Clearly documenting this card will help users understand its significance and integrate it effectively into their workflows, ensuring smooth and efficient operations tailored to user roles and responsibilities.
+La tarjeta de flujo de trabajo "Assigned User Condition" es una herramienta fundamental para gestionar flujos de trabajo de documentos y tareas que dependen de las asignaciones de usuario. Al permitir condiciones basadas en si una tarea o documento está asignado a usuarios específicos, garantiza que los flujos de trabajo solo se disparen por las interacciones de usuario adecuadas, mejorando tanto la responsabilidad como la alineación de las tareas dentro de los equipos. Documentar claramente esta tarjeta ayudará a los usuarios a comprender su importancia e integrarla de forma eficaz en sus flujos de trabajo, garantizando operaciones fluidas y eficientes adaptadas a los roles y responsabilidades de los usuarios.

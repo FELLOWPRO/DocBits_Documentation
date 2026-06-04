@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to compare the order type of a purchase order against a specified value. The card checks whether the order type of the purchase order meets the specified condition (e.g., whether it equals, does not equal, is greater than, or meets another condition) to ensure that the purchase order is classified correctly. This comparison can trigger actions based on specific conditions, such as routing the order for further review or approval if discrepancies are found.
+Esta tarjeta de flujo de trabajo está diseñada para comparar el tipo de pedido de una orden de compra con un valor especificado. La tarjeta comprueba si el tipo de pedido de la orden de compra cumple la condición especificada (p. ej., si es igual, distinto, mayor que o cumple otra condición) para garantizar que la orden de compra esté clasificada correctamente. Esta comparación puede disparar acciones según condiciones específicas, como enrutar el pedido para una revisión o aprobación adicional si se encuentran discrepancias.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Any/All:**
-   * **Description**: Defines whether the condition applies to any or all purchase orders being evaluated in the workflow.
-   * **Options**:
-     * **Any**: The condition is met if any one of the purchase orders matches the specified condition.
-     * **All**: The condition is met only if all of the purchase orders meet the specified condition.
+   * **Descripción**: Define si la condición se aplica a alguna o a todas las órdenes de compra que se evalúan en el flujo de trabajo.
+   * **Opciones**:
+     * **Any**: La condición se cumple si alguna de las órdenes de compra coincide con la condición especificada.
+     * **All**: La condición se cumple solo si todas las órdenes de compra cumplen la condición especificada.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to compare the order type against a specified value.
-   * **Options**:
-     * **Equals (=)**: Checks if the order type matches the specified value.
-     * **Not Equals (≠)**: Ensures the order type is different from the specified value.
+   * **Descripción**: Define la condición que se aplicará para comparar el tipo de pedido con un valor especificado.
+   * **Opciones**:
+     * **Equals (=)**: Comprueba si el tipo de pedido coincide con el valor especificado.
+     * **Not Equals (≠)**: Garantiza que el tipo de pedido sea distinto del valor especificado.
 3. **Order Type:**
-   * **Description**: Specifies the value to which the order type of the purchase order will be compared.
-   * **Detail**: The value must match the order type or classification in the system.
+   * **Descripción**: Especifica el valor con el que se comparará el tipo de pedido de la orden de compra.
+   * **Detalle**: El valor debe coincidir con el tipo de pedido o la clasificación del sistema.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Condition Evaluation:** The system evaluates the order type of the purchase order against the specified condition using the selected operator. If the order type matches (or does not match) the specified value, the workflow proceeds accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the order type matches the specified value), the workflow will continue, possibly triggering additional actions or processing steps.
-  * **False Condition**: If the condition evaluates to false (e.g., the order type does not match the specified value), the workflow will not continue.
+* **Evaluación de la condición:** El sistema evalúa el tipo de pedido de la orden de compra frente a la condición especificada usando el operador seleccionado. Si el tipo de pedido coincide (o no coincide) con el valor especificado, el flujo de trabajo continúa en consecuencia.
+* **Ejecución de la acción:**
+  * **Condición verdadera**: Si la condición se evalúa como verdadera (p. ej., el tipo de pedido coincide con el valor especificado), el flujo de trabajo continuará, posiblemente disparando acciones o pasos de procesamiento adicionales.
+  * **Condición falsa**: Si la condición se evalúa como falsa (p. ej., el tipo de pedido no coincide con el valor especificado), el flujo de trabajo no continuará.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-* Users configure the card by selecting the order type field of the purchase order and choosing the operator that defines how the order type will be compared. Then, they set the specified value and decide whether to apply the condition to any or all of the purchase order lines.
+* Los usuarios configuran la tarjeta seleccionando el campo del tipo de pedido de la orden de compra y eligiendo el operador que define cómo se comparará el tipo de pedido. A continuación, establecen el valor especificado y deciden si aplicar la condición a alguna o a todas las líneas de la orden de compra.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-* A purchase order has the order type "Standard." The workflow is configured to check if the order type is "Urgent." Using the "Equals" operator, the card compares the order type and finds that it does not match the specified value, triggering the workflow to send the order for review due to the mismatch.
+* Una orden de compra tiene el tipo de pedido "Standard". El flujo de trabajo está configurado para comprobar si el tipo de pedido es "Urgent". Usando el operador "Equals", la tarjeta compara el tipo de pedido y descubre que no coincide con el valor especificado, lo que dispara el flujo de trabajo para enviar el pedido a revisión debido al desajuste.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The "Order Type of Purchase Order" workflow card ensures that purchase orders are classified correctly according to their specified order type. By automating the comparison of order types, organizations can ensure that purchase orders are processed according to their expected classifications, helping to enforce compliance and streamline procurement workflows.
+La tarjeta de flujo de trabajo "Order Type of Purchase Order" garantiza que las órdenes de compra se clasifiquen correctamente según su tipo de pedido especificado. Al automatizar la comparación de los tipos de pedido, las organizaciones pueden garantizar que las órdenes de compra se procesen según sus clasificaciones previstas, ayudando a aplicar el cumplimiento y a agilizar los flujos de trabajo de compras.

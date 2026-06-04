@@ -2,54 +2,54 @@
 
 <figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card compares the total charges in a document field with the corresponding charges in a purchase order. The card helps ensure that the charges in the document align with those in the purchase order, considering specified tolerance levels. The comparison can trigger actions if discrepancies are found, such as flagging discrepancies for review or adjusting charges accordingly.
+Esta tarjeta de flujo de trabajo compara los cargos totales de un campo de documento con los cargos correspondientes de una orden de compra. La tarjeta ayuda a garantizar que los cargos del documento se ajusten a los de la orden de compra, teniendo en cuenta los niveles de tolerancia especificados. La comparación puede disparar acciones si se encuentran discrepancias, como señalar discrepancias para su revisión o ajustar los cargos en consecuencia.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Field Name:**
-   * **Description**: Specifies the document field that contains the total charge values to be compared with the charges in the purchase order.
-   * **Detail**: The value in this field represents the total charges applied in the document (e.g., invoice) and will be compared with the purchase order charge.
+   * **Descripción**: Especifica el campo del documento que contiene los valores de cargo total que se compararán con los cargos de la orden de compra.
+   * **Detalle**: El valor de este campo representa los cargos totales aplicados en el documento (p. ej., factura) y se comparará con el cargo de la orden de compra.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to the comparison between the total charge in the document and the charge in the purchase order.
-   * **Options**:
-     * **Equals (=)**: Verifies if the total charge in the document matches the charge in the purchase order.
-     * **Not Equals (≠)**: Ensures the total charge in the document is different from the charge in the purchase order.
-     * **Greater Than (>)**: Verifies if the total charge in the document is greater than the charge in the purchase order.
-     * **Greater or Equals (≥)**: Verifies if the total charge in the document is greater than or equal to the charge in the purchase order.
-     * **Lesser Than (<)**: Verifies if the total charge in the document is less than the charge in the purchase order.
-     * **Lesser or Equals (≤)**: Verifies if the total charge in the document is less than or equal to the charge in the purchase order.
+   * **Descripción**: Define la condición que se aplicará a la comparación entre el cargo total del documento y el cargo de la orden de compra.
+   * **Opciones**:
+     * **Equals (=)**: Verifica si el cargo total del documento coincide con el cargo de la orden de compra.
+     * **Not Equals (≠)**: Garantiza que el cargo total del documento sea distinto del cargo de la orden de compra.
+     * **Greater Than (>)**: Verifica si el cargo total del documento es mayor que el cargo de la orden de compra.
+     * **Greater or Equals (≥)**: Verifica si el cargo total del documento es mayor o igual que el cargo de la orden de compra.
+     * **Lesser Than (<)**: Verifica si el cargo total del documento es menor que el cargo de la orden de compra.
+     * **Lesser or Equals (≤)**: Verifica si el cargo total del documento es menor o igual que el cargo de la orden de compra.
 3. **Tolerance Amount**
-   * **Description**: Specifies the tolerance threshold for comparing the total charges.
-   * **Detail**: This numeric value represents the allowed variance in charges between the document and the purchase order.
+   * **Descripción**: Especifica el umbral de tolerancia para comparar los cargos totales.
+   * **Detalle**: Este valor numérico representa la variación permitida en los cargos entre el documento y la orden de compra.
 4. **Tolerance Type:**
-   * **Description**: Specifies the type of tolerance that will be applied.
-   * **Options**:
-     * **Percentage**: Tolerance is applied as a percentage of the purchase order charge.
-     * **Value**: Tolerance is applied as a fixed numeric amount.
+   * **Descripción**: Especifica el tipo de tolerancia que se aplicará.
+   * **Opciones**:
+     * **Percentage**: La tolerancia se aplica como un porcentaje del cargo de la orden de compra.
+     * **Value**: La tolerancia se aplica como un importe numérico fijo.
 5. **Separator:**
-   * **Description**: Specifies the separator used to distinguish the Charge ID at the end of the field name.
-   * **Detail**: The separator separates the charge field from the unique Charge ID that will be used to link the document charge to the corresponding charge in the purchase order.
+   * **Descripción**: Especifica el separador utilizado para distinguir el Charge ID al final del nombre del campo.
+   * **Detalle**: El separador separa el campo de cargo del Charge ID único que se utilizará para vincular el cargo del documento con el cargo correspondiente de la orden de compra.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Condition Evaluation:** The system compares the total charge in the document field with the corresponding charge in the purchase order based on the operator and tolerance. The tolerance is applied to determine whether the difference between the two charges is within an acceptable range.
-* **Action Execution:**
-  * **True Condition**: If the charges match (considering tolerance) and the condition is true, the workflow will continue with the defined action, such as document approval or further processing.
-  * **False Condition**: If the condition is false (i.e., the charges do not match within the tolerance), the workflow will not continue.
+* **Evaluación de la condición:** El sistema compara el cargo total del campo del documento con el cargo correspondiente de la orden de compra según el operador y la tolerancia. La tolerancia se aplica para determinar si la diferencia entre los dos cargos está dentro de un rango aceptable.
+* **Ejecución de la acción:**
+  * **Condición verdadera**: Si los cargos coinciden (teniendo en cuenta la tolerancia) y la condición es verdadera, el flujo de trabajo continuará con la acción definida, como la aprobación del documento o un procesamiento adicional.
+  * **Condición falsa**: Si la condición es falsa (es decir, los cargos no coinciden dentro de la tolerancia), el flujo de trabajo no continuará.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-* Users begin by selecting the document field that contains the total charge value. Next, they select the operator to define how the charge will be compared to the purchase order charge. Then, users set the tolerance amount and tolerance type (percentage or absolute). Finally, they specify the separator and Charge ID that will be used for comparison.
+* Los usuarios comienzan seleccionando el campo del documento que contiene el valor de cargo total. A continuación, seleccionan el operador para definir cómo se comparará el cargo con el cargo de la orden de compra. Después, los usuarios establecen el importe de tolerancia y el tipo de tolerancia (porcentaje o absoluto). Por último, especifican el separador y el Charge ID que se utilizarán para la comparación.
 
-## **Example Scenario:**
+## **Ejemplo de escenario:**
 
-An invoice lists a charge of $500 in the "total charges" field. The corresponding purchase order charge is $480, and the tolerance is set to $20 (absolute tolerance). The card compares the document charge against the purchase order charge:
+Una factura indica un cargo de 500 $ en el campo "total charges". El cargo correspondiente de la orden de compra es de 480 $ y la tolerancia se establece en 20 $ (tolerancia absoluta). La tarjeta compara el cargo del documento con el cargo de la orden de compra:
 
-* The total charge in the document is within the $20 tolerance of the purchase order, and the workflow continues without issue.
-* If the charge exceeds the tolerance, the workflow flags the discrepancy for review.
+* El cargo total del documento está dentro de la tolerancia de 20 $ de la orden de compra, y el flujo de trabajo continúa sin problemas.
+* Si el cargo supera la tolerancia, el flujo de trabajo señala la discrepancia para su revisión.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The "Compare Total Charges" workflow card ensures that the charges in documents align with those in purchase orders, considering specified tolerance levels. This helps organizations automate the verification process, identify discrepancies early, and maintain better control over charge-related processes.
+La tarjeta de flujo de trabajo "Compare Total Charges" garantiza que los cargos de los documentos se ajusten a los de las órdenes de compra, teniendo en cuenta los niveles de tolerancia especificados. Esto ayuda a las organizaciones a automatizar el proceso de verificación, identificar discrepancias de forma temprana y mantener un mejor control sobre los procesos relacionados con los cargos.

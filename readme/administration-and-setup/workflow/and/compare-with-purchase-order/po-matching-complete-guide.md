@@ -8,29 +8,29 @@ Le schede di abbinamento ordini di questa pagina vanno nel gruppo **And** del Ge
 DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
 {% endembed %}
 
-**Status:** Covers 15 PO comparison cards with detailed calculations
+**Stato:** copre 15 card di confronto PO con calcoli dettagliati
 
 ---
 
-## 📌 Version Information
+## 📌 Informazioni sulla Versione
 
-**Most Evolved Card:** CONDITION_DOC_TO_PO_UNIT_PRICE (5 versions, v5 latest)
-**Other Complex Cards:** CONDITION_OC_TO_PO_ITEMS (v4), CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY (v4)
+**Card Più Evoluta:** CONDITION_DOC_TO_PO_UNIT_PRICE (5 versioni, v5 la più recente)
+**Altre Card Complesse:** CONDITION_OC_TO_PO_ITEMS (v4), CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY (v4)
 
-**Key Patterns:**
-- **v2 → v3+:** Addition of tolerance parameters for flexible matching
-- **v3 → v4:** Addition of comparison mode parameters
-- **v4 → v5:** Enhanced tolerance with multiple units (%, EUR, $, etc.)
+**Schemi Principali:**
+- **v2 → v3+:** aggiunta dei parametri di tolleranza per un abbinamento flessibile
+- **v3 → v4:** aggiunta dei parametri di modalità di confronto
+- **v4 → v5:** tolleranza potenziata con più unità (%, EUR, $, ecc.)
 
-📖 [Complete Version History](../../../changelog/release.md#-po-comparison--validation-cards) | [Card Version Database](../../../../DocFlow/docs/card_version.md)
+📖 [Cronologia Completa delle Versioni](../../../changelog/release.md#-po-comparison--validation-cards) | [Database delle Versioni delle Card](../../../../DocFlow/docs/card_version.md)
 
 ---
 
-## Understanding PO Matching
+## Comprendere il PO Matching
 
-When you receive an invoice, it should match the Purchase Order (PO) placed earlier. PO matching cards automatically check if invoice data matches PO data.
+Quando ricevi una fattura, questa dovrebbe corrispondere all'ordine di acquisto (PO) emesso in precedenza. Le card di PO matching verificano automaticamente se i dati della fattura corrispondono ai dati del PO.
 
-**The Big Picture:**
+**Il Quadro Generale:**
 ```
 PO Placed     Invoice Arrives     PO Matching     Decision
 (€100)    →   (€103)          →   (Check if       → Approve/Reject
@@ -41,26 +41,26 @@ Qty: 100      Qty: 100            within tolerance)
 
 # 1. Purchase Order Full Match
 
-## Purpose
-Checks if the entire invoice matches the PO perfectly or within tolerance
+## Scopo
+Verifica se l'intera fattura corrisponde perfettamente al PO o entro la tolleranza
 
-## When to Use
-- Before approving an invoice
-- As a preliminary quality check
-- To identify problems early
+## Quando Usarla
+- Prima di approvare una fattura
+- Come controllo qualità preliminare
+- Per individuare i problemi in anticipo
 
-## How It Works
-System compares:
-- Invoice quantities vs PO quantities
-- Invoice prices vs PO prices
-- Invoice items vs PO items
-- Invoice total vs PO total
+## Come Funziona
+Il sistema confronta:
+- Quantità della fattura vs quantità del PO
+- Prezzi della fattura vs prezzi del PO
+- Articoli della fattura vs articoli del PO
+- Totale della fattura vs totale del PO
 
-## Result
-- **TRUE** (Full Match): Everything matches, proceed
-- **FALSE** (Mismatch): Something doesn't match, needs review
+## Risultato
+- **TRUE** (Full Match): tutto corrisponde, procedi
+- **FALSE** (Mismatch): qualcosa non corrisponde, richiede revisione
 
-## Example
+## Esempio
 ```
 PO:
 - Item ABC: Qty 100, Unit Price €50 = €5000
@@ -77,17 +77,17 @@ Result: ✅ FULL MATCH
 
 ---
 
-# 2. Unit Price Comparison (Document vs PO)
+# 2. Confronto del Prezzo Unitario (Document vs PO)
 
-## Purpose
-Compares the unit price on the invoice with the unit price on the PO
+## Scopo
+Confronta il prezzo unitario sulla fattura con il prezzo unitario sul PO
 
-## Parameters
-- **Unit Price Tolerance**: Allow variance up to this amount
-- **Tolerance Type**: Percentage (%) or Absolute (€/$)
-- **Operator**: Is Equal to, Is Greater than, Is Less than, etc.
+## Parametri
+- **Unit Price Tolerance**: consente una varianza fino a questo importo
+- **Tolerance Type**: percentuale (%) o assoluta (€/$)
+- **Operator**: Is Equal to, Is Greater than, Is Less than, ecc.
 
-## How It Works (Percentage Tolerance)
+## Come Funziona (Tolleranza Percentuale)
 
 **Formula:**
 ```
@@ -96,7 +96,7 @@ Variance % = |(Invoice Price - PO Price)| / PO Price × 100
 Check: Is Variance % ≤ Tolerance %?
 ```
 
-**Step-by-Step Example:**
+**Esempio Passo dopo Passo:**
 ```
 Step 1: Get prices
   PO Unit Price: €100.00
@@ -114,9 +114,9 @@ Step 4: Check tolerance (5% allowed)
 Result: PASS - Within tolerance
 ```
 
-## Real-World Examples
+## Esempi Reali
 
-### Example 1: Small Increase (Accepted)
+### Esempio 1: Piccolo Aumento (Accettato)
 ```
 PO Price: €50.00
 Invoice Price: €51.50
@@ -129,7 +129,7 @@ Calculation:
 Is 3% ≤ 3%? YES ✅ ACCEPT
 ```
 
-### Example 2: Large Increase (Rejected)
+### Esempio 2: Grande Aumento (Rifiutato)
 ```
 PO Price: €50.00
 Invoice Price: €55.00
@@ -142,7 +142,7 @@ Calculation:
 Is 10% ≤ 3%? NO ❌ REJECT - NEEDS REVIEW
 ```
 
-### Example 3: Discount (Also Checked)
+### Esempio 3: Sconto (Anch'esso Verificato)
 ```
 PO Price: €100.00
 Invoice Price: €97.00
@@ -155,7 +155,7 @@ Calculation:
 Is 3% ≤ 5%? YES ✅ ACCEPT (Discount is within tolerance)
 ```
 
-### Example 4: Absolute Value Tolerance
+### Esempio 4: Tolleranza con Valore Assoluto
 ```
 PO Price: €10.00
 Invoice Price: €10.50
@@ -167,34 +167,34 @@ Calculation:
 Is €0.50 ≤ €1.00? YES ✅ ACCEPT
 ```
 
-## What to Do With Results
+## Cosa Fare con i Risultati
 
-**If PASS ✅:**
-- Continue to next check
-- Or approve invoice
-- Or proceed with export
+**Se PASS ✅:**
+- Prosegui al controllo successivo
+- Oppure approva la fattura
+- Oppure procedi con l'esportazione
 
-**If FAIL ❌:**
-- Flag for manual review
-- Ask supplier for explanation
-- Contact procurement team
-- Approve with note if acceptable
+**Se FAIL ❌:**
+- Contrassegna per la revisione manuale
+- Chiedi al fornitore una spiegazione
+- Contatta il team di approvvigionamento
+- Approva con una nota se accettabile
 
 ---
 
-# 3. Quantity Comparison
+# 3. Confronto della Quantità
 
-## Purpose
-Checks if the quantity ordered matches the quantity invoiced
+## Scopo
+Verifica se la quantità ordinata corrisponde alla quantità fatturata
 
-## Parameters
-- **Tolerance**: Amount or % allowed to differ
+## Parametri
+- **Tolerance**: importo o % di differenza consentita
 - **Operator**: Equals, Greater than, Less than
 - **Quantity Type**: Ordered, Received, Open
 
-## Calculation Example
+## Esempio di Calcolo
 
-**Percentage Tolerance:**
+**Tolleranza Percentuale:**
 ```
 Formula:
   Quantity Variance % = |(Invoice Qty - PO Qty)| / PO Qty × 100
@@ -210,7 +210,7 @@ Example:
   Is 3% ≤ 5%? YES ✅ ACCEPT
 ```
 
-**Absolute Tolerance:**
+**Tolleranza Assoluta:**
 ```
 Formula:
   Quantity Variance = |Invoice Qty - PO Qty|
@@ -225,9 +225,9 @@ Example:
   Is 2 units ≤ 5 units? YES ✅ ACCEPT
 ```
 
-## Real-World Scenarios
+## Scenari Reali
 
-### Over-Delivery (More than Ordered)
+### Consegna in Eccesso (Più del Quantitativo Ordinato)
 ```
 Ordered: 100 units
 Invoiced: 110 units
@@ -241,7 +241,7 @@ Decision: Contact supplier - more delivered than ordered
 Possible reason: Error by supplier, partial shipment already received
 ```
 
-### Under-Delivery (Less than Ordered)
+### Consegna in Difetto (Meno del Quantitativo Ordinato)
 ```
 Ordered: 100 units
 Invoiced: 95 units
@@ -257,12 +257,12 @@ Possible reason: Partial shipment, rest to follow
 
 ---
 
-# 4. Combined Price of Quantity Difference
+# 4. Prezzo Combinato della Differenza di Quantità
 
-## Purpose
-When quantity differs, calculates if the total price difference is acceptable
+## Scopo
+Quando la quantità differisce, calcola se la differenza di prezzo totale è accettabile
 
-## Why This Matters
+## Perché è Importante
 ```
 Scenario: You ordered 100 units but received 110
 - Quantity is 10% over (bad)
@@ -270,7 +270,7 @@ Scenario: You ordered 100 units but received 110
 - Combined effect might be acceptable
 ```
 
-## Calculation
+## Calcolo
 
 **Formula:**
 ```
@@ -279,7 +279,7 @@ Combined Variance = Quantity Variance × Price Variance
 If both are within tolerance, combined is usually acceptable
 ```
 
-**Example:**
+**Esempio:**
 ```
 PO:
 - Unit Price: €100
@@ -301,21 +301,21 @@ Is combined variance acceptable? Usually YES ✅
 
 ---
 
-# 5. Item ID / Supplier Item Number Comparison
+# 5. Confronto Item ID / Numero Articolo del Fornitore
 
-## Purpose
-Checks if the items in the invoice match the items in the PO
+## Scopo
+Verifica se gli articoli nella fattura corrispondono agli articoli nel PO
 
-## How It Works
+## Come Funziona
 
-**Exact Match (Simplest):**
+**Corrispondenza Esatta (Più Semplice):**
 ```
 PO Item ID: ABC-123
 Invoice Item ID: ABC-123
 Result: ✅ MATCH
 ```
 
-**Supplier Item Number (More Common):**
+**Numero Articolo del Fornitore (Più Comune):**
 ```
 PO Item: ABC-123 (Our internal code)
 Supplier Item: SUPP-456 (Their code for same item)
@@ -323,7 +323,7 @@ System matches these as same item
 Result: ✅ MATCH
 ```
 
-## Scenario: What If It Doesn't Match?
+## Scenario: Cosa Succede se Non Corrispondono?
 
 ```
 PO Item: ABC-123 (Copper Wire, 2mm)
@@ -339,19 +339,19 @@ Actions:
 
 ---
 
-# 6. Order Type Verification
+# 6. Verifica del Tipo di Ordine
 
-## Purpose
-Verifies the purchase order type is correct
+## Scopo
+Verifica che il tipo di ordine di acquisto sia corretto
 
-## Order Types
-- **Standard Order**: Regular purchase
-- **Rush Order**: Urgent, may have premium
-- **Frame Agreement**: Long-term contract
-- **Blanket Order**: Open-ended contract
-- **Consignment**: You don't pay until used
+## Tipi di Ordine
+- **Standard Order**: acquisto regolare
+- **Rush Order**: urgente, può prevedere un sovrapprezzo
+- **Frame Agreement**: contratto a lungo termine
+- **Blanket Order**: contratto aperto
+- **Consignment**: paghi solo quando viene utilizzato
 
-## Check Example
+## Esempio di Verifica
 ```
 PO Order Type: Standard Order
 Invoice Order Type: Standard Order
@@ -362,14 +362,14 @@ If mismatch: Could affect terms, payment, pricing
 
 ---
 
-# 7. Delivery Date Verification
+# 7. Verifica della Data di Consegna
 
-## Purpose
-Checks if delivery date matches the promised date on the PO
+## Scopo
+Verifica se la data di consegna corrisponde alla data promessa sul PO
 
-## Calculation
+## Calcolo
 
-**Late Delivery:**
+**Consegna in Ritardo:**
 ```
 Formula:
   Days Late = Invoice Delivery Date - PO Promised Date
@@ -383,7 +383,7 @@ If tolerance is ±3 days:
   Is 7 ≤ 3? NO ❌ LATE
 ```
 
-**Early Delivery:**
+**Consegna Anticipata:**
 ```
 Formula:
   Days Early = PO Promised Date - Invoice Delivery Date
@@ -397,7 +397,7 @@ Early delivery is usually OK ✅
 Unless you need it at specific time
 ```
 
-## Tolerance Settings
+## Impostazioni della Tolleranza
 ```
 ±3 days: Allow 3 days late or early
 ±5 days: Allow up to 5 days variance
@@ -406,12 +406,12 @@ Unless you need it at specific time
 
 ---
 
-# 8. Charge Verification (Taxes, Shipping, Etc.)
+# 8. Verifica degli Oneri (Imposte, Spedizione, Ecc.)
 
-## Purpose
-Checks if additional charges (taxes, shipping, handling) match PO
+## Scopo
+Verifica se gli oneri aggiuntivi (imposte, spedizione, gestione) corrispondono al PO
 
-## Common Charges
+## Oneri Comuni
 ```
 - Shipping: €50
 - Handling: €10
@@ -420,9 +420,9 @@ Checks if additional charges (taxes, shipping, handling) match PO
 - Taxes: €300
 ```
 
-## Calculation
+## Calcolo
 
-**Example: Shipping Charge Check**
+**Esempio: Verifica dell'Onere di Spedizione**
 ```
 PO Shipping: €50.00
 Invoice Shipping: €51.00
@@ -433,7 +433,7 @@ Variance = |€51.00 - €50.00| / €50.00 × 100 = 2%
 Is 2% ≤ 3%? YES ✅ ACCEPT
 ```
 
-**Example: Multiple Charges**
+**Esempio: Oneri Multipli**
 ```
 PO Total Charges:
   - Shipping: €50
@@ -453,12 +453,12 @@ Check if within tolerance ✅ or ❌
 
 ---
 
-# 9. Tax Verification
+# 9. Verifica delle Imposte
 
-## Purpose
-Verifies tax amounts are calculated correctly
+## Scopo
+Verifica che gli importi delle imposte siano calcolati correttamente
 
-## Calculation
+## Calcolo
 
 **Formula:**
 ```
@@ -473,7 +473,7 @@ Invoice Tax: €190
 Match? YES ✅
 ```
 
-**Common Issues:**
+**Problemi Comuni:**
 ```
 1. Tax rate changed (region-based)
 2. Tax applied to wrong amount (before/after discounts)
@@ -481,7 +481,7 @@ Match? YES ✅
 4. Tax exempt items (0% tax)
 ```
 
-**Example: Multi-Rate Taxation**
+**Esempio: Imposizione a Più Aliquote**
 ```
 Item A: €100 @ 19% tax = €119
 Item B: €100 @ 7% tax = €107
@@ -495,12 +495,12 @@ Check: Within tolerance or needs attention?
 
 ---
 
-# 10. Facility/Cost Center Matching
+# 10. Abbinamento Sede/Centro di Costo
 
-## Purpose
-Ensures the invoice is for the correct facility/cost center
+## Scopo
+Garantisce che la fattura sia per la sede/centro di costo corretti
 
-## Example
+## Esempio
 ```
 PO is for:
 - Facility: Berlin Plant
@@ -515,12 +515,12 @@ If different facility: May need different approval
 
 ---
 
-# 11. Supplier Status Validation
+# 11. Convalida dello Stato del Fornitore
 
-## Purpose
-Checks if the supplier is still approved/active
+## Scopo
+Verifica se il fornitore è ancora approvato/attivo
 
-## Status Types
+## Tipi di Stato
 ```
 ✅ ACTIVE: Approved, can do business
 ⚠️ ON HOLD: Temporarily blocked
@@ -528,7 +528,7 @@ Checks if the supplier is still approved/active
 ⚠️ CONDITIONAL: Only for specific items
 ```
 
-## Check Example
+## Esempio di Verifica
 ```
 Supplier: ABC Corp
 Status in Database: ACTIVE
@@ -540,9 +540,9 @@ Alert: Supplier status changed! Investigate why.
 
 ---
 
-# Which Tolerance Should I Use?
+# Quale Tolleranza Dovrei Usare?
 
-## Strict Tolerances (Lower Risk, More Manual Work)
+## Tolleranze Rigorose (Rischio Inferiore, Più Lavoro Manuale)
 ```
 Use for:
 - High-value items
@@ -556,7 +556,7 @@ Settings:
 - Charges: ±1%
 ```
 
-## Moderate Tolerances (Balanced)
+## Tolleranze Moderate (Bilanciate)
 ```
 Use for:
 - Most business transactions
@@ -570,7 +570,7 @@ Settings:
 - Charges: ±5%
 ```
 
-## Loose Tolerances (Higher Risk, Less Manual Work)
+## Tolleranze Ampie (Rischio Superiore, Meno Lavoro Manuale)
 ```
 Use for:
 - Low-value items
@@ -586,7 +586,7 @@ Settings:
 
 ---
 
-# PO Matching Workflow Example
+# Esempio di Workflow di PO Matching
 
 ```
 Invoice Arrives
@@ -611,7 +611,7 @@ If Rejected: Return to Supplier
 
 ---
 
-# Troubleshooting PO Matching
+# Risoluzione dei Problemi del PO Matching
 
 ## "PO Not Found"
 ```
@@ -656,9 +656,9 @@ Fix: Check shipping documents or contact supplier
 
 ---
 
-# Summary Table
+# Tabella di Riepilogo
 
-| Card | What It Checks | Main Calculation | Common Tolerance |
+| Card | Cosa Verifica | Calcolo Principale | Tolleranza Comune |
 |------|----------------|------------------|-----------------|
 | Full Match | Everything | All checks | Varies |
 | Unit Price | Price per unit | % or € difference | ±3-5% |
@@ -674,10 +674,9 @@ Fix: Check shipping documents or contact supplier
 
 ---
 
-# Related Documentation
+# Documentazione Correlata
 
-- See "Invoice Validation" guide for complete workflow
-- See "Tolerance Settings" for recommended values by industry
-- See "Exception Handling" for what to do with failures
-- Contact your procurement team for specific tolerance policies
-
+- Consulta la guida "Invoice Validation" per il workflow completo
+- Consulta "Tolerance Settings" per i valori consigliati per settore
+- Consulta "Exception Handling" per cosa fare in caso di errori
+- Contatta il tuo team di approvvigionamento per le politiche di tolleranza specifiche

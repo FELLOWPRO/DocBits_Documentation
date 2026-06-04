@@ -2,25 +2,25 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase of purchase invoices with a focus on the unit price, ensuring it matches the agreed terms.
+Dieser Titel weist darauf hin, dass die Regel zur Verwaltung der zweiten Genehmigungsphase von Einkaufsrechnungen mit Schwerpunkt auf dem Stückpreis eingerichtet ist und sicherstellt, dass dieser mit den vereinbarten Bedingungen übereinstimmt.
 
-#### Rule Configuration:
+#### Regelkonfiguration:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents identified as invoices, which is crucial for directing the workflow accurately.
+   * **Document Type is Invoice**: Diese Bedingung stellt sicher, dass die Regel nur für Dokumente aktiviert wird, die als Rechnungen identifiziert sind, was für die präzise Steuerung des Workflows entscheidend ist.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is awaiting a second approval. This stage often provides additional oversight to ensure accuracy before finalizing the transaction.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further specifies that the rule applies only to invoices categorized specifically as "Purchase Invoices," differentiating them from other types of invoices.
-   * **Logic Unit Price in order confirmation Equals purchase order**: This condition checks if the unit price listed in the order confirmation matches the unit price in the purchase order. It ensures that the invoice processing only moves forward if there is consistency in pricing, which is critical for budgeting and financial reporting.
+   * **Document Status is Pending Second Approval**: Dies legt fest, dass die Rechnung auf eine zweite Genehmigung wartet. Diese Phase bietet oft eine zusätzliche Aufsicht, um die Richtigkeit sicherzustellen, bevor die Transaktion abgeschlossen wird.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Diese Bedingung legt weiter fest, dass die Regel nur auf Rechnungen angewendet wird, die speziell als „Purchase Invoices" kategorisiert sind, und unterscheidet sie von anderen Rechnungsarten.
+   * **Logic Unit Price in order confirmation Equals purchase order**: Diese Bedingung prüft, ob der in der Auftragsbestätigung aufgeführte Stückpreis mit dem Stückpreis in der Bestellung übereinstimmt. Sie stellt sicher, dass die Rechnungsverarbeitung nur dann fortgesetzt wird, wenn Konsistenz bei der Preisgestaltung besteht, was für die Budgetierung und Finanzberichterstattung entscheidend ist.
 
-#### Action (Then…):
+#### Aktion (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (i.e., the unit prices match between the order confirmation and the purchase order), the action to "Start Export" is triggered. This likely involves exporting the invoice data for further processing, possibly to another financial system or for reporting purposes.
+* **Start Export**: Sobald die Rechnung die festgelegten Bedingungen erfüllt (d. h. die Stückpreise zwischen Auftragsbestätigung und Bestellung übereinstimmen), wird die Aktion „Start Export" ausgelöst. Dies umfasst wahrscheinlich den Export der Rechnungsdaten zur weiteren Verarbeitung, möglicherweise an ein anderes Finanzsystem oder zu Berichtszwecken.
 
-#### Purpose of This Rule:
+#### Zweck dieser Regel:
 
-* **Ensure Accuracy and Consistency**: By verifying that the unit prices match between the order confirmation and the purchase order, the system helps maintain financial accuracy and prevents overcharging or undercharging.
-* **Streamline Financial Processing**: Automating the export of data once the prices are confirmed reduces manual handling and speeds up the financial processing cycle.
-* **Enhance Compliance and Oversight**: Requiring a second approval for price verification adds an extra layer of oversight, which is crucial for compliance with financial policies and controls.
+* **Genauigkeit und Konsistenz sicherstellen**: Durch die Überprüfung, ob die Stückpreise zwischen Auftragsbestätigung und Bestellung übereinstimmen, hilft das System, die finanzielle Genauigkeit zu wahren und Über- oder Unterberechnungen zu verhindern.
+* **Finanzverarbeitung optimieren**: Die Automatisierung des Datenexports nach Bestätigung der Preise reduziert die manuelle Bearbeitung und beschleunigt den Finanzverarbeitungszyklus.
+* **Compliance und Aufsicht verbessern**: Die Anforderung einer zweiten Genehmigung zur Preisüberprüfung fügt eine zusätzliche Aufsichtsebene hinzu, die für die Einhaltung von Finanzrichtlinien und -kontrollen entscheidend ist.
 
-This rule is an example of how workflow automation can be effectively utilized to ensure precise and efficient handling of financial documents within an organization, particularly in the context of large volumes of transactions that require meticulous validation.
+Diese Regel ist ein Beispiel dafür, wie Workflow-Automatisierung effektiv genutzt werden kann, um eine präzise und effiziente Bearbeitung von Finanzdokumenten innerhalb einer Organisation sicherzustellen, insbesondere im Kontext großer Transaktionsvolumina, die eine sorgfältige Validierung erfordern.

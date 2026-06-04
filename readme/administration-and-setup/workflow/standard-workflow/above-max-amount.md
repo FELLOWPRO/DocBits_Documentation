@@ -2,27 +2,27 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is designed to manage cases where the invoice total is greater than the maximum amount an approver is authorized to handle.
+Dieser Titel weist darauf hin, dass die Regel dafür ausgelegt ist, Fälle zu verwalten, in denen der Rechnungsgesamtbetrag höher ist als der maximale Betrag, den ein Genehmiger bearbeiten darf.
 
-#### Rule Configuration:
+#### Regelkonfiguration:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule applies only to invoices, which is essential for directing the workflow correctly.
+   * **Document Type is Invoice**: Diese Bedingung stellt sicher, dass die Regel nur auf Rechnungen angewendet wird, was für die korrekte Steuerung des Workflows wesentlich ist.
 2. **And…**
-   * **Document Status is Pending Approval**: The invoice must be in a "Pending Approval" status. This status is crucial to ensure that the rule is applied to invoices that are still being processed and have not yet been finalized.
-   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: This condition checks if the invoice's total amount exceeds the maximum amount an approver is allowed to handle. This comparison might also include a tolerance setting, allowing for minor variations based on predefined criteria.
+   * **Document Status is Pending Approval**: Die Rechnung muss den Status „Pending Approval" haben. Dieser Status ist entscheidend, um sicherzustellen, dass die Regel auf Rechnungen angewendet wird, die noch in Bearbeitung sind und noch nicht abgeschlossen wurden.
+   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: Diese Bedingung prüft, ob der Gesamtbetrag der Rechnung den maximalen Betrag überschreitet, den ein Genehmiger bearbeiten darf. Dieser Vergleich kann auch eine Toleranzeinstellung enthalten, die geringfügige Abweichungen anhand vordefinierter Kriterien zulässt.
 
-#### Action (Then…):
+#### Aktion (Then…):
 
-* **Assign user from field Next Level Approver, use user User as fallback**: If the invoice exceeds the specified maximum amount, it is automatically assigned to a higher-level approver, indicated by the 'Next Level Approver' field. If this field is not filled or the specified user is unavailable, a default user (likely an admin or another designated staff member) is used as a fallback to ensure the invoice is reviewed without delay.
+* **Assign user from field Next Level Approver, use user User as fallback**: Wenn die Rechnung den festgelegten Maximalbetrag überschreitet, wird sie automatisch einem übergeordneten Genehmiger zugewiesen, der im Feld „Next Level Approver" angegeben ist. Wenn dieses Feld nicht ausgefüllt oder der angegebene Benutzer nicht verfügbar ist, wird ein Standardbenutzer (wahrscheinlich ein Administrator oder ein anderer designierter Mitarbeiter) als Fallback verwendet, um sicherzustellen, dass die Rechnung ohne Verzögerung geprüft wird.
 
-#### Interface Elements:
+#### Oberflächenelemente:
 
-* **Add Card**: This option allows additional conditions or actions to be added to the rule, providing flexibility to address complex scenarios.
-* **Save**: This button saves the rule configuration to the system.
+* **Add Card**: Diese Option ermöglicht das Hinzufügen weiterer Bedingungen oder Aktionen zur Regel und bietet Flexibilität für komplexe Szenarien.
+* **Save**: Diese Schaltfläche speichert die Regelkonfiguration im System.
 
-#### Purpose of This Rule:
+#### Zweck dieser Regel:
 
-The purpose of this rule is to ensure that invoices which exceed certain financial thresholds are reviewed by approvers with the appropriate authorization levels. This helps in maintaining financial control and oversight, ensuring that expenditures are reviewed by personnel with the requisite approval limits, thereby safeguarding the organization against unauthorized or inappropriate expenditures.
+Der Zweck dieser Regel besteht darin, sicherzustellen, dass Rechnungen, die bestimmte finanzielle Schwellenwerte überschreiten, von Genehmigern mit den entsprechenden Autorisierungsstufen geprüft werden. Dies hilft, die finanzielle Kontrolle und Aufsicht zu wahren, indem sichergestellt wird, dass Ausgaben von Personal mit den erforderlichen Genehmigungsgrenzen geprüft werden, und schützt so die Organisation vor unbefugten oder unangemessenen Ausgaben.
 
-This rule, like the previous one, helps automate the workflow, reducing manual effort and enhancing compliance with the organization's financial policies. It is an example of how workflow automation can be effectively used to manage complex financial processes within a company.
+Diese Regel hilft wie die vorherige, den Workflow zu automatisieren, den manuellen Aufwand zu reduzieren und die Einhaltung der Finanzrichtlinien der Organisation zu verbessern. Sie ist ein Beispiel dafür, wie Workflow-Automatisierung effektiv zur Verwaltung komplexer Finanzprozesse innerhalb eines Unternehmens eingesetzt werden kann.

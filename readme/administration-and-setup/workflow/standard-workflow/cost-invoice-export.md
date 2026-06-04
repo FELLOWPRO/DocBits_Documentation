@@ -2,24 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is specifically configured for managing cost invoices and involves an export action, possibly for reporting, further processing, or integration with other systems.
+Dieser Titel weist darauf hin, dass die Regel speziell für die Verwaltung von Kostenrechnungen konfiguriert ist und eine Export-Aktion umfasst, möglicherweise für Berichte, weitere Verarbeitung oder Integration mit anderen Systemen.
 
-#### Rule Configuration:
+#### Regelkonfiguration:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents categorized as invoices, maintaining the workflow's specificity to invoice management.
+   * **Document Type is Invoice**: Diese Bedingung stellt sicher, dass die Regel nur für Dokumente ausgelöst wird, die als Rechnungen kategorisiert sind, und erhält so die Spezifität des Workflows für die Rechnungsverwaltung.
 2. **And…**
-   * **Document Field Invoice Sub Type is Equals Cost Invoice**: This specifies that the rule applies only to those invoices that are explicitly marked as "Cost Invoices" in a particular field within the document. This helps in distinguishing them from other types of invoices.
-   * **Document Status is Pending Second Approval**: The invoice must be in a "Pending Second Approval" status. This indicates that the invoice has already undergone an initial approval and is awaiting a second, possibly final, review.
+   * **Document Field Invoice Sub Type is Equals Cost Invoice**: Dies legt fest, dass die Regel nur auf jene Rechnungen angewendet wird, die in einem bestimmten Feld innerhalb des Dokuments ausdrücklich als „Cost Invoices" markiert sind. Dies hilft, sie von anderen Rechnungsarten zu unterscheiden.
+   * **Document Status is Pending Second Approval**: Die Rechnung muss den Status „Pending Second Approval" haben. Dies weist darauf hin, dass die Rechnung bereits eine erste Genehmigung durchlaufen hat und auf eine zweite, möglicherweise abschließende Prüfung wartet.
 
-#### Action (Then…):
+#### Aktion (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (being a cost invoice and pending second approval), the action to "Start Export" is executed. This could involve sending the invoice data to another system for financial analysis, reporting, or compliance purposes.
+* **Start Export**: Sobald die Rechnung die festgelegten Bedingungen erfüllt (eine Kostenrechnung ist und auf die zweite Genehmigung wartet), wird die Aktion „Start Export" ausgeführt. Dies kann das Senden der Rechnungsdaten an ein anderes System zur Finanzanalyse, für Berichte oder zu Compliance-Zwecken umfassen.
 
-#### Purpose of This Rule:
+#### Zweck dieser Regel:
 
-* **Workflow Efficiency**: This rule helps automate the handling of cost invoices by ensuring they are processed through the necessary approval stages without manual intervention, increasing the speed and accuracy of financial operations.
-* **Control and Compliance**: By requiring a second approval, the system enforces a control mechanism that ensures cost invoices are thoroughly reviewed, enhancing financial oversight.
-* **Integration and Reporting**: The export action suggests that once invoices are fully approved, they may be integrated into other systems for further processing or analysis, which is critical for financial reporting and audits.
+* **Workflow-Effizienz**: Diese Regel hilft, die Bearbeitung von Kostenrechnungen zu automatisieren, indem sichergestellt wird, dass sie ohne manuelles Eingreifen die erforderlichen Genehmigungsstufen durchlaufen, was die Geschwindigkeit und Genauigkeit der Finanzvorgänge erhöht.
+* **Kontrolle und Compliance**: Durch die Anforderung einer zweiten Genehmigung erzwingt das System einen Kontrollmechanismus, der sicherstellt, dass Kostenrechnungen gründlich geprüft werden, und verbessert so die finanzielle Aufsicht.
+* **Integration und Berichterstattung**: Die Export-Aktion legt nahe, dass vollständig genehmigte Rechnungen zur weiteren Verarbeitung oder Analyse in andere Systeme integriert werden können, was für die Finanzberichterstattung und Audits entscheidend ist.
 
-This kind of rule is vital for organizations that deal with various types of invoices and need to ensure that each type is handled according to specific protocols. It reduces the risk of errors and ensures compliance with internal controls and external regulations.
+Diese Art von Regel ist für Organisationen unverzichtbar, die mit verschiedenen Rechnungsarten umgehen und sicherstellen müssen, dass jede Art gemäß bestimmten Protokollen behandelt wird. Sie reduziert das Fehlerrisiko und gewährleistet die Einhaltung interner Kontrollen und externer Vorschriften.

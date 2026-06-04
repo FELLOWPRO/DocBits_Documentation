@@ -2,27 +2,27 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
+Dieser Titel legt nahe, dass die eingerichtete Regel oder Bedingung dafür ausgelegt ist, Rechnungen zu behandeln, bei denen der Gesamtbetrag kleiner oder gleich einem festgelegten Maximalbetrag ist.
 
-#### Rule Configuration:
+#### Regelkonfiguration:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
+   * **Document Type is Invoice**: Diese Bedingung prüft, ob das verarbeitete Dokument eine Rechnung ist. Dies ist entscheidend, um sicherzustellen, dass die Regel nur auf Rechnungen und nicht auf andere Dokumenttypen angewendet wird.
 2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+   * **Document Status is Pending Approval**: Dies legt fest, dass die Rechnung den Status „Pending Approval" haben muss. Diese Statusprüfung stellt sicher, dass die Regel nur auf Rechnungen angewendet wird, die auf eine Genehmigung warten.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: Diese Bedingung vergleicht den Gesamtbetrag der Rechnung mit dem maximal autorisierten Betrag eines Genehmigers. Wenn der Gesamtbetrag der Rechnung kleiner oder gleich diesem Maximalbetrag ist, fährt die Regel mit dem nächsten Schritt fort. Dies beinhaltet wahrscheinlich eine Toleranzstufe, die geringfügige Abweichungen innerhalb festgelegter Grenzen zulässt.
 
-#### Action (Then…):
+#### Aktion (Then…):
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Approver Name, use user User as fallback**: Wenn die festgelegten Bedingungen erfüllt sind, wird die Rechnung automatisch einem Genehmiger zugewiesen, dessen Name in einem Feld angegeben ist. Wenn dieses Feld leer oder nicht verfügbar ist, wird ein Standardbenutzer (wahrscheinlich ein Administrator oder ein anderer designierter Mitarbeiter) als Fallback zugewiesen, um die Genehmigung zu bearbeiten.
 
-#### Interface Elements:
+#### Oberflächenelemente:
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+* **Add Card**: Diese Schaltfläche ermöglicht es Benutzern, weitere Bedingungen oder Aktionen zur Regel hinzuzufügen und so die Flexibilität und Spezifität des Workflows zu erhöhen.
+* **Save**: Speichert die konfigurierte Regel im System.
 
-#### Purpose of This Rule:
+#### Zweck dieser Regel:
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+Diese Einrichtung ist darauf ausgelegt, den Genehmigungsprozess für Rechnungen zu optimieren, indem Rechnungen anhand des Betrags automatisch an den passenden Genehmiger weitergeleitet werden und sichergestellt wird, dass nur jene innerhalb eines bestimmten Schwellenwerts auf diese automatisierte Weise bearbeitet werden. Sie hilft bei der Verwaltung finanzieller Kontrollen und beschleunigt den Workflow, indem manuelle Prüfungen für jede Rechnung reduziert werden.
 
 \\

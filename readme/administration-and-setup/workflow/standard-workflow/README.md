@@ -2,35 +2,35 @@
 
 <figure><img src="../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1) (1).svg" alt=""><figcaption></figcaption></figure>
 
-#### Overview of Workflow Components:
+#### Überblick über die Workflow-Komponenten:
 
-* **AP Invoice Email**: The process likely begins with an invoice received via email.
-* **DocBits**: This tool might be used for initial document management tasks such as capturing and digitizing invoices.
-* **Finance Review**: Invoices undergo a finance review where decisions are made regarding their validity and accuracy.
+* **AP Invoice Email**: Der Prozess beginnt in der Regel mit einer per E-Mail eingegangenen Rechnung.
+* **DocBits**: Dieses Tool wird für erste Dokumentenmanagement-Aufgaben wie das Erfassen und Digitalisieren von Rechnungen verwendet.
+* **Finance Review**: Rechnungen durchlaufen eine Finanzprüfung, bei der über ihre Gültigkeit und Richtigkeit entschieden wird.
 
-#### Steps in the Workflow:
+#### Schritte im Workflow:
 
-1. **Initial Review**:
-   * Invoices are received and initially processed using DocBits.
-   * They are then reviewed by the finance team to ensure they are removed from the workflow if they are complete, or pushed forward for further processing.
-2. **PO vs Non-PO Invoices**:
-   * The workflow distinguishes between PO-related and non-PO invoices.
-   * Non-PO invoices are routed for further approval or rejection based on predefined criteria like supplier ID, quantity, unit price, and item number.
-3. **Matching and Mismatching**:
-   * Invoices are checked against goods receipts to ensure that details match (like supplier ID and quantity).
-   * If mismatches occur, the invoice is subject to further review and possibly rejection.
-4. **Finance and Buyer Review**:
-   * For PO-related invoices, a detailed matching process is conducted involving a buyer review.
-   * Adjustments to purchase orders or goods receipts might be required.
-5. **Final Decisions**:
-   * Invoices that pass all checks are approved and integrated into financial systems for record-keeping.
-   * Rejected invoices trigger notifications, and a new invoice may be requested by the buyer.
-6. **Integration with Infor IDM & LN+M3**:
-   * Approved invoices are likely sent to Infor's IDM for document management and LN for ledger noting.
-   * This integration ensures that all financial records are up-to-date and that the workflow seamlessly feeds into the broader ERP system.
+1. **Erstprüfung**:
+   * Rechnungen werden empfangen und zunächst mit DocBits verarbeitet.
+   * Anschließend werden sie vom Finanzteam geprüft, um sicherzustellen, dass sie aus dem Workflow entfernt werden, wenn sie vollständig sind, oder zur weiteren Verarbeitung weitergeleitet werden.
+2. **PO- vs. Nicht-PO-Rechnungen**:
+   * Der Workflow unterscheidet zwischen PO-bezogenen und Nicht-PO-Rechnungen.
+   * Nicht-PO-Rechnungen werden anhand vordefinierter Kriterien wie Lieferanten-ID, Menge, Stückpreis und Artikelnummer zur weiteren Genehmigung oder Ablehnung weitergeleitet.
+3. **Übereinstimmung und Abweichung**:
+   * Rechnungen werden mit Wareneingängen abgeglichen, um sicherzustellen, dass die Details übereinstimmen (wie Lieferanten-ID und Menge).
+   * Treten Abweichungen auf, unterliegt die Rechnung einer weiteren Prüfung und möglicherweise einer Ablehnung.
+4. **Finanz- und Einkäuferprüfung**:
+   * Für PO-bezogene Rechnungen wird ein detaillierter Abgleichsprozess durchgeführt, der eine Einkäuferprüfung umfasst.
+   * Möglicherweise sind Anpassungen an Bestellungen oder Wareneingängen erforderlich.
+5. **Endgültige Entscheidungen**:
+   * Rechnungen, die alle Prüfungen bestehen, werden genehmigt und zur Aufbewahrung in Finanzsysteme integriert.
+   * Abgelehnte Rechnungen lösen Benachrichtigungen aus, und der Einkäufer kann eine neue Rechnung anfordern.
+6. **Integration mit Infor IDM & LN+M3**:
+   * Genehmigte Rechnungen werden in der Regel an Infors IDM für das Dokumentenmanagement und an LN für die Buchung im Hauptbuch gesendet.
+   * Diese Integration stellt sicher, dass alle Finanzunterlagen aktuell sind und der Workflow nahtlos in das umfassendere ERP-System einfließt.
 
-#### Decision Points:
+#### Entscheidungspunkte:
 
-* Throughout the workflow, there are various decision points where an invoice might be approved, rejected, or sent back for additional information. Notifications are sent out after delays, ensuring timely processing.
+* Im gesamten Workflow gibt es verschiedene Entscheidungspunkte, an denen eine Rechnung genehmigt, abgelehnt oder zur Beschaffung zusätzlicher Informationen zurückgesendet werden kann. Nach Verzögerungen werden Benachrichtigungen versendet, um eine zeitnahe Verarbeitung sicherzustellen.
 
-These Workflows will be included in the Standard Workflow
+Diese Workflows werden in den Standard Workflow aufgenommen.

@@ -4,57 +4,57 @@
 
 <figure><img src="../../../../.gitbook/assets/image (273).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is used to compare the unit price in a document against the unit price in a purchase order, ensuring that prices align within defined tolerance levels. The comparison can trigger actions if the unit price does not meet expectations. **Version 4** adds more flexibility by allowing users to choose different entities for comparison, providing a deeper level of control over pricing and procurement processes.
+Este cartão de fluxo de trabalho é utilizado para comparar o preço unitário num documento com o preço unitário numa ordem de compra, assegurando que os preços estão alinhados dentro dos níveis de tolerância definidos. A comparação pode acionar ações caso o preço unitário não corresponda às expectativas. A **Versão 4** acrescenta mais flexibilidade ao permitir aos utilizadores escolher diferentes entidades para comparação, proporcionando um nível mais profundo de controlo sobre os processos de preços e de compras.
 
-## **Components of the Card:**
+## **Componentes do cartão:**
 
 1. **Any / All:**
-   * **Description**: Defines whether the condition applies to any or all instances where the unit price is compared.
-   * **Options**:
-     * **Any**: The condition is met if any unit price meets the specified comparison condition.
-     * **All**: The condition is met only if all unit prices meet the specified comparison condition.
-2. **Operator:**
-   * **Description**: Defines the condition for comparing the unit price against the specified value.
-   * **Options**:
-     * **Equals (=)**: Verifies if the unit price matches the specified value.
-     * **Not Equals (≠)**: Ensures the unit price is different from the specified value.
-     * **Greater Than (>)**: Verifies if the unit price is greater than the specified value.
-     * **Greater or Equals (≥)**: Verifies if the unit price is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the unit price is less than the specified value.
-     * **Lesser or Equals (≤)**: Verifies if the unit price is less than or equal to the specified value.
+   * **Descrição**: Define se a condição se aplica a alguma ou a todas as instâncias em que o preço unitário é comparado.
+   * **Opções**:
+     * **Any**: A condição é cumprida se algum preço unitário satisfizer a condição de comparação especificada.
+     * **All**: A condição é cumprida apenas se todos os preços unitários satisfizerem a condição de comparação especificada.
+2. **Operador:**
+   * **Descrição**: Define a condição para comparar o preço unitário com o valor especificado.
+   * **Opções**:
+     * **Equals (=)**: Verifica se o preço unitário corresponde ao valor especificado.
+     * **Not Equals (≠)**: Garante que o preço unitário é diferente do valor especificado.
+     * **Greater Than (>)**: Verifica se o preço unitário é superior ao valor especificado.
+     * **Greater or Equals (≥)**: Verifica se o preço unitário é superior ou igual ao valor especificado.
+     * **Lesser Than (<)**: Verifica se o preço unitário é inferior ao valor especificado.
+     * **Lesser or Equals (≤)**: Verifica se o preço unitário é inferior ou igual ao valor especificado.
 
-## **Additional Components in Version 4:**
+## **Componentes adicionais na Versão 4:**
 
 **Comparison Type:**
 
-* **Description**: Allows users to choose what entities will be compared in addition to the unit price.
-* **Options**:
-  * **Purchase Order to Document**: Compares the unit price in the purchase order with the unit price in the document.
-  * **Received to Document**: Compares the received quantity to the unit price in the document.
-  * **Purchase Order to Received**: Compares the unit price in the purchase order with the received quantity.
+* **Descrição**: Permite aos utilizadores escolher que entidades serão comparadas para além do preço unitário.
+* **Opções**:
+  * **Purchase Order to Document**: Compara o preço unitário na ordem de compra com o preço unitário no documento.
+  * **Received to Document**: Compara a quantidade recebida com o preço unitário no documento.
+  * **Purchase Order to Received**: Compara o preço unitário na ordem de compra com a quantidade recebida.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Condition Evaluation:** The system compares the unit price in the document to the unit price in the purchase order (or other selected entity, in Version 4) based on the selected operator. If the comparison is true, the workflow proceeds according to the next steps, either triggering approval or stopping the process.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., unit price in the document is greater than the specified value), the workflow will proceed with the true action (e.g., approval, document processing).
-  * **False Condition**: If the condition evaluates to false (e.g., unit price in the document does not meet the comparison), the workflow will not  proceed.
+* **Avaliação da condição:** O sistema compara o preço unitário no documento com o preço unitário na ordem de compra (ou outra entidade selecionada, na Versão 4) com base no operador selecionado. Se a comparação for verdadeira, o fluxo de trabalho prossegue de acordo com os próximos passos, acionando a aprovação ou interrompendo o processo.
+* **Execução da ação:**
+  * **Condição Verdadeira**: Se a condição for avaliada como verdadeira (por exemplo, o preço unitário no documento é superior ao valor especificado), o fluxo de trabalho prosseguirá com a ação verdadeira (por exemplo, aprovação, processamento do documento).
+  * **Condição Falsa**: Se a condição for avaliada como falsa (por exemplo, o preço unitário no documento não cumpre a comparação), o fluxo de trabalho não prosseguirá.
 
-## **Setup and Configuration:**
+## **Configuração:**
 
-* **Version 3 Setup:** Users configure the card by selecting the unit price in the document, choosing the appropriate operator to define how the unit price will be compared to the specified value, and setting the value to compare against. Additionally, users select whether the condition applies to any or all instances of the unit price comparison.
-* **Version 4 Setup:** In Version 4, users have the additional option to select the Comparison Type. This allows them to define the entities to compare, such as Purchase Order to Document, Received to Document, or Purchase Order to Received. This enhances the flexibility of the card to compare unit prices in more complex scenarios.
+* **Configuração da Versão 3:** Os utilizadores configuram o cartão selecionando o preço unitário no documento, escolhendo o operador adequado para definir como o preço unitário será comparado com o valor especificado e definindo o valor a comparar. Adicionalmente, os utilizadores selecionam se a condição se aplica a alguma ou a todas as instâncias da comparação do preço unitário.
+* **Configuração da Versão 4:** Na Versão 4, os utilizadores têm a opção adicional de selecionar o Comparison Type. Isto permite-lhes definir as entidades a comparar, tais como Purchase Order to Document, Received to Document ou Purchase Order to Received. Isto aumenta a flexibilidade do cartão para comparar preços unitários em cenários mais complexos.
 
-## **Example Scenario:**
+## **Exemplo de cenário:**
 
-*   **Version 3 Example:**&#x20;
+*   **Exemplo da Versão 3:**&#x20;
 
-    An invoice shows a unit price of $50. The related purchase order has a unit price of $45. The card compares the two unit prices using the "Greater Than" operator. Since the unit price in the document ($50) is greater than the unit price in the purchase order ($45), the workflow will trigger the true condition (e.g., send the document for review).
-* **Version 4 Example:**\
-  An invoice shows a unit price of $50, and the related purchase order authorized a unit price of $45. Additionally, the received quantity is 60 units. The card compares the received quantity to the document's unit price using the "Greater Than" operator. Since the received quantity (60) is greater than the unit price ($50), the workflow triggers the true condition, and the document is flagged for further review.
+    Uma fatura apresenta um preço unitário de 50 $. A ordem de compra relacionada tem um preço unitário de 45 $. O cartão compara os dois preços unitários utilizando o operador "Greater Than". Como o preço unitário no documento (50 $) é superior ao preço unitário na ordem de compra (45 $), o fluxo de trabalho acionará a condição verdadeira (por exemplo, enviar o documento para revisão).
+* **Exemplo da Versão 4:**\
+  Uma fatura apresenta um preço unitário de 50 $ e a ordem de compra relacionada autorizou um preço unitário de 45 $. Adicionalmente, a quantidade recebida é de 60 unidades. O cartão compara a quantidade recebida com o preço unitário do documento utilizando o operador "Greater Than". Como a quantidade recebida (60) é superior ao preço unitário (50 $), o fluxo de trabalho aciona a condição verdadeira e o documento é assinalado para revisão adicional.
 
-## **Conclusion:**
+## **Conclusão:**
 
-Version 3 of the "Unit Price Comparison" workflow card is designed to ensure that unit prices in documents align with those in purchase orders, triggering actions based on defined conditions. Version 4 extends this functionality by introducing more complex comparison options, such as comparing purchase orders to documents, received quantities to documents, and purchase orders to received quantities. This added flexibility allows organizations to handle more sophisticated pricing and procurement scenarios, improving control and accuracy in their workflows.
+A Versão 3 do cartão de fluxo de trabalho "Unit Price Comparison" foi concebida para garantir que os preços unitários nos documentos estão alinhados com os das ordens de compra, acionando ações com base em condições definidas. A Versão 4 amplia esta funcionalidade ao introduzir opções de comparação mais complexas, como comparar ordens de compra com documentos, quantidades recebidas com documentos e ordens de compra com quantidades recebidas. Esta flexibilidade adicional permite às organizações tratar cenários de preços e de compras mais sofisticados, melhorando o controlo e a precisão dos seus fluxos de trabalho.

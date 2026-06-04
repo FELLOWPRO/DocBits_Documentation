@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to compare item IDs between a purchase order and a related document to ensure that the correct items are included. The card evaluates whether the item ID in the purchase order matches the item ID in the document. This comparison can trigger actions if discrepancies are found, ensuring that the items in the document align with the purchase order.
+Este cartão de fluxo de trabalho foi concebido para comparar IDs de itens entre uma ordem de compra e um documento relacionado, de modo a garantir que os itens corretos estão incluídos. O cartão avalia se o ID de item na ordem de compra corresponde ao ID de item no documento. Esta comparação pode acionar ações caso sejam encontradas discrepâncias, assegurando que os itens no documento estão alinhados com a ordem de compra.
 
-## **Components of the Card:**
+## **Componentes do cartão:**
 
 1. **Any / All:**
-   * **Description**: Defines whether the condition applies to any or all instances of item ID comparisons.
-   * **Options**:
-     * **Any**: The condition is met if any item ID in the purchase order matches the item ID in the document.
-     * **All**: The condition is met only if all item IDs in the purchase order match the item IDs in the document.
-2. **Operator:**
-   * **Description**: Defines the condition for comparing the item ID on the purchase order to the item ID on the document.
-   * **Options**:
-     * **Equals (=)**: Verifies if the item ID in the purchase order exactly matches the item ID in the document.
-     * **Not Equals (≠)**: Ensures that the item ID in the purchase order does not match the item ID in the document.
+   * **Descrição**: Define se a condição se aplica a alguma ou a todas as instâncias de comparação de IDs de itens.
+   * **Opções**:
+     * **Any**: A condição é cumprida se algum ID de item na ordem de compra corresponder ao ID de item no documento.
+     * **All**: A condição é cumprida apenas se todos os IDs de itens na ordem de compra corresponderem aos IDs de itens no documento.
+2. **Operador:**
+   * **Descrição**: Define a condição para comparar o ID de item na ordem de compra com o ID de item no documento.
+   * **Opções**:
+     * **Equals (=)**: Verifica se o ID de item na ordem de compra corresponde exatamente ao ID de item no documento.
+     * **Not Equals (≠)**: Garante que o ID de item na ordem de compra não corresponde ao ID de item no documento.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Condition Evaluation:** The system compares the item ID in the purchase order to the item ID in the document based on the selected operator. If the comparison condition is true (e.g., item IDs match or do not match), the workflow will proceed accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the item ID in the purchase order equals the item ID in the document), the workflow will proceed with the true action (e.g., approval or further processing).
-  * **False Condition**: If the condition evaluates to false (e.g., the item ID in the purchase order does not match the item ID in the document), the workflow will not proceed.
+* **Avaliação da condição:** O sistema compara o ID de item na ordem de compra com o ID de item no documento com base no operador selecionado. Se a condição de comparação for verdadeira (por exemplo, os IDs de itens correspondem ou não correspondem), o fluxo de trabalho prossegue em conformidade.
+* **Execução da ação:**
+  * **Condição Verdadeira**: Se a condição for avaliada como verdadeira (por exemplo, o ID de item na ordem de compra é igual ao ID de item no documento), o fluxo de trabalho prosseguirá com a ação verdadeira (por exemplo, aprovação ou processamento adicional).
+  * **Condição Falsa**: Se a condição for avaliada como falsa (por exemplo, o ID de item na ordem de compra não corresponde ao ID de item no documento), o fluxo de trabalho não prosseguirá.
 
-## **Setup and Configuration:**
+## **Configuração:**
 
-* Users configure the card by selecting the item ID in both the purchase order and the document. They then choose the appropriate operator (Equals or Not Equals) to define how the item IDs will be compared. Lastly, users select whether the condition applies to any or all of the item IDs in the comparison.
+* Os utilizadores configuram o cartão selecionando o ID de item tanto na ordem de compra como no documento. De seguida, escolhem o operador adequado (Equals ou Not Equals) para definir como os IDs de itens serão comparados. Por fim, os utilizadores selecionam se a condição se aplica a alguma ou a todas as instâncias dos IDs de itens na comparação.
 
-## **Example Scenario:**
+## **Exemplo de cenário:**
 
-* An invoice lists an item with ID "ABC123" and the related purchase order also includes an item with ID "ABC123". Using the "Equals" operator, the card compares the item ID in the document with the item ID in the purchase order. Since the item IDs match, the workflow continues without issue
+* Uma fatura indica um item com o ID "ABC123" e a ordem de compra relacionada também inclui um item com o ID "ABC123". Utilizando o operador "Equals", o cartão compara o ID de item no documento com o ID de item na ordem de compra. Como os IDs de itens correspondem, o fluxo de trabalho continua sem problemas.
 
-## **Conclusion:**
+## **Conclusão:**
 
-The "Item ID Comparison" workflow card ensures that the item IDs in documents align with those in purchase orders. This helps prevent discrepancies in item listings and ensures that the correct items are processed according to the purchase order. The ability to compare based on any or all instances provides flexibility in different use cases, improving the accuracy and efficiency of procurement workflows.
+O cartão de fluxo de trabalho "Item ID Comparison" assegura que os IDs de itens nos documentos estão alinhados com os das ordens de compra. Isto ajuda a prevenir discrepâncias nas listagens de itens e garante que os itens corretos são processados de acordo com a ordem de compra. A capacidade de comparar com base em algumas ou em todas as instâncias proporciona flexibilidade para diferentes casos de utilização, melhorando a precisão e a eficiência dos fluxos de compras.

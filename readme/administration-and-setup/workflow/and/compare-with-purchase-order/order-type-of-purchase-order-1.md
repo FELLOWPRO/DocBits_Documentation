@@ -6,24 +6,24 @@ hidden: true
 
 <figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose**:
+## **Propósito**:
 
-This DocBits card enables verification of the order type on a purchase order, ensuring that it aligns with specified criteria.
+Este cartão DocBits permite a verificação do tipo de encomenda numa ordem de compra, assegurando que está alinhado com os critérios especificados.
 
-## **Functionality**:
+## **Funcionalidade**:
 
-* **Order Type Comparison**: This card compares the order type of the purchase order to a specified value, allowing users to verify whether the order type meets certain conditions.
-* **Any/All Selection**: Users can choose to apply the comparison to **any** (at least one selected order type matches) or **all** (all selected order types match) specified order types.
-* **Operator**: Users can set conditions for comparing the order type in the purchase order. Available operators include:
-  * **Equals (=)**: Confirms that the order type in the purchase order matches the specified type.
-  * **Not Equal (≠)**: Ensures that the order type in the purchase order does not match the specified type.
+* **Comparação do tipo de encomenda**: Este cartão compara o tipo de encomenda da ordem de compra com um valor especificado, permitindo aos utilizadores verificar se o tipo de encomenda cumpre determinadas condições.
+* **Seleção Any/All**: Os utilizadores podem optar por aplicar a comparação a **any** (pelo menos um tipo de encomenda selecionado corresponde) ou a **all** (todos os tipos de encomenda selecionados correspondem) tipos de encomenda especificados.
+* **Operador**: Os utilizadores podem definir condições para comparar o tipo de encomenda na ordem de compra. Os operadores disponíveis incluem:
+  * **Equals (=)**: Confirma que o tipo de encomenda na ordem de compra corresponde ao tipo especificado.
+  * **Not Equal (≠)**: Garante que o tipo de encomenda na ordem de compra não corresponde ao tipo especificado.
 
-## **Usage**:
+## **Utilização**:
 
-This card is particularly valuable for procurement teams, inventory planners, and operations managers who need to categorize and prioritize orders accurately. By ensuring that order types match the intended classifications, users can streamline order handling, optimize resource allocation, and adhere to service level agreements.
+Este cartão é particularmente valioso para equipas de compras, planeadores de inventário e gestores de operações que precisam de categorizar e priorizar encomendas com precisão. Ao assegurar que os tipos de encomenda correspondem às classificações pretendidas, os utilizadores podem simplificar o tratamento de encomendas, otimizar a alocação de recursos e cumprir os acordos de nível de serviço.
 
-## **Example Scenario**:
+## **Exemplo de cenário**:
 
-* A purchase order is categorized as "IGR." The system uses the "Equals" operator to verify that this order type aligns with the intended classification for processing.&#x20;
+* Uma ordem de compra é categorizada como "IGR". O sistema utiliza o operador "Equals" para verificar que este tipo de encomenda está alinhado com a classificação pretendida para processamento.&#x20;
 
-By using the "Compare with Purchase Order: Order Type" card, organizations can automate the validation of order types, ensuring consistency in processing priorities and reducing manual classification errors.
+Ao utilizar o cartão "Compare with Purchase Order: Order Type", as organizações podem automatizar a validação dos tipos de encomenda, assegurando consistência nas prioridades de processamento e reduzindo erros de classificação manual.

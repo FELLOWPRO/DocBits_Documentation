@@ -2,48 +2,48 @@
 
 <figure><img src="../../../../.gitbook/assets/image (265).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-This workflow card is designed to compare specific fields—**Unit Price**, **Discount**, or **Quantity**—between an order confirmation and a purchase order. It ensures consistency and compliance with agreed terms. Based on the comparison result, the card allows users to write specified text into a chosen field when the condition evaluates as **true** or **false**, streamlining document processing and reducing manual intervention.
+Este cartão de fluxo de trabalho foi concebido para comparar campos específicos — **Unit Price**, **Discount** ou **Quantity** — entre uma confirmação de encomenda e uma ordem de compra. Assegura consistência e conformidade com os termos acordados. Com base no resultado da comparação, o cartão permite aos utilizadores escrever texto especificado num campo escolhido quando a condição é avaliada como **verdadeira** ou **falsa**, simplificando o processamento de documentos e reduzindo a intervenção manual.
 
-## **Components of the Card**
+## **Componentes do cartão**
 
 1. **Order Data**
-   * **Description:** Specifies the field to be compared between the order confirmation and the purchase order.
-   * **Options:**
-     * **Unit Price**: Compares the unit price in both documents.
-     * **Discount**: Compares the discount percentage or value.
-     * **Quantity**: Compares the ordered quantity.
-2. **Operator**
-   * **Description:** Defines the condition applied during the comparison.
-   * **Options:**
-     * **Equals (=):** Checks if the value in the selected field matches between the order confirmation and the purchase order.
-     * **Not Equals (≠):** Ensures the value in the selected field differs between the two documents.
+   * **Descrição:** Especifica o campo a comparar entre a confirmação de encomenda e a ordem de compra.
+   * **Opções:**
+     * **Unit Price**: Compara o preço unitário em ambos os documentos.
+     * **Discount**: Compara a percentagem ou o valor do desconto.
+     * **Quantity**: Compara a quantidade encomendada.
+2. **Operador**
+   * **Descrição:** Define a condição aplicada durante a comparação.
+   * **Opções:**
+     * **Equals (=):** Verifica se o valor no campo selecionado corresponde entre a confirmação de encomenda e a ordem de compra.
+     * **Not Equals (≠):** Garante que o valor no campo selecionado difere entre os dois documentos.
 3. **Text**
-   * **Description:** Specifies the text to be written into the target field upon condition evaluation.
-   * **Detail:** This text can include custom notes, status updates, or predefined values.
+   * **Descrição:** Especifica o texto a escrever no campo de destino aquando da avaliação da condição.
+   * **Detalhe:** Este texto pode incluir notas personalizadas, atualizações de estado ou valores predefinidos.
 4. **Field Name**
-   * **Description:** Specifies the field where the text will be written.
-   * **Detail:** The target field is selected from available editable fields within the system.
+   * **Descrição:** Especifica o campo onde o texto será escrito.
+   * **Detalhe:** O campo de destino é selecionado de entre os campos editáveis disponíveis no sistema.
 5. **Condition Result**
-   * **Description:** Determines when the text should be written, based on the comparison result.
-   * **Options:**
-     * **True:** Writes the text if the comparison condition is met.
-     * **False:** Writes the text if the comparison condition is not met.
+   * **Descrição:** Determina quando o texto deve ser escrito, com base no resultado da comparação.
+   * **Opções:**
+     * **True:** Escreve o texto se a condição de comparação for cumprida.
+     * **False:** Escreve o texto se a condição de comparação não for cumprida.
 
-## **Functionality**
+## **Funcionalidade**
 
-* **Comparison Evaluation:** The system compares the selected field between the order confirmation and the purchase order using the specified operator.
-* **Action Execution:** If the condition evaluates as **true** or **false**, the specified text is written into the designated field.
+* **Avaliação da comparação:** O sistema compara o campo selecionado entre a confirmação de encomenda e a ordem de compra utilizando o operador especificado.
+* **Execução da ação:** Se a condição for avaliada como **verdadeira** ou **falsa**, o texto especificado é escrito no campo designado.
 
-## **Setup and Configuration**
+## **Configuração**
 
-* To set up this card, users first select the field to be compared—**Unit Price**, **Discount**, or **Quantity**. Then, they choose an operator to define the comparison condition, such as **equals** or **not equals**. Users specify the text to be written into a target field and select when this action should occur, based on the condition result (**true** or **false**).
+* Para configurar este cartão, os utilizadores selecionam primeiro o campo a comparar — **Unit Price**, **Discount** ou **Quantity**. De seguida, escolhem um operador para definir a condição de comparação, como **equals** ou **not equals**. Os utilizadores especificam o texto a escrever num campo de destino e selecionam quando esta ação deve ocorrer, com base no resultado da condição (**true** ou **false**).
 
-## **Example Scenario**
+## **Exemplo de cenário**
 
-* An order confirmation lists a unit price of $50 for a product, while the purchase order specifies a price of $45. Using the **Not Equals (≠)** operator, the card identifies the discrepancy and writes the text "Price Mismatch" into a designated field when the condition evaluates as **true**.
+* Uma confirmação de encomenda indica um preço unitário de 50 $ para um produto, enquanto a ordem de compra especifica um preço de 45 $. Utilizando o operador **Not Equals (≠)**, o cartão identifica a discrepância e escreve o texto "Price Mismatch" num campo designado quando a condição é avaliada como **verdadeira**.
 
-## **Conclusion**
+## **Conclusão**
 
-The "\[Unit Price/Discount/Quantity] in Order Confirmation" workflow card provides a practical solution for ensuring document consistency. By automatically flagging discrepancies and writing relevant text into specified fields, it enhances efficiency and reduces errors in order management processes.
+O cartão de fluxo de trabalho "\[Unit Price/Discount/Quantity] in Order Confirmation" oferece uma solução prática para garantir a consistência dos documentos. Ao assinalar automaticamente discrepâncias e ao escrever texto relevante em campos especificados, melhora a eficiência e reduz os erros nos processos de gestão de encomendas.

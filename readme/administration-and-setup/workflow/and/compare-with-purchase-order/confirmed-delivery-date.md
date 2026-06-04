@@ -2,36 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/image (266).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-This workflow card is designed to verify that confirmed delivery dates on invoices or shipping documents align with the accepted delivery dates defined in a master data lookup table. By comparing these dates, it helps ensure compliance with agreed delivery schedules and enhances supply chain reliability.
+Este cartão de fluxo de trabalho foi concebido para verificar se as datas de entrega confirmadas em faturas ou documentos de envio estão alinhadas com as datas de entrega aceites definidas numa tabela de consulta de dados-mestre. Ao comparar estas datas, ajuda a garantir a conformidade com os calendários de entrega acordados e melhora a fiabilidade da cadeia de abastecimento.
 
-## **Components of the Card**
+## **Componentes do cartão**
 
-1. **Operator**
-   * **Description:** Defines the condition for comparing the confirmed delivery date to the accepted delivery date.
-   * **Options:**
-     * **Is:** Confirms that the delivery date matches the accepted delivery date in the master data.
-     * **Is Not:** Ensures that the delivery date does not match the accepted delivery date in the master data.
+1. **Operador**
+   * **Descrição:** Define a condição para comparar a data de entrega confirmada com a data de entrega aceite.
+   * **Opções:**
+     * **Is:** Confirma que a data de entrega corresponde à data de entrega aceite nos dados-mestre.
+     * **Is Not:** Garante que a data de entrega não corresponde à data de entrega aceite nos dados-mestre.
 2. **Master Data Table Lookup**
-   * **Description:** Specifies the reference table containing accepted delivery dates for comparison.
-   * **Detail:** The table is defined by the **Master Data Table** parameter and may include additional metadata such as order numbers or delivery regions.
+   * **Descrição:** Especifica a tabela de referência que contém as datas de entrega aceites para comparação.
+   * **Detalhe:** A tabela é definida pelo parâmetro **Master Data Table** e pode incluir metadados adicionais, como números de encomenda ou regiões de entrega.
 
 
 
-## **Functionality**
+## **Funcionalidade**
 
-* **Date Comparison:** The system compares the confirmed delivery date from the invoice or shipping document to the accepted delivery date in the specified master data lookup table.
-* **Action Execution:** Based on the comparison result, the card can trigger follow-up actions such as notifications.
+* **Comparação de datas:** O sistema compara a data de entrega confirmada da fatura ou documento de envio com a data de entrega aceite na tabela de consulta de dados-mestre especificada.
+* **Execução da ação:** Com base no resultado da comparação, o cartão pode acionar ações de seguimento, como notificações.
 
-## **Setup and Configuration**
+## **Configuração**
 
-* To configure this card, users select the field representing the confirmed delivery date in the document and specify the master data lookup table containing the accepted delivery dates. An operator is then chosen to define how the two dates should be compared (e.g., **Is** or **Is Not**).
+* Para configurar este cartão, os utilizadores selecionam o campo que representa a data de entrega confirmada no documento e especificam a tabela de consulta de dados-mestre que contém as datas de entrega aceites. É depois escolhido um operador para definir como as duas datas devem ser comparadas (por exemplo, **Is** ou **Is Not**).
 
-## **Example Scenario**
+## **Exemplo de cenário**
 
-* An invoice lists a confirmed delivery date of June 10th, while the master data lookup table specifies an accepted delivery date of June 15th. Using the **Is Not** operator, the card flags the discrepancy for review, allowing the logistics team to investigate the cause and adjust schedules accordingly.
+* Uma fatura indica uma data de entrega confirmada de 10 de junho, enquanto a tabela de consulta de dados-mestre especifica uma data de entrega aceite de 15 de junho. Utilizando o operador **Is Not**, o cartão assinala a discrepância para revisão, permitindo que a equipa de logística investigue a causa e ajuste os calendários em conformidade.
 
-## **Conclusion**
+## **Conclusão**
 
-The **"Confirmed Delivery Date vs. Accepted Delivery Date"** workflow card helps organizations maintain adherence to agreed-upon delivery schedules by automating the comparison of confirmed and accepted delivery dates. This proactive approach to delivery management enhances operational efficiency, reduces delays, and fosters better collaboration across the supply chain.
+O cartão de fluxo de trabalho **"Confirmed Delivery Date vs. Accepted Delivery Date"** ajuda as organizações a manter a aderência aos calendários de entrega acordados ao automatizar a comparação entre datas de entrega confirmadas e aceites. Esta abordagem proativa à gestão de entregas melhora a eficiência operacional, reduz atrasos e promove uma melhor colaboração ao longo da cadeia de abastecimento.

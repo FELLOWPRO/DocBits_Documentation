@@ -1,124 +1,124 @@
 # Key Concept: Tolerance Window
 
-Before looking at operators, it is important to understand how the tolerance window is calculated.
+Antes de analisar os operadores, é importante compreender como a janela de tolerância é calculada.
 
-## What is a tolerance window?
+## O que é uma janela de tolerância?
 
-The tolerance window defines a range of acceptable dates around the purchase order promised delivery date.
+A janela de tolerância define um intervalo de datas aceitáveis em torno da data de entrega prometida da ordem de compra.
 
-**Example:**
+**Exemplo:**
 
-* Purchase Order Date: **9 January**
+* Data da Ordem de Compra: **9 de janeiro**
 * Tolerance Days: **3**
-* Tolerance Window: **6 January → 12 January**
+* Janela de Tolerância: **6 de janeiro → 12 de janeiro**
 
-> <mark style="color:red;">Only the selected</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">(weekdays) are counted when calculating this window.</mark>
+> <mark style="color:red;">Apenas os</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">selecionados (dias da semana) são contabilizados ao calcular esta janela.</mark>
 
-### Visual Timeline Example
+### Exemplo de cronologia visual
 
 ```
-← Past                           Future →
+← Passado                         Futuro →
 |-----|-----|-----|-----|-----|-----|-----|
      6 Jan      9 Jan      12 Jan
-   (Start)    (PO Date)     (End)
+   (Início)   (Data PO)     (Fim)
 ```
 
-### Operator Behavior Explained with Examples
+### Comportamento dos operadores explicado com exemplos
 
 * **Equals (=)**
-  * **Meaning:**\
-    The line item delivery date must fall _inside_ the tolerance window.
-  * **Valid Dates:**
-    * Any date between **6 Jan and 12 Jan** (inclusive)
-  * **Invalid Dates:**
-    * Any date **before 6 Jan**
-    * Any date **after 12 Jan**
+  * **Significado:**\
+    A data de entrega da linha de item tem de estar _dentro_ da janela de tolerância.
+  * **Datas válidas:**
+    * Qualquer data entre **6 de janeiro e 12 de janeiro** (inclusive)
+  * **Datas inválidas:**
+    * Qualquer data **antes de 6 de janeiro**
+    * Qualquer data **depois de 12 de janeiro**
 * **Not Equals (≠)**
-  * **Meaning:**\
-    The line item delivery date must fall _outside_ the tolerance window.
-  * **Valid Dates:**
-    * Any date **before 6 Jan**
-    * Any date **after 12 Jan**
-  * **Invalid Dates:**
-    * Dates between **6 Jan and 12 Jan**
+  * **Significado:**\
+    A data de entrega da linha de item tem de estar _fora_ da janela de tolerância.
+  * **Datas válidas:**
+    * Qualquer data **antes de 6 de janeiro**
+    * Qualquer data **depois de 12 de janeiro**
+  * **Datas inválidas:**
+    * Datas entre **6 de janeiro e 12 de janeiro**
 * **Greater or Equals (≥)**
-  * **Meaning:**\
-    The line item delivery date must be on or after the **start of the tolerance window**.
-  * **Valid Dates:**
-    * **6 Jan → any future date**
-  * **Invalid Dates:**
-    * Any date **before 6 Jan**
-  * <mark style="color:red;">**Important:**</mark>\
-    This operator allows dates _inside_ the tolerance window **and beyond it**.
+  * **Significado:**\
+    A data de entrega da linha de item tem de ser igual ou posterior ao **início da janela de tolerância**.
+  * **Datas válidas:**
+    * **6 de janeiro → qualquer data futura**
+  * **Datas inválidas:**
+    * Qualquer data **antes de 6 de janeiro**
+  * <mark style="color:red;">**Importante:**</mark>\
+    Este operador permite datas _dentro_ da janela de tolerância **e para além dela**.
 * **Lesser or Equals (≤)**
-  * **Meaning:**\
-    The line item delivery date must be on or before the **end of the tolerance window**.
-  * **Valid Dates:**
-    * Any past date up to **12 Jan**
-  * **Invalid Dates:**
-    * Any date **after 12 Jan**
+  * **Significado:**\
+    A data de entrega da linha de item tem de ser igual ou anterior ao **fim da janela de tolerância**.
+  * **Datas válidas:**
+    * Qualquer data passada até **12 de janeiro**
+  * **Datas inválidas:**
+    * Qualquer data **depois de 12 de janeiro**
 * **Greater Than (>)**
-  * **Meaning:**\
-    The line item delivery date must be _strictly after_ the tolerance window.
-  * **Valid Dates:**
-    * **13 Jan → any future date**
-  * **Invalid Dates:**
-    * Any date **on or before 12 Jan**
+  * **Significado:**\
+    A data de entrega da linha de item tem de ser _estritamente posterior_ à janela de tolerância.
+  * **Datas válidas:**
+    * **13 de janeiro → qualquer data futura**
+  * **Datas inválidas:**
+    * Qualquer data **igual ou anterior a 12 de janeiro**
 * **Lesser Than (<)**
-  * **Meaning:**\
-    The line item delivery date must be _strictly before_ the tolerance window.
-  * **Valid Dates:**
-    * Any date **before 6 Jan**
-  * **Invalid Dates:**
-    * Any date **on or after 6 Jan**
+  * **Significado:**\
+    A data de entrega da linha de item tem de ser _estritamente anterior_ à janela de tolerância.
+  * **Datas válidas:**
+    * Qualquer data **antes de 6 de janeiro**
+  * **Datas inválidas:**
+    * Qualquer data **igual ou posterior a 6 de janeiro**
 
-## How “Allowed Tolerance Days” Affect the Tolerance Window
+## Como os "Allowed Tolerance Days" afetam a janela de tolerância
 
-When calculating the tolerance window, **only the selected weekdays are counted**.\
-Days that are not selected (such as weekends or excluded weekdays) are **skipped entirely**
+Ao calcular a janela de tolerância, **apenas os dias da semana selecionados são contabilizados**.\
+Os dias que não estão selecionados (como fins de semana ou dias da semana excluídos) são **totalmente ignorados**.
 
-#### Example: Weekday-Based Tolerance Calculation
+#### Exemplo: cálculo de tolerância com base nos dias da semana
 
-**Configuration:**
+**Configuração:**
 
-* Purchase Order Date: **Wednesday, 9 January**
+* Data da Ordem de Compra: **quarta-feira, 9 de janeiro**
 * Tolerance Days: **3**
-* Allowed Tolerance Days: **Monday, Tuesday, Wednesday, Thursday, Friday**
-* Weekends (Saturday, Sunday): **Not selected**
+* Allowed Tolerance Days: **segunda, terça, quarta, quinta, sexta**
+* Fins de semana (sábado, domingo): **Não selecionados**
 
-#### Step-by-Step Calculation
+#### Cálculo passo a passo
 
-Starting from the PO date (**9 Jan**):
+A começar pela data da PO (**9 de janeiro**):
 
-**Counting backward (3 tolerance days):**
+**Contando para trás (3 dias de tolerância):**
 
-* Tuesday, 8 Jan → **Day 1**
-* Monday, 7 Jan → **Day 2**
-* Sunday, 6 Jan → _Skipped (not allowed)_
-* Saturday, 5 Jan → _Skipped (not allowed)_
-* Friday, 4 Jan → **Day 3**
+* Terça, 8 de janeiro → **Dia 1**
+* Segunda, 7 de janeiro → **Dia 2**
+* Domingo, 6 de janeiro → _Ignorado (não permitido)_
+* Sábado, 5 de janeiro → _Ignorado (não permitido)_
+* Sexta, 4 de janeiro → **Dia 3**
 
-➡ **Tolerance start date: Friday, 4 January**
+➡ **Data de início da tolerância: sexta-feira, 4 de janeiro**
 
-**Counting forward (3 tolerance days):**
+**Contando para a frente (3 dias de tolerância):**
 
-* Thursday, 10 Jan → **Day 1**
-* Friday, 11 Jan → **Day 2**
-* Saturday, 12 Jan → _Skipped_
-* Sunday, 13 Jan → _Skipped_
-* Monday, 14 Jan → **Day 3**
+* Quinta, 10 de janeiro → **Dia 1**
+* Sexta, 11 de janeiro → **Dia 2**
+* Sábado, 12 de janeiro → _Ignorado_
+* Domingo, 13 de janeiro → _Ignorado_
+* Segunda, 14 de janeiro → **Dia 3**
 
-➡ **Tolerance end date: Monday, 14 January**
+➡ **Data de fim da tolerância: segunda-feira, 14 de janeiro**
 
-#### Resulting Tolerance Window
+#### Janela de tolerância resultante
 
 ```
-4 January  →  14 January
+4 de janeiro  →  14 de janeiro
 ```
 
-#### Why This Matters
+#### Porque é que isto é importante
 
-If Allowed Tolerance Days are configured incorrectly:
+Se os Allowed Tolerance Days estiverem configurados incorretamente:
 
-* Delivery dates may appear **unexpectedly valid or invalid**
-* Early or late deliveries may not be detected correctly
+* As datas de entrega podem parecer **inesperadamente válidas ou inválidas**
+* As entregas antecipadas ou atrasadas podem não ser detetadas corretamente

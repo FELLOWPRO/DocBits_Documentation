@@ -4,70 +4,70 @@
 
 <figure><img src="../../../../.gitbook/assets/image (270).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to compare the quantity in a document against the tolerance defined in the purchase order. It allows users to evaluate if the quantity meets certain conditions, such as equality or exceeding the specified tolerance. In Version 4, the card extends functionality by adding the ability to compare multiple entities, including the purchase order, received quantities, and document quantities, offering greater flexibility in handling different scenarios.
+Este cartão de fluxo de trabalho foi concebido para comparar a quantidade num documento com a tolerância definida na ordem de compra. Permite aos utilizadores avaliar se a quantidade cumpre determinadas condições, como igualdade ou ultrapassagem da tolerância especificada. Na Versão 4, o cartão amplia a funcionalidade ao acrescentar a capacidade de comparar várias entidades, incluindo a ordem de compra, as quantidades recebidas e as quantidades do documento, oferecendo maior flexibilidade no tratamento de diferentes cenários.
 
-## **Components of the Card:**
+## **Componentes do cartão:**
 
 1. **Any / All:**
-   * **Description**: Specifies how the comparison should be applied across multiple items or conditions.
-   * **Options**:
-     * **Any**: At least one of the conditions must be true for the action to be triggered.
-     * **All**: All conditions must be true for the action to proceed.
-2. **Operator:**
-   * **Description**: Defines the condition that will be applied to compare the document quantity against the specified tolerance.
-   * **Options**:
-     * **Equals (=)**: Checks if the quantity matches the specified tolerance value.
-     * **Not Equals (≠)**: Ensures the quantity is different from the specified tolerance value.
-     * **Greater Than (>)**: Verifies if the quantity is greater than the specified tolerance.
-     * **Greater or Equals (≥)**: Checks if the quantity is greater than or equal to the specified tolerance.
-     * **Lesser Than (<)**: Verifies if the quantity is less than the specified tolerance.
-     * **Lesser or Equals (≤)**: Checks if the quantity is less than or equal to the specified tolerance.
+   * **Descrição**: Especifica como a comparação deve ser aplicada a vários itens ou condições.
+   * **Opções**:
+     * **Any**: Pelo menos uma das condições tem de ser verdadeira para que a ação seja acionada.
+     * **All**: Todas as condições têm de ser verdadeiras para que a ação prossiga.
+2. **Operador:**
+   * **Descrição**: Define a condição que será aplicada para comparar a quantidade do documento com a tolerância especificada.
+   * **Opções**:
+     * **Equals (=)**: Verifica se a quantidade corresponde ao valor de tolerância especificado.
+     * **Not Equals (≠)**: Garante que a quantidade é diferente do valor de tolerância especificado.
+     * **Greater Than (>)**: Verifica se a quantidade é superior à tolerância especificada.
+     * **Greater or Equals (≥)**: Verifica se a quantidade é superior ou igual à tolerância especificada.
+     * **Lesser Than (<)**: Verifica se a quantidade é inferior à tolerância especificada.
+     * **Lesser or Equals (≤)**: Verifica se a quantidade é inferior ou igual à tolerância especificada.
 3. **Tolerance Amount:**
-   * **Description**: Specifies the tolerance value that the document quantity will be compared against.
-   * **Detail**: This value is numeric and represents the threshold of allowed variance in the quantity
+   * **Descrição**: Especifica o valor de tolerância com o qual a quantidade do documento será comparada.
+   * **Detalhe**: Este valor é numérico e representa o limiar de variação permitida na quantidade.
 4. **Tolerance Type:**
-   * **Description**: Defines the type of tolerance that will be applied.
-   * **Options**:
-     * **Percentage**: Tolerance is calculated as a percentage of the purchase order quantity.
-     * **Value**: Tolerance is specified as a fixed numeric value.
+   * **Descrição**: Define o tipo de tolerância que será aplicado.
+   * **Opções**:
+     * **Percentage**: A tolerância é calculada como uma percentagem da quantidade da ordem de compra.
+     * **Value**: A tolerância é especificada como um valor numérico fixo.
 
-## **Additional Components in Version 4:**
+## **Componentes adicionais na Versão 4:**
 
-* **Comparison Type**: Selects the entities to compare, providing more flexibility in how the quantities are evaluated in Version 4.
-  * **Purchase Order to Document**: Compares the quantity in the purchase order to the quantity in the related document.
-  * **Received to Document**: Compares the received quantity to the quantity in the document.
-  * **Purchase Order to Received**: Compares the purchase order quantity to the received quantity.
+* **Comparison Type**: Seleciona as entidades a comparar, oferecendo mais flexibilidade na forma como as quantidades são avaliadas na Versão 4.
+  * **Purchase Order to Document**: Compara a quantidade na ordem de compra com a quantidade no documento relacionado.
+  * **Received to Document**: Compara a quantidade recebida com a quantidade no documento.
+  * **Purchase Order to Received**: Compara a quantidade da ordem de compra com a quantidade recebida.
 
-## **Functionality:**
+## **Funcionalidade:**
 
-* **Condition Evaluation:** The system compares the quantity in the document against the tolerance in the purchase order based on the selected operator and tolerance amount/type. In Version 4, the **Comparison Type** allows for different quantities to be compared, such as purchase order to received, or purchase order to document, providing a more dynamic comparison.
-* **Action Execution:**
-  * **True Condition**: If the comparison results in true (e.g., the document quantity is within the acceptable tolerance range), the workflow will proceed.
-  * **False Condition**: If the comparison results in false (e.g., the quantity does not meet the tolerance), the workflow will not proceed.
+* **Avaliação da condição:** O sistema compara a quantidade no documento com a tolerância na ordem de compra com base no operador e no valor/tipo de tolerância selecionados. Na Versão 4, o **Comparison Type** permite comparar diferentes quantidades, como ordem de compra com recebida, ou ordem de compra com documento, proporcionando uma comparação mais dinâmica.
+* **Execução da ação:**
+  * **Condição Verdadeira**: Se a comparação resultar em verdadeiro (por exemplo, a quantidade do documento está dentro do intervalo de tolerância aceitável), o fluxo de trabalho prossegue.
+  * **Condição Falsa**: Se a comparação resultar em falso (por exemplo, a quantidade não cumpre a tolerância), o fluxo de trabalho não prosseguirá.
 
-## **Setup and Configuration:**
+## **Configuração:**
 
-**Version 3:**
+**Versão 3:**
 
-* Users configure the card by selecting the document quantity, defining the tolerance amount and tolerance type, and choosing the appropriate operator to compare the quantity against the tolerance. The card evaluates whether the quantity is within the tolerance threshold and proceeds with the "True" or "False" action based on the result.
+* Os utilizadores configuram o cartão selecionando a quantidade do documento, definindo o valor e o tipo de tolerância e escolhendo o operador adequado para comparar a quantidade com a tolerância. O cartão avalia se a quantidade está dentro do limiar de tolerância e prossegue com a ação "True" ou "False" consoante o resultado.
 
-**Version 4:**
+**Versão 4:**
 
-* In addition to the configuration in Version 3, users can select the **Comparison Type**, allowing comparisons between different entities, such as:
+* Para além da configuração da Versão 3, os utilizadores podem selecionar o **Comparison Type**, permitindo comparações entre diferentes entidades, tais como:
   * **Purchase Order to Document**
   * **Received to Document**
   * **Purchase Order to Received**
 
-## **Example Scenario:**
+## **Exemplo de cenário:**
 
-An invoice shows that 100 units were delivered, but the purchase order only authorized 90 units. The tolerance amount is set at 10 units, and the tolerance type is absolute.
+Uma fatura indica que foram entregues 100 unidades, mas a ordem de compra apenas autorizou 90 unidades. O valor de tolerância está definido em 10 unidades e o tipo de tolerância é absoluto.
 
-* **Version 3**: The card compares the 100 units in the document against the purchase order's tolerance of 90 units. If the quantity exceeds the tolerance, the card flags the discrepancy for further review.
-* **Version 4**: The card could compare the **purchase order quantity** (90 units) to the **received quantity** (100 units) or the **document quantity** (100 units). Depending on the selected **Comparison Type**, it checks if the difference between the two entities exceeds the tolerance and triggers the corresponding action.
+* **Versão 3**: O cartão compara as 100 unidades do documento com a tolerância de 90 unidades da ordem de compra. Se a quantidade exceder a tolerância, o cartão assinala a discrepância para revisão adicional.
+* **Versão 4**: O cartão pode comparar a **quantidade da ordem de compra** (90 unidades) com a **quantidade recebida** (100 unidades) ou a **quantidade do documento** (100 unidades). Dependendo do **Comparison Type** selecionado, verifica se a diferença entre as duas entidades excede a tolerância e aciona a ação correspondente.
 
-## **Conclusion:**
+## **Conclusão:**
 
-* **Version 3**: This workflow card compares the document quantity with the purchase order tolerance, helping to ensure that discrepancies in quantity are flagged and handled appropriately.
-* **Version 4**: Extends this functionality by allowing users to compare different entities, such as purchase order to received or purchase order to document, providing greater flexibility in handling more complex scenarios. Version 4 ensures tighter control over procurement and receiving workflows, offering more dynamic comparisons and actions based on the chosen comparison type.
+* **Versão 3**: Este cartão de fluxo de trabalho compara a quantidade do documento com a tolerância da ordem de compra, ajudando a garantir que as discrepâncias de quantidade são assinaladas e tratadas adequadamente.
+* **Versão 4**: Amplia esta funcionalidade ao permitir aos utilizadores comparar diferentes entidades, como ordem de compra com recebida ou ordem de compra com documento, proporcionando maior flexibilidade no tratamento de cenários mais complexos. A Versão 4 assegura um controlo mais rigoroso dos fluxos de compras e receção, oferecendo comparações e ações mais dinâmicas com base no tipo de comparação escolhido.

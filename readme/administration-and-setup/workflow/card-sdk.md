@@ -1,14 +1,14 @@
 # Card SDK
 
-The **Card SDK** lets partners and developers build custom workflow cards for DocFlow. You package a card as a partner app and upload it, or import it directly from GitHub.
+Mit dem **Card SDK** können Partner und Entwickler eigene Workflow-Karten für DocFlow erstellen. Sie verpacken eine Karte als Partner-App und laden sie hoch oder importieren sie direkt aus GitHub.
 
-<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Card SDK tab with Upload ZIP, GitHub Import and Submissions"><figcaption><p>The Card SDK — upload a partner app ZIP, import from GitHub, or review your submissions.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_card_sdk.png" alt="Card SDK-Reiter mit Upload ZIP, GitHub Import und Submissions"><figcaption><p>Das Card SDK — eine Partner-App als ZIP hochladen, aus GitHub importieren oder die eigenen Einreichungen prüfen.</p></figcaption></figure>
 
-## How it works
+## Funktionsweise
 
-- **Download SDK Template** — start from the official template that contains the expected structure.
-- **Upload ZIP** — the ZIP must contain `app.json` and a `.docflowcompose/flow/` folder with the card definitions (max 10 MB). Upload &#x26; Validate checks the package before it is accepted.
-- **GitHub Import** — import a card definition straight from a GitHub repository.
-- **Submissions** — track the status of cards you have submitted.
+- **Download SDK Template** — starten Sie mit der offiziellen Vorlage, die die erwartete Struktur enthält.
+- **Upload ZIP** — das ZIP muss `app.json` und einen Ordner `.docflowcompose/flow/` mit den Kartendefinitionen enthalten (max. 10 MB). Upload &#x26; Validate prüft das Paket, bevor es akzeptiert wird.
+- **GitHub Import** — eine Kartendefinition direkt aus einem GitHub-Repository importieren.
+- **Submissions** — den Status der von Ihnen eingereichten Karten verfolgen.
 
-Once validated and accepted, your custom cards appear in the **Add Card** library alongside the built-in cards.
+Nach Validierung und Annahme erscheinen Ihre eigenen Karten in der **Add Card**-Bibliothek neben den eingebauten Karten.

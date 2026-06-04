@@ -2,25 +2,25 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_purchase_order_invoice.png" alt="DocBits Zakup Zamówienie Faktura"><figcaption></figcaption></figure>
 
-Purpose: This Docbits card is designed to streamline the verification process of invoices by comparing the total calculated price from the invoice against the corresponding purchase order.
+Cel: Ta karta DocBits służy do usprawnienia procesu weryfikacji faktur poprzez porównanie całkowitej obliczonej ceny z faktury z odpowiadającym jej zamówieniem zakupu.
 
-Functionality:
+Funkcjonalność:
 
-* Combined Price of Quantity Difference: The card calculates the total price by multiplying the quantity of each item listed on the invoice by the price per unit and then subtracts this total from the amount listed on the related purchase order.
-* Operator Value: Users can set conditions to determine how the calculated total price difference should be compared to the purchase order amount. The following operators are available:
+* Combined Price of Quantity Difference: Karta oblicza całkowitą cenę, mnożąc ilość każdej pozycji wymienionej na fakturze przez cenę jednostkową, a następnie odejmuje tę sumę od kwoty wskazanej na powiązanym zamówieniu zakupu.
+* Operator Value: Użytkownicy mogą ustawić warunki określające, w jaki sposób obliczona różnica całkowitej ceny powinna być porównana z kwotą zamówienia zakupu. Dostępne są następujące operatory:
 *
-  * Equals (=): Checks if the total invoice amount is exactly the same as the purchase order amount.
-  * Not Equal (≠): Verifies that the total invoice amount differs from the purchase order amount.
-  * Greater Than (>): Ensures the invoice amount is greater than the purchase order amount.
-  * Less Than (<): Confirms the invoice amount is less than the purchase order amount.
+  * Equals (=): Sprawdza, czy całkowita kwota faktury jest dokładnie taka sama jak kwota zamówienia zakupu.
+  * Not Equal (≠): Weryfikuje, czy całkowita kwota faktury różni się od kwoty zamówienia zakupu.
+  * Greater Than (>): Zapewnia, że kwota faktury jest większa niż kwota zamówienia zakupu.
+  * Less Than (<): Potwierdza, że kwota faktury jest mniejsza niż kwota zamówienia zakupu.
 
-Usage: This card is particularly useful for ERP Managers and financial accountants who need to automate and error-proof the reconciliation of invoices against purchase orders, ensuring financial accuracy and preventing overpayments or underpayments.
+Zastosowanie: Ta karta jest szczególnie przydatna dla menedżerów ERP i księgowych finansowych, którzy muszą zautomatyzować i zabezpieczyć przed błędami uzgadnianie faktur z zamówieniami zakupu, zapewniając dokładność finansową i zapobiegając nadpłatom lub niedopłatom.
 
-Example Scenario:
+Przykładowy scenariusz:
 
-* An invoice lists a total of 100 units of a product at $50 per unit, totaling $5000. The related purchase order authorized a purchase of $4500. Using the "Greater Than" operator, the card identifies and flags the discrepancy for review.
+* Faktura wymienia łącznie 100 jednostek produktu po 50 USD za jednostkę, co daje łącznie 5000 USD. Powiązane zamówienie zakupu autoryzowało zakup na kwotę 4500 USD. Przy użyciu operatora "Greater Than" karta identyfikuje i oznacza rozbieżność do przeglądu.
 
-By using the "Compare with Purchase Order" card, users can automatically ensure that payments are consistent with purchase agreements, saving time and reducing human error in financial processing.
+Korzystając z karty "Compare with Purchase Order", użytkownicy mogą automatycznie zapewnić zgodność płatności z umowami zakupu, oszczędzając czas i redukując błędy ludzkie w przetwarzaniu finansowym.
 
 \
 \

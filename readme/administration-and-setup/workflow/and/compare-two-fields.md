@@ -4,7 +4,7 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_docbits_image_6.png" alt="DocBits DocBits Obraz 6"><figcaption></figcaption></figure>
 
-This Card is intended to compare whether the selected fields in a document are equal/not equal, greater than... or less than... .
+Ta karta służy do porównania, czy wybrane pola w dokumencie są równe/nierówne, większe niż... lub mniejsze niż... .
 
 
 
@@ -12,6 +12,6 @@ This Card is intended to compare whether the selected fields in a document are e
 
 <figure><img src="https://lh7-us.googleusercontent.com/Qt90tjmjcLT32G-mRq3JeDC5rAL5Lkpk9jBhYFRoMF-jL0OPvJ4iKcmCz3FEn_L4WHysgTLRrlmr10ti4UJ1bojAQ57KBMXqySuykBFlQQWQ7dw7EJpr9Bw-th_1p4bA2_sGLUV6blAy1DblD4HFBVs" alt=""><figcaption></figcaption></figure>
 
-This card should automatically compare whether the fields, for example between net amount and gross amount, are within the specified tolerance. For example, you then enter the percentage of the VAT in the tolerance amount and enter percent in the tolerance type. The workflow can check whether the amount is correct.
+Ta karta powinna automatycznie porównywać, czy pola, na przykład między kwotą netto a kwotą brutto, mieszczą się w określonej tolerancji. Na przykład wprowadzasz wówczas wartość procentową VAT w kwocie tolerancji oraz wybierasz procent w typie tolerancji. Przepływ pracy może sprawdzić, czy kwota jest poprawna.
 
-Tolerance type: percent or value
+Tolerance type: procent lub wartość

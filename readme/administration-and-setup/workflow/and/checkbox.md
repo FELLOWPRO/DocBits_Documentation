@@ -1,10 +1,10 @@
 # Checkbox
 
-**Note: Not every customer has the checkbox, but it can be added if desired.**
+**Note: Nie każdy klient ma to pole wyboru, ale można je dodać w razie potrzeby.**
 
 <figure><img src="https://lh7-us.googleusercontent.com/6gdwYpvcAbPJAtc0oJQvB9gAujf3WBQ2FIwJA0eR3GTPdQVD-N-gw1CwXGU4gNYaAA30CD8IYISCVQPoD6T-kYhN-a7vMf6SOdZ_B_-x-9agUDe-sWsTlean5cPR78HHFKHerJrEa3umXpsWvfPV_bs" alt=""><figcaption></figcaption></figure>
 
-This card should automatically check whether the checkbox on the document has the same value as the condition on the card. Was the selected field checked (true) or not (false)
+Ta karta powinna automatycznie sprawdzać, czy pole wyboru w dokumencie ma taką samą wartość jak warunek na karcie. Czy wybrane pole było zaznaczone (true), czy nie (false)
 
 
 

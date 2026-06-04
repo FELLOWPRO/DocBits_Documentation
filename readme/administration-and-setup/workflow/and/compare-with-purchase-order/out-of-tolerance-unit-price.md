@@ -2,43 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Cel:**
 
-This workflow card is designed to evaluate whether the combined value of unit prices and a specified field exceeds or falls short of a defined threshold. It helps identify any discrepancies where the unit prices, when combined with other fields, are out of tolerance, ensuring that pricing conditions meet expectations and flagging any issues for review or further action.
+Ta karta przepływu pracy służy do oceny, czy łączna wartość cen jednostkowych i określonego pola przekracza zdefiniowany próg lub jest od niego niższa. Pomaga zidentyfikować wszelkie rozbieżności, w których ceny jednostkowe w połączeniu z innymi polami są poza tolerancją, zapewniając, że warunki cenowe spełniają oczekiwania, oraz oznaczając wszelkie problemy do przeglądu lub dalszego działania.
 
-## **Components of the Card:**
+## **Komponenty karty:**
 
 1. **Field Name:**
-   * **Description**: Specifies the document field that contains the value to be combined with the unit price.
-   * **Detail**: The value in this field will be combined with the unit price to create the total combined value for comparison.
+   * **Opis**: Określa pole dokumentu zawierające wartość do połączenia z ceną jednostkową.
+   * **Szczegóły**: Wartość w tym polu zostanie połączona z ceną jednostkową, tworząc łączną wartość do porównania.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the combined value of the unit price and the field value against the specified value.
-   * **Options**:
-     * **Equals (=)**: Verifies if the combined value of the unit price and the field matches the specified value.
-     * **Not Equals (≠)**: Ensures the combined value of the unit price and the field is different from the specified value.
-     * **Greater Than (>)**: Verifies if the combined value of the unit price and the field exceeds the specified value.
-     * **Greater or Equals (≥)**: Verifies if the combined value of the unit price and the field is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the combined value of the unit price and the field is less than the specified value.
-     * **Lesser or Equals (≤)**: Verifies if the combined value of the unit price and the field is less than or equal to the specified value.
+   * **Opis**: Definiuje warunek porównania łącznej wartości ceny jednostkowej i wartości pola z określoną wartością.
+   * **Opcje**:
+     * **Equals (=)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola odpowiada określonej wartości.
+     * **Not Equals (≠)**: Zapewnia, że łączna wartość ceny jednostkowej i pola różni się od określonej wartości.
+     * **Greater Than (>)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola przekracza określoną wartość.
+     * **Greater or Equals (≥)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest większa lub równa określonej wartości.
+     * **Lesser Than (<)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest mniejsza niż określona wartość.
+     * **Lesser or Equals (≤)**: Weryfikuje, czy łączna wartość ceny jednostkowej i pola jest mniejsza lub równa określonej wartości.
 3. **Value:**
-   * **Description**: Specifies the value against which the combined unit price and field value will be compared.
-   * **Detail**: This numeric value represents the threshold for comparison. If the combined value of the unit price and field exceeds or falls short of this value (based on the selected operator), the condition will trigger the specified actions.
+   * **Opis**: Określa wartość, z którą porównywana będzie łączna wartość ceny jednostkowej i pola.
+   * **Szczegóły**: Ta wartość liczbowa reprezentuje próg porównania. Jeśli łączna wartość ceny jednostkowej i pola przekracza tę wartość lub jest od niej niższa (na podstawie wybranego operatora), warunek wyzwoli określone akcje.
 
-## **Functionality:**
+## **Funkcjonalność:**
 
-* &#x20;**Condition Evaluation:** The system calculates the combined value by multiplying or adding the unit price with the field value, depending on the configuration. The result is then compared to the specified value using the selected operator. If the condition is met (i.e., the combined value is out of tolerance), the workflow proceeds with the next step, whether that’s approval, rejection, or further review.
-* **Action Execution:**
-  * **True Condition**: If the comparison results in true (i.e., the combined value meets the condition), the workflow triggers the action associated with the true condition (e.g., approval or notification).
-  * **False Condition**: If the comparison results in false (i.e., the combined value does not meet the condition), the workflow will not proceed.
+* &#x20;**Ocena warunku:** System oblicza łączną wartość, mnożąc lub dodając cenę jednostkową do wartości pola, w zależności od konfiguracji. Wynik jest następnie porównywany z określoną wartością za pomocą wybranego operatora. Jeśli warunek jest spełniony (tj. łączna wartość jest poza tolerancją), przepływ pracy przechodzi do kolejnego kroku, czy to zatwierdzenia, odrzucenia, czy dalszego przeglądu.
+* **Wykonanie akcji:**
+  * **Warunek prawdziwy**: Jeśli porównanie daje wynik prawdziwy (tj. łączna wartość spełnia warunek), przepływ pracy wyzwala akcję powiązaną z warunkiem prawdziwym (np. zatwierdzenie lub powiadomienie).
+  * **Warunek fałszywy**: Jeśli porównanie daje wynik fałszywy (tj. łączna wartość nie spełnia warunku), przepływ pracy nie będzie kontynuowany.
 
-## **Setup and Configuration:**
+## **Konfiguracja:**
 
-* Users select the field that contains the value to be combined with the unit price. Next, they choose the appropriate operator to determine how the combined value will be compared to the specified value. Finally, the user sets the value that the combined price will be compared to.
+* Użytkownicy wybierają pole zawierające wartość do połączenia z ceną jednostkową. Następnie wybierają odpowiedni operator, aby określić sposób porównania łącznej wartości z określoną wartością. Na koniec użytkownik ustawia wartość, z którą porównywana będzie łączna cena.
 
-## **Example Scenario:**
+## **Przykładowy scenariusz:**
 
-* An invoice lists 50 units of a product at $30 each, totaling $1500. The related document has a quantity field with a value of 10. The combined price is calculated by multiplying the unit price ($30) and the quantity (10), resulting in $300. The card then compares this combined value to a threshold of $250. Using the “Greater Than” operator, the card identifies that $300 is greater than $250, triggering an approval process for the document.
+* Faktura wymienia 50 jednostek produktu po 30 USD każda, co daje łącznie 1500 USD. Powiązany dokument ma pole ilości o wartości 10. Łączna cena jest obliczana przez pomnożenie ceny jednostkowej (30 USD) i ilości (10), co daje 300 USD. Karta porównuje następnie tę łączną wartość z progiem 250 USD. Przy użyciu operatora "Greater Than" karta identyfikuje, że 300 USD jest większe niż 250 USD, wyzwalając proces zatwierdzania dokumentu.
 
-## **Conclusion:**
+## **Podsumowanie:**
 
-The "Out of Tolerance Unit Prices Combined with Fields" workflow card helps ensure that pricing and field values are in alignment with business rules. By automating this check, organizations can identify discrepancies early in the process, ensuring that any out-of-tolerance unit prices are flagged for review or necessary action.
+Karta przepływu pracy "Out of Tolerance Unit Prices Combined with Fields" pomaga zapewnić, że wartości cenowe i wartości pól są zgodne z regułami biznesowymi. Automatyzując tę kontrolę, organizacje mogą wcześnie zidentyfikować rozbieżności w procesie, zapewniając, że wszelkie ceny jednostkowe poza tolerancją są oznaczane do przeglądu lub niezbędnego działania.

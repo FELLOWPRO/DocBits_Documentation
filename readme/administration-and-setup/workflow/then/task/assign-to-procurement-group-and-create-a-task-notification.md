@@ -2,61 +2,61 @@
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Objectif**
 
-The "**Assign Document to Procurement Group and Create Task/Notification**" workflow card assigns a document to a specified procurement group, creates a task or notification with defined details, and optionally notifies the group via email. It prioritizes task execution based on a configurable numeric priority value.
+La carte de workflow « **Assign Document to Procurement Group and Create Task/Notification** » assigne un document à un groupe d'approvisionnement spécifié, crée une tâche ou une notification avec des détails définis, et notifie éventuellement le groupe par e-mail. Elle hiérarchise l'exécution des tâches selon une valeur de priorité numérique configurable.
 
-## **Components of the Card**
+## **Composants de la carte**
 
 1. **Group Name**
-   * **Description:** Specifies the procurement group responsible for handling the document.
-   * **Detail:** A field where the user can manually enter the name of the procurement group.
+   * **Description :** spécifie le groupe d'approvisionnement responsable du traitement du document.
+   * **Détail :** un champ où l'utilisateur peut saisir manuellement le nom du groupe d'approvisionnement.
 2. **Task/Notification**
-   * **Description:** Defines whether a task or notification is created for the group.
-   * **Detail:** A field where the user can choose between creating a task or a notificatio
+   * **Description :** définit si une tâche ou une notification est créée pour le groupe.
+   * **Détail :** un champ où l'utilisateur peut choisir entre créer une tâche ou une notification.
 3. **Title**
-   * **Description:** The title of the task or notification created for the group.
-   * **Detail:** A field to provide a concise and identifiable title for the task or notification.
+   * **Description :** le titre de la tâche ou de la notification créée pour le groupe.
+   * **Détail :** un champ pour fournir un titre concis et identifiable à la tâche ou à la notification.
 4. **Description**
-   * **Description:** Further details about the task or notification.
-   * **Detail:** A field to describe the task’s purpose and provide context or instructions.
+   * **Description :** des détails supplémentaires sur la tâche ou la notification.
+   * **Détail :** un champ pour décrire l'objet de la tâche et fournir un contexte ou des instructions.
 5. **Priority**
-   * **Description:** Defines the urgency level of the task or notification.
-   * **Options:**
-     * **High:** Task requires immediate attention.
-     * **Medium:** Task is important but not urgent.
-     * **Low:** Task can be handled at a later time.
+   * **Description :** définit le niveau d'urgence de la tâche ou de la notification.
+   * **Options :**
+     * **High :** la tâche nécessite une attention immédiate.
+     * **Medium :** la tâche est importante mais non urgente.
+     * **Low :** la tâche peut être traitée plus tard.
 6. **Send Mail**
-   * **Description:** Configures whether an email notification should be sent to the group.
-   * **Options:**
-     * **True:** Sends an email notification to the procurement group.
-     * **False:** No email notification is sent.
+   * **Description :** configure si une notification par e-mail doit être envoyée au groupe.
+   * **Options :**
+     * **True :** envoie une notification par e-mail au groupe d'approvisionnement.
+     * **False :** aucune notification par e-mail n'est envoyée.
 7. **Value**
-   * **Description:** Sets the numeric priority for task execution.
-   * **Detail:** A field to input a numeric value, where a lower number represents a higher priority.
+   * **Description :** définit la priorité numérique de l'exécution de la tâche.
+   * **Détail :** un champ pour saisir une valeur numérique, où un nombre plus faible représente une priorité plus élevée.
 
-## **Functionality**
+## **Fonctionnalité**
 
-* **Condition Evaluation:**\
-  The card performs its actions only if the defined workflow conditions are met.
-* **Group Assignment and Task/Notification Creation:**\
-  The document is assigned to the specified procurement group. A task or notification is created with the provided title, description, and priority.
-* **Email Notification:**\
-  If "Send Mail" is set to True, the group receives an email about the task or notification.
+* **Évaluation de la condition :**\
+  La carte n'effectue ses actions que si les conditions de workflow définies sont satisfaites.
+* **Attribution au groupe et création de tâche/notification :**\
+  Le document est assigné au groupe d'approvisionnement spécifié. Une tâche ou une notification est créée avec le titre, la description et la priorité fournis.
+* **Notification par e-mail :**\
+  Si « Send Mail » est défini sur True, le groupe reçoit un e-mail concernant la tâche ou la notification.
 
-## **Setup and Configuration**
+## **Mise en place et configuration**
 
-1. **Define Group Name:**
-   * Enter the name of the procurement group in the Group Name field.
-2. **Configure Task/Notification Details:**
-   * Specify the Title and Description for the task or notification.
-   * Select the Priority from the dropdown menu (High, Medium, or Low).
-3. **Enable Email Notification:**
-   * Set "Send Mail" to True or False based on whether the group should receive an email.
-4. **Set Numeric Priority:**
-   * Input a numeric value in the Value field to determine the task's priority, where lower values are processed first.
-5. Save the card configuration and activate the workflow.
+1. **Définir le Group Name :**
+   * Saisissez le nom du groupe d'approvisionnement dans le champ Group Name.
+2. **Configurer les détails de la tâche/notification :**
+   * Spécifiez le Title et la Description de la tâche ou de la notification.
+   * Sélectionnez la Priority dans le menu déroulant (High, Medium ou Low).
+3. **Activer la notification par e-mail :**
+   * Définissez « Send Mail » sur True ou False selon que le groupe doit recevoir un e-mail.
+4. **Définir la priorité numérique :**
+   * Saisissez une valeur numérique dans le champ Value pour déterminer la priorité de la tâche, où les valeurs les plus faibles sont traitées en premier.
+5. Enregistrez la configuration de la carte et activez le workflow.
 
 ## **Conclusion**
 
-The "Assign Document to Procurement Group and Create Task/Notification" workflow card ensures documents are directed to the appropriate group with clear task instructions and priority levels. By enabling optional email notifications, this card improves task visibility and ensures smooth workflow execution.
+La carte de workflow « Assign Document to Procurement Group and Create Task/Notification » garantit que les documents sont dirigés vers le groupe approprié avec des instructions de tâche claires et des niveaux de priorité. En permettant des notifications par e-mail facultatives, cette carte améliore la visibilité des tâches et garantit une exécution fluide du workflow.

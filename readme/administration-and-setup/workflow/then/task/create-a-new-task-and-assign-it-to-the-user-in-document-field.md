@@ -2,64 +2,64 @@
 
 <figure><img src="../../../../.gitbook/assets/image (290).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-The **"Create Field-Based Task or Notification"** workflow card is used to create tasks or notifications dynamically assigned to users identified within specific document fields. This card provides an optional fallback mechanism to ensure smooth workflow execution even when the document field does not specify a valid user.
+La carte de workflow **« Create Field-Based Task or Notification »** sert à créer des tâches ou des notifications assignées dynamiquement à des utilisateurs identifiés dans des champs de document spécifiques. Cette carte offre un mécanisme de repli facultatif pour garantir une exécution fluide du workflow même lorsque le champ de document ne spécifie pas d'utilisateur valide.
 
-## **Components of the Card:**&#x20;
+## **Composants de la carte :**&#x20;
 
 1. **Title**
-   * **Description**: Specifies the task or notification title.
-   * **Detail**: Used to name and identify the task or notification being created.
+   * **Description** : spécifie le titre de la tâche ou de la notification.
+   * **Détail** : sert à nommer et à identifier la tâche ou la notification créée.
 2. **Description**
-   * **Description**: Provides additional details about the task or notification.
-   * **Detail**: Ensures the recipient understands the purpose and context of the task or notification.
+   * **Description** : fournit des détails supplémentaires sur la tâche ou la notification.
+   * **Détail** : garantit que le destinataire comprend l'objet et le contexte de la tâche ou de la notification.
 3. **Priority**
-   * **Description**: Defines the urgency of the task or notification.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but less urgent.
-     * **Low**: Can be addressed at a later time.
+   * **Description** : définit l'urgence de la tâche ou de la notification.
+   * **Options** :
+     * **High** : nécessite une attention immédiate.
+     * **Medium** : important mais moins urgent.
+     * **Low** : peut être traité plus tard.
 4. **Field Name**
-   * **Description**: Specifies the document field that will be used to assign the task or notification.
-   * **Detail**: The field selected will dynamically determine the user to whom the task or notification will be assigned. If the field is empty or invalid, the task or notification will be assigned to the fallback user selected from the dropdown list.
+   * **Description** : spécifie le champ de document qui sera utilisé pour assigner la tâche ou la notification.
+   * **Détail** : le champ sélectionné déterminera dynamiquement l'utilisateur auquel la tâche ou la notification sera assignée. Si le champ est vide ou invalide, la tâche ou la notification sera assignée à l'utilisateur de repli sélectionné dans la liste déroulante.
 5. **Email Notification**
-   * **Description**: Configures whether the assigned user is notified by email.
-   * **Options**:
-     * **True**: Sends an email notification to the assigned user.
-     * **False**: No email notification is sent.
+   * **Description** : configure si l'utilisateur assigné est notifié par e-mail.
+   * **Options** :
+     * **True** : envoie une notification par e-mail à l'utilisateur assigné.
+     * **False** : aucune notification par e-mail n'est envoyée.
 6. **Fallback User**
-   * **Description**: Allows the selection of a user from a dropdown list to assign the task or notification when no valid user is found in the document field.
-   * **Detail**: Ensures the task or notification is assigned even if the document field is empty or invalid.
+   * **Description** : permet de sélectionner un utilisateur dans une liste déroulante pour assigner la tâche ou la notification lorsqu'aucun utilisateur valide n'est trouvé dans le champ de document.
+   * **Détail** : garantit que la tâche ou la notification est assignée même si le champ de document est vide ou invalide.
 
-## **Additional Components in Version 3:**
+## **Composants supplémentaires dans la Version 3 :**
 
 1. **Notification Type**&#x20;
-   * **Description**: Specifies whether the card creates a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task assigned to the specified user.
-     * **Notification**: Sends a notification instead of creating a task.
+   * **Description** : spécifie si la carte crée une tâche ou une notification.
+   * **Options** :
+     * **Task** : crée une tâche assignée à l'utilisateur spécifié.
+     * **Notification** : envoie une notification au lieu de créer une tâche.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation**:\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Task or Notification Creation**:
-  * Assigns the task or notification to the user identified in the document field.
-  * In Version 3, allows creating either a task or a notification.
-* **Fallback Mechanism**:\
-  If the document field does not identify a valid user, the card assigns the task or notification to the fallback user selected from the dropdown list.
-* **Email Notification**:\
-  Sends an email notification to the assigned user if configured to do so.
+* **Évaluation de la condition** :\
+  La carte n'exécute son action que si les sections **« Where »** et **« And »** sont toutes deux évaluées comme vraies.
+* **Création de tâche ou de notification** :
+  * Assigne la tâche ou la notification à l'utilisateur identifié dans le champ de document.
+  * Dans la Version 3, permet de créer soit une tâche, soit une notification.
+* **Mécanisme de repli** :\
+  Si le champ de document n'identifie pas d'utilisateur valide, la carte assigne la tâche ou la notification à l'utilisateur de repli sélectionné dans la liste déroulante.
+* **Notification par e-mail** :\
+  Envoie une notification par e-mail à l'utilisateur assigné si elle est configurée pour cela.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-1. **Define Task or Notification Details**: Enter the title, description, and priority.
-2. **Select the Document Field**: Choose the field that specifies the user for task or notification assignment.
-3. **Enable Email Notification**: Specify whether an email notification should be sent to the assigned user.
-4. **Select Fallback User**: Choose a fallback user from the dropdown list for assignment if the document field does not identify a valid user.
-5. **Specify Notification Type (Version 3)**: Indicate whether the card creates a task or notification.
+1. **Définir les détails de la tâche ou de la notification** : saisissez le titre, la description et la priorité.
+2. **Sélectionner le champ de document** : choisissez le champ qui spécifie l'utilisateur de l'attribution de la tâche ou de la notification.
+3. **Activer la notification par e-mail** : indiquez si une notification par e-mail doit être envoyée à l'utilisateur assigné.
+4. **Sélectionner l'utilisateur de repli** : choisissez un utilisateur de repli dans la liste déroulante pour l'attribution si le champ de document n'identifie pas d'utilisateur valide.
+5. **Spécifier le type de notification (Version 3)** : indiquez si la carte crée une tâche ou une notification.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Create Field-Based Task or Notification"** workflow card streamlines task and notification management by dynamically assigning responsibilities based on document fields. Its fallback user mechanism and enhanced options in Version 3 provide flexibility, ensuring tasks or notifications are always assigned, even when document data is incomplete.
+La carte de workflow **« Create Field-Based Task or Notification »** rationalise la gestion des tâches et des notifications en assignant dynamiquement les responsabilités en fonction des champs de document. Son mécanisme d'utilisateur de repli et ses options enrichies dans la Version 3 offrent de la flexibilité, garantissant que les tâches ou notifications sont toujours assignées, même lorsque les données du document sont incomplètes.

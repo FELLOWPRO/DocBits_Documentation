@@ -2,66 +2,66 @@
 
 <figure><img src="../../../../.gitbook/assets/image (289).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-The **"Create Group Task or Notification"** workflow card facilitates task or notification creation for specified groups, ensuring efficient communication and task management. Enhanced with decision tree functionality in later versions, it dynamically determines the assigned group or method, streamlining operations.
+La carte de workflow **« Create Group Task or Notification »** facilite la création de tâches ou de notifications pour des groupes spécifiés, garantissant une communication et une gestion des tâches efficaces. Enrichie d'une fonctionnalité d'arbre de décision dans les versions ultérieures, elle détermine dynamiquement le groupe assigné ou la méthode, rationalisant les opérations.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
 1. **Title**
-   * **Description**: Specifies the title of the task or notification.
-   * **Detail**: Acts as the identifier for the created task or notification.
+   * **Description** : spécifie le titre de la tâche ou de la notification.
+   * **Détail** : sert d'identifiant à la tâche ou à la notification créée.
 2. **Description**
-   * **Description**: Describes the context or details of the task or notification.
-   * **Detail**: Provides clarity on its purpose.
+   * **Description** : décrit le contexte ou les détails de la tâche ou de la notification.
+   * **Détail** : apporte de la clarté sur son objet.
 3. **Priority**
-   * **Description**: Sets the importance level of the task.
-   * **Options**:
-     * **High**: Requires immediate action.
-     * **Medium**: Important but less urgent.
-     * **Low**: Can be addressed later.
+   * **Description** : définit le niveau d'importance de la tâche.
+   * **Options** :
+     * **High** : nécessite une action immédiate.
+     * **Medium** : important mais moins urgent.
+     * **Low** : peut être traité plus tard.
 4. **Assigned Group**
-   * **Description**: Specifies the group responsible for the task or notification.
-   * **Detail**: Selected from a dropdown list of available groups.
+   * **Description** : spécifie le groupe responsable de la tâche ou de la notification.
+   * **Détail** : sélectionné dans une liste déroulante de groupes disponibles.
 5. **Email Notification**
-   * **Description**: Enables sending an email to notify the assigned group.
-   * **Options**:
-     * **True**: Sends an email notification.
-     * **False**: No email notification is sent.
+   * **Description** : permet d'envoyer un e-mail pour notifier le groupe assigné.
+   * **Options** :
+     * **True** : envoie une notification par e-mail.
+     * **False** : aucune notification par e-mail n'est envoyée.
 
-## **Additional Components in Version 3 and Version 4**
+## **Composants supplémentaires dans la Version 3 et la Version 4**
 
-1. **Decision Tree  (Version 3 Only)**
-   * **Description**: Enables the use of a decision tree for dynamic task creation.
-   * **Options**:
-     * **True**: Activates decision tree processing.
-     * **False**: Disables decision tree processing.
-2. **Task/Notification Option** **(Version 4 Only)**
-   * **Description**: Allows creating either a task or a notification.
-   * **Options**:
-     * **Task**: Creates a task for the selected group.
-     * **Notification**: Sends a notification instead of creating a task.
+1. **Decision Tree (Version 3 uniquement)**
+   * **Description** : permet d'utiliser un arbre de décision pour la création dynamique de tâches.
+   * **Options** :
+     * **True** : active le traitement par arbre de décision.
+     * **False** : désactive le traitement par arbre de décision.
+2. **Task/Notification Option (Version 4 uniquement)**
+   * **Description** : permet de créer soit une tâche, soit une notification.
+   * **Options** :
+     * **Task** : crée une tâche pour le groupe sélectionné.
+     * **Notification** : envoie une notification au lieu de créer une tâche.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation**:\
-  Executes the card action only when the **"Where"** and **"And Sections"** are true.
-* **Task or Notification Creation**:
-  * A task is created for the selected group with the specified title, description, and priority.
-  * In Version 4, the card can create a notification instead of a task.
-* **Dynamic Assignment (Version 3 only)**:\
-  If enabled, the decision tree determines the target group dynamically.
-* **Email Notification**:\
-  Sends an email notification to the group if the email option is set to true.
+* **Évaluation de la condition** :\
+  Exécute l'action de la carte uniquement lorsque les sections **« Where »** et **« And »** sont vraies.
+* **Création de tâche ou de notification** :
+  * Une tâche est créée pour le groupe sélectionné avec le titre, la description et la priorité spécifiés.
+  * Dans la Version 4, la carte peut créer une notification au lieu d'une tâche.
+* **Attribution dynamique (Version 3 uniquement)** :\
+  Si elle est activée, l'arbre de décision détermine dynamiquement le groupe cible.
+* **Notification par e-mail** :\
+  Envoie une notification par e-mail au groupe si l'option e-mail est définie sur true.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-1. **Define Task or Notification Details**: Enter the title, description, and priority.
-2. **Assign to a Group**: Select a group from the dropdown list for task or notification assignment.
-3. **Enable Email Notification**: Indicate whether the group should be notified via email.
-4. **Use Decision Tree (Version 3 only)**: Enable the decision tree to dynamically assign the group.
-5. **Select Output Type (Version 4 only)**: Choose whether the card creates a task or a notification.
+1. **Définir les détails de la tâche ou de la notification** : saisissez le titre, la description et la priorité.
+2. **Assigner à un groupe** : sélectionnez un groupe dans la liste déroulante pour l'attribution de la tâche ou de la notification.
+3. **Activer la notification par e-mail** : indiquez si le groupe doit être notifié par e-mail.
+4. **Use Decision Tree (Version 3 uniquement)** : activez l'arbre de décision pour assigner dynamiquement le groupe.
+5. **Sélectionner le type de sortie (Version 4 uniquement)** : choisissez si la carte crée une tâche ou une notification.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The **"Create Group Task or Notification"** workflow card simplifies task and notification management by targeting groups directly. Its dynamic assignment feature, enabled by the decision tree, enhances flexibility, while email notifications ensure timely communication. Versions 3 and 4 add advanced functionality, making it a versatile tool for efficient workflow execution.
+La carte de workflow **« Create Group Task or Notification »** simplifie la gestion des tâches et des notifications en ciblant directement les groupes. Sa fonctionnalité d'attribution dynamique, rendue possible par l'arbre de décision, renforce la flexibilité, tandis que les notifications par e-mail garantissent une communication en temps utile. Les Versions 3 et 4 ajoutent des fonctionnalités avancées, en faisant un outil polyvalent pour une exécution efficace du workflow.

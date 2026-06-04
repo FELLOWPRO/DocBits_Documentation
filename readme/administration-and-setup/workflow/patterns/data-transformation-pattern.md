@@ -1,56 +1,56 @@
 # Data Transformation Pattern
 
-**Pattern Type:** Data Processing & Manipulation
-**Complexity:** Medium
-**Estimated Setup:** 30-45 minutes
-**Common Use Cases:** Field calculations, data formatting, currency conversion, unit conversion, data enrichment
+**Tip obrasca:** Obrada i manipulacija podacima
+**Složenost:** Srednja
+**Procenjeno podešavanje:** 30-45 minuta
+**Uobičajeni slučajevi upotrebe:** Izračunavanja polja, formatiranje podataka, konverzija valuta, konverzija jedinica, obogaćivanje podataka
 
 ---
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Document Field** category — it holds the read, write, calculate and format cards this pattern chains together:
+Ovaj obrazac gradite u **Workflow Builder**-u (Workflow Dashboard → Workflow List → Add Workflow). Kliknite na **Add Card** i otvorite kategoriju **Document Field** — ona sadrži kartice za čitanje, pisanje, izračunavanje i formatiranje koje ovaj obrazac povezuje u lanac:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — field read/write, calculation and formatting cards live under the <strong>Document Field</strong> category.</p></figcaption></figure>
-
----
-
-## Pattern Overview
-
-This pattern demonstrates how to transform, calculate, format, and enrich document data in DocBits workflows. Data transformation is essential for preparing data for export, performing calculations, standardizing formats, and enriching documents with additional information.
-
-**What This Pattern Does:**
-1. Extracts data from document fields
-2. Performs calculations and transformations
-3. Formats data to required standards
-4. Converts between units, currencies, dates
-5. Enriches documents with derived or lookup data
-6. Validates and cleanses data
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteka Add Card u Workflow Builder-u, grupisana po kategoriji"><figcaption><p>Biblioteka <strong>Add Card</strong> — kartice za čitanje/pisanje polja, izračunavanje i formatiranje nalaze se pod kategorijom <strong>Document Field</strong>.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Pregled obrasca
 
-Use this pattern when you need to:
-- ✅ Calculate totals, subtotals, taxes
-- ✅ Convert currencies or units
-- ✅ Format dates, numbers, text
-- ✅ Derive values from existing fields
-- ✅ Enrich data from external sources
-- ✅ Standardize data formats
-- ✅ Clean and validate data
-- ✅ Prepare data for export
+Ovaj obrazac pokazuje kako da transformišete, izračunavate, formatirate i obogaćujete podatke dokumenta u DocBits tokovima rada. Transformacija podataka je ključna za pripremu podataka za izvoz, izvođenje izračunavanja, standardizaciju formata i obogaćivanje dokumenata dodatnim informacijama.
 
-**Don't use this pattern when:**
-- ❌ No transformation needed
-- ❌ Data is already in correct format
-- ❌ Simple field copy is sufficient
+**Šta ovaj obrazac radi:**
+1. Izvlači podatke iz polja dokumenta
+2. Izvodi izračunavanja i transformacije
+3. Formatira podatke prema potrebnim standardima
+4. Konvertuje između jedinica, valuta, datuma
+5. Obogaćuje dokumente izvedenim podacima ili podacima iz pretrage
+6. Validira i čisti podatke
 
 ---
 
-## Data Transformation Types
+## Kada koristiti ovaj obrazac
 
-### 1. Calculations
+Koristite ovaj obrazac kada treba da:
+- ✅ Izračunate ukupne iznose, međuzbirove, poreze
+- ✅ Konvertujete valute ili jedinice
+- ✅ Formatirate datume, brojeve, tekst
+- ✅ Izvedete vrednosti iz postojećih polja
+- ✅ Obogatite podatke iz eksternih izvora
+- ✅ Standardizujete formate podataka
+- ✅ Očistite i validirate podatke
+- ✅ Pripremite podatke za izvoz
 
-**Mathematical Operations:**
+**Nemojte koristiti ovaj obrazac kada:**
+- ❌ Nije potrebna transformacija
+- ❌ Podaci su već u ispravnom formatu
+- ❌ Jednostavno kopiranje polja je dovoljno
+
+---
+
+## Tipovi transformacije podataka
+
+### 1. Izračunavanja
+
+**Matematičke operacije:**
 ```
 - Addition: Quantity + Bonus_Quantity = Total_Quantity
 - Subtraction: Invoice_Total - Tax_Amount = Net_Amount
@@ -59,9 +59,9 @@ Use this pattern when you need to:
 - Percentage: (Discount / Subtotal) × 100 = Discount_Percent
 ```
 
-### 2. String Operations
+### 2. Operacije sa stringovima
 
-**Text Manipulation:**
+**Manipulacija tekstom:**
 ```
 - Concatenation: First_Name + " " + Last_Name = Full_Name
 - Uppercase: "invoice" → "INVOICE"
@@ -71,9 +71,9 @@ Use this pattern when you need to:
 - Trim: "  ABC Corp  " → "ABC Corp"
 ```
 
-### 3. Data Type Conversion
+### 3. Konverzija tipa podataka
 
-**Type Transformations:**
+**Transformacije tipova:**
 ```
 - String to Number: "123.45" → 123.45
 - Number to String: 123.45 → "123.45"
@@ -82,9 +82,9 @@ Use this pattern when you need to:
 - Boolean to String: true → "Yes"
 ```
 
-### 4. Unit Conversions
+### 4. Konverzije jedinica
 
-**Measurement Conversions:**
+**Konverzije mernih jedinica:**
 ```
 - Weight: kg → lbs, tons → kg
 - Length: cm → inches, m → ft
@@ -93,18 +93,18 @@ Use this pattern when you need to:
 - Quantity: pieces → dozens, units → pallets
 ```
 
-### 5. Currency Conversions
+### 5. Konverzije valuta
 
-**Exchange Rate Applications:**
+**Primena kursa razmene:**
 ```
 - USD → EUR: Amount_USD × Rate = Amount_EUR
 - Multi-currency: Convert all to base currency
 - Historical rates: Use rate from invoice date
 ```
 
-### 6. Date Transformations
+### 6. Transformacije datuma
 
-**Date Operations:**
+**Operacije sa datumima:**
 ```
 - Format change: 10/23/2025 → 2025-10-23
 - Add days: Invoice_Date + 30 = Due_Date
@@ -114,41 +114,41 @@ Use this pattern when you need to:
 
 ---
 
-## Complete Workflow Example
+## Kompletan primer toka rada
 
-### Scenario: Invoice Total Calculation & Data Enrichment
+### Scenario: Izračunavanje ukupnog iznosa fakture i obogaćivanje podataka
 
-**Business Requirement:**
-- Extract line items from invoice
-- Calculate line totals (Qty × Price)
-- Calculate subtotal (sum of line totals)
-- Calculate tax amount (Subtotal × Tax_Rate)
-- Calculate grand total (Subtotal + Tax)
-- Convert to EUR if invoice in other currency
-- Format amounts to 2 decimal places
-- Add company GL account based on product category
-- Validate calculations against invoice total
-- Flag if variance > 1%
+**Poslovni zahtev:**
+- Izvucite stavke iz fakture
+- Izračunajte ukupne iznose stavki (Količina × Cena)
+- Izračunajte međuzbir (zbir ukupnih iznosa stavki)
+- Izračunajte iznos poreza (Međuzbir × Poreska stopa)
+- Izračunajte ukupan iznos (Međuzbir + Porez)
+- Konvertujte u EUR ako je faktura u drugoj valuti
+- Formatirajte iznose na 2 decimalna mesta
+- Dodajte GL nalog kompanije na osnovu kategorije proizvoda
+- Validirajte izračunavanja u odnosu na ukupan iznos fakture
+- Označite ako je odstupanje > 1%
 
-**Workflow Cards Used:**
-1. ACTION_CALCULATE_FIELD - Perform calculations
-2. ACTION_SET_FIELD_TO_TEXT - Store results
-3. ACTION_COPY_FIELD_VALUE - Copy values
-4. CALL_API - Get exchange rates (if needed)
-5. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Validate calculations
-6. ACTION_SET_FIELD_FROM_MASTER_DATA - Enrich with GL accounts
+**Korišćene kartice toka rada:**
+1. ACTION_CALCULATE_FIELD - Izvođenje izračunavanja
+2. ACTION_SET_FIELD_TO_TEXT - Čuvanje rezultata
+3. ACTION_COPY_FIELD_VALUE - Kopiranje vrednosti
+4. CALL_API - Dobijanje kurseva razmene (ako je potrebno)
+5. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Validacija izračunavanja
+6. ACTION_SET_FIELD_FROM_MASTER_DATA - Obogaćivanje GL nalozima
 
 ---
 
-## Step-by-Step Implementation
+## Implementacija korak po korak
 
-### Step 1: Line Item Calculations
+### Korak 1: Izračunavanja stavki
 
-**Calculate Line Totals:**
+**Izračunajte ukupne iznose stavki:**
 
-**Card:** ACTION_CALCULATE_FIELD
+**Kartica:** ACTION_CALCULATE_FIELD
 
-**For each line item:**
+**Za svaku stavku:**
 ```
 Field: Line_Total
 Formula: {{TABLE_FIELD:Quantity}} * {{TABLE_FIELD:Unit_Price}}
@@ -156,7 +156,7 @@ Result Type: Number
 Decimal Places: 2
 ```
 
-**Example:**
+**Primer:**
 ```
 Line 1:
   Quantity: 100
@@ -177,17 +177,17 @@ Line 3:
   Store in: Line_Total
 ```
 
-**Guide Reference:** [Field Manipulation Guide - Calculations](../then/document-field/field-manipulation-guide.md#calculate-field)
+**Referenca vodiča:** [Field Manipulation Guide - Calculations](../then/document-field/field-manipulation-guide.md#calculate-field)
 
 ---
 
-### Step 2: Calculate Document Subtotal
+### Korak 2: Izračunajte međuzbir dokumenta
 
-**Sum All Line Totals:**
+**Saberite sve ukupne iznose stavki:**
 
-**Card:** ACTION_CALCULATE_FIELD
+**Kartica:** ACTION_CALCULATE_FIELD
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field: Calculated_Subtotal
 Formula: SUM({{TABLE_COLUMN:Line_Total}})
@@ -195,7 +195,7 @@ Result Type: Number
 Decimal Places: 2
 ```
 
-**Example:**
+**Primer:**
 ```
 Line 1 Total: €5,000.00
 Line 2 Total: €1,000.00
@@ -207,13 +207,13 @@ Store in: Calculated_Subtotal
 
 ---
 
-### Step 3: Calculate Tax Amount
+### Korak 3: Izračunajte iznos poreza
 
-**Apply Tax Rate to Subtotal:**
+**Primenite poresku stopu na međuzbir:**
 
-**Card:** ACTION_CALCULATE_FIELD
+**Kartica:** ACTION_CALCULATE_FIELD
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field: Calculated_Tax_Amount
 Formula: {{Calculated_Subtotal}} * ({{Tax_Rate}} / 100)
@@ -221,7 +221,7 @@ Result Type: Number
 Decimal Places: 2
 ```
 
-**Example:**
+**Primer:**
 ```
 Calculated_Subtotal: €6,387.50
 Tax_Rate: 19% (VAT)
@@ -235,13 +235,13 @@ Store in: Calculated_Tax_Amount
 
 ---
 
-### Step 4: Calculate Grand Total
+### Korak 4: Izračunajte ukupan iznos
 
-**Add Subtotal and Tax:**
+**Saberite međuzbir i porez:**
 
-**Card:** ACTION_CALCULATE_FIELD
+**Kartica:** ACTION_CALCULATE_FIELD
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field: Calculated_Grand_Total
 Formula: {{Calculated_Subtotal}} + {{Calculated_Tax_Amount}}
@@ -249,7 +249,7 @@ Result Type: Number
 Decimal Places: 2
 ```
 
-**Example:**
+**Primer:**
 ```
 Calculated_Subtotal: €6,387.50
 Calculated_Tax_Amount: €1,213.63
@@ -261,26 +261,26 @@ Store in: Calculated_Grand_Total
 
 ---
 
-### Step 5: Currency Conversion (if needed)
+### Korak 5: Konverzija valute (ako je potrebno)
 
-**Check if conversion needed:**
+**Proverite da li je potrebna konverzija:**
 
-**Card:** CONDITION_DOC_FIELD_IS
+**Kartica:** CONDITION_DOC_FIELD_IS
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field: Invoice_Currency
 Operator: IS NOT EQUAL TO
 Value: EUR
 ```
 
-**If conversion needed:**
+**Ako je potrebna konverzija:**
 
-**Step 5a: Get Exchange Rate**
+**Korak 5a: Dobijte kurs razmene**
 
-**Card:** CALL_API
+**Kartica:** CALL_API
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Endpoint: https://api.exchangerate-api.com/v4/latest/{{Invoice_Currency}}
 Method: GET
@@ -288,7 +288,7 @@ Response Path: rates.EUR
 Store in: Exchange_Rate_To_EUR
 ```
 
-**Example:**
+**Primer:**
 ```
 Invoice Currency: USD
 API Response: {
@@ -301,11 +301,11 @@ API Response: {
 Exchange_Rate_To_EUR = 0.92
 ```
 
-**Step 5b: Convert Amounts**
+**Korak 5b: Konvertujte iznose**
 
-**Card:** ACTION_CALCULATE_FIELD
+**Kartica:** ACTION_CALCULATE_FIELD
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field: Grand_Total_EUR
 Formula: {{Calculated_Grand_Total}} * {{Exchange_Rate_To_EUR}}
@@ -313,7 +313,7 @@ Result Type: Number
 Decimal Places: 2
 ```
 
-**Example:**
+**Primer:**
 ```
 Grand Total (USD): $7,601.13
 Exchange Rate: 0.92
@@ -323,17 +323,17 @@ Grand Total (EUR) = 7601.13 × 0.92 = €6,993.04
 Store in: Grand_Total_EUR
 ```
 
-**Guide Reference:** [API Integration Pattern - Currency Conversion](api-integration-pattern.md#currency-conversion-example)
+**Referenca vodiča:** [API Integration Pattern - Currency Conversion](api-integration-pattern.md#currency-conversion-example)
 
 ---
 
-### Step 6: Data Enrichment - Add GL Accounts
+### Korak 6: Obogaćivanje podataka - Dodajte GL naloge
 
-**Lookup GL Account by Product Category:**
+**Pretražite GL nalog po kategoriji proizvoda:**
 
-**Card:** ACTION_SET_FIELD_FROM_MASTER_DATA
+**Kartica:** ACTION_SET_FIELD_FROM_MASTER_DATA
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Lookup Table: GL_Account_Mapping
 Lookup Key: {{TABLE_FIELD:Product_Category}}
@@ -341,7 +341,7 @@ Return Field: GL_Account_Number
 Store in: GL_Account
 ```
 
-**Example:**
+**Primer:**
 ```
 Line 1:
   Product Category: "Office Supplies"
@@ -359,17 +359,17 @@ Line 3:
   Result: GL Account "5000-300" (Services Expense)
 ```
 
-**Guide Reference:** [Field Manipulation Guide - Master Data](../then/document-field/field-manipulation-guide.md#master-data-lookup)
+**Referenca vodiča:** [Field Manipulation Guide - Master Data](../then/document-field/field-manipulation-guide.md#master-data-lookup)
 
 ---
 
-### Step 7: Validate Calculations
+### Korak 7: Validirajte izračunavanja
 
-**Compare Calculated Total with Invoice Total:**
+**Uporedite izračunati ukupan iznos sa ukupnim iznosom fakture:**
 
-**Card:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Kartica:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field 1: Calculated_Grand_Total
 Field 2: Invoice_Total (from OCR)
@@ -377,7 +377,7 @@ Operator: Calculate Variance Percentage
 Tolerance: 1%
 ```
 
-**Calculation:**
+**Izračunavanje:**
 ```
 Variance % = |Calculated - Invoice| / Invoice × 100
 
@@ -393,7 +393,7 @@ Example:
   Result: PASS (calculations match invoice)
 ```
 
-**Logic:**
+**Logika:**
 ```
 IF Variance ≤ 1%:
   Set Validation_Status = "PASS"
@@ -404,31 +404,31 @@ ELSE:
   Flag for manual verification
 ```
 
-**Guide Reference:** [Condition Cards Guide - Field Comparison](../and/condition-cards-complete-guide.md#field-comparison)
+**Referenca vodiča:** [Condition Cards Guide - Field Comparison](../and/condition-cards-complete-guide.md#field-comparison)
 
 ---
 
-### Step 8: Format Data for Export
+### Korak 8: Formatirajte podatke za izvoz
 
-**Standardize Formats:**
+**Standardizujte formate:**
 
-**Card:** ACTION_SET_FIELD_TO_TEXT
+**Kartica:** ACTION_SET_FIELD_TO_TEXT
 
-**Date Formatting:**
+**Formatiranje datuma:**
 ```
 Field: Invoice_Date_Formatted
 Value: FORMATDATE({{Invoice_Date}}, "YYYY-MM-DD")
 Example: 10/23/2025 → 2025-10-23
 ```
 
-**Number Formatting:**
+**Formatiranje brojeva:**
 ```
 Field: Amount_Formatted
 Value: FORMATNUMBER({{Grand_Total_EUR}}, 2, ",", ".")
 Example: 7601.13 → 7.601,13 (German format)
 ```
 
-**Text Formatting:**
+**Formatiranje teksta:**
 ```
 Field: Supplier_Name_Upper
 Value: UPPERCASE({{Supplier_Name}})
@@ -437,11 +437,11 @@ Example: "ABC Corporation" → "ABC CORPORATION"
 
 ---
 
-## Advanced Transformations
+## Napredne transformacije
 
-### Transformation 1: Multi-Level Tax Calculation
+### Transformacija 1: Višenivovsko izračunavanje poreza
 
-**Scenario:** Different tax rates per line item
+**Scenario:** Različite poreske stope po stavci
 
 ```
 Line 1: Product A (Tax Rate 19%)
@@ -456,7 +456,7 @@ Calculation:
   Total Tax = €950.00 + €70.00 + €0.00 = €1,020.00
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 For each line:
   1. Get product tax category
@@ -467,9 +467,9 @@ For each line:
 
 ---
 
-### Transformation 2: Discount Calculations
+### Transformacija 2: Izračunavanja popusta
 
-**Scenario:** Apply volume discount and early payment discount
+**Scenario:** Primenite popust na količinu i popust za rano plaćanje
 
 ```
 Original Subtotal: €10,000.00
@@ -488,7 +488,7 @@ Step 3: Calculate Tax (on discounted amount)
 Final Total = €8,820.00 + €1,675.80 = €10,495.80
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 1. Check order value for volume discount eligibility
 2. Calculate volume discount
@@ -502,9 +502,9 @@ Final Total = €8,820.00 + €1,675.80 = €10,495.80
 
 ---
 
-### Transformation 3: Unit of Measure Conversion
+### Transformacija 3: Konverzija merne jedinice
 
-**Scenario:** Convert invoice UOM to standard UOM
+**Scenario:** Konvertujte UOM fakture u standardni UOM
 
 ```
 Invoice shows:
@@ -525,7 +525,7 @@ Conversion:
   Verification: 164.042 feet × €3.05/foot ≈ €500.00 ✅
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 1. Identify invoice UOM
 2. Get conversion factor to standard UOM
@@ -537,9 +537,9 @@ Conversion:
 
 ---
 
-### Transformation 4: Date Calculations
+### Transformacija 4: Izračunavanja datuma
 
-**Scenario:** Calculate payment terms and due dates
+**Scenario:** Izračunajte uslove plaćanja i datume dospeća
 
 ```
 Invoice Date: 2025-10-23
@@ -558,7 +558,7 @@ Calculations:
     If Today = 2025-11-23: Days = -1 (overdue)
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 1. Extract Invoice_Date
 2. Extract Payment_Terms (e.g., "NET30", "NET60", "2/10 NET30")
@@ -571,9 +571,9 @@ Calculations:
 
 ---
 
-### Transformation 5: Text Parsing & Extraction
+### Transformacija 5: Parsiranje i izvlačenje teksta
 
-**Scenario:** Extract structured data from unstructured text
+**Scenario:** Izvucite strukturirane podatke iz nestrukturiranog teksta
 
 ```
 Original Field: "PO-2025-ABC-12345-REV2"
@@ -597,7 +597,7 @@ Method:
 
 ---
 
-## Complete Transformation Workflow Diagram
+## Kompletan dijagram toka rada transformacije
 
 ```
 INVOICE DATA EXTRACTED
@@ -676,9 +676,9 @@ INVOICE DATA EXTRACTED
 
 ---
 
-## Configuration Templates
+## Šabloni za konfiguraciju
 
-### Template 1: Standard Invoice Calculations
+### Šablon 1: Standardna izračunavanja fakture
 
 ```json
 {
@@ -717,7 +717,7 @@ INVOICE DATA EXTRACTED
 
 ---
 
-### Template 2: Currency Conversion Workflow
+### Šablon 2: Tok rada konverzije valute
 
 ```json
 {
@@ -752,11 +752,11 @@ INVOICE DATA EXTRACTED
 
 ---
 
-## Error Handling
+## Rukovanje greškama
 
-### Common Transformation Errors
+### Uobičajene greške transformacije
 
-**Error 1: Division by Zero**
+**Greška 1: Deljenje nulom**
 ```
 Problem: Unit_Price = Total / Quantity, but Quantity = 0
 
@@ -768,7 +768,7 @@ Solution:
     Calculate normally
 ```
 
-**Error 2: Invalid Number Format**
+**Greška 2: Nevažeći format broja**
 ```
 Problem: Field contains "€1,234.56" but need number 1234.56
 
@@ -780,7 +780,7 @@ Solution:
   5. Validate result
 ```
 
-**Error 3: Date Parse Failure**
+**Greška 3: Neuspeh parsiranja datuma**
 ```
 Problem: Date in unexpected format
 
@@ -791,7 +791,7 @@ Solution:
   4. Log original value
 ```
 
-**Error 4: Missing Conversion Factor**
+**Greška 4: Nedostaje faktor konverzije**
 ```
 Problem: Unknown UOM conversion
 
@@ -804,57 +804,57 @@ Solution:
 
 ---
 
-## Testing Checklist
+## Lista za proveru testiranja
 
-- [ ] All calculations produce correct results
-- [ ] Decimal precision maintained
-- [ ] Currency conversions accurate
-- [ ] Date calculations correct
-- [ ] Text transformations work
-- [ ] Null/empty values handled
-- [ ] Division by zero prevented
-- [ ] Number formats validated
-- [ ] Rounding rules applied correctly
-- [ ] All transformed fields populated
-- [ ] Validation catches errors
-- [ ] Export format correct
-
----
-
-## Related Patterns
-
-### Patterns That Work Well Together:
-
-- **[API Integration Pattern](api-integration-pattern.md)** - Fetch exchange rates, enrichment data
-- **[PO Matching Pattern](po-matching-pattern.md)** - Variance calculations
-- **[Decision Logic Pattern](decision-logic-pattern.md)** - Route based on calculated values
-- **[Task Management Pattern](task-management-pattern.md)** - Create tasks for validation failures
+- [ ] Sva izračunavanja daju ispravne rezultate
+- [ ] Decimalna preciznost održana
+- [ ] Konverzije valuta tačne
+- [ ] Izračunavanja datuma ispravna
+- [ ] Transformacije teksta funkcionišu
+- [ ] Null/prazne vrednosti obrađene
+- [ ] Deljenje nulom sprečeno
+- [ ] Formati brojeva validirani
+- [ ] Pravila zaokruživanja ispravno primenjena
+- [ ] Sva transformisana polja popunjena
+- [ ] Validacija hvata greške
+- [ ] Format za izvoz ispravan
 
 ---
 
-## Related Guides
+## Povezani obrasci
 
-### Prerequisites
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - All field operations
-- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Validation conditions
-- [Call API Guide](../then/action/call-api-guide.md) - External data fetch
+### Obrasci koji dobro funkcionišu zajedno:
 
-### Related Cards
+- **[API Integration Pattern](api-integration-pattern.md)** - Preuzmite kurseve razmene, podatke za obogaćivanje
+- **[PO Matching Pattern](po-matching-pattern.md)** - Izračunavanja odstupanja
+- **[Decision Logic Pattern](decision-logic-pattern.md)** - Rutirajte na osnovu izračunatih vrednosti
+- **[Task Management Pattern](task-management-pattern.md)** - Kreirajte zadatke za neuspehe validacije
+
+---
+
+## Povezani vodiči
+
+### Preduslovi
+- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Sve operacije nad poljima
+- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Uslovi validacije
+- [Call API Guide](../then/action/call-api-guide.md) - Preuzimanje eksternih podataka
+
+### Povezane kartice
 - **ACTION_CALCULATE_FIELD** - [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md#calculate-field)
 - **ACTION_SET_FIELD_TO_TEXT** - [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md#set-field)
 - **ACTION_COPY_FIELD_VALUE** - [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md#copy-field)
 - **CALL_API** - [Call API Guide](../then/action/call-api-guide.md)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Condition Cards Guide](../and/condition-cards-complete-guide.md)
 
-### Next Steps
-- Validate results: [Decision Logic Pattern](decision-logic-pattern.md)
-- Create tasks for errors: [Task Management Pattern](task-management-pattern.md)
-- Use in PO matching: [PO Matching Pattern](po-matching-pattern.md)
+### Sledeći koraci
+- Validirajte rezultate: [Decision Logic Pattern](decision-logic-pattern.md)
+- Kreirajte zadatke za greške: [Task Management Pattern](task-management-pattern.md)
+- Koristite u uparivanju PO: [PO Matching Pattern](po-matching-pattern.md)
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Medium
-**Estimated Time:** 30-45 minutes
-**Success Rate:** High
+**Verzija obrasca:** 1.0
+**Poslednje ažuriranje:** 23. oktobar 2025.
+**Težina:** Srednja
+**Procenjeno vreme:** 30-45 minuta
+**Stopa uspeha:** Visoka

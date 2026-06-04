@@ -1,76 +1,76 @@
 # API Integration Pattern
 
-**Pattern Type:** Integration
-**Complexity:** Medium
-**Estimated Setup:** 45-60 minutes
-**Common Use Cases:** External data fetching, pricing validation, master data lookup
+**Tip obrasca:** Integracija
+**Složenost:** Srednja
+**Procenjeno podešavanje:** 45-60 minuta
+**Uobičajeni slučajevi upotrebe:** Preuzimanje eksternih podataka, validacija cena, pretraga glavnih podataka
 
 ---
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** to open the card library and pick the cards this pattern uses — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` and `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
+Ovaj obrazac gradite u **Workflow Builder**-u (Workflow Dashboard → Workflow List → Add Workflow). Kliknite na **Add Card** da otvorite biblioteku kartica i izaberete kartice koje ovaj obrazac koristi — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` i `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — pick the API, condition and field cards used by this pattern from these categories.</p></figcaption></figure>
-
----
-
-## Pattern Overview
-
-This pattern demonstrates how to integrate DocBits with external APIs to fetch, validate, and store data from external systems. It's one of the most common workflow patterns for connecting DocBits to pricing systems, validation services, ERP systems, and other external data sources.
-
-**What This Pattern Does:**
-1. Calls an external API to fetch data
-2. Validates the API response
-3. Stores response data in document fields
-4. Makes decisions based on fetched data
-5. Routes documents accordingly
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteka Add Card u Workflow Builder-u, grupisana po kategoriji"><figcaption><p>Biblioteka <strong>Add Card</strong> — izaberite API, uslovne i kartice polja koje ovaj obrazac koristi iz ovih kategorija.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Pregled obrasca
 
-Use this pattern when you need to:
-- ✅ Fetch real-time pricing from external systems
-- ✅ Validate supplier information against master database
-- ✅ Look up product details from catalog systems
-- ✅ Get exchange rates from currency services
-- ✅ Verify addresses with geocoding services
-- ✅ Check inventory levels from warehouse systems
-- ✅ Validate tax rates from tax services
+Ovaj obrazac pokazuje kako da integrišete DocBits sa eksternim API-jima radi preuzimanja, validacije i čuvanja podataka iz eksternih sistema. To je jedan od najčešćih obrazaca toka rada za povezivanje DocBits-a sa sistemima za cene, servisima za validaciju, ERP sistemima i drugim eksternim izvorima podataka.
 
-**Don't use this pattern when:**
-- ❌ Data is already in DocBits master data (use master data lookup instead)
-- ❌ External system doesn't have an API (use DocOperator Script pattern instead)
-- ❌ Data doesn't change frequently (consider manual import)
+**Šta ovaj obrazac radi:**
+1. Poziva eksterni API radi preuzimanja podataka
+2. Validira API odgovor
+3. Čuva podatke odgovora u poljima dokumenta
+4. Donosi odluke na osnovu preuzetih podataka
+5. Rutira dokumente u skladu sa tim
 
 ---
 
-## Complete Workflow Example
+## Kada koristiti ovaj obrazac
 
-### Scenario: Validate Invoice Price Against Current Pricing API
+Koristite ovaj obrazac kada treba da:
+- ✅ Preuzmete cene u realnom vremenu iz eksternih sistema
+- ✅ Validirate informacije o dobavljaču u odnosu na glavnu bazu podataka
+- ✅ Pretražite detalje o proizvodu iz katalog sistema
+- ✅ Dobijete kurseve valuta iz servisa za valute
+- ✅ Verifikujete adrese pomoću servisa za geokodiranje
+- ✅ Proverite nivoe zaliha iz sistema skladišta
+- ✅ Validirate poreske stope iz poreskih servisa
 
-**Business Requirement:**
-- Supplier sends invoice
-- Invoice shows unit price of €52.00
-- We need to verify this matches current supplier pricing
-- If price varies more than 5%, escalate for review
-
-**Workflow Cards Used:**
-1. CALL_API - Fetch current price from supplier API
-2. CONDITION_HTTPS_REQUEST_STATUS - Check if API call succeeded
-3. ACTION_SET_FIELD_TO_TEXT - Store API price in document field
-4. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Compare invoice price vs API price
-5. ACTION_ASSIGN_TO_USER - Route based on comparison result
-6. tasks_create - Create review task if needed
+**Nemojte koristiti ovaj obrazac kada:**
+- ❌ Podaci su već u DocBits glavnim podacima (umesto toga koristite pretragu glavnih podataka)
+- ❌ Eksterni sistem nema API (umesto toga koristite DocOperator Script obrazac)
+- ❌ Podaci se ne menjaju često (razmotrite ručni uvoz)
 
 ---
 
-## Step-by-Step Implementation
+## Kompletan primer toka rada
 
-### Step 1: Call External API
+### Scenario: Validacija cene fakture u odnosu na API trenutnih cena
 
-**Card:** CALL_API or ACTION_CALL_EXTERNAL_API
+**Poslovni zahtev:**
+- Dobavljač šalje fakturu
+- Faktura prikazuje jediničnu cenu od €52,00
+- Treba da proverimo da li se ovo poklapa sa trenutnim cenama dobavljača
+- Ako cena varira više od 5%, eskalirati za pregled
 
-**Configuration:**
+**Korišćene kartice toka rada:**
+1. CALL_API - Preuzimanje trenutne cene iz API-ja dobavljača
+2. CONDITION_HTTPS_REQUEST_STATUS - Provera da li je API poziv uspeo
+3. ACTION_SET_FIELD_TO_TEXT - Čuvanje API cene u polju dokumenta
+4. CONDITION_COMPARE_TWO_DOCFIELD_VALUES - Poređenje cene fakture sa API cenom
+5. ACTION_ASSIGN_TO_USER - Rutiranje na osnovu rezultata poređenja
+6. tasks_create - Kreiranje zadatka pregleda ako je potrebno
+
+---
+
+## Implementacija korak po korak
+
+### Korak 1: Pozovite eksterni API
+
+**Kartica:** CALL_API ili ACTION_CALL_EXTERNAL_API
+
+**Konfiguracija:**
 ```json
 {
   "api_endpoint": "https://api.supplier-system.com/v1/pricing",
@@ -88,7 +88,7 @@ Use this pattern when you need to:
 }
 ```
 
-**Expected Response:**
+**Očekivani odgovor:**
 ```json
 {
   "success": true,
@@ -102,21 +102,21 @@ Use this pattern when you need to:
 }
 ```
 
-**Guide Reference:** [Call API Guide](../then/action/call-api-guide.md)
+**Referenca vodiča:** [Call API Guide](../then/action/call-api-guide.md)
 
 ---
 
-### Step 2: Validate API Response
+### Korak 2: Validirajte API odgovor
 
-**Card:** CONDITION_HTTPS_REQUEST_STATUS
+**Kartica:** CONDITION_HTTPS_REQUEST_STATUS
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Operator: IS EQUAL TO
 Status Code: 200
 ```
 
-**Logic:**
+**Logika:**
 ```
 IF API returns 200 (success):
   → Continue to store data
@@ -126,48 +126,48 @@ ELSE:
   → Create manual review task
 ```
 
-**Guide Reference:** [Condition Cards Guide - HTTP Status](../and/condition-cards-complete-guide.md#condition-https-request-status)
+**Referenca vodiča:** [Condition Cards Guide - HTTP Status](../and/condition-cards-complete-guide.md#condition-https-request-status)
 
 ---
 
-### Step 3: Store API Response in Document Fields
+### Korak 3: Sačuvajte API odgovor u poljima dokumenta
 
-**Card:** ACTION_SET_FIELD_TO_TEXT (or equivalent field setter)
+**Kartica:** ACTION_SET_FIELD_TO_TEXT (ili ekvivalentni podešivač polja)
 
-**Configuration:**
+**Konfiguracija:**
 
-**Field 1: Current_API_Price**
+**Polje 1: Current_API_Price**
 ```
 Field Name: Current_API_Price
 Field Value: {{API_RESPONSE:data.unit_price}}
 Field Type: Number
 ```
 
-**Field 2: API_Price_Valid_Until**
+**Polje 2: API_Price_Valid_Until**
 ```
 Field Name: API_Price_Valid_Until
 Field Value: {{API_RESPONSE:data.valid_until}}
 Field Type: Date
 ```
 
-**Field 3: API_Discount_Available**
+**Polje 3: API_Discount_Available**
 ```
 Field Name: API_Discount_Available
 Field Value: {{API_RESPONSE:data.discount_applicable}}
 Field Type: Boolean
 ```
 
-**Result:** Data from API is now stored in document fields for later use
+**Rezultat:** Podaci iz API-ja su sada sačuvani u poljima dokumenta za kasniju upotrebu
 
-**Guide Reference:** [Field Manipulation Guide - API Data Storage](../then/document-field/field-manipulation-guide.md#storing-api-data)
+**Referenca vodiča:** [Field Manipulation Guide - API Data Storage](../then/document-field/field-manipulation-guide.md#storing-api-data)
 
 ---
 
-### Step 4: Compare Invoice Price with API Price
+### Korak 4: Uporedite cenu fakture sa API cenom
 
-**Card:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Kartica:** CONDITION_COMPARE_TWO_DOCFIELD_VALUES
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field 1: Invoice_Unit_Price (from OCR extraction)
 Field 2: Current_API_Price (from API response)
@@ -175,7 +175,7 @@ Operator: Calculate variance percentage
 Tolerance: 5%
 ```
 
-**Calculation:**
+**Izračunavanje:**
 ```
 Variance % = |(Invoice_Price - API_Price)| / API_Price × 100
 
@@ -188,44 +188,44 @@ Example:
   Result: PASS
 ```
 
-**Guide Reference:** [Condition Cards Guide - Field Comparison](../and/condition-cards-complete-guide.md#field-comparison)
+**Referenca vodiča:** [Condition Cards Guide - Field Comparison](../and/condition-cards-complete-guide.md#field-comparison)
 
 ---
 
-### Step 5: Route Based on Validation Result
+### Korak 5: Rutirajte na osnovu rezultata validacije
 
-**Scenario A: Price Within Tolerance (Pass)**
+**Scenario A: Cena unutar tolerancije (Prolaz)**
 
-**Cards:**
+**Kartice:**
 - ACTION_SET_FIELD_TO_TEXT
-  - Set field "Price_Validation_Status" = "PASS"
-  - Set field "Price_Variance_Percent" = "4%"
+  - Postavite polje "Price_Validation_Status" = "PASS"
+  - Postavite polje "Price_Variance_Percent" = "4%"
 - ACTION_APPROVE_DOCUMENT
-  - Auto-approve document
+  - Automatski odobrite dokument
 
-**Scenario B: Price Outside Tolerance (Fail)**
+**Scenario B: Cena izvan tolerancije (Neuspeh)**
 
-**Cards:**
+**Kartice:**
 - ACTION_SET_FIELD_TO_TEXT
-  - Set field "Price_Validation_Status" = "FAIL"
-  - Set field "Price_Variance_Percent" = "12%" (example)
+  - Postavite polje "Price_Validation_Status" = "FAIL"
+  - Postavite polje "Price_Variance_Percent" = "12%" (primer)
 - tasks_create
-  - Task Title: "Review Price Variance - {{DOCUMENT_NUMBER}}"
-  - Task Description: "Invoice price (€{{Invoice_Unit_Price}}) exceeds API price (€{{Current_API_Price}}) by {{Price_Variance_Percent}}"
-  - Priority: High
+  - Naslov zadatka: "Review Price Variance - {{DOCUMENT_NUMBER}}"
+  - Opis zadatka: "Invoice price (€{{Invoice_Unit_Price}}) exceeds API price (€{{Current_API_Price}}) by {{Price_Variance_Percent}}"
+  - Prioritet: Visok
 - ACTION_ASSIGN_TO_USER
-  - Assign to: Procurement Manager
+  - Dodelite: Menadžeru nabavke
 - ACTION_SEND_EMAIL_TO_GROUPS
-  - Send notification to Procurement Team
+  - Pošaljite obaveštenje timu za nabavku
 
-**Guide References:**
+**Reference vodiča:**
 - [Assignment Guide](../then/assignee/assignment-user-guide.md)
 - [Task Assignment Guide](../then/task/task-assignment-guide.md)
 - [Send Email Guide](../then/action/send-email-groups-guide.md)
 
 ---
 
-## Complete Workflow Diagram
+## Kompletan dijagram toka rada
 
 ```
 DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
@@ -280,9 +280,9 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 
 ---
 
-## Configuration Templates
+## Šabloni za konfiguraciju
 
-### Template 1: Simple GET Request (Lookup)
+### Šablon 1: Jednostavan GET zahtev (Pretraga)
 
 ```json
 {
@@ -298,11 +298,11 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 }
 ```
 
-**Use:** Simple data lookup by ID
+**Upotreba:** Jednostavna pretraga podataka po ID-u
 
 ---
 
-### Template 2: POST Request with Body (Validation)
+### Šablon 2: POST zahtev sa telom (Validacija)
 
 ```json
 {
@@ -322,11 +322,11 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 }
 ```
 
-**Use:** Send document data for validation
+**Upotreba:** Slanje podataka dokumenta na validaciju
 
 ---
 
-### Template 3: Complex Request with Nested Data
+### Šablon 3: Složen zahtev sa ugnežđenim podacima
 
 ```json
 {
@@ -358,21 +358,21 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
 }
 ```
 
-**Use:** Complex document processing with table data
+**Upotreba:** Složena obrada dokumenta sa podacima tabele
 
 ---
 
-## Error Handling
+## Rukovanje greškama
 
-### Common Errors and Solutions
+### Uobičajene greške i rešenja
 
-#### Error 1: Connection Timeout
+#### Greška 1: Isticanje vremena veze
 
-**Symptoms:**
-- API doesn't respond
-- Workflow stuck waiting
+**Simptomi:**
+- API ne odgovara
+- Tok rada zaglavljen u čekanju
 
-**Solution:**
+**Rešenje:**
 ```
 1. Check API endpoint URL (typo?)
 2. Verify network connectivity
@@ -386,13 +386,13 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Use fallback value (if available)
 ```
 
-#### Error 2: 401 Unauthorized
+#### Greška 2: 401 Unauthorized
 
-**Symptoms:**
-- API returns 401 status
-- Authentication failed
+**Simptomi:**
+- API vraća status 401
+- Autentifikacija neuspešna
 
-**Solution:**
+**Rešenje:**
 ```
 1. Verify API key is correct
 2. Check if API key expired
@@ -406,13 +406,13 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Stop workflow execution
 ```
 
-#### Error 3: Invalid Response Format
+#### Greška 3: Nevažeći format odgovora
 
-**Symptoms:**
-- Response received but can't parse
-- Missing expected fields
+**Simptomi:**
+- Odgovor primljen ali se ne može parsirati
+- Nedostaju očekivana polja
 
-**Solution:**
+**Rešenje:**
 ```
 1. Verify API documentation
 2. Check response structure matches expectations
@@ -424,15 +424,15 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Log response for debugging
 ```
 
-**Guide Reference:** [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
+**Referenca vodiča:** [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
 
 ---
 
-## Advanced Variations
+## Napredne varijacije
 
-### Variation 1: Multi-API Chaining
+### Varijacija 1: Lančano povezivanje više API-ja
 
-**Scenario:** Need data from multiple APIs
+**Scenario:** Treba vam podaci iz više API-ja
 
 ```
 Step 1: Call Supplier API → Get Supplier Details
@@ -443,9 +443,9 @@ Step 4: Validate & Store all data
 
 ---
 
-### Variation 2: Conditional API Calls
+### Varijacija 2: Uslovni API pozivi
 
-**Scenario:** Only call API under certain conditions
+**Scenario:** Pozivajte API samo pod određenim uslovima
 
 ```
 IF DOCUMENT_TYPE = "Invoice" AND AMOUNT > 10000:
@@ -457,9 +457,9 @@ ELSE:
 
 ---
 
-### Variation 3: API Response Caching
+### Varijacija 3: Keširanje API odgovora
 
-**Scenario:** Reduce API calls by caching responses
+**Scenario:** Smanjite broj API poziva keširanjem odgovora
 
 ```
 1. Check if "API_Last_Called" date is today
@@ -473,139 +473,139 @@ ELSE:
 
 ---
 
-## Performance Considerations
+## Razmatranja performansi
 
-### Best Practices
+### Najbolje prakse
 
-✅ **Do:**
-- Cache API responses when possible
-- Use timeout settings (30-60 seconds)
-- Implement retry logic for temporary failures
-- Log API calls for debugging
-- Monitor API usage/costs
-- Test with sample documents first
+✅ **Radite:**
+- Keširajte API odgovore kada je moguće
+- Koristite podešavanja isteka vremena (30-60 sekundi)
+- Implementirajte logiku ponovnog pokušaja za privremene greške
+- Beležite API pozive za otklanjanje grešaka
+- Pratite upotrebu/troškove API-ja
+- Prvo testirajte sa uzorcima dokumenata
 
-❌ **Don't:**
-- Call APIs synchronously for every document (consider batch processing)
-- Ignore response errors
-- Hardcode credentials in workflow
-- Make unnecessary API calls
-- Forget to handle timeouts
-
----
-
-## Testing Checklist
-
-Before deploying this pattern:
-
-- [ ] Test API call with valid data
-- [ ] Test API call with invalid data
-- [ ] Test timeout scenario (what happens if API is slow?)
-- [ ] Test authentication failure
-- [ ] Test invalid response format
-- [ ] Test field storage (data stored correctly?)
-- [ ] Test comparison logic (correct calculation?)
-- [ ] Test routing (documents go to right place?)
-- [ ] Test error handling (errors handled gracefully?)
-- [ ] Test with high volume (performance acceptable?)
+❌ **Ne radite:**
+- Ne pozivajte API-je sinhrono za svaki dokument (razmotrite paketnu obradu)
+- Ne ignorišite greške u odgovoru
+- Ne kodirajte čvrsto akreditive u tok rada
+- Ne pravite nepotrebne API pozive
+- Ne zaboravljajte da rukujete istekom vremena
 
 ---
 
-## Real-World Examples
+## Lista za proveru testiranja
 
-### Example 1: Currency Exchange Rate Lookup
+Pre postavljanja ovog obrasca:
+
+- [ ] Testirajte API poziv sa važećim podacima
+- [ ] Testirajte API poziv sa nevažećim podacima
+- [ ] Testirajte scenario isteka vremena (šta se dešava ako je API spor?)
+- [ ] Testirajte neuspeh autentifikacije
+- [ ] Testirajte nevažeći format odgovora
+- [ ] Testirajte čuvanje polja (da li su podaci ispravno sačuvani?)
+- [ ] Testirajte logiku poređenja (ispravno izračunavanje?)
+- [ ] Testirajte rutiranje (da li dokumenti idu na pravo mesto?)
+- [ ] Testirajte rukovanje greškama (da li se greškama elegantno rukuje?)
+- [ ] Testirajte sa velikim obimom (da li su performanse prihvatljive?)
+
+---
+
+## Primeri iz stvarnog sveta
+
+### Primer 1: Pretraga kursa razmene valuta
 
 **API:** https://api.exchangerate-api.com/v4/latest/USD
 
-**Workflow:**
-1. Extract invoice currency: "GBP"
-2. Call exchange rate API
-3. Get GBP→EUR exchange rate
-4. Calculate EUR equivalent
-5. Store in "Amount_EUR" field
-6. Continue processing with EUR amount
+**Tok rada:**
+1. Izvucite valutu fakture: "GBP"
+2. Pozovite API za kurs razmene
+3. Dobijte kurs razmene GBP→EUR
+4. Izračunajte EUR ekvivalent
+5. Sačuvajte u polju "Amount_EUR"
+6. Nastavite obradu sa EUR iznosom
 
 ---
 
-### Example 2: Supplier Credit Check
+### Primer 2: Provera kreditne sposobnosti dobavljača
 
-**API:** Internal credit check service
+**API:** Interni servis za proveru kreditne sposobnosti
 
-**Workflow:**
-1. Extract supplier code
-2. Call credit check API
-3. Get credit status: "APPROVED" or "BLOCKED"
+**Tok rada:**
+1. Izvucite kod dobavljača
+2. Pozovite API za proveru kreditne sposobnosti
+3. Dobijte kreditni status: "APPROVED" ili "BLOCKED"
 4. IF BLOCKED:
-   - Stop processing
-   - Create urgent task
-   - Notify finance team
+   - Zaustavite obradu
+   - Kreirajte hitan zadatak
+   - Obavestite finansijski tim
 5. IF APPROVED:
-   - Continue normal workflow
+   - Nastavite normalan tok rada
 
 ---
 
-### Example 3: Product Master Data Enrichment
+### Primer 3: Obogaćivanje glavnih podataka o proizvodu
 
-**API:** Product catalog service
+**API:** Servis kataloga proizvoda
 
-**Workflow:**
-1. Extract product code from invoice
-2. Call product API
-3. Get: Product name, category, GL account
-4. Store in document fields
-5. Use for auto-accounting
-
----
-
-## Related Patterns
-
-### This Pattern Works Well With:
-
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transform API response data
-- **[Decision Logic Pattern](decision-logic-pattern.md)** - Route based on API data
-- **[Task Management Pattern](task-management-pattern.md)** - Create tasks for API errors
-- **[PO Matching Pattern](po-matching-pattern.md)** - Combine API pricing with PO validation
+**Tok rada:**
+1. Izvucite kod proizvoda iz fakture
+2. Pozovite API za proizvod
+3. Dobijte: Naziv proizvoda, kategoriju, GL nalog
+4. Sačuvajte u poljima dokumenta
+5. Koristite za automatsko knjiženje
 
 ---
 
-## Related Guides
+## Povezani obrasci
 
-### Prerequisites
-- [Call API Guide](../then/action/call-api-guide.md) - API card documentation
-- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Condition logic
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Field operations
+### Ovaj obrazac dobro funkcioniše sa:
 
-### Related Cards
+- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transformišite podatke API odgovora
+- **[Decision Logic Pattern](decision-logic-pattern.md)** - Rutirajte na osnovu API podataka
+- **[Task Management Pattern](task-management-pattern.md)** - Kreirajte zadatke za API greške
+- **[PO Matching Pattern](po-matching-pattern.md)** - Kombinujte API cene sa PO validacijom
+
+---
+
+## Povezani vodiči
+
+### Preduslovi
+- [Call API Guide](../then/action/call-api-guide.md) - Dokumentacija API kartice
+- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Uslovna logika
+- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Operacije nad poljima
+
+### Povezane kartice
 - **CALL_API** - [Call API Guide](../then/action/call-api-guide.md)
 - **ACTION_HTTPS_REQUEST** - [HTTPS Request Guide](../then/action/https-request-guide.md)
 - **CONDITION_HTTPS_REQUEST_STATUS** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-https-request-status)
 - **ACTION_SET_FIELD_TO_TEXT** - [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#field-comparison)
 
-### Next Steps
-- Implement error handling: [Error Handling Pattern](error-handling-pattern.md)
-- Add task creation: [Task Management Pattern](task-management-pattern.md)
-- Transform data: [Data Transformation Pattern](data-transformation-pattern.md)
+### Sledeći koraci
+- Implementirajte rukovanje greškama: [Error Handling Pattern](error-handling-pattern.md)
+- Dodajte kreiranje zadataka: [Task Management Pattern](task-management-pattern.md)
+- Transformišite podatke: [Data Transformation Pattern](data-transformation-pattern.md)
 
 ---
 
-## Support & Resources
+## Podrška i resursi
 
-**Need Help?**
-- Review [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
-- Check [API Response Codes](../then/action/call-api-guide.md#response-scenarios)
-- Test API with Postman first
-- Contact API provider support
+**Treba vam pomoć?**
+- Pregledajte [Call API Troubleshooting](../then/action/call-api-guide.md#troubleshooting)
+- Proverite [API Response Codes](../then/action/call-api-guide.md#response-scenarios)
+- Prvo testirajte API sa Postman-om
+- Kontaktirajte podršku pružaoca API-ja
 
-**Feedback:**
-- Report pattern issues to: docs@docbits.com
-- Suggest improvements
-- Share your use cases
+**Povratne informacije:**
+- Prijavite probleme sa obrascem na: docs@docbits.com
+- Predložite poboljšanja
+- Podelite svoje slučajeve upotrebe
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Medium
-**Estimated Time:** 45-60 minutes
-**Success Rate:** High (when API is stable)
+**Verzija obrasca:** 1.0
+**Poslednje ažuriranje:** 23. oktobar 2025.
+**Težina:** Srednja
+**Procenjeno vreme:** 45-60 minuta
+**Stopa uspeha:** Visoka (kada je API stabilan)

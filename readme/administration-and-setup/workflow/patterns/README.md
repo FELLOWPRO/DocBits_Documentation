@@ -1,227 +1,227 @@
-# Workflow Pattern Guides
+# Vodiči za obrasce toka rada
 
-**Version:** 1.0
-**Last Updated:** October 23, 2025
-
----
-
-## Overview
-
-This directory contains comprehensive workflow pattern guides that demonstrate how to combine multiple workflow cards to solve common business scenarios. Each pattern provides step-by-step implementation instructions, complete examples, and best practices.
-
-**What are Workflow Patterns?**
-
-Workflow patterns are proven, reusable solutions to common documentation processing challenges. Instead of starting from scratch, you can use these patterns as templates and adapt them to your specific needs.
+**Verzija:** 1.0
+**Poslednje ažuriranje:** 23. oktobar 2025.
 
 ---
 
-## The Workflow Builder at a glance
+## Pregled
 
-Every pattern on this page is assembled in the **Workflow Builder**. You reach it from **Workflow Dashboard → Workflow List → Add Workflow** (or by opening an existing workflow). The dashboard gives you the run history and success/fail rates for all of your workflows:
+Ovaj direktorijum sadrži sveobuhvatne vodiče za obrasce toka rada koji pokazuju kako kombinovati više kartica toka rada za rešavanje uobičajenih poslovnih scenarija. Svaki obrazac pruža uputstva za implementaciju korak po korak, kompletne primere i najbolje prakse.
 
-<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard showing run totals, success and fail rates, the workflow-runs chart and recent activity"><figcaption><p>The Workflow Dashboard — run totals, success/fail rates and recent activity for every workflow.</p></figcaption></figure>
+**Šta su obrasci toka rada?**
 
-The **Workflow List** tab lists every workflow with its type, execution order and trigger. Use **Add Workflow** to create a new one, or click a workflow to open it in the builder:
-
-<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Workflow List tab listing workflows with type, execution order and trigger"><figcaption><p>The Workflow List — each row is a workflow you can open, toggle on/off or edit.</p></figcaption></figure>
-
-A workflow is built from three groups of cards — **When** (the trigger), **And** (additional conditions) and **Then** (the actions to run). The example below triggers on invoices belonging to a sub-organization and assigns them to a user:
-
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder canvas with When, And and Then cards"><figcaption><p>The Workflow Builder canvas. Each pattern below is just a different combination of When / And / Then cards.</p></figcaption></figure>
-
-Click **Add Card** in any group to open the card library. Cards are organised by category (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) so you can find the building block each pattern calls for:
-
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card dialog showing the card categories and available cards"><figcaption><p>The <strong>Add Card</strong> library — every card referenced in the patterns below is picked from here.</p></figcaption></figure>
+Obrasci toka rada su dokazana rešenja za ponovnu upotrebu za uobičajene izazove obrade dokumentacije. Umesto da počinjete od nule, možete koristiti ove obrasce kao šablone i prilagoditi ih svojim specifičnim potrebama.
 
 ---
 
-## Available Patterns
+## Workflow Builder na prvi pogled
+
+Svaki obrazac na ovoj stranici sastavlja se u **Workflow Builder**-u. Do njega dolazite preko **Workflow Dashboard → Workflow List → Add Workflow** (ili otvaranjem postojećeg toka rada). Kontrolna tabla vam daje istoriju pokretanja i stope uspeha/neuspeha za sve vaše tokove rada:
+
+<figure><img src="../../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard prikazuje ukupne brojeve pokretanja, stope uspeha i neuspeha, grafikon pokretanja toka rada i nedavnu aktivnost"><figcaption><p>Workflow Dashboard — ukupni brojevi pokretanja, stope uspeha/neuspeha i nedavna aktivnost za svaki tok rada.</p></figcaption></figure>
+
+Kartica **Workflow List** prikazuje svaki tok rada sa njegovim tipom, redosledom izvršavanja i okidačem. Koristite **Add Workflow** da kreirate novi, ili kliknite na tok rada da ga otvorite u graditelju:
+
+<figure><img src="../../../.gitbook/assets/workflow_list.png" alt="Kartica Workflow List koja navodi tokove rada sa tipom, redosledom izvršavanja i okidačem"><figcaption><p>Workflow List — svaki red je tok rada koji možete otvoriti, uključiti/isključiti ili urediti.</p></figcaption></figure>
+
+Tok rada se gradi od tri grupe kartica — **When** (okidač), **And** (dodatni uslovi) i **Then** (akcije koje treba pokrenuti). Primer ispod se okida na fakturama koje pripadaju pod-organizaciji i dodeljuje ih korisniku:
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder platno sa When, And i Then karticama"><figcaption><p>Workflow Builder platno. Svaki obrazac ispod je samo drugačija kombinacija When / And / Then kartica.</p></figcaption></figure>
+
+Kliknite na **Add Card** u bilo kojoj grupi da otvorite biblioteku kartica. Kartice su organizovane po kategorijama (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) tako da možete pronaći gradivni blok koji svaki obrazac zahteva:
+
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Dijalog Add Card koji prikazuje kategorije kartica i dostupne kartice"><figcaption><p>Biblioteka <strong>Add Card</strong> — svaka kartica navedena u obrascima ispod bira se odavde.</p></figcaption></figure>
+
+---
+
+## Dostupni obrasci
 
 ### 1. [API Integration Pattern](api-integration-pattern.md)
 
-**Complexity:** Medium | **Setup Time:** 45-60 minutes
+**Složenost:** Srednja | **Vreme podešavanja:** 45-60 minuta
 
-Learn how to integrate DocBits with external APIs to fetch, validate, and store data from external systems.
+Naučite kako da integrišete DocBits sa eksternim API-jima radi preuzimanja, validacije i čuvanja podataka iz eksternih sistema.
 
-**Use Cases:**
-- Fetch real-time pricing from external systems
-- Validate supplier information against master databases
-- Look up product details from catalog systems
-- Get exchange rates from currency services
-- Verify addresses with geocoding services
+**Slučajevi upotrebe:**
+- Preuzimanje cena u realnom vremenu iz eksternih sistema
+- Validacija informacija o dobavljaču u odnosu na glavne baze podataka
+- Pretraga detalja o proizvodu iz katalog sistema
+- Dobijanje kursa valuta iz servisa za valute
+- Verifikacija adresa pomoću servisa za geokodiranje
 
-**Cards Used:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Korišćene kartice:** CALL_API, CONDITION_HTTPS_REQUEST_STATUS, ACTION_SET_FIELD_TO_TEXT, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
 
-**[View Full Pattern →](api-integration-pattern.md)**
+**[Pogledajte ceo obrazac →](api-integration-pattern.md)**
 
 ---
 
 ### 2. [Task Management Pattern](task-management-pattern.md)
 
-**Complexity:** Low-Medium | **Setup Time:** 30-45 minutes
+**Složenost:** Niska-srednja | **Vreme podešavanja:** 30-45 minuta
 
-Master the art of creating, assigning, tracking, and managing tasks within DocBits workflows for approval and review processes.
+Savladajte veštinu kreiranja, dodeljivanja, praćenja i upravljanja zadacima u okviru DocBits tokova rada za procese odobravanja i pregleda.
 
-**Use Cases:**
-- Create approval workflows
-- Assign review tasks to users
-- Handle exceptions requiring human intervention
-- Escalate issues to managers
-- Create multi-level approval chains
-- Track task completion and deadlines
+**Slučajevi upotrebe:**
+- Kreiranje tokova rada za odobravanje
+- Dodeljivanje zadataka pregleda korisnicima
+- Rukovanje izuzecima koji zahtevaju ljudsku intervenciju
+- Eskalacija problema menadžerima
+- Kreiranje višenivovskih lanaca odobravanja
+- Praćenje završetka zadataka i rokova
 
-**Cards Used:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
+**Korišćene kartice:** tasks_create, ACTION_ASSIGN_TO_USER, ACTION_SEND_EMAIL_TO_GROUPS, CONDITION_TASK_STATUS
 
-**[View Full Pattern →](task-management-pattern.md)**
+**[Pogledajte ceo obrazac →](task-management-pattern.md)**
 
 ---
 
 ### 3. [PO Matching Pattern](po-matching-pattern.md)
 
-**Complexity:** Medium-High | **Setup Time:** 60-90 minutes
+**Složenost:** Srednja-visoka | **Vreme podešavanja:** 60-90 minuta
 
-Implement comprehensive Purchase Order matching workflows to validate invoices against POs with tolerance-based routing.
+Implementirajte sveobuhvatne tokove rada za uparivanje narudžbenica radi validacije faktura u odnosu na narudžbenice sa rutiranjem zasnovanim na toleranciji.
 
-**Use Cases:**
-- Validate invoices against purchase orders
-- Detect pricing errors before payment
-- Identify quantity discrepancies
-- Enforce procurement controls
-- Prevent duplicate payments
-- Automate three-way matching
+**Slučajevi upotrebe:**
+- Validacija faktura u odnosu na narudžbenice
+- Otkrivanje grešaka u cenama pre plaćanja
+- Identifikacija neslaganja u količini
+- Sprovođenje kontrola nabavke
+- Sprečavanje duplih plaćanja
+- Automatizacija trostrukog uparivanja
 
-**Cards Used:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
+**Korišćene kartice:** PURCHASE_ORDER_FULL_MATCH, CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DOC_TO_PO_QUANTITY, CONDITION_DOC_TO_PO_TAX_LINES
 
-**[View Full Pattern →](po-matching-pattern.md)**
+**[Pogledajte ceo obrazac →](po-matching-pattern.md)**
 
 ---
 
 ### 4. [Decision Logic Pattern](decision-logic-pattern.md)
 
-**Complexity:** Medium | **Setup Time:** 30-45 minutes
+**Složenost:** Srednja | **Vreme podešavanja:** 30-45 minuta
 
-Implement complex decision trees and conditional routing logic to process documents through different paths based on business rules.
+Implementirajte složena stabla odlučivanja i logiku uslovnog rutiranja za obradu dokumenata kroz različite putanje na osnovu poslovnih pravila.
 
-**Use Cases:**
-- Route documents by amount thresholds
-- Apply different rules for different document types
-- Implement multi-level approval logic
-- Handle complex business policies
-- Create dynamic routing based on multiple criteria
-- Implement approval matrices
+**Slučajevi upotrebe:**
+- Rutiranje dokumenata po pragovima iznosa
+- Primena različitih pravila za različite tipove dokumenata
+- Implementacija logike višenivovskog odobravanja
+- Rukovanje složenim poslovnim politikama
+- Kreiranje dinamičkog rutiranja na osnovu više kriterijuma
+- Implementacija matrica odobravanja
 
-**Cards Used:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
+**Korišćene kartice:** CONDITION_DOC_FIELD_AMOUNT, CONDITION_DOC_TYPE_IS_ISNOT, CONDITION_SUPPLIER_STATUS_IS_ISNOT, ACTION_ASSIGN_TO_USER
 
-**[View Full Pattern →](decision-logic-pattern.md)**
+**[Pogledajte ceo obrazac →](decision-logic-pattern.md)**
 
 ---
 
 ### 5. [Data Transformation Pattern](data-transformation-pattern.md)
 
-**Complexity:** Medium | **Setup Time:** 30-45 minutes
+**Složenost:** Srednja | **Vreme podešavanja:** 30-45 minuta
 
-Transform, calculate, format, and enrich document data to prepare for export, perform calculations, and standardize formats.
+Transformišite, izračunavajte, formatirajte i obogaćujte podatke dokumenta da biste ih pripremili za izvoz, izvršili izračunavanja i standardizovali formate.
 
-**Use Cases:**
-- Calculate totals, subtotals, taxes
-- Convert currencies or units
-- Format dates, numbers, text
-- Derive values from existing fields
-- Enrich data from external sources
-- Standardize data formats
-- Validate calculations
+**Slučajevi upotrebe:**
+- Izračunavanje ukupnih iznosa, međuzbirova, poreza
+- Konverzija valuta ili jedinica
+- Formatiranje datuma, brojeva, teksta
+- Izvođenje vrednosti iz postojećih polja
+- Obogaćivanje podataka iz eksternih izvora
+- Standardizacija formata podataka
+- Validacija izračunavanja
 
-**Cards Used:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
+**Korišćene kartice:** ACTION_CALCULATE_FIELD, ACTION_SET_FIELD_TO_TEXT, ACTION_COPY_FIELD_VALUE, CALL_API, CONDITION_COMPARE_TWO_DOCFIELD_VALUES
 
-**[View Full Pattern →](data-transformation-pattern.md)**
+**[Pogledajte ceo obrazac →](data-transformation-pattern.md)**
 
 ---
 
-## Pattern Selection Guide
+## Vodič za izbor obrasca
 
-### By Complexity
+### Po složenosti
 
-| Complexity | Patterns | Best For |
+| Složenost | Obrasci | Najbolje za |
 |------------|----------|----------|
-| **Low-Medium** | [Task Management](task-management-pattern.md) | Beginners, simple workflows |
-| **Medium** | [API Integration](api-integration-pattern.md)<br>[Decision Logic](decision-logic-pattern.md)<br>[Data Transformation](data-transformation-pattern.md) | Intermediate users, standard workflows |
-| **Medium-High** | [PO Matching](po-matching-pattern.md) | Advanced users, complex validation |
+| **Niska-srednja** | [Task Management](task-management-pattern.md) | Početnici, jednostavni tokovi rada |
+| **Srednja** | [API Integration](api-integration-pattern.md)<br>[Decision Logic](decision-logic-pattern.md)<br>[Data Transformation](data-transformation-pattern.md) | Korisnici srednjeg nivoa, standardni tokovi rada |
+| **Srednja-visoka** | [PO Matching](po-matching-pattern.md) | Napredni korisnici, složena validacija |
 
 ---
 
-### By Use Case
+### Po slučaju upotrebe
 
-| I Need To... | Use This Pattern |
+| Treba mi da... | Koristite ovaj obrazac |
 |--------------|------------------|
-| Integrate with external systems | [API Integration Pattern](api-integration-pattern.md) |
-| Create approval workflows | [Task Management Pattern](task-management-pattern.md) |
-| Validate against purchase orders | [PO Matching Pattern](po-matching-pattern.md) |
-| Route based on conditions | [Decision Logic Pattern](decision-logic-pattern.md) |
-| Calculate and transform data | [Data Transformation Pattern](data-transformation-pattern.md) |
+| Integrišem sa eksternim sistemima | [API Integration Pattern](api-integration-pattern.md) |
+| Kreiram tokove rada za odobravanje | [Task Management Pattern](task-management-pattern.md) |
+| Validiram u odnosu na narudžbenice | [PO Matching Pattern](po-matching-pattern.md) |
+| Rutiram na osnovu uslova | [Decision Logic Pattern](decision-logic-pattern.md) |
+| Izračunavam i transformišem podatke | [Data Transformation Pattern](data-transformation-pattern.md) |
 
 ---
 
-### By Industry/Department
+### Po industriji/odeljenju
 
-| Industry/Department | Recommended Patterns |
+| Industrija/odeljenje | Preporučeni obrasci |
 |---------------------|---------------------|
-| **Finance/Accounting** | [PO Matching](po-matching-pattern.md), [Task Management](task-management-pattern.md), [Data Transformation](data-transformation-pattern.md) |
-| **Procurement** | [PO Matching](po-matching-pattern.md), [Decision Logic](decision-logic-pattern.md), [API Integration](api-integration-pattern.md) |
-| **Operations** | [Task Management](task-management-pattern.md), [Decision Logic](decision-logic-pattern.md) |
-| **IT/Integration** | [API Integration](api-integration-pattern.md), [Data Transformation](data-transformation-pattern.md) |
-| **All Departments** | [Decision Logic](decision-logic-pattern.md), [Task Management](task-management-pattern.md) |
+| **Finansije/računovodstvo** | [PO Matching](po-matching-pattern.md), [Task Management](task-management-pattern.md), [Data Transformation](data-transformation-pattern.md) |
+| **Nabavka** | [PO Matching](po-matching-pattern.md), [Decision Logic](decision-logic-pattern.md), [API Integration](api-integration-pattern.md) |
+| **Operacije** | [Task Management](task-management-pattern.md), [Decision Logic](decision-logic-pattern.md) |
+| **IT/Integracija** | [API Integration](api-integration-pattern.md), [Data Transformation](data-transformation-pattern.md) |
+| **Sva odeljenja** | [Decision Logic](decision-logic-pattern.md), [Task Management](task-management-pattern.md) |
 
 ---
 
-## How to Use These Patterns
+## Kako koristiti ove obrasce
 
-### Step 1: Choose a Pattern
+### Korak 1: Izaberite obrazac
 
-1. Review the pattern descriptions above
-2. Identify which pattern matches your use case
-3. Check the complexity and estimated setup time
-4. Review the "When to Use" section in the pattern guide
+1. Pregledajte opise obrazaca iznad
+2. Identifikujte koji obrazac odgovara vašem slučaju upotrebe
+3. Proverite složenost i procenjeno vreme podešavanja
+4. Pregledajte odeljak „Kada koristiti" u vodiču za obrazac
 
-### Step 2: Review Prerequisites
+### Korak 2: Pregledajte preduslove
 
-Each pattern guide lists:
-- Required knowledge
-- Related guides to read first
-- Cards that will be used
-- Configuration requirements
+Svaki vodič za obrazac navodi:
+- Potrebno znanje
+- Povezane vodiče koje treba prvo pročitati
+- Kartice koje će se koristiti
+- Zahteve za konfiguraciju
 
-### Step 3: Follow Step-by-Step Instructions
+### Korak 3: Pratite uputstva korak po korak
 
-Each pattern provides:
-- Complete workflow example
-- Step-by-step implementation guide
-- Configuration templates
-- Real-world examples
-- Troubleshooting tips
+Svaki obrazac pruža:
+- Kompletan primer toka rada
+- Vodič za implementaciju korak po korak
+- Šablone za konfiguraciju
+- Primere iz stvarnog sveta
+- Savete za rešavanje problema
 
-### Step 4: Customize to Your Needs
+### Korak 4: Prilagodite svojim potrebama
 
-- Adapt the example to your business rules
-- Adjust thresholds and tolerances
-- Modify routing logic
-- Add/remove steps as needed
-- Test thoroughly before production use
+- Prilagodite primer svojim poslovnim pravilima
+- Podesite pragove i tolerancije
+- Izmenite logiku rutiranja
+- Dodajte/uklonite korake po potrebi
+- Temeljno testirajte pre upotrebe u produkciji
 
-### Step 5: Monitor and Optimize
+### Korak 5: Pratite i optimizujte
 
-- Track workflow performance
-- Monitor success rates
-- Gather user feedback
-- Refine configuration
-- Document customizations
+- Pratite performanse toka rada
+- Pratite stope uspeha
+- Prikupljajte povratne informacije korisnika
+- Doterujte konfiguraciju
+- Dokumentujte prilagođavanja
 
 ---
 
-## Pattern Combinations
+## Kombinacije obrazaca
 
-Many real-world scenarios require combining multiple patterns:
+Mnogi scenariji iz stvarnog sveta zahtevaju kombinovanje više obrazaca:
 
-### Example 1: Complete Invoice Processing
+### Primer 1: Kompletna obrada faktura
 
 ```
 1. API Integration Pattern → Fetch current pricing
@@ -231,7 +231,7 @@ Many real-world scenarios require combining multiple patterns:
 5. Task Management Pattern → Create approval tasks
 ```
 
-### Example 2: High-Value Invoice Approval
+### Primer 2: Odobravanje faktura velike vrednosti
 
 ```
 1. Data Transformation Pattern → Calculate amounts
@@ -240,7 +240,7 @@ Many real-world scenarios require combining multiple patterns:
 4. API Integration Pattern → Notify external systems
 ```
 
-### Example 3: Exception Handling
+### Primer 3: Rukovanje izuzecima
 
 ```
 1. PO Matching Pattern → Detect variances
@@ -251,128 +251,128 @@ Many real-world scenarios require combining multiple patterns:
 
 ---
 
-## Pattern Templates
+## Šabloni obrazaca
 
-Each pattern includes these standardized sections:
+Svaki obrazac uključuje ove standardizovane odeljke:
 
-1. **Overview** - What the pattern does
-2. **When to Use** - Appropriate use cases
-3. **Complete Example** - Real-world scenario
-4. **Step-by-Step** - Implementation instructions
-5. **Configuration** - Card setup templates
-6. **Workflow Diagram** - Visual representation
-7. **Advanced Variations** - Alternative implementations
-8. **Error Handling** - Common issues and solutions
-9. **Testing Checklist** - Validation steps
-10. **Related Patterns** - Complementary patterns
-11. **Related Guides** - Reference documentation
-
----
-
-## Getting Help
-
-### Pattern Support Resources
-
-**Documentation:**
-- [Complete Workflow Guide Index](../README.md)
-- [Individual Card Guides](../then/action/)
-- [Condition Cards Reference](../and/condition-cards-complete-guide.md)
-- [Workflow Linking Map](../../../../WORKFLOW_LINKING_MAP.md)
-
-**Additional Resources:**
-- [Quick Reference Guide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- [October 2025 Release Notes](../changelog/2025-10-october.md)
-- [Card Versioning Reference](../../../docs/card_version.md)
-
-**Contact:**
-- Pattern Feedback: docs@docbits.com
-- Technical Support: support@docbits.com
-- Implementation Help: consulting@docbits.com
+1. **Pregled** - Šta obrazac radi
+2. **Kada koristiti** - Odgovarajući slučajevi upotrebe
+3. **Kompletan primer** - Scenario iz stvarnog sveta
+4. **Korak po korak** - Uputstva za implementaciju
+5. **Konfiguracija** - Šabloni za podešavanje kartica
+6. **Dijagram toka rada** - Vizuelni prikaz
+7. **Napredne varijacije** - Alternativne implementacije
+8. **Rukovanje greškama** - Uobičajeni problemi i rešenja
+9. **Lista za proveru testiranja** - Koraci validacije
+10. **Povezani obrasci** - Komplementarni obrasci
+11. **Povezani vodiči** - Referentna dokumentacija
 
 ---
 
-## Pattern Statistics
+## Dobijanje pomoći
 
-| Metric | Value |
+### Resursi za podršku obrascima
+
+**Dokumentacija:**
+- [Kompletan indeks vodiča za tokove rada](../README.md)
+- [Vodiči za pojedinačne kartice](../then/action/)
+- [Referenca za uslovne kartice](../and/condition-cards-complete-guide.md)
+- [Mapa povezivanja tokova rada](../../../../WORKFLOW_LINKING_MAP.md)
+
+**Dodatni resursi:**
+- [Vodič za brzu referencu](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- [Napomene o izdanju za oktobar 2025.](../changelog/2025-10-october.md)
+- [Referenca za verzionisanje kartica](../../../docs/card_version.md)
+
+**Kontakt:**
+- Povratne informacije o obrascima: docs@docbits.com
+- Tehnička podrška: support@docbits.com
+- Pomoć pri implementaciji: consulting@docbits.com
+
+---
+
+## Statistika obrazaca
+
+| Metrika | Vrednost |
 |--------|-------|
-| **Total Patterns** | 5 |
-| **Total Cards Covered** | 30+ |
-| **Combined Documentation** | ~1,200 lines |
-| **Example Scenarios** | 25+ |
-| **Configuration Templates** | 15+ |
-| **Workflow Diagrams** | 5 complete diagrams |
-| **Cross-References** | 87+ internal links |
+| **Ukupno obrazaca** | 5 |
+| **Ukupno pokrivenih kartica** | 30+ |
+| **Kombinovana dokumentacija** | ~1.200 linija |
+| **Primeri scenarija** | 25+ |
+| **Šabloni za konfiguraciju** | 15+ |
+| **Dijagrami tokova rada** | 5 kompletnih dijagrama |
+| **Unakrsne reference** | 87+ internih veza |
 
 ---
 
-## Contributing to Patterns
+## Doprinos obrascima
 
-Have a workflow pattern that would benefit others?
+Imate obrazac toka rada koji bi mogao koristiti drugima?
 
-**Pattern Contribution Guidelines:**
+**Smernice za doprinos obrascima:**
 
-1. **Document Your Workflow**
-   - Clear business scenario
-   - Step-by-step implementation
-   - Working configuration examples
-   - Real-world test results
+1. **Dokumentujte svoj tok rada**
+   - Jasan poslovni scenario
+   - Implementacija korak po korak
+   - Funkcionalni primeri konfiguracije
+   - Rezultati testiranja iz stvarnog sveta
 
-2. **Follow Pattern Template**
-   - Use standard section structure
-   - Include all required elements
-   - Provide diagrams/examples
-   - Add troubleshooting guide
+2. **Pratite šablon obrasca**
+   - Koristite standardnu strukturu odeljaka
+   - Uključite sve potrebne elemente
+   - Obezbedite dijagrame/primere
+   - Dodajte vodič za rešavanje problema
 
-3. **Submit for Review**
-   - Email to: docs@docbits.com
-   - Include: Pattern description, use cases, implementation guide
-   - We'll review and potentially add to official documentation
+3. **Pošaljite na pregled**
+   - Pošaljite e-poštu na: docs@docbits.com
+   - Uključite: Opis obrasca, slučajeve upotrebe, vodič za implementaciju
+   - Pregledaćemo i potencijalno dodati u zvaničnu dokumentaciju
 
-**Benefits:**
-- Help other DocBits users
-- Get recognized in documentation
-- Improve overall product knowledge base
-- Receive feedback on your implementation
-
----
-
-## Changelog
-
-### Version 1.0 (October 23, 2025)
-- Initial release of 5 comprehensive workflow patterns
-- API Integration Pattern added
-- Task Management Pattern added
-- PO Matching Pattern added
-- Decision Logic Pattern added
-- Data Transformation Pattern added
-- Cross-reference linking implemented (87 links)
-- Pattern selection guide created
+**Prednosti:**
+- Pomozite drugim DocBits korisnicima
+- Budite prepoznati u dokumentaciji
+- Poboljšajte celokupnu bazu znanja o proizvodu
+- Dobijte povratne informacije o svojoj implementaciji
 
 ---
 
-## Next Steps
+## Dnevnik promena
 
-**New to Workflow Patterns?**
-1. Start with [Task Management Pattern](task-management-pattern.md) - easiest to understand
-2. Review [Decision Logic Pattern](decision-logic-pattern.md) - foundational for all workflows
-3. Explore [API Integration Pattern](api-integration-pattern.md) - common integration need
-
-**Ready to Implement?**
-1. Choose your pattern from the list above
-2. Read the complete pattern guide
-3. Review prerequisites and related guides
-4. Follow step-by-step instructions
-5. Test with sample documents
-6. Deploy to production
-7. Monitor and optimize
-
-**Need More Help?**
-- Review [Workflow Documentation Overview](../README.md)
-- Check [Quick Reference Guide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
-- Contact support team
+### Verzija 1.0 (23. oktobar 2025.)
+- Inicijalno izdanje 5 sveobuhvatnih obrazaca toka rada
+- Dodat API Integration Pattern
+- Dodat Task Management Pattern
+- Dodat PO Matching Pattern
+- Dodat Decision Logic Pattern
+- Dodat Data Transformation Pattern
+- Implementirano unakrsno referentno povezivanje (87 veza)
+- Kreiran vodič za izbor obrasca
 
 ---
 
-**Last Updated:** October 23, 2025
-**Maintained By:** Documentation Team
-**Version:** 1.0
+## Sledeći koraci
+
+**Novi ste u obrascima toka rada?**
+1. Počnite sa [Task Management Pattern](task-management-pattern.md) - najlakši za razumevanje
+2. Pregledajte [Decision Logic Pattern](decision-logic-pattern.md) - temeljni za sve tokove rada
+3. Istražite [API Integration Pattern](api-integration-pattern.md) - česta potreba za integracijom
+
+**Spremni za implementaciju?**
+1. Izaberite svoj obrazac sa liste iznad
+2. Pročitajte kompletan vodič za obrazac
+3. Pregledajte preduslove i povezane vodiče
+4. Pratite uputstva korak po korak
+5. Testirajte sa uzorcima dokumenata
+6. Postavite u produkciju
+7. Pratite i optimizujte
+
+**Treba vam više pomoći?**
+- Pregledajte [Pregled dokumentacije tokova rada](../README.md)
+- Proverite [Vodič za brzu referencu](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- Kontaktirajte tim za podršku
+
+---
+
+**Poslednje ažuriranje:** 23. oktobar 2025.
+**Održava:** Tim za dokumentaciju
+**Verzija:** 1.0

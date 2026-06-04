@@ -1,52 +1,52 @@
 # Decision Logic Pattern
 
-**Pattern Type:** Conditional Routing & Logic
-**Complexity:** Medium
-**Estimated Setup:** 30-45 minutes
-**Common Use Cases:** Multi-path routing, conditional processing, decision trees, business rule implementation
+**Tip obrasca:** Uslovno rutiranje i logika
+**Složenost:** Srednja
+**Procenjeno podešavanje:** 30-45 minuta
+**Uobičajeni slučajevi upotrebe:** Rutiranje sa više putanja, uslovna obrada, stabla odlučivanja, implementacija poslovnih pravila
 
 ---
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Logic** category — it holds the condition and branching cards that drive the decision tree, which you combine with the **And** group to evaluate multiple conditions:
+Ovaj obrazac gradite u **Workflow Builder**-u (Workflow Dashboard → Workflow List → Add Workflow). Kliknite na **Add Card** i otvorite kategoriju **Logic** — ona sadrži uslovne kartice i kartice grananja koje pokreću stablo odlučivanja, a koje kombinujete sa grupom **And** za procenu više uslova:
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — condition and branching cards live under the <strong>Logic</strong> category.</p></figcaption></figure>
-
----
-
-## Pattern Overview
-
-This pattern demonstrates how to implement complex decision logic in DocBits workflows using condition cards to route documents through different processing paths based on document attributes, field values, and business rules.
-
-**What This Pattern Does:**
-1. Evaluates multiple conditions in sequence or parallel
-2. Routes documents to different paths based on conditions
-3. Implements business rules and policies
-4. Handles complex decision trees
-5. Combines multiple criteria for routing decisions
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteka Add Card u Workflow Builder-u, grupisana po kategoriji"><figcaption><p>Biblioteka <strong>Add Card</strong> — uslovne kartice i kartice grananja nalaze se pod kategorijom <strong>Logic</strong>.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Pregled obrasca
 
-Use this pattern when you need to:
-- ✅ Route documents by amount thresholds
-- ✅ Apply different rules for different document types
-- ✅ Implement multi-level approval logic
-- ✅ Handle complex business policies
-- ✅ Create dynamic routing based on multiple criteria
-- ✅ Implement exception handling logic
-- ✅ Create approval matrices
+Ovaj obrazac pokazuje kako da implementirate složenu logiku odlučivanja u DocBits tokovima rada koristeći uslovne kartice za rutiranje dokumenata kroz različite putanje obrade na osnovu atributa dokumenta, vrednosti polja i poslovnih pravila.
 
-**Don't use this pattern when:**
-- ❌ Simple linear workflow is sufficient
-- ❌ All documents follow same path
-- ❌ No conditional processing needed
+**Šta ovaj obrazac radi:**
+1. Procenjuje više uslova sekvencijalno ili paralelno
+2. Rutira dokumente ka različitim putanjama na osnovu uslova
+3. Implementira poslovna pravila i politike
+4. Rukuje složenim stablima odlučivanja
+5. Kombinuje više kriterijuma za odluke o rutiranju
 
 ---
 
-## Decision Logic Types
+## Kada koristiti ovaj obrazac
 
-### 1. Simple IF-THEN Logic
+Koristite ovaj obrazac kada treba da:
+- ✅ Rutirate dokumente po pragovima iznosa
+- ✅ Primenite različita pravila za različite tipove dokumenata
+- ✅ Implementirate logiku višenivovskog odobravanja
+- ✅ Rukujete složenim poslovnim politikama
+- ✅ Kreirate dinamičko rutiranje na osnovu više kriterijuma
+- ✅ Implementirate logiku rukovanja izuzecima
+- ✅ Kreirate matrice odobravanja
+
+**Nemojte koristiti ovaj obrazac kada:**
+- ❌ Jednostavan linearni tok rada je dovoljan
+- ❌ Svi dokumenti prate istu putanju
+- ❌ Nije potrebna uslovna obrada
+
+---
+
+## Tipovi logike odlučivanja
+
+### 1. Jednostavna IF-THEN logika
 
 ```
 IF condition:
@@ -55,7 +55,7 @@ ELSE:
   → Action B
 ```
 
-**Example:**
+**Primer:**
 ```
 IF Amount > €10,000:
   → Assign to Director
@@ -63,7 +63,7 @@ ELSE:
   → Assign to Manager
 ```
 
-### 2. Multiple Criteria (AND Logic)
+### 2. Više kriterijuma (AND logika)
 
 ```
 IF condition1 AND condition2 AND condition3:
@@ -72,7 +72,7 @@ ELSE:
   → Action B
 ```
 
-**Example:**
+**Primer:**
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
   → Assign to IT Director + CFO (dual approval)
@@ -80,7 +80,7 @@ ELSE:
   → Standard approval workflow
 ```
 
-### 3. Alternative Criteria (OR Logic)
+### 3. Alternativni kriterijumi (OR logika)
 
 ```
 IF condition1 OR condition2 OR condition3:
@@ -89,7 +89,7 @@ ELSE:
   → Action B
 ```
 
-**Example:**
+**Primer:**
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
   → Escalate immediately
@@ -97,7 +97,7 @@ ELSE:
   → Standard processing
 ```
 
-### 4. Nested Decision Tree
+### 4. Ugnežđeno stablo odlučivanja
 
 ```
 IF condition1:
@@ -112,7 +112,7 @@ ELSE:
     → Action D
 ```
 
-**Example:**
+**Primer:**
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
@@ -128,19 +128,19 @@ ELSE IF Document_Type = "Credit Note":
 
 ---
 
-## Complete Workflow Example
+## Kompletan primer toka rada
 
-### Scenario: Invoice Approval Matrix
+### Scenario: Matrica odobravanja faktura
 
-**Business Rules:**
-1. Amount < €1,000: Auto-approve
-2. Amount €1,000-€10,000: Manager approval
-3. Amount > €10,000 AND New Supplier: Director + CFO approval
-4. Amount > €10,000 AND Existing Supplier: Director approval only
-5. Any amount with PO mismatch: Procurement approval first
-6. Urgent invoices (flagged): Expedited workflow
+**Poslovna pravila:**
+1. Iznos < €1.000: Automatsko odobravanje
+2. Iznos €1.000-€10.000: Odobravanje menadžera
+3. Iznos > €10.000 AND Novi dobavljač: Odobravanje direktora + CFO
+4. Iznos > €10.000 AND Postojeći dobavljač: Samo odobravanje direktora
+5. Bilo koji iznos sa neslaganjem PO: Prvo odobravanje nabavke
+6. Hitne fakture (označene): Ubrzani tok rada
 
-**Implementation:**
+**Implementacija:**
 
 ```
 STEP 1: Check for PO Mismatch
@@ -181,11 +181,11 @@ STEP 3: Amount-Based Routing (if not urgent)
 
 ---
 
-## Step-by-Step Implementation
+## Implementacija korak po korak
 
-### Step 1: Define Condition Cards
+### Korak 1: Definišite uslovne kartice
 
-**Condition 1: Amount Threshold**
+**Uslov 1: Prag iznosa**
 ```
 Card: CONDITION_DOC_FIELD_AMOUNT
 Field: Total_Amount
@@ -194,21 +194,21 @@ Value: 1000
 Currency: EUR
 ```
 
-**Condition 2: Document Type Check**
+**Uslov 2: Provera tipa dokumenta**
 ```
 Card: CONDITION_DOC_TYPE_IS_ISNOT
 Document Type: IS
 Type: Invoice
 ```
 
-**Condition 3: Supplier Status**
+**Uslov 3: Status dobavljača**
 ```
 Card: CONDITION_SUPPLIER_STATUS_IS_ISNOT
 Supplier Status: IS
 Status: ACTIVE
 ```
 
-**Condition 4: New Supplier Check**
+**Uslov 4: Provera novog dobavljača**
 ```
 Card: CONDITION_DOC_FIELD_DATE
 Field: Supplier_First_Transaction_Date
@@ -216,13 +216,13 @@ Operator: IS AFTER
 Value: {{TODAY_MINUS_180_DAYS}}
 ```
 
-**Guide Reference:** [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)
+**Referenca vodiča:** [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)
 
 ---
 
-### Step 2: Build Decision Tree
+### Korak 2: Izgradite stablo odlučivanja
 
-**Level 1: Document Type**
+**Nivo 1: Tip dokumenta**
 ```
 Workflow: "Invoice Processing"
 
@@ -239,7 +239,7 @@ ELSE:
   → Route to "Unknown Document Type" handling
 ```
 
-**Level 2: Amount Thresholds (for Invoices)**
+**Nivo 2: Pragovi iznosa (za fakture)**
 ```
 IF Amount < €1,000:
   → Branch to "Auto-Approve Path"
@@ -256,7 +256,7 @@ ELSE (Amount ≥ €50,000):
   → Dual or triple approval required
 ```
 
-**Level 3: Supplier Analysis (for high-value invoices)**
+**Nivo 3: Analiza dobavljača (za fakture velike vrednosti)**
 ```
 IF Supplier_Status = "BLOCKED":
   → STOP processing
@@ -279,9 +279,9 @@ ELSE:
 
 ---
 
-### Step 3: Create Routing Actions
+### Korak 3: Kreirajte akcije rutiranja
 
-**Path A: Auto-Approve (Amount < €1,000)**
+**Putanja A: Automatsko odobravanje (Iznos < €1.000)**
 ```
 Actions:
 1. Set field "Approval_Type" = "AUTO"
@@ -291,7 +291,7 @@ Actions:
 5. Send confirmation email (optional)
 ```
 
-**Path B: Manager Approval (€1,000-€10,000)**
+**Putanja B: Odobravanje menadžera (€1.000-€10.000)**
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -307,7 +307,7 @@ Actions:
 7. If rejected: Return to supplier
 ```
 
-**Path C: Director Approval (€10,000-€50,000)**
+**Putanja C: Odobravanje direktora (€10.000-€50.000)**
 ```
 Actions:
 1. Set field "Approval_Type" = "MANUAL"
@@ -327,7 +327,7 @@ Actions:
 9. If any rejected: Return to supplier
 ```
 
-**Path D: Executive Approval (≥ €50,000)**
+**Putanja D: Izvršno odobravanje (≥ €50.000)**
 ```
 Actions:
 1. Set field "Approval_Type" = "EXECUTIVE"
@@ -347,11 +347,11 @@ Actions:
 
 ---
 
-## Advanced Decision Logic Patterns
+## Napredni obrasci logike odlučivanja
 
-### Pattern 1: Score-Based Routing
+### Obrazac 1: Rutiranje zasnovano na skoru
 
-**Calculate a risk score and route accordingly:**
+**Izračunajte skor rizika i rutirajte u skladu sa tim:**
 
 ```
 Risk Score Calculation:
@@ -372,7 +372,7 @@ Routing:
   IF Score > 75: Executive approval + fraud check
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 1. ACTION_CALCULATE_FIELD: Calculate risk score
 2. ACTION_SET_FIELD_TO_NUMBER: Store score
@@ -382,9 +382,9 @@ Routing:
 
 ---
 
-### Pattern 2: Department-Based Matrix
+### Obrazac 2: Matrica zasnovana na odeljenju
 
-**Different approval rules by department:**
+**Različita pravila odobravanja po odeljenju:**
 
 ```
 Department Matrix:
@@ -406,7 +406,7 @@ Department Matrix:
     Amount ≥ €2,000: Department Director
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 1. Check Department field
 2. Based on department, check amount threshold
@@ -416,9 +416,9 @@ Department Matrix:
 
 ---
 
-### Pattern 3: Time-Based Logic
+### Obrazac 3: Logika zasnovana na vremenu
 
-**Different rules based on timing:**
+**Različita pravila na osnovu vremena:**
 
 ```
 Month-End Processing (Last 3 days of month):
@@ -450,9 +450,9 @@ Fiscal Period:
 
 ---
 
-### Pattern 4: Exception-Based Routing
+### Obrazac 4: Rutiranje zasnovano na izuzecima
 
-**Route exceptions separately:**
+**Rutirajte izuzetke odvojeno:**
 
 ```
 Exception Detection:
@@ -487,7 +487,7 @@ Exception Types:
 
 ---
 
-## Complete Decision Logic Diagram
+## Kompletan dijagram logike odlučivanja
 
 ```
 INVOICE ARRIVES
@@ -618,11 +618,11 @@ INVOICE ARRIVES
 
 ---
 
-## Configuration Best Practices
+## Najbolje prakse za konfiguraciju
 
-### 1. Keep Logic Clear and Maintainable
+### 1. Održavajte logiku jasnom i lakom za održavanje
 
-✅ **Good:**
+✅ **Dobro:**
 ```
 IF Amount > 10000:
   → High value path
@@ -630,13 +630,13 @@ ELSE:
   → Standard path
 ```
 
-❌ **Bad (Too Complex):**
+❌ **Loše (Previše složeno):**
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
   → Complex path
 ```
 
-**Better: Break into steps:**
+**Bolje: Razbijte na korake:**
 ```
 Step 1: IF Amount > 10000: Continue, ELSE: Standard path
 Step 2: IF Supplier in allowed list: Continue, ELSE: Review
@@ -646,15 +646,15 @@ Step 4: IF Department authorized: Approve, ELSE: Escalate
 
 ---
 
-### 2. Document Decision Logic
+### 2. Dokumentujte logiku odlučivanja
 
-**Always include:**
-- Purpose of each decision point
-- Business rule being implemented
-- Expected outcomes
-- Exception handling
+**Uvek uključite:**
+- Svrhu svake tačke odlučivanja
+- Poslovno pravilo koje se implementira
+- Očekivane ishode
+- Rukovanje izuzecima
 
-**Example Documentation:**
+**Primer dokumentacije:**
 ```
 Decision Point: Amount Threshold Check
 Business Rule: BR-INV-001 (Invoice Approval Matrix)
@@ -670,32 +670,32 @@ Owner: Finance Department
 
 ---
 
-### 3. Test All Paths
+### 3. Testirajte sve putanje
 
-**Testing Matrix:**
+**Matrica testiranja:**
 
-| Test Case | Amount | Type | Supplier | Expected Path | Status |
+| Test slučaj | Iznos | Tip | Dobavljač | Očekivana putanja | Status |
 |-----------|--------|------|----------|---------------|--------|
-| TC1 | €500 | Invoice | Existing | Auto-approve | ✅ |
-| TC2 | €5,000 | Invoice | Existing | Manager | ✅ |
-| TC3 | €15,000 | Invoice | New | Director+CFO | ✅ |
-| TC4 | €60,000 | Invoice | Existing | Executive | ✅ |
-| TC5 | €2,000 | Credit Note | Existing | Credit workflow | ✅ |
-| TC6 | €100,000 | Invoice | Blocked | Stop & Escalate | ✅ |
+| TC1 | €500 | Invoice | Postojeći | Auto-approve | ✅ |
+| TC2 | €5,000 | Invoice | Postojeći | Manager | ✅ |
+| TC3 | €15,000 | Invoice | Novi | Director+CFO | ✅ |
+| TC4 | €60,000 | Invoice | Postojeći | Executive | ✅ |
+| TC5 | €2,000 | Credit Note | Postojeći | Credit workflow | ✅ |
+| TC6 | €100,000 | Invoice | Blokiran | Stop & Escalate | ✅ |
 
 ---
 
-### 4. Monitor Decision Metrics
+### 4. Pratite metrike odlučivanja
 
-**Track:**
-- Distribution across decision paths
-- Auto-approval rate
-- Manual review rate
-- Average processing time per path
-- Exception rates
-- Path utilization
+**Pratite:**
+- Distribuciju kroz putanje odlučivanja
+- Stopu automatskog odobravanja
+- Stopu ručnog pregleda
+- Prosečno vreme obrade po putanji
+- Stope izuzetaka
+- Iskorišćenost putanja
 
-**Example Metrics:**
+**Primer metrika:**
 ```
 Month: October 2025
 Total Invoices: 1,250
@@ -717,40 +717,40 @@ Exceptions: 15 (1.2%)
 
 ---
 
-## Related Patterns
+## Povezani obrasci
 
-### Patterns That Work Well Together:
+### Obrasci koji dobro funkcionišu zajedno:
 
-- **[Task Management Pattern](task-management-pattern.md)** - Create tasks based on decisions
-- **[API Integration Pattern](api-integration-pattern.md)** - Fetch data for decision-making
-- **[PO Matching Pattern](po-matching-pattern.md)** - Use PO results in decisions
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transform data before decisions
+- **[Task Management Pattern](task-management-pattern.md)** - Kreirajte zadatke na osnovu odluka
+- **[API Integration Pattern](api-integration-pattern.md)** - Preuzmite podatke za donošenje odluka
+- **[PO Matching Pattern](po-matching-pattern.md)** - Koristite PO rezultate u odlukama
+- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transformišite podatke pre odluka
 
 ---
 
-## Related Guides
+## Povezani vodiči
 
-### Prerequisites
-- [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md) - All condition cards
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Field operations
-- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - Routing logic
+### Preduslovi
+- [Condition Cards Complete Guide](../and/condition-cards-complete-guide.md) - Sve uslovne kartice
+- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Operacije nad poljima
+- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - Logika rutiranja
 
-### Related Cards
+### Povezane kartice
 - **CONDITION_DOC_FIELD_AMOUNT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#field-conditions)
 - **CONDITION_DOC_TYPE_IS_ISNOT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-doc-type-is-isnot)
 - **CONDITION_SUPPLIER_STATUS_IS_ISNOT** - [Condition Cards Guide](../and/condition-cards-complete-guide.md#condition-supplier-status-is-isnot)
 - **ACTION_ASSIGN_TO_USER** - [Assignment Guide](../then/assignee/assignment-user-guide.md)
 - **tasks_create** - [Task Assignment Guide](../then/task/task-assignment-guide.md)
 
-### Next Steps
-- Create tasks: [Task Management Pattern](task-management-pattern.md)
-- Add complex matching: [PO Matching Pattern](po-matching-pattern.md)
-- Integrate APIs: [API Integration Pattern](api-integration-pattern.md)
+### Sledeći koraci
+- Kreirajte zadatke: [Task Management Pattern](task-management-pattern.md)
+- Dodajte složeno uparivanje: [PO Matching Pattern](po-matching-pattern.md)
+- Integrišite API-je: [API Integration Pattern](api-integration-pattern.md)
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Medium
-**Estimated Time:** 30-45 minutes
-**Success Rate:** High
+**Verzija obrasca:** 1.0
+**Poslednje ažuriranje:** 23. oktobar 2025.
+**Težina:** Srednja
+**Procenjeno vreme:** 30-45 minuta
+**Stopa uspeha:** Visoka

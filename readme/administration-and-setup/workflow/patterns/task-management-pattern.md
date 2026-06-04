@@ -1,78 +1,78 @@
 # Task Management Pattern
 
-**Pattern Type:** Workflow Management
-**Complexity:** Low-Medium
-**Estimated Setup:** 30-45 minutes
-**Common Use Cases:** Approval workflows, review tasks, exception handling, escalation
+**Tip obrasca:** Upravljanje tokom rada
+**Složenost:** Niska-srednja
+**Procenjeno podešavanje:** 30-45 minuta
+**Uobičajeni slučajevi upotrebe:** Tokovi rada za odobravanje, zadaci pregleda, rukovanje izuzecima, eskalacija
 
 ---
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** to open the card library and pick the cards this pattern uses — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` and `CONDITION_TASK_STATUS` (the **Assignee** category holds the task and assignment cards):
+Ovaj obrazac gradite u **Workflow Builder**-u (Workflow Dashboard → Workflow List → Add Workflow). Kliknite na **Add Card** da otvorite biblioteku kartica i izaberete kartice koje ovaj obrazac koristi — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` i `CONDITION_TASK_STATUS` (kategorija **Assignee** sadrži kartice za zadatke i dodeljivanje):
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library in the Workflow Builder, grouped by category"><figcaption><p>The <strong>Add Card</strong> library — the task, assignment and notification cards live under the <strong>Assignee</strong> and <strong>Status</strong> categories.</p></figcaption></figure>
-
----
-
-## Pattern Overview
-
-This pattern demonstrates how to create, assign, track, and manage tasks within DocBits workflows. Tasks are actionable work items assigned to users or groups that require completion before the document workflow can continue.
-
-**What This Pattern Does:**
-1. Creates tasks based on workflow conditions
-2. Assigns tasks to appropriate users or groups
-3. Sets task properties (priority, deadline, description)
-4. Sends notifications when tasks are created
-5. Tracks task status and completion
-6. Routes documents based on task outcomes
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteka Add Card u Workflow Builder-u, grupisana po kategoriji"><figcaption><p>Biblioteka <strong>Add Card</strong> — kartice za zadatke, dodeljivanje i obaveštenja nalaze se pod kategorijama <strong>Assignee</strong> i <strong>Status</strong>.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Pregled obrasca
 
-Use this pattern when you need to:
-- ✅ Create approval workflows
-- ✅ Assign review tasks to users
-- ✅ Handle exceptions requiring human intervention
-- ✅ Escalate issues to managers
-- ✅ Create multi-level approval chains
-- ✅ Track who needs to do what
-- ✅ Set deadlines for actions
+Ovaj obrazac pokazuje kako da kreirate, dodeljujete, pratite i upravljate zadacima u okviru DocBits tokova rada. Zadaci su radne stavke koje se mogu izvršiti, dodeljene korisnicima ili grupama, koje zahtevaju završetak pre nego što tok rada dokumenta može da se nastavi.
 
-**Don't use this pattern when:**
-- ❌ No human action required (use auto-processing instead)
-- ❌ Just need to notify (use email instead)
-- ❌ Simple document routing (use assignment instead)
+**Šta ovaj obrazac radi:**
+1. Kreira zadatke na osnovu uslova toka rada
+2. Dodeljuje zadatke odgovarajućim korisnicima ili grupama
+3. Postavlja svojstva zadatka (prioritet, rok, opis)
+4. Šalje obaveštenja kada se kreiraju zadaci
+5. Prati status i završetak zadatka
+6. Rutira dokumente na osnovu ishoda zadatka
 
 ---
 
-## Complete Workflow Example
+## Kada koristiti ovaj obrazac
 
-### Scenario: Invoice Approval with Amount-Based Routing
+Koristite ovaj obrazac kada treba da:
+- ✅ Kreirate tokove rada za odobravanje
+- ✅ Dodelite zadatke pregleda korisnicima
+- ✅ Rukujete izuzecima koji zahtevaju ljudsku intervenciju
+- ✅ Eskalirate probleme menadžerima
+- ✅ Kreirate višenivovske lance odobravanja
+- ✅ Pratite ko treba šta da uradi
+- ✅ Postavite rokove za akcije
 
-**Business Requirement:**
-- Invoices < €1,000: Auto-approve (no task needed)
-- Invoices €1,000-€10,000: Approval task to Manager
-- Invoices > €10,000: Dual approval (Manager + Director)
-- All approvers receive email notification
-- Tasks have 3-day deadline
-
-**Workflow Cards Used:**
-1. CONDITION_DOC_FIELD_AMOUNT - Check invoice amount
-2. tasks_create - Create approval task
-3. ACTION_ASSIGN_TO_USER - Assign task to approver
-4. ACTION_SEND_EMAIL_TO_GROUPS - Send notification
-5. CONDITION_TASK_STATUS - Check if task completed
-6. ACTION_APPROVE_DOCUMENT - Approve after task completion
+**Nemojte koristiti ovaj obrazac kada:**
+- ❌ Nije potrebna ljudska akcija (umesto toga koristite automatsku obradu)
+- ❌ Potrebno je samo obavestiti (umesto toga koristite e-poštu)
+- ❌ Jednostavno rutiranje dokumenta (umesto toga koristite dodeljivanje)
 
 ---
 
-## Step-by-Step Implementation
+## Kompletan primer toka rada
 
-### Step 1: Check Amount Threshold
+### Scenario: Odobravanje fakture sa rutiranjem zasnovanim na iznosu
 
-**Card:** CONDITION_DOC_FIELD_AMOUNT or similar field condition
+**Poslovni zahtev:**
+- Fakture < €1.000: Automatsko odobravanje (zadatak nije potreban)
+- Fakture €1.000-€10.000: Zadatak odobravanja menadžeru
+- Fakture > €10.000: Dvostruko odobravanje (Menadžer + Direktor)
+- Svi odobravaoci primaju obaveštenje e-poštom
+- Zadaci imaju rok od 3 dana
 
-**Configuration for Path 1 (< €1,000):**
+**Korišćene kartice toka rada:**
+1. CONDITION_DOC_FIELD_AMOUNT - Provera iznosa fakture
+2. tasks_create - Kreiranje zadatka odobravanja
+3. ACTION_ASSIGN_TO_USER - Dodeljivanje zadatka odobravaocu
+4. ACTION_SEND_EMAIL_TO_GROUPS - Slanje obaveštenja
+5. CONDITION_TASK_STATUS - Provera da li je zadatak završen
+6. ACTION_APPROVE_DOCUMENT - Odobravanje nakon završetka zadatka
+
+---
+
+## Implementacija korak po korak
+
+### Korak 1: Proverite prag iznosa
+
+**Kartica:** CONDITION_DOC_FIELD_AMOUNT ili slični uslov polja
+
+**Konfiguracija za putanju 1 (< €1.000):**
 ```
 Field: Total_Amount
 Operator: IS LESS THAN
@@ -80,7 +80,7 @@ Value: 1000
 Currency: EUR
 ```
 
-**Configuration for Path 2 (€1,000-€10,000):**
+**Konfiguracija za putanju 2 (€1.000-€10.000):**
 ```
 Field: Total_Amount
 Operator: IS BETWEEN
@@ -89,7 +89,7 @@ Value Max: 10000
 Currency: EUR
 ```
 
-**Configuration for Path 3 (> €10,000):**
+**Konfiguracija za putanju 3 (> €10.000):**
 ```
 Field: Total_Amount
 Operator: IS GREATER THAN
@@ -97,29 +97,29 @@ Value: 10000
 Currency: EUR
 ```
 
-**Guide Reference:** [Condition Cards Guide](../and/condition-cards-complete-guide.md)
+**Referenca vodiča:** [Condition Cards Guide](../and/condition-cards-complete-guide.md)
 
 ---
 
-### Step 2A: Auto-Approve Small Invoices (< €1,000)
+### Korak 2A: Automatsko odobravanje malih faktura (< €1.000)
 
-**No task needed for small amounts**
+**Zadatak nije potreban za male iznose**
 
-**Cards:**
+**Kartice:**
 - ACTION_SET_FIELD_TO_TEXT
-  - Set "Approval_Type" = "AUTO"
-  - Set "Approval_Reason" = "Amount below threshold"
+  - Postavite "Approval_Type" = "AUTO"
+  - Postavite "Approval_Reason" = "Amount below threshold"
 - ACTION_APPROVE_DOCUMENT
 
-**Result:** Document automatically approved, no task created
+**Rezultat:** Dokument je automatski odobren, nijedan zadatak nije kreiran
 
 ---
 
-### Step 2B: Create Manager Approval Task (€1,000-€10,000)
+### Korak 2B: Kreirajte zadatak odobravanja menadžeru (€1.000-€10.000)
 
-**Card:** tasks_create (v4 recommended)
+**Kartica:** tasks_create (v4 preporučeno)
 
-**Configuration:**
+**Konfiguracija:**
 ```json
 {
   "task_type": "Approval",
@@ -133,23 +133,23 @@ Currency: EUR
 }
 ```
 
-**Field Mapping:**
-- `{{DOCUMENT_NUMBER}}` - Automatic document ID
-- `{{Total_Amount}}` - Field: Total_Amount
-- `{{Supplier_Name}}` - Field: Supplier_Name
-- `{{Invoice_Number}}` - Field: Invoice_Number
-- `{{Invoice_Date}}` - Field: Invoice_Date
-- `{{Approving_Manager}}` - Field or fixed user
+**Mapiranje polja:**
+- `{{DOCUMENT_NUMBER}}` - Automatski ID dokumenta
+- `{{Total_Amount}}` - Polje: Total_Amount
+- `{{Supplier_Name}}` - Polje: Supplier_Name
+- `{{Invoice_Number}}` - Polje: Invoice_Number
+- `{{Invoice_Date}}` - Polje: Invoice_Date
+- `{{Approving_Manager}}` - Polje ili fiksni korisnik
 
-**Guide Reference:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+**Referenca vodiča:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
 
 ---
 
-### Step 2C: Create Dual Approval Tasks (> €10,000)
+### Korak 2C: Kreirajte zadatke dvostrukog odobravanja (> €10.000)
 
-**Two sequential tasks for high-value invoices**
+**Dva sekvencijalna zadatka za fakture velike vrednosti**
 
-**Task 1: Manager Approval**
+**Zadatak 1: Odobravanje menadžera**
 ```json
 {
   "task_type": "First Approval",
@@ -163,7 +163,7 @@ Currency: EUR
 }
 ```
 
-**Task 2: Director Approval (Created after Task 1 completion)**
+**Zadatak 2: Odobravanje direktora (Kreiran nakon završetka Zadatka 1)**
 ```json
 {
   "task_type": "Second Approval",
@@ -179,18 +179,18 @@ Currency: EUR
 
 ---
 
-### Step 3: Assign Task to User/Group
+### Korak 3: Dodelite zadatak korisniku/grupi
 
-**Card:** ACTION_ASSIGN_TO_USER or ACTION_ASSIGN_TO_GROUP
+**Kartica:** ACTION_ASSIGN_TO_USER ili ACTION_ASSIGN_TO_GROUP
 
-**Option 1: Assign to Specific User**
+**Opcija 1: Dodelite određenom korisniku**
 ```
 User: John.Smith@company.com
 OR
 User Field: {{DOCUMENT_FIELD:Approving_Manager}}
 ```
 
-**Option 2: Assign to Group**
+**Opcija 2: Dodelite grupi**
 ```
 Group: Finance Managers
 Assignment Mode: First Available
@@ -200,7 +200,7 @@ OR
 Assignment Mode: All (everyone in group gets task)
 ```
 
-**Option 3: Sequential Assignment**
+**Opcija 3: Sekvencijalno dodeljivanje**
 ```
 Card: ACTION_ASSIGN_SEQUENTIALLY_TO_USER
 
@@ -209,15 +209,15 @@ User 2: Finance_Director (only if User 1 approves)
 User 3: CFO (only if User 2 approves)
 ```
 
-**Guide Reference:** [Assignment User Guide](../then/assignee/assignment-user-guide.md)
+**Referenca vodiča:** [Assignment User Guide](../then/assignee/assignment-user-guide.md)
 
 ---
 
-### Step 4: Send Email Notification
+### Korak 4: Pošaljite obaveštenje e-poštom
 
-**Card:** ACTION_SEND_EMAIL_TO_GROUPS
+**Kartica:** ACTION_SEND_EMAIL_TO_GROUPS
 
-**Configuration:**
+**Konfiguracija:**
 ```json
 {
   "recipients": [
@@ -229,39 +229,39 @@ User 3: CFO (only if User 2 approves)
 }
 ```
 
-**Email Variables:**
-- `{{TASK_ASSIGNEE_EMAIL}}` - Task assignee's email
-- `{{TASK_ASSIGNEE_NAME}}` - Task assignee's name
-- `{{DOCUMENT_NUMBER}}` - Document ID
-- `{{TASK_DEADLINE}}` - Task due date
-- `{{TASK_PRIORITY}}` - Task priority level
-- `{{DOCUMENT_LINK}}` - Direct link to document
+**Promenljive e-pošte:**
+- `{{TASK_ASSIGNEE_EMAIL}}` - E-pošta osobe kojoj je zadatak dodeljen
+- `{{TASK_ASSIGNEE_NAME}}` - Ime osobe kojoj je zadatak dodeljen
+- `{{DOCUMENT_NUMBER}}` - ID dokumenta
+- `{{TASK_DEADLINE}}` - Rok zadatka
+- `{{TASK_PRIORITY}}` - Nivo prioriteta zadatka
+- `{{DOCUMENT_LINK}}` - Direktna veza ka dokumentu
 
-**Guide Reference:** [Send Email Groups Guide](../then/action/send-email-groups-guide.md)
+**Referenca vodiča:** [Send Email Groups Guide](../then/action/send-email-groups-guide.md)
 
 ---
 
-### Step 5: Track Task Status
+### Korak 5: Pratite status zadatka
 
-**Card:** CONDITION_TASK_STATUS or similar task status checker
+**Kartica:** CONDITION_TASK_STATUS ili sličan proveravač statusa zadatka
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Task ID: {{CREATED_TASK_ID}}
 Status Check: IS COMPLETED
 ```
 
-**Status Options:**
-- CREATED - Task just created
-- ASSIGNED - Task assigned to user
-- IN_PROGRESS - User started working on task
-- COMPLETED - Task finished
-- APPROVED - Task approved
-- REJECTED - Task rejected
-- CANCELLED - Task cancelled
-- OVERDUE - Task past deadline
+**Opcije statusa:**
+- CREATED - Zadatak upravo kreiran
+- ASSIGNED - Zadatak dodeljen korisniku
+- IN_PROGRESS - Korisnik je počeo rad na zadatku
+- COMPLETED - Zadatak završen
+- APPROVED - Zadatak odobren
+- REJECTED - Zadatak odbijen
+- CANCELLED - Zadatak otkazan
+- OVERDUE - Zadatak prekoračio rok
 
-**Logic:**
+**Logika:**
 ```
 IF TASK_STATUS = COMPLETED AND TASK_RESULT = APPROVED:
   → Continue to next step (or next approval level)
@@ -281,11 +281,11 @@ IF TASK_STATUS = OVERDUE:
 
 ---
 
-### Step 6: Complete Workflow Based on Task Result
+### Korak 6: Završite tok rada na osnovu rezultata zadatka
 
-**After Task Completion:**
+**Nakon završetka zadatka:**
 
-**Scenario A: Task Approved**
+**Scenario A: Zadatak odobren**
 ```
 1. Set field "Approval_Status" = "APPROVED"
 2. Set field "Approved_By" = {{TASK_COMPLETED_BY}}
@@ -294,7 +294,7 @@ IF TASK_STATUS = OVERDUE:
 5. Export document (if configured)
 ```
 
-**Scenario B: Task Rejected**
+**Scenario B: Zadatak odbijen**
 ```
 1. Set field "Approval_Status" = "REJECTED"
 2. Set field "Rejected_By" = {{TASK_COMPLETED_BY}}
@@ -304,7 +304,7 @@ IF TASK_STATUS = OVERDUE:
 6. Create "Correction Needed" task
 ```
 
-**Scenario C: Task Overdue**
+**Scenario C: Zadatak prekoračio rok**
 ```
 1. Set field "Task_Status" = "OVERDUE"
 2. Create escalation task for manager
@@ -315,7 +315,7 @@ IF TASK_STATUS = OVERDUE:
 
 ---
 
-## Complete Workflow Diagram
+## Kompletan dijagram toka rada
 
 ```
 INVOICE ARRIVES
@@ -420,9 +420,9 @@ INVOICE ARRIVES
 
 ---
 
-## Configuration Templates
+## Šabloni za konfiguraciju
 
-### Template 1: Simple Approval Task
+### Šablon 1: Jednostavan zadatak odobravanja
 
 ```json
 {
@@ -438,7 +438,7 @@ INVOICE ARRIVES
 
 ---
 
-### Template 2: Review Task with Details
+### Šablon 2: Zadatak pregleda sa detaljima
 
 ```json
 {
@@ -454,7 +454,7 @@ INVOICE ARRIVES
 
 ---
 
-### Template 3: Escalation Task
+### Šablon 3: Zadatak eskalacije
 
 ```json
 {
@@ -471,11 +471,11 @@ INVOICE ARRIVES
 
 ---
 
-## Advanced Patterns
+## Napredni obrasci
 
-### Pattern 1: Sequential Multi-Level Approval
+### Obrazac 1: Sekvencijalno višenivovsko odobravanje
 
-**Use:** Invoices must go through multiple approvers in sequence
+**Upotreba:** Fakture moraju proći kroz više odobravaoca redom
 
 ```
 Level 1: Accounts Clerk (verify data)
@@ -487,7 +487,7 @@ Level 1: Accounts Clerk (verify data)
             Document Approved ✅
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 1. Create Task 1 for Clerk
 2. Wait for Task 1 completion
@@ -503,9 +503,9 @@ Level 1: Accounts Clerk (verify data)
 
 ---
 
-### Pattern 2: Parallel Multi-Approver
+### Obrazac 2: Paralelno odobravanje od strane više odobravaoca
 
-**Use:** Multiple people must approve simultaneously
+**Upotreba:** Više ljudi mora istovremeno da odobri
 
 ```
 Send to ALL approvers at once:
@@ -516,7 +516,7 @@ Send to ALL approvers at once:
 Document approved only when ALL approve
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 1. Create 3 tasks simultaneously
 2. Track all 3 task statuses
@@ -529,9 +529,9 @@ Document approved only when ALL approve
 
 ---
 
-### Pattern 3: Conditional Task Creation
+### Obrazac 3: Uslovno kreiranje zadataka
 
-**Use:** Create different tasks based on conditions
+**Upotreba:** Kreirajte različite zadatke na osnovu uslova
 
 ```
 IF Supplier = "New":
@@ -546,9 +546,9 @@ ELSE:
 
 ---
 
-### Pattern 4: Deadline-Based Escalation
+### Obrazac 4: Eskalacija zasnovana na roku
 
-**Use:** Auto-escalate if task not completed on time
+**Upotreba:** Automatska eskalacija ako zadatak nije završen na vreme
 
 ```
 Day 0: Create task for User A (3-day deadline)
@@ -564,13 +564,13 @@ Day 5: IF still not completed:
 
 ---
 
-## Error Handling
+## Rukovanje greškama
 
-### Scenario 1: Assignee Not Found
+### Scenario 1: Osoba za dodeljivanje nije pronađena
 
-**Problem:** User doesn't exist or is inactive
+**Problem:** Korisnik ne postoji ili je neaktivan
 
-**Solution:**
+**Rešenje:**
 ```
 1. Check user status with CONDITION_USER_IS_ISNOT
 2. IF User = INACTIVE:
@@ -582,11 +582,11 @@ Day 5: IF still not completed:
 
 ---
 
-### Scenario 2: Task Creation Failed
+### Scenario 2: Kreiranje zadatka nije uspelo
 
-**Problem:** System error creating task
+**Problem:** Sistemska greška pri kreiranju zadatka
 
-**Solution:**
+**Rešenje:**
 ```
 1. Check task creation status
 2. IF Failed:
@@ -598,11 +598,11 @@ Day 5: IF still not completed:
 
 ---
 
-### Scenario 3: No Response to Task
+### Scenario 3: Nema odgovora na zadatak
 
-**Problem:** User doesn't complete task by deadline
+**Problem:** Korisnik ne završava zadatak do roka
 
-**Solution:**
+**Rešenje:**
 ```
 1. Monitor task deadline
 2. Day before deadline:
@@ -617,29 +617,29 @@ Day 5: IF still not completed:
 
 ---
 
-## Testing Checklist
+## Lista za proveru testiranja
 
-- [ ] Task created successfully
-- [ ] Task assigned to correct user/group
-- [ ] Email notification sent
-- [ ] Task appears in user's task list
-- [ ] Task properties correct (title, description, priority, deadline)
-- [ ] User can complete task
-- [ ] Workflow continues after task completion
-- [ ] Approval workflow works correctly
-- [ ] Rejection workflow works correctly
-- [ ] Escalation triggers at right time
-- [ ] Overdue handling works
-- [ ] All email notifications sent
-- [ ] Field updates work correctly
+- [ ] Zadatak uspešno kreiran
+- [ ] Zadatak dodeljen ispravnom korisniku/grupi
+- [ ] Obaveštenje e-poštom poslato
+- [ ] Zadatak se pojavljuje na listi zadataka korisnika
+- [ ] Svojstva zadatka ispravna (naslov, opis, prioritet, rok)
+- [ ] Korisnik može da završi zadatak
+- [ ] Tok rada se nastavlja nakon završetka zadatka
+- [ ] Tok rada odobravanja ispravno funkcioniše
+- [ ] Tok rada odbijanja ispravno funkcioniše
+- [ ] Eskalacija se aktivira u pravo vreme
+- [ ] Rukovanje prekoračenim rokom funkcioniše
+- [ ] Sva obaveštenja e-poštom poslata
+- [ ] Ažuriranja polja ispravno funkcionišu
 
 ---
 
-## Real-World Examples
+## Primeri iz stvarnog sveta
 
-### Example 1: Three-Way PO Matching Exception
+### Primer 1: Izuzetak trostrukog uparivanja PO
 
-**Scenario:** Invoice doesn't match PO, needs review
+**Scenario:** Faktura se ne poklapa sa PO, potreban je pregled
 
 ```
 1. PO Matching fails (price variance > 5%)
@@ -655,9 +655,9 @@ Day 5: IF still not completed:
 
 ---
 
-### Example 2: Supplier Invoice Approval
+### Primer 2: Odobravanje fakture dobavljača
 
-**Scenario:** New supplier invoice needs special approval
+**Scenario:** Faktura novog dobavljača zahteva posebno odobravanje
 
 ```
 1. Check if supplier is new (< 6 months old)
@@ -673,9 +673,9 @@ Day 5: IF still not completed:
 
 ---
 
-### Example 3: Month-End Processing
+### Primer 3: Obrada na kraju meseca
 
-**Scenario:** Month-end invoices need urgent processing
+**Scenario:** Fakture na kraju meseca zahtevaju hitnu obradu
 
 ```
 1. Check if document date in last 3 days of month
@@ -691,62 +691,62 @@ Day 5: IF still not completed:
 
 ---
 
-## Performance Tips
+## Saveti za performanse
 
-✅ **Best Practices:**
-- Set realistic deadlines
-- Use clear task titles and descriptions
-- Include all necessary information in task
-- Send timely notifications
-- Monitor task completion rates
-- Escalate overdue tasks automatically
-- Log all task activities
-- Review task patterns monthly
+✅ **Najbolje prakse:**
+- Postavite realne rokove
+- Koristite jasne naslove i opise zadataka
+- Uključite sve potrebne informacije u zadatak
+- Šaljite blagovremena obaveštenja
+- Pratite stope završetka zadataka
+- Automatski eskalirajte zadatke koji su prekoračili rok
+- Beležite sve aktivnosti zadataka
+- Mesečno pregledajte obrasce zadataka
 
-❌ **Avoid:**
-- Creating tasks for everything
-- Vague task descriptions
-- Unrealistic deadlines
-- Too many notification emails
-- No escalation path
-- Ignoring overdue tasks
-- Not tracking task metrics
-
----
-
-## Related Patterns
-
-### Patterns That Work Well Together:
-
-- **[API Integration Pattern](api-integration-pattern.md)** - Create tasks for API errors
-- **[PO Matching Pattern](po-matching-pattern.md)** - Create tasks for PO mismatches
-- **[Decision Logic Pattern](decision-logic-pattern.md)** - Route to appropriate task type
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transform data before creating task
+❌ **Izbegavajte:**
+- Kreiranje zadataka za sve
+- Nejasne opise zadataka
+- Nerealne rokove
+- Previše e-poruka sa obaveštenjima
+- Bez putanje eskalacije
+- Ignorisanje zadataka koji su prekoračili rok
+- Nepraćenje metrika zadataka
 
 ---
 
-## Related Guides
+## Povezani obrasci
 
-### Prerequisites
-- [Task Assignment Guide](../then/task/task-assignment-guide.md) - Task card documentation
-- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - User assignment
-- [Send Email Groups Guide](../then/action/send-email-groups-guide.md) - Email notifications
+### Obrasci koji dobro funkcionišu zajedno:
 
-### Related Cards
+- **[API Integration Pattern](api-integration-pattern.md)** - Kreirajte zadatke za API greške
+- **[PO Matching Pattern](po-matching-pattern.md)** - Kreirajte zadatke za PO neslaganja
+- **[Decision Logic Pattern](decision-logic-pattern.md)** - Rutirajte ka odgovarajućem tipu zadatka
+- **[Data Transformation Pattern](data-transformation-pattern.md)** - Transformišite podatke pre kreiranja zadatka
+
+---
+
+## Povezani vodiči
+
+### Preduslovi
+- [Task Assignment Guide](../then/task/task-assignment-guide.md) - Dokumentacija kartice za zadatke
+- [Assignment User Guide](../then/assignee/assignment-user-guide.md) - Dodeljivanje korisnika
+- [Send Email Groups Guide](../then/action/send-email-groups-guide.md) - Obaveštenja e-poštom
+
+### Povezane kartice
 - **tasks_create** - [Task Assignment Guide](../then/task/task-assignment-guide.md)
 - **ACTION_ASSIGN_TO_USER** - [Assignment Guide](../then/assignee/assignment-user-guide.md)
 - **ACTION_SEND_EMAIL_TO_GROUPS** - [Email Guide](../then/action/send-email-groups-guide.md)
 - **CONDITION_TASK_STATUS** - [Condition Cards Guide](../and/condition-cards-complete-guide.md)
 
-### Next Steps
-- Add email notifications: [Send Email Guide](../then/action/send-email-groups-guide.md)
-- Implement complex routing: [Decision Logic Pattern](decision-logic-pattern.md)
-- Handle errors: [Error Handling Pattern](error-handling-pattern.md)
+### Sledeći koraci
+- Dodajte obaveštenja e-poštom: [Send Email Guide](../then/action/send-email-groups-guide.md)
+- Implementirajte složeno rutiranje: [Decision Logic Pattern](decision-logic-pattern.md)
+- Rukujte greškama: [Error Handling Pattern](error-handling-pattern.md)
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Low-Medium
-**Estimated Time:** 30-45 minutes
-**Success Rate:** Very High
+**Verzija obrasca:** 1.0
+**Poslednje ažuriranje:** 23. oktobar 2025.
+**Težina:** Niska-srednja
+**Procenjeno vreme:** 30-45 minuta
+**Stopa uspeha:** Vrlo visoka

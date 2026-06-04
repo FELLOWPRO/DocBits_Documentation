@@ -1,56 +1,56 @@
 # PO Matching Pattern
 
-**Pattern Type:** Validation & Comparison
-**Complexity:** Medium-High
-**Estimated Setup:** 60-90 minutes
-**Common Use Cases:** Three-way matching, invoice validation, variance checking, tolerance management
+**Tip obrasca:** Validacija i poređenje
+**Složenost:** Srednja-visoka
+**Procenjeno podešavanje:** 60-90 minuta
+**Uobičajeni slučajevi upotrebe:** Trostruko uparivanje, validacija faktura, provera odstupanja, upravljanje tolerancijom
 
 ---
 
-You build this pattern in the **Workflow Builder** (Workflow Dashboard → Workflow List → Add Workflow). Click **Add Card** and open the **Compare with Purchase Order** category — it holds every matching card this pattern uses (price, quantity, tolerance and line-item comparison cards):
+Ovaj obrazac gradite u **Workflow Builder**-u (Workflow Dashboard → Workflow List → Add Workflow). Kliknite na **Add Card** i otvorite kategoriju **Compare with Purchase Order** — ona sadrži svaku karticu za uparivanje koju ovaj obrazac koristi (kartice za poređenje cene, količine, tolerancije i stavki):
 
-<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card library showing the Compare with Purchase Order cards"><figcaption><p>The <strong>Compare with Purchase Order</strong> category — price, quantity, tolerance and line-item matching cards used throughout this pattern.</p></figcaption></figure>
-
----
-
-## Pattern Overview
-
-This pattern demonstrates how to implement comprehensive Purchase Order (PO) matching workflows in DocBits. PO matching is a critical control process that compares invoice data against purchase order data to detect discrepancies before payment approval.
-
-**What This Pattern Does:**
-1. Retrieves PO data based on PO number from invoice
-2. Compares invoice line items with PO line items
-3. Calculates variances (price, quantity, totals)
-4. Applies tolerance rules
-5. Routes for approval or escalation based on match results
-6. Tracks matching history and exceptions
+<figure><img src="../../../.gitbook/assets/workflow_add_card_picker.png" alt="Biblioteka Add Card koja prikazuje kartice Compare with Purchase Order"><figcaption><p>Kategorija <strong>Compare with Purchase Order</strong> — kartice za uparivanje cene, količine, tolerancije i stavki koje se koriste kroz ceo ovaj obrazac.</p></figcaption></figure>
 
 ---
 
-## When to Use This Pattern
+## Pregled obrasca
 
-Use this pattern when you need to:
-- ✅ Validate invoices against purchase orders
-- ✅ Detect pricing errors before payment
-- ✅ Identify quantity discrepancies
-- ✅ Enforce procurement controls
-- ✅ Prevent duplicate payments
-- ✅ Automate three-way matching
-- ✅ Reduce manual invoice review workload
+Ovaj obrazac pokazuje kako da implementirate sveobuhvatne tokove rada za uparivanje narudžbenica (PO) u DocBits-u. Uparivanje PO je kritičan kontrolni proces koji poredi podatke fakture sa podacima narudžbenice radi otkrivanja neslaganja pre odobravanja plaćanja.
 
-**Don't use this pattern when:**
-- ❌ No PO exists for the invoice (non-PO invoices)
-- ❌ PO data not available in DocBits
-- ❌ Manual review preferred over automation
-- ❌ PO matching not required by business policy
+**Šta ovaj obrazac radi:**
+1. Preuzima PO podatke na osnovu broja PO sa fakture
+2. Poredi stavke fakture sa stavkama PO
+3. Izračunava odstupanja (cena, količina, ukupni iznosi)
+4. Primenjuje pravila tolerancije
+5. Rutira za odobravanje ili eskalaciju na osnovu rezultata uparivanja
+6. Prati istoriju uparivanja i izuzetke
 
 ---
 
-## Understanding PO Matching
+## Kada koristiti ovaj obrazac
 
-### The Three-Way Match
+Koristite ovaj obrazac kada treba da:
+- ✅ Validirate fakture u odnosu na narudžbenice
+- ✅ Otkrijete greške u cenama pre plaćanja
+- ✅ Identifikujete neslaganja u količini
+- ✅ Sprovedete kontrole nabavke
+- ✅ Sprečite dupla plaćanja
+- ✅ Automatizujete trostruko uparivanje
+- ✅ Smanjite obim ručnog pregleda faktura
 
-**Traditional procurement control:**
+**Nemojte koristiti ovaj obrazac kada:**
+- ❌ Ne postoji PO za fakturu (fakture bez PO)
+- ❌ PO podaci nisu dostupni u DocBits-u
+- ❌ Ručni pregled se preferira u odnosu na automatizaciju
+- ❌ Uparivanje PO nije zahtevano poslovnom politikom
+
+---
+
+## Razumevanje uparivanja PO
+
+### Trostruko uparivanje
+
+**Tradicionalna kontrola nabavke:**
 ```
 Purchase Order (PO)  →  Created when ordering
         ↓
@@ -61,7 +61,7 @@ Invoice              →  Created by supplier
 THREE-WAY MATCH = PO + GR + Invoice all match
 ```
 
-**DocBits Implementation (Two-Way Match):**
+**DocBits implementacija (Dvostruko uparivanje):**
 ```
 Purchase Order (PO)  →  Imported to DocBits
         ↓
@@ -72,16 +72,16 @@ COMPARISON           →  Invoice vs PO validation
 
 ---
 
-## Variance Calculation Formulas
+## Formule za izračunavanje odstupanja
 
-### Unit Price Variance
+### Odstupanje jedinične cene
 
 **Formula:**
 ```
 Variance % = |(Invoice Unit Price - PO Unit Price)| / PO Unit Price × 100
 ```
 
-**Example:**
+**Primer:**
 ```
 PO Unit Price:       €100.00
 Invoice Unit Price:  €103.00
@@ -96,14 +96,14 @@ Result: 3% ≤ 5% → PASS ✅
 
 ---
 
-### Quantity Variance
+### Odstupanje količine
 
 **Formula:**
 ```
 Variance % = |(Invoice Quantity - PO Quantity)| / PO Quantity × 100
 ```
 
-**Example:**
+**Primer:**
 ```
 PO Quantity:        100 units
 Invoice Quantity:   98 units
@@ -118,14 +118,14 @@ Result: 2% ≤ 10% → PASS ✅
 
 ---
 
-### Total Amount Variance
+### Odstupanje ukupnog iznosa
 
 **Formula:**
 ```
 Variance % = |(Invoice Total - PO Total)| / PO Total × 100
 ```
 
-**Example:**
+**Primer:**
 ```
 PO Total:       €10,000.00
 Invoice Total:  €10,450.00
@@ -140,44 +140,44 @@ Result: 4.5% ≤ 5% → PASS ✅
 
 ---
 
-## Complete Workflow Example
+## Kompletan primer toka rada
 
-### Scenario: Invoice Validation with Tolerance-Based Routing
+### Scenario: Validacija fakture sa rutiranjem zasnovanim na toleranciji
 
-**Business Requirement:**
-- All invoices with PO reference must be validated
-- Price variance tolerance: 5%
-- Quantity variance tolerance: 10%
-- Total amount variance tolerance: 3%
-- Within tolerance: Auto-approve
-- Outside tolerance: Create review task
-- Missing PO: Escalate to procurement
+**Poslovni zahtev:**
+- Sve fakture sa PO referencom moraju biti validirane
+- Tolerancija odstupanja cene: 5%
+- Tolerancija odstupanja količine: 10%
+- Tolerancija odstupanja ukupnog iznosa: 3%
+- Unutar tolerancije: Automatsko odobravanje
+- Izvan tolerancije: Kreiranje zadatka pregleda
+- Nedostaje PO: Eskalacija ka nabavci
 
-**Workflow Cards Used:**
-1. CONDITION_DOC_FIELD_EXISTS - Check if PO number present
-2. PURCHASE_ORDER_FULL_MATCH - Attempt full match
-3. CONDITION_DOC_TO_PO_UNIT_PRICE - Check price variance
-4. CONDITION_DOC_TO_PO_QUANTITY - Check quantity variance
-5. CONDITION_DOC_TO_PO_TAX_LINES - Check tax alignment
-6. ACTION_SET_FIELD_TO_TEXT - Store match results
-7. tasks_create - Create review tasks
-8. ACTION_SEND_EMAIL_TO_GROUPS - Send notifications
+**Korišćene kartice toka rada:**
+1. CONDITION_DOC_FIELD_EXISTS - Provera da li je broj PO prisutan
+2. PURCHASE_ORDER_FULL_MATCH - Pokušaj potpunog uparivanja
+3. CONDITION_DOC_TO_PO_UNIT_PRICE - Provera odstupanja cene
+4. CONDITION_DOC_TO_PO_QUANTITY - Provera odstupanja količine
+5. CONDITION_DOC_TO_PO_TAX_LINES - Provera usklađenosti poreza
+6. ACTION_SET_FIELD_TO_TEXT - Čuvanje rezultata uparivanja
+7. tasks_create - Kreiranje zadataka pregleda
+8. ACTION_SEND_EMAIL_TO_GROUPS - Slanje obaveštenja
 
 ---
 
-## Step-by-Step Implementation
+## Implementacija korak po korak
 
-### Step 1: Check for PO Reference
+### Korak 1: Proverite PO referencu
 
-**Card:** CONDITION_DOC_FIELD_EXISTS or CONDITION_DOC_FIELD_CONTAINS
+**Kartica:** CONDITION_DOC_FIELD_EXISTS ili CONDITION_DOC_FIELD_CONTAINS
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Field: PO_Number
 Operator: IS NOT EMPTY
 ```
 
-**Logic:**
+**Logika:**
 ```
 IF PO_Number exists:
   → Continue to PO matching
@@ -187,18 +187,18 @@ ELSE:
   → Skip PO matching
 ```
 
-**Guide Reference:** [Condition Cards Guide](../and/condition-cards-complete-guide.md)
+**Referenca vodiča:** [Condition Cards Guide](../and/condition-cards-complete-guide.md)
 
 ---
 
-### Step 2: Retrieve PO Data
+### Korak 2: Preuzmite PO podatke
 
-**Automatic in DocBits:**
-- System looks up PO by PO_Number field
-- Retrieves PO line items
-- Makes data available for comparison
+**Automatski u DocBits-u:**
+- Sistem pretražuje PO po polju PO_Number
+- Preuzima stavke PO
+- Čini podatke dostupnim za poređenje
 
-**Manual Configuration (if needed):**
+**Ručna konfiguracija (ako je potrebno):**
 ```
 PO Source: DocBits Master Data
 PO Lookup Field: PO_Number
@@ -208,20 +208,20 @@ Include Closed POs: No (or Yes if policy allows)
 
 ---
 
-### Step 3: Full PO Match Check
+### Korak 3: Provera potpunog uparivanja PO
 
-**Card:** PURCHASE_ORDER_FULL_MATCH
+**Kartica:** PURCHASE_ORDER_FULL_MATCH
 
-**Purpose:** Quick check if everything matches perfectly
+**Svrha:** Brza provera da li se sve savršeno poklapa
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Match Level: Full Match
 Include: All line items, prices, quantities, totals
 Tolerance: None (exact match)
 ```
 
-**Logic:**
+**Logika:**
 ```
 IF Full Match = TRUE:
   → Set "PO_Match_Status" = "FULL MATCH"
@@ -234,17 +234,17 @@ IF Full Match = FALSE:
   → Identify specific variances
 ```
 
-**Result:**
-- **TRUE**: Perfect match, auto-approve
-- **FALSE**: Proceed to detailed checks
+**Rezultat:**
+- **TRUE**: Savršeno poklapanje, automatsko odobravanje
+- **FALSE**: Pređite na detaljne provere
 
 ---
 
-### Step 4: Check Unit Price Variance
+### Korak 4: Proverite odstupanje jedinične cene
 
-**Card:** CONDITION_DOC_TO_PO_UNIT_PRICE (v5 recommended)
+**Kartica:** CONDITION_DOC_TO_PO_UNIT_PRICE (v5 preporučeno)
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 5%
@@ -252,7 +252,7 @@ Operator: Variance is Less Than or Equal To
 Apply To: All line items
 ```
 
-**Step-by-Step:**
+**Korak po korak:**
 ```
 For each line item:
   1. Get Invoice Unit Price
@@ -262,7 +262,7 @@ For each line item:
   5. Store result
 ```
 
-**Example Calculation:**
+**Primer izračunavanja:**
 ```
 Line Item 1:
   Product: ABC123
@@ -283,15 +283,15 @@ Line Item 2:
 Overall Result: FAIL (one or more items failed)
 ```
 
-**Guide Reference:** [PO Matching Complete Guide - Unit Price](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
+**Referenca vodiča:** [PO Matching Complete Guide - Unit Price](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price-comparison)
 
 ---
 
-### Step 5: Check Quantity Variance
+### Korak 5: Proverite odstupanje količine
 
-**Card:** CONDITION_DOC_TO_PO_QUANTITY
+**Kartica:** CONDITION_DOC_TO_PO_QUANTITY
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Comparison Mode: Percentage Variance
 Tolerance: 10%
@@ -301,7 +301,7 @@ Allow Under-Delivery: Yes (within tolerance)
 Allow Over-Delivery: No (strict)
 ```
 
-**Logic:**
+**Logika:**
 ```
 For each line item:
   1. Get Invoice Quantity
@@ -313,7 +313,7 @@ For each line item:
      - Over-delivery: Reject (or apply stricter tolerance)
 ```
 
-**Example:**
+**Primer:**
 ```
 Line Item 1:
   Product: ABC123
@@ -332,15 +332,15 @@ Line Item 2:
   Result: FAIL ❌ (Escalate)
 ```
 
-**Guide Reference:** [PO Matching Complete Guide - Quantity](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
+**Referenca vodiča:** [PO Matching Complete Guide - Quantity](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity-comparison)
 
 ---
 
-### Step 6: Check Tax Lines Alignment
+### Korak 6: Proverite usklađenost poreskih stavki
 
-**Card:** CONDITION_DOC_TO_PO_TAX_LINES
+**Kartica:** CONDITION_DOC_TO_PO_TAX_LINES
 
-**Configuration:**
+**Konfiguracija:**
 ```
 Match Tax Codes: Yes
 Match Tax Rates: Yes
@@ -348,7 +348,7 @@ Match Tax Amounts: With 1% tolerance
 Tax Calculation: Verify recalculation
 ```
 
-**Validation:**
+**Validacija:**
 ```
 1. Check tax codes match (e.g., "VAT19" on both)
 2. Check tax rates match (19% on both)
@@ -357,7 +357,7 @@ Tax Calculation: Verify recalculation
 4. Allow small rounding differences
 ```
 
-**Example:**
+**Primer:**
 ```
 Invoice:
   Net Amount: €100.00
@@ -376,46 +376,46 @@ Result: Tax alignment PASS ✅
 
 ---
 
-### Step 7: Store Match Results
+### Korak 7: Sačuvajte rezultate uparivanja
 
-**Card:** ACTION_SET_FIELD_TO_TEXT (multiple instances)
+**Kartica:** ACTION_SET_FIELD_TO_TEXT (više instanci)
 
-**Configuration:**
+**Konfiguracija:**
 
-**Field 1: PO_Match_Status**
+**Polje 1: PO_Match_Status**
 ```
 Field: PO_Match_Status
 Value: {{CALCULATED}}
 Options: "FULL MATCH" | "WITHIN TOLERANCE" | "OUT OF TOLERANCE" | "NO MATCH"
 ```
 
-**Field 2: Price_Variance_Percent**
+**Polje 2: Price_Variance_Percent**
 ```
 Field: Price_Variance_Percent
 Value: {{CALCULATED_PRICE_VARIANCE}}
 Format: "4.5%" (example)
 ```
 
-**Field 3: Quantity_Variance_Percent**
+**Polje 3: Quantity_Variance_Percent**
 ```
 Field: Quantity_Variance_Percent
 Value: {{CALCULATED_QUANTITY_VARIANCE}}
 Format: "2.0%" (example)
 ```
 
-**Field 4: Match_Details**
+**Polje 4: Match_Details**
 ```
 Field: Match_Details
 Value: "Price Variance: 4.5% (within 5% tolerance)\nQuantity Variance: 2.0% (within 10% tolerance)\nTotal: PASS"
 ```
 
-**Guide Reference:** [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md)
+**Referenca vodiča:** [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md)
 
 ---
 
-### Step 8: Route Based on Match Results
+### Korak 8: Rutirajte na osnovu rezultata uparivanja
 
-**Scenario A: Perfect Match (Full Match)**
+**Scenario A: Savršeno poklapanje (Potpuno uparivanje)**
 ```
 IF PO_Match_Status = "FULL MATCH":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -426,7 +426,7 @@ IF PO_Match_Status = "FULL MATCH":
   → END ✅
 ```
 
-**Scenario B: Within Tolerance**
+**Scenario B: Unutar tolerancije**
 ```
 IF PO_Match_Status = "WITHIN TOLERANCE":
   1. Set Approval_Status = "AUTO APPROVED"
@@ -437,7 +437,7 @@ IF PO_Match_Status = "WITHIN TOLERANCE":
   → END ✅
 ```
 
-**Scenario C: Outside Tolerance (Minor)**
+**Scenario C: Izvan tolerancije (Manje)**
 ```
 IF Variance < 15% (minor exceptions):
   1. Set Match_Status = "REVIEW REQUIRED"
@@ -451,7 +451,7 @@ IF Variance < 15% (minor exceptions):
      IF Rejected: Return to supplier
 ```
 
-**Scenario D: Outside Tolerance (Major)**
+**Scenario D: Izvan tolerancije (Veliko)**
 ```
 IF Variance ≥ 15% (major exceptions):
   1. Set Match_Status = "ESCALATION REQUIRED"
@@ -467,7 +467,7 @@ IF Variance ≥ 15% (major exceptions):
   5. Wait for resolution
 ```
 
-**Scenario E: Missing PO or No Match**
+**Scenario E: Nedostaje PO ili nema poklapanja**
 ```
 IF PO not found OR no items match:
   1. Set Match_Status = "NO MATCH"
@@ -481,7 +481,7 @@ IF PO not found OR no items match:
 
 ---
 
-## Complete Workflow Diagram
+## Kompletan dijagram toka rada
 
 ```
 INVOICE ARRIVES
@@ -625,9 +625,9 @@ INVOICE ARRIVES
 
 ---
 
-## Configuration Templates
+## Šabloni za konfiguraciju
 
-### Template 1: Standard PO Matching (Conservative)
+### Šablon 1: Standardno uparivanje PO (Konzervativno)
 
 ```json
 {
@@ -661,11 +661,11 @@ INVOICE ARRIVES
 }
 ```
 
-**Use:** Strict control environment, low tolerance for variance
+**Upotreba:** Okruženje stroge kontrole, niska tolerancija za odstupanje
 
 ---
 
-### Template 2: Flexible PO Matching (Lenient)
+### Šablon 2: Fleksibilno uparivanje PO (Tolerantno)
 
 ```json
 {
@@ -699,11 +699,11 @@ INVOICE ARRIVES
 }
 ```
 
-**Use:** Flexible environment, trusted suppliers, higher tolerance
+**Upotreba:** Fleksibilno okruženje, pouzdani dobavljači, viša tolerancija
 
 ---
 
-### Template 3: Price-Only Matching
+### Šablon 3: Uparivanje samo cene
 
 ```json
 {
@@ -726,17 +726,17 @@ INVOICE ARRIVES
 }
 ```
 
-**Use:** When only price matters, quantity variations expected
+**Upotreba:** Kada je važna samo cena, a očekivane su varijacije u količini
 
 ---
 
-## Advanced Scenarios
+## Napredni scenariji
 
-### Scenario 1: Partial Delivery Handling
+### Scenario 1: Rukovanje delimičnom isporukom
 
-**Challenge:** Invoice for partial PO delivery
+**Izazov:** Faktura za delimičnu isporuku PO
 
-**Solution:**
+**Rešenje:**
 ```
 1. Allow quantity under-delivery within tolerance
 2. Track cumulative invoiced quantity vs PO quantity
@@ -745,7 +745,7 @@ INVOICE ARRIVES
 5. When 100% invoiced: Close PO automatically
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
   Calculate: Percentage = (Cumulative/PO) × 100
@@ -757,11 +757,11 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 
 ---
 
-### Scenario 2: Multi-Currency PO Matching
+### Scenario 2: Uparivanje PO sa više valuta
 
-**Challenge:** Invoice currency different from PO currency
+**Izazov:** Valuta fakture se razlikuje od valute PO
 
-**Solution:**
+**Rešenje:**
 ```
 1. Detect currency mismatch
 2. Get exchange rate (from API or master data)
@@ -770,7 +770,7 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 5. Store both original and converted amounts
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 IF Invoice_Currency ≠ PO_Currency:
   1. Get exchange rate for Invoice_Currency → PO_Currency
@@ -782,11 +782,11 @@ IF Invoice_Currency ≠ PO_Currency:
 
 ---
 
-### Scenario 3: Blanket PO / Framework Agreement
+### Scenario 3: Okvirni PO / Okvirni sporazum
 
-**Challenge:** Multiple invoices against single PO
+**Izazov:** Više faktura u odnosu na jedan PO
 
-**Solution:**
+**Rešenje:**
 ```
 1. Identify PO type = "Blanket"
 2. Track cumulative invoiced value
@@ -795,7 +795,7 @@ IF Invoice_Currency ≠ PO_Currency:
 5. Alert when approaching PO limit
 ```
 
-**Implementation:**
+**Implementacija:**
 ```
 IF PO_Type = "Blanket":
   Calculate: Total_Invoiced_To_Date
@@ -809,13 +809,13 @@ IF PO_Type = "Blanket":
 
 ---
 
-## Error Handling & Edge Cases
+## Rukovanje greškama i granični slučajevi
 
-### Edge Case 1: Missing Line Item on Invoice
+### Granični slučaj 1: Nedostaje stavka na fakturi
 
-**Problem:** Invoice has item not on PO
+**Problem:** Faktura ima stavku koja nije na PO
 
-**Solution:**
+**Rešenje:**
 ```
 1. Identify unmatched line items
 2. Calculate: Unmatched_Amount
@@ -829,11 +829,11 @@ IF PO_Type = "Blanket":
 
 ---
 
-### Edge Case 2: PO Closed but Invoice Arrives
+### Granični slučaj 2: PO zatvoren ali faktura stiže
 
-**Problem:** PO already closed, late invoice received
+**Problem:** PO je već zatvoren, primljena je zakasnela faktura
 
-**Solution:**
+**Rešenje:**
 ```
 1. Check: PO_Status = "CLOSED"
 2. Check: Invoice_Date vs PO_Close_Date
@@ -849,11 +849,11 @@ IF PO_Type = "Blanket":
 
 ---
 
-### Edge Case 3: Multiple POs on Single Invoice
+### Granični slučaj 3: Više PO na jednoj fakturi
 
-**Problem:** Invoice references multiple POs
+**Problem:** Faktura referencira više PO
 
-**Solution:**
+**Rešenje:**
 ```
 1. Parse invoice for multiple PO numbers
 2. For each PO:
@@ -866,107 +866,107 @@ IF PO_Type = "Blanket":
 
 ---
 
-## Performance Tips
+## Saveti za performanse
 
-✅ **Best Practices:**
-- Cache PO data to reduce lookups
-- Set appropriate tolerances (not too strict, not too lenient)
-- Use full match check first (faster)
-- Log all variance calculations
-- Review tolerance settings quarterly
-- Monitor auto-approval rates
-- Track common variance reasons
+✅ **Najbolje prakse:**
+- Keširajte PO podatke da smanjite pretrage
+- Postavite odgovarajuće tolerancije (ne previše stroge, ne previše tolerantne)
+- Prvo koristite proveru potpunog uparivanja (brže)
+- Beležite sva izračunavanja odstupanja
+- Pregledajte podešavanja tolerancije kvartalno
+- Pratite stope automatskog odobravanja
+- Pratite uobičajene razloge odstupanja
 
-❌ **Avoid:**
-- Zero tolerance (too strict, too many manual reviews)
-- Extremely high tolerance (defeats purpose)
-- Ignoring systematic variances
-- Not tracking variance trends
-- Processing without PO (when required)
-
----
-
-## Monitoring & Reporting
-
-### Key Metrics to Track
-
-1. **Match Rate:**
-   - Full Match: X%
-   - Within Tolerance: Y%
-   - Outside Tolerance: Z%
-
-2. **Variance Analysis:**
-   - Average price variance
-   - Average quantity variance
-   - Common variance reasons
-
-3. **Processing Efficiency:**
-   - Auto-approval rate
-   - Manual review rate
-   - Average review time
-
-4. **Supplier Performance:**
-   - Variances by supplier
-   - Match rate by supplier
-   - Problem suppliers
+❌ **Izbegavajte:**
+- Nultu toleranciju (previše strogo, previše ručnih pregleda)
+- Ekstremno visoku toleranciju (poništava svrhu)
+- Ignorisanje sistematskih odstupanja
+- Nepraćenje trendova odstupanja
+- Obradu bez PO (kada je zahtevano)
 
 ---
 
-## Testing Checklist
+## Praćenje i izveštavanje
 
-- [ ] Perfect match scenario (full match)
-- [ ] Within tolerance scenario (minor variance)
-- [ ] Outside tolerance scenario (major variance)
-- [ ] Missing PO scenario
-- [ ] Wrong PO number scenario
-- [ ] Partial delivery scenario
-- [ ] Over-delivery scenario
-- [ ] Currency mismatch scenario
-- [ ] Multiple POs scenario
-- [ ] Closed PO scenario
-- [ ] Tax variance scenario
-- [ ] Escalation workflow
-- [ ] Task creation
-- [ ] Email notifications
-- [ ] Field updates
-- [ ] Export after approval
+### Ključne metrike za praćenje
 
----
+1. **Stopa uparivanja:**
+   - Potpuno uparivanje: X%
+   - Unutar tolerancije: Y%
+   - Izvan tolerancije: Z%
 
-## Related Patterns
+2. **Analiza odstupanja:**
+   - Prosečno odstupanje cene
+   - Prosečno odstupanje količine
+   - Uobičajeni razlozi odstupanja
 
-### Patterns That Work Well Together:
+3. **Efikasnost obrade:**
+   - Stopa automatskog odobravanja
+   - Stopa ručnog pregleda
+   - Prosečno vreme pregleda
 
-- **[Task Management Pattern](task-management-pattern.md)** - Create review tasks for variances
-- **[Decision Logic Pattern](decision-logic-pattern.md)** - Complex routing based on variance levels
-- **[API Integration Pattern](api-integration-pattern.md)** - Fetch current pricing for comparison
-- **[Data Transformation Pattern](data-transformation-pattern.md)** - Currency conversion, unit conversion
+4. **Performanse dobavljača:**
+   - Odstupanja po dobavljaču
+   - Stopa uparivanja po dobavljaču
+   - Problematični dobavljači
 
 ---
 
-## Related Guides
+## Lista za proveru testiranja
 
-### Prerequisites
-- [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md) - All PO matching cards
-- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Condition logic
-- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Field operations
+- [ ] Scenario savršenog poklapanja (potpuno uparivanje)
+- [ ] Scenario unutar tolerancije (manje odstupanje)
+- [ ] Scenario izvan tolerancije (veliko odstupanje)
+- [ ] Scenario nedostajućeg PO
+- [ ] Scenario pogrešnog broja PO
+- [ ] Scenario delimične isporuke
+- [ ] Scenario prekomerne isporuke
+- [ ] Scenario neslaganja valute
+- [ ] Scenario sa više PO
+- [ ] Scenario zatvorenog PO
+- [ ] Scenario odstupanja poreza
+- [ ] Tok rada eskalacije
+- [ ] Kreiranje zadatka
+- [ ] Obaveštenja e-poštom
+- [ ] Ažuriranja polja
+- [ ] Izvoz nakon odobravanja
 
-### Related Cards
+---
+
+## Povezani obrasci
+
+### Obrasci koji dobro funkcionišu zajedno:
+
+- **[Task Management Pattern](task-management-pattern.md)** - Kreirajte zadatke pregleda za odstupanja
+- **[Decision Logic Pattern](decision-logic-pattern.md)** - Složeno rutiranje na osnovu nivoa odstupanja
+- **[API Integration Pattern](api-integration-pattern.md)** - Preuzmite trenutne cene za poređenje
+- **[Data Transformation Pattern](data-transformation-pattern.md)** - Konverzija valuta, konverzija jedinica
+
+---
+
+## Povezani vodiči
+
+### Preduslovi
+- [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md) - Sve kartice za uparivanje PO
+- [Condition Cards Guide](../and/condition-cards-complete-guide.md) - Uslovna logika
+- [Field Manipulation Guide](../then/document-field/field-manipulation-guide.md) - Operacije nad poljima
+
+### Povezane kartice
 - **PURCHASE_ORDER_FULL_MATCH** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#full-match)
 - **CONDITION_DOC_TO_PO_UNIT_PRICE** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#unit-price)
 - **CONDITION_DOC_TO_PO_QUANTITY** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#quantity)
 - **CONDITION_DOC_TO_PO_TAX_LINES** - [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#tax-lines)
 - **tasks_create** - [Task Assignment Guide](../then/task/task-assignment-guide.md)
 
-### Next Steps
-- Create review tasks: [Task Management Pattern](task-management-pattern.md)
-- Add email notifications: [Send Email Guide](../then/action/send-email-groups-guide.md)
-- Implement complex routing: [Decision Logic Pattern](decision-logic-pattern.md)
+### Sledeći koraci
+- Kreirajte zadatke pregleda: [Task Management Pattern](task-management-pattern.md)
+- Dodajte obaveštenja e-poštom: [Send Email Guide](../then/action/send-email-groups-guide.md)
+- Implementirajte složeno rutiranje: [Decision Logic Pattern](decision-logic-pattern.md)
 
 ---
 
-**Pattern Version:** 1.0
-**Last Updated:** October 23, 2025
-**Difficulty:** Medium-High
-**Estimated Time:** 60-90 minutes
-**Success Rate:** High (when properly configured)
+**Verzija obrasca:** 1.0
+**Poslednje ažuriranje:** 23. oktobar 2025.
+**Težina:** Srednja-visoka
+**Procenjeno vreme:** 60-90 minuta
+**Stopa uspeha:** Visoka (kada je ispravno konfigurisano)

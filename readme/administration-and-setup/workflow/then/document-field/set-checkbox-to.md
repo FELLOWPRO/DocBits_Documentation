@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (279).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to set a checkbox field to a specified value (true or false) based on the conditions defined in the **"Where"** and **"And"** sections. It provides a simple yet effective way to automate checkbox updates when certain criteria are met, ensuring streamlined document processing.
+Esta tarjeta de flujo de trabajo está diseñada para establecer un campo de casilla de verificación a un valor especificado (true o false) según las condiciones definidas en las secciones **"Where"** y **"And"**. Proporciona una forma sencilla pero eficaz de automatizar las actualizaciones de las casillas de verificación cuando se cumplen ciertos criterios, garantizando un procesamiento de documentos ágil.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Field Name:**
-   * **Description**: Specifies the field where the checkbox will be set.
-   * **Detail**: The checkbox field to be updated is identified by the field name.
+   * **Descripción**: Especifica el campo donde se establecerá la casilla de verificación.
+   * **Detalle**: El campo de casilla de verificación que se actualizará se identifica por el nombre del campo.
 2. **Boolean**
-   * **Description**: Defines the value that the checkbox field will be set to when the conditions in the **Where** and **And Sections** are both true.
-   * **Options**:
-     * **True**: The checkbox will be set to **true** if the conditions are met.
-     * **False**: The checkbox will be set to **false** if the conditions are met.
+   * **Descripción**: Define el valor al que se establecerá el campo de casilla de verificación cuando las condiciones de las secciones **Where** y **And** sean ambas verdaderas.
+   * **Opciones**:
+     * **True**: La casilla se establecerá en **true** si se cumplen las condiciones.
+     * **False**: La casilla se establecerá en **false** si se cumplen las condiciones.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Condition Evaluation**: The system evaluates the conditions in both the **"Where"** and **"And"**&#x20;
-* **Action Execution**: If both the **"Where"** and **"And Sections"** evaluate to true, the checkbox field will be updated to the specified value (true or false). If either condition is false, no actions are taken, and the checkbox remains as it was.
+* **Evaluación de la condición**: El sistema evalúa las condiciones de las secciones **"Where"** y **"And"**.&#x20;
+* **Ejecución de la acción**: Si las secciones **"Where"** y **"And"** se evalúan como verdaderas, el campo de casilla de verificación se actualizará al valor especificado (true o false). Si cualquiera de las condiciones es falsa, no se realiza ninguna acción y la casilla permanece como estaba.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-To configure this card, users need to:
+Para configurar esta tarjeta, los usuarios deben:
 
-1. **Specify the target checkbox field** that will be set to true or false when the conditions are met.
-2. **Choose the value (true or false)** that the checkbox will be set to upon condition evaluation.
-3. The card only executes its action if both conditions in the **"Where"** and **"And Sections"** are evaluated as true.
+1. **Especificar el campo de casilla de verificación de destino** que se establecerá en true o false cuando se cumplan las condiciones.
+2. **Elegir el valor (true o false)** al que se establecerá la casilla tras la evaluación de la condición.
+3. La tarjeta solo ejecuta su acción si ambas condiciones de las secciones **"Where"** y **"And"** se evalúan como verdaderas.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The **"Set Checkbox"** workflow card is a simple and effective automation tool to update checkbox fields based on specific conditions. By ensuring both **"Where"** and **"And Sections"** are met, it allows users to automate processes and reduce manual intervention, ensuring smoother and more efficient document processing.
+La tarjeta de flujo de trabajo **"Set Checkbox"** es una herramienta de automatización sencilla y eficaz para actualizar los campos de casilla de verificación según condiciones específicas. Al garantizar que se cumplan las secciones **"Where"** y **"And"**, permite a los usuarios automatizar procesos y reducir la intervención manual, garantizando un procesamiento de documentos más fluido y eficiente.

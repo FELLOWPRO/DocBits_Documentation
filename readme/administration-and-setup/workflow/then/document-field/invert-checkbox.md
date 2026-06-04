@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to invert the current state of a checkbox field. If the checkbox is checked (true), it will be unchecked (false), and vice versa. The inversion occurs based on the conditions set in the **"Where"** and **"And Sections."** This card helps automate workflows where a condition requires toggling a checkbox based on specific criteria.
+Esta tarjeta de flujo de trabajo está diseñada para invertir el estado actual de un campo de casilla de verificación. Si la casilla está marcada (true), se desmarcará (false), y viceversa. La inversión se produce según las condiciones establecidas en las secciones **"Where"** y **"And"**. Esta tarjeta ayuda a automatizar flujos de trabajo en los que una condición requiere alternar una casilla de verificación según criterios específicos.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Field Name**
-   * **Description**: Specifies the checkbox field to be inverted.&#x20;
-   * **Detail**: The selected checkbox field will have its state toggled from true to false or from false to true based on its current state.
+   * **Descripción**: Especifica el campo de casilla de verificación que se invertirá.&#x20;
+   * **Detalle**: El campo de casilla de verificación seleccionado verá su estado alternado de true a false o de false a true según su estado actual.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Condition Evaluation**: The system evaluates the conditions defined in the **"Where"** and **"And Sections"**:
-  * If **both conditions are true**, the **"Then Section"** action will execute, which in this case means the checkbox field will be toggled.
-  * If **either condition is false**, the card will not execute and no change will be made to the checkbox field.
-* **Action Execution**: If the conditions in the **"Where"** and **"And Sections"** evaluate to true, the checkbox field's state will be inverted:
-  * If the checkbox is checked (true), it will be unchecked (false).
-  * If the checkbox is unchecked (false), it will be checked (true).
+* **Evaluación de la condición**: El sistema evalúa las condiciones definidas en las secciones **"Where"** y **"And"**:
+  * Si **ambas condiciones son verdaderas**, se ejecutará la acción de la **sección "Then"**, lo que en este caso significa que se alternará el campo de casilla de verificación.
+  * Si **cualquiera de las condiciones es falsa**, la tarjeta no se ejecutará y no se realizará ningún cambio en el campo de casilla de verificación.
+* **Ejecución de la acción**: Si las condiciones de las secciones **"Where"** y **"And"** se evalúan como verdaderas, el estado del campo de casilla de verificación se invertirá:
+  * Si la casilla está marcada (true), se desmarcará (false).
+  * Si la casilla está sin marcar (false), se marcará (true).
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-To configure this card, users need to:
+Para configurar esta tarjeta, los usuarios deben:
 
-1. **Select the checkbox field** (Field Name) that will be inverted. The available checkbox fields in the document are listed for selection.
-2. The checkbox field will only be inverted if the conditions in both the **"Where"** and **"And Sections"** are true.
+1. **Seleccionar el campo de casilla de verificación** (Field Name) que se invertirá. Los campos de casilla de verificación disponibles en el documento se enumeran para su selección.
+2. El campo de casilla de verificación solo se invertirá si las condiciones de las secciones **"Where"** y **"And"** son verdaderas.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The **"Invert checkbox \[Field Name]"** workflow card offers a simple yet powerful automation tool to toggle checkbox values based on specific conditions. By reducing the need for manual checkbox adjustments, this card enhances efficiency in document processing and ensures consistency across workflows.
+La tarjeta de flujo de trabajo **"Invert checkbox \[Field Name]"** ofrece una herramienta de automatización sencilla pero potente para alternar los valores de las casillas de verificación según condiciones específicas. Al reducir la necesidad de ajustes manuales de las casillas, esta tarjeta mejora la eficiencia en el procesamiento de documentos y garantiza la coherencia en los flujos de trabajo.

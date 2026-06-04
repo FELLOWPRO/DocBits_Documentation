@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to compare item IDs between a purchase order and a related document to ensure that the correct items are included. The card evaluates whether the item ID in the purchase order matches the item ID in the document. This comparison can trigger actions if discrepancies are found, ensuring that the items in the document align with the purchase order.
+Deze workflow-kaart is ontworpen om item-ID's tussen een inkooporder en een gerelateerd document te vergelijken om ervoor te zorgen dat de juiste items zijn opgenomen. De kaart evalueert of het item-ID in de inkooporder overeenkomt met het item-ID in het document. Deze vergelijking kan acties triggeren als er afwijkingen worden gevonden, wat ervoor zorgt dat de items in het document overeenkomen met de inkooporder.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Any / All:**
-   * **Description**: Defines whether the condition applies to any or all instances of item ID comparisons.
-   * **Options**:
-     * **Any**: The condition is met if any item ID in the purchase order matches the item ID in the document.
-     * **All**: The condition is met only if all item IDs in the purchase order match the item IDs in the document.
+   * **Beschrijving**: Definieert of de voorwaarde van toepassing is op elke of alle gevallen van item-ID-vergelijkingen.
+   * **Opties**:
+     * **Any**: Aan de voorwaarde is voldaan als een item-ID in de inkooporder overeenkomt met het item-ID in het document.
+     * **All**: Aan de voorwaarde is alleen voldaan als alle item-ID's in de inkooporder overeenkomen met de item-ID's in het document.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the item ID on the purchase order to the item ID on the document.
-   * **Options**:
-     * **Equals (=)**: Verifies if the item ID in the purchase order exactly matches the item ID in the document.
-     * **Not Equals (≠)**: Ensures that the item ID in the purchase order does not match the item ID in the document.
+   * **Beschrijving**: Definieert de voorwaarde voor het vergelijken van het item-ID op de inkooporder met het item-ID op het document.
+   * **Opties**:
+     * **Equals (=)**: Verifieert of het item-ID in de inkooporder exact overeenkomt met het item-ID in het document.
+     * **Not Equals (≠)**: Zorgt ervoor dat het item-ID in de inkooporder niet overeenkomt met het item-ID in het document.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:** The system compares the item ID in the purchase order to the item ID in the document based on the selected operator. If the comparison condition is true (e.g., item IDs match or do not match), the workflow will proceed accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the item ID in the purchase order equals the item ID in the document), the workflow will proceed with the true action (e.g., approval or further processing).
-  * **False Condition**: If the condition evaluates to false (e.g., the item ID in the purchase order does not match the item ID in the document), the workflow will not proceed.
+* **Voorwaarde-evaluatie:** Het systeem vergelijkt het item-ID in de inkooporder met het item-ID in het document op basis van de geselecteerde operator. Als de vergelijkingsvoorwaarde true is (bijv. item-ID's komen wel of niet overeen), gaat de workflow dienovereenkomstig verder.
+* **Actie-uitvoering:**
+  * **True-voorwaarde**: Als de voorwaarde true oplevert (bijv. het item-ID in de inkooporder is gelijk aan het item-ID in het document), gaat de workflow verder met de true-actie (bijv. goedkeuring of verdere verwerking).
+  * **False-voorwaarde**: Als de voorwaarde false oplevert (bijv. het item-ID in de inkooporder komt niet overeen met het item-ID in het document), gaat de workflow niet verder.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* Users configure the card by selecting the item ID in both the purchase order and the document. They then choose the appropriate operator (Equals or Not Equals) to define how the item IDs will be compared. Lastly, users select whether the condition applies to any or all of the item IDs in the comparison.
+* Gebruikers configureren de kaart door het item-ID in zowel de inkooporder als het document te selecteren. Vervolgens kiezen ze de juiste operator (Equals of Not Equals) om te definiëren hoe de item-ID's worden vergeleken. Ten slotte selecteren gebruikers of de voorwaarde van toepassing is op elke of alle item-ID's in de vergelijking.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* An invoice lists an item with ID "ABC123" and the related purchase order also includes an item with ID "ABC123". Using the "Equals" operator, the card compares the item ID in the document with the item ID in the purchase order. Since the item IDs match, the workflow continues without issue
+* Een factuur vermeldt een item met ID "ABC123" en de gerelateerde inkooporder bevat ook een item met ID "ABC123". Met de operator "Equals" vergelijkt de kaart het item-ID in het document met het item-ID in de inkooporder. Omdat de item-ID's overeenkomen, gaat de workflow zonder problemen verder
 
-## **Conclusion:**
+## **Conclusie:**
 
-The "Item ID Comparison" workflow card ensures that the item IDs in documents align with those in purchase orders. This helps prevent discrepancies in item listings and ensures that the correct items are processed according to the purchase order. The ability to compare based on any or all instances provides flexibility in different use cases, improving the accuracy and efficiency of procurement workflows.
+De workflow-kaart "Item ID Comparison" zorgt ervoor dat de item-ID's in documenten overeenkomen met die in inkooporders. Dit helpt afwijkingen in itemvermeldingen te voorkomen en zorgt ervoor dat de juiste items volgens de inkooporder worden verwerkt. De mogelijkheid om op basis van elke of alle gevallen te vergelijken, biedt flexibiliteit in verschillende gebruikssituaties, wat de nauwkeurigheid en efficiëntie van inkoopworkflows verbetert.

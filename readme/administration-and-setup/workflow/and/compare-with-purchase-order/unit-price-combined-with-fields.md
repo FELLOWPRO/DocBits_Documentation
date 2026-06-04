@@ -2,46 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_workflow_change_status_pending.png" alt="Docbits Workflow Change Status Pending" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to evaluate whether the unit price, when combined with a specified field value (such as quantity, discount, or additional charges), meets a defined condition. The card compares the unit price and field value to a specified threshold to help ensure that pricing aligns with expectations. This comparison can trigger actions based on specific conditions, such as flagging discrepancies or automating approval processes in procurement or receiving workflows.
+Deze workflow-kaart is ontworpen om te evalueren of de eenheidsprijs, gecombineerd met een opgegeven veldwaarde (zoals hoeveelheid, korting of aanvullende kosten), aan een gedefinieerde voorwaarde voldoet. De kaart vergelijkt de eenheidsprijs en veldwaarde met een opgegeven drempel om te helpen ervoor te zorgen dat de prijs overeenkomt met de verwachtingen. Deze vergelijking kan acties triggeren op basis van specifieke voorwaarden, zoals het markeren van afwijkingen of het automatiseren van goedkeuringsprocessen in inkoop- of ontvangstworkflows.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field that contains the value to be combined with the unit price.
-   * **Detail:** This must match the exact identifier of the first field within the document.
+   * **Beschrijving:** Geeft het documentveld op dat de waarde bevat die met de eenheidsprijs wordt gecombineerd.
+   * **Detail:** Dit moet exact overeenkomen met de identifier van het eerste veld binnen het document.
 2. **Operator**
-   * **Description:** Defines the condition that will be applied to the comparison between the combined value and the specified value.
-   * **Options:**
-     * **Equals (=):** Checks if the combined value of the unit price and field matches the specified value.
-     * **Not Equals (≠):** Ensures the combined value of the unit price and field is different from the specified value.
-     * **Greater Than (>):** Verifies if the combined value is greater than the specified value.
-     * **Greater or Equals (≥):** Checks if the combined value is greater than or equal to the specified value.
-     * **Lesser Than (<):** Verifies if the combined value is less than the specified value.
-     * **Lesser or Equals (≤):** Checks if the combined value is less than or equal to the specified value.
+   * **Beschrijving:** Definieert de voorwaarde die wordt toegepast op de vergelijking tussen de gecombineerde waarde en de opgegeven waarde.
+   * **Opties:**
+     * **Equals (=):** Controleert of de gecombineerde waarde van de eenheidsprijs en het veld overeenkomt met de opgegeven waarde.
+     * **Not Equals (≠):** Zorgt ervoor dat de gecombineerde waarde van de eenheidsprijs en het veld verschilt van de opgegeven waarde.
+     * **Greater Than (>):** Verifieert of de gecombineerde waarde groter is dan de opgegeven waarde.
+     * **Greater or Equals (≥):** Controleert of de gecombineerde waarde groter dan of gelijk is aan de opgegeven waarde.
+     * **Lesser Than (<):** Verifieert of de gecombineerde waarde kleiner is dan de opgegeven waarde.
+     * **Lesser or Equals (≤):** Controleert of de gecombineerde waarde kleiner dan of gelijk is aan de opgegeven waarde.
 3. **Value**
-   * **Description:** Specifies the value against which the combined unit price and field value will be compared.
-   * **Detail:** The value has to be a numeric value.
+   * **Beschrijving:** Geeft de waarde op waarmee de gecombineerde eenheidsprijs en veldwaarde worden vergeleken.
+   * **Detail:** De waarde moet een numerieke waarde zijn.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:** The system evaluates the combined unit price and field value based on the selected operator and compares it to the specified value. The result of this evaluation determines whether the condition is true or false.
-* **Action Execution:**
-  * **True Condition:** If the comparison results in true (e.g., the combined value exceeds the specified value), the workflow proceeds with the true condition. This might trigger actions such as approval, document routing, or applying processing rules.
-  * **False Condition:** If the comparison results in false (e.g., the combined value does not meet the condition), the workflow proceeds with the false condition. This could trigger a notification, send the document for manual review, or stop the workflow.
+* **Voorwaarde-evaluatie:** Het systeem evalueert de gecombineerde eenheidsprijs en veldwaarde op basis van de geselecteerde operator en vergelijkt deze met de opgegeven waarde. Het resultaat van deze evaluatie bepaalt of de voorwaarde true of false is.
+* **Actie-uitvoering:**
+  * **True-voorwaarde:** Als de vergelijking true oplevert (bijv. de gecombineerde waarde overschrijdt de opgegeven waarde), gaat de workflow verder met de true-voorwaarde. Dit kan acties triggeren zoals goedkeuring, documentroutering of het toepassen van verwerkingsregels.
+  * **False-voorwaarde:** Als de vergelijking false oplevert (bijv. de gecombineerde waarde voldoet niet aan de voorwaarde), gaat de workflow verder met de false-voorwaarde. Dit kan een melding triggeren, het document ter handmatige beoordeling verzenden of de workflow stoppen.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* Users begin by selecting the document field(s) that contains the value(s) to be combined with the unit price. After selecting the field, they then choose the appropriate operator to define how the combined value will be compared to the specified value. Then they can set the value.
+* Gebruikers beginnen met het selecteren van het documentveld of de documentvelden die de waarde(n) bevatten die met de eenheidsprijs worden gecombineerd. Na het selecteren van het veld kiezen ze de juiste operator om te definiëren hoe de gecombineerde waarde met de opgegeven waarde wordt vergeleken. Vervolgens kunnen ze de waarde instellen.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* An invoice lists 50 units of a product at $20 each, totaling $1000. The related document has a quantity field with a value of 10. Using the "Greater Than" operator, the card compares the combined value of the unit price ($20) and the quantity (10), which equals $200. The card checks if the combined value is greater than $150 (the specified value). Since the combined value of $200 is greater than the threshold of $150, the workflow proceeds to trigger an approval for the document.
+* Een factuur vermeldt 50 eenheden van een product à $20 per stuk, in totaal $1000. Het gerelateerde document heeft een hoeveelheidsveld met de waarde 10. Met de operator "Greater Than" vergelijkt de kaart de gecombineerde waarde van de eenheidsprijs ($20) en de hoeveelheid (10), wat gelijk is aan $200. De kaart controleert of de gecombineerde waarde groter is dan $150 (de opgegeven waarde). Omdat de gecombineerde waarde van $200 groter is dan de drempel van $150, gaat de workflow verder om een goedkeuring voor het document te triggeren.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The "Unit Price Combined with Fields" workflow card ensures that pricing conditions are met by evaluating the combined value of the unit price and a specified field. By automating this comparison, organizations can ensure consistency and flag discrepancies in pricing or quantities before proceeding with approval, helping to streamline procurement and financial processes.
-
-
-
+De workflow-kaart "Unit Price Combined with Fields" zorgt ervoor dat aan prijsvoorwaarden wordt voldaan door de gecombineerde waarde van de eenheidsprijs en een opgegeven veld te evalueren. Door deze vergelijking te automatiseren, kunnen organisaties consistentie waarborgen en afwijkingen in prijzen of hoeveelheden markeren voordat ze met goedkeuring verdergaan, wat helpt om inkoop- en financiële processen te stroomlijnen.

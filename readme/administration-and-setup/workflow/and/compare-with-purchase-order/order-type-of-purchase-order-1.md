@@ -6,24 +6,24 @@ hidden: true
 
 <figure><img src="../../../../.gitbook/assets/docbits_workflow_order_type.png" alt="Docbits Workflow Order Type"><figcaption></figcaption></figure>
 
-## **Purpose**:
+## **Doel**:
 
-This DocBits card enables verification of the order type on a purchase order, ensuring that it aligns with specified criteria.
+Deze DocBits-kaart maakt verificatie van het ordertype op een inkooporder mogelijk en zorgt ervoor dat dit overeenkomt met opgegeven criteria.
 
-## **Functionality**:
+## **Functionaliteit**:
 
-* **Order Type Comparison**: This card compares the order type of the purchase order to a specified value, allowing users to verify whether the order type meets certain conditions.
-* **Any/All Selection**: Users can choose to apply the comparison to **any** (at least one selected order type matches) or **all** (all selected order types match) specified order types.
-* **Operator**: Users can set conditions for comparing the order type in the purchase order. Available operators include:
-  * **Equals (=)**: Confirms that the order type in the purchase order matches the specified type.
-  * **Not Equal (≠)**: Ensures that the order type in the purchase order does not match the specified type.
+* **Ordertypevergelijking**: Deze kaart vergelijkt het ordertype van de inkooporder met een opgegeven waarde, waardoor gebruikers kunnen verifiëren of het ordertype aan bepaalde voorwaarden voldoet.
+* **Any/All-selectie**: Gebruikers kunnen ervoor kiezen de vergelijking toe te passen op **any** (ten minste één geselecteerd ordertype komt overeen) of **all** (alle geselecteerde ordertypen komen overeen) opgegeven ordertypen.
+* **Operator**: Gebruikers kunnen voorwaarden instellen voor het vergelijken van het ordertype in de inkooporder. Beschikbare operatoren zijn:
+  * **Equals (=)**: Bevestigt dat het ordertype in de inkooporder overeenkomt met het opgegeven type.
+  * **Not Equal (≠)**: Zorgt ervoor dat het ordertype in de inkooporder niet overeenkomt met het opgegeven type.
 
-## **Usage**:
+## **Gebruik**:
 
-This card is particularly valuable for procurement teams, inventory planners, and operations managers who need to categorize and prioritize orders accurately. By ensuring that order types match the intended classifications, users can streamline order handling, optimize resource allocation, and adhere to service level agreements.
+Deze kaart is met name waardevol voor inkoopteams, voorraadplanners en operationeel managers die orders nauwkeurig moeten categoriseren en prioriteren. Door ervoor te zorgen dat ordertypen overeenkomen met de beoogde classificaties, kunnen gebruikers de orderafhandeling stroomlijnen, de toewijzing van middelen optimaliseren en zich houden aan serviceniveau-overeenkomsten.
 
-## **Example Scenario**:
+## **Voorbeeldscenario**:
 
-* A purchase order is categorized as "IGR." The system uses the "Equals" operator to verify that this order type aligns with the intended classification for processing.&#x20;
+* Een inkooporder is gecategoriseerd als "IGR". Het systeem gebruikt de operator "Equals" om te verifiëren dat dit ordertype overeenkomt met de beoogde classificatie voor verwerking.&#x20;
 
-By using the "Compare with Purchase Order: Order Type" card, organizations can automate the validation of order types, ensuring consistency in processing priorities and reducing manual classification errors.
+Door de kaart "Compare with Purchase Order: Order Type" te gebruiken, kunnen organisaties de validatie van ordertypen automatiseren, wat zorgt voor consistentie in verwerkingsprioriteiten en handmatige classificatiefouten vermindert.

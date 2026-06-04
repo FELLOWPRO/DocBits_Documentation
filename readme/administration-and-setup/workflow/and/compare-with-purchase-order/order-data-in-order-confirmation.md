@@ -2,48 +2,48 @@
 
 <figure><img src="../../../../.gitbook/assets/image (265).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Doel**
 
-This workflow card is designed to compare specific fields—**Unit Price**, **Discount**, or **Quantity**—between an order confirmation and a purchase order. It ensures consistency and compliance with agreed terms. Based on the comparison result, the card allows users to write specified text into a chosen field when the condition evaluates as **true** or **false**, streamlining document processing and reducing manual intervention.
+Deze workflow-kaart is ontworpen om specifieke velden — **Unit Price**, **Discount** of **Quantity** — te vergelijken tussen een orderbevestiging en een inkooporder. Hij zorgt voor consistentie en naleving van de afgesproken voorwaarden. Op basis van het vergelijkingsresultaat stelt de kaart gebruikers in staat om opgegeven tekst in een gekozen veld te schrijven wanneer de voorwaarde als **true** of **false** wordt geëvalueerd, wat de documentverwerking stroomlijnt en handmatige interventie vermindert.
 
-## **Components of the Card**
+## **Onderdelen van de kaart**
 
 1. **Order Data**
-   * **Description:** Specifies the field to be compared between the order confirmation and the purchase order.
-   * **Options:**
-     * **Unit Price**: Compares the unit price in both documents.
-     * **Discount**: Compares the discount percentage or value.
-     * **Quantity**: Compares the ordered quantity.
+   * **Beschrijving:** Geeft het veld op dat tussen de orderbevestiging en de inkooporder wordt vergeleken.
+   * **Opties:**
+     * **Unit Price**: Vergelijkt de eenheidsprijs in beide documenten.
+     * **Discount**: Vergelijkt het kortingspercentage of de kortingswaarde.
+     * **Quantity**: Vergelijkt de bestelde hoeveelheid.
 2. **Operator**
-   * **Description:** Defines the condition applied during the comparison.
-   * **Options:**
-     * **Equals (=):** Checks if the value in the selected field matches between the order confirmation and the purchase order.
-     * **Not Equals (≠):** Ensures the value in the selected field differs between the two documents.
+   * **Beschrijving:** Definieert de voorwaarde die tijdens de vergelijking wordt toegepast.
+   * **Opties:**
+     * **Equals (=):** Controleert of de waarde in het geselecteerde veld overeenkomt tussen de orderbevestiging en de inkooporder.
+     * **Not Equals (≠):** Zorgt ervoor dat de waarde in het geselecteerde veld verschilt tussen de twee documenten.
 3. **Text**
-   * **Description:** Specifies the text to be written into the target field upon condition evaluation.
-   * **Detail:** This text can include custom notes, status updates, or predefined values.
+   * **Beschrijving:** Geeft de tekst op die bij de evaluatie van de voorwaarde in het doelveld wordt geschreven.
+   * **Detail:** Deze tekst kan aangepaste notities, statusupdates of vooraf gedefinieerde waarden bevatten.
 4. **Field Name**
-   * **Description:** Specifies the field where the text will be written.
-   * **Detail:** The target field is selected from available editable fields within the system.
+   * **Beschrijving:** Geeft het veld op waar de tekst wordt geschreven.
+   * **Detail:** Het doelveld wordt geselecteerd uit de beschikbare bewerkbare velden binnen het systeem.
 5. **Condition Result**
-   * **Description:** Determines when the text should be written, based on the comparison result.
-   * **Options:**
-     * **True:** Writes the text if the comparison condition is met.
-     * **False:** Writes the text if the comparison condition is not met.
+   * **Beschrijving:** Bepaalt wanneer de tekst moet worden geschreven, op basis van het vergelijkingsresultaat.
+   * **Opties:**
+     * **True:** Schrijft de tekst als aan de vergelijkingsvoorwaarde wordt voldaan.
+     * **False:** Schrijft de tekst als niet aan de vergelijkingsvoorwaarde wordt voldaan.
 
-## **Functionality**
+## **Functionaliteit**
 
-* **Comparison Evaluation:** The system compares the selected field between the order confirmation and the purchase order using the specified operator.
-* **Action Execution:** If the condition evaluates as **true** or **false**, the specified text is written into the designated field.
+* **Vergelijkingsevaluatie:** Het systeem vergelijkt het geselecteerde veld tussen de orderbevestiging en de inkooporder met behulp van de opgegeven operator.
+* **Actie-uitvoering:** Als de voorwaarde als **true** of **false** wordt geëvalueerd, wordt de opgegeven tekst in het aangewezen veld geschreven.
 
-## **Setup and Configuration**
+## **Opzet en configuratie**
 
-* To set up this card, users first select the field to be compared—**Unit Price**, **Discount**, or **Quantity**. Then, they choose an operator to define the comparison condition, such as **equals** or **not equals**. Users specify the text to be written into a target field and select when this action should occur, based on the condition result (**true** or **false**).
+* Om deze kaart op te zetten, selecteren gebruikers eerst het te vergelijken veld — **Unit Price**, **Discount** of **Quantity**. Vervolgens kiezen ze een operator om de vergelijkingsvoorwaarde te definiëren, zoals **equals** of **not equals**. Gebruikers geven de tekst op die in een doelveld moet worden geschreven en selecteren wanneer deze actie moet plaatsvinden, op basis van het voorwaarderesultaat (**true** of **false**).
 
-## **Example Scenario**
+## **Voorbeeldscenario**
 
-* An order confirmation lists a unit price of $50 for a product, while the purchase order specifies a price of $45. Using the **Not Equals (≠)** operator, the card identifies the discrepancy and writes the text "Price Mismatch" into a designated field when the condition evaluates as **true**.
+* Een orderbevestiging vermeldt een eenheidsprijs van $50 voor een product, terwijl de inkooporder een prijs van $45 opgeeft. Met de operator **Not Equals (≠)** identificeert de kaart de afwijking en schrijft hij de tekst "Price Mismatch" in een aangewezen veld wanneer de voorwaarde als **true** wordt geëvalueerd.
 
-## **Conclusion**
+## **Conclusie**
 
-The "\[Unit Price/Discount/Quantity] in Order Confirmation" workflow card provides a practical solution for ensuring document consistency. By automatically flagging discrepancies and writing relevant text into specified fields, it enhances efficiency and reduces errors in order management processes.
+De workflow-kaart "\[Unit Price/Discount/Quantity] in Order Confirmation" biedt een praktische oplossing om documentconsistentie te waarborgen. Door automatisch afwijkingen te markeren en relevante tekst in opgegeven velden te schrijven, verhoogt hij de efficiëntie en vermindert hij fouten in orderbeheerprocessen.

@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Doel**
 
-This DocBits card is designed to facilitate the precise comparison of promised delivery dates on purchase orders with delivery dates specified for line items in a table. By integrating a tolerance value, the card ensures flexibility in monitoring delivery timelines, helping maintain inventory planning accuracy and customer satisfaction.
+Deze DocBits-kaart is ontworpen om de nauwkeurige vergelijking te faciliteren van toegezegde leverdata op inkooporders met leverdata die voor regelitems in een tabel zijn opgegeven. Door een tolerantiewaarde te integreren, zorgt de kaart voor flexibiliteit bij het monitoren van levertermijnen, wat helpt de nauwkeurigheid van de voorraadplanning en de klanttevredenheid te behouden.
 
-## **Components of the Card**
+## **Onderdelen van de kaart**
 
 1. **Operator**
-   * **Description:** Defines the condition applied to compare delivery dates.
-   * **Options:**
-     * **Equals (=):** Checks if the promised delivery date on the line item matches the purchase order’s delivery date.
-     * **Not Equal (≠):** Ensures the promised delivery date on the line item does not match the date on the purchase order.
-     * **Greater Than (>):** Verifies if the line item’s promised delivery date is later than the purchase order’s delivery date.
-     * **Greater or Equals (≥):** Checks if the line item’s promised delivery date equals or is later than the purchase order’s delivery date.
-     * **Less Than (<):** Confirms if the line item’s promised delivery date is earlier than the purchase order’s delivery date.
-     * **Less or Equals (≤):** Validates if the line item’s promised delivery date equals or is earlier than the purchase order’s delivery date.
+   * **Beschrijving:** Definieert de voorwaarde die wordt toegepast om leverdata te vergelijken.
+   * **Opties:**
+     * **Equals (=):** Controleert of de toegezegde leverdatum op het regelitem overeenkomt met de leverdatum van de inkooporder.
+     * **Not Equal (≠):** Zorgt ervoor dat de toegezegde leverdatum op het regelitem niet overeenkomt met de datum op de inkooporder.
+     * **Greater Than (>):** Verifieert of de toegezegde leverdatum van het regelitem later is dan de leverdatum van de inkooporder.
+     * **Greater or Equals (≥):** Controleert of de toegezegde leverdatum van het regelitem gelijk is aan of later is dan de leverdatum van de inkooporder.
+     * **Less Than (<):** Bevestigt of de toegezegde leverdatum van het regelitem eerder is dan de leverdatum van de inkooporder.
+     * **Less or Equals (≤):** Valideert of de toegezegde leverdatum van het regelitem gelijk is aan of eerder is dan de leverdatum van de inkooporder.
 2. **Value**
-   * **Description:** Specifies an allowable margin of error in the delivery date comparison.
-   * **Detail:** Users define the number of days by which the line item delivery date can differ from the promised delivery date.
+   * **Beschrijving:** Geeft een toegestane foutmarge in de vergelijking van leverdata op.
+   * **Detail:** Gebruikers definiëren het aantal dagen waarmee de leverdatum van het regelitem mag afwijken van de toegezegde leverdatum.
 
-## **Functionality**
+## **Functionaliteit**
 
-* **Condition Evaluation:**\
-  The card calculates the difference between the purchase order's promised delivery date and the delivery dates for line items in the table. The selected operator is then applied to determine if the condition is met.
-* **Action Execution:**
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Voorwaarde-evaluatie:**\
+  De kaart berekent het verschil tussen de toegezegde leverdatum van de inkooporder en de leverdata voor regelitems in de tabel. De geselecteerde operator wordt vervolgens toegepast om te bepalen of aan de voorwaarde wordt voldaan.
+* **Actie-uitvoering:**
+  * **True-voorwaarde:** Als het verschil in leverdatum binnen het tolerantiebereik valt en overeenkomt met de door de operator ingestelde voorwaarde, gaat de workflow verder.
+  * **False-voorwaarde:** Als niet aan de voorwaarde wordt voldaan, gaat de workflow niet verder.
 
-## **Setup and Configuration**
+## **Opzet en configuratie**
 
-* The operator is selected to define the desired comparison condition, such as equal to, greater than or less than. Finally, users specify a tolerance value in days, which allows for small variations in the comparison without triggering alerts.
+* De operator wordt geselecteerd om de gewenste vergelijkingsvoorwaarde te definiëren, zoals gelijk aan, groter dan of kleiner dan. Ten slotte geven gebruikers een tolerantiewaarde in dagen op, waarmee kleine variaties in de vergelijking worden toegestaan zonder waarschuwingen te triggeren.
 
-## **Example Scenario**
+## **Voorbeeldscenario**
 
-* A purchase order specifies a promised delivery date of December 1st. A line item in the table has a promised delivery date of December 3rd. With a tolerance value set to 2 days and the **Equals (≥)** operator selected, the card considers the delivery date within the acceptable range. No alert is triggered, ensuring minor variances are tolerated without disrupting operations.
+* Een inkooporder geeft een toegezegde leverdatum van 1 december op. Een regelitem in de tabel heeft een toegezegde leverdatum van 3 december. Met een tolerantiewaarde van 2 dagen en de operator **Equals (≥)** geselecteerd, beschouwt de kaart de leverdatum als binnen het acceptabele bereik. Er wordt geen waarschuwing getriggerd, zodat kleine afwijkingen worden getolereerd zonder de bedrijfsvoering te verstoren.
 
-## **Conclusion**
+## **Conclusie**
 
-The "Promised Delivery Date Comparison" card helps streamline supply chain operations by enabling precise monitoring of delivery timelines. With its ability to incorporate tolerances and flexible comparison operators, it ensures adherence to delivery expectations while avoiding unnecessary alerts for minor deviations. This enhances vendor management and overall workflow efficiency.
+De kaart "Promised Delivery Date Comparison" helpt de toeleveringsketenactiviteiten te stroomlijnen door nauwkeurige monitoring van levertermijnen mogelijk te maken. Met de mogelijkheid om toleranties en flexibele vergelijkingsoperatoren te integreren, zorgt hij voor naleving van de leververwachtingen en voorkomt hij onnodige waarschuwingen voor kleine afwijkingen. Dit verbetert het leveranciersbeheer en de algehele workflow-efficiëntie.

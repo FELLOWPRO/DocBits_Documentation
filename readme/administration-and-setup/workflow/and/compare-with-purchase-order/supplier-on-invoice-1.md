@@ -6,23 +6,23 @@ hidden: true
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Doel**
 
-This DocBits card allows detailed comparison, comparing the supplier of the invoice and that of the order confirmation. It should be ensured that the supplier who issued the invoice is the same as the one in the order confirmation.
+Deze DocBits-kaart maakt een gedetailleerde vergelijking mogelijk, waarbij de leverancier van de factuur en die van de orderbevestiging worden vergeleken. Er moet worden gewaarborgd dat de leverancier die de factuur heeft uitgegeven dezelfde is als die in de orderbevestiging.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Supplier on Invoice Supplier on Purchase Order:** This card checks whether the supplier in the invoice is the same as in the order confirmation or not.
-* **Operator Value:** Users can set specific conditions such as: Is the supplier who issued the invoice the same as in the PO or not. Available operators include:
-  * **Is (=):** Checks whether the supplier in the invoice matches the supplier in the order confirmation.
-  * **Is not (≠):** Ensures that the supplier who issued the invoice is the same as in the order confirmation.
+* **Supplier on Invoice Supplier on Purchase Order:** Deze kaart controleert of de leverancier in de factuur al dan niet dezelfde is als in de orderbevestiging.
+* **Operatorwaarde:** Gebruikers kunnen specifieke voorwaarden instellen, zoals: is de leverancier die de factuur heeft uitgegeven al dan niet dezelfde als in de PO. Beschikbare operatoren zijn:
+  * **Is (=):** Controleert of de leverancier in de factuur overeenkomt met de leverancier in de orderbevestiging.
+  * **Is not (≠):** Zorgt ervoor dat de leverancier die de factuur heeft uitgegeven dezelfde is als in de orderbevestiging.
 
-## **Usage:**&#x20;
+## **Gebruik:**&#x20;
 
-This Card is helpful to ensure the entire process is handled with the same supplier and everything fits together. This ensures that if there are discrepancies, attention is drawn to checking these discrepancies and not paying the invoice to an incorrect supplier who has nothing to do with the order and order confirmation.
+Deze kaart is nuttig om ervoor te zorgen dat het gehele proces met dezelfde leverancier wordt afgehandeld en dat alles op elkaar aansluit. Dit zorgt ervoor dat, als er afwijkingen zijn, de aandacht wordt gevestigd op het controleren van deze afwijkingen en dat de factuur niet wordt betaald aan een onjuiste leverancier die niets met de order en orderbevestiging te maken heeft.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* An order is placed, then the order confirmation comes and then the invoice is issued. The entire ordering process is carried out with one supplier. If this is not the case, the card can immediately determine that there are discrepancies between the suppliers and thus ensures that no incorrect payments are made and that the invoice is only made with the supplier who was also involved in the entire process.
+* Er wordt een order geplaatst, vervolgens komt de orderbevestiging en daarna wordt de factuur uitgegeven. Het gehele bestelproces wordt met één leverancier uitgevoerd. Is dit niet het geval, dan kan de kaart direct vaststellen dat er afwijkingen zijn tussen de leveranciers en zorgt hij er zo voor dat er geen onjuiste betalingen worden gedaan en dat de factuur alleen wordt gedaan met de leverancier die ook bij het gehele proces betrokken was.
 
-By using the “Supplier on Invoice … Supplier on Purchase Order” card, companies can automate the verification of suppliers who issue invoices and the associated order confirmations.
+Door de kaart "Supplier on Invoice … Supplier on Purchase Order" te gebruiken, kunnen bedrijven de verificatie automatiseren van leveranciers die facturen uitgeven en de bijbehorende orderbevestigingen.

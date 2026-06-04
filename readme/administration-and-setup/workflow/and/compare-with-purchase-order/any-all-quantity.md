@@ -4,70 +4,70 @@
 
 <figure><img src="../../../../.gitbook/assets/image (270).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to compare the quantity in a document against the tolerance defined in the purchase order. It allows users to evaluate if the quantity meets certain conditions, such as equality or exceeding the specified tolerance. In Version 4, the card extends functionality by adding the ability to compare multiple entities, including the purchase order, received quantities, and document quantities, offering greater flexibility in handling different scenarios.
+Deze workflow-kaart is ontworpen om de hoeveelheid in een document te vergelijken met de tolerantie die in de inkooporder is gedefinieerd. Hij stelt gebruikers in staat te evalueren of de hoeveelheid aan bepaalde voorwaarden voldoet, zoals gelijkheid of het overschrijden van de opgegeven tolerantie. In Version 4 breidt de kaart de functionaliteit uit met de mogelijkheid om meerdere entiteiten te vergelijken, waaronder de inkooporder, de ontvangen hoeveelheden en de documenthoeveelheden, wat meer flexibiliteit biedt bij het afhandelen van verschillende scenario's.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Any / All:**
-   * **Description**: Specifies how the comparison should be applied across multiple items or conditions.
-   * **Options**:
-     * **Any**: At least one of the conditions must be true for the action to be triggered.
-     * **All**: All conditions must be true for the action to proceed.
+   * **Beschrijving**: Geeft op hoe de vergelijking over meerdere items of voorwaarden moet worden toegepast.
+   * **Opties**:
+     * **Any**: Ten minste een van de voorwaarden moet waar zijn om de actie te triggeren.
+     * **All**: Alle voorwaarden moeten waar zijn om de actie te laten doorgaan.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to compare the document quantity against the specified tolerance.
-   * **Options**:
-     * **Equals (=)**: Checks if the quantity matches the specified tolerance value.
-     * **Not Equals (≠)**: Ensures the quantity is different from the specified tolerance value.
-     * **Greater Than (>)**: Verifies if the quantity is greater than the specified tolerance.
-     * **Greater or Equals (≥)**: Checks if the quantity is greater than or equal to the specified tolerance.
-     * **Lesser Than (<)**: Verifies if the quantity is less than the specified tolerance.
-     * **Lesser or Equals (≤)**: Checks if the quantity is less than or equal to the specified tolerance.
+   * **Beschrijving**: Definieert de voorwaarde die wordt toegepast om de documenthoeveelheid te vergelijken met de opgegeven tolerantie.
+   * **Opties**:
+     * **Equals (=)**: Controleert of de hoeveelheid overeenkomt met de opgegeven tolerantiewaarde.
+     * **Not Equals (≠)**: Zorgt ervoor dat de hoeveelheid verschilt van de opgegeven tolerantiewaarde.
+     * **Greater Than (>)**: Verifieert of de hoeveelheid groter is dan de opgegeven tolerantie.
+     * **Greater or Equals (≥)**: Controleert of de hoeveelheid groter dan of gelijk is aan de opgegeven tolerantie.
+     * **Lesser Than (<)**: Verifieert of de hoeveelheid kleiner is dan de opgegeven tolerantie.
+     * **Lesser or Equals (≤)**: Controleert of de hoeveelheid kleiner dan of gelijk is aan de opgegeven tolerantie.
 3. **Tolerance Amount:**
-   * **Description**: Specifies the tolerance value that the document quantity will be compared against.
-   * **Detail**: This value is numeric and represents the threshold of allowed variance in the quantity
+   * **Beschrijving**: Geeft de tolerantiewaarde op waarmee de documenthoeveelheid wordt vergeleken.
+   * **Detail**: Deze waarde is numeriek en vertegenwoordigt de drempel van de toegestane afwijking in de hoeveelheid
 4. **Tolerance Type:**
-   * **Description**: Defines the type of tolerance that will be applied.
-   * **Options**:
-     * **Percentage**: Tolerance is calculated as a percentage of the purchase order quantity.
-     * **Value**: Tolerance is specified as a fixed numeric value.
+   * **Beschrijving**: Definieert het type tolerantie dat wordt toegepast.
+   * **Opties**:
+     * **Percentage**: De tolerantie wordt berekend als een percentage van de inkooporderhoeveelheid.
+     * **Value**: De tolerantie wordt opgegeven als een vaste numerieke waarde.
 
-## **Additional Components in Version 4:**
+## **Aanvullende onderdelen in Version 4:**
 
-* **Comparison Type**: Selects the entities to compare, providing more flexibility in how the quantities are evaluated in Version 4.
-  * **Purchase Order to Document**: Compares the quantity in the purchase order to the quantity in the related document.
-  * **Received to Document**: Compares the received quantity to the quantity in the document.
-  * **Purchase Order to Received**: Compares the purchase order quantity to the received quantity.
+* **Comparison Type**: Selecteert de te vergelijken entiteiten, wat in Version 4 meer flexibiliteit biedt in de manier waarop de hoeveelheden worden geëvalueerd.
+  * **Purchase Order to Document**: Vergelijkt de hoeveelheid in de inkooporder met de hoeveelheid in het gerelateerde document.
+  * **Received to Document**: Vergelijkt de ontvangen hoeveelheid met de hoeveelheid in het document.
+  * **Purchase Order to Received**: Vergelijkt de inkooporderhoeveelheid met de ontvangen hoeveelheid.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:** The system compares the quantity in the document against the tolerance in the purchase order based on the selected operator and tolerance amount/type. In Version 4, the **Comparison Type** allows for different quantities to be compared, such as purchase order to received, or purchase order to document, providing a more dynamic comparison.
-* **Action Execution:**
-  * **True Condition**: If the comparison results in true (e.g., the document quantity is within the acceptable tolerance range), the workflow will proceed.
-  * **False Condition**: If the comparison results in false (e.g., the quantity does not meet the tolerance), the workflow will not proceed.
+* **Voorwaarde-evaluatie:** Het systeem vergelijkt de hoeveelheid in het document met de tolerantie in de inkooporder op basis van de geselecteerde operator en het tolerantiebedrag/-type. In Version 4 maakt de **Comparison Type** het mogelijk om verschillende hoeveelheden te vergelijken, zoals inkooporder tot ontvangen, of inkooporder tot document, wat een dynamischere vergelijking biedt.
+* **Actie-uitvoering:**
+  * **True-voorwaarde**: Als de vergelijking true oplevert (bijv. de documenthoeveelheid valt binnen het acceptabele tolerantiebereik), gaat de workflow verder.
+  * **False-voorwaarde**: Als de vergelijking false oplevert (bijv. de hoeveelheid voldoet niet aan de tolerantie), gaat de workflow niet verder.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
 **Version 3:**
 
-* Users configure the card by selecting the document quantity, defining the tolerance amount and tolerance type, and choosing the appropriate operator to compare the quantity against the tolerance. The card evaluates whether the quantity is within the tolerance threshold and proceeds with the "True" or "False" action based on the result.
+* Gebruikers configureren de kaart door de documenthoeveelheid te selecteren, het tolerantiebedrag en tolerantietype te definiëren en de juiste operator te kiezen om de hoeveelheid met de tolerantie te vergelijken. De kaart evalueert of de hoeveelheid binnen de tolerantiedrempel valt en gaat door met de "True"- of "False"-actie op basis van het resultaat.
 
 **Version 4:**
 
-* In addition to the configuration in Version 3, users can select the **Comparison Type**, allowing comparisons between different entities, such as:
+* Naast de configuratie in Version 3 kunnen gebruikers de **Comparison Type** selecteren, waardoor vergelijkingen tussen verschillende entiteiten mogelijk zijn, zoals:
   * **Purchase Order to Document**
   * **Received to Document**
   * **Purchase Order to Received**
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-An invoice shows that 100 units were delivered, but the purchase order only authorized 90 units. The tolerance amount is set at 10 units, and the tolerance type is absolute.
+Een factuur toont dat 100 eenheden werden geleverd, maar de inkooporder autoriseerde slechts 90 eenheden. Het tolerantiebedrag is ingesteld op 10 eenheden en het tolerantietype is absoluut.
 
-* **Version 3**: The card compares the 100 units in the document against the purchase order's tolerance of 90 units. If the quantity exceeds the tolerance, the card flags the discrepancy for further review.
-* **Version 4**: The card could compare the **purchase order quantity** (90 units) to the **received quantity** (100 units) or the **document quantity** (100 units). Depending on the selected **Comparison Type**, it checks if the difference between the two entities exceeds the tolerance and triggers the corresponding action.
+* **Version 3**: De kaart vergelijkt de 100 eenheden in het document met de tolerantie van 90 eenheden van de inkooporder. Als de hoeveelheid de tolerantie overschrijdt, markeert de kaart de afwijking voor verdere beoordeling.
+* **Version 4**: De kaart kan de **inkooporderhoeveelheid** (90 eenheden) vergelijken met de **ontvangen hoeveelheid** (100 eenheden) of de **documenthoeveelheid** (100 eenheden). Afhankelijk van de geselecteerde **Comparison Type** controleert hij of het verschil tussen de twee entiteiten de tolerantie overschrijdt en triggert hij de bijbehorende actie.
 
-## **Conclusion:**
+## **Conclusie:**
 
-* **Version 3**: This workflow card compares the document quantity with the purchase order tolerance, helping to ensure that discrepancies in quantity are flagged and handled appropriately.
-* **Version 4**: Extends this functionality by allowing users to compare different entities, such as purchase order to received or purchase order to document, providing greater flexibility in handling more complex scenarios. Version 4 ensures tighter control over procurement and receiving workflows, offering more dynamic comparisons and actions based on the chosen comparison type.
+* **Version 3**: Deze workflow-kaart vergelijkt de documenthoeveelheid met de inkoopordertolerantie, wat helpt om ervoor te zorgen dat afwijkingen in hoeveelheid worden gemarkeerd en op de juiste manier worden afgehandeld.
+* **Version 4**: Breidt deze functionaliteit uit door gebruikers verschillende entiteiten te laten vergelijken, zoals inkooporder tot ontvangen of inkooporder tot document, wat meer flexibiliteit biedt bij het afhandelen van complexere scenario's. Version 4 zorgt voor strakkere controle over inkoop- en ontvangstworkflows en biedt dynamischere vergelijkingen en acties op basis van het gekozen vergelijkingstype.

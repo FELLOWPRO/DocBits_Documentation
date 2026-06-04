@@ -2,25 +2,25 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_card_combined_price_2.png" alt="Docbits Card Gecombineerd Prijs 2"><figcaption></figcaption></figure>
 
-Purpose: This Docbits card is designed to streamline the verification process of invoices by comparing the total calculated price from the invoice against the corresponding purchase order.
+Doel: Deze Docbits-kaart is ontworpen om het verificatieproces van facturen te stroomlijnen door de totale berekende prijs van de factuur te vergelijken met de bijbehorende inkooporder.
 
-Functionality:
+Functionaliteit:
 
-* Combined Price of Quantity Difference: The card calculates the total price by multiplying the quantity of each item listed on the invoice by the price per unit and then subtracts this total from the amount listed on the related purchase order.
-* Operator Value: Users can set conditions to determine how the calculated total price difference should be compared to the purchase order amount. The following operators are available:
+* Combined Price of Quantity Difference: De kaart berekent de totale prijs door de hoeveelheid van elk op de factuur vermeld item te vermenigvuldigen met de prijs per eenheid en trekt dit totaal vervolgens af van het op de gerelateerde inkooporder vermelde bedrag.
+* Operatorwaarde: Gebruikers kunnen voorwaarden instellen om te bepalen hoe het berekende totale prijsverschil moet worden vergeleken met het inkooporderbedrag. De volgende operatoren zijn beschikbaar:
 *
-  * Equals (=): Checks if the total invoice amount is exactly the same as the purchase order amount.
-  * Not Equal (≠): Verifies that the total invoice amount differs from the purchase order amount.
-  * Greater Than (>): Ensures the invoice amount is greater than the purchase order amount.
-  * Less Than (<): Confirms the invoice amount is less than the purchase order amount.
+  * Equals (=): Controleert of het totale factuurbedrag exact gelijk is aan het inkooporderbedrag.
+  * Not Equal (≠): Verifieert dat het totale factuurbedrag verschilt van het inkooporderbedrag.
+  * Greater Than (>): Zorgt ervoor dat het factuurbedrag groter is dan het inkooporderbedrag.
+  * Less Than (<): Bevestigt dat het factuurbedrag kleiner is dan het inkooporderbedrag.
 
-Usage: This card is particularly useful for ERP Managers and financial accountants who need to automate and error-proof the reconciliation of invoices against purchase orders, ensuring financial accuracy and preventing overpayments or underpayments.
+Gebruik: Deze kaart is met name nuttig voor ERP-managers en financiële boekhouders die de afstemming van facturen op inkooporders willen automatiseren en foutbestendig willen maken, om financiële nauwkeurigheid te waarborgen en te veel of te weinig betalen te voorkomen.
 
-Example Scenario:
+Voorbeeldscenario:
 
-* An invoice lists a total of 100 units of a product at $50 per unit, totaling $5000. The related purchase order authorized a purchase of $4500. Using the "Greater Than" operator, the card identifies and flags the discrepancy for review.
+* Een factuur vermeldt in totaal 100 eenheden van een product à $50 per eenheid, in totaal $5000. De gerelateerde inkooporder autoriseerde een aankoop van $4500. Met de operator "Greater Than" identificeert en markeert de kaart de afwijking voor beoordeling.
 
-By using the "Compare with Purchase Order" card, users can automatically ensure that payments are consistent with purchase agreements, saving time and reducing human error in financial processing.
+Door de kaart "Compare with Purchase Order" te gebruiken, kunnen gebruikers er automatisch voor zorgen dat betalingen overeenkomen met inkoopovereenkomsten, wat tijd bespaart en menselijke fouten in de financiële verwerking vermindert.
 
 \
 \\

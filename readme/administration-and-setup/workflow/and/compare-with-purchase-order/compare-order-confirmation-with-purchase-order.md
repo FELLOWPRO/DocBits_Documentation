@@ -4,49 +4,49 @@
 
 <figure><img src="../../../../.gitbook/assets/image (267).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Doel:
 
-This DocBits card is designed to compare a specific order data field—such as quantity, discount, or unit price—between an order confirmation and a purchase order. By allowing a focused comparison of one field at a time, it ensures precision in validating key data points, maintaining order accuracy. **Version 4** expands this functionality by allowing comparisons between different entities such as the purchase order, received quantities, and the document itself, adding more flexibility and control to the workflow.
+Deze DocBits-kaart is ontworpen om een specifiek orderdataveld — zoals hoeveelheid, korting of eenheidsprijs — te vergelijken tussen een orderbevestiging en een inkooporder. Door een gerichte vergelijking van één veld tegelijk toe te staan, zorgt hij voor precisie bij het valideren van belangrijke datapunten en het handhaven van de ordernauwkeurigheid. **Version 4** breidt deze functionaliteit uit door vergelijkingen mogelijk te maken tussen verschillende entiteiten zoals de inkooporder, de ontvangen hoeveelheden en het document zelf, wat meer flexibiliteit en controle aan de workflow toevoegt.
 
-## Components of the Card:
+## Onderdelen van de kaart:
 
 1. **Any/All**&#x20;
-   * **Description:** Determines whether the condition applies to any or all lines in the order confirmation.\
-     **Options:**
-     * **Any**: The comparison will trigger if the selected field value in any line of the order confirmation matches the corresponding value in the purchase order.
-     * **All**: The comparison will trigger only if the selected field value in all lines of the order confirmation matches the corresponding value in the purchase order.
+   * **Beschrijving:** Bepaalt of de voorwaarde van toepassing is op elke of alle regels in de orderbevestiging.\
+     **Opties:**
+     * **Any**: De vergelijking wordt getriggerd als de geselecteerde veldwaarde in een willekeurige regel van de orderbevestiging overeenkomt met de bijbehorende waarde in de inkooporder.
+     * **All**: De vergelijking wordt alleen getriggerd als de geselecteerde veldwaarde in alle regels van de orderbevestiging overeenkomt met de bijbehorende waarde in de inkooporder.
 2. **Order Data Field**
-   * **Description**: Specifies the data field to be compared between the order confirmation and the purchase order.
-   * **Detail**: Users can select one of the following fields for comparison:
-     * **Quantity**: Compares the quantity ordered with the confirmed quantity.
-     * **Discount**: Validates that the discount in the confirmation matches the purchase order.
-     * **Unit Price**: Ensures that the unit price in the confirmation aligns with the purchase order.
+   * **Beschrijving**: Geeft het dataveld op dat tussen de orderbevestiging en de inkooporder wordt vergeleken.
+   * **Detail**: Gebruikers kunnen een van de volgende velden voor vergelijking selecteren:
+     * **Quantity**: Vergelijkt de bestelde hoeveelheid met de bevestigde hoeveelheid.
+     * **Discount**: Valideert dat de korting in de bevestiging overeenkomt met de inkooporder.
+     * **Unit Price**: Zorgt ervoor dat de eenheidsprijs in de bevestiging overeenkomt met de inkooporder.
 3. **Operator**
-   * **Description**: Defines the condition applied to the comparison of the selected data field.
-   * **Options**:
-     * **Equals (=)**: Confirms that the value matches the purchase order.
-     * **Not Equals (≠)**: Ensures the value is different from the purchase order.
-     * **Greater Than (>)**: Verifies that the value exceeds the purchase order’s value.
-     * **Greater or Equals (≥)**: Confirms that the value equals or exceeds the purchase order’s value.
-     * **Less Than (<)**: Checks that the value is below the purchase order’s value.
-     * **Less or Equals (≤)**: Confirms that the value is below or equals the purchase order’s value.
+   * **Beschrijving**: Definieert de voorwaarde die op de vergelijking van het geselecteerde dataveld wordt toegepast.
+   * **Opties**:
+     * **Equals (=)**: Bevestigt dat de waarde overeenkomt met de inkooporder.
+     * **Not Equals (≠)**: Zorgt ervoor dat de waarde verschilt van de inkooporder.
+     * **Greater Than (>)**: Verifieert dat de waarde de waarde van de inkooporder overschrijdt.
+     * **Greater or Equals (≥)**: Bevestigt dat de waarde gelijk is aan of groter is dan de waarde van de inkooporder.
+     * **Less Than (<)**: Controleert dat de waarde onder de waarde van de inkooporder ligt.
+     * **Less or Equals (≤)**: Bevestigt dat de waarde lager dan of gelijk is aan de waarde van de inkooporder.
 
-## **Additional Components in Version 4**:
+## **Aanvullende onderdelen in Version 4**:
 
-* **Comparison Type**: Selects the entities to compare. The options include:
-  * **Purchase Order to Document**: Compares the purchase order data with the related document.
-  * **Received to Document**: Compares the received data (e.g., quantities received) with the document.
-  * **Purchase Order to Received**: Compares the purchase order data with the received quantities.
+* **Comparison Type**: Selecteert de te vergelijken entiteiten. De opties zijn:
+  * **Purchase Order to Document**: Vergelijkt de inkooporderdata met het gerelateerde document.
+  * **Received to Document**: Vergelijkt de ontvangen data (bijv. ontvangen hoeveelheden) met het document.
+  * **Purchase Order to Received**: Vergelijkt de inkooporderdata met de ontvangen hoeveelheden.
 
-## Functionality:
+## Functionaliteit:
 
-* **Field Comparison**: The system compares the selected order data field (Unit Price, Discount, or Quantity) from the order confirmation to the corresponding value in the purchase order.
-* **Action Execution**: Based on the comparison result and operator condition, the card can trigger follow-up actions, such as notifications or alerts.
+* **Veldvergelijking**: Het systeem vergelijkt het geselecteerde orderdataveld (Unit Price, Discount of Quantity) uit de orderbevestiging met de bijbehorende waarde in de inkooporder.
+* **Actie-uitvoering**: Op basis van het vergelijkingsresultaat en de operatorvoorwaarde kan de kaart vervolgacties triggeren, zoals meldingen of waarschuwingen.
 
-## Example Scenario:
+## Voorbeeldscenario:
 
-* An order confirmation specifies a **unit price** of $50, while the purchase order states $45. Using the "Greater Than" operator, the card flags the discrepancy, enabling the procurement team to address it before processing.
+* Een orderbevestiging geeft een **eenheidsprijs** van $50 op, terwijl de inkooporder $45 vermeldt. Met de operator "Greater Than" markeert de kaart de afwijking, zodat het inkoopteam deze kan aanpakken voordat de verwerking plaatsvindt.
 
-## Conclusion:
+## Conclusie:
 
-This card simplifies the validation of individual order data fields, ensuring compliance with purchase order terms. By isolating one field at a time for comparison, it supports targeted reviews and error prevention in order processing.
+Deze kaart vereenvoudigt de validatie van afzonderlijke orderdatavelden en zorgt voor naleving van de inkoorder-voorwaarden. Door één veld tegelijk voor vergelijking te isoleren, ondersteunt hij gerichte beoordelingen en foutpreventie in de orderverwerking.

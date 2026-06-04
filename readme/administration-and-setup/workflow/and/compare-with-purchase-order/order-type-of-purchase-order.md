@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is designed to compare the order type of a purchase order against a specified value. The card checks whether the order type of the purchase order meets the specified condition (e.g., whether it equals, does not equal, is greater than, or meets another condition) to ensure that the purchase order is classified correctly. This comparison can trigger actions based on specific conditions, such as routing the order for further review or approval if discrepancies are found.
+Deze workflow-kaart is ontworpen om het ordertype van een inkooporder te vergelijken met een opgegeven waarde. De kaart controleert of het ordertype van de inkooporder aan de opgegeven voorwaarde voldoet (bijv. of het gelijk is aan, niet gelijk is aan, groter is dan of aan een andere voorwaarde voldoet) om ervoor te zorgen dat de inkooporder correct is geclassificeerd. Deze vergelijking kan acties triggeren op basis van specifieke voorwaarden, zoals het omleiden van de order voor verdere beoordeling of goedkeuring als er afwijkingen worden gevonden.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Any/All:**
-   * **Description**: Defines whether the condition applies to any or all purchase orders being evaluated in the workflow.
-   * **Options**:
-     * **Any**: The condition is met if any one of the purchase orders matches the specified condition.
-     * **All**: The condition is met only if all of the purchase orders meet the specified condition.
+   * **Beschrijving**: Definieert of de voorwaarde van toepassing is op elke of alle inkooporders die in de workflow worden geëvalueerd.
+   * **Opties**:
+     * **Any**: Aan de voorwaarde is voldaan als een van de inkooporders overeenkomt met de opgegeven voorwaarde.
+     * **All**: Aan de voorwaarde is alleen voldaan als alle inkooporders aan de opgegeven voorwaarde voldoen.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to compare the order type against a specified value.
-   * **Options**:
-     * **Equals (=)**: Checks if the order type matches the specified value.
-     * **Not Equals (≠)**: Ensures the order type is different from the specified value.
+   * **Beschrijving**: Definieert de voorwaarde die wordt toegepast om het ordertype met een opgegeven waarde te vergelijken.
+   * **Opties**:
+     * **Equals (=)**: Controleert of het ordertype overeenkomt met de opgegeven waarde.
+     * **Not Equals (≠)**: Zorgt ervoor dat het ordertype verschilt van de opgegeven waarde.
 3. **Order Type:**
-   * **Description**: Specifies the value to which the order type of the purchase order will be compared.
-   * **Detail**: The value must match the order type or classification in the system.
+   * **Beschrijving**: Geeft de waarde op waarmee het ordertype van de inkooporder wordt vergeleken.
+   * **Detail**: De waarde moet overeenkomen met het ordertype of de classificatie in het systeem.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:** The system evaluates the order type of the purchase order against the specified condition using the selected operator. If the order type matches (or does not match) the specified value, the workflow proceeds accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the order type matches the specified value), the workflow will continue, possibly triggering additional actions or processing steps.
-  * **False Condition**: If the condition evaluates to false (e.g., the order type does not match the specified value), the workflow will not continue.
+* **Voorwaarde-evaluatie:** Het systeem evalueert het ordertype van de inkooporder ten opzichte van de opgegeven voorwaarde met behulp van de geselecteerde operator. Als het ordertype overeenkomt (of niet overeenkomt) met de opgegeven waarde, gaat de workflow dienovereenkomstig verder.
+* **Actie-uitvoering:**
+  * **True-voorwaarde**: Als de voorwaarde true oplevert (bijv. het ordertype komt overeen met de opgegeven waarde), gaat de workflow verder en worden mogelijk aanvullende acties of verwerkingsstappen getriggerd.
+  * **False-voorwaarde**: Als de voorwaarde false oplevert (bijv. het ordertype komt niet overeen met de opgegeven waarde), gaat de workflow niet verder.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* Users configure the card by selecting the order type field of the purchase order and choosing the operator that defines how the order type will be compared. Then, they set the specified value and decide whether to apply the condition to any or all of the purchase order lines.
+* Gebruikers configureren de kaart door het ordertypeveld van de inkooporder te selecteren en de operator te kiezen die definieert hoe het ordertype wordt vergeleken. Vervolgens stellen ze de opgegeven waarde in en bepalen ze of de voorwaarde op elke of alle inkooporderregels van toepassing is.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A purchase order has the order type "Standard." The workflow is configured to check if the order type is "Urgent." Using the "Equals" operator, the card compares the order type and finds that it does not match the specified value, triggering the workflow to send the order for review due to the mismatch.
+* Een inkooporder heeft het ordertype "Standard". De workflow is geconfigureerd om te controleren of het ordertype "Urgent" is. Met de operator "Equals" vergelijkt de kaart het ordertype en stelt vast dat het niet overeenkomt met de opgegeven waarde, waardoor de workflow de order vanwege de mismatch ter beoordeling verzendt.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The "Order Type of Purchase Order" workflow card ensures that purchase orders are classified correctly according to their specified order type. By automating the comparison of order types, organizations can ensure that purchase orders are processed according to their expected classifications, helping to enforce compliance and streamline procurement workflows.
+De workflow-kaart "Order Type of Purchase Order" zorgt ervoor dat inkooporders correct worden geclassificeerd volgens hun opgegeven ordertype. Door de vergelijking van ordertypen te automatiseren, kunnen organisaties ervoor zorgen dat inkooporders volgens hun verwachte classificaties worden verwerkt, wat helpt om naleving af te dwingen en inkoopworkflows te stroomlijnen.

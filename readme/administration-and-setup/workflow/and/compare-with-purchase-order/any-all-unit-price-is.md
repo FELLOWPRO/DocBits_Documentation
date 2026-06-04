@@ -4,57 +4,57 @@
 
 <figure><img src="../../../../.gitbook/assets/image (273).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This workflow card is used to compare the unit price in a document against the unit price in a purchase order, ensuring that prices align within defined tolerance levels. The comparison can trigger actions if the unit price does not meet expectations. **Version 4** adds more flexibility by allowing users to choose different entities for comparison, providing a deeper level of control over pricing and procurement processes.
+Deze workflow-kaart wordt gebruikt om de eenheidsprijs in een document te vergelijken met de eenheidsprijs in een inkooporder, om ervoor te zorgen dat de prijzen binnen de gedefinieerde tolerantieniveaus overeenkomen. De vergelijking kan acties triggeren als de eenheidsprijs niet aan de verwachtingen voldoet. **Version 4** voegt meer flexibiliteit toe door gebruikers verschillende entiteiten voor vergelijking te laten kiezen, wat een dieper controleniveau biedt over de prijs- en inkoopprocessen.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Any / All:**
-   * **Description**: Defines whether the condition applies to any or all instances where the unit price is compared.
-   * **Options**:
-     * **Any**: The condition is met if any unit price meets the specified comparison condition.
-     * **All**: The condition is met only if all unit prices meet the specified comparison condition.
+   * **Beschrijving**: Definieert of de voorwaarde van toepassing is op elke of alle gevallen waarin de eenheidsprijs wordt vergeleken.
+   * **Opties**:
+     * **Any**: Aan de voorwaarde is voldaan als een eenheidsprijs aan de opgegeven vergelijkingsvoorwaarde voldoet.
+     * **All**: Aan de voorwaarde is alleen voldaan als alle eenheidsprijzen aan de opgegeven vergelijkingsvoorwaarde voldoen.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the unit price against the specified value.
-   * **Options**:
-     * **Equals (=)**: Verifies if the unit price matches the specified value.
-     * **Not Equals (≠)**: Ensures the unit price is different from the specified value.
-     * **Greater Than (>)**: Verifies if the unit price is greater than the specified value.
-     * **Greater or Equals (≥)**: Verifies if the unit price is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the unit price is less than the specified value.
-     * **Lesser or Equals (≤)**: Verifies if the unit price is less than or equal to the specified value.
+   * **Beschrijving**: Definieert de voorwaarde voor het vergelijken van de eenheidsprijs met de opgegeven waarde.
+   * **Opties**:
+     * **Equals (=)**: Verifieert of de eenheidsprijs overeenkomt met de opgegeven waarde.
+     * **Not Equals (≠)**: Zorgt ervoor dat de eenheidsprijs verschilt van de opgegeven waarde.
+     * **Greater Than (>)**: Verifieert of de eenheidsprijs groter is dan de opgegeven waarde.
+     * **Greater or Equals (≥)**: Verifieert of de eenheidsprijs groter dan of gelijk is aan de opgegeven waarde.
+     * **Lesser Than (<)**: Verifieert of de eenheidsprijs kleiner is dan de opgegeven waarde.
+     * **Lesser or Equals (≤)**: Verifieert of de eenheidsprijs kleiner dan of gelijk is aan de opgegeven waarde.
 
-## **Additional Components in Version 4:**
+## **Aanvullende onderdelen in Version 4:**
 
 **Comparison Type:**
 
-* **Description**: Allows users to choose what entities will be compared in addition to the unit price.
-* **Options**:
-  * **Purchase Order to Document**: Compares the unit price in the purchase order with the unit price in the document.
-  * **Received to Document**: Compares the received quantity to the unit price in the document.
-  * **Purchase Order to Received**: Compares the unit price in the purchase order with the received quantity.
+* **Beschrijving**: Maakt het mogelijk dat gebruikers kiezen welke entiteiten naast de eenheidsprijs worden vergeleken.
+* **Opties**:
+  * **Purchase Order to Document**: Vergelijkt de eenheidsprijs in de inkooporder met de eenheidsprijs in het document.
+  * **Received to Document**: Vergelijkt de ontvangen hoeveelheid met de eenheidsprijs in het document.
+  * **Purchase Order to Received**: Vergelijkt de eenheidsprijs in de inkooporder met de ontvangen hoeveelheid.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:** The system compares the unit price in the document to the unit price in the purchase order (or other selected entity, in Version 4) based on the selected operator. If the comparison is true, the workflow proceeds according to the next steps, either triggering approval or stopping the process.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., unit price in the document is greater than the specified value), the workflow will proceed with the true action (e.g., approval, document processing).
-  * **False Condition**: If the condition evaluates to false (e.g., unit price in the document does not meet the comparison), the workflow will not  proceed.
+* **Voorwaarde-evaluatie:** Het systeem vergelijkt de eenheidsprijs in het document met de eenheidsprijs in de inkooporder (of een andere geselecteerde entiteit, in Version 4) op basis van de geselecteerde operator. Als de vergelijking true is, gaat de workflow verder volgens de volgende stappen, waarbij goedkeuring wordt getriggerd of het proces wordt gestopt.
+* **Actie-uitvoering:**
+  * **True-voorwaarde**: Als de voorwaarde true oplevert (bijv. de eenheidsprijs in het document is groter dan de opgegeven waarde), gaat de workflow verder met de true-actie (bijv. goedkeuring, documentverwerking).
+  * **False-voorwaarde**: Als de voorwaarde false oplevert (bijv. de eenheidsprijs in het document voldoet niet aan de vergelijking), gaat de workflow niet verder.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Version 3 Setup:** Users configure the card by selecting the unit price in the document, choosing the appropriate operator to define how the unit price will be compared to the specified value, and setting the value to compare against. Additionally, users select whether the condition applies to any or all instances of the unit price comparison.
-* **Version 4 Setup:** In Version 4, users have the additional option to select the Comparison Type. This allows them to define the entities to compare, such as Purchase Order to Document, Received to Document, or Purchase Order to Received. This enhances the flexibility of the card to compare unit prices in more complex scenarios.
+* **Version 3-opzet:** Gebruikers configureren de kaart door de eenheidsprijs in het document te selecteren, de juiste operator te kiezen om te definiëren hoe de eenheidsprijs met de opgegeven waarde wordt vergeleken, en de waarde in te stellen waarmee wordt vergeleken. Daarnaast selecteren gebruikers of de voorwaarde van toepassing is op elke of alle gevallen van de eenheidsprijsvergelijking.
+* **Version 4-opzet:** In Version 4 hebben gebruikers de aanvullende optie om de Comparison Type te selecteren. Hiermee kunnen ze de te vergelijken entiteiten definiëren, zoals Purchase Order to Document, Received to Document of Purchase Order to Received. Dit vergroot de flexibiliteit van de kaart om eenheidsprijzen in complexere scenario's te vergelijken.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-*   **Version 3 Example:**&#x20;
+*   **Version 3-voorbeeld:**&#x20;
 
-    An invoice shows a unit price of $50. The related purchase order has a unit price of $45. The card compares the two unit prices using the "Greater Than" operator. Since the unit price in the document ($50) is greater than the unit price in the purchase order ($45), the workflow will trigger the true condition (e.g., send the document for review).
-* **Version 4 Example:**\
-  An invoice shows a unit price of $50, and the related purchase order authorized a unit price of $45. Additionally, the received quantity is 60 units. The card compares the received quantity to the document's unit price using the "Greater Than" operator. Since the received quantity (60) is greater than the unit price ($50), the workflow triggers the true condition, and the document is flagged for further review.
+    Een factuur toont een eenheidsprijs van $50. De gerelateerde inkooporder heeft een eenheidsprijs van $45. De kaart vergelijkt de twee eenheidsprijzen met de operator "Greater Than". Omdat de eenheidsprijs in het document ($50) groter is dan de eenheidsprijs in de inkooporder ($45), triggert de workflow de true-voorwaarde (bijv. het document ter beoordeling verzenden).
+* **Version 4-voorbeeld:**\
+  Een factuur toont een eenheidsprijs van $50 en de gerelateerde inkooporder autoriseerde een eenheidsprijs van $45. Daarnaast is de ontvangen hoeveelheid 60 eenheden. De kaart vergelijkt de ontvangen hoeveelheid met de eenheidsprijs van het document met de operator "Greater Than". Omdat de ontvangen hoeveelheid (60) groter is dan de eenheidsprijs ($50), triggert de workflow de true-voorwaarde en wordt het document gemarkeerd voor verdere beoordeling.
 
-## **Conclusion:**
+## **Conclusie:**
 
-Version 3 of the "Unit Price Comparison" workflow card is designed to ensure that unit prices in documents align with those in purchase orders, triggering actions based on defined conditions. Version 4 extends this functionality by introducing more complex comparison options, such as comparing purchase orders to documents, received quantities to documents, and purchase orders to received quantities. This added flexibility allows organizations to handle more sophisticated pricing and procurement scenarios, improving control and accuracy in their workflows.
+Version 3 van de workflow-kaart "Unit Price Comparison" is ontworpen om ervoor te zorgen dat eenheidsprijzen in documenten overeenkomen met die in inkooporders, en triggert acties op basis van gedefinieerde voorwaarden. Version 4 breidt deze functionaliteit uit met complexere vergelijkingsopties, zoals het vergelijken van inkooporders met documenten, ontvangen hoeveelheden met documenten en inkooporders met ontvangen hoeveelheden. Deze toegevoegde flexibiliteit stelt organisaties in staat geavanceerdere prijs- en inkoopscenario's af te handelen, wat de controle en nauwkeurigheid in hun workflows verbetert.

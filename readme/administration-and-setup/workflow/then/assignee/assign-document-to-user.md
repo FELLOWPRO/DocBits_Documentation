@@ -2,40 +2,40 @@
 
 <figure><img src="../../../../.gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Assign Document to User"** workflow card allows users to assign a document to a specific user, ensuring smooth workflow management by routing documents to the appropriate person. Version 3 adds the capability to use a decision tree to dynamically determine the user assignment based on available conditions.
+Met de workflow-kaart **"Assign Document to User"** kunnen gebruikers een document aan een specifieke gebruiker toewijzen, wat zorgt voor soepel workflowbeheer door documenten naar de juiste persoon te routeren. Version 3 voegt de mogelijkheid toe om een beslisboom te gebruiken om de gebruikerstoewijzing dynamisch te bepalen op basis van beschikbare voorwaarden.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **User**
-   * **Description:** Specifies the user to whom the document will be assigned.
-   * **Detail:** A dropdown list of all available users is provided for selection. The selected user will be assigned the document for further action.
+   * **Beschrijving:** Geeft de gebruiker op aan wie het document wordt toegewezen.
+   * **Detail:** Er wordt een dropdownlijst van alle beschikbare gebruikers geboden om uit te selecteren. De geselecteerde gebruiker krijgt het document toegewezen voor verdere actie.
 
-## **Additional Components in Version 3:**
+## **Aanvullende onderdelen in Version 3:**
 
 1. **Use Decision Tree**
-   * **Description:** If enabled, the card uses a decision tree to dynamically determine the user assignment.
-   * **Options:**
-     * **True:** Uses the decision tree for dynamic user assignment.
-     * **False:** Assigns the document to the selected user without using the decision tree.
+   * **Beschrijving:** Indien ingeschakeld, gebruikt de kaart een beslisboom om de gebruikerstoewijzing dynamisch te bepalen.
+   * **Opties:**
+     * **True:** Gebruikt de beslisboom voor dynamische gebruikerstoewijzing.
+     * **False:** Wijst het document toe aan de geselecteerde gebruiker zonder de beslisboom te gebruiken.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to the selected user, ensuring that the task is routed to the appropriate person for action. This helps with accountability and effective document management.
-* **Decision Tree (Version 3):**\
-  If the decision tree is enabled, the card evaluates the conditions defined within the tree to dynamically select the user for document assignment.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Documenttoewijzing:**\
+  De kaart wijst het document toe aan de geselecteerde gebruiker, zodat de taak naar de juiste persoon wordt gerouteerd voor actie. Dit helpt bij verantwoording en effectief documentbeheer.
+* **Beslisboom (Version 3):**\
+  Als de beslisboom is ingeschakeld, evalueert de kaart de binnen de boom gedefinieerde voorwaarden om de gebruiker voor documenttoewijzing dynamisch te selecteren.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Select User:**\
-  Choose the **user** from the dropdown list to whom the document will be assigned.
-* **Use Decision Tree (Version 3):**\
-  Enable or disable the use of the decision tree to dynamically select the user.
+* **Gebruiker selecteren:**\
+  Kies de **gebruiker** uit de dropdownlijst aan wie het document wordt toegewezen.
+* **Beslisboom gebruiken (Version 3):**\
+  Schakel het gebruik van de beslisboom in of uit om de gebruiker dynamisch te selecteren.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Assign Document to User"** workflow card facilitates efficient document routing by assigning it to the selected user, with the added flexibility in Version 3 to dynamically determine the user using a decision tree. This ensures a more adaptive and efficient workflow process.
+De workflow-kaart **"Assign Document to User"** faciliteert efficiënte documentroutering door deze aan de geselecteerde gebruiker toe te wijzen, met de toegevoegde flexibiliteit in Version 3 om de gebruiker dynamisch te bepalen met een beslisboom. Dit zorgt voor een aanpasbaarder en efficiënter workflowproces.

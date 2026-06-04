@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card assigns a document to a sub-organization dynamically, based on a specified field in the document. If no matching sub-organization is found, the card uses a predefined fallback sub-organization.
+De workflow-kaart **"Assign Document to Matching Sub-Organization Based on Field"** wijst een document dynamisch toe aan een suborganisatie, op basis van een opgegeven veld in het document. Als er geen overeenkomende suborganisatie wordt gevonden, gebruikt de kaart een vooraf gedefinieerde terugval-suborganisatie.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field to be used for determining the matching sub-organization.
-   * **Detail:** The card looks for a value in the specified field to match with an available sub-organization.
+   * **Beschrijving:** Geeft het documentveld op dat wordt gebruikt om de overeenkomende suborganisatie te bepalen.
+   * **Detail:** De kaart zoekt naar een waarde in het opgegeven veld om deze te matchen met een beschikbare suborganisatie.
 2. **Sub-Organization (Fallback)**
-   * **Description:** Defines the fallback sub-organization to be used if no match is found in the specified field.
-   * **Detail:** If the field value does not match any sub-organization, the document will be assigned to the fallback sub-organization selected.
+   * **Beschrijving:** Definieert de terugval-suborganisatie die wordt gebruikt als er geen match in het opgegeven veld wordt gevonden.
+   * **Detail:** Als de veldwaarde met geen enkele suborganisatie overeenkomt, wordt het document toegewezen aan de geselecteerde terugval-suborganisatie.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Dynamic Assignment:**\
-  The card checks the value of the specified field and assigns the document to the sub-organization that matches this value.
-* **Fallback Mechanism:**\
-  If no matching sub-organization is found, the document is assigned to the fallback sub-organization.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Dynamische toewijzing:**\
+  De kaart controleert de waarde van het opgegeven veld en wijst het document toe aan de suborganisatie die met deze waarde overeenkomt.
+* **Terugvalmechanisme:**\
+  Als er geen overeenkomende suborganisatie wordt gevonden, wordt het document toegewezen aan de terugval-suborganisatie.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Select Field Name:**\
-  Choose the field from the document that contains the value to match with a sub-organization.
-* **Select Fallback Sub-Organization:**\
-  Choose the sub-organization that will be used if no match is found in the document field.
+* **Field Name selecteren:**\
+  Kies het veld uit het document dat de waarde bevat om te matchen met een suborganisatie.
+* **Terugval-suborganisatie selecteren:**\
+  Kies de suborganisatie die wordt gebruikt als er geen match in het documentveld wordt gevonden.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card offers flexibility by dynamically routing documents to the appropriate sub-organization, with an added fallback option to ensure no document is left unassigned.
+De workflow-kaart **"Assign Document to Matching Sub-Organization Based on Field"** biedt flexibiliteit door documenten dynamisch naar de juiste suborganisatie te routeren, met een toegevoegde terugvaloptie om ervoor te zorgen dat geen enkel document niet-toegewezen blijft.

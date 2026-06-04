@@ -2,36 +2,36 @@
 
 <figure><img src="../../../../.gitbook/assets/image (304).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Doel:
 
-The **"Assign to Group"** workflow card facilitates the assignment of documents to a specific **group** within the system. This ensures that the document is processed by the appropriate team, streamlining workflow. Enhanced in later versions, it introduces decision tree functionality for dynamic group assignment.
+De workflow-kaart **"Assign to Group"** faciliteert de toewijzing van documenten aan een specifieke **groep** binnen het systeem. Dit zorgt ervoor dat het document door het juiste team wordt verwerkt, wat de workflow stroomlijnt. In latere versies uitgebreid, introduceert hij beslisboomfunctionaliteit voor dynamische groepstoewijzing.
 
-## Components of the Card:
+## Onderdelen van de kaart:
 
 1. **Groups**
-   * **Description:** Specifies the **group** to which the document will be assigned.
-   * **Detail:** Selected from a dropdown list of available **groups**.
+   * **Beschrijving:** Geeft de **groep** op waaraan het document wordt toegewezen.
+   * **Detail:** Geselecteerd uit een dropdownlijst van beschikbare **groepen**.
 
 
 
-## **Additional Components in Version 3**
+## **Aanvullende onderdelen in Version 3**
 
-1. **Decision Tree (Version 3 Only)**
-   * **Description:** Allows the use of a decision tree to dynamically determine the **group** to which the document should be assigned.
-   * **Options:**
-     * **True:** Enables decision tree processing.
-     * **False:** Disables decision tree processing.
+1. **Decision Tree (alleen Version 3)**
+   * **Beschrijving:** Maakt het gebruik van een beslisboom mogelijk om de **groep** waaraan het document moet worden toegewezen dynamisch te bepalen.
+   * **Opties:**
+     * **True:** Schakelt verwerking via de beslisboom in.
+     * **False:** Schakelt verwerking via de beslisboom uit.
 
-## Functionality:
+## Functionaliteit:
 
-* **Condition Evaluation:** The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:** Assigns the document to the selected **group**. In **Version 3**, the **decision tree** determines the target group dynamically if enabled.
+* **Voorwaarde-evaluatie:** De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Documenttoewijzing:** Wijst het document toe aan de geselecteerde **groep**. In **Version 3** bepaalt de **beslisboom** de doelgroep dynamisch indien ingeschakeld.
 
-## Setup and Configuration:
+## Opzet en configuratie:
 
-* **Select Group:** Choose the **group** from the dropdown list to assign the document.
-* **Use Decision Tree (Version 3 Only):** Enable this option if the **decision tree** should be used for dynamic assignment.
+* **Groep selecteren:** Kies de **groep** uit de dropdownlijst om het document toe te wijzen.
+* **Beslisboom gebruiken (alleen Version 3):** Schakel deze optie in als de **beslisboom** voor dynamische toewijzing moet worden gebruikt.
 
-## Conclusion:
+## Conclusie:
 
-The **"Assign to Group"** workflow card automates document assignment to predefined **groups**, enhancing team coordination. **Version 3** introduces the ability to dynamically assign groups based on decision tree logic.
+De workflow-kaart **"Assign to Group"** automatiseert documenttoewijzing aan vooraf gedefinieerde **groepen**, wat de teamcoördinatie verbetert. **Version 3** introduceert de mogelijkheid om groepen dynamisch toe te wijzen op basis van beslisboomlogica.

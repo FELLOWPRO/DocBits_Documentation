@@ -2,29 +2,29 @@
 
 <figure><img src="../../../../.gitbook/assets/image (307).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Doel:
 
-The **"Run Workflow"** card allows users to dynamically execute a selected workflow from a list of available workflows. This card is useful for automating processes where multiple workflows are interconnected, enabling streamlined operations.
+Met de kaart **"Run Workflow"** kunnen gebruikers dynamisch een geselecteerde workflow uitvoeren uit een lijst van beschikbare workflows. Deze kaart is nuttig voor het automatiseren van processen waarbij meerdere workflows met elkaar verbonden zijn, wat gestroomlijnde bewerkingen mogelijk maakt.
 
-## Components of the Card:
+## Onderdelen van de kaart:
 
 1. **Workflow**
-   * **Description:** Specifies the workflow to be executed when the conditions evaluate as true.
-   * **Detail:** A dropdown list of all available workflows is provided for selection.
+   * **Beschrijving:** Geeft de workflow op die wordt uitgevoerd wanneer de voorwaarden als true worden geëvalueerd.
+   * **Detail:** Er wordt een dropdownlijst van alle beschikbare workflows geboden om uit te selecteren.
 
-## Functionality:
+## Functionaliteit:
 
-* **Condition Evaluation:** The card executes the selected workflow only if both the **"Where"** and **"And Sections"** evaluate as true.
-  * If either condition is false, no action is taken, and the workflow remains untriggered.
-* **Workflow Execution:**
-  * When the conditions are met, the specified workflow is triggered automatically.
-  * If the conditions are not met, no workflow is executed.
+* **Voorwaarde-evaluatie:** De kaart voert de geselecteerde workflow alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+  * Als een van beide voorwaarden false is, wordt er geen actie ondernomen en blijft de workflow ongetriggerd.
+* **Workflow-uitvoering:**
+  * Wanneer aan de voorwaarden wordt voldaan, wordt de opgegeven workflow automatisch getriggerd.
+  * Als niet aan de voorwaarden wordt voldaan, wordt er geen workflow uitgevoerd.
 
-## Setup and Configuration:
+## Opzet en configuratie:
 
-1. **Select Workflow:** Choose the workflow to be triggered from the **dropdown list** of available workflows.
-2. **Define Conditions:** Configure the **"Where"** and **"And Sections"** to specify the criteria that must be met for the workflow to execute.
+1. **Workflow selecteren:** Kies de te triggeren workflow uit de **dropdownlijst** van beschikbare workflows.
+2. **Voorwaarden definiëren:** Configureer de **"Where"**- en **"And"**-secties om de criteria op te geven waaraan moet worden voldaan om de workflow uit te voeren.
 
-## Conclusion:
+## Conclusie:
 
-The **"Run Workflow"** card offers a convenient and efficient way to link workflows, automating multi-step processes with ease. By ensuring the conditions in the **"Where"** and **"And Sections"** are met, users can execute workflows dynamically and reduce manual intervention.
+De kaart **"Run Workflow"** biedt een handige en efficiënte manier om workflows aan elkaar te koppelen en zo meerstapsprocessen eenvoudig te automatiseren. Door ervoor te zorgen dat aan de voorwaarden in de **"Where"**- en **"And"**-secties wordt voldaan, kunnen gebruikers workflows dynamisch uitvoeren en handmatige interventie verminderen.

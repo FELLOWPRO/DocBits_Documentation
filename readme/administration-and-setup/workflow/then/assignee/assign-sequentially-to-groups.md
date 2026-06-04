@@ -1,33 +1,33 @@
 # Assign Sequentially to Groups
 
-## **Purpose**
+## **Doel**
 
-The "**Assign the Document Sequentially to the Groups**" workflow card enables the sequential assignment of documents to one or more selected groups. The priority value determines the order of assignment, with lower numbers representing higher priority.
+Met de workflow-kaart "**Assign the Document Sequentially to the Groups**" kunnen documenten sequentieel worden toegewezen aan een of meer geselecteerde groepen. De prioriteitswaarde bepaalt de toewijzingsvolgorde, waarbij lagere getallen een hogere prioriteit vertegenwoordigen.
 
-## **Components of the Card**
+## **Onderdelen van de kaart**
 
 1. **Group**
-   * **Description**: Specifies the groups that will receive the document assignment.
-   * **Detail**: A dropdown menu where one or multiple groups can be selected for document assignment.
+   * **Beschrijving**: Geeft de groepen op die de documenttoewijzing ontvangen.
+   * **Detail**: Een dropdownmenu waarin een of meerdere groepen voor documenttoewijzing kunnen worden geselecteerd.
 2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the groups can be set.
-   * **Detail**: Lower numbers signify higher priority, ensuring that documents are assigned to groups in ascending order of priority.
+   * **Beschrijving**: Een numeriek invoerveld waarin het prioriteitsniveau voor de groepen kan worden ingesteld.
+   * **Detail**: Lagere getallen duiden op een hogere prioriteit, zodat documenten in oplopende volgorde van prioriteit aan groepen worden toegewezen.
 
-## **Functionality**
+## **Functionaliteit**
 
-* **Document Assignment**:\
-  The card assigns documents sequentially to the selected groups based on their priority values.\
-  If multiple groups share the same priority, documents are assigned in the order the groups were selected.
+* **Documenttoewijzing**:\
+  De kaart wijst documenten sequentieel toe aan de geselecteerde groepen op basis van hun prioriteitswaarden.\
+  Als meerdere groepen dezelfde prioriteit delen, worden documenten toegewezen in de volgorde waarin de groepen zijn geselecteerd.
 
-## **Setup and Configuration**
+## **Opzet en configuratie**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Group** field:
-   * Select one or multiple groups from the dropdown menu.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Voeg de kaart **Assign the Document Sequentially** toe aan uw workflow.
+2. Configureer het veld **Group**:
+   * Selecteer een of meerdere groepen uit het dropdownmenu.
+3. Configureer het veld **Priority (Value)**:
+   * Voer een numerieke waarde in om de toewijzingsprioriteit in te stellen.
+4. Sla op en activeer de workflow om de configuratie toe te passen.
 
-## **Conclusion**
+## **Conclusie**
 
-The "Assign the Document Sequentially to Groups" workflow card ensures efficient document allocation to one or more groups based on priority. This feature supports flexible and organized document processing across multiple teams or departments.
+De workflow-kaart "Assign the Document Sequentially to Groups" zorgt voor een efficiënte documenttoewijzing aan een of meer groepen op basis van prioriteit. Deze functie ondersteunt flexibele en georganiseerde documentverwerking over meerdere teams of afdelingen heen.

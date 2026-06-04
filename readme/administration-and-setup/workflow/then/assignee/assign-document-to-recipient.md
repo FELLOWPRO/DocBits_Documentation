@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card assigns a document to either a **Disponent** or **Purchaser**. If no valid user is found, a fallback user is selected to ensure the document is always assigned to someone.
+De workflow-kaart **"Assign Document to Disponent / Purchaser"** wijst een document toe aan een **Disponent** of **Purchaser**. Als er geen geldige gebruiker wordt gevonden, wordt een terugvalgebruiker geselecteerd om ervoor te zorgen dat het document altijd aan iemand wordt toegewezen.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Disponent / Purchaser**
-   * **Description:** Specifies whether the document will be assigned to a Disponent or Purchaser.
-   * **Options:**
-     * **Disponent:** Assign the document to the Disponent.
-     * **Purchaser:** Assign the document to the Purchaser.
+   * **Beschrijving:** Geeft op of het document aan een Disponent of Purchaser wordt toegewezen.
+   * **Opties:**
+     * **Disponent:** Wijs het document toe aan de Disponent.
+     * **Purchaser:** Wijs het document toe aan de Purchaser.
 2. **Fallback User**
-   * **Description:** Specifies a fallback user in case the document cannot be assigned to the selected Disponent or Purchaser.
-   * **Detail:** The dropdown list of available users lets you choose a fallback user to ensure the document is assigned even if the primary user cannot be determined.
+   * **Beschrijving:** Geeft een terugvalgebruiker op voor het geval het document niet aan de geselecteerde Disponent of Purchaser kan worden toegewezen.
+   * **Detail:** Met de dropdownlijst van beschikbare gebruikers kunt u een terugvalgebruiker kiezen om ervoor te zorgen dat het document wordt toegewezen, zelfs als de primaire gebruiker niet kan worden bepaald.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to either the **Disponent** or **Purchaser** as selected. If the selected person is unavailable or not valid, the document is assigned to the fallback user.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Documenttoewijzing:**\
+  De kaart wijst het document toe aan de **Disponent** of **Purchaser** zoals geselecteerd. Als de geselecteerde persoon niet beschikbaar of niet geldig is, wordt het document aan de terugvalgebruiker toegewezen.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Select Disponent / Purchaser:**\
-  Choose whether to assign the document to the **Disponent** or **Purchaser**.
-* **Select Fallback User:**\
-  Choose a fallback user from the dropdown list who will receive the document if the primary assignment is not possible.
+* **Disponent / Purchaser selecteren:**\
+  Kies of het document aan de **Disponent** of **Purchaser** wordt toegewezen.
+* **Terugvalgebruiker selecteren:**\
+  Kies een terugvalgebruiker uit de dropdownlijst die het document ontvangt als de primaire toewijzing niet mogelijk is.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card ensures the document is always assigned, either to the selected Disponent/Purchaser or, if needed, to the fallback user. This minimizes workflow disruptions and ensures document processing continues smoothly.
+De workflow-kaart **"Assign Document to Disponent / Purchaser"** zorgt ervoor dat het document altijd wordt toegewezen, ofwel aan de geselecteerde Disponent/Purchaser, ofwel, indien nodig, aan de terugvalgebruiker. Dit minimaliseert verstoringen in de workflow en zorgt ervoor dat de documentverwerking soepel doorgaat.

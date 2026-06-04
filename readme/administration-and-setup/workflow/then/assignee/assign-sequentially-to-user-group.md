@@ -2,31 +2,31 @@
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Doel**
 
-The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card dynamically assigns documents to either a user or a group, depending on the decision table's evaluation. This ensures that documents are routed appropriately based on predefined rules.
+De workflow-kaart "**Assign the Document Sequentially to User/Group Based on Decision Table**" wijst documenten dynamisch toe aan een gebruiker of een groep, afhankelijk van de evaluatie van de decision table. Dit zorgt ervoor dat documenten op de juiste manier worden gerouteerd op basis van vooraf gedefinieerde regels.
 
-## **Components of the Card**
+## **Onderdelen van de kaart**
 
 1. **Priority (Value)**
-   * **Description**: Specifies the priority level for assignments, where lower numbers represent higher priority.
-   * **Detail**: A numeric input field where the priority value can be set to control the sequence of assignment.
+   * **Beschrijving**: Geeft het prioriteitsniveau voor toewijzingen op, waarbij lagere getallen een hogere prioriteit vertegenwoordigen.
+   * **Detail**: Een numeriek invoerveld waarin de prioriteitswaarde kan worden ingesteld om de toewijzingsvolgorde te bepalen.
 
-## **Functionality**
+## **Functionaliteit**
 
-* **Decision Table Evaluation**:\
-  The decision table evaluates predefined conditions to decide whether the document is assigned to a user or a group.
-* **Document Assignment**:
-  * If the decision table returns a user, the document is assigned directly to that user.
-  * If the decision table returns a group, the document is assigned to the group sequentially, respecting the specified priority value.
+* **Decision table-evaluatie**:\
+  De decision table evalueert vooraf gedefinieerde voorwaarden om te beslissen of het document aan een gebruiker of een groep wordt toegewezen.
+* **Documenttoewijzing**:
+  * Als de decision table een gebruiker retourneert, wordt het document rechtstreeks aan die gebruiker toegewezen.
+  * Als de decision table een groep retourneert, wordt het document sequentieel aan de groep toegewezen, met inachtneming van de opgegeven prioriteitswaarde.
 
-## **Setup and Configuration**
+## **Opzet en configuratie**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-3. Save and activate the workflow to apply the configuration.
+1. Voeg de kaart **Assign the Document Sequentially** toe aan uw workflow.
+2. Configureer het veld **Priority (Value)**:
+   * Voer een numerieke waarde in om de toewijzingsprioriteit in te stellen.
+3. Sla op en activeer de workflow om de configuratie toe te passen.
 
-## **Conclusion**
+## **Conclusie**
 
-The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card ensures efficient and dynamic document routing. By leveraging decision table logic and priority values, the card facilitates accurate assignment to either a user or a group, streamlining document workflows.
+De workflow-kaart "**Assign the Document Sequentially to User/Group Based on Decision Table**" zorgt voor efficiënte en dynamische documentroutering. Door beslislogica en prioriteitswaarden te benutten, faciliteert de kaart een nauwkeurige toewijzing aan een gebruiker of een groep, wat documentworkflows stroomlijnt.

@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (299).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-The **"Assign User from Field with Fallback"** workflow card dynamically assigns a user based on the value found in a specified document field. If the field does not contain a valid user, a fallback user is selected from a predefined list of available users to ensure the task or action is properly assigned.
+De workflow-kaart **"Assign User from Field with Fallback"** wijst dynamisch een gebruiker toe op basis van de waarde die in een opgegeven documentveld wordt gevonden. Als het veld geen geldige gebruiker bevat, wordt een terugvalgebruiker geselecteerd uit een vooraf gedefinieerde lijst van beschikbare gebruikers om ervoor te zorgen dat de taak of actie op de juiste manier wordt toegewezen.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Field Name**
-   * **Description:** Specifies the **document field** that contains the user information to be assigned.
-   * **Detail:** This field is evaluated to determine which user should be assigned. If the field contains a valid user, that user will be assigned the task. If the field is empty or invalid, the fallback user will be assigned.
+   * **Beschrijving:** Geeft het **documentveld** op dat de toe te wijzen gebruikersinformatie bevat.
+   * **Detail:** Dit veld wordt geëvalueerd om te bepalen welke gebruiker moet worden toegewezen. Als het veld een geldige gebruiker bevat, krijgt die gebruiker de taak toegewezen. Als het veld leeg of ongeldig is, wordt de terugvalgebruiker toegewezen.
 2. **User (Fallback)**
-   * **Description:** Specifies the **fallback user** to be assigned if the document field does not contain a valid user.
-   * **Detail:** A dropdown list of all available users is provided for selection. This user will be assigned if the document field is empty or does not contain a valid user.
+   * **Beschrijving:** Geeft de **terugvalgebruiker** op die wordt toegewezen als het documentveld geen geldige gebruiker bevat.
+   * **Detail:** Er wordt een dropdownlijst van alle beschikbare gebruikers geboden om uit te selecteren. Deze gebruiker wordt toegewezen als het documentveld leeg is of geen geldige gebruiker bevat.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Field-Based User Assignment:**\
-  The card first attempts to assign the task or action to the user identified in the **Field Name**.
-* **Fallback User Assignment:**\
-  If the field does not contain a valid user (or is empty), the card assigns the task to the fallback user selected from the **User (Fallback)** dropdown list.
+* **Voorwaarde-evaluatie:**\
+  De kaart voert de actie alleen uit als zowel de **"Where"**- als de **"And"**-secties als true worden geëvalueerd.
+* **Veldgebaseerde gebruikerstoewijzing:**\
+  De kaart probeert eerst de taak of actie toe te wijzen aan de gebruiker die in het **Field Name** is geïdentificeerd.
+* **Terugvalgebruikertoewijzing:**\
+  Als het veld geen geldige gebruiker bevat (of leeg is), wijst de kaart de taak toe aan de terugvalgebruiker die in de **User (Fallback)**-dropdownlijst is geselecteerd.
 
-## **Setup and Configuration:**
+## **Opzet en configuratie:**
 
-* **Select Field Name:**\
-  Choose the **document field** that specifies the user for assignment.
-* **Select Fallback User:**\
-  Choose the **fallback user** from the dropdown list. This user will be assigned the task if the document field does not contain a valid user.
+* **Field Name selecteren:**\
+  Kies het **documentveld** dat de gebruiker voor toewijzing opgeeft.
+* **Terugvalgebruiker selecteren:**\
+  Kies de **terugvalgebruiker** uit de dropdownlijst. Deze gebruiker krijgt de taak toegewezen als het documentveld geen geldige gebruiker bevat.
 
-## **Conclusion:**
+## **Conclusie:**
 
-The **"Assign User from Field with Fallback"** workflow card ensures that a task or action is always assigned to a valid user. If the user in the document field is not available, the fallback user is automatically assigned, providing flexibility and ensuring task completion.
+De workflow-kaart **"Assign User from Field with Fallback"** zorgt ervoor dat een taak of actie altijd aan een geldige gebruiker wordt toegewezen. Als de gebruiker in het documentveld niet beschikbaar is, wordt automatisch de terugvalgebruiker toegewezen, wat flexibiliteit biedt en de voltooiing van de taak waarborgt.

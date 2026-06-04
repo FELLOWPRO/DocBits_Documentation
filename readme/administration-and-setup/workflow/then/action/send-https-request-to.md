@@ -2,48 +2,48 @@
 
 <figure><img src="../../../../.gitbook/assets/image (308).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Doel:
 
-The **"Send HTTPS Request"** workflow card enables users to send HTTPS requests to a specified URL with customizable headers, parameters, and data payload. This card is ideal for integrating external APIs or web services directly into the workflow.
+Met de workflow-kaart **"Send HTTPS Request"** kunnen gebruikers HTTPS-verzoeken naar een opgegeven URL verzenden met aanpasbare headers, parameters en gegevens-payload. Deze kaart is ideaal voor het rechtstreeks integreren van externe API's of webdiensten in de workflow.
 
-## Components of the Card:
+## Onderdelen van de kaart:
 
 1. **URL**
-   * **Description:** Specifies the endpoint where the HTTPS request will be sent.
-   * **Detail:** Enter the full URL of the API or web service to connect with.
+   * **Beschrijving:** Geeft het eindpunt op waar het HTTPS-verzoek naartoe wordt verzonden.
+   * **Detail:** Voer de volledige URL in van de API of webdienst waarmee u verbinding wilt maken.
 2. **Headers**
-   * **Description:** Defines the headers to be included in the HTTPS request.
-   * **Detail:** Provide key-value pairs for any required headers, such as authentication tokens or content types.
+   * **Beschrijving:** Definieert de headers die in het HTTPS-verzoek worden opgenomen.
+   * **Detail:** Geef sleutel-waardeparen op voor eventueel vereiste headers, zoals authenticatietokens of contenttypen.
 3. **Method**
-   * **Description:** Specifies the HTTP method to be used for the request.
-   * **Options:**
-     * **GET:** Retrieves data from the endpoint.
-     * **POST:** Sends data to the endpoint to create or update resources.
-     * **PUT:** Updates existing resources at the endpoint.
-     * **DELETE:** Removes resources from the endpoint.
+   * **Beschrijving:** Geeft de HTTP-methode op die voor het verzoek wordt gebruikt.
+   * **Opties:**
+     * **GET:** Haalt gegevens op van het eindpunt.
+     * **POST:** Verzendt gegevens naar het eindpunt om resources te maken of bij te werken.
+     * **PUT:** Werkt bestaande resources op het eindpunt bij.
+     * **DELETE:** Verwijdert resources van het eindpunt.
 4. **Parameters**
-   * **Description:** Key-value pairs to be included in the URL as query parameters.
-   * **Detail:** Use this to send filters or additional data required by the endpoint.
+   * **Beschrijving:** Sleutel-waardeparen die als queryparameters in de URL worden opgenomen.
+   * **Detail:** Gebruik dit om filters of aanvullende gegevens te verzenden die het eindpunt vereist.
 5. **Data**
-   * **Description:** The body of the HTTPS request.
-   * **Detail:** Provide the payload in JSON or other acceptable formats for the selected method (e.g., POST or PUT).
+   * **Beschrijving:** De body van het HTTPS-verzoek.
+   * **Detail:** Geef de payload op in JSON of een ander acceptabel formaat voor de geselecteerde methode (bijv. POST of PUT).
 
-## Functionality:
+## Functionaliteit:
 
-* **Condition Evaluation:** The card only sends the HTTPS request if the **"Where"** and **"And Sections"** evaluate as true.&#x20;
-  * If either condition is false, the request is not sent.
-* **Request Execution:**
-  * When the conditions are met, the system sends the HTTPS request with the specified configurations.
+* **Voorwaarde-evaluatie:** De kaart verzendt het HTTPS-verzoek alleen als de **"Where"**- en **"And"**-secties als true worden geëvalueerd.&#x20;
+  * Als een van beide voorwaarden false is, wordt het verzoek niet verzonden.
+* **Verzoekuitvoering:**
+  * Wanneer aan de voorwaarden wordt voldaan, verzendt het systeem het HTTPS-verzoek met de opgegeven configuraties.
 
-## Setup and Configuration:
+## Opzet en configuratie:
 
-1. **Define URL:** Enter the endpoint where the HTTPS request should be sent.
-2. **Set Headers:** Provide the required headers as key-value pairs.
-3. **Select HTTP Method:** Choose the appropriate method (**GET**, **POST**, **PUT**, or **DELETE**) based on the action to perform.
-4. **Add Parameters:** Specify any query parameters required by the endpoint.
-5. **Provide Data Payload:** Enter the request body in the required format (e.g., JSON) if needed.
-6. **Configure Conditions:** Define the **"Where"** and **"And Sections"** to ensure the request is sent only when specific conditions are met.
+1. **URL definiëren:** Voer het eindpunt in waar het HTTPS-verzoek naartoe moet worden verzonden.
+2. **Headers instellen:** Geef de vereiste headers op als sleutel-waardeparen.
+3. **HTTP-methode selecteren:** Kies de juiste methode (**GET**, **POST**, **PUT** of **DELETE**) op basis van de uit te voeren actie.
+4. **Parameters toevoegen:** Geef eventuele queryparameters op die het eindpunt vereist.
+5. **Gegevens-payload opgeven:** Voer indien nodig de verzoekbody in het vereiste formaat in (bijv. JSON).
+6. **Voorwaarden configureren:** Definieer de **"Where"**- en **"And"**-secties om ervoor te zorgen dat het verzoek alleen wordt verzonden wanneer aan specifieke voorwaarden wordt voldaan.
 
-## Conclusion:
+## Conclusie:
 
-The **"Send HTTPS Request"** workflow card simplifies API integration by allowing users to make customized requests to external services directly from their workflows. By automating the process of sending HTTPS requests and managing responses, this card enhances workflow flexibility and functionality.
+De workflow-kaart **"Send HTTPS Request"** vereenvoudigt API-integratie doordat gebruikers aangepaste verzoeken naar externe diensten kunnen doen, rechtstreeks vanuit hun workflows. Door het proces van het verzenden van HTTPS-verzoeken en het beheren van responses te automatiseren, verbetert deze kaart de flexibiliteit en functionaliteit van de workflow.

@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card checks whether items in a dataset have a specified receiving method. Users can choose to validate **any** item or **all** items in the dataset based on a selected condition, making it suitable for scenarios where workflows depend on item receiving methods, such as in supply chain management or inventory tracking.
+Ova DocBits kartica proverava da li stavke u skupu podataka imaju navedeni metod prijema. Korisnici mogu odabrati da provere **bilo koju** stavku ili **sve** stavke u skupu podataka na osnovu izabranog uslova, što je čini pogodnom za scenarije gde radni tokovi zavise od metoda prijema stavki, kao što su upravljanje lancem snabdevanja ili praćenje zaliha.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Receiving Method Validation:** This card verifies the receiving method of items against a specified condition. Users can choose between **any** item or **all** items in the dataset and set the condition as **equals** or **not equals**.
-* **Item Selection:** Users can specify:
-  * **Any Item:** The card triggers if at least one item meets the specified receiving method condition.
-  * **All Items:** The card triggers only if all items meet the specified receiving method condition.
-* **Operators:** The following operators are available to define the condition:
-  * **Equals (=):** Checks if the receiving method matches the specified value.
-  * **Not Equals (≠):** Ensures the receiving method does not match the specified value.
+* **Validacija metoda prijema:** Ova kartica proverava metod prijema stavki u odnosu na navedeni uslov. Korisnici mogu birati između **bilo koje** stavke ili **svih** stavki u skupu podataka i postaviti uslov kao **equals** ili **not equals**.
+* **Izbor stavki:** Korisnici mogu navesti:
+  * **Any Item:** Kartica se pokreće ako najmanje jedna stavka ispunjava navedeni uslov metoda prijema.
+  * **All Items:** Kartica se pokreće samo ako sve stavke ispunjavaju navedeni uslov metoda prijema.
+* **Operatori:** Sledeći operatori su dostupni za definisanje uslova:
+  * **Equals (=):** Proverava da li se metod prijema poklapa sa navedenom vrednošću.
+  * **Not Equals (≠):** Obezbeđuje da se metod prijema ne poklapa sa navedenom vrednošću.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is ideal for warehouse managers, inventory coordinators, or logistics personnel who need to validate item receiving methods before allowing further actions, such as processing, storage, or shipping.
+Ova kartica je idealna za menadžere skladišta, koordinatore zaliha ili logističko osoblje kojima je potrebno da provere metode prijema stavki pre nego što dozvole dalje akcije, kao što su obrada, skladištenje ili otprema.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user configures the card to check if **all items** have the receiving method **equals "Direct Delivery"**. If every item meets this condition, the workflow proceeds, confirming that all items are intended for direct delivery.
+* Korisnik konfiguriše karticu da proveri da li **sve stavke** imaju metod prijema **jednak "Direct Delivery"**. Ako svaka stavka ispunjava ovaj uslov, radni tok se nastavlja, potvrđujući da su sve stavke namenjene za direktnu isporuku.
 
-By using the "Receiving Method Validation" card, organizations can ensure compliance with receiving protocols, improve logistics workflows, and maintain accuracy in item handling based on specific receiving methods.
+Korišćenjem kartice "Receiving Method Validation", organizacije mogu obezbediti usklađenost sa protokolima prijema, poboljšati logističke radne tokove i održati tačnost u rukovanju stavkama na osnovu određenih metoda prijema.

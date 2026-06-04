@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (48).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card performs a comparison between values in two specified columns within a table, based on a chosen condition. It’s useful for scenarios that require validating relationships between data points, such as quality control, data consistency checks, or compliance verification.
+Ova DocBits kartica vrši poređenje između vrednosti u dve navedene kolone unutar tabele, na osnovu izabranog uslova. Korisna je za scenarije koji zahtevaju validaciju odnosa između tačaka podataka, kao što su kontrola kvaliteta, provere doslednosti podataka ili verifikacija usklađenosti.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Column Comparison:** This card allows users to set conditions to compare values between two columns in the same table.
-* **Operators:** The following operators are available to define the comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Table and Column Selection:** Users specify the table and the two columns they wish to compare.
+* **Poređenje kolona:** Ova kartica omogućava korisnicima da postave uslove za poređenje vrednosti između dve kolone u istoj tabeli.
+* **Operatori:** Sledeći operatori su dostupni za definisanje poređenja:
+  * **Equals (=):** Proverava da li su vrednosti u dve kolone tačno jednake.
+  * **Not Equals (≠):** Obezbeđuje da vrednosti u dve kolone nisu jednake.
+  * **Greater Than (>):** Potvrđuje da su vrednosti u prvoj koloni veće od onih u drugoj koloni.
+  * **Greater or Equals (≥):** Obezbeđuje da su vrednosti u prvoj koloni veće ili jednake onima u drugoj koloni.
+  * **Lesser Than (<):** Proverava da li su vrednosti u prvoj koloni manje od onih u drugoj koloni.
+  * **Less or Equals (≤):** Obezbeđuje da su vrednosti u prvoj koloni manje ili jednake onima u drugoj koloni.
+* **Izbor tabele i kolone:** Korisnici navode tabelu i dve kolone koje žele da uporede.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is ideal for data analysts, quality control teams, or compliance officers who need to ensure that values in one column relate to values in another according to specific rules, allowing for advanced data validation.
+Ova kartica je idealna za analitičare podataka, timove za kontrolu kvaliteta ili službenike za usklađenost kojima je potrebno da obezbede da se vrednosti u jednoj koloni odnose na vrednosti u drugoj u skladu sa određenim pravilima, omogućavajući naprednu validaciju podataka.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user configures the card to check if values in the "Current Stock" column are **greater than or equal to (≥)** values in the "Minimum Stock Level" column in the "Inventory" table. If all values meet this condition, the workflow proceeds, confirming that stock levels are adequate.
+* Korisnik konfiguriše karticu da proveri da li su vrednosti u koloni "Current Stock" **veće ili jednake (≥)** vrednostima u koloni "Minimum Stock Level" u tabeli "Inventory". Ako sve vrednosti ispunjavaju ovaj uslov, radni tok se nastavlja, potvrđujući da su nivoi zaliha adekvatni.
 
-By using the "Column Value Comparison" card, organizations can ensure data consistency, maintain quality standards, and validate data relationships within tables.
+Korišćenjem kartice "Column Value Comparison", organizacije mogu obezbediti doslednost podataka, održati standarde kvaliteta i proveriti odnose podataka unutar tabela.

@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9 (1).png" alt="" width="528"><figcaption></figcaption></figure>
 
-**Purpose**
+**Svrha**
 
-This workflow card is tailored to manage operations on documents based on a single, specified document status. By simplifying the condition to one status, the card is focused on very specific workflow triggers, making it ideal for targeted document processing activities within an ERP system.
+Ova kartica radnog toka je prilagođena za upravljanje operacijama nad dokumentima na osnovu jednog, navedenog statusa dokumenta. Pojednostavljivanjem uslova na jedan status, kartica je fokusirana na vrlo specifične okidače radnog toka, što je čini idealnom za ciljane aktivnosti obrade dokumenata unutar ERP sistema.
 
-**Components of the Card**
+**Komponente kartice**
 
 1. **Operator**
-   * **Description**: Specifies the method for evaluating the document’s status against the selected condition.
-   * **Options**:
-     * **is**: Triggers the operation if the document's current status matches the selected status.
-     * **is not**: Triggers the operation if the document's current status does not match the selected status.
+   * **Opis**: Navodi metod za procenu statusa dokumenta u odnosu na izabrani uslov.
+   * **Opcije**:
+     * **is**: Pokreće operaciju ako se trenutni status dokumenta poklapa sa izabranim statusom.
+     * **is not**: Pokreće operaciju ako se trenutni status dokumenta ne poklapa sa izabranim statusom.
 2. **Status**
-   * **Description**: Allows the selection of a single document status to set the condition.
-   * **Examples of Statuses**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
-   * **Detail**: Users choose one status from a dropdown or a set of radio buttons. This status then serves as the criterion for the card’s operation.
+   * **Opis**: Omogućava izbor jednog statusa dokumenta za postavljanje uslova.
+   * **Primeri statusa**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Detalj**: Korisnici biraju jedan status iz padajuće liste ili skupa radio dugmadi. Ovaj status zatim služi kao kriterijum za operaciju kartice.
 
-**Functionality**
+**Funkcionalnost**
 
-* **Document Status Identification**: Identifies the current status of a document as it is processed through the ERP system.
-* **Condition Evaluation**:
-  * Based on the operator selected (`is` or `is not`), the card checks whether the document's current status aligns with the chosen status criterion.
-* **Action Execution**:
-  * **True Condition**: If the status matches (or does not match, based on the operator), the corresponding action is initiated. This could be routing for further processing, notification generation, or other predefined workflows.
-  * **False Condition**: If the condition is not met, no action is taken, or an alternate pathway is triggered.
-* **Integration with Other Workflows**: Even though it's designed for single-status evaluation, this card can be effectively integrated into broader workflow sequences to ensure precise document handling.
+* **Identifikacija statusa dokumenta**: Identifikuje trenutni status dokumenta dok se obrađuje kroz ERP sistem.
+* **Procena uslova**:
+  * Na osnovu izabranog operatora (`is` ili `is not`), kartica proverava da li je trenutni status dokumenta usklađen sa izabranim statusnim kriterijumom.
+* **Izvršavanje akcije**:
+  * **Tačan uslov**: Ako se status poklapa (ili ne poklapa, na osnovu operatora), pokreće se odgovarajuća akcija. Ovo može biti usmeravanje na dalju obradu, generisanje obaveštenja ili drugi unapred definisani radni tokovi.
+  * **Netačan uslov**: Ako uslov nije ispunjen, ne preduzima se nikakva akcija, ili se pokreće alternativna putanja.
+* **Integracija sa drugim radnim tokovima**: Iako je dizajnirana za procenu jednog statusa, ova kartica se može efikasno integrisati u šire sekvence radnih tokova radi obezbeđivanja preciznog rukovanja dokumentima.
 
-**User Interactions**
+**Korisničke interakcije**
 
-* **Setup and Configuration**: Users set up the card by selecting an operator and then choosing one status from the available options. This selection process is straightforward and designed to prevent confusion.
-* **Monitoring and Reporting**: Enables monitoring through system-generated reports or dashboards that track the processing of documents based on their status, helping to oversee the effectiveness of the implemented workflows.
-* **Error Handling and Notifications**: Configurable to alert users to any processing anomalies or to flag documents that do not meet the set conditions, ensuring prompt attention and resolution.
+* **Podešavanje i konfiguracija**: Korisnici podešavaju karticu izborom operatora i zatim izborom jednog statusa iz dostupnih opcija. Ovaj proces izbora je jednostavan i dizajniran da spreči zabunu.
+* **Praćenje i izveštavanje**: Omogućava praćenje preko izveštaja ili kontrolnih tabli koje generiše sistem, a koji prate obradu dokumenata na osnovu njihovog statusa, pomažući u nadzoru efikasnosti implementiranih radnih tokova.
+* **Rukovanje greškama i obaveštenja**: Može se konfigurisati da upozorava korisnike na bilo kakve anomalije u obradi ili da označi dokumente koji ne ispunjavaju postavljene uslove, obezbeđujući brzu pažnju i rešavanje.
 
-#### Conclusion
+#### Zaključak
 
-The "Single Document Status Condition" workflow card simplifies document management by focusing on individual status conditions. This specification helps in cases where precise control over document flows is necessary, especially in environments with stringent processing criteria. Documenting this version of the card clearly will ensure that users fully understand its application and can effectively integrate it within their daily operations, enhancing both compliance and efficiency in document processing.
+Kartica radnog toka "Single Document Status Condition" pojednostavljuje upravljanje dokumentima fokusiranjem na pojedinačne statusne uslove. Ova specifikacija pomaže u slučajevima gde je neophodna precizna kontrola nad tokovima dokumenata, posebno u okruženjima sa strogim kriterijumima obrade. Jasno dokumentovanje ove verzije kartice obezbediće da korisnici u potpunosti razumeju njenu primenu i da je mogu efikasno integrisati u svoje svakodnevno poslovanje, poboljšavajući i usklađenost i efikasnost u obradi dokumenata.

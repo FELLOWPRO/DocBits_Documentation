@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card is used to validate whether any value in a specific column of a table matches a provided regex pattern. If any single entry in the column matches the pattern, the workflow will continue, making it ideal for use cases where identifying even a single match triggers the next steps in the process.
+Ova DocBits kartica se koristi za proveru da li se bilo koja vrednost u određenoj koloni tabele poklapa sa datim regex obrascem. Ako se bilo koji pojedinačni unos u koloni poklapa sa obrascem, radni tok će se nastaviti, što je čini idealnom za slučajeve upotrebe gde identifikacija čak i jednog poklapanja pokreće sledeće korake u procesu.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Regex Pattern Validation:** This card checks if any value in a given column of a table matches the provided regular expression pattern. The card will trigger and allow the workflow to continue if at least one entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that at least one value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for regex pattern matches.
+* **Validacija regex obrasca:** Ova kartica proverava da li se bilo koja vrednost u datoj koloni tabele poklapa sa datim obrascem regularnog izraza. Kartica će se pokrenuti i omogućiti nastavak radnog toka ako najmanje jedan unos u koloni ispunjava uslov.
+* **Operator:** Korisnici definišu kolonu i navode regex obrazac. Dostupni uslov uključuje:
+  * **Matches Regex Pattern:** Proverava da li se najmanje jedna vrednost u navedenoj koloni poklapa sa regex obrascem.
+* **Izbor tabele i kolone:** Korisnici navode tabelu i kolonu koje žele da provere za poklapanja sa regex obrascem.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is particularly useful for scenarios where a table contains data that might require specific matches, such as validating email addresses, invoice numbers, or product IDs. It ensures that workflows proceed when any relevant entry matches the defined pattern, without needing to check every entry.
+Ova kartica je posebno korisna za scenarije gde tabela sadrži podatke koji mogu zahtevati određena poklapanja, kao što su validacija e-adresa, brojeva faktura ili ID-ova proizvoda. Obezbeđuje da se radni tokovi nastave kada se bilo koji relevantan unos poklapa sa definisanim obrascem, bez potrebe za proverom svakog unosa.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user sets the card to check for entries in the "Email Address" column of the "Customers" table, using a regex pattern for valid email formats. If at least one email address in the column matches the pattern, the card will trigger the next workflow step, ensuring that the system processes the valid entry.
+* Korisnik podešava karticu da proveri unose u koloni "Email Address" u tabeli "Customers", koristeći regex obrazac za validne formate e-pošte. Ako se najmanje jedna e-adresa u koloni poklapa sa obrascem, kartica će pokrenuti sledeći korak radnog toka, obezbeđujući da sistem obradi validan unos.
 
-By using the "Regex Pattern Matching" card, organizations can automate workflows based on dynamic, pattern-based validations, streamlining processes and ensuring that only relevant entries trigger further actions.
+Korišćenjem kartice "Regex Pattern Matching", organizacije mogu automatizovati radne tokove na osnovu dinamičkih validacija zasnovanih na obrascima, pojednostavljujući procese i obezbeđujući da samo relevantni unosi pokreću dalje akcije.

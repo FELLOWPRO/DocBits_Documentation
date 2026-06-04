@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card verifies if items in a dataset meet specified conditions based on their shelf life. The card allows users to choose between "any" or "all" items for validation and supports various comparison operators. This is ideal for scenarios where workflow decisions depend on the shelf life of items, such as quality control, inventory management, or compliance checks
+Ova DocBits kartica proverava da li stavke u skupu podataka ispunjavaju navedene uslove na osnovu svog roka trajanja. Kartica omogućava korisnicima da biraju između "bilo koje" ili "svih" stavki za validaciju i podržava različite operatore poređenja. Ovo je idealno za scenarije gde odluke radnog toka zavise od roka trajanja stavki, kao što su kontrola kvaliteta, upravljanje zalihama ili provere usklađenosti
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Shelf Life Validation:** This card checks the shelf life of items against a specified condition. Users can choose to validate **any** item or **all** items in the dataset and apply various comparison operators to define the condition.
-* **Item Selection:** Users can choose between:
-  * **Any Item:** The card triggers if at least one item meets the specified shelf life condition.
-  * **All Items:** The card triggers only if all items meet the specified shelf life condition.
-* **Operators:** The following operators are available to set the shelf life condition:
-  * **Equals (=):** Checks if the shelf life is exactly equal to the specified value.
-  * **Not Equals (≠):** Ensures the shelf life is not equal to the specified value.
-  * **Greater Than (>):** Confirms that the shelf life is greater than the specified value.
-  * **Greater or Equals (≥):** Ensures the shelf life is greater than or equal to the specified value.
-  * **Less Than (<):** Checks if the shelf life is less than the specified value.
-  * **Less or Equals (≤):** Ensures the shelf life is less than or equal to the specified value.
+* **Validacija roka trajanja:** Ova kartica proverava rok trajanja stavki u odnosu na navedeni uslov. Korisnici mogu odabrati da provere **bilo koju** stavku ili **sve** stavke u skupu podataka i primeniti različite operatore poređenja za definisanje uslova.
+* **Izbor stavki:** Korisnici mogu birati između:
+  * **Any Item:** Kartica se pokreće ako najmanje jedna stavka ispunjava navedeni uslov roka trajanja.
+  * **All Items:** Kartica se pokreće samo ako sve stavke ispunjavaju navedeni uslov roka trajanja.
+* **Operatori:** Sledeći operatori su dostupni za postavljanje uslova roka trajanja:
+  * **Equals (=):** Proverava da li je rok trajanja tačno jednak navedenoj vrednosti.
+  * **Not Equals (≠):** Obezbeđuje da rok trajanja nije jednak navedenoj vrednosti.
+  * **Greater Than (>):** Potvrđuje da je rok trajanja veći od navedene vrednosti.
+  * **Greater or Equals (≥):** Obezbeđuje da je rok trajanja veći ili jednak navedenoj vrednosti.
+  * **Less Than (<):** Proverava da li je rok trajanja manji od navedene vrednosti.
+  * **Less or Equals (≤):** Obezbeđuje da je rok trajanja manji ili jednak navedenoj vrednosti.
 
 
 
-## **Usage:**
+## **Upotreba:**
 
-This card is suitable for quality control teams, inventory managers, or compliance officers who need to ensure items meet specific shelf life requirements before proceeding with further actions or workflows.
+Ova kartica je pogodna za timove za kontrolu kvaliteta, menadžere zaliha ili službenike za usklađenost kojima je potrebno da obezbede da stavke ispunjavaju određene zahteve roka trajanja pre nastavka sa daljim akcijama ili radnim tokovima.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user configures the card to check if **all items** have a shelf life **greater than or equal to 30 days**. If every item meets this condition, the workflow proceeds, confirming that all items have sufficient shelf life for sale or distribution.
+* Korisnik konfiguriše karticu da proveri da li **sve stavke** imaju rok trajanja **veći ili jednak 30 dana**. Ako svaka stavka ispunjava ovaj uslov, radni tok se nastavlja, potvrđujući da sve stavke imaju dovoljan rok trajanja za prodaju ili distribuciju.
 
-By using the "Shelf Life Validation" card, organizations can enforce shelf life standards, maintain product quality, and ensure workflow accuracy based on item shelf life conditions.
+Korišćenjem kartice "Shelf Life Validation", organizacije mogu sprovoditi standarde roka trajanja, održavati kvalitet proizvoda i obezbediti tačnost radnog toka na osnovu uslova roka trajanja stavki.

@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-This DocBits card is used to validate whether **all values** in a specific column of a table match a provided regex pattern. For the workflow to continue, every entry in the column must meet the condition, making this card ideal for ensuring consistency and data integrity across all entries.
+Ova DocBits kartica se koristi za proveru da li se **sve vrednosti** u određenoj koloni tabele poklapaju sa datim regex obrascem. Da bi se radni tok nastavio, svaki unos u koloni mora ispunjavati uslov, što ovu karticu čini idealnom za obezbeđivanje doslednosti i integriteta podataka u svim unosima.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Regex Pattern Validation:** This card checks that **all values** in a specified column of a table match the provided regular expression pattern. The workflow will only proceed if every entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that every value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for complete regex pattern matches.
+* **Validacija regex obrasca:** Ova kartica proverava da li se **sve vrednosti** u navedenoj koloni tabele poklapaju sa datim obrascem regularnog izraza. Radni tok će se nastaviti samo ako svaki unos u koloni ispunjava uslov.
+* **Operator:** Korisnici definišu kolonu i navode regex obrazac. Dostupni uslov uključuje:
+  * **Matches Regex Pattern:** Proverava da li se svaka vrednost u navedenoj koloni poklapa sa regex obrascem.
+* **Izbor tabele i kolone:** Korisnici navode tabelu i kolonu koje žele da provere za potpuna poklapanja sa regex obrascem.
 
-## **Usage:**
+## **Upotreba:**
 
-This card is ideal for cases where data uniformity is required, such as ensuring all phone numbers, product IDs, or other field entries adhere to a specific format. It ensures that workflows only proceed when every relevant entry is consistent with the pattern.
+Ova kartica je idealna za slučajeve gde je potrebna ujednačenost podataka, kao što je obezbeđivanje da svi brojevi telefona, ID-ovi proizvoda ili drugi unosi polja budu u skladu sa određenim formatom. Obezbeđuje da se radni tokovi nastave samo kada je svaki relevantan unos usklađen sa obrascem.
 
-## **Example Scenario:**
+## **Primer scenarija:**
 
-* A user sets the card to check the "Phone Number" column in the "Contacts" table, using a regex pattern to validate phone number formats. If every phone number entry in the column matches the pattern, the card will trigger the next step in the workflow, confirming uniform data formatting.
+* Korisnik podešava karticu da proveri kolonu "Phone Number" u tabeli "Contacts", koristeći regex obrazac za validaciju formata brojeva telefona. Ako se svaki unos broja telefona u koloni poklapa sa obrascem, kartica će pokrenuti sledeći korak u radnom toku, potvrđujući ujednačeno formatiranje podataka.
 
-By using the "All Values Regex Pattern Matching" card, organizations can enforce strict data standards and enhance workflow accuracy, ensuring that every entry in a specified column meets the required format before proceeding.
+Korišćenjem kartice "All Values Regex Pattern Matching", organizacije mogu sprovoditi stroge standarde podataka i poboljšati tačnost radnog toka, obezbeđujući da svaki unos u navedenoj koloni ispunjava traženi format pre nastavka.

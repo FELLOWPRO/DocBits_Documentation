@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (302).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Assign Document to Sub-Organization"** workflow card assigns a document to a specific sub-organization within the system, ensuring that it is routed to the appropriate organizational unit for processing.
+Kartica radnog toka **"Assign Document to Sub-Organization"** dodeljuje dokument određenoj pod-organizaciji unutar sistema, obezbeđujući da bude usmeren odgovarajućoj organizacionoj jedinici za obradu.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Sub-Organization**
-   * **Description:** Specifies the sub-organization to which the document will be assigned.
-   * **Detail:** A dropdown list of available sub-organizations is provided for selecting the target sub-organization.
+   * **Opis:** Navodi pod-organizaciju kojoj će dokument biti dodeljen.
+   * **Detalj:** Za izbor ciljne pod-organizacije dostupna je padajuća lista dostupnih pod-organizacija.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to the sub-organization selected from the dropdown list.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Dodela dokumenta:**\
+  Kartica dodeljuje dokument pod-organizaciji izabranoj iz padajuće liste.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Select Sub-Organization:**\
-  Choose the appropriate sub-organization from the dropdown list to which the document should be assigned.
+* **Izbor pod-organizacije:**\
+  Izaberite odgovarajuću pod-organizaciju iz padajuće liste kojoj dokument treba dodeliti.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Assign Document to Sub-Organization"** workflow card ensures that documents are routed to the correct sub-organization, streamlining the document management process by assigning responsibility based on organizational structure.
+Kartica radnog toka **"Assign Document to Sub-Organization"** obezbeđuje da se dokumenti usmeravaju ispravnoj pod-organizaciji, pojednostavljujući proces upravljanja dokumentima dodeljivanjem odgovornosti na osnovu organizacione strukture.

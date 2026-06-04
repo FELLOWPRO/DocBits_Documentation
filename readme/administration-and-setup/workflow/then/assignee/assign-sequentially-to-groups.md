@@ -1,33 +1,33 @@
 # Assign Sequentially to Groups
 
-## **Purpose**
+## **Svrha**
 
-The "**Assign the Document Sequentially to the Groups**" workflow card enables the sequential assignment of documents to one or more selected groups. The priority value determines the order of assignment, with lower numbers representing higher priority.
+Kartica radnog toka "**Assign the Document Sequentially to the Groups**" omogućava sekvencijalnu dodelu dokumenata jednoj ili više izabranih grupa. Vrednost prioriteta određuje redosled dodele, pri čemu niži brojevi predstavljaju viši prioritet.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Group**
-   * **Description**: Specifies the groups that will receive the document assignment.
-   * **Detail**: A dropdown menu where one or multiple groups can be selected for document assignment.
+   * **Opis**: Navodi grupe koje će primiti dodelu dokumenta.
+   * **Detalj**: Padajući meni u kojem se može izabrati jedna ili više grupa za dodelu dokumenta.
 2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the groups can be set.
-   * **Detail**: Lower numbers signify higher priority, ensuring that documents are assigned to groups in ascending order of priority.
+   * **Opis**: Numeričko polje za unos u kojem se može postaviti nivo prioriteta za grupe.
+   * **Detalj**: Niži brojevi označavaju viši prioritet, obezbeđujući da se dokumenti dodeljuju grupama u rastućem redosledu prioriteta.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Document Assignment**:\
-  The card assigns documents sequentially to the selected groups based on their priority values.\
-  If multiple groups share the same priority, documents are assigned in the order the groups were selected.
+* **Dodela dokumenta**:\
+  Kartica sekvencijalno dodeljuje dokumente izabranim grupama na osnovu njihovih vrednosti prioriteta.\
+  Ako više grupa deli isti prioritet, dokumenti se dodeljuju redosledom kojim su grupe izabrane.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Group** field:
-   * Select one or multiple groups from the dropdown menu.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Dodajte karticu **Assign the Document Sequentially** u svoj radni tok.
+2. Konfigurišite polje **Group**:
+   * Izaberite jednu ili više grupa iz padajućeg menija.
+3. Konfigurišite polje **Priority (Value)**:
+   * Unesite numeričku vrednost da postavite prioritet dodele.
+4. Sačuvajte i aktivirajte radni tok da biste primenili konfiguraciju.
 
-## **Conclusion**
+## **Zaključak**
 
-The "Assign the Document Sequentially to Groups" workflow card ensures efficient document allocation to one or more groups based on priority. This feature supports flexible and organized document processing across multiple teams or departments.
+Kartica radnog toka "Assign the Document Sequentially to Groups" obezbeđuje efikasnu raspodelu dokumenata jednoj ili više grupa na osnovu prioriteta. Ova funkcija podržava fleksibilnu i organizovanu obradu dokumenata u više timova ili odeljenja.

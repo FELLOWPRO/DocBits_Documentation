@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (299).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Assign User from Field with Fallback"** workflow card dynamically assigns a user based on the value found in a specified document field. If the field does not contain a valid user, a fallback user is selected from a predefined list of available users to ensure the task or action is properly assigned.
+Kartica radnog toka **"Assign User from Field with Fallback"** dinamično dodeljuje korisnika na osnovu vrednosti pronađene u navedenom polju dokumenta. Ako polje ne sadrži validnog korisnika, bira se rezervni korisnik iz unapred definisane liste dostupnih korisnika kako bi se obezbedilo da zadatak ili akcija budu pravilno dodeljeni.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name**
-   * **Description:** Specifies the **document field** that contains the user information to be assigned.
-   * **Detail:** This field is evaluated to determine which user should be assigned. If the field contains a valid user, that user will be assigned the task. If the field is empty or invalid, the fallback user will be assigned.
+   * **Opis:** Navodi **polje dokumenta** koje sadrži informacije o korisniku koji se dodeljuje.
+   * **Detalj:** Ovo polje se procenjuje da bi se odredilo koji korisnik treba da bude dodeljen. Ako polje sadrži validnog korisnika, tom korisniku će biti dodeljen zadatak. Ako je polje prazno ili nevažeće, biće dodeljen rezervni korisnik.
 2. **User (Fallback)**
-   * **Description:** Specifies the **fallback user** to be assigned if the document field does not contain a valid user.
-   * **Detail:** A dropdown list of all available users is provided for selection. This user will be assigned if the document field is empty or does not contain a valid user.
+   * **Opis:** Navodi **rezervnog korisnika** koji se dodeljuje ako polje dokumenta ne sadrži validnog korisnika.
+   * **Detalj:** Za izbor je dostupna padajuća lista svih dostupnih korisnika. Ovaj korisnik će biti dodeljen ako je polje dokumenta prazno ili ne sadrži validnog korisnika.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Field-Based User Assignment:**\
-  The card first attempts to assign the task or action to the user identified in the **Field Name**.
-* **Fallback User Assignment:**\
-  If the field does not contain a valid user (or is empty), the card assigns the task to the fallback user selected from the **User (Fallback)** dropdown list.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Dodela korisnika zasnovana na polju:**\
+  Kartica prvo pokušava da dodeli zadatak ili akciju korisniku identifikovanom u **Field Name**.
+* **Dodela rezervnog korisnika:**\
+  Ako polje ne sadrži validnog korisnika (ili je prazno), kartica dodeljuje zadatak rezervnom korisniku izabranom iz padajuće liste **User (Fallback)**.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Select Field Name:**\
-  Choose the **document field** that specifies the user for assignment.
-* **Select Fallback User:**\
-  Choose the **fallback user** from the dropdown list. This user will be assigned the task if the document field does not contain a valid user.
+* **Izbor imena polja:**\
+  Izaberite **polje dokumenta** koje navodi korisnika za dodelu.
+* **Izbor rezervnog korisnika:**\
+  Izaberite **rezervnog korisnika** iz padajuće liste. Ovom korisniku će biti dodeljen zadatak ako polje dokumenta ne sadrži validnog korisnika.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Assign User from Field with Fallback"** workflow card ensures that a task or action is always assigned to a valid user. If the user in the document field is not available, the fallback user is automatically assigned, providing flexibility and ensuring task completion.
+Kartica radnog toka **"Assign User from Field with Fallback"** obezbeđuje da zadatak ili akcija uvek budu dodeljeni validnom korisniku. Ako korisnik u polju dokumenta nije dostupan, automatski se dodeljuje rezervni korisnik, pružajući fleksibilnost i obezbeđujući završetak zadatka.

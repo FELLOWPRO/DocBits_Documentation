@@ -2,52 +2,52 @@
 
 <figure><img src="../../../../.gitbook/assets/image (294).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Calculate Columns in Table"** workflow card is used to perform calculations between columns in a selected table. It allows users to select columns, apply a mathematical operation, and store the result in a specified result column.
+Kartica radnog toka **"Calculate Columns in Table"** se koristi za vršenje proračuna između kolona u izabranoj tabeli. Omogućava korisnicima da izaberu kolone, primene matematičku operaciju i sačuvaju rezultat u navedenoj koloni rezultata.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which the columns will be calculated.
-   * **Detail:** A dropdown list of all available **tables** is provided for selection.
+   * **Opis:** Navodi **tabelu** u kojoj će se kolone proračunati.
+   * **Detalj:** Za izbor je dostupna padajuća lista svih dostupnih **tabela**.
 2. **Column Name (1st Column)**
-   * **Description:** Specifies the **first column** to be involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+   * **Opis:** Navodi **prvu kolonu** koja učestvuje u proračunu.
+   * **Detalj:** Za izbor je dostupna lista svih dostupnih **kolona**.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be applied between the selected columns.
-   * **Options:**
-     * **Add (+):** Adds the value of the second column to the value of the first column.
-     * **Subtract (-):** Subtracts the value of the second column from the value of the first column.
-     * **Multiply (\*):** Multiplies the value in the first column by the value in the second column.
-     * **Divide (/):** Divides the value in the first column by the value in the second column.
+   * **Opis:** Definiše matematičku operaciju koja se primenjuje između izabranih kolona.
+   * **Opcije:**
+     * **Add (+):** Dodaje vrednost druge kolone vrednosti prve kolone.
+     * **Subtract (-):** Oduzima vrednost druge kolone od vrednosti prve kolone.
+     * **Multiply (\*):** Množi vrednost u prvoj koloni vrednošću u drugoj koloni.
+     * **Divide (/):** Deli vrednost u prvoj koloni vrednošću u drugoj koloni.
 4. **Column Name (2nd Column)**
-   * **Description:** Specifies the **second column** to be involved in the calculation.
-   * **Detail:** A list of available **columns** is provided for selection.
+   * **Opis:** Navodi **drugu kolonu** koja učestvuje u proračunu.
+   * **Detalj:** Za izbor je dostupna lista dostupnih **kolona**.
 5. **Result Column**
-   * **Description:** Specifies the **column** where the result of the calculation will be stored.
-   * **Detail:** A list of available **columns** is provided where the calculated value will be saved.
+   * **Opis:** Navodi **kolonu** u kojoj će se sačuvati rezultat proračuna.
+   * **Detalj:** Dostupna je lista dostupnih **kolona** u koje će se sačuvati izračunata vrednost.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Column Calculation:**\
-  The card performs the selected mathematical operation between the two chosen columns.
-* **Result Storage:**\
-  The result of the calculation is stored in the selected **result column**.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Proračun kolona:**\
+  Kartica vrši izabranu matematičku operaciju između dve izabrane kolone.
+* **Čuvanje rezultata:**\
+  Rezultat proračuna se čuva u izabranoj **koloni rezultata**.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Select Table:**\
-  Choose the **table** where the columns will be calculated.
-* **Choose Columns:**\
-  Select the **first column** and **second column** that will be used in the calculation.
-* **Select Operation:**\
-  Choose the mathematical operation (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) to be applied between the columns.
-* **Select Result Column:**\
-  Choose the **result column** where the calculation will be stored.
+* **Izbor tabele:**\
+  Izaberite **tabelu** u kojoj će se kolone proračunati.
+* **Izbor kolona:**\
+  Izaberite **prvu kolonu** i **drugu kolonu** koje će se koristiti u proračunu.
+* **Izbor operacije:**\
+  Izaberite matematičku operaciju (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) koja se primenjuje između kolona.
+* **Izbor kolone rezultata:**\
+  Izaberite **kolonu rezultata** u kojoj će se sačuvati proračun.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Calculate Columns in Table"** workflow card enables users to perform dynamic calculations between columns in a table, and store the results in a designated column. The card offers flexibility to apply different mathematical operations and ensures the result is stored in the specified column.
+Kartica radnog toka **"Calculate Columns in Table"** omogućava korisnicima da vrše dinamičke proračune između kolona u tabeli i da sačuvaju rezultate u određenoj koloni. Kartica nudi fleksibilnost za primenu različitih matematičkih operacija i obezbeđuje da se rezultat sačuva u navedenoj koloni.

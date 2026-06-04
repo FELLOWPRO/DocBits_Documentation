@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The "**Assign the Document Sequentially to the Procurement Group**" workflow card enables the sequential assignment of documents to a specified procurement group. The priority value determines the order of assignment, where lower numbers represent higher priority.
+Kartica radnog toka "**Assign the Document Sequentially to the Procurement Group**" omogućava sekvencijalnu dodelu dokumenata navedenoj nabavnoj grupi. Vrednost prioriteta određuje redosled dodele, pri čemu niži brojevi predstavljaju viši prioritet.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Group**
-   * **Description**: A text input field where the name of the procurement group can be entered.
-   * **Detail**: Specifies the procurement group to which the document will be assigned.
+   * **Opis**: Polje za unos teksta u kojem se može uneti ime nabavne grupe.
+   * **Detalj**: Navodi nabavnu grupu kojoj će dokument biti dodeljen.
 2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the group can be set.
-   * **Detail**: Lower numbers signify higher priority, ensuring that documents are assigned to groups in ascending order of priority.
+   * **Opis**: Numeričko polje za unos u kojem se može postaviti nivo prioriteta za grupu.
+   * **Detalj**: Niži brojevi označavaju viši prioritet, obezbeđujući da se dokumenti dodeljuju grupama u rastućem redosledu prioriteta.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Document Assignment**:\
-  The card assigns documents to the specified procurement group in a sequential manner.\
-  Priority values dictate the assignment order, with lower numbers being processed first.
+* **Dodela dokumenta**:\
+  Kartica dodeljuje dokumente navedenoj nabavnoj grupi na sekvencijalan način.\
+  Vrednosti prioriteta diktiraju redosled dodele, pri čemu se niži brojevi obrađuju prvi.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Group** field:
-   * Enter the name of the procurement group in the text field.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Dodajte karticu **Assign the Document Sequentially** u svoj radni tok.
+2. Konfigurišite polje **Group**:
+   * Unesite ime nabavne grupe u tekstualno polje.
+3. Konfigurišite polje **Priority (Value)**:
+   * Unesite numeričku vrednost da postavite prioritet dodele.
+4. Sačuvajte i aktivirajte radni tok da biste primenili konfiguraciju.
 
-## **Conclusion**
+## **Zaključak**
 
-The "Assign the Document Sequentially to the Procurement Group " workflow card ensures effective document allocation to procurement groups based on priority. This enhances organizational efficiency and task management.
+Kartica radnog toka "Assign the Document Sequentially to the Procurement Group" obezbeđuje efikasnu raspodelu dokumenata nabavnim grupama na osnovu prioriteta. Ovo poboljšava organizacionu efikasnost i upravljanje zadacima.

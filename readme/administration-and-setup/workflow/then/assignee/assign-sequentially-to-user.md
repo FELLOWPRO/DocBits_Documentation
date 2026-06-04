@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (9) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The "**Assign Sequentially to User**" workflow card automates the assignment of documents to a selected user in a sequential manner. The priority value determines the order of assignment, with lower numbers representing higher priority.
+Kartica radnog toka "**Assign Sequentially to User**" automatizuje dodelu dokumenata izabranom korisniku na sekvencijalan način. Vrednost prioriteta određuje redosled dodele, pri čemu niži brojevi predstavljaju viši prioritet.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **User**
-   * **Description**: The selected user will be assigned the document based on the workflow sequence.
-   * **Detail**: A dropdown menu that lists all available users for assignment.
+   * **Opis**: Izabranom korisniku će biti dodeljen dokument na osnovu sekvence radnog toka.
+   * **Detalj**: Padajući meni koji navodi sve dostupne korisnike za dodelu.
 2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the user can be set.
-   * **Detail**: Lower numbers signify higher priority. Documents are assigned to users in ascending order of priority.
+   * **Opis**: Numeričko polje za unos u kojem se može postaviti nivo prioriteta za korisnika.
+   * **Detalj**: Niži brojevi označavaju viši prioritet. Dokumenti se dodeljuju korisnicima u rastućem redosledu prioriteta.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Document Assignment**:\
-  The card assigns documents to the selected user sequentially, considering the priority level.\
-  If multiple users have the same priority, the documents are assigned in the order users appear in the dropdown menu.
+* **Dodela dokumenta**:\
+  Kartica dodeljuje dokumente izabranom korisniku sekvencijalno, uzimajući u obzir nivo prioriteta.\
+  Ako više korisnika ima isti prioritet, dokumenti se dodeljuju redosledom kojim se korisnici pojavljuju u padajućem meniju.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **User** field:
-   * Select a user from the dropdown menu.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Dodajte karticu **Assign the Document Sequentially** u svoj radni tok.
+2. Konfigurišite polje **User**:
+   * Izaberite korisnika iz padajućeg menija.
+3. Konfigurišite polje **Priority (Value)**:
+   * Unesite numeričku vrednost da postavite prioritet dodele.
+4. Sačuvajte i aktivirajte radni tok da biste primenili konfiguraciju.
 
-## **Conclusion**
+## **Zaključak**
 
-The "Assign the Document Sequentially to User" workflow card ensures organized document distribution by assigning documents in a prioritized sequence. This enhances task management and reduces delays in processing.
+Kartica radnog toka "Assign the Document Sequentially to User" obezbeđuje organizovanu raspodelu dokumenata dodeljivanjem dokumenata u prioritizovanoj sekvenci. Ovo poboljšava upravljanje zadacima i smanjuje kašnjenja u obradi.

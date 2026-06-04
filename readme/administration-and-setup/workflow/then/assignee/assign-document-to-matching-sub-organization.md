@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (303).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card assigns a document to a sub-organization dynamically, based on a specified field in the document. If no matching sub-organization is found, the card uses a predefined fallback sub-organization.
+Kartica radnog toka **"Assign Document to Matching Sub-Organization Based on Field"** dinamično dodeljuje dokument pod-organizaciji, na osnovu navedenog polja u dokumentu. Ako se ne pronađe odgovarajuća pod-organizacija, kartica koristi unapred definisanu rezervnu pod-organizaciju.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field to be used for determining the matching sub-organization.
-   * **Detail:** The card looks for a value in the specified field to match with an available sub-organization.
+   * **Opis:** Navodi polje dokumenta koje se koristi za određivanje odgovarajuće pod-organizacije.
+   * **Detalj:** Kartica traži vrednost u navedenom polju da bi je uparila sa dostupnom pod-organizacijom.
 2. **Sub-Organization (Fallback)**
-   * **Description:** Defines the fallback sub-organization to be used if no match is found in the specified field.
-   * **Detail:** If the field value does not match any sub-organization, the document will be assigned to the fallback sub-organization selected.
+   * **Opis:** Definiše rezervnu pod-organizaciju koja se koristi ako se ne pronađe poklapanje u navedenom polju.
+   * **Detalj:** Ako se vrednost polja ne poklapa ni sa jednom pod-organizacijom, dokument će biti dodeljen izabranoj rezervnoj pod-organizaciji.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Dynamic Assignment:**\
-  The card checks the value of the specified field and assigns the document to the sub-organization that matches this value.
-* **Fallback Mechanism:**\
-  If no matching sub-organization is found, the document is assigned to the fallback sub-organization.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Dinamička dodela:**\
+  Kartica proverava vrednost navedenog polja i dodeljuje dokument pod-organizaciji koja se poklapa sa ovom vrednošću.
+* **Mehanizam rezerve:**\
+  Ako se ne pronađe odgovarajuća pod-organizacija, dokument se dodeljuje rezervnoj pod-organizaciji.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Select Field Name:**\
-  Choose the field from the document that contains the value to match with a sub-organization.
-* **Select Fallback Sub-Organization:**\
-  Choose the sub-organization that will be used if no match is found in the document field.
+* **Izbor imena polja:**\
+  Izaberite polje iz dokumenta koje sadrži vrednost za uparivanje sa pod-organizacijom.
+* **Izbor rezervne pod-organizacije:**\
+  Izaberite pod-organizaciju koja će se koristiti ako se ne pronađe poklapanje u polju dokumenta.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Assign Document to Matching Sub-Organization Based on Field"** workflow card offers flexibility by dynamically routing documents to the appropriate sub-organization, with an added fallback option to ensure no document is left unassigned.
+Kartica radnog toka **"Assign Document to Matching Sub-Organization Based on Field"** nudi fleksibilnost dinamičkim usmeravanjem dokumenata odgovarajućoj pod-organizaciji, sa dodatnom rezervnom opcijom kako bi se obezbedilo da nijedan dokument ne ostane nedodeljen.

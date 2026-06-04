@@ -2,29 +2,29 @@
 
 <figure><img src="../../../../.gitbook/assets/image (306).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Svrha:
 
-The **"Assign document to \[User/group] based on decision table"** workflow card dynamically assigns documents to users or groups based on the outcome of a **decision table**. This feature ensures that document assignment is handled efficiently and consistently based on predefined conditions.
+Kartica radnog toka **"Assign document to \[User/group] based on decision table"** dinamično dodeljuje dokumente korisnicima ili grupama na osnovu ishoda **tabele odlučivanja**. Ova funkcija obezbeđuje da se dodela dokumenata obavlja efikasno i dosledno na osnovu unapred definisanih uslova.
 
-## Components of the Card:
+## Komponente kartice:
 
 1. **User/Group**
-   * **Description:** Specifies the **user** or **group** to whom the document will be assigned.
-   * **Detail:** Selected based on the outcome of the **decision table**.
+   * **Opis:** Navodi **korisnika** ili **grupu** kojoj će dokument biti dodeljen.
+   * **Detalj:** Bira se na osnovu ishoda **tabele odlučivanja**.
 2. **Decision Table**
-   * **Description:** A **decision table** is used to determine the appropriate **user** or **group** for document assignment.
-   * **Detail:** Uses the decision table defined in the **"and"** section.
+   * **Opis:** **Tabela odlučivanja** se koristi za određivanje odgovarajućeg **korisnika** ili **grupe** za dodelu dokumenta.
+   * **Detalj:** Koristi tabelu odlučivanja definisanu u odeljku **"and"**.
 
-## Functionality:
+## Funkcionalnost:
 
-* **Condition Evaluation:** The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Dynamic Document Assignment:** The document is assigned to the **user** or **group** determined by the **decision table**.
+* **Procena uslova:** Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Dinamička dodela dokumenta:** Dokument se dodeljuje **korisniku** ili **grupi** određenoj **tabelom odlučivanja**.
 
-## Setup and Configuration:
+## Podešavanje i konfiguracija:
 
-* **Define Decision Table:** Set up the **decision table** to include the conditions for determining the target **user** or **group**.
-* **Assign Document to User/Group:** The document will be dynamically assigned based on the decision table's outcome.
+* **Definisanje tabele odlučivanja:** Podesite **tabelu odlučivanja** da uključi uslove za određivanje ciljnog **korisnika** ili **grupe**.
+* **Dodela dokumenta korisniku/grupi:** Dokument će biti dinamično dodeljen na osnovu ishoda tabele odlučivanja.
 
-## Conclusion:
+## Zaključak:
 
-The **"Assign document to \[User/group] based on decision table"** workflow card provides dynamic document assignment capabilities based on decision logic. This ensures accurate and efficient processing by automatically directing documents to the appropriate **user** or **group**, enhancing workflow automation.
+Kartica radnog toka **"Assign document to \[User/group] based on decision table"** pruža mogućnosti dinamičke dodele dokumenata na osnovu logike odlučivanja. Ovo obezbeđuje tačnu i efikasnu obradu automatskim usmeravanjem dokumenata odgovarajućem **korisniku** ili **grupi**, poboljšavajući automatizaciju radnog toka.

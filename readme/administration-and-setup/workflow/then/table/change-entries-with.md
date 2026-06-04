@@ -2,47 +2,47 @@
 
 <figure><img src="../../../../.gitbook/assets/image (293).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Change Entries in Table"** workflow card is used to update entries in a specified database table. It allows you to select a **table** and **column**, then perform mathematical operations (addition, subtraction, multiplication, or division) on the values in that column, using a specified value.
+Kartica radnog toka **"Change Entries in Table"** se koristi za ažuriranje unosa u navedenoj tabeli baze podataka. Omogućava vam da izaberete **tabelu** i **kolonu**, zatim da izvršite matematičke operacije (sabiranje, oduzimanje, množenje ili deljenje) nad vrednostima u toj koloni, koristeći navedenu vrednost.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which entries will be updated.
-   * **Detail:** A dropdown list of available **tables** is provided, allowing you to select the target table for updating entries.
+   * **Opis:** Navodi **tabelu** u kojoj će se unosi ažurirati.
+   * **Detalj:** Dostupna je padajuća lista dostupnih **tabela**, koja vam omogućava da izaberete ciljnu tabelu za ažuriranje unosa.
 2. **Column Name**
-   * **Description:** Specifies the **column** within the selected table to be updated.
-   * **Detail:** A list of all available **columns** will be provided for selection.
+   * **Opis:** Navodi **kolonu** unutar izabrane tabele koja treba da se ažurira.
+   * **Detalj:** Za izbor će biti dostupna lista svih dostupnih **kolona**.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be performed on the **column** values.
-   * **Options:**
-     * **Add (+):** Adds a specified **value** to the current value in the selected column.
-     * **Subtract (-):** Subtracts a specified **value** from the current value in the selected column.
-     * **Multiply (\*):** Multiplies the current value in the selected column by a specified **value**.
-     * **Divide (/):** Divides the current value in the selected column by a specified **value**.
+   * **Opis:** Definiše matematičku operaciju koja se vrši nad vrednostima **kolone**.
+   * **Opcije:**
+     * **Add (+):** Dodaje navedenu **vrednost** trenutnoj vrednosti u izabranoj koloni.
+     * **Subtract (-):** Oduzima navedenu **vrednost** od trenutne vrednosti u izabranoj koloni.
+     * **Multiply (\*):** Množi trenutnu vrednost u izabranoj koloni navedenom **vrednošću**.
+     * **Divide (/):** Deli trenutnu vrednost u izabranoj koloni navedenom **vrednošću**.
 4. **Value**
-   * **Description:** Specifies the **value** to be used in the selected operation.
-   * **Detail:** This is the number that will be added, subtracted, multiplied, or divided with the entries in the selected column.
+   * **Opis:** Navodi **vrednost** koja se koristi u izabranoj operaciji.
+   * **Detalj:** Ovo je broj koji će se sabrati, oduzeti, pomnožiti ili podeliti sa unosima u izabranoj koloni.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Table Entry Update:**\
-  The card performs the selected operation (**+**, **-**, **\***, or **/**) on the values in the chosen **column** of the selected **table, u**sing the specified **value**.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Ažuriranje unosa tabele:**\
+  Kartica vrši izabranu operaciju (**+**, **-**, **\*** ili **/**) nad vrednostima u izabranoj **koloni** izabrane **tabele**, koristeći navedenu **vrednost**.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Select Table:**\
-  Choose the **table** where the changes will be applied.
-* **Choose Column:**\
-  Select the **column** within the table that you want to update.
-* **Select Operation:**\
-  Choose the mathematical operation (**+**, **-**, **\***, **/**) to be applied to the selected column's values.
-* **Enter Value:**\
-  Provide the **value** to be used in the selected operation.
+* **Izbor tabele:**\
+  Izaberite **tabelu** u kojoj će se primeniti promene.
+* **Izbor kolone:**\
+  Izaberite **kolonu** unutar tabele koju želite da ažurirate.
+* **Izbor operacije:**\
+  Izaberite matematičku operaciju (**+**, **-**, **\***, **/**) koja se primenjuje na vrednosti izabrane kolone.
+* **Unos vrednosti:**\
+  Navedite **vrednost** koja se koristi u izabranoj operaciji.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Change Entries in Table"** workflow card enables automated updates to database entries by selecting a **table**, **column**, and desired **mathematical operation**. This card is essential for performing bulk data modifications or calculations within your database.
+Kartica radnog toka **"Change Entries in Table"** omogućava automatizovana ažuriranja unosa u bazi podataka izborom **tabele**, **kolone** i željene **matematičke operacije**. Ova kartica je od suštinskog značaja za vršenje masovnih izmena podataka ili proračuna unutar vaše baze podataka.

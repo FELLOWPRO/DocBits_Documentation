@@ -2,35 +2,35 @@
 
 <figure><img src="../../../../.gitbook/assets/image (301).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card assigns a document to either a **Disponent** or **Purchaser**. If no valid user is found, a fallback user is selected to ensure the document is always assigned to someone.
+Kartica radnog toka **"Assign Document to Disponent / Purchaser"** dodeljuje dokument bilo **disponentu** bilo **nabavljaču**. Ako se ne pronađe validan korisnik, bira se rezervni korisnik kako bi se obezbedilo da dokument uvek bude dodeljen nekome.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Disponent / Purchaser**
-   * **Description:** Specifies whether the document will be assigned to a Disponent or Purchaser.
-   * **Options:**
-     * **Disponent:** Assign the document to the Disponent.
-     * **Purchaser:** Assign the document to the Purchaser.
+   * **Opis:** Navodi da li će dokument biti dodeljen disponentu ili nabavljaču.
+   * **Opcije:**
+     * **Disponent:** Dodeljuje dokument disponentu.
+     * **Purchaser:** Dodeljuje dokument nabavljaču.
 2. **Fallback User**
-   * **Description:** Specifies a fallback user in case the document cannot be assigned to the selected Disponent or Purchaser.
-   * **Detail:** The dropdown list of available users lets you choose a fallback user to ensure the document is assigned even if the primary user cannot be determined.
+   * **Opis:** Navodi rezervnog korisnika u slučaju da se dokument ne može dodeliti izabranom disponentu ili nabavljaču.
+   * **Detalj:** Padajuća lista dostupnih korisnika vam omogućava da izaberete rezervnog korisnika kako biste obezbedili da se dokument dodeli čak i ako se primarni korisnik ne može odrediti.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Document Assignment:**\
-  The card assigns the document to either the **Disponent** or **Purchaser** as selected. If the selected person is unavailable or not valid, the document is assigned to the fallback user.
+* **Procena uslova:**\
+  Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+* **Dodela dokumenta:**\
+  Kartica dodeljuje dokument bilo **disponentu** bilo **nabavljaču** kako je izabrano. Ako izabrana osoba nije dostupna ili nije validna, dokument se dodeljuje rezervnom korisniku.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Select Disponent / Purchaser:**\
-  Choose whether to assign the document to the **Disponent** or **Purchaser**.
-* **Select Fallback User:**\
-  Choose a fallback user from the dropdown list who will receive the document if the primary assignment is not possible.
+* **Izbor Disponent / Purchaser:**\
+  Izaberite da li ćete dokument dodeliti **disponentu** ili **nabavljaču**.
+* **Izbor rezervnog korisnika:**\
+  Izaberite rezervnog korisnika iz padajuće liste koji će primiti dokument ako primarna dodela nije moguća.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Assign Document to Disponent / Purchaser"** workflow card ensures the document is always assigned, either to the selected Disponent/Purchaser or, if needed, to the fallback user. This minimizes workflow disruptions and ensures document processing continues smoothly.
+Kartica radnog toka **"Assign Document to Disponent / Purchaser"** obezbeđuje da dokument uvek bude dodeljen, bilo izabranom disponentu/nabavljaču ili, ako je potrebno, rezervnom korisniku. Ovo smanjuje prekide u radnom toku i obezbeđuje da se obrada dokumenata neometano nastavlja.

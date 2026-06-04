@@ -4,63 +4,63 @@
 
 <figure><img src="../../../../.gitbook/assets/image (295).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Svrha:**
 
-The **"Calculate with Regex Dependency"** workflow card allows users to perform calculations between columns in a selected table, with an added condition based on a regular expression (regex) pattern applied to a dependency column. If the pattern matches, the calculation is performed, and the result is stored in the specified result column.
+Kartica radnog toka **"Calculate with Regex Dependency"** omogućava korisnicima da vrše proračune između kolona u izabranoj tabeli, sa dodatnim uslovom zasnovanim na obrascu regularnog izraza (regex) koji se primenjuje na kolonu zavisnosti. Ako se obrazac poklopi, proračun se vrši, i rezultat se čuva u navedenoj koloni rezultata.
 
-## **Components of the Card:**
+## **Komponente kartice:**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which the columns will be calculated.
-   * **Detail:** A dropdown list of all available **tables** is provided for selection.
+   * **Opis:** Navodi **tabelu** u kojoj će se kolone proračunati.
+   * **Detalj:** Za izbor je dostupna padajuća lista svih dostupnih **tabela**.
 2. **Column Name (1st Column)**
-   * **Description:** Specifies the **first column** involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+   * **Opis:** Navodi **prvu kolonu** koja učestvuje u proračunu.
+   * **Detalj:** Za izbor je dostupna lista svih dostupnih **kolona**.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be applied between the selected columns.
-   * **Options:**
-     * **Add (+):** Adds the value of the second column to the value of the first column.
-     * **Subtract (-):** Subtracts the value of the second column from the first column.
-     * **Multiply (\*):** Multiplies the value of the first column by the value in the second column.
-     * **Divide (/):** Divides the value of the first column by the second column.
+   * **Opis:** Definiše matematičku operaciju koja se primenjuje između izabranih kolona.
+   * **Opcije:**
+     * **Add (+):** Dodaje vrednost druge kolone vrednosti prve kolone.
+     * **Subtract (-):** Oduzima vrednost druge kolone od prve kolone.
+     * **Multiply (\*):** Množi vrednost prve kolone vrednošću u drugoj koloni.
+     * **Divide (/):** Deli vrednost prve kolone drugom kolonom.
 4. **Column Name (2nd Column)**
-   * **Description:** Specifies the **second column** involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+   * **Opis:** Navodi **drugu kolonu** koja učestvuje u proračunu.
+   * **Detalj:** Za izbor je dostupna lista svih dostupnih **kolona**.
 5. **Column Name (Dependency)**
-   * **Description:** Specifies the **dependency column** to which the regex pattern will be applied.
-   * **Detail:** A list of all available **columns** is provided for pattern matching.
+   * **Opis:** Navodi **kolonu zavisnosti** na koju će se primeniti regex obrazac.
+   * **Detalj:** Za poklapanje obrasca dostupna je lista svih dostupnih **kolona**.
 6. **Regex Pattern**
-   * **Description:** Defines the **regex pattern** that will be used to match against the dependency column.
-   * **Detail:** If the value in the dependency column matches the regex pattern, the calculation will be performed.
+   * **Opis:** Definiše **regex obrazac** koji će se koristiti za poklapanje sa kolonom zavisnosti.
+   * **Detalj:** Ako se vrednost u koloni zavisnosti poklopi sa regex obrascem, proračun će se izvršiti.
 7. **Result Column**
-   * **Description:** Specifies the **result column** where the calculation result will be stored.
-   * **Detail:** This can be a new or existing column where the calculated value will be stored.
+   * **Opis:** Navodi **kolonu rezultata** u kojoj će se sačuvati rezultat proračuna.
+   * **Detalj:** Ovo može biti nova ili postojeća kolona u kojoj će se sačuvati izračunata vrednost.
 
-## **Functionality:**
+## **Funkcionalnost:**
 
-* **Condition Evaluation:**
-  * The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-  * The card only executes its action if the value in the dependency column matches the provided **regex pattern**.
-* **Column Calculation:**\
-  If the regex pattern matches, the card performs the selected mathematical operation between the two chosen columns.
-* **Result Storage:**\
-  The result of the calculation is stored in the selected **result column**.
+* **Procena uslova:**
+  * Kartica izvršava svoju akciju samo ako se oba odeljka, **"Where"** i **"And"**, procene kao tačna.
+  * Kartica izvršava svoju akciju samo ako se vrednost u koloni zavisnosti poklapa sa datim **regex obrascem**.
+* **Proračun kolona:**\
+  Ako se regex obrazac poklopi, kartica vrši izabranu matematičku operaciju između dve izabrane kolone.
+* **Čuvanje rezultata:**\
+  Rezultat proračuna se čuva u izabranoj **koloni rezultata**.
 
-## **Setup and Configuration:**
+## **Podešavanje i konfiguracija:**
 
-* **Select Table:**\
-  Choose the **table** where the columns will be calculated.
-* **Choose Columns:**\
-  Select the **first column** and **second column** that will be used in the calculation.
-* **Select Operation:**\
-  Choose the mathematical operation (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) to be applied between the columns.
-* **Select Dependency Column:**\
-  Choose the **dependency column** where the regex pattern will be applied.
-* **Define Regex Pattern:**\
-  Enter the **regex pattern** that the dependency column should match.
-* **Select Result Column:**\
-  Choose the **result column** where the calculated value will be stored.
+* **Izbor tabele:**\
+  Izaberite **tabelu** u kojoj će se kolone proračunati.
+* **Izbor kolona:**\
+  Izaberite **prvu kolonu** i **drugu kolonu** koje će se koristiti u proračunu.
+* **Izbor operacije:**\
+  Izaberite matematičku operaciju (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) koja se primenjuje između kolona.
+* **Izbor kolone zavisnosti:**\
+  Izaberite **kolonu zavisnosti** na koju će se primeniti regex obrazac.
+* **Definisanje regex obrasca:**\
+  Unesite **regex obrazac** sa kojim kolona zavisnosti treba da se poklopi.
+* **Izbor kolone rezultata:**\
+  Izaberite **kolonu rezultata** u kojoj će se sačuvati izračunata vrednost.
 
-## **Conclusion:**
+## **Zaključak:**
 
-The **"Calculate with Regex Dependency"** workflow card provides a powerful way to perform calculations with conditional logic based on a regex pattern. This ensures that only rows where the dependency column matches the specified pattern will undergo the specified calculation, and the result is stored in the chosen result column.
+Kartica radnog toka **"Calculate with Regex Dependency"** pruža moćan način za vršenje proračuna sa uslovnom logikom zasnovanom na regex obrascu. Ovo obezbeđuje da samo redovi u kojima se kolona zavisnosti poklapa sa navedenim obrascem prolaze kroz navedeni proračun, a rezultat se čuva u izabranoj koloni rezultata.

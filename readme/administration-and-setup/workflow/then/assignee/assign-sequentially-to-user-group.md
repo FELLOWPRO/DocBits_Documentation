@@ -2,31 +2,31 @@
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Svrha**
 
-The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card dynamically assigns documents to either a user or a group, depending on the decision table's evaluation. This ensures that documents are routed appropriately based on predefined rules.
+Kartica radnog toka "**Assign the Document Sequentially to User/Group Based on Decision Table**" dinamično dodeljuje dokumente bilo korisniku bilo grupi, u zavisnosti od procene tabele odlučivanja. Ovo obezbeđuje da se dokumenti usmeravaju na odgovarajući način na osnovu unapred definisanih pravila.
 
-## **Components of the Card**
+## **Komponente kartice**
 
 1. **Priority (Value)**
-   * **Description**: Specifies the priority level for assignments, where lower numbers represent higher priority.
-   * **Detail**: A numeric input field where the priority value can be set to control the sequence of assignment.
+   * **Opis**: Navodi nivo prioriteta za dodele, pri čemu niži brojevi predstavljaju viši prioritet.
+   * **Detalj**: Numeričko polje za unos u kojem se može postaviti vrednost prioriteta za kontrolu redosleda dodele.
 
-## **Functionality**
+## **Funkcionalnost**
 
-* **Decision Table Evaluation**:\
-  The decision table evaluates predefined conditions to decide whether the document is assigned to a user or a group.
-* **Document Assignment**:
-  * If the decision table returns a user, the document is assigned directly to that user.
-  * If the decision table returns a group, the document is assigned to the group sequentially, respecting the specified priority value.
+* **Procena tabele odlučivanja**:\
+  Tabela odlučivanja procenjuje unapred definisane uslove da odluči da li se dokument dodeljuje korisniku ili grupi.
+* **Dodela dokumenta**:
+  * Ako tabela odlučivanja vrati korisnika, dokument se dodeljuje direktno tom korisniku.
+  * Ako tabela odlučivanja vrati grupu, dokument se dodeljuje grupi sekvencijalno, poštujući navedenu vrednost prioriteta.
 
-## **Setup and Configuration**
+## **Podešavanje i konfiguracija**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-3. Save and activate the workflow to apply the configuration.
+1. Dodajte karticu **Assign the Document Sequentially** u svoj radni tok.
+2. Konfigurišite polje **Priority (Value)**:
+   * Unesite numeričku vrednost da postavite prioritet dodele.
+3. Sačuvajte i aktivirajte radni tok da biste primenili konfiguraciju.
 
-## **Conclusion**
+## **Zaključak**
 
-The "**Assign the Document Sequentially to User/Group Based on Decision Table**" workflow card ensures efficient and dynamic document routing. By leveraging decision table logic and priority values, the card facilitates accurate assignment to either a user or a group, streamlining document workflows.
+Kartica radnog toka "**Assign the Document Sequentially to User/Group Based on Decision Table**" obezbeđuje efikasno i dinamičko usmeravanje dokumenata. Korišćenjem logike tabele odlučivanja i vrednosti prioriteta, kartica olakšava tačnu dodelu bilo korisniku bilo grupi, pojednostavljujući radne tokove dokumenata.

@@ -1,22 +1,21 @@
-# Doğrulama ve Test
+# Doğrulama ve Test Etme
 
-Bir Gelişmiş İş Akışına güvenmeden önce, doğru olduğunu ve beklendiği gibi davrandığını teyit etmek için araç çubuğu kontrollerini kullanın.
+Bir Gelişmiş İş Akışı oluştururken, araç çubuğundaki iki denetim, oluşturucudan çıkmadan onu kontrol etmenize olanak tanır. Bunlar *oluşturma sırasında hızlı kontroller* içindir — kaydedilmiş, tekrarlanabilir testler için [Test Manager](../test-manager.md)'ı kullanın.
 
 ## Validate
 
-**validate** kontrolüne (onay-daire simgesi veya <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> tuşlarına basın) tıklayın. Doğrulama, grafiği sorunlara karşı denetler — bağlanmamış düğümler, eksik yapılandırma ve geçersiz bağlantılar — böylece iş akışı gerçek belgeler üzerinde çalışmadan önce bunları düzeltebilirsiniz.
+**Validate** denetimine tıklayın (check-circle simgesi veya <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> tuşlarına basın). Doğrulama, grafiği sorunlar açısından kontrol eder — bağlanmamış düğümler, eksik yapılandırma ve geçersiz bağlantılar — ve bunları işaret eder, böylece iş akışı gerçek belgeler üzerinde çalışmadan önce düzeltebilirsiniz.
 
 ## Test
 
-İş akışını bir örneğe karşı çalıştırmak ve canlı belgeleri etkilemeden nasıl davrandığını görmek için **test** kontrolüne (oynat simgesi veya <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> tuşlarına basın) tıklayın.
+Geçerli akışı bir örneğe karşı çalıştırmak ve canlı belgeleri etkilemeden nasıl davrandığını izlemek için **Test** denetimine tıklayın (play simgesi veya <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> tuşlarına basın). Bu, tuval üzerinde az önce yaptığınız bir değişikliği hızlıca doğrulamanın en hızlı yoludur.
 
-## Test senaryoları
+## Hangisini ne zaman kullanmalı
 
-Tekrarlanabilir kontroller için, **test senaryolarını** **Test Manager** içinde kaydedin (bkz. [Pano](../workflow-dashboard.md)). Her senaryo beklenen bir sonucu kaydeder ve bir geçti/kaldı sonucu gösterir, **Run All Tests** ise bunları birlikte yeniden çalıştırır — böylece bir değişiklikten sonra iş akışlarınızın hâlâ doğru davrandığını teyit edebilirsiniz.
-
-<figure><img src="../../../.gitbook/assets/workflow_test_manager.png" alt="Test senaryoları ve Run All Tests içeren İş Akışı Test Yöneticisi Listesi"><figcaption><p>Test Manager — geçti/kaldı sonuçlarıyla kaydedilmiş senaryolar ve <strong>Run All Tests</strong>.</p></figcaption></figure>
+- **Oluşturucuda Validate / Test** (bu sayfa) — akışı tasarlarken anında geri bildirim.
+- **[Test Manager](../test-manager.md)** — senaryoyu kaydedin, böylece gelecekteki değişikliklerden sonra regresyonları yakalamak için onu daha sonra (ve diğer tüm senaryolarınızla birlikte) yeniden çalıştırabilirsiniz.
 
 ## Sonraki adımlar
 
-- Düğüm türlerini ve bağlantıları [Düğümler](nodes.md) bölümünde gözden geçirin.
-- Tüm araç çubuğu ve tuval kontrollerini [Araç Çubuğu ve Tuval](toolbar-and-canvas.md) bölümünde görün.
+- Düğüm türlerini ve bağlantıları [Düğümler](nodes.md) sayfasında inceleyin.
+- Tüm araç çubuğu ve tuval denetimlerini [Araç Çubuğu ve Tuval](toolbar-and-canvas.md) sayfasında görün.

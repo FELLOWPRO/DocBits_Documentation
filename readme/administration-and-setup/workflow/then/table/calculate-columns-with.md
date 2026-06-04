@@ -2,52 +2,52 @@
 
 <figure><img src="../../../../.gitbook/assets/image (294).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-The **"Calculate Columns in Table"** workflow card is used to perform calculations between columns in a selected table. It allows users to select columns, apply a mathematical operation, and store the result in a specified result column.
+Die Workflow-Karte **"Calculate Columns in Table"** wird verwendet, um Berechnungen zwischen Spalten in einer ausgewählten Tabelle durchzuführen. Sie ermöglicht es Benutzern, Spalten auszuwählen, eine mathematische Operation anzuwenden und das Ergebnis in einer angegebenen Ergebnisspalte zu speichern.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Table Name**
-   * **Description:** Specifies the **table** in which the columns will be calculated.
-   * **Detail:** A dropdown list of all available **tables** is provided for selection.
-2. **Column Name (1st Column)**
-   * **Description:** Specifies the **first column** to be involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+1. **Tabellenname**
+   * **Beschreibung:** Gibt die **Tabelle** an, in der die Spalten berechnet werden.
+   * **Detail:** Zur Auswahl wird eine Dropdown-Liste aller verfügbaren **Tabellen** bereitgestellt.
+2. **Spaltenname (1. Spalte)**
+   * **Beschreibung:** Gibt die **erste Spalte** an, die an der Berechnung beteiligt ist.
+   * **Detail:** Zur Auswahl wird eine Liste aller verfügbaren **Spalten** bereitgestellt.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be applied between the selected columns.
-   * **Options:**
-     * **Add (+):** Adds the value of the second column to the value of the first column.
-     * **Subtract (-):** Subtracts the value of the second column from the value of the first column.
-     * **Multiply (\*):** Multiplies the value in the first column by the value in the second column.
-     * **Divide (/):** Divides the value in the first column by the value in the second column.
-4. **Column Name (2nd Column)**
-   * **Description:** Specifies the **second column** to be involved in the calculation.
-   * **Detail:** A list of available **columns** is provided for selection.
-5. **Result Column**
-   * **Description:** Specifies the **column** where the result of the calculation will be stored.
-   * **Detail:** A list of available **columns** is provided where the calculated value will be saved.
+   * **Beschreibung:** Legt die mathematische Operation fest, die zwischen den ausgewählten Spalten angewendet wird.
+   * **Optionen:**
+     * **Addieren (+):** Addiert den Wert der zweiten Spalte zum Wert der ersten Spalte.
+     * **Subtrahieren (-):** Subtrahiert den Wert der zweiten Spalte vom Wert der ersten Spalte.
+     * **Multiplizieren (\*):** Multipliziert den Wert in der ersten Spalte mit dem Wert in der zweiten Spalte.
+     * **Dividieren (/):** Dividiert den Wert in der ersten Spalte durch den Wert in der zweiten Spalte.
+4. **Spaltenname (2. Spalte)**
+   * **Beschreibung:** Gibt die **zweite Spalte** an, die an der Berechnung beteiligt ist.
+   * **Detail:** Zur Auswahl wird eine Liste der verfügbaren **Spalten** bereitgestellt.
+5. **Ergebnisspalte**
+   * **Beschreibung:** Gibt die **Spalte** an, in der das Ergebnis der Berechnung gespeichert wird.
+   * **Detail:** Es wird eine Liste der verfügbaren **Spalten** bereitgestellt, in der der berechnete Wert gespeichert wird.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:**\
-  The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-* **Column Calculation:**\
-  The card performs the selected mathematical operation between the two chosen columns.
-* **Result Storage:**\
-  The result of the calculation is stored in the selected **result column**.
+* **Bedingungsauswertung:**\
+  Die Karte führt ihre Aktion nur aus, wenn sowohl der **"Where"**- als auch der **"And"**-Abschnitt als erfüllt ausgewertet werden.
+* **Spaltenberechnung:**\
+  Die Karte führt die ausgewählte mathematische Operation zwischen den beiden gewählten Spalten durch.
+* **Ergebnisspeicherung:**\
+  Das Ergebnis der Berechnung wird in der ausgewählten **Ergebnisspalte** gespeichert.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* **Select Table:**\
-  Choose the **table** where the columns will be calculated.
-* **Choose Columns:**\
-  Select the **first column** and **second column** that will be used in the calculation.
-* **Select Operation:**\
-  Choose the mathematical operation (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) to be applied between the columns.
-* **Select Result Column:**\
-  Choose the **result column** where the calculation will be stored.
+* **Tabelle auswählen:**\
+  Wählen Sie die **Tabelle**, in der die Spalten berechnet werden.
+* **Spalten wählen:**\
+  Wählen Sie die **erste Spalte** und die **zweite Spalte**, die in der Berechnung verwendet werden.
+* **Operation auswählen:**\
+  Wählen Sie die mathematische Operation (**Addieren (+)**, **Subtrahieren (-)**, **Multiplizieren (\*)**, **Dividieren (/)**), die zwischen den Spalten angewendet wird.
+* **Ergebnisspalte auswählen:**\
+  Wählen Sie die **Ergebnisspalte**, in der die Berechnung gespeichert wird.
 
-## **Conclusion:**
+## **Fazit:**
 
-The **"Calculate Columns in Table"** workflow card enables users to perform dynamic calculations between columns in a table, and store the results in a designated column. The card offers flexibility to apply different mathematical operations and ensures the result is stored in the specified column.
+Die Workflow-Karte **"Calculate Columns in Table"** ermöglicht es Benutzern, dynamische Berechnungen zwischen Spalten in einer Tabelle durchzuführen und die Ergebnisse in einer festgelegten Spalte zu speichern. Die Karte bietet Flexibilität, um verschiedene mathematische Operationen anzuwenden, und stellt sicher, dass das Ergebnis in der angegebenen Spalte gespeichert wird.

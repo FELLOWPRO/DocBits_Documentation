@@ -1,20 +1,19 @@
 # Validation & Testing
 
-Before you rely on an Advanced Workflow, use the toolbar controls to confirm it is correct and behaves as expected.
+While you build an Advanced Workflow, two controls in the toolbar let you check it without leaving the builder. These are for *quick checks during building* — for saved, repeatable tests, use the [Test Manager](../test-manager.md).
 
 ## Validate
 
-Click the **validate** control (the check-circle icon, or press <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Validation checks the graph for problems — unconnected nodes, missing configuration and invalid connections — so you can fix them before the workflow runs on real documents.
+Click the **Validate** control (the check-circle icon, or press <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>). Validation checks the graph for problems — unconnected nodes, missing configuration and invalid connections — and points them out so you can fix them before the workflow runs on real documents.
 
 ## Test
 
-Click the **test** control (the play icon, or press <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) to run the workflow against a sample and see how it behaves, without affecting live documents.
+Click the **Test** control (the play icon, or press <kbd>Cmd/Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>) to run the current flow against a sample and watch how it behaves, without affecting live documents. This is the fastest way to sanity-check a change you just made on the canvas.
 
-## Test scenarios
+## When to use which
 
-For repeatable checks, save **test scenarios** in the **Test Manager** (see the [Dashboard](../workflow-dashboard.md)). Each scenario records an expected outcome and shows a pass/fail result, and **Run All Tests** re-runs them together — so you can confirm your workflows still behave correctly after a change.
-
-<figure><img src="../../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List with test scenarios and Run All Tests"><figcaption><p>The Test Manager — saved scenarios with pass/fail results and <strong>Run All Tests</strong>.</p></figcaption></figure>
+- **Validate / Test in the builder** (this page) — instant feedback while you are designing the flow.
+- **[Test Manager](../test-manager.md)** — save the scenario so you can re-run it later (and together with all your other scenarios) to catch regressions after future changes.
 
 ## Next steps
 

@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Zweck**
 
-The "**Assign the Document Sequentially to the Procurement Group**" workflow card enables the sequential assignment of documents to a specified procurement group. The priority value determines the order of assignment, where lower numbers represent higher priority.
+Die Workflow-Karte "**Assign the Document Sequentially to the Procurement Group**" ermöglicht die sequenzielle Zuweisung von Dokumenten an eine angegebene Beschaffungsgruppe. Der Prioritätswert bestimmt die Reihenfolge der Zuweisung, wobei niedrigere Zahlen eine höhere Priorität darstellen.
 
-## **Components of the Card**
+## **Bestandteile der Karte**
 
-1. **Group**
-   * **Description**: A text input field where the name of the procurement group can be entered.
-   * **Detail**: Specifies the procurement group to which the document will be assigned.
-2. **Priority (Value)**
-   * **Description**: A numeric input field where the priority level for the group can be set.
-   * **Detail**: Lower numbers signify higher priority, ensuring that documents are assigned to groups in ascending order of priority.
+1. **Gruppe**
+   * **Beschreibung**: Ein Texteingabefeld, in dem der Name der Beschaffungsgruppe eingegeben werden kann.
+   * **Detail**: Gibt die Beschaffungsgruppe an, der das Dokument zugewiesen wird.
+2. **Priorität (Wert)**
+   * **Beschreibung**: Ein numerisches Eingabefeld, in dem die Prioritätsstufe für die Gruppe festgelegt werden kann.
+   * **Detail**: Niedrigere Zahlen bedeuten eine höhere Priorität und stellen sicher, dass Dokumente den Gruppen in aufsteigender Reihenfolge der Priorität zugewiesen werden.
 
-## **Functionality**
+## **Funktionalität**
 
-* **Document Assignment**:\
-  The card assigns documents to the specified procurement group in a sequential manner.\
-  Priority values dictate the assignment order, with lower numbers being processed first.
+* **Dokumentzuweisung**:\
+  Die Karte weist Dokumente sequenziell der angegebenen Beschaffungsgruppe zu.\
+  Die Prioritätswerte bestimmen die Zuweisungsreihenfolge, wobei niedrigere Zahlen zuerst verarbeitet werden.
 
-## **Setup and Configuration**
+## **Einrichtung und Konfiguration**
 
-1. Add the **Assign the Document Sequentially** card to your workflow.
-2. Configure the **Group** field:
-   * Enter the name of the procurement group in the text field.
-3. Configure the **Priority (Value)** field:
-   * Enter a numeric value to set the assignment priority.
-4. Save and activate the workflow to apply the configuration.
+1. Fügen Sie die Karte **Assign the Document Sequentially** zu Ihrem Workflow hinzu.
+2. Konfigurieren Sie das Feld **Gruppe**:
+   * Geben Sie den Namen der Beschaffungsgruppe in das Textfeld ein.
+3. Konfigurieren Sie das Feld **Priorität (Wert)**:
+   * Geben Sie einen numerischen Wert ein, um die Zuweisungspriorität festzulegen.
+4. Speichern und aktivieren Sie den Workflow, um die Konfiguration anzuwenden.
 
-## **Conclusion**
+## **Fazit**
 
-The "Assign the Document Sequentially to the Procurement Group " workflow card ensures effective document allocation to procurement groups based on priority. This enhances organizational efficiency and task management.
+Die Workflow-Karte "Assign the Document Sequentially to the Procurement Group" sorgt für eine effektive Dokumentzuweisung an Beschaffungsgruppen auf Basis der Priorität. Dies steigert die organisatorische Effizienz und das Aufgabenmanagement.

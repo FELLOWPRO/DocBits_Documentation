@@ -1,210 +1,210 @@
-# October 2025 Release - Major Documentation & Versioning Updates
+# October 2025 Release - Wesentliche Dokumentations- & Versionierungsupdates
 
-**Release Date:** October 23, 2025
-**Release Type:** Feature & Documentation Release
-
----
-
-## Executive Summary
-
-This release marks a major milestone in DocBits Workflow Engine documentation and card management. We've added 9 comprehensive workflow card guides covering 80+ workflow cards, implemented card versioning system documentation, and identified 87 cross-reference opportunities for workflow linking improvements.
-
-**Major Achievements:**
-- ✅ 9 comprehensive workflow guides (4,642 lines of English documentation)
-- ✅ Complete card versioning system documentation
-- ✅ Multilingual support (8 languages, 72 total files)
-- ✅ Workflow linking analysis (87 opportunities)
-- ✅ 100% technical accuracy maintained
+**Veröffentlichungsdatum:** 23. Oktober 2025
+**Release-Typ:** Feature- & Dokumentations-Release
 
 ---
 
-## What's New
+## Zusammenfassung
 
-### 📚 Documentation Expansion
+Dieses Release markiert einen wichtigen Meilenstein in der Dokumentation und Card-Verwaltung der DocBits Workflow Engine. Wir haben 9 umfassende Workflow-Card-Anleitungen hinzugefügt, die 80+ Workflow-Cards abdecken, die Dokumentation des Card-Versionierungssystems implementiert und 87 Querverweismöglichkeiten zur Verbesserung der Workflow-Verlinkung identifiziert.
 
-#### New Comprehensive Guides
-Nine new documentation files have been added to help users understand and implement workflow cards:
+**Wesentliche Errungenschaften:**
+- ✅ 9 umfassende Workflow-Anleitungen (4.642 Zeilen englische Dokumentation)
+- ✅ Vollständige Dokumentation des Card-Versionierungssystems
+- ✅ Mehrsprachige Unterstützung (8 Sprachen, 72 Dateien insgesamt)
+- ✅ Analyse der Workflow-Verlinkung (87 Möglichkeiten)
+- ✅ 100 % technische Genauigkeit beibehalten
 
-**External Integration Cards:**
-1. **Call API Guide** (320 lines)
-   - Comprehensive API integration reference
-   - Parameter configuration
-   - Error handling and response parsing
-   - Deployed to: 8 languages ✅
+---
 
-2. **HTTPS Request Guide** (302 lines)
-   - Simple HTTP/HTTPS request implementation
-   - Webhook integration
-   - Status code handling
-   - Deployed to: 8 languages ✅
+## Neuerungen
 
-3. **DocOperator Script Guide** (422 lines)
-   - Browser automation
-   - Form filling and data extraction
-   - Script parameters and variables
-   - Deployed to: 8 languages ✅
+### 📚 Dokumentationserweiterung
 
-**Communication & Task Cards:**
-4. **Send Email to Groups Guide** (368 lines)
-   - Group email notifications
-   - Template variables
-   - Recipient management
-   - Deployed to: 8 languages ✅
+#### Neue umfassende Anleitungen
+Neun neue Dokumentationsdateien wurden hinzugefügt, um Benutzern das Verständnis und die Implementierung von Workflow-Cards zu erleichtern:
 
-5. **Task Assignment Guide** (593 lines)
-   - Task creation and assignment
-   - Priority levels
-   - Group and user assignment
-   - 12 task cards covered
-   - Deployed to: 8 languages ✅
+**Externe Integrations-Cards:**
+1. **Call API Guide** (320 Zeilen)
+   - Umfassende Referenz zur API-Integration
+   - Parameterkonfiguration
+   - Fehlerbehandlung und Antwort-Parsing
+   - Bereitgestellt in: 8 Sprachen ✅
 
-**Document & Data Manipulation:**
-6. **Field Manipulation Guide** (607 lines)
-   - Document field operations
-   - Calculation formulas
-   - Data transformation
-   - Table operations
-   - Deployed to: 8 languages ✅
+2. **HTTPS Request Guide** (302 Zeilen)
+   - Einfache HTTP/HTTPS-Anfrage-Implementierung
+   - Webhook-Integration
+   - Statuscode-Behandlung
+   - Bereitgestellt in: 8 Sprachen ✅
 
-7. **Document Assignment Guide** (688 lines)
-   - User and group assignment
-   - Sequential routing
-   - Conditional assignment logic
-   - Deployed to: 8 languages ✅
+3. **DocOperator Script Guide** (422 Zeilen)
+   - Browser-Automatisierung
+   - Formularausfüllung und Datenextraktion
+   - Skriptparameter und Variablen
+   - Bereitgestellt in: 8 Sprachen ✅
 
-**Validation & Comparison:**
-8. **PO Matching Complete Guide** (661 lines)
-   - Purchase order matching logic
-   - Variance calculations (formulas included)
-   - Tolerance thresholds
-   - Item-level comparison
-   - Deployed to: 8 languages ✅
+**Kommunikations- & Task-Cards:**
+4. **Send Email to Groups Guide** (368 Zeilen)
+   - Gruppen-E-Mail-Benachrichtigungen
+   - Vorlagenvariablen
+   - Empfängerverwaltung
+   - Bereitgestellt in: 8 Sprachen ✅
 
-9. **Condition Cards Complete Guide** (681 lines)
-   - 31+ condition card reference
-   - Decision logic
-   - Conditional routing
-   - Comprehensive parameter reference
-   - Deployed to: 8 languages ✅
+5. **Task Assignment Guide** (593 Zeilen)
+   - Aufgabenerstellung und -zuweisung
+   - Prioritätsstufen
+   - Gruppen- und Benutzerzuweisung
+   - 12 Task-Cards abgedeckt
+   - Bereitgestellt in: 8 Sprachen ✅
 
-#### Documentation Statistics
-| Metric | Value |
+**Dokument- & Datenmanipulation:**
+6. **Field Manipulation Guide** (607 Zeilen)
+   - Dokumentenfeld-Operationen
+   - Berechnungsformeln
+   - Datentransformation
+   - Tabellenoperationen
+   - Bereitgestellt in: 8 Sprachen ✅
+
+7. **Document Assignment Guide** (688 Zeilen)
+   - Benutzer- und Gruppenzuweisung
+   - Sequenzielles Routing
+   - Bedingte Zuweisungslogik
+   - Bereitgestellt in: 8 Sprachen ✅
+
+**Validierung & Vergleich:**
+8. **PO Matching Complete Guide** (661 Zeilen)
+   - Bestellabgleich-Logik
+   - Abweichungsberechnungen (Formeln enthalten)
+   - Toleranzschwellen
+   - Vergleich auf Positionsebene
+   - Bereitgestellt in: 8 Sprachen ✅
+
+9. **Condition Cards Complete Guide** (681 Zeilen)
+   - Referenz für 31+ Condition Cards
+   - Entscheidungslogik
+   - Bedingtes Routing
+   - Umfassende Parameterreferenz
+   - Bereitgestellt in: 8 Sprachen ✅
+
+#### Dokumentationsstatistik
+| Kennzahl | Wert |
 |--------|-------|
-| **Total Files** | 72 (9 guides × 8 languages) |
-| **English Documentation** | 4,642 lines |
-| **Total Documentation Lines** | ~334,224 |
-| **Cards Covered** | 80+ |
-| **Languages** | 8 |
-| **Average Guide Length** | 516 lines |
+| **Gesamtzahl der Dateien** | 72 (9 Anleitungen × 8 Sprachen) |
+| **Englische Dokumentation** | 4.642 Zeilen |
+| **Gesamtzahl der Dokumentationszeilen** | ~334.224 |
+| **Abgedeckte Cards** | 80+ |
+| **Sprachen** | 8 |
+| **Durchschnittliche Anleitungslänge** | 516 Zeilen |
 
 ---
 
-### 🔄 Card Versioning System Documentation
+### 🔄 Dokumentation des Card-Versionierungssystems
 
-A comprehensive card versioning reference has been created at [`/docs/card_version.md`](../../docs/card_version.md) with:
+Eine umfassende Referenz zur Card-Versionierung wurde unter [`/docs/card_version.md`](../../docs/card_version.md) erstellt mit:
 
-**Key Findings:**
-- 30+ cards with multiple versions
-- 90+ total version records
-- 9 deprecated versions
-- 2 fully disabled cards
+**Wichtige Erkenntnisse:**
+- 30+ Cards mit mehreren Versionen
+- 90+ Versionsdatensätze insgesamt
+- 9 veraltete Versionen
+- 2 vollständig deaktivierte Cards
 
-**Version Evolution Patterns Identified:**
-1. **Translation Key Adoption (v1 → v2)** - 15+ cards
-   - Addition of `trnsl_%` prefixes for i18n support
+**Identifizierte Versionsentwicklungsmuster:**
+1. **Einführung von Übersetzungsschlüsseln (v1 → v2)** - 15+ Cards
+   - Hinzufügen von `trnsl_%`-Präfixen für i18n-Unterstützung
 
-2. **Decision Tree Integration (v2 → v3)** - 5 cards
-   - Experimental decision tree support (later deprecated)
+2. **Decision-Tree-Integration (v2 → v3)** - 5 Cards
+   - Experimentelle Decision-Tree-Unterstützung (später veraltet)
 
-3. **Generic Type Evolution (v3 → v4)** - 4 cards
-   - Shift from "Task" to flexible work item types
+3. **Entwicklung zu generischen Typen (v3 → v4)** - 4 Cards
+   - Wechsel von "Task" zu flexiblen Arbeitselementtypen
 
-4. **Tolerance Parameters** - 6 PO comparison cards
-   - Support for variance tolerance in matching
+4. **Toleranzparameter** - 6 PO-Vergleichs-Cards
+   - Unterstützung für Abweichungstoleranz beim Abgleich
 
-5. **Comparison Modes** - 3 PO comparison cards
-   - Different comparison algorithms
+5. **Vergleichsmodi** - 3 PO-Vergleichs-Cards
+   - Verschiedene Vergleichsalgorithmen
 
-6. **Workflow Triggers** - STAUS_CHANGE
-   - Auto-execute workflows on status change
+6. **Workflow-Trigger** - STAUS_CHANGE
+   - Automatische Ausführung von Workflows bei Statusänderung
 
-**Most Versioned Cards:**
-- CONDITION_DOC_TO_PO_UNIT_PRICE - 5 versions (v2-5)
-- CONDITION_OC_TO_PO_ITEMS - 4 versions (v1-4)
-- tasks_create - 4 versions (v1-4)
-- ACTION_TASK_FOR_GROUP - 3 versions (v2-4)
-- ACTION_RUN_DOCOPERATOR_SCRIPT - 3 versions (v2-4)
+**Am häufigsten versionierte Cards:**
+- CONDITION_DOC_TO_PO_UNIT_PRICE - 5 Versionen (v2-5)
+- CONDITION_OC_TO_PO_ITEMS - 4 Versionen (v1-4)
+- tasks_create - 4 Versionen (v1-4)
+- ACTION_TASK_FOR_GROUP - 3 Versionen (v2-4)
+- ACTION_RUN_DOCOPERATOR_SCRIPT - 3 Versionen (v2-4)
 
-**See:** [Complete Card Versioning Reference](../../docs/card_version.md)
-
----
-
-### 🔗 Workflow Linking Analysis
-
-Comprehensive analysis identified **87 cross-reference opportunities** between workflow guides:
-
-**Linking Categories:**
-1. **Condition Card References** (15 links)
-   - Most cards reference condition logic
-   - Central to workflow control
-
-2. **Data Flow Links** (12 links)
-   - API → Field Storage → Condition Check → Action flow
-
-3. **Action Card Comparisons** (8 links)
-   - Help users choose between API, HTTPS, DocOperator
-
-4. **Error Handling Patterns** (9 links)
-   - Failure scenarios and recovery
-
-5. **Workflow Integration Patterns** (8 links)
-   - Multiple cards working together
-
-6. **Enhancement Suggestions** (35+ links)
-   - Additional integration opportunities
-
-**Implementation Plan:**
-- **Phase 1 (45 min):** High-impact navigation links
-- **Phase 2 (60 min):** Workflow pattern documentation
-- **Phase 3 (30 min):** Enhancement polish and completeness
-- **Total Time:** 2-3 hours
-
-**See:** [Workflow Linking Map](../../WORKFLOW_LINKING_MAP.md) | [Quick Reference](../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+**Siehe:** [Complete Card Versioning Reference](../../docs/card_version.md)
 
 ---
 
-## Deployment Status
+### 🔗 Analyse der Workflow-Verlinkung
 
-### Language Branch Deployment
+Eine umfassende Analyse identifizierte **87 Querverweismöglichkeiten** zwischen Workflow-Anleitungen:
 
-| Language | Branch | Status | Commits |
+**Verlinkungskategorien:**
+1. **Condition-Card-Verweise** (15 Links)
+   - Die meisten Cards verweisen auf Bedingungslogik
+   - Zentral für die Workflow-Steuerung
+
+2. **Datenfluss-Links** (12 Links)
+   - API → Feldspeicherung → Bedingungsprüfung → Aktionsfluss
+
+3. **Action-Card-Vergleiche** (8 Links)
+   - Helfen Benutzern bei der Auswahl zwischen API, HTTPS, DocOperator
+
+4. **Fehlerbehandlungsmuster** (9 Links)
+   - Fehlerszenarien und Wiederherstellung
+
+5. **Workflow-Integrationsmuster** (8 Links)
+   - Mehrere Cards, die zusammenarbeiten
+
+6. **Verbesserungsvorschläge** (35+ Links)
+   - Zusätzliche Integrationsmöglichkeiten
+
+**Implementierungsplan:**
+- **Phase 1 (45 Min.):** Navigationslinks mit hoher Wirkung
+- **Phase 2 (60 Min.):** Dokumentation von Workflow-Mustern
+- **Phase 3 (30 Min.):** Verbesserungen und Vollständigkeit
+- **Gesamtzeit:** 2-3 Stunden
+
+**Siehe:** [Workflow Linking Map](../../WORKFLOW_LINKING_MAP.md) | [Quick Reference](../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+
+---
+
+## Bereitstellungsstatus
+
+### Bereitstellung in Sprachzweigen
+
+| Sprache | Branch | Status | Commits |
 |----------|--------|--------|---------|
-| 🇺🇸 English | main | ⏳ Pending | 1 commit |
-| 🇩🇪 German | de | ✅ DEPLOYED | Synced |
-| 🇪🇸 Spanish | es | ✅ DEPLOYED | Synced |
-| 🇫🇷 French | fr | ✅ DEPLOYED | Synced |
-| 🇮🇹 Italian | it | ✅ DEPLOYED | Synced |
-| 🇵🇱 Polish | pl | ✅ DEPLOYED | Synced |
-| 🇵🇹 Portuguese | pt | ✅ DEPLOYED | Synced |
-| 🇳🇱 Dutch | nl | ✅ DEPLOYED | Synced |
+| 🇺🇸 English | main | ⏳ Ausstehend | 1 Commit |
+| 🇩🇪 German | de | ✅ BEREITGESTELLT | Synchronisiert |
+| 🇪🇸 Spanish | es | ✅ BEREITGESTELLT | Synchronisiert |
+| 🇫🇷 French | fr | ✅ BEREITGESTELLT | Synchronisiert |
+| 🇮🇹 Italian | it | ✅ BEREITGESTELLT | Synchronisiert |
+| 🇵🇱 Polish | pl | ✅ BEREITGESTELLT | Synchronisiert |
+| 🇵🇹 Portuguese | pt | ✅ BEREITGESTELLT | Synchronisiert |
+| 🇳🇱 Dutch | nl | ✅ BEREITGESTELLT | Synchronisiert |
 
-**Deployment Rate:** 6 out of 8 branches (75%) successfully deployed to GitHub
+**Bereitstellungsrate:** 6 von 8 Branches (75 %) erfolgreich auf GitHub bereitgestellt
 
 ---
 
 ## Breaking Changes
 
-⚠️ **No breaking changes in this release**
+⚠️ **Keine Breaking Changes in diesem Release**
 
-All existing workflows continue to function unchanged. New documentation does not affect existing card behavior.
+Alle bestehenden Workflows funktionieren weiterhin unverändert. Die neue Dokumentation beeinträchtigt das Verhalten bestehender Cards nicht.
 
 ---
 
-## Technical Details
+## Technische Details
 
-### File Organization
+### Dateiorganisation
 
-**New Directory Structure:**
+**Neue Verzeichnisstruktur:**
 ```
 readme/administration-and-setup/workflow/
 ├── then/
@@ -235,192 +235,192 @@ readme/administration-and-setup/workflow/
     └── documentation-enhancements.md (NEW)
 ```
 
-### Documentation References
-All guides include:
-- ✅ Purpose and use cases
-- ✅ Step-by-step setup instructions
-- ✅ Real-world examples
-- ✅ Parameter reference tables
-- ✅ Troubleshooting sections
-- ✅ Related card references
-- ✅ Best practices
+### Dokumentationsreferenzen
+Alle Anleitungen enthalten:
+- ✅ Zweck und Anwendungsfälle
+- ✅ Schritt-für-Schritt-Einrichtungsanweisungen
+- ✅ Praxisbeispiele
+- ✅ Tabellen mit Parameterreferenzen
+- ✅ Abschnitte zur Fehlerbehebung
+- ✅ Verweise auf verwandte Cards
+- ✅ Best Practices
 
-### Technical Accuracy
-- ✅ Card names preserved exactly (e.g., ACTION_SET_FIELD_TO_TEXT)
-- ✅ Formulas intact (e.g., Variance % = |(Invoice-PO)|/PO×100)
-- ✅ All code blocks and JSON examples unchanged
-- ✅ Technical parameter naming consistent
-- ✅ 100% accuracy maintained across all translations
+### Technische Genauigkeit
+- ✅ Card-Namen exakt beibehalten (z. B. ACTION_SET_FIELD_TO_TEXT)
+- ✅ Formeln unverändert (z. B. Variance % = |(Invoice-PO)|/PO×100)
+- ✅ Alle Codeblöcke und JSON-Beispiele unverändert
+- ✅ Technische Parameterbenennung konsistent
+- ✅ 100 % Genauigkeit über alle Übersetzungen hinweg beibehalten
 
 ---
 
-## Performance & Quality
+## Leistung & Qualität
 
-### Documentation Quality Metrics
-| Metric | Value |
+### Qualitätskennzahlen der Dokumentation
+| Kennzahl | Wert |
 |--------|-------|
-| **Code Examples** | 50+ |
-| **Parameter References** | 200+ |
-| **Use Cases Documented** | 80+ |
-| **Related Cards Linked** | 87 opportunities |
-| **Calculation Formulas** | 10+ |
-| **Translation Quality** | Professional |
-| **Accuracy Level** | 100% |
+| **Codebeispiele** | 50+ |
+| **Parameterreferenzen** | 200+ |
+| **Dokumentierte Anwendungsfälle** | 80+ |
+| **Verknüpfte verwandte Cards** | 87 Möglichkeiten |
+| **Berechnungsformeln** | 10+ |
+| **Übersetzungsqualität** | Professionell |
+| **Genauigkeitsniveau** | 100 % |
 
 ---
 
-## Migration & Upgrade Guide
+## Migrations- & Upgrade-Anleitung
 
-### For Existing Users
-No migration required. All existing workflows continue to work unchanged.
+### Für bestehende Benutzer
+Keine Migration erforderlich. Alle bestehenden Workflows funktionieren weiterhin unverändert.
 
-### For New Users
-Start with these guides based on your needs:
-1. **New to Workflows?** → Read [Workflow Overview](../README.md) first
-2. **Setting up Integrations?** → See [Call API Guide](../then/action/call-api-guide.md)
-3. **Creating Tasks?** → See [Task Assignment Guide](../then/task/task-assignment-guide.md)
-4. **Setting Conditions?** → See [Condition Cards Guide](../and/condition-cards-complete-guide.md)
-5. **Comparing with PO?** → See [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md)
+### Für neue Benutzer
+Beginnen Sie je nach Bedarf mit diesen Anleitungen:
+1. **Neu bei Workflows?** → Lesen Sie zuerst die [Workflow Overview](../README.md)
+2. **Integrationen einrichten?** → Siehe [Call API Guide](../then/action/call-api-guide.md)
+3. **Aufgaben erstellen?** → Siehe [Task Assignment Guide](../then/task/task-assignment-guide.md)
+4. **Bedingungen festlegen?** → Siehe [Condition Cards Guide](../and/condition-cards-complete-guide.md)
+5. **Mit PO vergleichen?** → Siehe [PO Matching Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 
-## Known Issues & Limitations
+## Bekannte Probleme & Einschränkungen
 
-### Outstanding Tasks
-- ⏳ Implement 87 cross-reference links (estimated 2-3 hours)
-- ⏳ Add screenshots/diagrams to guides
-- ⏳ Create video tutorials
-- ⏳ Implement user feedback collection
+### Ausstehende Aufgaben
+- ⏳ 87 Querverweis-Links implementieren (geschätzt 2-3 Stunden)
+- ⏳ Screenshots/Diagramme zu Anleitungen hinzufügen
+- ⏳ Video-Tutorials erstellen
+- ⏳ Erfassung von Benutzerfeedback implementieren
 
-### Resolved in This Release
-- ✅ Missing documentation for 80+ cards
-- ✅ Card version history tracking
-- ✅ Workflow linking identification
+### In diesem Release behoben
+- ✅ Fehlende Dokumentation für 80+ Cards
+- ✅ Verfolgung des Card-Versionsverlaufs
+- ✅ Identifizierung der Workflow-Verlinkung
 
 ---
 
 ## Feedback & Support
 
-### Report Issues
-If you find:
-- **Documentation errors:** Please report with specific card name and version
-- **Missing examples:** Indicate which guide and use case
-- **Translation issues:** Specify language and section
+### Probleme melden
+Falls Sie Folgendes finden:
+- **Dokumentationsfehler:** Bitte melden Sie diese mit konkretem Card-Namen und Version
+- **Fehlende Beispiele:** Geben Sie an, welche Anleitung und welcher Anwendungsfall
+- **Übersetzungsprobleme:** Geben Sie Sprache und Abschnitt an
 
-### Feature Requests
-- Suggest additional guides: Specify workflow scenario
-- Propose linking improvements: Reference specific cards
-- Request video content: Describe desired topic
+### Funktionswünsche
+- Zusätzliche Anleitungen vorschlagen: Geben Sie das Workflow-Szenario an
+- Verlinkungsverbesserungen vorschlagen: Verweisen Sie auf spezifische Cards
+- Videoinhalte anfordern: Beschreiben Sie das gewünschte Thema
 
-### Questions?
-- Check the relevant guide for your card
-- See [Card Versioning Reference](../../docs/card_version.md) for version-specific info
-- Review [Workflow Logs](../workflow-logs/) for execution details
-
----
-
-## Release Notes Summary
-
-### What Changed
-✅ Added 9 comprehensive workflow guides (72 files, 8 languages)
-✅ Documented card versioning system (30+ cards, 90+ versions)
-✅ Identified workflow linking opportunities (87 cross-references)
-✅ Created changelog system
-
-### What Stayed the Same
-✅ All existing workflows continue to work
-✅ No breaking changes to card behavior
-✅ Backward compatible
-
-### What's Coming Next
-🔄 Cross-reference linking implementation (87 opportunities)
-🎨 Visual guides and screenshots
-🎬 Video tutorials
-📊 Advanced analytics and reporting
+### Fragen?
+- Prüfen Sie die relevante Anleitung für Ihre Card
+- Siehe [Card Versioning Reference](../../docs/card_version.md) für versionsspezifische Informationen
+- Prüfen Sie die [Workflow Logs](../workflow-logs/) für Ausführungsdetails
 
 ---
 
-## Statistics & Impact
+## Zusammenfassung der Release Notes
 
-### Documentation Impact
-- **New Content:** 4,642 lines (English)
-- **Files Deployed:** 72 (9 guides × 8 languages)
-- **Cards Documented:** 80+
-- **Users Supported:** All DocBits workflow users
+### Was sich geändert hat
+✅ 9 umfassende Workflow-Anleitungen hinzugefügt (72 Dateien, 8 Sprachen)
+✅ Card-Versionierungssystem dokumentiert (30+ Cards, 90+ Versionen)
+✅ Workflow-Verlinkungsmöglichkeiten identifiziert (87 Querverweise)
+✅ Changelog-System erstellt
 
-### Versioning Impact
-- **Cards Tracked:** 30+
-- **Version Records:** 90+
-- **Deprecated Versions:** 9
-- **Active Versions:** 81+
+### Was gleich geblieben ist
+✅ Alle bestehenden Workflows funktionieren weiterhin
+✅ Keine Breaking Changes am Card-Verhalten
+✅ Abwärtskompatibel
 
-### Linking Potential
-- **Cross-Reference Opportunities:** 87
-- **Time to Implement:** 2-3 hours
-- **Expected User Impact:** High (improved navigation)
-
----
-
-## Acknowledgments
-
-This release was made possible by:
-- Comprehensive documentation analysis
-- Multi-language translation team
-- Version tracking and analysis
-- Cross-reference mapping
-- Quality assurance verification
+### Was als Nächstes kommt
+🔄 Implementierung der Querverweisverlinkung (87 Möglichkeiten)
+🎨 Visuelle Anleitungen und Screenshots
+🎬 Video-Tutorials
+📊 Erweiterte Analysen und Berichte
 
 ---
 
-## What's Next?
+## Statistik & Auswirkung
 
-**Immediate (Next 2 weeks):**
-1. Implement 87 identified cross-references
-2. Gather user feedback on new guides
-3. Identify additional documentation needs
+### Auswirkung auf die Dokumentation
+- **Neue Inhalte:** 4.642 Zeilen (Englisch)
+- **Bereitgestellte Dateien:** 72 (9 Anleitungen × 8 Sprachen)
+- **Dokumentierte Cards:** 80+
+- **Unterstützte Benutzer:** Alle DocBits-Workflow-Benutzer
 
-**Short-term (Next month):**
-1. Add screenshots and diagrams
-2. Create video tutorials
-3. Update standard workflows
+### Auswirkung auf die Versionierung
+- **Erfasste Cards:** 30+
+- **Versionsdatensätze:** 90+
+- **Veraltete Versionen:** 9
+- **Aktive Versionen:** 81+
 
-**Long-term (Next quarter):**
-1. Advanced workflow templates
-2. Integration patterns library
-3. Best practices documentation
-
----
-
-## Version Information
-
-- **Release:** October 2025
-- **Version Code:** 2025-10
-- **Type:** Feature & Documentation
-- **Status:** Stable
-- **Support:** Full
+### Verlinkungspotenzial
+- **Querverweismöglichkeiten:** 87
+- **Implementierungszeit:** 2-3 Stunden
+- **Erwartete Benutzerwirkung:** Hoch (verbesserte Navigation)
 
 ---
 
-## Download & Access
+## Danksagungen
 
-### Get Started
-- 📖 Read the guides: [Workflow Guides](../)
-- 🔍 Check versions: [Card Versioning Reference](../../docs/card_version.md)
-- 🔗 Map links: [Workflow Linking Analysis](../../WORKFLOW_LINKING_MAP.md)
+Dieses Release wurde ermöglicht durch:
+- Umfassende Dokumentationsanalyse
+- Mehrsprachiges Übersetzungsteam
+- Versionsverfolgung und -analyse
+- Querverweiszuordnung
+- Qualitätssicherungsprüfung
+
+---
+
+## Was kommt als Nächstes?
+
+**Sofort (nächste 2 Wochen):**
+1. 87 identifizierte Querverweise implementieren
+2. Benutzerfeedback zu neuen Anleitungen sammeln
+3. Zusätzlichen Dokumentationsbedarf identifizieren
+
+**Kurzfristig (nächster Monat):**
+1. Screenshots und Diagramme hinzufügen
+2. Video-Tutorials erstellen
+3. Standard-Workflows aktualisieren
+
+**Langfristig (nächstes Quartal):**
+1. Erweiterte Workflow-Vorlagen
+2. Bibliothek mit Integrationsmustern
+3. Best-Practices-Dokumentation
+
+---
+
+## Versionsinformationen
+
+- **Release:** Oktober 2025
+- **Versionscode:** 2025-10
+- **Typ:** Feature & Dokumentation
+- **Status:** Stabil
+- **Support:** Vollständig
+
+---
+
+## Download & Zugriff
+
+### Erste Schritte
+- 📖 Lesen Sie die Anleitungen: [Workflow Guides](../)
+- 🔍 Versionen prüfen: [Card Versioning Reference](../../docs/card_version.md)
+- 🔗 Links zuordnen: [Workflow Linking Analysis](../../WORKFLOW_LINKING_MAP.md)
 
 ### GitHub
 - **Repository:** github.com/Fellow-Consulting-AG/docbits
 - **Branches:** main, de, es, fr, it, pl, pt, nl
-- **Documentation:** readme/administration-and-setup/workflow/
+- **Dokumentation:** readme/administration-and-setup/workflow/
 
 ### GitBook
 - **Site:** docs.docbits.com
-- **Path:** /administration-and-setup/workflow/
-- **Languages:** 8 supported
+- **Pfad:** /administration-and-setup/workflow/
+- **Sprachen:** 8 unterstützt
 
 ---
 
-**Release Date:** October 23, 2025
-**Last Updated:** October 23, 2025
+**Veröffentlichungsdatum:** 23. Oktober 2025
+**Zuletzt aktualisiert:** 23. Oktober 2025
 **Repository:** https://github.com/Fellow-Consulting-AG/docbits
 **Support:** DocBits Team

@@ -1,161 +1,161 @@
-# Card Versioning System - October 2025 Update
+# Card-Versionierungssystem - Update Oktober 2025
 
-**Document:** Workflow Card Versioning Overview
-**Last Updated:** October 23, 2025
-**Status:** Complete
-
----
-
-## Overview
-
-The DocBits Workflow Engine uses **integer-based versioning** to manage card evolution while maintaining backward compatibility. This document provides an overview of the versioning system.
+**Dokument:** Überblick über die Workflow-Card-Versionierung
+**Zuletzt aktualisiert:** 23. Oktober 2025
+**Status:** Abgeschlossen
 
 ---
 
-## What is Card Versioning?
+## Überblick
 
-### Concept
-Each workflow card can have multiple versions, allowing the system to:
-- Add new features without breaking existing workflows
-- Support deprecated functionality while phasing it out
-- Evolve card capabilities over time
-- Maintain backward compatibility
-
-### Version Structure
-- **Format:** Integer values (1, 2, 3, 4, 5...)
-- **Identification:** Composite key of (card_type, card_version)
-- **Status:** Each version has deprecated/enabled flags
-
-### Example
-The `tasks_create` card has evolved through 4 versions:
-- **v1:** Original task creation (deprecated)
-- **v2:** Added translation support (deprecated)
-- **v3:** Experimental decision tree support (deprecated)
-- **v4:** Generic work item type support (current active)
+Die DocBits Workflow Engine verwendet eine **ganzzahlbasierte Versionierung**, um die Weiterentwicklung von Cards zu verwalten und gleichzeitig die Abwärtskompatibilität zu wahren. Dieses Dokument bietet einen Überblick über das Versionierungssystem.
 
 ---
 
-## Key Statistics
+## Was ist Card-Versionierung?
 
-### Versioning Overview
-| Metric | Value |
+### Konzept
+Jede Workflow-Card kann mehrere Versionen haben, wodurch das System Folgendes ermöglicht:
+- Neue Funktionen hinzufügen, ohne bestehende Workflows zu beeinträchtigen
+- Veraltete Funktionalität unterstützen, während sie schrittweise eingestellt wird
+- Card-Fähigkeiten im Laufe der Zeit weiterentwickeln
+- Abwärtskompatibilität wahren
+
+### Versionsstruktur
+- **Format:** Ganzzahlwerte (1, 2, 3, 4, 5...)
+- **Identifikation:** Zusammengesetzter Schlüssel aus (card_type, card_version)
+- **Status:** Jede Version hat deprecated/enabled-Flags
+
+### Beispiel
+Die Card `tasks_create` hat sich über 4 Versionen entwickelt:
+- **v1:** Ursprüngliche Aufgabenerstellung (veraltet)
+- **v2:** Übersetzungsunterstützung hinzugefügt (veraltet)
+- **v3:** Experimentelle Decision-Tree-Unterstützung (veraltet)
+- **v4:** Unterstützung generischer Arbeitselementtypen (aktuell aktiv)
+
+---
+
+## Wichtige Statistiken
+
+### Überblick über die Versionierung
+| Kennzahl | Wert |
 |--------|-------|
-| **Cards with Multiple Versions** | 30+ |
-| **Total Version Records** | 90+ |
-| **Versions per Card (average)** | 3 |
-| **Maximum Versions** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
-| **Deprecated Versions** | 9 |
-| **Fully Disabled Cards** | 2 |
+| **Cards mit mehreren Versionen** | 30+ |
+| **Gesamtzahl der Versionsdatensätze** | 90+ |
+| **Versionen pro Card (Durchschnitt)** | 3 |
+| **Maximale Versionen** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
+| **Veraltete Versionen** | 9 |
+| **Vollständig deaktivierte Cards** | 2 |
 
-### Version Distribution
-- **2 Versions:** 14 cards (simpler evolution)
-- **3 Versions:** 11 cards (moderate evolution)
-- **4 Versions:** 4 cards (significant evolution)
-- **5 Versions:** 1 card (most evolved: CONDITION_DOC_TO_PO_UNIT_PRICE)
+### Versionsverteilung
+- **2 Versionen:** 14 Cards (einfachere Entwicklung)
+- **3 Versionen:** 11 Cards (moderate Entwicklung)
+- **4 Versionen:** 4 Cards (erhebliche Entwicklung)
+- **5 Versionen:** 1 Card (am weitesten entwickelt: CONDITION_DOC_TO_PO_UNIT_PRICE)
 
 ---
 
-## Common Version Patterns
+## Häufige Versionierungsmuster
 
-### Pattern 1: Translation Key Adoption (v1 → v2)
+### Muster 1: Einführung von Übersetzungsschlüsseln (v1 → v2)
 
-**Affected:** 15+ cards
+**Betroffen:** 15+ Cards
 
-**Change:**
+**Änderung:**
 ```
 v1: Plain text: "Call Api: [param] with method: [param]"
 v2: With i18n: "trnsl_%call_api trnsl_be_% Call Api: [param]..."
 ```
 
-**Purpose:** Enable multi-language support
+**Zweck:** Mehrsprachenunterstützung ermöglichen
 
-**Cards:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS, and more
+**Cards:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS und weitere
 
-**Migration:** Safe - no functional changes
+**Migration:** Sicher – keine funktionalen Änderungen
 
 ---
 
-### Pattern 2: Decision Tree Integration (v2 → v3)
+### Muster 2: Decision-Tree-Integration (v2 → v3)
 
-**Affected:** 5 cards
+**Betroffen:** 5 Cards
 
-**Change:** Addition of decision tree parameter
+**Änderung:** Hinzufügen eines Decision-Tree-Parameters
 
 ```
 v2: Create a new Task with title: [param], description: [param]...
 v3: (same as v2) + "Use decision tree, if available: [param]"
 ```
 
-**Purpose:** Support decision table results
+**Zweck:** Ergebnisse von Entscheidungstabellen unterstützen
 
 **Cards:**
-- tasks_create (v3 deprecated)
-- ACTION_TASK_FOR_GROUP (v3 deprecated)
-- DOC_USER_ASSIGN (v3 deprecated)
-- DOC_GROUP_ASSIGN (v3 deprecated)
+- tasks_create (v3 veraltet)
+- ACTION_TASK_FOR_GROUP (v3 veraltet)
+- DOC_USER_ASSIGN (v3 veraltet)
+- DOC_GROUP_ASSIGN (v3 veraltet)
 - ACTION_DECISION_TREE_CREATE_TASKS
 
-**Status:** Deprecated - decision tree approach was experimental
+**Status:** Veraltet – der Decision-Tree-Ansatz war experimentell
 
 ---
 
-### Pattern 3: Generic Type Evolution (v3 → v4)
+### Muster 3: Entwicklung zu generischen Typen (v3 → v4)
 
-**Affected:** 4 cards
+**Betroffen:** 4 Cards
 
-**Change:** "Task" becomes flexible work item type
+**Änderung:** "Task" wird zu einem flexiblen Arbeitselementtyp
 
 ```
 v3: Create a new Task with the title: [param]
 v4: Create a new [param] with the title: [param]
 ```
 
-**Purpose:** Support Tasks, Tickets, Issues, and other work item types
+**Zweck:** Unterstützung von Tasks, Tickets, Issues und anderen Arbeitselementtypen
 
 **Cards:**
-- tasks_create (v4 current)
-- ACTION_TASK_FOR_GROUP (v4 current)
-- ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP (v3 current)
-- ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK (v3 current)
+- tasks_create (v4 aktuell)
+- ACTION_TASK_FOR_GROUP (v4 aktuell)
+- ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP (v3 aktuell)
+- ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK (v3 aktuell)
 
-**Current Status:** Active and recommended
+**Aktueller Status:** Aktiv und empfohlen
 
 ---
 
-### Pattern 4: Tolerance Parameters (PO Cards)
+### Muster 4: Toleranzparameter (PO-Cards)
 
-**Affected:** 6 PO comparison cards
+**Betroffen:** 6 PO-Vergleichs-Cards
 
-**Change:** Addition of tolerance/variance support
+**Änderung:** Hinzufügen von Toleranz-/Abweichungsunterstützung
 
 ```
 v2: Document value [operator] Purchase Order value
 v3+: Document value [operator] PO value with tolerance [amount] [unit]
 ```
 
-**Purpose:** Allow acceptable variance in matching (e.g., 2% price difference OK)
+**Zweck:** Akzeptable Abweichungen beim Abgleich zulassen (z. B. 2 % Preisdifferenz in Ordnung)
 
-**Key Cards:**
-- CONDITION_DOC_TO_PO_UNIT_PRICE (evolved to v5 with tolerance)
+**Wichtige Cards:**
+- CONDITION_DOC_TO_PO_UNIT_PRICE (zu v5 mit Toleranz entwickelt)
 - CONDITION_DATES_OPERATOR_OC_LINE_ITEMS (v2 → v3)
 - CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
 
-**Benefit:** More realistic matching criteria
+**Vorteil:** Realistischere Vergleichskriterien
 
 ---
 
-### Pattern 5: Comparison Mode Parameters
+### Muster 5: Vergleichsmodus-Parameter
 
-**Affected:** 3 PO comparison cards
+**Betroffen:** 3 PO-Vergleichs-Cards
 
-**Change:** Support for different comparison algorithms
+**Änderung:** Unterstützung verschiedener Vergleichsalgorithmen
 
 ```
 v3: Standard comparison logic
 v4: Same logic + "Compare as [param]" parameter
 ```
 
-**Purpose:** Flexible comparison methods
+**Zweck:** Flexible Vergleichsmethoden
 
 **Cards:**
 - COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE (v2-4)
@@ -164,63 +164,63 @@ v4: Same logic + "Compare as [param]" parameter
 
 ---
 
-### Pattern 6: Workflow Triggers
+### Muster 6: Workflow-Trigger
 
-**Affected:** STAUS_CHANGE only
+**Betroffen:** Nur STAUS_CHANGE
 
-**Change:** Auto-trigger workflows on status change
+**Änderung:** Automatisches Auslösen von Workflows bei Statusänderung
 
 ```
 v2: Change Status to [param]
 v3: Change Status to [param], trigger Workflows [param]
 ```
 
-**Purpose:** Cascade status changes across workflows
+**Zweck:** Statusänderungen über Workflows hinweg kaskadieren
 
 ---
 
-## Most Evolved Cards
+## Am weitesten entwickelte Cards
 
-### 1. CONDITION_DOC_TO_PO_UNIT_PRICE (5 versions)
+### 1. CONDITION_DOC_TO_PO_UNIT_PRICE (5 Versionen)
 
-**Evolution Path:** v2 → v3 → v4 → v5
+**Entwicklungspfad:** v2 → v3 → v4 → v5
 
-- **v2:** Basic unit price comparison
-- **v3:** Same translation key (v2)
-- **v4:** Added comparison mode parameter
-- **v5:** Added tolerance threshold parameter
+- **v2:** Einfacher Stückpreisvergleich
+- **v3:** Gleicher Übersetzungsschlüssel (v2)
+- **v4:** Vergleichsmodus-Parameter hinzugefügt
+- **v5:** Toleranzschwellen-Parameter hinzugefügt
 
-**Current:** v5 (with tolerance support)
-
----
-
-### 2. CONDITION_OC_TO_PO_ITEMS (4 versions)
-
-**Evolution Path:** v1 → v2 → v3 → v4
-
-- **v1:** Basic item matching (deprecated)
-- **v2:** Added comparison method parameter
-- **v3:** Enhanced with translation keys
-- **v4:** Added compare mode parameter
-
-**Current:** v4
-
-**Avoid:** v1 (deprecated)
+**Aktuell:** v5 (mit Toleranzunterstützung)
 
 ---
 
-### 3. tasks_create (4 versions)
+### 2. CONDITION_OC_TO_PO_ITEMS (4 Versionen)
 
-**Evolution Path:** v1 → v2 → v3 → v4
+**Entwicklungspfad:** v1 → v2 → v3 → v4
 
-- **v1:** Original implementation (deprecated)
-- **v2:** Added translation support (deprecated)
-- **v3:** Added decision tree (deprecated)
-- **v4:** Generic work item types (current)
+- **v1:** Einfacher Positionsabgleich (veraltet)
+- **v2:** Parameter für die Vergleichsmethode hinzugefügt
+- **v3:** Mit Übersetzungsschlüsseln erweitert
+- **v4:** Vergleichsmodus-Parameter hinzugefügt
 
-**Current:** v4 (recommended)
+**Aktuell:** v4
 
-**Timeline:**
+**Vermeiden:** v1 (veraltet)
+
+---
+
+### 3. tasks_create (4 Versionen)
+
+**Entwicklungspfad:** v1 → v2 → v3 → v4
+
+- **v1:** Ursprüngliche Implementierung (veraltet)
+- **v2:** Übersetzungsunterstützung hinzugefügt (veraltet)
+- **v3:** Decision Tree hinzugefügt (veraltet)
+- **v4:** Generische Arbeitselementtypen (aktuell)
+
+**Aktuell:** v4 (empfohlen)
+
+**Zeitstrahl:**
 ```
 v1 → deprecated (old)
   → v2 → deprecated (translation added)
@@ -230,66 +230,66 @@ v1 → deprecated (old)
 
 ---
 
-## Deprecation Status
+## Veraltungsstatus
 
-### Fully Deprecated Versions (Do Not Use)
+### Vollständig veraltete Versionen (Nicht verwenden)
 
-| Card | Version | Reason | Alternative |
+| Card | Version | Grund | Alternative |
 |------|---------|--------|-------------|
-| tasks_create | v1 | Very old | Use v4 |
-| tasks_create | v3 | Decision tree deprecated | Use v4 |
-| ACTION_TASK_FOR_GROUP | v3 | Decision tree deprecated | Use v4 |
-| DOC_USER_ASSIGN | v3 | Decision tree deprecated | Use v2 |
-| DOC_GROUP_ASSIGN | v3 | Decision tree deprecated | Use v2 |
-| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Very old | Use v2 |
-| CONDITION_OC_TO_PO_ITEMS | v1 | Very old | Use v4 |
-| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Features reverted | Use v3 |
+| tasks_create | v1 | Sehr alt | v4 verwenden |
+| tasks_create | v3 | Decision Tree veraltet | v4 verwenden |
+| ACTION_TASK_FOR_GROUP | v3 | Decision Tree veraltet | v4 verwenden |
+| DOC_USER_ASSIGN | v3 | Decision Tree veraltet | v2 verwenden |
+| DOC_GROUP_ASSIGN | v3 | Decision Tree veraltet | v2 verwenden |
+| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Sehr alt | v2 verwenden |
+| CONDITION_OC_TO_PO_ITEMS | v1 | Sehr alt | v4 verwenden |
+| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Funktionen zurückgesetzt | v3 verwenden |
 
-### Fully Disabled Cards (Cannot Use)
+### Vollständig deaktivierte Cards (Nicht nutzbar)
 
-| Card | Versions | Notes |
+| Card | Versionen | Hinweise |
 |------|----------|-------|
-| DOC_SUBORG_CHANGE | v1, v2 | Unsupported functionality |
-| RUN_SCRIPT | v2, v3 | Replaced by ACTION_RUN_DOCOPERATOR_SCRIPT |
+| DOC_SUBORG_CHANGE | v1, v2 | Nicht unterstützte Funktionalität |
+| RUN_SCRIPT | v2, v3 | Ersetzt durch ACTION_RUN_DOCOPERATOR_SCRIPT |
 
 ---
 
-## Version Recommendations
+## Versionsempfehlungen
 
-### By Use Case
+### Nach Anwendungsfall
 
-**New Workflow Creation:**
-- Always use the **highest enabled version number**
-- Provides latest features and improvements
-- Supported and documented
+**Erstellung neuer Workflows:**
+- Verwenden Sie immer die **höchste aktivierte Versionsnummer**
+- Bietet neueste Funktionen und Verbesserungen
+- Unterstützt und dokumentiert
 
-**Existing Workflow Maintenance:**
-- Continue using current version if it works
-- Plan migration when feasible
-- No urgent need to upgrade
+**Wartung bestehender Workflows:**
+- Verwenden Sie weiterhin die aktuelle Version, wenn sie funktioniert
+- Planen Sie die Migration, wenn möglich
+- Kein dringender Aktualisierungsbedarf
 
-**Legacy Workflow Migration:**
-- Identify version currently in use
-- Plan upgrade path
-- Test thoroughly before deploying
+**Migration von Legacy-Workflows:**
+- Identifizieren Sie die aktuell verwendete Version
+- Planen Sie den Upgrade-Pfad
+- Testen Sie gründlich vor der Bereitstellung
 
 ---
 
-## How Versions Work
+## Wie Versionen funktionieren
 
-### Version Selection
-When creating a workflow, you select which version of a card to use. Example:
-- Use `tasks_create v4` for new task creation (recommended)
-- Use `tasks_create v2` if legacy systems require it (older but works)
-- Do NOT use `tasks_create v1` (deprecated)
+### Versionsauswahl
+Beim Erstellen eines Workflows wählen Sie, welche Version einer Card verwendet werden soll. Beispiel:
+- Verwenden Sie `tasks_create v4` für die Erstellung neuer Aufgaben (empfohlen)
+- Verwenden Sie `tasks_create v2`, falls Legacy-Systeme dies erfordern (älter, funktioniert aber)
+- Verwenden Sie NICHT `tasks_create v1` (veraltet)
 
-### Backward Compatibility
-- Newer versions don't break older workflows
-- Old workflows continue working with their original version
-- Can upgrade workflows gradually
+### Abwärtskompatibilität
+- Neuere Versionen beeinträchtigen ältere Workflows nicht
+- Alte Workflows funktionieren weiterhin mit ihrer ursprünglichen Version
+- Workflows können schrittweise aktualisiert werden
 
-### Technical Implementation
-Versions are managed at the database level:
+### Technische Implementierung
+Versionen werden auf Datenbankebene verwaltet:
 ```
 card_templates table (PostgreSQL)
 - card_type: Identifies the card (e.g., "tasks_create")
@@ -301,113 +301,113 @@ card_templates table (PostgreSQL)
 
 ---
 
-## For Documentation Purposes
+## Für Dokumentationszwecke
 
-### Understanding Version Info
-When you see "Card v3" in documentation:
-- It refers to version 3 of that specific card
-- Check [Full Versioning Reference](../../docs/card_version.md) for details
-- Verify which version is recommended
+### Versionsinformationen verstehen
+Wenn Sie in der Dokumentation "Card v3" sehen:
+- Bezieht es sich auf Version 3 dieser spezifischen Card
+- Prüfen Sie die [Full Versioning Reference](../../docs/card_version.md) für Details
+- Überprüfen Sie, welche Version empfohlen wird
 
-### Checking Your Version
-To know which version you're using:
-1. Open the card in your workflow
-2. Check the version number displayed
-3. Compare with recommendations in guides
+### Ihre Version prüfen
+So erfahren Sie, welche Version Sie verwenden:
+1. Öffnen Sie die Card in Ihrem Workflow
+2. Prüfen Sie die angezeigte Versionsnummer
+3. Vergleichen Sie sie mit den Empfehlungen in den Anleitungen
 
-### Version Evolution Timeline
-- **2024-2025:** Ongoing evolution
-- **October 2025:** Complete versioning documentation
-- **Future:** Continued improvements
+### Zeitstrahl der Versionsentwicklung
+- **2024-2025:** Laufende Weiterentwicklung
+- **Oktober 2025:** Vollständige Dokumentation der Versionierung
+- **Zukunft:** Fortlaufende Verbesserungen
 
 ---
 
-## Related Documentation
+## Verwandte Dokumentation
 
-### Comprehensive Reference
+### Umfassende Referenz
 → [Full Card Versioning Reference](../../docs/card_version.md)
 
-Includes:
-- All 30+ cards with versions
-- Detailed text evolution for each
-- Specific parameter changes
-- SQL queries for version lookup
+Beinhaltet:
+- Alle 30+ Cards mit Versionen
+- Detaillierte Textentwicklung für jede
+- Spezifische Parameteränderungen
+- SQL-Abfragen zur Versionssuche
 
-### Card-Specific Guides
+### Card-spezifische Anleitungen
 → [Workflow Guides](../)
 
-Documentation for each card with version recommendations
+Dokumentation für jede Card mit Versionsempfehlungen
 
-### Version History Details
-Each guide includes version information and migration notes
+### Details zum Versionsverlauf
+Jede Anleitung enthält Versionsinformationen und Migrationshinweise
 
 ---
 
-## Quick Reference
+## Schnellreferenz
 
-### Cards with Most Versions
-1. CONDITION_DOC_TO_PO_UNIT_PRICE - 5 versions
-2. CONDITION_OC_TO_PO_ITEMS - 4 versions
-3. tasks_create - 4 versions
-4. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE - 3 versions
-5. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY - 4 versions
+### Cards mit den meisten Versionen
+1. CONDITION_DOC_TO_PO_UNIT_PRICE - 5 Versionen
+2. CONDITION_OC_TO_PO_ITEMS - 4 Versionen
+3. tasks_create - 4 Versionen
+4. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE - 3 Versionen
+5. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY - 4 Versionen
 
-### Most Common Evolution Pattern
-**Translation Key Adoption (v1 → v2)** - 15+ cards
+### Häufigstes Entwicklungsmuster
+**Einführung von Übersetzungsschlüsseln (v1 → v2)** - 15+ Cards
 
-### Most Significant Change
-**Generic Type Evolution (v3 → v4)** - Changed from "Task" to flexible work item type
+### Bedeutendste Änderung
+**Entwicklung zu generischen Typen (v3 → v4)** - Wechsel von "Task" zu flexiblem Arbeitselementtyp
 
-### Fully Disabled
+### Vollständig deaktiviert
 - DOC_SUBORG_CHANGE
 - RUN_SCRIPT
 
 ---
 
-## Frequently Asked Questions
+## Häufig gestellte Fragen
 
-### Q: Which version should I use?
-A: Use the **highest enabled version** unless you have a specific reason to use an older version.
+### F: Welche Version sollte ich verwenden?
+A: Verwenden Sie die **höchste aktivierte Version**, sofern Sie keinen bestimmten Grund haben, eine ältere Version zu verwenden.
 
-### Q: Can I upgrade my workflow to a newer version?
-A: Yes, but test thoroughly. Some versions have different parameter requirements.
+### F: Kann ich meinen Workflow auf eine neuere Version aktualisieren?
+A: Ja, aber testen Sie gründlich. Einige Versionen haben unterschiedliche Parameteranforderungen.
 
-### Q: What happens if I use a deprecated version?
-A: It continues to work, but you won't get new features. Migration recommended.
+### F: Was passiert, wenn ich eine veraltete Version verwende?
+A: Sie funktioniert weiterhin, aber Sie erhalten keine neuen Funktionen. Migration empfohlen.
 
-### Q: Can I use a disabled card?
-A: No, disabled cards cannot be used. Use the recommended alternative instead.
+### F: Kann ich eine deaktivierte Card verwenden?
+A: Nein, deaktivierte Cards können nicht verwendet werden. Verwenden Sie stattdessen die empfohlene Alternative.
 
-### Q: How do I know if my card needs upgrading?
-A: Check the [Full Versioning Reference](../../docs/card_version.md) for your card type and follow the recommendations.
+### F: Woran erkenne ich, ob meine Card aktualisiert werden muss?
+A: Prüfen Sie die [Full Versioning Reference](../../docs/card_version.md) für Ihren Card-Typ und befolgen Sie die Empfehlungen.
 
 ---
 
 ## Best Practices
 
-1. **New Workflows:** Use latest stable version
-2. **Updates:** Check for new versions periodically
-3. **Testing:** Test version upgrades in sandbox first
-4. **Documentation:** Refer to card-specific guides for version details
-5. **Migration:** Plan upgrades incrementally
-6. **Support:** Contact support if version compatibility questions arise
+1. **Neue Workflows:** Verwenden Sie die neueste stabile Version
+2. **Updates:** Prüfen Sie regelmäßig auf neue Versionen
+3. **Testen:** Testen Sie Versions-Upgrades zuerst in der Sandbox
+4. **Dokumentation:** Beziehen Sie sich auf card-spezifische Anleitungen für Versionsdetails
+5. **Migration:** Planen Sie Upgrades schrittweise
+6. **Support:** Kontaktieren Sie den Support bei Fragen zur Versionskompatibilität
 
 ---
 
-## Summary Table
+## Zusammenfassungstabelle
 
-| Card Type | Current Version | Total Versions | Status | Notes |
+| Card-Typ | Aktuelle Version | Versionen insgesamt | Status | Hinweise |
 |-----------|-----------------|----------------|--------|-------|
-| tasks_create | 4 | 4 | Active | Most evolved; v3 deprecated |
-| CONDITION_DOC_TO_PO_UNIT_PRICE | 5 | 4 | Active | Highest version count |
-| CONDITION_OC_TO_PO_ITEMS | 4 | 4 | Active | v1 deprecated |
-| ACTION_TASK_FOR_GROUP | 4 | 3 | Active | v3 deprecated |
-| ACTION_RUN_DOCOPERATOR_SCRIPT | 3 | 3 | Active | v4 deprecated/disabled |
-| Most cards | 2 | 2 | Active | v1 → v2 pattern |
+| tasks_create | 4 | 4 | Aktiv | Am weitesten entwickelt; v3 veraltet |
+| CONDITION_DOC_TO_PO_UNIT_PRICE | 5 | 4 | Aktiv | Höchste Versionsanzahl |
+| CONDITION_OC_TO_PO_ITEMS | 4 | 4 | Aktiv | v1 veraltet |
+| ACTION_TASK_FOR_GROUP | 4 | 3 | Aktiv | v3 veraltet |
+| ACTION_RUN_DOCOPERATOR_SCRIPT | 3 | 3 | Aktiv | v4 veraltet/deaktiviert |
+| Die meisten Cards | 2 | 2 | Aktiv | v1 → v2 Muster |
 
 ---
 
-## See Also
+## Siehe auch
 
 - 📖 [Full Card Versioning Reference](../../docs/card_version.md)
 - 🔗 [Workflow Guides](../)
@@ -416,6 +416,6 @@ A: Check the [Full Versioning Reference](../../docs/card_version.md) for your ca
 
 ---
 
-**Last Updated:** October 23, 2025
-**Source:** postgres-dev-docflow database
-**Status:** Complete Reference
+**Zuletzt aktualisiert:** 23. Oktober 2025
+**Quelle:** postgres-dev-docflow-Datenbank
+**Status:** Vollständige Referenz

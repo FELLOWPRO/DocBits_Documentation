@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_928e514bc0e2aa775894e4ec5f992bd9.png" alt="" width="528"><figcaption></figcaption></figure>
 
-**Purpose**
+**Doel**
 
-This workflow card is tailored to manage operations on documents based on a single, specified document status. By simplifying the condition to one status, the card is focused on very specific workflow triggers, making it ideal for targeted document processing activities within an ERP system.
+Deze workflow-kaart is afgestemd op het beheren van bewerkingen op documenten op basis van één enkele, opgegeven documentstatus. Door de voorwaarde tot één status te vereenvoudigen, is de kaart gericht op zeer specifieke workflow-triggers, waardoor hij ideaal is voor gerichte documentverwerkingsactiviteiten binnen een ERP-systeem.
 
-**Components of the Card**
+**Onderdelen van de kaart**
 
 1. **Operator**
-   * **Description**: Specifies the method for evaluating the document’s status against the selected condition.
-   * **Options**:
-     * **is**: Triggers the operation if the document's current status matches the selected status.
-     * **is not**: Triggers the operation if the document's current status does not match the selected status.
+   * **Beschrijving**: Geeft de methode op voor het evalueren van de status van het document ten opzichte van de geselecteerde voorwaarde.
+   * **Opties**:
+     * **is**: Triggert de bewerking als de huidige status van het document overeenkomt met de geselecteerde status.
+     * **is not**: Triggert de bewerking als de huidige status van het document niet overeenkomt met de geselecteerde status.
 2. **Status**
-   * **Description**: Allows the selection of a single document status to set the condition.
-   * **Examples of Statuses**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
-   * **Detail**: Users choose one status from a dropdown or a set of radio buttons. This status then serves as the criterion for the card’s operation.
+   * **Beschrijving**: Maakt de selectie van één enkele documentstatus mogelijk om de voorwaarde in te stellen.
+   * **Voorbeelden van statussen**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval".
+   * **Detail**: Gebruikers kiezen één status uit een dropdown of een set keuzerondjes. Deze status dient vervolgens als criterium voor de bewerking van de kaart.
 
-**Functionality**
+**Functionaliteit**
 
-* **Document Status Identification**: Identifies the current status of a document as it is processed through the ERP system.
-* **Condition Evaluation**:
-  * Based on the operator selected (`is` or `is not`), the card checks whether the document's current status aligns with the chosen status criterion.
-* **Action Execution**:
-  * **True Condition**: If the status matches (or does not match, based on the operator), the corresponding action is initiated. This could be routing for further processing, notification generation, or other predefined workflows.
-  * **False Condition**: If the condition is not met, no action is taken, or an alternate pathway is triggered.
-* **Integration with Other Workflows**: Even though it's designed for single-status evaluation, this card can be effectively integrated into broader workflow sequences to ensure precise document handling.
+* **Documentstatusidentificatie**: Identificeert de huidige status van een document terwijl het door het ERP-systeem wordt verwerkt.
+* **Voorwaarde-evaluatie**:
+  * Op basis van de geselecteerde operator (`is` of `is not`) controleert de kaart of de huidige status van het document overeenkomt met het gekozen statuscriterium.
+* **Actie-uitvoering**:
+  * **True-voorwaarde**: Als de status overeenkomt (of niet overeenkomt, op basis van de operator), wordt de bijbehorende actie gestart. Dit kan routering voor verdere verwerking, het genereren van meldingen of andere vooraf gedefinieerde workflows zijn.
+  * **False-voorwaarde**: Als niet aan de voorwaarde wordt voldaan, wordt geen actie ondernomen of wordt een alternatief pad getriggerd.
+* **Integratie met andere workflows**: Hoewel hij is ontworpen voor evaluatie van één status, kan deze kaart effectief worden geïntegreerd in bredere workflow-reeksen om een nauwkeurige documentafhandeling te waarborgen.
 
-**User Interactions**
+**Gebruikersinteracties**
 
-* **Setup and Configuration**: Users set up the card by selecting an operator and then choosing one status from the available options. This selection process is straightforward and designed to prevent confusion.
-* **Monitoring and Reporting**: Enables monitoring through system-generated reports or dashboards that track the processing of documents based on their status, helping to oversee the effectiveness of the implemented workflows.
-* **Error Handling and Notifications**: Configurable to alert users to any processing anomalies or to flag documents that do not meet the set conditions, ensuring prompt attention and resolution.
+* **Opzet en configuratie**: Gebruikers stellen de kaart in door een operator te selecteren en vervolgens één status uit de beschikbare opties te kiezen. Dit selectieproces is eenvoudig en ontworpen om verwarring te voorkomen.
+* **Monitoring en rapportage**: Maakt monitoring mogelijk via door het systeem gegenereerde rapporten of dashboards die de verwerking van documenten op basis van hun status volgen, wat helpt de effectiviteit van de geïmplementeerde workflows te overzien.
+* **Foutafhandeling en meldingen**: Configureerbaar om gebruikers te waarschuwen voor verwerkingsafwijkingen of om documenten te markeren die niet aan de ingestelde voorwaarden voldoen, wat zorgt voor snelle aandacht en oplossing.
 
-#### Conclusion
+#### Conclusie
 
-The "Single Document Status Condition" workflow card simplifies document management by focusing on individual status conditions. This specification helps in cases where precise control over document flows is necessary, especially in environments with stringent processing criteria. Documenting this version of the card clearly will ensure that users fully understand its application and can effectively integrate it within their daily operations, enhancing both compliance and efficiency in document processing.
+De workflow-kaart "Single Document Status Condition" vereenvoudigt het documentbeheer door zich te richten op individuele statusvoorwaarden. Deze specificatie helpt in gevallen waarin nauwkeurige controle over documentstromen nodig is, met name in omgevingen met strenge verwerkingscriteria. Het duidelijk documenteren van deze versie van de kaart zorgt ervoor dat gebruikers de toepassing ervan volledig begrijpen en hem effectief in hun dagelijkse werkzaamheden kunnen integreren, wat zowel de naleving als de efficiëntie in de documentverwerking verbetert.

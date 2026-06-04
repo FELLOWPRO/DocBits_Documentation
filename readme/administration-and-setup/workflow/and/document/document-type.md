@@ -2,32 +2,32 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_document_type_card.png" alt="DocBits Document Type Kaart" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Doel:
 
-This workflow card is designed to evaluate whether a document matches a specific type. By checking if the document corresponds to the given type, workflows can continue or take alternative actions based on this condition. This helps to automate processes where the document type dictates the next steps in the workflow.
+Deze workflow-kaart is ontworpen om te evalueren of een document overeenkomt met een specifiek type. Door te controleren of het document overeenkomt met het opgegeven type, kunnen workflows doorgaan of alternatieve acties ondernemen op basis van deze voorwaarde. Dit helpt processen te automatiseren waarbij het documenttype de volgende stappen in de workflow bepaalt.
 
-## Components of the Card:
+## Onderdelen van de kaart:
 
 1. **Operator**
-   * **Description**: Defines whether the document should be of the specified type or not.
-   * **Options**:
-     * **Is**: The document must match the specified type for the condition to be true.
-     * **Is Not**: The document must not match the specified type for the condition to be true.
+   * **Beschrijving**: Definieert of het document wel of niet van het opgegeven type moet zijn.
+   * **Opties**:
+     * **Is**: Het document moet overeenkomen met het opgegeven type om de voorwaarde true te maken.
+     * **Is Not**: Het document mag niet overeenkomen met het opgegeven type om de voorwaarde true te maken.
 2. **Type**
-   * **Description**: Specifies the document type to compare against.
-   * **Detail**: This includes a variety of document types such as "Invoice", "Purchase Order", etc., based on which the condition (is/is not) will be evaluated.
+   * **Beschrijving**: Geeft het documenttype op waarmee wordt vergeleken.
+   * **Detail**: Dit omvat een verscheidenheid aan documenttypen, zoals "Invoice", "Purchase Order", enz., op basis waarvan de voorwaarde (is/is not) wordt geëvalueerd.
 
-## Functionality:
+## Functionaliteit:
 
-* **Condition Evaluation**: The system evaluates whether the document type in the specified field matches the condition defined by the operator. It compares the field value with the provided document type.
-* **Action Execution**:
-  * **True Condition**: If the document type matches the specified type (or does not, based on the operator), the workflow proceeds with the true condition. This can trigger actions such as further processing of the document, sending it for approval, or applying specific rules based on the document type.
-  * **False Condition**: If the document type does not match the specified type, the workflow proceeds with the false condition. This can trigger alternative actions, such as routing the document to a different process or stopping further actions.
+* **Voorwaarde-evaluatie**: Het systeem evalueert of het documenttype in het opgegeven veld overeenkomt met de door de operator gedefinieerde voorwaarde. Het vergelijkt de veldwaarde met het opgegeven documenttype.
+* **Actie-uitvoering**:
+  * **True-voorwaarde**: Als het documenttype overeenkomt met het opgegeven type (of niet, op basis van de operator), gaat de workflow verder met de true-voorwaarde. Dit kan acties triggeren zoals verdere verwerking van het document, het ter goedkeuring verzenden of het toepassen van specifieke regels op basis van het documenttype.
+  * **False-voorwaarde**: Als het documenttype niet overeenkomt met het opgegeven type, gaat de workflow verder met de false-voorwaarde. Dit kan alternatieve acties triggeren, zoals het omleiden van het document naar een ander proces of het stoppen van verdere acties.
 
-## Setup and Configuration:
+## Opzet en configuratie:
 
-* Users configure the card by selecting the document field that contains the document type from a list of available fields. Then, the operator is selected to define whether the document must be the specified type or not. Finally, users set the continue condition (true or false), which determines the next action based on the document type.
+* Gebruikers configureren de kaart door het documentveld dat het documenttype bevat uit een lijst van beschikbare velden te selecteren. Vervolgens wordt de operator geselecteerd om te definiëren of het document wel of niet van het opgegeven type moet zijn. Ten slotte stellen gebruikers de doorgaan-voorwaarde (true of false) in, die de volgende actie op basis van het documenttype bepaalt.
 
-## Conclusion:
+## Conclusie:
 
-The "Document Type Comparison" workflow card is essential for ensuring that workflows proceed based on the type of document being processed. By comparing the document type, it helps organizations automate document routing and processing tasks, ensuring that documents are handled appropriately based on their type.
+De workflow-kaart "Document Type Comparison" is essentieel om ervoor te zorgen dat workflows doorgaan op basis van het type document dat wordt verwerkt. Door het documenttype te vergelijken, helpt hij organisaties documentroutering en -verwerkingstaken te automatiseren, zodat documenten op de juiste manier worden afgehandeld op basis van hun type.

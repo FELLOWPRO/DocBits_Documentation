@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card checks whether a specified decision table has return values for a given document and determines if the returned data should be used in subsequent workflow steps. It ensures that workflows can dynamically adapt based on decision table outcomes.
+Deze DocBits-kaart controleert of een opgegeven beslistabel retourwaarden voor een bepaald document heeft en bepaalt of de geretourneerde gegevens in volgende workflow-stappen moeten worden gebruikt. Hij zorgt ervoor dat workflows zich dynamisch kunnen aanpassen op basis van de uitkomsten van de beslistabel.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Decision Table Validation:** This card verifies if the selected decision table provides return values for the document being processed.
-* **Decision Table Selection:** Users specify the name of the decision table to be checked.
-* **Use Return Data:** Users can specify whether to use the return data in later cards with a **Boolean** setting:
-  * **True:** The return data is available and will be used in subsequent workflow steps.
-  * **False:** The return data will not be used, and the workflow proceeds without it.
+* **Beslistabelvalidatie:** Deze kaart verifieert of de geselecteerde beslistabel retourwaarden levert voor het document dat wordt verwerkt.
+* **Beslistabelselectie:** Gebruikers geven de naam op van de te controleren beslistabel.
+* **Retourgegevens gebruiken:** Gebruikers kunnen met een **Boolean**-instelling opgeven of de retourgegevens in latere kaarten moeten worden gebruikt:
+  * **True:** De retourgegevens zijn beschikbaar en worden in volgende workflow-stappen gebruikt.
+  * **False:** De retourgegevens worden niet gebruikt en de workflow gaat er zonder verder.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is ideal for workflows involving conditional logic or decision-making based on predefined rules in a decision table. It ensures seamless integration of decision table outputs into workflow processes.
+Deze kaart is ideaal voor workflows met voorwaardelijke logica of besluitvorming op basis van vooraf gedefinieerde regels in een beslistabel. Hij zorgt voor naadloze integratie van de uitvoer van de beslistabel in workflowprocessen.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user configures the card to check the **"Invoice Processing Rules"** decision table for return values. The **Boolean** is set to **True**, indicating that the return data (e.g. approval requirements) will be utilized in later cards to guide workflow decisions.
+* Een gebruiker configureert de kaart om de beslistabel **"Invoice Processing Rules"** op retourwaarden te controleren. De **Boolean** is ingesteld op **True**, wat aangeeft dat de retourgegevens (bijv. goedkeuringsvereisten) in latere kaarten worden gebruikt om workflow-beslissingen te sturen.
 
-By using the "Decision Table Check" card, organizations can enhance workflow flexibility, streamline rule-based processing, and ensure consistency in decision-making across automated workflows.
+Door de kaart "Decision Table Check" te gebruiken, kunnen organisaties de workflow-flexibiliteit verbeteren, regelgebaseerde verwerking stroomlijnen en consistentie in de besluitvorming over geautomatiseerde workflows heen waarborgen.

@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_card_unit_price_2.png" alt="Docbits Card Eenheid Prijs 2"><figcaption></figcaption></figure>
 
-Purpose: This Docbits card facilitates the detailed comparison of unit prices on invoices against those specified in the corresponding purchase orders. It enhances accuracy in financial reporting by ensuring adherence to agreed pricing.
+Doel: Deze Docbits-kaart faciliteert de gedetailleerde vergelijking van eenheidsprijzen op facturen met die welke in de bijbehorende inkooporders zijn opgegeven. Hij verbetert de nauwkeurigheid in de financiële rapportage door naleving van de afgesproken prijzen te waarborgen.
 
-Functionality:
+Functionaliteit:
 
-* Unit Price Combined with Fields: This card calculates the total amount for a specific item by combining the unit price with additional specified fields from the invoice. The combined total is then compared against the purchase order's recorded unit price for that item.
-* Operator Value: Users can set specific conditions for how the invoice's combined unit price should be compared to the purchase order's unit price. Available operators include:
+* Unit Price Combined with Fields: Deze kaart berekent het totaalbedrag voor een specifiek item door de eenheidsprijs te combineren met aanvullende opgegeven velden uit de factuur. Het gecombineerde totaal wordt vervolgens vergeleken met de geregistreerde eenheidsprijs van dat item op de inkooporder.
+* Operatorwaarde: Gebruikers kunnen specifieke voorwaarden instellen voor hoe de gecombineerde eenheidsprijs van de factuur moet worden vergeleken met de eenheidsprijs van de inkooporder. Beschikbare operatoren zijn:
 *
-  * Equals (=): Verifies that the combined invoice price matches the price on the purchase order.
-  * Not Equal (≠): Ensures the combined invoice price does not match the price on the purchase order.
-  * Greater Than (>): Checks if the combined invoice price exceeds the price on the purchase order.
-  * Less Than (<): Confirms the combined invoice price is below the price on the purchase order.
+  * Equals (=): Verifieert dat de gecombineerde factuurprijs overeenkomt met de prijs op de inkooporder.
+  * Not Equal (≠): Zorgt ervoor dat de gecombineerde factuurprijs niet overeenkomt met de prijs op de inkooporder.
+  * Greater Than (>): Controleert of de gecombineerde factuurprijs de prijs op de inkooporder overschrijdt.
+  * Less Than (<): Bevestigt dat de gecombineerde factuurprijs onder de prijs op de inkooporder ligt.
 
-Usage: This card is particularly valuable for ERP Managers and financial accountants tasked with maintaining stringent control over purchasing and payment processes. It ensures that invoiced prices conform to those agreed upon in purchase orders, thereby mitigating financial discrepancies.
+Gebruik: Deze kaart is met name waardevol voor ERP-managers en financiële boekhouders die strikte controle over inkoop- en betalingsprocessen moeten behouden. Hij zorgt ervoor dat gefactureerde prijzen overeenkomen met die welke in inkooporders zijn afgesproken, waardoor financiële afwijkingen worden beperkt.
 
-Example Scenario:
+Voorbeeldscenario:
 
-* An invoice presents a unit price of $50 for a product. The "field name" specified includes an additional handling fee of $5 per unit. When combined, the total per unit amounts to $55. Using the "Equals" operator with a value set to $55, the card verifies that the invoiced price aligns with the purchase order, ensuring agreement compliance.
+* Een factuur vermeldt een eenheidsprijs van $50 voor een product. De opgegeven "field name" omvat aanvullende verwerkingskosten van $5 per eenheid. Gecombineerd komt het totaal per eenheid uit op $55. Met de operator "Equals" en een waarde ingesteld op $55 verifieert de kaart dat de gefactureerde prijs overeenkomt met de inkooporder, wat naleving van de overeenkomst waarborgt.
 
-By deploying the "Compare with Purchase Order: Unit Price Combined" card, businesses can automate the verification of pricing accuracy against purchase orders, streamlining financial operations and safeguarding against overcharges.
+Door de kaart "Compare with Purchase Order: Unit Price Combined" in te zetten, kunnen bedrijven de verificatie van prijsnauwkeurigheid ten opzichte van inkooporders automatiseren, financiële bewerkingen stroomlijnen en zich beschermen tegen te hoge kosten.
 
 \\

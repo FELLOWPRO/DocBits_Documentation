@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605.png" alt="" width="521"><figcaption></figcaption></figure>
 
-**Purpose**
+**Doel**
 
-This card is designed to control workflow actions based on the current status of a document, using conditional logic to either trigger or restrict certain processes. It ensures that documents only proceed through workflows when they meet predefined status criteria.
+Deze kaart is ontworpen om workflow-acties te controleren op basis van de huidige status van een document, waarbij voorwaardelijke logica wordt gebruikt om bepaalde processen te triggeren of te beperken. Hij zorgt ervoor dat documenten alleen door workflows gaan wanneer ze aan vooraf gedefinieerde statuscriteria voldoen.
 
-**Components of the Card**
+**Onderdelen van de kaart**
 
 1. **Operator**
-   * **Description**: Determines how the document status will be evaluated against a specified condition.
-   * **Options**:
-     * **is**: Triggers the associated actions if the document’s current status matches one of the specified statuses.
-     * **is not**: Triggers the actions if the document’s status does not match any of the specified statuses.
+   * **Beschrijving**: Bepaalt hoe de documentstatus ten opzichte van een opgegeven voorwaarde wordt geëvalueerd.
+   * **Opties**:
+     * **is**: Triggert de bijbehorende acties als de huidige status van het document overeenkomt met een van de opgegeven statussen.
+     * **is not**: Triggert de acties als de status van het document met geen van de opgegeven statussen overeenkomt.
 2. **Status ( List )**
-   * **Description**: Lists the specific statuses against which the document’s current status will be compared.
-   * **Examples**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". These represent different stages or conditions a document might be in within a workflow process.
+   * **Beschrijving**: Somt de specifieke statussen op waarmee de huidige status van het document wordt vergeleken.
+   * **Voorbeelden**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Deze vertegenwoordigen verschillende fasen of toestanden waarin een document zich binnen een workflowproces kan bevinden.
 
-**Functionality**
+**Functionaliteit**
 
-* **Status Identification**: Automatically identifies the current status of a document as it moves through the ERP system’s workflow.
-* **Condition Evaluation**: Applies the chosen operator (is or is not) to the document’s status in comparison to the listed statuses:
-  * If **is**, it checks whether the document’s status matches any status in the list.
-  * If **is not**, it checks whether the document’s status does not appear in the list.
-* **Action Execution**: Depending on the outcome of the condition evaluation:
-  * **True**: Executes predefined actions or workflows if the condition is met.
-  * **False**: Skips or triggers alternative workflows if the condition is not met.
-* **Workflow Integration**: Integrates seamlessly with other workflow components, ensuring that document handling is coordinated across the system.
+* **Statusidentificatie**: Identificeert automatisch de huidige status van een document terwijl het door de workflow van het ERP-systeem beweegt.
+* **Voorwaarde-evaluatie**: Past de gekozen operator (is of is not) toe op de status van het document in vergelijking met de vermelde statussen:
+  * Bij **is** controleert hij of de status van het document overeenkomt met een status in de lijst.
+  * Bij **is not** controleert hij of de status van het document niet in de lijst voorkomt.
+* **Actie-uitvoering**: Afhankelijk van de uitkomst van de voorwaarde-evaluatie:
+  * **True**: Voert vooraf gedefinieerde acties of workflows uit als aan de voorwaarde wordt voldaan.
+  * **False**: Slaat alternatieve workflows over of triggert ze als niet aan de voorwaarde wordt voldaan.
+* **Workflow-integratie**: Integreert naadloos met andere workflow-onderdelen, zodat de documentafhandeling over het systeem heen wordt gecoördineerd.
 
-**User Interactions**
+**Gebruikersinteracties**
 
-* **Setup and Configuration**: Users configure the card by selecting the operator and specifying the relevant statuses. This setup may involve simple dropdown menus or checkboxes for selecting statuses and operators.
-* **Monitoring and Management**: Users can track the card’s activity via a dashboard, which provides insights into the status conditions being monitored and the actions being taken based on those conditions.
-* **Error Handling and Alerts**: Supports setting up alerts for process failures or mismatches in expected document statuses, enabling quick responses to operational issues.
+* **Opzet en configuratie**: Gebruikers configureren de kaart door de operator te selecteren en de relevante statussen op te geven. Deze opzet kan eenvoudige dropdownmenu's of selectievakjes omvatten voor het selecteren van statussen en operatoren.
+* **Monitoring en beheer**: Gebruikers kunnen de activiteit van de kaart volgen via een dashboard, dat inzicht biedt in de gemonitorde statusvoorwaarden en de acties die op basis van die voorwaarden worden ondernomen.
+* **Foutafhandeling en waarschuwingen**: Ondersteunt het instellen van waarschuwingen voor procesfouten of mismatches in verwachte documentstatussen, wat snelle reacties op operationele problemen mogelijk maakt.
 
-#### Conclusion
+#### Conclusie
 
-The "Document Status Condition" workflow card is vital for ensuring that documents are processed correctly according to their current status, enhancing control and efficiency within the ERP system. Clearly documenting this card in the system's manual will help users effectively implement and manage it, leveraging its functionality to maintain smooth and compliant document workflows. This card is particularly useful in managing document lifecycles and ensuring that only documents meeting specific criteria advance to subsequent stages of business processes.
+De workflow-kaart "Document Status Condition" is essentieel om ervoor te zorgen dat documenten correct worden verwerkt volgens hun huidige status, wat de controle en efficiëntie binnen het ERP-systeem verbetert. Het duidelijk documenteren van deze kaart in de handleiding van het systeem helpt gebruikers hem effectief te implementeren en beheren, en de functionaliteit ervan te benutten om soepele en conforme documentworkflows te behouden. Deze kaart is met name nuttig bij het beheren van documentlevenscycli en om ervoor te zorgen dat alleen documenten die aan specifieke criteria voldoen, doorstromen naar volgende fasen van bedrijfsprocessen.

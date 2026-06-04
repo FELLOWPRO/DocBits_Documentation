@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card is used to validate whether **all values** in a specific column of a table match a provided regex pattern. For the workflow to continue, every entry in the column must meet the condition, making this card ideal for ensuring consistency and data integrity across all entries.
+Deze DocBits-kaart wordt gebruikt om te valideren of **alle waarden** in een specifieke kolom van een tabel overeenkomen met een opgegeven regex-patroon. Om de workflow te laten doorgaan, moet elke vermelding in de kolom aan de voorwaarde voldoen, waardoor deze kaart ideaal is om consistentie en data-integriteit over alle vermeldingen heen te waarborgen.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Regex Pattern Validation:** This card checks that **all values** in a specified column of a table match the provided regular expression pattern. The workflow will only proceed if every entry in the column meets the condition.
-* **Operator:** Users define the column and specify the regex pattern. The available condition includes:
-  * **Matches Regex Pattern:** Verifies that every value in the specified column matches the regex pattern.
-* **Table and Column Selection:** Users specify the table and column they wish to check for complete regex pattern matches.
+* **Regex-patroonvalidatie:** Deze kaart controleert of **alle waarden** in een opgegeven kolom van een tabel overeenkomen met het opgegeven reguliere-expressiepatroon. De workflow gaat alleen verder als elke vermelding in de kolom aan de voorwaarde voldoet.
+* **Operator:** Gebruikers definiëren de kolom en geven het regex-patroon op. De beschikbare voorwaarde is:
+  * **Matches Regex Pattern:** Verifieert dat elke waarde in de opgegeven kolom overeenkomt met het regex-patroon.
+* **Tabel- en kolomselectie:** Gebruikers geven de tabel en kolom op die ze willen controleren op volledige regex-patroonovereenkomsten.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is ideal for cases where data uniformity is required, such as ensuring all phone numbers, product IDs, or other field entries adhere to a specific format. It ensures that workflows only proceed when every relevant entry is consistent with the pattern.
+Deze kaart is ideaal voor gevallen waarin data-uniformiteit vereist is, zoals het waarborgen dat alle telefoonnummers, product-ID's of andere veldvermeldingen voldoen aan een specifiek formaat. Hij zorgt ervoor dat workflows alleen doorgaan wanneer elke relevante vermelding consistent is met het patroon.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user sets the card to check the "Phone Number" column in the "Contacts" table, using a regex pattern to validate phone number formats. If every phone number entry in the column matches the pattern, the card will trigger the next step in the workflow, confirming uniform data formatting.
+* Een gebruiker stelt de kaart in om de kolom "Phone Number" in de tabel "Contacts" te controleren, met behulp van een regex-patroon om telefoonnummerformaten te valideren. Als elke telefoonnummervermelding in de kolom overeenkomt met het patroon, triggert de kaart de volgende stap in de workflow, wat een uniforme gegevensopmaak bevestigt.
 
-By using the "All Values Regex Pattern Matching" card, organizations can enforce strict data standards and enhance workflow accuracy, ensuring that every entry in a specified column meets the required format before proceeding.
+Door de kaart "All Values Regex Pattern Matching" te gebruiken, kunnen organisaties strikte datastandaarden afdwingen en de workflow-nauwkeurigheid verbeteren, en zo ervoor zorgen dat elke vermelding in een opgegeven kolom aan het vereiste formaat voldoet voordat er wordt verdergegaan.

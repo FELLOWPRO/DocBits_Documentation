@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card checks whether a specific module in the system is active or inactive. It enables workflows to proceed based on the activation status of a module, ensuring actions are only performed if the necessary module is available.
+Deze DocBits-kaart controleert of een specifieke module in het systeem actief of inactief is. Hij maakt het mogelijk dat workflows doorgaan op basis van de activeringsstatus van een module, waardoor acties alleen worden uitgevoerd als de benodigde module beschikbaar is.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Module Status Validation:** This card verifies the activation status of a specified module and evaluates it against a user-defined condition.
-* **Module Selection:** Users specify the name of the module to be checked, ensuring precise validation.
-* **Operators:** The following conditions can be applied:
-  * **Is:** The workflow continues if the selected module is active.
-  * **Is Not:** The workflow continues if the selected module is inactive.
+* **Modulestatusvalidatie:** Deze kaart verifieert de activeringsstatus van een opgegeven module en evalueert deze ten opzichte van een door de gebruiker gedefinieerde voorwaarde.
+* **Moduleselectie:** Gebruikers geven de naam op van de te controleren module, wat zorgt voor een nauwkeurige validatie.
+* **Operatoren:** De volgende voorwaarden kunnen worden toegepast:
+  * **Is:** De workflow gaat verder als de geselecteerde module actief is.
+  * **Is Not:** De workflow gaat verder als de geselecteerde module inactief is.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is particularly useful for administrators or system managers who need to create workflows dependent on the availability or functionality of specific modules. It helps ensure that workflows are only executed when all required modules are appropriately configured.
+Deze kaart is met name nuttig voor beheerders of systeembeheerders die workflows moeten maken die afhankelijk zijn van de beschikbaarheid of functionaliteit van specifieke modules. Hij helpt ervoor te zorgen dat workflows alleen worden uitgevoerd wanneer alle vereiste modules op de juiste manier zijn geconfigureerd.
 
-## **Example Scenario**
+## **Voorbeeldscenario**
 
-* A user configures the card to check if the **"Document Processing"** module **is active.** If the module is active, the workflow proceeds, triggering automated document processing tasks. If the module is inactive, the workflow halts, preventing unnecessary actions.
+* Een gebruiker configureert de kaart om te controleren of de module **"Document Processing"** **actief is.** Als de module actief is, gaat de workflow verder en worden geautomatiseerde documentverwerkingstaken getriggerd. Als de module inactief is, stopt de workflow, wat onnodige acties voorkomt.
 
-By using the "Module Active Check" card, organizations can improve workflow reliability, avoid errors due to inactive modules, and ensure processes align with the system configuration.
+Door de kaart "Module Active Check" te gebruiken, kunnen organisaties de betrouwbaarheid van workflows verbeteren, fouten door inactieve modules voorkomen en ervoor zorgen dat processen aansluiten op de systeemconfiguratie.

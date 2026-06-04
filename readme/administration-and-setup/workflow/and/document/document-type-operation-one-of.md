@@ -2,34 +2,34 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_14ab8ac5e693d9bbe68d178795d12a9f.png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This card is designed to manage actions on documents contingent upon their type, employing simple conditional logic (is/is not) to either trigger or prevent specific workflows. This enables precise control over how different types of documents are processed within the ERP system.
+Deze kaart is ontworpen om acties op documenten te beheren afhankelijk van hun type, waarbij eenvoudige voorwaardelijke logica (is/is not) wordt gebruikt om specifieke workflows te triggeren of te voorkomen. Dit maakt nauwkeurige controle mogelijk over hoe verschillende soorten documenten binnen het ERP-systeem worden verwerkt.
 
-## **Components of the Card:**
+## **Onderdelen van de kaart:**
 
 1. **Operator**
-   * **Description**: Determines the conditional logic applied to the document types.
-   * **Options**:
-     * **is**: The operation will trigger if the document's type matches one of the specified types in the list.
-     * **is not**: The operation will trigger if the document's type does not match any of the types listed.
+   * **Beschrijving**: Bepaalt de voorwaardelijke logica die op de documenttypen wordt toegepast.
+   * **Opties**:
+     * **is**: De bewerking wordt getriggerd als het type van het document overeenkomt met een van de opgegeven typen in de lijst.
+     * **is not**: De bewerking wordt getriggerd als het type van het document met geen van de vermelde typen overeenkomt.
 2. **Document Types List**
-   * **Description**: Specifies a list of document types to which the condition will apply.
-   * **Detail**: This includes a variety of document types such as "Invoice", "Purchase Order", etc., based on which the condition (is/is not) will be evaluated.
+   * **Beschrijving**: Geeft een lijst op van documenttypen waarop de voorwaarde van toepassing is.
+   * **Detail**: Dit omvat een verscheidenheid aan documenttypen, zoals "Invoice", "Purchase Order", enz., op basis waarvan de voorwaarde (is/is not) wordt geëvalueerd.
 
-## Functionality:
+## Functionaliteit:
 
-* **Condition Evaluation:** The system checks if the document type matches the operator condition (is or is not) against the specified list of document types.
-* **Action Execution:**
-  * **True Condition:**\
-    If the document type satisfies the specified condition (either is or is not in the list), the workflow continues. This could trigger processes like document approvals, specific validations, or routing actions.
-  * **False Condition:**\
-    If the document type does not meet the condition, alternative actions are executed, such as rejecting the document or halting the workflow.
+* **Voorwaarde-evaluatie:** Het systeem controleert of het documenttype overeenkomt met de operatorvoorwaarde (is of is not) ten opzichte van de opgegeven lijst van documenttypen.
+* **Actie-uitvoering:**
+  * **True-voorwaarde:**\
+    Als het documenttype aan de opgegeven voorwaarde voldoet (ofwel is, ofwel is not in de lijst), gaat de workflow verder. Dit kan processen triggeren zoals documentgoedkeuringen, specifieke validaties of routeringsacties.
+  * **False-voorwaarde:**\
+    Als het documenttype niet aan de voorwaarde voldoet, worden alternatieve acties uitgevoerd, zoals het afkeuren van het document of het stoppen van de workflow.
 
-## Setup and Configuration:
+## Opzet en configuratie:
 
-* Users configure the card by selecting the document type field and defining the operator (is or is not). They then specify the list of document types to check against. The setup is straightforward, involving dropdown menus for field and operator selection and a field for entering the list of document types.
+* Gebruikers configureren de kaart door het documenttypeveld te selecteren en de operator (is of is not) te definiëren. Vervolgens geven ze de lijst van documenttypen op waarmee wordt vergeleken. De opzet is eenvoudig en bestaat uit dropdownmenu's voor de veld- en operatorselectie en een veld voor het invoeren van de lijst van documenttypen.
 
-## Conclusion:
+## Conclusie:
 
-The "Document Type Condition" workflow card plays a crucial role in managing document-based operations with precision and flexibility. By using simple conditional logic, it helps ensure that documents are processed appropriately, enhancing efficiency and compliance. Documenting this card clearly will help users understand how to implement and utilize it effectively, making it a valuable part of your ERP system's documentation.
+De workflow-kaart "Document Type Condition" speelt een cruciale rol bij het beheren van documentgebaseerde bewerkingen met precisie en flexibiliteit. Door eenvoudige voorwaardelijke logica te gebruiken, helpt hij ervoor te zorgen dat documenten op de juiste manier worden verwerkt, wat de efficiëntie en naleving verbetert. Het duidelijk documenteren van deze kaart helpt gebruikers te begrijpen hoe ze deze effectief kunnen implementeren en benutten, waardoor het een waardevol onderdeel van de documentatie van uw ERP-systeem wordt.

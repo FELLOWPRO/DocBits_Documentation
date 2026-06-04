@@ -2,23 +2,23 @@
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card compares the quoted price of an item to its contracted price, allowing workflows to trigger actions based on whether the two values match or differ. It helps ensure pricing consistency and compliance with contract terms.
+Deze DocBits-kaart vergelijkt de geoffreerde prijs van een item met de contractprijs, waardoor workflows acties kunnen triggeren op basis van de vraag of de twee waarden overeenkomen of verschillen. Hij helpt prijsconsistentie en naleving van contractvoorwaarden te waarborgen.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Price Comparison:** This card evaluates whether the quoted item price meets the specified condition relative to the contracted price.
-* **Operators:** The following conditions can be applied:
-  * **Equals (=):** Checks if the quoted price matches the contracted price.
-  * **Not Equals (≠):** Ensures the quoted price is different from the contracted price.
+* **Prijsvergelijking:** Deze kaart evalueert of de geoffreerde itemprijs aan de opgegeven voorwaarde ten opzichte van de contractprijs voldoet.
+* **Operatoren:** De volgende voorwaarden kunnen worden toegepast:
+  * **Equals (=):** Controleert of de geoffreerde prijs overeenkomt met de contractprijs.
+  * **Not Equals (≠):** Zorgt ervoor dat de geoffreerde prijs verschilt van de contractprijs.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is particularly useful in procurement, sales, or contract management workflows, where it is crucial to validate that quoted prices align with agreed-upon contract terms before proceeding with approvals or order processing.
+Deze kaart is met name nuttig in inkoop-, verkoop- of contractbeheerworkflows, waar het cruciaal is om te valideren dat geoffreerde prijzen overeenkomen met de afgesproken contractvoorwaarden voordat met goedkeuringen of orderverwerking wordt verdergegaan.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user configures the card to check if the **quoted price equals (=)** the **contracted price**. If the prices match, the workflow proceeds to approval; if not, it triggers a notification for manual review to resolve the discrepancy.
+* Een gebruiker configureert de kaart om te controleren of de **geoffreerde prijs gelijk is aan (=)** de **contractprijs**. Als de prijzen overeenkomen, gaat de workflow verder naar goedkeuring; zo niet, dan triggert hij een melding voor handmatige beoordeling om de afwijking op te lossen.
 
-By using the "Quoted Item Price vs. Contracted Price" card, organizations can enforce pricing policies, maintain contract compliance, and reduce errors in financial transactions.
+Door de kaart "Quoted Item Price vs. Contracted Price" te gebruiken, kunnen organisaties prijsbeleid afdwingen, contractnaleving behouden en fouten in financiële transacties verminderen.

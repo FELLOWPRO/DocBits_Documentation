@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card is designed to facilitate interaction with external systems by sending HTTPS requests to specified URLs. It enables workflows to perform actions like data retrieval, updates, or deletion by making API calls, ensuring seamless integration with external services.
+Deze DocBits-kaart is ontworpen om de interactie met externe systemen te faciliteren door HTTPS-verzoeken naar opgegeven URL's te verzenden. Hij maakt het mogelijk dat workflows acties uitvoeren zoals het ophalen, bijwerken of verwijderen van gegevens door API-aanroepen te doen, wat zorgt voor naadloze integratie met externe diensten.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **HTTPS Request Execution:** The card sends a request to a specified URL using the configured HTTP method (e.g., GET, POST, PUT, DELETE).
-* **Headers and Parameters:** Users can include custom headers and query parameters to ensure the request meets the requirements of the external API.
-* **Request Data:** Allows users to define the data payload (if applicable) to be sent with the request, such as JSON or form-encoded data.
-* **Response Evaluation:** The workflow checks if the received status code matches the expected value, ensuring successful communication before proceeding.
-* **Supported HTTP Methods:**
-  * GET: Retrieves data from the specified URL.
-  * POST: Submits data to the specified URL to create resources.
-  * PUT: Updates existing resources at the specified URL.
-  * DELETE: Removes resources from the specified URL.
+* **HTTPS-verzoekuitvoering:** De kaart verzendt een verzoek naar een opgegeven URL met behulp van de geconfigureerde HTTP-methode (bijv. GET, POST, PUT, DELETE).
+* **Headers en parameters:** Gebruikers kunnen aangepaste headers en queryparameters opnemen om ervoor te zorgen dat het verzoek voldoet aan de vereisten van de externe API.
+* **Verzoekgegevens:** Maakt het mogelijk dat gebruikers de gegevens-payload (indien van toepassing) definiëren die met het verzoek wordt verzonden, zoals JSON of formuliergecodeerde gegevens.
+* **Responsevaluatie:** De workflow controleert of de ontvangen statuscode overeenkomt met de verwachte waarde, wat zorgt voor succesvolle communicatie voordat er wordt verdergegaan.
+* **Ondersteunde HTTP-methoden:**
+  * GET: Haalt gegevens op van de opgegeven URL.
+  * POST: Verzendt gegevens naar de opgegeven URL om resources te maken.
+  * PUT: Werkt bestaande resources op de opgegeven URL bij.
+  * DELETE: Verwijdert resources van de opgegeven URL.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is particularly useful in scenarios where workflows need to interact with external APIs for data exchange, such as sending updates to a CRM, retrieving order statuses, or posting new entries to a database.
+Deze kaart is met name nuttig in scenario's waarin workflows moeten communiceren met externe API's voor gegevensuitwisseling, zoals het verzenden van updates naar een CRM, het ophalen van orderstatussen of het plaatsen van nieuwe vermeldingen in een database.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user configures the card to send a POST request to an external order management system with a payload containing new order details. Custom headers are added to include API authentication tokens. The card is set to continue only if the response status code is 201 (Created). If the status code differs, the workflow triggers an error notification for manual intervention.
+* Een gebruiker configureert de kaart om een POST-verzoek te verzenden naar een extern orderbeheersysteem met een payload die nieuwe orderdetails bevat. Aangepaste headers worden toegevoegd om API-authenticatietokens op te nemen. De kaart is ingesteld om alleen verder te gaan als de responsstatuscode 201 (Created) is. Als de statuscode anders is, triggert de workflow een foutmelding voor handmatige interventie.
 
-By using the "Send HTTPS Request" card, organizations can automate external integrations, improve communication between systems, and streamline complex workflows.
+Door de kaart "Send HTTPS Request" te gebruiken, kunnen organisaties externe integraties automatiseren, de communicatie tussen systemen verbeteren en complexe workflows stroomlijnen.

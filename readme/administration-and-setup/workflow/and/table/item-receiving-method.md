@@ -2,26 +2,26 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_workflow_item_receiving.png" alt="Docbits Workflow Item Receiving" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card checks whether items in a dataset have a specified receiving method. Users can choose to validate **any** item or **all** items in the dataset based on a selected condition, making it suitable for scenarios where workflows depend on item receiving methods, such as in supply chain management or inventory tracking.
+Deze DocBits-kaart controleert of items in een dataset een opgegeven ontvangstmethode hebben. Gebruikers kunnen ervoor kiezen om **een** item of **alle** items in de dataset te valideren op basis van een geselecteerde voorwaarde, waardoor hij geschikt is voor scenario's waarin workflows afhankelijk zijn van ontvangstmethoden van items, zoals bij supply-chain-management of voorraadtracering.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Receiving Method Validation:** This card verifies the receiving method of items against a specified condition. Users can choose between **any** item or **all** items in the dataset and set the condition as **equals** or **not equals**.
-* **Item Selection:** Users can specify:
-  * **Any Item:** The card triggers if at least one item meets the specified receiving method condition.
-  * **All Items:** The card triggers only if all items meet the specified receiving method condition.
-* **Operators:** The following operators are available to define the condition:
-  * **Equals (=):** Checks if the receiving method matches the specified value.
-  * **Not Equals (≠):** Ensures the receiving method does not match the specified value.
+* **Validatie van ontvangstmethode:** Deze kaart verifieert de ontvangstmethode van items ten opzichte van een opgegeven voorwaarde. Gebruikers kunnen kiezen tussen **een** item of **alle** items in de dataset en de voorwaarde instellen als **equals** of **not equals**.
+* **Itemselectie:** Gebruikers kunnen opgeven:
+  * **Any Item:** De kaart wordt getriggerd als ten minste één item aan de opgegeven voorwaarde voor de ontvangstmethode voldoet.
+  * **All Items:** De kaart wordt alleen getriggerd als alle items aan de opgegeven voorwaarde voor de ontvangstmethode voldoen.
+* **Operatoren:** De volgende operatoren zijn beschikbaar om de voorwaarde te definiëren:
+  * **Equals (=):** Controleert of de ontvangstmethode overeenkomt met de opgegeven waarde.
+  * **Not Equals (≠):** Zorgt ervoor dat de ontvangstmethode niet overeenkomt met de opgegeven waarde.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is ideal for warehouse managers, inventory coordinators, or logistics personnel who need to validate item receiving methods before allowing further actions, such as processing, storage, or shipping.
+Deze kaart is ideaal voor magazijnmanagers, voorraadcoördinatoren of logistiek personeel die ontvangstmethoden van items moeten valideren voordat ze verdere acties toestaan, zoals verwerking, opslag of verzending.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user configures the card to check if **all items** have the receiving method **equals "Direct Delivery"**. If every item meets this condition, the workflow proceeds, confirming that all items are intended for direct delivery.
+* Een gebruiker configureert de kaart om te controleren of **alle items** de ontvangstmethode **equals "Direct Delivery"** hebben. Als elk item aan deze voorwaarde voldoet, gaat de workflow verder, wat bevestigt dat alle items bedoeld zijn voor directe levering.
 
-By using the "Receiving Method Validation" card, organizations can ensure compliance with receiving protocols, improve logistics workflows, and maintain accuracy in item handling based on specific receiving methods.
+Door de kaart "Receiving Method Validation" te gebruiken, kunnen organisaties naleving van ontvangstprotocollen waarborgen, logistieke workflows verbeteren en nauwkeurigheid in itemafhandeling behouden op basis van specifieke ontvangstmethoden.

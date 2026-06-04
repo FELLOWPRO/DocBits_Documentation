@@ -2,28 +2,28 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_support_button_2.png" alt="Docbits Support Button 2" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Doel:**
 
-This DocBits card performs a comparison between values in two specified columns within a table, based on a chosen condition. It’s useful for scenarios that require validating relationships between data points, such as quality control, data consistency checks, or compliance verification.
+Deze DocBits-kaart voert een vergelijking uit tussen waarden in twee opgegeven kolommen binnen een tabel, op basis van een gekozen voorwaarde. Hij is nuttig voor scenario's die het valideren van relaties tussen datapunten vereisen, zoals kwaliteitscontrole, gegevensconsistentiecontroles of nalevingsverificatie.
 
-## **Functionality:**
+## **Functionaliteit:**
 
-* **Column Comparison:** This card allows users to set conditions to compare values between two columns in the same table.
-* **Operators:** The following operators are available to define the comparison:
-  * **Equals (=):** Checks if values in the two columns are exactly equal.
-  * **Not Equals (≠):** Ensures values in the two columns are not equal.
-  * **Greater Than (>):** Confirms that values in the first column are greater than those in the second column.
-  * **Greater or Equals (≥):** Ensures values in the first column are greater than or equal to those in the second column.
-  * **Lesser Than (<):** Checks if values in the first column are less than those in the second column.
-  * **Less or Equals (≤):** Ensures values in the first column are less than or equal to those in the second column.
-* **Table and Column Selection:** Users specify the table and the two columns they wish to compare.
+* **Kolomvergelijking:** Met deze kaart kunnen gebruikers voorwaarden instellen om waarden tussen twee kolommen in dezelfde tabel te vergelijken.
+* **Operatoren:** De volgende operatoren zijn beschikbaar om de vergelijking te definiëren:
+  * **Equals (=):** Controleert of de waarden in de twee kolommen exact gelijk zijn.
+  * **Not Equals (≠):** Zorgt ervoor dat de waarden in de twee kolommen niet gelijk zijn.
+  * **Greater Than (>):** Bevestigt dat de waarden in de eerste kolom groter zijn dan die in de tweede kolom.
+  * **Greater or Equals (≥):** Zorgt ervoor dat de waarden in de eerste kolom groter dan of gelijk zijn aan die in de tweede kolom.
+  * **Lesser Than (<):** Controleert of de waarden in de eerste kolom kleiner zijn dan die in de tweede kolom.
+  * **Less or Equals (≤):** Zorgt ervoor dat de waarden in de eerste kolom kleiner dan of gelijk zijn aan die in de tweede kolom.
+* **Tabel- en kolomselectie:** Gebruikers geven de tabel en de twee te vergelijken kolommen op.
 
-## **Usage:**
+## **Gebruik:**
 
-This card is ideal for data analysts, quality control teams, or compliance officers who need to ensure that values in one column relate to values in another according to specific rules, allowing for advanced data validation.
+Deze kaart is ideaal voor data-analisten, kwaliteitscontroleteams of nalevingsfunctionarissen die ervoor moeten zorgen dat waarden in de ene kolom volgens specifieke regels samenhangen met waarden in een andere, wat geavanceerde gegevensvalidatie mogelijk maakt.
 
-## **Example Scenario:**
+## **Voorbeeldscenario:**
 
-* A user configures the card to check if values in the "Current Stock" column are **greater than or equal to (≥)** values in the "Minimum Stock Level" column in the "Inventory" table. If all values meet this condition, the workflow proceeds, confirming that stock levels are adequate.
+* Een gebruiker configureert de kaart om te controleren of de waarden in de kolom "Current Stock" **groter dan of gelijk zijn aan (≥)** de waarden in de kolom "Minimum Stock Level" in de tabel "Inventory". Als alle waarden aan deze voorwaarde voldoen, gaat de workflow verder, wat bevestigt dat de voorraadniveaus toereikend zijn.
 
-By using the "Column Value Comparison" card, organizations can ensure data consistency, maintain quality standards, and validate data relationships within tables.
+Door de kaart "Column Value Comparison" te gebruiken, kunnen organisaties gegevensconsistentie waarborgen, kwaliteitsnormen handhaven en gegevensrelaties binnen tabellen valideren.

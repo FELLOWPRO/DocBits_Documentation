@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/userlmn_e9d6da331deceed4f330358635d6b605 (1).png" alt="" width="521"><figcaption></figcaption></figure>
 
-**Purpose**
+**Propósito**
 
-This card is designed to control workflow actions based on the current status of a document, using conditional logic to either trigger or restrict certain processes. It ensures that documents only proceed through workflows when they meet predefined status criteria.
+Esta tarjeta está diseñada para controlar las acciones del flujo de trabajo según el estado actual de un documento, usando lógica condicional para disparar o restringir ciertos procesos. Garantiza que los documentos solo avancen por los flujos de trabajo cuando cumplen criterios de estado predefinidos.
 
-**Components of the Card**
+**Componentes de la tarjeta**
 
 1. **Operator**
-   * **Description**: Determines how the document status will be evaluated against a specified condition.
-   * **Options**:
-     * **is**: Triggers the associated actions if the document’s current status matches one of the specified statuses.
-     * **is not**: Triggers the actions if the document’s status does not match any of the specified statuses.
+   * **Descripción**: Determina cómo se evaluará el estado del documento frente a una condición especificada.
+   * **Opciones**:
+     * **is**: Dispara las acciones asociadas si el estado actual del documento coincide con uno de los estados especificados.
+     * **is not**: Dispara las acciones si el estado del documento no coincide con ninguno de los estados especificados.
 2. **Status ( List )**
-   * **Description**: Lists the specific statuses against which the document’s current status will be compared.
-   * **Examples**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". These represent different stages or conditions a document might be in within a workflow process.
+   * **Descripción**: Enumera los estados específicos con los que se comparará el estado actual del documento.
+   * **Ejemplos**: "Error", "Export Error", "Ready in Validation", "Ready in Review", "Pending Approval", "Pending Second Approval". Estos representan diferentes etapas o condiciones en las que puede encontrarse un documento dentro de un proceso de flujo de trabajo.
 
-**Functionality**
+**Funcionalidad**
 
-* **Status Identification**: Automatically identifies the current status of a document as it moves through the ERP system’s workflow.
-* **Condition Evaluation**: Applies the chosen operator (is or is not) to the document’s status in comparison to the listed statuses:
-  * If **is**, it checks whether the document’s status matches any status in the list.
-  * If **is not**, it checks whether the document’s status does not appear in the list.
-* **Action Execution**: Depending on the outcome of the condition evaluation:
-  * **True**: Executes predefined actions or workflows if the condition is met.
-  * **False**: Skips or triggers alternative workflows if the condition is not met.
-* **Workflow Integration**: Integrates seamlessly with other workflow components, ensuring that document handling is coordinated across the system.
+* **Identificación del estado**: Identifica automáticamente el estado actual de un documento a medida que avanza por el flujo de trabajo del sistema ERP.
+* **Evaluación de la condición**: Aplica el operador elegido (is o is not) al estado del documento en comparación con los estados enumerados:
+  * Si es **is**, comprueba si el estado del documento coincide con algún estado de la lista.
+  * Si es **is not**, comprueba si el estado del documento no aparece en la lista.
+* **Ejecución de la acción**: Según el resultado de la evaluación de la condición:
+  * **True**: Ejecuta acciones o flujos de trabajo predefinidos si se cumple la condición.
+  * **False**: Omite o dispara flujos de trabajo alternativos si no se cumple la condición.
+* **Integración con el flujo de trabajo**: Se integra sin problemas con otros componentes del flujo de trabajo, garantizando que el manejo de documentos esté coordinado en todo el sistema.
 
-**User Interactions**
+**Interacciones del usuario**
 
-* **Setup and Configuration**: Users configure the card by selecting the operator and specifying the relevant statuses. This setup may involve simple dropdown menus or checkboxes for selecting statuses and operators.
-* **Monitoring and Management**: Users can track the card’s activity via a dashboard, which provides insights into the status conditions being monitored and the actions being taken based on those conditions.
-* **Error Handling and Alerts**: Supports setting up alerts for process failures or mismatches in expected document statuses, enabling quick responses to operational issues.
+* **Configuración**: Los usuarios configuran la tarjeta seleccionando el operador y especificando los estados pertinentes. Esta configuración puede implicar sencillos menús desplegables o casillas de verificación para seleccionar estados y operadores.
+* **Supervisión y gestión**: Los usuarios pueden hacer seguimiento de la actividad de la tarjeta a través de un panel, que proporciona información sobre las condiciones de estado que se supervisan y las acciones que se realizan según esas condiciones.
+* **Gestión de errores y alertas**: Permite configurar alertas para fallos de procesos o desajustes en los estados de documento esperados, posibilitando respuestas rápidas a los problemas operativos.
 
-#### Conclusion
+#### Conclusión
 
-The "Document Status Condition" workflow card is vital for ensuring that documents are processed correctly according to their current status, enhancing control and efficiency within the ERP system. Clearly documenting this card in the system's manual will help users effectively implement and manage it, leveraging its functionality to maintain smooth and compliant document workflows. This card is particularly useful in managing document lifecycles and ensuring that only documents meeting specific criteria advance to subsequent stages of business processes.
+La tarjeta de flujo de trabajo "Document Status Condition" es vital para garantizar que los documentos se procesen correctamente según su estado actual, mejorando el control y la eficiencia dentro del sistema ERP. Documentar claramente esta tarjeta en el manual del sistema ayudará a los usuarios a implementarla y gestionarla de forma eficaz, aprovechando su funcionalidad para mantener flujos de trabajo de documentos fluidos y conformes. Esta tarjeta es especialmente útil para gestionar los ciclos de vida de los documentos y garantizar que solo los documentos que cumplen criterios específicos avancen a las etapas posteriores de los procesos de negocio.

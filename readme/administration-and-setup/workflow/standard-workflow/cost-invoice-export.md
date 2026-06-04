@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_rule_cost_invoice.png" alt="DocBits Regel Cost Factuur"><figcaption></figcaption></figure>
 
-This title indicates that the rule is specifically configured for managing cost invoices and involves an export action, possibly for reporting, further processing, or integration with other systems.
+Deze titel geeft aan dat de regel specifiek is geconfigureerd voor het beheren van kostenfacturen en een exportactie omvat, mogelijk voor rapportage, verdere verwerking of integratie met andere systemen.
 
-#### Rule Configuration:
+#### Regelconfiguratie:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents categorized as invoices, maintaining the workflow's specificity to invoice management.
+   * **Document Type is Invoice**: Deze voorwaarde zorgt ervoor dat de regel alleen wordt geactiveerd voor documenten die als facturen zijn gecategoriseerd, waardoor de workflow specifiek gericht blijft op factuurbeheer.
 2. **And…**
-   * **Document Field Invoice Sub Type is Equals Cost Invoice**: This specifies that the rule applies only to those invoices that are explicitly marked as "Cost Invoices" in a particular field within the document. This helps in distinguishing them from other types of invoices.
-   * **Document Status is Pending Second Approval**: The invoice must be in a "Pending Second Approval" status. This indicates that the invoice has already undergone an initial approval and is awaiting a second, possibly final, review.
+   * **Document Field Invoice Sub Type is Equals Cost Invoice**: Dit geeft aan dat de regel alleen van toepassing is op facturen die in een bepaald veld binnen het document expliciet zijn gemarkeerd als "Cost Invoices". Dit helpt om ze te onderscheiden van andere soorten facturen.
+   * **Document Status is Pending Second Approval**: De factuur moet de status "Pending Second Approval" hebben. Dit geeft aan dat de factuur al een eerste goedkeuring heeft doorlopen en wacht op een tweede, mogelijk laatste, beoordeling.
 
-#### Action (Then…):
+#### Actie (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (being a cost invoice and pending second approval), the action to "Start Export" is executed. This could involve sending the invoice data to another system for financial analysis, reporting, or compliance purposes.
+* **Start Export**: Zodra de factuur aan de opgegeven voorwaarden voldoet (een kostenfactuur die in afwachting is van een tweede goedkeuring), wordt de actie "Start Export" uitgevoerd. Dit kan inhouden dat de factuurgegevens naar een ander systeem worden gestuurd voor financiële analyse, rapportage of nalevingsdoeleinden.
 
-#### Purpose of This Rule:
+#### Doel van deze regel:
 
-* **Workflow Efficiency**: This rule helps automate the handling of cost invoices by ensuring they are processed through the necessary approval stages without manual intervention, increasing the speed and accuracy of financial operations.
-* **Control and Compliance**: By requiring a second approval, the system enforces a control mechanism that ensures cost invoices are thoroughly reviewed, enhancing financial oversight.
-* **Integration and Reporting**: The export action suggests that once invoices are fully approved, they may be integrated into other systems for further processing or analysis, which is critical for financial reporting and audits.
+* **Workflowefficiëntie**: Deze regel helpt de afhandeling van kostenfacturen te automatiseren door ervoor te zorgen dat ze zonder handmatige tussenkomst door de noodzakelijke goedkeuringsfasen worden verwerkt, waardoor de snelheid en nauwkeurigheid van financiële handelingen toenemen.
+* **Controle en naleving**: Door een tweede goedkeuring te vereisen, dwingt het systeem een controlemechanisme af dat ervoor zorgt dat kostenfacturen grondig worden beoordeeld, wat het financiële toezicht verbetert.
+* **Integratie en rapportage**: De exportactie suggereert dat zodra facturen volledig zijn goedgekeurd, ze kunnen worden geïntegreerd in andere systemen voor verdere verwerking of analyse, wat cruciaal is voor financiële rapportage en audits.
 
-This kind of rule is vital for organizations that deal with various types of invoices and need to ensure that each type is handled according to specific protocols. It reduces the risk of errors and ensures compliance with internal controls and external regulations.
+Dit soort regels is van essentieel belang voor organisaties die met verschillende soorten facturen te maken hebben en ervoor moeten zorgen dat elk type volgens specifieke protocollen wordt afgehandeld. Het vermindert het risico op fouten en waarborgt de naleving van interne controles en externe regelgeving.

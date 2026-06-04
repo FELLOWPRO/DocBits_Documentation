@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_rule_above_max.png" alt="DocBits Regel Above Max"><figcaption></figcaption></figure>
 
-This title indicates that the rule is designed to manage cases where the invoice total is greater than the maximum amount an approver is authorized to handle.
+Deze titel geeft aan dat de regel is ontworpen om gevallen te beheren waarin het factuurtotaal hoger is dan het maximumbedrag dat een goedkeurder mag verwerken.
 
-#### Rule Configuration:
+#### Regelconfiguratie:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule applies only to invoices, which is essential for directing the workflow correctly.
+   * **Document Type is Invoice**: Deze voorwaarde zorgt ervoor dat de regel alleen van toepassing is op facturen, wat essentieel is om de workflow correct te sturen.
 2. **And…**
-   * **Document Status is Pending Approval**: The invoice must be in a "Pending Approval" status. This status is crucial to ensure that the rule is applied to invoices that are still being processed and have not yet been finalized.
-   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: This condition checks if the invoice's total amount exceeds the maximum amount an approver is allowed to handle. This comparison might also include a tolerance setting, allowing for minor variations based on predefined criteria.
+   * **Document Status is Pending Approval**: De factuur moet de status "Pending Approval" hebben. Deze status is cruciaal om ervoor te zorgen dat de regel wordt toegepast op facturen die nog in behandeling zijn en nog niet zijn afgerond.
+   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: Deze voorwaarde controleert of het totaalbedrag van de factuur hoger is dan het maximumbedrag dat een goedkeurder mag verwerken. Deze vergelijking kan ook een tolerantie-instelling bevatten, waardoor kleine afwijkingen op basis van vooraf gedefinieerde criteria worden toegestaan.
 
-#### Action (Then…):
+#### Actie (Then…):
 
-* **Assign user from field Next Level Approver, use user User as fallback**: If the invoice exceeds the specified maximum amount, it is automatically assigned to a higher-level approver, indicated by the 'Next Level Approver' field. If this field is not filled or the specified user is unavailable, a default user (likely an admin or another designated staff member) is used as a fallback to ensure the invoice is reviewed without delay.
+* **Assign user from field Next Level Approver, use user User as fallback**: Als de factuur het opgegeven maximumbedrag overschrijdt, wordt deze automatisch toegewezen aan een goedkeurder op een hoger niveau, aangegeven door het veld 'Next Level Approver'. Als dit veld niet is ingevuld of de opgegeven gebruiker niet beschikbaar is, wordt een standaardgebruiker (waarschijnlijk een beheerder of een andere aangewezen medewerker) als fallback gebruikt om ervoor te zorgen dat de factuur zonder vertraging wordt beoordeeld.
 
-#### Interface Elements:
+#### Interface-elementen:
 
-* **Add Card**: This option allows additional conditions or actions to be added to the rule, providing flexibility to address complex scenarios.
-* **Save**: This button saves the rule configuration to the system.
+* **Add Card**: Met deze optie kunnen aanvullende voorwaarden of acties aan de regel worden toegevoegd, wat flexibiliteit biedt om complexe scenario's aan te pakken.
+* **Save**: Met deze knop wordt de regelconfiguratie in het systeem opgeslagen.
 
-#### Purpose of This Rule:
+#### Doel van deze regel:
 
-The purpose of this rule is to ensure that invoices which exceed certain financial thresholds are reviewed by approvers with the appropriate authorization levels. This helps in maintaining financial control and oversight, ensuring that expenditures are reviewed by personnel with the requisite approval limits, thereby safeguarding the organization against unauthorized or inappropriate expenditures.
+Het doel van deze regel is ervoor te zorgen dat facturen die bepaalde financiële drempels overschrijden, worden beoordeeld door goedkeurders met de juiste autorisatieniveaus. Dit helpt bij het handhaven van financiële controle en toezicht, waarbij wordt gewaarborgd dat uitgaven worden beoordeeld door personeel met de vereiste goedkeuringslimieten, waardoor de organisatie wordt beschermd tegen ongeoorloofde of ongepaste uitgaven.
 
-This rule, like the previous one, helps automate the workflow, reducing manual effort and enhancing compliance with the organization's financial policies. It is an example of how workflow automation can be effectively used to manage complex financial processes within a company.
+Deze regel, net als de vorige, helpt de workflow te automatiseren, vermindert handmatig werk en verbetert de naleving van het financiële beleid van de organisatie. Het is een voorbeeld van hoe workflowautomatisering effectief kan worden gebruikt om complexe financiële processen binnen een bedrijf te beheren.

@@ -2,25 +2,25 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_rule_purchase_invoice_quantity_export.png" alt="DocBits Regel Aankoop Factuur Quantity Exporteren"><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase for purchase invoices with an emphasis on the quantity details, ensuring that the quantities on the invoice match those on the original purchase order.
+Deze titel geeft aan dat de regel is opgezet om de tweede goedkeuringsfase voor inkoopfacturen te beheren, met de nadruk op de hoeveelheidsgegevens, om ervoor te zorgen dat de hoeveelheden op de factuur overeenkomen met die op de oorspronkelijke inkooporder.
 
-#### Rule Configuration:
+#### Regelconfiguratie:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents identified as invoices, which is crucial for directing the workflow accurately.
+   * **Document Type is Invoice**: Deze voorwaarde zorgt ervoor dat de regel alleen wordt geactiveerd voor documenten die als facturen zijn geïdentificeerd, wat cruciaal is om de workflow nauwkeurig te sturen.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is currently pending a second approval. This stage often provides additional oversight to ensure accuracy before the transaction is finalized.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further specifies that the rule applies only to invoices categorized specifically as "Purchase Invoices," differentiating them from other types of invoices.
-   * **Logic Quantity in order confirmation Equals purchase order**: This condition checks if the quantity listed in the order confirmation matches the quantity in the purchase order. It ensures that the invoice processing only moves forward if the quantities are consistent, which is critical for inventory management and financial accuracy.
+   * **Document Status is Pending Second Approval**: Dit geeft aan dat de factuur momenteel in afwachting is van een tweede goedkeuring. Deze fase biedt vaak extra toezicht om de nauwkeurigheid te waarborgen voordat de transactie wordt afgerond.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Deze voorwaarde geeft verder aan dat de regel alleen van toepassing is op facturen die specifiek als "Purchase Invoices" zijn gecategoriseerd, om ze te onderscheiden van andere soorten facturen.
+   * **Logic Quantity in order confirmation Equals purchase order**: Deze voorwaarde controleert of de hoeveelheid die in de orderbevestiging is vermeld, overeenkomt met de hoeveelheid in de inkooporder. Het zorgt ervoor dat de factuurverwerking alleen wordt voortgezet als de hoeveelheden consistent zijn, wat cruciaal is voor voorraadbeheer en financiële nauwkeurigheid.
 
-#### Action (Then…):
+#### Actie (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (i.e., the quantities match between the order confirmation and the purchase order), the action to "Start Export" is triggered. This likely involves exporting the invoice data for further processing, possibly to another financial system or for reporting purposes.
+* **Start Export**: Zodra de factuur aan de opgegeven voorwaarden voldoet (d.w.z. de hoeveelheden komen overeen tussen de orderbevestiging en de inkooporder), wordt de actie "Start Export" geactiveerd. Dit houdt waarschijnlijk in dat de factuurgegevens worden geëxporteerd voor verdere verwerking, mogelijk naar een ander financieel systeem of voor rapportagedoeleinden.
 
-#### Purpose of This Rule:
+#### Doel van deze regel:
 
-* **Ensure Accuracy and Consistency**: By verifying that the quantities match between the order confirmation and the purchase order, the system helps maintain inventory accuracy and prevents discrepancies that could affect financial reporting or stock management.
-* **Streamline Financial Processing**: Automating the export of data once the quantities are confirmed reduces manual handling and speeds up the financial processing cycle.
-* **Enhance Compliance and Oversight**: Requiring a second approval for quantity verification adds an extra layer of oversight, crucial for compliance with financial policies and controls.
+* **Nauwkeurigheid en consistentie waarborgen**: Door te verifiëren dat de hoeveelheden overeenkomen tussen de orderbevestiging en de inkooporder, helpt het systeem de voorraadnauwkeurigheid te behouden en voorkomt het afwijkingen die de financiële rapportage of het voorraadbeheer zouden kunnen beïnvloeden.
+* **Financiële verwerking stroomlijnen**: Het automatiseren van de export van gegevens zodra de hoeveelheden zijn bevestigd, vermindert handmatige verwerking en versnelt de financiële verwerkingscyclus.
+* **Naleving en toezicht verbeteren**: Het vereisen van een tweede goedkeuring voor hoeveelheidsverificatie voegt een extra laag toezicht toe, wat cruciaal is voor de naleving van financieel beleid en financiële controles.
 
-This rule is a clear example of how workflow automation can be effectively used to ensure precise and efficient handling of financial documents within an organization, particularly in the context of purchase processes that involve large volumes of transactions requiring meticulous validation.
+Deze regel is een duidelijk voorbeeld van hoe workflowautomatisering effectief kan worden gebruikt om een nauwkeurige en efficiënte afhandeling van financiële documenten binnen een organisatie te waarborgen, met name in de context van inkoopprocessen met grote transactievolumes die zorgvuldige validatie vereisen.

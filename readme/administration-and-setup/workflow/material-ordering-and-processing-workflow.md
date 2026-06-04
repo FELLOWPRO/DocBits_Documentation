@@ -5,45 +5,45 @@ description: >-
   and document management in one.
 ---
 
-# Material Ordering and Processing Workflow
+# Materiaalbestelling en -verwerkingsworkflow
 
-This document outlines the workflow for ordering materials from suppliers, receiving goods, and processing invoices with integration between suppliers, INFOR ERP system, and DocBits for document management.
+Dit document beschrijft de workflow voor het bestellen van materialen bij leveranciers, het ontvangen van goederen en het verwerken van facturen, met integratie tussen leveranciers, het INFOR ERP-systeem en DocBits voor documentbeheer.
 
-### Process Overview
+### Procesoverzicht
 
-1. **Ordering Materials**
-   * Initiate order with the supplier.
-   * Send the order to the supplier through INFOR.
-2. **Receiving Order Confirmation**
-   * Supplier confirms the receipt of the order.
-   * Creation and sending of order confirmation.
-3. **Goods Receipt and Inspection**
-   * Receive goods from the supplier.
-   * Post goods receipt in INFOR and check against the delivery bill.
-4. **Invoice Processing**
-   * Receive invoice and send to DocBits for processing.
-   * Check and verify invoice details with order and goods receipt.
-5. **Final Steps**
-   * Archive the order and related documents in DocBits.
-   * Update INFOR with transaction details for financial accounting.
+1. **Materialen bestellen**
+   * Start de bestelling bij de leverancier.
+   * Verstuur de bestelling naar de leverancier via INFOR.
+2. **Orderbevestiging ontvangen**
+   * De leverancier bevestigt de ontvangst van de bestelling.
+   * Aanmaken en versturen van de orderbevestiging.
+3. **Goederenontvangst en inspectie**
+   * Ontvang de goederen van de leverancier.
+   * Boek de goederenontvangst in INFOR en controleer deze aan de hand van de pakbon.
+4. **Factuurverwerking**
+   * Ontvang de factuur en stuur deze naar DocBits voor verwerking.
+   * Controleer en verifieer de factuurgegevens met de bestelling en de goederenontvangst.
+5. **Laatste stappen**
+   * Archiveer de bestelling en bijbehorende documenten in DocBits.
+   * Werk INFOR bij met transactiegegevens voor de financiële boekhouding.
 
-### Decision Points and Actions
+### Beslispunten en acties
 
-* **Does the received goods match the order?**
-  * Yes: Proceed with invoice processing.
-  * No: Manual check and update required.
-* **Is the invoice correct according to the goods received and order details?**
-  * Yes: Complete the transaction and update financial records.
-  * No: Further examination and corrections needed.
+* **Komen de ontvangen goederen overeen met de bestelling?**
+  * Ja: Ga verder met de factuurverwerking.
+  * Nee: Handmatige controle en bijwerking vereist.
+* **Is de factuur correct volgens de ontvangen goederen en de bestelgegevens?**
+  * Ja: Voltooi de transactie en werk de financiële administratie bij.
+  * Nee: Nader onderzoek en correcties nodig.
 
-### Integration Points
+### Integratiepunten
 
-* **INFOR ERP**: Main system for order processing, goods receipt, and financial accounting.
-* **DocBits**: Document management for processing and archiving invoices and order confirmations.
+* **INFOR ERP**: Hoofdsysteem voor orderverwerking, goederenontvangst en financiële boekhouding.
+* **DocBits**: Documentbeheer voor het verwerken en archiveren van facturen en orderbevestigingen.
 
-### Notes
+### Opmerkingen
 
-* Ensure all documents are verified and archived for record-keeping.
-* Discrepancies in order or invoice details must be resolved promptly to avoid delays.
+* Zorg ervoor dat alle documenten geverifieerd en gearchiveerd zijn voor de administratie.
+* Afwijkingen in bestel- of factuurgegevens moeten direct worden opgelost om vertragingen te voorkomen.
 
 <figure><img src="../../../.gitbook/assets/docbits_material_workflow.svg" alt="DocBits Materiaal Workflow"><figcaption></figcaption></figure>

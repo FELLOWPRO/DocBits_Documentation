@@ -1,36 +1,36 @@
-# Standard Workflow
+# Standaardworkflow
 
-<figure><img src="../../../../.gitbook/assets/docbits_standard_workflow_diagram_2.svg" alt="DocBits Standard Workflow Diagram 2"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_standard_workflow_diagram_2.svg" alt="DocBits Standaardworkflow Diagram 2"><figcaption></figcaption></figure>
 
-#### Overview of Workflow Components:
+#### Overzicht van de workflowcomponenten:
 
-* **AP Invoice Email**: The process likely begins with an invoice received via email.
-* **DocBits**: This tool might be used for initial document management tasks such as capturing and digitizing invoices.
-* **Finance Review**: Invoices undergo a finance review where decisions are made regarding their validity and accuracy.
+* **AP Invoice Email**: Het proces begint waarschijnlijk met een factuur die per e-mail wordt ontvangen.
+* **DocBits**: Deze tool wordt mogelijk gebruikt voor de initiële documentbeheertaken, zoals het vastleggen en digitaliseren van facturen.
+* **Finance Review**: Facturen ondergaan een financiële beoordeling waarbij beslissingen worden genomen over de geldigheid en juistheid ervan.
 
-#### Steps in the Workflow:
+#### Stappen in de workflow:
 
-1. **Initial Review**:
-   * Invoices are received and initially processed using DocBits.
-   * They are then reviewed by the finance team to ensure they are removed from the workflow if they are complete, or pushed forward for further processing.
-2. **PO vs Non-PO Invoices**:
-   * The workflow distinguishes between PO-related and non-PO invoices.
-   * Non-PO invoices are routed for further approval or rejection based on predefined criteria like supplier ID, quantity, unit price, and item number.
-3. **Matching and Mismatching**:
-   * Invoices are checked against goods receipts to ensure that details match (like supplier ID and quantity).
-   * If mismatches occur, the invoice is subject to further review and possibly rejection.
-4. **Finance and Buyer Review**:
-   * For PO-related invoices, a detailed matching process is conducted involving a buyer review.
-   * Adjustments to purchase orders or goods receipts might be required.
-5. **Final Decisions**:
-   * Invoices that pass all checks are approved and integrated into financial systems for record-keeping.
-   * Rejected invoices trigger notifications, and a new invoice may be requested by the buyer.
-6. **Integration with Infor IDM & LN+M3**:
-   * Approved invoices are likely sent to Infor's IDM for document management and LN for ledger noting.
-   * This integration ensures that all financial records are up-to-date and that the workflow seamlessly feeds into the broader ERP system.
+1. **Initiële beoordeling**:
+   * Facturen worden ontvangen en in eerste instantie verwerkt met DocBits.
+   * Ze worden vervolgens beoordeeld door het financiële team om ervoor te zorgen dat ze uit de workflow worden verwijderd als ze compleet zijn, of doorgestuurd voor verdere verwerking.
+2. **PO- versus niet-PO-facturen**:
+   * De workflow maakt onderscheid tussen PO-gerelateerde en niet-PO-facturen.
+   * Niet-PO-facturen worden doorgestuurd voor verdere goedkeuring of afwijzing op basis van vooraf gedefinieerde criteria zoals leverancier-ID, hoeveelheid, eenheidsprijs en artikelnummer.
+3. **Overeenkomsten en afwijkingen**:
+   * Facturen worden vergeleken met goederenontvangsten om ervoor te zorgen dat de gegevens overeenkomen (zoals leverancier-ID en hoeveelheid).
+   * Als er afwijkingen optreden, wordt de factuur onderworpen aan een nadere beoordeling en mogelijk afgewezen.
+4. **Beoordeling door financiën en inkoper**:
+   * Voor PO-gerelateerde facturen wordt een gedetailleerd matchingproces uitgevoerd waarbij een inkoper de beoordeling uitvoert.
+   * Aanpassingen aan inkooporders of goederenontvangsten kunnen nodig zijn.
+5. **Eindbeslissingen**:
+   * Facturen die alle controles doorstaan, worden goedgekeurd en geïntegreerd in financiële systemen voor de administratie.
+   * Afgewezen facturen activeren meldingen, en de inkoper kan een nieuwe factuur aanvragen.
+6. **Integratie met Infor IDM & LN+M3**:
+   * Goedgekeurde facturen worden waarschijnlijk naar Infor's IDM gestuurd voor documentbeheer en naar LN voor de boekhoudkundige verwerking.
+   * Deze integratie zorgt ervoor dat alle financiële gegevens up-to-date zijn en dat de workflow naadloos aansluit op het bredere ERP-systeem.
 
-#### Decision Points:
+#### Beslispunten:
 
-* Throughout the workflow, there are various decision points where an invoice might be approved, rejected, or sent back for additional information. Notifications are sent out after delays, ensuring timely processing.
+* Door de hele workflow heen zijn er verschillende beslispunten waar een factuur kan worden goedgekeurd, afgewezen of teruggestuurd voor aanvullende informatie. Na vertragingen worden meldingen verstuurd, zodat een tijdige verwerking is gewaarborgd.
 
-These Workflows will be included in the Standard Workflow
+Deze workflows worden opgenomen in de standaardworkflow

@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_invoice.png" alt="DocBits Facture"><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
+Ce titre suggère que la règle ou la condition mise en place est conçue pour gérer les factures dont le montant total est inférieur ou égal à un montant maximum spécifié.
 
-#### Rule Configuration:
+#### Configuration de la règle :
 
 1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
+   * **Document Type is Invoice** : Cette condition vérifie si le document en cours de traitement est une facture. Ceci est crucial pour garantir que la règle ne s'applique qu'aux factures et non à d'autres types de documents.
 2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+   * **Document Status is Pending Approval** : Cela précise que la facture doit être au statut « Pending Approval ». Cette vérification de statut garantit que la règle ne s'applique qu'aux factures en attente d'approbation.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount** : Cette condition compare le montant total de la facture au montant maximum autorisé d'un approbateur. Si le montant total de la facture est inférieur ou égal à ce montant maximum, la règle passe à l'étape suivante. Cela inclut vraisemblablement un niveau de tolérance permettant des écarts mineurs dans des limites spécifiées.
 
-#### Action (Then…):
+#### Action (Then…) :
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Approver Name, use user User as fallback** : Si les conditions spécifiées sont remplies, la facture est automatiquement assignée à un approbateur dont le nom est spécifié dans un champ. Si ce champ est vide ou indisponible, un utilisateur par défaut (vraisemblablement un administrateur ou un autre membre du personnel désigné) est assigné en tant que solution de repli pour gérer l'approbation.
 
-#### Interface Elements:
+#### Éléments d'interface :
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+* **Add Card** : Ce bouton permet vraisemblablement aux utilisateurs d'ajouter davantage de conditions ou d'actions à la règle, améliorant la flexibilité et la spécificité du flux de travail.
+* **Save** : Enregistre la règle configurée dans le système.
 
-#### Purpose of This Rule:
+#### Objectif de cette règle :
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+Cette configuration est conçue pour rationaliser le processus d'approbation des factures en dirigeant automatiquement les factures vers l'approbateur approprié en fonction du montant et en garantissant que seules celles situées dans un certain seuil sont traitées de cette manière automatisée. Elle aide à gérer les contrôles financiers et accélère le flux de travail en réduisant les vérifications manuelles pour chaque facture.
 
 \

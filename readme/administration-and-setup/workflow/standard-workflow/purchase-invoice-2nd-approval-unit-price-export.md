@@ -2,25 +2,25 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_5.png" alt="DocBits Achat Commande Exporter 5"><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase of purchase invoices with a focus on the unit price, ensuring it matches the agreed terms.
+Ce titre indique que la règle est mise en place pour gérer la seconde phase d'approbation des factures d'achat en mettant l'accent sur le prix unitaire, garantissant qu'il correspond aux conditions convenues.
 
-#### Rule Configuration:
+#### Configuration de la règle :
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents identified as invoices, which is crucial for directing the workflow accurately.
+   * **Document Type is Invoice** : Cette condition garantit que la règle n'est activée que pour les documents identifiés comme factures, ce qui est crucial pour orienter le flux de travail avec précision.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is awaiting a second approval. This stage often provides additional oversight to ensure accuracy before finalizing the transaction.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further specifies that the rule applies only to invoices categorized specifically as "Purchase Invoices," differentiating them from other types of invoices.
-   * **Logic Unit Price in order confirmation Equals purchase order**: This condition checks if the unit price listed in the order confirmation matches the unit price in the purchase order. It ensures that the invoice processing only moves forward if there is consistency in pricing, which is critical for budgeting and financial reporting.
+   * **Document Status is Pending Second Approval** : Cela précise que la facture est en attente d'une seconde approbation. Cette étape fournit souvent une supervision supplémentaire pour garantir l'exactitude avant de finaliser la transaction.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice** : Cette condition précise en outre que la règle ne s'applique qu'aux factures catégorisées spécifiquement comme « Purchase Invoices », les différenciant des autres types de factures.
+   * **Logic Unit Price in order confirmation Equals purchase order** : Cette condition vérifie si le prix unitaire indiqué dans la confirmation de commande correspond au prix unitaire de la commande d'achat. Elle garantit que le traitement de la facture ne se poursuit que s'il y a cohérence dans la tarification, ce qui est essentiel pour la budgétisation et le reporting financier.
 
-#### Action (Then…):
+#### Action (Then…) :
 
-* **Start Export**: Once the invoice meets the specified conditions (i.e., the unit prices match between the order confirmation and the purchase order), the action to "Start Export" is triggered. This likely involves exporting the invoice data for further processing, possibly to another financial system or for reporting purposes.
+* **Start Export** : Une fois que la facture remplit les conditions spécifiées (c.-à-d. que les prix unitaires correspondent entre la confirmation de commande et la commande d'achat), l'action « Start Export » est déclenchée. Cela implique vraisemblablement l'exportation des données de la facture pour un traitement ultérieur, possiblement vers un autre système financier ou à des fins de reporting.
 
-#### Purpose of This Rule:
+#### Objectif de cette règle :
 
-* **Ensure Accuracy and Consistency**: By verifying that the unit prices match between the order confirmation and the purchase order, the system helps maintain financial accuracy and prevents overcharging or undercharging.
-* **Streamline Financial Processing**: Automating the export of data once the prices are confirmed reduces manual handling and speeds up the financial processing cycle.
-* **Enhance Compliance and Oversight**: Requiring a second approval for price verification adds an extra layer of oversight, which is crucial for compliance with financial policies and controls.
+* **Garantir l'exactitude et la cohérence** : En vérifiant que les prix unitaires correspondent entre la confirmation de commande et la commande d'achat, le système aide à maintenir l'exactitude financière et prévient les surfacturations ou sous-facturations.
+* **Rationaliser le traitement financier** : L'automatisation de l'exportation des données une fois les prix confirmés réduit le traitement manuel et accélère le cycle de traitement financier.
+* **Renforcer la conformité et la supervision** : Exiger une seconde approbation pour la vérification des prix ajoute une couche supplémentaire de supervision, ce qui est essentiel pour la conformité aux politiques et contrôles financiers.
 
-This rule is an example of how workflow automation can be effectively utilized to ensure precise and efficient handling of financial documents within an organization, particularly in the context of large volumes of transactions that require meticulous validation.
+Cette règle est un exemple de la manière dont l'automatisation des flux de travail peut être utilisée efficacement pour garantir un traitement précis et efficient des documents financiers au sein d'une organisation, en particulier dans le contexte de grands volumes de transactions nécessitant une validation méticuleuse.

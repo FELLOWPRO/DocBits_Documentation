@@ -2,365 +2,365 @@
 hidden: true
 ---
 
-# Workflow Card Release & Version History
+# Publication des cartes de flux de travail et historique des versions
 
-## Version Control Principles
+## Principes de contrôle de version
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Workflow Version Control System</figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_workflow_version_control.png" alt="Docbits Workflow Version Control"><figcaption>Système de contrôle de version des flux de travail</figcaption></figure>
 
-### Version 8.5.2024 - Core Versioning Features
+### Version 8.5.2024 - Fonctionnalités principales de versionnage
 
-The DocBits Workflow Engine implements robust version control for all workflow cards:
+Le moteur de flux de travail DocBits met en œuvre un contrôle de version robuste pour toutes les cartes de flux de travail :
 
-1. **Version Control**: Each card can have multiple versions, each representing a different set of conditions or actions. This allows you to experiment with or tweak the rules without affecting the currently active workflow.
-2. **Seamless Upgrades**: When you need to update a rule or condition due to changes in your document processing requirements, you can create a new version of the card. This approach ensures that any modifications are deliberate and tested before they replace the current version. It minimizes errors and potential disruptions in your document processing.
-3. **Maintaining Consistency**: Keeping the original card version unchanged until you decide to upgrade ensures that ongoing processes are not affected. You can run tests and validations on the new version without impacting live data or workflows.
-4. **Flexibility and Testing**: Multiple versions enable testing different scenarios in a controlled environment. You can see the effects of new rules or changes on your document processing workflow without making permanent changes. Once you are satisfied with the results, you can then choose to apply the new version.
+1. **Contrôle de version** : Chaque carte peut avoir plusieurs versions, chacune représentant un ensemble différent de conditions ou d'actions. Cela vous permet d'expérimenter ou d'ajuster les règles sans affecter le flux de travail actuellement actif.
+2. **Mises à niveau transparentes** : Lorsque vous devez mettre à jour une règle ou une condition en raison de changements dans vos exigences de traitement de documents, vous pouvez créer une nouvelle version de la carte. Cette approche garantit que toute modification est délibérée et testée avant de remplacer la version actuelle. Elle minimise les erreurs et les perturbations potentielles dans votre traitement de documents.
+3. **Maintien de la cohérence** : Conserver la version originale de la carte inchangée jusqu'à ce que vous décidiez de la mettre à niveau garantit que les processus en cours ne sont pas affectés. Vous pouvez exécuter des tests et des validations sur la nouvelle version sans impacter les données ou les flux de travail en production.
+4. **Flexibilité et tests** : Plusieurs versions permettent de tester différents scénarios dans un environnement contrôlé. Vous pouvez observer les effets de nouvelles règles ou de changements sur votre flux de travail de traitement de documents sans apporter de modifications permanentes. Une fois satisfait des résultats, vous pouvez alors choisir d'appliquer la nouvelle version.
 
 ---
 
-## Card Versioning Overview
+## Aperçu du versionnage des cartes
 
-### Statistics
+### Statistiques
 
-| Metric | Value |
+| Métrique | Valeur |
 |--------|-------|
-| **Cards with Multiple Versions** | 30+ |
-| **Total Version Records** | 90+ |
-| **Current Active Versions** | 81+ |
-| **Deprecated Versions** | 9 |
-| **Fully Disabled Cards** | 2 |
-| **Latest Version (Max)** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
+| **Cartes avec plusieurs versions** | 30+ |
+| **Total des enregistrements de version** | 90+ |
+| **Versions actives actuelles** | 81+ |
+| **Versions obsolètes** | 9 |
+| **Cartes entièrement désactivées** | 2 |
+| **Dernière version (max)** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
 
-### Version Range
-- **Minimum:** v1
-- **Maximum:** v5
-- **Average Versions per Card:** 3
+### Plage de versions
+- **Minimum :** v1
+- **Maximum :** v5
+- **Moyenne de versions par carte :** 3
 
 ---
 
-## Detailed Card Version Changes
+## Modifications détaillées des versions de cartes
 
-### 🔧 ACTION CARDS - External Integration & Execution
+### 🔧 CARTES D'ACTION - Intégration externe et exécution
 
 #### 1. CALL_API
-**Versions:** v1, v2 (Current: v2)
+**Versions :** v1, v2 (Actuelle : v2)
 
-📖 **Guide:** [Call External API Guide](../then/action/call-api-guide.md)
+📖 **Guide :** [Guide d'appel d'API externe](../then/action/call-api-guide.md)
 
-| Version | Translation | Status | Key Changes |
+| Version | Traduction | Statut | Changements clés |
 |---------|-------------|--------|-------------|
-| v1 | No | Active | Basic API call without translation keys |
-| v2 | Yes | ✅ Current | Added `trnsl_%call_api` for multi-language support |
+| v1 | Non | Active | Appel d'API basique sans clés de traduction |
+| v2 | Oui | ✅ Actuelle | Ajout de `trnsl_%call_api` pour la prise en charge multilingue |
 
-**What Changed:** Added internationalization (i18n) support with translation keys. Functionality remains identical.
+**Ce qui a changé :** Ajout de la prise en charge de l'internationalisation (i18n) avec des clés de traduction. La fonctionnalité reste identique.
 
-**Before (v1):**
+**Avant (v1) :**
 ```
 Call Api: [endpoint] with method: [method], params: [params], data: [data]
 ```
 
-**After (v2):**
+**Après (v2) :**
 ```
 trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [params], data: [data]
 ```
 
-**Recommendation:** Use v2 for all new workflows (includes language support)
-**Backward Compatibility:** ✅ v1 still works
+**Recommandation :** Utilisez v2 pour tous les nouveaux flux de travail (inclut la prise en charge linguistique)
+**Rétrocompatibilité :** ✅ v1 fonctionne toujours
 
 ---
 
 #### 2. HTTPS Request (HTTPS_REQUEST)
-**Versions:** v1, v2 (Current: v2)
+**Versions :** v1, v2 (Actuelle : v2)
 
-| Version | Translation | Status | Key Changes |
+| Version | Traduction | Statut | Changements clés |
 |---------|-------------|--------|-------------|
-| v1 | No | Active | Simple HTTP request |
-| v2 | Yes | ✅ Current | Added `trnsl_%send_https_request` translation keys |
+| v1 | Non | Active | Requête HTTP simple |
+| v2 | Oui | ✅ Actuelle | Ajout des clés de traduction `trnsl_%send_https_request` |
 
-**What Changed:** Added translation support. Core webhook/request functionality unchanged.
-**Recommendation:** Use v2 (multi-language support)
+**Ce qui a changé :** Ajout de la prise en charge de la traduction. La fonctionnalité principale de webhook/requête est inchangée.
+**Recommandation :** Utilisez v2 (prise en charge multilingue)
 
 ---
 
 #### 3. ACTION_RUN_DOCOPERATOR_SCRIPT ⚠️
-**Versions:** v2 (Current), v3, v4 (Deprecated & Disabled)
+**Versions :** v2 (Actuelle), v3, v4 (Obsolètes et désactivées)
 
-| Version | Translation | Status | Key Changes |
+| Version | Traduction | Statut | Changements clés |
 |---------|-------------|--------|-------------|
-| v2 | Yes | Active | Original DocOperator implementation |
-| v3 | Yes | Active | Added "Execute the prompt" parameter for additional control |
-| v4 | Yes | ❌ DEPRECATED & DISABLED | Removed "Execute" parameter (reverted) |
+| v2 | Oui | Active | Implémentation DocOperator originale |
+| v3 | Oui | Active | Ajout du paramètre « Execute the prompt » pour un contrôle supplémentaire |
+| v4 | Oui | ❌ OBSOLÈTE ET DÉSACTIVÉE | Suppression du paramètre « Execute » (annulé) |
 
-**Evolution Path:** v2 → v3 (added parameter) → v4 (reverted - not recommended)
+**Chemin d'évolution :** v2 → v3 (paramètre ajouté) → v4 (annulé - non recommandé)
 
-**What Changed:**
-- v2 → v3: Added optional execution control parameter for more flexibility
-- v3 → v4: Removed the parameter after further analysis (deprecated)
+**Ce qui a changé :**
+- v2 → v3 : Ajout d'un paramètre optionnel de contrôle d'exécution pour plus de flexibilité
+- v3 → v4 : Suppression du paramètre après analyse approfondie (obsolète)
 
-**Recommendation:** Use v3 for new workflows (latest active version with all features)
-**Migration:** If using v4, switch to v3 ⚠️
+**Recommandation :** Utilisez v3 pour les nouveaux flux de travail (dernière version active avec toutes les fonctionnalités)
+**Migration :** Si vous utilisez v4, passez à v3 ⚠️
 
 ---
 
 #### 4. ACTION_TASK_FOR_GROUP
-**Versions:** v2, v3 (Deprecated), v4 (Current)
+**Versions :** v2, v3 (Obsolète), v4 (Actuelle)
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+📖 **Guide :** [Guide d'assignation de tâches](../then/task/task-assignment-guide.md)
 
-| Version | Changes | Status | Type Parameter |
+| Version | Changements | Statut | Paramètre de type |
 |---------|---------|--------|-----------------|
-| v2 | Original implementation | Active | "Task" (fixed) |
-| v3 | + Decision tree support | ❌ DEPRECATED | "Task" (fixed) |
-| v4 | - Decision tree, + Generic type | ✅ Current | Generic type (flexible) |
+| v2 | Implémentation originale | Active | « Task » (fixe) |
+| v3 | + Prise en charge de l'arbre de décision | ❌ OBSOLÈTE | « Task » (fixe) |
+| v4 | - Arbre de décision, + Type générique | ✅ Actuelle | Type générique (flexible) |
 
-**Evolution:** v2 → v3 (decision tree experiment) → v4 (generic types, decision tree removed)
+**Évolution :** v2 → v3 (expérimentation de l'arbre de décision) → v4 (types génériques, arbre de décision supprimé)
 
-**v2 → v3 Change (Decision Tree Experiment):**
+**Changement v2 → v3 (expérimentation de l'arbre de décision) :**
 ```
 Before: "Create a new Task with the title: [param] ... and assign to group [param]"
 After:  "Create a new Task with the title: [param] ... and assign to group [param].
          Use decision tree, if available: [param]"
 ```
 
-**v3 → v4 Change (Generic Types + Decision Tree Removal):**
+**Changement v3 → v4 (types génériques + suppression de l'arbre de décision) :**
 ```
 Before (v3): "Create a new Task with the title: [param] ... "
 After (v4):  "Create a new [param] with the title: [param] ... "
 ```
 
-**What Changed:**
-- v2 → v3: Added `decision tree, if available: [param]` parameter
-- v3 → v4:
-  - ❌ Removed decision tree parameter
-  - ✅ Changed "Task" → generic `[param]` (supports Task, Ticket, Issue, etc.)
-  - Added translation key `trnsl_%task_for_group_v4`
+**Ce qui a changé :**
+- v2 → v3 : Ajout du paramètre `decision tree, if available: [param]`
+- v3 → v4 :
+  - ❌ Suppression du paramètre d'arbre de décision
+  - ✅ Changement de « Task » → `[param]` générique (prend en charge Task, Ticket, Issue, etc.)
+  - Ajout de la clé de traduction `trnsl_%task_for_group_v4`
 
-**Why:** v3 decision tree approach was experimental. v4 provides better flexibility with generic work item types.
-**Recommendation:** Use v4 (current, most flexible)
+**Pourquoi :** L'approche de l'arbre de décision en v3 était expérimentale. v4 offre une meilleure flexibilité avec des types d'éléments de travail génériques.
+**Recommandation :** Utilisez v4 (actuelle, la plus flexible)
 
 ---
 
 #### 5. ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
-**Versions:** v2, v3 (Current)
+**Versions :** v2, v3 (Actuelle)
 
-| Version | Task Type | Status | Key Difference |
+| Version | Type de tâche | Statut | Différence clé |
 |---------|-----------|--------|-----------------|
-| v2 | "task" (fixed) | Active | Original version |
-| v3 | Generic type | ✅ Current | Changed to flexible `[param]` |
+| v2 | « task » (fixe) | Active | Version originale |
+| v3 | Type générique | ✅ Actuelle | Passage à `[param]` flexible |
 
-**What Changed:** v2 → v3: "Create a new task" → "Create a new [param]" (supports any work item type)
-**Recommendation:** Use v3
+**Ce qui a changé :** v2 → v3 : « Create a new task » → « Create a new [param] » (prend en charge tout type d'élément de travail)
+**Recommandation :** Utilisez v3
 
 ---
 
 #### 6. RUN_WORKFLOW
-**Versions:** v1, v2 (Current)
+**Versions :** v1, v2 (Actuelle)
 
-**What Changed:** v1 → v2: Added `trnsl_%run_workflow` translation keys
-**Recommendation:** Use v2
+**Ce qui a changé :** v1 → v2 : Ajout des clés de traduction `trnsl_%run_workflow`
+**Recommandation :** Utilisez v2
 
 ---
 
-### 📊 PO COMPARISON & VALIDATION CARDS
+### 📊 CARTES DE COMPARAISON ET DE VALIDATION DE PO
 
-#### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Most Evolved - 5 Versions)
-**Versions:** v2, v3, v4, v5 (Current)
+#### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (La plus évoluée - 5 versions)
+**Versions :** v2, v3, v4, v5 (Actuelle)
 
-📖 **Guide:** [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Guide :** [Guide complet du rapprochement de PO](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
 
-| Version | Changes | Status | Tolerance | Comparison |
+| Version | Changements | Statut | Tolérance | Comparaison |
 |---------|---------|--------|-----------|------------|
-| v2 | Basic price comparison | Active | ❌ No | Basic |
-| v3 | Same as v2 | Active | ❌ No | Basic |
-| v4 | + Compare mode parameter | Active | ❌ No | ✅ Yes |
-| v5 | + Tolerance parameters | ✅ Current | ✅ Yes (amount + unit) | ✅ Yes |
+| v2 | Comparaison de prix basique | Active | ❌ Non | Basique |
+| v3 | Identique à v2 | Active | ❌ Non | Basique |
+| v4 | + Paramètre de mode de comparaison | Active | ❌ Non | ✅ Oui |
+| v5 | + Paramètres de tolérance | ✅ Actuelle | ✅ Oui (montant + unité) | ✅ Oui |
 
-**Evolution Path:** v2 → v3 (no change) → v4 (comparison modes) → v5 (tolerance thresholds)
+**Chemin d'évolution :** v2 → v3 (aucun changement) → v4 (modes de comparaison) → v5 (seuils de tolérance)
 
-**v2 → v3:** No functional change (same translation key)
+**v2 → v3 :** Aucun changement fonctionnel (même clé de traduction)
 
-**v3 → v4 Change (Comparison Mode Added):**
+**Changement v3 → v4 (ajout du mode de comparaison) :**
 ```
 Before: "[document] unit price is [operator] to purchase order"
 After:  "[document] unit price is [operator] to purchase order. Compare as [mode]"
 ```
 
-**v4 → v5 Change (Tolerance Parameters Added):**
+**Changement v4 → v5 (ajout des paramètres de tolérance) :**
 ```
 Before: "[document] unit price is [operator] to purchase order. Compare as [mode]"
 After:  "[document] unit price is [operator] to purchase order, with tolerance of [amount] [unit].
          Compare as [mode]"
 ```
 
-**What Changed:**
-- **v2 → v3:** No functional change
-- **v3 → v4:** Added `Compare as [param]` - Support different comparison operators
-- **v4 → v5:** Added tolerance parameters:
+**Ce qui a changé :**
+- **v2 → v3 :** Aucun changement fonctionnel
+- **v3 → v4 :** Ajout de `Compare as [param]` - Prise en charge de différents opérateurs de comparaison
+- **v4 → v5 :** Ajout des paramètres de tolérance :
   - `with tolerance of [amount] [unit]`
-  - Example: "with tolerance of 2 %" or "with tolerance of 100 EUR"
-  - Supports: %, EUR, $, and other currencies
+  - Exemple : « with tolerance of 2 % » ou « with tolerance of 100 EUR »
+  - Prend en charge : %, EUR, $ et autres devises
 
-**Use Cases:**
-- v2/v3: Strict matching (exact prices only)
-- v4: Different comparison methods
-- v5: Flexible variance acceptance (e.g., accept 2% price differences) ✅ RECOMMENDED
+**Cas d'usage :**
+- v2/v3 : Correspondance stricte (prix exacts uniquement)
+- v4 : Différentes méthodes de comparaison
+- v5 : Acceptation flexible des écarts (par ex. accepter des différences de prix de 2 %) ✅ RECOMMANDÉE
 
-**Recommendation:** Use v5 for modern PO matching workflows
+**Recommandation :** Utilisez v5 pour les flux de travail modernes de rapprochement de PO
 
 ---
 
 #### 2. CONDITION_OC_TO_PO_ITEMS
-**Versions:** v1 (Deprecated), v2, v3, v4 (Current)
+**Versions :** v1 (Obsolète), v2, v3, v4 (Actuelle)
 
-| Version | Changes | Status | Compare Feature |
+| Version | Changements | Statut | Fonction de comparaison |
 |---------|---------|--------|-----------------|
-| v1 | No translation, no method | ❌ DEPRECATED | Basic |
-| v2 | + Translation keys, + method | Active | Basic method |
-| v3 | Same as v2 | Active | Basic method |
-| v4 | + Compare mode parameters | ✅ Current | ✅ Flexible |
+| v1 | Pas de traduction, pas de méthode | ❌ OBSOLÈTE | Basique |
+| v2 | + Clés de traduction, + méthode | Active | Méthode basique |
+| v3 | Identique à v2 | Active | Méthode basique |
+| v4 | + Paramètres de mode de comparaison | ✅ Actuelle | ✅ Flexible |
 
-**What Changed:**
-- **v1 → v2:** Added `trnsl_%in_order_confirmations_matches_purchase_order` + comparison method parameter
-- **v2 → v3:** No change
-- **v3 → v4:** Added `Compare as [param1] [param2]` for flexible comparison modes
+**Ce qui a changé :**
+- **v1 → v2 :** Ajout de `trnsl_%in_order_confirmations_matches_purchase_order` + paramètre de méthode de comparaison
+- **v2 → v3 :** Aucun changement
+- **v3 → v4 :** Ajout de `Compare as [param1] [param2]` pour des modes de comparaison flexibles
 
-**Recommendation:** Use v4 (avoid v1 which is deprecated)
+**Recommandation :** Utilisez v4 (évitez v1 qui est obsolète)
 
 ---
 
 #### 3. CONDITION_DATES_OPERATOR_OC_LINE_ITEMS
-**Versions:** v2, v3 (Current)
+**Versions :** v2, v3 (Actuelle)
 
-| Version | Tolerance Days | Accepted Tolerance Days | Status |
+| Version | Jours de tolérance | Jours de tolérance acceptés | Statut |
 |---------|-----------------|------------------------|--------|
-| v2 | ❌ No | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Yes | ✅ Current |
+| v2 | ❌ Non | ❌ Non | Active |
+| v3 | ✅ Oui | ✅ Oui | ✅ Actuelle |
 
-**What Changed:** v2 → v3: Added tolerance parameters:
+**Ce qui a changé :** v2 → v3 : Ajout des paramètres de tolérance :
 - `with [param] days as tolerance`
 - `and [param] as accepted tolerance days`
 
-**Example:** Accept delivery dates within 5 days of promised date
-**Recommendation:** Use v3
+**Exemple :** Accepter les dates de livraison dans un délai de 5 jours par rapport à la date promise
+**Recommandation :** Utilisez v3
 
 ---
 
 #### 4. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
-**Versions:** v2, v3, v4 (Current)
+**Versions :** v2, v3, v4 (Actuelle)
 
-| Version | Comparison Mode | Status |
+| Version | Mode de comparaison | Statut |
 |---------|-----------------|--------|
-| v2 | Basic | Active |
-| v3 | Basic (no change) | Active |
-| v4 | ✅ Flexible mode selection | ✅ Current |
+| v2 | Basique | Active |
+| v3 | Basique (aucun changement) | Active |
+| v4 | ✅ Sélection de mode flexible | ✅ Actuelle |
 
-**What Changed:** v3 → v4: Added `compare [param]` for different comparison approaches
-**Recommendation:** Use v4
+**Ce qui a changé :** v3 → v4 : Ajout de `compare [param]` pour différentes approches de comparaison
+**Recommandation :** Utilisez v4
 
 ---
 
 #### 5. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE
-**Versions:** v2, v3, v4 (Current)
+**Versions :** v2, v3, v4 (Actuelle)
 
-| Version | Comparison Mode | Status |
+| Version | Mode de comparaison | Statut |
 |---------|-----------------|--------|
 | v2 | Standard | Active |
-| v3 | Standard (no change) | Active |
-| v4 | ✅ Flexible | ✅ Current |
+| v3 | Standard (aucun changement) | Active |
+| v4 | ✅ Flexible | ✅ Actuelle |
 
-**What Changed:** v3 → v4: Added `compare [param]` parameter
-**Recommendation:** Use v4
+**Ce qui a changé :** v3 → v4 : Ajout du paramètre `compare [param]`
+**Recommandation :** Utilisez v4
 
 ---
 
 #### 6. CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
-**Versions:** v2, v3 (Current)
+**Versions :** v2, v3 (Actuelle)
 
-| Version | Delivery Type | Master Data Table | Status |
+| Version | Type de livraison | Table de données de référence | Statut |
 |---------|---------------|-------------------|--------|
-| v2 | "Confirmed" (fixed) | Fixed reference | Active |
-| v3 | [Configurable param] | Dynamic [param] | ✅ Current |
+| v2 | « Confirmed » (fixe) | Référence fixe | Active |
+| v3 | [Paramètre configurable] | `[param]` dynamique | ✅ Actuelle |
 
-**What Changed:** v2 → v3:
-- Changed "Confirmed delivery" → `[param] delivery` (flexible delivery type)
-- Changed fixed table reference → `stored in [param]` (dynamic table selection)
+**Ce qui a changé :** v2 → v3 :
+- Changement de « Confirmed delivery » → `[param] delivery` (type de livraison flexible)
+- Changement de la référence de table fixe → `stored in [param]` (sélection de table dynamique)
 
-**Flexibility:** v3 allows different delivery date types and supplier tables
-**Recommendation:** Use v3
+**Flexibilité :** v3 permet différents types de dates de livraison et tables de fournisseurs
+**Recommandation :** Utilisez v3
 
 ---
 
 #### 7. CONDIITON_UNIT_OF_MEASURE_EQUAL
-**Versions:** v2, v3 (Current)
+**Versions :** v2, v3 (Actuelle)
 
-| Version | Supplier Table Reference | Status |
+| Version | Référence de table fournisseur | Statut |
 |---------|--------------------------|--------|
-| v2 | "supplier item price table" (fixed) | Active |
-| v3 | [Dynamic param] | ✅ Current |
+| v2 | « supplier item price table » (fixe) | Active |
+| v3 | `[param]` dynamique | ✅ Actuelle |
 
-**What Changed:** v2 → v3: Fixed table reference → `stored in [param]` (allows dynamic table selection)
-**Recommendation:** Use v3
+**Ce qui a changé :** v2 → v3 : Référence de table fixe → `stored in [param]` (permet la sélection de table dynamique)
+**Recommandation :** Utilisez v3
 
 ---
 
-### 👥 ASSIGNMENT & ROUTING CARDS
+### 👥 CARTES D'ASSIGNATION ET DE ROUTAGE
 
 #### 1. DOC_USER_ASSIGN
-**Versions:** v1, v2, v3 (Deprecated)
+**Versions :** v1, v2, v3 (Obsolète)
 
-| Version | Translation | Decision Tree | Status |
+| Version | Traduction | Arbre de décision | Statut |
 |---------|-------------|---------------|--------|
-| v1 | No | ❌ No | Active |
-| v2 | Yes | ❌ No | ✅ Current |
-| v3 | Yes | ✅ Yes | ❌ DEPRECATED |
+| v1 | Non | ❌ Non | Active |
+| v2 | Oui | ❌ Non | ✅ Actuelle |
+| v3 | Oui | ✅ Oui | ❌ OBSOLÈTE |
 
-**Evolution:** v1 (no i18n) → v2 (with i18n) → v3 (+ decision tree experiment, now deprecated)
+**Évolution :** v1 (sans i18n) → v2 (avec i18n) → v3 (+ expérimentation de l'arbre de décision, maintenant obsolète)
 
-**What Changed:**
-- v1 → v2: Added translation keys
-- v2 → v3: Added decision tree support (experimental, deprecated)
+**Ce qui a changé :**
+- v1 → v2 : Ajout des clés de traduction
+- v2 → v3 : Ajout de la prise en charge de l'arbre de décision (expérimentale, obsolète)
 
-**Recommendation:** Use v2 (stable with i18n support)
+**Recommandation :** Utilisez v2 (stable avec prise en charge i18n)
 
 ---
 
 #### 2. DOC_GROUP_ASSIGN
-**Versions:** v2, v3 (Deprecated)
+**Versions :** v2, v3 (Obsolète)
 
-| Version | Decision Tree | Status |
+| Version | Arbre de décision | Statut |
 |---------|---------------|--------|
-| v2 | ❌ No | ✅ Current |
-| v3 | ✅ Yes | ❌ DEPRECATED |
+| v2 | ❌ Non | ✅ Actuelle |
+| v3 | ✅ Oui | ❌ OBSOLÈTE |
 
-**What Changed:** v2 → v3: Added `Use decision tree, if available [param]` (later deprecated)
-**Recommendation:** Use v2
+**Ce qui a changé :** v2 → v3 : Ajout de `Use decision tree, if available [param]` (ultérieurement rendu obsolète)
+**Recommandation :** Utilisez v2
 
 ---
 
 #### 3. OC_ASSIGN_DOC
-**Versions:** v1, v2 (Current)
+**Versions :** v1, v2 (Actuelle)
 
-**What Changed:** v1 → v2: Added `trnsl_%oc_assign_doc` translation keys
-**Recommendation:** Use v2
+**Ce qui a changé :** v1 → v2 : Ajout des clés de traduction `trnsl_%oc_assign_doc`
+**Recommandation :** Utilisez v2
 
 ---
 
-### 📋 TASK MANAGEMENT CARDS
+### 📋 CARTES DE GESTION DES TÂCHES
 
-#### 1. tasks_create ⭐ (Most Evolved Task Card - 4 Versions)
-**Versions:** v1 (Deprecated), v2 (Deprecated), v3 (Deprecated), v4 (Current)
+#### 1. tasks_create ⭐ (Carte de tâche la plus évoluée - 4 versions)
+**Versions :** v1 (Obsolète), v2 (Obsolète), v3 (Obsolète), v4 (Actuelle)
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Guide :** [Guide d'assignation de tâches](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
 
-| Version | Translation | Decision Tree | Work Item Type | Status |
+| Version | Traduction | Arbre de décision | Type d'élément de travail | Statut |
 |---------|-------------|---------------|-----------------|--------|
-| v1 | No | No | "Task" (fixed) | ❌ DEPRECATED |
-| v2 | Yes | No | "Task" (fixed) | ❌ DEPRECATED |
-| v3 | Yes | Yes | "Task" (fixed) | ❌ DEPRECATED |
-| v4 | Yes | No | [Generic param] | ✅ Current |
+| v1 | Non | Non | « Task » (fixe) | ❌ OBSOLÈTE |
+| v2 | Oui | Non | « Task » (fixe) | ❌ OBSOLÈTE |
+| v3 | Oui | Oui | « Task » (fixe) | ❌ OBSOLÈTE |
+| v4 | Oui | Non | `[param]` générique | ✅ Actuelle |
 
-**Evolution Timeline:**
+**Chronologie de l'évolution :**
 ```
 v1 (original)
   ↓ (add translation)
@@ -371,292 +371,292 @@ v3 (+ decision tree, BUT deprecated after this)
 v4 (CURRENT - flexible work items)
 ```
 
-**v1 → v2 Change (Translation Keys Added):**
+**Changement v1 → v2 (ajout des clés de traduction) :**
 ```
 Before: "Create a new Task with the title: [param] ... and assign to user [param]"
 After:  "trnsl_%tasks_create trnsl_be_% Create a new Task with the title: [param] ... and assign to user [param]"
 ```
 
-**v2 → v3 Change (Decision Tree Experiment):**
+**Changement v2 → v3 (expérimentation de l'arbre de décision) :**
 ```
 Before: "Create a new Task with the title: [param] ... and assign to user [param]"
 After:  "Create a new Task with the title: [param] ... and assign it to the user [param].
          Use decision tree, if available: [param]"
 ```
 
-**v3 → v4 Change (Generic Types + Decision Tree Removal):**
+**Changement v3 → v4 (types génériques + suppression de l'arbre de décision) :**
 ```
 Before: "Create a new Task with the title: [param] ... "
 After:  "Create a new [param] with the title: [param] ... "
 ```
 
-**What Changed:**
-- **v1 → v2:** Added `trnsl_%tasks_create` translation keys
-- **v2 → v3:**
-  - Added decision tree support: `Use decision tree, if available: [param]`
-  - Changed "assign to user" → "assign it to the user"
-- **v3 → v4:**
-  - ❌ Removed decision tree parameter
-  - ✅ Changed "Task" → generic `[param]` (supports Task, Ticket, Issue, etc.)
-  - Updated translation key to `trnsl_%tasks_create_v4`
+**Ce qui a changé :**
+- **v1 → v2 :** Ajout des clés de traduction `trnsl_%tasks_create`
+- **v2 → v3 :**
+  - Ajout de la prise en charge de l'arbre de décision : `Use decision tree, if available: [param]`
+  - Changement de « assign to user » → « assign it to the user »
+- **v3 → v4 :**
+  - ❌ Suppression du paramètre d'arbre de décision
+  - ✅ Changement de « Task » → `[param]` générique (prend en charge Task, Ticket, Issue, etc.)
+  - Mise à jour de la clé de traduction en `trnsl_%tasks_create_v4`
 
-**Decision Tree Note:** v3 used decision trees to dynamically assign tasks. This approach was experimental and deprecated in v4 in favor of direct parameter-based work item type selection.
+**Note sur l'arbre de décision :** v3 utilisait des arbres de décision pour assigner dynamiquement les tâches. Cette approche était expérimentale et a été rendue obsolète en v4 au profit d'une sélection directe du type d'élément de travail basée sur des paramètres.
 
-**Recommendation:** Use v4 exclusively for new workflows
-**Migration:** If using v1, v2, or v3, upgrade to v4 ✅
+**Recommandation :** Utilisez exclusivement v4 pour les nouveaux flux de travail
+**Migration :** Si vous utilisez v1, v2 ou v3, passez à v4 ✅
 
 ---
 
 #### 2. OC_TASK
-**Versions:** v1, v2 (Current)
+**Versions :** v1, v2 (Actuelle)
 
-**What Changed:** v1 → v2: Added `trnsl_%oc_task` translation keys
-**Recommendation:** Use v2
+**Ce qui a changé :** v1 → v2 : Ajout des clés de traduction `trnsl_%oc_task`
+**Recommandation :** Utilisez v2
 
 ---
 
 #### 3. ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
-**Versions:** v1, v3 (Current - v2 Skipped)
+**Versions :** v1, v3 (Actuelle - v2 ignorée)
 
-| Version | Work Item Type | Status |
+| Version | Type d'élément de travail | Statut |
 |---------|-----------------|--------|
-| v1 | "Task" (fixed) | Active |
-| v3 | [Generic param] | ✅ Current |
+| v1 | « Task » (fixe) | Active |
+| v3 | `[param]` générique | ✅ Actuelle |
 
-**What Changed:** v1 → v3: Generic type evolution (v2 was skipped in production)
-**Recommendation:** Use v3
+**Ce qui a changé :** v1 → v3 : Évolution vers un type générique (v2 a été ignorée en production)
+**Recommandation :** Utilisez v3
 
 ---
 
 #### 4. ACTION_DECISION_TREE_CREATE_TASKS
-**Versions:** v2, v3 (Current)
+**Versions :** v2, v3 (Actuelle)
 
-| Version | Assignment Text | Status |
+| Version | Texte d'assignation | Statut |
 |---------|-----------------|--------|
-| v2 | "Assign task with title" | Active |
-| v3 | "Assign [generic] with title" | ✅ Current |
+| v2 | « Assign task with title » | Active |
+| v3 | « Assign [generic] with title » | ✅ Actuelle |
 
-**What Changed:** v2 → v3:
-- Changed "Assign task" → "Assign [generic param]"
-- Changed "return of decision" → "return of decision table" (clearer terminology)
+**Ce qui a changé :** v2 → v3 :
+- Changement de « Assign task » → « Assign [generic param] »
+- Changement de « return of decision » → « return of decision table » (terminologie plus claire)
 
-**Recommendation:** Use v3
+**Recommandation :** Utilisez v3
 
 ---
 
-### 🔄 DOCUMENT CONTROL CARDS
+### 🔄 CARTES DE CONTRÔLE DES DOCUMENTS
 
 #### APPROVE
-**Versions:** v1, v2 (Current)
-**Change:** Added `trnsl_%approve_doc` translation keys
-**Recommendation:** Use v2
+**Versions :** v1, v2 (Actuelle)
+**Changement :** Ajout des clés de traduction `trnsl_%approve_doc`
+**Recommandation :** Utilisez v2
 
 ---
 
 #### REJECT
-**Versions:** v1, v2 (Current)
-**Change:** Added `trnsl_%reject_doc` translation keys
-**Recommendation:** Use v2
+**Versions :** v1, v2 (Actuelle)
+**Changement :** Ajout des clés de traduction `trnsl_%reject_doc`
+**Recommandation :** Utilisez v2
 
 ---
 
-#### STAUS_CHANGE (Status Change)
-**Versions:** v1, v2, v3 (Current)
+#### STAUS_CHANGE (Changement de statut)
+**Versions :** v1, v2, v3 (Actuelle)
 
-| Version | Workflow Trigger | Status |
+| Version | Déclencheur de flux de travail | Statut |
 |---------|-----------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Current |
+| v1 | ❌ Non | Active |
+| v2 | ❌ Non | Active |
+| v3 | ✅ Oui | ✅ Actuelle |
 
-**What Changed:** v2 → v3: Added `trigger Workflows [param]` - Auto-trigger workflows on status change
-**Recommendation:** Use v3
+**Ce qui a changé :** v2 → v3 : Ajout de `trigger Workflows [param]` - Déclenchement automatique des flux de travail lors d'un changement de statut
+**Recommandation :** Utilisez v3
 
 ---
 
 #### EXPORT
-**Versions:** v1, v2, v3 (Current)
+**Versions :** v1, v2, v3 (Actuelle)
 
-| Version | Validation | Status |
+| Version | Validation | Statut |
 |---------|------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Current |
+| v1 | ❌ Non | Active |
+| v2 | ❌ Non | Active |
+| v3 | ✅ Oui | ✅ Actuelle |
 
-**What Changed:** v2 → v3: Added `Start Export with Validation: [param]`
-**Recommendation:** Use v3
+**Ce qui a changé :** v2 → v3 : Ajout de `Start Export with Validation: [param]`
+**Recommandation :** Utilisez v3
 
 ---
 
-### 🧮 DATA MANIPULATION CARDS
+### 🧮 CARTES DE MANIPULATION DES DONNÉES
 
 #### CALC_COLUMNS, CALC_COLUMNS_REGEX, EDIT_COLUMN, AI_CALC_MTZ_ETZ
-**Pattern:** v1 → v2 (translation keys added)
-**Recommendation:** Use v2 for all
+**Modèle :** v1 → v2 (clés de traduction ajoutées)
+**Recommandation :** Utilisez v2 pour toutes
 
 ---
 
 #### CONDITION_DECISION_TREE_DATA
-**Versions:** v2, v3 (Current)
+**Versions :** v2, v3 (Actuelle)
 
-| Version | Data Usage | Status |
+| Version | Utilisation des données | Statut |
 |---------|------------|--------|
-| v2 | "Use return data in later cards" | Active |
-| v3 | "[Explicit param] returned data for use in subsequent cards" | ✅ Current |
+| v2 | « Use return data in later cards » | Active |
+| v3 | « [Explicit param] returned data for use in subsequent cards » | ✅ Actuelle |
 
-**What Changed:** v2 → v3: More explicit control over decision tree data extraction
-**Recommendation:** Use v3
+**Ce qui a changé :** v2 → v3 : Contrôle plus explicite de l'extraction des données de l'arbre de décision
+**Recommandation :** Utilisez v3
 
 ---
 
-### ❌ DISABLED CARDS (Do Not Use)
+### ❌ CARTES DÉSACTIVÉES (Ne pas utiliser)
 
 #### DOC_SUBORG_CHANGE
-**Versions:** v1, v2 (both disabled)
-**Status:** No longer supported
-**Alternative:** Use document assignment features
+**Versions :** v1, v2 (toutes deux désactivées)
+**Statut :** Plus prise en charge
+**Alternative :** Utilisez les fonctionnalités d'assignation de documents
 
 ---
 
 #### RUN_SCRIPT
-**Versions:** v2, v3 (both disabled)
-**Status:** Replaced by ACTION_RUN_DOCOPERATOR_SCRIPT
-**Alternative:** Use ACTION_RUN_DOCOPERATOR_SCRIPT v3
+**Versions :** v2, v3 (toutes deux désactivées)
+**Statut :** Remplacée par ACTION_RUN_DOCOPERATOR_SCRIPT
+**Alternative :** Utilisez ACTION_RUN_DOCOPERATOR_SCRIPT v3
 
 ---
 
-## 🎯 Common Version Patterns
+## 🎯 Modèles de versionnage courants
 
-### Pattern 1: Translation Key Adoption (v1 → v2)
-**Affected:** 15+ cards
+### Modèle 1 : Adoption des clés de traduction (v1 → v2)
+**Concernées :** 15+ cartes
 
-**Change:** Added `trnsl_%[card_name]` translation keys
+**Changement :** Ajout des clés de traduction `trnsl_%[card_name]`
 ```
 v1: Plain text (no i18n)
 v2: trnsl_%[key] trnsl_be_% Plain text (with i18n)
 ```
 
-**Cards:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS, and more
-**Impact:** Enables multi-language support
+**Cartes :** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS, et plus
+**Impact :** Active la prise en charge multilingue
 
 ---
 
-### Pattern 2: Decision Tree Integration (v2 → v3) - DEPRECATED
-**Affected:** 5 cards (ACTION_TASK_FOR_GROUP, tasks_create, DOC_USER_ASSIGN, DOC_GROUP_ASSIGN, ACTION_DECISION_TREE_CREATE_TASKS)
+### Modèle 2 : Intégration de l'arbre de décision (v2 → v3) - OBSOLÈTE
+**Concernées :** 5 cartes (ACTION_TASK_FOR_GROUP, tasks_create, DOC_USER_ASSIGN, DOC_GROUP_ASSIGN, ACTION_DECISION_TREE_CREATE_TASKS)
 
-**Change:** Added optional decision tree parameter
+**Changement :** Ajout d'un paramètre optionnel d'arbre de décision
 ```
 v2: Standard task/assignment logic
 v3: + "Use decision tree, if available: [param]"
 ```
 
-**Status:** ❌ Mostly deprecated (except ACTION_DECISION_TREE_CREATE_TASKS)
-**Reason:** Simpler direct-parameter approach preferred
+**Statut :** ❌ Majoritairement obsolète (sauf ACTION_DECISION_TREE_CREATE_TASKS)
+**Raison :** Approche directe par paramètre, plus simple, préférée
 
 ---
 
-### Pattern 3: Generic Type Evolution (v3 → v4)
-**Affected:** 4 cards (tasks_create, ACTION_TASK_FOR_GROUP, ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP, ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK)
+### Modèle 3 : Évolution vers le type générique (v3 → v4)
+**Concernées :** 4 cartes (tasks_create, ACTION_TASK_FOR_GROUP, ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP, ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK)
 
-**Change:** "Task" → generic type parameter
+**Changement :** « Task » → paramètre de type générique
 ```
 v3: Create a new Task with title: [param]
 v4: Create a new [param] with title: [param]
 ```
 
-**Impact:** Supports Task, Ticket, Issue, and other work item types
-**Benefit:** Greater flexibility and reusability
+**Impact :** Prend en charge Task, Ticket, Issue et autres types d'éléments de travail
+**Avantage :** Plus grande flexibilité et réutilisabilité
 
 ---
 
-### Pattern 4: Tolerance Parameters (PO Cards)
-**Affected:** 6 cards (CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DATES_OPERATOR_OC_LINE_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY, etc.)
+### Modèle 4 : Paramètres de tolérance (cartes PO)
+**Concernées :** 6 cartes (CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DATES_OPERATOR_OC_LINE_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY, etc.)
 
-**Change:** Added tolerance/variance support
+**Changement :** Ajout de la prise en charge de la tolérance/des écarts
 ```
 v2: Value [operator] Reference Value
 v3+: Value [operator] Reference with tolerance [amount] [unit]
 ```
 
-**Examples:**
-- "with tolerance of 2 %"
-- "with tolerance of 100 EUR"
-- "with 5 days as tolerance"
+**Exemples :**
+- « with tolerance of 2 % »
+- « with tolerance of 100 EUR »
+- « with 5 days as tolerance »
 
-**Impact:** Realistic matching criteria (not all values need to match exactly)
+**Impact :** Critères de correspondance réalistes (toutes les valeurs ne doivent pas correspondre exactement)
 
 ---
 
-### Pattern 5: Comparison Mode Parameters
-**Affected:** 3 cards (COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE, CONDITION_OC_TO_PO_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY)
+### Modèle 5 : Paramètres de mode de comparaison
+**Concernées :** 3 cartes (COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE, CONDITION_OC_TO_PO_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY)
 
-**Change:** Added flexible comparison method selection
+**Changement :** Ajout d'une sélection flexible de la méthode de comparaison
 ```
 v3: Standard comparison
 v4: + "Compare as [param1] [param2]"
 ```
 
-**Impact:** Support different comparison algorithms
+**Impact :** Prise en charge de différents algorithmes de comparaison
 
 ---
 
-## ✅ Version Recommendations
+## ✅ Recommandations de version
 
-### For New Workflows
-**Rule:** Always use the highest enabled version number
-- Provides latest features
-- Best support
-- Most tested
-- Recommended approach
+### Pour les nouveaux flux de travail
+**Règle :** Utilisez toujours le numéro de version activé le plus élevé
+- Fournit les dernières fonctionnalités
+- Meilleure prise en charge
+- Le plus testé
+- Approche recommandée
 
-### For Existing Workflows
-**Safe Approach:**
-- Continue using current version if it works
-- Plan gradual migration to newer versions
-- Test upgrades in sandbox first
+### Pour les flux de travail existants
+**Approche sûre :**
+- Continuez à utiliser la version actuelle si elle fonctionne
+- Planifiez une migration progressive vers les versions plus récentes
+- Testez d'abord les mises à niveau en environnement de test (sandbox)
 
-### Migration Priority
+### Priorité de migration
 
-| Priority | Cards | Action |
+| Priorité | Cartes | Action |
 |----------|-------|--------|
-| **High** | tasks_create v1/v2/v3, ACTION_TASK_FOR_GROUP v3, CONDITION_DOC_TO_PO_UNIT_PRICE v2/v3/v4 | Upgrade to current version |
-| **Medium** | Other v1/v2 translation upgrades, PO cards v2/v3 | Consider upgrading |
-| **Low** | Cards with no functional changes | Optional |
+| **Haute** | tasks_create v1/v2/v3, ACTION_TASK_FOR_GROUP v3, CONDITION_DOC_TO_PO_UNIT_PRICE v2/v3/v4 | Mettre à niveau vers la version actuelle |
+| **Moyenne** | Autres mises à niveau de traduction v1/v2, cartes PO v2/v3 | Envisager la mise à niveau |
+| **Basse** | Cartes sans changement fonctionnel | Optionnel |
 
 ---
 
-## ⚠️ Deprecated Versions - Do Not Use
+## ⚠️ Versions obsolètes - Ne pas utiliser
 
-| Card | Version | Reason | Use Instead |
+| Carte | Version | Raison | Utiliser à la place |
 |------|---------|--------|-------------|
-| tasks_create | v1, v2, v3 | Very old, or decision tree deprecated | v4 |
-| ACTION_TASK_FOR_GROUP | v3 | Decision tree approach deprecated | v4 |
-| DOC_USER_ASSIGN | v3 | Decision tree approach deprecated | v2 |
-| DOC_GROUP_ASSIGN | v3 | Decision tree approach deprecated | v2 |
-| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Very old | v2 |
-| CONDITION_OC_TO_PO_ITEMS | v1 | Very old | v4 |
-| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Features reverted | v3 |
+| tasks_create | v1, v2, v3 | Très anciennes, ou arbre de décision obsolète | v4 |
+| ACTION_TASK_FOR_GROUP | v3 | Approche de l'arbre de décision obsolète | v4 |
+| DOC_USER_ASSIGN | v3 | Approche de l'arbre de décision obsolète | v2 |
+| DOC_GROUP_ASSIGN | v3 | Approche de l'arbre de décision obsolète | v2 |
+| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Très ancienne | v2 |
+| CONDITION_OC_TO_PO_ITEMS | v1 | Très ancienne | v4 |
+| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Fonctionnalités annulées | v3 |
 
 ---
 
-## 🔄 Fully Disabled Cards - Cannot Use
+## 🔄 Cartes entièrement désactivées - Inutilisables
 
-| Card | Versions | Reason | Alternative |
+| Carte | Versions | Raison | Alternative |
 |------|----------|--------|-------------|
-| DOC_SUBORG_CHANGE | v1, v2 | No longer supported | Document assignment cards |
-| RUN_SCRIPT | v2, v3 | Replaced by DocOperator | ACTION_RUN_DOCOPERATOR_SCRIPT v3 |
+| DOC_SUBORG_CHANGE | v1, v2 | Plus prise en charge | Cartes d'assignation de documents |
+| RUN_SCRIPT | v2, v3 | Remplacée par DocOperator | ACTION_RUN_DOCOPERATOR_SCRIPT v3 |
 
 ---
 
-## Related Documentation
+## Documentation associée
 
-- 📖 [Card Versioning Reference](../changelog/card-versioning.md) - Detailed version information
-- 📚 [Workflow Guides](../) - Step-by-step card usage
-- 🔄 [Card Version Database](../docs/card_version.md) - Complete version history
-- 📋 [Workflow Logs](../workflow-logs/) - Execution and debugging
+- 📖 [Référence du versionnage des cartes](../changelog/card-versioning.md) - Informations détaillées sur les versions
+- 📚 [Guides de flux de travail](../) - Utilisation des cartes étape par étape
+- 🔄 [Base de données des versions de cartes](../docs/card_version.md) - Historique complet des versions
+- 📋 [Journaux de flux de travail](../workflow-logs/) - Exécution et débogage
 
 ---
 
-**Last Updated:** October 23, 2025
-**Status:** Complete Version History
-**Database Source:** postgres-dev-docflow
+**Dernière mise à jour :** 23 octobre 2025
+**Statut :** Historique complet des versions
+**Source de la base de données :** postgres-dev-docflow

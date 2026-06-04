@@ -1,49 +1,50 @@
 ---
 description: >-
-  Explore the step-by-step workflow for material ordering, goods receipt, and
-  invoice processing with INFOR ERP and DocBits integration. Effective supplier
-  and document management in one.
+  Explorez le flux de travail étape par étape pour la commande de matériel, la
+  réception des marchandises et le traitement des factures avec l'intégration
+  d'INFOR ERP et de DocBits. Une gestion efficace des fournisseurs et des
+  documents en un seul endroit.
 ---
 
-# Material Ordering and Processing Workflow
+# Flux de travail de commande et de traitement du matériel
 
-This document outlines the workflow for ordering materials from suppliers, receiving goods, and processing invoices with integration between suppliers, INFOR ERP system, and DocBits for document management.
+Ce document décrit le flux de travail pour commander du matériel auprès des fournisseurs, réceptionner les marchandises et traiter les factures, avec une intégration entre les fournisseurs, le système INFOR ERP et DocBits pour la gestion des documents.
 
-### Process Overview
+### Aperçu du processus
 
-1. **Ordering Materials**
-   * Initiate order with the supplier.
-   * Send the order to the supplier through INFOR.
-2. **Receiving Order Confirmation**
-   * Supplier confirms the receipt of the order.
-   * Creation and sending of order confirmation.
-3. **Goods Receipt and Inspection**
-   * Receive goods from the supplier.
-   * Post goods receipt in INFOR and check against the delivery bill.
-4. **Invoice Processing**
-   * Receive invoice and send to DocBits for processing.
-   * Check and verify invoice details with order and goods receipt.
-5. **Final Steps**
-   * Archive the order and related documents in DocBits.
-   * Update INFOR with transaction details for financial accounting.
+1. **Commande de matériel**
+   * Initier la commande auprès du fournisseur.
+   * Envoyer la commande au fournisseur via INFOR.
+2. **Réception de la confirmation de commande**
+   * Le fournisseur confirme la réception de la commande.
+   * Création et envoi de la confirmation de commande.
+3. **Réception et inspection des marchandises**
+   * Réceptionner les marchandises du fournisseur.
+   * Comptabiliser la réception des marchandises dans INFOR et la vérifier par rapport au bon de livraison.
+4. **Traitement des factures**
+   * Recevoir la facture et l'envoyer à DocBits pour traitement.
+   * Vérifier et valider les détails de la facture avec la commande et la réception des marchandises.
+5. **Étapes finales**
+   * Archiver la commande et les documents associés dans DocBits.
+   * Mettre à jour INFOR avec les détails de la transaction pour la comptabilité financière.
 
-### Decision Points and Actions
+### Points de décision et actions
 
-* **Does the received goods match the order?**
-  * Yes: Proceed with invoice processing.
-  * No: Manual check and update required.
-* **Is the invoice correct according to the goods received and order details?**
-  * Yes: Complete the transaction and update financial records.
-  * No: Further examination and corrections needed.
+* **Les marchandises reçues correspondent-elles à la commande ?**
+  * Oui : Procéder au traitement de la facture.
+  * Non : Vérification et mise à jour manuelles requises.
+* **La facture est-elle correcte par rapport aux marchandises reçues et aux détails de la commande ?**
+  * Oui : Finaliser la transaction et mettre à jour les enregistrements financiers.
+  * Non : Examen et corrections supplémentaires nécessaires.
 
-### Integration Points
+### Points d'intégration
 
-* **INFOR ERP**: Main system for order processing, goods receipt, and financial accounting.
-* **DocBits**: Document management for processing and archiving invoices and order confirmations.
+* **INFOR ERP** : Système principal pour le traitement des commandes, la réception des marchandises et la comptabilité financière.
+* **DocBits** : Gestion des documents pour le traitement et l'archivage des factures et des confirmations de commande.
 
-### Notes
+### Remarques
 
-* Ensure all documents are verified and archived for record-keeping.
-* Discrepancies in order or invoice details must be resolved promptly to avoid delays.
+* Veillez à ce que tous les documents soient vérifiés et archivés à des fins de conservation des enregistrements.
+* Les divergences dans les détails de la commande ou de la facture doivent être résolues rapidement pour éviter les retards.
 
 <figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>

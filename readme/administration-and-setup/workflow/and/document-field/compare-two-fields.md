@@ -2,43 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to automate actions by comparing the values of two specified document fields. It enables dynamic decision-making based on field data and ensures workflows execute based on comparisons between different document values.
+Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones comparando los valores de dos campos de documento especificados. Posibilita una toma de decisiones dinámica basada en los datos de los campos y garantiza que los flujos de trabajo se ejecuten en función de las comparaciones entre diferentes valores del documento.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Field Name (1)**
-   * **Description:** Specifies the first document field to be compared.
-   * **Detail:** This must match the exact identifier of the first field within the document.
+   * **Descripción:** Especifica el primer campo de documento que se comparará.
+   * **Detalle:** Debe coincidir con el identificador exacto del primer campo dentro del documento.
 2. **Operator**
-   * **Description:** Defines the type of comparison to be performed between the two fields.
-   * **Options:**
-     * **Equals (=):** Checks if the values of the two fields are equal.
-     * **Not Equals (≠):** Ensures the values of the two fields are different.
-     * **Greater Than (>):** Confirms that the value of the first field is greater than the second field.
-     * **Greater or Equals (≥):** Validates that the value of the first field is equal to or greater than the second field.
-     * **Lesser Than (<):** Checks if the value of the first field is less than the second field.
-     * **Less or Equals (≤):** Ensures the value of the first field is less than or equal to the second field.
+   * **Descripción:** Define el tipo de comparación que se realizará entre los dos campos.
+   * **Opciones:**
+     * **Equals (=):** Comprueba si los valores de los dos campos son iguales.
+     * **Not Equals (≠):** Garantiza que los valores de los dos campos sean distintos.
+     * **Greater Than (>):** Confirma que el valor del primer campo es mayor que el del segundo campo.
+     * **Greater or Equals (≥):** Valida que el valor del primer campo sea igual o mayor que el del segundo campo.
+     * **Lesser Than (<):** Comprueba si el valor del primer campo es menor que el del segundo campo.
+     * **Less or Equals (≤):** Garantiza que el valor del primer campo sea menor o igual que el del segundo campo.
 3. **Field Name (2)**
-   * **Description:** Specifies the second document field to be compared against the first field.
-   * **Detail:** This should match the exact identifier of the second field within the document.
+   * **Descripción:** Especifica el segundo campo de documento que se comparará con el primero.
+   * **Detalle:** Debe coincidir con el identificador exacto del segundo campo dentro del documento.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-**Condition Evaluation:** The system evaluates whether the values in the two specified fields satisfy the comparison condition defined by the operator.
+**Evaluación de la condición:** El sistema evalúa si los valores de los dos campos especificados cumplen la condición de comparación definida por el operador.
 
-**Action Execution:**
+**Ejecución de la acción:**
 
-* **True Condition:**\
-  If the values of the two fields match the comparison condition, the system triggers the associated actions. These actions could include updating records or triggering alerts.
-* **False Condition:**\
-  If the values of the two fields do not match the specified condition, alternative actions or no actions may be executed, depending on the configuration of the workflows.
+* **Condición verdadera:**\
+  Si los valores de los dos campos cumplen la condición de comparación, el sistema dispara las acciones asociadas. Estas acciones podrían incluir actualizar registros o disparar alertas.
+* **Condición falsa:**\
+  Si los valores de los dos campos no cumplen la condición especificada, pueden ejecutarse acciones alternativas o ninguna acción, según la configuración de los flujos de trabajo.
 
-## **Setup and Configuration:**&#x20;
+## **Configuración:**&#x20;
 
-* Users configure the card by selecting the two fields to be compared from a list of available fields in the system. The operator is selected from a dropdown list of available comparison options.
+* Los usuarios configuran la tarjeta seleccionando los dos campos que se compararán de una lista de campos disponibles en el sistema. El operador se selecciona de una lista desplegable de opciones de comparación disponibles.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The "Compare Two Fields" workflow card is an essential tool for comparing data between fields within documents. By automating actions based on field comparisons, this card helps optimize decision-making, supports data validation, and enhances workflow automation.
+La tarjeta de flujo de trabajo "Compare Two Fields" es una herramienta esencial para comparar datos entre campos dentro de los documentos. Al automatizar acciones según las comparaciones de campos, esta tarjeta ayuda a optimizar la toma de decisiones, facilita la validación de datos y mejora la automatización del flujo de trabajo.

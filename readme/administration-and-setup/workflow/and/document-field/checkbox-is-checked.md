@@ -2,39 +2,39 @@
 
 <figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Propósito:**
 
-This workflow card is designed to automate actions based on the state (checked or unchecked) of a checkbox within your ERP system. By evaluating the checkbox's condition, it facilitates the triggering of specific processes or the enforcement of certain rules within the application.
+Esta tarjeta de flujo de trabajo está diseñada para automatizar acciones según el estado (marcado o sin marcar) de una casilla de verificación dentro de su sistema ERP. Al evaluar la condición de la casilla de verificación, facilita el disparo de procesos específicos o la aplicación de ciertas reglas dentro de la aplicación.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 * **Field Name**
-  * **Description:** Specifies the name of the checkbox field that will be evaluated.
-  * **Detail:** This should match the exact field identifier used in the system. It determines which checkbox's state is being monitored.
+  * **Descripción:** Especifica el nombre del campo de casilla de verificación que se evaluará.
+  * **Detalle:** Debe coincidir con el identificador exacto del campo utilizado en el sistema. Determina qué casilla de verificación se está supervisando.
 * **Boolean**
-  * **Description:** Defines the condition that triggers the workflow.
-  * **Options:**
-    * **True:** The workflow triggers if the checkbox is checked.
-    * **False:** The workflow triggers if the checkbox is unchecked.
+  * **Descripción:** Define la condición que dispara el flujo de trabajo.
+  * **Opciones:**
+    * **True:** El flujo de trabajo se dispara si la casilla de verificación está marcada.
+    * **False:** El flujo de trabajo se dispara si la casilla de verificación está sin marcar.
 
-#### **Functionality:**
+#### **Funcionalidad:**
 
-* **State Detection:** The card continuously monitors the state of the specified checkbox field.
-* **Condition Evaluation:** The system checks whether the checkbox is in the state (checked or unchecked) specified by the Boolean condition.
-* **Action Execution:**
-  * **True Condition:**\
-    If the checkbox’s state matches the specified Boolean condition (either true for checked or false for unchecked), the system initiates the associated actions. These could include enabling or disabling form fields, triggering notifications, starting workflows, or updating records.
-  * **False Condition:**\
-    If the checkbox’s state does not match the condition, alternative or no actions may be taken, depending on the workflow setup.
+* **Detección de estado:** La tarjeta supervisa continuamente el estado del campo de casilla de verificación especificado.
+* **Evaluación de la condición:** El sistema comprueba si la casilla de verificación está en el estado (marcado o sin marcar) especificado por la condición Boolean.
+* **Ejecución de la acción:**
+  * **Condición verdadera:**\
+    Si el estado de la casilla de verificación coincide con la condición Boolean especificada (true para marcado o false para sin marcar), el sistema inicia las acciones asociadas. Estas podrían incluir habilitar o deshabilitar campos de formulario, disparar notificaciones, iniciar flujos de trabajo o actualizar registros.
+  * **Condición falsa:**\
+    Si el estado de la casilla de verificación no coincide con la condición, pueden tomarse acciones alternativas o ninguna acción, según la configuración del flujo de trabajo.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-* Users configure the card by selecting the checkbox field from a list of available fields and setting the Boolean condition.&#x20;
+* Los usuarios configuran la tarjeta seleccionando el campo de casilla de verificación de una lista de campos disponibles y estableciendo la condición Boolean.&#x20;
 
-## Conclusion :
+## Conclusión:
 
-The "Checkbox Field Condition" workflow card is a fundamental tool for managing dynamic forms and documents within an ERP system, where user inputs can dictate subsequent data processes. By automating actions based on the state of a checkbox, this card enhances workflow efficiency and ensures that system behaviors align with user inputs. Clear documentation of this card will help users effectively implement it within their operations, allowing for better control over form behaviors and process automations.
+La tarjeta de flujo de trabajo "Checkbox Field Condition" es una herramienta fundamental para gestionar formularios y documentos dinámicos dentro de un sistema ERP, donde las entradas del usuario pueden determinar los procesos de datos posteriores. Al automatizar acciones según el estado de una casilla de verificación, esta tarjeta mejora la eficiencia del flujo de trabajo y garantiza que los comportamientos del sistema se ajusten a las entradas del usuario. Una documentación clara de esta tarjeta ayudará a los usuarios a implementarla de forma eficaz en sus operaciones, permitiendo un mejor control sobre los comportamientos de los formularios y las automatizaciones de procesos.
 
 
 
-**Note: Not every customer has the checkbox, but it can be added if desired.**
+**Nota: No todos los clientes tienen la casilla de verificación, pero se puede añadir si se desea.**

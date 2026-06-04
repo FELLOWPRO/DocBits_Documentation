@@ -2,42 +2,42 @@
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Propósito**
 
-This workflow card is designed to evaluate whether a specified country, located in a designated field, is part of a predefined list of countries. Based on this evaluation, the workflow can continue with a true or false condition. It helps automate processes where actions depend on whether the country is listed among a set of allowed or restricted countries.
+Esta tarjeta de flujo de trabajo está diseñada para evaluar si un país especificado, ubicado en un campo designado, forma parte de una lista predefinida de países. Según esta evaluación, el flujo de trabajo puede continuar con una condición verdadera o falsa. Ayuda a automatizar procesos en los que las acciones dependen de si el país está incluido en un conjunto de países permitidos o restringidos.
 
-## **Components of the Card:**
+## **Componentes de la tarjeta:**
 
 1. **Field Name**
-   * **Description:** Specifies the document field where the country name or code is stored.
-   * **Detail:** This should match the exact field identifier of the country data within the document.&#x20;
+   * **Descripción:** Especifica el campo del documento donde se almacena el nombre o el código del país.
+   * **Detalle:** Debe coincidir con el identificador exacto del campo de los datos del país dentro del documento.&#x20;
 2. **Operator**
-   * **Description:** Defines whether the country in the field must be part of a predefined list of countries.
-   * **Options:**
-     * **Is:** The country must be included in the list of specified countries for the condition to be true.
-     * **Is Not:** The country must not be included in the list of specified countries for the condition to be true.
+   * **Descripción:** Define si el país del campo debe formar parte de una lista predefinida de países.
+   * **Opciones:**
+     * **Is:** El país debe estar incluido en la lista de países especificados para que la condición sea verdadera.
+     * **Is Not:** El país no debe estar incluido en la lista de países especificados para que la condición sea verdadera.
 3. **Countries**
-   * **Description:** Specifies the list of countries against which the selected country will be compared.
-   * **Detail:** This is a comma-separated list of countries. The comparison checks if the country in the field is included in this list.
+   * **Descripción:** Especifica la lista de países con los que se comparará el país seleccionado.
+   * **Detalle:** Es una lista de países separados por comas. La comparación comprueba si el país del campo está incluido en esta lista.
 4. **Continue Condition**
-   * **Description:** Defines the result of the comparison. If the country meets the condition, the workflow continues with the specified Boolean value.
-   * **Options:**
-     * **True:** The workflow continues if the condition matches.
-     * **False:** The workflow continues if the condition does not match.
+   * **Descripción:** Define el resultado de la comparación. Si el país cumple la condición, el flujo de trabajo continúa con el valor booleano especificado.
+   * **Opciones:**
+     * **True:** El flujo de trabajo continúa si la condición coincide.
+     * **False:** El flujo de trabajo continúa si la condición no coincide.
 
-## **Functionality:**
+## **Funcionalidad:**
 
-* **Condition Evaluation:** The system evaluates whether the country specified in the field is part of the list of predefined countries. This evaluation checks the country name or code against the provided list.
-* **Action Execution:**
-  * **True Condition:**\
-    If the country in the field is part of the specified list of countries, the workflow continues with the true condition. This can trigger further actions, such as routing documents to the appropriate department, applying specific processing rules, or enabling region-specific features.
-  * **False Condition:**\
-    If the country does not match the list, the workflow continues with the false condition. This allows for executing alternative actions or halting the workflow based on the system setup.
+* **Evaluación de la condición:** El sistema evalúa si el país especificado en el campo forma parte de la lista de países predefinidos. Esta evaluación comprueba el nombre o el código del país frente a la lista proporcionada.
+* **Ejecución de la acción:**
+  * **Condición verdadera:**\
+    Si el país del campo forma parte de la lista de países especificada, el flujo de trabajo continúa con la condición verdadera. Esto puede disparar acciones adicionales, como enrutar documentos al departamento adecuado, aplicar reglas de procesamiento específicas o habilitar funciones específicas de la región.
+  * **Condición falsa:**\
+    Si el país no coincide con la lista, el flujo de trabajo continúa con la condición falsa. Esto permite ejecutar acciones alternativas o detener el flujo de trabajo según la configuración del sistema.
 
-## **Setup and Configuration:**
+## **Configuración:**
 
-* Users configure the card by selecting the document field containing the country and specifying the list of countries to check against. The operator is then chosen from a dropdown list to define whether the country must be part of or not part of the specified list of countries. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
+* Los usuarios configuran la tarjeta seleccionando el campo del documento que contiene el país y especificando la lista de países con la que comparar. A continuación, se elige el operador de una lista desplegable para definir si el país debe formar parte o no de la lista de países especificada. Por último, los usuarios establecen la condición de continuación (verdadera o falsa), que determina el siguiente paso del flujo de trabajo.
 
-## **Conclusion:**
+## **Conclusión:**
 
-The "Country in Field Comparison with List" workflow card is a valuable tool for automating actions based on whether a country is part of a predefined group. By comparing the country data with a list of allowed or restricted countries, this card enhances workflow efficiency and ensures that system processes follow the correct geographic rules.
+La tarjeta de flujo de trabajo "Country in Field Comparison with List" es una herramienta valiosa para automatizar acciones según si un país forma parte de un grupo predefinido. Al comparar los datos del país con una lista de países permitidos o restringidos, esta tarjeta mejora la eficiencia del flujo de trabajo y garantiza que los procesos del sistema sigan las reglas geográficas correctas.

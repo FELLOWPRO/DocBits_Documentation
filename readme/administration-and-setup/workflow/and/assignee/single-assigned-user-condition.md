@@ -1,41 +1,38 @@
 # Single Assigned User Condition
 
-(English content below - Translation pending)
-
-
 <figure><img src="../../../../.gitbook/assets/userlmn_77e991cee96598023f9a3ac7ad230e50 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
-**Purpose**
+**Zweck**
 
-This workflow card facilitates operations based on the assignment of a task or document to a single, specific user. Using a direct conditional logic approach, it manages workflows that require targeted user engagement, ensuring precision in user-based task handling.
+Diese Workflow-Karte ermöglicht Operationen auf Basis der Zuweisung einer Aufgabe oder eines Dokuments zu einem einzelnen, bestimmten Benutzer. Mit einem direkten Ansatz aus bedingter Logik steuert sie Workflows, die ein gezieltes Benutzerengagement erfordern, und gewährleistet so Präzision bei der benutzerbasierten Aufgabenbearbeitung.
 
-**Components of the Card**
+**Bestandteile der Karte**
 
 1. **Operator**
-   * **Description**: Specifies the logic to apply to the user assignment.
-   * **Options**:
-     * **IS**: Triggers the operation if the assigned user of the document or task matches the specified user.
-     * **IS NOT**: Triggers the operation if the assigned user does not match the specified user.
-2. **User**
-   * **Description**: Allows selection of a single user against whom the assigned user will be compared.
-   * **Detail**: This involves a simple dropdown or autocomplete field where one user can be selected at a time.
+   * **Beschreibung**: Gibt die Logik an, die auf die Benutzerzuweisung angewendet wird.
+   * **Optionen**:
+     * **IS**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit dem angegebenen Benutzer übereinstimmt.
+     * **IS NOT**: Löst die Operation aus, wenn der zugewiesene Benutzer nicht mit dem angegebenen Benutzer übereinstimmt.
+2. **Benutzer**
+   * **Beschreibung**: Ermöglicht die Auswahl eines einzelnen Benutzers, mit dem der zugewiesene Benutzer verglichen wird.
+   * **Detail**: Dies erfolgt über ein einfaches Dropdown- oder Autovervollständigungsfeld, in dem jeweils ein Benutzer ausgewählt werden kann.
 
-**Functionality**
+**Funktionalität**
 
-* **User Assignment Identification**: Identifies the user currently assigned to a specific task or document.
-* **Condition Evaluation**:
-  * For the **IS** operator, the card checks if the assigned user is the same as the user selected.
-  * For the **IS NOT** operator, it verifies that the assigned user is different from the selected user.
-* **Action Execution**:
-  * **True Condition**: If the assignment meets the set condition (IS or IS NOT), it triggers predefined actions, which could include moving forward with approvals, initiating further tasks, sending notifications, or other related workflows.
-  * **False Condition**: If the condition is not met, the workflow will not continue.
+* **Erkennung der Benutzerzuweisung**: Identifiziert den Benutzer, der einer bestimmten Aufgabe oder einem bestimmten Dokument aktuell zugewiesen ist.
+* **Bedingungsauswertung**:
+  * Beim Operator **IS** prüft die Karte, ob der zugewiesene Benutzer mit dem ausgewählten Benutzer identisch ist.
+  * Beim Operator **IS NOT** überprüft sie, ob sich der zugewiesene Benutzer vom ausgewählten Benutzer unterscheidet.
+* **Ausführung der Aktion**:
+  * **Bedingung erfüllt (True)**: Erfüllt die Zuweisung die festgelegte Bedingung (IS oder IS NOT), löst sie vordefinierte Aktionen aus, etwa das Fortfahren mit Freigaben, das Anstoßen weiterer Aufgaben, das Senden von Benachrichtigungen oder andere zugehörige Workflows.
+  * **Bedingung nicht erfüllt (False)**: Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.
 
-**User Interactions**
+**Benutzerinteraktionen**
 
-* **Setup and Configuration**: Users set up the card by choosing an operator and selecting a user from the user field. This setup should be straightforward, ensuring easy user selection and configuration.
-* **Monitoring and Reporting**: Offers tools for monitoring the card’s performance, such as tracking which tasks are triggered by specific user assignments and the outcomes of these triggers.
-* **Error Handling and Notifications**: Provides mechanisms to alert users if tasks are incorrectly assigned or if operational errors occur due to assignment issues.
+* **Einrichtung und Konfiguration**: Benutzer richten die Karte ein, indem sie einen Operator wählen und einen Benutzer aus dem Benutzerfeld auswählen. Diese Einrichtung sollte unkompliziert sein und eine einfache Benutzerauswahl und Konfiguration ermöglichen.
+* **Überwachung und Berichterstattung**: Bietet Werkzeuge zur Überwachung der Leistung der Karte, etwa die Nachverfolgung, welche Aufgaben durch bestimmte Benutzerzuweisungen ausgelöst werden, und der Ergebnisse dieser Auslöser.
+* **Fehlerbehandlung und Benachrichtigungen**: Stellt Mechanismen bereit, um Benutzer zu warnen, wenn Aufgaben falsch zugewiesen werden oder wenn betriebliche Fehler aufgrund von Zuweisungsproblemen auftreten.
 
-#### Conclusion
+#### Fazit
 
-The "Single Assigned User Condition" workflow card is essential for precise, user-specific document and task management within an ERP system. It simplifies workflows by focusing on individual user assignments, thus ensuring that actions are only executed when appropriate, based on the user's role and responsibilities. Documenting this card clearly will assist users in understanding its application, allowing them to implement and manage it effectively within their daily operations. This documentation ensures that all potential users can easily grasp the card's purpose and integrate it seamlessly into their workflows.
+Die Workflow-Karte "Single Assigned User Condition" ist unverzichtbar für ein präzises, benutzerspezifisches Dokument- und Aufgabenmanagement innerhalb eines ERP-Systems. Sie vereinfacht Workflows, indem sie sich auf einzelne Benutzerzuweisungen konzentriert, und stellt so sicher, dass Aktionen nur dann ausgeführt werden, wenn es angemessen ist – basierend auf der Rolle und den Verantwortlichkeiten des Benutzers. Eine klare Dokumentation dieser Karte unterstützt die Benutzer dabei, ihre Anwendung zu verstehen, und ermöglicht es ihnen, sie effektiv in ihren täglichen Abläufen einzusetzen und zu verwalten. Diese Dokumentation stellt sicher, dass alle potenziellen Benutzer den Zweck der Karte leicht erfassen und sie nahtlos in ihre Workflows integrieren können.

@@ -1,42 +1,39 @@
 # Assigned Group Condition
 
-(English content below - Translation pending)
-
-
 <figure><img src="../../../../.gitbook/assets/image (15) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
-**Purpose:**
+**Zweck:**
 
-This workflow card executes operations based on whether a task or document is assigned to a particular group or set of groups. It utilizes conditional logic to either trigger or prevent specific actions depending on the group assignment, making it ideal for workflows that require group-specific handling.
+Diese Workflow-Karte führt Operationen abhängig davon aus, ob eine Aufgabe oder ein Dokument einer bestimmten Gruppe oder einer Reihe von Gruppen zugewiesen ist. Sie nutzt bedingte Logik, um bestimmte Aktionen je nach Gruppenzuweisung auszulösen oder zu verhindern, und eignet sich daher ideal für Workflows, die eine gruppenspezifische Behandlung erfordern.
 
-**Components of the Card:**
+**Bestandteile der Karte:**
 
 1. **Operator**
-   * **Description:** Defines the logical condition to apply to the group assignment.
-   * **Options:**
-     * **IS:** Triggers the operation if the assigned group of the document or task matches one of the groups in the specified list.
-     * **IS NOT:** Triggers the operation if the assigned group of the document or task does not match any of the groups in the specified list.
-2. **Groups List**
-   * **Description:** A list or selection of groups to compare against the assigned group.
-   * **Detail:** This list can include one or multiple groups, allowing the card to handle both singular and multiple group conditions effectively.
+   * **Beschreibung:** Legt die logische Bedingung fest, die auf die Gruppenzuweisung angewendet wird.
+   * **Optionen:**
+     * **IS:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe mit einer der Gruppen in der angegebenen Liste übereinstimmt.
+     * **IS NOT:** Löst die Operation aus, wenn die zugewiesene Gruppe des Dokuments oder der Aufgabe mit keiner der Gruppen in der angegebenen Liste übereinstimmt.
+2. **Gruppenliste**
+   * **Beschreibung:** Eine Liste oder Auswahl von Gruppen, die mit der zugewiesenen Gruppe verglichen werden.
+   * **Detail:** Diese Liste kann eine oder mehrere Gruppen enthalten, sodass die Karte sowohl einzelne als auch mehrere Gruppenbedingungen effektiv verarbeiten kann.
 
-**Functionality:**
+**Funktionalität:**
 
-* **Group Assignment Identification:** Automatically identifies the group or groups assigned to a particular task or document within the system.
-* **Condition Evaluation:**
-  * Using the **IS** operator, the card checks if the assigned group is one of the groups listed in the Groups List.
-  * Using the **IS NOT** operator, the card ensures the assigned group is not part of the groups listed.
-* **Action Execution:**
-  * **True Condition:** If the group assignment meets the condition (either **IS** or **IS NOT**), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition:**  If the condition is not met, the workflow will not continue.
+* **Erkennung der Gruppenzuweisung:** Identifiziert automatisch die Gruppe oder Gruppen, die einer bestimmten Aufgabe oder einem bestimmten Dokument im System zugewiesen sind.
+* **Bedingungsauswertung:**
+  * Mit dem Operator **IS** prüft die Karte, ob die zugewiesene Gruppe eine der in der Gruppenliste aufgeführten Gruppen ist.
+  * Mit dem Operator **IS NOT** stellt die Karte sicher, dass die zugewiesene Gruppe nicht zu den aufgeführten Gruppen gehört.
+* **Ausführung der Aktion:**
+  * **Bedingung erfüllt (True):** Erfüllt die Gruppenzuweisung die Bedingung (entweder **IS** oder **IS NOT**), werden relevante Aktionen ausgelöst, etwa Benachrichtigungen, das Anlegen von Aufgaben, Freigaben oder andere Workflow-Schritte.
+  * **Bedingung nicht erfüllt (False):** Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.
 
-**User Interactions:**
+**Benutzerinteraktionen:**
 
-* **Setup and Configuration:**&#x55;sers configure the card by selecting an operator and specifying the relevant groups from the Groups List. Setup should be user-friendly and intuitive to accommodate selections from potentially large group bases.
-* **Monitoring and Reporting:**\
-  The system should provide functionality to monitor and report on the operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications:**\
-  Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in group selection.
+* **Einrichtung und Konfiguration:** Benutzer konfigurieren die Karte, indem sie einen Operator auswählen und die relevanten Gruppen aus der Gruppenliste angeben. Die Einrichtung sollte benutzerfreundlich und intuitiv sein, um Auswahlen aus potenziell großen Gruppenbeständen zu ermöglichen.
+* **Überwachung und Berichterstattung:**\
+  Das System sollte Funktionen bereitstellen, um die durch diese Karte ausgelösten Operationen zu überwachen und darüber zu berichten, und so Einblicke in die Zuweisungsgenauigkeit und Prozesseffizienz geben.
+* **Fehlerbehandlung und Benachrichtigungen:**\
+  Benutzer sollten die Möglichkeit haben, Warnungen oder Benachrichtigungen zu erhalten, wenn es Probleme mit den Zuweisungen gibt, etwa nicht zugewiesene Aufgaben oder Fehler bei der Gruppenauswahl.
 
-**Conclusion:**\
-The "Assigned Group Condition" workflow card is essential for managing document and task workflows that depend on group assignments. By allowing conditions based on whether a task or document is assigned to specific groups, it ensures that workflows are only triggered by appropriate group interactions, improving accountability and task management across teams.
+**Fazit:**\
+Die Workflow-Karte "Assigned Group Condition" ist unverzichtbar für die Verwaltung von Dokument- und Aufgaben-Workflows, die von Gruppenzuweisungen abhängen. Indem sie Bedingungen darauf basieren lässt, ob eine Aufgabe oder ein Dokument bestimmten Gruppen zugewiesen ist, stellt sie sicher, dass Workflows nur durch passende Gruppeninteraktionen ausgelöst werden, und verbessert so die Nachvollziehbarkeit und das Aufgabenmanagement über Teams hinweg.

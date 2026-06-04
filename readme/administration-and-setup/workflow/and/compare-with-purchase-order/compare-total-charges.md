@@ -1,58 +1,55 @@
 # Compare Total Charges
 
-(English content below - Translation pending)
-
-
 <figure><img src="../../../../.gitbook/assets/image (271).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card compares the total charges in a document field with the corresponding charges in a purchase order. The card helps ensure that the charges in the document align with those in the purchase order, considering specified tolerance levels. The comparison can trigger actions if discrepancies are found, such as flagging discrepancies for review or adjusting charges accordingly.
+Diese Workflow-Karte vergleicht die Gesamtkosten in einem Dokumentfeld mit den entsprechenden Kosten in einer Bestellung. Die Karte hilft sicherzustellen, dass die Kosten im Dokument unter Berücksichtigung festgelegter Toleranzgrenzen mit denen in der Bestellung übereinstimmen. Der Vergleich kann Aktionen auslösen, wenn Abweichungen festgestellt werden, etwa das Markieren von Abweichungen zur Prüfung oder das entsprechende Anpassen der Kosten.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Field Name:**
-   * **Description**: Specifies the document field that contains the total charge values to be compared with the charges in the purchase order.
-   * **Detail**: The value in this field represents the total charges applied in the document (e.g., invoice) and will be compared with the purchase order charge.
+1. **Feldname:**
+   * **Beschreibung**: Gibt das Dokumentfeld an, das die Gesamtkostenwerte enthält, die mit den Kosten in der Bestellung verglichen werden.
+   * **Detail**: Der Wert in diesem Feld stellt die im Dokument (z. B. Rechnung) angewendeten Gesamtkosten dar und wird mit den Kosten der Bestellung verglichen.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to the comparison between the total charge in the document and the charge in the purchase order.
-   * **Options**:
-     * **Equals (=)**: Verifies if the total charge in the document matches the charge in the purchase order.
-     * **Not Equals (≠)**: Ensures the total charge in the document is different from the charge in the purchase order.
-     * **Greater Than (>)**: Verifies if the total charge in the document is greater than the charge in the purchase order.
-     * **Greater or Equals (≥)**: Verifies if the total charge in the document is greater than or equal to the charge in the purchase order.
-     * **Lesser Than (<)**: Verifies if the total charge in the document is less than the charge in the purchase order.
-     * **Lesser or Equals (≤)**: Verifies if the total charge in the document is less than or equal to the charge in the purchase order.
-3. **Tolerance Amount**
-   * **Description**: Specifies the tolerance threshold for comparing the total charges.
-   * **Detail**: This numeric value represents the allowed variance in charges between the document and the purchase order.
-4. **Tolerance Type:**
-   * **Description**: Specifies the type of tolerance that will be applied.
-   * **Options**:
-     * **Percentage**: Tolerance is applied as a percentage of the purchase order charge.
-     * **Value**: Tolerance is applied as a fixed numeric amount.
-5. **Separator:**
-   * **Description**: Specifies the separator used to distinguish the Charge ID at the end of the field name.
-   * **Detail**: The separator separates the charge field from the unique Charge ID that will be used to link the document charge to the corresponding charge in the purchase order.
+   * **Beschreibung**: Legt die Bedingung fest, die auf den Vergleich zwischen den Gesamtkosten im Dokument und den Kosten in der Bestellung angewendet wird.
+   * **Optionen**:
+     * **Gleich (=)**: Überprüft, ob die Gesamtkosten im Dokument mit den Kosten in der Bestellung übereinstimmen.
+     * **Ungleich (≠)**: Stellt sicher, dass sich die Gesamtkosten im Dokument von den Kosten in der Bestellung unterscheiden.
+     * **Größer als (>)**: Überprüft, ob die Gesamtkosten im Dokument größer als die Kosten in der Bestellung sind.
+     * **Größer oder gleich (≥)**: Überprüft, ob die Gesamtkosten im Dokument größer oder gleich den Kosten in der Bestellung sind.
+     * **Kleiner als (<)**: Überprüft, ob die Gesamtkosten im Dokument kleiner als die Kosten in der Bestellung sind.
+     * **Kleiner oder gleich (≤)**: Überprüft, ob die Gesamtkosten im Dokument kleiner oder gleich den Kosten in der Bestellung sind.
+3. **Toleranzbetrag**
+   * **Beschreibung**: Gibt den Toleranzschwellenwert für den Vergleich der Gesamtkosten an.
+   * **Detail**: Dieser numerische Wert stellt die zulässige Abweichung der Kosten zwischen dem Dokument und der Bestellung dar.
+4. **Toleranztyp:**
+   * **Beschreibung**: Gibt die Art der angewendeten Toleranz an.
+   * **Optionen**:
+     * **Prozentsatz**: Die Toleranz wird als Prozentsatz der Bestellkosten angewendet.
+     * **Wert**: Die Toleranz wird als fester numerischer Betrag angewendet.
+5. **Trennzeichen:**
+   * **Beschreibung**: Gibt das Trennzeichen an, das verwendet wird, um die Charge-ID am Ende des Feldnamens zu unterscheiden.
+   * **Detail**: Das Trennzeichen trennt das Kostenfeld von der eindeutigen Charge-ID, die verwendet wird, um die Dokumentkosten mit den entsprechenden Kosten in der Bestellung zu verknüpfen.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:** The system compares the total charge in the document field with the corresponding charge in the purchase order based on the operator and tolerance. The tolerance is applied to determine whether the difference between the two charges is within an acceptable range.
-* **Action Execution:**
-  * **True Condition**: If the charges match (considering tolerance) and the condition is true, the workflow will continue with the defined action, such as document approval or further processing.
-  * **False Condition**: If the condition is false (i.e., the charges do not match within the tolerance), the workflow will not continue.
+* **Bedingungsauswertung:** Das System vergleicht die Gesamtkosten im Dokumentfeld mit den entsprechenden Kosten in der Bestellung auf Basis des Operators und der Toleranz. Die Toleranz wird angewendet, um zu bestimmen, ob die Differenz zwischen den beiden Kostenwerten innerhalb eines zulässigen Bereichs liegt.
+* **Ausführung der Aktion:**
+  * **Bedingung erfüllt (True)**: Stimmen die Kosten (unter Berücksichtigung der Toleranz) überein und ist die Bedingung erfüllt, wird der Workflow mit der definierten Aktion fortgesetzt, etwa der Dokumentfreigabe oder der weiteren Verarbeitung.
+  * **Bedingung nicht erfüllt (False)**: Ist die Bedingung nicht erfüllt (d. h. die Kosten stimmen innerhalb der Toleranz nicht überein), wird der Workflow nicht fortgesetzt.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* Users begin by selecting the document field that contains the total charge value. Next, they select the operator to define how the charge will be compared to the purchase order charge. Then, users set the tolerance amount and tolerance type (percentage or absolute). Finally, they specify the separator and Charge ID that will be used for comparison.
+* Benutzer beginnen mit der Auswahl des Dokumentfelds, das den Gesamtkostenwert enthält. Anschließend wählen sie den Operator, um festzulegen, wie die Kosten mit den Bestellkosten verglichen werden. Danach legen die Benutzer den Toleranzbetrag und den Toleranztyp (Prozentsatz oder absolut) fest. Zuletzt geben sie das Trennzeichen und die Charge-ID an, die für den Vergleich verwendet werden.
 
-## **Example Scenario:**
+## **Beispiel-Szenario:**
 
-An invoice lists a charge of $500 in the "total charges" field. The corresponding purchase order charge is $480, and the tolerance is set to $20 (absolute tolerance). The card compares the document charge against the purchase order charge:
+Eine Rechnung weist im Feld "Gesamtkosten" Kosten von 500 $ aus. Die entsprechenden Bestellkosten betragen 480 $, und die Toleranz ist auf 20 $ (absolute Toleranz) gesetzt. Die Karte vergleicht die Dokumentkosten mit den Bestellkosten:
 
-* The total charge in the document is within the $20 tolerance of the purchase order, and the workflow continues without issue.
-* If the charge exceeds the tolerance, the workflow flags the discrepancy for review.
+* Die Gesamtkosten im Dokument liegen innerhalb der 20-$-Toleranz der Bestellung, und der Workflow wird ohne Probleme fortgesetzt.
+* Überschreiten die Kosten die Toleranz, markiert der Workflow die Abweichung zur Prüfung.
 
-## **Conclusion:**
+## **Fazit:**
 
-The "Compare Total Charges" workflow card ensures that the charges in documents align with those in purchase orders, considering specified tolerance levels. This helps organizations automate the verification process, identify discrepancies early, and maintain better control over charge-related processes.
+Die Workflow-Karte "Compare Total Charges" stellt sicher, dass die Kosten in Dokumenten unter Berücksichtigung festgelegter Toleranzgrenzen mit denen in Bestellungen übereinstimmen. Dies hilft Organisationen, den Prüfprozess zu automatisieren, Abweichungen frühzeitig zu erkennen und eine bessere Kontrolle über kostenbezogene Prozesse zu behalten.

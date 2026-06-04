@@ -1,41 +1,38 @@
 # Assigned User Condition
 
-(English content below - Translation pending)
-
-
 <figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
 
-**Purpose**
+**Zweck**
 
-This workflow card manages the execution of operations based on whether a task or document is assigned to a particular user or set of users. It employs conditional logic to either trigger or prevent specific actions, making it ideal for workflows that require user-specific handling.
+Diese Workflow-Karte steuert die Ausführung von Operationen abhängig davon, ob eine Aufgabe oder ein Dokument einem bestimmten Benutzer oder einer Reihe von Benutzern zugewiesen ist. Sie nutzt bedingte Logik, um bestimmte Aktionen auszulösen oder zu verhindern, und eignet sich daher ideal für Workflows, die eine benutzerspezifische Behandlung erfordern.
 
-**Components of the Card**
+**Bestandteile der Karte**
 
 1. **Operator**
-   * **Description**: Defines the logical condition to apply to the user assignment.
-   * **Options**:
-     * **IS**: Triggers the operation if the assigned user of the document or task matches any user in the specified list.
-     * **IS NOT**: Triggers the operation if the assigned user of the document or task does not match any user in the specified list.
-2. **User List**
-   * **Description**: A list or selection of users to compare against the assigned user.
-   * **Detail**: This list can include one or multiple users, allowing the card to handle both singular and multiple user conditions effectively. The selection can be made through checkboxes, a multi-select dropdown, or similar UI elements.
+   * **Beschreibung**: Legt die logische Bedingung fest, die auf die Benutzerzuweisung angewendet wird.
+   * **Optionen**:
+     * **IS**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit einem der Benutzer in der angegebenen Liste übereinstimmt.
+     * **IS NOT**: Löst die Operation aus, wenn der zugewiesene Benutzer des Dokuments oder der Aufgabe mit keinem der Benutzer in der angegebenen Liste übereinstimmt.
+2. **Benutzerliste**
+   * **Beschreibung**: Eine Liste oder Auswahl von Benutzern, die mit dem zugewiesenen Benutzer verglichen werden.
+   * **Detail**: Diese Liste kann einen oder mehrere Benutzer enthalten, sodass die Karte sowohl einzelne als auch mehrere Benutzerbedingungen effektiv verarbeiten kann. Die Auswahl kann über Kontrollkästchen, ein Mehrfachauswahl-Dropdown oder ähnliche UI-Elemente erfolgen.
 
-**Functionality**
+**Funktionalität**
 
-* **User Assignment Identification**: Automatically identifies the user or users assigned to a particular task or document within the ERP system.
-* **Condition Evaluation**:
-  * Using the **IS** operator, the card checks if the assigned user is among those listed in the User List.
-  * Using the **IS NOT** operator, the card ensures the assigned user is not among those listed.
-* **Action Execution**:
-  * **True Condition**: If the user assignment meets the condition (either IS or IS NOT), relevant actions are triggered, such as notifications, task initiations, approvals, or other workflow steps.
-  * **False Condition**: If the condition is not met, the workflow will not continue.
+* **Erkennung der Benutzerzuweisung**: Identifiziert automatisch den oder die Benutzer, die einer bestimmten Aufgabe oder einem bestimmten Dokument im ERP-System zugewiesen sind.
+* **Bedingungsauswertung**:
+  * Mit dem Operator **IS** prüft die Karte, ob der zugewiesene Benutzer zu den in der Benutzerliste aufgeführten Benutzern gehört.
+  * Mit dem Operator **IS NOT** stellt die Karte sicher, dass der zugewiesene Benutzer nicht zu den aufgeführten Benutzern gehört.
+* **Ausführung der Aktion**:
+  * **Bedingung erfüllt (True)**: Erfüllt die Benutzerzuweisung die Bedingung (entweder IS oder IS NOT), werden relevante Aktionen ausgelöst, etwa Benachrichtigungen, das Anlegen von Aufgaben, Freigaben oder andere Workflow-Schritte.
+  * **Bedingung nicht erfüllt (False)**: Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.
 
-**User Interactions**
+**Benutzerinteraktionen**
 
-* **Setup and Configuration**: Users configure the card by selecting an operator and specifying the relevant users from the User List. Setup should be user-friendly and intuitive to accommodate selections from potentially large user bases.
-* **Monitoring and Reporting**: The ERP system should provide functionality to monitor and report on the operations triggered by this card, offering insights into assignment accuracy and process efficiency.
-* **Error Handling and Notifications**: Users should have options to receive alerts or notifications if there are issues with the assignments, such as unassigned tasks or errors in user selection.
+* **Einrichtung und Konfiguration**: Benutzer konfigurieren die Karte, indem sie einen Operator auswählen und die relevanten Benutzer aus der Benutzerliste angeben. Die Einrichtung sollte benutzerfreundlich und intuitiv sein, um Auswahlen aus potenziell großen Benutzerbeständen zu ermöglichen.
+* **Überwachung und Berichterstattung**: Das ERP-System sollte Funktionen bereitstellen, um die durch diese Karte ausgelösten Operationen zu überwachen und darüber zu berichten, und so Einblicke in die Zuweisungsgenauigkeit und Prozesseffizienz geben.
+* **Fehlerbehandlung und Benachrichtigungen**: Benutzer sollten die Möglichkeit haben, Warnungen oder Benachrichtigungen zu erhalten, wenn es Probleme mit den Zuweisungen gibt, etwa nicht zugewiesene Aufgaben oder Fehler bei der Benutzerauswahl.
 
-#### Conclusion
+#### Fazit
 
-The "Assigned User Condition" workflow card is a critical tool for managing document and task workflows that depend on user assignments. By allowing conditions based on whether a task or document is assigned to specific users, it ensures that workflows are only triggered by appropriate user interactions, enhancing both accountability and task alignment within teams. Clearly documenting this card will help users understand its significance and integrate it effectively into their workflows, ensuring smooth and efficient operations tailored to user roles and responsibilities.
+Die Workflow-Karte "Assigned User Condition" ist ein wichtiges Werkzeug für die Verwaltung von Dokument- und Aufgaben-Workflows, die von Benutzerzuweisungen abhängen. Indem sie Bedingungen darauf basieren lässt, ob eine Aufgabe oder ein Dokument bestimmten Benutzern zugewiesen ist, stellt sie sicher, dass Workflows nur durch passende Benutzerinteraktionen ausgelöst werden, und verbessert so sowohl die Nachvollziehbarkeit als auch die Aufgabenzuordnung innerhalb von Teams. Eine klare Dokumentation dieser Karte hilft den Benutzern, ihre Bedeutung zu verstehen und sie effektiv in ihre Workflows zu integrieren, um reibungslose und effiziente Abläufe zu gewährleisten, die auf Benutzerrollen und -verantwortlichkeiten zugeschnitten sind.

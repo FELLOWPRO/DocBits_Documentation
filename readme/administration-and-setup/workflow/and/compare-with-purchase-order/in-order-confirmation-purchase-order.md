@@ -10,33 +10,33 @@ hidden: true
 
 <figure><img src="https://lh7-us.googleusercontent.com/glQHETatKah-1YugeLqBb7Jim6lNJxuarRv-KEMv4NPzFfcjSm6mVhTMdI30nxdJ0SHXZ55Oup6KH7K-J6IxjUOiG0wxUX8toAaCopgBJwPyr94CPjoKuauNTmoHGGhg6f3gwHD39W7gpvijg4LQVJ4" alt="" width="563"><figcaption></figcaption></figure>
 
-#### Logic Card: Quantity or Unit Price or Discount Match
+#### Logic-Karte: Übereinstimmung von Menge, Stückpreis oder Rabatt
 
-This logic card is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+Diese Logic-Karte ist darauf ausgelegt, automatisch zu überprüfen, ob die in einer Auftragsbestätigung aufgeführte Menge, der Stückpreis oder der Rabatt mit den entsprechenden Werten in der Bestellung übereinstimmt. Diese Überprüfung gewährleistet Konsistenz und Genauigkeit zwischen dem, was bestellt wurde, und dem, was der Lieferant zu liefern bestätigt.
 
-#### Trigger Condition
+#### Auslösebedingung
 
-The logic is activated when any of the following conditions are met in an order confirmation relative to the original purchase order:
+Die Logik wird aktiviert, wenn eine der folgenden Bedingungen in einer Auftragsbestätigung im Vergleich zur ursprünglichen Bestellung erfüllt ist:
 
-* **Quantity**: The quantity of items ordered matches the quantity confirmed by the supplier.
-* **Unit Price**: The price per item agreed upon matches the supplier's confirmation.
-* **Discount**: Any discounts applied are consistent between the purchase order and the order confirmation.
+* **Menge**: Die Menge der bestellten Artikel stimmt mit der vom Lieferanten bestätigten Menge überein.
+* **Stückpreis**: Der vereinbarte Preis pro Artikel stimmt mit der Bestätigung des Lieferanten überein.
+* **Rabatt**: Eventuell angewendete Rabatte sind zwischen der Bestellung und der Auftragsbestätigung konsistent.
 
-#### Outcomes
+#### Ergebnisse
 
-* **Equals**: If the order confirmation's quantity, unit price, or discount exactly matches the purchase order, the system considers the confirmation as valid and proceeds with the next steps in the procurement process.
-* **Not Equal**: If there's a discrepancy in the quantity, unit price, or discount, the system flags the order confirmation for manual review. This ensures any mismatches are resolved before moving forward.
+* **Gleich**: Stimmen Menge, Stückpreis oder Rabatt der Auftragsbestätigung exakt mit der Bestellung überein, betrachtet das System die Bestätigung als gültig und fährt mit den nächsten Schritten im Beschaffungsprozess fort.
+* **Ungleich**: Gibt es eine Abweichung bei Menge, Stückpreis oder Rabatt, markiert das System die Auftragsbestätigung zur manuellen Prüfung. Dadurch wird sichergestellt, dass Abweichungen behoben werden, bevor es weitergeht.
 
-#### Benefits
+#### Vorteile
 
-* **Accuracy and Consistency**: Maintains accuracy in the procurement process, ensuring that payments and deliveries are made based on correct figures.
-* **Efficiency**: Automates the verification process, reducing the need for manual checks and speeding up order processing.
-* **Cost Control**: Helps prevent overpayments or incorrect deliveries by catching discrepancies early in the process.
+* **Genauigkeit und Konsistenz**: Erhält die Genauigkeit im Beschaffungsprozess und stellt sicher, dass Zahlungen und Lieferungen auf Basis korrekter Werte erfolgen.
+* **Effizienz**: Automatisiert den Überprüfungsprozess, reduziert den Bedarf an manuellen Prüfungen und beschleunigt die Auftragsverarbeitung.
+* **Kostenkontrolle**: Hilft, Überzahlungen oder fehlerhafte Lieferungen zu vermeiden, indem Abweichungen frühzeitig im Prozess erkannt werden.
 
 <figure><img src="https://lh7-us.googleusercontent.com/DRTMJxJ9XLeC5zWSU8QuZwPLkqHzmCUm9RwiUZIkcc8pVxMZsxLv56dX9spzqr7KeDkTigbeBX2DvAZRe-6MdqOgAnrO-QPnCbi4e6hP4--P_O0A0DSoQJxjGeefOS1p6GuXHs1YXv-A73DXYaE8qlI" alt="" width="563"><figcaption></figcaption></figure>
 
-1. **Define Comparison Parameters**: Set up the specific fields (quantity, unit price, discount) that the logic card will check for a match.
-2. **Automate Verification**: Configure the system to automatically compare these details upon receipt of an order confirmation.
-3. **Customize Alerts**: Decide on the workflow for handling discrepancies, including customization of alerts for manual review.
+1. **Vergleichsparameter definieren**: Legen Sie die spezifischen Felder (Menge, Stückpreis, Rabatt) fest, die die Logic-Karte auf Übereinstimmung prüft.
+2. **Überprüfung automatisieren**: Konfigurieren Sie das System so, dass diese Details beim Eingang einer Auftragsbestätigung automatisch verglichen werden.
+3. **Warnungen anpassen**: Legen Sie den Workflow für den Umgang mit Abweichungen fest, einschließlich der Anpassung von Warnungen für die manuelle Prüfung.
 
-This logic card is vital for ensuring that the details of an order confirmation align with the original purchase order, safeguarding the integrity of the procurement cycle. \`\`
+Diese Logic-Karte ist unverzichtbar, um sicherzustellen, dass die Details einer Auftragsbestätigung mit der ursprünglichen Bestellung übereinstimmen, und schützt so die Integrität des Beschaffungszyklus. \`\`

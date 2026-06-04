@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (277).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card is designed to compare the order type of a purchase order against a specified value. The card checks whether the order type of the purchase order meets the specified condition (e.g., whether it equals, does not equal, is greater than, or meets another condition) to ensure that the purchase order is classified correctly. This comparison can trigger actions based on specific conditions, such as routing the order for further review or approval if discrepancies are found.
+Diese Workflow-Karte ist darauf ausgelegt, den Auftragstyp einer Bestellung mit einem angegebenen Wert zu vergleichen. Die Karte prüft, ob der Auftragstyp der Bestellung die angegebene Bedingung erfüllt (z. B. ob er gleich, ungleich, größer als ist oder eine andere Bedingung erfüllt), um sicherzustellen, dass die Bestellung korrekt klassifiziert ist. Dieser Vergleich kann Aktionen auf Basis bestimmter Bedingungen auslösen, etwa das Weiterleiten der Bestellung zur weiteren Prüfung oder Freigabe, wenn Abweichungen festgestellt werden.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
 1. **Any/All:**
-   * **Description**: Defines whether the condition applies to any or all purchase orders being evaluated in the workflow.
-   * **Options**:
-     * **Any**: The condition is met if any one of the purchase orders matches the specified condition.
-     * **All**: The condition is met only if all of the purchase orders meet the specified condition.
+   * **Beschreibung**: Legt fest, ob die Bedingung für irgendeine oder alle im Workflow ausgewerteten Bestellungen gilt.
+   * **Optionen**:
+     * **Any**: Die Bedingung ist erfüllt, wenn irgendeine der Bestellungen die angegebene Bedingung erfüllt.
+     * **All**: Die Bedingung ist nur erfüllt, wenn alle Bestellungen die angegebene Bedingung erfüllen.
 2. **Operator:**
-   * **Description**: Defines the condition that will be applied to compare the order type against a specified value.
-   * **Options**:
-     * **Equals (=)**: Checks if the order type matches the specified value.
-     * **Not Equals (≠)**: Ensures the order type is different from the specified value.
-3. **Order Type:**
-   * **Description**: Specifies the value to which the order type of the purchase order will be compared.
-   * **Detail**: The value must match the order type or classification in the system.
+   * **Beschreibung**: Legt die Bedingung fest, die angewendet wird, um den Auftragstyp mit einem angegebenen Wert zu vergleichen.
+   * **Optionen**:
+     * **Gleich (=)**: Prüft, ob der Auftragstyp mit dem angegebenen Wert übereinstimmt.
+     * **Ungleich (≠)**: Stellt sicher, dass sich der Auftragstyp vom angegebenen Wert unterscheidet.
+3. **Auftragstyp:**
+   * **Beschreibung**: Gibt den Wert an, mit dem der Auftragstyp der Bestellung verglichen wird.
+   * **Detail**: Der Wert muss mit dem Auftragstyp oder der Klassifizierung im System übereinstimmen.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* **Condition Evaluation:** The system evaluates the order type of the purchase order against the specified condition using the selected operator. If the order type matches (or does not match) the specified value, the workflow proceeds accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the order type matches the specified value), the workflow will continue, possibly triggering additional actions or processing steps.
-  * **False Condition**: If the condition evaluates to false (e.g., the order type does not match the specified value), the workflow will not continue.
+* **Bedingungsauswertung:** Das System wertet den Auftragstyp der Bestellung anhand der angegebenen Bedingung mithilfe des ausgewählten Operators aus. Stimmt der Auftragstyp mit dem angegebenen Wert überein (oder nicht überein), wird der Workflow entsprechend fortgesetzt.
+* **Ausführung der Aktion:**
+  * **Bedingung erfüllt (True)**: Ergibt die Bedingung „wahr“ (z. B. stimmt der Auftragstyp mit dem angegebenen Wert überein), wird der Workflow fortgesetzt und löst möglicherweise zusätzliche Aktionen oder Verarbeitungsschritte aus.
+  * **Bedingung nicht erfüllt (False)**: Ergibt die Bedingung „falsch“ (z. B. stimmt der Auftragstyp nicht mit dem angegebenen Wert überein), wird der Workflow nicht fortgesetzt.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* Users configure the card by selecting the order type field of the purchase order and choosing the operator that defines how the order type will be compared. Then, they set the specified value and decide whether to apply the condition to any or all of the purchase order lines.
+* Benutzer konfigurieren die Karte, indem sie das Auftragstyp-Feld der Bestellung auswählen und den Operator wählen, der festlegt, wie der Auftragstyp verglichen wird. Anschließend legen sie den angegebenen Wert fest und entscheiden, ob die Bedingung für irgendeine oder alle Bestellzeilen gilt.
 
-## **Example Scenario:**
+## **Beispiel-Szenario:**
 
-* A purchase order has the order type "Standard." The workflow is configured to check if the order type is "Urgent." Using the "Equals" operator, the card compares the order type and finds that it does not match the specified value, triggering the workflow to send the order for review due to the mismatch.
+* Eine Bestellung hat den Auftragstyp "Standard". Der Workflow ist so konfiguriert, dass er prüft, ob der Auftragstyp "Urgent" ist. Mit dem Operator "Gleich" vergleicht die Karte den Auftragstyp und stellt fest, dass er nicht mit dem angegebenen Wert übereinstimmt, woraufhin der Workflow die Bestellung aufgrund der Abweichung zur Prüfung sendet.
 
-## **Conclusion:**
+## **Fazit:**
 
-The "Order Type of Purchase Order" workflow card ensures that purchase orders are classified correctly according to their specified order type. By automating the comparison of order types, organizations can ensure that purchase orders are processed according to their expected classifications, helping to enforce compliance and streamline procurement workflows.
+Die Workflow-Karte "Order Type of Purchase Order" stellt sicher, dass Bestellungen entsprechend ihrem angegebenen Auftragstyp korrekt klassifiziert werden. Durch die Automatisierung des Vergleichs von Auftragstypen können Organisationen sicherstellen, dass Bestellungen gemäß ihren erwarteten Klassifizierungen verarbeitet werden, was die Einhaltung von Vorgaben unterstützt und Beschaffungs-Workflows optimiert.

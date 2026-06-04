@@ -2,41 +2,41 @@
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**
+## **Zweck**
 
-This DocBits card is designed to facilitate the precise comparison of promised delivery dates on purchase orders with delivery dates specified for line items in a table. By integrating a tolerance value, the card ensures flexibility in monitoring delivery timelines, helping maintain inventory planning accuracy and customer satisfaction.
+Diese DocBits-Karte ist darauf ausgelegt, den präzisen Vergleich der zugesagten Lieferdaten auf Bestellungen mit den für Positionen in einer Tabelle angegebenen Lieferdaten zu ermöglichen. Durch die Integration eines Toleranzwerts sorgt die Karte für Flexibilität bei der Überwachung von Lieferterminen und hilft so, die Genauigkeit der Bestandsplanung und die Kundenzufriedenheit zu erhalten.
 
-## **Components of the Card**
+## **Bestandteile der Karte**
 
 1. **Operator**
-   * **Description:** Defines the condition applied to compare delivery dates.
-   * **Options:**
-     * **Equals (=):** Checks if the promised delivery date on the line item matches the purchase order’s delivery date.
-     * **Not Equal (≠):** Ensures the promised delivery date on the line item does not match the date on the purchase order.
-     * **Greater Than (>):** Verifies if the line item’s promised delivery date is later than the purchase order’s delivery date.
-     * **Greater or Equals (≥):** Checks if the line item’s promised delivery date equals or is later than the purchase order’s delivery date.
-     * **Less Than (<):** Confirms if the line item’s promised delivery date is earlier than the purchase order’s delivery date.
-     * **Less or Equals (≤):** Validates if the line item’s promised delivery date equals or is earlier than the purchase order’s delivery date.
-2. **Value**
-   * **Description:** Specifies an allowable margin of error in the delivery date comparison.
-   * **Detail:** Users define the number of days by which the line item delivery date can differ from the promised delivery date.
+   * **Beschreibung:** Legt die Bedingung fest, die zum Vergleich der Lieferdaten angewendet wird.
+   * **Optionen:**
+     * **Gleich (=):** Prüft, ob das zugesagte Lieferdatum der Position mit dem Lieferdatum der Bestellung übereinstimmt.
+     * **Ungleich (≠):** Stellt sicher, dass das zugesagte Lieferdatum der Position nicht mit dem Datum auf der Bestellung übereinstimmt.
+     * **Größer als (>):** Überprüft, ob das zugesagte Lieferdatum der Position später ist als das Lieferdatum der Bestellung.
+     * **Größer oder gleich (≥):** Prüft, ob das zugesagte Lieferdatum der Position dem Lieferdatum der Bestellung entspricht oder später ist.
+     * **Kleiner als (<):** Bestätigt, ob das zugesagte Lieferdatum der Position früher ist als das Lieferdatum der Bestellung.
+     * **Kleiner oder gleich (≤):** Überprüft, ob das zugesagte Lieferdatum der Position dem Lieferdatum der Bestellung entspricht oder früher ist.
+2. **Wert**
+   * **Beschreibung:** Gibt eine zulässige Fehlertoleranz beim Vergleich der Lieferdaten an.
+   * **Detail:** Benutzer legen die Anzahl der Tage fest, um die das Lieferdatum der Position vom zugesagten Lieferdatum abweichen darf.
 
-## **Functionality**
+## **Funktionalität**
 
-* **Condition Evaluation:**\
-  The card calculates the difference between the purchase order's promised delivery date and the delivery dates for line items in the table. The selected operator is then applied to determine if the condition is met.
-* **Action Execution:**
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Bedingungsauswertung:**\
+  Die Karte berechnet die Differenz zwischen dem zugesagten Lieferdatum der Bestellung und den Lieferdaten der Positionen in der Tabelle. Anschließend wird der ausgewählte Operator angewendet, um zu bestimmen, ob die Bedingung erfüllt ist.
+* **Ausführung der Aktion:**
+  * **Bedingung erfüllt (True):** Liegt die Differenz des Lieferdatums innerhalb des Toleranzbereichs und entspricht der durch den Operator festgelegten Bedingung, wird der Workflow fortgesetzt.
+  * **Bedingung nicht erfüllt (False):** Ist die Bedingung nicht erfüllt, wird der Workflow nicht fortgesetzt.
 
-## **Setup and Configuration**
+## **Einrichtung und Konfiguration**
 
-* The operator is selected to define the desired comparison condition, such as equal to, greater than or less than. Finally, users specify a tolerance value in days, which allows for small variations in the comparison without triggering alerts.
+* Der Operator wird ausgewählt, um die gewünschte Vergleichsbedingung festzulegen, etwa gleich, größer als oder kleiner als. Zuletzt geben Benutzer einen Toleranzwert in Tagen an, der kleine Abweichungen beim Vergleich zulässt, ohne Warnungen auszulösen.
 
-## **Example Scenario**
+## **Beispiel-Szenario**
 
-* A purchase order specifies a promised delivery date of December 1st. A line item in the table has a promised delivery date of December 3rd. With a tolerance value set to 2 days and the **Equals (≥)** operator selected, the card considers the delivery date within the acceptable range. No alert is triggered, ensuring minor variances are tolerated without disrupting operations.
+* Eine Bestellung gibt ein zugesagtes Lieferdatum vom 1. Dezember an. Eine Position in der Tabelle hat ein zugesagtes Lieferdatum vom 3. Dezember. Bei einem auf 2 Tage gesetzten Toleranzwert und dem ausgewählten Operator **Gleich (≥)** betrachtet die Karte das Lieferdatum als innerhalb des zulässigen Bereichs. Es wird keine Warnung ausgelöst, sodass geringfügige Abweichungen toleriert werden, ohne den Betrieb zu stören.
 
-## **Conclusion**
+## **Fazit**
 
-The "Promised Delivery Date Comparison" card helps streamline supply chain operations by enabling precise monitoring of delivery timelines. With its ability to incorporate tolerances and flexible comparison operators, it ensures adherence to delivery expectations while avoiding unnecessary alerts for minor deviations. This enhances vendor management and overall workflow efficiency.
+Die Karte "Promised Delivery Date Comparison" hilft, Lieferkettenprozesse zu optimieren, indem sie eine präzise Überwachung von Lieferterminen ermöglicht. Mit ihrer Fähigkeit, Toleranzen und flexible Vergleichsoperatoren einzubeziehen, stellt sie die Einhaltung von Liefererwartungen sicher und vermeidet gleichzeitig unnötige Warnungen bei geringfügigen Abweichungen. Dies verbessert das Lieferantenmanagement und die Workflow-Effizienz insgesamt.

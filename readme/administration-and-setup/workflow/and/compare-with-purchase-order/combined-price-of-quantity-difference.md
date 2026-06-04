@@ -1,54 +1,51 @@
 # Combined Price of Quantity Difference
 
-(English content below - Translation pending)
-
-
 <figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose**:
+## **Zweck**:
 
-This workflow card evaluates the combined price of a quantity difference, comparing it against a specified value. It helps automate actions based on price and quantity discrepancies across related documents, improving procurement and receiving workflows. **Version 4** expands this functionality by allowing comparisons between different entities such as the purchase order, received quantities, and the document itself, adding more flexibility and control to the workflow.
+Diese Workflow-Karte wertet den kombinierten Preis einer Mengendifferenz aus und vergleicht ihn mit einem angegebenen Wert. Sie hilft, Aktionen auf Basis von Preis- und Mengenabweichungen über zusammengehörige Dokumente hinweg zu automatisieren und verbessert so Beschaffungs- und Wareneingangs-Workflows. **Version 4** erweitert diese Funktionalität, indem sie Vergleiche zwischen verschiedenen Entitäten wie der Bestellung, den erhaltenen Mengen und dem Dokument selbst ermöglicht und so mehr Flexibilität und Kontrolle in den Workflow bringt.
 
-## **Components of the Card**:
+## **Bestandteile der Karte**:
 
 1. **Operator**:&#x20;
-   * **Description:** The condition for comparing the combined price against a specified value.
-   * **Options:**
-     * **Equals (=)**: Checks if the combined price matches the specified value.
-     * **Not Equals (≠)**: Ensures the combined price is different from the specified value.
-     * **Greater Than (>)**: Verifies if the combined price is greater than the specified value.
-     * **Greater or Equals (≥)**: Checks if the combined price is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the combined price is less than the specified value.
-     * **Lesser or Equals (≤)**: Checks if the combined price is less than or equal to the specified value
-2. **Value**:&#x20;
-   * **Description:** Specifies the value against which the combined  price of quantity value will be compared.
-   * **Detail:** The value has to be a numeric value.
+   * **Beschreibung:** Die Bedingung für den Vergleich des kombinierten Preises mit einem angegebenen Wert.
+   * **Optionen:**
+     * **Gleich (=)**: Prüft, ob der kombinierte Preis mit dem angegebenen Wert übereinstimmt.
+     * **Ungleich (≠)**: Stellt sicher, dass sich der kombinierte Preis vom angegebenen Wert unterscheidet.
+     * **Größer als (>)**: Überprüft, ob der kombinierte Preis größer als der angegebene Wert ist.
+     * **Größer oder gleich (≥)**: Prüft, ob der kombinierte Preis größer oder gleich dem angegebenen Wert ist.
+     * **Kleiner als (<)**: Überprüft, ob der kombinierte Preis kleiner als der angegebene Wert ist.
+     * **Kleiner oder gleich (≤)**: Prüft, ob der kombinierte Preis kleiner oder gleich dem angegebenen Wert ist.
+2. **Wert**:&#x20;
+   * **Beschreibung:** Gibt den Wert an, mit dem der kombinierte Preis der Mengendifferenz verglichen wird.
+   * **Detail:** Der Wert muss ein numerischer Wert sein.
 
-## **Additional Components in Version 4**:
+## **Zusätzliche Komponenten in Version 4**:
 
-* **Comparison Type**: Selects the entities to compare. The options include:
-  * **Purchase Order to Document**: Compares the quantities and prices between the purchase order and the related document.
-  * **Received to Document**: Compares the received quantities to the quantities in the document.
-  * **Purchase Order to Received**: Compares the purchase order quantities to the received quantities.
+* **Vergleichstyp**: Wählt die zu vergleichenden Entitäten aus. Die Optionen umfassen:
+  * **Purchase Order to Document**: Vergleicht die Mengen und Preise zwischen der Bestellung und dem zugehörigen Dokument.
+  * **Received to Document**: Vergleicht die erhaltenen Mengen mit den Mengen im Dokument.
+  * **Purchase Order to Received**: Vergleicht die Bestellmengen mit den erhaltenen Mengen.
 
-## **Functionality**:
+## **Funktionalität**:
 
-* **Condition Evaluation**: Calculates the combined price by multiplying the quantity difference by the price per unit and compares it against the specified value using the selected operator.\
-  **Version 4** adds the option to compare additional entities based on the user’s configuration, such as purchase order to received or purchase order to document.
-* **Action Execution**: Based on whether the combined price meets the specified condition, the workflow will continue with true or false conditions to trigger actions or halt the workflow. **Version 4** also allows for more dynamic action execution, where the condition type (e.g., purchase order to received) influences the next step.
+* **Bedingungsauswertung**: Berechnet den kombinierten Preis, indem die Mengendifferenz mit dem Preis pro Einheit multipliziert wird, und vergleicht ihn mithilfe des ausgewählten Operators mit dem angegebenen Wert.\
+  **Version 4** fügt die Option hinzu, je nach Benutzerkonfiguration zusätzliche Entitäten zu vergleichen, etwa Bestellung zu Erhalten oder Bestellung zu Dokument.
+* **Ausführung der Aktion**: Abhängig davon, ob der kombinierte Preis die angegebene Bedingung erfüllt, wird der Workflow mit True- oder False-Bedingungen fortgesetzt, um Aktionen auszulösen oder den Workflow anzuhalten. **Version 4** ermöglicht außerdem eine dynamischere Aktionsausführung, bei der der Bedingungstyp (z. B. Bestellung zu Erhalten) den nächsten Schritt beeinflusst.
 
-## **Setup and Configuration**:
+## **Einrichtung und Konfiguration**:
 
-* **Version 3**: Users configure the card by selecting the document fields for the quantity difference and price per unit. The operator is then chosen to define how the combined price will be compared to the specified value. Finally, users set the continue condition (true or false), which dictates the next step in the workflow.
-* **Version 4**: In addition to the configuration in **Version 3**, users have an additional option to configure the **Comparison Type**. This defines what entities will be compared, such as **Purchase Order to Document**, **Received to Document**, or **Purchase Order to Received**.
+* **Version 3**: Benutzer konfigurieren die Karte, indem sie die Dokumentfelder für die Mengendifferenz und den Preis pro Einheit auswählen. Anschließend wird der Operator gewählt, um festzulegen, wie der kombinierte Preis mit dem angegebenen Wert verglichen wird. Schließlich legen die Benutzer die Fortsetzungsbedingung (True oder False) fest, die den nächsten Schritt im Workflow bestimmt.
+* **Version 4**: Zusätzlich zur Konfiguration aus **Version 3** haben Benutzer die Option, den **Vergleichstyp** zu konfigurieren. Dieser legt fest, welche Entitäten verglichen werden, etwa **Purchase Order to Document**, **Received to Document** oder **Purchase Order to Received**.
 
-## **Example Scenario**:
+## **Beispiel-Szenario**:
 
-* An invoice shows 50 units of a product at $100 each, totaling $5000. The related purchase order authorized a purchase of $4500 for 45 units. The quantity difference is 5 units, and the combined price of the difference is $500. The card compares the purchase order quantity (45 units) to the received quantity (50 units) and checks if the combined price is greater than $400 (the specified value). Using the **Greater Than (>)** operator, the card identifies the discrepancy and flags it for review by the finance team.
+* Eine Rechnung weist 50 Einheiten eines Produkts zu je 100 $ aus, insgesamt 5000 $. Die zugehörige Bestellung autorisierte einen Einkauf von 4500 $ für 45 Einheiten. Die Mengendifferenz beträgt 5 Einheiten, und der kombinierte Preis der Differenz beträgt 500 $. Die Karte vergleicht die Bestellmenge (45 Einheiten) mit der erhaltenen Menge (50 Einheiten) und prüft, ob der kombinierte Preis größer als 400 $ (der angegebene Wert) ist. Mit dem Operator **Größer als (>)** erkennt die Karte die Abweichung und markiert sie zur Prüfung durch das Finanzteam.
 
-## **Conclusion**:
+## **Fazit**:
 
-**Version 3** of the "Combined Price of Quantity Difference" workflow card offers a straightforward approach for comparing quantity discrepancies and triggering actions based on price thresholds.\
-**Version 4** extends this functionality by allowing comparisons between different entities (purchase order, received, document), providing more flexibility and control over the workflow. Organizations can now automate more complex scenarios and enforce tighter control over their procurement and receiving processes.
+**Version 3** der Workflow-Karte "Combined Price of Quantity Difference" bietet einen unkomplizierten Ansatz, um Mengenabweichungen zu vergleichen und Aktionen auf Basis von Preisschwellen auszulösen.\
+**Version 4** erweitert diese Funktionalität, indem sie Vergleiche zwischen verschiedenen Entitäten (Bestellung, Erhalten, Dokument) ermöglicht und so mehr Flexibilität und Kontrolle über den Workflow bietet. Organisationen können nun komplexere Szenarien automatisieren und eine engere Kontrolle über ihre Beschaffungs- und Wareneingangsprozesse durchsetzen.

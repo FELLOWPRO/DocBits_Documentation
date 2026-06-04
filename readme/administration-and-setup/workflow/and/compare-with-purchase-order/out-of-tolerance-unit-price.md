@@ -2,43 +2,43 @@
 
 <figure><img src="../../../../.gitbook/assets/image (272).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Zweck:**
 
-This workflow card is designed to evaluate whether the combined value of unit prices and a specified field exceeds or falls short of a defined threshold. It helps identify any discrepancies where the unit prices, when combined with other fields, are out of tolerance, ensuring that pricing conditions meet expectations and flagging any issues for review or further action.
+Diese Workflow-Karte ist darauf ausgelegt auszuwerten, ob der kombinierte Wert aus Stückpreisen und einem angegebenen Feld einen definierten Schwellenwert über- oder unterschreitet. Sie hilft, Abweichungen zu erkennen, bei denen die Stückpreise in Kombination mit anderen Feldern außerhalb der Toleranz liegen, stellt sicher, dass die Preisbedingungen den Erwartungen entsprechen, und markiert etwaige Probleme zur Prüfung oder weiteren Bearbeitung.
 
-## **Components of the Card:**
+## **Bestandteile der Karte:**
 
-1. **Field Name:**
-   * **Description**: Specifies the document field that contains the value to be combined with the unit price.
-   * **Detail**: The value in this field will be combined with the unit price to create the total combined value for comparison.
+1. **Feldname:**
+   * **Beschreibung**: Gibt das Dokumentfeld an, das den mit dem Stückpreis zu kombinierenden Wert enthält.
+   * **Detail**: Der Wert in diesem Feld wird mit dem Stückpreis kombiniert, um den kombinierten Gesamtwert für den Vergleich zu bilden.
 2. **Operator:**
-   * **Description**: Defines the condition for comparing the combined value of the unit price and the field value against the specified value.
-   * **Options**:
-     * **Equals (=)**: Verifies if the combined value of the unit price and the field matches the specified value.
-     * **Not Equals (≠)**: Ensures the combined value of the unit price and the field is different from the specified value.
-     * **Greater Than (>)**: Verifies if the combined value of the unit price and the field exceeds the specified value.
-     * **Greater or Equals (≥)**: Verifies if the combined value of the unit price and the field is greater than or equal to the specified value.
-     * **Lesser Than (<)**: Verifies if the combined value of the unit price and the field is less than the specified value.
-     * **Lesser or Equals (≤)**: Verifies if the combined value of the unit price and the field is less than or equal to the specified value.
-3. **Value:**
-   * **Description**: Specifies the value against which the combined unit price and field value will be compared.
-   * **Detail**: This numeric value represents the threshold for comparison. If the combined value of the unit price and field exceeds or falls short of this value (based on the selected operator), the condition will trigger the specified actions.
+   * **Beschreibung**: Legt die Bedingung für den Vergleich des kombinierten Werts aus Stückpreis und Feldwert mit dem angegebenen Wert fest.
+   * **Optionen**:
+     * **Gleich (=)**: Überprüft, ob der kombinierte Wert aus Stückpreis und Feld mit dem angegebenen Wert übereinstimmt.
+     * **Ungleich (≠)**: Stellt sicher, dass sich der kombinierte Wert aus Stückpreis und Feld vom angegebenen Wert unterscheidet.
+     * **Größer als (>)**: Überprüft, ob der kombinierte Wert aus Stückpreis und Feld den angegebenen Wert übersteigt.
+     * **Größer oder gleich (≥)**: Überprüft, ob der kombinierte Wert aus Stückpreis und Feld größer oder gleich dem angegebenen Wert ist.
+     * **Kleiner als (<)**: Überprüft, ob der kombinierte Wert aus Stückpreis und Feld kleiner als der angegebene Wert ist.
+     * **Kleiner oder gleich (≤)**: Überprüft, ob der kombinierte Wert aus Stückpreis und Feld kleiner oder gleich dem angegebenen Wert ist.
+3. **Wert:**
+   * **Beschreibung**: Gibt den Wert an, mit dem der kombinierte Wert aus Stückpreis und Feld verglichen wird.
+   * **Detail**: Dieser numerische Wert stellt den Schwellenwert für den Vergleich dar. Über- oder unterschreitet der kombinierte Wert aus Stückpreis und Feld diesen Wert (je nach ausgewähltem Operator), löst die Bedingung die festgelegten Aktionen aus.
 
-## **Functionality:**
+## **Funktionalität:**
 
-* &#x20;**Condition Evaluation:** The system calculates the combined value by multiplying or adding the unit price with the field value, depending on the configuration. The result is then compared to the specified value using the selected operator. If the condition is met (i.e., the combined value is out of tolerance), the workflow proceeds with the next step, whether that’s approval, rejection, or further review.
-* **Action Execution:**
-  * **True Condition**: If the comparison results in true (i.e., the combined value meets the condition), the workflow triggers the action associated with the true condition (e.g., approval or notification).
-  * **False Condition**: If the comparison results in false (i.e., the combined value does not meet the condition), the workflow will not proceed.
+* **Bedingungsauswertung:** Das System berechnet den kombinierten Wert, indem es je nach Konfiguration den Stückpreis mit dem Feldwert multipliziert oder addiert. Das Ergebnis wird anschließend mithilfe des ausgewählten Operators mit dem angegebenen Wert verglichen. Ist die Bedingung erfüllt (d. h. der kombinierte Wert liegt außerhalb der Toleranz), fährt der Workflow mit dem nächsten Schritt fort, sei es Freigabe, Ablehnung oder weitere Prüfung.
+* **Ausführung der Aktion:**
+  * **Bedingung erfüllt (True)**: Ergibt der Vergleich „wahr“ (d. h. der kombinierte Wert erfüllt die Bedingung), löst der Workflow die mit der True-Bedingung verknüpfte Aktion aus (z. B. Freigabe oder Benachrichtigung).
+  * **Bedingung nicht erfüllt (False)**: Ergibt der Vergleich „falsch“ (d. h. der kombinierte Wert erfüllt die Bedingung nicht), wird der Workflow nicht fortgesetzt.
 
-## **Setup and Configuration:**
+## **Einrichtung und Konfiguration:**
 
-* Users select the field that contains the value to be combined with the unit price. Next, they choose the appropriate operator to determine how the combined value will be compared to the specified value. Finally, the user sets the value that the combined price will be compared to.
+* Benutzer wählen das Feld aus, das den mit dem Stückpreis zu kombinierenden Wert enthält. Anschließend wählen sie den passenden Operator, um festzulegen, wie der kombinierte Wert mit dem angegebenen Wert verglichen wird. Zuletzt legt der Benutzer den Wert fest, mit dem der kombinierte Preis verglichen wird.
 
-## **Example Scenario:**
+## **Beispiel-Szenario:**
 
-* An invoice lists 50 units of a product at $30 each, totaling $1500. The related document has a quantity field with a value of 10. The combined price is calculated by multiplying the unit price ($30) and the quantity (10), resulting in $300. The card then compares this combined value to a threshold of $250. Using the “Greater Than” operator, the card identifies that $300 is greater than $250, triggering an approval process for the document.
+* Eine Rechnung führt 50 Einheiten eines Produkts zu je 30 $ auf, insgesamt 1500 $. Das zugehörige Dokument hat ein Mengenfeld mit dem Wert 10. Der kombinierte Preis wird berechnet, indem der Stückpreis (30 $) mit der Menge (10) multipliziert wird, was 300 $ ergibt. Die Karte vergleicht diesen kombinierten Wert anschließend mit einem Schwellenwert von 250 $. Mit dem Operator "Größer als" stellt die Karte fest, dass 300 $ größer als 250 $ sind, und löst einen Freigabeprozess für das Dokument aus.
 
-## **Conclusion:**
+## **Fazit:**
 
-The "Out of Tolerance Unit Prices Combined with Fields" workflow card helps ensure that pricing and field values are in alignment with business rules. By automating this check, organizations can identify discrepancies early in the process, ensuring that any out-of-tolerance unit prices are flagged for review or necessary action.
+Die Workflow-Karte "Out of Tolerance Unit Prices Combined with Fields" hilft sicherzustellen, dass Preis- und Feldwerte mit den Geschäftsregeln übereinstimmen. Durch die Automatisierung dieser Prüfung können Organisationen Abweichungen frühzeitig im Prozess erkennen und so sicherstellen, dass außerhalb der Toleranz liegende Stückpreise zur Prüfung oder zur erforderlichen Maßnahme markiert werden.

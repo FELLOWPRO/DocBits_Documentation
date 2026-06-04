@@ -2,27 +2,27 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_invoice.png" alt="DocBits Faktura"><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
+Ten tytuł sugeruje, że konfigurowana reguła lub warunek został zaprojektowany do obsługi faktur, w których łączna kwota jest mniejsza lub równa określonej maksymalnej kwocie.
 
-#### Rule Configuration:
+#### Konfiguracja reguły:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
+   * **Document Type is Invoice**: Ten warunek sprawdza, czy przetwarzany dokument jest fakturą. Jest to kluczowe, aby zapewnić, że reguła ma zastosowanie tylko do faktur, a nie do innych typów dokumentów.
 2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+   * **Document Status is Pending Approval**: To określa, że faktura musi mieć status "Pending Approval". Ta kontrola statusu zapewnia, że reguła ma zastosowanie tylko do faktur oczekujących na zatwierdzenie.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: Ten warunek porównuje łączną kwotę faktury z maksymalną autoryzowaną kwotą osoby zatwierdzającej. Jeśli łączna kwota faktury jest mniejsza lub równa tej maksymalnej kwocie, reguła przechodzi do następnego kroku. Prawdopodobnie obejmuje to poziom tolerancji, który dopuszcza niewielkie odchylenia w określonych granicach.
 
 #### Action (Then…):
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Approver Name, use user User as fallback**: Jeśli określone warunki są spełnione, faktura jest automatycznie przypisywana do osoby zatwierdzającej, której nazwa jest określona w polu. Jeśli to pole jest puste lub niedostępne, przypisywany jest domyślny użytkownik (prawdopodobnie administrator lub inny wyznaczony pracownik) jako rozwiązanie zapasowe do obsługi zatwierdzenia.
 
-#### Interface Elements:
+#### Elementy interfejsu:
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+* **Add Card**: Ten przycisk prawdopodobnie umożliwia użytkownikom dodawanie kolejnych warunków lub akcji do reguły, zwiększając elastyczność i specyficzność przepływu pracy.
+* **Save**: Zapisuje skonfigurowaną regułę w systemie.
 
-#### Purpose of This Rule:
+#### Cel tej reguły:
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+Ta konfiguracja została zaprojektowana w celu usprawnienia procesu zatwierdzania faktur poprzez automatyczne kierowanie faktur do odpowiedniej osoby zatwierdzającej na podstawie kwoty oraz zapewnienie, że tylko te w określonym progu są obsługiwane w ten zautomatyzowany sposób. Pomaga to w zarządzaniu kontrolami finansowymi i przyspiesza przepływ pracy poprzez redukcję ręcznych kontroli dla każdej faktury.
 
 \

@@ -2,25 +2,25 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_6.png" alt="DocBits Zakup Zamówienie Eksport 6"><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase for purchase invoices with an emphasis on the quantity details, ensuring that the quantities on the invoice match those on the original purchase order.
+Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim etapem zatwierdzania faktur zakupowych z naciskiem na szczegóły ilości, zapewniając, że ilości na fakturze są zgodne z tymi w oryginalnym zamówieniu zakupu.
 
-#### Rule Configuration:
+#### Konfiguracja reguły:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents identified as invoices, which is crucial for directing the workflow accurately.
+   * **Document Type is Invoice**: Ten warunek zapewnia, że reguła jest aktywowana tylko dla dokumentów zidentyfikowanych jako faktury, co jest kluczowe dla dokładnego kierowania przepływem pracy.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is currently pending a second approval. This stage often provides additional oversight to ensure accuracy before the transaction is finalized.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further specifies that the rule applies only to invoices categorized specifically as "Purchase Invoices," differentiating them from other types of invoices.
-   * **Logic Quantity in order confirmation Equals purchase order**: This condition checks if the quantity listed in the order confirmation matches the quantity in the purchase order. It ensures that the invoice processing only moves forward if the quantities are consistent, which is critical for inventory management and financial accuracy.
+   * **Document Status is Pending Second Approval**: To określa, że faktura aktualnie oczekuje na drugie zatwierdzenie. Ten etap często zapewnia dodatkowy nadzór, aby zapewnić dokładność przed sfinalizowaniem transakcji.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ten warunek dodatkowo określa, że reguła ma zastosowanie tylko do faktur sklasyfikowanych konkretnie jako "Purchase Invoices", odróżniając je od innych typów faktur.
+   * **Logic Quantity in order confirmation Equals purchase order**: Ten warunek sprawdza, czy ilość wymieniona w potwierdzeniu zamówienia jest zgodna z ilością w zamówieniu zakupu. Zapewnia, że przetwarzanie faktury postępuje tylko wtedy, gdy ilości są spójne, co jest kluczowe dla zarządzania stanami magazynowymi i dokładności finansowej.
 
 #### Action (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (i.e., the quantities match between the order confirmation and the purchase order), the action to "Start Export" is triggered. This likely involves exporting the invoice data for further processing, possibly to another financial system or for reporting purposes.
+* **Start Export**: Gdy faktura spełnia określone warunki (tj. ilości są zgodne między potwierdzeniem zamówienia a zamówieniem zakupu), wyzwalana jest akcja "Start Export". Prawdopodobnie obejmuje to eksport danych faktury do dalszego przetwarzania, ewentualnie do innego systemu finansowego lub na potrzeby raportowania.
 
-#### Purpose of This Rule:
+#### Cel tej reguły:
 
-* **Ensure Accuracy and Consistency**: By verifying that the quantities match between the order confirmation and the purchase order, the system helps maintain inventory accuracy and prevents discrepancies that could affect financial reporting or stock management.
-* **Streamline Financial Processing**: Automating the export of data once the quantities are confirmed reduces manual handling and speeds up the financial processing cycle.
-* **Enhance Compliance and Oversight**: Requiring a second approval for quantity verification adds an extra layer of oversight, crucial for compliance with financial policies and controls.
+* **Zapewnienie dokładności i spójności**: Poprzez weryfikację, że ilości są zgodne między potwierdzeniem zamówienia a zamówieniem zakupu, system pomaga utrzymać dokładność stanów magazynowych i zapobiega rozbieżnościom, które mogłyby wpłynąć na raportowanie finansowe lub zarządzanie zapasami.
+* **Usprawnienie przetwarzania finansowego**: Automatyzacja eksportu danych po potwierdzeniu ilości redukuje ręczną obsługę i przyspiesza cykl przetwarzania finansowego.
+* **Zwiększenie zgodności i nadzoru**: Wymaganie drugiego zatwierdzenia dla weryfikacji ilości dodaje dodatkową warstwę nadzoru, kluczową dla zgodności z politykami i kontrolami finansowymi.
 
-This rule is a clear example of how workflow automation can be effectively used to ensure precise and efficient handling of financial documents within an organization, particularly in the context of purchase processes that involve large volumes of transactions requiring meticulous validation.
+Ta reguła jest wyraźnym przykładem, jak automatyzacja przepływu pracy może być skutecznie wykorzystywana do zapewnienia precyzyjnej i wydajnej obsługi dokumentów finansowych w organizacji, szczególnie w kontekście procesów zakupowych obejmujących duże wolumeny transakcji wymagających skrupulatnej walidacji.

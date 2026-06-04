@@ -1,36 +1,36 @@
-# Workflow Description: Conditional Export Trigger
+# Opis przepływu pracy: warunkowy wyzwalacz eksportu
 
 
 
 <figure><img src="../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Ustawienia Przepływ pracy"><figcaption></figcaption></figure>
 
-This workflow outlines the conditions under which an export process should be initiated. It ensures that only documents meeting all specified criteria are processed for export, enhancing data integrity and alignment with business rules.
+Ten przepływ pracy określa warunki, w jakich należy zainicjować proces eksportu. Zapewnia, że tylko dokumenty spełniające wszystkie określone kryteria są przetwarzane do eksportu, co zwiększa integralność danych i zgodność z regułami biznesowymi.
 
 ### When:
 
-* A document within the system is evaluated for export eligibility.
+* Dokument w systemie jest oceniany pod kątem kwalifikowalności do eksportu.
 
-### Logic:
+### Logika:
 
-1. **Document Type Check**
-   * The document must be of a certain type (e.g., "Invoice" or "Receipt"). Specify the document type that qualifies for the export process.
-2. **Status Verification**
-   * The document's current status must meet predefined criteria (e.g., "Approved" or "Ready for Export") indicating it is ready for further processing.
-3. **Contextual Conditions**
-   * Additional checks are performed to ensure the document's details align with specific requirements. These checks might involve verifying information within order confirmations or purchase orders. Specify the particular conditions that need to be met. For example:
-     * All items listed in the order confirmation match those in the purchase order.
-     * The total amount in the order confirmation matches the total amount in the purchase order.
-     * The delivery dates specified in the order confirmation align with those in the purchase order.
+1. **Sprawdzenie typu dokumentu**
+   * Dokument musi być określonego typu (np. "Invoice" lub "Receipt"). Określ typ dokumentu, który kwalifikuje się do procesu eksportu.
+2. **Weryfikacja statusu**
+   * Bieżący status dokumentu musi spełniać wstępnie zdefiniowane kryteria (np. "Approved" lub "Ready for Export"), wskazując, że jest gotowy do dalszego przetwarzania.
+3. **Warunki kontekstowe**
+   * Wykonywane są dodatkowe kontrole, aby upewnić się, że szczegóły dokumentu są zgodne z określonymi wymaganiami. Kontrole te mogą obejmować weryfikację informacji w potwierdzeniach zamówień lub zamówieniach zakupu. Określ konkretne warunki, które muszą zostać spełnione. Na przykład:
+     * Wszystkie pozycje wymienione w potwierdzeniu zamówienia są zgodne z tymi w zamówieniu zakupu.
+     * Łączna kwota w potwierdzeniu zamówienia jest zgodna z łączną kwotą w zamówieniu zakupu.
+     * Daty dostawy określone w potwierdzeniu zamówienia są zgodne z tymi w zamówieniu zakupu.
 
 ### Then:
 
 #### Action:
 
 * **Initiate Export**
-  * If all the above conditions are satisfied, the system automatically starts the export process for the document.
-  * This may involve generating an export file, sending data to an external system, or triggering a workflow in another application.
+  * Jeśli wszystkie powyższe warunki są spełnione, system automatycznie rozpoczyna proces eksportu dokumentu.
+  * Może to obejmować wygenerowanie pliku eksportu, wysłanie danych do systemu zewnętrznego lub uruchomienie przepływu pracy w innej aplikacji.
 
-#### Implementation Example:
+#### Przykład implementacji:
 
 ```yaml
 rules:

@@ -2,24 +2,24 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_purchase_order_export_4.png" alt="DocBits Zakup Zamówienie Eksport 4"><figcaption></figcaption></figure>
 
-This title indicates that the rule is specifically configured for managing cost invoices and involves an export action, possibly for reporting, further processing, or integration with other systems.
+Ten tytuł wskazuje, że reguła została specjalnie skonfigurowana do zarządzania fakturami kosztowymi i obejmuje akcję eksportu, prawdopodobnie na potrzeby raportowania, dalszego przetwarzania lub integracji z innymi systemami.
 
-#### Rule Configuration:
+#### Konfiguracja reguły:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents categorized as invoices, maintaining the workflow's specificity to invoice management.
+   * **Document Type is Invoice**: Ten warunek zapewnia, że reguła jest wyzwalana tylko dla dokumentów sklasyfikowanych jako faktury, utrzymując specyficzność przepływu pracy w zarządzaniu fakturami.
 2. **And…**
-   * **Document Field Invoice Sub Type is Equals Cost Invoice**: This specifies that the rule applies only to those invoices that are explicitly marked as "Cost Invoices" in a particular field within the document. This helps in distinguishing them from other types of invoices.
-   * **Document Status is Pending Second Approval**: The invoice must be in a "Pending Second Approval" status. This indicates that the invoice has already undergone an initial approval and is awaiting a second, possibly final, review.
+   * **Document Field Invoice Sub Type is Equals Cost Invoice**: To określa, że reguła ma zastosowanie tylko do tych faktur, które są wyraźnie oznaczone jako "Cost Invoices" w określonym polu w dokumencie. Pomaga to odróżnić je od innych typów faktur.
+   * **Document Status is Pending Second Approval**: Faktura musi mieć status "Pending Second Approval". Oznacza to, że faktura przeszła już wstępne zatwierdzenie i oczekuje na drugi, prawdopodobnie ostateczny, przegląd.
 
 #### Action (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (being a cost invoice and pending second approval), the action to "Start Export" is executed. This could involve sending the invoice data to another system for financial analysis, reporting, or compliance purposes.
+* **Start Export**: Gdy faktura spełnia określone warunki (jest fakturą kosztową i oczekuje na drugie zatwierdzenie), wykonywana jest akcja "Start Export". Może to obejmować wysłanie danych faktury do innego systemu na potrzeby analizy finansowej, raportowania lub zgodności.
 
-#### Purpose of This Rule:
+#### Cel tej reguły:
 
-* **Workflow Efficiency**: This rule helps automate the handling of cost invoices by ensuring they are processed through the necessary approval stages without manual intervention, increasing the speed and accuracy of financial operations.
-* **Control and Compliance**: By requiring a second approval, the system enforces a control mechanism that ensures cost invoices are thoroughly reviewed, enhancing financial oversight.
-* **Integration and Reporting**: The export action suggests that once invoices are fully approved, they may be integrated into other systems for further processing or analysis, which is critical for financial reporting and audits.
+* **Wydajność przepływu pracy**: Ta reguła pomaga zautomatyzować obsługę faktur kosztowych, zapewniając ich przetwarzanie przez niezbędne etapy zatwierdzania bez ręcznej interwencji, zwiększając szybkość i dokładność operacji finansowych.
+* **Kontrola i zgodność**: Wymagając drugiego zatwierdzenia, system egzekwuje mechanizm kontroli, który zapewnia dokładne przejrzenie faktur kosztowych, zwiększając nadzór finansowy.
+* **Integracja i raportowanie**: Akcja eksportu sugeruje, że gdy faktury są w pełni zatwierdzone, mogą zostać zintegrowane z innymi systemami w celu dalszego przetwarzania lub analizy, co jest kluczowe dla raportowania finansowego i audytów.
 
-This kind of rule is vital for organizations that deal with various types of invoices and need to ensure that each type is handled according to specific protocols. It reduces the risk of errors and ensures compliance with internal controls and external regulations.
+Tego rodzaju reguła jest niezbędna dla organizacji, które mają do czynienia z różnymi typami faktur i muszą zapewnić, że każdy typ jest obsługiwany zgodnie z określonymi protokołami. Redukuje ryzyko błędów i zapewnia zgodność z kontrolami wewnętrznymi oraz przepisami zewnętrznymi.

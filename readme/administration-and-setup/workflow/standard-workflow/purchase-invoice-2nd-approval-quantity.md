@@ -2,25 +2,25 @@
 
 <figure><img src="../../../../.gitbook/assets/docbits_approval_invoice_4.png" alt="DocBits Zatwierdzenie Faktura 4"><figcaption></figcaption></figure>
 
-This title indicates that the rule pertains specifically to handling purchase invoices during a secondary approval phase, with a focus on verifying the accuracy of the quantities listed.
+Ten tytuł wskazuje, że reguła dotyczy konkretnie obsługi faktur zakupowych podczas drugiego etapu zatwierdzania, z naciskiem na weryfikację dokładności wymienionych ilości.
 
-#### Rule Configuration:
+#### Konfiguracja reguły:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents classified as invoices. This is essential for maintaining specificity and relevance in the workflow.
+   * **Document Type is Invoice**: Ten warunek zapewnia, że reguła jest aktywowana tylko dla dokumentów sklasyfikowanych jako faktury. Jest to niezbędne do utrzymania specyficzności i trafności w przepływie pracy.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is currently pending a second approval. This stage is typically intended to provide additional oversight before finalizing the invoice.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further refines the rule to apply exclusively to invoices identified as "Purchase Invoices." This categorization helps differentiate them from other invoice types.
-   * **Logic Quantity in order confirmation Not Equals purchase order**: This critical condition checks whether the quantity stated in the order confirmation matches the quantity on the original purchase order. The action is triggered if there is a discrepancy, indicating a potential error or issue that needs resolution.
+   * **Document Status is Pending Second Approval**: To określa, że faktura aktualnie oczekuje na drugie zatwierdzenie. Ten etap ma zwykle zapewnić dodatkowy nadzór przed sfinalizowaniem faktury.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ten warunek dodatkowo zawęża regułę, aby miała zastosowanie wyłącznie do faktur zidentyfikowanych jako "Purchase Invoices". Ta kategoryzacja pomaga odróżnić je od innych typów faktur.
+   * **Logic Quantity in order confirmation Not Equals purchase order**: Ten kluczowy warunek sprawdza, czy ilość podana w potwierdzeniu zamówienia jest zgodna z ilością w oryginalnym zamówieniu zakupu. Akcja jest wyzwalana, jeśli występuje rozbieżność, wskazując na potencjalny błąd lub problem wymagający rozwiązania.
 
 #### Action (Then…):
 
-* **Assign user from field Buyer Name, use user User as fallback**: If the rule's conditions are met (i.e., there's a discrepancy in quantities), the invoice is automatically assigned to the person listed in the 'Buyer Name' field for further review. If this field is empty or the specified person is unavailable, a default user (likely an administrator or another designated staff member) takes over to ensure timely review and resolution.
+* **Assign user from field Buyer Name, use user User as fallback**: Jeśli warunki reguły są spełnione (tj. występuje rozbieżność w ilościach), faktura jest automatycznie przypisywana do osoby wymienionej w polu 'Buyer Name' w celu dalszego przeglądu. Jeśli to pole jest puste lub określona osoba jest niedostępna, domyślny użytkownik (prawdopodobnie administrator lub inny wyznaczony pracownik) przejmuje obowiązki, aby zapewnić terminowy przegląd i rozwiązanie.
 
-#### Purpose of This Rule:
+#### Cel tej reguły:
 
-* **Accuracy and Compliance**: The rule is vital for ensuring that the invoicing process is accurate and aligns with the terms agreed upon in the purchase order. It helps prevent financial discrepancies and potential inventory errors.
-* **Streamlined Approvals**: Automating the review process for specific discrepancies helps streamline approvals and ensures that any issues are quickly addressed by the appropriate personnel.
-* **Enhanced Financial Oversight**: Requiring a secondary approval for quantity verifications strengthens financial controls and accountability within the organization.
+* **Dokładność i zgodność**: Reguła jest niezbędna do zapewnienia, że proces fakturowania jest dokładny i zgodny z warunkami uzgodnionymi w zamówieniu zakupu. Pomaga zapobiegać rozbieżnościom finansowym i potencjalnym błędom w stanach magazynowych.
+* **Usprawnione zatwierdzenia**: Automatyzacja procesu przeglądu dla określonych rozbieżności pomaga usprawnić zatwierdzenia i zapewnia, że wszelkie problemy są szybko rozwiązywane przez odpowiedni personel.
+* **Wzmocniony nadzór finansowy**: Wymaganie drugiego zatwierdzenia dla weryfikacji ilości wzmacnia kontrole finansowe i odpowiedzialność w organizacji.
 
-This setup exemplifies how workflow automation can be utilized to enhance operational efficiency and ensure financial integrity, particularly in managing complex purchase processes within a company.
+Ta konfiguracja stanowi przykład, jak automatyzacja przepływu pracy może być wykorzystana do zwiększenia wydajności operacyjnej i zapewnienia integralności finansowej, szczególnie w zarządzaniu złożonymi procesami zakupowymi w firmie.

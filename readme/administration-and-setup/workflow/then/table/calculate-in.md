@@ -4,63 +4,63 @@
 
 <figure><img src="../../../../.gitbook/assets/image (295).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Calculate with Regex Dependency"** workflow card allows users to perform calculations between columns in a selected table, with an added condition based on a regular expression (regex) pattern applied to a dependency column. If the pattern matches, the calculation is performed, and the result is stored in the specified result column.
+La scheda di workflow **"Calculate with Regex Dependency"** consente agli utenti di eseguire calcoli tra colonne in una tabella selezionata, con una condizione aggiuntiva basata su un pattern di espressione regolare (regex) applicato a una colonna di dipendenza. Se il pattern corrisponde, il calcolo viene eseguito e il risultato viene memorizzato nella colonna dei risultati specificata.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Table Name**
-   * **Description:** Specifies the **table** in which the columns will be calculated.
-   * **Detail:** A dropdown list of all available **tables** is provided for selection.
+   * **Descrizione:** Specifica la **tabella** in cui verranno calcolate le colonne.
+   * **Dettaglio:** Viene fornito un menu a discesa di tutte le **tabelle** disponibili per la selezione.
 2. **Column Name (1st Column)**
-   * **Description:** Specifies the **first column** involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+   * **Descrizione:** Specifica la **prima colonna** coinvolta nel calcolo.
+   * **Dettaglio:** Viene fornito un elenco di tutte le **colonne** disponibili per la selezione.
 3. **Operation**
-   * **Description:** Defines the mathematical operation to be applied between the selected columns.
-   * **Options:**
-     * **Add (+):** Adds the value of the second column to the value of the first column.
-     * **Subtract (-):** Subtracts the value of the second column from the first column.
-     * **Multiply (\*):** Multiplies the value of the first column by the value in the second column.
-     * **Divide (/):** Divides the value of the first column by the second column.
+   * **Descrizione:** Definisce l'operazione matematica da applicare tra le colonne selezionate.
+   * **Opzioni:**
+     * **Add (+):** Somma il valore della seconda colonna al valore della prima colonna.
+     * **Subtract (-):** Sottrae il valore della seconda colonna dalla prima colonna.
+     * **Multiply (\*):** Moltiplica il valore della prima colonna per il valore della seconda colonna.
+     * **Divide (/):** Divide il valore della prima colonna per la seconda colonna.
 4. **Column Name (2nd Column)**
-   * **Description:** Specifies the **second column** involved in the calculation.
-   * **Detail:** A list of all available **columns** is provided for selection.
+   * **Descrizione:** Specifica la **seconda colonna** coinvolta nel calcolo.
+   * **Dettaglio:** Viene fornito un elenco di tutte le **colonne** disponibili per la selezione.
 5. **Column Name (Dependency)**
-   * **Description:** Specifies the **dependency column** to which the regex pattern will be applied.
-   * **Detail:** A list of all available **columns** is provided for pattern matching.
+   * **Descrizione:** Specifica la **colonna di dipendenza** a cui verrà applicato il pattern regex.
+   * **Dettaglio:** Viene fornito un elenco di tutte le **colonne** disponibili per la corrispondenza del pattern.
 6. **Regex Pattern**
-   * **Description:** Defines the **regex pattern** that will be used to match against the dependency column.
-   * **Detail:** If the value in the dependency column matches the regex pattern, the calculation will be performed.
+   * **Descrizione:** Definisce il **pattern regex** che verrà utilizzato per la corrispondenza con la colonna di dipendenza.
+   * **Dettaglio:** Se il valore nella colonna di dipendenza corrisponde al pattern regex, il calcolo verrà eseguito.
 7. **Result Column**
-   * **Description:** Specifies the **result column** where the calculation result will be stored.
-   * **Detail:** This can be a new or existing column where the calculated value will be stored.
+   * **Descrizione:** Specifica la **colonna dei risultati** in cui verrà memorizzato il risultato del calcolo.
+   * **Dettaglio:** Può essere una colonna nuova o esistente in cui verrà memorizzato il valore calcolato.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation:**
-  * The card only executes its action if both the **"Where"** and **"And Sections"** evaluate as true.
-  * The card only executes its action if the value in the dependency column matches the provided **regex pattern**.
-* **Column Calculation:**\
-  If the regex pattern matches, the card performs the selected mathematical operation between the two chosen columns.
-* **Result Storage:**\
-  The result of the calculation is stored in the selected **result column**.
+* **Valutazione della condizione:**
+  * La scheda esegue la sua azione solo se sia la sezione **"Where"** che la sezione **"And"** risultano vere.
+  * La scheda esegue la sua azione solo se il valore nella colonna di dipendenza corrisponde al **pattern regex** fornito.
+* **Calcolo delle colonne:**\
+  Se il pattern regex corrisponde, la scheda esegue l'operazione matematica selezionata tra le due colonne scelte.
+* **Memorizzazione del risultato:**\
+  Il risultato del calcolo viene memorizzato nella **colonna dei risultati** selezionata.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-* **Select Table:**\
-  Choose the **table** where the columns will be calculated.
-* **Choose Columns:**\
-  Select the **first column** and **second column** that will be used in the calculation.
-* **Select Operation:**\
-  Choose the mathematical operation (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) to be applied between the columns.
-* **Select Dependency Column:**\
-  Choose the **dependency column** where the regex pattern will be applied.
-* **Define Regex Pattern:**\
-  Enter the **regex pattern** that the dependency column should match.
-* **Select Result Column:**\
-  Choose the **result column** where the calculated value will be stored.
+* **Seleziona la tabella:**\
+  Scegli la **tabella** in cui verranno calcolate le colonne.
+* **Scegli le colonne:**\
+  Seleziona la **prima colonna** e la **seconda colonna** che verranno utilizzate nel calcolo.
+* **Seleziona l'operazione:**\
+  Scegli l'operazione matematica (**Add (+)**, **Subtract (-)**, **Multiply (\*)**, **Divide (/)**) da applicare tra le colonne.
+* **Seleziona la colonna di dipendenza:**\
+  Scegli la **colonna di dipendenza** a cui verrà applicato il pattern regex.
+* **Definisci il pattern regex:**\
+  Inserisci il **pattern regex** a cui la colonna di dipendenza dovrebbe corrispondere.
+* **Seleziona la colonna dei risultati:**\
+  Scegli la **colonna dei risultati** in cui verrà memorizzato il valore calcolato.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Calculate with Regex Dependency"** workflow card provides a powerful way to perform calculations with conditional logic based on a regex pattern. This ensures that only rows where the dependency column matches the specified pattern will undergo the specified calculation, and the result is stored in the chosen result column.
+La scheda di workflow **"Calculate with Regex Dependency"** offre un modo potente per eseguire calcoli con logica condizionale basata su un pattern regex. Ciò garantisce che solo le righe in cui la colonna di dipendenza corrisponde al pattern specificato vengano sottoposte al calcolo specificato, e il risultato viene memorizzato nella colonna dei risultati scelta.

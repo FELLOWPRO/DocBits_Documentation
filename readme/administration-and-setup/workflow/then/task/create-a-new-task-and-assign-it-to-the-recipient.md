@@ -2,55 +2,55 @@
 
 <figure><img src="../../../../.gitbook/assets/image (288).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Scopo:**
 
-The **"Create Task with Fallback"** workflow card ensures efficient task delegation by assigning tasks to specific roles—dispatcher or purchaser—while incorporating a fallback mechanism to prevent task assignment failures. This card improves workflow reliability and adaptability in dynamic scenarios.
+La scheda di workflow **"Create Task with Fallback"** garantisce una delega efficiente delle attività assegnandole a ruoli specifici — dispatcher o purchaser — incorporando al contempo un meccanismo di riserva per prevenire i fallimenti nell'assegnazione delle attività. Questa scheda migliora l'affidabilità e l'adattabilità del workflow in scenari dinamici.
 
-## **Components of the Card:**
+## **Componenti della scheda:**
 
 1. **Title**
-   * **Description**: Specifies the title of the task being created.
-   * **Detail**: Provides a concise identifier for the task.
+   * **Descrizione**: Specifica il titolo dell'attività creata.
+   * **Dettaglio**: Fornisce un identificatore conciso per l'attività.
 2. **Description**
-   * **Description**: Describes the purpose or context of the task.
-   * **Detail**: Clarifies the details of the task.
+   * **Descrizione**: Descrive lo scopo o il contesto dell'attività.
+   * **Dettaglio**: Chiarisce i dettagli dell'attività.
 3. **Priority**
-   * **Description**: Sets the urgency level for the task.
-   * **Options**:
-     * **High**: Requires immediate attention.
-     * **Medium**: Important but not urgent.
-     * **Low**: Can be addressed later.
+   * **Descrizione**: Imposta il livello di urgenza dell'attività.
+   * **Opzioni**:
+     * **High**: Richiede attenzione immediata.
+     * **Medium**: Importante ma non urgente.
+     * **Low**: Può essere gestita in seguito.
 4. **Assigned Role**
-   * **Description**: Specifies the primary role to which the task is assigned.
-   * **Options**:
-     * **Disponent**: Assigns the task to the disponent.
-     * **Purchaser**: Assigns the task to the purchaser.
+   * **Descrizione**: Specifica il ruolo principale a cui viene assegnata l'attività.
+   * **Opzioni**:
+     * **Disponent**: Assegna l'attività al disponent.
+     * **Purchaser**: Assegna l'attività al purchaser.
 5. **Email Notification**
-   * **Description**: Enables notifying the assigned user via email.
-   * **Options**:
-     * **True**: Sends an email notification to the user.
-     * **False**: No email notification is sent.
+   * **Descrizione**: Consente di notificare l'utente assegnato via email.
+   * **Opzioni**:
+     * **True**: Invia una notifica email all'utente.
+     * **False**: Non viene inviata alcuna notifica email.
 6. **Fallback User**
-   * **Description**: Provides a fallback option for task assignment if the recipient role is not found.
-   * **Detail**: Allows selecting a user from a dropdown list to ensure task delegation.
+   * **Descrizione**: Fornisce un'opzione di riserva per l'assegnazione dell'attività se il ruolo destinatario non viene trovato.
+   * **Dettaglio**: Consente di selezionare un utente da un menu a discesa per garantire la delega dell'attività.
 
-## **Functionality:**
+## **Funzionalità:**
 
-* **Condition Evaluation**:\
-  The card executes only if the conditions in the **"Where"** and **"And Sections"** are met.
-* **Task Assignment**:
-  * The task is assigned to the selected role (dispatcher or purchaser).
-  * If the specified role is not found, the task is assigned to a user from the fallback dropdown list.
-* **Email Notification**:\
-  Sends an email to the assigned user if email notification is enabled.
+* **Valutazione della condizione**:\
+  La scheda viene eseguita solo se le condizioni nelle sezioni **"Where"** e **"And"** sono soddisfatte.
+* **Assegnazione dell'attività**:
+  * L'attività viene assegnata al ruolo selezionato (dispatcher o purchaser).
+  * Se il ruolo specificato non viene trovato, l'attività viene assegnata a un utente dal menu a discesa di riserva.
+* **Notifica email**:\
+  Invia un'email all'utente assegnato se la notifica email è abilitata.
 
-## **Setup and Configuration:**
+## **Configurazione e impostazione:**
 
-1. **Specify Task Details**: Enter the title, description, and priority of the task.
-2. **Select Primary Role**: Choose the role to which the task will be assigned (dispatcher or purchaser).
-3. **Configure Fallback User**: Select a fallback user from the dropdown list to ensure task assignment if the primary role is not found.
-4. **Enable Email Notification**: Indicate whether the assigned user should receive an email notification.
+1. **Specifica i dettagli dell'attività**: Inserisci il titolo, la descrizione e la priorità dell'attività.
+2. **Seleziona il ruolo principale**: Scegli il ruolo a cui verrà assegnata l'attività (dispatcher o purchaser).
+3. **Configura l'utente di riserva**: Seleziona un utente di riserva dal menu a discesa per garantire l'assegnazione dell'attività se il ruolo principale non viene trovato.
+4. **Abilita la notifica email**: Indica se l'utente assegnato debba ricevere una notifica email.
 
-## **Conclusion:**
+## **Conclusione:**
 
-The **"Create Task with Fallback"** workflow card ensures seamless task delegation by integrating a fallback mechanism. By assigning tasks based on roles and providing an alternate user option, it enhances reliability and flexibility in task management processes.
+La scheda di workflow **"Create Task with Fallback"** garantisce una delega delle attività fluida integrando un meccanismo di riserva. Assegnando le attività in base ai ruoli e offrendo un'opzione di utente alternativo, migliora l'affidabilità e la flessibilità nei processi di gestione delle attività.

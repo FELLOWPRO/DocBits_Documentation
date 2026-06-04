@@ -6,38 +6,38 @@ description: DocBits Workflow Engine
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57 (1).png" alt=""><figcaption></figcaption></figure>
 
-## DocBits Workflow Engine: Simplifying Process Automation
+## DocBits Workflow Engine: Pojednostavljivanje automatizacije procesa
 
 {% embed url="https://youtu.be/YQC13wCqTJI" %}
 
 
-### Introduction
+### Uvod
 
-In the realm of process automation, the DocBits Workflow Engine stands out for its straightforward and intuitive approach. This engine streamlines the creation and management of workflows through a clear and simple rule-based structure. The core principle behind its design is the "Easy When-And-Then" rule, which breaks down the automation process into three fundamental components: Trigger, Condition, and Action. This guide explains how each component functions within the system and how they work together to facilitate seamless automation.
+U oblasti automatizacije procesa, DocBits Workflow Engine se izdvaja svojim jednostavnim i intuitivnim pristupom. Ovaj mehanizam pojednostavljuje kreiranje i upravljanje radnim tokovima kroz jasnu i jednostavnu strukturu zasnovanu na pravilima. Osnovni princip njegovog dizajna je pravilo „Easy When-And-Then“, koje razlaže proces automatizacije na tri osnovne komponente: okidač, uslov i akciju. Ovaj vodič objašnjava kako svaka komponenta funkcioniše unutar sistema i kako one zajedno omogućavaju neometanu automatizaciju.
 
-### The "Easy When-And-Then" Rule Explained
+### Objašnjenje pravila „Easy When-And-Then“
 
-The DocBits Workflow Engine operates on a basic yet powerful principle that makes workflow automation accessible to users of all skill levels. This principle is encapsulated in the "Easy When-And-Then" rule, which can be broken down as follows:
+DocBits Workflow Engine radi na jednostavnom, ali moćnom principu koji čini automatizaciju radnih tokova dostupnom korisnicima svih nivoa veština. Ovaj princip je sažet u pravilu „Easy When-And-Then“, koje se može razložiti na sledeći način:
 
-#### [When](./#when-trigger) (Trigger)
+#### [When](./#when-trigger) (Okidač)
 
-* **Definition**: The "When" component represents the _Trigger_ of the workflow. This is the event or condition that initiates the execution of the workflow. Triggers can be a variety of occurrences such as the arrival of a new email, a specific date and time, or the creation of a new document.
-* **Example**: "When a new customer form is submitted..."
+* **Definicija**: Komponenta „When“ predstavlja _Okidač_ radnog toka. To je događaj ili uslov koji pokreće izvršavanje radnog toka. Okidači mogu biti razne pojave, kao što su dolazak nove e-pošte, određeni datum i vreme ili kreiranje novog dokumenta.
+* **Primer**: „Kada se pošalje novi obrazac za klijenta...“
 
-#### [And](./#and-condition) (Condition)
+#### [And](./#and-condition) (Uslov)
 
-* **Definition**: The "And" component introduces the _Condition_ that must be met for the action to proceed. Conditions serve as filters or criteria that refine the trigger, ensuring that the workflow is executed only under certain circumstances.
-* **Example**: "...and the customer is from the 'Enterprise' segment..."
+* **Definicija**: Komponenta „And“ uvodi _Uslov_ koji mora biti ispunjen da bi se akcija nastavila. Uslovi služe kao filteri ili kriterijumi koji preciziraju okidač, obezbeđujući da se radni tok izvrši samo pod određenim okolnostima.
+* **Primer**: „...i klijent pripada segmentu ‘Enterprise’...“
 
-#### [Then](./#then-action) (Action)
+#### [Then](./#then-action) (Akcija)
 
-* **Definition**: Finally, the "Then" part specifies the _Action_ to be taken once the trigger occurs and the condition is satisfied. Actions are the tasks or operations executed by the workflow, such as sending an email, updating a database, or creating a task in a project management tool.
-* **Example**: "...then assign the lead to the enterprise sales team and send a welcome email."
+* **Definicija**: Konačno, deo „Then“ određuje _Akciju_ koja se preduzima nakon što se okidač desi i uslov bude ispunjen. Akcije su zadaci ili operacije koje radni tok izvršava, kao što su slanje e-pošte, ažuriranje baze podataka ili kreiranje zadatka u alatu za upravljanje projektima.
+* **Primer**: „...onda dodeli potencijalnog klijenta timu prodaje za velike klijente i pošalji e-poruku dobrodošlice.“
 
-### Combining Components for Powerful Automations
+### Kombinovanje komponenti za moćne automatizacije
 
-By assembling these three components—Trigger, Condition, and Action—the DocBits Workflow Engine allows users to create highly customized and efficient workflows. This modular approach not only simplifies the process of setting up automations but also offers the flexibility to create complex workflows capable of handling a wide range of tasks and processes.
+Sklapanjem ove tri komponente — okidača, uslova i akcije — DocBits Workflow Engine omogućava korisnicima da kreiraju veoma prilagođene i efikasne radne tokove. Ovaj modularni pristup ne samo da pojednostavljuje proces postavljanja automatizacija, već nudi i fleksibilnost za kreiranje složenih radnih tokova sposobnih da obrade širok spektar zadataka i procesa.
 
-### Conclusion
+### Zaključak
 
-The DocBits Workflow Engine's "Easy When-And-Then" rule exemplifies the engine's commitment to providing a user-friendly platform for automating processes. This straightforward rule, by breaking down automation into the essential elements of Trigger, Condition, and Action, makes it easier for users to conceptualize, create, and manage workflows. Whether you are new to workflow automation or an experienced professional, the DocBits Workflow Engine offers an efficient and accessible tool to enhance productivity and streamline operations.
+Pravilo „Easy When-And-Then“ DocBits Workflow Engine-a oslikava posvećenost ovog mehanizma pružanju platforme jednostavne za korišćenje za automatizaciju procesa. Ovo jednostavno pravilo, razlažući automatizaciju na osnovne elemente okidača, uslova i akcije, olakšava korisnicima da osmisle, kreiraju i upravljaju radnim tokovima. Bez obzira da li ste novi u automatizaciji radnih tokova ili iskusan profesionalac, DocBits Workflow Engine nudi efikasan i pristupačan alat za povećanje produktivnosti i pojednostavljivanje operacija.

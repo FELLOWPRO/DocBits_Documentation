@@ -2,27 +2,27 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is designed to manage cases where the invoice total is greater than the maximum amount an approver is authorized to handle.
+Ovaj naslov označava da je pravilo dizajnirano za upravljanje slučajevima u kojima ukupan iznos fakture prelazi maksimalan iznos koji je odobravalac ovlašćen da obradi.
 
-#### Rule Configuration:
+#### Konfiguracija pravila:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule applies only to invoices, which is essential for directing the workflow correctly.
+   * **Document Type is Invoice**: Ovaj uslov obezbeđuje da se pravilo primenjuje samo na fakture, što je od suštinskog značaja za pravilno usmeravanje radnog toka.
 2. **And…**
-   * **Document Status is Pending Approval**: The invoice must be in a "Pending Approval" status. This status is crucial to ensure that the rule is applied to invoices that are still being processed and have not yet been finalized.
-   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: This condition checks if the invoice's total amount exceeds the maximum amount an approver is allowed to handle. This comparison might also include a tolerance setting, allowing for minor variations based on predefined criteria.
+   * **Document Status is Pending Approval**: Faktura mora biti u statusu „Pending Approval“. Ovaj status je ključan da bi se obezbedilo da se pravilo primenjuje na fakture koje su još uvek u obradi i koje još nisu finalizovane.
+   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: Ovaj uslov proverava da li ukupan iznos fakture prelazi maksimalan iznos koji je odobravaocu dozvoljeno da obradi. Ovo poređenje može uključivati i podešavanje tolerancije, dopuštajući manje varijacije na osnovu unapred definisanih kriterijuma.
 
-#### Action (Then…):
+#### Akcija (Then…):
 
-* **Assign user from field Next Level Approver, use user User as fallback**: If the invoice exceeds the specified maximum amount, it is automatically assigned to a higher-level approver, indicated by the 'Next Level Approver' field. If this field is not filled or the specified user is unavailable, a default user (likely an admin or another designated staff member) is used as a fallback to ensure the invoice is reviewed without delay.
+* **Assign user from field Next Level Approver, use user User as fallback**: Ako faktura prelazi navedeni maksimalan iznos, automatski se dodeljuje odobravaocu višeg nivoa, naznačenom u polju „Next Level Approver“. Ako ovo polje nije popunjeno ili navedeni korisnik nije dostupan, podrazumevani korisnik (verovatno administrator ili drugi određeni član osoblja) koristi se kao rezervna opcija kako bi se obezbedilo da faktura bude pregledana bez odlaganja.
 
-#### Interface Elements:
+#### Elementi interfejsa:
 
-* **Add Card**: This option allows additional conditions or actions to be added to the rule, providing flexibility to address complex scenarios.
-* **Save**: This button saves the rule configuration to the system.
+* **Add Card**: Ova opcija omogućava dodavanje dodatnih uslova ili akcija u pravilo, pružajući fleksibilnost za rešavanje složenih scenarija.
+* **Save**: Ovo dugme čuva konfiguraciju pravila u sistemu.
 
-#### Purpose of This Rule:
+#### Svrha ovog pravila:
 
-The purpose of this rule is to ensure that invoices which exceed certain financial thresholds are reviewed by approvers with the appropriate authorization levels. This helps in maintaining financial control and oversight, ensuring that expenditures are reviewed by personnel with the requisite approval limits, thereby safeguarding the organization against unauthorized or inappropriate expenditures.
+Svrha ovog pravila je da se obezbedi da fakture koje prelaze određene finansijske pragove pregledaju odobravaoci sa odgovarajućim nivoima ovlašćenja. Ovo pomaže u održavanju finansijske kontrole i nadzora, obezbeđujući da troškove pregledaju osobe sa potrebnim limitima odobrenja, čime se organizacija štiti od neovlašćenih ili neprimerenih troškova.
 
-This rule, like the previous one, helps automate the workflow, reducing manual effort and enhancing compliance with the organization's financial policies. It is an example of how workflow automation can be effectively used to manage complex financial processes within a company.
+Ovo pravilo, kao i prethodno, pomaže u automatizaciji radnog toka, smanjujući ručni rad i poboljšavajući usklađenost sa finansijskim politikama organizacije. To je primer kako se automatizacija radnog toka može efikasno koristiti za upravljanje složenim finansijskim procesima u okviru kompanije.

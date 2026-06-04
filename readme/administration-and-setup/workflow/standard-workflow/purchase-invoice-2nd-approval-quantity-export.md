@@ -2,25 +2,25 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase for purchase invoices with an emphasis on the quantity details, ensuring that the quantities on the invoice match those on the original purchase order.
+Ovaj naslov označava da je pravilo podešeno za upravljanje fazom drugog odobrenja za fakture nabavke sa naglaskom na detalje o količini, obezbeđujući da količine na fakturi odgovaraju onima na originalnoj narudžbenici.
 
-#### Rule Configuration:
+#### Konfiguracija pravila:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents identified as invoices, which is crucial for directing the workflow accurately.
+   * **Document Type is Invoice**: Ovaj uslov obezbeđuje da se pravilo aktivira samo za dokumente identifikovane kao fakture, što je od ključnog značaja za tačno usmeravanje radnog toka.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is currently pending a second approval. This stage often provides additional oversight to ensure accuracy before the transaction is finalized.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further specifies that the rule applies only to invoices categorized specifically as "Purchase Invoices," differentiating them from other types of invoices.
-   * **Logic Quantity in order confirmation Equals purchase order**: This condition checks if the quantity listed in the order confirmation matches the quantity in the purchase order. It ensures that the invoice processing only moves forward if the quantities are consistent, which is critical for inventory management and financial accuracy.
+   * **Document Status is Pending Second Approval**: Ovo određuje da faktura trenutno čeka drugo odobrenje. Ova faza često pruža dodatni nadzor kako bi se obezbedila tačnost pre finalizacije transakcije.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ovaj uslov dodatno određuje da se pravilo primenjuje samo na fakture kategorizovane posebno kao „Purchase Invoices“, razlikujući ih od drugih vrsta faktura.
+   * **Logic Quantity in order confirmation Equals purchase order**: Ovaj uslov proverava da li količina navedena u potvrdi porudžbine odgovara količini u narudžbenici. Obezbeđuje da obrada fakture nastavlja dalje samo ako su količine konzistentne, što je od ključnog značaja za upravljanje zalihama i finansijsku tačnost.
 
-#### Action (Then…):
+#### Akcija (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (i.e., the quantities match between the order confirmation and the purchase order), the action to "Start Export" is triggered. This likely involves exporting the invoice data for further processing, possibly to another financial system or for reporting purposes.
+* **Start Export**: Kada faktura ispuni navedene uslove (tj. količine se podudaraju između potvrde porudžbine i narudžbenice), pokreće se akcija „Start Export“. Ovo verovatno uključuje izvoz podataka fakture radi dalje obrade, moguće u drugi finansijski sistem ili u svrhu izveštavanja.
 
-#### Purpose of This Rule:
+#### Svrha ovog pravila:
 
-* **Ensure Accuracy and Consistency**: By verifying that the quantities match between the order confirmation and the purchase order, the system helps maintain inventory accuracy and prevents discrepancies that could affect financial reporting or stock management.
-* **Streamline Financial Processing**: Automating the export of data once the quantities are confirmed reduces manual handling and speeds up the financial processing cycle.
-* **Enhance Compliance and Oversight**: Requiring a second approval for quantity verification adds an extra layer of oversight, crucial for compliance with financial policies and controls.
+* **Ensure Accuracy and Consistency**: Verifikacijom da se količine podudaraju između potvrde porudžbine i narudžbenice, sistem pomaže u održavanju tačnosti zaliha i sprečava neslaganja koja bi mogla uticati na finansijsko izveštavanje ili upravljanje zalihama.
+* **Streamline Financial Processing**: Automatizacija izvoza podataka kada se količine potvrde smanjuje ručnu obradu i ubrzava ciklus finansijske obrade.
+* **Enhance Compliance and Oversight**: Zahtevanje drugog odobrenja za verifikaciju količina dodaje dodatni sloj nadzora, ključan za usklađenost sa finansijskim politikama i kontrolama.
 
-This rule is a clear example of how workflow automation can be effectively used to ensure precise and efficient handling of financial documents within an organization, particularly in the context of purchase processes that involve large volumes of transactions requiring meticulous validation.
+Ovo pravilo je jasan primer kako se automatizacija radnog toka može efikasno koristiti za obezbeđivanje precizne i efikasne obrade finansijskih dokumenata u okviru organizacije, posebno u kontekstu procesa nabavke koji uključuju velike količine transakcija koje zahtevaju pažljivu validaciju.

@@ -1,34 +1,34 @@
-# Workflow Example: Conditional Export Trigger
+# Workflow Primer: Uslovni okidač za izvoz
 
 <figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
-This workflow outlines the conditions under which an export process should be initiated. It ensures that only documents meeting all specified criteria are processed for export, enhancing data integrity and alignment with business rules.
+Ovaj radni tok opisuje uslove pod kojima treba pokrenuti proces izvoza. On obezbeđuje da se za izvoz obrađuju samo dokumenti koji ispunjavaju sve navedene kriterijume, čime se poboljšava integritet podataka i usklađenost sa poslovnim pravilima.
 
 ### When:
 
-* A document within the system is evaluated for export eligibility.
+* Dokument u sistemu se procenjuje radi podobnosti za izvoz.
 
-### Logic:
+### Logika:
 
-1. **Document Type Check**
-   * The document must be of a certain type (e.g., "Invoice" or "Receipt"). Specify the document type that qualifies for the export process.
-2. **Status Verification**
-   * The document's current status must meet predefined criteria (e.g., "Approved" or "Ready for Export") indicating it is ready for further processing.
-3. **Contextual Conditions**
-   * Additional checks are performed to ensure the document's details align with specific requirements. These checks might involve verifying information within order confirmations or purchase orders. Specify the particular conditions that need to be met. For example:
-     * All items listed in the order confirmation match those in the purchase order.
-     * The total amount in the order confirmation matches the total amount in the purchase order.
-     * The delivery dates specified in the order confirmation align with those in the purchase order.
+1. **Provera tipa dokumenta**
+   * Dokument mora biti određenog tipa (npr. „Invoice“ ili „Receipt“). Navedite tip dokumenta koji je podoban za proces izvoza.
+2. **Verifikacija statusa**
+   * Trenutni status dokumenta mora ispunjavati unapred definisane kriterijume (npr. „Approved“ ili „Ready for Export“) što ukazuje na to da je spreman za dalju obradu.
+3. **Kontekstualni uslovi**
+   * Vrše se dodatne provere kako bi se obezbedilo da se detalji dokumenta usklađuju sa određenim zahtevima. Ove provere mogu uključivati verifikaciju informacija unutar potvrda porudžbina ili narudžbenica. Navedite određene uslove koji moraju biti ispunjeni. Na primer:
+     * Sve stavke navedene u potvrdi porudžbine odgovaraju onima u narudžbenici.
+     * Ukupan iznos u potvrdi porudžbine odgovara ukupnom iznosu u narudžbenici.
+     * Datumi isporuke navedeni u potvrdi porudžbine usklađeni su sa onima u narudžbenici.
 
 ### Then:
 
-#### Action:
+#### Akcija:
 
-* **Initiate Export**
-  * If all the above conditions are satisfied, the system automatically starts the export process for the document.
-  * This may involve generating an export file, sending data to an external system, or triggering a workflow in another application.
+* **Pokretanje izvoza**
+  * Ako su svi gore navedeni uslovi ispunjeni, sistem automatski pokreće proces izvoza za dokument.
+  * Ovo može uključivati generisanje izvozne datoteke, slanje podataka u eksterni sistem ili pokretanje radnog toka u drugoj aplikaciji.
 
-#### Implementation Example:
+#### Primer implementacije:
 
 ```yaml
 rules:

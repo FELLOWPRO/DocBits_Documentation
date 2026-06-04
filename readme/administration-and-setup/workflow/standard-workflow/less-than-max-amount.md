@@ -2,27 +2,27 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
+Ovaj naslov sugeriše da je pravilo ili uslov koji se podešava dizajniran za obradu faktura kod kojih je ukupan iznos manji ili jednak navedenom maksimalnom iznosu.
 
-#### Rule Configuration:
+#### Konfiguracija pravila:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
+   * **Document Type is Invoice**: Ovaj uslov proverava da li je dokument koji se obrađuje faktura. Ovo je ključno za obezbeđivanje da se pravilo primenjuje samo na fakture, a ne na druge vrste dokumenata.
 2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+   * **Document Status is Pending Approval**: Ovo određuje da faktura mora biti u statusu „Pending Approval“. Ova provera statusa obezbeđuje da se pravilo primenjuje samo na fakture koje čekaju odobrenje.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: Ovaj uslov upoređuje ukupan iznos fakture sa maksimalnim ovlašćenim iznosom odobravaoca. Ako je ukupan iznos fakture manji ili jednak ovom maksimalnom iznosu, pravilo se nastavlja na sledeći korak. Ovo verovatno uključuje nivo tolerancije koji dopušta manja odstupanja u okviru navedenih granica.
 
-#### Action (Then…):
+#### Akcija (Then…):
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Approver Name, use user User as fallback**: Ako su navedeni uslovi ispunjeni, faktura se automatski dodeljuje odobravaocu čije je ime navedeno u polju. Ako je ovo polje prazno ili nedostupno, podrazumevani korisnik (verovatno administrator ili drugi određeni član osoblja) dodeljuje se kao rezervna opcija za obradu odobrenja.
 
-#### Interface Elements:
+#### Elementi interfejsa:
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+* **Add Card**: Ovo dugme verovatno omogućava korisnicima da dodaju više uslova ili akcija u pravilo, povećavajući fleksibilnost i specifičnost radnog toka.
+* **Save**: Čuva konfigurisano pravilo u sistemu.
 
-#### Purpose of This Rule:
+#### Svrha ovog pravila:
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+Ovo podešavanje je dizajnirano da pojednostavi proces odobravanja faktura automatskim usmeravanjem faktura odgovarajućem odobravaocu na osnovu iznosa i obezbeđivanjem da se samo one u okviru određenog praga obrađuju na ovaj automatizovan način. Pomaže u upravljanju finansijskim kontrolama i ubrzava radni tok smanjenjem ručnih provera za svaku fakturu.
 
 \\

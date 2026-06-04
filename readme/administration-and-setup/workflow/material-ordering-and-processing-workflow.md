@@ -7,43 +7,43 @@ description: >-
 
 # Material Ordering and Processing Workflow
 
-This document outlines the workflow for ordering materials from suppliers, receiving goods, and processing invoices with integration between suppliers, INFOR ERP system, and DocBits for document management.
+Ovaj dokument opisuje radni tok za naručivanje materijala od dobavljača, prijem robe i obradu faktura uz integraciju između dobavljača, INFOR ERP sistema i DocBits-a za upravljanje dokumentima.
 
-### Process Overview
+### Pregled procesa
 
-1. **Ordering Materials**
-   * Initiate order with the supplier.
-   * Send the order to the supplier through INFOR.
-2. **Receiving Order Confirmation**
-   * Supplier confirms the receipt of the order.
-   * Creation and sending of order confirmation.
-3. **Goods Receipt and Inspection**
-   * Receive goods from the supplier.
-   * Post goods receipt in INFOR and check against the delivery bill.
-4. **Invoice Processing**
-   * Receive invoice and send to DocBits for processing.
-   * Check and verify invoice details with order and goods receipt.
-5. **Final Steps**
-   * Archive the order and related documents in DocBits.
-   * Update INFOR with transaction details for financial accounting.
+1. **Naručivanje materijala**
+   * Pokrenite porudžbinu kod dobavljača.
+   * Pošaljite porudžbinu dobavljaču putem INFOR-a.
+2. **Prijem potvrde porudžbine**
+   * Dobavljač potvrđuje prijem porudžbine.
+   * Kreiranje i slanje potvrde porudžbine.
+3. **Prijem i kontrola robe**
+   * Primite robu od dobavljača.
+   * Proknjižite prijem robe u INFOR-u i uporedite sa otpremnicom.
+4. **Obrada fakture**
+   * Primite fakturu i pošaljite je u DocBits na obradu.
+   * Proverite i verifikujte detalje fakture sa porudžbinom i prijemom robe.
+5. **Završni koraci**
+   * Arhivirajte porudžbinu i povezane dokumente u DocBits-u.
+   * Ažurirajte INFOR sa detaljima transakcije za finansijsko knjigovodstvo.
 
-### Decision Points and Actions
+### Tačke odlučivanja i akcije
 
-* **Does the received goods match the order?**
-  * Yes: Proceed with invoice processing.
-  * No: Manual check and update required.
-* **Is the invoice correct according to the goods received and order details?**
-  * Yes: Complete the transaction and update financial records.
-  * No: Further examination and corrections needed.
+* **Da li primljena roba odgovara porudžbini?**
+  * Da: Nastavite sa obradom fakture.
+  * Ne: Potrebna je ručna provera i ažuriranje.
+* **Da li je faktura ispravna u skladu sa primljenom robom i detaljima porudžbine?**
+  * Da: Završite transakciju i ažurirajte finansijske evidencije.
+  * Ne: Potrebno je dodatno ispitivanje i ispravke.
 
-### Integration Points
+### Tačke integracije
 
-* **INFOR ERP**: Main system for order processing, goods receipt, and financial accounting.
-* **DocBits**: Document management for processing and archiving invoices and order confirmations.
+* **INFOR ERP**: Glavni sistem za obradu porudžbina, prijem robe i finansijsko knjigovodstvo.
+* **DocBits**: Upravljanje dokumentima za obradu i arhiviranje faktura i potvrda porudžbina.
 
-### Notes
+### Napomene
 
-* Ensure all documents are verified and archived for record-keeping.
-* Discrepancies in order or invoice details must be resolved promptly to avoid delays.
+* Obezbedite da su svi dokumenti verifikovani i arhivirani radi vođenja evidencije.
+* Neslaganja u detaljima porudžbine ili fakture moraju se rešavati blagovremeno kako bi se izbegla kašnjenja.
 
 <figure><img src="../../.gitbook/assets/embed (1).svg" alt=""><figcaption></figcaption></figure>

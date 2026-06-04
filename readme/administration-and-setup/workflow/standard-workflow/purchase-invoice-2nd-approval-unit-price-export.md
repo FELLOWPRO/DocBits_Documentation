@@ -2,25 +2,25 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase of purchase invoices with a focus on the unit price, ensuring it matches the agreed terms.
+Ovaj naslov označava da je pravilo podešeno za upravljanje fazom drugog odobrenja faktura nabavke sa fokusom na jediničnu cenu, obezbeđujući da odgovara dogovorenim uslovima.
 
-#### Rule Configuration:
+#### Konfiguracija pravila:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents identified as invoices, which is crucial for directing the workflow accurately.
+   * **Document Type is Invoice**: Ovaj uslov obezbeđuje da se pravilo aktivira samo za dokumente identifikovane kao fakture, što je od ključnog značaja za tačno usmeravanje radnog toka.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is awaiting a second approval. This stage often provides additional oversight to ensure accuracy before finalizing the transaction.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further specifies that the rule applies only to invoices categorized specifically as "Purchase Invoices," differentiating them from other types of invoices.
-   * **Logic Unit Price in order confirmation Equals purchase order**: This condition checks if the unit price listed in the order confirmation matches the unit price in the purchase order. It ensures that the invoice processing only moves forward if there is consistency in pricing, which is critical for budgeting and financial reporting.
+   * **Document Status is Pending Second Approval**: Ovo određuje da faktura čeka drugo odobrenje. Ova faza često pruža dodatni nadzor kako bi se obezbedila tačnost pre finalizacije transakcije.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ovaj uslov dodatno određuje da se pravilo primenjuje samo na fakture kategorizovane posebno kao „Purchase Invoices“, razlikujući ih od drugih vrsta faktura.
+   * **Logic Unit Price in order confirmation Equals purchase order**: Ovaj uslov proverava da li jedinična cena navedena u potvrdi porudžbine odgovara jediničnoj ceni u narudžbenici. Obezbeđuje da obrada fakture nastavlja dalje samo ako postoji konzistentnost u ceni, što je od ključnog značaja za budžetiranje i finansijsko izveštavanje.
 
-#### Action (Then…):
+#### Akcija (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (i.e., the unit prices match between the order confirmation and the purchase order), the action to "Start Export" is triggered. This likely involves exporting the invoice data for further processing, possibly to another financial system or for reporting purposes.
+* **Start Export**: Kada faktura ispuni navedene uslove (tj. jedinične cene se podudaraju između potvrde porudžbine i narudžbenice), pokreće se akcija „Start Export“. Ovo verovatno uključuje izvoz podataka fakture radi dalje obrade, moguće u drugi finansijski sistem ili u svrhu izveštavanja.
 
-#### Purpose of This Rule:
+#### Svrha ovog pravila:
 
-* **Ensure Accuracy and Consistency**: By verifying that the unit prices match between the order confirmation and the purchase order, the system helps maintain financial accuracy and prevents overcharging or undercharging.
-* **Streamline Financial Processing**: Automating the export of data once the prices are confirmed reduces manual handling and speeds up the financial processing cycle.
-* **Enhance Compliance and Oversight**: Requiring a second approval for price verification adds an extra layer of oversight, which is crucial for compliance with financial policies and controls.
+* **Ensure Accuracy and Consistency**: Verifikacijom da se jedinične cene podudaraju između potvrde porudžbine i narudžbenice, sistem pomaže u održavanju finansijske tačnosti i sprečava prekomerno ili nedovoljno naplaćivanje.
+* **Streamline Financial Processing**: Automatizacija izvoza podataka kada se cene potvrde smanjuje ručnu obradu i ubrzava ciklus finansijske obrade.
+* **Enhance Compliance and Oversight**: Zahtevanje drugog odobrenja za verifikaciju cena dodaje dodatni sloj nadzora, što je od ključnog značaja za usklađenost sa finansijskim politikama i kontrolama.
 
-This rule is an example of how workflow automation can be effectively utilized to ensure precise and efficient handling of financial documents within an organization, particularly in the context of large volumes of transactions that require meticulous validation.
+Ovo pravilo je primer kako se automatizacija radnog toka može efikasno iskoristiti za obezbeđivanje precizne i efikasne obrade finansijskih dokumenata u okviru organizacije, posebno u kontekstu velikih količina transakcija koje zahtevaju pažljivu validaciju.

@@ -2,35 +2,35 @@
 
 <figure><img src="../../../.gitbook/assets/DocBits-APWorkflow-Gronbach.drawio (1) (1).svg" alt=""><figcaption></figcaption></figure>
 
-#### Overview of Workflow Components:
+#### Pregled komponenti radnog toka:
 
-* **AP Invoice Email**: The process likely begins with an invoice received via email.
-* **DocBits**: This tool might be used for initial document management tasks such as capturing and digitizing invoices.
-* **Finance Review**: Invoices undergo a finance review where decisions are made regarding their validity and accuracy.
+* **AP Invoice Email**: Proces verovatno počinje fakturom primljenom putem e-pošte.
+* **DocBits**: Ovaj alat se može koristiti za početne zadatke upravljanja dokumentima, kao što su preuzimanje i digitalizacija faktura.
+* **Finance Review**: Fakture prolaze kroz finansijski pregled u kome se donose odluke o njihovoj validnosti i tačnosti.
 
-#### Steps in the Workflow:
+#### Koraci u radnom toku:
 
 1. **Initial Review**:
-   * Invoices are received and initially processed using DocBits.
-   * They are then reviewed by the finance team to ensure they are removed from the workflow if they are complete, or pushed forward for further processing.
+   * Fakture se primaju i početno obrađuju pomoću DocBits-a.
+   * Zatim ih pregleda finansijski tim kako bi se obezbedilo da budu uklonjene iz radnog toka ako su kompletne, ili prosleđene dalje na dalju obradu.
 2. **PO vs Non-PO Invoices**:
-   * The workflow distinguishes between PO-related and non-PO invoices.
-   * Non-PO invoices are routed for further approval or rejection based on predefined criteria like supplier ID, quantity, unit price, and item number.
+   * Radni tok pravi razliku između faktura povezanih sa narudžbenicom (PO) i onih bez narudžbenice (non-PO).
+   * Fakture bez narudžbenice usmeravaju se na dalje odobrenje ili odbijanje na osnovu unapred definisanih kriterijuma kao što su ID dobavljača, količina, jedinična cena i broj stavke.
 3. **Matching and Mismatching**:
-   * Invoices are checked against goods receipts to ensure that details match (like supplier ID and quantity).
-   * If mismatches occur, the invoice is subject to further review and possibly rejection.
+   * Fakture se proveravaju u odnosu na prijemnice robe kako bi se obezbedilo da se detalji podudaraju (kao što su ID dobavljača i količina).
+   * Ako dođe do neslaganja, faktura podleže daljem pregledu i eventualnom odbijanju.
 4. **Finance and Buyer Review**:
-   * For PO-related invoices, a detailed matching process is conducted involving a buyer review.
-   * Adjustments to purchase orders or goods receipts might be required.
+   * Za fakture povezane sa narudžbenicom sprovodi se detaljan proces podudaranja koji uključuje pregled kupca.
+   * Mogu biti potrebna prilagođavanja narudžbenica ili prijemnica robe.
 5. **Final Decisions**:
-   * Invoices that pass all checks are approved and integrated into financial systems for record-keeping.
-   * Rejected invoices trigger notifications, and a new invoice may be requested by the buyer.
+   * Fakture koje prođu sve provere se odobravaju i integrišu u finansijske sisteme radi vođenja evidencije.
+   * Odbijene fakture pokreću obaveštenja, a kupac može zatražiti novu fakturu.
 6. **Integration with Infor IDM & LN+M3**:
-   * Approved invoices are likely sent to Infor's IDM for document management and LN for ledger noting.
-   * This integration ensures that all financial records are up-to-date and that the workflow seamlessly feeds into the broader ERP system.
+   * Odobrene fakture se verovatno šalju u Infor IDM radi upravljanja dokumentima i u LN radi knjiženja u glavnoj knjizi.
+   * Ova integracija obezbeđuje da su sve finansijske evidencije ažurne i da se radni tok neometano uklapa u širi ERP sistem.
 
-#### Decision Points:
+#### Tačke odlučivanja:
 
-* Throughout the workflow, there are various decision points where an invoice might be approved, rejected, or sent back for additional information. Notifications are sent out after delays, ensuring timely processing.
+* Tokom celog radnog toka postoje razne tačke odlučivanja gde faktura može biti odobrena, odbijena ili vraćena radi dodatnih informacija. Obaveštenja se šalju nakon kašnjenja, obezbeđujući blagovremenu obradu.
 
-These Workflows will be included in the Standard Workflow
+Ovi radni tokovi će biti uključeni u standardni radni tok (Standard Workflow)

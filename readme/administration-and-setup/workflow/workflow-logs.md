@@ -1,65 +1,65 @@
 # Workflow Logs
 
-## **Overview**
+## **Pregled**
 
-The **Workflow Logs** allow users to analyze which workflows were executed for a document, understand the execution results, and drill into condition-level details for debugging or validation.
+**Workflow Logs** omogućavaju korisnicima da analiziraju koji su radni tokovi izvršeni za dokument, da razumeju rezultate izvršavanja i da se udube u detalje na nivou uslova radi otklanjanja grešaka ili validacije.
 
-## **Accessing Workflow Logs**
+## **Pristup zapisima radnih tokova**
 
-To access workflow logs:
+Za pristup zapisima radnih tokova:
 
-1. Navigate to the **Dashboard**.
-2. Click the **Actions menu** (three-dot icon) next to the desired document.
-3. Select **Workflow Logs** from the menu.
-   * <mark style="color:red;">**Note**</mark>: The Workflow feature must be enabled to access this option.
-4.  A **side panel** opens showing a summary of executed workflows.\\
+1. Idite na **Dashboard**.
+2. Kliknite na **Actions menu** (ikonica sa tri tačke) pored željenog dokumenta.
+3. Izaberite **Workflow Logs** iz menija.
+   * <mark style="color:red;">**Napomena**</mark>: Funkcija Workflow mora biti omogućena da biste pristupili ovoj opciji.
+4.  Otvara se **bočni panel** koji prikazuje rezime izvršenih radnih tokova.\\
 
     <div align="left"><figure><img src="../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-## **Components of the Workflow Logs Panel**
+## **Komponente panela Workflow Logs**
 
-#### **1. Workflow Summary Counters**
+#### **1. Brojači rezimea radnih tokova**
 
-Located at the top of the logs panel:
+Nalaze se na vrhu panela sa zapisima:
 
-* **Blue**: Total number of workflows executed.
-* **Red**: Workflows that ended in **errors**.
-* **Yellow**: Workflows that were **not finished** due to condition mismatches.
-* **Green**: Successfully **executed** workflows.
+* **Plavo**: Ukupan broj izvršenih radnih tokova.
+* **Crveno**: Radni tokovi koji su se završili **greškama**.
+* **Žuto**: Radni tokovi koji **nisu završeni** zbog neslaganja uslova.
+* **Zeleno**: Uspešno **izvršeni** radni tokovi.
 
-#### **2. Workflow Execution Table**
+#### **2. Tabela izvršavanja radnih tokova**
 
-Each row in the table represents one workflow execution and includes:
+Svaki red u tabeli predstavlja jedno izvršavanje radnog toka i uključuje:
 
 * **Workflow Name**
 * **Timestamp** (Created On)
-* **Runtime** (in seconds)
+* **Runtime** (u sekundama)
 * **Result Icon**:
-  * Green checkmark: Workflow executed successfully.
-  * Red cross: Workflow executed with an error.
-  * Orange dash: Execution was stopped due to a conditions was not met
+  * Zelena kvačica: Radni tok je uspešno izvršen.
+  * Crveni krstić: Radni tok je izvršen sa greškom.
+  * Narandžasta crtica: Izvršavanje je zaustavljeno jer uslov nije ispunjen
 
-Clicking the **arrow** on the left of each row expands the **workflow detail view**.
+Klik na **strelicu** sa leve strane svakog reda proširuje **detaljan prikaz radnog toka**.
 
 <div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-### **Workflow Detail View**
+### **Detaljan prikaz radnog toka**
 
-Clicking a specific workflow row opens its **detailed execution log**, showing:
+Klik na određeni red radnog toka otvara njegov **detaljan zapis izvršavanja**, koji prikazuje:
 
-#### **Condition Evaluation**
+#### **Evaluaciju uslova**
 
-* **When...** block: Initial condition.
-* **And...** block(s): Additional conditions.
-* **Then...** block(s): Actions performed when all conditions are met.
+* Blok **When...**: Početni uslov.
+* Blok(ovi) **And...**: Dodatni uslovi.
+* Blok(ovi) **Then...**: Akcije koje se izvršavaju kada su svi uslovi ispunjeni.
 
-Each condition line shows:
+Svaka linija uslova prikazuje:
 
-* **Green check**: Condition was met.
-* **Orange dash**: Condition was not met.
-* **Red cross**: Condition failed **due to an error**
+* **Zelena kvačica**: Uslov je ispunjen.
+* **Narandžasta crtica**: Uslov nije ispunjen.
+* **Crveni krstić**: Uslov nije uspeo **zbog greške**
 
-### **Important Behavior Note**
+### **Važna napomena o ponašanju**
 
-If a condition in a workflow is **not met**, the system **stops evaluating any further workflow cards** within that workflow. This behavior prevents unnecessary processing\
-As a visual indicator, the card that **did not meet its condition** is shown in **gray**, and all **subsequent cards** in the same workflow will also appear **gray**, indicating that they were **not executed**.
+Ako uslov u radnom toku **nije ispunjen**, sistem **prestaje da evaluira sve dalje kartice radnog toka** u okviru tog radnog toka. Ovo ponašanje sprečava nepotrebnu obradu\
+Kao vizuelni indikator, kartica koja **nije ispunila svoj uslov** prikazuje se **sivom bojom**, a sve **naredne kartice** u istom radnom toku takođe će biti prikazane **sivom bojom**, što ukazuje na to da **nisu izvršene**.

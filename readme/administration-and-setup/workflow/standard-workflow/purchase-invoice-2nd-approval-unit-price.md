@@ -2,23 +2,23 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.55.09 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase of a purchase invoice, with a specific focus on validating the unit price.
+Ovaj naslov označava da je pravilo podešeno za upravljanje fazom drugog odobrenja fakture nabavke, sa posebnim fokusom na validaciju jedinične cene.
 
-#### Rule Configuration:
+#### Konfiguracija pravila:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents that are identified as invoices, filtering out other document types and maintaining the relevance of the workflow.
+   * **Document Type is Invoice**: Ovaj uslov obezbeđuje da se pravilo pokreće samo za dokumente koji su identifikovani kao fakture, filtrirajući druge vrste dokumenata i održavajući relevantnost radnog toka.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is in the phase where it is awaiting a second approval. This is usually a step designed to ensure additional oversight before final processing.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This further narrows down the application of this rule to only those invoices that are classified as "Purchase Invoices", distinguishing them from other invoice subtypes.
-   * **Logic Unit Price in order confirmation Not Equals purchase order**: This logical check is crucial as it compares the unit price listed in the order confirmation against the unit price in the original purchase order. The action is triggered if these values do not match, which could indicate a discrepancy that needs resolution.
+   * **Document Status is Pending Second Approval**: Ovo određuje da je faktura u fazi u kojoj čeka drugo odobrenje. Ovo je obično korak dizajniran da obezbedi dodatni nadzor pre konačne obrade.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ovo dodatno sužava primenu ovog pravila samo na one fakture koje su klasifikovane kao „Purchase Invoices“, razlikujući ih od drugih podtipova faktura.
+   * **Logic Unit Price in order confirmation Not Equals purchase order**: Ova logička provera je ključna jer upoređuje jediničnu cenu navedenu u potvrdi porudžbine sa jediničnom cenom u originalnoj narudžbenici. Akcija se pokreće ako se ove vrednosti ne podudaraju, što bi moglo ukazivati na neslaganje koje treba rešiti.
 
-#### Action (Then…):
+#### Akcija (Then…):
 
-* **Assign user from field Buyer Name, use user User as fallback**: If the conditions specified are met (i.e., there's a mismatch in unit prices), the invoice is automatically assigned to a buyer (the name specified in the 'Buyer Name' field) for further review. If the 'Buyer Name' field is empty or unspecified, a default user (likely an administrator or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Buyer Name, use user User as fallback**: Ako su navedeni uslovi ispunjeni (tj. postoji neslaganje u jediničnim cenama), faktura se automatski dodeljuje kupcu (ime navedeno u polju „Buyer Name“) na dalji pregled. Ako je polje „Buyer Name“ prazno ili nije navedeno, podrazumevani korisnik (verovatno administrator ili drugi određeni član osoblja) dodeljuje se kao rezervna opcija za obradu odobrenja.
 
-#### Purpose of This Rule:
+#### Svrha ovog pravila:
 
-* **Ensure Accuracy and Compliance**: This rule is critical in ensuring that the invoicing process is accurate and complies with agreed terms. By triggering a review when there is a discrepancy in unit prices, the system helps prevent financial errors or potential fraud.
-* **Streamline Approvals**: Automating the assignment for review based on specific discrepancies helps streamline the approval process and ensures that issues are promptly addressed by the appropriate personnel.
-* **Financial Oversight**: Requiring a second approval, especially based on price matching, reinforces financial controls and accountability within the organization.
+* **Ensure Accuracy and Compliance**: Ovo pravilo je od ključnog značaja za obezbeđivanje da proces fakturisanja bude tačan i usklađen sa dogovorenim uslovima. Pokretanjem pregleda kada postoji neslaganje u jediničnim cenama, sistem pomaže u sprečavanju finansijskih grešaka ili potencijalne prevare.
+* **Streamline Approvals**: Automatizacija dodeljivanja na pregled na osnovu određenih neslaganja pomaže u pojednostavljivanju procesa odobravanja i obezbeđuje da odgovarajuće osoblje brzo reši probleme.
+* **Financial Oversight**: Zahtevanje drugog odobrenja, posebno na osnovu podudaranja cena, jača finansijske kontrole i odgovornost u okviru organizacije.

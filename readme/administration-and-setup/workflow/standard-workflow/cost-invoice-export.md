@@ -2,24 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is specifically configured for managing cost invoices and involves an export action, possibly for reporting, further processing, or integration with other systems.
+Ovaj naslov označava da je pravilo posebno konfigurisano za upravljanje fakturama troškova i uključuje akciju izvoza, moguće radi izveštavanja, dalje obrade ili integracije sa drugim sistemima.
 
-#### Rule Configuration:
+#### Konfiguracija pravila:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents categorized as invoices, maintaining the workflow's specificity to invoice management.
+   * **Document Type is Invoice**: Ovaj uslov obezbeđuje da se pravilo pokreće samo za dokumente kategorizovane kao fakture, čime se održava specifičnost radnog toka za upravljanje fakturama.
 2. **And…**
-   * **Document Field Invoice Sub Type is Equals Cost Invoice**: This specifies that the rule applies only to those invoices that are explicitly marked as "Cost Invoices" in a particular field within the document. This helps in distinguishing them from other types of invoices.
-   * **Document Status is Pending Second Approval**: The invoice must be in a "Pending Second Approval" status. This indicates that the invoice has already undergone an initial approval and is awaiting a second, possibly final, review.
+   * **Document Field Invoice Sub Type is Equals Cost Invoice**: Ovo određuje da se pravilo primenjuje samo na one fakture koje su izričito označene kao „Cost Invoices“ u određenom polju unutar dokumenta. Ovo pomaže u njihovom razlikovanju od drugih vrsta faktura.
+   * **Document Status is Pending Second Approval**: Faktura mora biti u statusu „Pending Second Approval“. Ovo ukazuje na to da je faktura već prošla početno odobrenje i da čeka drugi, moguće konačni, pregled.
 
-#### Action (Then…):
+#### Akcija (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (being a cost invoice and pending second approval), the action to "Start Export" is executed. This could involve sending the invoice data to another system for financial analysis, reporting, or compliance purposes.
+* **Start Export**: Kada faktura ispuni navedene uslove (da je faktura troškova i da čeka drugo odobrenje), izvršava se akcija „Start Export“. Ovo može uključivati slanje podataka fakture u drugi sistem radi finansijske analize, izveštavanja ili usklađenosti.
 
-#### Purpose of This Rule:
+#### Svrha ovog pravila:
 
-* **Workflow Efficiency**: This rule helps automate the handling of cost invoices by ensuring they are processed through the necessary approval stages without manual intervention, increasing the speed and accuracy of financial operations.
-* **Control and Compliance**: By requiring a second approval, the system enforces a control mechanism that ensures cost invoices are thoroughly reviewed, enhancing financial oversight.
-* **Integration and Reporting**: The export action suggests that once invoices are fully approved, they may be integrated into other systems for further processing or analysis, which is critical for financial reporting and audits.
+* **Workflow Efficiency**: Ovo pravilo pomaže u automatizaciji obrade faktura troškova obezbeđujući da prolaze kroz neophodne faze odobravanja bez ručne intervencije, povećavajući brzinu i tačnost finansijskih operacija.
+* **Control and Compliance**: Zahtevanjem drugog odobrenja, sistem sprovodi mehanizam kontrole koji obezbeđuje da se fakture troškova temeljno pregledaju, poboljšavajući finansijski nadzor.
+* **Integration and Reporting**: Akcija izvoza sugeriše da se, kada se fakture u potpunosti odobre, one mogu integrisati u druge sisteme radi dalje obrade ili analize, što je od ključnog značaja za finansijsko izveštavanje i revizije.
 
-This kind of rule is vital for organizations that deal with various types of invoices and need to ensure that each type is handled according to specific protocols. It reduces the risk of errors and ensures compliance with internal controls and external regulations.
+Ova vrsta pravila je od ključnog značaja za organizacije koje rade sa različitim vrstama faktura i koje moraju da obezbede da se svaka vrsta obrađuje prema određenim protokolima. Smanjuje rizik od grešaka i obezbeđuje usklađenost sa internim kontrolama i spoljnim propisima.

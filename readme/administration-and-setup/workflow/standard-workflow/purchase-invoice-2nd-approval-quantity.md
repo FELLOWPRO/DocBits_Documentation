@@ -2,25 +2,25 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.56.54 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule pertains specifically to handling purchase invoices during a secondary approval phase, with a focus on verifying the accuracy of the quantities listed.
+Ovaj naslov označava da se pravilo odnosi posebno na obradu faktura za nabavku tokom faze sekundarnog odobravanja, sa fokusom na verifikaciju tačnosti navedenih količina.
 
-#### Rule Configuration:
+#### Konfiguracija pravila:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents classified as invoices. This is essential for maintaining specificity and relevance in the workflow.
+   * **Document Type is Invoice**: Ovaj uslov obezbeđuje da se pravilo aktivira samo za dokumente klasifikovane kao fakture. Ovo je od suštinskog značaja za održavanje specifičnosti i relevantnosti u radnom toku.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is currently pending a second approval. This stage is typically intended to provide additional oversight before finalizing the invoice.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further refines the rule to apply exclusively to invoices identified as "Purchase Invoices." This categorization helps differentiate them from other invoice types.
-   * **Logic Quantity in order confirmation Not Equals purchase order**: This critical condition checks whether the quantity stated in the order confirmation matches the quantity on the original purchase order. The action is triggered if there is a discrepancy, indicating a potential error or issue that needs resolution.
+   * **Document Status is Pending Second Approval**: Ovo određuje da faktura trenutno čeka drugo odobrenje. Ova faza je obično namenjena pružanju dodatnog nadzora pre finalizacije fakture.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Ovaj uslov dodatno precizira pravilo tako da se primenjuje isključivo na fakture identifikovane kao „Purchase Invoices“. Ova kategorizacija pomaže u njihovom razlikovanju od drugih vrsta faktura.
+   * **Logic Quantity in order confirmation Not Equals purchase order**: Ovaj kritičan uslov proverava da li količina navedena u potvrdi porudžbine odgovara količini na originalnoj narudžbenici. Akcija se pokreće ako postoji neslaganje, što ukazuje na potencijalnu grešku ili problem koji treba rešiti.
 
-#### Action (Then…):
+#### Akcija (Then…):
 
-* **Assign user from field Buyer Name, use user User as fallback**: If the rule's conditions are met (i.e., there's a discrepancy in quantities), the invoice is automatically assigned to the person listed in the 'Buyer Name' field for further review. If this field is empty or the specified person is unavailable, a default user (likely an administrator or another designated staff member) takes over to ensure timely review and resolution.
+* **Assign user from field Buyer Name, use user User as fallback**: Ako su uslovi pravila ispunjeni (tj. postoji neslaganje u količinama), faktura se automatski dodeljuje osobi navedenoj u polju „Buyer Name“ na dalji pregled. Ako je ovo polje prazno ili navedena osoba nije dostupna, podrazumevani korisnik (verovatno administrator ili drugi određeni član osoblja) preuzima zadatak kako bi se obezbedio blagovremen pregled i rešavanje.
 
-#### Purpose of This Rule:
+#### Svrha ovog pravila:
 
-* **Accuracy and Compliance**: The rule is vital for ensuring that the invoicing process is accurate and aligns with the terms agreed upon in the purchase order. It helps prevent financial discrepancies and potential inventory errors.
-* **Streamlined Approvals**: Automating the review process for specific discrepancies helps streamline approvals and ensures that any issues are quickly addressed by the appropriate personnel.
-* **Enhanced Financial Oversight**: Requiring a secondary approval for quantity verifications strengthens financial controls and accountability within the organization.
+* **Accuracy and Compliance**: Pravilo je od ključnog značaja za obezbeđivanje da proces fakturisanja bude tačan i usklađen sa uslovima dogovorenim u narudžbenici. Pomaže u sprečavanju finansijskih neslaganja i potencijalnih grešaka u zalihama.
+* **Streamlined Approvals**: Automatizacija procesa pregleda za određena neslaganja pomaže u pojednostavljivanju odobravanja i obezbeđuje da odgovarajuće osoblje brzo reši sve probleme.
+* **Enhanced Financial Oversight**: Zahtevanje sekundarnog odobrenja za verifikaciju količina jača finansijske kontrole i odgovornost u okviru organizacije.
 
-This setup exemplifies how workflow automation can be utilized to enhance operational efficiency and ensure financial integrity, particularly in managing complex purchase processes within a company.
+Ovo podešavanje ilustruje kako se automatizacija radnog toka može iskoristiti za poboljšanje operativne efikasnosti i obezbeđivanje finansijskog integriteta, posebno u upravljanju složenim procesima nabavke u okviru kompanije.

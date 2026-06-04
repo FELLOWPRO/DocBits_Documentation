@@ -2,29 +2,29 @@
 
 <figure><img src="../../../../.gitbook/assets/image (307).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## Purpose:
+## Propósito:
 
-The **"Run Workflow"** card allows users to dynamically execute a selected workflow from a list of available workflows. This card is useful for automating processes where multiple workflows are interconnected, enabling streamlined operations.
+La tarjeta **"Run Workflow"** permite a los usuarios ejecutar dinámicamente un flujo de trabajo seleccionado de una lista de flujos de trabajo disponibles. Esta tarjeta es útil para automatizar procesos en los que varios flujos de trabajo están interconectados, posibilitando operaciones más ágiles.
 
-## Components of the Card:
+## Componentes de la tarjeta:
 
 1. **Workflow**
-   * **Description:** Specifies the workflow to be executed when the conditions evaluate as true.
-   * **Detail:** A dropdown list of all available workflows is provided for selection.
+   * **Descripción:** Especifica el flujo de trabajo que se ejecutará cuando las condiciones se evalúen como verdaderas.
+   * **Detalle:** Se proporciona una lista desplegable de todos los flujos de trabajo disponibles para su selección.
 
-## Functionality:
+## Funcionalidad:
 
-* **Condition Evaluation:** The card executes the selected workflow only if both the **"Where"** and **"And Sections"** evaluate as true.
-  * If either condition is false, no action is taken, and the workflow remains untriggered.
-* **Workflow Execution:**
-  * When the conditions are met, the specified workflow is triggered automatically.
-  * If the conditions are not met, no workflow is executed.
+* **Evaluación de la condición:** La tarjeta ejecuta el flujo de trabajo seleccionado solo si las secciones **"Where"** y **"And"** se evalúan como verdaderas.
+  * Si cualquiera de las condiciones es falsa, no se realiza ninguna acción y el flujo de trabajo permanece sin disparar.
+* **Ejecución del flujo de trabajo:**
+  * Cuando se cumplen las condiciones, el flujo de trabajo especificado se dispara automáticamente.
+  * Si no se cumplen las condiciones, no se ejecuta ningún flujo de trabajo.
 
-## Setup and Configuration:
+## Configuración:
 
-1. **Select Workflow:** Choose the workflow to be triggered from the **dropdown list** of available workflows.
-2. **Define Conditions:** Configure the **"Where"** and **"And Sections"** to specify the criteria that must be met for the workflow to execute.
+1. **Seleccionar el Workflow:** Elija el flujo de trabajo que se disparará de la **lista desplegable** de flujos de trabajo disponibles.
+2. **Definir las condiciones:** Configure las secciones **"Where"** y **"And"** para especificar los criterios que deben cumplirse para que se ejecute el flujo de trabajo.
 
-## Conclusion:
+## Conclusión:
 
-The **"Run Workflow"** card offers a convenient and efficient way to link workflows, automating multi-step processes with ease. By ensuring the conditions in the **"Where"** and **"And Sections"** are met, users can execute workflows dynamically and reduce manual intervention.
+La tarjeta **"Run Workflow"** ofrece una forma cómoda y eficiente de vincular flujos de trabajo, automatizando procesos de varios pasos con facilidad. Al garantizar que se cumplan las condiciones de las secciones **"Where"** y **"And"**, los usuarios pueden ejecutar flujos de trabajo de forma dinámica y reducir la intervención manual.

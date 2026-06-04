@@ -4,49 +4,49 @@ Queste schede vanno nel gruppo **Then** del Generatore di workflow — le azioni
 
 <figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Le schede vengono aggiunte al gruppo <strong>Then</strong> tramite <strong>Add Card</strong>.</p></figcaption></figure>
 
-## Purpose
-This card runs an automated browser action or script using DocOperator. Think of it as a robot that can interact with websites or systems exactly like a human would - clicking buttons, filling forms, extracting data, etc.
+## Scopo
+Questa card esegue un'azione automatizzata del browser o uno script utilizzando DocOperator. Pensalo come un robot in grado di interagire con siti web o sistemi esattamente come farebbe un essere umano: fare clic sui pulsanti, compilare moduli, estrarre dati, ecc.
 
-**Real-world example:** Your company uses a web-based purchasing system. This card can automatically log in, search for a product, check availability, and get the current price - all without anyone doing it manually.
-
----
-
-## When to Use This Card
-
-Use this card when you need to:
-- Automate tasks on websites that don't have APIs
-- Extract data from web pages
-- Fill forms automatically
-- Log into systems and retrieve information
-- Automate repetitive manual tasks
-- Interact with legacy systems that aren't integrated
-
-**Common scenarios:**
-- Log into supplier websites and get real-time inventory
-- Automatically fill out forms on external systems
-- Extract data from web pages that don't offer APIs
-- Check delivery status on courier websites
-- Get pricing from systems without API access
+**Esempio reale:** la tua azienda utilizza un sistema di acquisti basato sul web. Questa card può accedere automaticamente, cercare un prodotto, verificarne la disponibilità e ottenere il prezzo corrente, il tutto senza che nessuno lo faccia manualmente.
 
 ---
 
-## How It Works
+## Quando Usare Questa Card
 
-1. **Card Triggered**: Workflow reaches this card and conditions are met
-2. **Script Starts**: DocOperator bot starts running your automation script
-3. **Bot Actions**: The bot performs actions like clicking, typing, scrolling, extracting
-4. **Data Extraction**: Bot collects information from web pages
-5. **Return Data**: Data comes back to DocFlow for use in next cards
-6. **Timeout Handling**: If script takes too long, it stops and returns what it has
+Usa questa card quando devi:
+- Automatizzare attività su siti web privi di API
+- Estrarre dati dalle pagine web
+- Compilare automaticamente i moduli
+- Accedere ai sistemi e recuperare informazioni
+- Automatizzare attività manuali ripetitive
+- Interagire con sistemi legacy non integrati
+
+**Scenari comuni:**
+- Accedere ai siti web dei fornitori e ottenere l'inventario in tempo reale
+- Compilare automaticamente i moduli su sistemi esterni
+- Estrarre dati da pagine web che non offrono API
+- Verificare lo stato di consegna sui siti web dei corrieri
+- Ottenere i prezzi da sistemi privi di accesso API
 
 ---
 
-## Parameters Explained
+## Come Funziona
+
+1. **Card Attivata**: il workflow raggiunge questa card e le condizioni sono soddisfatte
+2. **Avvio dello Script**: il bot DocOperator inizia a eseguire il tuo script di automazione
+3. **Azioni del Bot**: il bot esegue azioni come fare clic, digitare, scorrere, estrarre
+4. **Estrazione dei Dati**: il bot raccoglie le informazioni dalle pagine web
+5. **Restituzione dei Dati**: i dati tornano a DocFlow per essere utilizzati nelle card successive
+6. **Gestione del Timeout**: se lo script impiega troppo tempo, si interrompe e restituisce ciò che ha
+
+---
+
+## Parametri Spiegati
 
 ### DocOperator Prompt/Script
-The automation script that tells DocOperator exactly what to do
+Lo script di automazione che indica a DocOperator esattamente cosa fare
 
-**Example (Plain English):**
+**Esempio (in linguaggio naturale):**
 ```
 1. Go to https://supplier.com/login
 2. Enter username: myuser
@@ -58,45 +58,45 @@ The automation script that tells DocOperator exactly what to do
 ```
 
 ### Variables
-Data you want to pass INTO the script
+I dati che vuoi passare ALL'INTERNO dello script
 
-**Example:**
+**Esempio:**
 ```
 product_id: "ABC123"
 supplier_code: "SUPP-001"
 ```
 
-These variables can be used in the script like:
+Queste variabili possono essere utilizzate nello script così:
 ```
 Search for product "{product_id}"
 Find supplier "{supplier_code}"
 ```
 
 ### Maximum Steps
-How many actions the bot is allowed to perform
+Quante azioni il bot è autorizzato a eseguire
 
-**Typical values:**
-- Simple task (like getting one price): 10-20 steps
-- Medium complexity (fill form + extract): 20-50 steps
-- Complex workflow (login + search + validate): 50-100 steps
+**Valori tipici:**
+- Attività semplice (come ottenere un prezzo): 10-20 passaggi
+- Complessità media (compilare un modulo + estrarre): 20-50 passaggi
+- Workflow complesso (login + ricerca + convalida): 50-100 passaggi
 
-**Why it matters:** Prevents infinite loops and very long running scripts
+**Perché è importante:** previene loop infiniti e script con esecuzione molto lunga
 
 ### Maximum Retries
-If the bot fails an action, how many times should it try again?
+Se il bot non riesce a eseguire un'azione, quante volte deve riprovare?
 
-**Examples:**
-- 1: Try once, if it fails move on
-- 3: Try 3 times before giving up
-- 5: Very persistent - try 5 times
+**Esempi:**
+- 1: prova una volta, se fallisce prosegue
+- 3: prova 3 volte prima di arrendersi
+- 5: molto persistente - prova 5 volte
 
 ---
 
-## Step-by-Step Example
+## Esempio Passo dopo Passo
 
-### Scenario: Get Supplier Pricing from Website
+### Scenario: Ottenere i Prezzi del Fornitore da un Sito Web
 
-**Script Definition:**
+**Definizione dello Script:**
 ```
 Step 1: Open website https://prices.supplier-xyz.com
 Step 2: Click on "Product Lookup"
@@ -108,20 +108,20 @@ Step 7: Extract available quantity
 Step 8: Return both values
 ```
 
-**Variables Passed In:**
+**Variabili Passate:**
 ```
 product_code = "ABC-123"
 supplier_name = "Supplier XYZ"
 ```
 
-**Script Using Variables:**
+**Script che Usa le Variabili:**
 ```
 Open website https://prices.{supplier_name}.com
 Enter product code: {product_code}
 Extract price and quantity
 ```
 
-**Expected Result:**
+**Risultato Atteso:**
 ```
 price: 45.50
 quantity_available: 500
@@ -129,42 +129,42 @@ quantity_available: 500
 
 ---
 
-## Types of Actions DocOperator Can Perform
+## Tipi di Azioni che DocOperator Può Eseguire
 
-### Navigation
-- Go to URL
-- Click links
-- Press buttons
-- Scroll page
+### Navigazione
+- Andare a un URL
+- Fare clic sui link
+- Premere i pulsanti
+- Scorrere la pagina
 
-### Form Filling
-- Type text into fields
-- Select dropdown options
-- Check/uncheck boxes
-- Click buttons
+### Compilazione dei Moduli
+- Digitare testo nei campi
+- Selezionare le opzioni dei menu a discesa
+- Selezionare/deselezionare le caselle
+- Fare clic sui pulsanti
 
-### Data Extraction
-- Read text from page
-- Extract numbers
-- Get table data
-- Copy information
+### Estrazione dei Dati
+- Leggere il testo dalla pagina
+- Estrarre numeri
+- Ottenere i dati delle tabelle
+- Copiare informazioni
 
-### Waiting
-- Wait for page to load
-- Wait for elements to appear
-- Wait for dynamic content
+### Attesa
+- Attendere il caricamento della pagina
+- Attendere la comparsa degli elementi
+- Attendere i contenuti dinamici
 
-### Conditional Logic
-- If something exists, do this
-- If text matches, then...
-- Count results and act accordingly
+### Logica Condizionale
+- Se qualcosa esiste, fai questo
+- Se il testo corrisponde, allora...
+- Conta i risultati e agisci di conseguenza
 
 ---
 
-## Common Use Cases
+## Casi d'Uso Comuni
 
-### 1. Get Real-Time Pricing
-**Scenario:** Supplier doesn't have API but website shows prices
+### 1. Ottenere Prezzi in Tempo Reale
+**Scenario:** il fornitore non ha API ma il sito web mostra i prezzi
 
 **Script:**
 ```
@@ -175,8 +175,8 @@ quantity_available: 500
 5. Use price to validate invoice
 ```
 
-### 2. Check Inventory Availability
-**Scenario:** Need to know if supplier has stock
+### 2. Verificare la Disponibilità dell'Inventario
+**Scenario:** devi sapere se il fornitore ha scorte
 
 **Script:**
 ```
@@ -187,8 +187,8 @@ quantity_available: 500
 5. Return both to DocFlow
 ```
 
-### 3. Automatic Form Submission
-**Scenario:** Need to fill out a form on an external site
+### 3. Invio Automatico dei Moduli
+**Scenario:** devi compilare un modulo su un sito esterno
 
 **Script:**
 ```
@@ -201,8 +201,8 @@ quantity_available: 500
 7. Capture confirmation message
 ```
 
-### 4. Data Entry Verification
-**Scenario:** Verify data matches on two different systems
+### 4. Verifica dell'Inserimento Dati
+**Scenario:** verificare che i dati corrispondano su due sistemi diversi
 
 **Script:**
 ```
@@ -218,171 +218,171 @@ quantity_available: 500
 
 ---
 
-## Configuration Steps
+## Passaggi di Configurazione
 
-### Step 1: Create the Script
-1. Define what you want to accomplish
-2. Break it into small steps
-3. Write each step clearly
-4. Test manually first (open the website, do it yourself)
-5. Document exactly what you click, where you type, what you extract
+### Passaggio 1: Crea lo Script
+1. Definisci cosa vuoi ottenere
+2. Suddividilo in piccoli passaggi
+3. Scrivi ogni passaggio in modo chiaro
+4. Testa prima manualmente (apri il sito web, fallo tu stesso)
+5. Documenta esattamente cosa fai clic, dove digiti, cosa estrai
 
-### Step 2: Identify Variables
-1. What data will change between documents?
-2. What should be passed into the script?
-3. Define variable names
-4. Specify where variables are used in the script
+### Passaggio 2: Identifica le Variabili
+1. Quali dati cambieranno tra i documenti?
+2. Cosa deve essere passato allo script?
+3. Definisci i nomi delle variabili
+4. Specifica dove vengono utilizzate le variabili nello script
 
-### Step 3: Set Parameters
-- **Maximum Steps**: Based on script complexity
-- **Maximum Retries**: How persistent should bot be?
-- **Timeout**: How long should it wait for pages?
+### Passaggio 3: Imposta i Parametri
+- **Maximum Steps**: in base alla complessità dello script
+- **Maximum Retries**: quanto deve essere persistente il bot?
+- **Timeout**: quanto deve attendere per le pagine?
 
-### Step 4: Test
-1. Test with sample data
-2. Verify bot can access the website
-3. Verify extraction is correct
-4. Check if variables work properly
+### Passaggio 4: Testa
+1. Testa con dati di esempio
+2. Verifica che il bot possa accedere al sito web
+3. Verifica che l'estrazione sia corretta
+4. Controlla se le variabili funzionano correttamente
 
 ---
 
-## Script Writing Tips
+## Suggerimenti per la Scrittura degli Script
 
-### Clear Language
-✅ **Do:**
+### Linguaggio Chiaro
+✅ **Fai:**
 ```
 1. Click the "Login" button
 2. Type the username in the login field
 3. Wait 2 seconds for form to process
 ```
 
-❌ **Don't:**
+❌ **Non Fare:**
 ```
 1. Do the login thing
 2. Enter stuff
 3. Wait for it
 ```
 
-### Specific Selectors
-✅ **Do:**
+### Selettori Specifici
+✅ **Fai:**
 ```
 Click the button labeled "Submit Order"
 Type in the field with placeholder "Enter Email"
 ```
 
-❌ **Don't:**
+❌ **Non Fare:**
 ```
 Click somewhere
 Type in a field
 ```
 
-### Error Handling
-✅ **Do:**
+### Gestione degli Errori
+✅ **Fai:**
 ```
 1. Try to click "Next" button
 2. If button not found, extract data from current page
 3. Return what we have
 ```
 
-❌ **Don't:**
+❌ **Non Fare:**
 ```
 Click "Next" (assumes it's always there)
 ```
 
 ---
 
-## Troubleshooting
+## Risoluzione dei Problemi
 
 ### "Script Timed Out"
-**Cause:** Script took too long to complete
+**Causa:** lo script ha impiegato troppo tempo per completarsi
 
-**Solutions:**
-- [ ] Reduce the number of actions
-- [ ] Increase "Maximum Steps" value
-- [ ] Optimize the script for faster execution
-- [ ] Simplify what you're trying to extract
+**Soluzioni:**
+- [ ] Riduci il numero di azioni
+- [ ] Aumenta il valore di "Maximum Steps"
+- [ ] Ottimizza lo script per un'esecuzione più rapida
+- [ ] Semplifica ciò che stai cercando di estrarre
 
 ### "Element Not Found"
-**Cause:** DocOperator couldn't find the button/field you specified
+**Causa:** DocOperator non è riuscito a trovare il pulsante/campo specificato
 
-**Solutions:**
-- [ ] Verify button/field name is exactly correct
-- [ ] Check if website layout changed
-- [ ] Add wait time before clicking
-- [ ] Check if button only appears under certain conditions
+**Soluzioni:**
+- [ ] Verifica che il nome del pulsante/campo sia esattamente corretto
+- [ ] Controlla se il layout del sito web è cambiato
+- [ ] Aggiungi un tempo di attesa prima di fare clic
+- [ ] Controlla se il pulsante appare solo in determinate condizioni
 
 ### "Login Failed"
-**Cause:** Authentication failed
+**Causa:** autenticazione non riuscita
 
-**Solutions:**
-- [ ] Verify username/password are correct
-- [ ] Check if password has special characters
-- [ ] Verify account isn't locked
-- [ ] Check if login process changed
+**Soluzioni:**
+- [ ] Verifica che nome utente/password siano corretti
+- [ ] Controlla se la password contiene caratteri speciali
+- [ ] Verifica che l'account non sia bloccato
+- [ ] Controlla se il processo di login è cambiato
 
 ### "Data Not Extracted Correctly"
-**Cause:** The script ran but extracted wrong information
+**Causa:** lo script è stato eseguito ma ha estratto informazioni errate
 
-**Solutions:**
-- [ ] Verify the correct field was selected
-- [ ] Check if data is in expected location
-- [ ] Test extraction logic manually
-- [ ] Add debugging steps to verify what's on page
+**Soluzioni:**
+- [ ] Verifica che sia stato selezionato il campo corretto
+- [ ] Controlla se i dati si trovano nella posizione prevista
+- [ ] Testa la logica di estrazione manualmente
+- [ ] Aggiungi passaggi di debug per verificare cosa c'è nella pagina
 
 ### "Script Runs Slowly"
-**Cause:** Too many steps or slow website
+**Causa:** troppi passaggi o sito web lento
 
-**Solutions:**
-- [ ] Remove unnecessary steps
-- [ ] Optimize wait times
-- [ ] Check internet connection
-- [ ] Consider if API alternative exists
-
----
-
-## Best Practices
-
-✅ **Do:**
-- Test scripts thoroughly before deploying
-- Keep scripts simple and focused
-- Add comments explaining each step
-- Use meaningful variable names
-- Monitor script performance
-- Have fallback for when scripts fail
-
-❌ **Don't:**
-- Create extremely long scripts (>100 steps)
-- Put sensitive passwords in logs
-- Rely on exact coordinates (websites change)
-- Create loops without exit conditions
-- Ignore error messages
+**Soluzioni:**
+- [ ] Rimuovi i passaggi non necessari
+- [ ] Ottimizza i tempi di attesa
+- [ ] Controlla la connessione a Internet
+- [ ] Valuta se esiste un'alternativa via API
 
 ---
 
-## Performance Tips
+## Best Practice
 
-- **Remove unused steps** - Every step takes time
-- **Combine similar actions** - Group related clicks
-- **Optimize waits** - Use only necessary delays
-- **Cache data** - Don't extract same data twice
-- **Parallel processing** - Run multiple scripts if possible
+✅ **Fai:**
+- Testa accuratamente gli script prima di distribuirli
+- Mantieni gli script semplici e mirati
+- Aggiungi commenti che spieghino ogni passaggio
+- Usa nomi di variabili significativi
+- Monitora le prestazioni degli script
+- Predisponi un piano di riserva per quando gli script falliscono
 
----
-
-## Security Considerations
-
-⚠️ **Important:**
-- Don't store passwords in DocFlow
-- Use secure methods to pass credentials
-- Don't log sensitive data
-- Monitor what's being extracted
-- Ensure bot activity is logged and auditable
+❌ **Non Fare:**
+- Creare script estremamente lunghi (>100 passaggi)
+- Inserire password sensibili nei log
+- Affidarti a coordinate esatte (i siti web cambiano)
+- Creare loop senza condizioni di uscita
+- Ignorare i messaggi di errore
 
 ---
 
-## Variables Example
+## Suggerimenti sulle Prestazioni
 
-### Available Variables You Can Use:
+- **Rimuovi i passaggi inutilizzati** - ogni passaggio richiede tempo
+- **Combina azioni simili** - raggruppa i clic correlati
+- **Ottimizza le attese** - usa solo i ritardi necessari
+- **Memorizza i dati nella cache** - non estrarre due volte gli stessi dati
+- **Elaborazione parallela** - esegui più script se possibile
+
+---
+
+## Considerazioni sulla Sicurezza
+
+⚠️ **Importante:**
+- Non memorizzare password in DocFlow
+- Usa metodi sicuri per passare le credenziali
+- Non registrare dati sensibili nei log
+- Monitora ciò che viene estratto
+- Assicurati che l'attività del bot sia registrata e verificabile
+
+---
+
+## Esempio di Variabili
+
+### Variabili Disponibili che Puoi Usare:
 ```
 {invoice_number} - From document field
 {supplier_code} - From document field
@@ -391,7 +391,7 @@ Click "Next" (assumes it's always there)
 {currency} - From document field
 ```
 
-### Script Using Variables:
+### Script che Usa le Variabili:
 ```
 1. Go to https://supplier.com/api/lookup
 2. Enter supplier code: {supplier_code}
@@ -403,23 +403,22 @@ Click "Next" (assumes it's always there)
 
 ---
 
-## Comparison: When to Use DocOperator vs API
+## Confronto: Quando Usare DocOperator vs API
 
-| Situation | Use DocOperator | Use API |
+| Situazione | Usa DocOperator | Usa API |
 |-----------|-----------------|---------|
-| Website has API | ❌ No | ✅ Yes |
-| Website is interactive | ✅ Yes | ❌ No |
-| Requires login | ✅ Yes | Depends |
-| Very fast needed | ❌ No | ✅ Yes |
-| Complex workflow | ✅ Yes | ❌ Maybe not |
-| Data changes daily | ✅ Yes | ✅ Yes |
+| Il sito web ha API | ❌ No | ✅ Sì |
+| Il sito web è interattivo | ✅ Sì | ❌ No |
+| Richiede il login | ✅ Sì | Dipende |
+| Serve molta velocità | ❌ No | ✅ Sì |
+| Workflow complesso | ✅ Sì | ❌ Forse no |
+| I dati cambiano ogni giorno | ✅ Sì | ✅ Sì |
 
 ---
 
-## Related Cards
+## Card Correlate
 
-- **CALL_API** - Use when API is available instead
-- **ACTION_HTTPS_REQUEST** - Simpler requests
-- **ACTION_SET_FIELD_TO_TEXT** - Use extracted data
-- **CONDITION_HTTPS_REQUEST_STATUS** - Check request status
-
+- **CALL_API** - Usala quando è disponibile un'API
+- **ACTION_HTTPS_REQUEST** - Richieste più semplici
+- **ACTION_SET_FIELD_TO_TEXT** - Usa i dati estratti
+- **CONDITION_HTTPS_REQUEST_STATUS** - Verifica lo stato della richiesta

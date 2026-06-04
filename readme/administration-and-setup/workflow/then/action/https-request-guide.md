@@ -4,64 +4,64 @@ Queste schede vanno nel gruppo **Then** del Generatore di workflow — le azioni
 
 <figure><img src="../../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Le schede vengono aggiunte al gruppo <strong>Then</strong> tramite <strong>Add Card</strong>.</p></figcaption></figure>
 
-## Purpose
-This card sends a secure message to a website or service and can receive a response back. It's simpler than the "Call API" card and is useful for quick integrations.
+## Scopo
+Questa card invia un messaggio sicuro a un sito web o servizio e può ricevere una risposta. È più semplice della card "Call API" ed è utile per integrazioni rapide.
 
-**Real-world example:** Send invoice data to your accounting system, or ask an external system if an employee is approved to process this purchase.
-
----
-
-## When to Use This Card
-
-Use this card when you need to:
-- Send webhook notifications to external services
-- Trigger actions in other systems
-- Query a simple web service
-- Send status updates to other applications
-- Perform simple integrations without complex API requirements
+**Esempio reale:** invia i dati di una fattura al tuo sistema di contabilità, oppure chiedi a un sistema esterno se un dipendente è autorizzato a elaborare questo acquisto.
 
 ---
 
-## How It Works
+## Quando Usare Questa Card
 
-1. **Trigger Check**: System checks if the "Where" and "And" conditions are met
-2. **Build Request**: System prepares the HTTPS request with your parameters
-3. **Send Securely**: Data is sent using secure HTTPS connection
-4. **Receive Response**: External service responds
-5. **Continue**: Workflow proceeds with the response data
+Usa questa card quando devi:
+- Inviare notifiche webhook a servizi esterni
+- Attivare azioni in altri sistemi
+- Interrogare un semplice servizio web
+- Inviare aggiornamenti di stato ad altre applicazioni
+- Eseguire integrazioni semplici senza requisiti API complessi
 
 ---
 
-## Parameters
+## Come Funziona
+
+1. **Controllo del Trigger**: il sistema verifica se le condizioni "Where" e "And" sono soddisfatte
+2. **Costruzione della Richiesta**: il sistema prepara la richiesta HTTPS con i tuoi parametri
+3. **Invio Sicuro**: i dati vengono inviati utilizzando una connessione HTTPS sicura
+4. **Ricezione della Risposta**: il servizio esterno risponde
+5. **Continuazione**: il workflow prosegue con i dati della risposta
+
+---
+
+## Parametri
 
 ### URL
-The website address to send the request to
+L'indirizzo del sito web a cui inviare la richiesta
 
-**Example:** `https://webhook.company.com/process`
+**Esempio:** `https://webhook.company.com/process`
 
 ### Headers
-Special instructions for the recipient
+Istruzioni speciali per il destinatario
 
-**Example:**
+**Esempio:**
 ```
 Content-Type: application/json
 Authorization: Bearer token123
 ```
 
 ### Method
-- **GET**: Request information
-- **POST**: Send data
-- **PUT**: Update data
+- **GET**: richiedi informazioni
+- **POST**: invia dati
+- **PUT**: aggiorna dati
 
 ### Parameters (Query String)
-Data added to the URL
+Dati aggiunti all'URL
 
-**Example:** `?action=approve&user_id=123`
+**Esempio:** `?action=approve&user_id=123`
 
 ### Request Data
-The actual information being sent (in JSON format)
+Le informazioni effettive che vengono inviate (in formato JSON)
 
-**Example:**
+**Esempio:**
 ```json
 {
   "invoice_number": "INV-2025-001",
@@ -72,11 +72,11 @@ The actual information being sent (in JSON format)
 
 ---
 
-## Step-by-Step Example
+## Esempio Passo dopo Passo
 
-### Scenario: Send Invoice to Accounting System
+### Scenario: Inviare una Fattura al Sistema di Contabilità
 
-**Card Configuration:**
+**Configurazione della Card:**
 - **URL:** `https://accounting.company.com/invoices/create`
 - **Method:** POST
 - **Headers:** `Authorization: Bearer YOUR-TOKEN`
@@ -91,7 +91,7 @@ The actual information being sent (in JSON format)
 }
 ```
 
-**Expected Response:**
+**Risposta Attesa:**
 ```json
 {
   "status": "success",
@@ -102,58 +102,58 @@ The actual information being sent (in JSON format)
 
 ---
 
-## Common Use Cases
+## Casi d'Uso Comuni
 
-### 1. Webhook Notifications
-Send real-time notifications to other systems whenever something happens in DocFlow
+### 1. Notifiche Webhook
+Invia notifiche in tempo reale ad altri sistemi ogni volta che accade qualcosa in DocFlow
 
-**Example:**
-- Document approved → Send notification to fulfillment system
-- Supplier changed → Notify purchasing team via Slack/Teams webhook
+**Esempio:**
+- Documento approvato → Invia una notifica al sistema di evasione
+- Fornitore modificato → Notifica il team di acquisto tramite un webhook Slack/Teams
 
-### 2. External System Integration
-Connect DocFlow with other business systems for automatic data exchange
+### 2. Integrazione con Sistemi Esterni
+Collega DocFlow con altri sistemi aziendali per lo scambio automatico di dati
 
-**Example:**
-- After document is processed → Sync to ERP system
-- New supplier added → Create supplier record in master data system
+**Esempio:**
+- Dopo l'elaborazione del documento → Sincronizza con il sistema ERP
+- Nuovo fornitore aggiunto → Crea un record fornitore nel sistema di dati anagrafici
 
-### 3. Approval Workflows
-Send document to external approval system and receive decision
+### 3. Workflow di Approvazione
+Invia il documento a un sistema di approvazione esterno e ricevi la decisione
 
-**Example:**
-- High-value invoice → Send to Finance for approval
-- Return document to external system with decision
-
----
-
-## Configuration Guide
-
-### Step 1: Get Endpoint Information
-Ask the receiving system for:
-- [ ] HTTPS URL
-- [ ] Required headers
-- [ ] Authentication method
-- [ ] Expected request format
-- [ ] Expected response format
-
-### Step 2: Configure the Card
-1. Enter the HTTPS URL
-2. Set HTTP method (usually POST)
-3. Add authentication if required
-4. Format request data as JSON
-5. Add any custom headers
-
-### Step 3: Test
-Send a test request and verify response
+**Esempio:**
+- Fattura di alto valore → Invia all'ufficio finanziario per l'approvazione
+- Restituisci il documento al sistema esterno con la decisione
 
 ---
 
-## Response Handling
+## Guida alla Configurazione
 
-Your HTTPS request will get a response. Common responses:
+### Passaggio 1: Ottieni le Informazioni sull'Endpoint
+Richiedi al sistema ricevente:
+- [ ] URL HTTPS
+- [ ] Header richieste
+- [ ] Metodo di autenticazione
+- [ ] Formato di richiesta previsto
+- [ ] Formato di risposta previsto
 
-### Success (200, 201)
+### Passaggio 2: Configura la Card
+1. Inserisci l'URL HTTPS
+2. Imposta il metodo HTTP (di solito POST)
+3. Aggiungi l'autenticazione se richiesta
+4. Formatta i dati della richiesta come JSON
+5. Aggiungi eventuali header personalizzate
+
+### Passaggio 3: Testa
+Invia una richiesta di prova e verifica la risposta
+
+---
+
+## Gestione della Risposta
+
+La tua richiesta HTTPS riceverà una risposta. Risposte comuni:
+
+### Successo (200, 201)
 ```json
 {
   "success": true,
@@ -177,52 +177,52 @@ Your HTTPS request will get a response. Common responses:
 ```
 
 ### Server Error (500)
-The receiving system has an internal problem
+Il sistema ricevente ha un problema interno
 
 ---
 
-## Troubleshooting
+## Risoluzione dei Problemi
 
 ### "Certificate Error"
-**Cause:** HTTPS security certificate issue
+**Causa:** problema con il certificato di sicurezza HTTPS
 
-**Solution:**
-- Verify the URL is correct
-- Check if the website's certificate is valid
-- Ensure you're using HTTPS (not HTTP)
+**Soluzione:**
+- Verifica che l'URL sia corretto
+- Controlla se il certificato del sito web è valido
+- Assicurati di utilizzare HTTPS (non HTTP)
 
 ### "Connection Refused"
-**Cause:** Cannot connect to the server
+**Causa:** impossibile connettersi al server
 
-**Solution:**
-- Verify the URL/IP address is correct
-- Check if the service is running
-- Check firewall rules
-- Verify internet connectivity
+**Soluzione:**
+- Verifica che l'URL/indirizzo IP sia corretto
+- Controlla se il servizio è in esecuzione
+- Controlla le regole del firewall
+- Verifica la connettività a Internet
 
 ### "No Response / Timeout"
-**Cause:** Server not responding within time limit
+**Causa:** il server non risponde entro il limite di tempo
 
-**Solution:**
-- Check if the service is available
-- Verify the endpoint URL
-- Check if there are rate limits
-- Contact system administrator
+**Soluzione:**
+- Controlla se il servizio è disponibile
+- Verifica l'URL dell'endpoint
+- Controlla se sono presenti limiti di frequenza (rate limit)
+- Contatta l'amministratore di sistema
 
 ### "Invalid JSON"
-**Cause:** The request data is malformed
+**Causa:** i dati della richiesta sono malformati
 
-**Solution:**
-- Check for missing commas in JSON
-- Verify all quotes are correct
-- Validate JSON format (use online JSON validator)
-- Check for special characters
+**Soluzione:**
+- Controlla la mancanza di virgole nel JSON
+- Verifica che tutte le virgolette siano corrette
+- Convalida il formato JSON (usa un validatore JSON online)
+- Controlla la presenza di caratteri speciali
 
 ---
 
-## Examples
+## Esempi
 
-### Example 1: Send to Webhook Service
+### Esempio 1: Inviare a un Servizio Webhook
 ```
 URL: https://webhook.site/your-unique-id
 Method: POST
@@ -234,7 +234,7 @@ Data:
 }
 ```
 
-### Example 2: Update External System
+### Esempio 2: Aggiornare un Sistema Esterno
 ```
 URL: https://api.company.com/update
 Method: PUT
@@ -246,7 +246,7 @@ Data:
 }
 ```
 
-### Example 3: Query External Service
+### Esempio 3: Interrogare un Servizio Esterno
 ```
 URL: https://lookup.company.com/validate?id=SUP-789
 Method: GET
@@ -255,51 +255,50 @@ Headers: Authorization: Bearer token
 
 ---
 
-## Difference from "Call API" Card
+## Differenza dalla Card "Call API"
 
-| Feature | HTTPS Request | Call API |
+| Caratteristica | HTTPS Request | Call API |
 |---------|---------------|----------|
-| Simplicity | Simple | More complex |
-| Parameters | Basic | Advanced |
-| Error Handling | Basic | Detailed |
-| Use for | Quick integrations | Complex APIs |
-| Best for | Webhooks | Professional APIs |
+| Semplicità | Semplice | Più complessa |
+| Parametri | Di base | Avanzati |
+| Gestione degli Errori | Di base | Dettagliata |
+| Usare per | Integrazioni rapide | API complesse |
+| Ideale per | Webhook | API professionali |
 
 ---
 
-## Security Considerations
+## Considerazioni sulla Sicurezza
 
-✅ **Always use HTTPS** (secure connection)
+✅ **Usa sempre HTTPS** (connessione sicura)
 
-⚠️ **Never:**
-- Put passwords in the URL
-- Expose API keys in logs
-- Include personal data in parameters
-- Use HTTP for sensitive data
-
----
-
-## Best Practices
-
-✅ **Do:**
-- Test with small amounts of data first
-- Include error handling
-- Log important requests
-- Document the integration
-- Monitor for failures
-
-❌ **Don't:**
-- Call the same endpoint repeatedly if not needed
-- Ignore response errors
-- Include sensitive data in plain text
-- Exceed service rate limits
+⚠️ **Mai:**
+- Inserire password nell'URL
+- Esporre le chiavi API nei log
+- Includere dati personali nei parametri
+- Usare HTTP per dati sensibili
 
 ---
 
-## Related Cards
+## Best Practice
 
-- **CALL_API** - More advanced API integration
-- **CONDITION_HTTPS_REQUEST_STATUS** - Check if request succeeded
-- **ACTION_SEND_EMAIL** - Send via email instead
-- **ACTION_RUN_DOCOPERATOR_SCRIPT** - Automated scripts
+✅ **Fai:**
+- Testa prima con piccole quantità di dati
+- Includi la gestione degli errori
+- Registra nei log le richieste importanti
+- Documenta l'integrazione
+- Monitora gli errori
 
+❌ **Non Fare:**
+- Chiamare ripetutamente lo stesso endpoint se non necessario
+- Ignorare gli errori di risposta
+- Includere dati sensibili in testo semplice
+- Superare i limiti di frequenza del servizio
+
+---
+
+## Card Correlate
+
+- **CALL_API** - Integrazione API più avanzata
+- **CONDITION_HTTPS_REQUEST_STATUS** - Verifica se la richiesta è andata a buon fine
+- **ACTION_SEND_EMAIL** - Invia invece tramite email
+- **ACTION_RUN_DOCOPERATOR_SCRIPT** - Script automatizzati

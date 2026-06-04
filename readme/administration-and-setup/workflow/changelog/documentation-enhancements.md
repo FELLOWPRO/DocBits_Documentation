@@ -1,496 +1,496 @@
 # Documentation Enhancements - October 2025
 
-**Document:** New Workflow Card Guides and Cross-Reference Improvements
+**Dokument:** Novi vodiči za kartice radnog toka i poboljšanja unakrsnih referenci
 **Release Date:** October 23, 2025
-**Status:** Complete & Deployed
+**Status:** Kompletno i postavljeno
 
 ---
 
-## Overview
+## Pregled
 
-This document details the 9 comprehensive workflow card guides added in October 2025, along with the workflow linking analysis that identified 87 cross-reference opportunities for future enhancement.
+Ovaj dokument detaljno opisuje 9 sveobuhvatnih vodiča za kartice radnog toka dodatih u oktobru 2025, zajedno sa analizom povezivanja radnih tokova koja je identifikovala 87 prilika za unakrsne reference za buduća poboljšanja.
 
 ---
 
-## New Documentation Guides (9 Total)
+## Novi vodiči dokumentacije (ukupno 9)
 
 ### 1. Call API Guide
 
-**File:** `then/action/call-api-guide.md` (320 lines)
+**File:** `then/action/call-api-guide.md` (320 redova)
 
-**Purpose:** External API integration with full control and advanced parameters
+**Svrha:** Integracija sa eksternim API-jem uz punu kontrolu i napredne parametre
 
-**Coverage:**
-- ✅ API configuration and endpoints
-- ✅ HTTP methods (GET, POST, PUT, DELETE, PATCH)
-- ✅ Request parameters and data payloads
-- ✅ Response parsing and error handling
-- ✅ Real-world examples
-- ✅ Troubleshooting guide
+**Pokrivenost:**
+- ✅ Konfiguracija API-ja i krajnjih tačaka
+- ✅ HTTP metode (GET, POST, PUT, DELETE, PATCH)
+- ✅ Parametri zahteva i tela podataka
+- ✅ Parsiranje odgovora i rukovanje greškama
+- ✅ Primeri iz stvarnog sveta
+- ✅ Vodič za otklanjanje grešaka
 
-**Key Topics:**
-- Authentication methods
-- Header configuration
-- JSON request bodies
-- Response variable extraction
-- Timeout and retry handling
-- Error response codes
+**Ključne teme:**
+- Metode autentifikacije
+- Konfiguracija zaglavlja
+- JSON tela zahteva
+- Ekstrakcija promenljivih iz odgovora
+- Rukovanje timeout-om i ponovnim pokušajima
+- Kodovi grešaka u odgovoru
 
-**Related Cards:**
-- HTTPS Request Guide (simpler alternative)
-- DocOperator Script Guide (for non-API systems)
-- Condition Cards (for response validation)
-- Field Manipulation (for storing API responses)
+**Povezane kartice:**
+- HTTPS Request Guide (jednostavnija alternativa)
+- DocOperator Script Guide (za sisteme bez API-ja)
+- Condition Cards (za validaciju odgovora)
+- Field Manipulation (za skladištenje API odgovora)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 2. HTTPS Request Guide
 
-**File:** `then/action/https-request-guide.md` (302 lines)
+**File:** `then/action/https-request-guide.md` (302 reda)
 
-**Purpose:** Simple HTTP/HTTPS requests for webhooks and basic integrations
+**Svrha:** Jednostavni HTTP/HTTPS zahtevi za webhook-ove i osnovne integracije
 
-**Coverage:**
-- ✅ Basic request setup
-- ✅ URL and endpoint configuration
-- ✅ Simple data payloads
-- ✅ Webhook integration
-- ✅ Response handling
-- ✅ Common use cases
+**Pokrivenost:**
+- ✅ Osnovno podešavanje zahteva
+- ✅ Konfiguracija URL-a i krajnje tačke
+- ✅ Jednostavna tela podataka
+- ✅ Integracija webhook-a
+- ✅ Rukovanje odgovorima
+- ✅ Uobičajeni slučajevi upotrebe
 
-**Key Topics:**
-- Webhook triggers and callbacks
-- Status code handling
-- Basic parameter passing
-- Response validation
-- Integration patterns
-- Failure handling
+**Ključne teme:**
+- Okidači webhook-a i povratni pozivi
+- Rukovanje statusnim kodovima
+- Osnovno prosleđivanje parametara
+- Validacija odgovora
+- Obrasci integracije
+- Rukovanje neuspesima
 
-**Compared to Call API:**
-- Simpler configuration
-- Fewer advanced options
-- Faster setup
-- Ideal for webhooks
-- Call API for complex needs
+**U poređenju sa Call API:**
+- Jednostavnija konfiguracija
+- Manje naprednih opcija
+- Brže podešavanje
+- Idealno za webhook-ove
+- Call API za složene potrebe
 
-**Related Cards:**
-- Call API Guide (advanced alternative)
-- DocOperator Script Guide (for form automation)
-- Send Email Guide (for notifications)
+**Povezane kartice:**
+- Call API Guide (napredna alternativa)
+- DocOperator Script Guide (za automatizaciju formulara)
+- Send Email Guide (za obaveštenja)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 3. DocOperator Script Guide
 
-**File:** `then/action/docoperator-script-guide.md` (422 lines)
+**File:** `then/action/docoperator-script-guide.md` (422 reda)
 
-**Purpose:** Browser automation and form filling for systems without APIs
+**Svrha:** Automatizacija pregledača i popunjavanje formulara za sisteme bez API-ja
 
-**Coverage:**
-- ✅ Script configuration and variables
-- ✅ Form field identification
-- ✅ Data input automation
-- ✅ Page navigation
-- ✅ Data extraction
-- ✅ Error handling and timeouts
-- ✅ Troubleshooting
+**Pokrivenost:**
+- ✅ Konfiguracija skripte i promenljive
+- ✅ Identifikacija polja formulara
+- ✅ Automatizacija unosa podataka
+- ✅ Navigacija po stranicama
+- ✅ Ekstrakcija podataka
+- ✅ Rukovanje greškama i timeout-ima
+- ✅ Otklanjanje grešaka
 
-**Key Topics:**
-- CSS selectors and element identification
-- Form filling patterns
-- Button clicking and navigation
-- Data extraction from pages
-- Variable usage and substitution
-- Script execution timeout
-- Retry mechanisms
-- Legacy system integration
+**Ključne teme:**
+- CSS selektori i identifikacija elemenata
+- Obrasci popunjavanja formulara
+- Klikanje na dugmad i navigacija
+- Ekstrakcija podataka sa stranica
+- Upotreba i zamena promenljivih
+- Timeout izvršavanja skripte
+- Mehanizmi ponovnog pokušaja
+- Integracija sa starim sistemima
 
-**Real-World Use Cases:**
-- Integrate with legacy web-based systems
-- Automate supplier portals
-- Collect data from websites
-- Fill forms automatically
-- Extract pricing information
+**Slučajevi upotrebe iz stvarnog sveta:**
+- Integracija sa starim veb sistemima
+- Automatizacija portala dobavljača
+- Prikupljanje podataka sa veb sajtova
+- Automatsko popunjavanje formulara
+- Ekstrakcija informacija o cenama
 
-**Related Cards:**
-- Call API Guide (for API-based systems)
-- HTTPS Request Guide (for simple webhooks)
-- Field Manipulation (for storing extracted data)
+**Povezane kartice:**
+- Call API Guide (za sisteme zasnovane na API-ju)
+- HTTPS Request Guide (za jednostavne webhook-ove)
+- Field Manipulation (za skladištenje ekstrahovanih podataka)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 4. Send Email to Groups Guide
 
-**File:** `then/action/send-email-groups-guide.md` (368 lines)
+**File:** `then/action/send-email-groups-guide.md` (368 redova)
 
-**Purpose:** Notify user groups via email with customizable templates
+**Svrha:** Obaveštavanje korisničkih grupa putem e-pošte sa prilagodljivim šablonima
 
-**Coverage:**
-- ✅ Group recipient configuration
-- ✅ Email subject and body
-- ✅ Template variable substitution
-- ✅ HTML formatting options
-- ✅ Attachment handling
-- ✅ Email scheduling
-- ✅ Bounce handling
+**Pokrivenost:**
+- ✅ Konfiguracija grupnih primalaca
+- ✅ Naslov i telo e-poruke
+- ✅ Zamena promenljivih u šablonu
+- ✅ Opcije HTML formatiranja
+- ✅ Rukovanje prilozima
+- ✅ Zakazivanje e-pošte
+- ✅ Rukovanje odbijenim porukama (bounce)
 
-**Key Topics:**
-- Define recipient groups
-- Email template variables
-- Dynamic content insertion
-- HTML and plain text options
-- Field value embedding
-- File attachments
-- Send conditions
-- Delivery confirmation
+**Ključne teme:**
+- Definisanje grupa primalaca
+- Promenljive u šablonu e-poruke
+- Umetanje dinamičkog sadržaja
+- HTML i obične tekstualne opcije
+- Ugrađivanje vrednosti polja
+- Prilozi datoteka
+- Uslovi slanja
+- Potvrda isporuke
 
-**Template Variables:**
-- Document fields
-- Workflow variables
-- User information
-- System dates and times
-- Custom parameters
+**Promenljive u šablonu:**
+- Polja dokumenta
+- Promenljive radnog toka
+- Informacije o korisniku
+- Sistemski datumi i vremena
+- Prilagođeni parametri
 
-**Examples:**
-- Invoice processing notifications
-- Approval request emails
-- Status change alerts
-- Group escalations
-- Document ready notifications
+**Primeri:**
+- Obaveštenja o obradi faktura
+- E-poruke sa zahtevom za odobrenje
+- Upozorenja o promeni statusa
+- Eskalacije grupa
+- Obaveštenja o spremnom dokumentu
 
-**Related Cards:**
-- Task Assignment (alternative to email)
-- Field Manipulation (for preparing email data)
-- Condition Cards (for email triggers)
-- Document Assignment (for combined actions)
+**Povezane kartice:**
+- Task Assignment (alternativa e-pošti)
+- Field Manipulation (za pripremu podataka e-poruke)
+- Condition Cards (za okidače e-pošte)
+- Document Assignment (za kombinovane akcije)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 5. Task Assignment Guide
 
-**File:** `then/task/task-assignment-guide.md` (593 lines)
+**File:** `then/task/task-assignment-guide.md` (593 reda)
 
-**Purpose:** Create and assign tasks with priority, routing, and notifications
+**Svrha:** Kreiranje i dodeljivanje zadataka sa prioritetom, usmeravanjem i obaveštenjima
 
-**Coverage:**
-- ✅ Task creation parameters
-- ✅ Title and description setup
-- ✅ Priority levels
-- ✅ User and group assignment
-- ✅ Task routing logic
-- ✅ Notification configuration
-- ✅ Task templates
-- ✅ Due date handling
-- ✅ Fallback assignment
-- ✅ 12 task-related cards documented
+**Pokrivenost:**
+- ✅ Parametri kreiranja zadatka
+- ✅ Podešavanje naslova i opisa
+- ✅ Nivoi prioriteta
+- ✅ Dodeljivanje korisnicima i grupama
+- ✅ Logika usmeravanja zadataka
+- ✅ Konfiguracija obaveštenja
+- ✅ Šabloni zadataka
+- ✅ Rukovanje rokovima
+- ✅ Rezervno dodeljivanje
+- ✅ Dokumentovano 12 kartica vezanih za zadatke
 
-**Key Topics:**
-- Task creation cards (user assignment, group assignment)
-- Priority level options
-- Sequential assignment
-- Fallback users
-- Email notifications
-- Task status tracking
-- Decision tree integration
-- Assignment rules
+**Ključne teme:**
+- Kartice za kreiranje zadataka (dodeljivanje korisniku, dodeljivanje grupi)
+- Opcije nivoa prioriteta
+- Sekvencijalno dodeljivanje
+- Rezervni korisnici
+- E-mail obaveštenja
+- Praćenje statusa zadatka
+- Integracija stabla odlučivanja
+- Pravila dodeljivanja
 
-**Task Cards Covered:**
+**Pokrivene kartice zadataka:**
 1. ACTION_TASK_FOR_GROUP
 2. tasks_create
 3. ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
 4. ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
 5. OC_TASK
 6. ACTION_DECISION_TREE_CREATE_TASKS
-7. And 6 more assignment cards
+7. I još 6 kartica za dodeljivanje
 
-**Routing Scenarios:**
-- Direct user assignment
-- Group-based assignment
-- Field-based user lookup
-- Fallback assignment
-- Sequential routing
+**Scenariji usmeravanja:**
+- Direktno dodeljivanje korisniku
+- Dodeljivanje zasnovano na grupi
+- Pretraga korisnika zasnovana na polju
+- Rezervno dodeljivanje
+- Sekvencijalno usmeravanje
 
-**Related Cards:**
-- Document Assignment (for document routing)
-- Field Manipulation (for task data preparation)
-- Condition Cards (for assignment logic)
-- Send Email (for task notifications)
+**Povezane kartice:**
+- Document Assignment (za usmeravanje dokumenata)
+- Field Manipulation (za pripremu podataka o zadatku)
+- Condition Cards (za logiku dodeljivanja)
+- Send Email (za obaveštenja o zadacima)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 6. Field Manipulation Guide
 
-**File:** `then/document-field/field-manipulation-guide.md` (607 lines)
+**File:** `then/document-field/field-manipulation-guide.md` (607 redova)
 
-**Purpose:** Update, calculate, and transform document field values
+**Svrha:** Ažuriranje, obračun i transformacija vrednosti polja dokumenta
 
-**Coverage:**
-- ✅ Set field to text
-- ✅ Set field to number
-- ✅ Calculation formulas
-- ✅ Date/time operations
-- ✅ Field concatenation
-- ✅ Table column calculations
-- ✅ Regular expressions
-- ✅ Field validation
-- ✅ Conditional updates
+**Pokrivenost:**
+- ✅ Postavljanje polja na tekst
+- ✅ Postavljanje polja na broj
+- ✅ Formule za obračun
+- ✅ Operacije sa datumom/vremenom
+- ✅ Konkatenacija polja
+- ✅ Obračuni kolona tabele
+- ✅ Regularni izrazi
+- ✅ Validacija polja
+- ✅ Uslovna ažuriranja
 
-**Key Topics:**
-- Simple field assignment
-- Calculation expressions
-- Formula syntax
-- Supported operators
-- Field referencing
-- Table column operations
-- String manipulation
-- Date calculations
-- Number formatting
-- Regex pattern matching
+**Ključne teme:**
+- Jednostavno dodeljivanje polja
+- Izrazi za obračun
+- Sintaksa formula
+- Podržani operatori
+- Referenciranje polja
+- Operacije sa kolonama tabele
+- Manipulacija stringovima
+- Obračuni datuma
+- Formatiranje brojeva
+- Podudaranje regex obrazaca
 
-**Calculation Examples:**
-- Variance calculation: `|(Invoice-PO)|/PO×100`
-- Tax calculations
-- Currency conversions
-- Date arithmetic
-- String operations
-- Conditional values
+**Primeri obračuna:**
+- Obračun odstupanja: `|(Invoice-PO)|/PO×100`
+- Obračuni poreza
+- Konverzije valuta
+- Aritmetika datuma
+- Operacije sa stringovima
+- Uslovne vrednosti
 
-**Field Types Supported:**
-- Text fields
-- Number fields
-- Date fields
-- Dropdown fields
-- Table columns
-- Currency fields
-- Percentage fields
+**Podržani tipovi polja:**
+- Tekstualna polja
+- Numerička polja
+- Polja datuma
+- Padajuća polja (dropdown)
+- Kolone tabele
+- Polja valute
+- Procentualna polja
 
-**Related Cards:**
-- Task Assignment (for task data setup)
-- PO Matching (for variance calculation)
-- Condition Cards (for field evaluation)
-- Call API/HTTPS Request (for storing API responses)
+**Povezane kartice:**
+- Task Assignment (za podešavanje podataka o zadatku)
+- PO Matching (za obračun odstupanja)
+- Condition Cards (za evaluaciju polja)
+- Call API/HTTPS Request (za skladištenje API odgovora)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 7. Document Assignment Guide
 
-**File:** `then/assignee/assignment-user-guide.md` (688 lines)
+**File:** `then/assignee/assignment-user-guide.md` (688 redova)
 
-**Purpose:** Assign documents to users and groups with routing logic
+**Svrha:** Dodeljivanje dokumenata korisnicima i grupama sa logikom usmeravanja
 
-**Coverage:**
-- ✅ User assignment
-- ✅ Group assignment
-- ✅ Sub-organization routing
-- ✅ Conditional assignment
-- ✅ Fallback options
-- ✅ Sequential assignment
-- ✅ Assignment rules
-- ✅ Permission management
-- ✅ Workflow integration
+**Pokrivenost:**
+- ✅ Dodeljivanje korisniku
+- ✅ Dodeljivanje grupi
+- ✅ Usmeravanje ka pod-organizaciji
+- ✅ Uslovno dodeljivanje
+- ✅ Rezervne opcije
+- ✅ Sekvencijalno dodeljivanje
+- ✅ Pravila dodeljivanja
+- ✅ Upravljanje dozvolama
+- ✅ Integracija radnog toka
 
-**Key Topics:**
-- Direct user assignment
-- Group-based assignment
-- Procurement group routing
-- Field-based assignment lookup
-- Sequential assignment patterns
-- Fallback user specification
-- Assignment conditions
-- Permission levels
-- Document routing
+**Ključne teme:**
+- Direktno dodeljivanje korisniku
+- Dodeljivanje zasnovano na grupi
+- Usmeravanje ka nabavnoj grupi
+- Pretraga dodeljivanja zasnovana na polju
+- Obrasci sekvencijalnog dodeljivanja
+- Specifikacija rezervnog korisnika
+- Uslovi dodeljivanja
+- Nivoi dozvola
+- Usmeravanje dokumenata
 
-**Assignment Cards Covered:**
+**Pokrivene kartice za dodeljivanje:**
 1. DOC_USER_ASSIGN
 2. DOC_GROUP_ASSIGN
 3. OC_ASSIGN_DOC
-4. Assignment with fallback options
-5. Sub-organization routing
-6. And more...
+4. Dodeljivanje sa rezervnim opcijama
+5. Usmeravanje ka pod-organizaciji
+6. I još...
 
-**Routing Patterns:**
-- Simple user assignment
-- Group distribution
-- Conditional routing
-- Sequential workflows
-- Fallback chains
-- Hierarchy-based routing
+**Obrasci usmeravanja:**
+- Jednostavno dodeljivanje korisniku
+- Distribucija grupi
+- Uslovno usmeravanje
+- Sekvencijalni radni tokovi
+- Rezervni lanci
+- Usmeravanje zasnovano na hijerarhiji
 
-**Related Cards:**
-- Task Assignment (for task creation)
-- Condition Cards (for conditional routing)
-- Field Manipulation (for data preparation)
-- Send Email (for assignment notifications)
+**Povezane kartice:**
+- Task Assignment (za kreiranje zadataka)
+- Condition Cards (za uslovno usmeravanje)
+- Field Manipulation (za pripremu podataka)
+- Send Email (za obaveštenja o dodeljivanju)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 8. PO Matching Complete Guide
 
-**File:** `and/compare-with-purchase-order/po-matching-complete-guide.md` (661 lines)
+**File:** `and/compare-with-purchase-order/po-matching-complete-guide.md` (661 red)
 
-**Purpose:** Match invoices with purchase orders and calculate variances
+**Svrha:** Podudaranje faktura sa narudžbenicama i obračun odstupanja
 
-**Coverage:**
-- ✅ Matching process overview
-- ✅ Item-level matching
-- ✅ Quantity comparison
-- ✅ Unit price validation
-- ✅ Total amount verification
-- ✅ Variance calculation
-- ✅ Tolerance thresholds
-- ✅ PO matching cards (10+)
-- ✅ Error scenarios
-- ✅ Best practices
+**Pokrivenost:**
+- ✅ Pregled procesa podudaranja
+- ✅ Podudaranje na nivou stavke
+- ✅ Poređenje količine
+- ✅ Validacija jedinične cene
+- ✅ Verifikacija ukupnog iznosa
+- ✅ Obračun odstupanja
+- ✅ Pragovi tolerancije
+- ✅ PO kartice za podudaranje (10+)
+- ✅ Scenariji grešaka
+- ✅ Najbolje prakse
 
-**Key Topics:**
-- Three-way matching logic
-- Quantity tolerance handling
-- Price variance calculation
-- Date validation (delivery dates)
-- Item reconciliation
-- Duplicate detection
-- Partial shipment handling
-- Overbilling prevention
+**Ključne teme:**
+- Logika trostrukog podudaranja
+- Rukovanje tolerancijom količine
+- Obračun odstupanja cene
+- Validacija datuma (datumi isporuke)
+- Usklađivanje stavki
+- Detekcija duplikata
+- Rukovanje delimičnim isporukama
+- Sprečavanje prekomerne naplate
 
-**Variance Formulas:**
+**Formule odstupanja:**
 - Quantity Variance: `|Document - PO| / PO × 100%`
 - Price Variance: `|(Invoice - PO)| / PO × 100%`
 - Amount Variance: `|(Invoice Total - PO Total)| / PO Total × 100%`
 
-**PO Matching Cards Documented:**
+**Dokumentovane PO kartice za podudaranje:**
 1. CONDITION_OC_TO_PO_ITEMS
 2. CONDITION_DOC_TO_PO_UNIT_PRICE
 3. CONDITION_DATES_OPERATOR_OC_LINE_ITEMS
 4. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
 5. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE
-6. And 5+ more comparison cards
+6. I 5+ dodatnih kartica za poređenje
 
-**Tolerance Configuration:**
-- % based tolerance
-- Fixed amount tolerance
-- Combined tolerance rules
-- Custom acceptance criteria
+**Konfiguracija tolerancije:**
+- Tolerancija zasnovana na %
+- Tolerancija fiksnog iznosa
+- Kombinovana pravila tolerancije
+- Prilagođeni kriterijumi prihvatanja
 
-**Real-World Scenarios:**
-- Small quantity overages accepted
-- Minor price differences allowed
-- Late delivery handling
-- Partial receipt processing
-- Return processing
+**Scenariji iz stvarnog sveta:**
+- Prihvatanje malih viškova količine
+- Dozvoljene manje razlike u ceni
+- Rukovanje kasnom isporukom
+- Obrada delimičnog prijema
+- Obrada povrata
 
-**Related Cards:**
-- Condition Cards (for PO validation logic)
-- Field Manipulation (for variance storage)
-- Task Assignment (for PO exception escalation)
-- Send Email (for discrepancy alerts)
+**Povezane kartice:**
+- Condition Cards (za logiku PO validacije)
+- Field Manipulation (za skladištenje odstupanja)
+- Task Assignment (za eskalaciju PO izuzetaka)
+- Send Email (za upozorenja o neslaganjima)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
 ### 9. Condition Cards Complete Guide
 
-**File:** `and/condition-cards-complete-guide.md` (681 lines)
+**File:** `and/condition-cards-complete-guide.md` (681 red)
 
-**Purpose:** Comprehensive reference for 31+ condition cards and decision logic
+**Svrha:** Sveobuhvatna referenca za 31+ kartica uslova i logiku odlučivanja
 
-**Coverage:**
-- ✅ 31+ condition card reference
-- ✅ Decision logic flow
-- ✅ Conditional branching
-- ✅ Boolean operators
-- ✅ Field comparisons
-- ✅ Table conditions
-- ✅ Date/time conditions
-- ✅ Document conditions
-- ✅ PO comparison conditions
-- ✅ Status conditions
+**Pokrivenost:**
+- ✅ Referenca za 31+ kartica uslova
+- ✅ Tok logike odlučivanja
+- ✅ Uslovno grananje
+- ✅ Logički (Boolean) operatori
+- ✅ Poređenja polja
+- ✅ Uslovi tabele
+- ✅ Uslovi datuma/vremena
+- ✅ Uslovi dokumenta
+- ✅ Uslovi PO poređenja
+- ✅ Uslovi statusa
 
-**Condition Categories:**
+**Kategorije uslova:**
 
-**Document Conditions:**
-- Document type checking
-- Document status
-- Document operator verification
-- Sub-organization conditions
+**Uslovi dokumenta:**
+- Provera tipa dokumenta
+- Status dokumenta
+- Verifikacija operatora dokumenta
+- Uslovi pod-organizacije
 
-**Field Conditions:**
-- Text field matching
-- Number comparisons
-- Field presence checking
-- Country/region conditions
-- Date comparisons
-- Checkbox states
+**Uslovi polja:**
+- Podudaranje tekstualnog polja
+- Poređenja brojeva
+- Provera prisustva polja
+- Uslovi zemlje/regiona
+- Poređenja datuma
+- Stanja polja za potvrdu (checkbox)
 
-**Table Conditions:**
-- Item presence in tables
-- Value matching in tables
-- Row count conditions
-- Cell value comparisons
+**Uslovi tabele:**
+- Prisustvo stavke u tabelama
+- Podudaranje vrednosti u tabelama
+- Uslovi broja redova
+- Poređenja vrednosti ćelija
 
-**PO Comparison Conditions:**
-- Quantity matching
-- Unit price comparison
-- Delivery date validation
-- Item reconciliation
-- Tolerance-based matching
+**Uslovi PO poređenja:**
+- Podudaranje količine
+- Poređenje jedinične cene
+- Validacija datuma isporuke
+- Usklađivanje stavki
+- Podudaranje zasnovano na toleranciji
 
-**Logical Operators:**
-- AND (all conditions must match)
-- OR (any condition matches)
-- NOT (negate condition)
-- Complex boolean logic
+**Logički operatori:**
+- AND (svi uslovi se moraju podudarati)
+- OR (bilo koji uslov se podudara)
+- NOT (negacija uslova)
+- Složena logička logika
 
-**Assignment/Status Conditions:**
-- User assignment checks
-- Group assignment verification
-- Status condition verification
+**Uslovi dodeljivanja/statusa:**
+- Provere dodeljivanja korisniku
+- Verifikacija dodeljivanja grupi
+- Verifikacija uslova statusa
 
-**Date/Time Conditions:**
-- Date range checking
-- Today's date conditions
-- Scheduled execution
+**Uslovi datuma/vremena:**
+- Provera opsega datuma
+- Uslovi današnjeg datuma
+- Zakazano izvršavanje
 
-**Decision Logic Patterns:**
-- Simple if/then conditions
-- Multi-branch conditions
-- Nested conditions
-- Fall-through logic
+**Obrasci logike odlučivanja:**
+- Jednostavni if/then uslovi
+- Uslovi sa više grana
+- Ugnježdeni uslovi
+- Logika propadanja (fall-through)
 
-**31+ Cards Documented:**
-All condition card types with:
-- Purpose and use case
-- Parameter configuration
-- Real-world examples
-- Integration with actions
+**Dokumentovano 31+ kartica:**
+Svi tipovi kartica uslova sa:
+- Svrhom i slučajem upotrebe
+- Konfiguracijom parametara
+- Primerima iz stvarnog sveta
+- Integracijom sa akcijama
 
-**Related Cards:**
-- All action cards (triggered by conditions)
-- All assignment cards (routed by conditions)
-- Field Manipulation (data prep for conditions)
-- PO Matching (condition-based matching)
+**Povezane kartice:**
+- Sve akcione kartice (pokrenute uslovima)
+- Sve kartice za dodeljivanje (usmerene uslovima)
+- Field Manipulation (priprema podataka za uslove)
+- PO Matching (podudaranje zasnovano na uslovima)
 
-**Deployment Status:** ✅ All 8 languages
+**Status postavljanja:** ✅ Svih 8 jezika
 
 ---
 
-## Documentation Statistics
+## Statistika dokumentacije
 
-### Overall Metrics
+### Ukupne metrike
 
 | Metric | Value |
 |--------|-------|
@@ -505,7 +505,7 @@ All condition card types with:
 | **Use Cases** | 80+ |
 | **Formulas/Calculations** | 10+ |
 
-### By Guide
+### Po vodiču
 
 | Guide | Lines | Cards | Examples |
 |-------|-------|-------|----------|
@@ -521,28 +521,28 @@ All condition card types with:
 
 ---
 
-## Workflow Linking Analysis
+## Analiza povezivanja radnih tokova
 
-### Cross-Reference Opportunities: 87 Total
+### Prilike za unakrsne reference: ukupno 87
 
-An analysis identified 87 opportunities to link guides together for improved navigation and user understanding.
+Analiza je identifikovala 87 prilika za povezivanje vodiča radi poboljšane navigacije i razumevanja korisnika.
 
-### Linking Categories
+### Kategorije povezivanja
 
-#### 1. Condition Card References (15 links)
-**Why Important:** Conditions control workflow logic
+#### 1. Reference kartica uslova (15 veza)
+**Zašto je važno:** Uslovi kontrolišu logiku radnog toka
 
-**Examples:**
-- Call API Guide → Condition Cards (for response validation)
-- Task Assignment → Condition Cards (for routing logic)
-- PO Matching → Condition Cards (for result evaluation)
+**Primeri:**
+- Call API Guide → Condition Cards (za validaciju odgovora)
+- Task Assignment → Condition Cards (za logiku usmeravanja)
+- PO Matching → Condition Cards (za evaluaciju rezultata)
 
-**Impact:** Users see how conditions filter actions
+**Uticaj:** Korisnici vide kako uslovi filtriraju akcije
 
-#### 2. Data Flow Links (12 links)
-**Why Important:** Show how data moves through cards
+#### 2. Veze toka podataka (12 veza)
+**Zašto je važno:** Prikazuju kako se podaci kreću kroz kartice
 
-**Pattern:**
+**Obrazac:**
 ```
 API/HTTPS Request
     ↓
@@ -553,91 +553,91 @@ Conditions (evaluate data)
 Task/Email/Assignment (take action)
 ```
 
-**Benefit:** Clear understanding of data flow
+**Korist:** Jasno razumevanje toka podataka
 
-#### 3. Action Card Comparisons (8 links)
-**Why Important:** Help users choose correct card
+#### 3. Poređenja akcionih kartica (8 veza)
+**Zašto je važno:** Pomažu korisnicima da izaberu ispravnu karticu
 
-**Examples:**
+**Primeri:**
 - Call API vs HTTPS Request vs DocOperator Script
 - Task Creation vs Document Assignment
-- Email vs Task for notifications
+- Email vs Task za obaveštenja
 
-**Benefit:** Users make informed decisions
+**Korist:** Korisnici donose informisane odluke
 
-#### 4. Error Handling Patterns (9 links)
-**Why Important:** Show graceful failure scenarios
+#### 4. Obrasci rukovanja greškama (9 veza)
+**Zašto je važno:** Prikazuju scenarije elegantnog neuspeha
 
-**Patterns:**
+**Obrasci:**
 - API failures → Email alert → Manual task
 - Script timeouts → Escalation
 - Matching errors → Human review
 
-**Benefit:** Anticipate and handle failures
+**Korist:** Predvidite i rukujte neuspesima
 
-#### 5. Workflow Integration Patterns (8 links)
-**Why Important:** Show real-world scenarios
+#### 5. Obrasci integracije radnog toka (8 veza)
+**Zašto je važno:** Prikazuju scenarije iz stvarnog sveta
 
-**Examples:**
+**Primeri:**
 - Invoice processing: API → Fields → Conditions → PO Match → Route
 - Approval flow: Conditions → Assignment → Email → Task
 - Integration flow: API → Store → Validate → Action
 
-**Benefit:** Users understand complete flows
+**Korist:** Korisnici razumeju kompletne tokove
 
-#### 6. Enhancement Suggestions (35+ links)
-**Why Important:** Improve navigation and completeness
+#### 6. Predlozi za poboljšanja (35+ veza)
+**Zašto je važno:** Poboljšavaju navigaciju i potpunost
 
-**Examples:**
-- Link variations of similar cards
-- Cross-reference related scenarios
-- Connect to standard workflows
+**Primeri:**
+- Povezivanje varijacija sličnih kartica
+- Unakrsno referenciranje povezanih scenarija
+- Povezivanje sa standardnim radnim tokovima
 
-**Benefit:** Better discoverability
-
----
-
-## Implementation Plan
-
-### Phase 1: High-Impact Links (45 minutes)
-**Focus:** Navigation and core flows
-
-- Condition card references in all guides
-- API response handling in field manipulation
-- PO matching condition validation
-- Task creation routing logic
-- Document assignment conditions
-
-**Expected Impact:** Immediate improvement to user experience
-
-### Phase 2: Workflow Pattern Links (60 minutes)
-**Focus:** Complete workflow scenarios
-
-- API → Field → Condition → Action flows
-- Invoice processing workflows
-- Assignment and routing patterns
-- Error handling scenarios
-- Integration patterns
-
-**Expected Impact:** Improved workflow understanding
-
-### Phase 3: Enhancement Links (30 minutes)
-**Focus:** Polish and completeness
-
-- Comparison tables with links
-- Related card sections
-- Best practice patterns
-- Navigation optimization
-
-**Expected Impact:** Enhanced usability
-
-**Total Time Estimate:** 2-3 hours for complete implementation
+**Korist:** Bolja pronalažljivost
 
 ---
 
-## Language Coverage
+## Plan implementacije
 
-All 9 guides available in 8 languages:
+### Faza 1: Veze velikog uticaja (45 minuta)
+**Fokus:** Navigacija i osnovni tokovi
+
+- Reference kartica uslova u svim vodičima
+- Rukovanje API odgovorima u manipulaciji poljima
+- Validacija PO uslova podudaranja
+- Logika usmeravanja kreiranja zadataka
+- Uslovi dodeljivanja dokumenata
+
+**Očekivani uticaj:** Trenutno poboljšanje korisničkog iskustva
+
+### Faza 2: Veze obrazaca radnog toka (60 minuta)
+**Fokus:** Kompletni scenariji radnog toka
+
+- API → Field → Condition → Action tokovi
+- Radni tokovi obrade faktura
+- Obrasci dodeljivanja i usmeravanja
+- Scenariji rukovanja greškama
+- Obrasci integracije
+
+**Očekivani uticaj:** Poboljšano razumevanje radnog toka
+
+### Faza 3: Veze za poboljšanja (30 minuta)
+**Fokus:** Doterivanje i potpunost
+
+- Tabele poređenja sa vezama
+- Sekcije povezanih kartica
+- Obrasci najboljih praksi
+- Optimizacija navigacije
+
+**Očekivani uticaj:** Poboljšana upotrebljivost
+
+**Ukupna procena vremena:** 2-3 sata za kompletnu implementaciju
+
+---
+
+## Jezička pokrivenost
+
+Svih 9 vodiča dostupno na 8 jezika:
 
 | Language | Branch | Status | Files |
 |----------|--------|--------|-------|
@@ -650,35 +650,35 @@ All 9 guides available in 8 languages:
 | 🇵🇹 Português | pt | ✅ Deployed | 9 |
 | 🇳🇱 Nederlands | nl | ✅ Deployed | 9 |
 
-**Translation Quality:** Professional business language, 100% technical accuracy maintained
+**Kvalitet prevoda:** Profesionalni poslovni jezik, održana 100% tehnička tačnost
 
 ---
 
-## Quality Assurance
+## Obezbeđivanje kvaliteta
 
-### Verification Completed
-- ✅ All 9 guides present on all 8 branches
-- ✅ Consistent directory structure
-- ✅ Card names preserved exactly
-- ✅ Formulas unchanged
-- ✅ Code blocks intact
-- ✅ Examples complete
-- ✅ Parameter references accurate
-- ✅ Cross-references identified
+### Završena verifikacija
+- ✅ Svih 9 vodiča prisutno na svih 8 grana
+- ✅ Konzistentna struktura direktorijuma
+- ✅ Imena kartica tačno očuvana
+- ✅ Formule nepromenjene
+- ✅ Blokovi koda netaknuti
+- ✅ Primeri kompletni
+- ✅ Reference parametara tačne
+- ✅ Unakrsne reference identifikovane
 
-### Technical Accuracy
-- ✅ Card names: ACTION_SET_FIELD_TO_TEXT, etc.
-- ✅ Formulas: Variance % = |(Invoice-PO)|/PO×100
-- ✅ All code examples: JSON, regex, calculations
-- ✅ Parameter UUIDs: __%uuid%__ format preserved
-- ✅ Translation keys: trnsl_% pattern maintained
+### Tehnička tačnost
+- ✅ Imena kartica: ACTION_SET_FIELD_TO_TEXT, itd.
+- ✅ Formule: Variance % = |(Invoice-PO)|/PO×100
+- ✅ Svi primeri koda: JSON, regex, obračuni
+- ✅ Parametar UUID-ovi: očuvan __%uuid%__ format
+- ✅ Ključevi za prevod: održan trnsl_% obrazac
 
 ---
 
-## Access & Navigation
+## Pristup i navigacija
 
-### In GitBook
-Path: `/administration-and-setup/workflow/`
+### U GitBook-u
+Putanja: `/administration-and-setup/workflow/`
 
 **Action Cards:**
 - then/action/call-api-guide
@@ -695,66 +695,66 @@ Path: `/administration-and-setup/workflow/`
 - and/compare-with-purchase-order/po-matching-complete-guide
 - and/condition-cards-complete-guide
 
-### In GitHub
-Repository: github.com/Fellow-Consulting-AG/docbits
-Branches: main, de, es, fr, it, pl, pt, nl
-Path: readme/administration-and-setup/workflow/
+### U GitHub-u
+Repozitorijum: github.com/Fellow-Consulting-AG/docbits
+Grane: main, de, es, fr, it, pl, pt, nl
+Putanja: readme/administration-and-setup/workflow/
 
 ---
 
-## Next Steps
+## Sledeći koraci
 
-### Immediate (0-2 weeks)
-1. Gather user feedback on new guides
-2. Identify additional documentation needs
-3. Plan implementation of 87 cross-references
+### Odmah (0-2 nedelje)
+1. Prikupljanje povratnih informacija korisnika o novim vodičima
+2. Identifikacija dodatnih potreba za dokumentacijom
+3. Planiranje implementacije 87 unakrsnih referenci
 
-### Short-term (2-4 weeks)
-1. Implement high-impact linking (45 min)
-2. Add screenshots and diagrams
-3. Create quick reference cards
+### Kratkoročno (2-4 nedelje)
+1. Implementacija povezivanja velikog uticaja (45 min)
+2. Dodavanje snimaka ekrana i dijagrama
+3. Kreiranje kartica brze reference
 
-### Medium-term (1-2 months)
-1. Complete workflow pattern linking (60 min)
-2. Create video tutorials
-3. Update standard workflows
+### Srednjoročno (1-2 meseca)
+1. Završetak povezivanja obrazaca radnog toka (60 min)
+2. Kreiranje video tutorijala
+3. Ažuriranje standardnih radnih tokova
 
-### Long-term (3+ months)
-1. Advanced workflow templates
-2. Best practices library
-3. Integration patterns guide
-4. Performance optimization guide
+### Dugoročno (3+ meseca)
+1. Napredni šabloni radnih tokova
+2. Biblioteka najboljih praksi
+3. Vodič za obrasce integracije
+4. Vodič za optimizaciju performansi
 
 ---
 
-## Related Documentation
+## Povezana dokumentacija
 
-### Complete References
+### Kompletne reference
 - 📖 [Card Versioning Reference](../../docs/card_version.md)
 - 🔗 [Workflow Linking Map](../../WORKFLOW_LINKING_MAP.md)
 - 📋 [Workflow Linking Summary](../../WORKFLOW_LINKING_SUMMARY.md)
 
-### Guide Index
+### Indeks vodiča
 - 🎯 [Workflow Guides](../)
 - 📚 [All Guides by Category](../then/ and ../and/)
 
 ---
 
-## Summary
+## Rezime
 
-This documentation enhancement provides:
-- ✅ Comprehensive guides for 80+ workflow cards
-- ✅ Real-world examples and use cases
-- ✅ Step-by-step setup instructions
-- ✅ Parameter reference tables
-- ✅ Troubleshooting and best practices
-- ✅ Multi-language support (8 languages)
-- ✅ 87 identified linking opportunities
-- ✅ 100% technical accuracy
+Ovo poboljšanje dokumentacije pruža:
+- ✅ Sveobuhvatne vodiče za 80+ kartica radnog toka
+- ✅ Primere iz stvarnog sveta i slučajeve upotrebe
+- ✅ Korak-po-korak uputstva za podešavanje
+- ✅ Tabele referenci parametara
+- ✅ Otklanjanje grešaka i najbolje prakse
+- ✅ Višejezičku podršku (8 jezika)
+- ✅ 87 identifikovanih prilika za povezivanje
+- ✅ 100% tehničku tačnost
 
-**Total Effort:** 9 guides, 72 files, 334,224 lines of documentation across 8 languages
+**Ukupan napor:** 9 vodiča, 72 datoteke, 334.224 reda dokumentacije na 8 jezika
 
-**User Impact:** Reduced training time, faster workflow creation, self-service support
+**Uticaj na korisnika:** Smanjeno vreme obuke, brže kreiranje radnih tokova, samouslužna podrška
 
 ---
 

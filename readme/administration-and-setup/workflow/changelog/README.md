@@ -4,73 +4,73 @@
 
 ---
 
-## Overview
+## Pregled
 
-This changelog documents all significant changes, improvements, and updates to the DocBits Workflow Engine. It includes new features, documentation enhancements, card versioning updates, and system improvements.
-
----
-
-## Quick Links
-
-### Latest Release
-📦 **[October 2025 Release](./2025-10-october.md)** - Major documentation and versioning improvements
-
-### By Category
-- 📚 [Documentation Enhancements](./documentation-enhancements.md) - New guides and cross-references
-- 🔄 [Card Versioning System](./card-versioning.md) - Version management and evolution
-- 🚀 [System Improvements](./2025-10-october.md) - Feature additions and fixes
+Ovaj changelog dokumentuje sve značajne promene, poboljšanja i ažuriranja DocBits Workflow Engine-a. Uključuje nove funkcije, poboljšanja dokumentacije, ažuriranja verzionisanja kartica i poboljšanja sistema.
 
 ---
 
-## Version History
+## Brze veze
 
-### 2025-10 (October 2025) - Current Release
+### Najnovije izdanje
+📦 **[October 2025 Release](./2025-10-october.md)** - Velika poboljšanja dokumentacije i verzionisanja
 
-**Summary:** Comprehensive documentation expansion with 9 new workflow card guides, card versioning system documentation, and workflow linking improvements.
-
-**Key Highlights:**
-- ✅ 9 comprehensive workflow card guides created (4,642 lines)
-- ✅ Card versioning documentation with evolution paths
-- ✅ Workflow linking analysis (87 cross-reference opportunities)
-- ✅ Multilingual support (8 languages: English, German, Spanish, French, Italian, Polish, Portuguese, Dutch)
-- ✅ 72 total documentation files deployed
-
-**See:** [October 2025 Release Notes](./2025-10-october.md)
+### Po kategorijama
+- 📚 [Documentation Enhancements](./documentation-enhancements.md) - Novi vodiči i unakrsne reference
+- 🔄 [Card Versioning System](./card-versioning.md) - Upravljanje verzijama i evolucija
+- 🚀 [System Improvements](./2025-10-october.md) - Dodavanje funkcija i ispravke
 
 ---
 
-## Guides Added in October 2025
+## Istorija verzija
 
-### Action Cards (External Integration)
-1. **[Call API Guide](../then/action/call-api-guide.md)** - Integrate with external APIs with full parameter support
-2. **[HTTPS Request Guide](../then/action/https-request-guide.md)** - Send secure HTTP/HTTPS requests to external services
-3. **[DocOperator Script Guide](../then/action/docoperator-script-guide.md)** - Browser automation and form filling
+### 2025-10 (October 2025) - Trenutno izdanje
 
-### Action Cards (Communication)
-4. **[Send Email to Groups Guide](../then/action/send-email-groups-guide.md)** - Notify multiple users via email groups
+**Rezime:** Sveobuhvatno proširenje dokumentacije sa 9 novih vodiča za kartice radnog toka, dokumentacijom sistema verzionisanja kartica i poboljšanjima povezivanja radnih tokova.
 
-### Data & Field Manipulation
-5. **[Field Manipulation Guide](../then/document-field/field-manipulation-guide.md)** - Update, calculate, and transform document fields
+**Ključni momenti:**
+- ✅ Kreirano 9 sveobuhvatnih vodiča za kartice radnog toka (4.642 reda)
+- ✅ Dokumentacija verzionisanja kartica sa putanjama evolucije
+- ✅ Analiza povezivanja radnih tokova (87 prilika za unakrsne reference)
+- ✅ Višejezička podrška (8 jezika: English, German, Spanish, French, Italian, Polish, Portuguese, Dutch)
+- ✅ Postavljeno ukupno 72 datoteke dokumentacije
 
-### Task & Assignment
-6. **[Task Assignment Guide](../then/task/task-assignment-guide.md)** - Create and assign tasks with priority and routing
-7. **[Document Assignment Guide](../then/assignee/assignment-user-guide.md)** - Assign documents to users and groups
-
-### Comparison & Validation
-8. **[PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md)** - Match invoices with purchase orders and calculate variances
-9. **[Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)** - Comprehensive reference for 31+ condition cards
+**Pogledajte:** [October 2025 Release Notes](./2025-10-october.md)
 
 ---
 
-## Documentation Resources
+## Vodiči dodati u oktobru 2025.
 
-### Main References
-- 📖 **Card Versioning:** Understanding version evolution and migration paths
-- 🔗 **Linking Map:** 87 identified cross-reference opportunities for documentation
-- 🎯 **Best Practices:** Recommendations for workflow design and card selection
+### Action Cards (Eksterna integracija)
+1. **[Call API Guide](../then/action/call-api-guide.md)** - Integracija sa eksternim API-jima uz punu podršku za parametre
+2. **[HTTPS Request Guide](../then/action/https-request-guide.md)** - Slanje sigurnih HTTP/HTTPS zahteva eksternim servisima
+3. **[DocOperator Script Guide](../then/action/docoperator-script-guide.md)** - Automatizacija pregledača i popunjavanje formulara
 
-### Language Support
-All guides available in:
+### Action Cards (Komunikacija)
+4. **[Send Email to Groups Guide](../then/action/send-email-groups-guide.md)** - Obaveštavanje više korisnika putem e-mail grupa
+
+### Manipulacija podacima i poljima
+5. **[Field Manipulation Guide](../then/document-field/field-manipulation-guide.md)** - Ažuriranje, obračun i transformacija polja dokumenta
+
+### Zadaci i dodeljivanje
+6. **[Task Assignment Guide](../then/task/task-assignment-guide.md)** - Kreiranje i dodeljivanje zadataka sa prioritetom i usmeravanjem
+7. **[Document Assignment Guide](../then/assignee/assignment-user-guide.md)** - Dodeljivanje dokumenata korisnicima i grupama
+
+### Poređenje i validacija
+8. **[PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md)** - Podudaranje faktura sa narudžbenicama i obračun odstupanja
+9. **[Condition Cards Complete Guide](../and/condition-cards-complete-guide.md)** - Sveobuhvatna referenca za 31+ kartica uslova
+
+---
+
+## Resursi dokumentacije
+
+### Glavne reference
+- 📖 **Card Versioning:** Razumevanje evolucije verzija i putanja migracije
+- 🔗 **Linking Map:** 87 identifikovanih prilika za unakrsne reference u dokumentaciji
+- 🎯 **Best Practices:** Preporuke za dizajn radnog toka i izbor kartica
+
+### Jezička podrška
+Svi vodiči dostupni na:
 - 🇺🇸 English
 - 🇩🇪 Deutsch (German)
 - 🇪🇸 Español (Spanish)
@@ -82,90 +82,90 @@ All guides available in:
 
 ---
 
-## How to Use This Changelog
+## Kako koristiti ovaj changelog
 
-### Find Information By:
-- **Date:** Look for version folders (e.g., 2025-10-october.md)
-- **Category:** Check category-specific pages (documentation, versioning, improvements)
-- **Card Type:** Link from specific card guides back to changelog entries
+### Pronađite informacije po:
+- **Datumu:** Potražite foldere verzija (npr. 2025-10-october.md)
+- **Kategoriji:** Proverite stranice specifične za kategoriju (dokumentacija, verzionisanje, poboljšanja)
+- **Tipu kartice:** Povežite se sa određenih vodiča za kartice nazad na unose u changelog-u
 
-### Understanding Version Numbers:
-- Format: `YYYY-MM` (e.g., 2025-10)
-- Comprehensive changes documented for each release
-- Breaking changes clearly marked
+### Razumevanje brojeva verzija:
+- Format: `YYYY-MM` (npr. 2025-10)
+- Sveobuhvatne promene dokumentovane za svako izdanje
+- Promene koje uvode nekompatibilnost jasno označene
 
-### Related Documentation:
-- [Card Versioning Reference](../../docs/card_version.md) - Detailed version history and evolution
-- [Workflow Documentation Guides](../then/) - Step-by-step guides for card usage
-- [Workflow Linking Analysis](../../WORKFLOW_LINKING_MAP.md) - Cross-reference mapping (87 opportunities)
-
----
-
-## Change Categories
-
-### 📚 Documentation
-- New comprehensive guides
-- Improved examples and use cases
-- Cross-reference linking
-- Multi-language translations
-
-### 🔄 Versioning
-- Card version tracking
-- Version evolution paths
-- Deprecation information
-- Migration guides
-
-### 🚀 System Improvements
-- New features
-- Enhanced capabilities
-- Bug fixes
-- Performance improvements
-
-### 🌍 Localization
-- Language expansion
-- Translation improvements
-- Region-specific content
+### Povezana dokumentacija:
+- [Card Versioning Reference](../../docs/card_version.md) - Detaljna istorija verzija i evolucija
+- [Workflow Documentation Guides](../then/) - Korak-po-korak vodiči za upotrebu kartica
+- [Workflow Linking Analysis](../../WORKFLOW_LINKING_MAP.md) - Mapiranje unakrsnih referenci (87 prilika)
 
 ---
 
-## Most Recent Changes
+## Kategorije promena
 
-### Documentation Expansion (October 23, 2025)
-- 9 comprehensive workflow card guides added
-- 72 files created across 8 language branches
-- 4,642 lines of English documentation
-- 87 workflow linking opportunities identified
+### 📚 Dokumentacija
+- Novi sveobuhvatni vodiči
+- Poboljšani primeri i slučajevi upotrebe
+- Povezivanje unakrsnim referencama
+- Višejezički prevodi
 
-### Card Versioning System (October 23, 2025)
-- Card version history documented
-- Evolution patterns identified
-- Migration paths defined
-- 30+ cards with multiple versions catalogued
+### 🔄 Verzionisanje
+- Praćenje verzija kartica
+- Putanje evolucije verzija
+- Informacije o zastarelosti
+- Vodiči za migraciju
 
-### Workflow Analysis (October 23, 2025)
-- 87 cross-reference opportunities mapped
-- 4 analysis documents created
-- Linking implementation plan prepared
+### 🚀 Poboljšanja sistema
+- Nove funkcije
+- Poboljšane mogućnosti
+- Ispravke grešaka
+- Poboljšanja performansi
+
+### 🌍 Lokalizacija
+- Proširenje jezika
+- Poboljšanja prevoda
+- Sadržaj specifičan za region
 
 ---
 
-## Planned Future Improvements
+## Najskorije promene
+
+### Proširenje dokumentacije (October 23, 2025)
+- Dodato 9 sveobuhvatnih vodiča za kartice radnog toka
+- Kreirano 72 datoteke kroz 8 jezičkih grana
+- 4.642 reda dokumentacije na engleskom
+- Identifikovano 87 prilika za povezivanje radnih tokova
+
+### Sistem verzionisanja kartica (October 23, 2025)
+- Dokumentovana istorija verzija kartica
+- Identifikovani obrasci evolucije
+- Definisane putanje migracije
+- Katalogizovano 30+ kartica sa više verzija
+
+### Analiza radnih tokova (October 23, 2025)
+- Mapirano 87 prilika za unakrsne reference
+- Kreirana 4 dokumenta za analizu
+- Pripremljen plan implementacije povezivanja
+
+---
+
+## Planirana buduća poboljšanja
 
 ### Q4 2025
-- [ ] Implement internal cross-reference linking (87 opportunities)
-- [ ] Add screenshots and diagrams to guides
-- [ ] Create video tutorials for complex workflows
-- [ ] User feedback collection and implementation
+- [ ] Implementacija internog povezivanja unakrsnim referencama (87 prilika)
+- [ ] Dodavanje snimaka ekrana i dijagrama u vodiče
+- [ ] Kreiranje video tutorijala za složene radne tokove
+- [ ] Prikupljanje i implementacija povratnih informacija korisnika
 
 ### Q1 2026
-- [ ] Advanced workflow templates
-- [ ] Performance optimization guides
-- [ ] Integration patterns documentation
-- [ ] Best practices library
+- [ ] Napredni šabloni radnih tokova
+- [ ] Vodiči za optimizaciju performansi
+- [ ] Dokumentacija obrazaca integracije
+- [ ] Biblioteka najboljih praksi
 
 ---
 
-## Statistics
+## Statistika
 
 | Metric | Value |
 |--------|-------|
@@ -180,58 +180,58 @@ All guides available in:
 
 ---
 
-## Contributing to Changelog
+## Doprinos changelog-u
 
-When making changes to workflow documentation:
+Prilikom izmena dokumentacije radnog toka:
 
-1. **Document Changes:** Explain what was changed and why
-2. **Version Updates:** Include version number if applicable
-3. **Multi-Language:** Update changelog in all language branches
-4. **Link References:** Connect to related guides and documentation
-5. **Date Format:** Use YYYY-MM-DD for consistency
+1. **Document Changes:** Objasnite šta je promenjeno i zašto
+2. **Version Updates:** Uključite broj verzije ako je primenljivo
+3. **Multi-Language:** Ažurirajte changelog u svim jezičkim granama
+4. **Link References:** Povežite se sa povezanim vodičima i dokumentacijom
+5. **Date Format:** Koristite YYYY-MM-DD radi konzistentnosti
 
 ---
 
-## Workflow Module Status
+## Status modula Workflow
 
 | Component | Status | Notes |
 |-----------|--------|-------|
-| **Core Workflow Engine** | ✅ Active | Running smoothly |
-| **Action Cards** | ✅ Documented | 9+ comprehensive guides |
-| **Condition Cards** | ✅ Documented | 31+ cards documented |
-| **Assignment Cards** | ✅ Documented | Complete coverage |
-| **Integration Cards** | ✅ Documented | API, HTTPS, Script execution |
-| **Versioning System** | ✅ Documented | All versions tracked |
-| **Linking System** | 🔄 In Progress | 87 opportunities mapped |
+| **Core Workflow Engine** | ✅ Active | Radi neometano |
+| **Action Cards** | ✅ Documented | 9+ sveobuhvatnih vodiča |
+| **Condition Cards** | ✅ Documented | Dokumentovano 31+ kartica |
+| **Assignment Cards** | ✅ Documented | Kompletna pokrivenost |
+| **Integration Cards** | ✅ Documented | API, HTTPS, izvršavanje skripti |
+| **Versioning System** | ✅ Documented | Sve verzije praćene |
+| **Linking System** | 🔄 In Progress | Mapirano 87 prilika |
 
 ---
 
-## Quick Reference Links
+## Brze referentne veze
 
-### Workflow Guides
+### Vodiči za radne tokove
 - [Action Cards](../then/action/)
 - [Condition Cards](../and/)
 - [Assignment Cards](../then/assignee/)
 - [Export & Data Cards](../then/export/)
 
-### Documentation
+### Dokumentacija
 - [Card Versioning Reference](../../docs/card_version.md)
 - [Workflow Linking Map](../../WORKFLOW_LINKING_MAP.md)
 - [Workflow Linking Summary](../../WORKFLOW_LINKING_SUMMARY.md)
 
-### Support
+### Podrška
 - [Workflow Logs](../workflow-logs/)
 - [Standard Workflows](../standard-workflow/)
 - [Release Notes](../release.md)
 
 ---
 
-## Contact & Support
+## Kontakt i podrška
 
-For questions about workflow changes or documentation:
-- 📖 Review the specific guide for the card you're using
-- 🔍 Check the [Card Versioning Reference](../../docs/card_version.md) for version-specific information
-- 📋 See [Workflow Logs](../workflow-logs/) for execution details
+Za pitanja o promenama radnog toka ili dokumentaciji:
+- 📖 Pregledajte specifičan vodič za karticu koju koristite
+- 🔍 Proverite [Card Versioning Reference](../../docs/card_version.md) za informacije specifične za verziju
+- 📋 Pogledajte [Workflow Logs](../workflow-logs/) za detalje izvršavanja
 
 ---
 

@@ -1,48 +1,48 @@
-# Promised delivery date for line items in table with promised delivery date
+# Date de livraison promise pour les lignes d'un tableau avec date de livraison promise
 
 <figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Purpose:
+## Objectif :
 
-This workflow card is designed to validate the **promised delivery date of line items** against the **promised delivery date on the purchase order**, using comparison operators and configurable tolerance rules. It allows workflows to automatically detect compliant, early, or late delivery dates and react accordingly.
+Cette carte de workflow est conçue pour valider la **date de livraison promise des lignes** par rapport à la **date de livraison promise sur le bon de commande**, à l'aide d'opérateurs de comparaison et de règles de tolérance configurables. Elle permet aux workflows de détecter automatiquement les dates de livraison conformes, anticipées ou tardives, et de réagir en conséquence.
 
-## Components of the Card:
+## Composants de la carte :
 
 1. **Operator**
-   * **Description:**\
-     Defines how the line item promised delivery date is compared to the purchase order promised delivery date.
-   * **Options:**
-     * **Equals (=):** The line item date must fall within the tolerance window.
-     * **Not Equals (≠):** The line item date must fall outside the tolerance window.
-     * **Greater Than (>):** The line item date must be after the tolerance window.
-     * **Greater or Equals (≥):** The line item date must be on or after the start of the tolerance window.
-     * **Lesser Than (<):** The line item date must be before the tolerance window.
-     * **Lesser or Equals (≤):** The line item date must be on or before the end of the tolerance window.<br>
+   * **Description :**\
+     Définit comment la date de livraison promise de la ligne est comparée à la date de livraison promise du bon de commande.
+   * **Options :**
+     * **Equals (=) :** la date de la ligne doit se situer à l'intérieur de la fenêtre de tolérance.
+     * **Not Equals (≠) :** la date de la ligne doit se situer en dehors de la fenêtre de tolérance.
+     * **Greater Than (>) :** la date de la ligne doit être postérieure à la fenêtre de tolérance.
+     * **Greater or Equals (≥) :** la date de la ligne doit être égale ou postérieure au début de la fenêtre de tolérance.
+     * **Lesser Than (<) :** la date de la ligne doit être antérieure à la fenêtre de tolérance.
+     * **Lesser or Equals (≤) :** la date de la ligne doit être égale ou antérieure à la fin de la fenêtre de tolérance.<br>
 2. **Tolerance Days**
-   * **Description:**\
-     Specifies the number of days used to calculate the acceptable tolerance window around the purchase order promised delivery date.
-   * **Detail:**\
-     This value is an integer and defines how many days before and after the purchase order date are considered during validation.<br>
+   * **Description :**\
+     Spécifie le nombre de jours utilisé pour calculer la fenêtre de tolérance acceptable autour de la date de livraison promise du bon de commande.
+   * **Détail :**\
+     Cette valeur est un entier et définit combien de jours avant et après la date du bon de commande sont pris en compte lors de la validation.<br>
 3. **Allowed Tolerance Days**
-   * **Description:**\
-     Defines which weekdays are counted when calculating tolerance days.
-   * **Detail:**\
-     Users can select specific weekdays (for example, Monday to Friday). Only the selected days are included when calculating the tolerance window.
+   * **Description :**\
+     Définit quels jours de la semaine sont comptabilisés lors du calcul des jours de tolérance.
+   * **Détail :**\
+     Les utilisateurs peuvent sélectionner des jours de semaine précis (par exemple, du lundi au vendredi). Seuls les jours sélectionnés sont inclus dans le calcul de la fenêtre de tolérance.
 
-### Functionality:
+### Fonctionnalité :
 
-* **Condition Evaluation:** The system calculates a tolerance window around the purchase order promised delivery date based on the configured **Tolerance Days** and **Allowed Tolerance Days**.\
-  Each line item’s promised delivery date is then compared to this window using the selected operator.
-* Action Execution:
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Évaluation de la condition :** le système calcule une fenêtre de tolérance autour de la date de livraison promise du bon de commande en fonction des **Tolerance Days** et des **Allowed Tolerance Days** configurés.\
+  La date de livraison promise de chaque ligne est ensuite comparée à cette fenêtre à l'aide de l'opérateur sélectionné.
+* Exécution de l'action :
+  * **Condition vraie :** si l'écart de date de livraison se situe dans la plage de tolérance et correspond à la condition définie par l'opérateur, le workflow se poursuit.
+  * **Condition fausse :** si la condition n'est pas remplie, le workflow ne se poursuit pas.
 
-### Setup and Configuration:
+### Mise en place et configuration :
 
-* Select the appropriate comparison operator.
-* Enter the number of tolerance days.
-* Choose which weekdays should be counted as tolerance days.
+* Sélectionnez l'opérateur de comparaison approprié.
+* Saisissez le nombre de jours de tolérance.
+* Choisissez quels jours de la semaine doivent être comptabilisés comme jours de tolérance.
 
-### Conclusion:
+### Conclusion :
 
-The **Compare with Purchase Order – Promised Delivery Date for Line Items** workflow card provides a flexible way to enforce delivery date rules. By combining operators with weekday-aware tolerance handling, it enables precise validation of delivery commitments while reducing manual checks and exceptions.
+La carte de workflow **Compare with Purchase Order – Promised Delivery Date for Line Items** offre un moyen flexible d'appliquer des règles de date de livraison. En combinant des opérateurs avec une gestion de la tolérance tenant compte des jours de la semaine, elle permet une validation précise des engagements de livraison tout en réduisant les contrôles manuels et les exceptions.

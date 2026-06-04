@@ -2,47 +2,47 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
 
-## Purpose:
+## Propósito:
 
-This workflow card is designed to validate the **promised delivery date of line items** against the **promised delivery date on the purchase order**, using comparison operators and configurable tolerance rules. It allows workflows to automatically detect compliant, early, or late delivery dates and react accordingly.
+Este cartão de fluxo de trabalho foi concebido para validar a **data de entrega prometida das linhas de itens** face à **data de entrega prometida na ordem de compra**, utilizando operadores de comparação e regras de tolerância configuráveis. Permite que os fluxos de trabalho detetem automaticamente datas de entrega conformes, antecipadas ou atrasadas e reajam em conformidade.
 
-## Components of the Card:
+## Componentes do cartão:
 
-1. **Operator**
-   * **Description:**\
-     Defines how the line item promised delivery date is compared to the purchase order promised delivery date.
-   * **Options:**
-     * **Equals (=):** The line item date must fall within the tolerance window.
-     * **Not Equals (≠):** The line item date must fall outside the tolerance window.
-     * **Greater Than (>):** The line item date must be after the tolerance window.
-     * **Greater or Equals (≥):** The line item date must be on or after the start of the tolerance window.
-     * **Lesser Than (<):** The line item date must be before the tolerance window.
-     * **Lesser or Equals (≤):** The line item date must be on or before the end of the tolerance window.<br>
+1. **Operador**
+   * **Descrição:**\
+     Define como a data de entrega prometida da linha de item é comparada com a data de entrega prometida da ordem de compra.
+   * **Opções:**
+     * **Equals (=):** A data da linha de item tem de estar dentro da janela de tolerância.
+     * **Not Equals (≠):** A data da linha de item tem de estar fora da janela de tolerância.
+     * **Greater Than (>):** A data da linha de item tem de ser posterior à janela de tolerância.
+     * **Greater or Equals (≥):** A data da linha de item tem de ser igual ou posterior ao início da janela de tolerância.
+     * **Lesser Than (<):** A data da linha de item tem de ser anterior à janela de tolerância.
+     * **Lesser or Equals (≤):** A data da linha de item tem de ser igual ou anterior ao fim da janela de tolerância.<br>
 2. **Tolerance Days**
-   * **Description:**\
-     Specifies the number of days used to calculate the acceptable tolerance window around the purchase order promised delivery date.
-   * **Detail:**\
-     This value is an integer and defines how many days before and after the purchase order date are considered during validation.<br>
+   * **Descrição:**\
+     Especifica o número de dias usado para calcular a janela de tolerância aceitável em torno da data de entrega prometida da ordem de compra.
+   * **Detalhe:**\
+     Este valor é um número inteiro e define quantos dias antes e depois da data da ordem de compra são considerados durante a validação.<br>
 3. **Allowed Tolerance Days**
-   * **Description:**\
-     Defines which weekdays are counted when calculating tolerance days.
-   * **Detail:**\
-     Users can select specific weekdays (for example, Monday to Friday). Only the selected days are included when calculating the tolerance window.
+   * **Descrição:**\
+     Define quais os dias da semana que são contabilizados ao calcular os dias de tolerância.
+   * **Detalhe:**\
+     Os utilizadores podem selecionar dias da semana específicos (por exemplo, de segunda a sexta-feira). Apenas os dias selecionados são incluídos ao calcular a janela de tolerância.
 
-### Functionality:
+### Funcionalidade:
 
-* **Condition Evaluation:** The system calculates a tolerance window around the purchase order promised delivery date based on the configured **Tolerance Days** and **Allowed Tolerance Days**.\
-  Each line item’s promised delivery date is then compared to this window using the selected operator.
-* Action Execution:
-  * **True Condition:** If the delivery date difference is within the tolerance range and matches the condition set by the operator, the workflow proceeds.
-  * **False Condition:** If the condition is not met, the workflow will not continue.
+* **Avaliação da condição:** O sistema calcula uma janela de tolerância em torno da data de entrega prometida da ordem de compra com base nos **Tolerance Days** e **Allowed Tolerance Days** configurados.\
+  A data de entrega prometida de cada linha de item é então comparada com esta janela utilizando o operador selecionado.
+* Execução da ação:
+  * **Condição Verdadeira:** Se a diferença da data de entrega estiver dentro do intervalo de tolerância e corresponder à condição definida pelo operador, o fluxo de trabalho prossegue.
+  * **Condição Falsa:** Se a condição não for cumprida, o fluxo de trabalho não continuará.
 
-### Setup and Configuration:
+### Configuração:
 
-* Select the appropriate comparison operator.
-* Enter the number of tolerance days.
-* Choose which weekdays should be counted as tolerance days.
+* Selecione o operador de comparação adequado.
+* Introduza o número de dias de tolerância.
+* Escolha quais os dias da semana que devem ser contabilizados como dias de tolerância.
 
-### Conclusion:
+### Conclusão:
 
-The **Compare with Purchase Order – Promised Delivery Date for Line Items** workflow card provides a flexible way to enforce delivery date rules. By combining operators with weekday-aware tolerance handling, it enables precise validation of delivery commitments while reducing manual checks and exceptions.
+O cartão de fluxo de trabalho **Compare with Purchase Order – Promised Delivery Date for Line Items** oferece uma forma flexível de aplicar regras de datas de entrega. Ao combinar operadores com um tratamento de tolerância sensível aos dias da semana, permite a validação precisa dos compromissos de entrega, reduzindo ao mesmo tempo as verificações manuais e as exceções.

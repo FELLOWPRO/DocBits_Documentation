@@ -4,65 +4,65 @@ description: Configuração das condições E nos fluxos de trabalho DocBits
 
 # And
 
-## Understanding "And" Cards
+## Compreender os cartões "And"
 
-### **Purpose of 'And' Cards:**
+### **Propósito dos cartões "And":**
 
-* **And** cards serve as condition cards that specify criteria that must be met for the workflow to continue. They effectively act as logical "AND" operators, meaning all conditions specified in these cards must be satisfied for the subsequent action to be triggered.
+* Os cartões **And** funcionam como cartões de condição que especificam critérios que têm de ser cumpridos para que o fluxo de trabalho continue. Atuam efetivamente como operadores lógicos "AND", ou seja, todas as condições especificadas nestes cartões têm de ser satisfeitas para que a ação seguinte seja acionada.
 
-#### Categories of 'And' Cards
+#### Categorias de cartões "And"
 
-From the screenshots, it's clear that these cards cover a wide range of conditions, which include:
+A partir das capturas de ecrã, é claro que estes cartões abrangem uma vasta gama de condições, que incluem:
 
 * **Compare with Purchase Order**:
-  * Conditions related to validation and comparison against purchase orders, such as comparing delivery dates, unit prices, or quantity differences. These are crucial for ensuring that transactions align with agreed terms.
+  * Condições relacionadas com a validação e comparação face a ordens de compra, tais como comparar datas de entrega, preços unitários ou diferenças de quantidade. São cruciais para garantir que as transações estão de acordo com os termos acordados.
 
 <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Document Field**:
-  * These involve conditions based on specific fields within documents, such as checkboxes being marked, comparison of field values, or ensuring a document field meets a specified tolerance. This is particularly important for data integrity and automated checks within forms or document management systems.
+  * Envolvem condições baseadas em campos específicos dentro dos documentos, como caixas de verificação assinaladas, comparação de valores de campos ou garantir que um campo de documento cumpre uma tolerância especificada. Isto é particularmente importante para a integridade dos dados e verificações automáticas em formulários ou sistemas de gestão documental.
 
 <figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Date & Time:**
-  * Conditions based on dates and times
+  * Condições baseadas em datas e horas
 
 <figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Document**:
-  * Conditions based on document characteristics, such as type or association with a particular sub-organization. These conditions can direct workflows based on document categorization or departmental involvement.
+  * Condições baseadas nas características do documento, como o tipo ou a associação a uma sub-organização específica. Estas condições podem orientar os fluxos de trabalho com base na categorização do documento ou no envolvimento de departamentos.
 
 <figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Logic**:
-  * Logical conditions that might involve evaluations like "Continue with a chance of X%" or executing HTTPS requests, which are vital for integrations and probabilistic decision-making within workflows.
+  * Condições lógicas que podem envolver avaliações como "Continuar com uma probabilidade de X%" ou a execução de pedidos HTTPS, que são vitais para integrações e tomada de decisões probabilística dentro dos fluxos de trabalho.
 
 <figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Status**:
-  * Focusing on the status of documents or tasks, these conditions ensure that only items in certain states trigger specific workflows, crucial for status-driven process management.
+  * Focando-se no estado dos documentos ou tarefas, estas condições garantem que apenas os itens em determinados estados acionam fluxos de trabalho específicos, o que é crucial para a gestão de processos orientada por estado.
 
 <figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Table**:
-  * These involve conditions based on table data, such as matching regex patterns or comparing values within a table. Such conditions are essential for validating and manipulating large data sets.
+  * Envolvem condições baseadas em dados de tabelas, como a correspondência de padrões regex ou a comparação de valores dentro de uma tabela. Tais condições são essenciais para validar e manipular grandes conjuntos de dados.
 
 <figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Assignee**:
-  * Conditions based on task or document assignees. This ensures that actions are only taken when certain users are involved, enhancing accountability and task specificity.
+  * Condições baseadas nos responsáveis de tarefas ou documentos. Isto garante que as ações só são realizadas quando determinados utilizadores estão envolvidos, reforçando a responsabilização e a especificidade das tarefas.
 
 <figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Practical Application
+### Aplicação prática
 
-These "And" cards are configured within the workflow to perform checks and validations that ensure the process adheres strictly to business rules and data integrity standards. For example:
+Estes cartões "And" são configurados dentro do fluxo de trabalho para realizar verificações e validações que garantem que o processo cumpre rigorosamente as regras de negócio e os padrões de integridade de dados. Por exemplo:
 
-* **A workflow might use an 'And' card to verify that an invoice's total amount matches the purchase order before triggering payment.**
-* **Another workflow could use an 'And' card to ensure a document is reviewed by specific team members before it progresses to the next stage.**
+* **Um fluxo de trabalho pode usar um cartão "And" para verificar se o valor total de uma fatura corresponde à ordem de compra antes de acionar o pagamento.**
+* **Outro fluxo de trabalho pode usar um cartão "And" para garantir que um documento é revisto por membros específicos da equipa antes de avançar para a fase seguinte.**
 
-### Conclusion
+### Conclusão
 
-"And" cards are a fundamental component of workflow systems that require precise control over process execution based on multiple conditions. They ensure that each step of a workflow only proceeds when all necessary criteria are thoroughly met, thus automating complex decision trees within business processes.
+Os cartões "And" são um componente fundamental dos sistemas de fluxo de trabalho que exigem um controlo preciso da execução do processo com base em múltiplas condições. Garantem que cada passo de um fluxo de trabalho só avança quando todos os critérios necessários são plenamente cumpridos, automatizando assim árvores de decisão complexas dentro dos processos de negócio.
 
-Understanding and configuring these cards correctly is crucial for leveraging the full capabilities of your workflow management system to enhance efficiency, accuracy, and compliance within organizational processes.
+Compreender e configurar corretamente estes cartões é crucial para aproveitar todas as capacidades do seu sistema de gestão de fluxos de trabalho, de modo a aumentar a eficiência, a precisão e a conformidade nos processos da organização.

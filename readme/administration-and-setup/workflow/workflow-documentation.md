@@ -1,18 +1,18 @@
-# Workflow Documentation
+# Dokumentacja przepływu pracy
 
-**Workflow Documentation**
+**Dokumentacja przepływu pracy**
 
-To keep an overview, you can give the workflows different headings so that you can immediately know what task this workflow is about.
+Aby zachować przejrzystość, możesz nadać przepływom pracy różne nagłówki, dzięki czemu od razu będziesz wiedzieć, czego dotyczy dany przepływ pracy.
 
-Create a new Workflow: Click on + ADD WORKFLOW
+Utwórz nowy przepływ pracy: Kliknij + ADD WORKFLOW
 
 ![](<../../../.gitbook/assets/0 (1).png>)
 
-You can use these workflows (Test 1,2,3) to automatically assign various documents to the right employee in the company.
+Możesz użyć tych przepływów pracy (Test 1,2,3), aby automatycznie przypisywać różne dokumenty do właściwego pracownika w firmie.
 
 ![](<../../../.gitbook/assets/1 (1).png>)
 
-If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be immediately assigned to the correct person.
+Jeśli faktura lub inny dokument przekracza określoną kwotę całkowitą, która wymaga wcześniejszego przeglądu i zatwierdzenia, dokumenty te mogą zostać natychmiast przypisane do właściwej osoby.
 
 <figure><img src="../../../.gitbook/assets/docbits_error_approval.png" alt="DocBits Błąd Zatwierdzenie"><figcaption></figcaption></figure>
 
@@ -50,7 +50,7 @@ Then:               **Assign document to:**   James Edwards
 
 
 
-It is also possible, if the document is not assigned to a single person, to assign it to a specific employee from the start.
+Możliwe jest również, jeśli dokument nie jest przypisany do pojedynczej osoby, przypisanie go do konkretnego pracownika od samego początku.
 
 <figure><img src="../../../.gitbook/assets/docbits_workflow_purchase_order_6.png" alt="DocBits Przepływ pracy Zakup Zamówienie 6" width="375"><figcaption></figcaption></figure>
 
@@ -58,7 +58,7 @@ It is also possible, if the document is not assigned to a single person, to assi
 
 
 
-For an easier overview of what should happen to a document, you can set the status for incoming documents in this workflow. This workflow makes it possible to immediately see whether there is, for example, a pending approval.
+Aby ułatwić przegląd tego, co powinno stać się z dokumentem, możesz ustawić status dla dokumentów przychodzących w tym przepływie pracy. Ten przepływ pracy umożliwia natychmiastowe sprawdzenie, czy istnieje na przykład oczekujące zatwierdzenie.
 
 
 
@@ -92,7 +92,7 @@ Then:                 **Change Status to:**           Pending Second Approval
 
 
 
-If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be assigned to the right person immediately.
+Jeśli faktura lub inny dokument przekracza określoną kwotę całkowitą, która wymaga wcześniejszego przeglądu i zatwierdzenia, dokumenty te mogą zostać natychmiast przypisane do właściwej osoby.
 
 ![](<../../../.gitbook/assets/11 (1).png>)
 
@@ -112,7 +112,7 @@ Then:                    **Assign document to:**   Asad Usman Khan
 
 
 
-It is also possible to enter the status into the workflow, so the assigned person can immediately see what status this document is and what should happen next with it.
+Możliwe jest również wprowadzenie statusu do przepływu pracy, dzięki czemu przypisana osoba może natychmiast zobaczyć, jaki status ma ten dokument i co powinno z nim dalej nastąpić.
 
 
 
@@ -134,7 +134,7 @@ It is also possible to enter the status into the workflow, so the assigned perso
 
 
 
-For example, if certain or important information is missing from a document, but is important and must be included for further processing, you can set up the workflow so that these documents are immediately forwarded to the buyer and a substitute (replacement).
+Na przykład, jeśli w dokumencie brakuje pewnych lub ważnych informacji, które są jednak istotne i muszą zostać uwzględnione do dalszego przetwarzania, możesz skonfigurować przepływ pracy tak, aby dokumenty te były natychmiast przekazywane do kupującego oraz osoby zastępującej (zastępcy).
 
 <figure><img src="../../../.gitbook/assets/docbits_settings_workflow_2.png" alt="DocBits Ustawienia Przepływ pracy 2"><figcaption></figcaption></figure>
 
@@ -142,9 +142,9 @@ For example, if certain or important information is missing from a document, but
 
 **Test 9:**
 
-The Workflow with these logic cards is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+Przepływ pracy z tymi kartami logiki jest zaprojektowany tak, aby automatycznie weryfikować, czy ilość, cena jednostkowa lub rabat wyszczególnione w potwierdzeniu zamówienia są zgodne z odpowiadającymi im wartościami w zamówieniu zakupu. Ta weryfikacja zapewnia spójność i dokładność między tym, co zamówiono, a tym, co dostawca potwierdza dostarczyć.
 
-You can give these documents a specific status or assign them to a specific employee.
+Możesz nadać tym dokumentom określony status lub przypisać je do konkretnego pracownika.
 
 <div align="center">
 
@@ -156,56 +156,56 @@ You can give these documents a specific status or assign them to a specific empl
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
-This logic card is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+Ta karta logiki jest zaprojektowana tak, aby automatycznie weryfikować, czy ilość, cena jednostkowa lub rabat wyszczególnione w potwierdzeniu zamówienia są zgodne z odpowiadającymi im wartościami w zamówieniu zakupu. Ta weryfikacja zapewnia spójność i dokładność między tym, co zamówiono, a tym, co dostawca potwierdza dostarczyć.
 
 
 
-**Trigger Condition**
+**Warunek wyzwalający**
 
-The logic is activated when any of the following conditions are met in an order confirmation relative to the original purchase order:
+Logika jest aktywowana, gdy w potwierdzeniu zamówienia w odniesieniu do oryginalnego zamówienia zakupu spełniony jest którykolwiek z następujących warunków:
 
-* **Quantity**: The quantity of items ordered matches the quantity confirmed by the supplier.
-* **Unit Price**: The price per item agreed upon matches the supplier's confirmation.
-* **Discount**: Any discounts applied are consistent between the purchase order and the order confirmation.
+* **Quantity**: Ilość zamówionych pozycji jest zgodna z ilością potwierdzoną przez dostawcę.
+* **Unit Price**: Uzgodniona cena za pozycję jest zgodna z potwierdzeniem dostawcy.
+* **Discount**: Wszelkie zastosowane rabaty są spójne między zamówieniem zakupu a potwierdzeniem zamówienia.
 
 
 
-* **Define Comparison Parameters**: Set up the specific fields (quantity, unit price, discount) that the logic card will check for a match.
-* **Automate Verification**: Configure the system to automatically compare these details upon receipt of an order confirmation.
-* **Customize Alerts**: Decide on the workflow for handling discrepancies, including customization of alerts for manual review.
+* **Define Comparison Parameters**: Skonfiguruj konkretne pola (ilość, cena jednostkowa, rabat), których zgodność będzie sprawdzać karta logiki.
+* **Automate Verification**: Skonfiguruj system tak, aby automatycznie porównywał te szczegóły po otrzymaniu potwierdzenia zamówienia.
+* **Customize Alerts**: Zdecyduj o przepływie pracy do obsługi rozbieżności, w tym o dostosowaniu alertów do przeglądu ręcznego.
 
-This logic card is vital for ensuring that the details of an order confirmation align with the original purchase order, safeguarding the integrity of the procurement cycle.
+Ta karta logiki jest niezbędna do zapewnienia, że szczegóły potwierdzenia zamówienia są zgodne z oryginalnym zamówieniem zakupu, chroniąc integralność cyklu zakupowego.
 
 
 
 **Test 10:**
 
-If you have a different calculation for surcharges, or only have them on some items, you can use the generic table calculation cards, some of them also allow to filter for regular expressions.
+Jeśli masz inne obliczenie dla dopłat lub masz je tylko na niektórych pozycjach, możesz użyć generycznych kart obliczeń tabeli, z których niektóre umożliwiają również filtrowanie według wyrażeń regularnych.
 
 <figure><img src="../../../.gitbook/assets/docbits_table_invoice.png" alt="DocBits Tabela Faktura"><figcaption></figcaption></figure>
 
-Above is a calculation example for MTZ with a filter for item numbers starting with 01, 06, 9, 001 or 000.
+Powyżej znajduje się przykład obliczenia dla MTZ z filtrem dla numerów pozycji zaczynających się od 01, 06, 9, 001 lub 000.
 
 
 
-With a manual setup it’s advised to split calculations that depend on new columns into a separate workflow. To continue with the calculation you can use the Run Workflow card.
+W przypadku konfiguracji ręcznej zaleca się podzielenie obliczeń, które zależą od nowych kolumn, na osobny przepływ pracy. Aby kontynuować obliczenia, możesz użyć karty Run Workflow.
 
 **Run Workflow**
 
 <figure><img src="../../../.gitbook/assets/docbits_workflow_2.png" alt="DocBits Przepływ pracy 2"><figcaption></figcaption></figure>
 
-With this card you can specify the name of a workflow that is to be run after the current workflow if its conditions are met and after previous then cards of the current workflow. While it prioritises runnable, active workflows, it also allows you to run deactivated workflows if the document fulfills the workflows conditions.
+Za pomocą tej karty możesz określić nazwę przepływu pracy, który ma zostać uruchomiony po bieżącym przepływie pracy, jeśli jego warunki są spełnione, oraz po poprzednich kartach then bieżącego przepływu pracy. Chociaż priorytetowo traktuje uruchamialne, aktywne przepływy pracy, umożliwia również uruchamianie dezaktywowanych przepływów pracy, jeśli dokument spełnia warunki przepływów pracy.
 
-### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
+### **Dodawanie obliczonych dopłat do istniejącej kolumny** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
 <figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
 
-If you want to add all surcharges as a negative discount into the discount column, you can use the calculation card. There might be entries in this column, you can set it as one of the variables on the card, have the MTZ subtracted from it and add the result back into this column. In case there are empty fields (surcharges only for some items) it will assume a 0 for its calculation
+Jeśli chcesz dodać wszystkie dopłaty jako ujemny rabat do kolumny rabatu, możesz użyć karty obliczeń. W tej kolumnie mogą istnieć wpisy, możesz ustawić ją jako jedną ze zmiennych na karcie, odjąć od niej MTZ i dodać wynik z powrotem do tej kolumny. W przypadku gdy istnieją puste pola (dopłaty tylko dla niektórych pozycji), na potrzeby obliczeń przyjmie wartość 0
 
 **Notify user to authorize the order confirmation in DocBits**
 
-After calculating the surcharges you might want to notify a specific user to authorize the order confirmation. For this you can use the notification card
+Po obliczeniu dopłat możesz chcieć powiadomić konkretnego użytkownika, aby autoryzował potwierdzenie zamówienia. W tym celu możesz użyć karty powiadomień
 
 <figure><img src="../../../.gitbook/assets/docbits_email_settings.png" alt="DocBits E-mail Ustawienia"><figcaption></figcaption></figure>
 
-Depending on settings, the user gets assigned a new task in DocBits and optionally an email to notify them of their new task.
+W zależności od ustawień użytkownikowi zostaje przypisane nowe zadanie w DocBits oraz opcjonalnie wiadomość e-mail powiadamiająca go o nowym zadaniu.

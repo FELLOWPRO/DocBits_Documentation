@@ -2,38 +2,38 @@
 
 <figure><img src="../../../../.gitbook/assets/image (275).png" alt="" width="563"><figcaption></figcaption></figure>
 
-## **Purpose:**
+## **Objectif :**
 
-This workflow card is designed to compare item IDs between a purchase order and a related document to ensure that the correct items are included. The card evaluates whether the item ID in the purchase order matches the item ID in the document. This comparison can trigger actions if discrepancies are found, ensuring that the items in the document align with the purchase order.
+Cette carte de workflow est conçue pour comparer les identifiants d'article (item ID) entre un bon de commande et un document associé afin de garantir que les bons articles sont inclus. La carte évalue si l'item ID du bon de commande correspond à l'item ID du document. Cette comparaison peut déclencher des actions en cas d'écarts, garantissant que les articles du document sont alignés sur le bon de commande.
 
-## **Components of the Card:**
+## **Composants de la carte :**
 
-1. **Any / All:**
-   * **Description**: Defines whether the condition applies to any or all instances of item ID comparisons.
-   * **Options**:
-     * **Any**: The condition is met if any item ID in the purchase order matches the item ID in the document.
-     * **All**: The condition is met only if all item IDs in the purchase order match the item IDs in the document.
-2. **Operator:**
-   * **Description**: Defines the condition for comparing the item ID on the purchase order to the item ID on the document.
-   * **Options**:
-     * **Equals (=)**: Verifies if the item ID in the purchase order exactly matches the item ID in the document.
-     * **Not Equals (≠)**: Ensures that the item ID in the purchase order does not match the item ID in the document.
+1. **Any / All :**
+   * **Description** : définit si la condition s'applique à une ou à toutes les occurrences de comparaison d'item ID.
+   * **Options** :
+     * **Any** : la condition est satisfaite si un quelconque item ID du bon de commande correspond à l'item ID du document.
+     * **All** : la condition n'est satisfaite que si tous les item ID du bon de commande correspondent aux item ID du document.
+2. **Operator :**
+   * **Description** : définit la condition de comparaison de l'item ID du bon de commande à l'item ID du document.
+   * **Options** :
+     * **Equals (=)** : vérifie si l'item ID du bon de commande correspond exactement à l'item ID du document.
+     * **Not Equals (≠)** : s'assure que l'item ID du bon de commande ne correspond pas à l'item ID du document.
 
-## **Functionality:**
+## **Fonctionnalité :**
 
-* **Condition Evaluation:** The system compares the item ID in the purchase order to the item ID in the document based on the selected operator. If the comparison condition is true (e.g., item IDs match or do not match), the workflow will proceed accordingly.
-* **Action Execution:**
-  * **True Condition**: If the condition evaluates to true (e.g., the item ID in the purchase order equals the item ID in the document), the workflow will proceed with the true action (e.g., approval or further processing).
-  * **False Condition**: If the condition evaluates to false (e.g., the item ID in the purchase order does not match the item ID in the document), the workflow will not proceed.
+* **Évaluation de la condition :** le système compare l'item ID du bon de commande à l'item ID du document en fonction de l'opérateur sélectionné. Si la condition de comparaison est vraie (par ex. les item ID correspondent ou ne correspondent pas), le workflow se poursuit en conséquence.
+* **Exécution de l'action :**
+  * **Condition vraie** : si la condition est évaluée comme vraie (par ex. l'item ID du bon de commande est égal à l'item ID du document), le workflow se poursuit avec l'action vraie (par ex. approbation ou traitement complémentaire).
+  * **Condition fausse** : si la condition est évaluée comme fausse (par ex. l'item ID du bon de commande ne correspond pas à l'item ID du document), le workflow ne se poursuit pas.
 
-## **Setup and Configuration:**
+## **Mise en place et configuration :**
 
-* Users configure the card by selecting the item ID in both the purchase order and the document. They then choose the appropriate operator (Equals or Not Equals) to define how the item IDs will be compared. Lastly, users select whether the condition applies to any or all of the item IDs in the comparison.
+* Les utilisateurs configurent la carte en sélectionnant l'item ID à la fois dans le bon de commande et dans le document. Ils choisissent ensuite l'opérateur approprié (Equals ou Not Equals) pour définir comment les item ID seront comparés. Enfin, les utilisateurs indiquent si la condition s'applique à une ou à toutes les occurrences des item ID de la comparaison.
 
-## **Example Scenario:**
+## **Scénario d'exemple :**
 
-* An invoice lists an item with ID "ABC123" and the related purchase order also includes an item with ID "ABC123". Using the "Equals" operator, the card compares the item ID in the document with the item ID in the purchase order. Since the item IDs match, the workflow continues without issue
+* Une facture liste un article portant l'ID « ABC123 » et le bon de commande associé inclut également un article portant l'ID « ABC123 ». À l'aide de l'opérateur « Equals », la carte compare l'item ID du document à l'item ID du bon de commande. Puisque les item ID correspondent, le workflow se poursuit sans problème.
 
-## **Conclusion:**
+## **Conclusion :**
 
-The "Item ID Comparison" workflow card ensures that the item IDs in documents align with those in purchase orders. This helps prevent discrepancies in item listings and ensures that the correct items are processed according to the purchase order. The ability to compare based on any or all instances provides flexibility in different use cases, improving the accuracy and efficiency of procurement workflows.
+La carte de workflow « Item ID Comparison » garantit que les item ID des documents sont alignés sur ceux des bons de commande. Cela aide à prévenir les écarts dans les listes d'articles et garantit que les bons articles sont traités conformément au bon de commande. La possibilité de comparer en fonction d'une ou de toutes les occurrences offre de la flexibilité dans différents cas d'usage, améliorant l'exactitude et l'efficacité des workflows d'approvisionnement.

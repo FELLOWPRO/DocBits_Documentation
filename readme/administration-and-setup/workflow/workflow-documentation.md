@@ -1,6 +1,4 @@
-# Workflow Documentation
-
-**Documentación del flujo de trabajo**
+# Asignación y estado — Ejemplos prácticos
 
 Para mantener una visión general, puede asignar a los flujos de trabajo diferentes títulos para saber de inmediato de qué tarea trata cada flujo de trabajo.
 

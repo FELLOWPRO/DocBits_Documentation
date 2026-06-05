@@ -1,6 +1,4 @@
-# Workflow Documentation
-
-**Workflow Documentation**
+# Atama ve Durum — Uygulamalı Örnekler
 
 Genel bir bakış sağlamak için iş akışlarına farklı başlıklar verebilir, böylece bu iş akışının hangi görevle ilgili olduğunu hemen anlayabilirsiniz.
 

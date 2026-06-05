@@ -218,6 +218,7 @@
       * [Purchase Invoice - 2nd Approval Unit Price](administration-and-setup/workflow/standard-workflow/purchase-invoice-2nd-approval-unit-price.md)
     * [Material Ordering and Processing Workflow](administration-and-setup/workflow/material-ordering-and-processing-workflow.md)
     * [Workflow Example: Conditional Export Trigger](administration-and-setup/workflow/workflow-description-conditional-export-trigger.md)
+    * [Atama ve Durum — Uygulamalı Örnekler](administration-and-setup/workflow/workflow-documentation.md)
   * [Advanced Workflow](administration-and-setup/workflow/advanced-workflow-builder.md)
     * [Nodes](administration-and-setup/workflow/advanced-workflow/nodes.md)
     * [Variables](administration-and-setup/workflow/advanced-workflow/variables.md)
@@ -352,5 +353,4 @@
   * [Test Manager](administration-and-setup/workflow/test-manager.md)
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)
   * [Workflow Logs](administration-and-setup/workflow/workflow-logs.md)
-  * [Workflow Documentation](administration-and-setup/workflow/workflow-documentation.md)
   * [Release](administration-and-setup/workflow/release.md)

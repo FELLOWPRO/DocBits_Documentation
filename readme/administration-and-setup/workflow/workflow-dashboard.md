@@ -6,7 +6,7 @@ description: Monitor workflow performance, manage workflows, and access the Card
 
 O Painel de Workflows é o seu hub central para gerenciar e monitorar todos os workflows no DocBits. Acesse-o clicando no ícone **Workflows** na barra lateral esquerda.
 
-<!-- screenshot: Workflow Dashboard overview with stats cards and chart -->
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Painel de Workflows com totais de execuções, taxas de sucesso e falha, o gráfico de execuções e a atividade recente"><figcaption><p>O Painel de Workflows — totais de execuções, taxas de sucesso/falha e atividade recente de todos os workflows.</p></figcaption></figure>
 
 ## Aba Painel
 
@@ -72,6 +72,8 @@ A aba Lista de Workflows exibe todos os workflows com funcionalidades de pesquis
 ## Aba Lista do Gerenciador de Testes
 
 A Lista do Gerenciador de Testes mostra todas as configurações e resultados de testes de workflow. Use-a para configurar cenários de teste automatizados para seus workflows.
+
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Lista do Gerenciador de Testes de Workflow com cenários de teste e Run All Tests"><figcaption><p>A Lista do Gerenciador de Testes — cada cenário mostra um resultado de aprovação/reprovação; use <strong>Run All Tests</strong> para reexecutar todos.</p></figcaption></figure>
 
 ## Aba Licença
 

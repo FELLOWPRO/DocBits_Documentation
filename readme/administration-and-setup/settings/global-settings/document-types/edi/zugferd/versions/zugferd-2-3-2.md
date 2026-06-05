@@ -13,13 +13,24 @@ ZUGFeRD 2.3.2 ist ein Wartungs-Release des 2.3-Standards, das die Kompatibilitä
 | `ExchangedDocument/ID` | `INVOICE_NUMBER` | `DocumentID` | STRING | Rechnungsnummer |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Ausstellungsdatum der Rechnung |
 
-### Steueraufschlüsselung
+### Dokumenttyp & Untertyp (TRA-gesteuert)
+
+Das Standard-TRANSFORMATION-XSLT erzeugt zwei abgeleitete Felder:
+
+| DocBits-Feld | Quelle | Logik |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` oder `261` → **Credit Note**; jeder andere Code → **Invoice** |
+| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Nicht leer → **Purchase Invoice**; leer/fehlend → **Cost Invoice** |
+
+### Tax Breakdown (stufenklassifiziert)
+
+`ApplicableTradeTax`-Blöcke werden auf drei steuersatzbasierte Stufen verteilt (nicht über positionale `[1]`/`[2]`/`[3]`): Felder zum Regelsatz (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) erfassen rate ≥ 19; Felder zum ermäßigten Satz (`*_2`) erfassen 0 < rate < 19; Felder zum Nullsatz (`*_3`) erfassen rate = 0. Siehe [ZUGFeRD Tax Breakdown](../README.md#tax-breakdown-tier-classified) für die vollständige Feldliste.
 
 | ZUGFeRD CII Pfad | DocBits Feld | Infor BOD Feld | Typ | Beschreibung |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Steuersatz 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Nettobetrag für Steuer 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Steuerbetrag 1 |
+| `ApplicableTradeTax/RateApplicablePercent` (Stufe 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Mehrwertsteuer zum Regelsatz (≥ 19) |
+| `ApplicableTradeTax/BasisAmount` (Stufe 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Nettobetrag zum Regelsatz |
+| `ApplicableTradeTax/CalculatedAmount` (Stufe 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Steuerbetrag zum Regelsatz |
 
 ## Positionsmapping
 

@@ -28,6 +28,19 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 | `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
 
+### Dokumenttyp & Untertyp (TRA-gesteuert)
+
+> Dieselbe Logik gilt für **Factur-X** — Factur-X 1.x verwendet das gleiche CII-Vokabular wie ZUGFeRD 2.x, sodass der unten beschriebene dynamische Block für beide ausgegeben wird.
+
+Zusätzlich zum rohen `INVOICE_TYPE_CODE` erzeugt das Standard-TRANSFORMATION-XSLT einen kanonischen `<INVOICE>`-Baum mit zwei abgeleiteten Feldern:
+
+| DocBits-Feld | Quelle | Logik |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `ExchangedDocument/TypeCode` (oder `HeaderExchangedDocument/TypeCode` bei ZUGFeRD 1.0) | UNCL 1001 `381` oder `261` → **Credit Note**; jeder andere Code → **Invoice** |
+| `INVOICE_SUB_TYPE` | Vorhandensein von `BuyerOrderReferencedDocument/IssuerAssignedID` (unter `ApplicableHeaderTradeAgreement` bei 2.x / `ApplicableSupplyChainTradeAgreement` bei 1.0) | Nicht leer → **Purchase Invoice**; leer/fehlend → **Cost Invoice** |
+
+`INVOICE_SUB_TYPE` unterscheidet bestellbezogene Rechnungen von direkten Kostenrechnungen für das AP-Routing.
+
 ### Document References
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
@@ -97,16 +110,27 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
 | `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
 
-### Tax Breakdown (Multiple Tax Rates)
+### Tax Breakdown (stufenklassifiziert)
+
+Das Standard-TRANSFORMATION-XSLT verteilt `ApplicableTradeTax`-Blöcke auf drei steuersatzbasierte Stufen anstatt positionale Indexe zu verwenden. Jeder Block wird anhand seines `RateApplicablePercent` einer Stufe zugeordnet:
+
+| Stufe | DocBits-Felder | Auswahlregel |
+| :--- | :--- | :--- |
+| Stufe 1 (Regelsatz) | `TAX_RATE`, `NET_AMOUNT`, `TAX_AMOUNT` | rate ≥ 19 |
+| Stufe 2 (ermäßigt) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < rate < 19 |
+| Stufe 3 (Null) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | rate = 0 |
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Tax rate 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Net amount for tax 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Tax amount 1 |
-| `ApplicableTradeTax[2]/RateApplicablePercent` | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Tax rate 2 |
-| `ApplicableTradeTax[2]/BasisAmount` | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Net amount for tax 2 |
-| `ApplicableTradeTax[2]/CalculatedAmount` | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Tax amount 2 |
+| `ApplicableTradeTax/RateApplicablePercent` (Stufe 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Mehrwertsteuersatz zum Regelsatz |
+| `ApplicableTradeTax/BasisAmount` (Stufe 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Nettobetrag zum Regelsatz |
+| `ApplicableTradeTax/CalculatedAmount` (Stufe 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Steuerbetrag zum Regelsatz |
+| `ApplicableTradeTax/RateApplicablePercent` (Stufe 2) | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Ermäßigter Mehrwertsteuersatz |
+| `ApplicableTradeTax/BasisAmount` (Stufe 2) | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Nettobetrag zum ermäßigten Satz |
+| `ApplicableTradeTax/CalculatedAmount` (Stufe 2) | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Steuerbetrag zum ermäßigten Satz |
+| `ApplicableTradeTax/RateApplicablePercent` (Stufe 3) | `TAX_RATE_3` | `TaxPercent3` | NUMBER | Mehrwertsteuersatz zum Nullsatz |
+| `ApplicableTradeTax/BasisAmount` (Stufe 3) | `NET_AMOUNT_3` | `TaxableAmount3` | AMOUNT | Nettobetrag zum Nullsatz |
+| `ApplicableTradeTax/CalculatedAmount` (Stufe 3) | `TAX_AMOUNT_3` | `TaxAmount3` | AMOUNT | Steuerbetrag zum Nullsatz |
 
 ## Vollständige Positionsmapping (Tabelle)
 

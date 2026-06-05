@@ -1,6 +1,4 @@
-# Workflow-Dokumentation
-
-**Workflow-Dokumentation**
+# Zuweisung & Status — Praxisbeispiele
 
 Um den Überblick zu behalten, können Sie den Workflows verschiedene Überschriften geben, damit Sie sofort erkennen, worum es bei diesem Workflow geht.
 

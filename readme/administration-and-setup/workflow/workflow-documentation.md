@@ -1,6 +1,4 @@
-# Dokumentacja przepływu pracy
-
-**Dokumentacja przepływu pracy**
+# Przypisanie i status — Przykłady praktyczne
 
 Aby zachować przejrzystość, możesz nadać przepływom pracy różne nagłówki, dzięki czemu od razu będziesz wiedzieć, czego dotyczy dany przepływ pracy.
 

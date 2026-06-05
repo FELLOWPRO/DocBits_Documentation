@@ -28,6 +28,19 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 | `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
 
+### Tipo e subtipo do documento (orientado pelo TRA)
+
+> A mesma lógica se aplica ao **Factur-X** — Factur-X 1.x usa o mesmo vocabulário CII que o ZUGFeRD 2.x, então o bloco dinâmico abaixo é emitido para ambos.
+
+Além do `INVOICE_TYPE_CODE` bruto, o XSLT de TRANSFORMATION padrão emite uma árvore `<INVOICE>` canônica com dois campos derivados:
+
+| Campo DocBits | Origem | Lógica |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `ExchangedDocument/TypeCode` (ou `HeaderExchangedDocument/TypeCode` para ZUGFeRD 1.0) | UNCL 1001 `381` ou `261` → **Credit Note**; qualquer outro código → **Invoice** |
+| `INVOICE_SUB_TYPE` | Presença de `BuyerOrderReferencedDocument/IssuerAssignedID` (sob `ApplicableHeaderTradeAgreement` para 2.x / `ApplicableSupplyChainTradeAgreement` para 1.0) | Não vazio → **Purchase Invoice**; vazio/ausente → **Cost Invoice** |
+
+`INVOICE_SUB_TYPE` diferencia faturas vinculadas a PO das faturas de custo direto para roteamento de AP.
+
 ### Document References
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
@@ -97,16 +110,27 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
 | `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
 
-### Tax Breakdown (Multiple Tax Rates)
+### Detalhamento de impostos (classificado por faixa)
+
+O XSLT de TRANSFORMATION padrão distribui os blocos `ApplicableTradeTax` em três faixas baseadas em alíquota, em vez de usar índices posicionais. Cada bloco é associado a uma faixa pelo seu `RateApplicablePercent`:
+
+| Faixa | Campos DocBits | Regra de Seleção |
+| :--- | :--- | :--- |
+| Faixa 1 (Padrão) | `TAX_RATE`, `NET_AMOUNT`, `TAX_AMOUNT` | alíquota ≥ 19 |
+| Faixa 2 (Reduzida) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < alíquota < 19 |
+| Faixa 3 (Zero) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | alíquota = 0 |
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Tax rate 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Net amount for tax 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Tax amount 1 |
-| `ApplicableTradeTax[2]/RateApplicablePercent` | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Tax rate 2 |
-| `ApplicableTradeTax[2]/BasisAmount` | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Net amount for tax 2 |
-| `ApplicableTradeTax[2]/CalculatedAmount` | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Tax amount 2 |
+| `ApplicableTradeTax/RateApplicablePercent` (faixa 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Percentual de IVA da faixa padrão |
+| `ApplicableTradeTax/BasisAmount` (faixa 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Valor líquido da faixa padrão |
+| `ApplicableTradeTax/CalculatedAmount` (faixa 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Valor do imposto da faixa padrão |
+| `ApplicableTradeTax/RateApplicablePercent` (faixa 2) | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Percentual de IVA da faixa reduzida |
+| `ApplicableTradeTax/BasisAmount` (faixa 2) | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Valor líquido da faixa reduzida |
+| `ApplicableTradeTax/CalculatedAmount` (faixa 2) | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Valor do imposto da faixa reduzida |
+| `ApplicableTradeTax/RateApplicablePercent` (faixa 3) | `TAX_RATE_3` | `TaxPercent3` | NUMBER | Percentual de IVA da faixa zero |
+| `ApplicableTradeTax/BasisAmount` (faixa 3) | `NET_AMOUNT_3` | `TaxableAmount3` | AMOUNT | Valor líquido com alíquota zero |
+| `ApplicableTradeTax/CalculatedAmount` (faixa 3) | `TAX_AMOUNT_3` | `TaxAmount3` | AMOUNT | Valor do imposto da faixa zero |
 
 ## Mapeamento completo de itens de linha (tabela)
 

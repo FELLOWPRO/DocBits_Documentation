@@ -6,7 +6,7 @@ description: Monitor workflow performance, manage workflows, and access the Card
 
 Das Workflow-Dashboard ist Ihre zentrale Anlaufstelle zur Verwaltung und Uberwachung aller Workflows in DocBits. Greifen Sie darauf zu, indem Sie auf das **Workflows**-Symbol in der linken Seitenleiste klicken.
 
-<!-- screenshot: Workflow Dashboard overview with stats cards and chart -->
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard with run totals, success and fail rates, the runs chart and recent activity"><figcaption><p>Das Workflow-Dashboard — Ausführungssummen, Erfolgs-/Fehlerraten und letzte Aktivitäten für jeden Workflow.</p></figcaption></figure>
 
 ## Dashboard-Reiter
 
@@ -72,6 +72,8 @@ Der Reiter Workflow-Liste zeigt alle Workflows mit Such-, Sortier- und Verwaltun
 ## Reiter Test-Manager-Liste
 
 Die Test-Manager-Liste zeigt alle Workflow-Testkonfigurationen und -ergebnisse. Nutzen Sie diese, um automatisierte Testszenarien fur Ihre Workflows einzurichten.
+
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List with test scenarios and Run All Tests"><figcaption><p>Die Test-Manager-Liste — jedes Szenario zeigt ein Bestanden-/Fehlgeschlagen-Ergebnis; verwenden Sie <strong>Run All Tests</strong>, um alle erneut auszuführen.</p></figcaption></figure>
 
 ## Reiter Lizenz
 

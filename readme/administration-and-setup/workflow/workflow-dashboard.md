@@ -6,7 +6,7 @@ description: Monitor workflow performance, manage workflows, and access the Card
 
 Panel Workflow to centralne miejsce do zarządzania i monitorowania wszystkich przepływów pracy w DocBits. Aby uzyskać do niego dostęp, kliknij ikonę **Przepływy pracy** na lewym pasku bocznym.
 
-<!-- screenshot: Workflow Dashboard overview with stats cards and chart -->
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard with run totals, success and fail rates, the runs chart and recent activity"><figcaption><p>Panel Workflow — łączne liczby uruchomień, wskaźniki sukcesu/niepowodzeń oraz ostatnia aktywność dla każdego przepływu pracy.</p></figcaption></figure>
 
 ## Zakładka Panel
 
@@ -72,6 +72,8 @@ Zakładka Lista przepływów pracy wyświetla wszystkie przepływy pracy z możl
 ## Zakładka Lista menedżera testów
 
 Zakładka Lista menedżera testów wyświetla wszystkie konfiguracje testów przepływów pracy i ich wyniki. Użyj jej do ustawiania zautomatyzowanych scenariuszy testowych dla swoich przepływów pracy.
+
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List with test scenarios and Run All Tests"><figcaption><p>Lista menedżera testów — każdy scenariusz pokazuje wynik powodzenia/niepowodzenia; użyj przycisku <strong>Run All Tests</strong>, aby uruchomić je wszystkie ponownie.</p></figcaption></figure>
 
 ## Zakładka Licencja
 

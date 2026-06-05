@@ -41,6 +41,8 @@ Każdy wiersz w tabeli reprezentuje jedno wykonanie przepływu pracy i zawiera:
 
 Kliknięcie **strzałki** po lewej stronie każdego wiersza rozwija **widok szczegółów przepływu pracy**.
 
+<div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
 ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FsauGR47dbpPRomGUugst%252Fimage.png%3Falt%3Dmedia%26token%3D00d6d92f-1512-4de0-97ea-012b1d194dee\&width=768\&dpr=4\&quality=100\&sign=a6c5b7c5\&sv=2)
 
 ### **Widok Szczegółów Przepływu Pracy**

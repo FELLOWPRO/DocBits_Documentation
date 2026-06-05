@@ -6,7 +6,7 @@ description: Monitor workflow performance, manage workflows, and access the Card
 
 El Panel de Flujos de Trabajo es su centro principal para gestionar y monitorear todos los flujos de trabajo en DocBits. Acceda a él haciendo clic en el icono de **Flujos de Trabajo** en la barra lateral izquierda.
 
-<!-- screenshot: Workflow Dashboard overview with stats cards and chart -->
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Panel de Flujos de Trabajo con totales de ejecuciones, tasas de éxito y fallo, el gráfico de ejecuciones y la actividad reciente"><figcaption><p>El Panel de Flujos de Trabajo: totales de ejecuciones, tasas de éxito/fallo y actividad reciente de cada flujo de trabajo.</p></figcaption></figure>
 
 ## Pestaña del Panel
 
@@ -72,6 +72,10 @@ La pestaña de Lista de Flujos de Trabajo muestra todos los flujos de trabajo co
 ## Pestaña de Lista del Gestor de Pruebas
 
 La Lista del Gestor de Pruebas muestra todas las configuraciones y resultados de pruebas de flujos de trabajo. Úsela para configurar escenarios de prueba automatizados para sus flujos de trabajo.
+
+El **Gestor de Pruebas** le permite guardar escenarios de prueba por flujo de trabajo y ejecutarlos juntos, de modo que pueda confirmar que sus flujos de trabajo siguen comportándose correctamente después de los cambios:
+
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Lista del Gestor de Pruebas de flujos de trabajo con escenarios de prueba y Run All Tests"><figcaption><p>La Test Manager List: cada escenario muestra un resultado de aprobado/fallido; use <strong>Run All Tests</strong> para volver a ejecutarlos todos.</p></figcaption></figure>
 
 ## Pestaña de Licencia
 

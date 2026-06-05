@@ -1,6 +1,4 @@
-# Documentazione del Workflow
-
-**Documentazione del Workflow**
+# Assegnazione e stato — Esempi pratici
 
 Per mantenere una visione d'insieme, puoi assegnare ai workflow intestazioni diverse, così da capire immediatamente di quale attività si occupa ciascun workflow.
 

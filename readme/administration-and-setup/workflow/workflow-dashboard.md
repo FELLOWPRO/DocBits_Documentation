@@ -6,7 +6,7 @@ description: Monitor workflow performance, manage workflows, and access the Card
 
 Le Tableau de Bord des Workflows est votre centre de controle pour la gestion et la surveillance de tous les workflows dans DocBits. Accedez-y en cliquant sur l'icone **Workflows** dans la barre laterale gauche.
 
-<!-- screenshot: Workflow Dashboard overview with stats cards and chart -->
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Tableau de Bord des Workflows avec les totaux d'exécutions, les taux de réussite et d'échec, le graphique des exécutions et l'activité récente"><figcaption><p>Le Tableau de Bord des Workflows — totaux d'exécutions, taux de réussite/échec et activité récente pour chaque workflow.</p></figcaption></figure>
 
 ## Onglet Tableau de Bord
 
@@ -72,6 +72,8 @@ L'onglet Liste des Workflows affiche tous les workflows avec des fonctionnalites
 ## Onglet Liste du Gestionnaire de Tests
 
 La Liste du Gestionnaire de Tests affiche toutes les configurations et resultats de tests de workflows. Utilisez-la pour configurer des scenarios de tests automatises pour vos workflows.
+
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Liste du Gestionnaire de Tests des workflows avec les scénarios de test et Run All Tests"><figcaption><p>La Liste du Gestionnaire de Tests — chaque scénario affiche un résultat réussite/échec ; utilisez <strong>Run All Tests</strong> pour les réexécuter tous.</p></figcaption></figure>
 
 ## Onglet Licence
 

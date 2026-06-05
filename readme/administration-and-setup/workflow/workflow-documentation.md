@@ -1,6 +1,4 @@
-# Documentation des flux de travail
-
-**Documentation des flux de travail**
+# Attribution et statut — Exemples pratiques
 
 Pour garder une vue d'ensemble, vous pouvez donner aux flux de travail différents intitulés afin de savoir immédiatement de quelle tâche ce flux de travail traite.
 

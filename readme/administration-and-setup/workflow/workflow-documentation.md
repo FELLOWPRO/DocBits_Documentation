@@ -1,6 +1,4 @@
-# Workflow Documentation
-
-**Workflow Documentation**
+# Dodela i statusa — Praktični primeri
 
 Da biste zadržali pregled, radnim tokovima možete dati različite naslove kako biste odmah znali o kom zadatku se u tom radnom toku radi.
 

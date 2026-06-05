@@ -28,6 +28,19 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 | `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
 
+### Documenttype en subtype (TRA-gestuurd)
+
+> Dezelfde logica geldt voor **Factur-X** — Factur-X 1.x gebruikt dezelfde CII-vocabulaire als ZUGFeRD 2.x, dus het dynamische blok hieronder wordt voor beide uitgegeven.
+
+Naast de ruwe `INVOICE_TYPE_CODE` geeft de standaard TRANSFORMATION-XSLT een canonieke `<INVOICE>`-boom uit met twee afgeleide velden:
+
+| DocBits-veld | Bron | Logica |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `ExchangedDocument/TypeCode` (of `HeaderExchangedDocument/TypeCode` voor ZUGFeRD 1.0) | UNCL 1001 `381` of `261` → **Credit Note**; elke andere code → **Invoice** |
+| `INVOICE_SUB_TYPE` | Aanwezigheid van `BuyerOrderReferencedDocument/IssuerAssignedID` (onder `ApplicableHeaderTradeAgreement` voor 2.x / `ApplicableSupplyChainTradeAgreement` voor 1.0) | Niet-leeg → **Purchase Invoice**; leeg/ontbrekend → **Cost Invoice** |
+
+`INVOICE_SUB_TYPE` onderscheidt PO-gekoppelde facturen van directe kostenfacturen voor AP-routing.
+
 ### Document References
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
@@ -97,16 +110,27 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
 | `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
 
-### Tax Breakdown (Multiple Tax Rates)
+### Belastingverdeling (tier-geclassificeerd)
+
+De standaard TRANSFORMATION-XSLT verdeelt `ApplicableTradeTax`-blokken over drie tarief-gebaseerde tiers in plaats van positionele indexen. Elk blok wordt toegewezen aan een tier op basis van zijn `RateApplicablePercent`:
+
+| Tier | DocBits-velden | Selectieregel |
+| :--- | :--- | :--- |
+| Tier 1 (Standaard) | `TAX_RATE`, `NET_AMOUNT`, `TAX_AMOUNT` | tarief ≥ 19 |
+| Tier 2 (Verlaagd) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < tarief < 19 |
+| Tier 3 (Nul) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | tarief = 0 |
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Tax rate 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Net amount for tax 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Tax amount 1 |
-| `ApplicableTradeTax[2]/RateApplicablePercent` | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Tax rate 2 |
-| `ApplicableTradeTax[2]/BasisAmount` | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Net amount for tax 2 |
-| `ApplicableTradeTax[2]/CalculatedAmount` | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Tax amount 2 |
+| `ApplicableTradeTax/RateApplicablePercent` (tier 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Standaard btw-percentage |
+| `ApplicableTradeTax/BasisAmount` (tier 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Nettobedrag tegen standaardtarief |
+| `ApplicableTradeTax/CalculatedAmount` (tier 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Belastingbedrag tegen standaardtarief |
+| `ApplicableTradeTax/RateApplicablePercent` (tier 2) | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Verlaagd btw-percentage |
+| `ApplicableTradeTax/BasisAmount` (tier 2) | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Nettobedrag tegen verlaagd tarief |
+| `ApplicableTradeTax/CalculatedAmount` (tier 2) | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Belastingbedrag tegen verlaagd tarief |
+| `ApplicableTradeTax/RateApplicablePercent` (tier 3) | `TAX_RATE_3` | `TaxPercent3` | NUMBER | Nul btw-percentage |
+| `ApplicableTradeTax/BasisAmount` (tier 3) | `NET_AMOUNT_3` | `TaxableAmount3` | AMOUNT | Nettobedrag tegen nultarief |
+| `ApplicableTradeTax/CalculatedAmount` (tier 3) | `TAX_AMOUNT_3` | `TaxAmount3` | AMOUNT | Belastingbedrag tegen nultarief |
 
 ## Volledige Regelitemmapping (tabel)
 

@@ -14,6 +14,19 @@ ZUGFeRD 1.0 was de eerste versie van de standaard. Hoewel deze verouderd is, geb
 | `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Factuurtypecode |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Factuurdatum |
 
+### Documenttype en subtype (TRA-gestuurd)
+
+Naast de ruwe `INVOICE_TYPE_CODE` geeft de standaard TRANSFORMATION-XSLT twee afgeleide velden uit. ZUGFeRD 1.0 gebruikt de legacy CII-vocabulaire, dus de XPaths wijken af van 2.x:
+
+| DocBits-veld | Bron (1.0-schema) | Logica |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `CrossIndustryDocument/HeaderExchangedDocument/TypeCode` | UNCL 1001 `381` of `261` → **Credit Note**; elke andere code → **Invoice** |
+| `INVOICE_SUB_TYPE` | `SpecifiedSupplyChainTradeTransaction/ApplicableSupplyChainTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Niet-leeg → **Purchase Invoice**; leeg/ontbrekend → **Cost Invoice** |
+
+### Belastingverdeling (tier-geclassificeerd)
+
+`ApplicableTradeTax`-blokken worden verdeeld over drie tarief-gebaseerde tiers (geen positionele indexen): standaardtariefvelden (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) vangen tarief ≥ 19; verlaagd-tariefvelden (`*_2`) vangen 0 < tarief < 19; nultariefvelden (`*_3`) vangen tarief = 0. Zie [ZUGFeRD belastingverdeling](../README.md#tax-breakdown-tier-classified) voor de volledige veldlijst. (ZUGFeRD 1.0 gebruikt de legacy CII-vocabulaire in zijn TRANSFORMATION-XSLT, maar de tier-selectieregels hierboven zijn identiek aan 2.x.)
+
 ### Documentreferenties
 
 | ZUGFeRD CII Pad | DocBits Veld | Infor BOD Veld | Type | Beschrijving |

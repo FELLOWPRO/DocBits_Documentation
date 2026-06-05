@@ -1,65 +1,65 @@
 # Workflow Logs
 
-## **Overview**
+## **Genel Bakış**
 
-The **Workflow Logs** allow users to analyze which workflows were executed for a document, understand the execution results, and drill into condition-level details for debugging or validation.
+**Workflow Logs**, kullanıcıların bir belge için hangi iş akışlarının yürütüldüğünü analiz etmesine, yürütme sonuçlarını anlamasına ve hata ayıklama veya doğrulama için koşul düzeyindeki ayrıntılara inmesine olanak tanır.
 
-## **Accessing Workflow Logs**
+## **Workflow Logs'a Erişim**
 
-To access workflow logs:
+Workflow Logs'a erişmek için:
 
-1. Navigate to the **Dashboard**.
-2. Click the **Actions menu** (three-dot icon) next to the desired document.
-3. Select **Workflow Logs** from the menu.
-   * <mark style="color:red;">**Note**</mark>: The Workflow feature must be enabled to access this option.
-4.  A **side panel** opens showing a summary of executed workflows.\\
+1. **Dashboard**'a gidin.
+2. İlgili belgenin yanındaki **Eylemler menüsünü** (üç nokta simgesi) tıklayın.
+3. Menüden **Workflow Logs**'u seçin.
+   * <mark style="color:red;">**Not**</mark>: Bu seçeneğe erişmek için Workflow özelliğinin etkinleştirilmiş olması gerekir.
+4.  Yürütülen iş akışlarının bir özetini gösteren bir **yan panel** açılır.\\
 
     <div align="left"><figure><img src="../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-## **Components of the Workflow Logs Panel**
+## **Workflow Logs Panelinin Bileşenleri**
 
-#### **1. Workflow Summary Counters**
+#### **1. İş Akışı Özet Sayaçları**
 
-Located at the top of the logs panel:
+Günlük panelinin üst kısmında yer alır:
 
-* **Blue**: Total number of workflows executed.
-* **Red**: Workflows that ended in **errors**.
-* **Yellow**: Workflows that were **not finished** due to condition mismatches.
-* **Green**: Successfully **executed** workflows.
+* **Mavi**: Yürütülen toplam iş akışı sayısı.
+* **Kırmızı**: **Hatayla** sonuçlanan iş akışları.
+* **Sarı**: Koşul uyuşmazlıkları nedeniyle **tamamlanmayan** iş akışları.
+* **Yeşil**: Başarıyla **yürütülen** iş akışları.
 
-#### **2. Workflow Execution Table**
+#### **2. İş Akışı Yürütme Tablosu**
 
-Each row in the table represents one workflow execution and includes:
+Tablodaki her satır bir iş akışı yürütmesini temsil eder ve şunları içerir:
 
-* **Workflow Name**
-* **Timestamp** (Created On)
-* **Runtime** (in seconds)
-* **Result Icon**:
-  * Green checkmark: Workflow executed successfully.
-  * Red cross: Workflow executed with an error.
-  * Orange dash: Execution was stopped due to a conditions was not met
+* **İş Akışı Adı**
+* **Zaman Damgası** (Oluşturulma Tarihi)
+* **Çalışma Süresi** (saniye cinsinden)
+* **Sonuç Simgesi**:
+  * Yeşil onay işareti: İş akışı başarıyla yürütüldü.
+  * Kırmızı çarpı: İş akışı bir hatayla yürütüldü.
+  * Turuncu çizgi: Bir koşul karşılanmadığı için yürütme durduruldu.
 
-Clicking the **arrow** on the left of each row expands the **workflow detail view**.
+Her satırın solundaki **oku** tıklamak, **iş akışı ayrıntı görünümünü** genişletir.
 
 <div align="left"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
-### **Workflow Detail View**
+### **İş Akışı Ayrıntı Görünümü**
 
-Clicking a specific workflow row opens its **detailed execution log**, showing:
+Belirli bir iş akışı satırını tıklamak, aşağıdakileri gösteren ayrıntılı **yürütme günlüğünü** açar:
 
-#### **Condition Evaluation**
+#### **Koşul Değerlendirmesi**
 
-* **When...** block: Initial condition.
-* **And...** block(s): Additional conditions.
-* **Then...** block(s): Actions performed when all conditions are met.
+* **When...** bloğu: İlk koşul.
+* **And...** bloğu/blokları: Ek koşullar.
+* **Then...** bloğu/blokları: Tüm koşullar karşılandığında gerçekleştirilen eylemler.
 
-Each condition line shows:
+Her koşul satırı şunları gösterir:
 
-* **Green check**: Condition was met.
-* **Orange dash**: Condition was not met.
-* **Red cross**: Condition failed **due to an error**
+* **Yeşil onay**: Koşul karşılandı.
+* **Turuncu çizgi**: Koşul karşılanmadı.
+* **Kırmızı çarpı**: Koşul **bir hata nedeniyle** başarısız oldu.
 
-### **Important Behavior Note**
+### **Önemli Davranış Notu**
 
-If a condition in a workflow is **not met**, the system **stops evaluating any further workflow cards** within that workflow. This behavior prevents unnecessary processing\
-As a visual indicator, the card that **did not meet its condition** is shown in **gray**, and all **subsequent cards** in the same workflow will also appear **gray**, indicating that they were **not executed**.
+Bir iş akışındaki bir koşul **karşılanmazsa**, sistem o iş akışı içindeki **daha fazla iş akışı kartını değerlendirmeyi durdurur**. Bu davranış gereksiz işlemeyi önler.\
+Görsel bir gösterge olarak, **koşulunu karşılamayan** kart **gri** olarak gösterilir ve aynı iş akışındaki tüm **sonraki kartlar** da **gri** görünerek **yürütülmediklerini** belirtir.

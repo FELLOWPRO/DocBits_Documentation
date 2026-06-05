@@ -2,27 +2,27 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.51.42 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is designed to manage cases where the invoice total is greater than the maximum amount an approver is authorized to handle.
+Bu başlık, kuralın fatura toplamının bir onaylayıcının işlemeye yetkili olduğu maksimum tutardan büyük olduğu durumları yönetmek üzere tasarlandığını gösterir.
 
-#### Rule Configuration:
+#### Kural Yapılandırması:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule applies only to invoices, which is essential for directing the workflow correctly.
+   * **Document Type is Invoice**: Bu koşul, kuralın yalnızca faturalara uygulanmasını sağlar; bu da iş akışının doğru yönlendirilmesi için gereklidir.
 2. **And…**
-   * **Document Status is Pending Approval**: The invoice must be in a "Pending Approval" status. This status is crucial to ensure that the rule is applied to invoices that are still being processed and have not yet been finalized.
-   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: This condition checks if the invoice's total amount exceeds the maximum amount an approver is allowed to handle. This comparison might also include a tolerance setting, allowing for minor variations based on predefined criteria.
+   * **Document Status is Pending Approval**: Faturanın "Pending Approval" durumunda olması gerekir. Bu durum, kuralın hâlâ işlenmekte olan ve henüz tamamlanmamış faturalara uygulanmasını sağlamak için çok önemlidir.
+   * **Compare two fields: Total Amount Greater Than Approver Max Amount**: Bu koşul, faturanın toplam tutarının bir onaylayıcının işlemesine izin verilen maksimum tutarı aşıp aşmadığını kontrol eder. Bu karşılaştırma, önceden tanımlanmış ölçütlere göre küçük varyasyonlara izin veren bir tolerans ayarını da içerebilir.
 
-#### Action (Then…):
+#### Eylem (Then…):
 
-* **Assign user from field Next Level Approver, use user User as fallback**: If the invoice exceeds the specified maximum amount, it is automatically assigned to a higher-level approver, indicated by the 'Next Level Approver' field. If this field is not filled or the specified user is unavailable, a default user (likely an admin or another designated staff member) is used as a fallback to ensure the invoice is reviewed without delay.
+* **Assign user from field Next Level Approver, use user User as fallback**: Fatura belirtilen maksimum tutarı aşarsa, 'Next Level Approver' alanında belirtilen daha üst düzey bir onaylayıcıya otomatik olarak atanır. Bu alan doldurulmamışsa veya belirtilen kullanıcı kullanılamıyorsa, faturanın gecikmeden incelenmesini sağlamak için bir varsayılan kullanıcı (büyük olasılıkla bir yönetici veya başka bir görevli personel) yedek olarak kullanılır.
 
-#### Interface Elements:
+#### Arayüz Öğeleri:
 
-* **Add Card**: This option allows additional conditions or actions to be added to the rule, providing flexibility to address complex scenarios.
-* **Save**: This button saves the rule configuration to the system.
+* **Add Card**: Bu seçenek, kurala ek koşullar veya eylemler eklenmesine olanak tanıyarak karmaşık senaryoları ele almak için esneklik sağlar.
+* **Save**: Bu düğme, kural yapılandırmasını sisteme kaydeder.
 
-#### Purpose of This Rule:
+#### Bu Kuralın Amacı:
 
-The purpose of this rule is to ensure that invoices which exceed certain financial thresholds are reviewed by approvers with the appropriate authorization levels. This helps in maintaining financial control and oversight, ensuring that expenditures are reviewed by personnel with the requisite approval limits, thereby safeguarding the organization against unauthorized or inappropriate expenditures.
+Bu kuralın amacı, belirli finansal eşikleri aşan faturaların uygun yetkilendirme düzeylerine sahip onaylayıcılar tarafından incelenmesini sağlamaktır. Bu, harcamaların gerekli onay sınırlarına sahip personel tarafından incelenmesini sağlayarak finansal kontrolün ve denetimin sürdürülmesine yardımcı olur ve böylece organizasyonu yetkisiz veya uygunsuz harcamalara karşı korur.
 
-This rule, like the previous one, helps automate the workflow, reducing manual effort and enhancing compliance with the organization's financial policies. It is an example of how workflow automation can be effectively used to manage complex financial processes within a company.
+Bu kural, öncekiler gibi, iş akışını otomatikleştirerek manuel çabayı azaltmaya ve organizasyonun finansal politikalarına uyumu artırmaya yardımcı olur. İş akışı otomasyonunun bir şirket içindeki karmaşık finansal süreçleri yönetmek için nasıl etkili bir şekilde kullanılabileceğine bir örnektir.

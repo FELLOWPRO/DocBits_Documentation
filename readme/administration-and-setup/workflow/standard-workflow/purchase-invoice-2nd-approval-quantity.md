@@ -2,25 +2,25 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.56.54 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule pertains specifically to handling purchase invoices during a secondary approval phase, with a focus on verifying the accuracy of the quantities listed.
+Bu başlık, kuralın özellikle ikincil bir onay aşamasında satın alma faturalarının işlenmesiyle ilgili olduğunu ve listelenen miktarların doğruluğunu doğrulamaya odaklandığını gösterir.
 
-#### Rule Configuration:
+#### Kural Yapılandırması:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents classified as invoices. This is essential for maintaining specificity and relevance in the workflow.
+   * **Document Type is Invoice**: Bu koşul, kuralın yalnızca fatura olarak sınıflandırılan belgeler için etkinleştirilmesini sağlar. Bu, iş akışında özgülüğün ve uygunluğun korunması için gereklidir.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is currently pending a second approval. This stage is typically intended to provide additional oversight before finalizing the invoice.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further refines the rule to apply exclusively to invoices identified as "Purchase Invoices." This categorization helps differentiate them from other invoice types.
-   * **Logic Quantity in order confirmation Not Equals purchase order**: This critical condition checks whether the quantity stated in the order confirmation matches the quantity on the original purchase order. The action is triggered if there is a discrepancy, indicating a potential error or issue that needs resolution.
+   * **Document Status is Pending Second Approval**: Bu, faturanın şu anda ikinci bir onayı beklediğini belirtir. Bu aşama, genellikle faturayı sonuçlandırmadan önce ek denetim sağlamayı amaçlar.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Bu koşul, kuralı yalnızca "Purchase Invoices" olarak tanımlanan faturalara uygulanacak şekilde daha da daraltır. Bu sınıflandırma, onları diğer fatura türlerinden ayırt etmeye yardımcı olur.
+   * **Logic Quantity in order confirmation Not Equals purchase order**: Bu kritik koşul, sipariş onayında belirtilen miktarın orijinal satın alma siparişindeki miktarla eşleşip eşleşmediğini kontrol eder. Bir tutarsızlık varsa, çözülmesi gereken olası bir hata veya soruna işaret eden eylem tetiklenir.
 
-#### Action (Then…):
+#### Eylem (Then…):
 
-* **Assign user from field Buyer Name, use user User as fallback**: If the rule's conditions are met (i.e., there's a discrepancy in quantities), the invoice is automatically assigned to the person listed in the 'Buyer Name' field for further review. If this field is empty or the specified person is unavailable, a default user (likely an administrator or another designated staff member) takes over to ensure timely review and resolution.
+* **Assign user from field Buyer Name, use user User as fallback**: Kuralın koşulları karşılanırsa (yani miktarlarda bir tutarsızlık varsa), fatura daha fazla inceleme için 'Buyer Name' alanında listelenen kişiye otomatik olarak atanır. Bu alan boşsa veya belirtilen kişi kullanılamıyorsa, zamanında inceleme ve çözüm sağlamak için bir varsayılan kullanıcı (büyük olasılıkla bir yönetici veya başka bir görevli personel) devreye girer.
 
-#### Purpose of This Rule:
+#### Bu Kuralın Amacı:
 
-* **Accuracy and Compliance**: The rule is vital for ensuring that the invoicing process is accurate and aligns with the terms agreed upon in the purchase order. It helps prevent financial discrepancies and potential inventory errors.
-* **Streamlined Approvals**: Automating the review process for specific discrepancies helps streamline approvals and ensures that any issues are quickly addressed by the appropriate personnel.
-* **Enhanced Financial Oversight**: Requiring a secondary approval for quantity verifications strengthens financial controls and accountability within the organization.
+* **Doğruluk ve Uyumluluk**: Bu kural, faturalandırma sürecinin doğru olmasını ve satın alma siparişinde üzerinde anlaşılan koşullarla uyumlu olmasını sağlamak için hayati önem taşır. Finansal tutarsızlıkları ve olası envanter hatalarını önlemeye yardımcı olur.
+* **Kolaylaştırılmış Onaylar**: Belirli tutarsızlıklar için inceleme sürecinin otomatikleştirilmesi, onayların kolaylaştırılmasına yardımcı olur ve sorunların uygun personel tarafından hızla ele alınmasını sağlar.
+* **Geliştirilmiş Finansal Denetim**: Miktar doğrulamaları için ikincil bir onay gerektirmek, organizasyon içindeki finansal kontrolleri ve hesap verebilirliği güçlendirir.
 
-This setup exemplifies how workflow automation can be utilized to enhance operational efficiency and ensure financial integrity, particularly in managing complex purchase processes within a company.
+Bu kurulum, özellikle bir şirket içindeki karmaşık satın alma süreçlerini yönetirken, iş akışı otomasyonunun operasyonel verimliliği artırmak ve finansal bütünlüğü sağlamak için nasıl kullanılabileceğini örnekler.

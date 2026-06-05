@@ -2,25 +2,25 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.59.02 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is set up to manage the second approval phase of purchase invoices with a focus on the unit price, ensuring it matches the agreed terms.
+Bu başlık, kuralın satın alma faturalarının ikinci onay aşamasını birim fiyata odaklanarak yönetmek üzere kurulduğunu ve birim fiyatın üzerinde anlaşılan koşullarla eşleştiğinden emin olduğunu gösterir.
 
-#### Rule Configuration:
+#### Kural Yapılandırması:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is activated only for documents identified as invoices, which is crucial for directing the workflow accurately.
+   * **Document Type is Invoice**: Bu koşul, kuralın yalnızca fatura olarak tanımlanan belgeler için etkinleştirilmesini sağlar; bu da iş akışının doğru yönlendirilmesi için çok önemlidir.
 2. **And…**
-   * **Document Status is Pending Second Approval**: This specifies that the invoice is awaiting a second approval. This stage often provides additional oversight to ensure accuracy before finalizing the transaction.
-   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: This condition further specifies that the rule applies only to invoices categorized specifically as "Purchase Invoices," differentiating them from other types of invoices.
-   * **Logic Unit Price in order confirmation Equals purchase order**: This condition checks if the unit price listed in the order confirmation matches the unit price in the purchase order. It ensures that the invoice processing only moves forward if there is consistency in pricing, which is critical for budgeting and financial reporting.
+   * **Document Status is Pending Second Approval**: Bu, faturanın ikinci bir onayı beklediğini belirtir. Bu aşama, genellikle işlem sonuçlandırılmadan önce doğruluğu sağlamak için ek denetim sağlar.
+   * **Document Field Invoice Sub Type is Equals Purchase Invoice**: Bu koşul, kuralın yalnızca özellikle "Purchase Invoices" olarak sınıflandırılan faturalara uygulandığını ve onları diğer fatura türlerinden ayırt ettiğini daha da belirtir.
+   * **Logic Unit Price in order confirmation Equals purchase order**: Bu koşul, sipariş onayında listelenen birim fiyatın satın alma siparişindeki birim fiyatla eşleşip eşleşmediğini kontrol eder. Fatura işlemenin yalnızca fiyatlandırmada tutarlılık olması durumunda ilerlemesini sağlar; bu da bütçeleme ve finansal raporlama için kritik öneme sahiptir.
 
-#### Action (Then…):
+#### Eylem (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (i.e., the unit prices match between the order confirmation and the purchase order), the action to "Start Export" is triggered. This likely involves exporting the invoice data for further processing, possibly to another financial system or for reporting purposes.
+* **Start Export**: Fatura belirtilen koşulları karşıladığında (yani birim fiyatlar sipariş onayı ile satın alma siparişi arasında eşleştiğinde), "Start Export" eylemi tetiklenir. Bu, büyük olasılıkla fatura verilerinin daha fazla işlenmesi için, muhtemelen başka bir finansal sisteme veya raporlama amaçları için dışa aktarılmasını içerir.
 
-#### Purpose of This Rule:
+#### Bu Kuralın Amacı:
 
-* **Ensure Accuracy and Consistency**: By verifying that the unit prices match between the order confirmation and the purchase order, the system helps maintain financial accuracy and prevents overcharging or undercharging.
-* **Streamline Financial Processing**: Automating the export of data once the prices are confirmed reduces manual handling and speeds up the financial processing cycle.
-* **Enhance Compliance and Oversight**: Requiring a second approval for price verification adds an extra layer of oversight, which is crucial for compliance with financial policies and controls.
+* **Doğruluk ve Tutarlılığı Sağlama**: Sistem, birim fiyatların sipariş onayı ile satın alma siparişi arasında eşleştiğini doğrulayarak finansal doğruluğu korumaya yardımcı olur ve fazla veya eksik ücretlendirmeyi önler.
+* **Finansal İşlemeyi Kolaylaştırma**: Fiyatlar onaylandıktan sonra veri dışa aktarımının otomatikleştirilmesi, manuel işlemeyi azaltır ve finansal işleme döngüsünü hızlandırır.
+* **Uyumluluk ve Denetimi Güçlendirme**: Fiyat doğrulaması için ikinci bir onay gerektirmek, finansal politikalara ve kontrollere uyum için kritik olan ek bir denetim katmanı ekler.
 
-This rule is an example of how workflow automation can be effectively utilized to ensure precise and efficient handling of financial documents within an organization, particularly in the context of large volumes of transactions that require meticulous validation.
+Bu kural, özellikle titiz doğrulama gerektiren büyük hacimli işlemler bağlamında, iş akışı otomasyonunun bir organizasyon içinde finansal belgelerin kesin ve verimli bir şekilde işlenmesini sağlamak için nasıl etkili bir şekilde kullanılabileceğine bir örnektir.

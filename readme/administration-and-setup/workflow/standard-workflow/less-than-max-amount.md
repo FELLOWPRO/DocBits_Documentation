@@ -2,27 +2,27 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.48.55 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title suggests that the rule or condition being set up is designed to handle invoices where the total amount is less than or equal to a specified maximum amount.
+Bu başlık, kurulan kuralın veya koşulun, toplam tutarın belirtilen bir maksimum tutardan az veya ona eşit olduğu faturaları işlemek üzere tasarlandığını gösterir.
 
-#### Rule Configuration:
+#### Kural Yapılandırması:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition checks if the document being processed is an invoice. This is crucial for ensuring that the rule only applies to invoices and not other types of documents.
+   * **Document Type is Invoice**: Bu koşul, işlenen belgenin bir fatura olup olmadığını kontrol eder. Bu, kuralın yalnızca faturalara uygulanmasını ve diğer belge türlerine uygulanmamasını sağlamak için çok önemlidir.
 2. **And…**
-   * **Document Status is Pending Approval**: This specifies that the invoice must be in a "Pending Approval" status. This status check ensures that the rule applies only to invoices awaiting approval.
-   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: This condition compares the total amount of the invoice to an approver's maximum authorized amount. If the invoice's total amount is less than or equal to this max amount, the rule continues to the next step. This likely includes a tolerance level that allows for minor deviations within specified limits.
+   * **Document Status is Pending Approval**: Bu, faturanın "Pending Approval" durumunda olması gerektiğini belirtir. Bu durum kontrolü, kuralın yalnızca onay bekleyen faturalara uygulanmasını sağlar.
+   * **Compare two fields: Total Amount Less Or Equals Approver Max Amount**: Bu koşul, faturanın toplam tutarını bir onaylayıcının maksimum yetkili tutarıyla karşılaştırır. Faturanın toplam tutarı bu maksimum tutardan az veya ona eşitse, kural bir sonraki adıma devam eder. Bu, büyük olasılıkla belirtilen sınırlar içinde küçük sapmalara izin veren bir tolerans düzeyi içerir.
 
-#### Action (Then…):
+#### Eylem (Then…):
 
-* **Assign user from field Approver Name, use user User as fallback**: If the conditions specified are met, the invoice is automatically assigned to an approver whose name is specified in a field. If this field is empty or unavailable, a default user (likely an admin or another designated staff member) is assigned as a fallback to handle the approval.
+* **Assign user from field Approver Name, use user User as fallback**: Belirtilen koşullar karşılanırsa, fatura adı bir alanda belirtilen bir onaylayıcıya otomatik olarak atanır. Bu alan boşsa veya kullanılamıyorsa, onayı işlemek için bir varsayılan kullanıcı (büyük olasılıkla bir yönetici veya başka bir görevli personel) yedek olarak atanır.
 
-#### Interface Elements:
+#### Arayüz Öğeleri:
 
-* **Add Card**: This button likely allows users to add more conditions or actions to the rule, enhancing the flexibility and specificity of the workflow.
-* **Save**: Saves the configured rule to the system.
+* **Add Card**: Bu düğme, büyük olasılıkla kullanıcıların kurala daha fazla koşul veya eylem eklemesine olanak tanıyarak iş akışının esnekliğini ve özgülüğünü artırır.
+* **Save**: Yapılandırılan kuralı sisteme kaydeder.
 
-#### Purpose of This Rule:
+#### Bu Kuralın Amacı:
 
-This setup is designed to streamline the approval process for invoices by automatically directing invoices to the appropriate approver based on the amount and ensuring that only those within a certain threshold are handled in this automated way. It helps in managing financial controls and speeds up the workflow by reducing manual checks for each invoice.
+Bu kurulum, faturaları tutara göre uygun onaylayıcıya otomatik olarak yönlendirerek ve yalnızca belirli bir eşik içindekilerin bu otomatik şekilde işlenmesini sağlayarak faturaların onay sürecini kolaylaştırmak için tasarlanmıştır. Finansal kontrollerin yönetilmesine yardımcı olur ve her fatura için manuel kontrolleri azaltarak iş akışını hızlandırır.
 
 \\

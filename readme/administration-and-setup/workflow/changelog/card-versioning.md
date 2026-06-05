@@ -1,226 +1,226 @@
 # Card Versioning System - October 2025 Update
 
-**Document:** Workflow Card Versioning Overview
-**Last Updated:** October 23, 2025
-**Status:** Complete
+**Belge:** Workflow Card Versioning Overview
+**Son Güncelleme:** 23 Ekim 2025
+**Durum:** Tamamlandı
 
 ---
 
-## Overview
+## Genel Bakış
 
-The DocBits Workflow Engine uses **integer-based versioning** to manage card evolution while maintaining backward compatibility. This document provides an overview of the versioning system.
-
----
-
-## What is Card Versioning?
-
-### Concept
-Each workflow card can have multiple versions, allowing the system to:
-- Add new features without breaking existing workflows
-- Support deprecated functionality while phasing it out
-- Evolve card capabilities over time
-- Maintain backward compatibility
-
-### Version Structure
-- **Format:** Integer values (1, 2, 3, 4, 5...)
-- **Identification:** Composite key of (card_type, card_version)
-- **Status:** Each version has deprecated/enabled flags
-
-### Example
-The `tasks_create` card has evolved through 4 versions:
-- **v1:** Original task creation (deprecated)
-- **v2:** Added translation support (deprecated)
-- **v3:** Experimental decision tree support (deprecated)
-- **v4:** Generic work item type support (current active)
+DocBits Workflow Engine, geriye dönük uyumluluğu korurken kart evrimini yönetmek için **tamsayı tabanlı sürümleme** kullanır. Bu belge, sürümleme sistemine genel bir bakış sunar.
 
 ---
 
-## Key Statistics
+## Card Versioning Nedir?
 
-### Versioning Overview
-| Metric | Value |
+### Kavram
+Her workflow kartının birden fazla sürümü olabilir, bu da sistemin şunları yapmasına olanak tanır:
+- Mevcut iş akışlarını bozmadan yeni özellikler ekleme
+- Kullanımdan kaldırılan işlevselliği aşamalı olarak devre dışı bırakırken destekleme
+- Kart yeteneklerini zaman içinde geliştirme
+- Geriye dönük uyumluluğu koruma
+
+### Sürüm Yapısı
+- **Biçim:** Tamsayı değerleri (1, 2, 3, 4, 5...)
+- **Tanımlama:** (card_type, card_version) bileşik anahtarı
+- **Durum:** Her sürümün deprecated/enabled bayrakları vardır
+
+### Örnek
+`tasks_create` kartı 4 sürüm boyunca gelişmiştir:
+- **v1:** Orijinal görev oluşturma (kullanımdan kaldırıldı)
+- **v2:** Çeviri desteği eklendi (kullanımdan kaldırıldı)
+- **v3:** Deneysel karar ağacı desteği (kullanımdan kaldırıldı)
+- **v4:** Generic iş öğesi türü desteği (mevcut etkin)
+
+---
+
+## Önemli İstatistikler
+
+### Sürümlemeye Genel Bakış
+| Metrik | Değer |
 |--------|-------|
-| **Cards with Multiple Versions** | 30+ |
-| **Total Version Records** | 90+ |
-| **Versions per Card (average)** | 3 |
-| **Maximum Versions** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
-| **Deprecated Versions** | 9 |
-| **Fully Disabled Cards** | 2 |
+| **Birden Fazla Sürümü Olan Kartlar** | 30+ |
+| **Toplam Sürüm Kaydı** | 90+ |
+| **Kart Başına Sürüm (ortalama)** | 3 |
+| **Maksimum Sürüm** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
+| **Kullanımdan Kaldırılan Sürümler** | 9 |
+| **Tamamen Devre Dışı Bırakılan Kartlar** | 2 |
 
-### Version Distribution
-- **2 Versions:** 14 cards (simpler evolution)
-- **3 Versions:** 11 cards (moderate evolution)
-- **4 Versions:** 4 cards (significant evolution)
-- **5 Versions:** 1 card (most evolved: CONDITION_DOC_TO_PO_UNIT_PRICE)
+### Sürüm Dağılımı
+- **2 Sürüm:** 14 kart (daha basit evrim)
+- **3 Sürüm:** 11 kart (orta düzey evrim)
+- **4 Sürüm:** 4 kart (önemli evrim)
+- **5 Sürüm:** 1 kart (en çok gelişen: CONDITION_DOC_TO_PO_UNIT_PRICE)
 
 ---
 
-## Common Version Patterns
+## Yaygın Sürüm Desenleri
 
-### Pattern 1: Translation Key Adoption (v1 → v2)
+### Desen 1: Çeviri Anahtarı Benimseme (v1 → v2)
 
-**Affected:** 15+ cards
+**Etkilenen:** 15+ kart
 
-**Change:**
+**Değişiklik:**
 ```
 v1: Plain text: "Call Api: [param] with method: [param]"
 v2: With i18n: "trnsl_%call_api trnsl_be_% Call Api: [param]..."
 ```
 
-**Purpose:** Enable multi-language support
+**Amaç:** Çok dilli desteği etkinleştirme
 
-**Cards:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS, and more
+**Kartlar:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS ve daha fazlası
 
-**Migration:** Safe - no functional changes
+**Geçiş:** Güvenli - işlevsel değişiklik yok
 
 ---
 
-### Pattern 2: Decision Tree Integration (v2 → v3)
+### Desen 2: Karar Ağacı Entegrasyonu (v2 → v3)
 
-**Affected:** 5 cards
+**Etkilenen:** 5 kart
 
-**Change:** Addition of decision tree parameter
+**Değişiklik:** Karar ağacı parametresinin eklenmesi
 
 ```
 v2: Create a new Task with title: [param], description: [param]...
 v3: (same as v2) + "Use decision tree, if available: [param]"
 ```
 
-**Purpose:** Support decision table results
+**Amaç:** Karar tablosu sonuçlarını destekleme
 
-**Cards:**
-- tasks_create (v3 deprecated)
-- ACTION_TASK_FOR_GROUP (v3 deprecated)
-- DOC_USER_ASSIGN (v3 deprecated)
-- DOC_GROUP_ASSIGN (v3 deprecated)
+**Kartlar:**
+- tasks_create (v3 kullanımdan kaldırıldı)
+- ACTION_TASK_FOR_GROUP (v3 kullanımdan kaldırıldı)
+- DOC_USER_ASSIGN (v3 kullanımdan kaldırıldı)
+- DOC_GROUP_ASSIGN (v3 kullanımdan kaldırıldı)
 - ACTION_DECISION_TREE_CREATE_TASKS
 
-**Status:** Deprecated - decision tree approach was experimental
+**Durum:** Kullanımdan kaldırıldı - karar ağacı yaklaşımı deneyseldi
 
 ---
 
-### Pattern 3: Generic Type Evolution (v3 → v4)
+### Desen 3: Generic Tür Evrimi (v3 → v4)
 
-**Affected:** 4 cards
+**Etkilenen:** 4 kart
 
-**Change:** "Task" becomes flexible work item type
+**Değişiklik:** "Task", esnek iş öğesi türüne dönüşür
 
 ```
 v3: Create a new Task with the title: [param]
 v4: Create a new [param] with the title: [param]
 ```
 
-**Purpose:** Support Tasks, Tickets, Issues, and other work item types
+**Amaç:** Task, Ticket, Issue ve diğer iş öğesi türlerini destekleme
 
-**Cards:**
-- tasks_create (v4 current)
-- ACTION_TASK_FOR_GROUP (v4 current)
-- ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP (v3 current)
-- ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK (v3 current)
+**Kartlar:**
+- tasks_create (v4 mevcut)
+- ACTION_TASK_FOR_GROUP (v4 mevcut)
+- ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP (v3 mevcut)
+- ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK (v3 mevcut)
 
-**Current Status:** Active and recommended
+**Mevcut Durum:** Etkin ve önerilen
 
 ---
 
-### Pattern 4: Tolerance Parameters (PO Cards)
+### Desen 4: Tolerans Parametreleri (PO Kartları)
 
-**Affected:** 6 PO comparison cards
+**Etkilenen:** 6 PO karşılaştırma kartı
 
-**Change:** Addition of tolerance/variance support
+**Değişiklik:** Tolerans/sapma desteğinin eklenmesi
 
 ```
 v2: Document value [operator] Purchase Order value
 v3+: Document value [operator] PO value with tolerance [amount] [unit]
 ```
 
-**Purpose:** Allow acceptable variance in matching (e.g., 2% price difference OK)
+**Amaç:** Eşleştirmede kabul edilebilir sapmaya izin verme (örn. %2 fiyat farkı uygun)
 
-**Key Cards:**
-- CONDITION_DOC_TO_PO_UNIT_PRICE (evolved to v5 with tolerance)
+**Önemli Kartlar:**
+- CONDITION_DOC_TO_PO_UNIT_PRICE (tolerans ile v5'e gelişti)
 - CONDITION_DATES_OPERATOR_OC_LINE_ITEMS (v2 → v3)
 - CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
 
-**Benefit:** More realistic matching criteria
+**Fayda:** Daha gerçekçi eşleştirme ölçütleri
 
 ---
 
-### Pattern 5: Comparison Mode Parameters
+### Desen 5: Karşılaştırma Modu Parametreleri
 
-**Affected:** 3 PO comparison cards
+**Etkilenen:** 3 PO karşılaştırma kartı
 
-**Change:** Support for different comparison algorithms
+**Değişiklik:** Farklı karşılaştırma algoritmaları için destek
 
 ```
 v3: Standard comparison logic
 v4: Same logic + "Compare as [param]" parameter
 ```
 
-**Purpose:** Flexible comparison methods
+**Amaç:** Esnek karşılaştırma yöntemleri
 
-**Cards:**
+**Kartlar:**
 - COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE (v2-4)
 - CONDITION_OC_TO_PO_ITEMS (v3-4)
 - CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY (v3-4)
 
 ---
 
-### Pattern 6: Workflow Triggers
+### Desen 6: İş Akışı Tetikleyicileri
 
-**Affected:** STAUS_CHANGE only
+**Etkilenen:** Yalnızca STAUS_CHANGE
 
-**Change:** Auto-trigger workflows on status change
+**Değişiklik:** Durum değişikliğinde iş akışlarını otomatik tetikleme
 
 ```
 v2: Change Status to [param]
 v3: Change Status to [param], trigger Workflows [param]
 ```
 
-**Purpose:** Cascade status changes across workflows
+**Amaç:** Durum değişikliklerini iş akışları arasında basamaklandırma
 
 ---
 
-## Most Evolved Cards
+## En Çok Gelişen Kartlar
 
-### 1. CONDITION_DOC_TO_PO_UNIT_PRICE (5 versions)
+### 1. CONDITION_DOC_TO_PO_UNIT_PRICE (5 sürüm)
 
-**Evolution Path:** v2 → v3 → v4 → v5
+**Evrim Yolu:** v2 → v3 → v4 → v5
 
-- **v2:** Basic unit price comparison
-- **v3:** Same translation key (v2)
-- **v4:** Added comparison mode parameter
-- **v5:** Added tolerance threshold parameter
+- **v2:** Temel birim fiyat karşılaştırması
+- **v3:** Aynı çeviri anahtarı (v2)
+- **v4:** Karşılaştırma modu parametresi eklendi
+- **v5:** Tolerans eşiği parametresi eklendi
 
-**Current:** v5 (with tolerance support)
-
----
-
-### 2. CONDITION_OC_TO_PO_ITEMS (4 versions)
-
-**Evolution Path:** v1 → v2 → v3 → v4
-
-- **v1:** Basic item matching (deprecated)
-- **v2:** Added comparison method parameter
-- **v3:** Enhanced with translation keys
-- **v4:** Added compare mode parameter
-
-**Current:** v4
-
-**Avoid:** v1 (deprecated)
+**Mevcut:** v5 (tolerans desteğiyle)
 
 ---
 
-### 3. tasks_create (4 versions)
+### 2. CONDITION_OC_TO_PO_ITEMS (4 sürüm)
 
-**Evolution Path:** v1 → v2 → v3 → v4
+**Evrim Yolu:** v1 → v2 → v3 → v4
 
-- **v1:** Original implementation (deprecated)
-- **v2:** Added translation support (deprecated)
-- **v3:** Added decision tree (deprecated)
-- **v4:** Generic work item types (current)
+- **v1:** Temel kalem eşleştirme (kullanımdan kaldırıldı)
+- **v2:** Karşılaştırma yöntemi parametresi eklendi
+- **v3:** Çeviri anahtarlarıyla geliştirildi
+- **v4:** Karşılaştırma modu parametresi eklendi
 
-**Current:** v4 (recommended)
+**Mevcut:** v4
 
-**Timeline:**
+**Kaçının:** v1 (kullanımdan kaldırıldı)
+
+---
+
+### 3. tasks_create (4 sürüm)
+
+**Evrim Yolu:** v1 → v2 → v3 → v4
+
+- **v1:** Orijinal uygulama (kullanımdan kaldırıldı)
+- **v2:** Çeviri desteği eklendi (kullanımdan kaldırıldı)
+- **v3:** Karar ağacı eklendi (kullanımdan kaldırıldı)
+- **v4:** Generic iş öğesi türleri (mevcut)
+
+**Mevcut:** v4 (önerilen)
+
+**Zaman Çizelgesi:**
 ```
 v1 → deprecated (old)
   → v2 → deprecated (translation added)
@@ -230,66 +230,66 @@ v1 → deprecated (old)
 
 ---
 
-## Deprecation Status
+## Kullanımdan Kaldırma Durumu
 
-### Fully Deprecated Versions (Do Not Use)
+### Tamamen Kullanımdan Kaldırılan Sürümler (Kullanmayın)
 
-| Card | Version | Reason | Alternative |
+| Kart | Sürüm | Neden | Alternatif |
 |------|---------|--------|-------------|
-| tasks_create | v1 | Very old | Use v4 |
-| tasks_create | v3 | Decision tree deprecated | Use v4 |
-| ACTION_TASK_FOR_GROUP | v3 | Decision tree deprecated | Use v4 |
-| DOC_USER_ASSIGN | v3 | Decision tree deprecated | Use v2 |
-| DOC_GROUP_ASSIGN | v3 | Decision tree deprecated | Use v2 |
-| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Very old | Use v2 |
-| CONDITION_OC_TO_PO_ITEMS | v1 | Very old | Use v4 |
-| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Features reverted | Use v3 |
+| tasks_create | v1 | Çok eski | v4 kullanın |
+| tasks_create | v3 | Karar ağacı kullanımdan kaldırıldı | v4 kullanın |
+| ACTION_TASK_FOR_GROUP | v3 | Karar ağacı kullanımdan kaldırıldı | v4 kullanın |
+| DOC_USER_ASSIGN | v3 | Karar ağacı kullanımdan kaldırıldı | v2 kullanın |
+| DOC_GROUP_ASSIGN | v3 | Karar ağacı kullanımdan kaldırıldı | v2 kullanın |
+| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Çok eski | v2 kullanın |
+| CONDITION_OC_TO_PO_ITEMS | v1 | Çok eski | v4 kullanın |
+| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Özellikler geri alındı | v3 kullanın |
 
-### Fully Disabled Cards (Cannot Use)
+### Tamamen Devre Dışı Bırakılan Kartlar (Kullanılamaz)
 
-| Card | Versions | Notes |
+| Kart | Sürümler | Notlar |
 |------|----------|-------|
-| DOC_SUBORG_CHANGE | v1, v2 | Unsupported functionality |
-| RUN_SCRIPT | v2, v3 | Replaced by ACTION_RUN_DOCOPERATOR_SCRIPT |
+| DOC_SUBORG_CHANGE | v1, v2 | Desteklenmeyen işlevsellik |
+| RUN_SCRIPT | v2, v3 | ACTION_RUN_DOCOPERATOR_SCRIPT ile değiştirildi |
 
 ---
 
-## Version Recommendations
+## Sürüm Önerileri
 
-### By Use Case
+### Kullanım Senaryosuna Göre
 
-**New Workflow Creation:**
-- Always use the **highest enabled version number**
-- Provides latest features and improvements
-- Supported and documented
+**Yeni İş Akışı Oluşturma:**
+- Her zaman **en yüksek etkin sürüm numarasını** kullanın
+- En son özellikleri ve iyileştirmeleri sağlar
+- Desteklenir ve belgelenir
 
-**Existing Workflow Maintenance:**
-- Continue using current version if it works
-- Plan migration when feasible
-- No urgent need to upgrade
+**Mevcut İş Akışı Bakımı:**
+- Çalışıyorsa mevcut sürümü kullanmaya devam edin
+- Mümkün olduğunda geçişi planlayın
+- Yükseltmek için acil ihtiyaç yok
 
-**Legacy Workflow Migration:**
-- Identify version currently in use
-- Plan upgrade path
-- Test thoroughly before deploying
+**Eski İş Akışı Geçişi:**
+- Şu anda kullanılan sürümü belirleyin
+- Yükseltme yolunu planlayın
+- Dağıtmadan önce kapsamlı şekilde test edin
 
 ---
 
-## How Versions Work
+## Sürümler Nasıl Çalışır
 
-### Version Selection
-When creating a workflow, you select which version of a card to use. Example:
-- Use `tasks_create v4` for new task creation (recommended)
-- Use `tasks_create v2` if legacy systems require it (older but works)
-- Do NOT use `tasks_create v1` (deprecated)
+### Sürüm Seçimi
+Bir iş akışı oluştururken, bir kartın hangi sürümünü kullanacağınızı seçersiniz. Örnek:
+- Yeni görev oluşturma için `tasks_create v4` kullanın (önerilen)
+- Eski sistemler gerektiriyorsa `tasks_create v2` kullanın (daha eski ama çalışır)
+- `tasks_create v1` KULLANMAYIN (kullanımdan kaldırıldı)
 
-### Backward Compatibility
-- Newer versions don't break older workflows
-- Old workflows continue working with their original version
-- Can upgrade workflows gradually
+### Geriye Dönük Uyumluluk
+- Daha yeni sürümler eski iş akışlarını bozmaz
+- Eski iş akışları kendi orijinal sürümleriyle çalışmaya devam eder
+- İş akışları kademeli olarak yükseltilebilir
 
-### Technical Implementation
-Versions are managed at the database level:
+### Teknik Uygulama
+Sürümler veritabanı düzeyinde yönetilir:
 ```
 card_templates table (PostgreSQL)
 - card_type: Identifies the card (e.g., "tasks_create")
@@ -301,113 +301,113 @@ card_templates table (PostgreSQL)
 
 ---
 
-## For Documentation Purposes
+## Dokümantasyon Amaçları İçin
 
-### Understanding Version Info
-When you see "Card v3" in documentation:
-- It refers to version 3 of that specific card
-- Check [Full Versioning Reference](../../docs/card_version.md) for details
-- Verify which version is recommended
+### Sürüm Bilgilerini Anlama
+Dokümantasyonda "Card v3" gördüğünüzde:
+- Bu, o belirli kartın 3. sürümüne atıfta bulunur
+- Ayrıntılar için [Full Versioning Reference](../../docs/card_version.md) sayfasını kontrol edin
+- Hangi sürümün önerildiğini doğrulayın
 
-### Checking Your Version
-To know which version you're using:
-1. Open the card in your workflow
-2. Check the version number displayed
-3. Compare with recommendations in guides
+### Sürümünüzü Kontrol Etme
+Hangi sürümü kullandığınızı öğrenmek için:
+1. İş akışınızdaki kartı açın
+2. Görüntülenen sürüm numarasını kontrol edin
+3. Kılavuzlardaki önerilerle karşılaştırın
 
-### Version Evolution Timeline
-- **2024-2025:** Ongoing evolution
-- **October 2025:** Complete versioning documentation
-- **Future:** Continued improvements
+### Sürüm Evrimi Zaman Çizelgesi
+- **2024-2025:** Devam eden evrim
+- **Ekim 2025:** Eksiksiz sürümleme dokümantasyonu
+- **Gelecek:** Sürekli iyileştirmeler
 
 ---
 
-## Related Documentation
+## İlgili Dokümantasyon
 
-### Comprehensive Reference
+### Kapsamlı Referans
 → [Full Card Versioning Reference](../../docs/card_version.md)
 
-Includes:
-- All 30+ cards with versions
-- Detailed text evolution for each
-- Specific parameter changes
-- SQL queries for version lookup
+Şunları içerir:
+- Sürümleriyle birlikte 30+ kartın tamamı
+- Her biri için ayrıntılı metin evrimi
+- Belirli parametre değişiklikleri
+- Sürüm araması için SQL sorguları
 
-### Card-Specific Guides
+### Karta Özgü Kılavuzlar
 → [Workflow Guides](../)
 
-Documentation for each card with version recommendations
+Sürüm önerileriyle birlikte her kart için dokümantasyon
 
-### Version History Details
-Each guide includes version information and migration notes
+### Sürüm Geçmişi Ayrıntıları
+Her kılavuz, sürüm bilgilerini ve geçiş notlarını içerir
 
 ---
 
-## Quick Reference
+## Hızlı Referans
 
-### Cards with Most Versions
-1. CONDITION_DOC_TO_PO_UNIT_PRICE - 5 versions
-2. CONDITION_OC_TO_PO_ITEMS - 4 versions
-3. tasks_create - 4 versions
-4. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE - 3 versions
-5. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY - 4 versions
+### En Çok Sürümü Olan Kartlar
+1. CONDITION_DOC_TO_PO_UNIT_PRICE - 5 sürüm
+2. CONDITION_OC_TO_PO_ITEMS - 4 sürüm
+3. tasks_create - 4 sürüm
+4. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE - 3 sürüm
+5. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY - 4 sürüm
 
-### Most Common Evolution Pattern
-**Translation Key Adoption (v1 → v2)** - 15+ cards
+### En Yaygın Evrim Deseni
+**Çeviri Anahtarı Benimseme (v1 → v2)** - 15+ kart
 
-### Most Significant Change
-**Generic Type Evolution (v3 → v4)** - Changed from "Task" to flexible work item type
+### En Önemli Değişiklik
+**Generic Tür Evrimi (v3 → v4)** - "Task"tan esnek iş öğesi türüne değiştirildi
 
-### Fully Disabled
+### Tamamen Devre Dışı
 - DOC_SUBORG_CHANGE
 - RUN_SCRIPT
 
 ---
 
-## Frequently Asked Questions
+## Sıkça Sorulan Sorular
 
-### Q: Which version should I use?
-A: Use the **highest enabled version** unless you have a specific reason to use an older version.
+### S: Hangi sürümü kullanmalıyım?
+C: Daha eski bir sürümü kullanmak için belirli bir nedeniniz olmadıkça **en yüksek etkin sürümü** kullanın.
 
-### Q: Can I upgrade my workflow to a newer version?
-A: Yes, but test thoroughly. Some versions have different parameter requirements.
+### S: İş akışımı daha yeni bir sürüme yükseltebilir miyim?
+C: Evet, ancak kapsamlı şekilde test edin. Bazı sürümlerin farklı parametre gereksinimleri vardır.
 
-### Q: What happens if I use a deprecated version?
-A: It continues to work, but you won't get new features. Migration recommended.
+### S: Kullanımdan kaldırılmış bir sürüm kullanırsam ne olur?
+C: Çalışmaya devam eder, ancak yeni özellikler alamazsınız. Geçiş önerilir.
 
-### Q: Can I use a disabled card?
-A: No, disabled cards cannot be used. Use the recommended alternative instead.
+### S: Devre dışı bırakılmış bir kartı kullanabilir miyim?
+C: Hayır, devre dışı bırakılmış kartlar kullanılamaz. Bunun yerine önerilen alternatifi kullanın.
 
-### Q: How do I know if my card needs upgrading?
-A: Check the [Full Versioning Reference](../../docs/card_version.md) for your card type and follow the recommendations.
-
----
-
-## Best Practices
-
-1. **New Workflows:** Use latest stable version
-2. **Updates:** Check for new versions periodically
-3. **Testing:** Test version upgrades in sandbox first
-4. **Documentation:** Refer to card-specific guides for version details
-5. **Migration:** Plan upgrades incrementally
-6. **Support:** Contact support if version compatibility questions arise
+### S: Kartımın yükseltilmesi gerekip gerekmediğini nasıl anlarım?
+C: Kart türünüz için [Full Versioning Reference](../../docs/card_version.md) sayfasını kontrol edin ve önerileri izleyin.
 
 ---
 
-## Summary Table
+## En İyi Uygulamalar
 
-| Card Type | Current Version | Total Versions | Status | Notes |
+1. **Yeni İş Akışları:** En son kararlı sürümü kullanın
+2. **Güncellemeler:** Yeni sürümleri periyodik olarak kontrol edin
+3. **Test:** Sürüm yükseltmelerini önce sandbox'ta test edin
+4. **Dokümantasyon:** Sürüm ayrıntıları için karta özgü kılavuzlara başvurun
+5. **Geçiş:** Yükseltmeleri kademeli olarak planlayın
+6. **Destek:** Sürüm uyumluluğu soruları ortaya çıkarsa destekle iletişime geçin
+
+---
+
+## Özet Tablosu
+
+| Kart Türü | Mevcut Sürüm | Toplam Sürüm | Durum | Notlar |
 |-----------|-----------------|----------------|--------|-------|
-| tasks_create | 4 | 4 | Active | Most evolved; v3 deprecated |
-| CONDITION_DOC_TO_PO_UNIT_PRICE | 5 | 4 | Active | Highest version count |
-| CONDITION_OC_TO_PO_ITEMS | 4 | 4 | Active | v1 deprecated |
-| ACTION_TASK_FOR_GROUP | 4 | 3 | Active | v3 deprecated |
-| ACTION_RUN_DOCOPERATOR_SCRIPT | 3 | 3 | Active | v4 deprecated/disabled |
-| Most cards | 2 | 2 | Active | v1 → v2 pattern |
+| tasks_create | 4 | 4 | Etkin | En çok gelişen; v3 kullanımdan kaldırıldı |
+| CONDITION_DOC_TO_PO_UNIT_PRICE | 5 | 4 | Etkin | En yüksek sürüm sayısı |
+| CONDITION_OC_TO_PO_ITEMS | 4 | 4 | Etkin | v1 kullanımdan kaldırıldı |
+| ACTION_TASK_FOR_GROUP | 4 | 3 | Etkin | v3 kullanımdan kaldırıldı |
+| ACTION_RUN_DOCOPERATOR_SCRIPT | 3 | 3 | Etkin | v4 kullanımdan kaldırıldı/devre dışı |
+| Çoğu kart | 2 | 2 | Etkin | v1 → v2 deseni |
 
 ---
 
-## See Also
+## Ayrıca Bkz.
 
 - 📖 [Full Card Versioning Reference](../../docs/card_version.md)
 - 🔗 [Workflow Guides](../)
@@ -416,6 +416,6 @@ A: Check the [Full Versioning Reference](../../docs/card_version.md) for your ca
 
 ---
 
-**Last Updated:** October 23, 2025
-**Source:** postgres-dev-docflow database
-**Status:** Complete Reference
+**Son Güncelleme:** 23 Ekim 2025
+**Kaynak:** postgres-dev-docflow database
+**Durum:** Eksiksiz Referans

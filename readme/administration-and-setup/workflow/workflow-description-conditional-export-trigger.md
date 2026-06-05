@@ -2,31 +2,31 @@
 
 <figure><img src="../../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
-This workflow outlines the conditions under which an export process should be initiated. It ensures that only documents meeting all specified criteria are processed for export, enhancing data integrity and alignment with business rules.
+Bu iş akışı, bir dışa aktarma işleminin hangi koşullar altında başlatılması gerektiğini ana hatlarıyla belirtir. Yalnızca belirtilen tüm ölçütleri karşılayan belgelerin dışa aktarım için işlenmesini sağlayarak veri bütünlüğünü ve iş kurallarıyla uyumu artırır.
 
 ### When:
 
-* A document within the system is evaluated for export eligibility.
+* Sistemdeki bir belge, dışa aktarma uygunluğu açısından değerlendirilir.
 
 ### Logic:
 
-1. **Document Type Check**
-   * The document must be of a certain type (e.g., "Invoice" or "Receipt"). Specify the document type that qualifies for the export process.
-2. **Status Verification**
-   * The document's current status must meet predefined criteria (e.g., "Approved" or "Ready for Export") indicating it is ready for further processing.
-3. **Contextual Conditions**
-   * Additional checks are performed to ensure the document's details align with specific requirements. These checks might involve verifying information within order confirmations or purchase orders. Specify the particular conditions that need to be met. For example:
-     * All items listed in the order confirmation match those in the purchase order.
-     * The total amount in the order confirmation matches the total amount in the purchase order.
-     * The delivery dates specified in the order confirmation align with those in the purchase order.
+1. **Belge Türü Kontrolü**
+   * Belge belirli bir türde olmalıdır (örneğin, "Fatura" veya "Makbuz"). Dışa aktarma işlemi için uygun olan belge türünü belirtin.
+2. **Durum Doğrulaması**
+   * Belgenin mevcut durumu, daha fazla işleme hazır olduğunu gösteren önceden tanımlanmış ölçütleri karşılamalıdır (örneğin, "Onaylandı" veya "Dışa Aktarmaya Hazır").
+3. **Bağlamsal Koşullar**
+   * Belgenin ayrıntılarının belirli gereksinimlerle uyumlu olduğundan emin olmak için ek kontroller gerçekleştirilir. Bu kontroller, sipariş onaylarındaki veya satın alma siparişlerindeki bilgilerin doğrulanmasını içerebilir. Karşılanması gereken belirli koşulları belirtin. Örneğin:
+     * Sipariş onayında listelenen tüm kalemler, satın alma siparişindekilerle eşleşir.
+     * Sipariş onayındaki toplam tutar, satın alma siparişindeki toplam tutarla eşleşir.
+     * Sipariş onayında belirtilen teslimat tarihleri, satın alma siparişindekilerle uyumludur.
 
 ### Then:
 
 #### Action:
 
-* **Initiate Export**
-  * If all the above conditions are satisfied, the system automatically starts the export process for the document.
-  * This may involve generating an export file, sending data to an external system, or triggering a workflow in another application.
+* **Dışa Aktarmayı Başlat**
+  * Yukarıdaki tüm koşullar karşılanırsa, sistem belge için dışa aktarma işlemini otomatik olarak başlatır.
+  * Bu, bir dışa aktarma dosyası oluşturmayı, harici bir sisteme veri göndermeyi veya başka bir uygulamada bir iş akışını tetiklemeyi içerebilir.
 
 #### Implementation Example:
 

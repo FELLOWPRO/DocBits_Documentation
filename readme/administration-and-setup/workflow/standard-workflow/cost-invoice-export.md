@@ -2,24 +2,24 @@
 
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28 (1).png" alt=""><figcaption></figcaption></figure>
 
-This title indicates that the rule is specifically configured for managing cost invoices and involves an export action, possibly for reporting, further processing, or integration with other systems.
+Bu başlık, kuralın özellikle maliyet faturalarını yönetmek için yapılandırıldığını ve muhtemelen raporlama, daha fazla işleme veya diğer sistemlerle entegrasyon için bir dışa aktarma eylemi içerdiğini gösterir.
 
-#### Rule Configuration:
+#### Kural Yapılandırması:
 
 1. **When…**
-   * **Document Type is Invoice**: This condition ensures that the rule is triggered only for documents categorized as invoices, maintaining the workflow's specificity to invoice management.
+   * **Document Type is Invoice**: Bu koşul, kuralın yalnızca fatura olarak sınıflandırılan belgeler için tetiklenmesini sağlayarak iş akışının fatura yönetimine özgülüğünü korur.
 2. **And…**
-   * **Document Field Invoice Sub Type is Equals Cost Invoice**: This specifies that the rule applies only to those invoices that are explicitly marked as "Cost Invoices" in a particular field within the document. This helps in distinguishing them from other types of invoices.
-   * **Document Status is Pending Second Approval**: The invoice must be in a "Pending Second Approval" status. This indicates that the invoice has already undergone an initial approval and is awaiting a second, possibly final, review.
+   * **Document Field Invoice Sub Type is Equals Cost Invoice**: Bu, kuralın yalnızca belge içindeki belirli bir alanda açıkça "Cost Invoices" olarak işaretlenmiş faturalara uygulandığını belirtir. Bu, onları diğer fatura türlerinden ayırt etmeye yardımcı olur.
+   * **Document Status is Pending Second Approval**: Faturanın "Pending Second Approval" durumunda olması gerekir. Bu, faturanın daha önce bir ilk onaydan geçtiğini ve ikinci, muhtemelen nihai bir incelemeyi beklediğini gösterir.
 
-#### Action (Then…):
+#### Eylem (Then…):
 
-* **Start Export**: Once the invoice meets the specified conditions (being a cost invoice and pending second approval), the action to "Start Export" is executed. This could involve sending the invoice data to another system for financial analysis, reporting, or compliance purposes.
+* **Start Export**: Fatura belirtilen koşulları karşıladığında (bir maliyet faturası olması ve ikinci onayı bekliyor olması), "Start Export" eylemi yürütülür. Bu, fatura verilerinin finansal analiz, raporlama veya uyumluluk amaçları için başka bir sisteme gönderilmesini içerebilir.
 
-#### Purpose of This Rule:
+#### Bu Kuralın Amacı:
 
-* **Workflow Efficiency**: This rule helps automate the handling of cost invoices by ensuring they are processed through the necessary approval stages without manual intervention, increasing the speed and accuracy of financial operations.
-* **Control and Compliance**: By requiring a second approval, the system enforces a control mechanism that ensures cost invoices are thoroughly reviewed, enhancing financial oversight.
-* **Integration and Reporting**: The export action suggests that once invoices are fully approved, they may be integrated into other systems for further processing or analysis, which is critical for financial reporting and audits.
+* **İş Akışı Verimliliği**: Bu kural, maliyet faturalarının manuel müdahale olmadan gerekli onay aşamalarından geçirilmesini sağlayarak işlenmesini otomatikleştirmeye yardımcı olur ve finansal işlemlerin hızını ve doğruluğunu artırır.
+* **Kontrol ve Uyumluluk**: Sistem, ikinci bir onay gerektirerek maliyet faturalarının kapsamlı bir şekilde incelenmesini sağlayan bir kontrol mekanizması uygular ve finansal denetimi güçlendirir.
+* **Entegrasyon ve Raporlama**: Dışa aktarma eylemi, faturalar tamamen onaylandıktan sonra finansal raporlama ve denetimler için kritik olan daha fazla işleme veya analiz için diğer sistemlere entegre edilebileceklerini gösterir.
 
-This kind of rule is vital for organizations that deal with various types of invoices and need to ensure that each type is handled according to specific protocols. It reduces the risk of errors and ensures compliance with internal controls and external regulations.
+Bu tür bir kural, çeşitli fatura türleriyle ilgilenen ve her türün belirli protokollere göre işlendiğinden emin olması gereken organizasyonlar için hayati önem taşır. Hata riskini azaltır ve dahili kontroller ile harici düzenlemelere uyumu sağlar.

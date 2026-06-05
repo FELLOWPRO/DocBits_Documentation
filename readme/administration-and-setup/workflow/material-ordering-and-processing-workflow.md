@@ -7,43 +7,43 @@ description: >-
 
 # Material Ordering and Processing Workflow
 
-This document outlines the workflow for ordering materials from suppliers, receiving goods, and processing invoices with integration between suppliers, INFOR ERP system, and DocBits for document management.
+Bu belge; tedarikçilerden malzeme siparişi verme, mal kabulü yapma ve faturaları işleme iş akışını, tedarikçiler, INFOR ERP sistemi ve belge yönetimi için DocBits arasındaki entegrasyonla birlikte açıklamaktadır.
 
-### Process Overview
+### Sürece Genel Bakış
 
-1. **Ordering Materials**
-   * Initiate order with the supplier.
-   * Send the order to the supplier through INFOR.
-2. **Receiving Order Confirmation**
-   * Supplier confirms the receipt of the order.
-   * Creation and sending of order confirmation.
-3. **Goods Receipt and Inspection**
-   * Receive goods from the supplier.
-   * Post goods receipt in INFOR and check against the delivery bill.
-4. **Invoice Processing**
-   * Receive invoice and send to DocBits for processing.
-   * Check and verify invoice details with order and goods receipt.
-5. **Final Steps**
-   * Archive the order and related documents in DocBits.
-   * Update INFOR with transaction details for financial accounting.
+1. **Malzeme Siparişi Verme**
+   * Tedarikçiyle siparişi başlatın.
+   * Siparişi INFOR aracılığıyla tedarikçiye gönderin.
+2. **Sipariş Onayı Alma**
+   * Tedarikçi siparişin alındığını onaylar.
+   * Sipariş onayının oluşturulması ve gönderilmesi.
+3. **Mal Kabulü ve Muayene**
+   * Tedarikçiden malları teslim alın.
+   * INFOR'da mal kabulünü kaydedin ve sevkiyat irsaliyesiyle karşılaştırın.
+4. **Fatura İşleme**
+   * Faturayı alın ve işlenmek üzere DocBits'e gönderin.
+   * Fatura ayrıntılarını sipariş ve mal kabulüyle kontrol edip doğrulayın.
+5. **Son Adımlar**
+   * Siparişi ve ilgili belgeleri DocBits'te arşivleyin.
+   * Mali muhasebe için INFOR'u işlem ayrıntılarıyla güncelleyin.
 
-### Decision Points and Actions
+### Karar Noktaları ve Eylemler
 
-* **Does the received goods match the order?**
-  * Yes: Proceed with invoice processing.
-  * No: Manual check and update required.
-* **Is the invoice correct according to the goods received and order details?**
-  * Yes: Complete the transaction and update financial records.
-  * No: Further examination and corrections needed.
+* **Teslim alınan mallar siparişle eşleşiyor mu?**
+  * Evet: Fatura işlemeyle devam edin.
+  * Hayır: Manuel kontrol ve güncelleme gerekir.
+* **Fatura, teslim alınan mallara ve sipariş ayrıntılarına göre doğru mu?**
+  * Evet: İşlemi tamamlayın ve mali kayıtları güncelleyin.
+  * Hayır: Daha ileri inceleme ve düzeltmeler gerekir.
 
-### Integration Points
+### Entegrasyon Noktaları
 
-* **INFOR ERP**: Main system for order processing, goods receipt, and financial accounting.
-* **DocBits**: Document management for processing and archiving invoices and order confirmations.
+* **INFOR ERP**: Sipariş işleme, mal kabulü ve mali muhasebe için ana sistem.
+* **DocBits**: Faturaların ve sipariş onaylarının işlenmesi ve arşivlenmesi için belge yönetimi.
 
-### Notes
+### Notlar
 
-* Ensure all documents are verified and archived for record-keeping.
-* Discrepancies in order or invoice details must be resolved promptly to avoid delays.
+* Kayıt tutma amacıyla tüm belgelerin doğrulandığından ve arşivlendiğinden emin olun.
+* Gecikmeleri önlemek için sipariş veya fatura ayrıntılarındaki tutarsızlıklar derhal çözülmelidir.
 
 <figure><img src="../../.gitbook/assets/embed (1).svg" alt=""><figcaption></figcaption></figure>

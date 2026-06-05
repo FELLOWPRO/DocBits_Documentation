@@ -6,38 +6,38 @@ description: DocBits Workflow Engine
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-03-12 um 19.42.57 (1).png" alt=""><figcaption></figcaption></figure>
 
-## DocBits Workflow Engine: Simplifying Process Automation
+## DocBits Workflow Engine: Süreç Otomasyonunu Basitleştirme
 
 {% embed url="https://youtu.be/YQC13wCqTJI" %}
 
 
-### Introduction
+### Giriş
 
-In the realm of process automation, the DocBits Workflow Engine stands out for its straightforward and intuitive approach. This engine streamlines the creation and management of workflows through a clear and simple rule-based structure. The core principle behind its design is the "Easy When-And-Then" rule, which breaks down the automation process into three fundamental components: Trigger, Condition, and Action. This guide explains how each component functions within the system and how they work together to facilitate seamless automation.
+Süreç otomasyonu alanında DocBits Workflow Engine, açık ve sezgisel yaklaşımıyla öne çıkar. Bu motor, net ve basit, kurala dayalı bir yapı aracılığıyla iş akışlarının oluşturulmasını ve yönetilmesini kolaylaştırır. Tasarımının arkasındaki temel ilke, otomasyon sürecini üç temel bileşene ayıran "Easy When-And-Then" kuralıdır: Tetikleyici, Koşul ve Eylem. Bu kılavuz, her bileşenin sistem içinde nasıl çalıştığını ve sorunsuz bir otomasyonu sağlamak için birlikte nasıl çalıştıklarını açıklar.
 
-### The "Easy When-And-Then" Rule Explained
+### "Easy When-And-Then" Kuralının Açıklaması
 
-The DocBits Workflow Engine operates on a basic yet powerful principle that makes workflow automation accessible to users of all skill levels. This principle is encapsulated in the "Easy When-And-Then" rule, which can be broken down as follows:
+DocBits Workflow Engine, iş akışı otomasyonunu her beceri düzeyindeki kullanıcı için erişilebilir kılan temel ama güçlü bir ilke üzerinde çalışır. Bu ilke, aşağıdaki gibi parçalara ayrılabilen "Easy When-And-Then" kuralında özetlenir:
 
-#### [When](./#when-trigger) (Trigger)
+#### [When](./#when-trigger) (Tetikleyici)
 
-* **Definition**: The "When" component represents the _Trigger_ of the workflow. This is the event or condition that initiates the execution of the workflow. Triggers can be a variety of occurrences such as the arrival of a new email, a specific date and time, or the creation of a new document.
-* **Example**: "When a new customer form is submitted..."
+* **Tanım**: "When" bileşeni, iş akışının _Tetikleyicisini_ temsil eder. Bu, iş akışının yürütülmesini başlatan olay veya koşuldur. Tetikleyiciler; yeni bir e-postanın gelmesi, belirli bir tarih ve saat ya da yeni bir belgenin oluşturulması gibi çeşitli olaylar olabilir.
+* **Örnek**: "Yeni bir müşteri formu gönderildiğinde..."
 
-#### [And](./#and-condition) (Condition)
+#### [And](./#and-condition) (Koşul)
 
-* **Definition**: The "And" component introduces the _Condition_ that must be met for the action to proceed. Conditions serve as filters or criteria that refine the trigger, ensuring that the workflow is executed only under certain circumstances.
-* **Example**: "...and the customer is from the 'Enterprise' segment..."
+* **Tanım**: "And" bileşeni, eylemin devam edebilmesi için karşılanması gereken _Koşulu_ tanıtır. Koşullar, tetikleyiciyi inceltip iş akışının yalnızca belirli durumlarda yürütülmesini sağlayan filtreler veya ölçütler olarak işlev görür.
+* **Örnek**: "...ve müşteri 'Enterprise' segmentindeyse..."
 
-#### [Then](./#then-action) (Action)
+#### [Then](./#then-action) (Eylem)
 
-* **Definition**: Finally, the "Then" part specifies the _Action_ to be taken once the trigger occurs and the condition is satisfied. Actions are the tasks or operations executed by the workflow, such as sending an email, updating a database, or creating a task in a project management tool.
-* **Example**: "...then assign the lead to the enterprise sales team and send a welcome email."
+* **Tanım**: Son olarak, "Then" kısmı, tetikleyici gerçekleştiğinde ve koşul karşılandığında gerçekleştirilecek _Eylemi_ belirtir. Eylemler; bir e-posta göndermek, bir veritabanını güncellemek veya bir proje yönetimi aracında görev oluşturmak gibi iş akışı tarafından yürütülen görevler veya işlemlerdir.
+* **Örnek**: "...sonra adayı kurumsal satış ekibine ata ve bir karşılama e-postası gönder."
 
-### Combining Components for Powerful Automations
+### Güçlü Otomasyonlar için Bileşenleri Birleştirme
 
-By assembling these three components—Trigger, Condition, and Action—the DocBits Workflow Engine allows users to create highly customized and efficient workflows. This modular approach not only simplifies the process of setting up automations but also offers the flexibility to create complex workflows capable of handling a wide range of tasks and processes.
+DocBits Workflow Engine, bu üç bileşeni (Tetikleyici, Koşul ve Eylem) bir araya getirerek kullanıcıların son derece özelleştirilmiş ve verimli iş akışları oluşturmasını sağlar. Bu modüler yaklaşım, yalnızca otomasyonları kurma sürecini basitleştirmekle kalmaz, aynı zamanda çok çeşitli görevleri ve süreçleri işleyebilen karmaşık iş akışları oluşturma esnekliği de sunar.
 
-### Conclusion
+### Sonuç
 
-The DocBits Workflow Engine's "Easy When-And-Then" rule exemplifies the engine's commitment to providing a user-friendly platform for automating processes. This straightforward rule, by breaking down automation into the essential elements of Trigger, Condition, and Action, makes it easier for users to conceptualize, create, and manage workflows. Whether you are new to workflow automation or an experienced professional, the DocBits Workflow Engine offers an efficient and accessible tool to enhance productivity and streamline operations.
+DocBits Workflow Engine'in "Easy When-And-Then" kuralı, motorun süreç otomasyonu için kullanıcı dostu bir platform sunma kararlılığını örnekler. Bu basit kural, otomasyonu Tetikleyici, Koşul ve Eylem temel öğelerine ayırarak kullanıcıların iş akışlarını kavramsallaştırmasını, oluşturmasını ve yönetmesini kolaylaştırır. İster iş akışı otomasyonunda yeni olun ister deneyimli bir profesyonel, DocBits Workflow Engine verimliliği artırmak ve operasyonları kolaylaştırmak için verimli ve erişilebilir bir araç sunar.

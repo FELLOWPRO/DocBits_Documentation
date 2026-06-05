@@ -4,363 +4,363 @@ hidden: true
 
 # Workflow Card Release & Version History
 
-## Version Control Principles
+## Sürüm Kontrolü İlkeleri
 
 <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 13.41.53.png" alt=""><figcaption>Workflow Version Control System</figcaption></figure>
 
-### Version 8.5.2024 - Core Versioning Features
+### Version 8.5.2024 - Temel Sürümleme Özellikleri
 
-The DocBits Workflow Engine implements robust version control for all workflow cards:
+DocBits Workflow Engine, tüm workflow kartları için sağlam bir sürüm kontrolü uygular:
 
-1. **Version Control**: Each card can have multiple versions, each representing a different set of conditions or actions. This allows you to experiment with or tweak the rules without affecting the currently active workflow.
-2. **Seamless Upgrades**: When you need to update a rule or condition due to changes in your document processing requirements, you can create a new version of the card. This approach ensures that any modifications are deliberate and tested before they replace the current version. It minimizes errors and potential disruptions in your document processing.
-3. **Maintaining Consistency**: Keeping the original card version unchanged until you decide to upgrade ensures that ongoing processes are not affected. You can run tests and validations on the new version without impacting live data or workflows.
-4. **Flexibility and Testing**: Multiple versions enable testing different scenarios in a controlled environment. You can see the effects of new rules or changes on your document processing workflow without making permanent changes. Once you are satisfied with the results, you can then choose to apply the new version.
+1. **Sürüm Kontrolü**: Her kartın birden fazla sürümü olabilir; her biri farklı bir koşul veya eylem kümesini temsil eder. Bu, şu anda etkin olan iş akışını etkilemeden kuralları denemenize veya ince ayar yapmanıza olanak tanır.
+2. **Sorunsuz Yükseltmeler**: Belge işleme gereksinimlerinizdeki değişiklikler nedeniyle bir kuralı veya koşulu güncellemeniz gerektiğinde, kartın yeni bir sürümünü oluşturabilirsiniz. Bu yaklaşım, herhangi bir değişikliğin mevcut sürümün yerini almadan önce kasıtlı ve test edilmiş olmasını sağlar. Belge işlemenizdeki hataları ve olası aksaklıkları en aza indirir.
+3. **Tutarlılığı Koruma**: Yükseltmeye karar verene kadar orijinal kart sürümünü değiştirmeden tutmak, devam eden süreçlerin etkilenmemesini sağlar. Canlı verileri veya iş akışlarını etkilemeden yeni sürümde testler ve doğrulamalar çalıştırabilirsiniz.
+4. **Esneklik ve Test**: Birden fazla sürüm, kontrollü bir ortamda farklı senaryoları test etmeye olanak tanır. Kalıcı değişiklikler yapmadan yeni kuralların veya değişikliklerin belge işleme iş akışınız üzerindeki etkilerini görebilirsiniz. Sonuçlardan memnun kaldığınızda yeni sürümü uygulamayı seçebilirsiniz.
 
 ---
 
-## Card Versioning Overview
+## Card Versioning Genel Bakış
 
-### Statistics
+### İstatistikler
 
-| Metric | Value |
+| Metrik | Değer |
 |--------|-------|
-| **Cards with Multiple Versions** | 30+ |
-| **Total Version Records** | 90+ |
-| **Current Active Versions** | 81+ |
-| **Deprecated Versions** | 9 |
-| **Fully Disabled Cards** | 2 |
-| **Latest Version (Max)** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
+| **Birden Fazla Sürümü Olan Kartlar** | 30+ |
+| **Toplam Sürüm Kaydı** | 90+ |
+| **Mevcut Etkin Sürümler** | 81+ |
+| **Kullanımdan Kaldırılan Sürümler** | 9 |
+| **Tamamen Devre Dışı Bırakılan Kartlar** | 2 |
+| **En Son Sürüm (Maks.)** | 5 (CONDITION_DOC_TO_PO_UNIT_PRICE) |
 
-### Version Range
+### Sürüm Aralığı
 - **Minimum:** v1
-- **Maximum:** v5
-- **Average Versions per Card:** 3
+- **Maksimum:** v5
+- **Kart Başına Ortalama Sürüm:** 3
 
 ---
 
-## Detailed Card Version Changes
+## Ayrıntılı Kart Sürümü Değişiklikleri
 
-### 🔧 ACTION CARDS - External Integration & Execution
+### 🔧 ACTION CARDS - Harici Entegrasyon ve Yürütme
 
 #### 1. CALL_API
-**Versions:** v1, v2 (Current: v2)
+**Sürümler:** v1, v2 (Mevcut: v2)
 
-📖 **Guide:** [Call External API Guide](../then/action/call-api-guide.md)
+📖 **Kılavuz:** [Call External API Guide](../then/action/call-api-guide.md)
 
-| Version | Translation | Status | Key Changes |
+| Sürüm | Çeviri | Durum | Önemli Değişiklikler |
 |---------|-------------|--------|-------------|
-| v1 | No | Active | Basic API call without translation keys |
-| v2 | Yes | ✅ Current | Added `trnsl_%call_api` for multi-language support |
+| v1 | Hayır | Etkin | Çeviri anahtarları olmadan temel API çağrısı |
+| v2 | Evet | ✅ Mevcut | Çok dilli destek için `trnsl_%call_api` eklendi |
 
-**What Changed:** Added internationalization (i18n) support with translation keys. Functionality remains identical.
+**Ne Değişti:** Çeviri anahtarlarıyla uluslararasılaştırma (i18n) desteği eklendi. İşlevsellik aynı kalır.
 
-**Before (v1):**
+**Önce (v1):**
 ```
 Call Api: [endpoint] with method: [method], params: [params], data: [data]
 ```
 
-**After (v2):**
+**Sonra (v2):**
 ```
 trnsl_%call_api trnsl_be_% Call Api: [endpoint] with method: [method], params: [params], data: [data]
 ```
 
-**Recommendation:** Use v2 for all new workflows (includes language support)
-**Backward Compatibility:** ✅ v1 still works
+**Öneri:** Tüm yeni iş akışları için v2 kullanın (dil desteği içerir)
+**Geriye Dönük Uyumluluk:** ✅ v1 hâlâ çalışır
 
 ---
 
 #### 2. HTTPS Request (HTTPS_REQUEST)
-**Versions:** v1, v2 (Current: v2)
+**Sürümler:** v1, v2 (Mevcut: v2)
 
-| Version | Translation | Status | Key Changes |
+| Sürüm | Çeviri | Durum | Önemli Değişiklikler |
 |---------|-------------|--------|-------------|
-| v1 | No | Active | Simple HTTP request |
-| v2 | Yes | ✅ Current | Added `trnsl_%send_https_request` translation keys |
+| v1 | Hayır | Etkin | Basit HTTP isteği |
+| v2 | Evet | ✅ Mevcut | `trnsl_%send_https_request` çeviri anahtarları eklendi |
 
-**What Changed:** Added translation support. Core webhook/request functionality unchanged.
-**Recommendation:** Use v2 (multi-language support)
+**Ne Değişti:** Çeviri desteği eklendi. Temel webhook/istek işlevselliği değişmedi.
+**Öneri:** v2 kullanın (çok dilli destek)
 
 ---
 
 #### 3. ACTION_RUN_DOCOPERATOR_SCRIPT ⚠️
-**Versions:** v2 (Current), v3, v4 (Deprecated & Disabled)
+**Sürümler:** v2 (Mevcut), v3, v4 (Kullanımdan Kaldırıldı ve Devre Dışı)
 
-| Version | Translation | Status | Key Changes |
+| Sürüm | Çeviri | Durum | Önemli Değişiklikler |
 |---------|-------------|--------|-------------|
-| v2 | Yes | Active | Original DocOperator implementation |
-| v3 | Yes | Active | Added "Execute the prompt" parameter for additional control |
-| v4 | Yes | ❌ DEPRECATED & DISABLED | Removed "Execute" parameter (reverted) |
+| v2 | Evet | Etkin | Orijinal DocOperator uygulaması |
+| v3 | Evet | Etkin | Ek kontrol için "Execute the prompt" parametresi eklendi |
+| v4 | Evet | ❌ KULLANIMDAN KALDIRILDI VE DEVRE DIŞI | "Execute" parametresi kaldırıldı (geri alındı) |
 
-**Evolution Path:** v2 → v3 (added parameter) → v4 (reverted - not recommended)
+**Evrim Yolu:** v2 → v3 (parametre eklendi) → v4 (geri alındı - önerilmez)
 
-**What Changed:**
-- v2 → v3: Added optional execution control parameter for more flexibility
-- v3 → v4: Removed the parameter after further analysis (deprecated)
+**Ne Değişti:**
+- v2 → v3: Daha fazla esneklik için isteğe bağlı yürütme kontrolü parametresi eklendi
+- v3 → v4: Daha fazla analiz sonrası parametre kaldırıldı (kullanımdan kaldırıldı)
 
-**Recommendation:** Use v3 for new workflows (latest active version with all features)
-**Migration:** If using v4, switch to v3 ⚠️
+**Öneri:** Yeni iş akışları için v3 kullanın (tüm özellikleri içeren en son etkin sürüm)
+**Geçiş:** v4 kullanıyorsanız v3'e geçin ⚠️
 
 ---
 
 #### 4. ACTION_TASK_FOR_GROUP
-**Versions:** v2, v3 (Deprecated), v4 (Current)
+**Sürümler:** v2, v3 (Kullanımdan Kaldırıldı), v4 (Mevcut)
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
+📖 **Kılavuz:** [Task Assignment Guide](../then/task/task-assignment-guide.md)
 
-| Version | Changes | Status | Type Parameter |
+| Sürüm | Değişiklikler | Durum | Tür Parametresi |
 |---------|---------|--------|-----------------|
-| v2 | Original implementation | Active | "Task" (fixed) |
-| v3 | + Decision tree support | ❌ DEPRECATED | "Task" (fixed) |
-| v4 | - Decision tree, + Generic type | ✅ Current | Generic type (flexible) |
+| v2 | Orijinal uygulama | Etkin | "Task" (sabit) |
+| v3 | + Karar ağacı desteği | ❌ KULLANIMDAN KALDIRILDI | "Task" (sabit) |
+| v4 | - Karar ağacı, + Generic tür | ✅ Mevcut | Generic tür (esnek) |
 
-**Evolution:** v2 → v3 (decision tree experiment) → v4 (generic types, decision tree removed)
+**Evrim:** v2 → v3 (karar ağacı denemesi) → v4 (generic türler, karar ağacı kaldırıldı)
 
-**v2 → v3 Change (Decision Tree Experiment):**
+**v2 → v3 Değişikliği (Karar Ağacı Denemesi):**
 ```
 Before: "Create a new Task with the title: [param] ... and assign to group [param]"
 After:  "Create a new Task with the title: [param] ... and assign to group [param].
          Use decision tree, if available: [param]"
 ```
 
-**v3 → v4 Change (Generic Types + Decision Tree Removal):**
+**v3 → v4 Değişikliği (Generic Türler + Karar Ağacının Kaldırılması):**
 ```
 Before (v3): "Create a new Task with the title: [param] ... "
 After (v4):  "Create a new [param] with the title: [param] ... "
 ```
 
-**What Changed:**
-- v2 → v3: Added `decision tree, if available: [param]` parameter
+**Ne Değişti:**
+- v2 → v3: `decision tree, if available: [param]` parametresi eklendi
 - v3 → v4:
-  - ❌ Removed decision tree parameter
-  - ✅ Changed "Task" → generic `[param]` (supports Task, Ticket, Issue, etc.)
-  - Added translation key `trnsl_%task_for_group_v4`
+  - ❌ Karar ağacı parametresi kaldırıldı
+  - ✅ "Task" → generic `[param]` olarak değiştirildi (Task, Ticket, Issue vb. destekler)
+  - `trnsl_%task_for_group_v4` çeviri anahtarı eklendi
 
-**Why:** v3 decision tree approach was experimental. v4 provides better flexibility with generic work item types.
-**Recommendation:** Use v4 (current, most flexible)
+**Neden:** v3 karar ağacı yaklaşımı deneyseldi. v4, generic iş öğesi türleriyle daha iyi esneklik sağlar.
+**Öneri:** v4 kullanın (mevcut, en esnek)
 
 ---
 
 #### 5. ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
-**Versions:** v2, v3 (Current)
+**Sürümler:** v2, v3 (Mevcut)
 
-| Version | Task Type | Status | Key Difference |
+| Sürüm | Görev Türü | Durum | Önemli Fark |
 |---------|-----------|--------|-----------------|
-| v2 | "task" (fixed) | Active | Original version |
-| v3 | Generic type | ✅ Current | Changed to flexible `[param]` |
+| v2 | "task" (sabit) | Etkin | Orijinal sürüm |
+| v3 | Generic tür | ✅ Mevcut | Esnek `[param]` olarak değiştirildi |
 
-**What Changed:** v2 → v3: "Create a new task" → "Create a new [param]" (supports any work item type)
-**Recommendation:** Use v3
+**Ne Değişti:** v2 → v3: "Create a new task" → "Create a new [param]" (herhangi bir iş öğesi türünü destekler)
+**Öneri:** v3 kullanın
 
 ---
 
 #### 6. RUN_WORKFLOW
-**Versions:** v1, v2 (Current)
+**Sürümler:** v1, v2 (Mevcut)
 
-**What Changed:** v1 → v2: Added `trnsl_%run_workflow` translation keys
-**Recommendation:** Use v2
+**Ne Değişti:** v1 → v2: `trnsl_%run_workflow` çeviri anahtarları eklendi
+**Öneri:** v2 kullanın
 
 ---
 
-### 📊 PO COMPARISON & VALIDATION CARDS
+### 📊 PO KARŞILAŞTIRMA VE DOĞRULAMA KARTLARI
 
-#### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (Most Evolved - 5 Versions)
-**Versions:** v2, v3, v4, v5 (Current)
+#### 1. CONDITION_DOC_TO_PO_UNIT_PRICE ⭐ (En Çok Gelişen - 5 Sürüm)
+**Sürümler:** v2, v3, v4, v5 (Mevcut)
 
-📖 **Guide:** [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
+📖 **Kılavuz:** [PO Matching Complete Guide](../and/compare-with-purchase-order/po-matching-complete-guide.md#2-unit-price-comparison-document-vs-po)
 
-| Version | Changes | Status | Tolerance | Comparison |
+| Sürüm | Değişiklikler | Durum | Tolerans | Karşılaştırma |
 |---------|---------|--------|-----------|------------|
-| v2 | Basic price comparison | Active | ❌ No | Basic |
-| v3 | Same as v2 | Active | ❌ No | Basic |
-| v4 | + Compare mode parameter | Active | ❌ No | ✅ Yes |
-| v5 | + Tolerance parameters | ✅ Current | ✅ Yes (amount + unit) | ✅ Yes |
+| v2 | Temel fiyat karşılaştırması | Etkin | ❌ Hayır | Temel |
+| v3 | v2 ile aynı | Etkin | ❌ Hayır | Temel |
+| v4 | + Karşılaştırma modu parametresi | Etkin | ❌ Hayır | ✅ Evet |
+| v5 | + Tolerans parametreleri | ✅ Mevcut | ✅ Evet (tutar + birim) | ✅ Evet |
 
-**Evolution Path:** v2 → v3 (no change) → v4 (comparison modes) → v5 (tolerance thresholds)
+**Evrim Yolu:** v2 → v3 (değişiklik yok) → v4 (karşılaştırma modları) → v5 (tolerans eşikleri)
 
-**v2 → v3:** No functional change (same translation key)
+**v2 → v3:** İşlevsel değişiklik yok (aynı çeviri anahtarı)
 
-**v3 → v4 Change (Comparison Mode Added):**
+**v3 → v4 Değişikliği (Karşılaştırma Modu Eklendi):**
 ```
 Before: "[document] unit price is [operator] to purchase order"
 After:  "[document] unit price is [operator] to purchase order. Compare as [mode]"
 ```
 
-**v4 → v5 Change (Tolerance Parameters Added):**
+**v4 → v5 Değişikliği (Tolerans Parametreleri Eklendi):**
 ```
 Before: "[document] unit price is [operator] to purchase order. Compare as [mode]"
 After:  "[document] unit price is [operator] to purchase order, with tolerance of [amount] [unit].
          Compare as [mode]"
 ```
 
-**What Changed:**
-- **v2 → v3:** No functional change
-- **v3 → v4:** Added `Compare as [param]` - Support different comparison operators
-- **v4 → v5:** Added tolerance parameters:
+**Ne Değişti:**
+- **v2 → v3:** İşlevsel değişiklik yok
+- **v3 → v4:** `Compare as [param]` eklendi - Farklı karşılaştırma operatörlerini destekler
+- **v4 → v5:** Tolerans parametreleri eklendi:
   - `with tolerance of [amount] [unit]`
-  - Example: "with tolerance of 2 %" or "with tolerance of 100 EUR"
-  - Supports: %, EUR, $, and other currencies
+  - Örnek: "with tolerance of 2 %" veya "with tolerance of 100 EUR"
+  - Destekler: %, EUR, $ ve diğer para birimleri
 
-**Use Cases:**
-- v2/v3: Strict matching (exact prices only)
-- v4: Different comparison methods
-- v5: Flexible variance acceptance (e.g., accept 2% price differences) ✅ RECOMMENDED
+**Kullanım Senaryoları:**
+- v2/v3: Katı eşleştirme (yalnızca tam fiyatlar)
+- v4: Farklı karşılaştırma yöntemleri
+- v5: Esnek sapma kabulü (örn. %2 fiyat farklarını kabul et) ✅ ÖNERİLEN
 
-**Recommendation:** Use v5 for modern PO matching workflows
+**Öneri:** Modern PO eşleştirme iş akışları için v5 kullanın
 
 ---
 
 #### 2. CONDITION_OC_TO_PO_ITEMS
-**Versions:** v1 (Deprecated), v2, v3, v4 (Current)
+**Sürümler:** v1 (Kullanımdan Kaldırıldı), v2, v3, v4 (Mevcut)
 
-| Version | Changes | Status | Compare Feature |
+| Sürüm | Değişiklikler | Durum | Karşılaştırma Özelliği |
 |---------|---------|--------|-----------------|
-| v1 | No translation, no method | ❌ DEPRECATED | Basic |
-| v2 | + Translation keys, + method | Active | Basic method |
-| v3 | Same as v2 | Active | Basic method |
-| v4 | + Compare mode parameters | ✅ Current | ✅ Flexible |
+| v1 | Çeviri yok, yöntem yok | ❌ KULLANIMDAN KALDIRILDI | Temel |
+| v2 | + Çeviri anahtarları, + yöntem | Etkin | Temel yöntem |
+| v3 | v2 ile aynı | Etkin | Temel yöntem |
+| v4 | + Karşılaştırma modu parametreleri | ✅ Mevcut | ✅ Esnek |
 
-**What Changed:**
-- **v1 → v2:** Added `trnsl_%in_order_confirmations_matches_purchase_order` + comparison method parameter
-- **v2 → v3:** No change
-- **v3 → v4:** Added `Compare as [param1] [param2]` for flexible comparison modes
+**Ne Değişti:**
+- **v1 → v2:** `trnsl_%in_order_confirmations_matches_purchase_order` + karşılaştırma yöntemi parametresi eklendi
+- **v2 → v3:** Değişiklik yok
+- **v3 → v4:** Esnek karşılaştırma modları için `Compare as [param1] [param2]` eklendi
 
-**Recommendation:** Use v4 (avoid v1 which is deprecated)
+**Öneri:** v4 kullanın (kullanımdan kaldırılan v1'den kaçının)
 
 ---
 
 #### 3. CONDITION_DATES_OPERATOR_OC_LINE_ITEMS
-**Versions:** v2, v3 (Current)
+**Sürümler:** v2, v3 (Mevcut)
 
-| Version | Tolerance Days | Accepted Tolerance Days | Status |
+| Sürüm | Tolerans Günleri | Kabul Edilen Tolerans Günleri | Durum |
 |---------|-----------------|------------------------|--------|
-| v2 | ❌ No | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Yes | ✅ Current |
+| v2 | ❌ Hayır | ❌ Hayır | Etkin |
+| v3 | ✅ Evet | ✅ Evet | ✅ Mevcut |
 
-**What Changed:** v2 → v3: Added tolerance parameters:
+**Ne Değişti:** v2 → v3: Tolerans parametreleri eklendi:
 - `with [param] days as tolerance`
 - `and [param] as accepted tolerance days`
 
-**Example:** Accept delivery dates within 5 days of promised date
-**Recommendation:** Use v3
+**Örnek:** Vaat edilen tarihten itibaren 5 gün içindeki teslimat tarihlerini kabul et
+**Öneri:** v3 kullanın
 
 ---
 
 #### 4. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
-**Versions:** v2, v3, v4 (Current)
+**Sürümler:** v2, v3, v4 (Mevcut)
 
-| Version | Comparison Mode | Status |
+| Sürüm | Karşılaştırma Modu | Durum |
 |---------|-----------------|--------|
-| v2 | Basic | Active |
-| v3 | Basic (no change) | Active |
-| v4 | ✅ Flexible mode selection | ✅ Current |
+| v2 | Temel | Etkin |
+| v3 | Temel (değişiklik yok) | Etkin |
+| v4 | ✅ Esnek mod seçimi | ✅ Mevcut |
 
-**What Changed:** v3 → v4: Added `compare [param]` for different comparison approaches
-**Recommendation:** Use v4
+**Ne Değişti:** v3 → v4: Farklı karşılaştırma yaklaşımları için `compare [param]` eklendi
+**Öneri:** v4 kullanın
 
 ---
 
 #### 5. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE
-**Versions:** v2, v3, v4 (Current)
+**Sürümler:** v2, v3, v4 (Mevcut)
 
-| Version | Comparison Mode | Status |
+| Sürüm | Karşılaştırma Modu | Durum |
 |---------|-----------------|--------|
-| v2 | Standard | Active |
-| v3 | Standard (no change) | Active |
-| v4 | ✅ Flexible | ✅ Current |
+| v2 | Standart | Etkin |
+| v3 | Standart (değişiklik yok) | Etkin |
+| v4 | ✅ Esnek | ✅ Mevcut |
 
-**What Changed:** v3 → v4: Added `compare [param]` parameter
-**Recommendation:** Use v4
+**Ne Değişti:** v3 → v4: `compare [param]` parametresi eklendi
+**Öneri:** v4 kullanın
 
 ---
 
 #### 6. CONDITION_CONFIRMED_DELIVERY_ACCEPTED_DATE_IN_CALENDAR_MASTER_DATA
-**Versions:** v2, v3 (Current)
+**Sürümler:** v2, v3 (Mevcut)
 
-| Version | Delivery Type | Master Data Table | Status |
+| Sürüm | Teslimat Türü | Ana Veri Tablosu | Durum |
 |---------|---------------|-------------------|--------|
-| v2 | "Confirmed" (fixed) | Fixed reference | Active |
-| v3 | [Configurable param] | Dynamic [param] | ✅ Current |
+| v2 | "Confirmed" (sabit) | Sabit referans | Etkin |
+| v3 | [Yapılandırılabilir param] | Dinamik [param] | ✅ Mevcut |
 
-**What Changed:** v2 → v3:
-- Changed "Confirmed delivery" → `[param] delivery` (flexible delivery type)
-- Changed fixed table reference → `stored in [param]` (dynamic table selection)
+**Ne Değişti:** v2 → v3:
+- "Confirmed delivery" → `[param] delivery` olarak değiştirildi (esnek teslimat türü)
+- Sabit tablo referansı → `stored in [param]` olarak değiştirildi (dinamik tablo seçimi)
 
-**Flexibility:** v3 allows different delivery date types and supplier tables
-**Recommendation:** Use v3
+**Esneklik:** v3, farklı teslimat tarihi türlerine ve tedarikçi tablolarına olanak tanır
+**Öneri:** v3 kullanın
 
 ---
 
 #### 7. CONDIITON_UNIT_OF_MEASURE_EQUAL
-**Versions:** v2, v3 (Current)
+**Sürümler:** v2, v3 (Mevcut)
 
-| Version | Supplier Table Reference | Status |
+| Sürüm | Tedarikçi Tablosu Referansı | Durum |
 |---------|--------------------------|--------|
-| v2 | "supplier item price table" (fixed) | Active |
-| v3 | [Dynamic param] | ✅ Current |
+| v2 | "supplier item price table" (sabit) | Etkin |
+| v3 | [Dinamik param] | ✅ Mevcut |
 
-**What Changed:** v2 → v3: Fixed table reference → `stored in [param]` (allows dynamic table selection)
-**Recommendation:** Use v3
+**Ne Değişti:** v2 → v3: Sabit tablo referansı → `stored in [param]` (dinamik tablo seçimine olanak tanır)
+**Öneri:** v3 kullanın
 
 ---
 
-### 👥 ASSIGNMENT & ROUTING CARDS
+### 👥 ATAMA VE YÖNLENDİRME KARTLARI
 
 #### 1. DOC_USER_ASSIGN
-**Versions:** v1, v2, v3 (Deprecated)
+**Sürümler:** v1, v2, v3 (Kullanımdan Kaldırıldı)
 
-| Version | Translation | Decision Tree | Status |
+| Sürüm | Çeviri | Karar Ağacı | Durum |
 |---------|-------------|---------------|--------|
-| v1 | No | ❌ No | Active |
-| v2 | Yes | ❌ No | ✅ Current |
-| v3 | Yes | ✅ Yes | ❌ DEPRECATED |
+| v1 | Hayır | ❌ Hayır | Etkin |
+| v2 | Evet | ❌ Hayır | ✅ Mevcut |
+| v3 | Evet | ✅ Evet | ❌ KULLANIMDAN KALDIRILDI |
 
-**Evolution:** v1 (no i18n) → v2 (with i18n) → v3 (+ decision tree experiment, now deprecated)
+**Evrim:** v1 (i18n yok) → v2 (i18n ile) → v3 (+ karar ağacı denemesi, artık kullanımdan kaldırıldı)
 
-**What Changed:**
-- v1 → v2: Added translation keys
-- v2 → v3: Added decision tree support (experimental, deprecated)
+**Ne Değişti:**
+- v1 → v2: Çeviri anahtarları eklendi
+- v2 → v3: Karar ağacı desteği eklendi (deneysel, kullanımdan kaldırıldı)
 
-**Recommendation:** Use v2 (stable with i18n support)
+**Öneri:** v2 kullanın (i18n destekli kararlı sürüm)
 
 ---
 
 #### 2. DOC_GROUP_ASSIGN
-**Versions:** v2, v3 (Deprecated)
+**Sürümler:** v2, v3 (Kullanımdan Kaldırıldı)
 
-| Version | Decision Tree | Status |
+| Sürüm | Karar Ağacı | Durum |
 |---------|---------------|--------|
-| v2 | ❌ No | ✅ Current |
-| v3 | ✅ Yes | ❌ DEPRECATED |
+| v2 | ❌ Hayır | ✅ Mevcut |
+| v3 | ✅ Evet | ❌ KULLANIMDAN KALDIRILDI |
 
-**What Changed:** v2 → v3: Added `Use decision tree, if available [param]` (later deprecated)
-**Recommendation:** Use v2
+**Ne Değişti:** v2 → v3: `Use decision tree, if available [param]` eklendi (daha sonra kullanımdan kaldırıldı)
+**Öneri:** v2 kullanın
 
 ---
 
 #### 3. OC_ASSIGN_DOC
-**Versions:** v1, v2 (Current)
+**Sürümler:** v1, v2 (Mevcut)
 
-**What Changed:** v1 → v2: Added `trnsl_%oc_assign_doc` translation keys
-**Recommendation:** Use v2
+**Ne Değişti:** v1 → v2: `trnsl_%oc_assign_doc` çeviri anahtarları eklendi
+**Öneri:** v2 kullanın
 
 ---
 
-### 📋 TASK MANAGEMENT CARDS
+### 📋 GÖREV YÖNETİMİ KARTLARI
 
-#### 1. tasks_create ⭐ (Most Evolved Task Card - 4 Versions)
-**Versions:** v1 (Deprecated), v2 (Deprecated), v3 (Deprecated), v4 (Current)
+#### 1. tasks_create ⭐ (En Çok Gelişen Görev Kartı - 4 Sürüm)
+**Sürümler:** v1 (Kullanımdan Kaldırıldı), v2 (Kullanımdan Kaldırıldı), v3 (Kullanımdan Kaldırıldı), v4 (Mevcut)
 
-📖 **Guide:** [Task Assignment Guide](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
+📖 **Kılavuz:** [Task Assignment Guide](../then/task/task-assignment-guide.md#card-tasks_create--create-task-and-assign-to-user)
 
-| Version | Translation | Decision Tree | Work Item Type | Status |
+| Sürüm | Çeviri | Karar Ağacı | İş Öğesi Türü | Durum |
 |---------|-------------|---------------|-----------------|--------|
-| v1 | No | No | "Task" (fixed) | ❌ DEPRECATED |
-| v2 | Yes | No | "Task" (fixed) | ❌ DEPRECATED |
-| v3 | Yes | Yes | "Task" (fixed) | ❌ DEPRECATED |
-| v4 | Yes | No | [Generic param] | ✅ Current |
+| v1 | Hayır | Hayır | "Task" (sabit) | ❌ KULLANIMDAN KALDIRILDI |
+| v2 | Evet | Hayır | "Task" (sabit) | ❌ KULLANIMDAN KALDIRILDI |
+| v3 | Evet | Evet | "Task" (sabit) | ❌ KULLANIMDAN KALDIRILDI |
+| v4 | Evet | Hayır | [Generic param] | ✅ Mevcut |
 
-**Evolution Timeline:**
+**Evrim Zaman Çizelgesi:**
 ```
 v1 (original)
   ↓ (add translation)
@@ -371,292 +371,292 @@ v3 (+ decision tree, BUT deprecated after this)
 v4 (CURRENT - flexible work items)
 ```
 
-**v1 → v2 Change (Translation Keys Added):**
+**v1 → v2 Değişikliği (Çeviri Anahtarları Eklendi):**
 ```
 Before: "Create a new Task with the title: [param] ... and assign to user [param]"
 After:  "trnsl_%tasks_create trnsl_be_% Create a new Task with the title: [param] ... and assign to user [param]"
 ```
 
-**v2 → v3 Change (Decision Tree Experiment):**
+**v2 → v3 Değişikliği (Karar Ağacı Denemesi):**
 ```
 Before: "Create a new Task with the title: [param] ... and assign to user [param]"
 After:  "Create a new Task with the title: [param] ... and assign it to the user [param].
          Use decision tree, if available: [param]"
 ```
 
-**v3 → v4 Change (Generic Types + Decision Tree Removal):**
+**v3 → v4 Değişikliği (Generic Türler + Karar Ağacının Kaldırılması):**
 ```
 Before: "Create a new Task with the title: [param] ... "
 After:  "Create a new [param] with the title: [param] ... "
 ```
 
-**What Changed:**
-- **v1 → v2:** Added `trnsl_%tasks_create` translation keys
+**Ne Değişti:**
+- **v1 → v2:** `trnsl_%tasks_create` çeviri anahtarları eklendi
 - **v2 → v3:**
-  - Added decision tree support: `Use decision tree, if available: [param]`
-  - Changed "assign to user" → "assign it to the user"
+  - Karar ağacı desteği eklendi: `Use decision tree, if available: [param]`
+  - "assign to user" → "assign it to the user" olarak değiştirildi
 - **v3 → v4:**
-  - ❌ Removed decision tree parameter
-  - ✅ Changed "Task" → generic `[param]` (supports Task, Ticket, Issue, etc.)
-  - Updated translation key to `trnsl_%tasks_create_v4`
+  - ❌ Karar ağacı parametresi kaldırıldı
+  - ✅ "Task" → generic `[param]` olarak değiştirildi (Task, Ticket, Issue vb. destekler)
+  - Çeviri anahtarı `trnsl_%tasks_create_v4` olarak güncellendi
 
-**Decision Tree Note:** v3 used decision trees to dynamically assign tasks. This approach was experimental and deprecated in v4 in favor of direct parameter-based work item type selection.
+**Karar Ağacı Notu:** v3, görevleri dinamik olarak atamak için karar ağaçlarını kullandı. Bu yaklaşım deneyseldi ve doğrudan parametre tabanlı iş öğesi türü seçimi lehine v4'te kullanımdan kaldırıldı.
 
-**Recommendation:** Use v4 exclusively for new workflows
-**Migration:** If using v1, v2, or v3, upgrade to v4 ✅
+**Öneri:** Yeni iş akışları için yalnızca v4 kullanın
+**Geçiş:** v1, v2 veya v3 kullanıyorsanız v4'e yükseltin ✅
 
 ---
 
 #### 2. OC_TASK
-**Versions:** v1, v2 (Current)
+**Sürümler:** v1, v2 (Mevcut)
 
-**What Changed:** v1 → v2: Added `trnsl_%oc_task` translation keys
-**Recommendation:** Use v2
+**Ne Değişti:** v1 → v2: `trnsl_%oc_task` çeviri anahtarları eklendi
+**Öneri:** v2 kullanın
 
 ---
 
 #### 3. ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
-**Versions:** v1, v3 (Current - v2 Skipped)
+**Sürümler:** v1, v3 (Mevcut - v2 Atlandı)
 
-| Version | Work Item Type | Status |
+| Sürüm | İş Öğesi Türü | Durum |
 |---------|-----------------|--------|
-| v1 | "Task" (fixed) | Active |
-| v3 | [Generic param] | ✅ Current |
+| v1 | "Task" (sabit) | Etkin |
+| v3 | [Generic param] | ✅ Mevcut |
 
-**What Changed:** v1 → v3: Generic type evolution (v2 was skipped in production)
-**Recommendation:** Use v3
+**Ne Değişti:** v1 → v3: Generic tür evrimi (v2 üretimde atlandı)
+**Öneri:** v3 kullanın
 
 ---
 
 #### 4. ACTION_DECISION_TREE_CREATE_TASKS
-**Versions:** v2, v3 (Current)
+**Sürümler:** v2, v3 (Mevcut)
 
-| Version | Assignment Text | Status |
+| Sürüm | Atama Metni | Durum |
 |---------|-----------------|--------|
-| v2 | "Assign task with title" | Active |
-| v3 | "Assign [generic] with title" | ✅ Current |
+| v2 | "Assign task with title" | Etkin |
+| v3 | "Assign [generic] with title" | ✅ Mevcut |
 
-**What Changed:** v2 → v3:
-- Changed "Assign task" → "Assign [generic param]"
-- Changed "return of decision" → "return of decision table" (clearer terminology)
+**Ne Değişti:** v2 → v3:
+- "Assign task" → "Assign [generic param]" olarak değiştirildi
+- "return of decision" → "return of decision table" olarak değiştirildi (daha net terminoloji)
 
-**Recommendation:** Use v3
+**Öneri:** v3 kullanın
 
 ---
 
-### 🔄 DOCUMENT CONTROL CARDS
+### 🔄 BELGE KONTROL KARTLARI
 
 #### APPROVE
-**Versions:** v1, v2 (Current)
-**Change:** Added `trnsl_%approve_doc` translation keys
-**Recommendation:** Use v2
+**Sürümler:** v1, v2 (Mevcut)
+**Değişiklik:** `trnsl_%approve_doc` çeviri anahtarları eklendi
+**Öneri:** v2 kullanın
 
 ---
 
 #### REJECT
-**Versions:** v1, v2 (Current)
-**Change:** Added `trnsl_%reject_doc` translation keys
-**Recommendation:** Use v2
+**Sürümler:** v1, v2 (Mevcut)
+**Değişiklik:** `trnsl_%reject_doc` çeviri anahtarları eklendi
+**Öneri:** v2 kullanın
 
 ---
 
 #### STAUS_CHANGE (Status Change)
-**Versions:** v1, v2, v3 (Current)
+**Sürümler:** v1, v2, v3 (Mevcut)
 
-| Version | Workflow Trigger | Status |
+| Sürüm | İş Akışı Tetikleyici | Durum |
 |---------|-----------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Current |
+| v1 | ❌ Hayır | Etkin |
+| v2 | ❌ Hayır | Etkin |
+| v3 | ✅ Evet | ✅ Mevcut |
 
-**What Changed:** v2 → v3: Added `trigger Workflows [param]` - Auto-trigger workflows on status change
-**Recommendation:** Use v3
+**Ne Değişti:** v2 → v3: `trigger Workflows [param]` eklendi - Durum değişikliğinde iş akışlarını otomatik tetikler
+**Öneri:** v3 kullanın
 
 ---
 
 #### EXPORT
-**Versions:** v1, v2, v3 (Current)
+**Sürümler:** v1, v2, v3 (Mevcut)
 
-| Version | Validation | Status |
+| Sürüm | Doğrulama | Durum |
 |---------|------------|--------|
-| v1 | ❌ No | Active |
-| v2 | ❌ No | Active |
-| v3 | ✅ Yes | ✅ Current |
+| v1 | ❌ Hayır | Etkin |
+| v2 | ❌ Hayır | Etkin |
+| v3 | ✅ Evet | ✅ Mevcut |
 
-**What Changed:** v2 → v3: Added `Start Export with Validation: [param]`
-**Recommendation:** Use v3
+**Ne Değişti:** v2 → v3: `Start Export with Validation: [param]` eklendi
+**Öneri:** v3 kullanın
 
 ---
 
-### 🧮 DATA MANIPULATION CARDS
+### 🧮 VERİ DÜZENLEME KARTLARI
 
 #### CALC_COLUMNS, CALC_COLUMNS_REGEX, EDIT_COLUMN, AI_CALC_MTZ_ETZ
-**Pattern:** v1 → v2 (translation keys added)
-**Recommendation:** Use v2 for all
+**Desen:** v1 → v2 (çeviri anahtarları eklendi)
+**Öneri:** Hepsi için v2 kullanın
 
 ---
 
 #### CONDITION_DECISION_TREE_DATA
-**Versions:** v2, v3 (Current)
+**Sürümler:** v2, v3 (Mevcut)
 
-| Version | Data Usage | Status |
+| Sürüm | Veri Kullanımı | Durum |
 |---------|------------|--------|
-| v2 | "Use return data in later cards" | Active |
-| v3 | "[Explicit param] returned data for use in subsequent cards" | ✅ Current |
+| v2 | "Use return data in later cards" | Etkin |
+| v3 | "[Explicit param] returned data for use in subsequent cards" | ✅ Mevcut |
 
-**What Changed:** v2 → v3: More explicit control over decision tree data extraction
-**Recommendation:** Use v3
+**Ne Değişti:** v2 → v3: Karar ağacı veri çıkarma üzerinde daha açık kontrol
+**Öneri:** v3 kullanın
 
 ---
 
-### ❌ DISABLED CARDS (Do Not Use)
+### ❌ DEVRE DIŞI KARTLAR (Kullanmayın)
 
 #### DOC_SUBORG_CHANGE
-**Versions:** v1, v2 (both disabled)
-**Status:** No longer supported
-**Alternative:** Use document assignment features
+**Sürümler:** v1, v2 (her ikisi de devre dışı)
+**Durum:** Artık desteklenmiyor
+**Alternatif:** Belge atama özelliklerini kullanın
 
 ---
 
 #### RUN_SCRIPT
-**Versions:** v2, v3 (both disabled)
-**Status:** Replaced by ACTION_RUN_DOCOPERATOR_SCRIPT
-**Alternative:** Use ACTION_RUN_DOCOPERATOR_SCRIPT v3
+**Sürümler:** v2, v3 (her ikisi de devre dışı)
+**Durum:** ACTION_RUN_DOCOPERATOR_SCRIPT ile değiştirildi
+**Alternatif:** ACTION_RUN_DOCOPERATOR_SCRIPT v3 kullanın
 
 ---
 
-## 🎯 Common Version Patterns
+## 🎯 Yaygın Sürüm Desenleri
 
-### Pattern 1: Translation Key Adoption (v1 → v2)
-**Affected:** 15+ cards
+### Desen 1: Çeviri Anahtarı Benimseme (v1 → v2)
+**Etkilenen:** 15+ kart
 
-**Change:** Added `trnsl_%[card_name]` translation keys
+**Değişiklik:** `trnsl_%[card_name]` çeviri anahtarları eklendi
 ```
 v1: Plain text (no i18n)
 v2: trnsl_%[key] trnsl_be_% Plain text (with i18n)
 ```
 
-**Cards:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS, and more
-**Impact:** Enables multi-language support
+**Kartlar:** CALL_API, RUN_WORKFLOW, APPROVE, REJECT, CALC_COLUMNS ve daha fazlası
+**Etki:** Çok dilli desteği etkinleştirir
 
 ---
 
-### Pattern 2: Decision Tree Integration (v2 → v3) - DEPRECATED
-**Affected:** 5 cards (ACTION_TASK_FOR_GROUP, tasks_create, DOC_USER_ASSIGN, DOC_GROUP_ASSIGN, ACTION_DECISION_TREE_CREATE_TASKS)
+### Desen 2: Karar Ağacı Entegrasyonu (v2 → v3) - KULLANIMDAN KALDIRILDI
+**Etkilenen:** 5 kart (ACTION_TASK_FOR_GROUP, tasks_create, DOC_USER_ASSIGN, DOC_GROUP_ASSIGN, ACTION_DECISION_TREE_CREATE_TASKS)
 
-**Change:** Added optional decision tree parameter
+**Değişiklik:** İsteğe bağlı karar ağacı parametresi eklendi
 ```
 v2: Standard task/assignment logic
 v3: + "Use decision tree, if available: [param]"
 ```
 
-**Status:** ❌ Mostly deprecated (except ACTION_DECISION_TREE_CREATE_TASKS)
-**Reason:** Simpler direct-parameter approach preferred
+**Durum:** ❌ Çoğunlukla kullanımdan kaldırıldı (ACTION_DECISION_TREE_CREATE_TASKS hariç)
+**Neden:** Daha basit doğrudan parametre yaklaşımı tercih edildi
 
 ---
 
-### Pattern 3: Generic Type Evolution (v3 → v4)
-**Affected:** 4 cards (tasks_create, ACTION_TASK_FOR_GROUP, ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP, ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK)
+### Desen 3: Generic Tür Evrimi (v3 → v4)
+**Etkilenen:** 4 kart (tasks_create, ACTION_TASK_FOR_GROUP, ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP, ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK)
 
-**Change:** "Task" → generic type parameter
+**Değişiklik:** "Task" → generic tür parametresi
 ```
 v3: Create a new Task with title: [param]
 v4: Create a new [param] with title: [param]
 ```
 
-**Impact:** Supports Task, Ticket, Issue, and other work item types
-**Benefit:** Greater flexibility and reusability
+**Etki:** Task, Ticket, Issue ve diğer iş öğesi türlerini destekler
+**Fayda:** Daha fazla esneklik ve yeniden kullanılabilirlik
 
 ---
 
-### Pattern 4: Tolerance Parameters (PO Cards)
-**Affected:** 6 cards (CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DATES_OPERATOR_OC_LINE_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY, etc.)
+### Desen 4: Tolerans Parametreleri (PO Kartları)
+**Etkilenen:** 6 kart (CONDITION_DOC_TO_PO_UNIT_PRICE, CONDITION_DATES_OPERATOR_OC_LINE_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY vb.)
 
-**Change:** Added tolerance/variance support
+**Değişiklik:** Tolerans/sapma desteği eklendi
 ```
 v2: Value [operator] Reference Value
 v3+: Value [operator] Reference with tolerance [amount] [unit]
 ```
 
-**Examples:**
+**Örnekler:**
 - "with tolerance of 2 %"
 - "with tolerance of 100 EUR"
 - "with 5 days as tolerance"
 
-**Impact:** Realistic matching criteria (not all values need to match exactly)
+**Etki:** Gerçekçi eşleştirme ölçütleri (tüm değerlerin tam olarak eşleşmesi gerekmez)
 
 ---
 
-### Pattern 5: Comparison Mode Parameters
-**Affected:** 3 cards (COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE, CONDITION_OC_TO_PO_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY)
+### Desen 5: Karşılaştırma Modu Parametreleri
+**Etkilenen:** 3 kart (COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE, CONDITION_OC_TO_PO_ITEMS, CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY)
 
-**Change:** Added flexible comparison method selection
+**Değişiklik:** Esnek karşılaştırma yöntemi seçimi eklendi
 ```
 v3: Standard comparison
 v4: + "Compare as [param1] [param2]"
 ```
 
-**Impact:** Support different comparison algorithms
+**Etki:** Farklı karşılaştırma algoritmalarını destekler
 
 ---
 
-## ✅ Version Recommendations
+## ✅ Sürüm Önerileri
 
-### For New Workflows
-**Rule:** Always use the highest enabled version number
-- Provides latest features
-- Best support
-- Most tested
-- Recommended approach
+### Yeni İş Akışları İçin
+**Kural:** Her zaman en yüksek etkin sürüm numarasını kullanın
+- En son özellikleri sağlar
+- En iyi destek
+- En çok test edilmiş
+- Önerilen yaklaşım
 
-### For Existing Workflows
-**Safe Approach:**
-- Continue using current version if it works
-- Plan gradual migration to newer versions
-- Test upgrades in sandbox first
+### Mevcut İş Akışları İçin
+**Güvenli Yaklaşım:**
+- Çalışıyorsa mevcut sürümü kullanmaya devam edin
+- Daha yeni sürümlere kademeli geçişi planlayın
+- Yükseltmeleri önce sandbox'ta test edin
 
-### Migration Priority
+### Geçiş Önceliği
 
-| Priority | Cards | Action |
+| Öncelik | Kartlar | Eylem |
 |----------|-------|--------|
-| **High** | tasks_create v1/v2/v3, ACTION_TASK_FOR_GROUP v3, CONDITION_DOC_TO_PO_UNIT_PRICE v2/v3/v4 | Upgrade to current version |
-| **Medium** | Other v1/v2 translation upgrades, PO cards v2/v3 | Consider upgrading |
-| **Low** | Cards with no functional changes | Optional |
+| **Yüksek** | tasks_create v1/v2/v3, ACTION_TASK_FOR_GROUP v3, CONDITION_DOC_TO_PO_UNIT_PRICE v2/v3/v4 | Mevcut sürüme yükseltin |
+| **Orta** | Diğer v1/v2 çeviri yükseltmeleri, PO kartları v2/v3 | Yükseltmeyi düşünün |
+| **Düşük** | İşlevsel değişikliği olmayan kartlar | İsteğe bağlı |
 
 ---
 
-## ⚠️ Deprecated Versions - Do Not Use
+## ⚠️ Kullanımdan Kaldırılan Sürümler - Kullanmayın
 
-| Card | Version | Reason | Use Instead |
+| Kart | Sürüm | Neden | Bunun Yerine Kullanın |
 |------|---------|--------|-------------|
-| tasks_create | v1, v2, v3 | Very old, or decision tree deprecated | v4 |
-| ACTION_TASK_FOR_GROUP | v3 | Decision tree approach deprecated | v4 |
-| DOC_USER_ASSIGN | v3 | Decision tree approach deprecated | v2 |
-| DOC_GROUP_ASSIGN | v3 | Decision tree approach deprecated | v2 |
-| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Very old | v2 |
-| CONDITION_OC_TO_PO_ITEMS | v1 | Very old | v4 |
-| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Features reverted | v3 |
+| tasks_create | v1, v2, v3 | Çok eski veya karar ağacı kullanımdan kaldırıldı | v4 |
+| ACTION_TASK_FOR_GROUP | v3 | Karar ağacı yaklaşımı kullanımdan kaldırıldı | v4 |
+| DOC_USER_ASSIGN | v3 | Karar ağacı yaklaşımı kullanımdan kaldırıldı | v2 |
+| DOC_GROUP_ASSIGN | v3 | Karar ağacı yaklaşımı kullanımdan kaldırıldı | v2 |
+| CONDITION_DOC_TYPE_IS_ISNOT | v1 | Çok eski | v2 |
+| CONDITION_OC_TO_PO_ITEMS | v1 | Çok eski | v4 |
+| ACTION_RUN_DOCOPERATOR_SCRIPT | v4 | Özellikler geri alındı | v3 |
 
 ---
 
-## 🔄 Fully Disabled Cards - Cannot Use
+## 🔄 Tamamen Devre Dışı Bırakılan Kartlar - Kullanılamaz
 
-| Card | Versions | Reason | Alternative |
+| Kart | Sürümler | Neden | Alternatif |
 |------|----------|--------|-------------|
-| DOC_SUBORG_CHANGE | v1, v2 | No longer supported | Document assignment cards |
-| RUN_SCRIPT | v2, v3 | Replaced by DocOperator | ACTION_RUN_DOCOPERATOR_SCRIPT v3 |
+| DOC_SUBORG_CHANGE | v1, v2 | Artık desteklenmiyor | Belge atama kartları |
+| RUN_SCRIPT | v2, v3 | DocOperator ile değiştirildi | ACTION_RUN_DOCOPERATOR_SCRIPT v3 |
 
 ---
 
-## Related Documentation
+## İlgili Dokümantasyon
 
-- 📖 [Card Versioning Reference](../changelog/card-versioning.md) - Detailed version information
-- 📚 [Workflow Guides](../) - Step-by-step card usage
-- 🔄 [Card Version Database](../docs/card_version.md) - Complete version history
-- 📋 [Workflow Logs](../workflow-logs/) - Execution and debugging
+- 📖 [Card Versioning Reference](../changelog/card-versioning.md) - Ayrıntılı sürüm bilgileri
+- 📚 [Workflow Guides](../) - Adım adım kart kullanımı
+- 🔄 [Card Version Database](../docs/card_version.md) - Eksiksiz sürüm geçmişi
+- 📋 [Workflow Logs](../workflow-logs/) - Yürütme ve hata ayıklama
 
 ---
 
-**Last Updated:** October 23, 2025
-**Status:** Complete Version History
-**Database Source:** postgres-dev-docflow
+**Son Güncelleme:** 23 Ekim 2025
+**Durum:** Eksiksiz Sürüm Geçmişi
+**Veritabanı Kaynağı:** postgres-dev-docflow

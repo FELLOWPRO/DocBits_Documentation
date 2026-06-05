@@ -1,513 +1,513 @@
 # Documentation Enhancements - October 2025
 
-**Document:** New Workflow Card Guides and Cross-Reference Improvements
-**Release Date:** October 23, 2025
-**Status:** Complete & Deployed
+**Belge:** New Workflow Card Guides and Cross-Reference Improvements
+**Yayın Tarihi:** 23 Ekim 2025
+**Durum:** Tamamlandı ve Dağıtıldı
 
 ---
 
-## Overview
+## Genel Bakış
 
-This document details the 9 comprehensive workflow card guides added in October 2025, along with the workflow linking analysis that identified 87 cross-reference opportunities for future enhancement.
+Bu belge, Ekim 2025'te eklenen 9 kapsamlı workflow kart kılavuzunu ve gelecekteki iyileştirmeler için 87 çapraz referans fırsatını belirleyen iş akışı bağlama analizini ayrıntılı olarak açıklar.
 
 ---
 
-## New Documentation Guides (9 Total)
+## Yeni Dokümantasyon Kılavuzları (Toplam 9)
 
 ### 1. Call API Guide
 
-**File:** `then/action/call-api-guide.md` (320 lines)
+**Dosya:** `then/action/call-api-guide.md` (320 satır)
 
-**Purpose:** External API integration with full control and advanced parameters
+**Amaç:** Tam kontrol ve gelişmiş parametrelerle harici API entegrasyonu
 
-**Coverage:**
-- ✅ API configuration and endpoints
-- ✅ HTTP methods (GET, POST, PUT, DELETE, PATCH)
-- ✅ Request parameters and data payloads
-- ✅ Response parsing and error handling
-- ✅ Real-world examples
-- ✅ Troubleshooting guide
+**Kapsam:**
+- ✅ API yapılandırması ve uç noktaları
+- ✅ HTTP yöntemleri (GET, POST, PUT, DELETE, PATCH)
+- ✅ İstek parametreleri ve veri yükleri
+- ✅ Yanıt ayrıştırma ve hata yönetimi
+- ✅ Gerçek dünya örnekleri
+- ✅ Sorun giderme kılavuzu
 
-**Key Topics:**
-- Authentication methods
-- Header configuration
-- JSON request bodies
-- Response variable extraction
-- Timeout and retry handling
-- Error response codes
+**Önemli Konular:**
+- Kimlik doğrulama yöntemleri
+- Başlık yapılandırması
+- JSON istek gövdeleri
+- Yanıt değişkeni çıkarma
+- Zaman aşımı ve yeniden deneme yönetimi
+- Hata yanıt kodları
 
-**Related Cards:**
-- HTTPS Request Guide (simpler alternative)
-- DocOperator Script Guide (for non-API systems)
-- Condition Cards (for response validation)
-- Field Manipulation (for storing API responses)
+**İlgili Kartlar:**
+- HTTPS Request Guide (daha basit alternatif)
+- DocOperator Script Guide (API olmayan sistemler için)
+- Condition Cards (yanıt doğrulaması için)
+- Field Manipulation (API yanıtlarını depolamak için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 2. HTTPS Request Guide
 
-**File:** `then/action/https-request-guide.md` (302 lines)
+**Dosya:** `then/action/https-request-guide.md` (302 satır)
 
-**Purpose:** Simple HTTP/HTTPS requests for webhooks and basic integrations
+**Amaç:** Webhook'lar ve temel entegrasyonlar için basit HTTP/HTTPS istekleri
 
-**Coverage:**
-- ✅ Basic request setup
-- ✅ URL and endpoint configuration
-- ✅ Simple data payloads
-- ✅ Webhook integration
-- ✅ Response handling
-- ✅ Common use cases
+**Kapsam:**
+- ✅ Temel istek kurulumu
+- ✅ URL ve uç nokta yapılandırması
+- ✅ Basit veri yükleri
+- ✅ Webhook entegrasyonu
+- ✅ Yanıt yönetimi
+- ✅ Yaygın kullanım senaryoları
 
-**Key Topics:**
-- Webhook triggers and callbacks
-- Status code handling
-- Basic parameter passing
-- Response validation
-- Integration patterns
-- Failure handling
+**Önemli Konular:**
+- Webhook tetikleyicileri ve geri çağırmalar
+- Durum kodu yönetimi
+- Temel parametre geçişi
+- Yanıt doğrulama
+- Entegrasyon desenleri
+- Hata yönetimi
 
-**Compared to Call API:**
-- Simpler configuration
-- Fewer advanced options
-- Faster setup
-- Ideal for webhooks
-- Call API for complex needs
+**Call API ile Karşılaştırma:**
+- Daha basit yapılandırma
+- Daha az gelişmiş seçenek
+- Daha hızlı kurulum
+- Webhook'lar için ideal
+- Karmaşık ihtiyaçlar için Call API
 
-**Related Cards:**
-- Call API Guide (advanced alternative)
-- DocOperator Script Guide (for form automation)
-- Send Email Guide (for notifications)
+**İlgili Kartlar:**
+- Call API Guide (gelişmiş alternatif)
+- DocOperator Script Guide (form otomasyonu için)
+- Send Email Guide (bildirimler için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 3. DocOperator Script Guide
 
-**File:** `then/action/docoperator-script-guide.md` (422 lines)
+**Dosya:** `then/action/docoperator-script-guide.md` (422 satır)
 
-**Purpose:** Browser automation and form filling for systems without APIs
+**Amaç:** API'si olmayan sistemler için tarayıcı otomasyonu ve form doldurma
 
-**Coverage:**
-- ✅ Script configuration and variables
-- ✅ Form field identification
-- ✅ Data input automation
-- ✅ Page navigation
-- ✅ Data extraction
-- ✅ Error handling and timeouts
-- ✅ Troubleshooting
+**Kapsam:**
+- ✅ Komut dosyası yapılandırması ve değişkenler
+- ✅ Form alanı tanımlama
+- ✅ Veri girişi otomasyonu
+- ✅ Sayfa gezinme
+- ✅ Veri çıkarma
+- ✅ Hata yönetimi ve zaman aşımları
+- ✅ Sorun giderme
 
-**Key Topics:**
-- CSS selectors and element identification
-- Form filling patterns
-- Button clicking and navigation
-- Data extraction from pages
-- Variable usage and substitution
-- Script execution timeout
-- Retry mechanisms
-- Legacy system integration
+**Önemli Konular:**
+- CSS seçicileri ve öğe tanımlama
+- Form doldurma desenleri
+- Düğme tıklama ve gezinme
+- Sayfalardan veri çıkarma
+- Değişken kullanımı ve değiştirme
+- Komut dosyası yürütme zaman aşımı
+- Yeniden deneme mekanizmaları
+- Eski sistem entegrasyonu
 
-**Real-World Use Cases:**
-- Integrate with legacy web-based systems
-- Automate supplier portals
-- Collect data from websites
-- Fill forms automatically
-- Extract pricing information
+**Gerçek Dünya Kullanım Senaryoları:**
+- Eski web tabanlı sistemlerle entegrasyon
+- Tedarikçi portallarını otomatikleştirme
+- Web sitelerinden veri toplama
+- Formları otomatik olarak doldurma
+- Fiyatlandırma bilgilerini çıkarma
 
-**Related Cards:**
-- Call API Guide (for API-based systems)
-- HTTPS Request Guide (for simple webhooks)
-- Field Manipulation (for storing extracted data)
+**İlgili Kartlar:**
+- Call API Guide (API tabanlı sistemler için)
+- HTTPS Request Guide (basit webhook'lar için)
+- Field Manipulation (çıkarılan verileri depolamak için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 4. Send Email to Groups Guide
 
-**File:** `then/action/send-email-groups-guide.md` (368 lines)
+**Dosya:** `then/action/send-email-groups-guide.md` (368 satır)
 
-**Purpose:** Notify user groups via email with customizable templates
+**Amaç:** Özelleştirilebilir şablonlarla kullanıcı gruplarını e-posta yoluyla bilgilendirme
 
-**Coverage:**
-- ✅ Group recipient configuration
-- ✅ Email subject and body
-- ✅ Template variable substitution
-- ✅ HTML formatting options
-- ✅ Attachment handling
-- ✅ Email scheduling
-- ✅ Bounce handling
+**Kapsam:**
+- ✅ Grup alıcı yapılandırması
+- ✅ E-posta konusu ve gövdesi
+- ✅ Şablon değişkeni değiştirme
+- ✅ HTML biçimlendirme seçenekleri
+- ✅ Ek yönetimi
+- ✅ E-posta zamanlama
+- ✅ Geri dönen e-posta yönetimi
 
-**Key Topics:**
-- Define recipient groups
-- Email template variables
-- Dynamic content insertion
-- HTML and plain text options
-- Field value embedding
-- File attachments
-- Send conditions
-- Delivery confirmation
+**Önemli Konular:**
+- Alıcı gruplarını tanımlama
+- E-posta şablonu değişkenleri
+- Dinamik içerik ekleme
+- HTML ve düz metin seçenekleri
+- Alan değeri gömme
+- Dosya ekleri
+- Gönderme koşulları
+- Teslimat onayı
 
-**Template Variables:**
-- Document fields
-- Workflow variables
-- User information
-- System dates and times
-- Custom parameters
+**Şablon Değişkenleri:**
+- Belge alanları
+- İş akışı değişkenleri
+- Kullanıcı bilgileri
+- Sistem tarih ve saatleri
+- Özel parametreler
 
-**Examples:**
-- Invoice processing notifications
-- Approval request emails
-- Status change alerts
-- Group escalations
-- Document ready notifications
+**Örnekler:**
+- Fatura işleme bildirimleri
+- Onay isteği e-postaları
+- Durum değişikliği uyarıları
+- Grup yükseltmeleri
+- Belge hazır bildirimleri
 
-**Related Cards:**
-- Task Assignment (alternative to email)
-- Field Manipulation (for preparing email data)
-- Condition Cards (for email triggers)
-- Document Assignment (for combined actions)
+**İlgili Kartlar:**
+- Task Assignment (e-postaya alternatif)
+- Field Manipulation (e-posta verisi hazırlamak için)
+- Condition Cards (e-posta tetikleyicileri için)
+- Document Assignment (birleşik eylemler için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 5. Task Assignment Guide
 
-**File:** `then/task/task-assignment-guide.md` (593 lines)
+**Dosya:** `then/task/task-assignment-guide.md` (593 satır)
 
-**Purpose:** Create and assign tasks with priority, routing, and notifications
+**Amaç:** Öncelik, yönlendirme ve bildirimlerle görev oluşturma ve atama
 
-**Coverage:**
-- ✅ Task creation parameters
-- ✅ Title and description setup
-- ✅ Priority levels
-- ✅ User and group assignment
-- ✅ Task routing logic
-- ✅ Notification configuration
-- ✅ Task templates
-- ✅ Due date handling
-- ✅ Fallback assignment
-- ✅ 12 task-related cards documented
+**Kapsam:**
+- ✅ Görev oluşturma parametreleri
+- ✅ Başlık ve açıklama kurulumu
+- ✅ Öncelik düzeyleri
+- ✅ Kullanıcı ve grup ataması
+- ✅ Görev yönlendirme mantığı
+- ✅ Bildirim yapılandırması
+- ✅ Görev şablonları
+- ✅ Son tarih yönetimi
+- ✅ Yedek atama
+- ✅ Belgelenmiş 12 görevle ilgili kart
 
-**Key Topics:**
-- Task creation cards (user assignment, group assignment)
-- Priority level options
-- Sequential assignment
-- Fallback users
-- Email notifications
-- Task status tracking
-- Decision tree integration
-- Assignment rules
+**Önemli Konular:**
+- Görev oluşturma kartları (kullanıcı ataması, grup ataması)
+- Öncelik düzeyi seçenekleri
+- Sıralı atama
+- Yedek kullanıcılar
+- E-posta bildirimleri
+- Görev durumu takibi
+- Karar ağacı entegrasyonu
+- Atama kuralları
 
-**Task Cards Covered:**
+**Kapsanan Görev Kartları:**
 1. ACTION_TASK_FOR_GROUP
 2. tasks_create
 3. ACTION_ASSIGN_TASK_TO_USER_FROM_FIELD_WITH_FALLBACK
 4. ACTION_ASSIGN_TASK_TO_PROCUREMENT_GROUP
 5. OC_TASK
 6. ACTION_DECISION_TREE_CREATE_TASKS
-7. And 6 more assignment cards
+7. Ve 6 atama kartı daha
 
-**Routing Scenarios:**
-- Direct user assignment
-- Group-based assignment
-- Field-based user lookup
-- Fallback assignment
-- Sequential routing
+**Yönlendirme Senaryoları:**
+- Doğrudan kullanıcı ataması
+- Grup tabanlı atama
+- Alan tabanlı kullanıcı araması
+- Yedek atama
+- Sıralı yönlendirme
 
-**Related Cards:**
-- Document Assignment (for document routing)
-- Field Manipulation (for task data preparation)
-- Condition Cards (for assignment logic)
-- Send Email (for task notifications)
+**İlgili Kartlar:**
+- Document Assignment (belge yönlendirme için)
+- Field Manipulation (görev verisi hazırlama için)
+- Condition Cards (atama mantığı için)
+- Send Email (görev bildirimleri için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 6. Field Manipulation Guide
 
-**File:** `then/document-field/field-manipulation-guide.md` (607 lines)
+**Dosya:** `then/document-field/field-manipulation-guide.md` (607 satır)
 
-**Purpose:** Update, calculate, and transform document field values
+**Amaç:** Belge alanı değerlerini güncelleme, hesaplama ve dönüştürme
 
-**Coverage:**
-- ✅ Set field to text
-- ✅ Set field to number
-- ✅ Calculation formulas
-- ✅ Date/time operations
-- ✅ Field concatenation
-- ✅ Table column calculations
-- ✅ Regular expressions
-- ✅ Field validation
-- ✅ Conditional updates
+**Kapsam:**
+- ✅ Alanı metne ayarlama
+- ✅ Alanı sayıya ayarlama
+- ✅ Hesaplama formülleri
+- ✅ Tarih/saat işlemleri
+- ✅ Alan birleştirme
+- ✅ Tablo sütunu hesaplamaları
+- ✅ Düzenli ifadeler
+- ✅ Alan doğrulama
+- ✅ Koşullu güncellemeler
 
-**Key Topics:**
-- Simple field assignment
-- Calculation expressions
-- Formula syntax
-- Supported operators
-- Field referencing
-- Table column operations
-- String manipulation
-- Date calculations
-- Number formatting
-- Regex pattern matching
+**Önemli Konular:**
+- Basit alan atama
+- Hesaplama ifadeleri
+- Formül söz dizimi
+- Desteklenen operatörler
+- Alan referanslama
+- Tablo sütunu işlemleri
+- Dize düzenleme
+- Tarih hesaplamaları
+- Sayı biçimlendirme
+- Regex desen eşleştirme
 
-**Calculation Examples:**
-- Variance calculation: `|(Invoice-PO)|/PO×100`
-- Tax calculations
-- Currency conversions
-- Date arithmetic
-- String operations
-- Conditional values
+**Hesaplama Örnekleri:**
+- Sapma hesaplaması: `|(Invoice-PO)|/PO×100`
+- Vergi hesaplamaları
+- Para birimi dönüştürmeleri
+- Tarih aritmetiği
+- Dize işlemleri
+- Koşullu değerler
 
-**Field Types Supported:**
-- Text fields
-- Number fields
-- Date fields
-- Dropdown fields
-- Table columns
-- Currency fields
-- Percentage fields
+**Desteklenen Alan Türleri:**
+- Metin alanları
+- Sayı alanları
+- Tarih alanları
+- Açılır menü alanları
+- Tablo sütunları
+- Para birimi alanları
+- Yüzde alanları
 
-**Related Cards:**
-- Task Assignment (for task data setup)
-- PO Matching (for variance calculation)
-- Condition Cards (for field evaluation)
-- Call API/HTTPS Request (for storing API responses)
+**İlgili Kartlar:**
+- Task Assignment (görev verisi kurulumu için)
+- PO Matching (sapma hesaplaması için)
+- Condition Cards (alan değerlendirmesi için)
+- Call API/HTTPS Request (API yanıtlarını depolamak için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 7. Document Assignment Guide
 
-**File:** `then/assignee/assignment-user-guide.md` (688 lines)
+**Dosya:** `then/assignee/assignment-user-guide.md` (688 satır)
 
-**Purpose:** Assign documents to users and groups with routing logic
+**Amaç:** Yönlendirme mantığıyla belgeleri kullanıcılara ve gruplara atama
 
-**Coverage:**
-- ✅ User assignment
-- ✅ Group assignment
-- ✅ Sub-organization routing
-- ✅ Conditional assignment
-- ✅ Fallback options
-- ✅ Sequential assignment
-- ✅ Assignment rules
-- ✅ Permission management
-- ✅ Workflow integration
+**Kapsam:**
+- ✅ Kullanıcı ataması
+- ✅ Grup ataması
+- ✅ Alt organizasyon yönlendirmesi
+- ✅ Koşullu atama
+- ✅ Yedek seçenekler
+- ✅ Sıralı atama
+- ✅ Atama kuralları
+- ✅ İzin yönetimi
+- ✅ İş akışı entegrasyonu
 
-**Key Topics:**
-- Direct user assignment
-- Group-based assignment
-- Procurement group routing
-- Field-based assignment lookup
-- Sequential assignment patterns
-- Fallback user specification
-- Assignment conditions
-- Permission levels
-- Document routing
+**Önemli Konular:**
+- Doğrudan kullanıcı ataması
+- Grup tabanlı atama
+- Satın alma grubu yönlendirmesi
+- Alan tabanlı atama araması
+- Sıralı atama desenleri
+- Yedek kullanıcı belirtme
+- Atama koşulları
+- İzin düzeyleri
+- Belge yönlendirme
 
-**Assignment Cards Covered:**
+**Kapsanan Atama Kartları:**
 1. DOC_USER_ASSIGN
 2. DOC_GROUP_ASSIGN
 3. OC_ASSIGN_DOC
-4. Assignment with fallback options
-5. Sub-organization routing
-6. And more...
+4. Yedek seçeneklerle atama
+5. Alt organizasyon yönlendirmesi
+6. Ve daha fazlası...
 
-**Routing Patterns:**
-- Simple user assignment
-- Group distribution
-- Conditional routing
-- Sequential workflows
-- Fallback chains
-- Hierarchy-based routing
+**Yönlendirme Desenleri:**
+- Basit kullanıcı ataması
+- Grup dağıtımı
+- Koşullu yönlendirme
+- Sıralı iş akışları
+- Yedek zincirleri
+- Hiyerarşi tabanlı yönlendirme
 
-**Related Cards:**
-- Task Assignment (for task creation)
-- Condition Cards (for conditional routing)
-- Field Manipulation (for data preparation)
-- Send Email (for assignment notifications)
+**İlgili Kartlar:**
+- Task Assignment (görev oluşturma için)
+- Condition Cards (koşullu yönlendirme için)
+- Field Manipulation (veri hazırlama için)
+- Send Email (atama bildirimleri için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 8. PO Matching Complete Guide
 
-**File:** `and/compare-with-purchase-order/po-matching-complete-guide.md` (661 lines)
+**Dosya:** `and/compare-with-purchase-order/po-matching-complete-guide.md` (661 satır)
 
-**Purpose:** Match invoices with purchase orders and calculate variances
+**Amaç:** Faturaları satın alma siparişleriyle eşleştirme ve sapmaları hesaplama
 
-**Coverage:**
-- ✅ Matching process overview
-- ✅ Item-level matching
-- ✅ Quantity comparison
-- ✅ Unit price validation
-- ✅ Total amount verification
-- ✅ Variance calculation
-- ✅ Tolerance thresholds
-- ✅ PO matching cards (10+)
-- ✅ Error scenarios
-- ✅ Best practices
+**Kapsam:**
+- ✅ Eşleştirme sürecine genel bakış
+- ✅ Kalem düzeyinde eşleştirme
+- ✅ Miktar karşılaştırması
+- ✅ Birim fiyat doğrulaması
+- ✅ Toplam tutar doğrulaması
+- ✅ Sapma hesaplaması
+- ✅ Tolerans eşikleri
+- ✅ PO eşleştirme kartları (10+)
+- ✅ Hata senaryoları
+- ✅ En iyi uygulamalar
 
-**Key Topics:**
-- Three-way matching logic
-- Quantity tolerance handling
-- Price variance calculation
-- Date validation (delivery dates)
-- Item reconciliation
-- Duplicate detection
-- Partial shipment handling
-- Overbilling prevention
+**Önemli Konular:**
+- Üç yönlü eşleştirme mantığı
+- Miktar toleransı yönetimi
+- Fiyat sapması hesaplaması
+- Tarih doğrulaması (teslimat tarihleri)
+- Kalem mutabakatı
+- Yinelenen tespiti
+- Kısmi sevkiyat yönetimi
+- Fazla faturalandırmayı önleme
 
-**Variance Formulas:**
-- Quantity Variance: `|Document - PO| / PO × 100%`
-- Price Variance: `|(Invoice - PO)| / PO × 100%`
-- Amount Variance: `|(Invoice Total - PO Total)| / PO Total × 100%`
+**Sapma Formülleri:**
+- Miktar Sapması: `|Document - PO| / PO × 100%`
+- Fiyat Sapması: `|(Invoice - PO)| / PO × 100%`
+- Tutar Sapması: `|(Invoice Total - PO Total)| / PO Total × 100%`
 
-**PO Matching Cards Documented:**
+**Belgelenen PO Eşleştirme Kartları:**
 1. CONDITION_OC_TO_PO_ITEMS
 2. CONDITION_DOC_TO_PO_UNIT_PRICE
 3. CONDITION_DATES_OPERATOR_OC_LINE_ITEMS
 4. CONDITION_LESS_THAN_TOLERANCE_AS_VALUE_OF_ORDERED_QUANTITY
 5. COMBINED_PRICE_OF_QUANTITY_DIFFERENCE_OPERATOR_VALUE
-6. And 5+ more comparison cards
+6. Ve 5+ karşılaştırma kartı daha
 
-**Tolerance Configuration:**
-- % based tolerance
-- Fixed amount tolerance
-- Combined tolerance rules
-- Custom acceptance criteria
+**Tolerans Yapılandırması:**
+- % tabanlı tolerans
+- Sabit tutar toleransı
+- Birleşik tolerans kuralları
+- Özel kabul ölçütleri
 
-**Real-World Scenarios:**
-- Small quantity overages accepted
-- Minor price differences allowed
-- Late delivery handling
-- Partial receipt processing
-- Return processing
+**Gerçek Dünya Senaryoları:**
+- Kabul edilen küçük miktar fazlalıkları
+- İzin verilen küçük fiyat farkları
+- Geç teslimat yönetimi
+- Kısmi kabul işleme
+- İade işleme
 
-**Related Cards:**
-- Condition Cards (for PO validation logic)
-- Field Manipulation (for variance storage)
-- Task Assignment (for PO exception escalation)
-- Send Email (for discrepancy alerts)
+**İlgili Kartlar:**
+- Condition Cards (PO doğrulama mantığı için)
+- Field Manipulation (sapma depolama için)
+- Task Assignment (PO istisna yükseltmesi için)
+- Send Email (tutarsızlık uyarıları için)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
 ### 9. Condition Cards Complete Guide
 
-**File:** `and/condition-cards-complete-guide.md` (681 lines)
+**Dosya:** `and/condition-cards-complete-guide.md` (681 satır)
 
-**Purpose:** Comprehensive reference for 31+ condition cards and decision logic
+**Amaç:** 31+ condition card ve karar mantığı için kapsamlı referans
 
-**Coverage:**
-- ✅ 31+ condition card reference
-- ✅ Decision logic flow
-- ✅ Conditional branching
-- ✅ Boolean operators
-- ✅ Field comparisons
-- ✅ Table conditions
-- ✅ Date/time conditions
-- ✅ Document conditions
-- ✅ PO comparison conditions
-- ✅ Status conditions
+**Kapsam:**
+- ✅ 31+ condition card referansı
+- ✅ Karar mantığı akışı
+- ✅ Koşullu dallanma
+- ✅ Boole operatörleri
+- ✅ Alan karşılaştırmaları
+- ✅ Tablo koşulları
+- ✅ Tarih/saat koşulları
+- ✅ Belge koşulları
+- ✅ PO karşılaştırma koşulları
+- ✅ Durum koşulları
 
-**Condition Categories:**
+**Koşul Kategorileri:**
 
-**Document Conditions:**
-- Document type checking
-- Document status
-- Document operator verification
-- Sub-organization conditions
+**Belge Koşulları:**
+- Belge türü kontrolü
+- Belge durumu
+- Belge operatörü doğrulaması
+- Alt organizasyon koşulları
 
-**Field Conditions:**
-- Text field matching
-- Number comparisons
-- Field presence checking
-- Country/region conditions
-- Date comparisons
-- Checkbox states
+**Alan Koşulları:**
+- Metin alanı eşleştirme
+- Sayı karşılaştırmaları
+- Alan varlığı kontrolü
+- Ülke/bölge koşulları
+- Tarih karşılaştırmaları
+- Onay kutusu durumları
 
-**Table Conditions:**
-- Item presence in tables
-- Value matching in tables
-- Row count conditions
-- Cell value comparisons
+**Tablo Koşulları:**
+- Tablolardaki kalem varlığı
+- Tablolarda değer eşleştirme
+- Satır sayısı koşulları
+- Hücre değeri karşılaştırmaları
 
-**PO Comparison Conditions:**
-- Quantity matching
-- Unit price comparison
-- Delivery date validation
-- Item reconciliation
-- Tolerance-based matching
+**PO Karşılaştırma Koşulları:**
+- Miktar eşleştirme
+- Birim fiyat karşılaştırması
+- Teslimat tarihi doğrulaması
+- Kalem mutabakatı
+- Tolerans tabanlı eşleştirme
 
-**Logical Operators:**
-- AND (all conditions must match)
-- OR (any condition matches)
-- NOT (negate condition)
-- Complex boolean logic
+**Mantıksal Operatörler:**
+- AND (tüm koşullar eşleşmeli)
+- OR (herhangi bir koşul eşleşir)
+- NOT (koşulu olumsuzla)
+- Karmaşık Boole mantığı
 
-**Assignment/Status Conditions:**
-- User assignment checks
-- Group assignment verification
-- Status condition verification
+**Atama/Durum Koşulları:**
+- Kullanıcı atama kontrolleri
+- Grup atama doğrulaması
+- Durum koşulu doğrulaması
 
-**Date/Time Conditions:**
-- Date range checking
-- Today's date conditions
-- Scheduled execution
+**Tarih/Saat Koşulları:**
+- Tarih aralığı kontrolü
+- Bugünün tarihi koşulları
+- Zamanlanmış yürütme
 
-**Decision Logic Patterns:**
-- Simple if/then conditions
-- Multi-branch conditions
-- Nested conditions
-- Fall-through logic
+**Karar Mantığı Desenleri:**
+- Basit if/then koşulları
+- Çok dallı koşullar
+- İç içe koşullar
+- Geçişli (fall-through) mantık
 
-**31+ Cards Documented:**
-All condition card types with:
-- Purpose and use case
-- Parameter configuration
-- Real-world examples
-- Integration with actions
+**Belgelenen 31+ Kart:**
+Tüm condition card türleri şunlarla birlikte:
+- Amaç ve kullanım senaryosu
+- Parametre yapılandırması
+- Gerçek dünya örnekleri
+- Eylemlerle entegrasyon
 
-**Related Cards:**
-- All action cards (triggered by conditions)
-- All assignment cards (routed by conditions)
-- Field Manipulation (data prep for conditions)
-- PO Matching (condition-based matching)
+**İlgili Kartlar:**
+- Tüm action card'lar (koşullarla tetiklenir)
+- Tüm atama kartları (koşullarla yönlendirilir)
+- Field Manipulation (koşullar için veri hazırlama)
+- PO Matching (koşul tabanlı eşleştirme)
 
-**Deployment Status:** ✅ All 8 languages
+**Dağıtım Durumu:** ✅ Tüm 8 dil
 
 ---
 
-## Documentation Statistics
+## Dokümantasyon İstatistikleri
 
-### Overall Metrics
+### Genel Metrikler
 
-| Metric | Value |
+| Metrik | Değer |
 |--------|-------|
-| **Total Files Created** | 72 (9 guides × 8 languages) |
-| **English Documentation** | 4,642 lines |
-| **Total Documentation Lines** | ~334,224 |
-| **Average Guide Length** | 516 lines |
-| **Cards Covered** | 80+ |
-| **Card Versions Documented** | 90+ |
-| **Code Examples** | 50+ |
-| **Parameter References** | 200+ |
-| **Use Cases** | 80+ |
-| **Formulas/Calculations** | 10+ |
+| **Oluşturulan Toplam Dosya** | 72 (9 kılavuz × 8 dil) |
+| **İngilizce Dokümantasyon** | 4.642 satır |
+| **Toplam Dokümantasyon Satırı** | ~334.224 |
+| **Ortalama Kılavuz Uzunluğu** | 516 satır |
+| **Kapsanan Kartlar** | 80+ |
+| **Belgelenen Kart Sürümleri** | 90+ |
+| **Kod Örnekleri** | 50+ |
+| **Parametre Referansları** | 200+ |
+| **Kullanım Senaryoları** | 80+ |
+| **Formüller/Hesaplamalar** | 10+ |
 
-### By Guide
+### Kılavuza Göre
 
-| Guide | Lines | Cards | Examples |
+| Kılavuz | Satır | Kartlar | Örnekler |
 |-------|-------|-------|----------|
 | Call API | 320 | 1 | 6 |
 | HTTPS Request | 302 | 1 | 5 |
@@ -521,28 +521,28 @@ All condition card types with:
 
 ---
 
-## Workflow Linking Analysis
+## İş Akışı Bağlama Analizi
 
-### Cross-Reference Opportunities: 87 Total
+### Çapraz Referans Fırsatları: Toplam 87
 
-An analysis identified 87 opportunities to link guides together for improved navigation and user understanding.
+Bir analiz, geliştirilmiş gezinme ve kullanıcı anlayışı için kılavuzları birbirine bağlamak üzere 87 fırsat belirledi.
 
-### Linking Categories
+### Bağlama Kategorileri
 
-#### 1. Condition Card References (15 links)
-**Why Important:** Conditions control workflow logic
+#### 1. Condition Card Referansları (15 bağlantı)
+**Neden Önemli:** Koşullar iş akışı mantığını kontrol eder
 
-**Examples:**
-- Call API Guide → Condition Cards (for response validation)
-- Task Assignment → Condition Cards (for routing logic)
-- PO Matching → Condition Cards (for result evaluation)
+**Örnekler:**
+- Call API Guide → Condition Cards (yanıt doğrulaması için)
+- Task Assignment → Condition Cards (yönlendirme mantığı için)
+- PO Matching → Condition Cards (sonuç değerlendirmesi için)
 
-**Impact:** Users see how conditions filter actions
+**Etki:** Kullanıcılar koşulların eylemleri nasıl filtrelediğini görür
 
-#### 2. Data Flow Links (12 links)
-**Why Important:** Show how data moves through cards
+#### 2. Veri Akışı Bağlantıları (12 bağlantı)
+**Neden Önemli:** Verinin kartlar arasında nasıl hareket ettiğini gösterir
 
-**Pattern:**
+**Desen:**
 ```
 API/HTTPS Request
     ↓
@@ -553,132 +553,132 @@ Conditions (evaluate data)
 Task/Email/Assignment (take action)
 ```
 
-**Benefit:** Clear understanding of data flow
+**Fayda:** Veri akışının net anlaşılması
 
-#### 3. Action Card Comparisons (8 links)
-**Why Important:** Help users choose correct card
+#### 3. Action Card Karşılaştırmaları (8 bağlantı)
+**Neden Önemli:** Kullanıcıların doğru kartı seçmesine yardımcı olur
 
-**Examples:**
+**Örnekler:**
 - Call API vs HTTPS Request vs DocOperator Script
 - Task Creation vs Document Assignment
-- Email vs Task for notifications
+- Bildirimler için Email vs Task
 
-**Benefit:** Users make informed decisions
+**Fayda:** Kullanıcılar bilinçli kararlar verir
 
-#### 4. Error Handling Patterns (9 links)
-**Why Important:** Show graceful failure scenarios
+#### 4. Hata Yönetimi Desenleri (9 bağlantı)
+**Neden Önemli:** Zarif başarısızlık senaryolarını gösterir
 
-**Patterns:**
-- API failures → Email alert → Manual task
-- Script timeouts → Escalation
-- Matching errors → Human review
+**Desenler:**
+- API hataları → E-posta uyarısı → Manuel görev
+- Komut dosyası zaman aşımları → Yükseltme
+- Eşleştirme hataları → İnsan incelemesi
 
-**Benefit:** Anticipate and handle failures
+**Fayda:** Hataları öngörme ve yönetme
 
-#### 5. Workflow Integration Patterns (8 links)
-**Why Important:** Show real-world scenarios
+#### 5. İş Akışı Entegrasyon Desenleri (8 bağlantı)
+**Neden Önemli:** Gerçek dünya senaryolarını gösterir
 
-**Examples:**
-- Invoice processing: API → Fields → Conditions → PO Match → Route
-- Approval flow: Conditions → Assignment → Email → Task
-- Integration flow: API → Store → Validate → Action
+**Örnekler:**
+- Fatura işleme: API → Fields → Conditions → PO Match → Route
+- Onay akışı: Conditions → Assignment → Email → Task
+- Entegrasyon akışı: API → Store → Validate → Action
 
-**Benefit:** Users understand complete flows
+**Fayda:** Kullanıcılar eksiksiz akışları anlar
 
-#### 6. Enhancement Suggestions (35+ links)
-**Why Important:** Improve navigation and completeness
+#### 6. İyileştirme Önerileri (35+ bağlantı)
+**Neden Önemli:** Gezinmeyi ve eksiksizliği iyileştirir
 
-**Examples:**
-- Link variations of similar cards
-- Cross-reference related scenarios
-- Connect to standard workflows
+**Örnekler:**
+- Benzer kartların varyasyonlarını bağlama
+- İlgili senaryolara çapraz referans verme
+- Standart iş akışlarına bağlanma
 
-**Benefit:** Better discoverability
-
----
-
-## Implementation Plan
-
-### Phase 1: High-Impact Links (45 minutes)
-**Focus:** Navigation and core flows
-
-- Condition card references in all guides
-- API response handling in field manipulation
-- PO matching condition validation
-- Task creation routing logic
-- Document assignment conditions
-
-**Expected Impact:** Immediate improvement to user experience
-
-### Phase 2: Workflow Pattern Links (60 minutes)
-**Focus:** Complete workflow scenarios
-
-- API → Field → Condition → Action flows
-- Invoice processing workflows
-- Assignment and routing patterns
-- Error handling scenarios
-- Integration patterns
-
-**Expected Impact:** Improved workflow understanding
-
-### Phase 3: Enhancement Links (30 minutes)
-**Focus:** Polish and completeness
-
-- Comparison tables with links
-- Related card sections
-- Best practice patterns
-- Navigation optimization
-
-**Expected Impact:** Enhanced usability
-
-**Total Time Estimate:** 2-3 hours for complete implementation
+**Fayda:** Daha iyi keşfedilebilirlik
 
 ---
 
-## Language Coverage
+## Uygulama Planı
 
-All 9 guides available in 8 languages:
+### Faz 1: Yüksek Etkili Bağlantılar (45 dakika)
+**Odak:** Gezinme ve temel akışlar
 
-| Language | Branch | Status | Files |
+- Tüm kılavuzlarda condition card referansları
+- Field manipulation içinde API yanıt yönetimi
+- PO eşleştirme koşulu doğrulaması
+- Görev oluşturma yönlendirme mantığı
+- Belge atama koşulları
+
+**Beklenen Etki:** Kullanıcı deneyiminde anında iyileşme
+
+### Faz 2: İş Akışı Desen Bağlantıları (60 dakika)
+**Odak:** Eksiksiz iş akışı senaryoları
+
+- API → Field → Condition → Action akışları
+- Fatura işleme iş akışları
+- Atama ve yönlendirme desenleri
+- Hata yönetimi senaryoları
+- Entegrasyon desenleri
+
+**Beklenen Etki:** Geliştirilmiş iş akışı anlayışı
+
+### Faz 3: İyileştirme Bağlantıları (30 dakika)
+**Odak:** Cilalama ve eksiksizlik
+
+- Bağlantılarla karşılaştırma tabloları
+- İlgili kart bölümleri
+- En iyi uygulama desenleri
+- Gezinme optimizasyonu
+
+**Beklenen Etki:** Geliştirilmiş kullanılabilirlik
+
+**Toplam Süre Tahmini:** Eksiksiz uygulama için 2-3 saat
+
+---
+
+## Dil Kapsamı
+
+9 kılavuzun tümü 8 dilde mevcuttur:
+
+| Dil | Dal | Durum | Dosyalar |
 |----------|--------|--------|-------|
-| 🇺🇸 English | main | ✅ Deployed | 9 |
-| 🇩🇪 Deutsch | de | ✅ Deployed | 9 |
-| 🇪🇸 Español | es | ✅ Deployed | 9 |
-| 🇫🇷 Français | fr | ✅ Deployed | 9 |
-| 🇮🇹 Italiano | it | ✅ Deployed | 9 |
-| 🇵🇱 Polski | pl | ✅ Deployed | 9 |
-| 🇵🇹 Português | pt | ✅ Deployed | 9 |
-| 🇳🇱 Nederlands | nl | ✅ Deployed | 9 |
+| 🇺🇸 English | main | ✅ Dağıtıldı | 9 |
+| 🇩🇪 Deutsch | de | ✅ Dağıtıldı | 9 |
+| 🇪🇸 Español | es | ✅ Dağıtıldı | 9 |
+| 🇫🇷 Français | fr | ✅ Dağıtıldı | 9 |
+| 🇮🇹 Italiano | it | ✅ Dağıtıldı | 9 |
+| 🇵🇱 Polski | pl | ✅ Dağıtıldı | 9 |
+| 🇵🇹 Português | pt | ✅ Dağıtıldı | 9 |
+| 🇳🇱 Nederlands | nl | ✅ Dağıtıldı | 9 |
 
-**Translation Quality:** Professional business language, 100% technical accuracy maintained
-
----
-
-## Quality Assurance
-
-### Verification Completed
-- ✅ All 9 guides present on all 8 branches
-- ✅ Consistent directory structure
-- ✅ Card names preserved exactly
-- ✅ Formulas unchanged
-- ✅ Code blocks intact
-- ✅ Examples complete
-- ✅ Parameter references accurate
-- ✅ Cross-references identified
-
-### Technical Accuracy
-- ✅ Card names: ACTION_SET_FIELD_TO_TEXT, etc.
-- ✅ Formulas: Variance % = |(Invoice-PO)|/PO×100
-- ✅ All code examples: JSON, regex, calculations
-- ✅ Parameter UUIDs: __%uuid%__ format preserved
-- ✅ Translation keys: trnsl_% pattern maintained
+**Çeviri Kalitesi:** Profesyonel iş dili, %100 teknik doğruluk korundu
 
 ---
 
-## Access & Navigation
+## Kalite Güvencesi
 
-### In GitBook
-Path: `/administration-and-setup/workflow/`
+### Tamamlanan Doğrulama
+- ✅ 9 kılavuzun tümü 8 dalın tümünde mevcut
+- ✅ Tutarlı dizin yapısı
+- ✅ Kart adları tam olarak korundu
+- ✅ Formüller değişmedi
+- ✅ Kod blokları olduğu gibi
+- ✅ Örnekler eksiksiz
+- ✅ Parametre referansları doğru
+- ✅ Çapraz referanslar belirlendi
+
+### Teknik Doğruluk
+- ✅ Kart adları: ACTION_SET_FIELD_TO_TEXT vb.
+- ✅ Formüller: Variance % = |(Invoice-PO)|/PO×100
+- ✅ Tüm kod örnekleri: JSON, regex, hesaplamalar
+- ✅ Parametre UUID'leri: __%uuid%__ biçimi korundu
+- ✅ Çeviri anahtarları: trnsl_% deseni korundu
+
+---
+
+## Erişim ve Gezinme
+
+### GitBook'ta
+Yol: `/administration-and-setup/workflow/`
 
 **Action Cards:**
 - then/action/call-api-guide
@@ -686,79 +686,79 @@ Path: `/administration-and-setup/workflow/`
 - then/action/docoperator-script-guide
 - then/action/send-email-groups-guide
 
-**Task & Assignment:**
+**Görev ve Atama:**
 - then/task/task-assignment-guide
 - then/assignee/assignment-user-guide
 - then/document-field/field-manipulation-guide
 
-**Validation & Comparison:**
+**Doğrulama ve Karşılaştırma:**
 - and/compare-with-purchase-order/po-matching-complete-guide
 - and/condition-cards-complete-guide
 
-### In GitHub
+### GitHub'da
 Repository: github.com/Fellow-Consulting-AG/docbits
-Branches: main, de, es, fr, it, pl, pt, nl
-Path: readme/administration-and-setup/workflow/
+Dallar: main, de, es, fr, it, pl, pt, nl
+Yol: readme/administration-and-setup/workflow/
 
 ---
 
-## Next Steps
+## Sonraki Adımlar
 
-### Immediate (0-2 weeks)
-1. Gather user feedback on new guides
-2. Identify additional documentation needs
-3. Plan implementation of 87 cross-references
+### Hemen (0-2 hafta)
+1. Yeni kılavuzlar hakkında kullanıcı geri bildirimi toplama
+2. Ek dokümantasyon ihtiyaçlarını belirleme
+3. 87 çapraz referansın uygulanmasını planlama
 
-### Short-term (2-4 weeks)
-1. Implement high-impact linking (45 min)
-2. Add screenshots and diagrams
-3. Create quick reference cards
+### Kısa vadeli (2-4 hafta)
+1. Yüksek etkili bağlamayı uygulama (45 dk)
+2. Ekran görüntüleri ve şemalar ekleme
+3. Hızlı referans kartları oluşturma
 
-### Medium-term (1-2 months)
-1. Complete workflow pattern linking (60 min)
-2. Create video tutorials
-3. Update standard workflows
+### Orta vadeli (1-2 ay)
+1. Eksiksiz iş akışı desen bağlamasını tamamlama (60 dk)
+2. Video eğitimleri oluşturma
+3. Standart iş akışlarını güncelleme
 
-### Long-term (3+ months)
-1. Advanced workflow templates
-2. Best practices library
-3. Integration patterns guide
-4. Performance optimization guide
+### Uzun vadeli (3+ ay)
+1. Gelişmiş iş akışı şablonları
+2. En iyi uygulamalar kitaplığı
+3. Entegrasyon desenleri kılavuzu
+4. Performans optimizasyonu kılavuzu
 
 ---
 
-## Related Documentation
+## İlgili Dokümantasyon
 
-### Complete References
+### Eksiksiz Referanslar
 - 📖 [Card Versioning Reference](../../docs/card_version.md)
 - 🔗 [Workflow Linking Map](../../WORKFLOW_LINKING_MAP.md)
 - 📋 [Workflow Linking Summary](../../WORKFLOW_LINKING_SUMMARY.md)
 
-### Guide Index
+### Kılavuz Dizini
 - 🎯 [Workflow Guides](../)
 - 📚 [All Guides by Category](../then/ and ../and/)
 
 ---
 
-## Summary
+## Özet
 
-This documentation enhancement provides:
-- ✅ Comprehensive guides for 80+ workflow cards
-- ✅ Real-world examples and use cases
-- ✅ Step-by-step setup instructions
-- ✅ Parameter reference tables
-- ✅ Troubleshooting and best practices
-- ✅ Multi-language support (8 languages)
-- ✅ 87 identified linking opportunities
-- ✅ 100% technical accuracy
+Bu dokümantasyon iyileştirmesi şunları sağlar:
+- ✅ 80+ workflow kartı için kapsamlı kılavuzlar
+- ✅ Gerçek dünya örnekleri ve kullanım senaryoları
+- ✅ Adım adım kurulum talimatları
+- ✅ Parametre referans tabloları
+- ✅ Sorun giderme ve en iyi uygulamalar
+- ✅ Çok dilli destek (8 dil)
+- ✅ Belirlenen 87 bağlama fırsatı
+- ✅ %100 teknik doğruluk
 
-**Total Effort:** 9 guides, 72 files, 334,224 lines of documentation across 8 languages
+**Toplam Emek:** 9 kılavuz, 72 dosya, 8 dilde 334.224 satır dokümantasyon
 
-**User Impact:** Reduced training time, faster workflow creation, self-service support
+**Kullanıcı Etkisi:** Azaltılmış eğitim süresi, daha hızlı iş akışı oluşturma, self-servis destek
 
 ---
 
-**Last Updated:** October 23, 2025
+**Son Güncelleme:** 23 Ekim 2025
 **Repository:** https://github.com/Fellow-Consulting-AG/docbits
 **GitBook:** docs.docbits.com
-**Status:** Complete & Deployed
+**Durum:** Tamamlandı ve Dağıtıldı

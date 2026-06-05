@@ -14,6 +14,19 @@ ZUGFeRD 1.0 fue la versión inicial del estándar. Aunque es antigua, muchos doc
 | `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Código de tipo de factura |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Fecha de emisión de la factura |
 
+### Tipo y subtipo de documento (controlado por TRA)
+
+Junto al `INVOICE_TYPE_CODE` original, el XSLT TRANSFORMATION predeterminado emite dos campos derivados. ZUGFeRD 1.0 utiliza el vocabulario CII heredado, por lo que las XPath difieren respecto a 2.x:
+
+| Campo DocBits | Origen (esquema 1.0) | Lógica |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `CrossIndustryDocument/HeaderExchangedDocument/TypeCode` | UNCL 1001 `381` o `261` → **Credit Note**; cualquier otro código → **Invoice** |
+| `INVOICE_SUB_TYPE` | `SpecifiedSupplyChainTradeTransaction/ApplicableSupplyChainTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | No vacío → **Purchase Invoice**; vacío/ausente → **Cost Invoice** |
+
+### Desglose de impuestos (clasificado por niveles)
+
+Los bloques `ApplicableTradeTax` se distribuyen en tres niveles basados en la tasa (no en índices posicionales): los campos de tasa estándar (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturan rate ≥ 19; los campos de tasa reducida (`*_2`) capturan 0 < rate < 19; los campos de tasa cero (`*_3`) capturan rate = 0. Véase [ZUGFeRD Tax Breakdown](../README.md#tax-breakdown-tier-classified) para la lista completa de campos. (ZUGFeRD 1.0 utiliza el vocabulario CII heredado en su XSLT TRANSFORMATION, pero las reglas de selección por nivel anteriores son idénticas a las de 2.x.)
+
 ### Referencias de documentos
 
 | Ruta CII de ZUGFeRD | Campo de DocBits | Campo de Infor BOD | Tipo | Descripción |

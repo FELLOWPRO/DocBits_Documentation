@@ -28,6 +28,19 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 | `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
 
+### Tipo y subtipo de documento (controlado por TRA)
+
+> La misma lógica se aplica a **Factur-X** — Factur-X 1.x utiliza el mismo vocabulario CII que ZUGFeRD 2.x, por lo que el bloque dinámico siguiente se emite para ambos.
+
+Además del `INVOICE_TYPE_CODE` original, el XSLT TRANSFORMATION predeterminado emite un árbol canónico `<INVOICE>` con dos campos derivados:
+
+| Campo DocBits | Origen | Lógica |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `ExchangedDocument/TypeCode` (o `HeaderExchangedDocument/TypeCode` para ZUGFeRD 1.0) | UNCL 1001 `381` o `261` → **Credit Note**; cualquier otro código → **Invoice** |
+| `INVOICE_SUB_TYPE` | Presencia de `BuyerOrderReferencedDocument/IssuerAssignedID` (bajo `ApplicableHeaderTradeAgreement` para 2.x / `ApplicableSupplyChainTradeAgreement` para 1.0) | No vacío → **Purchase Invoice**; vacío/ausente → **Cost Invoice** |
+
+`INVOICE_SUB_TYPE` distingue las facturas vinculadas a una OC de las facturas de coste directas para el enrutamiento de AP.
+
 ### Document References
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
@@ -97,16 +110,27 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
 | `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
 
-### Tax Breakdown (Multiple Tax Rates)
+### Desglose de impuestos (clasificado por niveles)
+
+El XSLT TRANSFORMATION predeterminado distribuye los bloques `ApplicableTradeTax` en tres niveles basados en la tasa, en lugar de usar índices posicionales. Cada bloque se asigna a un nivel según su `RateApplicablePercent`:
+
+| Nivel | Campos DocBits | Regla de selección |
+| :--- | :--- | :--- |
+| Nivel 1 (estándar) | `TAX_RATE`, `NET_AMOUNT`, `TAX_AMOUNT` | rate ≥ 19 |
+| Nivel 2 (reducido) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < rate < 19 |
+| Nivel 3 (cero) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | rate = 0 |
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Tax rate 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Net amount for tax 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Tax amount 1 |
-| `ApplicableTradeTax[2]/RateApplicablePercent` | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Tax rate 2 |
-| `ApplicableTradeTax[2]/BasisAmount` | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Net amount for tax 2 |
-| `ApplicableTradeTax[2]/CalculatedAmount` | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Tax amount 2 |
+| `ApplicableTradeTax/RateApplicablePercent` (nivel 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Porcentaje de IVA a tasa estándar |
+| `ApplicableTradeTax/BasisAmount` (nivel 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Importe neto a tasa estándar |
+| `ApplicableTradeTax/CalculatedAmount` (nivel 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Importe del impuesto a tasa estándar |
+| `ApplicableTradeTax/RateApplicablePercent` (nivel 2) | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Porcentaje de IVA a tasa reducida |
+| `ApplicableTradeTax/BasisAmount` (nivel 2) | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Importe neto a tasa reducida |
+| `ApplicableTradeTax/CalculatedAmount` (nivel 2) | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Importe del impuesto a tasa reducida |
+| `ApplicableTradeTax/RateApplicablePercent` (nivel 3) | `TAX_RATE_3` | `TaxPercent3` | NUMBER | Porcentaje de IVA a tasa cero |
+| `ApplicableTradeTax/BasisAmount` (nivel 3) | `NET_AMOUNT_3` | `TaxableAmount3` | AMOUNT | Importe neto con tasa cero |
+| `ApplicableTradeTax/CalculatedAmount` (nivel 3) | `TAX_AMOUNT_3` | `TaxAmount3` | AMOUNT | Importe del impuesto a tasa cero |
 
 ## Mapeo completo de artículos de línea (tabla)
 

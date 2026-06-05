@@ -1,6 +1,4 @@
-# Workflow Documentation
-
-**Workflow Documentation**
+# Assignment & Status — Worked Examples
 
 To keep an overview, you can give the workflows different headings so that you can immediately know what task this workflow is about.
 

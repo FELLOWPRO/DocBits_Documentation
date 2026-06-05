@@ -1,6 +1,4 @@
-# Workflow Documentatie
-
-**Workflow Documentatie**
+# Toewijzing & status — Praktijkvoorbeelden
 
 Om het overzicht te bewaren, kunt u de workflows verschillende koppen geven, zodat u meteen weet waarover deze workflow gaat.
 

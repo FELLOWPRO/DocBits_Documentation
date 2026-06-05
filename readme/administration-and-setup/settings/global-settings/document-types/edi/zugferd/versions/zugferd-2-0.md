@@ -14,6 +14,19 @@ ZUGFeRD 2.0 was designed to be compliant with the European standard EN 16931. It
 | `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Invoice type code |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 
+### Document Type & Sub-Type (TRA-driven)
+
+Alongside the raw `INVOICE_TYPE_CODE`, the default TRANSFORMATION XSLT emits two derived fields:
+
+| DocBits Field | Source | Logic |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` or `261` → **Credit Note**; any other code → **Invoice** |
+| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non-empty → **Purchase Invoice**; empty/missing → **Cost Invoice** |
+
+### Tax Breakdown (Tier-classified)
+
+`ApplicableTradeTax` blocks are distributed across three rate-based tiers (not positional indexes): standard-rate fields (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capture rate ≥ 19; reduced-rate fields (`*_2`) capture 0 < rate < 19; zero-rate fields (`*_3`) capture rate = 0. See [ZUGFeRD Tax Breakdown](../README.md#tax-breakdown-tier-classified) for the full field list.
+
 ### Dates
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |

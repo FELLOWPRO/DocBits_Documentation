@@ -28,6 +28,19 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 | `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
 
+### Document Type & Sub-Type (TRA-driven)
+
+> Same logic applies to **Factur-X** — Factur-X 1.x uses the same CII vocabulary as ZUGFeRD 2.x, so the dynamic block below is emitted for both.
+
+In addition to the raw `INVOICE_TYPE_CODE`, the default TRANSFORMATION XSLT emits a canonical `<INVOICE>` tree with two derived fields:
+
+| DocBits Field | Source | Logic |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `ExchangedDocument/TypeCode` (or `HeaderExchangedDocument/TypeCode` for ZUGFeRD 1.0) | UNCL 1001 `381` or `261` → **Credit Note**; any other code → **Invoice** |
+| `INVOICE_SUB_TYPE` | `BuyerOrderReferencedDocument/IssuerAssignedID` presence (under `ApplicableHeaderTradeAgreement` for 2.x / `ApplicableSupplyChainTradeAgreement` for 1.0) | Non-empty → **Purchase Invoice**; empty/missing → **Cost Invoice** |
+
+`INVOICE_SUB_TYPE` discriminates PO-linked invoices from direct cost invoices for AP routing.
+
 ### Document References
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
@@ -97,16 +110,27 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
 | `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
 
-### Tax Breakdown (Multiple Tax Rates)
+### Tax Breakdown (Tier-classified)
+
+The default TRANSFORMATION XSLT distributes `ApplicableTradeTax` blocks across three rate-based tiers rather than using positional indexes. Each block is matched to a tier by its `RateApplicablePercent`:
+
+| Tier | DocBits Fields | Selection Rule |
+| :--- | :--- | :--- |
+| Tier 1 (Standard) | `TAX_RATE`, `NET_AMOUNT`, `TAX_AMOUNT` | rate ≥ 19 |
+| Tier 2 (Reduced) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < rate < 19 |
+| Tier 3 (Zero) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | rate = 0 |
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Tax rate 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Net amount for tax 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Tax amount 1 |
-| `ApplicableTradeTax[2]/RateApplicablePercent` | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Tax rate 2 |
-| `ApplicableTradeTax[2]/BasisAmount` | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Net amount for tax 2 |
-| `ApplicableTradeTax[2]/CalculatedAmount` | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Tax amount 2 |
+| `ApplicableTradeTax/RateApplicablePercent` (tier 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Standard-rate VAT percentage |
+| `ApplicableTradeTax/BasisAmount` (tier 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Standard-rate net amount |
+| `ApplicableTradeTax/CalculatedAmount` (tier 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Standard-rate tax amount |
+| `ApplicableTradeTax/RateApplicablePercent` (tier 2) | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Reduced-rate VAT percentage |
+| `ApplicableTradeTax/BasisAmount` (tier 2) | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Reduced-rate net amount |
+| `ApplicableTradeTax/CalculatedAmount` (tier 2) | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Reduced-rate tax amount |
+| `ApplicableTradeTax/RateApplicablePercent` (tier 3) | `TAX_RATE_3` | `TaxPercent3` | NUMBER | Zero-rate VAT percentage |
+| `ApplicableTradeTax/BasisAmount` (tier 3) | `NET_AMOUNT_3` | `TaxableAmount3` | AMOUNT | Zero-rated net amount |
+| `ApplicableTradeTax/CalculatedAmount` (tier 3) | `TAX_AMOUNT_3` | `TaxAmount3` | AMOUNT | Zero-rate tax amount |
 
 ## Complete Line Item (Table) Field Mapping
 

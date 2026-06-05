@@ -15,6 +15,26 @@ Workflowpatronen zijn bewezen, herbruikbare oplossingen voor veelvoorkomende uit
 
 ---
 
+## De Workflow Builder in een oogopslag
+
+Elk patroon op deze pagina wordt samengesteld in de **Workflow Builder**. U bereikt deze via **Workflow Dashboard → Workflowlijst → Workflow Toevoegen** (of door een bestaande workflow te openen). Het dashboard toont u de uitvoeringsgeschiedenis en slaag-/faalpercentages voor al uw workflows:
+
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard met uitvoeringstotalen, slaag- en faalpercentages, de grafiek met workflowuitvoeringen en recente activiteit"><figcaption><p>Het Workflow Dashboard — uitvoeringstotalen, slaag-/faalpercentages en recente activiteit voor elke workflow.</p></figcaption></figure>
+
+Het tabblad **Workflowlijst** toont elke workflow met het bijbehorende type, de uitvoeringsvolgorde en de trigger. Gebruik **Workflow Toevoegen** om een nieuwe aan te maken, of klik op een workflow om deze in de builder te openen:
+
+<figure><img src="../../.gitbook/assets/workflow_list.png" alt="Tabblad Workflowlijst met workflows, type, uitvoeringsvolgorde en trigger"><figcaption><p>De Workflowlijst — elke rij is een workflow die u kunt openen, in-/uitschakelen of bewerken.</p></figcaption></figure>
+
+Een workflow wordt opgebouwd uit drie groepen kaarten — **When** (de trigger), **And** (aanvullende voorwaarden) en **Then** (de acties die worden uitgevoerd). Het onderstaande voorbeeld wordt geactiveerd op facturen die bij een suborganisatie horen en wijst deze toe aan een gebruiker:
+
+<figure><img src="../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder-canvas met When-, And- en Then-kaarten"><figcaption><p>Het Workflow Builder-canvas. Elk patroon hieronder is slechts een andere combinatie van When- / And- / Then-kaarten.</p></figcaption></figure>
+
+Klik in een willekeurige groep op **Add Card** om de kaartbibliotheek te openen. Kaarten zijn geordend per categorie (Compare with Purchase Order, Partner Cards, Document Field, Date &#x26; Time, Document, Logic, Status, Table, Assignee, …) zodat u het bouwblok kunt vinden dat elk patroon nodig heeft:
+
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-dialoogvenster met de kaartcategorieën en beschikbare kaarten"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — elke kaart waarnaar in de onderstaande patronen wordt verwezen, wordt hier gekozen.</p></figcaption></figure>
+
+---
+
 ## Beschikbare Patronen
 
 ### 1. [API Integratie Patroon](api-integration-pattern.md)

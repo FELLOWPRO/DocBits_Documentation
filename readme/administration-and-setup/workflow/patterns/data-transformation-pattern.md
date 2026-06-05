@@ -7,6 +7,12 @@
 
 ---
 
+U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** en open de categorie **Document Field** — deze bevat de lees-, schrijf-, bereken- en opmaakkaarten die dit patroon aan elkaar koppelt:
+
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek in de Workflow Builder, gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — kaarten voor het lezen/schrijven van velden, berekeningen en opmaak bevinden zich onder de categorie <strong>Document Field</strong>.</p></figcaption></figure>
+
+---
+
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u documentgegevens kunt transformeren, berekenen, formatteren en verrijken in DocBits workflows. Gegevenstransformatie is essentieel voor het voorbereiden van gegevens voor export, het uitvoeren van berekeningen, het standaardiseren van formaten en het verrijken van documenten met aanvullende informatie.

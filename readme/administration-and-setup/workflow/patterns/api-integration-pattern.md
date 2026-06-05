@@ -7,6 +7,12 @@
 
 ---
 
+U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** om de kaartbibliotheek te openen en kies de kaarten die dit patroon gebruikt — `CALL_API`, `CONDITION_HTTPS_REQUEST_STATUS`, `ACTION_SET_FIELD_TO_TEXT` en `CONDITION_COMPARE_TWO_DOCFIELD_VALUES`:
+
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek in de Workflow Builder, gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — kies de API-, voorwaarde- en veldkaarten die door dit patroon worden gebruikt uit deze categorieën.</p></figcaption></figure>
+
+---
+
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u DocBits kunt integreren met externe API's om gegevens uit externe systemen op te halen, te valideren en op te slaan. Het is een van de meest voorkomende workflowpatronen voor het verbinden van DocBits met prijssystemen, validatiediensten, ERP-systemen en andere externe gegevensbronnen.

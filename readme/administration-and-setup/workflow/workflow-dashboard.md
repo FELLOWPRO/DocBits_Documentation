@@ -6,7 +6,7 @@ description: Monitor workflow performance, manage workflows, and access the Card
 
 Het Workflow Dashboard is uw centrale hub voor het beheren en monitoren van alle workflows in DocBits. Open het door op het **Workflows**-pictogram in de linkerzijbalk te klikken.
 
-<!-- screenshot: Workflow Dashboard overview with stats cards and chart -->
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard met uitvoeringstotalen, slaag- en faalpercentages, de uitvoeringsgrafiek en recente activiteit"><figcaption><p>Het Workflow Dashboard — uitvoeringstotalen, slaag-/faalpercentages en recente activiteit voor elke workflow.</p></figcaption></figure>
 
 ## Dashboard Tabblad
 
@@ -72,6 +72,8 @@ Het tabblad Workflowlijst toont alle workflows met zoek-, sorteer- en beheermoge
 ## Tabblad Testmanagerlijst
 
 Het tabblad Testmanagerlijst toont alle testconfiguraties en resultaten van workflows. Gebruik dit om geautomatiseerde testscenario's voor uw workflows op te zetten.
+
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Testmanagerlijst met testscenario's en Alle Tests Uitvoeren"><figcaption><p>De Testmanagerlijst — elk scenario toont een slaag-/faalresultaat; gebruik <strong>Run All Tests</strong> om ze allemaal opnieuw uit te voeren.</p></figcaption></figure>
 
 ## Tabblad Licentie
 

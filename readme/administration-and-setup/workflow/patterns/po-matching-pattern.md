@@ -7,6 +7,12 @@
 
 ---
 
+U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** en open de categorie **Compare with Purchase Order** — deze bevat elke matchingkaart die dit patroon gebruikt (kaarten voor het vergelijken van prijs, hoeveelheid, tolerantie en regelitems):
+
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek met de Compare with Purchase Order-kaarten"><figcaption><p>De categorie <strong>Compare with Purchase Order</strong> — kaarten voor het matchen van prijs, hoeveelheid, tolerantie en regelitems die in dit patroon worden gebruikt.</p></figcaption></figure>
+
+---
+
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u uitgebreide workflows voor het matchen van inkooporders (PO) in DocBits kunt implementeren. PO-matching is een kritisch controleproces dat factuurgegevens vergelijkt met inkoopordergegevens om discrepanties te detecteren vóór goedkeuring van de betaling.

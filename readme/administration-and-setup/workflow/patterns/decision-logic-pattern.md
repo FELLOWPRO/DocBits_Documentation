@@ -7,6 +7,12 @@
 
 ---
 
+U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** en open de categorie **Logic** — deze bevat de voorwaarde- en vertakkingskaarten die de beslissingsboom aansturen, die u combineert met de **And**-groep om meerdere voorwaarden te evalueren:
+
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek in de Workflow Builder, gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — voorwaarde- en vertakkingskaarten bevinden zich onder de categorie <strong>Logic</strong>.</p></figcaption></figure>
+
+---
+
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u complexe beslissingslogica in DocBits workflows kunt implementeren met behulp van conditiekaarten om documenten via verschillende verwerkingspaden te routeren op basis van documentkenmerken, veldwaarden en bedrijfsregels.

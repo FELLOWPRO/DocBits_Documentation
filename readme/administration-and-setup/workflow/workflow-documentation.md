@@ -1,20 +1,20 @@
-# Workflow Documentation
+# Workflow Documentatie
 
-**Workflow Documentation**
+**Workflow Documentatie**
 
-To keep an overview, you can give the workflows different headings so that you can immediately know what task this workflow is about.
+Om het overzicht te bewaren, kunt u de workflows verschillende koppen geven, zodat u meteen weet waarover deze workflow gaat.
 
-Create a new Workflow: Click on + ADD WORKFLOW
+Maak een nieuwe Workflow aan: Klik op + WORKFLOW TOEVOEGEN
 
-![](<../../../.gitbook/assets/0 (1).png>)
+![](<../../.gitbook/assets/workflow_add_button.png>)
 
-You can use these workflows (Test 1,2,3) to automatically assign various documents to the right employee in the company.
+U kunt deze workflows (Test 1, 2, 3) gebruiken om verschillende documenten automatisch toe te wijzen aan de juiste medewerker in het bedrijf.
 
-![](<../../../.gitbook/assets/1 (1).png>)
+![](<../../.gitbook/assets/workflow_list_overview.png>)
 
-If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be immediately assigned to the correct person.
+Als een factuur of ander document een bepaald totaalbedrag overschrijdt dat voorafgaande beoordeling en goedkeuring vereist, kunnen deze documenten onmiddellijk aan de juiste persoon worden toegewezen.
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_logic_card_1.png" alt="Docbits Workflow Logic Card 1"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_amount_check.png" alt="Workflow Amount Check"><figcaption></figcaption></figure>
 
 **Test 1: Logic Card**
 
@@ -24,7 +24,7 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Stefan Reppermund
 
-![](<../../../.gitbook/assets/3 (1).png>)
+![](<../../.gitbook/assets/3 (1).png>)
 
 **Test 2: Logic Card**
 
@@ -34,7 +34,7 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** James Edwards
 
-![](<../../../.gitbook/assets/4 (1).png>)
+![](<../../.gitbook/assets/4 (1).png>)
 
 **Test 3: Logic Card**
 
@@ -44,13 +44,13 @@ Then: **Assign document to:** James Edwards
 
 **Then:** **Assign document to:** Anian Sollinger
 
-![](<../../../.gitbook/assets/5 (1).png>)
+![](<../../.gitbook/assets/5 (1).png>)
 
-It is also possible, if the document is not assigned to a single person, to assign it to a specific employee from the start.
+Het is ook mogelijk om, als het document niet aan één enkele persoon is toegewezen, het vanaf het begin aan een specifieke medewerker toe te wijzen.
 
-<figure><img src="../../../.gitbook/assets/docbits_workflow_assign_employee_start.png" alt="Docbits Workflow Assign Employee Start" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_assign_to_employee_start.png" alt="Workflow Assign to Employee Start" width="375"><figcaption></figcaption></figure>
 
-For an easier overview of what should happen to a document, you can set the status for incoming documents in this workflow. This workflow makes it possible to immediately see whether there is, for example, a pending approval.
+Voor een eenvoudiger overzicht van wat er met een document moet gebeuren, kunt u de status voor binnenkomende documenten in deze workflow instellen. Met deze workflow kunt u meteen zien of er bijvoorbeeld een goedkeuring in behandeling is.
 
 **Test 4: Logic Card**
 
@@ -60,9 +60,9 @@ For an easier overview of what should happen to a document, you can set the stat
 
 **Then:** **Change Status to:** Pending Approval
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_change_status_pending.png" alt="Docbits Workflow Change Status Pending"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/8 (1).png>)
+![](<../../.gitbook/assets/8 (1).png>)
 
 **Test 5: Logic Card**
 
@@ -72,13 +72,13 @@ And: **Assignee is:** Stefan Reppermund
 
 Then: **Change Status to:** Pending Second Approval
 
-<figure><img src="../../../.gitbook/assets/docbits_workflow_change_status_pending_2.png" alt="Docbits Workflow Change Status Pending 2"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/10 (1).png>)
+![](<../../.gitbook/assets/10 (1).png>)
 
-If an invoice or other document exceeds a certain total amount that requires prior review and approval, these documents can be assigned to the right person immediately.
+Als een factuur of ander document een bepaald totaalbedrag overschrijdt dat voorafgaande beoordeling en goedkeuring vereist, kunnen deze documenten onmiddellijk aan de juiste persoon worden toegewezen.
 
-![](<../../../.gitbook/assets/11 (1).png>)
+![](<../../.gitbook/assets/11 (1).png>)
 
 **Test 6: Logic Card**
 
@@ -88,11 +88,11 @@ And: Docfield **total\_amount** is **Greater than 500**
 
 Then: **Assign document to:** Asad Usman Khan
 
-<figure><img src="../../../.gitbook/assets/docbits_export_sftp.png" alt="DocBits Exporteren Sftp"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/13 (1).png>)
+![](<../../.gitbook/assets/13 (1).png>)
 
-It is also possible to enter the status into the workflow, so the assigned person can immediately see what status this document is and what should happen next with it.
+Het is ook mogelijk om de status in de workflow in te voeren, zodat de toegewezen persoon meteen kan zien welke status dit document heeft en wat er vervolgens mee moet gebeuren.
 
 **Test 7: Logic Card**
 
@@ -104,67 +104,67 @@ It is also possible to enter the status into the workflow, so the assigned perso
 
 **Change Status to:** Pending Approval
 
-<figure><img src="../../../.gitbook/assets/docbits_export_smb.png" alt="DocBits Exporteren Smb"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/docbits_workflow_purchase_order_2.png" alt="DocBits Workflow Aankoop Bestelling 2"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
-For example, if certain or important information is missing from a document, but is important and must be included for further processing, you can set up the workflow so that these documents are immediately forwarded to the buyer and a substitute (replacement).
+Als er bijvoorbeeld bepaalde of belangrijke informatie in een document ontbreekt die echter belangrijk is en voor verdere verwerking moet worden opgenomen, kunt u de workflow zo instellen dat deze documenten onmiddellijk worden doorgestuurd naar de inkoper en een vervanger.
 
-<figure><img src="../../../.gitbook/assets/docbits_workflow_test_9_replacement.png" alt="Docbits Workflow Test 9 Replacement"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test8_missing_info.png" alt="Workflow Test 8 Missing Info"><figcaption></figcaption></figure>
 
 **Test 9:**
 
-The Workflow with these logic cards is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+De Workflow met deze logic cards is ontworpen om automatisch te verifiëren dat de hoeveelheid, eenheidsprijs of korting die in een orderbevestiging is vermeld, overeenkomt met de bijbehorende cijfers in de inkooporder. Deze verificatie waarborgt consistentie en nauwkeurigheid tussen wat er is besteld en wat de leverancier bevestigt te leveren.
 
-You can give these documents a specific status or assign them to a specific employee.
+U kunt deze documenten een specifieke status geven of ze aan een specifieke medewerker toewijzen.
 
-<div align="center"><figure><img src="../../../.gitbook/assets/docbits_export_ion_bod.png" alt="DocBits Exporteren Ion Bod"><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../.gitbook/assets/workflow_test9_match_check_overview.png" alt="Workflow Test 9 Match Check Overview"><figcaption></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/docbits_workflow_logic_card_3.png" alt="Docbits Workflow Logic Card 3"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test9_match_check_detail.png" alt="Workflow Test 9 Match Check Detail"><figcaption></figcaption></figure>
 
 **Logic Card: Quantity or Unit Price or Discount Match**
 
-This logic card is designed to automatically verify that the quantity, unit price, or discount detailed in an order confirmation matches the corresponding figures in the purchase order. This verification ensures consistency and accuracy between what was ordered and what the supplier confirms to deliver.
+Deze logic card is ontworpen om automatisch te verifiëren dat de hoeveelheid, eenheidsprijs of korting die in een orderbevestiging is vermeld, overeenkomt met de bijbehorende cijfers in de inkooporder. Deze verificatie waarborgt consistentie en nauwkeurigheid tussen wat er is besteld en wat de leverancier bevestigt te leveren.
 
 **Trigger Condition**
 
-The logic is activated when any of the following conditions are met in an order confirmation relative to the original purchase order:
+De logica wordt geactiveerd wanneer aan een van de volgende voorwaarden wordt voldaan in een orderbevestiging ten opzichte van de oorspronkelijke inkooporder:
 
-* **Quantity**: The quantity of items ordered matches the quantity confirmed by the supplier.
-* **Unit Price**: The price per item agreed upon matches the supplier's confirmation.
-* **Discount**: Any discounts applied are consistent between the purchase order and the order confirmation.
-* **Define Comparison Parameters**: Set up the specific fields (quantity, unit price, discount) that the logic card will check for a match.
-* **Automate Verification**: Configure the system to automatically compare these details upon receipt of an order confirmation.
-* **Customize Alerts**: Decide on the workflow for handling discrepancies, including customization of alerts for manual review.
+* **Quantity**: De bestelde hoeveelheid items komt overeen met de door de leverancier bevestigde hoeveelheid.
+* **Unit Price**: De overeengekomen prijs per item komt overeen met de bevestiging van de leverancier.
+* **Discount**: Eventuele toegepaste kortingen zijn consistent tussen de inkooporder en de orderbevestiging.
+* **Define Comparison Parameters**: Stel de specifieke velden (hoeveelheid, eenheidsprijs, korting) in die de logic card op een overeenkomst zal controleren.
+* **Automate Verification**: Configureer het systeem om deze gegevens automatisch te vergelijken bij ontvangst van een orderbevestiging.
+* **Customize Alerts**: Bepaal de workflow voor het afhandelen van discrepanties, inclusief het aanpassen van waarschuwingen voor handmatige beoordeling.
 
-This logic card is vital for ensuring that the details of an order confirmation align with the original purchase order, safeguarding the integrity of the procurement cycle.
+Deze logic card is essentieel om ervoor te zorgen dat de gegevens van een orderbevestiging overeenkomen met de oorspronkelijke inkooporder, waardoor de integriteit van de inkoopcyclus wordt gewaarborgd.
 
 **Test 10:**
 
-If you have a different calculation for surcharges, or only have them on some items, you can use the generic table calculation cards, some of them also allow to filter for regular expressions.
+Als u een andere berekening voor toeslagen heeft, of deze slechts op sommige items van toepassing zijn, kunt u de generieke tabelberekeningskaarten gebruiken; sommige daarvan staan ook toe om te filteren op reguliere expressies.
 
-<figure><img src="../../../.gitbook/assets/docbits_table_invoice.png" alt="DocBits Tabel Factuur"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
 
-Above is a calculation example for MTZ with a filter for item numbers starting with 01, 06, 9, 001 or 000.
+Hierboven staat een berekeningsvoorbeeld voor MTZ met een filter voor artikelnummers die beginnen met 01, 06, 9, 001 of 000.
 
-With a manual setup it’s advised to split calculations that depend on new columns into a separate workflow. To continue with the calculation you can use the Run Workflow card.
+Bij een handmatige opzet wordt geadviseerd om berekeningen die afhankelijk zijn van nieuwe kolommen in een aparte workflow te splitsen. Om met de berekening door te gaan, kunt u de Run Workflow-kaart gebruiken.
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/docbits_workflow_2.png" alt="DocBits Workflow 2"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
 
-With this card you can specify the name of a workflow that is to be run after the current workflow if its conditions are met and after previous then cards of the current workflow. While it prioritises runnable, active workflows, it also allows you to run deactivated workflows if the document fulfills the workflows conditions.
+Met deze kaart kunt u de naam opgeven van een workflow die na de huidige workflow moet worden uitgevoerd als aan de voorwaarden ervan is voldaan en na voorgaande then-kaarten van de huidige workflow. Hoewel uitvoerbare, actieve workflows worden geprioriteerd, kunt u er ook gedeactiveerde workflows mee uitvoeren als het document aan de voorwaarden van de workflows voldoet.
 
 ### **Adding calculated surcharges into an existing column** <a href="#pekg4i18rshn" id="pekg4i18rshn"></a>
 
 <figure><img src="https://lh7-us.googleusercontent.com/XYY1xsFpp7_-Bi0WOSbotiVzspDLdaufx_xgoopMHmxdZnSDhroLpb0AE_si5PhwMq1jHfndc9FwOte9MOoCoTP5_JUYawO5cr4uIctIDHmwVjz3KacQrLJd8iBQy5KY4N-dMaWEi3IeTcc5OBRNJk4" alt=""><figcaption></figcaption></figure>
 
-If you want to add all surcharges as a negative discount into the discount column, you can use the calculation card. There might be entries in this column, you can set it as one of the variables on the card, have the MTZ subtracted from it and add the result back into this column. In case there are empty fields (surcharges only for some items) it will assume a 0 for its calculation
+Als u alle toeslagen als een negatieve korting in de kortingskolom wilt opnemen, kunt u de berekeningskaart gebruiken. Mogelijk staan er al gegevens in deze kolom; u kunt deze instellen als een van de variabelen op de kaart, de MTZ ervan laten aftrekken en het resultaat weer aan deze kolom toevoegen. Mocht er sprake zijn van lege velden (toeslagen slechts voor sommige items), dan gaat het voor de berekening uit van een 0.
 
 **Notify user to authorize the order confirmation in DocBits**
 
-After calculating the surcharges you might want to notify a specific user to authorize the order confirmation. For this you can use the notification card
+Nadat u de toeslagen heeft berekend, wilt u mogelijk een specifieke gebruiker informeren om de orderbevestiging te autoriseren. Hiervoor kunt u de meldingskaart gebruiken.
 
-<figure><img src="../../../.gitbook/assets/docbits_notification_card_2.png" alt="Docbits Melding Card 2"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_notification_card_overview.png" alt="Workflow Notification Card"><figcaption></figcaption></figure>
 
-Depending on settings, the user gets assigned a new task in DocBits and optionally an email to notify them of their new task.
+Afhankelijk van de instellingen krijgt de gebruiker een nieuwe taak in DocBits toegewezen en optioneel een e-mail om hen op de hoogte te stellen van hun nieuwe taak.

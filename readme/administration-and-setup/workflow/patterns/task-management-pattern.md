@@ -7,6 +7,12 @@
 
 ---
 
+U bouwt dit patroon in de **Workflow Builder** (Workflow Dashboard → Workflowlijst → Workflow Toevoegen). Klik op **Add Card** om de kaartbibliotheek te openen en kies de kaarten die dit patroon gebruikt — `tasks_create`, `ACTION_ASSIGN_TO_USER`, `ACTION_SEND_EMAIL_TO_GROUPS` en `CONDITION_TASK_STATUS` (de categorie **Assignee** bevat de taak- en toewijzingskaarten):
+
+<figure><img src="../../.gitbook/assets/workflow_add_card_picker.png" alt="Add Card-bibliotheek in de Workflow Builder, gegroepeerd per categorie"><figcaption><p>De <strong>Add Card</strong>-bibliotheek — de taak-, toewijzings- en meldingskaarten bevinden zich onder de categorieën <strong>Assignee</strong> en <strong>Status</strong>.</p></figcaption></figure>
+
+---
+
 ## Patroonoverzicht
 
 Dit patroon demonstreert hoe u taken in DocBits workflows kunt creëren, toewijzen, volgen en beheren. Taken zijn actievere werkitems die zijn toegewezen aan gebruikers of groepen en die voltooiing vereisen voordat de documentworkflow kan doorgaan.

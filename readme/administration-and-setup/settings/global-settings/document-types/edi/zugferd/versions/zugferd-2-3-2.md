@@ -14,6 +14,25 @@ ZUGFeRD 2.3.2 était la version initiale du standard. Bien qu'elle soit ancienne
 | `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Code type de facture |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Date d'émission de la facture |
 
+### Type et sous-type de document (piloté par TRA)
+
+La XSLT TRANSFORMATION par défaut émet deux champs dérivés :
+
+| Champ DocBits | Source | Logique |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` ou `261` → **Credit Note** ; tout autre code → **Invoice** |
+| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vide → **Purchase Invoice** ; vide/absent → **Cost Invoice** |
+
+### Ventilation des taxes (classification par tranches)
+
+Les blocs `ApplicableTradeTax` sont distribués sur trois tranches basées sur le taux (et non sur des index positionnels `[1]`/`[2]`/`[3]`) : les champs au taux standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturent les taux ≥ 19 ; les champs au taux réduit (`*_2`) capturent 0 < taux < 19 ; les champs au taux zéro (`*_3`) capturent taux = 0. Voir [Ventilation des taxes ZUGFeRD](../README.md#tax-breakdown-tier-classified) pour la liste complète des champs.
+
+| Chemin ZUGFeRD CII | Champ DocBits | Champ Infor BOD | Type | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| `ApplicableTradeTax/RateApplicablePercent` (tranche 1) | `TAX_RATE` | `TaxPercent` | NUMBER | TVA au taux standard (≥ 19) |
+| `ApplicableTradeTax/BasisAmount` (tranche 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Montant net au taux standard |
+| `ApplicableTradeTax/CalculatedAmount` (tranche 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Montant de taxe au taux standard |
+
 ### Références de documents
 
 | Chemin ZUGFeRD CII | Champ DocBits | Champ Infor BOD | Type | Description |

@@ -1,6 +1,4 @@
-# Documentação do Workflow
-
-**Documentação do Workflow**
+# Atribuição e status — Exemplos práticos
 
 Para manter uma visão geral, você pode atribuir títulos diferentes aos workflows, de modo a saber imediatamente sobre qual tarefa cada workflow trata.
 

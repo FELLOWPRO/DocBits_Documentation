@@ -28,6 +28,19 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 | `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
 
+### Typ i podtyp dokumentu (sterowane przez TRA)
+
+> Ta sama logika obowiązuje dla **Factur-X** — Factur-X 1.x używa tej samej składni CII co ZUGFeRD 2.x, więc poniższy dynamiczny blok jest emitowany dla obu.
+
+Oprócz surowego `INVOICE_TYPE_CODE` domyślny TRANSFORMATION XSLT emituje kanoniczne drzewo `<INVOICE>` z dwoma polami pochodnymi:
+
+| Pole DocBits | Źródło | Logika |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `ExchangedDocument/TypeCode` (lub `HeaderExchangedDocument/TypeCode` dla ZUGFeRD 1.0) | UNCL 1001 `381` lub `261` → **Credit Note**; dowolny inny kod → **Invoice** |
+| `INVOICE_SUB_TYPE` | obecność `BuyerOrderReferencedDocument/IssuerAssignedID` (pod `ApplicableHeaderTradeAgreement` dla 2.x / `ApplicableSupplyChainTradeAgreement` dla 1.0) | Niepuste → **Purchase Invoice**; puste/brakujące → **Cost Invoice** |
+
+`INVOICE_SUB_TYPE` rozróżnia faktury powiązane z PO od bezpośrednich faktur kosztowych na potrzeby routingu AP.
+
 ### Document References
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
@@ -97,16 +110,27 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
 | `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
 
-### Tax Breakdown (Multiple Tax Rates)
+### Podział podatków (klasyfikowany według poziomów)
+
+Domyślny TRANSFORMATION XSLT rozdziela bloki `ApplicableTradeTax` na trzy poziomy oparte na stawce, zamiast korzystać z indeksów pozycyjnych. Każdy blok jest dopasowywany do poziomu na podstawie jego `RateApplicablePercent`:
+
+| Poziom | Pola DocBits | Reguła wyboru |
+| :--- | :--- | :--- |
+| Poziom 1 (Standardowy) | `TAX_RATE`, `NET_AMOUNT`, `TAX_AMOUNT` | stawka ≥ 19 |
+| Poziom 2 (Obniżony) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < stawka < 19 |
+| Poziom 3 (Zero) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | stawka = 0 |
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Tax rate 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Net amount for tax 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Tax amount 1 |
-| `ApplicableTradeTax[2]/RateApplicablePercent` | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Tax rate 2 |
-| `ApplicableTradeTax[2]/BasisAmount` | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Net amount for tax 2 |
-| `ApplicableTradeTax[2]/CalculatedAmount` | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Tax amount 2 |
+| `ApplicableTradeTax/RateApplicablePercent` (poziom 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Standardowa stawka VAT |
+| `ApplicableTradeTax/BasisAmount` (poziom 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Kwota netto stawki standardowej |
+| `ApplicableTradeTax/CalculatedAmount` (poziom 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Kwota podatku stawki standardowej |
+| `ApplicableTradeTax/RateApplicablePercent` (poziom 2) | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Obniżona stawka VAT |
+| `ApplicableTradeTax/BasisAmount` (poziom 2) | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Kwota netto stawki obniżonej |
+| `ApplicableTradeTax/CalculatedAmount` (poziom 2) | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Kwota podatku stawki obniżonej |
+| `ApplicableTradeTax/RateApplicablePercent` (poziom 3) | `TAX_RATE_3` | `TaxPercent3` | NUMBER | Zerowa stawka VAT |
+| `ApplicableTradeTax/BasisAmount` (poziom 3) | `NET_AMOUNT_3` | `TaxableAmount3` | AMOUNT | Kwota netto stawki zerowej |
+| `ApplicableTradeTax/CalculatedAmount` (poziom 3) | `TAX_AMOUNT_3` | `TaxAmount3` | AMOUNT | Kwota podatku stawki zerowej |
 
 ## Pełne mapowanie pozycji liniowych (tabela)
 

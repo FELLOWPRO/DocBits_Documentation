@@ -14,6 +14,19 @@ ZUGFeRD 1.0 był początkową wersją standardu. Choć jest to wersja starsza, w
 | `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Kod typu faktury |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Data wystawienia faktury |
 
+### Typ i podtyp dokumentu (sterowane przez TRA)
+
+Obok surowego `INVOICE_TYPE_CODE` domyślny TRANSFORMATION XSLT emituje dwa pola pochodne. ZUGFeRD 1.0 używa starszej składni CII, więc XPaths różnią się od 2.x:
+
+| Pole DocBits | Źródło (schemat 1.0) | Logika |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `CrossIndustryDocument/HeaderExchangedDocument/TypeCode` | UNCL 1001 `381` lub `261` → **Credit Note**; dowolny inny kod → **Invoice** |
+| `INVOICE_SUB_TYPE` | `SpecifiedSupplyChainTradeTransaction/ApplicableSupplyChainTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Niepuste → **Purchase Invoice**; puste/brakujące → **Cost Invoice** |
+
+### Podział podatków (klasyfikowany według poziomów)
+
+Bloki `ApplicableTradeTax` są rozdzielane na trzy poziomy oparte na stawce (nie pozycyjnie): pola stawki standardowej (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) obejmują stawkę ≥ 19; pola stawki obniżonej (`*_2`) obejmują 0 < stawka < 19; pola stawki zerowej (`*_3`) obejmują stawkę = 0. Pełną listę pól znajdziesz w [Podział podatków ZUGFeRD](../README.md#tax-breakdown-tier-classified). (ZUGFeRD 1.0 używa starszej składni CII w swoim TRANSFORMATION XSLT, ale reguły wyboru poziomów powyżej są identyczne jak w 2.x.)
+
 ### Odniesienia do dokumentów
 
 | Ścieżka ZUGFeRD CII | Pole DocBits | Pole Infor BOD | Typ | Opis |

@@ -32,6 +32,15 @@ XRechnung CII uses UN/CEFACT Cross-Industry Invoice format with these namespaces
 | `SpecifiedTradePaymentTerms/DueDateDateTime/DateTimeString` | `due_date` | Date |
 | `ApplicableHeaderTradeSettlement/InvoiceCurrencyCode` | `currency` | String |
 
+### Klasyfikacja typu dokumentu
+
+TRANSFORMATION XSLT zastępuje numeryczną wartość `TypeCode` przyjazną etykietą, zanim trafi ona do `invoice_type`:
+
+| Kod UNCL 1001 | Znaczenie | DocBits `invoice_type` |
+| :--- | :--- | :--- |
+| `381` / `261` | Nota kredytowa / Samowystawiona nota kredytowa | **Credit Note** |
+| Dowolny inny kod (`380`, `383`, `384`, `386`, `389`, `325`, …) | Faktura / debet / proforma / itp. | **Invoice** |
+
 ### Supplier Fields
 
 | CII XML Path | DocBits Field |

@@ -14,6 +14,19 @@ ZUGFeRD 1.0 è stata la versione iniziale dello standard. Sebbene sia datata, mo
 | `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Codice tipo fattura |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Data di emissione della fattura |
 
+### Tipo e sottotipo del documento (gestito da TRA)
+
+Oltre a `INVOICE_TYPE_CODE` grezzo, l'XSLT di TRANSFORMATION predefinito emette due campi derivati. ZUGFeRD 1.0 utilizza il vocabolario CII legacy, quindi gli XPath differiscono dalla 2.x:
+
+| Campo DocBits | Sorgente (schema 1.0) | Logica |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `CrossIndustryDocument/HeaderExchangedDocument/TypeCode` | UNCL 1001 `381` o `261` → **Credit Note**; qualsiasi altro codice → **Invoice** |
+| `INVOICE_SUB_TYPE` | `SpecifiedSupplyChainTradeTransaction/ApplicableSupplyChainTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vuoto → **Purchase Invoice**; vuoto/assente → **Cost Invoice** |
+
+### Ripartizione fiscale (classificata per fascia)
+
+I blocchi `ApplicableTradeTax` vengono distribuiti su tre fasce basate sull'aliquota (non su indici posizionali): i campi ad aliquota standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) catturano aliquote ≥ 19; i campi ad aliquota ridotta (`*_2`) catturano 0 < aliquota < 19; i campi ad aliquota zero (`*_3`) catturano aliquota = 0. Vedi [Ripartizione fiscale ZUGFeRD](../README.md#tax-breakdown-tier-classified) per l'elenco completo dei campi. (ZUGFeRD 1.0 utilizza il vocabolario CII legacy nel proprio XSLT di TRANSFORMATION, ma le regole di selezione delle fasce indicate sopra sono identiche a quelle della 2.x.)
+
 ### Riferimenti ai documenti
 
 | Percorso ZUGFeRD CII | Campo DocBits | Campo Infor BOD | Tipo | Descrizione |

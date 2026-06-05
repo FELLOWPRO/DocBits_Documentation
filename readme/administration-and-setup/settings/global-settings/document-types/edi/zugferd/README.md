@@ -28,6 +28,19 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Invoice issue date |
 | `ExchangedDocument/IncludedNote` | `INVOICE_NOTE` | `Note` | STRING | Invoice notes |
 
+### Tipo e sottotipo del documento (gestito da TRA)
+
+> La stessa logica si applica a **Factur-X** — Factur-X 1.x utilizza lo stesso vocabolario CII di ZUGFeRD 2.x, quindi il blocco dinamico riportato di seguito viene emesso per entrambi.
+
+Oltre a `INVOICE_TYPE_CODE` grezzo, l'XSLT di TRANSFORMATION predefinito emette un albero `<INVOICE>` canonico con due campi derivati:
+
+| Campo DocBits | Sorgente | Logica |
+| :--- | :--- | :--- |
+| `INVOICE_TYPE` | `ExchangedDocument/TypeCode` (oppure `HeaderExchangedDocument/TypeCode` per ZUGFeRD 1.0) | UNCL 1001 `381` o `261` → **Credit Note**; qualsiasi altro codice → **Invoice** |
+| `INVOICE_SUB_TYPE` | Presenza di `BuyerOrderReferencedDocument/IssuerAssignedID` (sotto `ApplicableHeaderTradeAgreement` per 2.x / `ApplicableSupplyChainTradeAgreement` per 1.0) | Non vuoto → **Purchase Invoice**; vuoto/assente → **Cost Invoice** |
+
+`INVOICE_SUB_TYPE` distingue le fatture collegate a un ordine d'acquisto dalle fatture di costo dirette ai fini dell'instradamento AP.
+
 ### Document References
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
@@ -97,16 +110,27 @@ DocBits unterstützt mehrere Versionen des ZUGFeRD-Standards:
 | `AllowanceTotalAmount` | `NEGATIVE_AMOUNT` | `AllowanceTotalAmount` | AMOUNT | Total allowances |
 | `ChargeTotalAmount` | `CHARGES` | `ChargeTotalAmount` | AMOUNT | Total charges |
 
-### Tax Breakdown (Multiple Tax Rates)
+### Ripartizione fiscale (classificata per fascia)
+
+L'XSLT di TRANSFORMATION predefinito distribuisce i blocchi `ApplicableTradeTax` su tre fasce basate sull'aliquota anziché su indici posizionali. Ogni blocco viene assegnato a una fascia in base al suo `RateApplicablePercent`:
+
+| Fascia | Campi DocBits | Regola di selezione |
+| :--- | :--- | :--- |
+| Fascia 1 (Standard) | `TAX_RATE`, `NET_AMOUNT`, `TAX_AMOUNT` | aliquota ≥ 19 |
+| Fascia 2 (Ridotta) | `TAX_RATE_2`, `NET_AMOUNT_2`, `TAX_AMOUNT_2` | 0 < aliquota < 19 |
+| Fascia 3 (Zero) | `TAX_RATE_3`, `NET_AMOUNT_3`, `TAX_AMOUNT_3` | aliquota = 0 |
 
 | ZUGFeRD CII Path | DocBits Field | Infor BOD Field | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax[1]/RateApplicablePercent` | `TAX_RATE` | `TaxPercent` | NUMBER | Tax rate 1 |
-| `ApplicableTradeTax[1]/BasisAmount` | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Net amount for tax 1 |
-| `ApplicableTradeTax[1]/CalculatedAmount` | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Tax amount 1 |
-| `ApplicableTradeTax[2]/RateApplicablePercent` | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Tax rate 2 |
-| `ApplicableTradeTax[2]/BasisAmount` | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Net amount for tax 2 |
-| `ApplicableTradeTax[2]/CalculatedAmount` | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Tax amount 2 |
+| `ApplicableTradeTax/RateApplicablePercent` (fascia 1) | `TAX_RATE` | `TaxPercent` | NUMBER | Percentuale IVA aliquota standard |
+| `ApplicableTradeTax/BasisAmount` (fascia 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Importo netto aliquota standard |
+| `ApplicableTradeTax/CalculatedAmount` (fascia 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Importo imposta aliquota standard |
+| `ApplicableTradeTax/RateApplicablePercent` (fascia 2) | `TAX_RATE_2` | `TaxPercent2` | NUMBER | Percentuale IVA aliquota ridotta |
+| `ApplicableTradeTax/BasisAmount` (fascia 2) | `NET_AMOUNT_2` | `TaxableAmount2` | AMOUNT | Importo netto aliquota ridotta |
+| `ApplicableTradeTax/CalculatedAmount` (fascia 2) | `TAX_AMOUNT_2` | `TaxAmount2` | AMOUNT | Importo imposta aliquota ridotta |
+| `ApplicableTradeTax/RateApplicablePercent` (fascia 3) | `TAX_RATE_3` | `TaxPercent3` | NUMBER | Percentuale IVA aliquota zero |
+| `ApplicableTradeTax/BasisAmount` (fascia 3) | `NET_AMOUNT_3` | `TaxableAmount3` | AMOUNT | Importo netto ad aliquota zero |
+| `ApplicableTradeTax/CalculatedAmount` (fascia 3) | `TAX_AMOUNT_3` | `TaxAmount3` | AMOUNT | Importo imposta aliquota zero |
 
 ## Mappatura completa delle voci di riga (tabella)
 

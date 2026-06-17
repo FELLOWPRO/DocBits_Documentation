@@ -37,10 +37,11 @@ const SHOTS = [
   ['quick_search_09_supplier', 'supplier_name=Test'],
   ['quick_search_10_purchase_order', 'purchase_order=PO'],
   ['quick_search_12_empty', 'supplier_name=""'],
-  ['quick_search_13_combined', 'status=ready_for_validation AND supplier_name=Test'],
+  ['quick_search_13_combined', 'supplier_name=Test AND status=ready_for_validation'],
   ['quick_search_14_between', 'total_amount between 1000 and 5000'],
+  ['quick_search_16_grouping', 'group by supplier_name'],
   ['quick_search_15_ap_empty', 'ap_assignment_code=""'],
-  ['quick_search_17_vector', 'vector: invoices about office supplies'],
+  ['quick_search_17_vector', 'vector: supplier invoice'],
   ['quick_search_18_ocr', 'ocr: demo invoice'],
   ['quick_search_19_ai', 'ai: invoices over 1000 from this year'],
 ];
@@ -103,11 +104,17 @@ async function setQuery(page, q) {
   await page.keyboard.press('ControlOrMeta+A');
   await page.keyboard.press('Delete');
   await page.waitForTimeout(250);
-  await page.keyboard.type(q, { delay: 15 });
-  await page.waitForTimeout(q ? 1200 : 200);
-  await page.keyboard.press('Escape');
-  await page.keyboard.press('Enter');
-  await page.waitForTimeout(1500);
+  // Commit each AND-predicate separately (chips auto-AND). Typing a literal
+  // " AND " made the parser quote the first value -> exact-match -> 0 results.
+  const parts = q && q.includes(' AND ') ? q.split(' AND ') : [q];
+  for (const part of parts) {
+    await page.keyboard.type(part, { delay: 15 });
+    await page.waitForTimeout(part ? 1000 : 200);
+    await page.keyboard.press('Escape');
+    await page.keyboard.press('Enter');
+    await page.waitForTimeout(1000);
+  }
+  await page.waitForTimeout(800);
   await page.waitForFunction(() => {
     const sp = document.querySelector('.q-spinner, .q-loading, [role="progressbar"]');
     return !sp || sp.offsetParent === null;

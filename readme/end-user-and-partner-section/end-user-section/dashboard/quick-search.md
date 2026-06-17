@@ -261,6 +261,8 @@ The list then shows collapsible **group headers**, each with the group's name an
 a **count** (e.g. *Ruiz Foods (12)*). Click a header to expand or collapse that
 group. For date fields you can group by **day, week or month**.
 
+<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Results grouped by supplier with collapsible headers"><figcaption><p><code>group by supplier_name</code> — results collapse into one expandable header per supplier.</p></figcaption></figure>
+
 Grouping combines with any filter — `status=ready_for_validation group by
 supplier_name` groups only the matching documents. Clicking into a group
 **drills down**: it applies that group's value as a filter and returns you to the
@@ -354,7 +356,7 @@ vector: invoices about office supplies
 vector: shipping delays with Hamburg port
 ```
 
-<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Semantic vector search results"><figcaption><p><code>vector: invoices about office supplies</code> — semantically related documents, even without those exact words.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/quick_search_17_vector.png" alt="Semantic vector search results"><figcaption><p><code>vector: supplier invoice</code> — semantically related documents, even without those exact words.</p></figcaption></figure>
 
 ### OCR text search — `ocr:`
 

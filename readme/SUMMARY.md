@@ -42,6 +42,7 @@
 * [Admin Section](admin-section/README.md)
   * [Settings](overview/settings/README.md)
     * [Snalaženje u Novom Izgledu](administration-and-setup/settings/ui-redesign-guide.md)
+    * [Infrastruktura](overview/settings/infrastructure.md)
     * [Podešavanja Pretrage Punog Teksta](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
     * [Document Processing](overview/settings/document-processing/README.md)
       * [Module](overview/settings/document-processing/module/README.md)

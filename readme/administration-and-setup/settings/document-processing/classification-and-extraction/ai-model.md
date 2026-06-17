@@ -16,11 +16,17 @@ In diesem Abschnitt können Sie die Token-Kosten für jedes Modell einsehen und 
 
 ## AI-Modell-Optionen
 
-Sie können zwischen den folgenden AI-Modellen wählen. Fahren Sie mit der Maus über das Informationssymbol in der Benutzeroberfläche, um die Token-Kosten pro Dokument für das ausgewählte AI-Modell anzuzeigen:
+DocBits bietet drei AI-Modell-Optionen für die Feld- und Tabellenextraktion. Sie unterscheiden sich im Gleichgewicht zwischen **Extraktionsgenauigkeit**, **Verarbeitungsgeschwindigkeit** und **Token-Kosten pro Dokument** – so können Sie die Option an die Art Ihrer Dokumente anpassen. Fahren Sie mit der Maus über das Informationssymbol neben der Einstellung, um die Token-Kosten der aktuell gewählten Option zu sehen.
 
-* **Full** – 2 Token pro Dokument
-* **Fast** – 1 Token pro Dokument
-* **Turbo** – 1 Token pro Dokument
+* **Full** – Die gründlichste Option mit der höchsten Extraktionsgenauigkeit. Am besten für komplexe Layouts, Scans schlechter Qualität oder Dokumente, bei denen Präzision am wichtigsten ist. Als leistungsstärkste Option ist sie auch die langsamste, bei **2 Token pro Dokument**.
+* **Fast** – Eine ausgewogene Option, die starke Genauigkeit mit schnellerer Verarbeitung bei geringeren Kosten verbindet. Empfohlener Standard für die meisten alltäglichen Dokumente, bei **1 Token pro Dokument**.
+* **Turbo** – Die schnellste und wirtschaftlichste Option. Am besten geeignet für große Mengen einfacher, sauberer, gut strukturierter Dokumente, bei denen Geschwindigkeit und niedrige Kosten wichtiger sind als maximale Genauigkeit, bei **1 Token pro Dokument**.
+
+| Option | Am besten für | Genauigkeit | Geschwindigkeit | Token-Kosten |
+|--------|---------------|-------------|-----------------|--------------|
+| **Full** | Komplexe Layouts, schlechte Scans, hohe Präzision | Höchste | Langsamste | 2 / Dokument |
+| **Fast** | Alltägliche Dokumente (empfohlener Standard) | Hoch | Schnell | 1 / Dokument |
+| **Turbo** | Große Mengen einfacher, sauberer Dokumente | Gut | Schnellste | 1 / Dokument |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

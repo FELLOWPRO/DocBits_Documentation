@@ -16,11 +16,17 @@ En esta sección, puedes revisar el costo de tokens para cada modelo y ver qué 
 
 ## Opciones del Modelo de IA
 
-Puedes elegir entre los siguientes modelos de IA. Pasa el cursor sobre el icono de información en la interfaz para ver el costo de tokens por documento para el modelo de IA seleccionado:
+DocBits ofrece tres opciones de modelo de IA para la extracción de campos y tablas. Se diferencian en el equilibrio entre **precisión de extracción**, **velocidad de procesamiento** y **costo de tokens por documento** — así puedes ajustar la opción al tipo de documentos que procesas. Pasa el cursor sobre el icono de información junto al ajuste para ver el costo de tokens de la opción seleccionada actualmente.
 
-* **Full** – 2 tokens por documento
-* **Fast** – 1 token por documento
-* **Turbo** – 1 token por documento
+* **Full** – La opción más exhaustiva, con la mayor precisión de extracción. Ideal para diseños complejos, escaneos de baja calidad o documentos en los que la precisión es lo más importante. Al ser la opción más potente, también es la más lenta, con **2 tokens por documento**.
+* **Fast** – Una opción equilibrada que combina alta precisión con un procesamiento más rápido y un costo menor. Es la opción predeterminada recomendada para la mayoría de los documentos habituales, con **1 token por documento**.
+* **Turbo** – La opción más rápida y económica. Más adecuada para grandes volúmenes de documentos sencillos, limpios y bien estructurados, donde la velocidad y el bajo costo importan más que la máxima precisión, con **1 token por documento**.
+
+| Opción | Ideal para | Precisión | Velocidad | Costo de tokens |
+|--------|-----------|-----------|-----------|-----------------|
+| **Full** | Diseños complejos, escaneos deficientes, alta precisión | Máxima | La más lenta | 2 / documento |
+| **Fast** | Documentos habituales (predeterminado recomendado) | Alta | Rápida | 1 / documento |
+| **Turbo** | Grandes volúmenes de documentos sencillos y limpios | Buena | La más rápida | 1 / documento |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

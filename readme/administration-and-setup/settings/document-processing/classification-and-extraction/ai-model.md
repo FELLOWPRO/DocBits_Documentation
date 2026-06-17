@@ -16,11 +16,17 @@ Bu bölümde, her model için belirteç maliyetini inceleyebilir ve her tedarik�
 
 ## Yapay Zeka Modeli Seçenekleri
 
-Aşağıdaki yapay zeka modelleri arasından seçim yapabilirsiniz. Seçilen yapay zeka modeli için belge başına belirteç maliyetini görüntülemek üzere arayüzdeki bilgi simgesinin üzerine gelin:
+DocBits, alan ve tablo çıkarımı için üç yapay zeka modeli seçeneği sunar. **Çıkarım doğruluğu**, **işleme hızı** ve **belge başına belirteç maliyeti** arasındaki dengede farklılık gösterirler — böylece seçeneği işlediğiniz belge türüne göre ayarlayabilirsiniz. Şu anda seçili seçeneğin belirteç maliyetini görmek için ayarın yanındaki bilgi simgesinin üzerine gelin.
 
-* **Tam** – Belge başına 2 belirteç
-* **Hızlı** – Belge başına 1 belirteç
-* **Turbo** – Belge başına 1 belirteç
+* **Full** – En kapsamlı seçenek, en yüksek çıkarım doğruluğuna sahiptir. Karmaşık düzenler, düşük kaliteli taramalar veya doğruluğun en önemli olduğu belgeler için idealdir. En güçlü seçenek olduğu için aynı zamanda en yavaşıdır, **belge başına 2 belirteç**.
+* **Fast** – Yüksek doğruluğu daha hızlı işleme ve daha düşük maliyetle birleştiren dengeli bir seçenek. Çoğu günlük belge için önerilen varsayılan seçenektir, **belge başına 1 belirteç**.
+* **Turbo** – En hızlı ve en ekonomik seçenek. Hızın ve düşük maliyetin azami doğruluktan daha önemli olduğu çok sayıda basit, temiz ve iyi yapılandırılmış belge için en uygunudur, **belge başına 1 belirteç**.
+
+| Seçenek | İdeal kullanım | Doğruluk | Hız | Belirteç maliyeti |
+|---------|----------------|----------|-----|-------------------|
+| **Full** | Karmaşık düzenler, kötü taramalar, yüksek hassasiyet | En yüksek | En yavaş | 2 / belge |
+| **Fast** | Günlük belgeler (önerilen varsayılan) | Yüksek | Hızlı | 1 / belge |
+| **Turbo** | Çok sayıda basit, temiz belge | İyi | En hızlı | 1 / belge |
 
 <figure><img src="../../../../.gitbook/assets/ai_model_2.png" alt=""><figcaption></figcaption></figure>
 

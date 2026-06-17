@@ -16,11 +16,17 @@ Nesta seção, você pode revisar o custo em tokens para cada modelo e ver qual 
 
 ## Opções de Modelo de IA
 
-Você pode escolher entre os seguintes modelos de IA. Passe o mouse sobre o ícone de informação na interface para ver o custo em tokens por documento para o modelo de IA selecionado:
+O DocBits oferece três opções de modelo de IA para a extração de campos e tabelas. Elas diferem no equilíbrio entre **precisão de extração**, **velocidade de processamento** e **custo em tokens por documento** — assim você pode adequar a opção ao tipo de documentos que processa. Passe o mouse sobre o ícone de informação ao lado da configuração para ver o custo em tokens da opção atualmente selecionada.
 
-* **Full** – 2 tokens por documento
-* **Fast** – 1 token por documento
-* **Turbo** – 1 token por documento
+* **Full** – A opção mais completa, com a maior precisão de extração. Ideal para layouts complexos, digitalizações de baixa qualidade ou documentos em que a precisão é o mais importante. Por ser a opção mais potente, também é a mais lenta, com **2 tokens por documento**.
+* **Fast** – Uma opção equilibrada que combina boa precisão com processamento mais rápido e custo menor. É a opção padrão recomendada para a maioria dos documentos do dia a dia, com **1 token por documento**.
+* **Turbo** – A opção mais rápida e econômica. Mais adequada para grandes volumes de documentos simples, limpos e bem estruturados, em que a velocidade e o baixo custo importam mais do que a precisão máxima, com **1 token por documento**.
+
+| Opção | Ideal para | Precisão | Velocidade | Custo em tokens |
+|-------|-----------|----------|------------|-----------------|
+| **Full** | Layouts complexos, digitalizações ruins, alta precisão | Máxima | A mais lenta | 2 / documento |
+| **Fast** | Documentos do dia a dia (padrão recomendado) | Alta | Rápida | 1 / documento |
+| **Turbo** | Grandes volumes de documentos simples e limpos | Boa | A mais rápida | 1 / documento |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

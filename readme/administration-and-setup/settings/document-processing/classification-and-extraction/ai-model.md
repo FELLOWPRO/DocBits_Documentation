@@ -16,11 +16,17 @@ W tej sekcji możesz przejrzeć koszt tokenów dla każdego modelu oraz sprawdzi
 
 ## Opcje Modelu sztucznej inteligencji
 
-Możesz wybierać spośród następujących modeli AI. Najedź kursorem na ikonę informacji w interfejsie, aby zobaczyć koszt tokenów na dokument dla wybranego modelu AI:
+DocBits oferuje trzy opcje modelu AI do ekstrakcji pól i tabel. Różnią się równowagą między **dokładnością ekstrakcji**, **szybkością przetwarzania** i **kosztem tokenów na dokument** — dzięki temu możesz dopasować opcję do rodzaju przetwarzanych dokumentów. Najedź kursorem na ikonę informacji obok ustawienia, aby zobaczyć koszt tokenów dla aktualnie wybranej opcji.
 
-* **Full** – 2 tokeny za dokument
-* **Fast** – 1 token za dokument
-* **Turbo** – 1 token za dokument
+* **Full** – Najbardziej dokładna opcja, o najwyższej dokładności ekstrakcji. Najlepsza do złożonych układów, skanów niskiej jakości lub dokumentów, w których precyzja jest najważniejsza. Jako najpotężniejsza opcja jest też najwolniejsza, przy **2 tokenach za dokument**.
+* **Fast** – Zrównoważona opcja łącząca wysoką dokładność z szybszym przetwarzaniem przy niższym koszcie. To zalecana opcja domyślna dla większości codziennych dokumentów, przy **1 tokenie za dokument**.
+* **Turbo** – Najszybsza i najbardziej ekonomiczna opcja. Najlepiej nadaje się do dużych ilości prostych, czystych, dobrze ustrukturyzowanych dokumentów, gdzie szybkość i niski koszt są ważniejsze niż maksymalna dokładność, przy **1 tokenie za dokument**.
+
+| Opcja | Najlepsza do | Dokładność | Szybkość | Koszt tokenów |
+|-------|--------------|------------|----------|---------------|
+| **Full** | Złożone układy, słabe skany, wysoka precyzja | Najwyższa | Najwolniejsza | 2 / dokument |
+| **Fast** | Codzienne dokumenty (zalecana domyślna) | Wysoka | Szybka | 1 / dokument |
+| **Turbo** | Duże ilości prostych, czystych dokumentów | Dobra | Najszybsza | 1 / dokument |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

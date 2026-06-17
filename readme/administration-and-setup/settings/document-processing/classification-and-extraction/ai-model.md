@@ -16,11 +16,17 @@ Dans cette section, vous pouvez consulter le coût en tokens pour chaque modèle
 
 ## Options du Modèle d'IA
 
-Vous pouvez choisir entre les modèles d'IA suivants. Survolez l'icône d'information dans l'interface pour voir le coût en tokens par document pour le modèle d'IA sélectionné :
+DocBits propose trois options de modèle d'IA pour l'extraction de champs et de tableaux. Elles diffèrent par l'équilibre entre **précision d'extraction**, **vitesse de traitement** et **coût en tokens par document** — vous pouvez ainsi adapter l'option au type de documents que vous traitez. Survolez l'icône d'information à côté du paramètre pour voir le coût en tokens de l'option actuellement sélectionnée.
 
-* **Full** – 2 tokens par document
-* **Fast** – 1 token par document
-* **Turbo** – 1 token par document
+* **Full** – L'option la plus complète, avec la plus haute précision d'extraction. Idéale pour les mises en page complexes, les scans de mauvaise qualité ou les documents où la précision prime. En tant qu'option la plus puissante, elle est aussi la plus lente, à **2 tokens par document**.
+* **Fast** – Une option équilibrée qui combine une bonne précision à un traitement plus rapide et à moindre coût. C'est l'option par défaut recommandée pour la plupart des documents courants, à **1 token par document**.
+* **Turbo** – L'option la plus rapide et la plus économique. La mieux adaptée aux gros volumes de documents simples, propres et bien structurés, où la vitesse et le faible coût importent plus que la précision maximale, à **1 token par document**.
+
+| Option | Idéale pour | Précision | Vitesse | Coût en tokens |
+|--------|-------------|-----------|---------|----------------|
+| **Full** | Mises en page complexes, scans médiocres, haute précision | La plus élevée | La plus lente | 2 / document |
+| **Fast** | Documents courants (option par défaut recommandée) | Élevée | Rapide | 1 / document |
+| **Turbo** | Gros volumes de documents simples et propres | Bonne | La plus rapide | 1 / document |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

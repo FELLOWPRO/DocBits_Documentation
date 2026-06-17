@@ -1,32 +1,38 @@
-# Users
+# Usuários
 
-User Settings is an area in a system where users can adjust personal preferences, account settings, and security settings. Typically, user settings include options such as password changes, profile information, notification preferences, and possibly individual permissions to access certain features or data.
+<figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gerenciamento de Usuários"><figcaption><p>Página de Gerenciamento de Usuários</p></figcaption></figure>
 
-In most organizations, only authorized people have access to user settings, usually administrators or system administrators. This is because the settings may contain sensitive information that could compromise the security of the system if changed by unauthorized persons. Administrators are able to manage user settings to ensure that they comply with organizational policies and requirements and that the integrity of the system is maintained.
+A página de Usuários permite que os administradores gerenciem todas as contas de usuário da sua organização no DocBits. Aqui você pode adicionar novos usuários, atribuir funções e controlar o acesso.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_user_search_bar.png" alt="Docbits User Search Bar"><figcaption></figcaption></figure>
+## Lista de Usuários
 
-1. **Search Bar**: Allows administrators to quickly find users by searching for their names or other details.
-2. **User List**: Displays a list of users with the following columns:
-   * **Name**: The full name of the user.
-   * **Email**: The user's email address, which is likely used as their login identifier.
-   * **Admin**: A checkbox indicating whether the user has administrative privileges. Admins typically have access to all settings and can manage other user accounts.
-   * **Actions**: This column typically includes buttons or links for performing actions such as editing user details, resetting passwords, or deleting the user account.
-3. **Add User Button**: This button is used to create new user accounts. Clicking on it would typically bring up a form where you can enter the new user's details, such as their name, email, and whether they should have admin rights.
+A tabela de usuários exibe as seguintes colunas:
 
-## Step-by-step instructions to add a new user:
+| Coluna | Descrição |
+|--------|-------------|
+| **Nome** | O nome completo do usuário. |
+| **E-Mail** | O endereço de e-mail do usuário, usado como identificador de login. |
+| **Último Login** | Data e hora do login mais recente do usuário. |
+| **Admin** | Caixa de seleção que indica se o usuário tem privilégios de administrador. Os Admins podem acessar todas as configurações e gerenciar outros usuários. |
+| **System Admin** | Caixa de seleção que indica o único System Admin da organização — a conta que o DocBits utiliza para ações automáticas, realizadas em segundo plano (como importações e exportações automatizadas). Um System Admin sempre tem também privilégios de Admin. Consulte [Privilégios de Administrador](admin-privileges.md#admin-vs-system-admin) para entender a diferença entre Admin e System Admin. |
+| **Ativo** | Caixa de seleção que mostra se a conta do usuário está atualmente ativa. Usuários inativos não conseguem fazer login. |
+| **Ações** | Menu com opções como editar os dados do usuário, redefinir senhas ou desativar a conta. |
 
-* **Access User Management:** Navigate to Settings - Global Settings - Groups, User and Permissions - User, where you can add new users.
-* **Add new user:** In the user settings, click on “Add user”
+Use a barra de **Pesquisa** no topo para encontrar usuários rapidamente por nome ou ID.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_add_new_user_button.png" alt="Docbits Add New User Button"><figcaption></figcaption></figure>
+## Análise de Logins
 
-* **Filling out the form:** A form will appear where you can enter the information for the new user. Typical information includes:
+Clique em **Análise de Logins** para visualizar os dados de atividade de login em toda a sua organização, incluindo a frequência e os padrões de login.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_user_form.png" alt="Docbits New User Form" width="375"><figcaption></figcaption></figure>
+## Adicionar um Novo Usuário
 
-* **Username:** Unique name for the user used to log in.
-* **First Name and Last Name:** Name of the user.
-* **Email Address:** The user's email address used for communications and notifications.
-* **Password**: A password for the user that should comply with security policies.
-* **User Role:** Set the user's role, e.g. B. Standard user or administrator.
+1. Clique no botão **Adicionar Usuário** no canto superior direito.
+2. Preencha as informações obrigatórias:
+   * **Nome de usuário**: Um nome exclusivo para o usuário.
+   * **Nome** e **Sobrenome**: O nome completo do usuário.
+   * **Endereço de E-mail**: Usado para login e notificações.
+   * **Senha**: Deve estar de acordo com as políticas de segurança da sua organização.
+   * **Função do Usuário**: Atribua a função adequada (Standard User, Admin ou System Admin).
+3. Clique em **Salvar** para criar a conta do usuário. O novo usuário receberá uma notificação por e-mail com seus dados de login.
+
+> **Observação:** A função de **System Admin** só pode ser escolhida ao criar um usuário — ela não pode ser adicionada ou removida depois. Cada organização pode ter apenas um System Admin, e escolher essa função concede automaticamente também os direitos de Admin. Consulte [Privilégios de Administrador](admin-privileges.md#admin-vs-system-admin) para saber quando utilizá-la.

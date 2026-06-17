@@ -1,32 +1,38 @@
 # Gebruikers
 
-Gebruikersinstellingen is een gebied in een systeem waar gebruikers persoonlijke voorkeuren, accountinstellingen en beveiligingsinstellingen kunnen aanpassen. Typisch omvatten gebruikersinstellingen opties zoals wachtwoordwijzigingen, profielinformatie, meldingsvoorkeuren en mogelijk individuele machtigingen om toegang te krijgen tot bepaalde functies of gegevens.
+<figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gebruikersbeheer"><figcaption><p>Pagina Gebruikersbeheer</p></figcaption></figure>
 
-In de meeste organisaties hebben alleen geautoriseerde personen toegang tot gebruikersinstellingen, meestal beheerders of systeembeheerders. Dit komt omdat de instellingen gevoelige informatie kunnen bevatten die de beveiliging van het systeem in gevaar kan brengen als deze door ongeautoriseerde personen worden gewijzigd. Beheerders kunnen gebruikersinstellingen beheren om ervoor te zorgen dat ze voldoen aan de beleidslijnen en vereisten van de organisatie en dat de integriteit van het systeem behouden blijft.
+Op de pagina Gebruikers kunnen beheerders alle gebruikersaccounts in uw DocBits-organisatie beheren. Hier kunt u nieuwe gebruikers toevoegen, rollen toewijzen en toegang regelen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_user_search_bar.png" alt="Docbits User Search Bar"><figcaption></figcaption></figure>
+## Gebruikerslijst
 
-1. **Zoekbalk**: Hiermee kunnen beheerders snel gebruikers vinden door naar hun namen of andere details te zoeken.
-2. **Gebruikerslijst**: Toont een lijst van gebruikers met de volgende kolommen:
-   * **Naam**: De volledige naam van de gebruiker.
-   * **E-mail**: Het e-mailadres van de gebruiker, dat waarschijnlijk wordt gebruikt als hun inlogidentificatie.
-   * **Beheerder**: Een selectievakje dat aangeeft of de gebruiker administratieve bevoegdheden heeft. Beheerders hebben doorgaans toegang tot alle instellingen en kunnen andere gebruikersaccounts beheren.
-   * **Acties**: Deze kolom bevat doorgaans knoppen of links voor het uitvoeren van acties zoals het bewerken van gebruikersgegevens, het resetten van wachtwoorden of het verwijderen van het gebruikersaccount.
-3. **Gebruiker toevoegen-knop**: Deze knop wordt gebruikt om nieuwe gebruikersaccounts aan te maken. Door erop te klikken verschijnt doorgaans een formulier waarin je de gegevens van de nieuwe gebruiker kunt invoeren, zoals hun naam, e-mail en of ze beheerdersrechten moeten hebben.
+De gebruikerstabel toont de volgende kolommen:
 
-## Stapsgewijze instructies om een nieuwe gebruiker toe te voegen:
+| Kolom | Beschrijving |
+|--------|-------------|
+| **Naam** | De volledige naam van de gebruiker. |
+| **E-mail** | Het e-mailadres van de gebruiker, dat wordt gebruikt om in te loggen. |
+| **Laatste aanmelding** | Datum en tijd van de meest recente aanmelding van de gebruiker. |
+| **Admin** | Selectievakje dat aangeeft of de gebruiker beheerdersrechten heeft. Admins hebben toegang tot alle instellingen en kunnen andere gebruikers beheren. |
+| **System Admin** | Selectievakje dat de enige System Admin van de organisatie aangeeft — het account dat DocBits gebruikt voor automatische acties op de achtergrond (zoals automatische imports en exports). Een System Admin heeft altijd ook Admin-rechten. Zie [Beheerdersrechten](admin-privileges.md#admin-vs-system-admin) voor het verschil tussen Admin en System Admin. |
+| **Actief** | Selectievakje dat aangeeft of het gebruikersaccount momenteel actief is. Inactieve gebruikers kunnen niet inloggen. |
+| **Acties** | Menu met opties zoals het bewerken van gebruikersgegevens, het opnieuw instellen van wachtwoorden of het deactiveren van het account. |
 
-* **Toegang tot gebruikersbeheer:** Navigeer naar Instellingen - Globale instellingen - Groepen, Gebruiker en Machtigingen - Gebruiker, waar je nieuwe gebruikers kunt toevoegen.
-* **Nieuwe gebruiker toevoegen:** Klik in de gebruikersinstellingen op “Voeg gebruiker toe”
+Gebruik de **Zoekbalk** bovenaan om snel gebruikers te vinden op naam of ID.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_add_new_user_button.png" alt="Docbits Add New User Button"><figcaption></figcaption></figure>
+## Aanmeldingsstatistieken
 
-* **Vul het formulier in:** Er verschijnt een formulier waarin je de informatie voor de nieuwe gebruiker kunt invoeren. Typische informatie omvat:
+Klik op **Aanmeldingsstatistieken** om gegevens over aanmeldingsactiviteit binnen uw organisatie te bekijken, waaronder de frequentie en patronen van aanmeldingen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_user_form.png" alt="Docbits New User Form" width="375"><figcaption></figcaption></figure>
+## Een nieuwe gebruiker toevoegen
 
-* **Gebruikersnaam:** Unieke naam voor de gebruiker die wordt gebruikt om in te loggen.
-* **Voornaam en Achternaam:** Naam van de gebruiker.
-* **E-mailadres:** Het e-mailadres van de gebruiker dat wordt gebruikt voor communicatie en meldingen.
-* **Wachtwoord**: Een wachtwoord voor de gebruiker dat moet voldoen aan de beveiligingsbeleid.
-* **Gebruikersrol:** Stel de rol van de gebruiker in, bijv. Standaard gebruiker of beheerder.
+1. Klik op de knop **Gebruiker toevoegen** rechtsboven.
+2. Vul de vereiste gegevens in:
+   * **Gebruikersnaam**: Een unieke naam voor de gebruiker.
+   * **Voornaam** en **Achternaam**: De volledige naam van de gebruiker.
+   * **E-mailadres**: Wordt gebruikt om in te loggen en voor meldingen.
+   * **Wachtwoord**: Moet voldoen aan het beveiligingsbeleid van uw organisatie.
+   * **Gebruikersrol**: Wijs de juiste rol toe (Standard User, Admin of System Admin).
+3. Klik op **Opslaan** om het gebruikersaccount aan te maken. De nieuwe gebruiker ontvangt een e-mail met de inloggegevens.
+
+> **Let op:** De rol **System Admin** kan alleen worden gekozen bij het aanmaken van een gebruiker — die kan later niet meer worden toegevoegd of verwijderd. Elke organisatie kan slechts één System Admin hebben, en bij het kiezen ervan worden automatisch ook Admin-rechten toegekend. Zie [Beheerdersrechten](admin-privileges.md#admin-vs-system-admin) om te leren wanneer u deze rol gebruikt.

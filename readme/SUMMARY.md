@@ -249,6 +249,7 @@
     * [Edytowanie szablonów e-maili](administration-and-setup/settings/supplier-setting/editing-email-templates.md)
     * [Konfiguracja eksportu dla Supplier Portal dla M3](administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md)
   * [Zarządzanie pamięcią podręczną](administration-and-setup/settings/cache-management.md)
+  * [Infrastruktura](administration-and-setup/settings/infrastructure.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Dashboard](administration-and-setup/workflow/workflow-dashboard.md)
   * [Standard Workflow](administration-and-setup/workflow/standard-workflow-builder.md)

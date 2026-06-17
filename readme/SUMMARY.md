@@ -42,6 +42,7 @@
 * [Admin Section](admin-section/README.md)
   * [Settings](overview/settings/README.md)
     * [Yeni Düzende Yön Bulma](administration-and-setup/settings/ui-redesign-guide.md)
+    * [Altyapı](overview/settings/infrastructure.md)
     * [Tam Metin Arama Ayarları](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
     * [Document Processing](overview/settings/document-processing/README.md)
       * [Module](overview/settings/document-processing/module/README.md)

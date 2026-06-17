@@ -17,7 +17,56 @@ This guide is organised the way the search is built up:
 > value from the list — Quick Search builds the query for you. The examples below
 > also show the typed form so you can copy them directly.
 
+### Watch the tour
+
+A short walkthrough of everything below — typing a field, turning conditions
+into chips, combining them, the Smart Filters, and the advanced search modes.
+
+<figure><video src="../../../.gitbook/assets/quick-search.en.mp4" controls preload="metadata" width="100%"></video><figcaption><p>Quick Search — a guided tour.</p></figcaption></figure>
+
 <figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="The Quick Search bar at the top of the Dashboard"><figcaption><p>The Quick Search bar at the top of the Dashboard.</p></figcaption></figure>
+
+---
+
+## How the search bar works — chips, toolbar & raw view
+
+Before the fields themselves, it helps to know how the bar is laid out.
+
+### Conditions become chips
+
+As you complete a condition (a field, an operator and a value) Quick Search turns
+it into a **chip** — a coloured pill inside the bar — and starts a fresh one. A
+chip shows the **field**, the **operator** and the **value**, with a **×** to
+remove it. Chips are colour-coded by where the data lives:
+
+| Chip colour | Field type |
+|-------------|------------|
+| **Blue** | Standard column (document name, status, dates) |
+| **Orange** | Fulltext / extracted field (supplier, amount, invoice number) |
+| **Purple** | Vector (semantic) search |
+| **Green** | OCR text search |
+
+Click a chip to edit it (it expands back to text); click **×** to delete it.
+Several chips combined read as **AND** by default.
+
+### The toolbar
+
+At the right-hand end of the bar:
+
+- **ⓘ Help** — opens the in-app **Dashboard Search — Fields & Syntax** reference
+  listing every field, operator and shortcut available in your workspace.
+- **Filters (tune)** — a quick panel for the common Status / User / Restart
+  filters, with **Clear filters** and **Apply**.
+- **Index ring** — a small progress ring showing how much of your fulltext index
+  is built (only shown when fulltext search is enabled).
+
+### Standard vs. raw view
+
+The bar normally shows your query as chips (**standard view**). Switch to **raw
+view** to see and edit the query as plain text (e.g.
+`status=ready_for_validation AND supplier_name=Test`) — useful for copying,
+sharing, or typing a long query directly. Your query survives the switch and is
+remembered when you reload the Dashboard.
 
 ---
 
@@ -95,6 +144,17 @@ Use `>`, `<`, `>=`, `<=` for date ranges. You can also use **relative** dates:
 `today()`, `today()-7` (last 7 days), `today()+30` (next 30 days).
 
 <figure><img src="../../../.gitbook/assets/quick_search_06_date.png" alt="Filtering by creation date"><figcaption><p><code>created_on&#62;2026-05-25</code> — documents created after a date.</p></figcaption></figure>
+
+### Find documents by invoice sub-type
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Invoice sub-type is a fixed list (for example **Cost Invoice** or **Purchase
+Invoice**), so `=` is an **exact** match and the bar offers a value picker when
+you type `invoice_sub_type=`. Use `invoice_sub_type!="Cost Invoice"` for
+everything except that sub-type.
 
 ---
 
@@ -191,6 +251,27 @@ The three **PO match** filters and the fulltext fields require fulltext search
 to be enabled for your organisation.
 
 <figure><img src="../../../.gitbook/assets/quick_search_11_smart_filters.png" alt="The Smart Filters dropdown panel"><figcaption><p>The Smart Filters at the top of the Quick Search dropdown — one click applies the filter (Overdue, Due soon, Assigned to me, Today's inbox, Pending validation, Electronic documents, Full / Partial / Under PO match).</p></figcaption></figure>
+
+---
+
+## Grouping results
+
+Instead of a flat list, you can **group** the results by any field — supplier,
+status, document type, sub-organisation, or a date bucket. Add a grouping from
+the search bar:
+
+```
+group by supplier_name
+```
+
+The list then shows collapsible **group headers**, each with the group's name and
+a **count** (e.g. *Ruiz Foods (12)*). Click a header to expand or collapse that
+group. For date fields you can group by **day, week or month**.
+
+Grouping combines with any filter — `status=ready_for_validation group by
+supplier_name` groups only the matching documents. Clicking into a group
+**drills down**: it applies that group's value as a filter and returns you to the
+flat list for that selection.
 
 ---
 

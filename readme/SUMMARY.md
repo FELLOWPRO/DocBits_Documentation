@@ -351,6 +351,7 @@
     * [Exportconfiguratie voor Leverancierportaal voor M3](administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md)
   * [API-Licenties](administration-and-setup/settings/api-licenses.md)
   * [Cachebeheer](administration-and-setup/settings/cache-management.md)
+  * [Infrastructuur](administration-and-setup/settings/infrastructure.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Dashboard](administration-and-setup/workflow/workflow-dashboard.md)
   * [Standard Workflow](administration-and-setup/workflow/standard-workflow-builder.md)

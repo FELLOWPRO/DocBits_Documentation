@@ -245,6 +245,7 @@
     * [Modification des Modèles d'Email](administration-and-setup/settings/supplier-setting/editing-email-templates.md)
     * [Configuration de l'exportation pour le portail des fournisseurs pour M3](administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal.md)
   * [Gestion du Cache](administration-and-setup/settings/cache-management.md)
+  * [Infrastructure](administration-and-setup/settings/infrastructure.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Dashboard](administration-and-setup/workflow/workflow-dashboard.md)
   * [Standard Workflow](administration-and-setup/workflow/standard-workflow-builder.md)

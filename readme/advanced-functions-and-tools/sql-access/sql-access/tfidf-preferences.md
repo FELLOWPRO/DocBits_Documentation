@@ -50,7 +50,7 @@ The `public.tfidf_preferences` table appears to be designed to store preferences
 ### pref_value
 - **Meaning**: The value associated with the preference key.
 - **Role**: Descriptive Field.
-- **Typical Contents**: A string or text value that corresponds to the preference key, e.g., 'true', 'false', or 'gpt-4o'.
+- **Typical Contents**: A string or text value that corresponds to the preference key, e.g., 'true', 'false', or 'Full'.
 
 ### created_by
 - **Meaning**: Identifier for the user who created the preference entry.

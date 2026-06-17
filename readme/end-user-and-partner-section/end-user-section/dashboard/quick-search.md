@@ -90,7 +90,7 @@ Invoice.xml   iNVoice.xml   iNvoiCE.edi   …
 It does **not** match `XYZ_Invoice.pdf` (there "invoice" is in the middle — use
 `:` for that).
 
-<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice, any case"><figcaption><p><code>filename=invoice</code> — only names that <strong>start with</strong> "invoice", any capitalisation (<code>INVOICE.pdf</code>, <code>iNvoiCE.pdf</code>, <code>iNVoice.pdf</code>, <code>Invoice.pdf</code> all match — 7 results). Compare with <code>:</code> below.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/quick_search_02_filename_starts.png" alt="filename=invoice matches only names that start with invoice, any case"><figcaption><p><code>filename=invoice</code> — only names that <strong>start with</strong> "invoice", any capitalisation (<code>Invoice.pdf</code>, <code>iNVoice.pdf</code>, <code>INVOICE_2026.pdf</code> … all match). Compare with <code>:</code> below.</p></figcaption></figure>
 
 #### `:` → contains (anywhere)
 

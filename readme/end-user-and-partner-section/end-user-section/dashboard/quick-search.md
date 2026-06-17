@@ -17,13 +17,6 @@ This guide is organised the way the search is built up:
 > value from the list — Quick Search builds the query for you. The examples below
 > also show the typed form so you can copy them directly.
 
-### Watch the tour
-
-A short walkthrough of everything below — typing a field, turning conditions
-into chips, combining them, the Smart Filters, and the advanced search modes.
-
-<figure><video src="../../../.gitbook/assets/quick-search.en.mp4" controls preload="metadata" width="100%"></video><figcaption><p>Quick Search — a guided tour.</p></figcaption></figure>
-
 <figure><img src="../../../.gitbook/assets/quick_search_01_entry.png" alt="The Quick Search bar at the top of the Dashboard"><figcaption><p>The Quick Search bar at the top of the Dashboard.</p></figcaption></figure>
 
 ---

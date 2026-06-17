@@ -258,6 +258,7 @@
     * [Exportar la configuración del portal de proveedores para M3](administration-and-setup/settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md)
     * [Permisos del Proveedor](administration-and-setup/settings/supplier-setting/supplier-permissions.md)
   * [Gestión de Caché](administration-and-setup/settings/cache-management.md)
+  * [Infraestructura](administration-and-setup/settings/infrastructure.md)
 * [Workflow](administration-and-setup/workflow/README.md)
   * [Dashboard](administration-and-setup/workflow/workflow-dashboard.md)
   * [Standard Workflow](administration-and-setup/workflow/standard-workflow-builder.md)

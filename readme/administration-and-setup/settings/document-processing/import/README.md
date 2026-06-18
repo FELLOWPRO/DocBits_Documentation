@@ -83,7 +83,7 @@ U kunt een e-mailimport instellen die automatisch documenten uit uw inbox import
 
 Naast de hierboven genoemde bestandsextensies identificeert DocBits een document ook op basis van de **werkelijke bestandsinhoud** (bestandshandtekening), niet alleen op basis van het inhoudstype dat door het verzendende mailsysteem wordt opgegeven. Dit is belangrijk bij **doorgestuurde** e-mails: tussenliggende mailservers/gateways voorzien een bijlage vaak van een generiek type (`application/octet-stream`) in plaats van bijvoorbeeld `application/pdf` of `application/xml`. DocBits herkent en importeert dergelijke bijlagen toch correct.
 
-* **Doorgestuurde `.eml`**-berichten worden uitgepakt en de daarin opgenomen documenten worden geïmporteerd.
+* **Doorgestuurde `.eml`**-berichten en Outlook `winmail.dat`-bijlagen (TNEF) worden uitgepakt en de daarin opgenomen documenten worden geïmporteerd.
 * **Genegeerd:** inline-afbeeldingen die met een e-mail meekomen (handtekeninglogo's / ingesloten afbeeldingen — PNG, JPG, GIF, BMP) worden stilzwijgend overgeslagen en **niet** als mislukte import geteld.
 
 Als een bijlage niet kan worden geïmporteerd en de optie **“Beantwoord deze e-mail als de import niet kan worden uitgevoerd”** is ingeschakeld voor het inkomende adres, wordt het geconfigureerde antwoordadres op de hoogte gesteld.

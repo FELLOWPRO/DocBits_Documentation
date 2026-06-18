@@ -64,7 +64,7 @@ Zodra deze is ingeschakeld, verschijnt er een sectie **Inkomende e-mails** onder
 Klik op **Opslaan** om uw wijzigingen toe te passen.
 
 {% hint style="info" %}
-**Welke bijlagen worden geïmporteerd?** DocBits importeert de ondersteunde documentbijlagen — zie [Importeren → E-mail importeren](../import/README.md#email-import) voor de volledige lijst met bestandstypen — en pakt doorgestuurde `.eml`-berichten uit om de documenten erin te importeren. De herkenning is ook gebaseerd op de **werkelijke bestandsinhoud**, zodat bijlagen die een doorsturende mailserver van een generiek type (`application/octet-stream`) voorziet, toch correct worden geïmporteerd. Inline-afbeeldingen (handtekeninglogo's / ingesloten afbeeldingen) worden genegeerd.
+**Welke bijlagen worden geïmporteerd?** DocBits importeert de ondersteunde documentbijlagen — zie [Importeren → E-mail importeren](../import/README.md#email-import) voor de volledige lijst met bestandstypen — en pakt doorgestuurde `.eml`-berichten en Outlook `winmail.dat`-bijlagen (TNEF) uit om de documenten erin te importeren. De herkenning is ook gebaseerd op de **werkelijke bestandsinhoud**, zodat bijlagen die een doorsturende mailserver van een generiek type (`application/octet-stream`) voorziet, toch correct worden geïmporteerd. Inline-afbeeldingen (handtekeninglogo's / ingesloten afbeeldingen) worden genegeerd.
 {% endhint %}
 
 ### Welke methode wanneer

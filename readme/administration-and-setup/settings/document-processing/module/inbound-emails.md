@@ -63,6 +63,10 @@ Una volta attivato, nella sezione **Impostazioni → Elaborazione documenti → 
 
 Fai clic su **Salva** per applicare le modifiche.
 
+{% hint style="info" %}
+**Quali allegati vengono importati?** DocBits importa gli allegati **PDF**, **TIFF** e **XML** (es. fatture elettroniche eCOS / EDI) e decomprime le e-mail `.eml` inoltrate per importare i documenti che contengono. Il riconoscimento si basa sul **contenuto effettivo del file**, quindi gli allegati a cui un server di posta di inoltro riassegna un tipo generico (`application/octet-stream`) vengono comunque importati correttamente. Le immagini in linea (loghi della firma / grafica incorporata) vengono ignorate. Consulta [Importazione → Importazione e-mail](../import/README.md#email-import) per l'elenco completo e il comportamento.
+{% endhint %}
+
 ### Quale metodo scegliere
 
 * **Usa un account di importazione e-mail** quando i documenti arrivano già in una casella dedicata e vuoi che DocBits li recuperi da solo — IMAP per server di posta generici, OAuth Office365 per Microsoft 365.

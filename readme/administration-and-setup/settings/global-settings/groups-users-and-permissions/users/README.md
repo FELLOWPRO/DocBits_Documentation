@@ -24,6 +24,8 @@ Gebruik de **Zoekbalk** bovenaan om snel gebruikers te vinden op naam of ID.
 
 Klik op **Aanmeldingsstatistieken** om gegevens over aanmeldingsactiviteit binnen uw organisatie te bekijken, waaronder de frequentie en patronen van aanmeldingen.
 
+Zie [Aanmeldingsanalyses](login-analytics.md) voor de volledige uitsplitsing.
+
 ## Een nieuwe gebruiker toevoegen
 
 1. Klik op de knop **Gebruiker toevoegen** rechtsboven.

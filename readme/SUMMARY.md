@@ -106,6 +106,7 @@
       * [Gebruikers](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)
         * [Modifying User Details](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md)
         * [Admin Privileges](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/admin-privileges.md)
+        * [Aanmeldingsanalyses](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md)
       * [Suborganisaties](administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/README.md)
         * [How to create a Sub-Organization](administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md)
       * [Groepen en Machtigingen](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md)

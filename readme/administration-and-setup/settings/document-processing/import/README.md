@@ -78,6 +78,19 @@ Belgeler gelen kutunuza gelir gelmez otomatik olarak içe aktaran bir e-posta i�
 * `.edi`
 * `.purchaseorder`
 
+{% hint style="info" %}
+**Ek türleri nasıl algılanır?**
+
+DocBits, bir belgeyi yalnızca gönderen posta sisteminin bildirdiği içerik türüne göre değil, **gerçek dosya içeriğine** (dosya imzası) göre tanımlar. Bu, **yönlendirilen** e-postalar için önemlidir: aradaki posta sunucuları/ağ geçitleri, bir PDF veya XML ekini sıklıkla `application/pdf` veya `application/xml` yerine genel bir türle (`application/octet-stream`) yeniden etiketler. DocBits, bu tür ekleri yine de doğru şekilde tanır ve içe aktarır.
+
+* **İçe aktarılan** belge ekleri: **PDF**, **TIFF** ve **XML** (ör. eCOS / EDI e‑faturaları).
+* **Yönlendirilen `.eml`** mesajları açılır ve içerdikleri PDF/TIFF/XML ekleri içe aktarılır.
+* **Yoksayılan:** bir e-postada birlikte gelen satır içi görseller (imza logoları / gömülü grafikler — PNG, JPG, GIF, BMP). Bunlar sessizce atlanır ve başarısız içe aktarım olarak **sayılmaz**.
+* **İçe aktarılmayan:** diğer herhangi bir ek türü (ör. ZIP, DOCX, düz metin). Bunlar başarısız içe aktarım olarak kaydedilir.
+
+Bir ek içe aktarılamazsa ve gelen adres için **“İçe aktarım yapılamazsa bu e-postaya yanıt ver”** seçeneği etkinse, yapılandırılan yanıt adresi bilgilendirilir.
+{% endhint %}
+
 ### Yeni IMAP bağlantısı ekle
 
 1. Yeni bir IMAP bağlantısı eklemek için **E-posta İçe Aktarma** bölümündeki **Ekle** düğmesine tıklayın.

@@ -19,6 +19,61 @@ Ovaj vodič je organizovan onako kako se pretraga gradi:
 
 ---
 
+## Kako funkcioniše traka za pretragu — čipovi, alatna traka i sirovi prikaz
+
+Čim dovršite uslov (polje, operator i vrednost), Brza pretraga ga pretvara u
+**čip** — obojenu pilulu unutar trake — i započinje novi. Čip prikazuje **polje**,
+**operator** i **vrednost**, sa **×** za uklanjanje. Čipovi su obojeni prema tome
+gde se podaci nalaze:
+
+| Boja čipa | Tip polja |
+|-----------|-----------|
+| **Plava** | Standardna kolona (naziv dokumenta, status, datumi) |
+| **Narandžasta** | Polje celog teksta / izdvojeno polje (dobavljač, iznos, broj fakture) |
+| **Ljubičasta** | Vektorska (semantička) pretraga |
+| **Zelena** | OCR pretraga teksta |
+
+Kliknite na čip da biste ga izmenili; kliknite na **×** da biste ga obrisali. Više
+spojenih čipova se podrazumevano čita kao **AND**.
+
+**Alatna traka** (desno od trake): **ⓘ Pomoć** otvara ugrađenu referencu polja i
+sintakse; **Filteri** je brzi panel za Status / Korisnika / Restart; **prsten
+indeksa** prikazuje koliko je indeksa celog teksta izgrađeno (samo kada je pretraga
+celog teksta uključena).
+
+**Standardni nasuprot sirovom prikazu:** traka prikazuje vaš upit kao čipove
+(standardno). Pređite na **sirovi prikaz** da biste ga videli i izmenili kao običan
+tekst — zgodno za kopiranje ili kucanje dugačkog upita. Vaš upit se pamti kada
+ponovo učitate stranicu.
+
+### Pronalaženje dokumenata po podtipu fakture
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Podtip fakture je fiksna lista (npr. **Cost Invoice**, **Purchase Invoice**), pa je
+`=` tačno podudaranje i traka nudi birač vrednosti. Koristite
+`invoice_sub_type!="Cost Invoice"` za sve osim tog podtipa.
+
+## Grupisanje rezultata
+
+Umesto ravne liste možete **grupisati** rezultate po bilo kom polju — dobavljač,
+status, tip dokumenta ili vremenski opseg po datumu:
+
+```
+group by supplier_name
+```
+
+Lista prikazuje sklopive **zaglavlja grupa**, svako sa **brojačem**. Kliknite na
+zaglavlje da biste ga proširili ili skupili; kliknite unutar grupe da biste se
+**spustili u detalje** (primenili tu vrednost kao filter). Grupisanje se kombinuje
+sa bilo kojim filterom.
+
+<figure><img src="../../.gitbook/assets/quick_search_16_grouping.png" alt="Rezultati grupisani po dobavljaču"><figcaption><p><code>group by supplier_name</code> — rezultati se skupljaju u jedno proširivo zaglavlje po dobavljaču.</p></figcaption></figure>
+
+---
+
 ## Deo 1 — Standardna polja
 
 Standardna polja su sopstvene kolone dokumenta. **Uvek su dostupna**, bez obzira

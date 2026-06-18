@@ -28,6 +28,10 @@ Gelen e-postayı aktive ettikten sonra, belgelerin nasıl içe aktarılacağın�
     * **İçe Aktarım Yapılamazsa Bu E-postaya Yanıt Ver**: İçe aktarma girişimi başarısız olduğunda sistemin otomatik olarak yanıt vermesini istiyorsanız bu seçeneği açın.
 3. **Ayarları Kaydet**: Bu seçenekleri yapılandırdıktan sonra, uygulamak için **Kaydet**'e tıklayın.
 
+{% hint style="info" %}
+**Hangi ekler içe aktarılır?** DocBits, desteklenen belge eklerini içe aktarır — tüm dosya türlerinin listesi için bkz. [İçe Aktarma → E-posta İçe Aktarma](../import/README.md#email-import) — ve iletilen `.eml` mesajlarını açarak içindeki belgeleri içe aktarır. Tanıma ayrıca **gerçek dosya içeriğine** dayanır; bu nedenle ileten bir posta sunucusunun genel bir türle (`application/octet-stream`) yeniden etiketlediği ekler de doğru şekilde içe aktarılır. Satır içi görseller (imza logoları / gömülü grafikler) yok sayılır.
+{% endhint %}
+
 ## Önceden Tanımlanmış E-postalar
 
 <figure><img src="../../../../.gitbook/assets/inbound_emails_3.png" alt=""><figcaption></figcaption></figure>

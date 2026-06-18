@@ -18,6 +18,60 @@ Ten przewodnik jest ułożony tak, jak buduje się wyszukiwanie:
 
 ---
 
+## Jak działa pasek wyszukiwania — chipy, pasek narzędzi i widok surowy
+
+Gdy uzupełnisz warunek (pole, operator i wartość), Szybkie wyszukiwanie zamienia go
+w **chip** — kolorową plakietkę wewnątrz paska — i rozpoczyna kolejny. Chip pokazuje
+**pole**, **operator** i **wartość**, wraz z **×** do jego usunięcia. Chipy są
+oznaczone kolorem zależnie od tego, gdzie znajdują się dane:
+
+| Kolor chipa | Typ pola |
+|-------------|----------|
+| **Niebieski** | Kolumna standardowa (nazwa dokumentu, status, daty) |
+| **Pomarańczowy** | Pole pełnotekstowe / wyodrębnione (dostawca, kwota, numer faktury) |
+| **Fioletowy** | Wyszukiwanie wektorowe (semantyczne) |
+| **Zielony** | Wyszukiwanie tekstu OCR |
+
+Kliknij chip, aby go edytować; kliknij **×**, aby go usunąć. Kilka połączonych
+chipów jest domyślnie odczytywanych jako **AND**.
+
+**Pasek narzędzi** (po prawej stronie paska): **ⓘ Pomoc** otwiera wbudowaną
+dokumentację pól i składni; **Filtry** to szybki panel Status / Użytkownik /
+Restart; **pierścień indeksu** pokazuje, jaka część indeksu pełnotekstowego została
+zbudowana (tylko gdy wyszukiwanie pełnotekstowe jest włączone).
+
+**Widok standardowy a surowy:** pasek pokazuje Twoje zapytanie jako chipy
+(standardowy). Przełącz na **widok surowy**, aby zobaczyć i edytować je jako zwykły
+tekst — przydatne do skopiowania lub wpisania długiego zapytania. Twoje zapytanie
+jest zapamiętywane po ponownym załadowaniu.
+
+### Znajdowanie dokumentów po podtypie faktury
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Podtyp faktury to lista stała (np. **Cost Invoice**, **Purchase Invoice**), więc
+`=` to dopasowanie dokładne, a pasek oferuje wybór wartości. Użyj
+`invoice_sub_type!="Cost Invoice"` dla wszystkiego poza tym podtypem.
+
+## Grupowanie wyników
+
+Zamiast płaskiej listy możesz **pogrupować** wyniki według dowolnego pola —
+dostawcy, statusu, typu dokumentu lub przedziału daty:
+
+```
+group by supplier_name
+```
+
+Lista pokazuje zwijalne **nagłówki grup**, każdy z **licznikiem**. Kliknij nagłówek,
+aby go rozwinąć lub zwinąć; kliknij wnętrze grupy, aby **zejść głębiej** (zastosować
+tę wartość jako filtr). Grupowanie łączy się z dowolnym filtrem.
+
+<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Wyniki pogrupowane według dostawcy"><figcaption><p><code>group by supplier_name</code> — wyniki zwijają się w jeden rozwijalny nagłówek na dostawcę.</p></figcaption></figure>
+
+---
+
 ## Część 1 — Pola standardowe
 
 Pola standardowe to własne kolumny dokumentu. Są **zawsze dostępne**, niezależnie

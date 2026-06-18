@@ -79,14 +79,12 @@ U kunt een e-mailimport instellen die automatisch documenten uit uw inbox import
 * `.purchaseorder`
 
 {% hint style="info" %}
-**Hoe bijlagetypen worden herkend**
+**Hoe bijlagen worden herkend**
 
-DocBits identificeert een document op basis van de **werkelijke bestandsinhoud** (bestandshandtekening), niet alleen op basis van het inhoudstype dat door het verzendende mailsysteem wordt opgegeven. Dit is belangrijk bij **doorgestuurde** e-mails: tussenliggende mailservers/gateways voorzien een PDF- of XML-bijlage vaak van een generiek type (`application/octet-stream`) in plaats van `application/pdf` of `application/xml`. DocBits herkent en importeert dergelijke bijlagen toch correct.
+Naast de hierboven genoemde bestandsextensies identificeert DocBits een document ook op basis van de **werkelijke bestandsinhoud** (bestandshandtekening), niet alleen op basis van het inhoudstype dat door het verzendende mailsysteem wordt opgegeven. Dit is belangrijk bij **doorgestuurde** e-mails: tussenliggende mailservers/gateways voorzien een bijlage vaak van een generiek type (`application/octet-stream`) in plaats van bijvoorbeeld `application/pdf` of `application/xml`. DocBits herkent en importeert dergelijke bijlagen toch correct.
 
-* **Geïmporteerde** documentbijlagen: **PDF**, **TIFF** en **XML** (bijv. eCOS / EDI e‑facturen).
-* **Doorgestuurde `.eml`**-berichten worden uitgepakt en de daarin opgenomen PDF/TIFF/XML-bijlagen worden geïmporteerd.
-* **Genegeerd:** inline-afbeeldingen die met een e-mail meekomen (handtekeninglogo's / ingesloten afbeeldingen — PNG, JPG, GIF, BMP). Deze worden stilzwijgend overgeslagen en **niet** als mislukte import geteld.
-* **Niet geïmporteerd:** elk ander bijlagetype (bijv. ZIP, DOCX, platte tekst). Deze worden geregistreerd als een mislukte import.
+* **Doorgestuurde `.eml`**-berichten worden uitgepakt en de daarin opgenomen documenten worden geïmporteerd.
+* **Genegeerd:** inline-afbeeldingen die met een e-mail meekomen (handtekeninglogo's / ingesloten afbeeldingen — PNG, JPG, GIF, BMP) worden stilzwijgend overgeslagen en **niet** als mislukte import geteld.
 
 Als een bijlage niet kan worden geïmporteerd en de optie **“Beantwoord deze e-mail als de import niet kan worden uitgevoerd”** is ingeschakeld voor het inkomende adres, wordt het geconfigureerde antwoordadres op de hoogte gesteld.
 {% endhint %}

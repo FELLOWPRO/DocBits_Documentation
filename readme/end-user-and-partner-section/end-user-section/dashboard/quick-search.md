@@ -19,6 +19,62 @@ Este guia está organizado tal como a pesquisa se constrói:
 
 ---
 
+## Como funciona a barra de pesquisa — chips, barra de ferramentas e vista bruta
+
+À medida que completa uma condição (um campo, um operador e um valor), a Pesquisa
+rápida transforma-a num **chip** — uma pílula colorida dentro da barra — e inicia
+um novo. Um chip mostra o **campo**, o **operador** e o **valor**, com um **×**
+para o remover. Os chips têm cores conforme o local onde os dados residem:
+
+| Cor do chip | Tipo de campo |
+|-------------|---------------|
+| **Azul** | Coluna padrão (nome do documento, estado, datas) |
+| **Laranja** | Campo de texto completo / extraído (fornecedor, valor, número de fatura) |
+| **Roxo** | Pesquisa vetorial (semântica) |
+| **Verde** | Pesquisa de texto OCR |
+
+Clique num chip para o editar; clique em **×** para o eliminar. Vários chips
+combinados são lidos como **AND** por predefinição.
+
+**Barra de ferramentas** (à direita da barra): **ⓘ Ajuda** abre a referência
+integrada de campos e sintaxe; **Filtros** é um painel rápido de Estado /
+Utilizador / Reiniciar; o **anel de índice** mostra que percentagem do índice de
+texto completo já está construída (apenas quando a pesquisa de texto completo
+está ativada).
+
+**Vista padrão vs. vista bruta:** a barra mostra a sua consulta sob a forma de
+chips (padrão). Mude para a **vista bruta** para a ver e editar como texto
+simples — prático para copiar ou escrever uma consulta longa. A sua consulta é
+memorizada quando recarrega a página.
+
+### Encontrar documentos por subtipo de fatura
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+O subtipo de fatura é uma lista fixa (p. ex. **Cost Invoice**, **Purchase
+Invoice**), por isso `=` é uma correspondência exata e a barra oferece um seletor
+de valores. Use `invoice_sub_type!="Cost Invoice"` para tudo exceto esse subtipo.
+
+## Agrupar resultados
+
+Em vez de uma lista plana, pode **agrupar** os resultados por qualquer campo —
+fornecedor, estado, tipo de documento ou um intervalo de datas:
+
+```
+group by supplier_name
+```
+
+A lista mostra **cabeçalhos de grupo** recolhíveis, cada um com uma **contagem**.
+Clique num cabeçalho para o expandir ou recolher; clique dentro de um grupo para
+**detalhar** (aplicar esse valor como filtro). O agrupamento combina-se com
+qualquer filtro.
+
+<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Resultados agrupados por fornecedor"><figcaption><p><code>group by supplier_name</code> — os resultados recolhem-se num cabeçalho expansível por fornecedor.</p></figcaption></figure>
+
+---
+
 ## Parte 1 — Campos padrão
 
 Os campos padrão são as próprias colunas do documento. Estão **sempre

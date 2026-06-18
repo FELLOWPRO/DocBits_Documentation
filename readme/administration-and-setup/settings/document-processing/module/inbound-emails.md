@@ -64,7 +64,7 @@ Une fois activé, une section **E-mails entrants** apparaît dans **Paramètres 
 Cliquez sur **Enregistrer** pour appliquer vos modifications.
 
 {% hint style="info" %}
-**Quelles pièces jointes sont importées ?** DocBits importe les pièces jointes de documents prises en charge — consultez [Importer → Import e-mail](../import/README.md#email-import) pour la liste complète des types de fichiers — et décompresse les messages `.eml` transférés pour importer les documents qu'ils contiennent. La détection repose également sur le **contenu réel du fichier**, de sorte que les pièces jointes qu'un serveur de messagerie de transfert ré-étiquette avec un type générique (`application/octet-stream`) sont tout de même importées correctement. Les images en ligne (logos de signature / graphiques intégrés) sont ignorées.
+**Quelles pièces jointes sont importées ?** DocBits importe les pièces jointes de documents prises en charge — consultez [Importer → Import e-mail](../import/README.md#email-import) pour la liste complète des types de fichiers — et décompresse les messages `.eml` transférés ainsi que les pièces jointes Outlook `winmail.dat` (TNEF) pour importer les documents qu'ils contiennent. La détection repose également sur le **contenu réel du fichier**, de sorte que les pièces jointes qu'un serveur de messagerie de transfert ré-étiquette avec un type générique (`application/octet-stream`) sont tout de même importées correctement. Les images en ligne (logos de signature / graphiques intégrés) sont ignorées.
 {% endhint %}
 
 ### Quelle méthode choisir

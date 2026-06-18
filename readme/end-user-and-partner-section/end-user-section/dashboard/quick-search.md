@@ -18,6 +18,60 @@ Deze gids is opgebouwd zoals het zoeken zelf:
 
 ---
 
+## Hoe de zoekbalk werkt — chips, werkbalk en ruwe weergave
+
+Zodra je een voorwaarde voltooit (een veld, een operator en een waarde) zet Snel
+zoeken die om in een **chip** — een gekleurd pilletje in de balk — en begint een
+nieuwe. Een chip toont het **veld**, de **operator** en de **waarde**, met een
+**×** om hem te verwijderen. Chips zijn gekleurd naar waar de gegevens staan:
+
+| Chipkleur | Veldtype |
+|-----------|----------|
+| **Blauw** | Standaardkolom (documentnaam, status, datums) |
+| **Oranje** | Fulltext-/geëxtraheerd veld (leverancier, bedrag, factuurnummer) |
+| **Paars** | Vector- (semantisch) zoeken |
+| **Groen** | OCR-tekst zoeken |
+
+Klik op een chip om hem te bewerken; klik op **×** om hem te verwijderen. Meerdere
+gecombineerde chips worden standaard als **AND** gelezen.
+
+**Werkbalk** (rechts van de balk): **ⓘ Hulp** opent de ingebouwde referentie van
+velden en syntaxis; **Filters** is een snel paneel voor Status / Gebruiker /
+Herstart; de **indexring** toont hoeveel van de fulltext-index is opgebouwd
+(alleen wanneer fulltext-zoeken aanstaat).
+
+**Standaard- versus ruwe weergave:** de balk toont je query als chips (standaard).
+Schakel over naar **ruwe weergave** om hem als platte tekst te zien en te bewerken
+— handig om een lange query te kopiëren of te typen. Je query wordt onthouden
+wanneer je opnieuw laadt.
+
+### Documenten op factuursubtype vinden
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Het factuursubtype is een vaste lijst (bijv. **Cost Invoice**, **Purchase
+Invoice**), dus `=` is een exacte match en de balk biedt een waardekiezer. Gebruik
+`invoice_sub_type!="Cost Invoice"` voor alles behalve dat subtype.
+
+## Resultaten groeperen
+
+In plaats van een platte lijst kun je de resultaten **groeperen** op elk veld —
+leverancier, status, documenttype of een datumvak:
+
+```
+group by supplier_name
+```
+
+De lijst toont inklapbare **groepskoppen**, elk met een **aantal**. Klik op een
+kop om hem uit of in te klappen; klik in een groep om in te **zoomen** (die waarde
+als filter toepassen). Groeperen combineert met elk filter.
+
+<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Resultaten gegroepeerd op leverancier"><figcaption><p><code>group by supplier_name</code> — resultaten klappen samen tot één uitklapbare kop per leverancier.</p></figcaption></figure>
+
+---
+
 ## Deel 1 — Standaardvelden
 
 Standaardvelden zijn de eigen kolommen van het document. Ze zijn **altijd

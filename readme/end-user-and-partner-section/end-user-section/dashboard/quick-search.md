@@ -20,6 +20,64 @@ Esta guía está organizada igual que se construye la búsqueda:
 
 ---
 
+## Cómo funciona la barra de búsqueda — chips, barra de herramientas y vista en bruto
+
+A medida que completas una condición (un campo, un operador y un valor), la
+Búsqueda rápida la convierte en un **chip** —una pastilla de color dentro de la
+barra— y empieza uno nuevo. Cada chip muestra el **campo**, el **operador** y el
+**valor**, con una **×** para quitarlo. Los chips llevan un color según dónde
+residen los datos:
+
+| Color del chip | Tipo de campo |
+|----------------|---------------|
+| **Azul** | Columna estándar (nombre del documento, estado, fechas) |
+| **Naranja** | Campo de texto completo / extraído (proveedor, importe, número de factura) |
+| **Morado** | Búsqueda vectorial (semántica) |
+| **Verde** | Búsqueda de texto OCR |
+
+Haz clic en un chip para editarlo; haz clic en la **×** para eliminarlo. Varios
+chips combinados se leen como **AND** de forma predeterminada.
+
+**Barra de herramientas** (a la derecha de la barra): **ⓘ Ayuda** abre la
+referencia integrada de campos y sintaxis; **Filtros** es un panel rápido de
+Estado / Usuario / Reinicio; el **anillo de índice** muestra cuánto del índice
+de texto completo está construido (solo cuando la búsqueda de texto completo está
+activada).
+
+**Vista estándar frente a vista en bruto:** la barra muestra tu consulta como
+chips (estándar). Cambia a la **vista en bruto** para verla y editarla como texto
+plano —práctico para copiar o escribir una consulta larga. Tu consulta se
+recuerda al recargar.
+
+### Buscar documentos por subtipo de factura
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+El subtipo de factura es una lista fija (p. ej. **Cost Invoice**, **Purchase
+Invoice**), por lo que `=` es una coincidencia exacta y la barra ofrece un
+selector de valores. Usa `invoice_sub_type!="Cost Invoice"` para todo excepto ese
+subtipo.
+
+## Agrupar resultados
+
+En lugar de una lista plana, puedes **agrupar** los resultados por cualquier
+campo —proveedor, estado, tipo de documento o un intervalo de fechas:
+
+```
+group by supplier_name
+```
+
+La lista muestra **encabezados de grupo** plegables, cada uno con un **recuento**.
+Haz clic en un encabezado para expandirlo o plegarlo; entra en un grupo para
+**desglosarlo** (aplicar ese valor como filtro). La agrupación se combina con
+cualquier filtro.
+
+<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Resultados agrupados por proveedor"><figcaption><p><code>group by supplier_name</code> — los resultados se pliegan en un encabezado expandible por cada proveedor.</p></figcaption></figure>
+
+---
+
 ## Parte 1 — Campos estándar
 
 Los campos estándar son las propias columnas del documento. Están **siempre

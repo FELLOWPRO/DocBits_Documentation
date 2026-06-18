@@ -20,6 +20,63 @@ Diese Anleitung ist so aufgebaut, wie die Suche selbst funktioniert:
 
 ---
 
+## Wie die Suchleiste funktioniert — Chips, Werkzeugleiste & Rohansicht
+
+Sobald du eine Bedingung vervollständigst (ein Feld, ein Operator und ein Wert),
+verwandelt die Schnellsuche sie in einen **Chip** — eine farbige Pille innerhalb
+der Leiste — und beginnt eine neue. Ein Chip zeigt das **Feld**, den
+**Operator** und den **Wert**, mit einem **×** zum Entfernen. Chips sind nach
+ihrer Datenquelle farbcodiert:
+
+| Chip-Farbe | Feldtyp |
+|------------|---------|
+| **Blau** | Standardspalte (Dokumentname, Status, Daten) |
+| **Orange** | Volltext-/extrahiertes Feld (Lieferant, Betrag, Rechnungsnummer) |
+| **Lila** | Vektor- (semantische) Suche |
+| **Grün** | OCR-Textsuche |
+
+Klicke auf einen Chip, um ihn zu bearbeiten; klicke auf **×**, um ihn zu löschen.
+Mehrere kombinierte Chips werden standardmäßig als **AND** gelesen.
+
+**Werkzeugleiste** (rechts neben der Leiste): **ⓘ Hilfe** öffnet die eingebaute
+Felder- & Syntax-Referenz; **Filter** ist ein schnelles Panel für Status /
+Benutzer / Neustart; der **Index-Ring** zeigt, wie viel des Volltext-Index
+aufgebaut ist (nur wenn die Volltextsuche aktiviert ist).
+
+**Standard- vs. Rohansicht:** Die Leiste zeigt deine Abfrage als Chips
+(Standard). Wechsle zur **Rohansicht**, um sie als reinen Text zu sehen und zu
+bearbeiten — praktisch zum Kopieren oder zum Tippen einer langen Abfrage. Deine
+Abfrage bleibt beim Neuladen erhalten.
+
+### Dokumente nach Rechnungsunterart finden
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Die Rechnungsunterart ist eine feste Liste (z. B. **Cost Invoice**,
+**Purchase Invoice**), daher ist `=` ein exakter Treffer und die Leiste bietet
+eine Werteauswahl an. Nutze `invoice_sub_type!="Cost Invoice"` für alles außer
+dieser Unterart.
+
+## Ergebnisse gruppieren
+
+Statt einer flachen Liste kannst du die Ergebnisse nach einem beliebigen Feld
+**gruppieren** — Lieferant, Status, Dokumenttyp oder einem Datumsbereich:
+
+```
+group by supplier_name
+```
+
+Die Liste zeigt zusammenklappbare **Gruppen-Überschriften**, jede mit einer
+**Anzahl**. Klicke auf eine Überschrift, um sie auf- oder zuzuklappen; klicke in
+eine Gruppe, um **hineinzuzoomen** (diesen Wert als Filter anzuwenden). Die
+Gruppierung lässt sich mit jedem Filter kombinieren.
+
+<figure><img src="../../.gitbook/assets/quick_search_16_grouping.png" alt="Nach Lieferant gruppierte Ergebnisse"><figcaption><p><code>group by supplier_name</code> — die Ergebnisse klappen in eine ausklappbare Überschrift pro Lieferant zusammen.</p></figcaption></figure>
+
+---
+
 ## Teil 1 — Standardfelder
 
 Standardfelder sind die eigenen Spalten des Dokuments. Sie sind **immer

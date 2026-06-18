@@ -18,6 +18,61 @@ Bu kılavuz, aramanın kurulduğu sıraya göre düzenlenmiştir:
 
 ---
 
+## Arama çubuğu nasıl çalışır — çipler, araç çubuğu ve ham görünüm
+
+Bir koşulu tamamladığınızda (bir alan, bir operatör ve bir değer) Hızlı Arama bunu
+bir **çipe** dönüştürür — çubuğun içinde renkli bir hap — ve yenisine başlar. Bir
+çip, kaldırmak için bir **×** ile birlikte **alanı**, **operatörü** ve **değeri**
+gösterir. Çipler, verinin nerede yaşadığına göre renklerle kodlanır:
+
+| Çip rengi | Alan türü |
+|-----------|-----------|
+| **Mavi** | Standart sütun (belge adı, durum, tarihler) |
+| **Turuncu** | Tam metin / çıkarılan alan (tedarikçi, tutar, fatura numarası) |
+| **Mor** | Vektör (anlamsal) arama |
+| **Yeşil** | OCR metin araması |
+
+Bir çipi düzenlemek için tıklayın; silmek için **×** öğesine tıklayın. Birleştirilen
+birkaç çip varsayılan olarak **AND** olarak okunur.
+
+**Araç çubuğu** (çubuğun sağında): **ⓘ Yardım**, uygulama içi alanlar ve söz dizimi
+başvurusunu açar; **Filtreler**, hızlı bir Durum / Kullanıcı / Yeniden Başlat
+panelidir; **dizin halkası**, tam metin dizininin ne kadarının oluşturulduğunu
+gösterir (yalnızca tam metin araması açık olduğunda).
+
+**Standart ve ham görünüm:** çubuk sorgunuzu çipler olarak gösterir (standart).
+Düz metin olarak görmek ve düzenlemek için **ham görünüme** geçin — uzun bir
+sorguyu kopyalamak veya yazmak için kullanışlıdır. Sorgunuz yeniden
+yüklediğinizde hatırlanır.
+
+### Belgeleri fatura alt türüne göre bulma
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Fatura alt türü sabit bir listedir (örn. **Cost Invoice**, **Purchase Invoice**),
+bu nedenle `=` tam bir eşleşmedir ve çubuk bir değer seçici sunar. O alt tür
+dışındaki her şey için `invoice_sub_type!="Cost Invoice"` kullanın.
+
+## Sonuçları gruplama
+
+Düz bir liste yerine sonuçları herhangi bir alana göre **gruplayabilirsiniz** —
+tedarikçi, durum, belge türü veya bir tarih kovası:
+
+```
+group by supplier_name
+```
+
+Liste, her biri bir **sayım** içeren daraltılabilir **grup başlıkları** gösterir.
+Bir başlığı genişletmek veya daraltmak için tıklayın; bir grubun içine girerek
+**ayrıntıya inin** (o değeri bir filtre olarak uygulayın). Gruplama herhangi bir
+filtreyle birleşir.
+
+<figure><img src="../../.gitbook/assets/quick_search_16_grouping.png" alt="Tedarikçiye göre gruplanmış sonuçlar"><figcaption><p><code>group by supplier_name</code> — sonuçlar her tedarikçi için bir genişletilebilir başlığa daralır.</p></figcaption></figure>
+
+---
+
 ## Bölüm 1 — Standart alanlar
 
 Standart alanlar, belgenin kendi sütunlarıdır. Tam metin araması açık olsun ya da

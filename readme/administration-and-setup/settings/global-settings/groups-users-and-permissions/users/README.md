@@ -24,6 +24,8 @@ Utilisez la barre de **Recherche** en haut pour retrouver rapidement des utilisa
 
 Cliquez sur **Statistiques de connexion** pour consulter les données d'activité de connexion de l'ensemble de votre organisation, notamment la fréquence et les habitudes de connexion.
 
+Consultez [Statistiques de connexion](login-analytics.md) pour le détail complet.
+
 ## Ajouter un nouvel utilisateur
 
 1. Cliquez sur le bouton **Ajouter un utilisateur** en haut à droite.

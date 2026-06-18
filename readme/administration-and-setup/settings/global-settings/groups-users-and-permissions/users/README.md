@@ -24,6 +24,8 @@ Usa la barra di **Ricerca** in alto per trovare rapidamente gli utenti per nome 
 
 Fai clic su **Analisi degli accessi** per visualizzare i dati sull'attività di accesso nell'intera organizzazione, inclusi la frequenza e gli schemi di accesso.
 
+Consulta [Analisi degli accessi](login-analytics.md) per la panoramica completa.
+
 ## Aggiungere un nuovo utente
 
 1. Fai clic sul pulsante **Aggiungi utente** nell'angolo in alto a destra.

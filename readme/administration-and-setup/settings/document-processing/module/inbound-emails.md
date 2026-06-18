@@ -64,7 +64,7 @@ Po włączeniu w **Ustawienia → Przetwarzanie dokumentów → Import** pojawia
 Kliknij **Zapisz**, aby zastosować zmiany.
 
 {% hint style="info" %}
-**Które załączniki są importowane?** DocBits importuje obsługiwane załączniki dokumentów — pełną listę typów plików znajdziesz w [Import → Import e-mail](../import/README.md#email-import) — oraz rozpakowuje przekazane wiadomości `.eml`, aby zaimportować zawarte w nich dokumenty. Rozpoznawanie opiera się również na **rzeczywistej zawartości pliku**, dzięki czemu załączniki, którym przekazujący serwer poczty nadał ogólny typ (`application/octet-stream`), są nadal importowane poprawnie. Obrazy osadzone w treści (logo w stopce / wbudowana grafika) są ignorowane.
+**Które załączniki są importowane?** DocBits importuje obsługiwane załączniki dokumentów — pełną listę typów plików znajdziesz w [Import → Import e-mail](../import/README.md#email-import) — oraz rozpakowuje przekazane wiadomości `.eml` i załączniki Outlook `winmail.dat` (TNEF), aby zaimportować zawarte w nich dokumenty. Rozpoznawanie opiera się również na **rzeczywistej zawartości pliku**, dzięki czemu załączniki, którym przekazujący serwer poczty nadał ogólny typ (`application/octet-stream`), są nadal importowane poprawnie. Obrazy osadzone w treści (logo w stopce / wbudowana grafika) są ignorowane.
 {% endhint %}
 
 ### Kiedy której metody użyć

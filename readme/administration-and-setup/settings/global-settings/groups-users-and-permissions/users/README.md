@@ -22,7 +22,7 @@ Utilice la barra de **Búsqueda** en la parte superior para encontrar rápidamen
 
 ## Análisis de inicios de sesión
 
-Haga clic en **Análisis de inicios de sesión** para ver los datos de actividad de inicio de sesión de toda su organización, incluidos la frecuencia y los patrones de inicio de sesión.
+Haga clic en **Análisis de inicios de sesión** para ver los datos de actividad de inicio de sesión de toda su organización, incluidos la frecuencia y los patrones de inicio de sesión. Consulte [Análisis de inicios de sesión](login-analytics.md) para ver el desglose completo.
 
 ## Agregar un nuevo usuario
 

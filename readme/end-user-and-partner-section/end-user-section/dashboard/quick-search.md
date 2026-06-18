@@ -19,6 +19,64 @@ Ce guide est organisé comme la recherche se construit :
 
 ---
 
+## Fonctionnement de la barre de recherche — chips, barre d'outils et vue brute
+
+À mesure que vous complétez une condition (un champ, un opérateur et une valeur),
+la Recherche rapide la transforme en **chip** — une pastille colorée dans la barre —
+et en commence une nouvelle. Un chip affiche le **champ**, l'**opérateur** et la
+**valeur**, avec un **×** pour le supprimer. Les chips sont colorés selon
+l'emplacement des données :
+
+| Couleur du chip | Type de champ |
+|-----------------|---------------|
+| **Bleu** | Colonne standard (nom du document, statut, dates) |
+| **Orange** | Champ plein texte / extrait (fournisseur, montant, numéro de facture) |
+| **Violet** | Recherche vectorielle (sémantique) |
+| **Vert** | Recherche dans le texte OCR |
+
+Cliquez sur un chip pour le modifier ; cliquez sur **×** pour le supprimer.
+Plusieurs chips combinés sont lus comme un **AND** par défaut.
+
+**Barre d'outils** (à droite de la barre) : **ⓘ Aide** ouvre la référence
+intégrée des champs et de la syntaxe ; **Filtres** est un panneau rapide
+Statut / Utilisateur / Redémarrage ; l'**anneau d'index** indique quelle part de
+l'index plein texte est construite (uniquement quand la recherche plein texte est
+activée).
+
+**Vue standard ou brute :** la barre affiche votre requête sous forme de chips
+(standard). Passez en **vue brute** pour la voir et la modifier en texte simple —
+pratique pour copier ou taper une longue requête. Votre requête est conservée
+lorsque vous rechargez la page.
+
+### Trouver des documents par sous-type de facture
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Le sous-type de facture est une liste fixe (p. ex. **Cost Invoice**,
+**Purchase Invoice**), donc `=` est une correspondance exacte et la barre propose
+un sélecteur de valeurs. Utilisez `invoice_sub_type!="Cost Invoice"` pour tout
+sauf ce sous-type.
+
+## Grouper les résultats
+
+Au lieu d'une liste plate, vous pouvez **grouper** les résultats par n'importe
+quel champ — fournisseur, statut, type de document ou un intervalle de dates :
+
+```
+group by supplier_name
+```
+
+La liste affiche des **en-têtes de groupe** repliables, chacun avec un **compte**.
+Cliquez sur un en-tête pour le déplier ou le replier ; cliquez dans un groupe pour
+**explorer en détail** (appliquer cette valeur comme filtre). Le groupement se
+combine avec n'importe quel filtre.
+
+<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Résultats groupés par fournisseur"><figcaption><p><code>group by supplier_name</code> — les résultats se replient en un en-tête extensible par fournisseur.</p></figcaption></figure>
+
+---
+
 ## Partie 1 — Champs standard
 
 Les champs standard sont les colonnes propres du document. Ils sont **toujours

@@ -22,7 +22,7 @@ Verwenden Sie die **Suchleiste** am oberen Rand, um Benutzer schnell anhand ihre
 
 ## Login-Analyse
 
-Klicken Sie auf **Login Analytics**, um Daten zur Anmeldeaktivität in Ihrer gesamten Organisation einzusehen, einschließlich Häufigkeit und Mustern der Anmeldungen.
+Klicken Sie auf **Login Analytics**, um Daten zur Anmeldeaktivität in Ihrer gesamten Organisation einzusehen, einschließlich Häufigkeit und Mustern der Anmeldungen. Eine vollständige Aufschlüsselung finden Sie unter [Login Analytics](login-analytics.md).
 
 ## Einen neuen Benutzer hinzufügen
 

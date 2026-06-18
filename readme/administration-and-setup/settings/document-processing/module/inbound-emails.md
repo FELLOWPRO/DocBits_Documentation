@@ -64,7 +64,7 @@ Sobald es aktiviert ist, erscheint unter **Einstellungen → Dokumentverarbeitun
 Klicken Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
 
 {% hint style="info" %}
-**Welche Anhänge werden importiert?** DocBits importiert **PDF**-, **TIFF**- und **XML**-Anhänge (z. B. eCOS-/EDI-E-Rechnungen) und entpackt weitergeleitete `.eml`-Nachrichten, um die darin enthaltenen Dokumente zu importieren. Die Erkennung basiert auf dem **tatsächlichen Dateiinhalt**, sodass Anhänge, die ein weiterleitender Mailserver mit einem generischen Typ (`application/octet-stream`) neu kennzeichnet, dennoch korrekt importiert werden. Inline-Bilder (Signatur-Logos / eingebettete Grafiken) werden ignoriert. Die vollständige Liste und das Verhalten finden Sie unter [Import → E-Mail-Import](../import/README.md#email-import).
+**Welche Anhänge werden importiert?** DocBits importiert die unterstützten Dokumentanhänge — die vollständige Liste der Dateitypen finden Sie unter [Import → E-Mail-Import](../import/README.md#email-import) — und entpackt weitergeleitete `.eml`-Nachrichten, um die darin enthaltenen Dokumente zu importieren. Die Erkennung basiert zudem auf dem **tatsächlichen Dateiinhalt**, sodass Anhänge, die ein weiterleitender Mailserver mit einem generischen Typ (`application/octet-stream`) neu kennzeichnet, dennoch korrekt importiert werden. Inline-Bilder (Signatur-Logos / eingebettete Grafiken) werden ignoriert.
 {% endhint %}
 
 ### Wann welche Methode

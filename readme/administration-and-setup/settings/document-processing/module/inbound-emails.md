@@ -64,7 +64,7 @@ Once enabled, an **Inbound Emails** section appears under **Settings → Documen
 Click **Save** to apply your changes.
 
 {% hint style="info" %}
-**Which attachments are imported?** DocBits imports **PDF**, **TIFF** and **XML** (e.g. eCOS / EDI e‑invoices) attachments, and unpacks forwarded `.eml` messages to import the documents inside. Detection is based on the **actual file content**, so attachments that a forwarding mail server re‑labels with a generic type (`application/octet-stream`) are still imported correctly. Inline images (signature logos / embedded graphics) are ignored. See [Import → Email Import](../import/README.md#email-import) for the full list and behaviour.
+**Which attachments are imported?** DocBits imports the supported document attachments — see [Import → Email Import](../import/README.md#email-import) for the full list of file types — and unpacks forwarded `.eml` messages to import the documents inside. Detection is also based on the **actual file content**, so attachments that a forwarding mail server re‑labels with a generic type (`application/octet-stream`) are still imported correctly. Inline images (signature logos / embedded graphics) are ignored.
 {% endhint %}
 
 ### When to use which

@@ -64,7 +64,7 @@ Una vez activado, aparece una sección **Correos entrantes** en **Configuración
 Haga clic en **Guardar** para aplicar los cambios.
 
 {% hint style="info" %}
-**¿Qué adjuntos se importan?** DocBits importa los adjuntos de documentos admitidos —consulte [Importar → Importación de correo](../import/README.md#email-import) para ver la lista completa de tipos de archivo— y descomprime los mensajes `.eml` reenviados para importar los documentos que contienen. La detección también se basa en el **contenido real del archivo**, por lo que los adjuntos a los que un servidor de correo de reenvío reasigna un tipo genérico (`application/octet-stream`) se importan igualmente de forma correcta. Las imágenes en línea (logotipos de firma / gráficos incrustados) se ignoran.
+**¿Qué adjuntos se importan?** DocBits importa los adjuntos de documentos admitidos —consulte [Importar → Importación de correo](../import/README.md#email-import) para ver la lista completa de tipos de archivo— y descomprime los mensajes `.eml` reenviados y los adjuntos `winmail.dat` (TNEF) de Outlook para importar los documentos que contienen. La detección también se basa en el **contenido real del archivo**, por lo que los adjuntos a los que un servidor de correo de reenvío reasigna un tipo genérico (`application/octet-stream`) se importan igualmente de forma correcta. Las imágenes en línea (logotipos de firma / gráficos incrustados) se ignoran.
 {% endhint %}
 
 ### Cuándo usar cada método

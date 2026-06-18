@@ -18,6 +18,62 @@ Questa guida è organizzata come si costruisce la ricerca:
 
 ---
 
+## Come funziona la barra di ricerca — chip, barra degli strumenti e vista grezza
+
+Man mano che completi una condizione (un campo, un operatore e un valore) la
+Ricerca rapida la trasforma in un **chip** — una pillola colorata all'interno
+della barra — e ne avvia uno nuovo. Un chip mostra il **campo**, l'**operatore**
+e il **valore**, con una **×** per rimuoverlo. I chip sono codificati per colore
+in base a dove risiedono i dati:
+
+| Colore del chip | Tipo di campo |
+|-----------------|---------------|
+| **Blu** | Colonna standard (nome documento, stato, date) |
+| **Arancione** | Campo full-text / estratto (fornitore, importo, numero fattura) |
+| **Viola** | Ricerca vettoriale (semantica) |
+| **Verde** | Ricerca testo OCR |
+
+Clicca un chip per modificarlo; clicca **×** per eliminarlo. Più chip combinati
+sono letti come **AND** per impostazione predefinita.
+
+**Barra degli strumenti** (a destra della barra): **ⓘ Guida** apre il riferimento
+integrato di campi e sintassi; **Filtri** è un pannello rapido di Stato / Utente /
+Riavvio; l'**anello dell'indice** mostra quanta parte dell'indice full-text è
+costruita (solo quando la ricerca full-text è attiva).
+
+**Vista standard vs. grezza:** la barra mostra la tua query come chip (standard).
+Passa alla **vista grezza** per vederla e modificarla come testo semplice — comodo
+per copiare o digitare una query lunga. La tua query viene ricordata quando
+ricarichi la pagina.
+
+### Trovare documenti per sotto-tipo di fattura
+
+```
+invoice_sub_type="Cost Invoice"
+```
+
+Il sotto-tipo di fattura è un elenco fisso (es. **Cost Invoice**, **Purchase
+Invoice**), quindi `=` è una corrispondenza esatta e la barra offre un selettore di
+valori. Usa `invoice_sub_type!="Cost Invoice"` per tutto tranne quel sotto-tipo.
+
+## Raggruppare i risultati
+
+Invece di un elenco piatto puoi **raggruppare** i risultati per qualsiasi campo —
+fornitore, stato, tipo di documento o un intervallo di date:
+
+```
+group by supplier_name
+```
+
+L'elenco mostra **intestazioni di gruppo** comprimibili, ciascuna con un
+**conteggio**. Clicca un'intestazione per espanderla o comprimerla; clicca
+all'interno di un gruppo per **approfondire** (applicare quel valore come filtro).
+Il raggruppamento si combina con qualsiasi filtro.
+
+<figure><img src="../../../.gitbook/assets/quick_search_16_grouping.png" alt="Risultati raggruppati per fornitore"><figcaption><p><code>group by supplier_name</code> — i risultati si comprimono in un'unica intestazione espandibile per fornitore.</p></figcaption></figure>
+
+---
+
 ## Parte 1 — Campi standard
 
 I campi standard sono le colonne proprie del documento. Sono **sempre

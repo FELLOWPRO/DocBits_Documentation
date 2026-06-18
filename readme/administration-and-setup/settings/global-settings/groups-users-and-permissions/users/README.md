@@ -22,7 +22,7 @@ Use the **Search** bar at the top to quickly find users by name or ID.
 
 ## Login Analytics
 
-Click **Login Analytics** to view login activity data across your organization, including login frequency and patterns.
+Click **Login Analytics** to view login activity data across your organization, including login frequency and patterns. See [Login Analytics](login-analytics.md) for the full breakdown.
 
 ## Adding a New User
 

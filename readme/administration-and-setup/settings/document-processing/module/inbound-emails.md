@@ -63,6 +63,10 @@ Uma vez ativado, uma seção **E-mails recebidos** aparece em **Configurações 
 
 Clique em **Salvar** para aplicar suas alterações.
 
+{% hint style="info" %}
+**Quais anexos são importados?** O DocBits importa anexos **PDF**, **TIFF** e **XML** (p. ex. faturas eletrônicas eCOS / EDI) e desempacota mensagens `.eml` encaminhadas para importar os documentos contidos nelas. A detecção baseia-se no **conteúdo real do arquivo**, portanto anexos que um servidor de e-mail de encaminhamento rotula novamente com um tipo genérico (`application/octet-stream`) ainda são importados corretamente. Imagens inline (logotipos de assinatura / gráficos incorporados) são ignoradas. Consulte [Importar → Importação de e-mail](../import/README.md#email-import) para a lista completa e o comportamento.
+{% endhint %}
+
 ### Quando usar cada método
 
 * **Use uma conta de importação de e-mail** quando os documentos já chegam a uma caixa dedicada e você quer que o DocBits os busque sozinho — IMAP para servidores de e-mail genéricos, OAuth Office365 para Microsoft 365.

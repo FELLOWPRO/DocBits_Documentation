@@ -196,6 +196,7 @@
       * [Użytkownicy](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)
         * [Modyfikowanie szczegółów użytkownika](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md)
         * [Uprawnienia administratora](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/admin-privileges.md)
+        * [Analiza logowań](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md)
       * [Podorganizacje](administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/README.md)
         * [Jak utworzyć Podorganizację](administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/how-to-create-a-sub-organization.md)
       * [Grupy i Uprawnienia](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md)

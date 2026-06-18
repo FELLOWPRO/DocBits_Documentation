@@ -24,6 +24,8 @@ Użyj paska **Szukaj** u góry, aby szybko znaleźć użytkowników po imieniu, 
 
 Kliknij **Analiza logowań**, aby wyświetlić dane o aktywności logowania w całej organizacji, w tym częstotliwość i wzorce logowania.
 
+Zobacz [Analiza logowań](login-analytics.md), aby poznać pełne szczegóły.
+
 ## Dodawanie nowego użytkownika
 
 1. Kliknij przycisk **Dodaj użytkownika** w prawym górnym rogu.

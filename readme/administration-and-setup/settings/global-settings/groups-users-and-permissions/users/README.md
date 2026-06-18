@@ -24,6 +24,8 @@ Use a barra de **Pesquisa** no topo para encontrar usuários rapidamente por nom
 
 Clique em **Análise de Logins** para visualizar os dados de atividade de login em toda a sua organização, incluindo a frequência e os padrões de login.
 
+Consulte [Análise de Logins](login-analytics.md) para o detalhamento completo.
+
 ## Adicionar um Novo Usuário
 
 1. Clique no botão **Adicionar Usuário** no canto superior direito.

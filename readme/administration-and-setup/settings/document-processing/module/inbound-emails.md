@@ -63,6 +63,10 @@ Zodra deze is ingeschakeld, verschijnt er een sectie **Inkomende e-mails** onder
 
 Klik op **Opslaan** om uw wijzigingen toe te passen.
 
+{% hint style="info" %}
+**Welke bijlagen worden geïmporteerd?** DocBits importeert bijlagen van het type **PDF**, **TIFF** en **XML** (bijv. eCOS / EDI e‑facturen), en pakt doorgestuurde `.eml`-berichten uit om de documenten erin te importeren. De herkenning is gebaseerd op de **werkelijke bestandsinhoud**, zodat bijlagen die een doorsturende mailserver van een generiek type (`application/octet-stream`) voorziet, toch correct worden geïmporteerd. Inline-afbeeldingen (handtekeninglogo's / ingesloten afbeeldingen) worden genegeerd. Zie [Importeren → E-mail importeren](../import/README.md#email-import) voor de volledige lijst en het gedrag.
+{% endhint %}
+
 ### Welke methode wanneer
 
 * **Gebruik een e-mailimportaccount** wanneer documenten al in een speciale postbus binnenkomen en u wilt dat DocBits ze zelf ophaalt — IMAP voor algemene mailservers, OAuth Office365 voor Microsoft 365.

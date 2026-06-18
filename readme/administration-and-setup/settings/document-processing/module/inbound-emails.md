@@ -29,7 +29,7 @@ Gelen e-postayı aktive ettikten sonra, belgelerin nasıl içe aktarılacağın�
 3. **Ayarları Kaydet**: Bu seçenekleri yapılandırdıktan sonra, uygulamak için **Kaydet**'e tıklayın.
 
 {% hint style="info" %}
-**Hangi ekler içe aktarılır?** DocBits, desteklenen belge eklerini içe aktarır — tüm dosya türlerinin listesi için bkz. [İçe Aktarma → E-posta İçe Aktarma](../import/README.md#email-import) — ve iletilen `.eml` mesajlarını açarak içindeki belgeleri içe aktarır. Tanıma ayrıca **gerçek dosya içeriğine** dayanır; bu nedenle ileten bir posta sunucusunun genel bir türle (`application/octet-stream`) yeniden etiketlediği ekler de doğru şekilde içe aktarılır. Satır içi görseller (imza logoları / gömülü grafikler) yok sayılır.
+**Hangi ekler içe aktarılır?** DocBits, desteklenen belge eklerini içe aktarır — tüm dosya türlerinin listesi için bkz. [İçe Aktarma → E-posta İçe Aktarma](../import/README.md#email-import) — ve iletilen `.eml` mesajlarını ve Outlook `winmail.dat` (TNEF) eklerini açarak içindeki belgeleri içe aktarır. Tanıma ayrıca **gerçek dosya içeriğine** dayanır; bu nedenle ileten bir posta sunucusunun genel bir türle (`application/octet-stream`) yeniden etiketlediği ekler de doğru şekilde içe aktarılır. Satır içi görseller (imza logoları / gömülü grafikler) yok sayılır.
 {% endhint %}
 
 ## Önceden Tanımlanmış E-postalar

@@ -78,6 +78,19 @@ You can set up an email import that automatically imports documents from your in
 * `.edi`
 * `.purchaseorder`
 
+{% hint style="info" %}
+**How attachment types are detected**
+
+DocBits identifies a document by its **actual file content** (file signature), not only by the content type declared by the sending mail system. This is important for **forwarded** mails: intermediate mail servers/gateways frequently re-label a PDF or XML attachment with a generic type (`application/octet-stream`) instead of `application/pdf` or `application/xml`. DocBits still recognises and imports such attachments correctly.
+
+* **Imported** document attachments: **PDF**, **TIFF**, and **XML** (e.g. eCOS / EDI e‑invoices).
+* **Forwarded `.eml`** messages are unpacked and their contained PDF/TIFF/XML attachments are imported.
+* **Ignored:** inline images that ride along in a mail (signature logos / embedded graphics — PNG, JPG, GIF, BMP). These are skipped silently and are **not** counted as failed imports.
+* **Not imported:** any other attachment type (e.g. ZIP, DOCX, plain text). These are recorded as a failed import.
+
+If an attachment cannot be imported and the option **“Reply to this email if import can not be done”** is enabled for the inbound address, the configured reply address is notified.
+{% endhint %}
+
 ### Add new IMAP connection
 
 1.  To add a new IMAP connection, click the **Add** button in the **Email Import** section.

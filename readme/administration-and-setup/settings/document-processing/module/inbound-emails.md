@@ -63,6 +63,10 @@ Une fois activé, une section **E-mails entrants** apparaît dans **Paramètres 
 
 Cliquez sur **Enregistrer** pour appliquer vos modifications.
 
+{% hint style="info" %}
+**Quelles pièces jointes sont importées ?** DocBits importe les pièces jointes **PDF**, **TIFF** et **XML** (p. ex. les factures électroniques eCOS / EDI), et décompresse les messages `.eml` transférés pour importer les documents qu'ils contiennent. La détection repose sur le **contenu réel du fichier**, de sorte que les pièces jointes qu'un serveur de messagerie de transfert ré-étiquette avec un type générique (`application/octet-stream`) sont tout de même importées correctement. Les images en ligne (logos de signature / graphiques intégrés) sont ignorées. Consultez [Importer → Import e-mail](../import/README.md#email-import) pour la liste complète et le comportement.
+{% endhint %}
+
 ### Quelle méthode choisir
 
 * **Utilisez un compte d'import e-mail** lorsque les documents arrivent déjà dans une boîte dédiée et que vous voulez que DocBits les récupère de lui-même — IMAP pour les serveurs de messagerie génériques, OAuth Office365 pour Microsoft 365.

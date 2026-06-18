@@ -79,14 +79,12 @@ Belgeler gelen kutunuza gelir gelmez otomatik olarak içe aktaran bir e-posta i�
 * `.purchaseorder`
 
 {% hint style="info" %}
-**Ek türleri nasıl algılanır?**
+**Ekler nasıl tanınır?**
 
-DocBits, bir belgeyi yalnızca gönderen posta sisteminin bildirdiği içerik türüne göre değil, **gerçek dosya içeriğine** (dosya imzası) göre tanımlar. Bu, **yönlendirilen** e-postalar için önemlidir: aradaki posta sunucuları/ağ geçitleri, bir PDF veya XML ekini sıklıkla `application/pdf` veya `application/xml` yerine genel bir türle (`application/octet-stream`) yeniden etiketler. DocBits, bu tür ekleri yine de doğru şekilde tanır ve içe aktarır.
+DocBits, yukarıda listelenen dosya uzantılarına ek olarak, bir belgeyi gönderen posta sisteminin bildirdiği içerik türüne göre değil, **gerçek dosya içeriğine** (dosya imzası) göre de tanımlar. Bu, **yönlendirilen** e-postalar için önemlidir: aradaki posta sunucuları/ağ geçitleri, bir eki sıklıkla örneğin `application/pdf` veya `application/xml` yerine genel bir türle (`application/octet-stream`) yeniden etiketler. DocBits, bu tür ekleri yine de doğru şekilde tanır ve içe aktarır.
 
-* **İçe aktarılan** belge ekleri: **PDF**, **TIFF** ve **XML** (ör. eCOS / EDI e‑faturaları).
-* **Yönlendirilen `.eml`** mesajları açılır ve içerdikleri PDF/TIFF/XML ekleri içe aktarılır.
-* **Yoksayılan:** bir e-postada birlikte gelen satır içi görseller (imza logoları / gömülü grafikler — PNG, JPG, GIF, BMP). Bunlar sessizce atlanır ve başarısız içe aktarım olarak **sayılmaz**.
-* **İçe aktarılmayan:** diğer herhangi bir ek türü (ör. ZIP, DOCX, düz metin). Bunlar başarısız içe aktarım olarak kaydedilir.
+* **Yönlendirilen `.eml`** mesajları açılır ve içerdikleri belgeler içe aktarılır.
+* **Yoksayılan:** bir e-postada birlikte gelen satır içi görseller (imza logoları / gömülü grafikler — PNG, JPG, GIF, BMP) sessizce atlanır ve başarısız içe aktarım olarak **sayılmaz**.
 
 Bir ek içe aktarılamazsa ve gelen adres için **“İçe aktarım yapılamazsa bu e-postaya yanıt ver”** seçeneği etkinse, yapılandırılan yanıt adresi bilgilendirilir.
 {% endhint %}

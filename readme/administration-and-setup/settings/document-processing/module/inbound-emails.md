@@ -64,7 +64,7 @@ Una volta attivato, nella sezione **Impostazioni → Elaborazione documenti → 
 Fai clic su **Salva** per applicare le modifiche.
 
 {% hint style="info" %}
-**Quali allegati vengono importati?** DocBits importa gli allegati di documenti supportati — consulta [Importazione → Importazione e-mail](../import/README.md#email-import) per l'elenco completo dei tipi di file — e decomprime le e-mail `.eml` inoltrate per importare i documenti che contengono. Il riconoscimento si basa anche sul **contenuto effettivo del file**, quindi gli allegati a cui un server di posta di inoltro riassegna un tipo generico (`application/octet-stream`) vengono comunque importati correttamente. Le immagini in linea (loghi della firma / grafica incorporata) vengono ignorate.
+**Quali allegati vengono importati?** DocBits importa gli allegati di documenti supportati — consulta [Importazione → Importazione e-mail](../import/README.md#email-import) per l'elenco completo dei tipi di file — e decomprime le e-mail `.eml` inoltrate e gli allegati Outlook `winmail.dat` (TNEF) per importare i documenti che contengono. Il riconoscimento si basa anche sul **contenuto effettivo del file**, quindi gli allegati a cui un server di posta di inoltro riassegna un tipo generico (`application/octet-stream`) vengono comunque importati correttamente. Le immagini in linea (loghi della firma / grafica incorporata) vengono ignorate.
 {% endhint %}
 
 ### Quale metodo scegliere

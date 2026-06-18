@@ -22,7 +22,7 @@ Kullanıcıları ada veya kimliğe göre hızlıca bulmak için üstteki **Arama
 
 ## Giriş Analitiği
 
-Kuruluşunuz genelinde giriş etkinliği verilerini (giriş sıklığı ve örüntüleri dahil) görüntülemek için **Giriş Analitiği**'ne tıklayın.
+Kuruluşunuz genelinde giriş etkinliği verilerini (giriş sıklığı ve örüntüleri dahil) görüntülemek için **Giriş Analitiği**'ne tıklayın. Ayrıntılı dökümün tamamı için bkz. [Giriş Analitiği](login-analytics.md).
 
 ## Yeni Bir Kullanıcı Ekleme
 

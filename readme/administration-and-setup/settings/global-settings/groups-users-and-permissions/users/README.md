@@ -24,6 +24,8 @@ Koristite traku za **pretragu** na vrhu da biste brzo pronašli korisnike po ime
 
 Kliknite na **Analitika prijava** da biste videli podatke o aktivnostima prijavljivanja u vašoj organizaciji, uključujući učestalost i obrasce prijava.
 
+Pogledajte [Analitika prijava](login-analytics.md) za potpuni pregled.
+
 ## Dodavanje novog korisnika
 
 1. Kliknite na dugme **Dodaj korisnika** u gornjem desnom uglu.

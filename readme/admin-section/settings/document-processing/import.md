@@ -32,4 +32,23 @@ Dodatna opcija za dodavanje novih podataka uključuje polja kao što su:
 
 Ovo takođe omogućava određivanje podorganizacija za precizniju kontrolu nad usmeravanjem e-pošte unutar vaše organizacione strukture.
 
+{% hint style="info" %}
+**Napomena:** uvoze se samo prilozi sledećih tipova:
+
+* `.pdf`
+* `.tiff` / `.tif`
+* `.eml`
+* `.dat`
+* `.xml`
+* `.edi`
+* `.purchaseorder`
+
+**Kako se prilozi prepoznaju:** pored navedenih ekstenzija, DocBits prepoznaje dokument i po **stvarnom sadržaju datoteke** (potpisu), ne samo po tipu koji navodi pošiljaočev mejl-server. Ovo je važno za **prosleđene** poruke: posredni mejl-serveri/gejtveji često ponovo označe prilog generičkim tipom (`application/octet-stream`) umesto npr. `application/pdf` ili `application/xml`. DocBits ih i dalje ispravno prepoznaje i uvozi.
+
+* Prosleđene **`.eml`** poruke i Outlook **`winmail.dat`** (TNEF) prilozi se raspakuju i dokumenti unutar njih se uvoze.
+* **Zanemaruje se:** ugrađene slike (logotipi potpisa / grafika — PNG, JPG, GIF, BMP) se tiho preskaču i ne računaju se kao neuspeli uvoz.
+
+Ako se prilog ne može uvesti i opcija **„Odgovori na ovaj mejl ako uvoz nije moguć"** je uključena, obaveštenje se šalje na podešenu adresu.
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 10.48.56.png" alt=""><figcaption></figcaption></figure>

@@ -192,6 +192,7 @@
       * [Rozwiązywanie problemów](administration-and-setup/settings/global-settings/email-notification/rozwiazywanie-problemow.md)
     * [Szablony e-maili](administration-and-setup/settings/global-settings/e-mail-templates.md)
     * [Niestandardowe Filtry](administration-and-setup/settings/global-settings/page-1.md)
+    * [Plan subskrypcji](administration-and-setup/settings/global-settings/subscription-plan/README.md)
     * [Grupy, Użytkownicy i Uprawnienia](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)
       * [Użytkownicy](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)
         * [Modyfikowanie szczegółów użytkownika](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md)

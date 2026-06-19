@@ -46,6 +46,7 @@
     * [Podešavanja Pretrage Punog Teksta](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
     * [Document Processing](overview/settings/document-processing/README.md)
       * [Pretraga matičnih podataka](admin-section/settings/document-processing/master-data-lookup.md)
+      * [Stabla odlučivanja](administration-and-setup/settings/document-processing/decision-trees.md)
       * [Module](overview/settings/document-processing/module/README.md)
         * [Annotation](overview/settings/document-processing/module/annotation.md)
         * [Approval Before Export](overview/settings/document-processing/module/approval-before-export.md)

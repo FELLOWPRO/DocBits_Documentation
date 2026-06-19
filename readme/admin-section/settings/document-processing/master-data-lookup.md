@@ -1,45 +1,51 @@
-# Stammdaten
+# Stammdaten-Lookup
 
-## Übersicht
+{% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
-Die "Stammdaten" in Ihren Einstellungen zur Verarbeitung von Dokumenten ermöglichen einen umfassenden und integrierten Ansatz zur Verwaltung und Validierung Ihrer Dokumentdaten, indem sie mit Ihrem Infor-ERP-System synchronisiert werden. So unterstützt es die Optimierung der Validierung und Verbesserung der Verarbeitung von Dokumenten in Ihrer ERP-Umgebung:
+Mit **Stammdaten-Lookup** (Seitenleiste: **Stammdaten**) können Sie die Stammdaten anzeigen und verwalten, die DocBits zur Validierung der aus Dokumenten extrahierten Daten gegen Ihr ERP-System verwendet. Dies ist entscheidend für präzises PO-Matching, Lieferantenvalidierung und die automatische Feldvervollständigung. Öffnen Sie die Seite über **Einstellungen → Dokumentenverarbeitung → Stammdaten**.
 
-1. **Zentralisierte Datenverwaltung**: Diese Funktion dient als zentrale Ablage, in der Daten aus verschiedenen Quellen wie Lieferanten, Kundenadressen, Steuercodes und mehr gespeichert und verwaltet werden können. Sie bietet einen einzigen Referenzpunkt für alle Stammdaten und stellt so Konsistenz und Genauigkeit in Ihrem Unternehmen sicher.
-2. **Validierung gegen ERP-Daten**: Durch die Synchronisierung von Stammdaten wie Lieferanteninformationen von Infor zu DocBits können die aus Dokumenten extrahierten Daten automatisch gegen Ihre ERP-Daten validiert werden. So wird sichergestellt, dass die verarbeiteten Informationen (wie Lieferantennamen, Adressen und Steuercodes) mit den in Ihrem ERP-System hinterlegten Daten übereinstimmen, wodurch Fehler und Abweichungen minimiert werden.
-3. **Ermöglicht Automatisierung**: Ein robustes Stammdaten-Lookup-System unterstützt die Automatisierung der Verarbeitung eingehender Dokumente. Beispielsweise können Bestellungen oder Rechnungen automatisch auf die Korrektheit der Lieferantendaten überprüft, bei Übereinstimmung freigegeben oder bei Abweichungen zur Überprüfung markiert werden.
-4. **Steigert die Datenintegrität**: Regelmäßige Aktualisierungen aus Ihrem ERP-System in die Stammdaten stellen sicher, dass die für die Verarbeitung von Dokumenten verwendeten Daten aktuell sind. Dadurch verringert sich das Risiko, Dokumente auf Basis veralteter Informationen zu verarbeiten, was die Integrität von Geschäftsvorgängen insgesamt erhöht.
-5. **Effizienz in der Verarbeitung von Dokumenten**: Mit direkt verknüpften und laufend aktualisierten Stammdaten wird die Verarbeitung von Dokumenten effizienter. Dokumente können automatisch klassifiziert und anhand der in den Stammdaten definierten Kriterien weitergeleitet werden, z. B. spezifische Lieferantenkonditionen oder steuerliche Vorschriften, die für unterschiedliche Transaktionsarten gelten.
+<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Stammdaten-Lookup"><figcaption><p>Seite Stammdaten-Lookup – Datenquellen und die Datentabelle</p></figcaption></figure>
+
+## Datenquellen
+
+Das linke Panel listet vier Datenquellen-Kategorien auf:
+
+| Quelle | Beschreibung |
+|--------|--------------|
+| **BOD Eingangsdaten** | Daten, die über Infor-BOD-Nachrichten (Business Object Document) empfangen werden. |
+| **ERP-API-Daten** | Daten, die direkt über eine API aus Ihrem ERP-System abgerufen werden. Klicken Sie auf das Zahnrad-Symbol, um die API-Verbindung zu konfigurieren. |
+| **Importiert** | Manuell importierte Daten (z. B. per CSV-Upload). Klicken Sie auf das **+**-Symbol, um neue Daten hinzuzufügen. |
+| **DocBits Stammdaten** | Interne Stammdaten, die innerhalb von DocBits verwaltet werden. |
+
+## Datentabelle
+
+Bei Auswahl einer Datenquelle werden deren Daten rechts in einer durchsuchbaren, sortierbaren Tabelle angezeigt:
+
+* **Registerkarten** – jede Registerkarte ist ein Stammdaten-Typ (z. B. Lieferant, Bestellung, Artikel).
+* **Suche** – filtern Sie nach Spalte (**Suche nach Spalten**) oder suchen Sie nach Text (**Suche Zeichenfolge**).
+* **Aktionen** – Spaltenbeschriftungen aktualisieren, leere Spalten ausblenden, Aliase aktualisieren oder die Daten als CSV herunterladen.
+* **Seitennavigation** – navigieren Sie mit den Seitensteuerelementen durch große Datenmengen.
+
+Die Lieferanten- und Bestelltabellen enthalten Spalten wie Lieferanten-ID, Lieferantenname, Adresse, Bankleitzahl, Bestellnummer, Artikel-ID, Beschreibung, Menge, Stückpreis, Gesamtbetrag, Währung und Status sowie etwaige benutzerdefinierte Felder.
+
+## Einstellungen
+
+Klicken Sie unten links im Datenquellen-Panel auf **Einstellungen** (Zahnrad-Symbol), um die Stammdaten-Einstellungen zu öffnen.
+
+<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Stammdaten-Lookup-Einstellungen"><figcaption><p>Einstellungen für Supplier BOD und das Löschen von Bestellungen</p></figcaption></figure>
+
+### Supplier BOD
+
+**Allow Multiple Supplier Accounts Sync**
+
+* **Aktiviert**: Ein einzelner Lieferant kann mehrere `<FinancialParty>`-Elemente im BOD haben (häufig aufgrund mehrerer IBANs oder Finanzkonten). Alle `<FinancialParty>`-Einträge werden extrahiert und in der Lieferantentabelle gespeichert, sodass mehrere Finanzattribute hinterlegt werden können.
+* **Deaktiviert**: Nur das letzte für den Lieferanten gefundene `<FinancialParty>`-Element wird extrahiert. Frühere Finanzattribute (z. B. zusätzliche IBANs) werden ignoriert; gespeichert werden nur die Daten des letzten Vorkommens.
+
+### Purchase Order Deletion Assistant
+
+**Delete Purchase Order After** – legen Sie fest, wann abgeschlossene Bestellungen entfernt werden sollen. Nach dem gewählten Zeitraum werden die Datensätze automatisch gelöscht.
 
 {% hint style="info" %}
-Hier erfahren Sie, wie Sie [Stammdaten importieren](../../../setup/importing-customer-master-data/)
+Wie Sie Stammdaten in DocBits laden, erfahren Sie unter [Stammdaten importieren](../../../infor-integration-and-configuration/importing-customer-master-data/).
 {% endhint %}
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/master_data_lookup_1.png)
-
-## **Zugriff auf Stammdaten**
-
-Um den Bereich **Stammdaten** aufzurufen, navigieren Sie zu:\
-**Einstellungen → Verarbeitung von Dokumenten → Stammdaten**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_mater_data_lookup.png)
-
-## **Einstellungen**
-
-Um die Einstellungen für **Stammdaten** zu öffnen, klicken Sie auf **Einstellungen** in der unteren linken Ecke der **Stammdaten**-Ansicht.\
-Die folgenden Konfigurationsoptionen sind verfügbar:
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/master_data_lookup_2.png)
-
-### **Lieferanten-BOD**
-
-* **Synchronisierung mehrerer Lieferantenkonten zulassen**:
-  * **Aktiviert**:\
-    Ein einzelner Lieferant kann mehrere Elemente vom Typ `<FinancialParty>` im BOD (Business Object Document) haben, häufig aufgrund mehrerer zugeordneter IBANs oder Finanzkonten. Wenn diese Einstellung aktiviert ist, werden alle Einträge `<FinancialParty>` für den Lieferanten extrahiert und in der Lieferantentabelle gespeichert, sodass mehrere finanzielle Attribute gespeichert werden können.
-  * **Deaktiviert**:\
-    Es wird nur das letzte für den Lieferanten im BOD gefundene Element `<FinancialParty>` extrahiert. Frühere finanzielle Attribute (z. B. zusätzliche IBANs) werden ignoriert, und nur die Daten aus dem letzten Vorkommen werden in der Lieferantentabelle gespeichert.
-
-### **Löschung von Bestellungen**
-
-*   **Bestellung löschen nach**: Geben Sie an, wann geschlossene Bestellungen gelöscht werden sollen. Nach dem ausgewählten Zeitraum werden die Datensätze automatisch entfernt.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/master_data_lookup_3.png)

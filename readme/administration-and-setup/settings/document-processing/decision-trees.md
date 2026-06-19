@@ -1,123 +1,142 @@
-# Decision Trees
+# Drzewa decyzyjne
 
 {% embed url="https://youtu.be/omFWSkSjlL0" %}
-How to Create a Decision Tree in DocBits (Conditions, Policies, Testing & Export)
+Jak utworzyć drzewo decyzyjne w DocBits (warunki, polityki, testowanie i eksport)
 {% endembed %}
 
-## Overview
+## Przegląd
 
-Decision Trees are a powerful feature that allows for the automated routing and decision-making process based on predefined rules. This feature is especially useful in complex environments where various conditions need to be evaluated to determine the correct course of action, such as assigning prices, determining quantities, or routing documents.
+Drzewa decyzyjne to zaawansowana funkcja umożliwiająca zautomatyzowane kierowanie dokumentów i podejmowanie decyzji na podstawie zdefiniowanych wcześniej reguł. Funkcja ta jest szczególnie przydatna w złożonych środowiskach, w których trzeba ocenić różne warunki, aby ustalić właściwy sposób postępowania, taki jak przypisywanie cen, ustalanie ilości czy kierowanie dokumentów.
 
-#### Key Components
+#### Kluczowe komponenty
 
-* **Decision Tree List**: This is the main interface where all existing decision trees are listed. Each decision tree can be associated with a specific document type such as an `INVOICE` or `QUOTE`.
-* **Decision Tree Designer**: This interface allows for the creation and editing of decision trees, where you can define rules, operators, and actions to be taken when certain conditions are met.
+* **Lista drzew decyzyjnych**: jest to główny interfejs, w którym wyświetlane są wszystkie istniejące drzewa decyzyjne. Każde drzewo decyzyjne może być powiązane z określonym typem dokumentu, takim jak `INVOICE` lub `QUOTE`.
+* **Projektant drzewa decyzyjnego**: ten interfejs umożliwia tworzenie i edytowanie drzew decyzyjnych, w którym można zdefiniować reguły, operatory i działania, jakie należy podjąć po spełnieniu określonych warunków.
 
-## Decision Tree Interface
+## Interfejs drzewa decyzyjnego
 
-#### Decision Tree List
+#### Lista drzew decyzyjnych
 
-The Decision Tree list displays all the available decision trees. Each entry shows:
+Lista drzew decyzyjnych wyświetla wszystkie skonfigurowane drzewa decyzyjne. Otwórz ją w **Settings → Document Processing → Decision Trees**.
 
-* **Name**: The name of the decision tree.
-* **Document Type**: The type of document associated with the decision tree (e.g., `INVOICE`, `QUOTE`).
+<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Lista drzew decyzyjnych"><figcaption><p>Lista drzew decyzyjnych</p></figcaption></figure>
 
-## Decision Tree Designer
+Każdy wpis pokazuje:
 
-The Decision Tree Designer allows you to configure rules that govern how decisions are made.
+| Kolumna | Opis |
+|--------|-------------|
+| **Name** | Nazwa drzewa decyzyjnego. Kliknij ją, aby otworzyć Projektanta. |
+| **Document Type** | Typ dokumentu, którego dotyczy drzewo (np. `INVOICE`, `QUOTE`). |
+| **Last Modified By** | Użytkownik, który ostatnio edytował drzewo. |
+| **Last Modified At** | Znacznik czasu ostatniej zmiany. |
+| **Actions** | Menu z trzema kropkami umożliwiające edycję, kopiowanie, eksport lub usunięcie drzewa. |
 
-### **Components of the Decision Tree Designer**
+#### Tworzenie drzewa decyzyjnego
 
-* **Rules**: Each rule consists of conditions and actions.
-* **Select Source**: This dropdown allows you to specify the source field to evaluate.
-* **Select Operator**: Defines the logic operator (e.g., `<=`, `>=`, `=`, `!=`) to be applied to the source field.
-* **Result**: Defines the outcome or action that should be taken when the conditions are met.
-* **Add New Row**: Allows you to add additional rules to the decision tree.
+1. Kliknij **+ Add Decision Tree** w prawym górnym rogu.
+2. Wprowadź **Name** i wybierz **Document Type**.
+3. Użyj Projektanta drzewa decyzyjnego (poniżej), aby zdefiniować warunki, polityki i wyniki.
 
-### Example of a Decision Tree Configuration
+#### Importowanie drzewa decyzyjnego
 
-This decision tree evaluates the **Total Amount** field and assigns it to different groups based on predefined conditions. Each rule compares the total amount against a specific value, and based on which condition is true, the corresponding **Group** is returned.
+Kliknij **Import Decision Tree**, aby przesłać wcześniej wyeksportowany plik drzewa decyzyjnego (w formacie JSON). Jest to przydatne do kopiowania drzewa między organizacjami lub środowiskami.
 
-<figure><img src="../../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
+## Projektant drzewa decyzyjnego
 
-This decision tree evaluates two key conditions to determine which group should be assigned: **Total Amount** and **Warehouse Status**. The tree uses thresholds based on the total amount to define which group is returned, with the additional distinction of whether the warehouse is designated as "Warehouse Main," "Warehouse Sub," or "Not Warehouse Main."
+Projektant drzewa decyzyjnego umożliwia konfigurowanie reguł, które określają sposób podejmowania decyzji.
 
-<figure><img src="../../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
+### **Komponenty Projektanta drzewa decyzyjnego**
 
-Each rule is evaluated sequentially.
+* **Reguły**: każda reguła składa się z warunków i działań.
+* **Select Source**: ta lista rozwijana umożliwia wskazanie pola źródłowego do oceny.
+* **Select Operator**: definiuje operator logiczny (np. `<=`, `>=`, `=`, `!=`), który ma zostać zastosowany do pola źródłowego.
+* **Result**: definiuje wynik lub działanie, które należy podjąć po spełnieniu warunków.
+* **Add New Row**: umożliwia dodanie kolejnych reguł do drzewa decyzyjnego.
 
-## Decision Tree Policy
+### Przykład konfiguracji drzewa decyzyjnego
 
-The Decision Tree Policy defines how multiple rules within a decision tree are processed. You can choose from several policies:
+To drzewo decyzyjne ocenia pole **Total Amount** i przypisuje je do różnych grup na podstawie zdefiniowanych wcześniej warunków. Każda reguła porównuje kwotę całkowitą z określoną wartością, a w zależności od tego, który warunek jest spełniony, zwracana jest odpowiednia **Group**.
 
-### **1. Unique Policy**
+<figure><img src="../../../.gitbook/assets/decision_tree_example_total_amount.png" alt="Przykład drzewa decyzyjnego – Total Amount"><figcaption></figcaption></figure>
 
-Ensures that only a single rule is matched. If multiple rules are matched, the decision tree will return false.
+To drzewo decyzyjne ocenia dwa kluczowe warunki, aby ustalić, którą grupę należy przypisać: **Total Amount** oraz **Warehouse Status**. Drzewo wykorzystuje progi oparte na kwocie całkowitej, aby określić, która grupa jest zwracana, z dodatkowym rozróżnieniem, czy magazyn jest oznaczony jako „Warehouse Main", „Warehouse Sub", czy „Not Warehouse Main".
 
-**Example:**
+<figure><img src="../../../.gitbook/assets/decision_tree_example_warehouse_status.png" alt="Przykład drzewa decyzyjnego – Warehouse Status"><figcaption></figcaption></figure>
 
-| Rule | Condition            | Return Group |
+Każda reguła jest oceniana sekwencyjnie.
+
+## Polityka drzewa decyzyjnego
+
+Polityka drzewa decyzyjnego określa sposób przetwarzania wielu reguł w obrębie drzewa decyzyjnego. Możesz wybrać spośród kilku polityk:
+
+### **1. Polityka unikalności (Unique)**
+
+Zapewnia dopasowanie tylko jednej reguły. Jeśli dopasowanych zostanie wiele reguł, drzewo decyzyjne zwróci wartość false.
+
+**Przykład:**
+
+| Reguła | Warunek            | Zwracana grupa |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 5000 | GROUP\_5     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 3000 | GROUP\_3     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 5000 | GROUP_5     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 3000 | GROUP_3     |
 
-If the total amount is **1500**, the rules evaluated will be:
+Jeśli kwota całkowita wynosi **1500**, ocenione reguły będą następujące:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
-* **Rule 3**: Total Amount <= 5000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 3000 (matches)
+* **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+* **Reguła 2**: Total Amount <= 2000 (dopasowanie)
+* **Reguła 3**: Total Amount <= 5000 (dopasowanie)
+* **Reguła 4**: Total Amount <= 4000 (dopasowanie)
+* **Reguła 5**: Total Amount <= 3000 (dopasowanie)
 
-Since multiple rules are matched (**Rule 2**, **Rule 3**, **Rule 4**, **Rule 5**), the decision tree will return **false** because the **Unique** policy ensures only one rule can match.
+Ponieważ dopasowano wiele reguł (**Reguła 2**, **Reguła 3**, **Reguła 4**, **Reguła 5**), drzewo decyzyjne zwróci wartość **false**, ponieważ polityka **unikalności** zapewnia, że dopasowana może być tylko jedna reguła.
 
-### **2. First Policy**
+### **2. Polityka pierwszego dopasowania (First)**
 
-The first matching rule is applied, and no further rules are evaluated.
+Stosowana jest pierwsza dopasowana reguła, a kolejne reguły nie są już oceniane.
 
-**Example:**
+**Przykład:**
 
-| Rule | Condition            | Return Group |
+| Reguła | Warunek            | Zwracana grupa |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 5000 | GROUP\_5     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 3000 | GROUP\_3     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 5000 | GROUP_5     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 3000 | GROUP_3     |
 
-If the total amount is **1500**, the rules evaluated will be:
+Jeśli kwota całkowita wynosi **1500**, ocenione reguły będą następujące:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches) → The decision tree stops evaluating further rules and applies **GROUP\_2**.
+* **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+* **Reguła 2**: Total Amount <= 2000 (dopasowanie) → Drzewo decyzyjne przerywa ocenę kolejnych reguł i stosuje **GROUP_2**.
 
-### **3. Priority Policy**
+### **3. Polityka priorytetu (Priority)**
 
-Choosing this option allows you to set priorities for each rule. The lower the selected number, the higher the priority (i.e., priority 1 has the highest priority). Rules are evaluated based on their priority order. The highest priority matching rule will be applied.
+Wybór tej opcji umożliwia ustawienie priorytetów dla każdej reguły. Im niższa wybrana liczba, tym wyższy priorytet (tzn. priorytet 1 ma najwyższy priorytet). Reguły są oceniane na podstawie kolejności ich priorytetów. Zastosowana zostanie dopasowana reguła o najwyższym priorytecie.
 
-**Example:**
+**Przykład:**
 
-<table><thead><tr><th width="137">Rule</th><th width="110">Priority</th><th width="268">Condition</th><th>Return Group</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>Total Amount &#x3C;= 1000</td><td>GROUP_1</td></tr><tr><td>2</td><td>4</td><td>Total Amount &#x3C;= 2000</td><td>GROUP_2</td></tr><tr><td>3</td><td>3</td><td>Total Amount &#x3C;= 3000</td><td>GROUP_3</td></tr><tr><td>4</td><td>2</td><td>Total Amount &#x3C;= 4000</td><td>GROUP_4</td></tr><tr><td>5</td><td>1</td><td>Total Amount &#x3C;= 5000</td><td>GROUP_5</td></tr></tbody></table>
+<table><thead><tr><th width="137">Reguła</th><th width="110">Priorytet</th><th width="268">Warunek</th><th>Zwracana grupa</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>Total Amount &#x3C;= 1000</td><td>GROUP_1</td></tr><tr><td>2</td><td>4</td><td>Total Amount &#x3C;= 2000</td><td>GROUP_2</td></tr><tr><td>3</td><td>3</td><td>Total Amount &#x3C;= 3000</td><td>GROUP_3</td></tr><tr><td>4</td><td>2</td><td>Total Amount &#x3C;= 4000</td><td>GROUP_4</td></tr><tr><td>5</td><td>1</td><td>Total Amount &#x3C;= 5000</td><td>GROUP_5</td></tr></tbody></table>
 
-If the total amount is **1500**, the rules evaluated will be:
+Jeśli kwota całkowita wynosi **1500**, ocenione reguły będą następujące:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+* **Reguła 2**: Total Amount <= 2000 (dopasowanie)
+* **Reguła 3**: Total Amount <= 3000 (dopasowanie)
+* **Reguła 4**: Total Amount <= 4000 (dopasowanie)
+* **Reguła 5**: Total Amount <= 5000 (dopasowanie)
 
-Since the priority is applied in the order **5, 4, 3, 2, 1**, the highest priority matching rule will be **Rule 5** (**GROUP\_5**). The decision tree will return **GROUP\_5** because **Rule 5** has the highest priority (priority 1).
+Ponieważ priorytet jest stosowany w kolejności **5, 4, 3, 2, 1**, dopasowaną regułą o najwyższym priorytecie będzie **Reguła 5** (**GROUP_5**). Drzewo decyzyjne zwróci **GROUP_5**, ponieważ **Reguła 5** ma najwyższy priorytet (priorytet 1).
 
-### **4. Collect (sum) Policy**
+### **4. Polityka zbierania – suma (Collect – sum)**
 
-This policy collects all matching rules and sums the results. It only works for **Return Type Value**.
+Ta polityka zbiera wszystkie dopasowane reguły i sumuje wyniki. Działa tylko dla **Return Type Value**.
 
-**Example:**
+**Przykład:**
 
-| Rule | Condition            | Return Value |
+| Reguła | Warunek            | Zwracana wartość |
 | ---- | -------------------- | ------------ |
 | 1    | Total Amount <= 1000 | 1            |
 | 2    | Total Amount <= 2000 | 2            |
@@ -125,29 +144,29 @@ This policy collects all matching rules and sums the results. It only works for 
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-For the input value of **Total Amount = 3500**, the evaluation of rules would be:
+Dla wartości wejściowej **Total Amount = 3500** ocena reguł wyglądałaby następująco:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches, Return Value = 3)
-* **Rule 4**: Total Amount <= 4000 (matches, Return Value = 4)
-* **Rule 5**: Total Amount <= 5000 (matches, Return Value = 5)
+* **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+* **Reguła 2**: Total Amount <= 2000 (brak dopasowania)
+* **Reguła 3**: Total Amount <= 3000 (dopasowanie, Return Value = 3)
+* **Reguła 4**: Total Amount <= 4000 (dopasowanie, Return Value = 4)
+* **Reguła 5**: Total Amount <= 5000 (dopasowanie, Return Value = 5)
 
-Since the **Collect (sum)** policy is applied, we sum the **Return Values** of the matching rules, which are **3, 4, 5**.
+Ponieważ stosowana jest polityka **zbierania (suma)**, sumujemy **Return Values** dopasowanych reguł, czyli **3, 4, 5**.
 
-**Summing these values** gives:
+**Zsumowanie tych wartości** daje:
 
 * 5 + 4 + 3 = **12**
 
-Thus, the result returned by the decision tree would be **12**, which is the sum of all matching return values.
+Zatem wynikiem zwróconym przez drzewo decyzyjne będzie **12**, czyli suma wszystkich dopasowanych wartości zwracanych.
 
-### **5. Collect (min/max/count) Policy**
+### **5. Polityka zbierania – min/max/zliczanie (Collect – min/max/count)**
 
-This policy collects all matching rules and either selects the **minimum**, **maximum**, or **counts** the occurrences. It only works for **Return Type Value**.
+Ta polityka zbiera wszystkie dopasowane reguły i wybiera wartość **minimalną**, **maksymalną** lub **zlicza** wystąpienia. Działa tylko dla **Return Type Value**.
 
-**Example:**
+**Przykład:**
 
-| Rule | Condition            | Return Value |
+| Reguła | Warunek            | Zwracana wartość |
 | ---- | -------------------- | ------------ |
 | 1    | Total Amount <= 1000 | 1            |
 | 2    | Total Amount <= 2000 | 2            |
@@ -155,131 +174,137 @@ This policy collects all matching rules and either selects the **minimum**, **ma
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-1. If the **Collect (min)** option is selected, the result will return the **minimum** of the **Return Values** for the matching rules.
-   * For the input value of **Total Amount = 3500**, the evaluation of rules would be:
-     * **Rule 1**: Total Amount <= 1000 (does not match)
-     * **Rule 2**: Total Amount <= 2000 (does not match)
-     * **Rule 3**: Total Amount <= 3000 (matches, Return Value = 3)
-     * **Rule 4**: Total Amount <= 4000 (matches, Return Value = 4)
-     * **Rule 5**: Total Amount <= 5000 (matches, Return Value = 5)
-   * The **matching rules** are Rule 3, Rule 4, and Rule 5, with **Return Values** of **3, 4, and 5**.
-   * Since the **Collect (min)** policy is applied, the result will be the **minimum value**, which is **3**.
-   * **Result**: **3**
-2. If the **Collect (max)** option is selected, the result will return the **maximum** of the **Return Values** for the matching rules.
-   * For the same evaluation as above, the result will be:
-   * **Result**: **5**
-3. If the **Collect (count)** option is selected, the result will count the **number of matching rules**.
-   * For the same evaluation as above, the result will be:
-   * **Result**: **3** (since 3 rules matched).
+1. Jeśli wybrana zostanie opcja **Collect (min)**, wynikiem będzie wartość **minimalna** spośród **Return Values** dopasowanych reguł.
+   * Dla wartości wejściowej **Total Amount = 3500** ocena reguł wyglądałaby następująco:
+     * **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+     * **Reguła 2**: Total Amount <= 2000 (brak dopasowania)
+     * **Reguła 3**: Total Amount <= 3000 (dopasowanie, Return Value = 3)
+     * **Reguła 4**: Total Amount <= 4000 (dopasowanie, Return Value = 4)
+     * **Reguła 5**: Total Amount <= 5000 (dopasowanie, Return Value = 5)
+   * **Dopasowane reguły** to Reguła 3, Reguła 4 i Reguła 5, z **Return Values** wynoszącymi **3, 4 i 5**.
+   * Ponieważ stosowana jest polityka **Collect (min)**, wynikiem będzie **wartość minimalna**, czyli **3**.
+   * **Wynik**: **3**
+2. Jeśli wybrana zostanie opcja **Collect (max)**, wynikiem będzie wartość **maksymalna** spośród **Return Values** dopasowanych reguł.
+   * Dla tej samej oceny co powyżej wynikiem będzie:
+   * **Wynik**: **5**
+3. Jeśli wybrana zostanie opcja **Collect (count)**, wynik zliczy **liczbę dopasowanych reguł**.
+   * Dla tej samej oceny co powyżej wynikiem będzie:
+   * **Wynik**: **3** (ponieważ dopasowano 3 reguły).
 
-### **6. Rule Order Policy**
+### **6. Polityka kolejności reguł (Rule Order)**
 
-This policy applies rules in the order they appear in the decision tree and returns the result of the rule that matches first.
+Ta polityka stosuje reguły w kolejności, w jakiej pojawiają się w drzewie decyzyjnym, i zwraca wynik reguły, która zostanie dopasowana jako pierwsza.
 
-**Example:**
+**Przykład:**
 
-| Rule | Condition            | Return Group |
+| Reguła | Warunek            | Zwracana grupa |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 3000 | GROUP\_3     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 5000 | GROUP\_5     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
-Given that the input value is **Total Amount = 3500**, the evaluation of the rules would be:
+Zakładając, że wartością wejściową jest **Total Amount = 3500**, ocena reguł wyglądałaby następująco:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+* **Reguła 2**: Total Amount <= 2000 (brak dopasowania)
+* **Reguła 3**: Total Amount <= 3000 (dopasowanie)
+* **Reguła 4**: Total Amount <= 4000 (dopasowanie)
+* **Reguła 5**: Total Amount <= 5000 (dopasowanie)
 
-Under **Rule Order**, the tree will process the rules in the order they are listed. So, the matching rules will be:
+W ramach polityki **Rule Order** drzewo przetwarza reguły w kolejności, w jakiej są wymienione. Dopasowanymi regułami będą zatem:
 
-* **Rule 3**: GROUP\_3
-* **Rule 4**: GROUP\_4
-* **Rule 5**: GROUP\_5
+* **Reguła 3**: GROUP_3
+* **Reguła 4**: GROUP_4
+* **Reguła 5**: GROUP_5
 
-**Result**: **GROUP\_3**, **GROUP\_4**, **GROUP\_5**
+**Wynik**: **GROUP_3**, **GROUP_4**, **GROUP_5**
 
-### **7. Any Policy**
+### **7. Polityka dowolnego dopasowania (Any)**
 
-Multiple rules can be true, but the result of those rules must be the same.
+Wiele reguł może być prawdziwych, ale wynik tych reguł musi być taki sam.
 
-**Example:**
+**Przykład:**
 
-| Rule | Condition            | Return Group |
+| Reguła | Warunek            | Zwracana grupa |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 3000 | GROUP\_3     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 5000 | GROUP\_5     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
-If the total amount is **2500**, the rules evaluated will be:
+Jeśli kwota całkowita wynosi **2500**, ocenione reguły będą następujące:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+* **Reguła 2**: Total Amount <= 2000 (brak dopasowania)
+* **Reguła 3**: Total Amount <= 3000 (dopasowanie)
+* **Reguła 4**: Total Amount <= 4000 (dopasowanie)
+* **Reguła 5**: Total Amount <= 5000 (dopasowanie)
 
-For **Any** to apply, all matching rules must return the same **Return Group**. Since the groups do not match across the different rules, the result would be **false**.
+Aby polityka **Any** została zastosowana, wszystkie dopasowane reguły muszą zwracać tę samą **Return Group**. Ponieważ grupy nie są zgodne w poszczególnych regułach, wynikiem będzie **false**.
 
-### **8. First & Adjacent Policy**
+### **8. Polityka pierwszego i sąsiedniego dopasowania (First & Adjacent)**
 
-Chooses the result of the rule that is adjacent to the first rule that is true.
+Wybiera wynik reguły sąsiadującej z pierwszą regułą, która jest prawdziwa.
 
-**Example:**
+**Przykład:**
 
-| Rule | Condition            | Return Group |
+| Reguła | Warunek            | Zwracana grupa |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 3000 | GROUP\_3     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 5000 | GROUP\_5     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
-If the total amount is **1500**, the rules evaluated will be:
+Jeśli kwota całkowita wynosi **1500**, ocenione reguły będą następujące:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
+* **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
+* **Reguła 2**: Total Amount <= 2000 (dopasowanie)
 
-Since **Rule 2** is the first rule that matches, **First & Adjacent** would apply the result of **Rule 3**: **GROUP\_3**.
+Ponieważ **Reguła 2** jest pierwszą regułą, która zostaje dopasowana, polityka **First & Adjacent** zastosowałaby wynik **Reguły 3**: **GROUP_3**.
 
-## **Testing the Decision Tree**
+## **Testowanie drzewa decyzyjnego**
 
-**Overview:**\
-The decision tree designer includes a test feature to validate the logic of the configured rules. This feature allows users to test the decision tree by providing specific input values for the selected fields.
+**Przegląd:**
+Projektant drzewa decyzyjnego zawiera funkcję testowania, która umożliwia walidację logiki skonfigurowanych reguł. Funkcja ta pozwala użytkownikom przetestować drzewo decyzyjne poprzez podanie określonych wartości wejściowych dla wybranych pól.
 
-**Steps to Use the Test Feature:**
+**Kroki korzystania z funkcji testowania:**
 
-1.  **Locate the Test Button:**
+1.  **Znajdź przycisk Test:**
 
-    * In the decision tree designer, find the **Test** button.
+    * W Projektancie drzewa decyzyjnego znajdź przycisk **Test**.
 
-    <figure><img src="../../../.gitbook/assets/image (344).png" alt="" width="563"><figcaption></figcaption></figure>
-2.  **Open the Test Popup:**
+    <figure><img src="../../../.gitbook/assets/decision_tree_test_button.png" alt="Przycisk Test drzewa decyzyjnego" width="563"><figcaption></figcaption></figure>
+2.  **Otwórz okno testowe:**
 
-    * Click the **Test** button.
-    * A popup window will appear, providing input fields corresponding to the criteria used in the decision tree.
+    * Kliknij przycisk **Test**.
+    * Pojawi się okno podręczne z polami wejściowymi odpowiadającymi kryteriom używanym w drzewie decyzyjnym.
 
-    <figure><img src="../../../.gitbook/assets/image (339).png" alt="" width="421"><figcaption></figcaption></figure>
-3. **Provide Input Values:**
-   *   Enter values into the input fields to simulate a real-world scenario.
+    <figure><img src="../../../.gitbook/assets/decision_tree_test_popup.png" alt="Okno testowe drzewa decyzyjnego" width="421"><figcaption></figcaption></figure>
+3. **Podaj wartości wejściowe:**
+   *   Wprowadź wartości w polach wejściowych, aby zasymulować rzeczywisty scenariusz.
 
-       <figure><img src="../../../.gitbook/assets/image (341).png" alt="" width="428"><figcaption></figcaption></figure>
-4.  **Evaluate the Results:**
+       <figure><img src="../../../.gitbook/assets/decision_tree_test_input.png" alt="Dane wejściowe testu drzewa decyzyjnego" width="428"><figcaption></figcaption></figure>
+4.  **Oceń wyniki:**
 
-    * After entering the inputs, the tree processes them based on the chosen policy.
-    * The system highlights the rule(s) that match the provided inputs.
+    * Po wprowadzeniu danych wejściowych drzewo przetwarza je na podstawie wybranej polityki.
+    * System wyróżnia regułę (lub reguły), które pasują do podanych danych wejściowych.
 
-    <figure><img src="../../../.gitbook/assets/image (342).png" alt="" width="563"><figcaption></figcaption></figure>
-5. &#x20;**Review Feedback for No Match:**
-   * If no rule is highlighted, the system will display feedback explaining why no rule matched.
-   * Use this feedback to adjust inputs or review the tree's configuration for potential issues.
+    <figure><img src="../../../.gitbook/assets/decision_tree_test_result.png" alt="Wynik testu drzewa decyzyjnego" width="563"><figcaption></figcaption></figure>
+5. **Przejrzyj informacje zwrotne w przypadku braku dopasowania:**
+   * Jeśli żadna reguła nie zostanie wyróżniona, system wyświetli informację zwrotną wyjaśniającą, dlaczego żadna reguła nie została dopasowana.
+   * Skorzystaj z tej informacji zwrotnej, aby dostosować dane wejściowe lub przejrzeć konfigurację drzewa pod kątem potencjalnych problemów.
 
-## Export and Save
+## Eksport i zapis
 
-* **Save**: Saves the current configuration of the decision tree.
-* **Export**: Allows you to export the decision tree configuration, which can then be imported into another environment or used for backup purposes.
+* **Save**: zapisuje bieżącą konfigurację drzewa decyzyjnego.
+* **Export**: umożliwia wyeksportowanie konfiguracji drzewa decyzyjnego, którą można następnie zaimportować do innego środowiska lub wykorzystać do celów tworzenia kopii zapasowej.
+
+## Przypadki użycia
+
+* **Przepływy zatwierdzania** — kierowanie faktur do różnych osób zatwierdzających na podstawie progów kwotowych (na przykład kwoty powyżej 10 000 wymagają zatwierdzenia przez menedżera).
+* **Reguły walidacji** — automatyczna walidacja wartości pól i oznaczanie dokumentów, które nie spełniają skonfigurowanych kryteriów.
+* **Przypisywanie sekwencyjne** — przypisywanie dokumentów użytkownikom w określonej kolejności na podstawie warunków.

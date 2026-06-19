@@ -84,6 +84,7 @@
       * [Company Information](overview/settings/global-settings/company-information.md)
       * [Custom Filters](overview/settings/global-settings/custom-filters.md)
       * [Document Expiry](overview/settings/global-settings/document-expiry.md)
+      * [Vade Tarihi Hesaplama](overview/settings/global-settings/due-date-calculation.md)
       * [Elektronik Belgeler](overview/settings/global-settings/e-documents/README.md)
         * [Doğrulama Kuralları](overview/settings/global-settings/e-documents/validation-rules.md)
         * [Bildirim Yönlendirme](overview/settings/global-settings/e-documents/notification-routing.md)

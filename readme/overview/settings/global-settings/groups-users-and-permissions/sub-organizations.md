@@ -66,9 +66,11 @@ Organizasyona yeni bir kullanıcı ekleyebilir ve kullanıcının diğer gruplar
 
 ## "Cross Organizasyon" seçeneği
 
-Bu seçenek etkinleştirildiğinde (sayfanın üst kısmındaki anahtar), kullanıcılar tek bir görünümden tüm alt organizasyonlardaki belgelere erişebilir.
+Etkinleştirildiğinde (sayfanın üst kısmındaki anahtar aracılığıyla), kullanıcılar yalnızca bir alt kuruluşun belgeleriyle sınırlı kalmak yerine tüm alt kuruluşların belgelerini tek bir birleşik görünümde görüntüleyebilir.
 
 1. **Panoya (Dashboard)** gidin.
-2. Sağ üst köşede, alt organizasyonlar arasında geçiş yapılabilen yerde **Cross** seçeneğini seçin.
-3. Sayfa yeniden yüklenir ve tüm alt organizasyonlardaki belgeleri gösterir.
-4. Tek bir alt organizasyon görünümüne dönmek için **Cross** seçeneğinin işaretini kaldırın.
+2. Sağ üst köşede, alt kuruluşlar arasında geçiş yapılabilen yerde **Cross** seçeneğini seçin.
+3. Sayfa yeniden yüklenir ve tüm alt kuruluşlardaki belgeleri gösterir.
+4. Tek bir alt kuruluş görünümüne dönmek için **Cross** seçeneğinin işaretini kaldırın.
+
+<figure><img src="../../../../.gitbook/assets/cross_org_switcher.png" alt="Cross alt kuruluş değiştirici"><figcaption><p>Sağ üstteki kuruluş değiştiricide Cross seçimi</p></figcaption></figure>

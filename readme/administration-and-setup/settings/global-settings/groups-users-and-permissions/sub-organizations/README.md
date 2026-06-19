@@ -31,7 +31,7 @@ Utilize a barra de **pesquisa** para encontrar rapidamente suborganizações pel
 
 ## Opção «Mostrar organização cruzada» (Cross)
 
-Quando ativada (interruptor na parte superior da página), os utilizadores podem aceder aos documentos de todas as suborganizações a partir de uma única vista.
+Quando ativada (através do interruptor na parte superior da página), os utilizadores podem ver documentos de todas as suborganizações numa única vista combinada, em vez de ficarem limitados aos documentos de apenas uma suborganização.
 
 ### Como utilizar as suborganizações cruzadas
 
@@ -39,5 +39,7 @@ Quando ativada (interruptor na parte superior da página), os utilizadores podem
 2. No canto superior direito, onde é possível alternar entre suborganizações, selecione **Cross**.
 3. A página é recarregada e apresenta os documentos de todas as suborganizações.
 4. Para voltar à vista de uma única suborganização, desmarque a opção **Cross**.
+
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Seletor de suborganizações cruzadas"><figcaption><p>Selecionar Cross no seletor de organização no canto superior direito</p></figcaption></figure>
 
 Isto é útil para administradores que precisam de uma visão centralizada de todos os documentos da organização.

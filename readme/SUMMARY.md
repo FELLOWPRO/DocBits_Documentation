@@ -213,6 +213,7 @@
     * [Cruscotto](administration-and-setup/settings/global-settings/cruscotto/README.md)
       * [Personalizzazione dei Filtri](administration-and-setup/settings/global-settings/cruscotto/customizing-filters.md)
   * [Elaborazione Documenti](administration-and-setup/settings/document-processing/README.md)
+    * [Cálculo da data de vencimento](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [Documentos eletrónicos](administration-and-setup/settings/document-processing/e-documents/README.md)
       * [Regras de validação](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
       * [Encaminhamento de notificações](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

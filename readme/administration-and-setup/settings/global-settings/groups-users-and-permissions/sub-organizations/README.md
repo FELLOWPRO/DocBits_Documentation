@@ -31,7 +31,7 @@ Utilisez la barre de **recherche** pour trouver rapidement des sous-organisation
 
 ## Option « Afficher l'organisation transversale » (Cross)
 
-Lorsqu'elle est activée (commutateur en haut de la page), les utilisateurs peuvent accéder aux documents de toutes les sous-organisations depuis une vue unique.
+Lorsqu'elle est activée (à l'aide du commutateur en haut de la page), les utilisateurs peuvent consulter les documents de toutes les sous-organisations dans une seule vue combinée, au lieu d'être limités aux documents d'une seule sous-organisation.
 
 ### Comment utiliser les sous-organisations transversales
 
@@ -39,5 +39,7 @@ Lorsqu'elle est activée (commutateur en haut de la page), les utilisateurs peuv
 2. Dans le coin supérieur droit, là où l'on bascule entre les sous-organisations, sélectionnez **Cross**.
 3. La page se recharge et affiche les documents de toutes les sous-organisations.
 4. Pour revenir à la vue d'une seule sous-organisation, désélectionnez l'option **Cross**.
+
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Sélecteur de sous-organisations transversales"><figcaption><p>Sélection de Cross dans le sélecteur d'organisation en haut à droite</p></figcaption></figure>
 
 Cela est utile pour les administrateurs qui ont besoin d'une vue d'ensemble centralisée de tous les documents de l'organisation.

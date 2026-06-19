@@ -218,6 +218,7 @@
     * [Panel](administration-and-setup/settings/global-settings/dashboard/README.md)
       * [Personalizando Filtros](administration-and-setup/settings/global-settings/dashboard/customizing-filters.md)
   * [Procesamiento de documentos](administration-and-setup/settings/document-processing/README.md)
+    * [Cálculo de fecha de vencimiento](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [Documentos electrónicos](administration-and-setup/settings/document-processing/e-documents/README.md)
       * [Reglas de validación](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
       * [Enrutamiento de notificaciones](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

@@ -84,6 +84,7 @@ You can set up an email import that automatically imports documents from your in
 In addition to the file extensions listed above, DocBits also identifies a document by its **actual file content** (file signature), not only by the content type declared by the sending mail system. This matters for **forwarded** mails: intermediate mail servers/gateways frequently re-label an attachment with a generic type (`application/octet-stream`) instead of, for example, `application/pdf` or `application/xml`. DocBits still recognises and imports such attachments correctly.
 
 * **Forwarded `.eml`** messages and Outlook **`winmail.dat`** (TNEF) attachments are unpacked and the documents inside them are imported.
+* **Kodowanie XML:** Gdy faktura XML zostaje ponownie oznaczona typem ogólnym (`application/octet-stream`), DocBits rozpoznaje ją po deklaracji `<?xml`, tolerując początkowy znacznik kolejności bajtów (BOM) **UTF-8** lub **UTF-16** (LE/BE) — obecnie tylko te kodowania BOM są automatycznie wykrywane na podstawie treści. Załącznik, który zachowuje nazwę `.xml`, jest importowany niezależnie od kodowania.
 * **Ignored:** inline images that ride along in a mail (signature logos / embedded graphics — PNG, JPG, GIF, BMP) are skipped silently and are **not** counted as failed imports.
 
 If an attachment cannot be imported and the option **“Reply to this email if import can not be done”** is enabled for the inbound address, the configured reply address is notified.

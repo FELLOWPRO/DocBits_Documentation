@@ -1,23 +1,43 @@
 # Suborganisaties
 
-Het creëren van suborganisaties binnen een documentbeheersysteem dient om de structuur en het beheer van gebruikersaccounts, documenten en workflows binnen een organisatie verder te organiseren en te differentiëren. Hier zijn enkele doeleinden en voordelen van het creëren van suborganisaties:
+<figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Suborganisaties"><figcaption><p>Pagina Suborganisaties</p></figcaption></figure>
 
-* **Structurering en organisatie:** Suborganisaties maken het mogelijk om een hiërarchische structuur binnen het documentbeheersysteem te creëren. Dit kan helpen om gebruikersaccounts en documenten te organiseren op basis van afdeling, team, locatie of andere relevante criteria voor duidelijker en efficiënter beheer.
-* **Beheer van rechten:** Door suborganisaties te creëren, kunnen beheerders gedetailleerde rechten en toegangscontroles instellen voor verschillende groepen gebruikers. Dit betekent dat specifieke gebruikers of groepen alleen toegang hebben tot de documenten en middelen die relevant zijn voor hun respectieve suborganisatie, wat de beveiliging en privacy verbetert.
-* **Workflows en samenwerking:** Suborganisaties kunnen samenwerking en communicatie binnen specifieke teams of afdelingen vergemakkelijken door toegang tot gedeelde documenten, projecten of taken te centraliseren. Dit bevordert efficiëntie en coördinatie bij het samenwerken aan gemeenschappelijke projecten of workflows.
-* **Rapportage en analyse:** Door gebruikersaccounts en documenten in suborganisaties te organiseren, kunnen gedetailleerde rapporten en analyses worden gemaakt over de activiteiten en prestaties van individuele teams of afdelingen. Dit stelt beheerders en managers in staat om inzicht te krijgen in het gebruik van het documentbeheersysteem op organisatieniveau.
-* **Schaalbaarheid en flexibiliteit:** Suborganisaties bieden een schaalbare structuur die kan meegroeien met de groei en veranderingen van de organisatie. Nieuwe teams of afdelingen kunnen eenvoudig worden toegevoegd en op de juiste manier worden geïntegreerd in het bestaande suborganisatieschema zonder de algehele structuur van het documentbeheersysteem te beïnvloeden.
+Met suborganisaties kunt u een hiërarchische structuur in DocBits opzetten om documenten, gebruikers en workflows over verschillende afdelingen, teams of entiteiten te beheren.
 
-Over het algemeen stellen suborganisaties in staat tot een effectievere beheer en organisatie van gebruikersaccounts, documenten en workflows binnen een documentbeheersysteem door de structuur, beveiliging en samenwerking te verbeteren.
+## Belangrijkste voordelen
 
-## Hoe toegang te krijgen tot deze functie
+* **Gestructureerde organisatie**: groepeer gebruikers en documenten per afdeling, locatie of bedrijfsonderdeel.
+* **Gedetailleerde rechten**: bepaal welke gebruikers toegang hebben tot de documenten van elke suborganisatie.
+* **Aparte workflows**: elke suborganisatie kan eigen regels en configuraties voor documentverwerking hebben.
+* **Rapportage**: genereer rapporten en analyses per suborganisatie.
 
-Ga naar Instellingen, Globale Instellingen → Groepen, Gebruikers en Rechten → Suborganisaties zoals hieronder weergegeven.
+## Lijst met suborganisaties
 
-<figure><img src="../../../../../.gitbook/assets/docbits_sub_organizations_nav.png" alt="Docbits Sub Organizations Nav"><figcaption><p>Settings</p></figcaption></figure>
+De tabel toont alle bestaande suborganisaties met:
 
-U wordt vervolgens naar een pagina geleid die er ongeveer zo uitziet:
+| Kolom | Beschrijving |
+|--------|-------------|
+| **Naam** | De naam van de suborganisatie. |
+| **Beschrijving** | Een korte beschrijving van het doel van de suborganisatie. |
+| **Acties** | Menu met opties om gebruikers te beheren, de suborganisatie te bewerken of te verwijderen. |
 
-<figure><img src="../../../../../.gitbook/assets/docbits_sub_organizations_list.png" alt="Docbits Sub Organizations List"><figcaption></figcaption></figure>
+Gebruik de **zoekbalk** om snel suborganisaties op naam te vinden.
 
-Hier vindt u uw eerder gemaakte suborganisaties, evenals waar u nieuwe suborganisaties kunt creëren.
+## Een nieuwe suborganisatie aanmaken
+
+1. Klik op de knop **+ Nieuw** rechtsboven.
+2. Voer een **Naam** en optioneel een **Beschrijving** in.
+3. Klik op **Opslaan** om de suborganisatie aan te maken.
+
+## Optie "Cross-organisatie weergeven" (Cross)
+
+Wanneer deze optie is ingeschakeld (schakelaar boven aan de pagina), kunnen gebruikers in één weergave documenten uit alle suborganisaties bekijken.
+
+### Cross-suborganisaties gebruiken
+
+1. Ga naar het **dashboard**.
+2. Selecteer rechtsboven, waar tussen suborganisaties kan worden gewisseld, **Cross**.
+3. De pagina wordt opnieuw geladen en toont documenten uit alle suborganisaties.
+4. Om terug te keren naar de weergave van één suborganisatie, schakelt u de optie **Cross** uit.
+
+Dit is handig voor beheerders die een centraal overzicht van alle documenten in de organisatie nodig hebben.

@@ -1,44 +1,48 @@
-# How to create a Sub-Organization
+# Een suborganisatie aanmaken
 
-## Create a new Sub-Organisaztion:
+## Een nieuwe suborganisatie aanmaken:
 
-<div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_button.png" alt="Docbits New Sub Organization Button"><figcaption></figcaption></figure></div>
+<div data-full-width="false">
 
-Click on the `+ NEW` button
+<figure><img src="../../../../../.gitbook/assets/sub_organizations_list_overview_2.png" alt="Overzicht van de lijst met suborganisaties"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_menu.png" alt="Docbits New Sub Organization Menu" width="97"><figcaption></figcaption></figure>
+</div>
 
-The following menu will be displayed:
+Klik op de knop `+ NIEUW`.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_sub_organization_form.png" alt="Docbits New Sub Organization Form" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/sub_organization_new_button.png" alt="Knop Nieuwe suborganisatie" width="97"><figcaption></figcaption></figure>
 
-Enter the details of the sub-organization you want to create, the name and description, then click on the `SAVE` button. You should then find your newly created sub-organization at the bottom of the list of existing sub-organizations.
+Het volgende menu wordt weergegeven:
 
-## Editing sub organizations
+<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Formulier voor het aanmaken van een suborganisatie" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edit_menu_option.png" alt="Docbits Edit Menu Option" width="161"><figcaption></figcaption></figure>
+Voer de gegevens in van de suborganisatie die u wilt aanmaken — de naam en de beschrijving — en klik vervolgens op de knop `OPSLAAN`. U vindt de zojuist aangemaakte suborganisatie daarna onderaan de lijst met bestaande suborganisaties.
 
-**Manage Users:**
+## Suborganisaties bewerken
 
-<figure><img src="../../../../../.gitbook/assets/docbits_manage_users_button.png" alt="Docbits Manage Users Button" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/edit_sub_organization_icon.png" alt="Menu voor het bewerken van een suborganisatie" width="161"><figcaption></figcaption></figure>
 
-* **Adding Users:** Administrators can create new user accounts and assign them to the appropriate sub-organization.
-* **Assigning Roles and Permissions:** Administrators can set the roles and permissions for users within a suborganization. This typically involves assigning access rights to specific documents, folders or functions in the document management system.
-* **Manage profile details:** Administrators can edit profile details of users within the sub-organization, such as: B. Contact information or department affiliation. This allows for updated and accurate management of user data.
+**Gebruikers beheren:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_manage_profile_details.png" alt="Docbits Manage Profile Details" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/manage_users_in_sub_organization.png" alt="Gebruikers beheren in een suborganisatie" width="375"><figcaption></figcaption></figure>
 
-You can add a new user to the organization and have the option of whether to remove the user from other groups.
+* **Gebruikers toevoegen:** beheerders kunnen nieuwe gebruikersaccounts aanmaken en deze toewijzen aan de juiste suborganisatie.
+* **Rollen en rechten toewijzen:** beheerders kunnen de rollen en rechten van gebruikers binnen een suborganisatie instellen. Dit omvat doorgaans het toekennen van toegangsrechten tot specifieke documenten, mappen of functies in het documentbeheersysteem.
+* **Profielgegevens beheren:** beheerders kunnen de profielgegevens van gebruikers binnen de suborganisatie bewerken, zoals contactgegevens of de afdeling waartoe zij behoren. Dit zorgt voor een actueel en nauwkeurig beheer van de gebruikersgegevens.
 
-**Edit User:**
+<figure><img src="../../../../../.gitbook/assets/add_user_to_sub_organization_modal.png" alt="Een gebruiker aan een suborganisatie toevoegen" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edit_user_button.png" alt="Docbits Edit User Button" width="375"><figcaption></figcaption></figure>
+U kunt een nieuwe gebruiker aan de organisatie toevoegen en kiezen of deze uit andere groepen moet worden verwijderd.
 
-* **Editing suborganization settings:** Administrators can edit the settings and properties of a suborganization, including its name, description, or hierarchy level within the system.
-* **Edit user details:** Administrators can edit the details of individual users within a sub-organization, for example to adjust their access rights or update their contact information.
+**Gebruiker bewerken:**
 
-**Delete User:**
+<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="Een gebruiker in een suborganisatie bewerken" width="375"><figcaption></figcaption></figure>
 
-* **Deleting sub-organizations:** Administrators may also have the ability to delete sub-organizations if they are no longer needed or if a restructuring of the organizational structure is required. When deleting a suborganization, administrators must ensure that all users and data associated with it are handled properly.
+* **Instellingen van de suborganisatie bewerken:** beheerders kunnen de instellingen en eigenschappen van een suborganisatie bewerken, waaronder de naam, beschrijving of het hiërarchische niveau binnen het systeem.
+* **Gebruikersgegevens bewerken:** beheerders kunnen de gegevens van afzonderlijke gebruikers binnen een suborganisatie bewerken, bijvoorbeeld om hun toegangsrechten aan te passen of hun contactgegevens bij te werken.
 
-These management features enable administrators to effectively manage and adapt the user accounts and organizational structures within a document management system to meet the company's changing needs and processes.
+**Gebruiker verwijderen:**
+
+* **Suborganisaties verwijderen:** beheerders kunnen suborganisaties ook verwijderen wanneer deze niet langer nodig zijn of wanneer een herstructurering vereist is. Bij het verwijderen van een suborganisatie moeten beheerders ervoor zorgen dat alle bijbehorende gebruikers en gegevens correct worden afgehandeld.
+
+Met deze beheerfuncties kunnen beheerders de gebruikersaccounts en organisatiestructuren binnen een documentbeheersysteem effectief beheren en aanpassen aan de veranderende behoeften en processen van het bedrijf.

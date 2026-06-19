@@ -1,14 +1,26 @@
-# Dokumentenablauf
+# Ablauf von Dokumenten
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2010.29.17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Einstellungen zum Ablauf von Dokumenten"><figcaption><p>Einstellungen zum Ablauf von Dokumenten</p></figcaption></figure>
 
-In den "Dokumentenablauf" Einstellungen unter dem Abschnitt "DOKUMENTENVERARBEITUNG" können Sie die automatischen Löschpläne für Ihre Dokumente im System konfigurieren. Diese Funktion ist besonders nützlich, um Datenretentionsrichtlinien zu verwalten und die Einhaltung rechtlicher oder organisatorischer Standards in Bezug auf die Dokumentenspeicherung sicherzustellen.
+Unter **Dokumentenverarbeitung → Ablauf von Dokumenten** legen Sie fest, wie lange DocBits Ihre Dokumente aufbewahrt, bevor sie automatisch gelöscht werden. Das hilft Ihnen, Speicherplatz zu verwalten, Aufbewahrungsrichtlinien durchzusetzen und gesetzliche oder organisatorische Vorgaben zur Speicherdauer von Dokumenten einzuhalten.
 
-Hier ist, was jede Einstellung bewirkt:
+Zwei Einstellungen steuern die automatische Löschung:
 
-1. **Dokument nach Ablauf löschen**: Dieses Dropdown-Menü ermöglicht es Ihnen, den Zeitrahmen festzulegen, nach dem ein verarbeitetes Dokument automatisch aus dem System gelöscht wird. Sie können aus vordefinierten Optionen wie 48 Stunden, 1 Woche, 2 Wochen oder 4 Wochen wählen. Dies hilft bei der Verwaltung des Speicherplatzes und der Aufrechterhaltung von Dokumentenlebenszyklusrichtlinien.
-2. **Fertiges Dokument nach Ablauf löschen**: Ähnlich wie die vorherige Einstellung, zielt jedoch speziell auf die fertigen oder vollständig verarbeiteten Dokumente ab. Es ermöglicht die gleichen Zeitrahmenoptionen für die Löschung und stellt sicher, dass abgeschlossene Dokumente nicht länger als nötig gespeichert werden.
+| Einstellung | Was sie steuert |
+|-------------|-----------------|
+| **Dokument löschen nach** | Wie lange ein verarbeitetes Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
+| **Fertiges Dokument löschen nach** | Wie lange ein fertiges (vollständig verarbeitetes und exportiertes) Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
 
-Beide Einstellungen stellen sicher, dass Dokumente nicht unbegrenzt auf Ihrem System aufbewahrt werden, um unnötige Speichernutzung zu vermeiden und den Dokumentenverarbeitungsworkflow übersichtlich zu halten. Diese Einstellungen sind für Organisationen unerlässlich, die spezifische regulatorische Anforderungen zur Dokumentenaufbewahrung einhalten müssen.
+Für jede Einstellung wählen Sie einen Zeitraum aus dem Dropdown:
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2010.29.27.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Verfügbare Aufbewahrungszeiträume"><figcaption><p>Verfügbare Aufbewahrungszeiträume</p></figcaption></figure>
+
+| Option | Bedeutung |
+|--------|-----------|
+| **Standard** | Den System-Standardzeitraum verwenden (keine eigene Überschreibung). |
+| **48 Stunden** | 48 Stunden nach der Verarbeitung löschen. |
+| **1 Woche** | Nach einer Woche löschen. |
+| **2 Wochen** | Nach zwei Wochen löschen. |
+| **4 Wochen** | Nach vier Wochen löschen. |
+
+Beide Einstellungen stellen sicher, dass Dokumente nicht länger als nötig im System verbleiben – das vermeidet unnötigen Speicherverbrauch und hält den Dokumenten-Workflow übersichtlich. Sie sind besonders wichtig für Organisationen, die bestimmte regulatorische Anforderungen an die Dokumentenaufbewahrung erfüllen müssen.

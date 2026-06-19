@@ -1,15 +1,51 @@
 # Ana Veri Arama
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 11.14.26.png" alt=""><figcaption></figcaption></figure>
+{% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
-Belge işleme ayarlarınızda bulunan "Ana Veri Arama", belge verilerinizi Infor ERP sisteminizle senkronize ederek yönetme ve doğrulama konusunda kapsamlı ve entegre bir yaklaşım sunar. İşte ERP ortamınızda belge işleme doğrulamasını ve geliştirmesini nasıl kolaylaştırdığına dair bilgiler:
+**Ana Veri Arama** (kenar çubuğu: **Lookup Master Data**), DocBits'in belgelerden çıkarılan verileri ERP sisteminizle doğrulamak için kullandığı ana verileri görüntülemenizi ve yönetmenizi sağlar. Doğru PO matching, tedarikçi doğrulaması ve alanların otomatik tamamlanması için gereklidir. **Ayarlar → Belge İşleme → Lookup Master Data** üzerinden açın.
 
-1. **Merkezi Veri Yönetimi**: Bu özellik, tedarikçilerden, müşteri adreslerinden, vergi kodlarından ve daha fazlasından gelen verilerin depolanabileceği ve yönetilebileceği merkezi bir depo görevi görür. Tüm ana veriler için tek bir referans noktası sağlayarak, kuruluşunuz genelinde tutarlılık ve doğruluk sağlar.
-2. **ERP Verilerine Karşı Doğrulama**: Infor'dan tedarikçi bilgileri gibi ana verileri Docbits'e senkronize ederek, belgelerden çıkarılan verilerin ERP verilerinizle karşılaştırılmasını otomatik olarak sağlayabilirsiniz. Bu, işlenen bilgilerin (örneğin, tedarikçi adları, adresleri ve vergi kodları) ERP sisteminizde bulunan verilerle eşleştiğinden emin olur, hataları ve tutarsızlıkları en aza indirir.
-3. **Otomasyonu Kolaylaştırır**: Güçlü bir ana veri arama sistemi, gelen belgelerin işlenmesini otomatikleştirmeye yardımcı olur. Örneğin, satın alma siparişleri veya faturalar, tedarikçi verilerinin doğruluğu otomatik olarak kontrol edilebilir, eşleşirse onaylanabilir veya tutarsızlıklar bulunursa gözden geçirilmek üzere işaretlenebilir.
-4. **Veri Bütünlüğünü Artırır**: ERP sisteminizden ana veri aramasına düzenli güncellemeler, belge işleme için kullanılan verilerin güncel olduğundan emin olur. Bu, belgelerin güncel olmayan bilgilere dayanarak işlenme riskini azaltır ve böylece işlem bütünlüğünü artırır.
-5. **Belge İşleme Verimliliği**: Ana verilerle doğrudan bağlantılı ve sürekli güncellenen bir şekilde, belge işleme daha verimli hale gelir. Belgeler, belirli tedarikçi koşulları veya farklı işlem türlerine uygulanan vergi düzenlemeleri gibi ana veride belirlenen özel kriterlere göre otomatik olarak sınıflandırılabilir ve yönlendirilebilir.
+<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Ana Veri Arama"><figcaption><p>Ana Veri Arama sayfası – veri kaynakları ve veri tablosu</p></figcaption></figure>
+
+## Veri Kaynakları
+
+Sol panel dört veri kaynağı kategorisini listeler:
+
+| Kaynak | Açıklama |
+|--------|----------|
+| **BOD Input Data** | Infor BOD (Business Object Document) mesajları aracılığıyla alınan veriler. |
+| **ERP API Data** | ERP sisteminizden bir API aracılığıyla doğrudan alınan veriler. API bağlantısını yapılandırmak için dişli simgesine tıklayın. |
+| **Imported** | Manuel olarak içe aktarılan veriler (örneğin CSV yükleme yoluyla). Yeni veri eklemek için **+** simgesine tıklayın. |
+| **DocBits Master Data** | DocBits içinde yönetilen dahili ana veriler. |
+
+## Veri Tablosu
+
+Bir veri kaynağı seçildiğinde, verileri sağ tarafta aranabilir ve sıralanabilir bir tabloda açılır:
+
+* **Sekmeler** – her sekme bir ana veri türüdür (örneğin Tedarikçi, Satınalma Siparişi, Kalem).
+* **Arama** – sütuna göre filtreleyin (**Search by column**) veya metne göre arayın (**Search String**).
+* **Eylemler** – sütun etiketlerini güncelleyin, boş sütunları gizleyin, takma adları güncelleyin veya verileri CSV olarak indirin.
+* **Sayfalama** – sayfa denetimleriyle büyük veri kümelerinde gezinin.
+
+Tedarikçi ve Satınalma Siparişi tabloları; Tedarikçi Kimliği, Tedarikçi Adı, Adres, Bank Id, PO Numarası, Kalem Kimliği, Açıklama, Miktar, Birim Fiyat, Toplam Tutar, Para Birimi ve Durum gibi sütunların yanı sıra özel alanları da içerir.
+
+## Ayarlar
+
+Ana veri ayarlarını açmak için veri kaynakları panelinin sol alt köşesindeki **Settings** (dişli simgesi) öğesine tıklayın.
+
+<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Ana Veri Arama ayarları"><figcaption><p>Supplier BOD ve satınalma siparişi silme ayarları</p></figcaption></figure>
+
+### Supplier BOD
+
+**Allow Multiple Supplier Accounts Sync**
+
+* **Etkin**: tek bir tedarikçinin BOD'da birden fazla `<FinancialParty>` öğesi olabilir (genellikle birden fazla IBAN veya finansal hesap nedeniyle). Tüm `<FinancialParty>` girişleri çıkarılır ve tedarikçi tablosuna kaydedilir, böylece birden fazla finansal öznitelik saklanabilir.
+* **Devre dışı**: tedarikçi için bulunan yalnızca son `<FinancialParty>` öğesi çıkarılır. Önceki finansal öznitelikler (örneğin ek IBAN'lar) yok sayılır ve yalnızca son oluşumun verileri kaydedilir.
+
+### Purchase Order Deletion Assistant
+
+**Delete Purchase Order After** – kapatılmış satınalma siparişlerinin ne zaman kaldırılacağını seçin. Seçilen süre sonunda kayıtlar otomatik olarak silinir.
 
 {% hint style="info" %}
-[Ana Veri İçe Aktarma](../../setup/importing-customer-master-data/) nasıl yapılır buradan görebilirsiniz.
+DocBits'e ana verilerin nasıl yükleneceğini öğrenmek için bkz. [Ana verileri içe aktarma](../../../infor-integration-and-configuration/importing-customer-master-data/).
 {% endhint %}

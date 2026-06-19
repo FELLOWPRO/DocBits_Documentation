@@ -31,7 +31,7 @@ Skorzystaj z paska **wyszukiwania**, aby szybko znaleźć suborganizacje według
 
 ## Opcja „Pokaż organizację krzyżową” (Cross)
 
-Po włączeniu (przełącznik u góry strony) użytkownicy mogą uzyskać dostęp do dokumentów ze wszystkich suborganizacji w jednym widoku.
+Po włączeniu (za pomocą przełącznika u góry strony) użytkownicy mogą przeglądać dokumenty ze wszystkich suborganizacji w jednym połączonym widoku, zamiast być ograniczonymi do dokumentów tylko jednej suborganizacji.
 
 ### Jak korzystać z suborganizacji krzyżowych
 
@@ -39,5 +39,7 @@ Po włączeniu (przełącznik u góry strony) użytkownicy mogą uzyskać dostę
 2. W prawym górnym rogu, gdzie można przełączać się między suborganizacjami, wybierz **Cross**.
 3. Strona zostanie ponownie załadowana i wyświetli dokumenty ze wszystkich suborganizacji.
 4. Aby powrócić do widoku pojedynczej suborganizacji, odznacz opcję **Cross**.
+
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Przełącznik suborganizacji krzyżowych"><figcaption><p>Wybór opcji Cross w przełączniku organizacji w prawym górnym rogu</p></figcaption></figure>
 
 Jest to przydatne dla administratorów, którzy potrzebują scentralizowanego przeglądu wszystkich dokumentów w organizacji.

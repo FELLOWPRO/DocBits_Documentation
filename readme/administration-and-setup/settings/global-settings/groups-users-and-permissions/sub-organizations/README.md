@@ -40,4 +40,6 @@ When enabled (using the toggle at the top of the page), users can view documents
 3. The page reloads, showing documents from all sub-organizations.
 4. To return to a single sub-organization view, deselect the **Cross** option.
 
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Cross sub-organisations switcher"><figcaption><p>Selecting Cross in the top-right organisation switcher</p></figcaption></figure>
+
 This is useful for administrators who need a centralized overview of all documents across the organization.

@@ -17,10 +17,29 @@ Decision Trees are a powerful feature that allows for the automated routing and 
 
 #### Decision Tree List
 
-The Decision Tree list displays all the available decision trees. Each entry shows:
+The Decision Tree list displays all the configured decision trees. Open it from **Settings → Document Processing → Decision Trees**.
 
-* **Name**: The name of the decision tree.
-* **Document Type**: The type of document associated with the decision tree (e.g., `INVOICE`, `QUOTE`).
+<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Decision Trees list"><figcaption><p>The Decision Trees list</p></figcaption></figure>
+
+Each entry shows:
+
+| Column | Description |
+|--------|-------------|
+| **Name** | The name of the decision tree. Click it to open the Designer. |
+| **Document Type** | The document type the tree applies to (e.g. `INVOICE`, `QUOTE`). |
+| **Last Modified By** | The user who last edited the tree. |
+| **Last Modified At** | Timestamp of the last change. |
+| **Actions** | Three-dot menu to edit, copy, export or delete the tree. |
+
+#### Creating a Decision Tree
+
+1. Click **+ Add Decision Tree** in the top-right corner.
+2. Enter a **Name** and select the **Document Type**.
+3. Use the Decision Tree Designer (below) to define conditions, policies and results.
+
+#### Importing a Decision Tree
+
+Click **Import Decision Tree** to upload a previously exported decision tree file (JSON format). This is useful for copying a tree between organisations or environments.
 
 ## Decision Tree Designer
 
@@ -283,3 +302,9 @@ The decision tree designer includes a test feature to validate the logic of the 
 
 * **Save**: Saves the current configuration of the decision tree.
 * **Export**: Allows you to export the decision tree configuration, which can then be imported into another environment or used for backup purposes.
+
+## Use Cases
+
+* **Approval workflows** — route invoices to different approvers based on amount thresholds (for example, amounts over 10,000 require manager approval).
+* **Validation rules** — automatically validate field values and flag documents that do not meet the configured criteria.
+* **Sequential assignment** — assign documents to users in a specific order based on conditions.

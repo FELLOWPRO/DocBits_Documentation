@@ -31,7 +31,7 @@ Utilizza la barra di **ricerca** per trovare rapidamente le sotto-organizzazioni
 
 ## Opzione «Mostra organizzazione incrociata» (Cross)
 
-Quando è attivata (interruttore nella parte superiore della pagina), gli utenti possono accedere ai documenti di tutte le sotto-organizzazioni da un'unica vista.
+Quando è attivata (tramite l'interruttore nella parte superiore della pagina), gli utenti possono visualizzare i documenti di tutte le sotto-organizzazioni in un'unica vista combinata, anziché essere limitati ai documenti di una sola sotto-organizzazione.
 
 ### Come utilizzare le sotto-organizzazioni incrociate
 
@@ -39,5 +39,7 @@ Quando è attivata (interruttore nella parte superiore della pagina), gli utenti
 2. Nell'angolo in alto a destra, dove è possibile passare da una sotto-organizzazione all'altra, seleziona **Cross**.
 3. La pagina viene ricaricata e mostra i documenti di tutte le sotto-organizzazioni.
 4. Per tornare alla vista di una singola sotto-organizzazione, deseleziona l'opzione **Cross**.
+
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Selettore delle sotto-organizzazioni incrociate"><figcaption><p>Selezione di Cross nel selettore di organizzazione in alto a destra</p></figcaption></figure>
 
 Questo è utile per gli amministratori che necessitano di una panoramica centralizzata di tutti i documenti dell'organizzazione.

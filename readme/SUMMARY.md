@@ -84,6 +84,7 @@
       * [Groups, Users and Permissions](overview/settings/global-settings/groups-users-and-permissions/README.md)
         * [Groups and Permissions](overview/settings/global-settings/groups-users-and-permissions/groups-and-permissions.md)
         * [Sub-Organizations](overview/settings/global-settings/groups-users-and-permissions/sub-organizations.md)
+        * [Plan pretplate](overview/settings/global-settings/subscription-plan.md)
         * [Users](overview/settings/global-settings/groups-users-and-permissions/users.md)
           * [Analitika prijava](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md)
       * [Integration](overview/settings/global-settings/integration/README.md)

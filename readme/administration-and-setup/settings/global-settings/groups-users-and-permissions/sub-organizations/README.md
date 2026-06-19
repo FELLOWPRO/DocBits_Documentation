@@ -1,49 +1,43 @@
-# Sub-Organizations
+# Suborganizaciones
 
-Creating suborganizations within a document management system serves to further organize and differentiate the structure and management of user accounts, documents, and workflows within an organization. Here are some purposes and benefits of creating suborganizations:
+<figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Suborganizaciones"><figcaption><p>Página de Suborganizaciones</p></figcaption></figure>
 
-* **Structuring and organization:** Suborganizations make it possible to create a hierarchical structure within the document management system. This can help organize user accounts and documents by department, team, location, or other relevant criteria for clearer and more efficient management.
-* **Permission management:** By creating suborganizations, administrators can set granular permissions and access controls for different groups of users. This means that specific users or groups can only access the documents and resources relevant to their respective sub-organization, improving security and privacy.
-* **Workflows and Collaboration:** Suborganizations can facilitate collaboration and communication within specific teams or departments by centralizing access to shared documents, projects, or tasks. This promotes efficiency and coordination when collaborating on common projects or workflows.
-* **Reporting and analysis:** By organizing user accounts and documents into sub-organizations, detailed reports and analysis can be created on the activities and performance of individual teams or departments. This allows administrators and managers to gain insight into document management system usage at an organizational level.
-* **Scalability and Flexibility:** Sub-organizations provide a scalable structure that can grow with the organization's growth and changes. New teams or departments can be easily added and appropriately integrated into the existing sub-organizational scheme without affecting the overall structure of the document management system.
+Las suborganizaciones le permiten crear una estructura jerárquica en DocBits para gestionar documentos, usuarios y flujos de trabajo entre distintos departamentos, equipos o entidades.
 
-Overall, suborganizations enable more effective management and organization of user accounts, documents, and workflows within a document management system by improving structure, security, and collaboration.
+## Principales ventajas
 
-## How to access this feature
+* **Organización estructurada**: agrupe usuarios y documentos por departamento, ubicación o unidad de negocio.
+* **Permisos granulares**: controle qué usuarios pueden acceder a los documentos de cada suborganización.
+* **Flujos de trabajo independientes**: cada suborganización puede tener sus propias reglas y configuraciones de procesamiento de documentos.
+* **Informes**: genere informes y análisis por suborganización.
 
-In Settings, Global Settings → Groups, Users and Permissions → Sub-Organizations as shown below.
+## Lista de suborganizaciones
 
-<figure><img src="../../../../../.gitbook/assets/docbits_validation_screen_annotations.png" alt="Docbits Validation Screen Annotations"><figcaption><p>Settings</p></figcaption></figure>
+La tabla muestra todas las suborganizaciones existentes con:
 
-You will then be taken to a page that looks similar to this:\\
+| Columna | Descripción |
+|--------|-------------|
+| **Nombre** | El nombre de la suborganización. |
+| **Descripción** | Una breve descripción del propósito de la suborganización. |
+| **Acciones** | Menú con opciones para gestionar usuarios, editar o eliminar la suborganización. |
 
-<figure><img src="../../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+Utilice la barra de **búsqueda** para encontrar rápidamente suborganizaciones por su nombre.
 
-This is where you will find your previously created sub-organizations, as well as where you can create new sub-organizations.
+## Crear una nueva suborganización
 
+1. Haga clic en el botón **+ Nuevo** en la esquina superior derecha.
+2. Introduzca un **Nombre** y, opcionalmente, una **Descripción**.
+3. Haga clic en **Guardar** para crear la suborganización.
 
+## Opción «Mostrar organización cruzada» (Cross)
 
-### Cross Sub-Organisations Access
+Cuando está activada (interruptor en la parte superior de la página), los usuarios pueden acceder a los documentos de todas las suborganizaciones desde una única vista.
 
-**Overview:**\
-For organizations with multiple sub-organizations enabled, DocBits introduces the **Cross Sub-Organisations** feature. This enhancement allows users to manage documents across all sub-organizations under a single umbrella. **Both administrative and non-administrative users** can now access and view documents from every sub-organization without the need to switch between them individually.
+### Cómo usar las suborganizaciones cruzadas
 
-**Benefits:**
+1. Vaya al **panel de control (Dashboard)**.
+2. En la esquina superior derecha, donde se cambia entre suborganizaciones, seleccione **Cross**.
+3. La página se recarga y muestra los documentos de todas las suborganizaciones.
+4. Para volver a la vista de una sola suborganización, desactive la opción **Cross**.
 
-* Centralized visibility of all documents across sub-organizations.
-* Simplified navigation to locate specific files.
-* Maintains a comprehensive overview of document activity.
-
-**How to Use:**
-
-1. **Enable Cross Sub-Organisations:**
-   * Navigate to the dashboard.
-   * On the top-right corner, where sub-organizations can be switched, select **Cross**.
-   * The page will reload, granting you access to all documents across all sub-organizations.
-2. **Disable Cross Sub-Organisations (if not needed):**
-   * Return to the top-right corner of the dashboard.
-   * Deselect the **Cross** option to return to viewing a single sub-organization.
-
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
-
+Esto resulta útil para los administradores que necesitan una visión centralizada de todos los documentos de la organización.

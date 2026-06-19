@@ -78,6 +78,7 @@
       * [Company Information](overview/settings/global-settings/company-information.md)
       * [Custom Filters](overview/settings/global-settings/custom-filters.md)
       * [Document Expiry](overview/settings/global-settings/document-expiry.md)
+      * [Obračun roka dospeća](overview/settings/global-settings/due-date-calculation.md)
       * [Elektronski dokumenti](overview/settings/global-settings/e-documents/README.md)
         * [Pravila validacije](overview/settings/global-settings/e-documents/validation-rules.md)
         * [Rutiranje obaveštenja](overview/settings/global-settings/e-documents/notification-routing.md)

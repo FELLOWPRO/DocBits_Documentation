@@ -90,6 +90,7 @@
       * [Groups, Users and Permissions](overview/settings/global-settings/groups-users-and-permissions/README.md)
         * [Groups and Permissions](overview/settings/global-settings/groups-users-and-permissions/groups-and-permissions.md)
         * [Sub-Organizations](overview/settings/global-settings/groups-users-and-permissions/sub-organizations.md)
+        * [Abonelik Planı](overview/settings/global-settings/subscription-plan.md)
         * [Kullanıcılar](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)
           * [Admin Yetkileri](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/admin-privileges.md)
           * [Giriş Analitiği](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/login-analytics.md)

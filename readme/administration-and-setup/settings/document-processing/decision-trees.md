@@ -1,123 +1,142 @@
-# Decision Trees
+# Árvores de Decisão
 
 {% embed url="https://youtu.be/omFWSkSjlL0" %}
-How to Create a Decision Tree in DocBits (Conditions, Policies, Testing & Export)
+Como criar uma Árvore de Decisão no DocBits (Condições, Políticas, Testes e Exportação)
 {% endembed %}
 
-## Overview
+## Visão geral
 
-Decision Trees are a powerful feature that allows for the automated routing and decision-making process based on predefined rules. This feature is especially useful in complex environments where various conditions need to be evaluated to determine the correct course of action, such as assigning prices, determining quantities, or routing documents.
+As Árvores de Decisão são uma funcionalidade poderosa que permite o encaminhamento automatizado e o processo de tomada de decisão com base em regras predefinidas. Esta funcionalidade é especialmente útil em ambientes complexos onde é necessário avaliar várias condições para determinar a ação correta a tomar, tais como atribuir preços, determinar quantidades ou encaminhar documentos.
 
-#### Key Components
+#### Componentes principais
 
-* **Decision Tree List**: This is the main interface where all existing decision trees are listed. Each decision tree can be associated with a specific document type such as an `INVOICE` or `QUOTE`.
-* **Decision Tree Designer**: This interface allows for the creation and editing of decision trees, where you can define rules, operators, and actions to be taken when certain conditions are met.
+* **Lista de Árvores de Decisão**: Esta é a interface principal onde são listadas todas as árvores de decisão existentes. Cada árvore de decisão pode ser associada a um tipo de documento específico, como uma `INVOICE` ou `QUOTE`.
+* **Editor de Árvores de Decisão**: Esta interface permite a criação e edição de árvores de decisão, onde pode definir regras, operadores e ações a executar quando determinadas condições são cumpridas.
 
-## Decision Tree Interface
+## Interface da Árvore de Decisão
 
-#### Decision Tree List
+#### Lista de Árvores de Decisão
 
-The Decision Tree list displays all the available decision trees. Each entry shows:
+A lista de Árvores de Decisão apresenta todas as árvores de decisão configuradas. Abra-a a partir de **Settings → Document Processing → Decision Trees**.
 
-* **Name**: The name of the decision tree.
-* **Document Type**: The type of document associated with the decision tree (e.g., `INVOICE`, `QUOTE`).
+<figure><img src="../../../.gitbook/assets/decision_trees.png" alt="Lista de Árvores de Decisão"><figcaption><p>A lista de Árvores de Decisão</p></figcaption></figure>
 
-## Decision Tree Designer
+Cada entrada apresenta:
 
-The Decision Tree Designer allows you to configure rules that govern how decisions are made.
+| Coluna | Descrição |
+|--------|-------------|
+| **Name** | O nome da árvore de decisão. Clique no nome para abrir o Editor. |
+| **Document Type** | O tipo de documento ao qual a árvore se aplica (por exemplo, `INVOICE`, `QUOTE`). |
+| **Last Modified By** | O utilizador que editou a árvore pela última vez. |
+| **Last Modified At** | Data e hora da última alteração. |
+| **Actions** | Menu de três pontos para editar, copiar, exportar ou eliminar a árvore. |
 
-### **Components of the Decision Tree Designer**
+#### Criar uma Árvore de Decisão
 
-* **Rules**: Each rule consists of conditions and actions.
-* **Select Source**: This dropdown allows you to specify the source field to evaluate.
-* **Select Operator**: Defines the logic operator (e.g., `<=`, `>=`, `=`, `!=`) to be applied to the source field.
-* **Result**: Defines the outcome or action that should be taken when the conditions are met.
-* **Add New Row**: Allows you to add additional rules to the decision tree.
+1. Clique em **+ Add Decision Tree** no canto superior direito.
+2. Introduza um **Name** e selecione o **Document Type**.
+3. Utilize o Editor de Árvores de Decisão (abaixo) para definir condições, políticas e resultados.
 
-### Example of a Decision Tree Configuration
+#### Importar uma Árvore de Decisão
 
-This decision tree evaluates the **Total Amount** field and assigns it to different groups based on predefined conditions. Each rule compares the total amount against a specific value, and based on which condition is true, the corresponding **Group** is returned.
+Clique em **Import Decision Tree** para carregar um ficheiro de árvore de decisão exportado anteriormente (formato JSON). Isto é útil para copiar uma árvore entre organizações ou ambientes.
 
-<figure><img src="../../../.gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
+## Editor de Árvores de Decisão
 
-This decision tree evaluates two key conditions to determine which group should be assigned: **Total Amount** and **Warehouse Status**. The tree uses thresholds based on the total amount to define which group is returned, with the additional distinction of whether the warehouse is designated as "Warehouse Main," "Warehouse Sub," or "Not Warehouse Main."
+O Editor de Árvores de Decisão permite-lhe configurar regras que regem a forma como as decisões são tomadas.
 
-<figure><img src="../../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
+### **Componentes do Editor de Árvores de Decisão**
 
-Each rule is evaluated sequentially.
+* **Regras**: Cada regra é composta por condições e ações.
+* **Select Source**: Esta lista pendente permite-lhe especificar o campo de origem a avaliar.
+* **Select Operator**: Define o operador lógico (por exemplo, `<=`, `>=`, `=`, `!=`) a aplicar ao campo de origem.
+* **Result**: Define o resultado ou a ação que deve ser executada quando as condições são cumpridas.
+* **Add New Row**: Permite-lhe adicionar regras adicionais à árvore de decisão.
 
-## Decision Tree Policy
+### Exemplo de configuração de uma Árvore de Decisão
 
-The Decision Tree Policy defines how multiple rules within a decision tree are processed. You can choose from several policies:
+Esta árvore de decisão avalia o campo **Total Amount** e atribui-o a diferentes grupos com base em condições predefinidas. Cada regra compara o montante total com um valor específico e, com base na condição que é verdadeira, é devolvido o **Group** correspondente.
 
-### **1. Unique Policy**
+<figure><img src="../../../.gitbook/assets/decision_tree_example_total_amount.png" alt="Exemplo de Árvore de Decisão Total Amount"><figcaption></figcaption></figure>
 
-Ensures that only a single rule is matched. If multiple rules are matched, the decision tree will return false.
+Esta árvore de decisão avalia duas condições principais para determinar qual o grupo a atribuir: **Total Amount** e **Warehouse Status**. A árvore utiliza limiares baseados no montante total para definir qual o grupo devolvido, com a distinção adicional de saber se o armazém é designado como "Warehouse Main", "Warehouse Sub" ou "Not Warehouse Main".
 
-**Example:**
+<figure><img src="../../../.gitbook/assets/decision_tree_example_warehouse_status.png" alt="Exemplo de Árvore de Decisão Warehouse Status"><figcaption></figcaption></figure>
 
-| Rule | Condition            | Return Group |
+Cada regra é avaliada sequencialmente.
+
+## Política da Árvore de Decisão
+
+A Política da Árvore de Decisão define como as várias regras de uma árvore de decisão são processadas. Pode escolher entre várias políticas:
+
+### **1. Política Única (Unique)**
+
+Garante que apenas uma única regra é correspondida. Se forem correspondidas várias regras, a árvore de decisão devolverá falso.
+
+**Exemplo:**
+
+| Regra | Condição             | Grupo Devolvido |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 5000 | GROUP\_5     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 3000 | GROUP\_3     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 5000 | GROUP_5     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 3000 | GROUP_3     |
 
-If the total amount is **1500**, the rules evaluated will be:
+Se o montante total for **1500**, as regras avaliadas serão:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
-* **Rule 3**: Total Amount <= 5000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 3000 (matches)
+* **Regra 1**: Total Amount <= 1000 (não corresponde)
+* **Regra 2**: Total Amount <= 2000 (corresponde)
+* **Regra 3**: Total Amount <= 5000 (corresponde)
+* **Regra 4**: Total Amount <= 4000 (corresponde)
+* **Regra 5**: Total Amount <= 3000 (corresponde)
 
-Since multiple rules are matched (**Rule 2**, **Rule 3**, **Rule 4**, **Rule 5**), the decision tree will return **false** because the **Unique** policy ensures only one rule can match.
+Uma vez que são correspondidas várias regras (**Regra 2**, **Regra 3**, **Regra 4**, **Regra 5**), a árvore de decisão devolverá **falso**, porque a política **Única** garante que apenas uma regra pode corresponder.
 
-### **2. First Policy**
+### **2. Política Primeira (First)**
 
-The first matching rule is applied, and no further rules are evaluated.
+A primeira regra correspondente é aplicada e não são avaliadas mais regras.
 
-**Example:**
+**Exemplo:**
 
-| Rule | Condition            | Return Group |
+| Regra | Condição             | Grupo Devolvido |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 5000 | GROUP\_5     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 3000 | GROUP\_3     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 5000 | GROUP_5     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 3000 | GROUP_3     |
 
-If the total amount is **1500**, the rules evaluated will be:
+Se o montante total for **1500**, as regras avaliadas serão:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches) → The decision tree stops evaluating further rules and applies **GROUP\_2**.
+* **Regra 1**: Total Amount <= 1000 (não corresponde)
+* **Regra 2**: Total Amount <= 2000 (corresponde) → A árvore de decisão deixa de avaliar mais regras e aplica **GROUP_2**.
 
-### **3. Priority Policy**
+### **3. Política de Prioridade (Priority)**
 
-Choosing this option allows you to set priorities for each rule. The lower the selected number, the higher the priority (i.e., priority 1 has the highest priority). Rules are evaluated based on their priority order. The highest priority matching rule will be applied.
+Escolher esta opção permite-lhe definir prioridades para cada regra. Quanto menor o número selecionado, maior a prioridade (ou seja, a prioridade 1 tem a prioridade mais alta). As regras são avaliadas com base na sua ordem de prioridade. A regra correspondente de prioridade mais alta será aplicada.
 
-**Example:**
+**Exemplo:**
 
-<table><thead><tr><th width="137">Rule</th><th width="110">Priority</th><th width="268">Condition</th><th>Return Group</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>Total Amount &#x3C;= 1000</td><td>GROUP_1</td></tr><tr><td>2</td><td>4</td><td>Total Amount &#x3C;= 2000</td><td>GROUP_2</td></tr><tr><td>3</td><td>3</td><td>Total Amount &#x3C;= 3000</td><td>GROUP_3</td></tr><tr><td>4</td><td>2</td><td>Total Amount &#x3C;= 4000</td><td>GROUP_4</td></tr><tr><td>5</td><td>1</td><td>Total Amount &#x3C;= 5000</td><td>GROUP_5</td></tr></tbody></table>
+<table><thead><tr><th width="137">Regra</th><th width="110">Prioridade</th><th width="268">Condição</th><th>Grupo Devolvido</th></tr></thead><tbody><tr><td>1</td><td>5</td><td>Total Amount &#x3C;= 1000</td><td>GROUP_1</td></tr><tr><td>2</td><td>4</td><td>Total Amount &#x3C;= 2000</td><td>GROUP_2</td></tr><tr><td>3</td><td>3</td><td>Total Amount &#x3C;= 3000</td><td>GROUP_3</td></tr><tr><td>4</td><td>2</td><td>Total Amount &#x3C;= 4000</td><td>GROUP_4</td></tr><tr><td>5</td><td>1</td><td>Total Amount &#x3C;= 5000</td><td>GROUP_5</td></tr></tbody></table>
 
-If the total amount is **1500**, the rules evaluated will be:
+Se o montante total for **1500**, as regras avaliadas serão:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **Regra 1**: Total Amount <= 1000 (não corresponde)
+* **Regra 2**: Total Amount <= 2000 (corresponde)
+* **Regra 3**: Total Amount <= 3000 (corresponde)
+* **Regra 4**: Total Amount <= 4000 (corresponde)
+* **Regra 5**: Total Amount <= 5000 (corresponde)
 
-Since the priority is applied in the order **5, 4, 3, 2, 1**, the highest priority matching rule will be **Rule 5** (**GROUP\_5**). The decision tree will return **GROUP\_5** because **Rule 5** has the highest priority (priority 1).
+Uma vez que a prioridade é aplicada pela ordem **5, 4, 3, 2, 1**, a regra correspondente de prioridade mais alta será a **Regra 5** (**GROUP_5**). A árvore de decisão devolverá **GROUP_5** porque a **Regra 5** tem a prioridade mais alta (prioridade 1).
 
-### **4. Collect (sum) Policy**
+### **4. Política de Recolha (Collect — soma)**
 
-This policy collects all matching rules and sums the results. It only works for **Return Type Value**.
+Esta política recolhe todas as regras correspondentes e soma os resultados. Funciona apenas para **Return Type Value**.
 
-**Example:**
+**Exemplo:**
 
-| Rule | Condition            | Return Value |
+| Regra | Condição             | Valor Devolvido |
 | ---- | -------------------- | ------------ |
 | 1    | Total Amount <= 1000 | 1            |
 | 2    | Total Amount <= 2000 | 2            |
@@ -125,29 +144,29 @@ This policy collects all matching rules and sums the results. It only works for 
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-For the input value of **Total Amount = 3500**, the evaluation of rules would be:
+Para o valor de entrada de **Total Amount = 3500**, a avaliação das regras seria:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches, Return Value = 3)
-* **Rule 4**: Total Amount <= 4000 (matches, Return Value = 4)
-* **Rule 5**: Total Amount <= 5000 (matches, Return Value = 5)
+* **Regra 1**: Total Amount <= 1000 (não corresponde)
+* **Regra 2**: Total Amount <= 2000 (não corresponde)
+* **Regra 3**: Total Amount <= 3000 (corresponde, Return Value = 3)
+* **Regra 4**: Total Amount <= 4000 (corresponde, Return Value = 4)
+* **Regra 5**: Total Amount <= 5000 (corresponde, Return Value = 5)
 
-Since the **Collect (sum)** policy is applied, we sum the **Return Values** of the matching rules, which are **3, 4, 5**.
+Uma vez que a política **Collect (soma)** é aplicada, somamos os **Return Values** das regras correspondentes, que são **3, 4, 5**.
 
-**Summing these values** gives:
+**Somando estes valores** obtém-se:
 
 * 5 + 4 + 3 = **12**
 
-Thus, the result returned by the decision tree would be **12**, which is the sum of all matching return values.
+Assim, o resultado devolvido pela árvore de decisão seria **12**, que é a soma de todos os valores devolvidos correspondentes.
 
-### **5. Collect (min/max/count) Policy**
+### **5. Política de Recolha (Collect — mín/máx/contagem)**
 
-This policy collects all matching rules and either selects the **minimum**, **maximum**, or **counts** the occurrences. It only works for **Return Type Value**.
+Esta política recolhe todas as regras correspondentes e seleciona o **mínimo**, o **máximo** ou **conta** as ocorrências. Funciona apenas para **Return Type Value**.
 
-**Example:**
+**Exemplo:**
 
-| Rule | Condition            | Return Value |
+| Regra | Condição             | Valor Devolvido |
 | ---- | -------------------- | ------------ |
 | 1    | Total Amount <= 1000 | 1            |
 | 2    | Total Amount <= 2000 | 2            |
@@ -155,131 +174,137 @@ This policy collects all matching rules and either selects the **minimum**, **ma
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-1. If the **Collect (min)** option is selected, the result will return the **minimum** of the **Return Values** for the matching rules.
-   * For the input value of **Total Amount = 3500**, the evaluation of rules would be:
-     * **Rule 1**: Total Amount <= 1000 (does not match)
-     * **Rule 2**: Total Amount <= 2000 (does not match)
-     * **Rule 3**: Total Amount <= 3000 (matches, Return Value = 3)
-     * **Rule 4**: Total Amount <= 4000 (matches, Return Value = 4)
-     * **Rule 5**: Total Amount <= 5000 (matches, Return Value = 5)
-   * The **matching rules** are Rule 3, Rule 4, and Rule 5, with **Return Values** of **3, 4, and 5**.
-   * Since the **Collect (min)** policy is applied, the result will be the **minimum value**, which is **3**.
-   * **Result**: **3**
-2. If the **Collect (max)** option is selected, the result will return the **maximum** of the **Return Values** for the matching rules.
-   * For the same evaluation as above, the result will be:
-   * **Result**: **5**
-3. If the **Collect (count)** option is selected, the result will count the **number of matching rules**.
-   * For the same evaluation as above, the result will be:
-   * **Result**: **3** (since 3 rules matched).
+1. Se a opção **Collect (mín)** for selecionada, o resultado devolverá o **mínimo** dos **Return Values** das regras correspondentes.
+   * Para o valor de entrada de **Total Amount = 3500**, a avaliação das regras seria:
+     * **Regra 1**: Total Amount <= 1000 (não corresponde)
+     * **Regra 2**: Total Amount <= 2000 (não corresponde)
+     * **Regra 3**: Total Amount <= 3000 (corresponde, Return Value = 3)
+     * **Regra 4**: Total Amount <= 4000 (corresponde, Return Value = 4)
+     * **Regra 5**: Total Amount <= 5000 (corresponde, Return Value = 5)
+   * As **regras correspondentes** são a Regra 3, a Regra 4 e a Regra 5, com **Return Values** de **3, 4 e 5**.
+   * Uma vez que a política **Collect (mín)** é aplicada, o resultado será o **valor mínimo**, que é **3**.
+   * **Resultado**: **3**
+2. Se a opção **Collect (máx)** for selecionada, o resultado devolverá o **máximo** dos **Return Values** das regras correspondentes.
+   * Para a mesma avaliação acima, o resultado será:
+   * **Resultado**: **5**
+3. Se a opção **Collect (contagem)** for selecionada, o resultado contará o **número de regras correspondentes**.
+   * Para a mesma avaliação acima, o resultado será:
+   * **Resultado**: **3** (uma vez que 3 regras corresponderam).
 
-### **6. Rule Order Policy**
+### **6. Política de Ordem das Regras (Rule Order)**
 
-This policy applies rules in the order they appear in the decision tree and returns the result of the rule that matches first.
+Esta política aplica as regras pela ordem em que aparecem na árvore de decisão e devolve o resultado da regra que corresponde em primeiro lugar.
 
-**Example:**
+**Exemplo:**
 
-| Rule | Condition            | Return Group |
+| Regra | Condição             | Grupo Devolvido |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 3000 | GROUP\_3     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 5000 | GROUP\_5     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
-Given that the input value is **Total Amount = 3500**, the evaluation of the rules would be:
+Dado que o valor de entrada é **Total Amount = 3500**, a avaliação das regras seria:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **Regra 1**: Total Amount <= 1000 (não corresponde)
+* **Regra 2**: Total Amount <= 2000 (não corresponde)
+* **Regra 3**: Total Amount <= 3000 (corresponde)
+* **Regra 4**: Total Amount <= 4000 (corresponde)
+* **Regra 5**: Total Amount <= 5000 (corresponde)
 
-Under **Rule Order**, the tree will process the rules in the order they are listed. So, the matching rules will be:
+Sob a política **Rule Order**, a árvore processará as regras pela ordem em que estão listadas. Assim, as regras correspondentes serão:
 
-* **Rule 3**: GROUP\_3
-* **Rule 4**: GROUP\_4
-* **Rule 5**: GROUP\_5
+* **Regra 3**: GROUP_3
+* **Regra 4**: GROUP_4
+* **Regra 5**: GROUP_5
 
-**Result**: **GROUP\_3**, **GROUP\_4**, **GROUP\_5**
+**Resultado**: **GROUP_3**, **GROUP_4**, **GROUP_5**
 
-### **7. Any Policy**
+### **7. Política Qualquer (Any)**
 
-Multiple rules can be true, but the result of those rules must be the same.
+Várias regras podem ser verdadeiras, mas o resultado dessas regras tem de ser o mesmo.
 
-**Example:**
+**Exemplo:**
 
-| Rule | Condition            | Return Group |
+| Regra | Condição             | Grupo Devolvido |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 3000 | GROUP\_3     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 5000 | GROUP\_5     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
-If the total amount is **2500**, the rules evaluated will be:
+Se o montante total for **2500**, as regras avaliadas serão:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (does not match)
-* **Rule 3**: Total Amount <= 3000 (matches)
-* **Rule 4**: Total Amount <= 4000 (matches)
-* **Rule 5**: Total Amount <= 5000 (matches)
+* **Regra 1**: Total Amount <= 1000 (não corresponde)
+* **Regra 2**: Total Amount <= 2000 (não corresponde)
+* **Regra 3**: Total Amount <= 3000 (corresponde)
+* **Regra 4**: Total Amount <= 4000 (corresponde)
+* **Regra 5**: Total Amount <= 5000 (corresponde)
 
-For **Any** to apply, all matching rules must return the same **Return Group**. Since the groups do not match across the different rules, the result would be **false**.
+Para que a política **Any** se aplique, todas as regras correspondentes têm de devolver o mesmo **Return Group**. Uma vez que os grupos não coincidem entre as diferentes regras, o resultado seria **falso**.
 
-### **8. First & Adjacent Policy**
+### **8. Política Primeira e Adjacente (First & Adjacent)**
 
-Chooses the result of the rule that is adjacent to the first rule that is true.
+Escolhe o resultado da regra que é adjacente à primeira regra que é verdadeira.
 
-**Example:**
+**Exemplo:**
 
-| Rule | Condition            | Return Group |
+| Regra | Condição             | Grupo Devolvido |
 | ---- | -------------------- | ------------ |
-| 1    | Total Amount <= 1000 | GROUP\_1     |
-| 2    | Total Amount <= 2000 | GROUP\_2     |
-| 3    | Total Amount <= 3000 | GROUP\_3     |
-| 4    | Total Amount <= 4000 | GROUP\_4     |
-| 5    | Total Amount <= 5000 | GROUP\_5     |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
-If the total amount is **1500**, the rules evaluated will be:
+Se o montante total for **1500**, as regras avaliadas serão:
 
-* **Rule 1**: Total Amount <= 1000 (does not match)
-* **Rule 2**: Total Amount <= 2000 (matches)
+* **Regra 1**: Total Amount <= 1000 (não corresponde)
+* **Regra 2**: Total Amount <= 2000 (corresponde)
 
-Since **Rule 2** is the first rule that matches, **First & Adjacent** would apply the result of **Rule 3**: **GROUP\_3**.
+Uma vez que a **Regra 2** é a primeira regra que corresponde, a política **First & Adjacent** aplicaria o resultado da **Regra 3**: **GROUP_3**.
 
-## **Testing the Decision Tree**
+## **Testar a Árvore de Decisão**
 
-**Overview:**\
-The decision tree designer includes a test feature to validate the logic of the configured rules. This feature allows users to test the decision tree by providing specific input values for the selected fields.
+**Visão geral:**
+O editor de árvores de decisão inclui uma funcionalidade de teste para validar a lógica das regras configuradas. Esta funcionalidade permite aos utilizadores testar a árvore de decisão fornecendo valores de entrada específicos para os campos selecionados.
 
-**Steps to Use the Test Feature:**
+**Passos para utilizar a funcionalidade de teste:**
 
-1.  **Locate the Test Button:**
+1.  **Localizar o botão Test:**
 
-    * In the decision tree designer, find the **Test** button.
+    * No editor de árvores de decisão, encontre o botão **Test**.
 
-    <figure><img src="../../../.gitbook/assets/image (344).png" alt="" width="563"><figcaption></figcaption></figure>
-2.  **Open the Test Popup:**
+    <figure><img src="../../../.gitbook/assets/decision_tree_test_button.png" alt="Botão Test da Árvore de Decisão" width="563"><figcaption></figcaption></figure>
+2.  **Abrir o pop-up de teste:**
 
-    * Click the **Test** button.
-    * A popup window will appear, providing input fields corresponding to the criteria used in the decision tree.
+    * Clique no botão **Test**.
+    * Será apresentada uma janela de pop-up, com campos de entrada correspondentes aos critérios utilizados na árvore de decisão.
 
-    <figure><img src="../../../.gitbook/assets/image (339).png" alt="" width="421"><figcaption></figcaption></figure>
-3. **Provide Input Values:**
-   *   Enter values into the input fields to simulate a real-world scenario.
+    <figure><img src="../../../.gitbook/assets/decision_tree_test_popup.png" alt="Pop-up de Teste da Árvore de Decisão" width="421"><figcaption></figcaption></figure>
+3. **Fornecer valores de entrada:**
+   *   Introduza valores nos campos de entrada para simular um cenário real.
 
-       <figure><img src="../../../.gitbook/assets/image (341).png" alt="" width="428"><figcaption></figcaption></figure>
-4.  **Evaluate the Results:**
+       <figure><img src="../../../.gitbook/assets/decision_tree_test_input.png" alt="Entrada de Teste da Árvore de Decisão" width="428"><figcaption></figcaption></figure>
+4.  **Avaliar os resultados:**
 
-    * After entering the inputs, the tree processes them based on the chosen policy.
-    * The system highlights the rule(s) that match the provided inputs.
+    * Após introduzir os dados, a árvore processa-os com base na política escolhida.
+    * O sistema destaca a(s) regra(s) que corresponde(m) aos dados fornecidos.
 
-    <figure><img src="../../../.gitbook/assets/image (342).png" alt="" width="563"><figcaption></figcaption></figure>
-5. &#x20;**Review Feedback for No Match:**
-   * If no rule is highlighted, the system will display feedback explaining why no rule matched.
-   * Use this feedback to adjust inputs or review the tree's configuration for potential issues.
+    <figure><img src="../../../.gitbook/assets/decision_tree_test_result.png" alt="Resultado de Teste da Árvore de Decisão" width="563"><figcaption></figcaption></figure>
+5. **Rever o feedback quando não há correspondência:**
+   * Se nenhuma regra for destacada, o sistema apresentará feedback a explicar por que motivo nenhuma regra correspondeu.
+   * Utilize este feedback para ajustar os dados de entrada ou rever a configuração da árvore quanto a potenciais problemas.
 
-## Export and Save
+## Exportar e guardar
 
-* **Save**: Saves the current configuration of the decision tree.
-* **Export**: Allows you to export the decision tree configuration, which can then be imported into another environment or used for backup purposes.
+* **Save**: Guarda a configuração atual da árvore de decisão.
+* **Export**: Permite-lhe exportar a configuração da árvore de decisão, que pode depois ser importada para outro ambiente ou utilizada para fins de cópia de segurança.
+
+## Casos de utilização
+
+* **Fluxos de trabalho de aprovação** — encaminhe faturas para diferentes aprovadores com base em limiares de montante (por exemplo, montantes superiores a 10 000 requerem aprovação do gestor).
+* **Regras de validação** — valide automaticamente os valores dos campos e assinale os documentos que não cumprem os critérios configurados.
+* **Atribuição sequencial** — atribua documentos a utilizadores por uma ordem específica com base em condições.

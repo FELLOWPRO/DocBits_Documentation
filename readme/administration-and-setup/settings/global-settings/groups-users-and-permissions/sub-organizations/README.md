@@ -31,7 +31,7 @@ Use the **Search** bar to quickly find sub-organizations by name.
 
 ## Show Cross Organisation Option
 
-When enabled (toggle at the top of the page), users can access documents across all sub-organizations from a single view.
+When enabled (using the toggle at the top of the page), users can view documents from all sub-organisations in a single combined view instead of being limited to documents from only one sub-organization.
 
 ### How to Use Cross Sub-Organisations
 

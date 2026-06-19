@@ -31,7 +31,7 @@ Verwenden Sie die **Suchleiste**, um Unterorganisationen schnell anhand des Name
 
 ## Option „Cross-Organisation anzeigen“
 
-Wenn diese Option aktiviert ist (Schalter oben auf der Seite), können Benutzer in einer einzigen Ansicht auf Dokumente aus allen Unterorganisationen zugreifen.
+Wenn diese Option aktiviert ist (über den Schalter oben auf der Seite), können Benutzer Dokumente aus allen Unterorganisationen in einer einzigen kombinierten Ansicht betrachten, anstatt auf die Dokumente nur einer Unterorganisation beschränkt zu sein.
 
 ### So verwenden Sie Cross-Unterorganisationen
 
@@ -39,5 +39,7 @@ Wenn diese Option aktiviert ist (Schalter oben auf der Seite), können Benutzer 
 2. Wählen Sie oben rechts, wo zwischen Unterorganisationen gewechselt werden kann, **Cross** aus.
 3. Die Seite wird neu geladen und zeigt Dokumente aus allen Unterorganisationen an.
 4. Um zur Einzelansicht einer Unterorganisation zurückzukehren, deaktivieren Sie die Option **Cross**.
+
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Cross-Unterorganisationen-Umschalter"><figcaption><p>Auswahl von Cross im Organisations-Umschalter oben rechts</p></figcaption></figure>
 
 Dies ist nützlich für Administratoren, die einen zentralen Überblick über alle Dokumente in der Organisation benötigen.

@@ -1,15 +1,51 @@
-# Pretraga glavnih podataka
+# Pretraga matičnih podataka
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 11.14.26.png" alt=""><figcaption></figcaption></figure>
+{% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
-"Pretraga glavnih podataka" u postavkama obrade dokumenata omogućava sveobuhvatan i integrisan pristup upravljanju i proveri podataka vaših dokumenata sinhronizovanjem sa vašim Infor ERP sistemom. Evo kako pomaže u optimizaciji validacije i unapređenju obrade dokumenata unutar vašeg ERP okruženja:
+**Pretraga matičnih podataka** (bočna traka: **Lookup Master Data**) omogućava vam da pregledate matične podatke koje DocBits koristi za validaciju podataka izdvojenih iz dokumenata u odnosu na vaš ERP sistem i da njima upravljate. Ovo je ključno za precizan PO matching, validaciju dobavljača i automatsko popunjavanje polja. Otvorite je preko **Podešavanja → Obrada dokumenata → Lookup Master Data**.
 
-1. **Centralizovano upravljanje podacima**: Ova funkcija deluje kao centralno skladište gde se podaci iz različitih izvora poput dobavljača, adresa kupaca, poreskih kodova i drugih mogu čuvati i upravljati. Pruža jedinstvenu referentnu tačku za sve glavne podatke, obezbeđujući doslednost i tačnost širom vaše organizacije.
-2. **Provera protiv ERP podataka**: Sinhronizacijom glavnih podataka poput informacija o dobavljačima iz Infora u Docbits, automatski možete validirati podatke izdvojene iz dokumenata protiv vaših ERP podataka. Ovo osigurava da obrađene informacije (poput imena dobavljača, adresa i poreskih kodova) odgovaraju podacima koje vaš ERP sistem čuva, minimizirajući greške i neslaganja.
-3. **Ovlašćuje automatizaciju**: Imati snažan sistem pretrage glavnih podataka pomaže u automatizaciji obrade dolaznih dokumenata. Na primer, narudžbine ili fakture mogu automatski biti proverene za tačnost podataka dobavljača, odobrene ako se poklapaju ili označene za pregled ako se pronađu neslaganja.
-4. **Unapređuje integritet podataka**: Redovna ažuriranja iz vašeg ERP sistema u pretragu glavnih podataka osiguravaju da se podaci korišteni za obradu dokumenata ažuriraju. Ovo smanjuje rizik obrade dokumenata na osnovu zastarelih informacija, čime se unapređuje ukupni integritet poslovnih transakcija.
-5. **Efikasnost u obradi dokumenata**: Sa glavnim podacima direktno povezanim i stalno osveženim, obrada dokumenata postaje efikasnija. Dokumenti mogu automatski biti klasifikovani i usmereni na osnovu specifičnih kriterijuma postavljenih u glavnim podacima, poput određenih uslova dobavljača ili poreskih propisa koji se primenjuju na različite vrste transakcija.
+<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Pretraga matičnih podataka"><figcaption><p>Stranica Pretraga matičnih podataka – izvori podataka i tabela podataka</p></figcaption></figure>
+
+## Izvori podataka
+
+Levi panel prikazuje četiri kategorije izvora podataka:
+
+| Izvor | Opis |
+|-------|------|
+| **BOD Input Data** | Podaci primljeni putem Infor BOD (Business Object Document) poruka. |
+| **ERP API Data** | Podaci preuzeti direktno iz vašeg ERP sistema putem API-ja. Kliknite na ikonu zupčanika da biste konfigurisali API vezu. |
+| **Imported** | Ručno uvezeni podaci (na primer putem otpremanja CSV-a). Kliknite na ikonu **+** da biste dodali nove podatke. |
+| **DocBits Master Data** | Interni matični podaci kojima se upravlja unutar DocBits-a. |
+
+## Tabela podataka
+
+Kada izaberete izvor podataka, njegovi podaci se otvaraju desno u pretraživoj tabeli koja se može sortirati:
+
+* **Kartice** – svaka kartica je tip matičnih podataka (na primer Dobavljač, Nalog za nabavku, Stavka).
+* **Pretraga** – filtrirajte po koloni (**Search by column**) ili pretražujte po tekstu (**Search String**).
+* **Radnje** – ažurirajte oznake kolona, sakrijte prazne kolone, ažurirajte aliase ili preuzmite podatke kao CSV.
+* **Paginacija** – krećite se kroz velike skupove podataka pomoću kontrola stranice.
+
+Tabele Dobavljač i Nalog za nabavku sadrže kolone kao što su ID dobavljača, Naziv dobavljača, Adresa, Bank Id, PO broj, ID stavke, Opis, Količina, Jedinična cena, Ukupan iznos, Valuta i Status, kao i sva prilagođena polja.
+
+## Podešavanja
+
+Kliknite na **Settings** (ikona zupčanika) u donjem levom uglu panela izvora podataka da biste otvorili podešavanja matičnih podataka.
+
+<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Podešavanja Pretrage matičnih podataka"><figcaption><p>Podešavanja Supplier BOD i brisanja naloga za nabavku</p></figcaption></figure>
+
+### Supplier BOD
+
+**Allow Multiple Supplier Accounts Sync**
+
+* **Omogućeno**: jedan dobavljač može imati više `<FinancialParty>` elemenata u BOD-u (često zbog više IBAN-ova ili finansijskih računa). Svi `<FinancialParty>` unosi se izdvajaju i čuvaju u tabeli dobavljača, tako da se može sačuvati više finansijskih atributa.
+* **Onemogućeno**: izdvaja se samo poslednji pronađeni `<FinancialParty>` element za dobavljača. Prethodni finansijski atributi (na primer dodatni IBAN-ovi) se zanemaruju i čuvaju se samo podaci poslednjeg pojavljivanja.
+
+### Purchase Order Deletion Assistant
+
+**Delete Purchase Order After** – izaberite kada zatvoreni nalozi za nabavku treba da budu uklonjeni. Nakon izabranog perioda, zapisi se automatski brišu.
 
 {% hint style="info" %}
-Pogledajte ovde kako [Uvesti glavne podatke](../../setup/importing-customer-master-data/)
+Da biste saznali kako da učitate matične podatke u DocBits, pogledajte [Uvoz matičnih podataka](../../../infor-integration-and-configuration/importing-customer-master-data/).
 {% endhint %}

@@ -46,6 +46,7 @@
     * [Tam Metin Arama Ayarları](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
     * [Document Processing](overview/settings/document-processing/README.md)
       * [Ana Veri Arama](admin-section/settings/document-processing/master-data-lookup.md)
+      * [Karar Ağaçları](administration-and-setup/settings/document-processing/decision-trees.md)
       * [Module](overview/settings/document-processing/module/README.md)
         * [Annotation](overview/settings/document-processing/module/annotation.md)
         * [Approval Before Export](overview/settings/document-processing/module/approval-before-export.md)

@@ -119,6 +119,7 @@
         * [Activating Permissions](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/activating-permissions.md)
         * [Access Control](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/access-control.md)
         * [Troubleshooting Access Control & Permissions Issues](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/troubleshooting.md)
+    * [Subscription Plan](administration-and-setup/settings/global-settings/subscription-plan/README.md)
     * [Integration](administration-and-setup/settings/global-settings/integration/README.md)
       * [API Key](administration-and-setup/settings/global-settings/integration/api-key.md)
       * [API Calls and Examples](administration-and-setup/settings/global-settings/integration/api-calls-and-examples.md)

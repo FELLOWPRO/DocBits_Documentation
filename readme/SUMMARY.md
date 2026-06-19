@@ -289,6 +289,7 @@
     * [Dashboard](administration-and-setup/settings/global-settings/dashboard/README.md)
       * [Filters aanpassen](administration-and-setup/settings/global-settings/dashboard/customizing-filters.md)
   * [Documentverwerking](administration-and-setup/settings/document-processing/README.md)
+    * [Vervaldatumberekening](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [E-documenten](administration-and-setup/settings/document-processing/e-documents/README.md)
       * [Validatieregels](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
       * [Notificatierouting](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

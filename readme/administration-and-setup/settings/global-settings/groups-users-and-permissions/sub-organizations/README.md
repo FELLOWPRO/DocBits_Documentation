@@ -31,7 +31,7 @@ Gebruik de **zoekbalk** om snel suborganisaties op naam te vinden.
 
 ## Optie "Cross-organisatie weergeven" (Cross)
 
-Wanneer deze optie is ingeschakeld (schakelaar boven aan de pagina), kunnen gebruikers in één weergave documenten uit alle suborganisaties bekijken.
+Wanneer deze optie is ingeschakeld (via de schakelaar boven aan de pagina), kunnen gebruikers documenten uit alle suborganisaties in één gecombineerde weergave bekijken, in plaats van beperkt te zijn tot documenten van slechts één suborganisatie.
 
 ### Cross-suborganisaties gebruiken
 
@@ -39,5 +39,7 @@ Wanneer deze optie is ingeschakeld (schakelaar boven aan de pagina), kunnen gebr
 2. Selecteer rechtsboven, waar tussen suborganisaties kan worden gewisseld, **Cross**.
 3. De pagina wordt opnieuw geladen en toont documenten uit alle suborganisaties.
 4. Om terug te keren naar de weergave van één suborganisatie, schakelt u de optie **Cross** uit.
+
+<figure><img src="../../../../../.gitbook/assets/cross_org_switcher.png" alt="Cross-suborganisaties-schakelaar"><figcaption><p>Cross selecteren in de organisatieschakelaar rechtsboven</p></figcaption></figure>
 
 Dit is handig voor beheerders die een centraal overzicht van alle documenten in de organisatie nodig hebben.

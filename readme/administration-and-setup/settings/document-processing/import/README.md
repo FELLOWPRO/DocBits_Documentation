@@ -84,6 +84,7 @@ Belgeler gelen kutunuza gelir gelmez otomatik olarak içe aktaran bir e-posta i�
 DocBits, yukarıda listelenen dosya uzantılarına ek olarak, bir belgeyi gönderen posta sisteminin bildirdiği içerik türüne göre değil, **gerçek dosya içeriğine** (dosya imzası) göre de tanımlar. Bu, **yönlendirilen** e-postalar için önemlidir: aradaki posta sunucuları/ağ geçitleri, bir eki sıklıkla örneğin `application/pdf` veya `application/xml` yerine genel bir türle (`application/octet-stream`) yeniden etiketler. DocBits, bu tür ekleri yine de doğru şekilde tanır ve içe aktarır.
 
 * **Yönlendirilen `.eml`** mesajları ve Outlook `winmail.dat` (TNEF) ekleri açılır ve içerdikleri belgeler içe aktarılır.
+* **XML kodlaması:** Bir XML faturası genel bir türle (`application/octet-stream`) yeniden etiketlendiğinde, DocBits onu `<?xml` bildirimine göre tanır ve baştaki bir **UTF-8** veya **UTF-16** (LE/BE) bayt sırası işaretini (BOM) tolere eder — şu anda yalnızca bu BOM kodlamaları içerikten otomatik olarak algılanır. `.xml` dosya adını koruyan bir ek, kodlamasından bağımsız olarak içe aktarılır.
 * **Yoksayılan:** bir e-postada birlikte gelen satır içi görseller (imza logoları / gömülü grafikler — PNG, JPG, GIF, BMP) sessizce atlanır ve başarısız içe aktarım olarak **sayılmaz**.
 
 Bir ek içe aktarılamazsa ve gelen adres için **“İçe aktarım yapılamazsa bu e-postaya yanıt ver”** seçeneği etkinse, yapılandırılan yanıt adresi bilgilendirilir.

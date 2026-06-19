@@ -714,7 +714,7 @@
 
 ## Advanced functions and tools
 
-* [DocNet](advanced-functions-and-tools/docnet/README.md)
+* [AI Workforce](advanced-functions-and-tools/docnet/README.md)
 * [DocFlow MCP](advanced-functions-and-tools/docflow-mcp/README.md)
   * [Setup & Configuration](advanced-functions-and-tools/docflow-mcp/setup-and-configuration.md)
   * [Workflow Tools](advanced-functions-and-tools/docflow-mcp/workflow-tools.md)

@@ -188,6 +188,7 @@
       * [Dépannage](administration-and-setup/settings/global-settings/email-notification/depannage.md)
     * [Modèles d'e-mails](administration-and-setup/settings/global-settings/e-mail-templates.md)
     * [Filtres Personnalisés](administration-and-setup/settings/global-settings/page-1.md)
+    * [Plan d'abonnement](administration-and-setup/settings/global-settings/subscription-plan/README.md)
     * [Groupes, Utilisateurs et Autorisations](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)
       * [Utilisateurs](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)
         * [Modification des détails de l'utilisateur](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md)

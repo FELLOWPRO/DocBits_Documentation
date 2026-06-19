@@ -1,30 +1,48 @@
-# Como criar uma Sub-Organização
+# Como criar uma suborganização
 
-### Criar uma nova Sub-Organização:
+## Criar uma nova suborganização:
 
-Clique no botão `+ NOVO`
+<div data-full-width="false">
 
-O seguinte menu será exibido:
+<figure><img src="../../../../../.gitbook/assets/sub_organizations_list_overview_2.png" alt="Vista geral da lista de suborganizações"><figcaption></figcaption></figure>
 
-Insira os detalhes da sub-organização que você deseja criar, o nome e a descrição, e clique no botão `SALVAR`. Você deverá encontrar sua nova sub-organização criada na parte inferior da lista de sub-organizações existentes.
+</div>
 
-### Editando sub-organizações
+Clique no botão `+ NOVO`.
 
-**Gerenciar Usuários:**
+<figure><img src="../../../../../.gitbook/assets/sub_organization_new_button.png" alt="Botão Nova suborganização" width="97"><figcaption></figcaption></figure>
 
-* **Adicionar Usuários:** Administradores podem criar novas contas de usuário e atribuí-las à sub-organização apropriada.
-* **Atribuir Funções e Permissões:** Administradores podem definir as funções e permissões para usuários dentro de uma sub-organização. Isso geralmente envolve a atribuição de direitos de acesso a documentos, pastas ou funções específicas no sistema de gerenciamento de documentos.
-* **Gerenciar detalhes do perfil:** Administradores podem editar os detalhes do perfil dos usuários dentro da sub-organização, como: B. Informações de contato ou afiliação departamental. Isso permite uma gestão atualizada e precisa dos dados dos usuários.
+Será apresentado o seguinte menu:
 
-Você pode adicionar um novo usuário à organização e ter a opção de remover o usuário de outros grupos.
+<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Formulário para criar uma suborganização" width="375"><figcaption></figcaption></figure>
 
-**Editar Usuário:**
+Introduza os dados da suborganização que pretende criar — o nome e a descrição — e, em seguida, clique no botão `GUARDAR`. Encontrará depois a suborganização recém-criada no final da lista de suborganizações existentes.
 
-* **Editando configurações da sub-organização:** Administradores podem editar as configurações e propriedades de uma sub-organização, incluindo seu nome, descrição ou nível hierárquico dentro do sistema.
-* **Editar detalhes do usuário:** Administradores podem editar os detalhes de usuários individuais dentro de uma sub-organização, por exemplo, para ajustar seus direitos de acesso ou atualizar suas informações de contato.
+## Editar suborganizações
 
-**Excluir Usuário:**
+<figure><img src="../../../../../.gitbook/assets/edit_sub_organization_icon.png" alt="Menu para editar uma suborganização" width="161"><figcaption></figcaption></figure>
 
-* **Excluindo sub-organizações:** Administradores também podem ter a capacidade de excluir sub-organizações se não forem mais necessárias ou se uma reestruturação da estrutura organizacional for necessária. Ao excluir uma sub-organização, os administradores devem garantir que todos os usuários e dados associados a ela sejam tratados adequadamente.
+**Gerir utilizadores:**
 
-Esses recursos de gerenciamento permitem que os administradores gerenciem e adaptem efetivamente as contas de usuário e as estruturas organizacionais dentro de um sistema de gerenciamento de documentos para atender às necessidades e processos em mudança da empresa.
+<figure><img src="../../../../../.gitbook/assets/manage_users_in_sub_organization.png" alt="Gerir utilizadores numa suborganização" width="375"><figcaption></figcaption></figure>
+
+* **Adicionar utilizadores:** os administradores podem criar novas contas de utilizador e atribuí-las à suborganização adequada.
+* **Atribuir funções e permissões:** os administradores podem definir as funções e permissões dos utilizadores dentro de uma suborganização. Normalmente, isto envolve a atribuição de direitos de acesso a documentos, pastas ou funções específicas do sistema de gestão documental.
+* **Gerir dados do perfil:** os administradores podem editar os dados do perfil dos utilizadores dentro da suborganização, como informações de contacto ou afiliação a um departamento. Isto permite uma gestão atualizada e precisa dos dados dos utilizadores.
+
+<figure><img src="../../../../../.gitbook/assets/add_user_to_sub_organization_modal.png" alt="Adicionar um utilizador a uma suborganização" width="375"><figcaption></figcaption></figure>
+
+Pode adicionar um novo utilizador à organização e escolher se este deve ser removido de outros grupos.
+
+**Editar utilizador:**
+
+<figure><img src="../../../../../.gitbook/assets/edit_user_in_sub_organization.png" alt="Editar um utilizador numa suborganização" width="375"><figcaption></figcaption></figure>
+
+* **Editar as definições da suborganização:** os administradores podem editar as definições e propriedades de uma suborganização, incluindo o nome, a descrição ou o nível hierárquico no sistema.
+* **Editar os dados do utilizador:** os administradores podem editar os dados de utilizadores individuais dentro de uma suborganização, por exemplo para ajustar os seus direitos de acesso ou atualizar as suas informações de contacto.
+
+**Eliminar utilizador:**
+
+* **Eliminar suborganizações:** os administradores também podem eliminar suborganizações quando estas deixam de ser necessárias ou quando é necessária uma reestruturação. Ao eliminar uma suborganização, os administradores devem assegurar que todos os utilizadores e dados associados são tratados corretamente.
+
+Estas funcionalidades de gestão permitem aos administradores gerir e adaptar eficazmente as contas de utilizador e as estruturas organizacionais dentro de um sistema de gestão documental para responder às necessidades e processos em mudança da empresa.

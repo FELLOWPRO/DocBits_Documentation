@@ -407,6 +407,7 @@
       * [Customizing Filters](administration-and-setup/settings/global-settings/dashboard/customizing-filters.md)
       * [Custom Filters](administration-and-setup/settings/global-settings/dashboard/page-1.md)
   * [Document Processing](administration-and-setup/settings/document-processing/README.md)
+    * [Due Date Calculation](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [Documents Expiry](administration-and-setup/settings/document-processing/documents-expiry.md)
     * [E-Documents](administration-and-setup/settings/document-processing/e-documents/README.md)
       * [Validation Rules](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)

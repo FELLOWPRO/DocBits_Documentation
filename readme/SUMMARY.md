@@ -211,6 +211,7 @@
     * [Pulpit](administration-and-setup/settings/global-settings/dashboard/README.md)
       * [Dostosowywanie filtrów](administration-and-setup/settings/global-settings/dashboard/customizing-filters.md)
   * [Przetwarzanie Dokumentów](administration-and-setup/settings/document-processing/README.md)
+    * [Obliczanie terminu płatności](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [Dokumenty elektroniczne](administration-and-setup/settings/document-processing/e-documents/README.md)
       * [Reguły walidacji](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
       * [Routing powiadomień](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

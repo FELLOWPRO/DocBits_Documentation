@@ -66,9 +66,11 @@ Možete da dodate novog korisnika u organizaciju i da izaberete da li treba da b
 
 ## Opcija „Cross organizacija“
 
-Kada je omogućena (prekidač na vrhu stranice), korisnici mogu da pristupe dokumentima svih podorganizacija iz jednog prikaza.
+Kada je omogućena (pomoću prekidača na vrhu stranice), korisnici mogu da pregledaju dokumente svih podorganizacija u jednom kombinovanom prikazu, umesto da budu ograničeni na dokumente samo jedne podorganizacije.
 
 1. Idite na **kontrolnu tablu (Dashboard)**.
 2. U gornjem desnom uglu, gde je moguće prebacivanje između podorganizacija, izaberite **Cross**.
 3. Stranica se ponovo učitava i prikazuje dokumente svih podorganizacija.
 4. Da biste se vratili na prikaz jedne podorganizacije, opozovite opciju **Cross**.
+
+<figure><img src="../../../../.gitbook/assets/cross_org_switcher.png" alt="Cross prekidač podorganizacija"><figcaption><p>Biranje opcije Cross u prekidaču organizacije u gornjem desnom uglu</p></figcaption></figure>

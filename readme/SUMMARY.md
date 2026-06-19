@@ -207,6 +207,7 @@
     * [Tableau de bord](administration-and-setup/settings/global-settings/dashboard/README.md)
       * [Personnalisation des Filtres](administration-and-setup/settings/global-settings/dashboard/customizing-filters.md)
   * [Traitement des documents](administration-and-setup/settings/document-processing/README.md)
+    * [Calcul de la date d'échéance](administration-and-setup/settings/document-processing/due-date-calculation.md)
     * [Documents électroniques](administration-and-setup/settings/document-processing/e-documents/README.md)
       * [Règles de validation](administration-and-setup/settings/document-processing/e-documents/validation-rules.md)
       * [Routage des notifications](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

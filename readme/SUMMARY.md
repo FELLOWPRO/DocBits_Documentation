@@ -102,6 +102,7 @@
     * [Bedrijfsinformatie](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Bedrijfsvoorkeuren](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
       * [Het definiëren van App-kleur in Bedrijfsinstellingen](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)
+    * [Abonnement](administration-and-setup/settings/global-settings/subscription-plan/README.md)
     * [Groups, Users and Permissions](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)
       * [Gebruikers](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)
         * [Modifying User Details](administration-and-setup/settings/global-settings/groups-users-and-permissions/users/modifying-user-details.md)

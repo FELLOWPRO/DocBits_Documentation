@@ -1,49 +1,51 @@
-# Master Data Lookup
-
-## Overview
+# Búsqueda de datos maestros
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
 {% endembed %}
 
+La **Búsqueda de datos maestros** (barra lateral: **Lookup Master Data**) le permite ver y gestionar los datos maestros que DocBits utiliza para validar los datos extraídos de los documentos frente a su sistema ERP. Es esencial para un PO matching preciso, la validación de proveedores y el autocompletado de campos. Ábrala desde **Configuración → Procesamiento de documentos → Lookup Master Data**.
 
-The "Master Data Lookup" in your document processing settings allows for a comprehensive and integrated approach to managing and validating your document data by syncing it with your Infor ERP system. Here’s how it helps streamline the validation and enhancement of document processing within your ERP environment:
+<figure><img src="../../../.gitbook/assets/master_data_lookup_overview.png" alt="Búsqueda de datos maestros"><figcaption><p>Página de Búsqueda de datos maestros: fuentes de datos y la tabla de datos</p></figcaption></figure>
 
-1. **Centralized Data Management**: This feature acts as a central repository where data from various sources like suppliers, customer addresses, tax codes, and more can be stored and managed. It provides a single point of reference for all master data, ensuring consistency and accuracy across your organization.
-2. **Validation Against ERP Data**: By syncing master data such as supplier information from Infor to DocBits, you can automatically validate the data extracted from documents against your ERP data. This ensures that the information processed (like supplier names, addresses, and tax codes) matches the data held in your ERP system, minimizing errors and discrepancies.
-3. **Facilitates Automation**: Having a robust master data lookup system helps in automating the processing of incoming documents. For instance, purchase orders or invoices can be automatically checked for supplier data correctness, approved if they match, or flagged for review if discrepancies are found.
-4. **Enhances Data Integrity**: Regular updates from your ERP system to the master data lookup ensure that the data used for document processing is up-to-date. This reduces the risk of processing documents based on outdated information, thus enhancing the overall integrity of business transactions.
-5. **Efficiency in Document Processing**: With master data directly linked and constantly refreshed, document processing becomes more efficient. Documents can be automatically classified and routed based on the specific criteria set in the master data, such as specific supplier terms or tax regulations applicable to different types of transactions.
+## Fuentes de datos
+
+El panel izquierdo enumera cuatro categorías de fuentes de datos:
+
+| Fuente | Descripción |
+|--------|-------------|
+| **BOD Input Data** | Datos recibidos a través de mensajes Infor BOD (Business Object Document). |
+| **ERP API Data** | Datos obtenidos directamente de su sistema ERP mediante API. Haga clic en el icono de engranaje para configurar la conexión API. |
+| **Imported** | Datos importados manualmente (por ejemplo, mediante carga de CSV). Haga clic en el icono **+** para añadir nuevos datos. |
+| **DocBits Master Data** | Datos maestros internos gestionados dentro de DocBits. |
+
+## Tabla de datos
+
+Al seleccionar una fuente de datos, sus datos se abren en una tabla con búsqueda y ordenación a la derecha:
+
+* **Pestañas**: cada pestaña es un tipo de dato maestro (por ejemplo, Proveedor, Orden de compra, Artículo).
+* **Búsqueda**: filtre por columna (**Search by column**) o busque por texto (**Search String**).
+* **Acciones**: actualizar etiquetas de columnas, ocultar columnas vacías, actualizar alias o descargar los datos como CSV.
+* **Paginación**: navegue por grandes conjuntos de datos con los controles de página.
+
+Las tablas de Proveedor y Orden de compra incluyen columnas como ID de proveedor, Nombre del proveedor, Dirección, Bank Id, Número de PO, ID de artículo, Descripción, Cantidad, Precio unitario, Importe total, Moneda y Estado, además de los campos personalizados.
+
+## Configuración
+
+Haga clic en **Settings** (icono de engranaje) en la parte inferior izquierda del panel de fuentes de datos para abrir la configuración de datos maestros.
+
+<figure><img src="../../../.gitbook/assets/master_data_lookup_settings.png" alt="Configuración de la Búsqueda de datos maestros"><figcaption><p>Configuración de Supplier BOD y eliminación de órdenes de compra</p></figcaption></figure>
+
+### Supplier BOD
+
+**Allow Multiple Supplier Accounts Sync**
+
+* **Activado**: un único proveedor puede tener varios elementos `<FinancialParty>` en el BOD (a menudo debido a varios IBAN o cuentas financieras). Todas las entradas `<FinancialParty>` se extraen y se guardan en la tabla de proveedores, de modo que se pueden almacenar varios atributos financieros.
+* **Desactivado**: solo se extrae el último elemento `<FinancialParty>` encontrado para el proveedor. Los atributos financieros anteriores (por ejemplo, IBAN adicionales) se ignoran y solo se guardan los datos de la última aparición.
+
+### Purchase Order Deletion Assistant
+
+**Delete Purchase Order After**: elija cuándo deben eliminarse las órdenes de compra cerradas. Tras el período seleccionado, los registros se eliminan automáticamente.
 
 {% hint style="info" %}
-See here how to [Import Master Data](../../../infor-integration-and-configuration/importing-customer-master-data/)
+Para saber cómo cargar datos maestros en DocBits, consulte [Importar datos maestros](../../../infor-integration-and-configuration/importing-customer-master-data/).
 {% endhint %}
-
-<figure><img src="../../../.gitbook/assets/master_data_lookup_1.png" alt=""><figcaption></figcaption></figure>
-
-## **Accessing Master Data Lookup**
-
-To access the **Master Data Lookup** section, navigate to:\
-**Settings → Document Processing → Master Data Lookup**
-
-<figure><img src="../../../.gitbook/assets/settings_mater_data_lookup.png" alt=""><figcaption></figcaption></figure>
-
-## **Settings**
-
-To access the settings for the **Master Data Lookup**, click **Settings** located in the lower-left corner of the **Master Data Lookup** screen.\
-The following configuration options are available:
-
-<figure><img src="../../../.gitbook/assets/master_data_lookup_2.png" alt=""><figcaption></figcaption></figure>
-
-### **Supplier BOD**
-
-* **Allow Multiple Supplier Accounts Sync**:
-  * **Enabled**:\
-    A single supplier may have multiple `<FinancialParty>` elements in the BOD (Business Object Document), often due to multiple associated IBANs or financial accounts. When this setting is enabled, all `<FinancialParty>` entries for the supplier will be extracted and saved to the supplier table, allowing multiple financial attributes to be stored.
-  * **Disabled**:\
-    Only the last `<FinancialParty>` element found for the supplier in the BOD will be extracted. Any previous financial attributes (e.g., additional IBANs) will be ignored, and only the data from the last occurrence will be saved to the supplier table.
-
-### **Purchase Order Deletion**
-
-*   **Delete Purchase Orders After**: Specify when closed Purchase Orders should be deleted. After the selected time span, the records will be removed automatically.
-
-    <figure><img src="../../../.gitbook/assets/master_data_lookup_3.png" alt=""><figcaption></figcaption></figure>

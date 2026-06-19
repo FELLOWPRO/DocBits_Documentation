@@ -29,6 +29,8 @@ Email Templates allow you to customize automated email notifications sent from D
 
       <div align="center"><figure><img src="../../../.gitbook/assets/create_new_email_template_form.png" alt="Create New Email Template Form"><figcaption></figcaption></figure></div>
 
+You can also enable **Include Document As Attachment** to attach the source document to the email.
+
 #### **2 Template Editor**
 
 * **Menu**: Format text, add links, or insert tables.

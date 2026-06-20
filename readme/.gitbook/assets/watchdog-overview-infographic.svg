@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="350" viewBox="0 0 800 350" fill="none">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.06" flood-color="#001b3c"/>
+    </filter>
+    <linearGradient id="primaryGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#005cad"/>
+      <stop offset="100%" stop-color="#0075d8"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#005cad"/>
+      <stop offset="100%" stop-color="#0075d8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, system-ui, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="16" fill="#f9f9ff"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="56" rx="16" fill="url(#headerGrad)"/>
+  <rect y="40" width="800" height="16" fill="url(#headerGrad)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700" letter-spacing="0.3">WatchDog -- Document Import &amp; Export Service</text>
+
+  <!-- Step 1: IMPORT -->
+  <rect x="40" y="80" width="200" height="160" rx="14" fill="#f0f3ff" filter="url(#shadow)"/>
+  <rect x="40" y="80" width="200" height="160" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <!-- Step number -->
+  <circle cx="72" cy="104" r="14" fill="#005cad"/>
+  <text x="72" y="109" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">1</text>
+  <text x="96" y="109" fill="#005cad" font-size="13" font-weight="700">IMPORT</text>
+  <!-- Folder icon -->
+  <g transform="translate(112, 128)">
+    <rect x="0" y="8" width="36" height="28" rx="4" fill="#005cad" opacity="0.12"/>
+    <path d="M2 12 L2 8 Q2 4 6 4 L14 4 L18 8 L32 8 Q36 8 36 12" fill="#005cad" opacity="0.25"/>
+    <rect x="2" y="12" width="32" height="20" rx="3" fill="#005cad"/>
+    <path d="M10 20 L16 25 L26 17" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="140" y="178" text-anchor="middle" fill="#1a1c1e" font-size="11.5" font-weight="500">WatchDog monitors</text>
+  <text x="140" y="194" text-anchor="middle" fill="#44474e" font-size="11" font-weight="400">folders for new PDFs</text>
+  <text x="140" y="228" text-anchor="middle" fill="#44474e" font-size="10" font-weight="400" opacity="0.7">Watch Folder Scanning</text>
+
+  <!-- Arrow 1 -->
+  <g transform="translate(252, 152)">
+    <line x1="0" y1="8" x2="36" y2="8" stroke="#005cad" stroke-width="2" stroke-dasharray="4 3"/>
+    <polygon points="36,2 48,8 36,14" fill="#005cad"/>
+  </g>
+
+  <!-- Step 2: PROCESS -->
+  <rect x="300" y="80" width="200" height="160" rx="14" fill="url(#primaryGrad)" filter="url(#shadow)"/>
+  <!-- Step number -->
+  <circle cx="332" cy="104" r="14" fill="#ffffff" opacity="0.25"/>
+  <text x="332" y="109" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">2</text>
+  <text x="356" y="109" fill="#ffffff" font-size="13" font-weight="700">PROCESS</text>
+  <!-- Cloud icon -->
+  <g transform="translate(372, 124)">
+    <path d="M8 32 Q-2 32 -2 24 Q-2 18 4 16 Q4 6 14 4 Q24 -2 32 6 Q36 2 42 6 Q50 10 46 18 Q52 20 52 26 Q52 32 44 32 Z" fill="#ffffff" opacity="0.25"/>
+    <path d="M12 36 Q0 36 0 28 Q0 20 8 18 Q8 6 20 4 Q32 -4 40 6 Q46 0 52 6 Q62 12 56 22 Q64 24 64 30 Q64 36 54 36 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M24 18 L24 28 M20 24 L28 24" stroke="#005cad" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="400" y="178" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="500">DocBits Cloud processes</text>
+  <text x="400" y="194" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="400" opacity="0.85">&amp; extracts data</text>
+  <text x="400" y="228" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="400" opacity="0.6">AI-Powered Extraction</text>
+
+  <!-- Arrow 2 -->
+  <g transform="translate(512, 152)">
+    <line x1="0" y1="8" x2="36" y2="8" stroke="#005cad" stroke-width="2" stroke-dasharray="4 3"/>
+    <polygon points="36,2 48,8 36,14" fill="#005cad"/>
+  </g>
+
+  <!-- Step 3: EXPORT -->
+  <rect x="560" y="80" width="200" height="160" rx="14" fill="#f0f3ff" filter="url(#shadow)"/>
+  <rect x="560" y="80" width="200" height="160" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <!-- Step number -->
+  <circle cx="592" cy="104" r="14" fill="#005cad"/>
+  <text x="592" y="109" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">3</text>
+  <text x="616" y="109" fill="#005cad" font-size="13" font-weight="700">EXPORT</text>
+  <!-- Export icons group -->
+  <g transform="translate(620, 124)">
+    <!-- Folder icon -->
+    <rect x="0" y="4" width="24" height="18" rx="3" fill="#005cad" opacity="0.15"/>
+    <rect x="0" y="8" width="24" height="14" rx="2" fill="#005cad"/>
+    <text x="12" y="19" text-anchor="middle" fill="#ffffff" font-size="7" font-weight="600">F</text>
+    <!-- ERP icon -->
+    <rect x="32" y="4" width="24" height="18" rx="3" fill="#1a8754" opacity="0.15"/>
+    <rect x="32" y="8" width="24" height="14" rx="2" fill="#1a8754"/>
+    <text x="44" y="19" text-anchor="middle" fill="#ffffff" font-size="7" font-weight="600">ERP</text>
+    <!-- API icon -->
+    <rect x="64" y="4" width="24" height="18" rx="3" fill="#d97706" opacity="0.15"/>
+    <rect x="64" y="8" width="24" height="14" rx="2" fill="#d97706"/>
+    <text x="76" y="19" text-anchor="middle" fill="#ffffff" font-size="7" font-weight="600">API</text>
+  </g>
+  <text x="660" y="178" text-anchor="middle" fill="#1a1c1e" font-size="11" font-weight="500">Local Folder</text>
+  <text x="660" y="194" text-anchor="middle" fill="#44474e" font-size="11" font-weight="400">Infor ERP / SAP | REST API</text>
+  <text x="660" y="228" text-anchor="middle" fill="#44474e" font-size="10" font-weight="400" opacity="0.7">Multiple Destinations</text>
+
+  <!-- Bottom feature badges bar -->
+  <rect x="40" y="264" width="720" height="62" rx="12" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="40" y="264" width="720" height="62" rx="12" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <text x="400" y="284" text-anchor="middle" fill="#44474e" font-size="10" font-weight="600" letter-spacing="1">KEY FEATURES</text>
+
+  <!-- Badge: Auto-Update -->
+  <rect x="80" y="294" width="120" height="24" rx="12" fill="#005cad" opacity="0.08"/>
+  <text x="140" y="310" text-anchor="middle" fill="#005cad" font-size="11" font-weight="600">Auto-Update</text>
+
+  <!-- Badge: Multi-Config -->
+  <rect x="220" y="294" width="120" height="24" rx="12" fill="#005cad" opacity="0.08"/>
+  <text x="280" y="310" text-anchor="middle" fill="#005cad" font-size="11" font-weight="600">Multi-Config</text>
+
+  <!-- Badge: UNC Network Paths -->
+  <rect x="360" y="294" width="150" height="24" rx="12" fill="#005cad" opacity="0.08"/>
+  <text x="435" y="310" text-anchor="middle" fill="#005cad" font-size="11" font-weight="600">UNC Network Paths</text>
+
+  <!-- Badge: Windows Service -->
+  <rect x="530" y="294" width="140" height="24" rx="12" fill="#005cad" opacity="0.08"/>
+  <text x="600" y="310" text-anchor="middle" fill="#005cad" font-size="11" font-weight="600">Windows Service</text>
+</svg>

@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.06" flood-color="#001b3c"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#005cad"/>
+      <stop offset="100%" stop-color="#0075d8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, system-ui, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="16" fill="#f9f9ff"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" rx="16" fill="url(#headerGrad)"/>
+  <rect y="40" width="800" height="16" fill="url(#headerGrad)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700" letter-spacing="0.3">WatchDog Troubleshooting Quick Reference</text>
+
+  <!-- Column 1: Import Issues (orange tint) -->
+  <rect x="24" y="72" width="240" height="290" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="24" y="72" width="240" height="290" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <!-- Column header -->
+  <rect x="24" y="72" width="240" height="40" rx="14" fill="#d97706" opacity="0.08"/>
+  <rect x="24" y="98" width="240" height="14" fill="#d97706" opacity="0.08"/>
+  <circle cx="48" cy="92" r="12" fill="#d97706" opacity="0.15"/>
+  <text x="48" y="97" text-anchor="middle" fill="#d97706" font-size="14" font-weight="700">&#8593;</text>
+  <text x="68" y="98" fill="#d97706" font-size="13" font-weight="700">Import Issues</text>
+
+  <!-- Issue 1 -->
+  <g transform="translate(38, 126)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#d97706" opacity="0.06"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">File not importing</text>
+  </g>
+  <g transform="translate(48, 158)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Check service is running</text>
+  </g>
+  <g transform="translate(48, 176)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Verify folder permissions</text>
+  </g>
+  <g transform="translate(48, 194)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Check file format (PDF)</text>
+  </g>
+
+  <!-- Issue 2 -->
+  <g transform="translate(38, 220)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#d97706" opacity="0.06"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">API not accessible</text>
+  </g>
+  <g transform="translate(48, 252)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Check network / firewall</text>
+  </g>
+  <g transform="translate(48, 270)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Verify API Key is valid</text>
+  </g>
+  <g transform="translate(48, 288)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Test endpoint manually</text>
+  </g>
+
+  <!-- Column 2: Export Issues (red tint) -->
+  <rect x="280" y="72" width="240" height="290" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="280" y="72" width="240" height="290" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <rect x="280" y="72" width="240" height="40" rx="14" fill="#dc2626" opacity="0.06"/>
+  <rect x="280" y="98" width="240" height="14" fill="#dc2626" opacity="0.06"/>
+  <circle cx="304" cy="92" r="12" fill="#dc2626" opacity="0.15"/>
+  <text x="304" y="97" text-anchor="middle" fill="#dc2626" font-size="14" font-weight="700">&#8595;</text>
+  <text x="324" y="98" fill="#dc2626" font-size="13" font-weight="700">Export Issues</text>
+
+  <!-- Issue 1 -->
+  <g transform="translate(294, 126)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#dc2626" opacity="0.05"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">No config match</text>
+  </g>
+  <g transform="translate(304, 158)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Create export config with</text>
+  </g>
+  <g transform="translate(304, 174)">
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">correct doc_type set</text>
+  </g>
+
+  <!-- Issue 2 -->
+  <g transform="translate(294, 194)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#dc2626" opacity="0.05"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">XSLT transformation fails</text>
+  </g>
+  <g transform="translate(304, 226)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Validate XSLT template</text>
+  </g>
+  <g transform="translate(304, 244)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Check XML input structure</text>
+  </g>
+
+  <!-- Issue 3 -->
+  <g transform="translate(294, 266)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#dc2626" opacity="0.05"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Folder export error</text>
+  </g>
+  <g transform="translate(304, 298)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Check write permissions</text>
+  </g>
+  <g transform="translate(304, 316)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Verify Service Account access</text>
+  </g>
+
+  <!-- Column 3: Connection Issues (blue tint) -->
+  <rect x="536" y="72" width="240" height="290" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="536" y="72" width="240" height="290" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <rect x="536" y="72" width="240" height="40" rx="14" fill="#005cad" opacity="0.06"/>
+  <rect x="536" y="98" width="240" height="14" fill="#005cad" opacity="0.06"/>
+  <circle cx="560" cy="92" r="12" fill="#005cad" opacity="0.15"/>
+  <text x="560" y="97" text-anchor="middle" fill="#005cad" font-size="14" font-weight="700">&#8634;</text>
+  <text x="580" y="98" fill="#005cad" font-size="13" font-weight="700">Connection Issues</text>
+
+  <!-- Issue 1 -->
+  <g transform="translate(550, 126)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#005cad" opacity="0.05"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Heartbeat failed</text>
+  </g>
+  <g transform="translate(560, 158)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Verify API Key is active</text>
+  </g>
+  <g transform="translate(560, 176)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Check network connectivity</text>
+  </g>
+
+  <!-- Issue 2 -->
+  <g transform="translate(550, 202)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#005cad" opacity="0.05"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Config disabled</text>
+  </g>
+  <g transform="translate(560, 234)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Verify folder paths exist</text>
+  </g>
+  <g transform="translate(560, 252)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Check folder permissions</text>
+  </g>
+
+  <!-- Issue 3: Auto-reactivation -->
+  <g transform="translate(550, 278)">
+    <rect x="0" y="0" width="212" height="24" rx="8" fill="#005cad" opacity="0.05"/>
+    <text x="10" y="16" fill="#1a1c1e" font-size="11" font-weight="600">Auto-reactivation</text>
+  </g>
+  <g transform="translate(560, 310)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Configs auto-reactivate</text>
+  </g>
+  <g transform="translate(560, 328)">
+    <text x="16" y="9" fill="#44474e" font-size="10.5" font-weight="400">once issues are resolved</text>
+  </g>
+  <g transform="translate(560, 346)">
+    <circle cx="4" cy="5" r="3" fill="#1a8754"/>
+    <text x="12" y="9" fill="#44474e" font-size="10.5" font-weight="400">Monitor Logs tab for status</text>
+  </g>
+
+  <!-- Bottom CLI reference bar -->
+  <rect x="24" y="376" width="752" height="58" rx="12" fill="#f0f3ff" filter="url(#shadow)"/>
+  <rect x="24" y="376" width="752" height="58" rx="12" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <text x="44" y="398" fill="#1a1c1e" font-size="11" font-weight="700">CLI Commands</text>
+
+  <!-- CLI badges -->
+  <g transform="translate(44, 406)">
+    <rect x="0" y="0" width="58" height="20" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="29" y="14" text-anchor="middle" fill="#005cad" font-size="10" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">install</text>
+  </g>
+  <g transform="translate(112, 406)">
+    <rect x="0" y="0" width="50" height="20" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="25" y="14" text-anchor="middle" fill="#005cad" font-size="10" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">start</text>
+  </g>
+  <g transform="translate(172, 406)">
+    <rect x="0" y="0" width="46" height="20" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="23" y="14" text-anchor="middle" fill="#005cad" font-size="10" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">stop</text>
+  </g>
+  <g transform="translate(228, 406)">
+    <rect x="0" y="0" width="56" height="20" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="28" y="14" text-anchor="middle" fill="#005cad" font-size="10" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">debug</text>
+  </g>
+  <g transform="translate(294, 406)">
+    <rect x="0" y="0" width="76" height="20" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="38" y="14" text-anchor="middle" fill="#005cad" font-size="10" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">--version</text>
+  </g>
+  <g transform="translate(380, 406)">
+    <rect x="0" y="0" width="114" height="20" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="57" y="14" text-anchor="middle" fill="#005cad" font-size="10" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">--list-folders</text>
+  </g>
+  <g transform="translate(504, 406)">
+    <rect x="0" y="0" width="72" height="20" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="36" y="14" text-anchor="middle" fill="#005cad" font-size="10" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">-api KEY</text>
+  </g>
+</svg>

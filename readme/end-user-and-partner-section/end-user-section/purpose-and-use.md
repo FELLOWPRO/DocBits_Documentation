@@ -1,48 +1,46 @@
-_Contenido en inglés abajo - Traducción pendiente_
+# Propósito y uso
 
-# Purpose and Use
+## Resumen:
 
-## Overview:
-
-The validation screen in DocBits is designed to verify the accuracy and completeness of data contained within documents before they are processed or saved. This functionality is crucial for ensuring that all data is correctly read and processed, thereby maintaining data integrity and quality.
+La pantalla de validación de DocBits está diseñada para verificar la exactitud y la integridad de los datos contenidos en los documentos antes de que se procesen o se guarden. Esta funcionalidad es fundamental para garantizar que todos los datos se lean y procesen correctamente, manteniendo así la integridad y la calidad de los datos.
 
 <figure><img src="../../.gitbook/assets/napkin-selection (1).svg" alt=""><figcaption></figcaption></figure>
 
-## Detailed Description of the Validation Screen's Purpose and Use
+## Descripción detallada del propósito y uso de la pantalla de validación
 
-### Purpose of the Validation Screen
+### Propósito de la pantalla de validación
 
-* **Ensuring Data Quality**: The validation screen checks the accuracy and completeness of extracted data to prevent the entry of incorrect or incomplete information.
-* **Data Integrity**: It ensures that the data complies with specified requirements and standards.
-* **Error Prevention**: By facilitating early detection and correction of errors, the validation screen helps mitigate potential issues during subsequent data processing.
-* **User Friendliness**: The system provides immediate feedback to users when errors or inconsistencies are detected, allowing for prompt corrections.
-* **Compliance**: The validation screen helps ensure adherence to legal and organizational regulations and standards.
-* **Efficiency**: It reduces the effort required for future corrections and minimizes the need for manual checks.
+* **Garantizar la calidad de los datos**: La pantalla de validación comprueba la exactitud y la integridad de los datos extraídos para evitar la entrada de información incorrecta o incompleta.
+* **Integridad de los datos**: Garantiza que los datos cumplan los requisitos y estándares especificados.
+* **Prevención de errores**: Al facilitar la detección y corrección tempranas de errores, la pantalla de validación ayuda a mitigar posibles problemas durante el procesamiento posterior de los datos.
+* **Facilidad de uso**: El sistema proporciona retroalimentación inmediata a los usuarios cuando se detectan errores o inconsistencias, lo que permite correcciones rápidas.
+* **Cumplimiento**: La pantalla de validación ayuda a garantizar el cumplimiento de las normativas y los estándares legales y organizativos.
+* **Eficiencia**: Reduce el esfuerzo necesario para futuras correcciones y minimiza la necesidad de comprobaciones manuales.
 
-### Using the Validation Screen
+### Uso de la pantalla de validación
 
-* **Automatic Data Extraction**:
-  * **Optical Character Recognition (OCR)**: Automatically reads text from scanned documents or images.
-  * **Structured and Unstructured Data**: Processes data from various document types, including forms, invoices, and contracts.
-* **Checking and Validating Data**:
-  * **Format Validation**: Ensures that data is in the correct formats (e.g., date formats, phone numbers, email addresses).
-  * **Required Fields**: Confirms that all mandatory fields are completed.
-  * **Range Checking**: Validates numeric data to ensure it falls within specified limits.
-  * **Consistency Checking**: Verifies that related data fields contain consistent information (e.g., ensuring start and end dates align).
-* **User Interaction and Troubleshooting**:
-  * **Error Messages**: Displays clear and actionable error messages when data does not meet validation requirements.
-  * **Manual Review and Correction**: Allows users to manually review and amend data when automatic validations fail.
-* **Data Cleaning and Standardization**:
-  * **Automatic Correction**: Suggests or performs automatic corrections when errors are detected.
-  * **Data Formatting**: Standardizes data formats to ensure consistency across datasets.
-* **Security and Access Rights**:
-  * **Input Filters**: Protects against malicious inputs through robust validation and filtering mechanisms.
-  * **Access Control**: Ensures that only authorized users can access and modify sensitive data.
-* **Data Consistency**:
-  * **Cross Validation**: Checks for consistency among related data fields (e.g., validating that start and end dates align).
-  * **Duplicate Entries**: Prevents duplicate entries within the database.
-* **User Guidance**:
-  * **Error Messages**: Provides specific and understandable error messages when entries do not comply with requirements.
-  * **Help and Hints**: Offers help texts or tooltips to assist users in entering data correctly.
+* **Extracción automática de datos**:
+  * **Reconocimiento óptico de caracteres (OCR)**: Lee automáticamente el texto de documentos escaneados o imágenes.
+  * **Datos estructurados y no estructurados**: Procesa datos de diversos tipos de documentos, incluidos formularios, facturas y contratos.
+* **Comprobación y validación de datos**:
+  * **Validación de formato**: Garantiza que los datos tengan los formatos correctos (por ejemplo, formatos de fecha, números de teléfono, direcciones de correo electrónico).
+  * **Campos obligatorios**: Confirma que todos los campos obligatorios estén completos.
+  * **Comprobación de rangos**: Valida los datos numéricos para garantizar que se encuentren dentro de los límites especificados.
+  * **Comprobación de consistencia**: Verifica que los campos de datos relacionados contengan información coherente (por ejemplo, garantizar que las fechas de inicio y fin coincidan).
+* **Interacción del usuario y resolución de problemas**:
+  * **Mensajes de error**: Muestra mensajes de error claros y accionables cuando los datos no cumplen los requisitos de validación.
+  * **Revisión y corrección manuales**: Permite a los usuarios revisar y modificar los datos manualmente cuando las validaciones automáticas fallan.
+* **Limpieza y estandarización de datos**:
+  * **Corrección automática**: Sugiere o realiza correcciones automáticas cuando se detectan errores.
+  * **Formato de datos**: Estandariza los formatos de los datos para garantizar la coherencia entre los conjuntos de datos.
+* **Seguridad y derechos de acceso**:
+  * **Filtros de entrada**: Protege contra entradas maliciosas mediante mecanismos robustos de validación y filtrado.
+  * **Control de acceso**: Garantiza que solo los usuarios autorizados puedan acceder a los datos confidenciales y modificarlos.
+* **Consistencia de los datos**:
+  * **Validación cruzada**: Comprueba la coherencia entre los campos de datos relacionados (por ejemplo, validar que las fechas de inicio y fin coincidan).
+  * **Entradas duplicadas**: Evita las entradas duplicadas dentro de la base de datos.
+* **Orientación al usuario**:
+  * **Mensajes de error**: Proporciona mensajes de error específicos y comprensibles cuando las entradas no cumplen los requisitos.
+  * **Ayuda y sugerencias**: Ofrece textos de ayuda o información sobre herramientas para ayudar a los usuarios a introducir los datos correctamente.
 
-In summary, the validation screen in DocBits is instrumental in ensuring the quality of extracted data, facilitating early error detection and correction, and enhancing the overall efficiency of data processing workflows.
+En resumen, la pantalla de validación de DocBits es fundamental para garantizar la calidad de los datos extraídos, facilitar la detección y corrección tempranas de errores y mejorar la eficiencia general de los flujos de trabajo de procesamiento de datos.

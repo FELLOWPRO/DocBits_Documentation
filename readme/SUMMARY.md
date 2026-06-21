@@ -243,7 +243,7 @@
           * [ZUGFeRD 1.0 Veldomapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-1-0.md)
           * [ZUGFeRD 2.0 Veldomapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-0.md)
           * [ZUGFeRD 2.1 Veldomapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-1.md)
-          * [ZUGFeRD 2.2 Veldomapping](administration-and-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-2.md)
+          * [ZUGFeRD 2.2 Veldomapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-2.md)
           * [ZUGFeRD 2.3 Veldomapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3.md)
           * [ZUGFeRD 2.3.2 Veldomapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3-2.md)
         * [ZUGFeRD + Swiss QR Code Veldomapping](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)

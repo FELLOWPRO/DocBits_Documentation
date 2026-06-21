@@ -1,38 +1,35 @@
-# Supplier Registration
+# Registro de Fornecedor
 
-(Conteúdo em inglês abaixo - Tradução pendente)
-
-
-1. You will receive an invitation with a link via E-mail to begin the registration process. Please click on “Go to Registration,” submit the required information, and accept the terms and conditions to get started.\
+1. Você receberá um convite com um link por E-mail para iniciar o processo de registro. Clique em “Go to Registration”, envie as informações solicitadas e aceite os termos e condições para começar.\
    ![](<../../../.gitbook/assets/image (51).png>)![](<../../../.gitbook/assets/image (242) (1).png>)
-2.  **Supplier Details**
+2.  **Dados do Fornecedor**
 
-    Please verify that the Supplier name is correct. This is a critical detail for identity and legal purposes that cannot be changed. Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Address Data section. To save your progress and continue later, click on “Save.”\\
+    Verifique se o nome do Fornecedor está correto. Este é um detalhe essencial para fins de identidade e legais que não pode ser alterado. Forneça todas as informações aplicáveis, incluindo os campos obrigatórios. Quando concluído, clique em “Next” para continuar para a seção Dados de Endereço. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
 
     <figure><img src="../../../.gitbook/assets/image (243) (1).png" alt=""><figcaption></figcaption></figure>
-3.  **Address Data**\
-    Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Supplier Contact section. To save your progress and continue later, click on “Save.”\\
+3.  **Dados de Endereço**\
+    Forneça todas as informações aplicáveis, incluindo os campos obrigatórios. Quando concluído, clique em “Next” para continuar para a seção Contato do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
 
     <figure><img src="../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
-4.  **Supplier Contact**\
-    Please provide all applicable information including the required fields. When completed, click on “Next” to continue to the Supplier Financial section. To save your progress and continue later, click on “Save.”\\
+4.  **Contato do Fornecedor**\
+    Forneça todas as informações aplicáveis, incluindo os campos obrigatórios. Quando concluído, clique em “Next” para continuar para a seção Financeiro do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
 
     <figure><img src="../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
-5.  **Supplier Financial**\
-    Please provide all applicable information. When completed, click on “Next” to continue to the Supplier Purchase section. To save your progress and continue later, click on “Save.”\\
+5.  **Financeiro do Fornecedor**\
+    Forneça todas as informações aplicáveis. Quando concluído, clique em “Next” para continuar para a seção Compras do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
 
     <figure><img src="../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
-6.  **Supplier Purchase**\
-    Please provide all applicable information. When completed, click on “Next” to continue to the Supplier Certificates section. To save your progress and continue later, click on “Save.”\\
+6.  **Compras do Fornecedor**\
+    Forneça todas as informações aplicáveis. Quando concluído, clique em “Next” para continuar para a seção Certificados do Fornecedor. Para salvar o seu progresso e continuar mais tarde, clique em “Save”.\\
 
     <figure><img src="../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
-7.  **Supplier Certificates**\
-    Please upload all certificates required (Tax, Insurance, Vendor Diversification). Please save your progress if you need to return to complete the registration process later. When completed, click on “Send for Approval.”\\
+7.  **Certificados do Fornecedor**\
+    Envie todos os certificados exigidos (Imposto, Seguro, Diversificação de Fornecedores). Salve o seu progresso se precisar retornar para concluir o processo de registro mais tarde. Quando concluído, clique em “Send for Approval”.\\
 
     <figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
-8.  Please upload all certificates required (Tax, Insurance, Vendor Diversification). Please save your progress if you need to return to complete the registration process later. When completed, click on “Send for Approval.”\\
+8.  Envie todos os certificados exigidos (Imposto, Seguro, Diversificação de Fornecedores). Salve o seu progresso se precisar retornar para concluir o processo de registro mais tarde. Quando concluído, clique em “Send for Approval”.\\
 
     <figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
-9.  Please check your E-mail for a confirmation that you have completed the registration process.\\
+9.  Verifique o seu E-mail em busca de uma confirmação de que você concluiu o processo de registro.\\
 
     <figure><img src="../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>

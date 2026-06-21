@@ -1,24 +1,22 @@
-# Troubleshooting
+# Solução de Problemas
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
 DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
 {% endembed %}
 
-In this video, you’ll learn how to create a Support Ticket in DocBits so you can report issues clearly and get help faster. We’ll go through where to find the support option, what information to include, and how to attach helpful files for quicker troubleshooting.
+Neste vídeo, você aprenderá como criar um Ticket de Suporte no DocBits para que possa relatar problemas com clareza e obter ajuda mais rapidamente. Vamos ver onde encontrar a opção de suporte, quais informações incluir e como anexar arquivos úteis para uma solução de problemas mais rápida.
 
-**What you’ll learn:**
-*   Where to find the Support / Help section in DocBits
-*   How to open a new ticket
-*   What to include for faster resolution:
-    *   short summary + clear description
-    *   steps to reproduce
-    *   expected vs actual behavior
-    *   affected document / workflow / module
-*   How to add attachments (screenshots, sample files, logs if available)
-*   How to submit and track your ticket status
+**O que você vai aprender:**
+*   Onde encontrar a seção de Suporte / Ajuda no DocBits
+*   Como abrir um novo ticket
+*   O que incluir para uma resolução mais rápida:
+    *   resumo curto + descrição clara
+    *   passos para reproduzir
+    *   comportamento esperado vs. comportamento real
+    *   documento / fluxo de trabalho / módulo afetado
+*   Como adicionar anexos (capturas de tela, arquivos de exemplo, logs se disponíveis)
+*   Como enviar e acompanhar o status do seu ticket
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+## A solução de problemas na configuração de tipos de documento no DocBits pode ser complexa, pois vários fatores podem afetar o reconhecimento e a extração de dados.&#x20;
 
-## Troubleshooting document type configuration in DocBits can be complex because various factors can affect data recognition and extraction.&#x20;
-
-### Here are some general troubleshooting tips that can help identify and resolve common issues:...
+### Aqui estão algumas dicas gerais de solução de problemas que podem ajudar a identificar e resolver problemas comuns:...

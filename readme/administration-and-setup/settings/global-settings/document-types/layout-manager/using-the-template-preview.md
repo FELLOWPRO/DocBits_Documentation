@@ -1,7 +1,5 @@
-# Using the Template Preview
+# Usando a Pré-visualização do Modelo
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+## A Pré-visualização do Modelo é uma ferramenta extremamente útil para verificar e ajustar as configurações de layout em tempo real antes de fazer alterações em um documento ou modelo.
 
-## The Template Preview is an extremely useful tool for checking and adjusting layout settings in real time before making changes to a document or template.
-
-### Here's an explanation of how you can use the Template Preview:...
+### Veja uma explicação de como você pode usar a Pré-visualização do Modelo:...

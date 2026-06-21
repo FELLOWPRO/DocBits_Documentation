@@ -1,64 +1,62 @@
-(Conteúdo em inglês abaixo - Tradução pendente)
-
 ---
 hidden: true
 ---
 
-# Fuzzy Data Configuration with List of Values
+# Configuração de Fuzzy Data com List of Values
 
-### **Overview**
+### **Visão geral**
 
-Each document type has its own List of Values (LoV) configurations, which must be set up separately. Unlike **Fuzzy Data with Master Data**, **List of Values** does not come with default lookup groups.
+Cada tipo de documento tem suas próprias configurações de List of Values (LoV), que devem ser definidas separadamente. Diferentemente de **Fuzzy Data com Master Data**, a **List of Values** não vem com grupos de lookup padrão.
 
-### To configure List of Values, navigate to:
+### Para configurar a List of Values, navegue até:
 
 Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data
 
-### **Creating a New List of Values Configuration**
+### **Criando uma Nova Configuração de List of Values**
 
-There are two ways to create a List of Values configuration:
+Existem duas maneiras de criar uma configuração de List of Values:
 
-**1. Duplicate an Existing Lookup**
+**1. Duplicar um Lookup Existente**
 
-* This copies all information and fields from an existing group.
-* You only need to provide a **new name**.
+* Isso copia todas as informações e campos de um grupo existente.
+* Você só precisa fornecer um **novo nome**.
 
-**2. Create a Lookup from Scratch**
+**2. Criar um Lookup do Zero**
 
-* Click **"Create List of Values"**.
-* Fill in the required details:
-  * **Configuration Name** → Name of the List of Values.
-  * **Lookup Table** → The table from which values will be retrieved.
-  * **Conflict Handler** → Choose one:
+* Clique em **"Create List of Values"**.
+* Preencha os detalhes necessários:
+  * **Configuration Name** → Nome da List of Values.
+  * **Lookup Table** → A tabela da qual os valores serão obtidos.
+  * **Conflict Handler** → Escolha um:
     * Best Score
     * Return None
     * Return First
-  * **Context Type** → Determines if the LoV applies to the **Header** or **Line** level.
-  * **Match All** → _(More details needed)_
+  * **Context Type** → Determina se a LoV se aplica ao nível **Header** ou **Line**.
+  * **Match All** → _(Mais detalhes necessários)_
 
-### **Managing Fields Within a List of Values Group**
+### **Gerenciando Campos Dentro de um Grupo de List of Values**
 
-Each LoV group contains fields that can be **added, removed or edited.**
+Cada grupo de LoV contém campos que podem ser **adicionados, removidos ou editados.**
 
-**Adding a New Field**
+**Adicionando um Novo Campo**
 
-To add a new field within a group:
+Para adicionar um novo campo dentro de um grupo:
 
-* Click **"Create"** inside the relevant group.
-* Provide the following details:
-  * **Lookup Field** → The column name from the lookup table.
-  * **Validation Field** → The corresponding DocBits field.
-  * **Parent Field** → _(More details needed)_
-  * **Search Operator** → Choose one:
+* Clique em **"Create"** dentro do grupo relevante.
+* Forneça os seguintes detalhes:
+  * **Lookup Field** → O nome da coluna da tabela de lookup.
+  * **Validation Field** → O campo correspondente do DocBits.
+  * **Parent Field** → _(Mais detalhes necessários)_
+  * **Search Operator** → Escolha um:
     * Smart
     * Contains
     * Exact
     * Starts with
     * Ends with
-  * **Checkboxes:**
-    * **Auto Trigger** → When enabled, if another field in a different lookup configuration shares the same column, this field will update **automatically** whenever the other field is updated.
-    * **Searchable** → Enables the field as a **List of Values** field, allowing searches in the lookup table.
+  * **Caixas de seleção:**
+    * **Auto Trigger** → Quando ativado, se outro campo em uma configuração de lookup diferente compartilhar a mesma coluna, este campo será atualizado **automaticamente** sempre que o outro campo for atualizado.
+    * **Searchable** → Ativa o campo como um campo de **List of Values**, permitindo buscas na tabela de lookup.
 
-#### **Final Step: Adding Fields to the Layout**
+#### **Etapa Final: Adicionando os Campos ao Layout**
 
-After configuring List of Values fields, **make sure to add them to the layout using the Layout Builder**. If fields are not added to the layout, they will not be available for use.
+Após configurar os campos de List of Values, **certifique-se de adicioná-los ao layout usando o Layout Builder**. Se os campos não forem adicionados ao layout, eles não estarão disponíveis para uso.

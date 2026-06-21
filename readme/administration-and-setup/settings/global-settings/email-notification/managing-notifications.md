@@ -1,7 +1,5 @@
-# Managing Notifications
+# Gerenciando Notificações
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+Para editar, desativar ou excluir notificações existentes e adaptá-las a mudanças nos fluxos de trabalho de processamento de documentos ou nas responsabilidades dos usuários, você pode fazer o seguinte:
 
-To edit, disable, or delete existing notifications and adapt them to changes in document processing workflows or user responsibilities, you can do the following:
-
-**Navigate to notification settings:** Go to your system's settings where you can manage notifications. You can find these in the “Settings” section, “Global Settings” and then under “Email notification”...
+**Navegue até as configurações de notificação:** Vá até as configurações do seu sistema onde você pode gerenciar notificações. Você as encontra na seção “Settings”, “Global Settings” e, em seguida, em “Email notification”...

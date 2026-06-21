@@ -1,9 +1,7 @@
 ---
-description: Instructions for viewing, copying or regenerating the API key
+description: Instruções para visualizar, copiar ou regenerar a chave de API
 ---
 
-# API Key Management
+# Gerenciamento de Chave de API
 
-(Conteúdo em inglês abaixo - Tradução pendente)
-
-API key management is an important aspect when it comes to the security of integrations and access to external services through APIs. Here are some steps to manage API keys and best practices for their security:...
+O gerenciamento de chaves de API é um aspecto importante quando se trata da segurança das integrações e do acesso a serviços externos por meio de APIs. Aqui estão algumas etapas para gerenciar chaves de API e as melhores práticas para sua segurança:...

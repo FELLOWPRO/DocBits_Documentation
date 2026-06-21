@@ -1,7 +1,5 @@
-# Purpose and Use
+# Finalidade e uso
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+## Configurar corretamente as colunas da tabela é fundamental para garantir armazenamento, consulta e geração de relatórios de dados eficientes.
 
-## Setting up table columns correctly is critical to ensure efficient data storage, querying, and reporting.
-
-**Here are the main reasons why:**...
+**Aqui estão os principais motivos:**...

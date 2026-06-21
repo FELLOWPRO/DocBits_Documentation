@@ -1,17 +1,14 @@
-# Troubleshooting Common Issues
+# Resolução de Problemas Comuns
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+Aqui estão as etapas de resolução de problemas para questões comuns ao integrar o DocBits com um Identity Service Provider (IdP) ou outros serviços:
 
+* **Verifique a configuração:** Certifique-se de que as definições de integração no DocBits estejam configuradas corretamente e correspondam aos requisitos do seu Identity Service Provider. Em particular, verifique a SSO URL, o Entity ID e os certificados.
+* **Monitore os logs:** Monitore os logs tanto no DocBits quanto no lado do Identity Service Provider para identificar quaisquer mensagens de erro ou avisos. Esses logs podem fornecer pistas sobre onde está o problema.
+* **Verifique as conexões de rede:** Certifique-se de que não haja problemas de rede que possam afetar a comunicação entre o DocBits e o seu Identity Service Provider. Verifique as configurações de firewall, as configurações de DNS e as regras de acesso à rede.
+* **Teste os processos de SSO:** Realize logins de teste via Single Sign-On (SSO) para garantir que os usuários sejam autenticados com sucesso e redirecionados para o DocBits. Certifique-se de anotar quaisquer mensagens de erro ou problemas de redirecionamento.
+* **Verifique as permissões:** Certifique-se de que os usuários no DocBits tenham as permissões necessárias para acessar os recursos ou funcionalidades adequados. Verifique a atribuição de grupos e papéis.
+* **Atualize os certificados:** Certifique-se de que os certificados SAML e os metadados estejam atualizados em ambos os lados. Se um certificado tiver expirado, você deve atualizá-lo e testar a integração novamente.
+* **Comunique-se com o suporte:** Se você não conseguir identificar a causa do problema, entre em contato com o suporte do DocBits ou com o seu identity service provider. Eles podem ajudá-lo a resolver o problema e fornecer orientações específicas para a sua configuração.
 
-Here are troubleshooting steps for common issues while integrating DocBits with an Identity Service Provider (IdP) or other services:
-
-* **Verify configuration:** Make sure the integration settings in DocBits are correctly configured and match your Identity Service Provider's requirements. In particular, check the SSO URL, Entity ID, and certificates.
-* **Monitor logs:** Monitor logs in both DocBits and on the Identity Service Provider's side to identify any error messages or warnings. These logs can provide clues as to where the problem lies.
-* **Verify network connections:** Make sure there are no network issues that could affect communication between DocBits and your Identity Service Provider. Check firewall settings, DNS configurations, and network access rules.
-* **Test SSO processes:** Perform test logins via Single Sign-On (SSO) to ensure users are successfully authenticated and redirected to DocBits. Be sure to note any error messages or redirection issues.
-* **Checking permissions:** Make sure users in DocBits have the required permissions to access the appropriate features or resources. Check the assignment of groups and roles.
-* **Updating certificates:** Make sure the SAML certificates and metadata are up to date on both sides. If a certificate has expired, you must update it and retest the integration.
-* **Communicating with support:** If you cannot identify the cause of the problem, contact DocBits support or your identity service provider. They can help you troubleshoot and provide specific guidance for your setup.
-
-By following these troubleshooting steps, you can quickly identify and resolve the most common issues during the integration between Docbits and your identity service provider.
+Ao seguir estas etapas de resolução de problemas, você pode identificar e resolver rapidamente os problemas mais comuns durante a integração entre o DocBits e o seu identity service provider.
 

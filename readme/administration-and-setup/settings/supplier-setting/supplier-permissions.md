@@ -1,14 +1,11 @@
-# Supplier Permissions
+# Permissões do Fornecedor
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+### Grupo de Fornecedores&#x20;
 
-
-### Supplier Group&#x20;
-
-This is where you can set up and look after your supplier groups.
+Aqui é onde você pode configurar e gerenciar os seus grupos de fornecedores.
 
 
 
-### User and Supplier Group Mapping
+### Mapeamento de Usuários e Grupos de Fornecedores
 
-This is where you can assign users and groups to their supplier group.
+Aqui é onde você pode atribuir usuários e grupos ao seu grupo de fornecedores.

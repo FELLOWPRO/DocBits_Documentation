@@ -1,12 +1,10 @@
-# Troubleshooting
+# Solução de Problemas
 
-(Conteúdo em inglês abaixo - Tradução pendente)
-
-## Here are solutions to common problems related to table column configurations:
+## Aqui estão soluções para problemas comuns relacionados a configurações de colunas de tabela:
 
 
 
-**Incorrect column configurations:**
+**Configurações de colunas incorretas:**
 
-* **Problem:** Data is not displayed or stored correctly, possibly due to incorrect data types, missing constraints, or insufficient column names.
-*   **Solution:**...
+* **Problema:** Os dados não são exibidos ou armazenados corretamente, possivelmente devido a tipos de dados incorretos, restrições ausentes ou nomes de colunas insuficientes.
+*   **Solução:**...

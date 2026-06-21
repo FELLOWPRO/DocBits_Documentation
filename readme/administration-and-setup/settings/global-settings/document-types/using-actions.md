@@ -1,11 +1,9 @@
-# Using Actions
+# Usando Ações
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+Aqui está um guia sobre como usar corretamente as ações "Copy" e "Delete" para um gerenciamento eficiente de subtipos:
 
-Here is a guide on how to properly use the "Copy" and "Delete" actions for efficient subtype management:
+## **Copiando um subtipo:**  &#x20;
 
-## **Copying a sub-type:**  &#x20;
-
-* Navigate to the sub-type management settings in your document management system.
-* Select the subtype you want to copy, click "Copy" and enter a new name for the copied subtype if necessary.
-* Confirm the action and the system will create a copy of the selected sub-type with all existing settings, fields, layouts and scripts....
+* Navegue até as configurações de gerenciamento de subtipos no seu sistema de gerenciamento de documentos.
+* Selecione o subtipo que deseja copiar, clique em "Copy" e insira um novo nome para o subtipo copiado, se necessário.
+* Confirme a ação e o sistema criará uma cópia do subtipo selecionado com todas as configurações, campos, layouts e scripts existentes....

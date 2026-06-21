@@ -1,9 +1,7 @@
-# Consumed PO Line Status
+# Status da Linha de PO Consumida
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+## **Visão geral**
 
-## **Overview**
+Esta configuração aprimora a tela de **Purchase Order Matching** aplicando um código de cores às linhas do PO. Ela fornece uma compreensão visual rápida do status de correspondência de cada linha.
 
-This setting enhances the **Purchase Order Matching** screen by applying color coding to PO lines. It provides a quick visual understanding of the matching status for each line.
-
-## Where to Activate...
+## Onde ativar...

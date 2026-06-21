@@ -1,10 +1,8 @@
-# Troubleshooting
+# Solução de Problemas
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+Estas são algumas dicas e etapas adicionais de solução de problemas de notificações atrasadas que você pode adotar para resolver atrasos na entrega de notificações:
 
-These are some tips and additional delayed notification troubleshooting steps you can take to resolve delays in notification delivery:
+## Notificações atrasadas:
 
-## Delayed notifications:
-
-* **Check network delays**:&#x20;
-* Make sure the network over which notifications are sent is not congested or disrupted. Network problems such as packet loss or delays can affect email delivery...
+* **Verifique atrasos de rede**:&#x20;
+* Certifique-se de que a rede pela qual as notificações são enviadas não esteja congestionada ou interrompida. Problemas de rede, como perda de pacotes ou atrasos, podem afetar a entrega de e-mails...

@@ -1,38 +1,35 @@
-# Identity Service Provider Configuration
+# Configuração do Identity Service Provider
 
-(Conteúdo em inglês abaixo - Tradução pendente)
-
-
-Configuring the Identity Service Provider (IdP) to integrate with DocBits requires a few specific steps.Here is a guide to doing that:
+Configurar o Identity Service Provider (IdP) para integrar com o DocBits requer algumas etapas específicas. Aqui está um guia para fazer isso:
 
 <figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
-**Accessing the IdP configuration interface**
+**Acessando a interface de configuração do IdP**
 
-* Log in to your Identity Service Provider (IdP) as an administrator.
-* Navigate to the settings or configuration interface dedicated to managing SAML integrations.
+* Faça login no seu Identity Service Provider (IdP) como administrador.
+* Navegue até as configurações ou a interface de configuração dedicada ao gerenciamento de integrações SAML.
 
-**Entering the Tenant ID:**
+**Inserindo o Tenant ID:**
 
-* Look for the section that allows configuration for new SAML integrations.
-* Enter the DocBits tenant ID. This ID identifies your Docbits account to the IdP and enables secure communication between the two systems.
+* Procure a seção que permite a configuração de novas integrações SAML.
+* Insira o tenant ID do DocBits. Este ID identifica a sua conta do DocBits para o IdP e permite a comunicação segura entre os dois sistemas.
 
-**Importing the required files:**
+**Importando os arquivos necessários:**
 
-* DocBits usually requires downloading metadata or adding specific configuration details. Check your IdP's documentation to see what steps are required.
-* Download the DocBits metadata file or import it into your IdP's configuration menu. Alternatively, you can manually enter the required configuration details, depending on what your IdP supports.
+* O DocBits geralmente requer o download de metadados ou a adição de detalhes de configuração específicos. Consulte a documentação do seu IdP para ver quais etapas são necessárias.
+* Baixe o arquivo de metadados do DocBits ou importe-o no menu de configuração do seu IdP. Como alternativa, você pode inserir manualmente os detalhes de configuração necessários, dependendo do que o seu IdP suporta.
 
-**Configure integration settings:**
+**Configurar as definições de integração:**
 
-* Make sure the integration settings, such as the SSO URL, Entity ID, and SAML certificate, are correct.
-* Check that the Single Log-Out (SLO) URL and other required parameters are configured correctly. These are critical for smooth authentication and logout via SAML.
+* Certifique-se de que as definições de integração, como a SSO URL, o Entity ID e o certificado SAML, estejam corretas.
+* Verifique se a URL de Single Log-Out (SLO) e os demais parâmetros necessários estão configurados corretamente. Eles são essenciais para uma autenticação e um logout tranquilos via SAML.
 
-**Verify configuration:**
+**Verificar a configuração:**
 
-* Take time to make sure all information entered is correct and that there are no typos or misconfigurations.
-* Run tests to ensure that users can successfully log into Docbits via SAML and that Single Log-Out is working properly.
+* Reserve um tempo para garantir que todas as informações inseridas estejam corretas e que não haja erros de digitação ou configurações incorretas.
+* Execute testes para garantir que os usuários consigam fazer login no DocBits via SAML com sucesso e que o Single Log-Out esteja funcionando corretamente.
 
-**Security considerations:**
+**Considerações de segurança:**
 
-* Make sure all transferred files and configuration details are handled securely to avoid data leaks or unauthorized access.
-* Protect sensitive information such as SAML certificates and credentials from unauthorized access and store them in a safe location.
+* Certifique-se de que todos os arquivos transferidos e os detalhes de configuração sejam tratados de forma segura para evitar vazamentos de dados ou acessos não autorizados.
+* Proteja informações sensíveis, como certificados SAML e credenciais, contra acesso não autorizado e armazene-as em um local seguro.

@@ -1,7 +1,5 @@
-# Best practices
+# Melhores práticas
 
-(Conteúdo em inglês abaixo - Tradução pendente)
+## As melhores práticas para organizar dados em tabelas ajudam a manter a estrutura do banco de dados clara, melhoram a integridade dos dados e otimizam o desempenho.
 
-## Best practices for organizing data in tables help keep the database structure clear, improve data integrity, and optimize performance.
-
-**Here are some best practices:**...
+**Aqui estão algumas melhores práticas:**...

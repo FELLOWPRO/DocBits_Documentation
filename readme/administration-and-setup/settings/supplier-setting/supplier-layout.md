@@ -1,9 +1,7 @@
-_Contenuto in inglese sotto - Traduzione in sospeso_
+# Layout fornitore
 
-# Supplier Layout
+<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Pagina Layout fornitore</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Supplier Layout Page</p></figcaption></figure>
+Qui decidi quali informazioni includere e definisci quali sono necessarie. Puoi progettare facilmente il tuo layout utilizzando le funzioni di trascinamento (drag-and-drop).
 
-This is where you decide what information you want to include and define what information is needed. You can easily design your layout using the drag-and-drop functions.
-
-You can use it to create layouts for supplier users and for supplier management.
+Puoi usarlo per creare layout per gli utenti fornitori e per la gestione dei fornitori.

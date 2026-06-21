@@ -1,18 +1,16 @@
-_Contenuto in inglese sotto - Traduzione in sospeso_
+# Migliori pratiche
 
-# Best practices
+Le migliori pratiche per configurare e mantenere le impostazioni di integrazione aiutano a garantire l'efficienza, la sicurezza e l'affidabilità dell'integrazione tra DocBits e il tuo provider di servizi di identità (IdP).&#x20;
 
-Best practices for configuring and maintaining integration settings help ensure the efficiency, security, and reliability of the integration between DocBits and your Identity Service Provider (IdP).&#x20;
+**Ecco alcune migliori pratiche:**&#x20;
 
-**Here are some best practices:**&#x20;
+* **Esamina regolarmente le impostazioni:** Esegui revisioni periodiche delle impostazioni di integrazione per assicurarti che tutte le configurazioni siano corrette e aggiornate. Le modifiche ai sistemi o alle policy possono richiedere l'aggiornamento dell'integrazione.&#x20;
+* **Aggiornamenti di certificati e metadati:** Monitora le date di scadenza dei certificati SAML e dei metadati e aggiornali tempestivamente per evitare interruzioni del servizio. Utilizza processi automatizzati o promemoria per assicurarti di non perdere alcuna data di scadenza.
+* **Gestione delle credenziali attenta alla sicurezza:** Tratta credenziali come chiavi API o certificati con la massima riservatezza e proteggili dagli accessi non autorizzati. Utilizza metodi sicuri per archiviare e scambiare le credenziali al fine di garantire l'integrità dell'integrazione.&#x20;
+* **Documentazione e registrazione delle modifiche:** Registra e documenta in dettaglio tutte le modifiche alle impostazioni di integrazione. Questo ti consente di tracciare le modifiche e di ripristinare configurazioni precedenti quando necessario.&#x20;
+* **Formazione degli amministratori:** Assicurati che gli amministratori responsabili della configurazione e della manutenzione delle impostazioni di integrazione abbiano le conoscenze e le competenze necessarie. Fornisci formazione e risorse per garantire che comprendano e possano implementare le migliori pratiche di integrazione.&#x20;
+* **Impostazione di avvisi e notifiche:** Configura avvisi e notifiche per eventi critici come le date di scadenza dei certificati o i tentativi di autenticazione falliti. Questo ti consentirà di identificare tempestivamente i potenziali problemi e di affrontarli in modo proattivo.
 
-* **Regularly review settings:** Perform regular reviews of integration settings to ensure all configurations are correct and up-to-date. Changes to systems or policies may require updates to the integration.&#x20;
-* **Certificate and metadata updates:** Monitor SAML certificate and metadata expiration dates and update them in a timely manner to avoid service disruptions. Use automated processes or reminders to ensure no expiration dates are missed.
-* **Security-conscious credential management:** Treat credentials such as API keys or certificates with the utmost confidentiality and protect them from unauthorized access. Use secure methods for storing and exchanging credentials to ensure the integrity of the integration.&#x20;
-* **Documentation and logging of changes:** Record and log all changes to integration settings in detailed documentation. This allows you to track changes and revert to previous configurations when needed.&#x20;
-* **Training administrators:** Ensure that the administrators responsible for configuring and maintaining integration settings have the necessary knowledge and skills. Provide training and resources to ensure they understand and can implement integration best practices.&#x20;
-* **Setting up alerts and notifications:** Configure alerts and notifications for critical events such as certificate expiration dates or failed authentication attempts. This will allow you to identify potential issues early and proactively address them.
-
-By following these best practices, you can ensure that the integration between DocBits and your identity service provider works smoothly, is secure, and meets the needs of your organization.
+Seguendo queste migliori pratiche, puoi garantire che l'integrazione tra DocBits e il tuo provider di servizi di identità funzioni senza intoppi, sia sicura e soddisfi le esigenze della tua organizzazione.
 
 

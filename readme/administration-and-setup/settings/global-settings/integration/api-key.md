@@ -1,27 +1,25 @@
-_Contenuto in inglese sotto - Traduzione in sospeso_
-
-# API Key
+# Chiave API
 
 <figure><img src="https://lh7-us.googleusercontent.com/ulCymk1gu-de14qTaFfJwTEmAUp7DY000A40P3nTgRIb7pYXolCbh_GPJvRib5haIH75dPFewY5tJQ0xNbGP3wdSOgCxu7gdVBwlvxkHFcP_3HM3R15zuuBOZM2jEdFxlp2CpV1VDfktmLFSSw4BuLs" alt=""><figcaption></figcaption></figure>
 
-### API Key
+### Chiave API
 
-* **Key:** This is the unique identifier used by external applications to access DocBits' API. It is crucial for authenticating requests made to DocBits from other software.
-* Actions such as view, regenerate, or copy the API key can be performed here, depending on the specific needs and security protocols.
+* **Chiave:** Questo è l'identificatore univoco utilizzato dalle applicazioni esterne per accedere all'API di DocBits. È fondamentale per autenticare le richieste effettuate a DocBits da altri software.
+* Da qui è possibile eseguire azioni come visualizzare, rigenerare o copiare la chiave API, a seconda delle esigenze specifiche e dei protocolli di sicurezza.
 
-### SSO (Single Sign-On) Service Provider Settings
+### Impostazioni del provider di servizi SSO (Single Sign-On)
 
-* **Entity ID:** This is the identifier for DocBits as a service provider in the SSO configuration. It uniquely identifies DocBits within the SSO framework.
-* **SLO (Single Logout) URL:** The URL to which SSO sessions are sent to log out simultaneously from all applications connected via SSO.
-* **SSO URL: The URL** used for initiating the single sign-on process.
-* Actions such as "Download Certificate" and "Download Metadata" are available for obtaining necessary security certificates and metadata information used in setting up and maintaining SSO integration.
+* **Entity ID:** Questo è l'identificatore di DocBits come provider di servizi nella configurazione SSO. Identifica DocBits in modo univoco all'interno del framework SSO.
+* **URL SLO (Single Logout):** L'URL a cui vengono inviate le sessioni SSO per disconnettersi contemporaneamente da tutte le applicazioni collegate tramite SSO.
+* **URL SSO: L'URL** utilizzato per avviare il processo di single sign-on.
+* Sono disponibili azioni come "Scarica certificato" e "Scarica metadati" per ottenere i certificati di sicurezza necessari e le informazioni sui metadati utilizzati nella configurazione e nella manutenzione dell'integrazione SSO.
 
 {% hint style="info" %}
-See Setup SSO
+Vedi Configurazione SSO
 {% endhint %}
 
-### Identity Service Provider Settings
+### Impostazioni del provider di servizi di identità
 
-* Tenant ID: This might be used when DocBits integrates with cloud services that require a tenant identifier to manage data and access configurations specific to the company using Docbits.
-* Upload file: Allows the admin to upload configuration files or other necessary files that facilitate integration with an identity provider.
-* Configure: A button to apply or update the settings after making changes or uploading new configurations.
+* Tenant ID: Potrebbe essere utilizzato quando DocBits si integra con servizi cloud che richiedono un identificatore tenant per gestire i dati e le configurazioni di accesso specifici dell'azienda che utilizza DocBits.
+* Carica file: Consente all'amministratore di caricare file di configurazione o altri file necessari che facilitano l'integrazione con un provider di identità.
+* Configura: Un pulsante per applicare o aggiornare le impostazioni dopo aver apportato modifiche o caricato nuove configurazioni.

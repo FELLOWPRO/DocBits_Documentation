@@ -1,19 +1,17 @@
-_Contenuto in inglese sotto - Traduzione in sospeso_
+# Permessi fornitore
 
-# Supplier Permissions
+### Gruppo fornitori
 
-### Supplier Group
+<figure><img src="../../../.gitbook/assets/supplier_group.png" alt="Supplier Group"><figcaption><p>Pagina Gruppo fornitori</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_group.png" alt="Supplier Group"><figcaption><p>Supplier Group Page</p></figcaption></figure>
+Gestisci i gruppi di fornitori per categorizzarli per tipo, area geografica o ruolo. Ogni gruppo ha un **Group API Name** (utilizzato per le integrazioni) e un **Group Name** (nome visualizzato).
 
-Manage supplier groups to categorize suppliers by type, region, or role. Each group has a **Group API Name** (used for integrations) and a **Group Name** (display name).
+Fai clic su **+ Nuovo** per creare un gruppo. Usa il menu a tre puntini su ciascuna riga per modificarlo o eliminarlo.
 
-Click **+ New** to create a group. Use the three-dot menu on each row to edit or delete.
+### Mappatura tra utenti e gruppi di fornitori
 
-### User and Supplier Group Mapping
+<figure><img src="../../../.gitbook/assets/user_supplier_group_mapping.png" alt="User and Supplier Group Mapping"><figcaption><p>Pagina Mappatura tra utenti e gruppi di fornitori</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/user_supplier_group_mapping.png" alt="User and Supplier Group Mapping"><figcaption><p>User and Supplier Group Mapping Page</p></figcaption></figure>
+Assegna gli utenti ai gruppi di fornitori per controllare quali dipendenti possono accedere e gestire specifici insiemi di fornitori. Ogni gruppo è mostrato come una sezione espandibile che elenca gli utenti assegnati con un conteggio dei membri.
 
-Assign users to supplier groups to control which employees can access and manage specific sets of suppliers. Each group is shown as an expandable section listing its assigned users with a member count.
-
-Click **+ New** within a group to add a user mapping. Use the three-dot menu to remove a mapping.
+Fai clic su **+ Nuovo** all'interno di un gruppo per aggiungere una mappatura utente. Usa il menu a tre puntini per rimuovere una mappatura.

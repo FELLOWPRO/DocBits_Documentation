@@ -1,93 +1,91 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
-
 ---
-description: Using DocBis with your Microsoft Login without using a (separate) password
+description: Korzystanie z DocBits przy użyciu logowania Microsoft bez (oddzielnego) hasła
 ---
 
 # Azure SSO
 
-### Create SAML SSO in Azure AD
+### Utwórz SAML SSO w Azure AD
 
-Perform the following steps to add SAML SSO in Azure AD:
+Wykonaj następujące kroki, aby dodać SAML SSO w Azure AD:
 
-*   In Azure, go to your \`Azure Active Directory\` console
+*   W Azure przejdź do konsoli \`Azure Active Directory\`
 
     ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_1.png)
-* In the left panel, click \`Enterprise applications\`
+* W panelu po lewej stronie kliknij \`Enterprise applications\`
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_2.png)
 
-* Click \`+ New application
+* Kliknij \`+ New application
 
 <figure><img src="../../../../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
-* Click \`+ Create your own application\`
+* Kliknij \`+ Create your own application\`
 
 <div align="left"><figure><img src="../../../../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure></div>
 
-* Enter a name for your application. Keep the remaining default selections.
+* Wprowadź nazwę swojej aplikacji. Pozostaw pozostałe ustawienia domyślne.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_5.png" alt=""><figcaption></figcaption></figure>
 
-* Click on \`Create\`
+* Kliknij \`Create\`
 
-### Assign Users to the SSO Configuration
+### Przypisz użytkowników do konfiguracji SSO
 
-Next, assign users or groups to the SSO configuration.
+Następnie przypisz użytkowników lub grupy do konfiguracji SSO.
 
-**Important**: You should already have created users and groups in Azure AD. If you don’t have any users or groups, create them now before proceeding.
+**Ważne**: Powinieneś mieć już utworzonych użytkowników i grupy w Azure AD. Jeśli nie masz żadnych użytkowników ani grup, utwórz je teraz, zanim przejdziesz dalej.
 
-* Under \`Getting Started\`, click \`Assign Users and Groups\`.
-* Click \`+ Add user\`
+* W sekcji \`Getting Started\` kliknij \`Assign Users and Groups\`.
+* Kliknij \`+ Add user\`
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_6.png" alt="" width="563"><figcaption></figcaption></figure>
 
-* Select the users and groups you want to assign to this SSO configuration. These users will be able to authenticated in DocBits (using SSO).
+* Wybierz użytkowników i grupy, które chcesz przypisać do tej konfiguracji SSO. Ci użytkownicy będą mogli uwierzytelniać się w DocBits (za pomocą SSO).
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_7.png" alt=""><figcaption></figcaption></figure>
 
-* Click \`Select\`
-* When you’re satisfied with your selection, click \`Assign\`
+* Kliknij \`Select\`
+* Gdy będziesz zadowolony ze swojego wyboru, kliknij \`Assign\`
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
 
 <div align="left"><figure><img src="../../../../../../.gitbook/assets/image (216) (1).png" alt=""><figcaption></figcaption></figure></div>
 
-* Go to the \`Groups\` view list and find the assigned groups.
+* Przejdź do listy widoku \`Groups\` i odszukaj przypisane grupy.
 
-### Set up SSO in Azure
+### Skonfiguruj SSO w Azure
 
-Next, you need to finish setting up single-sign-on in Azure.\\
+Następnie musisz dokończyć konfigurowanie logowania jednokrotnego w Azure.\\
 
-* In the left panel, click \`Single sign-on\`
+* W panelu po lewej stronie kliknij \`Single sign-on\`
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_10.png)
 
-* Click \`SAML\`
+* Kliknij \`SAML\`
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_11.png)
 
-* Click \`Upload metadata file\`
+* Kliknij \`Upload metadata file\`
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_12.png)
 
-* Upload the DocBits **metadata.xml**, which you can find in the Settings menu **Integration** under **SSO Service Provider Settings** of your DocBits account.
+* Prześlij plik **metadata.xml** DocBits, który znajdziesz w menu Ustawienia **Integracja** w sekcji **SSO Service Provider Settings** swojego konta DocBits.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_Metadata-1024x216.png" alt=""><figcaption></figcaption></figure>
 
-* Edit the \`Basic SAML Configuration\`
+* Edytuj \`Basic SAML Configuration\`
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.png" alt=""><figcaption></figcaption></figure>
 
-* Check if the \`Entity ID\`, \`ACS URL\`, \`Sign on URL\` and \`Logout URL\` are populated right.
+* Sprawdź, czy pola \`Entity ID\`, \`ACS URL\`, \`Sign on URL\` oraz \`Logout URL\` zostały poprawnie wypełnione.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_13.1.png" alt=""><figcaption></figcaption></figure>
 
-* Download the newly generated **Federation Metadata XML**.
+* Pobierz nowo wygenerowany plik **Federation Metadata XML**.
 
 <figure><img src="https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_14.png" alt=""><figcaption></figcaption></figure>
 
-* Upload the FederationMetadata.xml into the **Identity Service Provider Settings** of your DocBits account which you can find in the Settings menu **Integration**.
+* Prześlij plik FederationMetadata.xml do sekcji **Identity Service Provider Settings** swojego konta DocBits, którą znajdziesz w menu Ustawienia **Integracja**.
 
 \\
 

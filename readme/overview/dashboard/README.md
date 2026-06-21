@@ -1,12 +1,9 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
-
 ---
-description: DocBits Dashboard Guide
+description: Przewodnik po pulpicie DocBits
 ---
 
-# Dashboard
+# Pulpit
 
-After logging in with your credentials, you will be redirected to the DocBits Dashboard homepage. This is the main page where you can see and manage all your imported documents.
+Po zalogowaniu się przy użyciu swoich danych uwierzytelniających zostaniesz przekierowany na stronę główną pulpitu DocBits. Jest to główna strona, na której możesz przeglądać wszystkie zaimportowane dokumenty i nimi zarządzać.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-

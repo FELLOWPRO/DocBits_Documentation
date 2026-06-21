@@ -1,6 +1,3 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
+# Jak importować dokumenty
 
-# How to Import Documents
-
-A guide to uploading documents to DocBits.
-
+Przewodnik po przesyłaniu dokumentów do DocBits.

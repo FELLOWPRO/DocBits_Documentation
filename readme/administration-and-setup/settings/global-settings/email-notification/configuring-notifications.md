@@ -1,70 +1,68 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
-
-# Configuring Notifications
+# Konfigurowanie powiadomień
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 08.56.36.png" alt=""><figcaption></figcaption></figure>
 
-#### To get to email notification settings, follow these steps:
+#### Aby przejść do ustawień powiadomień e-mail, wykonaj następujące kroki:
 
-* Navigate to the Global Settings section in your user account or administration panel.
-* Look for the option for email notifications
-* Click the appropriate option to open email notification settings.
+* Przejdź do sekcji Ustawienia globalne na swoim koncie użytkownika lub w panelu administracyjnym.
+* Wyszukaj opcję powiadomień e-mail
+* Kliknij odpowiednią opcję, aby otworzyć ustawienia powiadomień e-mail.
 
-Within these settings you can then make the desired configurations to ensure you receive notifications according to your preferences. Remember to adjust the settings based on your needs and ensure they comply with your organization's privacy policy and security standards.
+W ramach tych ustawień możesz następnie wprowadzić żądane konfiguracje, aby otrzymywać powiadomienia zgodnie ze swoimi preferencjami. Pamiętaj, aby dostosować ustawienia do swoich potrzeb i upewnić się, że są zgodne z polityką prywatności oraz standardami bezpieczeństwa Twojej organizacji.
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 10.15.45.png" alt=""><figcaption></figcaption></figure>
 
-**Create new notification:**
+**Utwórz nowe powiadomienie:**
 
-* Click the button to add or create a new notification.
+* Kliknij przycisk, aby dodać lub utworzyć nowe powiadomienie.
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 01.28.41.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### Key Features and Options
+#### Najważniejsze funkcje i opcje
 
-1. **Email Notification Configuration**:
+1. **Konfiguracja powiadomień e-mail**:
 
-* **Name**: Enter the name here
-* The identifier for the notification, helping users recognize the purpose of the notification setting.
+* **Nazwa**: Wpisz tutaj nazwę
+* Identyfikator powiadomienia, który pomaga użytkownikom rozpoznać przeznaczenie danego ustawienia powiadomienia.
 
 <figure><img src="../../../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Document Type**: Select the document type you want to receive a notification for. This could be adding a new document, deleting a document, updating a document, or other relevant events.
-* Associates the notification with a specific document type, allowing for targeted alerts based on the document's processing cycle.
+* **Typ dokumentu**: Wybierz typ dokumentu, dla którego chcesz otrzymywać powiadomienie. Może to być dodanie nowego dokumentu, usunięcie dokumentu, aktualizacja dokumentu lub inne istotne zdarzenia.
+* Powiązuje powiadomienie z określonym typem dokumentu, umożliwiając ukierunkowane alerty oparte na cyklu przetwarzania dokumentu.
 
 <figure><img src="../../../../.gitbook/assets/image (41) (1).png" alt="" width="264"><figcaption></figcaption></figure>
 
-*   **Select email template**: Choose a preconfigured template from the dropdown menu. Templates can be created or modified in [Email Templates settings](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md).\\
+*   **Wybierz szablon wiadomości e-mail**: Wybierz wstępnie skonfigurowany szablon z menu rozwijanego. Szablony można tworzyć lub modyfikować w [ustawieniach Szablonów wiadomości e-mail](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md).\\
 
     <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-* **Status**: Specify the status or condition that should trigger a notification when it changes. This could be a specific workflow status, an approval status, an error status, or any other relevant status.
+* **Status**: Określ status lub warunek, którego zmiana powinna wyzwolić powiadomienie. Może to być konkretny status przepływu pracy, status zatwierdzenia, status błędu lub inny istotny status.
 
 <figure><img src="../../../../.gitbook/assets/image (43) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Priority**: select the appropriate priority. For example, this could be "Low", "Medium" or "High".
-* Sets the urgency level of the notification, which can prioritize the email alert in the recipient's inbox.
+* **Priorytet**: wybierz odpowiedni priorytet. Może to być na przykład „Niski”, „Średni” lub „Wysoki”.
+* Ustawia poziom pilności powiadomienia, co może nadać priorytet alertowi e-mail w skrzynce odbiorczej adresata.
 
 <figure><img src="../../../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Delay**: Enter the desired amount of time to specify the delay time before sending the notification. This could be done in minutes, hours or days depending on your system settings.
-* By configuring a delay time before sending the notification, users have enough time for any cancellations or corrections before the alert is issued. This can help prevent errors and improve user experience.
+* **Opóźnienie**: Wprowadź żądaną ilość czasu, aby określić czas opóźnienia przed wysłaniem powiadomienia. Może być to liczone w minutach, godzinach lub dniach, w zależności od ustawień systemu.
+* Dzięki skonfigurowaniu czasu opóźnienia przed wysłaniem powiadomienia użytkownicy mają wystarczająco dużo czasu na ewentualne anulowanie lub poprawki, zanim alert zostanie wysłany. Może to pomóc w zapobieganiu błędom i poprawić komfort użytkowania.
 
 <figure><img src="../../../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Repeat Option:** You can also enable a setting to **repeat the notification** at regular intervals **until the document status changes**. This ensures that important notifications are not missed and remain visible until the required action is taken.
+* **Opcja powtarzania:** Możesz również włączyć ustawienie **powtarzania powiadomienia** w regularnych odstępach czasu **do momentu zmiany statusu dokumentu**. Dzięki temu ważne powiadomienia nie zostaną przeoczone i pozostaną widoczne, dopóki nie zostanie podjęte wymagane działanie.
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Email Address**: Enter the email addresses of the recipients to whom the notification should be sent. Users can enter multiple email addresses to specify multiple recipients. This could mean that notifications are sent to specific email addresses based on the properties of the document in question or the user's role.
+* **Adres e-mail**: Wprowadź adresy e-mail odbiorców, do których ma zostać wysłane powiadomienie. Użytkownicy mogą wprowadzić wiele adresów e-mail, aby wskazać wielu odbiorców. Może to oznaczać, że powiadomienia są wysyłane na określone adresy e-mail na podstawie właściwości danego dokumentu lub roli użytkownika.
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Actionable Insights**:
+**Praktyczne wskazówki**:
 
-* **Send Email to Assigned User/Group**: An optional setting that, when enabled, automatically sends notifications to the user assigned to the document, ensuring that the responsible party is always informed.
+* **Wyślij wiadomość e-mail do przypisanego użytkownika/grupy**: Opcjonalne ustawienie, które po włączeniu automatycznie wysyła powiadomienia do użytkownika przypisanego do dokumentu, zapewniając, że osoba odpowiedzialna jest zawsze poinformowana.
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Save:** After entering all the required information, click "Save" button to save the notification settings.
+* **Zapisz:** Po wprowadzeniu wszystkich wymaganych informacji kliknij przycisk „Zapisz”, aby zapisać ustawienia powiadomienia.

@@ -1,38 +1,35 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
+# Rozwiązywanie problemów
 
-# Troubleshooting
+Oto kilka wskazówek oraz dodatkowych kroków rozwiązywania problemów z opóźnionymi powiadomieniami, które możesz podjąć, aby wyeliminować opóźnienia w dostarczaniu powiadomień:
 
-These are some tips and additional delayed notification troubleshooting steps you can take to resolve delays in notification delivery:
+## Opóźnione powiadomienia:
 
-## Delayed notifications:
-
-* **Check network delays**:&#x20;
-* Make sure the network over which notifications are sent is not congested or disrupted. Network problems such as packet loss or delays can affect email delivery.
+* **Sprawdź opóźnienia sieciowe**:&#x20;
+* Upewnij się, że sieć, przez którą wysyłane są powiadomienia, nie jest przeciążona ani zakłócona. Problemy sieciowe, takie jak utrata pakietów lub opóźnienia, mogą wpływać na dostarczanie wiadomości e-mail.
 
 
 
-* **Email Queue Monitoring:**&#x20;
-* Check the email server queue to determine whether notifications are being queued and sent properly. A large number of emails in the queue may indicate problems with the email server.
+* **Monitorowanie kolejki wiadomości e-mail:**&#x20;
+* Sprawdź kolejkę serwera poczty, aby ustalić, czy powiadomienia są poprawnie kolejkowane i wysyłane. Duża liczba wiadomości e-mail w kolejce może wskazywać na problemy z serwerem poczty.
 
 
 
-* **SMTP configuration verification:**
-* &#x20;Verify that the SMTP configuration is correct and that the email server is properly configured to send outgoing emails. Check the authentication settings and server address to ensure they are correct.
+* **Weryfikacja konfiguracji SMTP:**
+* &#x20;Sprawdź, czy konfiguracja SMTP jest poprawna i czy serwer poczty jest prawidłowo skonfigurowany do wysyłania wiadomości wychodzących. Zweryfikuj ustawienia uwierzytelniania oraz adres serwera, aby upewnić się, że są poprawne.
 
 
 
-* **Check firewalls and security settings:**&#x20;
-* Check firewall settings and other security settings to ensure that the email server is properly configured to send outgoing email and that no ports used for email are blocked. Shipping is required.
+* **Sprawdź zapory sieciowe i ustawienia zabezpieczeń:**&#x20;
+* Sprawdź ustawienia zapory sieciowej oraz inne ustawienia zabezpieczeń, aby upewnić się, że serwer poczty jest prawidłowo skonfigurowany do wysyłania wiadomości wychodzących i że żadne porty wykorzystywane do obsługi poczty nie są zablokowane. Jest to wymagane do wysyłania.
 
 
 
-* **Server utilization check:**&#x20;
-* Check the utilization of the server hosting the document management system to ensure that there are no resource bottlenecks that could affect the delivery of notifications.
+* **Sprawdzenie obciążenia serwera:**&#x20;
+* Sprawdź obciążenie serwera, na którym działa system zarządzania dokumentami, aby upewnić się, że nie występują wąskie gardła zasobów, które mogłyby wpływać na dostarczanie powiadomień.
 
 
 
-By performing these additional checks, you can identify potential causes of delayed notifications and take appropriate action to optimize notification delivery and ensure users are informed in a timely manner.
+Wykonując te dodatkowe kontrole, możesz zidentyfikować potencjalne przyczyny opóźnionych powiadomień i podjąć odpowiednie działania, aby zoptymalizować ich dostarczanie oraz zapewnić użytkownikom terminowe informowanie.
 
 \
-
 

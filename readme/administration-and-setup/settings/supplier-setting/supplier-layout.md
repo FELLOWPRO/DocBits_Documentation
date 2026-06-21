@@ -1,9 +1,7 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
+# Układ dostawcy
 
-# Supplier Layout
+<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Strona układu dostawcy</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Supplier Layout Page</p></figcaption></figure>
+W tym miejscu decydujesz, jakie informacje chcesz uwzględnić, oraz określasz, które informacje są wymagane. Możesz łatwo zaprojektować swój układ za pomocą funkcji „przeciągnij i upuść”.
 
-This is where you decide what information you want to include and define what information is needed. You can easily design your layout using the drag-and-drop functions.
-
-You can use it to create layouts for supplier users and for supplier management.
+Możesz wykorzystać tę funkcję do tworzenia układów zarówno dla użytkowników będących dostawcami, jak i na potrzeby zarządzania dostawcami.

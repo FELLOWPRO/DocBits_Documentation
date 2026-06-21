@@ -1,22 +1,19 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
+# Wsparcie techniczne w DocBits
 
-# Technical Support in DocBits
+### Wsparcie techniczne w DocBits <a href="#hy7z6t7p8psl" id="hy7z6t7p8psl"></a>
 
-### Technical Support in DocBits <a href="#hy7z6t7p8psl" id="hy7z6t7p8psl"></a>
+### **Ikony pomocy** <a href="#gvm1kp4bwvnd" id="gvm1kp4bwvnd"></a>
 
-### **Help Icons** <a href="#gvm1kp4bwvnd" id="gvm1kp4bwvnd"></a>
+Ikony pomocy zostały umieszczone w całym DocBits, aby pomóc Ci w nauce i zrozumieniu, co dana funkcja faktycznie robi i jak może pomóc Ci w przetwarzaniu dokumentów.
 
-Help icons have been placed all around DocBits in order to assist you in learning and understanding what a feature really does and how it can assist you with your document processing.
+Te ikony pomocy wyglądają następująco
 
-These help icons look as follows
+### **Utwórz zgłoszenie** <a href="#id-2mb0mw2kxioz" id="id-2mb0mw2kxioz"></a>
 
-### **Create a Ticket** <a href="#id-2mb0mw2kxioz" id="id-2mb0mw2kxioz"></a>
+To narzędzie jest dostępne na ekranie walidacji na wypadek wystąpienia jakiegoś problemu podczas walidacji dokumentu w DocBits.
 
-This is a tool available to you, on the validation screen, in the event of some sort of issue occurring when validating your document in DocBits.
+Ta funkcja znajduje się w menu nad obszarem podglądu dokumentu, jak pokazano poniżej
 
-This feature is located in the menu above the document preview area, like below
+Po kliknięciu zostanie wyświetlony następujący formularz zgłoszenia.
 
-Once clicked, the following ticket form will be displayed to you.
-
-This is where you will fill in your details as well as describe the error. You can also ,if applicable, attach a screenshot of the issue and attach a relevant file.
-
+W tym miejscu wprowadzisz swoje dane oraz opiszesz błąd. Możesz również, jeśli ma to zastosowanie, dołączyć zrzut ekranu problemu oraz załączyć odpowiedni plik.

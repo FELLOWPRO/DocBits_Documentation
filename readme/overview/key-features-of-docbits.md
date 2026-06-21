@@ -1,12 +1,9 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
+# Kluczowe funkcje DocBits
 
-# Key Features of DocBits
+DocBits to oparte na chmurze rozwiązanie do przechwytywania dokumentów, które wykorzystuje moc sztucznej inteligencji (AI) oraz uczenia maszynowego (ML) do skutecznego rozpoznawania, klasyfikowania, analizowania i wyodrębniania informacji z różnych typów dokumentów, niezależnie od ich formatu. Oto bliższe spojrzenie na jego kluczowe funkcje:
 
-DocBits is a cloud-based document capture solution that harnesses the power of Artificial Intelligence (AI) and Machine Learning (ML) to effectively recognize, classify, analyze, and extract information from various types of documents, regardless of their format. Here’s a closer look at its key features:
-
-* Document Recognition_:_ DocBits employs AI algorithms to accurately identify and recognize documents, whether they are in paper form or electronic files.
-* Document Classification: It classifies documents into relevant categories, facilitating easy organization and retrieval.
-* Data Extraction: DocBits extracts critical data from documents, transforming unstructured information into structured data that can be integrated into your workflow.
-* Machine Learning: The system continually learns and improves its recognition accuracy with each processed document, making it more proficient over time.
-* Swarm Intelligence: DocBits utilizes swarm intelligence to enhance its learning capabilities, creating a self-improving system.
-
+* Rozpoznawanie dokumentów_:_ DocBits wykorzystuje algorytmy AI do dokładnego identyfikowania i rozpoznawania dokumentów, niezależnie od tego, czy mają one postać papierową, czy plików elektronicznych.
+* Klasyfikacja dokumentów: Klasyfikuje dokumenty do odpowiednich kategorii, ułatwiając łatwe porządkowanie i wyszukiwanie.
+* Wyodrębnianie danych: DocBits wyodrębnia z dokumentów kluczowe dane, przekształcając nieustrukturyzowane informacje w dane ustrukturyzowane, które można zintegrować z Twoim przepływem pracy.
+* Uczenie maszynowe: System nieustannie się uczy i poprawia dokładność rozpoznawania z każdym przetworzonym dokumentem, stając się z czasem coraz sprawniejszy.
+* Inteligencja rojowa: DocBits wykorzystuje inteligencję rojową, aby zwiększać swoje zdolności uczenia się, tworząc system, który samodzielnie się doskonali.

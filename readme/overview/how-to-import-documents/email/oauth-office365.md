@@ -1,36 +1,34 @@
-_Treść w języku angielskim poniżej - Tłumaczenie oczekujące_
-
 # OAuth Office365
 
-Here you just need to enter your desired sub organization and press ‘Authenticate’
+Tutaj wystarczy, że wprowadzisz wybraną podorganizację i naciśniesz „Authenticate”
 
 ![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
 
-You will be taken to this Microsoft page and you will need to enter a code.
+Zostaniesz przeniesiony na tę stronę Microsoft i będziesz musiał wprowadzić kod.
 
 ![](https://lh7-us.googleusercontent.com/Q76mIMXr5bWCrcu\_6TOKDrh6yQIMESIrFvEcfvqg7mJp-K\_4ES2e5ekPY4Ghhwxym-uRKz\_QVCHyqk2u5onyoCCmg7fMbt3mnIUyCrc8XT4jBGn9ueEYij3DRg1-oODWHd-vDfM9FfbU3omF6RJJKsE)
 
-This code can be found by clicking back to DocBits and the code will be displayed there like below, simply copy the code and enter it into the Microsoft page. Thereafter you will need to enter your own Microsoft credentials.
+Ten kod możesz znaleźć, wracając do DocBits — kod zostanie tam wyświetlony, jak pokazano poniżej; po prostu skopiuj go i wprowadź na stronie Microsoft. Następnie będziesz musiał wprowadzić własne dane uwierzytelniające Microsoft.
 
 ![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
 
-Press the FINISH AUTHENTICATION button and you will be taken to this menu
+Naciśnij przycisk FINISH AUTHENTICATION, a zostaniesz przeniesiony do tego menu
 
 ![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl\_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
 
-**Use Folder**
+**Użyj folderu**
 
-If you are using a folder other than your inbox, enter the folder name after enabling the slider.
+Jeśli korzystasz z folderu innego niż skrzynka odbiorcza, po włączeniu przełącznika wprowadź nazwę folderu.
 
-**Use Shared Mailbox**
+**Użyj współdzielonej skrzynki pocztowej**
 
-If you want the email import to access an inbox or a folder of a shared mailbox, input the email address here after enabling the slider.
+Jeśli chcesz, aby import poczty miał dostęp do skrzynki odbiorczej lub folderu współdzielonej skrzynki pocztowej, po włączeniu przełącznika wprowadź tutaj adres e-mail.
 
-**Move imported emails to trash**
+**Przenieś zaimportowane wiadomości e-mail do kosza**
 
-If you want to import all emails, not just the unread ones, and have them moved to trash then activate this. If not, it will only check for unread emails, import the documents, set the email to read and leave it in its current place.
+Jeśli chcesz importować wszystkie wiadomości e-mail, nie tylko nieprzeczytane, i przenosić je do kosza, włącz tę opcję. W przeciwnym razie system będzie sprawdzał tylko nieprzeczytane wiadomości e-mail, importował dokumenty, oznaczał wiadomość jako przeczytaną i pozostawiał ją w bieżącym miejscu.
 
-In the event of you receiving an error message indicating you do not have the rights to establish such a connection, someone with admin rights within Azure would need to authorize this connection. For more information, visit the following page: https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps
+Jeśli otrzymasz komunikat o błędzie informujący, że nie masz uprawnień do nawiązania takiego połączenia, ktoś z uprawnieniami administratora w Azure musiałby autoryzować to połączenie. Aby uzyskać więcej informacji, odwiedź następującą stronę: https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps
 
 \
 

@@ -1,9 +1,7 @@
-_Contenu en anglais ci-dessous - Traduction en attente_
+# Mise en page fournisseur
 
-# Supplier Layout
+<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Page de mise en page fournisseur</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Supplier Layout Page</p></figcaption></figure>
+C'est ici que vous décidez quelles informations vous souhaitez inclure et que vous définissez les informations requises. Vous pouvez facilement concevoir votre mise en page à l'aide des fonctions de glisser-déposer.
 
-This is where you decide what information you want to include and define what information is needed. You can easily design your layout using the drag-and-drop functions.
-
-You can use it to create layouts for supplier users and for supplier management.
+Vous pouvez l'utiliser pour créer des mises en page destinées aux utilisateurs fournisseurs et à la gestion des fournisseurs.

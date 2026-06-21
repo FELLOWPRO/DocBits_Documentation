@@ -1,38 +1,35 @@
-_Contenu en anglais ci-dessous - Traduction en attente_
+# Dépannage
 
-# Troubleshooting
+Voici quelques conseils et étapes supplémentaires de dépannage des notifications retardées que vous pouvez suivre pour résoudre les retards de livraison des notifications :
 
-These are some tips and additional delayed notification troubleshooting steps you can take to resolve delays in notification delivery:
+## Notifications retardées :
 
-## Delayed notifications:
-
-* **Check network delays**:&#x20;
-* Make sure the network over which notifications are sent is not congested or disrupted. Network problems such as packet loss or delays can affect email delivery.
+* **Vérifier les retards réseau :**&#x20;
+* Assurez-vous que le réseau sur lequel les notifications sont envoyées n'est ni congestionné ni perturbé. Les problèmes réseau tels que la perte de paquets ou les retards peuvent affecter la livraison des e-mails.
 
 
 
-* **Email Queue Monitoring:**&#x20;
-* Check the email server queue to determine whether notifications are being queued and sent properly. A large number of emails in the queue may indicate problems with the email server.
+* **Surveillance de la file d'attente des e-mails :**&#x20;
+* Vérifiez la file d'attente du serveur de messagerie pour déterminer si les notifications sont mises en file d'attente et envoyées correctement. Un grand nombre d'e-mails dans la file d'attente peut indiquer des problèmes avec le serveur de messagerie.
 
 
 
-* **SMTP configuration verification:**
-* &#x20;Verify that the SMTP configuration is correct and that the email server is properly configured to send outgoing emails. Check the authentication settings and server address to ensure they are correct.
+* **Vérification de la configuration SMTP :**
+* &#x20;Vérifiez que la configuration SMTP est correcte et que le serveur de messagerie est correctement configuré pour envoyer des e-mails sortants. Contrôlez les paramètres d'authentification et l'adresse du serveur pour vous assurer qu'ils sont corrects.
 
 
 
-* **Check firewalls and security settings:**&#x20;
-* Check firewall settings and other security settings to ensure that the email server is properly configured to send outgoing email and that no ports used for email are blocked. Shipping is required.
+* **Vérifier les pare-feux et les paramètres de sécurité :**&#x20;
+* Vérifiez les paramètres du pare-feu et les autres paramètres de sécurité pour vous assurer que le serveur de messagerie est correctement configuré pour envoyer des e-mails sortants et qu'aucun port utilisé pour les e-mails n'est bloqué. L'envoi est requis.
 
 
 
-* **Server utilization check:**&#x20;
-* Check the utilization of the server hosting the document management system to ensure that there are no resource bottlenecks that could affect the delivery of notifications.
+* **Vérification de l'utilisation du serveur :**&#x20;
+* Vérifiez l'utilisation du serveur hébergeant le système de gestion documentaire pour vous assurer qu'il n'existe aucun goulot d'étranglement de ressources susceptible d'affecter la livraison des notifications.
 
 
 
-By performing these additional checks, you can identify potential causes of delayed notifications and take appropriate action to optimize notification delivery and ensure users are informed in a timely manner.
+En effectuant ces vérifications supplémentaires, vous pouvez identifier les causes potentielles des notifications retardées et prendre les mesures appropriées pour optimiser la livraison des notifications et garantir que les utilisateurs sont informés en temps voulu.
 
 \
-
 

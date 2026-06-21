@@ -1,28 +1,26 @@
-_Contenu en anglais ci-dessous - Traduction en attente_
+# Configuration d'export pour le portail fournisseur
 
-# Export Configuration for Supplier Portal
+<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Supplier Export Configuration"><figcaption><p>Page de configuration d'export fournisseur</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Supplier Export Configuration"><figcaption><p>Supplier Export Configuration Page</p></figcaption></figure>
+## Vue d'ensemble
 
-## Overview
+Le fichier de configuration d'export est un composant essentiel du portail fournisseur ; il définit la manière dont les données sont mappées entre le portail fournisseur et le système ERP. Cette configuration garantit que les données sont transférées et synchronisées avec précision entre les systèmes, permettant des opérations fluides et efficaces.
 
-The export configuration file is a crucial component in the supplier portal, defining how data is mapped between the supplier portal and the ERP system. This configuration ensures that data is accurately transferred and synchronized across systems, enabling smooth and efficient operations.
+## Structure du fichier de configuration
 
-## Structure of the Configuration File
+Le fichier de configuration d'export est structuré sous la forme d'un objet JSON contenant plusieurs mappages. Chaque mappage est associé à un programme spécifique du système ERP et définit les actions à effectuer, les champs à mapper ainsi que les conditions éventuelles à appliquer.
 
-The export configuration file is structured as a JSON object that contains multiple mappings. Each mapping is associated with a specific program in the ERP system and defines the actions to be performed, the fields to be mapped, and any conditions to be applied.
+## Composants clés
 
-## Key Components
+### 1. Programme
 
-### 1. Program
-
-* **Definition**: Specifies the ERP program that the mapping applies to.
-* **Example**: `"program": "CRS620MI"`
+* **Définition** : Spécifie le programme ERP auquel s'applique le mappage.
+* **Exemple** : `"program": "CRS620MI"`
 
 ### 2. Actions
 
-* **Definition**: Defines the actions that can be performed, such as adding or updating records.
-*   **Example**:
+* **Définition** : Définit les actions qui peuvent être effectuées, telles que l'ajout ou la mise à jour d'enregistrements.
+*   **Exemple** :
 
     ```json
     "actions": {
@@ -31,21 +29,21 @@ The export configuration file is structured as a JSON object that contains multi
     }
     ```
 
-### 3. Mapping
+### 3. Mappage
 
-• Definition: Specifies the mapping between fields in the ERP system and fields in the supplier portal.
+• Définition : Spécifie le mappage entre les champs du système ERP et les champs du portail fournisseur.
 
-• Components:
+• Composants :
 
-• erp\_field\_name: The field name in the ERP system.
+• erp\_field\_name : Le nom du champ dans le système ERP.
 
-• value\_field\_name: The corresponding field name in the supplier portal.
+• value\_field\_name : Le nom de champ correspondant dans le portail fournisseur.
 
-• value: A static value to be used if no corresponding field exists in the supplier portal.
+• value : Une valeur statique à utiliser si aucun champ correspondant n'existe dans le portail fournisseur.
 
-• if\_conditions: Optional conditions that determine the value based on certain criteria.
+• if\_conditions : Conditions facultatives qui déterminent la valeur selon certains critères.
 
-• Example:
+• Exemple :
 
 ```json
 {
@@ -54,19 +52,19 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-### 4. Conditional Logic (if\_conditions)
+### 4. Logique conditionnelle (if\_conditions)
 
-• Definition: Specifies conditions that must be met for a particular value to be used.
+• Définition : Spécifie les conditions qui doivent être remplies pour qu'une valeur particulière soit utilisée.
 
-• Components:
+• Composants :
 
-• field\_name: The field name in the supplier portal that is evaluated.
+• field\_name : Le nom du champ dans le portail fournisseur qui est évalué.
 
-• field\_value: The value that triggers the condition.
+• field\_value : La valeur qui déclenche la condition.
 
-• then\_value: The value to use if the condition is met.
+• then\_value : La valeur à utiliser si la condition est remplie.
 
-• Example:
+• Exemple :
 
 ```json
 {
@@ -80,21 +78,21 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-### 5. Loops (loop\_on)
+### 5. Boucles (loop\_on)
 
-• Definition: Defines the sections where the configuration should iterate over a list of items, such as address or reference details.
+• Définition : Définit les sections où la configuration doit itérer sur une liste d'éléments, comme les détails d'adresse ou de référence.
 
-• Example:
+• Exemple :
 
 ```json
 "loop_on": "address_details"
 ```
 
-### 6. Calculated Fields (value\_field\_calculated)
+### 6. Champs calculés (value\_field\_calculated)
 
-• Definition: Specifies fields that should be calculated at runtime, such as generating the current date.
+• Définition : Spécifie les champs qui doivent être calculés au moment de l'exécution, comme la génération de la date actuelle.
 
-• Example:
+• Exemple :
 
 ```json
 {
@@ -103,17 +101,17 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-### 7. Field Mappings with Lists (mapping\_field\_name and mapping\_list)
+### 7. Mappages de champs avec listes (mapping\_field\_name et mapping\_list)
 
-• Definition: Maps specific values from the supplier portal to corresponding values in the ERP system based on a predefined list.
+• Définition : Mappe des valeurs spécifiques du portail fournisseur vers les valeurs correspondantes du système ERP en fonction d'une liste prédéfinie.
 
-• Components:
+• Composants :
 
-• mapping\_field\_name: The field that determines the mapping.
+• mapping\_field\_name : Le champ qui détermine le mappage.
 
-• mapping\_list: A dictionary that translates values from the supplier portal to the ERP system.
+• mapping\_list : Un dictionnaire qui traduit les valeurs du portail fournisseur vers le système ERP.
 
-• Example:
+• Exemple :
 
 ```json
 {
@@ -130,19 +128,19 @@ The export configuration file is structured as a JSON object that contains multi
 }
 ```
 
-## Example Configuration Breakdown
+## Détail d'un exemple de configuration
 
-### Supplier Addition and Update (CRS620MI)
+### Ajout et mise à jour de fournisseur (CRS620MI)
 
-• Program: CRS620MI
+• Programme : CRS620MI
 
-• Actions:
+• Actions :
 
-• Add Supplier: AddSupplier
+• Ajouter un fournisseur : AddSupplier
 
-• Update Supplier: UpdSupplier
+• Mettre à jour un fournisseur : UpdSupplier
 
-• Mapping Fields:
+• Champs de mappage :
 
 • SUNO → supplier\_number
 
@@ -152,19 +150,19 @@ The export configuration file is structured as a JSON object that contains multi
 
 • TINO → tax\_id
 
-• Additional fields include static values and conditional mappings.
+• Les champs supplémentaires incluent des valeurs statiques et des mappages conditionnels.
 
-### Address Details (CRS620MI)
+### Détails d'adresse (CRS620MI)
 
-• Loop On: _**address\_details**_
+• Boucle sur : _**address\_details**_
 
-• Actions:
+• Actions :
 
-• Add Address: AddAddress
+• Ajouter une adresse : AddAddress
 
-• Update Address: AddAddress
+• Mettre à jour une adresse : AddAddress
 
-• Mapping Fields:
+• Champs de mappage :
 
 • SUNO → supplier\_number
 
@@ -172,55 +170,55 @@ The export configuration file is structured as a JSON object that contains multi
 
 • TOWN → city
 
-• Additional fields include calculated fields like now() for the current date.
+• Les champs supplémentaires incluent des champs calculés comme now() pour la date actuelle.
 
-### Reference Details (CRS620MI)
+### Détails de référence (CRS620MI)
 
-• Loop On: _**reference\_details**_
+• Boucle sur : _**reference\_details**_
 
-• Actions:
+• Actions :
 
-• Add Supplier Reference: AddSupplierRef
+• Ajouter une référence fournisseur : AddSupplierRef
 
-• Update Supplier Reference: AddSupplierRef
+• Mettre à jour une référence fournisseur : AddSupplierRef
 
-• Mapping Fields:
+• Champs de mappage :
 
 • SUNO → supplier\_number
 
 • RFTY → reference\_type
 
-• RFID is mapped using a list to translate types like “PURCHASING”, “QA”, and “FINANCE”.
+• RFID est mappé à l'aide d'une liste pour traduire des types tels que « PURCHASING », « QA » et « FINANCE ».
 
-## Using the Export Configuration
+## Utilisation de la configuration d'export
 
-### 1. Uploading the Configuration File
+### 1. Téléversement du fichier de configuration
 
-#### 1. Navigate to Export Configuration:
+#### 1. Accéder à la configuration d'export :
 
-• Go to the Export Configuration section from the main menu.
+• Accédez à la section Configuration d'export depuis le menu principal.
 
-#### 2. Upload the Configuration File:
+#### 2. Téléverser le fichier de configuration :
 
-• Click on the ION-Mapping File or IDM Mapping File sections to upload the respective configuration file.
+• Cliquez sur les sections Fichier de mappage ION ou Fichier de mappage IDM pour téléverser le fichier de configuration correspondant.
 
-#### 3. Save the Configuration:
+#### 3. Enregistrer la configuration :
 
-• After uploading, click the Save button to apply the configuration.
+• Après le téléversement, cliquez sur le bouton Enregistrer pour appliquer la configuration.
 
-### 2. Using Default Templates
+### 2. Utilisation des modèles par défaut
 
-• Click on the Use Default Template button if you wish to revert to the default configuration template provided by the system.
+• Cliquez sur le bouton Utiliser le modèle par défaut si vous souhaitez revenir au modèle de configuration par défaut fourni par le système.
 
-### 3. Formatting the JSON
+### 3. Formatage du JSON
 
-• Use the Format button to automatically format the JSON code for better readability.
+• Utilisez le bouton Formater pour formater automatiquement le code JSON afin d'en améliorer la lisibilité.
 
 ## Conclusion
 
-This configuration file is essential for ensuring that data between the supplier portal and the ERP system is correctly mapped and synchronized. By understanding the structure and key components, administrators can effectively manage and customize the export process to meet their specific business requirements.
+Ce fichier de configuration est essentiel pour garantir que les données entre le portail fournisseur et le système ERP sont correctement mappées et synchronisées. En comprenant la structure et les composants clés, les administrateurs peuvent gérer et personnaliser efficacement le processus d'export afin de répondre à leurs exigences métier spécifiques.
 
-## Full Example&#x20;
+## Exemple complet&#x20;
 
 ```json
 [{

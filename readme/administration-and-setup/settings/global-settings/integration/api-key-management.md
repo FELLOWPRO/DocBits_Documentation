@@ -1,31 +1,28 @@
-_Contenu en anglais ci-dessous - Traduction en attente_
-
 ---
-description: Instructions for viewing, copying or regenerating the API key
+description: Instructions pour afficher, copier ou régénérer la clé API
 ---
 
-# API Key Management
+# Gestion des clés API
 
-API key management is an important aspect when it comes to the security of integrations and access to external services through APIs. Here are some steps to manage API keys and best practices for their security:
+La gestion des clés API est un aspect important pour la sécurité des intégrations et l'accès aux services externes via les API. Voici quelques étapes pour gérer les clés API ainsi que les bonnes pratiques pour leur sécurité :
 
-**View and copy the API key:**
+**Afficher et copier la clé API :**
 
-* Navigate to the API key settings in your DocBits account. Here you can find the API key, click "Copy" to copy the key.
+* Accédez aux paramètres de la clé API dans votre compte DocBits. Vous y trouverez la clé API ; cliquez sur « Copier » pour copier la clé.
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 16.18.04.png" alt=""><figcaption></figcaption></figure>
 
-**Handling API keys with security in mind:**
+**Manipuler les clés API en gardant la sécurité à l'esprit :**
 
-* Treat API keys like sensitive credentials and never share them with anyone. Store API keys securely and use encryption if you need to store them locally. Update API keys regularly to ensure security and minimize the risk of unauthorized access. Avoid using API keys in public repositories or unsecured environments as they could potentially be intercepted by attackers.
+* Traitez les clés API comme des identifiants sensibles et ne les partagez jamais avec quiconque. Stockez les clés API de manière sécurisée et utilisez le chiffrement si vous devez les stocker localement. Mettez régulièrement à jour les clés API pour garantir la sécurité et minimiser le risque d'accès non autorisé. Évitez d'utiliser des clés API dans des dépôts publics ou des environnements non sécurisés, car elles pourraient être interceptées par des attaquants.
 
-**Limit API key permissions:**
+**Limiter les autorisations des clés API :**
 
-* Give API keys only the permissions required for the specific integration or service. Avoid excessive permissions to minimize the risk of abuse. Regularly review API key permissions and remove unnecessary permissions when they are no longer needed.
+* N'accordez aux clés API que les autorisations requises pour l'intégration ou le service spécifique. Évitez les autorisations excessives afin de minimiser le risque d'abus. Examinez régulièrement les autorisations des clés API et supprimez les autorisations inutiles lorsqu'elles ne sont plus nécessaires.
 
-**Logging and monitoring API calls:**
+**Journalisation et surveillance des appels API :**
 
-* Implement logging and monitoring of API calls to detect suspicious activity or unusual patterns that could indicate potential security breaches. Respond quickly to suspicious activity and, if necessary, revoke affected API keys to minimize the risk of further damage.
+* Mettez en place la journalisation et la surveillance des appels API afin de détecter les activités suspectes ou les schémas inhabituels qui pourraient indiquer d'éventuelles failles de sécurité. Réagissez rapidement aux activités suspectes et, si nécessaire, révoquez les clés API concernées pour minimiser le risque de dommages supplémentaires.
 
-By carefully managing and securing API keys, organizations can ensure that their integrations and access to external services via APIs are protected and the risk of unauthorized access is minimized.
-
+En gérant et en sécurisant soigneusement les clés API, les organisations peuvent garantir que leurs intégrations et leur accès aux services externes via les API sont protégés et que le risque d'accès non autorisé est minimisé.
 

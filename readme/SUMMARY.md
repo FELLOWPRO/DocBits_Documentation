@@ -435,6 +435,7 @@
     * [Contabilità Automatica](administration-and-setup/setup/testing/auto-accounting/README.md)
       * [LN](administration-and-setup/setup/testing/auto-accounting/ln.md)
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)
+  * [Supplier Portal](administration-and-setup/setup/supplier-portal/README.md)
   * [Portale fornitori](administration-and-setup/setup/supplier-portal.md)
     * [Registrazione Fornitore](administration-and-setup/setup/supplier-portal/supplier-registration.md)
   * [WatchDog](administration-and-setup/setup/watchdog/README.md)

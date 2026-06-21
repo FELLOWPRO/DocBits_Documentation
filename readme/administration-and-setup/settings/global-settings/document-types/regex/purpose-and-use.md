@@ -1,7 +1,5 @@
-# Purpose and use
+# Objectif et utilisation
 
-(Contenu en anglais ci-dessous - Traduction en attente)
+Regex, abréviation de « Regular Expressions » (expressions régulières), est une méthode extrêmement puissante de reconnaissance de motifs dans les textes. Elle vous permet de rechercher des chaînes ou des motifs spécifiques au sein des textes, offrant un haut niveau de flexibilité et de précision.&#x20;
 
-Regex, short for "Regular Expressions", is an extremely powerful method for pattern recognition in texts. It allows you to search for specific strings or patterns within texts, offering a high level of flexibility and precision.&#x20;
-
-**In terms of data extraction from structured text formats such as documents, Regex plays a crucial role for several reasons:**...
+**En matière d'extraction de données à partir de formats de texte structurés tels que les documents, Regex joue un rôle crucial pour plusieurs raisons :**...

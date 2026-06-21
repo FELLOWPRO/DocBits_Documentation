@@ -1,17 +1,14 @@
-# Configuring Notifications
-
-(Contenu en anglais ci-dessous - Traduction en attente)
-
+# Configurer les notifications
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 08.56.36.png" alt=""><figcaption></figcaption></figure>
 
-#### To get to email notification settings, follow these steps:
+#### Pour accéder aux paramètres des notifications par e-mail, suivez ces étapes :
 
-* Navigate to the Global Settings section in your user account or administration panel.
-* Look for the option for email notifications
-* Click the appropriate option to open email notification settings.
+* Accédez à la section Paramètres globaux dans votre compte utilisateur ou votre panneau d'administration.
+* Recherchez l'option pour les notifications par e-mail
+* Cliquez sur l'option appropriée pour ouvrir les paramètres des notifications par e-mail.
 
-Within these settings you can then make the desired configurations to ensure you receive notifications according to your preferences. Remember to adjust the settings based on your needs and ensure they comply with your organization's privacy policy and security standards.
+Dans ces paramètres, vous pouvez ensuite effectuer les configurations souhaitées pour vous assurer de recevoir les notifications selon vos préférences. N'oubliez pas d'ajuster les paramètres en fonction de vos besoins et de veiller à ce qu'ils respectent la politique de confidentialité et les normes de sécurité de votre organisation.
 
 {% embed url="https://youtu.be/R5IrCpiP__4" %}
 {% endembed %}
@@ -19,57 +16,57 @@ Within these settings you can then make the desired configurations to ensure you
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 10.15.45.png" alt=""><figcaption></figcaption></figure>
 
-**Create new notification:**
+**Créer une nouvelle notification :**
 
-* Click the button to add or create a new notification.
+* Cliquez sur le bouton pour ajouter ou créer une nouvelle notification.
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 01.28.41.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### Key Features and Options
+#### Principales fonctionnalités et options
 
-1. **Email Notification Configuration**:
+1. **Configuration de la notification par e-mail** :
 
-* **Name**: Enter the name here
-* The identifier for the notification, helping users recognize the purpose of the notification setting.
+* **Nom** : Saisissez le nom ici
+* L'identifiant de la notification, qui aide les utilisateurs à reconnaître l'objectif du paramètre de notification.
 
 <figure><img src="../../../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Document Type**: Select the document type you want to receive a notification for. This could be adding a new document, deleting a document, updating a document, or other relevant events.
-* Associates the notification with a specific document type, allowing for targeted alerts based on the document's processing cycle.
+* **Type de document** : Sélectionnez le type de document pour lequel vous souhaitez recevoir une notification. Il peut s'agir de l'ajout d'un nouveau document, de la suppression d'un document, de la mise à jour d'un document ou d'autres événements pertinents.
+* Associe la notification à un type de document spécifique, permettant des alertes ciblées en fonction du cycle de traitement du document.
 
 <figure><img src="../../../../.gitbook/assets/image (41) (1).png" alt="" width="264"><figcaption></figcaption></figure>
 
-*   **Select email template**: Choose a preconfigured template from the dropdown menu. Templates can be created or modified in [Email Templates settings](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md).\\
+*   **Sélectionner le modèle d'e-mail** : Choisissez un modèle préconfiguré dans le menu déroulant. Les modèles peuvent être créés ou modifiés dans les [paramètres des modèles d'e-mail](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md).\\
 
     <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-* **Status**: Specify the status or condition that should trigger a notification when it changes. This could be a specific workflow status, an approval status, an error status, or any other relevant status.
+* **Statut** : Indiquez le statut ou la condition qui doit déclencher une notification lorsqu'il change. Il peut s'agir d'un statut de flux de travail spécifique, d'un statut d'approbation, d'un statut d'erreur ou de tout autre statut pertinent.
 
 <figure><img src="../../../../.gitbook/assets/image (43) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Priority**: select the appropriate priority. For example, this could be "Low", "Medium" or "High".
-* Sets the urgency level of the notification, which can prioritize the email alert in the recipient's inbox.
+* **Priorité** : sélectionnez la priorité appropriée. Par exemple, il peut s'agir de « Basse », « Moyenne » ou « Haute ».
+* Définit le niveau d'urgence de la notification, ce qui peut prioriser l'alerte par e-mail dans la boîte de réception du destinataire.
 
 <figure><img src="../../../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Delay**: Enter the desired amount of time to specify the delay time before sending the notification. This could be done in minutes, hours or days depending on your system settings.
-* By configuring a delay time before sending the notification, users have enough time for any cancellations or corrections before the alert is issued. This can help prevent errors and improve user experience.
+* **Délai** : Saisissez la durée souhaitée pour spécifier le délai avant l'envoi de la notification. Cela peut se faire en minutes, en heures ou en jours selon les paramètres de votre système.
+* En configurant un délai avant l'envoi de la notification, les utilisateurs disposent de suffisamment de temps pour d'éventuelles annulations ou corrections avant l'émission de l'alerte. Cela peut aider à prévenir les erreurs et à améliorer l'expérience utilisateur.
 
 <figure><img src="../../../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Repeat Option:** You can also enable a setting to **repeat the notification** at regular intervals **until the document status changes**. This ensures that important notifications are not missed and remain visible until the required action is taken.
+* **Option de répétition :** Vous pouvez également activer un paramètre pour **répéter la notification** à intervalles réguliers **jusqu'à ce que le statut du document change**. Cela garantit que les notifications importantes ne sont pas manquées et restent visibles jusqu'à ce que l'action requise soit effectuée.
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Email Address**: Enter the email addresses of the recipients to whom the notification should be sent. Users can enter multiple email addresses to specify multiple recipients. This could mean that notifications are sent to specific email addresses based on the properties of the document in question or the user's role.
+* **Adresse e-mail** : Saisissez les adresses e-mail des destinataires auxquels la notification doit être envoyée. Les utilisateurs peuvent saisir plusieurs adresses e-mail pour spécifier plusieurs destinataires. Cela peut signifier que les notifications sont envoyées à des adresses e-mail spécifiques en fonction des propriétés du document concerné ou du rôle de l'utilisateur.
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Actionable Insights**:
+**Informations exploitables** :
 
-* **Send Email to Assigned User/Group**: An optional setting that, when enabled, automatically sends notifications to the user assigned to the document, ensuring that the responsible party is always informed.
+* **Envoyer un e-mail à l'utilisateur/au groupe assigné** : Un paramètre facultatif qui, lorsqu'il est activé, envoie automatiquement des notifications à l'utilisateur assigné au document, garantissant que la partie responsable est toujours informée.
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Save:** After entering all the required information, click "Save" button to save the notification settings.
+* **Enregistrer :** Après avoir saisi toutes les informations requises, cliquez sur le bouton « Enregistrer » pour sauvegarder les paramètres de notification.

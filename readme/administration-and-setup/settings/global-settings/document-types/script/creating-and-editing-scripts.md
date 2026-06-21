@@ -1,13 +1,11 @@
-# Creating and Editing Scripts
+# Créer et modifier des scripts
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
 {% endembed %}
 
-(Contenu en anglais ci-dessous - Traduction en attente)
+## Pour créer un nouveau script dans DocBits, suivez ces instructions détaillées :
 
-## To create a new script in DocBits, follow these detailed instructions:
+**Choisissez le langage de script :**
 
-**Choose the scripting language:**
-
-First, you need to choose the scripting language you want to use. DocBits typically supports common scripting languages ​​such as Python, JavaScript, or SQL. The choice of language depends on the needs of your project and your own competency....
+Tout d'abord, vous devez choisir le langage de script que vous souhaitez utiliser. DocBits prend généralement en charge les langages de script courants tels que Python, JavaScript ou SQL. Le choix du langage dépend des besoins de votre projet et de vos propres compétences....

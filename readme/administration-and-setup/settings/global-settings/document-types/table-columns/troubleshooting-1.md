@@ -1,58 +1,55 @@
-# Troubleshooting
+# Dépannage
 
-(Contenu en anglais ci-dessous - Traduction en attente)
-
-
-## Here are solutions to common problems related to table column configurations:
+## Voici des solutions aux problèmes courants liés aux configurations des colonnes de table :
 
 
 
-**Incorrect column configurations:**
+**Configurations de colonnes incorrectes :**
 
-* **Problem:** Data is not displayed or stored correctly, possibly due to incorrect data types, missing constraints, or insufficient column names.
-*   **Solution:**
+* **Problème :** Les données ne s'affichent pas ou ne sont pas stockées correctement, possiblement en raison de types de données incorrects, de contraintes manquantes ou de noms de colonnes insuffisants.
+*   **Solution :**
 
-    Review the column configurations in the database table and make sure the data types are appropriate for each column.
+    Examinez les configurations des colonnes dans la table de la base de données et assurez-vous que les types de données conviennent à chaque colonne.
 
-    Add missing constraints such as NOT NULL or UNIQUE to improve data integrity.
+    Ajoutez les contraintes manquantes telles que NOT NULL ou UNIQUE pour améliorer l'intégrité des données.
 
-    Rename columns to use more meaningful and unique names that accurately describe the column's contents.
-
-
-
-**Problems caused by deleted columns:**
-
-* **Problem:** After deleting a column from a table, problems occur because reports, queries, or application logic still reference that column.
-*   **Solution:**
-
-    Review all reports, queries, and application logic to make sure there are no more references to the deleted column.
-
-    Update all affected reports, queries, and application logic to reflect or remove the deleted column. If necessary, temporarily restore the deleted column and migrate the data to a new structure before permanently deleting it.
+    Renommez les colonnes pour utiliser des noms plus explicites et uniques qui décrivent précisément le contenu de la colonne.
 
 
 
-**Missing or inconsistent data:**
+**Problèmes causés par des colonnes supprimées :**
 
-* **Problem:** Data is incomplete or inconsistent due to missing required fields or incorrect data types.
-*   **Solution:**&#x20;
+* **Problème :** Après la suppression d'une colonne d'une table, des problèmes surviennent car des rapports, des requêtes ou la logique applicative font toujours référence à cette colonne.
+*   **Solution :**
 
-    Review the table structure and make sure all required fields are marked NOT NULL to ensure that important data is not missing.
+    Examinez tous les rapports, requêtes et la logique applicative pour vous assurer qu'il n'existe plus de références à la colonne supprimée.
 
-    Perform data cleanup to correct inconsistent or invalid data and update data types if necessary to improve consistency.
-
-
-
-**Performance issues due to missing indexes:**
-
-* **Problem:** Queries on large tables are slow because important columns are not indexed.
-*   **Solution:**&#x20;
-
-    Identify the most frequently queried columns and add indexes to improve query performance.
-
-    Be aware that too many indexes can also affect write and update performance, so balanced indexing is important.
+    Mettez à jour tous les rapports, requêtes et la logique applicative concernés pour refléter ou supprimer la colonne supprimée. Si nécessaire, restaurez temporairement la colonne supprimée et migrez les données vers une nouvelle structure avant de la supprimer définitivement.
 
 
 
-By applying these solutions, you can resolve common table column-related issues and improve the efficiency, consistency, and performance of your database.
+**Données manquantes ou incohérentes :**
+
+* **Problème :** Les données sont incomplètes ou incohérentes en raison de champs obligatoires manquants ou de types de données incorrects.
+*   **Solution :**&#x20;
+
+    Examinez la structure de la table et assurez-vous que tous les champs obligatoires sont marqués NOT NULL pour garantir qu'aucune donnée importante ne manque.
+
+    Effectuez un nettoyage des données pour corriger les données incohérentes ou invalides et mettez à jour les types de données si nécessaire pour améliorer la cohérence.
+
+
+
+**Problèmes de performance dus à des index manquants :**
+
+* **Problème :** Les requêtes sur de grandes tables sont lentes car des colonnes importantes ne sont pas indexées.
+*   **Solution :**&#x20;
+
+    Identifiez les colonnes les plus fréquemment interrogées et ajoutez des index pour améliorer la performance des requêtes.
+
+    Sachez que trop d'index peuvent également affecter les performances d'écriture et de mise à jour ; un indexage équilibré est donc important.
+
+
+
+En appliquant ces solutions, vous pouvez résoudre les problèmes courants liés aux colonnes de table et améliorer l'efficacité, la cohérence et la performance de votre base de données.
 
 

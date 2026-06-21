@@ -1,38 +1,35 @@
-# Managing Notifications
+# Gérer les notifications
 
-(Contenu en anglais ci-dessous - Traduction en attente)
+Pour modifier, désactiver ou supprimer des notifications existantes et les adapter aux changements des flux de traitement des documents ou des responsabilités des utilisateurs, vous pouvez procéder comme suit :
 
-
-To edit, disable, or delete existing notifications and adapt them to changes in document processing workflows or user responsibilities, you can do the following:
-
-**Navigate to notification settings:** Go to your system's settings where you can manage notifications. You can find these in the “Settings” section, “Global Settings” and then under “Email notification”.
+**Accédez aux paramètres de notification :** Rendez-vous dans les paramètres de votre système où vous pouvez gérer les notifications. Vous les trouverez dans la section « Paramètres », « Paramètres globaux », puis sous « Notification par e-mail ».
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Look for the list of existing notifications:** In the notification settings you will find a list of existing notifications. This list shows you all notifications that are currently set up.
+**Recherchez la liste des notifications existantes :** Dans les paramètres de notification, vous trouverez une liste des notifications existantes. Cette liste vous montre toutes les notifications actuellement configurées.
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Edit a notification:** To edit an existing notification, find the notification in the list and select the edit option. This allows you to change the notification settings, such as the document type, status, triggering events or recipients.
+**Modifier une notification :** Pour modifier une notification existante, recherchez la notification dans la liste et sélectionnez l'option de modification. Cela vous permet de modifier les paramètres de la notification, tels que le type de document, le statut, les événements déclencheurs ou les destinataires.
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="192"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Turn off a notification:** If you want to temporarily turn off a notification, find the notification in the list and select the option to turn it off. This will temporarily stop the notification without deleting it, so you can reactivate it later if necessary.
+**Désactiver une notification :** Si vous souhaitez désactiver temporairement une notification, recherchez la notification dans la liste et sélectionnez l'option pour la désactiver. Cela arrêtera temporairement la notification sans la supprimer, ce qui vous permet de la réactiver ultérieurement si nécessaire.
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="116"><figcaption></figcaption></figure>
 
-**Delete a notification:** To permanently remove a notification, find the notification in the list and select the delete option. This will completely remove the notification from the system and cannot be restored.
+**Supprimer une notification :** Pour supprimer définitivement une notification, recherchez la notification dans la liste et sélectionnez l'option de suppression. Cela supprimera complètement la notification du système et elle ne pourra pas être restaurée.
 
 <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="106"><figcaption></figcaption></figure>
 
-**Adapt to Changes:** Periodically review your notification settings and adjust as necessary to reflect changes in document processing workflows or user responsibilities. This could include updating notifications due to new events, changed responsibilities, or other organizational changes.
+**Adaptez-vous aux changements :** Examinez périodiquement vos paramètres de notification et ajustez-les si nécessaire pour refléter les changements des flux de traitement des documents ou des responsabilités des utilisateurs. Cela peut inclure la mise à jour des notifications en raison de nouveaux événements, de responsabilités modifiées ou d'autres changements organisationnels.
 
-**Save the changes:** After making your changes, don't forget to save them for them to take effect.
+**Enregistrez les modifications :** Après avoir effectué vos modifications, n'oubliez pas de les enregistrer pour qu'elles prennent effet.
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" width="150"><figcaption></figcaption></figure>
 
-By regularly reviewing and adjusting your notification settings, you can ensure that your notifications always meet current needs and workflows. This helps ensure efficient communication and ensures that the right people are notified of important events in a timely manner.
+En examinant et en ajustant régulièrement vos paramètres de notification, vous pouvez vous assurer que vos notifications répondent toujours aux besoins et flux de travail actuels. Cela contribue à garantir une communication efficace et à ce que les bonnes personnes soient informées des événements importants en temps opportun.

@@ -1,11 +1,9 @@
-# Testing the model
+# Tester le modèle
 
-(Contenu en anglais ci-dessous - Traduction en attente)
+## Étapes pour exécuter des tests de classification afin d'évaluer la précision et l'état de préparation opérationnelle du modèle
 
-## Steps to run classification tests to evaluate the accuracy and operational readiness of the model
-
-To test the trained model and evaluate its accuracy and operational readiness, you can follow the steps below:
+Pour tester le modèle entraîné et évaluer sa précision et son état de préparation opérationnelle, vous pouvez suivre les étapes ci-dessous :
 
 
 
-**Preparing the test data:**&#x20;...
+**Préparation des données de test :**&#x20;...

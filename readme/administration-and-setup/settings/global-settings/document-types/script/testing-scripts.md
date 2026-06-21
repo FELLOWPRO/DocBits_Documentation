@@ -1,9 +1,7 @@
-# Testing Scripts
+# Tester les scripts
 
-(Contenu en anglais ci-dessous - Traduction en attente)
+## Tester minutieusement les scripts dans un environnement contrôlé est essentiel avant de les déployer dans un flux de traitement de documents en production. Voici quelques raisons pour lesquelles c'est important.
 
-## Testing scripts thoroughly in a controlled environment is critical before deploying them to a live document processing workflow. Here are a few reasons why it's important.
+### Prévention des erreurs :
 
-### Error Prevention:
-
-* Scripts can contain errors, whether due to syntax errors, logic errors, or unforeseen edge cases.&#x20;...
+* Les scripts peuvent contenir des erreurs, qu'il s'agisse d'erreurs de syntaxe, d'erreurs de logique ou de cas limites imprévus.&#x20;...

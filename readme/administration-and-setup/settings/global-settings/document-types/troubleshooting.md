@@ -1,128 +1,125 @@
-# Troubleshooting
+# Dépannage
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
 DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
 {% endembed %}
 
-(Contenu en anglais ci-dessous - Traduction en attente)
+## Le dépannage de la configuration des types de documents dans DocBits peut être complexe, car divers facteurs peuvent affecter la reconnaissance et l'extraction des données.&#x20;
 
+### Voici quelques conseils généraux de dépannage qui peuvent aider à identifier et résoudre les problèmes courants :
 
-## Troubleshooting document type configuration in DocBits can be complex because various factors can affect data recognition and extraction.&#x20;
+### Vérifier la configuration de la mise en page&#x20;
 
-### Here are some general troubleshooting tips that can help identify and resolve common issues:
+**Vérifier la cohérence :**&#x20;
 
-### Check layout configuration&#x20;
+* Assurez-vous que tous les documents de ce type ont une mise en page cohérente. Les variations de mise en page peuvent affecter la reconnaissance.
 
-**Check consistency:**&#x20;
+**Vérifier les zones et les régions :**&#x20;
 
-* Make sure all documents of the type have a consistent layout. Variations in layout can affect recognition.
+* Vérifiez que les zones et régions définies sont positionnées correctement et couvrent les informations pertinentes.
 
-**Check zones and areas:**&#x20;
+**Mettre à jour les modèles :**&#x20;
 
-* Check that the defined zones and areas are positioned correctly and cover the relevant information.
+* Si la mise en page des documents change, mettez à jour les modèles en conséquence.
 
-**Update templates:**&#x20;
+### Vérifier les définitions de champs et les métadonnées&#x20;
 
-* If the layout of the documents changes, update the templates accordingly.
+**Noms de champs et types de données :**&#x20;
 
-### Check field definitions and metadata&#x20;
+* Assurez-vous que les noms de champs sont corrects et que les types de données sont correctement définis.
 
-**Field names and data types:**&#x20;
+**Règles de formatage :**&#x20;
 
-* Make sure field names are correct and data types are properly defined.
+* Vérifiez que les règles de formatage des champs sont correctes et correspondent aux données réelles.
 
-**Formatting guidelines:**&#x20;
+**Vérifier les champs obligatoires :**&#x20;
 
-* Check that the formatting guidelines for the fields are correct and match the actual data.
+* Assurez-vous que tous les champs obligatoires sont correctement reconnus et renseignés.
 
-**Check required fields:**&#x20;
+### Ajuster les modèles regex et les règles d'extraction&#x20;
 
-* Make sure all required fields are correctly recognized and filled in.
+**Tester les modèles regex :**&#x20;
 
-### Adjust regex patterns and extraction rules&#x20;
+* Utilisez un outil regex pour tester les modèles et vous assurer qu'ils capturent correctement les données souhaitées.
 
-**Test regex patterns:**&#x20;
+**Augmenter la spécificité :**&#x20;
 
-* Use a regex tool to test the patterns and make sure they capture the desired data correctly.
+* Ajustez les modèles regex pour qu'ils soient plus spécifiques et éviter les interprétations erronées.
 
-**Increase specificity:**&#x20;
+**Vérifier les points d'ancrage :**&#x20;
 
-* Adjust the regex patterns to be more specific and avoid misinterpretation.
+* Assurez-vous que les points d'ancrage de l'extraction des données sont correctement définis. Si le modèle ne fonctionne pas correctement, vérifiez si des caractères spéciaux ou des formats différents doivent être pris en compte.
 
-**Check anchor points:**&#x20;
+### Ajuster les règles de validation&#x20;
 
-* Make sure the anchor points for data extraction are set correctly. If the pattern is not working correctly, check if special characters or different formats need to be considered.
+**Analyser les messages d'erreur :**&#x20;
 
-### Adjust validation rules&#x20;
+* Examinez les messages d'erreur et les fichiers journaux à la recherche d'indices de validations incorrectes.
 
-**Analyze error messages:**&#x20;
+**Affiner les règles :**&#x20;
 
-* Examine the error messages and log files for evidence of incorrect validations.
+* Ajustez les règles de validation pour les rendre plus souples ou plus strictes si nécessaire.
 
-**Refine rules:**&#x20;
+**Validation en plusieurs étapes :**&#x20;
 
-* Adjust the validation rules to make them more flexible or stricter if necessary.
+* Mettez en place des étapes de validation supplémentaires pour améliorer la qualité des données.
 
-**Multi-step validation:**&#x20;
+### Améliorer les données d'entraînement et les modèles&#x20;
 
-* Implement additional validation steps to improve data quality.
+**Collecter des données représentatives :**&#x20;
 
-### Improve training data and models&#x20;
+* Assurez-vous que les données d'entraînement couvrent un large éventail d'exemples reflétant toutes les variations possibles.
 
-**Collect representative data:**&#x20;
+**Réentraîner les modèles :**&#x20;
 
-* Make sure the training data covers a wide range of examples that reflect all possible variations.
+* Réentraînez régulièrement les modèles, en particulier lorsque de nouvelles variantes de documents sont ajoutées.
 
-**Retrain models:**&#x20;
+**Boucles de rétroaction :**&#x20;
 
-* Retrain the models regularly, especially when new document variants are added.
+* Utilisez des boucles de rétroaction pour améliorer continuellement les modèles.
 
-**Feedback loops:**&#x20;
+### Vérifier les flux de travail d'automatisation &#x20;
 
-* Use feedback loops to continuously improve the models.
+**Vérifier les étapes du flux de travail :**&#x20;
 
-### Review automation workflows &#x20;
+* Vérifiez chaque étape du flux de travail pour vous assurer que les données sont traitées et acheminées correctement.
 
-**Review workflow steps:**&#x20;
+**Analyser les journaux :**&#x20;
 
-* Review each step in the workflow to ensure that the data is processed and routed correctly.
+* Analysez les journaux du flux de travail pour identifier et résoudre les sources d'erreurs.
 
-**Analyze logs:**&#x20;
+**Recueillir les retours des utilisateurs :**&#x20;
 
-* Analyze the workflow logs to identify and resolve sources of errors.
+* Interrogez les utilisateurs sur leurs expériences et problèmes avec les flux de travail afin d'identifier les points faibles potentiels.
 
-**Collect user feedback:**&#x20;
+### Vérifier les droits des utilisateurs et le contrôle d'accès&#x20;
 
-* Ask users about their experiences and issues with the workflows to identify potential weak points.
+**Vérifier les droits d'accès :**&#x20;
 
-### Review user rights and access control&#x20;
+* Assurez-vous que les bons utilisateurs ont accès aux types de documents et champs pertinents.
 
-**Review access rights:**&#x20;
+**Suivre les modifications :**&#x20;
 
-* Make sure the right users have access to the relevant document types and fields.
+* Vérifiez si des modifications récentes des droits d'accès ont pu affecter le traitement des documents.
 
-**Track changes:**&#x20;
+**Vérification régulière :**&#x20;
 
-* Check whether recent changes in access rights may have affected document processing.
+* Effectuez des vérifications régulières des droits d'accès pour vous assurer que tout est correctement configuré.
 
-**Regular review:**&#x20;
+### Conseils généraux de dépannage&#x20;
 
-* Perform regular access rights reviews to ensure everything is configured correctly.
+**Consulter la documentation :**&#x20;
 
-### General troubleshooting tips&#x20;
+* Utilisez la documentation système de DocBits et les ressources de support pour trouver des solutions aux problèmes.
 
-**Consult documentation:**&#x20;
+**Assurer une formation :**&#x20;
 
-* Use DocBits system documentation and support resources to find solutions to problems.
+* Assurez-vous que tous les utilisateurs sont suffisamment formés pour éviter les erreurs courantes.
 
-**Provide training:**&#x20;
+**Mises à jour et correctifs :**&#x20;
 
-* Make sure all users are adequately trained to avoid common errors.
-
-**Updates and patches:**&#x20;
-
-* Keep the system up to date by regularly applying updates and patches that contain bug fixes and improvements.
+* Maintenez le système à jour en appliquant régulièrement les mises à jour et correctifs qui contiennent des corrections de bogues et des améliorations.
 
 
 
-Troubleshooting document type configuration requires a systematic approach and careful review of all aspects of the configuration. By applying the tips above, you can identify and fix common problems to improve the accuracy and efficiency of document processing in DocBits.
+Le dépannage de la configuration des types de documents nécessite une approche systématique et une vérification minutieuse de tous les aspects de la configuration. En appliquant les conseils ci-dessus, vous pouvez identifier et corriger les problèmes courants afin d'améliorer la précision et l'efficacité du traitement des documents dans DocBits.

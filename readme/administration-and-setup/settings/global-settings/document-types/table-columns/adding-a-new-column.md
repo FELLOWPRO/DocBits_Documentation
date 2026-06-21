@@ -1,68 +1,65 @@
-# Adding a new Column
+# Ajouter une nouvelle colonne
 
-(Contenu en anglais ci-dessous - Traduction en attente)
-
-
-## Adding a new column to an existing table requires careful planning and execution to ensure that data integrity is maintained and application requirements are met.
+## L'ajout d'une nouvelle colonne à une table existante nécessite une planification et une exécution rigoureuses afin de garantir le maintien de l'intégrité des données et le respect des exigences de l'application.
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Settings: Document Types</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.49.21.png" alt=""><figcaption><p>Table Columns</p></figcaption></figure>
 
-**Here are detailed steps to add a new column:**
+**Voici les étapes détaillées pour ajouter une nouvelle colonne :**
 
 <figure><img src="../../../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
-**Requirements analysis:**
+**Analyse des besoins :**
 
-* Review your application's requirements and identify the purpose of the new column. What type of data will be stored? How will this column be used in the application?
+* Examinez les exigences de votre application et identifiez l'objectif de la nouvelle colonne. Quel type de données y sera stocké ? Comment cette colonne sera-t-elle utilisée dans l'application ?
 
 <figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="375"><figcaption><p>Add new table column</p></figcaption></figure>
 
-**Choosing the right column type:**
+**Choix du type de colonne approprié :**
 
-* Choose the most appropriate column type based on the data that will be stored in the column. This can be AMOUNT for amount, STRING for strings, DATE for dates, etc.
-* Choosing the right column type is important to ensure data integrity and use storage space efficiently.
+* Choisissez le type de colonne le plus approprié en fonction des données qui seront stockées dans la colonne. Il peut s'agir de AMOUNT pour les montants, STRING pour les chaînes de caractères, DATE pour les dates, etc.
+* Choisir le bon type de colonne est important pour garantir l'intégrité des données et utiliser efficacement l'espace de stockage.
 
 <figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Choosing the right table:**
+**Choix de la bonne table :**
 
-* To select the correct column type in a particular table, such as the invoice table, it is important to consider the specific requirements of the data to be stored in that table.
+* Pour sélectionner le type de colonne correct dans une table particulière, telle que la table des factures, il est important de tenir compte des exigences spécifiques des données à stocker dans cette table.
 
 <figure><img src="../../../../../.gitbook/assets/image (98).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
-**Deciding on column necessity:**
+**Décision sur la nécessité de la colonne :**
 
-* Consider whether the new column is required or whether it should allow NULL values. If the column is mandatory, it should be marked as NOT NULL to ensure that important data is not missing.
-* Also consider whether the column may become a required field for your application in the future.
-
-
-
-**Database backup:**
-
-* Before adding the new column, make a backup of your database to ensure that you have a working version to fall back on in case of any issues.&#x20;
+* Déterminez si la nouvelle colonne est obligatoire ou si elle doit autoriser les valeurs NULL. Si la colonne est obligatoire, elle doit être marquée NOT NULL pour garantir qu'aucune donnée importante ne manque.
+* Réfléchissez également à la possibilité que la colonne devienne un champ obligatoire pour votre application à l'avenir.
 
 
 
-**Executing the SQL statement:**
+**Sauvegarde de la base de données :**
 
-*   Use the ALTER TABLE SQL statement to add the new column. The exact syntax depends on the database platform you are using, but in general the SQL statement looks like this:&#x20;
+* Avant d'ajouter la nouvelle colonne, effectuez une sauvegarde de votre base de données afin de disposer d'une version fonctionnelle vers laquelle revenir en cas de problème.&#x20;
+
+
+
+**Exécution de l'instruction SQL :**
+
+*   Utilisez l'instruction SQL ALTER TABLE pour ajouter la nouvelle colonne. La syntaxe exacte dépend de la plateforme de base de données que vous utilisez, mais de manière générale, l'instruction SQL ressemble à ceci :&#x20;
 
     <figure><img src="../../../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
-    Replace table\_name with the name of your table, new\_column\_name with the name of the new column, and data\_type with the column type you selected. The \[NOT NULL] keyword indicates whether the column is mandatory.
+    Remplacez table\_name par le nom de votre table, new\_column\_name par le nom de la nouvelle colonne et data\_type par le type de colonne que vous avez sélectionné. Le mot-clé \[NOT NULL] indique si la colonne est obligatoire.
 
 
 
-**Testing and validating:**
+**Tests et validation :**
 
-* After the new column is added, thoroughly verify that your application is working properly. Run tests to ensure that data is stored and retrieved correctly and that the new column is working as expected.
+* Une fois la nouvelle colonne ajoutée, vérifiez minutieusement que votre application fonctionne correctement. Exécutez des tests pour vous assurer que les données sont stockées et récupérées correctement et que la nouvelle colonne fonctionne comme prévu.
 
 
 
-By carefully following these steps, you can successfully and effectively add a new column to your database table, choosing the correct column type and ensuring that the column is required when it is required.
+En suivant attentivement ces étapes, vous pouvez ajouter avec succès et efficacité une nouvelle colonne à votre table de base de données, en choisissant le bon type de colonne et en veillant à ce que la colonne soit obligatoire lorsque cela est nécessaire.
 
 

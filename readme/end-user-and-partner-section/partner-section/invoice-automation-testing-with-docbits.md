@@ -1,60 +1,57 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Test der Rechnungsautomatisierung mit DocBits
 
-# Invoice Automation Testing with DocBits
+## Überblick
 
-## Overview
+Dieses Dokument beschreibt den Testplan für die Rechnungsautomatisierung mit DocBits unter Verwendung von Infor LN oder M3. Es enthält Details zu Testfällen, zur Testvorbereitung, zu den Ausführungsschritten sowie zu den Support-Prozessen.
 
-This document outlines the testing plan for invoice automation using DocBits with Infor LN or M3. It includes details of test cases, testing preparation, execution steps, and support processes.
+## Testfälle
 
-## Testing Cases
+| ID | Testfall                                                                    | Beschreibung                                                                                                                                                                              | Status            |
+| -- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| 1  | Kostenrechnungen                                                          | Rechnungen ohne Bestellung werden in DocBits erfolgreich verarbeitet und als „Kostenrechnung" nach LN exportiert.                                                                          | ZU TESTEN         |
+| 2  | Bestellbezogene Rechnung mit perfekter Übereinstimmung                    | Bestellbezogene Rechnungen werden in DocBits erfolgreich verarbeitet, mit einer perfekten Übereinstimmung von Rechnung zu Bestellung, da Artikelnummer, Menge und Stückpreis übereinstimmen. | ZU TESTEN         |
+| 3  | Bestellbezogene Rechnungen mit abweichender Menge                         | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung bei der Menge.                                                                 | ZU TESTEN         |
+| 4  | Bestellbezogene Rechnungen mit abweichendem Stückpreis                    | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung beim Stückpreis.                                                               | ZU TESTEN         |
+| 5  | Bestellbezogene Rechnungen mit abweichender oder nicht vorhandener Artikelnummer | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung oder eine nicht vorhandene Artikelnummer.                                | ZU TESTEN         |
+| 6  | Bestellbezogene Rechnungen mit einer Abweichung innerhalb der Toleranz    | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung bei Menge oder Stückpreis, die jedoch innerhalb der Toleranz liegt.            | ZU TESTEN         |
+| 7  | Gutschriften                                                              | Gutschriften werden in DocBits erfolgreich verarbeitet und nach LN exportiert. Klären Sie, ob die Beträge mit positivem oder negativem Vorzeichen exportiert werden sollen.                | ZU TESTEN         |
 
-| ID | Testing Case                                                               | Description                                                                                                                                                       | Status       |
-| -- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| 1  | Cost Invoices                                                              | Invoices with no purchase order are processed successfully in DocBits and exported to LN as “cost invoice”.                                                       | TO BE TESTED |
-| 2  | Purchase Order Related Invoice with Perfect Matching                       | Purchase order-related invoices are processed successfully in DocBits with a perfect match from invoice to PO, since item number, quantity, and unit price match. | TO BE TESTED |
-| 3  | Purchase Order Related Invoices with Different Quantity                    | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch on the quantity.                                       | TO BE TESTED |
-| 4  | Purchase Order Related Invoices with Different Unit Price                  | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch on the unit price.                                     | TO BE TESTED |
-| 5  | Purchase Order Related Invoices with Different or Non-Existing Item Number | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch or a non-existing item number.                         | TO BE TESTED |
-| 6  | Purchase Order Related Invoices with a Mismatch within Tolerance           | Purchase order-related invoices are processed in DocBits but in the PO matching module, we have a mismatch on quantity or unit price, but it’s within tolerance.  | TO BE TESTED |
-| 7  | Credit Notes                                                               | Credit notes are successfully processed in DocBits and exported to LN. Clarify whether amounts should be exported with a positive or negative sign.               | TO BE TESTED |
+## Plan für den Test mit dem Kunden
 
-## Plan for Testing with Customer
+### 1. Einrichtung
 
-### 1. Set Up
+* **Erstgespräch**: Vereinbaren Sie ein Kick-off-Meeting mit dem Kunden, um den Testprozess und die Ziele zu erläutern.
+* **Zugang und Berechtigungen**: Stellen Sie sicher, dass der Kunde über alle erforderlichen Zugänge zu DocBits und Infor LN oder M3 für Testzwecke verfügt.
 
-* **Initial Meeting**: Schedule a kickoff meeting with the customer to explain the testing process and objectives.
-* **Access and Permissions**: Ensure the customer has all necessary access to DocBits and Infor LN or M3 for testing purposes.
+### 2. Testvorbereitung
 
-### 2. Testing Preparation
+* **Schulung**: Bieten Sie dem Team des Kunden eine umfassende Schulung darüber an, wie DocBits für die Rechnungsverarbeitung verwendet wird.
+* **Dokumentation**: Stellen Sie eine detaillierte Dokumentation zu den Testverfahren bereit, einschließlich der erwarteten Ergebnisse für jeden Testfall.
 
-* **Training**: Provide comprehensive training to the customer’s team on how to use DocBits for invoice processing.
-* **Documentation**: Share detailed documentation on the testing procedures, including expected outcomes for each test case.
+### 3. Ausführung der Testfälle
 
-### 3. Execution of Test Cases
+* **Testumgebung**: Richten Sie eine Testumgebung ein, die das Produktivsystem des Kunden so genau wie möglich abbildet.
+* **Schritt-für-Schritt-Test**: Arbeiten Sie mit dem Kunden zusammen, um jeden Testfall auszuführen, und stellen Sie sicher, dass er jeden Schritt versteht:
+  * Verarbeiten Sie Rechnungen über DocBits.
+  * Überprüfen Sie das Ergebnis im PO-Matching-Modul.
+  * Prüfen Sie die Exportergebnisse in LN oder M3.
 
-* **Testing Environment**: Set up a testing environment that replicates the customer's production system as closely as possible.
-* **Step-by-Step Testing**: Work with the customer to execute each test case, ensuring they understand each step:
-  * Process invoices through DocBits.
-  * Verify the output in the PO matching module.
-  * Check the export results in LN or M3.
+### 4. Problembehebung
 
-### 4. Issue Resolution
+* **Nachverfolgung**: Verwenden Sie ein Tracking-System (wie Jira oder eine einfache Tabelle), um alle Probleme oder Abweichungen zu protokollieren, die während des Tests auftreten.
+* **Support**: Bieten Sie sofortigen Support, um Probleme zu lösen und etwaige Unklarheiten zu beseitigen.
 
-* **Tracking**: Use a tracking system (like Jira or a simple spreadsheet) to log any issues or mismatches that occur during testing.
-* **Support**: Provide immediate support to resolve issues and clarify any doubts.
+### 5. Überprüfung und Feedback
 
-### 5. Verification and Feedback
+* **Überprüfung**: Überprüfen Sie nach jedem Testfall die Ergebnisse mit dem Kunden, um die Korrektheit sicherzustellen.
+* **Feedback-Schleife**: Sammeln Sie Feedback vom Kunden zum Prozess und zu allen notwendigen Verbesserungen.
 
-* **Verification**: After each test case, verify the results with the customer to ensure accuracy.
-* **Feedback Loop**: Collect feedback from the customer on the process and any improvements needed.
+### 6. Abschluss
 
-### 6. Finalization
+* **Dokumentation der Ergebnisse**: Dokumentieren Sie die Ergebnisse jedes Testfalls und stellen Sie dem Kunden einen zusammenfassenden Bericht zur Verfügung.
+* **Review-Meeting**: Führen Sie ein Review-Meeting durch, um die Testergebnisse und alle weiteren Schritte zu besprechen, die vor dem Go-live erforderlich sind.
 
-* **Documentation of Results**: Document the results of each test case and provide a summary report to the customer.
-* **Review Meeting**: Conduct a review meeting to discuss the testing outcomes and any further steps required before going live.
+### 7. Vorbereitung des Go-live
 
-### 7. Go Live Preparation
-
-* **Training Refresh**: Offer a refresher training session if necessary.
-* **Support Plan**: Develop a support plan for the initial go-live phase to ensure smooth transition.
-
+* **Auffrischungsschulung**: Bieten Sie bei Bedarf eine Auffrischungsschulung an.
+* **Support-Plan**: Entwickeln Sie einen Support-Plan für die anfängliche Go-live-Phase, um einen reibungslosen Übergang zu gewährleisten.

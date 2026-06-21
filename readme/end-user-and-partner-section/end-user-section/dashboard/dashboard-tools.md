@@ -1,135 +1,133 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Dashboard-Werkzeuge
 
-# Dashboard Tools
-
-To the right of the search bar, you will find some dashboard tools.
+Rechts neben der Suchleiste finden Sie einige Dashboard-Werkzeuge.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_1.png" alt=""><figcaption></figcaption></figure>
 
-## Refresh table
+## Tabelle aktualisieren
 
-Click this button to refresh the dashboard and load the most up-to-date data and statuses.
+Klicken Sie auf diese Schaltfläche, um das Dashboard zu aktualisieren und die aktuellsten Daten und Status zu laden.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_2.png" alt=""><figcaption></figcaption></figure>
 
-## Advanced settings
+## Erweiterte Einstellungen
 
-Click the gear icon to open the Advanced Settings menu.
+Klicken Sie auf das Zahnradsymbol, um das Menü „Erweiterte Einstellungen“ zu öffnen.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_8.png" alt=""><figcaption></figcaption></figure>
 
-In the Advanced Settings menu the following options will be available:
+Im Menü „Erweiterte Einstellungen“ stehen die folgenden Optionen zur Verfügung:
 
-### More settings
+### Weitere Einstellungen
 
-Use this button to access the Admin Settings for the dashboard. Full documentation for these settings can be found [here](../../../administration-and-setup/settings/global-settings/dashboard/).
+Verwenden Sie diese Schaltfläche, um auf die Admin-Einstellungen für das Dashboard zuzugreifen. Die vollständige Dokumentation zu diesen Einstellungen finden Sie [hier](../../../administration-and-setup/settings/global-settings/dashboard/).
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_3.png" alt=""><figcaption></figcaption></figure>
 
-### Keyboard shortcuts
+### Tastenkombinationen
 
-Use this button to display all keyboard shortcuts for the dashboard. Detailed explanations for each shortcut can be found [here](keyboard-shortcuts.md).
+Verwenden Sie diese Schaltfläche, um alle Tastenkombinationen für das Dashboard anzuzeigen. Detaillierte Erläuterungen zu den einzelnen Tastenkombinationen finden Sie [hier](keyboard-shortcuts.md).
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_9.png" alt=""><figcaption></figcaption></figure>
 
-### Import log
+### Importprotokoll
 
-Use this button to open a table displaying all recently imported documents via email, along with relevant information for each.
+Verwenden Sie diese Schaltfläche, um eine Tabelle zu öffnen, die alle kürzlich per E-Mail importierten Dokumente zusammen mit relevanten Informationen zu jedem einzelnen anzeigt.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_10.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_15.png" alt=""><figcaption></figcaption></figure>
 
-You can filter the logs by subject or sender, sort columns in ascending or descending order by clicking the column headers, and rearrange them using drag-and-drop.
+Sie können die Protokolle nach Betreff oder Absender filtern, Spalten durch Klicken auf die Spaltenüberschriften auf- oder absteigend sortieren und sie per Drag-and-drop neu anordnen.
 
-### Set table columns for organization
+### Tabellenspalten für die Organisation festlegen
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_11.png" alt=""><figcaption></figcaption></figure>
 
-Click this button to open a menu where you can manage the visibility of dashboard columns. Select column names and use the arrows to add or remove them from the dashboard view. Click **Done** to save your changes.
+Klicken Sie auf diese Schaltfläche, um ein Menü zu öffnen, in dem Sie die Sichtbarkeit der Dashboard-Spalten verwalten können. Wählen Sie Spaltennamen aus und verwenden Sie die Pfeile, um sie zur Dashboard-Ansicht hinzuzufügen oder daraus zu entfernen. Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.
 
 <figure><img src="../../../.gitbook/assets/dashborad_tools_22.png" alt=""><figcaption></figcaption></figure>
 
-You can set the column order by clicking the dots next to a column name and dragging it to the desired position.
+Sie können die Spaltenreihenfolge festlegen, indem Sie auf die Punkte neben einem Spaltennamen klicken und ihn an die gewünschte Position ziehen.
 
-#### Add fields from a document type as columns in the dashboard
+#### Felder aus einem Dokumenttyp als Spalten im Dashboard hinzufügen
 
-You also have the option to add additional columns from specific fields of specific document types to customize your dashboard view. To do this, simply click **Add Field from Document Type**.
+Sie haben außerdem die Möglichkeit, zusätzliche Spalten aus bestimmten Feldern bestimmter Dokumenttypen hinzuzufügen, um Ihre Dashboard-Ansicht anzupassen. Klicken Sie dazu einfach auf **Feld aus Dokumenttyp hinzufügen**.
 
 <figure><img src="../../../.gitbook/assets/dashborad_tools_21.png" alt=""><figcaption></figcaption></figure>
 
-Choose a document type to see which fields are available for the selected type. For each document type there are different fields that you can add. You can search for a specific field using the search bar at the top.
+Wählen Sie einen Dokumenttyp aus, um zu sehen, welche Felder für den ausgewählten Typ verfügbar sind. Für jeden Dokumenttyp gibt es unterschiedliche Felder, die Sie hinzufügen können. Über die Suchleiste oben können Sie nach einem bestimmten Feld suchen.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_19.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Select the fields you want to display as columns, then click **Add to Visible Columns**. The selected fields will appear as columns on the dashboard, showing their corresponding values.
+Wählen Sie die Felder aus, die Sie als Spalten anzeigen möchten, und klicken Sie dann auf **Zu sichtbaren Spalten hinzufügen**. Die ausgewählten Felder erscheinen als Spalten im Dashboard und zeigen ihre entsprechenden Werte an.
 
-## Scan document
+## Dokument scannen
 
-Use this button to scan a document directly.
+Verwenden Sie diese Schaltfläche, um ein Dokument direkt zu scannen.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_4.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_17.png" alt=""><figcaption></figcaption></figure>
 
-To use this feature, you need to have a scanner connected to your system. If a scanner is available, you can select it on the right, name your document, and click **Scan**. Optionally, you can adjust scanning settings on the right before starting the process.
+Um diese Funktion zu nutzen, muss ein Scanner mit Ihrem System verbunden sein. Wenn ein Scanner verfügbar ist, können Sie ihn auf der rechten Seite auswählen, Ihrem Dokument einen Namen geben und auf **Scannen** klicken. Optional können Sie vor dem Start des Vorgangs die Scaneinstellungen auf der rechten Seite anpassen.
 
-<mark style="color:red;">**Note**</mark>: This feature must be activated under **Settings -> Document Processing -> Module -> Document Type -> Document scan**
+<mark style="color:red;">**Hinweis**</mark>: Diese Funktion muss unter **Einstellungen -> Dokumentenverarbeitung -> Modul -> Dokumenttyp -> Dokumentscan** aktiviert werden.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_27.png" alt=""><figcaption></figcaption></figure>
 
-## Analytics
+## Analytik
 
-Clicking this button will display a new area showing the current count of documents in each category.
+Wenn Sie auf diese Schaltfläche klicken, wird ein neuer Bereich angezeigt, der die aktuelle Anzahl der Dokumente in jeder Kategorie zeigt.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_14.png" alt=""><figcaption></figcaption></figure>
 
-Click any category to filter the documents by that specific category.
+Klicken Sie auf eine beliebige Kategorie, um die Dokumente nach dieser bestimmten Kategorie zu filtern.
 
-## Start e-mail import
+## E-Mail-Import starten
 
-Clicking this button will check your email inbox, according to the email import configuration, and import any new documents.
+Wenn Sie auf diese Schaltfläche klicken, wird Ihr E-Mail-Posteingang gemäß der E-Mail-Importkonfiguration überprüft und alle neuen Dokumente werden importiert.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_6.png" alt=""><figcaption></figcaption></figure>
 
-## Export this table
+## Diese Tabelle exportieren
 
-Use this button to export all documents currently displayed on the dashboard, based on the number of documents shown per page.\
-You can export the table as a **.csv** or **.xlsx** file.
+Verwenden Sie diese Schaltfläche, um alle derzeit im Dashboard angezeigten Dokumente zu exportieren, basierend auf der Anzahl der pro Seite angezeigten Dokumente.\
+Sie können die Tabelle als **.csv**- oder **.xlsx**-Datei exportieren.
 
 <figure><img src="../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>
 
-<mark style="color:red;">**Note**</mark>: This feature must be activated under **Settings -> Global Settings -> Dashboard -> General -> Export Dashboard Data**
+<mark style="color:red;">**Hinweis**</mark>: Diese Funktion muss unter **Einstellungen -> Globale Einstellungen -> Dashboard -> Allgemein -> Dashboard-Daten exportieren** aktiviert werden.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_26.png" alt=""><figcaption></figcaption></figure>
 
-## Upload
+## Hochladen
 
-Click this button to manually upload one or more files.
+Klicken Sie auf diese Schaltfläche, um eine oder mehrere Dateien manuell hochzuladen.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_7.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_16.png" alt="" width="563"><figcaption></figcaption></figure>
 
-You can either drag and drop files into the pop-up window or click **Upload Documents** to select them from your file explorer.
+Sie können Dateien entweder per Drag-and-drop in das Pop-up-Fenster ziehen oder auf **Dokumente hochladen** klicken, um sie aus Ihrem Datei-Explorer auszuwählen.
 
-If you prefer to manually specify the document type instead of allowing **DocBits** to auto-classify it, toggle the **Classify As** option and select the appropriate document type from the list.
+Wenn Sie den Dokumenttyp lieber manuell angeben möchten, anstatt **DocBits** ihn automatisch klassifizieren zu lassen, aktivieren Sie die Option **Klassifizieren als** und wählen Sie den passenden Dokumenttyp aus der Liste aus.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_5.png" alt=""><figcaption></figcaption></figure>
 
-After selecting your files, click **Upload** to begin the upload process.
+Nachdem Sie Ihre Dateien ausgewählt haben, klicken Sie auf **Hochladen**, um den Upload-Vorgang zu starten.
 
-## Debugging mode
+## Debugging-Modus
 
-You can activate debugging mode to receive an additional option.\
-To access debug mode simply add to the url `?debug=true` . Now you should have an additional option
+Sie können den Debugging-Modus aktivieren, um eine zusätzliche Option zu erhalten.\
+Um den Debug-Modus aufzurufen, fügen Sie einfach `?debug=true` zur URL hinzu. Nun sollten Sie eine zusätzliche Option haben.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_24.png" alt=""><figcaption></figcaption></figure>
 
-### Show loading times
+### Ladezeiten anzeigen
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_20.png" alt=""><figcaption></figcaption></figure>
 
-Clicking this button will open a pop-up window displaying the loading times for each service, with the total loading time shown at the bottom.
+Wenn Sie auf diese Schaltfläche klicken, öffnet sich ein Pop-up-Fenster, das die Ladezeiten für jeden Dienst anzeigt, wobei die Gesamtladezeit unten dargestellt wird.
 
 <figure><img src="../../../.gitbook/assets/dashboard_tools_23.png" alt="" width="375"><figcaption></figcaption></figure>

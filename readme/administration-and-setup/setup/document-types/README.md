@@ -1,79 +1,77 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Dokumenttypen
 
-# Document Types
+Wenn ein Kunde einen neuen Dokumenttyp benötigt oder einem bestehenden Dokumenttyp-Layout zusätzliche Felder hinzugefügt werden sollen, behandelt dieser Abschnitt alle dafür erforderlichen Informationen.
 
-If a customer requires a new document type or additional fields to be added to an existing document type layout, this section will go through all the information required to do so.
-
-In DocBits you will find the SETTINGS menu in the upper bar on the DASHBOARD.
+In DocBits finden Sie das Menü EINSTELLUNGEN in der oberen Leiste des DASHBOARDS.
 
 ![](https://lh7-us.googleusercontent.com/ZIJTRkBGeJ29Iw8XSbZKJ3GQifWbtWFYPhSg7v4LjCKWJ-szz7R7nlcbiom5ZB25p201BCnqoaaCsKH3UKQfqaAQlpgf4MCe1joA8OLV8dZ6r6v4-skFkGlUw8U51jwPeGqi59GPQMgpMaLGZGwnCk4)
 
-If you are logged in to DocBits as an admin, you will find all fields of a document that can be extracted under the respective document type.
+Wenn Sie als Administrator bei DocBits angemeldet sind, finden Sie unter dem jeweiligen Dokumenttyp alle Felder eines Dokuments, die extrahiert werden können.
 
-Open the menu for Document Types.
+Öffnen Sie das Menü für Dokumenttypen.
 
 ![](https://lh7-us.googleusercontent.com/fqNQTnQSPJ19w3YBOf6-E\_sLmKo3LPBeGyRE0jqjhodZjtGxyi7YCg0yrMVfz1VQjsbyQ9S6Lllhn891A8yWD7YJ66pXJ\_EsBlf\_meTFf57snc3r5Ko88kmzgXUYA7DIzaPtxSJBNC3Z7Avh17l\_1fo)
 
-In the following overview you will find all standard document types available for you
+In der folgenden Übersicht finden Sie alle für Sie verfügbaren Standard-Dokumenttypen
 
 ![](https://lh7-us.googleusercontent.com/Syml6WLOpBNjz1NUcYv6ooJZXhqBKXYOUfWah2jdnTAceLTNr0RYYNW8mXM91wutSH7BAnQ7MVxcNaQE7mDiWtR6xlwVzz45hYzotHEEOPSzoTSFwzno9zrJe8dVCuTHiTftm7HpcSxj9YgcRXR65q0)
 
-**Activate/Extraction Type**
+**Aktivieren/Extraktionstyp**
 
-To the right of each document type, you will see Activate and Extraction Type sliders.
+Rechts neben jedem Dokumenttyp sehen Sie die Schalter „Aktivieren" und „Extraktionstyp".
 
-Activate: This document type is active in your DocBits environment.
+Aktivieren: Dieser Dokumenttyp ist in Ihrer DocBits-Umgebung aktiv.
 
-Extraction Type: This slider allows you to enable or disable a set of predefined rules for the document type when it is processed by DocBits. By selecting the gear icon to the right of the slider, the following menu will appear.
+Extraktionstyp: Mit diesem Schalter können Sie einen Satz vordefinierter Regeln für den Dokumenttyp aktivieren oder deaktivieren, wenn er von DocBits verarbeitet wird. Wenn Sie das Zahnradsymbol rechts neben dem Schalter auswählen, erscheint das folgende Menü.
 
 ![](https://lh7-us.googleusercontent.com/VAf5NNfmfs\_EsV3-LzQmif4Vp\_hSjhWOgoehrzHya-8eXgeWSRz6tArWNtQZW4SPkelwufuXFkSl5jGywDnxh5Ll5BYLSXrTmUYi2AxBOj38suzgoJiLSqX2ENYJHpGbpkt1kUX7vcATShHfG0Jw20s)
 
-To see which fields can be extracted, for example from an invoice, click on FIELDS for this document type.
+Um zu sehen, welche Felder extrahiert werden können, beispielsweise aus einer Rechnung, klicken Sie für diesen Dokumenttyp auf FELDER.
 
 ![](https://lh7-us.googleusercontent.com/DRJV3CLSSHjjFrqQD0LtzvMRu4n-\_RZ\_w5d-2d9q7MsZur-2\_cj-\_9VYjeOCmDIZ6\_C\_dZKDonfyFUip8NCqeXEkw5gch0MaK2u-5\_kCGg6\_zNMhYj2gW-JUXoQORzoJdUmKwa7PuMz\_mnF3FuzkXDc)
 
-**Field Settings**
+**Feldeinstellungen**
 
-Here you will find all the fields that can be extracted
+Hier finden Sie alle Felder, die extrahiert werden können
 
 ![](https://lh7-us.googleusercontent.com/NRhL2RPgVJqbdxoKnnEtcB8D1yYXfHqifMFttmiju6OQkMKdrndsZ17EFhYEOh5bJg2ctOPyzy60CwqKme0RQbDmKWhq3EBTuqGDzDzNdcx1PPMkC4a-N1yJFmbs-ZcM3kfFt\_j9Z3QdofcuXJqTN7U)
 
-You can also CREATE FIELDS like freight, postage or any field with an amount you want to extract from your invoices.
+Sie können auch FELDER ERSTELLEN wie Fracht, Porto oder jedes andere Feld mit einem Betrag, das Sie aus Ihren Rechnungen extrahieren möchten.
 
-For each field you can check the boxes if they are:
+Für jedes Feld können Sie die Kontrollkästchen aktivieren, falls sie:
 
-* REQUIRED: Here you can define if the field must contain a value to continue.
-* READ ONLY: Here you can define if a field can only be displayed but not edited.
-* HIDDEN: Here you can define whether a field should be hidden or displayed in the extraction view.
-* FORCE VALIDATION: Here you can define whether a field must always be validated manually, even if it has been read 100% by DocBits.
-* OCR and MATCH SCORE: Setting as described below, per field.
-* FORMULA: Creation of a formula per field.
+* ERFORDERLICH: Hier können Sie festlegen, ob das Feld einen Wert enthalten muss, um fortzufahren.
+* SCHREIBGESCHÜTZT: Hier können Sie festlegen, ob ein Feld nur angezeigt, aber nicht bearbeitet werden kann.
+* AUSGEBLENDET: Hier können Sie festlegen, ob ein Feld in der Extraktionsansicht ausgeblendet oder angezeigt werden soll.
+* VALIDIERUNG ERZWINGEN: Hier können Sie festlegen, ob ein Feld immer manuell validiert werden muss, selbst wenn es von DocBits zu 100 % erkannt wurde.
+* OCR und MATCH SCORE: Einstellung wie unten beschrieben, pro Feld.
+* FORMEL: Erstellung einer Formel pro Feld.
 
 ![](https://lh7-us.googleusercontent.com/rbyXMCvWQx10lEGKb4xzu7eM6-l2yNZ3SO9Mj4pIIqfAZzt68on8j1KpSnrisMgVgKKB3QhymZNDpxYEVMVQplEsesk1gWAEAeriPDaQxL5v4eWPd9oFnyYN5QiA5uymT4ED6JHEew5FAlC\_bgU9Mho)
 
-If all settings are made and should be saved, please confirm this with the SAVE SETTINGS button at the bottom of the page, otherwise the settings will not be applied.
+Wenn alle Einstellungen vorgenommen wurden und gespeichert werden sollen, bestätigen Sie dies bitte mit der Schaltfläche EINSTELLUNGEN SPEICHERN am unteren Rand der Seite, andernfalls werden die Einstellungen nicht übernommen.
 
 ![](https://lh7-us.googleusercontent.com/4nXll-tHCDUUbA\_hsi\_RXa7ll7qxkNFk2Htjx56-rBnIrZGu3H\_VJtjjtuUlXGBFUQUcXAa8WdJXFdWZN6geHCWsUnq0MUF1Q8\_RvpdpqYDq\_rNoFraomSK0sUTeKAyeOo7CZ1QiSs2rnIIXak4fGG4)
 
-**Recognition Settings**
+**Erkennungseinstellungen**
 
 ![](https://lh7-us.googleusercontent.com/nEAjFqWdbJci2U0lHCL8Bv-51Uur1QxT0etiKaR4kUNp2G4jtlsbR2ikAee--XvyoKDZ8Tx5l3hLa-a-FdY1lL35lxFegwg6D8xPw27ObwrZRRBhXDOmQOa3y\_1bhcwzXF418PsASkx3jjEIQXqtBnc)
 
 **OCR**
 
-Here you can set the sensitivity of the OCR (Optical Character Recognition) function for all fields at once. This value determines the sensitivity with which a field is marked in red if it could not be extracted with 100% certainty (OCR related!).
+Hier können Sie die Empfindlichkeit der OCR-Funktion (Optical Character Recognition) für alle Felder auf einmal einstellen. Dieser Wert bestimmt, mit welcher Empfindlichkeit ein Feld rot markiert wird, falls es nicht mit 100 % Sicherheit extrahiert werden konnte (OCR-bezogen!).
 
 **Match Score**
 
-This is where you can set the sensitivity of the MATCH SCORE function for all fields at once. This value determines when a field is marked in red if DocBits has not extracted the field with 100% probability. In this case the field needs to be validated manually.
+Hier können Sie die Empfindlichkeit der MATCH-SCORE-Funktion für alle Felder auf einmal einstellen. Dieser Wert bestimmt, wann ein Feld rot markiert wird, falls DocBits das Feld nicht mit 100 % Wahrscheinlichkeit extrahiert hat. In diesem Fall muss das Feld manuell validiert werden.
 
-The button RESTORE DEFAULTS will set back both values to “50”.
+Die Schaltfläche STANDARDWERTE WIEDERHERSTELLEN setzt beide Werte auf „50" zurück.
 
-**Profile**
+**Profil**
 
-Here you can define the profile that shall be used. Either Default or ZUGFeRD.\
-In profile ZUGFeRD there are predefined fields that are mandatory for this type of invoice.\
-If you do not explicitly use ZUGFeRD, please select “Default”.
+Hier können Sie das zu verwendende Profil festlegen. Entweder Default oder ZUGFeRD.\
+Im Profil ZUGFeRD gibt es vordefinierte Felder, die für diese Art von Rechnung obligatorisch sind.\
+Wenn Sie ZUGFeRD nicht ausdrücklich verwenden, wählen Sie bitte „Default".
 
 ![](https://lh7-us.googleusercontent.com/jxQMt3SJdQcMD15ntBN2vowRpAZxybGYZtr\_6w8ANER4XgvkDf09tN-H9wZqApYj3ka1-E-KvALZp5dw4GFK5SswWWe3MAv3eiCWcRyb3lxk0f9erN4FfOTPkPK0lburKvib5hTntUHWUFikBGBQV1Y)
 

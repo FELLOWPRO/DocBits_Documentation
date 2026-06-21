@@ -1,22 +1,20 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Zertifizierungen
 
-# Certifications
-
-DocBits is operated by **Fellowpro AG** under a comprehensive information-security, privacy and internal-controls program. The certifications below are independently audited each year; customers can download the official attestation reports directly from this page.
+DocBits wird von der **Fellowpro AG** im Rahmen eines umfassenden Programms für Informationssicherheit, Datenschutz und interne Kontrollen betrieben. Die nachstehenden Zertifizierungen werden jährlich unabhängig geprüft; Kunden können die offiziellen Bestätigungsberichte direkt auf dieser Seite herunterladen.
 
 {% hint style="info" %}
-Need a certificate for your procurement, security or compliance team? Every report on this page is the signed auditor deliverable — no NDA required. For questions about scope, controls or upcoming audits, contact **compliance@fellowpro.com**.
+Benötigen Sie ein Zertifikat für Ihr Beschaffungs-, Sicherheits- oder Compliance-Team? Jeder Bericht auf dieser Seite ist die unterzeichnete Prüferunterlage – keine Geheimhaltungsvereinbarung erforderlich. Bei Fragen zum Umfang, zu den Kontrollen oder zu bevorstehenden Audits wenden Sie sich an **compliance@fellowpro.com**.
 {% endhint %}
 
 ## 1. ISO/IEC 27001
 
 <figure><img src="../../.gitbook/assets/ISO27001.png" alt=""><figcaption></figcaption></figure>
 
-This international standard defines the requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS). It helps organizations protect data in a systematic and cost-effective way, including processes for risk management and information security controls.
+Dieser internationale Standard definiert die Anforderungen für den Aufbau, die Umsetzung, die Aufrechterhaltung und die kontinuierliche Verbesserung eines Informationssicherheits-Managementsystems (ISMS). Er hilft Organisationen, Daten auf systematische und kosteneffiziente Weise zu schützen, einschließlich Prozessen für das Risikomanagement und Kontrollen zur Informationssicherheit.
 
-**Impact for clients:** Ensures that DocBits adheres to the highest standards of information security, providing confidence that sensitive data is well-protected.
+**Auswirkung für Kunden:** Stellt sicher, dass DocBits die höchsten Standards der Informationssicherheit einhält, und gibt die Gewissheit, dass sensible Daten gut geschützt sind.
 
-**Latest audit:** Surveillance Audit SA1, 2025 — Fellowpro AG ISMS.
+**Letztes Audit:** Überwachungsaudit SA1, 2025 – Fellowpro AG ISMS.
 
 {% file src="../../.gitbook/assets/FELLOWPRO-ISO27001-Client-Report-2025.pdf" %}
 
@@ -24,11 +22,11 @@ This international standard defines the requirements for establishing, implement
 
 <figure><img src="../../.gitbook/assets/SOC1.png" alt=""><figcaption></figcaption></figure>
 
-SOC 1 reports are designed for organizations that need to demonstrate the effectiveness of internal controls over financial reporting. It is particularly relevant for service providers that affect their clients’ financial reporting.
+SOC-1-Berichte sind für Organisationen konzipiert, die die Wirksamkeit interner Kontrollen über die Finanzberichterstattung nachweisen müssen. Sie sind besonders relevant für Dienstleister, die die Finanzberichterstattung ihrer Kunden beeinflussen.
 
-**Relevance to DocBits:** Demonstrates our commitment to maintaining stringent internal controls over financial data, providing assurance to clients about the reliability of our processes.
+**Relevanz für DocBits:** Belegt unser Engagement für die Aufrechterhaltung strenger interner Kontrollen über Finanzdaten und gibt Kunden die Gewissheit über die Zuverlässigkeit unserer Prozesse.
 
-**Latest audit:** SOC 1 Type II — reporting period 2025.
+**Letztes Audit:** SOC 1 Type II – Berichtszeitraum 2025.
 
 {% file src="../../.gitbook/assets/FELLOWPRO-SOC1-Type2-Report-2025.pdf" %}
 
@@ -36,26 +34,26 @@ SOC 1 reports are designed for organizations that need to demonstrate the effect
 
 <figure><img src="../../.gitbook/assets/SOC2.png" alt=""><figcaption></figcaption></figure>
 
-SOC 2 focuses on a service organization’s controls relevant to security, availability, processing integrity, confidentiality, and privacy of data. It is crucial for technology and cloud computing companies that handle sensitive information.
+SOC 2 konzentriert sich auf die Kontrollen einer Dienstleistungsorganisation in Bezug auf Sicherheit, Verfügbarkeit, Verarbeitungsintegrität, Vertraulichkeit und Datenschutz der Daten. Es ist entscheidend für Technologie- und Cloud-Computing-Unternehmen, die mit sensiblen Informationen umgehen.
 
-**Value for clients:** Provides independent validation that DocBits has implemented effective controls to protect client data, ensuring trustworthiness in our software and services.
+**Nutzen für Kunden:** Bietet eine unabhängige Bestätigung, dass DocBits wirksame Kontrollen zum Schutz von Kundendaten implementiert hat, und gewährleistet so die Vertrauenswürdigkeit unserer Software und Dienste.
 
-**Latest audit:** SOC 2 Type II — reporting period 2026.
+**Letztes Audit:** SOC 2 Type II – Berichtszeitraum 2026.
 
 {% file src="../../.gitbook/assets/FELLOWPRO-SOC2-Type2-Report-2026.pdf" %}
 
-## 4. GDPR (General Data Protection Regulation) Compliance
+## 4. DSGVO (Datenschutz-Grundverordnung) – Konformität
 
 <figure><img src="../../.gitbook/assets/GDPR.png" alt=""><figcaption></figcaption></figure>
 
-The GDPR is a regulation in EU law on data protection and privacy in the European Union and the European Economic Area. It also addresses the transfer of personal data outside the EU and EEA areas.
+Die DSGVO ist eine Verordnung im EU-Recht zum Datenschutz und zur Privatsphäre in der Europäischen Union und im Europäischen Wirtschaftsraum. Sie regelt auch die Übermittlung personenbezogener Daten außerhalb der EU und des EWR.
 
-**Client assurance:** Compliance with GDPR ensures that DocBits processes personal data in line with EU regulations, protecting user privacy and adhering to strict data handling guidelines.
+**Zusicherung für Kunden:** Die Einhaltung der DSGVO stellt sicher, dass DocBits personenbezogene Daten im Einklang mit den EU-Vorschriften verarbeitet, die Privatsphäre der Nutzer schützt und strenge Richtlinien für den Umgang mit Daten befolgt.
 
-**Latest audit:** Independent GDPR Audit Report, 2025.
+**Letztes Audit:** Unabhängiger DSGVO-Auditbericht, 2025.
 
 {% file src="../../.gitbook/assets/FELLOWPRO-GDPR-Audit-Report-2025.pdf" %}
 
 ---
 
-For additional documentation — DPA templates, sub-processor lists, penetration-test summaries or security questionnaires — reach out to **compliance@fellowpro.com** or your DocBits customer success contact.
+Für zusätzliche Unterlagen – AVV-Vorlagen, Listen von Unterauftragsverarbeitern, Zusammenfassungen von Penetrationstests oder Sicherheitsfragebögen – wenden Sie sich an **compliance@fellowpro.com** oder an Ihren DocBits-Customer-Success-Ansprechpartner.

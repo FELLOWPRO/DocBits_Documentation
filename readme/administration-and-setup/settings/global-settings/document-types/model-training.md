@@ -1,26 +1,24 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
-# Entrenamiento del Modelo
+# Modelltraining
 
 <figure><img src="../../../../.gitbook/assets/docbits_model_training_overview.png" alt="Docbits Model Training Overview"><figcaption></figcaption></figure>
 
-#### Visión general
+#### Überblick
 
-El Entrenamiento del Modelo permite a los administradores supervisar y gestionar el entrenamiento de modelos de aprendizaje automático específicos para cada tipo de documento. Al proporcionar una interfaz estructurada para importar datos de muestra, entrenar modelos y probar su rendimiento, Docbits asegura que sus capacidades de extracción de datos mejoren continuamente con el tiempo.
+Das Modelltraining ermöglicht es Administratoren, das Training von Machine-Learning-Modellen für jeden Dokumenttyp zu überwachen und zu verwalten. Durch die Bereitstellung einer strukturierten Oberfläche zum Importieren von Beispieldaten, zum Trainieren von Modellen und zum Testen ihrer Leistung stellt Docbits sicher, dass sich seine Fähigkeiten zur Datenextraktion im Laufe der Zeit kontinuierlich verbessern.
 
-#### Funciones clave y opciones
+#### Schlüsselfunktionen und Optionen
 
-1. **Visión general de métricas**:
-* **Muestra**: Número de documentos de muestra utilizados para el entrenamiento.
-* **Exportados**: Número de documentos que se han exportado con éxito después del procesamiento.
-* **Empresa Σ**: Número total de documentos específicos de la empresa procesados.
-* **Total Σ**: Número total de documentos procesados en todas las categorías.
-2. **Opciones de entrenamiento y prueba**:
-* **Importar**: Permite a los administradores importar nuevos conjuntos de datos de entrenamiento que suelen ser muestras estructuradas de documentos que el sistema debería reconocer.
-* **Entrenar Modelo**: Inicia el proceso de entrenamiento utilizando los datos importados para mejorar las capacidades de reconocimiento y extracción del sistema.
-* **Probar Clasificación**: Permite probar el modelo para evaluar su rendimiento en la clasificación y extracción de datos de documentos nuevos o no vistos.
-3. **Botones de acción**:
-* **Crear Campo**: Agregar nuevos campos de datos que el modelo debería reconocer y extraer.
-* **Acciones**: Este menú desplegable puede incluir opciones como ver detalles, editar configuraciones o eliminar datos de entrenamiento.
+1. **Übersicht der Metriken**:
+* **Beispiel**: Anzahl der für das Training verwendeten Beispieldokumente.
+* **Exportiert**: Anzahl der Dokumente, die nach der Verarbeitung erfolgreich exportiert wurden.
+* **Unternehmen Σ**: Gesamtanzahl der verarbeiteten unternehmensspezifischen Dokumente.
+* **Gesamt Σ**: Gesamtanzahl der über alle Kategorien hinweg verarbeiteten Dokumente.
+2. **Trainings- und Testoptionen**:
+* **Import**: Ermöglicht es Administratoren, neue Trainingsdatensätze zu importieren, die in der Regel strukturierte Beispiele von Dokumenten sind, die das System erkennen soll.
+* **Modell trainieren**: Startet den Trainingsprozess unter Verwendung der importierten Daten, um die Erkennungs- und Extraktionsfähigkeiten des Systems zu verbessern.
+* **Klassifizierung testen**: Ermöglicht es, das Modell zu testen, um seine Leistung bei der Klassifizierung und Extraktion von Daten aus neuen oder bisher nicht gesehenen Dokumenten zu bewerten.
+3. **Aktionsschaltflächen**:
+* **Feld erstellen**: Neue Datenfelder hinzufügen, die das Modell erkennen und extrahieren soll.
+* **Aktionen**: Dieses Dropdown-Menü kann Optionen wie das Anzeigen von Details, das Bearbeiten von Konfigurationen oder das Löschen von Trainingsdaten enthalten.
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2496" %}

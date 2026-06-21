@@ -1,22 +1,19 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Technischer Support in DocBits
 
-# Technical Support in DocBits
+### Technischer Support in DocBits <a href="#hy7z6t7p8psl" id="hy7z6t7p8psl"></a>
 
-### Technical Support in DocBits <a href="#hy7z6t7p8psl" id="hy7z6t7p8psl"></a>
+### **Hilfe-Symbole** <a href="#gvm1kp4bwvnd" id="gvm1kp4bwvnd"></a>
 
-### **Help Icons** <a href="#gvm1kp4bwvnd" id="gvm1kp4bwvnd"></a>
+Überall in DocBits wurden Hilfe-Symbole platziert, um Ihnen dabei zu helfen, zu lernen und zu verstehen, was eine Funktion tatsächlich bewirkt und wie sie Sie bei Ihrer Dokumentenverarbeitung unterstützen kann.
 
-Help icons have been placed all around DocBits in order to assist you in learning and understanding what a feature really does and how it can assist you with your document processing.
+Diese Hilfe-Symbole sehen wie folgt aus
 
-These help icons look as follows
+### **Ticket erstellen** <a href="#id-2mb0mw2kxioz" id="id-2mb0mw2kxioz"></a>
 
-### **Create a Ticket** <a href="#id-2mb0mw2kxioz" id="id-2mb0mw2kxioz"></a>
+Dies ist ein Werkzeug, das Ihnen auf dem Validierungsbildschirm zur Verfügung steht, falls beim Validieren Ihres Dokuments in DocBits eine Art von Problem auftritt.
 
-This is a tool available to you, on the validation screen, in the event of some sort of issue occurring when validating your document in DocBits.
+Diese Funktion befindet sich im Menü oberhalb des Dokumentvorschaubereichs, wie unten dargestellt
 
-This feature is located in the menu above the document preview area, like below
+Nach dem Klicken wird Ihnen das folgende Ticket-Formular angezeigt.
 
-Once clicked, the following ticket form will be displayed to you.
-
-This is where you will fill in your details as well as describe the error. You can also ,if applicable, attach a screenshot of the issue and attach a relevant file.
-
+Hier tragen Sie Ihre Angaben ein und beschreiben den Fehler. Sie können außerdem, falls zutreffend, einen Screenshot des Problems sowie eine relevante Datei anhängen.

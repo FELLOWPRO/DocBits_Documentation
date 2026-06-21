@@ -1,62 +1,60 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Lieferanten und Bestellungen
 
-# Suppliers and Purchase Orders
+## **Verbindungspunkt**
 
-## **Connection Point**
+Sie müssen den DocBits-API-Verbindungspunkt erstellen, um später den Datenfluss anzulegen.
 
-You will need to create the DocBits API connection point in order to create the data flow later.
-
-In InforOS, navigate to ION Desk → Connect → Connection Points
+Navigieren Sie in InforOS zu ION Desk → Connect → Connection Points
 
 ![](https://lh7-us.googleusercontent.com/ySRjNzMXFzwSOYKx9hnlKLPHPuXpmfTvRADBfV6cpT8ajiEUbS4oXpd9InhXG09mHLakhqBTJMH4yQJNG5z9RXmbAjh8YbuGhxnXSeooIH\_r3RAGOvJE6Ok67ST\_272zFfhB\_TTFYg3b-NwFq0CAv2o)
 
-Once here, you will need to create a new connection point.
+Hier angekommen müssen Sie einen neuen Verbindungspunkt erstellen.
 
 ![](https://lh7-us.googleusercontent.com/ZDv-F3iayFqnsvVLlAE1kr0NNncsvuYtzcE\_WQj-0ONoE7McRl-f6\_DDH9ErQ0KLspZFFJ43t5EfnPBJjVg25YISMEQ--X4MmK6SVWzB60-Fq6mtwdhiOBwSnL-8vASXsto9iab0dnve6eeG8yuqNoI)
 
-**Select API**
+**Wählen Sie API**
 
-Give the connection point a name and description that describes its nature and its environment. Under the Connection tab, import the service account you created for the environment you are working with.
+Geben Sie dem Verbindungspunkt einen Namen und eine Beschreibung, die seine Art und seine Umgebung beschreiben. Importieren Sie unter dem Reiter „Connection" das Service-Konto, das Sie für die Umgebung erstellt haben, mit der Sie arbeiten.
 
 ![](https://lh7-us.googleusercontent.com/UCuGTwKARn3auhYdDDUbQ78Ok3qBNE1KpGEMealfPvgRju4VRLn2AfKaL5tLDcAh00poLHNQU-Q6koBhG5RdxK4CJrrL6Qeb4D52qnhw3aG1LZniuzHRXwOyzGcJvRnQtLGbp6PIseXvWxHlk-AMlz0)
 
-Next, switch to the Documents tab. You will need to add the following BODs to the connection point, not all are necessary for the supplier and purchase order master data but will be useful when other features such as Auto Accounting need to be implemented.
+Wechseln Sie als Nächstes zum Reiter „Documents". Sie müssen die folgenden BODs zum Verbindungspunkt hinzufügen. Nicht alle sind für die Stammdaten zu Lieferanten und Bestellungen erforderlich, sie werden jedoch nützlich sein, wenn weitere Funktionen wie Auto Accounting implementiert werden müssen.
 
 ![](https://lh7-us.googleusercontent.com/25Hizkx23i1c8-QHSrE7mPAH7zW6ux9iHTcP8\_l6EJJy548CvuNPF1R86Fuqx5iYZP9HF-Z4G6hntkaUtlOMetHIzAVZyBM6VIQ-vsvy6P5YBuAj4yscdJe8ySOHwIRQwFpShRiFGC83v467LLBaXq8)
 
-For now we will only focus on the necessary BODs, these being: Sync.RemitToPartyMasterData, Sync.SupplierPartyMaster and Sync.PurchaseOrder.
+Im Moment konzentrieren wir uns nur auf die erforderlichen BODs, diese sind: Sync.RemitToPartyMasterData, Sync.SupplierPartyMaster und Sync.PurchaseOrder.
 
-* Sync.RemitToPartyMasterData and Sync.SupplierPartyMaster
+* Sync.RemitToPartyMasterData und Sync.SupplierPartyMaster
 
-The configuration for these two BODs should look similar to the following (API Call Name changing for each)
+Die Konfiguration für diese beiden BODs sollte ungefähr wie folgt aussehen (der API Call Name ändert sich für jedes)
 
 ![](https://lh7-us.googleusercontent.com/1SeyL73b7K9vxkTzKk-pumRleoY1sx9MVwgEBMZ-oUf6GXG2C7fKIRMbnhWHHhIQhUDBS3oKQidrQIN08FZ\_7eKEt1Yp0cRqnsDlv1R5ShdZdNKmaXmU\_19DAVtiT3U0m2qm4cBOj9FcnT0eyawfJXk)
 
 * Sync.PurchaseOrder
 
-The configuration for this BOD should look similar to the following
+Die Konfiguration für dieses BOD sollte ungefähr wie folgt aussehen
 
 ![](https://lh7-us.googleusercontent.com/ljXpQxwepI3u6kcITZfACV9yYL1ZZZtBbWimkXW6aWFTI-yd7Gajrxw2pwxdcF1Xv3KoGDalq72yXvaipjQ-OmbcTzJ0PUUKnmE0pBa5pASEPg0amqKSbU82ZDOKr5alWXynAd53IM2i9HgZ1CsYIB4)
 
-Once these BODs are configured, you can save the connection point by pressing the icon located right to the back button.
+Sobald diese BODs konfiguriert sind, können Sie den Verbindungspunkt speichern, indem Sie auf das Symbol direkt rechts neben der Zurück-Schaltfläche klicken.
 
-## **Data Flow**
+## **Datenfluss**
 
-The data flow will look similar to the following
+Der Datenfluss sieht ungefähr wie folgt aus
 
 ![](https://lh7-us.googleusercontent.com/BtszuCXPwv-WYCGtnd\_beU9t0uNntEu6U2iCSstxu1GAziuCfFafQdy2LKZkYw4kbQVfzI5lBYYajOeNwXkn84xy7AXWlCFX4GLo6dukWtfkFPMsXaPga0EkbnrI0bHSKqezXsvYJKymemZYDySIfA8)
 
-(The reason for multiple DocBits APIs is due to each connection representing a different environment meaning, depending on the amount of environments you have, your data flow could differ slightly)
+(Der Grund für mehrere DocBits-APIs liegt darin, dass jede Verbindung eine andere Umgebung repräsentiert. Das bedeutet, dass Ihr Datenfluss je nach Anzahl Ihrer Umgebungen leicht abweichen kann.)
 
-For the purpose of this explanation we will use the example of having four separate environments.
+Für die Zwecke dieser Erläuterung verwenden wir das Beispiel von vier separaten Umgebungen.
 
 ### **M3**
 
-The start of the data flow consists of your M3 application
+Der Beginn des Datenflusses besteht aus Ihrer M3-Anwendung
 
 ### **Filter**
 
-Configuration of the filter looks as follows
+Die Konfiguration des Filters sieht wie folgt aus
 
 ![](https://lh7-us.googleusercontent.com/-rMMaL3ToAoxqMFXybclIcd61H4S25HI90xnHANGl3J7ldZ374\_T2V0q\_\_QSwuNSuXfu829G7kYRCfVslx-l9b1j5LAVKonCQqO3aK2FuWNwmtyvytAF6PaIv8jiEJhhxSwU47eKEo1ozbzyndSW7BY)
 
@@ -64,54 +62,52 @@ Configuration of the filter looks as follows
 
 ![](https://lh7-us.googleusercontent.com/saiZJD9diyo2JC-XV0vYCboPZJP-87zDH7LIGuBNMNzhL5alDZkShpCARfYd21oroC8eYBfYdckJiONty9IuOc7zHkIIlUWNqoxnPfygEc1R1Tnjt1KPZpSTr7-RLaa5lqS3\_2DPj96aV0vLdZk2tzw)
 
-(The accounting entity ID of course being unique to your organization)
+(Die Buchungskreis-ID (Accounting Entity ID) ist selbstverständlich für Ihre Organisation einzigartig)
 
-### **DocBits API**
+### **DocBits-API**
 
-Here you will add an application and select the DocBits API(s) you created earlier
+Hier fügen Sie eine Anwendung hinzu und wählen die zuvor erstellte(n) DocBits-API(s) aus
 
-### **Files**
+### **Dateien**
 
-The configuration should look as follows
+Die Konfiguration sollte wie folgt aussehen
 
 ![](https://lh7-us.googleusercontent.com/GLI8kFjQHePMo4ZBWIR1WPNAhkvmtG0BfYADpdlmNqEFMYJclMInVYmKPdaElPLyPR5qtkWOKTnqDFXMDV2pML3igNOFyFj3R9fj2XHRAs6-Rl3KWz4a8-ednk15wyLDJUziAR6ZT4GjuZO2ANw1ymY)
 
-## **M3 BOD Triggering**
+## **Auslösen der M3-BODs**
 
-Navigate to the Infor M3 application
+Navigieren Sie zur Infor M3-Anwendung
 
-Once at the main menu, type Command + R to open the command prompt search box. Then type evs006 and search.
+Geben Sie im Hauptmenü Command + R ein, um das Suchfeld der Befehlseingabe zu öffnen. Geben Sie dann evs006 ein und suchen Sie.
 
 ![](https://lh7-us.googleusercontent.com/Vn2WD1-8RuDURsYmzrTARO4mBafwhBUvDImM3z2Nd\_hDnVRWjbHgOoplV8QhBC9QtslnWqZyJNIhudvGFGaEl5S-qgloKn0rpwQsF0EuVnrzVplg1urqvSQ9fNa5Qetx8TwLuxZzL3N7wHz9kX4xr\_o)
 
-Once on this page, you will need to add the SupplierPartyMaster, RemitToPartyMaster and PurchaseOrder to the list.
+Auf dieser Seite müssen Sie SupplierPartyMaster, RemitToPartyMaster und PurchaseOrder zur Liste hinzufügen.
 
-BOD noun: SupplierPartyMaster
-
-Table: CIDMAS
-
-BOD noun: RemitToPartyMaster
+BOD Noun: SupplierPartyMaster
 
 Table: CIDMAS
 
-BOD noun: PurchaseOrder
+BOD Noun: RemitToPartyMaster
+
+Table: CIDMAS
+
+BOD Noun: PurchaseOrder
 
 Table: MPHEAD
 
-For each case you will need to press the plus icon to add them to list.
+In jedem Fall müssen Sie auf das Plus-Symbol klicken, um sie zur Liste hinzuzufügen.
 
 ![](https://lh7-us.googleusercontent.com/3y5xAtk4nSc5Eqk-vOJLL59jQHc1w-Fmtn0PIjSiBWTeOo974zg4UjjrK890MjfnsU1a4UtiSqtwcNlHmr6el6GRBd8GrSN\_ZlPk3W\_IQIVcppHOYwnAzHEgRF22JmeRRkJSHotXvd3k\_94\_pYjt6Uw)
 
-After you have added each of the BODs, right click on the BOD noun of the BOD and select Related → Run
+Nachdem Sie jedes der BODs hinzugefügt haben, klicken Sie mit der rechten Maustaste auf das BOD Noun des BOD und wählen Sie Related → Run
 
 ![](https://lh7-us.googleusercontent.com/HjkKvk7khjPgpjXmfyTyOLE2vNeB2qt2oN9ShOmrQiYhhvokRlBaZ0rlPtbwWUld54EhUJZLK0OVNGH\_eIYzFj22XgFHZccEM9g2nVQ\_5BgouHYoMfzfWYQVwluSdcednqrjilSByCdt44ytHgfCNyo)
 
-You will be taken to the following menu, where you will need to change BOD verb to Sync and then press NEXT to trigger the BODs.
+Sie werden zum folgenden Menü weitergeleitet, in dem Sie BOD Verb auf Sync ändern und dann NEXT drücken müssen, um die BODs auszulösen.
 
 ![](https://lh7-us.googleusercontent.com/FoJTP89zGI0FwRTyLjkIKfW75MbCrvcvqD\_ka--G1SFdzIhBAp7dq63\_WKMIEC-ouCHWA7sRd25rWfWclZJmWd7SGIZLwnSQ4id3nq82hOuFV9-mzMHAtGlhfCKtYwcQnrLyMSsrTmKNyME7lpYSeNA)
 
-Once you trigger the BODs, you will get a notification confirming this.
+Sobald Sie die BODs auslösen, erhalten Sie eine Benachrichtigung zur Bestätigung.
 
-If done successfully, the Supplier and Purchase Order tables should now be available under Settings → Master Data Lookup.
-
-
+Bei erfolgreicher Durchführung sollten die Tabellen für Lieferanten und Bestellungen nun unter Settings → Master Data Lookup verfügbar sein.

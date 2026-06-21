@@ -1,7 +1,5 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Versandauftrags-Dashboard
 
-# Shipment Order Dashboard
-
-This section offers a detailed overview of all shipment orders. It includes a search bar with various filters that you can select to quickly narrow down your results. Additionally, you can customize the arrangement of the column headers by using the drag-and-drop functionality for a more tailored viewing experience.
+Dieser Bereich bietet einen detaillierten Überblick über alle Versandaufträge. Er enthält eine Suchleiste mit verschiedenen Filtern, die Sie auswählen können, um Ihre Ergebnisse schnell einzugrenzen. Zusätzlich können Sie die Anordnung der Spaltenüberschriften per Drag-and-Drop anpassen, um ein noch individuelleres Anzeigeerlebnis zu erhalten.
 
 <figure><img src="../../.gitbook/assets/shipment_order_dashboard_overview.png" alt="Shipment Order Dashboard Interface"><figcaption></figcaption></figure>

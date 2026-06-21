@@ -1,24 +1,22 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
 ---
 hidden: true
 noIndex: true
 ---
 
-# Email
+# E-Mail
 
-Go to the Settings menu and select “Import” under Document Processing.
+Gehen Sie zum Menü „Einstellungen" und wählen Sie unter „Dokumentenverarbeitung" den Eintrag „Import".
 
 <figure><img src="../../../../.gitbook/assets/email1.png" alt=""><figcaption></figcaption></figure>
 
-Scroll to the bottom of the page and select the NEW button to create a new email import.
+Scrollen Sie zum Ende der Seite und wählen Sie die Schaltfläche NEU, um einen neuen E-Mail-Import zu erstellen.
 
 <figure><img src="../../../../.gitbook/assets/email2.png" alt=""><figcaption></figcaption></figure>
 
-After pressing NEW, the following menu will be shown to you.
+Nachdem Sie auf NEU gedrückt haben, wird Ihnen das folgende Menü angezeigt.
 
 <figure><img src="../../../../.gitbook/assets/email3.png" alt=""><figcaption></figcaption></figure>
 
-Here you can select which Protocol you would like.
+Hier können Sie auswählen, welches Protokoll Sie verwenden möchten.
 
 <figure><img src="../../../../.gitbook/assets/email4.png" alt="" width="207"><figcaption></figcaption></figure>

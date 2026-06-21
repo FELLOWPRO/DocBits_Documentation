@@ -1,43 +1,41 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Unser Dokumenten-Prioritätssystem
 
-# Our Document Priority System
+In unserem Dokumentenverarbeitungssystem bearbeiten wir täglich ein großes Volumen an Dokumenten von mehreren Kunden. Um sicherzustellen, dass die Dokumente jedes Kunden zeitnah verarbeitet werden, haben wir ein ausgeklügeltes Prioritätssystem implementiert. Dieses System passt die Prioritäten dynamisch an die Anzahl der ausstehenden Dokumente eines Kunden an und gewährleistet so **Fairness** und **Effizienz**. Schauen wir uns an, wie dieses Prioritätssystem funktioniert und wann der Aufgabenzähler zurückgesetzt wird.
 
-In our document processing system, we handle a large volume of documents from multiple customers daily. To ensure that every customer's documents are processed in a timely manner, we have implemented a sophisticated priority system. This system dynamically adjusts priorities based on the number of pending documents a customer has, ensuring **fairness** and **efficiency**. Let's dive into how this priority system works and when the task counter is reset.
+**Schlüsselkonzepte des Prioritätssystems**
 
-**Key Concepts of the Priority System**
+Unser Prioritätssystem basiert auf einigen Schlüsselkonzepten:
 
-Our priority system revolves around a few key concepts:
+1. **Ausstehende Dokumente**: Dies ist die Anzahl der Dokumente, die ein Kunde übermittelt hat, die jedoch noch nicht verarbeitet wurden.
+2. **Reset-Intervall**: Das System setzt die Anzahl der ausstehenden Dokumente in regelmäßigen Abständen auf null zurück, um sicherzustellen, dass kein Kunde die Verarbeitungsressourcen auf unbegrenzte Zeit für sich beanspruchen kann.
 
-1. **Pending Documents**: This is a count of the documents a customer has submitted but are yet to be processed.
-2. **Reset Interval**: The system periodically resets the pending document count to zero to ensure that no customer can monopolize the processing resources indefinitely.
+**So wird die Priorität bestimmt**
 
-**How the Priority is Determined**
+Hier finden Sie eine Schritt-für-Schritt-Erläuterung, wie die Priorität für die Verarbeitung von Dokumenten bestimmt wird:
 
-Here's a step-by-step explanation of how the priority for processing documents is determined:
+1. **Erfassung ausstehender Dokumente**: Jeder Kunde verfügt über eine Anzahl ausstehender Dokumente. Diese Anzahl hilft uns zu erkennen, wie viele Dokumente jedes Kunden auf ihre Verarbeitung warten.
+2. **Zurücksetzen der Anzahl**: Um Fairness zu wahren, setzen wir die Anzahl der ausstehenden Dokumente auf null zurück, wenn seit der letzten Aktualisierung eine bestimmte Zeit (das Reset-Intervall) vergangen ist. Dieses Intervall ist standardmäßig auf 1500 Sekunden (bzw. 25 Minuten) eingestellt.
+3. **Aktualisieren der Anzahl**: Wenn das Reset-Intervall noch nicht abgelaufen ist, verringern wir die Anzahl der ausstehenden Dokumente bei jeder Prüfung um eins und simulieren so die Verarbeitung eines Dokuments.
+4. **Festlegen der Prioritäten**: Die Priorität für die Verarbeitung von Aufgaben richtet sich nach der Anzahl der ausstehenden Dokumente. Je weniger ausstehende Dokumente vorhanden sind, desto höher ist die Priorität, was bedeutet, dass diese Aufgaben früher verarbeitet werden. Wir haben spezifische Schwellenwerte, um Prioritätsstufen von 1 (höchste Priorität) bis 9 (niedrigste Priorität) zuzuweisen.
 
-1. **Tracking Pending Docuemnts**: Each customer has a count of pending documents. This count helps us know how many documents are waiting to be processed for each customer.
-2. **Resetting the Count**: To maintain fairness, we reset the pending documents count to zero if a set amount of time (the reset interval) has passed since the last update. This interval is set to 1500 seconds (or 25 minutes) by default.
-3. **Updating the Count**: If the reset interval hasn't passed, we reduce the pending documents count by one each time we check, simulating the processing of a document.
-4. **Setting Priorities**: The priority for processing tasks is based on the number of pending documents. The fewer the pending documents, the higher the priority, meaning those tasks will be processed sooner. We have specific thresholds to assign priority levels from 1 (highest priority) to 9 (lowest priority).
+**Prioritätsstufen**
 
-**Priority Levels**
+Die Prioritätsstufen werden anhand der Anzahl der ausstehenden Dokumente wie folgt zugewiesen:
 
-The priority levels are assigned based on the pending documents count as follows:
-
-* **Priority 9**: If the pending documents count is less than -20
-* **Priority 8**: If the pending documents count is less than -14
-* **Priority 7**: If the pending documents count is less than -12
-* **Priority 6**: If the pending documents count is less than -10
-* **Priority 5**: If the pending documents count is less than -8
-* **Priority 4**: If the pending documents count is less than -6
-* **Priority 3**: If the pending documents count is less than -4
-* **Priority 2**: If the pending documents count is less than -2
-* **Priority 1**: If the pending documents count is greater than or equal to -2
+* **Priorität 9**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -20 ist
+* **Priorität 8**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -14 ist
+* **Priorität 7**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -12 ist
+* **Priorität 6**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -10 ist
+* **Priorität 5**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -8 ist
+* **Priorität 4**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -6 ist
+* **Priorität 3**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -4 ist
+* **Priorität 2**: Wenn die Anzahl der ausstehenden Dokumente kleiner als -2 ist
+* **Priorität 1**: Wenn die Anzahl der ausstehenden Dokumente größer oder gleich -2 ist
 
 {% hint style="info" %}
-In simpler terms, as the number of pending documents increases, the priority level lowers, meaning those documents are processed later compared to others with higher priorities.
+Vereinfacht ausgedrückt: Je höher die Anzahl der ausstehenden Dokumente, desto niedriger die Prioritätsstufe, was bedeutet, dass diese Dokumente im Vergleich zu anderen mit höherer Priorität später verarbeitet werden.
 {% endhint %}
 
-**When the Counter is Reset**
+**Wann der Zähler zurückgesetzt wird**
 
-The pending documents counter is reset to zero if more than the reset interval (**1500** seconds) has passed since the last update. This mechanism ensures that no customer can accumulate pending documents endlessly and hog the system resources. By periodically resetting the counter, we guarantee that every customer gets a fair share of processing time.
+Der Zähler für ausstehende Dokumente wird auf null zurückgesetzt, wenn seit der letzten Aktualisierung mehr als das Reset-Intervall (**1500** Sekunden) vergangen ist. Dieser Mechanismus stellt sicher, dass kein Kunde endlos ausstehende Dokumente ansammeln und die Systemressourcen monopolisieren kann. Durch das regelmäßige Zurücksetzen des Zählers garantieren wir, dass jeder Kunde einen fairen Anteil an Verarbeitungszeit erhält.

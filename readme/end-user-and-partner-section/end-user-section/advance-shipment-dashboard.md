@@ -1,7 +1,5 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Avis-Dashboard
 
-# Advance Shipment Dashboard
-
-This section offers a detailed overview of all advanced shipments. It includes a search bar with various filters that you can select to quickly narrow down your results. Additionally, you can customize the arrangement of the column headers by using the drag-and-drop functionality for a more tailored viewing experience.
+Dieser Abschnitt bietet einen detaillierten Überblick über alle Vorab-Sendungen (Avise). Er enthält eine Suchleiste mit verschiedenen Filtern, die Sie auswählen können, um Ihre Ergebnisse schnell einzugrenzen. Darüber hinaus können Sie die Anordnung der Spaltenüberschriften mithilfe der Drag-and-Drop-Funktion individuell anpassen, um ein maßgeschneiderteres Anzeigeerlebnis zu erhalten.
 
 <figure><img src="../../.gitbook/assets/advance_shipment_dashboard_overview.png" alt="Advance Shipment Dashboard Interface"><figcaption></figcaption></figure>

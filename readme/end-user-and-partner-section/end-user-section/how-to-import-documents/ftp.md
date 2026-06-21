@@ -1,5 +1,3 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
 ---
 hidden: true
 noIndex: true
@@ -7,35 +5,35 @@ noIndex: true
 
 # FTP
 
-If you would like to integrate your SFTP with DocBits in order to import documents.
+Wenn Sie Ihren SFTP mit DocBits integrieren möchten, um Dokumente zu importieren.
 
-Requirements
+Voraussetzungen
 
-* Correctly configured, Linux compatible SFTP Server
-* SFTP Hostname, Username and Password
-* Dedicated Import folder
+* Korrekt konfigurierter, Linux-kompatibler SFTP-Server
+* SFTP-Hostname, Benutzername und Passwort
+* Dedizierter Import-Ordner
 
-**Import Configuration**
+**Import-Konfiguration**
 
-From the Dashboard, open Settings and navigate to Import. Under FTP Import, select to add a new configuration.
+Öffnen Sie im Dashboard die Einstellungen und navigieren Sie zu „Import". Wählen Sie unter „FTP-Import" die Option, eine neue Konfiguration hinzuzufügen.
 
 <figure><img src="../../../.gitbook/assets/ftp1.png" alt="Add New FTP Configuration"><figcaption></figcaption></figure>
 
-Enter SFTP credentials in the given spaces and select save (The API Key field will automatically be filled with the API Key of the environment you are working on).
+Geben Sie die SFTP-Anmeldedaten in die vorgesehenen Felder ein und wählen Sie „Speichern" (das Feld „API-Schlüssel" wird automatisch mit dem API-Schlüssel der Umgebung gefüllt, in der Sie arbeiten).
 
 <figure><img src="../../../.gitbook/assets/ftp_import_configuration_form.png" alt="FTP Import Configuration Form"><figcaption></figcaption></figure>
 
-Once you have entered all the necessary details of your SFTP, click SAVE.
+Sobald Sie alle erforderlichen Details Ihres SFTP eingegeben haben, klicken Sie auf SPEICHERN.
 
-### **FTP File Archiving**
+### **FTP-Dateiarchivierung**
 
-1. **Enable File Archiving**
-   * Locate the "File Archiving" option.
-   * Toggle the switch to the "On" position to enable archiving.
-2. **Select the Archive Directory**
-   * Once the "File Archiving" switch is enabled, a field will appear allowing you to specify the directory path for archived files.
-   * Select the desired folder path on the SFTP/FTP server where the archived files should be stored.
-3. **Save Changes**
-   * Click the **Save** button to apply the changes.
+1. **Dateiarchivierung aktivieren**
+   * Suchen Sie die Option „Dateiarchivierung".
+   * Schalten Sie den Schalter in die Position „Ein", um die Archivierung zu aktivieren.
+2. **Archivverzeichnis auswählen**
+   * Sobald der Schalter „Dateiarchivierung" aktiviert ist, erscheint ein Feld, in dem Sie den Verzeichnispfad für archivierte Dateien angeben können.
+   * Wählen Sie den gewünschten Ordnerpfad auf dem SFTP-/FTP-Server aus, in dem die archivierten Dateien gespeichert werden sollen.
+3. **Änderungen speichern**
+   * Klicken Sie auf die Schaltfläche **Speichern**, um die Änderungen zu übernehmen.
 
 <figure><img src="../../../.gitbook/assets/ftp_file_archiving_settings.png" alt="FTP File Archiving Settings"><figcaption></figcaption></figure>

@@ -1,35 +1,32 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Fehlerbehebung
 
-# Troubleshooting
-
-## Here are specific troubleshooting tips for common issues related to dashboard settings:
+## Hier finden Sie spezifische Tipps zur Fehlerbehebung für häufige Probleme im Zusammenhang mit den Dashboard-Einstellungen:
 
 
 
-**Filters not applied correctly:**
+**Filter werden nicht korrekt angewendet:**
 
-* First, check the filter settings to make sure the correct filters have been applied and that they are displaying the desired data.
-* Make sure that filters are applied logically and consistently. Sometimes incorrect filter logic or incorrect combinations can produce unexpected results.
-* Provide users with guidance on how to use filters correctly to ensure they can use the filtering features effectively.
+* Überprüfen Sie zunächst die Filtereinstellungen, um sicherzustellen, dass die richtigen Filter angewendet wurden und die gewünschten Daten angezeigt werden.
+* Stellen Sie sicher, dass die Filter logisch und konsistent angewendet werden. Manchmal können eine fehlerhafte Filterlogik oder falsche Kombinationen zu unerwarteten Ergebnissen führen.
+* Geben Sie den Benutzern Anleitungen zur korrekten Verwendung der Filter, damit sie die Filterfunktionen effektiv nutzen können.
 
-**Delays in loading data:**
+**Verzögerungen beim Laden von Daten:**
 
-* Check the network connection to make sure it is stable and not causing delays.
-* Check the server load and the performance of the data source to see if that is the problem. You may need to optimize the data source or switch to a more powerful infrastructure.
-* Implement caching mechanisms to reduce loading times, especially for frequently accessed data. Encourage users to optimize their data queries by retrieving only the required data fields and using filters to reduce the amount of data.
+* Überprüfen Sie die Netzwerkverbindung, um sicherzustellen, dass sie stabil ist und keine Verzögerungen verursacht.
+* Überprüfen Sie die Serverauslastung und die Leistung der Datenquelle, um festzustellen, ob darin das Problem liegt. Möglicherweise müssen Sie die Datenquelle optimieren oder auf eine leistungsfähigere Infrastruktur umsteigen.
+* Implementieren Sie Caching-Mechanismen, um die Ladezeiten zu verkürzen, insbesondere für häufig abgerufene Daten. Ermutigen Sie die Benutzer, ihre Datenabfragen zu optimieren, indem sie nur die erforderlichen Datenfelder abrufen und Filter verwenden, um die Datenmenge zu reduzieren.
 
-**Browser issues:**
+**Browser-Probleme:**
 
-* Make sure the browser they are using is compatible with the dashboard and has all required updates installed.
-* Recommend users to clear their browser cache regularly to avoid memory issues and ensure they are getting the most up-to-date data.
-* Check for extensions or plugins in the browser that might be interfering with the dashboard and temporarily disable them if necessary to isolate problems.
+* Stellen Sie sicher, dass der verwendete Browser mit dem Dashboard kompatibel ist und alle erforderlichen Updates installiert sind.
+* Empfehlen Sie den Benutzern, ihren Browser-Cache regelmäßig zu leeren, um Speicherprobleme zu vermeiden und sicherzustellen, dass sie die aktuellsten Daten erhalten.
+* Prüfen Sie, ob Erweiterungen oder Plugins im Browser das Dashboard stören könnten, und deaktivieren Sie diese bei Bedarf vorübergehend, um Probleme einzugrenzen.
 
-**User-specific issues:**
+**Benutzerspezifische Probleme:**
 
-* Offer individualized support for users who continue to have problems. You may need to check their specific settings, permissions, or network configuration to identify and resolve the issue.
+* Bieten Sie individuelle Unterstützung für Benutzer an, die weiterhin Probleme haben. Möglicherweise müssen Sie deren spezifische Einstellungen, Berechtigungen oder Netzwerkkonfiguration überprüfen, um das Problem zu identifizieren und zu beheben.
 
 
 
-By providing users with these specific troubleshooting tips, you can help them effectively resolve common issues related to dashboard settings and increase their productivity.
-
+Indem Sie den Benutzern diese spezifischen Tipps zur Fehlerbehebung an die Hand geben, können Sie ihnen helfen, häufige Probleme im Zusammenhang mit den Dashboard-Einstellungen effektiv zu lösen und ihre Produktivität zu steigern.
 

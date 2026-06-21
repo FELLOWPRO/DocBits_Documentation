@@ -1,76 +1,74 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Import
 
-# Importar
+## Überblick
 
-## Resumen
+In den Einstellungen für den **Import** können Sie dokumentenspezifische Optionen für den Import konfigurieren oder automatische Importe über FTP oder E-Mail einrichten. Diese Seite bietet einen detaillierten Überblick über alle verfügbaren Einstellungen.
 
-En los ajustes de **Importar**, puedes configurar opciones específicas para documentos para la importación, o configurar importaciones automáticas a través de FTP o correo electrónico. Esta página proporciona una visión general detallada de todos los ajustes disponibles.
+## Zugriff
 
-## Cómo Acceder
-
-1.  Navega a **Ajustes** -> **Procesamiento de documentos** -> **Importar**
+1.  Navigieren Sie zu **Einstellungen** -> **Dokumentenverarbeitung** -> **Import**
 
     <figure><img src="../../../.gitbook/assets/ftp_0_es.png" alt=""><figcaption></figcaption></figure>
 
-## **Restricción de importación de la página del documento**
+## **Seitenbeschränkung beim Dokumentenimport**
 
-* **Restringir a las páginas**: Esta configuración te permite limitar el procesamiento a un cierto número de páginas por documento. El valor predeterminado es **60 páginas**, lo que significa que los documentos que superen este límite se recortarán a **60 páginas**, y cualquier **página restante será descartada.**
-* **Términos de pago días**: Define los términos de pago predeterminados (en días) que pueden aplicarse a los documentos.
-* **Patrón de fecha**: Establece el patrón para cómo deben ser reconocidas y formateadas las fechas dentro de los documentos importados.
+* **Auf Seiten beschränken**: Mit dieser Einstellung können Sie die Verarbeitung auf eine bestimmte Anzahl von Seiten pro Dokument begrenzen. Der Standardwert beträgt **60 Seiten**, das heißt, Dokumente, die dieses Limit überschreiten, werden auf **60 Seiten** gekürzt, und alle **übrigen Seiten werden verworfen.**
+* **Zahlungsbedingungen Tage**: Legt die standardmäßigen Zahlungsbedingungen (in Tagen) fest, die auf die Dokumente angewendet werden können.
+* **Datumsmuster**: Legt das Muster dafür fest, wie Daten innerhalb der importierten Dokumente erkannt und formatiert werden sollen.
 
 <figure><img src="../../../.gitbook/assets/document_settins_1_es.png" alt=""><figcaption></figcaption></figure>
 
-## **Importación ftp**
+## **FTP-Import**
 
-### Requisitos
+### Voraussetzungen
 
-Para usar FTP para importar datos automáticamente, asegúrate de que se cumplan los siguientes requisitos:
+Um FTP zum automatischen Datenimport zu verwenden, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-* Servidor FTP correctamente configurado y compatible con Linux
-* Nombre de host FTP, Nombre de usuario y Contraseña
-* Carpeta de Importación dedicada
+* Korrekt konfigurierter und Linux-kompatibler FTP-Server
+* FTP-Hostname, Benutzername und Passwort
+* Dediziertes Importverzeichnis
 
-### Agregar nueva conexión
+### Neue Verbindung hinzufügen
 
-1.  Para agregar una nueva conexión, haz clic en el botón **Agregar** en la sección FTP.
+1.  Um eine neue Verbindung hinzuzufügen, klicken Sie auf die Schaltfläche **Hinzufügen** im FTP-Bereich.
 
     <figure><img src="../../../.gitbook/assets/ftp_7_es.png" alt=""><figcaption></figcaption></figure>
-2.  Ingresa tus credenciales FTP en los campos designados. El campo de Clave API se llenará automáticamente.
+2.  Geben Sie Ihre FTP-Zugangsdaten in die dafür vorgesehenen Felder ein. Das Feld API-Schlüssel wird automatisch ausgefüllt.
 
-    * **Tipo:** Especifica el protocolo FTP a utilizar. Puedes elegir entre **FTP**, **FTPS** o **SFTP**.
-    * **Puerto:** Especifica el número de puerto que se utilizará para el protocolo FTP seleccionado.
-    * **Nombre del servidor (requerido):** La dirección del servidor desde el cual se recuperarán los documentos.
-    * **Nombre de usuario (requerido):** El nombre de inicio de sesión utilizado para acceder al servidor FTP.
-    * **Contraseña (requerido):** La contraseña asociada con el nombre de usuario para acceder al servidor FTP.
-    * **Patrones de coincidencia de nombre de archivo:** Para especificar qué archivos importar en función de sus nombres.
-    * **Suborganizaciones:** Selecciona a qué suborganización debe aplicarse la importación FTP.
-    * **Clave API (requerido):** Este campo se llenará automáticamente en función de la organización en la que hayas iniciado sesión.
-    * **Directorio principal:** Especifica el directorio en el servidor FTP desde el cual se importarán los archivos.
-    * **Directorio de importación:** Te permite especificar un subdirectorio dentro del directorio principal desde el cual se importarán los archivos.
-    * **Archivar después de importar:** Te permite archivar archivos después de la importación. Una vez activado, puedes especificar el directorio donde se deben mover los archivos después de una importación exitosa.
-    * **Incluir archivos de subcarpetas:** Cuando está habilitado, también se buscarán archivos en subdirectorios dentro del directorio principal.
+    * **Typ:** Gibt das zu verwendende FTP-Protokoll an. Sie können zwischen **FTP**, **FTPS** oder **SFTP** wählen.
+    * **Port:** Gibt die Portnummer an, die für das ausgewählte FTP-Protokoll verwendet werden soll.
+    * **Servername (erforderlich):** Die Adresse des Servers, von dem die Dokumente abgerufen werden.
+    * **Benutzername (erforderlich):** Der Anmeldename, der für den Zugriff auf den FTP-Server verwendet wird.
+    * **Passwort (erforderlich):** Das Passwort, das mit dem Benutzernamen für den Zugriff auf den FTP-Server verknüpft ist.
+    * **Muster für die Dateinamenübereinstimmung:** Um anhand der Dateinamen anzugeben, welche Dateien importiert werden sollen.
+    * **Suborganisationen:** Wählen Sie aus, auf welche Suborganisation der FTP-Import angewendet werden soll.
+    * **API-Schlüssel (erforderlich):** Dieses Feld wird automatisch auf Grundlage der Organisation ausgefüllt, in der Sie angemeldet sind.
+    * **Hauptverzeichnis:** Gibt das Verzeichnis auf dem FTP-Server an, aus dem die Dateien importiert werden.
+    * **Importverzeichnis:** Ermöglicht es Ihnen, ein Unterverzeichnis innerhalb des Hauptverzeichnisses anzugeben, aus dem die Dateien importiert werden.
+    * **Nach dem Import archivieren:** Ermöglicht es Ihnen, Dateien nach dem Import zu archivieren. Sobald diese Option aktiviert ist, können Sie das Verzeichnis angeben, in das die Dateien nach einem erfolgreichen Import verschoben werden sollen.
+    * **Dateien aus Unterordnern einbeziehen:** Wenn diese Option aktiviert ist, wird auch in Unterverzeichnissen innerhalb des Hauptverzeichnisses nach Dateien gesucht.
 
     <figure><img src="../../../.gitbook/assets/ftp_4_es.png" alt=""><figcaption></figcaption></figure>
-3. Una vez que hayas ingresado todos los detalles necesarios de tu FTP, haz clic en **Guardar**.
-4. Después de guardar tu conexión, puedes activarla haciendo clic en los tres puntos en la columna de **Acción** de tu conexión, luego seleccionando **Activar**.
+3. Sobald Sie alle erforderlichen Angaben zu Ihrem FTP eingegeben haben, klicken Sie auf **Speichern**.
+4. Nachdem Sie Ihre Verbindung gespeichert haben, können Sie sie aktivieren, indem Sie auf die drei Punkte in der Spalte **Aktion** Ihrer Verbindung klicken und dann **Aktivieren** auswählen.
 
-### Acciones para FTP
+### Aktionen für FTP
 
-Puedes hacer clic en los tres puntos en la columna de **Acción** para acceder a las siguientes opciones para tu conexión:
+Sie können auf die drei Punkte in der Spalte **Aktion** klicken, um auf die folgenden Optionen für Ihre Verbindung zuzugreifen:
 
 <figure><img src="../../../.gitbook/assets/ftp_5_es.png" alt="" width="184"><figcaption></figcaption></figure>
 
-* **Conexión de prueba:** Prueba la conexión a tu servidor FTP.
-* **Registros de conexión:** Abre los registros de tu conexión FTP, incluyendo mensajes de error si ocurren problemas.
-* **Activar/Desactivar:** Activa/desactiva tu conexión.
-* **Editar:** Te permite hacer cambios en tu conexión.
-* **Borrar:** Elimina tu conexión.
+* **Verbindung testen:** Testet die Verbindung zu Ihrem FTP-Server.
+* **Verbindungsprotokolle:** Öffnet die Protokolle Ihrer FTP-Verbindung, einschließlich Fehlermeldungen, falls Probleme auftreten.
+* **Aktivieren/Deaktivieren:** Aktiviert/deaktiviert Ihre Verbindung.
+* **Bearbeiten:** Ermöglicht es Ihnen, Änderungen an Ihrer Verbindung vorzunehmen.
+* **Löschen:** Entfernt Ihre Verbindung.
 
-## **Importación de correo electrónico**
+## **E-Mail-Import**
 
-Puedes configurar una importación de correo electrónico que importe automáticamente documentos de tu bandeja de entrada tan pronto como lleguen. Puedes elegir configurar una conexión IMAP o una conexión OAuth.
+Sie können einen E-Mail-Import einrichten, der Dokumente automatisch aus Ihrem Posteingang importiert, sobald sie eintreffen. Sie können wählen, ob Sie eine IMAP-Verbindung oder eine OAuth-Verbindung einrichten möchten.
 
-<mark style="color:red;">**Nota**</mark>: Solo se importarán documentos con los siguientes tipos de archivo:
+<mark style="color:red;">**Hinweis**</mark>: Es werden nur Dokumente mit den folgenden Dateitypen importiert:
 
 * `.pdf`
 * `.tiff` / `.tif`
@@ -80,84 +78,84 @@ Puedes configurar una importación de correo electrónico que importe automátic
 * `.edi`
 * `.purchaseorder`
 
-### Agregar nueva conexión IMAP
+### Neue IMAP-Verbindung hinzufügen
 
-1.  Para agregar una nueva conexión IMAP, haz clic en el botón **Agregar** en la sección **Importación de correo electrónico**.
+1.  Um eine neue IMAP-Verbindung hinzuzufügen, klicken Sie auf die Schaltfläche **Hinzufügen** im Bereich **E-Mail-Import**.
 
     <figure><img src="../../../.gitbook/assets/email_1_es.png" alt=""><figcaption></figcaption></figure>
-2. Selecciona IMAP como el protocolo.
-3. Ingresa tus credenciales de correo electrónico en los campos designados. El campo de Clave API se llenará automáticamente.
-   * **Encriptación:** Selecciona el tipo de encriptación a utilizar — ya sea **SSL** o **TLS**.
-   * **Nombre del servidor:** La dirección del servidor de correo electrónico.
-   * **Nombre de usuario:** El identificador utilizado para tu configuración de importación de correo en DocBits.
-   * **Correo electrónico:** La dirección de correo electrónico utilizada para importar documentos en el sistema.
-   * **Contraseña:** La contraseña asociada con la dirección de correo electrónico proporcionada.
-   * **Suborganizaciones:** Selecciona la suborganización a la que debe aplicarse la importación de correo electrónico.
-   * **Clave API:** Este campo se llenará automáticamente en función de la organización en la que hayas iniciado sesión.
-   * **Enviar aviso de error de importación a esta dirección de correo electrónico:** Especifica una dirección de correo electrónico para recibir notificaciones de error si algo sale mal durante el proceso de importación.
-   * **Puerto:** Especifica el número de puerto que se utilizará para la configuración de importación de correo electrónico seleccionada.
-   * **Carpeta:** Selecciona una carpeta desde la cual se importarán los documentos.\
-     <mark style="color:red;">**Nota**</mark>: La opción **Carpeta** se vuelve disponible solo después de que hayas creado exitosamente una conexión IMAP. Para agregar una carpeta después de la creación, haz clic en los tres puntos en la columna de **Acción**, luego selecciona **Editar**. La opción debería estar disponible ahora.
-   * **Mover correos electrónicos a otra carpeta:** Cuando está habilitado, te permite especificar una carpeta donde se moverán los correos electrónicos después de una importación exitosa.\
-     <mark style="color:red;">**Nota**</mark>: La opción **Mover correos electrónicos a otra carpeta** se vuelve disponible solo después de que hayas creado exitosamente una conexión IMAP. Para activar esta configuración, haz clic en los tres puntos en la columna de **Acción**, luego selecciona **Editar**. La opción debería estar disponible ahora.
-   * **Fusionar documentos adjuntos:** Combina múltiples documentos adjuntos en un solo documento.
-   * **Enviar correo electrónico al remitente después de la importación:** Envía un correo electrónico de confirmación al remitente original después de que la importación esté completa. Una vez activado, puedes especificar el asunto y el cuerpo del correo electrónico.
-   * **Bloquear la importación de nombres de archivos duplicados:** Previene la importación si ya existe un documento con el mismo nombre.
-4. Después de guardar tu conexión, puedes activarla haciendo clic en los tres puntos en la columna de **Acción** de tu conexión, luego seleccionando **Activar**.
+2. Wählen Sie IMAP als Protokoll aus.
+3. Geben Sie Ihre E-Mail-Zugangsdaten in die dafür vorgesehenen Felder ein. Das Feld API-Schlüssel wird automatisch ausgefüllt.
+   * **Verschlüsselung:** Wählen Sie den zu verwendenden Verschlüsselungstyp aus — entweder **SSL** oder **TLS**.
+   * **Servername:** Die Adresse des E-Mail-Servers.
+   * **Benutzername:** Die Kennung, die für Ihre E-Mail-Importkonfiguration in DocBits verwendet wird.
+   * **E-Mail:** Die E-Mail-Adresse, die zum Importieren von Dokumenten in das System verwendet wird.
+   * **Passwort:** Das Passwort, das mit der angegebenen E-Mail-Adresse verknüpft ist.
+   * **Suborganisationen:** Wählen Sie die Suborganisation aus, auf die der E-Mail-Import angewendet werden soll.
+   * **API-Schlüssel:** Dieses Feld wird automatisch auf Grundlage der Organisation ausgefüllt, in der Sie angemeldet sind.
+   * **Importfehlermeldung an diese E-Mail-Adresse senden:** Geben Sie eine E-Mail-Adresse an, um Fehlerbenachrichtigungen zu erhalten, falls während des Importvorgangs etwas schiefgeht.
+   * **Port:** Gibt die Portnummer an, die für die ausgewählte E-Mail-Importkonfiguration verwendet werden soll.
+   * **Ordner:** Wählen Sie einen Ordner aus, aus dem die Dokumente importiert werden.\
+     <mark style="color:red;">**Hinweis**</mark>: Die Option **Ordner** wird erst verfügbar, nachdem Sie erfolgreich eine IMAP-Verbindung erstellt haben. Um nach der Erstellung einen Ordner hinzuzufügen, klicken Sie auf die drei Punkte in der Spalte **Aktion** und wählen dann **Bearbeiten** aus. Die Option sollte nun verfügbar sein.
+   * **E-Mails in einen anderen Ordner verschieben:** Wenn diese Option aktiviert ist, können Sie einen Ordner angeben, in den die E-Mails nach einem erfolgreichen Import verschoben werden.\
+     <mark style="color:red;">**Hinweis**</mark>: Die Option **E-Mails in einen anderen Ordner verschieben** wird erst verfügbar, nachdem Sie erfolgreich eine IMAP-Verbindung erstellt haben. Um diese Einstellung zu aktivieren, klicken Sie auf die drei Punkte in der Spalte **Aktion** und wählen dann **Bearbeiten** aus. Die Option sollte nun verfügbar sein.
+   * **Angehängte Dokumente zusammenführen:** Kombiniert mehrere angehängte Dokumente zu einem einzigen Dokument.
+   * **E-Mail nach dem Import an den Absender senden:** Sendet eine Bestätigungs-E-Mail an den ursprünglichen Absender, nachdem der Import abgeschlossen ist. Sobald diese Option aktiviert ist, können Sie den Betreff und den Text der E-Mail angeben.
+   * **Import von doppelten Dateinamen blockieren:** Verhindert den Import, wenn bereits ein Dokument mit demselben Namen existiert.
+4. Nachdem Sie Ihre Verbindung gespeichert haben, können Sie sie aktivieren, indem Sie auf die drei Punkte in der Spalte **Aktion** Ihrer Verbindung klicken und dann **Aktivieren** auswählen.
 
-### Acciones para IMAP
+### Aktionen für IMAP
 
-Puedes hacer clic en los tres puntos en la columna de **Acción** para acceder a las siguientes opciones para tu conexión:
+Sie können auf die drei Punkte in der Spalte **Aktion** klicken, um auf die folgenden Optionen für Ihre Verbindung zuzugreifen:
 
 <figure><img src="../../../.gitbook/assets/email_7_es.png" alt="" width="190"><figcaption></figcaption></figure>
 
-* **Conexión de prueba:** Prueba la conexión a tu cliente IMAP.
-* **Registros de conexión:** Abre los registros de tu conexión de correo electrónico, incluyendo cualquier mensaje de error que ocurra durante el proceso.
-* **Registro de importación:** Abre los registros de importaciones pasadas para la conexión respectiva, incluyendo cualquier mensaje de error que ocurrió durante el proceso.
-* **Activar/Desactivar:** Activa/desactiva tu conexión.
-* **Editar:** Te permite hacer cambios en tu conexión.
-* **Borrar:** Elimina tu conexión.
+* **Verbindung testen:** Testet die Verbindung zu Ihrem IMAP-Client.
+* **Verbindungsprotokolle:** Öffnet die Protokolle Ihrer E-Mail-Verbindung, einschließlich aller Fehlermeldungen, die während des Vorgangs auftreten.
+* **Importprotokoll:** Öffnet die Protokolle vergangener Importe für die jeweilige Verbindung, einschließlich aller Fehlermeldungen, die während des Vorgangs aufgetreten sind.
+* **Aktivieren/Deaktivieren:** Aktiviert/deaktiviert Ihre Verbindung.
+* **Bearbeiten:** Ermöglicht es Ihnen, Änderungen an Ihrer Verbindung vorzunehmen.
+* **Löschen:** Entfernt Ihre Verbindung.
 
-### Agregar nueva conexión OAuth Office365
+### Neue OAuth-Office365-Verbindung hinzufügen
 
-1.  Para agregar una nueva conexión OAuth Office365, haz clic en el botón **Agregar** en la sección **Importación de correo electrónico**.
+1.  Um eine neue OAuth-Office365-Verbindung hinzuzufügen, klicken Sie auf die Schaltfläche **Hinzufügen** im Bereich **E-Mail-Import**.
 
     <figure><img src="../../../.gitbook/assets/email_1_es.png" alt=""><figcaption></figcaption></figure>
-2.  Selecciona **OAuth Office365** como el protocolo, luego haz clic en **Autenticar**.
+2.  Wählen Sie **OAuth Office365** als Protokoll aus und klicken Sie dann auf **Authentifizieren**.
 
     <figure><img src="../../../.gitbook/assets/email_3_es.png" alt=""><figcaption></figcaption></figure>
-3.  Serás redirigido a una página de Microsoft donde se te pedirá que ingreses un código. Para recuperar este código, regresa a DocBits—el código se mostrará allí, como se muestra a continuación. Copia el código e ingrésalo en la página de Microsoft. Después, se te pedirá que ingreses tus credenciales de Microsoft.
+3.  Sie werden zu einer Microsoft-Seite weitergeleitet, auf der Sie aufgefordert werden, einen Code einzugeben. Um diesen Code abzurufen, kehren Sie zu DocBits zurück — der Code wird dort angezeigt, wie unten dargestellt. Kopieren Sie den Code und geben Sie ihn auf der Microsoft-Seite ein. Anschließend werden Sie aufgefordert, Ihre Microsoft-Zugangsdaten einzugeben.
 
     <figure><img src="../../../.gitbook/assets/email_4_es.png" alt=""><figcaption></figcaption></figure>
-4. Sigue los pasos en la página de Microsoft. Una vez que hayas terminado, regresa a DocBits y haz clic en **Finalizar autenticación**.
-5.  Ahora puedes configurar los siguientes ajustes:
+4. Folgen Sie den Schritten auf der Microsoft-Seite. Sobald Sie fertig sind, kehren Sie zu DocBits zurück und klicken auf **Authentifizierung abschließen**.
+5.  Nun können Sie die folgenden Einstellungen konfigurieren:
 
-    * **Suborganizaciones:** Selecciona la suborganización a la que debe aplicarse la importación de correo electrónico.
-    * **Usar carpeta:** Selecciona una carpeta desde la cual se importarán los documentos.
-    * **Usar buzón compartido:** Especifica la dirección de correo electrónico compartida desde la cual se deben importar los documentos.
-    * **Mover correo a otra carpeta:** Especifica una carpeta a la que se deben mover los correos electrónicos después de una importación exitosa.
-    * **Enviar aviso de error de importación a esta dirección de correo electrónico:** Especifica una dirección de correo electrónico para recibir notificaciones de error si algo sale mal durante el proceso de importación.
+    * **Suborganisationen:** Wählen Sie die Suborganisation aus, auf die der E-Mail-Import angewendet werden soll.
+    * **Ordner verwenden:** Wählen Sie einen Ordner aus, aus dem die Dokumente importiert werden.
+    * **Gemeinsames Postfach verwenden:** Geben Sie die gemeinsame E-Mail-Adresse an, aus der die Dokumente importiert werden sollen.
+    * **E-Mail in einen anderen Ordner verschieben:** Geben Sie einen Ordner an, in den die E-Mails nach einem erfolgreichen Import verschoben werden sollen.
+    * **Importfehlermeldung an diese E-Mail-Adresse senden:** Geben Sie eine E-Mail-Adresse an, um Fehlerbenachrichtigungen zu erhalten, falls während des Importvorgangs etwas schiefgeht.
 
     <figure><img src="../../../.gitbook/assets/email_5_es.png" alt=""><figcaption></figcaption></figure>
-6. Una vez que hayas configurado el comportamiento deseado, puedes comenzar a importar correos electrónicos haciendo clic en **Importar** o guardar tus cambios haciendo clic en **Guardar**.
-7. Después de guardar tu conexión, puedes activarla haciendo clic en los tres puntos en la columna de **Acción** de tu conexión, luego seleccionando **Activar**.
+6. Sobald Sie das gewünschte Verhalten konfiguriert haben, können Sie den Import von E-Mails durch Klicken auf **Importieren** starten oder Ihre Änderungen durch Klicken auf **Speichern** sichern.
+7. Nachdem Sie Ihre Verbindung gespeichert haben, können Sie sie aktivieren, indem Sie auf die drei Punkte in der Spalte **Aktion** Ihrer Verbindung klicken und dann **Aktivieren** auswählen.
 
-### Acciones para OAuth Office365
+### Aktionen für OAuth Office365
 
-Puedes hacer clic en los tres puntos en la columna de **Acción** para acceder a las siguientes opciones para tu conexión:
+Sie können auf die drei Punkte in der Spalte **Aktion** klicken, um auf die folgenden Optionen für Ihre Verbindung zuzugreifen:
 
 <figure><img src="../../../.gitbook/assets/email_6_es.png" alt="" width="189"><figcaption></figcaption></figure>
 
-* **Registros de conexión:** Abre los registros de tu conexión de correo electrónico, incluyendo cualquier mensaje de error que ocurra durante el proceso.
-* **Registro de importación:** Abre los registros de importaciones pasadas para la conexión respectiva, incluyendo cualquier mensaje de error que ocurrió durante el proceso.
-* **Activar/Desactivar:** Activa/desactiva tu conexión.
-* **Editar:** Te permite hacer cambios en tu conexión.
-* **Borrar:** Elimina tu conexión.
+* **Verbindungsprotokolle:** Öffnet die Protokolle Ihrer E-Mail-Verbindung, einschließlich aller Fehlermeldungen, die während des Vorgangs auftreten.
+* **Importprotokoll:** Öffnet die Protokolle vergangener Importe für die jeweilige Verbindung, einschließlich aller Fehlermeldungen, die während des Vorgangs aufgetreten sind.
+* **Aktivieren/Deaktivieren:** Aktiviert/deaktiviert Ihre Verbindung.
+* **Bearbeiten:** Ermöglicht es Ihnen, Änderungen an Ihrer Verbindung vorzunehmen.
+* **Löschen:** Entfernt Ihre Verbindung.
 
-### Registro de importación
+### Importprotokoll
 
-Puedes ver el registro de importación de todas las conexiones de correo electrónico creadas, incluyendo cualquier mensaje de error que ocurrió durante el proceso, haciendo clic en el botón **Registro de importación** en la esquina superior derecha de la sección de Importación de correo electrónico.
+Sie können das Importprotokoll aller erstellten E-Mail-Verbindungen einsehen, einschließlich aller Fehlermeldungen, die während des Vorgangs aufgetreten sind, indem Sie auf die Schaltfläche **Importprotokoll** in der oberen rechten Ecke des Bereichs E-Mail-Import klicken.
 
 <figure><img src="../../../.gitbook/assets/email_8_es.png" alt=""><figcaption></figcaption></figure>
 
-Puedes filtrar los registros por asunto o remitente, ordenar columnas en orden ascendente o descendente haciendo clic en los encabezados de las columnas, y reorganizar columnas usando arrastrar y soltar.
+Sie können die Protokolle nach Betreff oder Absender filtern, Spalten in auf- oder absteigender Reihenfolge sortieren, indem Sie auf die Spaltenüberschriften klicken, und Spalten per Ziehen und Ablegen neu anordnen.

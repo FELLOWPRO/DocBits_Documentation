@@ -1,25 +1,23 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Endbenutzerbereich
 
-# End User Section
+### Erste Schritte
 
-### Getting Started
+* **Anmeldung und Navigation:** So greifen Sie auf Docbits zu und navigieren durch die Benutzeroberfläche.
+* **Erstkonfiguration:** Einrichtung von Docbits für die erste Verwendung.
 
-* **Login and Navigation:** How to access Docbits and navigate through the interface.
-* **Initial Configuration:** Setting up Docbits for first-time use.
+### Tägliche Nutzung
 
-### Daily Use
+* **Dokumentenübermittlung:** Anweisungen zum Übermitteln von Dokumenten an Docbits.
+* **Dokumentenprüfung und -freigabe:**
+  * **Bestellungen freigeben:** Schritte zum Prüfen und Freigeben von Bestellformularen.
+  * **Rechnungen verarbeiten:** Anleitung, wie Sie eingehende Rechnungen zur Zahlung verarbeiten.
 
-* **Document Submission:** Instructions for submitting documents into Docbits.
-* **Document Review and Approval:**
-  * **Approving Orders:** Steps for reviewing and approving order forms.
-  * **Processing Invoices:** Guide on how to process incoming invoices for payment.
+### Dokumente verwalten
 
-### Managing Documents
+* **Suchen und Abrufen:** So finden Sie Dokumente in Docbits und greifen darauf zu.
+* **Bearbeiten und Aktualisieren:** Bearbeiten von Dokumenten und Aktualisieren ihres Status.
 
-* **Search and Retrieve:** How to find and access documents within Docbits.
-* **Edit and Update:** Editing documents and updating their status.
+### Fehlerbehebung
 
-### Troubleshooting
-
-* **Common Issues:** Solutions to frequent problems encountered by users.
-* [**Support Contact**](ressources-and-support/user-support.md)**:** How to reach support for assistance.
+* **Häufige Probleme:** Lösungen für häufig auftretende Probleme der Benutzer.
+* [**Support-Kontakt**](ressources-and-support/user-support.md)**:** So erreichen Sie den Support für Unterstützung.

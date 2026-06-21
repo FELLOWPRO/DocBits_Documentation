@@ -1,10 +1,7 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
-# How to Import Documents
+# So importieren Sie Dokumente
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
-DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
+DocBits Import-Tutorial: Dokumente hochladen, Drag & Drop + manuelle vs. automatische Klassifizierung
 {% endembed %}
 
-A guide to uploading documents to DocBits.
-
+Eine Anleitung zum Hochladen von Dokumenten in DocBits.

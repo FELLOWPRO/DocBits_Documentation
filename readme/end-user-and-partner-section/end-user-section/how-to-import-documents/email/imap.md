@@ -1,16 +1,14 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
 # IMAP
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
 
 
-Here you just need to enter the required information for your email provider, encryption, server name, port, username, email address, password as well as the email folder.
+Hier müssen Sie lediglich die erforderlichen Informationen für Ihren E-Mail-Anbieter eingeben: Verschlüsselung, Servername, Port, Benutzername, E-Mail-Adresse, Passwort sowie den E-Mail-Ordner.
 
 ![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv\_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
 
-Things to Note
+Zu beachten
 
-* Input all needed information into the UI. Other information like the server, port, etc. Depends on the host (a quick Google search should help).
-* Folder and Move-Imported have the same Function here. Folder can not be disabled, but will use Inbox by default if left empty.
+* Geben Sie alle benötigten Informationen in die Benutzeroberfläche ein. Weitere Informationen wie Server, Port usw. hängen vom Host ab (eine kurze Google-Suche sollte helfen).
+* Ordner und „Importierte verschieben" haben hier dieselbe Funktion. Der Ordner kann nicht deaktiviert werden, verwendet aber standardmäßig den Posteingang, wenn er leer gelassen wird.

@@ -1,9 +1,7 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
 # Dashboard
 
-In this comprehensive video guide, viewers are introduced to the **DocBits** dashboard and its array of functionalities. From filtering and managing open documents to importing attachments via various channels such as email, scanner, or API, the tutorial offers a step-by-step walkthrough.
+In diesem umfassenden Video-Leitfaden werden den Zuschauern das **DocBits**-Dashboard und seine vielfältigen Funktionen vorgestellt. Vom Filtern und Verwalten offener Dokumente bis hin zum Importieren von Anhängen über verschiedene Kanäle wie E-Mail, Scanner oder API bietet das Tutorial eine Schritt-für-Schritt-Anleitung.
 
 {% embed url="https://youtu.be/y2zpTl8e3VE" %}
 
-Key features are highlighted, including how to filter documents by status or assignee, locate specific details like invoice numbers, and change the assignee for individual documents. The ease and efficiency of the system are demonstrated, emphasizing the control and customization it offers [users](../../../administration-and-setup/settings/global-settings/groups-users-and-permissions/). The tutorial sets the stage for a deeper exploration of [document validation](../validation-screen/) within **DocBits**.
+Wichtige Funktionen werden hervorgehoben, darunter das Filtern von Dokumenten nach Status oder zugewiesener Person, das Auffinden bestimmter Details wie Rechnungsnummern sowie das Ändern der zugewiesenen Person für einzelne Dokumente. Die Einfachheit und Effizienz des Systems werden demonstriert, wobei die Kontrolle und Anpassungsmöglichkeiten betont werden, die es den [Benutzern](../../../administration-and-setup/settings/global-settings/groups-users-and-permissions/) bietet. Das Tutorial bereitet den Weg für eine tiefergehende Erkundung der [Dokumentenvalidierung](../validation-screen/) innerhalb von **DocBits**.

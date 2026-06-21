@@ -1,10 +1,7 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Hilfe-Symbole
 
-# Help Icons
+Überall in DocBits wurden Hilfe-Symbole platziert, um Ihnen dabei zu helfen, zu lernen und zu verstehen, was eine Funktion tatsächlich bewirkt und wie sie Sie bei Ihrer Dokumentenverarbeitung unterstützen kann.
 
-Help icons have been placed all around DocBits in order to assist you in learning and understanding what a feature really does and how it can assist you with your document processing.
-
-These help icons look as follows
+Diese Hilfe-Symbole sehen wie folgt aus
 
 <figure><img src="../../../.gitbook/assets/help-icon.png" alt=""><figcaption></figcaption></figure>
-

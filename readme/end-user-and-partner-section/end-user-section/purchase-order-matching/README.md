@@ -1,276 +1,274 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Bildschirm „Bestellabgleich“
 
-# Purchase Order Matching Screen
+## Überblick
 
-## Overview
+Im Bildschirm **Bestellabgleich (Purchase Order Matching)** können Sie die aus Ihrem Dokument extrahierten Positionen mit den im **Infor-System** hinterlegten Positionen vergleichen, wobei die Bestellnummer als Referenz dient.
 
-In the **Purchase Order Matching** screen, you can compare the line items extracted from your document with those stored in the **Infor system**, using the purchase order number as the reference.
+Sie können:
 
-You can:
+* etwaige Unterschiede zwischen extrahierten und hinterlegten Daten **sofort erkennen**
+* **Toleranzen festlegen**, um akzeptable Abweichungen zuzulassen
+* bei Bedarf **bestimmte Status aus Infor ignorieren**
+* das Dokument nach einem erfolgreichen Abgleich **freigeben und exportieren**
+* das Dokument **ablehnen**, wenn die Daten die erforderlichen Validierungskriterien nicht erfüllen
 
-* **Immediately identify** any differences between extracted and stored data
-* **Set tolerances** to allow acceptable deviations
-* **Ignore specific statuses** from Infor, if necessary
-* **Approve and export** the document after a successful match
-* **Reject** the document if the data does not meet the required validation criteria
+Diese Seite führt Sie durch den Bestellabgleichsprozess und erläutert alle damit verbundenen Funktionen, die in diesem Bereich verfügbar sind.
 
-This page will guide you through the purchase order matching process and explain all related functionality available in this section.
+## Werkzeuge im Bildschirm „Bestellabgleich“
 
-## Tools in the Purchase Order Matching Screen
-
-At the top of the Purchase Order Matching screen, you’ll find several tools—such as **Save**, **Auto-Match**, **Export**, and others—that assist with the matching process.\nA detailed description of each tool and its functionality can be found [here](purchase-order-matching-tools.md).
+Am oberen Rand des Bildschirms „Bestellabgleich“ finden Sie mehrere Werkzeuge – wie **Save**, **Auto-Match**, **Export** und weitere –, die Sie beim Abgleichsprozess unterstützen.\nEine ausführliche Beschreibung jedes Werkzeugs und seiner Funktionalität finden Sie [hier](purchase-order-matching-tools.md).
 
 <figure><img src="../../../.gitbook/assets/po_match_tools_0.png" alt=""><figcaption></figcaption></figure>
 
-## Filter and Add Purchase Order Numbers
+## Bestellnummern filtern und hinzufügen
 
-You can search for specific purchase order numbers by entering the number into the search field.\nFor more refined filtering, click the icon on the right side of the search bar to select specific criteria for your search.
+Sie können nach bestimmten Bestellnummern suchen, indem Sie die Nummer in das Suchfeld eingeben.\nFür eine genauere Filterung klicken Sie auf das Symbol auf der rechten Seite der Suchleiste, um bestimmte Kriterien für Ihre Suche auszuwählen.
 
 <figure><img src="../../../.gitbook/assets/po_match_3.png" alt=""><figcaption></figcaption></figure>
 
-The following filter options are available to help you refine your search for purchase orders:
+Die folgenden Filteroptionen stehen Ihnen zur Verfügung, um Ihre Suche nach Bestellungen zu verfeinern:
 
-* **Keyword** – Filter by purchase order numbers.
-* **Supplier** – Filter by supplier name or ID.
-* **After Date** – Show purchase orders created after a specific date.
-* **Before Date** – Show purchase orders created before a specific date.
-* **Minimum Order Amount** – Filter by minimum order value.
-* **Maximum Order Amount** – Filter by maximum order value.
-* **Sort By** – Select the attribute to sort the results (e.g., date, amount).
-* **Sort Direction** – Choose the sort order: ascending or descending.
-* **Number of Records to Display** – Define how many results should be shown per page.
-* **More** – Additional filtering options include:
+* **Keyword** – Filtern nach Bestellnummern.
+* **Supplier** – Filtern nach Lieferantenname oder -ID.
+* **After Date** – Bestellungen anzeigen, die nach einem bestimmten Datum erstellt wurden.
+* **Before Date** – Bestellungen anzeigen, die vor einem bestimmten Datum erstellt wurden.
+* **Minimum Order Amount** – Filtern nach Mindestbestellwert.
+* **Maximum Order Amount** – Filtern nach maximalem Bestellwert.
+* **Sort By** – Auswählen des Attributs, nach dem die Ergebnisse sortiert werden (z. B. Datum, Betrag).
+* **Sort Direction** – Auswählen der Sortierreihenfolge: aufsteigend oder absteigend.
+* **Number of Records to Display** – Festlegen, wie viele Ergebnisse pro Seite angezeigt werden sollen.
+* **More** – Zu den zusätzlichen Filteroptionen gehören:
   * **Delivery Number**
   * **Packing Slip Number**
   * **Item ID**
 
-After configuring your filters, click **Apply** to apply them or **Clear** to reset all filter settings.
+Nachdem Sie Ihre Filter konfiguriert haben, klicken Sie auf **Apply**, um sie anzuwenden, oder auf **Clear**, um alle Filtereinstellungen zurückzusetzen.
 
-The matching purchase orders will be displayed based on the applied filters.\nYou can either:
+Die passenden Bestellungen werden auf Grundlage der angewendeten Filter angezeigt.\nSie können entweder:
 
-* Adjust the filters and search again, or
-* Double-click on a purchase order entry to add it to the Purchase Order Matching screen.
+* die Filter anpassen und erneut suchen oder
+* auf einen Bestelleintrag doppelklicken, um ihn dem Bildschirm „Bestellabgleich“ hinzuzufügen.
 
 <figure><img src="../../../.gitbook/assets/po_match_5 (2).png" alt=""><figcaption></figcaption></figure>
 
-## Select Purchase Order Numbers and Rearrange Columns
+## Bestellnummern auswählen und Spalten neu anordnen
 
-You can switch between individual purchase orders to view their respective line items by clicking on the purchase order number at the top of the table.
+Sie können zwischen einzelnen Bestellungen wechseln, um deren jeweilige Positionen anzuzeigen, indem Sie oben in der Tabelle auf die Bestellnummer klicken.
 
-You can also rearrange the columns within each purchase order view by simply dragging and dropping them into your preferred order.
+Außerdem können Sie die Spalten innerhalb jeder Bestellansicht neu anordnen, indem Sie sie einfach per Drag & Drop in die von Ihnen bevorzugte Reihenfolge ziehen.
 
 <figure><img src="../../../.gitbook/assets/po_match_7.png" alt=""><figcaption></figcaption></figure>
 
-To permanently hide specific columns, use the [**Set PO Table Columns for Organizations**](./#set-po-table-columns-for-organizations) feature.
+Um bestimmte Spalten dauerhaft auszublenden, verwenden Sie die Funktion [**PO-Tabellenspalten für Organisationen festlegen**](./#set-po-table-columns-for-organizations).
 
-## Set PO Table Columns for Organizations
+## PO-Tabellenspalten für Organisationen festlegen
 
-You have the option to hide or show specific columns in the purchase order table by clicking the column settings icon (shown below).\nThis setting is available in both the **Purchase Order Matching** screen and the **Advanced Purchase Order Search** menu.
+Sie haben die Möglichkeit, bestimmte Spalten in der Bestelltabelle ein- oder auszublenden, indem Sie auf das Symbol für die Spalteneinstellungen klicken (siehe unten).\nDiese Einstellung ist sowohl im Bildschirm **Bestellabgleich** als auch im Menü **Erweiterte Bestellsuche (Advanced Purchase Order Search)** verfügbar.
 
 <figure><img src="../../../.gitbook/assets/po_tools_new_10.png" alt=""><figcaption></figcaption></figure>
 
-Additional details can be found [here](purchase-order-matching-tools.md#set-po-table-columns-for-organization).
+Weitere Einzelheiten finden Sie [hier](purchase-order-matching-tools.md#set-po-table-columns-for-organization).
 
-## Re-Sync purchase order number with Infor
+## Bestellnummer mit Infor neu synchronisieren
 
-To resynchronize the data in **DocBits** with the data from **Infor**, click the **refresh button** next to the purchase order number above the table.
+Um die Daten in **DocBits** mit den Daten aus **Infor** neu zu synchronisieren, klicken Sie auf die **Aktualisierungsschaltfläche** neben der Bestellnummer über der Tabelle.
 
 <figure><img src="../../../.gitbook/assets/po_match_8 (1).png" alt=""><figcaption></figcaption></figure>
 
-If your matching process is based on the **Received Delivery Open Quantity** attribute, you also have the option to perform a **manual synchronization**, as described in detail [here](purchase-order-matching-tools.md#sync-data).
+Wenn Ihr Abgleichsprozess auf dem Attribut **Received Delivery Open Quantity** basiert, haben Sie außerdem die Möglichkeit, eine **manuelle Synchronisierung** durchzuführen, wie [hier](purchase-order-matching-tools.md#sync-data) ausführlich beschrieben.
 
 <figure><img src="../../../.gitbook/assets/po_tools_new_7.png" alt=""><figcaption></figcaption></figure>
 
-## How to match?
+## Wie wird abgeglichen?
 
-To match a purchase order line item with a line item extracted from the document, you have three options:
+Um eine Bestellposition mit einer aus dem Dokument extrahierten Position abzugleichen, haben Sie drei Möglichkeiten:
 
-1. **Drag and Drop**\n Drag the desired purchase order line item and drop it onto the corresponding line item in the extracted table.
-2. **Right-Click and Connect**
-   * Right-click the purchase order line item you want to match and select **Select for match**.
-   * Then, right-click the corresponding line item in the extracted table and select **Connect**.
+1. **Drag & Drop**\n Ziehen Sie die gewünschte Bestellposition und legen Sie sie auf der entsprechenden Position in der extrahierten Tabelle ab.
+2. **Rechtsklick und Verbinden**
+   * Klicken Sie mit der rechten Maustaste auf die Bestellposition, die Sie abgleichen möchten, und wählen Sie **Select for match**.
+   * Klicken Sie anschließend mit der rechten Maustaste auf die entsprechende Position in der extrahierten Tabelle und wählen Sie **Connect**.
 3.  **Auto Match**
 
-    Click the **Auto Match** button to let the system automatically attempt to match all line items based on the extracted and purchase order data.
+    Klicken Sie auf die Schaltfläche **Auto Match**, damit das System automatisch versucht, alle Positionen auf Grundlage der extrahierten Daten und der Bestelldaten abzugleichen.
 
     <figure><img src="../../../.gitbook/assets/po_tools_new_5.png" alt=""><figcaption></figcaption></figure>
 
-You can also select **multiple purchase order lines** and match them to a **single line** in the extracted table. For more details, click [here](./#multi-matches).
+Sie können auch **mehrere Bestellpositionen** auswählen und sie einer **einzelnen Position** in der extrahierten Tabelle zuordnen. Weitere Einzelheiten finden Sie [hier](./#multi-matches).
 
-## Which columns are being matched?
+## Welche Spalten werden abgeglichen?
 
-The Purchase Order Matching process matches only specific columns. The list below outlines which columns are matched, if available. If no [tolerance](./#accept-tolerances) is set, the columns will only match if they are an exact (100%) match.
+Beim Bestellabgleich werden nur bestimmte Spalten abgeglichen. Die folgende Liste zeigt, welche Spalten abgeglichen werden, sofern verfügbar. Wenn keine [Toleranz](./#accept-tolerances) festgelegt ist, werden die Spalten nur dann als Übereinstimmung gewertet, wenn sie exakt (zu 100 %) übereinstimmen.
 
-* [Quantity](./#quantity) (Quantity | Received Quantity | Received Delivery Open Quantity)
-* Unit Price
-* Purchase Order Number
-* Item Number/Supplier Item ID
-* Promised Delivery Date
+* [Menge](./#quantity) (Quantity | Received Quantity | Received Delivery Open Quantity)
+* Stückpreis
+* Bestellnummer
+* Artikelnummer/Supplier Item ID
+* Zugesagtes Lieferdatum
 
-### Quantity
+### Menge
 
-You have three options for matching the quantity.&#x20;
+Sie haben drei Möglichkeiten, die Menge abzugleichen.&#x20;
 
 * Quantity&#x20;
 * Received Quantity
 * Received Delivery Open Quantity&#x20;
 
-You can set this option in **Settings → Global Settings → Document Types → More Settings → Purchase Order Section → Purchase Order**
+Diese Option können Sie unter **Settings → Global Settings → Document Types → More Settings → Purchase Order Section → Purchase Order** festlegen.
 
-The selected quantity option determines which **Purchase Order quantity column** is used for comparison during the matching process.
+Die ausgewählte Mengenoption bestimmt, welche **Bestell-Mengenspalte** während des Abgleichsprozesses für den Vergleich verwendet wird.
 
-## **Consumed PO Line Status**
+## **Status verbrauchter PO-Positionen (Consumed PO Line Status)**
 
-This feature adds color coding to PO lines, making it easier to identify their matching status at a glance.\nMore information is available on the [**Consumed PO Line Status**](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) settings page.
+Diese Funktion fügt PO-Positionen eine Farbcodierung hinzu, sodass deren Abgleichsstatus auf einen Blick leichter erkennbar ist.\nWeitere Informationen finden Sie auf der Einstellungsseite [**Consumed PO Line Status**](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md).
 
 <figure><img src="../../../.gitbook/assets/consumed_po_line_status.png" alt="Consumed PO Line Status Indicator" width="563"><figcaption></figcaption></figure>
 
-## **PO Shipment Order Section**
+## **Abschnitt PO-Versandauftrag (PO Shipment Order)**
 
-This section provides a visual overview of how much has been delivered and invoiced for each PO item.\nIt helps track invoicing progress using quantity values and a progress bar.
+Dieser Abschnitt bietet eine visuelle Übersicht darüber, wie viel für jede PO-Position geliefert und in Rechnung gestellt wurde.\nEr hilft, den Rechnungsstellungsfortschritt anhand von Mengenwerten und einem Fortschrittsbalken zu verfolgen.
 
 <div align="left"><figure><img src="../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt=""><figcaption></figcaption></figure></div>
 
-More details can be found on the [**PO Shipment Order Setting**](../../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md) page.
+Weitere Einzelheiten finden Sie auf der Seite [**PO Shipment Order Setting**](../../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md).
 
-## Accept Tolerances
+## Toleranzen akzeptieren
 
-You can specify acceptable tolerance levels during the matching process.\nBy default, only exact (100%) matches are considered valid.
+Sie können während des Abgleichsprozesses akzeptable Toleranzstufen festlegen.\nStandardmäßig werden nur exakte Übereinstimmungen (zu 100 %) als gültig betrachtet.
 
-If tolerances are configured in the system settings, you can adjust them for the allowed attributes directly in the **Extracted Table** under the **Actions** column.
+Wenn in den Systemeinstellungen Toleranzen konfiguriert sind, können Sie diese für die zulässigen Attribute direkt in der **Extracted Table** unter der Spalte **Actions** anpassen.
 
 <figure><img src="../../../.gitbook/assets/po_match_11.png" alt=""><figcaption></figcaption></figure>
 
-For more information on configuring and using tolerances, see the [detailed documentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
+Weitere Informationen zum Konfigurieren und Verwenden von Toleranzen finden Sie in der [ausführlichen Dokumentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
 
-## Discounts
+## Rabatte
 
-If discounts are present in your extracted table, they will be automatically applied to the **unit price** before matching—except when using [multi matches](./#multi-matches). More information on discounts can be found [here](./#discounts).
+Wenn in Ihrer extrahierten Tabelle Rabatte vorhanden sind, werden diese vor dem Abgleich automatisch auf den **Stückpreis** angewendet – außer bei Verwendung von [Multi-Matches](./#multi-matches). Weitere Informationen zu Rabatten finden Sie [hier](./#discounts).
 
-## Disable statuses
+## Status deaktivieren
 
-You can exclude specific lines with certain statuses from being matched. For more information, refer to the [detailed documentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md).
+Sie können bestimmte Positionen mit bestimmten Status vom Abgleich ausschließen. Weitere Informationen finden Sie in der [ausführlichen Dokumentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md).
 
-## Verify matched lines
+## Abgeglichene Positionen überprüfen
 
-Several indicators are available to help you verify whether a line item has been successfully matched or not.
+Es stehen mehrere Indikatoren zur Verfügung, die Ihnen helfen zu überprüfen, ob eine Position erfolgreich abgeglichen wurde oder nicht.
 
-### Purchase Order Table
+### Bestelltabelle
 
 <figure><img src="../../../.gitbook/assets/po_match_14.png" alt=""><figcaption></figcaption></figure>
 
-* This icon indicates that the purchase order line item has been successfully matched.
+* Dieses Symbol zeigt an, dass die Bestellposition erfolgreich abgeglichen wurde.
 
 <figure><img src="../../../.gitbook/assets/guide_po_2.png" alt=""><figcaption></figcaption></figure>
 
-* This icon indicates that the purchase order line item contains a mismatch.
+* Dieses Symbol zeigt an, dass die Bestellposition eine Abweichung enthält.
 
 <figure><img src="../../../.gitbook/assets/guide_po_5.png" alt=""><figcaption></figcaption></figure>
 
-### Extracted Table from the Document
+### Aus dem Dokument extrahierte Tabelle
 
-*   This icon indicates that the line item has been successfully matched. You can hover over the icon to highlight the corresponding purchase order line.
+*   Dieses Symbol zeigt an, dass die Position erfolgreich abgeglichen wurde. Sie können mit dem Mauszeiger über das Symbol fahren, um die entsprechende Bestellposition hervorzuheben.
 
     <figure><img src="../../../.gitbook/assets/po_match_15.png" alt=""><figcaption></figcaption></figure>
-*   This icon indicates that the line item contains a mismatch. You can hover over the icon to highlight the corresponding purchase order line and view the columns where mismatches occur.
+*   Dieses Symbol zeigt an, dass die Position eine Abweichung enthält. Sie können mit dem Mauszeiger über das Symbol fahren, um die entsprechende Bestellposition hervorzuheben und die Spalten anzuzeigen, in denen Abweichungen auftreten.
 
     <figure><img src="../../../.gitbook/assets/po_match_new_4.png" alt=""><figcaption></figcaption></figure>
 
-## Multi Matches
+## Multi-Matches
 
-Multi-matching allows multiple lines from one table to be matched against a single line in the corresponding (opposite) table.
+Multi-Matching ermöglicht es, mehrere Positionen einer Tabelle mit einer einzelnen Position in der entsprechenden (gegenüberliegenden) Tabelle abzugleichen.
 
 <figure><img src="../../../.gitbook/assets/po_match_20.png" alt=""><figcaption></figcaption></figure>
 
-This feature is particularly useful for scenarios where details are split across several line items.
+Diese Funktion ist besonders nützlich für Szenarien, in denen Details auf mehrere Positionen verteilt sind.
 
-### Matching Criteria
+### Abgleichskriterien
 
-Lines will be considered a match if the following aggregated conditions are met:
+Positionen gelten als übereinstimmend, wenn die folgenden aggregierten Bedingungen erfüllt sind:
 
-* **Unit Price**:\n The average unit price of the multiple lines is calculated and compared against the unit price in the opposite table.
-* **Quantity**:\n The sum of the quantities across the matched lines must match the quantity in the opposite table.
-* **Additional Requirements**:\n Any additional [matching criteria](./#which-columns-are-being-matched) must also be satisfied.
+* **Stückpreis**:\n Der durchschnittliche Stückpreis der mehreren Positionen wird berechnet und mit dem Stückpreis in der gegenüberliegenden Tabelle verglichen.
+* **Menge**:\n Die Summe der Mengen über die abgeglichenen Positionen hinweg muss mit der Menge in der gegenüberliegenden Tabelle übereinstimmen.
+* **Zusätzliche Anforderungen**:\n Alle weiteren [Abgleichskriterien](./#which-columns-are-being-matched) müssen ebenfalls erfüllt sein.
 
-If a single line item is matched to multiple lines, you can view detailed information by clicking the plus (+) icon next to the respective line item.
+Wenn eine einzelne Position mehreren Positionen zugeordnet ist, können Sie detaillierte Informationen anzeigen, indem Sie auf das Plus-Symbol (+) neben der jeweiligen Position klicken.
 
-This expands the view to show all matched entries, helping you verify and manage multiple matches effectively.
+Dadurch wird die Ansicht erweitert, um alle abgeglichenen Einträge anzuzeigen, was Ihnen hilft, mehrere Übereinstimmungen effektiv zu überprüfen und zu verwalten.
 
 <figure><img src="../../../.gitbook/assets/po_match_19.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/po_match_18.png" alt=""><figcaption></figcaption></figure>
 
-## Remove PO Connections
+## PO-Verbindungen entfernen
 
-To remove a connection between a purchase order line item and an extracted line item, simply click the **X** icon next to the matched pair.\nOnce removed, the connection is canceled, and the line item becomes available for matching again.
+Um eine Verbindung zwischen einer Bestellposition und einer extrahierten Position zu entfernen, klicken Sie einfach auf das **X**-Symbol neben dem abgeglichenen Paar.\nNach dem Entfernen wird die Verbindung aufgehoben, und die Position steht erneut für den Abgleich zur Verfügung.
 
 <figure><img src="../../../.gitbook/assets/po_match_new_2 (1).png" alt=""><figcaption></figcaption></figure>
 
-## Calculation
+## Berechnung
 
-Below the table containing the information extracted from your document, you can find simple calculations to verify whether the total bookings match.
+Unterhalb der Tabelle mit den aus Ihrem Dokument extrahierten Informationen finden Sie einfache Berechnungen, mit denen Sie überprüfen können, ob die Summen der Buchungen übereinstimmen.
 
 <figure><img src="../../../.gitbook/assets/po_matching_calculation_summary.png" alt="PO Matching Calculation Summary" width="423"><figcaption></figcaption></figure>
 
-### Recorded bookings:
+### Erfasste Buchungen:
 
-The recorded bookings value is derived from the net amount extracted from the document.
+Der Wert der erfassten Buchungen wird aus dem aus dem Dokument extrahierten Nettobetrag abgeleitet.
 
 ```
 Recorded bookings = Total net amount (extracted from the document)
 ```
 
-### Matched total:
+### Abgeglichene Summe:
 
-This value is calculated by summing the **Unit Price** × **Quantity** for all line items that successfully matched with the line items from the purchase order number.
+Dieser Wert wird berechnet, indem **Stückpreis** × **Menge** für alle Positionen summiert wird, die erfolgreich mit den Positionen der Bestellnummer abgeglichen wurden.
 
 ```
  Matched Total = Sum of (Unit Price × Quantity) for all matched line items
 ```
 
-### **Charges:**
+### **Gebühren:**
 
-Any applicable charges will be included in this section if present.\nFor more details, refer to the [detailed documentation](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md).
+Etwaige anfallende Gebühren werden in diesem Abschnitt berücksichtigt, sofern vorhanden.\nWeitere Einzelheiten finden Sie in der [ausführlichen Dokumentation](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md).
 
 ```
 Charges = Costing element
 ```
 
-### Unsettled amount:
+### Offener Betrag:
 
-The resulting difference is displayed here and is calculated as follows:
+Die resultierende Differenz wird hier angezeigt und wie folgt berechnet:
 
 ```
 Unsettled amount = Recorded bookings - Matched total - Costing element
 ```
 
-## Viewing the Document for Validation
+## Anzeige des Dokuments zur Validierung
 
-On the right side of the **Purchase Order Matching** screen, you can view the document to assist with validation.
+Auf der rechten Seite des Bildschirms **Bestellabgleich** können Sie das Dokument anzeigen, um die Validierung zu unterstützen.
 
 <figure><img src="../../../.gitbook/assets/po_new_1.png" alt=""><figcaption></figcaption></figure>
 
-**Document Viewer Toolbar Features:**
+**Funktionen der Symbolleiste des Dokumentenbetrachters:**
 
-* Scroll through the document pages to review content.
-* Click the file name to open the full validation screen.
-* Enter a page number and press Enter to jump directly to that page.
-* Use the plus (+) and minus (–) buttons to zoom in or out of the document.
-*   Click the button on the far right to open the document in a separate window, which is especially useful when working with multiple screens.
+* Blättern Sie durch die Dokumentseiten, um den Inhalt zu prüfen.
+* Klicken Sie auf den Dateinamen, um den vollständigen Validierungsbildschirm zu öffnen.
+* Geben Sie eine Seitenzahl ein und drücken Sie die Eingabetaste, um direkt zu dieser Seite zu springen.
+* Verwenden Sie die Plus- (+) und Minus-Schaltflächen (–), um in das Dokument hinein- oder herauszuzoomen.
+*   Klicken Sie auf die Schaltfläche ganz rechts, um das Dokument in einem separaten Fenster zu öffnen, was besonders nützlich ist, wenn Sie mit mehreren Bildschirmen arbeiten.
 
     <figure><img src="../../../.gitbook/assets/po_match_10.png" alt=""><figcaption></figcaption></figure>
 
-## Saving Changes:
+## Änderungen speichern:
 
-To save your changes, click the **Save** button in the toolbar.\nIf you leave the page without saving, all progress made during the matching process will be lost.
+Um Ihre Änderungen zu speichern, klicken Sie in der Symbolleiste auf die Schaltfläche **Save**.\nWenn Sie die Seite verlassen, ohne zu speichern, gehen alle während des Abgleichsprozesses erzielten Fortschritte verloren.
 
 <figure><img src="../../../.gitbook/assets/po_tools_new_6.png" alt=""><figcaption></figcaption></figure>
 
-## Exporting the Document
+## Exportieren des Dokuments
 
-After matching all line items and validating their correctness, you can export the document by clicking the **Export** button in the toolbar.
+Nachdem Sie alle Positionen abgeglichen und deren Richtigkeit validiert haben, können Sie das Dokument exportieren, indem Sie in der Symbolleiste auf die Schaltfläche **Export** klicken.
 
-* Clicking the small arrow next to the **Export** button reveals all available export options.
-* Clicking **Export** directly will trigger the default export option (the first one in the list).
+* Wenn Sie auf den kleinen Pfeil neben der Schaltfläche **Export** klicken, werden alle verfügbaren Exportoptionen angezeigt.
+* Wenn Sie direkt auf **Export** klicken, wird die Standard-Exportoption ausgelöst (die erste in der Liste).
 
 <figure><img src="../../../.gitbook/assets/po_tools_new_8.png" alt=""><figcaption></figcaption></figure>

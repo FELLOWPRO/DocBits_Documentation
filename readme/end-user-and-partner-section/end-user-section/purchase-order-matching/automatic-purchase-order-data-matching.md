@@ -1,33 +1,31 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Automatischer Bestelldaten-Abgleich
 
-# Automatic Purchase Order Data Matching
-
-Docbits is an advanced system designed to automate the matching of purchase order data (POs) with incoming invoice documents. This tool is specifically designed for efficient management and processing of invoice data within ERP systems. This documentation explains the basics of automatic matching through Docbits and defines the specific rules required for successful matching.
+Docbits ist ein fortschrittliches System, das entwickelt wurde, um den Abgleich von Bestelldaten (POs) mit eingehenden Rechnungsdokumenten zu automatisieren. Dieses Tool wurde speziell für die effiziente Verwaltung und Verarbeitung von Rechnungsdaten innerhalb von ERP-Systemen entwickelt. Diese Dokumentation erläutert die Grundlagen des automatischen Abgleichs durch Docbits und definiert die spezifischen Regeln, die für einen erfolgreichen Abgleich erforderlich sind.
 
 <figure><img src="../../../.gitbook/assets/Automatic Purchase Order Data Matching.svg" alt=""><figcaption></figcaption></figure>
 
-## **Fundamental Principles of Auto Matching in Docbits**
+## **Grundprinzipien des automatischen Abgleichs in Docbits**
 
-**Data Extraction:** Docbits begins the process by extracting relevant data from digitized invoice documents. Typically, this data includes item numbers, quantities, and unit prices of each invoice line. The precision of this extraction is crucial, as it forms the basis for the subsequent matching process.
+**Datenextraktion:** Docbits beginnt den Prozess mit der Extraktion relevanter Daten aus digitalisierten Rechnungsdokumenten. Typischerweise umfassen diese Daten Artikelnummern, Mengen und Stückpreise jeder Rechnungsposition. Die Präzision dieser Extraktion ist entscheidend, da sie die Grundlage für den nachfolgenden Abgleichsprozess bildet.
 
-**Comparison with PO Data:** The extracted data are compared with the corresponding information in the stored purchase orders. Docbits checks whether the item numbers, quantities, and prices match those in the POs. For a successful match, the data in the invoices must correspond to the data in the purchase orders, considering defined tolerance thresholds.
+**Vergleich mit PO-Daten:** Die extrahierten Daten werden mit den entsprechenden Informationen in den hinterlegten Bestellungen verglichen. Docbits prüft, ob die Artikelnummern, Mengen und Preise mit denen in den Bestellungen übereinstimmen. Für einen erfolgreichen Abgleich müssen die Daten in den Rechnungen unter Berücksichtigung definierter Toleranzschwellen den Daten in den Bestellungen entsprechen.
 
-**Automatic Matching:** Based on the comparison results, Docbits performs the matching. The system verifies whether the matching criteria fall within the set tolerance limits. If these criteria are met, the match is considered successful.
+**Automatischer Abgleich:** Auf Grundlage der Vergleichsergebnisse führt Docbits den Abgleich durch. Das System überprüft, ob die Abgleichskriterien innerhalb der festgelegten Toleranzgrenzen liegen. Sind diese Kriterien erfüllt, gilt der Abgleich als erfolgreich.
 
-**Reporting:** After completing the matching process, Docbits generates reports that show the status of the matches. These reports inform about successfully matched invoices and identify those with discrepancies.
+**Berichterstattung:** Nach Abschluss des Abgleichsprozesses erstellt Docbits Berichte, die den Status der Abgleiche anzeigen. Diese Berichte informieren über erfolgreich abgeglichene Rechnungen und identifizieren solche mit Abweichungen.
 
-## **Definition of Matching Rules**
+## **Definition der Abgleichsregeln**
 
-**Item Number:** The item number on the invoice must exactly match the item number in the purchase order. There is no tolerance for deviations in item numbers.
+**Artikelnummer:** Die Artikelnummer auf der Rechnung muss exakt mit der Artikelnummer in der Bestellung übereinstimmen. Für Abweichungen bei Artikelnummern gibt es keine Toleranz.
 
-**Quantities:** The quantity of goods delivered on the invoice may vary within a predefined tolerance range. Typically, a tolerance of ±5% might be acceptable to account for minor differences in delivery quantities.
+**Mengen:** Die auf der Rechnung gelieferte Warenmenge darf innerhalb eines vordefinierten Toleranzbereichs variieren. Typischerweise könnte eine Toleranz von ±5 % akzeptabel sein, um geringfügige Unterschiede bei den Liefermengen zu berücksichtigen.
 
-**Prices:** Price deviations are tolerable up to a set threshold. A common tolerance might be ±2% of the price to accept slight differences in price statements that arise from rounding differences or currency fluctuations.
+**Preise:** Preisabweichungen sind bis zu einem festgelegten Schwellenwert tolerierbar. Eine gängige Toleranz könnte ±2 % des Preises betragen, um geringfügige Unterschiede bei den Preisangaben zu akzeptieren, die durch Rundungsdifferenzen oder Währungsschwankungen entstehen.
 
-## **Match Status:**
+## **Abgleichsstatus:**
 
-* **Full Match:** All data points (item number, quantity, and price) are within the set tolerance limits.
-* **Partial Match:** One or more data points deviate outside the tolerance limits, but the deviations are minimal and require manual review.
-* **No Match:** Significant deviations in one or more data points that require immediate correction or further investigation.
+* **Vollständige Übereinstimmung (Full Match):** Alle Datenpunkte (Artikelnummer, Menge und Preis) liegen innerhalb der festgelegten Toleranzgrenzen.
+* **Teilweise Übereinstimmung (Partial Match):** Ein oder mehrere Datenpunkte weichen außerhalb der Toleranzgrenzen ab, die Abweichungen sind jedoch minimal und erfordern eine manuelle Prüfung.
+* **Keine Übereinstimmung (No Match):** Erhebliche Abweichungen bei einem oder mehreren Datenpunkten, die eine sofortige Korrektur oder weitere Untersuchung erfordern.
 
-The precise definition of these rules and the setting of tolerance limits are crucial for the efficiency of the automatic matching and the reduction of manual interventions. Docbits allows for flexible configuration of these parameters to meet the needs of various businesses and industries.
+Die präzise Definition dieser Regeln und die Festlegung der Toleranzgrenzen sind entscheidend für die Effizienz des automatischen Abgleichs und die Reduzierung manueller Eingriffe. Docbits ermöglicht eine flexible Konfiguration dieser Parameter, um den Anforderungen verschiedener Unternehmen und Branchen gerecht zu werden.

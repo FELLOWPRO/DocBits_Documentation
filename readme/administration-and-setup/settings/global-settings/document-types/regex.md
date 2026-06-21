@@ -1,17 +1,15 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
-# Expresiones Regulares
+# Reguläre Ausdrücke
 
 <figure><img src="../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Regex Management"><figcaption></figcaption></figure>
 
-En DocBits, la configuración de Expresiones Regulares permite a los administradores definir patrones personalizados que el sistema utiliza para encontrar y extraer datos de documentos. Esta función es especialmente útil en situaciones donde es necesario extraer datos de texto no estructurado o cuando los datos siguen un formato predecible que puede ser capturado utilizando patrones de regex.
+In DocBits ermöglicht die Konfiguration für reguläre Ausdrücke Administratoren, benutzerdefinierte Muster zu definieren, die das System verwendet, um Daten aus Dokumenten zu finden und zu extrahieren. Diese Funktion ist besonders nützlich in Situationen, in denen Daten aus unstrukturiertem Text extrahiert werden müssen oder wenn die Daten einem vorhersehbaren Format folgen, das mithilfe von regex-Mustern erfasst werden kann.
 
-#### Características Clave y Opciones
+#### Schlüsselfunktionen und Optionen
 
-1. **Gestión de Expresiones Regulares**:
-* **Agregar**: Permite crear un nuevo patrón de regex para un tipo de documento específico.
-* **Guardar Cambios**: Guarda las modificaciones en las configuraciones de regex existentes.
-* **Patrón**: Aquí puedes definir el patrón de regex que coincide con el formato de datos específico requerido.
-* **Origen**: Es el Origen del Documento - Por ejemplo, puedes definir un Regex diferente en Alemania
+1. **Verwaltung regulärer Ausdrücke**:
+* **Hinzufügen**: Ermöglicht das Erstellen eines neuen regex-Musters für einen bestimmten Dokumenttyp.
+* **Änderungen speichern**: Speichert die Änderungen an bestehenden regex-Konfigurationen.
+* **Muster**: Hier können Sie das regex-Muster definieren, das mit dem jeweils erforderlichen spezifischen Datenformat übereinstimmt.
+* **Herkunft**: Dies ist die Herkunft des Dokuments – Sie können zum Beispiel ein anderes Regex für Deutschland definieren
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2497" %}

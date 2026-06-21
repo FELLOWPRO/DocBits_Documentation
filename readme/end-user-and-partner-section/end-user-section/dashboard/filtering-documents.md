@@ -1,60 +1,58 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Dokumente filtern
 
-# Filtering Documents
+## Standard-Filteroptionen
 
-## Default Filtering Options
-
-You can search for specific documents by entering the document name or ID into the search bar located at the top of the dashboard.
+Sie können nach bestimmten Dokumenten suchen, indem Sie den Dokumentnamen oder die ID in die Suchleiste oben im Dashboard eingeben.
 
 <figure><img src="../../../.gitbook/assets/FilteringDocs_1.png" alt=""><figcaption></figcaption></figure>
 
-For more refined filtering, click the filter icon located on the right side of the search bar to select specific criteria for searching documents.
+Für eine verfeinerte Filterung klicken Sie auf das Filtersymbol auf der rechten Seite der Suchleiste, um bestimmte Kriterien für die Suche nach Dokumenten auszuwählen.
 
 <figure><img src="../../../.gitbook/assets/FilteringDocs_2.png" alt=""><figcaption></figcaption></figure>
 
-The following filter options are available:
+Die folgenden Filteroptionen sind verfügbar:
 
-* **Status**: Filter by processing status (e.g., Ready for validation, Rejected).
-*   **Assigned To**: Filter by the users assigned to the document.
+* **Status**: Filtern nach Verarbeitungsstatus (z. B. Bereit zur Validierung, Abgelehnt).
+*   **Zugewiesen an**: Filtern nach den dem Dokument zugewiesenen Benutzern.
 
     <figure><img src="../../../.gitbook/assets/FilteringDocs_9.png" alt=""><figcaption></figcaption></figure>
-* **Assigned to Group**: Filter by the groups assigned to the document.
-* **Restart Required**: Filter for documents that require a restart.
+* **Gruppe zugewiesen**: Filtern nach den dem Dokument zugewiesenen Gruppen.
+* **Neustart erforderlich**: Filtern nach Dokumenten, die einen Neustart erfordern.
 
-Click **Apply** to apply the selected filters, or **Clear Filters** to reset them.
+Klicken Sie auf **Anwenden**, um die ausgewählten Filter anzuwenden, oder auf **Filter zurücksetzen**, um sie zurückzusetzen.
 
 <figure><img src="../../../.gitbook/assets/FilteringDocs_3.png" alt=""><figcaption></figcaption></figure>
 
-## Time-Based Filtering
+## Zeitbasierte Filterung
 
-To filter documents by import date, use the time filter located to the right of the search bar. You can choose from the following preset time ranges:
+Um Dokumente nach Importdatum zu filtern, verwenden Sie den Zeitfilter rechts neben der Suchleiste. Sie können aus den folgenden voreingestellten Zeiträumen wählen:
 
-* **30 Days**
-* **90 Days**
-* **180 Days**
-* **365 Days**
-* **All**
+* **30 Tage**
+* **90 Tage**
+* **180 Tage**
+* **365 Tage**
+* **Alle**
 
 <figure><img src="../../../.gitbook/assets/FilteringDocs_4.png" alt=""><figcaption></figcaption></figure>
 
-You can also select a custom date range by clicking **Custom**, then specifying a **Start Date** and **End Date**. After that, click **Apply** to activate the filter.
+Sie können auch einen benutzerdefinierten Zeitraum auswählen, indem Sie auf **Benutzerdefiniert** klicken und dann ein **Startdatum** und ein **Enddatum** angeben. Klicken Sie anschließend auf **Anwenden**, um den Filter zu aktivieren.
 
 <figure><img src="../../../.gitbook/assets/FilteringDocs_5.png" alt=""><figcaption></figcaption></figure>
 
-<mark style="color:red;">**Note**</mark>: Selecting a longer time period may result in slower loading times.
+<mark style="color:red;">**Hinweis**</mark>: Die Auswahl eines längeren Zeitraums kann zu längeren Ladezeiten führen.
 
-## Filter by Document Type
+## Nach Dokumenttyp filtern
 
-To filter by specific document types:
+So filtern Sie nach bestimmten Dokumenttypen:
 
-1.  Click the plus (+) icon at the top of the dashboard.
+1.  Klicken Sie auf das Plus-Symbol (+) oben im Dashboard.
 
     <figure><img src="../../../.gitbook/assets/FilteringDocs_6.png" alt=""><figcaption></figcaption></figure>
-2. Select a document type from the list.
-3.  After selecting a document type, you can switch between filters using the tabs at the top of the dashboard.
+2. Wählen Sie einen Dokumenttyp aus der Liste aus.
+3.  Nachdem Sie einen Dokumenttyp ausgewählt haben, können Sie über die Registerkarten oben im Dashboard zwischen den Filtern wechseln.
 
     <figure><img src="../../../.gitbook/assets/FilteringDocs_7.png" alt=""><figcaption></figcaption></figure>
 
-To remove a specific filter, hover over the filter tag and click the red X. This will remove the filter from the tab list.
+Um einen bestimmten Filter zu entfernen, fahren Sie mit dem Mauszeiger über die Filtermarkierung und klicken Sie auf das rote X. Dadurch wird der Filter aus der Registerkartenliste entfernt.
 
 <figure><img src="../../../.gitbook/assets/FilteringDocs_8.png" alt=""><figcaption></figcaption></figure>

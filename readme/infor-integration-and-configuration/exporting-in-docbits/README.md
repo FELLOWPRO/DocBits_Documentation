@@ -1,7 +1,5 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Exportieren in DocBits
 
-# Exporting in DocBits
-
-A guide to exporting documents in DocBits.
+Ein Leitfaden zum Exportieren von Dokumenten in DocBits.
 
 

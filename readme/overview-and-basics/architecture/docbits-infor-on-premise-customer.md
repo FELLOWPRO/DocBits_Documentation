@@ -1,45 +1,40 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# DocBits Infor On-Premise-Kunde
 
-# DocBits Infor on Premise Customer
+Um Daten an einen Infor-On-Premise-Kunden zu senden, bieten wir zwei Wege an: Site-to-Site mit IPsec oder [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
 
-To send data to Infor onPremise customer we offer two ways Site2Site with IPsec or [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
+Daten an einen Infor-On-Premise-Kunden senden
 
-Sending Data to Infor On-Premise Customer
+Um Daten an einen Infor-On-Premise-Kunden zu senden, bieten wir zwei Wege an: Site-to-Site-VPN mit IPsec.
 
-To send data to an Infor on-premise customer, we offer two ways: Site-to-Site VPN with IPsec.
+## Konfiguration eines IPsec-(Internet Protocol Security-)Site-to-Site-VPN
 
-## IPsec (Internet Protocol Security) Site-to-Site VPN Configuration
+### 1. Konfigurationsinformationen:
 
-### 1. Configuration Informations:
-
-| **IPSEC VPN Setup**            |                                                                 |
+| **IPSEC-VPN-Einrichtung**      |                                                                 |
 | ------------------------------ | --------------------------------------------------------------- |
-|                                | **Endpoint B**                                                  |
-| **Customer**                   | _**FELLOWPRO AG**_                                              |
-| **Name of Contact**            | _**Daniel Lopez**_                                              |
-| **Mail**                       | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
-| **Endpoint Hardware/Software** | _**StrongWAN**_                                                 |
-| **Location of Firewall**       | _**Frankfurt**_                                                 |
-| **Endpoint IP**                | _**46.101.133.158**_                                            |
-| **Network/Host 1**             | _**10.135.0.0/16**_                                             |
+|                                | **Endpunkt B**                                                  |
+| **Kunde**                      | _**FELLOWPRO AG**_                                              |
+| **Name des Ansprechpartners**  | _**Daniel Lopez**_                                              |
+| **E-Mail**                     | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
+| **Endpunkt-Hardware/-Software**| _**StrongWAN**_                                                 |
+| **Standort der Firewall**      | _**Frankfurt**_                                                 |
+| **Endpunkt-IP**                | _**46.101.133.158**_                                            |
+| **Netzwerk/Host 1**            | _**10.135.0.0/16**_                                             |
 
-### 2. For an IPsec site-to-site VPN, you need to configure and open the following ports:
+### 2. Für ein IPsec-Site-to-Site-VPN müssen Sie die folgenden Ports konfigurieren und öffnen:
 
-1\. UDP port 500: Used for Internet Key Exchange (IKE) phase 1 and phase 2.
+1\. UDP-Port 500: Wird für Phase 1 und Phase 2 des Internet Key Exchange (IKE) verwendet.
 
-2\. UDP port 4500: Used for NAT traversal (NAT-T), allowing VPN traffic to pass through NAT (Network Address Translation) devices.
+2\. UDP-Port 4500: Wird für NAT-Traversal (NAT-T) verwendet, wodurch VPN-Datenverkehr durch NAT-Geräte (Network Address Translation) geleitet werden kann.
 
-## Accessing Infor OS
+## Zugriff auf Infor OS
 
-• Authentication URL: https://inforos.CustomerXYZad.net/
+• Authentifizierungs-URL: https://inforos.CustomerXYZad.net/
 
-• Data URL: https://inforos.CustomerXYZad.net:7443/
+• Daten-URL: https://inforos.CustomerXYZad.net:7443/
 
-## Summary:
+## Zusammenfassung:
 
-For setting up an IPsec site-to-site VPN, ensure the above ports and protocols are configured and open.
+Stellen Sie für die Einrichtung eines IPsec-Site-to-Site-VPN sicher, dass die oben genannten Ports und Protokolle konfiguriert und geöffnet sind.
 
-Use the provided URLs to access Infor OS for authentication and data.
-
-
-
+Verwenden Sie die angegebenen URLs, um für die Authentifizierung und den Datenaustausch auf Infor OS zuzugreifen.

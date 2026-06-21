@@ -1,31 +1,29 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
-# Columnas de la Tabla
+# Tabellenspalten
 
 <figure><img src="../../../../.gitbook/assets/docbits_table_columns_overview.png" alt="Docbits Table Columns Overview"><figcaption></figcaption></figure>
 
-#### Visión general
+#### Überblick
 
-La interfaz de Columnas de la Tabla en Docbits se utiliza para especificar las columnas que aparecen en las tablas de datos para cada tipo de documento. Cada columna se puede configurar para contener tipos específicos de datos, como cadenas o valores numéricos, y puede ser esencial para las funciones de ordenación, filtrado e informes dentro de Docbits.
+Die Oberfläche „Tabellenspalten" in Docbits dient dazu, die Spalten festzulegen, die in den Datentabellen für jeden Dokumenttyp angezeigt werden. Jede Spalte kann so konfiguriert werden, dass sie bestimmte Datentypen enthält, etwa Zeichenketten oder numerische Werte, und kann für die Sortier-, Filter- und Berichtsfunktionen innerhalb von Docbits von zentraler Bedeutung sein.
 
-#### Características clave y opciones
+#### Wichtige Funktionen und Optionen
 
-1. **Configuración de Columnas**:
-* **Nombre de la Columna**: El identificador de la columna en la base de datos.
-* **Título**: El título legible por humanos de la columna que aparecerá en la interfaz.
-* **Tipo de Columna**: Define el tipo de datos de la columna (por ejemplo, STRING, AMOUNT), lo que determina qué tipo de datos se pueden almacenar en la columna.
-* **Nombre de la Tabla**: Indica a qué tabla pertenece la columna, vinculándola a un tipo de documento específico como INVOICE\_TABLE.
-2. **Acciones**:
-* **Editar**: Modificar la configuración de una columna existente.
-* **Eliminar**: Eliminar la columna de la tabla, lo cual es útil si los datos ya no son necesarios o si la estructura de datos del tipo de documento cambia.
-3. **Agregar Nuevas Columnas y Tablas**:
-* **Agregar Nueva Columna de Tabla**: Abre un cuadro de diálogo donde puedes definir una nueva columna, incluyendo su nombre, si es requerida, su tipo de datos y la tabla a la que pertenece.
-* **Crear Nueva Tabla**: Permite la creación de una nueva tabla, definiendo un nombre único que se utilizará para almacenar datos relacionados con un conjunto específico de tipos de documento.
+1. **Spaltenkonfiguration**:
+* **Spaltenname**: Der Bezeichner der Spalte in der Datenbank.
+* **Titel**: Der menschenlesbare Titel der Spalte, der in der Oberfläche angezeigt wird.
+* **Spaltentyp**: Legt den Datentyp der Spalte fest (z. B. STRING, AMOUNT) und bestimmt damit, welche Art von Daten in der Spalte gespeichert werden können.
+* **Tabellenname**: Gibt an, zu welcher Tabelle die Spalte gehört, und verknüpft sie mit einem bestimmten Dokumenttyp wie INVOICE\_TABLE.
+2. **Aktionen**:
+* **Bearbeiten**: Ändern der Konfiguration einer vorhandenen Spalte.
+* **Löschen**: Entfernen der Spalte aus der Tabelle. Dies ist nützlich, wenn die Daten nicht mehr benötigt werden oder sich die Datenstruktur des Dokumenttyps ändert.
+3. **Neue Spalten und Tabellen hinzufügen**:
+* **Neue Tabellenspalte hinzufügen**: Öffnet ein Dialogfeld, in dem Sie eine neue Spalte definieren können, einschließlich ihres Namens, ob sie erforderlich ist, ihres Datentyps und der Tabelle, zu der sie gehört.
+* **Neue Tabelle erstellen**: Ermöglicht das Erstellen einer neuen Tabelle, indem ein eindeutiger Name festgelegt wird, der zum Speichern von Daten verwendet wird, die sich auf einen bestimmten Satz von Dokumenttypen beziehen.
 
 <figure><img src="../../../../.gitbook/assets/docbits_create_new_table.png" alt="Docbits Create New Table"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/docbits_table_columns_integrity.png" alt="Docbits Table Columns Integrity"><figcaption></figcaption></figure>
 
-Esta sección es vital para mantener la integridad estructural y la usabilidad de los datos dentro del sistema de Docbits, asegurando que los datos extraídos de los documentos se almacenen de manera organizada y accesible.
+Dieser Abschnitt ist von entscheidender Bedeutung, um die strukturelle Integrität und die Nutzbarkeit der Daten innerhalb des Docbits-Systems zu wahren, und stellt sicher, dass die aus Dokumenten extrahierten Daten organisiert und zugänglich gespeichert werden.
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2493" %}

@@ -1,12 +1,5 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Übersicht der hochgeladenen Dokumente
 
+Der zweite Teil des Dashboards ist eine Übersicht über alle hochgeladenen Dokumente. Sie können alle Dokumente anzeigen oder nur die, die Ihnen zugewiesen sind. Sie können auch nach Dokumenten anhand des Namens suchen.
 
-
-# Overview of Uploaded Documents
-
-The second part of the dashboard is an overview of all the uploaded documents. You can view all documents or just the ones assigned to you. You can also search for documents by name.
-
-Data will be extracted within seconds, and the status will change from “Running” to “Ready for Validation”.
-
-
-
+Die Daten werden innerhalb von Sekunden extrahiert, und der Status ändert sich von „Läuft“ zu „Bereit zur Validierung“.

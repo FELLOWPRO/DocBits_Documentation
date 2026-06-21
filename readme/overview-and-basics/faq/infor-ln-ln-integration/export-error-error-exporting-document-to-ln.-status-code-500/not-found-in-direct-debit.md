@@ -1,48 +1,46 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Nicht gefunden in Lastschrift
 
-# not found in direct debit
+## **Schritt 1: LN-Konfiguration prüfen**
 
-## **Step 1: Check LN Configuration**
+1. Melden Sie sich bei **LN CE** an.
+2. Navigieren Sie zum Menü **Options** und wählen Sie **Run Program**.
+3. Geben Sie im Eingabefeld **ACP Parameters** ein und drücken Sie die Eingabetaste, um das Programm zu öffnen.
+4. Klicken Sie auf den Pfeil neben dem Feld **Actual Set**, um die Einstellungen aufzuklappen.
+5. Wechseln Sie zum Abschnitt **Matching**.
+   * **Prüfen Sie die Einstellung „Automatic Matching“:**
+     * Wenn das **Automatic Matching** auf **Match to Purchase Receipt** eingestellt ist, fahren Sie mit dem nächsten Schritt fort.
+     * Wenn es **nicht** auf **Match to Purchase Receipt** eingestellt ist, Sie diesen Fehler aber dennoch erhalten haben, wenden Sie sich bitte an uns.
 
-1. Log in to **LN CE**.
-2. Navigate to the **Options** menu and select **Run Program**.
-3. In the input field, type **ACP Parameters** and press Enter to open the program.
-4. Click on the arrow next to the **Actual Set** field to expand the settings.
-5. Go to the **Matching** section.
-   * **Check the Automatic Matching Setting:**
-     * If the **Automatic Matching** is set to **Match to Purchase Receipt**, proceed to the next step.
-     * If it is **not** set to **Match to Purchase Receipt**, but you still got this error, please contact us.
+## **Schritt 2: DocBits-Einstellungen öffnen**
 
-## **Step 2: Open DocBits Settings**
+Wenn das **Automatic Matching** auf **Match to Purchase Receipt** eingestellt ist, fahren Sie mit den folgenden Schritten in DocBits fort:
 
-If the **Automatic Matching** is set to **Match to Purchase Receipt**, proceed with the following steps in DocBits:
+1. Öffnen Sie **DocBits** und gehen Sie zum Bereich **Einstellungen**.
+2. Navigieren Sie zu **Dokumentverarbeitung**.
+3. Wählen Sie **Export**.
+4. Klicken Sie im Bereich **Export** auf das Symbol mit den **drei Punkten** neben dem nicht funktionierenden Export und wählen Sie **Bearbeiten**.
+5. Klicken Sie im Menü **Exporteinstellungen bearbeiten** auf **LN-Mapping-Datei herunterladen**.
 
-1. Open **DocBits** and go to the **Settings** section.
-2. Navigate to **Document Processing**.
-3. Select **Export**.
-4. In the **Export** section, click on the **three dots** icon next to the export that is not working and select **Edit**.
-5. In the **Edit Export Settings** menu, click **Download the LN-Mapping** file.
+## **Schritt 3: LN-Mapping-Datei bearbeiten**
 
-## **Step 3: Edit LN-Mapping File**
+1. Öffnen Sie die heruntergeladene **LN-Mapping**-Datei.
+2.  Suchen Sie nach dem Feld **IRF\_PackingSlip**.
 
-1. Open the downloaded **LN-Mapping** file.
-2.  Search for the field **IRF\_PackingSlip**.
-
-    * If the field **IRF\_PackingSlip** is present and set to **nothing** (empty), update it to **TF\_packing\_slip**.
-    * If the field **IRF\_PackingSlip** is **not present**, add it to the file and set its value to **TF\_packing\_slip**.&#x20;
+    * Wenn das Feld **IRF\_PackingSlip** vorhanden und auf **nichts** (leer) gesetzt ist, aktualisieren Sie es auf **TF\_packing\_slip**.
+    * Wenn das Feld **IRF\_PackingSlip** **nicht vorhanden** ist, fügen Sie es der Datei hinzu und setzen Sie seinen Wert auf **TF\_packing\_slip**.&#x20;
 
 
-3. For the field **InvoiceReceiptFields** add **PackingSlip** to the values.
+3. Fügen Sie für das Feld **InvoiceReceiptFields** den Wert **PackingSlip** zu den Werten hinzu.
 
-It should look like the following:
+Es sollte wie folgt aussehen:
 
 <figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
 
 
 
-## **Step 4: Add the Updated File Back to DocBits**
+## **Schritt 4: Die aktualisierte Datei wieder in DocBits hinzufügen**
 
-1. Go back to the **Export** section in DocBits where you previously downloaded the **LN-Mapping** file.
-2. Upload the edited **LN-Mapping** file with the new updates.
+1. Gehen Sie zurück zum Bereich **Export** in DocBits, wo Sie zuvor die **LN-Mapping**-Datei heruntergeladen haben.
+2. Laden Sie die bearbeitete **LN-Mapping**-Datei mit den neuen Aktualisierungen hoch.
 
-## If you still encounter the **Error exporting document to LN** with status code **500**, please contact us
+## Falls weiterhin der Fehler **Error exporting document to LN** mit dem Statuscode **500** auftritt, wenden Sie sich bitte an uns

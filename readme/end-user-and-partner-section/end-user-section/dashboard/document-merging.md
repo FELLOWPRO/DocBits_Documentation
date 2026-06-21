@@ -1,35 +1,32 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
-
 ---
-description: Document merge documents
+description: Dokumente zusammenführen
 ---
 
-# Document Merging
+# Dokumente zusammenführen
 
-## Overview
+## Überblick
 
-Document merging allows you to combine multiple documents.
+Das Zusammenführen von Dokumenten ermöglicht es Ihnen, mehrere Dokumente zu kombinieren.
 
-First, you need to select the documents you would like to merge. This can be done by selecting the checkboxes of the documents. Once you have selected the documents, click on the icon with three dots.
+Zunächst müssen Sie die Dokumente auswählen, die Sie zusammenführen möchten. Dies erfolgt, indem Sie die Kontrollkästchen der Dokumente aktivieren. Sobald Sie die Dokumente ausgewählt haben, klicken Sie auf das Symbol mit den drei Punkten.
 
-A menu will then be displayed, select the “Merge” option which can be found at the bottom.
+Es wird dann ein Menü angezeigt; wählen Sie die Option „Zusammenführen“, die sich ganz unten befindet.
 
 <figure><img src="../../../.gitbook/assets/document-merging (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://lh7-us.googleusercontent.com/TV2KGh2Q38KsO5Zi-O-GKp5v42Lam4WSj8I8Ia6KjVj2c4X6vce2nFt7yJYicRWmDwKOHZDxrAsfEYtMpN-9UD2mpJ9Sfs4ueb1AYAOjKngY25JKaeEBPzUwcbrylwQ4jj_v-jkGZYLey9p9i0LfL-I" alt=""><figcaption></figcaption></figure>
 
-Document merging is an important feature in a document management system that allows users to combine multiple documents into a single document. Here are some reasons why document merging can be useful:
+Das Zusammenführen von Dokumenten ist eine wichtige Funktion in einem Dokumentenmanagementsystem, mit der Benutzer mehrere Dokumente zu einem einzigen Dokument kombinieren können. Hier sind einige Gründe, warum das Zusammenführen von Dokumenten nützlich sein kann:
 
-* **Organizing Related Documents:** By merging multiple documents into a single document, users can organize and keep related information or files together. This can help improve efficiency in managing and accessing documents.
-* **Creating reports or summaries:** Merging multiple documents can be useful to create reports or summaries by combining data or information from different sources or documents. This allows users to create comprehensive reports or presentations without having to manually copy and paste the information.
-* **Archiving documents:** When multiple versions of a document exist, or when documents need to be summarized within a specific time period, merging documents can help ensure consistent archiving practices and optimize storage space.
-* **Workflow optimization:** Document merging can be part of an automated workflow where documents are automatically combined once certain conditions are met. This can be used, for example, in an approval process or when creating contracts or reports.
+* **Verwandte Dokumente organisieren:** Durch das Zusammenführen mehrerer Dokumente zu einem einzigen Dokument können Benutzer zusammengehörige Informationen oder Dateien organisieren und gemeinsam aufbewahren. Dies kann die Effizienz bei der Verwaltung und beim Zugriff auf Dokumente verbessern.
+* **Berichte oder Zusammenfassungen erstellen:** Das Zusammenführen mehrerer Dokumente kann nützlich sein, um Berichte oder Zusammenfassungen zu erstellen, indem Daten oder Informationen aus verschiedenen Quellen oder Dokumenten kombiniert werden. So können Benutzer umfassende Berichte oder Präsentationen erstellen, ohne die Informationen manuell kopieren und einfügen zu müssen.
+* **Dokumente archivieren:** Wenn mehrere Versionen eines Dokuments existieren oder Dokumente innerhalb eines bestimmten Zeitraums zusammengefasst werden müssen, kann das Zusammenführen von Dokumenten dazu beitragen, einheitliche Archivierungspraktiken sicherzustellen und Speicherplatz zu optimieren.
+* **Workflow-Optimierung:** Das Zusammenführen von Dokumenten kann Teil eines automatisierten Workflows sein, bei dem Dokumente automatisch kombiniert werden, sobald bestimmte Bedingungen erfüllt sind. Dies kann zum Beispiel in einem Genehmigungsprozess oder beim Erstellen von Verträgen oder Berichten eingesetzt werden.
 
-## Examples of merging documents:
+## Beispiele für das Zusammenführen von Dokumenten:
 
-* **Combining Invoices:** A business needs to summarize all invoices from a given month for accounting purposes. Individual invoices are uploaded as separate documents and then merged to create a consolidated overview.
-* **Combining approval forms:** An application approval workflow requires multiple forms to be merged before being forwarded to management. The different forms are automatically combined as they are completed and submitted by the parties involved.
-* **Creating an Annual Report:** Multiple departments in a company work together to create a comprehensive annual report. Each department prepares its own section of the report as a separate document. These documents are then brought together to create the final annual report.
+* **Rechnungen zusammenfassen:** Ein Unternehmen muss zu Buchhaltungszwecken alle Rechnungen eines bestimmten Monats zusammenfassen. Einzelne Rechnungen werden als separate Dokumente hochgeladen und anschließend zusammengeführt, um eine konsolidierte Übersicht zu erstellen.
+* **Genehmigungsformulare zusammenfassen:** Ein Antragsgenehmigungs-Workflow erfordert, dass mehrere Formulare zusammengeführt werden, bevor sie an die Geschäftsführung weitergeleitet werden. Die verschiedenen Formulare werden automatisch kombiniert, sobald sie von den Beteiligten ausgefüllt und eingereicht wurden.
+* **Einen Jahresbericht erstellen:** Mehrere Abteilungen eines Unternehmens arbeiten zusammen, um einen umfassenden Jahresbericht zu erstellen. Jede Abteilung erstellt ihren eigenen Abschnitt des Berichts als separates Dokument. Diese Dokumente werden anschließend zusammengeführt, um den endgültigen Jahresbericht zu erstellen.
 
-By merging documents, organizations can streamline their document management processes, improve collaboration, and increase efficiency.
-
+Durch das Zusammenführen von Dokumenten können Organisationen ihre Dokumentenmanagementprozesse optimieren, die Zusammenarbeit verbessern und die Effizienz steigern.

@@ -1,9 +1,7 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# PO-Matching mit DocBits meistern
 
-# Master PO Matching with DocBits
-
-Discover in this video how to professionally handle discrepancies during PO matching with **DocBits**. We guide you step by step through what to do when numbers don’t align. Whether you’re an experienced ERP manager or an aspiring financial accountant, you’ll learn how to efficiently and securely manage discrepancies.
+Erfahren Sie in diesem Video, wie Sie Abweichungen beim PO-Matching mit **DocBits** professionell handhaben. Wir führen Sie Schritt für Schritt durch das Vorgehen, wenn die Zahlen nicht übereinstimmen. Ob Sie ein erfahrener ERP-Manager oder ein angehender Finanzbuchhalter sind – Sie lernen, wie Sie Abweichungen effizient und sicher verwalten.
 
 {% embed url="https://youtu.be/TUd0z7m70Y4" %}
 
-Learn how our special AI swarm intelligence in **DocBits** leads you through the entire process and how you can use our documentation to quickly find solutions to problems or uncertainties. Join the many satisfied customers who have optimized their processes with **DocBits**.
+Erfahren Sie, wie unsere besondere KI-Schwarmintelligenz in **DocBits** Sie durch den gesamten Prozess führt und wie Sie unsere Dokumentation nutzen können, um schnell Lösungen für Probleme oder Unklarheiten zu finden. Schließen Sie sich den vielen zufriedenen Kunden an, die ihre Prozesse mit **DocBits** optimiert haben.

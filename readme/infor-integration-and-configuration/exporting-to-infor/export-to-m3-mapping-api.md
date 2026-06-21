@@ -1,10 +1,8 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Export nach M3 Mapping (API)
 
-# Export to M3 Mapping (API)
+### Abschnitte
 
-### Sections
-
-M3 export mapping file is divided in 5 sections and each section is further divided into 2 sections
+Die M3-Export-Mapping-Datei ist in 5 Abschnitte unterteilt, und jeder Abschnitt ist wiederum in 2 Unterabschnitte unterteilt.
 
 * Header
   * Header Static Fields
@@ -22,144 +20,144 @@ M3 export mapping file is divided in 5 sections and each section is further divi
   * Cost Line Static Fields
   * Cost Line Fields
 
-### Adding and Removing Fields
+### Felder hinzufügen und entfernen
 
-Adding New Field:
+Neues Feld hinzufügen:
 
-* First we need to add the **M3 api field name** to the relevant section’s fields list property (e.g. StaticFields, HeaderFields, InvoiceTaxFields)
-* Define the static value or document field name for the api field with appropriate prefix for the section
-  * Example 1: To define a static value of **AAA** for the M3 api field **DIVI.** First we added DIVI to **StaticFields** property. Then we add a line **SF\_DIVI = AAA** as SF\_ is the prefix for static fields
-  * Example2: To map header field **IVDT (invoice data)** to invoice\_date field of DocBits. First we add IVDT to **HeaderFields** property. Then we add a line HF\_IVDT = invoice\_date as HF\_ is the prefix for header fields
+* Zunächst müssen wir den **M3-API-Feldnamen** zur Felderlisten-Eigenschaft des betreffenden Abschnitts hinzufügen (z. B. StaticFields, HeaderFields, InvoiceTaxFields).
+* Definieren Sie den statischen Wert oder den Dokumentfeldnamen für das API-Feld mit dem für den Abschnitt passenden Präfix.
+  * Beispiel 1: Um einen statischen Wert von **AAA** für das M3-API-Feld **DIVI** zu definieren, fügen wir zunächst DIVI zur Eigenschaft **StaticFields** hinzu. Anschließend fügen wir eine Zeile **SF\_DIVI = AAA** hinzu, da SF\_ das Präfix für statische Felder ist.
+  * Beispiel 2: Um das Header-Feld **IVDT (invoice data)** dem Feld invoice\_date von DocBits zuzuordnen, fügen wir zunächst IVDT zur Eigenschaft **HeaderFields** hinzu. Anschließend fügen wir eine Zeile HF\_IVDT = invoice\_date hinzu, da HF\_ das Präfix für Header-Felder ist.
 
-Removing Field:
+Feld entfernen:
 
-* Just remove the field from section’s field list property and remove the line defining value for the field.
+* Entfernen Sie einfach das Feld aus der Felderlisten-Eigenschaft des Abschnitts und entfernen Sie die Zeile, die den Wert für das Feld definiert.
 
-#### **Available M3 Api Fields:**
+#### **Verfügbare M3-API-Felder:**
 
-* Available M3 fields can be checked by opening appropriate screen in M3.
+* Die verfügbaren M3-Felder können durch Öffnen des entsprechenden Bildschirms in M3 überprüft werden.
 
 <figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee (1).png" alt=""><figcaption></figcaption></figure>
 
-* Similarly you can get field names for lines
+* Auf ähnliche Weise können Sie die Feldnamen für Zeilen abrufen.
 
 ### Header:
 
 <figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871 (1).png" alt=""><figcaption></figcaption></figure>
 
-Fields List Property: StaticFields
+Felderlisten-Eigenschaft: StaticFields
 
-Section Fields Prefix: SF\_
+Abschnitts-Feldpräfix: SF\_
 
-Available Fields: You can map any M3 api field with any static value
+Verfügbare Felder: Sie können jedes M3-API-Feld mit einem beliebigen statischen Wert zuordnen.
 
 #### **Header Fields**
 
-Fields List Property: HeaderFields
+Felderlisten-Eigenschaft: HeaderFields
 
-Section Fields Prefix: HF\_
+Abschnitts-Feldpräfix: HF\_
 
-Available Fields: You can map any DocBits field to any M3 api field
+Verfügbare Felder: Sie können jedes DocBits-Feld jedem M3-API-Feld zuordnen.
 
 ### Tax Line:
 
 #### Tax Line Static Fields:
 
-Fields List Property: InvoiceTaxStaticFields
+Felderlisten-Eigenschaft: InvoiceTaxStaticFields
 
-Section Fields Prefix: IT\_SF\_
+Abschnitts-Feldpräfix: IT\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: You can put any value as they are static fields
+Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
 #### Tax Line Fields:
 
-Fields List Property: InvoiceTaxFields
+Felderlisten-Eigenschaft: InvoiceTaxFields
 
-M3 Fields Prefix: ITF\_
+M3-Feldpräfix: ITF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits-Tabellenfeldpräfix: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
+Verfügbare DocBits-Felder: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
 
 ### Receipt Line:
 
 #### Receipt Line Static Fields:
 
-Fields List Property: InvoiceReceiptStaticFields
+Felderlisten-Eigenschaft: InvoiceReceiptStaticFields
 
-Section Fields Prefix: IR\_SF\_
+Abschnitts-Feldpräfix: IR\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: You can put any value as they are static fields
+Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
 #### Receipt Line Fields:
 
-Fields List Property: InvoiceReceiptFields
+Felderlisten-Eigenschaft: InvoiceReceiptFields
 
-M3 Fields Prefix: IRF\_
+M3-Feldpräfix: IRF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits-Tabellenfeldpräfix: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
+Verfügbare DocBits-Felder: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
 
 ### Order Charge Line:
 
 #### Order Charge Static Fields:
 
-Fields List Property: OrderChargeStaticFields
+Felderlisten-Eigenschaft: OrderChargeStaticFields
 
-Section Fields Prefix: OC\_SF\_
+Abschnitts-Feldpräfix: OC\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: You can put any value as they are static fields
+Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
 #### Order Charge Fields:
 
-Fields List Property: OrderChargeFields
+Felderlisten-Eigenschaft: OrderChargeFields
 
-M3 Fields Prefix: OCF\_
+M3-Feldpräfix: OCF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits-Tabellenfeldpräfix: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
+Verfügbare DocBits-Felder: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
 
 ### Cost Line:
 
 #### Cost Line Static Fields:
 
-Fields List Property: InvoiceCostStaticFields
+Felderlisten-Eigenschaft: InvoiceCostStaticFields
 
-Section Fields Prefix: IC\_SF\_
+Abschnitts-Feldpräfix: IC\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: You can put any value as they are static fields
+Verfügbare DocBits-Felder: Sie können einen beliebigen Wert eintragen, da es sich um statische Felder handelt.
 
 #### Cost Line Fields:
 
-Fields List Property: InvoiceCostFields
+Felderlisten-Eigenschaft: InvoiceCostFields
 
-M3 Fields Prefix: ICF\_
+M3-Feldpräfix: ICF\_
 
-DocBits Table Field Prefix: TF\_
+DocBits-Tabellenfeldpräfix: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Verfügbare M3-Felder: Bitte prüfen Sie die M3-API oder -UI.
 
-Available DocBits Fields: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
+Verfügbare DocBits-Felder: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
 
-New update
+Neues Update
 
 ```
 ###########################
@@ -296,7 +294,7 @@ ICF_AO06=TF_accounting_object_6
 ICF_AO07=TF_accounting_object_7
 ```
 
-### For US Customer we update this mapping to V3
+### Für US-Kunden aktualisieren wir dieses Mapping auf V3
 
 ````
 ```

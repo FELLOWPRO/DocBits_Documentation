@@ -1,92 +1,90 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Infrastruktur
 
-# Infrastructure
+Die Seite **Infrastruktur** bietet Administratoren eine aktuelle Übersicht auf einen Blick darüber, wo jeder Teil von DocBits läuft (EU oder US), wie ein Dokument das System durchläuft und ob die Hintergrundverarbeitung fehlerfrei funktioniert. Sie ist schreibgeschützt – hier wird nichts konfiguriert; sie beantwortet die Frage *„Läuft alles, und bleiben meine Daten in meiner Region?"*
 
-The **Infrastructure** page gives administrators a live, at-a-glance view of where every part of DocBits runs (EU or US), how a document flows through the system, and whether background processing is healthy. It is read-only — nothing here is configured; it answers *"is everything running, and is my data staying in my region?"*
+> **Zugriff:** Die Infrastruktur ist eine reine Administratorenseite. Öffnen Sie **Einstellungen → Organisation & Zugriff → Infrastruktur**.
 
-> **Access:** Infrastructure is an admin-only page. Open **Settings → Organization & Access → Infrastructure**.
+<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Infrastructure page with the Topology tab open"><figcaption><p>Die Seite „Infrastruktur", Registerkarte „Topologie"</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/infrastructure_overview.png" alt="Infrastructure page with the Topology tab open"><figcaption><p>The Infrastructure page, Topology tab</p></figcaption></figure>
+Die Seite ist in drei Registerkarten unterteilt:
 
-The page is split into three tabs:
-
-| Tab | Answers |
+| Registerkarte | Beantwortet |
 |-----|---------|
-| **Topology** | Where does each component run, and is it all in my region? |
-| **Processing** | Are document-processing steps (OCR, extraction, PO match …) running and up to date? |
-| **Scheduled tasks** | Are the recurring background jobs running on schedule? |
+| **Topologie** | Wo läuft jede Komponente, und befindet sich alles in meiner Region? |
+| **Verarbeitung** | Laufen die Schritte der Dokumentenverarbeitung (OCR, Extraktion, PO-Matching …) und sind sie auf dem aktuellen Stand? |
+| **Geplante Aufgaben** | Laufen die wiederkehrenden Hintergrundaufgaben planmäßig? |
 
-## Topology
+## Topologie
 
-The Topology tab draws the whole DocBits platform as a diagram, grouped into layers — **Edge / Web**, **Core API**, **Import**, **Background Services**, **Datastores** and **Authentication**. Each box is one component (the Web App/CDN, the API Gateway, the OCR worker, the database, and so on).
+Die Registerkarte „Topologie" stellt die gesamte DocBits-Plattform als Diagramm dar, gruppiert in Ebenen – **Edge / Web**, **Core API**, **Import**, **Hintergrunddienste**, **Datenspeicher** und **Authentifizierung**. Jedes Kästchen ist eine Komponente (die Web-App/CDN, das API-Gateway, der OCR-Worker, die Datenbank usw.).
 
-<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topology diagram with region badges"><figcaption><p>Every component is tagged with the region it runs in</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_topology.png" alt="Topology diagram with region badges"><figcaption><p>Jede Komponente ist mit der Region gekennzeichnet, in der sie läuft</p></figcaption></figure>
 
-### Region awareness
+### Regionserkennung
 
-Each component carries a region badge so you can confirm your data residency at a glance:
+Jede Komponente trägt eine Regionsmarkierung, sodass Sie Ihren Datenspeicherort auf einen Blick bestätigen können:
 
-| Badge | Meaning |
+| Markierung | Bedeutung |
 |-------|---------|
-| **EU ✓** / **US ✓** | The component runs in your organization's region. |
-| **SHARED** | A global component (e.g. the CDN) with no single region — this is expected and not an issue. |
-| **Region mismatch** | The component runs in a *different* region than your organization. It is highlighted so you can raise it with support. |
+| **EU ✓** / **US ✓** | Die Komponente läuft in der Region Ihrer Organisation. |
+| **SHARED** | Eine globale Komponente (z. B. das CDN) ohne einzelne Region – das ist normal und kein Problem. |
+| **Region mismatch** | Die Komponente läuft in einer *anderen* Region als Ihre Organisation. Sie wird hervorgehoben, damit Sie sie beim Support melden können. |
 
-The banner at the top summarizes the result: **"All components run in your region (EU)"** when everything matches, or a warning if any critical component is cross-region.
+Das Banner oben fasst das Ergebnis zusammen: **„Alle Komponenten laufen in Ihrer Region (EU)"**, wenn alles übereinstimmt, oder eine Warnung, falls eine kritische Komponente regionsübergreifend läuft.
 
-### Architecture vs. Play process
+### Architektur vs. Prozessablauf
 
-Use the toggle above the diagram to switch view:
+Verwenden Sie den Umschalter oberhalb des Diagramms, um die Ansicht zu wechseln:
 
-- **Architecture** — the static map of all components and how they connect.
-- **Play process** — animates the journey of a document through the system, step by step, so you can see the order in which components are involved.
+- **Architektur** – die statische Karte aller Komponenten und ihrer Verbindungen.
+- **Prozessablauf** – animiert den Weg eines Dokuments durch das System Schritt für Schritt, sodass Sie die Reihenfolge sehen, in der die Komponenten beteiligt sind.
 
-The **● live** indicator shows that the health information in the diagram reflects the current state of the system.
+Die Anzeige **● live** zeigt, dass die Zustandsinformationen im Diagramm den aktuellen Zustand des Systems widerspiegeln.
 
-### Optional modules
+### Optionale Module
 
-Components that belong to an optional module (Full-Text Search, DocFlow, Auto-Accounting, DocNet, PO Matching) show an **activated** or **deactivated** badge. Clicking a deactivated module takes you straight to the page where you can switch it on — **Settings → Module** for most modules, or **Document Types** for PO Matching (which is enabled per document type).
+Komponenten, die zu einem optionalen Modul gehören (Volltextsuche, DocFlow, Auto-Accounting, DocNet, PO-Matching), zeigen eine Markierung **aktiviert** oder **deaktiviert** an. Wenn Sie auf ein deaktiviertes Modul klicken, gelangen Sie direkt zu der Seite, auf der Sie es einschalten können – **Einstellungen → Modul** für die meisten Module, oder **Dokumenttypen** für das PO-Matching (das pro Dokumenttyp aktiviert wird).
 
-## Processing
+## Verarbeitung
 
-The Processing tab shows the document-processing pipeline for **your organization** — when each step last ran and whether work is flowing or backing up.
+Die Registerkarte „Verarbeitung" zeigt die Pipeline der Dokumentenverarbeitung für **Ihre Organisation** – wann jeder Schritt zuletzt ausgeführt wurde und ob die Arbeit fließt oder sich staut.
 
-<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Processing tasks table with status badges"><figcaption><p>Per-step processing status for your organization</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_processing.png" alt="Processing tasks table with status badges"><figcaption><p>Verarbeitungsstatus je Schritt für Ihre Organisation</p></figcaption></figure>
 
-| Column | Description |
+| Spalte | Beschreibung |
 |--------|-------------|
-| **Process** | The processing step — Document Processing, OCR, TR-OCR, Barcode Split, Barcode Extraction, Extraction, PO Match. |
-| **Last Run** | How long ago the step last ran. Hover for the exact timestamp. *"Never run"* means no document has reached this step yet. |
-| **Status** | A traffic-light badge (see below). |
+| **Prozess** | Der Verarbeitungsschritt – Dokumentenverarbeitung, OCR, TR-OCR, Barcode-Split, Barcode-Extraktion, Extraktion, PO-Matching. |
+| **Letzte Ausführung** | Wie lange es her ist, dass der Schritt zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen. *„Nie ausgeführt"* bedeutet, dass noch kein Dokument diesen Schritt erreicht hat. |
+| **Status** | Eine Ampelmarkierung (siehe unten). |
 
-Status badges:
+Statusmarkierungen:
 
-| Badge | Meaning |
+| Markierung | Bedeutung |
 |-------|---------|
-| **OK** (green) | No recent errors and nothing waiting — the step is healthy. |
-| **In progress (N)** (amber) | `N` documents are currently being processed by this step. |
-| **Error (N)** (red) | `N` documents recently failed at this step. |
+| **OK** (grün) | Keine aktuellen Fehler und nichts in Wartestellung – der Schritt funktioniert fehlerfrei. |
+| **In Bearbeitung (N)** (gelb) | `N` Dokumente werden derzeit von diesem Schritt verarbeitet. |
+| **Fehler (N)** (rot) | `N` Dokumente sind bei diesem Schritt kürzlich fehlgeschlagen. |
 
-Errors and *in progress* are independent signals, so a step can show both badges at once — you still see a failure even while other work is running. Use **Refresh** (top-right) to pull the latest numbers.
+Fehler und *In Bearbeitung* sind unabhängige Signale, sodass ein Schritt beide Markierungen gleichzeitig anzeigen kann – Sie sehen einen Fehler also auch dann, während andere Arbeit läuft. Verwenden Sie **Aktualisieren** (oben rechts), um die neuesten Zahlen abzurufen.
 
-## Scheduled tasks
+## Geplante Aufgaben
 
-The Scheduled tasks tab lists the recurring background jobs that keep DocBits running (cache refreshes, status alerts, document timeouts, outbound syncs, and more) and confirms each one is firing on time.
+Die Registerkarte „Geplante Aufgaben" listet die wiederkehrenden Hintergrundaufgaben auf, die DocBits am Laufen halten (Cache-Aktualisierungen, Statuswarnungen, Dokument-Timeouts, ausgehende Synchronisierungen und mehr), und bestätigt, dass jede davon pünktlich ausgelöst wird.
 
-<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Scheduled tasks table"><figcaption><p>Recurring background jobs and their schedule status</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/infrastructure_scheduled.png" alt="Scheduled tasks table"><figcaption><p>Wiederkehrende Hintergrundaufgaben und ihr Zeitplanstatus</p></figcaption></figure>
 
-| Column | Description |
+| Spalte | Beschreibung |
 |--------|-------------|
-| **Task** | The name of the scheduled job. |
-| **Last Run** | How long ago it last ran. Hover for the exact timestamp; *"Never run"* means it has not fired yet. |
-| **Status** | Schedule health (see below). |
+| **Aufgabe** | Der Name der geplanten Aufgabe. |
+| **Letzte Ausführung** | Wie lange es her ist, dass sie zuletzt ausgeführt wurde. Bewegen Sie den Mauszeiger darüber, um den genauen Zeitstempel zu sehen; *„Nie ausgeführt"* bedeutet, dass sie noch nicht ausgelöst wurde. |
+| **Status** | Zeitplanzustand (siehe unten). |
 
-Status values:
+Statuswerte:
 
-| Badge | Meaning |
+| Markierung | Bedeutung |
 |-------|---------|
-| **On schedule** (green) | The task is running at its expected interval. |
-| **Delayed** (red) | The task has not run when expected — worth investigating or raising with support. |
-| **Unknown** (grey) | Schedule status could not be determined. |
+| **Planmäßig** (grün) | Die Aufgabe läuft in ihrem erwarteten Intervall. |
+| **Verzögert** (rot) | Die Aufgabe ist nicht zum erwarteten Zeitpunkt ausgeführt worden – sollte untersucht oder beim Support gemeldet werden. |
+| **Unbekannt** (grau) | Der Zeitplanstatus konnte nicht ermittelt werden. |
 
-Use **Refresh** to re-check the schedule status on demand.
+Verwenden Sie **Aktualisieren**, um den Zeitplanstatus bei Bedarf erneut zu überprüfen.

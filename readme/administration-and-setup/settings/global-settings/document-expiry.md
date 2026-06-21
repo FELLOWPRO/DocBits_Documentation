@@ -1,28 +1,26 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Dokumentenablauf
 
-# Caducidad de documentos
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Einstellungen für den Dokumentenablauf"><figcaption><p>Einstellungen für den Dokumentenablauf</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Configuración de caducidad de documentos"><figcaption><p>Configuración de caducidad de documentos</p></figcaption></figure>
+Unter **Dokumentenverarbeitung → Dokumentenablauf** steuern Sie, wie lange DocBits Ihre Dokumente aufbewahrt, bevor sie automatisch gelöscht werden. Dies hilft Ihnen, den Speicher zu verwalten, Richtlinien zur Datenaufbewahrung durchzusetzen und gesetzliche oder organisatorische Vorgaben dazu einzuhalten, wie lange Dokumente gespeichert werden dürfen.
 
-En **Procesamiento de documentos → Caducidad de documentos** controla durante cuánto tiempo DocBits conserva sus documentos antes de eliminarlos automáticamente. Esto le ayuda a gestionar el almacenamiento, aplicar políticas de retención de datos y cumplir las normas legales u organizativas sobre el tiempo que pueden almacenarse los documentos.
+Zwei Einstellungen steuern die automatische Löschung:
 
-Dos ajustes controlan la eliminación automática:
-
-| Ajuste | Qué controla |
+| Einstellung | Was sie steuert |
 |--------|--------------|
-| **Eliminar documento después de** | Cuánto tiempo se conserva un documento procesado antes de eliminarse automáticamente. |
-| **Eliminar documento finalizado después de** | Cuánto tiempo se conserva un documento finalizado (totalmente procesado y exportado) antes de eliminarse automáticamente. |
+| **Dokument löschen nach** | Wie lange ein verarbeitetes Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
+| **Finalisiertes Dokument löschen nach** | Wie lange ein finalisiertes Dokument (vollständig verarbeitet und exportiert) aufbewahrt wird, bevor es automatisch gelöscht wird. |
 
-Para cada ajuste, elija un período en el menú desplegable:
+Wählen Sie für jede Einstellung einen Zeitraum aus dem Dropdown-Menü:
 
-<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Períodos de retención disponibles"><figcaption><p>Períodos de retención disponibles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Verfügbare Aufbewahrungszeiträume"><figcaption><p>Verfügbare Aufbewahrungszeiträume</p></figcaption></figure>
 
-| Opción | Significado |
+| Option | Bedeutung |
 |--------|-------------|
-| **Predeterminado** | Usar el período de retención predeterminado del sistema (sin anulación personalizada). |
-| **48 Horas** | Eliminar 48 horas después del procesamiento. |
-| **1 Semana** | Eliminar después de una semana. |
-| **2 Semanas** | Eliminar después de dos semanas. |
-| **4 Semanas** | Eliminar después de cuatro semanas. |
+| **Standard** | Den standardmäßigen Aufbewahrungszeitraum des Systems verwenden (keine benutzerdefinierte Überschreibung). |
+| **48 Stunden** | 48 Stunden nach der Verarbeitung löschen. |
+| **1 Woche** | Nach einer Woche löschen. |
+| **2 Wochen** | Nach zwei Wochen löschen. |
+| **4 Wochen** | Nach vier Wochen löschen. |
 
-Ambos ajustes garantizan que los documentos no se conserven más de lo necesario, lo que evita un uso innecesario del almacenamiento y mantiene despejado el flujo de trabajo de documentos. Son especialmente importantes para las organizaciones que deben cumplir requisitos normativos específicos sobre la retención de documentos.
+Beide Einstellungen stellen sicher, dass Dokumente nicht länger als nötig aufbewahrt werden, wodurch eine unnötige Speichernutzung vermieden und der Dokumenten-Workflow übersichtlich gehalten wird. Sie sind besonders wichtig für Organisationen, die bestimmte regulatorische Anforderungen an die Dokumentenaufbewahrung erfüllen müssen.

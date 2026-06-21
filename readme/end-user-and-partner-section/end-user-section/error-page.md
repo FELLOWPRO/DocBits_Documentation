@@ -1,88 +1,86 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Fehler
 
-# Error
+## Überblick
 
-## Overview
+Wenn während Ihres Dokumenten-Workflows ein Fehler auftritt, wechselt das Dokument in den Status **Fehler**. In diesem Fall können Sie auf das Dokument klicken, um:
 
-If an error occurs during your document workflow, the document will enter the **Error** status. When this happens, you can click on the document to:
+* Wichtige Details anzuzeigen, die erklären, warum der Fehler aufgetreten ist
+* Notizen zum Dokument hinzuzufügen
+* Das Dokument zu drucken oder herunterzuladen
 
-* View critical details explaining why the error occurred
-* Add notes to the document
-* Print or download the document
+So können Sie Probleme diagnostizieren und geeignete Maßnahmen ergreifen, ohne den Zugriff auf das Dokument selbst zu verlieren.
 
-This allows you to diagnose issues and take appropriate actions without losing access to the document itself.
+Diese Seite bietet einen Überblick über die verfügbaren Werkzeuge, die Ihnen helfen, Dokumente im Status **Fehler** zu überprüfen und zu verwalten.
 
-This page provides an overview of the tools available to help you review and manage documents in the **Error** state.
+## Fehlerdetails
 
-## Error Details
-
-On the right side of the document view, you will find the **Error Message**, which provides a brief description of what went wrong.\
-Below the error message, the **Exception** is displayed, showing where the error occurred in the code. This information is useful for troubleshooting and should be included when reporting the issue to support.
+Auf der rechten Seite der Dokumentenansicht finden Sie die **Fehlermeldung**, die eine kurze Beschreibung dessen liefert, was schiefgelaufen ist.\
+Unterhalb der Fehlermeldung wird die **Ausnahme (Exception)** angezeigt, die zeigt, wo im Code der Fehler aufgetreten ist. Diese Information ist hilfreich für die Fehlersuche und sollte beim Melden des Problems an den Support angegeben werden.
 
 <figure><img src="../../.gitbook/assets/error_2.png" alt=""><figcaption></figcaption></figure>
 
-## Editing Options
+## Bearbeitungsoptionen
 
-On the left side of the page, your document is displayed along with several tools for interaction and review.
+Auf der linken Seite der Seite wird Ihr Dokument zusammen mit mehreren Werkzeugen zur Interaktion und Überprüfung angezeigt.
 
 <figure><img src="../../.gitbook/assets/error_3 (1).png" alt=""><figcaption></figcaption></figure>
 
-### **Left Toolbar Options**
+### **Optionen der linken Symbolleiste**
 
 <figure><img src="../../.gitbook/assets/error_4.png" alt=""><figcaption></figcaption></figure>
 
-The toolbar on the left side of the page provides tools to interact with the document:
+Die Symbolleiste auf der linken Seite der Seite bietet Werkzeuge zur Interaktion mit dem Dokument:
 
-* **Toggle Thumbnail View**\
-  Show or hide the sidebar that displays all document pages as thumbnails for easy navigation.
-* **View the Document ID**\
-  Helpful when reporting an issue—include this ID in your support request.
-* **Track Current Page and Zoom Level**\
-  See which page you're viewing and at what zoom percentage.
-* **Fit to Height or Width**\
-  Adjust the document display to fit either the height or width of the viewer.
-* **Rotate the Document**\
-  Rotate the document for easier viewing of scanned or sideways content.
-* **Add Notations**\
-  Annotate the document with comments or highlights.
-* **Undo or Redo Actions**\
-  Quickly reverse or reapply recent actions.
+* **Miniaturansicht umschalten**\
+  Die Seitenleiste ein- oder ausblenden, die alle Dokumentseiten als Miniaturansichten zur einfachen Navigation anzeigt.
+* **Dokument-ID anzeigen**\
+  Hilfreich beim Melden eines Problems – geben Sie diese ID in Ihrer Support-Anfrage an.
+* **Aktuelle Seite und Zoomstufe verfolgen**\
+  Sehen Sie, welche Seite Sie gerade betrachten und mit welchem Zoom-Prozentsatz.
+* **An Höhe oder Breite anpassen**\
+  Passen Sie die Dokumentanzeige so an, dass sie entweder an die Höhe oder die Breite des Viewers angepasst wird.
+* **Dokument drehen**\
+  Drehen Sie das Dokument, um gescannte oder seitlich liegende Inhalte leichter betrachten zu können.
+* **Anmerkungen hinzufügen**\
+  Versehen Sie das Dokument mit Kommentaren oder Hervorhebungen.
+* **Aktionen rückgängig machen oder wiederholen**\
+  Setzen Sie kürzliche Aktionen schnell zurück oder wenden Sie sie erneut an.
 
 ***
 
-### **Right Toolbar Options**
+### **Optionen der rechten Symbolleiste**
 
 <figure><img src="../../.gitbook/assets/error_5.png" alt=""><figcaption></figcaption></figure>
 
-The toolbar on the right side of the page offers additional functionality:
+Die Symbolleiste auf der rechten Seite der Seite bietet zusätzliche Funktionen:
 
-* **Download the Document**\
-  Save the document to your device, with or without annotations.
-* **Print the Document**\
-  Send the document to a printer, including visible annotations.
-* **Switch Viewing Modes**\
-  Change between different display styles or reading modes.
-* **View Document Properties**\
-  Access metadata such as file name, type, size, and creation date.
+* **Dokument herunterladen**\
+  Speichern Sie das Dokument auf Ihrem Gerät, mit oder ohne Anmerkungen.
+* **Dokument drucken**\
+  Senden Sie das Dokument an einen Drucker, einschließlich sichtbarer Anmerkungen.
+* **Ansichtsmodi wechseln**\
+  Wechseln Sie zwischen verschiedenen Darstellungsstilen oder Lesemodi.
+* **Dokumenteigenschaften anzeigen**\
+  Greifen Sie auf Metadaten wie Dateiname, Typ, Größe und Erstellungsdatum zu.
 
-## How to Proceed Further
+## Wie Sie weiter vorgehen
 
-If a document enters the **Error** state, you have several options to continue:
+Wenn ein Dokument in den Status **Fehler** wechselt, haben Sie mehrere Möglichkeiten fortzufahren:
 
-**1. Restart the Document**
+**1. Dokument neu starten**
 
-In many cases, restarting the document can resolve the issue and allow processing to resume.
+In vielen Fällen kann ein Neustart des Dokuments das Problem beheben und die Verarbeitung fortsetzen.
 
-*   To restart the document:
+*   So starten Sie das Dokument neu:
 
-    1. Click the three dots in the **Actions** column.
-    2. Select **Restart** from the menu.
+    1. Klicken Sie auf die drei Punkte in der Spalte **Aktionen**.
+    2. Wählen Sie **Neu starten** aus dem Menü.
 
     <figure><img src="../../.gitbook/assets/error_1.png" alt=""><figcaption></figcaption></figure>
 
-**2. Contact Support**
+**2. Support kontaktieren**
 
-If the error persists after restarting, you can contact our support team for further assistance.\
-Please provide as much information as possible to help our team resolve the issue efficiently (e.g., document ID, error message, actions taken).
+Wenn der Fehler nach dem Neustart weiterhin besteht, können Sie unser Support-Team für weitere Unterstützung kontaktieren.\
+Bitte geben Sie so viele Informationen wie möglich an, damit unser Team das Problem effizient lösen kann (z. B. Dokument-ID, Fehlermeldung, durchgeführte Aktionen).
 
-Instructions for submitting a support ticket can be found [here](ressources-and-support/user-support.md).
+Anweisungen zum Einreichen eines Support-Tickets finden Sie [hier](ressources-and-support/user-support.md).

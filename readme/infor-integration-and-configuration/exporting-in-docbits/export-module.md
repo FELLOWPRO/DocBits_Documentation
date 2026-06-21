@@ -1,21 +1,19 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Exportmodul
 
-# Export Module
+## Überblick
 
-## Overview
+Die Export-Seite zeigt alle konfigurierten Export-Setups an, einschließlich der Information, ob sie aktiv oder inaktiv sind. Von hier aus können Benutzer:
 
-The Export page displays all configured export setups, including whether they are active or inactive. From here, users can:
+* Bestehende Exportkonfigurationen anzeigen und verwalten
+* Neue Exportverbindungen erstellen (z. B. zu **Infor**, **Infor & IDM**, **Webhook** oder **SFTP**)
+* Bestehende Exportkonfigurationen bearbeiten oder löschen
 
-* View and manage existing export configurations
-* Create new export connections (e.g., to **Infor**, **Infor & IDM**, **Webhook**, or **SFTP**)
-* Edit or delete existing export configurations
+## Wo Sie es finden
 
-## Where to Find It
-
-You can find it under: **Settings** → **Document Processing** → **Export**
+Sie finden es unter: **Settings** → **Document Processing** → **Export**
 
 <figure><img src="../../.gitbook/assets/export_settings_menu_access.png" alt=""><figcaption></figcaption></figure>
 
-For detailed instructions on how to configure each export type, including screenshots and field descriptions, visit the full guide:
+Ausführliche Anleitungen zur Konfiguration der einzelnen Exporttypen, einschließlich Screenshots und Feldbeschreibungen, finden Sie im vollständigen Leitfaden:
 
-[View Export Configuration Guide](../../administration-and-setup/settings/document-processing/export.md)
+[Leitfaden zur Exportkonfiguration anzeigen](../../administration-and-setup/settings/document-processing/export.md)

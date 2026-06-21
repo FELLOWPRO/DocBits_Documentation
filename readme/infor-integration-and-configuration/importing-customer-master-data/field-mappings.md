@@ -1,8 +1,6 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Feldzuordnungen
 
-# Field Mappings
-
-Below you will find the necessary field mappings for importing master data, from Infor, into DocBits.
+Nachfolgend finden Sie die erforderlichen Feldzuordnungen für den Import von Stammdaten aus Infor in DocBits.
 
 ## Auto Accounting (LN)
 

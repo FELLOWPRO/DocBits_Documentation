@@ -1,24 +1,22 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Infor-Infrastruktur
 
-# Infor Infrastructure
+### Offener Port 443 & sichere Kommunikation
 
-### Open Port 443 & Secure Communication
+Wir verstehen, wie wichtig eine sichere Datenübertragung ist. Deshalb verwenden wir den offenen Port 443, den Standardport für HTTPS, um sicherzustellen, dass alle übertragenen Daten verschlüsselt und sicher sind. Unsere SSL-gesicherten Verbindungen garantieren, dass Ihre Daten bei jedem Schritt des Prozesses geschützt sind.
 
-We understand the importance of secure data transfer. That’s why we use open port 443, the standard port for HTTPS, ensuring that all data transferred is encrypted and secure. Our SSL-secured connections guarantee that your data is safe during every step of the process.
+<figure><img src="../.gitbook/assets/secure.svg" alt="Open Port 443 &#x26; Secure Communication - DocBits"><figcaption><p>Sichere Datenübertragung</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/secure.svg" alt="Open Port 443 &#x26; Secure Communication - DocBits"><figcaption><p>Secure Data Transfer</p></figcaption></figure>
+### Kommunikation mit der Datenbank
 
-### Communication With The Database
-
-When it comes to database communication, we don’t take any chances. Our Kubernetes setup and databases reside within the same Virtual Private Cloud (VPC). This means we only access the database via local IP, ensuring that the transmitted data never leaves the local network. It’s like having a private highway just for your data.
+Bei der Datenbankkommunikation gehen wir keine Risiken ein. Unser Kubernetes-Setup und unsere Datenbanken befinden sich in derselben Virtual Private Cloud (VPC). Das bedeutet, dass wir auf die Datenbank ausschließlich über die lokale IP zugreifen und so sicherstellen, dass die übertragenen Daten das lokale Netzwerk niemals verlassen. Es ist wie eine private Autobahn nur für Ihre Daten.
 
 ### Spaces
 
-Document handling is a breeze with Docbits. All uploaded documents are securely stored in a dedicated ‘Space’. We use SSL encryption for data traffic and require multiple keys for file access, making sure your documents are as secure as a vault.
+Mit DocBits ist die Dokumentenverwaltung ein Kinderspiel. Alle hochgeladenen Dokumente werden sicher in einem dedizierten „Space“ gespeichert. Wir verwenden SSL-Verschlüsselung für den Datenverkehr und erfordern mehrere Schlüssel für den Dateizugriff, sodass Ihre Dokumente so sicher sind wie in einem Tresor.
 
-### Traffic Security
+### Sicherheit des Datenverkehrs
 
-We only allow HTTPS-secured connections for communicating with our servers. This ensures that all data transferred is encrypted, keeping your sensitive information safe and sound. It’s like having a security guard for your data, 24/7.
+Wir erlauben für die Kommunikation mit unseren Servern ausschließlich HTTPS-gesicherte Verbindungen. Dadurch wird sichergestellt, dass alle übertragenen Daten verschlüsselt sind und Ihre sensiblen Informationen sicher bleiben. Es ist wie ein Sicherheitsdienst für Ihre Daten, rund um die Uhr.
 
 ### Infor Cloud
 
@@ -26,6 +24,6 @@ We only allow HTTPS-secured connections for communicating with our servers. This
 
 ### Infor On-Prem
 
-Flexibility is key, and we offer both cloud and on-premise solutions. With our on-premise option, there’s no need to open any ports, ensuring that your network security remains uncompromised. Whether you’re in the cloud or keeping things in-house, we’ve got you covered.
+Flexibilität ist entscheidend, und wir bieten sowohl Cloud- als auch On-Premise-Lösungen an. Mit unserer On-Premise-Option müssen keine Ports geöffnet werden, sodass die Sicherheit Ihres Netzwerks uneingeschränkt erhalten bleibt. Ob in der Cloud oder im eigenen Haus – wir haben für Sie die passende Lösung.
 
 <figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt=""><figcaption></figcaption></figure>

@@ -1,19 +1,16 @@
-_Englischer Inhalt unten – Übersetzung ausstehend_
+# Manueller Import
 
-# Manual Import
-
-If you’re looking to import documents manually into DocBits, follow these simple steps:
+Wenn Sie Dokumente manuell in DocBits importieren möchten, gehen Sie wie folgt vor:
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
-DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
+DocBits Import-Tutorial: Dokumente hochladen, Drag & Drop + manuelle vs. automatische Klassifizierung
 {% endembed %}
 
-* Click on the Upload button on the DocBits Dashboard.
-* A window will appear where you can upload your documents via file browser or drag and drop. You can upload up to 10 documents at once.
-* To upload documents via file browser, click on the Upload Documents button and select the files you want to upload. Once you’ve selected the files, click on Confirm to start the upload process.
-* Alternatively, you can drag and drop your files onto the DocBits import window.
-* After the files have been uploaded, they will have the initial status of “Running”. During this time, the upload is being processed and editing the file is not possible. The processing time may vary depending on the size and complexity of the file.
-* Once the file has been processed, it will receive the status of “Ready For Validation”. You can now start the validation process.
+* Klicken Sie auf dem DocBits-Dashboard auf die Schaltfläche Upload.
+* Es öffnet sich ein Fenster, in dem Sie Ihre Dokumente über den Dateibrowser oder per Drag & Drop hochladen können. Sie können bis zu 10 Dokumente gleichzeitig hochladen.
+* Um Dokumente über den Dateibrowser hochzuladen, klicken Sie auf die Schaltfläche Dokumente hochladen und wählen Sie die Dateien aus, die Sie hochladen möchten. Sobald Sie die Dateien ausgewählt haben, klicken Sie auf Bestätigen, um den Upload-Vorgang zu starten.
+* Alternativ können Sie Ihre Dateien per Drag & Drop in das DocBits-Importfenster ziehen.
+* Nachdem die Dateien hochgeladen wurden, erhalten sie zunächst den Status „Running“. Während dieser Zeit wird der Upload verarbeitet, und eine Bearbeitung der Datei ist nicht möglich. Die Verarbeitungszeit kann je nach Größe und Komplexität der Datei variieren.
+* Sobald die Datei verarbeitet wurde, erhält sie den Status „Ready For Validation“. Sie können nun den Validierungsprozess starten.
 
 <figure><img src="../../../.gitbook/assets/manual-import1.png" alt=""><figcaption></figcaption></figure>
-

@@ -1,13 +1,11 @@
 ---
-description: Using DocBis with your Microsoft Login without using a (separate) password
+description: DocBits mit Ihrem Microsoft-Login nutzen, ohne ein (separates) Passwort zu verwenden
 ---
 
 # Azure SSO
 
-(English content below - Translation pending)
+### SAML SSO in Azure AD erstellen
 
-### Create SAML SSO in Azure AD
+Führen Sie die folgenden Schritte aus, um SAML SSO in Azure AD hinzuzufügen:
 
-Perform the following steps to add SAML SSO in Azure AD:
-
-*   In Azure, go to your `Azure Active Directory` console...
+*   Wechseln Sie in Azure zu Ihrer `Azure Active Directory`-Konsole ...

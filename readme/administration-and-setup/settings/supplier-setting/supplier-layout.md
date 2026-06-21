@@ -1,9 +1,7 @@
 # Supplier Layout
 
-(English content below - Translation pending)
-
-This is where you decide what information you want to include and define what information is needed. You can easily design your layout using the drag-and-drop functions.
+Hier legen Sie fest, welche Informationen Sie aufnehmen möchten, und definieren, welche Informationen benötigt werden. Mithilfe der Drag-and-drop-Funktionen können Sie Ihr Layout ganz einfach gestalten.
 
 <figure><img src="../../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
-You can use it to create layouts for supplier users and for supplier management.
+Sie können damit Layouts für Lieferantenbenutzer und für die Lieferantenverwaltung erstellen.

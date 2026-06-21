@@ -1,7 +1,5 @@
 # Regex Manager
 
-(English content below - Translation pending)
+Diese Funktion von DocBits bietet Ihnen eine Alternative zur modellbasierten Klassifizierung, da sie es Ihnen ermöglicht, durchsuchbare reguläre Ausdrücke für einen Dokumenttyp zur Klassifizierung und für andere Zwecke zu schreiben.
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
-
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note....
+Dokumenttyp: Der Regex Manager ermöglicht es Ihnen, reguläre Ausdrücke zu schreiben. Dieser reguläre Ausdruck wird dann im Dokument gesucht. Findet er eine Übereinstimmung mit dem regulären Ausdruck eines definierten Dokuments, klassifiziert er das Dokument dem entsprechenden Dokumenttyp zu. Wenn Sie beispielsweise einen regulären Ausdruck schreiben, um „Gutschrift“ zu finden: Findet DocBits diesen Begriff in einem Dokument, würde es das Dokument als Gutschrift klassifizieren. ...

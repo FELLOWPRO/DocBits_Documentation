@@ -1,7 +1,5 @@
 # Troubleshooting Common Issues
 
-(English content below - Translation pending)
+Hier finden Sie Schritte zur Fehlerbehebung bei häufigen Problemen während der Integration von DocBits mit einem Identity Service Provider (IdP) oder anderen Diensten:
 
-Here are troubleshooting steps for common issues while integrating DocBits with an Identity Service Provider (IdP) or other services:
-
-* **Verify configuration:** Make sure the integration settings in DocBits are correctly configured and match your Identity Service Provider's requirements. In particular, check the SSO URL, Entity ID, and certificates....
+* **Konfiguration überprüfen:** Stellen Sie sicher, dass die Integrationseinstellungen in DocBits korrekt konfiguriert sind und den Anforderungen Ihres Identity Service Providers entsprechen. Überprüfen Sie insbesondere die SSO-URL, die Entity-ID und die Zertifikate. ...

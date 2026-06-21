@@ -1,9 +1,7 @@
 # Identity Service Provider Configuration
 
-(English content below - Translation pending)
-
-Configuring the Identity Service Provider (IdP) to integrate with DocBits requires a few specific steps.Here is a guide to doing that:
+Die Konfiguration des Identity Service Providers (IdP) für die Integration mit DocBits erfordert einige spezifische Schritte. Hier finden Sie eine Anleitung dazu:
 
 <figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
-**Accessing the IdP configuration interface**...
+**Zugriff auf die IdP-Konfigurationsoberfläche** ...

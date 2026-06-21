@@ -4,12 +4,10 @@ hidden: true
 
 # Fuzzy Data Configuration with List of Values
 
-(English content below - Translation pending)
+### **Überblick**
 
-### **Overview**
+Jeder Dokumenttyp verfügt über eigene Konfigurationen für die List of Values (LoV), die separat eingerichtet werden müssen. Anders als **Fuzzy Data with Master Data** wird **List of Values** nicht mit standardmäßigen Lookup-Gruppen ausgeliefert.
 
-Each document type has its own List of Values (LoV) configurations, which must be set up separately. Unlike **Fuzzy Data with Master Data**, **List of Values** does not come with default lookup groups.
+### Um die List of Values zu konfigurieren, navigieren Sie zu:
 
-### To configure List of Values, navigate to:
-
-Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data...
+Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → LOV Master Data ...

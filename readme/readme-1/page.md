@@ -1,6 +1,4 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
-
-# Seite
+# Pagina
 
 <div data-full-width="false">
 
@@ -8,149 +6,149 @@ _Engelse inhoud hieronder - Vertaling in behandeling_
 
 </div>
 
-**Speichern-Schaltfläche:**
+**Knop Opslaan:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 08.40.49 (2).png" alt=""><figcaption></figcaption></figure>
 
-**Besondere Regeln hinzufügen:**
+**Speciale regels toevoegen:**
 
 <figure><img src="../.gitbook/assets/docbits_add_special_rules.png" alt="Docbits Add Special Rules"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/docbits_add_script_rule.png" alt="Docbits Add Script Rule"><figcaption></figcaption></figure>
 
-**Unscharfe Felder:**
+**Fuzzy velden:**
 
 <figure><img src="../.gitbook/assets/docbits_fuzzy_fields_nl.png" alt="Docbits Fuzzy Fields Nl"><figcaption></figcaption></figure>
 
-**Lupe:**
+**Vergrootglas:**
 
 <figure><img src="../.gitbook/assets/docbits_magnifying_glass_tool.png" alt="Docbits Magnifying Glass Tool" width="118"><figcaption></figcaption></figure>
 
-**Neues Fenster öffnen:**
+**Nieuw venster openen:**
 
 <figure><img src="../.gitbook/assets/docbits_open_new_window_tool.png" alt="Docbits Open New Window Tool" width="130"><figcaption></figcaption></figure>
 
-**Tastenkombinationen:**
+**Sneltoetsen:**
 
 <figure><img src="../.gitbook/assets/docbits_shortcuts_tool.png" alt="Docbits Shortcuts Tool" width="145"><figcaption></figcaption></figure>
 
-**Aufgaben:**
+**Taken:**
 
 <figure><img src="../.gitbook/assets/docbits_tasks_tool.png" alt="Docbits Tasks Tool" width="55"><figcaption></figcaption></figure>
 
-Um interne Informationen zu teilen, können Aufgaben erstellt und einem bestimmten Mitarbeiter oder einer Gruppe im Unternehmen zugewiesen werden.
+Om interne informatie te delen, kunnen taken worden aangemaakt en toegewezen aan een specifieke medewerker of groep binnen het bedrijf.
 
 <figure><img src="../.gitbook/assets/docbits_annotation_mode_usage.png" alt="Docbits Annotation Mode Usage" width="218"><figcaption></figcaption></figure>
 
-**Anmerkungsmodus:**
+**Annotatiemodus:**
 
 <figure><img src="../.gitbook/assets/docbits_annotation_mode_tool.png" alt="Docbits Annotation Mode Tool" width="187"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-Sie können Anmerkungen zu einem Dokument hinterlassen. Dies kann hilfreich sein, um Informationen für andere Benutzer zu hinterlassen, die dieses Dokument weiter bearbeiten.
+Je kunt annotaties op een document achterlaten. Dit kan handig zijn om informatie achter te laten voor andere gebruikers die dit document verder verwerken.
 
-**Zusammenführen:**
+**Samenvoegen:**
 
 <figure><img src="../.gitbook/assets/docbits_merge_tool.png" alt="Docbits Merge Tool" width="60"><figcaption></figcaption></figure>
 
-Dokumente können hier zusammengeführt werden, zum Beispiel wenn eine Seite einer Rechnung fehlt, können diese Seiten später auf diese Weise zusammengeführt werden, ohne dass das gesamte Dokument gelöscht oder erneut hochgeladen werden muss.
+Documenten kunnen hier worden samengevoegd, bijvoorbeeld wanneer er een pagina van een factuur ontbreekt; deze pagina's kunnen later op deze manier worden samengevoegd, zonder dat het hele document hoeft te worden verwijderd of opnieuw geüpload.
 
-**OCR-Ansicht:**
+**OCR-weergave:**
 
 <figure><img src="../.gitbook/assets/docbits_ocr_view_tool.png" alt="Docbits Ocr View Tool" width="77"><figcaption></figcaption></figure>
 
-In der OCR-Ansicht wird der Text automatisch aus dem Dokument gefiltert. Dies wird verwendet, um relevante Merkmale zu erkennen, wie die Postleitzahl, Vertragsnummer, Rechnungsnummer und die Sortierung eines Dokuments.
+In de OCR-weergave wordt de tekst automatisch uit het document gefilterd. Dit wordt gebruikt om relevante kenmerken te herkennen, zoals de postcode, het contractnummer, het factuurnummer en de sortering van een document.
 
-**Ticket erstellen:**
+**Ticket aanmaken:**
 
 <figure><img src="../.gitbook/assets/docbits_create_ticket_tool.png" alt="Docbits Create Ticket Tool" width="97"><figcaption></figcaption></figure>
 
-Im Gegensatz zu Aufgaben, die intern im Unternehmen weitergeleitet werden, ist dieses Support-Ticket wichtig, um uns zu benachrichtigen und sofort ein Ticket bei Fehlern und/oder Abweichungen zu erstellen. Dies vereinfacht den Prozess erheblich, da Sie den Fehler sofort mit dem entsprechenden Dokument senden können. Es besteht auch die Möglichkeit, die Priorität festzulegen, einen Screenshot des Dokuments zu machen oder eines hochzuladen.
+In tegenstelling tot taken, die intern binnen het bedrijf worden doorgegeven, is dit supportticket belangrijk om ons op de hoogte te stellen en direct een ticket aan te maken bij fouten en/of afwijkingen. Dit vereenvoudigt het proces aanzienlijk, omdat je de fout direct met het bijbehorende document kunt verzenden. Er is ook de mogelijkheid om de prioriteit in te stellen, een screenshot van het document te maken of er een te uploaden.
 
 <figure><img src="../.gitbook/assets/docbits_script_logs_usage.png" alt="Docbits Script Logs Usage" width="237"><figcaption></figcaption></figure>
 
-**Dokumentskript-Logs:**
+**Documentscript-logboeken:**
 
 <figure><img src="../.gitbook/assets/docbits_script_logs_tool.png" alt="Docbits Script Logs Tool" width="160"><figcaption></figcaption></figure>
 
-Skripte können in den Einstellungen unter Dokumententypen erstellt werden; diese Informationen werden dann hier angezeigt.
+Scripts kunnen in de instellingen onder Documenttypen worden aangemaakt; deze informatie wordt dan hier weergegeven.
 
 <figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
-**Weitere Einstellungen:**
+**Overige instellingen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 09.04.13.png" alt="" width="239"><figcaption></figcaption></figure>
 
-**Dokument teilen:**
+**Document splitsen:**
 
-* Hier können Sie das Dokument teilen und Seiten ausschneiden oder löschen, die nicht benötigt werden.
+* Hier kun je het document splitsen en pagina's uitknippen of verwijderen die niet nodig zijn.
 
-**Dokument verbessern:**
+**Document verbeteren:**
 
-* Das Dokument wird neu gestartet.
+* Het document wordt opnieuw gestart.
 
-**Dokumentfluss:**
+**Documentflow:**
 
-* Hier finden Sie den Fluss des Dokuments.
+* Hier vind je de flow van het document.
 
-**Zur Layout-Vorlage gehen:**
+**Naar de lay-outsjabloon gaan:**
 
-* Mit dieser Option werden Sie umgeleitet und können Ihr Layout bearbeiten oder die Standardvorlage verwenden.
+* Met deze optie word je doorgestuurd en kun je je lay-out bewerken of de standaardsjabloon gebruiken.
 
-**Erforderliche Felder:**
+**Verplichte velden:**
 
 <figure><img src="../.gitbook/assets/docbits_mandatory_fields.png" alt="Docbits Mandatory Fields"><figcaption></figcaption></figure>
 
-Es gibt Felder, die für weitere Bearbeitungen erforderlich sind, diese können in den Einstellungen bearbeitet werden.
+Er zijn velden die vereist zijn voor verdere verwerking; deze kunnen in de instellingen worden bewerkt.
 
-Verwenden Sie das Tool-Tipp, um herauszufinden, ob:&#x20;
+Gebruik de tooltip om erachter te komen of:&#x20;
 
-* Es sich um ein Pflichtfeld handelt (erforderlich)
-* Validierung erforderlich ist
-* Geringes Vertrauen
-* Vollständiger Steuerbetrag nicht übereinstimmt
+* Het een verplicht veld is (vereist)
+* Validatie vereist is
+* Laag vertrouwen
+* Het totale belastingbedrag niet overeenkomt
 
-**Zur Tabellenauszug-Ansicht gehen:**
+**Naar de tabelextractieweergave gaan:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.35.37.png" alt=""><figcaption></figcaption></figure>
 
-Hier gelangen Sie zur Tabellenauszug-Ansicht und haben weitere Optionen zur Verfügung. Zum Beispiel im Schulungsmodus das Erlernen der Tabelle.
+Hier kom je in de tabelextractieweergave en heb je meer opties tot je beschikking. Bijvoorbeeld in de trainingsmodus het aanleren van de tabel.
 
-**Nicht zugeordnete Spalten hinzufügen:**
+**Niet-toegewezen kolommen toevoegen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.35.49.png" alt=""><figcaption></figcaption></figure>
 
-Klicken Sie hier, um nicht zugeordnete Spalten hinzuzufügen und wählen Sie die Spalten aus, die Sie in der Tabelle haben möchten, oder entfernen Sie diejenigen, die Sie nicht benötigen.
+Klik hier om niet-toegewezen kolommen toe te voegen en selecteer de kolommen die je in de tabel wilt hebben, of verwijder de kolommen die je niet nodig hebt.
 
 <figure><img src="../.gitbook/assets/image (37).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Nicht zugeordnete Spalten anzeigen / Nicht zugeordnete Spalten ausblenden:**
+**Niet-toegewezen kolommen tonen / Niet-toegewezen kolommen verbergen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.35.58.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
-**Tabellenauszug für diesen Lieferanten blockieren:**
+**Tabelextractie voor deze leverancier blokkeren:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.06.png" alt=""><figcaption></figcaption></figure>
 
-**Tabelle löschen:**
+**Tabel verwijderen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.14.png" alt=""><figcaption></figcaption></figure>
 
-**Neue Tabellenspalte hinzufügen:**
+**Nieuwe tabelkolom toevoegen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.21.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (36).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Wenn eine Spalte fehlt, können Sie hier eine neue Spalte erstellen. Geben Sie den Titel an, entscheiden Sie, ob es sich um ein Pflichtfeld handeln soll, und den Spaltentyp (dies ist wichtig für das richtige Format).
+Wanneer er een kolom ontbreekt, kun je hier een nieuwe kolom aanmaken. Geef de titel op, beslis of het een verplicht veld moet zijn, en het kolomtype (dit is belangrijk voor het juiste formaat).
 
-**Tabellenvalidierung ignorieren:**
+**Tabelvalidatie negeren:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.29.png" alt=""><figcaption></figcaption></figure>
 
-**Tabellenspalte wiederherstellen:**
+**Tabelkolom herstellen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.37.png" alt=""><figcaption></figcaption></figure>

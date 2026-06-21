@@ -1,76 +1,74 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
+# Importeren
 
-# Importar
+## Overzicht
 
-## Resumen
+In de instellingen voor **Importeren** kun je documentspecifieke opties voor de import configureren, of automatische imports via FTP of e-mail instellen. Deze pagina geeft een gedetailleerd overzicht van alle beschikbare instellingen.
 
-En los ajustes de **Importar**, puedes configurar opciones específicas para documentos para la importación, o configurar importaciones automáticas a través de FTP o correo electrónico. Esta página proporciona una visión general detallada de todos los ajustes disponibles.
+## Hoe te openen
 
-## Cómo Acceder
-
-1.  Navega a **Ajustes** -> **Procesamiento de documentos** -> **Importar**
+1.  Navigeer naar **Instellingen** -> **Documentverwerking** -> **Importeren**
 
     <figure><img src="../../../.gitbook/assets/ftp_0_es.png" alt=""><figcaption></figcaption></figure>
 
-## **Restricción de importación de la página del documento**
+## **Importbeperking voor documentpagina's**
 
-* **Restringir a las páginas**: Esta configuración te permite limitar el procesamiento a un cierto número de páginas por documento. El valor predeterminado es **60 páginas**, lo que significa que los documentos que superen este límite se recortarán a **60 páginas**, y cualquier **página restante será descartada.**
-* **Términos de pago días**: Define los términos de pago predeterminados (en días) que pueden aplicarse a los documentos.
-* **Patrón de fecha**: Establece el patrón para cómo deben ser reconocidas y formateadas las fechas dentro de los documentos importados.
+* **Beperken tot pagina's**: Met deze instelling kun je de verwerking beperken tot een bepaald aantal pagina's per document. De standaardwaarde is **60 pagina's**, wat betekent dat documenten die deze limiet overschrijden worden ingekort tot **60 pagina's**, en alle **resterende pagina's worden weggegooid.**
+* **Betalingstermijn in dagen**: Definieert de standaardbetalingstermijn (in dagen) die op documenten kan worden toegepast.
+* **Datumpatroon**: Stelt het patroon in voor hoe datums binnen geïmporteerde documenten herkend en geformatteerd moeten worden.
 
 <figure><img src="../../../.gitbook/assets/document_settins_1_es.png" alt=""><figcaption></figcaption></figure>
 
-## **Importación ftp**
+## **FTP-import**
 
-### Requisitos
+### Vereisten
 
-Para usar FTP para importar datos automáticamente, asegúrate de que se cumplan los siguientes requisitos:
+Om FTP te gebruiken voor het automatisch importeren van gegevens, zorg ervoor dat aan de volgende vereisten wordt voldaan:
 
-* Servidor FTP correctamente configurado y compatible con Linux
-* Nombre de host FTP, Nombre de usuario y Contraseña
-* Carpeta de Importación dedicada
+* Correct geconfigureerde, Linux-compatibele FTP-server
+* FTP-hostnaam, gebruikersnaam en wachtwoord
+* Een speciale importmap
 
-### Agregar nueva conexión
+### Nieuwe verbinding toevoegen
 
-1.  Para agregar una nueva conexión, haz clic en el botón **Agregar** en la sección FTP.
+1.  Om een nieuwe verbinding toe te voegen, klik op de knop **Toevoegen** in de FTP-sectie.
 
     <figure><img src="../../../.gitbook/assets/ftp_7_es.png" alt=""><figcaption></figcaption></figure>
-2.  Ingresa tus credenciales FTP en los campos designados. El campo de Clave API se llenará automáticamente.
+2.  Voer je FTP-gegevens in de daarvoor bestemde velden in. Het veld API-sleutel wordt automatisch ingevuld.
 
-    * **Tipo:** Especifica el protocolo FTP a utilizar. Puedes elegir entre **FTP**, **FTPS** o **SFTP**.
-    * **Puerto:** Especifica el número de puerto que se utilizará para el protocolo FTP seleccionado.
-    * **Nombre del servidor (requerido):** La dirección del servidor desde el cual se recuperarán los documentos.
-    * **Nombre de usuario (requerido):** El nombre de inicio de sesión utilizado para acceder al servidor FTP.
-    * **Contraseña (requerido):** La contraseña asociada con el nombre de usuario para acceder al servidor FTP.
-    * **Patrones de coincidencia de nombre de archivo:** Para especificar qué archivos importar en función de sus nombres.
-    * **Suborganizaciones:** Selecciona a qué suborganización debe aplicarse la importación FTP.
-    * **Clave API (requerido):** Este campo se llenará automáticamente en función de la organización en la que hayas iniciado sesión.
-    * **Directorio principal:** Especifica el directorio en el servidor FTP desde el cual se importarán los archivos.
-    * **Directorio de importación:** Te permite especificar un subdirectorio dentro del directorio principal desde el cual se importarán los archivos.
-    * **Archivar después de importar:** Te permite archivar archivos después de la importación. Una vez activado, puedes especificar el directorio donde se deben mover los archivos después de una importación exitosa.
-    * **Incluir archivos de subcarpetas:** Cuando está habilitado, también se buscarán archivos en subdirectorios dentro del directorio principal.
+    * **Type:** Specificeert het te gebruiken FTP-protocol. Je kunt kiezen tussen **FTP**, **FTPS** of **SFTP**.
+    * **Poort:** Specificeert het poortnummer dat gebruikt moet worden voor het geselecteerde FTP-protocol.
+    * **Servernaam (vereist):** Het serveradres waarvan de documenten worden opgehaald.
+    * **Gebruikersnaam (vereist):** De inlognaam die wordt gebruikt om toegang te krijgen tot de FTP-server.
+    * **Wachtwoord (vereist):** Het wachtwoord dat bij de gebruikersnaam hoort om toegang te krijgen tot de FTP-server.
+    * **Patronen voor overeenkomst van bestandsnaam:** Om te specificeren welke bestanden geïmporteerd moeten worden op basis van hun naam.
+    * **Suborganisaties:** Selecteer op welke suborganisatie de FTP-import van toepassing moet zijn.
+    * **API-sleutel (vereist):** Dit veld wordt automatisch ingevuld op basis van de organisatie waarmee je bent ingelogd.
+    * **Hoofdmap:** Specificeert de map op de FTP-server waaruit de bestanden worden geïmporteerd.
+    * **Importmap:** Hiermee kun je een submap binnen de hoofdmap specificeren waaruit de bestanden worden geïmporteerd.
+    * **Archiveren na importeren:** Hiermee kun je bestanden archiveren na de import. Eenmaal geactiveerd, kun je de map specificeren waarheen de bestanden na een succesvolle import moeten worden verplaatst.
+    * **Bestanden uit submappen opnemen:** Wanneer ingeschakeld, wordt ook gezocht naar bestanden in submappen binnen de hoofdmap.
 
     <figure><img src="../../../.gitbook/assets/ftp_4_es.png" alt=""><figcaption></figcaption></figure>
-3. Una vez que hayas ingresado todos los detalles necesarios de tu FTP, haz clic en **Guardar**.
-4. Después de guardar tu conexión, puedes activarla haciendo clic en los tres puntos en la columna de **Acción** de tu conexión, luego seleccionando **Activar**.
+3. Zodra je alle benodigde gegevens van je FTP hebt ingevoerd, klik op **Opslaan**.
+4. Nadat je je verbinding hebt opgeslagen, kun je deze activeren door op de drie puntjes in de kolom **Actie** van je verbinding te klikken en vervolgens **Activeren** te selecteren.
 
-### Acciones para FTP
+### Acties voor FTP
 
-Puedes hacer clic en los tres puntos en la columna de **Acción** para acceder a las siguientes opciones para tu conexión:
+Je kunt op de drie puntjes in de kolom **Actie** klikken om toegang te krijgen tot de volgende opties voor je verbinding:
 
 <figure><img src="../../../.gitbook/assets/ftp_5_es.png" alt="" width="184"><figcaption></figcaption></figure>
 
-* **Conexión de prueba:** Prueba la conexión a tu servidor FTP.
-* **Registros de conexión:** Abre los registros de tu conexión FTP, incluyendo mensajes de error si ocurren problemas.
-* **Activar/Desactivar:** Activa/desactiva tu conexión.
-* **Editar:** Te permite hacer cambios en tu conexión.
-* **Borrar:** Elimina tu conexión.
+* **Verbinding testen:** Test de verbinding met je FTP-server.
+* **Verbindingslogboeken:** Opent de logboeken van je FTP-verbinding, inclusief foutmeldingen als er problemen optreden.
+* **Activeren/Deactiveren:** Activeert/deactiveert je verbinding.
+* **Bewerken:** Hiermee kun je wijzigingen aanbrengen in je verbinding.
+* **Verwijderen:** Verwijdert je verbinding.
 
-## **Importación de correo electrónico**
+## **E-mailimport**
 
-Puedes configurar una importación de correo electrónico que importe automáticamente documentos de tu bandeja de entrada tan pronto como lleguen. Puedes elegir configurar una conexión IMAP o una conexión OAuth.
+Je kunt een e-mailimport instellen die automatisch documenten uit je inbox importeert zodra ze binnenkomen. Je kunt ervoor kiezen om een IMAP-verbinding of een OAuth-verbinding in te stellen.
 
-<mark style="color:red;">**Nota**</mark>: Solo se importarán documentos con los siguientes tipos de archivo:
+<mark style="color:red;">**Opmerking**</mark>: Alleen documenten met de volgende bestandstypen worden geïmporteerd:
 
 * `.pdf`
 * `.tiff` / `.tif`
@@ -80,84 +78,84 @@ Puedes configurar una importación de correo electrónico que importe automátic
 * `.edi`
 * `.purchaseorder`
 
-### Agregar nueva conexión IMAP
+### Nieuwe IMAP-verbinding toevoegen
 
-1.  Para agregar una nueva conexión IMAP, haz clic en el botón **Agregar** en la sección **Importación de correo electrónico**.
+1.  Om een nieuwe IMAP-verbinding toe te voegen, klik op de knop **Toevoegen** in de sectie **E-mailimport**.
 
     <figure><img src="../../../.gitbook/assets/email_1_es.png" alt=""><figcaption></figcaption></figure>
-2. Selecciona IMAP como el protocolo.
-3. Ingresa tus credenciales de correo electrónico en los campos designados. El campo de Clave API se llenará automáticamente.
-   * **Encriptación:** Selecciona el tipo de encriptación a utilizar — ya sea **SSL** o **TLS**.
-   * **Nombre del servidor:** La dirección del servidor de correo electrónico.
-   * **Nombre de usuario:** El identificador utilizado para tu configuración de importación de correo en DocBits.
-   * **Correo electrónico:** La dirección de correo electrónico utilizada para importar documentos en el sistema.
-   * **Contraseña:** La contraseña asociada con la dirección de correo electrónico proporcionada.
-   * **Suborganizaciones:** Selecciona la suborganización a la que debe aplicarse la importación de correo electrónico.
-   * **Clave API:** Este campo se llenará automáticamente en función de la organización en la que hayas iniciado sesión.
-   * **Enviar aviso de error de importación a esta dirección de correo electrónico:** Especifica una dirección de correo electrónico para recibir notificaciones de error si algo sale mal durante el proceso de importación.
-   * **Puerto:** Especifica el número de puerto que se utilizará para la configuración de importación de correo electrónico seleccionada.
-   * **Carpeta:** Selecciona una carpeta desde la cual se importarán los documentos.\
-     <mark style="color:red;">**Nota**</mark>: La opción **Carpeta** se vuelve disponible solo después de que hayas creado exitosamente una conexión IMAP. Para agregar una carpeta después de la creación, haz clic en los tres puntos en la columna de **Acción**, luego selecciona **Editar**. La opción debería estar disponible ahora.
-   * **Mover correos electrónicos a otra carpeta:** Cuando está habilitado, te permite especificar una carpeta donde se moverán los correos electrónicos después de una importación exitosa.\
-     <mark style="color:red;">**Nota**</mark>: La opción **Mover correos electrónicos a otra carpeta** se vuelve disponible solo después de que hayas creado exitosamente una conexión IMAP. Para activar esta configuración, haz clic en los tres puntos en la columna de **Acción**, luego selecciona **Editar**. La opción debería estar disponible ahora.
-   * **Fusionar documentos adjuntos:** Combina múltiples documentos adjuntos en un solo documento.
-   * **Enviar correo electrónico al remitente después de la importación:** Envía un correo electrónico de confirmación al remitente original después de que la importación esté completa. Una vez activado, puedes especificar el asunto y el cuerpo del correo electrónico.
-   * **Bloquear la importación de nombres de archivos duplicados:** Previene la importación si ya existe un documento con el mismo nombre.
-4. Después de guardar tu conexión, puedes activarla haciendo clic en los tres puntos en la columna de **Acción** de tu conexión, luego seleccionando **Activar**.
+2. Selecteer IMAP als het protocol.
+3. Voer je e-mailgegevens in de daarvoor bestemde velden in. Het veld API-sleutel wordt automatisch ingevuld.
+   * **Versleuteling:** Selecteer het te gebruiken type versleuteling — ofwel **SSL** of **TLS**.
+   * **Servernaam:** Het adres van de e-mailserver.
+   * **Gebruikersnaam:** De identificatie die wordt gebruikt voor je e-mailimportconfiguratie in DocBits.
+   * **E-mail:** Het e-mailadres dat wordt gebruikt om documenten in het systeem te importeren.
+   * **Wachtwoord:** Het wachtwoord dat bij het opgegeven e-mailadres hoort.
+   * **Suborganisaties:** Selecteer de suborganisatie waarop de e-mailimport van toepassing moet zijn.
+   * **API-sleutel:** Dit veld wordt automatisch ingevuld op basis van de organisatie waarmee je bent ingelogd.
+   * **Stuur importfoutmelding naar dit e-mailadres:** Specificeer een e-mailadres om foutmeldingen te ontvangen als er iets misgaat tijdens het importproces.
+   * **Poort:** Specificeert het poortnummer dat gebruikt moet worden voor de geselecteerde e-mailimportconfiguratie.
+   * **Map:** Selecteer een map waaruit de documenten worden geïmporteerd.\
+     <mark style="color:red;">**Opmerking**</mark>: De optie **Map** wordt pas beschikbaar nadat je met succes een IMAP-verbinding hebt aangemaakt. Om een map toe te voegen na de creatie, klik op de drie puntjes in de kolom **Actie** en selecteer vervolgens **Bewerken**. De optie zou nu beschikbaar moeten zijn.
+   * **E-mails naar een andere map verplaatsen:** Wanneer ingeschakeld, kun je een map specificeren waarheen de e-mails na een succesvolle import worden verplaatst.\
+     <mark style="color:red;">**Opmerking**</mark>: De optie **E-mails naar een andere map verplaatsen** wordt pas beschikbaar nadat je met succes een IMAP-verbinding hebt aangemaakt. Om deze instelling te activeren, klik op de drie puntjes in de kolom **Actie** en selecteer vervolgens **Bewerken**. De optie zou nu beschikbaar moeten zijn.
+   * **Bijlagen samenvoegen:** Combineert meerdere bijgevoegde documenten tot één enkel document.
+   * **E-mail naar afzender sturen na import:** Stuurt een bevestigingsmail naar de oorspronkelijke afzender nadat de import is voltooid. Eenmaal geactiveerd, kun je het onderwerp en de tekst van de e-mail specificeren.
+   * **Import van dubbele bestandsnamen blokkeren:** Voorkomt de import als er al een document met dezelfde naam bestaat.
+4. Nadat je je verbinding hebt opgeslagen, kun je deze activeren door op de drie puntjes in de kolom **Actie** van je verbinding te klikken en vervolgens **Activeren** te selecteren.
 
-### Acciones para IMAP
+### Acties voor IMAP
 
-Puedes hacer clic en los tres puntos en la columna de **Acción** para acceder a las siguientes opciones para tu conexión:
+Je kunt op de drie puntjes in de kolom **Actie** klikken om toegang te krijgen tot de volgende opties voor je verbinding:
 
 <figure><img src="../../../.gitbook/assets/email_7_es.png" alt="" width="190"><figcaption></figcaption></figure>
 
-* **Conexión de prueba:** Prueba la conexión a tu cliente IMAP.
-* **Registros de conexión:** Abre los registros de tu conexión de correo electrónico, incluyendo cualquier mensaje de error que ocurra durante el proceso.
-* **Registro de importación:** Abre los registros de importaciones pasadas para la conexión respectiva, incluyendo cualquier mensaje de error que ocurrió durante el proceso.
-* **Activar/Desactivar:** Activa/desactiva tu conexión.
-* **Editar:** Te permite hacer cambios en tu conexión.
-* **Borrar:** Elimina tu conexión.
+* **Verbinding testen:** Test de verbinding met je IMAP-client.
+* **Verbindingslogboeken:** Opent de logboeken van je e-mailverbinding, inclusief eventuele foutmeldingen die tijdens het proces optreden.
+* **Importlogboek:** Opent de logboeken van eerdere imports voor de betreffende verbinding, inclusief eventuele foutmeldingen die tijdens het proces zijn opgetreden.
+* **Activeren/Deactiveren:** Activeert/deactiveert je verbinding.
+* **Bewerken:** Hiermee kun je wijzigingen aanbrengen in je verbinding.
+* **Verwijderen:** Verwijdert je verbinding.
 
-### Agregar nueva conexión OAuth Office365
+### Nieuwe OAuth Office365-verbinding toevoegen
 
-1.  Para agregar una nueva conexión OAuth Office365, haz clic en el botón **Agregar** en la sección **Importación de correo electrónico**.
+1.  Om een nieuwe OAuth Office365-verbinding toe te voegen, klik op de knop **Toevoegen** in de sectie **E-mailimport**.
 
     <figure><img src="../../../.gitbook/assets/email_1_es.png" alt=""><figcaption></figcaption></figure>
-2.  Selecciona **OAuth Office365** como el protocolo, luego haz clic en **Autenticar**.
+2.  Selecteer **OAuth Office365** als het protocol en klik vervolgens op **Authenticeren**.
 
     <figure><img src="../../../.gitbook/assets/email_3_es.png" alt=""><figcaption></figcaption></figure>
-3.  Serás redirigido a una página de Microsoft donde se te pedirá que ingreses un código. Para recuperar este código, regresa a DocBits—el código se mostrará allí, como se muestra a continuación. Copia el código e ingrésalo en la página de Microsoft. Después, se te pedirá que ingreses tus credenciales de Microsoft.
+3.  Je wordt doorgestuurd naar een Microsoft-pagina waar je wordt gevraagd een code in te voeren. Om deze code op te halen, ga je terug naar DocBits—de code wordt daar weergegeven, zoals hieronder getoond. Kopieer de code en voer deze in op de Microsoft-pagina. Daarna wordt je gevraagd je Microsoft-gegevens in te voeren.
 
     <figure><img src="../../../.gitbook/assets/email_4_es.png" alt=""><figcaption></figcaption></figure>
-4. Sigue los pasos en la página de Microsoft. Una vez que hayas terminado, regresa a DocBits y haz clic en **Finalizar autenticación**.
-5.  Ahora puedes configurar los siguientes ajustes:
+4. Volg de stappen op de Microsoft-pagina. Zodra je klaar bent, ga terug naar DocBits en klik op **Authenticatie voltooien**.
+5.  Je kunt nu de volgende instellingen configureren:
 
-    * **Suborganizaciones:** Selecciona la suborganización a la que debe aplicarse la importación de correo electrónico.
-    * **Usar carpeta:** Selecciona una carpeta desde la cual se importarán los documentos.
-    * **Usar buzón compartido:** Especifica la dirección de correo electrónico compartida desde la cual se deben importar los documentos.
-    * **Mover correo a otra carpeta:** Especifica una carpeta a la que se deben mover los correos electrónicos después de una importación exitosa.
-    * **Enviar aviso de error de importación a esta dirección de correo electrónico:** Especifica una dirección de correo electrónico para recibir notificaciones de error si algo sale mal durante el proceso de importación.
+    * **Suborganisaties:** Selecteer de suborganisatie waarop de e-mailimport van toepassing moet zijn.
+    * **Map gebruiken:** Selecteer een map waaruit de documenten worden geïmporteerd.
+    * **Gedeelde mailbox gebruiken:** Specificeer het gedeelde e-mailadres waaruit de documenten geïmporteerd moeten worden.
+    * **E-mail naar een andere map verplaatsen:** Specificeer een map waarheen de e-mails na een succesvolle import moeten worden verplaatst.
+    * **Stuur importfoutmelding naar dit e-mailadres:** Specificeer een e-mailadres om foutmeldingen te ontvangen als er iets misgaat tijdens het importproces.
 
     <figure><img src="../../../.gitbook/assets/email_5_es.png" alt=""><figcaption></figcaption></figure>
-6. Una vez que hayas configurado el comportamiento deseado, puedes comenzar a importar correos electrónicos haciendo clic en **Importar** o guardar tus cambios haciendo clic en **Guardar**.
-7. Después de guardar tu conexión, puedes activarla haciendo clic en los tres puntos en la columna de **Acción** de tu conexión, luego seleccionando **Activar**.
+6. Zodra je het gewenste gedrag hebt geconfigureerd, kun je beginnen met het importeren van e-mails door op **Importeren** te klikken, of je wijzigingen opslaan door op **Opslaan** te klikken.
+7. Nadat je je verbinding hebt opgeslagen, kun je deze activeren door op de drie puntjes in de kolom **Actie** van je verbinding te klikken en vervolgens **Activeren** te selecteren.
 
-### Acciones para OAuth Office365
+### Acties voor OAuth Office365
 
-Puedes hacer clic en los tres puntos en la columna de **Acción** para acceder a las siguientes opciones para tu conexión:
+Je kunt op de drie puntjes in de kolom **Actie** klikken om toegang te krijgen tot de volgende opties voor je verbinding:
 
 <figure><img src="../../../.gitbook/assets/email_6_es.png" alt="" width="189"><figcaption></figcaption></figure>
 
-* **Registros de conexión:** Abre los registros de tu conexión de correo electrónico, incluyendo cualquier mensaje de error que ocurra durante el proceso.
-* **Registro de importación:** Abre los registros de importaciones pasadas para la conexión respectiva, incluyendo cualquier mensaje de error que ocurrió durante el proceso.
-* **Activar/Desactivar:** Activa/desactiva tu conexión.
-* **Editar:** Te permite hacer cambios en tu conexión.
-* **Borrar:** Elimina tu conexión.
+* **Verbindingslogboeken:** Opent de logboeken van je e-mailverbinding, inclusief eventuele foutmeldingen die tijdens het proces optreden.
+* **Importlogboek:** Opent de logboeken van eerdere imports voor de betreffende verbinding, inclusief eventuele foutmeldingen die tijdens het proces zijn opgetreden.
+* **Activeren/Deactiveren:** Activeert/deactiveert je verbinding.
+* **Bewerken:** Hiermee kun je wijzigingen aanbrengen in je verbinding.
+* **Verwijderen:** Verwijdert je verbinding.
 
-### Registro de importación
+### Importlogboek
 
-Puedes ver el registro de importación de todas las conexiones de correo electrónico creadas, incluyendo cualquier mensaje de error que ocurrió durante el proceso, haciendo clic en el botón **Registro de importación** en la esquina superior derecha de la sección de Importación de correo electrónico.
+Je kunt het importlogboek van alle aangemaakte e-mailverbindingen bekijken, inclusief eventuele foutmeldingen die tijdens het proces zijn opgetreden, door op de knop **Importlogboek** in de rechterbovenhoek van de sectie E-mailimport te klikken.
 
 <figure><img src="../../../.gitbook/assets/email_8_es.png" alt=""><figcaption></figcaption></figure>
 
-Puedes filtrar los registros por asunto o remitente, ordenar columnas en orden ascendente o descendente haciendo clic en los encabezados de las columnas, y reorganizar columnas usando arrastrar y soltar.
+Je kunt de logboeken filteren op onderwerp of afzender, kolommen oplopend of aflopend sorteren door op de kolomkoppen te klikken, en kolommen herschikken via slepen en neerzetten.

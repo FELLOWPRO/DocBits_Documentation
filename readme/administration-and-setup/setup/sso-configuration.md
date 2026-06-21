@@ -1,109 +1,107 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
+# SSO-configuratie
 
-# SSO Configuration
+## Vereisten
 
-## Prerequisites
-
-| Required Information           | Description                                                                                                                                       |
+| Vereiste informatie            | Beschrijving                                                                                                                                       |
 | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Login Details to Cloud         | Credentials are mandatory for accessing the Infor Cloud environment. The user should have the roles "Infor-SystemAdministrator" and "UserAdmin".  |
-| Config Admin Details (DocBits) | You should have received an email from FellowPro AG with the login details for the DocBits SSO Settings page. You will need a login and password. |
-| Certificate                    | You can download the certificate in DocBits under SSO Service Provider Settings                                                                   |
+| Inloggegevens voor de Cloud    | Inloggegevens zijn verplicht voor toegang tot de Infor Cloud-omgeving. De gebruiker moet de rollen "Infor-SystemAdministrator" en "UserAdmin" hebben.  |
+| Config Admin-gegevens (DocBits) | Je zou een e-mail van FellowPro AG moeten hebben ontvangen met de inloggegevens voor de DocBits SSO-instellingenpagina. Je hebt een login en wachtwoord nodig. |
+| Certificaat                    | Je kunt het certificaat in DocBits downloaden onder SSO Service Provider Settings                                                                   |
 
-## Get access to the Cloud and check your access
+## Toegang krijgen tot de Cloud en je toegang controleren
 
-URL starts with https://mingle-portal.eu1.inforcloudsuite.com/\<TENANT\_NAME> followed by your personal extension
+URL begint met https://mingle-portal.eu1.inforcloudsuite.com/\<TENANT\_NAME> gevolgd door je persoonlijke extensie
 
 ![](https://lh7-us.googleusercontent.com/bLBEM2KCtSiztzy3htdtA8hpnR9J616ecGXPVYZIn-r\_m1tHkLeC8SJZJobl8Hu-Xju4WR7BanVq6NClf9hvbp5qXpjLVHaO9thfmE6-2ITJrlIZzv6OyG93KVhmOsdt6xiEoNrfJO8PwUFRDBblMT4)
 
-Choose the option Cloud Identities and use your login details
+Kies de optie Cloud Identities en gebruik je inloggegevens
 
 ![](https://lh7-us.googleusercontent.com/aF9VyjY-cuTx5NZ9GdnyOQjZmegW9Hp5r7-8AY8SJb1Lj-\_saFTwju49KKqltxXt3ZevQ1Yr47MRQA0UdXkXeb2TnactKpxC5YV3eqkyZiYJVx-cVkolYfwuJElPEgiYMrRQSeSb5fALoUQehxQUh\_0)
 
-After login you will have access to the Infor Cloud. In this case we enter this page, but on the burger menu you will find access to all applications.
+Na het inloggen heb je toegang tot de Infor Cloud. In dit geval openen we deze pagina, maar in het hamburgermenu vind je toegang tot alle applicaties.
 
 ![](https://lh7-us.googleusercontent.com/rUfjNI7DIYDw\_sm-KWcGaU\_xGWRZesRkyoYB\_00gOe6OUVAeFXL4UvlKWdtuz771fElXi4fC9NWahRQVLGAxAL6alR5K8edHcOdpdxu-PPfGO7O9exx61NyL4KTqNrt2AofIcnkbWyjf2EGeytPKTdA)
 
 ![](https://lh7-us.googleusercontent.com/low1Mq1NxL-Fzo72m-Wy8RPaooMuuQHBdA7rMFVcl7Ps\_G284L2Ze-BjEGy2bM7gcbeWBNeMm6yU8taNCUXgSzb9OcRWRFhQACzsg90XxmxhIfXanKz\_y8tqB4qv8I3W6HIj7SB84NzqK0IJ6UAcYbs)
 
-## Open User Management for adding new Service Provider
+## Open Gebruikersbeheer om een nieuwe Service Provider toe te voegen
 
-On the right hand side of the bar menu, you will find the user menu and there you can access the user management
+Aan de rechterkant van de menubalk vind je het gebruikersmenu en daar kun je het gebruikersbeheer openen
 
 ![](https://lh7-us.googleusercontent.com/4SvG9pBCyZxBc-kUzwGarIdJkL4S-3bbFnxdfEQoAczOY7abTN72-MYDZ7TtIMqpvAkgsrpM\_Fz2sud5M84r8PrAXkEZHJuhIAAHCCpxqKwkmmfFVnCxiU-iLLBeAlEANp05j\_3kznyOGYqOgs1e1fo)
 
-Then you need to select in the left hand side menu the option Security Administration and Service Provider.
+Vervolgens moet je in het menu aan de linkerkant de optie Security Administration en Service Provider selecteren.
 
 ![](https://lh7-us.googleusercontent.com/F2dwiMbEqSF8XkZz5JvuOOOjs6MoxIqUAyj3gU6QasaGEUPuPiR\_ANQuJ6wrZjnl1LWNRh2aBBvLvXNp85yfpTjnJP6cLbNoEfcjTbbDyrGfEciYu39jXwcBral6Q70IKkIvzANbJN1WjIonpDzPZQ0)
 
-You will see this window with the Service Providers.
+Je ziet dit venster met de Service Providers.
 
 ![](https://lh7-us.googleusercontent.com/BBANp\_qDLF8qBKXErAc65893Ya954hqNzg2U8xK-oZCXiSqr\_pboGzuLLW7cCeDjjpCzJn1Zkzc5B4IAI-NOCA\_E5EVW47AWixVGRDUkJ4NGuqAAXYM2UDmIWgi2DggfPkE2CaX0Da7CPGBNrDbe9Yo)
 
-Now click on the “+” sign and add our DocBits as Service Provider.&#x20;
+Klik nu op het "+"-teken en voeg onze DocBits toe als Service Provider.&#x20;
 
 ![](https://lh7-us.googleusercontent.com/Ksq7zDLEy0AZ3CfobBG8ua2QXsec10nJ3UAed-LXsziZs4VVzxdydmWzP4lBgIOkfQmiCSQo4Q-773wRbsGLyvk2UG4Mj34HeyiSyRAAET7Ojr8mJFZENfAszSViM-QPpcC3AIEFOQuKWYfN0-jOsHY)
 
-## Access the SSO SERVICE PROVIDER SETTINGS in DocBits
+## Open de SSO SERVICE PROVIDER SETTINGS in DocBits
 
-* Log in on URL https://app.docbits.com/ with the login details you received from us.
-* Go to SETTINGS (on top bar) and select INTEGRATION, under SSO Service Provider Settings you will find all the information you need for the following steps.
-* Download the certificate
+* Log in op de URL https://app.docbits.com/ met de inloggegevens die je van ons hebt ontvangen.
+* Ga naar SETTINGS (in de bovenbalk) en selecteer INTEGRATION, onder SSO Service Provider Settings vind je alle informatie die je nodig hebt voor de volgende stappen.
+* Download het certificaat
 
 ![](https://lh7-us.googleusercontent.com/R9VSArrCuGWySeSTYBCLHXybVdvbx37TiviLKFvgNZVfaGXITpxoNkIY4JUMuaROZ1f9BYmqfhhq5YYdRbIz5aJaLGAt7oOxZ5m47MAzgUacP-STjdEHzcy1zjgq22YUh4UrqiTrzC969upxt1qDFxs)
 
-Filling the Service Provider with the help of SSO Service Provider Settings in DocBits&#x20;
+Het invullen van de Service Provider met behulp van SSO Service Provider Settings in DocBits&#x20;
 
 ![](https://lh7-us.googleusercontent.com/ATCza1efYWKWr7MfDZfa3WbK1r88L9U91fKs319lTh\_QZxyJEp5WLjjCuOqwqnA6Li-h3\_KmRzaxVujbhqTn4Xq6eHAaeAt3K5Whg4KuLPlgTHAuCU02YXaOqhPNBAWSERRwCCmuXQDknoTPosNlDgA)
 
-| Field                      | Value                                                                                      |
+| Veld                       | Waarde                                                                                      |
 | -------------------------- | ------------------------------------------------------------------------------------------ |
 | Application Type           | DEFAULT\_SAML                                                                              |
 | Display Name               | DocBits                                                                                    |
-| Entity ID                  | See Entity ID under SSO SERVICE SETTINGS                                                   |
-| SSO Endpoint               | Copy the SSO URL from SSO SERVICE SETTINGS and paste it in the SSO Endpoint field.         |
-| Signing Certificate        | Upload the appropriate .cer file you have downloaded in step 3c) from SSO SERVICE SETTINGS |
-| Name ID Format and Mapping | email address                                                                              |
+| Entity ID                  | Zie Entity ID onder SSO SERVICE SETTINGS                                                   |
+| SSO Endpoint               | Kopieer de SSO URL van SSO SERVICE SETTINGS en plak deze in het veld SSO Endpoint.         |
+| Signing Certificate        | Upload het juiste .cer-bestand dat je in stap 3c) van SSO SERVICE SETTINGS hebt gedownload |
+| Name ID Format and Mapping | e-mailadres                                                                                |
 
 ![](https://lh7-us.googleusercontent.com/YfEUu3X34cjKrPKTLybMvRn-6rKS5aSWGoJLria08yYFZYyidnnVQKRJgzVgudPVPk8k9xWwUpzQyGi2peHFxY8UsQvXV-2twH9G-8IiFSRfoCk5eQUnoplNrttNYNYKUDjs7ckFw0BVYpzGz26Htxs)
 
-* When you have filled out everything remember to save it with the disk icon above Application Type
-* Enter the service provider DocBits again.
-* Click on view the Identity Provider Information underneath.
+* Als je alles hebt ingevuld, vergeet dan niet om het op te slaan met het schijficoon boven Application Type
+* Open de service provider DocBits opnieuw.
+* Klik hieronder op view the Identity Provider Information.
 
 ![](https://lh7-us.googleusercontent.com/ajA6zmOcJCNOHJM\_2fUMaObnOGzTLmjUHhOm5QfR7inIfhavc0YywcyUHalVY22ay5rG\_JtcTbUVUX7ZIn7GOPecylljFLdhrQg-JzOZ3Vcav8FM0ZdjT82otfdNYMFyPT3W3ZZuXpKJ1gUcvyx70jU)
 
 ![](https://lh7-us.googleusercontent.com/7VPP4izI8E5idcQOA3zRhCOCB5L9uZuylVcMhToiHUI3qk\_fCE4n30D-ccYO3OAvAjIrrhJ-AApNMJ7tQO3DmtP3TS5n5r15YUgf\_FzBCdL77a\_wcAIE0zS2VjKLPB2iPaxOokPHk9G5NW86MV6sZUI)
 
-## Export the SAML METADATA.
+## Exporteer de SAML METADATA.
 
-File looks like this: ServiceProviderSAMLMetadata\_10\_20\_2021.xml
+Het bestand ziet er als volgt uit: ServiceProviderSAMLMetadata\_10\_20\_2021.xml
 
-Import the SAML METADATA in the SSO Settings.
+Importeer de SAML METADATA in de SSO-instellingen.
 
-Go to IDENTITY SERVICE PROVIDER SETTINGS, which is located under INTEGRATIONS in SETTINGS. Enter your Tenant ID (e.g. FELLOWPRO\_DEV) and underneath that line you see the Upload file and the IMPORT Button, where you need to upload the previously exported SAML METADATA file.
+Ga naar IDENTITY SERVICE PROVIDER SETTINGS, dat zich bevindt onder INTEGRATIONS in SETTINGS. Voer je Tenant ID in (bijv. FELLOWPRO\_DEV) en onder die regel zie je het bestand Upload en de knop IMPORT, waar je het eerder geëxporteerde SAML METADATA-bestand moet uploaden.
 
-* Click on IMPORT and then choose the METADATA file that you have already downloaded from the SSO SERVICE PROVIDER SETTINGS
-* Click on CONFIGURE
+* Klik op IMPORT en kies vervolgens het METADATA-bestand dat je al hebt gedownload van de SSO SERVICE PROVIDER SETTINGS
+* Klik op CONFIGURE
 
 ![](https://lh7-us.googleusercontent.com/7-v\_YNgl\_29WrK2lE62nEfIRQ3R5KVmOL\_PeR8\_ZxS8LNxHSVpHuKcNwDAmaSGTNepi0Izg64T3l3FY6XUSMZCVB-kyV3cbf0DtI-9GnspkrSibmRW3Dx2ESxZeyrkseRYRKdnmUn-GR4fmh8gUx\_Rg)
 
-## Add New Application in INFOR Ming.le
+## Voeg een nieuwe applicatie toe in INFOR Ming.le
 
-Go to Admin settings
+Ga naar Admin settings
 
 ![](https://lh7-us.googleusercontent.com/D5shQ6CN5YAbGM\_0Gr6Hf7-nOlAkTXMyOSr1DntZv8NMSg-mxT5ckp2uIxpHkt4WRQGwCcpIBip9D4Q7\_Z590oRQOlg36lu9Y\_gq0VxHojNu8ma\_3tvtYzrBlZVJJdrXPoib9cvizawCBxGaQlvZ4x8)
 
-Click on ADD APPLICATION in the top right corner
+Klik op ADD APPLICATION in de rechterbovenhoek
 
 ![](https://lh7-us.googleusercontent.com/l1JjP7c7Y9Echd\_xx9gEoG7zD-U9wLv-0DNpHtdycXco--1urpcmObRhW4mYngaS8U0OcSv3vA\_wSvg3diSMmsC50BcSTbcMD47hsS7q3QwssdS7cY8rpNQHF7v\_20\_tBpZRuUhTLZ5bY6QnD53T0Lw)
 
-Fill out all fields like on the following image but with your own SSO Url, don’t forget to choose an icon and click on SAVE.
+Vul alle velden in zoals op de volgende afbeelding, maar met je eigen SSO Url, vergeet niet een icoon te kiezen en klik op SAVE.
 
 ![](https://lh7-us.googleusercontent.com/\_ToZv0\_KzrnCJtTprJU7FJirxGC9Vn7c632BaLbIQH8aSJCAeOaw6XxpJ3nzUKs4yI4MtEX5QxuLwf\_ywjiAP\_cEdVEV8fIueOGh10A46pBIEnK5cDu4PS-q2La8tbqOWQb3nkKPyfgfEYxRDlWf7bI)
 
-**Final Step**
+**Laatste stap**
 
-* Log out of DocBits.
-* Go back to the burger menu in Infor and select the icon you just created.
-* And you will be taken to the Dashboard of DocBits.
+* Log uit bij DocBits.
+* Ga terug naar het hamburgermenu in Infor en selecteer het icoon dat je zojuist hebt aangemaakt.
+* En je wordt naar het Dashboard van DocBits geleid.

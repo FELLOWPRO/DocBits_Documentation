@@ -1,104 +1,102 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
+# Regelbeheer
 
-# Regelmanager
+Dit document biedt een uitgebreide uitleg van de conflictoplossingsregels die in het DocBits-factuursysteem worden gebruikt. Deze regels zijn ontworpen om automatisch afwijkingen tussen factuurgegevens en inkooporderdata (PO) af te handelen en een nauwkeurige financiële afstemming te garanderen. Het systeem past deze regels toe om factuurregels, kosten en belastingen te verwerken en genereert waar nodig passende aanpassingen of notities.
 
-Dieses Dokument bietet eine umfassende Erklärung der Konfliktlösungsregeln, die im DocBits-Rechnungssystem verwendet werden. Diese Regeln sind darauf ausgelegt, automatisch Abweichungen zwischen Rechnungsdetails und Bestelldaten (PO) zu behandeln und eine genaue finanzielle Abstimmung zu gewährleisten. Das System wendet diese Regeln an, um Rechnungszeilen, Gebühren und Steuern zu verarbeiten und bei Bedarf entsprechende Anpassungen oder Notizen zu generieren.
+**Structuur van de regels**
 
-**Struktur der Regeln**
+1. **Metadata**\
+   • **version:** Identificeert de versie van het mapping-bestand.\
+   • **revision:** Revisienummer om wijzigingen bij te houden.\
+   • **author:** Geeft de maker van het mapping-bestand aan.\
+   • **description:** Een korte beschrijving van het doel van het bestand.\
+   • **created\_at & updated\_at:** Tijdstempels voor de creatie en de laatste update van het bestand.
+2. **Exportconfiguratie**\
+   De sectie exportconfiguratie definieert de toewijzing tussen de gegevensvelden in het systeem en de corresponderende velden in de exportbestanden.\
+   • **Header:** Definieert de koptekstvelden voor de geëxporteerde factuurgegevens.\
+   • **Tax Lines:** Geeft de velden voor belastingregels in de export aan.\
+   • **Order Header Charges:** Wijst velden toe die verband houden met aanvullende kosten op het niveau van de orderkop.\
+   • **Receipt Lines:** Wijst velden toe voor afzonderlijke regelitems in een ontvangstbewijs.\
+   • **Order Line Charges:** Definieert de velden voor kosten die betrekking hebben op specifieke orderregels.\
+   • **Cost Lines:** Geeft velden aan voor kostenverdelingsregels.\
+   • **Debit Note & Credit Note:** Definieert velden voor het aanmaken van debet- en creditnota's in geval van afwijkingen.
+3. **Conflictoplossingsregels**\
+   Deze regels behandelen afwijkingen tussen factuurgegevens en de corresponderende inkoopordergegevens. Elke regel bestaat uit meerdere componenten:\
+   • **Name:** De beschrijvende naam van de regel, die het type van de behandelde afwijking aangeeft.\
+   • **Section:** Geeft aan op welk deel van de factuur (bijv. receipt\_lines, line\_charges) de regel wordt toegepast.\
+   • **Active:** Booleaanse waarde (true of false) die aangeeft of de regel momenteel actief is.\
+   • **Match Criteria:** Voorwaarden die de regel activeren, gebaseerd op vergelijkingen tussen de werkelijke factuurgegevens en de verwachte inkoopordergegevens.\
+   • **Actions:** Definieert wat het systeem moet doen wanneer de regel wordt geactiveerd, inclusief het aanpassen van waarden, het toepassen van kosten of het genereren van credit-/debetnota's.
 
-1. **Metadaten**\
-   • **version:** Identifiziert die Version der Mapping-Datei.\
-   • **revision:** Revisionsnummer zur Nachverfolgung von Änderungen.\
-   • **author:** Gibt den Ersteller der Mapping-Datei an.\
-   • **description:** Eine kurze Beschreibung des Zwecks der Datei.\
-   • **created\_at & updated\_at:** Zeitstempel für die Erstellung und die letzte Aktualisierung der Datei.
-2. **Exportkonfiguration**\
-   Der Abschnitt zur Exportkonfiguration definiert die Zuordnung zwischen den Datenfeldern im System und den entsprechenden Feldern in den Exportdateien.\
-   • **Header:** Definiert die Kopfzeilenfelder für die exportierten Rechnungsdaten.\
-   • **Tax Lines:** Gibt die Felder für Steuerzeilen in dem Export an.\
-   • **Order Header Charges:** Ordnet Felder zu, die mit zusätzlichen Gebühren auf der Ebene des Bestellkopfes verbunden sind.\
-   • **Receipt Lines:** Ordnet Felder für einzelne Zeilenartikel in einem Beleg zu.\
-   • **Order Line Charges:** Definiert die Felder für Gebühren, die sich auf spezifische Bestellzeilen beziehen.\
-   • **Cost Lines:** Gibt Felder für Kostenverteilungszeilen an.\
-   • **Debit Note & Credit Note:** Definiert Felder zur Erstellung von Belastungs- und Gutschriften in Fällen von Abweichungen.
-3. **Konfliktlösungsregeln**\
-   Diese Regeln behandeln Abweichungen zwischen Rechnungsdaten und den entsprechenden Bestelldaten. Jede Regel besteht aus mehreren Komponenten:\
-   • **Name:** Der beschreibende Name der Regel, der den Typ der behandelten Abweichung angibt.\
-   • **Section:** Gibt an, auf welchen Teil der Rechnung (z. B. receipt\_lines, line\_charges) die Regel angewendet wird.\
-   • **Active:** Boolescher Wert (true oder false), der angibt, ob die Regel derzeit aktiv ist.\
-   • **Match Criteria:** Bedingungen, die die Regel auslösen, basierend auf Vergleichen zwischen den tatsächlichen Rechnungsdaten und den erwarteten Bestelldaten.\
-   • **Actions:** Definiert, was das System tun soll, wenn die Regel ausgelöst wird, einschließlich der Anpassung von Werten, der Anwendung von Gebühren oder der Generierung von Gutschriften/Beschwerden.
+**Gemeenschappelijke elementen in de regels**
 
-**Gemeinsame Elemente in den Regeln**
-
-**Vergleichsoperatoren**\
-Diese Operatoren definieren, wie die tatsächlichen Rechnungswerte mit den erwarteten Bestellwerten verglichen werden:\
-• gleich\
-• größer als\
-• größer oder gleich\
-• kleiner als\
-• kleiner oder gleich\
-• innerhalb der Toleranz\
-• außerhalb der Toleranz
+**Vergelijkingsoperatoren**\
+Deze operatoren definiëren hoe de werkelijke factuurwaarden worden vergeleken met de verwachte inkooporderwaarden:\
+• gelijk aan\
+• groter dan\
+• groter dan of gelijk aan\
+• kleiner dan\
+• kleiner dan of gelijk aan\
+• binnen de tolerantie\
+• buiten de tolerantie
 
 
 
-**Genehmigungsstatus**\
-Gibt an, ob eine Abweichung genehmigt ist oder nicht:\
-• genehmigt\
-• abgelehnt\
-• beliebig
+**Goedkeuringsstatus**\
+Geeft aan of een afwijking is goedgekeurd of niet:\
+• goedgekeurd\
+• afgewezen\
+• willekeurig
 
-**Aktionstypen**\
-Definiert spezifische Maßnahmen, die ergriffen werden sollen, wenn eine Abweichung festgestellt wird:\
-• Empfangszeile\
-• Kostenzeile\
-• Kopfgebühr\
-• Zeilengebühr\
-• Steuerzeile\
-• Belastungsnote Empfangszeile\
-• Belastungsnote Kostenzeile\
-• Belastungsnote Kopfgebühr\
-• Belastungsnote Zeilengebühr\
-• Gutschrift Empfangszeile\
-• Gutschrift Kostenzeile\
-• Gutschrift Kopfgebühr\
-• Gutschrift Zeilengebühr\
-• Gutschrift Steuerzeile
+**Actietypen**\
+Definieert specifieke maatregelen die genomen moeten worden wanneer een afwijking wordt vastgesteld:\
+• Ontvangstregel\
+• Kostenregel\
+• Kopkosten\
+• Regelkosten\
+• Belastingregel\
+• Debetnota Ontvangstregel\
+• Debetnota Kostenregel\
+• Debetnota Kopkosten\
+• Debetnota Regelkosten\
+• Creditnota Ontvangstregel\
+• Creditnota Kostenregel\
+• Creditnota Kopkosten\
+• Creditnota Regelkosten\
+• Creditnota Belastingregel
 
-**Regelbeispiele**\
-**Fall 1, 2, 3:** Menge und Stückpreis innerhalb der Toleranz\
-• Zweck: Behandelt Szenarien, in denen sowohl die Menge als auch der Stückpreis auf der Rechnung innerhalb der akzeptierten Toleranzgrenzen im Vergleich zur Bestellung liegen.\
-• Aktion: Das System akzeptiert die Rechnungswerte und berechnet den Gesamtbetrag.
+**Regelvoorbeelden**\
+**Geval 1, 2, 3:** Hoeveelheid en stuksprijs binnen de tolerantie\
+• Doel: Behandelt scenario's waarin zowel de hoeveelheid als de stuksprijs op de factuur binnen de geaccepteerde tolerantiegrenzen liggen ten opzichte van de inkooporder.\
+• Actie: Het systeem accepteert de factuurwaarden en berekent het totaalbedrag.
 
-**Fall 4, 5:** Menge innerhalb der Toleranz, Stückpreis außerhalb der Toleranz (genehmigt)\
-• Zweck: Gilt, wenn die Menge innerhalb der Toleranz liegt, der Stückpreis jedoch außerhalb der Toleranz liegt und genehmigt wurde.\
-• Aktion: Das System passt den Stückpreis an, um mit der Bestellung übereinzustimmen, und wendet erforderliche Zeilengebühren an.
+**Geval 4, 5:** Hoeveelheid binnen de tolerantie, stuksprijs buiten de tolerantie (goedgekeurd)\
+• Doel: Geldt wanneer de hoeveelheid binnen de tolerantie ligt, maar de stuksprijs buiten de tolerantie ligt en is goedgekeurd.\
+• Actie: Het systeem past de stuksprijs aan om overeen te komen met de inkooporder en past de vereiste regelkosten toe.
 
-**Fall 6:** Menge innerhalb der Toleranz, Stückpreis außerhalb der negativen Toleranz (abgelehnt)\
-• Zweck: Behandelt Fälle, in denen der Stückpreis geringer ist als erwartet und außerhalb des Toleranzbereichs liegt, was zu einer Ablehnung führt.\
-• Aktion: Das System passt den Stückpreis an, um mit der Bestellung übereinzustimmen, generiert eine Gutschrift für die Differenz und wendet bei Bedarf Kopfgebühren an.
+**Geval 6:** Hoeveelheid binnen de tolerantie, stuksprijs buiten de negatieve tolerantie (afgewezen)\
+• Doel: Behandelt gevallen waarin de stuksprijs lager is dan verwacht en buiten het tolerantiebereik ligt, wat tot een afwijzing leidt.\
+• Actie: Het systeem past de stuksprijs aan om overeen te komen met de inkooporder, genereert een creditnota voor het verschil en past indien nodig kopkosten toe.
 
-**Behandlung von Gebühren und Steuern**\
-**Gebühr pro Einheit Toleranz**\
-• Regeln in dieser Kategorie behandeln Abweichungen bei Gebühren pro Einheit, mit spezifischen Maßnahmen, basierend darauf, ob die Gebühr innerhalb oder außerhalb der Toleranz liegt und ob sie genehmigt oder abgelehnt ist.
+**Behandeling van kosten en belastingen**\
+**Kosten per eenheid tolerantie**\
+• Regels in deze categorie behandelen afwijkingen bij kosten per eenheid, met specifieke maatregelen, gebaseerd op of de kosten binnen of buiten de tolerantie liggen en of ze zijn goedgekeurd of afgewezen.
 
-**Steuerzeilenanpassungen**\
-• Diese Regeln verwalten Steuerabweichungen, indem sie die Steuerzeilen anpassen oder entsprechende Gutschriften oder Belastungsnoten basierend auf den Unterschieden zwischen Rechnungs- und Bestelldaten generieren.
+**Aanpassingen van belastingregels**\
+• Deze regels beheren belastingafwijkingen door de belastingregels aan te passen of door corresponderende credit- of debetnota's te genereren op basis van de verschillen tussen factuur- en inkoopordergegevens.
 
-**Enums und Optionen**\
-• **Enums:** Vorgegebene Wertelisten, die Konsistenz über die Regeln hinweg gewährleisten (z. B. Vergleichsoperatoren, Genehmigungsarten).\
-• **Optionen:** Vorgegebene Auswahlmöglichkeiten für die Handhabung von Mengen oder Stückpreisen, die Flexibilität bei der Regeldefinition bieten.
+**Enums en opties**\
+• **Enums:** Voorgedefinieerde waardelijsten die consistentie over de regels heen garanderen (bijv. vergelijkingsoperatoren, goedkeuringstypen).\
+• **Opties:** Voorgedefinieerde keuzemogelijkheden voor het verwerken van hoeveelheden of stuksprijzen, die flexibiliteit bieden bij de regeldefinitie.
 
-**Screenshots Erklärung**\
-**Screenshot 1:** Regelmanagement-Oberfläche\
-Dieser Screenshot zeigt die Regelmanagement-Oberfläche, auf der Administratoren alle Konfliktlösungsregeln einsehen und verwalten können. Wichtige Elemente sind:\
-• **Regel hinzufügen Schaltfläche:** Ermöglicht das Hinzufügen neuer Regeln.\
-• **Regelliste:** Zeigt alle aktiven Regeln mit Details wie Name, Abschnitt und aktivem Status an.\
-• **Abschnitt Dropdown:** Filtert die Regeln basierend auf dem Abschnitt, auf den sie sich beziehen (z. B. Empfangszeilen, Zeilengebühren).
+**Uitleg van de screenshots**\
+**Screenshot 1:** Interface voor regelbeheer\
+Deze screenshot toont de interface voor regelbeheer, waar beheerders alle conflictoplossingsregels kunnen bekijken en beheren. Belangrijke elementen zijn:\
+• **Knop Regel toevoegen:** Maakt het toevoegen van nieuwe regels mogelijk.\
+• **Regellijst:** Toont alle actieve regels met details zoals naam, sectie en actieve status.\
+• **Sectie-dropdown:** Filtert de regels op basis van de sectie waarop ze betrekking hebben (bijv. ontvangstregels, regelkosten).
 
-**Screenshot 2:** Detaillierte Regelbearbeitung\
-Dieser Screenshot zeigt die detaillierte Ansicht einer bestimmten Regel, die bearbeitet wird. Wichtige Elemente sind:\
-• **Kriterienbereich:** Definiert die Bedingungen, unter denen die Regel ausgelöst wird. Beispielsweise könnte das Kriterium angeben, dass, wenn die Menge und der Stückpreis von der Bestellung abweichen, aber innerhalb der Toleranz liegen, die Regel angewendet werden sollte.\
-• **Aktionsbereich:** Gibt an, welche Maßnahmen ergriffen werden sollen, wenn die Kriterien erfüllt sind. Dies kann die Anpassung der Rechnungszeilen, die Generierung von Gutschriften oder Belastungsnoten oder die Anwendung zusätzlicher Gebühren umfassen.\
-• **Dokumenttyp und Kostenbestandteile:** Ermöglicht es dem Administrator, spezifische Maßnahmen den Dokumenttypen und Kostenbestandteilen zuzuordnen, was Flexibilität bei der Handhabung verschiedener Szenarien bietet.
+**Screenshot 2:** Gedetailleerde regelbewerking\
+Deze screenshot toont de gedetailleerde weergave van een specifieke regel die wordt bewerkt. Belangrijke elementen zijn:\
+• **Criteriagebied:** Definieert de voorwaarden waaronder de regel wordt geactiveerd. Het criterium zou bijvoorbeeld kunnen aangeven dat, wanneer de hoeveelheid en de stuksprijs afwijken van de inkooporder maar binnen de tolerantie liggen, de regel moet worden toegepast.\
+• **Actiegebied:** Geeft aan welke maatregelen genomen moeten worden wanneer aan de criteria is voldaan. Dit kan het aanpassen van de factuurregels, het genereren van credit- of debetnota's of het toepassen van aanvullende kosten omvatten.\
+• **Documenttype en kostencomponenten:** Stelt de beheerder in staat om specifieke maatregelen toe te wijzen aan documenttypen en kostencomponenten, wat flexibiliteit biedt bij het afhandelen van verschillende scenario's.

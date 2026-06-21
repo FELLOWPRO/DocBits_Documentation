@@ -1,8 +1,6 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
+# Validatiescherm
 
-# Validierungsbildschirm
-
-## Überblick
+## Overzicht
 
 <div data-full-width="false">
 
@@ -10,254 +8,254 @@ _Engelse inhoud hieronder - Vertaling in behandeling_
 
 </div>
 
-## **Speichern-Schaltfläche:**
+## **Knop Opslaan:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 08.40.49 (2).png" alt=""><figcaption></figcaption></figure>
 
-* **Speichern-Schaltfläche:**
-* **Zweck:** Speichert den aktuellen Zustand des bearbeiteten Dokuments oder Skripts.
-* **Anwendungsfall:** Verwenden Sie diese Schaltfläche, um sicherzustellen, dass alle Änderungen gespeichert werden, nachdem Sie Änderungen oder Anmerkungen an einem Dokument vorgenommen haben.
+* **Knop Opslaan:**
+* **Doel:** Slaat de huidige status van het bewerkte document of script op.
+* **Gebruikssituatie:** Gebruik deze knop om ervoor te zorgen dat alle wijzigingen worden opgeslagen nadat je wijzigingen of annotaties aan een document hebt aangebracht.
 
-### **Besondere Regeln hinzufügen:**
+### **Speciale regels toevoegen:**
 
 <figure><img src="../.gitbook/assets/docbits_add_special_rules.png" alt="Docbits Add Special Rules"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/docbits_add_script_rule.png" alt="Docbits Add Script Rule"><figcaption></figcaption></figure>
 
-* **Besondere Regeln hinzufügen / Skript in DocBits hinzufügen:**
-* **Zweck:** Ermöglicht Benutzern, spezifische Regeln oder Skripte zu implementieren, die anpassen, wie Dokumente verarbeitet werden.
-* **Anwendungsfall:** Verwenden Sie diese Funktion, um Aufgaben wie Datenextraktion oder Formatvalidierung zu automatisieren und die Effizienz des Workflows zu steigern.
+* **Speciale regels toevoegen / Script in DocBits toevoegen:**
+* **Doel:** Stelt gebruikers in staat om specifieke regels of scripts te implementeren die aanpassen hoe documenten worden verwerkt.
+* **Gebruikssituatie:** Gebruik deze functie om taken zoals gegevensextractie of formaatvalidatie te automatiseren en de efficiëntie van de workflow te verhogen.
 
 {% hint style="info" %}
-Hier [Skript in DocBits hinzufügen](../admin-section/setup/scripting-in-docbits/) ansehen
+Bekijk hier [Script in DocBits toevoegen](../admin-section/setup/scripting-in-docbits/)
 {% endhint %}
 
-### **Unscharfe Felder:**
+### **Fuzzy velden:**
 
 <figure><img src="../.gitbook/assets/docbits_fuzzy_fields_nl.png" alt="Docbits Fuzzy Fields Nl"><figcaption></figcaption></figure>
 
-*   **Unscharfe Felder:**
+*   **Fuzzy velden:**
 
-* **Zweck:** Hilft dabei, Felder zu identifizieren und zu korrigieren, in denen die Daten möglicherweise nicht perfekt übereinstimmen, aber nahe genug sind.
-* **Anwendungsfall:** Nützlich bei Datenvalidierungsprozessen, bei denen exakte Übereinstimmungen nicht immer möglich sind, wie bei leicht falsch geschriebenen Namen oder Adressen.
+* **Doel:** Helpt bij het identificeren en corrigeren van velden waarin de gegevens mogelijk niet perfect overeenkomen, maar dichtbij genoeg zijn.
+* **Gebruikssituatie:** Nuttig bij gegevensvalidatieprocessen waarbij exacte overeenkomsten niet altijd mogelijk zijn, zoals bij licht verkeerd gespelde namen of adressen.
 
-### **Lupe:**
+### **Vergrootglas:**
 
 <figure><img src="../.gitbook/assets/docbits_magnifying_glass_tool.png" alt="Docbits Magnifying Glass Tool" width="118"><figcaption></figcaption></figure>
 
-* **Lupe (Magnify Glass):**
-* **Zweck:** Bietet eine vergrößerte Ansicht eines ausgewählten Bereichs des Dokuments.
-* **Anwendungsfall:** Hilft bei der Untersuchung feiner Details oder kleiner Texte in Dokumenten, um die Genauigkeit bei der Dateneingabe oder Überprüfung zu gewährleisten.
+* **Vergrootglas (Magnify Glass):**
+* **Doel:** Biedt een vergrote weergave van een geselecteerd gebied van het document.
+* **Gebruikssituatie:** Helpt bij het onderzoeken van fijne details of kleine tekst in documenten, om de nauwkeurigheid bij de gegevensinvoer of controle te garanderen.
 
 <figure><img src="../.gitbook/assets/docbits_open_new_window_usage.png" alt="Docbits Open New Window Usage"><figcaption></figcaption></figure>
 
-### **Neues Fenster öffnen:**
+### **Nieuw venster openen:**
 
 <figure><img src="../.gitbook/assets/docbits_open_new_window_tool.png" alt="Docbits Open New Window Tool" width="130"><figcaption></figcaption></figure>
 
-* **Neues Fenster öffnen:**
-* **Zweck:** Öffnet ein neues Fenster für den Vergleich von Dokumenten nebeneinander oder für Multitasking.
-* **Anwendungsfall:** Nützlich beim Vergleich von zwei Dokumenten oder beim Bezug auf zusätzliche Informationen, ohne das aktuelle Dokument zu verlassen.
+* **Nieuw venster openen:**
+* **Doel:** Opent een nieuw venster voor het naast elkaar vergelijken van documenten of voor multitasking.
+* **Gebruikssituatie:** Nuttig bij het vergelijken van twee documenten of bij het raadplegen van aanvullende informatie, zonder het huidige document te verlaten.
 
-### **Tastenkombinationen:**
+### **Sneltoetsen:**
 
 <figure><img src="../.gitbook/assets/docbits_shortcuts_tool.png" alt="Docbits Shortcuts Tool" width="145"><figcaption></figcaption></figure>
 
-1. **Tastenkombinationen:**
-* **Zweck:** Ermöglicht Benutzern, Aktionen schnell mithilfe von Tastenkombinationen auszuführen.
-* **Anwendungsfall:** Steigert Geschwindigkeit und Effizienz bei der Dokumentennavigation und -verarbeitung, indem die Abhängigkeit von der Mausnavigation minimiert wird.
+1. **Sneltoetsen:**
+* **Doel:** Stelt gebruikers in staat om snel acties uit te voeren met behulp van toetscombinaties.
+* **Gebruikssituatie:** Verhoogt de snelheid en efficiëntie bij de navigatie en verwerking van documenten door de afhankelijkheid van muisnavigatie te minimaliseren.
 
-<figure><img src="../.gitbook/assets/docbits_shortcuts_usage.png" alt="Docbits Shortcuts Usage"><figcaption><p>Tastatur</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/docbits_shortcuts_usage.png" alt="Docbits Shortcuts Usage"><figcaption><p>Toetsenbord</p></figcaption></figure>
 
-### **Aufgaben:**
+### **Taken:**
 
 <figure><img src="../.gitbook/assets/docbits_tasks_tool.png" alt="Docbits Tasks Tool" width="55"><figcaption></figcaption></figure>
 
-Um interne Informationen zu teilen, können Sie Aufgaben erstellen und sie einem bestimmten Mitarbeiter oder einer Gruppe im Unternehmen zuweisen.
+Om interne informatie te delen, kun je taken aanmaken en deze toewijzen aan een specifieke medewerker of groep binnen het bedrijf.
 
-* **Aufgaben:**
-* **Zweck:** Ermöglicht Benutzern, Aufgaben im Zusammenhang mit Dokumenten zu erstellen und Teammitgliedern zuzuweisen.
-* **Anwendungsfall:** Erleichtert die Zusammenarbeit und Aufgabenverwaltung innerhalb von Teams, um sicherzustellen, dass jeder seine Verantwortlichkeiten kennt.
+* **Taken:**
+* **Doel:** Stelt gebruikers in staat om taken met betrekking tot documenten aan te maken en toe te wijzen aan teamleden.
+* **Gebruikssituatie:** Vergemakkelijkt de samenwerking en het taakbeheer binnen teams, om ervoor te zorgen dat iedereen zijn verantwoordelijkheden kent.
 
 <figure><img src="../.gitbook/assets/docbits_annotation_mode_usage.png" alt="Docbits Annotation Mode Usage" width="218"><figcaption></figcaption></figure>
 
-### **Anmerkungsmodus:**
+### **Annotatiemodus:**
 
 <figure><img src="../.gitbook/assets/docbits_annotation_mode_tool.png" alt="Docbits Annotation Mode Tool" width="187"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
-Sie können Anmerkungen zu einem Dokument hinterlassen. Dies kann hilfreich sein, um Informationen für andere Benutzer zu hinterlassen, die dieses Dokument später weiter bearbeiten.
+Je kunt annotaties op een document achterlaten. Dit kan handig zijn om informatie achter te laten voor andere gebruikers die dit document later verder verwerken.
 
-* **Anmerkungsmodus:**
-* **Zweck:** Ermöglicht Benutzern, direkt auf dem Dokument Notizen oder Anmerkungen zu hinterlassen.
-* **Anwendungsfall:** Nützlich, um Feedback, Anweisungen oder wichtige Hinweise für andere Teammitglieder zu hinterlassen, die später am Dokument arbeiten werden.
+* **Annotatiemodus:**
+* **Doel:** Stelt gebruikers in staat om direct op het document notities of annotaties achter te laten.
+* **Gebruikssituatie:** Nuttig om feedback, instructies of belangrijke aanwijzingen achter te laten voor andere teamleden die later aan het document zullen werken.
 
-### **Zusammenführen:**
+### **Samenvoegen:**
 
 <figure><img src="../.gitbook/assets/docbits_merge_tool.png" alt="Docbits Merge Tool" width="60"><figcaption></figcaption></figure>
 
-Dokumente können hier zusammengeführt werden, zum Beispiel wenn eine Seite einer Rechnung fehlt, können diese Seiten später auf diese Weise zusammengeführt werden, ohne dass das gesamte Dokument gelöscht oder erneut hochgeladen werden muss.
+Documenten kunnen hier worden samengevoegd, bijvoorbeeld wanneer er een pagina van een factuur ontbreekt; deze pagina's kunnen later op deze manier worden samengevoegd, zonder dat het hele document hoeft te worden verwijderd of opnieuw geüpload.
 
-* **Dokumente zusammenführen:**
-* **Zweck:** Kombiniert mehrere Dokumente zu einer einzigen Datei.
-* **Anwendungsfall:** Nützlich in Szenarien, in denen Teile eines Dokuments separat gescannt werden und zusammengeführt werden müssen.
+* **Documenten samenvoegen:**
+* **Doel:** Combineert meerdere documenten tot één enkel bestand.
+* **Gebruikssituatie:** Nuttig in scenario's waarin delen van een document afzonderlijk worden gescand en moeten worden samengevoegd.
 
-### **OCR-Ansicht:**
+### **OCR-weergave:**
 
 <figure><img src="../.gitbook/assets/docbits_ocr_view_tool.png" alt="Docbits Ocr View Tool" width="77"><figcaption></figcaption></figure>
 
-In der OCR-Ansicht wird der Text automatisch aus dem Dokument gefiltert. Dies wird verwendet, um relevante Merkmale wie die Postleitzahl, Vertragsnummer, Rechnungsnummer und die Sortierung eines Dokuments zu erkennen.
+In de OCR-weergave wordt de tekst automatisch uit het document gefilterd. Dit wordt gebruikt om relevante kenmerken zoals de postcode, het contractnummer, het factuurnummer en de sortering van een document te herkennen.
 
-* **OCR-Ansicht:**
-* **Zweck:** Erkennt automatisch Text in Dokumenten mithilfe der optischen Zeichenerkennungstechnologie.
-* **Anwendungsfall:** Vereinfacht den Prozess der Digitalisierung gedruckter oder handschriftlicher Texte, macht sie durchsuchbar und bearbeitbar.
+* **OCR-weergave:**
+* **Doel:** Herkent automatisch tekst in documenten met behulp van optische tekenherkenningstechnologie.
+* **Gebruikssituatie:** Vereenvoudigt het proces van het digitaliseren van gedrukte of handgeschreven teksten, waardoor ze doorzoekbaar en bewerkbaar worden.
 
 <figure><img src="../.gitbook/assets/docbits_ocr_usage.png" alt="Docbits Ocr Usage"><figcaption><p>OCR</p></figcaption></figure>
 
-### **Ticket erstellen:**
+### **Ticket aanmaken:**
 
 <figure><img src="../.gitbook/assets/docbits_create_ticket_tool.png" alt="Docbits Create Ticket Tool" width="97"><figcaption></figcaption></figure>
 
-Im Gegensatz zu Aufgaben, die intern im Unternehmen weitergeleitet werden, ist dieses Support-Ticket wichtig, um uns zu benachrichtigen und sofort ein Ticket bei Fehlern und/oder Abweichungen zu erstellen. Dies vereinfacht den Prozess erheblich, da Sie den Fehler sofort mit dem entsprechenden Dokument senden können. Es besteht auch die Möglichkeit, Priorität festzulegen, einen Screenshot des Dokuments zu machen oder eines hochzuladen.
+In tegenstelling tot taken, die intern binnen het bedrijf worden doorgegeven, is dit supportticket belangrijk om ons op de hoogte te stellen en direct een ticket aan te maken bij fouten en/of afwijkingen. Dit vereenvoudigt het proces aanzienlijk, omdat je de fout direct met het bijbehorende document kunt verzenden. Er is ook de mogelijkheid om de prioriteit in te stellen, een screenshot van het document te maken of er een te uploaden.
 
-* **Ticket erstellen:**
-* **Zweck:** Ermöglicht Benutzern, Probleme oder Abweichungen zu melden, indem sie ein Support-Ticket erstellen.
-* **Anwendungsfall:** Wesentlich für die schnelle Behebung von Problemen und Fehlern, um die Integrität und reibungslose Funktion des Systems aufrechtzuerhalten.
+* **Ticket aanmaken:**
+* **Doel:** Stelt gebruikers in staat om problemen of afwijkingen te melden door een supportticket aan te maken.
+* **Gebruikssituatie:** Essentieel voor het snel oplossen van problemen en fouten, om de integriteit en de soepele werking van het systeem te behouden.
 
 <figure><img src="../.gitbook/assets/docbits_script_logs_usage.png" alt="Docbits Script Logs Usage" width="237"><figcaption></figcaption></figure>
-### **Dokumentenskript-Logs:**
+### **Documentscript-logboeken:**
 
 <figure><img src="../.gitbook/assets/docbits_script_logs_tool.png" alt="Docbits Script Logs Tool" width="160"><figcaption></figcaption></figure>
 
-Skripte können in den Einstellungen unter Dokumententypen erstellt werden; diese Informationen werden dann hier angezeigt.
+Scripts kunnen in de instellingen onder Documenttypen worden aangemaakt; deze informatie wordt dan hier weergegeven.
 
-* **Dokumentenskript-Logs:**
-* **Zweck:** Zeigt Logs zu Skripten an, die für verschiedene Dokumententypen implementiert wurden.
-* **Anwendungsfall:** Nützlich zur Verfolgung und Fehlerbehebung von Skriptaktionen in Dokumenten, um Benutzern zu helfen, automatisierte Prozesse zu verstehen und Probleme zu beheben.
+* **Documentscript-logboeken:**
+* **Doel:** Toont logboeken van scripts die voor verschillende documenttypen zijn geïmplementeerd.
+* **Gebruikssituatie:** Nuttig voor het volgen en oplossen van scriptacties in documenten, om gebruikers te helpen geautomatiseerde processen te begrijpen en problemen op te lossen.
 
 <figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 
 
-### **Weitere Einstellungen:**
+### **Overige instellingen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 09.04.13.png" alt="" width="239"><figcaption></figcaption></figure>
 
-### **Dokument aufteilen:**
+### **Document splitsen:**
 
-* Hier können Sie das Dokument aufteilen und Seiten ausschneiden oder löschen, die nicht benötigt werden.
-* **Dokument aufteilen:**
-* **Zweck:** Ermöglicht Benutzern, ein Dokument in separate Teile zu teilen, Seiten zu entfernen oder zu isolieren, die nicht benötigt werden.
-* **Anwendungsfall:** Ideal bei mehrseitigen Dokumenten, bei denen nur bestimmte Abschnitte für die Verarbeitung oder Überprüfung erforderlich sind.
+* Hier kun je het document splitsen en pagina's uitknippen of verwijderen die niet nodig zijn.
+* **Document splitsen:**
+* **Doel:** Stelt gebruikers in staat om een document in afzonderlijke delen te splitsen, pagina's te verwijderen of te isoleren die niet nodig zijn.
+* **Gebruikssituatie:** Ideaal bij documenten van meerdere pagina's waarbij slechts bepaalde delen nodig zijn voor de verwerking of controle.
 
-### **Dokument verbessern:**
+### **Document verbeteren:**
 
-* Das Dokument wird zurückgesetzt
-* **Dokument verbessern:**
-* **Zweck:** Setzt das Dokument auf seinen Ausgangszustand zurück, um es erneut zu bewerten oder weitere Änderungen vorzunehmen.
-* **Anwendungsfall:** Nützlich, wenn anfängliche Änderungen rückgängig gemacht werden müssen oder das Dokument für eine weitere Runde von Bearbeitungen aktualisiert werden muss. Hier benötigen wir etwas zusätzliche ML-Vision, um die Dokumentenqualität zu verbessern.&#x20;
+* Het document wordt teruggezet
+* **Document verbeteren:**
+* **Doel:** Zet het document terug naar de oorspronkelijke staat om het opnieuw te beoordelen of verdere wijzigingen aan te brengen.
+* **Gebruikssituatie:** Nuttig wanneer initiële wijzigingen ongedaan moeten worden gemaakt of wanneer het document voor een verdere ronde bewerkingen moet worden bijgewerkt. Hier hebben we wat extra ML-vision nodig om de documentkwaliteit te verbeteren.&#x20;
 
-### **Dokumentenfluss:**
+### **Documentflow:**
 
-Hier finden Sie den Ablauf des Dokuments
+Hier vind je het verloop van het document
 
-* **Zweck:** Zeigt die Sequenz und den Fortschritt der Dokumentenverarbeitung im System an.
-* **Anwendungsfall:** Hilft bei der Verfolgung des Dokumentenstatus durch verschiedene Phasen, um sicherzustellen, dass alle erforderlichen Verarbeitungsschritte befolgt werden.
+* **Doel:** Toont de volgorde en de voortgang van de documentverwerking in het systeem.
+* **Gebruikssituatie:** Helpt bij het volgen van de documentstatus door verschillende fasen, om ervoor te zorgen dat alle vereiste verwerkingsstappen worden gevolgd.
 
-### **Zur Layout-Vorlage gehen:**
+### **Naar de lay-outsjabloon gaan:**
 
-* Mit dieser Option werden Sie umgeleitet und können Ihr Layout bearbeiten oder die Standardvorlage verwenden.
-* **Zur Layout-Vorlage gehen:**
-* **Zweck:** Leitet Benutzer zu einem Layout-Editor weiter, in dem sie vorhandene Vorlagen ändern oder eine Standardvorlage anwenden können.
-* **Anwendungsfall:** Ermöglicht die Anpassung von Dokumentenlayouts, um spezifische geschäftliche Anforderungen oder Präferenzen zu erfüllen und die visuelle und funktionale Ausrichtung des Dokuments an die Unternehmensstandards zu verbessern.
+* Met deze optie word je doorgestuurd en kun je je lay-out bewerken of de standaardsjabloon gebruiken.
+* **Naar de lay-outsjabloon gaan:**
+* **Doel:** Stuurt gebruikers door naar een lay-out-editor waar ze bestaande sjablonen kunnen wijzigen of een standaardsjabloon kunnen toepassen.
+* **Gebruikssituatie:** Maakt het aanpassen van documentlay-outs mogelijk om te voldoen aan specifieke zakelijke eisen of voorkeuren en de visuele en functionele afstemming van het document op de bedrijfsstandaarden te verbeteren.
 
-### **Erforderliche Felder:**
+### **Verplichte velden:**
 
 <figure><img src="../.gitbook/assets/docbits_mandatory_fields.png" alt="Docbits Mandatory Fields"><figcaption></figcaption></figure>
 
-Es gibt Felder, die für weitere Bearbeitungen erforderlich sind, diese können in den Einstellungen bearbeitet werden.
+Er zijn velden die vereist zijn voor verdere verwerking; deze kunnen in de instellingen worden bewerkt.
 
-Verwenden Sie den Tooltip, um herauszufinden, ob:&#x20;
+Gebruik de tooltip om erachter te komen of:&#x20;
 
-* Es sich um ein Pflichtfeld handelt (erforderlich)
-* Validierung erforderlich ist&#x20;
-* Geringes Vertrauen
-* Vollständige Steuerbetrag-Abweichung
-* **Erforderliche Felder:**
-* **Zweck:** Identifiziert Pflichtfelder in Dokumenten, die ausgefüllt oder korrigiert werden müssen, bevor sie weiterverarbeitet werden.
-* **Anwendungsfall:** Stellt sicher, dass wesentliche Daten genau erfasst werden, um die Datenintegrität und die Einhaltung der Geschäftsregeln zu gewährleisten.
+* Het een verplicht veld is (vereist)
+* Validatie vereist is&#x20;
+* Laag vertrouwen
+* Afwijking van het totale belastingbedrag
+* **Verplichte velden:**
+* **Doel:** Identificeert verplichte velden in documenten die ingevuld of gecorrigeerd moeten worden voordat ze verder worden verwerkt.
+* **Gebruikssituatie:** Zorgt ervoor dat essentiële gegevens nauwkeurig worden vastgelegd, om de gegevensintegriteit en de naleving van de bedrijfsregels te garanderen.
 
-### **Zur Tabellenauszug-Ansicht gehen:**
+### **Naar de tabelextractieweergave gaan:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.35.37.png" alt=""><figcaption></figcaption></figure>
 
-Hier gelangen Sie zur Tabellenauszug-Ansicht und haben weitere Optionen zum Fortfahren. Zum Beispiel im Schulungsmodus, um die Tabelle zu lernen.
+Hier kom je in de tabelextractieweergave en heb je meer opties om verder te gaan. Bijvoorbeeld in de trainingsmodus, om de tabel aan te leren.
 
-* **Zur Tabellenauszug-Ansicht gehen:**
-* **Zweck:** Navigiert zu einer Benutzeroberfläche, in der Benutzer Tabellendaten aus Dokumenten extrahieren und manipulieren können.
-* **Anwendungsfall:** Nützlich für komplexe Dokumente mit Tabellen, die eine präzise Datenextraktion ermöglichen und das Lernen zur Verbesserung der Erkennung im Laufe der Zeit ermöglichen.
+* **Naar de tabelextractieweergave gaan:**
+* **Doel:** Navigeert naar een interface waar gebruikers tabelgegevens uit documenten kunnen extraheren en bewerken.
+* **Gebruikssituatie:** Nuttig voor complexe documenten met tabellen, die een nauwkeurige gegevensextractie mogelijk maken en het aanleren ter verbetering van de herkenning in de loop van de tijd mogelijk maken.
 
-### **Nicht zugeordnete Spalten hinzufügen:**
+### **Niet-toegewezen kolommen toevoegen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.35.49.png" alt=""><figcaption></figcaption></figure>
 
-Um nicht zugeordnete Spalten hinzuzufügen, klicken Sie hier und wählen Sie die Spalten aus, die Sie in der Tabelle möchten, oder entfernen Sie diejenigen, die Sie nicht benötigen.
+Om niet-toegewezen kolommen toe te voegen, klik hier en selecteer de kolommen die je in de tabel wilt, of verwijder de kolommen die je niet nodig hebt.
 
 <figure><img src="../.gitbook/assets/image (37).png" alt="" width="375"><figcaption></figcaption></figure>
 
-### **Nicht zugeordnete Spalten anzeigen / Nicht zugeordnete Spalten ausblenden:**
+### **Niet-toegewezen kolommen tonen / Niet-toegewezen kolommen verbergen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.35.58.png" alt=""><figcaption></figcaption></figure>
 
-* **Nicht zugeordnete Spalten anzeigen/Ausblenden:**
-* **Zweck:** Schaltet die Sichtbarkeit von Spalten in einer Tabelle um, die nicht automatisch bekannten Feldern zugeordnet sind.
-* **Anwendungsfall:** Ermöglicht es Benutzern, sich auf relevante Daten zu konzentrieren, indem sie unnötige Spalten ausblenden oder sie zur möglichen Einbeziehung überprüfen.
+* **Niet-toegewezen kolommen tonen/verbergen:**
+* **Doel:** Schakelt de zichtbaarheid van kolommen in een tabel die niet automatisch aan bekende velden zijn toegewezen.
+* **Gebruikssituatie:** Stelt gebruikers in staat om zich op relevante gegevens te concentreren door onnodige kolommen te verbergen of ze te controleren voor mogelijke opname.
 
 <figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
-### **Tabellenauszug für diesen Lieferanten blockieren:**
+### **Tabelextractie voor deze leverancier blokkeren:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.06.png" alt=""><figcaption></figcaption></figure>
 
-* **Tabellenauszug für diesen Lieferanten blockieren:**
-* **Zweck:** Verhindert Tabellenauszugsprozesse für Dokumente von bestimmten Lieferanten.
-* **Anwendungsfall:** Nützlich in Szenarien, in denen Dokumente von Lieferanten konsistent falsch extrahiert werden oder keine Extraktion erfordern.
+* **Tabelextractie voor deze leverancier blokkeren:**
+* **Doel:** Voorkomt tabelextractieprocessen voor documenten van bepaalde leveranciers.
+* **Gebruikssituatie:** Nuttig in scenario's waarin documenten van leveranciers consequent verkeerd worden geëxtraheerd of geen extractie vereisen.
 
-### **Tabelle löschen:**
+### **Tabel verwijderen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.14.png" alt=""><figcaption></figcaption></figure>
 
-* **Tabelle löschen:**
-* **Zweck:** Entfernt eine gesamte Tabelle aus einem Dokument.
-* **Anwendungsfall:** Nützlich, wenn eine Tabelle fälschlicherweise enthalten ist oder nicht mehr für den Zweck des Dokuments erforderlich ist.
+* **Tabel verwijderen:**
+* **Doel:** Verwijdert een volledige tabel uit een document.
+* **Gebruikssituatie:** Nuttig wanneer een tabel ten onrechte is opgenomen of niet langer nodig is voor het doel van het document.
 
-### **Neue Tabellenspalte hinzufügen:**
+### **Nieuwe tabelkolom toevoegen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.21.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (36).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Wenn eine Spalte fehlt, können Sie hier eine neue Spalte erstellen. Geben Sie den Titel an, entscheiden Sie, ob es sich um ein Pflichtfeld handeln soll, und den Spaltentyp (dies ist wichtig für das richtige Format)
+Wanneer er een kolom ontbreekt, kun je hier een nieuwe kolom aanmaken. Geef de titel op, beslis of het een verplicht veld moet zijn, en het kolomtype (dit is belangrijk voor het juiste formaat)
 
-* **Neue Tabellenspalte hinzufügen:**
-* **Zweck:** Erstellt eine neue Spalte in einer vorhandenen Tabelle mit Spezifikationen für Titel, Notwendigkeit und Typ.
-* **Anwendungsfall:** Verbessert die Flexibilität und Genauigkeit der Datenerfassung, indem benutzerdefinierte Spalten erstellt werden, die auf spezifische Datenanforderungen zugeschnitten sind.
+* **Nieuwe tabelkolom toevoegen:**
+* **Doel:** Maakt een nieuwe kolom aan in een bestaande tabel met specificaties voor titel, noodzaak en type.
+* **Gebruikssituatie:** Verbetert de flexibiliteit en nauwkeurigheid van de gegevensregistratie door aangepaste kolommen aan te maken die zijn afgestemd op specifieke gegevensvereisten.
 
 
 
-### **Tabellenvalidierung ignorieren:**
+### **Tabelvalidatie negeren:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.29.png" alt=""><figcaption></figcaption></figure>
 
-* **Tabellenvalidierung ignorieren:**
-* **Zweck:** Ermöglicht es Benutzern, Validierungsregeln für bestimmte Tabellen zu umgehen.
-* **Anwendungsfall:** Nützlich, wenn bekannte Anomalien in Daten den Gesamtverarbeitungsprozess nicht beeinträchtigen und das Beharren auf Validierung den Arbeitsablauf behindern würde.
+* **Tabelvalidatie negeren:**
+* **Doel:** Stelt gebruikers in staat om validatieregels voor bepaalde tabellen te omzeilen.
+* **Gebruikssituatie:** Nuttig wanneer bekende anomalieën in gegevens het algehele verwerkingsproces niet beïnvloeden en het aandringen op validatie de workflow zou belemmeren.
 
-### **Tabellenspalte wiederherstellen:**
+### **Tabelkolom herstellen:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 11.36.37.png" alt=""><figcaption></figcaption></figure>
 
-* **Tabellenspalte wiederherstellen:**
-* **Zweck:** Stellt eine zuvor gelöschte oder geänderte Spalte in einer Tabelle wieder her.
-* **Anwendungsfall:** Hilfreich, um Daten wiederherzustellen, die irrtümlicherweise entfernt oder geändert wurden, um die Datenintegrität sicherzustellen.
+* **Tabelkolom herstellen:**
+* **Doel:** Herstelt een eerder verwijderde of gewijzigde kolom in een tabel.
+* **Gebruikssituatie:** Handig om gegevens te herstellen die per ongeluk zijn verwijderd of gewijzigd, om de gegevensintegriteit te garanderen.

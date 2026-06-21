@@ -1,11 +1,9 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
-
-# Veröffentlichung
+# Release
 
 <figure><img src=".gitbook/assets/Bildschirmfoto 2024-05-08 um 20.37.35.png" alt=""><figcaption></figcaption></figure>
 
-In der bevorstehenden Veröffentlichung wird eine signifikante Verbesserung der Klassifizierungs- und Extraktionsfähigkeiten eingeführt, die speziell auf Tabellenzeilen in Dokumenten abzielt. Dieses neue Feature ermöglicht es Benutzern, festzulegen, ob eine Zeile in einer Tabelle eine Gebühr darstellt. Diese Funktionalität ist besonders nützlich in detaillierten Finanzdokumenten, wie Rechnungen, wo es entscheidend ist, zwischen verschiedenen Arten von Transaktionen - wie Gebühren, Steuern oder Gebühren - zu unterscheiden, um eine genaue Verarbeitung und Aufzeichnung zu gewährleisten.
+In de aankomende release wordt een aanzienlijke verbetering van de classificatie- en extractiemogelijkheden geïntroduceerd, die specifiek gericht is op tabelregels in documenten. Deze nieuwe functie stelt gebruikers in staat om vast te leggen of een regel in een tabel een kostenpost vertegenwoordigt. Deze functionaliteit is bijzonder nuttig in gedetailleerde financiële documenten, zoals facturen, waar het cruciaal is om onderscheid te maken tussen verschillende soorten transacties - zoals kosten, belastingen of toeslagen - om een nauwkeurige verwerking en registratie te garanderen.
 
-**Wichtige Punkte für Versionshinweise:**
+**Belangrijke punten voor de releasenotes:**
 
-* **Verbesserte Klassifizierung von Tabellenzeilen**: Benutzer können jetzt angeben, ob eine bestimmte Zeile in einer Dokumententabelle eine Gebühr ist, was die Genauigkeit und Granularität der Datenauslese verbessert.
+* **Verbeterde classificatie van tabelregels**: Gebruikers kunnen nu aangeven of een bepaalde regel in een documenttabel een kostenpost is, wat de nauwkeurigheid en granulariteit van de gegevensuitlezing verbetert.

@@ -1,31 +1,29 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
+# Automatische afstemming van inkooporderdata
 
-# Automatische Abgleichung von Bestelldaten
+Docbits is een geavanceerd systeem dat is ontworpen om de afstemming van inkooporderdata (PO's) met inkomende factuurdocumenten te automatiseren. Deze tool is speciaal ontworpen voor het efficiënt beheren en verwerken van factuurgegevens binnen ERP-systemen. Deze documentatie legt de basis uit van de automatische afstemming door Docbits en definieert de specifieke regels die nodig zijn voor een geslaagde afstemming.
 
-Docbits ist ein fortschrittliches System, das darauf ausgelegt ist, den Abgleich von Bestelldaten (POs) mit eingehenden Rechnungsdokumenten zu automatisieren. Dieses Tool ist speziell für die effiziente Verwaltung und Verarbeitung von Rechnungsdaten innerhalb von ERP-Systemen konzipiert. Diese Dokumentation erläutert die Grundlagen des automatischen Abgleichs durch Docbits und definiert die spezifischen Regeln, die für einen erfolgreichen Abgleich erforderlich sind.
+## **Basisprincipes van automatische afstemming in Docbits**
 
-## **Grundprinzipien des automatischen Abgleichs in Docbits**
+**Gegevensextractie:** Docbits start het proces door relevante gegevens uit gedigitaliseerde factuurdocumenten te extraheren. Doorgaans omvatten deze gegevens de artikelnummers, hoeveelheden en stuksprijzen van elke factuurregel. De nauwkeurigheid van deze extractie is cruciaal, omdat zij de basis vormt voor het daaropvolgende afstemmingsproces.
 
-**Datenextraktion:** Docbits startet den Prozess, indem relevante Daten aus digitalisierten Rechnungsdokumenten extrahiert werden. Typischerweise umfasst diese Daten die Artikelnummern, Mengen und Stückpreise jeder Rechnungszeile. Die Präzision dieser Extraktion ist entscheidend, da sie die Grundlage für den nachfolgenden Abgleichprozess bildet.
+**Vergelijking met PO-data:** De geëxtraheerde gegevens worden vergeleken met de corresponderende informatie in de opgeslagen inkooporders. Docbits controleert of de artikelnummers, hoeveelheden en prijzen overeenkomen met die in de inkooporders. Voor een geslaagde afstemming moeten de gegevens in de facturen overeenkomen met de gegevens in de inkooporders, rekening houdend met de gedefinieerde tolerantiegrenzen.
 
-**Vergleich mit PO-Daten:** Die extrahierten Daten werden mit den entsprechenden Informationen in den gespeicherten Bestellungen verglichen. Docbits überprüft, ob die Artikelnummern, Mengen und Preise mit denen in den Bestellungen übereinstimmen. Für einen erfolgreichen Abgleich müssen die Daten in den Rechnungen den Daten in den Bestellungen entsprechen, unter Berücksichtigung definierter Toleranzgrenzen.
+**Automatische afstemming:** Op basis van de vergelijkingsresultaten voert Docbits de afstemming uit. Het systeem controleert of de afstemmingscriteria binnen de vastgestelde tolerantiegrenzen liggen. Wanneer aan deze criteria wordt voldaan, wordt de afstemming als geslaagd beschouwd.
 
-**Automatischer Abgleich:** Basierend auf den Vergleichsergebnissen führt Docbits den Abgleich durch. Das System überprüft, ob die Abgleichkriterien innerhalb der festgelegten Toleranzgrenzen liegen. Wenn diese Kriterien erfüllt sind, gilt der Abgleich als erfolgreich.
+**Rapportage:** Na voltooiing van het afstemmingsproces genereert Docbits rapporten die de status van de afstemmingen weergeven. Deze rapporten informeren over succesvol afgestemde facturen en identificeren afwijkingen.
 
-**Berichterstellung:** Nach Abschluss des Abgleichprozesses generiert Docbits Berichte, die den Status der Abgleiche anzeigen. Diese Berichte informieren über erfolgreich abgeglichene Rechnungen und identifizieren Abweichungen.
+## **Definitie van de afstemmingsregels**
 
-## **Definition der Abgleichregeln**
+**Artikelnummer:** Het artikelnummer op de factuur moet exact overeenkomen met het artikelnummer in de inkooporder. Er is geen tolerantie voor afwijkingen in de artikelnummers.
 
-**Artikelnummer:** Die Artikelnummer auf der Rechnung muss genau mit der Artikelnummer in der Bestellung übereinstimmen. Es gibt keine Toleranz für Abweichungen bei den Artikelnummern.
+**Hoeveelheden:** De hoeveelheid geleverde goederen op de factuur kan binnen een vooraf gedefinieerd tolerantiebereik variëren. Doorgaans kan een tolerantie van ±5% acceptabel zijn om kleine verschillen in de leveringshoeveelheden op te vangen.
 
-**Mengen:** Die Menge der gelieferten Waren auf der Rechnung kann innerhalb eines vordefinierten Toleranzbereichs variieren. Typischerweise könnte eine Toleranz von ±5% akzeptabel sein, um geringfügige Unterschiede in den Liefermengen zu berücksichtigen.
+**Prijzen:** Prijsafwijkingen zijn toelaatbaar tot een vastgestelde drempel. Een gebruikelijke tolerantie kan ±2% van de prijs bedragen, om kleine verschillen in prijsopgaven te accepteren die voortkomen uit afrondingsverschillen of valutaschommelingen.
 
-**Preise:** Preisabweichungen sind bis zu einer festgelegten Schwelle tolerierbar. Eine übliche Toleranz könnte ±2% des Preises betragen, um geringfügige Unterschiede in Preisangaben zu akzeptieren, die aus Rundungsunterschieden oder Währungsschwankungen resultieren.
+## **Afstemmingsstatus:**
 
-## **Abgleichstatus:**
+* **Volledige afstemming:** Alle gegevenspunten (artikelnummer, hoeveelheid en prijs) liggen binnen de vastgestelde tolerantiegrenzen.
+* **Gedeeltelijke afstemming:** Een of meer gegevenspunten wijken af buiten de tolerantiegrenzen, maar de afwijkingen zijn minimaal en vereisen een handmatige controle.
+* **Geen afstemming:** Significante afwijkingen in een of meer gegevenspunten, die onmiddellijke correctie of verder onderzoek vereisen.
 
-* **Vollständiger Abgleich:** Alle Datenpunkte (Artikelnummer, Menge und Preis) liegen innerhalb der festgelegten Toleranzgrenzen.
-* **Teilabgleich:** Ein oder mehrere Datenpunkte weichen außerhalb der Toleranzgrenzen ab, aber die Abweichungen sind minimal und erfordern eine manuelle Überprüfung.
-* **Kein Abgleich:** Signifikante Abweichungen in einem oder mehreren Datenpunkten, die sofortige Korrektur oder weitere Untersuchungen erfordern.
-
-Die präzise Definition dieser Regeln und die Festlegung von Toleranzgrenzen sind entscheidend für die Effizienz des automatischen Abgleichs und die Reduzierung manueller Eingriffe. Docbits ermöglicht eine flexible Konfiguration dieser Parameter, um den Anforderungen verschiedener Unternehmen und Branchen gerecht zu werden.
+De nauwkeurige definitie van deze regels en de vaststelling van tolerantiegrenzen zijn cruciaal voor de efficiëntie van de automatische afstemming en de vermindering van handmatige ingrepen. Docbits maakt een flexibele configuratie van deze parameters mogelijk om te voldoen aan de eisen van verschillende bedrijven en branches.

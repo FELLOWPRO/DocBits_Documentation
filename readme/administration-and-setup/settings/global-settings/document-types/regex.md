@@ -1,17 +1,15 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
-
-# Expresiones Regulares
+# Reguliere expressies
 
 <figure><img src="../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Regex Management"><figcaption></figcaption></figure>
 
-En DocBits, la configuración de Expresiones Regulares permite a los administradores definir patrones personalizados que el sistema utiliza para encontrar y extraer datos de documentos. Esta función es especialmente útil en situaciones donde es necesario extraer datos de texto no estructurado o cuando los datos siguen un formato predecible que puede ser capturado utilizando patrones de regex.
+In DocBits stelt de configuratie van reguliere expressies beheerders in staat om aangepaste patronen te definiëren die het systeem gebruikt om gegevens uit documenten te vinden en te extraheren. Deze functie is vooral nuttig in situaties waarin gegevens uit ongestructureerde tekst moeten worden geëxtraheerd of wanneer de gegevens een voorspelbaar formaat volgen dat met regex-patronen kan worden vastgelegd.
 
-#### Características Clave y Opciones
+#### Belangrijkste functies en opties
 
-1. **Gestión de Expresiones Regulares**:
-* **Agregar**: Permite crear un nuevo patrón de regex para un tipo de documento específico.
-* **Guardar Cambios**: Guarda las modificaciones en las configuraciones de regex existentes.
-* **Patrón**: Aquí puedes definir el patrón de regex que coincide con el formato de datos específico requerido.
-* **Origen**: Es el Origen del Documento - Por ejemplo, puedes definir un Regex diferente en Alemania
+1. **Beheer van reguliere expressies**:
+* **Toevoegen**: Hiermee kun je een nieuw regex-patroon aanmaken voor een specifiek documenttype.
+* **Wijzigingen opslaan**: Slaat de wijzigingen in de bestaande regex-configuraties op.
+* **Patroon**: Hier kun je het regex-patroon definiëren dat overeenkomt met het specifiek vereiste gegevensformaat.
+* **Herkomst**: Dit is de herkomst van het document - je kunt bijvoorbeeld een andere regex definiëren voor Duitsland
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2497" %}

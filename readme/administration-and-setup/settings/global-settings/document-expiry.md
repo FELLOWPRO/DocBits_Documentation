@@ -1,28 +1,26 @@
-_Engelse inhoud hieronder - Vertaling in behandeling_
+# Verloop van documenten
 
-# Caducidad de documentos
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Instellingen voor het verloop van documenten"><figcaption><p>Instellingen voor het verloop van documenten</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Configuración de caducidad de documentos"><figcaption><p>Configuración de caducidad de documentos</p></figcaption></figure>
+Onder **Documentverwerking → Verloop van documenten** bepaal je hoe lang DocBits je documenten bewaart voordat ze automatisch worden verwijderd. Dit helpt je bij het beheren van opslag, het toepassen van beleid voor gegevensbewaring en het naleven van wettelijke of organisatorische regels over hoe lang documenten mogen worden bewaard.
 
-En **Procesamiento de documentos → Caducidad de documentos** controla durante cuánto tiempo DocBits conserva sus documentos antes de eliminarlos automáticamente. Esto le ayuda a gestionar el almacenamiento, aplicar políticas de retención de datos y cumplir las normas legales u organizativas sobre el tiempo que pueden almacenarse los documentos.
+Twee instellingen bepalen de automatische verwijdering:
 
-Dos ajustes controlan la eliminación automática:
-
-| Ajuste | Qué controla |
+| Instelling | Wat het bepaalt |
 |--------|--------------|
-| **Eliminar documento después de** | Cuánto tiempo se conserva un documento procesado antes de eliminarse automáticamente. |
-| **Eliminar documento finalizado después de** | Cuánto tiempo se conserva un documento finalizado (totalmente procesado y exportado) antes de eliminarse automáticamente. |
+| **Document verwijderen na** | Hoe lang een verwerkt document wordt bewaard voordat het automatisch wordt verwijderd. |
+| **Voltooid document verwijderen na** | Hoe lang een voltooid document (volledig verwerkt en geëxporteerd) wordt bewaard voordat het automatisch wordt verwijderd. |
 
-Para cada ajuste, elija un período en el menú desplegable:
+Kies voor elke instelling een periode in het vervolgkeuzemenu:
 
-<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Períodos de retención disponibles"><figcaption><p>Períodos de retención disponibles</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Beschikbare bewaartermijnen"><figcaption><p>Beschikbare bewaartermijnen</p></figcaption></figure>
 
-| Opción | Significado |
+| Optie | Betekenis |
 |--------|-------------|
-| **Predeterminado** | Usar el período de retención predeterminado del sistema (sin anulación personalizada). |
-| **48 Horas** | Eliminar 48 horas después del procesamiento. |
-| **1 Semana** | Eliminar después de una semana. |
-| **2 Semanas** | Eliminar después de dos semanas. |
-| **4 Semanas** | Eliminar después de cuatro semanas. |
+| **Standaard** | Gebruik de standaard bewaartermijn van het systeem (geen aangepaste overschrijving). |
+| **48 uur** | Verwijderen 48 uur na verwerking. |
+| **1 week** | Verwijderen na één week. |
+| **2 weken** | Verwijderen na twee weken. |
+| **4 weken** | Verwijderen na vier weken. |
 
-Ambos ajustes garantizan que los documentos no se conserven más de lo necesario, lo que evita un uso innecesario del almacenamiento y mantiene despejado el flujo de trabajo de documentos. Son especialmente importantes para las organizaciones que deben cumplir requisitos normativos específicos sobre la retención de documentos.
+Beide instellingen zorgen ervoor dat documenten niet langer dan nodig worden bewaard, wat onnodig gebruik van opslag voorkomt en de documentworkflow overzichtelijk houdt. Ze zijn vooral belangrijk voor organisaties die moeten voldoen aan specifieke wettelijke vereisten met betrekking tot documentbewaring.

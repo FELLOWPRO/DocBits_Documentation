@@ -1,39 +1,34 @@
-# Testing Scripts
+# Testowanie skryptów
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Dokładne testowanie skryptów w kontrolowanym środowisku jest kluczowe przed wdrożeniem ich do działającego przepływu pracy przetwarzania dokumentów. Oto kilka powodów, dlaczego jest to ważne.
 
+### Zapobieganie błędom:
 
-## Testing scripts thoroughly in a controlled environment is critical before deploying them to a live document processing workflow. Here are a few reasons why it's important.
+* Skrypty mogą zawierać błędy, czy to z powodu błędów składniowych, błędów logicznych, czy nieprzewidzianych przypadków brzegowych.&#x20;
+* Testowanie w kontrolowanym środowisku pozwala zidentyfikować i naprawić te błędy, zanim skrypt zostanie wdrożony w działającym przepływie pracy.&#x20;
+* Pomaga to uniknąć potencjalnych problemów i przestojów.
 
-### Error Prevention:
+### Bezpieczeństwo danych:
 
-* Scripts can contain errors, whether due to syntax errors, logic errors, or unforeseen edge cases.&#x20;
-* Testing in a controlled environment allows these errors to be identified and fixed before the script is deployed in a live workflow.&#x20;
-* This helps avoid potential issues and downtime.
+* W działającym przepływie pracy użycie wadliwych skryptów może spowodować utratę lub uszkodzenie danych, co może prowadzić do poważnych problemów z bezpieczeństwem.&#x20;
+* Testowanie w kontrolowanym środowisku pozwala zidentyfikować i naprawić potencjalne luki w zabezpieczeniach, zanim dotkną one wrażliwych danych.
 
-### Data Security:
+### Zapewnienie funkcjonalności:
 
-* In a live workflow, using faulty scripts can result in data loss or data corruption, which can lead to serious security issues.&#x20;
-* Testing in a controlled environment allows potential security vulnerabilities to be identified and fixed before sensitive data is affected.
+* Skrypty są projektowane w celu automatyzacji określonych zadań lub usprawnienia procesów.&#x20;
+* Dokładne testowanie pomaga upewnić się, że skrypt prawidłowo wykonuje pożądane funkcje i daje zamierzone rezultaty.&#x20;
+* Pomaga to poprawić wydajność i jakość przetwarzania dokumentów.
 
-### Ensuring Functionality:
+### Dostosowanie do różnych środowisk:
 
-* Scripts are designed to automate specific tasks or improve processes.&#x20;
-* Thorough testing helps you ensure that the script performs the desired functions properly and produces the intended results.&#x20;
-* This helps improve the efficiency and quality of document processing.
+* Kontrolowane środowisko testowe pozwala przetestować skrypt w różnych warunkach i upewnić się, że działa on stabilnie w różnych środowiskach.&#x20;
+* Jest to szczególnie ważne, gdy skrypt jest wdrażany w różnych konfiguracjach systemowych lub z różnymi zestawami danych.
 
-### Adaptation to different environments:
+### Użyteczność:
 
-* A controlled test environment allows you to test the script under different conditions and ensure that it works stably in different environments.&#x20;
-* This is especially important when the script is deployed in different system configurations or with different data sets.
-
-### Usability:
-
-* Testing in a controlled environment also allows you to check the usability of the script and ensure that it is easy to use and understand.&#x20;
-* Feedback from the testing process allows you to tweak the script if necessary to improve the user experience.
+* Testowanie w kontrolowanym środowisku pozwala również sprawdzić użyteczność skryptu i upewnić się, że jest on łatwy w użyciu i zrozumiały.&#x20;
+* Informacje zwrotne z procesu testowania pozwalają w razie potrzeby dostroić skrypt, aby poprawić komfort użytkowania.
 
 
 
-Overall, thoroughly testing scripts in a controlled environment helps ensure the reliability, security, and effectiveness of document processing. It is an indispensable step to identify potential issues and ensure that the script works optimally before deploying it in a live workflow.
-
-
+Ogólnie rzecz biorąc, dokładne testowanie skryptów w kontrolowanym środowisku pomaga zapewnić niezawodność, bezpieczeństwo i skuteczność przetwarzania dokumentów. Jest to nieodzowny krok pozwalający zidentyfikować potencjalne problemy i upewnić się, że skrypt działa optymalnie przed wdrożeniem go w działającym przepływie pracy.

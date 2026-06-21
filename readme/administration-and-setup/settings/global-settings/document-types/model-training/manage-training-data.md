@@ -1,9 +1,7 @@
-# Manage training data
+# Zarządzanie danymi treningowymi
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
-
-## Manage existing training data, including adding, editing, or removing records.
+## Zarządzaj istniejącymi danymi treningowymi, w tym dodawaniem, edytowaniem lub usuwaniem rekordów.
 
 
 
-**To effectively manage training data, you can take the following steps:**...
+**Aby skutecznie zarządzać danymi treningowymi, możesz wykonać następujące kroki:**...

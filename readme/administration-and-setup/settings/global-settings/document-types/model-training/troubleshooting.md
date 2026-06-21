@@ -1,7 +1,5 @@
-# Troubleshooting
+# Rozwiązywanie problemów
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Przedstaw rozwiązania typowych problemów, które mogą wystąpić podczas trenowania modelu, takich jak błędy formatu danych, problemy ze zbieżnością modelu treningowego lub nieoczekiwane pogorszenie wydajności modelu.
 
-## Provide solutions to typical problems that can arise during model training, such as data format errors, training model convergence issues, or unexpected model performance degradation.
-
-**Here are solutions to some typical problems that can arise during model training:**...
+**Oto rozwiązania niektórych typowych problemów, które mogą wystąpić podczas trenowania modelu:**...

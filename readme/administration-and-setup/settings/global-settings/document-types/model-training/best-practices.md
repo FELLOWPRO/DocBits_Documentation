@@ -1,7 +1,3 @@
 # Najlepsze praktyki
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
-
-# Best practices
-
-## Best practices for continuous model training...
+## Najlepsze praktyki dotyczące ciągłego trenowania modelu...

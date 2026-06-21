@@ -1,9 +1,7 @@
-# Best Practices
+# Najlepsze praktyki
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Oto kilka najlepszych praktyk dotyczących tworzenia skryptów w DocBits, takich jak utrzymywanie modułowości skryptów, prawidłowa obsługa błędów oraz dokumentowanie celu i funkcji każdego skryptu.
 
-## Here are some best practices for script development in DocBits, such as keeping scripts modular, handling errors properly, and documenting the purpose and function of each script.
+### Tworzenie modułowe:
 
-### Modular Development:
-
-* Keep your scripts modular and well-structured.&#x20;...
+* Utrzymuj swoje skrypty modułowe i dobrze ustrukturyzowane.&#x20;...

@@ -1,68 +1,63 @@
-# Troubleshooting
+# Rozwiązywanie problemów
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Oto kilka wskazówek dotyczących rozwiązywania typowych problemów ze skryptami w DocBits: np. porady dotyczące debugowania, radzenia sobie z nieoczekiwanym zachowaniem skryptu oraz optymalizacji wydajności.
 
+### Wskazówki dotyczące debugowania:
 
-## Here is some advice on troubleshooting common scripting problems in DocBits: e.g. tips for debugging, dealing with unexpected script behavior, and performance optimization.
+**Korzystaj z narzędzi do debugowania:**
 
-### Debugging tips:
+* Używaj debugerów lub frameworków rejestrujących, aby śledzić przebieg skryptu i identyfikować potencjalne źródła błędów.
 
-**Use debugging tools:**
+**Wykonywanie krok po kroku:**&#x20;
 
-* Use debuggers or logging frameworks to trace the flow of your script and identify potential sources of errors.
+* Uruchamiaj skrypt krok po kroku i sprawdzaj po każdym kroku, czy występuje oczekiwane zachowanie.&#x20;
+* Może to pomóc dokładnie określić moment i przyczynę błędu.
 
-**Step-by-step execution:**&#x20;
+**Wyświetlaj wyniki pośrednie:**
 
-* Run your script step-by-step and check after each step that the expected behavior occurs.&#x20;
-* This can help you pinpoint the exact time and cause of an error.
+* Umieść w skrypcie ukierunkowane wyświetlanie zmiennych lub wyników pośrednich, aby sprawdzić stan kodu i zrozumieć, co się dzieje.
 
-**Print intermediate results:**
+### Radzenie sobie z nieoczekiwanym zachowaniem skryptu:
 
-* Include targeted output from variables or intermediate results in your script to check the state of the code and understand what is happening.
+**Wyizoluj problem:**
 
-### Dealing with unexpected script behavior:
+* Spróbuj wyizolować problem do konkretnego miejsca w kodzie lub konkretnych danych wejściowych, aby znaleźć źródło nieoczekiwanego zachowania.
 
-**Isolate the problem:**
+**Sprawdź zewnętrzne zależności:**
 
-* Try to isolate the problem to a specific place in the code or a specific input data to find the source of the unexpected behavior.
+Upewnij się, że zewnętrzne zasoby lub biblioteki są poprawnie zainstalowane i skonfigurowane oraz że Twój skrypt może uzyskać do nich prawidłowy dostęp.
 
-**Check external dependencies:**
+**Sprawdź zmiany:**
 
-Make sure that external resources or libraries are installed and configured correctly and that your script can access them properly.
+* Jeśli nieoczekiwane zachowanie wystąpiło po zmianie kodu, przejrzyj swoje ostatnie zmiany i rozważ, czy mogły one spowodować problem.
 
-**Check changes:**
+### Dostrajanie wydajności:
 
-* If the unexpected behavior occurs after a code change, review your recent changes and consider whether they might have caused the problem.
+**Zidentyfikuj wąskie gardła:**
 
-### Performance tuning:
+* Przeanalizuj swój skrypt, aby zidentyfikować wąskie gardła lub nieefektywne obszary, które mogą wpływać na wydajność.
 
-**Identify bottlenecks:**
+**Zoptymalizuj krytyczne sekcje:**
 
-* Analyze your script to identify bottlenecks or inefficient areas that might affect performance.
+* Przejrzyj krytyczne sekcje kodu i poszukaj sposobów na ich optymalizację, na przykład poprzez użycie bardziej efektywnych algorytmów lub struktur danych.
 
-**Optimize critical sections:**
+**Rozważ skalowanie:**
 
-* Review critical sections of your code and look for ways to optimize them, such as using more efficient algorithms or data structures.
+* Pomyśl o skalowaniu swoich skryptów i o tym, jak zachowują się one przy rosnącym obciążeniu.&#x20;
+* Przetestuj swój skrypt w różnych warunkach obciążenia, aby upewnić się, że działa wydajnie nawet przy intensywnym użytkowaniu.
 
-**Consider scaling:**
+### Dokumentacja i dzielenie się wiedzą:
 
-* Think about the scaling of your scripts and how they behave as the load increases.&#x20;
-* Test your script under different load conditions to make sure it works efficiently even under heavy use.
+**Dokumentuj swoje kroki rozwiązywania problemów:**
 
-### Documentation and knowledge sharing:
+* Notuj kroki, które podjąłeś w celu zdiagnozowania i rozwiązania problemów.&#x20;
+* Może to pomóc szybciej identyfikować i rozwiązywać podobne problemy w przyszłości.
 
-**Document your troubleshooting steps:**
+**Szukaj zasobów i wiedzy eksperckiej:**
 
-* Keep track of the steps you took to diagnose and resolve issues.&#x20;
-* This can help you identify and resolve similar issues more quickly in the future.
-
-**Seek resources and expertise:**
-
-* Use online resources, forums, or the documentation of the scripting language you are using to get help with troubleshooting.&#x20;
-* Sharing experiences with other developers can also be helpful.
+* Korzystaj z zasobów internetowych, forów lub dokumentacji używanego języka skryptowego, aby uzyskać pomoc w rozwiązywaniu problemów.&#x20;
+* Pomocne może być również dzielenie się doświadczeniami z innymi programistami.
 
 
 
-Applying these tips will help you more effectively diagnose and resolve common scripting issues in DocBits and optimize the performance of your scripts.
-
-
+Stosowanie tych wskazówek pomoże Ci skuteczniej diagnozować i rozwiązywać typowe problemy ze skryptami w DocBits oraz optymalizować wydajność Twoich skryptów.

@@ -1,7 +1,5 @@
-# Purpose and Scope
+# Cel i zakres
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Cel i zakres prawidłowego skonfigurowania typów dokumentów w DocBits są kluczowe dla zapewnienia dokładności i wydajności przetwarzania dokumentów.&#x20;
 
-## The purpose and scope of correctly setting up document types in DocBits is critical to ensure the accuracy and efficiency of document processing.&#x20;
-
-### Here are some key points that explain the importance of this process:...
+### Oto kilka kluczowych punktów wyjaśniających znaczenie tego procesu:...

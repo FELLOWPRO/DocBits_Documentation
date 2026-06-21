@@ -1,58 +1,53 @@
-# Troubleshooting
+# Rozwiązywanie problemów
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
-
-
-## Here are solutions to common problems related to table column configurations:
+## Oto rozwiązania typowych problemów związanych z konfiguracją kolumn tabeli:
 
 
 
-**Incorrect column configurations:**
+**Nieprawidłowa konfiguracja kolumn:**
 
-* **Problem:** Data is not displayed or stored correctly, possibly due to incorrect data types, missing constraints, or insufficient column names.
-*   **Solution:**
+* **Problem:** Dane nie są poprawnie wyświetlane lub przechowywane, prawdopodobnie z powodu nieprawidłowych typów danych, brakujących ograniczeń lub nieodpowiednich nazw kolumn.
+*   **Rozwiązanie:**
 
-    Review the column configurations in the database table and make sure the data types are appropriate for each column.
+    Przejrzyj konfigurację kolumn w tabeli bazy danych i upewnij się, że typy danych są odpowiednie dla każdej kolumny.
 
-    Add missing constraints such as NOT NULL or UNIQUE to improve data integrity.
+    Dodaj brakujące ograniczenia, takie jak NOT NULL lub UNIQUE, aby poprawić integralność danych.
 
-    Rename columns to use more meaningful and unique names that accurately describe the column's contents.
-
-
-
-**Problems caused by deleted columns:**
-
-* **Problem:** After deleting a column from a table, problems occur because reports, queries, or application logic still reference that column.
-*   **Solution:**
-
-    Review all reports, queries, and application logic to make sure there are no more references to the deleted column.
-
-    Update all affected reports, queries, and application logic to reflect or remove the deleted column. If necessary, temporarily restore the deleted column and migrate the data to a new structure before permanently deleting it.
+    Zmień nazwy kolumn, aby używały bardziej znaczących i unikalnych nazw, które dokładnie opisują zawartość kolumny.
 
 
 
-**Missing or inconsistent data:**
+**Problemy spowodowane usuniętymi kolumnami:**
 
-* **Problem:** Data is incomplete or inconsistent due to missing required fields or incorrect data types.
-*   **Solution:**&#x20;
+* **Problem:** Po usunięciu kolumny z tabeli występują problemy, ponieważ raporty, zapytania lub logika aplikacji nadal odwołują się do tej kolumny.
+*   **Rozwiązanie:**
 
-    Review the table structure and make sure all required fields are marked NOT NULL to ensure that important data is not missing.
+    Przejrzyj wszystkie raporty, zapytania i logikę aplikacji, aby upewnić się, że nie ma już żadnych odwołań do usuniętej kolumny.
 
-    Perform data cleanup to correct inconsistent or invalid data and update data types if necessary to improve consistency.
-
-
-
-**Performance issues due to missing indexes:**
-
-* **Problem:** Queries on large tables are slow because important columns are not indexed.
-*   **Solution:**&#x20;
-
-    Identify the most frequently queried columns and add indexes to improve query performance.
-
-    Be aware that too many indexes can also affect write and update performance, so balanced indexing is important.
+    Zaktualizuj wszystkie dotknięte raporty, zapytania i logikę aplikacji, aby uwzględnić lub usunąć usuniętą kolumnę. W razie potrzeby tymczasowo przywróć usuniętą kolumnę i przeprowadź migrację danych do nowej struktury przed jej trwałym usunięciem.
 
 
 
-By applying these solutions, you can resolve common table column-related issues and improve the efficiency, consistency, and performance of your database.
+**Brakujące lub niespójne dane:**
+
+* **Problem:** Dane są niekompletne lub niespójne z powodu brakujących pól wymaganych lub nieprawidłowych typów danych.
+*   **Rozwiązanie:**&#x20;
+
+    Przejrzyj strukturę tabeli i upewnij się, że wszystkie pola wymagane są oznaczone jako NOT NULL, aby zapewnić, że ważne dane nie są pomijane.
+
+    Przeprowadź czyszczenie danych, aby skorygować niespójne lub nieprawidłowe dane, oraz w razie potrzeby zaktualizuj typy danych, aby poprawić spójność.
 
 
+
+**Problemy z wydajnością z powodu brakujących indeksów:**
+
+* **Problem:** Zapytania do dużych tabel są wolne, ponieważ ważne kolumny nie są indeksowane.
+*   **Rozwiązanie:**&#x20;
+
+    Zidentyfikuj najczęściej odpytywane kolumny i dodaj indeksy, aby poprawić wydajność zapytań.
+
+    Pamiętaj, że zbyt wiele indeksów może również wpłynąć na wydajność operacji zapisu i aktualizacji, dlatego ważne jest zrównoważone indeksowanie.
+
+
+
+Stosując te rozwiązania, możesz rozwiązać typowe problemy związane z kolumnami tabeli oraz poprawić wydajność, spójność i efektywność swojej bazy danych.

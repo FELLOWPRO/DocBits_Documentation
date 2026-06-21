@@ -1,7 +1,5 @@
-# Import Data: Model Training
+# Import danych: Trenowanie modelu
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+Podaj szczegółowe instrukcje dotyczące importowania przykładowych dokumentów do trenowania, w tym formatu i typów dokumentów, których należy użyć.
 
-Provide detailed instructions on how to import sample documents for training, including the format and document types to use.
-
-**To import sample documents for training, follow these steps:**...
+**Aby zaimportować przykładowe dokumenty do trenowania, wykonaj następujące kroki:**...

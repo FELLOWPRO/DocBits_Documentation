@@ -1,7 +1,5 @@
-# Purpose and Use: Model Training
+# Cel i zastosowanie: Trenowanie modelu
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+Regularne trenowanie modelu jest kluczowe, aby zapewnić, że system przetwarzania dokumentów nadal działa skutecznie i dokładnie w miarę zmian formatów i treści dokumentów.&#x20;
 
-Regular model training is critical to ensure that a document processing system continues to work effectively and accurately as document formats and content change.&#x20;
-
-**Here are some key reasons for regular model training:**&#x20;...
+**Oto kilka kluczowych powodów regularnego trenowania modelu:**&#x20;...

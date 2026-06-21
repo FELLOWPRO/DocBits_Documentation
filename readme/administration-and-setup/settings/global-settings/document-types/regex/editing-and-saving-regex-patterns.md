@@ -1,7 +1,5 @@
-# Editing and Saving Regex Patterns
+# Edytowanie i zapisywanie wzorców wyrażeń regularnych
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Przewodnik po modyfikowaniu istniejących wzorców oraz znaczeniu testowania tych zmian, aby upewnić się, że działają zgodnie z oczekiwaniami bez naruszania istniejącej funkcjonalności.
 
-## Guide to modifying existing patterns and the importance of testing those changes to ensure they work as expected without breaking existing functionality.
-
-**To edit existing regex patterns and ensure the changes work as expected without breaking existing functionality, you can follow the guide below:**...
+**Aby edytować istniejące wzorce wyrażeń regularnych i upewnić się, że zmiany działają zgodnie z oczekiwaniami bez naruszania istniejącej funkcjonalności, możesz postępować zgodnie z poniższym przewodnikiem:**...

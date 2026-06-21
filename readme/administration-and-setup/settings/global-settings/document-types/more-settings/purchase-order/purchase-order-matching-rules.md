@@ -1,9 +1,7 @@
-# Purchase Order Matching Rules
+# Reguły dopasowywania zamówień zakupu
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Wprowadzenie: Zamówienia zakupu i zarządzanie regułami PO
 
-## Introduction: Purchase Orders and PO Rule Management
+Dopasowywanie zamówień zakupu (PO) to kluczowy proces zapewniający spójność między zamówieniami zakupu (PO) a odpowiadającymi im przychodzącymi fakturami lub przyjęciami towarów. Solidny zestaw reguł jest niezbędny, aby osiągnąć wysoki wskaźnik automatycznego dopasowywania, zapobiegać oszustwom i zapewnić poprawne płatności.
 
-Purchase Order (PO) Matching is a critical process for ensuring consistency between Purchase Orders (POs) and corresponding incoming invoices or goods receipts. A robust set of rules is essential to achieve a high rate of automatic matching, prevent fraud, and ensure correct payments.
-
-This configuration page is used to define and manage the rules that determine _how_ PO line items are matched to the corresponding incoming document (Invoice, Order Confirmation)...
+Ta strona konfiguracji służy do definiowania reguł, które określają, _jak_ pozycje zamówienia zakupu są dopasowywane do odpowiadającego im dokumentu przychodzącego (faktura, potwierdzenie zamówienia), oraz do zarządzania tymi regułami...

@@ -1,68 +1,63 @@
-# Adding a new Column
+# Dodawanie nowej kolumny
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Dodanie nowej kolumny do istniejącej tabeli wymaga starannego zaplanowania i wykonania, aby zapewnić zachowanie integralności danych i spełnienie wymagań aplikacji.
 
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Ustawienia: Typy dokumentów</p></figcaption></figure>
 
-## Adding a new column to an existing table requires careful planning and execution to ensure that data integrity is maintained and application requirements are met.
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.49.21.png" alt=""><figcaption><p>Kolumny tabeli</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Settings: Document Types</p></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.49.21.png" alt=""><figcaption><p>Table Columns</p></figcaption></figure>
-
-**Here are detailed steps to add a new column:**
+**Oto szczegółowe kroki, aby dodać nową kolumnę:**
 
 <figure><img src="../../../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
-**Requirements analysis:**
+**Analiza wymagań:**
 
-* Review your application's requirements and identify the purpose of the new column. What type of data will be stored? How will this column be used in the application?
+* Przejrzyj wymagania swojej aplikacji i określ cel nowej kolumny. Jaki typ danych będzie przechowywany? Jak ta kolumna będzie używana w aplikacji?
 
-<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="375"><figcaption><p>Add new table column</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="375"><figcaption><p>Dodaj nową kolumnę tabeli</p></figcaption></figure>
 
-**Choosing the right column type:**
+**Wybór odpowiedniego typu kolumny:**
 
-* Choose the most appropriate column type based on the data that will be stored in the column. This can be AMOUNT for amount, STRING for strings, DATE for dates, etc.
-* Choosing the right column type is important to ensure data integrity and use storage space efficiently.
+* Wybierz najbardziej odpowiedni typ kolumny w oparciu o dane, które będą w niej przechowywane. Może to być AMOUNT dla kwoty, STRING dla ciągów znaków, DATE dla dat itp.
+* Wybór właściwego typu kolumny jest ważny, aby zapewnić integralność danych i efektywnie wykorzystać przestrzeń dyskową.
 
 <figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Choosing the right table:**
+**Wybór odpowiedniej tabeli:**
 
-* To select the correct column type in a particular table, such as the invoice table, it is important to consider the specific requirements of the data to be stored in that table.
+* Aby wybrać poprawny typ kolumny w określonej tabeli, takiej jak tabela faktur, należy wziąć pod uwagę specyficzne wymagania danych, które mają być w niej przechowywane.
 
 <figure><img src="../../../../../.gitbook/assets/image (98).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
-**Deciding on column necessity:**
+**Decydowanie o tym, czy kolumna jest wymagana:**
 
-* Consider whether the new column is required or whether it should allow NULL values. If the column is mandatory, it should be marked as NOT NULL to ensure that important data is not missing.
-* Also consider whether the column may become a required field for your application in the future.
-
-
-
-**Database backup:**
-
-* Before adding the new column, make a backup of your database to ensure that you have a working version to fall back on in case of any issues.&#x20;
+* Zastanów się, czy nowa kolumna jest wymagana, czy też powinna dopuszczać wartości NULL. Jeśli kolumna jest obowiązkowa, powinna zostać oznaczona jako NOT NULL, aby zapewnić, że ważne dane nie będą pomijane.
+* Rozważ również, czy kolumna może stać się polem wymaganym dla Twojej aplikacji w przyszłości.
 
 
 
-**Executing the SQL statement:**
+**Kopia zapasowa bazy danych:**
 
-*   Use the ALTER TABLE SQL statement to add the new column. The exact syntax depends on the database platform you are using, but in general the SQL statement looks like this:&#x20;
+* Przed dodaniem nowej kolumny wykonaj kopię zapasową bazy danych, aby zapewnić sobie działającą wersję, do której można wrócić w razie jakichkolwiek problemów.&#x20;
+
+
+
+**Wykonanie instrukcji SQL:**
+
+*   Użyj instrukcji SQL ALTER TABLE, aby dodać nową kolumnę. Dokładna składnia zależy od używanej platformy bazodanowej, ale ogólnie instrukcja SQL wygląda następująco:&#x20;
 
     <figure><img src="../../../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
-    Replace table\_name with the name of your table, new\_column\_name with the name of the new column, and data\_type with the column type you selected. The \[NOT NULL] keyword indicates whether the column is mandatory.
+    Zastąp table\_name nazwą swojej tabeli, new\_column\_name nazwą nowej kolumny, a data\_type wybranym typem kolumny. Słowo kluczowe \[NOT NULL] wskazuje, czy kolumna jest obowiązkowa.
 
 
 
-**Testing and validating:**
+**Testowanie i walidacja:**
 
-* After the new column is added, thoroughly verify that your application is working properly. Run tests to ensure that data is stored and retrieved correctly and that the new column is working as expected.
-
-
-
-By carefully following these steps, you can successfully and effectively add a new column to your database table, choosing the correct column type and ensuring that the column is required when it is required.
+* Po dodaniu nowej kolumny dokładnie sprawdź, czy Twoja aplikacja działa prawidłowo. Przeprowadź testy, aby upewnić się, że dane są poprawnie przechowywane i pobierane oraz że nowa kolumna działa zgodnie z oczekiwaniami.
 
 
+
+Starannie wykonując te kroki, możesz pomyślnie i skutecznie dodać nową kolumnę do tabeli bazy danych, wybierając poprawny typ kolumny i zapewniając, że kolumna jest wymagana wtedy, gdy jest to konieczne.

@@ -1,76 +1,73 @@
-# Editing and deleting columns
+# Edytowanie i usuwanie kolumn
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
-
-
-Editing and deleting columns in a database table are important operations that must be performed carefully to ensure data integrity and consider potential impacts on application logic and reporting.
+Edytowanie i usuwanie kolumn w tabeli bazy danych to ważne operacje, które należy wykonywać ostrożnie, aby zapewnić integralność danych i uwzględnić potencjalny wpływ na logikę aplikacji oraz raportowanie.
 
 <figure><img src="../../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
-**Here are detailed steps for both actions:**
+**Oto szczegółowe kroki dla obu działań:**
 
-## Editing a column:
+## Edytowanie kolumny:
 
 <figure><img src="../../../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
 
-**Change title:**
+**Zmiana tytułu:**
 
-* Click on the title of the column you want to change, a window will open and you can change the title of the column.
+* Kliknij tytuł kolumny, którą chcesz zmienić, otworzy się okno, w którym możesz zmienić tytuł kolumny.
 
-**Requirement analysis:**
+**Analiza wymagań:**
 
-* Identify the reason for editing the column. You may need to change the data type, add or remove constraints, or change the column name.
+* Określ powód edytowania kolumny. Może być konieczna zmiana typu danych, dodanie lub usunięcie ograniczeń albo zmiana nazwy kolumny.
 
-**Impact review:**
+**Przegląd wpływu:**
 
-* Before making any changes, review how they will affect existing data and application logic. For example, changes to the data type may cause data to be converted or lost.
+* Przed wprowadzeniem jakichkolwiek zmian sprawdź, jak wpłyną one na istniejące dane i logikę aplikacji. Na przykład zmiany typu danych mogą spowodować konwersję lub utratę danych.
 
-**Database backup:**
+**Kopia zapasowa bazy danych:**
 
-* Back up your database to ensure you have a working version to revert to in case of any problems.
+* Wykonaj kopię zapasową bazy danych, aby zapewnić sobie działającą wersję, do której można wrócić w razie jakichkolwiek problemów.
 
-**Executing the SQL statement:**
+**Wykonanie instrukcji SQL:**
 
-* Use the ALTER TABLE SQL statement to make the desired changes to the column. The exact syntax depends on the database platform you are using and the changes you want to make.
+* Użyj instrukcji SQL ALTER TABLE, aby wprowadzić pożądane zmiany w kolumnie. Dokładna składnia zależy od używanej platformy bazodanowej i zmian, które chcesz wprowadzić.
 
-**Data migration:**
+**Migracja danych:**
 
-* If you change the data type of a column, you may need to perform data migration to convert existing data to the new format.
+* Jeśli zmienisz typ danych kolumny, może być konieczne przeprowadzenie migracji danych w celu przekonwertowania istniejących danych do nowego formatu.
 
-**Testing and validating:**
+**Testowanie i walidacja:**
 
-* After editing the column, thoroughly verify that your application is working properly and that the data is being stored and retrieved correctly.
+* Po edytowaniu kolumny dokładnie sprawdź, czy Twoja aplikacja działa prawidłowo oraz czy dane są poprawnie przechowywane i pobierane.
 
-## Deleting a column:
+## Usuwanie kolumny:
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 13.39.00.png" alt=""><figcaption></figcaption></figure>
 
-**Requirement analysis:**
+**Analiza wymagań:**
 
-* Make sure you understand the reasons for deleting the column. Is the column no longer relevant or are there other ways to consolidate it?
+* Upewnij się, że rozumiesz powody usunięcia kolumny. Czy kolumna nie jest już istotna, czy też istnieją inne sposoby jej konsolidacji?
 
-**Impact review:**
+**Przegląd wpływu:**
 
-* Analyze how deleting the column will affect existing data, application logic, and reporting. This may result in data loss or affect queries and reports.
+* Przeanalizuj, jak usunięcie kolumny wpłynie na istniejące dane, logikę aplikacji i raportowanie. Może to spowodować utratę danych lub wpłynąć na zapytania i raporty.
 
-**Database backup:**
+**Kopia zapasowa bazy danych:**
 
-* Make a full backup of your database to ensure you can restore in case of unexpected problems.
+* Wykonaj pełną kopię zapasową bazy danych, aby móc przywrócić dane w razie nieoczekiwanych problemów.
 
-**Executing the SQL statement:**
+**Wykonanie instrukcji SQL:**
 
-* Use the ALTER TABLE SQL statement to remove the column. The exact syntax varies by database platform.
+* Użyj instrukcji SQL ALTER TABLE, aby usunąć kolumnę. Dokładna składnia różni się w zależności od platformy bazodanowej.
 
-**Data migration (if required):**
+**Migracja danych (jeśli wymagana):**
 
-* If you have important data in the column you are deleting, you may need to perform a data migration to move that data to another location or delete it.
+* Jeśli w usuwanej kolumnie znajdują się ważne dane, może być konieczne przeprowadzenie migracji danych w celu przeniesienia ich w inne miejsce lub usunięcia.
 
-**Adjusting application logic:**
+**Dostosowanie logiki aplikacji:**
 
-* Make sure your application logic is adjusted accordingly to ensure it no longer accesses the deleted column.
+* Upewnij się, że logika Twojej aplikacji została odpowiednio dostosowana, aby nie odwoływała się już do usuniętej kolumny.
 
-**Testing and validating:**
+**Testowanie i walidacja:**
 
-* Verify thoroughly that your application is working correctly and that all data and reporting functions are working as expected.
+* Dokładnie sprawdź, czy Twoja aplikacja działa poprawnie oraz czy wszystkie funkcje dotyczące danych i raportowania działają zgodnie z oczekiwaniami.
 
-When editing or deleting columns, it is critical that you fully understand the impact of these actions and take appropriate precautions to maintain the integrity of your database and ensure that your application runs smoothly.
+Podczas edytowania lub usuwania kolumn kluczowe jest, abyś w pełni rozumiał wpływ tych działań oraz podjął odpowiednie środki ostrożności w celu zachowania integralności bazy danych i zapewnienia płynnego działania aplikacji.

@@ -1,12 +1,10 @@
-# Creating a Regex Pattern
+# Tworzenie wzorca wyrażenia regularnego
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
-
-## To create a new Regex pattern that correctly matches the desired data, follow these steps:
+## Aby utworzyć nowy wzorzec wyrażenia regularnego, który poprawnie dopasowuje pożądane dane, wykonaj następujące kroki:
 
 
 
-**Define the goal:**
+**Określ cel:**
 
-* First, clarify what type of data you want to extract and in what context it occurs.&#x20;
-* Understand the structure and format of the data you want to capture....
+* Najpierw wyjaśnij, jaki typ danych chcesz wyodrębnić i w jakim kontekście występuje.&#x20;
+* Zrozum strukturę i format danych, które chcesz przechwycić....

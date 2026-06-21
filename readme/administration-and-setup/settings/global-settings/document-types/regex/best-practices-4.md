@@ -1,13 +1,11 @@
-# Best practices
+# Najlepsze praktyki
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Najlepsze praktyki dotyczące wyrażeń regularnych w przetwarzaniu dokumentów.
 
-## Best practices for regex in document processing.
-
-**When using regex for document processing, there are some best practices to keep in mind to create and maintain effective and maintainable patterns:**
+**Korzystając z wyrażeń regularnych do przetwarzania dokumentów, należy pamiętać o kilku najlepszych praktykach, aby tworzyć i utrzymywać skuteczne oraz łatwe w utrzymaniu wzorce:**
 
 
 
-**Keep patterns simple and readable:**
+**Utrzymuj wzorce proste i czytelne:**
 
-* Complexity is often the enemy of maintainability.&#x20;...
+* Złożoność jest często wrogiem łatwości utrzymania.&#x20;...

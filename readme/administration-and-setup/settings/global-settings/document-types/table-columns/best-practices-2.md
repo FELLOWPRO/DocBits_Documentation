@@ -1,49 +1,44 @@
-# Best practices
+# Najlepsze praktyki
 
-(Treść w języku angielskim poniżej - Tłumaczenie w toku)
+## Najlepsze praktyki dotyczące organizowania danych w tabelach pomagają zachować przejrzystą strukturę bazy danych, poprawić integralność danych i zoptymalizować wydajność.
 
-
-## Best practices for organizing data in tables help keep the database structure clear, improve data integrity, and optimize performance.
-
-**Here are some best practices:**
+**Oto kilka najlepszych praktyk:**
 
 
 
-**Use meaningful column names:**
+**Używaj znaczących nazw kolumn:**
 
-* Choose column names that are clear and descriptive to improve the readability and understandability of your database structure. Avoid abbreviated or cryptic names.
-* Name columns to accurately reflect the content or meaning of the data stored in them. This makes later querying and reporting easier.
-
-
-
-**Choose appropriate data types:**
-
-* Use the smallest possible data type that adequately meets the needs of your data to save storage space and improve performance.
-* Consider the type of data stored and choose the data type accordingly. For example: use INTEGER for integers, VARCHAR for strings, and DATE for dates.
+* Wybieraj nazwy kolumn, które są jasne i opisowe, aby poprawić czytelność i zrozumiałość struktury bazy danych. Unikaj skróconych lub niejasnych nazw.
+* Nazywaj kolumny tak, aby dokładnie odzwierciedlały zawartość lub znaczenie przechowywanych w nich danych. Ułatwia to późniejsze wykonywanie zapytań i raportowanie.
 
 
 
-**Understanding required columns:**
+**Wybieraj odpowiednie typy danych:**
 
-* Mark columns as required (NOT NULL) if they are essential to the proper operation of your application and NULL values ​​are unacceptable.
-* When deciding whether to mark a column as required, make sure that the application can logically handle NULL values ​​and that NULL values ​​will not cause unexpected errors.
-
-
-
-**Using foreign keys for relationships:**
-
-* If your database has relationships between tables, use foreign keys to define those relationships. This improves data integrity and allows referential integrity constraints to be enforced.
-* Be sure to consider indexing foreign keys to optimize the performance of queries that access those relationships.
+* Używaj najmniejszego możliwego typu danych, który odpowiednio spełnia potrzeby Twoich danych, aby zaoszczędzić przestrzeń dyskową i poprawić wydajność.
+* Weź pod uwagę typ przechowywanych danych i odpowiednio dobierz typ danych. Na przykład: użyj INTEGER dla liczb całkowitych, VARCHAR dla ciągów znaków i DATE dla dat.
 
 
 
-**Regularly review and update:**
+**Zrozumienie kolumn wymaganych:**
 
-* Regularly review the database structure to ensure it meets the changing needs of your application. Make updates as needed to improve the efficiency and performance of your database.&#x20;
-* Be sure to consider feedback from users and developers to identify and implement areas for improvement.
-
-
-
-By applying these best practices, you can create a well-organized and efficient database structure that meets the needs of your application and provides a reliable foundation for storing, querying, and reporting on your data.
+* Oznacz kolumny jako wymagane (NOT NULL), jeśli są niezbędne do prawidłowego działania Twojej aplikacji, a wartości NULL są niedopuszczalne.
+* Decydując, czy oznaczyć kolumnę jako wymaganą, upewnij się, że aplikacja potrafi logicznie obsłużyć wartości NULL i że wartości NULL nie spowodują nieoczekiwanych błędów.
 
 
+
+**Używanie kluczy obcych do relacji:**
+
+* Jeśli Twoja baza danych ma relacje między tabelami, użyj kluczy obcych do zdefiniowania tych relacji. Poprawia to integralność danych i pozwala egzekwować ograniczenia integralności referencyjnej.
+* Pamiętaj, aby rozważyć indeksowanie kluczy obcych w celu optymalizacji wydajności zapytań, które korzystają z tych relacji.
+
+
+
+**Regularnie przeglądaj i aktualizuj:**
+
+* Regularnie przeglądaj strukturę bazy danych, aby upewnić się, że spełnia ona zmieniające się potrzeby Twojej aplikacji. Wprowadzaj aktualizacje w razie potrzeby, aby poprawić wydajność i efektywność swojej bazy danych.&#x20;
+* Pamiętaj, aby uwzględniać opinie użytkowników i programistów w celu identyfikowania i wdrażania obszarów do poprawy.
+
+
+
+Stosując te najlepsze praktyki, możesz stworzyć dobrze zorganizowaną i wydajną strukturę bazy danych, która spełnia potrzeby Twojej aplikacji i stanowi niezawodną podstawę do przechowywania, odpytywania i raportowania Twoich danych.

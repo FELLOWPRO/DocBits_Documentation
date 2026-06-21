@@ -1,10 +1,8 @@
-# Receive delivery line
+# Ontvangstleveringsregel
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.receive_delivery_line`
 
-## Table `public.receive_delivery_line`
+### Kolommen
 
-### Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

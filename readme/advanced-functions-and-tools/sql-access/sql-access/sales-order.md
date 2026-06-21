@@ -1,10 +1,8 @@
-# Sales order
+# Verkooporder
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.sales_order`
 
-## Table `public.sales_order`
+### Kolommen
 
-### Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

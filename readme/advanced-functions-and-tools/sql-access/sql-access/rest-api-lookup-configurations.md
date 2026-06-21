@@ -1,10 +1,8 @@
 # REST API Lookup Configurations
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.rest_api_lookup_configurations`
 
-## Tabelle `public.rest_api_lookup_configurations`
+### Kolommen
 
-### Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

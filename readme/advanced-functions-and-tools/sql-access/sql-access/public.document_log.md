@@ -1,10 +1,8 @@
 # public.document_log
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.document_log`
 
-## Tabelle `public.document_log`
-
-### Spalten
+### Kolommen
 
 * `id`: integer
-* `org_id`: ID to organisation...
+* `org_id`: ID naar organisatie...

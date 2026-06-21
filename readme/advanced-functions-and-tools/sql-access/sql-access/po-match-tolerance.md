@@ -1,10 +1,8 @@
-# PO match tolerance
+# PO-matchtolerantie
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.po_match_tolerance`
 
-## Table `public.po_match_tolerance`
+### Kolommen
 
-### Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

@@ -1,10 +1,8 @@
-# Purchase Order line
+# Inkooporderregel
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.purchase_order_line`
 
-## Tabelle `public.purchase_order_line`
+### Kolommen
 
-### Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

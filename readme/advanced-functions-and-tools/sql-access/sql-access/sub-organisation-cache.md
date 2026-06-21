@@ -1,10 +1,8 @@
 # Sub Organisation Cache
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.sub_organisation_cache`
 
-## Tabelle `public.sub_organisation_cache`
+### Kolommen
 
-### Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

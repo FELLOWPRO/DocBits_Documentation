@@ -1,8 +1,6 @@
-# Preferences
+# Voorkeuren
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Kolommen
 
-## Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

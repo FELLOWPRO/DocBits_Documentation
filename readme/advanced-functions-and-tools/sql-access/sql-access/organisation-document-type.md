@@ -1,10 +1,8 @@
-# Organisation document type
+# Organisatiedocumenttype
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Kolommen
 
-## Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation
-* `document_type_id`: internal
-* `document_type_key`: internal...
+* `id`: intern
+* `org_id`: ID naar organisatie
+* `document_type_id`: intern
+* `document_type_key`: intern...

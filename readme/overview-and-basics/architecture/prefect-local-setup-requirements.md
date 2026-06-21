@@ -1,29 +1,20 @@
-# Prefect Local Setup Requirements
+# Vereisten voor lokale Prefect-installatie
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+#### Vereisten
 
-
-#### Requirements
-
-Make sure the following are installed on the host system:
+Zorg ervoor dat het volgende op het hostsysteem is geïnstalleerd:
 
 * **Docker Engine**
 * **Docker Compose v2**&#x20;
 
-#### Host OS Compatibility
+#### Compatibiliteit host-besturingssysteem
 
-* **Linux**: Recommended and fully supported.
-* **Windows**: Works with Docker Desktop (WSL2). Volume mounts may cause issues.
-* **macOS**: Supported via Docker Desktop. Similar to Windows in behavior.
+* **Linux**: Aanbevolen en volledig ondersteund.
+* **Windows**: Werkt met Docker Desktop (WSL2). Volumekoppelingen kunnen problemen veroorzaken.
+* **macOS**: Ondersteund via Docker Desktop. Vergelijkbaar gedrag als Windows.
 
-#### System Requirements
+#### Systeemvereisten
 
-* **RAM**: 1–2 GB per container. For multiple flows: 2–4 GB.
-* **CPU**: 1–2 cores per container. For concurrent flows: 2–4 cores.
-* **Disk**: 2–3 GB for image and logs&#x20;
-
-
-
-
-
-
+* **RAM**: 1–2 GB per container. Voor meerdere flows: 2–4 GB.
+* **CPU**: 1–2 cores per container. Voor gelijktijdige flows: 2–4 cores.
+* **Schijf**: 2–3 GB voor image en logs&#x20;

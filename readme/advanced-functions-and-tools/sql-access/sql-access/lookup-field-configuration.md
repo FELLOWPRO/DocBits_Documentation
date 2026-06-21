@@ -1,10 +1,8 @@
-# Lookup field configuration
+# Configuratie opzoekveld
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Tabel `public.lookup_field_configuration`
 
-## Tabelle `public.lookup_field_configuration`
+### Kolommen
 
-### Spalten
-
-* `id`: internal
-* `org_id`: ID to organisation...
+* `id`: intern
+* `org_id`: ID naar organisatie...

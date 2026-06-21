@@ -1,8 +1,6 @@
-# Supplier address
+# Leveranciersadres
 
-(Engelse inhoud hieronder - Vertaling in behandeling)
+## Kolommen
 
-## Spalten
-
-* `org_id`: ID to organisation
-* `customer_number`: internal...
+* `org_id`: ID naar organisatie
+* `customer_number`: intern...

@@ -1,13 +1,10 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
-
 # IMAP
 
-Here you just need to enter the required information for your email provider, encryption, server name, port, username, email address, password as well as the email folder.
+Aqui você só precisa inserir as informações necessárias do seu provedor de e-mail: criptografia, nome do servidor, porta, nome de usuário, endereço de e-mail, senha e a pasta de e-mail.
 
 ![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv\_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
 
-Things to Note
+Pontos a observar
 
-* Input all needed information into the UI. Other information like the server, port, etc. Depends on the host (a quick Google search should help).
-* Folder and Move-Imported have the same Function here. Folder can not be disabled, but will use Inbox by default if left empty.
-
+* Insira todas as informações necessárias na interface. Outras informações, como servidor, porta etc., dependem do host (uma rápida pesquisa no Google deve ajudar).
+* Folder e Move-Imported têm a mesma função aqui. Folder não pode ser desativado, mas usará a Caixa de Entrada por padrão se deixado em branco.

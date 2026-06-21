@@ -1,12 +1,10 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
 
 
+# Visão Geral dos Documentos Enviados
 
-# Overview of Uploaded Documents
+A segunda parte do painel é uma visão geral de todos os documentos enviados. Você pode visualizar todos os documentos ou apenas os atribuídos a você. Também é possível pesquisar documentos por nome.
 
-The second part of the dashboard is an overview of all the uploaded documents. You can view all documents or just the ones assigned to you. You can also search for documents by name.
-
-Data will be extracted within seconds, and the status will change from “Running” to “Ready for Validation”.
+Os dados serão extraídos em segundos, e o status mudará de "Em execução" para "Pronto para Validação".
 
 
 

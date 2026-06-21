@@ -1,6 +1,3 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
+# Como Importar Documentos
 
-# How to Import Documents
-
-A guide to uploading documents to DocBits.
-
+Um guia para enviar documentos ao DocBits.

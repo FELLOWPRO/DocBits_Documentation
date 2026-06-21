@@ -1,24 +1,21 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
+# Alterar Colunas do Documento
 
-# Change Document Columns
-
-From the Dashboard, click on the Advanced Settings icon as shown below
+No Painel, clique no ícone de Configurações Avançadas, conforme mostrado abaixo
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-The following menu will then be displayed
+O seguinte menu será então exibido
 
-![Advanced Settings Menu](https://lh7-us.googleusercontent.com/wWt5QbmwZf44enmOoLcofh6SvyYPiHTav9OiEog\_m2xtnty6X73pFlhfdM9aglx89\_pfbiACZx5BejagV-wAKwlDTuGoGNu5jgbcZ5djrZ\_h1IgGp-8uaq8UHY-umjrs96hb4FZOzHFzdLasg2F\_ftw)
+![Menu de Configurações Avançadas](https://lh7-us.googleusercontent.com/wWt5QbmwZf44enmOoLcofh6SvyYPiHTav9OiEog\_m2xtnty6X73pFlhfdM9aglx89\_pfbiACZx5BejagV-wAKwlDTuGoGNu5jgbcZ5djrZ\_h1IgGp-8uaq8UHY-umjrs96hb4FZOzHFzdLasg2F\_ftw)
 
-Select the button labeled “Set dashboard columns for organization” and a list of all the column names will be shown.
+Selecione o botão chamado "Definir colunas do painel para a organização" e uma lista com todos os nomes das colunas será exibida.
 
-From this menu, you can select the column names and use the arrows to add and remove the columns you desire.
+A partir deste menu, você pode selecionar os nomes das colunas e usar as setas para adicionar e remover as colunas que desejar.
 
-![Dashboard Column Settings](https://lh7-us.googleusercontent.com/cXnnrIR-y4TRDnRE9irGvvjnmkN-HSGEQTh7FiwsjRHzXF7FNjd-\_gLO-m55fLlv6lVjk-VvThgdW5JWgqIVZSm5tfk3hC7xrj68uRE5OgIPMtYIrpxOhhYzk4OMibyDBqvHQ0VZaDAysZohlH8dxm8)
+![Configurações das Colunas do Painel](https://lh7-us.googleusercontent.com/cXnnrIR-y4TRDnRE9irGvvjnmkN-HSGEQTh7FiwsjRHzXF7FNjd-\_gLO-m55fLlv6lVjk-VvThgdW5JWgqIVZSm5tfk3hC7xrj68uRE5OgIPMtYIrpxOhhYzk4OMibyDBqvHQ0VZaDAysZohlH8dxm8)
 
 <div data-full-width="true">
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 </div>
-

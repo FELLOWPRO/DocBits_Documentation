@@ -1,12 +1,9 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
-
 ---
 description: DocBits Dashboard Guide
 ---
 
-# Dashboard
+# Painel
 
-After logging in with your credentials, you will be redirected to the DocBits Dashboard homepage. This is the main page where you can see and manage all your imported documents.
+Após fazer login com suas credenciais, você será redirecionado para a página inicial do Painel do DocBits. Esta é a página principal onde você pode ver e gerenciar todos os seus documentos importados.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-

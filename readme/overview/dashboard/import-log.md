@@ -1,19 +1,16 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
+# Registro de Importação
 
-# Import Log
+Se você quiser ver um registro detalhado de todos os documentos importados para o seu ambiente DocBits, siga estas etapas.
 
-If you would like to see a detailed log of all documents imported to your DocBits environment, then follow these steps.
-
-From your DocBits Dashboard, select the Advanced Settings option.
+No seu Painel do DocBits, selecione a opção Configurações Avançadas.
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-After the Advanced Settings bar appears, select the Import Log button.
+Depois que a barra de Configurações Avançadas aparecer, selecione o botão Registro de Importação.
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-A table will then appear with all recently imported documents as well as other relevant information regarding them.
+Uma tabela será então exibida com todos os documentos importados recentemente, bem como outras informações relevantes sobre eles.
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
 

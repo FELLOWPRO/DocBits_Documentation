@@ -1,127 +1,125 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
+# Portal do Fornecedor
 
-# Supplier Portal
+## Visão geral
 
-## Overview
+Esta página explica como ativar e usar o **Portal do Fornecedor**, bem como onde encontrar todas as configurações relevantes. O Portal do Fornecedor permite que você convide fornecedores para o **DocBits**. Depois que o acesso é concedido, os fornecedores podem fazer login para visualizar o status de seus **Pedidos de Compra** e **Faturas** diretamente no **DocBits**.
 
-This page explains how to activate and use the **Supplier Portal**, as well as where to find all relevant settings. The Supplier Portal allows you to invite suppliers to **DocBits**. Once access is granted, suppliers can log in to view the status of their **Purchase Orders** and **Invoices** directly within **DocBits**.
+## Como ativar o Portal do Fornecedor
 
-## How to Activate the Supplier Portal
-
-1.  Go to **Settings → Document Processing → Module**.
+1.  Acesse **Configurações → Processamento de Documentos → Módulo**.
 
     <figure><img src="../../../.gitbook/assets/settings_module.png" alt=""><figcaption></figcaption></figure>
-2.  In the **Shipping & Supplier** section, enable the **Supplier Portal** option.
+2.  Na seção **Envio e Fornecedor**, ative a opção **Portal do Fornecedor**.
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_1.png" alt=""><figcaption></figcaption></figure>
 
-## Supplier Settings
+## Configurações do Fornecedor
 
-Once the **Supplier Portal** feature is enabled, a new **Supplier Settings** section will appear at the bottom of the **Settings** menu.
+Depois que o recurso **Portal do Fornecedor** estiver ativado, uma nova seção **Configurações do Fornecedor** aparecerá na parte inferior do menu **Configurações**.
 
 <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-[**Supplier General Settings**](../../settings/supplier-setting/supplier-general-settings.md): Here, you can customize the **Supplier Portal** by uploading your company logo—displayed in the header of all email templates—and by managing legal documents such as the Terms of Use and Privacy Policy.
+[**Configurações Gerais do Fornecedor**](../../settings/supplier-setting/supplier-general-settings.md): Aqui, você pode personalizar o **Portal do Fornecedor** enviando o logotipo da sua empresa—exibido no cabeçalho de todos os modelos de e-mail—e gerenciando documentos legais como os Termos de Uso e a Política de Privacidade.
 
-[**Email Templates**](../../settings/supplier-setting/editing-email-templates.md)**:** Here you can create and test the invitation email templates that will be sent to invited suppliers.
+[**Modelos de E-mail**](../../settings/supplier-setting/editing-email-templates.md)**:** Aqui você pode criar e testar os modelos de e-mail de convite que serão enviados aos fornecedores convidados.
 
-[**Supplier Layout**](../../settings/supplier-setting/supplier-layout.md)**:** Here you can create and manage the layouts that define which information new suppliers must provide during the registration process.
+[**Layout do Fornecedor**](../../settings/supplier-setting/supplier-layout.md)**:** Aqui você pode criar e gerenciar os layouts que definem quais informações os novos fornecedores devem fornecer durante o processo de registro.
 
-[**Export Configuration**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Here you can define how data is mapped and synchronized between the **Supplier Portal** and the **Infor M3** system using ION and IDM mapping files.
+[**Configuração de Exportação**](../../settings/supplier-setting/export-configuration-for-supplier-portal-for-m3.md): Aqui você pode definir como os dados são mapeados e sincronizados entre o **Portal do Fornecedor** e o sistema **Infor M3** usando arquivos de mapeamento ION e IDM.
 
-[**Supplier Permissions**](../../settings/supplier-setting/supplier-permissions.md): Here you can configure the permissions that suppliers will have within the **Supplier Portal**. You can also group suppliers, making it easier to manage access and settings across multiple suppliers.
+[**Permissões do Fornecedor**](../../settings/supplier-setting/supplier-permissions.md): Aqui você pode configurar as permissões que os fornecedores terão dentro do **Portal do Fornecedor**. Você também pode agrupar fornecedores, facilitando o gerenciamento de acesso e configurações entre vários fornecedores.
 
-A detailed guide to all Supplier Settings can be found [here](../../settings/supplier-setting/).
+Um guia detalhado de todas as Configurações do Fornecedor pode ser encontrado [aqui](../../settings/supplier-setting/).
 
-## Supplier Dashboard <a href="#supplier-permissions" id="supplier-permissions"></a>
+## Painel do Fornecedor <a href="#supplier-permissions" id="supplier-permissions"></a>
 
-You can access the **Supplier Dashboard** from the left-hand menu, as shown below.
+Você pode acessar o **Painel do Fornecedor** pelo menu à esquerda, conforme mostrado abaixo.
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_2.png" alt=""><figcaption></figcaption></figure>
 
-All of your created Suppliers are displayed here.
+Todos os Fornecedores que você criou são exibidos aqui.
 
-## Filter for Suppliers
+## Filtrar por Fornecedores
 
-You can search for suppliers by N**ame** or N**umber**, or use the advanced filters to narrow results by:
+Você pode pesquisar fornecedores por **Nome** ou **Número**, ou usar os filtros avançados para restringir os resultados por:
 
-* **Supplier Groups**
+* **Grupos de Fornecedores**
 * **Status**
-* **Created On**
+* **Criado em**
 
-You can also specify how many suppliers should be displayed per page.
+Você também pode especificar quantos fornecedores devem ser exibidos por página.
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_9.png" alt=""><figcaption></figcaption></figure>
 
-Additionally, you can quickly filter by the statuses **Pending Approval** or **Pending Registration** by clicking the corresponding category to the left of the filter ba&#x72;**.**
+Além disso, você pode filtrar rapidamente pelos status **Aprovação Pendente** ou **Registro Pendente** clicando na categoria correspondente à esquerda da barra de filtr&#x6f;**.**
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
 
-## Supplier Status
+## Status do Fornecedor
 
-If you're using the **Supplier Portal**, it's important to understand the different statuses that suppliers can have. Below is a list of all possible supplier statuses and their meanings:
+Se você está usando o **Portal do Fornecedor**, é importante entender os diferentes status que os fornecedores podem ter. Abaixo está uma lista de todos os status de fornecedor possíveis e seus significados:
 
-* **Open**: Existing supplier who has not yet been invited to the portal.
-* **Pending Registration**: Supplier has been invited but has not yet completed the registration process.
-* **Pending Supplier Input**: Registration is complete, but further input or changes are required from the supplier.
-* **Pending Approval**: Supplier has completed registration and is awaiting the first approval.
-* **Pending AP Approval**: Supplier has received the first approval and is awaiting a second (Accounts Payable) approval.
-* **Approved**: Supplier has completed the process and has been fully approved.
-* **Rejected**: The supplier’s registration or approval has been rejected.
+* **Aberto**: Fornecedor existente que ainda não foi convidado para o portal.
+* **Registro Pendente**: O fornecedor foi convidado, mas ainda não concluiu o processo de registro.
+* **Entrada do Fornecedor Pendente**: O registro está concluído, mas são necessárias mais informações ou alterações por parte do fornecedor.
+* **Aprovação Pendente**: O fornecedor concluiu o registro e está aguardando a primeira aprovação.
+* **Aprovação de Contas a Pagar Pendente**: O fornecedor recebeu a primeira aprovação e está aguardando uma segunda aprovação (Contas a Pagar).
+* **Aprovado**: O fornecedor concluiu o processo e foi totalmente aprovado.
+* **Rejeitado**: O registro ou a aprovação do fornecedor foi rejeitado.
 
-## Tools in the Supplier Dashboard
+## Ferramentas no Painel do Fornecedor
 
-To the right of the search bar, you'll find several tools that help you interact with and manage the dashboard more efficiently.
+À direita da barra de pesquisa, você encontrará várias ferramentas que ajudam a interagir com o painel e gerenciá-lo de forma mais eficiente.
 
-### Refresh table <a href="#refresh-table" id="refresh-table"></a>
+### Atualizar tabela <a href="#refresh-table" id="refresh-table"></a>
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_3.png" alt=""><figcaption></figcaption></figure>
 
-Click this button to refresh the dashboard and load the most up-to-date data and statuses.
+Clique neste botão para atualizar o painel e carregar os dados e status mais recentes.
 
-### Set table columns for organization <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
+### Definir colunas da tabela para a organização <a href="#set-table-columns-for-organization" id="set-table-columns-for-organization"></a>
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_4.png" alt=""><figcaption></figcaption></figure>
 
-Click this button to open a menu where you can manage the visibility of columns in the purchase order table. Use the checkboxes and arrow buttons to move columns between the visible and hidden sections. You can also reorder columns by dragging and dropping the column names. Click **Done** to save your changes.
+Clique neste botão para abrir um menu onde você pode gerenciar a visibilidade das colunas na tabela de pedidos de compra. Use as caixas de seleção e os botões de seta para mover colunas entre as seções visível e oculta. Você também pode reordenar as colunas arrastando e soltando os nomes das colunas. Clique em **Concluído** para salvar suas alterações.
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_7.png" alt=""><figcaption></figcaption></figure>
 
-### Analytics <a href="#analytics" id="analytics"></a>
+### Análises <a href="#analytics" id="analytics"></a>
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_5.png" alt=""><figcaption></figcaption></figure>
 
-Clicking this button will open a new section showing how many suppliers are set to expire and when.\
-Click on any category to apply a filter and view only those suppliers.
+Ao clicar neste botão, uma nova seção será aberta mostrando quantos fornecedores estão prestes a expirar e quando.\
+Clique em qualquer categoria para aplicar um filtro e visualizar apenas esses fornecedores.
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_8.png" alt=""><figcaption></figcaption></figure>
 
-## Create Supplier and Send Registration Email
+## Criar Fornecedor e Enviar E-mail de Registro
 
-### **To create a new supplier:**
+### **Para criar um novo fornecedor:**
 
-1.  Click the plus (+) icon in the top right corner.
+1.  Clique no ícone de mais (+) no canto superior direito.
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_6.png" alt=""><figcaption></figcaption></figure>
-2.  Fill in the required fields, then click **Save**.
+2.  Preencha os campos obrigatórios e clique em **Salvar**.
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_11.png" alt=""><figcaption></figcaption></figure>
-3. The supplier will automatically receive an email with a link to create their account.
+3. O fornecedor receberá automaticamente um e-mail com um link para criar sua conta.
 
-### **To send a registration email to an existing supplier:**
+### **Para enviar um e-mail de registro a um fornecedor existente:**
 
-1. Locate the supplier in the **Supplier Dashboard**.
-2. Click the three-dot menu in the **Actions** column.
-3.  Select **Magic Link**.
+1. Localize o fornecedor no **Painel do Fornecedor**.
+2. Clique no menu de três pontos na coluna **Ações**.
+3.  Selecione **Magic Link**.
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_12.png" alt=""><figcaption></figcaption></figure>
-4. Verify the supplier’s details.
-5.  Click **Send** to email the registration link.
+4. Verifique os detalhes do fornecedor.
+5.  Clique em **Enviar** para enviar o link de registro por e-mail.
 
     <figure><img src="../../../.gitbook/assets/supplier_portal_13.png" alt=""><figcaption></figcaption></figure>
 
-## How Does the Registration Process Work for the Supplier?
+## Como funciona o processo de registro para o fornecedor?
 
-After an invitation email is sent, the supplier must complete the registration process to access the **Supplier Portal**.
+Após o envio de um e-mail de convite, o fornecedor deve concluir o processo de registro para acessar o **Portal do Fornecedor**.
 
-A detailed step-by-step guide on the registration process can be found [here](supplier-registration.md).
+Um guia detalhado, passo a passo, sobre o processo de registro pode ser encontrado [aqui](supplier-registration.md).

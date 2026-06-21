@@ -1,20 +1,17 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
+# Suporte ao Usuário
 
-# User Support
+### Suporte ao Usuário <a href="#ikpwh4qbrq82" id="ikpwh4qbrq82"></a>
 
-### User Support <a href="#ikpwh4qbrq82" id="ikpwh4qbrq82"></a>
-
-Should you face any challenges or have inquiries when using DocBits, please consult this user manual or reach out to our support team for help. Our commitment lies in providing a seamless experience for all users. Simply click on the support button in your DocBits app and you can create a support ticket. Simply click on the support button in your DocBits app and you can create a support ticket.
+Caso você enfrente algum desafio ou tenha dúvidas ao usar o DocBits, consulte este manual do usuário ou entre em contato com nossa equipe de suporte para obter ajuda. Nosso compromisso é proporcionar uma experiência perfeita para todos os usuários. Basta clicar no botão de suporte no seu aplicativo DocBits e você poderá criar um ticket de suporte. Basta clicar no botão de suporte no seu aplicativo DocBits e você poderá criar um ticket de suporte.
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-You can also contact us via our FELLOPRO page:
+Você também pode entrar em contato conosco através da nossa página FELLOPRO:
 
 {% embed url="https://fellowpro.com/de/fellow/kontakt-fellowpro-ag/" %}
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-07 um 16.50.45.png" alt=""><figcaption></figcaption></figure>
 
-Inside the Validation Screen you can create direct a Ticket and include a Screenshot of the issue.&#x20;
-
+Dentro da Tela de Validação, você pode criar um ticket diretamente e incluir uma captura de tela do problema.&#x20;

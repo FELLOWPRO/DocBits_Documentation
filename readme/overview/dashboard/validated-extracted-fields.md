@@ -1,8 +1,5 @@
-_Conteúdo em inglês abaixo - Tradução pendente_
+# Campos Extraídos Validados
 
-# Validated Extracted Fields
-
-The validation screen allows you to check, edit, and validate all the imported documents. You can see the name of the document, how many pages it consists of, the date it was imported, and its status. The actions button allows you to assign, restart, validate, or delete the document.
+A tela de validação permite verificar, editar e validar todos os documentos importados. Você pode ver o nome do documento, quantas páginas ele possui, a data em que foi importado e seu status. O botão de ações permite atribuir, reiniciar, validar ou excluir o documento.
 
 ![](https://lh7-us.googleusercontent.com/Qsuq276tKp5GdkYv3Jfcjqske-IBpS-KqAtYf4q5mwEy6SFbsl9hC4oC94m8jwgnAOmTT7uHn2RPen-rXLo6q0ya7tHsJxjr0dbBeLDx6dAnjF6B0czSDQJxdDhx-E7OZD6MFZh-237jAfPrgQF0wGQ)
-

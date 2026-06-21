@@ -1,17 +1,14 @@
-# Configuring Notifications
-
-(Contenido en inglés abajo - Traducción pendiente)
-
+# Configuración de las notificaciones
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 08.56.36.png" alt=""><figcaption></figcaption></figure>
 
-#### To get to email notification settings, follow these steps:
+#### Para acceder a la configuración de las notificaciones por correo electrónico, sigue estos pasos:
 
-* Navigate to the Global Settings section in your user account or administration panel.
-* Look for the option for email notifications
-* Click the appropriate option to open email notification settings.
+* Navega hasta la sección Configuración global de tu cuenta de usuario o panel de administración.
+* Busca la opción de notificaciones por correo electrónico.
+* Haz clic en la opción correspondiente para abrir la configuración de las notificaciones por correo electrónico.
 
-Within these settings you can then make the desired configurations to ensure you receive notifications according to your preferences. Remember to adjust the settings based on your needs and ensure they comply with your organization's privacy policy and security standards.
+Dentro de esta configuración puedes realizar los ajustes que desees para asegurarte de recibir las notificaciones según tus preferencias. Recuerda ajustar la configuración en función de tus necesidades y asegurarte de que cumple con la política de privacidad y los estándares de seguridad de tu organización.
 
 {% embed url="https://youtu.be/R5IrCpiP__4" %}
 {% endembed %}
@@ -19,57 +16,57 @@ Within these settings you can then make the desired configurations to ensure you
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 10.15.45.png" alt=""><figcaption></figcaption></figure>
 
-**Create new notification:**
+**Crear una nueva notificación:**
 
-* Click the button to add or create a new notification.
+* Haz clic en el botón para añadir o crear una nueva notificación.
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 01.28.41.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### Key Features and Options
+#### Funciones y opciones principales
 
-1. **Email Notification Configuration**:
+1. **Configuración de las notificaciones por correo electrónico**:
 
-* **Name**: Enter the name here
-* The identifier for the notification, helping users recognize the purpose of the notification setting.
+* **Nombre**: Introduce aquí el nombre.
+* El identificador de la notificación, que ayuda a los usuarios a reconocer el propósito de la configuración de la notificación.
 
 <figure><img src="../../../../.gitbook/assets/image (44) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Document Type**: Select the document type you want to receive a notification for. This could be adding a new document, deleting a document, updating a document, or other relevant events.
-* Associates the notification with a specific document type, allowing for targeted alerts based on the document's processing cycle.
+* **Tipo de documento**: Selecciona el tipo de documento para el que quieres recibir una notificación. Esto podría ser añadir un nuevo documento, eliminar un documento, actualizar un documento u otros eventos relevantes.
+* Asocia la notificación con un tipo de documento específico, lo que permite enviar alertas dirigidas en función del ciclo de procesamiento del documento.
 
 <figure><img src="../../../../.gitbook/assets/image (41) (1).png" alt="" width="264"><figcaption></figcaption></figure>
 
-*   **Select email template**: Choose a preconfigured template from the dropdown menu. Templates can be created or modified in [Email Templates settings](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md).\\
+*   **Seleccionar plantilla de correo electrónico**: Elige una plantilla preconfigurada del menú desplegable. Las plantillas se pueden crear o modificar en la [configuración de plantillas de correo electrónico](../../../../advanced-functions-and-tools/sql-access/sql-access/email-template.md).\\
 
     <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-* **Status**: Specify the status or condition that should trigger a notification when it changes. This could be a specific workflow status, an approval status, an error status, or any other relevant status.
+* **Estado**: Especifica el estado o la condición que debería activar una notificación cuando cambie. Esto podría ser un estado específico del flujo de trabajo, un estado de aprobación, un estado de error o cualquier otro estado relevante.
 
 <figure><img src="../../../../.gitbook/assets/image (43) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Priority**: select the appropriate priority. For example, this could be "Low", "Medium" or "High".
-* Sets the urgency level of the notification, which can prioritize the email alert in the recipient's inbox.
+* **Prioridad**: selecciona la prioridad adecuada. Por ejemplo, podría ser "Baja", "Media" o "Alta".
+* Establece el nivel de urgencia de la notificación, lo que puede priorizar la alerta por correo electrónico en la bandeja de entrada del destinatario.
 
 <figure><img src="../../../../.gitbook/assets/image (42) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Delay**: Enter the desired amount of time to specify the delay time before sending the notification. This could be done in minutes, hours or days depending on your system settings.
-* By configuring a delay time before sending the notification, users have enough time for any cancellations or corrections before the alert is issued. This can help prevent errors and improve user experience.
+* **Retraso**: Introduce la cantidad de tiempo deseada para especificar el tiempo de retraso antes de enviar la notificación. Esto puede hacerse en minutos, horas o días, según la configuración de tu sistema.
+* Al configurar un tiempo de retraso antes de enviar la notificación, los usuarios disponen de tiempo suficiente para realizar cancelaciones o correcciones antes de que se emita la alerta. Esto puede ayudar a prevenir errores y mejorar la experiencia del usuario.
 
 <figure><img src="../../../../.gitbook/assets/image (45) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Repeat Option:** You can also enable a setting to **repeat the notification** at regular intervals **until the document status changes**. This ensures that important notifications are not missed and remain visible until the required action is taken.
+* **Opción de repetición:** También puedes habilitar una opción para **repetir la notificación** a intervalos regulares **hasta que cambie el estado del documento**. Esto garantiza que las notificaciones importantes no pasen desapercibidas y permanezcan visibles hasta que se realice la acción requerida.
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Email Address**: Enter the email addresses of the recipients to whom the notification should be sent. Users can enter multiple email addresses to specify multiple recipients. This could mean that notifications are sent to specific email addresses based on the properties of the document in question or the user's role.
+* **Dirección de correo electrónico**: Introduce las direcciones de correo electrónico de los destinatarios a los que se debe enviar la notificación. Los usuarios pueden introducir varias direcciones de correo electrónico para especificar varios destinatarios. Esto podría significar que las notificaciones se envían a direcciones de correo electrónico específicas en función de las propiedades del documento en cuestión o del rol del usuario.
 
 <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**Actionable Insights**:
+**Información práctica**:
 
-* **Send Email to Assigned User/Group**: An optional setting that, when enabled, automatically sends notifications to the user assigned to the document, ensuring that the responsible party is always informed.
+* **Enviar correo electrónico al usuario o grupo asignado**: Una opción opcional que, cuando está habilitada, envía automáticamente notificaciones al usuario asignado al documento, lo que garantiza que la parte responsable esté siempre informada.
 
 <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Save:** After entering all the required information, click "Save" button to save the notification settings.
+* **Guardar:** Después de introducir toda la información requerida, haz clic en el botón "Guardar" para guardar la configuración de la notificación.

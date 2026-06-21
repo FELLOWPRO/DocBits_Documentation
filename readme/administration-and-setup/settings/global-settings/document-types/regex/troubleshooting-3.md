@@ -1,9 +1,7 @@
-# Troubleshooting
+# Solución de problemas
 
-(Contenido en inglés abajo - Traducción pendiente)
+## Al solucionar problemas comunes de Regex, existen algunas buenas prácticas para identificar y corregir la causa del problema:
 
-## When troubleshooting common regex problems, there are a few best practices to identify and fix the cause of the problem:
+**Utilice comprobadores de Regex en línea:**&#x20;
 
-**Use online regex testers:**&#x20;
-
-* Online regex testers are useful tools to check your regex patterns with test data and visualize the behavior of the pattern. They allow you to step through the matching process and identify potential problems...
+* Los comprobadores de Regex en línea son herramientas útiles para verificar sus patrones Regex con datos de prueba y visualizar el comportamiento del patrón. Le permiten recorrer el proceso de coincidencia paso a paso e identificar posibles problemas...

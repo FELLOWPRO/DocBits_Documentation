@@ -1,25 +1,22 @@
-# Using Actions
+# Uso de las acciones
 
-(Contenido en inglés abajo - Traducción pendiente)
+Aquí tienes una guía sobre cómo utilizar correctamente las acciones "Copiar" y "Eliminar" para una gestión eficiente de los subtipos:
 
+## **Copiar un subtipo:**  &#x20;
 
-Here is a guide on how to properly use the "Copy" and "Delete" actions for efficient subtype management:
-
-## **Copying a sub-type:**  &#x20;
-
-* Navigate to the sub-type management settings in your document management system.
-* Select the subtype you want to copy, click "Copy" and enter a new name for the copied subtype if necessary.
-* Confirm the action and the system will create a copy of the selected sub-type with all existing settings, fields, layouts and scripts.
+* Navega hasta la configuración de gestión de subtipos en tu sistema de gestión documental.
+* Selecciona el subtipo que quieres copiar, haz clic en "Copiar" e introduce un nuevo nombre para el subtipo copiado si es necesario.
+* Confirma la acción y el sistema creará una copia del subtipo seleccionado con todas las configuraciones, campos, diseños y scripts existentes.
 
 <figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
-## Deleting a sub-type:
+## Eliminar un subtipo:
 
-* Navigate to the subtype management settings and select the subtype you want to delete.
-* Click the trash can icon on the right of the action menu.
-* Confirm the deletion action by accepting a confirmation message if prompted.
-* Note that deleting a subtype can irreversibly remove all documents and data associated with it. Make sure you take all necessary security precautions and check that the subtype is no longer needed before deleting it.
+* Navega hasta la configuración de gestión de subtipos y selecciona el subtipo que quieres eliminar.
+* Haz clic en el icono de la papelera situado a la derecha del menú de acciones.
+* Confirma la acción de eliminación aceptando un mensaje de confirmación si se te solicita.
+* Ten en cuenta que eliminar un subtipo puede eliminar de forma irreversible todos los documentos y datos asociados a él. Asegúrate de tomar todas las precauciones de seguridad necesarias y comprueba que el subtipo ya no sea necesario antes de eliminarlo.
 
-Proper use of these actions allows you to streamline sub-type management. Copying allows you to leverage existing configurations for new sub-types, while deleting allows for efficient cleanup of sub-types that are no longer needed. However, it is important to be careful when deleting to avoid data loss.\
+El uso correcto de estas acciones te permite agilizar la gestión de los subtipos. Copiar te permite aprovechar configuraciones existentes para nuevos subtipos, mientras que eliminar permite una limpieza eficiente de los subtipos que ya no se necesitan. No obstante, es importante tener cuidado al eliminar para evitar la pérdida de datos.\
 \
 

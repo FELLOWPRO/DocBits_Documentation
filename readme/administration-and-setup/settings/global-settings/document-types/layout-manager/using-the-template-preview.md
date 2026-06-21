@@ -1,7 +1,5 @@
-# Using the Template Preview
+# Uso de la vista previa de la plantilla
 
-(Contenido en inglés abajo - Traducción pendiente)
+## La vista previa de la plantilla es una herramienta sumamente útil para comprobar y ajustar la configuración del diseño en tiempo real antes de realizar cambios en un documento o una plantilla.
 
-## The Template Preview is an extremely useful tool for checking and adjusting layout settings in real time before making changes to a document or template.
-
-### Here's an explanation of how you can use the Template Preview:...
+### A continuación se explica cómo puede utilizar la vista previa de la plantilla:...

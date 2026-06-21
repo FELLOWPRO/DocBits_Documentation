@@ -1,9 +1,7 @@
-# Troubleshooting
+# Solución de problemas
 
-(Contenido en inglés abajo - Traducción pendiente)
+## Aquí tienes algunos consejos para solucionar problemas habituales de scripting en DocBits: por ejemplo, sugerencias para depurar, gestionar comportamientos inesperados de los scripts y optimizar el rendimiento.
 
-## Here is some advice on troubleshooting common scripting problems in DocBits: e.g. tips for debugging, dealing with unexpected script behavior, and performance optimization.
+### Consejos de depuración:
 
-### Debugging tips:
-
-**Use debugging tools:**...
+**Utiliza herramientas de depuración:**...

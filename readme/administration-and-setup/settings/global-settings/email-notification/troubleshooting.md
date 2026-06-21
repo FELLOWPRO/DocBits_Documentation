@@ -1,38 +1,35 @@
-# Troubleshooting
+# Solución de problemas
 
-(Contenido en inglés abajo - Traducción pendiente)
+Estos son algunos consejos y pasos adicionales para solucionar problemas de notificaciones retrasadas que puede seguir para resolver los retrasos en la entrega de notificaciones:
 
+## Notificaciones retrasadas:
 
-These are some tips and additional delayed notification troubleshooting steps you can take to resolve delays in notification delivery:
-
-## Delayed notifications:
-
-* **Check network delays**:&#x20;
-* Make sure the network over which notifications are sent is not congested or disrupted. Network problems such as packet loss or delays can affect email delivery.
+* **Compruebe los retrasos de la red**:&#x20;
+* Asegúrese de que la red por la que se envían las notificaciones no esté congestionada ni interrumpida. Los problemas de red, como la pérdida de paquetes o los retrasos, pueden afectar a la entrega del correo electrónico.
 
 
 
-* **Email Queue Monitoring:**&#x20;
-* Check the email server queue to determine whether notifications are being queued and sent properly. A large number of emails in the queue may indicate problems with the email server.
+* **Supervisión de la cola de correo electrónico:**&#x20;
+* Compruebe la cola del servidor de correo electrónico para determinar si las notificaciones se están poniendo en cola y enviando correctamente. Un gran número de correos electrónicos en la cola puede indicar problemas con el servidor de correo electrónico.
 
 
 
-* **SMTP configuration verification:**
-* &#x20;Verify that the SMTP configuration is correct and that the email server is properly configured to send outgoing emails. Check the authentication settings and server address to ensure they are correct.
+* **Verificación de la configuración SMTP:**
+* &#x20;Verifique que la configuración SMTP sea correcta y que el servidor de correo electrónico esté configurado adecuadamente para enviar correos electrónicos salientes. Compruebe la configuración de autenticación y la dirección del servidor para asegurarse de que sean correctas.
 
 
 
-* **Check firewalls and security settings:**&#x20;
-* Check firewall settings and other security settings to ensure that the email server is properly configured to send outgoing email and that no ports used for email are blocked. Shipping is required.
+* **Compruebe los firewalls y la configuración de seguridad:**&#x20;
+* Compruebe la configuración del firewall y otros ajustes de seguridad para asegurarse de que el servidor de correo electrónico esté configurado correctamente para enviar correo saliente y de que no haya ningún puerto utilizado para el correo electrónico bloqueado. El envío es necesario.
 
 
 
-* **Server utilization check:**&#x20;
-* Check the utilization of the server hosting the document management system to ensure that there are no resource bottlenecks that could affect the delivery of notifications.
+* **Comprobación de la utilización del servidor:**&#x20;
+* Compruebe la utilización del servidor que aloja el sistema de gestión de documentos para asegurarse de que no haya cuellos de botella en los recursos que puedan afectar a la entrega de las notificaciones.
 
 
 
-By performing these additional checks, you can identify potential causes of delayed notifications and take appropriate action to optimize notification delivery and ensure users are informed in a timely manner.
+Al realizar estas comprobaciones adicionales, puede identificar las posibles causas de las notificaciones retrasadas y tomar las medidas oportunas para optimizar la entrega de notificaciones y garantizar que los usuarios estén informados a tiempo.
 
 \
 

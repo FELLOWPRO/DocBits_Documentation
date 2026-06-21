@@ -1,9 +1,7 @@
-# Script Activation and Management
+# Activación y gestión de scripts
 
-(Contenido en inglés abajo - Traducción pendiente)
+## Aquí tienes una guía sobre cómo activar, desactivar y gestionar los scripts existentes en DocBits para adaptarlos a tus necesidades de procesamiento actuales:
 
-## Here is a guide on how to enable, disable and manage existing scripts in DocBits to suit your current processing needs:
+**Iniciar sesión en DocBits:**
 
-**Logging into DocBits:**
-
-* Open your web browser and log into DocBits with your credentials....
+* Abre tu navegador web e inicia sesión en DocBits con tus credenciales....

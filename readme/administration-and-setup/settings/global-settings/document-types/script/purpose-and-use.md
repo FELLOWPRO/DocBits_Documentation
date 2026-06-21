@@ -1,5 +1,3 @@
-# Purpose and Use
+# Finalidad y uso
 
-(Contenido en inglés abajo - Traducción pendiente)
-
-Using scripts to automate processes is critical for businesses of all sizes and in almost every industry. Not only do these scripts enable significant increases in efficiency, but they also ensure the accuracy and consistency of data, which in turn leads to informed decisions and improved operational efficiency....
+El uso de scripts para automatizar procesos es fundamental para empresas de todos los tamaños y de prácticamente cualquier sector. Estos scripts no solo permiten aumentos significativos de la eficiencia, sino que también garantizan la exactitud y la coherencia de los datos, lo que a su vez conduce a decisiones bien fundamentadas y a una mejor eficiencia operativa....

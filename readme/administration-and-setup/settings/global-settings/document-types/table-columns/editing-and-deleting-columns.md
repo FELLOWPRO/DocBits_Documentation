@@ -1,7 +1,5 @@
-# Editing and deleting columns
+# Editar y eliminar columnas
 
-(Contenido en inglés abajo - Traducción pendiente)
-
-Editing and deleting columns in a database table are important operations that must be performed carefully to ensure data integrity and consider potential impacts on application logic and reporting.
+Editar y eliminar columnas en una tabla de base de datos son operaciones importantes que deben realizarse con cuidado para garantizar la integridad de los datos y tener en cuenta las posibles repercusiones en la lógica de la aplicación y en los informes.
 
 <figure><img src="../../../../../.gitbook/assets/image (99).png" alt="><figcaption></figcaption></figure>...

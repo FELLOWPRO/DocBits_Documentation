@@ -1,9 +1,7 @@
-# Purchase Order Matching Rules
+# Regole di abbinamento degli ordini di acquisto
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Introduzione: ordini di acquisto e gestione delle regole PO
 
-## Introduction: Purchase Orders and PO Rule Management
+L'abbinamento degli ordini di acquisto (PO) è un processo fondamentale per garantire la coerenza tra gli ordini di acquisto (PO) e le corrispondenti fatture in entrata o le ricevute di merci. Un solido insieme di regole è essenziale per ottenere un'elevata percentuale di abbinamenti automatici, prevenire le frodi e garantire pagamenti corretti.
 
-Purchase Order (PO) Matching is a critical process for ensuring consistency between Purchase Orders (POs) and corresponding incoming invoices or goods receipts. A robust set of rules is essential to achieve a high rate of automatic matching, prevent fraud, and ensure correct payments.
-
-This configuration page is used to define and manage the rules that determine _how_ PO line items are matched to the corresponding incoming document (Invoice, Order Confirmation)...
+Questa pagina di configurazione viene utilizzata per definire e gestire le regole che determinano _come_ le righe degli ordini di acquisto vengono abbinate al documento in entrata corrispondente (fattura, conferma d'ordine)...

@@ -1,7 +1,5 @@
-# Import Data: Model Training
+# Importazione dei dati: addestramento del modello
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+Fornisci istruzioni dettagliate su come importare documenti di esempio per l'addestramento, inclusi il formato e i tipi di documento da utilizzare.
 
-Provide detailed instructions on how to import sample documents for training, including the format and document types to use.
-
-**To import sample documents for training, follow these steps:**...
+**Per importare documenti di esempio per l'addestramento, segui questi passaggi:**...

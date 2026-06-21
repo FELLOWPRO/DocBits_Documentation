@@ -1,7 +1,5 @@
-# Editing and Saving Regex Patterns
+# Modifica e salvataggio dei pattern regex
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Guida alla modifica dei pattern esistenti e all'importanza di testare tali modifiche per garantire che funzionino come previsto senza compromettere le funzionalità esistenti.
 
-## Guide to modifying existing patterns and the importance of testing those changes to ensure they work as expected without breaking existing functionality.
-
-**To edit existing regex patterns and ensure the changes work as expected without breaking existing functionality, you can follow the guide below:**...
+**Per modificare i pattern regex esistenti e assicurarti che le modifiche funzionino come previsto senza compromettere le funzionalità esistenti, puoi seguire la guida qui sotto:**...

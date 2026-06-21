@@ -1,9 +1,7 @@
-# Troubleshooting
+# Risoluzione dei problemi
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Quando si risolvono i problemi comuni relativi alle regex, esistono alcune best practice per individuare e correggere la causa del problema:
 
-## When troubleshooting common regex problems, there are a few best practices to identify and fix the cause of the problem:
+**Utilizza tester regex online:**&#x20;
 
-**Use online regex testers:**&#x20;
-
-* Online regex testers are useful tools to check your regex patterns with test data and visualize the behavior of the pattern. They allow you to step through the matching process and identify potential problems...
+* I tester regex online sono strumenti utili per verificare i tuoi pattern regex con dati di prova e visualizzare il comportamento del pattern. Ti permettono di esaminare passo dopo passo il processo di corrispondenza e di individuare potenziali problemi...

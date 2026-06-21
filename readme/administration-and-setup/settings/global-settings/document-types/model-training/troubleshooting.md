@@ -1,7 +1,5 @@
-# Troubleshooting
+# Risoluzione dei problemi
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Fornire soluzioni ai problemi tipici che possono verificarsi durante l'addestramento del modello, come errori nel formato dei dati, problemi di convergenza nell'addestramento del modello o un imprevisto peggioramento delle prestazioni del modello.
 
-## Provide solutions to typical problems that can arise during model training, such as data format errors, training model convergence issues, or unexpected model performance degradation.
-
-**Here are solutions to some typical problems that can arise during model training:**...
+**Ecco le soluzioni ad alcuni problemi tipici che possono verificarsi durante l'addestramento del modello:**...

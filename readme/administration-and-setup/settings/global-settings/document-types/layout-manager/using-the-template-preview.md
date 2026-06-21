@@ -1,7 +1,5 @@
-# Using the Template Preview
+# Utilizzo dell'anteprima del modello
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## L'anteprima del modello è uno strumento estremamente utile per controllare e regolare le impostazioni di layout in tempo reale prima di apportare modifiche a un documento o a un modello.
 
-## The Template Preview is an extremely useful tool for checking and adjusting layout settings in real time before making changes to a document or template.
-
-### Here's an explanation of how you can use the Template Preview:...
+### Ecco una spiegazione di come puoi utilizzare l'anteprima del modello:...

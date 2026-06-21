@@ -1,7 +1,5 @@
-# Purpose and Scope
+# Scopo e ambito
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Lo scopo e l'ambito della corretta configurazione dei tipi di documento in DocBits sono fondamentali per garantire l'accuratezza e l'efficienza dell'elaborazione dei documenti.&#x20;
 
-## The purpose and scope of correctly setting up document types in DocBits is critical to ensure the accuracy and efficiency of document processing.&#x20;
-
-### Here are some key points that explain the importance of this process:...
+### Ecco alcuni punti chiave che spiegano l'importanza di questo processo:...

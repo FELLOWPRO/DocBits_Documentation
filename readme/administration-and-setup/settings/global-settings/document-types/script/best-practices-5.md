@@ -1,9 +1,7 @@
-# Best Practices
+# Best Practice
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Ecco alcune best practice per lo sviluppo di script in DocBits, come mantenere gli script modulari, gestire correttamente gli errori e documentare lo scopo e la funzione di ogni script.
 
-## Here are some best practices for script development in DocBits, such as keeping scripts modular, handling errors properly, and documenting the purpose and function of each script.
+### Sviluppo modulare:
 
-### Modular Development:
-
-* Keep your scripts modular and well-structured.&#x20;...
+* Mantieni i tuoi script modulari e ben strutturati.&#x20;...

@@ -1,7 +1,5 @@
-# Best practices
+# Buone pratiche
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Buone pratiche per l'addestramento continuo del modello, come la frequenza di addestramento, la selezione dei documenti di esempio e il monitoraggio delle metriche di performance del modello.
 
-## Best practices for continuous model training, such as training frequency, selecting sample documents, and monitoring model performance metrics.
-
-**Here are some best practices for continuous model training:**...
+**Ecco alcune buone pratiche per l'addestramento continuo del modello:**...

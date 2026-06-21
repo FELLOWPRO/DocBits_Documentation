@@ -1,9 +1,7 @@
-# Manage training data
+# Gestione dei dati di addestramento
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
-
-## Manage existing training data, including adding, editing, or removing records.
+## Gestisci i dati di addestramento esistenti, inclusa l'aggiunta, la modifica o la rimozione dei record.
 
 
 
-**To effectively manage training data, you can take the following steps:**&#x20;...
+**Per gestire efficacemente i dati di addestramento, puoi eseguire i seguenti passaggi:**&#x20;...

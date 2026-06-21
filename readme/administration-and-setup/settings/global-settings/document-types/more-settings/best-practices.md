@@ -1,10 +1,8 @@
-# Best practices
+# Best practice
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Ecco alcune raccomandazioni comprovate per utilizzare le impostazioni in modo efficace al fine di ottimizzare l'elaborazione dei documenti, migliorare l'accuratezza dei dati e garantire la conformità.
 
-## Here are some proven recommendations for using settings effectively to optimize document processing, improve data accuracy, and ensure compliance.
+### Standardizzare i modelli e le impostazioni della lingua:
 
-### Standardize templates and language settings:
-
-* Create clear guidelines for using formatting templates and language settings to ensure all documents are consistent.
-* Regularly train employees on the correct use of templates and language settings....
+* Crea linee guida chiare per l'utilizzo dei modelli di formattazione e delle impostazioni della lingua, in modo da garantire che tutti i documenti siano coerenti.
+* Forma regolarmente i dipendenti sull'uso corretto dei modelli e delle impostazioni della lingua....

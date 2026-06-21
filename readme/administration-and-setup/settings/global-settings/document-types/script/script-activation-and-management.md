@@ -1,62 +1,59 @@
-# Script Activation and Management
+# Attivazione e gestione degli script
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+## Ecco una guida su come attivare, disattivare e gestire gli script esistenti in DocBits per adattarli alle tue attuali esigenze di elaborazione:
 
+**Accesso a DocBits:**
 
-## Here is a guide on how to enable, disable and manage existing scripts in DocBits to suit your current processing needs:
-
-**Logging into DocBits:**
-
-* Open your web browser and log into DocBits with your credentials.
+* Apri il tuo browser web e accedi a DocBits con le tue credenziali.
 
 <figure><img src="../../../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
-**Navigate to Script Management:**
+**Vai alla gestione degli script:**
 
-* Look for the option to manage scripts in the DocBits interface.
-* This may vary depending on your setup and configuration of DocBits.
+* Cerca l'opzione per gestire gli script nell'interfaccia di DocBits.
+* Questo può variare a seconda della tua installazione e configurazione di DocBits.
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 16.06.10.png" alt=""><figcaption></figcaption></figure>
 
-**Viewing existing scripts:**
+**Visualizzazione degli script esistenti:**
 
-* Once you are in the script management interface, you will see a list of all existing scripts.
-* Here you can scroll through the list to find the desired script you want to enable, disable or edit.
+* Una volta entrato nell'interfaccia di gestione degli script, vedrai un elenco di tutti gli script esistenti.
+* Qui puoi scorrere l'elenco per trovare lo script desiderato che vuoi attivare, disattivare o modificare.
 
 <figure><img src="../../../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
-**Enabling or disabling a script:**
+**Attivazione o disattivazione di uno script:**
 
-* To enable or disable a script, find the relevant script in the list and enable or disable the script.
-* Make sure to save changes after making your selections.
+* Per attivare o disattivare uno script, individua lo script pertinente nell'elenco e attivalo o disattivalo.
+* Assicurati di salvare le modifiche dopo aver effettuato le tue selezioni.
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 16.16.36.png" alt=""><figcaption></figcaption></figure>
 
-**Editing a script:**
+**Modifica di uno script:**
 
-* If you need to edit an existing script, look for the button in the script management interface that allows editing the script.
+* Se hai bisogno di modificare uno script esistente, cerca il pulsante nell'interfaccia di gestione degli script che consente di modificare lo script.
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 16.23.19.png" alt="" width="123"><figcaption></figcaption></figure>
 
-* Click it to open the editor where you can modify the script's code.
-* After making your changes, save the script again.
+* Fai clic su di esso per aprire l'editor in cui puoi modificare il codice dello script.
+* Dopo aver apportato le modifiche, salva nuovamente lo script.
 
 <figure><img src="../../../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
-**Review and test:**
+**Revisione e test:**
 
-* Before making changes to a script, carefully review the existing code and consider what impact your changes might have.
-* Test the script in a test environment to make sure it works as expected.
+* Prima di apportare modifiche a uno script, esamina attentamente il codice esistente e considera quale impatto potrebbero avere le tue modifiche.
+* Testa lo script in un ambiente di prova per assicurarti che funzioni come previsto.
 
 <figure><img src="../../../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
-**Documentation:**
+**Documentazione:**
 
-* Don't forget to document your changes.
-* Write down what changes you made and why so that other users on the team can understand how the script works and what impact your changes might have.
+* Non dimenticare di documentare le tue modifiche.
+* Annota quali modifiche hai apportato e perché, in modo che gli altri utenti del team possano capire come funziona lo script e quale impatto potrebbero avere le tue modifiche.
 
-**Publishing changes:**
+**Pubblicazione delle modifiche:**
 
-* When you are satisfied with your changes, republish the script to the DocBits production environment for the updated version to take effect.
+* Quando sei soddisfatto delle tue modifiche, ripubblica lo script nell'ambiente di produzione di DocBits affinché la versione aggiornata abbia effetto.
 
-These steps allow you to enable, disable and manage existing scripts in DocBits to adapt them to current processing needs and ensure that your documentation processes run efficiently and correctly.
+Questi passaggi ti consentono di attivare, disattivare e gestire gli script esistenti in DocBits per adattarli alle attuali esigenze di elaborazione e garantire che i tuoi processi di documentazione si svolgano in modo efficiente e corretto.

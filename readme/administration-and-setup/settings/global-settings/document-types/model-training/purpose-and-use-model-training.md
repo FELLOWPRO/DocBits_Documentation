@@ -1,7 +1,5 @@
-# Purpose and Use: Model Training
+# Scopo e utilizzo: addestramento del modello
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
+L'addestramento regolare del modello è fondamentale per garantire che un sistema di elaborazione dei documenti continui a funzionare in modo efficace e accurato man mano che i formati e i contenuti dei documenti cambiano.&#x20;
 
-Regular model training is critical to ensure that a document processing system continues to work effectively and accurately as document formats and content change.&#x20;
-
-**Here are some key reasons for regular model training:**&#x20;...
+**Ecco alcuni motivi chiave per cui è importante un addestramento regolare del modello:**&#x20;...

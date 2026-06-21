@@ -1,12 +1,10 @@
-# Creating a Regex Pattern
+# Creazione di un pattern regex
 
-(Contenuto inglese qui sotto - Traduzione in sospeso)
-
-## To create a new Regex pattern that correctly matches the desired data, follow these steps:
+## Per creare un nuovo pattern regex che corrisponda correttamente ai dati desiderati, segui questi passaggi:
 
 
 
-**Define the goal:**
+**Definisci l'obiettivo:**
 
-* First, clarify what type of data you want to extract and in what context it occurs.&#x20;
-* Understand the structure and format of the data you want to capture...
+* Innanzitutto, chiarisci quale tipo di dati vuoi estrarre e in quale contesto si presenta.&#x20;
+* Comprendi la struttura e il formato dei dati che vuoi acquisire...

@@ -2,6 +2,10 @@
 
 De **Advanced Workflow** builder is een node-grafiek-editor voor workflows die vertakkingen, parallelle paden en flow-besturing nodig hebben — verder dan de lineaire When/And/Then van de Standard builder. U plaatst nodes op een canvas en verbindt ze om de uitvoeringsstroom te definiëren.
 
+{% embed url="https://youtu.be/EeNFVR6z7G8" %}
+Advanced Workflow Designer
+{% endembed %}
+
 ## Toegang krijgen
 
 Open de Advanced Workflow-ontwerper vanuit het workflow-gedeelte (het canvas van de advanced builder). U begint bij een **Start**-node en bouwt de flow uit door nodes toe te voegen.

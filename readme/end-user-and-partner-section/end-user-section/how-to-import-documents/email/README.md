@@ -3,20 +3,29 @@ hidden: true
 noIndex: true
 ---
 
-# Email
+# E-mail
 
-Przejdź do menu Ustawienia i wybierz „Importuj” w sekcji Przetwarzanie dokumentów.
+DocBits może importować dokumenty z poczty e-mail na dwa sposoby. Oba konfiguruje się w **Ustawienia → Import** (Przetwarzanie dokumentów).
 
-<figure><img src="../../../../.gitbook/assets/email1.png" alt=""><figcaption></figcaption></figure>
+## Metoda 1 — Import e-mail (podłączenie skrzynki)
 
-Przewiń na dół strony i wybierz przycisk NOWY, aby utworzyć nowy import e-maili.
+Podłącz konto e-mail, a DocBits automatycznie zaimportuje dokumenty w momencie nadejścia nowych wiadomości. Na stronie Import otwórz sekcję **Import e-mail** i kliknij **+ Nowy**.
 
-<figure><img src="../../../../.gitbook/assets/email2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="Sekcja Import e-mail"><figcaption>Import e-mail — podłącz skrzynkę do automatycznego importu dokumentów</figcaption></figure>
 
-Po naciśnięciu NOWY zostanie wyświetlone następujące menu.
+Następnie wybierz protokół swojej skrzynki:
 
-<figure><img src="../../../../.gitbook/assets/email3.png" alt=""><figcaption></figcaption></figure>
+* **IMAP** — zobacz [IMAP](imap.md)
+* **OAuth (Office 365)** — zobacz [OAuth Office365](oauth-office365.md)
 
-Tutaj możesz wybrać, który protokół chcesz użyć.
+## Metoda 2 — Wiadomości przychodzące (przekazywanie do DocBits)
 
-<figure><img src="../../../../.gitbook/assets/email4.png" alt="" width="207"><figcaption></figcaption></figure>
+Przekaż — lub wyślij bezpośrednio — wiadomości na unikalny adres przychodzący Twojej organizacji, a DocBits automatycznie zaimportuje załączniki. Podłączenie skrzynki nie jest wymagane. Otwórz sekcję **Wiadomości przychodzące** na stronie Import.
+
+<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="Sekcja Wiadomości przychodzące"><figcaption>Wiadomości przychodzące — przekazuj dokumenty na swój adres DocBits</figcaption></figure>
+
+* **Info / E-mail** — unikalny adres przychodzący Twojej organizacji (format `<org-id>@inbound.docbits.com`). Przekazuj dokumenty na ten adres; użyj ikony kopiowania, aby go skopiować.
+* **Importuj dokumenty tylko z predefiniowanych adresów e-mail** — gdy włączone, importowane są tylko wiadomości od nadawców dodanych do białej listy; wiadomości od innych nadawców są ignorowane.
+* **Odpowiedz na tę wiadomość, jeśli import nie jest możliwy** — wysyła nadawcy automatyczną odpowiedź, gdy import się nie powiedzie.
+* **Powiadom nadawcę, gdy import się nie powiedzie** — informuje nadawcę, jeśli jego wiadomości nie udało się zaimportować.
+* **Dzienniki** — otwiera dziennik przetwarzania wiadomości przychodzących. Kliknij **Zapisz**, aby zastosować zmiany.

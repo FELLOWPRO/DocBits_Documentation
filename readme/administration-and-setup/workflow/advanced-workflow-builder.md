@@ -2,6 +2,10 @@
 
 Kreator **Advanced Workflow** to edytor grafu węzłów dla przepływów pracy, które wymagają rozgałęzień, równoległych ścieżek i kontroli przepływu — wykraczających poza liniowy model When/And/Then z kreatora Standard. Układasz węzły na obszarze roboczym i łączysz je, aby zdefiniować przebieg wykonywania.
 
+{% embed url="https://youtu.be/EeNFVR6z7G8" %}
+Advanced Workflow Designer
+{% endembed %}
+
 ## Jak uzyskać dostęp
 
 Otwórz projektant Advanced Workflow z obszaru przepływów pracy (obszar roboczy kreatora zaawansowanego). Rozpoczynasz od węzła **Start** i budujesz przepływ, dodając węzły.

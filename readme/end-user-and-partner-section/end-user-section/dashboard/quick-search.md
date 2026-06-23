@@ -278,6 +278,128 @@ Formas más cortas para las mismas consultas:
 | `@User` | `assigned_to:User` |
 | `$5000+` | `total_amount>=5000` |
 
+### Galería de consulta + resultado para atajos
+
+Estos ejemplos muestran cada patrón de atajo con la consulta que escribes y el resultado que muestra el panel. El primer grupo usa campos estándar y funciona aunque la búsqueda de texto completo no esté activada. El segundo grupo usa campos solo de texto completo, como importe o fecha de vencimiento.
+
+#### Funciona sin texto completo
+
+##### Alias de operadores
+
+- Consulta: `created_on gt 2026-05-25`
+- Equivale a: `created_on>2026-05-25`
+- Resultado: Filtra por Created después del 25 de mayo de 2026.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Resultado de Quick Search para created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtra por Created después del 25 de mayo de 2026.</p></figcaption></figure>
+
+##### Palabras de fecha sin paréntesis
+
+- Consulta: `created_on < today`
+- Equivale a: `created_on<today()`
+- Resultado: Expande la palabra today a today().
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Resultado de Quick Search para created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Expande la palabra today a today().</p></figcaption></figure>
+
+##### Periodo relativo
+
+- Consulta: `created_on this_month`
+- Equivale a: `created_on>=first day of this month AND created_on<=last day of this month`
+- Resultado: Expande this_month a un rango de fechas.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Resultado de Quick Search para created_on this_month"><figcaption><p><code>created_on this_month</code> - Expande this_month a un rango de fechas.</p></figcaption></figure>
+
+##### Palabras vacío/establecido
+
+- Consulta: `assigned_to is empty`
+- Equivale a: `assigned_to=""`
+- Resultado: Encuentra documentos sin asignado.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Resultado de Quick Search para assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Encuentra documentos sin asignado.</p></figcaption></figure>
+
+##### Estado legible
+
+- Consulta: `status:open`
+- Equivale a: `status=ready_for_validation`
+- Resultado: Mapea open al estado de validación.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Resultado de Quick Search para status:open"><figcaption><p><code>status:open</code> - Mapea open al estado de validación.</p></figcaption></figure>
+
+##### No entre
+
+- Consulta: `created_on not between 2026-06-01, 2026-06-15`
+- Equivale a: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+- Resultado: Encuentra valores fuera de una ventana de fechas.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Resultado de Quick Search para created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Encuentra valores fuera de una ventana de fechas.</p></figcaption></figure>
+
+##### Lista in
+
+- Consulta: `status in (ready_for_validation, exported)`
+- Equivale a: `status=ready_for_validation OR status=exported`
+- Resultado: Coincide con cualquiera de los estados listados.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Resultado de Quick Search para status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Coincide con cualquiera de los estados listados.</p></figcaption></figure>
+
+##### Prefijo de negación
+
+- Consulta: `not status=finished`
+- Equivale a: `status!=finished`
+- Resultado: Invierte el predicado de estado finished.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Resultado de Quick Search para not status=finished"><figcaption><p><code>not status=finished</code> - Invierte el predicado de estado finished.</p></figcaption></figure>
+
+##### Texto contiene
+
+- Consulta: `filename contains E2E`
+- Equivale a: `filename:E2E`
+- Resultado: Usa contains como búsqueda de subcadena en el nombre de archivo.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Resultado de Quick Search para filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Usa contains como búsqueda de subcadena en el nombre de archivo.</p></figcaption></figure>
+
+##### Prefijo de factura
+
+- Consulta: `#INV-1234`
+- Equivale a: `invoice_id:INV-1234`
+- Resultado: Mapea #... a una búsqueda por ID de factura.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Resultado de Quick Search para #INV-1234"><figcaption><p><code>#INV-1234</code> - Mapea #... a una búsqueda por ID de factura.</p></figcaption></figure>
+
+##### Prefijo de asignado
+
+- Consulta: `@Daniel`
+- Equivale a: `assigned_to:"Daniel"`
+- Resultado: Mapea @... a una búsqueda por nombre de asignado.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Resultado de Quick Search para @Daniel"><figcaption><p><code>@Daniel</code> - Mapea @... a una búsqueda por nombre de asignado.</p></figcaption></figure>
+
+#### Requiere búsqueda de texto completo
+
+Si usas el mismo atajo con un campo solo de texto completo, la consulta también requiere texto completo. Por ejemplo, `ap_assignment_code is empty` usa el mismo atajo de vacío/establecido que `assigned_to is empty`, pero el campo AP es de texto completo.
+
+##### Sufijo de importe
+
+- Consulta: `total_amount > 5k`
+- Equivale a: `total_amount>5000`
+- Resultado: Expande k a miles en un campo de importe.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Resultado de Quick Search para total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Expande k a miles en un campo de importe.</p></figcaption></figure>
+
+##### Atajo de vencidas
+
+- Consulta: `overdue`
+- Equivale a: `invoice_due_date<today() AND status!=finished`
+- Resultado: Encuentra facturas no terminadas después de su vencimiento.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Resultado de Quick Search para overdue"><figcaption><p><code>overdue</code> - Encuentra facturas no terminadas después de su vencimiento.</p></figcaption></figure>
+
+##### Prefijo de importe
+
+- Consulta: `$5000+`
+- Equivale a: `total_amount>=5000`
+- Resultado: Mapea $...+ a un umbral de importe.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Resultado de Quick Search para $5000+"><figcaption><p><code>$5000+</code> - Mapea $...+ a un umbral de importe.</p></figcaption></figure>
+
 ---
 
 ## Parte 4 — Modos de búsqueda avanzados

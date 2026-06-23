@@ -19,3 +19,7 @@ Accédez à **Paramètres → Types de document → Facture → Paramètres avan
 * **Notifier le fournisseur en cas de rejet** — apparaît une fois la validation activée. Lorsqu'il est **activé**, une facture rejetée déclenche un e-mail au fournisseur répertoriant les champs manquants ou incorrects afin qu'il puisse la réémettre. Qui reçoit et traite chaque résultat se configure sur la page [Routage des notifications](notification-routing.md).
 
 > La validation des factures électroniques se configure **par type de document**. Elle s'applique aujourd'hui au type de document **Facture** ; activez-la sur chaque type de document à valider.
+
+Vous pouvez aussi accéder directement ici avec la **recherche rapide globale** : appuyez sur <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> sous Windows et Linux) n'importe où dans DocBits et saisissez *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La recherche rapide globale ouvre la Validation des factures électroniques"><figcaption><p>Saisissez « e-invoice » dans la recherche rapide pour accéder directement à l'interrupteur.</p></figcaption></figure>

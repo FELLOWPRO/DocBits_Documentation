@@ -271,6 +271,128 @@ Krótsze formy tych samych zapytań:
 | `@User` | `assigned_to:User` |
 | `$5000+` | `total_amount>=5000` |
 
+### Galeria zapytanie + wynik dla skrótów
+
+Te przykłady pokazują każdy wzorzec skrótu razem z wpisanym zapytaniem i wynikiem w panelu. Pierwsza grupa używa pól standardowych i działa nawet bez włączonego wyszukiwania pełnotekstowego. Druga grupa używa pól dostępnych tylko z pełnym tekstem, takich jak kwota lub termin płatności.
+
+#### Działa bez pełnego tekstu
+
+##### Aliasy operatorów
+
+- Zapytanie: `created_on gt 2026-05-25`
+- Odpowiada: `created_on>2026-05-25`
+- Wynik: Filtruje Created po 25 maja 2026.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Wynik Quick Search dla created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtruje Created po 25 maja 2026.</p></figcaption></figure>
+
+##### Słowa daty bez nawiasów
+
+- Zapytanie: `created_on < today`
+- Odpowiada: `created_on<today()`
+- Wynik: Rozwija słowo today do today().
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Wynik Quick Search dla created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Rozwija słowo today do today().</p></figcaption></figure>
+
+##### Okres względny
+
+- Zapytanie: `created_on this_month`
+- Odpowiada: `created_on>=first day of this month AND created_on<=last day of this month`
+- Wynik: Rozwija this_month do zakresu dat.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Wynik Quick Search dla created_on this_month"><figcaption><p><code>created_on this_month</code> - Rozwija this_month do zakresu dat.</p></figcaption></figure>
+
+##### Słowa puste/ustawione
+
+- Zapytanie: `assigned_to is empty`
+- Odpowiada: `assigned_to=""`
+- Wynik: Znajduje dokumenty bez przypisanej osoby.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Wynik Quick Search dla assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Znajduje dokumenty bez przypisanej osoby.</p></figcaption></figure>
+
+##### Przyjazny status
+
+- Zapytanie: `status:open`
+- Odpowiada: `status=ready_for_validation`
+- Wynik: Mapuje open na status walidacji.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Wynik Quick Search dla status:open"><figcaption><p><code>status:open</code> - Mapuje open na status walidacji.</p></figcaption></figure>
+
+##### Nie pomiędzy
+
+- Zapytanie: `created_on not between 2026-06-01, 2026-06-15`
+- Odpowiada: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+- Wynik: Znajduje wartości poza oknem dat.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Wynik Quick Search dla created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Znajduje wartości poza oknem dat.</p></figcaption></figure>
+
+##### Lista in
+
+- Zapytanie: `status in (ready_for_validation, exported)`
+- Odpowiada: `status=ready_for_validation OR status=exported`
+- Wynik: Dopasowuje dowolny z podanych statusów.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Wynik Quick Search dla status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Dopasowuje dowolny z podanych statusów.</p></figcaption></figure>
+
+##### Prefiks negacji
+
+- Zapytanie: `not status=finished`
+- Odpowiada: `status!=finished`
+- Wynik: Odwraca predykat statusu finished.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Wynik Quick Search dla not status=finished"><figcaption><p><code>not status=finished</code> - Odwraca predykat statusu finished.</p></figcaption></figure>
+
+##### Tekst zawiera
+
+- Zapytanie: `filename contains E2E`
+- Odpowiada: `filename:E2E`
+- Wynik: Używa contains jako wyszukiwania fragmentu nazwy pliku.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Wynik Quick Search dla filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Używa contains jako wyszukiwania fragmentu nazwy pliku.</p></figcaption></figure>
+
+##### Prefiks faktury
+
+- Zapytanie: `#INV-1234`
+- Odpowiada: `invoice_id:INV-1234`
+- Wynik: Mapuje #... na wyszukiwanie ID faktury.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Wynik Quick Search dla #INV-1234"><figcaption><p><code>#INV-1234</code> - Mapuje #... na wyszukiwanie ID faktury.</p></figcaption></figure>
+
+##### Prefiks przypisania
+
+- Zapytanie: `@Daniel`
+- Odpowiada: `assigned_to:"Daniel"`
+- Wynik: Mapuje @... na wyszukiwanie nazwy przypisanej osoby.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Wynik Quick Search dla @Daniel"><figcaption><p><code>@Daniel</code> - Mapuje @... na wyszukiwanie nazwy przypisanej osoby.</p></figcaption></figure>
+
+#### Wymaga wyszukiwania pełnotekstowego
+
+Jeśli użyjesz tego samego skrótu z polem tylko pełnotekstowym, zapytanie nadal wymaga pełnego tekstu. Na przykład `ap_assignment_code is empty` używa tego samego skrótu pusty/ustawiony co `assigned_to is empty`, ale pole AP jest pełnotekstowe.
+
+##### Sufiks kwoty
+
+- Zapytanie: `total_amount > 5k`
+- Odpowiada: `total_amount>5000`
+- Wynik: Rozwija k do tysięcy w polu kwoty.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Wynik Quick Search dla total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Rozwija k do tysięcy w polu kwoty.</p></figcaption></figure>
+
+##### Skrót zaległe
+
+- Zapytanie: `overdue`
+- Odpowiada: `invoice_due_date<today() AND status!=finished`
+- Wynik: Znajduje niezakończone faktury po terminie.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Wynik Quick Search dla overdue"><figcaption><p><code>overdue</code> - Znajduje niezakończone faktury po terminie.</p></figcaption></figure>
+
+##### Prefiks kwoty
+
+- Zapytanie: `$5000+`
+- Odpowiada: `total_amount>=5000`
+- Wynik: Mapuje $...+ na próg kwoty.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Wynik Quick Search dla $5000+"><figcaption><p><code>$5000+</code> - Mapuje $...+ na próg kwoty.</p></figcaption></figure>
+
 ---
 
 ## Część 4 — Zaawansowane tryby wyszukiwania

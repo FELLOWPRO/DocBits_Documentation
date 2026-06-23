@@ -271,6 +271,128 @@ Forme più brevi per le stesse query:
 | `@User` | `assigned_to:User` |
 | `$5000+` | `total_amount>=5000` |
 
+### Galleria query + risultato per le scorciatoie
+
+Questi esempi mostrano ogni modello di scorciatoia con la query digitata e il risultato visualizzato nella dashboard. Il primo gruppo usa campi standard e funziona anche senza ricerca full-text attiva. Il secondo gruppo usa campi solo full-text, come importo o data di scadenza.
+
+#### Funziona senza full-text
+
+##### Alias degli operatori
+
+- Query: `created_on gt 2026-05-25`
+- Equivale a: `created_on>2026-05-25`
+- Risultato: Filtra per Created dopo il 25 maggio 2026.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Risultato Quick Search per created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtra per Created dopo il 25 maggio 2026.</p></figcaption></figure>
+
+##### Parole data senza parentesi
+
+- Query: `created_on < today`
+- Equivale a: `created_on<today()`
+- Risultato: Espande la parola today in today().
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Risultato Quick Search per created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Espande la parola today in today().</p></figcaption></figure>
+
+##### Periodo relativo
+
+- Query: `created_on this_month`
+- Equivale a: `created_on>=first day of this month AND created_on<=last day of this month`
+- Risultato: Espande this_month in un intervallo di date.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Risultato Quick Search per created_on this_month"><figcaption><p><code>created_on this_month</code> - Espande this_month in un intervallo di date.</p></figcaption></figure>
+
+##### Parole vuoto/impostato
+
+- Query: `assigned_to is empty`
+- Equivale a: `assigned_to=""`
+- Risultato: Trova documenti senza assegnatario.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Risultato Quick Search per assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Trova documenti senza assegnatario.</p></figcaption></figure>
+
+##### Stato leggibile
+
+- Query: `status:open`
+- Equivale a: `status=ready_for_validation`
+- Risultato: Mappa open allo stato di validazione.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Risultato Quick Search per status:open"><figcaption><p><code>status:open</code> - Mappa open allo stato di validazione.</p></figcaption></figure>
+
+##### Non compreso tra
+
+- Query: `created_on not between 2026-06-01, 2026-06-15`
+- Equivale a: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+- Risultato: Trova valori fuori da una finestra di date.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Risultato Quick Search per created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Trova valori fuori da una finestra di date.</p></figcaption></figure>
+
+##### Lista in
+
+- Query: `status in (ready_for_validation, exported)`
+- Equivale a: `status=ready_for_validation OR status=exported`
+- Risultato: Corrisponde a uno qualsiasi degli stati elencati.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Risultato Quick Search per status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Corrisponde a uno qualsiasi degli stati elencati.</p></figcaption></figure>
+
+##### Prefisso di negazione
+
+- Query: `not status=finished`
+- Equivale a: `status!=finished`
+- Risultato: Inverte il predicato dello stato finished.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Risultato Quick Search per not status=finished"><figcaption><p><code>not status=finished</code> - Inverte il predicato dello stato finished.</p></figcaption></figure>
+
+##### Testo contiene
+
+- Query: `filename contains E2E`
+- Equivale a: `filename:E2E`
+- Risultato: Usa contains come ricerca di sottostringa nel nome file.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Risultato Quick Search per filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Usa contains come ricerca di sottostringa nel nome file.</p></figcaption></figure>
+
+##### Prefisso fattura
+
+- Query: `#INV-1234`
+- Equivale a: `invoice_id:INV-1234`
+- Risultato: Mappa #... a una ricerca per ID fattura.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Risultato Quick Search per #INV-1234"><figcaption><p><code>#INV-1234</code> - Mappa #... a una ricerca per ID fattura.</p></figcaption></figure>
+
+##### Prefisso assegnatario
+
+- Query: `@Daniel`
+- Equivale a: `assigned_to:"Daniel"`
+- Risultato: Mappa @... a una ricerca per nome assegnatario.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Risultato Quick Search per @Daniel"><figcaption><p><code>@Daniel</code> - Mappa @... a una ricerca per nome assegnatario.</p></figcaption></figure>
+
+#### Richiede la ricerca full-text
+
+Se usi la stessa scorciatoia con un campo solo full-text, la query richiede comunque il full-text. Ad esempio, `ap_assignment_code is empty` usa la stessa scorciatoia vuoto/impostato di `assigned_to is empty`, ma il campo AP è full-text.
+
+##### Suffisso importo
+
+- Query: `total_amount > 5k`
+- Equivale a: `total_amount>5000`
+- Risultato: Espande k in migliaia su un campo importo.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Risultato Quick Search per total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Espande k in migliaia su un campo importo.</p></figcaption></figure>
+
+##### Scorciatoia scadute
+
+- Query: `overdue`
+- Equivale a: `invoice_due_date<today() AND status!=finished`
+- Risultato: Trova fatture non completate oltre la scadenza.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Risultato Quick Search per overdue"><figcaption><p><code>overdue</code> - Trova fatture non completate oltre la scadenza.</p></figcaption></figure>
+
+##### Prefisso importo
+
+- Query: `$5000+`
+- Equivale a: `total_amount>=5000`
+- Risultato: Mappa $...+ a una soglia di importo.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Risultato Quick Search per $5000+"><figcaption><p><code>$5000+</code> - Mappa $...+ a una soglia di importo.</p></figcaption></figure>
+
 ---
 
 ## Parte 4 — Modalità di ricerca avanzate

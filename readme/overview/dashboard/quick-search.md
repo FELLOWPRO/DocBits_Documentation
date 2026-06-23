@@ -269,6 +269,128 @@ Aynı sorgular için daha kısa biçimler:
 | `@User` | `assigned_to:User` |
 | `$5000+` | `total_amount>=5000` |
 
+### Kısayollar için sorgu + sonuç galerisi
+
+Bu örnekler her kısayol desenini yazdığınız sorgu ve panelde görünen sonuçla birlikte gösterir. İlk grup standart alanları kullanır ve tam metin araması açık olmasa da çalışır. İkinci grup tutar veya fatura vadesi gibi yalnızca tam metin alanlarını kullanır.
+
+#### Tam metin olmadan çalışır
+
+##### Operatör takma adları
+
+- Sorgu: `created_on gt 2026-05-25`
+- Eşdeğeri: `created_on>2026-05-25`
+- Sonuç: Created alanını 25 Mayıs 2026 sonrasına göre filtreler.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Şu sorgu için Quick Search sonucu created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Created alanını 25 Mayıs 2026 sonrasına göre filtreler.</p></figcaption></figure>
+
+##### Parantezsiz tarih sözcükleri
+
+- Sorgu: `created_on < today`
+- Eşdeğeri: `created_on<today()`
+- Sonuç: today sözcüğünü today() biçimine genişletir.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Şu sorgu için Quick Search sonucu created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - today sözcüğünü today() biçimine genişletir.</p></figcaption></figure>
+
+##### Göreceli dönem
+
+- Sorgu: `created_on this_month`
+- Eşdeğeri: `created_on>=first day of this month AND created_on<=last day of this month`
+- Sonuç: this_month ifadesini bir tarih aralığına genişletir.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Şu sorgu için Quick Search sonucu created_on this_month"><figcaption><p><code>created_on this_month</code> - this_month ifadesini bir tarih aralığına genişletir.</p></figcaption></figure>
+
+##### Boş/dolu sözcükleri
+
+- Sorgu: `assigned_to is empty`
+- Eşdeğeri: `assigned_to=""`
+- Sonuç: Atanmamış belgeleri bulur.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Şu sorgu için Quick Search sonucu assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Atanmamış belgeleri bulur.</p></figcaption></figure>
+
+##### Okunabilir durum
+
+- Sorgu: `status:open`
+- Eşdeğeri: `status=ready_for_validation`
+- Sonuç: open ifadesini doğrulama durumuna eşler.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Şu sorgu için Quick Search sonucu status:open"><figcaption><p><code>status:open</code> - open ifadesini doğrulama durumuna eşler.</p></figcaption></figure>
+
+##### Arasında değil
+
+- Sorgu: `created_on not between 2026-06-01, 2026-06-15`
+- Eşdeğeri: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+- Sonuç: Tarih penceresinin dışındaki değerleri bulur.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Şu sorgu için Quick Search sonucu created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Tarih penceresinin dışındaki değerleri bulur.</p></figcaption></figure>
+
+##### In listesi
+
+- Sorgu: `status in (ready_for_validation, exported)`
+- Eşdeğeri: `status=ready_for_validation OR status=exported`
+- Sonuç: Listelenen durumlardan herhangi biriyle eşleşir.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Şu sorgu için Quick Search sonucu status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Listelenen durumlardan herhangi biriyle eşleşir.</p></figcaption></figure>
+
+##### Olumsuzlama öneki
+
+- Sorgu: `not status=finished`
+- Eşdeğeri: `status!=finished`
+- Sonuç: finished durum koşulunu tersine çevirir.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Şu sorgu için Quick Search sonucu not status=finished"><figcaption><p><code>not status=finished</code> - finished durum koşulunu tersine çevirir.</p></figcaption></figure>
+
+##### Metin içerir
+
+- Sorgu: `filename contains E2E`
+- Eşdeğeri: `filename:E2E`
+- Sonuç: contains ifadesini dosya adı içinde alt dize araması olarak kullanır.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Şu sorgu için Quick Search sonucu filename contains E2E"><figcaption><p><code>filename contains E2E</code> - contains ifadesini dosya adı içinde alt dize araması olarak kullanır.</p></figcaption></figure>
+
+##### Fatura öneki
+
+- Sorgu: `#INV-1234`
+- Eşdeğeri: `invoice_id:INV-1234`
+- Sonuç: #... ifadesini fatura ID aramasına eşler.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Şu sorgu için Quick Search sonucu #INV-1234"><figcaption><p><code>#INV-1234</code> - #... ifadesini fatura ID aramasına eşler.</p></figcaption></figure>
+
+##### Atanan öneki
+
+- Sorgu: `@Daniel`
+- Eşdeğeri: `assigned_to:"Daniel"`
+- Sonuç: @... ifadesini atanan kişi adı aramasına eşler.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Şu sorgu için Quick Search sonucu @Daniel"><figcaption><p><code>@Daniel</code> - @... ifadesini atanan kişi adı aramasına eşler.</p></figcaption></figure>
+
+#### Tam metin araması gerektirir
+
+Aynı kısayolu yalnızca tam metin alanıyla kullanırsanız sorgu yine tam metin gerektirir. Örneğin `ap_assignment_code is empty`, `assigned_to is empty` ile aynı boş/dolu kısayolunu kullanır, ancak AP atama alanı tam metin alanıdır.
+
+##### Tutar soneki
+
+- Sorgu: `total_amount > 5k`
+- Eşdeğeri: `total_amount>5000`
+- Sonuç: Tutar alanında k değerini binlere genişletir.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Şu sorgu için Quick Search sonucu total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Tutar alanında k değerini binlere genişletir.</p></figcaption></figure>
+
+##### Gecikmiş kısayolu
+
+- Sorgu: `overdue`
+- Eşdeğeri: `invoice_due_date<today() AND status!=finished`
+- Sonuç: Vadesi geçmiş ve tamamlanmamış faturaları bulur.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Şu sorgu için Quick Search sonucu overdue"><figcaption><p><code>overdue</code> - Vadesi geçmiş ve tamamlanmamış faturaları bulur.</p></figcaption></figure>
+
+##### Tutar öneki
+
+- Sorgu: `$5000+`
+- Eşdeğeri: `total_amount>=5000`
+- Sonuç: $...+ ifadesini tutar eşiğine eşler.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Şu sorgu için Quick Search sonucu $5000+"><figcaption><p><code>$5000+</code> - $...+ ifadesini tutar eşiğine eşler.</p></figcaption></figure>
+
 ---
 
 ## Bölüm 4 — Gelişmiş arama modları

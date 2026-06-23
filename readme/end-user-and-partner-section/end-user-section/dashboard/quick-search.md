@@ -270,6 +270,128 @@ Kortere schrijfwijzen voor dezelfde queries:
 | `@User` | `assigned_to:User` |
 | `$5000+` | `total_amount>=5000` |
 
+### Galerij query + resultaat voor sneltoetsen
+
+Deze voorbeelden tonen elk sneltoetspatroon met de query die je typt en het resultaat in het dashboard. De eerste groep gebruikt standaardvelden en werkt ook wanneer fulltext zoeken niet is ingeschakeld. De tweede groep gebruikt fulltext-only velden zoals bedrag of vervaldatum.
+
+#### Werkt zonder fulltext
+
+##### Operatoraliassen
+
+- Query: `created_on gt 2026-05-25`
+- Gelijk aan: `created_on>2026-05-25`
+Resultaat: Filtert op Created na 25 mei 2026.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Quick Search-resultaat voor created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtert op Created na 25 mei 2026.</p></figcaption></figure>
+
+##### Datumwoorden zonder haakjes
+
+- Query: `created_on < today`
+- Gelijk aan: `created_on<today()`
+Resultaat: Breidt het woord today uit naar today().
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Quick Search-resultaat voor created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Breidt het woord today uit naar today().</p></figcaption></figure>
+
+##### Relatieve periode
+
+- Query: `created_on this_month`
+- Gelijk aan: `created_on>=first day of this month AND created_on<=last day of this month`
+Resultaat: Breidt this_month uit naar een datumbereik.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Quick Search-resultaat voor created_on this_month"><figcaption><p><code>created_on this_month</code> - Breidt this_month uit naar een datumbereik.</p></figcaption></figure>
+
+##### Leeg/ingesteld-woorden
+
+- Query: `assigned_to is empty`
+- Gelijk aan: `assigned_to=""`
+Resultaat: Vindt documenten zonder toegewezen gebruiker.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Quick Search-resultaat voor assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Vindt documenten zonder toegewezen gebruiker.</p></figcaption></figure>
+
+##### Leesbare status
+
+- Query: `status:open`
+- Gelijk aan: `status=ready_for_validation`
+Resultaat: Koppelt open aan de validatiestatus.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Quick Search-resultaat voor status:open"><figcaption><p><code>status:open</code> - Koppelt open aan de validatiestatus.</p></figcaption></figure>
+
+##### Niet tussen
+
+- Query: `created_on not between 2026-06-01, 2026-06-15`
+- Gelijk aan: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+Resultaat: Vindt waarden buiten een datumvenster.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Quick Search-resultaat voor created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Vindt waarden buiten een datumvenster.</p></figcaption></figure>
+
+##### In-lijst
+
+- Query: `status in (ready_for_validation, exported)`
+- Gelijk aan: `status=ready_for_validation OR status=exported`
+Resultaat: Matcht elke opgegeven status.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Quick Search-resultaat voor status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Matcht elke opgegeven status.</p></figcaption></figure>
+
+##### Negatieprefix
+
+- Query: `not status=finished`
+- Gelijk aan: `status!=finished`
+Resultaat: Keert het finished-statuspredicaat om.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Quick Search-resultaat voor not status=finished"><figcaption><p><code>not status=finished</code> - Keert het finished-statuspredicaat om.</p></figcaption></figure>
+
+##### Tekst bevat
+
+- Query: `filename contains E2E`
+- Gelijk aan: `filename:E2E`
+Resultaat: Gebruikt contains als substringzoekopdracht in bestandsnaam.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Quick Search-resultaat voor filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Gebruikt contains als substringzoekopdracht in bestandsnaam.</p></figcaption></figure>
+
+##### Factuurprefix
+
+- Query: `#INV-1234`
+- Gelijk aan: `invoice_id:INV-1234`
+Resultaat: Koppelt #... aan zoeken op factuur-ID.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Quick Search-resultaat voor #INV-1234"><figcaption><p><code>#INV-1234</code> - Koppelt #... aan zoeken op factuur-ID.</p></figcaption></figure>
+
+##### Toegewezen-prefix
+
+- Query: `@Daniel`
+- Gelijk aan: `assigned_to:"Daniel"`
+Resultaat: Koppelt @... aan zoeken op naam van toegewezen gebruiker.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Quick Search-resultaat voor @Daniel"><figcaption><p><code>@Daniel</code> - Koppelt @... aan zoeken op naam van toegewezen gebruiker.</p></figcaption></figure>
+
+#### Vereist fulltext zoeken
+
+Gebruik je dezelfde sneltoets met een fulltext-only veld, dan vereist de query nog steeds fulltext. Bijvoorbeeld: `ap_assignment_code is empty` gebruikt dezelfde leeg/ingesteld-sneltoets als `assigned_to is empty`, maar het AP-veld is fulltext-only.
+
+##### Bedragsuffix
+
+- Query: `total_amount > 5k`
+- Gelijk aan: `total_amount>5000`
+Resultaat: Breidt k uit naar duizendtallen op een bedragveld.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Quick Search-resultaat voor total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Breidt k uit naar duizendtallen op een bedragveld.</p></figcaption></figure>
+
+##### Achterstallig-sneltoets
+
+- Query: `overdue`
+- Gelijk aan: `invoice_due_date<today() AND status!=finished`
+Resultaat: Vindt niet-afgeronde facturen na de vervaldatum.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Quick Search-resultaat voor overdue"><figcaption><p><code>overdue</code> - Vindt niet-afgeronde facturen na de vervaldatum.</p></figcaption></figure>
+
+##### Bedragprefix
+
+- Query: `$5000+`
+- Gelijk aan: `total_amount>=5000`
+Resultaat: Koppelt $...+ aan een bedragdrempel.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Quick Search-resultaat voor $5000+"><figcaption><p><code>$5000+</code> - Koppelt $...+ aan een bedragdrempel.</p></figcaption></figure>
+
 ---
 
 ## Deel 4 — Geavanceerde zoekmodi

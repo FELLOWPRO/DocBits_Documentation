@@ -19,3 +19,7 @@ Gehen Sie zu **Einstellungen → Dokumenttypen → Rechnung → Erweiterte Einst
 * **Lieferanten bei Ablehnung benachrichtigen** – erscheint, sobald die Validierung aktiviert ist. Ist er **aktiviert**, löst eine abgelehnte Rechnung eine E-Mail an den Lieferanten aus, die die fehlenden oder fehlerhaften Felder auflistet, damit er die Rechnung neu ausstellen kann. Wer welches Finding erhält und bearbeitet, wird auf der Seite [Benachrichtigungsrouting](notification-routing.md) konfiguriert.
 
 > Die E-Rechnungs-Validierung wird **je Dokumenttyp** konfiguriert. Derzeit gilt sie für den Dokumenttyp **Rechnung**; aktivieren Sie sie für jeden Dokumenttyp, der validiert werden soll.
+
+Sie können auch direkt hierher springen — mit der **globalen Schnellsuche**: Drücken Sie <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Strg</kbd> + <kbd>K</kbd> unter Windows und Linux) an beliebiger Stelle in DocBits und tippen Sie *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Globale Schnellsuche springt zur E-Rechnungs-Validierung"><figcaption><p>Tippen Sie „e-invoice" in die Schnellsuche, um direkt zum Schalter zu springen.</p></figcaption></figure>

@@ -19,3 +19,7 @@ Vai a **Impostazioni → Tipi di documento → Fattura → Impostazioni avanzate
 * **Notifica al fornitore in caso di rifiuto**: appare una volta attivata la convalida. Quando è **attivo**, una fattura rifiutata invia un'email al fornitore con l'elenco dei campi mancanti o errati così da poterla riemettere. Chi riceve e gestisce ogni risultato si configura nella pagina [Instradamento delle notifiche](notification-routing.md).
 
 > La convalida delle fatture elettroniche si configura **per tipo di documento**. Attualmente si applica al tipo di documento **Fattura**; attivala su ogni tipo di documento da convalidare.
+
+Puoi anche saltare direttamente qui con la **ricerca rapida globale**: premi <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> su Windows e Linux) ovunque in DocBits e digita *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La ricerca rapida globale apre la Convalida fattura elettronica"><figcaption><p>Digita «e-invoice» nella ricerca rapida per saltare direttamente all'interruttore.</p></figcaption></figure>

@@ -340,6 +340,128 @@ Kürzere Formulierungen für dieselben Abfragen — verwenden Sie, was sich bess
 | `@User` | `assigned_to:User` | Präfix im Twitter-Stil für den Zugewiesenen |
 | `$5000+` | `total_amount>=5000` | `$`-Präfix für Betragsschwellen |
 
+### Galerie: Abfrage + Ergebnis für Shortcuts
+
+Diese Beispiele zeigen jedes Shortcut-Muster mit der eingegebenen Abfrage und dem Ergebnis im Dashboard. Die erste Gruppe nutzt Standardfelder und funktioniert auch ohne aktivierte Volltextsuche. Die zweite Gruppe nutzt Volltextfelder wie Betrag oder Fälligkeitsdatum.
+
+#### Funktioniert ohne Volltext
+
+##### Operator-Aliase
+
+- Abfrage: `created_on gt 2026-05-25`
+- Entspricht: `created_on>2026-05-25`
+- Ergebnis: Filtert nach Created nach dem 25. Mai 2026.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Quick-Search-Ergebnis für created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtert nach Created nach dem 25. Mai 2026.</p></figcaption></figure>
+
+##### Datumswörter ohne Klammern
+
+- Abfrage: `created_on < today`
+- Entspricht: `created_on<today()`
+- Ergebnis: Erweitert das Wort today zu today().
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Quick-Search-Ergebnis für created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Erweitert das Wort today zu today().</p></figcaption></figure>
+
+##### Relativer Zeitraum
+
+- Abfrage: `created_on this_month`
+- Entspricht: `created_on>=first day of this month AND created_on<=last day of this month`
+- Ergebnis: Erweitert this_month zu einem Datumsfenster.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Quick-Search-Ergebnis für created_on this_month"><figcaption><p><code>created_on this_month</code> - Erweitert this_month zu einem Datumsfenster.</p></figcaption></figure>
+
+##### Leer/gesetzt-Wörter
+
+- Abfrage: `assigned_to is empty`
+- Entspricht: `assigned_to=""`
+- Ergebnis: Findet Dokumente ohne Bearbeiter.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Quick-Search-Ergebnis für assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Findet Dokumente ohne Bearbeiter.</p></figcaption></figure>
+
+##### Lesbarer Status
+
+- Abfrage: `status:open`
+- Entspricht: `status=ready_for_validation`
+- Ergebnis: Ordnet open dem Validierungsstatus zu.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Quick-Search-Ergebnis für status:open"><figcaption><p><code>status:open</code> - Ordnet open dem Validierungsstatus zu.</p></figcaption></figure>
+
+##### Nicht zwischen
+
+- Abfrage: `created_on not between 2026-06-01, 2026-06-15`
+- Entspricht: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+- Ergebnis: Findet Werte außerhalb eines Datumsfensters.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Quick-Search-Ergebnis für created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Findet Werte außerhalb eines Datumsfensters.</p></figcaption></figure>
+
+##### In-Liste
+
+- Abfrage: `status in (ready_for_validation, exported)`
+- Entspricht: `status=ready_for_validation OR status=exported`
+- Ergebnis: Findet jeden der aufgeführten Statuswerte.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Quick-Search-Ergebnis für status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Findet jeden der aufgeführten Statuswerte.</p></figcaption></figure>
+
+##### Negationspräfix
+
+- Abfrage: `not status=finished`
+- Entspricht: `status!=finished`
+- Ergebnis: Kehrt die Bedingung für den Status finished um.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Quick-Search-Ergebnis für not status=finished"><figcaption><p><code>not status=finished</code> - Kehrt die Bedingung für den Status finished um.</p></figcaption></figure>
+
+##### Text enthält
+
+- Abfrage: `filename contains E2E`
+- Entspricht: `filename:E2E`
+- Ergebnis: Verwendet contains als Teilstring-Suche im Dateinamen.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Quick-Search-Ergebnis für filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Verwendet contains als Teilstring-Suche im Dateinamen.</p></figcaption></figure>
+
+##### Rechnungspräfix
+
+- Abfrage: `#INV-1234`
+- Entspricht: `invoice_id:INV-1234`
+- Ergebnis: Ordnet #... einer Suche nach Rechnungs-ID zu.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Quick-Search-Ergebnis für #INV-1234"><figcaption><p><code>#INV-1234</code> - Ordnet #... einer Suche nach Rechnungs-ID zu.</p></figcaption></figure>
+
+##### Bearbeiter-Präfix
+
+- Abfrage: `@Daniel`
+- Entspricht: `assigned_to:"Daniel"`
+- Ergebnis: Ordnet @... einer Suche nach Bearbeiternamen zu.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Quick-Search-Ergebnis für @Daniel"><figcaption><p><code>@Daniel</code> - Ordnet @... einer Suche nach Bearbeiternamen zu.</p></figcaption></figure>
+
+#### Erfordert Volltextsuche
+
+Wenn derselbe Shortcut mit einem Volltextfeld verwendet wird, benötigt die Abfrage trotzdem Volltext. Beispiel: `ap_assignment_code is empty` nutzt denselben Leer/gesetzt-Shortcut wie `assigned_to is empty`, aber das AP-Zuordnungsfeld ist ein Volltextfeld.
+
+##### Betragssuffix
+
+- Abfrage: `total_amount > 5k`
+- Entspricht: `total_amount>5000`
+- Ergebnis: Erweitert k bei Betragsfeldern zu Tausendern.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Quick-Search-Ergebnis für total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Erweitert k bei Betragsfeldern zu Tausendern.</p></figcaption></figure>
+
+##### Überfällig-Shortcut
+
+- Abfrage: `overdue`
+- Entspricht: `invoice_due_date<today() AND status!=finished`
+- Ergebnis: Findet nicht abgeschlossene Rechnungen nach Fälligkeit.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Quick-Search-Ergebnis für overdue"><figcaption><p><code>overdue</code> - Findet nicht abgeschlossene Rechnungen nach Fälligkeit.</p></figcaption></figure>
+
+##### Betragspräfix
+
+- Abfrage: `$5000+`
+- Entspricht: `total_amount>=5000`
+- Ergebnis: Ordnet $...+ einer Betragsschwelle zu.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Quick-Search-Ergebnis für $5000+"><figcaption><p><code>$5000+</code> - Ordnet $...+ einer Betragsschwelle zu.</p></figcaption></figure>
+
 ---
 
 ## Teil 4 — Erweiterte Suchmodi

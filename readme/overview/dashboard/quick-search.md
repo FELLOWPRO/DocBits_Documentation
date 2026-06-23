@@ -268,6 +268,128 @@ Kraći oblici za iste upite:
 | `@User` | `assigned_to:User` |
 | `$5000+` | `total_amount>=5000` |
 
+### Galerija upit + rezultat za prečice
+
+Ovi primeri prikazuju svaki obrazac prečice sa upitom koji unosite i rezultatom u Dashboard-u. Prva grupa koristi standardna polja i radi i kada fulltext pretraga nije omogućena. Druga grupa koristi polja koja zahtevaju fulltext, kao što su iznos ili datum dospeća.
+
+#### Radi bez fulltext pretrage
+
+##### Alijasi operatora
+
+- Upit: `created_on gt 2026-05-25`
+- Isto kao: `created_on>2026-05-25`
+- Rezultat: Filtrira Created posle 25. maja 2026.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Quick Search rezultat za created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filtrira Created posle 25. maja 2026.</p></figcaption></figure>
+
+##### Datumske reči bez zagrada
+
+- Upit: `created_on < today`
+- Isto kao: `created_on<today()`
+- Rezultat: Proširuje reč today u today().
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Quick Search rezultat za created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Proširuje reč today u today().</p></figcaption></figure>
+
+##### Relativni period
+
+- Upit: `created_on this_month`
+- Isto kao: `created_on>=first day of this month AND created_on<=last day of this month`
+- Rezultat: Proširuje this_month u opseg datuma.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Quick Search rezultat za created_on this_month"><figcaption><p><code>created_on this_month</code> - Proširuje this_month u opseg datuma.</p></figcaption></figure>
+
+##### Reči prazno/postavljeno
+
+- Upit: `assigned_to is empty`
+- Isto kao: `assigned_to=""`
+- Rezultat: Pronalazi dokumente bez dodeljene osobe.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Quick Search rezultat za assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Pronalazi dokumente bez dodeljene osobe.</p></figcaption></figure>
+
+##### Čitljiv status
+
+- Upit: `status:open`
+- Isto kao: `status=ready_for_validation`
+- Rezultat: Mapira open na status za validaciju.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Quick Search rezultat za status:open"><figcaption><p><code>status:open</code> - Mapira open na status za validaciju.</p></figcaption></figure>
+
+##### Nije između
+
+- Upit: `created_on not between 2026-06-01, 2026-06-15`
+- Isto kao: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+- Rezultat: Pronalazi vrednosti van opsega datuma.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Quick Search rezultat za created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Pronalazi vrednosti van opsega datuma.</p></figcaption></figure>
+
+##### In lista
+
+- Upit: `status in (ready_for_validation, exported)`
+- Isto kao: `status=ready_for_validation OR status=exported`
+- Rezultat: Poklapa bilo koji od navedenih statusa.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Quick Search rezultat za status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Poklapa bilo koji od navedenih statusa.</p></figcaption></figure>
+
+##### Prefiks negacije
+
+- Upit: `not status=finished`
+- Isto kao: `status!=finished`
+- Rezultat: Obrće uslov statusa finished.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Quick Search rezultat za not status=finished"><figcaption><p><code>not status=finished</code> - Obrće uslov statusa finished.</p></figcaption></figure>
+
+##### Tekst sadrži
+
+- Upit: `filename contains E2E`
+- Isto kao: `filename:E2E`
+- Rezultat: Koristi contains kao pretragu dela naziva fajla.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Quick Search rezultat za filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Koristi contains kao pretragu dela naziva fajla.</p></figcaption></figure>
+
+##### Prefiks fakture
+
+- Upit: `#INV-1234`
+- Isto kao: `invoice_id:INV-1234`
+- Rezultat: Mapira #... na pretragu ID-a fakture.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Quick Search rezultat za #INV-1234"><figcaption><p><code>#INV-1234</code> - Mapira #... na pretragu ID-a fakture.</p></figcaption></figure>
+
+##### Prefiks zaduženog
+
+- Upit: `@Daniel`
+- Isto kao: `assigned_to:"Daniel"`
+- Rezultat: Mapira @... na pretragu imena zadužene osobe.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Quick Search rezultat za @Daniel"><figcaption><p><code>@Daniel</code> - Mapira @... na pretragu imena zadužene osobe.</p></figcaption></figure>
+
+#### Zahteva fulltext pretragu
+
+Ako istu prečicu koristite sa poljem koje je dostupno samo kroz fulltext, upit i dalje zahteva fulltext. Na primer, `ap_assignment_code is empty` koristi istu prazno/postavljeno prečicu kao `assigned_to is empty`, ali AP polje zahteva fulltext. Aplikacija nema srpski UI lokalitet, zato su slike za ovu stranicu snimljene na engleskom UI-u.
+
+##### Sufiks iznosa
+
+- Upit: `total_amount > 5k`
+- Isto kao: `total_amount>5000`
+- Rezultat: Proširuje k u hiljade na polju iznosa.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Quick Search rezultat za total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Proširuje k u hiljade na polju iznosa.</p></figcaption></figure>
+
+##### Prečica za kašnjenje
+
+- Upit: `overdue`
+- Isto kao: `invoice_due_date<today() AND status!=finished`
+- Rezultat: Pronalazi nezavršene fakture posle datuma dospeća.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Quick Search rezultat za overdue"><figcaption><p><code>overdue</code> - Pronalazi nezavršene fakture posle datuma dospeća.</p></figcaption></figure>
+
+##### Prefiks iznosa
+
+- Upit: `$5000+`
+- Isto kao: `total_amount>=5000`
+- Rezultat: Mapira $...+ na prag iznosa.
+
+<figure><img src="../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Quick Search rezultat za $5000+"><figcaption><p><code>$5000+</code> - Mapira $...+ na prag iznosa.</p></figcaption></figure>
+
 ---
 
 ## Deo 4 — Napredni režimi pretrage

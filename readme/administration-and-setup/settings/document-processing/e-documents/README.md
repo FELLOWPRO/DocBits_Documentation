@@ -6,3 +6,16 @@ DocBits validiert eingehende elektronische Rechnungen (E-Rechnungen) anhand der 
 * **[Benachrichtigungsrouting](notification-routing.md)** – ordnen Sie Validierungs-Findings dem KI-Workforce-Agenten zu, der sie bearbeiten soll.
 
 Gemeinsam legen Sie damit fest, **was auf einer eingehenden E-Rechnung als Problem gilt** und **wer sich darum kümmert**.
+
+## E-Rechnungs-Validierung aktivieren oder deaktivieren
+
+Die beiden E-Dokumente-Seiten greifen erst, wenn die **E-Rechnungs-Validierung für den Dokumenttyp eingeschaltet** ist. Der Schalter befindet sich am Dokumenttyp selbst, nicht im Menü E-Dokumente.
+
+Gehen Sie zu **Einstellungen → Dokumenttypen → Rechnung → Erweiterte Einstellungen** und öffnen Sie den Abschnitt **E-Rechnungs-Validierung**.
+
+<figure><img src="../../../../.gitbook/assets/edoc_enable_validation_toggle.png" alt="Die Schalter für die E-Rechnungs-Validierung am Dokumenttyp Rechnung"><figcaption><p>E-Rechnungs-Validierung je Dokumenttyp ein- oder ausschalten, mit optionaler Lieferantenbenachrichtigung</p></figcaption></figure>
+
+* **Eingehende E-Rechnungen validieren** – der Hauptschalter. Ist er **aktiviert**, wird jede hochgeladene Rechnung anhand der KoSIT-XRechnung-Schematron-Regeln sowie der semantischen Prüfungen L0 (PDF/A-3) und L4 (IBAN/USt) geprüft, mit den Schweregraden, die Sie auf der Seite [Validierungsregeln](validation-rules.md) festgelegt haben. Ungültige Rechnungen werden blockiert. Ist er **deaktiviert**, überspringen Rechnungen die E-Rechnungs-Validierung vollständig, und die Seiten Validierungsregeln und Benachrichtigungsrouting haben keine Wirkung.
+* **Lieferanten bei Ablehnung benachrichtigen** – erscheint, sobald die Validierung aktiviert ist. Ist er **aktiviert**, löst eine abgelehnte Rechnung eine E-Mail an den Lieferanten aus, die die fehlenden oder fehlerhaften Felder auflistet, damit er die Rechnung neu ausstellen kann. Wer welches Finding erhält und bearbeitet, wird auf der Seite [Benachrichtigungsrouting](notification-routing.md) konfiguriert.
+
+> Die E-Rechnungs-Validierung wird **je Dokumenttyp** konfiguriert. Derzeit gilt sie für den Dokumenttyp **Rechnung**; aktivieren Sie sie für jeden Dokumenttyp, der validiert werden soll.

@@ -19,3 +19,7 @@ Vaya a **Ajustes → Tipos de documento → Factura → Ajustes avanzados** y ab
 * **Notificar al proveedor en caso de rechazo**: aparece una vez activada la validación. Cuando está **activado**, una factura rechazada genera un correo al proveedor con los campos faltantes o incorrectos para que pueda volver a emitirla. Quién recibe y gestiona cada hallazgo se configura en la página [Enrutamiento de notificaciones](notification-routing.md).
 
 > La validación de facturas electrónicas se configura **por tipo de documento**. Actualmente se aplica al tipo de documento **Factura**; actívela en cada tipo de documento que deba validarse.
+
+También puede saltar directamente aquí con la **búsqueda rápida global**: pulse <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> en Windows y Linux) en cualquier parte de DocBits y escriba *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La búsqueda rápida global salta a Validación de facturas electrónicas"><figcaption><p>Escriba «e-invoice» en la búsqueda rápida para saltar directamente al interruptor.</p></figcaption></figure>

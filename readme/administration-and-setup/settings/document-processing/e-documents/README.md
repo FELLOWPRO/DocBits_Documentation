@@ -19,3 +19,7 @@ Przejdź do **Ustawienia → Typy dokumentów → Faktura → Ustawienia zaawans
 * **Powiadom dostawcę o odrzuceniu** — pojawia się po włączeniu walidacji. Gdy jest **włączony**, odrzucona faktura wyzwala e-mail do dostawcy z listą brakujących lub nieprawidłowych pól, aby mógł wystawić ją ponownie. To, kto otrzymuje i obsługuje każdy wynik, konfiguruje się na stronie [Routing powiadomień](notification-routing.md).
 
 > Walidacja e-faktur jest konfigurowana **dla każdego typu dokumentu**. Obecnie dotyczy typu dokumentu **Faktura**; włącz ją dla każdego typu dokumentu, który ma być walidowany.
+
+Możesz też przejść tutaj bezpośrednio za pomocą **globalnego szybkiego wyszukiwania**: naciśnij <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> w systemach Windows i Linux) w dowolnym miejscu DocBits i wpisz *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Globalne szybkie wyszukiwanie przechodzi do Walidacji e-faktur"><figcaption><p>Wpisz „e-invoice" w szybkim wyszukiwaniu, aby przejść bezpośrednio do przełącznika.</p></figcaption></figure>

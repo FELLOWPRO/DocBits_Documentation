@@ -19,3 +19,7 @@ Vá a **Definições → Tipos de documento → Fatura → Definições avançad
 * **Notificar o fornecedor em caso de rejeição** — aparece assim que a validação é ativada. Quando **ativado**, uma fatura rejeitada gera um e-mail ao fornecedor com os campos em falta ou incorretos para que possa reemiti-la. Quem recebe e trata cada resultado configura-se na página [Encaminhamento de notificações](notification-routing.md).
 
 > A validação de faturas eletrónicas é configurada **por tipo de documento**. Atualmente aplica-se ao tipo de documento **Fatura**; ative-a em cada tipo de documento que deva ser validado.
+
+Também pode saltar diretamente para aqui com a **pesquisa rápida global**: prima <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> no Windows e Linux) em qualquer parte do DocBits e escreva *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="A pesquisa rápida global abre a Validação de faturas eletrónicas"><figcaption><p>Escreva «e-invoice» na pesquisa rápida para saltar diretamente para o interruptor.</p></figcaption></figure>

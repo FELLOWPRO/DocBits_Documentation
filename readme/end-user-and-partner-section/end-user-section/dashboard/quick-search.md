@@ -340,6 +340,128 @@ Shorter phrasings for the same queries — use whichever reads better:
 | `@User` | `assigned_to:User` | Twitter-style prefix for assignee |
 | `$5000+` | `total_amount>=5000` | `$` prefix for amount thresholds |
 
+### Shortcut query + result gallery
+
+These examples show each shortcut pattern with the query you type and the result the Dashboard shows. The first group uses standard fields and works even when fulltext search is not enabled. The second group uses fulltext-only fields such as amount or invoice due date.
+
+#### Works without fulltext
+
+##### Operator aliases
+
+- Query: `created_on gt 2026-05-25`
+- Same as: `created_on>2026-05-25`
+- Result: Filters by Created after 25 May 2026.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_01_operator_aliases.png" alt="Quick Search result for created_on gt 2026-05-25"><figcaption><p><code>created_on gt 2026-05-25</code> - Filters by Created after 25 May 2026.</p></figcaption></figure>
+
+##### Bare date words
+
+- Query: `created_on < today`
+- Same as: `created_on<today()`
+- Result: Expands the bare word today to today().
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_02_bare_date.png" alt="Quick Search result for created_on &lt; today"><figcaption><p><code>created_on &lt; today</code> - Expands the bare word today to today().</p></figcaption></figure>
+
+##### Relative period
+
+- Query: `created_on this_month`
+- Same as: `created_on>=first day of this month AND created_on<=last day of this month`
+- Result: Expands this_month into a date window.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_03_period.png" alt="Quick Search result for created_on this_month"><figcaption><p><code>created_on this_month</code> - Expands this_month into a date window.</p></figcaption></figure>
+
+##### Empty or set words
+
+- Query: `assigned_to is empty`
+- Same as: `assigned_to=""`
+- Result: Finds documents without an assignee.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_04_presence.png" alt="Quick Search result for assigned_to is empty"><figcaption><p><code>assigned_to is empty</code> - Finds documents without an assignee.</p></figcaption></figure>
+
+##### Friendly status
+
+- Query: `status:open`
+- Same as: `status=ready_for_validation`
+- Result: Maps open to the validation status.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_05_status_open.png" alt="Quick Search result for status:open"><figcaption><p><code>status:open</code> - Maps open to the validation status.</p></figcaption></figure>
+
+##### Not between
+
+- Query: `created_on not between 2026-06-01, 2026-06-15`
+- Same as: `(created_on<2026-06-01 OR created_on>2026-06-15)`
+- Result: Finds values outside a date window.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_06_not_between.png" alt="Quick Search result for created_on not between 2026-06-01, 2026-06-15"><figcaption><p><code>created_on not between 2026-06-01, 2026-06-15</code> - Finds values outside a date window.</p></figcaption></figure>
+
+##### In-list
+
+- Query: `status in (ready_for_validation, exported)`
+- Same as: `status=ready_for_validation OR status=exported`
+- Result: Matches any listed status.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_07_in_list.png" alt="Quick Search result for status in (ready_for_validation, exported)"><figcaption><p><code>status in (ready_for_validation, exported)</code> - Matches any listed status.</p></figcaption></figure>
+
+##### Negation prefix
+
+- Query: `not status=finished`
+- Same as: `status!=finished`
+- Result: Inverts the finished-status predicate.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_08_negation.png" alt="Quick Search result for not status=finished"><figcaption><p><code>not status=finished</code> - Inverts the finished-status predicate.</p></figcaption></figure>
+
+##### String contains
+
+- Query: `filename contains E2E`
+- Same as: `filename:E2E`
+- Result: Uses contains as a filename substring search.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_09_contains.png" alt="Quick Search result for filename contains E2E"><figcaption><p><code>filename contains E2E</code> - Uses contains as a filename substring search.</p></figcaption></figure>
+
+##### Invoice prefix
+
+- Query: `#INV-1234`
+- Same as: `invoice_id:INV-1234`
+- Result: Maps #... to an invoice-id search.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_12_invoice_prefix.png" alt="Quick Search result for #INV-1234"><figcaption><p><code>#INV-1234</code> - Maps #... to an invoice-id search.</p></figcaption></figure>
+
+##### Assignee prefix
+
+- Query: `@Daniel`
+- Same as: `assigned_to:"Daniel"`
+- Result: Maps @... to an assignee-name search.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_13_assignee_prefix.png" alt="Quick Search result for @Daniel"><figcaption><p><code>@Daniel</code> - Maps @... to an assignee-name search.</p></figcaption></figure>
+
+#### Requires fulltext search
+
+If you use the same shortcut with a fulltext-only field, the query still requires fulltext. For example, `ap_assignment_code is empty` uses the same empty/set shortcut as `assigned_to is empty`, but the AP assignment field is fulltext-only.
+
+##### Currency suffix
+
+- Query: `total_amount > 5k`
+- Same as: `total_amount>5000`
+- Result: Expands k to thousands on an amount field.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_10_currency_suffix.png" alt="Quick Search result for total_amount &gt; 5k"><figcaption><p><code>total_amount &gt; 5k</code> - Expands k to thousands on an amount field.</p></figcaption></figure>
+
+##### Overdue shortcut
+
+- Query: `overdue`
+- Same as: `invoice_due_date<today() AND status!=finished`
+- Result: Finds unfinished invoices past their due date.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_11_overdue.png" alt="Quick Search result for overdue"><figcaption><p><code>overdue</code> - Finds unfinished invoices past their due date.</p></figcaption></figure>
+
+##### Amount prefix
+
+- Query: `$5000+`
+- Same as: `total_amount>=5000`
+- Result: Maps $...+ to an amount threshold.
+
+<figure><img src="../../../.gitbook/assets/quick_search_shortcut_14_amount_prefix.png" alt="Quick Search result for $5000+"><figcaption><p><code>$5000+</code> - Maps $...+ to an amount threshold.</p></figcaption></figure>
+
 ---
 
 ## Part 4 — Advanced search modes

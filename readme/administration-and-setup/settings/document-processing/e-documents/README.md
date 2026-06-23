@@ -19,3 +19,7 @@ Ga naar **Instellingen → Documenttypen → Factuur → Geavanceerde instelling
 * **Leverancier melden bij afwijzing** — verschijnt zodra validatie is ingeschakeld. Wanneer **ingeschakeld** stuurt een afgewezen factuur een e-mail naar de leverancier met de ontbrekende of onjuiste velden, zodat hij de factuur opnieuw kan uitgeven. Wie elke bevinding ontvangt en afhandelt, configureert u op de pagina [Notificatierouting](notification-routing.md).
 
 > E-factuurvalidatie wordt **per documenttype** geconfigureerd. Op dit moment geldt het voor het documenttype **Factuur**; schakel het in voor elk documenttype dat gevalideerd moet worden.
+
+U kunt ook direct hierheen springen met de **globale snelzoekfunctie**: druk op <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> op Windows en Linux) ergens in DocBits en typ *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Globale snelzoekfunctie springt naar E-factuurvalidatie"><figcaption><p>Typ "e-invoice" in de snelzoekfunctie om direct naar de schakelaar te springen.</p></figcaption></figure>

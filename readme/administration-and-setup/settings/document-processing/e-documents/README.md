@@ -19,3 +19,7 @@ Go to **Settings → Document Types → Invoice → Advanced Settings** and open
 * **Notify supplier on rejection** — appears once validation is enabled. When **on**, a rejected invoice triggers an email to the supplier listing the missing or incorrect fields so they can reissue it. Who receives and handles each finding is configured on the [Notification Routing](notification-routing.md) page.
 
 > E-invoice validation is configured **per document type**. Today it applies to the **Invoice** document type; enable it on each document type that should be validated.
+
+You can also jump straight here with **Global Quick Search**: press <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> on Windows and Linux) anywhere in DocBits and type *e-invoice*.
+
+<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Global Quick Search jumping to E-Invoice Validation"><figcaption><p>Type "e-invoice" in Quick Search to jump straight to the toggle.</p></figcaption></figure>

@@ -32,9 +32,9 @@ Each group can be configured for:
 3. Select **Groups, Users and Permissions.**
 4. Select **Groups and Permissions**.
 5. To manage permissions for a group, such as PROCUREMENT\_DIRECTOR, click the three dots on the right side of the screen.
-6. Select **View Access Control**.
+6. Select **Manage Access Control**.
 
-<figure><img src="../../../../../.gitbook/assets/Access-Control1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/access_control_open_menu.png" alt="Open a group&#39;s row menu and choose Manage Access Control"><figcaption><p>On the Groups and Permissions page, open a group's <strong>⋮</strong> menu and choose <strong>Manage Access Control</strong>.</p></figcaption></figure>
 
 ## How a permission is evaluated
 

@@ -81,6 +81,16 @@ Every action column is a dropdown. The value you pick answers the question *"for
 
 <figure><img src="../../../../../.gitbook/assets/access_control_scope_dropdown.png" alt="Access scope dropdown"><figcaption><p>Each action column offers the same five access scopes.</p></figcaption></figure>
 
+### Approval also needs Edit
+
+Approving a document triggers **two actions** behind the scenes: DocBits first **saves** the document and then moves it to the approved status. The save step needs **Edit** permission, so the two permissions are linked.
+
+A user who is given only **First Approval** or **Second Approval** — but *not* **Edit** — runs into a permission error on the save step and cannot approve the document.
+
+{% hint style="warning" %}
+Whenever you grant **First Approval** or **Second Approval**, also grant **Edit** (and **View**) on the same document type. An approval permission on its own is not enough.
+{% endhint %}
+
 ## Field-level permissions
 
 Click a document-type row to open the **Field Permissions** panel underneath. Fields are organised into tabs (for example *Table columns*, *Invoice details*, *Payment details*, *Tax rates & Amounts*). Each field has its own access level:

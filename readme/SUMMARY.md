@@ -10,6 +10,7 @@
 * [Preguntas Frecuentes de Seguridad y Cumplimiento](overview-and-basics/security-and-compliance-faq.md)
 * [Infraestructura de Infor](overview-and-basics/infor-infrastructure.md)
 * [Notas de versión](overview-and-basics/release-notes/README.md)
+  * [Actualizaciones — 21-25 de junio de 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Información General](overview-and-basics/faq/general-information.md)
   * [Procesamiento de Documentos](overview-and-basics/faq/document-processing/README.md)

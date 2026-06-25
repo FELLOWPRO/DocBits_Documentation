@@ -724,6 +724,9 @@
 ## Advanced functions and tools
 
 * [AI Workforce](advanced-functions-and-tools/docnet/README.md)
+* [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
+  * [Setup & Configuration](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)
+  * [Examples](advanced-functions-and-tools/docbits-mcp/examples.md)
 * [DocFlow MCP](advanced-functions-and-tools/docflow-mcp/README.md)
   * [Setup & Configuration](advanced-functions-and-tools/docflow-mcp/setup-and-configuration.md)
   * [Workflow Tools](advanced-functions-and-tools/docflow-mcp/workflow-tools.md)

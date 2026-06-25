@@ -10,6 +10,7 @@
 * [FAQ Sicurezza e Conformità](overview-and-basics/security-and-compliance-faq.md)
 * [Infor Infrastruttura](overview-and-basics/infor-infrastructure.md)
 * [Note della versione](overview-and-basics/release-notes/README.md)
+  * [Aggiornamenti — 21-25 giugno 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Informazioni generali](overview-and-basics/faq/general-information.md)
   * [Elaborazione del documento](overview-and-basics/faq/document-processing/README.md)

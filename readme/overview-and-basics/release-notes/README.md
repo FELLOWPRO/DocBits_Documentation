@@ -1,5 +1,14 @@
 # Release Notes
 
+## **Release R1.1 — June 2026**
+
+> **Sandbox Availability:** 25th June 2026
+
+### New Features:
+
+* **ZUGFeRD 2.5 / Factur-X 1.09 Support:**\
+  Added support for the new ZUGFeRD 2.5 e-invoice standard (equivalent to Factur-X 1.09, the FeRD/FNFE-MPE common publication of June 2026). All five profiles are covered — MINIMUM, BASIC WL, BASIC, EN 16931 and EXTENDED — with classification, field extraction, transformation and preview. The EXTENDED profile recognises the new 2.5 fields: payment means and BIC, third-party payee (factor), and the allowance/charge tax-exemption reason. Unmarked Factur-X/ZUGFeRD CII invoices now default to the newest 2.5 handling.
+
 ## **Release R1.0 13/14 June 2026**
 
 > **Sandbox Availability:** 28th April 2026

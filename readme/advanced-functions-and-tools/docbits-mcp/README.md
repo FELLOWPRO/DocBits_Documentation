@@ -109,3 +109,9 @@ DocBits MCP groups ~90 tools into the categories below. Most mirror existing Doc
 
 - [**Setup & Configuration**](setup-and-configuration.md) — connect Claude Code, Gemini CLI, or Codex (with login or API key)
 - [**Examples**](examples.md) — real things customers ask the assistant to do
+- [**Electronic Documents (eDocs)**](../edocs-mcp/README.md) — deep dive on the eDoc tools: inspect/test e-invoice processing and manage custom extraction/preview rules (same endpoint, same login)
+- [**Workflows & Cards (DocFlow)**](../docflow-mcp/README.md) — manage advanced workflows and partner cards
+
+{% hint style="info" %}
+**One MCP, growing tool set.** The eDoc tools run on the **same** `api.docbits.com/v3/mcp` endpoint and the same OAuth login as the rest of DocBits MCP. **Workflows & Cards (DocFlow)** currently run on their **own** MCP endpoint (`docflow.docbits.com`, same DocBits login) — see that page for setup. We are unifying everything behind the single `api.docbits.com` endpoint so customers connect **one** MCP for all tools.
+{% endhint %}

@@ -5,9 +5,12 @@ DocBits exposes a **Model Context Protocol (MCP)** server that lets AI assistant
 The server is mounted on the DocBits API at `/v3/mcp` and is scoped to your organization — every call runs with the permissions of the user (or API key) that connected.
 
 {% hint style="info" %}
-**Endpoint:** `https://<region>.<env>.api.docbits.com/v3/mcp`
+**Endpoint — use your region (EU or US):**
 
-For example `https://eu.dev.api.docbits.com/v3/mcp` (EU dev) or `https://eu.api.docbits.com/v3/mcp` (EU production). See [Setup & Configuration](setup-and-configuration.md) for the full host matrix and how to sign in.
+- Production (EU) — `https://eu.api.docbits.com/v3/mcp`
+- Production (US) — `https://us.api.docbits.com/v3/mcp`
+
+See [Setup & Configuration](setup-and-configuration.md) for the full host matrix and how to sign in with OAuth.
 {% endhint %}
 
 ## What Can You Do?

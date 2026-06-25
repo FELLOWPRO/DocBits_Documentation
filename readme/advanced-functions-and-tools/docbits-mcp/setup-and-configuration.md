@@ -1,72 +1,93 @@
 # Setup & Configuration
 
-Connecting an AI assistant to DocBits MCP takes one command. The assistant then signs in through your browser (OAuth) — the same DocBits login you already use — or you can connect with an API key for automation.
+Connecting an AI assistant to DocBits MCP takes one command, then a one-time sign-in. The recommended way to sign in is **OAuth** — the same DocBits login you already use, in your browser. For automation you can connect with an API key instead.
 
 ## 1. Pick your endpoint
 
-The MCP server lives on the DocBits API host for your environment and region:
-
-```
-https://<region>.<env>.api.docbits.com/v3/mcp
-```
+The MCP server lives on the DocBits API host. Use the host for **your region (EU or US)**:
 
 | Environment | EU endpoint | US endpoint |
 |-------------|-------------|-------------|
-| Dev | `https://eu.dev.api.docbits.com/v3/mcp` | `https://us.dev.api.docbits.com/v3/mcp` |
-| Stage | `https://eu.stage.api.docbits.com/v3/mcp` | `https://us.stage.api.docbits.com/v3/mcp` |
-| Sandbox | `https://eu.sandbox.api.docbits.com/v3/mcp` | `https://us.sandbox.api.docbits.com/v3/mcp` |
 | Production | `https://eu.api.docbits.com/v3/mcp` | `https://us.api.docbits.com/v3/mcp` |
+| Sandbox | `https://eu.sandbox.api.docbits.com/v3/mcp` | `https://us.sandbox.api.docbits.com/v3/mcp` |
 
 {% hint style="info" %}
-Use the **region your organization lives in** (EU or US). The MCP server automatically points the login at the matching auth server (`<region>.<env>.auth.docbits.com`) — you do not configure it separately.
+`api.docbits.com` is the single endpoint customers use. Always pick the **region your organization lives in** (EU or US) — the MCP automatically points the login at the matching auth server, you do not configure it separately. The examples below use the EU production host; swap in your own.
 {% endhint %}
 
-## 2. Choose how to authenticate
+## 2. Sign in with OAuth (recommended)
 
-| Method | Best for | How |
-|--------|----------|-----|
-| **OAuth login** (recommended) | Interactive use in your editor / chat | Browser opens → DocBits login + consent → connected. If you are already signed in to the DocBits web app, the session is reused (no re-login). |
-| **API key** (`X-API-KEY`) | Automation, CI, headless agents | Pass your organization API key as a header. No browser. |
+OAuth is the easy path — no secrets to copy. After you add the server, the **first connection opens the DocBits login in your browser**, you approve a consent screen, and the client is connected.
 
-OAuth issues a short-lived access token (8 h) plus a refresh token (30 days), so the assistant stays connected and refreshes automatically — you only log in once.
+**What you'll see, for every client:**
 
-## 3. Connect your client
+1. The client opens the DocBits login page in your browser.
+2. You sign in with your DocBits account (if you are already signed in to the DocBits web app, the session is reused — no re-login).
+3. You approve the consent screen ("Authorize access").
+4. The browser hands the client a token and the connection is live.
+
+OAuth issues a short-lived access token (8 h) plus a refresh token (30 days), so the client refreshes automatically and stays connected — **you only log in once.**
+
+{% hint style="success" %}
+**You must be signed in to DocBits — your existing session is reused.** The MCP login does not ask you to log in again if your browser already has a DocBits session. If you are already signed in to the DocBits web app, you go **straight to the consent screen**. If you are not signed in, the DocBits sign-in page appears first; after signing in once, the session carries over to the MCP automatically.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/docbits-mcp-login.png" alt="DocBits sign-in page"><figcaption><p>Not signed in yet — the branded DocBits sign-in page (you only see this if your browser has no DocBits session)</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/docbits-mcp-consent.png" alt="DocBits authorize access / consent screen"><figcaption><p>Already signed in — the session is reused and you go straight to the consent screen. Approve to connect; what the client requests (scope and redirect) is shown.</p></figcaption></figure>
 
 {% tabs %}
 {% tab title="Claude Code" %}
-**OAuth login (recommended):**
-
 ```bash
-claude mcp add --transport http docbits https://eu.dev.api.docbits.com/v3/mcp
+# 1) add the server
+claude mcp add --transport http docbits https://eu.api.docbits.com/v3/mcp
+
+# 2) sign in (opens browser → DocBits login + consent → connected)
 claude mcp login docbits
 ```
 
-`claude mcp login` opens your browser, shows the branded DocBits login and a consent screen, then connects. Run a tool to confirm, e.g. ask Claude to *"check the DocBits API health"*.
+`claude mcp login docbits` is the OAuth step. After it succeeds, confirm by asking Claude: *"check the DocBits API health"*.
+{% endtab %}
 
-**API key instead of login:**
-
+{% tab title="Gemini CLI" %}
 ```bash
-claude mcp add --transport http docbits https://eu.dev.api.docbits.com/v3/mcp \
+gemini mcp add --transport http docbits https://eu.api.docbits.com/v3/mcp
+```
+
+Gemini CLI discovers the OAuth server automatically. The **first time** it uses the server it opens the DocBits login in your browser (dynamic client registration + token management are handled for you). Approve consent and you're connected. You can re-trigger sign-in from the `/mcp` menu in Gemini if needed.
+{% endtab %}
+
+{% tab title="OpenAI Codex" %}
+```bash
+codex mcp add docbits \
+  --url https://eu.api.docbits.com/v3/mcp \
+  --oauth-resource https://eu.api.docbits.com/v3/mcp
+```
+
+The `--oauth-resource` flag tells Codex to run the OAuth login for this server. On first use Codex opens the DocBits login in your browser; approve consent and you're connected.
+{% endtab %}
+{% endtabs %}
+
+## 3. Connect with an API key (automation)
+
+For headless agents, CI, or any environment without a browser, skip OAuth and pass your organization API key as the `X-API-KEY` header.
+
+{% tabs %}
+{% tab title="Claude Code" %}
+```bash
+claude mcp add --transport http docbits https://eu.api.docbits.com/v3/mcp \
   --header "X-API-KEY: <your-api-key>"
 ```
 {% endtab %}
 
 {% tab title="Gemini CLI" %}
-**OAuth login (recommended):**
-
-```bash
-gemini mcp add --transport http docbits https://eu.dev.api.docbits.com/v3/mcp
-```
-
-Gemini CLI discovers the OAuth server automatically and prompts you to sign in on first use (dynamic client registration + token management are handled for you).
-
-**API key instead of login** — add to `~/.gemini/settings.json`:
+Add to `~/.gemini/settings.json`:
 
 ```json
 {
   "mcpServers": {
     "docbits": {
-      "httpUrl": "https://eu.dev.api.docbits.com/v3/mcp",
+      "httpUrl": "https://eu.api.docbits.com/v3/mcp",
       "headers": { "X-API-KEY": "<your-api-key>" }
     }
   }
@@ -75,21 +96,11 @@ Gemini CLI discovers the OAuth server automatically and prompts you to sign in o
 {% endtab %}
 
 {% tab title="OpenAI Codex" %}
-**OAuth login (recommended):**
-
-```bash
-codex mcp add docbits \
-  --url https://eu.dev.api.docbits.com/v3/mcp \
-  --oauth-resource https://eu.dev.api.docbits.com/v3/mcp
-```
-
-Codex performs the OAuth login for the streamable-HTTP server on first use.
-
-**API key instead of login** — add to `~/.codex/config.toml`:
+Add to `~/.codex/config.toml`:
 
 ```toml
 [mcp_servers.docbits]
-url = "https://eu.dev.api.docbits.com/v3/mcp"
+url = "https://eu.api.docbits.com/v3/mcp"
 http_headers = { "X-API-KEY" = "<your-api-key>" }
 ```
 
@@ -97,7 +108,7 @@ Or keep the key out of the file and read it from the environment:
 
 ```toml
 [mcp_servers.docbits]
-url = "https://eu.dev.api.docbits.com/v3/mcp"
+url = "https://eu.api.docbits.com/v3/mcp"
 env_http_headers = { "X-API-KEY" = "DOCBITS_API_KEY" }
 ```
 {% endtab %}
@@ -107,9 +118,9 @@ env_http_headers = { "X-API-KEY" = "DOCBITS_API_KEY" }
 
 DocBits implements the standard **MCP OAuth 2.1** flow, so any compliant client connects without manual configuration:
 
-1. The client calls `/v3/mcp` and gets a `401` with a `WWW-Authenticate` header pointing to the protected-resource metadata.
-2. It reads `/.well-known/oauth-protected-resource` (on the API host), which names the auth server.
-3. It reads `/.well-known/oauth-authorization-server` (on the auth host) and **registers itself** dynamically (RFC 7591) — no client secret needed.
+1. The client calls the MCP endpoint and gets a `401` with a `WWW-Authenticate` header pointing to the protected-resource metadata.
+2. It reads `/.well-known/oauth-protected-resource`, which names the DocBits auth server.
+3. It reads the auth server's metadata and **registers itself** dynamically (RFC 7591) — no client secret needed.
 4. Your browser opens the DocBits login + consent. If you are already logged in to the web app, the session is reused.
 5. The client exchanges the authorization code (PKCE) for an access token + refresh token and calls the MCP.
 

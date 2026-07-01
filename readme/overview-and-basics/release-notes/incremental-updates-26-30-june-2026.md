@@ -8,7 +8,7 @@ dönemde müşteriye yönelik bir değişiklik olmamıştır._
 
 ## Öne Çıkanlar
 
-- **AI asistanları için tek bağlantı (DocBits MCP).** Tek ve birleşik bir ağ geçidi
+- **AI asistanları için tek bağlantı ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Tek ve birleşik bir ağ geçidi
   artık tüm DocBits araçlarını — DocFlow dahil — ana API üzerinden sunuyor; böylece
   AI asistanları (Claude, Gemini CLI, Codex) birkaç uç nokta yerine tek ve güvenilir
   bir uç nokta üzerinden bağlanıyor.

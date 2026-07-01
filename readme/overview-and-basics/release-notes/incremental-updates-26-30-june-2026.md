@@ -9,7 +9,7 @@ période._
 
 ## Points forts
 
-- **Une seule connexion pour les assistants IA (DocBits MCP).** Une passerelle
+- **Une seule connexion pour les assistants IA ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Une passerelle
   unique et unifiée dessert désormais tous les outils DocBits — y compris DocFlow —
   via l'API principale, de sorte que les assistants IA (Claude, Gemini CLI, Codex)
   se connectent par un unique point de terminaison fiable au lieu de plusieurs.

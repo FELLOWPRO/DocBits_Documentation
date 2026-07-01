@@ -8,7 +8,7 @@ visíveis para o cliente nesta janela._
 
 ## Destaques
 
-- **Uma única ligação para assistentes de IA (DocBits MCP).** Um gateway único e
+- **Uma única ligação para assistentes de IA ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Um gateway único e
   unificado serve agora todas as ferramentas do DocBits — incluindo o DocFlow —
   através da API principal, para que os assistentes de IA (Claude, Gemini CLI,
   Codex) se liguem através de um único endpoint fiável em vez de vários.

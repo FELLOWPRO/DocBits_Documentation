@@ -9,7 +9,7 @@ periodo._
 
 ## Highlights
 
-- **Un'unica connessione per gli assistenti AI (DocBits MCP).** Un unico gateway
+- **Un'unica connessione per gli assistenti AI ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Un unico gateway
   unificato serve ora tutti gli strumenti DocBits — incluso DocFlow — attraverso
   l'API principale, così gli assistenti AI (Claude, Gemini CLI, Codex) si
   connettono tramite un unico endpoint affidabile anziché tramite diversi.

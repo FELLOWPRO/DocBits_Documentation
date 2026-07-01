@@ -8,7 +8,7 @@ no aparecen en la lista no tuvieron cambios visibles para el cliente en este per
 
 ## Aspectos destacados
 
-- **Una única conexión para los asistentes de IA (DocBits MCP).** Ahora una única
+- **Una única conexión para los asistentes de IA ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Ahora una única
   puerta de enlace unificada sirve todas las herramientas de DocBits, incluida
   DocFlow, a través de la API principal, de modo que los asistentes de IA (Claude,
   Gemini CLI, Codex) se conectan mediante un único endpoint fiable en lugar de varios.

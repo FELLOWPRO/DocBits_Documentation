@@ -8,7 +8,7 @@ miały w tym okresie żadnych zmian widocznych dla klientów._
 
 ## Najważniejsze zmiany
 
-- **Jedno połączenie dla asystentów AI (DocBits MCP).** Pojedyncza, ujednolicona
+- **Jedno połączenie dla asystentów AI ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Pojedyncza, ujednolicona
   brama obsługuje teraz wszystkie narzędzia DocBits — w tym DocFlow — poprzez główne
   API, dzięki czemu asystenci AI (Claude, Gemini CLI, Codex) łączą się przez jeden
   niezawodny punkt końcowy zamiast przez kilka.

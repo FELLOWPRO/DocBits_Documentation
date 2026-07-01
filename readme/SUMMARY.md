@@ -11,6 +11,7 @@
 * [Infrastructure Infor](overview-and-basics/infor-infrastructure.md)
 * [Notes de version](overview-and-basics/release-notes/README.md)
   * [Mises à jour — 21-25 juin 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
+  * [Mises à jour — 26-30 juin 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Informations Générales](overview-and-basics/faq/general-information.md)
   * [Traitement de document](overview-and-basics/faq/document-processing/README.md)

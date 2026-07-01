@@ -8,7 +8,7 @@ tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
 
 ## Hoogtepunten
 
-- **Eén verbinding voor AI-assistenten (DocBits MCP).** Eén enkele, geïntegreerde
+- **Eén verbinding voor AI-assistenten ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Eén enkele, geïntegreerde
   gateway bedient nu alle DocBits-tools — inclusief DocFlow — via de hoofd-API, zodat
   AI-assistenten (Claude, Gemini CLI, Codex) verbinding maken via één betrouwbaar
   eindpunt in plaats van meerdere.

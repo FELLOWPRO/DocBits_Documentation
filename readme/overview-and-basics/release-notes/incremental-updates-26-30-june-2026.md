@@ -8,7 +8,7 @@ nisu imali izmene vidljive korisnicima u ovom periodu._
 
 ## Najvažnije
 
-- **Jedna veza za AI asistente (DocBits MCP).** Jedinstveni, objedinjeni gateway
+- **Jedna veza za AI asistente ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Jedinstveni, objedinjeni gateway
   sada opslužuje sve DocBits alate — uključujući DocFlow — kroz glavni API, tako da
   se AI asistenti (Claude, Gemini CLI, Codex) povezuju kroz jednu pouzdanu krajnju
   tačku umesto kroz više njih.

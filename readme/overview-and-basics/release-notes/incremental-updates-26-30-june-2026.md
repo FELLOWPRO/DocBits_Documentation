@@ -9,7 +9,7 @@ aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
 
 ## Highlights
 
-- **Eine Verbindung für KI-Assistenten (DocBits MCP).** Ein einziges, einheitliches
+- **Eine Verbindung für KI-Assistenten ([DocBits MCP](https://docs.docbits.com/advanced-functions-and-tools/docbits-mcp)).** Ein einziges, einheitliches
   Gateway bedient jetzt alle DocBits-Tools — einschließlich DocFlow — über die
   Haupt-API, sodass KI-Assistenten (Claude, Gemini CLI, Codex) über einen
   zuverlässigen Endpunkt statt über mehrere verbunden sind.

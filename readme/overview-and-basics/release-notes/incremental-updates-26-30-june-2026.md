@@ -1,4 +1,4 @@
-# DocBits Release Notes — 26–30 June 2026
+# Hotfixes 26–30 June 2026
 
 _What this prod upgrade delivered, in plain language. Each service shows the
 version now live on production. Services not listed had no customer-facing changes

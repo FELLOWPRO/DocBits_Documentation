@@ -23,13 +23,13 @@ The Decision Tree list displays all the configured decision trees. Open it from 
 
 Each entry shows:
 
-| Column | Description |
-|--------|-------------|
-| **Name** | The name of the decision tree. Click it to open the Designer. |
-| **Document Type** | The document type the tree applies to (e.g. `INVOICE`, `QUOTE`). |
-| **Last Modified By** | The user who last edited the tree. |
-| **Last Modified At** | Timestamp of the last change. |
-| **Actions** | Three-dot menu to edit, copy, export or delete the tree. |
+| Column               | Description                                                      |
+| -------------------- | ---------------------------------------------------------------- |
+| **Name**             | The name of the decision tree. Click it to open the Designer.    |
+| **Document Type**    | The document type the tree applies to (e.g. `INVOICE`, `QUOTE`). |
+| **Last Modified By** | The user who last edited the tree.                               |
+| **Last Modified At** | Timestamp of the last change.                                    |
+| **Actions**          | Three-dot menu to edit, copy, export or delete the tree.         |
 
 #### Creating a Decision Tree
 
@@ -57,7 +57,7 @@ The Decision Tree Designer allows you to configure rules that govern how decisio
 
 This decision tree evaluates the **Total Amount** field and assigns it to different groups based on predefined conditions. Each rule compares the total amount against a specific value, and based on which condition is true, the corresponding **Group** is returned.
 
-<figure><img src="../../../.gitbook/assets/decision_tree_example_total_amount.png" alt="Decision Tree Example Total Amount"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (335).png" alt="Decision Tree Example Total Amount"><figcaption></figcaption></figure>
 
 This decision tree evaluates two key conditions to determine which group should be assigned: **Total Amount** and **Warehouse Status**. The tree uses thresholds based on the total amount to define which group is returned, with the additional distinction of whether the warehouse is designated as "Warehouse Main," "Warehouse Sub," or "Not Warehouse Main."
 
@@ -80,8 +80,7 @@ The Decision Tree Policy defines how multiple rules within a decision tree are p
 
 ## **Testing the Decision Tree**
 
-**Overview:**
-The decision tree designer includes a test feature to validate the logic of the configured rules. This feature allows users to test the decision tree by providing specific input values for the selected fields.
+**Overview:** The decision tree designer includes a test feature to validate the logic of the configured rules. This feature allows users to test the decision tree by providing specific input values for the selected fields.
 
 **Steps to Use the Test Feature:**
 

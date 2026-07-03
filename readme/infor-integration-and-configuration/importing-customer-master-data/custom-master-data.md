@@ -10,7 +10,7 @@ From the Dashboard navigate to Settings → Document Processing → Module.
 
 ![](<../../.gitbook/assets/DocBits_CMD_1 (1).png>)
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2 (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 In Module, activate Custom Master Data by pressing the slider as shown below.
 
@@ -56,12 +56,12 @@ The first step is to choose between using your organizations ION API file, to us
 
 Next, we will configure the presets. Here you will enter the Master Data table name the API call URL.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8 (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_8.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 You will then be required to enter the JSON path using dot notation, for more information on dot notation click [here](https://docs.hevodata.com/sources/engg-analytics/streaming/rest-api/writing-jsonpath-expressions/).
 
 Lastly, you will need to map the data to the columns you would like to create like in the example below.
 
-<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9 (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/DocBits_CMD_9.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 After you have done this, click on Done for your new master data to be created and populated .

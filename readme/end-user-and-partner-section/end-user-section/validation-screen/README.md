@@ -153,7 +153,7 @@ In the OCR view, the text is automatically filtered from the document. This is u
 
 ### **Create ticket:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button (1).png" alt="Create Ticket Button" width="97"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button.png" alt="Create Ticket Button" width="97"><figcaption></figcaption></figure>
 
 Unlike tasks that are passed on internally within the company, this support ticket is important to notify us and to immediately create a ticket in the event of errors and/or discrepancies. This makes the process much easier because you can immediately send the bug with the appropriate document. There is also the option to set priority, take a screenshot of the document or upload one.
 

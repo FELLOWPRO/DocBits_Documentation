@@ -6,7 +6,7 @@ Exports to the document management system (IDM):
 
 Exported to Infor LN:
 
-<figure><img src="../../../../../../.gitbook/assets/image2-3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image2-3.png" alt=""><figcaption></figcaption></figure>
 
 Exported to Infor M3:
 

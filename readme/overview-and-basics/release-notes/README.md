@@ -8,88 +8,60 @@
 
 * **Activity Logging / Access Audit:**\
   Detailed activity logging and access audit trail across the application for compliance and monitoring. Different type of logging for all microservices and based on time range.
-
 * **Global Quick Search:**\
   Press Cmd+K / Ctrl+K from anywhere in the app to search across 200+ routes and 40+ in-page features. Shows top 8 results with fuzzy matching, arrow key navigation, and links to the full App Index Page.
-
 * **Sitemap (App Index Page):**\
   Searchable index page cataloging every navigable page and in-page feature (dialogs, sidebars, panels) across DocBits. Organized into 18 categories with type filters, category pills, URL-synced search, and permission-gated entries shown as locked for non-admin users.
-
 * **Analytics Dashboard:**\
   Comprehensive document processing analytics with Executive Overview, API Metrics, Quality Metrics, Processing Performance, Document Flow Analytics, Activity Log, Event Log, and Audit Trail.
-
 * **Dashboard Export Functionality:**\
   New dashboard export functionality allowing a list export in CSV or XLSX formats.
-
 * **Full-Text Search / DocSearch:**\
   AI-driven vector search across all indexed documents with real-time vendor filtering, "Find Similar" feature, and configurable indexing settings.
-
 * **Supplier Delivery Statistics:**\
   New views providing insights into supplier-related document processing metrics.
-
 * **Debug Collector:**\
   Press Ctrl+Shift+P to capture a full debug snapshot including API calls, WebSocket state, errors, console logs, performance metrics, and environment info. Snapshots can be copied to clipboard or sent directly as a support ticket with an HTML-formatted report and attached JSON file.
-
 * **AI Agents (DocNet):**\
   Autonomous background agents that automatically process incoming emails — classifying, extracting, and routing documents without manual intervention. Agents work through assigned tasks independently and escalate to users via approval requests when human judgment is needed. Includes a dedicated agent dashboard for monitoring activity and performance.
-
 * **New E-Documents:**\
   Over 80 new global e-invoice types and 40+ new formats including XRechnung 3.0.2, ZUGFeRD 2.2/2.3.2, Factur-X variants, and Asia-Pacific PINT Credit Notes. 100% classification and extraction coverage.
-
 * **AI Script Chat:**\
   AI-powered chat assistant for basic script development with real-time streaming responses.
-
 * **Script Versioning:**\
   Full version history for scripts with change tracking, comparison, and restore capabilities. Provides version management to scripts similar to how versions of E-Docs are maintained.
-
 * **Export History in Dashboard Actions:**\
   Access export history for a document directly from the dashboard action menu.
-
 * **Generic API Exporter (APS450, GLS840):**\
   Configurable generic API export target via a Mapping-File-configuration, for flexible integration with external systems. Support for APS450 and GLS840 were implemented.
-
 * **Multiple Export Configurations:**\
   Support for multiple active export configurations per document type with execution ordering and a re-export button for retrying from the failed step.
-
 * **New Watchdog Version:**\
   Complete rework of the WatchDog Settings page. Added new quality of life features, including current WatchDog Status, guide and commands for installing, XSLT-template configuration and a setting for autoupdate. Also implemented the functionality for WatchDog to handle multiple configurations at the same time.
-
 * **Vertex Integration:**\
   Consumer Use Tax integration via Vertex for automated tax calculation and compliance during document processing.
-
 * **UI Redesign & Settings Rework:**\
   Comprehensive UI refresh across the application. Redesigned login and auth pages. Redesigned settings area with collapsible sidebar, organized subcategories, anchor-based navigation, context help panel, and status tracking badges. Document scripts UI changes. Document flow new UI. Enhanced List of Values UI.
-
 * **Idea Board:**\
   Feature request board for users to submit, discuss, and vote on new features, enhancements, bugfixes needed, etc. with rich text editor and image support.
-
 * **API Key Management:**\
   Dedicated settings page for creating, viewing, and managing multiple API keys.
-
 * **Master Data Lookup Search Functionality:**\
   Improved Master Data search capability by providing suitable search options based on selected fields.
-
 * **User Activity Chart:**\
   Visual chart displaying user activity patterns and engagement metrics. Dashboard for login activity with trend comparison charts, daily/weekly aggregation, and GeoLite2-based geolocation.
-
 * **User Login History:**\
   Users Detail View with login history.
-
 * **Customizable Sidebar:**\
   Drag-and-drop reordering, show/hide toggle, and pin-to-top for sidebar menu items. Preferences are persisted per user with a "Reset to default" option. Respects feature flags.
-
 * **Video Carousel:**\
   Autoplay video carousel on the prepare-dashboard page showing short animated product tip videos (Global Search, Keyboard Shortcuts, Document Upload, Table Customization). Two-column layout with videos on the left and dashboard preparation on the right. Auto-redirect pauses while users browse videos.
-
 * **Advanced Workflow Designer:**\
   Visual, node-based automation builder with drag-and-drop canvas for multi-step processing pipelines. Supports wait steps, parallel paths, reusable templates, Or condition cards, manual test/run button, "Test from Here" partial execution, and per-node execution logs with visual flow highlighting showing exactly which nodes were executed.
-
 * **Workflow KPI Dashboard:**\
   Key metrics dashboard for monitoring workflow execution.
-
 * **Workflow Partner Card SDK:**\
   SDK for third-party developers to build custom workflow cards, with AI-powered review, sandboxed validation, and getting-started documentation.
-
 * **Workflow Test Manager:**\
   Automated test manager for workflows, allowing administrators to create and run tests individually or in bulk.
 
@@ -97,28 +69,20 @@
 
 * **Database (All Modules) — Migration of ID Columns:**\
   All DocBits "ID" database columns were internally migrated from strings to dedicated ID-type (UUID7). Underlying Postgres database has been migrated to V18 to support this enhancement.
-
 * **Document Processing — Further Enhancements:**\
   Changing the export logic related to maximum amount of pages to consider — now the whole document will be exported. During the document validation the user will have the option to override the default maximum pages limit for this specific document. The computation of Pending Document Counter has been enhanced.
-
 * **Services Versions, Status & Deployment Date:**\
   Service availability status provided in the "Service Versions" popup.
-
 * **Language Expansion:**\
   Support expanded to 22 languages with updated language selector.
-
 * **Access Control Design on Field Level:**\
   Redesigned/improved access control with clearer activation state, field level access, consistent rule handling, and simplified group-based permissions. Fixes conflicting rules between Access Control and View Permissions, shows import owner in the UI, and applies access control consistently across field validation, AI-extracted tables, and all views.
-
 * **Activity Stream for All Screens:**\
   Activity stream now available on all document processing screens (Ready for Validation, PO Matching, Accounting, Quote Details, Reject) — not just Pending Approval. Moved to a consistent right-panel position across all screens.
-
 * **Document Flow Page:**\
   Dedicated page for visualizing and tracking the document processing flow, showing status transitions and progress through the pipeline.
-
 * **Dual Monitor Mode (Global User Setting):**\
   Dual monitor mode moved to a global user setting, persistent across sessions.
-
 * **Layout Builder Enhancements:**\
   Support for hidden and read-only fields with visual indicators, resizable panel divider, and field length settings. Apply the Default Layout to multiple origins without visiting each one individually.
 
@@ -136,7 +100,7 @@
 * Fixed an issue where export error messages from ION/MEC (e.g., Acknowledge.PurchaseOrder failures) were not displayed in DocBits, showing "Exported" status despite the export having failed.
 * Fixed an issue where the unit price on the approval screen was incorrect when AI table extraction was used.
 * Fixed an issue where the Total Matching script threw an error on the validation screen.
-* Fixed an issue where document processing failed with an error ("UserAuthentication object has no setter for 'org_id'").
+* Fixed an issue where document processing failed with an error ("UserAuthentication object has no setter for 'org\_id'").
 * Fixed an issue where table training was not working for specific vendors, with columns landing in hidden columns instead of mapped fields.
 * Fixed an issue where PO matching failed on large invoices (10+ pages) due to the multipart request size limit being exceeded.
 * Fixed an issue where script-populated column values were not persisted after a document restart.
@@ -156,22 +120,16 @@
 
 * **Hybrid PDF Processing — User-Controlled XML Extraction:**\
   When a PDF contains embedded XML data, users can now choose whether DocBits should use the embedded XML for extraction or process the document as a standard PDF. This gives organizations full control over how hybrid documents are handled, ensuring the extraction method best suited to their workflow is applied.
-
 * **AP Assignment Code on Approval Screen:**\
   The AP Manager Approval page now includes an AP Assignment Code field, integrated with Infor M3 CRS620. This allows approvers to review and confirm assignment codes directly during the approval process without switching to external systems.
-
 * **PO Total Matching with Document Total:**\
   DocBits now supports matching the purchase order total against the total on the document, providing an additional validation layer during PO matching to catch discrepancies earlier in the process.
-
 * **Supplier Item Number and VPE Update:**\
   DocBits now supports updating Supplier Item Number and VPE (Verpackungseinheit / packaging unit) fields during document processing, with the values being synchronized back to M3 upon export.
-
 * **Improved Document Layout Classification:**\
-  The document layout ID (tfidf_id) is now generated based on header text only, excluding footer text. This improves classification accuracy by preventing footer content from influencing document type detection.
-
+  The document layout ID (tfidf\_id) is now generated based on header text only, excluding footer text. This improves classification accuracy by preventing footer content from influencing document type detection.
 * **Export & Next Button:**\
   A new "Export & Next" button has been added, allowing users to export the current document and immediately proceed to the next one in the queue, streamlining the review and export workflow.
-
 * **Approval Process for Cost Invoices:**\
   The approval process for cost invoices has been enhanced with improved routing and validation logic.
 
@@ -233,9 +191,7 @@
 *   **UI Enhancements for Watchdog and Export Configuration:**\
     The Watchdog configuration and Export configuration screens have been refreshed with an improved user interface, offering a cleaner layout and a more intuitive experience for administrators managing these settings.
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -309,7 +265,7 @@
 
     The dashboard has been extended to improve navigation and customization. With new tabs, users can switch more quickly between different document types, reducing the time spent searching for the right view.
 
-    <figure><img src="../../.gitbook/assets/image (474) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
 *   **Custom FilterDashboards:**\
     In addition, dashboards can now be customized and filtered according to individual preferences. These custom dashboards can also be shared with colleagues, making it\
     easier to create consistent team-wide reporting views.
@@ -369,7 +325,7 @@
 *   **Multi-Language Support for List of Values :**\
     We've expanded multi-language capabilities to the List of Values feature. Administrators can now define labels in multiple languages, ensuring that the correct label is automatically displayed based on the user's system language settings. This enhancement promotes greater accessibility and localization, making it easier for users worldwide to interact with the platform in their native language.
 
-    <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **User Detail Enhancements in Settings:**\
   The settings interface now displays comprehensive user information. Administrators can easily view group affiliations, sub-organization details, and additional key data, enabling better management of user roles and a clearer understanding of team structures. Furthermore Admins can now create a System Admin for the Organization.
 * **Auto Accounting Information on the Approval Screen:**\
@@ -388,7 +344,7 @@
 *   **Walkthrough:**\
     A guided walkthrough is now available to help users navigate and understand different parts of the application more easily. This is especially useful for onboarding new users or exploring unfamiliar features.
 
-    <figure><img src="../../.gitbook/assets/image (430) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
 * **Decision Tree Improvements:**\
   Enhancements have been made to the decision tree interface, including a more intuitive row addition feature — now located at the top of the tree — to simplify maintenance and editing.
 * **DocOperator**\

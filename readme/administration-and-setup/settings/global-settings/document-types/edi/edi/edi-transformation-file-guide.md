@@ -18,7 +18,7 @@ This transformation is performed using **XSLT (Extensible Stylesheet Language Tr
 
 1.  Go to **Settings → Document Type** → \[Your Document (e.g., _Purchase Order_)] → **E-Doc.**\\
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Under the **E-Doc** tab, select your format (e.g., **EDI** ).
 3.  Click **Transformation** to view or edit.\\
 

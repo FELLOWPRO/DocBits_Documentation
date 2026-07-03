@@ -91,7 +91,7 @@
 * Once all nodes are added and configured, click **Save**.
 * Activate the flow to complete the setup.
 
-<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_11 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/export_to_m3_from_docbits_11.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Configure Export in DocBits
 

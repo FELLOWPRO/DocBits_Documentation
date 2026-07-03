@@ -8,13 +8,13 @@ Enabling or disabling the permission system using the switch has various effects
 
 ## **Enabling the permission system:**
 
-<figure><img src="../../../../../.gitbook/assets/image (174) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
 * When the permission system is enabled, the access permissions for users and groups are applied.
 * Users are only granted access to the resources they are explicitly authorized to access based on the permissions assigned.
 * Administrators can manage the permissions for individual users and groups and ensure that only authorized people can view or edit the data.
 
-<figure><img src="../../../../../.gitbook/assets/image (176) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
 ## Only Assigned Documents
 
@@ -38,7 +38,7 @@ The **Only Assigned Documents** toggle button controls the visibility of documen
 
 ## Disabling the permission system:
 
-<figure><img src="../../../../../.gitbook/assets/image (173) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
 * When the permission system is disabled, all access permissions are removed and users typically have unrestricted access to all resources.
 * This can be useful when open collaboration is temporarily required without the restrictions of access control.

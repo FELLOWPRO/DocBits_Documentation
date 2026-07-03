@@ -36,4 +36,4 @@ Once you have entered all the necessary details of your SFTP, click SAVE.
 3. **Save Changes**
    * Click the **Save** button to apply the changes.
 
-<figure><img src="../../../.gitbook/assets/ftp_file_archiving_settings.png" alt="FTP File Archiving Settings"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ftp_3.png" alt="FTP File Archiving Settings"><figcaption></figcaption></figure>

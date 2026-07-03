@@ -1,6 +1,6 @@
 # AI Workforce
 
-<figure><img src="../../../docs/docnet-agents-infographic-en.png" alt="AI Workforce Agents Infographic"><figcaption><p>DocBits Multi-Agent System for Autonomous Document Processing</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docnet-agents-infographic-en.png" alt="AI Workforce Agents Infographic"><figcaption><p>DocBits Multi-Agent System for Autonomous Document Processing</p></figcaption></figure>
 
 ## Overview
 
@@ -12,7 +12,7 @@ Think of it as a team you manage rather than a tool you operate. Every piece of 
 * The plan is broken into **Issues** (single tasks), each handled by a **Specialist agent** or a **human**.
 * Specialists report their outcomes back, and the Orchestrator synthesizes the result.
 
-The *agents* that fill those roles are not fixed: DocBits ships a ready-to-use **DocBits Orchestrator** and two default specialists, and you can create your own (see [Agents](#agents)).
+The _agents_ that fill those roles are not fixed: DocBits ships a ready-to-use **DocBits Orchestrator** and two default specialists, and you can create your own (see [Agents](./#agents)).
 
 A typical run, end to end: an invoice arrives by email → a Mission is created → the Orchestrator plans it and dispatches Issues to specialists (classify, extract, validate, PO-match) → a sensitive step pauses in the **Inbox** for a human to approve → on approval the document is exported and the Mission completes. You watch the whole thing from the **Dashboard**, keep related runs together in **Projects**, and step in through the **Inbox** and **Issues** whenever a human decision is needed.
 
@@ -41,7 +41,7 @@ Available widgets include:
 
 ## Inbox
 
-The **Inbox** is where work waits for **human attention**. When an agent is about to run a tool that needs sign-off, it pauses the task and raises an **approval request** here. This is Human-in-the-Loop (HITL): the action does not run until a person decides. Whether a given tool needs sign-off is determined by the agent's **approval mode** and its tools' **critical** markers (see [Agent settings](#agent-settings)).
+The **Inbox** is where work waits for **human attention**. When an agent is about to run a tool that needs sign-off, it pauses the task and raises an **approval request** here. This is Human-in-the-Loop (HITL): the action does not run until a person decides. Whether a given tool needs sign-off is determined by the agent's **approval mode** and its tools' **critical** markers (see [Agent settings](./#agent-settings)).
 
 Each Inbox item shows the request title, the agent that raised it, and a short description of what needs a decision. From the item you can:
 
@@ -60,18 +60,18 @@ A mission is created from its **source** — Email, Chat (Microsoft Teams or Dis
 
 Missions move through the following statuses:
 
-| Status | Meaning |
-|--------|---------|
-| **Planning** | The Orchestrator is analyzing the request and building a plan. |
-| **In Process** *(Active)* | Specialist agents are executing the planned issues. |
-| **Waiting Approval** | The mission is paused, waiting for a human decision in the Inbox. |
-| **Completed** | All issues are done and the mission's target is achieved. |
+| Status                    | Meaning                                                           |
+| ------------------------- | ----------------------------------------------------------------- |
+| **Planning**              | The Orchestrator is analyzing the request and building a plan.    |
+| **In Process** _(Active)_ | Specialist agents are executing the planned issues.               |
+| **Waiting Approval**      | The mission is paused, waiting for a human decision in the Inbox. |
+| **Completed**             | All issues are done and the mission's target is achieved.         |
 
 Missions may also be **Paused** or **Cancelled**. From a mission's detail view you can follow its **progress**, review the linked **issues**, see time and token usage, open the **timeline** of events, and **restart**, **edit**, or **delete** the mission.
 
 ## Issues
 
-An **Issue** is a single task created to achieve part of a mission's target — for example *import a document*, *send a reply to the sender*, or *manually approve a step*. Issues are handled by **specialist agents** and **humans**, working on the same task together.
+An **Issue** is a single task created to achieve part of a mission's target — for example _import a document_, _send a reply to the sender_, or _manually approve a step_. Issues are handled by **specialist agents** and **humans**, working on the same task together.
 
 Each issue carries the context its assignee needs and moves through its own lifecycle (To Do / In Progress → In Review → Done, or Error / Cancelled). Issues can be assigned to an agent or a person, given a priority (Critical, High, Medium, Low), linked to a mission, and discussed through comments.
 
@@ -79,11 +79,11 @@ You can view all issues, filter them by status, priority, assignee, or mission, 
 
 ## Projects
 
-**Projects** are folders that group related **Missions** — for example *all invoices from a specific supplier in Q1*, then another project for *Q2*, and so on. They keep a large volume of agent executions organized and easy to find.
+**Projects** are folders that group related **Missions** — for example _all invoices from a specific supplier in Q1_, then another project for _Q2_, and so on. They keep a large volume of agent executions organized and easy to find.
 
 When you create a project you give it:
 
-* a **Name** — e.g. *"Acme Invoices Q1"*;
+* a **Name** — e.g. _"Acme Invoices Q1"_;
 * an optional **Description** — what the project is about and what outcome you expect;
 * an optional **Due date** — the date up to which the project should stay active.
 
@@ -110,7 +110,7 @@ Because an orchestrator is required to run any mission, activation follows a few
 
 * **Orchestrators** have an **enable/disable** toggle, but an orchestrator can be **deactivated only if at least two orchestrators exist** — the system never lets you turn off the last one, since there would be nothing left to coordinate missions.
 * When **more than one orchestrator is active**, the **System Router** automatically becomes active. Its job is to look at each incoming mission and delegate it to the right orchestrator. With a single orchestrator, the router isn't needed and stays out of the way.
-* **Specialists do not have an enable/disable toggle.** Instead, you control where they can work by **assigning them to orchestrators** (see *Agent Pool* below). A specialist that isn't assigned to any orchestrator is not available at all — it stays in the directory but no orchestrator can delegate work to it, so every specialist must be assigned to at least one orchestrator to be used.
+* **Specialists do not have an enable/disable toggle.** Instead, you control where they can work by **assigning them to orchestrators** (see _Agent Pool_ below). A specialist that isn't assigned to any orchestrator is not available at all — it stays in the directory but no orchestrator can delegate work to it, so every specialist must be assigned to at least one orchestrator to be used.
 
 You can view and rearrange these relationships in the **Org Chart**, which shows Router → Orchestrators → Specialists.
 
@@ -118,29 +118,28 @@ You can view and rearrange these relationships in the **Org Chart**, which shows
 
 Every agent — system or custom — has a settings menu with the following sections:
 
-* **Prompt** — the agent's base system prompt. *Read-only on system agents.*
+* **Prompt** — the agent's base system prompt. _Read-only on system agents._
 * **Settings** — the agent's **model** and its **reasoning effort**. The AI Workforce runs on a single reasoning-capable model (**DocBits Pro**), so instead of low-level knobs there's one dial — **Reasoning Effort** — that controls how hard the agent thinks (and therefore how much it costs):
   * **None** — fastest and cheapest; no reasoning.
   * **Low** — quick tasks, light reasoning.
-  * **Medium** *(default)* — balanced quality and cost.
+  * **Medium** _(default)_ — balanced quality and cost.
   * **High** — deep reasoning for harder tasks; higher cost.
   * **X-High** — maximum reasoning; highest cost.
-* **Approval mode** — how much of the agent's work needs human sign-off in the [Inbox](#inbox):
+* **Approval mode** — how much of the agent's work needs human sign-off in the [Inbox](./#inbox):
   * **None** — the agent runs every tool automatically; nothing is sent for approval.
-  * **Critical** *(default)* — only tools marked **critical** require approval; everything else runs automatically. Critical tools are the sensitive, write/external actions (for example *upload/import document*, *update document fields*, *reply to email*, *send notification*). In this mode a critical tool **always** raises an approval request in the Inbox. You can fine-tune individual tools (mark a normally-safe tool as needing approval, or clear a critical one) — these per-tool overrides apply only in Critical mode.
+  * **Critical** _(default)_ — only tools marked **critical** require approval; everything else runs automatically. Critical tools are the sensitive, write/external actions (for example _upload/import document_, _update document fields_, _reply to email_, _send notification_). In this mode a critical tool **always** raises an approval request in the Inbox. You can fine-tune individual tools (mark a normally-safe tool as needing approval, or clear a critical one) — these per-tool overrides apply only in Critical mode.
   * **All** — every tool the agent runs requires approval.
-* **Custom instructions** — free-text where you describe the agent's work habits (this is editable even on system agents). The default template looks like this:
+*   **Custom instructions** — free-text where you describe the agent's work habits (this is editable even on system agents). The default template looks like this:
 
-  > **Classification:** use DocBits' classifier on the uploaded document. Rely on email subject/body only when no document was attached.
-  >
-  > **Field overrides:** none — accept extraction values as-is.
-  >
-  > **Approval:** not configured. (To require human approval for specific actions, name the action and the threshold.)
-  >
-  > **Project assignment:** match against project descriptions; prefer leaving the mission unassigned over forcing a poor match. (To override, list keywords or sender patterns: e.g. `supplier@acme.com → Acme Onboarding`.)
-
-* **Skills** — the tools the agent is allowed to use (for example *upload documents* or *list users*). Each tool is either **critical** (sensitive write/external actions) or non-critical, which drives the approval behavior described above. *Not editable on system agents.*
-* **Agent Pool** — *orchestrators only.* A list of the available agents, where you select which specialists this orchestrator may delegate work to. A specialist must be assigned to an orchestrator here (or to another orchestrator) to do any work; one left unassigned everywhere is not available at all.
+    > **Classification:** use DocBits' classifier on the uploaded document. Rely on email subject/body only when no document was attached.
+    >
+    > **Field overrides:** none — accept extraction values as-is.
+    >
+    > **Approval:** not configured. (To require human approval for specific actions, name the action and the threshold.)
+    >
+    > **Project assignment:** match against project descriptions; prefer leaving the mission unassigned over forcing a poor match. (To override, list keywords or sender patterns: e.g. `supplier@acme.com → Acme Onboarding`.)
+* **Skills** — the tools the agent is allowed to use (for example _upload documents_ or _list users_). Each tool is either **critical** (sensitive write/external actions) or non-critical, which drives the approval behavior described above. _Not editable on system agents._
+* **Agent Pool** — _orchestrators only._ A list of the available agents, where you select which specialists this orchestrator may delegate work to. A specialist must be assigned to an orchestrator here (or to another orchestrator) to do any work; one left unassigned everywhere is not available at all.
 
 ### Creating custom agents
 

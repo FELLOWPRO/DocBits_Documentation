@@ -16,10 +16,10 @@ _**"Costing elements are not properly configured. Please ask your admin to confi
 2. **Export the Data:**
    *   In the next menu, click **TOOLS → Export to Excel**.\\
 
-       <figure><img src="../../../.gitbook/assets/image (433) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
    *   Choose **Export All Rows**, then press **EXPORT**.
 
-       <figure><img src="../../../.gitbook/assets/image (435) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
 3. **Modify the Excel File:**\
    Open the downloaded Excel file and make the following changes:
    * **Rename columns:**
@@ -37,7 +37,7 @@ _**"Costing elements are not properly configured. Please ask your admin to confi
    Below are examples of the Excel file _before_ and _after_ applying the required modifications:
    *   **Before Modification:**
 
-       <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    *   **After Modification:**
 
        <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -56,4 +56,4 @@ _**"Costing elements are not properly configured. Please ask your admin to confi
   * **On Conflict**: Choose a conflict resolution strategy
   *   **Auto-generate ID**: Make sure this option is **checked**\\
 
-      <figure><img src="../../../.gitbook/assets/image (438) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../../../.gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>

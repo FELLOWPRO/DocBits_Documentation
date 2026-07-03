@@ -8,7 +8,7 @@
 * **Set Checkbox:** This sets the state of a checkbox field to either true (checked) or false (unchecked).
 * **Set Field to Text:** This action sets a specified document field to a given text value.
 
-<figure><img src="../../../.gitbook/assets/then1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
 
 ### **2. Document Actions:**
 
@@ -28,7 +28,7 @@
 
 * **Change Status:** Changes the status of a document or task to a specified new status.
 
-<figure><img src="../../../.gitbook/assets/then3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
 
 ### **5. Task Actions:**
 
@@ -36,28 +36,28 @@
   * **Assign Task:** Creates and assigns a task with specific details to an individual or group, including options to notify them via email.
   * **Create a New Task:** Similar to assign but focused on setting up a completely new task within the system.
 
-<figure><img src="../../../.gitbook/assets/then4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
 
 ### **6. Table Actions:**
 
 * **Calculate in Table:** Performs calculations on table data based on specified conditions and stores the results in a designated column.
 * **Change Entries:** Updates entries in a table based on specified conditions.
 
-<figure><img src="../../../.gitbook/assets/then5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
 
 ### **7. Assignee Actions:**
 
 * **Assign User from Field:** Assigns a user to a task or document based on user data stored in a specific field, with an option for a fallback user if the primary is unavailable.
 * **Assign Document to User or Group:** Directly assigns a document to a user or group, ensuring responsibility is designated appropriately.
 
-<figure><img src="../../../.gitbook/assets/then6 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
 
 ### **8. External Interaction Actions:**
 
 * **Call API:** Sends a request to an external API, which can be customized with specific methods, parameters, and data.
 * **Send HTTPS Request:** Similar to API calls but specifically formatted for HTTPS protocols.
 
-<figure><img src="../../../.gitbook/assets/then7 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
 
 ### **9. Advanced Processing:**
 

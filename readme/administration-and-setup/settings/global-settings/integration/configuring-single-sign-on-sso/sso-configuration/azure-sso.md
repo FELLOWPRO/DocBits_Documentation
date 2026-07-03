@@ -49,7 +49,7 @@ Next, assign users or groups to the SSO configuration.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (216) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure></div>
 
 * Go to the \`Groups\` view list and find the assigned groups.
 

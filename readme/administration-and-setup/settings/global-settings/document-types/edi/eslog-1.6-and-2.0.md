@@ -19,7 +19,7 @@ Both eSLOG versions are enabled by default.
 * A list of all available e-docs will appear.
 *   Locate the eSLOG version you want to modify.\\
 
-    <figure><img src="../../../../../.gitbook/assets/image (383) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
 
 ## **Transformation and XML Path Configuration:**
 

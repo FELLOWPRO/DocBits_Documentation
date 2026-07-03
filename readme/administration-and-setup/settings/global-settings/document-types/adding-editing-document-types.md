@@ -14,7 +14,7 @@ DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 * **Navigate:** Go to Settings.
 * **Document Types:** Find the "Document Types" section.
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 13.35.39 (1).png" alt=""><figcaption><p>Settings</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings_navigation_step1.png" alt=""><figcaption><p>Settings</p></figcaption></figure>
 
 ### Adding a new document type
 

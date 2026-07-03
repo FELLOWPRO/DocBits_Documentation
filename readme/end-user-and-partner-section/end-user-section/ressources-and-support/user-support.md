@@ -14,7 +14,7 @@ You can also contact us via our FELLOWPRO page:
 
 Inside the Validation Screen you can directly create tickets for the particular document and include a screenshot of the issue. Simply click on the "Create ticket" button, the support window opens and you can get started immediately.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button (1).png" alt="Create Ticket Button in Validation Screen"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button.png" alt="Create Ticket Button in Validation Screen"><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/validation_screen_support_window.png" alt="Support Window in Validation Screen"><figcaption></figcaption></figure>
 

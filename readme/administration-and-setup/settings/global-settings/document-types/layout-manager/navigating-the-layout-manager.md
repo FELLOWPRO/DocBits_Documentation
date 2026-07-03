@@ -11,7 +11,7 @@
 * Log in to DocBits and navigate to the area where you want to use the Layout Manager.
 * You can find this option in "Manage Document Types".
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-23 um 13.35.39 (1).png" alt=""><figcaption><p>Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/settings_navigation_step1.png" alt=""><figcaption><p>Settings</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-24 um 10.12.05.png" alt=""><figcaption><p>Settings Document Type</p></figcaption></figure>
 

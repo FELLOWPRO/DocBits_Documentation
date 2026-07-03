@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Quantity Export
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 15.00.53.png" alt=""><figcaption></figcaption></figure>
 
 This title indicates that the rule is set up to manage the second approval phase for purchase invoices with an emphasis on the quantity details, ensuring that the quantities on the invoice match those on the original purchase order.
 

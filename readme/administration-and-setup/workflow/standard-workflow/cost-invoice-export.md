@@ -1,6 +1,6 @@
 # Cost Invoice - Export
 
-<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-05-03 um 14.53.28.png" alt=""><figcaption></figcaption></figure>
 
 This title indicates that the rule is specifically configured for managing cost invoices and involves an export action, possibly for reporting, further processing, or integration with other systems.
 

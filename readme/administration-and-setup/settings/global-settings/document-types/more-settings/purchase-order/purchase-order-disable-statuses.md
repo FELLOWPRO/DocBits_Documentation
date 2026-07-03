@@ -29,11 +29,11 @@ In the **PO Matching** screen, a disabled purchase order appears **crossed out**
 1. In the **PO Disable Statuses** setting, you will see a selection field on the left side.
 2.  Clicking this field opens a dropdown list of available PO statuses.\\
 
-    <div align="center"><figure><img src="../../../../../../.gitbook/assets/image (388) (1).png" alt="" width="372"><figcaption></figcaption></figure></div>
+    <div align="center"><figure><img src="../../../../../../.gitbook/assets/image (388).png" alt="" width="372"><figcaption></figcaption></figure></div>
 3. Select one or more statuses by clicking on them. Click again to deselect.
 4.  Click the **Apply** button to save your changes.
 
-    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_5 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/disable_po_status_5.png" alt=""><figcaption></figcaption></figure>
 
 **Available Statuses**
 

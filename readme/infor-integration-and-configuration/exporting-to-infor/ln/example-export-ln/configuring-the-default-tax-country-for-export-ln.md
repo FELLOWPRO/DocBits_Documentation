@@ -82,7 +82,7 @@ HeaderFields=SupplierCode,TaxCountry
 HF_TaxCountry=tax_country_1
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (411) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (411).png" alt=""><figcaption></figcaption></figure>
 
 ### Summary
 

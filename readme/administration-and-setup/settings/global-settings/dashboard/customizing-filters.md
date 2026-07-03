@@ -16,7 +16,7 @@ Using filters allows users to quickly find relevant information and reduce the a
 
 * Click the filter icon or search field.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Customizing filters
 
@@ -34,7 +34,7 @@ Using filters allows users to quickly find relevant information and reduce the a
 
 * Select the field to be filtered (e.g. Status).
 
-<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure></div>
 
 * Define the filter criteria, e.g.: Status filter style.
 
@@ -42,11 +42,11 @@ Using filters allows users to quickly find relevant information and reduce the a
 
 * Dropdown menus: Choose from predefined options.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 * Save the custom filter by clicking "Apply".
 
-<figure><img src="../../../../.gitbook/assets/image (4) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Use combined filters**
 
@@ -66,7 +66,7 @@ Using filters allows users to quickly find relevant information and reduce the a
 * Open the Filters menu.
 * Step 2: Clear or remove the applied filters by clicking "Clear Filters", the X icon next to the selected filter either in the Filters menu or below the Filters bar.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/customizing_filters_9.png" alt=""><figcaption></figcaption></figure>
 

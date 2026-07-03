@@ -12,6 +12,7 @@
 * [Release-opmerkingen](overview-and-basics/release-notes/README.md)
   * [Updates — 21–25 juni 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Updates — 26–30 juni 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
+  * [Updates — 30 juni – 3 juli 2026](overview-and-basics/release-notes/incremental-updates-30-june-3-july-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Algemene Informatie](overview-and-basics/faq/general-information.md)
   * [Document Processing](overview-and-basics/faq/document-processing/README.md)

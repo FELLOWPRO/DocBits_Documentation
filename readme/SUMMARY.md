@@ -5,6 +5,7 @@
 * [Sürüm Notları](overview-and-basics/release-notes/README.md)
   * [Güncellemeler — 21–25 Haziran 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Güncellemeler — 26–30 Haziran 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
+  * [Güncellemeler — 30 Haziran – 3 Temmuz 2026](overview-and-basics/release-notes/incremental-updates-30-june-3-july-2026.md)
 * [End User Section](<README (1).md>)
   * [Global Hızlı Arama](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Site Haritası](end-user-and-partner-section/end-user-section/sitemap.md)

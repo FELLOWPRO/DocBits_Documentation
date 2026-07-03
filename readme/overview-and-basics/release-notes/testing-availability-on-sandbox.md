@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Testing Availability on Sandbox
 
 Stay updated with the latest features, fixes, and configurations available for testing in the **Sandbox environment**. This dedicated environment allows for validation and function checks

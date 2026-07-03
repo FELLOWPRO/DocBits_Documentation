@@ -12,6 +12,7 @@
 * [Note della versione](overview-and-basics/release-notes/README.md)
   * [Atualizações — 21–25 de junho de 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Atualizações — 26–30 de junho de 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
+  * [Atualizações — 30 de junho – 3 de julho de 2026](overview-and-basics/release-notes/incremental-updates-30-june-3-july-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Informazioni generali](overview-and-basics/faq/general-information.md)
   * [Elaborazione del documento](overview-and-basics/faq/document-processing/README.md)

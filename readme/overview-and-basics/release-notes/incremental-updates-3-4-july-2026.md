@@ -1,18 +1,21 @@
 # Note della versione DocBits — 3–4 luglio 2026
 
-_Cosa ha introdotto questo aggiornamento in produzione, spiegato in modo
-semplice. Per ogni servizio viene indicata la versione ora attiva in produzione.
-I servizi non elencati non hanno avuto modifiche visibili ai clienti in questo
-periodo._
+_Una panoramica di ciò che cambia per voi con questa release di DocBits. Ogni
+servizio qui sotto mostra la versione ora in produzione, seguita dalle novità o
+correzioni spiegate in linguaggio semplice — senza numeri di ticket né gergo
+tecnico. I servizi non elencati non hanno avuto modifiche visibili ai clienti in
+questo periodo._
 
 ---
 
 ## Highlights
 
-- **Deploy più puliti in tutta la flotta.** Diversi servizi principali (API,
-  Auto Accounting, Docflow, Extraction, OCR, PO Match) ora si arrestano
-  correttamente durante un rilascio, in modo che un deploy incrementale non
-  rischi più di interrompere una richiesta già in corso.
+- **Deploy senza downtime, in tutta la flotta.** API, Auto Accounting,
+  Docflow, Extraction, OCR e PO Match ora si arrestano in modo pulito quando
+  viene rilasciata una nuova versione. In precedenza, una richiesta in corso
+  durante un deploy poteva essere interrotta; ora ogni richiesta in corso
+  viene completata prima che la versione precedente si fermi, quindi i
+  rilasci non causano più brevi interruzioni per gli utenti.
 - **Miglioramenti all'esportazione delle fatture elettroniche.** Esportare un
   documento verso più configurazioni di esportazione contemporaneamente è ora
   più affidabile: i controlli anti-duplicazione dell'esportazione vengono
@@ -54,6 +57,8 @@ periodo._
 - **Indicizzazione per la ricerca:** aggiunto un indicatore di consegna
   garantita e un nuovo tentativo, in modo che i documenti vengano messi in coda
   in modo affidabile per la ricerca full-text.
+- **Deploy senza downtime:** le richieste in corso vengono ora completate
+  prima che un rilascio riavvii il servizio.
 - Correzioni generali di stabilità che risolvono diversi errori ricorrenti in
   background.
 
@@ -63,8 +68,8 @@ periodo._
 
 ## Auto Accounting — live: `1.18.8`
 
-- **Arresti più puliti** durante i deploy, evitando richieste in corso
-  interrotte.
+- **Deploy senza downtime:** le richieste in corso vengono ora completate
+  prima che un rilascio riavvii il servizio.
 
 ## Barcode Service — live: `1.15.8`
 
@@ -83,6 +88,8 @@ periodo._
 - **Avvio più veloce:** i database vengono ora pre-riscaldati in background.
 - Maggiore resilienza contro brevi interruzioni della connessione al database.
 - Migliorata l'analisi dei campi data per le schede workflow.
+- **Deploy senza downtime:** le richieste in corso vengono ora completate
+  prima che un rilascio riavvii il servizio.
 
 ## Email Service — live: `1.37.9`
 
@@ -97,6 +104,8 @@ periodo._
   su tabelle con una forma insolita o malformata.
 - Maggiore resilienza contro brevi interruzioni della connessione al database
   durante una query.
+- **Deploy senza downtime:** le richieste in corso vengono ora completate
+  prima che un rilascio riavvii il servizio.
 
 ## FTP Service — live: `1.30.3`
 
@@ -114,7 +123,8 @@ periodo._
 
 - **Corretta l'autenticazione OCR** in modo che le chiavi API
   dell'organizzazione funzionino di nuovo correttamente.
-- Arresti più puliti durante i deploy.
+- **Deploy senza downtime:** le richieste in corso vengono ora completate
+  prima che un rilascio riavvii il servizio.
 
 ## Operator Service — live: `1.39.7`
 
@@ -125,7 +135,8 @@ periodo._
 
 - **Corretto un crash** durante l'ordinamento delle quantità PO Match che
   includevano valori vuoti.
-- Arresti più puliti durante i deploy.
+- **Deploy senza downtime:** le richieste in corso vengono ora completate
+  prima che un rilascio riavvii il servizio.
 
 ## Web App — live: `10.36.9`
 

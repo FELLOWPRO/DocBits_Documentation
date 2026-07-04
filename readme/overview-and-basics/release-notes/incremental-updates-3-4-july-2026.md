@@ -1,17 +1,21 @@
 # Informacje o wersji DocBits — 3–4 lipca 2026
 
-_Co przyniosła ta aktualizacja produkcyjna, w prostych słowach. Przy każdej usłudze
-podano wersję obecnie działającą na produkcji. Usługi niewymienione poniżej nie
-miały w tym okresie żadnych zmian widocznych dla klientów._
+_Przegląd tego, co zmienia się dla Państwa w tym wydaniu DocBits. Każda usługa
+poniżej pokazuje wersję obecnie działającą na produkcji, a następnie opisuje
+nowości lub poprawki prostym językiem — bez numerów zgłoszeń i żargonu
+inżynierskiego. Usługi niewymienione poniżej nie miały w tym okresie żadnych
+zmian widocznych dla klientów._
 
 ---
 
 ## Najważniejsze zmiany
 
-- **Czystsze wdrożenia w całej flocie.** Kilka kluczowych usług (API, Auto
-  Accounting, Docflow, Extraction, OCR, PO Match) zamyka się teraz we właściwy
-  sposób podczas wydania, dzięki czemu wdrożenie kroczące nie ryzykuje już
-  przerwania żądania, które było w danym momencie w toku.
+- **Wdrożenia bez przestojów w całej flocie.** API, Auto Accounting, Docflow,
+  Extraction, OCR i PO Match zamykają się teraz czysto podczas wydania nowej
+  wersji. Wcześniej żądanie będące w toku podczas wdrożenia mogło zostać
+  przerwane; teraz każde żądanie w toku jest kończone, zanim stara wersja
+  zostanie zatrzymana, dzięki czemu wydania nie powodują już krótkich
+  zakłóceń dla użytkowników.
 - **Usprawnienia eksportu e-faktur.** Eksport dokumentu do wielu konfiguracji
   eksportu jednocześnie jest teraz bardziej niezawodny — sprawdzanie
   duplikatów eksportu odbywa się raz na całą partię zamiast raz na każdy
@@ -52,6 +56,8 @@ miały w tym okresie żadnych zmian widocznych dla klientów._
 - **Indeksowanie wyszukiwania:** dodano znacznik potwierdzenia dostarczenia
   oraz ponowne próby, dzięki czemu dokumenty są niezawodnie kolejkowane do
   wyszukiwania pełnotekstowego.
+- **Wdrożenia bez przestojów:** żądania w toku są teraz kończone, zanim
+  wydanie ponownie uruchomi usługę.
 - Ogólne poprawki stabilności rozwiązujące kilka powtarzających się błędów
   w tle.
 
@@ -61,8 +67,8 @@ miały w tym okresie żadnych zmian widocznych dla klientów._
 
 ## Auto Accounting — live: `1.18.8`
 
-- **Czystsze zamykanie** podczas wdrożeń, zapobiegające przerywaniu żądań
-  będących w toku.
+- **Wdrożenia bez przestojów:** żądania w toku są teraz kończone, zanim
+  wydanie ponownie uruchomi usługę.
 
 ## Barcode Service — live: `1.15.8`
 
@@ -80,6 +86,8 @@ miały w tym okresie żadnych zmian widocznych dla klientów._
 - **Szybszy start:** bazy danych są teraz wstępnie „rozgrzewane” w tle.
 - Większa odporność na krótkotrwałe zerwania połączenia z bazą danych.
 - Usprawnione parsowanie pól daty w kartach przepływu pracy.
+- **Wdrożenia bez przestojów:** żądania w toku są teraz kończone, zanim
+  wydanie ponownie uruchomi usługę.
 
 ## Email Service — live: `1.37.9`
 
@@ -94,6 +102,8 @@ miały w tym okresie żadnych zmian widocznych dla klientów._
   dla tabel o nietypowym lub zniekształconym kształcie.
 - Większa odporność na krótkotrwałe zerwania połączenia z bazą danych
   w trakcie zapytania.
+- **Wdrożenia bez przestojów:** żądania w toku są teraz kończone, zanim
+  wydanie ponownie uruchomi usługę.
 
 ## FTP Service — live: `1.30.3`
 
@@ -111,7 +121,8 @@ miały w tym okresie żadnych zmian widocznych dla klientów._
 
 - **Naprawiono uwierzytelnianie OCR**, dzięki czemu klucze API organizacji
   ponownie działają poprawnie.
-- Czystsze zamykanie podczas wdrożeń.
+- **Wdrożenia bez przestojów:** żądania w toku są teraz kończone, zanim
+  wydanie ponownie uruchomi usługę.
 
 ## Operator Service — live: `1.39.7`
 
@@ -121,7 +132,8 @@ miały w tym okresie żadnych zmian widocznych dla klientów._
 
 - **Naprawiono awarię** podczas sortowania ilości PO Match zawierających
   puste wartości.
-- Czystsze zamykanie podczas wdrożeń.
+- **Wdrożenia bez przestojów:** żądania w toku są teraz kończone, zanim
+  wydanie ponownie uruchomi usługę.
 
 ## Web App — live: `10.36.9`
 

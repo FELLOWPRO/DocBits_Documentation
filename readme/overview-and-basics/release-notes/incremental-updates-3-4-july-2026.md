@@ -1,17 +1,21 @@
 # Notas de versión de DocBits — 3–4 de julio de 2026
 
-_Lo que esta actualización de producción ofreció, explicado de forma sencilla. Cada
-servicio muestra la versión que ahora está activa en producción. Los servicios que
-no aparecen en la lista no tuvieron cambios visibles para el cliente en este período._
+_Un resumen de lo que ha cambiado para usted en esta versión de DocBits. Cada
+servicio a continuación muestra la versión que ahora está en producción, seguida
+de las novedades o correcciones explicadas en lenguaje sencillo — sin números de
+ticket ni jerga de ingeniería. Los servicios que no aparecen en la lista no
+tuvieron cambios visibles para el cliente en este período._
 
 ---
 
 ## Aspectos destacados
 
-- **Cierres más limpios en todo el sistema.** Varios servicios principales (API,
-  Auto Accounting, Docflow, Extraction, OCR, PO Match) ahora se apagan
-  correctamente durante una versión, de modo que un despliegue continuo ya no
-  corre el riesgo de cortar una solicitud que ya estaba en curso.
+- **Despliegues sin tiempo de inactividad, en toda la flota.** API, Auto
+  Accounting, Docflow, Extraction, OCR y PO Match ahora se apagan de forma
+  limpia cuando se publica una nueva versión. Antes, una solicitud que estaba
+  en curso durante un despliegue podía cortarse; ahora cada solicitud en curso
+  se completa antes de que la versión anterior se detenga, por lo que los
+  despliegues ya no provocan cortes breves para los usuarios.
 - **Mejoras en la exportación de facturas electrónicas.** Exportar un documento
   a varias configuraciones de exportación a la vez ahora es más fiable: las
   comprobaciones de exportación duplicada se ejecutan una vez por lote en lugar
@@ -54,6 +58,8 @@ no aparecen en la lista no tuvieron cambios visibles para el cliente en este per
 - **Indexación de búsqueda:** se añadió un marcador de entrega comprobada y
   reintentos para que los documentos se pongan en cola de forma fiable para la
   búsqueda de texto completo.
+- **Despliegues sin tiempo de inactividad:** las solicitudes en curso ahora se
+  completan antes de que una nueva versión reinicie el servicio.
 - Correcciones generales de estabilidad que resuelven varios errores de fondo
   recurrentes.
 
@@ -63,8 +69,8 @@ no aparecen en la lista no tuvieron cambios visibles para el cliente en este per
 
 ## Auto Accounting — activa: `1.18.8`
 
-- **Cierres más limpios** durante los despliegues, evitando solicitudes
-  interrumpidas que estaban en curso.
+- **Despliegues sin tiempo de inactividad:** las solicitudes en curso ahora se
+  completan antes de que una nueva versión reinicie el servicio.
 
 ## Barcode Service — activa: `1.15.8`
 
@@ -86,6 +92,8 @@ no aparecen en la lista no tuvieron cambios visibles para el cliente en este per
   datos.
 - Mejora en el análisis de campos de fecha para las tarjetas de flujo de
   trabajo.
+- **Despliegues sin tiempo de inactividad:** las solicitudes en curso ahora se
+  completan antes de que una nueva versión reinicie el servicio.
 
 ## Email Service — activa: `1.37.9`
 
@@ -100,6 +108,8 @@ no aparecen en la lista no tuvieron cambios visibles para el cliente en este per
   reconocido y en tablas con una forma inusual o malformada.
 - Mayor resiliencia frente a breves interrupciones de la conexión a la base de
   datos durante una consulta.
+- **Despliegues sin tiempo de inactividad:** las solicitudes en curso ahora se
+  completan antes de que una nueva versión reinicie el servicio.
 
 ## FTP Service — activa: `1.30.3`
 
@@ -117,7 +127,8 @@ no aparecen en la lista no tuvieron cambios visibles para el cliente en este per
 
 - **Se corrigió la autenticación de OCR** para que las claves de API de
   organización vuelvan a funcionar correctamente.
-- Cierres más limpios durante los despliegues.
+- **Despliegues sin tiempo de inactividad:** las solicitudes en curso ahora se
+  completan antes de que una nueva versión reinicie el servicio.
 
 ## Operator Service — activa: `1.39.7`
 
@@ -127,7 +138,8 @@ no aparecen en la lista no tuvieron cambios visibles para el cliente en este per
 
 - **Se corrigió un bloqueo** al ordenar cantidades de PO Match que incluían
   valores vacíos.
-- Cierres más limpios durante los despliegues.
+- **Despliegues sin tiempo de inactividad:** las solicitudes en curso ahora se
+  completan antes de que una nueva versión reinicie el servicio.
 
 ## Web App — activa: `10.36.9`
 

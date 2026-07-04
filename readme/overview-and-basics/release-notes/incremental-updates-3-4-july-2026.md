@@ -1,19 +1,22 @@
 # Notes de version DocBits — 3–4 juillet 2026
 
-_Ce que cette mise à niveau de production a apporté, en langage clair. Chaque
-service indique la version désormais en ligne en production. Les services non
-répertoriés n'ont connu aucune modification visible par le client durant cette
-période._
+_Un tour d'horizon de ce qui change pour vous dans cette version de DocBits.
+Chaque service ci-dessous indique la version désormais en production, suivie des
+nouveautés ou corrections expliquées en langage clair — sans numéros de ticket ni
+jargon d'ingénierie. Les services non répertoriés n'ont connu aucune modification
+visible par le client durant cette période._
 
 ---
 
 ## Points forts
 
-- **Des déploiements plus propres, sur toute la flotte.** Plusieurs services
-  principaux (API, Auto Accounting, Docflow, Extraction, OCR, PO Match)
-  s'arrêtent désormais correctement pendant une release, si bien qu'un
-  déploiement progressif ne risque plus d'interrompre une requête déjà en
-  cours.
+- **Déploiements sans interruption de service, sur toute la flotte.** API,
+  Auto Accounting, Docflow, Extraction, OCR et PO Match s'arrêtent désormais
+  proprement lors de la publication d'une nouvelle version. Auparavant, une
+  requête en cours pendant un déploiement pouvait être interrompue ;
+  désormais, chaque requête en cours se termine avant que l'ancienne version
+  ne s'arrête, si bien que les déploiements ne causent plus de brèves
+  coupures pour les utilisateurs.
 - **Améliorations de l'export des factures électroniques.** L'export d'un
   document vers plusieurs configurations d'export à la fois est désormais
   plus fiable — les vérifications anti-doublon d'export s'exécutent
@@ -58,6 +61,8 @@ période._
 - **Indexation de recherche :** ajout d'un marqueur de preuve de livraison et
   d'une nouvelle tentative afin que les documents soient mis en file
   d'attente de manière fiable pour la recherche plein texte.
+- **Déploiements sans interruption de service :** les requêtes en cours se
+  terminent désormais avant qu'une nouvelle version ne redémarre le service.
 - Corrections générales de stabilité résolvant plusieurs erreurs de fond
   récurrentes.
 
@@ -67,8 +72,8 @@ période._
 
 ## Auto Accounting — en ligne : `1.18.8`
 
-- **Arrêts plus propres** pendant les déploiements, évitant les requêtes en
-  cours interrompues.
+- **Déploiements sans interruption de service :** les requêtes en cours se
+  terminent désormais avant qu'une nouvelle version ne redémarre le service.
 
 ## Barcode Service — en ligne : `1.15.8`
 
@@ -88,6 +93,8 @@ période._
   préchauffées en arrière-plan.
 - Plus résilient face aux brèves coupures de connexion à la base de données.
 - Amélioration de l'analyse des champs de date pour les cartes de workflow.
+- **Déploiements sans interruption de service :** les requêtes en cours se
+  terminent désormais avant qu'une nouvelle version ne redémarre le service.
 
 ## Email Service — en ligne : `1.37.9`
 
@@ -102,6 +109,8 @@ période._
   reconnu et sur les tableaux de forme inhabituelle/malformée.
 - Plus résilient face aux brèves coupures de connexion à la base de données
   en cours de requête.
+- **Déploiements sans interruption de service :** les requêtes en cours se
+  terminent désormais avant qu'une nouvelle version ne redémarre le service.
 
 ## FTP Service — en ligne : `1.30.3`
 
@@ -119,7 +128,8 @@ période._
 
 - **Correction de l'authentification OCR** afin que les clés API
   d'organisation fonctionnent à nouveau correctement.
-- Arrêts plus propres pendant les déploiements.
+- **Déploiements sans interruption de service :** les requêtes en cours se
+  terminent désormais avant qu'une nouvelle version ne redémarre le service.
 
 ## Operator Service — en ligne : `1.39.7`
 
@@ -130,7 +140,8 @@ période._
 
 - **Correction d'un plantage** lors du tri des quantités PO Match incluant
   des valeurs vides.
-- Arrêts plus propres pendant les déploiements.
+- **Déploiements sans interruption de service :** les requêtes en cours se
+  terminent désormais avant qu'une nouvelle version ne redémarre le service.
 
 ## Web App — en ligne : `10.36.9`
 

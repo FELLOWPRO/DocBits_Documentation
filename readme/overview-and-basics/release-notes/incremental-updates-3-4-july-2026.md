@@ -1,17 +1,21 @@
 # DocBits Sürüm Notları — 3–4 Temmuz 2026
 
-_Bu production yükseltmesinin sade bir dille neler sağladığı. Her hizmet, şu anda
-production ortamında canlı olan sürümü gösterir. Listelenmeyen hizmetlerde bu
-dönemde müşteriye yönelik bir değişiklik olmamıştır._
+_Bu DocBits sürümüyle sizin için nelerin değiştiğine dair bir özet. Aşağıdaki her
+hizmet, production'da şu anda çalışan sürümü ve ardından sade bir dille açıklanmış
+yenilikleri veya düzeltmeleri gösterir — bilet numaraları veya mühendislik
+jargonu olmadan. Listelenmeyen hizmetlerde bu dönemde müşteriye yönelik bir
+değişiklik olmamıştır._
 
 ---
 
 ## Öne Çıkanlar
 
-- **Filo genelinde daha temiz dağıtımlar.** Birkaç temel hizmet (API, Auto
-  Accounting, Docflow, Extraction, OCR, PO Match) artık bir sürüm sırasında
-  doğru şekilde kapanıyor, böylece devam eden bir dağıtım artık zaten işlemde
-  olan bir isteği kesme riski taşımıyor.
+- **Filo genelinde kesintisiz dağıtımlar.** API, Auto Accounting, Docflow,
+  Extraction, OCR ve PO Match, yeni bir sürüm yayınlandığında artık düzgün
+  bir şekilde kapanıyor. Daha önce, bir dağıtım sırasında işlemde olan bir
+  istek kesintiye uğrayabiliyordu; artık eski sürüm durmadan önce işlemdeki
+  her istek tamamlanıyor, böylece dağıtımlar kullanıcılar için artık kısa
+  kesintilere neden olmuyor.
 - **E-fatura dışa aktarma iyileştirmeleri.** Bir belgeyi aynı anda birden fazla
   dışa aktarma yapılandırmasına aktarmak artık daha güvenilir — yinelenen dışa
   aktarma kontrolleri öğe başına değil, toplu iş başına bir kez çalışıyor ve
@@ -51,6 +55,8 @@ dönemde müşteriye yönelik bir değişiklik olmamıştır._
 - **Arama indeksleme:** belgelerin tam metin aramaya güvenilir şekilde
   kuyruğa alınması için bir teslimat kanıtı işareti ve yeniden deneme
   eklendi.
+- **Kesintisiz dağıtımlar:** işlemdeki istekler artık bir sürüm hizmeti
+  yeniden başlatmadan önce tamamlanıyor.
 - Birkaç tekrarlayan arka plan hatasını çözen genel kararlılık düzeltmeleri.
 
 ## Auth Service — canlı: `1.68.7`
@@ -59,8 +65,8 @@ dönemde müşteriye yönelik bir değişiklik olmamıştır._
 
 ## Auto Accounting — canlı: `1.18.8`
 
-- Dağıtımlar sırasında **daha temiz kapanmalar**, işlemdeki isteklerin
-  kesilmesini önleyerek.
+- **Kesintisiz dağıtımlar:** işlemdeki istekler artık bir sürüm hizmeti
+  yeniden başlatmadan önce tamamlanıyor.
 
 ## Barcode Service — canlı: `1.15.8`
 
@@ -77,6 +83,8 @@ dönemde müşteriye yönelik bir değişiklik olmamıştır._
 - **Daha hızlı başlangıç:** veritabanları artık arka planda önceden ısıtılıyor.
 - Kısa süreli veritabanı bağlantı kesintilerine karşı daha dayanıklı.
 - İş akışı kartları için geliştirilmiş tarih alanı ayrıştırması.
+- **Kesintisiz dağıtımlar:** işlemdeki istekler artık bir sürüm hizmeti
+  yeniden başlatmadan önce tamamlanıyor.
 
 ## Email Service — canlı: `1.37.9`
 
@@ -90,6 +98,8 @@ dönemde müşteriye yönelik bir değişiklik olmamıştır._
   biçimli tablolarda **çökmeler düzeltildi**.
 - Sorgu sırasında kısa süreli veritabanı bağlantı kesintilerine karşı daha
   dayanıklı.
+- **Kesintisiz dağıtımlar:** işlemdeki istekler artık bir sürüm hizmeti
+  yeniden başlatmadan önce tamamlanıyor.
 
 ## FTP Service — canlı: `1.30.3`
 
@@ -106,7 +116,8 @@ dönemde müşteriye yönelik bir değişiklik olmamıştır._
 
 - **OCR kimlik doğrulaması düzeltildi**, böylece kuruluş API anahtarları
   yeniden doğru şekilde çalışıyor.
-- Dağıtımlar sırasında daha temiz kapanmalar.
+- **Kesintisiz dağıtımlar:** işlemdeki istekler artık bir sürüm hizmeti
+  yeniden başlatmadan önce tamamlanıyor.
 
 ## Operator Service — canlı: `1.39.7`
 
@@ -116,7 +127,8 @@ dönemde müşteriye yönelik bir değişiklik olmamıştır._
 
 - Boş değerler içeren PO Match miktarları sıralanırken oluşan **bir çökme
   düzeltildi**.
-- Dağıtımlar sırasında daha temiz kapanmalar.
+- **Kesintisiz dağıtımlar:** işlemdeki istekler artık bir sürüm hizmeti
+  yeniden başlatmadan önce tamamlanıyor.
 
 ## Web App — canlı: `10.36.9`
 

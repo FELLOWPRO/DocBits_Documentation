@@ -1,17 +1,21 @@
 # DocBits Release-opmerkingen — 3–4 juli 2026
 
-_Wat deze productie-upgrade heeft opgeleverd, in gewone taal. Elke service toont de
-versie die nu live staat op productie. Services die niet zijn vermeld, hadden in dit
-tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
+_Een overzicht van wat er voor u verandert met deze DocBits-release. Elke service
+hieronder toont de versie die nu in productie draait, gevolgd door wat er nieuw of
+opgelost is — in gewone taal, zonder ticketnummers of technisch jargon. Services
+die niet zijn vermeld, hadden in dit tijdvenster geen wijzigingen die zichtbaar
+zijn voor klanten._
 
 ---
 
 ## Hoogtepunten
 
-- **Schonere deployments, over de hele linie.** Verschillende kernservices (API,
-  Auto Accounting, Docflow, Extraction, OCR, PO Match) sluiten nu correct af tijdens
-  een release, zodat een rolling deploy niet langer het risico loopt een verzoek dat
-  al onderweg was af te breken.
+- **Zero-downtime deployments, over de hele linie.** API, Auto Accounting,
+  Docflow, Extraction, OCR en PO Match sluiten nu netjes af wanneer een
+  nieuwe release wordt uitgerold. Voorheen kon een verzoek dat tijdens een
+  deployment nog onderweg was, worden afgebroken; nu wordt elk lopend
+  verzoek afgerond voordat de oude versie stopt, waardoor releases niet
+  langer voor korte haperingen bij gebruikers zorgen.
 - **Verbeteringen in e-invoice-export.** Het exporteren van een document naar
   meerdere exportconfiguraties tegelijk is nu betrouwbaarder — controles op dubbele
   exports draaien nu één keer per batch in plaats van per item, en een nieuw
@@ -49,6 +53,8 @@ tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
 - **Zoekindexering:** een leveringsbewijs-markering en herhaalpoging toegevoegd
   zodat documenten betrouwbaar in de wachtrij voor volledige tekstzoekfunctie worden
   geplaatst.
+- **Zero-downtime deployments:** lopende verzoeken worden nu afgerond voordat
+  een release de service herstart.
 - Algemene stabiliteitsfixes voor verschillende terugkerende achtergrondfouten.
 
 ## Auth Service — live: `1.68.7`
@@ -57,8 +63,8 @@ tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
 
 ## Auto Accounting — live: `1.18.8`
 
-- **Schonere afsluiting** tijdens deployments, waardoor onderbroken
-  onderweg-zijnde verzoeken worden vermeden.
+- **Zero-downtime deployments:** lopende verzoeken worden nu afgerond voordat
+  een release de service herstart.
 
 ## Barcode Service — live: `1.15.8`
 
@@ -75,6 +81,8 @@ tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
 - **Snellere opstart:** databases worden nu op de achtergrond vooraf opgewarmd.
 - Veerkrachtiger tegen korte onderbrekingen van de databaseverbinding.
 - Verbeterde parsing van datumvelden voor workflowkaarten.
+- **Zero-downtime deployments:** lopende verzoeken worden nu afgerond voordat
+  een release de service herstart.
 
 ## Email Service — live: `1.37.9`
 
@@ -89,6 +97,8 @@ tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
   tabellen met een ongebruikelijke/misvormde structuur.
 - Veerkrachtiger tegen korte onderbrekingen van de databaseverbinding halverwege
   een query.
+- **Zero-downtime deployments:** lopende verzoeken worden nu afgerond voordat
+  een release de service herstart.
 
 ## FTP Service — live: `1.30.3`
 
@@ -105,7 +115,8 @@ tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
 
 - **OCR-authenticatie opgelost** zodat organisatie-API-sleutels weer correct
   werken.
-- Schonere afsluiting tijdens deployments.
+- **Zero-downtime deployments:** lopende verzoeken worden nu afgerond voordat
+  een release de service herstart.
 
 ## Operator Service — live: `1.39.7`
 
@@ -115,7 +126,8 @@ tijdvenster geen wijzigingen die zichtbaar zijn voor klanten._
 
 - **Een crash opgelost** bij het sorteren van PO Match-hoeveelheden met lege
   waarden.
-- Schonere afsluiting tijdens deployments.
+- **Zero-downtime deployments:** lopende verzoeken worden nu afgerond voordat
+  een release de service herstart.
 
 ## Web App — live: `10.36.9`
 

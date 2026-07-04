@@ -1,18 +1,21 @@
 # Notas de versão DocBits — 3–4 de julho de 2026
 
-_O que esta atualização de produção trouxe, em linguagem simples. Cada serviço
-mostra a versão agora em produção. Os serviços não listados não tiveram alterações
-visíveis para o cliente nesta janela._
+_Um resumo do que muda para si com esta versão do DocBits. Cada serviço abaixo
+mostra a versão agora em produção, seguida das novidades ou correções explicadas
+em linguagem simples — sem números de ticket nem jargão técnico. Os serviços não
+listados não tiveram alterações visíveis para o cliente nesta janela._
 
 ---
 
 ## Destaques
 
-- **Implementações mais limpas, em toda a frota.** Vários serviços centrais
-  (API, Auto Accounting, Docflow, Extraction, OCR, PO Match) encerram agora
-  corretamente durante uma release, pelo que uma implementação contínua
-  (rolling deploy) deixa de correr o risco de interromper um pedido que já
-  estava em curso.
+- **Implementações sem tempo de inatividade, em toda a frota.** API, Auto
+  Accounting, Docflow, Extraction, OCR e PO Match encerram agora de forma
+  limpa quando é publicada uma nova versão. Anteriormente, um pedido que
+  estava em curso durante uma implementação podia ser interrompido; agora,
+  cada pedido em curso é concluído antes de a versão anterior parar, pelo
+  que as implementações deixam de causar interrupções breves para os
+  utilizadores.
 - **Melhorias na exportação de faturas eletrónicas.** A exportação de um
   documento para múltiplas configurações de exportação em simultâneo é agora
   mais fiável — as verificações de exportação duplicada passam a ser
@@ -54,6 +57,8 @@ visíveis para o cliente nesta janela._
 - **Indexação de pesquisa:** adicionado um marcador de confirmação de entrega
   e nova tentativa, para que os documentos sejam colocados de forma fiável na
   fila para a pesquisa full-text.
+- **Implementações sem tempo de inatividade:** os pedidos em curso são agora
+  concluídos antes de uma nova versão reiniciar o serviço.
 - Correções gerais de estabilidade que resolvem vários erros recorrentes em
   segundo plano.
 
@@ -63,8 +68,8 @@ visíveis para o cliente nesta janela._
 
 ## Auto Accounting — em produção: `1.18.8`
 
-- **Encerramentos mais limpos** durante as implementações, evitando pedidos
-  em curso interrompidos.
+- **Implementações sem tempo de inatividade:** os pedidos em curso são agora
+  concluídos antes de uma nova versão reiniciar o serviço.
 
 ## Barcode Service — em produção: `1.15.8`
 
@@ -83,6 +88,8 @@ visíveis para o cliente nesta janela._
   segundo plano.
 - Mais resiliente a quebras breves de ligação à base de dados.
 - Melhorada a interpretação de campos de data nos cartões de workflow.
+- **Implementações sem tempo de inatividade:** os pedidos em curso são agora
+  concluídos antes de uma nova versão reiniciar o serviço.
 
 ## Email Service — em produção: `1.37.9`
 
@@ -97,6 +104,8 @@ visíveis para o cliente nesta janela._
   reconhecido e em tabelas com uma estrutura invulgar/malformada.
 - Mais resiliente a quebras breves de ligação à base de dados a meio de uma
   consulta.
+- **Implementações sem tempo de inatividade:** os pedidos em curso são agora
+  concluídos antes de uma nova versão reiniciar o serviço.
 
 ## FTP Service — em produção: `1.30.3`
 
@@ -114,7 +123,8 @@ visíveis para o cliente nesta janela._
 
 - **Corrigida a autenticação do OCR**, para que as chaves API da organização
   voltem a funcionar corretamente.
-- Encerramentos mais limpos durante as implementações.
+- **Implementações sem tempo de inatividade:** os pedidos em curso são agora
+  concluídos antes de uma nova versão reiniciar o serviço.
 
 ## Operator Service — em produção: `1.39.7`
 
@@ -124,7 +134,8 @@ visíveis para o cliente nesta janela._
 
 - **Corrigida uma falha** ao ordenar quantidades de PO Match que incluíam
   valores vazios.
-- Encerramentos mais limpos durante as implementações.
+- **Implementações sem tempo de inatividade:** os pedidos em curso são agora
+  concluídos antes de uma nova versão reiniciar o serviço.
 
 ## Web App — em produção: `10.36.9`
 

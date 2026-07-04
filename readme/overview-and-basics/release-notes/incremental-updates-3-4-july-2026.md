@@ -1,17 +1,19 @@
 # DocBits Release Notes — 3–4 July 2026
 
-_What this prod upgrade delivered, in plain language. Each service shows the
-version now live on production. Services not listed had no customer-facing changes
-in this window._
+_A rundown of what changed for you in this DocBits release. Every service below
+lists the version now running in production, followed by what's new or fixed in
+plain language — no ticket numbers, no engineering jargon. Services not listed
+had no customer-facing changes in this window._
 
 ---
 
 ## Highlights
 
-- **Cleaner deploys, fleet-wide.** Several core services (API, Auto Accounting,
-  Docflow, Extraction, OCR, PO Match) now shut down the right way during a
-  release, so a rolling deploy no longer risks cutting off a request that was
-  already in flight.
+- **Zero-downtime deploys, fleet-wide.** API, Auto Accounting, Docflow,
+  Extraction, OCR, and PO Match now shut down cleanly when a new release rolls
+  out. Previously, a request that was mid-flight during a deploy could be cut
+  off; now every in-flight request finishes before the old version stops, so
+  releases no longer cause brief blips for users.
 - **E-invoice export improvements.** Exporting a document to multiple export
   configurations at once is now more reliable — duplicate-export checks run
   once per batch instead of per item, and a new export endpoint prevents the
@@ -46,6 +48,8 @@ in this window._
 - **Master Data Lookup:** fixed a server error (HTTP 500).
 - **Search indexing:** added a delivery-proof marker and retry so documents are
   reliably queued for full-text search.
+- **Zero-downtime deploys:** in-flight requests now finish before a release
+  restarts the service.
 - General stability fixes resolving several recurring background errors.
 
 ## Auth Service — live: `1.68.7`
@@ -54,7 +58,8 @@ in this window._
 
 ## Auto Accounting — live: `1.18.8`
 
-- **Cleaner shutdowns** during deploys, avoiding interrupted in-flight requests.
+- **Zero-downtime deploys:** in-flight requests now finish before a release
+  restarts the service.
 
 ## Barcode Service — live: `1.15.8`
 
@@ -71,6 +76,8 @@ in this window._
 - **Faster startup:** databases are now pre-warmed in the background.
 - More resilient against brief database-connection drops.
 - Improved date-field parsing for workflow cards.
+- **Zero-downtime deploys:** in-flight requests now finish before a release
+  restarts the service.
 
 ## Email Service — live: `1.37.9`
 
@@ -83,6 +90,8 @@ in this window._
 - **Fixed crashes** on documents with an unrecognised document type and on
   tables with an unusual/malformed shape.
 - More resilient against brief database-connection drops mid-query.
+- **Zero-downtime deploys:** in-flight requests now finish before a release
+  restarts the service.
 
 ## FTP Service — live: `1.30.3`
 
@@ -98,7 +107,8 @@ in this window._
 ## OCR Service — live: `1.7.8`
 
 - **Fixed OCR authentication** so organisation API keys work correctly again.
-- Cleaner shutdowns during deploys.
+- **Zero-downtime deploys:** in-flight requests now finish before a release
+  restarts the service.
 
 ## Operator Service — live: `1.39.7`
 
@@ -108,7 +118,8 @@ in this window._
 
 - **Fixed a crash** when sorting PO Match quantities that included empty
   values.
-- Cleaner shutdowns during deploys.
+- **Zero-downtime deploys:** in-flight requests now finish before a release
+  restarts the service.
 
 ## Web App — live: `10.36.9`
 

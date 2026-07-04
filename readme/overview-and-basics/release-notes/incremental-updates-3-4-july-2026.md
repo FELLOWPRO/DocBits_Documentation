@@ -1,18 +1,21 @@
 # DocBits Release-Notizen — 3.–4. Juli 2026
 
-_Was dieses Produktions-Upgrade gebracht hat, in verständlicher Sprache. Bei jedem
-Service ist die Version angegeben, die jetzt in der Produktion live ist. Nicht
-aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
-Änderungen._
+_Ein Überblick darüber, was sich für Sie mit diesem DocBits-Release ändert. Jeder
+Service unten zeigt die Version, die jetzt in der Produktion läuft, gefolgt von dem,
+was neu oder behoben ist — in klarer Sprache, ohne Ticket-Nummern und ohne
+Entwickler-Jargon. Nicht aufgeführte Services hatten in diesem Zeitraum keine für
+Kunden sichtbaren Änderungen._
 
 ---
 
 ## Highlights
 
-- **Sauberere Deploys, fleet-weit.** Mehrere Kern-Services (API, Auto Accounting,
-  Docflow, Extraction, OCR, PO Match) fahren jetzt bei einem Release korrekt
-  herunter, sodass ein rollierendes Deployment keine bereits laufende Anfrage
-  mehr abbricht.
+- **Zero-Downtime-Deployments, flottenweit.** API, Auto Accounting, Docflow,
+  Extraction, OCR und PO Match fahren jetzt bei einem neuen Release sauber
+  herunter. Bisher konnte eine Anfrage, die während eines Deployments gerade
+  in Bearbeitung war, abgebrochen werden; jetzt wird jede laufende Anfrage
+  abgeschlossen, bevor die alte Version stoppt — Releases verursachen dadurch
+  keine kurzen Aussetzer mehr für Nutzer.
 - **Verbesserungen beim E-Rechnungs-Export.** Der Export eines Dokuments in
   mehrere Exportkonfigurationen gleichzeitig ist jetzt zuverlässiger — die
   Duplikatsprüfung beim Export läuft nur noch einmal pro Batch statt einmal pro
@@ -52,6 +55,8 @@ aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
 - **Suchindexierung:** Eine Zustellbestätigungsmarkierung und Wiederholungslogik
   hinzugefügt, damit Dokumente zuverlässig für die Volltextsuche eingereiht
   werden.
+- **Zero-Downtime-Deployments:** Laufende Anfragen werden jetzt abgeschlossen,
+  bevor ein Release den Service neu startet.
 - Allgemeine Stabilitätskorrekturen zur Behebung mehrerer wiederkehrender
   Hintergrundfehler.
 
@@ -61,8 +66,8 @@ aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
 
 ## Auto Accounting — live: `1.18.8`
 
-- **Sauberere Shutdowns** bei Deployments, wodurch unterbrochene laufende
-  Anfragen vermieden werden.
+- **Zero-Downtime-Deployments:** Laufende Anfragen werden jetzt abgeschlossen,
+  bevor ein Release den Service neu startet.
 
 ## Barcode Service — live: `1.15.8`
 
@@ -81,6 +86,8 @@ aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
   aufgewärmt.
 - Widerstandsfähiger gegenüber kurzen Datenbankverbindungsabbrüchen.
 - Verbessertes Parsing von Datumsfeldern bei Workflow-Karten.
+- **Zero-Downtime-Deployments:** Laufende Anfragen werden jetzt abgeschlossen,
+  bevor ein Release den Service neu startet.
 
 ## Email Service — live: `1.37.9`
 
@@ -95,6 +102,8 @@ aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
   Tabellen mit ungewöhnlicher/fehlerhafter Struktur.
 - Widerstandsfähiger gegenüber kurzen Datenbankverbindungsabbrüchen
   mitten in einer Abfrage.
+- **Zero-Downtime-Deployments:** Laufende Anfragen werden jetzt abgeschlossen,
+  bevor ein Release den Service neu startet.
 
 ## FTP Service — live: `1.30.3`
 
@@ -112,7 +121,8 @@ aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
 
 - **OCR-Authentifizierung behoben**, sodass Organisations-API-Schlüssel
   wieder korrekt funktionieren.
-- Sauberere Shutdowns bei Deployments.
+- **Zero-Downtime-Deployments:** Laufende Anfragen werden jetzt abgeschlossen,
+  bevor ein Release den Service neu startet.
 
 ## Operator Service — live: `1.39.7`
 
@@ -122,7 +132,8 @@ aufgeführte Services hatten in diesem Zeitraum keine für Kunden sichtbaren
 
 - **Einen Absturz behoben** beim Sortieren von PO-Match-Mengen, die leere
   Werte enthielten.
-- Sauberere Shutdowns bei Deployments.
+- **Zero-Downtime-Deployments:** Laufende Anfragen werden jetzt abgeschlossen,
+  bevor ein Release den Service neu startet.
 
 ## Web App — live: `10.36.9`
 

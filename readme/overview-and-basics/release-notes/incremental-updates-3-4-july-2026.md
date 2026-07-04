@@ -1,17 +1,20 @@
 # DocBits beleške o izdanju — 3–4. jul 2026.
 
-_Šta je donela ova produkcijska nadogradnja, jednostavnim jezikom. Uz svaki servis
-prikazana je verzija koja je sada aktivna u produkciji. Servisi koji nisu navedeni
-nisu imali izmene vidljive korisnicima u ovom periodu._
+_Pregled onoga što se za vas menja u ovom DocBits izdanju. Svaki servis ispod
+prikazuje verziju koja je sada aktivna u produkciji, praćenu novinama ili
+ispravkama objašnjenim jednostavnim jezikom — bez brojeva tiketa i tehničkog
+žargona. Servisi koji nisu navedeni nisu imali izmene vidljive korisnicima u
+ovom periodu._
 
 ---
 
 ## Najvažnije
 
-- **Čistije primene u celoj floti.** Nekoliko ključnih servisa (API, Auto
-  Accounting, Docflow, Extraction, OCR, PO Match) sada se ispravno gase tokom
-  primene, tako da postepena primena (rolling deploy) više ne rizikuje da
-  prekine zahtev koji je već bio u obradi.
+- **Primene bez prekida rada, u celoj floti.** API, Auto Accounting, Docflow,
+  Extraction, OCR i PO Match sada se čisto gase kada se objavi nova verzija.
+  Ranije je zahtev koji je bio u obradi tokom primene mogao biti prekinut;
+  sada se svaki zahtev u obradi završava pre nego što se stara verzija
+  zaustavi, tako da primene više ne izazivaju kratke prekide za korisnike.
 - **Poboljšanja izvoza e-faktura.** Izvoz dokumenta u više izvoznih
   konfiguracija odjednom sada je pouzdaniji — provere duplog izvoza sada se
   izvršavaju jednom po grupi (batch) umesto po svakoj stavci, a nova izvozna
@@ -50,6 +53,8 @@ nisu imali izmene vidljive korisnicima u ovom periodu._
   serverska greška (HTTP 500).
 - **Indeksiranje pretrage:** dodata potvrda isporuke i ponovni pokušaj tako
   da dokumenti pouzdano budu postavljeni u red za pretragu celog teksta.
+- **Primene bez prekida rada:** zahtevi u obradi se sada završavaju pre nego
+  što primena ponovo pokrene servis.
 - Opšte ispravke stabilnosti kojima je rešeno nekoliko učestalih pozadinskih
   grešaka.
 
@@ -59,8 +64,8 @@ nisu imali izmene vidljive korisnicima u ovom periodu._
 
 ## Auto Accounting — u produkciji: `1.18.8`
 
-- **Čistije gašenje** tokom primena, čime se izbegava prekid zahteva koji su
-  već u obradi.
+- **Primene bez prekida rada:** zahtevi u obradi se sada završavaju pre nego
+  što primena ponovo pokrene servis.
 
 ## Barcode Service — u produkciji: `1.15.8`
 
@@ -77,6 +82,8 @@ nisu imali izmene vidljive korisnicima u ovom periodu._
 - **Brže pokretanje:** baze podataka se sada unapred „zagrevaju" u pozadini.
 - Veća otpornost na kratkotrajne prekide veze sa bazom podataka.
 - Poboljšano parsiranje polja datuma za kartice radnog toka.
+- **Primene bez prekida rada:** zahtevi u obradi se sada završavaju pre nego
+  što primena ponovo pokrene servis.
 
 ## Email Service — u produkciji: `1.37.9`
 
@@ -90,6 +97,8 @@ nisu imali izmene vidljive korisnicima u ovom periodu._
 - **Ispravljeni padovi** na dokumentima sa neprepoznatim tipom dokumenta i
   na tabelama neuobičajenog/neispravnog oblika.
 - Veća otpornost na kratkotrajne prekide veze sa bazom podataka usred upita.
+- **Primene bez prekida rada:** zahtevi u obradi se sada završavaju pre nego
+  što primena ponovo pokrene servis.
 
 ## FTP Service — u produkciji: `1.30.3`
 
@@ -107,7 +116,8 @@ nisu imali izmene vidljive korisnicima u ovom periodu._
 
 - **Ispravljena OCR autentifikacija** tako da API ključevi organizacije
   ponovo ispravno rade.
-- Čistije gašenje tokom primena.
+- **Primene bez prekida rada:** zahtevi u obradi se sada završavaju pre nego
+  što primena ponovo pokrene servis.
 
 ## Operator Service — u produkciji: `1.39.7`
 
@@ -117,7 +127,8 @@ nisu imali izmene vidljive korisnicima u ovom periodu._
 
 - **Ispravljen pad** prilikom sortiranja PO Match količina koje su
   uključivale prazne vrednosti.
-- Čistije gašenje tokom primena.
+- **Primene bez prekida rada:** zahtevi u obradi se sada završavaju pre nego
+  što primena ponovo pokrene servis.
 
 ## Web App — u produkciji: `10.36.9`
 

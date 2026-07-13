@@ -18,7 +18,7 @@
   * [Hotfixes 26.–30. Juni 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
   * [Hotfixes 30. Juni – 3. Juli 2026](overview-and-basics/release-notes/incremental-updates-30-june-3-july-2026.md)
   * [Hotfixes 3.–4. Juli 2026](overview-and-basics/release-notes/incremental-updates-3-4-july-2026.md)
-  * [Hotfixes 9.–13. Juli 2026](overview-and-basics/release-notes/incremental-updates-9-13-july-2026.md)
+  * [Hotfixes 4.–14. Juli 2026](overview-and-basics/release-notes/incremental-updates-4-14-july-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Allgemeine Informationen](overview-and-basics/faq/general-information.md)
   * [Dokumentenverarbeitung](overview-and-basics/faq/document-processing/README.md)

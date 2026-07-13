@@ -7,7 +7,7 @@
   * [Ažuriranja — 26–30. jun 2026.](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
   * [Ažuriranja — 30. jun – 3. jul 2026.](overview-and-basics/release-notes/incremental-updates-30-june-3-july-2026.md)
   * [Ažuriranja — 3–4. jul 2026.](overview-and-basics/release-notes/incremental-updates-3-4-july-2026.md)
-  * [Ažuriranja — 9–13. jul 2026.](overview-and-basics/release-notes/incremental-updates-9-13-july-2026.md)
+  * [Ažuriranja — 4–14. jul 2026.](overview-and-basics/release-notes/incremental-updates-4-14-july-2026.md)
 * [End User Section](<README (1).md>)
   * [Globalna Brza Pretraga](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Mapa Sajta](end-user-and-partner-section/end-user-section/sitemap.md)

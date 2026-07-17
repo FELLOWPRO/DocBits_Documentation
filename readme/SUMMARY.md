@@ -499,6 +499,7 @@
   * [Przetestuj swoje połączenie BOD za pomocą Postman](advanced-functions-and-tools/postman-for-docbits/test-your-bod-connection-with-postman.md)
 * [Importowanie danych dostawcy i zamówień zakupu do DocBits z plików CSV](advanced-functions-and-tools/importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md)
 * [DocNet](advanced-functions-and-tools/docnet/README.md)
+* [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocFlow MCP](advanced-functions-and-tools/docflow-mcp/README.md)
   * [Konfiguracja](advanced-functions-and-tools/docflow-mcp/setup-and-configuration.md)
   * [Narzędzia Workflow](advanced-functions-and-tools/docflow-mcp/workflow-tools.md)

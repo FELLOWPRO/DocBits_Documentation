@@ -493,7 +493,7 @@
 
 ## Funciones y herramientas avanzadas <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
-* [DocNet](advanced-functions-and-tools/docnet/README.md)
+* [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocFlow MCP](advanced-functions-and-tools/docflow-mcp/README.md)
   * [Configuración](advanced-functions-and-tools/docflow-mcp/setup-and-configuration.md)
   * [Herramientas de Flujo de Trabajo](advanced-functions-and-tools/docflow-mcp/workflow-tools.md)

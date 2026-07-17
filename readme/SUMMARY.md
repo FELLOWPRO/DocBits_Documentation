@@ -487,6 +487,7 @@
 
 ## Fonctions et outils avancés <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [Postman pour DocBits](advanced-functions-and-tools/postman-for-docbits/README.md)
   * [Testez votre connexion BOD avec Postman](advanced-functions-and-tools/postman-for-docbits/test-your-bod-connection-with-postman.md)
 * [Importation des données de fournisseur et de commande d'achat dans DocBits à partir de fichiers CSV](advanced-functions-and-tools/importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md)

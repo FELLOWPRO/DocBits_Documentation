@@ -600,6 +600,7 @@
   * [Test uw BOD-verbinding met Postman](advanced-functions-and-tools/postman-for-docbits/test-your-bod-connection-with-postman.md)
 * [SQL Access](advanced-functions-and-tools/sql-access.md)
 * [DocNet](advanced-functions-and-tools/docnet/README.md)
+* [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocFlow MCP](advanced-functions-and-tools/docflow-mcp/README.md)
   * [Installatie en Configuratie](advanced-functions-and-tools/docflow-mcp/setup-and-configuration.md)
   * [Workflow Tools](advanced-functions-and-tools/docflow-mcp/workflow-tools.md)

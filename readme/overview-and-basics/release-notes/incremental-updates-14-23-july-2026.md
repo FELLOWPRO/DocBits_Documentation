@@ -69,7 +69,7 @@ Validation Rules. Ein Katalog von Systemstandardregeln wird mit dem Release
 ausgeliefert; jede Regel bleibt inaktiv, bis Sie sie für den jeweiligen
 Dokumenttyp einschalten.
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Bildschirm „Custom Validation Rules“ mit Systemstandardregeln samt Schweregrad und Statusschaltern"><figcaption><p>Custom Validation Rules: der Regelkatalog eines Dokumenttyps, jede Regel wird einzeln aktiviert</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom-validation-rules-de.png" alt="Bildschirm „Custom Validation Rules“ mit Systemstandardregeln samt Schweregrad und Statusschaltern"><figcaption><p>Custom Validation Rules: der Regelkatalog eines Dokumenttyps, jede Regel wird einzeln aktiviert</p></figcaption></figure>
 
 Jede Regel besteht aus drei Teilen. **Name &#x26; scope** (Name und
 Geltungsbereich) legt fest, wie die Regel heißt, ob sie den Dokumentkopf oder
@@ -78,7 +78,7 @@ als Fehler oder nur als Warnung zählt. **Applies when** (Gilt, wenn) enthält
 die Bedingungen, die entscheiden, für welche Dokumente die Regel läuft;
 bleibt der Abschnitt leer, gilt die Regel für jedes Dokument.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Bildschirm „Edit Rule“ mit den Abschnitten „Name &#x26; scope“ und „Applies when“ einer Validierungsregel"><figcaption><p>Regel bearbeiten: Name, Geltungsbereich und Schweregrad oben, darunter die Applies-when-Bedingungen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-de.png" alt="Bildschirm „Edit Rule“ mit den Abschnitten „Name &#x26; scope“ und „Applies when“ einer Validierungsregel"><figcaption><p>Regel bearbeiten: Name, Geltungsbereich und Schweregrad oben, darunter die Applies-when-Bedingungen</p></figcaption></figure>
 
 **Check** (Prüfung) definiert, was gelten muss — mit einem von sieben
 Prüftypen: Pflichtfeld, Formel über Beträge, Muster (Format oder Regex),
@@ -92,7 +92,7 @@ vergleicht die beiden Felder mit "on or after" (am oder nach) und meldet
 "Due date must be on or after the invoice date.", wenn die Reihenfolge nicht
 stimmt.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Bildschirm „Edit Rule“ mit dem Check-Abschnitt, der das Fälligkeitsdatum gegen das Rechnungsdatum prüft, samt Fehlermeldung und Fehlercode"><figcaption><p>Der Check-Abschnitt: Felder vergleichen, eigene Fehlermeldung und eigener Fehlercode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-de.png" alt="Bildschirm „Edit Rule“ mit dem Check-Abschnitt, der das Fälligkeitsdatum gegen das Rechnungsdatum prüft, samt Fehlermeldung und Fehlercode"><figcaption><p>Der Check-Abschnitt: Felder vergleichen, eigene Fehlermeldung und eigener Fehlercode</p></figcaption></figure>
 
 ### Arbeiten mit Dokumenten
 

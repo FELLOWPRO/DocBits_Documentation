@@ -45,45 +45,66 @@ répertoriés n'ont connu aucune modification visible par le client._
 
 ## Web App — en ligne : `10.44.4`
 
-- **Manage Layouts :** la gestion des mises en page est désormais configurable
-  dans l'application. Les mises en page peuvent être sélectionnées par des
-  règles que vous définissez, au lieu d'être liées à la provenance du
-  document. Vous trouverez la fonction sous Paramètres → Types de document →
-  Manage Layouts.
+### Manage Layouts et règles de validation
+
+Les moteurs de règles livrés côté serveur dans la version précédente disposent
+désormais de leur interface utilisateur, sous Paramètres → Types de document →
+Manage Layouts.
+
+Les mises en page sont des dispositions de champs réutilisables, qui ne sont
+plus liées à la provenance du document. Des règles de sélection décident quelle
+mise en page un document reçoit : elles sont évaluées par priorité, la première
+correspondance l'emporte, avec une mise en page par défaut en repli.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Écran Layouts &#x26; Selection Rules avec les cartes de mise en page et le nouveau commutateur de règles de sélection"><figcaption><p>Layouts &#x26; Selection Rules : des mises en page réutilisables avec sélection par règles</p></figcaption></figure>
 
-- **Règles de validation :** définissez vos propres contrôles sur les valeurs
-  extraites et voyez les échecs signalés sur le document, avec la règle qui
-  s'est déclenchée. Un catalogue de règles système par défaut est livré avec
-  la version ; chaque règle reste désactivée tant que vous ne l'activez pas.
-  Activez la fonctionnalité par type de document sous Custom Validation Rules.
+Les règles de validation vous permettent de définir vos propres contrôles sur
+les valeurs extraites et de voir les échecs signalés sur le document, avec la
+règle qui s'est déclenchée. Un catalogue de règles système par défaut est livré
+avec la version ; chaque règle reste désactivée tant que vous ne l'activez pas.
+Activez la fonctionnalité par type de document sous Custom Validation Rules.
 
 <figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Écran Custom Validation Rules listant les règles système par défaut avec leur sévérité et leurs commutateurs de statut"><figcaption><p>Custom Validation Rules : règles système par défaut, activées par type de document</p></figcaption></figure>
-- **Tickets de support depuis les erreurs :** créez un ticket directement
-  depuis un enregistrement d'erreur. Les tickets embarquent l'environnement et
-  le canal de version, et la capture d'écran ne se bloque plus.
-- **Export du tableau de bord :** les exports utilisent désormais le tableau
-  de bord réellement sélectionné, et l'application vous prévient quand vous
-  exportez un tableau de bord comportant des modifications non enregistrées.
-- **Approbations :** les utilisateurs ne peuvent plus approuver une étape
-  Sales Tax pour laquelle leur groupe n'a pas d'autorisation. L'historique des
-  approbations affiche à nouveau toutes les entrées.
+
+### Travailler avec les documents
+
 - **Documents supprimés :** l'ouverture d'un document supprimé entre-temps
   affiche un message clair au lieu d'erreurs de script.
-- **Comptes supprimés :** la connexion avec un compte supprimé l'indique
-  désormais, au lieu d'échouer sur une erreur générique.
-- **Connexion SSO :** correction d'une erreur à la connexion lorsqu'une autre
-  région était sélectionnée.
+- **Field Validation :** le champ de numéro de page est plus large et saute à
+  la page avec Entrée. Un champ rendu en lecture seule par un script affiche
+  toujours sa connexion de champ.
+- **Extraction de tableaux :** la suppression d'une colonne libère son nom
+  pour réutilisation, et les en-têtes supprimés ne réapparaissent plus dans le
+  tableau enregistré.
+- **Approbations :** les utilisateurs ne peuvent plus approuver une étape
+  Sales Tax pour laquelle leur groupe n'a pas d'autorisation, et l'historique
+  des approbations affiche à nouveau toutes les entrées.
+- **Tâches et notifications :** l'option de suppression est masquée pour les
+  utilisateurs sans droits d'administration.
+
+### Tableau de bord et recherche
+
+- **Export :** les exports utilisent le tableau de bord que vous avez
+  sélectionné, et l'application vous prévient avant l'export d'un tableau de
+  bord comportant des modifications non enregistrées.
+- **Recherche :** Invoice Type est disponible comme champ de recherche, avec
+  sa liste de valeurs.
 - **Journal d'import :** les documents scindés se retrouvent via leur document
   parent, et la colonne Failed Filenames ne liste plus que les fichiers
   réellement en échec ou ignorés.
-- **Page d'import :** ne plante plus pour les organisations dont l'entrée
-  d'abonnement est vide.
-- **Recherche du tableau de bord :** Invoice Type est disponible comme champ
-  de recherche, avec sa liste de valeurs.
-- **Tâches et notifications :** l'option de suppression est masquée pour les
-  utilisateurs sans droits d'administration.
+
+### Connexion
+
+- **Comptes supprimés :** la connexion avec un compte supprimé l'indique, au
+  lieu d'échouer sur une erreur générique.
+- **SSO :** correction d'une erreur à la connexion lorsqu'une autre région
+  était sélectionnée.
+
+### Paramètres et administration
+
+- **Tickets de support :** créez un ticket directement depuis un
+  enregistrement d'erreur. Les tickets embarquent l'environnement et le canal
+  de version, et la capture d'écran ne se bloque plus.
 - **Workflow Builder :** les cartes nouvellement créées ou renommées, les
   modèles d'e-mail et les autres éléments de liste déroulante apparaissent
   immédiatement, sans recharger la page.
@@ -94,17 +115,16 @@ répertoriés n'ont connu aucune modification visible par le client._
 - **Boîte de dialogue Versions des services :** désormais défilable, elle
   inclut le service Auth Bridge et affiche les noms des canaux de version
   Vesta et Nova.
-- **Field Validation :** le champ de numéro de page est plus large et saute à
-  la page avec Entrée. Un champ rendu en lecture seule par un script affiche
-  toujours sa connexion de champ.
-- **Extraction de tableaux :** la suppression d'une colonne libère son nom
-  pour réutilisation, et les en-têtes supprimés ne réapparaissent plus dans le
-  tableau enregistré.
-- **Corrections mineures :** les notifications toast vides sont supprimées, la
-  boîte de dialogue de création/modification d'idée défile, les cases à cocher
-  mal alignées des paramètres de champ sont réalignées, les suppressions de
-  documents bloquées expliquent pourquoi, et les paramètres E-Document gèrent
-  proprement le passage de Default à Custom.
+- **Page d'import :** ne plante plus pour les organisations dont l'entrée
+  d'abonnement est vide.
+
+### Corrections mineures
+
+Les notifications toast vides sont supprimées, la boîte de dialogue de
+création/modification d'idée défile, les cases à cocher mal alignées des
+paramètres de champ sont réalignées, les suppressions de documents bloquées
+expliquent pourquoi, et les paramètres E-Document gèrent proprement le passage
+de Default à Custom.
 
 ## API Service — en ligne : `12.61.8`
 

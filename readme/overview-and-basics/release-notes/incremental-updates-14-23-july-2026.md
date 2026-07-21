@@ -42,45 +42,66 @@ sichtbaren Änderungen._
 
 ## Web App — live: `10.44.4`
 
-- **Layouts Verwalten:** Die Layout-Verwaltung ist jetzt in der App
-  konfigurierbar. Layouts können über von Ihnen definierte Regeln ausgewählt
-  werden, statt an die Herkunft des Dokuments gebunden zu sein. Sie finden die
-  Funktion unter Einstellungen → Dokumenttypen → Layouts Verwalten.
+### Layouts Verwalten (Manage Layouts) und Validierungsregeln
+
+Die im letzten Release serverseitig eingeführten Regelwerke haben jetzt ihre
+Benutzeroberfläche — unter Einstellungen → Dokumenttypen → Layouts Verwalten.
+
+Layouts sind wiederverwendbare Feldanordnungen und nicht mehr daran gebunden,
+woher ein Dokument kam. Auswahlregeln entscheiden, welches Layout ein Dokument
+erhält: ausgewertet nach Priorität, der erste Treffer gewinnt, mit einem
+Standard-Layout als Rückfallebene.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-de.png" alt="Bildschirm „Layout- und Auswahlregeln“ mit Layout-Karten und dem neuen Schalter für Auswahlregeln"><figcaption><p>Layout- und Auswahlregeln: wiederverwendbare Layouts mit regelbasierter Auswahl</p></figcaption></figure>
 
-- **Validierungsregeln:** Definieren Sie eigene Prüfungen auf extrahierten
-  Werten und sehen Sie Verstöße direkt am Dokument markiert — inklusive der
-  Regel, die ausgelöst hat. Ein Katalog von Systemstandardregeln wird mit dem
-  Release ausgeliefert; jede Regel bleibt inaktiv, bis Sie sie aktivieren. Die
-  Funktion schalten Sie pro Dokumenttyp unter Custom Validation Rules ein.
+Mit Validierungsregeln definieren Sie eigene Prüfungen auf extrahierten Werten
+und sehen Verstöße direkt am Dokument markiert — inklusive der Regel, die
+ausgelöst hat. Ein Katalog von Systemstandardregeln wird mit dem Release
+ausgeliefert; jede Regel bleibt inaktiv, bis Sie sie aktivieren. Die Funktion
+schalten Sie pro Dokumenttyp unter Custom Validation Rules ein.
 
 <figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Bildschirm „Custom Validation Rules“ mit Systemstandardregeln samt Schweregrad und Statusschaltern"><figcaption><p>Custom Validation Rules: Systemstandardregeln, aktiviert pro Dokumenttyp</p></figcaption></figure>
-- **Support-Tickets aus Fehlern:** Erstellen Sie ein Ticket direkt aus einem
-  Fehlereintrag. Tickets enthalten Umgebung und Release-Kanal, und die
-  Screenshot-Aufnahme bleibt nicht mehr hängen.
-- **Dashboard-Export:** Exporte verwenden jetzt das tatsächlich ausgewählte
-  Dashboard, und die App warnt, wenn Sie ein Dashboard mit ungespeicherten
-  Änderungen exportieren.
-- **Freigaben:** Benutzer können keinen Sales-Tax-Schritt mehr freigeben, für
-  den ihre Gruppe keine Berechtigung hat. Die Freigabehistorie zeigt wieder
-  alle Einträge.
+
+### Arbeiten mit Dokumenten
+
 - **Gelöschte Dokumente:** Das Öffnen eines zwischenzeitlich gelöschten
   Dokuments zeigt eine verständliche Meldung statt Skriptfehlern.
-- **Gelöschte Konten:** Die Anmeldung mit einem gelöschten Konto sagt das
-  jetzt auch, statt mit einem generischen Fehler fehlzuschlagen.
-- **SSO-Anmeldung:** Fehler behoben, der beim Anmelden auftrat, während eine
-  andere Region ausgewählt war.
+- **Feldvalidierung:** Das Eingabefeld für die Seitenzahl ist breiter und
+  springt mit Enter zur gewählten Seite. Ein per Skript schreibgeschütztes
+  Feld zeigt weiterhin seine Feldverbindung.
+- **Tabellenextraktion:** Das Löschen einer Spalte gibt ihren Namen zur
+  Wiederverwendung frei, und gelöschte Überschriften tauchen nicht mehr in
+  der gespeicherten Tabelle auf.
+- **Freigaben:** Benutzer können keinen Sales-Tax-Schritt mehr freigeben, für
+  den ihre Gruppe keine Berechtigung hat, und die Freigabehistorie zeigt
+  wieder alle Einträge.
+- **Aufgaben und Benachrichtigungen:** Die Löschoption wird für Benutzer ohne
+  Admin-Rechte ausgeblendet.
+
+### Dashboard und Suche
+
+- **Export:** Exporte verwenden das tatsächlich ausgewählte Dashboard, und
+  die App warnt, bevor Sie ein Dashboard mit ungespeicherten Änderungen
+  exportieren.
+- **Suche:** Der Rechnungstyp (Invoice Type) steht als Suchfeld mit seiner
+  Werteliste zur Verfügung.
 - **Importprotokoll:** Aufgeteilte Dokumente lassen sich über ihr
   übergeordnetes Dokument finden, und die Spalte „Failed Filenames“ listet
   nur noch Dateien, die tatsächlich fehlgeschlagen sind oder übersprungen
   wurden.
-- **Import-Seite:** Stürzt bei Organisationen mit leerem Abonnement-Eintrag
-  nicht mehr ab.
-- **Dashboard-Suche:** Der Rechnungstyp (Invoice Type) steht als Suchfeld mit
-  seiner Werteliste zur Verfügung.
-- **Aufgaben und Benachrichtigungen:** Die Löschoption wird für Benutzer ohne
-  Admin-Rechte ausgeblendet.
+
+### Anmeldung
+
+- **Gelöschte Konten:** Die Anmeldung mit einem gelöschten Konto sagt das
+  jetzt auch, statt mit einem generischen Fehler fehlzuschlagen.
+- **SSO:** Fehler behoben, der beim Anmelden auftrat, während eine andere
+  Region ausgewählt war.
+
+### Einstellungen und Administration
+
+- **Support-Tickets:** Erstellen Sie ein Ticket direkt aus einem
+  Fehlereintrag. Tickets enthalten Umgebung und Release-Kanal, und die
+  Screenshot-Aufnahme bleibt nicht mehr hängen.
 - **Workflow Builder:** Neu erstellte oder umbenannte Karten, E-Mail-Vorlagen
   und andere Dropdown-Einträge erscheinen sofort — ohne die Seite neu zu
   laden.
@@ -90,18 +111,16 @@ sichtbaren Änderungen._
   verschwunden; bestehende Auswahlen zeigen Fast.
 - **Dialog „Service-Versionen“:** Jetzt scrollbar, enthält den Auth Bridge
   Service und zeigt die Release-Kanal-Namen Vesta und Nova.
-- **Feldvalidierung:** Das Eingabefeld für die Seitenzahl ist breiter und
-  springt mit Enter zur gewählten Seite. Ein per Skript schreibgeschütztes
-  Feld zeigt weiterhin seine Feldverbindung.
-- **Tabellenextraktion:** Das Löschen einer Spalte gibt ihren Namen zur
-  Wiederverwendung frei, und gelöschte Überschriften tauchen nicht mehr in
-  der gespeicherten Tabelle auf.
-- **Kleinere Korrekturen:** Leere Toast-Benachrichtigungen werden
-  unterdrückt, der Dialog zum Erstellen und Bearbeiten von Ideen scrollt,
-  verrutschte Checkboxen in den Feldeinstellungen sind wieder ausgerichtet,
-  blockierte Dokumentlöschungen erklären den Grund, und die
-  E-Dokument-Einstellungen verarbeiten den Wechsel von Default zu Custom
-  sauber.
+- **Import-Seite:** Stürzt bei Organisationen mit leerem Abonnement-Eintrag
+  nicht mehr ab.
+
+### Kleinere Korrekturen
+
+Leere Toast-Benachrichtigungen werden unterdrückt, der Dialog zum Erstellen
+und Bearbeiten von Ideen scrollt, verrutschte Checkboxen in den
+Feldeinstellungen sind wieder ausgerichtet, blockierte Dokumentlöschungen
+erklären den Grund, und die E-Dokument-Einstellungen verarbeiten den Wechsel
+von Default zu Custom sauber.
 
 ## API Service — live: `12.61.8`
 

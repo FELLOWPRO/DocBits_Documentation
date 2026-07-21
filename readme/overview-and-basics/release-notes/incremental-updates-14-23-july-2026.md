@@ -43,44 +43,67 @@ I servizi non elencati non hanno avuto modifiche visibili ai clienti._
 
 ## Web App — live: `10.44.4`
 
-- **Manage Layouts:** la gestione dei layout è ora configurabile nell'app.
-  I layout possono essere selezionati tramite regole definite da voi invece
-  di essere legati alla provenienza del documento. La trovate in
-  Impostazioni → Tipi di documento → Manage Layouts.
+### Manage Layouts e regole di validazione
+
+I motori di regole arrivati lato server con la release precedente hanno ora
+la loro interfaccia utente, sotto Impostazioni → Tipi di documento →
+Manage Layouts.
+
+I layout sono disposizioni di campi riutilizzabili, non più legate alla
+provenienza del documento. Le regole di selezione decidono quale layout
+riceve un documento: valutate per priorità, vince la prima corrispondenza,
+con un layout predefinito come riserva.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Schermata Layouts &#x26; Selection Rules con le schede dei layout e il nuovo interruttore Selection rules"><figcaption><p>Layouts &#x26; Selection Rules: layout riutilizzabili con selezione basata su regole</p></figcaption></figure>
 
-- **Regole di validazione:** definite i vostri controlli sui valori estratti
-  e vedete gli errori segnalati sul documento, con l'indicazione di quale
-  regola è scattata. Con la release arriva un catalogo di regole predefinite
-  di sistema; ogni regola resta disattivata finché non la attivate. La
-  funzione si abilita per tipo di documento sotto Custom Validation Rules.
+Le regole di validazione vi permettono di definire i vostri controlli sui
+valori estratti e di vedere gli errori segnalati sul documento, con
+l'indicazione di quale regola è scattata. Con la release arriva un catalogo
+di regole predefinite di sistema; ogni regola resta disattivata finché non
+la attivate. La funzione si abilita per tipo di documento sotto Custom
+Validation Rules.
 
 <figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Schermata Custom Validation Rules con l'elenco delle regole predefinite di sistema, gravità e interruttori di stato"><figcaption><p>Custom Validation Rules: regole predefinite di sistema, attivate per tipo di documento</p></figcaption></figure>
-- **Ticket di supporto dagli errori:** create un ticket direttamente da un
-  record di errore. I ticket includono ambiente e canale di rilascio, e la
-  cattura dello screenshot non si blocca più.
-- **Esportazione dashboard:** le esportazioni usano ora la dashboard
-  effettivamente selezionata, e l'app vi avvisa quando esportate una
-  dashboard con modifiche non salvate.
-- **Approvazioni:** gli utenti non possono più approvare un passaggio Sales
-  Tax per cui il loro gruppo non ha i permessi. La cronologia delle
-  approvazioni mostra di nuovo tutte le voci.
+
+### Lavorare con i documenti
+
 - **Documenti eliminati:** aprire un documento eliminato nel frattempo mostra
   un messaggio chiaro invece di errori di script.
-- **Account eliminati:** l'accesso con un account eliminato ora lo segnala
-  esplicitamente, invece di fallire con un errore generico.
-- **Login SSO:** corretto un errore all'accesso quando era selezionata una
-  regione diversa.
+- **Validazione dei campi:** il campo del numero di pagina è più largo e
+  salta alla pagina premendo Invio. Un campo reso di sola lettura da uno
+  script continua a mostrare la sua connessione campo.
+- **Estrazione tabelle:** eliminare una colonna libera il suo nome per il
+  riutilizzo, e le intestazioni eliminate non ricompaiono più nella tabella
+  salvata.
+- **Approvazioni:** gli utenti non possono più approvare un passaggio Sales
+  Tax per cui il loro gruppo non ha i permessi, e la cronologia delle
+  approvazioni mostra di nuovo tutte le voci.
+- **Attività e notifiche:** l'opzione di eliminazione è nascosta agli utenti
+  senza diritti di amministratore.
+
+### Dashboard e ricerca
+
+- **Esportazione:** le esportazioni usano la dashboard che avete selezionato,
+  e l'app vi avvisa prima di esportare una dashboard con modifiche non
+  salvate.
+- **Ricerca:** Invoice Type è disponibile come campo di ricerca con il suo
+  elenco di valori.
 - **Log di importazione:** i documenti suddivisi si trovano tramite il loro
   documento padre, e la colonna Failed Filenames elenca solo i file
   effettivamente falliti o saltati.
-- **Pagina di importazione:** non va più in errore per le organizzazioni con
-  una voce di abbonamento vuota.
-- **Ricerca nella dashboard:** Invoice Type è disponibile come campo di
-  ricerca con il suo elenco di valori.
-- **Attività e notifiche:** l'opzione di eliminazione è nascosta agli utenti
-  senza diritti di amministratore.
+
+### Accesso
+
+- **Account eliminati:** l'accesso con un account eliminato lo segnala
+  esplicitamente, invece di fallire con un errore generico.
+- **SSO:** corretto un errore all'accesso quando era selezionata una regione
+  diversa.
+
+### Impostazioni e amministrazione
+
+- **Ticket di supporto:** create un ticket direttamente da un record di
+  errore. I ticket includono ambiente e canale di rilascio, e la cattura
+  dello screenshot non si blocca più.
 - **Workflow Builder:** le card appena create o rinominate, i modelli e-mail
   e le altre voci dei menu a tendina compaiono subito, senza ricaricare la
   pagina.
@@ -90,17 +113,16 @@ I servizi non elencati non hanno avuto modifiche visibili ai clienti._
   a tendina; le selezioni esistenti mostrano Fast.
 - **Finestra Versioni dei servizi:** ora è scorrevole, include il servizio
   Auth Bridge e mostra i nomi dei canali di rilascio Vesta e Nova.
-- **Validazione dei campi:** il campo del numero di pagina è più largo e
-  salta alla pagina premendo Invio. Un campo reso di sola lettura da uno
-  script continua a mostrare la sua connessione campo.
-- **Estrazione tabelle:** eliminare una colonna libera il suo nome per il
-  riutilizzo, e le intestazioni eliminate non ricompaiono più nella tabella
-  salvata.
-- **Correzioni minori:** le notifiche toast vuote vengono soppresse, la
-  finestra di creazione/modifica delle idee è scorrevole, le caselle
-  disallineate nelle impostazioni dei campi sono di nuovo allineate, le
-  eliminazioni di documenti bloccate spiegano il motivo, e le impostazioni
-  E-Document gestiscono correttamente il passaggio da Default a Custom.
+- **Pagina di importazione:** non va più in errore per le organizzazioni con
+  una voce di abbonamento vuota.
+
+### Correzioni minori
+
+Le notifiche toast vuote vengono soppresse, la finestra di creazione/modifica
+delle idee è scorrevole, le caselle disallineate nelle impostazioni dei campi
+sono di nuovo allineate, le eliminazioni di documenti bloccate spiegano il
+motivo, e le impostazioni E-Document gestiscono correttamente il passaggio da
+Default a Custom.
 
 ## API Service — live: `12.61.8`
 

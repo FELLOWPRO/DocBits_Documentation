@@ -40,7 +40,7 @@ yönelik bir değişiklik olmadı._
 
 ## Web App — canlı: `10.44.4`
 
-### Manage Layouts ve Doğrulama Kuralları
+### Manage Layouts
 
 Önceki sürümde sunucu tarafında yayınlanan kural motorları artık kendi
 kullanıcı arayüzüne kavuştu: Ayarlar → Belge Türleri → Manage Layouts.
@@ -52,14 +52,46 @@ bir varsayılan düzen yedek olarak devreye giriyor.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Düzen kartları ve yeni Seçim kuralları anahtarıyla Layouts &#x26; Selection Rules ekranı"><figcaption><p>Layouts &#x26; Selection Rules: kural tabanlı seçimle yeniden kullanılabilir düzenler</p></figcaption></figure>
 
-Doğrulama Kuralları ile çıkarılan değerler üzerinde kendi denetimlerinizi
-tanımlayabilir ve başarısızlıkları, hangi kuralın tetiklendiği bilgisiyle
-birlikte belge üzerinde işaretlenmiş olarak görebilirsiniz. Sürümle birlikte
-sistem varsayılan kurallarından oluşan bir katalog geliyor; her kural siz
-etkinleştirene kadar kapalı kalıyor. Özelliği belge türü bazında Custom
-Validation Rules altından açın.
+### Doğrulama Kuralları
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Önem derecesi ve durum anahtarlarıyla sistem varsayılan kurallarını listeleyen Custom Validation Rules ekranı"><figcaption><p>Custom Validation Rules: belge türü bazında etkinleştirilen sistem varsayılan kuralları</p></figcaption></figure>
+Doğrulama Kuralları, bir belge işlenirken çıkarılan değerleri otomatik olarak
+denetliyor ve her başarısızlığı, ilgili alana bağlı olarak doğrudan belge
+üzerinde işaretliyor. Amaç: hatalı veriyi belge ERP'nize aktarıldıktan sonra
+değil, doğrulama sırasında yakalamak. Tipik denetimler: fatura tarihinden
+önce olan bir vade tarihi, net toplamı tutturmayan satır kalemleri, yanlış
+biçimde bir IBAN veya KDV numarası ya da boş bırakılmış zorunlu bir alan.
+
+Kuralları Ayarlar → Belge Türleri → Custom Validation Rules altından
+yönetiyorsunuz. Sürümle birlikte sistem varsayılan kurallarından oluşan bir
+katalog geliyor; her kural, o belge türü için siz açana kadar kapalı
+kalıyor.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Önem derecesi ve durum anahtarlarıyla sistem varsayılan kurallarını listeleyen Custom Validation Rules ekranı"><figcaption><p>Custom Validation Rules: bir belge türünün kural kataloğu; her kural tek tek etkinleştiriliyor</p></figcaption></figure>
+
+Her kural üç bölümden oluşuyor. **Name &#x26; scope** (ad ve kapsam),
+kuralın adını, belge başlığını mı yoksa her satırı mı denetlediğini, hatanın
+hangi alana bağlanacağını ve bir başarısızlığın hata mı yoksa yalnızca uyarı
+mı sayılacağını belirliyor. **Applies when** (geçerlilik koşulları), kuralın
+hangi belgelerde çalışacağına karar veren koşulları içeriyor; boş
+bırakırsanız kural tüm belgelere uygulanıyor.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Bir doğrulama kuralının Name &#x26; scope ve Applies when bölümlerini gösteren Edit Rule ekranı"><figcaption><p>Kural düzenleme: üstte ad, kapsam ve önem derecesi, altta Applies-when koşulları</p></figcaption></figure>
+
+**Check** (denetim) bölümü, yedi denetim türünden birini kullanarak neyin
+doğru olması gerektiğini tanımlıyor: zorunlu alan, tutarlar üzerinde bir
+formül, bir desen (biçim veya regex), sayısal aralık, iki alanın
+karşılaştırılması, izin verilen değerlerden oluşan sabit bir liste veya
+adlandırılmış bir List of Values. İşlemi yapan kullanıcıya gösterilen hata
+mesajını ve hata kodunu siz yazıyorsunuz.
+
+"Due date after invoice date" (vade tarihi fatura tarihinden sonra) sistem
+kuralı bu deseni gösteriyor: her iki tarih de doluyken uygulanıyor, iki
+alanı "on or after" (aynı tarihte veya sonrasında) ile karşılaştırıyor ve
+sıralama yanlış olduğunda "Due date must be on or after the invoice date."
+(Vade tarihi, fatura tarihinde veya sonrasında olmalıdır.) mesajını
+bildiriyor.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Vade tarihini fatura tarihiyle karşılaştıran Check bölümünü, hata mesajı ve hata koduyla gösteren Edit Rule ekranı"><figcaption><p>Check bölümü: alan karşılaştırması, özel hata mesajı ve hata kodu</p></figcaption></figure>
 
 ### Belgelerle çalışma
 

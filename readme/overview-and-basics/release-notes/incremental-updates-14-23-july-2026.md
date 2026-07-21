@@ -42,7 +42,7 @@ sichtbaren Änderungen._
 
 ## Web App — live: `10.44.4`
 
-### Layouts Verwalten (Manage Layouts) und Validierungsregeln
+### Layouts Verwalten (Manage Layouts)
 
 Die im letzten Release serverseitig eingeführten Regelwerke haben jetzt ihre
 Benutzeroberfläche — unter Einstellungen → Dokumenttypen → Layouts Verwalten.
@@ -54,13 +54,45 @@ Standard-Layout als Rückfallebene.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-de.png" alt="Bildschirm „Layout- und Auswahlregeln“ mit Layout-Karten und dem neuen Schalter für Auswahlregeln"><figcaption><p>Layout- und Auswahlregeln: wiederverwendbare Layouts mit regelbasierter Auswahl</p></figcaption></figure>
 
-Mit Validierungsregeln definieren Sie eigene Prüfungen auf extrahierten Werten
-und sehen Verstöße direkt am Dokument markiert — inklusive der Regel, die
-ausgelöst hat. Ein Katalog von Systemstandardregeln wird mit dem Release
-ausgeliefert; jede Regel bleibt inaktiv, bis Sie sie aktivieren. Die Funktion
-schalten Sie pro Dokumenttyp unter Custom Validation Rules ein.
+### Validierungsregeln (Validation Rules)
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Bildschirm „Custom Validation Rules“ mit Systemstandardregeln samt Schweregrad und Statusschaltern"><figcaption><p>Custom Validation Rules: Systemstandardregeln, aktiviert pro Dokumenttyp</p></figcaption></figure>
+Validierungsregeln prüfen extrahierte Werte automatisch während der
+Dokumentverarbeitung und markieren jeden Verstoß direkt am Dokument — am
+betroffenen Feld. Das Ziel: fehlerhafte Daten schon bei der Validierung
+abfangen, nicht erst, nachdem das Dokument in Ihr ERP exportiert wurde.
+Typische Prüfungen sind ein Fälligkeitsdatum vor dem Rechnungsdatum,
+Positionen, die sich nicht zur Nettosumme aufsummieren, eine IBAN oder
+USt-IdNr. im falschen Format oder ein leer gelassenes Pflichtfeld.
+
+Sie verwalten die Regeln unter Einstellungen → Dokumenttypen → Custom
+Validation Rules. Ein Katalog von Systemstandardregeln wird mit dem Release
+ausgeliefert; jede Regel bleibt inaktiv, bis Sie sie für den jeweiligen
+Dokumenttyp einschalten.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Bildschirm „Custom Validation Rules“ mit Systemstandardregeln samt Schweregrad und Statusschaltern"><figcaption><p>Custom Validation Rules: der Regelkatalog eines Dokumenttyps, jede Regel wird einzeln aktiviert</p></figcaption></figure>
+
+Jede Regel besteht aus drei Teilen. **Name &#x26; scope** (Name und
+Geltungsbereich) legt fest, wie die Regel heißt, ob sie den Dokumentkopf oder
+jede Position prüft, an welchem Feld der Fehler erscheint und ob ein Verstoß
+als Fehler oder nur als Warnung zählt. **Applies when** (Gilt, wenn) enthält
+die Bedingungen, die entscheiden, für welche Dokumente die Regel läuft;
+bleibt der Abschnitt leer, gilt die Regel für jedes Dokument.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Bildschirm „Edit Rule“ mit den Abschnitten „Name &#x26; scope“ und „Applies when“ einer Validierungsregel"><figcaption><p>Regel bearbeiten: Name, Geltungsbereich und Schweregrad oben, darunter die Applies-when-Bedingungen</p></figcaption></figure>
+
+**Check** (Prüfung) definiert, was gelten muss — mit einem von sieben
+Prüftypen: Pflichtfeld, Formel über Beträge, Muster (Format oder Regex),
+Zahlenbereich, Vergleich zweier Felder, feste Liste erlaubter Werte oder eine
+benannte List of Values. Fehlermeldung und Fehlercode, die der bearbeitende
+Benutzer sieht, schreiben Sie selbst.
+
+Die Systemregel "Due date after invoice date" (Fälligkeitsdatum nach dem
+Rechnungsdatum) zeigt das Muster: Sie greift, wenn beide Daten gefüllt sind,
+vergleicht die beiden Felder mit "on or after" (am oder nach) und meldet
+"Due date must be on or after the invoice date.", wenn die Reihenfolge nicht
+stimmt.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Bildschirm „Edit Rule“ mit dem Check-Abschnitt, der das Fälligkeitsdatum gegen das Rechnungsdatum prüft, samt Fehlermeldung und Fehlercode"><figcaption><p>Der Check-Abschnitt: Felder vergleichen, eigene Fehlermeldung und eigener Fehlercode</p></figcaption></figure>
 
 ### Arbeiten mit Dokumenten
 

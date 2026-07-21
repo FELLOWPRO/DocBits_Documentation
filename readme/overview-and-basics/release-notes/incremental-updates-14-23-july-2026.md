@@ -52,7 +52,7 @@ herkomst van een document. Selectieregels bepalen welke lay-out een document
 krijgt: geëvalueerd op prioriteit, de eerste match wint, met een
 standaard-lay-out als terugvaloptie.
 
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Scherm Layouts &#x26; Selection Rules met lay-outkaarten en de nieuwe schakelaar voor selectieregels"><figcaption><p>Layouts &#x26; Selection Rules: herbruikbare lay-outs met regelgebaseerde selectie</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-nl.png" alt="Scherm Layouts &#x26; Selection Rules met lay-outkaarten en de nieuwe schakelaar voor selectieregels"><figcaption><p>Layouts &#x26; Selection Rules: herbruikbare lay-outs met regelgebaseerde selectie</p></figcaption></figure>
 
 ### Validatieregels
 
@@ -69,7 +69,7 @@ U beheert de regels onder Instellingen → Documenttypen → Custom Validation
 Rules. Een catalogus met standaardregels wordt met de release meegeleverd;
 elke regel blijft uit totdat u deze voor dat documenttype inschakelt.
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Scherm Custom Validation Rules met standaardregels van het systeem, inclusief ernst en statusschakelaars"><figcaption><p>Custom Validation Rules: de regelcatalogus van een documenttype, elke regel afzonderlijk te activeren</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom-validation-rules-nl.png" alt="Scherm Custom Validation Rules met standaardregels van het systeem, inclusief ernst en statusschakelaars"><figcaption><p>Custom Validation Rules: de regelcatalogus van een documenttype, elke regel afzonderlijk te activeren</p></figcaption></figure>
 
 Elke regel bestaat uit drie delen. **Name &#x26; scope** (naam en bereik)
 bepaalt hoe de regel heet, of deze de documentkop of elke afzonderlijke
@@ -78,7 +78,7 @@ overtreding als fout of alleen als waarschuwing telt. **Applies when** (van
 toepassing wanneer) bevat de condities die bepalen op welke documenten de
 regel draait; laat u dit leeg, dan geldt de regel voor elk document.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Scherm Edit Rule met de secties Name &#x26; scope en Applies when van een validatieregel"><figcaption><p>Een regel bewerken: naam, bereik en ernst bovenaan, daaronder de Applies-when-condities</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-nl.png" alt="Scherm Edit Rule met de secties Name &#x26; scope en Applies when van een validatieregel"><figcaption><p>Een regel bewerken: naam, bereik en ernst bovenaan, daaronder de Applies-when-condities</p></figcaption></figure>
 
 **Check** (controle) definieert wat waar moet zijn, met een van zeven
 controletypen: een verplicht veld, een formule over bedragen, een patroon
@@ -93,7 +93,7 @@ ingevuld, vergelijkt de twee velden met "on or after" (op of na), en meldt
 "Due date must be on or after the invoice date." wanneer de volgorde niet
 klopt.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Scherm Edit Rule met de sectie Check die de vervaldatum vergelijkt met de factuurdatum, inclusief foutmelding en foutcode"><figcaption><p>De sectie Check: velden vergelijken, eigen foutmelding en foutcode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-nl.png" alt="Scherm Edit Rule met de sectie Check die de vervaldatum vergelijkt met de factuurdatum, inclusief foutmelding en foutcode"><figcaption><p>De sectie Check: velden vergelijken, eigen foutmelding en foutcode</p></figcaption></figure>
 
 ### Werken met documenten
 

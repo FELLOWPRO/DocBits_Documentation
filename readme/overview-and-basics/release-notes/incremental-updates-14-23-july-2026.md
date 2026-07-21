@@ -36,43 +36,61 @@ Services not listed had no customer-facing changes._
 
 ## Web App — live: `10.44.4`
 
-- **Manage Layouts:** layout management is now configurable in the app.
-  Layouts can be selected by rules you define instead of being tied to where
-  the document came from. You find it under Settings → Document Types →
-  Manage Layouts.
+### Manage Layouts and Validation Rules
+
+The rules engines that shipped server-side in the last release now have their
+user interface, under Settings → Document Types → Manage Layouts.
+
+Layouts are reusable field arrangements, no longer tied to where a document
+came from. Selection rules decide which layout a document gets: evaluated by
+priority, first match wins, with a default fallback.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Layouts &#x26; Selection Rules screen with layout cards and the new Selection rules toggle"><figcaption><p>Layouts &#x26; Selection Rules: reusable layouts with rule-based selection</p></figcaption></figure>
 
-- **Validation Rules:** define your own checks on extracted values and see
-  failures flagged on the document, including which rule fired. A catalogue
-  of system default rules ships with the release; each rule stays off until
-  you activate it. Enable the feature per document type under Custom
-  Validation Rules.
+Validation Rules let you define your own checks on extracted values and see
+failures flagged on the document, including which rule fired. A catalogue of
+system default rules ships with the release; each rule stays off until you
+activate it. Enable the feature per document type under Custom Validation
+Rules.
 
 <figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Custom Validation Rules screen listing system default rules with severity and status toggles"><figcaption><p>Custom Validation Rules: system default rules, activated per document type</p></figcaption></figure>
-- **Support tickets from errors:** create a ticket straight from an error
-  record. Tickets carry the environment and release channel, and the screenshot
-  capture no longer hangs.
-- **Dashboard export:** exports now use the dashboard you actually have
-  selected, and the app warns you when you export a dashboard with unsaved
-  changes.
-- **Approvals:** users can no longer approve a Sales Tax step their group has
-  no permission for. The approval history shows all entries again.
+
+### Working with documents
+
 - **Deleted documents:** opening a document that was deleted in the meantime
   shows a proper message instead of script errors.
-- **Deleted accounts:** logging in with a deleted account now says so, instead
-  of failing with a generic error.
-- **SSO login:** fixed an error when signing in while a different region was
-  selected.
+- **Field Validation:** the page-number input is wider and jumps to the page
+  on Enter. A field made read-only by a script still shows its field
+  connection.
+- **Table extraction:** deleting a column frees its name for re-use, and
+  deleted headers no longer reappear in the saved table.
+- **Approvals:** users can no longer approve a Sales Tax step their group has
+  no permission for, and the approval history shows all entries again.
+- **Tasks and notifications:** the delete option is hidden from users without
+  admin rights.
+
+### Dashboard and search
+
+- **Export:** exports use the dashboard you have selected, and the app warns
+  you before exporting a dashboard with unsaved changes.
+- **Search:** Invoice Type is available as a search field with its list of
+  values.
 - **Import log:** split documents can be found via their parent document, and
   the Failed Filenames column lists only files that actually failed or were
   skipped.
-- **Import page:** no longer crashes for organisations with an empty
-  subscription entry.
-- **Dashboard search:** Invoice Type is available as a search field with its
-  list of values.
-- **Tasks and notifications:** the delete option is hidden from users without
-  admin rights.
+
+### Sign-in
+
+- **Deleted accounts:** logging in with a deleted account says so instead of
+  failing with a generic error.
+- **SSO:** fixed an error when signing in while a different region was
+  selected.
+
+### Settings and administration
+
+- **Support tickets:** create a ticket straight from an error record. Tickets
+  carry the environment and release channel, and the screenshot capture no
+  longer hangs.
 - **Workflow Builder:** newly created or renamed cards, e-mail templates and
   other dropdown items appear immediately, without reloading the page.
 - **Document Types:** new Structured Extraction setting in the extraction
@@ -81,15 +99,15 @@ Services not listed had no customer-facing changes._
   existing selections show Fast.
 - **Service Versions dialog:** now scrollable, includes the Auth Bridge
   service, and shows the release channel names Vesta and Nova.
-- **Field Validation:** the page-number input is wider and jumps to the page
-  on Enter. A field made read-only by a script now still shows its field
-  connection.
-- **Table extraction:** deleting a column frees its name for re-use, and
-  deleted headers no longer reappear in the saved table.
-- **Smaller fixes:** empty toast notifications are suppressed, the new/edit
-  idea dialog scrolls, misaligned checkboxes in field settings are aligned
-  again, blocked document deletions explain why, and E-Document settings
-  handle switching from Default to Custom cleanly.
+- **Import page:** no longer crashes for organisations with an empty
+  subscription entry.
+
+### Smaller fixes
+
+Empty toast notifications are suppressed, the new/edit idea dialog scrolls,
+misaligned checkboxes in field settings are aligned again, blocked document
+deletions explain why, and E-Document settings handle switching from Default
+to Custom cleanly.
 
 ## API Service — live: `12.61.8`
 

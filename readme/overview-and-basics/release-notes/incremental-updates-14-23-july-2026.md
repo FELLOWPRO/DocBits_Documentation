@@ -54,7 +54,7 @@ provenienza del documento. Le regole di selezione decidono quale layout
 riceve un documento: valutate per priorità, vince la prima corrispondenza,
 con un layout predefinito come riserva.
 
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Schermata Layouts &#x26; Selection Rules con le schede dei layout e il nuovo interruttore Selection rules"><figcaption><p>Layouts &#x26; Selection Rules: layout riutilizzabili con selezione basata su regole</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-it.png" alt="Schermata Layouts &#x26; Selection Rules con le schede dei layout e il nuovo interruttore Selection rules"><figcaption><p>Layouts &#x26; Selection Rules: layout riutilizzabili con selezione basata su regole</p></figcaption></figure>
 
 ### Regole di validazione
 
@@ -72,7 +72,7 @@ Validation Rules. Con la release arriva un catalogo di regole predefinite di
 sistema; ogni regola resta disattivata finché non la attivate per quel tipo
 di documento.
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Schermata Custom Validation Rules con l'elenco delle regole predefinite di sistema, gravità e interruttori di stato"><figcaption><p>Custom Validation Rules: il catalogo delle regole di un tipo di documento, con ogni regola attivata singolarmente</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom-validation-rules-it.png" alt="Schermata Custom Validation Rules con l'elenco delle regole predefinite di sistema, gravità e interruttori di stato"><figcaption><p>Custom Validation Rules: il catalogo delle regole di un tipo di documento, con ogni regola attivata singolarmente</p></figcaption></figure>
 
 Ogni regola è composta da tre parti. **Name &#x26; scope** (nome e ambito)
 definisce come si chiama la regola, se controlla l'intestazione del documento
@@ -81,7 +81,7 @@ come errore o solo come avviso. **Applies when** (si applica quando) contiene
 le condizioni che decidono su quali documenti la regola viene eseguita;
 lasciatelo vuoto e la regola si applica a ogni documento.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Schermata Edit Rule con le sezioni Name &#x26; scope e Applies when di una regola di validazione"><figcaption><p>Modifica di una regola: nome, ambito e gravità in alto, le condizioni Applies-when sotto</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-it.png" alt="Schermata Edit Rule con le sezioni Name &#x26; scope e Applies when di una regola di validazione"><figcaption><p>Modifica di una regola: nome, ambito e gravità in alto, le condizioni Applies-when sotto</p></figcaption></figure>
 
 **Check** (controllo) definisce che cosa deve essere vero, usando uno dei
 sette tipi di controllo: un campo obbligatorio, una formula sugli importi,
@@ -96,7 +96,7 @@ entrambe le date sono compilate, confronta i due campi con "on or after"
 (uguale o successiva) e, quando l'ordine è sbagliato, segnala "Due date must
 be on or after the invoice date."
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Schermata Edit Rule con la sezione Check che confronta la data di scadenza con la data della fattura, con messaggio e codice di errore"><figcaption><p>La sezione Check: confronto tra campi, messaggio di errore e codice di errore personalizzati</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-it.png" alt="Schermata Edit Rule con la sezione Check che confronta la data di scadenza con la data della fattura, con messaggio e codice di errore"><figcaption><p>La sezione Check: confronto tra campi, messaggio di errore e codice di errore personalizzati</p></figcaption></figure>
 
 ### Lavorare con i documenti
 

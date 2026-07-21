@@ -1,5 +1,7 @@
 # Notes de version
 
+> **Dernière version de correctifs :** [Hotfixes 14–23 juillet 2026](incremental-updates-14-23-july-2026.md) : les changements de la mise à niveau de production du 23 juillet 2026, dont les nouvelles fonctions Manage Layouts et règles de validation. Toutes les pages de correctifs figurent dans la navigation sous Notes de version.
+
 ## **Release R1.0 23/24 mai 2026**
 
 > **Disponibilité Sandbox :** 28 avril 2026

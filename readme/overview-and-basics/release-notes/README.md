@@ -1,5 +1,7 @@
 # Beleške o izdanju
 
+> **Najnovije hotfix izdanje:** [Ažuriranja — 14–23. jul 2026.](incremental-updates-14-23-july-2026.md): šta se promenilo u produkcijskoj nadogradnji 23. jula 2026, uključujući nove funkcije Manage Layouts i pravila validacije. Sve hotfix stranice nalaze se u navigaciji pod Beleške o izdanju.
+
 ## **Izdanje R1.0 13/14. jun 2026.**
 
 > **Dostupnost na Sandbox-u:** 28. april 2026.

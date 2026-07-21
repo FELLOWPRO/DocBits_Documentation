@@ -41,7 +41,7 @@ wijzigingen die zichtbaar zijn voor klanten._
 
 ## Web App — live: `10.44.4`
 
-### Manage Layouts en validatieregels
+### Manage Layouts
 
 De regelsystemen die in de vorige release aan de serverkant zijn geleverd,
 hebben nu hun gebruikersinterface — te vinden onder Instellingen →
@@ -54,13 +54,46 @@ standaard-lay-out als terugvaloptie.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Scherm Layouts &#x26; Selection Rules met lay-outkaarten en de nieuwe schakelaar voor selectieregels"><figcaption><p>Layouts &#x26; Selection Rules: herbruikbare lay-outs met regelgebaseerde selectie</p></figcaption></figure>
 
-Met validatieregels definieert u uw eigen controles op geëxtraheerde waarden
-en ziet u fouten gemarkeerd op het document, inclusief welke regel is
-geactiveerd. Een catalogus met standaardregels wordt met de release
-meegeleverd; elke regel blijft uit totdat u deze activeert. Schakel de
-functie per documenttype in onder Custom Validation Rules.
+### Validatieregels
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Scherm Custom Validation Rules met standaardregels van het systeem, inclusief ernst en statusschakelaars"><figcaption><p>Custom Validation Rules: standaardregels van het systeem, per documenttype te activeren</p></figcaption></figure>
+Validatieregels controleren geëxtraheerde waarden automatisch tijdens de
+verwerking van een document en markeren elke fout direct op het document,
+gekoppeld aan het veld waar het om gaat. Het doel: foute gegevens opsporen
+tijdens de validatie, niet pas nadat het document naar uw ERP is
+geëxporteerd. Typische controles zijn een vervaldatum die vóór de
+factuurdatum ligt, regelposten die niet optellen tot het nettototaal, een
+IBAN of btw-nummer in het verkeerde formaat, of een verplicht veld dat leeg
+is gebleven.
+
+U beheert de regels onder Instellingen → Documenttypen → Custom Validation
+Rules. Een catalogus met standaardregels wordt met de release meegeleverd;
+elke regel blijft uit totdat u deze voor dat documenttype inschakelt.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Scherm Custom Validation Rules met standaardregels van het systeem, inclusief ernst en statusschakelaars"><figcaption><p>Custom Validation Rules: de regelcatalogus van een documenttype, elke regel afzonderlijk te activeren</p></figcaption></figure>
+
+Elke regel bestaat uit drie delen. **Name &#x26; scope** (naam en bereik)
+bepaalt hoe de regel heet, of deze de documentkop of elke afzonderlijke
+regelpost controleert, aan welk veld de fout wordt gekoppeld, en of een
+overtreding als fout of alleen als waarschuwing telt. **Applies when** (van
+toepassing wanneer) bevat de condities die bepalen op welke documenten de
+regel draait; laat u dit leeg, dan geldt de regel voor elk document.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Scherm Edit Rule met de secties Name &#x26; scope en Applies when van een validatieregel"><figcaption><p>Een regel bewerken: naam, bereik en ernst bovenaan, daaronder de Applies-when-condities</p></figcaption></figure>
+
+**Check** (controle) definieert wat waar moet zijn, met een van zeven
+controletypen: een verplicht veld, een formule over bedragen, een patroon
+(formaat of regex), een numeriek bereik, een vergelijking van twee velden,
+een vaste lijst met toegestane waarden, of een benoemde List of Values. De
+foutmelding en foutcode die de verwerkende gebruiker te zien krijgt,
+schrijft u zelf.
+
+De systeemregel "Due date after invoice date" (vervaldatum na factuurdatum)
+laat het patroon zien: de regel is van toepassing wanneer beide datums zijn
+ingevuld, vergelijkt de twee velden met "on or after" (op of na), en meldt
+"Due date must be on or after the invoice date." wanneer de volgorde niet
+klopt.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Scherm Edit Rule met de sectie Check die de vervaldatum vergelijkt met de factuurdatum, inclusief foutmelding en foutcode"><figcaption><p>De sectie Check: velden vergelijken, eigen foutmelding en foutcode</p></figcaption></figure>
 
 ### Werken met documenten
 

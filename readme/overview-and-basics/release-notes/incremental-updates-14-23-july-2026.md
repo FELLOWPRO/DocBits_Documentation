@@ -36,7 +36,7 @@ Services not listed had no customer-facing changes._
 
 ## Web App — live: `10.44.4`
 
-### Manage Layouts and Validation Rules
+### Manage Layouts
 
 The rules engines that shipped server-side in the last release now have their
 user interface, under Settings → Document Types → Manage Layouts.
@@ -47,13 +47,41 @@ priority, first match wins, with a default fallback.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Layouts &#x26; Selection Rules screen with layout cards and the new Selection rules toggle"><figcaption><p>Layouts &#x26; Selection Rules: reusable layouts with rule-based selection</p></figcaption></figure>
 
-Validation Rules let you define your own checks on extracted values and see
-failures flagged on the document, including which rule fired. A catalogue of
-system default rules ships with the release; each rule stays off until you
-activate it. Enable the feature per document type under Custom Validation
-Rules.
+### Validation Rules
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Custom Validation Rules screen listing system default rules with severity and status toggles"><figcaption><p>Custom Validation Rules: system default rules, activated per document type</p></figcaption></figure>
+Validation Rules check extracted values automatically while a document is
+processed, and flag every failure directly on the document, attached to the
+field it concerns. The goal: catch bad data during validation, not after the
+document has been exported to your ERP. Typical checks are a due date that
+lies before the invoice date, line items that do not add up to the net total,
+an IBAN or VAT ID in the wrong format, or a required field left empty.
+
+You manage the rules under Settings → Document Types → Custom Validation
+Rules. A catalogue of system default rules ships with the release; every rule
+stays off until you switch it on for that document type.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Custom Validation Rules screen listing system default rules with severity and status toggles"><figcaption><p>Custom Validation Rules: the rule catalogue for a document type, each rule activated individually</p></figcaption></figure>
+
+Every rule is built from three parts. **Name &#x26; scope** says what the rule
+is called, whether it checks the document header or each line, which field
+the error attaches to, and whether a failure counts as an error or only a
+warning. **Applies when** holds the conditions that decide which documents
+the rule runs on; leave it empty and the rule applies to every document.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Edit Rule screen showing Name &#x26; scope and Applies when sections of a validation rule"><figcaption><p>Editing a rule: name, scope and severity on top, the Applies-when conditions below</p></figcaption></figure>
+
+**Check** defines what must be true, using one of seven check types: a
+required field, a formula over amounts, a pattern (format or regex), a
+numeric range, a comparison of two fields, a fixed list of allowed values,
+or a named List of Values. The error message and error code shown to the
+processing user are yours to write.
+
+The system rule "Due date after invoice date" shows the pattern: it applies
+when both dates are filled, compares the two fields with "on or after", and
+reports "Due date must be on or after the invoice date." when the order is
+wrong.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Edit Rule screen showing the Check section comparing due date against invoice date, with error message and error code"><figcaption><p>The Check section: compare fields, custom error message and error code</p></figcaption></figure>
 
 ### Working with documents
 

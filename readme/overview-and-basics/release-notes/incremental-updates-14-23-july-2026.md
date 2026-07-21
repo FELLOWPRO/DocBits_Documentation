@@ -40,7 +40,7 @@ korisnicima._
 
 ## Web App — u produkciji: `10.44.4`
 
-### Manage Layouts i pravila validacije
+### Manage Layouts
 
 Sistemi pravila koji su u prošlom izdanju stigli na serversku stranu sada
 imaju svoj korisnički interfejs, pod Settings → Document Types → Manage
@@ -53,13 +53,42 @@ raspored služi kao rezerva.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Ekran Layouts &#x26; Selection Rules sa karticama rasporeda i novim prekidačem Selection rules"><figcaption><p>Layouts &#x26; Selection Rules: višekratno upotrebljivi rasporedi sa izborom zasnovanim na pravilima</p></figcaption></figure>
 
-Pravila validacije omogućavaju vam da definišete sopstvene provere izvučenih
-vrednosti i vidite neuspehe označene na dokumentu, uključujući i to koje se
-pravilo aktiviralo. Katalog podrazumevanih sistemskih pravila isporučuje se
-sa izdanjem; svako pravilo ostaje isključeno dok ga ne aktivirate. Funkciju
-uključujete po tipu dokumenta pod Custom Validation Rules.
+### Validation Rules
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ekran Custom Validation Rules sa listom podrazumevanih sistemskih pravila, ozbiljnošću i prekidačima statusa"><figcaption><p>Custom Validation Rules: podrazumevana sistemska pravila, aktiviraju se po tipu dokumenta</p></figcaption></figure>
+Pravila validacije automatski proveravaju izvučene vrednosti dok se dokument
+obrađuje i svaki neuspeh označavaju direktno na dokumentu, vezan za polje na
+koje se odnosi. Cilj: uhvatiti loše podatke tokom validacije, a ne tek pošto
+je dokument izvezen u vaš ERP. Tipične provere su datum dospeća koji leži
+pre datuma fakture, stavke koje se ne sabiraju u neto ukupan iznos, IBAN ili
+PDV broj u pogrešnom formatu, ili obavezno polje ostavljeno prazno.
+
+Pravilima upravljate pod Settings → Document Types → Custom Validation
+Rules. Katalog podrazumevanih sistemskih pravila isporučuje se sa izdanjem;
+svako pravilo ostaje isključeno dok ga ne uključite za taj tip dokumenta.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ekran Custom Validation Rules sa listom podrazumevanih sistemskih pravila, ozbiljnošću i prekidačima statusa"><figcaption><p>Custom Validation Rules: katalog pravila za tip dokumenta, svako pravilo se aktivira pojedinačno</p></figcaption></figure>
+
+Svako pravilo se sastoji iz tri dela. **Name &#x26; scope** (naziv i opseg)
+određuje kako se pravilo zove, da li proverava zaglavlje dokumenta ili svaki
+red, za koje polje se greška vezuje i da li se neuspeh računa kao greška ili
+samo kao upozorenje. **Applies when** (važi kada) sadrži uslove koji
+odlučuju na kojim dokumentima se pravilo izvršava; ostavite ih prazne i
+pravilo važi za svaki dokument.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Ekran Edit Rule sa odeljcima Name &#x26; scope i Applies when jednog pravila validacije"><figcaption><p>Uređivanje pravila: naziv, opseg i ozbiljnost gore, uslovi Applies when ispod</p></figcaption></figure>
+
+**Check** (provera) definiše šta mora da bude tačno, koristeći jedan od
+sedam tipova provere: obavezno polje, formula nad iznosima, obrazac (format
+ili regex), numerički opseg, poređenje dva polja, fiksna lista dozvoljenih
+vrednosti ili imenovana List of Values. Poruku o grešci i kod greške koji se
+prikazuju korisniku koji obrađuje dokument pišete sami.
+
+Sistemsko pravilo „Due date after invoice date" (datum dospeća posle datuma
+fakture) pokazuje obrazac: važi kada su oba datuma popunjena, poredi dva
+polja operatorom „on or after" (na dan ili posle) i prijavljuje „Due date
+must be on or after the invoice date." kada je redosled pogrešan.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Ekran Edit Rule sa odeljkom Check koji poredi datum dospeća sa datumom fakture, uz poruku o grešci i kod greške"><figcaption><p>Odeljak Check: poređenje polja, sopstvena poruka o grešci i kod greške</p></figcaption></figure>
 
 ### Rad sa dokumentima
 

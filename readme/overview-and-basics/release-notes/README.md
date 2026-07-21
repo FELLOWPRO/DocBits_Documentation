@@ -1,5 +1,7 @@
 # Sürüm Notları
 
+> **En yeni hotfix sürümü:** [Güncellemeler — 14–23 Temmuz 2026](incremental-updates-14-23-july-2026.md): 23 Temmuz 2026 üretim yükseltmesiyle nelerin değiştiği, yeni Manage Layouts ve Doğrulama Kuralları özellikleri dahil. Tüm hotfix sayfaları gezinmede Sürüm Notları altında yer alır.
+
 ## **Release R1.0 13/14 Haziran 2026**
 
 > **Sandbox Kullanılabilirliği:** 28 Nisan 2026

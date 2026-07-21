@@ -1,8 +1,9 @@
-# DocBits Release Notes — 14–21 July 2026
+# DocBits Release Notes — 14–23 July 2026
 
-_What changed in the DocBits release rolled out between 15 and 21 July 2026 (the
-Nova channel update). Each service lists the version now live, then what's new
-or fixed in plain language. Services not listed had no customer-facing changes._
+_What changed in the DocBits production upgrade on 23 July 2026 (the Nova
+channel update), covering everything since the 14 July release. Each service
+lists the version now live, then what's new or fixed in plain language.
+Services not listed had no customer-facing changes._
 
 ---
 

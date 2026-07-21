@@ -41,44 +41,66 @@ wijzigingen die zichtbaar zijn voor klanten._
 
 ## Web App — live: `10.44.4`
 
-- **Manage Layouts:** lay-outbeheer is nu configureerbaar in de app.
-  Lay-outs kunnen worden geselecteerd via regels die u zelf definieert, in
-  plaats van gekoppeld te zijn aan de herkomst van het document. U vindt het
-  onder Instellingen → Documenttypen → Manage Layouts.
+### Manage Layouts en validatieregels
+
+De regelsystemen die in de vorige release aan de serverkant zijn geleverd,
+hebben nu hun gebruikersinterface — te vinden onder Instellingen →
+Documenttypen → Manage Layouts.
+
+Lay-outs zijn herbruikbare veldindelingen, niet langer gekoppeld aan de
+herkomst van een document. Selectieregels bepalen welke lay-out een document
+krijgt: geëvalueerd op prioriteit, de eerste match wint, met een
+standaard-lay-out als terugvaloptie.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Scherm Layouts &#x26; Selection Rules met lay-outkaarten en de nieuwe schakelaar voor selectieregels"><figcaption><p>Layouts &#x26; Selection Rules: herbruikbare lay-outs met regelgebaseerde selectie</p></figcaption></figure>
 
-- **Validatieregels:** definieer uw eigen controles op geëxtraheerde waarden
-  en zie fouten gemarkeerd op het document, inclusief welke regel is
-  geactiveerd. Een catalogus met standaardregels wordt met de release
-  meegeleverd; elke regel blijft uit totdat u deze activeert. Schakel de
-  functie per documenttype in onder Custom Validation Rules.
+Met validatieregels definieert u uw eigen controles op geëxtraheerde waarden
+en ziet u fouten gemarkeerd op het document, inclusief welke regel is
+geactiveerd. Een catalogus met standaardregels wordt met de release
+meegeleverd; elke regel blijft uit totdat u deze activeert. Schakel de
+functie per documenttype in onder Custom Validation Rules.
 
 <figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Scherm Custom Validation Rules met standaardregels van het systeem, inclusief ernst en statusschakelaars"><figcaption><p>Custom Validation Rules: standaardregels van het systeem, per documenttype te activeren</p></figcaption></figure>
-- **Supporttickets vanuit fouten:** maak een ticket rechtstreeks vanuit een
-  foutmelding. Tickets bevatten de omgeving en het releasekanaal, en het
-  vastleggen van de schermafbeelding blijft niet langer hangen.
-- **Dashboardexport:** exports gebruiken nu het dashboard dat u daadwerkelijk
-  hebt geselecteerd, en de app waarschuwt wanneer u een dashboard met
-  niet-opgeslagen wijzigingen exporteert.
-- **Goedkeuringen:** gebruikers kunnen niet langer een Sales Tax-stap
-  goedkeuren waarvoor hun groep geen rechten heeft. De goedkeuringshistorie
-  toont weer alle vermeldingen.
+
+### Werken met documenten
+
 - **Verwijderde documenten:** het openen van een document dat inmiddels is
   verwijderd, toont een nette melding in plaats van scriptfouten.
-- **Verwijderde accounts:** aanmelden met een verwijderd account meldt dat nu
-  duidelijk, in plaats van te mislukken met een algemene fout.
-- **SSO-aanmelding:** een fout opgelost bij het aanmelden terwijl een andere
-  regio was geselecteerd.
+- **Veldvalidatie:** het invoerveld voor het paginanummer is breder en
+  springt bij Enter naar de pagina. Een veld dat door een script
+  alleen-lezen is gemaakt, toont nog steeds zijn veldkoppeling.
+- **Tabelextractie:** het verwijderen van een kolom maakt de naam weer
+  beschikbaar voor hergebruik, en verwijderde koppen duiken niet langer
+  opnieuw op in de opgeslagen tabel.
+- **Goedkeuringen:** gebruikers kunnen niet langer een Sales Tax-stap
+  goedkeuren waarvoor hun groep geen rechten heeft, en de
+  goedkeuringshistorie toont weer alle vermeldingen.
+- **Taken en meldingen:** de verwijderoptie is verborgen voor gebruikers
+  zonder beheerdersrechten.
+
+### Dashboard en zoeken
+
+- **Export:** exports gebruiken het dashboard dat u hebt geselecteerd, en de
+  app waarschuwt voordat u een dashboard met niet-opgeslagen wijzigingen
+  exporteert.
+- **Zoeken:** Invoice Type is beschikbaar als zoekveld, inclusief de
+  bijbehorende waardenlijst.
 - **Importlogboek:** gesplitste documenten zijn vindbaar via hun
   bovenliggende document, en de kolom Failed Filenames toont alleen bestanden
   die daadwerkelijk zijn mislukt of overgeslagen.
-- **Importpagina:** crasht niet langer voor organisaties met een leeg
-  abonnementsrecord.
-- **Dashboardzoekfunctie:** Invoice Type is beschikbaar als zoekveld,
-  inclusief de bijbehorende waardenlijst.
-- **Taken en meldingen:** de verwijderoptie is verborgen voor gebruikers
-  zonder beheerdersrechten.
+
+### Aanmelden
+
+- **Verwijderde accounts:** aanmelden met een verwijderd account meldt dat
+  nu duidelijk, in plaats van te mislukken met een algemene fout.
+- **SSO:** een fout opgelost bij het aanmelden terwijl een andere regio was
+  geselecteerd.
+
+### Instellingen en beheer
+
+- **Supporttickets:** maak een ticket rechtstreeks vanuit een foutmelding.
+  Tickets bevatten de omgeving en het releasekanaal, en het vastleggen van
+  de schermafbeelding blijft niet langer hangen.
 - **Workflow Builder:** nieuw aangemaakte of hernoemde kaarten,
   e-mailsjablonen en andere keuzelijstitems verschijnen direct, zonder de
   pagina te herladen.
@@ -88,17 +110,16 @@ wijzigingen die zichtbaar zijn voor klanten._
   verdwenen; bestaande selecties tonen Fast.
 - **Dialoogvenster Serviceversies:** is nu scrollbaar, bevat de Auth
   Bridge-service en toont de releasekanaalnamen Vesta en Nova.
-- **Veldvalidatie:** het invoerveld voor het paginanummer is breder en
-  springt bij Enter naar de pagina. Een veld dat door een script
-  alleen-lezen is gemaakt, toont nu nog steeds zijn veldkoppeling.
-- **Tabelextractie:** het verwijderen van een kolom maakt de naam weer
-  beschikbaar voor hergebruik, en verwijderde koppen duiken niet langer
-  opnieuw op in de opgeslagen tabel.
-- **Kleinere fixes:** lege meldingen worden onderdrukt, het dialoogvenster
-  voor het aanmaken en bewerken van ideeën scrolt, scheef uitgelijnde
-  selectievakjes in de veldinstellingen staan weer recht, geblokkeerde
-  documentverwijderingen leggen uit waarom, en de E-Document-instellingen
-  verwerken het wisselen van Default naar Custom netjes.
+- **Importpagina:** crasht niet langer voor organisaties met een leeg
+  abonnementsrecord.
+
+### Kleinere fixes
+
+Lege meldingen worden onderdrukt, het dialoogvenster voor het aanmaken en
+bewerken van ideeën scrolt, scheef uitgelijnde selectievakjes in de
+veldinstellingen staan weer recht, geblokkeerde documentverwijderingen
+leggen uit waarom, en de E-Document-instellingen verwerken het wisselen van
+Default naar Custom netjes.
 
 ## API Service — live: `12.61.8`
 

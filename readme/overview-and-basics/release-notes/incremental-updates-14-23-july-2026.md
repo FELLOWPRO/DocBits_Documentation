@@ -56,7 +56,7 @@ plus liées à la provenance du document. Des règles de sélection décident qu
 mise en page un document reçoit : elles sont évaluées par priorité, la première
 correspondance l'emporte, avec une mise en page par défaut en repli.
 
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Écran Layouts &#x26; Selection Rules avec les cartes de mise en page et le nouveau commutateur de règles de sélection"><figcaption><p>Layouts &#x26; Selection Rules : des mises en page réutilisables avec sélection par règles</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-fr.png" alt="Écran Layouts &#x26; Selection Rules avec les cartes de mise en page et le nouveau commutateur de règles de sélection"><figcaption><p>Layouts &#x26; Selection Rules : des mises en page réutilisables avec sélection par règles</p></figcaption></figure>
 
 ### Validation Rules
 
@@ -73,7 +73,7 @@ Rules. Un catalogue de règles système par défaut est livré avec la version ;
 chaque règle reste désactivée tant que vous ne l'activez pas pour ce type de
 document.
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Écran Custom Validation Rules listant les règles système par défaut avec leur sévérité et leurs commutateurs de statut"><figcaption><p>Custom Validation Rules : le catalogue de règles d'un type de document, chaque règle activée individuellement</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom-validation-rules-fr.png" alt="Écran Custom Validation Rules listant les règles système par défaut avec leur sévérité et leurs commutateurs de statut"><figcaption><p>Custom Validation Rules : le catalogue de règles d'un type de document, chaque règle activée individuellement</p></figcaption></figure>
 
 Chaque règle se compose de trois parties. **Name &#x26; scope** (nom et
 portée) indique comment la règle s'appelle, si elle contrôle l'en-tête du
@@ -83,7 +83,7 @@ compte comme erreur ou seulement comme avertissement. **Applies when**
 documents la règle s'exécute ; laissez cette partie vide et la règle
 s'applique à tous les documents.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Écran Edit Rule montrant les sections Name &#x26; scope et Applies when d'une règle de validation"><figcaption><p>Modification d'une règle : nom, portée et sévérité en haut, les conditions Applies when en dessous</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-fr.png" alt="Écran Edit Rule montrant les sections Name &#x26; scope et Applies when d'une règle de validation"><figcaption><p>Modification d'une règle : nom, portée et sévérité en haut, les conditions Applies when en dessous</p></figcaption></figure>
 
 **Check** (contrôle) définit ce qui doit être vrai, à l'aide de l'un des sept
 types de contrôle : champ obligatoire, formule sur des montants, motif (format
@@ -98,7 +98,7 @@ dates sont renseignées, compare les deux champs avec « on or after » (le jour
 même ou après) et renvoie « Due date must be on or after the invoice date. »
 quand l'ordre est inversé.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Écran Edit Rule montrant la section Check comparant la date d'échéance à la date de facture, avec message d'erreur et code d'erreur"><figcaption><p>La section Check : comparaison de champs, message d'erreur et code d'erreur personnalisés</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-fr.png" alt="Écran Edit Rule montrant la section Check comparant la date d'échéance à la date de facture, avec message d'erreur et code d'erreur"><figcaption><p>La section Check : comparaison de champs, message d'erreur et code d'erreur personnalisés</p></figcaption></figure>
 
 ### Travailler avec les documents
 

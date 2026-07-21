@@ -43,7 +43,7 @@ I servizi non elencati non hanno avuto modifiche visibili ai clienti._
 
 ## Web App — live: `10.44.4`
 
-### Manage Layouts e regole di validazione
+### Manage Layouts
 
 I motori di regole arrivati lato server con la release precedente hanno ora
 la loro interfaccia utente, sotto Impostazioni → Tipi di documento →
@@ -56,14 +56,47 @@ con un layout predefinito come riserva.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Schermata Layouts &#x26; Selection Rules con le schede dei layout e il nuovo interruttore Selection rules"><figcaption><p>Layouts &#x26; Selection Rules: layout riutilizzabili con selezione basata su regole</p></figcaption></figure>
 
-Le regole di validazione vi permettono di definire i vostri controlli sui
-valori estratti e di vedere gli errori segnalati sul documento, con
-l'indicazione di quale regola è scattata. Con la release arriva un catalogo
-di regole predefinite di sistema; ogni regola resta disattivata finché non
-la attivate. La funzione si abilita per tipo di documento sotto Custom
-Validation Rules.
+### Regole di validazione
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Schermata Custom Validation Rules con l'elenco delle regole predefinite di sistema, gravità e interruttori di stato"><figcaption><p>Custom Validation Rules: regole predefinite di sistema, attivate per tipo di documento</p></figcaption></figure>
+Le regole di validazione controllano automaticamente i valori estratti
+durante l'elaborazione del documento e segnalano ogni esito negativo
+direttamente sul documento, agganciato al campo interessato. L'obiettivo:
+intercettare i dati errati durante la validazione, non dopo che il documento
+è stato esportato nel vostro ERP. Controlli tipici sono una data di scadenza
+precedente alla data della fattura, righe che non sommano al totale netto,
+un IBAN o una partita IVA nel formato sbagliato, o un campo obbligatorio
+lasciato vuoto.
+
+Le regole si gestiscono sotto Impostazioni → Tipi di documento → Custom
+Validation Rules. Con la release arriva un catalogo di regole predefinite di
+sistema; ogni regola resta disattivata finché non la attivate per quel tipo
+di documento.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Schermata Custom Validation Rules con l'elenco delle regole predefinite di sistema, gravità e interruttori di stato"><figcaption><p>Custom Validation Rules: il catalogo delle regole di un tipo di documento, con ogni regola attivata singolarmente</p></figcaption></figure>
+
+Ogni regola è composta da tre parti. **Name &#x26; scope** (nome e ambito)
+definisce come si chiama la regola, se controlla l'intestazione del documento
+o ogni riga, a quale campo si aggancia l'errore e se un esito negativo conta
+come errore o solo come avviso. **Applies when** (si applica quando) contiene
+le condizioni che decidono su quali documenti la regola viene eseguita;
+lasciatelo vuoto e la regola si applica a ogni documento.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Schermata Edit Rule con le sezioni Name &#x26; scope e Applies when di una regola di validazione"><figcaption><p>Modifica di una regola: nome, ambito e gravità in alto, le condizioni Applies-when sotto</p></figcaption></figure>
+
+**Check** (controllo) definisce che cosa deve essere vero, usando uno dei
+sette tipi di controllo: un campo obbligatorio, una formula sugli importi,
+un pattern (formato o regex), un intervallo numerico, un confronto tra due
+campi, un elenco fisso di valori ammessi o una List of Values con nome. Il
+messaggio di errore e il codice di errore mostrati all'utente che elabora il
+documento li scrivete voi.
+
+La regola di sistema "Due date after invoice date" (data di scadenza
+successiva alla data della fattura) mostra lo schema: si applica quando
+entrambe le date sono compilate, confronta i due campi con "on or after"
+(uguale o successiva) e, quando l'ordine è sbagliato, segnala "Due date must
+be on or after the invoice date."
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Schermata Edit Rule con la sezione Check che confronta la data di scadenza con la data della fattura, con messaggio e codice di errore"><figcaption><p>La sezione Check: confronto tra campi, messaggio di errore e codice di errore personalizzati</p></figcaption></figure>
 
 ### Lavorare con i documenti
 

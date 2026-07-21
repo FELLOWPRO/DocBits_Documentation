@@ -41,45 +41,65 @@ que no aparecen en la lista no tuvieron cambios visibles para el cliente._
 
 ## Web App — activa: `10.44.4`
 
-- **Manage Layouts:** la gestión de diseños ahora se configura en la
-  aplicación. Los diseños pueden seleccionarse mediante reglas que usted
-  define, en lugar de estar ligados a la procedencia del documento. Lo
-  encuentra en Configuración → Tipos de documento → Manage Layouts.
+### Manage Layouts y reglas de validación
+
+Los motores de reglas que llegaron al servidor en la versión anterior ya
+tienen su interfaz de usuario, en Configuración → Tipos de documento →
+Manage Layouts.
+
+Los diseños son disposiciones de campos reutilizables, que ya no están
+ligadas a la procedencia del documento. Las reglas de selección deciden qué
+diseño recibe cada documento: se evalúan por prioridad, gana la primera
+coincidencia y hay un diseño predeterminado como respaldo.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Pantalla de Layouts &#x26; Selection Rules con tarjetas de diseño y el nuevo conmutador de reglas de selección"><figcaption><p>Layouts &#x26; Selection Rules: diseños reutilizables con selección basada en reglas</p></figcaption></figure>
 
-- **Reglas de validación:** defina sus propias comprobaciones sobre los
-  valores extraídos y vea los fallos marcados en el documento, incluida la
-  regla que se activó. La versión incluye un catálogo de reglas
-  predeterminadas del sistema; cada regla permanece desactivada hasta que
-  usted la active. Habilite la función por tipo de documento en Custom
-  Validation Rules.
+Las reglas de validación le permiten definir sus propias comprobaciones sobre
+los valores extraídos y ver los fallos marcados en el documento, incluida la
+regla que se activó. La versión incluye un catálogo de reglas predeterminadas
+del sistema; cada regla permanece desactivada hasta que usted la active.
+Habilite la función por tipo de documento en Custom Validation Rules.
 
 <figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Pantalla de Custom Validation Rules con las reglas predeterminadas del sistema, su severidad y conmutadores de estado"><figcaption><p>Custom Validation Rules: reglas predeterminadas del sistema, activadas por tipo de documento</p></figcaption></figure>
-- **Tickets de soporte desde errores:** cree un ticket directamente desde un
-  registro de error. Los tickets incluyen el entorno y el canal de versión, y
-  la captura de pantalla ya no se queda colgada.
-- **Exportación del panel:** las exportaciones usan ahora el panel que
-  realmente tiene seleccionado, y la aplicación le avisa cuando exporta un
-  panel con cambios sin guardar.
-- **Aprobaciones:** los usuarios ya no pueden aprobar un paso de Sales Tax
-  para el que su grupo no tiene permiso. El historial de aprobaciones vuelve a
-  mostrar todas las entradas.
+
+### Trabajo con documentos
+
 - **Documentos eliminados:** abrir un documento eliminado entretanto muestra
   un mensaje adecuado en lugar de errores de script.
-- **Cuentas eliminadas:** iniciar sesión con una cuenta eliminada ahora lo
-  indica, en lugar de fallar con un error genérico.
-- **Inicio de sesión SSO:** se corrigió un error al iniciar sesión con una
-  región distinta seleccionada.
+- **Validación de campos:** el campo de número de página es más ancho y salta
+  a la página al pulsar Enter. Un campo convertido en solo lectura por un
+  script sigue mostrando su conexión de campo.
+- **Extracción de tablas:** eliminar una columna libera su nombre para poder
+  reutilizarlo, y las cabeceras eliminadas ya no reaparecen en la tabla
+  guardada.
+- **Aprobaciones:** los usuarios ya no pueden aprobar un paso de Sales Tax
+  para el que su grupo no tiene permiso, y el historial de aprobaciones
+  vuelve a mostrar todas las entradas.
+- **Tareas y notificaciones:** la opción de eliminar queda oculta para los
+  usuarios sin derechos de administrador.
+
+### Panel y búsqueda
+
+- **Exportación:** las exportaciones usan el panel que tiene seleccionado, y
+  la aplicación le avisa antes de exportar un panel con cambios sin guardar.
+- **Búsqueda:** Invoice Type está disponible como campo de búsqueda con su
+  lista de valores.
 - **Registro de importación:** los documentos divididos pueden encontrarse a
   través de su documento padre, y la columna Failed Filenames solo lista los
   archivos que realmente fallaron o se omitieron.
-- **Página de importación:** ya no se bloquea en organizaciones con una
-  entrada de suscripción vacía.
-- **Búsqueda del panel:** Invoice Type está disponible como campo de búsqueda
-  con su lista de valores.
-- **Tareas y notificaciones:** la opción de eliminar queda oculta para los
-  usuarios sin derechos de administrador.
+
+### Inicio de sesión
+
+- **Cuentas eliminadas:** iniciar sesión con una cuenta eliminada lo indica,
+  en lugar de fallar con un error genérico.
+- **SSO:** se corrigió un error al iniciar sesión con una región distinta
+  seleccionada.
+
+### Configuración y administración
+
+- **Tickets de soporte:** cree un ticket directamente desde un registro de
+  error. Los tickets incluyen el entorno y el canal de versión, y la captura
+  de pantalla ya no se queda colgada.
 - **Workflow Builder:** las tarjetas recién creadas o renombradas, las
   plantillas de correo y otros elementos de listas desplegables aparecen de
   inmediato, sin recargar la página.
@@ -90,18 +110,16 @@ que no aparecen en la lista no tuvieron cambios visibles para el cliente._
 - **Diálogo de versiones de servicio:** ahora permite desplazarse, incluye el
   servicio Auth Bridge y muestra los nombres de los canales de versión Vesta
   y Nova.
-- **Validación de campos:** el campo de número de página es más ancho y salta
-  a la página al pulsar Enter. Un campo convertido en solo lectura por un
-  script sigue mostrando su conexión de campo.
-- **Extracción de tablas:** eliminar una columna libera su nombre para poder
-  reutilizarlo, y las cabeceras eliminadas ya no reaparecen en la tabla
-  guardada.
-- **Correcciones menores:** se suprimen las notificaciones emergentes vacías,
-  el diálogo de nueva/editar idea permite desplazarse, las casillas
-  desalineadas en la configuración de campos vuelven a estar alineadas, las
-  eliminaciones de documentos bloqueadas explican el motivo, y la
-  configuración de E-Document gestiona sin problemas el cambio de Default a
-  Custom.
+- **Página de importación:** ya no se bloquea en organizaciones con una
+  entrada de suscripción vacía.
+
+### Correcciones menores
+
+Se suprimen las notificaciones emergentes vacías, el diálogo de nueva/editar
+idea permite desplazarse, las casillas desalineadas en la configuración de
+campos vuelven a estar alineadas, las eliminaciones de documentos bloqueadas
+explican el motivo, y la configuración de E-Document gestiona sin problemas
+el cambio de Default a Custom.
 
 ## API Service — activa: `12.61.8`
 

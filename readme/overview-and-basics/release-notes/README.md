@@ -1,5 +1,7 @@
 # Release Notes
 
+> **Latest hotfix release:** [Hotfixes 14–23 July 2026](incremental-updates-14-23-july-2026.md): what changed in the 23 July 2026 production upgrade, including the new Manage Layouts and Validation Rules features. All hotfix pages are listed in the navigation under Release Notes.
+
 ## **Release R1.0 13/14 June 2026**
 
 > **Sandbox Availability:** 28th April 2026

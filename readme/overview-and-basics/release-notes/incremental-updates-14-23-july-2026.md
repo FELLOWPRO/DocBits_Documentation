@@ -51,7 +51,7 @@ dokumentu. O tym, który układ otrzyma dokument, decydują reguły wyboru:
 oceniane według priorytetu, wygrywa pierwsze dopasowanie, z układem domyślnym
 jako rozwiązaniem awaryjnym.
 
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Ekran Layouts &#x26; Selection Rules z kartami układów i nowym przełącznikiem reguł wyboru"><figcaption><p>Layouts &#x26; Selection Rules: układy wielokrotnego użytku z wyborem opartym na regułach</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-pl.png" alt="Ekran Layouts &#x26; Selection Rules z kartami układów i nowym przełącznikiem reguł wyboru"><figcaption><p>Layouts &#x26; Selection Rules: układy wielokrotnego użytku z wyborem opartym na regułach</p></figcaption></figure>
 
 ### Reguły walidacji (Validation Rules)
 
@@ -67,7 +67,7 @@ Regułami zarządza się w Settings → Document Types → Custom Validation Rul
 Wydanie zawiera katalog systemowych reguł domyślnych; każda reguła pozostaje
 wyłączona, dopóki nie włączą jej Państwo dla danego typu dokumentu.
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ekran Custom Validation Rules z listą systemowych reguł domyślnych, ich wagą i przełącznikami statusu"><figcaption><p>Custom Validation Rules: katalog reguł dla typu dokumentu, każda reguła aktywowana osobno</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom-validation-rules-pl.png" alt="Ekran Custom Validation Rules z listą systemowych reguł domyślnych, ich wagą i przełącznikami statusu"><figcaption><p>Custom Validation Rules: katalog reguł dla typu dokumentu, każda reguła aktywowana osobno</p></figcaption></figure>
 
 Każda reguła składa się z trzech części. **Name &#x26; scope** (nazwa
 i zakres) określa, jak reguła się nazywa, czy sprawdza nagłówek dokumentu,
@@ -77,7 +77,7 @@ when** (stosuj, gdy) zawiera warunki decydujące o tym, na których
 dokumentach reguła działa; pozostawiona pusta sekcja oznacza, że reguła
 dotyczy każdego dokumentu.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Ekran Edit Rule pokazujący sekcje Name &#x26; scope oraz Applies when reguły walidacji"><figcaption><p>Edycja reguły: nazwa, zakres i waga u góry, warunki Applies when poniżej</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-pl.png" alt="Ekran Edit Rule pokazujący sekcje Name &#x26; scope oraz Applies when reguły walidacji"><figcaption><p>Edycja reguły: nazwa, zakres i waga u góry, warunki Applies when poniżej</p></figcaption></figure>
 
 **Check** (kontrola) definiuje, co musi być spełnione — jednym z siedmiu
 typów kontroli: pole wymagane, formuła na kwotach, wzorzec (format lub
@@ -92,7 +92,7 @@ porównuje oba pola operatorem „on or after” (w dniu lub później) i przy
 złej kolejności zgłasza komunikat „Due date must be on or after the invoice
 date.” (termin płatności musi przypadać w dniu daty faktury lub później).
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Ekran Edit Rule pokazujący sekcję Check porównującą termin płatności z datą faktury, wraz z komunikatem i kodem błędu"><figcaption><p>Sekcja Check: porównanie pól, własny komunikat błędu i kod błędu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-pl.png" alt="Ekran Edit Rule pokazujący sekcję Check porównującą termin płatności z datą faktury, wraz z komunikatem i kodem błędu"><figcaption><p>Sekcja Check: porównanie pól, własny komunikat błędu i kod błędu</p></figcaption></figure>
 
 ### Praca z dokumentami
 

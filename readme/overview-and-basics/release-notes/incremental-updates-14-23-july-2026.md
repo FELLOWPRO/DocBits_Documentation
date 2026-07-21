@@ -45,7 +45,7 @@ répertoriés n'ont connu aucune modification visible par le client._
 
 ## Web App — en ligne : `10.44.4`
 
-### Manage Layouts et règles de validation
+### Manage Layouts
 
 Les moteurs de règles livrés côté serveur dans la version précédente disposent
 désormais de leur interface utilisateur, sous Paramètres → Types de document →
@@ -58,13 +58,47 @@ correspondance l'emporte, avec une mise en page par défaut en repli.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Écran Layouts &#x26; Selection Rules avec les cartes de mise en page et le nouveau commutateur de règles de sélection"><figcaption><p>Layouts &#x26; Selection Rules : des mises en page réutilisables avec sélection par règles</p></figcaption></figure>
 
-Les règles de validation vous permettent de définir vos propres contrôles sur
-les valeurs extraites et de voir les échecs signalés sur le document, avec la
-règle qui s'est déclenchée. Un catalogue de règles système par défaut est livré
-avec la version ; chaque règle reste désactivée tant que vous ne l'activez pas.
-Activez la fonctionnalité par type de document sous Custom Validation Rules.
+### Validation Rules
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Écran Custom Validation Rules listant les règles système par défaut avec leur sévérité et leurs commutateurs de statut"><figcaption><p>Custom Validation Rules : règles système par défaut, activées par type de document</p></figcaption></figure>
+Les Validation Rules contrôlent automatiquement les valeurs extraites pendant
+le traitement d'un document et signalent chaque échec directement sur le
+document, rattaché au champ concerné. L'objectif : intercepter les données
+erronées pendant la validation, et non après l'export du document vers votre
+ERP. Contrôles typiques : une date d'échéance antérieure à la date de facture,
+des lignes dont la somme ne correspond pas au total net, un IBAN ou un numéro
+de TVA au mauvais format, ou un champ obligatoire resté vide.
+
+Vous gérez les règles sous Paramètres → Types de document → Custom Validation
+Rules. Un catalogue de règles système par défaut est livré avec la version ;
+chaque règle reste désactivée tant que vous ne l'activez pas pour ce type de
+document.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Écran Custom Validation Rules listant les règles système par défaut avec leur sévérité et leurs commutateurs de statut"><figcaption><p>Custom Validation Rules : le catalogue de règles d'un type de document, chaque règle activée individuellement</p></figcaption></figure>
+
+Chaque règle se compose de trois parties. **Name &#x26; scope** (nom et
+portée) indique comment la règle s'appelle, si elle contrôle l'en-tête du
+document ou chaque ligne, le champ auquel l'erreur se rattache, et si un échec
+compte comme erreur ou seulement comme avertissement. **Applies when**
+(conditions d'application) contient les conditions qui déterminent sur quels
+documents la règle s'exécute ; laissez cette partie vide et la règle
+s'applique à tous les documents.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Écran Edit Rule montrant les sections Name &#x26; scope et Applies when d'une règle de validation"><figcaption><p>Modification d'une règle : nom, portée et sévérité en haut, les conditions Applies when en dessous</p></figcaption></figure>
+
+**Check** (contrôle) définit ce qui doit être vrai, à l'aide de l'un des sept
+types de contrôle : champ obligatoire, formule sur des montants, motif (format
+ou expression régulière), plage numérique, comparaison de deux champs, liste
+fixe de valeurs autorisées, ou List of Values nommée. Le message d'erreur et
+le code d'erreur présentés à l'utilisateur en charge du traitement sont à
+rédiger librement.
+
+La règle système « Due date after invoice date » (date d'échéance postérieure
+à la date de facture) illustre le principe : elle s'applique quand les deux
+dates sont renseignées, compare les deux champs avec « on or after » (le jour
+même ou après) et renvoie « Due date must be on or after the invoice date. »
+quand l'ordre est inversé.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Écran Edit Rule montrant la section Check comparant la date d'échéance à la date de facture, avec message d'erreur et code d'erreur"><figcaption><p>La section Check : comparaison de champs, message d'erreur et code d'erreur personnalisés</p></figcaption></figure>
 
 ### Travailler avec les documents
 

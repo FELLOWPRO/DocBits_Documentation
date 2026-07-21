@@ -41,7 +41,7 @@ zmian widocznych dla klientów._
 
 ## Web App — live: `10.44.4`
 
-### Manage Layouts i reguły walidacji
+### Manage Layouts
 
 Silniki reguł, które w poprzednim wydaniu trafiły na serwer, mają teraz swój
 interfejs użytkownika — w Settings → Document Types → Manage Layouts.
@@ -53,13 +53,46 @@ jako rozwiązaniem awaryjnym.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Ekran Layouts &#x26; Selection Rules z kartami układów i nowym przełącznikiem reguł wyboru"><figcaption><p>Layouts &#x26; Selection Rules: układy wielokrotnego użytku z wyborem opartym na regułach</p></figcaption></figure>
 
-Reguły walidacji pozwalają definiować własne kontrole wyodrębnionych wartości
-i widzieć niepowodzenia oznaczone na dokumencie, wraz z informacją, która
-reguła zadziałała. Wydanie zawiera katalog systemowych reguł domyślnych;
-każda reguła pozostaje wyłączona, dopóki jej Państwo nie aktywują. Funkcję
-włącza się per typ dokumentu w sekcji Custom Validation Rules.
+### Reguły walidacji (Validation Rules)
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ekran Custom Validation Rules z listą systemowych reguł domyślnych, ich wagą i przełącznikami statusu"><figcaption><p>Custom Validation Rules: systemowe reguły domyślne, aktywowane per typ dokumentu</p></figcaption></figure>
+Reguły walidacji automatycznie sprawdzają wyodrębnione wartości podczas
+przetwarzania dokumentu i oznaczają każde niepowodzenie bezpośrednio na
+dokumencie, przy polu, którego dotyczy. Cel: wychwycić błędne dane jeszcze
+podczas walidacji, a nie dopiero po wyeksportowaniu dokumentu do systemu
+ERP. Typowe kontrole to termin płatności wcześniejszy niż data faktury,
+pozycje, które nie sumują się do kwoty netto, IBAN lub numer VAT w błędnym
+formacie albo puste pole wymagane.
+
+Regułami zarządza się w Settings → Document Types → Custom Validation Rules.
+Wydanie zawiera katalog systemowych reguł domyślnych; każda reguła pozostaje
+wyłączona, dopóki nie włączą jej Państwo dla danego typu dokumentu.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ekran Custom Validation Rules z listą systemowych reguł domyślnych, ich wagą i przełącznikami statusu"><figcaption><p>Custom Validation Rules: katalog reguł dla typu dokumentu, każda reguła aktywowana osobno</p></figcaption></figure>
+
+Każda reguła składa się z trzech części. **Name &#x26; scope** (nazwa
+i zakres) określa, jak reguła się nazywa, czy sprawdza nagłówek dokumentu,
+czy każdą pozycję, do którego pola przypinany jest błąd oraz czy
+niepowodzenie liczy się jako błąd, czy tylko jako ostrzeżenie. **Applies
+when** (stosuj, gdy) zawiera warunki decydujące o tym, na których
+dokumentach reguła działa; pozostawiona pusta sekcja oznacza, że reguła
+dotyczy każdego dokumentu.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Ekran Edit Rule pokazujący sekcje Name &#x26; scope oraz Applies when reguły walidacji"><figcaption><p>Edycja reguły: nazwa, zakres i waga u góry, warunki Applies when poniżej</p></figcaption></figure>
+
+**Check** (kontrola) definiuje, co musi być spełnione — jednym z siedmiu
+typów kontroli: pole wymagane, formuła na kwotach, wzorzec (format lub
+wyrażenie regularne), zakres liczbowy, porównanie dwóch pól, stała lista
+dozwolonych wartości lub nazwana lista wartości (List of Values). Komunikat
+błędu i kod błędu pokazywane osobie przetwarzającej dokument piszą Państwo
+sami.
+
+Reguła systemowa „Due date after invoice date” (termin płatności po dacie
+faktury) pokazuje ten schemat: stosuje się, gdy obie daty są wypełnione,
+porównuje oba pola operatorem „on or after” (w dniu lub później) i przy
+złej kolejności zgłasza komunikat „Due date must be on or after the invoice
+date.” (termin płatności musi przypadać w dniu daty faktury lub później).
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Ekran Edit Rule pokazujący sekcję Check porównującą termin płatności z datą faktury, wraz z komunikatem i kodem błędu"><figcaption><p>Sekcja Check: porównanie pól, własny komunikat błędu i kod błędu</p></figcaption></figure>
 
 ### Praca z dokumentami
 

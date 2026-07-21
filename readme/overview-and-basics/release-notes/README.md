@@ -1,5 +1,7 @@
 # Release-Notizen
 
+> **Neueste Hotfix-Version:** [Hotfixes 14.–23. Juli 2026](incremental-updates-14-23-july-2026.md): Was sich mit dem Produktions-Upgrade vom 23. Juli 2026 geändert hat, inklusive der neuen Funktionen Manage Layouts und Validierungsregeln. Alle Hotfix-Seiten finden Sie in der Navigation unter Release-Notizen.
+
 ## **Release R1.0 23./24. Mai 2026**
 
 > **Sandbox-Verfügbarkeit:** 28. April 2026

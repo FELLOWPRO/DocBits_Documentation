@@ -50,7 +50,7 @@ yerleşimleridir. Bir belgenin hangi düzeni alacağına seçim kuralları karar
 veriyor: kurallar önceliğe göre değerlendiriliyor, ilk eşleşen kazanıyor ve
 bir varsayılan düzen yedek olarak devreye giriyor.
 
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Düzen kartları ve yeni Seçim kuralları anahtarıyla Layouts &#x26; Selection Rules ekranı"><figcaption><p>Layouts &#x26; Selection Rules: kural tabanlı seçimle yeniden kullanılabilir düzenler</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-tr.png" alt="Düzen kartları ve yeni Seçim kuralları anahtarıyla Layouts &#x26; Selection Rules ekranı"><figcaption><p>Layouts &#x26; Selection Rules: kural tabanlı seçimle yeniden kullanılabilir düzenler</p></figcaption></figure>
 
 ### Doğrulama Kuralları
 
@@ -66,7 +66,7 @@ yönetiyorsunuz. Sürümle birlikte sistem varsayılan kurallarından oluşan bi
 katalog geliyor; her kural, o belge türü için siz açana kadar kapalı
 kalıyor.
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Önem derecesi ve durum anahtarlarıyla sistem varsayılan kurallarını listeleyen Custom Validation Rules ekranı"><figcaption><p>Custom Validation Rules: bir belge türünün kural kataloğu; her kural tek tek etkinleştiriliyor</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/custom-validation-rules-tr.png" alt="Önem derecesi ve durum anahtarlarıyla sistem varsayılan kurallarını listeleyen Custom Validation Rules ekranı"><figcaption><p>Custom Validation Rules: bir belge türünün kural kataloğu; her kural tek tek etkinleştiriliyor</p></figcaption></figure>
 
 Her kural üç bölümden oluşuyor. **Name &#x26; scope** (ad ve kapsam),
 kuralın adını, belge başlığını mı yoksa her satırı mı denetlediğini, hatanın
@@ -75,7 +75,7 @@ mı sayılacağını belirliyor. **Applies when** (geçerlilik koşulları), kur
 hangi belgelerde çalışacağına karar veren koşulları içeriyor; boş
 bırakırsanız kural tüm belgelere uygulanıyor.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Bir doğrulama kuralının Name &#x26; scope ve Applies when bölümlerini gösteren Edit Rule ekranı"><figcaption><p>Kural düzenleme: üstte ad, kapsam ve önem derecesi, altta Applies-when koşulları</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-tr.png" alt="Bir doğrulama kuralının Name &#x26; scope ve Applies when bölümlerini gösteren Edit Rule ekranı"><figcaption><p>Kural düzenleme: üstte ad, kapsam ve önem derecesi, altta Applies-when koşulları</p></figcaption></figure>
 
 **Check** (denetim) bölümü, yedi denetim türünden birini kullanarak neyin
 doğru olması gerektiğini tanımlıyor: zorunlu alan, tutarlar üzerinde bir
@@ -91,7 +91,7 @@ sıralama yanlış olduğunda "Due date must be on or after the invoice date."
 (Vade tarihi, fatura tarihinde veya sonrasında olmalıdır.) mesajını
 bildiriyor.
 
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Vade tarihini fatura tarihiyle karşılaştıran Check bölümünü, hata mesajı ve hata koduyla gösteren Edit Rule ekranı"><figcaption><p>Check bölümü: alan karşılaştırması, özel hata mesajı ve hata kodu</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-tr.png" alt="Vade tarihini fatura tarihiyle karşılaştıran Check bölümünü, hata mesajı ve hata koduyla gösteren Edit Rule ekranı"><figcaption><p>Check bölümü: alan karşılaştırması, özel hata mesajı ve hata kodu</p></figcaption></figure>
 
 ### Belgelerle çalışma
 

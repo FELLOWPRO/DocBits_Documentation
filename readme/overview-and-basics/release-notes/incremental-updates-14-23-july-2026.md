@@ -41,7 +41,7 @@ visíveis para o cliente._
 
 ## Web App — em produção: `10.44.4`
 
-### Manage Layouts e regras de validação
+### Manage Layouts
 
 Os motores de regras lançados do lado do servidor na versão anterior têm agora
 a sua interface, em Definições → Tipos de Documento → Manage Layouts.
@@ -53,13 +53,45 @@ predefinido como recurso.
 
 <figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Ecrã Layouts &#x26; Selection Rules com cartões de layout e o novo interruptor de regras de seleção"><figcaption><p>Layouts &#x26; Selection Rules: layouts reutilizáveis com seleção baseada em regras</p></figcaption></figure>
 
-As regras de validação permitem definir as suas próprias verificações sobre os
-valores extraídos e ver as falhas assinaladas no documento, incluindo a regra
-que foi acionada. A versão inclui um catálogo de regras predefinidas do
-sistema; cada regra permanece desativada até a ativar. Ative a funcionalidade
-por tipo de documento em Custom Validation Rules.
+### Regras de validação
 
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ecrã Custom Validation Rules com a lista de regras predefinidas do sistema, severidade e interruptores de estado"><figcaption><p>Custom Validation Rules: regras predefinidas do sistema, ativadas por tipo de documento</p></figcaption></figure>
+As regras de validação verificam automaticamente os valores extraídos enquanto
+um documento é processado e assinalam cada falha diretamente no documento,
+associada ao campo em causa. O objetivo: apanhar dados errados durante a
+validação, e não depois de o documento ter sido exportado para o seu ERP.
+Verificações típicas são uma data de vencimento anterior à data da fatura,
+linhas que não somam o total líquido, um IBAN ou número de IVA no formato
+errado, ou um campo obrigatório deixado vazio.
+
+As regras gerem-se em Definições → Tipos de Documento → Custom Validation
+Rules. A versão inclui um catálogo de regras predefinidas do sistema; cada
+regra permanece desligada até a ativar para esse tipo de documento.
+
+<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ecrã Custom Validation Rules com a lista de regras predefinidas do sistema, severidade e interruptores de estado"><figcaption><p>Custom Validation Rules: o catálogo de regras de um tipo de documento, com cada regra ativada individualmente</p></figcaption></figure>
+
+Cada regra é composta por três partes. **Name &#x26; scope** (nome e âmbito)
+define o nome da regra, se esta verifica o cabeçalho do documento ou cada
+linha, a que campo o erro fica associado e se uma falha conta como erro ou
+apenas como aviso. **Applies when** (aplica-se quando) contém as condições que
+decidem em que documentos a regra é executada; se ficar vazio, a regra
+aplica-se a todos os documentos.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Ecrã Edit Rule com as secções Name &#x26; scope e Applies when de uma regra de validação"><figcaption><p>Edição de uma regra: nome, âmbito e severidade em cima, as condições Applies when em baixo</p></figcaption></figure>
+
+**Check** (verificação) define o que tem de ser verdade, usando um de sete
+tipos de verificação: um campo obrigatório, uma fórmula sobre montantes, um
+padrão (formato ou regex), um intervalo numérico, uma comparação de dois
+campos, uma lista fixa de valores permitidos ou uma List of Values nomeada. A
+mensagem de erro e o código de erro apresentados ao utilizador que processa o
+documento são escritos por si.
+
+A regra de sistema "Due date after invoice date" (data de vencimento após a
+data da fatura) ilustra o padrão: aplica-se quando ambas as datas estão
+preenchidas, compara os dois campos com "on or after" (na data ou depois) e
+devolve "Due date must be on or after the invoice date." quando a ordem está
+errada.
+
+<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Ecrã Edit Rule com a secção Check a comparar a data de vencimento com a data da fatura, com mensagem e código de erro"><figcaption><p>A secção Check: comparação de campos, mensagem de erro personalizada e código de erro</p></figcaption></figure>
 
 ### Trabalhar com documentos
 

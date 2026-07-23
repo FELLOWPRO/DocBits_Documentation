@@ -10,13 +10,6 @@ zmian widocznych dla klientów._
 
 ## Najważniejsze zmiany
 
-- **Manage Layouts i reguły walidacji trafiają do aplikacji.** Silniki reguł
-  wprowadzone po stronie serwera w poprzednim wydaniu mają teraz pełny
-  interfejs użytkownika. Można zarządzać układami dokumentów bezpośrednio,
-  definiować własne reguły walidacji i pozwolić, by to reguły dobierały
-  właściwy układ — a nie źródło dokumentu. Obie funkcje pozostają wyłączone,
-  dopóki nie włączą Państwo opcji **Custom Validation Rules** na typie
-  dokumentu, więc do tego momentu nic się nie zmienia.
 - **Zgłoszenia do wsparcia z ekranu błędu.** Gdy coś pójdzie nie tak, można
   teraz otworzyć zgłoszenie do wsparcia bezpośrednio z rekordu błędu.
   Zgłoszenie zawiera już kontekst techniczny, więc nie trzeba go opisywać.
@@ -29,6 +22,10 @@ zmian widocznych dla klientów._
   zamówienia”, co kierowało poszukiwania w złą stronę. Teraz otrzymują własny
   status „tabela niekompletna” wraz z informacją na poziomie kolumn, co
   dokładnie się nie zmapowało.
+- **Mapowanie kodów podatkowych dla e-dokumentów.** Nowa strona ustawień
+  mapuje kody podatkowe Państwa systemu ERP dla dokumentów elektronicznych,
+  a eksport sprawdza mapowanie z wyprzedzeniem, zamiast kończyć się błędem
+  dopiero w systemie ERP.
 - **Zmiany skryptów chronione hasłem.** Skrypty niestandardowe mogą zmieniać
   sposób przetwarzania dokumentów, dlatego każda edycja skryptu wymaga teraz
   hasła zmieniającego się co godzinę. O aktualne hasło należy poprosić
@@ -39,60 +36,7 @@ zmian widocznych dla klientów._
 
 ---
 
-## Web App — live: `10.44.4`
-
-### Manage Layouts
-
-Silniki reguł, które w poprzednim wydaniu trafiły na serwer, mają teraz swój
-interfejs użytkownika — w Settings → Document Types → Manage Layouts.
-
-Układy to rozmieszczenia pól wielokrotnego użytku, niezwiązane już ze źródłem
-dokumentu. O tym, który układ otrzyma dokument, decydują reguły wyboru:
-oceniane według priorytetu, wygrywa pierwsze dopasowanie, z układem domyślnym
-jako rozwiązaniem awaryjnym.
-
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-pl.png" alt="Ekran Layouts &#x26; Selection Rules z kartami układów i nowym przełącznikiem reguł wyboru"><figcaption><p>Layouts &#x26; Selection Rules: układy wielokrotnego użytku z wyborem opartym na regułach</p></figcaption></figure>
-
-### Reguły walidacji (Validation Rules)
-
-Reguły walidacji automatycznie sprawdzają wyodrębnione wartości podczas
-przetwarzania dokumentu i oznaczają każde niepowodzenie bezpośrednio na
-dokumencie, przy polu, którego dotyczy. Cel: wychwycić błędne dane jeszcze
-podczas walidacji, a nie dopiero po wyeksportowaniu dokumentu do systemu
-ERP. Typowe kontrole to termin płatności wcześniejszy niż data faktury,
-pozycje, które nie sumują się do kwoty netto, IBAN lub numer VAT w błędnym
-formacie albo puste pole wymagane.
-
-Regułami zarządza się w Settings → Document Types → Custom Validation Rules.
-Wydanie zawiera katalog systemowych reguł domyślnych; każda reguła pozostaje
-wyłączona, dopóki nie włączą jej Państwo dla danego typu dokumentu.
-
-<figure><img src="../../.gitbook/assets/custom-validation-rules-pl.png" alt="Ekran Custom Validation Rules z listą systemowych reguł domyślnych, ich wagą i przełącznikami statusu"><figcaption><p>Custom Validation Rules: katalog reguł dla typu dokumentu, każda reguła aktywowana osobno</p></figcaption></figure>
-
-Każda reguła składa się z trzech części. **Name &#x26; scope** (nazwa
-i zakres) określa, jak reguła się nazywa, czy sprawdza nagłówek dokumentu,
-czy każdą pozycję, do którego pola przypinany jest błąd oraz czy
-niepowodzenie liczy się jako błąd, czy tylko jako ostrzeżenie. **Applies
-when** (stosuj, gdy) zawiera warunki decydujące o tym, na których
-dokumentach reguła działa; pozostawiona pusta sekcja oznacza, że reguła
-dotyczy każdego dokumentu.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-pl.png" alt="Ekran Edit Rule pokazujący sekcje Name &#x26; scope oraz Applies when reguły walidacji"><figcaption><p>Edycja reguły: nazwa, zakres i waga u góry, warunki Applies when poniżej</p></figcaption></figure>
-
-**Check** (kontrola) definiuje, co musi być spełnione — jednym z siedmiu
-typów kontroli: pole wymagane, formuła na kwotach, wzorzec (format lub
-wyrażenie regularne), zakres liczbowy, porównanie dwóch pól, stała lista
-dozwolonych wartości lub nazwana lista wartości (List of Values). Komunikat
-błędu i kod błędu pokazywane osobie przetwarzającej dokument piszą Państwo
-sami.
-
-Reguła systemowa „Due date after invoice date” (termin płatności po dacie
-faktury) pokazuje ten schemat: stosuje się, gdy obie daty są wypełnione,
-porównuje oba pola operatorem „on or after” (w dniu lub później) i przy
-złej kolejności zgłasza komunikat „Due date must be on or after the invoice
-date.” (termin płatności musi przypadać w dniu daty faktury lub później).
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-pl.png" alt="Ekran Edit Rule pokazujący sekcję Check porównującą termin płatności z datą faktury, wraz z komunikatem i kodem błędu"><figcaption><p>Sekcja Check: porównanie pól, własny komunikat błędu i kod błędu</p></figcaption></figure>
+## Web App — live: `10.45.1`
 
 ### Praca z dokumentami
 
@@ -105,7 +49,12 @@ date.” (termin płatności musi przypadać w dniu daty faktury lub później).
   użycia, a usunięte nagłówki nie pojawiają się ponownie w zapisanej tabeli.
 - **Zatwierdzenia:** użytkownicy nie mogą już zatwierdzić kroku Sales Tax,
   do którego ich grupa nie ma uprawnień, a historia zatwierdzeń znów pokazuje
-  wszystkie wpisy.
+  wszystkie wpisy. Historia wskazuje też osobę, która faktycznie zatwierdziła
+  dokument, łącznie z zatwierdzeniami wykonanymi przez administratora
+  w imieniu osoby przypisanej.
+- **Dostawcy:** strona Accounting nie pokazuje już fałszywego ostrzeżenia
+  „Supplier is missing” (brak dostawcy), a usunięcie dostawcy istniejącego
+  wyłącznie z ekstrakcji nie zawiesza już okna dialogowego.
 - **Zadania i powiadomienia:** opcja usuwania jest ukryta przed użytkownikami
   bez uprawnień administratora.
 
@@ -135,6 +84,9 @@ date.” (termin płatności musi przypadać w dniu daty faktury lub później).
   przeładowania strony.
 - **Typy dokumentów:** nowe ustawienie Structured Extraction w sekcji
   ekstrakcji.
+- **Kody podatkowe E-Doc:** nowa strona ustawień do mapowania kodów
+  podatkowych ERP dla dokumentów elektronicznych (zob. Najważniejsze
+  zmiany).
 - **Wybór modelu AI:** wycofany model Turbo zniknął z listy rozwijanej;
   istniejące wybory pokazują Fast.
 - **Okno Service Versions:** można je teraz przewijać, obejmuje usługę Auth
@@ -149,19 +101,15 @@ pomysłu daje się przewijać, przesunięte pola wyboru w ustawieniach pól są
 znów wyrównane, zablokowane usunięcia dokumentów wyjaśniają przyczynę,
 a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom.
 
-## API Service — live: `12.61.8`
+## API Service — live: `12.64.3`
 
-- **Dojrzalsze reguły walidacji:** nowe operatory warunków (zawiera, zaczyna
-  się od, kończy się na), wartości ze źródeł typu lista wartości, aktywacja
-  per typ dokumentu oraz ślad audytowy pokazujący, kto utworzył lub zmienił
-  każdą regułę. Po zmianie reguł dokumenty są automatycznie walidowane
-  ponownie.
-- **Reguły transformacji:** mogą teraz ustawiać lub czyścić wartości w całym
-  dokumencie, są aktywowane per typ dokumentu i mają ten sam ślad audytowy.
-- **Reguły wyboru układu:** aktywacja przeniesiona na typ dokumentu,
-  a szablony układów zapisują, kto i kiedy je zmienił.
 - **Bezpieczeństwo skryptów:** zmiany skryptów wymagają hasła czasowego
   (zob. Najważniejsze zmiany).
+- **Kody podatkowe E-Doc:** mapowanie kodów podatkowych ERP dla dokumentów
+  elektronicznych, z centralną kontrolą przed eksportem, dzięki której
+  brakujące kody wychodzą na jaw wcześnie.
+- **Kontrola dostępu:** administratorzy mogą nadać użytkownikom bez
+  uprawnień administratora wgląd w dokumenty niesklasyfikowane.
 - **Pulpity osobiste:** naprawiono ustawienia udostępniania, które się nie
   zapisywały.
 - **Wyszukiwanie na pulpicie:** Invoice Type dołącza do rozszerzonych pól
@@ -172,19 +120,28 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
 - **Wyszukiwanie dostawcy:** wyniki pojawiają się, gdy tylko dane są gotowe,
   zamiast po sztywnym czasie oczekiwania.
 - **Eksport Infor:** ceny jednostkowe zachowują cztery miejsca po przecinku.
-  Eksporty M3 mogą zawierać pozycje kosztowe o zerowej kwocie.
+  Eksporty M3 mogą zawierać pozycje kosztowe o zerowej kwocie, a ujemne
+  pozycje kosztowe LN są przesyłane jako dodatnie uznania.
 - **Zatwierdzenia:** zatwierdzenie jest wiązane z wnioskiem o zatwierdzenie
   tylko wtedy, gdy zatwierdzający jest osobą do niego przypisaną.
 - **Stabilność logowania:** chwilowy błąd wewnątrz walidacji tokenu nie
   wylogowuje już użytkowników; aplikacja ponawia próbę.
 - **Klasyfikacja:** reguły źródła dopasowują się teraz do każdego pola źródła
   dokumentu, a nie do stałych pozycji.
+- **Stabilność walidacji:** pole bez nazwy nie powoduje już awarii walidacji
+  dokumentu.
 - **Modele AI:** wycofany model Turbo jest wszędzie mapowany na Fast, łącznie
   z wariantami dostrojonymi, z zabezpieczeniem gwarantującym, że wycofany
   model nigdy się nie uruchomi.
 
-## Auth Service — live: `1.72.5`
+## Auth Service — live: `1.72.8`
 
+- **Historia logowań:** logowania przez SSO/SAML pojawiają się teraz
+  w historii logowań, a znacznik czasu ostatniego logowania jest zapisywany
+  niezawodnie dla każdego typu logowania. Podgląd historii logowań innego
+  użytkownika wymaga odpowiedniego poziomu uprawnień administratora.
+- **Konta starszego typu:** usunięcie konta użytkownika starszego typu znów
+  działa, zamiast po cichu nie przynosić żadnego efektu.
 - **Masowa administracja użytkownikami:** istniejących użytkowników można
   dodawać do organizacji podrzędnych i grup zbiorczo przez CSV,
   z dopasowaniem po adresie e-mail. Naprawiono też awarię przy nierówno
@@ -205,7 +162,7 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
   a administracja planami i zużyciem otrzymała dedykowane punkty końcowe.
   Te zmiany dotyczą narzędzi zespołu DocBits, nie aplikacji klienta.
 
-## Email Service — live: `1.39.8`
+## Email Service — live: `1.39.9`
 
 - **Import we właściwym regionie:** domeny poczty przychodzącej istnieją per
   region, a wiadomości trafiające do niewłaściwego regionu są przekazywane do
@@ -224,8 +181,10 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
 - **Nazwy źródeł:** źródła O365 ze skonfigurowanym folderem zawierają
   w nazwie adres e-mail konta, dzięki czemu podobne źródła można od siebie
   odróżnić.
+- **Porządkowanie dziennika importu:** wpisy dziennika importu są
+  przechowywane przez 90 dni, a po tym czasie automatycznie usuwane.
 
-## PO Match Service — live: `1.58.6`
+## PO Match Service — live: `1.59.1`
 
 - **Status „tabela niekompletna”:** faktury, których tabeli pozycji nie udało
   się zmapować, otrzymują własny status zamiast mylącego „nie znaleziono
@@ -236,6 +195,8 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
 - **Czystsze zachowanie API:** żądania o nieistniejące reguły PO zwracają
   poprawną odpowiedź „nie znaleziono”, a uszkodzone wpisy pamięci podręcznej
   są usuwane, zamiast powodować powtarzające się błędy.
+- **Dopasowanie po sumie:** naprawiono błąd w dopasowywaniu względem sumy
+  zamówienia zakupu.
 
 ## Fulltext Service — live: `1.38.3`
 
@@ -249,7 +210,7 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
   przełączenie na bazę główną) i odrzuca zniekształcone komunikaty z kolejki,
   zamiast ponawiać je w nieskończoność.
 
-## OCR Service — live: `1.9.8`
+## OCR Service — live: `1.9.9`
 
 - **Duże dokumenty:** budżet czasowy OCR skaluje się z rozmiarem dokumentu,
   więc bardzo duże pliki nie kończą się już przekroczeniem limitu czasu.
@@ -268,7 +229,7 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
   nietypowych danych wierszy została naprawiona.
 - **Modele AI:** wycofanie modelu Turbo, odzwierciedlone z API Service.
 
-## Docflow Service — live: `2.6.5`
+## Docflow Service — live: `2.7.2`
 
 - **Dopasowanie PO w przepływach pracy:** brakujące wartości porównania są
   traktowane jako brak danych, a nie jako niezgodność.
@@ -278,6 +239,9 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
   rozstrzygany przez kartę operatora, zamiast utykać.
 - **Bezpieczeństwo:** tokeny API przepływów pracy są weryfikowane względem
   organizacji, do której należą.
+- **Szybsze wyzwalanie:** sprawdzanie aktywnych przepływów pracy korzysta
+  z pamięci podręcznej, a procesy robocze w tle restartują się czysto,
+  zamiast pozostawiać po sobie zawieszone procesy.
 
 ## Barcode Service — live: `1.17.4`
 
@@ -285,14 +249,23 @@ a ustawienia E-Document poprawnie obsługują przełączenie z Default na Custom
   podczas długich zadań kodów kreskowych, więc podział dużych partii nie
   utyka już pod koniec.
 
+## FTP Service — live: `1.31.2`
+
+- **Porządkowanie dziennika importu:** ta sama 90-dniowa retencja
+  i automatyczne czyszczenie co w Email Service.
+
 ---
 
 ## Bez zmian w tym wydaniu
 
 **Auth Bridge** (`0.3.6`), **Auto Accounting** (`1.20.1`), **Docnet**
-(`1.55.1`), **FTP** (`1.31.1`), **Operator** (`1.40.2`) i **Ideas**
-(`0.3.1`) nie zawierają zmian w tym okresie.
+(`1.55.1`), **Operator** (`1.40.2`) i **Ideas** (`0.3.1`) nie zawierają
+zmian w tym okresie.
 
-<!-- Generated by the docbits-changelog skill (version-boundary mode: exact git
-     ranges between the LATEST (2026-07-09..15) and NOVA (2026-07-15..21)
-     version-bump commits supplied by the user, per service). -->
+<!-- Generated by the docbits-changelog skill (version-boundary mode), then
+     reconciled on 23 Jul 2026 against the Nova versions actually deployed
+     (Web App 10.45.1, API 12.64.3, Auth 1.72.8, Email 1.39.9, PO Match
+     1.59.1, OCR 1.9.9, Docflow 2.7.2, FTP 1.31.2). Manage Layouts and
+     Custom Validation Rules were removed from this page: DOCB-13719 gated
+     both behind a beta query parameter, so they are not generally available
+     in 10.45.1. -->

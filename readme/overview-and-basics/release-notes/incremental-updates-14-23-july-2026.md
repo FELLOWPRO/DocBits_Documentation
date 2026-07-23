@@ -10,13 +10,6 @@ wijzigingen die zichtbaar zijn voor klanten._
 
 ## Hoogtepunten
 
-- **Manage Layouts en validatieregels komen naar de app.** De regelsystemen
-  die in de vorige release aan de serverkant zijn geïntroduceerd, hebben nu
-  een volwaardige gebruikersinterface. U beheert documentlay-outs direct,
-  definieert uw eigen validatieregels en laat regels de juiste lay-out kiezen
-  in plaats van de herkomst van het document. Beide staan uit totdat u
-  **Custom Validation Rules** op het documenttype inschakelt — er verandert
-  dus niets zolang u niet zelf kiest voor de nieuwe werkwijze.
 - **Supporttickets vanuit het foutscherm.** Als er iets misgaat, kunt u nu
   rechtstreeks vanuit de foutmelding een supportticket openen. Het ticket
   bevat de technische context al, zodat u die niet zelf hoeft te beschrijven.
@@ -29,6 +22,9 @@ wijzigingen die zichtbaar zijn voor klanten._
   waardoor mensen naar het verkeerde probleem zochten. Ze krijgen nu een
   eigen status "tabel onvolledig", met detail op kolomniveau over wat niet
   kon worden toegewezen.
+- **Btw-codetoewijzing voor e-documenten.** Een nieuwe instellingenpagina
+  wijst uw ERP-btw-codes toe voor elektronische documenten, en exports
+  controleren de toewijzing vooraf in plaats van in het ERP te mislukken.
 - **Scriptwijzigingen zijn beveiligd met een wachtwoord.** Aangepaste scripts
   kunnen de documentverwerking beïnvloeden; daarom vereist elke
   scriptwijziging nu een wachtwoord dat elk uur wisselt. Vraag uw beheerder
@@ -39,61 +35,7 @@ wijzigingen die zichtbaar zijn voor klanten._
 
 ---
 
-## Web App — live: `10.44.4`
-
-### Manage Layouts
-
-De regelsystemen die in de vorige release aan de serverkant zijn geleverd,
-hebben nu hun gebruikersinterface — te vinden onder Instellingen →
-Documenttypen → Manage Layouts.
-
-Lay-outs zijn herbruikbare veldindelingen, niet langer gekoppeld aan de
-herkomst van een document. Selectieregels bepalen welke lay-out een document
-krijgt: geëvalueerd op prioriteit, de eerste match wint, met een
-standaard-lay-out als terugvaloptie.
-
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-nl.png" alt="Scherm Layouts &#x26; Selection Rules met lay-outkaarten en de nieuwe schakelaar voor selectieregels"><figcaption><p>Layouts &#x26; Selection Rules: herbruikbare lay-outs met regelgebaseerde selectie</p></figcaption></figure>
-
-### Validatieregels
-
-Validatieregels controleren geëxtraheerde waarden automatisch tijdens de
-verwerking van een document en markeren elke fout direct op het document,
-gekoppeld aan het veld waar het om gaat. Het doel: foute gegevens opsporen
-tijdens de validatie, niet pas nadat het document naar uw ERP is
-geëxporteerd. Typische controles zijn een vervaldatum die vóór de
-factuurdatum ligt, regelposten die niet optellen tot het nettototaal, een
-IBAN of btw-nummer in het verkeerde formaat, of een verplicht veld dat leeg
-is gebleven.
-
-U beheert de regels onder Instellingen → Documenttypen → Custom Validation
-Rules. Een catalogus met standaardregels wordt met de release meegeleverd;
-elke regel blijft uit totdat u deze voor dat documenttype inschakelt.
-
-<figure><img src="../../.gitbook/assets/custom-validation-rules-nl.png" alt="Scherm Custom Validation Rules met standaardregels van het systeem, inclusief ernst en statusschakelaars"><figcaption><p>Custom Validation Rules: de regelcatalogus van een documenttype, elke regel afzonderlijk te activeren</p></figcaption></figure>
-
-Elke regel bestaat uit drie delen. **Name &#x26; scope** (naam en bereik)
-bepaalt hoe de regel heet, of deze de documentkop of elke afzonderlijke
-regelpost controleert, aan welk veld de fout wordt gekoppeld, en of een
-overtreding als fout of alleen als waarschuwing telt. **Applies when** (van
-toepassing wanneer) bevat de condities die bepalen op welke documenten de
-regel draait; laat u dit leeg, dan geldt de regel voor elk document.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-nl.png" alt="Scherm Edit Rule met de secties Name &#x26; scope en Applies when van een validatieregel"><figcaption><p>Een regel bewerken: naam, bereik en ernst bovenaan, daaronder de Applies-when-condities</p></figcaption></figure>
-
-**Check** (controle) definieert wat waar moet zijn, met een van zeven
-controletypen: een verplicht veld, een formule over bedragen, een patroon
-(formaat of regex), een numeriek bereik, een vergelijking van twee velden,
-een vaste lijst met toegestane waarden, of een benoemde List of Values. De
-foutmelding en foutcode die de verwerkende gebruiker te zien krijgt,
-schrijft u zelf.
-
-De systeemregel "Due date after invoice date" (vervaldatum na factuurdatum)
-laat het patroon zien: de regel is van toepassing wanneer beide datums zijn
-ingevuld, vergelijkt de twee velden met "on or after" (op of na), en meldt
-"Due date must be on or after the invoice date." wanneer de volgorde niet
-klopt.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-nl.png" alt="Scherm Edit Rule met de sectie Check die de vervaldatum vergelijkt met de factuurdatum, inclusief foutmelding en foutcode"><figcaption><p>De sectie Check: velden vergelijken, eigen foutmelding en foutcode</p></figcaption></figure>
+## Web App — live: `10.45.1`
 
 ### Werken met documenten
 
@@ -107,7 +49,13 @@ klopt.
   opnieuw op in de opgeslagen tabel.
 - **Goedkeuringen:** gebruikers kunnen niet langer een Sales Tax-stap
   goedkeuren waarvoor hun groep geen rechten heeft, en de
-  goedkeuringshistorie toont weer alle vermeldingen.
+  goedkeuringshistorie toont weer alle vermeldingen. De historie vermeldt
+  bovendien de persoon die daadwerkelijk heeft goedgekeurd, inclusief
+  goedkeuringen die een beheerder namens de toegewezen persoon heeft gedaan.
+- **Leveranciers:** de pagina Accounting toont niet langer een onterechte
+  waarschuwing "Supplier is missing", en het verwijderen van een leverancier
+  die alleen uit extractie bestaat, laat het dialoogvenster niet langer
+  hangen.
 - **Taken en meldingen:** de verwijderoptie is verborgen voor gebruikers
   zonder beheerdersrechten.
 
@@ -139,6 +87,8 @@ klopt.
   pagina te herladen.
 - **Documenttypen:** nieuwe instelling Structured Extraction in de
   extractiesectie.
+- **E-Doc-btw-codes:** nieuwe instellingenpagina om uw ERP-btw-codes toe te
+  wijzen voor elektronische documenten (zie Hoogtepunten).
 - **AI-modelselectie:** het uitgefaseerde Turbo-niveau is uit de keuzelijst
   verdwenen; bestaande selecties tonen Fast.
 - **Dialoogvenster Serviceversies:** is nu scrollbaar, bevat de Auth
@@ -154,21 +104,15 @@ veldinstellingen staan weer recht, geblokkeerde documentverwijderingen
 leggen uit waarom, en de E-Document-instellingen verwerken het wisselen van
 Default naar Custom netjes.
 
-## API Service — live: `12.61.8`
+## API Service — live: `12.64.3`
 
-- **Validatieregels, volwassener:** nieuwe conditie-operatoren (contains,
-  starts with, ends with), waarden uit waardenlijstbronnen, activering per
-  documenttype, en een audittrail die toont wie elke regel heeft aangemaakt
-  of gewijzigd. Documenten worden automatisch opnieuw gevalideerd wanneer
-  regels wijzigen.
-- **Transformatieregels:** kunnen nu waarden op het hele document instellen
-  of wissen, worden per documenttype geactiveerd en hebben dezelfde
-  audittrail.
-- **Lay-outselectieregels:** de activering is verplaatst naar het
-  documenttype, en lay-outsjablonen registreren wie ze wanneer heeft
-  gewijzigd.
 - **Scriptbeveiliging:** scriptwijzigingen vereisen een tijdgebonden
   wachtwoord (zie Hoogtepunten).
+- **E-Doc-btw-codes:** ERP-btw-codetoewijzing voor elektronische documenten,
+  met een centrale controle vóór de export zodat ontbrekende codes vroeg aan
+  het licht komen.
+- **Toegangsbeheer:** beheerders kunnen niet-beheerders inzage geven in
+  niet-geclassificeerde documenten.
 - **Persoonlijke dashboards:** deelinstellingen die niet werden opgeslagen
   zijn gerepareerd.
 - **Dashboardzoekfunctie:** Invoice Type is toegevoegd aan de uitgebreide
@@ -179,7 +123,8 @@ Default naar Custom netjes.
 - **Leveranciersopzoeking:** resultaten komen binnen zodra de gegevens klaar
   zijn, in plaats van na een vaste wachttijd.
 - **Infor-export:** eenheidsprijzen behouden vier decimalen. M3-exports
-  kunnen regeltoeslagen met een nulbedrag bevatten.
+  kunnen regeltoeslagen met een nulbedrag bevatten, en negatieve
+  LN-kostenregels worden als positieve creditregels verzonden.
 - **Goedkeuringen:** een goedkeuring wordt alleen aan een
   goedkeuringsverzoek gekoppeld wanneer de goedkeurder de toegewezen persoon
   is.
@@ -187,12 +132,20 @@ Default naar Custom netjes.
   gebruikers niet langer uit; de app probeert het opnieuw.
 - **Classificatie:** bronregels matchen nu op elk documentbronveld, niet op
   vaste posities.
+- **Validatiestabiliteit:** een veld zonder naam laat de documentvalidatie
+  niet langer crashen.
 - **AI-modellen:** het (uitgefaseerde) Turbo-niveau wordt overal omgezet
   naar Fast, inclusief fijn afgestemde varianten, met een beveiliging zodat
   een uitgefaseerd model nooit kan draaien.
 
-## Auth Service — live: `1.72.5`
+## Auth Service — live: `1.72.8`
 
+- **Aanmeldhistorie:** aanmeldingen via SSO/SAML verschijnen nu in de
+  aanmeldhistorie, en het tijdstip van de laatste aanmelding wordt bij elk
+  aanmeldtype betrouwbaar vastgelegd. Het bekijken van de aanmeldhistorie
+  van een andere gebruiker vereist het passende beheerdersniveau.
+- **Legacy-accounts:** het verwijderen van een legacy-gebruikersaccount werkt
+  weer, in plaats van stilzwijgend niets te doen.
 - **Gebruikersbeheer in bulk:** voeg bestaande gebruikers in bulk via CSV toe
   aan suborganisaties en groepen, gematcht op e-mailadres. Ook opgelost: een
   crash bij ongelijk gevulde CSV-rijen en een serverfout bij het tegelijk
@@ -213,7 +166,7 @@ Default naar Custom netjes.
   eindpunten gekregen. Deze wijzigingen betreffen de interne tooling van
   DocBits, niet de klantapp.
 
-## Email Service — live: `1.39.8`
+## Email Service — live: `1.39.9`
 
 - **Import in de juiste regio:** inkomende e-maildomeinen bestaan per regio,
   en e-mails die in de verkeerde regio aankomen, worden doorgestuurd naar de
@@ -232,8 +185,10 @@ Default naar Custom netjes.
 - **Bronnamen:** O365-bronnen met een geconfigureerde map nemen het
   e-mailadres van het account op in hun naam, zodat vergelijkbare bronnen te
   onderscheiden zijn.
+- **Opschoning van het importlogboek:** vermeldingen in het importlogboek
+  worden 90 dagen bewaard en daarna automatisch opgeruimd.
 
-## PO Match Service — live: `1.58.6`
+## PO Match Service — live: `1.59.1`
 
 - **Status "tabel onvolledig":** facturen waarvan de regeltabel niet kon
   worden toegewezen, krijgen een eigen status in plaats van het misleidende
@@ -244,6 +199,8 @@ Default naar Custom netjes.
 - **Netter API-gedrag:** verzoeken om PO-regels die niet bestaan, geven een
   correct niet-gevonden-antwoord, en corrupte cache-items worden verwijderd
   in plaats van herhaalde fouten te veroorzaken.
+- **Matchen op totaal:** een fout opgelost in het matchen tegen het
+  totaalbedrag van de inkooporder.
 
 ## Fulltext Service — live: `1.38.3`
 
@@ -257,7 +214,7 @@ Default naar Custom netjes.
   primaire database) en verwijdert misvormde wachtrijberichten in plaats van
   ze eindeloos opnieuw te proberen.
 
-## OCR Service — live: `1.9.8`
+## OCR Service — live: `1.9.9`
 
 - **Grote documenten:** het OCR-tijdbudget schaalt mee met de
   documentgrootte, zodat zeer grote bestanden niet langer mislukken met een
@@ -278,7 +235,7 @@ Default naar Custom netjes.
 - **AI-modellen:** uitfasering van het Turbo-niveau, overgenomen van de API
   Service.
 
-## Docflow Service — live: `2.6.5`
+## Docflow Service — live: `2.7.2`
 
 - **PO-matching in workflows:** ontbrekende vergelijkingswaarden worden
   behandeld als ontbrekende gegevens in plaats van als een mismatch.
@@ -288,6 +245,9 @@ Default naar Custom netjes.
   geval afgehandeld door de operatorkaart in plaats van te blijven hangen.
 - **Beveiliging:** workflow-API-tokens worden gevalideerd tegen de
   organisatie waartoe ze behoren.
+- **Sneller activeren:** de controle op actieve workflows wordt gecachet, en
+  de achtergrondworkers herstarten netjes in plaats van vastgelopen
+  processen achter te laten.
 
 ## Barcode Service — live: `1.17.4`
 
@@ -295,14 +255,23 @@ Default naar Custom netjes.
   actief tijdens lange barcodetaken, zodat het splitsen van grote batches
   niet langer tegen het einde vastloopt.
 
+## FTP Service — live: `1.31.2`
+
+- **Opschoning van het importlogboek:** dezelfde 90-daagse bewaartermijn en
+  automatische opruiming als bij de Email Service.
+
 ---
 
 ## Ongewijzigd in deze release
 
 **Auth Bridge** (`0.3.6`), **Auto Accounting** (`1.20.1`), **Docnet**
-(`1.55.1`), **FTP** (`1.31.1`), **Operator** (`1.40.2`) en **Ideas**
-(`0.3.1`) bevatten in dit tijdvenster geen wijzigingen.
+(`1.55.1`), **Operator** (`1.40.2`) en **Ideas** (`0.3.1`) bevatten in dit
+tijdvenster geen wijzigingen.
 
-<!-- Generated by the docbits-changelog skill (version-boundary mode: exact git
-     ranges between the LATEST (2026-07-09..15) and NOVA (2026-07-15..21)
-     version-bump commits supplied by the user, per service). -->
+<!-- Generated by the docbits-changelog skill (version-boundary mode), then
+     reconciled on 23 Jul 2026 against the Nova versions actually deployed
+     (Web App 10.45.1, API 12.64.3, Auth 1.72.8, Email 1.39.9, PO Match
+     1.59.1, OCR 1.9.9, Docflow 2.7.2, FTP 1.31.2). Manage Layouts and
+     Custom Validation Rules were removed from this page: DOCB-13719 gated
+     both behind a beta query parameter, so they are not generally available
+     in 10.45.1. -->

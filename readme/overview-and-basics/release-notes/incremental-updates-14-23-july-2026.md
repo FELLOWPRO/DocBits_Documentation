@@ -10,14 +10,6 @@ répertoriés n'ont connu aucune modification visible par le client._
 
 ## Points forts
 
-- **Manage Layouts et les règles de validation arrivent dans l'application.**
-  Les moteurs de règles introduits côté serveur dans la version précédente
-  disposent désormais d'une interface utilisateur complète. Vous pouvez gérer
-  directement les mises en page des documents, définir vos propres règles de
-  validation et laisser des règles choisir la bonne mise en page au lieu de la
-  provenance du document. Les deux restent désactivés tant que vous n'activez
-  pas **Custom Validation Rules** sur le type de document — rien ne change
-  pour vous tant que vous n'y adhérez pas.
 - **Tickets de support depuis l'écran d'erreur.** En cas de problème, vous
   pouvez désormais ouvrir un ticket de support directement depuis
   l'enregistrement d'erreur. Le ticket contient déjà le contexte technique ;
@@ -32,6 +24,10 @@ répertoriés n'ont connu aucune modification visible par le client._
   mauvais problème. Elles reçoivent désormais leur propre statut « tableau
   incomplet », avec le détail, colonne par colonne, de ce qui n'a pas été
   mappé.
+- **Mappage des codes de taxe pour les e-documents.** Une nouvelle page de
+  paramètres met en correspondance vos codes de taxe ERP pour les documents
+  électroniques, et les exports vérifient ce mappage en amont au lieu
+  d'échouer dans l'ERP.
 - **Les modifications de scripts sont protégées par mot de passe.** Les
   scripts personnalisés peuvent modifier la façon dont les documents sont
   traités ; chaque modification de script exige donc désormais un mot de passe
@@ -43,62 +39,7 @@ répertoriés n'ont connu aucune modification visible par le client._
 
 ---
 
-## Web App — en ligne : `10.44.4`
-
-### Manage Layouts
-
-Les moteurs de règles livrés côté serveur dans la version précédente disposent
-désormais de leur interface utilisateur, sous Paramètres → Types de document →
-Manage Layouts.
-
-Les mises en page sont des dispositions de champs réutilisables, qui ne sont
-plus liées à la provenance du document. Des règles de sélection décident quelle
-mise en page un document reçoit : elles sont évaluées par priorité, la première
-correspondance l'emporte, avec une mise en page par défaut en repli.
-
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-fr.png" alt="Écran Layouts &#x26; Selection Rules avec les cartes de mise en page et le nouveau commutateur de règles de sélection"><figcaption><p>Layouts &#x26; Selection Rules : des mises en page réutilisables avec sélection par règles</p></figcaption></figure>
-
-### Validation Rules
-
-Les Validation Rules contrôlent automatiquement les valeurs extraites pendant
-le traitement d'un document et signalent chaque échec directement sur le
-document, rattaché au champ concerné. L'objectif : intercepter les données
-erronées pendant la validation, et non après l'export du document vers votre
-ERP. Contrôles typiques : une date d'échéance antérieure à la date de facture,
-des lignes dont la somme ne correspond pas au total net, un IBAN ou un numéro
-de TVA au mauvais format, ou un champ obligatoire resté vide.
-
-Vous gérez les règles sous Paramètres → Types de document → Custom Validation
-Rules. Un catalogue de règles système par défaut est livré avec la version ;
-chaque règle reste désactivée tant que vous ne l'activez pas pour ce type de
-document.
-
-<figure><img src="../../.gitbook/assets/custom-validation-rules-fr.png" alt="Écran Custom Validation Rules listant les règles système par défaut avec leur sévérité et leurs commutateurs de statut"><figcaption><p>Custom Validation Rules : le catalogue de règles d'un type de document, chaque règle activée individuellement</p></figcaption></figure>
-
-Chaque règle se compose de trois parties. **Name &#x26; scope** (nom et
-portée) indique comment la règle s'appelle, si elle contrôle l'en-tête du
-document ou chaque ligne, le champ auquel l'erreur se rattache, et si un échec
-compte comme erreur ou seulement comme avertissement. **Applies when**
-(conditions d'application) contient les conditions qui déterminent sur quels
-documents la règle s'exécute ; laissez cette partie vide et la règle
-s'applique à tous les documents.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-fr.png" alt="Écran Edit Rule montrant les sections Name &#x26; scope et Applies when d'une règle de validation"><figcaption><p>Modification d'une règle : nom, portée et sévérité en haut, les conditions Applies when en dessous</p></figcaption></figure>
-
-**Check** (contrôle) définit ce qui doit être vrai, à l'aide de l'un des sept
-types de contrôle : champ obligatoire, formule sur des montants, motif (format
-ou expression régulière), plage numérique, comparaison de deux champs, liste
-fixe de valeurs autorisées, ou List of Values nommée. Le message d'erreur et
-le code d'erreur présentés à l'utilisateur en charge du traitement sont à
-rédiger librement.
-
-La règle système « Due date after invoice date » (date d'échéance postérieure
-à la date de facture) illustre le principe : elle s'applique quand les deux
-dates sont renseignées, compare les deux champs avec « on or after » (le jour
-même ou après) et renvoie « Due date must be on or after the invoice date. »
-quand l'ordre est inversé.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-fr.png" alt="Écran Edit Rule montrant la section Check comparant la date d'échéance à la date de facture, avec message d'erreur et code d'erreur"><figcaption><p>La section Check : comparaison de champs, message d'erreur et code d'erreur personnalisés</p></figcaption></figure>
+## Web App — en ligne : `10.45.1`
 
 ### Travailler avec les documents
 
@@ -112,7 +53,13 @@ quand l'ordre est inversé.
   tableau enregistré.
 - **Approbations :** les utilisateurs ne peuvent plus approuver une étape
   Sales Tax pour laquelle leur groupe n'a pas d'autorisation, et l'historique
-  des approbations affiche à nouveau toutes les entrées.
+  des approbations affiche à nouveau toutes les entrées. L'historique nomme
+  également la personne qui a réellement approuvé, y compris lorsqu'un
+  administrateur a approuvé au nom du destinataire.
+- **Fournisseurs :** la page Accounting n'affiche plus de faux avertissement
+  « Supplier is missing » (fournisseur manquant), et la suppression d'un
+  fournisseur issu uniquement de l'extraction ne laisse plus la boîte de
+  dialogue bloquée.
 - **Tâches et notifications :** l'option de suppression est masquée pour les
   utilisateurs sans droits d'administration.
 
@@ -144,6 +91,9 @@ quand l'ordre est inversé.
   immédiatement, sans recharger la page.
 - **Types de document :** nouveau paramètre Structured Extraction dans la
   section extraction.
+- **Codes de taxe E-Doc :** nouvelle page de paramètres pour mettre en
+  correspondance vos codes de taxe ERP pour les documents électroniques (voir
+  Points forts).
 - **Sélection du modèle IA :** le niveau Turbo retiré a disparu de la liste
   déroulante ; les sélections existantes affichent Fast.
 - **Boîte de dialogue Versions des services :** désormais défilable, elle
@@ -160,21 +110,15 @@ paramètres de champ sont réalignées, les suppressions de documents bloquées
 expliquent pourquoi, et les paramètres E-Document gèrent proprement le passage
 de Default à Custom.
 
-## API Service — en ligne : `12.61.8`
+## API Service — en ligne : `12.64.3`
 
-- **Règles de validation, consolidées :** nouveaux opérateurs de condition
-  (contient, commence par, se termine par), valeurs issues de sources de type
-  liste de valeurs, activation par type de document, et une piste d'audit
-  indiquant qui a créé ou modifié chaque règle. Les documents sont revalidés
-  automatiquement quand les règles changent.
-- **Règles de transformation :** elles peuvent désormais définir ou effacer
-  des valeurs sur l'ensemble du document, s'activent par type de document et
-  portent la même piste d'audit.
-- **Règles de sélection de mise en page :** l'activation se fait désormais au
-  niveau du type de document, et les modèles de mise en page enregistrent qui
-  les a modifiés et quand.
 - **Sécurité des scripts :** les modifications de scripts exigent un mot de
   passe à durée limitée (voir Points forts).
+- **Codes de taxe E-Doc :** mappage des codes de taxe ERP pour les documents
+  électroniques, avec un contrôle central avant l'export afin que les codes
+  manquants soient détectés tôt.
+- **Contrôle d'accès :** les administrateurs peuvent accorder aux utilisateurs
+  non administrateurs la visibilité des documents non classifiés.
 - **Tableaux de bord personnels :** correction des paramètres de partage qui
   ne s'enregistraient pas.
 - **Recherche du tableau de bord :** Invoice Type rejoint les champs de
@@ -185,19 +129,29 @@ de Default à Custom.
 - **Recherche fournisseur :** les résultats arrivent dès que les données sont
   prêtes, au lieu d'attendre un délai fixe.
 - **Export Infor :** les prix unitaires conservent quatre décimales. Les
-  exports M3 peuvent inclure des frais de ligne à montant nul.
+  exports M3 peuvent inclure des frais de ligne à montant nul, et les lignes
+  de coût LN négatives sont envoyées comme avoirs positifs.
 - **Approbations :** une approbation n'est liée à une demande d'approbation
   que si l'approbateur en est le destinataire.
 - **Stabilité de connexion :** une défaillance temporaire dans la validation
   des jetons ne déconnecte plus les utilisateurs ; l'application réessaie.
 - **Classification :** les règles de source comparent désormais tous les
   champs de source du document, et non des positions fixes.
+- **Stabilité de la validation :** un champ sans nom ne fait plus planter la
+  validation du document.
 - **Modèles IA :** le niveau Turbo (retiré) est basculé vers Fast partout, y
   compris pour les variantes affinées, avec un garde-fou empêchant qu'un
   modèle retiré puisse jamais s'exécuter.
 
-## Auth Service — en ligne : `1.72.5`
+## Auth Service — en ligne : `1.72.8`
 
+- **Historique de connexion :** les connexions via SSO/SAML apparaissent
+  désormais dans l'historique de connexion, et l'horodatage de dernière
+  connexion est enregistré de manière fiable pour chaque type de connexion.
+  Consulter l'historique de connexion d'un autre utilisateur exige le niveau
+  d'administration approprié.
+- **Comptes hérités :** la suppression d'un compte utilisateur hérité
+  fonctionne à nouveau, au lieu de ne rien faire en silence.
 - **Administration des utilisateurs en masse :** ajout en masse d'utilisateurs
   existants aux sous-organisations et aux groupes via CSV, avec correspondance
   par adresse e-mail. Correction également d'un plantage sur les lignes CSV
@@ -220,7 +174,7 @@ de Default à Custom.
   points de terminaison dédiés. Ces changements concernent l'outillage interne
   DocBits, pas l'application cliente.
 
-## Email Service — en ligne : `1.39.8`
+## Email Service — en ligne : `1.39.9`
 
 - **Import dans la bonne région :** les domaines d'e-mail entrants existent
   par région, et les messages arrivant dans la mauvaise région sont transférés
@@ -239,8 +193,10 @@ de Default à Custom.
 - **Nommage des sources :** les sources O365 avec un dossier configuré
   incluent l'adresse e-mail du compte dans leur nom, afin de distinguer les
   sources similaires.
+- **Entretien du journal d'import :** les entrées du journal d'import sont
+  conservées 90 jours, puis nettoyées automatiquement.
 
-## PO Match Service — en ligne : `1.58.6`
+## PO Match Service — en ligne : `1.59.1`
 
 - **Statut « tableau incomplet » :** les factures dont le tableau de lignes
   n'a pas pu être mappé reçoivent leur propre statut au lieu du trompeur
@@ -251,6 +207,8 @@ de Default à Custom.
 - **Comportement d'API plus propre :** les requêtes portant sur des règles PO
   inexistantes renvoient une vraie réponse « introuvable », et les entrées de
   cache corrompues sont écartées au lieu de provoquer des erreurs répétées.
+- **Rapprochement sur le total :** correction d'un bug dans le rapprochement
+  avec le total du bon de commande.
 
 ## Fulltext Service — en ligne : `1.38.3`
 
@@ -265,7 +223,7 @@ de Default à Custom.
   primaire) et écarte les messages de file malformés au lieu de les retenter
   indéfiniment.
 
-## OCR Service — en ligne : `1.9.8`
+## OCR Service — en ligne : `1.9.9`
 
 - **Documents volumineux :** le budget de temps OCR s'adapte à la taille du
   document ; les très gros fichiers n'échouent plus par dépassement de délai.
@@ -284,7 +242,7 @@ de Default à Custom.
   un plantage sur des données de ligne inhabituelles est corrigé.
 - **Modèles IA :** retrait du niveau Turbo, en miroir de l'API Service.
 
-## Docflow Service — en ligne : `2.6.5`
+## Docflow Service — en ligne : `2.7.2`
 
 - **Rapprochement des bons de commande dans les workflows :** les valeurs de
   comparaison manquantes sont traitées comme des données manquantes et non
@@ -295,6 +253,9 @@ de Default à Custom.
   est résolu par la carte opérateur au lieu de rester bloqué.
 - **Sécurité :** les jetons d'API de workflow sont validés par rapport à
   l'organisation à laquelle ils appartiennent.
+- **Déclenchement plus rapide :** la vérification des workflows actifs est
+  mise en cache, et les processus de travail en arrière-plan redémarrent
+  proprement au lieu de laisser derrière eux des processus bloqués.
 
 ## Barcode Service — en ligne : `1.17.4`
 
@@ -302,14 +263,23 @@ de Default à Custom.
   maintenue pendant les longs traitements de codes-barres ; la scission de
   gros lots ne cale plus juste avant la fin.
 
+## FTP Service — en ligne : `1.31.2`
+
+- **Entretien du journal d'import :** même conservation de 90 jours et même
+  nettoyage automatique que pour l'Email Service.
+
 ---
 
 ## Inchangés dans cette version
 
 **Auth Bridge** (`0.3.6`), **Auto Accounting** (`1.20.1`), **Docnet**
-(`1.55.1`), **FTP** (`1.31.1`), **Operator** (`1.40.2`) et **Ideas**
-(`0.3.1`) ne comportent aucun changement sur cette période.
+(`1.55.1`), **Operator** (`1.40.2`) et **Ideas** (`0.3.1`) ne comportent
+aucun changement sur cette période.
 
-<!-- Generated by the docbits-changelog skill (version-boundary mode: exact git
-     ranges between the LATEST (2026-07-09..15) and NOVA (2026-07-15..21)
-     version-bump commits supplied by the user, per service). -->
+<!-- Generated by the docbits-changelog skill (version-boundary mode), then
+     reconciled on 23 Jul 2026 against the Nova versions actually deployed
+     (Web App 10.45.1, API 12.64.3, Auth 1.72.8, Email 1.39.9, PO Match
+     1.59.1, OCR 1.9.9, Docflow 2.7.2, FTP 1.31.2). Manage Layouts and
+     Custom Validation Rules were removed from this page: DOCB-13719 gated
+     both behind a beta query parameter, so they are not generally available
+     in 10.45.1. -->

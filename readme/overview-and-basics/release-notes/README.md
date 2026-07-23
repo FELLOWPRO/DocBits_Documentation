@@ -1,6 +1,6 @@
 # Release-Notizen
 
-> **Neueste Hotfix-Version:** [Hotfixes 14.–23. Juli 2026](incremental-updates-14-23-july-2026.md): Was sich mit dem Produktions-Upgrade vom 23. Juli 2026 geändert hat, inklusive der neuen Funktionen Manage Layouts und Validierungsregeln. Alle Hotfix-Seiten finden Sie in der Navigation unter Release-Notizen.
+> **Neueste Hotfix-Version:** [Hotfixes 14.–23. Juli 2026](incremental-updates-14-23-july-2026.md): Was sich mit dem Produktions-Upgrade vom 23. Juli 2026 geändert hat, von Support-Tickets aus Fehlereinträgen bis zum E-Mail-Eingang in der richtigen Region. Alle Hotfix-Seiten finden Sie in der Navigation unter Release-Notizen.
 
 ## **Release R1.0 23./24. Mai 2026**
 

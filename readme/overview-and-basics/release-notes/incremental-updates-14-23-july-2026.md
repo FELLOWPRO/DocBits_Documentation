@@ -10,13 +10,6 @@ sichtbaren Änderungen._
 
 ## Highlights
 
-- **Layouts Verwalten (Manage Layouts) und Validierungsregeln kommen in die
-  App.** Die im letzten Release serverseitig eingeführten Regelwerke haben
-  jetzt eine vollständige Benutzeroberfläche. Sie können Dokumentlayouts
-  direkt verwalten, eigene Validierungsregeln definieren und das passende
-  Layout per Regeln auswählen lassen statt über die Herkunft des Dokuments.
-  Beides bleibt ausgeschaltet, bis Sie **Custom Validation Rules** am
-  Dokumenttyp aktivieren — bis dahin ändert sich für Sie nichts.
 - **Support-Tickets direkt aus dem Fehlerbildschirm.** Wenn etwas schiefgeht,
   können Sie jetzt direkt aus dem Fehlereintrag ein Support-Ticket eröffnen.
   Das Ticket enthält den technischen Kontext bereits — Sie müssen ihn nicht
@@ -30,6 +23,9 @@ sichtbaren Änderungen._
   gefunden“ — und schickten Anwender auf die Suche nach dem falschen Problem.
   Sie erhalten jetzt einen eigenen Status „Tabelle unvollständig“ mit Details
   auf Spaltenebene, was nicht zugeordnet werden konnte.
+- **Steuercode-Zuordnung für E-Dokumente.** Eine neue Einstellungsseite ordnet
+  Ihre ERP-Steuercodes für elektronische Dokumente zu, und Exporte prüfen die
+  Zuordnung vorab, statt erst im ERP zu scheitern.
 - **Skriptänderungen sind passwortgeschützt.** Eigene Skripte können die
   Dokumentverarbeitung verändern, deshalb erfordert jede Skriptänderung jetzt
   ein Passwort, das stündlich wechselt. Das aktuelle Passwort erhalten Sie von
@@ -40,59 +36,7 @@ sichtbaren Änderungen._
 
 ---
 
-## Web App — live: `10.44.4`
-
-### Layouts Verwalten (Manage Layouts)
-
-Die im letzten Release serverseitig eingeführten Regelwerke haben jetzt ihre
-Benutzeroberfläche — unter Einstellungen → Dokumenttypen → Layouts Verwalten.
-
-Layouts sind wiederverwendbare Feldanordnungen und nicht mehr daran gebunden,
-woher ein Dokument kam. Auswahlregeln entscheiden, welches Layout ein Dokument
-erhält: ausgewertet nach Priorität, der erste Treffer gewinnt, mit einem
-Standard-Layout als Rückfallebene.
-
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-de.png" alt="Bildschirm „Layout- und Auswahlregeln“ mit Layout-Karten und dem neuen Schalter für Auswahlregeln"><figcaption><p>Layout- und Auswahlregeln: wiederverwendbare Layouts mit regelbasierter Auswahl</p></figcaption></figure>
-
-### Validierungsregeln (Validation Rules)
-
-Validierungsregeln prüfen extrahierte Werte automatisch während der
-Dokumentverarbeitung und markieren jeden Verstoß direkt am Dokument — am
-betroffenen Feld. Das Ziel: fehlerhafte Daten schon bei der Validierung
-abfangen, nicht erst, nachdem das Dokument in Ihr ERP exportiert wurde.
-Typische Prüfungen sind ein Fälligkeitsdatum vor dem Rechnungsdatum,
-Positionen, die sich nicht zur Nettosumme aufsummieren, eine IBAN oder
-USt-IdNr. im falschen Format oder ein leer gelassenes Pflichtfeld.
-
-Sie verwalten die Regeln unter Einstellungen → Dokumenttypen → Custom
-Validation Rules. Ein Katalog von Systemstandardregeln wird mit dem Release
-ausgeliefert; jede Regel bleibt inaktiv, bis Sie sie für den jeweiligen
-Dokumenttyp einschalten.
-
-<figure><img src="../../.gitbook/assets/custom-validation-rules-de.png" alt="Bildschirm „Custom Validation Rules“ mit Systemstandardregeln samt Schweregrad und Statusschaltern"><figcaption><p>Custom Validation Rules: der Regelkatalog eines Dokumenttyps, jede Regel wird einzeln aktiviert</p></figcaption></figure>
-
-Jede Regel besteht aus drei Teilen. **Name &#x26; scope** (Name und
-Geltungsbereich) legt fest, wie die Regel heißt, ob sie den Dokumentkopf oder
-jede Position prüft, an welchem Feld der Fehler erscheint und ob ein Verstoß
-als Fehler oder nur als Warnung zählt. **Applies when** (Gilt, wenn) enthält
-die Bedingungen, die entscheiden, für welche Dokumente die Regel läuft;
-bleibt der Abschnitt leer, gilt die Regel für jedes Dokument.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-de.png" alt="Bildschirm „Edit Rule“ mit den Abschnitten „Name &#x26; scope“ und „Applies when“ einer Validierungsregel"><figcaption><p>Regel bearbeiten: Name, Geltungsbereich und Schweregrad oben, darunter die Applies-when-Bedingungen</p></figcaption></figure>
-
-**Check** (Prüfung) definiert, was gelten muss — mit einem von sieben
-Prüftypen: Pflichtfeld, Formel über Beträge, Muster (Format oder Regex),
-Zahlenbereich, Vergleich zweier Felder, feste Liste erlaubter Werte oder eine
-benannte List of Values. Fehlermeldung und Fehlercode, die der bearbeitende
-Benutzer sieht, schreiben Sie selbst.
-
-Die Systemregel "Due date after invoice date" (Fälligkeitsdatum nach dem
-Rechnungsdatum) zeigt das Muster: Sie greift, wenn beide Daten gefüllt sind,
-vergleicht die beiden Felder mit "on or after" (am oder nach) und meldet
-"Due date must be on or after the invoice date.", wenn die Reihenfolge nicht
-stimmt.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-de.png" alt="Bildschirm „Edit Rule“ mit dem Check-Abschnitt, der das Fälligkeitsdatum gegen das Rechnungsdatum prüft, samt Fehlermeldung und Fehlercode"><figcaption><p>Der Check-Abschnitt: Felder vergleichen, eigene Fehlermeldung und eigener Fehlercode</p></figcaption></figure>
+## Web App — live: `10.45.1`
 
 ### Arbeiten mit Dokumenten
 
@@ -106,7 +50,12 @@ stimmt.
   der gespeicherten Tabelle auf.
 - **Freigaben:** Benutzer können keinen Sales-Tax-Schritt mehr freigeben, für
   den ihre Gruppe keine Berechtigung hat, und die Freigabehistorie zeigt
-  wieder alle Einträge.
+  wieder alle Einträge. Die Historie nennt außerdem die Person, die
+  tatsächlich freigegeben hat, einschließlich Freigaben, die ein Admin
+  stellvertretend für den Bearbeiter erteilt hat.
+- **Lieferanten:** Die Accounting-Seite zeigt keine falsche Warnung
+  „Supplier is missing“ mehr an, und das Löschen eines Lieferanten, der nur
+  aus der Extraktion stammt, lässt den Dialog nicht mehr hängen.
 - **Aufgaben und Benachrichtigungen:** Die Löschoption wird für Benutzer ohne
   Admin-Rechte ausgeblendet.
 
@@ -139,6 +88,8 @@ stimmt.
   laden.
 - **Dokumenttypen:** Neue Einstellung „Structured Extraction“ im
   Extraktionsbereich.
+- **E-Doc-Steuercodes:** Neue Einstellungsseite zur Zuordnung Ihrer
+  ERP-Steuercodes für elektronische Dokumente (siehe Highlights).
 - **KI-Modellauswahl:** Die eingestellte Turbo-Stufe ist aus dem Dropdown
   verschwunden; bestehende Auswahlen zeigen Fast.
 - **Dialog „Service-Versionen“:** Jetzt scrollbar, enthält den Auth Bridge
@@ -154,20 +105,15 @@ Feldeinstellungen sind wieder ausgerichtet, blockierte Dokumentlöschungen
 erklären den Grund, und die E-Dokument-Einstellungen verarbeiten den Wechsel
 von Default zu Custom sauber.
 
-## API Service — live: `12.61.8`
+## API Service — live: `12.64.3`
 
-- **Validierungsregeln, ausgereift:** Neue Bedingungsoperatoren (enthält,
-  beginnt mit, endet mit), Werte aus Wertelisten-Quellen, Aktivierung pro
-  Dokumenttyp und ein Audit-Trail, der zeigt, wer jede Regel erstellt oder
-  geändert hat. Dokumente werden bei Regeländerungen automatisch neu
-  validiert.
-- **Transformationsregeln:** Können jetzt Werte am gesamten Dokument setzen
-  oder leeren, werden pro Dokumenttyp aktiviert und tragen denselben
-  Audit-Trail.
-- **Layout-Auswahlregeln:** Die Aktivierung ist auf den Dokumenttyp
-  umgezogen, und Layout-Vorlagen protokollieren, wer sie wann geändert hat.
 - **Skript-Sicherheit:** Skriptänderungen erfordern ein zeitbasiertes
   Passwort (siehe Highlights).
+- **E-Doc-Steuercodes:** ERP-Steuercode-Zuordnung für elektronische
+  Dokumente, mit einer zentralen Prüfung vor dem Export, damit fehlende
+  Codes früh auffallen.
+- **Zugriffssteuerung:** Admins können Benutzern ohne Admin-Rechte Einsicht
+  in nicht klassifizierte Dokumente gewähren.
 - **Persönliche Dashboards:** Freigabe-Einstellungen, die sich nicht
   speichern ließen, sind behoben.
 - **Dashboard-Suche:** Der Rechnungstyp gehört jetzt zu den erweiterten
@@ -178,19 +124,28 @@ von Default zu Custom sauber.
 - **Lieferanten-Lookup:** Ergebnisse kommen, sobald die Daten bereitstehen,
   statt nach einer festen Wartezeit.
 - **Infor-Export:** Stückpreise behalten vier Nachkommastellen. M3-Exporte
-  können Positionszuschläge mit Betrag null enthalten.
+  können Positionszuschläge mit Betrag null enthalten, und negative
+  LN-Kostenzeilen werden als positive Gutschriften gesendet.
 - **Freigaben:** Eine Freigabe wird nur dann mit einer Freigabeanforderung
   verknüpft, wenn der Freigebende auch ihr Bearbeiter ist.
 - **Anmeldestabilität:** Ein vorübergehender Fehler in der Token-Prüfung
   meldet Benutzer nicht mehr ab; die App versucht es stattdessen erneut.
 - **Klassifizierung:** Quellregeln prüfen jetzt gegen jedes
   Dokumentquellen-Feld, nicht gegen feste Positionen.
+- **Validierungsstabilität:** Ein Feld ohne Namen bringt die
+  Dokumentvalidierung nicht mehr zum Absturz.
 - **KI-Modelle:** Die eingestellte Turbo-Stufe wird überall auf Fast
   umgestellt, inklusive feinabgestimmter Varianten — mit einer Absicherung,
   dass ein eingestelltes Modell nie ausgeführt werden kann.
 
-## Auth Service — live: `1.72.5`
+## Auth Service — live: `1.72.8`
 
+- **Anmeldehistorie:** Anmeldungen über SSO/SAML erscheinen jetzt in der
+  Anmeldehistorie, und der Zeitstempel der letzten Anmeldung wird bei jedem
+  Anmeldetyp zuverlässig gesetzt. Die Anmeldehistorie eines anderen
+  Benutzers einzusehen erfordert die passende Admin-Stufe.
+- **Legacy-Konten:** Das Löschen eines Legacy-Benutzerkontos funktioniert
+  wieder, statt stillschweigend nichts zu bewirken.
 - **Benutzerverwaltung im Stapel:** Bestehende Benutzer lassen sich per CSV
   gesammelt zu Unterorganisationen und Gruppen hinzufügen, zugeordnet über
   die E-Mail-Adresse. Außerdem behoben: ein Absturz bei ungleichmäßig
@@ -212,7 +167,7 @@ von Default zu Custom sauber.
   Endpunkte erhalten. Diese Änderungen betreffen interne DocBits-Werkzeuge,
   nicht die Kunden-App.
 
-## Email Service — live: `1.39.8`
+## Email Service — live: `1.39.9`
 
 - **Import in der richtigen Region:** Eingangs-E-Mail-Domains existieren pro
   Region, und Mails, die in der falschen Region ankommen, werden in die
@@ -230,8 +185,10 @@ von Default zu Custom sauber.
   Dokument nicht zweimal anlegen.
 - **Quellenbenennung:** O365-Quellen mit konfiguriertem Ordner enthalten die
   Konto-E-Mail im Namen, damit ähnliche Quellen unterscheidbar sind.
+- **Importprotokoll-Aufräumung:** Einträge im Importprotokoll werden 90 Tage
+  aufbewahrt und danach automatisch bereinigt.
 
-## PO Match Service — live: `1.58.6`
+## PO Match Service — live: `1.59.1`
 
 - **Status „Tabelle unvollständig“:** Rechnungen, deren Positionstabelle
   nicht zugeordnet werden konnte, erhalten einen eigenen Status statt des
@@ -242,6 +199,8 @@ von Default zu Custom sauber.
 - **Sauberes API-Verhalten:** Anfragen nach nicht vorhandenen PO-Regeln
   liefern eine korrekte Nicht-gefunden-Antwort, und beschädigte
   Cache-Einträge werden verworfen, statt wiederholte Fehler zu verursachen.
+- **Abgleich über die Gesamtsumme:** Fehler beim Abgleich gegen die
+  Bestellsumme behoben.
 
 ## Fulltext Service — live: `1.38.3`
 
@@ -255,7 +214,7 @@ von Default zu Custom sauber.
   die primäre Datenbank) und verwirft fehlerhafte Queue-Nachrichten, statt
   sie endlos zu wiederholen.
 
-## OCR Service — live: `1.9.8`
+## OCR Service — live: `1.9.9`
 
 - **Große Dokumente:** Das OCR-Zeitbudget skaliert mit der Dokumentgröße —
   sehr große Dateien scheitern nicht mehr an einem Timeout.
@@ -274,7 +233,7 @@ von Default zu Custom sauber.
   und ein Absturz bei ungewöhnlichen Zeilendaten ist behoben.
 - **KI-Modelle:** Einstellung der Turbo-Stufe, übernommen vom API Service.
 
-## Docflow Service — live: `2.6.5`
+## Docflow Service — live: `2.7.2`
 
 - **PO-Matching in Workflows:** Fehlende Vergleichswerte werden als fehlende
   Daten behandelt, nicht als Abweichung.
@@ -284,6 +243,9 @@ von Default zu Custom sauber.
   Fall über die Operator-Karte gelöst, statt hängen zu bleiben.
 - **Sicherheit:** Workflow-API-Tokens werden gegen die Organisation geprüft,
   zu der sie gehören.
+- **Schnelleres Auslösen:** Die Prüfung auf aktive Workflows wird
+  zwischengespeichert, und die Hintergrund-Worker starten sauber neu, statt
+  hängende Prozesse zu hinterlassen.
 
 ## Barcode Service — live: `1.17.4`
 
@@ -291,14 +253,23 @@ von Default zu Custom sauber.
   langen Barcode-Jobs offen gehalten — das Aufteilen großer Stapel bleibt
   damit nicht mehr kurz vor dem Ende stehen.
 
+## FTP Service — live: `1.31.2`
+
+- **Importprotokoll-Aufräumung:** Dieselbe 90-Tage-Aufbewahrung und
+  automatische Bereinigung wie beim Email Service.
+
 ---
 
 ## Unverändert in diesem Release
 
 **Auth Bridge** (`0.3.6`), **Auto Accounting** (`1.20.1`), **Docnet**
-(`1.55.1`), **FTP** (`1.31.1`), **Operator** (`1.40.2`) und **Ideas**
-(`0.3.1`) enthalten in diesem Zeitraum keine Änderungen.
+(`1.55.1`), **Operator** (`1.40.2`) und **Ideas** (`0.3.1`) enthalten in
+diesem Zeitraum keine Änderungen.
 
-<!-- Generated by the docbits-changelog skill (version-boundary mode: exact git
-     ranges between the LATEST (2026-07-09..15) and NOVA (2026-07-15..21)
-     version-bump commits supplied by the user, per service). -->
+<!-- Generated by the docbits-changelog skill (version-boundary mode), then
+     reconciled on 23 Jul 2026 against the Nova versions actually deployed
+     (Web App 10.45.1, API 12.64.3, Auth 1.72.8, Email 1.39.9, PO Match
+     1.59.1, OCR 1.9.9, Docflow 2.7.2, FTP 1.31.2). Manage Layouts and
+     Custom Validation Rules were removed from this page: DOCB-13719 gated
+     both behind a beta query parameter, so they are not generally available
+     in 10.45.1. -->

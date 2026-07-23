@@ -10,13 +10,6 @@ korisnicima._
 
 ## Najvažnije
 
-- **Manage Layouts i pravila validacije stižu u aplikaciju.** Sistemi pravila
-  uvedeni na serverskoj strani u prošlom izdanju sada imaju kompletan
-  korisnički interfejs. Rasporedima dokumenata možete upravljati direktno,
-  definisati sopstvena pravila validacije i prepustiti pravilima da izaberu
-  pravi raspored umesto porekla dokumenta. Oba su isključena dok ne uključite
-  **Custom Validation Rules** na tipu dokumenta, tako da se za vas ništa ne
-  menja dok se sami ne opredelite.
 - **Tiketi podrške sa ekrana greške.** Kada nešto pođe naopako, tiket podrške
   sada možete otvoriti direktno iz zapisa o grešci. Tiket već sadrži tehnički
   kontekst, pa ne morate da ga opisujete.
@@ -28,6 +21,9 @@ korisnicima._
   se mapira ranije su dobijale oznaku „porudžbenica nije pronađena", što je
   ljude slalo da traže pogrešan problem. Sada dobijaju sopstveni status
   „tabela nepotpuna" sa detaljima po kolonama o tome šta se nije mapiralo.
+- **Mapiranje poreskih kodova za e-dokumente.** Nova stranica podešavanja
+  mapira vaše ERP poreske kodove za elektronske dokumente, a izvozi proveravaju
+  mapiranje unapred umesto da otkažu tek u ERP-u.
 - **Izmene skriptova zaštićene su lozinkom.** Prilagođeni skriptovi mogu da
   promene način obrade dokumenata, pa svaka izmena skripta sada zahteva
   lozinku koja se menja svakog sata. Aktuelnu lozinku zatražite od svog
@@ -38,57 +34,7 @@ korisnicima._
 
 ---
 
-## Web App — u produkciji: `10.44.4`
-
-### Manage Layouts
-
-Sistemi pravila koji su u prošlom izdanju stigli na serversku stranu sada
-imaju svoj korisnički interfejs, pod Settings → Document Types → Manage
-Layouts.
-
-Rasporedi su višekratno upotrebljivi rasporedi polja, više nevezani za to
-odakle je dokument stigao. Pravila izbora odlučuju koji raspored dokument
-dobija: procenjuju se po prioritetu, prvi pogodak pobeđuje, a podrazumevani
-raspored služi kao rezerva.
-
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Ekran Layouts &#x26; Selection Rules sa karticama rasporeda i novim prekidačem Selection rules"><figcaption><p>Layouts &#x26; Selection Rules: višekratno upotrebljivi rasporedi sa izborom zasnovanim na pravilima</p></figcaption></figure>
-
-### Validation Rules
-
-Pravila validacije automatski proveravaju izvučene vrednosti dok se dokument
-obrađuje i svaki neuspeh označavaju direktno na dokumentu, vezan za polje na
-koje se odnosi. Cilj: uhvatiti loše podatke tokom validacije, a ne tek pošto
-je dokument izvezen u vaš ERP. Tipične provere su datum dospeća koji leži
-pre datuma fakture, stavke koje se ne sabiraju u neto ukupan iznos, IBAN ili
-PDV broj u pogrešnom formatu, ili obavezno polje ostavljeno prazno.
-
-Pravilima upravljate pod Settings → Document Types → Custom Validation
-Rules. Katalog podrazumevanih sistemskih pravila isporučuje se sa izdanjem;
-svako pravilo ostaje isključeno dok ga ne uključite za taj tip dokumenta.
-
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Ekran Custom Validation Rules sa listom podrazumevanih sistemskih pravila, ozbiljnošću i prekidačima statusa"><figcaption><p>Custom Validation Rules: katalog pravila za tip dokumenta, svako pravilo se aktivira pojedinačno</p></figcaption></figure>
-
-Svako pravilo se sastoji iz tri dela. **Name &#x26; scope** (naziv i opseg)
-određuje kako se pravilo zove, da li proverava zaglavlje dokumenta ili svaki
-red, za koje polje se greška vezuje i da li se neuspeh računa kao greška ili
-samo kao upozorenje. **Applies when** (važi kada) sadrži uslove koji
-odlučuju na kojim dokumentima se pravilo izvršava; ostavite ih prazne i
-pravilo važi za svaki dokument.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Ekran Edit Rule sa odeljcima Name &#x26; scope i Applies when jednog pravila validacije"><figcaption><p>Uređivanje pravila: naziv, opseg i ozbiljnost gore, uslovi Applies when ispod</p></figcaption></figure>
-
-**Check** (provera) definiše šta mora da bude tačno, koristeći jedan od
-sedam tipova provere: obavezno polje, formula nad iznosima, obrazac (format
-ili regex), numerički opseg, poređenje dva polja, fiksna lista dozvoljenih
-vrednosti ili imenovana List of Values. Poruku o grešci i kod greške koji se
-prikazuju korisniku koji obrađuje dokument pišete sami.
-
-Sistemsko pravilo „Due date after invoice date" (datum dospeća posle datuma
-fakture) pokazuje obrazac: važi kada su oba datuma popunjena, poredi dva
-polja operatorom „on or after" (na dan ili posle) i prijavljuje „Due date
-must be on or after the invoice date." kada je redosled pogrešan.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Ekran Edit Rule sa odeljkom Check koji poredi datum dospeća sa datumom fakture, uz poruku o grešci i kod greške"><figcaption><p>Odeljak Check: poređenje polja, sopstvena poruka o grešci i kod greške</p></figcaption></figure>
+## Web App — u produkciji: `10.45.1`
 
 ### Rad sa dokumentima
 
@@ -101,7 +47,11 @@ must be on or after the invoice date." kada je redosled pogrešan.
   upotrebu, a obrisana zaglavlja se više ne vraćaju u sačuvanu tabelu.
 - **Odobrenja:** korisnici više ne mogu da odobre Sales Tax korak za koji
   njihova grupa nema dozvolu, a istorija odobrenja ponovo prikazuje sve
-  zapise.
+  zapise. Istorija takođe imenuje osobu koja je zaista odobrila, uključujući
+  odobrenja koja je administrator dao u ime zaduženog korisnika.
+- **Dobavljači:** stranica Accounting više ne prikazuje lažno upozorenje
+  „Supplier is missing", a brisanje dobavljača koji postoji samo iz
+  ekstrakcije više ne ostavlja dijalog zaglavljen.
 - **Zadaci i obaveštenja:** opcija brisanja je sakrivena za korisnike bez
   administratorskih prava.
 
@@ -130,6 +80,8 @@ must be on or after the invoice date." kada je redosled pogrešan.
   učitavanja stranice.
 - **Document Types:** novo podešavanje Structured Extraction u odeljku
   ekstrakcije.
+- **E-Doc poreski kodovi:** nova stranica podešavanja za mapiranje vaših ERP
+  poreskih kodova za elektronske dokumente (vidi Najvažnije).
 - **Izbor AI modela:** povučeni Turbo nivo je uklonjen iz padajuće liste;
   postojeći izbori prikazuju Fast.
 - **Dijalog Service Versions:** sada može da se skroluje, uključuje Auth
@@ -144,20 +96,15 @@ se skroluje, pomereni checkbox-ovi u podešavanjima polja ponovo su poravnati,
 blokirana brisanja dokumenata objašnjavaju razlog, a podešavanja E-Document
 uredno obrađuju prelazak sa Default na Custom.
 
-## API Service — u produkciji: `12.61.8`
+## API Service — u produkciji: `12.64.3`
 
-- **Pravila validacije, sazrela:** novi operatori uslova (contains, starts
-  with, ends with), vrednosti iz izvora sa listom vrednosti, aktivacija po
-  tipu dokumenta i revizijski trag koji pokazuje ko je kreirao ili izmenio
-  svako pravilo. Dokumenti se automatski ponovo validiraju kada se pravila
-  promene.
-- **Pravila transformacije:** sada mogu da postave ili obrišu vrednosti na
-  celom dokumentu, aktiviraju se po tipu dokumenta i nose isti revizijski
-  trag.
-- **Pravila izbora rasporeda:** aktivacija je premeštena na tip dokumenta, a
-  šabloni rasporeda beleže ko ih je i kada izmenio.
 - **Bezbednost skriptova:** izmene skriptova zahtevaju vremenski zasnovanu
   lozinku (vidi Najvažnije).
+- **E-Doc poreski kodovi:** mapiranje ERP poreskih kodova za elektronske
+  dokumente, uz centralnu proveru pre izvoza tako da nedostajući kodovi
+  isplivaju na vreme.
+- **Kontrola pristupa:** administratori mogu korisnicima bez administratorskih
+  prava da odobre uvid u neklasifikovane dokumente.
 - **Lične kontrolne table:** ispravljena podešavanja deljenja koja nisu htela
   da se sačuvaju.
 - **Pretraga na kontrolnoj tabli:** Invoice Type se pridružuje proširenim
@@ -168,19 +115,28 @@ uredno obrađuju prelazak sa Default na Custom.
 - **Pretraga dobavljača:** rezultati stižu čim su podaci spremni umesto posle
   fiksnog čekanja.
 - **Infor izvoz:** jedinične cene zadržavaju četiri decimale. M3 izvozi mogu
-  da uključe stavke troškova sa nultim iznosom.
+  da uključe stavke troškova sa nultim iznosom, a negativne LN stavke
+  troškova šalju se kao pozitivna knjižna odobrenja.
 - **Odobrenja:** odobrenje se povezuje sa zahtevom za odobrenje samo kada je
   odobravalac njegov zaduženi korisnik.
 - **Stabilnost prijave:** privremeni otkaz unutar provere tokena više ne
   odjavljuje korisnike; aplikacija umesto toga ponavlja pokušaj.
 - **Klasifikacija:** pravila izvora sada porede sa svakim poljem izvora
   dokumenta, a ne sa fiksnim pozicijama.
+- **Stabilnost validacije:** polje bez naziva više ne ruši validaciju
+  dokumenta.
 - **AI modeli:** Turbo nivo (povučen) svuda je preusmeren na Fast,
   uključujući fino podešene varijante, uz zaštitu koja sprečava da se povučen
   model ikada pokrene.
 
-## Auth Service — u produkciji: `1.72.5`
+## Auth Service — u produkciji: `1.72.8`
 
+- **Istorija prijava:** prijave putem SSO/SAML sada se pojavljuju u istoriji
+  prijava, a vremenska oznaka poslednje prijave pouzdano se beleži za svaki
+  tip prijave. Pregled istorije prijava drugog korisnika zahteva odgovarajući
+  administratorski nivo.
+- **Nasleđeni nalozi:** brisanje nasleđenog korisničkog naloga ponovo radi
+  umesto da tiho ne uradi ništa.
 - **Masovna administracija korisnika:** dodajte postojeće korisnike u
   podorganizacije i grupe masovno putem CSV-a, upareno po adresi e-pošte.
   Ispravljeni su i pad na neravnomerno popunjenim CSV redovima i greška
@@ -200,7 +156,7 @@ uredno obrađuju prelazak sa Default na Custom.
   administracija planova i potrošnje dobila je namenske krajnje tačke. Ove
   izmene se tiču internih alata DocBits osoblja, a ne aplikacije za klijente.
 
-## Email Service — u produkciji: `1.39.8`
+## Email Service — u produkciji: `1.39.9`
 
 - **Uvoz u ispravnom regionu:** domeni dolazne e-pošte postoje po regionu, a
   poruke koje stignu u pogrešan region prosleđuju se u pravi. Američke
@@ -216,8 +172,10 @@ uredno obrađuju prelazak sa Default na Custom.
   kreira isti dokument.
 - **Imenovanje izvora:** O365 izvori sa konfigurisanom fasciklom uključuju
   adresu naloga u svom nazivu, pa se slični izvori mogu razlikovati.
+- **Održavanje dnevnika uvoza:** zapisi dnevnika uvoza čuvaju se 90 dana, a
+  nakon toga se automatski čiste.
 
-## PO Match Service — u produkciji: `1.58.6`
+## PO Match Service — u produkciji: `1.59.1`
 
 - **Status „tabela nepotpuna":** fakture čija tabela stavki nije mogla da se
   mapira dobijaju sopstveni status umesto obmanjujućeg „porudžbenica nije
@@ -228,6 +186,8 @@ uredno obrađuju prelazak sa Default na Custom.
 - **Urednije ponašanje API-ja:** zahtevi za PO pravila koja ne postoje
   vraćaju ispravan odgovor „nije pronađeno", a oštećeni zapisi keša se
   odbacuju umesto da izazivaju ponovljene greške.
+- **Uparivanje po ukupnom iznosu:** ispravljena greška u uparivanju sa
+  ukupnim iznosom porudžbenice.
 
 ## Fulltext Service — u produkciji: `1.38.3`
 
@@ -241,7 +201,7 @@ uredno obrađuju prelazak sa Default na Custom.
   primarnu bazu) i odbacuje neispravne poruke iz reda umesto da ih ponavlja
   u nedogled.
 
-## OCR Service — u produkciji: `1.9.8`
+## OCR Service — u produkciji: `1.9.9`
 
 - **Veliki dokumenti:** vremenski budžet za OCR skalira se sa veličinom
   dokumenta, pa veoma velike datoteke više ne otkazuju zbog isteka vremena.
@@ -260,7 +220,7 @@ uredno obrađuju prelazak sa Default na Custom.
   pad na neuobičajenim podacima redova.
 - **AI modeli:** povlačenje Turbo nivoa, preneto iz API Service-a.
 
-## Docflow Service — u produkciji: `2.6.5`
+## Docflow Service — u produkciji: `2.7.2`
 
 - **PO uparivanje u tokovima rada:** nedostajuće vrednosti za poređenje
   tretiraju se kao nedostajući podaci, a ne kao nepodudaranje.
@@ -270,20 +230,32 @@ uredno obrađuju prelazak sa Default na Custom.
   operator kartica umesto da se zaglavi.
 - **Bezbednost:** API tokeni tokova rada proveravaju se u odnosu na
   organizaciju kojoj pripadaju.
+- **Brže pokretanje:** provera aktivnih tokova rada se kešira, a pozadinski
+  radnici se uredno ponovo pokreću umesto da za sobom ostavljaju zaglavljene
+  procese.
 
 ## Barcode Service — u produkciji: `1.17.4`
 
 - **Dugotrajne podele:** veza sa redom zadataka održava se tokom dugih
   barkod poslova, pa se podela velikih serija više ne zaglavljuje pred kraj.
 
+## FTP Service — u produkciji: `1.31.2`
+
+- **Održavanje dnevnika uvoza:** isto 90-dnevno čuvanje i automatsko
+  čišćenje kao kod Email Service-a.
+
 ---
 
 ## Nepromenjeno u ovom izdanju
 
 **Auth Bridge** (`0.3.6`), **Auto Accounting** (`1.20.1`), **Docnet**
-(`1.55.1`), **FTP** (`1.31.1`), **Operator** (`1.40.2`) i **Ideas**
-(`0.3.1`) ne nose izmene u ovom periodu.
+(`1.55.1`), **Operator** (`1.40.2`) i **Ideas** (`0.3.1`) ne nose izmene u
+ovom periodu.
 
-<!-- Generated by the docbits-changelog skill (version-boundary mode: exact git
-     ranges between the LATEST (2026-07-09..15) and NOVA (2026-07-15..21)
-     version-bump commits supplied by the user, per service). -->
+<!-- Generated by the docbits-changelog skill (version-boundary mode), then
+     reconciled on 23 Jul 2026 against the Nova versions actually deployed
+     (Web App 10.45.1, API 12.64.3, Auth 1.72.8, Email 1.39.9, PO Match
+     1.59.1, OCR 1.9.9, Docflow 2.7.2, FTP 1.31.2). Manage Layouts and
+     Custom Validation Rules were removed from this page: DOCB-13719 gated
+     both behind a beta query parameter, so they are not generally available
+     in 10.45.1. -->

@@ -1,6 +1,6 @@
 # Notas de versão
 
-> **Última versão de hotfixes:** [Atualizações — 14–23 de julho de 2026](incremental-updates-14-23-july-2026.md): o que mudou na atualização de produção de 23 de julho de 2026, incluindo as novas funções Manage Layouts e regras de validação. Todas as páginas de hotfixes estão na navegação, em Notas de versão.
+> **Última versão de hotfixes:** [Atualizações — 14–23 de julho de 2026](incremental-updates-14-23-july-2026.md): o que mudou na atualização de produção de 23 de julho de 2026, desde tickets de suporte a partir de registos de erro até e-mail de entrada na região correta. Todas as páginas de hotfixes estão na navegação, em Notas de versão.
 
 ## **Release R1.0 23/24 de maio de 2026**
 

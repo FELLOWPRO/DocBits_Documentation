@@ -9,12 +9,6 @@ Services not listed had no customer-facing changes._
 
 ## Highlights
 
-- **Manage Layouts and Validation Rules arrive in the app.** The rules engines
-  introduced server-side in the last release now have a full user interface.
-  You can manage document layouts directly, define your own validation rules,
-  and let rules pick the right layout instead of the document's origin. Both
-  are switched off until you enable **Custom Validation Rules** on the document
-  type, so nothing changes for you until you opt in.
 - **Support tickets from the error screen.** When something goes wrong, you can
   now open a support ticket directly from the error record. The ticket already
   contains the technical context, so you don't have to describe it.
@@ -26,6 +20,9 @@ Services not listed had no customer-facing changes._
   mapped used to be labelled "purchase order not found", which sent people
   searching for the wrong problem. They now get their own "table incomplete"
   status with column-level detail on what didn't map.
+- **Tax code mapping for e-documents.** A new settings page maps your ERP tax
+  codes for electronic documents, and exports check the mapping up front
+  instead of failing in the ERP.
 - **Script changes are password-protected.** Custom scripts can change how
   documents are processed, so every script edit now requires a password that
   rotates hourly. Ask your administrator for the current one.
@@ -34,54 +31,7 @@ Services not listed had no customer-facing changes._
 
 ---
 
-## Web App — live: `10.44.4`
-
-### Manage Layouts
-
-The rules engines that shipped server-side in the last release now have their
-user interface, under Settings → Document Types → Manage Layouts.
-
-Layouts are reusable field arrangements, no longer tied to where a document
-came from. Selection rules decide which layout a document gets: evaluated by
-priority, first match wins, with a default fallback.
-
-<figure><img src="../../.gitbook/assets/manage-layouts-selection-rules-en.png" alt="Layouts &#x26; Selection Rules screen with layout cards and the new Selection rules toggle"><figcaption><p>Layouts &#x26; Selection Rules: reusable layouts with rule-based selection</p></figcaption></figure>
-
-### Validation Rules
-
-Validation Rules check extracted values automatically while a document is
-processed, and flag every failure directly on the document, attached to the
-field it concerns. The goal: catch bad data during validation, not after the
-document has been exported to your ERP. Typical checks are a due date that
-lies before the invoice date, line items that do not add up to the net total,
-an IBAN or VAT ID in the wrong format, or a required field left empty.
-
-You manage the rules under Settings → Document Types → Custom Validation
-Rules. A catalogue of system default rules ships with the release; every rule
-stays off until you switch it on for that document type.
-
-<figure><img src="../../.gitbook/assets/custom-validation-rules-en.png" alt="Custom Validation Rules screen listing system default rules with severity and status toggles"><figcaption><p>Custom Validation Rules: the rule catalogue for a document type, each rule activated individually</p></figcaption></figure>
-
-Every rule is built from three parts. **Name &#x26; scope** says what the rule
-is called, whether it checks the document header or each line, which field
-the error attaches to, and whether a failure counts as an error or only a
-warning. **Applies when** holds the conditions that decide which documents
-the rule runs on; leave it empty and the rule applies to every document.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-scope-en.png" alt="Edit Rule screen showing Name &#x26; scope and Applies when sections of a validation rule"><figcaption><p>Editing a rule: name, scope and severity on top, the Applies-when conditions below</p></figcaption></figure>
-
-**Check** defines what must be true, using one of seven check types: a
-required field, a formula over amounts, a pattern (format or regex), a
-numeric range, a comparison of two fields, a fixed list of allowed values,
-or a named List of Values. The error message and error code shown to the
-processing user are yours to write.
-
-The system rule "Due date after invoice date" shows the pattern: it applies
-when both dates are filled, compares the two fields with "on or after", and
-reports "Due date must be on or after the invoice date." when the order is
-wrong.
-
-<figure><img src="../../.gitbook/assets/validation-rule-edit-check-en.png" alt="Edit Rule screen showing the Check section comparing due date against invoice date, with error message and error code"><figcaption><p>The Check section: compare fields, custom error message and error code</p></figcaption></figure>
+## Web App — live: `10.45.1`
 
 ### Working with documents
 
@@ -93,7 +43,12 @@ wrong.
 - **Table extraction:** deleting a column frees its name for re-use, and
   deleted headers no longer reappear in the saved table.
 - **Approvals:** users can no longer approve a Sales Tax step their group has
-  no permission for, and the approval history shows all entries again.
+  no permission for, and the approval history shows all entries again. The
+  history also names the person who actually approved, including approvals an
+  admin made on behalf of the assignee.
+- **Suppliers:** the Accounting page no longer shows a false "Supplier is
+  missing" warning, and deleting a supplier that only exists from extraction
+  no longer leaves the dialog hanging.
 - **Tasks and notifications:** the delete option is hidden from users without
   admin rights.
 
@@ -123,6 +78,8 @@ wrong.
   other dropdown items appear immediately, without reloading the page.
 - **Document Types:** new Structured Extraction setting in the extraction
   section.
+- **E-Doc tax codes:** new settings page to map your ERP tax codes for
+  electronic documents (see Highlights).
 - **AI model selection:** the retired Turbo tier is gone from the dropdown;
   existing selections show Fast.
 - **Service Versions dialog:** now scrollable, includes the Auth Bridge
@@ -137,18 +94,14 @@ misaligned checkboxes in field settings are aligned again, blocked document
 deletions explain why, and E-Document settings handle switching from Default
 to Custom cleanly.
 
-## API Service — live: `12.61.8`
+## API Service — live: `12.64.3`
 
-- **Validation rules, matured:** new condition operators (contains, starts
-  with, ends with), values from list-of-values sources, activation per
-  document type, and an audit trail showing who created or changed each rule.
-  Documents are re-validated automatically when rules change.
-- **Transformation rules:** can now set or clear values on the whole document,
-  are activated per document type, and carry the same audit trail.
-- **Layout selection rules:** activation moved to the document type, and
-  layout templates record who changed them and when.
 - **Script security:** script changes require a time-based password
   (see Highlights).
+- **E-Doc tax codes:** ERP tax-code mapping for electronic documents, with a
+  central check before export so missing codes surface early.
+- **Access control:** admins can grant non-admin users visibility of
+  unclassified documents.
 - **Personal dashboards:** fixed sharing settings that wouldn't save.
 - **Dashboard search:** Invoice Type joins the extended search fields, and
   documents created by a barcode or QR split are found via their parent
@@ -158,19 +111,27 @@ to Custom cleanly.
 - **Supplier lookup:** results arrive as soon as the data is ready instead of
   after a fixed wait.
 - **Infor export:** unit prices keep four decimal places. M3 exports can
-  include zero-amount line charges.
+  include zero-amount line charges, and negative LN cost lines are sent as
+  positive credits.
 - **Approvals:** an approval is only linked to an approval request when the
   approver is its assignee.
 - **Login stability:** a temporary failure inside token validation no longer
   logs users out; the app retries instead.
 - **Classification:** source rules now match against every document source
   field, not fixed positions.
+- **Validation stability:** a field without a name no longer crashes document
+  validation.
 - **AI models:** the Turbo tier (retired) is remapped to Fast everywhere,
   including fine-tuned variants, with a guard so a retired model can never
   run.
 
-## Auth Service — live: `1.72.5`
+## Auth Service — live: `1.72.8`
 
+- **Login history:** sign-ins via SSO/SAML now appear in the login history,
+  and the last-login timestamp is stamped reliably for every login type.
+  Viewing another user's login history requires the appropriate admin level.
+- **Legacy accounts:** deleting a legacy user account works again instead of
+  silently doing nothing.
 - **Bulk user administration:** add existing users to sub-organisations and
   groups in bulk via CSV, matched by e-mail address. Also fixed a crash on
   unevenly filled CSV rows and a server error when adding two or more new
@@ -189,7 +150,7 @@ to Custom cleanly.
   usage administration gained dedicated endpoints. These changes affect
   DocBits staff tooling, not the customer app.
 
-## Email Service — live: `1.39.8`
+## Email Service — live: `1.39.9`
 
 - **Region-correct import:** inbound e-mail domains exist per region, and
   mails arriving in the wrong region are forwarded to the right one. US
@@ -204,8 +165,10 @@ to Custom cleanly.
   key, so a retried delivery can't create the same document twice.
 - **Source naming:** O365 sources with a folder configured include the account
   e-mail in their name, so similar sources are distinguishable.
+- **Import log housekeeping:** import log entries are kept for 90 days and
+  cleaned up automatically after that.
 
-## PO Match Service — live: `1.58.6`
+## PO Match Service — live: `1.59.1`
 
 - **"Table incomplete" status:** invoices whose line-item table couldn't be
   mapped get their own status instead of the misleading "purchase order not
@@ -215,6 +178,8 @@ to Custom cleanly.
 - **Cleaner API behaviour:** requests for PO rules that don't exist return a
   proper not-found answer, and corrupt cache entries are dropped instead of
   causing repeated errors.
+- **Match on total:** fixed a bug in matching against the purchase-order
+  total.
 
 ## Fulltext Service — live: `1.38.3`
 
@@ -227,7 +192,7 @@ to Custom cleanly.
   auth-service hiccups (automatic retry, fallback to the primary database)
   and discards malformed queue messages instead of retrying them forever.
 
-## OCR Service — live: `1.9.8`
+## OCR Service — live: `1.9.9`
 
 - **Large documents:** the OCR time budget scales with document size, so very
   large files no longer fail with a timeout.
@@ -245,7 +210,7 @@ to Custom cleanly.
   data is fixed.
 - **AI models:** Turbo tier retirement, mirrored from the API Service.
 
-## Docflow Service — live: `2.6.5`
+## Docflow Service — live: `2.7.2`
 
 - **PO matching in workflows:** missing comparison values are treated as
   missing data rather than a mismatch.
@@ -255,6 +220,9 @@ to Custom cleanly.
   the operator card instead of stalling.
 - **Security:** workflow API tokens are validated against the organisation
   they belong to.
+- **Faster triggering:** the check for active workflows is cached, and the
+  background workers restart cleanly instead of leaving stalled processes
+  behind.
 
 ## Barcode Service — live: `1.17.4`
 
@@ -262,14 +230,23 @@ to Custom cleanly.
   during long barcode jobs, so splitting large batches no longer stalls near
   the end.
 
+## FTP Service — live: `1.31.2`
+
+- **Import log housekeeping:** same 90-day retention and cleanup as the Email
+  Service.
+
 ---
 
 ## Unchanged in this release
 
 **Auth Bridge** (`0.3.6`), **Auto Accounting** (`1.20.1`), **Docnet**
-(`1.55.1`), **FTP** (`1.31.1`), **Operator** (`1.40.2`) and **Ideas**
-(`0.3.1`) carry no changes in this window.
+(`1.55.1`), **Operator** (`1.40.2`) and **Ideas** (`0.3.1`) carry no changes
+in this window.
 
-<!-- Generated by the docbits-changelog skill (version-boundary mode: exact git
-     ranges between the LATEST (2026-07-09..15) and NOVA (2026-07-15..21)
-     version-bump commits supplied by the user, per service). -->
+<!-- Generated by the docbits-changelog skill (version-boundary mode), then
+     reconciled on 23 Jul 2026 against the Nova versions actually deployed
+     (Web App 10.45.1, API 12.64.3, Auth 1.72.8, Email 1.39.9, PO Match
+     1.59.1, OCR 1.9.9, Docflow 2.7.2, FTP 1.31.2). Manage Layouts and
+     Custom Validation Rules were removed from this page: DOCB-13719 gated
+     both behind a beta query parameter, so they are not generally available
+     in 10.45.1. -->

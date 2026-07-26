@@ -55,9 +55,11 @@ Backup codes are shown only at the moment they are generated. DocBits cannot sho
     <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>The login screen. You can also sign in without a password using <strong>Sign in with a passkey</strong>.</p></figcaption></figure>
 2. DocBits asks for your second factor. Choose your method:
    * **Authenticator** — type the current 6-digit code from your app.
-   * **Email** — click to receive a code by email, then type it in.
-   * **Passkey** — confirm with Touch ID / Windows Hello / your key.
+   * **Email** — click **Email me a code** to receive a code by email, then type it in.
+   * **Passkey** — click **Use a passkey** and confirm with Touch ID / Windows Hello / your key.
    * **Backup code** — if you cannot use your usual method.
+
+    <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>After your password, DocBits asks for your second factor. Switch method with <strong>Use a passkey</strong> or <strong>Email me a code</strong>, and optionally trust the device for 30 days.</p></figcaption></figure>
 3. On success you are signed in.
 
 ### What the email code looks like

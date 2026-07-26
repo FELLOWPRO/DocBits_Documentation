@@ -2,6 +2,7 @@
 
 * [DocBits](README.md)
 * [Sertifikasyonlar](certifications.md)
+* [İki Faktörlü Kimlik Doğrulama (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Sürüm Notları](overview-and-basics/release-notes/README.md)
   * [Güncellemeler — 21–25 Haziran 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Güncellemeler — 26–30 Haziran 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
@@ -99,6 +100,7 @@
           * [ZUGFeRD 2.3.2 Eşleştirme](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3-2.md)
     * [Global Settings](overview/settings/global-settings/README.md)
       * [Company Information](overview/settings/global-settings/company-information.md)
+      * [İki Faktörlü Kimlik Doğrulama (Yönetici)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)
       * [Custom Filters](overview/settings/global-settings/custom-filters.md)
       * [Document Expiry](overview/settings/global-settings/document-expiry.md)
       * [Vade Tarihi Hesaplama](overview/settings/global-settings/due-date-calculation.md)

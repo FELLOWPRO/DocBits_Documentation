@@ -34,6 +34,8 @@ Below the toggle, the **MFA adoption** panel shows how widely 2FA is used in you
 * how many of your members have 2FA enabled (e.g. *0 of 74 members*),
 * a per-factor breakdown — **Authenticator**, **Email**, and **Passkey**.
 
+<figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>The MFA adoption report: overall percentage, enrolled members, and a per-factor breakdown.</p></figcaption></figure>
+
 Use it to gauge readiness: drive adoption up first, then switch the requirement on with fewer members blocked at the enrollment step.
 
 ## What members see

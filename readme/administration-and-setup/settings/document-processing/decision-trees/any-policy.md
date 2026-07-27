@@ -1,4 +1,4 @@
-# Polityka dowolnego dopasowania (Any)
+# Każdy
 
 Wiele reguł może być prawdziwych, ale wynik tych reguł musi być taki sam.
 
@@ -20,4 +20,4 @@ Jeśli kwota całkowita wynosi **2500**, ocenione reguły będą następujące:
 * **Reguła 4**: Total Amount <= 4000 (dopasowanie)
 * **Reguła 5**: Total Amount <= 5000 (dopasowanie)
 
-Aby polityka **Any** została zastosowana, wszystkie dopasowane reguły muszą zwracać tę samą **Return Group**. Ponieważ grupy nie są zgodne w poszczególnych regułach, wynikiem będzie **false**.
+Aby polityka **Każdy** została zastosowana, wszystkie dopasowane reguły muszą zwracać tę samą **Return Group**. Ponieważ grupy nie są zgodne w poszczególnych regułach, wynikiem będzie **false**.

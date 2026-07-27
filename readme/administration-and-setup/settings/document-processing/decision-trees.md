@@ -69,14 +69,14 @@ Każda reguła jest oceniana sekwencyjnie.
 
 Polityka drzewa decyzyjnego określa sposób przetwarzania wielu reguł w obrębie drzewa decyzyjnego. Możesz wybrać spośród kilku polityk:
 
-* [Polityka unikalności (Unique)](decision-trees/unique-policy.md)
-* [Polityka pierwszego dopasowania (First)](decision-trees/first-policy.md)
-* [Polityka priorytetu (Priority)](decision-trees/priority-policy.md)
-* [Polityka zbierania – suma (Collect – sum)](decision-trees/collect-sum-policy.md)
-* [Polityka zbierania – min/max/zliczanie (Collect – min/max/count)](decision-trees/collect-min-max-count-policy.md)
-* [Polityka kolejności reguł (Rule Order)](decision-trees/rule-order-policy.md)
-* [Polityka dowolnego dopasowania (Any)](decision-trees/any-policy.md)
-* [Polityka pierwszego i sąsiedniego dopasowania (First & Adjacent)](decision-trees/first-and-adjacent-policy.md)
+* [Unikalny](decision-trees/unique-policy.md)
+* [Pierwszy](decision-trees/first-policy.md)
+* [Priorytet](decision-trees/priority-policy.md)
+* [Zbierz (Suma)](decision-trees/collect-sum-policy.md)
+* [Zbierz (min./maks./Licz)](decision-trees/collect-min-max-count-policy.md)
+* [Kolejność reguł](decision-trees/rule-order-policy.md)
+* [Każdy](decision-trees/any-policy.md)
+* [Pierwszy i Sąsiedni](decision-trees/first-and-adjacent-policy.md)
 
 ## **Testowanie drzewa decyzyjnego**
 

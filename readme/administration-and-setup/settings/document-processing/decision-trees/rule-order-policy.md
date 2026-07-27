@@ -1,4 +1,4 @@
-# Polityka kolejności reguł (Rule Order)
+# Kolejność reguł
 
 Ta polityka stosuje reguły w kolejności, w jakiej pojawiają się w drzewie decyzyjnym, i zwraca wynik reguły, która zostanie dopasowana jako pierwsza.
 
@@ -20,7 +20,7 @@ Zakładając, że wartością wejściową jest **Total Amount = 2500**, ocena re
 * **Reguła 4**: Total Amount <= 4000 (dopasowanie)
 * **Reguła 5**: Total Amount <= 5000 (dopasowanie)
 
-W ramach polityki **Rule Order** drzewo przetwarza reguły w kolejności, w jakiej są wymienione. Dopasowanymi regułami będą zatem:
+W ramach polityki **Kolejność reguł** drzewo przetwarza reguły w kolejności, w jakiej są wymienione. Dopasowanymi regułami będą zatem:
 
 * **Reguła 3**: GROUP_3
 * **Reguła 4**: GROUP_4

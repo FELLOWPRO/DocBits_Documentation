@@ -1,4 +1,4 @@
-# Polityka priorytetu (Priority)
+# Priorytet
 
 Wybór tej opcji umożliwia ustawienie priorytetów dla każdej reguły. Im niższa wybrana liczba, tym wyższy priorytet (tzn. priorytet 1 ma najwyższy priorytet). Reguły są oceniane na podstawie kolejności ich priorytetów. Zastosowana zostanie dopasowana reguła o najwyższym priorytecie.
 

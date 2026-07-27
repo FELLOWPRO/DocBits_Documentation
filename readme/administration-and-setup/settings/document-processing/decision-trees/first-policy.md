@@ -1,4 +1,4 @@
-# Polityka pierwszego dopasowania (First)
+# Pierwszy
 
 Stosowana jest pierwsza dopasowana reguła, a kolejne reguły nie są już oceniane.
 

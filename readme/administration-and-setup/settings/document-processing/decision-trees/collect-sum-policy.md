@@ -1,4 +1,4 @@
-# Polityka zbierania – suma (Collect – sum)
+# Zbierz (Suma)
 
 Ta polityka zbiera wszystkie dopasowane reguły i sumuje wyniki. Działa tylko dla **Return Type Value**.
 

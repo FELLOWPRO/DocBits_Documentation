@@ -1,4 +1,4 @@
-# Polityka pierwszego i sąsiedniego dopasowania (First & Adjacent)
+# Pierwszy i Sąsiedni
 
 Wybiera wynik reguły sąsiadującej z pierwszą regułą, która jest prawdziwa.
 
@@ -17,4 +17,4 @@ Jeśli kwota całkowita wynosi **1500**, ocenione reguły będą następujące:
 * **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
 * **Reguła 2**: Total Amount <= 2000 (dopasowanie)
 
-Ponieważ **Reguła 2** jest pierwszą regułą, która zostaje dopasowana, polityka **First & Adjacent** zastosowałaby wynik **Reguły 3**: **GROUP_3**.
+Ponieważ **Reguła 2** jest pierwszą regułą, która zostaje dopasowana, polityka **Pierwszy i Sąsiedni** zastosowałaby wynik **Reguły 3**: **GROUP_3**.

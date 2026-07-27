@@ -1,4 +1,4 @@
-# Polityka unikalności (Unique)
+# Unikalny
 
 Zapewnia dopasowanie tylko jednej reguły. Jeśli dopasowanych zostanie wiele reguł, drzewo decyzyjne zwróci wartość false.
 

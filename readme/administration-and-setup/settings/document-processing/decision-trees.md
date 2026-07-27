@@ -69,14 +69,14 @@ Cada regra é avaliada sequencialmente.
 
 A Política da Árvore de Decisão define como as várias regras de uma árvore de decisão são processadas. Pode escolher entre várias políticas:
 
-* [Política Única (Unique)](decision-trees/unique-policy.md)
-* [Política Primeira (First)](decision-trees/first-policy.md)
-* [Política de Prioridade (Priority)](decision-trees/priority-policy.md)
-* [Política de Recolha (Collect — soma)](decision-trees/collect-sum-policy.md)
-* [Política de Recolha (Collect — mín/máx/contagem)](decision-trees/collect-min-max-count-policy.md)
-* [Política de Ordem das Regras (Rule Order)](decision-trees/rule-order-policy.md)
-* [Política Qualquer (Any)](decision-trees/any-policy.md)
-* [Política Primeira e Adjacente (First & Adjacent)](decision-trees/first-and-adjacent-policy.md)
+* [Exclusivo](decision-trees/unique-policy.md)
+* [Primeiro](decision-trees/first-policy.md)
+* [Prioridade](decision-trees/priority-policy.md)
+* [Coletar (Soma)](decision-trees/collect-sum-policy.md)
+* [Coletar (Min/máx./Contar)](decision-trees/collect-min-max-count-policy.md)
+* [Ordem das Regras](decision-trees/rule-order-policy.md)
+* [Qualquer](decision-trees/any-policy.md)
+* [Primeiro e Adjacente](decision-trees/first-and-adjacent-policy.md)
 
 ## **Testar a Árvore de Decisão**
 

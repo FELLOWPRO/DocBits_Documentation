@@ -1,4 +1,4 @@
-# Política Primeira (First)
+# Primeiro
 
 A primeira regra correspondente é aplicada e não são avaliadas mais regras.
 

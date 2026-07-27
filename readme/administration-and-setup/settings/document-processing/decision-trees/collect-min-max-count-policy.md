@@ -1,4 +1,4 @@
-# Política de Recolha (Collect — mín/máx/contagem)
+# Coletar (Min/máx./Contar)
 
 Esta política recolhe todas as regras correspondentes e seleciona o **mínimo**, o **máximo** ou **conta** as ocorrências. Funciona apenas para **Return Type Value**.
 
@@ -12,7 +12,7 @@ Esta política recolhe todas as regras correspondentes e seleciona o **mínimo**
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-1. Se a opção **Collect (mín)** for selecionada, o resultado devolverá o **mínimo** dos **Return Values** das regras correspondentes.
+1. Se a opção **Coletar (Min)** for selecionada, o resultado devolverá o **mínimo** dos **Return Values** das regras correspondentes.
    * Para o valor de entrada de **Total Amount = 2500**, a avaliação das regras seria:
      * **Regra 1**: Total Amount <= 1000 (não corresponde)
      * **Regra 2**: Total Amount <= 2000 (não corresponde)
@@ -20,11 +20,11 @@ Esta política recolhe todas as regras correspondentes e seleciona o **mínimo**
      * **Regra 4**: Total Amount <= 4000 (corresponde, Return Value = 4)
      * **Regra 5**: Total Amount <= 5000 (corresponde, Return Value = 5)
    * As **regras correspondentes** são a Regra 3, a Regra 4 e a Regra 5, com **Return Values** de **3, 4 e 5**.
-   * Uma vez que a política **Collect (mín)** é aplicada, o resultado será o **valor mínimo**, que é **3**.
+   * Uma vez que a política **Coletar (Min)** é aplicada, o resultado será o **valor mínimo**, que é **3**.
    * **Resultado**: **3**
-2. Se a opção **Collect (máx)** for selecionada, o resultado devolverá o **máximo** dos **Return Values** das regras correspondentes.
+2. Se a opção **Coletar (máx.)** for selecionada, o resultado devolverá o **máximo** dos **Return Values** das regras correspondentes.
    * Para a mesma avaliação acima, o resultado será:
    * **Resultado**: **5**
-3. Se a opção **Collect (contagem)** for selecionada, o resultado contará o **número de regras correspondentes**.
+3. Se a opção **Coletar (Contar)** for selecionada, o resultado contará o **número de regras correspondentes**.
    * Para a mesma avaliação acima, o resultado será:
    * **Resultado**: **3** (uma vez que 3 regras corresponderam).

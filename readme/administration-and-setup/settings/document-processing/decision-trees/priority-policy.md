@@ -1,4 +1,4 @@
-# Política de Prioridade (Priority)
+# Prioridade
 
 Escolher esta opção permite-lhe definir prioridades para cada regra. Quanto menor o número selecionado, maior a prioridade (ou seja, a prioridade 1 tem a prioridade mais alta). As regras são avaliadas com base na sua ordem de prioridade. A regra correspondente de prioridade mais alta será aplicada.
 

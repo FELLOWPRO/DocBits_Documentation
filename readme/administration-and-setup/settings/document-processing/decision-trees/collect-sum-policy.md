@@ -1,4 +1,4 @@
-# Política de Recolha (Collect — soma)
+# Coletar (Soma)
 
 Esta política recolhe todas as regras correspondentes e soma os resultados. Funciona apenas para **Return Type Value**.
 
@@ -20,7 +20,7 @@ Para o valor de entrada de **Total Amount = 2500**, a avaliação das regras ser
 * **Regra 4**: Total Amount <= 4000 (corresponde, Return Value = 4)
 * **Regra 5**: Total Amount <= 5000 (corresponde, Return Value = 5)
 
-Uma vez que a política **Collect (soma)** é aplicada, somamos os **Return Values** das regras correspondentes, que são **3, 4, 5**.
+Uma vez que a política **Coletar (Soma)** é aplicada, somamos os **Return Values** das regras correspondentes, que são **3, 4, 5**.
 
 **Somando estes valores** obtém-se:
 

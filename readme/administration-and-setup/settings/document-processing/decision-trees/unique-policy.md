@@ -1,4 +1,4 @@
-# Política Única (Unique)
+# Exclusivo
 
 Garante que apenas uma única regra é correspondida. Se forem correspondidas várias regras, a árvore de decisão devolverá falso.
 

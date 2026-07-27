@@ -69,14 +69,14 @@ Jede Regel wird nacheinander ausgewertet.
 
 Die Entscheidungsbaum-Policy legt fest, wie mehrere Regeln innerhalb eines Entscheidungsbaums verarbeitet werden. Sie können aus mehreren Policies wählen:
 
-* [Unique-Policy](decision-trees/unique-policy.md)
-* [First-Policy](decision-trees/first-policy.md)
-* [Priority-Policy](decision-trees/priority-policy.md)
-* [Collect-(sum)-Policy](decision-trees/collect-sum-policy.md)
-* [Collect-(min/max/count)-Policy](decision-trees/collect-min-max-count-policy.md)
-* [Rule-Order-Policy](decision-trees/rule-order-policy.md)
-* [Any-Policy](decision-trees/any-policy.md)
-* [First-&-Adjacent-Policy](decision-trees/first-and-adjacent-policy.md)
+* [Einzigartig](decision-trees/unique-policy.md)
+* [Erste](decision-trees/first-policy.md)
+* [Priorität](decision-trees/priority-policy.md)
+* [Sammeln (Summe)](decision-trees/collect-sum-policy.md)
+* [Sammeln (Min/Max/Zählen)](decision-trees/collect-min-max-count-policy.md)
+* [Regel Bestellung](decision-trees/rule-order-policy.md)
+* [Irgendeine](decision-trees/any-policy.md)
+* [Erste & Angrenzende](decision-trees/first-and-adjacent-policy.md)
 
 ## **Den Entscheidungsbaum testen**
 

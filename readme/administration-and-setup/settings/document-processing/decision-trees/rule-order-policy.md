@@ -1,4 +1,4 @@
-# Rule-Order-Policy
+# Regel Bestellung
 
 Diese Policy wendet die Regeln in der Reihenfolge an, in der sie im Entscheidungsbaum erscheinen, und gibt das Ergebnis der zuerst zutreffenden Regel zurück.
 
@@ -20,7 +20,7 @@ Bei dem Eingabewert **Total Amount = 2500** würde die Auswertung der Regeln wie
 * **Regel 4**: Total Amount <= 4000 (trifft zu)
 * **Regel 5**: Total Amount <= 5000 (trifft zu)
 
-Bei **Rule Order** verarbeitet der Baum die Regeln in der Reihenfolge, in der sie aufgeführt sind. Die zutreffenden Regeln sind also:
+Bei **Regel Bestellung** verarbeitet der Baum die Regeln in der Reihenfolge, in der sie aufgeführt sind. Die zutreffenden Regeln sind also:
 
 * **Regel 3**: GROUP_3
 * **Regel 4**: GROUP_4

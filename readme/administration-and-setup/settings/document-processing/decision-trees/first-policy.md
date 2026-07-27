@@ -1,4 +1,4 @@
-# First-Policy
+# Erste
 
 Die erste zutreffende Regel wird angewendet, und es werden keine weiteren Regeln ausgewertet.
 

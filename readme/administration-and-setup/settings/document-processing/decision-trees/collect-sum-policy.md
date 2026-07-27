@@ -1,4 +1,4 @@
-# Collect-(sum)-Policy
+# Sammeln (Summe)
 
 Diese Policy sammelt alle zutreffenden Regeln und summiert die Ergebnisse. Sie funktioniert nur für **Return Type Value**.
 
@@ -20,7 +20,7 @@ Für den Eingabewert **Total Amount = 2500** würde die Auswertung der Regeln wi
 * **Regel 4**: Total Amount <= 4000 (trifft zu, Rückgabewert = 4)
 * **Regel 5**: Total Amount <= 5000 (trifft zu, Rückgabewert = 5)
 
-Da die **Collect-(sum)**-Policy angewendet wird, summieren wir die **Rückgabewerte** der zutreffenden Regeln, also **3, 4, 5**.
+Da die Policy **Sammeln (Summe)** angewendet wird, summieren wir die **Rückgabewerte** der zutreffenden Regeln, also **3, 4, 5**.
 
 **Die Summe dieser Werte** ergibt:
 

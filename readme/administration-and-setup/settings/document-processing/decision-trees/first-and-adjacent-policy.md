@@ -1,4 +1,4 @@
-# First-&-Adjacent-Policy
+# Erste & Angrenzende
 
 Wählt das Ergebnis der Regel, die der ersten zutreffenden Regel benachbart ist.
 
@@ -17,4 +17,4 @@ Wenn der Gesamtbetrag **1500** ist, werden die Regeln wie folgt ausgewertet:
 * **Regel 1**: Total Amount <= 1000 (trifft nicht zu)
 * **Regel 2**: Total Amount <= 2000 (trifft zu)
 
-Da **Regel 2** die erste zutreffende Regel ist, würde **First & Adjacent** das Ergebnis von **Regel 3** anwenden: **GROUP_3**.
+Da **Regel 2** die erste zutreffende Regel ist, würde **Erste & Angrenzende** das Ergebnis von **Regel 3** anwenden: **GROUP_3**.

@@ -1,4 +1,4 @@
-# Unique-Policy
+# Einzigartig
 
 Stellt sicher, dass nur eine einzige Regel zutrifft. Wenn mehrere Regeln zutreffen, gibt der Entscheidungsbaum „false" zurück.
 
@@ -20,4 +20,4 @@ Wenn der Gesamtbetrag **1500** ist, werden die Regeln wie folgt ausgewertet:
 * **Regel 4**: Total Amount <= 4000 (trifft zu)
 * **Regel 5**: Total Amount <= 3000 (trifft zu)
 
-Da mehrere Regeln zutreffen (**Regel 2**, **Regel 3**, **Regel 4**, **Regel 5**), gibt der Entscheidungsbaum **false** zurück, weil die **Unique**-Policy sicherstellt, dass nur eine einzige Regel zutreffen darf.
+Da mehrere Regeln zutreffen (**Regel 2**, **Regel 3**, **Regel 4**, **Regel 5**), gibt der Entscheidungsbaum **false** zurück, weil die Policy **Einzigartig** sicherstellt, dass nur eine einzige Regel zutreffen darf.

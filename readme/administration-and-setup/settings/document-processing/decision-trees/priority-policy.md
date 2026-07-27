@@ -1,4 +1,4 @@
-# Priority-Policy
+# Priorität
 
 Mit dieser Option können Sie für jede Regel Prioritäten festlegen. Je niedriger die gewählte Zahl, desto höher die Priorität (d. h. Priorität 1 hat die höchste Priorität). Die Regeln werden anhand ihrer Prioritätsreihenfolge ausgewertet. Die zutreffende Regel mit der höchsten Priorität wird angewendet.
 

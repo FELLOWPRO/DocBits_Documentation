@@ -1,4 +1,4 @@
-# Any-Policy
+# Irgendeine
 
 Mehrere Regeln können wahr sein, aber das Ergebnis dieser Regeln muss identisch sein.
 
@@ -20,4 +20,4 @@ Wenn der Gesamtbetrag **2500** ist, werden die Regeln wie folgt ausgewertet:
 * **Regel 4**: Total Amount <= 4000 (trifft zu)
 * **Regel 5**: Total Amount <= 5000 (trifft zu)
 
-Damit **Any** angewendet wird, müssen alle zutreffenden Regeln dieselbe **Group** zurückgeben. Da die Gruppen über die verschiedenen Regeln hinweg nicht übereinstimmen, wäre das Ergebnis **false**.
+Damit **Irgendeine** angewendet wird, müssen alle zutreffenden Regeln dieselbe **Group** zurückgeben. Da die Gruppen über die verschiedenen Regeln hinweg nicht übereinstimmen, wäre das Ergebnis **false**.

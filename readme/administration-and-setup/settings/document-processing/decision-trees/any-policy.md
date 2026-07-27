@@ -1,4 +1,4 @@
-# Politique « n'importe laquelle » (Any)
+# N'importe quel
 
 Plusieurs règles peuvent être vraies, mais le résultat de ces règles doit être identique.
 
@@ -20,4 +20,4 @@ Si le montant total est de **2500**, les règles évaluées seront :
 * **Règle 4** : Total Amount <= 4000 (correspond)
 * **Règle 5** : Total Amount <= 5000 (correspond)
 
-Pour que la politique **Any** s'applique, toutes les règles correspondantes doivent renvoyer le même **Return Group**. Étant donné que les groupes ne correspondent pas entre les différentes règles, le résultat serait **false**.
+Pour que la politique **N'importe quel** s'applique, toutes les règles correspondantes doivent renvoyer le même **Return Group**. Étant donné que les groupes ne correspondent pas entre les différentes règles, le résultat serait **false**.

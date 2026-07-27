@@ -1,4 +1,4 @@
-# Politique d'unicité (Unique)
+# Unique
 
 Garantit qu'une seule règle est satisfaite. Si plusieurs règles sont satisfaites, l'arbre de décision renverra « false ».
 

@@ -1,4 +1,4 @@
-# Politique d'ordre des règles (Rule Order)
+# Ordonnance sur les règles
 
 Cette politique applique les règles dans l'ordre où elles apparaissent dans l'arbre de décision et renvoie le résultat de la règle qui correspond en premier.
 
@@ -20,7 +20,7 @@ Cette politique applique les règles dans l'ordre où elles apparaissent dans l'
 * **Règle 4** : Total Amount <= 4000 (correspond)
 * **Règle 5** : Total Amount <= 5000 (correspond)
 
-Sous **Rule Order**, l'arbre traitera les règles dans l'ordre où elles sont répertoriées. Ainsi, les règles correspondantes seront :
+Sous **Ordonnance sur les règles**, l'arbre traitera les règles dans l'ordre où elles sont répertoriées. Ainsi, les règles correspondantes seront :
 
 * **Règle 3** : GROUP_3
 * **Règle 4** : GROUP_4

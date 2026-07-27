@@ -1,4 +1,4 @@
-# Politique de la première règle et de la suivante (First & Adjacent)
+# Première et adjacente
 
 Choisit le résultat de la règle adjacente à la première règle qui est vraie.
 
@@ -17,4 +17,4 @@ Si le montant total est de **1500**, les règles évaluées seront :
 * **Règle 1** : Total Amount <= 1000 (ne correspond pas)
 * **Règle 2** : Total Amount <= 2000 (correspond)
 
-Étant donné que la **Règle 2** est la première règle qui correspond, **First & Adjacent** appliquerait le résultat de la **Règle 3** : **GROUP_3**.
+Étant donné que la **Règle 2** est la première règle qui correspond, **Première et adjacente** appliquerait le résultat de la **Règle 3** : **GROUP_3**.

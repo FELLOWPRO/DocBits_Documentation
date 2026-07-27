@@ -1,4 +1,4 @@
-# Politique de collecte (somme) (Collect (sum))
+# Collecte (Somme)
 
 Cette politique collecte toutes les règles correspondantes et additionne les résultats. Elle ne fonctionne qu'avec un **Return Type Value**.
 
@@ -20,7 +20,7 @@ Pour la valeur d'entrée **Total Amount = 2500**, l'évaluation des règles sera
 * **Règle 4** : Total Amount <= 4000 (correspond, Return Value = 4)
 * **Règle 5** : Total Amount <= 5000 (correspond, Return Value = 5)
 
-Étant donné que la politique **Collect (sum)** est appliquée, on additionne les **Return Values** des règles correspondantes, à savoir **3, 4, 5**.
+Étant donné que la politique **Collecte (Somme)** est appliquée, on additionne les **Return Values** des règles correspondantes, à savoir **3, 4, 5**.
 
 **L'addition de ces valeurs** donne :
 

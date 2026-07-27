@@ -12,7 +12,7 @@ Questo criterio applica le regole nell'ordine in cui appaiono nell'albero decisi
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-Dato che il valore di input è **Total Amount = 3500**, la valutazione delle regole sarebbe:
+Dato che il valore di input è **Total Amount = 2500**, la valutazione delle regole sarebbe:
 
 * **Regola 1**: Total Amount <= 1000 (non corrisponde)
 * **Regola 2**: Total Amount <= 2000 (non corrisponde)

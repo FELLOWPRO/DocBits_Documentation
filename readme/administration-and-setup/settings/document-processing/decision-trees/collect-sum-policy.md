@@ -12,7 +12,7 @@ Questo criterio raccoglie tutte le regole corrispondenti e somma i risultati. Fu
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-Per il valore di input di **Total Amount = 3500**, la valutazione delle regole sarebbe:
+Per il valore di input di **Total Amount = 2500**, la valutazione delle regole sarebbe:
 
 * **Regola 1**: Total Amount <= 1000 (non corrisponde)
 * **Regola 2**: Total Amount <= 2000 (non corrisponde)

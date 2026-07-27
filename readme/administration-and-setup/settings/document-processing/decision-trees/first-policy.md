@@ -1,4 +1,4 @@
-# Política Primera (First)
+# En primer lugar
 
 Se aplica la primera regla que coincide y no se evalúan más reglas.
 

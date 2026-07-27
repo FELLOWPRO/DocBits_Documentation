@@ -1,4 +1,4 @@
-# Política de Recopilación con suma (Collect (sum))
+# Recaudar (Suma)
 
 Esta política recopila todas las reglas coincidentes y suma los resultados. Solo funciona con **Return Type Value**.
 
@@ -20,7 +20,7 @@ Para el valor de entrada **Total Amount = 2500**, la evaluación de las reglas s
 * **Regla 4**: Total Amount <= 4000 (coincide, Return Value = 4)
 * **Regla 5**: Total Amount <= 5000 (coincide, Return Value = 5)
 
-Dado que se aplica la política **Collect (sum)**, sumamos los **Return Values** de las reglas coincidentes, que son **3, 4, 5**.
+Dado que se aplica la política **Recaudar (Suma)**, sumamos los **Return Values** de las reglas coincidentes, que son **3, 4, 5**.
 
 **Al sumar estos valores** obtenemos:
 

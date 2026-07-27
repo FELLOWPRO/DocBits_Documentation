@@ -69,14 +69,14 @@ Cada regla se evalúa de forma secuencial.
 
 La política del árbol de decisión define cómo se procesan varias reglas dentro de un árbol de decisión. Puedes elegir entre varias políticas:
 
-* [Política Única (Unique)](decision-trees/unique-policy.md)
-* [Política Primera (First)](decision-trees/first-policy.md)
-* [Política de Prioridad (Priority)](decision-trees/priority-policy.md)
-* [Política de Recopilación con suma (Collect (sum))](decision-trees/collect-sum-policy.md)
-* [Política de Recopilación (min/máx/recuento) (Collect (min/max/count))](decision-trees/collect-min-max-count-policy.md)
-* [Política de Orden de Reglas (Rule Order)](decision-trees/rule-order-policy.md)
-* [Política Cualquiera (Any)](decision-trees/any-policy.md)
-* [Política Primera y Adyacente (First & Adjacent)](decision-trees/first-and-adjacent-policy.md)
+* [Único](decision-trees/unique-policy.md)
+* [En primer lugar](decision-trees/first-policy.md)
+* [Prioridad](decision-trees/priority-policy.md)
+* [Recaudar (Suma)](decision-trees/collect-sum-policy.md)
+* [Recoger (Min/Max/Recuento)](decision-trees/collect-min-max-count-policy.md)
+* [Regla Orden](decision-trees/rule-order-policy.md)
+* [Cualquier](decision-trees/any-policy.md)
+* [Primero y adyacentes](decision-trees/first-and-adjacent-policy.md)
 
 ## **Probar el árbol de decisión**
 

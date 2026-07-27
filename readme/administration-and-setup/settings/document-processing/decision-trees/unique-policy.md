@@ -1,4 +1,4 @@
-# Política Única (Unique)
+# Único
 
 Garantiza que solo coincida una única regla. Si coinciden varias reglas, el árbol de decisión devolverá false.
 

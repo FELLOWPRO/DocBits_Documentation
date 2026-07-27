@@ -1,4 +1,4 @@
-# Política Primera y Adyacente (First & Adjacent)
+# Primero y adyacentes
 
 Elige el resultado de la regla que es adyacente a la primera regla que es verdadera.
 
@@ -17,4 +17,4 @@ Si el importe total es **1500**, las reglas evaluadas serán:
 * **Regla 1**: Total Amount <= 1000 (no coincide)
 * **Regla 2**: Total Amount <= 2000 (coincide)
 
-Dado que la **Regla 2** es la primera regla que coincide, **First & Adjacent** aplicaría el resultado de la **Regla 3**: **GROUP_3**.
+Dado que la **Regla 2** es la primera regla que coincide, **Primero y adyacentes** aplicaría el resultado de la **Regla 3**: **GROUP_3**.

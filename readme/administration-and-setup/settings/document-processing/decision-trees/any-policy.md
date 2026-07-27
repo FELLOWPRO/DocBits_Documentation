@@ -1,4 +1,4 @@
-# Política Cualquiera (Any)
+# Cualquier
 
 Pueden ser verdaderas varias reglas, pero el resultado de esas reglas debe ser el mismo.
 
@@ -20,4 +20,4 @@ Si el importe total es **2500**, las reglas evaluadas serán:
 * **Regla 4**: Total Amount <= 4000 (coincide)
 * **Regla 5**: Total Amount <= 5000 (coincide)
 
-Para que **Any** se aplique, todas las reglas coincidentes deben devolver el mismo **Return Group**. Dado que los grupos no coinciden entre las distintas reglas, el resultado sería **false**.
+Para que **Cualquier** se aplique, todas las reglas coincidentes deben devolver el mismo **Return Group**. Dado que los grupos no coinciden entre las distintas reglas, el resultado sería **false**.

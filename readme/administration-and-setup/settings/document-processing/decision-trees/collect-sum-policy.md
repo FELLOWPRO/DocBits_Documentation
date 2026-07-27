@@ -12,7 +12,7 @@ Esta política recolhe todas as regras correspondentes e soma os resultados. Fun
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-Para o valor de entrada de **Total Amount = 3500**, a avaliação das regras seria:
+Para o valor de entrada de **Total Amount = 2500**, a avaliação das regras seria:
 
 * **Regra 1**: Total Amount <= 1000 (não corresponde)
 * **Regra 2**: Total Amount <= 2000 (não corresponde)

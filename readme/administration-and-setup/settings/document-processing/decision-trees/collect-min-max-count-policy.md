@@ -13,7 +13,7 @@ Esta política recolhe todas as regras correspondentes e seleciona o **mínimo**
 | 5    | Total Amount <= 5000 | 5            |
 
 1. Se a opção **Collect (mín)** for selecionada, o resultado devolverá o **mínimo** dos **Return Values** das regras correspondentes.
-   * Para o valor de entrada de **Total Amount = 3500**, a avaliação das regras seria:
+   * Para o valor de entrada de **Total Amount = 2500**, a avaliação das regras seria:
      * **Regra 1**: Total Amount <= 1000 (não corresponde)
      * **Regra 2**: Total Amount <= 2000 (não corresponde)
      * **Regra 3**: Total Amount <= 3000 (corresponde, Return Value = 3)

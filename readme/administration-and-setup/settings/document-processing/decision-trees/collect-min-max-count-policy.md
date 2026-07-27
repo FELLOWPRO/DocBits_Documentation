@@ -13,7 +13,7 @@ Ta polityka zbiera wszystkie dopasowane reguły i wybiera wartość **minimalną
 | 5    | Total Amount <= 5000 | 5            |
 
 1. Jeśli wybrana zostanie opcja **Collect (min)**, wynikiem będzie wartość **minimalna** spośród **Return Values** dopasowanych reguł.
-   * Dla wartości wejściowej **Total Amount = 3500** ocena reguł wyglądałaby następująco:
+   * Dla wartości wejściowej **Total Amount = 2500** ocena reguł wyglądałaby następująco:
      * **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
      * **Reguła 2**: Total Amount <= 2000 (brak dopasowania)
      * **Reguła 3**: Total Amount <= 3000 (dopasowanie, Return Value = 3)

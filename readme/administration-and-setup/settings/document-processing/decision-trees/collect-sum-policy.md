@@ -12,7 +12,7 @@ Ta polityka zbiera wszystkie dopasowane reguły i sumuje wyniki. Działa tylko d
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-Dla wartości wejściowej **Total Amount = 3500** ocena reguł wyglądałaby następująco:
+Dla wartości wejściowej **Total Amount = 2500** ocena reguł wyglądałaby następująco:
 
 * **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
 * **Reguła 2**: Total Amount <= 2000 (brak dopasowania)

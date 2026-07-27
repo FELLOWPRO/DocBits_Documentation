@@ -12,7 +12,7 @@ Ta polityka stosuje reguły w kolejności, w jakiej pojawiają się w drzewie de
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-Zakładając, że wartością wejściową jest **Total Amount = 3500**, ocena reguł wyglądałaby następująco:
+Zakładając, że wartością wejściową jest **Total Amount = 2500**, ocena reguł wyglądałaby następująco:
 
 * **Reguła 1**: Total Amount <= 1000 (brak dopasowania)
 * **Reguła 2**: Total Amount <= 2000 (brak dopasowania)

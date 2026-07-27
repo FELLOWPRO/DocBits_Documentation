@@ -1,4 +1,4 @@
-# Topla (min/maks/sayım) Politikası (Collect (min/max/count) Policy)
+# Topla (Min/Maksimum/Say)
 
 Bu politika, eşleşen tüm kuralları toplar ve ya **minimum**, **maksimum** seçer ya da oluşumları **sayar**. Yalnızca **Return Type Value** için çalışır.
 

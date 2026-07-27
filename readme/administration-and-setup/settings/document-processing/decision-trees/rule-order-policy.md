@@ -1,4 +1,4 @@
-# Kural Sırası Politikası (Rule Order Policy)
+# Kural Sırası
 
 Bu politika, kuralları karar ağacında göründükleri sırayla uygular ve ilk eşleşen kuralın sonucunu döndürür.
 

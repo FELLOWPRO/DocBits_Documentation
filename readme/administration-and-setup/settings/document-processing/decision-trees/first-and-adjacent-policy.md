@@ -1,4 +1,4 @@
-# İlk ve Bitişik Politika (First & Adjacent Policy)
+# Birinci ve Bitişik
 
 Doğru olan ilk kurala bitişik olan kuralın sonucunu seçer.
 

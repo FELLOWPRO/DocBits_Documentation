@@ -69,14 +69,14 @@ Her kural sırayla değerlendirilir.
 
 Karar Ağacı Politikası, bir karar ağacındaki birden çok kuralın nasıl işleneceğini tanımlar. Çeşitli politikalar arasından seçim yapabilirsiniz:
 
-* [Benzersiz Politika (Unique Policy)](decision-trees/unique-policy.md)
-* [İlk Politika (First Policy)](decision-trees/first-policy.md)
-* [Öncelik Politikası (Priority Policy)](decision-trees/priority-policy.md)
-* [Topla (sum) Politikası (Collect (sum) Policy)](decision-trees/collect-sum-policy.md)
-* [Topla (min/maks/sayım) Politikası (Collect (min/max/count) Policy)](decision-trees/collect-min-max-count-policy.md)
-* [Kural Sırası Politikası (Rule Order Policy)](decision-trees/rule-order-policy.md)
-* [Herhangi Politika (Any Policy)](decision-trees/any-policy.md)
-* [İlk ve Bitişik Politika (First & Adjacent Policy)](decision-trees/first-and-adjacent-policy.md)
+* [Eşsiz](decision-trees/unique-policy.md)
+* [Birinci](decision-trees/first-policy.md)
+* [Öncelik](decision-trees/priority-policy.md)
+* [Topla (Toplam)](decision-trees/collect-sum-policy.md)
+* [Topla (Min/Maksimum/Say)](decision-trees/collect-min-max-count-policy.md)
+* [Kural Sırası](decision-trees/rule-order-policy.md)
+* [Herhangi](decision-trees/any-policy.md)
+* [Birinci ve Bitişik](decision-trees/first-and-adjacent-policy.md)
 
 ## **Karar Ağacını Test Etme**
 

@@ -1,4 +1,4 @@
-# İlk Politika (First Policy)
+# Birinci
 
 İlk eşleşen kural uygulanır ve sonraki kurallar değerlendirilmez.
 

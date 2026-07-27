@@ -1,4 +1,4 @@
-# Benzersiz Politika (Unique Policy)
+# Eşsiz
 
 Yalnızca tek bir kuralın eşleşmesini sağlar. Birden çok kural eşleşirse, karar ağacı false döndürür.
 

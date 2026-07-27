@@ -1,4 +1,4 @@
-# Herhangi Politika (Any Policy)
+# Herhangi
 
 Birden çok kural doğru olabilir, ancak bu kuralların sonucu aynı olmalıdır.
 

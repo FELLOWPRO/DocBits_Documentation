@@ -1,4 +1,4 @@
-# Öncelik Politikası (Priority Policy)
+# Öncelik
 
 Bu seçeneği seçmek, her kural için öncelikler belirlemenize olanak tanır. Seçilen sayı ne kadar düşükse, öncelik o kadar yüksektir (yani öncelik 1 en yüksek önceliğe sahiptir). Kurallar öncelik sıralarına göre değerlendirilir. En yüksek öncelikli eşleşen kural uygulanır.
 

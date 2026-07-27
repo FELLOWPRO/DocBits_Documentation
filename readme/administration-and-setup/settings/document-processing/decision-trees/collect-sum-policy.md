@@ -1,4 +1,4 @@
-# Topla (sum) Politikası (Collect (sum) Policy)
+# Topla (Toplam)
 
 Bu politika, eşleşen tüm kuralları toplar ve sonuçları toplamaya alır. Yalnızca **Return Type Value** için çalışır.
 

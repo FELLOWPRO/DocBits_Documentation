@@ -13,7 +13,7 @@ Ova politika prikuplja sva pravila koja se podudaraju i bira **minimum**, **maks
 | 5    | Total Amount <= 5000 | 5            |
 
 1. Ako je izabrana opcija **Collect (min)**, rezultat će vratiti **minimum** **vraćenih vrednosti** za pravila koja se podudaraju.
-   * Za ulaznu vrednost **Total Amount = 3500**, procena pravila bila bi:
+   * Za ulaznu vrednost **Total Amount = 2500**, procena pravila bila bi:
      * **Pravilo 1**: Total Amount <= 1000 (ne podudara se)
      * **Pravilo 2**: Total Amount <= 2000 (ne podudara se)
      * **Pravilo 3**: Total Amount <= 3000 (podudara se, Return Value = 3)

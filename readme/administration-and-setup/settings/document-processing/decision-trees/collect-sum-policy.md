@@ -12,7 +12,7 @@ Ova politika prikuplja sva pravila koja se podudaraju i sabira rezultate. Radi s
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-Za ulaznu vrednost **Total Amount = 3500**, procena pravila bila bi:
+Za ulaznu vrednost **Total Amount = 2500**, procena pravila bila bi:
 
 * **Pravilo 1**: Total Amount <= 1000 (ne podudara se)
 * **Pravilo 2**: Total Amount <= 2000 (ne podudara se)

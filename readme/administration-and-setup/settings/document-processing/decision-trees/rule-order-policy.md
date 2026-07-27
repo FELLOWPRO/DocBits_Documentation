@@ -12,7 +12,7 @@ Ova politika primenjuje pravila redosledom kojim se pojavljuju u stablu odlučiv
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-S obzirom na to da je ulazna vrednost **Total Amount = 3500**, procena pravila bila bi:
+S obzirom na to da je ulazna vrednost **Total Amount = 2500**, procena pravila bila bi:
 
 * **Pravilo 1**: Total Amount <= 1000 (ne podudara se)
 * **Pravilo 2**: Total Amount <= 2000 (ne podudara se)

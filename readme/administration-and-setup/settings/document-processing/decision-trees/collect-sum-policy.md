@@ -12,7 +12,7 @@ Cette politique collecte toutes les règles correspondantes et additionne les r�
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-Pour la valeur d'entrée **Total Amount = 3500**, l'évaluation des règles serait :
+Pour la valeur d'entrée **Total Amount = 2500**, l'évaluation des règles serait :
 
 * **Règle 1** : Total Amount <= 1000 (ne correspond pas)
 * **Règle 2** : Total Amount <= 2000 (ne correspond pas)

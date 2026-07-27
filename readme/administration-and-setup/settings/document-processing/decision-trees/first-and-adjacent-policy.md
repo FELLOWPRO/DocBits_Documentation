@@ -1,4 +1,4 @@
-# Criterio First & Adjacent (prima e adiacente)
+# Primo e adiacente
 
 Sceglie il risultato della regola adiacente alla prima regola che è vera.
 
@@ -17,4 +17,4 @@ Se l'importo totale è **1500**, le regole valutate saranno:
 * **Regola 1**: Total Amount <= 1000 (non corrisponde)
 * **Regola 2**: Total Amount <= 2000 (corrisponde)
 
-Poiché la **Regola 2** è la prima regola che corrisponde, **First & Adjacent** applicherebbe il risultato della **Regola 3**: **GROUP_3**.
+Poiché la **Regola 2** è la prima regola che corrisponde, **Primo e adiacente** applicherebbe il risultato della **Regola 3**: **GROUP_3**.

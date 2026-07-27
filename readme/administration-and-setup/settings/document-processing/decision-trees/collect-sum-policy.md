@@ -1,4 +1,4 @@
-# Criterio Collect (sum) (raccogli somma)
+# Raccogliere (somma)
 
 Questo criterio raccoglie tutte le regole corrispondenti e somma i risultati. Funziona solo per **Return Type Value**.
 
@@ -20,7 +20,7 @@ Per il valore di input di **Total Amount = 2500**, la valutazione delle regole s
 * **Regola 4**: Total Amount <= 4000 (corrisponde, Return Value = 4)
 * **Regola 5**: Total Amount <= 5000 (corrisponde, Return Value = 5)
 
-Poiché viene applicato il criterio **Collect (sum)**, sommiamo i **Return Values** delle regole corrispondenti, che sono **3, 4, 5**.
+Poiché viene applicato il criterio **Raccogliere (somma)**, sommiamo i **Return Values** delle regole corrispondenti, che sono **3, 4, 5**.
 
 **La somma di questi valori** dà:
 

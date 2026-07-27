@@ -1,4 +1,4 @@
-# Criterio Unique (univoco)
+# Unico
 
 Garantisce che venga soddisfatta una sola regola. Se vengono soddisfatte più regole, l'albero decisionale restituirà false.
 
@@ -20,4 +20,4 @@ Se l'importo totale è **1500**, le regole valutate saranno:
 * **Regola 4**: Total Amount <= 4000 (corrisponde)
 * **Regola 5**: Total Amount <= 3000 (corrisponde)
 
-Poiché vengono soddisfatte più regole (**Regola 2**, **Regola 3**, **Regola 4**, **Regola 5**), l'albero decisionale restituirà **false** perché il criterio **Unique** garantisce che possa corrispondere una sola regola.
+Poiché vengono soddisfatte più regole (**Regola 2**, **Regola 3**, **Regola 4**, **Regola 5**), l'albero decisionale restituirà **false** perché il criterio **Unico** garantisce che possa corrispondere una sola regola.

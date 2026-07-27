@@ -1,4 +1,4 @@
-# Criterio Rule Order (ordine delle regole)
+# Ordine della regola
 
 Questo criterio applica le regole nell'ordine in cui appaiono nell'albero decisionale e restituisce il risultato della prima regola che corrisponde.
 
@@ -20,7 +20,7 @@ Dato che il valore di input è **Total Amount = 2500**, la valutazione delle reg
 * **Regola 4**: Total Amount <= 4000 (corrisponde)
 * **Regola 5**: Total Amount <= 5000 (corrisponde)
 
-Con **Rule Order**, l'albero elaborerà le regole nell'ordine in cui sono elencate. Quindi, le regole corrispondenti saranno:
+Con **Ordine della regola**, l'albero elaborerà le regole nell'ordine in cui sono elencate. Quindi, le regole corrispondenti saranno:
 
 * **Regola 3**: GROUP_3
 * **Regola 4**: GROUP_4

@@ -1,4 +1,4 @@
-# Criterio Any (qualsiasi)
+# Qualsiasi
 
 Più regole possono essere vere, ma il risultato di tali regole deve essere lo stesso.
 
@@ -20,4 +20,4 @@ Se l'importo totale è **2500**, le regole valutate saranno:
 * **Regola 4**: Total Amount <= 4000 (corrisponde)
 * **Regola 5**: Total Amount <= 5000 (corrisponde)
 
-Affinché **Any** si applichi, tutte le regole corrispondenti devono restituire lo stesso **Return Group**. Poiché i gruppi non corrispondono tra le diverse regole, il risultato sarebbe **false**.
+Affinché **Qualsiasi** si applichi, tutte le regole corrispondenti devono restituire lo stesso **Return Group**. Poiché i gruppi non corrispondono tra le diverse regole, il risultato sarebbe **false**.

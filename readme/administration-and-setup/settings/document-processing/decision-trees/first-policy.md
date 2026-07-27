@@ -1,4 +1,4 @@
-# Criterio First (prima)
+# Primo
 
 Viene applicata la prima regola corrispondente e nessuna regola successiva viene valutata.
 

@@ -1,4 +1,4 @@
-# Criterio Priority (priorità)
+# Priorità
 
 La scelta di questa opzione consente di impostare le priorità per ciascuna regola. Più basso è il numero selezionato, più alta è la priorità (ad es. la priorità 1 ha la priorità più elevata). Le regole vengono valutate in base al loro ordine di priorità. Verrà applicata la regola corrispondente con la priorità più alta.
 

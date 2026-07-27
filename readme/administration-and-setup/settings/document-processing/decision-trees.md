@@ -69,14 +69,14 @@ Ogni regola viene valutata in sequenza.
 
 Il criterio dell'albero decisionale definisce come vengono elaborate più regole all'interno di un albero decisionale. È possibile scegliere tra diversi criteri:
 
-* [Criterio Unique (univoco)](decision-trees/unique-policy.md)
-* [Criterio First (prima)](decision-trees/first-policy.md)
-* [Criterio Priority (priorità)](decision-trees/priority-policy.md)
-* [Criterio Collect (sum) (raccogli somma)](decision-trees/collect-sum-policy.md)
-* [Criterio Collect (min/max/count) (raccogli min/max/conteggio)](decision-trees/collect-min-max-count-policy.md)
-* [Criterio Rule Order (ordine delle regole)](decision-trees/rule-order-policy.md)
-* [Criterio Any (qualsiasi)](decision-trees/any-policy.md)
-* [Criterio First & Adjacent (prima e adiacente)](decision-trees/first-and-adjacent-policy.md)
+* [Unico](decision-trees/unique-policy.md)
+* [Primo](decision-trees/first-policy.md)
+* [Priorità](decision-trees/priority-policy.md)
+* [Raccogliere (somma)](decision-trees/collect-sum-policy.md)
+* [Raccogliere (Min/max/conteggio)](decision-trees/collect-min-max-count-policy.md)
+* [Ordine della regola](decision-trees/rule-order-policy.md)
+* [Qualsiasi](decision-trees/any-policy.md)
+* [Primo e adiacente](decision-trees/first-and-adjacent-policy.md)
 
 ## **Test dell'albero decisionale**
 

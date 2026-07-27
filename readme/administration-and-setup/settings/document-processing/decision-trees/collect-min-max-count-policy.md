@@ -13,7 +13,7 @@ Esta política recopila todas las reglas coincidentes y selecciona el **mínimo*
 | 5    | Total Amount <= 5000 | 5            |
 
 1. Si se selecciona la opción **Collect (min)**, el resultado devolverá el valor **mínimo** de los **Return Values** de las reglas coincidentes.
-   * Para el valor de entrada **Total Amount = 3500**, la evaluación de las reglas sería:
+   * Para el valor de entrada **Total Amount = 2500**, la evaluación de las reglas sería:
      * **Regla 1**: Total Amount <= 1000 (no coincide)
      * **Regla 2**: Total Amount <= 2000 (no coincide)
      * **Regla 3**: Total Amount <= 3000 (coincide, Return Value = 3)

@@ -12,7 +12,7 @@ Esta política aplica las reglas en el orden en que aparecen en el árbol de dec
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-Dado que el valor de entrada es **Total Amount = 3500**, la evaluación de las reglas sería:
+Dado que el valor de entrada es **Total Amount = 2500**, la evaluación de las reglas sería:
 
 * **Regla 1**: Total Amount <= 1000 (no coincide)
 * **Regla 2**: Total Amount <= 2000 (no coincide)

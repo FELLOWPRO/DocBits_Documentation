@@ -12,7 +12,7 @@ Esta política recopila todas las reglas coincidentes y suma los resultados. Sol
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-Para el valor de entrada **Total Amount = 3500**, la evaluación de las reglas sería:
+Para el valor de entrada **Total Amount = 2500**, la evaluación de las reglas sería:
 
 * **Regla 1**: Total Amount <= 1000 (no coincide)
 * **Regla 2**: Total Amount <= 2000 (no coincide)

@@ -13,7 +13,7 @@ Bu politika, eşleşen tüm kuralları toplar ve ya **minimum**, **maksimum** se
 | 5    | Total Amount <= 5000 | 5            |
 
 1. **Topla (min)** seçeneği seçilirse, sonuç eşleşen kuralların **Döndürülen Değerlerinin** **minimumunu** döndürür.
-   * **Total Amount = 3500** girdi değeri için, kuralların değerlendirmesi şu şekilde olur:
+   * **Total Amount = 2500** girdi değeri için, kuralların değerlendirmesi şu şekilde olur:
      * **Kural 1**: Total Amount <= 1000 (eşleşmez)
      * **Kural 2**: Total Amount <= 2000 (eşleşmez)
      * **Kural 3**: Total Amount <= 3000 (eşleşir, Döndürülen Değer = 3)

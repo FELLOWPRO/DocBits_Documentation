@@ -12,7 +12,7 @@ Bu politika, kuralları karar ağacında göründükleri sırayla uygular ve ilk
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-Girdi değerinin **Total Amount = 3500** olduğu göz önüne alındığında, kuralların değerlendirmesi şu şekilde olur:
+Girdi değerinin **Total Amount = 2500** olduğu göz önüne alındığında, kuralların değerlendirmesi şu şekilde olur:
 
 * **Kural 1**: Total Amount <= 1000 (eşleşmez)
 * **Kural 2**: Total Amount <= 2000 (eşleşmez)

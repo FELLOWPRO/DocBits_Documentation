@@ -12,7 +12,7 @@ Bu politika, eşleşen tüm kuralları toplar ve sonuçları toplamaya alır. Ya
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-**Total Amount = 3500** girdi değeri için, kuralların değerlendirmesi şu şekilde olur:
+**Total Amount = 2500** girdi değeri için, kuralların değerlendirmesi şu şekilde olur:
 
 * **Kural 1**: Total Amount <= 1000 (eşleşmez)
 * **Kural 2**: Total Amount <= 2000 (eşleşmez)

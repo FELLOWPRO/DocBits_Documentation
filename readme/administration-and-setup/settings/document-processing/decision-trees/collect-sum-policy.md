@@ -12,7 +12,7 @@ Diese Policy sammelt alle zutreffenden Regeln und summiert die Ergebnisse. Sie f
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-Für den Eingabewert **Total Amount = 3500** würde die Auswertung der Regeln wie folgt aussehen:
+Für den Eingabewert **Total Amount = 2500** würde die Auswertung der Regeln wie folgt aussehen:
 
 * **Regel 1**: Total Amount <= 1000 (trifft nicht zu)
 * **Regel 2**: Total Amount <= 2000 (trifft nicht zu)

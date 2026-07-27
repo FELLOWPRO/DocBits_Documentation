@@ -13,7 +13,7 @@ Diese Policy sammelt alle zutreffenden Regeln und wählt entweder das **Minimum*
 | 5    | Total Amount <= 5000 | 5            |
 
 1. Wenn die Option **Collect (min)** ausgewählt ist, gibt das Ergebnis das **Minimum** der **Rückgabewerte** der zutreffenden Regeln zurück.
-   * Für den Eingabewert **Total Amount = 3500** würde die Auswertung der Regeln wie folgt aussehen:
+   * Für den Eingabewert **Total Amount = 2500** würde die Auswertung der Regeln wie folgt aussehen:
      * **Regel 1**: Total Amount <= 1000 (trifft nicht zu)
      * **Regel 2**: Total Amount <= 2000 (trifft nicht zu)
      * **Regel 3**: Total Amount <= 3000 (trifft zu, Rückgabewert = 3)

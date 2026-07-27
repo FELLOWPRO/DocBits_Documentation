@@ -12,7 +12,7 @@ Diese Policy wendet die Regeln in der Reihenfolge an, in der sie im Entscheidung
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-Bei dem Eingabewert **Total Amount = 3500** würde die Auswertung der Regeln wie folgt aussehen:
+Bei dem Eingabewert **Total Amount = 2500** würde die Auswertung der Regeln wie folgt aussehen:
 
 * **Regel 1**: Total Amount <= 1000 (trifft nicht zu)
 * **Regel 2**: Total Amount <= 2000 (trifft nicht zu)

@@ -1,4 +1,4 @@
-# Eerste beleid (First Policy)
+# Eerst
 
 De eerste overeenkomende regel wordt toegepast en er worden geen verdere regels geëvalueerd.
 

@@ -1,4 +1,4 @@
-# Prioriteitsbeleid (Priority Policy)
+# Prioriteit
 
 Met deze optie kunt u prioriteiten instellen voor elke regel. Hoe lager het geselecteerde getal, hoe hoger de prioriteit (d.w.z. prioriteit 1 heeft de hoogste prioriteit). Regels worden geëvalueerd op basis van hun prioriteitsvolgorde. De overeenkomende regel met de hoogste prioriteit wordt toegepast.
 

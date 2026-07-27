@@ -69,14 +69,14 @@ Elke regel wordt achtereenvolgens geëvalueerd.
 
 Het Beslissingsboombeleid definieert hoe meerdere regels binnen een beslissingsboom worden verwerkt. U kunt kiezen uit verschillende beleidsregels:
 
-* [Uniek beleid (Unique Policy)](decision-trees/unique-policy.md)
-* [Eerste beleid (First Policy)](decision-trees/first-policy.md)
-* [Prioriteitsbeleid (Priority Policy)](decision-trees/priority-policy.md)
-* [Verzamelbeleid (som) (Collect (sum) Policy)](decision-trees/collect-sum-policy.md)
-* [Verzamelbeleid (min/max/aantal) (Collect (min/max/count) Policy)](decision-trees/collect-min-max-count-policy.md)
-* [Regelvolgordebeleid (Rule Order Policy)](decision-trees/rule-order-policy.md)
-* [Elke regel-beleid (Any Policy)](decision-trees/any-policy.md)
-* [Eerste & aangrenzend beleid (First & Adjacent Policy)](decision-trees/first-and-adjacent-policy.md)
+* [Uniek](decision-trees/unique-policy.md)
+* [Eerst](decision-trees/first-policy.md)
+* [Prioriteit](decision-trees/priority-policy.md)
+* [Verzamelen (Sommen)](decision-trees/collect-sum-policy.md)
+* [Verzamelen (Min/Max/tellen)](decision-trees/collect-min-max-count-policy.md)
+* [Regelvolgorde](decision-trees/rule-order-policy.md)
+* [Elk](decision-trees/any-policy.md)
+* [Eerste en aangrenzende](decision-trees/first-and-adjacent-policy.md)
 
 ## **De beslissingsboom testen**
 

@@ -1,4 +1,4 @@
-# Regelvolgordebeleid (Rule Order Policy)
+# Regelvolgorde
 
 Dit beleid past regels toe in de volgorde waarin ze in de beslissingsboom verschijnen en retourneert het resultaat van de regel die als eerste overeenkomt.
 

@@ -1,4 +1,4 @@
-# Elke regel-beleid (Any Policy)
+# Elk
 
 Meerdere regels kunnen waar zijn, maar het resultaat van die regels moet hetzelfde zijn.
 
@@ -20,4 +20,4 @@ Als het totaalbedrag **2500** is, worden de volgende regels geëvalueerd:
 * **Regel 4**: Total Amount <= 4000 (komt overeen)
 * **Regel 5**: Total Amount <= 5000 (komt overeen)
 
-Om **Any** toe te passen, moeten alle overeenkomende regels dezelfde **Return Group** retourneren. Omdat de groepen niet overeenkomen tussen de verschillende regels, is het resultaat **false**.
+Om **Elk** toe te passen, moeten alle overeenkomende regels dezelfde **Return Group** retourneren. Omdat de groepen niet overeenkomen tussen de verschillende regels, is het resultaat **false**.

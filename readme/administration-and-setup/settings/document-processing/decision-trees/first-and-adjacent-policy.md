@@ -1,4 +1,4 @@
-# Eerste & aangrenzend beleid (First & Adjacent Policy)
+# Eerste en aangrenzende
 
 Kiest het resultaat van de regel die aangrenzend is aan de eerste regel die waar is.
 
@@ -17,4 +17,4 @@ Als het totaalbedrag **1500** is, worden de volgende regels geëvalueerd:
 * **Regel 1**: Total Amount <= 1000 (komt niet overeen)
 * **Regel 2**: Total Amount <= 2000 (komt overeen)
 
-Omdat **Regel 2** de eerste regel is die overeenkomt, zou **First & Adjacent** het resultaat van **Regel 3** toepassen: **GROUP_3**.
+Omdat **Regel 2** de eerste regel is die overeenkomt, zou **Eerste en aangrenzende** het resultaat van **Regel 3** toepassen: **GROUP_3**.

@@ -1,4 +1,4 @@
-# Uniek beleid (Unique Policy)
+# Uniek
 
 Zorgt ervoor dat slechts één enkele regel wordt gematcht. Als er meerdere regels worden gematcht, retourneert de beslissingsboom false.
 

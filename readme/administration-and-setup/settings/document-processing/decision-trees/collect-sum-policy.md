@@ -1,4 +1,4 @@
-# Verzamelbeleid (som) (Collect (sum) Policy)
+# Verzamelen (Sommen)
 
 Dit beleid verzamelt alle overeenkomende regels en telt de resultaten op. Het werkt alleen voor **Return Type Value**.
 

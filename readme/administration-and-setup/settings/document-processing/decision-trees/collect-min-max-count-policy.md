@@ -13,7 +13,7 @@ This policy collects all matching rules and either selects the **minimum**, **ma
 | 5    | Total Amount <= 5000 | 5            |
 
 1. If the **Collect (min)** option is selected, the result will return the **minimum** of the **Return Values** for the matching rules.
-   * For the input value of **Total Amount = 3500**, the evaluation of rules would be:
+   * For the input value of **Total Amount = 2500**, the evaluation of rules would be:
      * **Rule 1**: Total Amount <= 1000 (does not match)
      * **Rule 2**: Total Amount <= 2000 (does not match)
      * **Rule 3**: Total Amount <= 3000 (matches, Return Value = 3)

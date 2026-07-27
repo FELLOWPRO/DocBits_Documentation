@@ -12,7 +12,7 @@ This policy collects all matching rules and sums the results. It only works for 
 | 4    | Total Amount <= 4000 | 4            |
 | 5    | Total Amount <= 5000 | 5            |
 
-For the input value of **Total Amount = 3500**, the evaluation of rules would be:
+For the input value of **Total Amount = 2500**, the evaluation of rules would be:
 
 * **Rule 1**: Total Amount <= 1000 (does not match)
 * **Rule 2**: Total Amount <= 2000 (does not match)

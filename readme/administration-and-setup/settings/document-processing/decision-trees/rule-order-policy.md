@@ -12,7 +12,7 @@ Dit beleid past regels toe in de volgorde waarin ze in de beslissingsboom versch
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-Gegeven dat de invoerwaarde **Total Amount = 3500** is, zou de evaluatie van de regels als volgt zijn:
+Gegeven dat de invoerwaarde **Total Amount = 2500** is, zou de evaluatie van de regels als volgt zijn:
 
 * **Regel 1**: Total Amount <= 1000 (komt niet overeen)
 * **Regel 2**: Total Amount <= 2000 (komt niet overeen)

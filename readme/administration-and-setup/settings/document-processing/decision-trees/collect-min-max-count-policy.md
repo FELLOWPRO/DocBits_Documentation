@@ -13,7 +13,7 @@ Dit beleid verzamelt alle overeenkomende regels en selecteert ofwel het **minimu
 | 5    | Total Amount <= 5000 | 5            |
 
 1. Als de optie **Collect (min)** is geselecteerd, retourneert het resultaat het **minimum** van de **Return Values** voor de overeenkomende regels.
-   * Voor de invoerwaarde **Total Amount = 3500** zou de evaluatie van de regels als volgt zijn:
+   * Voor de invoerwaarde **Total Amount = 2500** zou de evaluatie van de regels als volgt zijn:
      * **Regel 1**: Total Amount <= 1000 (komt niet overeen)
      * **Regel 2**: Total Amount <= 2000 (komt niet overeen)
      * **Regel 3**: Total Amount <= 3000 (komt overeen, Return Value = 3)

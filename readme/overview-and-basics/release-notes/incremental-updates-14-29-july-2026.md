@@ -62,7 +62,7 @@ I servizi non elencati non hanno avuto modifiche visibili ai clienti._
 
 - **Documenti eliminati:** aprire un documento eliminato nel frattempo mostra
   un messaggio chiaro invece di errori di script.
-- **Field Validation:** il campo del numero di pagina è più largo e salta
+- **Validazione dei campi:** il campo del numero di pagina è più largo e salta
   alla pagina premendo Invio. Un campo reso di sola lettura da uno script
   continua a mostrare la sua connessione campo. Un popup di avviso che
   stampava JavaScript grezzo mostra ora il messaggio effettivo, e la

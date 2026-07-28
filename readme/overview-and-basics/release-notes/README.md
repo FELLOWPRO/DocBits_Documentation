@@ -1,6 +1,6 @@
 # Release Notes
 
-> **Nieuwste hotfix-release:** [Updates — 14–23 juli 2026](incremental-updates-14-23-july-2026.md): wat er is veranderd met de productie-upgrade van 23 juli 2026 — van supporttickets vanuit foutmeldingen tot e-mailimport in de juiste regio. Alle hotfix-pagina's staan in de navigatie onder Release-opmerkingen.
+> **Nieuwste hotfix-release:** [Updates — 14–29 juli 2026](incremental-updates-14-29-july-2026.md): wat er is veranderd met de productie-upgrade van 29 juli 2026 — van twee-factor-authenticatie tot e-mailimport in de juiste regio. Alle hotfix-pagina's staan in de navigatie onder Release-opmerkingen.
 
 ## **Release R1.0 23/24 mei 2026**
 

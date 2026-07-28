@@ -59,7 +59,7 @@ yönelik bir değişiklik olmadı._
 
 - **Silinen belgeler:** bu arada silinmiş bir belgeyi açmak, betik hataları
   yerine düzgün bir mesaj gösteriyor.
-- **Field Validation:** sayfa numarası girişi daha geniş ve Enter'a
+- **Alan Doğrulama:** sayfa numarası girişi daha geniş ve Enter'a
   basıldığında ilgili sayfaya atlıyor. Bir betikle salt okunur yapılan alan,
   alan bağlantısını göstermeye devam ediyor. Ham JavaScript yazdıran bir
   uyarı penceresi artık gerçek mesajı gösteriyor ve uzun e-belge satır kalemi

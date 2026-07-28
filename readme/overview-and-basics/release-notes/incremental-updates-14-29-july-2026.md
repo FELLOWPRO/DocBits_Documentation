@@ -59,7 +59,7 @@ wijzigingen die zichtbaar zijn voor klanten._
 
 - **Verwijderde documenten:** het openen van een document dat inmiddels is
   verwijderd, toont een nette melding in plaats van scriptfouten.
-- **Field Validation:** het invoerveld voor het paginanummer is breder en
+- **Veldvalidatie:** het invoerveld voor het paginanummer is breder en
   springt bij Enter naar de pagina. Een veld dat door een script
   alleen-lezen is gemaakt, toont nog steeds zijn veldkoppeling. Een
   waarschuwingsvenster dat ruwe JavaScript weergaf, toont nu de

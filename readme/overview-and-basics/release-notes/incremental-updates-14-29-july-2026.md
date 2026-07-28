@@ -61,7 +61,7 @@ sichtbaren Änderungen._
 
 - **Gelöschte Dokumente:** Das Öffnen eines zwischenzeitlich gelöschten
   Dokuments zeigt eine verständliche Meldung statt Skriptfehlern.
-- **Field Validation:** Das Eingabefeld für die Seitenzahl ist breiter und
+- **Feldvalidierung:** Das Eingabefeld für die Seitenzahl ist breiter und
   springt mit Enter zur gewählten Seite. Ein per Skript schreibgeschütztes
   Feld zeigt weiterhin seine Feldverbindung. Ein Warnhinweis, der bisher rohen
   JavaScript-Code ausgab, zeigt jetzt die eigentliche Meldung, und der

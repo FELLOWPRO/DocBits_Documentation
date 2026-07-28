@@ -62,7 +62,7 @@ que no aparecen en la lista no tuvieron cambios visibles para el cliente._
 
 - **Documentos eliminados:** abrir un documento eliminado entretanto muestra
   un mensaje adecuado en lugar de errores de script.
-- **Field Validation:** el campo de número de página es más ancho y salta
+- **Validación de Campos:** el campo de número de página es más ancho y salta
   a la página al pulsar Enter. Un campo convertido en solo lectura por un
   script sigue mostrando su conexión de campo. Una ventana emergente de aviso
   que mostraba código JavaScript en bruto muestra ahora el mensaje real, y la

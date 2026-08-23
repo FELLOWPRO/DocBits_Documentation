@@ -50,11 +50,8 @@ no customer-facing changes._
 - Password reset works end to end again: the mail arrives, the form confirms
   the submission, and the answer is the same whether or not the address has an
   account.
-- Logging out in one browser tab logs the other tabs out too, without the
-  error toasts that used to appear when tabs disagreed about the session.
 - If your organisation requires two-factor enrollment, the login screen now
-  says so instead of failing without a message. Passkey sign-in across regions
-  shows translated error messages, and its submit button is visible.
+  says so instead of failing without a message.
 - Administrators can no longer switch on organisation-wide MFA enforcement
   before login enrollment is available, which previously could lock people
   out.
@@ -72,7 +69,7 @@ no customer-facing changes._
   confirmation first, and values that aren't numbers are flagged in AMOUNT and
   NUMBER columns.
 - The "Extracted table" tab links to manual table training again when it is
-  empty, and no longer spins forever when an AI table already exists.
+  empty.
 - Item numbers in the Compare line-item table are shown as identifiers, not
   rounded like amounts.
 - Approver fields resolve user and group ids to names, so they never show a
@@ -80,7 +77,6 @@ no customer-facing changes._
   path, so every viewer sees the same date.
 - Documents sent back to validation show a loading spinner instead of a dead
   screen while they are prepared.
-- Opening large supplier invoices is noticeably faster.
 
 ### Accounting
 
@@ -117,21 +113,17 @@ no customer-facing changes._
   large result sets page correctly.
 - The duplicate-document panel shows the same resolved columns as the main
   list, and multi-word supplier filter values survive pressing Enter.
-- The open-task counter in the sidebar counts tasks in your sub-organisation
-  context, not the context of whichever document happens to be open.
 
 ### Tasks
 
-- Kanban columns page as you scroll, so boards with many tasks load quickly.
 - The assignment e-mail goes out when a task is assigned, once. Editing a task
   or marking it done no longer re-sends it, and the "assigned on" date stays
   the date of assignment. Task e-mails also render properly in Outlook.
 
 ### Workflow Builder
 
-- The workflow list keeps your search, sort order, page and page size when you
-  open a workflow and come back, including via the breadcrumb. The page opens
-  on the List tab by default.
+- Search, sort order and pagination in the workflow list stay consistent
+  while you filter.
 - The "run workflow on change" toggle in the layout builder now gates the run,
   and enabling it requires picking a workflow.
 
@@ -143,25 +135,14 @@ no customer-facing changes._
   picker reopens, truncated labels get a tooltip, and user names (not raw ids)
   are shown when adding a line.
 - The System Admin checkbox is editable when editing a user.
-- The Master Data page no longer comes up blank because of a sorting race, and
-  sorting by badges doesn't crash the page anymore.
-- A subscription in "cancelling" state can be resumed.
-- The XSLT detail page reports load errors instead of showing nothing, and
-  the e-mail notification settings use the full page width with a working logs
-  pane.
-- The organisation picker for multi-org users has correct row layout, sizing
-  and theme colors.
-- Analytics: Core Web Vitals render from the real measurement data, the logs
-  service view works, and a failed metrics request shows an error state
-  instead of rendering zeros.
+- Analytics: Core Web Vitals render from the real measurement data, and the
+  logs service view works.
 - "Use Default Template" in the layout manager copies the default layout as
-  intended; it used to crash or claim no default exists.
+  intended.
 - Custom field labels no longer override the bundled translations of standard
-  fields, and DocNet (AI Workforce) screens including the Agent Wizard are
-  translated.
+  fields.
 - Supplier portal quotes: submitting a quote with a REF1 value outside the
-  allowed list is blocked, managed units of measure show in the line-item
-  table, and approval styling applies to contract quotes only.
+  allowed list is blocked.
 - MediOrder gets duplicate document detection on its validation screen.
 
 ## API Service — `12.82.3`

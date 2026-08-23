@@ -59,13 +59,8 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
 - Das Zurücksetzen des Passworts funktioniert wieder von Anfang bis Ende: Die
   E-Mail kommt an, das Formular bestätigt das Absenden, und die Antwort ist
   dieselbe — unabhängig davon, ob zur Adresse ein Konto existiert.
-- Wer sich in einem Browser-Tab abmeldet, wird auch in den anderen Tabs
-  abgemeldet — ohne die Fehlermeldungen, die bisher erschienen, wenn die Tabs
-  sich über die Sitzung uneinig waren.
 - Wenn Ihre Organisation die Einrichtung eines zweiten Faktors verlangt, sagt
-  der Anmeldebildschirm das jetzt, statt ohne Meldung fehlzuschlagen. Die
-  Passkey-Anmeldung über Regionen hinweg zeigt übersetzte Fehlermeldungen,
-  und ihre Absenden-Schaltfläche ist sichtbar.
+  der Anmeldebildschirm das jetzt, statt ohne Meldung fehlzuschlagen.
 - Administratoren können die organisationsweite MFA-Pflicht nicht mehr
   einschalten, bevor die Einrichtung bei der Anmeldung verfügbar ist — das
   konnte Benutzer bisher aussperren.
@@ -86,8 +81,7 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
   aufheben würde, zuerst nach Bestätigung, und Werte, die keine Zahlen sind,
   werden in AMOUNT- und NUMBER-Spalten markiert.
 - Der Tab „Extracted table“ verlinkt wieder auf das manuelle
-  Tabellentraining, wenn er leer ist, und dreht sich nicht mehr endlos, wenn
-  bereits eine KI-Tabelle existiert.
+  Tabellentraining, wenn er leer ist.
 - Artikelnummern in der Positionstabelle des Compare-Bildschirms werden als
   Kennungen angezeigt, nicht wie Beträge gerundet.
 - Freigeberfelder lösen Benutzer- und Gruppen-IDs zu Namen auf, sodass sie
@@ -96,7 +90,6 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
   dasselbe Datum sehen.
 - Dokumente, die zurück in die Validierung geschickt wurden, zeigen während
   der Vorbereitung einen Ladeindikator statt eines toten Bildschirms.
-- Große Lieferantenrechnungen öffnen sich spürbar schneller.
 
 ### Accounting
 
@@ -138,14 +131,9 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
   sodass große Ergebnismengen korrekt blättern.
 - Das Duplikat-Panel zeigt dieselben aufgelösten Spalten wie die Hauptliste,
   und mehrteilige Lieferanten-Filterwerte überstehen das Drücken von Enter.
-- Der Zähler offener Aufgaben in der Seitenleiste zählt Aufgaben im Kontext
-  Ihrer Unterorganisation — nicht im Kontext des Dokuments, das gerade
-  geöffnet ist.
 
 ### Aufgaben
 
-- Kanban-Spalten laden beim Scrollen seitenweise nach, sodass Boards mit
-  vielen Aufgaben schnell aufbauen.
 - Die Zuweisungs-E-Mail geht raus, wenn eine Aufgabe zugewiesen wird — genau
   einmal. Das Bearbeiten oder Erledigen einer Aufgabe versendet sie nicht
   erneut, und das Datum „zugewiesen am“ bleibt das Datum der Zuweisung.
@@ -153,9 +141,8 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
 
 ### Workflow Builder
 
-- Die Workflow-Liste behält Ihre Suche, Sortierung, Seite und Seitengröße,
-  wenn Sie einen Workflow öffnen und zurückkehren — auch über die Breadcrumb.
-  Die Seite öffnet standardmäßig auf dem Tab „List“.
+- Suche, Sortierung und Seitennavigation der Workflow-Liste bleiben beim
+  Filtern konsistent.
 - Der Schalter „run workflow on change“ im Layout-Builder steuert den Lauf
   jetzt tatsächlich, und beim Aktivieren muss ein Workflow ausgewählt werden.
 
@@ -168,28 +155,14 @@ Sprache. Nicht aufgeführte Services hatten keine für Kunden sichtbaren
   Tooltip, und beim Hinzufügen einer Zeile werden Benutzernamen (statt roher
   IDs) angezeigt.
 - Die Checkbox „System Admin“ ist beim Bearbeiten eines Benutzers editierbar.
-- Die Stammdaten-Seite bleibt nicht mehr wegen einer Sortier-Wettlaufbedingung
-  leer, und das Sortieren nach Badges bringt die Seite nicht mehr zum
-  Absturz.
-- Ein Abonnement im Status „cancelling“ lässt sich fortsetzen.
-- Die XSLT-Detailseite meldet Ladefehler, statt nichts anzuzeigen, und die
-  Einstellungen für E-Mail-Benachrichtigungen nutzen die volle Seitenbreite
-  mit einem funktionierenden Log-Bereich.
-- Die Organisationsauswahl für Benutzer mit mehreren Organisationen hat jetzt
-  korrektes Zeilenlayout, passende Größen und Theme-Farben.
-- Analytics: Core Web Vitals werden aus den echten Messdaten dargestellt, die
-  Ansicht des Log-Service funktioniert, und eine fehlgeschlagene
-  Metrik-Abfrage zeigt einen Fehlerzustand, statt Nullen zu rendern.
+- Analytics: Core Web Vitals werden aus den echten Messdaten dargestellt, und
+  die Ansicht des Log-Service funktioniert.
 - „Use Default Template“ im Layout-Manager kopiert das Standard-Layout wie
-  vorgesehen; bisher stürzte die Funktion ab oder behauptete, es gebe kein
-  Standard-Layout.
+  vorgesehen.
 - Benutzerdefinierte Feldbezeichnungen überschreiben nicht mehr die
-  mitgelieferten Übersetzungen der Standardfelder, und die DocNet-Bildschirme
-  (AI Workforce) einschließlich des Agent Wizard sind übersetzt.
+  mitgelieferten Übersetzungen der Standardfelder.
 - Lieferantenportal-Angebote: Das Einreichen eines Angebots mit einem
-  REF1-Wert außerhalb der zulässigen Liste wird blockiert, verwaltete
-  Mengeneinheiten erscheinen in der Positionstabelle, und das
-  Freigabe-Styling gilt nur noch für Vertragsangebote.
+  REF1-Wert außerhalb der zulässigen Liste wird blockiert.
 - MediOrder erhält eine Duplikaterkennung auf seinem Validierungsbildschirm.
 
 ## API Service — `12.82.3`

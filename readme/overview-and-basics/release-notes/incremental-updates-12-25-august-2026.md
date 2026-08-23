@@ -57,13 +57,8 @@ avuto modifiche visibili ai clienti._
 - La reimpostazione della password funziona di nuovo da cima a fondo: la mail
   arriva, il modulo conferma l'invio e la risposta è la stessa sia che
   l'indirizzo abbia un account sia che non lo abbia.
-- La disconnessione in una scheda del browser disconnette anche le altre
-  schede, senza i toast di errore che comparivano quando le schede erano in
-  disaccordo sulla sessione.
 - Se la vostra organizzazione richiede la registrazione al secondo fattore, la
-  schermata di login ora lo dice invece di fallire senza messaggio. L'accesso
-  con passkey tra regioni mostra messaggi di errore tradotti, e il suo
-  pulsante di invio è visibile.
+  schermata di login ora lo dice invece di fallire senza messaggio.
 - Gli amministratori non possono più attivare l'obbligo di MFA per l'intera
   organizzazione prima che la registrazione al login sia disponibile, cosa che
   in precedenza poteva escludere le persone dall'accesso.
@@ -84,8 +79,7 @@ avuto modifiche visibili ai clienti._
   un'altra colonna chiede prima conferma, e i valori che non sono numeri
   vengono segnalati nelle colonne AMOUNT e NUMBER.
 - La scheda "Extracted table" torna a rimandare all'addestramento manuale
-  delle tabelle quando è vuota, e non gira più all'infinito quando esiste già
-  una tabella AI.
+  delle tabelle quando è vuota.
 - I numeri articolo nella tabella delle righe di Compare vengono mostrati come
   identificativi, non arrotondati come importi.
 - I campi approvatore risolvono gli id di utenti e gruppi in nomi, così non
@@ -94,8 +88,6 @@ avuto modifiche visibili ai clienti._
   ogni persona vede la stessa data.
 - I documenti rimandati in validazione mostrano uno spinner di caricamento
   invece di una schermata morta mentre vengono preparati.
-- L'apertura di fatture fornitore di grandi dimensioni è sensibilmente più
-  veloce.
 
 ### Contabilità
 
@@ -138,14 +130,9 @@ avuto modifiche visibili ai clienti._
 - Il pannello dei documenti duplicati mostra le stesse colonne risolte
   dell'elenco principale, e i valori di filtro fornitore composti da più
   parole sopravvivono alla pressione di Invio.
-- Il contatore delle attività aperte nella barra laterale conta le attività
-  nel contesto della vostra sotto-organizzazione, non nel contesto del
-  documento che si trova aperto in quel momento.
 
 ### Attività
 
-- Le colonne Kanban si paginano durante lo scorrimento, così le bacheche con
-  molte attività si caricano rapidamente.
 - L'e-mail di assegnazione parte quando un'attività viene assegnata, una sola
   volta. Modificare un'attività o contrassegnarla come completata non la
   rinvia più, e la data di assegnazione resta la data dell'assegnazione
@@ -154,10 +141,8 @@ avuto modifiche visibili ai clienti._
 
 ### Workflow Builder
 
-- L'elenco dei workflow conserva ricerca, ordinamento, pagina e dimensione
-  della pagina quando aprite un workflow e tornate indietro, anche tramite il
-  breadcrumb. La pagina si apre per impostazione predefinita sulla scheda
-  List.
+- Ricerca, ordinamento e paginazione nell'elenco dei workflow restano coerenti
+  mentre filtrate.
 - L'interruttore "run workflow on change" nel layout builder ora condiziona
   davvero l'esecuzione, e attivarlo richiede la scelta di un workflow.
 
@@ -170,28 +155,14 @@ avuto modifiche visibili ai clienti._
   si aggiunge una riga vengono mostrati i nomi degli utenti (non gli id
   grezzi).
 - La casella System Admin è modificabile quando si modifica un utente.
-- La pagina dei dati anagrafici non compare più vuota per una race condition
-  nell'ordinamento, e l'ordinamento per badge non manda più in crash la
-  pagina.
-- Un abbonamento in stato "cancelling" può essere ripreso.
-- La pagina di dettaglio XSLT segnala gli errori di caricamento invece di non
-  mostrare nulla, e le impostazioni delle notifiche e-mail usano l'intera
-  larghezza della pagina con un pannello dei log funzionante.
-- Il selettore dell'organizzazione per gli utenti multi-organizzazione ha
-  layout delle righe, dimensioni e colori del tema corretti.
 - Analytics: i Core Web Vitals vengono visualizzati a partire dai dati di
-  misurazione reali, la vista del servizio log funziona, e una richiesta di
-  metriche fallita mostra uno stato di errore invece di visualizzare zeri.
+  misurazione reali, e la vista del servizio log funziona.
 - "Use Default Template" nel gestore dei layout copia il layout predefinito
-  come previsto; prima andava in crash o sosteneva che non esistesse alcun
-  layout predefinito.
+  come previsto.
 - Le etichette dei campi personalizzati non sovrascrivono più le traduzioni
-  integrate dei campi standard, e le schermate DocNet (AI Workforce), incluso
-  l'Agent Wizard, sono tradotte.
+  integrate dei campi standard.
 - Offerte del portale fornitori: l'invio di un'offerta con un valore REF1
-  fuori dall'elenco consentito viene bloccato, le unità di misura gestite
-  compaiono nella tabella delle righe, e lo stile delle approvazioni si
-  applica solo alle offerte contrattuali.
+  fuori dall'elenco consentito viene bloccato.
 - MediOrder ottiene il rilevamento dei documenti duplicati nella propria
   schermata di validazione.
 

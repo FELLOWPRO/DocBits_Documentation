@@ -53,13 +53,8 @@ koji nisu navedeni nisu imali izmene vidljive korisnicima._
 - Resetovanje lozinke ponovo radi od početka do kraja: e-poruka stiže, obrazac
   potvrđuje slanje, a odgovor je isti bez obzira na to da li adresa ima nalog
   ili ne.
-- Odjava u jednoj kartici pregledača odjavljuje i ostale kartice, bez
-  iskačućih poruka o grešci koje su se ranije pojavljivale kada se kartice ne
-  slože oko sesije.
 - Ako vaša organizacija zahteva uključivanje dvofaktorske autentifikacije,
-  ekran za prijavu to sada saopštava umesto da ne uspe bez poruke. Prijava
-  pristupnim ključem preko regiona prikazuje prevedene poruke o grešci, a
-  njeno dugme za potvrdu je vidljivo.
+  ekran za prijavu to sada saopštava umesto da ne uspe bez poruke.
 - Administratori više ne mogu da uključe obaveznu MFA za celu organizaciju pre
   nego što registracija pri prijavi postane dostupna, što je ranije moglo da
   zaključa korisnike napolju.
@@ -78,7 +73,7 @@ koji nisu navedeni nisu imali izmene vidljive korisnicima._
   kolone prvo traži potvrdu, a vrednosti koje nisu brojevi označavaju se u
   kolonama AMOUNT i NUMBER.
 - Kartica „Extracted table" ponovo vodi na ručno treniranje tabele kada je
-  prazna i više se ne vrti beskonačno kada AI tabela već postoji.
+  prazna.
 - Brojevi artikala u Compare tabeli stavki prikazuju se kao identifikatori, a
   ne zaokruženi kao iznosi.
 - Polja odobravaoca razrešavaju ID-jeve korisnika i grupa u imena, pa nikada
@@ -86,7 +81,6 @@ koji nisu navedeni nisu imali izmene vidljive korisnicima._
   jedinstvenu putanju svesnu UTC-a, pa svaki korisnik vidi isti datum.
 - Dokumenti vraćeni na validaciju prikazuju indikator učitavanja umesto mrtvog
   ekrana dok se pripremaju.
-- Otvaranje velikih faktura dobavljača je primetno brže.
 
 ### Računovodstvo
 
@@ -123,13 +117,9 @@ koji nisu navedeni nisu imali izmene vidljive korisnicima._
   pretrage, pa se veliki skupovi rezultata ispravno listaju po stranicama.
 - Panel duplikata dokumenata prikazuje iste razrešene kolone kao glavna lista,
   a višerečne vrednosti filtera dobavljača preživljavaju pritisak na Enter.
-- Brojač otvorenih zadataka u bočnoj traci broji zadatke u kontekstu vaše
-  pod-organizacije, a ne u kontekstu dokumenta koji je slučajno otvoren.
 
 ### Zadaci
 
-- Kanban kolone učitavaju se stranicu po stranicu dok skrolujete, pa se table
-  sa mnogo zadataka brzo učitavaju.
 - E-poruka o dodeli šalje se kada se zadatak dodeli — jednom. Uređivanje
   zadatka ili označavanje kao završenog više je ne šalje ponovo, a datum
   „dodeljeno" ostaje datum dodele. E-poruke zadataka takođe se ispravno
@@ -137,10 +127,8 @@ koji nisu navedeni nisu imali izmene vidljive korisnicima._
 
 ### Workflow Builder
 
-- Lista radnih tokova zadržava vašu pretragu, redosled sortiranja, stranicu i
-  veličinu stranice kada otvorite radni tok i vratite se, uključujući i
-  povratak preko putanje (breadcrumb). Stranica se podrazumevano otvara na
-  kartici List.
+- Pretraga, redosled sortiranja i paginacija u listi radnih tokova ostaju
+  usklađeni dok filtrirate.
 - Prekidač „pokreni radni tok pri promeni" u alatu za izradu izgleda sada
   zaista kontroliše pokretanje, a njegovo uključivanje zahteva izbor radnog
   toka.
@@ -153,26 +141,14 @@ koji nisu navedeni nisu imali izmene vidljive korisnicima._
   ponovo otvori, skraćene oznake dobijaju tooltip, a pri dodavanju linije
   prikazuju se imena korisnika (a ne sirovi ID-jevi).
 - Polje za potvrdu System Admin može da se menja pri uređivanju korisnika.
-- Stranica matičnih podataka više se ne pojavljuje prazna zbog trke pri
-  sortiranju, a sortiranje po bedževima više ne ruši stranicu.
-- Pretplata u statusu „otkazivanje u toku" može da se nastavi.
-- Stranica sa detaljima XSLT-a prijavljuje greške pri učitavanju umesto da ne
-  prikaže ništa, a podešavanja obaveštenja e-poštom koriste punu širinu
-  stranice sa funkcionalnim panelom dnevnika.
-- Birač organizacija za korisnike sa više organizacija ima ispravan raspored
-  redova, veličine i boje teme.
-- Analitika: Core Web Vitals se iscrtavaju iz stvarnih izmerenih podataka,
-  prikaz servisa dnevnika radi, a neuspeo zahtev za metrike prikazuje stanje
-  greške umesto da iscrtava nule.
+- Analitika: Core Web Vitals se iscrtavaju iz stvarnih izmerenih podataka, a
+  prikaz servisa dnevnika radi.
 - „Use Default Template" u upravljaču izgleda kopira podrazumevani izgled
-  kako je i zamišljeno; ranije se rušio ili tvrdio da podrazumevani ne
-  postoji.
+  kako je i zamišljeno.
 - Prilagođene oznake polja više ne preklapaju ugrađene prevode standardnih
-  polja, a ekrani DocNet-a (AI Workforce), uključujući Agent Wizard, su
-  prevedeni.
+  polja.
 - Ponude na portalu dobavljača: slanje ponude sa REF1 vrednošću izvan
-  dozvoljene liste je blokirano, upravljane jedinice mere prikazuju se u
-  tabeli stavki, a stil odobravanja primenjuje se samo na ponude po ugovoru.
+  dozvoljene liste je blokirano.
 - MediOrder dobija otkrivanje duplikata dokumenata na svom ekranu validacije.
 
 ## API Service — `12.82.3`

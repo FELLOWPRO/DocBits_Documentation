@@ -9,6 +9,7 @@
   * [Ažuriranja — 3–4. jul 2026.](overview-and-basics/release-notes/incremental-updates-3-4-july-2026.md)
   * [Ažuriranja — 4–14. jul 2026.](overview-and-basics/release-notes/incremental-updates-4-14-july-2026.md)
   * [Ažuriranja — 14–29. jul 2026.](overview-and-basics/release-notes/incremental-updates-14-29-july-2026.md)
+  * [Ažuriranja — 29. jul – 12. avgust 2026.](overview-and-basics/release-notes/incremental-updates-29-july-12-august-2026.md)
   * [Ažuriranja — 12–25. avgust 2026.](overview-and-basics/release-notes/incremental-updates-12-25-august-2026.md)
 * [Dvofaktorska autentifikacija (2FA)](overview-and-basics/two-factor-authentication.md)
 * [End User Section](<README (1).md>)

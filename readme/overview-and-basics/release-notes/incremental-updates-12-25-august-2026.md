@@ -56,13 +56,9 @@ zichtbaar zijn voor klanten._
 - Wachtwoordreset werkt weer van begin tot eind: de mail komt aan, het
   formulier bevestigt de verzending, en het antwoord is hetzelfde ongeacht of
   het adres een account heeft.
-- Afmelden in het ene browsertabblad meldt de andere tabbladen ook af, zonder
-  de fout-toasts die verschenen wanneer tabbladen het oneens waren over de
-  sessie.
 - Als uw organisatie registratie voor twee-factor-authenticatie verplicht
   stelt, meldt het aanmeldscherm dat nu in plaats van zonder melding te
-  mislukken. Aanmelden met een passkey over regio's heen toont vertaalde
-  foutmeldingen, en de verzendknop is zichtbaar.
+  mislukken.
 - Beheerders kunnen organisatiebrede MFA-verplichting niet langer inschakelen
   voordat registratie bij het aanmelden beschikbaar is, wat mensen voorheen
   kon buitensluiten.
@@ -82,8 +78,7 @@ zichtbaar zijn voor klanten._
   loskoppelen eerst om bevestiging, en waarden die geen getallen zijn, worden
   gemarkeerd in AMOUNT- en NUMBER-kolommen.
 - Het tabblad "Extracted table" linkt weer naar handmatige tabeltraining
-  wanneer het leeg is, en blijft niet langer eindeloos draaien wanneer er al
-  een AI-tabel bestaat.
+  wanneer het leeg is.
 - Artikelnummers in de regelitemtabel van Compare worden getoond als
   identifiers, niet afgerond zoals bedragen.
 - Goedkeurdervelden herleiden gebruikers- en groeps-id's tot namen, zodat ze
@@ -91,7 +86,6 @@ zichtbaar zijn voor klanten._
   UTC-bewust pad geconverteerd, zodat elke kijker dezelfde datum ziet.
 - Documenten die terug naar validatie zijn gestuurd, tonen een laadindicator
   in plaats van een dood scherm terwijl ze worden voorbereid.
-- Grote leveranciersfacturen openen merkbaar sneller.
 
 ### Accounting
 
@@ -131,14 +125,9 @@ zichtbaar zijn voor klanten._
 - Het paneel met dubbele documenten toont dezelfde herleide kolommen als de
   hoofdlijst, en leveranciersfilterwaarden van meerdere woorden overleven het
   indrukken van Enter.
-- De teller voor openstaande taken in de zijbalk telt taken in uw
-  suborganisatiecontext, niet in de context van het document dat toevallig
-  openstaat.
 
 ### Taken
 
-- Kanban-kolommen pagineren terwijl u scrolt, zodat borden met veel taken snel
-  laden.
 - De toewijzings-e-mail gaat uit wanneer een taak wordt toegewezen — één keer.
   Een taak bewerken of afronden verzendt hem niet opnieuw, en de datum
   "toegewezen op" blijft de datum van toewijzing. Taak-e-mails worden
@@ -146,9 +135,8 @@ zichtbaar zijn voor klanten._
 
 ### Workflow Builder
 
-- De workflowlijst onthoudt uw zoekopdracht, sorteervolgorde, pagina en
-  paginagrootte wanneer u een workflow opent en terugkeert, ook via het
-  kruimelpad. De pagina opent standaard op het tabblad List.
+- Zoekopdracht, sorteervolgorde en paginering in de workflowlijst blijven
+  consistent terwijl u filtert.
 - De schakelaar "run workflow on change" in de layoutbuilder bepaalt nu
   daadwerkelijk of de workflow wordt uitgevoerd, en inschakelen vereist dat u
   een workflow kiest.
@@ -162,27 +150,14 @@ zichtbaar zijn voor klanten._
   toevoegen van een regel worden gebruikersnamen getoond (geen ruwe id's).
 - Het selectievakje System Admin is bewerkbaar bij het bewerken van een
   gebruiker.
-- De pagina met stamgegevens komt niet langer leeg op door een race in de
-  sortering, en sorteren op badges laat de pagina niet meer crashen.
-- Een abonnement in de status "cancelling" kan worden hervat.
-- De XSLT-detailpagina meldt laadfouten in plaats van niets te tonen, en de
-  instellingen voor e-mailmeldingen gebruiken de volledige paginabreedte, met
-  een werkend logvenster.
-- De organisatiekiezer voor gebruikers met meerdere organisaties heeft een
-  correcte rij-indeling, formaat en themakleuren.
 - Analytics: Core Web Vitals worden weergegeven op basis van de echte
-  meetgegevens, de logs-serviceweergave werkt, en een mislukt metrics-verzoek
-  toont een fouttoestand in plaats van nullen weer te geven.
+  meetgegevens, en de logs-serviceweergave werkt.
 - "Use Default Template" in de layoutmanager kopieert de standaardlayout
-  zoals bedoeld; voorheen crashte de functie of beweerde die dat er geen
-  standaard bestaat.
+  zoals bedoeld.
 - Labels van aangepaste velden overschrijven niet langer de meegeleverde
-  vertalingen van standaardvelden, en de DocNet-schermen (AI Workforce),
-  inclusief de Agent Wizard, zijn vertaald.
+  vertalingen van standaardvelden.
 - Offertes in het leveranciersportaal: het indienen van een offerte met een
-  REF1-waarde buiten de toegestane lijst wordt geblokkeerd, beheerde
-  maateenheden verschijnen in de regelitemtabel, en de goedkeuringsopmaak
-  geldt alleen voor contractoffertes.
+  REF1-waarde buiten de toegestane lijst wordt geblokkeerd.
 - MediOrder krijgt detectie van dubbele documenten op het validatiescherm.
 
 ## API Service — `12.82.3`

@@ -1,6 +1,6 @@
 # Beleške o izdanju
 
-> **Najnovije hotfix izdanje:** [Ažuriranja — 14–29. jul 2026.](incremental-updates-14-29-july-2026.md): šta se promenilo u produkcijskoj nadogradnji 29. jula 2026 — od dvofaktorske autentifikacije do dolazne e-pošte u ispravnom regionu. Sve hotfix stranice nalaze se u navigaciji pod Beleške o izdanju.
+> **Najnovije hotfix izdanje:** [Ažuriranja — 12–25. avgust 2026.](incremental-updates-12-25-august-2026.md): šta se promenilo u produkcijskoj nadogradnji 25. avgusta 2026 — od strože izolacije između organizacija do klasifikacije knjižnih odobrenja u e-fakturama. Sve hotfix stranice nalaze se u navigaciji pod Beleške o izdanju.
 
 ## **Izdanje R1.0 13/14. jun 2026.**
 

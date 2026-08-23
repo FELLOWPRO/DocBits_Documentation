@@ -1,6 +1,6 @@
 # Notes de version
 
-> **Dernière version de correctifs :** [Hotfixes 14–29 juillet 2026](incremental-updates-14-29-july-2026.md) : les changements de la mise à niveau de production du 29 juillet 2026, de l'authentification à deux facteurs à l'import e-mail dans la bonne région. Toutes les pages de correctifs figurent dans la navigation sous Notes de version.
+> **Dernière version de correctifs :** [Hotfixes 12–25 août 2026](incremental-updates-12-25-august-2026.md) : les changements de la mise à niveau de production du 25 août 2026, de l'isolation renforcée entre organisations à la classification des avoirs dans les factures électroniques. Toutes les pages de correctifs figurent dans la navigation sous Notes de version.
 
 ## **Release R1.0 23/24 mai 2026**
 

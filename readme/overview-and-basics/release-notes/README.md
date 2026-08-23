@@ -1,6 +1,6 @@
 # Release-Notizen
 
-> **Neueste Hotfix-Version:** [Hotfixes 14.–29. Juli 2026](incremental-updates-14-29-july-2026.md): Was sich mit dem Produktions-Upgrade vom 29. Juli 2026 geändert hat, von der Zwei-Faktor-Authentifizierung bis zum E-Mail-Eingang in der richtigen Region. Alle Hotfix-Seiten finden Sie in der Navigation unter Release-Notizen.
+> **Neueste Hotfix-Version:** [Hotfixes 12.–25. August 2026](incremental-updates-12-25-august-2026.md): Was sich mit dem Produktions-Upgrade vom 25. August 2026 geändert hat, von strengerer Trennung zwischen Organisationen bis zur Gutschrift-Erkennung bei E-Rechnungen. Alle Hotfix-Seiten finden Sie in der Navigation unter Release-Notizen.
 
 ## **Release R1.0 23./24. Mai 2026**
 

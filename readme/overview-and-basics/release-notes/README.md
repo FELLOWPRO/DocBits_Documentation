@@ -1,6 +1,6 @@
 # Release Notes
 
-> **Latest hotfix release:** [Hotfixes 14–29 July 2026](incremental-updates-14-29-july-2026.md): what changed in the 29 July 2026 production upgrade, from two-factor authentication to region-correct inbound e-mail. All hotfix pages are listed in the navigation under Release Notes.
+> **Latest hotfix release:** [Hotfixes 12–25 August 2026](incremental-updates-12-25-august-2026.md): what changed in the 25 August 2026 production upgrade, from stricter organisation isolation to credit-note classification for e-invoices. All hotfix pages are listed in the navigation under Release Notes.
 
 ## **Release R1.0 13/14 June 2026**
 

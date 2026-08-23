@@ -59,13 +59,8 @@ visible par le client._
 - La réinitialisation de mot de passe fonctionne à nouveau de bout en bout :
   l'e-mail arrive, le formulaire confirme l'envoi, et la réponse est identique
   que l'adresse possède un compte ou non.
-- La déconnexion dans un onglet du navigateur déconnecte aussi les autres
-  onglets, sans les messages d'erreur qui apparaissaient lorsque les onglets
-  étaient en désaccord sur la session.
 - Si votre organisation exige l'enrôlement à deux facteurs, l'écran de
-  connexion l'indique désormais au lieu d'échouer sans message. La connexion
-  par clé d'accès entre régions affiche des messages d'erreur traduits, et son
-  bouton d'envoi est visible.
+  connexion l'indique désormais au lieu d'échouer sans message.
 - Les administrateurs ne peuvent plus activer l'obligation de MFA à l'échelle
   de l'organisation avant que l'enrôlement à la connexion soit disponible, ce
   qui pouvait auparavant bloquer l'accès des utilisateurs.
@@ -86,8 +81,7 @@ visible par le client._
   colonne demande d'abord confirmation, et les valeurs qui ne sont pas des
   nombres sont signalées dans les colonnes AMOUNT et NUMBER.
 - L'onglet « Extracted table » renvoie à nouveau vers l'entraînement manuel
-  des tableaux lorsqu'il est vide, et ne tourne plus indéfiniment lorsqu'un
-  tableau IA existe déjà.
+  des tableaux lorsqu'il est vide.
 - Les numéros d'article du tableau de comparaison des lignes sont affichés
   comme des identifiants, et non arrondis comme des montants.
 - Les champs d'approbateur résolvent les identifiants d'utilisateurs et de
@@ -97,8 +91,6 @@ visible par le client._
   date.
 - Les documents renvoyés en validation affichent un indicateur de chargement
   au lieu d'un écran figé pendant leur préparation.
-- L'ouverture des factures fournisseurs volumineuses est nettement plus
-  rapide.
 
 ### Comptabilité
 
@@ -143,14 +135,9 @@ visible par le client._
 - Le panneau des documents en double affiche les mêmes colonnes résolues que
   la liste principale, et les valeurs de filtre fournisseur composées de
   plusieurs mots survivent à l'appui sur Entrée.
-- Le compteur de tâches ouvertes de la barre latérale compte les tâches dans
-  le contexte de votre sous-organisation, et non dans celui du document
-  ouvert à ce moment-là.
 
 ### Tâches
 
-- Les colonnes Kanban se chargent au fil du défilement, de sorte que les
-  tableaux comportant de nombreuses tâches s'ouvrent rapidement.
 - L'e-mail d'affectation part lorsqu'une tâche est affectée, une seule fois.
   Modifier une tâche ou la marquer comme terminée ne le renvoie plus, et la
   date « assigned on » reste la date de l'affectation. Les e-mails de tâches
@@ -158,9 +145,8 @@ visible par le client._
 
 ### Workflow Builder
 
-- La liste des workflows conserve votre recherche, l'ordre de tri, la page et
-  la taille de page lorsque vous ouvrez un workflow puis revenez, y compris
-  via le fil d'Ariane. La page s'ouvre par défaut sur l'onglet List.
+- La recherche, l'ordre de tri et la pagination de la liste des workflows
+  restent cohérents pendant que vous filtrez.
 - Le commutateur « run workflow on change » du concepteur de mise en page
   conditionne désormais réellement l'exécution, et son activation exige de
   choisir un workflow.
@@ -176,28 +162,14 @@ visible par le client._
   s'affichent lors de l'ajout d'une ligne.
 - La case System Admin est modifiable lors de la modification d'un
   utilisateur.
-- La page des données de base ne s'affiche plus vide à cause d'une condition
-  de concurrence au tri, et le tri par badges ne fait plus planter la page.
-- Un abonnement en état « cancelling » (résiliation en cours) peut être
-  repris.
-- La page de détail XSLT signale les erreurs de chargement au lieu de ne rien
-  afficher, et les paramètres de notification par e-mail utilisent toute la
-  largeur de la page, avec un panneau de journaux fonctionnel.
-- Le sélecteur d'organisation pour les utilisateurs multi-organisations a une
-  disposition de lignes, un dimensionnement et des couleurs de thème corrects.
 - Analytics : les Core Web Vitals sont rendus à partir des vraies données de
-  mesure, la vue du service de journaux fonctionne, et une requête de
-  métriques en échec affiche un état d'erreur au lieu d'afficher des zéros.
+  mesure, et la vue du service de journaux fonctionne.
 - « Use Default Template » dans le gestionnaire de mises en page copie la mise
-  en page par défaut comme prévu ; auparavant, la fonction plantait ou
-  affirmait qu'aucune mise en page par défaut n'existait.
+  en page par défaut comme prévu.
 - Les libellés de champs personnalisés n'écrasent plus les traductions
-  intégrées des champs standard, et les écrans DocNet (AI Workforce), y
-  compris l'Agent Wizard, sont traduits.
+  intégrées des champs standard.
 - Devis du portail fournisseurs : l'envoi d'un devis avec une valeur REF1 hors
-  de la liste autorisée est bloqué, les unités de mesure gérées s'affichent
-  dans le tableau des lignes, et le style d'approbation s'applique uniquement
-  aux devis de contrat.
+  de la liste autorisée est bloqué.
 - MediOrder bénéficie de la détection des documents en double sur son écran de
   validation.
 

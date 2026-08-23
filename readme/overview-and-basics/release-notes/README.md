@@ -1,6 +1,6 @@
 # Notas de versión
 
-> **Última versión de hotfixes:** [Actualizaciones — 14–29 de julio de 2026](incremental-updates-14-29-july-2026.md): los cambios de la actualización de producción del 29 de julio de 2026, desde la autenticación de dos factores hasta el correo entrante en la región correcta. Todas las páginas de hotfixes están en la navegación, bajo Notas de versión.
+> **Última versión de hotfixes:** [Actualizaciones — 12–25 de agosto de 2026](incremental-updates-12-25-august-2026.md): los cambios de la actualización de producción del 25 de agosto de 2026, desde un aislamiento más estricto entre organizaciones hasta la clasificación de notas de crédito en facturas electrónicas. Todas las páginas de hotfixes están en la navegación, bajo Notas de versión.
 
 ## **Release R1.0 23/24 de mayo de 2026**
 

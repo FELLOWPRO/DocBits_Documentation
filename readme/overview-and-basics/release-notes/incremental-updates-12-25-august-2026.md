@@ -56,13 +56,8 @@ olmadı._
 - Parola sıfırlama yeniden uçtan uca çalışıyor: e-posta ulaşıyor, form
   gönderimi onaylıyor ve yanıt, adresin bir hesabı olup olmamasından
   bağımsız olarak aynı.
-- Bir tarayıcı sekmesinde oturumu kapatmak diğer sekmelerin oturumunu da
-  kapatıyor; sekmeler oturum konusunda anlaşamadığında beliren hata
-  bildirimleri de artık yok.
 - Kuruluşunuz iki faktörlü kayıt zorunlu tutuyorsa, oturum açma ekranı artık
-  mesajsız başarısız olmak yerine bunu söylüyor. Bölgeler arası geçiş
-  anahtarıyla oturum açma çevrilmiş hata mesajları gösteriyor ve gönder
-  düğmesi görünür durumda.
+  mesajsız başarısız olmak yerine bunu söylüyor.
 - Yöneticiler, oturum açma kaydı kullanıma sunulmadan kuruluş genelinde MFA
   zorunluluğunu artık açamıyor; bu daha önce insanların dışarıda kalmasına
   yol açabiliyordu.
@@ -82,8 +77,7 @@ olmadı._
   yeniden eşlemesi önce onay istiyor; AMOUNT ve NUMBER sütunlarında sayı
   olmayan değerler işaretleniyor.
 - "Çıkarılan tablo" sekmesi boş olduğunda yeniden elle tablo eğitimine
-  bağlantı veriyor ve halihazırda bir yapay zeka tablosu varken artık
-  sonsuza kadar dönmüyor.
+  bağlantı veriyor.
 - Karşılaştırma satır kalemi tablosundaki kalem numaraları tutarlar gibi
   yuvarlanmıyor, tanımlayıcı olarak gösteriliyor.
 - Onaylayan alanları kullanıcı ve grup kimliklerini adlara çözümlüyor;
@@ -92,7 +86,6 @@ olmadı._
   görüntüleyen aynı tarihi görüyor.
 - Doğrulamaya geri gönderilen belgeler hazırlanırken ölü bir ekran yerine
   yükleme göstergesi gösteriyor.
-- Büyük tedarikçi faturalarını açmak belirgin şekilde daha hızlı.
 
 ### Muhasebe
 
@@ -130,13 +123,9 @@ olmadı._
 - Yinelenen belge paneli ana listeyle aynı çözümlenmiş sütunları gösteriyor
   ve birden çok kelimeden oluşan tedarikçi filtre değerleri Enter'a basınca
   kaybolmuyor.
-- Kenar çubuğundaki açık görev sayacı, o sırada hangi belge açıksa onun
-  bağlamını değil, sizin alt kuruluş bağlamınızdaki görevleri sayıyor.
 
 ### Görevler
 
-- Kanban sütunları siz kaydırdıkça sayfalanıyor; böylece çok görevli panolar
-  hızla yükleniyor.
 - Atama e-postası bir görev atandığında ve yalnızca bir kez gönderiliyor.
   Bir görevi düzenlemek veya tamamlandı olarak işaretlemek e-postayı artık
   yeniden göndermiyor ve "atanma tarihi" atamanın yapıldığı tarih olarak
@@ -144,10 +133,8 @@ olmadı._
 
 ### Workflow Builder
 
-- İş akışı listesi, bir iş akışını açıp geri döndüğünüzde — gezinme yolu
-  (breadcrumb) üzerinden dönüşler dahil — aramanızı, sıralama düzeninizi,
-  sayfanızı ve sayfa boyutunuzu koruyor. Sayfa varsayılan olarak Liste
-  sekmesinde açılıyor.
+- İş akışı listesindeki arama, sıralama düzeni ve sayfalama siz filtrelerken
+  tutarlı kalıyor.
 - Yerleşim oluşturucudaki "değişiklikte iş akışını çalıştır" anahtarı artık
   çalıştırmayı gerçekten denetliyor ve etkinleştirmek bir iş akışı seçmeyi
   gerektiriyor.
@@ -160,26 +147,13 @@ olmadı._
   kalıyor, kısaltılan etiketler araç ipucu alıyor ve satır eklerken ham
   kimlikler yerine kullanıcı adları gösteriliyor.
 - Bir kullanıcıyı düzenlerken Sistem Yöneticisi onay kutusu düzenlenebilir.
-- Ana Veri sayfası bir sıralama yarışı yüzünden artık boş gelmiyor ve
-  rozetlere göre sıralamak sayfayı artık çökertmiyor.
-- "İptal ediliyor" durumundaki bir abonelik sürdürülebiliyor.
-- XSLT ayrıntı sayfası hiçbir şey göstermemek yerine yükleme hatalarını
-  bildiriyor; e-posta bildirim ayarları çalışan bir günlük bölmesiyle tam
-  sayfa genişliğini kullanıyor.
-- Çok kuruluşlu kullanıcılar için kuruluş seçicinin satır düzeni,
-  boyutlandırması ve tema renkleri doğru.
-- Analitik: Core Web Vitals gerçek ölçüm verisinden çiziliyor, günlük
-  hizmeti görünümü çalışıyor ve başarısız bir metrik isteği sıfırlar
-  göstermek yerine bir hata durumu gösteriyor.
+- Analitik: Core Web Vitals gerçek ölçüm verisinden çiziliyor ve günlük
+  hizmeti görünümü çalışıyor.
 - Yerleşim yöneticisindeki "Varsayılan Şablonu Kullan" varsayılan yerleşimi
-  amaçlandığı gibi kopyalıyor; eskiden çöküyor ya da varsayılan olmadığını
-  iddia ediyordu.
-- Özel alan etiketleri standart alanların hazır çevirilerini artık ezmiyor;
-  Agent Wizard dahil DocNet (AI Workforce) ekranları çevrildi.
+  amaçlandığı gibi kopyalıyor.
+- Özel alan etiketleri standart alanların hazır çevirilerini artık ezmiyor.
 - Tedarikçi portalı teklifleri: izin verilen listenin dışında bir REF1
-  değeriyle teklif göndermek engelleniyor, yönetilen ölçü birimleri satır
-  kalemi tablosunda görünüyor ve onay biçimlendirmesi yalnızca sözleşme
-  tekliflerine uygulanıyor.
+  değeriyle teklif göndermek engelleniyor.
 - MediOrder, doğrulama ekranına yinelenen belge algılama özelliği kazanıyor.
 
 ## API Service — `12.82.3`

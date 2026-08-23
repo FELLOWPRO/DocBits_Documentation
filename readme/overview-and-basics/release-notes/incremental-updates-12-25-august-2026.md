@@ -58,13 +58,8 @@ serviços não listados não tiveram alterações visíveis para o cliente._
 - A reposição da palavra-passe volta a funcionar de ponta a ponta: o e-mail
   chega, o formulário confirma a submissão e a resposta é a mesma quer o
   endereço tenha ou não uma conta.
-- Terminar sessão num separador do navegador termina também a sessão nos
-  outros separadores, sem os avisos de erro que costumavam aparecer quando os
-  separadores discordavam sobre a sessão.
 - Se a sua organização exigir a adesão à autenticação de dois fatores, o ecrã
-  de início de sessão passa a indicá-lo em vez de falhar sem mensagem. O
-  início de sessão com chave de acesso entre regiões mostra mensagens de erro
-  traduzidas, e o respetivo botão de submissão está visível.
+  de início de sessão passa a indicá-lo em vez de falhar sem mensagem.
 - Os administradores já não conseguem ativar a obrigatoriedade de MFA em toda
   a organização antes de a adesão no início de sessão estar disponível, o que
   anteriormente podia deixar pessoas sem acesso.
@@ -84,8 +79,7 @@ serviços não listados não tiveram alterações visíveis para o cliente._
   pede primeiro confirmação, e os valores que não são números são assinalados
   nas colunas AMOUNT e NUMBER.
 - O separador "Extracted table" volta a ligar ao treino manual de tabelas
-  quando está vazio, e já não fica a carregar indefinidamente quando já existe
-  uma tabela de IA.
+  quando está vazio.
 - Os números de artigo na tabela de linhas do Compare são mostrados como
   identificadores, e não arredondados como montantes.
 - Os campos de aprovador resolvem os ids de utilizadores e grupos para nomes,
@@ -94,7 +88,6 @@ serviços não listados não tiveram alterações visíveis para o cliente._
   todos os visualizadores vejam a mesma data.
 - Os documentos devolvidos à validação mostram um indicador de carregamento em
   vez de um ecrã morto enquanto são preparados.
-- Abrir faturas de fornecedor de grande dimensão é visivelmente mais rápido.
 
 ### Contabilidade
 
@@ -134,13 +127,9 @@ serviços não listados não tiveram alterações visíveis para o cliente._
 - O painel de documentos duplicados mostra as mesmas colunas resolvidas da
   lista principal, e os valores de filtro de fornecedor com várias palavras
   sobrevivem ao premir Enter.
-- O contador de tarefas abertas na barra lateral conta as tarefas no contexto
-  da sua suborganização, e não no contexto do documento que estiver aberto.
 
 ### Tarefas
 
-- As colunas do Kanban são paginadas à medida que percorre a lista, pelo que
-  os quadros com muitas tarefas carregam depressa.
 - O e-mail de atribuição é enviado quando uma tarefa é atribuída, uma única
   vez. Editar uma tarefa ou marcá-la como concluída já não o reenvia, e a data
   de "atribuída em" mantém-se a data da atribuição. Os e-mails de tarefas
@@ -148,9 +137,8 @@ serviços não listados não tiveram alterações visíveis para o cliente._
 
 ### Workflow Builder
 
-- A lista de fluxos de trabalho mantém a pesquisa, a ordenação, a página e o
-  tamanho da página quando abre um fluxo de trabalho e regressa, inclusive
-  através do breadcrumb. A página abre por predefinição no separador List.
+- A pesquisa, a ordenação e a paginação na lista de fluxos de trabalho
+  mantêm-se consistentes enquanto filtra.
 - O interruptor "executar fluxo de trabalho ao alterar" no construtor de
   layouts passa a controlar de facto a execução, e ativá-lo exige a escolha de
   um fluxo de trabalho.
@@ -163,26 +151,14 @@ serviços não listados não tiveram alterações visíveis para o cliente._
   quando o seletor reabre, as etiquetas truncadas ganham uma tooltip, e são
   mostrados nomes de utilizadores (e não ids em bruto) ao adicionar uma linha.
 - A caixa de seleção System Admin é editável ao editar um utilizador.
-- A página de Master Data já não surge em branco devido a uma condição de
-  corrida na ordenação, e ordenar por badges já não faz a página falhar.
-- Uma subscrição no estado "a cancelar" pode ser retomada.
-- A página de detalhe de XSLT comunica os erros de carregamento em vez de não
-  mostrar nada, e as definições de notificações por e-mail usam toda a largura
-  da página, com um painel de registos funcional.
-- O seletor de organizações para utilizadores com várias organizações tem o
-  layout de linhas, o dimensionamento e as cores de tema corretos.
 - Analytics: os Core Web Vitals são apresentados a partir dos dados de medição
-  reais, a vista do serviço de registos funciona, e um pedido de métricas
-  falhado mostra um estado de erro em vez de apresentar zeros.
+  reais, e a vista do serviço de registos funciona.
 - "Use Default Template" no gestor de layouts copia o layout predefinido como
-  pretendido; antes falhava ou afirmava que não existia predefinição.
+  pretendido.
 - As etiquetas de campos personalizados deixam de sobrepor-se às traduções
-  incluídas dos campos padrão, e os ecrãs do DocNet (AI Workforce), incluindo
-  o Agent Wizard, estão traduzidos.
+  incluídas dos campos padrão.
 - Cotações do portal de fornecedores: submeter uma cotação com um valor REF1
-  fora da lista permitida é bloqueado, as unidades de medida geridas aparecem
-  na tabela de linhas, e o estilo de aprovação aplica-se apenas às cotações de
-  contrato.
+  fora da lista permitida é bloqueado.
 - O MediOrder ganha deteção de documentos duplicados no seu ecrã de validação.
 
 ## API Service — `12.82.3`

@@ -24,13 +24,13 @@ klientów._
   księgowania zawieszony na „Preparing…”. W każdym z tych przypadków
   dokument teraz albo kończy przetwarzanie, albo pokazuje rzeczywisty błąd,
   na który można zareagować.
-- **Noty kredytowe są rozpoznawane jako noty kredytowe.** Noty kredytowe
-  XRechnung 3.0, 3.0.1 i 3.0.2 w składni CII, czyste noty kredytowe CII oraz
+- **Faktury korygujące są rozpoznawane jako faktury korygujące.** Faktury korygujące
+  XRechnung 3.0, 3.0.1 i 3.0.2 w składni CII, czyste faktury korygujące CII oraz
   dokumenty ZUGFeRD 2.4 / Factur-X 1.08 są teraz klasyfikowane poprawnie,
   z kwotą łączną odczytywaną z właściwego pola. W dokumentach skanowanych,
-  które wspominają zarówno o „fakturze”, jak i „nocie kredytowej”,
+  które wspominają zarówno o „fakturze”, jak i „fakturze korygującej”,
   rozstrzyga słowo kluczowe położone bliżej typu dokumentu, a kwoty znów
-  stają się dodatnie po przeklasyfikowaniu noty kredytowej z powrotem na
+  stają się dodatnie po przeklasyfikowaniu faktury korygującej z powrotem na
   fakturę.
 - **Dopasowanie PO liczy w sposób, któremu można zaufać.** Tolerancje są
   porównywane jako dokładne wartości dziesiętne zamiast liczb
@@ -209,9 +209,9 @@ klientów._
 - Dokumenty szwajcarskie są rozpoznawane jako szwajcarskie (CHF, numery VAT
   CHE, IBAN-y CH), zamiast domyślnie podlegać konwencjom niemieckim, a daty
   zapisane z myślnikami typograficznymi parsują się poprawnie.
-- Noty kredytowe XRechnung 3.0, 3.0.1 i 3.0.2 w składni CII są klasyfikowane
-  jako noty kredytowe z kwotą łączną odczytywaną z pola sumy końcowej; to
-  samo dotyczy czystych not kredytowych CII. Zadeklarowana wersja
+- Faktury korygujące XRechnung 3.0, 3.0.1 i 3.0.2 w składni CII są klasyfikowane
+  jako faktury korygujące z kwotą łączną odczytywaną z pola sumy końcowej; to
+  samo dotyczy czystych faktur korygujących CII. Zadeklarowana wersja
   ZUGFeRD 2.4 / Factur-X 1.08 wygrywa z ogólnym identyfikatorem profilu,
   a same typy XRechnung rozwiązują się do swojego odpowiednika UBL lub CII,
   zamiast kończyć się błędem.
@@ -321,7 +321,7 @@ klientów._
 
 ## Extraction Service — `1.54.5`
 
-- O tym, czy dokument jest notą kredytową czy fakturą, rozstrzyga słowo
+- O tym, czy dokument jest fakturą korygującą czy fakturą, rozstrzyga słowo
   kluczowe położone bliżej wzmianki o typie dokumentu, a nie zasada
   „pierwsze trafienie wygrywa”.
 - Gdy kilka interpretacji podatkowych mieści się w tolerancji, preferowane

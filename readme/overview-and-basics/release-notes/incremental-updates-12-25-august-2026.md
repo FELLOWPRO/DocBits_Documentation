@@ -59,13 +59,9 @@ tuvieron cambios visibles para el cliente._
 - El restablecimiento de contraseña vuelve a funcionar de principio a fin: el
   correo llega, el formulario confirma el envío y la respuesta es la misma
   tanto si la dirección tiene cuenta como si no.
-- Cerrar sesión en una pestaña del navegador cierra también la sesión en las
-  demás pestañas, sin los mensajes de error que antes aparecían cuando las
-  pestañas discrepaban sobre la sesión.
 - Si su organización exige la inscripción en la autenticación de dos factores,
   la pantalla de inicio de sesión ahora lo indica en lugar de fallar sin
-  mensaje. El inicio de sesión con clave de acceso entre regiones muestra
-  mensajes de error traducidos, y su botón de envío es visible.
+  mensaje.
 - Los administradores ya no pueden activar la obligatoriedad de MFA para toda
   la organización antes de que la inscripción desde el inicio de sesión esté
   disponible, lo que antes podía dejar a usuarios sin acceso.
@@ -86,8 +82,7 @@ tuvieron cambios visibles para el cliente._
   confirmación primero, y los valores que no son números se marcan en las
   columnas AMOUNT y NUMBER.
 - La pestaña "Tabla extraída" vuelve a enlazar con el entrenamiento manual de
-  tablas cuando está vacía, y ya no gira indefinidamente cuando ya existe una
-  tabla de IA.
+  tablas cuando está vacía.
 - Los números de artículo en la tabla de líneas de Compare se muestran como
   identificadores, no redondeados como importes.
 - Los campos de aprobador resuelven los ids de usuario y de grupo a nombres,
@@ -96,7 +91,6 @@ tuvieron cambios visibles para el cliente._
   UTC, por lo que todos los usuarios ven la misma fecha.
 - Los documentos devueltos a validación muestran un indicador de carga en
   lugar de una pantalla muerta mientras se preparan.
-- Abrir facturas de proveedor grandes es notablemente más rápido.
 
 ### Contabilidad
 
@@ -137,14 +131,9 @@ tuvieron cambios visibles para el cliente._
 - El panel de documentos duplicados muestra las mismas columnas resueltas que
   la lista principal, y los valores de filtro de proveedor con varias palabras
   sobreviven al pulsar Enter.
-- El contador de tareas abiertas de la barra lateral cuenta las tareas en el
-  contexto de su suborganización, no en el contexto del documento que
-  casualmente esté abierto.
 
 ### Tareas
 
-- Las columnas del Kanban se paginan a medida que se desplaza, de modo que los
-  tableros con muchas tareas cargan rápido.
 - El correo de asignación se envía cuando se asigna una tarea, una sola vez.
   Editar una tarea o marcarla como hecha ya no lo reenvía, y la fecha de
   "asignado el" sigue siendo la fecha de la asignación. Los correos de tareas
@@ -152,10 +141,8 @@ tuvieron cambios visibles para el cliente._
 
 ### Workflow Builder
 
-- La lista de flujos de trabajo conserva su búsqueda, orden, página y tamaño
-  de página cuando abre un flujo de trabajo y vuelve, incluso a través de la
-  ruta de navegación (breadcrumb). La página se abre por defecto en la pestaña
-  List.
+- La búsqueda, el orden y la paginación de la lista de flujos de trabajo se
+  mantienen coherentes mientras filtra.
 - El interruptor "ejecutar flujo de trabajo al cambiar" del constructor de
   layouts ahora condiciona realmente la ejecución, y activarlo exige elegir un
   flujo de trabajo.
@@ -169,27 +156,14 @@ tuvieron cambios visibles para el cliente._
   tooltip y se muestran nombres de usuario (no ids en bruto) al añadir una
   línea.
 - La casilla de System Admin es editable al editar un usuario.
-- La página de Datos maestros ya no aparece en blanco por una condición de
-  carrera en la ordenación, y ordenar por insignias ya no bloquea la página.
-- Una suscripción en estado de "cancelación" puede reanudarse.
-- La página de detalle de XSLT informa de los errores de carga en lugar de no
-  mostrar nada, y los ajustes de notificaciones por correo usan todo el ancho
-  de la página con un panel de registros operativo.
-- El selector de organización para usuarios con varias organizaciones tiene un
-  diseño de filas, un tamaño y unos colores de tema correctos.
 - Analytics: los Core Web Vitals se muestran a partir de los datos de medición
-  reales, la vista del servicio de registros funciona, y una petición de
-  métricas fallida muestra un estado de error en lugar de mostrar ceros.
+  reales, y la vista del servicio de registros funciona.
 - "Use Default Template" en el gestor de layouts copia el layout
-  predeterminado como corresponde; antes fallaba o afirmaba que no existía
-  ninguno.
+  predeterminado como corresponde.
 - Las etiquetas de campos personalizados ya no sobrescriben las traducciones
-  incluidas de los campos estándar, y las pantallas de DocNet (AI Workforce),
-  incluido el Agent Wizard, están traducidas.
+  incluidas de los campos estándar.
 - Cotizaciones del portal de proveedores: el envío de una cotización con un
-  valor REF1 fuera de la lista permitida se bloquea, las unidades de medida
-  gestionadas se muestran en la tabla de líneas y el estilo de aprobación se
-  aplica solo a las cotizaciones de contrato.
+  valor REF1 fuera de la lista permitida se bloquea.
 - MediOrder recibe detección de documentos duplicados en su pantalla de
   validación.
 

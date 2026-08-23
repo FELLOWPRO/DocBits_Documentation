@@ -1,6 +1,6 @@
 # Informacje o wersji
 
-> **Najnowsze wydanie hotfix:** [Aktualizacje — 14–29 lipca 2026](incremental-updates-14-29-july-2026.md): zmiany z aktualizacji produkcyjnej 29 lipca 2026 — od uwierzytelniania dwuskładnikowego po pocztę przychodzącą we właściwym regionie. Wszystkie strony hotfix znajdują się w nawigacji w sekcji Informacje o wersji.
+> **Najnowsze wydanie hotfix:** [Aktualizacje — 12–25 sierpnia 2026](incremental-updates-12-25-august-2026.md): zmiany z aktualizacji produkcyjnej 25 sierpnia 2026 — od ściślejszej izolacji między organizacjami po rozpoznawanie faktur korygujących w e-fakturach. Wszystkie strony hotfix znajdują się w nawigacji w sekcji Informacje o wersji.
 
 ## **Release R1.0 23/24 maja 2026**
 

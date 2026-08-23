@@ -10,6 +10,7 @@
   * [Güncellemeler — 3–4 Temmuz 2026](overview-and-basics/release-notes/incremental-updates-3-4-july-2026.md)
   * [Güncellemeler — 4–14 Temmuz 2026](overview-and-basics/release-notes/incremental-updates-4-14-july-2026.md)
   * [Güncellemeler — 14–29 Temmuz 2026](overview-and-basics/release-notes/incremental-updates-14-29-july-2026.md)
+  * [Güncellemeler — 12–25 Ağustos 2026](overview-and-basics/release-notes/incremental-updates-12-25-august-2026.md)
 * [End User Section](<README (1).md>)
   * [Global Hızlı Arama](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Site Haritası](end-user-and-partner-section/end-user-section/sitemap.md)

@@ -17,6 +17,7 @@
   * [Atualizações — 3–4 de julho de 2026](overview-and-basics/release-notes/incremental-updates-3-4-july-2026.md)
   * [Atualizações — 4–14 de julho de 2026](overview-and-basics/release-notes/incremental-updates-4-14-july-2026.md)
   * [Atualizações — 14–29 de julho de 2026](overview-and-basics/release-notes/incremental-updates-14-29-july-2026.md)
+  * [Atualizações — 12–25 de agosto de 2026](overview-and-basics/release-notes/incremental-updates-12-25-august-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Informazioni generali](overview-and-basics/faq/general-information.md)
   * [Elaborazione del documento](overview-and-basics/faq/document-processing/README.md)

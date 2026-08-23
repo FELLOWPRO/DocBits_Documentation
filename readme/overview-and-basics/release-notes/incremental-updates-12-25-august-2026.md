@@ -58,13 +58,8 @@ klientów._
 - Resetowanie hasła działa znów od początku do końca: wiadomość dociera,
   formularz potwierdza wysłanie, a odpowiedź jest taka sama niezależnie od
   tego, czy dany adres ma konto.
-- Wylogowanie w jednej karcie przeglądarki wylogowuje też pozostałe karty —
-  bez komunikatów o błędach, które pojawiały się wcześniej, gdy karty nie
-  zgadzały się co do stanu sesji.
 - Jeśli organizacja wymaga rejestracji drugiego składnika, ekran logowania
-  teraz o tym informuje, zamiast kończyć się bez komunikatu. Logowanie
-  kluczem dostępu (passkey) między regionami pokazuje przetłumaczone
-  komunikaty o błędach, a jego przycisk wysłania jest widoczny.
+  teraz o tym informuje, zamiast kończyć się bez komunikatu.
 - Administratorzy nie mogą już włączyć wymuszania MFA dla całej organizacji,
   zanim rejestracja przy logowaniu stanie się dostępna — wcześniej mogło to
   odciąć użytkowników od systemu.
@@ -85,8 +80,7 @@ klientów._
   najpierw o potwierdzenie, a wartości niebędące liczbami są oznaczane
   w kolumnach AMOUNT i NUMBER.
 - Zakładka „Extracted table” znów linkuje do ręcznego trenowania tabel, gdy
-  jest pusta, i nie kręci się już w nieskończoność, gdy tabela AI już
-  istnieje.
+  jest pusta.
 - Numery pozycji w tabeli porównania pozycji (Compare) są pokazywane jako
   identyfikatory, a nie zaokrąglane jak kwoty.
 - Pola zatwierdzających tłumaczą identyfikatory użytkowników i grup na
@@ -95,7 +89,6 @@ klientów._
   widzi tę samą datę.
 - Dokumenty cofnięte do walidacji pokazują wskaźnik ładowania zamiast
   martwego ekranu, gdy są przygotowywane.
-- Otwieranie dużych faktur dostawców jest zauważalnie szybsze.
 
 ### Księgowanie
 
@@ -132,13 +125,9 @@ klientów._
 - Panel duplikatów dokumentów pokazuje te same rozwiązane kolumny co lista
   główna, a wielowyrazowe wartości filtra dostawcy nie giną po naciśnięciu
   Enter.
-- Licznik otwartych zadań na pasku bocznym liczy zadania w kontekście
-  bieżącej podorganizacji, a nie w kontekście akurat otwartego dokumentu.
 
 ### Zadania
 
-- Kolumny Kanban doładowują się podczas przewijania, więc tablice z wieloma
-  zadaniami wczytują się szybko.
 - E-mail o przypisaniu wychodzi przy przypisaniu zadania — jeden raz. Edycja
   zadania ani oznaczenie go jako wykonane nie wysyłają go ponownie, a data
   „przypisano” pozostaje datą przypisania. E-maile zadań renderują się też
@@ -146,9 +135,8 @@ klientów._
 
 ### Workflow Builder
 
-- Lista workflow zachowuje wyszukiwanie, kolejność sortowania, stronę
-  i rozmiar strony po otwarciu workflow i powrocie, także przez ścieżkę
-  nawigacyjną (breadcrumb). Strona otwiera się domyślnie na zakładce List.
+- Wyszukiwanie, kolejność sortowania i stronicowanie na liście workflow
+  pozostają spójne podczas filtrowania.
 - Przełącznik „run workflow on change” w kreatorze layoutów faktycznie
   steruje uruchomieniem, a jego włączenie wymaga wybrania workflow.
 
@@ -161,28 +149,14 @@ klientów._
   (tooltip), a przy dodawaniu linii pokazywane są nazwy użytkowników
   (a nie surowe id).
 - Pole wyboru System Admin można edytować podczas edycji użytkownika.
-- Strona danych podstawowych (Master Data) nie otwiera się już pusta
-  z powodu wyścigu sortowania, a sortowanie po plakietkach nie zawiesza już
-  strony.
-- Subskrypcję w stanie „cancelling” można wznowić.
-- Strona szczegółów XSLT raportuje błędy wczytywania, zamiast nie pokazywać
-  nic, a ustawienia powiadomień e-mail wykorzystują pełną szerokość strony
-  z działającym panelem logów.
-- Selektor organizacji dla użytkowników pracujących w wielu organizacjach ma
-  poprawny układ wierszy, rozmiary i kolory motywu.
 - Analityka: Core Web Vitals renderują się z rzeczywistych danych
-  pomiarowych, widok usługi logów działa, a nieudane żądanie metryk pokazuje
-  stan błędu, zamiast renderować zera.
+  pomiarowych, a widok usługi logów działa.
 - „Use Default Template” w menedżerze layoutów kopiuje domyślny layout
-  zgodnie z przeznaczeniem; wcześniej kończyło się awarią albo komunikatem,
-  że domyślny nie istnieje.
+  zgodnie z przeznaczeniem.
 - Niestandardowe etykiety pól nie nadpisują już wbudowanych tłumaczeń pól
-  standardowych, a ekrany DocNet (AI Workforce), łącznie z Agent Wizard, są
-  przetłumaczone.
+  standardowych.
 - Oferty w portalu dostawców: wysłanie oferty z wartością REF1 spoza
-  dozwolonej listy jest blokowane, zarządzane jednostki miary pokazują się
-  w tabeli pozycji, a stylowanie zatwierdzeń dotyczy wyłącznie ofert
-  kontraktowych.
+  dozwolonej listy jest blokowane.
 - MediOrder otrzymuje wykrywanie duplikatów dokumentów na swoim ekranie
   walidacji.
 

@@ -542,6 +542,7 @@
         * [Tax in document field](administration-and-setup/workflow/and/compare-with-purchase-order/tax-in-document-field.md)
         * [Any / All Quantity](administration-and-setup/workflow/and/compare-with-purchase-order/any-all-quantity.md)
         * [Compare Total Charges](administration-and-setup/workflow/and/compare-with-purchase-order/compare-total-charges.md)
+        * [Any / All Charges](administration-and-setup/workflow/and/compare-with-purchase-order/any-all-charges.md)
         * [Out of Tolerance Unit Price](administration-and-setup/workflow/and/compare-with-purchase-order/out-of-tolerance-unit-price.md)
         * [Any / All Unit Price is](administration-and-setup/workflow/and/compare-with-purchase-order/any-all-unit-price-is.md)
         * [Item Id on Purchase Order](administration-and-setup/workflow/and/compare-with-purchase-order/item-id-on-purchase-order.md)

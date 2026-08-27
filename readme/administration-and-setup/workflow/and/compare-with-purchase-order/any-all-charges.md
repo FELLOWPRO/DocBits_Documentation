@@ -33,7 +33,7 @@ Satın alma siparişi eşleştirmesi bu karttan önce çalışmalıdır. Belgeni
    * **Açıklama**: Bir ücret yalnızca tek tarafta, belgede veya satın alma siparişinde bulunduğunda ve karşılaştırılacak bir karşılığı olmadığında ne yapılacağı. Seçenek, sürüm 3 cümlesinin sonunda yer alır.
    * **Seçenekler**:
      * **uyumsuzluk olarak ele almak**: iş akışı durur. Varsayılan değer budur.
-     * **Bunu görmezden gel ve bir kibrit çöpü gibi davran.**: iş akışı, ücret uyuşmuş gibi devam eder.
+     * **bunu yoksayıp eşleşme olarak ele almak**: iş akışı, ücret uyuşmuş gibi devam eder.
 
 ## **İşlevsellik:**
 
@@ -50,7 +50,7 @@ Kart aşağıdaki adımları izler.
 Kartı yapılandırmadan önce bilinmesi gereken üç sonuç vardır.
 
 * **içinde ve 0 toleransı tam eşitlik gerektirir.** İki tutarın kuruşuna kadar uyuşması gerekir.
-* **Yalnızca tek tarafta bulunan bir ücret her şeyin önüne geçer.** 4. adım her karşılaştırmadan önce çalıştığı için, **Bunu görmezden gel ve bir kibrit çöpü gibi davran.** seçeneği belgedeki doğru eşleşmiş her ücretin tutar denetimini de atlar. Tutarların doğrulanması gerekiyorsa **uyumsuzluk olarak ele almak** seçeneğinde kalın.
+* **Yalnızca tek tarafta bulunan bir ücret her şeyin önüne geçer.** 4. adım her karşılaştırmadan önce çalıştığı için, **bunu yoksayıp eşleşme olarak ele almak** seçeneği belgedeki doğru eşleşmiş her ücretin tutar denetimini de atlar. Tutarların doğrulanması gerekiyorsa **uyumsuzluk olarak ele almak** seçeneğinde kalın.
 * **uyumsuzluk olarak ele almak, iş akışını sağlanmamış bir koşul olarak değil hata olarak durdurur.** İfadeye rağmen kart eksik veri bildirir; iş akışı günlüğü ve kart testi bunu, sağlanmamış bir koşulda kullanılan turuncu yerine kırmızı gösterir. İş akışı her iki durumda da durur.
 
 ## **Kurulum ve Yapılandırma:**

@@ -12,7 +12,7 @@ De inkoopordermatching moet vóór deze kaart lopen. Heeft het document geen gek
 
 ## **Onderdelen van de kaart:**
 
-1. **Alle/Alle:**
+1. **Elk/Alle:**
    * **Beschrijving**: Hoe de afzonderlijke kostenvergelijkingen worden samengevoegd tot het ene resultaat van de kaart.
    * **Opties**:
      * **Elk**: minstens één kost moet aan de vergelijking voldoen.
@@ -45,7 +45,7 @@ De kaart doorloopt de volgende stappen.
 4. **Een kost aan slechts één zijde beslist de hele kaart.** Zodra één gekoppelde regel kosten aan de ene zijde draagt en geen aan de andere, beslist **Gedrag bij ontbrekende gegevens** het resultaat en wordt er helemaal geen kost vergeleken, ook niet de kosten van correct gekoppelde regels. Operator en tolerantie worden niet geraadpleegd.
 5. **Draagt geen enkele regel aan één van beide zijden kosten**, dan zijn beide zijden het erover eens dat er geen bijkomende kosten zijn. De operator **Buiten** is daarmee niet voldaan, omdat er niets meer dan de tolerantie afwijkt, en de workflow stopt. Elke andere operator beschouwt de overeenstemming als voldaan en de workflow loopt verder. **Gedrag bij ontbrekende gegevens** heeft hier geen effect.
 6. **Anders wordt elke kost vergeleken**, documentbedrag tegen inkooporderbedrag, met de operator en de tolerantie. Een kostenbedrag dat geen getal is stopt de kaart met ontbrekende gegevens.
-7. **De vergelijkingen worden gebundeld en één keer samengevoegd.** Elke kost van elke gekoppelde regel draagt bij aan één resultatenverzameling, die de instelling **Alle/Alle** terugbrengt tot het ene resultaat van de kaart. Er wordt documentbreed gebundeld, niet per regel, zodat **Elk** elke kost op willekeurige plaats in het document betekent. Is het samengevoegde resultaat waar, dan loopt de workflow verder, anders stopt hij met een niet voldane voorwaarde.
+7. **De vergelijkingen worden gebundeld en één keer samengevoegd.** Elke kost van elke gekoppelde regel draagt bij aan één resultatenverzameling, die de instelling **Elk/Alle** terugbrengt tot het ene resultaat van de kaart. Er wordt documentbreed gebundeld, niet per regel, zodat **Elk** elke kost op willekeurige plaats in het document betekent. Is het samengevoegde resultaat waar, dan loopt de workflow verder, anders stopt hij met een niet voldane voorwaarde.
 
 Drie gevolgen zijn belangrijk om te weten vóór het configureren van de kaart.
 
@@ -71,7 +71,7 @@ Draagt de orderbevestiging een vrachtkost en de inkooporder geen, dan geldt de o
 
 ## **Verschillen tussen de versies:**
 
-Versie 3 gebruiken nieuwe kaarten. Versie 2 blijft in bestaande workflows ondersteund. Beide versies vergelijken per kost en voegen de resultaten documentbreed samen met de instelling **Alle/Alle**, maar versie 2 heeft geen gevalsindeling, wat verandert wat er gebeurt zodra kosten niet aan beide zijden aanwezig zijn:
+Versie 3 gebruiken nieuwe kaarten. Versie 2 blijft in bestaande workflows ondersteund. Beide versies vergelijken per kost en voegen de resultaten documentbreed samen met de instelling **Elk/Alle**, maar versie 2 heeft geen gevalsindeling, wat verandert wat er gebeurt zodra kosten niet aan beide zijden aanwezig zijn:
 
 * Versie 2 heeft geen optie **Gedrag bij ontbrekende gegevens**. Haar zin eindigt na het tolerantietype.
 * Versie 2 sorteert de gekoppelde regels niet en herkent daardoor geen kost die slechts aan één zijde bestaat. Ze vergelijkt het aanwezige bedrag tegen de 0,00 van de ontbrekende zijde, en de operator beslist: **binnenin** is niet voldaan en de workflow stopt, **Buiten** is voldaan en de workflow loopt verder. Het kaartlogboek toont de vergelijking tegen 0,00.

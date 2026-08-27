@@ -12,7 +12,7 @@ Le rapprochement de bon de commande doit s'exécuter avant cette carte. Si le do
 
 ## **Composants de la carte :**
 
-1. **N'importe quel/Alle :**
+1. **N'importe quel/Tous :**
    * **Description** : Comment les comparaisons de frais individuelles sont regroupées en l'unique résultat de la carte.
    * **Options** :
      * **N'importe quel** : au moins un frais doit satisfaire la comparaison.
@@ -45,7 +45,7 @@ La carte déroule les étapes suivantes.
 4. **Un frais présent d'un seul côté décide de toute la carte.** Dès qu'une ligne appariée porte des frais d'un côté et aucun de l'autre, **Comportement lié aux données manquantes** décide du résultat et aucun frais n'est comparé du tout, y compris les frais des lignes correctement appariées. L'opérateur et la tolérance ne sont pas consultés.
 5. **Si aucune ligne ne porte de frais d'aucun des deux côtés**, les deux côtés s'accordent sur l'absence de frais annexes. L'opérateur **A l'extérieur** n'est donc pas satisfait, puisque rien ne diffère au-delà de la tolérance, et le workflow s'arrête. Tout autre opérateur considère l'accord comme satisfait et le workflow continue. **Comportement lié aux données manquantes** n'a aucun effet ici.
 6. **Sinon chaque frais est comparé**, montant du document contre montant du bon de commande, avec l'opérateur et la tolérance. Un montant de frais qui n'est pas un nombre arrête la carte avec des données manquantes.
-7. **Les comparaisons sont regroupées et fusionnées une seule fois.** Chaque frais de chaque ligne appariée contribue à un unique ensemble de résultats, que le réglage **N'importe quel/Alle** réduit à l'unique résultat de la carte. Le regroupement est à l'échelle du document, non par ligne, de sorte que **N'importe quel** signifie n'importe quel frais à n'importe quel endroit du document. Si le résultat fusionné est vrai, le workflow continue, sinon il s'arrête sur une condition non satisfaite.
+7. **Les comparaisons sont regroupées et fusionnées une seule fois.** Chaque frais de chaque ligne appariée contribue à un unique ensemble de résultats, que le réglage **N'importe quel/Tous** réduit à l'unique résultat de la carte. Le regroupement est à l'échelle du document, non par ligne, de sorte que **N'importe quel** signifie n'importe quel frais à n'importe quel endroit du document. Si le résultat fusionné est vrai, le workflow continue, sinon il s'arrête sur une condition non satisfaite.
 
 Trois conséquences méritent d'être connues avant de configurer la carte.
 
@@ -71,7 +71,7 @@ Si la confirmation de commande porte des frais de transport et le bon de command
 
 ## **Différences entre les versions :**
 
-La version 3 est celle des nouvelles cartes. La version 2 reste prise en charge dans les workflows existants. Les deux versions comparent frais par frais et fusionnent les résultats à l'échelle du document avec le réglage **N'importe quel/Alle**, mais la version 2 n'a pas de classement par cas, ce qui change ce qui se produit dès que des frais ne sont pas présents des deux côtés :
+La version 3 est celle des nouvelles cartes. La version 2 reste prise en charge dans les workflows existants. Les deux versions comparent frais par frais et fusionnent les résultats à l'échelle du document avec le réglage **N'importe quel/Tous**, mais la version 2 n'a pas de classement par cas, ce qui change ce qui se produit dès que des frais ne sont pas présents des deux côtés :
 
 * La version 2 n'a pas d'option **Comportement lié aux données manquantes**. Sa phrase se termine après le type de tolérance.
 * La version 2 ne trie pas les lignes appariées et ne reconnaît donc pas un frais qui n'existe que d'un seul côté. Elle compare le montant présent au 0,00 retenu pour le côté manquant, et l'opérateur décide : **dans** n'est pas satisfait et le workflow s'arrête, **A l'extérieur** est satisfait et le workflow continue. Le journal de la carte montre la comparaison contre 0,00.

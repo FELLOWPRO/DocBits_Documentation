@@ -29,7 +29,7 @@ Dopasowanie zamówienia zakupu musi zostać wykonane przed tą kartą. Jeśli do
    * **Opcje**:
      * **Procent**: procent opłaty zamówienia zakupu.
      * **Wartość**: kwota stała.
-5. **Brak zachowania danych (tylko wersja 3):**
+5. **Zachowanie przy brakujących danych (tylko wersja 3):**
    * **Opis**: Co zrobić, gdy opłata istnieje tylko z jednej strony, w dokumencie albo w zamówieniu zakupu, tak że nie ma odpowiednika do porównania. Opcja znajduje się na końcu zdania wersji 3.
    * **Opcje**:
      * **traktować jako niedopasowanie**: przepływ pracy zostaje zatrzymany. To ustawienie domyślne.
@@ -42,8 +42,8 @@ Karta przechodzi przez następujące kroki.
 1. **Wymaga dopasowanego zamówienia zakupu.** Bez dopasowanego zamówienia zakupu karta zatrzymuje się natychmiast i zgłasza brakujące dane.
 2. **Odczytuje tolerancję** z **Ilość tolerancji** i **Typ tolerancji** na karcie.
 3. **Wersja 3 przypisuje każdą dopasowaną pozycję zamówienia zakupu** do jednej z czterech sytuacji, pytając wyłącznie, czy dana strona ma jakiekolwiek opłaty: opłaty po obu stronach, brak opłat po obu stronach, opłaty tylko w dokumencie albo opłaty tylko w zamówieniu zakupu. Pozycja, której nie da się powiązać z danymi zamówienia zakupu w dokumencie, jest błędem danych i karta zatrzymuje się.
-4. **Opłata obecna tylko po jednej stronie decyduje o całej karcie.** Gdy jedna dopasowana pozycja ma opłaty po jednej stronie i żadnych po drugiej, **Brak zachowania danych** decyduje o wyniku i żadna opłata nie jest porównywana, również opłaty pozycji poprawnie sparowanych. Operator i tolerancja nie są brane pod uwagę.
-5. **Jeśli żadna pozycja nie ma opłat po żadnej ze stron**, obie strony są zgodne, że nie ma opłat dodatkowych. Operator **Poza** nie jest wtedy spełniony, ponieważ nic nie odbiega poza tolerancję, i przepływ pracy zostaje zatrzymany. Każdy inny operator uznaje zgodność za spełnioną i przepływ pracy jest kontynuowany. **Brak zachowania danych** nie ma tu żadnego wpływu.
+4. **Opłata obecna tylko po jednej stronie decyduje o całej karcie.** Gdy jedna dopasowana pozycja ma opłaty po jednej stronie i żadnych po drugiej, **Zachowanie przy brakujących danych** decyduje o wyniku i żadna opłata nie jest porównywana, również opłaty pozycji poprawnie sparowanych. Operator i tolerancja nie są brane pod uwagę.
+5. **Jeśli żadna pozycja nie ma opłat po żadnej ze stron**, obie strony są zgodne, że nie ma opłat dodatkowych. Operator **Poza** nie jest wtedy spełniony, ponieważ nic nie odbiega poza tolerancję, i przepływ pracy zostaje zatrzymany. Każdy inny operator uznaje zgodność za spełnioną i przepływ pracy jest kontynuowany. **Zachowanie przy brakujących danych** nie ma tu żadnego wpływu.
 6. **W przeciwnym razie każda opłata jest porównywana**, kwota dokumentu z kwotą zamówienia zakupu, przy użyciu operatora i tolerancji. Kwota opłaty, która nie jest liczbą, zatrzymuje kartę z brakującymi danymi.
 7. **Porównania są zbierane i łączone jednorazowo.** Każda opłata każdej dopasowanej pozycji wchodzi do jednego zbioru wyników, który ustawienie **Dowolny/Wszystkie** redukuje do jednego wyniku karty. Zbieranie odbywa się w skali dokumentu, nie na pozycję, dlatego **Każdy** oznacza dowolną opłatę w dowolnym miejscu dokumentu. Jeśli połączony wynik jest prawdziwy, przepływ pracy jest kontynuowany, w przeciwnym razie zatrzymuje się na niespełnionym warunku.
 
@@ -57,7 +57,7 @@ Przed skonfigurowaniem karty warto znać trzy konsekwencje.
 
 Dodaj kartę jako warunek And po dopasowaniu zamówienia zakupu. Wybierz, czy każda opłata czy dowolna opłata musi spełnić porównanie, wybierz operator **w** albo **Poza** i wprowadź ilość oraz typ tolerancji. W wersji 3 wybierz, co ma się stać, gdy opłaty występują tylko po jednej stronie.
 
-Aby wypróbować konfigurację bez czekania na dokument, otwórz menu karty w Workflow Builder, wybierz **Karta testowa**, wybierz dokument, a następnie **Test na dokumencie**. Dziennik karty wymienia każdą porównaną opłatę z obiema kwotami, operatorem i użytą tolerancją, a także zapisuje, która wartość **Brak zachowania danych** zdecydowała o wyniku, gdy opłata była obecna tylko po jednej stronie.
+Aby wypróbować konfigurację bez czekania na dokument, otwórz menu karty w Workflow Builder, wybierz **Karta testowa**, wybierz dokument, a następnie **Test na dokumencie**. Dziennik karty wymienia każdą porównaną opłatę z obiema kwotami, operatorem i użytą tolerancją, a także zapisuje, która wartość **Zachowanie przy brakujących danych** zdecydowała o wyniku, gdy opłata była obecna tylko po jednej stronie.
 
 ## **Przykładowy scenariusz:**
 
@@ -73,7 +73,7 @@ Jeśli potwierdzenie zamówienia zawiera opłatę transportową, a zamówienie z
 
 Wersję 3 stosują nowe karty. Wersja 2 pozostaje wspierana w istniejących przepływach pracy. Obie wersje porównują opłatę po opłacie i łączą wyniki w skali dokumentu ustawieniem **Dowolny/Wszystkie**, ale wersja 2 nie ma klasyfikacji przypadków, co zmienia to, co się dzieje, gdy opłaty nie są obecne po obu stronach:
 
-* Wersja 2 nie ma opcji **Brak zachowania danych**. Jej zdanie kończy się po typie tolerancji.
+* Wersja 2 nie ma opcji **Zachowanie przy brakujących danych**. Jej zdanie kończy się po typie tolerancji.
 * Wersja 2 nie klasyfikuje dopasowanych pozycji i dlatego nie rozpoznaje opłaty istniejącej tylko po jednej stronie. Porównuje obecną kwotę z 0,00 przyjętym dla brakującej strony, a decyduje operator: **w** nie jest spełniony i przepływ pracy zatrzymuje się, **Poza** jest spełniony i przepływ pracy jest kontynuowany. Dziennik karty pokazuje porównanie z 0,00.
 * Jeśli żadna ze stron nie zawiera opłat, wersja 2 nie ma czego porównywać i zgłasza brakujące dane, zamiast uznać brak po obu stronach za zgodność.
 

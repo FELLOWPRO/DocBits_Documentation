@@ -12,7 +12,7 @@ La conciliación de la orden de compra debe ejecutarse antes de esta tarjeta. Si
 
 ## **Componentes de la tarjeta:**
 
-1. **Cualquier/Alle:**
+1. **Cualquiera/Todos:**
    * **Descripción**: Cómo se agrupan las comparaciones de cargos individuales en el único resultado de la tarjeta.
    * **Opciones**:
      * **Cualquier**: al menos un cargo debe cumplir la comparación.
@@ -45,7 +45,7 @@ La tarjeta recorre los siguientes pasos.
 4. **Un cargo presente en un solo lado decide toda la tarjeta.** En cuanto una línea emparejada lleva cargos en un lado y ninguno en el otro, **Comportamiento de los datos faltantes** decide el resultado y no se compara ningún cargo en absoluto, tampoco los cargos de las líneas correctamente emparejadas. El operador y la tolerancia no se consultan.
 5. **Si ninguna línea lleva cargos en ninguno de los dos lados**, ambos lados coinciden en que no hay cargos adicionales. El operador **En el exterior** no queda cumplido por ello, porque nada difiere más allá de la tolerancia, y el flujo de trabajo se detiene. Cualquier otro operador considera la coincidencia cumplida y el flujo de trabajo continúa. **Comportamiento de los datos faltantes** no tiene efecto aquí.
 6. **En caso contrario se compara cada cargo**, importe del documento contra importe de la orden de compra, con el operador y la tolerancia. Un importe de cargo que no sea un número detiene la tarjeta con datos faltantes.
-7. **Las comparaciones se agrupan y se combinan una sola vez.** Cada cargo de cada línea emparejada contribuye a un único conjunto de resultados, que el ajuste **Cualquier/Alle** reduce al único resultado de la tarjeta. La agrupación es a nivel de documento, no por línea, de modo que **Cualquier** significa cualquier cargo en cualquier punto del documento. Si el resultado combinado es verdadero, el flujo de trabajo continúa; si no, se detiene con una condición no cumplida.
+7. **Las comparaciones se agrupan y se combinan una sola vez.** Cada cargo de cada línea emparejada contribuye a un único conjunto de resultados, que el ajuste **Cualquiera/Todos** reduce al único resultado de la tarjeta. La agrupación es a nivel de documento, no por línea, de modo que **Cualquier** significa cualquier cargo en cualquier punto del documento. Si el resultado combinado es verdadero, el flujo de trabajo continúa; si no, se detiene con una condición no cumplida.
 
 Conviene conocer tres consecuencias antes de configurar la tarjeta.
 
@@ -71,7 +71,7 @@ Si la confirmación de pedido lleva un cargo de transporte y la orden de compra 
 
 ## **Diferencias entre versiones:**
 
-La versión 3 es la que usan las tarjetas nuevas. La versión 2 sigue siendo compatible en los flujos de trabajo existentes. Ambas versiones comparan cargo por cargo y combinan los resultados a nivel de documento con el ajuste **Cualquier/Alle**, pero la versión 2 no tiene clasificación por casos, lo que cambia lo que ocurre en cuanto los cargos no están presentes en ambos lados:
+La versión 3 es la que usan las tarjetas nuevas. La versión 2 sigue siendo compatible en los flujos de trabajo existentes. Ambas versiones comparan cargo por cargo y combinan los resultados a nivel de documento con el ajuste **Cualquiera/Todos**, pero la versión 2 no tiene clasificación por casos, lo que cambia lo que ocurre en cuanto los cargos no están presentes en ambos lados:
 
 * La versión 2 no tiene la opción **Comportamiento de los datos faltantes**. Su frase termina después del tipo de tolerancia.
 * La versión 2 no clasifica las líneas emparejadas y por tanto no reconoce un cargo que existe solo en un lado. Compara el importe presente contra el 0,00 retenido para el lado que falta, y el operador decide: **dentro** no se cumple y el flujo de trabajo se detiene, **En el exterior** se cumple y el flujo de trabajo continúa. El registro de la tarjeta muestra la comparación contra 0,00.

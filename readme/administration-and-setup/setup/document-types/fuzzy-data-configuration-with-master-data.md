@@ -114,3 +114,70 @@ Dopo aver configurato i campi dei Dati Fuzzy, **assicurati di aggiungerli al lay
 {% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
 [layout-manager](../../settings/global-settings/document-types/layout-manager/)
 {% endcontent-ref %}
+
+## **Come DocBits sceglie un fornitore**
+
+Quando arriva un documento, DocBits cerca il fornitore nei dati principali. Tre impostazioni determinano il risultato. Questa sezione le spiega passo per passo, con esempi.
+
+### **Passo 1 — Quali campi vengono usati per la ricerca**
+
+DocBits usa un campo per la ricerca solo quando entrambi i punti sono veri:
+
+* il campo è contrassegnato come **Ricercabile (Searchable)** o **Auto Trigger** nella configurazione di ricerca, e
+* il campo ha un valore sul documento.
+
+Non importa come il valore sia arrivato nel campo. Un campo addestrato, un campo compilato dall'IA e un valore digitato da un utente vengono trattati allo stesso modo.
+
+{% hint style="warning" %}
+**Ricercabile fa due cose.** Mostra l'icona blu di ricerca nella schermata di validazione **e** aggiunge il campo alla ricerca automatica del fornitore. Un campo che deve essere cercato solo a mano resta non contrassegnato.
+{% endhint %}
+
+### **Passo 2 — Una ricerca, non una ricerca per campo**
+
+DocBits **non** cerca ogni campo separatamente. Costruisce **una** ricerca su tutti i campi usati. **Corrispondenza totale (Match All)** decide come vengono combinati:
+
+* **Corrispondenza totale disattivata** (predefinito) → "trova ogni fornitore che corrisponde alla partita IVA **O** al nome del fornitore". Questo dà un elenco **più lungo**.
+* **Corrispondenza totale attivata** → "trova ogni fornitore che corrisponde alla partita IVA **E** al nome del fornitore". Questo dà un elenco **più corto**.
+
+Tenga presente che gli operatori **Smart** e **Contains** cercano una parte del testo. Il nome "Meier" trova anche "Meier Bau GmbH" e "Meier & Sons Ltd". Un nome di fornitore trova quindi spesso più fornitori.
+
+### **Passo 3 — Cosa succede quando l'elenco contiene più fornitori**
+
+Il **Gestore dei conflitti (Conflict Handler)** decide:
+
+* **Best Score** → prende il fornitore che corrisponde al maggior numero di campi. Non lascia mai il fornitore vuoto.
+* **Return None** → lascia il fornitore vuoto, così un utente lo sceglie.
+* **Return First** → prende il primo fornitore dell'elenco.
+
+### **Esempi**
+
+In tutti gli esempi il documento ha una partita IVA e un nome di fornitore, ed entrambi i campi sono **Ricercabili**.
+
+<table><thead><tr><th width="150">La partita IVA trova</th><th width="150">Il nome trova</th><th width="150">Corrispondenza totale disattivata + Return None</th><th width="150">Corrispondenza totale attivata + Return None</th><th width="150">Corrispondenza totale disattivata + Best Score</th></tr></thead><tbody>
+<tr><td>solo A</td><td>A e B</td><td>vuoto</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A e B</td><td>solo B</td><td>vuoto</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B e C</td><td>C, D e E</td><td>vuoto</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B e C</td><td>B, C e D</td><td>vuoto</td><td>vuoto</td><td>B o C, non affidabile</td></tr>
+<tr><td>solo A</td><td>niente</td><td><strong>A</strong></td><td>vuoto</td><td><strong>A</strong></td></tr>
+</tbody></table>
+
+Come leggere la tabella:
+
+* **Le righe da 1 a 3** sono il caso normale. Un campo è univoco, l'altro no. Con **Corrispondenza totale disattivata** l'elenco contiene più fornitori e **Return None** lascia il campo vuoto. **Corrispondenza totale attivata** conserva solo il fornitore che corrisponde a entrambi i campi e lo trova.
+* **La riga 4** non ha alcun fornitore univoco. Lasciare il campo vuoto è corretto. **Best Score** ne sceglie comunque uno, che può essere quello sbagliato.
+* **La riga 5** è il rischio di **Corrispondenza totale attivata**. Vedere l'avviso qui sotto.
+
+{% hint style="warning" %}
+**La corrispondenza totale può perdere un fornitore.** Con **Corrispondenza totale attivata** ogni campo usato deve corrispondere. Se un campo contiene un valore che non esiste nei dati principali — un errore di battitura, un vecchio nome dell'azienda, un valore letto dalla pagina — l'intera ricerca non restituisce nulla e non viene trovato alcun fornitore, anche se la sola partita IVA avrebbe trovato quello giusto.
+{% endhint %}
+
+### **Un fornitore veniva riconosciuto prima e ora non viene più riconosciuto**
+
+Quasi sempre un campo in più fornisce ora un valore. Controlli in questo ordine:
+
+1. Apra il documento. Quale campo del gruppo di ricerca contiene ora un valore che prima era vuoto?
+2. Apra la configurazione di ricerca. Quel campo è contrassegnato come **Ricercabile** o **Auto Trigger**? Se sì, ora partecipa alla ricerca e allunga l'elenco dei risultati.
+3. Scelga una delle tre soluzioni:
+   * **Il campo non deve partecipare alla ricerca** → tolga **Ricercabile** e **Auto Trigger** da quel campo. Il campo mantiene il suo valore sul documento e resta visibile all'utente. È la modifica più piccola.
+   * **Il campo deve partecipare** → attivi **Corrispondenza totale**, ma legga prima l'avviso qui sopra.
+   * **Vuole un fornitore in ogni caso** → imposti il **Gestore dei conflitti** su **Best Score**. Accetti che possa scegliere il fornitore sbagliato invece di lasciare il campo vuoto.

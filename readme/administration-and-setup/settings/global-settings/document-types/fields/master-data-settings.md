@@ -49,9 +49,9 @@ Pour créer une nouvelle configuration de consultation pour les données de base
    * **Recherche du nom du jeu de données**\
      Sélectionnez le jeu de données qui doit être utilisé pour cette configuration de consultation.
    * **Gestionnaire de conflit**\
-     Définit comment résoudre les conflits lorsque plusieurs correspondances sont trouvées :
-     * **Best Score** – Utilise l'entrée avec le score de correspondance le plus élevé.
-     * **Return None** – Laisse le champ vide en cas de conflit.
+     Un conflit signifie que la recherche a trouvé plus d'un enregistrement. Ce réglage décide de ce qui se passe alors :
+     * **Best Score** – Utilise l'entrée qui correspond au plus grand nombre de champs. Ne laisse jamais le champ vide et peut donc choisir le mauvais enregistrement.
+     * **Return None** – Laisse le champ vide, pour qu'un utilisateur choisisse le bon enregistrement.
      * **Return First** – Utilise la première valeur correspondante.
    *   **Type de contexte**
 
@@ -62,7 +62,7 @@ Pour créer une nouvelle configuration de consultation pour les données de base
        La consultation est utilisée lors de la validation des champs. Configurez ce qui suit :
 
        * **Tout faire correspondre**\
-         Lorsqu'elle est activée, tous les champs de la configuration de consultation doivent correspondre pendant la recherche par défaut.
+         Lorsqu'elle est activée, un enregistrement doit correspondre à **tous** les champs utilisés. Lorsqu'elle est désactivée (par défaut), la correspondance d'**un seul** champ suffit, ce qui donne une liste plus longue.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
 
@@ -74,9 +74,17 @@ Pour créer une nouvelle configuration de consultation pour les données de base
        * **Détail du contexte**\
          Sélectionnez le tableau spécifique auquel la consultation doit être appliquée.
        * **Tout faire correspondre**\
-         Lorsqu'elle est activée, tous les champs de la configuration de consultation doivent correspondre pendant la recherche par défaut.
+         Lorsqu'elle est activée, un enregistrement doit correspondre à **tous** les champs utilisés. Lorsqu'elle est désactivée (par défaut), la correspondance d'**un seul** champ suffit, ce qui donne une liste plus longue.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
+{% hint style="info" %}
+**Tout faire correspondre** et le **Gestionnaire de conflit** agissent ensemble et déterminent si un fournisseur est reconnu automatiquement. La page de configuration les explique avec des exemples :
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Cliquez sur **Sauvegarder** pour créer la configuration de consultation.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
@@ -124,7 +132,7 @@ Pour ajouter un nouveau champ à votre configuration de consultation :
      Ce champ est utilisé pour valider l’exactitude de la valeur dans le **Champ de validation** en s’assurant qu’elle correspond à l’entrée parente correspondante dans le jeu de données de consultation.
    * **Opérateur de recherche** (facultatif)\
      Choisissez comment **DocBits** recherche les correspondances dans le jeu de données :
-     * **Smart** – _(par défaut)_ Supprime les espaces de l’entrée et recherche une correspondance.
+     * **Smart** – _(par défaut)_ Ignore les espaces et la ponctuation et recherche le terme **n'importe où** dans le champ. « Meier » trouve donc aussi « Meier Bau GmbH ».
      * **Contient** – Recherche les entrées qui contiennent le terme exact n’importe où dans le champ.
      * **se termine par** – Recherche les entrées qui se terminent par le terme spécifié.
      * **exact** – Recherche une correspondance exacte de la valeur entière.
@@ -132,7 +140,7 @@ Pour ajouter un nouveau champ à votre configuration de consultation :
    * **Déclenchement automatique** (facultatif)\
      Lorsqu’il est activé, DocBits remplira automatiquement tous les champs de la configuration de consultation dès que ce champ est renseigné.
    *   **Consultable** (facultatif)\
-       Lorsqu’il est activé, les utilisateurs peuvent rechercher manuellement des données de base lors de la validation des champs.
+       Lorsqu’il est activé, les utilisateurs peuvent rechercher manuellement des données de base lors de la validation des champs **et** le champ participe à la recherche automatique. Laissez-le décoché si le champ ne doit pas influencer le résultat automatique.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_12.png)
 

@@ -49,9 +49,9 @@ Para criar uma nova configuração de pesquisa para dados mestre:
    * **Nome do conjunto de dados de pesquisa**\
      Selecione o conjunto de dados que deve ser usado para esta configuração de pesquisa.
    * **Manipulador de conflitos**\
-     Define como resolver conflitos quando múltiplas correspondências forem encontradas:
-     * **Best Score** – Usa a entrada com a maior pontuação de correspondência.
-     * **Return None** – Deixa o campo vazio se houver conflito.
+     Um conflito significa que a pesquisa encontrou mais de um registo. Esta definição decide o que acontece nesse caso:
+     * **Best Score** – Usa a entrada que corresponde ao maior número de campos. Nunca deixa o campo vazio, por isso pode escolher o registo errado.
+     * **Return None** – Deixa o campo vazio, para que um utilizador escolha o registo correto.
      * **Return First** – Usa o primeiro valor correspondente.
    *   **Tipo de contexto**
 
@@ -62,7 +62,7 @@ Para criar uma nova configuração de pesquisa para dados mestre:
        A pesquisa é usada na validação de campos. Configure o seguinte:
 
        * **Combinar tudo**\
-         Quando habilitado, todos os campos na configuração de pesquisa devem corresponder durante a pesquisa por padrão.
+         Quando habilitado, um registo tem de corresponder a **todos** os campos usados. Quando desativado (predefinição), basta corresponder **um** campo, o que devolve uma lista mais longa.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
 
@@ -74,9 +74,17 @@ Para criar uma nova configuração de pesquisa para dados mestre:
        * **Detalhe do contexto**\
          Selecione a tabela específica à qual a pesquisa deve ser aplicada.
        * **Combinar tudo**\
-         Quando habilitado, todos os campos na configuração de pesquisa devem corresponder durante a pesquisa por padrão.
+         Quando habilitado, um registo tem de corresponder a **todos** os campos usados. Quando desativado (predefinição), basta corresponder **um** campo, o que devolve uma lista mais longa.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
+{% hint style="info" %}
+**Combinar tudo** e o **Manipulador de conflitos** funcionam em conjunto e decidem se um fornecedor é reconhecido automaticamente. A página de configuração explica ambos com exemplos:
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Clique em **Salvar** para criar a configuração de pesquisa.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
@@ -124,7 +132,7 @@ Para adicionar um novo Campo à sua configuração de pesquisa:
      Este Campo é usado para validar a correção do valor no **Campo de Validação**, garantindo que corresponda à entrada pai correspondente no conjunto de dados de pesquisa.
    * **Operador de pesquisa** (opcional)\
      Escolha como o **DocBits** pesquisa correspondências no conjunto de dados de pesquisa:
-     * **Smart** – _(Default)_ Remove espaços em branco da entrada e procura uma correspondência.
+     * **Smart** – _(Default)_ Ignora espaços e pontuação e procura o termo em **qualquer lugar** do campo. Por isso "Meier" também encontra "Meier Bau GmbH".
      * **Contém** – Procura entradas que contenham o termo exato em qualquer lugar do Campo.
      * **Termina com** – Procura entradas que terminem com o termo especificado.
      * **exato** – Procura uma correspondência exata de todo o valor.
@@ -132,7 +140,7 @@ Para adicionar um novo Campo à sua configuração de pesquisa:
    * **Gatilho automático** (opcional)\
      Quando habilitado, o DocBits preencherá automaticamente todos os campos na configuração de pesquisa assim que este Campo for preenchido.
    *   **Pesquisável** (opcional)\
-       Quando habilitado, os usuários podem pesquisar manualmente dados mestres durante a validação de campos.
+       Quando habilitado, os usuários podem pesquisar manualmente dados mestres durante a validação de campos **e** o campo participa na pesquisa automática. Deixe desmarcado se o campo não deve influenciar o resultado automático.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_12.png)
 

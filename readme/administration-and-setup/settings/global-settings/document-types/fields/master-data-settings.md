@@ -49,9 +49,9 @@ Um eine neue Lookup-Konfiguration für Stammdaten zu erstellen:
    * **Lookup Dataset Name**\
      Wählen Sie das Dataset aus, das für diese Lookup-Konfiguration verwendet werden soll.
    * **Konfliktverarbeitung**\
-     Definiert, wie Konflikte gelöst werden, wenn mehrere Treffer gefunden werden:
-     * **Best Score** – Verwendet den Eintrag mit der höchsten Übereinstimmungsbewertung.
-     * **Return None** – Lässt das Feld leer, wenn es einen Konflikt gibt.
+     Ein Konflikt bedeutet, dass die Suche mehr als einen Datensatz gefunden hat. Diese Einstellung legt fest, was dann passiert:
+     * **Best Score** – Verwendet den Eintrag, der zu den meisten Feldern passt. Lässt das Feld nie leer und kann deshalb den falschen Datensatz wählen.
+     * **Return None** – Lässt das Feld leer, damit ein Benutzer den richtigen Datensatz auswählt.
      * **Return First** – Verwendet den ersten gefundenen Wert.
    *   **Kontext Typ**
 
@@ -62,7 +62,7 @@ Um eine neue Lookup-Konfiguration für Stammdaten zu erstellen:
        Der Lookup wird in der Feldvalidierung verwendet. Konfigurieren Sie Folgendes:
 
        * **Alle abgleichen**\
-         Wenn aktiviert, müssen standardmäßig alle Felder in der Lookup-Konfiguration während der Suche übereinstimmen.
+         Wenn aktiviert, muss ein Datensatz zu **allen** verwendeten Feldern passen. Wenn deaktiviert (Standard), genügt **ein** passendes Feld, was eine längere Trefferliste ergibt.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
 
@@ -74,9 +74,17 @@ Um eine neue Lookup-Konfiguration für Stammdaten zu erstellen:
        * **Kontextdetails**\
          Wählen Sie die spezifische Tabelle, auf die der Lookup angewendet werden soll.
        * **Alle abgleichen**\
-         Wenn aktiviert, müssen standardmäßig alle Felder in der Lookup-Konfiguration während der Suche übereinstimmen.
+         Wenn aktiviert, muss ein Datensatz zu **allen** verwendeten Feldern passen. Wenn deaktiviert (Standard), genügt **ein** passendes Feld, was eine längere Trefferliste ergibt.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
+{% hint style="info" %}
+**Alle abgleichen** und **Konfliktverarbeitung** wirken zusammen und entscheiden, ob ein Lieferant automatisch erkannt wird. Die Einrichtungsseite erklärt beide mit Beispielen:
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Klicken Sie auf **Speichern**, um die Lookup-Konfiguration zu erstellen.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
@@ -124,7 +132,7 @@ So fügen Sie Ihrer Lookup-Konfiguration ein neues Feld hinzu:
      Dieses Feld wird verwendet, um die Korrektheit des Werts im **Validierungsfeld** zu validieren, indem sichergestellt wird, dass er dem entsprechenden übergeordneten Eintrag im Lookup-Dataset entspricht.
    * **Suchoperator** (optional)\
      Wählen Sie, wie **DocBits** nach Treffern im Lookup-Dataset sucht:
-     * **Smart** – _(Default)_ Entfernt Leerzeichen aus der Eingabe und sucht nach einem Treffer.
+     * **Smart** – _(Default)_ Ignoriert Leerzeichen und Satzzeichen und sucht den Begriff **irgendwo** im Feld. "Meier" findet deshalb auch "Meier Bau GmbH".
      * **Enthält** – Sucht nach Einträgen, die den exakten Begriff irgendwo im Feld enthalten.
      * **Endet mit** – Sucht nach Einträgen, die mit dem angegebenen Begriff enden.
      * **genau** – Sucht nach einer exakten Übereinstimmung des gesamten Werts.
@@ -132,7 +140,7 @@ So fügen Sie Ihrer Lookup-Konfiguration ein neues Feld hinzu:
    * **Auto-Trigger** (optional)\
      Wenn aktiviert, füllt DocBits automatisch alle Felder in der Lookup-Konfiguration aus, sobald dieses Feld ausgefüllt ist.
    *   **Suchbar** (optional)\
-       Wenn aktiviert, können Benutzer während der Feldvalidierung manuell nach Stammdaten suchen.
+       Wenn aktiviert, können Benutzer während der Feldvalidierung manuell nach Stammdaten suchen **und** das Feld nimmt an der automatischen Suche teil. Lassen Sie es deaktiviert, wenn das Feld das automatische Ergebnis nicht beeinflussen soll.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_12.png)
 

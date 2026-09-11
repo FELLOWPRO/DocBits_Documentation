@@ -49,9 +49,9 @@ Aby utworzyć nową konfigurację wyszukiwania dla danych głównych:
    * **Wyszukaj nazwę zestawu danych**\
      Wybierz zestaw danych, który ma być użyty dla tej konfiguracji wyszukiwania.
    * **Osoba rozwiązująca konflikty**\
-     Określa, jak rozwiązywać konflikty, gdy znaleziono wiele dopasowań:
-     * **Best Score** – Używa wpisu z najwyższym wynikiem dopasowania.
-     * **Return None** – Pozostawia pole puste w przypadku konfliktu.
+     Konflikt oznacza, że wyszukiwanie znalazło więcej niż jeden rekord. To ustawienie decyduje, co się wtedy dzieje:
+     * **Best Score** – Używa wpisu pasującego do największej liczby pól. Nigdy nie zostawia pustego pola, więc może wybrać niewłaściwy rekord.
+     * **Return None** – Pozostawia pole puste, aby użytkownik wybrał właściwy rekord.
      * **Return First** – Używa pierwszej dopasowanej wartości.
    *   **Typ kontekstu**
 
@@ -62,7 +62,7 @@ Aby utworzyć nową konfigurację wyszukiwania dla danych głównych:
        Wyszukiwanie jest używane w walidacji pól. Skonfiguruj następujące:
 
        * **Dopasuj wszystko**\
-         Po włączeniu wszystkie pola w konfiguracji wyszukiwania muszą domyślnie pasować podczas wyszukiwania.
+         Po włączeniu rekord musi pasować do **wszystkich** użytych pól. Po wyłączeniu (domyślnie) wystarczy **jedno** pasujące pole, co daje dłuższą listę.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
 
@@ -74,9 +74,17 @@ Aby utworzyć nową konfigurację wyszukiwania dla danych głównych:
        * **Szczegóły kontekstu**\
          Wybierz konkretną tabelę, do której ma być zastosowane wyszukiwanie.
        * **Dopasuj wszystko**\
-         Po włączeniu wszystkie pola w konfiguracji wyszukiwania muszą domyślnie pasować podczas wyszukiwania.
+         Po włączeniu rekord musi pasować do **wszystkich** użytych pól. Po wyłączeniu (domyślnie) wystarczy **jedno** pasujące pole, co daje dłuższą listę.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
+{% hint style="info" %}
+**Dopasuj wszystko** i **Osoba rozwiązująca konflikty** działają razem i decydują, czy dostawca zostanie rozpoznany automatycznie. Strona konfiguracji wyjaśnia oba ustawienia na przykładach:
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Kliknij **Ratować**, aby utworzyć konfigurację wyszukiwania.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
@@ -124,7 +132,7 @@ Aby dodać nowe pole do konfiguracji wyszukiwania:
      To pole służy do weryfikacji poprawności wartości w **Pole walidacji**, zapewniając zgodność z odpowiadającym wpisem nadrzędnym w zestawie danych wyszukiwania.
    * **Operator wyszukiwania** (opcjonalne)\
      Wybierz, jak **DocBits** wyszukuje dopasowania w zestawie danych wyszukiwania:
-     * **Smart** – _(Domyślne)_ Usuwa spacje z wejścia i szuka dopasowania.
+     * **Smart** – _(Domyślne)_ Pomija spacje i znaki interpunkcyjne i szuka terminu **w dowolnym miejscu** pola. Dlatego „Meier" znajduje też „Meier Bau GmbH".
      * **Zawiera** – Wyszukuje wpisy, które zawierają dokładny termin w dowolnym miejscu pola.
      * **Kończy się na** – Wyszukuje wpisy, które kończą się określonym terminem.
      * **dokładny** – Wyszukuje dokładne dopasowanie całej wartości.
@@ -132,7 +140,7 @@ Aby dodać nowe pole do konfiguracji wyszukiwania:
    * **Automatyczne wyzwalanie** (opcjonalne)\
      Po włączeniu DocBits automatycznie wypełni wszystkie pola w konfiguracji wyszukiwania, gdy tylko to pole zostanie uzupełnione.
    *   **Przeszukiwalny** (opcjonalne)\
-       Po włączeniu użytkownicy mogą ręcznie wyszukiwać dane główne podczas walidacji pól.
+       Po włączeniu użytkownicy mogą ręcznie wyszukiwać dane główne podczas walidacji pól **oraz** pole bierze udział w wyszukiwaniu automatycznym. Pozostaw niezaznaczone, jeśli pole nie ma wpływać na wynik automatyczny.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_12.png)
 

@@ -49,9 +49,9 @@ Om een nieuwe opzoekconfiguratie voor stamgegevens te maken:
    * **Naam van opzoekdataset**\
      Selecteer de dataset die voor deze opzoekconfiguratie moet worden gebruikt.
    * **Conflictbehandelaar**\
-     Definieert hoe conflicten worden opgelost wanneer meerdere overeenkomsten worden gevonden:
-     * **Best Score** – Gebruikt de vermelding met de hoogste overeenkomsscore.
-     * **Return None** – Laat het veld leeg als er een conflict is.
+     Een conflict betekent dat de zoekopdracht meer dan één record heeft gevonden. Deze instelling bepaalt wat er dan gebeurt:
+     * **Best Score** – Gebruikt de vermelding die met de meeste velden overeenkomt. Laat het veld nooit leeg en kan daardoor het verkeerde record kiezen.
+     * **Return None** – Laat het veld leeg, zodat een gebruiker het juiste record kiest.
      * **Return First** – Gebruikt de eerste gevonden waarde.
    *   **Contexttype**
 
@@ -62,7 +62,7 @@ Om een nieuwe opzoekconfiguratie voor stamgegevens te maken:
        De opzoekfunctie wordt gebruikt in veldvalidatie. Configureer het volgende:
 
        * **Alles matchen**\
-         Wanneer ingeschakeld, moeten standaard alle velden in de opzoekconfiguratie tijdens het zoeken overeenkomen.
+         Wanneer ingeschakeld, moet een record met **alle** gebruikte velden overeenkomen. Wanneer uitgeschakeld (standaard) is **één** overeenkomend veld genoeg, wat een langere lijst oplevert.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
 
@@ -74,9 +74,17 @@ Om een nieuwe opzoekconfiguratie voor stamgegevens te maken:
        * **Contextdetail**\
          Selecteer de specifieke tabel waarop de opzoekfunctie moet worden toegepast.
        * **Alles matchen**\
-         Wanneer ingeschakeld, moeten standaard alle velden in de opzoekconfiguratie tijdens het zoeken overeenkomen.
+         Wanneer ingeschakeld, moet een record met **alle** gebruikte velden overeenkomen. Wanneer uitgeschakeld (standaard) is **één** overeenkomend veld genoeg, wat een langere lijst oplevert.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
+{% hint style="info" %}
+**Alles matchen** en de **Conflictbehandelaar** werken samen en bepalen of een leverancier automatisch wordt herkend. De installatiepagina legt beide uit met voorbeelden:
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Klik op **Opslaan** om de opzoekconfiguratie te maken.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
@@ -124,7 +132,7 @@ Om een nieuw veld aan uw opzoekconfiguratie toe te voegen:
      Dit veld wordt gebruikt om de juistheid van de waarde in het **Validatieveld** te valideren door te waarborgen dat deze overeenkomt met de corresponderende bovenliggende vermelding in de opzoekdataset.
    * **Zoekoperator** (optioneel)\
      Kies hoe **DocBits** zoekt naar overeenkomsten in de opzoekdataset:
-     * **Smart** – _(Standaard)_ Verwijdert spaties uit de invoer en zoekt naar een overeenkomst.
+     * **Smart** – _(Standaard)_ Negeert spaties en leestekens en zoekt de term **ergens** in het veld. "Meier" vindt daarom ook "Meier Bau GmbH".
      * **Bevat** – Zoekt naar vermeldingen die de exacte term ergens in het veld bevatten.
      * **Eindigt met** – Zoekt naar vermeldingen die eindigen met de opgegeven term.
      * **Exact** – Zoekt naar een exacte overeenkomst van de volledige waarde.
@@ -132,7 +140,7 @@ Om een nieuw veld aan uw opzoekconfiguratie toe te voegen:
    * **Automatische trigger** (optioneel)\
      Wanneer ingeschakeld, zal DocBits automatisch alle velden in de opzoekconfiguratie invullen zodra dit veld is ingevuld.
    *   **Zoekbaar** (optioneel)\
-       Wanneer ingeschakeld, kunnen gebruikers tijdens veldvalidatie handmatig naar stamgegevens zoeken.
+       Wanneer ingeschakeld, kunnen gebruikers tijdens veldvalidatie handmatig naar stamgegevens zoeken **en** doet het veld mee aan de automatische zoekopdracht. Laat het uitgevinkt als het veld het automatische resultaat niet mag beïnvloeden.
 
 
 

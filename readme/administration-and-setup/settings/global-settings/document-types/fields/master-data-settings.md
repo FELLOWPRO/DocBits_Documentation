@@ -49,9 +49,9 @@ To create a new lookup config for Master Data:
    * **Lookup Dataset Name**\
      Select the dataset that should be used for this lookup config.
    * **Conflict Handler**\
-     Defines how to resolve conflicts when multiple matches are found:
-     * **Best Score** – Uses the entry with the highest matching score.
-     * **Return None** – Leaves the field empty if there's a conflict.
+     A conflict means the search found more than one record. This setting decides what happens then:
+     * **Best Score** – Uses the entry that matches the most fields. Never leaves the field empty, so it can pick the wrong record.
+     * **Return None** – Leaves the field empty, so that a user picks the right record.
      * **Return First** – Uses the first matched value.
    *   **Context Type**
 
@@ -62,7 +62,7 @@ To create a new lookup config for Master Data:
        The lookup is used in field validation. Configure the following:
 
        * **Match All**\
-         When enabled, all fields in the lookup config must match during the search by default.
+         When enabled, a record must match **all** used fields. When disabled (default), matching **one** field is enough, which returns a longer list.
 
        <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_4.png" alt=""><figcaption></figcaption></figure>
 
@@ -74,9 +74,17 @@ To create a new lookup config for Master Data:
        * **Context Detail**\
          Select the specific table to which the lookup should be applied.
        * **Match All**\
-         When enabled, all fields in the lookup config must match during the search by default.
+         When enabled, a record must match **all** used fields. When disabled (default), matching **one** field is enough, which returns a longer list.
 
        <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_5.png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+**Match All** and **Conflict Handler** work together and decide whether a supplier is recognised automatically. The setup page explains both with examples:
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Click **Save** to create the lookup config.
 
     <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_6.png" alt=""><figcaption></figcaption></figure>
@@ -124,7 +132,7 @@ To add a new field to your lookup config:
      This field is used to validate the correctness of the value in the **Validation Field** by ensuring it matches the corresponding parent entry in the lookup dataset.
    * **Search Operator** (optional)\
      Choose how **DocBits** searches for matches in the lookup dataset:
-     * **Smart** – _(Default)_ Removes whitespaces from the input and searches for a match.
+     * **Smart** – _(Default)_ Ignores spaces and punctuation and searches for the term **anywhere** in the field. "Meier" therefore also finds "Meier Bau GmbH".
      * **Contains** – Searches for entries that contain the exact term anywhere in the field.
      * **Ends With** – Searches for entries that end with the specified term.
      * **Exact** – Searches for an exact match of the entire value.
@@ -132,7 +140,7 @@ To add a new field to your lookup config:
    * **Auto Trigger** (optional)\
      When enabled, DocBits will automatically populate all fields in the lookup config as soon as this field is filled.
    *   **Searchable** (optional)\
-       When enabled, users can manually search for master data during field validation.
+       When enabled, users can manually search for master data during field validation, **and** the field takes part in the automatic search. Leave it unticked for a field that should not influence the automatic result.
 
        <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_12.png" alt=""><figcaption></figcaption></figure>
 

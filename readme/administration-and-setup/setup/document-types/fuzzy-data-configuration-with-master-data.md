@@ -114,3 +114,70 @@ Después de configurar los campos de Datos Difusos, **asegúrate de añadirlos a
 {% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
 [layout-manager](../../settings/global-settings/document-types/layout-manager/)
 {% endcontent-ref %}
+
+## **Cómo DocBits elige un proveedor**
+
+Cuando llega un documento, DocBits busca el proveedor en sus datos maestros. Tres ajustes deciden el resultado. Esta sección los explica paso a paso, con ejemplos.
+
+### **Paso 1 — Qué campos se usan para la búsqueda**
+
+DocBits usa un campo para la búsqueda solo cuando se cumplen ambos puntos:
+
+* el campo está marcado como **Buscable (Searchable)** o **Auto Trigger** en la configuración de búsqueda, y
+* el campo tiene un valor en el documento.
+
+No importa cómo llegó el valor al campo. Un campo entrenado, un campo rellenado por la IA y un valor escrito por un usuario se tratan igual.
+
+{% hint style="warning" %}
+**Buscable hace dos cosas.** Muestra el icono azul de búsqueda en la pantalla de validación **y** añade el campo a la búsqueda automática de proveedores. Un campo que solo debe buscarse a mano debe quedar sin marcar.
+{% endhint %}
+
+### **Paso 2 — Una búsqueda, no una búsqueda por campo**
+
+DocBits **no** busca cada campo por separado. Construye **una** búsqueda sobre todos los campos usados. **Coincidir todo (Match All)** decide cómo se combinan:
+
+* **Coincidir todo desactivado** (predeterminado) → "encuentra todos los proveedores que coincidan con el NIF **O** con el nombre del proveedor". Esto da una lista **más larga**.
+* **Coincidir todo activado** → "encuentra todos los proveedores que coincidan con el NIF **Y** con el nombre del proveedor". Esto da una lista **más corta**.
+
+Tenga en cuenta que los operadores **Smart** y **Contains** buscan una parte del texto. El nombre "Meier" también encuentra "Meier Bau GmbH" y "Meier & Sons Ltd". Por eso un nombre de proveedor suele encontrar varios proveedores.
+
+### **Paso 3 — Qué ocurre cuando la lista tiene más de un proveedor**
+
+El **Manejador de conflictos (Conflict Handler)** decide:
+
+* **Best Score** → toma el proveedor que coincide con más campos. Nunca deja el proveedor vacío.
+* **Return None** → deja el proveedor vacío, para que un usuario lo elija.
+* **Return First** → toma el primer proveedor de la lista.
+
+### **Ejemplos**
+
+En todos los ejemplos el documento lleva un NIF y un nombre de proveedor, y ambos campos son **Buscables**.
+
+<table><thead><tr><th width="150">El NIF encuentra</th><th width="150">El nombre encuentra</th><th width="150">Coincidir todo desactivado + Return None</th><th width="150">Coincidir todo activado + Return None</th><th width="150">Coincidir todo desactivado + Best Score</th></tr></thead><tbody>
+<tr><td>solo A</td><td>A y B</td><td>vacío</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A y B</td><td>solo B</td><td>vacío</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B y C</td><td>C, D y E</td><td>vacío</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B y C</td><td>B, C y D</td><td>vacío</td><td>vacío</td><td>B o C, no fiable</td></tr>
+<tr><td>solo A</td><td>nada</td><td><strong>A</strong></td><td>vacío</td><td><strong>A</strong></td></tr>
+</tbody></table>
+
+Cómo leer la tabla:
+
+* **Las filas 1 a 3** son el caso normal. Un campo es único, el otro no. Con **Coincidir todo desactivado** la lista contiene varios proveedores y **Return None** deja el campo vacío. **Coincidir todo activado** conserva solo el proveedor que coincide con ambos campos y lo encuentra.
+* **La fila 4** no tiene ningún proveedor único. Dejar el campo vacío es correcto. **Best Score** elige uno de todos modos, y puede ser el equivocado.
+* **La fila 5** es el riesgo de **Coincidir todo activado**. Vea la advertencia siguiente.
+
+{% hint style="warning" %}
+**Coincidir todo puede perder un proveedor.** Con **Coincidir todo activado** cada campo usado debe coincidir. Si un campo lleva un valor que no existe en sus datos maestros — una errata, un nombre de empresa antiguo, un valor leído de la página — la búsqueda completa no devuelve nada y no se encuentra ningún proveedor, aunque el NIF por sí solo habría encontrado el correcto.
+{% endhint %}
+
+### **Un proveedor se reconocía antes y ahora ya no se reconoce**
+
+Casi siempre hay un campo más que ahora entrega un valor. Compruebe en este orden:
+
+1. Abra el documento. ¿Qué campo del grupo de búsqueda lleva ahora un valor que antes estaba vacío?
+2. Abra la configuración de búsqueda. ¿Ese campo está marcado como **Buscable** o **Auto Trigger**? Si es así, ahora participa en la búsqueda y alarga la lista de resultados.
+3. Elija una de las tres salidas:
+   * **El campo no debe participar en la búsqueda** → desmarque **Buscable** y **Auto Trigger** en ese campo. El campo conserva su valor en el documento y se sigue mostrando al usuario. Es el cambio más pequeño.
+   * **El campo debe participar** → active **Coincidir todo**, pero lea antes la advertencia anterior.
+   * **Quiere un proveedor en todos los casos** → ponga el **Manejador de conflictos** en **Best Score**. Acepte que puede elegir el proveedor equivocado en lugar de dejar el campo vacío.

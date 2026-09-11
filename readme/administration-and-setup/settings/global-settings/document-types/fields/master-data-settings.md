@@ -49,9 +49,9 @@ Per creare una nuova configurazione di ricerca per i dati master:
    * **Nome del set di dati di ricerca**\
      Seleziona il set di dati che deve essere utilizzato per questa configurazione di ricerca.
    * **Gestore dei conflitti**\
-     Definisce come risolvere i conflitti quando vengono trovate più corrispondenze:
-     * **Best Score** – Usa la voce con il punteggio di corrispondenza più alto.
-     * **Return None** – Lascia il campo vuoto in caso di conflitto.
+     Un conflitto significa che la ricerca ha trovato più di un record. Questa impostazione decide cosa succede allora:
+     * **Best Score** – Usa la voce che corrisponde al maggior numero di campi. Non lascia mai il campo vuoto e può quindi scegliere il record sbagliato.
+     * **Return None** – Lascia il campo vuoto, così un utente sceglie il record giusto.
      * **Return First** – Usa il primo valore trovato.
    *   **Tipo di contesto**
 
@@ -62,7 +62,7 @@ Per creare una nuova configurazione di ricerca per i dati master:
        La ricerca è utilizzata nella convalida dei campi. Configura quanto segue:
 
        * **Abbina tutti**\
-         Quando abilitato, per impostazione predefinita tutti i campi nella configurazione di ricerca devono corrispondere durante la ricerca.
+         Quando abilitato, un record deve corrispondere a **tutti** i campi usati. Quando disabilitato (predefinito), basta che corrisponda **un** campo, il che restituisce un elenco più lungo.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
 
@@ -74,9 +74,17 @@ Per creare una nuova configurazione di ricerca per i dati master:
        * **Dettaglio del contesto**\
          Seleziona la tabella specifica a cui applicare la ricerca.
        * **Abbina tutti**\
-         Quando abilitato, per impostazione predefinita tutti i campi nella configurazione di ricerca devono corrispondere durante la ricerca.
+         Quando abilitato, un record deve corrispondere a **tutti** i campi usati. Quando disabilitato (predefinito), basta che corrisponda **un** campo, il che restituisce un elenco più lungo.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
+{% hint style="info" %}
+**Abbina tutti** e il **Gestore dei conflitti** agiscono insieme e decidono se un fornitore viene riconosciuto automaticamente. La pagina di configurazione li spiega con esempi:
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Clic **Salva** per creare la configurazione di ricerca.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
@@ -124,7 +132,7 @@ Per aggiungere un nuovo campo alla tua configurazione di ricerca:
      Questo campo viene utilizzato per convalidare la correttezza del valore nel **Campo di convalida** assicurando che corrisponda alla voce genitore corrispondente nel set di dati di ricerca.
    * **Operatore di ricerca** (opzionale)\
      Scegli come **DocBits** cerca le corrispondenze nel set di dati di ricerca:
-     * **Smart** – _(Default)_ Rimuove gli spazi dall'input e cerca una corrispondenza.
+     * **Smart** – _(Default)_ Ignora spazi e punteggiatura e cerca il termine in **qualsiasi punto** del campo. Per questo "Meier" trova anche "Meier Bau GmbH".
      * **Contiene** – Cerca voci che contengono il termine esatto in qualsiasi punto del campo.
      * **Finisce con** – Cerca voci che terminano con il termine specificato.
      * **esatto** – Cerca una corrispondenza esatta dell'intero valore.
@@ -132,7 +140,7 @@ Per aggiungere un nuovo campo alla tua configurazione di ricerca:
    * **Trigger automatico** (opzionale)\
      Quando abilitato, DocBits compilerà automaticamente tutti i campi nella configurazione di ricerca non appena questo campo viene compilato.
    *   **Ricercabile** (opzionale)\
-       Quando abilitato, gli utenti possono cercare manualmente i dati master durante la convalida dei campi.
+       Quando abilitato, gli utenti possono cercare manualmente i dati master durante la convalida dei campi **e** il campo partecipa alla ricerca automatica. Lascialo non selezionato se il campo non deve influenzare il risultato automatico.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_12.png)
 

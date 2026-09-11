@@ -49,9 +49,9 @@ Para crear una nueva configuración de búsqueda para Datos maestros:
    * **Nombre del conjunto de datos**\
      Selecciona el conjunto de datos que debe usarse para esta configuración de búsqueda.
    * **Gestor de conflictos**\
-     Define cómo resolver conflictos cuando se encuentran múltiples coincidencias:
-     * **Best Score** – Usa la entrada con la puntuación de coincidencia más alta.
-     * **Return None** – Deja el campo vacío si hay un conflicto.
+     Un conflicto significa que la búsqueda encontró más de un registro. Este ajuste decide qué ocurre entonces:
+     * **Best Score** – Usa la entrada que coincide con más campos. Nunca deja el campo vacío, por lo que puede elegir el registro equivocado.
+     * **Return None** – Deja el campo vacío, para que un usuario elija el registro correcto.
      * **Return First** – Usa el primer valor coincidente.
    *   **Tipo de contexto**
 
@@ -62,7 +62,7 @@ Para crear una nueva configuración de búsqueda para Datos maestros:
        La búsqueda se utiliza en la validación de campos. Configura lo siguiente:
 
        * **Coincidir con todo**\
-         Cuando está habilitado, todos los campos en la configuración de búsqueda deben coincidir durante la búsqueda de forma predeterminada.
+         Cuando está habilitado, un registro debe coincidir con **todos** los campos usados. Cuando está deshabilitado (predeterminado), basta con que coincida **un** campo, lo que devuelve una lista más larga.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
 
@@ -74,9 +74,17 @@ Para crear una nueva configuración de búsqueda para Datos maestros:
        * **Detalle del contexto**\
          Selecciona la tabla específica a la que se debe aplicar la búsqueda.
        * **Coincidir con todo**\
-         Cuando está habilitado, todos los campos en la configuración de búsqueda deben coincidir durante la búsqueda de forma predeterminada.
+         Cuando está habilitado, un registro debe coincidir con **todos** los campos usados. Cuando está deshabilitado (predeterminado), basta con que coincida **un** campo, lo que devuelve una lista más larga.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
+{% hint style="info" %}
+**Coincidir con todo** y el **Gestor de conflictos** funcionan juntos y deciden si un proveedor se reconoce automáticamente. La página de configuración explica ambos con ejemplos:
+
+{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
+[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
+{% endcontent-ref %}
+{% endhint %}
+
 4.  Haz clic en **Guardar** para crear la configuración de búsqueda.
 
     ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
@@ -124,7 +132,7 @@ Para añadir un nuevo campo a tu configuración de búsqueda:
      Este campo se utiliza para validar la corrección del valor en el **Campo de validación** asegurando que coincida con la entrada padre correspondiente en el conjunto de datos de búsqueda.
    * **Operador de búsqueda** (opcional)\
      Elige cómo **DocBits** busca coincidencias en el conjunto de datos:
-     * **Smart** – _(Predeterminado)_ Elimina espacios en blanco de la entrada y busca una coincidencia.
+     * **Smart** – _(Predeterminado)_ Ignora espacios y signos de puntuación y busca el término en **cualquier parte** del campo. Por eso "Meier" también encuentra "Meier Bau GmbH".
      * **Contiene** – Busca entradas que contengan el término exacto en cualquier parte del campo.
      * **termina con** – Busca entradas que terminen con el término especificado.
      * **Exacto** – Busca una coincidencia exacta de todo el valor.
@@ -132,7 +140,7 @@ Para añadir un nuevo campo a tu configuración de búsqueda:
    * **Disparador automático** (opcional)\
      Cuando está habilitado, DocBits completará automáticamente todos los campos en la configuración de búsqueda tan pronto como se complete este campo.
    *   **Buscable** (opcional)\
-       Cuando está habilitado, los usuarios pueden buscar manualmente datos maestros durante la validación de campos.
+       Cuando está habilitado, los usuarios pueden buscar manualmente datos maestros durante la validación de campos **y** el campo participa en la búsqueda automática. Déjalo sin marcar si el campo no debe influir en el resultado automático.
 
        ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_12.png)
 

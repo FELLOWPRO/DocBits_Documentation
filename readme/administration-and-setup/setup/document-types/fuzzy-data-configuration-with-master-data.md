@@ -114,3 +114,70 @@ Po skonfigurowaniu pól Danych Rozmytych, **upewnij się, że dodano je do ukła
 {% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
 [layout-manager](../../settings/global-settings/document-types/layout-manager/)
 {% endcontent-ref %}
+
+## **Jak DocBits wybiera jednego dostawcę**
+
+Gdy dokument trafia do systemu, DocBits szuka dostawcy w danych głównych. Wynik zależy od trzech ustawień. Ta sekcja wyjaśnia je krok po kroku, na przykładach.
+
+### **Krok 1 — Które pola są używane do wyszukiwania**
+
+DocBits używa pola do wyszukiwania tylko wtedy, gdy spełnione są oba warunki:
+
+* pole jest zaznaczone jako **Wyszukiwalne (Searchable)** lub **Auto Trigger** w konfiguracji wyszukiwania, oraz
+* pole ma wartość na dokumencie.
+
+Nie ma znaczenia, skąd wzięła się wartość. Pole wytrenowane, pole wypełnione przez AI i wartość wpisana przez użytkownika są traktowane tak samo.
+
+{% hint style="warning" %}
+**Wyszukiwalne robi dwie rzeczy.** Pokazuje niebieską ikonę wyszukiwania na ekranie walidacji **oraz** dodaje pole do automatycznego wyszukiwania dostawcy. Pole, które ma być przeszukiwane tylko ręcznie, powinno pozostać niezaznaczone.
+{% endhint %}
+
+### **Krok 2 — Jedno wyszukiwanie, a nie jedno na pole**
+
+DocBits **nie** przeszukuje każdego pola osobno. Buduje **jedno** wyszukiwanie obejmujące wszystkie użyte pola. **Dopasuj wszystko (Match All)** decyduje, jak są łączone:
+
+* **Dopasuj wszystko wyłączone** (domyślnie) → „znajdź każdego dostawcę pasującego do numeru NIP **LUB** do nazwy dostawcy". Daje to **dłuższą** listę.
+* **Dopasuj wszystko włączone** → „znajdź każdego dostawcę pasującego do numeru NIP **ORAZ** do nazwy dostawcy". Daje to **krótszą** listę.
+
+Proszę pamiętać, że operatory **Smart** i **Contains** szukają fragmentu tekstu. Nazwa „Meier" znajdzie także „Meier Bau GmbH" i „Meier & Sons Ltd". Dlatego nazwa dostawcy często znajduje kilku dostawców.
+
+### **Krok 3 — Co się dzieje, gdy lista zawiera więcej niż jednego dostawcę**
+
+Decyduje **Obsługa konfliktów (Conflict Handler)**:
+
+* **Best Score** → wybiera dostawcę pasującego do największej liczby pól. Nigdy nie zostawia pustego dostawcy.
+* **Return None** → zostawia dostawcę pustego, aby wybrał go użytkownik.
+* **Return First** → wybiera pierwszego dostawcę z listy.
+
+### **Przykłady**
+
+We wszystkich przykładach dokument ma numer NIP i nazwę dostawcy, a oba pola są **Wyszukiwalne**.
+
+<table><thead><tr><th width="150">NIP znajduje</th><th width="150">Nazwa znajduje</th><th width="150">Dopasuj wszystko wył. + Return None</th><th width="150">Dopasuj wszystko wł. + Return None</th><th width="150">Dopasuj wszystko wył. + Best Score</th></tr></thead><tbody>
+<tr><td>tylko A</td><td>A i B</td><td>puste</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A i B</td><td>tylko B</td><td>puste</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B i C</td><td>C, D i E</td><td>puste</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B i C</td><td>B, C i D</td><td>puste</td><td>puste</td><td>B lub C, niepewne</td></tr>
+<tr><td>tylko A</td><td>nic</td><td><strong>A</strong></td><td>puste</td><td><strong>A</strong></td></tr>
+</tbody></table>
+
+Jak czytać tabelę:
+
+* **Wiersze 1 do 3** to przypadek typowy. Jedno pole jest jednoznaczne, drugie nie. Przy **Dopasuj wszystko wyłączone** lista zawiera kilku dostawców, a **Return None** zostawia pole puste. **Dopasuj wszystko włączone** zostawia tylko dostawcę pasującego do obu pól i go znajduje.
+* **Wiersz 4** nie ma żadnego jednoznacznego dostawcy. Pozostawienie pustego pola jest poprawne. **Best Score** i tak wybiera jednego, co może być błędem.
+* **Wiersz 5** to ryzyko opcji **Dopasuj wszystko włączone**. Patrz ostrzeżenie poniżej.
+
+{% hint style="warning" %}
+**Dopasuj wszystko może zgubić dostawcę.** Przy **Dopasuj wszystko włączone** każde użyte pole musi pasować. Jeśli jedno pole zawiera wartość, której nie ma w danych głównych — literówka, stara nazwa firmy, wartość odczytana ze strony — całe wyszukiwanie nic nie zwróci i żaden dostawca nie zostanie znaleziony, choć sam NIP znalazłby właściwego.
+{% endhint %}
+
+### **Dostawca był wcześniej rozpoznawany, a teraz nie jest**
+
+Prawie zawsze kolejne pole zaczęło dostarczać wartość. Proszę sprawdzić w tej kolejności:
+
+1. Otworzyć dokument. Które pole grupy wyszukiwania ma teraz wartość, która wcześniej była pusta?
+2. Otworzyć konfigurację wyszukiwania. Czy to pole jest zaznaczone jako **Wyszukiwalne** lub **Auto Trigger**? Jeśli tak, bierze teraz udział w wyszukiwaniu i wydłuża listę wyników.
+3. Wybrać jedno z trzech rozwiązań:
+   * **Pole nie powinno brać udziału w wyszukiwaniu** → odznaczyć **Wyszukiwalne** i **Auto Trigger** dla tego pola. Pole zachowa swoją wartość na dokumencie i nadal będzie widoczne dla użytkownika. To najmniejsza zmiana.
+   * **Pole powinno brać udział** → włączyć **Dopasuj wszystko**, ale najpierw przeczytać ostrzeżenie powyżej.
+   * **Dostawca ma być wybrany zawsze** → ustawić **Obsługę konfliktów** na **Best Score**. Trzeba zaakceptować, że zamiast pustego pola może zostać wybrany niewłaściwy dostawca.

@@ -114,3 +114,70 @@ Après avoir configuré les champs de données floues, **assurez-vous de les ajo
 {% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
 [layout-manager](../../settings/global-settings/document-types/layout-manager/)
 {% endcontent-ref %}
+
+## **Comment DocBits choisit un fournisseur**
+
+Lorsqu'un document arrive, DocBits recherche le fournisseur dans vos données maîtres. Trois réglages déterminent le résultat. Cette section les explique étape par étape, avec des exemples.
+
+### **Étape 1 — Quels champs servent à la recherche**
+
+DocBits utilise un champ pour la recherche uniquement si les deux points sont vrais :
+
+* le champ est coché **Recherchable (Searchable)** ou **Auto Trigger** dans la configuration de recherche, et
+* le champ a une valeur sur le document.
+
+La provenance de la valeur n'a pas d'importance. Un champ entraîné, un champ rempli par l'IA et une valeur saisie par un utilisateur sont traités de la même façon.
+
+{% hint style="warning" %}
+**Recherchable fait deux choses.** Il affiche l'icône bleue de recherche dans l'écran de validation **et** il ajoute le champ à la recherche automatique de fournisseur. Un champ qui ne doit être cherché qu'à la main reste décoché.
+{% endhint %}
+
+### **Étape 2 — Une seule recherche, pas une recherche par champ**
+
+DocBits ne recherche **pas** chaque champ séparément. Il construit **une** recherche sur tous les champs utilisés. **Tout faire correspondre (Match All)** décide de la combinaison :
+
+* **Tout faire correspondre désactivé** (par défaut) → « trouver tous les fournisseurs qui correspondent au numéro de TVA **OU** au nom du fournisseur ». Cela donne une liste **plus longue**.
+* **Tout faire correspondre activé** → « trouver tous les fournisseurs qui correspondent au numéro de TVA **ET** au nom du fournisseur ». Cela donne une liste **plus courte**.
+
+N'oubliez pas que les opérateurs **Smart** et **Contains** cherchent une partie du texte. Le nom « Meier » trouve aussi « Meier Bau GmbH » et « Meier & Sons Ltd ». Un nom de fournisseur trouve donc souvent plusieurs fournisseurs.
+
+### **Étape 3 — Ce qui se passe quand la liste contient plusieurs fournisseurs**
+
+Le **Gestionnaire de conflits (Conflict Handler)** décide :
+
+* **Best Score** → prend le fournisseur qui correspond au plus grand nombre de champs. Ne laisse jamais le fournisseur vide.
+* **Return None** → laisse le fournisseur vide, pour qu'un utilisateur le choisisse.
+* **Return First** → prend le premier fournisseur de la liste.
+
+### **Exemples**
+
+Dans tous les exemples, le document porte un numéro de TVA et un nom de fournisseur, et les deux champs sont **Recherchables**.
+
+<table><thead><tr><th width="150">Le numéro de TVA trouve</th><th width="150">Le nom trouve</th><th width="150">Tout faire correspondre désactivé + Return None</th><th width="150">Tout faire correspondre activé + Return None</th><th width="150">Tout faire correspondre désactivé + Best Score</th></tr></thead><tbody>
+<tr><td>seulement A</td><td>A et B</td><td>vide</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A et B</td><td>seulement B</td><td>vide</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B et C</td><td>C, D et E</td><td>vide</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B et C</td><td>B, C et D</td><td>vide</td><td>vide</td><td>B ou C, peu fiable</td></tr>
+<tr><td>seulement A</td><td>rien</td><td><strong>A</strong></td><td>vide</td><td><strong>A</strong></td></tr>
+</tbody></table>
+
+Comment lire le tableau :
+
+* **Les lignes 1 à 3** sont le cas normal. Un champ est unique, l'autre non. Avec **Tout faire correspondre désactivé**, la liste contient plusieurs fournisseurs et **Return None** laisse le champ vide. **Tout faire correspondre activé** ne garde que le fournisseur qui correspond aux deux champs et le trouve.
+* **La ligne 4** n'a aucun fournisseur unique. Laisser le champ vide est correct. **Best Score** en choisit quand même un, qui peut être le mauvais.
+* **La ligne 5** est le risque de **Tout faire correspondre activé**. Voir l'avertissement ci-dessous.
+
+{% hint style="warning" %}
+**Tout faire correspondre peut perdre un fournisseur.** Avec **Tout faire correspondre activé**, chaque champ utilisé doit correspondre. Si un champ porte une valeur qui n'existe pas dans vos données maîtres — une faute de frappe, un ancien nom d'entreprise, une valeur lue sur la page — la recherche entière ne renvoie rien et aucun fournisseur n'est trouvé, alors que le numéro de TVA seul aurait trouvé le bon.
+{% endhint %}
+
+### **Un fournisseur était reconnu avant et ne l'est plus**
+
+Presque toujours, un champ de plus fournit désormais une valeur. Vérifiez dans cet ordre :
+
+1. Ouvrez le document. Quel champ du groupe de recherche porte maintenant une valeur qui était vide avant ?
+2. Ouvrez la configuration de recherche. Ce champ est-il coché **Recherchable** ou **Auto Trigger** ? Si oui, il participe désormais à la recherche et allonge la liste des résultats.
+3. Choisissez l'une des trois solutions :
+   * **Le champ ne doit pas participer à la recherche** → décochez **Recherchable** et **Auto Trigger** pour ce champ. Le champ garde sa valeur sur le document et reste affiché à l'utilisateur. C'est la plus petite modification.
+   * **Le champ doit participer** → activez **Tout faire correspondre**, mais lisez d'abord l'avertissement ci-dessus.
+   * **Vous voulez un fournisseur dans tous les cas** → réglez le **Gestionnaire de conflits** sur **Best Score**. Acceptez qu'il puisse choisir le mauvais fournisseur au lieu de laisser le champ vide.

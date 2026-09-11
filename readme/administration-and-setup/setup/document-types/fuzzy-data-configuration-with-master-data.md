@@ -114,3 +114,70 @@ Na het configureren van Fuzzy Data-velden, **zorg ervoor dat u ze toevoegt aan h
 {% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
 [layout-manager](../../settings/global-settings/document-types/layout-manager/)
 {% endcontent-ref %}
+
+## **Hoe DocBits één leverancier kiest**
+
+Wanneer een document binnenkomt, zoekt DocBits de leverancier in uw mastergegevens. Drie instellingen bepalen het resultaat. Dit hoofdstuk legt ze stap voor stap uit, met voorbeelden.
+
+### **Stap 1 — Welke velden voor de zoekopdracht worden gebruikt**
+
+DocBits gebruikt een veld alleen voor de zoekopdracht als beide punten kloppen:
+
+* het veld is aangevinkt als **Doorzoekbaar (Searchable)** of **Auto Trigger** in de opzoekconfiguratie, en
+* het veld heeft een waarde op het document.
+
+Hoe de waarde in het veld is gekomen, maakt niet uit. Een getraind veld, een door AI gevuld veld en een door een gebruiker getypte waarde worden hetzelfde behandeld.
+
+{% hint style="warning" %}
+**Doorzoekbaar doet twee dingen.** Het toont het blauwe zoekicoon in het validatiescherm **en** het voegt het veld toe aan de automatische leverancierszoekopdracht. Een veld dat alleen handmatig doorzocht moet worden, blijft uitgevinkt.
+{% endhint %}
+
+### **Stap 2 — Eén zoekopdracht, niet één per veld**
+
+DocBits zoekt **niet** per veld apart. Het bouwt **één** zoekopdracht over alle gebruikte velden. **Alles matchen (Match All)** bepaalt hoe ze worden gecombineerd:
+
+* **Alles matchen uit** (standaard) → "vind elke leverancier die overeenkomt met het btw-nummer **OF** met de leveranciersnaam". Dit geeft een **langere** lijst.
+* **Alles matchen aan** → "vind elke leverancier die overeenkomt met het btw-nummer **EN** met de leveranciersnaam". Dit geeft een **kortere** lijst.
+
+Houd er ook rekening mee dat de zoekoperatoren **Smart** en **Contains** naar een deel van de tekst zoeken. De naam "Meier" vindt ook "Meier Bau GmbH" en "Meier & Sons Ltd". Een leveranciersnaam vindt daarom vaak meerdere leveranciers.
+
+### **Stap 3 — Wat gebeurt er als de lijst meerdere leveranciers bevat**
+
+De **Conflictafhandeling (Conflict Handler)** beslist:
+
+* **Best Score** → neemt de leverancier die met de meeste velden overeenkomt. Laat de leverancier nooit leeg.
+* **Return None** → laat de leverancier leeg, zodat een gebruiker hem kiest.
+* **Return First** → neemt de eerste leverancier uit de lijst.
+
+### **Voorbeelden**
+
+In alle voorbeelden heeft het document een btw-nummer en een leveranciersnaam, en beide velden zijn **Doorzoekbaar**.
+
+<table><thead><tr><th width="150">Btw-nummer vindt</th><th width="150">Naam vindt</th><th width="150">Alles matchen uit + Return None</th><th width="150">Alles matchen aan + Return None</th><th width="150">Alles matchen uit + Best Score</th></tr></thead><tbody>
+<tr><td>alleen A</td><td>A en B</td><td>leeg</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A en B</td><td>alleen B</td><td>leeg</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B en C</td><td>C, D en E</td><td>leeg</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B en C</td><td>B, C en D</td><td>leeg</td><td>leeg</td><td>B of C, niet betrouwbaar</td></tr>
+<tr><td>alleen A</td><td>niets</td><td><strong>A</strong></td><td>leeg</td><td><strong>A</strong></td></tr>
+</tbody></table>
+
+Hoe u de tabel leest:
+
+* **Rij 1 tot 3** is het normale geval. Eén veld is uniek, het andere niet. Met **Alles matchen uit** bevat de lijst meerdere leveranciers en laat **Return None** het veld leeg. **Alles matchen aan** houdt alleen de leverancier over die met beide velden overeenkomt en vindt hem.
+* **Rij 4** heeft helemaal geen unieke leverancier. Het veld leeg laten is juist. **Best Score** kiest er toch een, en dat kan de verkeerde zijn.
+* **Rij 5** is het risico van **Alles matchen aan**. Zie de waarschuwing hieronder.
+
+{% hint style="warning" %}
+**Alles matchen kan een leverancier verliezen.** Met **Alles matchen aan** moet elk gebruikt veld overeenkomen. Als één veld een waarde bevat die niet in uw mastergegevens bestaat — een typefout, een oude bedrijfsnaam, een van de pagina gelezen waarde — levert de hele zoekopdracht niets op en wordt geen leverancier gevonden, terwijl het btw-nummer alleen de juiste had gevonden.
+{% endhint %}
+
+### **Een leverancier werd eerder herkend en nu niet meer**
+
+Bijna altijd levert één veld extra nu een waarde. Controleer in deze volgorde:
+
+1. Open het document. Welk veld van de opzoekgroep bevat nu een waarde die eerder leeg was?
+2. Open de opzoekconfiguratie. Is dat veld aangevinkt als **Doorzoekbaar** of **Auto Trigger**? Zo ja, dan doet het nu mee aan de zoekopdracht en maakt het de resultatenlijst langer.
+3. Kies een van de drie oplossingen:
+   * **Het veld mag niet meedoen aan de zoekopdracht** → vink **Doorzoekbaar** en **Auto Trigger** uit voor dat veld. Het veld behoudt zijn waarde op het document en blijft zichtbaar voor de gebruiker. Dit is de kleinste wijziging.
+   * **Het veld moet meedoen** → zet **Alles matchen** aan, maar lees eerst de waarschuwing hierboven.
+   * **U wilt in elk geval een leverancier** → zet de **Conflictafhandeling** op **Best Score**. Accepteer dat er dan een verkeerde leverancier gekozen kan worden in plaats van een leeg veld.

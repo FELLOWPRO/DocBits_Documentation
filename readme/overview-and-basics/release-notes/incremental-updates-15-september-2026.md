@@ -14,12 +14,12 @@ sichtbaren Änderungen._
   jeder Suchmaschine genau diesen Wert, `field:value` bedeutet „enthält“ (mit
   `value*` und `*value` für „beginnt mit“ und „endet mit“), und `field!=value`
   liefert auch Dokumente, die gar keinen Wert haben. Eine Suche ohne Chip ist
-  eine Teilstring-Suche über alle Felder, Geschäftskennungen eingeschlossen.
-  Trefferzahl und Trefferliste beschreiben dieselbe Dokumentmenge, und eine
-  Suche, die an das Ergebnisfenster gestoßen ist oder ohne den Volltextindex
-  lief, sagt das, statt „vollständig“ zu melden. Die eigene Suchverbindung des
-  Dashboards (WebSocket) hat den Volltextindex bisher nie erreicht; jetzt tut
-  sie es.
+  eine Teilstring-Suche über alle Felder, Bestellnummern, Barcodes und
+  Anforderungsnummern eingeschlossen. Trefferzahl, Status-Kacheln und
+  Paginierung beschreiben dieselbe Dokumentmenge, und eine Suche, die an das
+  Ergebnisfenster gestoßen ist oder ohne den Volltextindex lief, sagt das,
+  statt „vollständig“ zu melden. Die eigene Suchverbindung des Dashboards
+  (WebSocket) hat den Volltextindex bisher nie erreicht; jetzt tut sie es.
 - **Lieferanten werden häufiger erkannt.** Wenn ein Nachschlagefeld
   (Steuernummer, IBAN, Lieferantennummer) genau einen Lieferanten trifft, wird
   dieser Lieferant verwendet — auch wenn ein breites Feld wie der Name mehrere
@@ -27,12 +27,13 @@ sichtbaren Änderungen._
   wieder mit. Wo Stammdaten einen extrahierten Wert ersetzt haben, sagt der
   Validierungsbildschirm das und lässt Sie das Original wiederherstellen.
 - **Der Bestellabgleich erklärt sich selbst.** Der Bildschirm sagt, warum kein
-  Abgleich vorliegt und warum ein Abgleich nicht beibehalten wurde, die
-  Abgleichhistorie listet die ausgeführten Transformationsregeln auf, und
-  Bestell-Einheitspreise werden aus dem Nettobetrag abgeleitet. Manuelle
-  Abgleiche funktionieren wieder für Organisationen ohne Fallback-Regel, und
-  eine abgebrochene Abgleichaufgabe markiert das Dokument als fehlgeschlagen,
-  statt es für immer in „Queue“ zu parken.
+  Abgleich vorliegt, der Tooltip zur Abweichung nennt die Spalte, die nicht
+  gepasst hat, die Abgleichhistorie listet die ausgeführten
+  Transformationsregeln auf, und Bestell-Einheitspreise werden aus dem
+  Nettobetrag abgeleitet. Manuelle Abgleiche funktionieren wieder für
+  Organisationen ohne Fallback-Regel, entfernte Bestellungen bleiben entfernt,
+  und eine abgebrochene Abgleichaufgabe markiert das Dokument als
+  fehlgeschlagen, statt es für immer in „Queue“ zu parken.
 - **Hängende Dokumente und falsche Fehler.** Bei Organisationen, die
   kontinuierlich hochladen, wurden Dokumente auf eine Warteschlangenpriorität
   herabgestuft, die während der Geschäftszeiten nie bedient wurde (866
@@ -44,12 +45,16 @@ sichtbaren Änderungen._
   Dokumente DocBits ohne menschliches Zutun durchlaufen, erhält sein
   vollständiges erstes Release: Problem-Cluster mit KI-Empfehlungen,
   Massenanalyse, Änderungsvorschläge mit Vorschau, Anwenden und Rückgängig,
-  eine KI-Diagnose pro Lieferant und ein Pipeline-Flussdiagramm pro Dokument.
-- **Schneller bei großen Datenmengen.** Das Accounting-Dropdown funktioniert
-  für Organisationen mit mehr als 2.000 Konten, die Regelseite unter
-  E-Dokumente blättert ihre 1.600 Regeln auf dem Server, statt den Browser
-  einzufrieren, und „Refresh“ auf dem Bestell-Dashboard liefert frische Daten
-  statt einer zwischengespeicherten Liste.
+  eine Lieferantenseite mit Trend und Beispielen, ein Pipeline-Flussdiagramm
+  pro Dokument und ein Diagramm des Bestell-Regelwerks, das sagt, warum ein
+  Dokument nicht durchgekommen ist.
+- **Schneller bei großen Datenmengen.** Anmeldungen mit kaltem Cache
+  überspringen die Summierung des Guthaben-Ledgers, die bis zu 33 s dauerte,
+  das Accounting-Dropdown funktioniert für Organisationen mit mehr als 2.000
+  Konten, die Regelseite unter E-Dokumente blättert ihre 1.600 Regeln auf dem
+  Server, statt den Browser einzufrieren, und „Refresh“ auf dem
+  Bestell-Dashboard liefert frische Daten statt einer zwischengespeicherten
+  Liste.
 - **Sicherheit.** Frontend-Source-Maps werden nicht mehr mit jedem Deploy
   ausgeliefert, Filter im Stammdaten-Lookup werden als SQL-Parameter gebunden
   statt in die Abfrage eingefügt, ein abgelaufenes Token wird auch bei einem
@@ -63,13 +68,27 @@ sichtbaren Änderungen._
 
 ### Anmeldung und Konten
 
+- Die Anmeldung ist schneller. Die Abonnementprüfung bei der Anmeldung fragte
+  den vollständigen Guthabenstand ab, der Millionen Ledger-Zeilen summierte
+  und oft über das 10-s-Timeout des Clients hinauslief. Die Anmeldung fragt
+  jetzt nur noch, ob ein Abonnement existiert; Guthaben werden weiterhin unter
+  Einstellungen → Abonnement berechnet.
+- Der Wechsel der Region (EU ↔ US) hält Sie angemeldet. Die Zielregion
+  antwortet für einige Sekunden mit „invalid token“, bis die Sitzung
+  repliziert ist, und zwei Codepfade lasen das als tote Sitzung.
 - Das Overlay „Updating DocBits v10.59.3.1 → v10.59.3.1“, das auf Sandbox
   endlos neu lud, ist behoben. Ein Neuladen bei gleicher Version zeigt das
   Overlay nicht mehr, die Schleife ist pro Tab begrenzt, und ein Banner bietet
   eine manuelle Wiederherstellung an, falls es erneut passiert.
+- Administratoren können den Tab „Analytics Dashboard“ bestimmten Rollen
+  zuweisen, und Rollenänderungen werden zuverlässig gespeichert.
 - Die Checkbox „System Admin“ kann bei einem bestehenden Benutzer gesetzt
   werden. Das Anlegen eines Systemadministrators über das Frontend hat jetzt
   eine Wirkung; ein Sync-Job setzte das Flag bisher bei jedem Lauf zurück.
+- Einstellungen → Rollen: Die Mitgliederliste wird gerendert, statt hinter
+  einem Ladeindikator zu hängen, wenn der Server mit einem Fehler antwortet.
+- Die Anmeldung am DocBits-MCP-Server erzwingt Zwei-Faktor-Authentifizierung
+  und eine einmalige Einwilligung.
 
 ### Dashboard und Suche
 
@@ -84,10 +103,11 @@ sichtbaren Änderungen._
 - Findet eine Suche ohne Chip nichts, erklärt das Dashboard die Regel und
   bietet Ein-Klick-Chips an (`Invoice number : <term>`,
   `Purchase order : <term>`, `Supplier ID : <term>`).
-- Eine Suche ohne Treffer setzt die Seitennavigation zurück. Bisher behielt
-  die Paginierung die Trefferzahl der vorherigen Suche.
-- Anforderungsnummern und Anforderer werden über eine einfache Suche gefunden,
-  ohne Chip.
+- Eine Suche ohne Treffer setzt die Seitennavigation und jede Zählung auf der
+  Seite zurück. Bisher behielt die Paginierung die Trefferzahl der vorherigen
+  Suche.
+- Bestellnummern, Auftragsnummern, Barcodes, Rechnungstypen und
+  Anforderungsnummern lassen sich ohne Chip finden.
 
 ### Validierungsbildschirm
 
@@ -105,6 +125,9 @@ sichtbaren Änderungen._
 - Das Speichern von Extraktionsregeln funktioniert, nachdem Sie eine
   Seitenzahl eingegeben und dann eine Box für ein Feld gezeichnet haben. Diese
   Reihenfolge ließ das Speichern bisher abstürzen.
+- Die strukturierte Extraktion lässt sich pro Lieferant einschalten — im
+  tfidf-Popup des Validierungsbildschirms und als schreibgeschützte Spalte
+  unter Einstellungen → Klassifizierung & Extraktion.
 - „Modell trainieren“ läuft im Hintergrund. Der Bildschirm zeigt „training
   started“, fragt das Ergebnis ab und meldet Erfolg oder Fehlschlag. Große
   Organisationen erhielten bisher einen Gateway-Fehler, während das Training
@@ -122,6 +145,9 @@ Abgleich vorliegt und warum ein Abgleich nicht beibehalten wurde, die
 Abgleichhistorie zeigt die Transformationsregeln, und der Bestell-Einheitspreis
 wird aus dem Nettobetrag berechnet. Darüber hinaus:
 
+- Der Tooltip zur Abweichung nennt die Spalte, die nicht gepasst hat. Er war
+  bisher leer, weil nur passende Spalten aufgezeichnet wurden, und der
+  Bildschirm konnte nur „Mismatched“ sagen.
 - Die Schaltfläche „Auto Match“ exportiert das Dokument auch, wenn „PO Auto
   Match and Export“ aktiviert ist. Bisher fand der Export nur statt, wenn das
   Dokument über „PO Match“ aus dem Dashboard geöffnet wurde.
@@ -131,6 +157,8 @@ wird aus dem Nettobetrag berechnet. Darüber hinaus:
 - Die Schaltfläche „Refresh“ auf dem Bestell-Dashboard leert den
   serverseitigen Cache vor dem Neuladen. Eine aus dem ERP importierte
   Bestellung erschien erst nach sieben bis acht Minuten.
+- Die Seite der Bestellabgleichregeln zeichnet das Regelwerk als
+  Flussdiagramm, und die Abgleichhistorie ist in die Aktionsleiste umgezogen.
 
 ### Auto Accounting
 
@@ -155,6 +183,9 @@ wird aus dem Nettobetrag berechnet. Darüber hinaus:
   Wechsel des Dokumenttyps blieben die Werte des vorherigen Typs stehen.
 - Transformationsregeln: Eine Aktion „Set value“ lässt sich speichern. Der
   Editor sendete sie unter einem Namen, den der Server ablehnt.
+- Wertelisten (List of Values): Die Seitenleiste zeigt eine neue Liste und
+  entfernt eine gelöschte ohne Neuladen; verspätete Antworten einer
+  vorherigen Liste überschreiben die aktuelle nicht mehr.
 - Der Link zu den Dokumentuntertypen wird bei Standard-Dokumenttypen
   angezeigt.
 - Das JPL-Mapping des SMB-Exports wird als `.properties` heruntergeladen,
@@ -200,27 +231,37 @@ getan haben. Dieses Release vervollständigt ihn:
   Lauf bleibt in einer Unterorganisationsansicht nicht mehr bei „Running · 0/6
   done“ hängen.
 - **Änderungsvorschläge.** Aus einer Empfehlung wird etwas, worauf Sie
-  reagieren können: ein Vorschlag, der auf das Feld zielt, das die Dokumente
-  blockiert, eine Vorschau, die zeigt, was er bewirken würde (nichts wird
-  gespeichert), Anwenden, gemessene Wirkung und Rückgängig. Agenten erreichen
-  dieselben Schritte über MCP-Tools. Behebungsschritte verlinken direkt auf
-  die genannte Einstellungsseite, vorgefiltert nach Dokumenttyp, Feld oder
-  Regel.
-- **Lieferantendiagnose.** Die Lieferantenseite erklärt einen leeren Zustand,
-  statt Nullen anzuzeigen, und bietet eine KI-Diagnose pro Lieferant an. Bis
-  zu fünf Lieferanten lassen sich auswählen und nebeneinander vergleichen.
+  reagieren können: Die Karte erklärt die vorgeschlagene Änderung in vier
+  Fragen, lässt Sie sie anpassen, zeigt in einer Vorschau, was sie bewirken
+  würde (nichts wird gespeichert), wendet sie an, misst die Wirkung und kann
+  sie rückgängig machen. Behebungsschritte verlinken direkt auf die genannte
+  Einstellungsseite, vorgefiltert nach Dokumenttyp, Feld oder Regel.
+- **Lieferantenseite.** Wählen Sie einen Lieferanten im Tab aus oder
+  durchsuchen Sie die Opportunity-Warteschlange nach Name oder Nummer. Die
+  Seite zeigt die Touchless-Quote des Lieferanten im Zeitverlauf (30 Tage bis
+  1 Jahr), seine Problemdokumente und die Dokumente, die gut gelaufen sind,
+  und bietet eine KI-Diagnose pro Lieferant an. Bis zu fünf Lieferanten
+  lassen sich nebeneinander vergleichen. Statt eines internen Hashs wird die
+  Lieferantennummer angezeigt.
 - **Pipeline-Fluss.** Ein Diagramm pro Dokument und pro Cluster zeigt den Weg
   durch Eingang, Klassifizierung, E-Dokument-Prüfung, Lieferant, OCR,
   Extraktion, Validierung, Bestellabgleich, Freigabe und Export — mit der
   Stufe, die ihn gestoppt hat.
-- **Gründe beim Bestellabgleich.** Die Abgleichentscheidung wird pro Dokument
-  nachverfolgt (Stufe, Durchlauf, Regel, Spalte) und im Touchless-Ergebnis
-  verdichtet. Ursachencodes unterscheiden „Bestellung nicht gefunden“ von
-  „Position stimmt nicht überein“ und „Pflichtfeld fehlt“, und die
-  Toleranzvorschläge des Beraters zielen auf die Regel-Engine, die
-  entscheidet.
+- **Bestellabgleich, erklärt.** Das Bestell-Regelwerk wird auf der
+  Einstellungsseite und in Touchless als Flussdiagramm gezeichnet — mit dem
+  Weg, den ein Dokument genommen hat, und einer klar formulierten Begründung,
+  warum es nicht durchgekommen ist. Ursachencodes unterscheiden „Bestellung
+  nicht gefunden“ von „Position stimmt nicht überein“ und „Pflichtfeld
+  fehlt“.
+- **Segmentierung.** KPIs, Cluster und Vorschläge lassen sich nach einem
+  Dokumentfeld aufteilen, zum Beispiel Order Type = Direct / Indirect.
 - **Korrekte Zahlen.** KPI-Kacheln respektieren den Unterorganisationsfilter
-  und zählen nur Dokumente, die der Drill-down auflisten kann.
+  und zählen nur Dokumente, die der Drill-down auflisten kann. Eine
+  Browser-Sitzung des Systembenutzers der Organisation zählt als menschlich,
+  sodass von Hand korrigierte Dokumente nicht mehr als Touchless abgelegt
+  werden.
+- Die Werkzeugleiste des Berichts bringt ihre Bedienelemente auf breiten
+  Bildschirmen unter, und die Farben im Dark Mode kommen aus dem Theme.
 
 ### DocNet
 
@@ -298,6 +339,9 @@ getan haben. Dieses Release vervollständigt ihn:
   1.000-Fachen des Rechnungsbetrags neu.
 - Ein Tabellenexport übersteht eine Position, deren Bestellung entfernt wurde;
   die Position wird ohne Preisbasis exportiert.
+- IDM-Export: Ein mehrwertiges Feld, das auf ein numerisches Feld (zum
+  Beispiel eine Menge) gemappt war, ließ die Export-Nutzlast abstürzen. Der
+  Wert wird zuerst in Text umgewandelt.
 
 ### E-Dokumente
 
@@ -324,9 +368,9 @@ getan haben. Dieses Release vervollständigt ihn:
   Postgres war `=` bisher ein Präfix-Treffer, sodass `invoice_id=911892112`
   auch 911892112333 lieferte.
 - Eine Suche ohne Chip ist eine Teilstring-Suche über alle Felder,
-  Geschäftskennungen eingeschlossen. Eine Kennung mit Bindestrich wie
-  `2026-003` ist ein einziges Literal, und der Klauseltyp ändert sich nach dem
-  fünften Zeichen nicht mehr.
+  Geschäftskennungen eingeschlossen. Bestellung, Auftragsnummer, Barcode,
+  Rechnungstyp, Rechnungsuntertyp und Anforderungsnummer hatten bisher gar
+  keinen Freitext-Zweig.
 - Der Chip für die Rechnungsnummer ist auf Postgres exakt, wie er es auf dem
   Index bereits war. Führende Nullen, Gleitkommaformen und
   Groß-/Kleinschreibung werden im Freitext und in Chips gleich behandelt.
@@ -334,29 +378,44 @@ getan haben. Dieses Release vervollständigt ihn:
   den Volltext-Service weiter. Bisher wurde jede Delegation abgewiesen, sodass
   das Dashboard stillschweigend nur Postgres durchsuchte und die Antwort als
   vollständig ausgab.
-- Trefferzahl und Trefferliste laufen auf einem Satz von Prädikaten. Die
-  Trefferzahl war bisher eine Postgres-Näherung, während die Liste aus dem
-  Index kam.
+- Status-Kacheln, Trefferzahl und Trefferliste laufen auf einem Satz von
+  Prädikaten. Die Kacheln beschrieben bisher während jeder Suche die gesamte
+  Organisation.
+- Berechtigungen für Unterorganisationen und Dokumenttypen werden vor dem
+  Ergebnisfenster angewendet, sodass erlaubte Dokumente nicht mehr aus der
+  Begrenzung von 500 / 10.000 herausfallen.
 - Die Vektorsuche ist auf das tatsächliche Ergebnisfenster begrenzt und meldet
   die Begrenzung, statt „(50)“ als exakte Gesamtzahl auszugeben.
-- Eine Suche, die ohne den Volltextindex lief (Index Minuten im Rückstand,
-  Capability-Abfrage fehlgeschlagen, eingeschränkte Feldauflösung), meldet
-  ihren Fensterstatus statt „vollständig“.
+- Eine Suche, die ohne den Volltextindex lief (Index fehlt, Index Minuten im
+  Rückstand, Capability-Abfrage fehlgeschlagen, eingeschränkte
+  Feldauflösung), meldet ihren Fensterstatus statt „vollständig“.
+- Dashboard-Exporte einer abgeschnittenen Suche tragen eine Hinweiszeile in
+  der CSV/XLSX und in der Benachrichtigungs-Mail.
 - Dokumentskripte, die die Volltextsuche aufrufen, authentifizieren sich
   korrekt und zeigen Fehler an, statt ein leeres Ergebnis zurückzugeben.
 
 ### Bestellabgleich (In-Process-Matcher)
 
-Für Organisationen, die in der API statt im PO Match Service abgleichen: Eine
-korrigierte Bestellnummer wird in demselben Speichervorgang abgeglichen, der
-sie korrigiert.
+Für Organisationen, die in der API statt im PO Match Service abgleichen:
+
+- Jeder Spaltenvergleich wird aufgezeichnet, einschließlich Einheitspreis und
+  Menge, sodass der Tooltip zur Abweichung die Spalte nennen kann, die nicht
+  gepasst hat.
+- Vom Benutzer entfernte Bestellungen bleiben im automatischen Abgleich
+  entfernt.
+- Eine korrigierte Bestellnummer wird in demselben Speichervorgang
+  abgeglichen, der sie korrigiert.
 
 ### Analytics
 
 - Touchless: alle Backend-Änderungen hinter dem Web-App-Abschnitt oben,
   einschließlich der von jeder Pipeline-Stufe aufgezeichneten Belege, des
   PO-Match-Trace, der Änderungsvorschläge mit Vorschau, Anwenden und
-  Zurücksetzen sowie des Massenstatus in einem Aufruf pro Tick.
+  Zurücksetzen, der Segmentierung, des Massenstatus in einem Aufruf pro Tick
+  und des Trend-Endpunkts, der jedes Zeitfenster und einen Lieferanten
+  akzeptiert.
+- Drei Analytics-Hintergrundaufgaben, die bei jedem geplanten Lauf
+  fehlschlugen, sind behoben.
 
 ---
 
@@ -369,6 +428,10 @@ sie korrigiert.
   welche Nummern ein Lauf nachgeschlagen hat. Die eigene Rechnungsnummer eines
   Dokuments ist nie ein Bestellkandidat. Ein verworfener Abgleich hinterlässt
   seinen Grund am Dokument für den Bildschirm.
+- Die Spalte, die nicht gepasst hat, wird aufgezeichnet, und die Spalten, die
+  eine Fallback-Regel entfernt hat, werden gemessen.
+- Vom Benutzer entfernte Bestellungen werden respektiert, und veraltete
+  Hintergrund-Abgleiche werden nach dem endgültigen Ausschluss bereinigt.
 - Der manuelle Abgleich funktioniert für Organisationen, deren Regeln kein
   `is_fallback`-Flag tragen. Benutzer wählten Positionen aus, drückten auf
   Abgleichen, und nichts kam zurück.
@@ -376,6 +439,8 @@ sie korrigiert.
   Keepalives und ein expliziter Soft-Time-Limit-Handler markieren die Aufgabe
   als fehlgeschlagen, statt sich auf einen Abbruch zu verlassen, der keine
   Spur hinterließ.
+- Zwei Produktionsfehler (ein Einheitspreis `NaN`, eine Gruppe ohne Mengen)
+  lassen nicht mehr den gesamten Abgleich scheitern.
 - Toleranzänderungen werden pro Abgleichanfrage gelesen, sodass eine gerade
   eben gespeicherte Toleranz vom nächsten Abgleich verwendet wird.
 - Der fünfstufige Entscheidungs-Trace wird pro Dokument für Touchless
@@ -385,36 +450,70 @@ sie korrigiert.
 
 ## Auth Service — `1.78.27`
 
+- `/organisation/subscriptions` kann den Guthabenstand überspringen, und die
+  Guthabenberechnung führt alle Vertragsjahr-Fenster in einem Statement aus
+  statt einer Abfrage pro Fenster (32 Abfragen zu je etwa 700 ms bei der
+  größten Organisation). Ein tägliches Nutzungs-Rollup ist für die weitere
+  Verwendung vorbereitet.
+- Die Angaben zu verbleibenden Tokens in den Organisations-Readern werden pro
+  Vertragsjahr berechnet.
 - Der Token-Ablauf wird bei Cache-Treffern durchgesetzt. Ein
   zwischengespeicherter Eintrag konnte bis zu neun Stunden nach Ablauf des
   Tokens authentifizieren.
 - Die Token-Prüfung schreibt eine unveränderte `org_id` nicht mehr bei jeder
   Anfrage in die Benutzerzeile zurück, was ein UPDATE pro Aufruf erzeugte.
-- Ein Speicherleck, das den Autoscaler auf die maximale Replikazahl trieb, ist
+- Health-Checks überspringen Redis-I/O, und der Redis-Client wird gepoolt. Ein
+  Speicherleck, das den Autoscaler auf die maximale Replikazahl trieb, ist
   behoben, und der Service läuft wieder mit zwei Workern.
+- Eine wiederholte Lieferantenregistrierung (Magic Link zweimal geöffnet)
+  verwendet die bestehende Mitgliedschaft wieder, statt mit einem
+  Duplicate-Key-Fehler zu scheitern.
+- Der Mail-Thread für das Zurücksetzen des Passworts verwendet die eine
+  registrierte Flask-App; das Zurücksetzen scheiterte seit dem 25. August mit
+  „current Flask app is not registered“.
 - Das Systembenutzer-Flag kann bei einem bestehenden Benutzer geändert werden,
   wenn kein anderes Mitglied es hält.
+- MCP-Anmeldung: transaktionsgebundene MFA, einmalige Einwilligung und eine
+  erzwungene Kontoauswahl, wenn der Browser zwei Sitzungsidentitäten hält.
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-- Wenn der Replikationsstream zwischen EU und US abreißt, wird der
-  Replikations-Slot an Ort und Stelle wieder angebunden, statt die Bridge neu
-  aufzubauen und den vollständigen Start-Abgleich erneut auszuführen, während
-  dessen der Slot inaktiv war.
+Replikation der Authentifizierung zwischen EU und US:
+
+- Der periodische Abgleich hält den Replikationsstream am Leben. Er dauerte
+  etwa 95 s, während das Sender-Timeout bei 60 s lag, sodass jeder
+  sechsstündliche Abgleich den Stream planmäßig abreißen ließ.
+- Wenn der Stream abreißt, wird der Replikations-Slot an Ort und Stelle wieder
+  angebunden, statt die Bridge neu aufzubauen und den vollständigen
+  Start-Abgleich erneut auszuführen.
+- Der Abgleich vergleicht Primärschlüssel seitenweise, statt beide Seiten in
+  den Speicher zu laden, was nicht mehr hineinpasst, seit die Token-Tabelle
+  Teil der Replikation ist.
+- Eine bereits vorhandene Replikationsherkunft (Replication Origin) gilt als
+  Erfolg, nicht als Beeinträchtigung.
 
 ---
 
 ## Extraction Service — `1.55.33`
 
+- Die strukturierte Extraktion wird pro Lieferant aufgelöst: Die Einstellung
+  eines trainierten Layouts gewinnt gegenüber der Organisationseinstellung,
+  genauso wie beim KI-Modell.
+- Ein gelerntes Spalten-Mapping kann keine Spalten verbieten, die die Rechnung
+  hat.
 - KI-Tabellenextraktion: Betragsspalten werden als Zahlen mit Beschreibung
   typisiert, und erfundene nicht-numerische Werte in Betragsspalten (ein
   „St.“, das aus der Nachbarzelle in den Einheitspreis kopiert wurde) werden
   verworfen statt gespeichert.
-- US-Rechnungen: Gleitkomma-Rauschen unterhalb eines Cents entscheidet nicht
-  mehr zwischen Kandidatenpaaren für Netto und Steuer (268,28 + 22,13 verlor
-  gegen Netto = Gesamt, Steuer = 0).
+- US-Rechnungen: Wenn der Nettobetrag bereits dem Gesamtbetrag entspricht,
+  wird die Steuer auf 0 aufgelöst, statt eine falsch extrahierte Steuer zu
+  behalten. Gleitkomma-Rauschen unterhalb eines Cents entscheidet nicht mehr
+  zwischen Kandidatenpaaren für Netto und Steuer (268,28 + 22,13 verlor gegen
+  Netto = Gesamt, Steuer = 0).
+- Eine Tabelle, deren Kopfzeile nie auf echte Namen gemappt wurde, wird
+  extrahiert, statt vollständig zu scheitern.
 
 ---
 
@@ -424,19 +523,19 @@ sie korrigiert.
   Stage liefen ohne ihn, seit die aktiven Env-Dateien angelegt wurden. Upload
   und Löschung invalidieren ihn, sodass eine Suche nach einem Upload das neue
   Dokument sieht.
-- Eine einfache Suche nach einer bloßen Rechnungsnummer liefert die exakt
-  passende Rechnung. Ausgeschriebene Währungswerte, ältere Boolean-Mappings,
-  Datumsangaben und Steuer-Flags überstehen den Neuaufbau des schlanken
-  Index, und Indexeinträge ohne Felder werden erkannt und aus der Extraktion
-  wiederhergestellt.
 - Exaktes `=` auf einem dynamischen Textfeld vergleicht nur den gesamten Wert.
   Ein Wildcard auf dem analysierten Pfad ließ `note_field=53173` auf „PO 53173
   / 2024“ treffen.
 - Eine bloße Kennung mit Bindestrich wie `2026-003` ist ein einziges Literal,
   kein Haufen von Tokens.
-- Lesepfade legen den Index, den sie lesen, nicht mehr selbst an, und jede
-  Antwort ohne Treffer trägt einen Fensterstatus und einen Grund.
-- Das serviceseitige Limit von 50 der Vektorsuche ist weg.
+- Bestellnummern werden in jeder Speicherform gefunden, einschließlich rein
+  numerischer Kennungen, deren exakte Klausel stillschweigend verworfen wurde.
+- Lesepfade legen den Index, den sie lesen, nicht mehr selbst an. Ein
+  fehlender oder leerer Index meldete „vollständig, 0 Treffer“; jede Antwort
+  ohne Treffer trägt jetzt einen Fensterstatus und einen Grund.
+- Ausgeschriebene Währungswerte, ältere Boolean-Mappings, Datumsangaben und
+  Steuer-Flags überstehen den Neuaufbau des schlanken Index, und Indexeinträge
+  ohne Felder werden erkannt und aus der Extraktion wiederhergestellt.
 
 ---
 
@@ -448,6 +547,10 @@ sie korrigiert.
   importieren, den sie dann nicht öffnen konnte.
 - Eine Workflow-Umbenennung wird mit dem Speichern übernommen, und
   Umbenennungen von Vorlagen werden gespeichert.
+- Die Aktualisierung „pending workflow execution“ wird bei abgebrochenen
+  Verbindungen wiederholt. Eine einzige fehlgeschlagene Anfrage ließ das Flag
+  unverändert und hielt das Dokument vom Export fern, bis jemand es neu
+  startete.
 
 ---
 
@@ -486,8 +589,7 @@ sie korrigiert.
 Nur Build- und Deployment-Änderungen (Aktualisierung des Basis-Images,
 CI-Zugangsdaten). Keine Verhaltensänderung.
 
-<!-- Release R1.0.13. Announced: tickets with Jira "Release No." = R1.0.13 and a
-     status on sandbox or beyond, plus DOCB-14454, DOCB-14450, DOCB-14415,
-     DOCB-14419, DOCB-14431, DOCB-14045/46 (no Release No., on sandbox).
-     Held back (Release No. R1.1): DRFS-778, DRFS-712, MEF-165, MEF-166, DOCB-14389.
-     Labelled R1.0.12 but code ships now: DRFS-746/748/749/750/751, DOCB-14282. -->
+<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
+     Held back because Jira "Release No." names the later release R1.1:
+     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
+     DOCB-14389. Announce them with R1.1. -->

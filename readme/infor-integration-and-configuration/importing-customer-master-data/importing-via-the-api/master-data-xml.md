@@ -58,6 +58,8 @@ Authorizing works exactly as for the BOD imports: click the **lock icon**, paste
 
 ### 3. Fill in the fields
 
+<figure><img src="../../../.gitbook/assets/import-tryitout.png" alt="The Try it out button on the endpoint"><figcaption><p>Try it out unlocks the form</p></figcaption></figure>
+
 Click **Try it out**, then fill in the form.
 
 <!-- SCREENSHOT: the Try it out form of /master_data_lookup/xml/import_xml_file -->
@@ -100,6 +102,8 @@ Check which environment and which organization you are pointing at before you ex
 ### 4. Execute
 
 Before you execute, check the **Servers** dropdown at the bottom of the form.
+
+<figure><img src="../../../.gitbook/assets/import-execute.png" alt="The Servers dropdown and the Execute button"><figcaption><p>Check the server, then Execute</p></figcaption></figure>
 
 Click **Execute**. A successful import tells you how many records it wrote:
 

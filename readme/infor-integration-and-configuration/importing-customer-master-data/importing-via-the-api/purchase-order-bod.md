@@ -89,6 +89,8 @@ Paste the key on its own — do not type `Bearer` in front of it. Both authoriza
 
 ### 3. Fill in the fields
 
+<figure><img src="../../../.gitbook/assets/import-tryitout-po.png" alt="The Try it out button on the endpoint"><figcaption><p>Try it out unlocks the form</p></figcaption></figure>
+
 Click **Try it out**, then fill in the form for the endpoint you chose.
 
 #### Uploading a file — `/import/purchase_order_bod`

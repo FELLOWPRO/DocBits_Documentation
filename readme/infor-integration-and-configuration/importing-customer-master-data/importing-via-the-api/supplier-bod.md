@@ -12,6 +12,8 @@ Supplier master data normally reaches DocBits automatically through your ION dat
 
 There are two endpoints, and they do the same thing. The only difference is how you hand over the BOD:
 
+<figure><img src="../../../.gitbook/assets/import-supplier-endpoints.png" alt="The two supplier import endpoints"><figcaption><p>Upload a file, or send the XML in the request</p></figcaption></figure>
+
 | Endpoint | Use it when |
 | --- | --- |
 | `/import/supplier_bod` | You have the BOD as an **XML file** and want to upload it. |
@@ -67,9 +69,13 @@ Everything under **import** is locked until you authorize. There are two things 
 
 <figure><img src="../../../.gitbook/assets/import-authorize-orgid.png" alt="The X-ORG-ID authorization with an empty value field"><figcaption><p>X-ORG-ID — paste the Org ID, then Authorize</p></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/import-authorize-orgid-done.png" alt="The X-ORG-ID authorization showing the Authorized state"><figcaption><p>X-ORG-ID is set</p></figcaption></figure>
+
 * Scroll down to **X-API-KEY**, paste your API key and click **Authorize**. In DocBits you find it under **Settings → Integration & SSO** in the **API Key** section, or you can [create a new key](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#creating-an-api-key).
 
 <figure><img src="../../../.gitbook/assets/import-authorize-apikey.png" alt="The X-API-KEY authorization with an empty value field"><figcaption><p>X-API-KEY — paste the key, then Authorize</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/import-authorize-apikey-done.png" alt="The X-API-KEY authorization showing the Authorized state"><figcaption><p>X-API-KEY is set</p></figcaption></figure>
 
 * Click **Close**.
 
@@ -79,11 +85,13 @@ Paste the key on its own — do not type `Bearer` in front of it. Both authoriza
 
 ### 3. Fill in the fields
 
+<figure><img src="../../../.gitbook/assets/import-tryitout.png" alt="The Try it out button on the endpoint"><figcaption><p>Try it out unlocks the form</p></figcaption></figure>
+
 Click **Try it out**, then fill in the form for the endpoint you chose.
 
 #### Uploading a file — `/import/supplier_bod`
 
-<!-- SCREENSHOT: the Try it out form of /import/supplier_bod -->
+<figure><img src="../../../.gitbook/assets/import-supplier-bod-form.png" alt="The supplier import form filled in"><figcaption><p>The request body form, filled in</p></figcaption></figure>
 
 | Field | |
 | --- | --- |
@@ -136,6 +144,8 @@ Check which environment and which organization you are pointing at before you ex
 
 Before you execute, check the **Servers** dropdown at the bottom of the form. It decides which environment the request is actually sent to, and it can differ from the page you opened.
 
+<figure><img src="../../../.gitbook/assets/import-execute.png" alt="The Servers dropdown and the Execute button"><figcaption><p>Check the server, then Execute</p></figcaption></figure>
+
 Click **Execute**. A successful import returns:
 
 ```json
@@ -144,6 +154,8 @@ Click **Execute**. A successful import returns:
   "message": "BOD processed successfully."
 }
 ```
+
+<figure><img src="../../../.gitbook/assets/import-supplier-response.png" alt="The curl command and the server response"><figcaption><p>A successful supplier import</p></figcaption></figure>
 
 Supplier BODs are processed while you wait, so by the time you see this message the data is in.
 

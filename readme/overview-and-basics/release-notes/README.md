@@ -1,6 +1,6 @@
 # Sürüm Notları
 
-> **En son hotfix sürümü:** [Hotfixler 8 Eylül 2026](incremental-updates-8-september-2026.md): satın alma siparişi eşleştirmesi — eşleşme kaydetme sonrası korunur, kaydetme sırasında eşleştirme tekrar çalışır, ekranda neden eşleşme olmadığı belirtilir, PO birim fiyatı net tutardan alınır. Önceki: [Hotfixler 12–25 Ağustos 2026](incremental-updates-12-25-august-2026.md). Tüm hotfix sayfaları, Yayın Notları altında gezinme menüsünde listelenmiştir.
+> **En son hotfix sürümü:** [Hotfixler 15 Eylül 2026](incremental-updates-15-september-2026.md) (R1.0.13): pano araması için tek bir kural seti, tek bir arama alanı benzersiz olduğunda tedarikçi tanınır, satın alma siparişi eşleştirmesi kendini açıklar, takılan belgeler ve yanlış dışa aktarma hataları düzeltildi, Touchless Intelligence, büyük ana verilerde donma yok. Önceki: [Hotfixler 8 Eylül 2026](incremental-updates-8-september-2026.md). Tüm hotfix sayfaları, Yayın Notları altında gezinme menüsünde listelenmiştir.
 
 ## **Release R1.0 13/14 Haziran 2026**
 

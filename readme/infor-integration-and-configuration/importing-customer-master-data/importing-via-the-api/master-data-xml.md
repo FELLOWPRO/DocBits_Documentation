@@ -1,0 +1,110 @@
+---
+description: How to import master data into a lookup dataset from an XML file
+hidden: true
+noIndex: true
+---
+
+# Import Master Data from XML
+
+Alongside the BOD imports, DocBits can read master data out of **any XML file** into a lookup dataset of your choosing. You tell it which dataset to write to and which XPath each column should be read from, so the XML does not have to follow a BOD format at all.
+
+Use this for master data that does not arrive as a BOD — price lists, cost centres, item attributes, anything your ERP can export as XML.
+
+## Two ways to send the XML
+
+| Endpoint | Use it when |
+| --- | --- |
+| `/master_data_lookup/xml/import_xml_file` | You have the data as an **XML file** and want to upload it. |
+| `/master_data_lookup/xml/import_xml_data` | You want to **paste the XML** into the request. Unlike the BOD endpoints, this one takes the XML as plain text — no JSON wrapper. |
+
+Both are described below. Steps 1 and 2 are the same either way.
+
+## Before you start
+
+You will need:
+
+* **An API key.** See [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md) if you do not have one yet.
+* **The XML** — as a file or as content you can paste.
+* **A data type** — the name of the lookup dataset to write into.
+* **Field mappings** — which XPath fills which column.
+* **Your Org ID**, from **Settings → Integration & SSO** in the **ID** section.
+
+<figure><img src="../../../.gitbook/assets/import-org-id.png" alt="The ID section showing Org ID and Sub Org ID with their copy buttons"><figcaption><p>Settings → Integration &#x26; SSO → ID</p></figcaption></figure>
+
+## Step-by-Step Instructions
+
+### 1. Open the API link
+
+Open the API test interface for the environment and region you are working with:
+
+* [Sandbox API (Europe)](https://eu.sandbox.api.docbits.com/docs#/master%20data%20lookup/import_xml_file_master_data_lookup_xml_import_xml_file_post)
+* [Sandbox API (United States)](https://us.sandbox.api.docbits.com/docs#/master%20data%20lookup/import_xml_file_master_data_lookup_xml_import_xml_file_post)
+* [Production API (Europe)](https://eu.api.docbits.com/docs#/master%20data%20lookup/import_xml_file_master_data_lookup_xml_import_xml_file_post)
+* [Production API (United States)](https://us.api.docbits.com/docs#/master%20data%20lookup/import_xml_file_master_data_lookup_xml_import_xml_file_post)
+
+These endpoints sit under **master data lookup** rather than **import**, further down the page.
+
+{% hint style="info" %}
+Use the region your organization is hosted in — the same region you use to log in to DocBits. The European and American environments are separate, so an import sent to the wrong region will not show up in your organization.
+{% endhint %}
+
+### 2. Authorize
+
+Authorizing works exactly as for the BOD imports: click the **lock icon**, paste your **Org ID** into **X-ORG-ID**, paste your API key into **X-API-KEY**, and click **Authorize** on each.
+
+<figure><img src="../../../.gitbook/assets/import-authorize-orgid.png" alt="The X-ORG-ID authorization with an empty value field"><figcaption><p>X-ORG-ID — paste the Org ID, then Authorize</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/import-authorize-apikey.png" alt="The X-API-KEY authorization with an empty value field"><figcaption><p>X-API-KEY — paste the key, then Authorize</p></figcaption></figure>
+
+### 3. Fill in the fields
+
+Click **Try it out**, then fill in the form.
+
+<!-- SCREENSHOT: the Try it out form of /master_data_lookup/xml/import_xml_file -->
+
+| Field | |
+| --- | --- |
+| **data\_type** | Required. The lookup dataset to write into. It is lower-cased automatically, so `PriceList` and `pricelist` are the same dataset. |
+| **field\_mappings** | Required. A JSON object pairing each column with the XPath it is read from. See below. |
+| **file** | Required on `import_xml_file`. Click **Choose file** and select your XML. |
+| **xml** | Required on `import_xml_data` instead of the file — paste the XML in as plain text. |
+| **org\_id** | Your Org ID — the same value you put into **X-ORG-ID** in step 2. |
+| **sub\_org\_id** | Only needed if you are importing into a particular sub-organization. |
+
+#### Field mappings
+
+`field_mappings` is a JSON object. The name on the left becomes the column in the dataset — you choose these freely, unlike the BOD imports where they must be `custom_field_1` … `custom_field_5`. The value on the right is the XPath to read it from:
+
+```json
+{
+  "ItemID": "//Item/ID",
+  "Description": "//Item/Description",
+  "Price": "//Item/UnitPrice"
+}
+```
+
+The XPaths are checked against your XML before anything is written, so a path that does not match the document is reported rather than silently importing empty columns.
+
+{% hint style="warning" %}
+Some dataset names are reserved by DocBits and cannot be written to this way. Using one returns `RESERVED_DATASET_NAME` — pick a different `data_type`.
+{% endhint %}
+
+{% hint style="warning" %}
+Check which environment and which organization you are pointing at before you execute. An import writes straight into that organization's master data.
+{% endhint %}
+
+### 4. Execute
+
+Before you execute, check the **Servers** dropdown at the bottom of the form.
+
+Click **Execute**. Unlike the BOD imports, these endpoints report problems with a proper error status rather than a `200` carrying `"success": false` — a **400** means the request was rejected and nothing was written.
+
+### 5. Check that the data arrived
+
+* In DocBits, go to **Settings → Document Processing → Lookup Master Data**.
+* Select **Imported** on the left, then open the tab for your data type.
+* The columns are the names you used on the left-hand side of `field_mappings`.
+
+<!-- SCREENSHOT: Lookup Master Data with Imported selected and the new dataset open -->
+
+Importing the same data again updates the existing records rather than duplicating them.

@@ -10,7 +10,10 @@ Master data normally reaches DocBits automatically through your ION data flow. T
 
 Each page follows the same five steps: open the API link for your environment, authorize with your Org ID and API key, fill in the form, execute, and check that the data arrived.
 
+* [Import Suppliers (Supplier BOD)](supplier-bod.md)
 * [Import Purchase Orders (Purchase Order BOD)](purchase-order-bod.md)
+* [Import Goods Receipts (Receive Delivery BOD)](receive-delivery-bod.md)
+* [Import Master Data from XML](master-data-xml.md)
 
 ## What you need
 

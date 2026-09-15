@@ -34,7 +34,9 @@ To find the Org ID, go to **Settings → Integration & SSO** and open the **ID**
 <figure><img src="../../../.gitbook/assets/import-org-id.png" alt="The ID section showing Org ID and Sub Org ID with their copy buttons"><figcaption><p>Settings → Integration &#x26; SSO → ID</p></figcaption></figure>
 
 {% hint style="info" %}
-**Sub Org ID** only matters if your organization is split into sub-organizations. If you are not importing into a particular sub-organization, leave the `sub_org_id` field empty.
+**Sub Org ID** shows whichever sub-organization is selected in the header. With **CROSS** selected — the view across all sub-organizations — it shows the same value as **Org ID**, which is why the two fields match in the screenshot above. Switch to a specific sub-organization first if you need its ID.
+
+If you are not importing into a particular sub-organization, leave the `sub_org_id` field empty.
 {% endhint %}
 
 ## Step-by-Step Instructions
@@ -96,7 +98,7 @@ Click **Try it out**, then fill in the form for the endpoint you chose.
 | Field | |
 | --- | --- |
 | **file** | Required. Click **Choose file** and select your `SyncPurchaseOrder` XML file. |
-| **org\_id** | Leave empty — the organization is already set through **X-ORG-ID** in step 2. Fill it in only to import into a different organization, and only one your API key has access to; anything else is refused. |
+| **org\_id** | Your Org ID — the same value you put into **X-ORG-ID** in step 2. Setting it here as well makes the request explicit about which organization it is writing to. It must be an organization your API key has access to; anything else is refused. |
 | **sub\_org\_id** | Only needed if you work with sub-organizations. Leave empty otherwise. |
 | **custom\_fields\_mapping** | Optional. Reads extra header fields out of the BOD into the purchase order's custom fields. See [Custom field mappings](#custom-field-mappings) below. |
 | **custom\_line\_fields\_mapping** | Optional. The same, for extra fields on the order lines. |
@@ -122,8 +124,6 @@ Line mappings use the same `custom_field_1` … `custom_field_5` names, but thei
 ```json
 {"custom_field_1": "./UserArea/Property/NameValue[@name='User defined 1']/text()"}
 ```
-
-See [Field Mappings](../field-mappings.md) for the mappings used for standard fields.
 
 #### Pasting the XML — `/import/purchase_order_bod_xml`
 

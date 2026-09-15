@@ -13,38 +13,41 @@ not listed had no customer-facing changes._
   this value on every search engine, `field:value` means contains (with `value*`
   and `*value` for starts-with and ends-with), and `field!=value` also returns
   documents that have no value at all. A search without a chip is a substring
-  search across every field, business identifiers included. Result count and
-  result list describe the same set of documents, and a search that hit the
-  result window or ran without the full-text index says so instead of reporting
-  "complete". The dashboard's own search connection (WebSocket) never reached
-  the full-text index before; it does now.
+  search across every field, purchase order numbers, barcodes and requisition
+  numbers included. Result count, status tiles and pagination describe the same
+  set of documents, and a search that hit the result window or ran without the
+  full-text index says so instead of reporting "complete". The dashboard's own
+  search connection (WebSocket) never reached the full-text index before; it
+  does now.
 - **Suppliers are recognised more often.** When one lookup field (tax id,
   IBAN, supplier number) matches exactly one supplier, that supplier is used
   even if a broad field such as the name matches several. XRechnung CII and
-  Facturae documents carry their supplier fields again. Where master data
-  replaced an extracted value, the validation screen says so and lets you
-  restore the original.
+  Facturae documents carry their supplier fields again. Where
+  master data replaced an extracted value, the validation screen says so and
+  lets you restore the original.
 - **Purchase order matching explains itself.** The screen says why there is no
-  match and why a match was not kept, matching history lists the
-  transformation rules that ran, and PO unit prices are derived from the net
-  amount. Manual matches work again for organisations without a fallback rule,
-  and a killed matching task marks the document as failed instead of parking
-  it in "Queue" forever.
-- **Stuck documents and false errors.** Organisations that upload continuously
-  had documents demoted to a queue priority that was never served during
-  business hours (866 documents stuck in "new" at one customer). A retry
-  sweeper could overwrite a successfully exported document with "error" hours
-  later and fire the export-error mail for it. That path is closed.
+  match, the mismatch tooltip names the column that failed, matching history
+  lists the transformation rules that ran, and PO unit prices are derived from
+  the net amount. Manual matches work again for organisations without a
+  fallback rule, removed purchase orders stay removed, and a killed matching
+  task marks the document as failed instead of parking it in "Queue" forever.
+- **Stuck documents and false errors.** Organisations that
+  upload continuously had documents demoted to a queue priority that was never
+  served during business hours (866 documents stuck in "new" at one customer).
+  A retry sweeper could overwrite a successfully exported document with
+  "error" hours later and fire the export-error mail for it. That path is
+  closed.
 - **Touchless Intelligence.** The Analytics tab that measures how many
   documents pass through DocBits without a human touch gets its full first
   release: issue clusters with AI advice, bulk analysis, change proposals with
-  preview, apply and undo, a per-supplier AI diagnosis, and a pipeline-flow
-  diagram per document.
-- **Faster where data is large.** The accounting dropdown works for
-  organisations with more than 2,000 accounts, the E-Documents rules page
-  pages its 1,600 rules on the server instead of freezing the browser, and
-  Refresh on the purchase order dashboard returns fresh data instead of a
-  cached list.
+  preview, apply and undo, a supplier page with trend and examples, a
+  pipeline-flow diagram per document, and a purchase-order rule-set diagram
+  that says why a document did not pass.
+- **Faster where data is large.** Cold logins skip the credit ledger sum that
+  took up to 33 s, the accounting dropdown works for organisations
+  with more than 2,000 accounts, the E-Documents rules page pages its 1,600
+  rules on the server instead of freezing the browser, and Refresh on the
+  purchase order dashboard returns fresh data instead of a cached list.
 - **Security.** Frontend source maps stop shipping with every deploy,
   master-data lookup filters are bound as SQL parameters instead of
   interpolated, an expired token is rejected even on a cache hit, and the
@@ -57,13 +60,26 @@ not listed had no customer-facing changes._
 
 ### Signing in and accounts
 
+- Login is faster. The subscription check at login asked for the full credit
+  balance, which summed millions of ledger rows and often ran past the client's
+  10 s timeout. The login now only asks whether a subscription exists; balances
+  are still calculated on Settings → Subscription.
+- Switching regions (EU ↔ US) keeps you signed in. The target region
+  answers "invalid token" for a few seconds until the session has replicated,
+  and two code paths read that as a dead session.
 - The "Updating DocBits v10.59.3.1 → v10.59.3.1" overlay that reloaded forever
   on sandbox is fixed. A same-version reload no longer shows the overlay, the
   loop is bounded per tab, and a banner offers manual recovery if it happens
   again.
+- Administrators can grant the Analytics Dashboard tab to specific roles, and
+  role changes save reliably.
 - The System Admin checkbox can be ticked on an existing user. Creating a
   system admin from the frontend now has an effect; a sync job used to reset
   the flag on every run.
+- Settings → Roles: the members list renders instead of hanging behind a loader
+  when the server answers with an error.
+- Signing in to the DocBits MCP server enforces two-factor authentication and
+  single-use consent.
 
 ### Dashboard and search
 
@@ -76,10 +92,10 @@ not listed had no customer-facing changes._
 - When a bare search finds nothing, the dashboard explains the rule and offers
   one-click chips (`Invoice number : <term>`, `Purchase order : <term>`,
   `Supplier ID : <term>`).
-- A search with zero results resets the pager. Before, the pagination kept the
-  previous search's count.
-- Requisition numbers and requisitioners are found by a plain search, without
-  a chip.
+- A search with zero results resets the pager and every count on the page.
+  Before, the pagination kept the previous search's count.
+- Purchase order numbers, order numbers, barcodes, invoice types and
+  requisition numbers can be found without a chip.
 
 ### Validation screen
 
@@ -95,6 +111,9 @@ not listed had no customer-facing changes._
   Number and Purchase Order).
 - Saving extraction rules works after you type a page number and then draw a
   box for a field. That sequence used to crash the save.
+- Structured extraction can be switched on per supplier, in the tfidf popup of
+  the validation screen and as a read-only column in Settings → Classification
+  & Extraction.
 - Train Model runs in the background. The screen shows "training started",
   polls for the result and reports success or failure. Large organisations
   used to get a gateway error while training carried on server-side.
@@ -109,6 +128,9 @@ again when the PO number is corrected, the screen says why there is no match
 and why a match was not kept, matching history shows the transformation rules,
 and the PO unit price is calculated from the net amount. In addition:
 
+- The mismatch tooltip names the column that did not match. It used to be empty
+  because only matched columns were recorded, and the screen could only say
+  "Mismatched".
 - The Auto Match button also exports the document when "PO Auto Match and
   Export" is on. Before, the export only happened when the document was opened
   from the dashboard via "PO Match".
@@ -117,6 +139,8 @@ and the PO unit price is calculated from the net amount. In addition:
 - The purchase order dashboard's Refresh button clears the server-side cache
   before reloading. A purchase order imported from the ERP appeared only after
   seven to eight minutes.
+- The PO matching rules page draws the rule set as a flow chart, and the
+  matching history has moved into the action toolbar.
 
 ### Auto accounting
 
@@ -139,6 +163,9 @@ and the PO unit price is calculated from the net amount. In addition:
   behind.
 - Transformation rules: a "Set value" action saves. The editor sent it under a
   name the server rejects.
+- List of Values: the sidebar shows a new list and drops a deleted one without
+  a reload; late responses from a previous list no longer overwrite the
+  current one.
 - The document sub types link is shown on standard document types.
 - The SMB export's JPL mapping downloads as `.properties`, so the file can be
   uploaded again. It was named `.xml` and rejected on the way back in.
@@ -175,24 +202,32 @@ This release completes it:
   what the run is doing, and find the results afterwards. The result list
   survives navigation and reload, and the run no longer hangs on "Running · 0/6
   done" in a sub-organisation view.
-- **Change proposals.** A recommendation becomes something you can act on: a
-  proposal that targets the field that blocks the documents, a preview that
-  shows what it would do (nothing is saved), apply, measured effect, and undo.
-  Agents reach the same steps through MCP tools. Fix steps deep-link to the
-  settings page they name, pre-filtered by document type, field or rule.
-- **Supplier diagnosis.** The supplier page explains an empty state instead of
-  showing zeros, and offers a per-supplier AI diagnosis. Up to five suppliers
-  can be picked and compared side by side.
+- **Change proposals.** A recommendation becomes something you can act on: the
+  card explains the proposed change in four questions, lets you adjust it,
+  previews what it would do (nothing is saved), applies it, measures the
+  effect and can undo it. Fix steps deep-link to the settings page they name,
+  pre-filtered by document type, field or rule.
+- **Supplier page.** Pick a supplier from the tab or search the opportunity
+  queue by name or number. The page shows the supplier's touchless rate over
+  time (30 days to 1 year), its problem documents and the documents that went
+  well, and offers a per-supplier AI diagnosis. Up to five suppliers can be
+  compared side by side. The supplier number is shown instead of an internal
+  hash.
 - **Pipeline flow.** A diagram per document and per cluster shows the path
   through intake, classification, e-document check, supplier, OCR, extraction,
   validation, PO matching, approval and export, with the stage that stopped it.
-- **Purchase order matching reasons.** The matching decision is traced per
-  document (stage, pass, rule, column) and condensed into the Touchless result.
-  Reason codes distinguish "purchase order not found" from "line mismatch" and
-  "required field missing", and the advisor's tolerance proposals target the
-  rule engine that decides.
+- **Purchase order matching, explained.** The PO rule set is drawn as a flow
+  chart on the settings page and in Touchless, with the path one document took
+  and a plain-language reason why it did not pass. Reason codes distinguish
+  "purchase order not found" from "line mismatch" and "required field missing".
+- **Segmentation.** KPIs, clusters and proposals can be split by a document
+  field, for example Order Type = Direct / Indirect.
 - **Correct numbers.** KPI tiles respect the sub-organisation filter and count
-  only documents the drill-down can list.
+  only documents the drill-down can list. A browser session by the
+  organisation's system user counts as human, so documents corrected by hand
+  are no longer filed as touchless.
+- The report's toolbar fits its controls on wide screens, and dark mode
+  colours come from the theme.
 
 ### DocNet
 
@@ -243,8 +278,9 @@ This release completes it:
 - Merging and appending accepts `.PDF` and `.Pdf` files. Scanner output named
   `SCAN0001.PDF` was rejected with "Only PDF files are allowed."
 - Cache invalidation scans the key space once instead of twice and only clears
-  the lookup data types a BOD changed. Every BOD used to wipe the whole lookup
-  cache for the organisation, blocking the API while it walked everyone's keys.
+  the lookup data types a BOD changed. Every BOD used to wipe the
+  whole lookup cache for the organisation, blocking the API while it walked
+  everyone's keys.
 - Model retraining runs as a background task and returns immediately with a
   status the UI polls.
 - A processing token from another organisation is rejected independently of
@@ -259,6 +295,8 @@ This release completes it:
   repriced the line at 1,000 times the invoiced amount.
 - A table export survives a line whose purchase order has been removed; the
   line is exported without a price basis.
+- IDM export: a multi-value field mapped to a numeric field (for example a
+  quantity) crashed the export payload. The value is converted to text first.
 
 ### E-documents
 
@@ -284,35 +322,45 @@ This release completes it:
   used to be a prefix match, so `invoice_id=911892112` also returned
   911892112333.
 - A bare search is a substring search over every field, business identifiers
-  included. A hyphenated identifier such as `2026-003` is one literal, and the
-  clause type no longer changes after the fifth character.
+  included. Purchase order, order number, barcode, invoice type, invoice sub
+  type and requisition number had no bare-text arm at all.
 - The invoice number chip is exact on Postgres, as it already was on the
   index. Leading zeros, float forms and case are treated the same in free text
   and in chips.
 - The dashboard's WebSocket search carries the caller's credential to the
   full-text service. Every delegation was refused before, so the dashboard
   silently searched Postgres alone and presented the answer as complete.
-- Result count and result list run on one set of predicates. The count used to
-  be a Postgres approximation while the list came from the index.
+- Status tiles, result count and result list run on one set of predicates.
+  The tiles used to describe the whole organisation during any search.
+- Sub-organisation and document-type permissions are applied before the result
+  window, so permitted documents no longer fall out of the 500 / 10,000 cap.
 - Vector search caps at the real result window and reports the cap instead of
   showing "(50)" as an exact total.
-- A search that ran without the full-text index (index minutes behind,
-  capability lookup failed, degraded field resolution) reports its window
-  status instead of "complete".
+- A search that ran without the full-text index (index missing, index minutes
+  behind, capability lookup failed, degraded field resolution) reports its
+  window status instead of "complete".
+- Dashboard exports of a truncated search carry a notice row in the CSV/XLSX
+  and in the notification mail.
 - Document scripts that call the full-text search authenticate correctly and
   surface failures instead of returning an empty result.
 
 ### Purchase order matching (in-process matcher)
 
 For organisations that match in the API rather than in the PO Match Service:
-a corrected PO number is matched in the save that corrects it.
+
+- Every column comparison is recorded, including unit price and quantity, so
+  the mismatch tooltip can name the column that failed.
+- Purchase orders removed by the user stay removed in automatic matching.
+- A corrected PO number is matched in the save that corrects it.
 
 ### Analytics
 
 - Touchless: all backend changes behind the Web App section above, including
   stage evidence recorded by each pipeline stage, the PO-match trace, change
-  proposals with preview, apply and revert, and bulk status in one call per
-  tick.
+  proposals with preview, apply and revert, segmentation, bulk status in one
+  call per tick, and the trend endpoint accepting any window and a supplier.
+- Three analytics background tasks that failed on every scheduled run are
+  fixed.
 
 ---
 
@@ -323,11 +371,17 @@ a corrected PO number is matched in the save that corrects it.
 - The service records where each PO number candidate came from and which
   numbers a run looked up. A document's own invoice number is never a PO
   candidate. A dropped match leaves its reason on the document for the screen.
+- The column that did not match is recorded, and the columns a fallback rule
+  removed are measured.
+- Purchase orders removed by the user are honoured, and stale background
+  matches are cleared after the final exclusion.
 - Manual matching works for organisations whose rules carry no `is_fallback`
   flag. Users picked lines, pressed match, and nothing came back.
 - No more documents orphaned in "Queue": database statement timeouts,
   keepalives and an explicit soft-time-limit handler mark the task as failed
   instead of relying on a kill that left no trace.
+- Two production errors (a `NaN` unit price, a group without quantities) no
+  longer fail the whole match.
 - Tolerance changes are read per matching request, so a tolerance saved a
   moment ago is used by the next match.
 - The five-stage decision trace is persisted per document for Touchless.
@@ -336,32 +390,59 @@ a corrected PO number is matched in the save that corrects it.
 
 ## Auth Service — `1.78.27`
 
+- `/organisation/subscriptions` can skip the credit balance, and the credit
+  calculation runs all contract-year windows in one statement instead of one
+  query per window (32 queries at about 700 ms each for the largest
+  organisation). A daily usage rollup is prepared for further use.
+- Remaining-token figures on organisation readers are calculated per contract
+  year.
 - Token expiry is enforced on cache hits. A cached entry could authenticate for
   up to nine hours after the token expired.
-- Token verification stops writing an unchanged `org_id` back to the user row
-  on every request, which produced an UPDATE per call.
-- A memory leak that drove the autoscaler to maximum replicas is fixed, and
-  the service is back to two workers.
+- Token verification stops writing an unchanged `org_id` back to the user
+  row on every request, which produced an UPDATE per call.
+- Health checks skip Redis I/O, and the Redis client is pooled. A
+  memory leak that drove the autoscaler to maximum replicas is fixed, and the
+  service is back to two workers.
+- A repeated supplier registration (magic link opened twice) reuses the
+  existing membership instead of failing with a duplicate-key error.
+- The password-reset mail thread uses the one registered Flask app; the reset
+  was failing with "current Flask app is not registered" since 25 August.
 - The system-user flag can be changed on an existing user when no other member
   holds it.
+- MCP login: transaction-bound MFA, single-use consent, and a forced account
+  choice when the browser holds two session identities.
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-- When the EU ↔ US replication stream dies, the replication slot is reattached
-  in place instead of rebuilding the bridge and re-running the full startup
-  reconcile, during which the slot sat inactive.
+EU ↔ US authentication replication:
+
+- The periodic reconcile keeps the replication stream alive. It took about
+  95 s while the sender timeout was 60 s, so every six-hourly reconcile dropped
+  the stream on schedule.
+- When the stream dies, the replication slot is reattached in place instead of
+  rebuilding the bridge and re-running the full startup reconcile.
+- Reconciliation diffs primary keys in pages instead of loading both sides into
+  memory, which no longer fits since the token table joined replication.
+- An existing replication origin is treated as success, not degradation.
 
 ---
 
 ## Extraction Service — `1.55.33`
 
+- Structured extraction is resolved per supplier: a trained layout's setting
+  wins over the organisation preference, the same way the AI model does.
+- A learned column mapping cannot forbid columns the invoice has.
 - AI table extraction: amount columns are typed as numbers with a description,
   and fabricated non-numeric values in amount columns (a "St." copied from the
   neighbouring cell into unit price per) are dropped instead of stored.
-- US invoices: sub-cent float noise no longer decides between candidate
-  net/tax pairs (268.28 + 22.13 was losing to net = total, tax = 0).
+- US invoices: when the net amount already equals the total, tax resolves to 0
+  instead of keeping a spurious extracted tax. Sub-cent float noise no longer
+  decides between candidate net/tax pairs (268.28 + 22.13 was losing to
+  net = total, tax = 0).
+- A table whose header row was never mapped to real names is extracted
+  instead of failing entirely.
 
 ---
 
@@ -371,17 +452,18 @@ a corrected PO number is matched in the save that corrects it.
   stage had been running without it since the active env files were created.
   Upload and deletion invalidate it, so a search after an upload sees the new
   document.
-- A plain search for a bare invoice number returns the exact-match invoice.
-  Written currency values, legacy boolean mappings, dates and tax flags survive
-  the slim index rebuild, and index entries without fields are detected and
-  recovered from extraction.
 - Exact `=` on a dynamic text field compares the whole value only. A wildcard
   on the analysed path made `note_field=53173` match "PO 53173 / 2024".
 - A bare hyphenated identifier such as `2026-003` is one literal, not a bag of
   tokens.
-- Read paths stop creating the index they read, and every zero-hit answer
-  carries a window status and reason.
-- The vector search's service-side limit of 50 is gone.
+- Purchase order numbers are found in every storage shape, including digits-only
+  identifiers whose exact clause was silently dropped.
+- Read paths stop creating the index they read. A missing or empty index
+  reported "complete, 0 results"; every zero-hit answer now carries a window
+  status and reason.
+- Written currency values, legacy boolean mappings, dates and tax flags survive
+  the slim index rebuild, and index entries without fields are detected and
+  recovered from extraction.
 
 ---
 
@@ -391,6 +473,9 @@ a corrected PO number is matched in the save that corrects it.
   batch is checked before anything is written. An organisation without the
   advanced module could import an advanced workflow it then had no way to open.
 - A workflow rename rides the save, and template renames are persisted.
+- The "pending workflow execution" update is retried on dropped connections. A
+  single failed request left the flag unchanged and kept the document out of
+  export until someone restarted it.
 
 ---
 
@@ -425,8 +510,7 @@ a corrected PO number is matched in the save that corrects it.
 Build and deployment changes only (base image update, CI credentials). No
 change in behaviour.
 
-<!-- Release R1.0.13. Announced: tickets with Jira "Release No." = R1.0.13 and a
-     status on sandbox or beyond, plus DOCB-14454, DOCB-14450, DOCB-14415,
-     DOCB-14419, DOCB-14431, DOCB-14045/46 (no Release No., on sandbox).
-     Held back (Release No. R1.1): DRFS-778, DRFS-712, MEF-165, MEF-166, DOCB-14389.
-     Labelled R1.0.12 but code ships now: DRFS-746/748/749/750/751, DOCB-14282. -->
+<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
+     Held back because Jira "Release No." names the later release R1.1:
+     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
+     DOCB-14389. Announce them with R1.1. -->

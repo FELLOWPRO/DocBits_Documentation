@@ -77,7 +77,7 @@ Click **Try it out**, then fill in the form.
 
 #### Field mappings
 
-`field_mappings` is a JSON object. The name on the left becomes the column in the dataset — you choose these freely, unlike the BOD imports where they must be `custom_field_1` … `custom_field_5`. The value on the right is the XPath to read it from:
+`field_mappings` is a JSON object with one entry per column. Unlike the BOD imports, where the names are fixed to `custom_field_1` … `custom_field_5`, here you choose them:
 
 ```json
 {
@@ -87,7 +87,11 @@ Click **Try it out**, then fill in the form.
 }
 ```
 
-The XPaths are checked against your XML before anything is written, so a path that does not match the document is reported rather than silently importing empty columns.
+The names on the left become the columns in the dataset and are yours to choose. The values on the right must match the structure of the XML you are uploading — for the sample above, `//Item/ID` picks up the `<ID>` element inside each `<Item>`. The two sides are independent: the mapping above reads `<UnitPrice>` into a column called `Price`.
+
+{% hint style="warning" %}
+Only **malformed** XPaths are rejected, with a `400` naming the field. An XPath that is valid but matches nothing in your XML passes silently and simply leaves that column empty — so a typo in a path looks like an import that worked but lost a column. If the `ID` path is the one that matches nothing, the import fails instead, reporting that the `ID` column is missing for that record.
+{% endhint %}
 
 {% hint style="warning" %}
 **One of the columns must be called `ID`.** It is what identifies a record: importing the same data again updates the row with that ID instead of adding a duplicate. The name is not case-sensitive, so `ID`, `Id` and `id` all work, but a name like `ItemID` does not count — the request is rejected with `ID_FIELD_IS_MISSING` and nothing is written.

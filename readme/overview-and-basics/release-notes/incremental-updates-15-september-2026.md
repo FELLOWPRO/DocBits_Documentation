@@ -14,12 +14,12 @@ korisnicima._
   tačno ova vrednost na svakom mehanizmu pretrage, `field:value` znači
   „sadrži" (sa `value*` i `*value` za „počinje sa" i „završava se sa"), a
   `field!=value` vraća i dokumente koji uopšte nemaju vrednost. Pretraga bez
-  čipa je pretraga podniza kroz sva polja, uključujući poslovne
-  identifikatore. Broj rezultata i lista rezultata opisuju isti skup
-  dokumenata, a pretraga koja je dostigla prozor rezultata ili je izvršena bez
-  indeksa celog teksta to i saopštava umesto da prijavi „kompletno".
-  Sopstvena veza kontrolne table za pretragu (WebSocket) ranije nikada nije
-  dosezala indeks celog teksta; sada doseže.
+  čipa je pretraga podniza kroz sva polja, uključujući brojeve narudžbenica,
+  barkodove i brojeve trebovanja. Broj rezultata, pločice statusa i paginacija
+  opisuju isti skup dokumenata, a pretraga koja je dostigla prozor rezultata
+  ili je izvršena bez indeksa celog teksta to i saopštava umesto da prijavi
+  „kompletno". Sopstvena veza kontrolne table za pretragu (WebSocket) ranije
+  nikada nije dosezala indeks celog teksta; sada doseže.
 - **Dobavljači se češće prepoznaju.** Kada jedno polje za pretragu (PIB, IBAN,
   broj dobavljača) odgovara tačno jednom dobavljaču, taj dobavljač se koristi
   čak i ako široko polje kao što je naziv odgovara većem broju dobavljača.
@@ -27,10 +27,11 @@ korisnicima._
   gde su matični podaci zamenili ekstrahovanu vrednost, ekran validacije to
   saopštava i omogućava vam da vratite original.
 - **Usklađivanje narudžbenica objašnjava samo sebe.** Ekran saopštava zašto
-  nema usklađivanja i zašto usklađivanje nije zadržano, istorija usklađivanja
-  navodi pravila transformacije koja su pokrenuta, a cene po jedinici
-  narudžbenice izvode se iz neto iznosa. Ručna usklađivanja ponovo rade za
-  organizacije bez rezervnog pravila, a nasilno prekinut zadatak usklađivanja
+  nema usklađivanja, opis neslaganja (tooltip) imenuje kolonu koja nije
+  prošla, istorija usklađivanja navodi pravila transformacije koja su
+  pokrenuta, a cene po jedinici narudžbenice izvode se iz neto iznosa. Ručna
+  usklađivanja ponovo rade za organizacije bez rezervnog pravila, uklonjene
+  narudžbenice ostaju uklonjene, a nasilno prekinut zadatak usklađivanja
   označava dokument kao neuspeo umesto da ga zauvek ostavi u statusu „Queue".
 - **Zaglavljeni dokumenti i lažne greške.** Organizacijama koje neprekidno
   otpremaju dokumenti su spuštani na prioritet reda koji tokom radnog vremena
@@ -41,13 +42,14 @@ korisnicima._
 - **Touchless Intelligence.** Kartica Analitike koja meri koliko dokumenata
   prolazi kroz DocBits bez ljudskog dodira dobija svoje potpuno prvo izdanje:
   klastere problema sa AI savetima, masovnu analizu, predloge izmena sa
-  pregledom, primenom i poništavanjem, AI dijagnozu po dobavljaču i dijagram
-  toka obrade po dokumentu.
-- **Brže tamo gde su podaci veliki.** Padajuća lista konta radi za
-  organizacije sa više od 2.000 konta, stranica pravila E-dokumenata lista
-  svojih 1.600 pravila po stranicama na serveru umesto da zamrzava pregledač,
-  a „Refresh" na kontrolnoj tabli narudžbenica vraća sveže podatke umesto
-  keširane liste.
+  pregledom, primenom i poništavanjem, stranicu dobavljača sa trendom i
+  primerima, dijagram toka obrade po dokumentu i dijagram skupa pravila
+  narudžbenica koji saopštava zašto dokument nije prošao.
+- **Brže tamo gde su podaci veliki.** Hladne prijave preskaču sabiranje knjige
+  kredita koje je trajalo do 33 s, padajuća lista konta radi za organizacije
+  sa više od 2.000 konta, stranica pravila E-dokumenata lista svojih 1.600
+  pravila po stranicama na serveru umesto da zamrzava pregledač, a „Refresh"
+  na kontrolnoj tabli narudžbenica vraća sveže podatke umesto keširane liste.
 - **Bezbednost.** Source map datoteke frontenda više se ne isporučuju sa
   svakom verzijom, filteri pretrage matičnih podataka vezuju se kao SQL
   parametri umesto da se umeću u upit, istekli token se odbija čak i pri
@@ -60,13 +62,26 @@ korisnicima._
 
 ### Prijava i nalozi
 
+- Prijava je brža. Provera pretplate pri prijavi tražila je puno stanje
+  kredita, što je sabiralo milione redova knjige i često prelazilo klijentovo
+  vremensko ograničenje od 10 s. Prijava sada samo pita da li pretplata
+  postoji; stanja se i dalje izračunavaju na Settings → Subscription.
+- Prelazak između regiona (EU ↔ US) zadržava vas prijavljene. Ciljni region
+  nekoliko sekundi odgovara sa „invalid token" dok se sesija ne replicira, a
+  dve putanje u kodu tumačile su to kao mrtvu sesiju.
 - Prekrivajući prozor „Updating DocBits v10.59.3.1 → v10.59.3.1" koji se na
   sandbox-u beskonačno ponovo učitavao je ispravljen. Ponovno učitavanje iste
   verzije više ne prikazuje prozor, petlja je ograničena po kartici, a baner
   nudi ručni oporavak ako se to ponovo dogodi.
+- Administratori mogu da dodele karticu Analytics Dashboard određenim
+  ulogama, a izmene uloga se pouzdano čuvaju.
 - Polje za potvrdu System Admin može da se označi na postojećem korisniku.
   Kreiranje sistemskog administratora iz frontenda sada ima efekta; posao
   sinhronizacije je ranije resetovao oznaku pri svakom pokretanju.
+- Settings → Roles: lista članova se iscrtava umesto da visi iza indikatora
+  učitavanja kada server odgovori greškom.
+- Prijava na DocBits MCP server sprovodi dvofaktorsku autentifikaciju i
+  jednokratnu saglasnost.
 
 ### Kontrolna tabla i pretraga
 
@@ -80,10 +95,10 @@ korisnicima._
 - Kada obična pretraga ne pronađe ništa, kontrolna tabla objašnjava pravilo i
   nudi čipove na jedan klik (`Invoice number : <term>`,
   `Purchase order : <term>`, `Supplier ID : <term>`).
-- Pretraga sa nula rezultata resetuje paginaciju. Ranije je paginacija
-  zadržavala broj rezultata prethodne pretrage.
-- Brojevi trebovanja i podnosioci trebovanja pronalaze se običnom pretragom,
-  bez čipa.
+- Pretraga sa nula rezultata resetuje paginaciju i svaki broj na stranici.
+  Ranije je paginacija zadržavala broj rezultata prethodne pretrage.
+- Brojevi narudžbenica, brojevi porudžbina, barkodovi, tipovi faktura i
+  brojevi trebovanja mogu da se pronađu bez čipa.
 
 ### Ekran validacije
 
@@ -98,6 +113,9 @@ korisnicima._
   primer Item Number i Purchase Order).
 - Čuvanje pravila ekstrakcije radi nakon što unesete broj stranice, a zatim
   nacrtate okvir za polje. Taj redosled je ranije rušio čuvanje.
+- Strukturirana ekstrakcija može da se uključi po dobavljaču, u tfidf
+  iskačućem prozoru ekrana validacije i kao kolona samo za čitanje u
+  Settings → Classification & Extraction.
 - Train Model se izvršava u pozadini. Ekran prikazuje „training started",
   proverava rezultat i prijavljuje uspeh ili neuspeh. Velike organizacije su
   ranije dobijale grešku gateway-a dok se treniranje nastavljalo na strani
@@ -114,6 +132,9 @@ saopštava zašto nema usklađivanja i zašto usklađivanje nije zadržano,
 istorija usklađivanja prikazuje pravila transformacije, a cena po jedinici
 narudžbenice izračunava se iz neto iznosa. Pored toga:
 
+- Opis neslaganja (tooltip) imenuje kolonu koja se nije poklopila. Ranije je
+  bio prazan jer su se beležile samo poklopljene kolone, pa je ekran mogao da
+  kaže samo „Mismatched".
 - Dugme Auto Match takođe izvozi dokument kada je uključena opcija „PO Auto
   Match and Export". Ranije se izvoz dešavao samo kada je dokument otvoren sa
   kontrolne table preko „PO Match".
@@ -122,6 +143,8 @@ narudžbenice izračunava se iz neto iznosa. Pored toga:
 - Dugme Refresh na kontrolnoj tabli narudžbenica briše keš na strani servera
   pre ponovnog učitavanja. Narudžbenica uvezena iz ERP-a pojavljivala se tek
   nakon sedam do osam minuta.
+- Stranica pravila usklađivanja narudžbenica iscrtava skup pravila kao
+  dijagram toka, a istorija usklađivanja premeštena je u traku sa akcijama.
 
 ### Automatsko računovodstvo
 
@@ -145,6 +168,9 @@ narudžbenice izračunava se iz neto iznosa. Pored toga:
   drugi tip dokumenta ostavljao je vrednosti prethodnog tipa.
 - Pravila transformacije: akcija „Set value" se čuva. Uređivač ju je slao pod
   nazivom koji server odbija.
+- List of Values: bočna traka prikazuje novu listu i uklanja obrisanu bez
+  ponovnog učitavanja; zakasneli odgovori prethodne liste više ne prepisuju
+  trenutnu.
 - Veza ka podtipovima dokumenata prikazuje se na standardnim tipovima
   dokumenata.
 - JPL mapiranje SMB izvoza preuzima se kao `.properties`, pa datoteka može
@@ -186,25 +212,34 @@ upotpunjuje:
   toga. Lista rezultata preživljava navigaciju i ponovno učitavanje, a
   pokretanje više ne visi na „Running · 0/6 done" u prikazu pod-organizacije.
 - **Predlozi izmena.** Preporuka postaje nešto na osnovu čega možete da
-  delujete: predlog koji cilja polje koje blokira dokumente, pregled koji
-  prikazuje šta bi uradio (ništa se ne čuva), primena, izmereni efekat i
-  poništavanje. Agenti dolaze do istih koraka putem MCP alata. Koraci za
-  popravku vode direktno na stranicu podešavanja koju imenuju, unapred
-  filtriranu po tipu dokumenta, polju ili pravilu.
-- **Dijagnoza dobavljača.** Stranica dobavljača objašnjava prazno stanje umesto
-  da prikazuje nule i nudi AI dijagnozu po dobavljaču. Možete da izaberete do
-  pet dobavljača i uporedite ih jedan pored drugog.
+  delujete: kartica objašnjava predloženu izmenu kroz četiri pitanja,
+  omogućava vam da je prilagodite, pregleda šta bi uradila (ništa se ne čuva),
+  primenjuje je, meri efekat i može da je poništi. Koraci za popravku vode
+  direktno na stranicu podešavanja koju imenuju, unapred filtriranu po tipu
+  dokumenta, polju ili pravilu.
+- **Stranica dobavljača.** Izaberite dobavljača sa kartice ili pretražite red
+  prilika po nazivu ili broju. Stranica prikazuje touchless stopu dobavljača
+  tokom vremena (od 30 dana do 1 godine), njegove problematične dokumente i
+  dokumente koji su prošli dobro, i nudi AI dijagnozu po dobavljaču. Do pet
+  dobavljača može da se uporedi jedan pored drugog. Prikazuje se broj
+  dobavljača umesto internog heša.
 - **Tok obrade.** Dijagram po dokumentu i po klasteru prikazuje put kroz
   prijem, klasifikaciju, proveru e-dokumenta, dobavljača, OCR, ekstrakciju,
   validaciju, usklađivanje narudžbenica, odobrenje i izvoz, sa fazom koja ga
   je zaustavila.
-- **Razlozi usklađivanja narudžbenica.** Odluka o usklađivanju prati se po
-  dokumentu (faza, prolaz, pravilo, kolona) i sažima u Touchless rezultat.
-  Kodovi razloga razlikuju „narudžbenica nije pronađena" od „neslaganje
-  stavki" i „nedostaje obavezno polje", a predlozi tolerancija savetnika
-  ciljaju mehanizam pravila koji odlučuje.
+- **Usklađivanje narudžbenica, objašnjeno.** Skup pravila narudžbenica
+  iscrtava se kao dijagram toka na stranici podešavanja i u Touchless-u, sa
+  putem koji je jedan dokument prošao i razlogom, jednostavnim jezikom, zašto
+  nije prošao. Kodovi razloga razlikuju „narudžbenica nije pronađena" od
+  „neslaganje stavki" i „nedostaje obavezno polje".
+- **Segmentacija.** KPI pokazatelji, klasteri i predlozi mogu da se podele po
+  polju dokumenta, na primer Order Type = Direct / Indirect.
 - **Tačni brojevi.** KPI pločice poštuju filter pod-organizacije i broje samo
-  dokumente koje detaljni prikaz može da navede.
+  dokumente koje detaljni prikaz može da navede. Sesija pregledača sistemskog
+  korisnika organizacije računa se kao ljudska, pa se dokumenti ispravljeni
+  ručno više ne svrstavaju kao touchless.
+- Traka sa alatkama izveštaja smešta svoje kontrole na širokim ekranima, a
+  boje tamnog režima dolaze iz teme.
 
 ### DocNet
 
@@ -276,6 +311,8 @@ upotpunjuje:
   ponovo obračunavao stavku na 1.000 puta veći iznos od fakturisanog.
 - Izvoz tabele preživljava stavku čija je narudžbenica uklonjena; stavka se
   izvozi bez osnove cene.
+- IDM izvoz: polje sa više vrednosti mapirano na numeričko polje (na primer
+  količinu) rušilo je sadržaj izvoza. Vrednost se prvo pretvara u tekst.
 
 ### E-dokumenti
 
@@ -303,35 +340,51 @@ upotpunjuje:
   vrednosti. Na Postgres-u je `=` ranije bilo podudaranje prefiksa, pa je
   `invoice_id=911892112` vraćalo i 911892112333.
 - Obična pretraga je pretraga podniza kroz sva polja, uključujući poslovne
-  identifikatore. Identifikator sa crticom kao što je `2026-003` je jedan
-  literal, a tip klauzule se više ne menja posle petog znaka.
+  identifikatore. Narudžbenica, broj porudžbine, barkod, tip fakture, podtip
+  fakture i broj trebovanja uopšte nisu imali granu za običnu tekstualnu
+  pretragu.
 - Čip broja fakture je tačan na Postgres-u, kao što je već bio na indeksu.
   Vodeće nule, decimalni oblici i velika/mala slova tretiraju se isto u
   slobodnom tekstu i u čipovima.
 - WebSocket pretraga kontrolne table prenosi kredencijal pozivaoca servisu za
   pretragu celog teksta. Ranije je svako delegiranje odbijano, pa je kontrolna
   tabla tiho pretraživala samo Postgres i predstavljala odgovor kao kompletan.
-- Broj rezultata i lista rezultata izvršavaju se nad jednim skupom predikata.
-  Broj je ranije bio Postgres aproksimacija dok je lista dolazila iz indeksa.
+- Pločice statusa, broj rezultata i lista rezultata izvršavaju se nad jednim
+  skupom predikata. Pločice su ranije opisivale celu organizaciju tokom bilo
+  koje pretrage.
+- Dozvole pod-organizacije i tipa dokumenta primenjuju se pre prozora
+  rezultata, pa dozvoljeni dokumenti više ne ispadaju iz ograničenja od
+  500 / 10.000.
 - Vektorska pretraga ograničava se na stvarni prozor rezultata i prijavljuje
   ograničenje umesto da prikazuje „(50)" kao tačan ukupan broj.
-- Pretraga koja je izvršena bez indeksa celog teksta (indeks kasni minutima,
-  provera mogućnosti nije uspela, degradirano razrešavanje polja) prijavljuje
-  status svog prozora umesto „kompletno".
+- Pretraga koja je izvršena bez indeksa celog teksta (indeks nedostaje, indeks
+  kasni minutima, provera mogućnosti nije uspela, degradirano razrešavanje
+  polja) prijavljuje status svog prozora umesto „kompletno".
+- Izvozi kontrolne table skraćene pretrage nose red sa napomenom u CSV/XLSX
+  datoteci i u e-poruci obaveštenja.
 - Skripte dokumenata koje pozivaju pretragu celog teksta ispravno se
   autentifikuju i prijavljuju greške umesto da vraćaju prazan rezultat.
 
 ### Usklađivanje narudžbenica (usklađivanje unutar API-ja)
 
 Za organizacije koje usklađuju u API-ju umesto u PO Match Service-u:
-ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga ispravlja.
+
+- Svako poređenje kolona se beleži, uključujući cenu po jedinici i količinu,
+  pa opis neslaganja (tooltip) može da imenuje kolonu koja nije prošla.
+- Narudžbenice koje je korisnik uklonio ostaju uklonjene u automatskom
+  usklađivanju.
+- Ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga
+  ispravlja.
 
 ### Analitika
 
 - Touchless: sve backend izmene iza odeljka Web App iznad, uključujući dokaze
   koje beleži svaka faza obrade, trag usklađivanja narudžbenica, predloge
-  izmena sa pregledom, primenom i vraćanjem, i masovni status u jednom pozivu
-  po otkucaju.
+  izmena sa pregledom, primenom i vraćanjem, segmentaciju, masovni status u
+  jednom pozivu po otkucaju i krajnju tačku trenda koja prihvata bilo koji
+  prozor i dobavljača.
+- Tri pozadinska zadatka analitike koja su padala pri svakom zakazanom
+  pokretanju su ispravljena.
 
 ---
 
@@ -344,6 +397,10 @@ ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga ispravlja.
   brojeve pokretanje tražilo. Sopstveni broj fakture dokumenta nikada nije
   kandidat za narudžbenicu. Odbačeno usklađivanje ostavlja svoj razlog na
   dokumentu za ekran.
+- Kolona koja se nije poklopila se beleži, a kolone koje je rezervno pravilo
+  uklonilo se mere.
+- Narudžbenice koje je korisnik uklonio se poštuju, a zastarela pozadinska
+  usklađivanja brišu se nakon konačnog isključenja.
 - Ručno usklađivanje radi za organizacije čija pravila nemaju oznaku
   `is_fallback`. Korisnici su birali stavke, pritiskali usklađivanje i ništa
   se nije vraćalo.
@@ -351,6 +408,8 @@ ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga ispravlja.
   naredbi baze podataka, keepalive signali i eksplicitni rukovalac mekog
   vremenskog ograničenja označavaju zadatak kao neuspeo umesto da se
   oslanjaju na nasilni prekid koji nije ostavljao trag.
+- Dve produkcijske greške (cena po jedinici `NaN`, grupa bez količina) više ne
+  obaraju celo usklađivanje.
 - Izmene tolerancija čitaju se po zahtevu za usklađivanje, pa se tolerancija
   sačuvana malopre koristi pri sledećem usklađivanju.
 - Trag odlučivanja u pet faza trajno se čuva po dokumentu za Touchless.
@@ -359,33 +418,62 @@ ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga ispravlja.
 
 ## Auth Service — `1.78.27`
 
+- `/organisation/subscriptions` može da preskoči stanje kredita, a obračun
+  kredita izvršava sve prozore ugovorne godine u jednoj naredbi umesto jednog
+  upita po prozoru (32 upita od oko 700 ms svaki za najveću organizaciju).
+  Dnevni zbirni pregled potrošnje pripremljen je za dalju upotrebu.
+- Brojke preostalih tokena u čitačima organizacije izračunavaju se po
+  ugovornoj godini.
 - Istek tokena sprovodi se i pri pogocima keša. Keširani unos mogao je da
   autentifikuje do devet sati nakon što je token istekao.
 - Provera tokena više ne upisuje nepromenjeni `org_id` nazad u red korisnika
   pri svakom zahtevu, što je proizvodilo po jedan UPDATE po pozivu.
-- Curenje memorije koje je teralo autoskaler na maksimalan broj replika je
-  ispravljeno, a servis je vraćen na dva radna procesa.
+- Provere zdravlja preskaču Redis U/I, a Redis klijent koristi zajednički
+  bazen veza. Curenje memorije koje je teralo autoskaler na maksimalan broj
+  replika je ispravljeno, a servis je vraćen na dva radna procesa.
+- Ponovljena registracija dobavljača (magični link otvoren dvaput) ponovo
+  koristi postojeće članstvo umesto da padne sa greškom dupliranog ključa.
+- Nit za slanje e-poruke za resetovanje lozinke koristi jedinu registrovanu
+  Flask aplikaciju; resetovanje je padalo sa „current Flask app is not
+  registered" od 25. avgusta.
 - Oznaka sistemskog korisnika može da se promeni na postojećem korisniku kada
   je nijedan drugi član ne drži.
+- MCP prijava: MFA vezan za transakciju, jednokratna saglasnost i obavezan
+  izbor naloga kada pregledač drži dva identiteta sesije.
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-- Kada tok replikacije EU ↔ US prekine, slot replikacije ponovo se prikači na
-  licu mesta umesto da se most ponovo gradi i ponovo izvršava puno usklađivanje
-  pri pokretanju, tokom kojeg je slot stajao neaktivan.
+Replikacija autentifikacije EU ↔ US:
+
+- Periodično usaglašavanje održava tok replikacije živim. Trajalo je oko 95 s
+  dok je vremensko ograničenje pošiljaoca bilo 60 s, pa je svako
+  šestočasovno usaglašavanje po rasporedu prekidalo tok.
+- Kada tok prekine, slot replikacije ponovo se prikači na licu mesta umesto
+  da se most ponovo gradi i ponovo izvršava puno usaglašavanje pri pokretanju.
+- Usaglašavanje poredi primarne ključeve po stranicama umesto da učitava obe
+  strane u memoriju, što više ne staje otkad se tabela tokena pridružila
+  replikaciji.
+- Postojeći izvor replikacije tretira se kao uspeh, a ne kao degradacija.
 
 ---
 
 ## Extraction Service — `1.55.33`
 
+- Strukturirana ekstrakcija razrešava se po dobavljaču: podešavanje
+  treniranog izgleda nadjačava podešavanje organizacije, isto kao što to čini
+  AI model.
+- Naučeno mapiranje kolona ne može da zabrani kolone koje faktura ima.
 - AI ekstrakcija tabela: kolone iznosa tipizirane su kao brojevi sa opisom, a
   izmišljene nenumeričke vrednosti u kolonama iznosa („St." prepisano iz
   susedne ćelije u unit price per) odbacuju se umesto da se čuvaju.
-- Američke fakture: šum pokretnog zareza ispod centa više ne odlučuje između
-  kandidatskih parova neto/porez (268.28 + 22.13 gubilo je od neto = ukupno,
-  porez = 0).
+- Američke fakture: kada je neto iznos već jednak ukupnom, porez se razrešava
+  na 0 umesto da se zadrži lažno ekstrahovan porez. Šum pokretnog zareza
+  ispod centa više ne odlučuje između kandidatskih parova neto/porez
+  (268.28 + 22.13 gubilo je od neto = ukupno, porez = 0).
+- Tabela čiji red zaglavlja nikada nije mapiran na stvarne nazive ekstrahuje
+  se umesto da u potpunosti padne.
 
 ---
 
@@ -394,18 +482,20 @@ ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga ispravlja.
 - Keš rezultata pretrage uključen je u svakom okruženju; produkcija, sandbox i
   stage radili su bez njega otkad su kreirane aktivne env datoteke. Otpremanje
   i brisanje ga poništavaju, pa pretraga nakon otpremanja vidi novi dokument.
-- Obična pretraga samog broja fakture vraća fakturu sa tačnim podudaranjem.
-  Vrednosti valuta napisane rečima, nasleđena boolean mapiranja, datumi i
-  poreske oznake preživljavaju ponovnu izgradnju tankog indeksa, a unosi
-  indeksa bez polja otkrivaju se i oporavljaju iz ekstrakcije.
 - Tačno `=` na dinamičkom tekstualnom polju poredi samo celu vrednost. Džoker
   znak na analiziranoj putanji činio je da `note_field=53173` odgovara „PO
   53173 / 2024".
 - Goli identifikator sa crticom kao što je `2026-003` je jedan literal, a ne
   skup tokena.
-- Putanje čitanja više ne kreiraju indeks koji čitaju, a svaki odgovor bez
-  pogodaka nosi status prozora i razlog.
-- Ograničenje od 50 na strani servisa za vektorsku pretragu je uklonjeno.
+- Brojevi narudžbenica pronalaze se u svakom obliku skladištenja, uključujući
+  identifikatore koji se sastoje samo od cifara, čija je klauzula tačnog
+  podudaranja tiho odbacivana.
+- Putanje čitanja više ne kreiraju indeks koji čitaju. Indeks koji nedostaje
+  ili je prazan prijavljivao je „kompletno, 0 rezultata"; svaki odgovor bez
+  pogodaka sada nosi status prozora i razlog.
+- Vrednosti valuta napisane rečima, nasleđena boolean mapiranja, datumi i
+  poreske oznake preživljavaju ponovnu izgradnju tankog indeksa, a unosi
+  indeksa bez polja otkrivaju se i oporavljaju iz ekstrakcije.
 
 ---
 
@@ -416,6 +506,9 @@ ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga ispravlja.
   mogla je da uveze napredni radni tok koji potom nije imala kako da otvori.
 - Preimenovanje radnog toka ide uz čuvanje, a preimenovanja šablona se trajno
   čuvaju.
+- Ažuriranje „pending workflow execution" ponavlja se pri prekinutim vezama.
+  Jedan neuspeo zahtev ostavljao je oznaku nepromenjenom i držao dokument van
+  izvoza dok ga neko ne bi ponovo pokrenuo.
 
 ---
 
@@ -452,8 +545,7 @@ ispravljeni broj narudžbenice usklađuje se u istom čuvanju koje ga ispravlja.
 Samo izmene u izgradnji i isporuci (ažuriranje osnovne slike, CI
 kredencijali). Nema promene u ponašanju.
 
-<!-- Release R1.0.13. Announced: tickets with Jira "Release No." = R1.0.13 and a
-     status on sandbox or beyond, plus DOCB-14454, DOCB-14450, DOCB-14415,
-     DOCB-14419, DOCB-14431, DOCB-14045/46 (no Release No., on sandbox).
-     Held back (Release No. R1.1): DRFS-778, DRFS-712, MEF-165, MEF-166, DOCB-14389.
-     Labelled R1.0.12 but code ships now: DRFS-746/748/749/750/751, DOCB-14282. -->
+<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
+     Held back because Jira "Release No." names the later release R1.1:
+     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
+     DOCB-14389. Announce them with R1.1. -->

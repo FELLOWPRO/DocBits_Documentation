@@ -21,6 +21,7 @@
   * [Updates — 12–25 augustus 2026](overview-and-basics/release-notes/incremental-updates-12-25-august-2026.md)
   * [Hotfixes 8 september 2026](overview-and-basics/release-notes/incremental-updates-8-september-2026.md)
   * [Hotfixes 15 september 2026](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)
+* [Roadmap](overview-and-basics/roadmap.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Algemene Informatie](overview-and-basics/faq/general-information.md)
   * [Document Processing](overview-and-basics/faq/document-processing/README.md)

@@ -12,12 +12,12 @@ Purchase orders normally reach DocBits automatically through your ION data flow.
 
 There are two endpoints, and they do the same thing. The only difference is how you hand over the BOD:
 
-<figure><img src="../../../.gitbook/assets/import-po-bod-endpoints.png" alt="The two purchase order import endpoints in the API interface"><figcaption><p>Upload a file, or paste the XML</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import-po-bod-endpoints.png" alt="The two purchase order import endpoints in the API interface"><figcaption><p>Upload a file, or send the XML in the request</p></figcaption></figure>
 
 | Endpoint | Use it when |
 | --- | --- |
 | `/import/purchase_order_bod` | You have the BOD as an **XML file** and want to upload it. |
-| `/import/purchase_order_bod_xml` | You have the **XML content** and want to paste it in — handy when you copied it out of ION, an email or a log. |
+| `/import/purchase_order_bod_xml` | You want to send the **XML content** in the request instead of a file. The BOD has to be wrapped in JSON, so this suits short XML or another system calling the API — for a full BOD by hand, upload the file. |
 
 Both are described below. Steps 1 and 2 are the same either way.
 
@@ -127,11 +127,31 @@ See [Field Mappings](../field-mappings.md) for the mappings used for standard fi
 
 #### Pasting the XML — `/import/purchase_order_bod_xml`
 
-<!-- SCREENSHOT D: the Try it out form of /import/purchase_order_bod_xml -->
+<figure><img src="../../../.gitbook/assets/import-po-bod-xml-form.png" alt="The Try it out form of the XML variant, showing the xml object field"><figcaption><p>The BOD goes inside a small JSON wrapper</p></figcaption></figure>
 
-Instead of choosing a file, paste the whole XML content into the `xml` field. Paste the document exactly as it is, starting at the opening tag — do not shorten it or leave parts out.
+This endpoint does not take the BOD as a plain paste. The **xml** field is an object, pre-filled with:
 
-The `org_id` and `sub_org_id` fields work exactly as above. This endpoint takes `custom_fields_mapping` but has no separate field for line mappings.
+```json
+{
+  "xml": "string"
+}
+```
+
+Replace `string` with the content of your BOD, keeping the surrounding quotes and braces:
+
+```json
+{
+  "xml": "<SyncPurchaseOrder ...>...</SyncPurchaseOrder>"
+}
+```
+
+{% hint style="warning" %}
+The BOD sits inside a JSON string, so every double quote in the XML has to be escaped as `\"` — and a BOD is full of them (`releaseID="9.2"`, `xmlns="..."`). If the result is not valid JSON the request fails with a **422** and nothing is imported.
+
+For a real BOD that is fiddly to do by hand, so prefer **uploading the file**. This endpoint is the better choice when the XML is short, or when another system builds the request and can encode the JSON itself.
+{% endhint %}
+
+The `org_id`, `sub_org_id` and `custom_fields_mapping` fields work exactly as above. This endpoint has no field for line mappings.
 
 {% hint style="warning" %}
 Check which environment and which organization you are pointing at before you execute. An import writes straight into that organization's master data.

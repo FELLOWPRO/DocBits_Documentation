@@ -39,6 +39,61 @@ Pogledajte ovde dodaj [Skriptu u DocBits](../admin-section/setup/scripting-in-do
 * **Svrha:** Pomaže u identifikaciji i ispravljanju polja gde podaci možda nisu savršeno podudarni, ali su dovoljno blizu.
 * **Upotreba:** Korisno u procesima validacije podataka gde tačna podudaranja nisu uvek moguća, kao što su imena ili adrese sa blagim greškama u kucanju.
 
+## Ekstrahovana tabela (stavke)
+
+<figure><img src="../.gitbook/assets/validation_screen_line_items_table.png" alt="Tabela stavki na ekranu za validaciju sa trakom sa alatkama tabele"><figcaption><p>Ekstrahovana tabela ispod polja zaglavlja</p></figcaption></figure>
+
+Ispod polja zaglavlja DocBits prikazuje tabelu stavki dokumenta: jedan red po stavci fakture, jedna kolona po [koloni tabele](../admin-section/settings/global-settings/document-types/table-columns.md) konfigurisanoj za tip dokumenta. Kada tip dokumenta ima više tabela (na primer artikle i troškove), svaka tabela ima svoju karticu iznad mreže.
+
+### Odakle tabela potiče
+
+Iznad mreže postoji po jedna kartica za svaki put ekstrakcije koji je organizacija uključila:
+
+| Kartica | Značenje |
+|---|---|
+| **Ekstrahovana tabela** | Ekstrakcija zasnovana na pravilima (podešavanje *Ekstrakcija tabela*). Kod dobavljača sa obučenom tabelom ovi redovi dolaze iz sačuvanih pravila i ekstrahuju se na isti način na svakom dokumentu tog dobavljača; kod neobučenog dobavljača kartica može biti prazna. |
+| **AI ekstrahovana tabela** | AI ekstrakcija tabele (podešavanje *AI ekstrakcija tabela*). Popunjava se kada dobavljač nema sačuvana pravila, a za kolone označene sa *Koristi AI* čak i kada pravila postoje. Opis *AI table not found* na kartici znači da AI nije vratio ništa za ovaj dokument. |
+| **PO tabele** | Samo u graditelju rasporeda: stavke narudžbenice koje se koriste za uparivanje. |
+
+Ako se ne pojavljuje nijedna kartica, oba podešavanja tabele su isključena za organizaciju (Podešavanja → Obrada dokumenata → Klasifikacija i ekstrakcija). Koji AI nivo čita tabelu podešava se po organizaciji i može se zameniti po dobavljaču (AI model specifičan za dobavljača pod *Više postavki*).
+
+### Rad u tabeli
+
+* **Izmena ćelije**: kliknite u nju i kucajte. Kolone sa iznosima, brojevima i datumima validiraju se tokom kucanja.
+* **Dodaj novi red tabele**: dodaje prazan red na kraj. Koristite ga kada stavka nije prepoznata.
+* **Brisanje reda**: ikona kante na kraju reda.
+* **Dodaj prazne mapirane kolone**: prikazuje konfigurisane kolone koje je AI ostavio prazne, tako da možete ručno da ih popunite.
+* **Obnovi kolonu tabele**: vraća kolonu koju ste uklonili iz prikaza za ovaj dokument.
+* **Obriši tabelu**: briše sve redove ove tabele na ovom dokumentu. Konfiguracija se ne dira.
+* **Dodaj novu kolonu tabele** (administratori): isti dijalog kao u podešavanjima kolona tabele, bez napuštanja dokumenta.
+* **Oznake (tags)** (samo AI tabela): kratke tekstualne napomene za AI, na primer *"poslednja kolona je neto iznos"*.
+* **Primeni** / **Sačuvaj** / **Obriši** pored oznaka: *Primeni* ponovo pokreće AI tabelu za ovaj dokument sa oznakama i izmenama kolona koje ste napravili, bez čuvanja (ako dokument ima stavke uparene sa narudžbenicom, DocBits upozorava da se uparivanja uklanjaju); *Save Rules* čuva trenutno mapiranje kolona i oznake za ovog dobavljača; *Delete Rules* ih uklanja i ponovo pokreće AI ekstrakciju za ovaj dokument.
+* **Izvoz**: preuzima tabelu kao CSV datoteku.
+* **Idi na prikaz ekstrakcije tabele**: otvara obuku tabele za ovaj dokument. Koristite ga kada isti dobavljač stalno daje pogrešan rezultat: jednom nacrtajte tabelu, mapirajte kolone i kliknite na *Save Rules*; od tada se redovi pojavljuju na kartici *Ekstrahovana tabela*. Pogledajte [Obuka polja stavki / obuka tabele](../setup/document-training/training-line-fields-table-training/README.md).
+
+{% hint style="info" %}
+Ako je tabelu ekstrahovao AI, a vi otvorite obuku tabele, DocBits pita *Table is already extracted by AI. Do you want to train manually?* Nakon što sačuvate pravila, AI tabela se više ne koristi za ovog dobavljača.
+{% endhint %}
+
+### Ponovna ekstrakcija tabele
+
+* **Isti dokument, AI tabela:** dodajte ili izmenite oznake i kliknite na **Primeni**; AI tabela se ponovo gradi samo za ovaj dokument. Da biste odbacili i sačuvane oznake i formatiranje dobavljača, kliknite na **Obriši** (*Delete Rules*): DocBits potvrđuje sa *Rules has been deleted successfully* i ponovo pokreće AI ekstrakciju.
+* **Isti dokument, obučena pravila:** otvorite *Idi na prikaz ekstrakcije tabele*, ispravite tabelu i kliknite na *Save & re-extract*.
+* **Ceo dokument ponovo (zaglavlje i tabela):** Kontrolna tabla → meni dokumenta → *Ponovo pokreni*. Potrebno je nakon što administrator promeni kolone tabele ili podešavanja ekstrakcije.
+
+### Šta blokira odobravanje
+
+Tabela se proverava kada sačuvate ili odobrite dokument. Crvena ćelija ili poruka ispod tabele znači jedno od sledećeg:
+
+| Poruka | Uzrok | Šta uraditi |
+|---|---|---|
+| Obavezna kolona je prazna | Kolona označena sa *Obavezno* nema vrednost u ovom redu. | Popunite ćeliju ili pitajte administratora da li kolona mora da bude obavezna. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `količina × jedinična cena + troškovi − popust` razlikuje se od ukupnog iznosa stavke za više od 0,02. Često je jedna od četiri vrednosti pročitana u pogrešnu kolonu. | Ispravite vrednost koja je pogrešna na dokumentu; ako je kolona kao što je *Troškovi* dosledno popunjena pogrešnom vrednošću, obavestite administratora (pogledajte [Otklanjanje problema](../admin-section/settings/global-settings/document-types/table-columns.md#otklanjanje-problema)). |
+| *Line items add up to … but the net total is …* | Zbir ukupnih iznosa stavki razlikuje se od neto iznosa u zaglavlju. | Proverite da li nedostaje red ili je dupliran, ili je iznos u zaglavlju pogrešno pročitan. |
+| *Line Item Table is missing Mandatory column for PO* | PO uparivanje zahteva broj artikla, jediničnu cenu, količinu i ukupan iznos; jedna od tih kolona je skrivena. | Administrator: otkrijte kolonu pod Kolone tabele. |
+
+Administrator može da isključi sve provere tabele za tip dokumenta pomoću *Preskoči validaciju tabele* (Tipovi dokumenata → Dodatne postavke); neslaganja stavki i prazne obavezne kolone se tada ne prijavljuju.
+
 ### **Lupa:**
 
 <figure><img src="../.gitbook/assets/Bildschirmfoto 2024-05-10 um 09.00.49.png" alt="" width="118"><figcaption></figcaption></figure>

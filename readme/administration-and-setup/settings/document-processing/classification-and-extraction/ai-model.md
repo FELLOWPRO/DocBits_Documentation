@@ -20,13 +20,13 @@ DocBits, alan ve tablo çıkarımı için üç yapay zeka modeli seçeneği suna
 
 * **Full** – En kapsamlı seçenek, en yüksek çıkarım doğruluğuna sahiptir. Karmaşık düzenler, düşük kaliteli taramalar veya doğruluğun en önemli olduğu belgeler için idealdir. En güçlü seçenek olduğu için aynı zamanda en yavaşıdır, **belge başına 2 belirteç**.
 * **Fast** – Yüksek doğruluğu daha hızlı işleme ve daha düşük maliyetle birleştiren dengeli bir seçenek. Çoğu günlük belge için önerilen varsayılan seçenektir, **belge başına 1 belirteç**.
-* **Turbo** – En hızlı ve en ekonomik seçenek. Hızın ve düşük maliyetin azami doğruluktan daha önemli olduğu çok sayıda basit, temiz ve iyi yapılandırılmış belge için en uygunudur, **belge başına 1 belirteç**.
+* **Nexus** – Farklı bir model ailesi üzerinde çalışan, isteğe bağlı üçüncü seçenek. Fast ve Full'un farklı sonuç verdiği tedarikçilerde ikinci bir görüş istediğinizde veya alternatif model belirli bir düzeni daha iyi okuduğunda kullanışlıdır, **belge başına 1 belirteç**.
 
 | Seçenek | İdeal kullanım | Doğruluk | Hız | Belirteç maliyeti |
 |---------|----------------|----------|-----|-------------------|
 | **Full** | Karmaşık düzenler, kötü taramalar, yüksek hassasiyet | En yüksek | En yavaş | 2 / belge |
 | **Fast** | Günlük belgeler (önerilen varsayılan) | Yüksek | Hızlı | 1 / belge |
-| **Turbo** | Çok sayıda basit, temiz belge | İyi | En hızlı | 1 / belge |
+| **Nexus** | Alternatif model ailesinin daha iyi sonuç verdiği tedarikçiler (isteğe bağlı) | Yüksek | Hızlı | 1 / belge |
 
 <figure><img src="../../../../.gitbook/assets/ai_model_2.png" alt=""><figcaption></figcaption></figure>
 

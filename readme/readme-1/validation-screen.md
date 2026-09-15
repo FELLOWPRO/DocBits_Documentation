@@ -45,6 +45,63 @@ Buradan [DocBits'te Betik Ekle](../admin-section/setup/scripting-in-docbits/) ba
 * **Amaç:** Verilerin tam olarak eşleşmeyebileceği ancak yeterince yakın olduğu alanları tanımlamada ve düzeltmede yardımcı olur.
 * **Kullanım Senaryosu:** Tam eşleşmelerin her zaman mümkün olmadığı veri doğrulama süreçlerinde faydalıdır, örneğin hafif yanlış yazılmış isimler veya adresler.
 
+## Çıkarılan tablo (satır kalemleri)
+
+<figure><img src="../.gitbook/assets/validation_screen_line_items_table.png" alt="Doğrulama ekranında tablo araç çubuğuyla birlikte satır kalemi tablosu"><figcaption><p>Başlık alanlarının altındaki çıkarılan tablo</p></figcaption></figure>
+
+Başlık alanlarının altında DocBits, belgenin satır kalemi tablosunu gösterir: her fatura satırı için bir satır, belge türü için yapılandırılan her [tablo sütunu](../admin-section/settings/global-settings/document-types/table-columns.md) için bir sütun. Bir belge türünün birden fazla tablosu olduğunda (örneğin kalemler ve masraflar), her tablonun ızgaranın üstünde kendi sekmesi bulunur.
+
+### Tablo nereden gelir
+
+Izgaranın üstünde, kuruluşun açtığı her çıkarma yolu için bir sekme bulunur:
+
+| Sekme | Anlamı |
+|---|---|
+| **Çıkarılan tablo** | Kural tabanlı çıkarma (*Tablo Çıkarma* ayarı). Eğitilmiş tablosu olan bir tedarikçide bu satırlar kaydedilmiş kurallardan gelir ve o tedarikçinin her belgesinde aynı şekilde çıkarılır; eğitilmemiş bir tedarikçide sekme boş olabilir. |
+| **Yapay Zeka Çıkarılan Tablo** | Yapay zeka tablo çıkarma (*Yapay Zeka Tablo Çıkarma* ayarı). Tedarikçinin kaydedilmiş kuralı olmadığında ve kurallar olsa bile *Yapay Zeka Kullan* olarak işaretlenen sütunlar için doldurulur. Sekmedeki *AI table not found* ipucu, yapay zekanın bu belge için hiçbir sonuç döndürmediği anlamına gelir. |
+| **PO Tabloları** | Yalnızca düzen oluşturucuda: eşleştirme için kullanılan satın alma siparişi satırları. |
+
+Hiçbir sekme görünmüyorsa, kuruluş için her iki tablo ayarı da kapalıdır (Ayarlar → Belge İşleme → Sınıflandırma ve Çıkarma). Tabloyu hangi yapay zeka katmanının okuyacağı kuruluş başına ayarlanır ve doğrulama ekranındaki *Daha fazla ayar* altında tedarikçi başına geçersiz kılınabilir.
+
+### Tabloda çalışma
+
+* **Bir hücreyi düzenleme**: hücreye tıklayın ve yazın. Tutar, sayı ve tarih sütunları siz yazarken doğrulanır.
+* **Yeni tablo satırı ekle**: sona boş bir satır ekler. Bir satır tanınmadığında kullanın.
+* **Bir satırı silme**: satırın sonundaki çöp kutusu simgesi.
+* **Boş eşlenmiş sütunları ekle**: yapay zekanın boş bıraktığı yapılandırılmış sütunları gösterir, böylece elle doldurabilirsiniz.
+* **Tablo Sütununu Geri Yükle**: bu belge için görünümden kaldırdığınız bir sütunu geri getirir.
+* **Tabloyu sil**: bu belgedeki bu tablonun tüm satırlarını temizler. Yapılandırmaya dokunulmaz.
+* **Yeni tablo sütunu ekle** (yöneticiler): belgeden ayrılmadan, tablo sütunu ayarlarındakiyle aynı iletişim kutusu.
+* **Etiketler** (yalnızca yapay zeka tablosu): yapay zeka için kısa metin ipuçları, örneğin *"son sütun net tutardır"*. Bkz. [Yapay Zeka Tablosu](ai-table.md).
+* Etiketlerin yanındaki **Uygula** / **Kaydet** / **Sil**: *Uygula*, yaptığınız etiket ve sütun değişiklikleriyle yapay zeka tablosunu bu belge için yeniden çalıştırır, hiçbir şey kaydetmez (belgede PO ile eşleşmiş satırlar varsa DocBits eşleşmelerin kaldırılacağı konusunda uyarır); *Kuralları Kaydet*, mevcut sütun eşlemesini ve etiketleri bu tedarikçi için saklar; *Kuralları Sil* bunları kaldırır ve bu belge için yapay zeka çıkarmasını yeniden çalıştırır.
+* **Dışa aktar**: tabloyu CSV dosyası olarak indirir.
+* **Tablo çıkarma görünümüne git**: bu belge için tablo eğitimini açar. Aynı tedarikçi sürekli yanlış çıkıyorsa kullanın: tabloyu bir kez çizin, sütunları eşleyin ve *Kuralları Kaydet*'e tıklayın; bundan sonra satırlar *Çıkarılan tablo* sekmesinde görünür. Bkz. [Eğitim Satır Alanları / Tablo Eğitimi](../admin-section/setup/document-training/training-line-fields-table-training/README.md).
+
+{% hint style="info" %}
+Tablo yapay zeka tarafından çıkarılmışsa ve tablo eğitimini açarsanız DocBits *Table is already extracted by AI. Do you want to train manually?* diye sorar. Kuralları kaydettikten sonra bu tedarikçi için yapay zeka tablosu artık kullanılmaz.
+{% endhint %}
+
+### Tabloyu yeniden çıkarma
+
+* **Aynı belge, yapay zeka tablosu:** etiketleri ekleyin veya değiştirin ve **Uygula**'ya tıklayın; yapay zeka tablosu yalnızca bu belge için yeniden oluşturulur. Tedarikçinin kaydedilmiş etiketlerini ve biçimlendirmesini de kaldırmak için **Sil**'e (*Kuralları Sil*) tıklayın: DocBits *Rules has been deleted successfully* mesajıyla onaylar ve yapay zeka çıkarmasını yeniden çalıştırır.
+* **Aynı belge, eğitilmiş kurallar:** *Tablo çıkarma görünümüne git*'i açın, tabloyu düzeltin ve *Kaydet ve yeniden çıkar*'a tıklayın.
+* **Belgenin tamamı yeniden (başlık ve tablo):** Pano → belge menüsü → *Yeniden Başlat*. Bir yönetici tablo sütunlarını veya çıkarma ayarlarını değiştirdikten sonra gereklidir.
+
+### Onayı ne engeller
+
+Tablo, kaydettiğinizde veya onayladığınızda kontrol edilir. Kırmızı bir hücre veya tablonun altındaki bir mesaj şunlardan birini gösterir:
+
+| Mesaj | Neden | Ne yapmalı |
+|---|---|---|
+| Zorunlu sütun boş | *Zorunlu* olarak işaretlenen bir sütunun bu satırda değeri yok. | Hücreyi doldurun veya sütunun zorunlu olması gerekip gerekmediğini bir yöneticiye sorun. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `miktar × birim fiyat + masraflar − indirim`, satır toplamından 0,02'den fazla farklı. Çoğunlukla dört değerden biri yanlış sütuna okunmuştur. | Belgede yanlış olan değeri düzeltin; *Masraflar* gibi bir sütun sürekli yanlış değerle dolduruluyorsa yöneticinize bildirin (bkz. [Tablo Sütunları: Sorun giderme](../admin-section/settings/global-settings/document-types/table-columns.md)). |
+| *Line items add up to … but the net total is …* | Satır toplamlarının toplamı, başlıktaki net tutardan farklı. | Eksik veya yinelenen bir satır ya da yanlış okunmuş bir başlık tutarı olup olmadığını kontrol edin. |
+| *Line Item Table is missing Mandatory column for PO* | PO eşleştirme kalem numarası, birim fiyat, miktar ve toplam tutara ihtiyaç duyar; bunlardan biri gizli. | Yönetici: sütunun gizliliğini Tablo Sütunları altında kaldırın. |
+
+Bir yönetici, *Tablo doğrulamasını yok say* ile (Belge Türleri → Daha Fazla Ayarlar) bir belge türü için tüm tablo kontrollerini kapatabilir; satır uyuşmazlıkları ve boş zorunlu sütunlar o zaman bildirilmez.
+
+Kontroller hakkında daha fazla bilgi: [Tablo Sütunları](../admin-section/settings/global-settings/document-types/table-columns.md) sayfasındaki Sorun giderme bölümü.
+
 ### **Büyüteç:**
 
 <figure><img src="../.gitbook/assets/docbits_magnifying_glass_tool.png" alt="Docbits Magnifying Glass Tool" width="118"><figcaption></figcaption></figure>

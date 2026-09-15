@@ -56,21 +56,35 @@ Devre dışı bırakılırsa, ±0.05 toleransına izin verilir.
 
 ## Tablo Çıkarma
 
-**Tablo Çıkarma** veya **Yapay Zeka Tablo Çıkarma** özelliğini etkinleştirerek belgelerden tabloları çıkarabilirsiniz. Eğitilmiş bir tablo—ister yapay zeka tabanlı ister manuel olsun—her zaman belirli bir tedarikçiye bağlanacaktır.
+{% hint style="info" %}
+**Çalışan bir tablo çıkarma için ön koşullar**
 
-**Tablo Çıkarma:** Manuel **tablo çıkarma** özelliğini etkinleştirir. Tablolar manuel olarak eğitilmelidir.
-Manuel eğitim hakkında daha fazla bilgiyi [buradan](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md) edinin.
+* Belge türünün **tablo sütunları** vardır (Ayarlar → Genel Ayarlar → Belge Türleri → [Tablo Sütunları](../../../../admin-section/settings/global-settings/document-types/table-columns.md)). Sütun olmadan çıkarılan verinin yazılacağı bir yer yoktur.
+* **Tablo Çıkarma** veya **Yapay Zeka Tablo Çıkarma** aşağıda, tüm kuruluş için açılmıştır.
+* Belgede okunabilir metin vardır: OCR çalışmıştır veya dijital olarak oluşturulmuş PDF'ler için E-Metin kullanılır ([OCR Ayarları](../ocr-settings.md)).
+* Eğitim ve yapay zeka modelleri **tedarikçi başınadır**. Eğitilmiş bir tablo yalnızca eğitildiği tedarikçinin belgelerine uygulanır.
+{% endhint %}
 
-**Yapay Zeka Tablo Çıkarma:** Tabloları otomatik olarak çıkarmak için yapay zeka kullanır. Sonuçlar yeterince doğru değilse, daha iyi kontrol ve eğitim için manuel **Tablo Çıkarma** özelliğine geçilmesi önerilir.
+**Tablo Çıkarma** veya **Yapay Zeka Tablo Çıkarma** özelliğini etkinleştirerek belgelerden tabloları çıkarabilirsiniz. Eğitilmiş bir tablo (ister yapay zeka tabanlı ister manuel olsun) her zaman belirli bir tedarikçiye bağlıdır.
 
-**Maliyet Öğesi için Tablo Çıkarma:** Etkinleştirildiğinde, DocBits maliyet öğelerini tablolardan satır düzeyinde çıkarabilir ve buna göre sınıflandırabilir.
+**Tablo Çıkarma:** Kural tabanlı tablo çıkarmayı etkinleştirir. Tablolar doğrulama ekranında tedarikçi başına eğitilir (*Tablo çıkarma görünümüne git*).\
+Eğitim hakkında daha fazla bilgiyi [buradan](../../../../admin-section/setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md) edinin.
+
+**Yapay Zeka Tablo Çıkarma:** Herhangi bir tedarikçinin tablosunu eğitim olmadan çıkarmak için yapay zeka kullanır. Bir tedarikçi için sonuçlar yeterince doğru değilse o tedarikçinin tablosunu eğitin; kaydedilen kurallar o tedarikçi için yapay zekaya göre öncelik kazanır.
+
+**Tablo Çıkarma Görsel Modunu Kullan (Yapay Zeka):** Yapay zeka, metin katmanı yerine sayfa görüntüsünü okur. Taranmış belgelerde ve net bir metin yapısı olmayan tablolarda yardımcı olur; daha yavaştır.
+
+**Yapılandırılmış Çıkarma Kullan (Yapay Zeka):** Yapay zeka tabloyu, yapılandırılmış tablo sütunlarına doğrudan eşlenen sabit bir yapıda döndürür. Belgelerdeki sütun başlıkları çok değişkenlik gösterdiğinde önerilir.
+
+**Maliyet Öğesi için Tablo Çıkarma:** Etkinleştirildiğinde, DocBits maliyet öğelerini tablolardan satır düzeyinde çıkarabilir ve buna göre sınıflandırabilir.\
 Ayrıntılı açıklama [burada](table-extraction-for-costing-element.md) mevcuttur.
 
-**Vergi Kodunu Otomatik Çıkar:** Etkinleştirildiğinde, sistem Doğrulama Ekranındaki **Vergi Kodu** alanını otomatik olarak doldurur—bir vergi kodu alanının yapılandırılmış olması koşuluyla.
+**Vergi Kodunu Otomatik Çıkar:** Etkinleştirildiğinde, sistem Doğrulama Ekranındaki **Vergi Kodu** alanını otomatik olarak doldurur (bir vergi kodu alanının yapılandırılmış olması koşuluyla).\
 Bu ayar hakkında daha fazla bilgi [burada](auto-extract-tax-code.md).
 
-**Yapay Zeka Modeli:** Tablo çıkarma için hangi **Yapay Zeka modelinin** kullanılacağını belirtmenize olanak tanır.
-Ayrıca şunları gösteren bir tablo göreceksiniz:
+**Çıkarma kurallarını kaydet (Yalnızca yönetici):** Tablo eğitiminde *Kuralları Kaydet*'e yalnızca yöneticiler tıklayabilir. Kullanıcılar bir tedarikçinin çıkarmasını bozan kuralları kaydetmeye devam ediyorsa bu ayarı açın.
+
+**Yapay Zeka Modeli:** Tablo çıkarma için kullanılan yapay zeka katmanını seçer: **Fast** (varsayılan), **Full** (en yüksek doğruluk, daha yavaş) veya **Nexus** (isteğe bağlı üçüncü katman). Seçicinin altındaki tablo şunları gösterir:
 
 * Hangi **tedarikçilerin** hangi yapay zeka modelini kullandığı
 * E-Metin kullanıp kullanmadıkları
@@ -78,11 +92,46 @@ Ayrıca şunları gösteren bir tablo göreceksiniz:
 
 Bu ayar [burada](ai-model.md) ayrıntılı olarak açıklanmıştır.
 
+### Tablo neden tedarikçiye göre farklı görünüyor?
+
+DocBits'in bir tablo hakkında öğrendiği her şey **tedarikçi başına** saklanır:
+
+* **Kaydedilmiş kurallar** (tablo eğitimi): tablonun konumu ve o tedarikçinin düzenindeki sütunlarının eşlemesi.
+* **Yapay zeka tablo etiketleri ve biçimlendirme kuralları**: kullanıcının o tedarikçinin yapay zeka tablosu için kaydettiği ipuçları.
+* **Tedarikçiye özel yapay zeka modeli**: doğrulama ekranında *Daha fazla ayar* altında o tedarikçi için seçilen katman.
+
+Bu nedenle kaydedilmiş kuralları olan A tedarikçisi, doğrulama ekranının *Çıkarılan tablo* sekmesinde her belgede aynı şekilde çıkarılan (deterministik) bir tablo gösterirken, kuralı olmayan B tedarikçisi *Yapay Zeka Çıkarılan Tablo*'yu alır. B'nin A gibi davranmasını sağlamak için B'nin tablosunu bir kez eğitin. Bir tedarikçiyi sıfırlamak için doğrulama ekranında kurallarını silin veya Yapay Zeka Modeli tablosunda eğitim verilerini sıfırlayın.
+
+### Tercih anahtarları
+
+Bu bölümdeki her anahtar, bir kuruluş tercihi olarak saklanır. Değeri API (`/preferences/set_preference`), bir script veya DocBits MCP (`get_preference` / `set_preference`) üzerinden ayarlarken bu anahtarı kullanın.
+
+| Ayar (arayüz etiketi) | Tercih anahtarı | Değerler |
+|---|---|---|
+| Tablo Çıkarma | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| Yapay Zeka Tablo Çıkarma | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Tablo Çıkarma Görsel Modunu Kullan (Yapay Zeka) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Yapılandırılmış Çıkarma Kullan (Yapay Zeka) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Maliyet öğesi için tablo çıkarma | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Vergi kodunu otomatik çıkar | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Çıkarma kurallarını kaydet (Yalnızca yönetici) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Yapay Zeka Modeli | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Tablo çıkarma sürümü (onay iletişim kutusu) | `TBL_EXT_VERSION` | sürüm dizesi |
+| OCR Ayarları → Tablolar için Varsa AI Verilerini Kullan | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Ayarları → Varsa E-Metni Kullan | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+
+Notlar:
+
+* Boole tercihleri `true` / `false` dizeleri olarak saklanır; hiç ayarlanmamış bir anahtar `false` sayılır. `1` veya `0` gönderirseniz DocBits bunları `true` / `false` olarak saklar.
+* `AI_MODEL` ayarlanmamışsa **Fast** anlamına gelir.
+* Bir anahtarın değiştirilmesi, sonrasında işlenen belgeler için geçerli olur. Bir belgeyi yeni ayarla yeniden çıkarmak için belgeyi yeniden başlatın.
+* Tedarikçi başına seçimler (E-Metin, yapay zeka modeli, kaydedilmiş kurallar) kuruluş tercihi değildir; o tedarikçinin bir belgesi için doğrulama ekranında *Daha fazla ayar* altında ayarlanır.
+
 ## Elektronik Belge
 
 **Desteklenmeyen ZUGFeRD PDF'sini İşle:** Etkinleştirilirse, desteklenmeyen **ZUGFeRD** sürümleri standart PDF olarak işlenecek ve gömülü XML göz ardı edilecektir.
 
-Desteklenen **ZUGFeRD** sürümlerinin listesi [burada](../../global-settings/document-types/edi/zugferd-1.0-2.1-and-2.3.md) bulunabilir.
+Desteklenen **ZUGFeRD** sürümlerinin listesi [burada](../../global-settings/document-types/edi/zugferd/README.md) bulunabilir.
 
 ## **Sınıflandırma Kuralları**
 

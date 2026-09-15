@@ -1,6 +1,6 @@
 # Informacje o wersji
 
-> **Najnowsza wersja hotfix:** [Hotfixy 15 września 2026](incremental-updates-15-september-2026.md) (R1.0.13): jeden zestaw reguł wyszukiwania na pulpicie, dostawcy rozpoznawani, gdy jedno pole wyszukiwania jest jednoznaczne, dopasowywanie zamówień zakupowych, które tłumaczy się samo, naprawione zablokowane dokumenty i fałszywe błędy eksportu, Touchless Intelligence, duże dane podstawowe bez zamrażania przeglądarki. Poprzednia: [Hotfixy 8 września 2026](incremental-updates-8-september-2026.md). Wszystkie strony hotfixów są wymienione w nawigacji pod Notatkami o wydaniu.
+> **Najnowsza wersja hotfix:** [Hotfixy 15 września 2026](incremental-updates-15-september-2026.md) (R1.0.13): jeden zestaw reguł wyszukiwania na pulpicie, dostawcy rozpoznawani, gdy jedno pole wyszukiwania jest jednoznaczne, dopasowywanie zamówień zakupowych, które tłumaczy się samo, naprawione zablokowane dokumenty i fałszywe błędy eksportu, Touchless Intelligence, szybsze logowanie i duże dane podstawowe bez zamrażania przeglądarki. Poprzednia: [Hotfixy 8 września 2026](incremental-updates-8-september-2026.md). Wszystkie strony hotfixów są wymienione w nawigacji pod Notatkami o wydaniu.
 
 ## **Release R1.0 23/24 maja 2026**
 

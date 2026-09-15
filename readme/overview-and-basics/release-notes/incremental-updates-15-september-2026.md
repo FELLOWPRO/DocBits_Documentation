@@ -15,12 +15,13 @@ klientów._
   „zawiera” (z `value*` i `*value` dla „zaczyna się od” i „kończy się na”),
   a `field!=value` zwraca także dokumenty, które w ogóle nie mają wartości.
   Wyszukiwanie bez chipa to wyszukiwanie fragmentu tekstu we wszystkich
-  polach, włącznie z identyfikatorami biznesowymi. Liczba wyników i lista
-  wyników opisują ten sam zbiór dokumentów, a wyszukiwanie, które dotarło do
-  granicy okna wyników lub odbyło się bez indeksu pełnotekstowego, informuje
-  o tym, zamiast raportować „kompletne”. Własne połączenie wyszukiwania
-  pulpitu (WebSocket) nigdy wcześniej nie docierało do indeksu
-  pełnotekstowego; teraz dociera.
+  polach, włącznie z numerami zamówień zakupowych, kodami kreskowymi i
+  numerami zapotrzebowań. Liczba wyników, kafelki statusów i stronicowanie
+  opisują ten sam zbiór dokumentów, a wyszukiwanie, które dotarło do granicy
+  okna wyników lub odbyło się bez indeksu pełnotekstowego, informuje o tym,
+  zamiast raportować „kompletne”. Własne połączenie wyszukiwania pulpitu
+  (WebSocket) nigdy wcześniej nie docierało do indeksu pełnotekstowego; teraz
+  dociera.
 - **Dostawcy są rozpoznawani częściej.** Gdy jedno pole wyszukiwania (numer
   podatkowy, IBAN, numer dostawcy) pasuje dokładnie do jednego dostawcy, ten
   dostawca jest używany nawet wtedy, gdy szerokie pole, takie jak nazwa,
@@ -28,12 +29,12 @@ klientów._
   dostawcy. Tam, gdzie dane podstawowe zastąpiły wyekstrahowaną wartość,
   ekran walidacji o tym informuje i pozwala przywrócić oryginał.
 - **Dopasowywanie zamówień zakupowych tłumaczy się samo.** Ekran informuje,
-  dlaczego nie ma dopasowania i dlaczego dopasowanie nie zostało zachowane,
-  historia dopasowań wymienia uruchomione reguły transformacji, a ceny
-  jednostkowe PO są wyprowadzane z kwoty netto. Ręczne dopasowania znów
-  działają w organizacjach bez reguły zapasowej, a przerwane zadanie
-  dopasowania oznacza dokument jako nieudany, zamiast zostawiać go na zawsze
-  w „Queue”.
+  dlaczego nie ma dopasowania, dymek niezgodności podaje nazwę kolumny, która
+  nie pasowała, historia dopasowań wymienia uruchomione reguły transformacji,
+  a ceny jednostkowe PO są wyprowadzane z kwoty netto. Ręczne dopasowania
+  znów działają w organizacjach bez reguły zapasowej, usunięte zamówienia
+  zakupowe pozostają usunięte, a przerwane zadanie dopasowania oznacza
+  dokument jako nieudany, zamiast zostawiać go na zawsze w „Queue”.
 - **Zablokowane dokumenty i fałszywe błędy.** W organizacjach przesyłających
   dokumenty w sposób ciągły dokumenty były degradowane do priorytetu kolejki,
   który w godzinach pracy nigdy nie był obsługiwany (866 dokumentów
@@ -44,14 +45,16 @@ klientów._
 - **Touchless Intelligence.** Zakładka Analityki, która mierzy, ile dokumentów
   przechodzi przez DocBits bez udziału człowieka, otrzymuje swoje pełne
   pierwsze wydanie: klastry problemów z poradami AI, analiza zbiorcza,
-  propozycje zmian z podglądem, zastosowaniem i cofnięciem, diagnoza AI dla
-  poszczególnych dostawców oraz diagram przepływu przez potok dla każdego
-  dokumentu.
-- **Szybciej tam, gdzie danych jest dużo.** Lista rozwijana kont księgowych
-  działa w organizacjach z ponad 2 000 kont, strona reguł E-Documents
-  stronicuje swoje 1 600 reguł na serwerze, zamiast zamrażać przeglądarkę,
-  a przycisk Odśwież na pulpicie zamówień zakupowych zwraca świeże dane
-  zamiast listy z bufora.
+  propozycje zmian z podglądem, zastosowaniem i cofnięciem, strona dostawcy
+  z trendem i przykładami, diagram przepływu przez potok dla każdego
+  dokumentu oraz diagram zestawu reguł zamówień zakupowych, który informuje,
+  dlaczego dokument nie przeszedł.
+- **Szybciej tam, gdzie danych jest dużo.** Zimne logowania pomijają
+  sumowanie księgi kredytów, które trwało do 33 s, lista rozwijana kont
+  księgowych działa w organizacjach z ponad 2 000 kont, strona reguł
+  E-Documents stronicuje swoje 1 600 reguł na serwerze, zamiast zamrażać
+  przeglądarkę, a przycisk Odśwież na pulpicie zamówień zakupowych zwraca
+  świeże dane zamiast listy z bufora.
 - **Bezpieczeństwo.** Mapy źródłowe frontendu przestają być wysyłane z każdym
   wdrożeniem, filtry wyszukiwania danych podstawowych są przekazywane jako
   parametry SQL, a nie wstawiane do zapytania, wygasły token jest odrzucany
@@ -64,15 +67,29 @@ klientów._
 
 ### Logowanie i konta
 
+- Logowanie jest szybsze. Sprawdzenie subskrypcji przy logowaniu pytało o
+  pełne saldo kredytów, co sumowało miliony wierszy księgi i często
+  przekraczało 10-sekundowy limit czasu klienta. Logowanie pyta teraz tylko
+  o to, czy subskrypcja istnieje; salda nadal są obliczane w Settings →
+  Subscription.
+- Po przełączeniu regionu (EU ↔ US) pozostajesz zalogowany. Region docelowy
+  przez kilka sekund odpowiada „invalid token”, dopóki sesja się nie
+  zreplikuje, a dwie ścieżki kodu odczytywały to jako martwą sesję.
 - Naprawiono nakładkę „Updating DocBits v10.59.3.1 → v10.59.3.1”, która na
   sandboxie przeładowywała się bez końca. Przeładowanie do tej samej wersji
   nie pokazuje już nakładki, pętla jest ograniczona dla każdej karty
   przeglądarki, a baner oferuje ręczne odzyskanie, gdyby sytuacja się
   powtórzyła.
+- Administratorzy mogą przyznać zakładkę Analytics Dashboard wybranym rolom,
+  a zmiany ról zapisują się niezawodnie.
 - Pole wyboru System Admin można zaznaczyć na istniejącym użytkowniku.
   Utworzenie administratora systemu z poziomu frontendu ma teraz skutek;
   wcześniej zadanie synchronizacji resetowało tę flagę przy każdym
   uruchomieniu.
+- Settings → Roles: lista członków renderuje się, zamiast zawisać za
+  wskaźnikiem ładowania, gdy serwer odpowie błędem.
+- Logowanie do serwera DocBits MCP wymusza uwierzytelnianie dwuskładnikowe i
+  jednorazową zgodę.
 
 ### Pulpit i wyszukiwanie
 
@@ -87,10 +104,11 @@ klientów._
 - Gdy zwykłe wyszukiwanie niczego nie znajdzie, pulpit wyjaśnia regułę i
   oferuje chipy do wybrania jednym kliknięciem (`Invoice number : <term>`,
   `Purchase order : <term>`, `Supplier ID : <term>`).
-- Wyszukiwanie z zerową liczbą wyników resetuje stronicowanie. Wcześniej
-  paginacja zachowywała liczbę wyników poprzedniego wyszukiwania.
-- Numery zapotrzebowań i osoby składające zapotrzebowanie są znajdowane
-  zwykłym wyszukiwaniem, bez chipa.
+- Wyszukiwanie z zerową liczbą wyników resetuje stronicowanie i każdą liczbę
+  na stronie. Wcześniej paginacja zachowywała liczbę wyników poprzedniego
+  wyszukiwania.
+- Numery zamówień zakupowych, numery zamówień, kody kreskowe, typy faktur i
+  numery zapotrzebowań można znaleźć bez chipa.
 
 ### Ekran walidacji
 
@@ -108,6 +126,9 @@ klientów._
 - Zapisywanie reguł ekstrakcji działa po wpisaniu numeru strony i następnie
   narysowaniu ramki dla pola. Ta sekwencja wcześniej powodowała awarię
   zapisu.
+- Ekstrakcję strukturalną można włączyć dla poszczególnych dostawców — w
+  oknie tfidf na ekranie walidacji oraz jako kolumnę tylko do odczytu w
+  Settings → Classification & Extraction.
 - Train Model działa w tle. Ekran pokazuje „training started”, odpytuje o
   wynik i raportuje sukces lub niepowodzenie. Duże organizacje dostawały
   wcześniej błąd bramy (gateway error), podczas gdy trenowanie trwało dalej
@@ -124,6 +145,9 @@ informuje, dlaczego nie ma dopasowania i dlaczego dopasowanie nie zostało
 zachowane, historia dopasowań pokazuje reguły transformacji, a cena
 jednostkowa PO jest obliczana z kwoty netto. Dodatkowo:
 
+- Dymek niezgodności podaje nazwę kolumny, która nie pasowała. Wcześniej był
+  pusty, ponieważ rejestrowane były tylko dopasowane kolumny, a ekran mógł
+  powiedzieć jedynie „Mismatched”.
 - Przycisk Auto Match eksportuje też dokument, gdy włączona jest opcja „PO
   Auto Match and Export”. Wcześniej eksport następował tylko wtedy, gdy
   dokument został otwarty z pulpitu przez „PO Match”.
@@ -132,6 +156,8 @@ jednostkowa PO jest obliczana z kwoty netto. Dodatkowo:
 - Przycisk Odśwież na pulpicie zamówień zakupowych czyści bufor po stronie
   serwera przed ponownym załadowaniem. Zamówienie zakupowe zaimportowane z
   ERP pojawiało się dopiero po siedmiu–ośmiu minutach.
+- Strona reguł dopasowywania PO rysuje zestaw reguł jako schemat blokowy, a
+  historia dopasowań przeniosła się do paska narzędzi akcji.
 
 ### Księgowanie
 
@@ -156,6 +182,9 @@ jednostkowa PO jest obliczana z kwoty netto. Dodatkowo:
   wartości poprzedniego typu.
 - Reguły transformacji: akcja „Set value” zapisuje się. Edytor wysyłał ją pod
   nazwą, którą serwer odrzuca.
+- List of Values: pasek boczny pokazuje nową listę i usuwa skasowaną bez
+  przeładowania; spóźnione odpowiedzi z poprzedniej listy nie nadpisują już
+  bieżącej.
 - Link do podtypów dokumentu jest pokazywany na standardowych typach
   dokumentów.
 - Mapowanie JPL eksportu SMB pobiera się jako `.properties`, więc plik można
@@ -198,26 +227,35 @@ wydanie ją kompletuje:
   wyników przetrwa nawigację i przeładowanie, a przebieg nie zawiesza się już
   na „Running · 0/6 done” w widoku podorganizacji.
 - **Propozycje zmian.** Rekomendacja staje się czymś, na czym można działać:
-  propozycja wycelowana w pole, które blokuje dokumenty, podgląd pokazujący,
-  co by zrobiła (nic nie jest zapisywane), zastosowanie, zmierzony efekt i
-  cofnięcie. Agenci docierają do tych samych kroków przez narzędzia MCP.
-  Kroki naprawy linkują bezpośrednio do wskazanej strony ustawień, wstępnie
-  przefiltrowanej według typu dokumentu, pola lub reguły.
-- **Diagnoza dostawcy.** Strona dostawcy wyjaśnia pusty stan, zamiast
-  pokazywać zera, i oferuje diagnozę AI dla danego dostawcy. Można wybrać do
-  pięciu dostawców i porównać ich obok siebie.
+  karta wyjaśnia proponowaną zmianę w czterech pytaniach, pozwala ją
+  dostosować, pokazuje podgląd tego, co by zrobiła (nic nie jest
+  zapisywane), stosuje ją, mierzy efekt i może ją cofnąć. Kroki naprawy
+  linkują bezpośrednio do wskazanej strony ustawień, wstępnie przefiltrowanej
+  według typu dokumentu, pola lub reguły.
+- **Strona dostawcy.** Wybierz dostawcę z zakładki lub przeszukaj kolejkę
+  szans według nazwy lub numeru. Strona pokazuje wskaźnik touchless dostawcy
+  w czasie (od 30 dni do 1 roku), jego problematyczne dokumenty i dokumenty,
+  które przeszły dobrze, oraz oferuje diagnozę AI dla danego dostawcy. Można
+  porównać obok siebie do pięciu dostawców. Zamiast wewnętrznego hasha
+  pokazywany jest numer dostawcy.
 - **Przepływ przez potok.** Diagram dla każdego dokumentu i klastra pokazuje
   drogę przez przyjęcie, klasyfikację, kontrolę e-dokumentu, dostawcę, OCR,
   ekstrakcję, walidację, dopasowanie PO, zatwierdzenie i eksport, wraz z
   etapem, który ją zatrzymał.
-- **Powody dopasowania zamówień zakupowych.** Decyzja dopasowania jest
-  śledzona dla każdego dokumentu (etap, przebieg, reguła, kolumna) i
-  skondensowana w wyniku Touchless. Kody powodów rozróżniają „nie znaleziono
-  zamówienia zakupowego” od „niezgodności pozycji” i „braku wymaganego pola”,
-  a propozycje tolerancji doradcy są kierowane do silnika reguł, który
-  podejmuje decyzję.
+- **Dopasowywanie zamówień zakupowych, wyjaśnione.** Zestaw reguł PO jest
+  rysowany jako schemat blokowy na stronie ustawień i w Touchless, wraz ze
+  ścieżką, którą przeszedł dany dokument, i podanym prostym językiem
+  powodem, dlaczego nie przeszedł. Kody powodów rozróżniają „nie znaleziono
+  zamówienia zakupowego” od „niezgodności pozycji” i „braku wymaganego
+  pola”.
+- **Segmentacja.** KPI, klastry i propozycje można podzielić według pola
+  dokumentu, na przykład Order Type = Direct / Indirect.
 - **Poprawne liczby.** Kafelki KPI respektują filtr podorganizacji i liczą
-  tylko dokumenty, które widok szczegółowy potrafi wyświetlić.
+  tylko dokumenty, które widok szczegółowy potrafi wyświetlić. Sesja
+  przeglądarkowa użytkownika systemowego organizacji liczy się jako człowiek,
+  więc dokumenty poprawione ręcznie nie są już zaliczane jako touchless.
+- Pasek narzędzi raportu mieści swoje kontrolki na szerokich ekranach, a
+  kolory trybu ciemnego pochodzą z motywu.
 
 ### DocNet
 
@@ -293,6 +331,9 @@ wydanie ją kompletuje:
   przeliczał pozycję na 1 000-krotność fakturowanej kwoty.
 - Eksport tabeli przetrwa pozycję, której zamówienie zakupowe zostało
   usunięte; pozycja jest eksportowana bez podstawy ceny.
+- Eksport IDM: pole wielowartościowe zmapowane na pole liczbowe (na przykład
+  ilość) powodowało awarię ładunku eksportu. Wartość jest najpierw
+  konwertowana na tekst.
 
 ### E-dokumenty
 
@@ -320,9 +361,9 @@ wydanie ją kompletuje:
   pustymi wartościami. Na Postgres `=` było wcześniej dopasowaniem prefiksu,
   więc `invoice_id=911892112` zwracało również 911892112333.
 - Zwykłe wyszukiwanie to wyszukiwanie fragmentu tekstu we wszystkich polach,
-  włącznie z identyfikatorami biznesowymi. Identyfikator z myślnikiem, taki
-  jak `2026-003`, to jeden literał, a typ klauzuli nie zmienia się już po
-  piątym znaku.
+  włącznie z identyfikatorami biznesowymi. Zamówienie zakupowe, numer
+  zamówienia, kod kreskowy, typ faktury, podtyp faktury i numer
+  zapotrzebowania nie miały w ogóle gałęzi wyszukiwania zwykłym tekstem.
 - Chip numeru faktury jest dokładny na Postgres, tak jak już był na indeksie.
   Zera wiodące, formy zmiennoprzecinkowe i wielkość liter są traktowane tak
   samo w wolnym tekście i w chipach.
@@ -330,28 +371,42 @@ wydanie ją kompletuje:
   usługi pełnotekstowej. Wcześniej każde delegowanie było odrzucane, więc
   pulpit po cichu przeszukiwał wyłącznie Postgres i prezentował odpowiedź
   jako kompletną.
-- Liczba wyników i lista wyników działają na jednym zestawie predykatów.
-  Liczba była wcześniej przybliżeniem z Postgres, a lista pochodziła z
-  indeksu.
+- Kafelki statusów, liczba wyników i lista wyników działają na jednym
+  zestawie predykatów. Kafelki opisywały wcześniej całą organizację podczas
+  każdego wyszukiwania.
+- Uprawnienia do podorganizacji i typów dokumentów są stosowane przed oknem
+  wyników, więc dozwolone dokumenty nie wypadają już poza limit 500 / 10 000.
 - Wyszukiwanie wektorowe zatrzymuje się na rzeczywistym oknie wyników i
   raportuje ten limit, zamiast pokazywać „(50)” jako dokładną sumę.
-- Wyszukiwanie, które odbyło się bez indeksu pełnotekstowego (indeks
-  opóźniony o minuty, nieudane sprawdzenie możliwości, zdegradowane
+- Wyszukiwanie, które odbyło się bez indeksu pełnotekstowego (brak indeksu,
+  indeks opóźniony o minuty, nieudane sprawdzenie możliwości, zdegradowane
   rozwiązywanie pól), raportuje status okna zamiast „kompletne”.
+- Eksporty z pulpitu dla obciętego wyszukiwania zawierają wiersz z uwagą w
+  pliku CSV/XLSX i w e-mailu z powiadomieniem.
 - Skrypty dokumentów wywołujące wyszukiwanie pełnotekstowe uwierzytelniają
   się poprawnie i ujawniają błędy, zamiast zwracać pusty wynik.
 
 ### Dopasowywanie zamówień zakupowych (mechanizm wbudowany w API)
 
-Dla organizacji, które dopasowują w API, a nie w PO Match Service: poprawiony
-numer PO jest dopasowywany w tym samym zapisie, który go poprawia.
+Dla organizacji, które dopasowują w API, a nie w PO Match Service:
+
+- Każde porównanie kolumn jest rejestrowane, włącznie z ceną jednostkową i
+  ilością, więc dymek niezgodności może podać nazwę kolumny, która nie
+  pasowała.
+- Zamówienia zakupowe usunięte przez użytkownika pozostają usunięte w
+  dopasowywaniu automatycznym.
+- Poprawiony numer PO jest dopasowywany w tym samym zapisie, który go
+  poprawia.
 
 ### Analityka
 
 - Touchless: wszystkie zmiany backendu stojące za powyższą sekcją Web App,
   w tym dowody etapów rejestrowane przez każdy etap potoku, ślad dopasowania
-  PO, propozycje zmian z podglądem, zastosowaniem i cofnięciem oraz status
-  zbiorczy w jednym wywołaniu na cykl.
+  PO, propozycje zmian z podglądem, zastosowaniem i cofnięciem, segmentacja,
+  status zbiorczy w jednym wywołaniu na cykl oraz punkt końcowy trendu
+  przyjmujący dowolne okno i dostawcę.
+- Naprawiono trzy zadania w tle analityki, które zawodziły przy każdym
+  zaplanowanym uruchomieniu.
 
 ---
 
@@ -363,6 +418,10 @@ numer PO jest dopasowywany w tym samym zapisie, który go poprawia.
 - Usługa rejestruje, skąd pochodził każdy kandydat na numer PO i które numery
   przebieg wyszukał. Własny numer faktury dokumentu nigdy nie jest kandydatem
   na PO. Odrzucone dopasowanie zostawia na dokumencie swój powód dla ekranu.
+- Rejestrowana jest kolumna, która nie pasowała, a kolumny usunięte przez
+  regułę zapasową są mierzone.
+- Zamówienia zakupowe usunięte przez użytkownika są respektowane, a
+  nieaktualne dopasowania w tle są czyszczone po ostatecznym wykluczeniu.
 - Ręczne dopasowywanie działa w organizacjach, których reguły nie mają flagi
   `is_fallback`. Użytkownicy wybierali pozycje, naciskali dopasuj i nic nie
   wracało.
@@ -370,6 +429,8 @@ numer PO jest dopasowywany w tym samym zapisie, który go poprawia.
   danych, sygnały keepalive i jawna obsługa miękkiego limitu czasu oznaczają
   zadanie jako nieudane, zamiast polegać na zabiciu procesu, które nie
   zostawiało śladu.
+- Dwa błędy produkcyjne (cena jednostkowa `NaN`, grupa bez ilości) nie
+  powodują już niepowodzenia całego dopasowania.
 - Zmiany tolerancji są odczytywane przy każdym żądaniu dopasowania, więc
   tolerancja zapisana przed chwilą jest używana przez następne dopasowanie.
 - Pięcioetapowy ślad decyzji jest utrwalany dla każdego dokumentu na potrzeby
@@ -379,35 +440,69 @@ numer PO jest dopasowywany w tym samym zapisie, który go poprawia.
 
 ## Auth Service — `1.78.27`
 
+- `/organisation/subscriptions` może pominąć saldo kredytów, a obliczanie
+  kredytów uruchamia wszystkie okna roku kontraktowego w jednej instrukcji
+  zamiast jednego zapytania na okno (32 zapytania po około 700 ms każde dla
+  największej organizacji). Dzienne podsumowanie zużycia jest przygotowane
+  do dalszego użytku.
+- Liczby pozostałych tokenów w odczytach organizacji są obliczane dla
+  każdego roku kontraktowego.
 - Wygaśnięcie tokenu jest egzekwowane przy trafieniach w cache. Zbuforowany
   wpis mógł uwierzytelniać nawet do dziewięciu godzin po wygaśnięciu tokenu.
 - Weryfikacja tokenu przestaje zapisywać niezmieniony `org_id` z powrotem do
   wiersza użytkownika przy każdym żądaniu, co generowało jeden UPDATE na
   wywołanie.
-- Naprawiono wyciek pamięci, który wpychał autoskaler na maksymalną liczbę
-  replik; usługa wróciła do dwóch workerów.
+- Kontrole stanu (health checks) pomijają operacje I/O na Redis, a klient
+  Redis korzysta z puli połączeń. Naprawiono wyciek pamięci, który wpychał
+  autoskaler na maksymalną liczbę replik, a usługa wróciła do dwóch workerów.
+- Powtórna rejestracja dostawcy (magic link otwarty dwukrotnie) używa
+  ponownie istniejącego członkostwa, zamiast kończyć się błędem
+  zduplikowanego klucza.
+- Wątek e-maila resetowania hasła używa jedynej zarejestrowanej aplikacji
+  Flask; reset zawodził od 25 sierpnia z komunikatem „current Flask app is
+  not registered”.
 - Flagę użytkownika systemowego można zmienić na istniejącym użytkowniku, gdy
   żaden inny członek jej nie ma.
+- Logowanie MCP: MFA powiązane z transakcją, jednorazowa zgoda i wymuszony
+  wybór konta, gdy przeglądarka przechowuje dwie tożsamości sesji.
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-- Gdy strumień replikacji EU ↔ US umiera, slot replikacji jest podłączany
-  ponownie w miejscu, zamiast przebudowywać most i ponownie uruchamiać pełne
-  uzgadnianie startowe, podczas którego slot pozostawał nieaktywny.
+Replikacja uwierzytelniania EU ↔ US:
+
+- Okresowe uzgadnianie utrzymuje strumień replikacji przy życiu. Trwało
+  około 95 s, podczas gdy limit czasu nadawcy wynosił 60 s, więc każde
+  sześciogodzinne uzgadnianie zrywało strumień zgodnie z harmonogramem.
+- Gdy strumień umiera, slot replikacji jest podłączany ponownie w miejscu,
+  zamiast przebudowywać most i ponownie uruchamiać pełne uzgadnianie
+  startowe.
+- Uzgadnianie porównuje klucze główne stronami, zamiast ładować obie strony
+  do pamięci, co przestało się mieścić, odkąd tabela tokenów dołączyła do
+  replikacji.
+- Istniejące źródło replikacji (replication origin) jest traktowane jako
+  sukces, a nie degradacja.
 
 ---
 
 ## Extraction Service — `1.55.33`
 
+- Ekstrakcja strukturalna jest rozstrzygana dla każdego dostawcy: ustawienie
+  wytrenowanego layoutu wygrywa z preferencją organizacji, tak samo jak
+  model AI.
+- Wyuczone mapowanie kolumn nie może zabronić kolumn, które faktura ma.
 - Ekstrakcja tabel AI: kolumny kwotowe są typowane jako liczby z opisem, a
   zmyślone wartości nieliczbowe w kolumnach kwotowych („St.” skopiowane z
   sąsiedniej komórki do ceny jednostkowej za) są odrzucane, zamiast
   zapisywane.
-- Faktury amerykańskie: szum zmiennoprzecinkowy poniżej centa nie
-  rozstrzyga już między kandydującymi parami netto/podatek (268.28 + 22.13
-  przegrywało z netto = suma, podatek = 0).
+- Faktury amerykańskie: gdy kwota netto już równa się sumie, podatek
+  rozstrzyga się na 0, zamiast zachowywać fałszywy wyekstrahowany podatek.
+  Szum zmiennoprzecinkowy poniżej centa nie rozstrzyga już między
+  kandydującymi parami netto/podatek (268.28 + 22.13 przegrywało z netto =
+  suma, podatek = 0).
+- Tabela, której wiersz nagłówka nigdy nie został zmapowany na rzeczywiste
+  nazwy, jest ekstrahowana, zamiast całkowicie zawodzić.
 
 ---
 
@@ -417,19 +512,20 @@ numer PO jest dopasowywany w tym samym zapisie, który go poprawia.
   sandbox i stage działały bez niego od czasu utworzenia aktywnych plików
   środowiskowych. Przesłanie i usunięcie go unieważniają, więc wyszukiwanie
   po przesłaniu widzi nowy dokument.
-- Zwykłe wyszukiwanie samego numeru faktury zwraca dokładnie pasującą
-  fakturę. Zapisane wartości walutowe, starsze mapowania boolowskie, daty i
-  flagi podatkowe przetrwają odchudzoną przebudowę indeksu, a wpisy indeksu
-  bez pól są wykrywane i odtwarzane z ekstrakcji.
 - Dokładne `=` na dynamicznym polu tekstowym porównuje wyłącznie całą
   wartość. Symbol wieloznaczny na analizowanej ścieżce sprawiał, że
   `note_field=53173` pasowało do „PO 53173 / 2024”.
 - Sam identyfikator z myślnikiem, taki jak `2026-003`, to jeden literał, a
   nie zbiór tokenów.
-- Ścieżki odczytu przestają tworzyć indeks, który czytają, a każda odpowiedź
-  z zerową liczbą trafień niesie status okna i powód.
-- Limit 50 wyników wyszukiwania wektorowego po stronie usługi został
-  usunięty.
+- Numery zamówień zakupowych są znajdowane w każdej postaci przechowywania,
+  włącznie z identyfikatorami składającymi się wyłącznie z cyfr, których
+  klauzula dokładna była po cichu pomijana.
+- Ścieżki odczytu przestają tworzyć indeks, który czytają. Brakujący lub
+  pusty indeks raportował „kompletne, 0 wyników”; każda odpowiedź z zerową
+  liczbą trafień niesie teraz status okna i powód.
+- Zapisane wartości walutowe, starsze mapowania boolowskie, daty i flagi
+  podatkowe przetrwają odchudzoną przebudowę indeksu, a wpisy indeksu bez pól
+  są wykrywane i odtwarzane z ekstrakcji.
 
 ---
 
@@ -441,6 +537,9 @@ numer PO jest dopasowywany w tym samym zapisie, który go poprawia.
   potem nie miała jak otworzyć.
 - Zmiana nazwy workflow odbywa się w ramach zapisu, a zmiany nazw szablonów
   są utrwalane.
+- Aktualizacja „pending workflow execution” jest ponawiana przy zerwanych
+  połączeniach. Pojedyncze nieudane żądanie zostawiało flagę bez zmian i
+  trzymało dokument poza eksportem, dopóki ktoś go nie zrestartował.
 
 ---
 
@@ -479,8 +578,7 @@ numer PO jest dopasowywany w tym samym zapisie, który go poprawia.
 Wyłącznie zmiany w budowaniu i wdrażaniu (aktualizacja obrazu bazowego,
 poświadczenia CI). Brak zmian w zachowaniu.
 
-<!-- Release R1.0.13. Announced: tickets with Jira "Release No." = R1.0.13 and a
-     status on sandbox or beyond, plus DOCB-14454, DOCB-14450, DOCB-14415,
-     DOCB-14419, DOCB-14431, DOCB-14045/46 (no Release No., on sandbox).
-     Held back (Release No. R1.1): DRFS-778, DRFS-712, MEF-165, MEF-166, DOCB-14389.
-     Labelled R1.0.12 but code ships now: DRFS-746/748/749/750/751, DOCB-14282. -->
+<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
+     Held back because Jira "Release No." names the later release R1.1:
+     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
+     DOCB-14389. Announce them with R1.1. -->

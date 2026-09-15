@@ -22,8 +22,6 @@ DocFlow MCP udostepnia **18 narzedzi** w czterech kategoriach:
 |-----------|------|
 | `list_workflows` | Wyswietla wszystkie przepływy pracy dla biezacej organizacji |
 | `get_workflow` | Pobiera szczegoly konkretnego przepływu pracy po ID |
-| `create_advanced_workflow` | Tworzy nowy zaawansowany przepływ pracy z wezlami i krawedziami |
-| `update_advanced_workflow` | Aktualizuje istniejacy zaawansowany przepływ pracy |
 | `delete_workflow` | Usuwa przepływ pracy po ID |
 
 ### Testowanie przepływow pracy

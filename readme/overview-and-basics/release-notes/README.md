@@ -1,6 +1,6 @@
 # Beleške o izdanju
 
-> **Najnovije izdanje hitnog popravka:** [Hotfixes 8 September 2026](incremental-updates-8-september-2026.md): usklađivanje narudžbenica — usklađivanje opstaje nakon čuvanja, usklađivanje se ponovo pokreće pri čuvanju, ekran prikazuje zašto nema usklađivanja, PO jedinčna cena iz neto iznosa. Prethodno: [Hotfixes 12–25 August 2026](incremental-updates-12-25-august-2026.md). Sve stranice sa hitnim popravkama su navedene u navigaciji pod Release Notes.
+> **Najnovije izdanje hitnog popravka:** [Hotfixes 15. septembar 2026.](incremental-updates-15-september-2026.md) (R1.0.13): jedan skup pravila za pretragu kontrolne table, dobavljači se prepoznaju kada je jedno polje za pretragu jedinstveno, usklađivanje narudžbenica koje objašnjava samo sebe, ispravljeni zaglavljeni dokumenti i lažne greške izvoza, Touchless Intelligence, veliki matični podaci bez zamrzavanja. Prethodno: [Hotfixes 8. septembar 2026.](incremental-updates-8-september-2026.md). Sve stranice sa hitnim popravkama su navedene u navigaciji pod Release Notes.
 
 ## **Izdanje R1.0 13/14. jun 2026.**
 

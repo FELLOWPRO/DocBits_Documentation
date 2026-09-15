@@ -15,8 +15,9 @@ non elencati non hanno avuto modifiche visibili ai clienti._
   `field:value` significa "contiene" (con `value*` e `*value` per "inizia con"
   e "termina con"), e `field!=value` restituisce anche i documenti che non
   hanno alcun valore. Una ricerca senza chip è una ricerca per sottostringa su
-  tutti i campi, identificativi aziendali inclusi. Il conteggio dei risultati e
-  l'elenco dei risultati descrivono lo stesso insieme di documenti, e una
+  tutti i campi, numeri di ordine di acquisto, codici a barre e numeri di
+  richiesta d'acquisto inclusi. Il conteggio dei risultati, i riquadri di
+  stato e la paginazione descrivono lo stesso insieme di documenti, e una
   ricerca che ha raggiunto la finestra dei risultati o è stata eseguita senza
   l'indice full-text lo segnala invece di dichiararsi "completa". La
   connessione di ricerca propria della dashboard (WebSocket) prima non
@@ -29,13 +30,14 @@ non elencati non hanno avuto modifiche visibili ai clienti._
   estratto, la schermata di validazione lo indica e permette di ripristinare
   l'originale.
 - **La corrispondenza degli ordini di acquisto spiega le proprie decisioni.**
-  Lo schermo indica perché non c'è corrispondenza e perché una corrispondenza
-  non è stata mantenuta, la cronologia della corrispondenza elenca le regole
-  di trasformazione eseguite, e i prezzi unitari PO vengono derivati
-  dall'importo netto. Le corrispondenze manuali funzionano di nuovo per le
-  organizzazioni senza regola di fallback, e un'attività di corrispondenza
-  terminata forzatamente contrassegna il documento come fallito invece di
-  lasciarlo per sempre in "Queue".
+  Lo schermo indica perché non c'è corrispondenza, il tooltip di mancata
+  corrispondenza nomina la colonna che non ha superato il confronto, la
+  cronologia della corrispondenza elenca le regole di trasformazione eseguite,
+  e i prezzi unitari PO vengono derivati dall'importo netto. Le corrispondenze
+  manuali funzionano di nuovo per le organizzazioni senza regola di fallback,
+  gli ordini di acquisto rimossi restano rimossi, e un'attività di
+  corrispondenza terminata forzatamente contrassegna il documento come fallito
+  invece di lasciarlo per sempre in "Queue".
 - **Documenti bloccati e falsi errori.** Le organizzazioni che caricano
   documenti in continuo vedevano i propri documenti retrocessi a una priorità
   di coda che non veniva mai servita durante l'orario di lavoro (866 documenti
@@ -46,13 +48,16 @@ non elencati non hanno avuto modifiche visibili ai clienti._
 - **Touchless Intelligence.** La scheda Analytics che misura quanti documenti
   attraversano DocBits senza intervento umano riceve la sua prima release
   completa: cluster di problemi con consigli AI, analisi in blocco, proposte
-  di modifica con anteprima, applicazione e annullamento, una diagnosi AI per
-  fornitore e un diagramma del flusso della pipeline per documento.
-- **Più veloce dove i dati sono grandi.** Il menu a tendina della contabilità
-  funziona per le organizzazioni con più di 2.000 conti, la pagina delle
-  regole E-Documents pagina le sue 1.600 regole sul server invece di bloccare
-  il browser, e Aggiorna nella dashboard degli ordini di acquisto restituisce
-  dati freschi invece di un elenco in cache.
+  di modifica con anteprima, applicazione e annullamento, una pagina del
+  fornitore con andamento ed esempi, un diagramma del flusso della pipeline
+  per documento, e un diagramma dell'insieme di regole degli ordini di
+  acquisto che spiega perché un documento non è passato.
+- **Più veloce dove i dati sono grandi.** Gli accessi a freddo saltano la
+  somma del registro crediti che richiedeva fino a 33 s, il menu a tendina
+  della contabilità funziona per le organizzazioni con più di 2.000 conti, la
+  pagina delle regole E-Documents pagina le sue 1.600 regole sul server invece
+  di bloccare il browser, e Aggiorna nella dashboard degli ordini di acquisto
+  restituisce dati freschi invece di un elenco in cache.
 - **Sicurezza.** Le source map del frontend non vengono più distribuite a ogni
   deploy, i filtri di ricerca dei dati master vengono passati come parametri
   SQL invece di essere interpolati, un token scaduto viene rifiutato anche in
@@ -65,13 +70,29 @@ non elencati non hanno avuto modifiche visibili ai clienti._
 
 ### Accesso e account
 
+- L'accesso è più veloce. Il controllo dell'abbonamento all'accesso richiedeva
+  il saldo crediti completo, che sommava milioni di righe del registro e
+  spesso superava il timeout di 10 s del client. L'accesso ora chiede solo se
+  esiste un abbonamento; i saldi vengono ancora calcolati in Impostazioni →
+  Abbonamento.
+- Il cambio di regione (UE ↔ USA) mantiene l'accesso. La regione di
+  destinazione risponde "invalid token" per alcuni secondi finché la sessione
+  non è stata replicata, e due percorsi di codice lo interpretavano come una
+  sessione scaduta.
 - L'overlay "Updating DocBits v10.59.3.1 → v10.59.3.1" che su sandbox si
   ricaricava all'infinito è stato corretto. Un ricaricamento sulla stessa
   versione non mostra più l'overlay, il ciclo è limitato per scheda, e un
   banner offre un ripristino manuale se dovesse ripetersi.
+- Gli amministratori possono concedere la scheda Analytics Dashboard a ruoli
+  specifici, e le modifiche ai ruoli vengono salvate in modo affidabile.
 - La casella System Admin può essere spuntata su un utente esistente. Creare
   un amministratore di sistema dal frontend ora ha effetto; un job di
   sincronizzazione reimpostava il flag a ogni esecuzione.
+- Impostazioni → Ruoli: l'elenco dei membri viene visualizzato invece di
+  restare bloccato dietro un indicatore di caricamento quando il server
+  risponde con un errore.
+- L'accesso al server MCP di DocBits applica l'autenticazione a due fattori e
+  il consenso monouso.
 
 ### Dashboard e ricerca
 
@@ -87,10 +108,12 @@ non elencati non hanno avuto modifiche visibili ai clienti._
 - Quando una ricerca semplice non trova nulla, la dashboard spiega la regola e
   offre chip con un clic (`Invoice number : <term>`, `Purchase order : <term>`,
   `Supplier ID : <term>`).
-- Una ricerca con zero risultati azzera il paginatore. Prima la paginazione
-  conservava il conteggio della ricerca precedente.
-- I numeri di richiesta d'acquisto e i richiedenti vengono trovati con una
-  ricerca semplice, senza chip.
+- Una ricerca con zero risultati azzera il paginatore e ogni conteggio della
+  pagina. Prima la paginazione conservava il conteggio della ricerca
+  precedente.
+- I numeri di ordine di acquisto, i numeri d'ordine, i codici a barre, i tipi
+  di fattura e i numeri di richiesta d'acquisto possono essere trovati senza
+  chip.
 
 ### Schermata di validazione
 
@@ -108,6 +131,9 @@ non elencati non hanno avuto modifiche visibili ai clienti._
 - Il salvataggio delle regole di estrazione funziona dopo aver digitato un
   numero di pagina e poi disegnato un riquadro per un campo. Quella sequenza
   faceva andare in crash il salvataggio.
+- L'estrazione strutturata può essere attivata per fornitore, nel popup tfidf
+  della schermata di validazione e come colonna di sola lettura in
+  Impostazioni → Classificazione ed Estrazione.
 - Train Model viene eseguito in background. La schermata mostra "training
   started", interroga periodicamente il risultato e segnala successo o
   fallimento. Le organizzazioni grandi ricevevano un errore del gateway mentre
@@ -126,6 +152,9 @@ corrispondenza e perché una corrispondenza non è stata mantenuta, la
 cronologia della corrispondenza mostra le regole di trasformazione, e il
 prezzo unitario PO viene calcolato dall'importo netto. Inoltre:
 
+- Il tooltip di mancata corrispondenza nomina la colonna che non ha trovato
+  corrispondenza. Prima era vuoto perché venivano registrate solo le colonne
+  corrispondenti, e lo schermo poteva dire solo "Mismatched".
 - Il pulsante Auto Match esporta anche il documento quando "PO Auto Match and
   Export" è attivo. Prima l'esportazione avveniva solo quando il documento
   veniva aperto dalla dashboard tramite "PO Match".
@@ -134,6 +163,9 @@ prezzo unitario PO viene calcolato dall'importo netto. Inoltre:
 - Il pulsante Aggiorna della dashboard degli ordini di acquisto svuota la
   cache lato server prima di ricaricare. Un ordine di acquisto importato
   dall'ERP compariva solo dopo sette-otto minuti.
+- La pagina delle regole di corrispondenza PO disegna l'insieme di regole come
+  diagramma di flusso, e la cronologia della corrispondenza si è spostata
+  nella barra degli strumenti delle azioni.
 
 ### Contabilità automatica
 
@@ -158,6 +190,9 @@ prezzo unitario PO viene calcolato dall'importo netto. Inoltre:
   di documento restavano i valori del tipo precedente.
 - Regole di trasformazione: un'azione "Set value" viene salvata. L'editor la
   inviava con un nome che il server rifiuta.
+- Elenco di Valori: la barra laterale mostra un nuovo elenco e rimuove uno
+  eliminato senza ricaricare; le risposte in ritardo di un elenco precedente
+  non sovrascrivono più quello corrente.
 - Il link ai sottotipi di documento è visibile sui tipi di documento standard.
 - La mappatura JPL dell'esportazione SMB viene scaricata come `.properties`,
   così il file può essere caricato di nuovo. Era denominato `.xml` e veniva
@@ -202,28 +237,36 @@ ci sono riusciti. Questa release la completa:
   al ricaricamento, e l'esecuzione non resta più bloccata su "Running · 0/6
   done" nella vista di una sotto-organizzazione.
 - **Proposte di modifica.** Una raccomandazione diventa qualcosa su cui potete
-  agire: una proposta che punta al campo che blocca i documenti, un'anteprima
-  che mostra cosa farebbe (nulla viene salvato), l'applicazione, l'effetto
-  misurato e l'annullamento. Gli agenti raggiungono gli stessi passaggi
-  tramite strumenti MCP. I passaggi di correzione rimandano direttamente alla
-  pagina delle impostazioni che nominano, già filtrata per tipo di documento,
-  campo o regola.
-- **Diagnosi del fornitore.** La pagina del fornitore spiega uno stato vuoto
-  invece di mostrare zeri, e offre una diagnosi AI per fornitore. È possibile
-  selezionare fino a cinque fornitori e confrontarli fianco a fianco.
+  agire: la scheda spiega la modifica proposta in quattro domande, vi permette
+  di adattarla, mostra in anteprima cosa farebbe (nulla viene salvato), la
+  applica, ne misura l'effetto e può annullarla. I passaggi di correzione
+  rimandano direttamente alla pagina delle impostazioni che nominano, già
+  filtrata per tipo di documento, campo o regola.
+- **Pagina del fornitore.** Scegliete un fornitore dalla scheda o cercate
+  nella coda delle opportunità per nome o numero. La pagina mostra il tasso
+  touchless del fornitore nel tempo (da 30 giorni a 1 anno), i suoi documenti
+  problematici e i documenti andati a buon fine, e offre una diagnosi AI per
+  fornitore. È possibile confrontare fino a cinque fornitori fianco a fianco.
+  Viene mostrato il numero del fornitore invece di un hash interno.
 - **Flusso della pipeline.** Un diagramma per documento e per cluster mostra
   il percorso attraverso acquisizione, classificazione, verifica e-document,
   fornitore, OCR, estrazione, validazione, corrispondenza PO, approvazione ed
   esportazione, con la fase che lo ha fermato.
-- **Motivi della corrispondenza degli ordini di acquisto.** La decisione di
-  corrispondenza viene tracciata per documento (fase, passaggio, regola,
-  colonna) e condensata nel risultato Touchless. I codici motivo distinguono
+- **Corrispondenza degli ordini di acquisto, spiegata.** L'insieme di regole
+  PO viene disegnato come diagramma di flusso nella pagina delle impostazioni
+  e in Touchless, con il percorso seguito da un documento e una spiegazione in
+  linguaggio semplice del perché non è passato. I codici motivo distinguono
   "ordine di acquisto non trovato" da "righe non corrispondenti" e "campo
-  obbligatorio mancante", e le proposte di tolleranza dell'advisor puntano al
-  motore di regole che decide.
+  obbligatorio mancante".
+- **Segmentazione.** KPI, cluster e proposte possono essere suddivisi per un
+  campo del documento, ad esempio Order Type = Direct / Indirect.
 - **Numeri corretti.** I riquadri KPI rispettano il filtro per
   sotto-organizzazione e contano solo i documenti che il dettaglio può
-  elencare.
+  elencare. Una sessione browser dell'utente di sistema dell'organizzazione
+  conta come intervento umano, così i documenti corretti a mano non vengono
+  più classificati come touchless.
+- La barra degli strumenti del report contiene tutti i propri controlli sugli
+  schermi larghi, e i colori della modalità scura provengono dal tema.
 
 ### DocNet
 
@@ -300,6 +343,9 @@ ci sono riusciti. Questa release la completa:
   l'importo fatturato.
 - Un'esportazione di tabella sopravvive a una riga il cui ordine di acquisto è
   stato rimosso; la riga viene esportata senza base di prezzo.
+- Esportazione IDM: un campo multivalore mappato su un campo numerico (ad
+  esempio una quantità) faceva andare in crash il payload di esportazione. Il
+  valore viene prima convertito in testo.
 
 ### E-document
 
@@ -327,9 +373,9 @@ ci sono riusciti. Questa release la completa:
   inclusi. Su Postgres `=` era una corrispondenza per prefisso, così
   `invoice_id=911892112` restituiva anche 911892112333.
 - Una ricerca semplice è una ricerca per sottostringa su tutti i campi,
-  identificativi aziendali inclusi. Un identificativo con trattino come
-  `2026-003` è un unico letterale, e il tipo di clausola non cambia più dopo
-  il quinto carattere.
+  identificativi aziendali inclusi. Ordine di acquisto, numero d'ordine,
+  codice a barre, tipo di fattura, sottotipo di fattura e numero di richiesta
+  d'acquisto non avevano alcun ramo di ricerca a testo libero.
 - Il chip del numero di fattura è esatto su Postgres, come lo era già
   sull'indice. Zeri iniziali, forme decimali e maiuscole/minuscole vengono
   trattati allo stesso modo nel testo libero e nei chip.
@@ -337,30 +383,45 @@ ci sono riusciti. Questa release la completa:
   al servizio full-text. Prima ogni delega veniva rifiutata, così la dashboard
   cercava silenziosamente solo su Postgres e presentava la risposta come
   completa.
-- Il conteggio dei risultati e l'elenco dei risultati usano un unico insieme
-  di predicati. Il conteggio era un'approssimazione di Postgres mentre
-  l'elenco proveniva dall'indice.
+- I riquadri di stato, il conteggio dei risultati e l'elenco dei risultati
+  usano un unico insieme di predicati. Durante qualsiasi ricerca i riquadri
+  descrivevano l'intera organizzazione.
+- I permessi per sotto-organizzazione e tipo di documento vengono applicati
+  prima della finestra dei risultati, così i documenti consentiti non escono
+  più dal limite di 500 / 10.000.
 - La ricerca vettoriale si ferma alla finestra reale dei risultati e segnala
   il limite invece di mostrare "(50)" come totale esatto.
-- Una ricerca eseguita senza l'indice full-text (indice in ritardo di minuti,
-  ricerca delle capacità fallita, risoluzione dei campi degradata) segnala lo
-  stato della propria finestra invece di "completa".
+- Una ricerca eseguita senza l'indice full-text (indice mancante, indice in
+  ritardo di minuti, ricerca delle capacità fallita, risoluzione dei campi
+  degradata) segnala lo stato della propria finestra invece di "completa".
+- Le esportazioni della dashboard di una ricerca troncata contengono una riga
+  di avviso nel CSV/XLSX e nella mail di notifica.
 - Gli script dei documenti che chiamano la ricerca full-text si autenticano
   correttamente e mostrano gli errori invece di restituire un risultato vuoto.
 
 ### Corrispondenza degli ordini di acquisto (matcher in-process)
 
 Per le organizzazioni che eseguono la corrispondenza nell'API invece che nel
-PO Match Service: un numero di ordine di acquisto corretto viene abbinato
-nello stesso salvataggio che lo corregge.
+PO Match Service:
+
+- Ogni confronto di colonna viene registrato, prezzo unitario e quantità
+  inclusi, così il tooltip di mancata corrispondenza può nominare la colonna
+  che non ha superato il confronto.
+- Gli ordini di acquisto rimossi dall'utente restano rimossi nella
+  corrispondenza automatica.
+- Un numero di ordine di acquisto corretto viene abbinato nello stesso
+  salvataggio che lo corregge.
 
 ### Analytics
 
 - Touchless: tutte le modifiche backend dietro la sezione Web App qui sopra,
   incluse le evidenze di fase registrate da ogni fase della pipeline, la
   traccia della corrispondenza PO, le proposte di modifica con anteprima,
-  applicazione e ripristino, e lo stato delle analisi in blocco in un'unica
-  chiamata per ciclo.
+  applicazione e ripristino, la segmentazione, lo stato delle analisi in
+  blocco in un'unica chiamata per ciclo, e l'endpoint dell'andamento che
+  accetta qualsiasi finestra temporale e un fornitore.
+- Tre attività in background di Analytics che fallivano a ogni esecuzione
+  pianificata sono state corrette.
 
 ---
 
@@ -373,6 +434,11 @@ nello stesso salvataggio che lo corregge.
   numeri un'esecuzione ha cercato. Il numero di fattura stesso di un documento
   non è mai un candidato PO. Una corrispondenza scartata lascia la propria
   motivazione sul documento per lo schermo.
+- La colonna che non ha trovato corrispondenza viene registrata, e le colonne
+  rimosse da una regola di fallback vengono misurate.
+- Gli ordini di acquisto rimossi dall'utente vengono rispettati, e le
+  corrispondenze in background obsolete vengono azzerate dopo l'esclusione
+  finale.
 - La corrispondenza manuale funziona per le organizzazioni le cui regole non
   hanno il flag `is_fallback`. Gli utenti selezionavano le righe, premevano
   match, e non tornava nulla.
@@ -380,6 +446,8 @@ nello stesso salvataggio che lo corregge.
   database, i keepalive e un gestore esplicito del soft time limit
   contrassegnano l'attività come fallita invece di affidarsi a
   un'interruzione forzata che non lasciava traccia.
+- Due errori di produzione (un prezzo unitario `NaN`, un gruppo senza
+  quantità) non fanno più fallire l'intera corrispondenza.
 - Le modifiche alle tolleranze vengono lette a ogni richiesta di
   corrispondenza, così una tolleranza salvata un attimo fa viene usata dalla
   corrispondenza successiva.
@@ -390,34 +458,68 @@ nello stesso salvataggio che lo corregge.
 
 ## Auth Service — `1.78.27`
 
+- `/organisation/subscriptions` può saltare il saldo crediti, e il calcolo dei
+  crediti esegue tutte le finestre dell'anno contrattuale in un'unica
+  istruzione invece di una query per finestra (32 query da circa 700 ms
+  ciascuna per l'organizzazione più grande). Un rollup giornaliero
+  dell'utilizzo è predisposto per usi futuri.
+- I valori dei token rimanenti nei lettori dell'organizzazione vengono
+  calcolati per anno contrattuale.
 - La scadenza del token viene applicata anche in caso di cache hit. Una voce
   in cache poteva autenticare fino a nove ore dopo la scadenza del token.
 - La verifica del token non scrive più un `org_id` invariato sulla riga
   dell'utente a ogni richiesta, cosa che produceva un UPDATE per chiamata.
-- È stata corretta una perdita di memoria che portava l'autoscaler al massimo
-  numero di repliche, e il servizio è tornato a due worker.
+- I controlli di integrità saltano l'I/O di Redis, e il client Redis usa un
+  pool di connessioni. È stata corretta una perdita di memoria che portava
+  l'autoscaler al massimo numero di repliche, e il servizio è tornato a due
+  worker.
+- Una registrazione fornitore ripetuta (magic link aperto due volte)
+  riutilizza l'appartenenza esistente invece di fallire con un errore di
+  chiave duplicata.
+- Il thread della mail di reimpostazione password usa l'unica app Flask
+  registrata; la reimpostazione falliva con "current Flask app is not
+  registered" dal 25 agosto.
 - Il flag di utente di sistema può essere modificato su un utente esistente
   quando nessun altro membro lo detiene.
+- Accesso MCP: MFA vincolata alla transazione, consenso monouso, e scelta
+  forzata dell'account quando il browser contiene due identità di sessione.
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-- Quando il flusso di replica UE ↔ USA si interrompe, lo slot di replica viene
-  riagganciato sul posto invece di ricostruire il bridge e rieseguire l'intera
-  riconciliazione di avvio, durante la quale lo slot restava inattivo.
+Replica dell'autenticazione UE ↔ USA:
+
+- La riconciliazione periodica mantiene attivo il flusso di replica.
+  Richiedeva circa 95 s mentre il timeout del mittente era di 60 s, così ogni
+  riconciliazione a cadenza di sei ore interrompeva puntualmente il flusso.
+- Quando il flusso si interrompe, lo slot di replica viene riagganciato sul
+  posto invece di ricostruire il bridge e rieseguire l'intera riconciliazione
+  di avvio.
+- La riconciliazione confronta le chiavi primarie a pagine invece di caricare
+  entrambi i lati in memoria, cosa che non è più possibile da quando la
+  tabella dei token fa parte della replica.
+- Un'origine di replica esistente viene considerata un successo, non un
+  degrado.
 
 ---
 
 ## Extraction Service — `1.55.33`
 
+- L'estrazione strutturata viene risolta per fornitore: l'impostazione di un
+  layout addestrato prevale sulla preferenza dell'organizzazione, come già
+  avviene per il modello AI.
+- Una mappatura di colonne appresa non può vietare colonne che la fattura ha.
 - Estrazione tabelle AI: le colonne importo sono tipizzate come numeri con una
   descrizione, e i valori non numerici inventati nelle colonne importo (uno
   "St." copiato dalla cella adiacente in unit price per) vengono scartati
   invece di essere memorizzati.
-- Fatture USA: il rumore in virgola mobile inferiore al centesimo non decide
-  più tra coppie candidate netto/imposta (268.28 + 22.13 perdeva contro
-  netto = totale, imposta = 0).
+- Fatture USA: quando l'importo netto è già uguale al totale, l'imposta viene
+  risolta a 0 invece di conservare un'imposta estratta spuria. Il rumore in
+  virgola mobile inferiore al centesimo non decide più tra coppie candidate
+  netto/imposta (268.28 + 22.13 perdeva contro netto = totale, imposta = 0).
+- Una tabella la cui riga di intestazione non è mai stata mappata su nomi
+  reali viene estratta invece di fallire del tutto.
 
 ---
 
@@ -427,19 +529,20 @@ nello stesso salvataggio che lo corregge.
   sandbox e stage ne erano privi da quando sono stati creati i file env
   attivi. Caricamento ed eliminazione la invalidano, così una ricerca dopo un
   caricamento vede il nuovo documento.
-- Una ricerca semplice per un numero di fattura restituisce la fattura con
-  corrispondenza esatta. I valori di valuta scritti in lettere, le mappature
-  booleane legacy, le date e i flag fiscali sopravvivono alla ricostruzione
-  dell'indice snello, e le voci di indice senza campi vengono rilevate e
-  recuperate dall'estrazione.
 - L'operatore esatto `=` su un campo di testo dinamico confronta solo il
   valore intero. Un carattere jolly sul percorso analizzato faceva sì che
   `note_field=53173` corrispondesse a "PO 53173 / 2024".
-- Un identificativo con trattino come `2026-003` è un unico letterale, non un
-  insieme di token.
-- I percorsi di lettura non creano più l'indice che leggono, e ogni risposta
-  con zero risultati riporta uno stato di finestra e un motivo.
-- Il limite lato servizio di 50 della ricerca vettoriale è stato rimosso.
+- Un identificativo con trattino in una ricerca semplice come `2026-003` è un
+  unico letterale, non un insieme di token.
+- I numeri di ordine di acquisto vengono trovati in ogni forma di
+  memorizzazione, inclusi gli identificativi composti solo da cifre la cui
+  clausola esatta veniva scartata silenziosamente.
+- I percorsi di lettura non creano più l'indice che leggono. Un indice
+  mancante o vuoto rispondeva "completa, 0 risultati"; ogni risposta con zero
+  risultati riporta ora uno stato di finestra e un motivo.
+- I valori di valuta scritti in lettere, le mappature booleane legacy, le date
+  e i flag fiscali sopravvivono alla ricostruzione dell'indice snello, e le
+  voci di indice senza campi vengono rilevate e recuperate dall'estrazione.
 
 ---
 
@@ -451,6 +554,10 @@ nello stesso salvataggio che lo corregge.
   workflow avanzato che poi non aveva modo di aprire.
 - La rinomina di un workflow viaggia con il salvataggio, e le rinomine dei
   template vengono persistite.
+- L'aggiornamento di "pending workflow execution" viene ritentato in caso di
+  connessioni interrotte. Una singola richiesta fallita lasciava il flag
+  invariato e teneva il documento fuori dall'esportazione finché qualcuno non
+  lo riavviava.
 
 ---
 
@@ -488,8 +595,7 @@ nello stesso salvataggio che lo corregge.
 Solo modifiche di build e distribuzione (aggiornamento dell'immagine base,
 credenziali CI). Nessun cambiamento nel comportamento.
 
-<!-- Release R1.0.13. Announced: tickets with Jira "Release No." = R1.0.13 and a
-     status on sandbox or beyond, plus DOCB-14454, DOCB-14450, DOCB-14415,
-     DOCB-14419, DOCB-14431, DOCB-14045/46 (no Release No., on sandbox).
-     Held back (Release No. R1.1): DRFS-778, DRFS-712, MEF-165, MEF-166, DOCB-14389.
-     Labelled R1.0.12 but code ships now: DRFS-746/748/749/750/751, DOCB-14282. -->
+<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
+     Held back because Jira "Release No." names the later release R1.1:
+     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
+     DOCB-14389. Announce them with R1.1. -->

@@ -14,12 +14,13 @@ die zichtbaar zijn voor klanten._
   elke zoekmachine exact deze waarde, `field:value` betekent bevat (met
   `value*` en `*value` voor begint-met en eindigt-op), en `field!=value` geeft
   ook documenten terug die helemaal geen waarde hebben. Een zoekopdracht zonder
-  chip is een substring-zoekopdracht over elk veld, inclusief zakelijke
-  identifiers. Het aantal resultaten en de resultatenlijst beschrijven dezelfde
-  set documenten, en een zoekopdracht die tegen het resultatenvenster aanliep
-  of zonder de volledige-tekstindex draaide, meldt dat in plaats van "compleet"
-  te rapporteren. De eigen zoekverbinding van het dashboard (WebSocket)
-  bereikte de volledige-tekstindex voorheen nooit; nu wel.
+  chip is een substring-zoekopdracht over elk veld, inclusief purchase order
+  nummers, barcodes en aanvraagnummers. Het aantal resultaten, de statustegels
+  en de paginering beschrijven dezelfde set documenten, en een zoekopdracht die
+  tegen het resultatenvenster aanliep of zonder de volledige-tekstindex
+  draaide, meldt dat in plaats van "compleet" te rapporteren. De eigen
+  zoekverbinding van het dashboard (WebSocket) bereikte de volledige-tekstindex
+  voorheen nooit; nu wel.
 - **Leveranciers worden vaker herkend.** Wanneer één opzoekveld (btw-nummer,
   IBAN, leveranciersnummer) precies één leverancier oplevert, wordt die
   leverancier gebruikt, ook als een breed veld zoals de naam met meerdere
@@ -27,12 +28,12 @@ die zichtbaar zijn voor klanten._
   leveranciersvelden weer. Waar stamgegevens een geëxtraheerde waarde hebben
   vervangen, meldt het validatiescherm dat en kunt u het origineel herstellen.
 - **Purchase order matching legt zichzelf uit.** Het scherm geeft aan waarom
-  er geen match is en waarom een match niet is behouden, de matching
-  geschiedenis vermeldt de transformatieregels die zijn uitgevoerd, en PO
-  eenheidsprijzen worden afgeleid van het nettobedrag. Handmatige matches
-  werken weer voor organisaties zonder fallback regel, en een afgebroken
-  matchingtaak markeert het document als mislukt in plaats van het eindeloos in
-  "Queue" te parkeren.
+  er geen match is, de mismatch-tooltip benoemt de kolom waarop het misging, de
+  matching geschiedenis vermeldt de transformatieregels die zijn uitgevoerd, en
+  PO eenheidsprijzen worden afgeleid van het nettobedrag. Handmatige matches
+  werken weer voor organisaties zonder fallback regel, verwijderde purchase
+  orders blijven verwijderd, en een afgebroken matchingtaak markeert het
+  document als mislukt in plaats van het eindeloos in "Queue" te parkeren.
 - **Vastgelopen documenten en onterechte fouten.** Bij organisaties die continu
   uploaden werden documenten teruggezet naar een wachtrijprioriteit die tijdens
   kantooruren nooit werd bediend (866 documenten vast in "new" bij één klant).
@@ -42,13 +43,16 @@ die zichtbaar zijn voor klanten._
 - **Touchless Intelligence.** Het Analytics-tabblad dat meet hoeveel documenten
   DocBits doorlopen zonder menselijke tussenkomst, krijgt zijn volledige eerste
   release: issue-clusters met AI-advies, bulkanalyse, wijzigingsvoorstellen met
-  voorbeeld, toepassen en ongedaan maken, een AI-diagnose per leverancier en
-  een pijplijnstroomdiagram per document.
-- **Sneller waar de gegevens groot zijn.** De accounting-keuzelijst werkt voor
-  organisaties met meer dan 2.000 rekeningen, de E-Documents-regelpagina
-  pagineert haar 1.600 regels op de server in plaats van de browser te
-  bevriezen, en Refresh op het purchase order dashboard geeft verse gegevens
-  terug in plaats van een gecachte lijst.
+  voorbeeld, toepassen en ongedaan maken, een leverancierspagina met trend en
+  voorbeelden, een pijplijnstroomdiagram per document, en een diagram van de
+  purchase order regelset dat aangeeft waarom een document niet is
+  doorgekomen.
+- **Sneller waar de gegevens groot zijn.** Een koude aanmelding slaat de
+  optelling van het creditgrootboek over die tot 33 s duurde, de
+  accounting-keuzelijst werkt voor organisaties met meer dan 2.000 rekeningen,
+  de E-Documents-regelpagina pagineert haar 1.600 regels op de server in plaats
+  van de browser te bevriezen, en Refresh op het purchase order dashboard geeft
+  verse gegevens terug in plaats van een gecachte lijst.
 - **Beveiliging.** Frontend source maps worden niet langer met elke deploy
   uitgeleverd, filters van de stamgegevens-lookup worden als SQL-parameters
   gebonden in plaats van geïnterpoleerd, een verlopen token wordt ook bij een
@@ -61,13 +65,28 @@ die zichtbaar zijn voor klanten._
 
 ### Aanmelden en accounts
 
+- Aanmelden gaat sneller. De abonnementscontrole bij het aanmelden vroeg het
+  volledige creditsaldo op, wat miljoenen grootboekrijen optelde en vaak de
+  time-out van 10 s van de client overschreed. Het aanmelden vraagt nu alleen
+  nog of er een abonnement bestaat; saldi worden nog steeds berekend op
+  Instellingen → Subscription.
+- Wisselen van regio (EU ↔ VS) houdt u aangemeld. De doelregio antwoordt een
+  paar seconden met "invalid token" totdat de sessie is gerepliceerd, en twee
+  codepaden lazen dat als een dode sessie.
 - De overlay "Updating DocBits v10.59.3.1 → v10.59.3.1" die op sandbox
   eindeloos bleef herladen, is opgelost. Een herlaad naar dezelfde versie toont
   de overlay niet meer, de lus is per tabblad begrensd, en een banner biedt
   handmatig herstel als het toch nog eens gebeurt.
+- Beheerders kunnen het tabblad Analytics Dashboard toekennen aan specifieke
+  rollen, en rolwijzigingen worden betrouwbaar opgeslagen.
 - Het selectievakje System Admin kan worden aangevinkt bij een bestaande
   gebruiker. Een systeembeheerder aanmaken vanuit de frontend heeft nu effect;
   een synchronisatietaak zette de vlag voorheen bij elke run terug.
+- Instellingen → Roles: de ledenlijst wordt weergegeven in plaats van achter
+  een laadindicator te blijven hangen wanneer de server met een fout
+  antwoordt.
+- Aanmelden bij de DocBits MCP-server dwingt tweefactorauthenticatie en
+  eenmalige toestemming af.
 
 ### Dashboard en zoeken
 
@@ -82,10 +101,11 @@ die zichtbaar zijn voor klanten._
 - Wanneer een kale zoekopdracht niets vindt, legt het dashboard de regel uit en
   biedt het chips met één klik aan (`Invoice number : <term>`,
   `Purchase order : <term>`, `Supplier ID : <term>`).
-- Een zoekopdracht met nul resultaten zet de paginering terug. Voorheen hield
-  de paginering het aantal van de vorige zoekopdracht vast.
-- Aanvraagnummers en aanvragers (requisition number, requisitioner) worden
-  gevonden met een gewone zoekopdracht, zonder chip.
+- Een zoekopdracht met nul resultaten zet de paginering en elk aantal op de
+  pagina terug. Voorheen hield de paginering het aantal van de vorige
+  zoekopdracht vast.
+- Purchase order nummers, ordernummers, barcodes, factuurtypen en
+  aanvraagnummers kunnen zonder chip worden gevonden.
 
 ### Validatiescherm
 
@@ -102,6 +122,9 @@ die zichtbaar zijn voor klanten._
   (bijvoorbeeld Item Number en Purchase Order).
 - Extractieregels opslaan werkt nadat u een paginanummer typt en daarna een
   kader voor een veld tekent. Die volgorde liet het opslaan voorheen crashen.
+- Gestructureerde extractie kan per leverancier worden ingeschakeld, in de
+  tfidf-popup van het validatiescherm en als alleen-lezen kolom in
+  Instellingen → Classification & Extraction.
 - Train Model draait op de achtergrond. Het scherm toont "training started",
   vraagt het resultaat periodiek op en meldt succes of mislukking. Grote
   organisaties kregen voorheen een gateway-fout terwijl de training server-side
@@ -118,6 +141,9 @@ scherm geeft aan waarom er geen match is en waarom een match niet is behouden,
 de matching geschiedenis toont de transformatieregels, en de PO eenheidsprijs
 wordt berekend uit het nettobedrag. Daarnaast:
 
+- De mismatch-tooltip benoemt de kolom die niet overeenkwam. Die was voorheen
+  leeg omdat alleen overeenkomende kolommen werden vastgelegd, en het scherm
+  kon alleen "Mismatched" melden.
 - De knop Auto Match exporteert het document ook wanneer "PO Auto Match and
   Export" is ingeschakeld. Voorheen vond de export alleen plaats wanneer het
   document vanuit het dashboard via "PO Match" werd geopend.
@@ -127,6 +153,8 @@ wordt berekend uit het nettobedrag. Daarnaast:
 - De knop Refresh op het purchase order dashboard wist de server-side cache
   voordat de lijst opnieuw wordt geladen. Een purchase order die vanuit het ERP
   was geïmporteerd, verscheen pas na zeven à acht minuten.
+- De pagina met PO matching regels tekent de regelset als een stroomdiagram, en
+  de matching geschiedenis is verhuisd naar de actiewerkbalk.
 
 ### Auto Accounting
 
@@ -151,6 +179,9 @@ wordt berekend uit het nettobedrag. Daarnaast:
   documenttype bleven de waarden van het vorige type staan.
 - Transformatieregels: een actie "Set value" wordt opgeslagen. De editor
   verstuurde die onder een naam die de server weigert.
+- List of Values: de zijbalk toont een nieuwe lijst en laat een verwijderde
+  lijst vallen zonder herladen; late antwoorden van een vorige lijst
+  overschrijven de huidige niet meer.
 - De link naar documentsubtypen wordt getoond bij standaard documenttypen.
 - De JPL-mapping van de SMB-export wordt gedownload als `.properties`, zodat
   het bestand opnieuw kan worden geüpload. Het heette `.xml` en werd bij het
@@ -193,26 +224,34 @@ Deze release maakt het compleet:
   overleeft navigatie en herladen, en de run blijft niet langer hangen op
   "Running · 0/6 done" in een suborganisatieweergave.
 - **Wijzigingsvoorstellen.** Een aanbeveling wordt iets waarop u kunt handelen:
-  een voorstel dat het veld aanpakt dat de documenten blokkeert, een voorbeeld
-  dat toont wat het zou doen (er wordt niets opgeslagen), toepassen, gemeten
-  effect en ongedaan maken. Agents bereiken dezelfde stappen via MCP-tools.
+  de kaart legt de voorgestelde wijziging uit in vier vragen, laat u die
+  aanpassen, toont een voorbeeld van wat ze zou doen (er wordt niets
+  opgeslagen), past ze toe, meet het effect en kan ze ongedaan maken.
   Oplossingsstappen linken rechtstreeks naar de instellingenpagina die ze
   noemen, voorgefilterd op documenttype, veld of regel.
-- **Leveranciersdiagnose.** De leverancierspagina legt een lege toestand uit in
-  plaats van nullen te tonen, en biedt een AI-diagnose per leverancier. Tot
-  vijf leveranciers kunnen worden geselecteerd en naast elkaar vergeleken.
+- **Leverancierspagina.** Kies een leverancier vanuit het tabblad of doorzoek de
+  kansenwachtrij op naam of nummer. De pagina toont het touchless-percentage van
+  de leverancier in de tijd (30 dagen tot 1 jaar), zijn probleemdocumenten en
+  de documenten die goed gingen, en biedt een AI-diagnose per leverancier. Tot
+  vijf leveranciers kunnen naast elkaar worden vergeleken. Het
+  leveranciersnummer wordt getoond in plaats van een interne hash.
 - **Pijplijnstroom.** Een diagram per document en per cluster toont het pad
   door intake, classificatie, e-documentcontrole, leverancier, OCR, extractie,
   validatie, PO matching, goedkeuring en export, met de fase waar het is
   gestopt.
-- **Redenen bij purchase order matching.** De matchingbeslissing wordt per
-  document getraceerd (fase, doorgang, regel, kolom) en samengevat in het
-  Touchless-resultaat. Redencodes maken onderscheid tussen "purchase order niet
-  gevonden", "regel komt niet overeen" en "verplicht veld ontbreekt", en de
-  tolerantievoorstellen van de adviseur richten zich op de rule engine die
-  beslist.
+- **Purchase order matching, uitgelegd.** De PO regelset wordt als een
+  stroomdiagram getekend op de instellingenpagina en in Touchless, met het pad
+  dat één document heeft afgelegd en een reden in gewone taal waarom het niet
+  is doorgekomen. Redencodes maken onderscheid tussen "purchase order niet
+  gevonden", "regel komt niet overeen" en "verplicht veld ontbreekt".
+- **Segmentatie.** KPI's, clusters en voorstellen kunnen worden opgesplitst op
+  een documentveld, bijvoorbeeld Order Type = Direct / Indirect.
 - **Correcte cijfers.** KPI-tegels respecteren het suborganisatiefilter en
-  tellen alleen documenten die de drill-down kan tonen.
+  tellen alleen documenten die de drill-down kan tonen. Een browsersessie van
+  de systeemgebruiker van de organisatie telt als menselijk, zodat handmatig
+  gecorrigeerde documenten niet langer als touchless worden geregistreerd.
+- De werkbalk van het rapport past zijn bedieningselementen op brede schermen,
+  en de kleuren van de donkere modus komen uit het thema.
 
 ### DocNet
 
@@ -286,6 +325,9 @@ Deze release maakt het compleet:
   regel en het ERP herprijsde de regel op 1.000 keer het gefactureerde bedrag.
 - Een tabelexport overleeft een regel waarvan de purchase order is verwijderd;
   de regel wordt zonder prijsbasis geëxporteerd.
+- IDM-export: een veld met meerdere waarden dat aan een numeriek veld was
+  gekoppeld (bijvoorbeeld een hoeveelheid) liet de exportpayload crashen. De
+  waarde wordt eerst naar tekst omgezet.
 
 ### E-documenten
 
@@ -312,9 +354,9 @@ Deze release maakt het compleet:
   was `=` voorheen een prefixmatch, zodat `invoice_id=911892112` ook
   911892112333 teruggaf.
 - Een kale zoekopdracht is een substring-zoekopdracht over elk veld, inclusief
-  zakelijke identifiers. Een identifier met koppelteken zoals `2026-003` is één
-  letterlijke waarde, en het clausuletype verandert niet meer na het vijfde
-  teken.
+  zakelijke identifiers. Purchase order, ordernummer, barcode, factuurtype,
+  factuursubtype en aanvraagnummer hadden helemaal geen tak voor een kale
+  zoekopdracht.
 - De factuurnummer-chip is exact op Postgres, zoals die op de index al was.
   Voorloopnullen, float-vormen en hoofdletters worden in vrije tekst en in
   chips hetzelfde behandeld.
@@ -322,28 +364,42 @@ Deze release maakt het compleet:
   aanroeper door aan de volledige-tekstservice. Elke delegatie werd voorheen
   geweigerd, zodat het dashboard stilzwijgend alleen Postgres doorzocht en het
   antwoord als compleet presenteerde.
-- Het aantal resultaten en de resultatenlijst draaien op één set predicaten.
-  Het aantal was voorheen een Postgres-benadering terwijl de lijst uit de index
-  kwam.
+- Statustegels, aantal resultaten en resultatenlijst draaien op één set
+  predicaten. De tegels beschreven voorheen de hele organisatie tijdens elke
+  zoekopdracht.
+- Suborganisatie- en documenttyperechten worden toegepast vóór het
+  resultatenvenster, zodat toegestane documenten niet langer buiten de limiet
+  van 500 / 10.000 vallen.
 - Vectorzoeken is begrensd op het werkelijke resultatenvenster en meldt die
   grens in plaats van "(50)" als exact totaal te tonen.
-- Een zoekopdracht die zonder de volledige-tekstindex draaide (index minuten
-  achter, capability-lookup mislukt, verminderde veldresolutie) meldt haar
-  vensterstatus in plaats van "compleet".
+- Een zoekopdracht die zonder de volledige-tekstindex draaide (index ontbreekt,
+  index minuten achter, capability-lookup mislukt, verminderde veldresolutie)
+  meldt haar vensterstatus in plaats van "compleet".
+- Dashboardexports van een afgekapte zoekopdracht bevatten een
+  waarschuwingsrij in de CSV/XLSX en in de notificatiemail.
 - Documentscripts die de volledige-tekstzoekfunctie aanroepen, authenticeren
   correct en tonen fouten in plaats van een leeg resultaat terug te geven.
 
 ### Purchase order matching (in-process matcher)
 
 Voor organisaties die in de API matchen in plaats van in de PO Match Service:
-een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
+
+- Elke kolomvergelijking wordt vastgelegd, inclusief eenheidsprijs en
+  hoeveelheid, zodat de mismatch-tooltip de kolom kan benoemen waarop het
+  misging.
+- Purchase orders die de gebruiker heeft verwijderd, blijven verwijderd bij
+  automatisch matchen.
+- Een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
 
 ### Analytics
 
 - Touchless: alle backend-wijzigingen achter de Web App-sectie hierboven,
   inclusief fasebewijs dat elke pijplijnfase vastlegt, de PO-match-trace,
-  wijzigingsvoorstellen met voorbeeld, toepassen en terugdraaien, en bulkstatus
-  in één aanroep per tik.
+  wijzigingsvoorstellen met voorbeeld, toepassen en terugdraaien, segmentatie,
+  bulkstatus in één aanroep per tik, en het trend-endpoint dat elk venster en
+  een leverancier accepteert.
+- Drie analytics-achtergrondtaken die bij elke geplande run mislukten, zijn
+  opgelost.
 
 ---
 
@@ -356,12 +412,18 @@ een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
   nummers een run heeft opgezocht. Het eigen factuurnummer van een document is
   nooit een PO kandidaat. Een gevallen match laat zijn reden achter op het
   document voor het scherm.
+- De kolom die niet overeenkwam, wordt vastgelegd, en de kolommen die een
+  fallback regel heeft verwijderd, worden gemeten.
+- Purchase orders die de gebruiker heeft verwijderd, worden gerespecteerd, en
+  verouderde achtergrondmatches worden gewist na de definitieve uitsluiting.
 - Handmatig matchen werkt voor organisaties waarvan de regels geen
   `is_fallback`-vlag dragen. Gebruikers selecteerden regels, drukten op match,
   en er kwam niets terug.
 - Geen documenten meer verweesd in "Queue": database statement timeouts,
   keepalives en een expliciete soft-time-limit-handler markeren de taak als
   mislukt in plaats van te vertrouwen op een kill die geen spoor achterliet.
+- Twee productiefouten (een `NaN`-eenheidsprijs, een groep zonder
+  hoeveelheden) laten niet langer de hele match mislukken.
 - Tolerantiewijzigingen worden per matchingverzoek gelezen, zodat een zojuist
   opgeslagen tolerantie door de volgende match wordt gebruikt.
 - De beslissingstrace in vijf fasen wordt per document bewaard voor Touchless.
@@ -370,34 +432,69 @@ een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
 
 ## Auth Service — `1.78.27`
 
+- `/organisation/subscriptions` kan het creditsaldo overslaan, en de
+  creditberekening draait alle contractjaarvensters in één statement in plaats
+  van één query per venster (32 query's van elk ongeveer 700 ms voor de
+  grootste organisatie). Een dagelijkse gebruiksrollup is voorbereid voor
+  verder gebruik.
+- Cijfers over resterende tokens bij organisatielezers worden per contractjaar
+  berekend.
 - Tokenverloop wordt afgedwongen bij cachehits. Een gecachte vermelding kon tot
   negen uur na het verlopen van het token nog authenticeren.
 - Tokenverificatie schrijft niet langer bij elk verzoek een ongewijzigd
   `org_id` terug naar de gebruikersrij, wat een UPDATE per aanroep opleverde.
-- Een geheugenlek dat de autoscaler naar het maximale aantal replica's dreef,
-  is opgelost, en de service draait weer met twee workers.
+- Health checks slaan Redis-I/O over, en de Redis-client wordt gepoold. Een
+  geheugenlek dat de autoscaler naar het maximale aantal replica's dreef, is
+  opgelost, en de service draait weer met twee workers.
+- Een herhaalde leveranciersregistratie (magic link twee keer geopend)
+  hergebruikt het bestaande lidmaatschap in plaats van te mislukken met een
+  duplicate-key-fout.
+- De mailthread voor het opnieuw instellen van het wachtwoord gebruikt de ene
+  geregistreerde Flask-app; het opnieuw instellen mislukte sinds 25 augustus
+  met "current Flask app is not registered".
 - De systeemgebruikersvlag kan worden gewijzigd bij een bestaande gebruiker
   wanneer geen ander lid die heeft.
+- MCP-aanmelding: transactiegebonden MFA, eenmalige toestemming, en een
+  verplichte accountkeuze wanneer de browser twee sessie-identiteiten bevat.
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-- Wanneer de EU ↔ VS-replicatiestroom wegvalt, wordt het replicatieslot ter
-  plekke opnieuw gekoppeld in plaats van de bridge te herbouwen en de volledige
-  opstart-reconciliatie opnieuw uit te voeren, waarbij het slot inactief bleef.
+EU ↔ VS-authenticatiereplicatie:
+
+- De periodieke reconciliatie houdt de replicatiestroom in leven. Die duurde
+  ongeveer 95 s terwijl de time-out van de zender 60 s was, zodat elke
+  zesuurlijkse reconciliatie de stroom volgens schema liet vallen.
+- Wanneer de stroom wegvalt, wordt het replicatieslot ter plekke opnieuw
+  gekoppeld in plaats van de bridge te herbouwen en de volledige
+  opstart-reconciliatie opnieuw uit te voeren.
+- De reconciliatie vergelijkt primaire sleutels in pagina's in plaats van beide
+  kanten in het geheugen te laden, wat niet meer past sinds de tokentabel aan
+  de replicatie is toegevoegd.
+- Een bestaande replicatie-origin wordt behandeld als succes, niet als
+  degradatie.
 
 ---
 
 ## Extraction Service — `1.55.33`
 
+- Gestructureerde extractie wordt per leverancier bepaald: de instelling van
+  een getrainde layout wint van de organisatievoorkeur, net zoals bij het
+  AI-model.
+- Een aangeleerde kolommapping kan geen kolommen verbieden die de factuur
+  heeft.
 - AI-tabelextractie: bedragkolommen worden getypeerd als getallen met een
   beschrijving, en verzonnen niet-numerieke waarden in bedragkolommen (een
   "St." die vanuit de naastgelegen cel naar eenheidsprijs per is gekopieerd)
   worden verwijderd in plaats van opgeslagen.
-- Amerikaanse facturen: float-ruis onder de cent bepaalt niet langer de keuze
-  tussen kandidaat-paren netto/belasting (268.28 + 22.13 verloor van netto =
-  totaal, belasting = 0).
+- Amerikaanse facturen: wanneer het nettobedrag al gelijk is aan het totaal,
+  wordt de belasting 0 in plaats van een onterecht geëxtraheerde belasting te
+  behouden. Float-ruis onder de cent bepaalt niet langer de keuze tussen
+  kandidaat-paren netto/belasting (268.28 + 22.13 verloor van netto = totaal,
+  belasting = 0).
+- Een tabel waarvan de koprij nooit aan echte namen is gekoppeld, wordt
+  geëxtraheerd in plaats van volledig te mislukken.
 
 ---
 
@@ -407,19 +504,21 @@ een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
   stage draaiden er zonder sinds de actieve env-bestanden zijn aangemaakt.
   Uploaden en verwijderen maken de cache ongeldig, zodat een zoekopdracht na
   een upload het nieuwe document ziet.
-- Een gewone zoekopdracht op een kaal factuurnummer geeft de exact
-  overeenkomende factuur terug. Uitgeschreven valutawaarden, verouderde
-  boolean-mappings, datums en belastingvlaggen overleven de rebuild van de
-  slanke index, en indexvermeldingen zonder velden worden gedetecteerd en
-  hersteld vanuit de extractie.
 - Exact `=` op een dynamisch tekstveld vergelijkt alleen de volledige waarde.
   Een wildcard op het geanalyseerde pad liet `note_field=53173` overeenkomen
   met "PO 53173 / 2024".
 - Een kale identifier met koppelteken zoals `2026-003` is één letterlijke
   waarde, geen verzameling tokens.
-- Leespaden maken niet langer de index aan die ze lezen, en elk antwoord zonder
-  treffers draagt een vensterstatus en een reden.
-- De service-side limiet van 50 bij vectorzoeken is verdwenen.
+- Purchase order nummers worden in elke opslagvorm gevonden, inclusief
+  identifiers die alleen uit cijfers bestaan en waarvan de exacte clausule
+  stilzwijgend werd weggelaten.
+- Leespaden maken niet langer de index aan die ze lezen. Een ontbrekende of
+  lege index meldde "compleet, 0 resultaten"; elk antwoord zonder treffers
+  draagt nu een vensterstatus en een reden.
+- Uitgeschreven valutawaarden, verouderde boolean-mappings, datums en
+  belastingvlaggen overleven de rebuild van de slanke index, en
+  indexvermeldingen zonder velden worden gedetecteerd en hersteld vanuit de
+  extractie.
 
 ---
 
@@ -431,6 +530,9 @@ een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
   geavanceerde workflow importeren die ze vervolgens niet kon openen.
 - Een workflowhernoeming gaat mee met de opslag, en hernoemingen van sjablonen
   worden bewaard.
+- De update "pending workflow execution" wordt opnieuw geprobeerd bij
+  weggevallen verbindingen. Eén mislukt verzoek liet de vlag ongewijzigd en
+  hield het document buiten de export totdat iemand het opnieuw startte.
 
 ---
 
@@ -466,8 +568,7 @@ een gecorrigeerd PO nummer wordt gematcht in de opslag die het corrigeert.
 Alleen build- en deploymentwijzigingen (update van de basisimage,
 CI-credentials). Geen gedragswijziging.
 
-<!-- Release R1.0.13. Announced: tickets with Jira "Release No." = R1.0.13 and a
-     status on sandbox or beyond, plus DOCB-14454, DOCB-14450, DOCB-14415,
-     DOCB-14419, DOCB-14431, DOCB-14045/46 (no Release No., on sandbox).
-     Held back (Release No. R1.1): DRFS-778, DRFS-712, MEF-165, MEF-166, DOCB-14389.
-     Labelled R1.0.12 but code ships now: DRFS-746/748/749/750/751, DOCB-14282. -->
+<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
+     Held back because Jira "Release No." names the later release R1.1:
+     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
+     DOCB-14389. Announce them with R1.1. -->

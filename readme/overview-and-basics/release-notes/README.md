@@ -1,6 +1,6 @@
 # Release Notes
 
-> **Laatste hotfix release:** [Hotfixes 15 september 2026](incremental-updates-15-september-2026.md) (R1.0.13): één set regels voor de dashboardzoekfunctie, leveranciers worden herkend wanneer één opzoekveld uniek is, purchase order matching dat zichzelf uitlegt, vastgelopen documenten en onterechte exportfouten opgelost, Touchless Intelligence, grote stamgegevens zonder bevriezen. Eerder: [Hotfixes 8 september 2026](incremental-updates-8-september-2026.md). Alle hotfix-pagina's staan vermeld in de navigatie onder Release Notes.
+> **Laatste hotfix release:** [Hotfixes 15 september 2026](incremental-updates-15-september-2026.md) (R1.0.13): één set regels voor de dashboardzoekfunctie, leveranciers worden herkend wanneer één opzoekveld uniek is, purchase order matching dat zichzelf uitlegt, vastgelopen documenten en onterechte exportfouten opgelost, Touchless Intelligence, sneller aanmelden en grote stamgegevens zonder bevriezen. Eerder: [Hotfixes 8 september 2026](incremental-updates-8-september-2026.md). Alle hotfix-pagina's staan vermeld in de navigatie onder Release Notes.
 
 ## **Release R1.0 23/24 mei 2026**
 

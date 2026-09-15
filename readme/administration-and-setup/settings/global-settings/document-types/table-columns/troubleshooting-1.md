@@ -1,43 +1,42 @@
-# Troubleshooting
+# Probleemoplossing
 
-## Here are solutions to common problems related to table column configurations:
+## De nieuwe kolom verschijnt niet op het validatiescherm
 
-**Incorrect column configurations:**
+* Het document is verwerkt voordat de kolom werd toegevoegd. Wijzigingen gelden voor documenten die daarna worden geüpload of opnieuw gestart: **start het document opnieuw** (Dashboard → documentmenu → Opnieuw starten).
+* De kolom is **Verborgen**. Controleer de vlag in de lijst met tabelkolommen.
+* De kolom is toegevoegd aan een **andere tabel** dan de getoonde. Het validatiescherm toont de tabellen van het documenttype; vergelijk de kolom *Tabelnaam*.
+* Het document heeft niet het documenttype dat u hebt geconfigureerd.
 
-* **Problem:** Data is not displayed or stored correctly, possibly due to incorrect data types, missing constraints, or insufficient column names.
-*   **Solution:**
+## De kolom is er, maar altijd leeg
 
-    Review the column configurations in the database table and make sure the data types are appropriate for each column.
+* De leverancier heeft **getrainde regels** en de nieuwe kolom is daarin niet gekoppeld. Open een van de documenten van de leverancier in de tabeltraining en koppel de kolom, of schakel *AI gebruiken* voor de kolom in.
+* Bij AI-extractie is de waarde op het document niet herkenbaar (geen kolomkop, afgekort, in een andere taal). Voeg een [AI-tabeltag](../../../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md) toe die de kolom benoemt, of koppel de kolom in de training.
 
-    Add missing constraints such as NOT NULL or UNIQUE to improve data integrity.
+## "Column name already exists"
 
-    Rename columns to use more meaningful and unique names that accurately describe the column's contents.
+Een kolom met dezelfde technische naam staat al in de tabel. Als die niet in de lijst staat, is het een verborgen standaardkolom: de melding zegt dan *Please activate it in Table Column settings*. Schakel *Verborgen* voor die kolom uit in plaats van een nieuwe kolom aan te maken.
 
-**Problems caused by deleted columns:**
+## Goedkeuring wordt geblokkeerd door een verplichte kolom
 
-* **Problem:** After deleting a column from a table, problems occur because reports, queries, or application logic still reference that column.
-*   **Solution:**
+De melding op de tabel noemt de kolom. Vul de cel in elke rij, of (als de waarde op dit document niet bestaat) schakel *Verplicht* voor de kolom uit, start het document opnieuw en probeer het nogmaals. Overweeg of de kolom überhaupt verplicht moet zijn (zie [Best practices](best-practices-2.md)).
 
-    Review all reports, queries, and application logic to make sure there are no more references to the deleted column.
+## De AI vult een kolom met de verkeerde waarde
 
-    Update all affected reports, queries, and application logic to reflect or remove the deleted column. If necessary, temporarily restore the deleted column and migrate the data to a new structure before permanently deleting it.
+Typisch geval: `CHARGES` krijgt het regeltotaal, waardoor elke rij de regeltotaalcontrole niet haalt met *Line total does not match quantity x unit price (expected …, got …)*, omdat kosten deel uitmaken van de formule `hoeveelheid × eenheidsprijs + kosten`.
 
-**Missing or inconsistent data:**
+* Schakel *AI gebruiken* voor de kolom uit als de getrainde regels de kolom correct vastleggen.
+* Als de leverancier geen regels heeft, train de tabel dan eenmalig (Tabeltraining) zodat de kolom aan de juiste positie is gebonden, of verberg de kolom als de leverancier die waarde nooit afdrukt.
+* Als laatste redmiddel schakelt *Tabelvalidatie overslaan* in de Meer instellingen van het documenttype alle tabelcontroles voor het hele documenttype uit; de afwijking wordt dan niet meer gesignaleerd, en lege verplichte kolommen ook niet.
 
-* **Problem:** Data is incomplete or inconsistent due to missing required fields or incorrect data types.
-*   **Solution:**
+## PO-matching: "Line Item Table is missing Mandatory column"
 
-    Review the table structure and make sure all required fields are marked NOT NULL to ensure that important data is not missing.
+PO-matching heeft de standaardkolommen artikelnummer, eenheidsprijs, hoeveelheid en totaalbedrag nodig. Een daarvan is verborgen of vervangen door een eigen kolom. Maak de standaardkolom weer zichtbaar, of koppel de waarde eraan in de tabeltraining.
 
-    Perform data cleanup to correct inconsistent or invalid data and update data types if necessary to improve consistency.
+## Een script of export mislukt na het verwijderen van een kolom
 
-**Performance issues due to missing indexes:**
+Het script of de exportmapping verwijst nog naar de verwijderde *Kolomnaam*. Verwijder de verwijzing, of voeg de kolom opnieuw toe met dezelfde titel; de technische naam wordt van de titel afgeleid en klopt dan weer.
 
-* **Problem:** Queries on large tables are slow because important columns are not indexed.
-*   **Solution:**
+## Waar verder te kijken
 
-    Identify the most frequently queried columns and add indexes to improve query performance.
-
-    Be aware that too many indexes can also affect write and update performance, so balanced indexing is important.
-
-By applying these solutions, you can resolve common table column-related issues and improve the efficiency, consistency, and performance of your database.
+* [Tabel Extractie Probleemoplossing](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md): extractiekwaliteit, OCR, E-Text
+* [Training Line Fields / Tabeltraining](../../../../setup/document-training/training-line-fields-table-training/README.md)

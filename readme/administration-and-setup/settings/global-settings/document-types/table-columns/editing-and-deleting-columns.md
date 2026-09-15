@@ -1,73 +1,46 @@
 # Kolommen bewerken en verwijderen
 
-Het bewerken en verwijderen van kolommen in een databasetabel zijn belangrijke bewerkingen die zorgvuldig moeten worden uitgevoerd om de gegevensintegriteit te waarborgen en rekening te houden met mogelijke gevolgen voor de applicatielogica en rapportage.
+Alles behalve de titel wordt direct in de lijst gewijzigd; er is geen bewerkingsdialoog.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_confirmation_dialog_generic.png" alt="Docbits Confirmation Dialog Generic"><figcaption></figcaption></figure>
+**Waar:** Instellingen → Globale instellingen → Documenttypen → Tabelkolommen
 
-**Hier zijn gedetailleerde stappen voor beide acties:**
+## Een vlag omschakelen
 
-## Een kolom bewerken:
+Vink het selectievakje in de rij aan of uit. De wijziging wordt direct opgeslagen (*Successfully saved*).
 
-<figure><img src="../../../../../.gitbook/assets/docbits_sso_config_params.png" alt="Docbits Sso Config Params"><figcaption></figcaption></figure>
+| Vlag | Aan | Uit |
+|---|---|---|
+| **Verplicht** | Goedkeuring wordt geblokkeerd zolang de kolom in een rij leeg is; het validatiescherm markeert de cel. | Lege cellen zijn toegestaan. |
+| **Alleen-lezen** | De waarde wordt getoond, maar kan niet worden overschreven. Gebruik dit voor waarden die uit een lookup of een script komen. | Gebruikers kunnen de cel bewerken. |
+| **Verborgen** | De kolom verdwijnt van het validatiescherm en uit de export. De gegevens blijven bewaard. | De kolom wordt getoond en geëxporteerd. |
+| **AI gebruiken** | De AI-tabelextractie vult deze kolom, ook voor leveranciers die getrainde regels hebben. | De kolom wordt gevuld door de getrainde regels, of door de AI wanneer er geen regels bestaan. |
 
-**Titel wijzigen:**
+{% hint style="info" %}
+Vlaggen gelden voor documenten die **na** de wijziging worden geüpload of opnieuw gestart. Geopende documenten behouden hun huidige tabel totdat ze opnieuw worden gestart.
+{% endhint %}
 
-* Klik op de titel van de kolom die u wilt wijzigen, er wordt een venster geopend waarin u de titel van de kolom kunt wijzigen.
+## De titel hernoemen
 
-**Vereistenanalyse:**
+Klik op het vertaalpictogram in de kolom *Acties* (*Vertaalsleutel bijwerken*), voer het nieuwe label in en bevestig. Het infopictogram ernaast toont welk label momenteel actief is en waar het vandaan komt. Alleen het label verandert; de technische *Kolomnaam* blijft gelijk, zodat scripts, exportmappings en getrainde regels blijven werken.
 
-* Identificeer de reden voor het bewerken van de kolom. Mogelijk moet u het gegevenstype wijzigen, beperkingen toevoegen of verwijderen, of de kolomnaam wijzigen.
+## Het type of de tabel wijzigen
 
-**Impactbeoordeling:**
+Niet mogelijk. Verberg de kolom (of verwijder de kolom als het uw eigen kolom is) en voeg een nieuwe kolom met het juiste type toe.
 
-* Voordat u wijzigingen aanbrengt, moet u controleren hoe deze de bestaande gegevens en applicatielogica beïnvloeden. Wijzigingen in het gegevenstype kunnen er bijvoorbeeld toe leiden dat gegevens worden geconverteerd of verloren gaan.
+## Een kolom verwijderen
 
-**Database-back-up:**
+De verwijderactie wordt alleen aangeboden voor kolommen die uw organisatie heeft aangemaakt. Standaardkolommen kunnen niet worden verwijderd; verberg ze.
 
-* Maak een back-up van uw database om er zeker van te zijn dat u een werkende versie heeft om op terug te vallen in geval van problemen.
+1. Open het menu met drie puntjes in de kolom *Acties* en kies **Verwijderen**. Bij standaardkolommen ontbreekt deze optie.
+2. Bevestig.
 
-**Het SQL-statement uitvoeren:**
+Wat er gebeurt:
 
-* Gebruik het ALTER TABLE SQL-statement om de gewenste wijzigingen aan de kolom aan te brengen. De exacte syntaxis hangt af van het databaseplatform dat u gebruikt en de wijzigingen die u wilt aanbrengen.
+* De kolom wordt uit de configuratie verwijderd. Documenten die **vanaf nu** worden verwerkt, hebben de kolom niet meer.
+* Documenten die al zijn geëxtraheerd, behouden de kolom en de waarden totdat ze opnieuw worden gestart.
+* Getrainde regels die deze kolom koppelden, blijven werken voor de andere kolommen; de koppeling voor de verwijderde kolom wordt genegeerd.
+* Als er in een exportmapping of een script naar de kolom wordt verwezen, verwijder dan die verwijzing; anders mislukt de export of het script met een fout over een ontbrekende kolom.
 
-**Gegevensmigratie:**
+## Een verwijdering ongedaan maken
 
-* Als u het gegevenstype van een kolom wijzigt, moet u mogelijk een gegevensmigratie uitvoeren om bestaande gegevens naar het nieuwe formaat te converteren.
-
-**Testen en valideren:**
-
-* Nadat u de kolom heeft bewerkt, moet u grondig controleren of uw applicatie goed werkt en of de gegevens correct worden opgeslagen en opgehaald.
-
-## Een kolom verwijderen:
-
-<figure><img src="../../../../../.gitbook/assets/docbits_delete_column_example.png" alt="Docbits Delete Column Example"><figcaption></figcaption></figure>
-
-**Vereistenanalyse:**
-
-* Zorg ervoor dat u de redenen voor het verwijderen van de kolom begrijpt. Is de kolom niet langer relevant of zijn er andere maniere om deze te consolideren?
-
-**Impactbeoordeling:**
-
-* Analyseer hoe het verwijderen van de kolom de bestaande gegevens, applicatielogica en rapportage zal beïnvloeden. Dit kan leiden tot gegevensverlies of gevolgen hebben voor query's en rapportages.
-
-**Database-back-up:**
-
-* Maak een volledige back-up van uw database om er zeker van te zijn dat u deze kunt herstellen in geval van onverwachte problemen.
-
-**Het SQL-statement uitvoeren:**
-
-* Gebruik het ALTER TABLE SQL-statement om de kolom te verwijderen. De exacte syntaxis verschilt per databaseplatform.
-
-**Gegevensmigratie (indien nodig):**
-
-* Als u belangrijke gegevens in de kolom heeft die u verwijdert, moet u mogelijk een gegevensmigratie uitvoeren om die gegevens naar een andere locatie te verplaatsen of ze te verwijderen.
-
-**Applicatielogica aanpassen:**
-
-* Zorg ervoor dat uw applicatielogica dienovereenkomstig wordt aangepast om ervoor te zorgen dat deze de verwijderde kolom niet langer benadert.
-
-**Testen og valideren:**
-
-* Controleer grondig of uw applicatie correct werkt en of alle gegevens- en rapportagefuncties naar verwachting werken.
-
-Bij het bewerken of verwijderen van kolommen is het van cruciaal belang dat u de impact van deze acties volledig begrijpt en de juiste voorzorgsmaatregelen neemt om de integriteit van uw database te behouden en ervoor te zorgen dat uw applicatie soepel blijft werken.
+Een verwijderde kolom kan niet vanuit de lijst worden hersteld. Voeg de kolom opnieuw toe met dezelfde titel: de technische naam wordt van de titel afgeleid, dus een kolom die met dezelfde titel wordt aangemaakt, krijgt dezelfde *Kolomnaam* en bestaande mappings kloppen weer.

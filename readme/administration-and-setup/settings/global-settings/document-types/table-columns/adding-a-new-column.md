@@ -1,53 +1,42 @@
-# Adding a new Column
+# Een nieuwe kolom toevoegen
 
-## Adding a new column to an existing table requires careful planning and execution to ensure that data integrity is maintained and application requirements are met.
+Voeg een kolom toe wanneer per regelitem een waarde moet worden vastgelegd die de standaardkolommen niet dekken: een kostenplaats, een projectnummer, een intern artikelnummer.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_settings_nav.png" alt="Docbits Table Columns Settings Nav"><figcaption><p>Settings: Document Types</p></figcaption></figure>
+## Voordat u begint
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_view.png" alt="Docbits Table Columns View"><figcaption><p>Table Columns</p></figcaption></figure>
+* Bepaal bij welke **tabel** de kolom hoort. De meeste documenttypen hebben één tabel (bijvoorbeeld `INVOICE_TABLE`). Als de lijst leeg is, klikt u eerst op **Nieuwe tabel maken**; het dialoogvenster vraagt alleen om een tabelnaam.
+* Bepaal het **type**: `AMOUNT` voor geldbedragen, `NUMBER` voor hoeveelheden, `DATE`, `BOOLEAN` voor ja/nee, `CURRENCY` voor een ISO-valutacode, `STRING` voor al het andere. Het type kan na het opslaan niet meer worden gewijzigd.
+* Controleer of er al een **standaardkolom** met dezelfde betekenis bestaat die verborgen is. Verborgen kolommen staan in de lijst met de vlag *Verborgen* ingeschakeld; maak die zichtbaar in plaats van een duplicaat aan te maken.
 
-**Here are detailed steps to add a new column:**
+## Stappen
 
-<figure><img src="../../../../../.gitbook/assets/docbits_add_new_column_steps.png" alt="Docbits Add New Column Steps"><figcaption></figcaption></figure>
+1. Open **Instellingen → Globale instellingen → Documenttypen → Tabelkolommen**.
+2. Klik op **Nieuwe tabelkolom toevoegen**.
 
-**Requirements analysis:**
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Dialoogvenster Nieuwe tabelkolom toevoegen met Titel, Is kolom verplicht, Selecteer kolomtype en Selecteer tabel"><figcaption><p>Nieuwe tabelkolom toevoegen</p></figcaption></figure>
 
-* Review your application's requirements and identify the purpose of the new column. What type of data will be stored? How will this column be used in the application?
+3. Vul het dialoogvenster in:
 
-<figure><img src="../../../../../.gitbook/assets/docbits_column_requirements_analysis.png" alt="Docbits Column Requirements Analysis" width="375"><figcaption><p>Add new table column</p></figcaption></figure>
+| Veld | Wat u invoert |
+|---|---|
+| **Titel** | Label dat de gebruiker op het validatiescherm ziet, bijvoorbeeld `Cost Centre`. Alleen letters en cijfers. DocBits leidt hieruit de technische *Kolomnaam* af (`COST_CENTRE`). |
+| **Is kolom verplicht?** | Vink aan wanneer het document niet mag worden goedgekeurd zolang de kolom in een rij leeg is. |
+| **Selecteer kolomtype** | Zie de typelijst hierboven. |
+| **Selecteer tabel** | De tabel die de kolom krijgt. |
 
-**Choosing the right column type:**
+4. Klik op **Doorgaan**. De kolom verschijnt in de lijst met *Alleen-lezen*, *Verborgen* en *AI gebruiken* uitgeschakeld. Schakel die vlaggen indien nodig in de lijst om, zie [Kolommen bewerken en verwijderen](editing-and-deleting-columns.md).
 
-* Choose the most appropriate column type based on the data that will be stored in the column. This can be AMOUNT for amount, STRING for strings, DATE for dates, etc.
-* Choosing the right column type is important to ensure data integrity and use storage space efficiently.
+## Na het toevoegen
 
-<figure><img src="../../../../../.gitbook/assets/docbits_choose_column_type.png" alt="Docbits Choose Column Type" width="375"><figcaption></figcaption></figure>
+* De kolom is **leeg op bestaande documenten**. Ze wordt gevuld op documenten die na de wijziging worden geüpload of opnieuw gestart.
+* Voor leveranciers met **getrainde regels** opent u een van hun documenten in de tabeltraining en koppelt u de nieuwe kolom; anders blijft de kolom voor die leverancier leeg. Zie [Tabellen en kolommen definiëren](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* Met **AI-tabelextractie** vult de AI de kolom als de waarde op het document herkenbaar is. Markeer de kolom met *AI gebruiken* als de leverancier getrainde regels heeft, maar deze kolom toch uit de AI moet komen.
+* Voeg de kolom toe aan de **exportmapping** als het ERP de kolom moet ontvangen, zie [Exporteren](../../../document-processing/export.md).
 
-**Choosing the right table:**
+## Meldingen
 
-* To select the correct column type in a particular table, such as the invoice table, it is important to consider the specific requirements of the data to be stored in that table.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
-
-**Deciding on column necessity:**
-
-* Consider whether the new column is required or whether it should allow NULL values. If the column is mandatory, it should be marked as NOT NULL to ensure that important data is not missing.
-* Also consider whether the column may become a required field for your application in the future.
-
-**Database backup:**
-
-* Before adding the new column, make a backup of your database to ensure that you have a working version to fall back on in case of any issues.
-
-**Executing the SQL statement:**
-
-*   Use the ALTER TABLE SQL statement to add the new column. The exact syntax depends on the database platform you are using, but in general the SQL statement looks like this:
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_sql_alter_table_syntax.png" alt="Docbits Sql Alter Table Syntax"><figcaption></figcaption></figure>
-
-    Replace table\_name with the name of your table, new\_column\_name with the name of the new column, and data\_type with the column type you selected. The \[NOT NULL] keyword indicates whether the column is mandatory.
-
-**Testing and validating:**
-
-* After the new column is added, thoroughly verify that your application is working properly. Run tests to ensure that data is stored and retrieved correctly and that the new column is working as expected.
-
-By carefully following these steps, you can successfully and effectively add a new column to your database table, choosing the correct column type and ensuring that the column is required when it is required.
+| Melding | Betekenis |
+|---|---|
+| *Column name already exists* | Een kolom met deze technische naam staat al in de tabel. Kies een andere titel. |
+| *Column name already exists – Please activate it in Table Column settings* | Een verborgen standaardkolom heeft deze naam. Schakel de vlag *Verborgen* van die kolom uit in plaats van een nieuwe kolom aan te maken. |
+| *No table exists. Please create table before creating columns.* | Het documenttype heeft nog geen tabel: klik eerst op **Nieuwe tabel maken**. |

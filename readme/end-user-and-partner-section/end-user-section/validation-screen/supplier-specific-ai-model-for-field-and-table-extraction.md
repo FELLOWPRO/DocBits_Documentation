@@ -7,7 +7,7 @@ Om het model te wijzigen, opent u het optiemenu door op de **drie puntjes** aan 
 
 * **Full** – Kost 2 tokens
 * **Fast** – Kost 1 token
-* **Turbo** – Kost 1 token
+* **Nexus** – Kost 1 token
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png)
 

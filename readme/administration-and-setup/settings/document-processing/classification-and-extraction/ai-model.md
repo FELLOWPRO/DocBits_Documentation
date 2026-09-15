@@ -20,13 +20,13 @@ DocBits biedt drie AI-model-opties voor veld- en tabelextractie. Ze verschillen 
 
 * **Full** – De meest grondige optie, met de hoogste extractienauwkeurigheid. Het beste voor complexe lay-outs, scans van lage kwaliteit of documenten waarbij precisie het belangrijkst is. Als krachtigste optie is het ook de langzaamste, tegen **2 tokens per document**.
 * **Fast** – Een evenwichtige optie die sterke nauwkeurigheid combineert met snellere verwerking tegen lagere kosten. Dit is de aanbevolen standaard voor de meeste alledaagse documenten, tegen **1 token per document**.
-* **Turbo** – De snelste en meest economische optie. Het meest geschikt voor grote aantallen eenvoudige, schone, goed gestructureerde documenten waarbij snelheid en lage kosten belangrijker zijn dan maximale nauwkeurigheid, tegen **1 token per document**.
+* **Nexus** – Een optionele derde optie die op een andere modelfamilie draait. Nuttig wanneer u een second opinion wilt voor leveranciers waarbij Fast en Full van elkaar afwijken, of wanneer het alternatieve model een bepaalde lay-out beter leest, tegen **1 token per document**.
 
 | Optie | Het beste voor | Nauwkeurigheid | Snelheid | Tokenkosten |
 |-------|----------------|----------------|----------|-------------|
 | **Full** | Complexe lay-outs, slechte scans, hoge precisie | Hoogste | Langzaamste | 2 / document |
 | **Fast** | Alledaagse documenten (aanbevolen standaard) | Hoog | Snel | 1 / document |
-| **Turbo** | Grote aantallen eenvoudige, schone documenten | Goed | Snelste | 1 / document |
+| **Nexus** | Leveranciers waarbij de alternatieve modelfamilie beter presteert (optioneel) | Hoog | Snel | 1 / document |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

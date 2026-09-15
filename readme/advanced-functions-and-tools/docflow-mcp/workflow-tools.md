@@ -1,6 +1,12 @@
 # Workflow Tools
 
-DocFlow MCP biedt 8 tools voor het beheren en testen van geavanceerde workflows.
+DocFlow MCP biedt tools voor het beheren en testen van geavanceerde workflows, plus tools voor het lezen van workflowlogs en het beheren van workflowvariabelen.
+
+{% hint style="info" %}
+**Toolnamen via de DocBits MCP-gateway.** Wanneer u verbinding maakt via de gecombineerde DocBits MCP (`api.docbits.com/v3/mcp`), krijgt elke DocFlow-tool het voorvoegsel `docflow_`: `list_workflows` heet dan `docflow_list_workflows`, `run_workflow_with_assertions` heet `docflow_run_workflow_with_assertions`. De parameters zijn identiek. De namen hieronder zijn de kale DocFlow-namen.
+
+Workflows worden **aangemaakt en bewerkt in de DocFlow-designer** in de webapp. De MCP leest, test, voert uit en verwijdert ze; de MCP maakt of wijzigt geen workflowgrafen.
+{% endhint %} De Card SDK-tools staan op een eigen pagina, zie [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -55,141 +61,6 @@ Details van een specifieke workflow ophalen, inclusief de node- en edge-structuu
       {"source_node_id": "when-1", "target_node_id": "then-1"}
     ]
   }
-}
-```
-
-## create\_advanced\_workflow
-
-Een nieuwe geavanceerde workflow aanmaken met nodes en edges.
-
-**Parameters:**
-
-| Parameter | Type | Vereist | Beschrijving |
-|-----------|------|---------|-------------|
-| `name` | string | Ja | Workflownaam (3-126 tekens) |
-| `description` | string | Nee | Optionele beschrijving |
-| `nodes` | array | Ja | Array van workflownodes |
-| `edges` | array | Ja | Array van edges die nodes verbinden |
-
-### Node-structuur
-
-Elke node vereist:
-
-| Veld | Type | Beschrijving |
-|------|------|-------------|
-| `node_id` | string | Unieke identificatie voor de node |
-| `node_type` | string | `when`, `then`, `and`, `or` of `delay` |
-| `position` | object | `{x: number, y: number}` positie op het canvas |
-| `label` | string | Weergavelabel |
-| `card` | object | Kaartconfiguratie (zie hieronder) |
-
-### Edge-structuur
-
-Elke edge vereist:
-
-| Veld | Type | Beschrijving |
-|------|------|-------------|
-| `edge_id` | string | Unieke identificatie voor de edge |
-| `source_node_id` | string | ID van de bronnode |
-| `target_node_id` | string | ID van de doelnode |
-| `source_handle` | string | `success` of `error` (optioneel) |
-| `target_handle` | string | `input` (optioneel) |
-
-### Kaartconfiguratie
-
-Kaarten definiëren wat een node doet. Gebruik `list_cards` of `sdk_list_cards_picker` om beschikbare kaarten op te halen.
-
-```json
-{
-  "id": "card-uuid-here",
-  "card_type": "document_type_is",
-  "version": 1,
-  "variables": [
-    {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-  ]
-}
-```
-
-{% hint style="info" %}
-U hoeft alleen `id`, `card_type`, `version` en `variables` op te geven voor elke kaart. De server verrijkt kaarten automatisch met weergavemetadata (svg, tekst, categorie) uit de database.
-{% endhint %}
-
-**Voorbeeldverzoek:**
-
-```json
-{
-  "name": "Simple Invoice Router",
-  "description": "Routes invoices to approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 100, "y": 100},
-      "label": "Document is Invoice",
-      "card": {
-        "id": "card-uuid",
-        "card_type": "document_type_is",
-        "version": 1,
-        "variables": [
-          {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 100, "y": 300},
-      "label": "Send Notification",
-      "card": {
-        "id": "card-uuid-2",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
-}
-```
-
-**Voorbeeldrespons:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
-## update\_advanced\_workflow
-
-Een bestaande geavanceerde workflow bijwerken. U kunt elke combinatie van naam, beschrijving, nodes en edges bijwerken.
-
-**Parameters:**
-
-| Parameter | Type | Vereist | Beschrijving |
-|-----------|------|---------|-------------|
-| `workflow_id` | string | Ja | UUID van de bij te werken workflow |
-| `name` | string | Nee | Nieuwe naam |
-| `description` | string | Nee | Nieuwe beschrijving |
-| `nodes` | array | Nee | Nieuwe nodes (vervangt alle bestaande nodes) |
-| `edges` | array | Nee | Nieuwe edges (vervangt alle bestaande edges) |
-
-**Voorbeeldrespons:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
 }
 ```
 
@@ -304,3 +175,58 @@ Alle beschikbare workflowkaarten weergeven met hun condities en configuratie.
 {% hint style="info" %}
 Kaarten hebben rolvlaggen: `when_condition` (trigger), `and_condition` (aanvullende voorwaarde) en `then_condition` (actie). Gebruik deze om te bepalen in welke nodetypes een kaart kan worden gebruikt.
 {% endhint %}
+
+## list\_workflow\_variables
+
+Alle workflowvariabelen van de organisatie weergeven met naam, type en huidige waarde.
+
+**Parameters:** Geen
+
+## set\_workflow\_variable
+
+Een workflowvariabele aanmaken of de waarde ervan bijwerken. Variabelen van het type document hebben geen eigen waarde; ze worden tijdens de uitvoering door de workflow ingesteld.
+
+**Parameters:**
+
+| Parameter | Type | Vereist | Beschrijving |
+|-----------|------|---------|-------------|
+| `name` | string | Ja | Naam van de variabele |
+| `value` | string | Nee | Nieuwe waarde |
+| `var_type` | string | Nee | Type van de variabele bij het aanmaken (bijvoorbeeld `string`, `number`, `document`) |
+
+## search\_workflow\_logs
+
+Workflow-uitvoeringslogs doorzoeken om te achterhalen waarom runs zijn mislukt, geslaagd of op een niet-overeenkomende conditie zijn gestuit.
+
+**Parameters:**
+
+| Parameter | Type | Vereist | Beschrijving |
+|-----------|------|---------|-------------|
+| `workflow_id` | string | Nee | Beperken tot één workflow |
+| `doc_id` | string | Nee | Beperken tot runs voor één document |
+| `status` | string | Nee | Runstatus om op te filteren |
+| `keyword` | string | Nee | Vrije-tekstfilter op de log |
+| `include_workflow_data` | boolean | Nee | De momentopname van de workflowdefinitie per run meesturen |
+| `limit` / `offset` | integer | Nee | Paginering |
+
+## get\_workflow\_log\_detail
+
+Volledige details van één run: de ruwe kaartuitvoeringslogs en de workflowdefinitie zoals die op het moment van de run was.
+
+**Parameters:**
+
+| Parameter | Type | Vereist | Beschrijving |
+|-----------|------|---------|-------------|
+| `log_id` | string | Ja | ID van de logvermelding uit `search_workflow_logs` |
+
+## run\_workflow\_with\_assertions
+
+Workflowvariabelen vooraf vullen, een geavanceerde workflow met de echte executor uitvoeren en het resultaat controleren tegen de database. Variabelen zijn echte schrijfacties, geen mocks; gebruik dit om een workflow vanuit een assistent te integratietesten.
+
+**Parameters:**
+
+| Parameter | Type | Vereist | Beschrijving |
+|-----------|------|---------|-------------|
+| `workflow_id` | string | Ja | UUID van de uit te voeren workflow |
+| `doc_id` | string | Nee | Document waartegen de workflow wordt uitgevoerd |
+| `seed_variables` | array | Nee | Variabelen die vóór de run worden aangemaakt of bijgewerkt; variabelen van het type document kunnen via `value` naar een `doc_id` verwijzen |

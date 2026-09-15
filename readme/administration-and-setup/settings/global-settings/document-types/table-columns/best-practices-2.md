@@ -1,44 +1,33 @@
 # Best practices
 
-## Best practices voor het organiseren van gegevens in tabellen helpen de databasestructuur overzichtelijk te houden, verbeteren de gegevensintegriteit en optimaliseren de prestaties.
+## Behoud de standaardkolommen voor bedragen en hoeveelheden
 
-**Hier zijn enkele best practices:**
+De controles op regelniveau (*hoeveelheid × eenheidsprijs = regeltotaal*) en PO-matching zoeken naar de standaardkolommen `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. Als u voor deze waarden in plaats daarvan eigen kolommen aanmaakt, draaien de controles niet en meldt PO-matching ontbrekende verplichte kolommen. Hernoem de *titel* als de formulering u niet bevalt; behoud de kolom.
 
+## Verbergen, niet verwijderen
 
+Standaardkolommen die u niet nodig hebt, worden verborgen, niet verwijderd; ze kunnen sowieso niet worden verwijderd. Ook voor uw eigen kolommen is verbergen de veiligere keuze zolang u niet zeker weet of een script of een exportmapping nog naar de kolom verwijst.
 
-**Gebruik betekenisvolle kolomnamen:**
+## Markeer alleen als verplicht wat de export blokkeert
 
-* Kies kolomnamen die duidelijk en beschrijvend zijn om de leesbaarheid en begrijpelijkheid van uw databasestructuur te verbeteren. Vermijd afgekorte of cryptische namen.
-* Geef kolommen namen die de inhoud of betekenis van de erin opgeslagen gegevens nauwkeurig weerspiegelen. Dit maakt latere zoekopdrachten en rapportages eenvoudiger.
+Elke verplichte kolom moet in elke rij gevuld zijn voordat een gebruiker het document kan goedkeuren. Gebruik dit voor waarden die het ERP afwijst als ze ontbreken (bijvoorbeeld de kostenplaats in een boekhoudexport), niet voor waarden die alleen maar handig zijn.
 
+## Gebruik *Alleen-lezen* voor opgezochte waarden
 
+Waarden die een script of een stamgegevens-lookup in de tabel schrijft (artikelomschrijving uit het artikelbestand, belastingcode van de leverancier) moeten alleen-lezen zijn, zodat gebruikers de bron corrigeren in plaats van de kopie.
 
-**Kies de juiste gegevenstypen:**
+## Gebruik AI per kolom, niet per leverancier
 
-* Gebruik het kleinst mogelijke gegevenstype dat adequaat voldoet aan de behoeften van uw gegevens om opslagruimte te besparen en de prestaties te verbeteren.
-* Houd rekening met het type gegevens dat wordt opgeslagen en kies dienovereenkomstig het gegevenstype. Bijvoorbeeld: gebruik INTEGER voor gehele getallen, VARCHAR voor tekenreeksen en DATE voor datums.
+Voor een leverancier met getrainde regels komen de meeste kolommen goed uit de regels. Als één kolom onbetrouwbaar is (lange omschrijvingen die afbreken, een korting die soms op een andere plek staat), schakel dan alleen voor die kolom *AI gebruiken* in. De regels blijven de rest vullen.
 
+## Benoem kolommen voor het ERP, niet voor het document
 
+De *Kolomnaam* komt terecht in exportmappings en scripts. `COST_CENTRE` is gemakkelijker te mappen dan `KST` en verandert niet wanneer een leverancier het anders afdrukt.
 
-**Begrijp vereiste kolommen:**
+## Test op een opnieuw gestart document
 
-* Markeer kolommen als vereist (NOT NULL) als ze essentieel zijn voor de juiste werking van uw applicatie en NULL-waarden onacceptabel zijn.
-* Zorg er bij het beslissen of u een kolom als vereist markeert voor dat de applicatie logischerwijs NULL-waarden kan verwerken en dat NULL-waarden geen onverwachte fouten zullen veroorzaken.
+Start na een wijziging één bestaand document van het documenttype opnieuw en open het: de nieuwe kolom verschijnt, de verborgen kolom is weg, verplichte cellen zijn gemarkeerd. Rol de wijziging pas daarna uit naar gebruikers.
 
+## Eén tabel per regelitemstructuur
 
-
-**Vreemde sleutels gebruiken voor relaties:**
-
-* Als uw database relaties tussen tabellen heeft, gebruik dan vreemde sleutels (foreign keys) om die relaties te definiëren. Dit verbetert de gegevensintegriteit en maakt het mogelijk om referentiële integriteitsbeperkingen af te dwingen.
-* Zorg ervoor dat u rekening houdt met het indexeren van vreemde sleutels om de prestaties van query's die toegang hebben tot die relaties te optimaliseren.
-
-
-
-**Regelmatig controleren en bijwerken:**
-
-* Controleer regelmatig de databasestructuur om er zeker van te zijn dat deze voldoet aan de veranderende behoeften van uw applicatie. Voer indien nodig updates uit om de efficiëntie en prestaties van uw database te verbeteren.
-* Houd rekening met feedback van gebruikers en ontwikkelaars om verbeterpunten te identificeren en te implementeren.
-
-
-
-Door deze best practices toe te passen, kunt u een goed georganiseerde en efficiënte databasestructuur creëren die voldoet aan de behoeften van uw applicatie en een betrouwbare basis biedt voor het opslaan, opvragen en rapporteren van uw gegevens.
+Maak alleen een tweede tabel aan wanneer een documenttype echt twee onafhankelijke tabellen heeft (bijvoorbeeld artikelregels en een aparte kostentabel). Extra lege tabellen verschijnen op elk document van het type.

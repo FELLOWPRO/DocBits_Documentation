@@ -15,12 +15,12 @@ en la lista no tuvieron cambios visibles para el cliente._
   `field:value` significa contiene (con `value*` y `*value` para empieza por y
   termina en), y `field!=value` devuelve también los documentos que no tienen
   ningún valor. Una búsqueda sin chip es una búsqueda de subcadena en todos los
-  campos, identificadores de negocio incluidos. El recuento de resultados y la
-  lista de resultados describen el mismo conjunto de documentos, y una búsqueda
-  que alcanzó la ventana de resultados o se ejecutó sin el índice de texto
-  completo lo indica en lugar de informar "completa". La conexión de búsqueda
-  propia del dashboard (WebSocket) nunca llegaba antes al índice de texto
-  completo; ahora sí.
+  campos, números de orden de compra, códigos de barras y números de requisición
+  incluidos. El recuento de resultados, los mosaicos de estado y la paginación
+  describen el mismo conjunto de documentos, y una búsqueda que alcanzó la
+  ventana de resultados o se ejecutó sin el índice de texto completo lo indica
+  en lugar de informar "completa". La conexión de búsqueda propia del dashboard
+  (WebSocket) nunca llegaba antes al índice de texto completo; ahora sí.
 - **Los proveedores se reconocen con más frecuencia.** Cuando un campo de
   búsqueda (número de identificación fiscal, IBAN, número de proveedor)
   coincide exactamente con un proveedor, se usa ese proveedor aunque un campo
@@ -29,12 +29,14 @@ en la lista no tuvieron cambios visibles para el cliente._
   reemplazaron un valor extraído, la pantalla de validación lo indica y permite
   restaurar el original.
 - **La coincidencia de órdenes de compra se explica por sí misma.** La pantalla
-  indica por qué no hay coincidencia y por qué una coincidencia no se conservó,
-  el historial de coincidencias lista las reglas de transformación que se
-  ejecutaron, y los precios unitarios de la OC se derivan del importe neto. Las
-  coincidencias manuales vuelven a funcionar para organizaciones sin regla de
-  respaldo, y una tarea de coincidencia terminada de forma forzada marca el
-  documento como fallido en lugar de dejarlo aparcado en "Cola" para siempre.
+  indica por qué no hay coincidencia, el tooltip de discrepancia nombra la
+  columna que falló, el historial de coincidencias lista las reglas de
+  transformación que se ejecutaron, y los precios unitarios de la OC se derivan
+  del importe neto. Las coincidencias manuales vuelven a funcionar para
+  organizaciones sin regla de respaldo, las órdenes de compra eliminadas
+  permanecen eliminadas, y una tarea de coincidencia terminada de forma forzada
+  marca el documento como fallido en lugar de dejarlo aparcado en "Cola" para
+  siempre.
 - **Documentos atascados y errores falsos.** Las organizaciones que cargan
   documentos de forma continua veían sus documentos degradados a una prioridad
   de cola que nunca se atendía en horario laboral (866 documentos atascados en
@@ -44,13 +46,16 @@ en la lista no tuvieron cambios visibles para el cliente._
 - **Touchless Intelligence.** La pestaña de Analytics que mide cuántos
   documentos pasan por DocBits sin intervención humana recibe su primera
   versión completa: clústeres de problemas con consejos de IA, análisis masivo,
-  propuestas de cambio con vista previa, aplicación y deshacer, un diagnóstico
-  de IA por proveedor y un diagrama del flujo del pipeline por documento.
-- **Más rápido donde los datos son grandes.** El desplegable de contabilidad
-  funciona para organizaciones con más de 2.000 cuentas, la página de reglas de
-  E-Documents pagina sus 1.600 reglas en el servidor en lugar de congelar el
-  navegador, y Actualizar en el dashboard de órdenes de compra devuelve datos
-  frescos en lugar de una lista en caché.
+  propuestas de cambio con vista previa, aplicación y deshacer, una página de
+  proveedor con tendencia y ejemplos, un diagrama del flujo del pipeline por
+  documento y un diagrama del conjunto de reglas de órdenes de compra que
+  indica por qué un documento no pasó.
+- **Más rápido donde los datos son grandes.** Los inicios de sesión en frío
+  omiten la suma del libro de créditos que tardaba hasta 33 s, el desplegable
+  de contabilidad funciona para organizaciones con más de 2.000 cuentas, la
+  página de reglas de E-Documents pagina sus 1.600 reglas en el servidor en
+  lugar de congelar el navegador, y Actualizar en el dashboard de órdenes de
+  compra devuelve datos frescos en lugar de una lista en caché.
 - **Seguridad.** Los source maps del frontend dejan de enviarse con cada
   despliegue, los filtros de búsqueda de datos maestros se vinculan como
   parámetros SQL en lugar de interpolarse, un token caducado se rechaza incluso
@@ -63,13 +68,27 @@ en la lista no tuvieron cambios visibles para el cliente._
 
 ### Inicio de sesión y cuentas
 
+- El inicio de sesión es más rápido. La comprobación de suscripción al iniciar
+  sesión pedía el saldo completo de créditos, que sumaba millones de filas del
+  libro de registro y a menudo superaba el tiempo de espera de 10 s del
+  cliente. El inicio de sesión ahora solo pregunta si existe una suscripción;
+  los saldos se siguen calculando en Configuración → Suscripción.
+- Cambiar de región (UE ↔ EE. UU.) mantiene la sesión iniciada. La región de
+  destino responde "invalid token" durante unos segundos hasta que la sesión se
+  ha replicado, y dos rutas de código interpretaban eso como una sesión muerta.
 - Se corrigió la superposición "Updating DocBits v10.59.3.1 → v10.59.3.1" que
   se recargaba sin fin en sandbox. Una recarga con la misma versión ya no
   muestra la superposición, el bucle está acotado por pestaña y un banner
   ofrece una recuperación manual si vuelve a ocurrir.
+- Los administradores pueden conceder la pestaña Analytics Dashboard a roles
+  concretos, y los cambios de rol se guardan de forma fiable.
 - La casilla de System Admin puede marcarse en un usuario existente. Crear un
   administrador del sistema desde el frontend ahora tiene efecto; un trabajo de
   sincronización restablecía el indicador en cada ejecución.
+- Configuración → Roles: la lista de miembros se renderiza en lugar de quedarse
+  colgada tras un indicador de carga cuando el servidor responde con un error.
+- Iniciar sesión en el servidor MCP de DocBits exige autenticación de dos
+  factores y consentimiento de un solo uso.
 
 ### Dashboard y búsqueda
 
@@ -83,10 +102,11 @@ en la lista no tuvieron cambios visibles para el cliente._
 - Cuando una búsqueda simple no encuentra nada, el dashboard explica la regla y
   ofrece chips de un clic (`Invoice number : <term>`, `Purchase order : <term>`,
   `Supplier ID : <term>`).
-- Una búsqueda con cero resultados reinicia el paginador. Antes, la paginación
-  conservaba el recuento de la búsqueda anterior.
-- Los números de requisición y los solicitantes se encuentran con una búsqueda
-  simple, sin chip.
+- Una búsqueda con cero resultados reinicia el paginador y todos los recuentos
+  de la página. Antes, la paginación conservaba el recuento de la búsqueda
+  anterior.
+- Los números de orden de compra, los números de pedido, los códigos de barras,
+  los tipos de factura y los números de requisición se encuentran sin chip.
 
 ### Pantalla de validación
 
@@ -103,6 +123,9 @@ en la lista no tuvieron cambios visibles para el cliente._
 - Guardar reglas de extracción funciona después de escribir un número de página
   y luego dibujar un recuadro para un campo. Esa secuencia hacía fallar el
   guardado.
+- La extracción estructurada puede activarse por proveedor, en la ventana
+  emergente tfidf de la pantalla de validación y como columna de solo lectura
+  en Configuración → Clasificación y Extracción.
 - Train Model se ejecuta en segundo plano. La pantalla muestra "entrenamiento
   iniciado", consulta el resultado periódicamente e informa del éxito o del
   fallo. Las organizaciones grandes recibían un error de gateway mientras el
@@ -119,6 +142,9 @@ pantalla indica por qué no hay coincidencia y por qué una coincidencia no se
 conservó, el historial de coincidencias muestra las reglas de transformación, y
 el precio unitario de la OC se calcula a partir del importe neto. Además:
 
+- El tooltip de discrepancia nombra la columna que no coincidió. Antes estaba
+  vacío porque solo se registraban las columnas coincidentes, y la pantalla
+  solo podía decir "Mismatched".
 - El botón Auto Match también exporta el documento cuando "PO Auto Match and
   Export" está activado. Antes, la exportación solo ocurría cuando el documento
   se abría desde el dashboard mediante "PO Match".
@@ -128,6 +154,9 @@ el precio unitario de la OC se calcula a partir del importe neto. Además:
 - El botón Actualizar del dashboard de órdenes de compra limpia la caché del
   servidor antes de recargar. Una orden de compra importada desde el ERP
   aparecía solo después de siete u ocho minutos.
+- La página de reglas de coincidencia de OC dibuja el conjunto de reglas como
+  un diagrama de flujo, y el historial de coincidencias se ha trasladado a la
+  barra de herramientas de acciones.
 
 ### Contabilidad automática
 
@@ -152,6 +181,9 @@ el precio unitario de la OC se calcula a partir del importe neto. Además:
   dejaba atrás los valores del tipo anterior.
 - Reglas de transformación: una acción "Set value" se guarda. El editor la
   enviaba bajo un nombre que el servidor rechaza.
+- Lista de Valores: la barra lateral muestra una lista nueva y elimina una
+  lista borrada sin recargar; las respuestas tardías de una lista anterior ya
+  no sobrescriben la actual.
 - El enlace de subtipos de documento se muestra en los tipos de documento
   estándar.
 - El mapeo JPL de la exportación SMB se descarga como `.properties`, de modo
@@ -197,26 +229,36 @@ completa:
   la ejecución ya no se queda colgada en "Running · 0/6 done" en una vista de
   suborganización.
 - **Propuestas de cambio.** Una recomendación se convierte en algo sobre lo que
-  puede actuar: una propuesta dirigida al campo que bloquea los documentos, una
-  vista previa que muestra lo que haría (no se guarda nada), aplicar, efecto
-  medido y deshacer. Los agentes llegan a los mismos pasos mediante herramientas
-  MCP. Los pasos de corrección enlazan directamente con la página de
-  configuración que nombran, prefiltrada por tipo de documento, campo o regla.
-- **Diagnóstico de proveedores.** La página de proveedor explica un estado
-  vacío en lugar de mostrar ceros, y ofrece un diagnóstico de IA por proveedor.
-  Se pueden elegir hasta cinco proveedores y compararlos lado a lado.
+  puede actuar: la tarjeta explica el cambio propuesto en cuatro preguntas,
+  permite ajustarlo, muestra una vista previa de lo que haría (no se guarda
+  nada), lo aplica, mide el efecto y puede deshacerlo. Los pasos de corrección
+  enlazan directamente con la página de configuración que nombran, prefiltrada
+  por tipo de documento, campo o regla.
+- **Página de proveedor.** Elija un proveedor desde la pestaña o busque en la
+  cola de oportunidades por nombre o número. La página muestra la tasa
+  touchless del proveedor a lo largo del tiempo (de 30 días a 1 año), sus
+  documentos problemáticos y los documentos que fueron bien, y ofrece un
+  diagnóstico de IA por proveedor. Se pueden comparar hasta cinco proveedores
+  lado a lado. Se muestra el número de proveedor en lugar de un hash interno.
 - **Flujo del pipeline.** Un diagrama por documento y por clúster muestra el
   recorrido por entrada, clasificación, comprobación de documento electrónico,
   proveedor, OCR, extracción, validación, coincidencia de OC, aprobación y
   exportación, con la etapa que lo detuvo.
-- **Motivos de la coincidencia de órdenes de compra.** La decisión de
-  coincidencia se traza por documento (etapa, pasada, regla, columna) y se
-  condensa en el resultado de Touchless. Los códigos de motivo distinguen
-  "orden de compra no encontrada" de "discrepancia de línea" y "falta un campo
-  obligatorio", y las propuestas de tolerancia del asesor se dirigen al motor
-  de reglas que decide.
+- **Coincidencia de órdenes de compra, explicada.** El conjunto de reglas de
+  OC se dibuja como un diagrama de flujo en la página de configuración y en
+  Touchless, con el recorrido que siguió un documento y un motivo en lenguaje
+  sencillo de por qué no pasó. Los códigos de motivo distinguen "orden de
+  compra no encontrada" de "discrepancia de línea" y "falta un campo
+  obligatorio".
+- **Segmentación.** Los KPI, los clústeres y las propuestas pueden desglosarse
+  por un campo del documento, por ejemplo Order Type = Direct / Indirect.
 - **Cifras correctas.** Los mosaicos de KPI respetan el filtro de
   suborganización y cuentan solo los documentos que el desglose puede listar.
+  Una sesión de navegador del usuario de sistema de la organización cuenta como
+  humana, de modo que los documentos corregidos a mano ya no se archivan como
+  touchless.
+- La barra de herramientas del informe acomoda sus controles en pantallas
+  anchas, y los colores del modo oscuro provienen del tema.
 
 ### DocNet
 
@@ -292,6 +334,9 @@ completa:
   veces el importe facturado.
 - Una exportación de tabla sobrevive a una línea cuya orden de compra se ha
   eliminado; la línea se exporta sin base de precio.
+- Exportación IDM: un campo multivalor mapeado a un campo numérico (por
+  ejemplo, una cantidad) hacía fallar la carga útil de la exportación. El valor
+  se convierte primero a texto.
 
 ### Documentos electrónicos
 
@@ -319,9 +364,9 @@ completa:
   valores vacíos. En Postgres, `=` era una coincidencia de prefijo, de modo que
   `invoice_id=911892112` devolvía también 911892112333.
 - Una búsqueda simple es una búsqueda de subcadena en todos los campos,
-  identificadores de negocio incluidos. Un identificador con guiones como
-  `2026-003` es un único literal, y el tipo de cláusula ya no cambia después
-  del quinto carácter.
+  identificadores de negocio incluidos. Orden de compra, número de pedido,
+  código de barras, tipo de factura, subtipo de factura y número de requisición
+  no tenían ninguna rama de texto simple.
 - El chip de número de factura es exacto en Postgres, como ya lo era en el
   índice. Los ceros a la izquierda, las formas decimales y las mayúsculas se
   tratan igual en texto libre y en los chips.
@@ -329,14 +374,20 @@ completa:
   al servicio de texto completo. Antes se rechazaba toda delegación, por lo que
   el dashboard buscaba silenciosamente solo en Postgres y presentaba la
   respuesta como completa.
-- El recuento de resultados y la lista de resultados se ejecutan sobre un mismo
-  conjunto de predicados. El recuento era una aproximación de Postgres mientras
-  la lista provenía del índice.
+- Los mosaicos de estado, el recuento de resultados y la lista de resultados se
+  ejecutan sobre un mismo conjunto de predicados. Los mosaicos describían toda
+  la organización durante cualquier búsqueda.
+- Los permisos de suborganización y de tipo de documento se aplican antes de la
+  ventana de resultados, de modo que los documentos permitidos ya no quedan
+  fuera del límite de 500 / 10.000.
 - La búsqueda vectorial se limita a la ventana real de resultados e informa del
   límite en lugar de mostrar "(50)" como total exacto.
-- Una búsqueda que se ejecutó sin el índice de texto completo (índice con
-  minutos de retraso, fallo en la consulta de capacidades, resolución de campos
-  degradada) informa del estado de su ventana en lugar de "completa".
+- Una búsqueda que se ejecutó sin el índice de texto completo (índice
+  inexistente, índice con minutos de retraso, fallo en la consulta de
+  capacidades, resolución de campos degradada) informa del estado de su ventana
+  en lugar de "completa".
+- Las exportaciones del dashboard de una búsqueda truncada llevan una fila de
+  aviso en el CSV/XLSX y en el correo de notificación.
 - Los scripts de documentos que llaman a la búsqueda de texto completo se
   autentican correctamente y muestran los fallos en lugar de devolver un
   resultado vacío.
@@ -344,16 +395,25 @@ completa:
 ### Coincidencia de órdenes de compra (matcher en proceso)
 
 Para las organizaciones que realizan la coincidencia en la API en lugar de en
-el PO Match Service: un número de OC corregido se compara en el mismo guardado
-que lo corrige.
+el PO Match Service:
+
+- Se registra cada comparación de columna, incluidos el precio unitario y la
+  cantidad, de modo que el tooltip de discrepancia puede nombrar la columna que
+  falló.
+- Las órdenes de compra eliminadas por el usuario permanecen eliminadas en la
+  coincidencia automática.
+- Un número de OC corregido se compara en el mismo guardado que lo corrige.
 
 ### Analytics
 
 - Touchless: todos los cambios de backend detrás de la sección de Web App
   anterior, incluida la evidencia de etapa registrada por cada etapa del
   pipeline, la traza de coincidencia de OC, las propuestas de cambio con vista
-  previa, aplicación y reversión, y el estado masivo en una sola llamada por
-  ciclo.
+  previa, aplicación y reversión, la segmentación, el estado masivo en una sola
+  llamada por ciclo, y el endpoint de tendencia que acepta cualquier ventana y
+  un proveedor.
+- Se corrigieron tres tareas en segundo plano de analytics que fallaban en cada
+  ejecución programada.
 
 ---
 
@@ -366,6 +426,10 @@ que lo corrige.
   números consultó una ejecución. El número de factura propio de un documento
   nunca es candidato a OC. Una coincidencia descartada deja su motivo en el
   documento para la pantalla.
+- Se registra la columna que no coincidió, y se miden las columnas que una
+  regla de respaldo eliminó.
+- Las órdenes de compra eliminadas por el usuario se respetan, y las
+  coincidencias en segundo plano obsoletas se limpian tras la exclusión final.
 - La coincidencia manual funciona para organizaciones cuyas reglas no llevan el
   indicador `is_fallback`. Los usuarios seleccionaban líneas, pulsaban
   coincidir y no recibían nada.
@@ -373,6 +437,8 @@ que lo corrige.
   base de datos, los keepalives y un manejador explícito de límite de tiempo
   blando marcan la tarea como fallida en lugar de depender de una terminación
   forzada que no dejaba rastro.
+- Dos errores de producción (un precio unitario `NaN`, un grupo sin cantidades)
+  ya no hacen fallar toda la coincidencia.
 - Los cambios de tolerancia se leen en cada petición de coincidencia, de modo
   que una tolerancia guardada hace un momento la usa la siguiente coincidencia.
 - La traza de decisión de cinco etapas se persiste por documento para
@@ -382,35 +448,69 @@ que lo corrige.
 
 ## Auth Service — `1.78.27`
 
+- `/organisation/subscriptions` puede omitir el saldo de créditos, y el cálculo
+  de créditos ejecuta todas las ventanas de año de contrato en una sola
+  sentencia en lugar de una consulta por ventana (32 consultas de unos 700 ms
+  cada una para la organización más grande). Se prepara un resumen diario de
+  uso para usos posteriores.
+- Las cifras de tokens restantes en los lectores de organización se calculan
+  por año de contrato.
 - La caducidad del token se aplica en los aciertos de caché. Una entrada en
   caché podía autenticar hasta nueve horas después de que el token caducara.
 - La verificación del token deja de escribir un `org_id` sin cambios en la fila
   del usuario en cada petición, lo que producía un UPDATE por llamada.
-- Se corrigió una fuga de memoria que llevaba el autoescalador al máximo de
-  réplicas, y el servicio vuelve a funcionar con dos workers.
+- Las comprobaciones de estado omiten la E/S de Redis, y el cliente de Redis se
+  agrupa en un pool. Se corrigió una fuga de memoria que llevaba el
+  autoescalador al máximo de réplicas, y el servicio vuelve a funcionar con dos
+  workers.
+- Un registro de proveedor repetido (enlace mágico abierto dos veces) reutiliza
+  la pertenencia existente en lugar de fallar con un error de clave duplicada.
+- El hilo de correo de restablecimiento de contraseña usa la única app Flask
+  registrada; el restablecimiento fallaba con "current Flask app is not
+  registered" desde el 25 de agosto.
 - El indicador de usuario de sistema puede cambiarse en un usuario existente
   cuando ningún otro miembro lo tiene.
+- Inicio de sesión MCP: MFA vinculada a la transacción, consentimiento de un
+  solo uso y una elección forzada de cuenta cuando el navegador guarda dos
+  identidades de sesión.
 
 ---
 
 ## Auth Bridge Service — `0.5.7`
 
-- Cuando el flujo de replicación entre la UE y EE. UU. muere, el slot de
-  replicación se vuelve a enganchar en el sitio en lugar de reconstruir el
-  puente y volver a ejecutar la reconciliación completa de arranque, durante la
-  cual el slot permanecía inactivo.
+Replicación de autenticación entre la UE y EE. UU.:
+
+- La reconciliación periódica mantiene vivo el flujo de replicación. Tardaba
+  unos 95 s mientras el tiempo de espera del emisor era de 60 s, de modo que
+  cada reconciliación de seis horas cortaba el flujo puntualmente.
+- Cuando el flujo muere, el slot de replicación se vuelve a enganchar en el
+  sitio en lugar de reconstruir el puente y volver a ejecutar la reconciliación
+  completa de arranque.
+- La reconciliación compara las claves primarias por páginas en lugar de cargar
+  ambos lados en memoria, lo que ya no cabe desde que la tabla de tokens se
+  unió a la replicación.
+- Un origen de replicación existente se trata como éxito, no como degradación.
 
 ---
 
 ## Extraction Service — `1.55.33`
 
+- La extracción estructurada se resuelve por proveedor: el ajuste de un layout
+  entrenado prevalece sobre la preferencia de la organización, del mismo modo
+  que lo hace el modelo de IA.
+- Un mapeo de columnas aprendido no puede prohibir columnas que la factura
+  tiene.
 - Extracción de tablas con IA: las columnas de importe se tipan como números
   con una descripción, y los valores no numéricos inventados en columnas de
   importe (un "St." copiado de la celda vecina en precio unitario por) se
   descartan en lugar de almacenarse.
-- Facturas de EE. UU.: el ruido de coma flotante por debajo del céntimo ya no
-  decide entre pares candidatos de neto/impuesto (268.28 + 22.13 perdía frente
-  a neto = total, impuesto = 0).
+- Facturas de EE. UU.: cuando el importe neto ya es igual al total, el impuesto
+  se resuelve como 0 en lugar de conservar un impuesto extraído espurio. El
+  ruido de coma flotante por debajo del céntimo ya no decide entre pares
+  candidatos de neto/impuesto (268.28 + 22.13 perdía frente a neto = total,
+  impuesto = 0).
+- Una tabla cuya fila de encabezado nunca se mapeó a nombres reales se extrae
+  en lugar de fallar por completo.
 
 ---
 
@@ -420,20 +520,21 @@ que lo corrige.
   producción, sandbox y stage funcionaban sin ella desde que se crearon los
   archivos de entorno activos. La carga y la eliminación la invalidan, de modo
   que una búsqueda tras una carga ve el nuevo documento.
-- Una búsqueda simple de un número de factura sin más devuelve la factura con
-  coincidencia exacta. Los valores de moneda escritos en texto, los mapeos
-  booleanos heredados, las fechas y los indicadores de impuestos sobreviven a
-  la reconstrucción del índice reducido, y las entradas del índice sin campos
-  se detectan y se recuperan desde la extracción.
 - El `=` exacto en un campo de texto dinámico compara solo el valor completo.
   Un comodín en la ruta analizada hacía que `note_field=53173` coincidiera con
   "PO 53173 / 2024".
 - Un identificador con guiones sin más como `2026-003` es un único literal, no
   una bolsa de tokens.
-- Las rutas de lectura dejan de crear el índice que leen, y toda respuesta con
-  cero resultados lleva un estado de ventana y un motivo.
-- El límite de 50 del lado del servicio en la búsqueda vectorial ha
-  desaparecido.
+- Los números de orden de compra se encuentran en todas las formas de
+  almacenamiento, incluidos los identificadores solo numéricos cuya cláusula
+  exacta se descartaba silenciosamente.
+- Las rutas de lectura dejan de crear el índice que leen. Un índice inexistente
+  o vacío informaba "completa, 0 resultados"; toda respuesta con cero
+  resultados lleva ahora un estado de ventana y un motivo.
+- Los valores de moneda escritos en texto, los mapeos booleanos heredados, las
+  fechas y los indicadores de impuestos sobreviven a la reconstrucción del
+  índice reducido, y las entradas del índice sin campos se detectan y se
+  recuperan desde la extracción.
 
 ---
 
@@ -445,6 +546,10 @@ que lo corrige.
   no tenía forma de abrir.
 - El cambio de nombre de un flujo de trabajo va con el guardado, y los cambios
   de nombre de plantillas se persisten.
+- La actualización de "ejecución de flujo de trabajo pendiente" se reintenta
+  cuando se pierde la conexión. Una sola petición fallida dejaba el indicador
+  sin cambios y mantenía el documento fuera de la exportación hasta que alguien
+  lo reiniciaba.
 
 ---
 
@@ -483,8 +588,7 @@ que lo corrige.
 Solo cambios de compilación y despliegue (actualización de la imagen base,
 credenciales de CI). Sin cambios en el comportamiento.
 
-<!-- Release R1.0.13. Announced: tickets with Jira "Release No." = R1.0.13 and a
-     status on sandbox or beyond, plus DOCB-14454, DOCB-14450, DOCB-14415,
-     DOCB-14419, DOCB-14431, DOCB-14045/46 (no Release No., on sandbox).
-     Held back (Release No. R1.1): DRFS-778, DRFS-712, MEF-165, MEF-166, DOCB-14389.
-     Labelled R1.0.12 but code ships now: DRFS-746/748/749/750/751, DOCB-14282. -->
+<!-- Release R1.0.13. Everything in the prod->sandbox code delta is announced.
+     Held back because Jira "Release No." names the later release R1.1:
+     DRFS-778 (discount due dates on import), DRFS-712, MEF-165, MEF-166,
+     DOCB-14389. Announce them with R1.1. -->

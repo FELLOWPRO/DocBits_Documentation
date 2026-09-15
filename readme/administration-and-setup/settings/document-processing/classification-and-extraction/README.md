@@ -58,33 +58,82 @@ In the **Amount Formatting** section, you have two options:
 
 ## Table Extraction
 
-You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table—whether AI-based or manual—will always be linked to a specific supplier.
+{% hint style="info" %}
+**Prerequisites for a working table extraction**
 
-**Table Extraction:** Activates manual **table extraction**. Tables must be trained manually.\
-Learn more about manual training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* The document type has **table columns** (Settings → Global Settings → Document Types → [Table Columns](../../global-settings/document-types/table-columns/README.md)). Without columns there is nothing to extract into.
+* **Table Extraction** or **AI Table Extraction** is switched on below, for the whole organization.
+* The document has readable text: OCR ran, or E-Text is used for born-digital PDFs ([OCR Settings](../ocr-settings.md)).
+* Training and AI models are **per supplier**. A trained table applies only to documents of the supplier it was trained on.
+{% endhint %}
 
-**AI Table Extraction:** Uses AI to automatically extract tables. If the results are not accurate enough, it's recommended to switch to manual **Table Extraction** for better control and training.
+You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table (whether AI-based or manual) is always linked to a specific supplier.
+
+**Table Extraction:** Activates rule-based table extraction. Tables are trained per supplier on the validation screen (*Go to table extraction view*).\
+Learn more about training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+
+**AI Table Extraction:** Uses AI to extract the table of any supplier without training. If the results for one supplier are not accurate enough, train that supplier's table; the saved rules then take precedence over the AI for that supplier.
+
+**Use Table Extraction Vision (AI):** The AI reads the page image instead of the text layer. Helps with scanned documents and tables without clear text structure; slower.
+
+**Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot.
 
 **Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
 Detailed explanation available [here](table-extraction-for-costing-element.md).
 
-**Auto Extract Tax Code:** When enabled, the system automatically fills the **Tax Code** field on the Validation Screen—provided that a tax code field is configured.\
+**Auto Extract Tax Code:** When enabled, the system automatically fills the **Tax Code** field on the Validation Screen, provided that a tax code field is configured.\
 More information on this setting [here](auto-extract-tax-code.md).
 
-**AI Model:** Allows you to specify which **AI model** is used for table extraction.\
-You’ll also see a table showing:
+**Save extraction rules (Admin only):** Only administrators can click *Save Rules* in table training. Switch it on when users keep saving rules that break a supplier's extraction.
 
-* Which **suppliers** are using which AI model
+**AI Model:** Selects the AI tier used for table extraction: **Fast** (default), **Full** (highest accuracy, slower) or **Nexus** (opt-in third tier). The table below the selector shows:
+
+* Which **suppliers** use which AI model
 * Whether they use E-Text
 * Options to delete an entry or reset the training data
 
 This setting is explained in detail [here](ai-model.md).
 
+### Why does the table look different per supplier?
+
+Everything that DocBits learns about a table is stored **per supplier**:
+
+* **Saved rules** (table training): position of the table and mapping of its columns on that supplier's layout.
+* **AI table tags and formatting rules**: hints the user saved for that supplier's AI table.
+* **Supplier-specific AI model**: the tier chosen for that supplier under *More settings* on the validation screen.
+
+So supplier A with saved rules shows a deterministic table in the *Extracted table* tab of the validation screen, while supplier B without rules gets the *AI Extracted table*. To make supplier B behave like A, train B's table once. To reset a supplier, delete its rules on the validation screen or reset its training data in the AI Model table.
+
+### Preference keys
+
+Every toggle in this section is stored as an organization preference. Use the key when you set the value through the API (`/preferences/set_preference`), a script, or the DocBits MCP (`get_preference` / `set_preference`).
+
+| Setting (UI label) | Preference key | Values |
+|---|---|---|
+| Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| AI Model | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Table extraction version (confirmation dialog) | `TBL_EXT_VERSION` | version string |
+| OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR Settings → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+
+Notes:
+
+* Boolean preferences are stored as the strings `true` / `false`; a key that was never set counts as `false`. If you send `1` or `0`, DocBits stores `true` / `false`.
+* `AI_MODEL` unset means **Fast**.
+* Changing a key takes effect for documents processed afterwards. Restart a document to re-extract it with the new setting.
+* Per-supplier choices (E-Text, AI model, saved rules) are not organization preferences; they are set on the validation screen under *More settings* for a document of that supplier.
+
 ## Electronic Document
 
 **Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
 
-The list of supported **ZUGFeRD** versions can be found [here](/broken/pages/8K0sCf7DODWOYn6l3cO7).
+The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
 
 ## **Classification Rules**
 

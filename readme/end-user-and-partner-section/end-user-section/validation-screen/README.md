@@ -62,6 +62,63 @@ Use the tool tip to find out if:
 
 <figure><img src="https://lh7-us.googleusercontent.com/3-ZXi-fUcWlM0nUaOAQbY7bynchbIN30JReKRdijyMFvX_GIHrnbcismANdOi6UfYa6GCPvk9wnOixya0E_rBk3V8hQduS-gBZJi4k0Kq8jeN93DxC2w5J-YRqeV9IkVB6oiH8tm0-y7gWJO_8fBplo" alt=""><figcaption></figcaption></figure>
 
+## Extracted table (line items)
+
+<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Line-item table on the validation screen with the table toolbar"><figcaption><p>The extracted table below the header fields</p></figcaption></figure>
+
+Below the header fields DocBits shows the line-item table of the document, one row per invoice line, one column per [table column](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md) configured for the document type. When a document type has several tables (for example items and charges), each table has its own tab above the grid.
+
+### Where the table comes from
+
+Above the grid there is one tab per extraction path the organization has switched on:
+
+| Tab | Meaning |
+|---|---|
+| **Extracted table** | Rule-based extraction (*Table Extraction* setting). For a supplier with a trained table these rows come from the saved rules and are extracted the same way on every document of that supplier; for an untrained supplier the tab may be empty. |
+| **AI Extracted table** | The AI table extraction (*AI Table Extraction* setting). Filled when the supplier has no saved rules, and for columns marked *Use AI* even when rules exist. A tooltip *AI table not found* on the tab means the AI returned nothing for this document. |
+| **PO Tables** | Only in the layout builder: the purchase-order lines used for matching. |
+
+If neither tab appears, both table settings are off for the organization (Settings → Document Processing → Classification and Extraction). Which AI tier reads the table is set per organization and can be overridden per supplier, see [Supplier-Specific AI Model](supplier-specific-ai-model-for-field-and-table-extraction.md).
+
+### Working in the table
+
+* **Edit a cell**: click into it and type. Amount, number and date columns are validated while you type.
+* **Add new table row**: appends an empty row at the end. Use it when a line was not recognised.
+* **Delete a row**: the trash icon at the end of the row.
+* **Add empty mapped columns**: shows the configured columns the AI left empty, so you can fill them by hand.
+* **Restore Table Column**: brings back a column you removed from the view for this document.
+* **Delete table**: clears all rows of this table on this document. The configuration is not touched.
+* **Add new table column** (admins): the same dialog as in the table-column settings, without leaving the document.
+* **Tags** (AI table only): short text hints for the AI, for example *"the last column is the net amount"*. See [AI Table Tags](../ai-table/ai-table-tags.md).
+* **Apply** / **Save** / **Delete** next to the tags: *Apply* re-runs the AI table for this document with the tags and column changes you made, without storing anything (if the document has PO-matched lines, DocBits warns that the matches are removed); *Save Rules* stores the current column mapping and tags for this supplier; *Delete Rules* removes them and re-runs the AI extraction for this document.
+* **Export**: downloads the table as a CSV file.
+* **Go to table extraction view**: opens table training for this document. Use it when the same supplier keeps coming out wrong: draw the table once, map the columns and click *Save Rules*; from then on the rows appear in the *Extracted table* tab. See [Training Line Fields / Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+
+{% hint style="info" %}
+If the table was extracted by the AI and you open table training, DocBits asks *Table is already extracted by AI. Do you want to train manually?* After you save rules, the AI table is no longer used for this supplier.
+{% endhint %}
+
+### Re-extracting the table
+
+* **Same document, AI table:** add or change tags and click **Apply**; the AI table is rebuilt for this document only. To also drop the supplier's saved tags and formatting, click **Delete** (*Delete Rules*): DocBits confirms *Rules has been deleted successfully* and runs the AI extraction again.
+* **Same document, trained rules:** open *Go to table extraction view*, correct the table and click *Save & re-extract*.
+* **Whole document again (header and table):** Dashboard → document menu → *Restart*. Needed after an admin changed the table columns or the extraction settings.
+
+### What blocks approval
+
+The table is checked when you save or approve. A red cell or a message under the table means one of:
+
+| Message | Cause | What to do |
+|---|---|---|
+| Required column empty | A column marked *Is Required* has no value in this row. | Fill the cell, or ask an admin whether the column must be required. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `quantity × unit price + charges − discount` differs from the line total by more than 0.02. Often one of the four values was read into the wrong column. | Correct the value that is wrong on the document; if a column such as *Charges* is consistently filled with the wrong value, tell your admin (see [Troubleshooting](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
+| *Line items add up to … but the net total is …* | The sum of the line totals differs from the net amount in the header. | Check for a missing or duplicated row, or a header amount read wrongly. |
+| *Line Item Table is missing Mandatory column for PO* | PO matching needs item number, unit price, quantity and total amount; one of them is hidden. | Admin: unhide the column under Table Columns. |
+
+An admin can switch all table checks off for a document type with *Skip table validation* (Document Types → More Settings); line mismatches and empty required columns are then not reported.
+
+More on the checks: [Automatic Checks on the Validation Screen](automatic-checks-on-the-validation-screen.md) and [Table Extraction Troubleshoot](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
+
 ### **Magnify Glass:**
 
 <figure><img src="../../../.gitbook/assets/validation_screen_magnifying_glass.png" alt="Magnifying Glass Icon" width="118"><figcaption></figcaption></figure>

@@ -20,13 +20,13 @@ DocBits offers three AI model options for field and table extraction. They diffe
 
 * **Full** – The most thorough option, with the highest extraction accuracy. Best for complex layouts, low-quality scans, or documents where precision matters most. As the most powerful option it is also the slowest, at **2 tokens per document**.
 * **Fast** – A balanced option that combines strong accuracy with quicker processing at a lower cost. This is the recommended default for most everyday documents, at **1 token per document**.
-* **Turbo** – The quickest and most economical option. Best suited to high volumes of simple, clean, well-structured documents where speed and low cost matter more than maximum accuracy, at **1 token per document**.
+* **Nexus** – An opt-in third option that runs on a different model family. Useful when you want a second opinion for suppliers where Fast and Full disagree, or when the alternative model reads a particular layout better, at **1 token per document**.
 
 | Option | Best for | Accuracy | Speed | Token cost |
 |--------|----------|----------|-------|------------|
 | **Full** | Complex layouts, poor scans, high-precision needs | Highest | Slowest | 2 / document |
 | **Fast** | Everyday documents (recommended default) | High | Fast | 1 / document |
-| **Turbo** | High volumes of simple, clean documents | Good | Fastest | 1 / document |
+| **Nexus** | Suppliers where the alternative model family performs better (opt-in) | High | Fast | 1 / document |
 
 <figure><img src="../../../../.gitbook/assets/ai_model_2.png" alt=""><figcaption></figcaption></figure>
 

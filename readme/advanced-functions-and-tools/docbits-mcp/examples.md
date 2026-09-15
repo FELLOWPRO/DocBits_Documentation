@@ -38,9 +38,9 @@ Uses `get_export_preview`, then `validate_and_export` once you confirm.
 
 ## Fix a table extraction
 
-> *"The line-item table on this delivery note is wrong — re-extract it with AI and verify it."*
+> *"The line-item table on this delivery note is missing two rows, re-extract it with AI, hide the *Charges* column, and keep that for this supplier."*
 
-Uses `extract_table_ai` + `verify_table_extraction`. Useful for documents where the rule-based extraction missed rows.
+Uses `extract_table_ai` to re-run the AI table on the document, `apply_ai_table_formatting` to hide the column, and `save_table_training_rules` to store the result for the supplier; the next delivery note from them is extracted the same way. `get_extracted_tables` shows the final table. Useful for documents where the rule-based extraction missed rows.
 
 ## Analytics & reporting
 

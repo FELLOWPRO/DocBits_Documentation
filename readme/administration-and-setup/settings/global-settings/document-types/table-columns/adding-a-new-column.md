@@ -1,53 +1,42 @@
-# Adding a new Column
+# Adding a new column
 
-## Adding a new column to an existing table requires careful planning and execution to ensure that data integrity is maintained and application requirements are met.
+Add a column when a value has to be captured per line item that the default columns do not cover, a cost centre, a project number, an internal article number.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Settings: Document Types</p></figcaption></figure>
+## Before you start
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.57.49.png" alt=""><figcaption><p>Table Columns</p></figcaption></figure>
+* Decide which **table** the column belongs to. Most document types have one table (for example `INVOICE_TABLE`). If the list is empty, click **Create new table** first; the dialog asks only for a table name.
+* Decide the **type**: `AMOUNT` for money, `NUMBER` for quantities, `DATE`, `BOOLEAN` for yes/no, `CURRENCY` for an ISO currency code, `STRING` for everything else. The type cannot be changed after saving.
+* Check whether a **default column** with the same meaning already exists but is hidden. Hidden columns are listed with the *Hidden* flag set, unhide it instead of creating a duplicate.
 
-**Here are detailed steps to add a new column:**
+## Steps
 
-<figure><img src="../../../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+1. Open **Settings → Global Settings → Document Types → Table Columns**.
+2. Click **Add new table column**.
 
-**Requirements analysis:**
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Add new table column dialog with Title, Is column required, Select column type and Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
 
-* Review your application's requirements and identify the purpose of the new column. What type of data will be stored? How will this column be used in the application?
+3. Fill in the dialog:
 
-<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="375"><figcaption><p>Add new table column</p></figcaption></figure>
+| Field | What to enter |
+|---|---|
+| **Title** | Label the user sees on the validation screen, for example `Cost Centre`. Letters and numbers only. DocBits derives the technical *Column name* from it (`COST_CENTRE`). |
+| **Is column required?** | Tick when the document must not be approved while the column is empty in any row. |
+| **Select column type** | See the type list above. |
+| **Select Table** | The table that gets the column. |
 
-**Choosing the right column type:**
+4. Click **Proceed**. The column appears in the list with *Read Only*, *Hidden* and *Use AI* unset. Switch those flags in the list if needed, see [Editing and deleting columns](editing-and-deleting-columns.md).
 
-* Choose the most appropriate column type based on the data that will be stored in the column. This can be AMOUNT for amount, STRING for strings, DATE for dates, etc.
-* Choosing the right column type is important to ensure data integrity and use storage space efficiently.
+## After adding
 
-<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="375"><figcaption></figcaption></figure>
+* The column is **empty on existing documents**. It is filled on documents uploaded or restarted after the change.
+* For suppliers with **trained rules**, open one of their documents in table training and map the new column, or the column stays empty for that supplier. See [Defining tables and columns](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* With **AI table extraction**, the AI fills the column if the value is recognisable on the document. Mark the column *Use AI* if the supplier has trained rules but this column should still come from the AI.
+* Add the column to the **export mapping** if the ERP should receive it, see [Export](../../../document-processing/export.md).
 
-**Choosing the right table:**
+## Messages
 
-* To select the correct column type in a particular table, such as the invoice table, it is important to consider the specific requirements of the data to be stored in that table.
-
-<figure><img src="../../../../../.gitbook/assets/image (98).png" alt="" width="375"><figcaption></figcaption></figure>
-
-**Deciding on column necessity:**
-
-* Consider whether the new column is required or whether it should allow NULL values. If the column is mandatory, it should be marked as NOT NULL to ensure that important data is not missing.
-* Also consider whether the column may become a required field for your application in the future.
-
-**Database backup:**
-
-* Before adding the new column, make a backup of your database to ensure that you have a working version to fall back on in case of any issues.
-
-**Executing the SQL statement:**
-
-*   Use the ALTER TABLE SQL statement to add the new column. The exact syntax depends on the database platform you are using, but in general the SQL statement looks like this:
-
-    <figure><img src="../../../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
-
-    Replace table\_name with the name of your table, new\_column\_name with the name of the new column, and data\_type with the column type you selected. The \[NOT NULL] keyword indicates whether the column is mandatory.
-
-**Testing and validating:**
-
-* After the new column is added, thoroughly verify that your application is working properly. Run tests to ensure that data is stored and retrieved correctly and that the new column is working as expected.
-
-By carefully following these steps, you can successfully and effectively add a new column to your database table, choosing the correct column type and ensuring that the column is required when it is required.
+| Message | Meaning |
+|---|---|
+| *Column name already exists* | A column with this technical name is already in the table. Choose a different title. |
+| *Column name already exists – Please activate it in Table Column settings* | A hidden default column has this name. Unset its *Hidden* flag instead of creating a new one. |
+| *No table exists. Please create table before creating columns.* | The document type has no table yet: click **Create new table** first. |

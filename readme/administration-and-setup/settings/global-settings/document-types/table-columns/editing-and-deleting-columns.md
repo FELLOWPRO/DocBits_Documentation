@@ -1,73 +1,46 @@
 # Editing and deleting columns
 
-Editing and deleting columns in a database table are important operations that must be performed carefully to ensure data integrity and consider potential impacts on application logic and reporting.
+Everything except the title is changed directly in the list; there is no edit dialog.
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+**Where:** Settings → Global Settings → Document Types → Table Columns
 
-**Here are detailed steps for both actions:**
+## Switching a flag
 
-## Editing a column:
+Tick or untick the checkbox in the row. The change is saved immediately (*Successfully saved*).
 
-<figure><img src="../../../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+| Flag | On | Off |
+|---|---|---|
+| **Is Required** | Approval is blocked while the column is empty in any row; the validation screen marks the cell. | Empty cells are allowed. |
+| **Read Only** | The value is shown but cannot be typed over. Use it for values that come from a lookup or a script. | Users can edit the cell. |
+| **Hidden** | The column disappears from the validation screen and from the export. Its data is kept. | The column is shown and exported. |
+| **Use AI** | The AI table extraction fills this column, also for suppliers that have trained rules. | The column is filled by the trained rules, or by the AI when no rules exist. |
 
-**Change title:**
+{% hint style="info" %}
+Flags take effect on documents uploaded or restarted **after** the change. Open documents keep their current table until they are restarted.
+{% endhint %}
 
-* Click on the title of the column you want to change, a window will open and you can change the title of the column.
+## Renaming the title
 
-**Requirement analysis:**
+Click the translate icon in the *Actions* column (*Update translation key*), enter the new label and confirm. The info icon next to it shows which label is currently in effect and where it comes from. Only the label changes; the technical *Column name* stays the same, so scripts, export mappings and trained rules keep working.
 
-* Identify the reason for editing the column. You may need to change the data type, add or remove constraints, or change the column name.
+## Changing the type or the table
 
-**Impact review:**
+Not possible. Hide the column (or delete it if it is your own) and add a new one with the right type.
 
-* Before making any changes, review how they will affect existing data and application logic. For example, changes to the data type may cause data to be converted or lost.
+## Deleting a column
 
-**Database backup:**
+The delete action is only offered for columns your organization created. Default columns cannot be deleted, hide them.
 
-* Back up your database to ensure you have a working version to revert to in case of any problems.
+1. Open the three-dot menu in the *Actions* column and choose **Delete**. The entry is missing for default columns.
+2. Confirm.
 
-**Executing the SQL statement:**
+What happens:
 
-* Use the ALTER TABLE SQL statement to make the desired changes to the column. The exact syntax depends on the database platform you are using and the changes you want to make.
+* The column is removed from the configuration. Documents processed **from now on** no longer have it.
+* Documents already extracted keep the column and its values until they are restarted.
+* Trained rules that mapped this column keep working for the other columns; the mapping for the deleted column is ignored.
+* If the column is referenced in an export mapping or a script, remove that reference; otherwise the export or the script fails with a missing-column error.
 
-**Data migration:**
+## Undoing a deletion
 
-* If you change the data type of a column, you may need to perform data migration to convert existing data to the new format.
-
-**Testing and validating:**
-
-* After editing the column, thoroughly verify that your application is working properly and that the data is being stored and retrieved correctly.
-
-## Deleting a column:
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 13.39.00.png" alt=""><figcaption></figcaption></figure>
-
-**Requirement analysis:**
-
-* Make sure you understand the reasons for deleting the column. Is the column no longer relevant or are there other ways to consolidate it?
-
-**Impact review:**
-
-* Analyze how deleting the column will affect existing data, application logic, and reporting. This may result in data loss or affect queries and reports.
-
-**Database backup:**
-
-* Make a full backup of your database to ensure you can restore in case of unexpected problems.
-
-**Executing the SQL statement:**
-
-* Use the ALTER TABLE SQL statement to remove the column. The exact syntax varies by database platform.
-
-**Data migration (if required):**
-
-* If you have important data in the column you are deleting, you may need to perform a data migration to move that data to another location or delete it.
-
-**Adjusting application logic:**
-
-* Make sure your application logic is adjusted accordingly to ensure it no longer accesses the deleted column.
-
-**Testing and validating:**
-
-* Verify thoroughly that your application is working correctly and that all data and reporting functions are working as expected.
-
-When editing or deleting columns, it is critical that you fully understand the impact of these actions and take appropriate precautions to maintain the integrity of your database and ensure that your application runs smoothly.
+A deleted column cannot be restored from the list. Add it again with the same title: the technical name is derived from the title, so a column created with the same title gets the same *Column name* and existing mappings match again.

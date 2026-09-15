@@ -44,3 +44,31 @@ If the document does not have e-text available:
    * **Be cautious, as this change can affect other suppliers' extraction results.**
    * This change can impact other suppliers, so make sure to verify the results thoroughly to ensure it does not negatively affect other suppliers’ document extractions.
 5. If the result did not improve after changing the AI OCR version, please **contact us** for further assistance.
+
+## Messages on the table
+
+The extraction can look right and the document still refuses to be approved. These are the messages DocBits shows on or under the line-item table, what triggers them and how to clear them.
+
+| Message | Cause | Fix |
+|---|---|---|
+| **Required column empty** (cell marked red, column name in the tooltip) | A column marked *Is Required* in the table-column settings has no value in this row. | Fill the cell. If the value never exists for this document type, an admin unticks *Is Required* under Settings → Document Types → Table Columns and you restart the document. |
+| **Line total does not match quantity x unit price (expected …, got …)** | DocBits checks every row: `TOTAL_AMOUNT = QUANTITY × UNIT_PRICE + CHARGES`, minus `DISCOUNT`, or × (100 − `DISCOUNT_PERCENT`) / 100, or minus `DISCOUNT_PER_UNIT × QUANTITY`, whichever discount column is filled. A difference above 0.02 raises the message. The check only runs when quantity, unit price and total are all filled. | Compare the four values with the document. Usually one of them was read into the wrong column, a charges or discount value in the wrong cell is the most common case. Correct the cell; the message disappears on save. |
+| **Line total does not match quantity x unit price minus discount / minus percentage discount / minus per-unit discount** | Same check, with the discount column that is filled. | As above; check the discount cell first. |
+| **Line items add up to … but the net total is …** (warning) | The sum of all `TOTAL_AMOUNT` cells differs from the net amount in the header. | Look for a missing row, a duplicated row, or a header net amount that was read wrongly. A warning does not block approval. |
+| **Total does not add up: expected …, got …** (header) | Net + tax (+ shipping in US layouts) differs from the header total. | Header check, not a table problem: correct the header amounts. |
+| **Line Item Table is missing Mandatory column for PO like (Item Number, Unit Price, Quantity and Total amount)** | PO matching needs those four default columns and one of them is hidden or replaced by a custom column. | Admin: unhide the default column under Table Columns, or map the value to it in table training. |
+| **Table is already extracted by AI. Do you want to train manually?** | You opened table training for a supplier whose table comes from the AI. | Confirm to train; the saved rules then replace the AI table for this supplier. Cancel to keep the AI table. |
+| **AI Table will display here. Enable in …** | AI table extraction is switched off for the organization. | Admin: Settings → Document Processing → Classification and Extraction → *AI Table extraction*. |
+| **No line items yet** | Nothing was extracted: no rules for this supplier and the AI found no table, or the document has no readable text. | Follow Steps 1–4 above (OCR view, E-Text). Then train the table once, or add rows manually with *Add new table row*. |
+
+### The AI keeps filling a column with the wrong value
+
+Example seen in practice: the AI writes the line total into `CHARGES`. Every row then fails the line-total check, because charges are added to quantity × unit price.
+
+1. If the supplier has saved rules, untick *Use AI* on that column (Settings → Document Types → Table Columns) so the rules fill it.
+2. If the supplier has no rules, train the table once so the column is bound to its position on the page, or hide the column if the supplier never prints that value.
+3. Add an [AI table tag](../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md) such as *"charges column is empty on this supplier"*, tags are saved per supplier.
+
+### Switching the table checks off
+
+Settings → Document Types → *your type* → More Settings → **Skip table validation** marks the table of every document of that type as valid: line-total mismatches and empty required columns are no longer reported. The header checks (total = net + tax) stay. Use it only for document types whose tables are informational and not exported to the ERP.

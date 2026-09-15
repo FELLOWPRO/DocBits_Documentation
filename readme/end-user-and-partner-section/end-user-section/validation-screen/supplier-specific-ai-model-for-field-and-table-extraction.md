@@ -7,7 +7,7 @@ To change the model, open the options menu by clicking the **three dots** on the
 
 * **Full** – Costs 2 tokens
 * **Fast** – Costs 1 token
-* **Turbo** – Costs 1 token
+* **Nexus** – Costs 1 token
 
 <figure><img src="../../../.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png" alt=""><figcaption></figcaption></figure>
 

@@ -77,13 +77,17 @@ Click **Try it out**, then fill in the form.
 
 ```json
 {
-  "ItemID": "//Item/ID",
+  "ID": "//Item/ID",
   "Description": "//Item/Description",
   "Price": "//Item/UnitPrice"
 }
 ```
 
 The XPaths are checked against your XML before anything is written, so a path that does not match the document is reported rather than silently importing empty columns.
+
+{% hint style="warning" %}
+**One of the columns must be called `ID`.** It is what identifies a record: importing the same data again updates the row with that ID instead of adding a duplicate. The name is not case-sensitive, so `ID`, `Id` and `id` all work, but a name like `ItemID` does not count — the request is rejected with `ID_FIELD_IS_MISSING` and nothing is written.
+{% endhint %}
 
 {% hint style="warning" %}
 Some dataset names are reserved by DocBits and cannot be written to this way. Using one returns `RESERVED_DATASET_NAME` — pick a different `data_type`.
@@ -97,7 +101,18 @@ Check which environment and which organization you are pointing at before you ex
 
 Before you execute, check the **Servers** dropdown at the bottom of the form.
 
-Click **Execute**. Unlike the BOD imports, these endpoints report problems with a proper error status rather than a `200` carrying `"success": false` — a **400** means the request was rejected and nothing was written.
+Click **Execute**. A successful import tells you how many records it wrote:
+
+```json
+{
+  "records_inserted": 12,
+  "records_updated": 3
+}
+```
+
+Records whose `ID` was not already in the dataset are counted under `records_inserted`, the rest under `records_updated`.
+
+Unlike the BOD imports, these endpoints report problems with a proper error status rather than a `200` carrying `"success": false` — a **400** means the request was rejected and nothing was written.
 
 ### 5. Check that the data arrived
 
@@ -106,5 +121,3 @@ Click **Execute**. Unlike the BOD imports, these endpoints report problems with 
 * The columns are the names you used on the left-hand side of `field_mappings`.
 
 <!-- SCREENSHOT: Lookup Master Data with Imported selected and the new dataset open -->
-
-Importing the same data again updates the existing records rather than duplicating them.

@@ -112,8 +112,6 @@ The value on the right is the XPath to read from. Write it without namespace pre
 
 #### Pasting the XML — `/import/supplier_bod_xml`
 
-<!-- SCREENSHOT: the Try it out form of /import/supplier_bod_xml -->
-
 This endpoint does not take the BOD as a plain paste. The **xml** field is an object, pre-filled with `{"xml": "string"}`. Replace `string` with the content of your BOD, keeping the surrounding quotes and braces:
 
 ```json

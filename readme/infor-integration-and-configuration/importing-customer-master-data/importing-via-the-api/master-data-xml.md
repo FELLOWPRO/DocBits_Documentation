@@ -12,6 +12,8 @@ Use this for master data that does not arrive as a BOD — price lists, cost cen
 
 ## Two ways to send the XML
 
+<figure><img src="../../../.gitbook/assets/import-xml-endpoints.png" alt="The two master data XML import endpoints"><figcaption><p>Upload a file, or paste the XML</p></figcaption></figure>
+
 | Endpoint | Use it when |
 | --- | --- |
 | `/master_data_lookup/xml/import_xml_file` | You have the data as an **XML file** and want to upload it. |
@@ -58,11 +60,11 @@ Authorizing works exactly as for the BOD imports: click the **lock icon**, paste
 
 ### 3. Fill in the fields
 
-<figure><img src="../../../.gitbook/assets/import-tryitout.png" alt="The Try it out button on the endpoint"><figcaption><p>Try it out unlocks the form</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import-tryitout-xml.png" alt="The Try it out button on the endpoint"><figcaption><p>Try it out unlocks the form</p></figcaption></figure>
 
 Click **Try it out**, then fill in the form.
 
-<!-- SCREENSHOT: the Try it out form of /master_data_lookup/xml/import_xml_file -->
+<figure><img src="../../../.gitbook/assets/import-xml-form.png" alt="The master data XML import form filled in"><figcaption><p>The request body form, filled in</p></figcaption></figure>
 
 | Field | |
 | --- | --- |
@@ -92,7 +94,11 @@ The XPaths are checked against your XML before anything is written, so a path th
 {% endhint %}
 
 {% hint style="warning" %}
-Some dataset names are reserved by DocBits and cannot be written to this way. Using one returns `RESERVED_DATASET_NAME` — pick a different `data_type`.
+**One request imports one record.** Each XPath is read once, so if your XML contains several elements only the first match of each is used. To load a list, send one request per record, or use a CSV import instead.
+{% endhint %}
+
+{% hint style="warning" %}
+Two dataset names are reserved by DocBits and cannot be written to this way: `purchase_order_header` and `purchase_order_address`. Using either returns `RESERVED_DATASET_NAME` — pick a different `data_type`.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -105,16 +111,14 @@ Before you execute, check the **Servers** dropdown at the bottom of the form.
 
 <figure><img src="../../../.gitbook/assets/import-execute.png" alt="The Servers dropdown and the Execute button"><figcaption><p>Check the server, then Execute</p></figcaption></figure>
 
-Click **Execute**. A successful import tells you how many records it wrote:
+Click **Execute**. A successful import returns:
 
 ```json
 {
-  "records_inserted": 12,
-  "records_updated": 3
+  "success": true,
+  "message": "Record(s) created/updated successfully"
 }
 ```
-
-Records whose `ID` was not already in the dataset are counted under `records_inserted`, the rest under `records_updated`.
 
 Unlike the BOD imports, these endpoints report problems with a proper error status rather than a `200` carrying `"success": false` — a **400** means the request was rejected and nothing was written.
 

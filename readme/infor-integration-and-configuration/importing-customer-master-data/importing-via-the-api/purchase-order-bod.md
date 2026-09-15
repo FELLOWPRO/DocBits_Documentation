@@ -34,7 +34,7 @@ To find the Org ID, go to **Settings → Integration & SSO** and open the **ID**
 <figure><img src="../../../.gitbook/assets/import-org-id.png" alt="The ID section showing Org ID and Sub Org ID with their copy buttons"><figcaption><p>Settings → Integration &#x26; SSO → ID</p></figcaption></figure>
 
 {% hint style="info" %}
-If your organization does not use sub-organizations, **Sub Org ID** shows the same value as **Org ID**. In that case you can leave the `sub_org_id` field empty when you import.
+**Sub Org ID** only matters if your organization is split into sub-organizations. If you are not importing into a particular sub-organization, leave the `sub_org_id` field empty.
 {% endhint %}
 
 ## Step-by-Step Instructions

@@ -1,7 +1,5 @@
 ---
 description: How to import a Supplier BOD into DocBits manually using the API
-hidden: true
-noIndex: true
 ---
 
 # Import Suppliers (Supplier BOD)

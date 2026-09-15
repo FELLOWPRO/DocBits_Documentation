@@ -1,7 +1,5 @@
 ---
 description: Sending master data into DocBits by hand using the API
-hidden: true
-noIndex: true
 ---
 
 # Importing via the API

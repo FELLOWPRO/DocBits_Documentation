@@ -1,7 +1,5 @@
 ---
 description: How to import master data into a lookup dataset from an XML file
-hidden: true
-noIndex: true
 ---
 
 # Import Master Data from XML

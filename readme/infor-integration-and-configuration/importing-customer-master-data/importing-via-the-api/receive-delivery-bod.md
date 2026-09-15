@@ -1,7 +1,5 @@
 ---
 description: How to import a Receive Delivery BOD into DocBits manually using the API
-hidden: true
-noIndex: true
 ---
 
 # Import Goods Receipts (Receive Delivery BOD)

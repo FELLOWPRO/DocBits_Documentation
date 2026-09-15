@@ -20,6 +20,7 @@
   * [Aktualizacje — 29 lipca – 12 sierpnia 2026](overview-and-basics/release-notes/incremental-updates-29-july-12-august-2026.md)
   * [Aktualizacje — 12–25 sierpnia 2026](overview-and-basics/release-notes/incremental-updates-12-25-august-2026.md)
   * [Poprawki krytyczne 8 września 2026](overview-and-basics/release-notes/incremental-updates-8-september-2026.md)
+  * [Poprawki krytyczne 15 września 2026](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Ogólne informacje](overview-and-basics/faq/general-information.md)
   * [Przetwarzanie dokumentów](overview-and-basics/faq/document-processing/README.md)

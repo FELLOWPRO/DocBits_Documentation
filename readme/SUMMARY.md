@@ -21,6 +21,7 @@
   * [Actualizaciones — 12–25 de agosto de 2026](overview-and-basics/release-notes/incremental-updates-12-25-august-2026.md)
   * [Correcciones urgentes 8 de septiembre de 2026](overview-and-basics/release-notes/incremental-updates-8-september-2026.md)
   * [Correcciones urgentes 15 de septiembre de 2026](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)
+* [Hoja de ruta](overview-and-basics/roadmap.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [Información General](overview-and-basics/faq/general-information.md)
   * [Procesamiento de Documentos](overview-and-basics/faq/document-processing/README.md)

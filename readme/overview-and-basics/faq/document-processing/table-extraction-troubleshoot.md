@@ -52,3 +52,31 @@ Se o documento não tiver e-text disponível:
    * **Seja cauteloso, pois essa alteração pode afetar os resultados de extração de outros fornecedores.**
    * Essa alteração pode impactar outros fornecedores, então verifique minuciosamente os resultados para garantir que não afete negativamente as extrações de documentos de outros fornecedores.
 5. Se o resultado não melhorar após alterar a versão do OCR de IA, entre em **contato conosco** para obter mais assistência.
+
+## Mensagens na tabela
+
+A extração pode parecer correta e, ainda assim, o documento recusar-se a ser aprovado. Estas são as mensagens que o DocBits mostra na tabela de itens de linha ou por baixo dela, o que as desencadeia e como as resolver.
+
+| Mensagem | Causa | Correção |
+|---|---|---|
+| **Coluna obrigatória vazia** (célula assinalada a vermelho, nome da coluna na dica) | Uma coluna marcada como *Obrigatória* nas definições de colunas da tabela não tem valor nesta linha. | Preencha a célula. Se o valor nunca existir para este tipo de documento, um administrador desmarca *Obrigatória* em Definições → Tipos de Documento → Colunas da Tabela e reinicia o documento. |
+| **Line total does not match quantity x unit price (expected …, got …)** | O DocBits verifica cada linha: `TOTAL_AMOUNT = QUANTITY × UNIT_PRICE + CHARGES`, menos `DISCOUNT`, ou × (100 − `DISCOUNT_PERCENT`) / 100, ou menos `DISCOUNT_PER_UNIT × QUANTITY`, consoante a coluna de desconto preenchida. Uma diferença superior a 0,02 gera a mensagem. A verificação só corre quando a quantidade, o preço unitário e o total estão todos preenchidos. | Compare os quatro valores com o documento. Normalmente um deles foi lido para a coluna errada; um valor de encargos ou de desconto na célula errada é o caso mais comum. Corrija a célula; a mensagem desaparece ao guardar. |
+| **Line total does not match quantity x unit price minus discount / minus percentage discount / minus per-unit discount** | A mesma verificação, com a coluna de desconto que está preenchida. | Como acima; verifique primeiro a célula do desconto. |
+| **Line items add up to … but the net total is …** (aviso) | A soma de todas as células `TOTAL_AMOUNT` difere do valor líquido no cabeçalho. | Procure uma linha em falta, uma linha duplicada ou um valor líquido do cabeçalho lido incorretamente. Um aviso não bloqueia a aprovação. |
+| **Total does not add up: expected …, got …** (cabeçalho) | Líquido + imposto (+ portes nos layouts dos EUA) difere do total do cabeçalho. | Verificação do cabeçalho, não é um problema da tabela: corrija os valores do cabeçalho. |
+| **Line Item Table is missing Mandatory column for PO like (Item Number, Unit Price, Quantity and Total amount)** | A correspondência de PO precisa dessas quatro colunas predefinidas e uma delas está oculta ou foi substituída por uma coluna personalizada. | Administrador: torne a coluna predefinida visível em Colunas da Tabela, ou mapeie o valor para ela no treino de tabelas. |
+| **Table is already extracted by AI. Do you want to train manually?** | Abriu o treino de tabelas para um fornecedor cuja tabela vem da IA. | Confirme para treinar; as regras guardadas substituem então a tabela de IA para este fornecedor. Cancele para manter a tabela de IA. |
+| **AI Table will display here. Enable in …** | A extração de tabelas por IA está desativada para a organização. | Administrador: Definições → Processamento de Documentos → Classificação e Extração → *Extração de tabelas por IA*. |
+| **No line items yet** | Nada foi extraído: não há regras para este fornecedor e a IA não encontrou tabela, ou o documento não tem texto legível. | Siga os Passos 1 a 4 acima (Visualização OCR, E-Text). Depois, treine a tabela uma vez ou adicione linhas manualmente com *Adicionar nova linha à tabela*. |
+
+### A IA continua a preencher uma coluna com o valor errado
+
+Exemplo visto na prática: a IA escreve o total da linha em `CHARGES`. Todas as linhas falham então a verificação do total da linha, porque os encargos são somados a quantidade × preço unitário.
+
+1. Se o fornecedor tiver regras guardadas, desmarque *Usar IA* nessa coluna (Definições → Tipos de Documento → Colunas da Tabela) para que sejam as regras a preenchê-la.
+2. Se o fornecedor não tiver regras, treine a tabela uma vez para que a coluna fique associada à sua posição na página, ou oculte a coluna se o fornecedor nunca imprimir esse valor.
+3. Adicione uma [tag da tabela de IA](../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md) como *"a coluna de encargos está vazia neste fornecedor"*; as tags são guardadas por fornecedor.
+
+### Desativar as verificações da tabela
+
+Definições → Tipos de Documento → *o seu tipo* → Mais definições → **Ignorar validação da tabela** marca a tabela de todos os documentos desse tipo como válida: as discrepâncias no total da linha e as colunas obrigatórias vazias deixam de ser comunicadas. As verificações do cabeçalho (total = líquido + imposto) mantêm-se. Use-a apenas para tipos de documento cujas tabelas são informativas e não são exportadas para o ERP.

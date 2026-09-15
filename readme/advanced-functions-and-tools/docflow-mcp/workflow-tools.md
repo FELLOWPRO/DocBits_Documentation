@@ -1,6 +1,12 @@
 # Ferramentas de Workflow
 
-O DocFlow MCP fornece 8 ferramentas para gerenciar e testar workflows avançados.
+O DocFlow MCP fornece ferramentas para gerir e testar workflows avançados, bem como ferramentas para ler os registos de workflows e gerir variáveis de workflow.
+
+{% hint style="info" %}
+**Nomes das ferramentas através do gateway DocBits MCP.** Quando se liga através do DocBits MCP unificado (`api.docbits.com/v3/mcp`), todas as ferramentas do DocFlow têm o prefixo `docflow_`: `list_workflows` chama-se `docflow_list_workflows`, `run_workflow_with_assertions` é `docflow_run_workflow_with_assertions`. Os parâmetros são idênticos. Os nomes abaixo são os nomes simples do DocFlow.
+
+Os workflows são **criados e editados no designer do DocFlow** na aplicação web. O MCP lê, testa, executa e elimina workflows; não cria nem modifica grafos de workflow.
+{% endhint %} As ferramentas do SDK de Cards têm a sua própria página, ver [Ferramentas do SDK de Cards](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -55,141 +61,6 @@ Obtém detalhes de um workflow específico, incluindo sua estrutura de nós e ar
       {"source_node_id": "when-1", "target_node_id": "then-1"}
     ]
   }
-}
-```
-
-## create\_advanced\_workflow
-
-Cria um novo workflow avançado com nós e arestas.
-
-**Parâmetros:**
-
-| Parâmetro | Tipo | Obrigatório | Descrição |
-|-----------|------|----------|-------------|
-| `name` | string | Sim | Nome do workflow (3-126 caracteres) |
-| `description` | string | Não | Descrição opcional |
-| `nodes` | array | Sim | Array de nós do workflow |
-| `edges` | array | Sim | Array de arestas conectando os nós |
-
-### Estrutura do Nó
-
-Cada nó requer:
-
-| Campo | Tipo | Descrição |
-|-------|------|-------------|
-| `node_id` | string | Identificador único do nó |
-| `node_type` | string | `when`, `then`, `and`, `or` ou `delay` |
-| `position` | object | Posição `{x: number, y: number}` no canvas |
-| `label` | string | Rótulo de exibição |
-| `card` | object | Configuração do card (veja abaixo) |
-
-### Estrutura da Aresta
-
-Cada aresta requer:
-
-| Campo | Tipo | Descrição |
-|-------|------|-------------|
-| `edge_id` | string | Identificador único da aresta |
-| `source_node_id` | string | ID do nó de origem |
-| `target_node_id` | string | ID do nó de destino |
-| `source_handle` | string | `success` ou `error` (opcional) |
-| `target_handle` | string | `input` (opcional) |
-
-### Configuração do Card
-
-Cards definem o que um nó faz. Use `list_cards` ou `sdk_list_cards_picker` para obter os cards disponíveis.
-
-```json
-{
-  "id": "card-uuid-here",
-  "card_type": "document_type_is",
-  "version": 1,
-  "variables": [
-    {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-  ]
-}
-```
-
-{% hint style="info" %}
-Você só precisa fornecer `id`, `card_type`, `version` e `variables` para cada card. O servidor enriquece automaticamente os cards com metadados de exibição (svg, text, category) do banco de dados.
-{% endhint %}
-
-**Exemplo de Requisição:**
-
-```json
-{
-  "name": "Simple Invoice Router",
-  "description": "Routes invoices to approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 100, "y": 100},
-      "label": "Document is Invoice",
-      "card": {
-        "id": "card-uuid",
-        "card_type": "document_type_is",
-        "version": 1,
-        "variables": [
-          {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 100, "y": 300},
-      "label": "Send Notification",
-      "card": {
-        "id": "card-uuid-2",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
-}
-```
-
-**Exemplo de Resposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
-## update\_advanced\_workflow
-
-Atualiza um workflow avançado existente. Você pode atualizar qualquer combinação de nome, descrição, nós e arestas.
-
-**Parâmetros:**
-
-| Parâmetro | Tipo | Obrigatório | Descrição |
-|-----------|------|----------|-------------|
-| `workflow_id` | string | Sim | UUID do workflow a ser atualizado |
-| `name` | string | Não | Novo nome |
-| `description` | string | Não | Nova descrição |
-| `nodes` | array | Não | Novos nós (substitui todos os nós existentes) |
-| `edges` | array | Não | Novas arestas (substitui todas as arestas existentes) |
-
-**Exemplo de Resposta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
 }
 ```
 
@@ -304,3 +175,58 @@ Lista todos os cards de workflow disponíveis com suas condições e configuraç
 {% hint style="info" %}
 Os cards possuem flags de função: `when_condition` (gatilho), `and_condition` (condição adicional) e `then_condition` (ação). Use-as para determinar em quais tipos de nó um card pode ser utilizado.
 {% endhint %}
+
+## list\_workflow\_variables
+
+Lista todas as variáveis de workflow da organização com nome, tipo e valor atual.
+
+**Parâmetros:** Nenhum
+
+## set\_workflow\_variable
+
+Cria uma variável de workflow ou atualiza o seu valor. As variáveis do tipo documento não têm valor próprio; são definidas pelo workflow em tempo de execução.
+
+**Parâmetros:**
+
+| Parâmetro | Tipo | Obrigatório | Descrição |
+|-----------|------|----------|-------------|
+| `name` | string | Sim | Nome da variável |
+| `value` | string | Não | Novo valor |
+| `var_type` | string | Não | Tipo da variável ao criar (por exemplo `string`, `number`, `document`) |
+
+## search\_workflow\_logs
+
+Pesquisa os registos de execução de workflows para descobrir porque é que as execuções falharam, tiveram sucesso ou encontraram uma condição não satisfeita.
+
+**Parâmetros:**
+
+| Parâmetro | Tipo | Obrigatório | Descrição |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | Não | Limitar a um workflow |
+| `doc_id` | string | Não | Limitar às execuções de um documento |
+| `status` | string | Não | Estado da execução pelo qual filtrar |
+| `keyword` | string | Não | Filtro de texto livre sobre o registo |
+| `include_workflow_data` | boolean | Não | Incluir o snapshot da definição do workflow por execução |
+| `limit` / `offset` | integer | Não | Paginação |
+
+## get\_workflow\_log\_detail
+
+Detalhe completo de uma execução: os registos brutos de execução dos cards e a definição do workflow tal como estava em tempo de execução.
+
+**Parâmetros:**
+
+| Parâmetro | Tipo | Obrigatório | Descrição |
+|-----------|------|----------|-------------|
+| `log_id` | string | Sim | ID da entrada de registo obtido de `search_workflow_logs` |
+
+## run\_workflow\_with\_assertions
+
+Inicializa variáveis de workflow, executa um workflow avançado com o executor real e verifica o resultado na base de dados. As variáveis são escritas reais, não mocks; use-a para testar a integração de um workflow a partir de um assistente.
+
+**Parâmetros:**
+
+| Parâmetro | Tipo | Obrigatório | Descrição |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | Sim | UUID do workflow a executar |
+| `doc_id` | string | Não | Documento contra o qual executar o workflow |
+| `seed_variables` | array | Não | Variáveis a criar ou atualizar antes da execução; as variáveis do tipo documento podem apontar para um `doc_id` através de `value` |

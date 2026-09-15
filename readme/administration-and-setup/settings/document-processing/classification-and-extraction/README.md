@@ -70,33 +70,82 @@ In this video, we compare two ways to process tables in DocBits: AI-based table 
 *   When standard extraction is best (stable templates, strict control, predictable output)
 *   Practical tips to improve table results and reduce mismatches
 
-You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table—whether AI-based or manual—will always be linked to a specific supplier.
+{% hint style="info" %}
+**Pré-requisitos para uma extração de tabelas funcional**
 
-**Table Extraction:** Activates manual **table extraction**. Tables must be trained manually.\
-Learn more about manual training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* O tipo de documento tem **colunas de tabela** (Definições → Definições Globais → Tipos de Documento → [Colunas da Tabela](../../global-settings/document-types/table-columns.md)). Sem colunas, não há para onde extrair.
+* A **Extração de tabelas** ou a **Extração de tabelas por IA** está ativada abaixo, para toda a organização.
+* O documento tem texto legível: o OCR foi executado, ou o E-Text é usado para PDFs nativos digitais ([Definições OCR](../ocr-settings.md)).
+* O treino e os modelos de IA são **por fornecedor**. Uma tabela treinada aplica-se apenas aos documentos do fornecedor com que foi treinada.
+{% endhint %}
 
-**AI Table Extraction:** Uses AI to automatically extract tables. If the results are not accurate enough, it's recommended to switch to manual **Table Extraction** for better control and training.
+Pode extrair tabelas de documentos ativando a **Extração de tabelas** ou a **Extração de tabelas por IA**. Uma tabela treinada (seja com IA ou manualmente) está sempre associada a um fornecedor específico.
 
-**Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
-Detailed explanation available [here](table-extraction-for-costing-element.md).
+**Extração de tabelas:** Ativa a extração de tabelas baseada em regras. As tabelas são treinadas por fornecedor no ecrã de validação (*Ir para a vista de extração de tabelas*).\
+Saiba mais sobre o treino [aqui](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
-**Auto Extract Tax Code:** When enabled, the system automatically fills the **Tax Code** field on the Validation Screen—provided that a tax code field is configured.\
-More information on this setting [here](auto-extract-tax-code.md).
+**Extração de tabelas por IA:** Usa IA para extrair a tabela de qualquer fornecedor sem treino. Se os resultados de um fornecedor não forem suficientemente precisos, treine a tabela desse fornecedor; as regras guardadas passam então a ter precedência sobre a IA para esse fornecedor.
 
-**AI Model:** Allows you to specify which **AI model** is used for table extraction.\
-You’ll also see a table showing:
+**Usar Extração de tabelas Vision (IA):** A IA lê a imagem da página em vez da camada de texto. Ajuda com documentos digitalizados e tabelas sem uma estrutura de texto clara; é mais lenta.
 
-* Which **suppliers** are using which AI model
-* Whether they use E-Text
-* Options to delete an entry or reset the training data
+**Usar Extração estruturada (IA):** A IA devolve a tabela numa estrutura fixa que é mapeada diretamente para as colunas de tabela configuradas. Recomendado quando os cabeçalhos das colunas nos documentos variam muito.
 
-This setting is explained in detail [here](ai-model.md).
+**Extração de tabelas para elemento de custo:** Quando ativada, o DocBits pode extrair elementos de custo das tabelas ao nível da linha e classificá-los em conformidade.\
+Explicação detalhada disponível [aqui](table-extraction-for-costing-element.md).
+
+**Extrair automaticamente o código de imposto:** Quando ativada, o sistema preenche automaticamente o campo **Código de imposto** no ecrã de validação, desde que exista um campo de código de imposto configurado.\
+Mais informações sobre esta definição [aqui](auto-extract-tax-code.md).
+
+**Guardar regras de extração (apenas administradores):** Só os administradores podem clicar em *Guardar regras* no treino de tabelas. Ative-a quando os utilizadores continuam a guardar regras que estragam a extração de um fornecedor.
+
+**Modelo de IA:** Seleciona o nível de IA usado para a extração de tabelas: **Fast** (predefinição), **Full** (máxima precisão, mais lento) ou **Nexus** (terceiro nível, de ativação opcional). A tabela por baixo do seletor mostra:
+
+* Quais os **fornecedores** que usam cada modelo de IA
+* Se usam E-Text
+* Opções para eliminar uma entrada ou repor os dados de treino
+
+Esta definição é explicada em detalhe [aqui](ai-model.md).
+
+### Porque é que a tabela é diferente de fornecedor para fornecedor?
+
+Tudo o que o DocBits aprende sobre uma tabela é guardado **por fornecedor**:
+
+* **Regras guardadas** (treino de tabelas): posição da tabela e mapeamento das suas colunas no layout desse fornecedor.
+* **Tags e regras de formatação da tabela de IA**: indicações que o utilizador guardou para a tabela de IA desse fornecedor.
+* **Modelo de IA específico do fornecedor**: o nível escolhido para esse fornecedor em *Mais definições* no ecrã de validação.
+
+Assim, o fornecedor A, com regras guardadas, mostra uma tabela determinística no separador *Tabela extraída* do ecrã de validação, enquanto o fornecedor B, sem regras, recebe a *Tabela extraída por IA*. Para que o fornecedor B se comporte como o A, treine a tabela de B uma vez. Para repor um fornecedor, elimine as suas regras no ecrã de validação ou reponha os seus dados de treino na tabela do Modelo de IA.
+
+### Chaves de preferências
+
+Cada opção desta secção é guardada como uma preferência da organização. Use a chave quando definir o valor através da API (`/preferences/set_preference`), de um script ou do DocBits MCP (`get_preference` / `set_preference`).
+
+| Definição (etiqueta na interface) | Chave de preferência | Valores |
+|---|---|---|
+| Extração de tabelas | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| Extração de tabelas por IA | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Usar Extração de tabelas Vision (IA) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Usar Extração estruturada (IA) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Extração de tabelas para elemento de custo | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Extrair automaticamente o código de imposto | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Guardar regras de extração (apenas administradores) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| Modelo de IA | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Versão da extração de tabelas (caixa de diálogo de confirmação) | `TBL_EXT_VERSION` | cadeia de versão |
+| Definições OCR → Usar dados de IA para tabelas, se disponíveis | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| Definições OCR → Usar E-Text, se disponível | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+
+Notas:
+
+* As preferências booleanas são guardadas como as cadeias `true` / `false`; uma chave que nunca foi definida conta como `false`. Se enviar `1` ou `0`, o DocBits guarda `true` / `false`.
+* `AI_MODEL` não definido significa **Fast**.
+* A alteração de uma chave produz efeito nos documentos processados posteriormente. Reinicie um documento para o extrair novamente com a nova definição.
+* As escolhas por fornecedor (E-Text, modelo de IA, regras guardadas) não são preferências da organização; são definidas no ecrã de validação em *Mais definições* num documento desse fornecedor.
 
 ## Electronic Document
 
 **Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
 
-The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd-1.0-2.1-and-2.3.md).
+The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
 
 ## **Classification Rules**
 

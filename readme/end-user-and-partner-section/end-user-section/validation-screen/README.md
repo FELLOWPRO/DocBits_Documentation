@@ -66,6 +66,63 @@ Use a dica de ferramenta para descobrir se:
 * **Propósito:** Identifica campos obrigatórios dentro dos documentos que devem ser preenchidos ou corrigidos antes de um processamento adicional.
 * **Caso de Uso:** Garante que dados essenciais sejam capturados com precisão, mantendo a integridade dos dados e conformidade com as regras de negócios.
 
+## Tabela extraída (itens de linha)
+
+<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Tabela de itens de linha no ecrã de validação com a barra de ferramentas da tabela"><figcaption><p>A tabela extraída por baixo dos campos de cabeçalho</p></figcaption></figure>
+
+Por baixo dos campos de cabeçalho, o DocBits mostra a tabela de itens de linha do documento: uma linha por linha da fatura, uma coluna por [coluna de tabela](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md) configurada para o tipo de documento. Quando um tipo de documento tem várias tabelas (por exemplo, artigos e encargos), cada tabela tem o seu próprio separador por cima da grelha.
+
+### De onde vem a tabela
+
+Por cima da grelha existe um separador por cada caminho de extração que a organização ativou:
+
+| Separador | Significado |
+|---|---|
+| **Tabela extraída** | Extração baseada em regras (definição *Extração de tabelas*). Para um fornecedor com tabela treinada, estas linhas vêm das regras guardadas e são extraídas da mesma forma em todos os documentos desse fornecedor; para um fornecedor sem treino, o separador pode estar vazio. |
+| **Tabela extraída por IA** | A extração de tabelas por IA (definição *Extração de tabelas por IA*). Preenchida quando o fornecedor não tem regras guardadas e, para as colunas marcadas como *Usar IA*, mesmo quando existem regras. Uma dica *AI table not found* no separador significa que a IA não devolveu nada para este documento. |
+| **PO Tables** | Apenas no construtor de layouts: as linhas da ordem de compra usadas para a correspondência. |
+
+Se nenhum dos separadores aparecer, ambas as definições de tabela estão desativadas para a organização (Definições → Processamento de Documentos → Classificação e Extração). O nível de IA que lê a tabela é definido por organização e pode ser substituído por fornecedor, ver [Modelo de IA específico do fornecedor](supplier-specific-ai-model-for-field-and-table-extraction.md).
+
+### Trabalhar na tabela
+
+* **Editar uma célula**: clique nela e escreva. As colunas de valor, número e data são validadas enquanto escreve.
+* **Adicionar nova linha à tabela**: acrescenta uma linha vazia no fim. Use-a quando uma linha não foi reconhecida.
+* **Eliminar uma linha**: o ícone do caixote do lixo no fim da linha.
+* **Adicionar colunas mapeadas vazias**: mostra as colunas configuradas que a IA deixou vazias, para que as possa preencher manualmente.
+* **Restaurar coluna da tabela**: repõe uma coluna que removeu da vista neste documento.
+* **Eliminar tabela**: limpa todas as linhas desta tabela neste documento. A configuração não é alterada.
+* **Adicionar nova coluna de tabela** (administradores): a mesma caixa de diálogo das definições de colunas da tabela, sem sair do documento.
+* **Tags** (apenas tabela de IA): breves indicações em texto para a IA, por exemplo *"a última coluna é o valor líquido"*. Ver [Tags da tabela de IA](../ai-table/ai-table-tags.md).
+* **Aplicar** / **Guardar** / **Eliminar** ao lado das tags: *Aplicar* volta a executar a tabela de IA neste documento com as tags e as alterações de colunas que fez, sem guardar nada (se o documento tiver linhas com correspondência de PO, o DocBits avisa que as correspondências são removidas); *Guardar regras* guarda o mapeamento de colunas e as tags atuais para este fornecedor; *Eliminar regras* remove-os e volta a executar a extração por IA neste documento.
+* **Exportar**: descarrega a tabela como ficheiro CSV.
+* **Ir para a vista de extração de tabelas**: abre o treino de tabelas para este documento. Use-a quando o mesmo fornecedor sai sempre errado: desenhe a tabela uma vez, mapeie as colunas e clique em *Guardar regras*; a partir daí, as linhas aparecem no separador *Tabela extraída*. Ver [Treino de campos de linha / Treino de tabelas](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+
+{% hint style="info" %}
+Se a tabela foi extraída pela IA e abrir o treino de tabelas, o DocBits pergunta *Table is already extracted by AI. Do you want to train manually?* Depois de guardar regras, a tabela de IA deixa de ser usada para este fornecedor.
+{% endhint %}
+
+### Extrair novamente a tabela
+
+* **Mesmo documento, tabela de IA:** adicione ou altere tags e clique em **Aplicar**; a tabela de IA é reconstruída apenas para este documento. Para descartar também as tags e a formatação guardadas do fornecedor, clique em **Eliminar** (*Eliminar regras*): o DocBits confirma *Rules has been deleted successfully* e volta a executar a extração por IA.
+* **Mesmo documento, regras treinadas:** abra *Ir para a vista de extração de tabelas*, corrija a tabela e clique em *Guardar e extrair novamente*.
+* **Documento inteiro de novo (cabeçalho e tabela):** Dashboard → menu do documento → *Reiniciar*. Necessário depois de um administrador alterar as colunas da tabela ou as definições de extração.
+
+### O que bloqueia a aprovação
+
+A tabela é verificada quando guarda ou aprova. Uma célula a vermelho ou uma mensagem por baixo da tabela significa uma destas situações:
+
+| Mensagem | Causa | O que fazer |
+|---|---|---|
+| Coluna obrigatória vazia | Uma coluna marcada como *Obrigatória* não tem valor nesta linha. | Preencha a célula ou pergunte a um administrador se a coluna tem mesmo de ser obrigatória. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `quantidade × preço unitário + encargos − desconto` difere do total da linha em mais de 0,02. Muitas vezes, um dos quatro valores foi lido para a coluna errada. | Corrija o valor que está errado face ao documento; se uma coluna como *Encargos* é sistematicamente preenchida com o valor errado, informe o seu administrador (ver a secção Resolução de problemas em [Colunas da Tabela](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md)). |
+| *Line items add up to … but the net total is …* | A soma dos totais das linhas difere do valor líquido no cabeçalho. | Procure uma linha em falta ou duplicada, ou um valor do cabeçalho lido incorretamente. |
+| *Line Item Table is missing Mandatory column for PO* | A correspondência de PO precisa de número do artigo, preço unitário, quantidade e valor total; uma dessas colunas está oculta. | Administrador: torne a coluna visível em Colunas da Tabela. |
+
+Um administrador pode desativar todas as verificações de tabela de um tipo de documento com *Ignorar validação da tabela* (Tipos de Documento → Mais definições); as discrepâncias nas linhas e as colunas obrigatórias vazias deixam então de ser comunicadas.
+
+Mais sobre as verificações: [Verificações automáticas no ecrã de validação](automatic-checks-on-the-validation-screen.md) e [Resolução de Problemas de Extração de Tabelas](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
+
 ### **Lupa:**
 
 <figure><img src="../../../.gitbook/assets/validation_screen7.png" alt="" width="118"><figcaption></figcaption></figure>

@@ -60,6 +60,63 @@ Use el consejo de herramienta para averiguar si:
 * **Propósito:** Identifica campos obligatorios dentro de los documentos que deben completarse o corregirse antes de un procesamiento posterior.
 * **Caso de Uso:** Asegura que los datos esenciales se capturen con precisión, manteniendo la integridad de los datos y el cumplimiento de las reglas comerciales.
 
+## Tabla extraída (líneas de detalle)
+
+<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Tabla de líneas de detalle en la pantalla de validación con la barra de herramientas de la tabla"><figcaption><p>La tabla extraída debajo de los campos de cabecera</p></figcaption></figure>
+
+Debajo de los campos de cabecera, DocBits muestra la tabla de líneas de detalle del documento: una fila por línea de factura y una columna por cada [columna de tabla](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md) configurada para el tipo de documento. Cuando un tipo de documento tiene varias tablas (por ejemplo, artículos y cargos), cada tabla tiene su propia pestaña encima de la cuadrícula.
+
+### De dónde procede la tabla
+
+Encima de la cuadrícula hay una pestaña por cada ruta de extracción que la organización tiene activada:
+
+| Pestaña | Significado |
+|---|---|
+| **Tabla extraída** (*Extracted table*) | Extracción basada en reglas (ajuste *Extracción de tablas*). En un proveedor con tabla entrenada, estas filas proceden de las reglas guardadas y se extraen de la misma manera en todos los documentos de ese proveedor; en un proveedor sin entrenar, la pestaña puede estar vacía. |
+| **Tabla extraída por IA** (*AI Extracted table*) | La extracción de tablas por IA (ajuste *Extracción de tablas por IA*). Se rellena cuando el proveedor no tiene reglas guardadas, y en las columnas marcadas como *Usar IA* incluso cuando existen reglas. Un tooltip *AI table not found* en la pestaña significa que la IA no devolvió nada para este documento. |
+| **Tablas de PO** (*PO Tables*) | Solo en el constructor de diseños: las líneas de la orden de compra usadas para la coincidencia. |
+
+Si no aparece ninguna de las pestañas, ambos ajustes de tabla están desactivados para la organización (Configuración → Procesamiento de documentos → Clasificación y extracción). El nivel de IA que lee la tabla se establece por organización y se puede sobrescribir por proveedor; consulte [Modelo de IA específico del proveedor](supplier-specific-ai-model-for-field-and-table-extraction.md).
+
+### Trabajar en la tabla
+
+* **Editar una celda**: haga clic en ella y escriba. Las columnas de importe, número y fecha se validan mientras escribe.
+* **Agregar nueva fila de tabla**: añade una fila vacía al final. Úselo cuando no se haya reconocido una línea.
+* **Eliminar una fila**: el icono de la papelera al final de la fila.
+* **Agregar columnas mapeadas vacías**: muestra las columnas configuradas que la IA dejó vacías, para que pueda rellenarlas a mano.
+* **Restaurar columna de tabla**: recupera una columna que quitó de la vista en este documento.
+* **Eliminar tabla**: borra todas las filas de esta tabla en este documento. La configuración no se toca.
+* **Agregar nueva columna de tabla** (administradores): el mismo cuadro de diálogo que en la configuración de columnas de tabla, sin salir del documento.
+* **Etiquetas** (solo tabla AI): indicaciones breves en texto para la IA, por ejemplo *"la última columna es el importe neto"*. Consulte [Etiquetas de la tabla AI](../ai-table/ai-table-tags.md).
+* **Aplicar** / **Guardar** / **Eliminar** junto a las etiquetas: *Aplicar* vuelve a ejecutar la tabla AI para este documento con las etiquetas y los cambios de columnas que haya hecho, sin guardar nada (si el documento tiene líneas coincidentes con una PO, DocBits avisa de que las coincidencias se eliminan); *Guardar reglas* guarda la asignación de columnas y las etiquetas actuales para este proveedor; *Eliminar reglas* las elimina y vuelve a ejecutar la extracción por IA para este documento.
+* **Exportar**: descarga la tabla como archivo CSV.
+* **Ir a la vista de extracción de tablas**: abre el entrenamiento de tablas para este documento. Úselo cuando el mismo proveedor salga mal una y otra vez: dibuje la tabla una vez, asigne las columnas y haga clic en *Guardar reglas*; a partir de entonces las filas aparecen en la pestaña *Tabla extraída*. Consulte [Entrenamiento de Campos de Línea / Tabla de Entrenamiento](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+
+{% hint style="info" %}
+Si la tabla la extrajo la IA y abre el entrenamiento de tablas, DocBits pregunta *Table is already extracted by AI. Do you want to train manually?* Después de guardar las reglas, la tabla AI deja de usarse para este proveedor.
+{% endhint %}
+
+### Volver a extraer la tabla
+
+* **Mismo documento, tabla AI:** añada o cambie etiquetas y haga clic en **Aplicar**; la tabla AI se reconstruye solo para este documento. Para descartar también las etiquetas y el formato guardados del proveedor, haga clic en **Eliminar** (*Eliminar reglas*): DocBits confirma *Rules has been deleted successfully* y vuelve a ejecutar la extracción por IA.
+* **Mismo documento, reglas entrenadas:** abra *Ir a la vista de extracción de tablas*, corrija la tabla y haga clic en *Guardar y volver a extraer*.
+* **Todo el documento de nuevo (cabecera y tabla):** Panel → menú del documento → *Reiniciar*. Es necesario después de que un administrador cambie las columnas de tabla o los ajustes de extracción.
+
+### Qué bloquea la aprobación
+
+La tabla se comprueba al guardar o aprobar. Una celda en rojo o un mensaje debajo de la tabla significa una de estas situaciones:
+
+| Mensaje | Causa | Qué hacer |
+|---|---|---|
+| Columna obligatoria vacía | Una columna marcada como *Obligatoria* no tiene valor en esta fila. | Rellene la celda o pregunte a un administrador si la columna debe ser obligatoria. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `cantidad × precio unitario + cargos − descuento` difiere del total de línea en más de 0,02. A menudo, uno de los cuatro valores se leyó en la columna equivocada. | Corrija el valor que está mal respecto al documento; si una columna como *Cargos* se rellena sistemáticamente con el valor equivocado, avise a su administrador (consulte [Solución de problemas](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md#troubleshooting)). |
+| *Line items add up to … but the net total is …* | La suma de los totales de línea difiere del importe neto de la cabecera. | Compruebe si falta una fila o hay una duplicada, o si un importe de cabecera se leyó mal. |
+| *Line Item Table is missing Mandatory column for PO* | La coincidencia de PO necesita número de artículo, precio unitario, cantidad e importe total; una de esas columnas está oculta. | Administrador: vuelva a mostrar la columna en Columnas de tabla. |
+
+Un administrador puede desactivar todas las comprobaciones de tabla de un tipo de documento con *Omitir validación de tabla* (*Skip table validation*, en Tipos de documentos → Más ajustes); las discrepancias de línea y las columnas obligatorias vacías dejan entonces de notificarse.
+
+Más información sobre las comprobaciones: [Comprobaciones Automáticas en la Pantalla de Validación](automatic-checks-on-the-validation-screen.md) y [Solución de problemas de extracción de tablas](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
+
 ### **Lupa:**
 
 <figure><img src="../../../.gitbook/assets/validation_screen7.png" alt="" width="118"><figcaption></figcaption></figure>

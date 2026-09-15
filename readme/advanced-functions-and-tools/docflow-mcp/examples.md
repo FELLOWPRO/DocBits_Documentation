@@ -89,51 +89,14 @@ La tarjeta ahora está activa y disponible para su uso en flujos de trabajo.
 
 ### Paso 5: Construir un flujo de trabajo con la tarjeta
 
-Primero, obtén las tarjetas disponibles usando `list_cards` o `sdk_list_cards_picker` para encontrar los IDs de las tarjetas.
+Abre el **diseñador de DocFlow** en la aplicación web, crea un flujo de trabajo avanzado y añade la tarjeta aprobada como nodo, por ejemplo un disparador *Document Received*, la tarjeta *High Value Check* y un nodo *Approval* para la rama `true`. Los grafos de flujos de trabajo se crean y editan en el diseñador; el MCP no los crea.
 
-Luego llama a `create_advanced_workflow`:
+De vuelta en el asistente, confirma que el flujo de trabajo existe y lee su estructura:
 
 ```json
 {
-  "name": "High Value Invoice Routing",
-  "description": "Routes high-value invoices for special approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 250, "y": 50},
-      "label": "High Value Invoice",
-      "card": {
-        "id": "returned-card-uuid",
-        "card_type": "high-value-check",
-        "version": 1,
-        "variables": [
-          {"id": "threshold-var-id", "data": "5000", "data_type": "number"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 250, "y": 250},
-      "label": "Notify Finance Team",
-      "card": {
-        "id": "email-card-uuid",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
+  "tool": "get_workflow",
+  "workflow_id": "<id from list_workflows>"
 }
 ```
 

@@ -1,6 +1,12 @@
 # Herramientas de flujos de trabajo
 
-DocFlow MCP proporciona 8 herramientas para gestionar y probar flujos de trabajo avanzados.
+DocFlow MCP expone herramientas para gestionar y probar flujos de trabajo avanzados, además de herramientas para leer los registros de los flujos de trabajo y gestionar las variables de flujo de trabajo.
+
+{% hint style="info" %}
+**Nombres de las herramientas a través de la pasarela DocBits MCP.** Cuando te conectas a través del DocBits MCP unificado (`api.docbits.com/v3/mcp`), todas las herramientas de DocFlow llevan el prefijo `docflow_`: `list_workflows` se llama `docflow_list_workflows`, `run_workflow_with_assertions` es `docflow_run_workflow_with_assertions`. Los parámetros son idénticos. Los nombres de abajo son los nombres de DocFlow sin prefijo.
+
+Los flujos de trabajo se **crean y editan en el diseñador de DocFlow** de la aplicación web. El MCP los lee, prueba, ejecuta y elimina; no crea ni modifica grafos de flujos de trabajo.
+{% endhint %} Las herramientas del SDK de tarjetas tienen su propia página; consulta [Herramientas del SDK de Tarjetas](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -55,141 +61,6 @@ Obtener detalles de un flujo de trabajo específico, incluyendo su estructura de
       {"source_node_id": "when-1", "target_node_id": "then-1"}
     ]
   }
-}
-```
-
-## create\_advanced\_workflow
-
-Crear un nuevo flujo de trabajo avanzado con nodos y aristas.
-
-**Parámetros:**
-
-| Parámetro | Tipo | Obligatorio | Descripción |
-|-----------|------|----------|-------------|
-| `name` | string | Sí | Nombre del flujo de trabajo (3-126 caracteres) |
-| `description` | string | No | Descripción opcional |
-| `nodes` | array | Sí | Array de nodos del flujo de trabajo |
-| `edges` | array | Sí | Array de aristas que conectan nodos |
-
-### Estructura de nodos
-
-Cada nodo requiere:
-
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| `node_id` | string | Identificador único del nodo |
-| `node_type` | string | `when`, `then`, `and`, `or` o `delay` |
-| `position` | object | Posición `{x: number, y: number}` en el lienzo |
-| `label` | string | Etiqueta de visualización |
-| `card` | object | Configuración de la tarjeta (ver abajo) |
-
-### Estructura de aristas
-
-Cada arista requiere:
-
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| `edge_id` | string | Identificador único de la arista |
-| `source_node_id` | string | ID del nodo de origen |
-| `target_node_id` | string | ID del nodo de destino |
-| `source_handle` | string | `success` o `error` (opcional) |
-| `target_handle` | string | `input` (opcional) |
-
-### Configuración de tarjetas
-
-Las tarjetas definen lo que hace un nodo. Usa `list_cards` o `sdk_list_cards_picker` para obtener las tarjetas disponibles.
-
-```json
-{
-  "id": "card-uuid-here",
-  "card_type": "document_type_is",
-  "version": 1,
-  "variables": [
-    {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-  ]
-}
-```
-
-{% hint style="info" %}
-Solo necesitas proporcionar `id`, `card_type`, `version` y `variables` para cada tarjeta. El servidor enriquece automáticamente las tarjetas con metadatos de visualización (svg, text, category) desde la base de datos.
-{% endhint %}
-
-**Ejemplo de solicitud:**
-
-```json
-{
-  "name": "Simple Invoice Router",
-  "description": "Routes invoices to approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 100, "y": 100},
-      "label": "Document is Invoice",
-      "card": {
-        "id": "card-uuid",
-        "card_type": "document_type_is",
-        "version": 1,
-        "variables": [
-          {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 100, "y": 300},
-      "label": "Send Notification",
-      "card": {
-        "id": "card-uuid-2",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
-}
-```
-
-**Ejemplo de respuesta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
-## update\_advanced\_workflow
-
-Actualizar un flujo de trabajo avanzado existente. Puedes actualizar cualquier combinación de nombre, descripción, nodos y aristas.
-
-**Parámetros:**
-
-| Parámetro | Tipo | Obligatorio | Descripción |
-|-----------|------|----------|-------------|
-| `workflow_id` | string | Sí | UUID del flujo de trabajo a actualizar |
-| `name` | string | No | Nuevo nombre |
-| `description` | string | No | Nueva descripción |
-| `nodes` | array | No | Nuevos nodos (reemplaza todos los nodos existentes) |
-| `edges` | array | No | Nuevas aristas (reemplaza todas las aristas existentes) |
-
-**Ejemplo de respuesta:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
 }
 ```
 
@@ -304,3 +175,58 @@ Listar todas las tarjetas de flujo de trabajo disponibles con sus condiciones y 
 {% hint style="info" %}
 Las tarjetas tienen indicadores de rol: `when_condition` (disparador), `and_condition` (condición adicional) y `then_condition` (acción). Utiliza estos indicadores para determinar en qué tipos de nodo se puede usar una tarjeta.
 {% endhint %}
+
+## list\_workflow\_variables
+
+Listar todas las variables de flujo de trabajo de la organización con su nombre, tipo y valor actual.
+
+**Parámetros:** Ninguno
+
+## set\_workflow\_variable
+
+Crear una variable de flujo de trabajo o actualizar su valor. Las variables de tipo documento no tienen valor propio; las establece el flujo de trabajo en tiempo de ejecución.
+
+**Parámetros:**
+
+| Parámetro | Tipo | Obligatorio | Descripción |
+|-----------|------|----------|-------------|
+| `name` | string | Sí | Nombre de la variable |
+| `value` | string | No | Nuevo valor |
+| `var_type` | string | No | Tipo de la variable al crearla (por ejemplo `string`, `number`, `document`) |
+
+## search\_workflow\_logs
+
+Buscar en los registros de ejecución de flujos de trabajo para averiguar por qué las ejecuciones fallaron, tuvieron éxito o no cumplieron una condición.
+
+**Parámetros:**
+
+| Parámetro | Tipo | Obligatorio | Descripción |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | No | Limitar a un flujo de trabajo |
+| `doc_id` | string | No | Limitar a las ejecuciones de un documento |
+| `status` | string | No | Estado de ejecución por el que filtrar |
+| `keyword` | string | No | Filtro de texto libre sobre el registro |
+| `include_workflow_data` | boolean | No | Incluir la instantánea de la definición del flujo de trabajo por ejecución |
+| `limit` / `offset` | integer | No | Paginación |
+
+## get\_workflow\_log\_detail
+
+Detalle completo de una ejecución: los registros en bruto de la ejecución de las tarjetas y la definición del flujo de trabajo tal como estaba en el momento de la ejecución.
+
+**Parámetros:**
+
+| Parámetro | Tipo | Obligatorio | Descripción |
+|-----------|------|----------|-------------|
+| `log_id` | string | Sí | ID de la entrada de registro obtenido de `search_workflow_logs` |
+
+## run\_workflow\_with\_assertions
+
+Inicializar variables de flujo de trabajo, ejecutar un flujo de trabajo avanzado con el ejecutor real y comprobar el resultado contra la base de datos. Las variables son escrituras reales, no simulaciones; úsalo para hacer pruebas de integración de un flujo de trabajo desde un asistente.
+
+**Parámetros:**
+
+| Parámetro | Tipo | Obligatorio | Descripción |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | Sí | UUID del flujo de trabajo a ejecutar |
+| `doc_id` | string | No | Documento sobre el que ejecutar el flujo de trabajo |
+| `seed_variables` | array | No | Variables que se crean o actualizan antes de la ejecución; las variables de tipo documento pueden apuntar a un `doc_id` mediante `value` |

@@ -89,51 +89,14 @@ Die Karte ist nun aktiv und kann in Workflows verwendet werden.
 
 ### Schritt 5: Einen Workflow mit der Karte erstellen
 
-Rufen Sie zuerst die verfuegbaren Karten mit `list_cards` oder `sdk_list_cards_picker` ab, um Karten-IDs zu finden.
+Öffnen Sie den **DocFlow-Designer** in der Web-App, erstellen Sie einen erweiterten Workflow und fügen Sie die genehmigte Karte als Knoten hinzu, zum Beispiel einen Auslöser *Document Received*, die Karte *High Value Check* und einen *Approval*-Knoten für den `true`-Zweig. Workflow-Graphen werden im Designer erstellt und bearbeitet; das MCP erstellt sie nicht.
 
-Dann rufen Sie `create_advanced_workflow` auf:
+Zurück im Assistenten bestätigen Sie, dass der Workflow existiert, und lesen seine Struktur:
 
 ```json
 {
-  "name": "High Value Invoice Routing",
-  "description": "Routes high-value invoices for special approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 250, "y": 50},
-      "label": "High Value Invoice",
-      "card": {
-        "id": "returned-card-uuid",
-        "card_type": "high-value-check",
-        "version": 1,
-        "variables": [
-          {"id": "threshold-var-id", "data": "5000", "data_type": "number"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 250, "y": 250},
-      "label": "Notify Finance Team",
-      "card": {
-        "id": "email-card-uuid",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
+  "tool": "get_workflow",
+  "workflow_id": "<id aus list_workflows>"
 }
 ```
 

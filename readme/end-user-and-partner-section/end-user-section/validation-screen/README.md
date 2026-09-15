@@ -64,6 +64,63 @@ Verwenden Sie den Tooltip, um herauszufinden, ob:
 * **Zweck:** Identifiziert Pflichtfelder innerhalb von Dokumenten, die ausgefüllt oder korrigiert werden müssen, bevor eine weitere Verarbeitung erfolgt.
 * **Anwendungsfall:** Stellt sicher, dass wesentliche Daten genau erfasst werden, um die Datenintegrität und die Einhaltung von Geschäftsregeln zu gewährleisten.
 
+## Extrahierte Tabelle (Positionen)
+
+<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Positionstabelle im Validierungsbildschirm mit der Tabellen-Symbolleiste"><figcaption><p>Die extrahierte Tabelle unterhalb der Kopffelder</p></figcaption></figure>
+
+Unterhalb der Kopffelder zeigt DocBits die Positionstabelle des Dokuments: eine Zeile pro Rechnungsposition, eine Spalte pro [Tabellenspalte](../../../admin-section/settings/global-settings/document-types/table-columns.md), die für den Dokumenttyp konfiguriert ist. Hat ein Dokumenttyp mehrere Tabellen (zum Beispiel Positionen und Zuschläge), hat jede Tabelle einen eigenen Tab über dem Raster.
+
+### Woher die Tabelle stammt
+
+Über dem Raster gibt es einen Tab pro Extraktionspfad, den die Organisation eingeschaltet hat:
+
+| Tab | Bedeutung |
+|---|---|
+| **Extrahierte Tabelle** | Regelbasierte Extraktion (Einstellung *Tabelle Extraktion*). Bei einem Lieferanten mit trainierter Tabelle stammen diese Zeilen aus den gespeicherten Regeln und werden auf jedem Dokument dieses Lieferanten auf dieselbe Weise extrahiert; bei einem nicht trainierten Lieferanten kann der Tab leer sein. |
+| **KI Extrahierte Tabelle** | Die KI-Tabellenextraktion (Einstellung *AI-Tabellen-Extraktion*). Wird gefüllt, wenn der Lieferant keine gespeicherten Regeln hat, sowie für Spalten mit *KI nutzen*, auch wenn Regeln existieren. Ein Tooltip *AI table not found* am Tab bedeutet, dass die KI für dieses Dokument nichts geliefert hat. |
+| **PO-Tabellen** | Nur im Layout-Builder: die Bestellpositionen, die für den Abgleich verwendet werden. |
+
+Erscheint keiner der beiden Tabs, sind beide Tabelleneinstellungen für die Organisation ausgeschaltet (Einstellungen → Dokumentenverarbeitung → Klassifizierung und Extraktion). Welche KI-Stufe die Tabelle liest, wird pro Organisation festgelegt und kann pro Lieferant überschrieben werden, siehe [Lieferantenspezifisches KI-Modell](supplier-specific-ai-model-for-field-and-table-extraction.md).
+
+### Arbeiten in der Tabelle
+
+* **Zelle bearbeiten**: Klicken Sie in die Zelle und tippen Sie. Betrags-, Zahlen- und Datumsspalten werden während der Eingabe validiert.
+* **Neue Tabellenzeile hinzufügen**: hängt eine leere Zeile am Ende an. Verwenden Sie sie, wenn eine Position nicht erkannt wurde.
+* **Zeile löschen**: das Papierkorbsymbol am Ende der Zeile.
+* **Leere gemappte Spalten hinzufügen**: zeigt die konfigurierten Spalten, die die KI leer gelassen hat, damit Sie sie von Hand füllen können.
+* **Tabellenspalte wiederherstellen**: holt eine Spalte zurück, die Sie für dieses Dokument aus der Ansicht entfernt haben.
+* **Tabelle löschen**: leert alle Zeilen dieser Tabelle auf diesem Dokument. Die Konfiguration bleibt unberührt.
+* **Neue Tabellenspalte hinzufügen** (Administratoren): derselbe Dialog wie in den Tabellenspalten-Einstellungen, ohne das Dokument zu verlassen.
+* **Tags** (nur KI-Tabelle): kurze Texthinweise für die KI, zum Beispiel *„die letzte Spalte ist der Nettobetrag“*. Siehe [KI-Tabellen-Tags](../ai-table/ai-table-tags.md).
+* **Anwenden** / **Speichern** / **Löschen** neben den Tags: *Anwenden* führt die KI-Tabelle für dieses Dokument mit Ihren Tags und Spaltenänderungen erneut aus, ohne etwas zu speichern (hat das Dokument mit Bestellungen abgeglichene Positionen, warnt DocBits, dass die Zuordnungen entfernt werden); *Regeln speichern* speichert die aktuelle Spaltenzuordnung und die Tags für diesen Lieferanten; *Regeln löschen* entfernt sie und führt die KI-Extraktion für dieses Dokument erneut aus.
+* **Exportieren**: lädt die Tabelle als CSV-Datei herunter.
+* **Zur Ansicht der Tabellenextraktion wechseln**: öffnet das Tabellentraining für dieses Dokument. Verwenden Sie es, wenn derselbe Lieferant immer wieder falsch herauskommt: Zeichnen Sie die Tabelle einmal ein, ordnen Sie die Spalten zu und klicken Sie auf *Regeln speichern*; ab dann erscheinen die Zeilen im Tab *Extrahierte Tabelle*. Siehe [Schulung Linienfelder/Tabelle Schulung](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+
+{% hint style="info" %}
+Wurde die Tabelle von der KI extrahiert und Sie öffnen das Tabellentraining, fragt DocBits *Table is already extracted by AI. Do you want to train manually?* (Die Tabelle wurde bereits von der KI extrahiert. Möchten Sie manuell trainieren?). Nachdem Sie Regeln gespeichert haben, wird die KI-Tabelle für diesen Lieferanten nicht mehr verwendet.
+{% endhint %}
+
+### Die Tabelle erneut extrahieren
+
+* **Gleiches Dokument, KI-Tabelle:** Fügen Sie Tags hinzu oder ändern Sie sie und klicken Sie auf **Anwenden**; die KI-Tabelle wird nur für dieses Dokument neu aufgebaut. Um auch die gespeicherten Tags und Formatierungen des Lieferanten zu verwerfen, klicken Sie auf **Löschen** (*Regeln löschen*): DocBits bestätigt *Rules has been deleted successfully* (Regeln wurden erfolgreich gelöscht) und führt die KI-Extraktion erneut aus.
+* **Gleiches Dokument, trainierte Regeln:** Öffnen Sie *Zur Ansicht der Tabellenextraktion wechseln*, korrigieren Sie die Tabelle und klicken Sie auf *Speichern und erneut extrahieren*.
+* **Gesamtes Dokument erneut (Kopf und Tabelle):** Dashboard → Dokumentmenü → *Neustart*. Erforderlich, nachdem ein Administrator die Tabellenspalten oder die Extraktionseinstellungen geändert hat.
+
+### Was die Freigabe blockiert
+
+Die Tabelle wird beim Speichern oder Freigeben geprüft. Eine rote Zelle oder eine Meldung unter der Tabelle bedeutet eine der folgenden Ursachen:
+
+| Meldung | Ursache | Was zu tun ist |
+|---|---|---|
+| Erforderliche Spalte leer | Eine Spalte mit *Erforderlich* hat in dieser Zeile keinen Wert. | Füllen Sie die Zelle, oder fragen Sie einen Administrator, ob die Spalte erforderlich sein muss. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `Menge × Einzelpreis + Zuschläge − Rabatt` weicht um mehr als 0,02 von der Positionssumme ab. Oft wurde einer der vier Werte in die falsche Spalte gelesen. | Korrigieren Sie den Wert, der laut Dokument falsch ist; wird eine Spalte wie *Charges* durchgehend mit dem falschen Wert gefüllt, informieren Sie Ihren Administrator (siehe [Fehlerbehebung](../../../admin-section/settings/global-settings/document-types/table-columns.md#fehlerbehebung)). |
+| *Line items add up to … but the net total is …* | Die Summe der Positionssummen weicht vom Nettobetrag im Kopf ab. | Prüfen Sie auf eine fehlende oder doppelte Zeile oder einen falsch gelesenen Kopfbetrag. |
+| *Line Item Table is missing Mandatory column for PO* | Der Bestellabgleich benötigt Artikelnummer, Einzelpreis, Menge und Gesamtbetrag; eine davon ist versteckt. | Administrator: Verstecken der Spalte unter Tabellenspalten aufheben. |
+
+Ein Administrator kann alle Tabellenprüfungen für einen Dokumenttyp mit *Tabellenvalidierung überspringen* (Dokumenttypen → Weitere Einstellungen) abschalten; Positionsabweichungen und leere erforderliche Spalten werden dann nicht mehr gemeldet.
+
+Mehr zu den Prüfungen: [Automatische Überprüfungen im Validierungsbildschirm](automatic-checks-on-the-validation-screen.md) und [Tabellenauszug Fehlerbehebung](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
+
 ### **Lupe:**
 
 <figure><img src="../../../.gitbook/assets/validation_screen7.png" alt="" width="118"><figcaption></figcaption></figure>

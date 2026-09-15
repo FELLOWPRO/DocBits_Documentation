@@ -7,7 +7,7 @@ Um das Modell zu ändern, öffnen Sie das Optionsmenü, indem Sie auf die **drei
 
 * **Full** – Kostet 2 Token
 * **Fast** – Kostet 1 Token
-* **Turbo** – Kostet 1 Token
+* **Nexus** – Kostet 1 Token
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/selecting_a_supplier_specific_ai_model_1.png)
 

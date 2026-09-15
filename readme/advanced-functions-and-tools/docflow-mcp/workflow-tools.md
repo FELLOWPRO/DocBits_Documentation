@@ -1,6 +1,12 @@
 # Workflow-Tools
 
-DocFlow MCP bietet 8 Tools zur Verwaltung und zum Testen erweiterter Workflows.
+DocFlow MCP stellt Tools zur Verwaltung und zum Testen erweiterter Workflows bereit, dazu Tools zum Lesen von Workflow-Protokollen und zur Verwaltung von Workflow-Variablen.
+
+{% hint style="info" %}
+**Tool-Namen über das DocBits-MCP-Gateway.** Wenn Sie sich über das vereinheitlichte DocBits MCP (`api.docbits.com/v3/mcp`) verbinden, trägt jedes DocFlow-Tool das Präfix `docflow_`: `list_workflows` heißt dort `docflow_list_workflows`, `run_workflow_with_assertions` heißt `docflow_run_workflow_with_assertions`. Die Parameter sind identisch. Die Namen unten sind die reinen DocFlow-Namen.
+
+Workflows werden **im DocFlow-Designer** in der Web-App **erstellt und bearbeitet**. Das MCP liest, testet, führt aus und löscht sie; es erstellt oder verändert keine Workflow-Graphen.
+{% endhint %} Die Card SDK Tools haben eine eigene Seite, siehe [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -55,141 +61,6 @@ Details eines bestimmten Workflows einschliesslich seiner Knoten- und Kantenstru
       {"source_node_id": "when-1", "target_node_id": "then-1"}
     ]
   }
-}
-```
-
-## create\_advanced\_workflow
-
-Einen neuen erweiterten Workflow mit Knoten und Kanten erstellen.
-
-**Parameter:**
-
-| Parameter | Typ | Erforderlich | Beschreibung |
-|-----------|------|----------|-------------|
-| `name` | string | Ja | Workflow-Name (3-126 Zeichen) |
-| `description` | string | Nein | Optionale Beschreibung |
-| `nodes` | array | Ja | Array von Workflow-Knoten |
-| `edges` | array | Ja | Array von Kanten, die Knoten verbinden |
-
-### Knotenstruktur
-
-Jeder Knoten erfordert:
-
-| Feld | Typ | Beschreibung |
-|-------|------|-------------|
-| `node_id` | string | Eindeutiger Bezeichner fuer den Knoten |
-| `node_type` | string | `when`, `then`, `and`, `or` oder `delay` |
-| `position` | object | `{x: number, y: number}` Position auf der Arbeitsflaeche |
-| `label` | string | Anzeigebezeichnung |
-| `card` | object | Karten-Konfiguration (siehe unten) |
-
-### Kantenstruktur
-
-Jede Kante erfordert:
-
-| Feld | Typ | Beschreibung |
-|-------|------|-------------|
-| `edge_id` | string | Eindeutiger Bezeichner fuer die Kante |
-| `source_node_id` | string | ID des Quellknotens |
-| `target_node_id` | string | ID des Zielknotens |
-| `source_handle` | string | `success` oder `error` (optional) |
-| `target_handle` | string | `input` (optional) |
-
-### Karten-Konfiguration
-
-Karten definieren, was ein Knoten tut. Verwenden Sie `list_cards` oder `sdk_list_cards_picker`, um verfuegbare Karten abzurufen.
-
-```json
-{
-  "id": "card-uuid-here",
-  "card_type": "document_type_is",
-  "version": 1,
-  "variables": [
-    {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-  ]
-}
-```
-
-{% hint style="info" %}
-Sie muessen nur `id`, `card_type`, `version` und `variables` fuer jede Karte angeben. Der Server ergaenzt Karten automatisch mit Anzeige-Metadaten (svg, text, category) aus der Datenbank.
-{% endhint %}
-
-**Beispielanfrage:**
-
-```json
-{
-  "name": "Simple Invoice Router",
-  "description": "Routes invoices to approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 100, "y": 100},
-      "label": "Document is Invoice",
-      "card": {
-        "id": "card-uuid",
-        "card_type": "document_type_is",
-        "version": 1,
-        "variables": [
-          {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 100, "y": 300},
-      "label": "Send Notification",
-      "card": {
-        "id": "card-uuid-2",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
-}
-```
-
-**Beispielantwort:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
-## update\_advanced\_workflow
-
-Einen bestehenden erweiterten Workflow aktualisieren. Sie koennen eine beliebige Kombination aus Name, Beschreibung, Knoten und Kanten aktualisieren.
-
-**Parameter:**
-
-| Parameter | Typ | Erforderlich | Beschreibung |
-|-----------|------|----------|-------------|
-| `workflow_id` | string | Ja | UUID des zu aktualisierenden Workflows |
-| `name` | string | Nein | Neuer Name |
-| `description` | string | Nein | Neue Beschreibung |
-| `nodes` | array | Nein | Neue Knoten (ersetzt alle bestehenden Knoten) |
-| `edges` | array | Nein | Neue Kanten (ersetzt alle bestehenden Kanten) |
-
-**Beispielantwort:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
 }
 ```
 
@@ -304,3 +175,58 @@ Alle verfuegbaren Workflow-Karten mit ihren Bedingungen und Konfigurationen aufl
 {% hint style="info" %}
 Karten haben Rollen-Flags: `when_condition` (Ausloeser), `and_condition` (zusaetzliche Bedingung) und `then_condition` (Aktion). Verwenden Sie diese, um zu bestimmen, in welchen Knotentypen eine Karte verwendet werden kann.
 {% endhint %}
+
+## list\_workflow\_variables
+
+Alle Workflow-Variablen der Organisation mit Name, Typ und aktuellem Wert auflisten.
+
+**Parameter:** Keine
+
+## set\_workflow\_variable
+
+Eine Workflow-Variable erstellen oder ihren Wert aktualisieren. Variablen vom Typ Dokument haben keinen eigenen Wert; sie werden vom Workflow zur Laufzeit gesetzt.
+
+**Parameter:**
+
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `name` | string | Ja | Name der Variable |
+| `value` | string | Nein | Neuer Wert |
+| `var_type` | string | Nein | Typ der Variable beim Erstellen (zum Beispiel `string`, `number`, `document`) |
+
+## search\_workflow\_logs
+
+Workflow-Ausführungsprotokolle durchsuchen, um herauszufinden, warum Läufe fehlgeschlagen sind, erfolgreich waren oder an einer Bedingung gescheitert sind.
+
+**Parameter:**
+
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | Nein | Auf einen Workflow einschränken |
+| `doc_id` | string | Nein | Auf Läufe für ein Dokument einschränken |
+| `status` | string | Nein | Laufstatus, nach dem gefiltert wird |
+| `keyword` | string | Nein | Freitextfilter auf das Protokoll |
+| `include_workflow_data` | boolean | Nein | Den Snapshot der Workflow-Definition pro Lauf einschließen |
+| `limit` / `offset` | integer | Nein | Seitenweise Ausgabe |
+
+## get\_workflow\_log\_detail
+
+Alle Details eines Laufs: die rohen Ausführungsprotokolle der Karten und die Workflow-Definition, wie sie zur Laufzeit war.
+
+**Parameter:**
+
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `log_id` | string | Ja | ID des Protokolleintrags aus `search_workflow_logs` |
+
+## run\_workflow\_with\_assertions
+
+Workflow-Variablen vorbelegen, einen erweiterten Workflow mit dem echten Executor ausführen und das Ergebnis gegen die Datenbank prüfen. Variablen sind echte Schreibvorgänge, keine Mocks; verwenden Sie das Tool, um einen Workflow aus einem Assistenten heraus zu integrationstesten.
+
+**Parameter:**
+
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | Ja | UUID des auszuführenden Workflows |
+| `doc_id` | string | Nein | Dokument, gegen das der Workflow ausgeführt wird |
+| `seed_variables` | array | Nein | Variablen, die vor dem Lauf erstellt oder aktualisiert werden; Variablen vom Typ Dokument können über `value` auf eine `doc_id` zeigen |

@@ -135,6 +135,8 @@ Click **Execute**. A successful import returns:
 }
 ```
 
+<figure><img src="../../../.gitbook/assets/import-xml-response.png" alt="The curl command and the server response"><figcaption><p>A successful master data import</p></figcaption></figure>
+
 Unlike the BOD imports, these endpoints report problems with a proper error status rather than a `200` carrying `"success": false` — a **400** means the request was rejected and nothing was written.
 
 ### 5. Check that the data arrived

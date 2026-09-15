@@ -20,13 +20,13 @@ DocBits oferuje trzy opcje modelu AI do ekstrakcji pól i tabel. Różnią się 
 
 * **Full** – Najbardziej dokładna opcja, o najwyższej dokładności ekstrakcji. Najlepsza do złożonych układów, skanów niskiej jakości lub dokumentów, w których precyzja jest najważniejsza. Jako najpotężniejsza opcja jest też najwolniejsza, przy **2 tokenach za dokument**.
 * **Fast** – Zrównoważona opcja łącząca wysoką dokładność z szybszym przetwarzaniem przy niższym koszcie. To zalecana opcja domyślna dla większości codziennych dokumentów, przy **1 tokenie za dokument**.
-* **Turbo** – Najszybsza i najbardziej ekonomiczna opcja. Najlepiej nadaje się do dużych ilości prostych, czystych, dobrze ustrukturyzowanych dokumentów, gdzie szybkość i niski koszt są ważniejsze niż maksymalna dokładność, przy **1 tokenie za dokument**.
+* **Nexus** – Opcjonalna trzecia opcja, działająca na innej rodzinie modeli. Przydatna, gdy chcesz uzyskać drugą opinię dla dostawców, u których Fast i Full dają rozbieżne wyniki, albo gdy alternatywny model lepiej odczytuje dany układ, przy **1 tokenie za dokument**.
 
 | Opcja | Najlepsza do | Dokładność | Szybkość | Koszt tokenów |
 |-------|--------------|------------|----------|---------------|
 | **Full** | Złożone układy, słabe skany, wysoka precyzja | Najwyższa | Najwolniejsza | 2 / dokument |
 | **Fast** | Codzienne dokumenty (zalecana domyślna) | Wysoka | Szybka | 1 / dokument |
-| **Turbo** | Duże ilości prostych, czystych dokumentów | Dobra | Najszybsza | 1 / dokument |
+| **Nexus** | Dostawcy, u których alternatywna rodzina modeli działa lepiej (opcjonalnie) | Wysoka | Szybka | 1 / dokument |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

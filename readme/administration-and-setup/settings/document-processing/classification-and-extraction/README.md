@@ -54,35 +54,84 @@ In the **Amount Formatting** section, you have two options:
 
 <mark style="color:red;">**Note**</mark>: Only one of these settings can be active at a time.
 
-## Table Extraction
+## Ekstrakcja tabeli
 
-You can extract tables from documents by enabling either **Table Extraction** or **AI Table Extraction**. A trained table—whether AI-based or manual—will always be linked to a specific supplier.
+{% hint style="info" %}
+**Warunki wstępne działającej ekstrakcji tabeli**
 
-**Table Extraction:** Activates manual **table extraction**. Tables must be trained manually.\
-Learn more about manual training [here](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* Typ dokumentu ma **kolumny tabeli** (Ustawienia → Ustawienia globalne → Typy dokumentów → [Kolumny tabeli](../../global-settings/document-types/table-columns.md)). Bez kolumn nie ma do czego wyodrębniać.
+* Poniżej włączona jest opcja **Ekstrakcja tabeli** lub **Ekstrakcja tabeli AI**, dla całej organizacji.
+* Dokument ma czytelny tekst: wykonano OCR albo dla plików PDF utworzonych cyfrowo używany jest E-Text ([Ustawienia OCR](../ocr-settings.md)).
+* Szkolenie i modele AI działają **dla każdego dostawcy osobno**. Wytrenowana tabela dotyczy tylko dokumentów dostawcy, na którym została wytrenowana.
+{% endhint %}
 
-**AI Table Extraction:** Uses AI to automatically extract tables. If the results are not accurate enough, it's recommended to switch to manual **Table Extraction** for better control and training.
+Tabele z dokumentów można wyodrębniać, włączając opcję **Ekstrakcja tabeli** lub **Ekstrakcja tabeli AI**. Wytrenowana tabela (oparta na AI lub ręczna) jest zawsze powiązana z konkretnym dostawcą.
 
-**Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
-Detailed explanation available [here](table-extraction-for-costing-element.md).
+**Ekstrakcja tabeli (Table Extraction):** Włącza ekstrakcję tabeli opartą na regułach. Tabele trenuje się dla każdego dostawcy na ekranie walidacji (*Go to table extraction view*).\
+Więcej o szkoleniu [tutaj](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
-**Auto Extract Tax Code:** When enabled, the system automatically fills the **Tax Code** field on the Validation Screen—provided that a tax code field is configured.\
-More information on this setting [here](auto-extract-tax-code.md).
+**Ekstrakcja tabeli AI (AI Table Extraction):** Wykorzystuje AI do wyodrębniania tabeli dowolnego dostawcy bez szkolenia. Jeśli wyniki dla jednego dostawcy nie są wystarczająco dokładne, wytrenuj tabelę tego dostawcy; zapisane reguły mają wtedy pierwszeństwo przed AI dla tego dostawcy.
 
-**AI Model:** Allows you to specify which **AI model** is used for table extraction.\
-You’ll also see a table showing:
+**Użyj ekstrakcji tabeli Vision (AI) (Use Table Extraction Vision (AI)):** AI odczytuje obraz strony zamiast warstwy tekstowej. Pomaga przy dokumentach skanowanych i tabelach bez wyraźnej struktury tekstowej; działa wolniej.
 
-* Which **suppliers** are using which AI model
-* Whether they use E-Text
-* Options to delete an entry or reset the training data
+**Użyj ekstrakcji strukturalnej (AI) (Use Structured Extraction (AI)):** AI zwraca tabelę w stałej strukturze, która mapuje się bezpośrednio na skonfigurowane kolumny tabeli. Zalecane, gdy nagłówki kolumn na dokumentach mocno się różnią.
 
-This setting is explained in detail [here](ai-model.md).
+**Ekstrakcja tabeli dla elementu kosztowego (Table Extraction for Costing Element):** Po włączeniu DocBits może wyodrębniać elementy kosztowe z tabel na poziomie pozycji i odpowiednio je klasyfikować.\
+Szczegółowe wyjaśnienie [tutaj](table-extraction-for-costing-element.md).
+
+**Automatyczne wyodrębnianie kodu podatkowego (Auto Extract Tax Code):** Po włączeniu system automatycznie wypełnia pole **Kod podatkowy** na ekranie walidacji, pod warunkiem że pole kodu podatkowego jest skonfigurowane.\
+Więcej informacji o tym ustawieniu [tutaj](auto-extract-tax-code.md).
+
+**Zapisywanie reguł ekstrakcji (tylko administrator) (Save extraction rules (Admin only)):** Tylko administratorzy mogą kliknąć *Save Rules* w szkoleniu tabeli. Włącz tę opcję, gdy użytkownicy zapisują reguły, które psują ekstrakcję dostawcy.
+
+**Model AI (AI Model):** Wybiera poziom AI używany do ekstrakcji tabeli: **Fast** (domyślny), **Full** (najwyższa dokładność, wolniejszy) lub **Nexus** (opcjonalny trzeci poziom). Tabela pod selektorem pokazuje:
+
+* Którzy **dostawcy** używają którego modelu AI
+* Czy używają E-Text
+* Opcje usunięcia wpisu lub zresetowania danych szkoleniowych
+
+To ustawienie jest szczegółowo opisane [tutaj](ai-model.md).
+
+### Dlaczego tabela wygląda inaczej u każdego dostawcy?
+
+Wszystko, czego DocBits uczy się o tabeli, jest zapisywane **dla każdego dostawcy osobno**:
+
+* **Zapisane reguły** (szkolenie tabeli): położenie tabeli i mapowanie jej kolumn w układzie tego dostawcy.
+* **Tagi tabeli AI i reguły formatowania**: wskazówki zapisane przez użytkownika dla tabeli AI tego dostawcy.
+* **Model AI specyficzny dla dostawcy**: poziom wybrany dla tego dostawcy w *Więcej ustawień* na ekranie walidacji.
+
+Dlatego dostawca A z zapisanymi regułami pokazuje deterministyczną tabelę w zakładce *Extracted table* na ekranie walidacji, a dostawca B bez reguł otrzymuje zakładkę *AI Extracted table*. Aby dostawca B zachowywał się jak A, wytrenuj raz tabelę dostawcy B. Aby zresetować dostawcę, usuń jego reguły na ekranie walidacji albo zresetuj jego dane szkoleniowe w tabeli Model AI.
+
+### Klucze preferencji
+
+Każdy przełącznik w tej sekcji jest zapisywany jako preferencja organizacji. Użyj klucza, gdy ustawiasz wartość przez API (`/preferences/set_preference`), skrypt lub DocBits MCP (`get_preference` / `set_preference`).
+
+| Ustawienie (etykieta w interfejsie) | Klucz preferencji | Wartości |
+|---|---|---|
+| Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| AI Model | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Wersja ekstrakcji tabeli (okno potwierdzenia) | `TBL_EXT_VERSION` | ciąg wersji |
+| Ustawienia OCR → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| Ustawienia OCR → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
+
+Uwagi:
+
+* Preferencje logiczne są zapisywane jako ciągi `true` / `false`; klucz, który nigdy nie został ustawiony, liczy się jako `false`. Jeśli wyślesz `1` lub `0`, DocBits zapisze `true` / `false`.
+* Nieustawiony `AI_MODEL` oznacza **Fast**.
+* Zmiana klucza obowiązuje dla dokumentów przetwarzanych później. Uruchom dokument ponownie, aby wyodrębnić go ponownie z nowym ustawieniem.
+* Wybory dla poszczególnych dostawców (E-Text, model AI, zapisane reguły) nie są preferencjami organizacji; ustawia się je na ekranie walidacji w *Więcej ustawień* dla dokumentu tego dostawcy.
 
 ## Electronic Document
 
 **Process Unsupported ZUGFeRD PDF:** If enabled, unsupported **ZUGFeRD** versions will be processed as standard PDFs, and the embedded XML will be ignored.
 
-The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd-1.0-2.1-and-2.3.md).
+The list of supported **ZUGFeRD** versions can be found [here](../../global-settings/document-types/edi/zugferd/README.md).
 
 ## **Classification Rules**
 

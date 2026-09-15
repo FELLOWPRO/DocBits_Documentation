@@ -1,6 +1,12 @@
 # Narzedzia przepływow pracy
 
-DocFlow MCP udostepnia 8 narzedzi do zarzadzania i testowania zaawansowanych przepływow pracy.
+DocFlow MCP udostępnia narzędzia do zarządzania zaawansowanymi przepływami pracy i ich testowania, a także narzędzia do odczytu logów przepływów pracy i zarządzania zmiennymi przepływów pracy.
+
+{% hint style="info" %}
+**Nazwy narzędzi przez bramę DocBits MCP.** Gdy łączysz się przez ujednolicony DocBits MCP (`api.docbits.com/v3/mcp`), każde narzędzie DocFlow ma przedrostek `docflow_`: `list_workflows` nazywa się `docflow_list_workflows`, a `run_workflow_with_assertions` to `docflow_run_workflow_with_assertions`. Parametry są identyczne. Poniższe nazwy to podstawowe nazwy DocFlow.
+
+Przepływy pracy są **tworzone i edytowane w projektancie DocFlow** w aplikacji webowej. MCP je odczytuje, testuje, uruchamia i usuwa; nie tworzy ani nie modyfikuje grafów przepływów pracy.
+{% endhint %} Narzędzia SDK kart mają własną stronę, patrz [Narzędzia SDK Kart](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -55,141 +61,6 @@ Pobiera szczegoly konkretnego przepływu pracy, w tym jego strukture wezlow i kr
       {"source_node_id": "when-1", "target_node_id": "then-1"}
     ]
   }
-}
-```
-
-## create\_advanced\_workflow
-
-Tworzy nowy zaawansowany przepływ pracy z wezlami i krawedziami.
-
-**Parametry:**
-
-| Parametr | Typ | Wymagany | Opis |
-|----------|-----|----------|------|
-| `name` | string | Tak | Nazwa przepływu pracy (3-126 znakow) |
-| `description` | string | Nie | Opcjonalny opis |
-| `nodes` | array | Tak | Tablica wezlow przepływu pracy |
-| `edges` | array | Tak | Tablica krawedzi laczacych wezly |
-
-### Struktura wezla
-
-Kazdy wezel wymaga:
-
-| Pole | Typ | Opis |
-|------|-----|------|
-| `node_id` | string | Unikalny identyfikator wezla |
-| `node_type` | string | `when`, `then`, `and`, `or` lub `delay` |
-| `position` | object | Pozycja `{x: number, y: number}` na plotnie |
-| `label` | string | Etykieta wyswietlana |
-| `card` | object | Konfiguracja karty (patrz ponizej) |
-
-### Struktura krawedzi
-
-Kazda krawedz wymaga:
-
-| Pole | Typ | Opis |
-|------|-----|------|
-| `edge_id` | string | Unikalny identyfikator krawedzi |
-| `source_node_id` | string | ID wezla zrodlowego |
-| `target_node_id` | string | ID wezla docelowego |
-| `source_handle` | string | `success` lub `error` (opcjonalnie) |
-| `target_handle` | string | `input` (opcjonalnie) |
-
-### Konfiguracja karty
-
-Karty definiuja, co robi wezel. Uzyj `list_cards` lub `sdk_list_cards_picker`, aby pobrac dostepne karty.
-
-```json
-{
-  "id": "card-uuid-here",
-  "card_type": "document_type_is",
-  "version": 1,
-  "variables": [
-    {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-  ]
-}
-```
-
-{% hint style="info" %}
-Wystarczy podac `id`, `card_type`, `version` i `variables` dla kazdej karty. Serwer automatycznie wzbogaca karty o metadane wyswietlania (svg, text, category) z bazy danych.
-{% endhint %}
-
-**Przykladowe zadanie:**
-
-```json
-{
-  "name": "Simple Invoice Router",
-  "description": "Routes invoices to approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 100, "y": 100},
-      "label": "Document is Invoice",
-      "card": {
-        "id": "card-uuid",
-        "card_type": "document_type_is",
-        "version": 1,
-        "variables": [
-          {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 100, "y": 300},
-      "label": "Send Notification",
-      "card": {
-        "id": "card-uuid-2",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
-}
-```
-
-**Przykladowa odpowiedz:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "new-uuid-here",
-  "name": "Simple Invoice Router"
-}
-```
-
-## update\_advanced\_workflow
-
-Aktualizuje istniejacy zaawansowany przepływ pracy. Mozna aktualizowac dowolna kombinacje nazwy, opisu, wezlow i krawedzi.
-
-**Parametry:**
-
-| Parametr | Typ | Wymagany | Opis |
-|----------|-----|----------|------|
-| `workflow_id` | string | Tak | UUID przepływu pracy do aktualizacji |
-| `name` | string | Nie | Nowa nazwa |
-| `description` | string | Nie | Nowy opis |
-| `nodes` | array | Nie | Nowe wezly (zastepuje wszystkie istniejace wezly) |
-| `edges` | array | Nie | Nowe krawedzie (zastepuje wszystkie istniejace krawedzie) |
-
-**Przykladowa odpowiedz:**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
 }
 ```
 
@@ -304,3 +175,58 @@ Wyswietla wszystkie dostepne karty przepływow pracy z ich warunkami i konfigura
 {% hint style="info" %}
 Karty posiadaja flagi rol: `when_condition` (wyzwalacz), `and_condition` (dodatkowy warunek) i `then_condition` (akcja). Uzyj ich, aby okreslic, w jakich typach wezlow mozna uzyc danej karty.
 {% endhint %}
+
+## list\_workflow\_variables
+
+Wyświetla wszystkie zmienne przepływów pracy organizacji wraz z nazwą, typem i bieżącą wartością.
+
+**Parametry:** Brak
+
+## set\_workflow\_variable
+
+Tworzy zmienną przepływu pracy lub aktualizuje jej wartość. Zmienne typu dokument nie mają własnej wartości; ustawia je przepływ pracy w czasie wykonania.
+
+**Parametry:**
+
+| Parametr | Typ | Wymagany | Opis |
+|----------|-----|----------|------|
+| `name` | string | Tak | Nazwa zmiennej |
+| `value` | string | Nie | Nowa wartość |
+| `var_type` | string | Nie | Typ zmiennej przy tworzeniu (na przykład `string`, `number`, `document`) |
+
+## search\_workflow\_logs
+
+Przeszukuje logi wykonania przepływów pracy, aby ustalić, dlaczego uruchomienia zakończyły się niepowodzeniem, powodzeniem lub niezgodnością warunku.
+
+**Parametry:**
+
+| Parametr | Typ | Wymagany | Opis |
+|----------|-----|----------|------|
+| `workflow_id` | string | Nie | Ogranicza do jednego przepływu pracy |
+| `doc_id` | string | Nie | Ogranicza do uruchomień dla jednego dokumentu |
+| `status` | string | Nie | Status uruchomienia, według którego filtrować |
+| `keyword` | string | Nie | Filtr pełnotekstowy logu |
+| `include_workflow_data` | boolean | Nie | Dołącza migawkę definicji przepływu pracy dla każdego uruchomienia |
+| `limit` / `offset` | integer | Nie | Stronicowanie |
+
+## get\_workflow\_log\_detail
+
+Pełne szczegóły jednego uruchomienia: surowe logi wykonania kart oraz definicja przepływu pracy w postaci z czasu uruchomienia.
+
+**Parametry:**
+
+| Parametr | Typ | Wymagany | Opis |
+|----------|-----|----------|------|
+| `log_id` | string | Tak | ID wpisu logu z `search_workflow_logs` |
+
+## run\_workflow\_with\_assertions
+
+Ustawia zmienne przepływu pracy, uruchamia zaawansowany przepływ pracy prawdziwym wykonawcą i sprawdza wynik względem bazy danych. Zmienne są prawdziwymi zapisami, nie atrapami; używaj tego narzędzia do testów integracyjnych przepływu pracy z poziomu asystenta.
+
+**Parametry:**
+
+| Parametr | Typ | Wymagany | Opis |
+|----------|-----|----------|------|
+| `workflow_id` | string | Tak | UUID przepływu pracy do uruchomienia |
+| `doc_id` | string | Nie | Dokument, na którym ma zostać uruchomiony przepływ pracy |
+| `seed_variables` | array | Nie | Zmienne do utworzenia lub zaktualizowania przed uruchomieniem; zmienne typu dokument mogą wskazywać `doc_id` przez `value` |

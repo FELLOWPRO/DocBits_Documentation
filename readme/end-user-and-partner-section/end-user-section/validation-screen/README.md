@@ -54,6 +54,63 @@ Użyj podpowiedzi, aby dowiedzieć się, czy:
 * **Cel:** Identyfikuje obowiązkowe pola w dokumentach, które muszą być wypełnione lub poprawione przed dalszym przetwarzaniem.
 * **Przypadek użycia:** Zapewnia, że niezbędne dane są dokładnie uchwycone, utrzymując integralność danych i zgodność z zasadami biznesowymi.
 
+## Wyodrębniona tabela (pozycje)
+
+<figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Tabela pozycji na ekranie walidacji z paskiem narzędzi tabeli"><figcaption><p>Wyodrębniona tabela pod polami nagłówka</p></figcaption></figure>
+
+Pod polami nagłówka DocBits wyświetla tabelę pozycji dokumentu: jeden wiersz na pozycję faktury, jedna kolumna na każdą [kolumnę tabeli](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md) skonfigurowaną dla typu dokumentu. Jeśli typ dokumentu ma kilka tabel (na przykład pozycje i opłaty), każda tabela ma własną zakładkę nad siatką.
+
+### Skąd pochodzi tabela
+
+Nad siatką znajduje się jedna zakładka dla każdej ścieżki ekstrakcji włączonej w organizacji:
+
+| Zakładka | Znaczenie |
+|---|---|
+| **Extracted table** (Wyodrębniona tabela) | Ekstrakcja oparta na regułach (ustawienie *Table Extraction*). U dostawcy z wytrenowaną tabelą wiersze pochodzą z zapisanych reguł i są wyodrębniane tak samo na każdym dokumencie tego dostawcy; u niewytrenowanego dostawcy zakładka może być pusta. |
+| **AI Extracted table** (Tabela wyodrębniona przez AI) | Ekstrakcja tabeli AI (ustawienie *AI Table Extraction*). Wypełniana, gdy dostawca nie ma zapisanych reguł, oraz dla kolumn oznaczonych *Use AI* nawet wtedy, gdy reguły istnieją. Podpowiedź *AI table not found* na zakładce oznacza, że AI nie zwróciło niczego dla tego dokumentu. |
+| **PO Tables** (Tabele PO) | Tylko w kreatorze układu: pozycje zamówienia zakupu użyte do dopasowania. |
+
+Jeśli nie widać żadnej z zakładek, oba ustawienia tabeli są wyłączone dla organizacji (Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja). Poziom AI odczytujący tabelę jest ustawiany dla organizacji i można go nadpisać dla dostawcy, patrz [Model AI specyficzny dla dostawcy](supplier-specific-ai-model-for-field-and-table-extraction.md).
+
+### Praca w tabeli
+
+* **Edycja komórki**: kliknij komórkę i wpisz wartość. Kolumny kwot, liczb i dat są sprawdzane podczas wpisywania.
+* **Add new table row** (Dodaj nowy wiersz tabeli): dodaje pusty wiersz na końcu. Użyj, gdy pozycja nie została rozpoznana.
+* **Usuwanie wiersza**: ikona kosza na końcu wiersza.
+* **Add empty mapped columns** (Dodaj puste zmapowane kolumny): pokazuje skonfigurowane kolumny, które AI pozostawiło puste, aby można je było wypełnić ręcznie.
+* **Restore Table Column** (Przywróć kolumnę tabeli): przywraca kolumnę usuniętą z widoku dla tego dokumentu.
+* **Delete table** (Usuń tabelę): czyści wszystkie wiersze tej tabeli na tym dokumencie. Konfiguracja pozostaje nietknięta.
+* **Add new table column** (Dodaj nową kolumnę tabeli, administratorzy): to samo okno dialogowe co w ustawieniach kolumn tabeli, bez opuszczania dokumentu.
+* **Tags** (Tagi, tylko tabela AI): krótkie wskazówki tekstowe dla AI, na przykład *"ostatnia kolumna to kwota netto"*. Patrz [Tagowanie tabeli AI](../ai-table/ai-table-tags.md).
+* **Apply** / **Save** / **Delete** obok tagów: *Apply* ponownie uruchamia tabelę AI dla tego dokumentu z wprowadzonymi tagami i zmianami kolumn, bez zapisywania czegokolwiek (jeśli dokument ma pozycje dopasowane do PO, DocBits ostrzega, że dopasowania zostaną usunięte); *Save Rules* zapisuje bieżące mapowanie kolumn i tagi dla tego dostawcy; *Delete Rules* usuwa je i ponownie uruchamia ekstrakcję AI dla tego dokumentu.
+* **Export** (Eksport): pobiera tabelę jako plik CSV.
+* **Go to table extraction view** (Przejdź do widoku ekstrakcji tabeli): otwiera szkolenie tabeli dla tego dokumentu. Użyj, gdy ten sam dostawca wciąż wychodzi źle: zaznacz tabelę raz, zmapuj kolumny i kliknij *Save Rules*; od tej pory wiersze pojawiają się w zakładce *Extracted table*. Patrz [Szkolenie pól linii / Szkolenie tabeli](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+
+{% hint style="info" %}
+Jeśli tabela została wyodrębniona przez AI i otworzysz szkolenie tabeli, DocBits zapyta *Table is already extracted by AI. Do you want to train manually?* Po zapisaniu reguł tabela AI nie jest już używana dla tego dostawcy.
+{% endhint %}
+
+### Ponowna ekstrakcja tabeli
+
+* **Ten sam dokument, tabela AI:** dodaj lub zmień tagi i kliknij **Apply**; tabela AI jest odbudowywana tylko dla tego dokumentu. Aby usunąć także zapisane tagi i formatowanie dostawcy, kliknij **Delete** (*Delete Rules*): DocBits potwierdza *Rules has been deleted successfully* i ponownie uruchamia ekstrakcję AI.
+* **Ten sam dokument, wytrenowane reguły:** otwórz *Go to table extraction view*, popraw tabelę i kliknij *Save & re-extract*.
+* **Cały dokument ponownie (nagłówek i tabela):** Pulpit → menu dokumentu → *Restart* (Uruchom ponownie). Potrzebne po zmianie kolumn tabeli lub ustawień ekstrakcji przez administratora.
+
+### Co blokuje zatwierdzenie
+
+Tabela jest sprawdzana przy zapisie lub zatwierdzaniu. Czerwona komórka lub komunikat pod tabelą oznacza jedną z poniższych sytuacji:
+
+| Komunikat | Przyczyna | Co zrobić |
+|---|---|---|
+| Pusta wymagana kolumna | Kolumna oznaczona *Is Required* nie ma wartości w tym wierszu. | Wypełnij komórkę albo zapytaj administratora, czy kolumna musi być wymagana. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `ilość × cena jednostkowa + opłaty − rabat` różni się od sumy pozycji o więcej niż 0,02. Często jedna z czterech wartości została odczytana do niewłaściwej kolumny. | Popraw wartość, która nie zgadza się z dokumentem; jeśli kolumna taka jak *Charges* jest konsekwentnie wypełniana niewłaściwą wartością, zgłoś to administratorowi (patrz [Rozwiązywanie problemów](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md#troubleshooting)). |
+| *Line items add up to … but the net total is …* | Suma pozycji różni się od kwoty netto w nagłówku. | Sprawdź, czy nie brakuje wiersza, czy wiersz nie jest zdublowany albo czy kwota w nagłówku nie została źle odczytana. |
+| *Line Item Table is missing Mandatory column for PO* | Dopasowanie PO wymaga numeru pozycji, ceny jednostkowej, ilości i kwoty całkowitej; jedna z tych kolumn jest ukryta. | Administrator: odkryj kolumnę w Kolumnach tabeli. |
+
+Administrator może wyłączyć wszystkie kontrole tabeli dla typu dokumentu opcją *Pomiń walidację tabeli* (Typy dokumentów → Więcej ustawień); niezgodności pozycji i puste wymagane kolumny nie są wtedy zgłaszane.
+
+Więcej o kontrolach: [Automatyczne kontrole na ekranie walidacji](automatic-checks-on-the-validation-screen.md) oraz [Rozwiązywanie problemów z ekstrakcją tabeli](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
+
 ### **Szkło powiększające:**
 
 <figure><img src="../../../.gitbook/assets/validation_screen7.png" alt=""><figcaption></figcaption></figure>

@@ -89,51 +89,14 @@ Karta jest teraz aktywna i dostepna do uzycia w przepływach pracy.
 
 ### Krok 5: Zbudowanie przepływu pracy z karta
 
-Najpierw pobierz dostepne karty za pomoca `list_cards` lub `sdk_list_cards_picker`, aby znalezc identyfikatory kart.
+Otwórz **projektanta DocFlow** w aplikacji webowej, utwórz zaawansowany przepływ pracy i dodaj zatwierdzoną kartę jako węzeł, na przykład wyzwalacz *Document Received*, kartę *High Value Check* i węzeł *Approval* dla gałęzi `true`. Grafy przepływów pracy tworzy się i edytuje w projektancie; MCP ich nie tworzy.
 
-Nastepnie wywolaj `create_advanced_workflow`:
+Po powrocie do asystenta potwierdź, że przepływ pracy istnieje, i odczytaj jego strukturę:
 
 ```json
 {
-  "name": "High Value Invoice Routing",
-  "description": "Routes high-value invoices for special approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 250, "y": 50},
-      "label": "High Value Invoice",
-      "card": {
-        "id": "returned-card-uuid",
-        "card_type": "high-value-check",
-        "version": 1,
-        "variables": [
-          {"id": "threshold-var-id", "data": "5000", "data_type": "number"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 250, "y": 250},
-      "label": "Notify Finance Team",
-      "card": {
-        "id": "email-card-uuid",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
+  "tool": "get_workflow",
+  "workflow_id": "<id z list_workflows>"
 }
 ```
 

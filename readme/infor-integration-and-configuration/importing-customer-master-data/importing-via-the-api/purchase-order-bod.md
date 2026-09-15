@@ -1,5 +1,7 @@
 ---
 description: How to import a Purchase Order BOD into DocBits manually using the API
+hidden: true
+noIndex: true
 ---
 
 # Import Purchase Orders (Purchase Order BOD)

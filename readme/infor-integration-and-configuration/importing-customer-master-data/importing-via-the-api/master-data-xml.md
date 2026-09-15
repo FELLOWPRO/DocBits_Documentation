@@ -101,8 +101,19 @@ Only **malformed** XPaths are rejected, with a `400` naming the field. An XPath 
 **One request imports one record.** Each XPath is read once, so if your XML contains several elements only the first match of each is used. To load a list, send one request per record, or use a CSV import instead.
 {% endhint %}
 
-{% hint style="warning" %}
-Two dataset names are reserved by DocBits and cannot be written to this way: `purchase_order_header` and `purchase_order_address`. Using either returns `RESERVED_DATASET_NAME` — pick a different `data_type`.
+#### Choosing a data type
+
+`data_type` is the key of the dataset you are writing into. It is lower-cased and trimmed, so `Items` and `items` are the same dataset. Any name that is not already taken creates a dataset of your own — `items_example`, `cost_centres`, `price_list` — and importing into it again updates it.
+
+{% hint style="danger" %}
+Some names are not free: they are DocBits' own master data tables, and importing into one writes straight into it.
+
+| Name | |
+| --- | --- |
+| `purchase_order_header`, `purchase_order_address` | Rejected with `RESERVED_DATASET_NAME`. |
+| `supplier`, `supplier_accounts`, `purchase_order`, `receive_delivery`, `receive_delivery_lines`, `costing_element`, `customer_erp_items`, `supplier_item_price`, `supplier_item_number_mapping` | **Accepted, and they overwrite real master data.** Use these only if that is genuinely what you intend. |
+
+For anything else, pick a name of your own.
 {% endhint %}
 
 {% hint style="warning" %}

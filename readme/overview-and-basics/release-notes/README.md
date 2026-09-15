@@ -1,6 +1,6 @@
 # Notes de version
 
-> **Dernière version de correctif urgent :** [Correctifs 15 septembre 2026](incremental-updates-15-september-2026.md) (R1.0.13) : un seul jeu de règles pour la recherche du tableau de bord, fournisseurs reconnus dès qu’un champ de recherche unique correspond, correspondance des bons de commande qui s’explique d’elle-même, documents bloqués et fausses erreurs d’export corrigés, Touchless Intelligence, données de base volumineuses sans blocage. Précédent : [Correctifs 8 septembre 2026](incremental-updates-8-september-2026.md). Toutes les pages de correctifs urgents sont listées dans la navigation sous Notes de version.
+> **Dernière version de correctif urgent :** [Correctifs 15 septembre 2026](incremental-updates-15-september-2026.md) (R1.0.13) : un seul jeu de règles pour la recherche du tableau de bord, fournisseurs reconnus dès qu’un champ de recherche unique correspond, correspondance des bons de commande qui s’explique d’elle-même, documents bloqués et fausses erreurs d’export corrigés, Touchless Intelligence, connexion plus rapide et données de base volumineuses sans blocage. Précédent : [Correctifs 8 septembre 2026](incremental-updates-8-september-2026.md). Toutes les pages de correctifs urgents sont listées dans la navigation sous Notes de version.
 
 ## **Release R1.0 23/24 mai 2026**
 

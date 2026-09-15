@@ -1,6 +1,6 @@
 # Notas de versão
 
-> **Última versão de hotfix:** [Hotfixes 8 de setembro de 2026](incremental-updates-8-september-2026.md): correspondência de pedido de compra — a correspondência permanece após salvar, a correspondência é executada novamente ao salvar, a tela informa por que não há correspondência, preço unitário do PO a partir do valor líquido. Anterior: [Hotfixes 12–25 de agosto de 2026](incremental-updates-12-25-august-2026.md). Todas as páginas de hotfix estão listadas na navegação em Notas de Versão.
+> **Última versão de hotfix:** [Hotfixes 15 de setembro de 2026](incremental-updates-15-september-2026.md) (R1.0.13): um único conjunto de regras para a pesquisa do dashboard, fornecedores reconhecidos quando um único campo de pesquisa é único, correspondência de ordens de compra que se explica a si própria, documentos presos e falsos erros de exportação corrigidos, Touchless Intelligence, dados mestre grandes sem congelamentos. Anterior: [Hotfixes 8 de setembro de 2026](incremental-updates-8-september-2026.md). Todas as páginas de hotfix estão listadas na navegação em Notas de Versão.
 
 ## **Release R1.0 23/24 de maio de 2026**
 

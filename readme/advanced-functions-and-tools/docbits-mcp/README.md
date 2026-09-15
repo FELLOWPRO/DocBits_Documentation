@@ -160,3 +160,4 @@ Why documents need human involvement and what to change so that fewer do. Every 
 
 {% hint style="info" %}
 **One MCP for everything.** The eDoc tools and the **Workflows & Cards (DocFlow)** tools run on the **same** `api.docbits.com/v3/mcp` endpoint with the same DocBits login. DocFlow tools appear there with the prefix `docflow_` (for example `docflow_list_workflows`); the DocFlow page documents them under their bare names. Connecting to the DocFlow host directly is still possible but no longer necessary.
+{% endhint %}

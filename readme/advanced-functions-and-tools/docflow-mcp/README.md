@@ -22,8 +22,6 @@ DocFlow MCP fournit **18 outils** répartis en quatre catégories :
 |-------|-------------|
 | `list_workflows` | Lister tous les workflows de l'organisation actuelle |
 | `get_workflow` | Obtenir les détails d'un workflow spécifique par ID |
-| `create_advanced_workflow` | Créer un nouveau workflow avancé avec des nœuds et des arêtes |
-| `update_advanced_workflow` | Mettre à jour un workflow avancé existant |
 | `delete_workflow` | Supprimer un workflow par ID |
 
 ### Test des workflows

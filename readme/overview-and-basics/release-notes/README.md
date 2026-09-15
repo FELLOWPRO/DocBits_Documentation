@@ -1,6 +1,6 @@
 # Release Notes
 
-> **Latest hotfix release:** [Hotfixes 8 September 2026](incremental-updates-8-september-2026.md): purchase order matching — the match survives saving, matching runs again on save, the screen says why there is no match, PO unit price from the net amount. Previous: [Hotfixes 12–25 August 2026](incremental-updates-12-25-august-2026.md). All hotfix pages are listed in the navigation under Release Notes.
+> **Latest hotfix release:** [Hotfixes 15 September 2026](incremental-updates-15-september-2026.md): one set of rules for the dashboard search, suppliers recognised when a single lookup field is unique, purchase order matching that explains itself, stuck documents and false export errors fixed, Touchless Intelligence, faster login and large master data. Previous: [Hotfixes 8 September 2026](incremental-updates-8-september-2026.md). All hotfix pages are listed in the navigation under Release Notes.
 
 ## **Release R1.0 13/14 June 2026**
 

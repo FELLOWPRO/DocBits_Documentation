@@ -1,27 +1,66 @@
 ---
-description: Anweisungen zum Anzeigen, Kopieren oder Neugenerieren des API-Schlüssels
+description: >-
+  Wie Sie die API Keys finden und erstellen, mit denen andere Systeme Zugriff auf
+  DocBits erhalten
 ---
 
-# API-Schlüsselverwaltung
+# API Key Management
 
-Die API-Schlüsselverwaltung ist ein wichtiger Aspekt, wenn es um die Sicherheit von Integrationen und den Zugriff auf externe Dienste über APIs geht. Hier sind einige Schritte zur Verwaltung von API-Schlüsseln und Best Practices für deren Sicherheit:
+Ein API Key erlaubt es einem anderen System — Ihrem ERP, einem Skript oder einer Partneranwendung — mit DocBits zu sprechen, ohne dass sich ein Benutzer anmeldet. Ihre Organisation kann so viele Keys halten, wie Sie benötigen, und jeder wird für sich verwaltet: Geben Sie ihm einen eigenen Namen, entscheiden Sie, ob er abläuft, und widerrufen Sie ihn einzeln, falls er jemals offengelegt wird.
 
-**API-Schlüssel anzeigen und kopieren:**
+Weil jede Integration ihren eigenen Key haben kann, können Sie einen abschalten, ohne einen der anderen zu stören.
 
-* Navigieren Sie zu den API-Schlüsseleinstellungen in Ihrem DocBits-Konto. Hier finden Sie den API-Schlüssel, klicken Sie auf "Kopieren", um den Schlüssel zu kopieren.
+## Die API-Key-Verwaltung öffnen
 
-<figure><img src="../../../../.gitbook/assets/docbits_api_key_settings.png" alt="Docbits Api Key Settings"><figcaption></figcaption></figure>
+Gehen Sie zu **Settings** und wählen Sie **Integration & SSO** unter **System & Administration**.
 
-**Umgang mit API-Schlüsseln unter Berücksichtigung der Sicherheit:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-settings-overview.png)
 
-* Behandeln Sie API-Schlüssel wie sensible Anmeldeinformationen und teilen Sie sie niemals mit jemandem. Speichern Sie API-Schlüssel sicher und verwenden Sie Verschlüsselung, wenn Sie sie lokal speichern müssen. Aktualisieren Sie API-Schlüssel regelmäßig, um die Sicherheit zu gewährleisten und das Risiko eines unbefugten Zugriffs zu minimieren. Vermeiden Sie die Verwendung von API-Schlüsseln in öffentlichen Repositories oder ungesicherten Umgebungen, da sie möglicherweise von Angreifern abgefangen werden könnten.
+Der Abschnitt **API Key** oben auf der Seite listet jeden Key auf, den Ihre Organisation besitzt.
 
-**API-Schlüsselberechtigungen einschränken:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list.png)
 
-* Geben Sie API-Schlüsseln nur die Berechtigungen, die für die spezifische Integration oder den Dienst erforderlich sind. Vermeiden Sie übermäßige Berechtigungen, um das Risiko von Missbrauch zu minimieren. Überprüfen Sie regelmäßig die API-Schlüsselberechtigungen und entfernen Sie unnötige Berechtigungen, wenn sie nicht mehr benötigt werden.
+## Die Liste verstehen
 
-**Protokollierung und Überwachung von API-Aufrufen:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
 
-* Implementieren Sie Protokollierung und Überwachung von API-Aufrufen, um verdächtige Aktivitäten oder ungewöhnliche Muster zu erkennen, die auf mögliche Sicherheitsverletzungen hinweisen könnten. Reagieren Sie schnell auf verdächtige Aktivitäten und widerrufen Sie bei Bedarf betroffene API-Schlüssel, um das Risiko weiterer Schäden zu minimieren.
+| Spalte | Was sie Ihnen sagt |
+| --- | --- |
+| **Key** | Die ersten Zeichen des Keys, gefolgt von `****`. Der Rest wird nach dem Erstellen nie wieder angezeigt — siehe [Einen API Key erstellen](#einen-api-key-erstellen). |
+| **Name** | Der Name, den Sie dem Key gegeben haben, mit seiner Beschreibung darunter. |
+| **Expires** | Das Datum, an dem der Key aufhört zu funktionieren, oder **Never**, wenn Sie keines gesetzt haben. |
+| **Last Used** | Wann zuletzt eine Anfrage mit diesem Key eingegangen ist. **Never used** bedeutet, dass ihn noch kein System verwendet hat — nützlich, um Keys zu erkennen, die Sie gefahrlos entfernen können. |
+| **Status** | **Active** bedeutet, dass der Key funktioniert. Ein widerrufener Key ist dauerhaft abgeschaltet. |
+| **Actions** | Das Drei-Punkte-Menü, über das Sie den Key widerrufen können. |
 
-Durch sorgfältige Verwaltung und Sicherung von API-Schlüsseln können Organisationen sicherstellen, dass ihre Integrationen und der Zugriff auf externe Dienste über APIs geschützt sind und das Risiko eines unbefugten Zugriffs minimiert wird.
+Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blätterelemente unten in der Liste.
+
+{% hint style="info" %}
+**Last Used** ist der schnellste Weg, Keys zu finden, die niemand mehr braucht. Ein Key, der nie verwendet wurde oder seit Monaten nicht mehr, ist ein guter Kandidat zum Widerrufen.
+{% endhint %}
+
+## Einen API Key erstellen
+
+1. Klicken Sie oben rechts im Abschnitt API Keys auf **+ Create API Key**.
+2. Füllen Sie den Dialog aus:
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-create-dialog.png)
+
+| Feld | Was Sie eintragen |
+| --- | --- |
+| **Key Name** | Erforderlich. Benennen Sie ihn nach dem System, das ihn verwenden wird — `M3 Production`, `Invoice Import Script` — damit Sie später erkennen, zu welcher Integration ein Key gehört. |
+| **Description** | Optional. Platz für eine Notiz, wofür der Key da ist oder wer ihn eingerichtet hat. |
+| **Expiration** | Wählen Sie ein Ablaufdatum oder belassen Sie es auf **Never expires**. Ein Ablaufdatum ist die sicherere Wahl: Der Key verabschiedet sich von selbst, falls die Integration einmal vergessen wird. |
+
+3. Klicken Sie auf **Create**. DocBits zeigt Ihnen den neuen Key:
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-created.png)
+
+4. Kopieren Sie den Key über das Kopiersymbol und fügen Sie ihn direkt in das System ein, das ihn verwenden wird, oder in Ihren Passwortmanager.
+5. Haken Sie **I have copied and saved this key** an und klicken Sie auf **Done**.
+
+{% hint style="danger" %}
+**Der vollständige Key wird nur ein einziges Mal angezeigt.** DocBits speichert ihn in einer verschlüsselten Form, die sich nicht in das Original zurückverwandeln lässt — niemand kann ihn danach noch nachschlagen, weder Ihre Administratoren noch der DocBits-Support. Wenn Sie ihn verlieren, widerrufen Sie den Key und erstellen einen neuen.
+{% endhint %}
+
+Behandeln Sie den Key wie ein Passwort. Wer ihn hat, kann mit den Dokumenten und Daten Ihrer Organisation arbeiten.

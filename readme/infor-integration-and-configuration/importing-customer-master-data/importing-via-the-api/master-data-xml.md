@@ -52,6 +52,8 @@ Use the region your organization is hosted in — the same region you use to log
 
 ### 2. Authorize
 
+<figure><img src="../../../.gitbook/assets/import-xml-lock.png" alt="The endpoint with the lock icon highlighted"><figcaption><p>Click the lock to open the authorization dialog</p></figcaption></figure>
+
 Authorizing works exactly as for the BOD imports: click the **lock icon**, paste your **Org ID** into **X-ORG-ID**, paste your API key into **X-API-KEY**, and click **Authorize** on each.
 
 <figure><img src="../../../.gitbook/assets/import-authorize-orgid.png" alt="The X-ORG-ID authorization with an empty value field"><figcaption><p>X-ORG-ID — paste the Org ID, then Authorize</p></figcaption></figure>

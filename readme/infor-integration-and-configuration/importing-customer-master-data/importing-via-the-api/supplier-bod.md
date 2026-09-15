@@ -62,7 +62,7 @@ Everything under **import** is locked until you authorize. There are two things 
 
 * Click the **lock icon** on the right of the endpoint.
 
-<figure><img src="../../../.gitbook/assets/import-swagger-lock.png" alt="The import endpoints with the lock icon highlighted"><figcaption><p>Click the lock to open the authorization dialog</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import-supplier-lock.png" alt="The endpoint with the lock icon highlighted"><figcaption><p>Click the lock to open the authorization dialog</p></figcaption></figure>
 
 * The **Available authorizations** dialog opens with two entries.
 * Paste your **Org ID** into **X-ORG-ID** and click **Authorize**.

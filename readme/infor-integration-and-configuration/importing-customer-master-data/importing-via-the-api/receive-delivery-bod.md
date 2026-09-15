@@ -60,7 +60,7 @@ Everything under **import** is locked until you authorize. There are two things 
 
 * Click the **lock icon** on the right of the endpoint.
 
-<figure><img src="../../../.gitbook/assets/import-swagger-lock.png" alt="The import endpoints with the lock icon highlighted"><figcaption><p>Click the lock to open the authorization dialog</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import-rd-lock.png" alt="The endpoint with the lock icon highlighted"><figcaption><p>Click the lock to open the authorization dialog</p></figcaption></figure>
 
 * The **Available authorizations** dialog opens with two entries.
 * Paste your **Org ID** into **X-ORG-ID** and click **Authorize**.
@@ -82,8 +82,6 @@ Paste the key on its own — do not type `Bearer` in front of it. Both authoriza
 {% endhint %}
 
 ### 3. Fill in the fields
-
-<figure><img src="../../../.gitbook/assets/import-tryitout.png" alt="The Try it out button on the endpoint"><figcaption><p>Try it out unlocks the form</p></figcaption></figure>
 
 Click **Try it out**, then fill in the form for the endpoint you chose.
 

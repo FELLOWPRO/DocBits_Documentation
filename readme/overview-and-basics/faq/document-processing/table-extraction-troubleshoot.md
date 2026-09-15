@@ -44,3 +44,31 @@ Se il documento non dispone di e-text disponibile:
    * **Fare attenzione, poiché questo cambiamento può influenzare i risultati di estrazione di altri fornitori.**
    * Questo cambiamento può influenzare altri fornitori, quindi assicurarsi di verificare attentamente i risultati per garantire che non influiscano negativamente sulle estrazioni dei documenti di altri fornitori.
 5. Se il risultato non è migliorato dopo aver cambiato la versione dell'AI OCR, si prega di **contattarci** per ulteriore assistenza.
+
+## Messaggi sulla tabella
+
+L'estrazione può sembrare corretta e il documento rifiutare comunque l'approvazione. Questi sono i messaggi che DocBits mostra sulla tabella delle voci di riga o sotto di essa, cosa li provoca e come risolverli.
+
+| Messaggio | Causa | Soluzione |
+|---|---|---|
+| **Colonna obbligatoria vuota** (cella evidenziata in rosso, nome della colonna nel tooltip) | Una colonna contrassegnata *Obbligatoria* nelle impostazioni delle colonne della tabella non ha valore in questa riga. | Compila la cella. Se il valore non esiste mai per questo tipo di documento, un amministratore toglie la spunta a *Obbligatoria* in Impostazioni → Tipi di Documento → Colonne della Tabella e tu riavvii il documento. |
+| **Line total does not match quantity x unit price (expected …, got …)** | DocBits controlla ogni riga: `TOTAL_AMOUNT = QUANTITY × UNIT_PRICE + CHARGES`, meno `DISCOUNT`, oppure × (100 − `DISCOUNT_PERCENT`) / 100, oppure meno `DISCOUNT_PER_UNIT × QUANTITY`, a seconda della colonna di sconto compilata. Una differenza superiore a 0,02 genera il messaggio. Il controllo viene eseguito solo quando quantità, prezzo unitario e totale sono tutti compilati. | Confronta i quattro valori con il documento. Di solito uno di essi è stato letto nella colonna sbagliata: il caso più frequente è un valore di oneri o sconto nella cella sbagliata. Correggi la cella; il messaggio scompare al salvataggio. |
+| **Line total does not match quantity x unit price minus discount / minus percentage discount / minus per-unit discount** | Stesso controllo, con la colonna di sconto compilata. | Come sopra; controlla prima la cella dello sconto. |
+| **Line items add up to … but the net total is …** (avviso) | La somma di tutte le celle `TOTAL_AMOUNT` differisce dall'importo netto nell'intestazione. | Cerca una riga mancante, una riga duplicata o un importo netto dell'intestazione letto male. Un avviso non blocca l'approvazione. |
+| **Total does not add up: expected …, got …** (intestazione) | Netto + imposta (+ spedizione nei layout USA) differisce dal totale dell'intestazione. | Controllo dell'intestazione, non un problema della tabella: correggi gli importi dell'intestazione. |
+| **Line Item Table is missing Mandatory column for PO like (Item Number, Unit Price, Quantity and Total amount)** | Il PO matching richiede queste quattro colonne predefinite e una di esse è nascosta o sostituita da una colonna personalizzata. | Amministratore: rendi di nuovo visibile la colonna predefinita in Colonne della Tabella, oppure mappa il valore su di essa nell'addestramento della tabella. |
+| **Table is already extracted by AI. Do you want to train manually?** | Hai aperto l'addestramento della tabella per un fornitore la cui tabella proviene dall'AI. | Conferma per addestrare; le regole salvate sostituiscono quindi la tabella AI per questo fornitore. Annulla per mantenere la tabella AI. |
+| **AI Table will display here. Enable in …** | L'estrazione AI delle tabelle è disattivata per l'organizzazione. | Amministratore: Impostazioni → Elaborazione del documento → Classificazione ed estrazione → *Estrazione AI delle tabelle*. |
+| **No line items yet** | Non è stato estratto nulla: nessuna regola per questo fornitore e l'AI non ha trovato alcuna tabella, oppure il documento non ha testo leggibile. | Segui i Passaggi 1–4 qui sopra (vista OCR, E-Text). Poi addestra la tabella una volta, oppure aggiungi le righe manualmente con *Aggiungi nuova riga della tabella*. |
+
+### L'AI continua a compilare una colonna con il valore sbagliato
+
+Esempio riscontrato nella pratica: l'AI scrive il totale della riga in `CHARGES`. Ogni riga fallisce quindi il controllo del totale riga, perché gli oneri vengono sommati a quantità × prezzo unitario.
+
+1. Se il fornitore ha regole salvate, togli la spunta a *Usa AI* su quella colonna (Impostazioni → Tipi di Documento → Colonne della Tabella) in modo che siano le regole a compilarla.
+2. Se il fornitore non ha regole, addestra la tabella una volta in modo che la colonna sia legata alla sua posizione sulla pagina, oppure nascondi la colonna se il fornitore non stampa mai quel valore.
+3. Aggiungi un [tag della tabella AI](../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md) come *"la colonna degli oneri è vuota per questo fornitore"*; i tag vengono salvati per fornitore.
+
+### Disattivare i controlli sulla tabella
+
+Impostazioni → Tipi di Documento → *il tuo tipo* → Altre impostazioni → **Salta la validazione della tabella** contrassegna come valida la tabella di ogni documento di quel tipo: le discrepanze del totale riga e le colonne obbligatorie vuote non vengono più segnalate. I controlli dell'intestazione (totale = netto + imposta) restano attivi. Usala solo per i tipi di documento le cui tabelle sono puramente informative e non vengono esportate nell'ERP.

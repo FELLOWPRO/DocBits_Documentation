@@ -20,13 +20,13 @@ DocBits offre tre opzioni di modello AI per l'estrazione di campi e tabelle. Si 
 
 * **Full** – L'opzione più accurata, con la massima precisione di estrazione. Ideale per layout complessi, scansioni di bassa qualità o documenti in cui la precisione è la priorità. Essendo l'opzione più potente, è anche la più lenta, a **2 token per documento**.
 * **Fast** – Un'opzione bilanciata che unisce una buona precisione a un'elaborazione più rapida e a un costo inferiore. È l'opzione predefinita consigliata per la maggior parte dei documenti di tutti i giorni, a **1 token per documento**.
-* **Turbo** – L'opzione più veloce ed economica. Più adatta a grandi volumi di documenti semplici, puliti e ben strutturati, dove velocità e basso costo contano più della massima precisione, a **1 token per documento**.
+* **Nexus** – Una terza opzione, attivabile su richiesta, che si basa su una famiglia di modelli diversa. Utile quando vuoi una seconda opinione per i fornitori su cui Fast e Full non concordano, oppure quando il modello alternativo legge meglio un particolare layout, a **1 token per documento**.
 
 | Opzione | Ideale per | Precisione | Velocità | Costo in token |
 |---------|-----------|------------|----------|----------------|
 | **Full** | Layout complessi, scansioni scadenti, alta precisione | Massima | La più lenta | 2 / documento |
 | **Fast** | Documenti di tutti i giorni (predefinito consigliato) | Alta | Veloce | 1 / documento |
-| **Turbo** | Grandi volumi di documenti semplici e puliti | Buona | La più veloce | 1 / documento |
+| **Nexus** | Fornitori per cui la famiglia di modelli alternativa funziona meglio (attivabile su richiesta) | Alta | Veloce | 1 / documento |
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ai_model_2.png)
 

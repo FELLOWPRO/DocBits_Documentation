@@ -1,27 +1,46 @@
-# Table Columns
+# Colonne della Tabella
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_overview.png" alt="Docbits Table Columns Overview"><figcaption></figcaption></figure>
+Le colonne della tabella definiscono quali colonne ha la tabella delle voci di riga di un tipo di documento: cosa DocBits estrae in ogni colonna, cosa vede l'utente nella schermata di validazione e cosa viene inviato all'ERP in fase di esportazione.
 
-#### Overview
+**Dove:** Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella
 
-The Table Columns interface in Docbits is used to specify the columns that appear in data tables for each document type. Each column can be configured to hold specific types of data, such as strings or numerical values, and can be essential for sorting, filtering, and reporting functions within Docbits.
+<figure><img src="../../../../../.gitbook/assets/table-columns_list.png" alt="Elenco Colonne della Tabella con i flag Obbligatoria, Sola lettura, Nascosta e Usa AI per ogni colonna"><figcaption><p>Colonne della Tabella: una riga per colonna, i flag si attivano direttamente nell'elenco</p></figcaption></figure>
 
-#### Key Features and Options
+## Cosa vedi
 
-1. **Column Configuration**:
-   * **Column Name**: The identifier for the column in the database.
-   * **Title**: The human-readable title for the column that will appear in the interface.
-   * **Column Type**: Defines the data type of the column (e.g., STRING, AMOUNT), which determines what kind of data can be stored in the column.
-   * **Table Name**: Indicates which table the column belongs to, linking it to a specific document type like INVOICE\_TABLE.
-2. **Actions**:
-   * **Edit**: Modify the settings of an existing column.
-   * **Delete**: Remove the column from the table, which is useful if the data is no longer required or if the document type's data structure changes.
-3. **Adding New Columns and Tables**:
-   * **Add New Table Column**: Opens a dialog where you can define a new column, including its name, whether it is required, its data type, and the table it belongs to.
-   * **Create New Table**: Allows the creation of a new table, defining a unique name that will be used to store data related to a specific set of document types.
+Ogni riga è una colonna di una tabella. L'elenco mostra:
 
-<figure><img src="../../../../../.gitbook/assets/docbits_create_new_table.png" alt="Docbits Create New Table"><figcaption></figcaption></figure>
+| Colonna | Significato |
+|---|---|
+| **Nome colonna** | Nome tecnico, generato dal titolo (maiuscole, trattini bassi). Viene usato negli script, nelle mappature di esportazione e nell'API. Non può essere modificato in seguito. |
+| **Titolo** | Etichetta mostrata nella schermata di validazione. Si modifica con l'icona di traduzione nella colonna *Azioni* (*Aggiorna chiave di traduzione*). |
+| **Tipo di colonna** | `AMOUNT`, `STRING`, `DATE`, `NUMBER`, `BOOLEAN` o `CURRENCY`. Determina la validazione e la formattazione. |
+| **Nome tabella** | La tabella a cui appartiene la colonna, ad esempio `INVOICE_TABLE`. |
+| **Obbligatoria** | Il documento non può essere approvato finché questa colonna è vuota in una qualsiasi riga. |
+| **Sola lettura** | Gli utenti vedono il valore ma non possono modificarlo. |
+| **Nascosta** | La colonna non viene né mostrata né esportata. Serve per disattivare le colonne predefinite che non ti servono. |
+| **Usa AI** | L'estrazione AI della tabella compila questa colonna, anche quando il fornitore ha regole addestrate. |
+| **Azioni** | Icona di traduzione: rinomina il titolo. Icona info: da dove proviene l'etichetta mostrata (la tua traduzione, il valore predefinito, la chiave). Menu a tre punti: *Elimina*, solo per le colonne create dalla tua organizzazione; le colonne predefinite possono solo essere nascoste. |
 
-<figure><img src="../../../../../.gitbook/assets/docbits_table_columns_integrity.png" alt="Docbits Table Columns Integrity"><figcaption></figcaption></figure>
+Sopra l'elenco ci sono due pulsanti:
 
-This section is vital for maintaining the structural integrity and usability of data within the Docbits system, ensuring that the data extracted from documents is stored in a well-organized and accessible manner.
+* **Crea nuova tabella**: una seconda tabella di voci di riga per il tipo di documento (ad esempio una tabella degli oneri accanto alla tabella degli articoli).
+* **Aggiungi nuova colonna della tabella**: apre la finestra di dialogo descritta in [Aggiungere una nuova colonna](adding-a-new-column.md).
+
+## Colonne predefinite e colonne personalizzate
+
+Ogni tipo di documento viene fornito con un set di colonne predefinite (per le fatture: numero articolo, descrizione, quantità, prezzo unitario, importo totale, imposta, …). Appartengono a DocBits, non alla tua organizzazione, quindi non possono essere eliminate: nascondile invece. Le colonne che aggiungi tu appartengono alla tua organizzazione e possono essere eliminate.
+
+{% hint style="info" %}
+**Le modifiche valgono solo per i nuovi documenti.** Una colonna che aggiungi, nascondi o elimini compare sui documenti caricati o riavviati dopo la modifica. I documenti già presenti nella dashboard mantengono la tabella così come è stata estratta. Riavvia un documento per applicare la nuova configurazione.
+{% endhint %}
+
+## Pagine correlate
+
+* [Scopo e utilizzo](purpose-and-use.md): dove compaiono le colonne della tabella
+* [Aggiungere una nuova colonna](adding-a-new-column.md)
+* [Modifica ed eliminazione delle colonne](editing-and-deleting-columns.md)
+* [Buone pratiche](best-practices-2.md)
+* [Risoluzione dei problemi](troubleshooting-1.md)
+* [Campi di addestramento Linee/Tabella di addestramento](../../../../setup/document-training/training-line-fields-table-training/README.md): insegna a DocBits dove si trova la tabella di un fornitore
+* [Tabella AI](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): cosa vede l'utente nella schermata di validazione

@@ -1,44 +1,33 @@
 # Buone pratiche
 
-## Le buone pratiche per organizzare i dati nelle tabelle aiutano a mantenere chiara la struttura del database, a migliorare l'integrità dei dati e a ottimizzare le prestazioni.
+## Mantieni le colonne predefinite per importi e quantità
 
-**Ecco alcune buone pratiche:**
+I controlli sulle voci di riga (*quantità × prezzo unitario = totale riga*) e il PO matching cercano le colonne predefinite `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. Se invece crei colonne personalizzate per questi valori, i controlli non vengono eseguiti e il PO matching segnala colonne obbligatorie mancanti. Rinomina il *titolo* se la dicitura non ti convince; mantieni la colonna.
 
+## Nascondi, non eliminare
 
+Le colonne predefinite che non ti servono vanno nascoste, non eliminate; in ogni caso non possono essere eliminate. Anche per le colonne personalizzate, nascondere è la scelta più sicura finché non sei certo che nessuno script o mappatura di esportazione faccia ancora riferimento alla colonna.
 
-**Usa nomi di colonna significativi:**
+## Contrassegna come obbligatorio solo ciò che blocca l'esportazione
 
-* Scegli nomi di colonna chiari e descrittivi per migliorare la leggibilità e la comprensibilità della struttura del tuo database. Evita nomi abbreviati o criptici.
-* Assegna alle colonne nomi che riflettano accuratamente il contenuto o il significato dei dati in esse memorizzati. Questo facilita le interrogazioni e la reportistica successive.
+Ogni colonna obbligatoria deve essere compilata in ogni riga prima che un utente possa approvare il documento. Usa il flag per i valori che l'ERP rifiuta se mancano (ad esempio il centro di costo in un'esportazione contabile), non per valori semplicemente utili.
 
+## Usa *Sola lettura* per i valori provenienti da una ricerca
 
+I valori che uno script o una ricerca nei dati master scrive nella tabella (descrizione articolo dall'anagrafica articoli, codice imposta dal fornitore) dovrebbero essere in sola lettura, così gli utenti correggono l'origine invece della copia.
 
-**Scegli tipi di dati appropriati:**
+## Usa l'AI per colonna, non per fornitore
 
-* Usa il tipo di dato più piccolo possibile che soddisfi adeguatamente le esigenze dei tuoi dati, per risparmiare spazio di archiviazione e migliorare le prestazioni.
-* Considera il tipo di dato memorizzato e scegli il tipo di dato di conseguenza. Ad esempio: usa INTEGER per i numeri interi, VARCHAR per le stringhe e DATE per le date.
+Per un fornitore con regole addestrate, la maggior parte delle colonne viene estratta correttamente dalle regole. Se una colonna è inaffidabile (descrizioni lunghe che vanno a capo, uno sconto che a volte si trova in una posizione diversa), imposta *Usa AI* solo su quella colonna. Le regole continuano a gestire il resto.
 
+## Dai alle colonne nomi pensati per l'ERP, non per il documento
 
+Il *Nome colonna* finisce nelle mappature di esportazione e negli script. `COST_CENTRE` è più facile da mappare di `KST` e non cambia quando un fornitore lo stampa in modo diverso.
 
-**Comprendere le colonne obbligatorie:**
+## Fai una prova su un documento riavviato
 
-* Contrassegna le colonne come obbligatorie (NOT NULL) se sono essenziali per il corretto funzionamento della tua applicazione e i valori NULL non sono accettabili.
-* Quando decidi se contrassegnare una colonna come obbligatoria, assicurati che l'applicazione possa gestire logicamente i valori NULL e che questi non causino errori imprevisti.
+Dopo una modifica, riavvia un documento esistente del tipo di documento e aprilo: la nuova colonna compare, quella nascosta è sparita, le celle obbligatorie sono evidenziate. Solo a quel punto rendi la modifica disponibile agli utenti.
 
+## Una tabella per ogni struttura di voci di riga
 
-
-**Usare le chiavi esterne per le relazioni:**
-
-* Se il tuo database ha relazioni tra tabelle, usa le chiavi esterne per definirle. Questo migliora l'integrità dei dati e consente di applicare i vincoli di integrità referenziale.
-* Ricordati di valutare l'indicizzazione delle chiavi esterne per ottimizzare le prestazioni delle interrogazioni che accedono a tali relazioni.
-
-
-
-**Esamina e aggiorna regolarmente:**
-
-* Esamina regolarmente la struttura del database per assicurarti che soddisfi le esigenze in evoluzione della tua applicazione. Apporta gli aggiornamenti necessari per migliorare l'efficienza e le prestazioni del database.&#x20;
-* Ricordati di tenere conto del feedback di utenti e sviluppatori per individuare e implementare le aree di miglioramento.
-
-
-
-Applicando queste buone pratiche, puoi creare una struttura di database ben organizzata ed efficiente che soddisfi le esigenze della tua applicazione e fornisca una base affidabile per l'archiviazione, l'interrogazione e la reportistica dei tuoi dati.
+Crea una seconda tabella solo quando un tipo di documento ha davvero due tabelle indipendenti (ad esempio le righe articolo e una tabella separata degli oneri). Le tabelle vuote in più compaiono su ogni documento di quel tipo.

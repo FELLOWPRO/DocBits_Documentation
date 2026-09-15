@@ -1,63 +1,42 @@
 # Aggiungere una nuova colonna
 
-## L'aggiunta di una nuova colonna a una tabella esistente richiede una pianificazione e un'esecuzione attente per garantire il mantenimento dell'integrità dei dati e il rispetto dei requisiti dell'applicazione.
+Aggiungi una colonna quando per ogni voce di riga deve essere acquisito un valore che le colonne predefinite non coprono: un centro di costo, un numero di progetto, un codice articolo interno.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Impostazioni: Tipi di documento</p></figcaption></figure>
+## Prima di iniziare
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.49.21.png" alt=""><figcaption><p>Colonne della tabella</p></figcaption></figure>
+* Decidi a quale **tabella** appartiene la colonna. La maggior parte dei tipi di documento ha una sola tabella (ad esempio `INVOICE_TABLE`). Se l'elenco è vuoto, fai prima clic su **Crea nuova tabella**; la finestra di dialogo chiede solo il nome della tabella.
+* Decidi il **tipo**: `AMOUNT` per gli importi, `NUMBER` per le quantità, `DATE`, `BOOLEAN` per sì/no, `CURRENCY` per un codice valuta ISO, `STRING` per tutto il resto. Il tipo non può essere modificato dopo il salvataggio.
+* Verifica se esiste già una **colonna predefinita** con lo stesso significato ma nascosta. Le colonne nascoste compaiono nell'elenco con il flag *Nascosta* attivo: rendila di nuovo visibile invece di creare un duplicato.
 
-**Ecco i passaggi dettagliati per aggiungere una nuova colonna:**
+## Passaggi
 
-<figure><img src="../../../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+1. Apri **Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella**.
+2. Fai clic su **Aggiungi nuova colonna della tabella**.
 
-**Analisi dei requisiti:**
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Finestra di dialogo Aggiungi nuova colonna della tabella con Titolo, La colonna è obbligatoria, Seleziona tipo di colonna e Seleziona tabella"><figcaption><p>Aggiungi nuova colonna della tabella</p></figcaption></figure>
 
-* Esamina i requisiti della tua applicazione e individua lo scopo della nuova colonna. Che tipo di dati verrà memorizzato? Come verrà utilizzata questa colonna nell'applicazione?
+3. Compila la finestra di dialogo:
 
-<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="375"><figcaption><p>Aggiungi nuova colonna della tabella</p></figcaption></figure>
+| Campo | Cosa inserire |
+|---|---|
+| **Titolo** | L'etichetta che l'utente vede nella schermata di validazione, ad esempio `Cost Centre`. Solo lettere e numeri. DocBits ne ricava il *Nome colonna* tecnico (`COST_CENTRE`). |
+| **La colonna è obbligatoria?** | Spunta la casella quando il documento non deve essere approvato finché la colonna è vuota in una qualsiasi riga. |
+| **Seleziona tipo di colonna** | Vedi l'elenco dei tipi qui sopra. |
+| **Seleziona tabella** | La tabella che riceve la colonna. |
 
-**Scelta del tipo di colonna corretto:**
+4. Fai clic su **Procedi**. La colonna compare nell'elenco con *Sola lettura*, *Nascosta* e *Usa AI* disattivati. Se necessario, attiva questi flag nell'elenco, vedi [Modifica ed eliminazione delle colonne](editing-and-deleting-columns.md).
 
-* Scegli il tipo di colonna più appropriato in base ai dati che verranno memorizzati nella colonna. Può essere AMOUNT per gli importi, STRING per le stringhe, DATE per le date, ecc.
-* La scelta del tipo di colonna corretto è importante per garantire l'integrità dei dati e utilizzare lo spazio di archiviazione in modo efficiente.
+## Dopo l'aggiunta
 
-<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="375"><figcaption></figcaption></figure>
+* La colonna è **vuota sui documenti esistenti**. Viene compilata sui documenti caricati o riavviati dopo la modifica.
+* Per i fornitori con **regole addestrate**, apri uno dei loro documenti nell'addestramento della tabella e mappa la nuova colonna, altrimenti la colonna resta vuota per quel fornitore. Vedi [Definizione Tabelle e Colonne](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* Con l'**estrazione AI della tabella**, l'AI compila la colonna se il valore è riconoscibile sul documento. Contrassegna la colonna come *Usa AI* se il fornitore ha regole addestrate ma questa colonna deve comunque provenire dall'AI.
+* Aggiungi la colonna alla **mappatura di esportazione** se l'ERP deve riceverla, vedi [Esportazione](../../../document-processing/export.md).
 
-**Scelta della tabella corretta:**
+## Messaggi
 
-* Per selezionare il tipo di colonna corretto in una determinata tabella, come la tabella delle fatture, è importante considerare i requisiti specifici dei dati da memorizzare in quella tabella.
-
-<figure><img src="../../../../../.gitbook/assets/image (98).png" alt="" width="375"><figcaption></figcaption></figure>
-
-
-
-**Decidere se la colonna è necessaria:**
-
-* Valuta se la nuova colonna è obbligatoria o se deve consentire valori NULL. Se la colonna è obbligatoria, deve essere contrassegnata come NOT NULL per garantire che non manchino dati importanti.
-* Considera inoltre se in futuro la colonna potrebbe diventare un campo obbligatorio per la tua applicazione.
-
-
-
-**Backup del database:**
-
-* Prima di aggiungere la nuova colonna, esegui un backup del database per assicurarti di avere una versione funzionante a cui tornare in caso di problemi.&#x20;
-
-
-
-**Esecuzione dell'istruzione SQL:**
-
-*   Usa l'istruzione SQL ALTER TABLE per aggiungere la nuova colonna. La sintassi esatta dipende dalla piattaforma di database che stai utilizzando, ma in generale l'istruzione SQL ha questo aspetto:&#x20;
-
-    <figure><img src="../../../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
-
-    Sostituisci table\_name con il nome della tua tabella, new\_column\_name con il nome della nuova colonna e data\_type con il tipo di colonna selezionato. La parola chiave \[NOT NULL] indica se la colonna è obbligatoria.
-
-
-
-**Test e convalida:**
-
-* Dopo aver aggiunto la nuova colonna, verifica a fondo che la tua applicazione funzioni correttamente. Esegui dei test per assicurarti che i dati vengano memorizzati e recuperati correttamente e che la nuova colonna funzioni come previsto.
-
-
-
-Seguendo attentamente questi passaggi, puoi aggiungere con successo ed efficacia una nuova colonna alla tabella del tuo database, scegliendo il tipo di colonna corretto e assicurandoti che la colonna sia obbligatoria quando necessario.
+| Messaggio | Significato |
+|---|---|
+| *Column name already exists* | Nella tabella esiste già una colonna con questo nome tecnico. Scegli un titolo diverso. |
+| *Column name already exists – Please activate it in Table Column settings* | Una colonna predefinita nascosta ha questo nome. Disattiva il suo flag *Nascosta* invece di crearne una nuova. |
+| *No table exists. Please create table before creating columns.* | Il tipo di documento non ha ancora una tabella: fai prima clic su **Crea nuova tabella**. |

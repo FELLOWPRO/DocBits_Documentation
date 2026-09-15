@@ -1,73 +1,46 @@
 # Modifica ed eliminazione delle colonne
 
-La modifica e l'eliminazione delle colonne in una tabella di database sono operazioni importanti che devono essere eseguite con attenzione per garantire l'integrità dei dati e tenere conto dei potenziali impatti sulla logica applicativa e sulla reportistica.
+Tutto, tranne il titolo, si modifica direttamente nell'elenco; non esiste una finestra di modifica.
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+**Dove:** Impostazioni → Impostazioni Globali → Tipi di Documento → Colonne della Tabella
 
-**Ecco i passaggi dettagliati per entrambe le azioni:**
+## Attivare o disattivare un flag
 
-## Modificare una colonna:
+Spunta o togli la spunta alla casella nella riga. La modifica viene salvata immediatamente (*Successfully saved*).
 
-<figure><img src="../../../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+| Flag | Attivo | Disattivo |
+|---|---|---|
+| **Obbligatoria** | L'approvazione è bloccata finché la colonna è vuota in una qualsiasi riga; la schermata di validazione evidenzia la cella. | Le celle vuote sono ammesse. |
+| **Sola lettura** | Il valore viene mostrato ma non può essere sovrascritto. Usalo per i valori che provengono da una ricerca o da uno script. | Gli utenti possono modificare la cella. |
+| **Nascosta** | La colonna scompare dalla schermata di validazione e dall'esportazione. I suoi dati vengono conservati. | La colonna viene mostrata ed esportata. |
+| **Usa AI** | L'estrazione AI della tabella compila questa colonna, anche per i fornitori che hanno regole addestrate. | La colonna viene compilata dalle regole addestrate, oppure dall'AI quando non esistono regole. |
 
-**Cambiare il titolo:**
+{% hint style="info" %}
+I flag hanno effetto sui documenti caricati o riavviati **dopo** la modifica. I documenti aperti mantengono la tabella attuale finché non vengono riavviati.
+{% endhint %}
 
-* Fai clic sul titolo della colonna che vuoi modificare: si aprirà una finestra in cui potrai cambiare il titolo della colonna.
+## Rinominare il titolo
 
-**Analisi dei requisiti:**
+Fai clic sull'icona di traduzione nella colonna *Azioni* (*Aggiorna chiave di traduzione*), inserisci la nuova etichetta e conferma. L'icona info accanto mostra quale etichetta è attualmente in uso e da dove proviene. Cambia solo l'etichetta; il *Nome colonna* tecnico resta lo stesso, quindi script, mappature di esportazione e regole addestrate continuano a funzionare.
 
-* Individua il motivo della modifica della colonna. Potrebbe essere necessario cambiare il tipo di dato, aggiungere o rimuovere vincoli oppure cambiare il nome della colonna.
+## Modificare il tipo o la tabella
 
-**Valutazione dell'impatto:**
+Non è possibile. Nascondi la colonna (o eliminala se è una colonna personalizzata) e aggiungine una nuova con il tipo corretto.
 
-* Prima di apportare qualsiasi modifica, valuta come influirà sui dati esistenti e sulla logica applicativa. Ad esempio, le modifiche al tipo di dato possono causare la conversione o la perdita dei dati.
+## Eliminare una colonna
 
-**Backup del database:**
+L'azione di eliminazione è disponibile solo per le colonne create dalla tua organizzazione. Le colonne predefinite non possono essere eliminate: nascondile.
 
-* Esegui un backup del database per assicurarti di avere una versione funzionante a cui tornare in caso di problemi.
+1. Apri il menu a tre punti nella colonna *Azioni* e scegli **Elimina**. La voce non compare per le colonne predefinite.
+2. Conferma.
 
-**Esecuzione dell'istruzione SQL:**
+Cosa succede:
 
-* Usa l'istruzione SQL ALTER TABLE per apportare le modifiche desiderate alla colonna. La sintassi esatta dipende dalla piattaforma di database che stai utilizzando e dalle modifiche che intendi apportare.
+* La colonna viene rimossa dalla configurazione. I documenti elaborati **da questo momento in poi** non la hanno più.
+* I documenti già estratti mantengono la colonna e i suoi valori finché non vengono riavviati.
+* Le regole addestrate che mappavano questa colonna continuano a funzionare per le altre colonne; la mappatura della colonna eliminata viene ignorata.
+* Se la colonna è referenziata in una mappatura di esportazione o in uno script, rimuovi il riferimento; altrimenti l'esportazione o lo script fallisce con un errore di colonna mancante.
 
-**Migrazione dei dati:**
+## Annullare un'eliminazione
 
-* Se cambi il tipo di dato di una colonna, potrebbe essere necessario eseguire una migrazione dei dati per convertire i dati esistenti nel nuovo formato.
-
-**Test e convalida:**
-
-* Dopo aver modificato la colonna, verifica a fondo che la tua applicazione funzioni correttamente e che i dati vengano memorizzati e recuperati correttamente.
-
-## Eliminare una colonna:
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 13.39.00.png" alt=""><figcaption></figcaption></figure>
-
-**Analisi dei requisiti:**
-
-* Assicurati di comprendere i motivi dell'eliminazione della colonna. La colonna non è più rilevante oppure esistono altri modi per consolidarla?
-
-**Valutazione dell'impatto:**
-
-* Analizza come l'eliminazione della colonna influirà sui dati esistenti, sulla logica applicativa e sulla reportistica. Questo potrebbe comportare la perdita di dati o influenzare le interrogazioni e i report.
-
-**Backup del database:**
-
-* Esegui un backup completo del database per assicurarti di poter ripristinare i dati in caso di problemi imprevisti.
-
-**Esecuzione dell'istruzione SQL:**
-
-* Usa l'istruzione SQL ALTER TABLE per rimuovere la colonna. La sintassi esatta varia in base alla piattaforma di database.
-
-**Migrazione dei dati (se necessaria):**
-
-* Se nella colonna che stai eliminando sono presenti dati importanti, potrebbe essere necessario eseguire una migrazione dei dati per spostarli in un'altra posizione o eliminarli.
-
-**Adeguamento della logica applicativa:**
-
-* Assicurati che la logica della tua applicazione venga adeguata di conseguenza per garantire che non acceda più alla colonna eliminata.
-
-**Test e convalida:**
-
-* Verifica a fondo che la tua applicazione funzioni correttamente e che tutte le funzioni relative ai dati e alla reportistica funzionino come previsto.
-
-Quando si modificano o si eliminano colonne, è fondamentale comprendere appieno l'impatto di queste azioni e adottare le precauzioni appropriate per mantenere l'integrità del database e garantire che la tua applicazione funzioni senza problemi.
+Una colonna eliminata non può essere ripristinata dall'elenco. Aggiungila di nuovo con lo stesso titolo: il nome tecnico deriva dal titolo, quindi una colonna creata con lo stesso titolo riceve lo stesso *Nome colonna* e le mappature esistenti tornano a corrispondere.

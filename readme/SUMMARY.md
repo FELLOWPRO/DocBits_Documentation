@@ -694,6 +694,8 @@
 
 * [Importing Master Data](infor-integration-and-configuration/importing-customer-master-data/README.md)
   * [Field Mappings](infor-integration-and-configuration/importing-customer-master-data/field-mappings.md)
+  * [Importing via the API](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/README.md)
+    * [Import Purchase Orders (Purchase Order BOD)](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/purchase-order-bod.md)
   * [LN](infor-integration-and-configuration/importing-customer-master-data/ln/README.md)
     * [Auto Accounting](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
     * [Suppliers and Purchase Orders](infor-integration-and-configuration/importing-customer-master-data/ln/suppliers-and-purchase-orders/README.md)

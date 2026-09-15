@@ -1,27 +1,66 @@
 ---
-description: Instructies voor het bekijken, kopiëren of opnieuw genereren van de API-sleutel
+description: >-
+  Hoe u de API keys vindt en aanmaakt waarmee andere systemen toegang tot DocBits
+  krijgen
 ---
 
-# API-sleutelbeheer
+# API Key Management
 
-API-sleutelbeheer is een belangrijk aspect als het gaat om de beveiliging van integraties en toegang tot externe diensten via API's. Hier zijn enkele stappen om API-sleutels te beheren en best practices voor hun beveiliging:
+Met een API key kan een ander systeem — uw ERP, een script of een partnerapplicatie — met DocBits praten zonder dat een gebruiker inlogt. Uw organisatie kan zoveel sleutels aanhouden als u nodig hebt, en elke sleutel wordt apart beheerd: geef die een eigen naam, bepaal of die verloopt, en trek die afzonderlijk in als die ooit wordt blootgesteld.
 
-**API-sleutel bekijken and kopiëren:**
+Doordat elke integratie een eigen sleutel kan hebben, kunt u er één uitschakelen zonder de andere te storen.
 
-* Navigeer naar de API-sleutelinstellingen in uw DocBits-account. Hier vindt u de API-sleutel, klik op "Kopiëren" om de sleutel te kopiëren.
+## Het beheer van API keys openen
 
-<figure><img src="../../../../.gitbook/assets/docbits_api_key_settings.png" alt="Docbits Api Key Settings"><figcaption></figcaption></figure>
+Ga naar **Settings** en selecteer **Integration & SSO** onder **System & Administration**.
 
-**API-sleutels veilig behandelen:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-settings-overview.png)
 
-* Behandel API-sleutels als gevoelige inloggegevens and deel ze nooit met iemand. Sla API-sleutels veilig op and gebruik versleuteling als u ze lokaal moet opslaan. Werk API-sleutels regelmatig bij om de beveiliging te waarborgen and het risico op ongeautoriseerde toegang te minimaliseren. Vermijd het gebruik van API-sleutels in openbare opslagplaatsen (repositories) of onbeveiligde omgevingen, omdat ze mogelijk door aanvallers kunnen worden onderschept.
+De sectie **API Key** bovenaan de pagina toont elke sleutel die uw organisatie heeft.
 
-**API-sleutelmachtigingen beperken:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list.png)
 
-* Geef API-sleutels alleen de machtigingen die vereist zijn voor de specifieke integratie of dienst. Vermijd overmatige machtigingen om het risico op misbruik te minimaliseren. Controleer regelmatig de machtigingen van API-sleutels en verwijder onnodige machtigingen wanneer ze niet langer nodig zijn.
+## De lijst begrijpen
 
-**API-aanroepen loggen en monitoren:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
 
-* Implementeer logging en monitoring van API-aanroepen om verdachte activiteiten of ongebruikelijke patronen te detecteren die kunnen duiden op mogelijke inbreuken op de beveiliging. Reageer snel op verdachte activiteiten en trek indien nodig de getroffen API-sleutels in om het risico op verdere schade te minimaliseren.
+| Kolom | Wat die u vertelt |
+| --- | --- |
+| **Key** | De eerste tekens van de sleutel, gevolgd door `****`. De rest wordt na het aanmaken nooit meer getoond — zie [Een API-sleutel aanmaken](#een-api-sleutel-aanmaken). |
+| **Name** | De naam die u de sleutel hebt gegeven, met de beschrijving eronder. |
+| **Expires** | De datum waarop de sleutel stopt met werken, of **Never** als u er geen hebt ingesteld. |
+| **Last Used** | Wanneer er voor het laatst een verzoek met deze sleutel binnenkwam. **Never used** betekent dat nog geen enkel systeem die heeft gebruikt — handig om sleutels op te sporen die u veilig kunt verwijderen. |
+| **Status** | **Active** betekent dat de sleutel werkt. Een ingetrokken sleutel is permanent uitgeschakeld. |
+| **Actions** | Het menu met drie puntjes, waar u de sleutel kunt intrekken. |
 
-Door API-sleutels zorgvuldig te beheren en te beveiligen, kunnen organisaties ervoor zorgen dat hun integraties en toegang tot externe diensten via API's worden beschermd en dat het risico op ongeautoriseerde toegang tot een minimum wordt beperkt.
+Als u meer sleutels hebt dan er op één pagina passen, gebruik dan de paginabesturing onderaan de lijst.
+
+{% hint style="info" %}
+**Last Used** is de snelste manier om sleutels te vinden die niemand meer nodig heeft. Een sleutel die nooit is gebruikt, of al maanden niet, is een goede kandidaat om in te trekken.
+{% endhint %}
+
+## Een API-sleutel aanmaken
+
+1. Klik op **+ Create API Key** rechtsboven in de sectie API Keys.
+2. Vul het dialoogvenster in:
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-create-dialog.png)
+
+| Veld | Wat in te vullen |
+| --- | --- |
+| **Key Name** | Verplicht. Noem die naar het systeem dat die gaat gebruiken — `M3 Production`, `Invoice Import Script` — zodat u later kunt zien bij welke integratie een sleutel hoort. |
+| **Description** | Optioneel. Ruimte voor een notitie over waar de sleutel voor is of wie die heeft ingesteld. |
+| **Expiration** | Kies een vervaldatum, of laat die op **Never expires** staan. Een vervaldatum is de veiligere keuze: de sleutel trekt zichzelf terug als de integratie ooit wordt vergeten. |
+
+3. Klik op **Create**. DocBits toont u de nieuwe sleutel:
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-created.png)
+
+4. Kopieer de sleutel met het kopieerpictogram en plak die rechtstreeks in het systeem dat die gaat gebruiken, of in uw wachtwoordmanager.
+5. Vink **I have copied and saved this key** aan en klik op **Done**.
+
+{% hint style="danger" %}
+**De volledige sleutel wordt maar één keer getoond.** DocBits slaat die versleuteld op in een vorm die niet terug te rekenen is naar het origineel, dus niemand — uw beheerders niet en DocBits-support niet — kan die daarna nog opzoeken. Raakt u die kwijt, trek de sleutel dan in en maak een nieuwe aan.
+{% endhint %}
+
+Behandel de sleutel als een wachtwoord. Wie die heeft, kan handelen met de documenten en gegevens van uw organisatie.

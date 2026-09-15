@@ -1,29 +1,66 @@
 ---
-description: Istruzioni per visualizzare, copiare o rigenerare la chiave API
+description: >-
+  Come trovare e creare le chiavi API che danno ad altri sistemi l'accesso a
+  DocBits
 ---
 
-# Gestione della chiave API
+# API Key Management
 
-La gestione delle chiavi API è un aspetto importante quando si tratta della sicurezza delle integrazioni e dell'accesso ai servizi esterni tramite API. Ecco alcuni passaggi per gestire le chiavi API e le migliori pratiche per la loro sicurezza:
+Una API key consente a un altro sistema — il proprio ERP, uno script o un'applicazione partner — di dialogare con DocBits senza che un utente effettui l'accesso. La propria organizzazione può avere tutte le chiavi che servono, e ognuna si gestisce separatamente: le si dà un nome proprio, si decide se scade e la si revoca singolarmente se dovesse mai essere esposta.
 
-**Visualizza e copia la chiave API:**
+Poiché ogni integrazione può avere la propria chiave, se ne può disattivare una senza disturbare le altre.
 
-* Vai alle impostazioni della chiave API nel tuo account DocBits. Qui puoi trovare la chiave API; fai clic su "Copia" per copiare la chiave.
+## Aprire la gestione delle chiavi API
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 16.18.04.png" alt=""><figcaption></figcaption></figure>
+Andare in **Settings** e selezionare **Integration & SSO** sotto **System & Administration**.
 
-**Gestisci le chiavi API tenendo conto della sicurezza:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-settings-overview.png)
 
-* Tratta le chiavi API come credenziali sensibili e non condividerle mai con nessuno. Conserva le chiavi API in modo sicuro e utilizza la crittografia se devi memorizzarle localmente. Aggiorna regolarmente le chiavi API per garantire la sicurezza e ridurre al minimo il rischio di accessi non autorizzati. Evita di utilizzare le chiavi API in repository pubblici o ambienti non protetti, poiché potrebbero essere intercettate dagli aggressori.
+La sezione **API Key** in cima alla pagina elenca tutte le chiavi che la propria organizzazione possiede.
 
-**Limita i permessi della chiave API:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list.png)
 
-* Concedi alle chiavi API solo i permessi necessari per l'integrazione o il servizio specifico. Evita permessi eccessivi per ridurre al minimo il rischio di abusi. Esamina regolarmente i permessi delle chiavi API e rimuovi i permessi non necessari quando non servono più.
+## Capire l'elenco
 
-**Registrazione e monitoraggio delle chiamate API:**
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
 
-* Implementa la registrazione e il monitoraggio delle chiamate API per rilevare attività sospette o pattern insoliti che potrebbero indicare potenziali violazioni della sicurezza. Rispondi rapidamente alle attività sospette e, se necessario, revoca le chiavi API interessate per ridurre al minimo il rischio di ulteriori danni.
+| Colonna | Che cosa indica |
+| --- | --- |
+| **Key** | I primi caratteri della chiave, seguiti da `****`. Il resto non viene più mostrato dopo la creazione — vedere [Creare una chiave API](#creare-una-chiave-api). |
+| **Name** | Il nome dato alla chiave, con la sua descrizione sotto. |
+| **Expires** | La data in cui la chiave smette di funzionare, o **Never** se non se ne è impostata una. |
+| **Last Used** | Quando è arrivata l'ultima richiesta con questa chiave. **Never used** significa che nessun sistema l'ha ancora usata — utile per individuare chiavi che si possono rimuovere senza rischi. |
+| **Status** | **Active** significa che la chiave funziona. Una chiave revocata è disattivata in modo permanente. |
+| **Actions** | Il menu a tre puntini, da cui si può revocare la chiave. |
 
-Gestendo e proteggendo attentamente le chiavi API, le organizzazioni possono garantire che le loro integrazioni e l'accesso ai servizi esterni tramite API siano protetti e che il rischio di accessi non autorizzati sia ridotto al minimo.
+Se si hanno più chiavi di quante ne stiano in una pagina, usare i controlli di paginazione in fondo all'elenco.
 
+{% hint style="info" %}
+**Last Used** è il modo più rapido per trovare chiavi di cui nessuno ha più bisogno. Una chiave mai usata, o non usata da mesi, è una buona candidata alla revoca.
+{% endhint %}
 
+## Creare una chiave API
+
+1. Fare clic su **+ Create API Key** in alto a destra nella sezione API Keys.
+2. Compilare la finestra di dialogo:
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-create-dialog.png)
+
+| Campo | Cosa inserire |
+| --- | --- |
+| **Key Name** | Obbligatorio. Darle il nome del sistema che la userà — `M3 Production`, `Invoice Import Script` — così da poter capire in seguito a quale integrazione appartiene una chiave. |
+| **Description** | Facoltativo. Spazio per una nota su a cosa serve la chiave o su chi l'ha configurata. |
+| **Expiration** | Scegliere una data di scadenza, oppure lasciare **Never expires**. Una data di scadenza è la scelta più sicura: la chiave si ritira da sé se l'integrazione dovesse essere dimenticata. |
+
+3. Fare clic su **Create**. DocBits mostra la nuova chiave:
+
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-created.png)
+
+4. Copiare la chiave con l'icona di copia e incollarla direttamente nel sistema che la userà, oppure nel proprio gestore di password.
+5. Spuntare **I have copied and saved this key** e fare clic su **Done**.
+
+{% hint style="danger" %}
+**La chiave completa viene mostrata una sola volta.** DocBits la memorizza in una forma cifrata che non può essere ricondotta all'originale, quindi nessuno — né i propri amministratori né il supporto DocBits — può più recuperarla in seguito. Se la si perde, revocare la chiave e crearne una nuova.
+{% endhint %}
+
+Trattare la chiave come una password. Chiunque la possieda può operare sui documenti e sui dati della propria organizzazione.

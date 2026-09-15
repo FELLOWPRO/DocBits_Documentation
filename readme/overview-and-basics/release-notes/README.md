@@ -1,6 +1,6 @@
 # Note della versione
 
-> **Ultima release hotfix:** [Hotfixes 8 settembre 2026](incremental-updates-8-september-2026.md): abbinamento ordini di acquisto — l'abbinamento persiste dopo il salvataggio, l'abbinamento viene eseguito nuovamente al salvataggio, lo schermo indica perché non c'è abbinamento, prezzo unitario PO dall'importo netto. Precedente: [Hotfixes 12–25 agosto 2026](incremental-updates-12-25-august-2026.md). Tutte le pagine degli hotfix sono elencate nella navigazione sotto Note di rilascio.
+> **Ultima release hotfix:** [Hotfixes 15 settembre 2026](incremental-updates-15-september-2026.md) (R1.0.13): un unico insieme di regole per la ricerca nella dashboard, fornitori riconosciuti quando un singolo campo di ricerca è univoco, la corrispondenza degli ordini di acquisto spiega le proprie decisioni, corretti i documenti bloccati e i falsi errori di esportazione, Touchless Intelligence, dati master di grandi dimensioni senza blocchi. Precedente: [Hotfixes 8 settembre 2026](incremental-updates-8-september-2026.md). Tutte le pagine degli hotfix sono elencate nella navigazione sotto Note di rilascio.
 
 ## **Release R1.0 23/24 maggio 2026**
 

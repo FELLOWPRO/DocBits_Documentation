@@ -1,6 +1,6 @@
 # Feuille de route DocBits
 
-_État de la planification au 15 septembre 2026. Chaque version indique la date
+_État de la planification au 18 septembre 2026. Chaque version indique la date
 sandbox prévue (à partir de laquelle les clients peuvent la tester) et la date
 de production prévue. Les thèmes décrivent ce qui est prévu pour la version,
 pas ce qui a déjà été livré ; le périmètre et les dates peuvent évoluer. Les
@@ -9,15 +9,18 @@ correctifs urgents entre deux versions sont documentés dans les
 
 | Version | Sandbox | Production |
 |---|---|---|
-| R1.1 | 16 septembre 2026 | 23 septembre 2026 |
-| R1.2 | 21 octobre 2026 | 28 octobre 2026 |
-| R1.3 | 25 novembre 2026 | 2 décembre 2026 |
-| R1.4 | 27 janvier 2027 | 3 février 2027 |
-| R1.5 | 10 mars 2027 | 17 mars 2027 |
+| R1.1 | 5 octobre 2026 | 14 octobre 2026 |
+| R1.2 | 23 novembre 2026 | 2 décembre 2026 |
+| R1.3 | 8 février 2027 | 17 février 2027 |
+| R1.4 | 7 avril 2027 | 15 avril 2027 |
+| R1.5 | 18 mai 2027 | 27 mai 2027 |
+| R1.6 | 6 juillet 2027 | 15 juillet 2027 |
+| R1.7 | 21 septembre 2027 | 30 septembre 2027 |
+| R2.0 | à annoncer | à annoncer |
 
 ---
 
-## R1.1 — Sandbox 16 septembre 2026 · Production 23 septembre 2026
+## R1.1 — Sandbox 5 octobre 2026 · Production 14 octobre 2026
 
 **Règles de transformation et mises en page**
 
@@ -29,6 +32,8 @@ correctifs urgents entre deux versions sont documentés dans les
   document.
 - Des règles de priorité claires pour les libellés des champs d'en-tête et des
   colonnes de tableau.
+- Une colonne de tableau peut être attribuée à nouveau après sa suppression, et
+  le tableau des prix d'articles fournisseur affiche toutes ses colonnes.
 
 **Écrans d'approbation et de validation**
 
@@ -52,12 +57,13 @@ correctifs urgents entre deux versions sont documentés dans les
 
 **Workflows et tâches**
 
-- Un bouton « Nouveau workflow », des journaux pour les workflows avancés, et
-  les étapes de workflow qui modifient un champ ou une case à cocher
-  s'appliquent de manière fiable.
-- Les e-mails d'approbation parviennent aux approbateurs désignés dans les
-  workflows de factures d'achat.
+- Un bouton « Nouveau workflow », des journaux pour les workflows avancés, un
+  écran de journal du watchdog plus clair, et les étapes de workflow qui
+  modifient un champ ou une case à cocher s'appliquent de manière fiable.
+- L'ajout d'une ligne dans un arbre de décision conserve les noms d'utilisateur
+  au lieu d'afficher des identifiants.
 - Chaque changement de statut d'un document est journalisé.
+- La création d'un nouveau modèle d'e-mail fonctionne à nouveau.
 
 **Import**
 
@@ -68,20 +74,20 @@ correctifs urgents entre deux versions sont documentés dans les
 - L'import FTP reçoit une véritable option de suppression après import, à côté
   du déplacement et de l'archivage.
 - Le téléversement depuis l'application scanner fonctionne à nouveau.
+- Les fichiers BOD de bons de commande téléversés dans la région US restent
+  dans la région US.
 
 **Traitement des documents et extraction**
 
 - Lorsque le service de codes-barres se bloque, le document affiche l'erreur
   au lieu de rester indéfiniment en « Processing ».
-- « Restreindre aux pages » ne limite plus que l'OCR et le comptage des pages ;
-  il ne retire plus de pages du document.
-- L'enregistrement d'un document laisse les données non concernées intactes.
-- Un nouveau niveau de modèle IA moins coûteux (« Eco ») pour l'extraction, et
-  l'application de balises de tableau sur le tableau IA fonctionne à nouveau.
-- La fusion d'un PDF ZUGFeRD avec un autre PDF conserve les données de la
-  facture électronique ; les modèles d'e-documents UBL sont ajustés ;
-  corrections d'extraction pour les montants, les taux de taxe et les numéros
-  de bon de commande sur certaines mises en page de fournisseurs.
+- Un nouveau niveau de modèle IA moins coûteux (« Eco ») pour l'extraction.
+- Avec l'extraction IA structurée, les numéros d'article fournisseur entraînés
+  restent entraînés, et le numéro d'article et le numéro d'article fournisseur
+  ne sont plus intervertis.
+- Les modèles d'e-documents UBL sont ajustés ; corrections d'extraction pour
+  les montants, les taux de taxe, les prix unitaires et les numéros de bon de
+  commande sur certaines mises en page de fournisseurs.
 - Des formats de date supplémentaires sont reconnus.
 
 **Correspondance des bons de commande**
@@ -89,16 +95,14 @@ correctifs urgents entre deux versions sont documentés dans les
 - La correspondance exige une colonne de quantité, utilise le prix par quantité
   d'unité de base, et le repli sur la dernière ligne peut être activé ou
   désactivé par client.
+- Les lignes de bon de livraison peuvent être sélectionnées individuellement.
 - L'écran des e-documents ne se fige plus sur les factures de plus de 250
   lignes.
-- Les diagnostics mesurent la quantité même lorsqu'une ligne de bon de commande
-  n'a pas de prix.
 
 **Touchless Intelligence**
 
-- Plus de détails dans le rapport Touchless, et un blocage lié au bon de
-  commande est signalé comme tel plutôt que comme un échec de validation de
-  champ.
+- Plus de détails dans le rapport Touchless, et la case à cocher Touchless
+  reflète le paramètre enregistré.
 
 **Tableau de bord**
 
@@ -106,31 +110,28 @@ correctifs urgents entre deux versions sont documentés dans les
 - La date d'échéance de l'escompte et la date d'échéance de la facture sont
   disponibles comme champs de mise en page et renseignées à l'import.
 - Les utilisateurs partagés d'un tableau de bord sont conservés lors de son
-  enregistrement ; « Assigné à » et « Mis à jour par » affichent la bonne
-  personne.
-- Les autorisations sur les documents s'appliquent aussi à l'index de texte
-  intégral.
+  enregistrement, et « Mis à jour par » affiche la bonne personne.
+- Les documents archivés peuvent de nouveau quitter le statut « Archivé ».
 
 **Export et EDI**
 
-- L'export BOD conserve les valeurs de colonnes de tableau de plus de 30
-  caractères.
 - Une étape d'export Infor M3 supplémentaire pour les informations de facture
-  complémentaires, et les prix unitaires dans les exports de type de ligne 5.
-- La réimportation d'une livraison reçue n'échoue plus sur une clé en double.
-- Les mappages EDI X12 pour la facture (810), le bon de commande (850), la
-  confirmation de commande (855), l'avis d'expédition (856, y compris l'export
-  WMS) et la modification de commande (860) sont mis à jour.
+  complémentaires.
+- Une liste de colisage comportant plusieurs numéros de conteneur est exportée
+  sous la forme d'un enregistrement par conteneur.
+- La réimportation d'une livraison reçue n'échoue plus sur une clé en double,
+  et les BOD de livraison reçue sont appliqués dans le bon ordre.
+- Les mappages EDI pour la facture, le bon de commande et la confirmation de
+  commande sont mis à jour.
 
 **Sécurité**
 
-- Les mappages fournisseur–plan comptable sont stockés avec des paramètres SQL
-  liés, et le contrôle d'organisation des clés API est appliqué sur chaque
+- Le contrôle d'organisation des clés API est appliqué sur chaque
   environnement.
 
 ---
 
-## R1.2 — Sandbox 21 octobre 2026 · Production 28 octobre 2026
+## R1.2 — Sandbox 23 novembre 2026 · Production 2 décembre 2026
 
 **Approbation et correspondance des bons de commande**
 
@@ -159,8 +160,6 @@ correctifs urgents entre deux versions sont documentés dans les
 - Le script « Définir la sous-organisation » devient une règle de
   transformation.
 - Les colonnes standard peuvent être retirées d'un type de document.
-- Un flux de demande de modification de bon de commande et le propriétaire du
-  document dans le mappage d'export Infor.
 
 **Export**
 
@@ -169,7 +168,7 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## R1.3 — Sandbox 25 novembre 2026 · Production 2 décembre 2026
+## R1.3 — Sandbox 8 février 2027 · Production 17 février 2027
 
 **Rule Manager Auto Accounting**
 
@@ -179,8 +178,9 @@ correctifs urgents entre deux versions sont documentés dans les
 - Une règle peut renseigner une valeur à partir d'une colonne de ligne de
   tableau.
 - Les champs et les dimensions peuvent être effacés individuellement, les
-  lignes sans montant peuvent être supprimées, et les règles continuent de
-  fonctionner sur les champs passés de texte à liste déroulante.
+  lignes peuvent être supprimées (y compris les lignes sans montant), et les
+  règles continuent de fonctionner sur les champs passés de texte à liste
+  déroulante.
 
 **Correspondance des bons de commande**
 
@@ -198,7 +198,7 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## R1.4 — Sandbox 27 janvier 2027 · Production 3 février 2027
+## R1.4 — Sandbox 7 avril 2027 · Production 15 avril 2027
 
 **Import**
 
@@ -219,9 +219,9 @@ correctifs urgents entre deux versions sont documentés dans les
 
 - Seules les lignes de bon de commande viables sont proposées sur l'écran de
   correspondance.
-- Plusieurs entrées d'entrepôt peuvent correspondre à une même ligne de
-  facture, et les unités de mesure sont converties lors du rapprochement de la
-  facture.
+- Les factures rapprochées en excès, dont la quantité facturée dépasse la
+  quantité reçue, sont reconnues sur l'écran de correspondance, et les unités
+  de mesure sont converties lors du rapprochement de la facture.
 
 **Autres**
 
@@ -232,7 +232,7 @@ correctifs urgents entre deux versions sont documentés dans les
 
 ---
 
-## R1.5 — Sandbox 10 mars 2027 · Production 17 mars 2027
+## R1.5 — Sandbox 18 mai 2027 · Production 27 mai 2027
 
 **Auto Accounting**
 
@@ -261,6 +261,50 @@ correctifs urgents entre deux versions sont documentés dans les
 - L'ordre d'exécution des scripts de document est visible dans l'interface.
 - Entrée et Tab permettent de passer d'un champ à l'autre au clavier.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6 juillet 2027 · Production 15 juillet 2027
+
+**Paramètres**
+
+- Les paramètres peuvent être recherchés dans l'ensemble des options et des
+  sous-pages.
+- La configuration du serveur de messagerie permet de remplacer un secret
+  OAuth ou un secret client expiré sans reconfigurer la boîte aux lettres.
+- La table de correspondance des numéros d'article fournisseur (table de
+  conversion des numéros d'article) peut être alimentée par un import CSV.
+
+**Auto Accounting**
+
+- Les dimensions sont stockées dans une nouvelle structure afin que les grands
+  ensembles de dimensions se chargent plus rapidement.
+
+---
+
+## R1.7 — Sandbox 21 septembre 2027 · Production 30 septembre 2027
+
+**Auto Accounting sur l'écran d'approbation**
+
+- Les approbateurs peuvent utiliser Auto Accounting directement sur l'écran
+  d'approbation.
+- L'approbation peut être conditionnée à des champs comptables tels que le
+  compte général ou le pays, avec une correction en comptabilité fournisseurs
+  lorsqu'un document est renvoyé.
+- Une liste déroulante de codes de taxe dans Auto Accounting sans avoir à
+  configurer plusieurs lignes de taxe.
+
+---
+
+## R2.0 — Sandbox à annoncer · Production à annoncer
+
+**Auto Accounting**
+
+- Les champs adossés à une liste acceptent aussi la saisie libre.
+- Les champs obligatoires sont validés.
+- Les prédictions du modèle renseignent automatiquement les champs comptables
+  (mode hybride avec le modèle de prédiction entraîné), avec une piste d'audit
+  de ce que le modèle a renseigné.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

@@ -1,6 +1,6 @@
 # Plan rozwoju DocBits
 
-_Stan planowania na 15 września 2026. Każde wydanie podaje planowaną datę
+_Stan planowania na 18 września 2026. Każde wydanie podaje planowaną datę
 udostępnienia na sandboxie (kiedy klienci mogą je testować) oraz planowaną
 datę produkcyjną. Motywy opisują, co jest planowane na dane wydanie, a nie
 to, co już zostało dostarczone; zakres i daty mogą się zmienić. Hotfixy
@@ -9,15 +9,18 @@ między wydaniami są udokumentowane w
 
 | Wydanie | Sandbox | Produkcja |
 |---|---|---|
-| R1.1 | 16 września 2026 | 23 września 2026 |
-| R1.2 | 21 października 2026 | 28 października 2026 |
-| R1.3 | 25 listopada 2026 | 2 grudnia 2026 |
-| R1.4 | 27 stycznia 2027 | 3 lutego 2027 |
-| R1.5 | 10 marca 2027 | 17 marca 2027 |
+| R1.1 | 5 października 2026 | 14 października 2026 |
+| R1.2 | 23 listopada 2026 | 2 grudnia 2026 |
+| R1.3 | 8 lutego 2027 | 17 lutego 2027 |
+| R1.4 | 7 kwietnia 2027 | 15 kwietnia 2027 |
+| R1.5 | 18 maja 2027 | 27 maja 2027 |
+| R1.6 | 6 lipca 2027 | 15 lipca 2027 |
+| R1.7 | 21 września 2027 | 30 września 2027 |
+| R2.0 | do ogłoszenia | do ogłoszenia |
 
 ---
 
-## R1.1 — Sandbox 16 września 2026 · Produkcja 23 września 2026
+## R1.1 — Sandbox 5 października 2026 · Produkcja 14 października 2026
 
 **Reguły transformacji i layouty**
 
@@ -27,6 +30,8 @@ między wydaniami są udokumentowane w
   otrzymują te same zagnieżdżone warunki.
 - Wybór layoutu działa niezależnie od tego, skąd pochodzi dokument.
 - Jasne reguły pierwszeństwa dla etykiet pól nagłówka i kolumn tabeli.
+- Kolumnę tabeli można ponownie przypisać po jej usunięciu, a tabela cen
+  artykułów dostawcy pokazuje wszystkie swoje kolumny.
 
 **Ekrany zatwierdzania i walidacji**
 
@@ -49,11 +54,13 @@ między wydaniami są udokumentowane w
 
 **Workflow i zadania**
 
-- Przycisk „Nowy workflow”, logi zaawansowanych workflow, a kroki workflow
-  zmieniające pole lub pole wyboru są stosowane niezawodnie.
-- E-maile zatwierdzeń docierają do przypisanych osób zatwierdzających w
-  workflow faktur zakupowych.
+- Przycisk „Nowy workflow”, logi zaawansowanych workflow, czytelniejszy ekran
+  logów watchdoga, a kroki workflow zmieniające pole lub pole wyboru są
+  stosowane niezawodnie.
+- Dodanie pozycji w drzewie decyzyjnym zachowuje nazwy użytkowników, zamiast
+  pokazywać identyfikatory.
 - Każda zmiana statusu dokumentu jest rejestrowana.
+- Tworzenie nowego szablonu e-mail znów działa.
 
 **Import**
 
@@ -64,19 +71,20 @@ między wydaniami są udokumentowane w
 - Import FTP otrzymuje prawdziwą opcję usuwania po imporcie obok przenoszenia
   i archiwizowania.
 - Przesyłanie z aplikacji skanera znów działa.
+- Pliki BOD zamówień zakupowych przesłane w regionie USA pozostają w regionie
+  USA.
 
 **Przetwarzanie dokumentów i ekstrakcja**
 
 - Gdy usługa kodów kreskowych zawiesza się, dokument pokazuje błąd, zamiast
   tkwić w nieskończoność w stanie „Processing”.
-- „Restrict to pages” ogranicza tylko OCR i liczenie stron; nie odcina już
-  stron z dokumentu.
-- Zapisanie dokumentu nie narusza niepowiązanych danych.
-- Nowy, tańszy poziom modelu AI („Eco”) do ekstrakcji, a stosowanie tagów
-  tabeli na tabeli AI znów działa.
-- Scalanie pliku PDF ZUGFeRD z innym plikiem PDF zachowuje dane e-faktury;
-  szablony e-dokumentów UBL są dostosowane; poprawki ekstrakcji kwot, stawek
-  podatku i numerów zamówień zakupowych na określonych layoutach dostawców.
+- Nowy, tańszy poziom modelu AI („Eco”) do ekstrakcji.
+- Przy strukturalnej ekstrakcji AI wytrenowane numery artykułów dostawcy
+  pozostają wytrenowane, a numer artykułu i numer artykułu dostawcy nie są
+  już zamieniane miejscami.
+- Szablony e-dokumentów UBL są dostosowane; poprawki ekstrakcji kwot, stawek
+  podatku, cen jednostkowych i numerów zamówień zakupowych na określonych
+  layoutach dostawców.
 - Rozpoznawane są dodatkowe formaty dat.
 
 **Dopasowywanie zamówień zakupowych**
@@ -84,13 +92,13 @@ między wydaniami są udokumentowane w
 - Dopasowywanie wymaga kolumny ilości, używa ceny za ilość w jednostce
   bazowej, a rezerwowe dopasowanie do ostatniej pozycji można włączać lub
   wyłączać dla każdego klienta.
+- Pozycje dowodu dostawy można wybierać pojedynczo.
 - Ekran e-dokumentu nie zawiesza się już na fakturach z ponad 250 pozycjami.
-- Diagnostyka mierzy ilość nawet wtedy, gdy pozycja PO nie ma ceny.
 
 **Touchless Intelligence**
 
-- Więcej szczegółów w raporcie Touchless, a blokada ze strony zamówienia
-  zakupowego jest raportowana jako taka, a nie jako błąd walidacji pola.
+- Więcej szczegółów w raporcie Touchless, a pole wyboru Touchless
+  odzwierciedla zapisane ustawienie.
 
 **Pulpit**
 
@@ -98,29 +106,27 @@ między wydaniami są udokumentowane w
 - Termin płatności ze skontem i termin płatności faktury są dostępne jako
   pola layoutu i wypełniane przy imporcie.
 - Użytkownicy, którym udostępniono pulpit, są zachowywani przy zapisie
-  pulpitu; „Assigned to” i „Updated by” pokazują właściwą osobę.
-- Uprawnienia do dokumentów obowiązują także w indeksie pełnotekstowym.
+  pulpitu, a „Updated by” pokazuje właściwą osobę.
+- Zarchiwizowane dokumenty można z powrotem przenieść ze statusu „Archived”.
 
 **Eksport i EDI**
 
-- Eksport BOD zachowuje wartości kolumn tabeli dłuższe niż 30 znaków.
-- Dodatkowy krok eksportu do Infor M3 dla dodatkowych informacji o fakturze
-  oraz ceny jednostkowe w eksportach pozycji typu 5.
+- Dodatkowy krok eksportu do Infor M3 dla dodatkowych informacji o fakturze.
+- Lista pakunkowa z kilkoma numerami kontenerów jest eksportowana jako jeden
+  rekord na kontener.
 - Ponowny import przyjęcia dostawy nie kończy się już błędem zduplikowanego
-  klucza.
-- Zaktualizowano mapowania EDI X12 dla faktury (810), zamówienia zakupowego
-  (850), potwierdzenia zamówienia (855), awiza wysyłki (856, włącznie z
-  eksportem WMS) i zmiany zamówienia (860).
+  klucza, a dokumenty BOD przyjęcia dostawy są stosowane we właściwej
+  kolejności.
+- Zaktualizowano mapowania EDI dla faktury, zamówienia zakupowego i
+  potwierdzenia zamówienia.
 
 **Bezpieczeństwo**
 
-- Mapowania planu kont dostawców są zapisywane za pomocą wiązanych
-  parametrów SQL, a kontrola organizacji dla kluczy API jest egzekwowana w
-  każdym środowisku.
+- Kontrola organizacji dla kluczy API jest egzekwowana w każdym środowisku.
 
 ---
 
-## R1.2 — Sandbox 21 października 2026 · Produkcja 28 października 2026
+## R1.2 — Sandbox 23 listopada 2026 · Produkcja 2 grudnia 2026
 
 **Zatwierdzanie i dopasowywanie zamówień zakupowych**
 
@@ -146,8 +152,6 @@ między wydaniami są udokumentowane w
 
 - Skrypt „Set sub-organisation” staje się regułą transformacji.
 - Standardowe kolumny można usuwać z typu dokumentu.
-- Proces żądania zmiany PO oraz właściciel dokumentu w mapowaniu eksportu do
-  Infor.
 
 **Eksport**
 
@@ -156,7 +160,7 @@ między wydaniami są udokumentowane w
 
 ---
 
-## R1.3 — Sandbox 25 listopada 2026 · Produkcja 2 grudnia 2026
+## R1.3 — Sandbox 8 lutego 2027 · Produkcja 17 lutego 2027
 
 **Auto Accounting Rule Manager**
 
@@ -164,9 +168,9 @@ między wydaniami są udokumentowane w
   i typu dokumentu, wraz z ekranem audytu, który pokazuje, która reguła
   zadziałała.
 - Reguła może wypełnić wartość z kolumny pozycji tabeli.
-- Pola i wymiary można czyścić pojedynczo, pozycje bez kwoty można usuwać, a
-  reguły działają dalej na polach, które zmieniły się z tekstu na listę
-  rozwijaną.
+- Pola i wymiary można czyścić pojedynczo, pozycje można usuwać (także
+  pozycje bez kwoty), a reguły działają dalej na polach, które zmieniły się
+  z tekstu na listę rozwijaną.
 
 **Dopasowywanie zamówień zakupowych**
 
@@ -184,7 +188,7 @@ między wydaniami są udokumentowane w
 
 ---
 
-## R1.4 — Sandbox 27 stycznia 2027 · Produkcja 3 lutego 2027
+## R1.4 — Sandbox 7 kwietnia 2027 · Produkcja 15 kwietnia 2027
 
 **Import**
 
@@ -204,8 +208,9 @@ między wydaniami są udokumentowane w
 **Dopasowywanie zamówień zakupowych**
 
 - Na ekranie dopasowywania oferowane są tylko pozycje PO, które mogą pasować.
-- Kilka wpisów magazynowych może pasować do jednej pozycji faktury, a
-  jednostki miary są konwertowane podczas dopasowywania faktury.
+- Faktury z nadmiernym dopasowaniem, w których zafakturowana ilość przekracza
+  ilość przyjętą, są rozpoznawane na ekranie dopasowywania, a jednostki miary
+  są konwertowane podczas dopasowywania faktury.
 
 **Pozostałe**
 
@@ -216,7 +221,7 @@ między wydaniami są udokumentowane w
 
 ---
 
-## R1.5 — Sandbox 10 marca 2027 · Produkcja 17 marca 2027
+## R1.5 — Sandbox 18 maja 2027 · Produkcja 27 maja 2027
 
 **Auto Accounting**
 
@@ -245,6 +250,49 @@ między wydaniami są udokumentowane w
 - Kolejność wykonywania skryptów dokumentu jest widoczna we frontendzie.
 - Klawisze Enter i Tab przenoszą między polami.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6 lipca 2027 · Produkcja 15 lipca 2027
+
+**Ustawienia**
+
+- Ustawienia można przeszukiwać we wszystkich przełącznikach i podstronach.
+- Konfiguracja serwera e-mail pozwala zastąpić wygasły sekret OAuth lub
+  sekret klienta bez ponownego konfigurowania skrzynki pocztowej.
+- Mapę numerów artykułów dostawcy (tabelę konwersji numerów artykułów) można
+  wypełnić z importu CSV.
+
+**Auto Accounting**
+
+- Wymiary są przechowywane w nowej strukturze, dzięki czemu duże zestawy
+  wymiarów ładują się szybciej.
+
+---
+
+## R1.7 — Sandbox 21 września 2027 · Produkcja 30 września 2027
+
+**Auto Accounting na ekranie zatwierdzania**
+
+- Osoby zatwierdzające mogą korzystać z Auto Accounting bezpośrednio na
+  ekranie zatwierdzania.
+- Zatwierdzenie może być uzależnione od pól księgowych, takich jak kod konta
+  księgowego lub kraj, z korektą po stronie AP, gdy dokument zostaje
+  zwrócony.
+- Lista rozwijana kodów podatkowych w Auto Accounting bez konieczności
+  konfigurowania wielu pozycji podatkowych.
+
+---
+
+## R2.0 — Sandbox do ogłoszenia · Produkcja do ogłoszenia
+
+**Auto Accounting**
+
+- Pola oparte na liście akceptują także dowolny tekst.
+- Pola wymagane są walidowane.
+- Predykcje modelu automatycznie wypełniają pola księgowe (tryb hybrydowy z
+  wytrenowanym modelem predykcyjnym), ze ścieżką audytu pokazującą, co model
+  wypełnił.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

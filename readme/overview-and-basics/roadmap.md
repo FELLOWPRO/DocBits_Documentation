@@ -1,6 +1,6 @@
 # DocBits Roadmap
 
-_Planning status as of 15 September 2026. Each release lists the planned
+_Planning status as of 18 September 2026. Each release lists the planned
 sandbox date (when customers can test it) and the planned production date. The
 themes describe what is planned for the release, not what has already shipped;
 scope and dates can move. Hotfixes between releases are documented in the
@@ -8,15 +8,18 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 | Release | Sandbox | Production |
 |---|---|---|
-| R1.1 | 16 September 2026 | 23 September 2026 |
-| R1.2 | 21 October 2026 | 28 October 2026 |
-| R1.3 | 25 November 2026 | 2 December 2026 |
-| R1.4 | 27 January 2027 | 3 February 2027 |
-| R1.5 | 10 March 2027 | 17 March 2027 |
+| R1.1 | 5 October 2026 | 14 October 2026 |
+| R1.2 | 23 November 2026 | 2 December 2026 |
+| R1.3 | 8 February 2027 | 17 February 2027 |
+| R1.4 | 7 April 2027 | 15 April 2027 |
+| R1.5 | 18 May 2027 | 27 May 2027 |
+| R1.6 | 6 July 2027 | 15 July 2027 |
+| R1.7 | 21 September 2027 | 30 September 2027 |
+| R2.0 | to be announced | to be announced |
 
 ---
 
-## R1.1 — Sandbox 16 September 2026 · Production 23 September 2026
+## R1.1 — Sandbox 5 October 2026 · Production 14 October 2026
 
 **Transformation rules and layouts**
 
@@ -25,6 +28,8 @@ scope and dates can move. Hotfixes between releases are documented in the
   rules. Layout selection rules get the same nested conditions.
 - Layout selection works independently of where a document came from.
 - Clear precedence rules for field labels on header fields and table columns.
+- A table column can be assigned again after it was deleted, and the supplier
+  item price table shows all of its columns.
 
 **Approval and validation screens**
 
@@ -45,10 +50,11 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 **Workflows and tasks**
 
-- A "New workflow" button, logs for advanced workflows, and workflow steps
-  that change a field or checkbox apply reliably.
-- Approval e-mails reach the assigned approvers in purchase invoice workflows.
+- A "New workflow" button, logs for advanced workflows, a clearer watchdog log
+  screen, and workflow steps that change a field or checkbox apply reliably.
+- Adding a line in a decision tree keeps the user names instead of showing IDs.
 - Every status change of a document is logged.
+- Creating a new e-mail template works again.
 
 **Import**
 
@@ -57,60 +63,57 @@ scope and dates can move. Hotfixes between releases are documented in the
   saved, and accepts S/MIME-signed mails.
 - FTP import gets a true delete-after-import option next to move and archive.
 - The scanner app upload works again.
+- Purchase order BOD files uploaded in the US region stay in the US region.
 
 **Document processing and extraction**
 
 - When the barcode service hangs, the document shows the error instead of
   sitting in "Processing" indefinitely.
-- "Restrict to pages" only limits OCR and page counting; it no longer cuts
-  pages off the document.
-- Saving a document leaves unrelated data untouched.
-- A new, cheaper AI model tier ("Eco") for extraction, and applying table tags
-  on the AI table works again.
-- Merging a ZUGFeRD PDF with another PDF keeps the e-invoice data; UBL e-document
-  templates are adjusted; extraction corrections for amounts, tax rates and
-  purchase order numbers on specific supplier layouts.
+- A new, cheaper AI model tier ("Eco") for extraction.
+- With structured AI extraction, trained supplier item numbers stay trained,
+  and item number and supplier item number are no longer swapped.
+- UBL e-document templates are adjusted; extraction corrections for amounts,
+  tax rates, unit prices and purchase order numbers on specific supplier
+  layouts.
 - Additional date formats are recognised.
 
 **Purchase order matching**
 
 - Matching requires a quantity column, uses the price per base unit quantity,
   and the last-line fallback can be switched per customer.
+- Delivery note lines can be selected individually.
 - The e-document screen no longer freezes on invoices with more than 250 lines.
-- Diagnostics measure quantity even when a PO line has no price.
 
 **Touchless Intelligence**
 
-- More detail in the Touchless report, and a purchase-order blocker is reported
-  as such instead of as a field validation failure.
+- More detail in the Touchless report, and the Touchless checkbox reflects the
+  saved setting.
 
 **Dashboard**
 
 - The dashboard can hold up to 10,000 documents per search.
 - Discount due date and invoice due date are available as layout fields and
   filled on import.
-- Shared dashboard users are kept when a dashboard is saved; "Assigned to" and
-  "Updated by" show the right person.
-- Document permissions apply to the full-text index as well.
+- Shared dashboard users are kept when a dashboard is saved, and "Updated by"
+  shows the right person.
+- Archived documents can be moved back out of the "Archived" status.
 
 **Export and EDI**
 
-- BOD export keeps table column values longer than 30 characters.
-- An additional Infor M3 export step for extra invoice information, and unit
-  prices in line type 5 exports.
-- Re-importing a receive delivery no longer fails on a duplicate key.
-- EDI X12 mappings for invoice (810), purchase order (850), order
-  confirmation (855), ship notice (856, including WMS export) and change
-  order (860) are updated.
+- An additional Infor M3 export step for extra invoice information.
+- A packing list with several container numbers is exported as one record per
+  container.
+- Re-importing a receive delivery no longer fails on a duplicate key, and
+  receive delivery BODs are applied in the right order.
+- EDI mappings for invoice, purchase order and order confirmation are updated.
 
 **Security**
 
-- Supplier chart-of-accounts mappings are stored with bound SQL parameters,
-  and the organisation guard for API keys is enforced on every environment.
+- The organisation guard for API keys is enforced on every environment.
 
 ---
 
-## R1.2 — Sandbox 21 October 2026 · Production 28 October 2026
+## R1.2 — Sandbox 23 November 2026 · Production 2 December 2026
 
 **Approval and purchase order matching**
 
@@ -135,7 +138,6 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 - The "Set sub-organisation" script becomes a transformation rule.
 - Standard columns can be removed from a document type.
-- A PO change request flow and the document owner in the Infor export mapping.
 
 **Export**
 
@@ -144,7 +146,7 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 ---
 
-## R1.3 — Sandbox 25 November 2026 · Production 2 December 2026
+## R1.3 — Sandbox 8 February 2027 · Production 17 February 2027
 
 **Auto Accounting Rule Manager**
 
@@ -152,9 +154,9 @@ scope and dates can move. Hotfixes between releases are documented in the
   sub-organisation and document type, with an audit screen that shows which
   rule fired.
 - A rule can populate a value from a table line column.
-- Fields and dimensions can be cleared individually, lines without an amount
-  can be deleted, and rules keep working on fields that changed from text to
-  dropdown.
+- Fields and dimensions can be cleared individually, line items can be deleted
+  (including lines without an amount), and rules keep working on fields that
+  changed from text to dropdown.
 
 **Purchase order matching**
 
@@ -172,7 +174,7 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 ---
 
-## R1.4 — Sandbox 27 January 2027 · Production 3 February 2027
+## R1.4 — Sandbox 7 April 2027 · Production 15 April 2027
 
 **Import**
 
@@ -192,8 +194,9 @@ scope and dates can move. Hotfixes between releases are documented in the
 **Purchase order matching**
 
 - Only viable PO lines are offered on the matching screen.
-- Several warehouse entries can match one invoice line, and units of measure
-  are converted during invoice matching.
+- Over-matched invoices, where the invoiced quantity exceeds the received
+  quantity, are recognised on the matching screen, and units of measure are
+  converted during invoice matching.
 
 **Other**
 
@@ -204,7 +207,7 @@ scope and dates can move. Hotfixes between releases are documented in the
 
 ---
 
-## R1.5 — Sandbox 10 March 2027 · Production 17 March 2027
+## R1.5 — Sandbox 18 May 2027 · Production 27 May 2027
 
 **Auto Accounting**
 
@@ -232,6 +235,46 @@ scope and dates can move. Hotfixes between releases are documented in the
 - The execution order of document scripts is visible in the frontend.
 - Enter and Tab move through fields on the keyboard.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6 July 2027 · Production 15 July 2027
+
+**Settings**
+
+- Settings can be searched across all toggles and sub-pages.
+- The e-mail server setup lets you replace an expired OAuth or client secret
+  without setting the mailbox up again.
+- The supplier item number map (item number conversion table) can be filled
+  from a CSV import.
+
+**Auto Accounting**
+
+- Dimensions are stored in a new structure so large dimension sets load
+  faster.
+
+---
+
+## R1.7 — Sandbox 21 September 2027 · Production 30 September 2027
+
+**Auto Accounting on the approval screen**
+
+- Approvers can work with auto accounting directly on the approval screen.
+- Approval can be gated on accounting fields such as nominal code or country,
+  with an AP correction when a document is returned.
+- A tax code dropdown on Auto Accounting without setting up multiple tax
+  lines.
+
+---
+
+## R2.0 — Sandbox to be announced · Production to be announced
+
+**Auto Accounting**
+
+- Fields backed by a list also accept free text.
+- Required fields are validated.
+- Model predictions fill accounting fields automatically (hybrid mode with the
+  trained prediction model), with an audit trail of what the model filled.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

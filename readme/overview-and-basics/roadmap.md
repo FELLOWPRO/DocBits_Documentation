@@ -1,6 +1,6 @@
 # Roadmap DocBits
 
-_Stato della pianificazione al 15 settembre 2026. Per ogni release sono
+_Stato della pianificazione al 18 settembre 2026. Per ogni release sono
 indicate la data prevista per sandbox (quando i clienti possono testarla) e la
 data prevista per la produzione. I temi descrivono ciò che è pianificato per
 la release, non ciò che è già stato rilasciato; ambito e date possono cambiare.
@@ -9,15 +9,18 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 | Release | Sandbox | Produzione |
 |---|---|---|
-| R1.1 | 16 settembre 2026 | 23 settembre 2026 |
-| R1.2 | 21 ottobre 2026 | 28 ottobre 2026 |
-| R1.3 | 25 novembre 2026 | 2 dicembre 2026 |
-| R1.4 | 27 gennaio 2027 | 3 febbraio 2027 |
-| R1.5 | 10 marzo 2027 | 17 marzo 2027 |
+| R1.1 | 5 ottobre 2026 | 14 ottobre 2026 |
+| R1.2 | 23 novembre 2026 | 2 dicembre 2026 |
+| R1.3 | 8 febbraio 2027 | 17 febbraio 2027 |
+| R1.4 | 7 aprile 2027 | 15 aprile 2027 |
+| R1.5 | 18 maggio 2027 | 27 maggio 2027 |
+| R1.6 | 6 luglio 2027 | 15 luglio 2027 |
+| R1.7 | 21 settembre 2027 | 30 settembre 2027 |
+| R2.0 | da definire | da definire |
 
 ---
 
-## R1.1 — Sandbox 16 settembre 2026 · Produzione 23 settembre 2026
+## R1.1 — Sandbox 5 ottobre 2026 · Produzione 14 ottobre 2026
 
 **Regole di trasformazione e layout**
 
@@ -29,6 +32,9 @@ Gli hotfix tra una release e l'altra sono documentati nelle
   documento.
 - Regole di precedenza chiare per le etichette dei campi di intestazione e
   delle colonne di tabella.
+- Una colonna di tabella può essere assegnata di nuovo dopo essere stata
+  eliminata, e la tabella dei prezzi degli articoli del fornitore mostra tutte
+  le sue colonne.
 
 **Schermate di approvazione e validazione**
 
@@ -53,12 +59,13 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 **Workflow e attività**
 
-- Un pulsante "Nuovo workflow", log per i workflow avanzati, e i passaggi di
-  workflow che modificano un campo o una casella di controllo vengono
-  applicati in modo affidabile.
-- Le e-mail di approvazione raggiungono gli approvatori assegnati nei workflow
-  delle fatture di acquisto.
+- Un pulsante "Nuovo workflow", log per i workflow avanzati, una schermata dei
+  log del watchdog più chiara, e i passaggi di workflow che modificano un campo
+  o una casella di controllo vengono applicati in modo affidabile.
+- L'aggiunta di una riga in un albero decisionale conserva i nomi degli utenti
+  invece di mostrare gli ID.
 - Ogni cambio di stato di un documento viene registrato.
+- La creazione di un nuovo template e-mail funziona di nuovo.
 
 **Importazione**
 
@@ -69,20 +76,20 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - L'importazione FTP ottiene una vera opzione di eliminazione dopo
   l'importazione, accanto a sposta e archivia.
 - Il caricamento dall'app scanner funziona di nuovo.
+- I file BOD degli ordini di acquisto caricati nella regione USA restano nella
+  regione USA.
 
 **Elaborazione dei documenti ed estrazione**
 
 - Quando il servizio codici a barre si blocca, il documento mostra l'errore
   invece di restare in "Processing" a tempo indeterminato.
-- "Restrict to pages" limita solo l'OCR e il conteggio delle pagine; non
-  taglia più pagine dal documento.
-- Il salvataggio di un documento lascia intatti i dati non correlati.
-- Un nuovo livello di modello AI più economico ("Eco") per l'estrazione, e
-  l'applicazione dei tag di tabella sulla tabella AI funziona di nuovo.
-- L'unione di un PDF ZUGFeRD con un altro PDF conserva i dati della fattura
-  elettronica; i template UBL per gli e-document vengono adeguati; correzioni
-  dell'estrazione per importi, aliquote fiscali e numeri di ordine di acquisto
-  su layout specifici di fornitori.
+- Un nuovo livello di modello AI più economico ("Eco") per l'estrazione.
+- Con l'estrazione AI strutturata, i numeri articolo fornitore addestrati
+  restano addestrati, e numero articolo e numero articolo fornitore non vengono
+  più scambiati.
+- I template UBL per gli e-document vengono adeguati; correzioni
+  dell'estrazione per importi, aliquote fiscali, prezzi unitari e numeri di
+  ordine di acquisto su layout specifici di fornitori.
 - Vengono riconosciuti ulteriori formati di data.
 
 **Corrispondenza degli ordini di acquisto**
@@ -90,13 +97,13 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - La corrispondenza richiede una colonna quantità, usa il prezzo per quantità
   di unità base, e il fallback sull'ultima riga può essere attivato o
   disattivato per cliente.
+- Le righe delle bolle di consegna possono essere selezionate singolarmente.
 - La schermata e-document non si blocca più su fatture con più di 250 righe.
-- La diagnostica misura la quantità anche quando una riga PO non ha prezzo.
 
 **Touchless Intelligence**
 
-- Più dettagli nel report Touchless, e un blocco dovuto all'ordine di acquisto
-  viene segnalato come tale invece che come errore di validazione di un campo.
+- Più dettagli nel report Touchless, e la casella di controllo Touchless
+  riflette l'impostazione salvata.
 
 **Dashboard**
 
@@ -104,32 +111,30 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - La data di scadenza dello sconto e la data di scadenza della fattura sono
   disponibili come campi del layout e vengono compilate all'importazione.
 - Gli utenti con cui una dashboard è condivisa vengono conservati quando la
-  dashboard viene salvata; "Assigned to" e "Updated by" mostrano la persona
-  giusta.
-- I permessi sui documenti si applicano anche all'indice full-text.
+  dashboard viene salvata, e "Updated by" mostra la persona giusta.
+- I documenti archiviati possono essere riportati fuori dallo stato
+  "Archived".
 
 **Esportazione ed EDI**
 
-- L'esportazione BOD conserva i valori delle colonne di tabella più lunghi di
-  30 caratteri.
 - Un passaggio aggiuntivo di esportazione Infor M3 per informazioni
-  supplementari sulla fattura, e prezzi unitari nelle esportazioni di tipo
-  riga 5.
+  supplementari sulla fattura.
+- Una packing list con più numeri di container viene esportata come un record
+  per container.
 - La reimportazione di una receive delivery non fallisce più per una chiave
-  duplicata.
-- Le mappature EDI X12 per fattura (810), ordine di acquisto (850), conferma
-  d'ordine (855), avviso di spedizione (856, inclusa l'esportazione WMS) e
-  modifica d'ordine (860) sono aggiornate.
+  duplicata, e i BOD di receive delivery vengono applicati nell'ordine
+  corretto.
+- Le mappature EDI per fattura, ordine di acquisto e conferma d'ordine sono
+  aggiornate.
 
 **Sicurezza**
 
-- Le mappature del piano dei conti dei fornitori vengono memorizzate con
-  parametri SQL vincolati, e il controllo dell'organizzazione per le API key
-  viene applicato in ogni ambiente.
+- Il controllo dell'organizzazione per le API key viene applicato in ogni
+  ambiente.
 
 ---
 
-## R1.2 — Sandbox 21 ottobre 2026 · Produzione 28 ottobre 2026
+## R1.2 — Sandbox 23 novembre 2026 · Produzione 2 dicembre 2026
 
 **Approvazione e corrispondenza degli ordini di acquisto**
 
@@ -157,8 +162,6 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 - Lo script "Set sub-organisation" diventa una regola di trasformazione.
 - Le colonne standard possono essere rimosse da un tipo di documento.
-- Un flusso di richiesta di modifica PO e il proprietario del documento nella
-  mappatura di esportazione Infor.
 
 **Esportazione**
 
@@ -167,7 +170,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## R1.3 — Sandbox 25 novembre 2026 · Produzione 2 dicembre 2026
+## R1.3 — Sandbox 8 febbraio 2027 · Produzione 17 febbraio 2027
 
 **Rule Manager di Auto Accounting**
 
@@ -175,9 +178,9 @@ Gli hotfix tra una release e l'altra sono documentati nelle
   sotto-organizzazione e tipo di documento, con una schermata di audit che
   mostra quale regola è scattata.
 - Una regola può compilare un valore da una colonna delle righe di tabella.
-- Campi e dimensioni possono essere svuotati singolarmente, le righe senza
-  importo possono essere eliminate, e le regole continuano a funzionare sui
-  campi passati da testo a menu a tendina.
+- Campi e dimensioni possono essere svuotati singolarmente, le voci di riga
+  possono essere eliminate (incluse le righe senza importo), e le regole
+  continuano a funzionare sui campi passati da testo a menu a tendina.
 
 **Corrispondenza degli ordini di acquisto**
 
@@ -196,7 +199,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## R1.4 — Sandbox 27 gennaio 2027 · Produzione 3 febbraio 2027
+## R1.4 — Sandbox 7 aprile 2027 · Produzione 15 aprile 2027
 
 **Importazione**
 
@@ -217,8 +220,9 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 - Nella schermata di corrispondenza vengono proposte solo le righe PO
   utilizzabili.
-- Più entrate di magazzino possono corrispondere a una riga della fattura, e
-  le unità di misura vengono convertite durante la corrispondenza della
+- Le fatture con corrispondenza in eccesso, in cui la quantità fatturata supera
+  la quantità ricevuta, vengono riconosciute nella schermata di corrispondenza,
+  e le unità di misura vengono convertite durante la corrispondenza della
   fattura.
 
 **Altro**
@@ -230,7 +234,7 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 
 ---
 
-## R1.5 — Sandbox 10 marzo 2027 · Produzione 17 marzo 2027
+## R1.5 — Sandbox 18 maggio 2027 · Produzione 27 maggio 2027
 
 **Auto Accounting**
 
@@ -259,6 +263,50 @@ Gli hotfix tra una release e l'altra sono documentati nelle
 - L'ordine di esecuzione degli script del documento è visibile nel frontend.
 - Invio e Tab spostano tra i campi da tastiera.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6 luglio 2027 · Produzione 15 luglio 2027
+
+**Impostazioni**
+
+- Le impostazioni possono essere cercate in tutti gli interruttori e in tutte
+  le sottopagine.
+- La configurazione del server e-mail permette di sostituire un secret OAuth o
+  client secret scaduto senza dover configurare di nuovo la casella di posta.
+- La mappa dei numeri articolo fornitore (tabella di conversione dei numeri
+  articolo) può essere compilata da un'importazione CSV.
+
+**Auto Accounting**
+
+- Le dimensioni vengono memorizzate in una nuova struttura, così i set di
+  dimensioni più ampi si caricano più velocemente.
+
+---
+
+## R1.7 — Sandbox 21 settembre 2027 · Produzione 30 settembre 2027
+
+**Auto Accounting nella schermata di approvazione**
+
+- Gli approvatori possono lavorare con Auto Accounting direttamente nella
+  schermata di approvazione.
+- L'approvazione può essere subordinata a campi contabili come il conto
+  contabile o il paese, con una correzione nella contabilità fornitori quando
+  un documento viene restituito.
+- Un menu a tendina per il codice imposta in Auto Accounting senza dover
+  configurare più righe di imposta.
+
+---
+
+## R2.0 — Sandbox da definire · Produzione da definire
+
+**Auto Accounting**
+
+- I campi basati su un elenco accettano anche testo libero.
+- I campi obbligatori vengono validati.
+- Le previsioni del modello compilano automaticamente i campi contabili
+  (modalità ibrida con il modello di previsione addestrato), con una traccia di
+  audit di ciò che il modello ha compilato.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

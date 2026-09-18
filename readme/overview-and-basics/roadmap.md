@@ -1,6 +1,6 @@
 # DocBits Yol Haritası
 
-_15 Eylül 2026 itibarıyla planlama durumu. Her sürüm, planlanan sandbox
+_18 Eylül 2026 itibarıyla planlama durumu. Her sürüm, planlanan sandbox
 tarihini (müşterilerin test edebileceği tarih) ve planlanan üretim tarihini
 listeliyor. Temalar sürüm için planlananları anlatıyor, halihazırda
 yayınlananları değil; kapsam ve tarihler değişebilir. Sürümler arasındaki
@@ -8,15 +8,18 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 
 | Sürüm | Sandbox | Üretim |
 |---|---|---|
-| R1.1 | 16 Eylül 2026 | 23 Eylül 2026 |
-| R1.2 | 21 Ekim 2026 | 28 Ekim 2026 |
-| R1.3 | 25 Kasım 2026 | 2 Aralık 2026 |
-| R1.4 | 27 Ocak 2027 | 3 Şubat 2027 |
-| R1.5 | 10 Mart 2027 | 17 Mart 2027 |
+| R1.1 | 5 Ekim 2026 | 14 Ekim 2026 |
+| R1.2 | 23 Kasım 2026 | 2 Aralık 2026 |
+| R1.3 | 8 Şubat 2027 | 17 Şubat 2027 |
+| R1.4 | 7 Nisan 2027 | 15 Nisan 2027 |
+| R1.5 | 18 Mayıs 2027 | 27 Mayıs 2027 |
+| R1.6 | 6 Temmuz 2027 | 15 Temmuz 2027 |
+| R1.7 | 21 Eylül 2027 | 30 Eylül 2027 |
+| R2.0 | daha sonra duyurulacak | daha sonra duyurulacak |
 
 ---
 
-## R1.1 — Sandbox 16 Eylül 2026 · Üretim 23 Eylül 2026
+## R1.1 — Sandbox 5 Ekim 2026 · Üretim 14 Ekim 2026
 
 **Dönüşüm kuralları ve yerleşimler**
 
@@ -27,6 +30,8 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 - Yerleşim seçimi, belgenin nereden geldiğinden bağımsız çalışıyor.
 - Başlık alanları ve tablo sütunlarındaki alan etiketleri için net öncelik
   kuralları.
+- Silinen bir tablo sütunu yeniden atanabiliyor ve tedarikçi kalem fiyat
+  tablosu tüm sütunlarını gösteriyor.
 
 **Onay ve doğrulama ekranları**
 
@@ -48,12 +53,13 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 
 **İş akışları ve görevler**
 
-- Bir "Yeni iş akışı" düğmesi, gelişmiş iş akışları için günlükler; bir alanı
-  veya onay kutusunu değiştiren iş akışı adımları güvenilir biçimde
-  uygulanıyor.
-- Satın alma faturası iş akışlarında onay e-postaları atanan onaylayanlara
-  ulaşıyor.
+- Bir "Yeni iş akışı" düğmesi, gelişmiş iş akışları için günlükler, daha
+  anlaşılır bir watchdog günlük ekranı; bir alanı veya onay kutusunu
+  değiştiren iş akışı adımları güvenilir biçimde uygulanıyor.
+- Bir karar ağacına satır eklemek, kimlikleri göstermek yerine kullanıcı
+  adlarını koruyor.
 - Bir belgenin her durum değişikliği günlüğe kaydediliyor.
+- Yeni bir e-posta şablonu oluşturmak yeniden çalışıyor.
 
 **İçe aktarma**
 
@@ -64,19 +70,19 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 - FTP içe aktarma, taşıma ve arşivlemenin yanına gerçek bir içe aktarma
   sonrası silme seçeneği kazanıyor.
 - Tarayıcı uygulamasından yükleme yeniden çalışıyor.
+- ABD bölgesinde yüklenen satın alma siparişi BOD dosyaları ABD bölgesinde
+  kalıyor.
 
 **Belge işleme ve çıkarma**
 
 - Barkod hizmeti takıldığında belge, süresiz olarak "İşleniyor" durumunda
   kalmak yerine hatayı gösteriyor.
-- "Sayfalarla sınırla" yalnızca OCR'ı ve sayfa sayımını sınırlıyor; artık
-  belgeden sayfa kesmiyor.
-- Bir belgeyi kaydetmek ilgisiz verilere dokunmuyor.
-- Çıkarma için yeni, daha ucuz bir yapay zeka model kademesi ("Eco") ve yapay
-  zeka tablosunda tablo etiketleri uygulamak yeniden çalışıyor.
-- Bir ZUGFeRD PDF'ini başka bir PDF ile birleştirmek e-fatura verisini
-  koruyor; UBL e-belge şablonları uyarlandı; belirli tedarikçi
-  yerleşimlerinde tutarlar, vergi oranları ve satın alma siparişi numaraları
+- Çıkarma için yeni, daha ucuz bir yapay zeka model kademesi ("Eco").
+- Yapılandırılmış yapay zeka çıkarmasında eğitilmiş tedarikçi kalem
+  numaraları eğitilmiş kalıyor; kalem numarası ile tedarikçi kalem numarası
+  artık yer değiştirmiyor.
+- UBL e-belge şablonları uyarlandı; belirli tedarikçi yerleşimlerinde
+  tutarlar, vergi oranları, birim fiyatlar ve satın alma siparişi numaraları
   için çıkarma düzeltmeleri.
 - Ek tarih biçimleri tanınıyor.
 
@@ -85,42 +91,41 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 - Eşleştirme bir miktar sütunu gerektiriyor, temel birim miktarı başına
   fiyatı kullanıyor ve son satır yedek kuralı müşteri başına açılıp
   kapatılabiliyor.
+- İrsaliye satırları tek tek seçilebiliyor.
 - E-belge ekranı 250'den fazla satırı olan faturalarda artık donmuyor.
-- Tanılama, satın alma siparişi satırının fiyatı olmasa bile miktarı ölçüyor.
 
 **Touchless Intelligence**
 
-- Touchless raporunda daha fazla ayrıntı; bir satın alma siparişi engeli,
-  alan doğrulama hatası olarak değil olduğu gibi bildiriliyor.
+- Touchless raporunda daha fazla ayrıntı; Touchless onay kutusu kaydedilen
+  ayarı yansıtıyor.
 
 **Pano**
 
 - Pano arama başına 10.000 belgeye kadar tutabiliyor.
 - İskonto vade tarihi ve fatura vade tarihi yerleşim alanı olarak
   kullanılabiliyor ve içe aktarmada dolduruluyor.
-- Bir pano kaydedildiğinde paylaşılan pano kullanıcıları korunuyor; "Atanan"
-  ve "Güncelleyen" doğru kişiyi gösteriyor.
-- Belge izinleri tam metin dizininde de uygulanıyor.
+- Bir pano kaydedildiğinde paylaşılan pano kullanıcıları korunuyor ve
+  "Güncelleyen" doğru kişiyi gösteriyor.
+- Arşivlenen belgeler "Arşivlendi" durumundan geri çıkarılabiliyor.
 
 **Dışa aktarma ve EDI**
 
-- BOD dışa aktarma 30 karakterden uzun tablo sütun değerlerini koruyor.
-- Ek fatura bilgileri için ilave bir Infor M3 dışa aktarma adımı ve satır
-  türü 5 dışa aktarmalarında birim fiyatlar.
+- Ek fatura bilgileri için ilave bir Infor M3 dışa aktarma adımı.
+- Birden çok konteyner numarası içeren bir çeki listesi, konteyner başına bir
+  kayıt olarak dışa aktarılıyor.
 - Bir mal kabul teslimatını yeniden içe aktarmak artık yinelenen anahtar
-  nedeniyle başarısız olmuyor.
-- Fatura (810), satın alma siparişi (850), sipariş onayı (855), sevkiyat
-  bildirimi (856, WMS dışa aktarma dahil) ve değişiklik siparişi (860) için
-  EDI X12 eşlemeleri güncellendi.
+  nedeniyle başarısız olmuyor ve mal kabul teslimatı BOD'ları doğru sırada
+  uygulanıyor.
+- Fatura, satın alma siparişi ve sipariş onayı için EDI eşlemeleri
+  güncellendi.
 
 **Güvenlik**
 
-- Tedarikçi hesap planı eşlemeleri bağlı SQL parametreleriyle saklanıyor ve
-  API anahtarları için kuruluş denetimi her ortamda uygulanıyor.
+- API anahtarları için kuruluş denetimi her ortamda uygulanıyor.
 
 ---
 
-## R1.2 — Sandbox 21 Ekim 2026 · Üretim 28 Ekim 2026
+## R1.2 — Sandbox 23 Kasım 2026 · Üretim 2 Aralık 2026
 
 **Onay ve satın alma siparişi eşleştirmesi**
 
@@ -146,8 +151,6 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 
 - "Alt kuruluş ata" betiği bir dönüşüm kuralına dönüşüyor.
 - Standart sütunlar bir belge türünden kaldırılabiliyor.
-- Bir satın alma siparişi değişiklik talebi akışı ve Infor dışa aktarma
-  eşlemesinde belge sahibi.
 
 **Dışa aktarma**
 
@@ -156,7 +159,7 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 
 ---
 
-## R1.3 — Sandbox 25 Kasım 2026 · Üretim 2 Aralık 2026
+## R1.3 — Sandbox 8 Şubat 2027 · Üretim 17 Şubat 2027
 
 **Auto Accounting Rule Manager**
 
@@ -164,9 +167,9 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
   boyutları otomatik atıyor; hangi kuralın tetiklendiğini gösteren bir
   denetim ekranı eşlik ediyor.
 - Bir kural, bir tablo satırı sütunundan değer doldurabiliyor.
-- Alanlar ve boyutlar tek tek temizlenebiliyor, tutarı olmayan satırlar
-  silinebiliyor ve kurallar metinden açılır listeye dönüştürülen alanlarda
-  çalışmaya devam ediyor.
+- Alanlar ve boyutlar tek tek temizlenebiliyor, satır kalemleri (tutarı
+  olmayan satırlar dahil) silinebiliyor ve kurallar metinden açılır listeye
+  dönüştürülen alanlarda çalışmaya devam ediyor.
 
 **Satın alma siparişi eşleştirmesi**
 
@@ -184,7 +187,7 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 
 ---
 
-## R1.4 — Sandbox 27 Ocak 2027 · Üretim 3 Şubat 2027
+## R1.4 — Sandbox 7 Nisan 2027 · Üretim 15 Nisan 2027
 
 **İçe aktarma**
 
@@ -205,8 +208,9 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 
 - Eşleştirme ekranında yalnızca uygun satın alma siparişi satırları
   sunuluyor.
-- Birden çok ambar girişi tek bir fatura satırıyla eşleşebiliyor ve fatura
-  eşleştirmesi sırasında ölçü birimleri dönüştürülüyor.
+- Faturalanan miktarın alınan miktarı aştığı fazla eşleşmiş faturalar
+  eşleştirme ekranında tanınıyor ve fatura eşleştirmesi sırasında ölçü
+  birimleri dönüştürülüyor.
 
 **Diğer**
 
@@ -216,7 +220,7 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 
 ---
 
-## R1.5 — Sandbox 10 Mart 2027 · Üretim 17 Mart 2027
+## R1.5 — Sandbox 18 Mayıs 2027 · Üretim 27 Mayıs 2027
 
 **Auto Accounting**
 
@@ -245,6 +249,47 @@ hotfixler [Sürüm Notları](release-notes/README.md) sayfasında belgeleniyor._
 - Belge betiklerinin yürütme sırası ön yüzde görünüyor.
 - Enter ve Tab tuşları klavyeden alanlar arasında geçiş sağlıyor.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6 Temmuz 2027 · Üretim 15 Temmuz 2027
+
+**Ayarlar**
+
+- Ayarlarda tüm anahtarlar ve alt sayfalar genelinde arama yapılabiliyor.
+- E-posta sunucusu kurulumu, süresi dolan bir OAuth veya istemci gizli
+  anahtarını posta kutusunu yeniden kurmadan değiştirmenize olanak tanıyor.
+- Tedarikçi kalem numarası eşlemesi (kalem numarası dönüşüm tablosu) bir CSV
+  içe aktarmasıyla doldurulabiliyor.
+
+**Auto Accounting**
+
+- Boyutlar, büyük boyut kümelerinin daha hızlı yüklenmesi için yeni bir
+  yapıda saklanıyor.
+
+---
+
+## R1.7 — Sandbox 21 Eylül 2027 · Üretim 30 Eylül 2027
+
+**Onay ekranında Auto Accounting**
+
+- Onaylayanlar, Auto Accounting ile doğrudan onay ekranında çalışabiliyor.
+- Onay, hesap kodu veya ülke gibi muhasebe alanlarına bağlanabiliyor; bir
+  belge geri gönderildiğinde borç hesaplarında bir düzeltme yapılıyor.
+- Birden çok vergi satırı kurmadan Auto Accounting'de bir vergi kodu açılır
+  listesi.
+
+---
+
+## R2.0 — Sandbox daha sonra duyurulacak · Üretim daha sonra duyurulacak
+
+**Auto Accounting**
+
+- Bir listeye dayanan alanlar serbest metin de kabul ediyor.
+- Zorunlu alanlar doğrulanıyor.
+- Model tahminleri muhasebe alanlarını otomatik dolduruyor (eğitilmiş tahmin
+  modeliyle hibrit mod); modelin neyi doldurduğuna dair bir denetim izi
+  tutuluyor.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

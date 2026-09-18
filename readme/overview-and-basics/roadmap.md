@@ -1,6 +1,6 @@
 # DocBits Roadmap
 
-_Planungsstand 15. September 2026. Jedes Release nennt den geplanten
+_Planungsstand 18. September 2026. Jedes Release nennt den geplanten
 Sandbox-Termin (ab dem Kunden es testen können) und den geplanten
 Produktionstermin. Die Themen beschreiben, was für das Release geplant ist,
 nicht, was bereits ausgeliefert wurde; Umfang und Termine können sich
@@ -9,15 +9,18 @@ verschieben. Hotfixes zwischen den Releases sind in den
 
 | Release | Sandbox | Produktion |
 |---|---|---|
-| R1.1 | 16. September 2026 | 23. September 2026 |
-| R1.2 | 21. Oktober 2026 | 28. Oktober 2026 |
-| R1.3 | 25. November 2026 | 2. Dezember 2026 |
-| R1.4 | 27. Januar 2027 | 3. Februar 2027 |
-| R1.5 | 10. März 2027 | 17. März 2027 |
+| R1.1 | 5. Oktober 2026 | 14. Oktober 2026 |
+| R1.2 | 23. November 2026 | 2. Dezember 2026 |
+| R1.3 | 8. Februar 2027 | 17. Februar 2027 |
+| R1.4 | 7. April 2027 | 15. April 2027 |
+| R1.5 | 18. Mai 2027 | 27. Mai 2027 |
+| R1.6 | 6. Juli 2027 | 15. Juli 2027 |
+| R1.7 | 21. September 2027 | 30. September 2027 |
+| R2.0 | wird noch bekannt gegeben | wird noch bekannt gegeben |
 
 ---
 
-## R1.1 — Sandbox 16. September 2026 · Produktion 23. September 2026
+## R1.1 — Sandbox 5. Oktober 2026 · Produktion 14. Oktober 2026
 
 **Transformationsregeln und Layouts**
 
@@ -28,6 +31,8 @@ verschieben. Hotfixes zwischen den Releases sind in den
 - Die Layoutauswahl funktioniert unabhängig davon, woher ein Dokument stammt.
 - Klare Vorrangregeln für Feldbezeichnungen bei Kopffeldern und
   Tabellenspalten.
+- Eine Tabellenspalte lässt sich nach dem Löschen erneut zuweisen, und die
+  Lieferanten-Artikelpreistabelle zeigt alle ihre Spalten.
 
 **Genehmigungs- und Validierungsbildschirm**
 
@@ -50,12 +55,13 @@ verschieben. Hotfixes zwischen den Releases sind in den
 
 **Workflows und Aufgaben**
 
-- Eine Schaltfläche „Neuer Workflow“, Logs für erweiterte Workflows, und
-  Workflow-Schritte, die ein Feld oder eine Checkbox ändern, greifen
-  zuverlässig.
-- Genehmigungs-E-Mails erreichen die zugewiesenen Genehmiger in
-  Eingangsrechnungs-Workflows.
+- Eine Schaltfläche „Neuer Workflow“, Logs für erweiterte Workflows, ein
+  übersichtlicherer Watchdog-Log-Bildschirm, und Workflow-Schritte, die ein
+  Feld oder eine Checkbox ändern, greifen zuverlässig.
+- Das Hinzufügen einer Zeile in einem Entscheidungsbaum behält die
+  Benutzernamen bei, statt IDs anzuzeigen.
 - Jede Statusänderung eines Dokuments wird protokolliert.
+- Das Anlegen einer neuen E-Mail-Vorlage funktioniert wieder.
 
 **Import**
 
@@ -66,20 +72,20 @@ verschieben. Hotfixes zwischen den Releases sind in den
 - Der FTP-Import erhält neben Verschieben und Archivieren eine echte Option
   „Nach dem Import löschen“.
 - Der Upload aus der Scanner-App funktioniert wieder.
+- Bestell-BOD-Dateien, die in der US-Region hochgeladen werden, bleiben in der
+  US-Region.
 
 **Dokumentenverarbeitung und Extraktion**
 
 - Wenn der Barcode-Service hängt, zeigt das Dokument den Fehler an, statt
   unbegrenzt in „Processing“ zu bleiben.
-- „Restrict to pages“ begrenzt nur noch OCR und Seitenzählung; es schneidet
-  keine Seiten mehr vom Dokument ab.
-- Das Speichern eines Dokuments lässt nicht betroffene Daten unangetastet.
-- Eine neue, günstigere KI-Modellstufe („Eco“) für die Extraktion, und das
-  Anwenden von Tabellen-Tags auf die KI-Tabelle funktioniert wieder.
-- Das Zusammenführen einer ZUGFeRD-PDF mit einer anderen PDF behält die
-  E-Rechnungsdaten; UBL-E-Dokument-Vorlagen werden angepasst;
-  Extraktionskorrekturen für Beträge, Steuersätze und Bestellnummern bei
-  bestimmten Lieferantenlayouts.
+- Eine neue, günstigere KI-Modellstufe („Eco“) für die Extraktion.
+- Bei der strukturierten KI-Extraktion bleiben trainierte
+  Lieferanten-Artikelnummern trainiert, und Artikelnummer und
+  Lieferanten-Artikelnummer werden nicht mehr vertauscht.
+- UBL-E-Dokument-Vorlagen werden angepasst; Extraktionskorrekturen für
+  Beträge, Steuersätze, Einheitspreise und Bestellnummern bei bestimmten
+  Lieferantenlayouts.
 - Zusätzliche Datumsformate werden erkannt.
 
 **Bestellabgleich**
@@ -87,15 +93,14 @@ verschieben. Hotfixes zwischen den Releases sind in den
 - Der Abgleich setzt eine Mengenspalte voraus, verwendet den Preis pro
   Basismengeneinheit, und der Fallback auf die letzte Position lässt sich pro
   Kunde umschalten.
+- Lieferscheinpositionen lassen sich einzeln auswählen.
 - Der E-Dokument-Bildschirm friert bei Rechnungen mit mehr als 250 Positionen
   nicht mehr ein.
-- Die Diagnose misst die Menge auch dann, wenn eine Bestellposition keinen
-  Preis hat.
 
 **Touchless Intelligence**
 
-- Mehr Details im Touchless-Bericht, und ein Bestell-Blocker wird als solcher
-  gemeldet statt als fehlgeschlagene Feldvalidierung.
+- Mehr Details im Touchless-Bericht, und die Touchless-Checkbox spiegelt die
+  gespeicherte Einstellung wider.
 
 **Dashboard**
 
@@ -103,29 +108,30 @@ verschieben. Hotfixes zwischen den Releases sind in den
 - Skontofälligkeitsdatum und Rechnungsfälligkeitsdatum stehen als Layoutfelder
   zur Verfügung und werden beim Import gefüllt.
 - Freigegebene Dashboard-Benutzer bleiben beim Speichern eines Dashboards
-  erhalten; „Assigned to“ und „Updated by“ zeigen die richtige Person.
-- Dokumentberechtigungen gelten auch für den Volltextindex.
+  erhalten, und „Updated by“ zeigt die richtige Person.
+- Archivierte Dokumente lassen sich aus dem Status „Archived“ wieder
+  zurückholen.
 
 **Export und EDI**
 
-- Der BOD-Export behält Tabellenspaltenwerte mit mehr als 30 Zeichen.
 - Ein zusätzlicher Exportschritt nach Infor M3 für weitere
-  Rechnungsinformationen, und Einheitspreise in Exporten des Positionstyps 5.
+  Rechnungsinformationen.
+- Eine Packliste mit mehreren Containernummern wird als ein Datensatz pro
+  Container exportiert.
 - Der erneute Import einer Receive Delivery scheitert nicht mehr an einem
-  doppelten Schlüssel.
-- Die EDI-X12-Mappings für Rechnung (810), Bestellung (850),
-  Auftragsbestätigung (855), Lieferavis (856, einschließlich WMS-Export) und
-  Bestelländerung (860) werden aktualisiert.
+  doppelten Schlüssel, und Receive-Delivery-BODs werden in der richtigen
+  Reihenfolge angewendet.
+- Die EDI-Mappings für Rechnung, Bestellung und Auftragsbestätigung werden
+  aktualisiert.
 
 **Sicherheit**
 
-- Lieferanten-Kontenplan-Mappings werden mit gebundenen SQL-Parametern
-  gespeichert, und die Organisationsprüfung für API-Schlüssel wird in jeder
-  Umgebung durchgesetzt.
+- Die Organisationsprüfung für API-Schlüssel wird in jeder Umgebung
+  durchgesetzt.
 
 ---
 
-## R1.2 — Sandbox 21. Oktober 2026 · Produktion 28. Oktober 2026
+## R1.2 — Sandbox 23. November 2026 · Produktion 2. Dezember 2026
 
 **Genehmigung und Bestellabgleich**
 
@@ -153,8 +159,6 @@ verschieben. Hotfixes zwischen den Releases sind in den
 
 - Das Skript „Set sub-organisation“ wird zu einer Transformationsregel.
 - Standardspalten lassen sich aus einem Dokumenttyp entfernen.
-- Ein Ablauf für Bestelländerungsanfragen und der Dokumenteigentümer im
-  Infor-Export-Mapping.
 
 **Export**
 
@@ -163,7 +167,7 @@ verschieben. Hotfixes zwischen den Releases sind in den
 
 ---
 
-## R1.3 — Sandbox 25. November 2026 · Produktion 2. Dezember 2026
+## R1.3 — Sandbox 8. Februar 2027 · Produktion 17. Februar 2027
 
 **Auto Accounting Rule Manager**
 
@@ -171,9 +175,9 @@ verschieben. Hotfixes zwischen den Releases sind in den
   Unterorganisation und Dokumenttyp, mit einem Audit-Bildschirm, der zeigt,
   welche Regel gegriffen hat.
 - Eine Regel kann einen Wert aus einer Spalte der Tabellenpositionen befüllen.
-- Felder und Dimensionen lassen sich einzeln leeren, Positionen ohne Betrag
-  lassen sich löschen, und Regeln funktionieren weiter bei Feldern, die von
-  Text auf Dropdown umgestellt wurden.
+- Felder und Dimensionen lassen sich einzeln leeren, Positionen lassen sich
+  löschen (auch Positionen ohne Betrag), und Regeln funktionieren weiter bei
+  Feldern, die von Text auf Dropdown umgestellt wurden.
 
 **Bestellabgleich**
 
@@ -192,7 +196,7 @@ verschieben. Hotfixes zwischen den Releases sind in den
 
 ---
 
-## R1.4 — Sandbox 27. Januar 2027 · Produktion 3. Februar 2027
+## R1.4 — Sandbox 7. April 2027 · Produktion 15. April 2027
 
 **Import**
 
@@ -213,7 +217,8 @@ verschieben. Hotfixes zwischen den Releases sind in den
 
 - Auf dem Abgleichbildschirm werden nur noch in Frage kommende
   Bestellpositionen angeboten.
-- Mehrere Wareneingänge können auf eine Rechnungsposition passen, und
+- Rechnungen mit Mehrmenge, bei denen die in Rechnung gestellte Menge die
+  erhaltene Menge übersteigt, werden auf dem Abgleichbildschirm erkannt, und
   Maßeinheiten werden beim Rechnungsabgleich umgerechnet.
 
 **Sonstiges**
@@ -225,7 +230,7 @@ verschieben. Hotfixes zwischen den Releases sind in den
 
 ---
 
-## R1.5 — Sandbox 10. März 2027 · Produktion 17. März 2027
+## R1.5 — Sandbox 18. Mai 2027 · Produktion 27. Mai 2027
 
 **Auto Accounting**
 
@@ -254,6 +259,50 @@ verschieben. Hotfixes zwischen den Releases sind in den
 - Die Ausführungsreihenfolge der Dokumentskripte ist im Frontend sichtbar.
 - Enter und Tab springen per Tastatur von Feld zu Feld.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6. Juli 2027 · Produktion 15. Juli 2027
+
+**Einstellungen**
+
+- Die Einstellungen lassen sich über alle Schalter und Unterseiten hinweg
+  durchsuchen.
+- In der E-Mail-Server-Einrichtung können Sie ein abgelaufenes OAuth- oder
+  Client-Secret ersetzen, ohne das Postfach neu einzurichten.
+- Die Lieferanten-Artikelnummern-Zuordnung (Umschlüsselungstabelle für
+  Artikelnummern) lässt sich per CSV-Import befüllen.
+
+**Auto Accounting**
+
+- Dimensionen werden in einer neuen Struktur gespeichert, damit große
+  Dimensionssätze schneller laden.
+
+---
+
+## R1.7 — Sandbox 21. September 2027 · Produktion 30. September 2027
+
+**Auto Accounting auf dem Genehmigungsbildschirm**
+
+- Genehmiger können Auto Accounting direkt auf dem Genehmigungsbildschirm
+  nutzen.
+- Die Genehmigung lässt sich an Buchhaltungsfelder wie Sachkonto oder Land
+  knüpfen, mit einer Kreditorenkorrektur, wenn ein Dokument zurückgegeben
+  wird.
+- Ein Steuercode-Dropdown in Auto Accounting, ohne mehrere Steuerzeilen
+  einrichten zu müssen.
+
+---
+
+## R2.0 — Sandbox wird noch bekannt gegeben · Produktion wird noch bekannt gegeben
+
+**Auto Accounting**
+
+- Felder, die auf einer Liste basieren, akzeptieren auch Freitext.
+- Pflichtfelder werden validiert.
+- Modellvorhersagen füllen Buchhaltungsfelder automatisch (Hybridmodus mit dem
+  trainierten Vorhersagemodell), mit einem Audit-Trail dessen, was das Modell
+  befüllt hat.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

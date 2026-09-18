@@ -1,6 +1,6 @@
 # DocBits Roadmap
 
-_Planningsstand per 15 september 2026. Elke release vermeldt de geplande
+_Planningsstand per 18 september 2026. Elke release vermeldt de geplande
 sandbox-datum (wanneer klanten de release kunnen testen) en de geplande
 productiedatum. De thema's beschrijven wat voor de release is gepland, niet wat
 al is uitgeleverd; omvang en data kunnen verschuiven. Hotfixes tussen releases
@@ -8,15 +8,18 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 | Release | Sandbox | Productie |
 |---|---|---|
-| R1.1 | 16 september 2026 | 23 september 2026 |
-| R1.2 | 21 oktober 2026 | 28 oktober 2026 |
-| R1.3 | 25 november 2026 | 2 december 2026 |
-| R1.4 | 27 januari 2027 | 3 februari 2027 |
-| R1.5 | 10 maart 2027 | 17 maart 2027 |
+| R1.1 | 5 oktober 2026 | 14 oktober 2026 |
+| R1.2 | 23 november 2026 | 2 december 2026 |
+| R1.3 | 8 februari 2027 | 17 februari 2027 |
+| R1.4 | 7 april 2027 | 15 april 2027 |
+| R1.5 | 18 mei 2027 | 27 mei 2027 |
+| R1.6 | 6 juli 2027 | 15 juli 2027 |
+| R1.7 | 21 september 2027 | 30 september 2027 |
+| R2.0 | nog aan te kondigen | nog aan te kondigen |
 
 ---
 
-## R1.1 — Sandbox 16 september 2026 · Productie 23 september 2026
+## R1.1 — Sandbox 5 oktober 2026 · Productie 14 oktober 2026
 
 **Transformatieregels en layouts**
 
@@ -26,6 +29,8 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
   condities.
 - Layoutselectie werkt onafhankelijk van de herkomst van een document.
 - Duidelijke voorrangsregels voor veldlabels op kopvelden en tabelkolommen.
+- Een tabelkolom kan opnieuw worden toegewezen nadat deze is verwijderd, en de
+  prijstabel voor leveranciersartikelen toont al haar kolommen.
 
 **Goedkeurings- en validatieschermen**
 
@@ -46,11 +51,13 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 **Workflows en taken**
 
-- Een knop "New workflow", logs voor geavanceerde workflows, en workflowstappen
-  die een veld of selectievakje wijzigen, worden betrouwbaar toegepast.
-- Goedkeurings-e-mails bereiken de toegewezen goedkeurders in
-  inkoopfactuurworkflows.
+- Een knop "New workflow", logs voor geavanceerde workflows, een
+  overzichtelijker watchdog-logscherm, en workflowstappen die een veld of
+  selectievakje wijzigen, worden betrouwbaar toegepast.
+- Bij het toevoegen van een regel in een beslisboom blijven de gebruikersnamen
+  behouden in plaats van dat er ID's worden getoond.
 - Elke statuswijziging van een document wordt gelogd.
+- Het aanmaken van een nieuwe e-mailsjabloon werkt weer.
 
 **Import**
 
@@ -61,19 +68,19 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 - FTP-import krijgt een echte optie "verwijderen na import" naast verplaatsen
   en archiveren.
 - De upload vanuit de scanner-app werkt weer.
+- Purchase order BOD-bestanden die in de US-regio worden geüpload, blijven in
+  de US-regio.
 
 **Documentverwerking en extractie**
 
 - Wanneer de barcodeservice blijft hangen, toont het document de fout in plaats
   van eindeloos in "Processing" te blijven staan.
-- "Restrict to pages" beperkt alleen OCR en het tellen van pagina's; het knipt
-  geen pagina's meer van het document af.
-- Een document opslaan laat niet-gerelateerde gegevens ongemoeid.
-- Een nieuw, goedkoper AI-modelniveau ("Eco") voor extractie, en tabeltags
-  toepassen op de AI-tabel werkt weer.
-- Het samenvoegen van een ZUGFeRD-PDF met een andere PDF behoudt de
-  e-factuurgegevens; UBL e-documentsjablonen zijn aangepast; extractiecorrecties
-  voor bedragen, btw-tarieven en purchase order nummers op specifieke
+- Een nieuw, goedkoper AI-modelniveau ("Eco") voor extractie.
+- Bij gestructureerde AI-extractie blijven getrainde leveranciersartikelnummers
+  getraind, en artikelnummer en leveranciersartikelnummer worden niet meer
+  verwisseld.
+- UBL e-documentsjablonen zijn aangepast; extractiecorrecties voor bedragen,
+  btw-tarieven, eenheidsprijzen en purchase order nummers op specifieke
   leverancierslayouts.
 - Extra datumformaten worden herkend.
 
@@ -82,13 +89,13 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 - Matching vereist een hoeveelheidskolom, gebruikt de prijs per hoeveelheid in
   de basiseenheid, en de fallback op de laatste regel kan per klant worden in-
   of uitgeschakeld.
+- Leveringsbonregels kunnen afzonderlijk worden geselecteerd.
 - Het e-documentscherm bevriest niet meer bij facturen met meer dan 250 regels.
-- Diagnostiek meet de hoeveelheid ook wanneer een PO regel geen prijs heeft.
 
 **Touchless Intelligence**
 
-- Meer detail in het Touchless-rapport, en een blokkade door de purchase order
-  wordt als zodanig gemeld in plaats van als een mislukte veldvalidatie.
+- Meer detail in het Touchless-rapport, en het Touchless-selectievakje
+  weerspiegelt de opgeslagen instelling.
 
 **Dashboard**
 
@@ -96,30 +103,28 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 - Kortingsvervaldatum en factuurvervaldatum zijn beschikbaar als layoutvelden en
   worden bij import ingevuld.
 - Gebruikers waarmee een dashboard is gedeeld, blijven behouden wanneer het
-  dashboard wordt opgeslagen; "Assigned to" en "Updated by" tonen de juiste
-  persoon.
-- Documentrechten gelden ook voor de volledige-tekstindex.
+  dashboard wordt opgeslagen, en "Updated by" toont de juiste persoon.
+- Gearchiveerde documenten kunnen weer uit de status "Archived" worden
+  gehaald.
 
 **Export en EDI**
 
-- BOD-export behoudt tabelkolomwaarden die langer zijn dan 30 tekens.
-- Een extra Infor M3-exportstap voor aanvullende factuurinformatie, en
-  eenheidsprijzen in exports van regeltype 5.
+- Een extra Infor M3-exportstap voor aanvullende factuurinformatie.
+- Een paklijst met meerdere containernummers wordt geëxporteerd als één record
+  per container.
 - Het opnieuw importeren van een receive delivery mislukt niet langer op een
-  dubbele sleutel.
-- EDI X12-mappings voor factuur (810), purchase order (850), orderbevestiging
-  (855), verzendbericht (856, inclusief WMS-export) en orderwijziging (860)
-  zijn bijgewerkt.
+  dubbele sleutel, en receive delivery BOD's worden in de juiste volgorde
+  toegepast.
+- EDI-mappings voor factuur, purchase order en orderbevestiging zijn
+  bijgewerkt.
 
 **Beveiliging**
 
-- Rekeningschema-mappings van leveranciers worden opgeslagen met gebonden
-  SQL-parameters, en de organisatiecontrole voor API-sleutels wordt in elke
-  omgeving afgedwongen.
+- De organisatiecontrole voor API-sleutels wordt in elke omgeving afgedwongen.
 
 ---
 
-## R1.2 — Sandbox 21 oktober 2026 · Productie 28 oktober 2026
+## R1.2 — Sandbox 23 november 2026 · Productie 2 december 2026
 
 **Goedkeuring en purchase order matching**
 
@@ -146,8 +151,6 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 - Het script "Set sub-organisation" wordt een transformatieregel.
 - Standaardkolommen kunnen uit een documenttype worden verwijderd.
-- Een flow voor PO-wijzigingsverzoeken en de documenteigenaar in de
-  Infor-exportmapping.
 
 **Export**
 
@@ -156,7 +159,7 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ---
 
-## R1.3 — Sandbox 25 november 2026 · Productie 2 december 2026
+## R1.3 — Sandbox 8 februari 2027 · Productie 17 februari 2027
 
 **Auto Accounting Rule Manager**
 
@@ -164,9 +167,9 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
   suborganisatie en documenttype, met een auditscherm dat toont welke regel is
   toegepast.
 - Een regel kan een waarde vullen vanuit een kolom van een tabelregel.
-- Velden en dimensies kunnen afzonderlijk worden gewist, tabelregels zonder
-  bedrag kunnen worden verwijderd, en de regels blijven werken op velden die
-  van tekst naar keuzelijst zijn gewijzigd.
+- Velden en dimensies kunnen afzonderlijk worden gewist, regelitems kunnen
+  worden verwijderd (ook regels zonder bedrag), en de regels blijven werken op
+  velden die van tekst naar keuzelijst zijn gewijzigd.
 
 **Purchase order matching**
 
@@ -184,7 +187,7 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ---
 
-## R1.4 — Sandbox 27 januari 2027 · Productie 3 februari 2027
+## R1.4 — Sandbox 7 april 2027 · Productie 15 april 2027
 
 **Import**
 
@@ -204,7 +207,8 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 **Purchase order matching**
 
 - Alleen geschikte PO regels worden op het matchingscherm aangeboden.
-- Meerdere magazijnboekingen kunnen met één factuurregel matchen, en
+- Overgematchte facturen, waarbij de gefactureerde hoeveelheid de ontvangen
+  hoeveelheid overschrijdt, worden op het matchingscherm herkend, en
   meeteenheden worden tijdens het matchen van de factuur geconverteerd.
 
 **Overig**
@@ -216,7 +220,7 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 
 ---
 
-## R1.5 — Sandbox 10 maart 2027 · Productie 17 maart 2027
+## R1.5 — Sandbox 18 mei 2027 · Productie 27 mei 2027
 
 **Auto Accounting**
 
@@ -243,6 +247,50 @@ worden gedocumenteerd in de [Release-opmerkingen](release-notes/README.md)._
 - De uitvoeringsvolgorde van documentscripts is zichtbaar in de frontend.
 - Met Enter en Tab navigeert u via het toetsenbord door de velden.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6 juli 2027 · Productie 15 juli 2027
+
+**Instellingen**
+
+- Instellingen kunnen worden doorzocht over alle schakelaars en subpagina's
+  heen.
+- In de e-mailserverinstellingen kunt u een verlopen OAuth- of client secret
+  vervangen zonder het postvak opnieuw te hoeven instellen.
+- De mapping van leveranciersartikelnummers (conversietabel voor
+  artikelnummers) kan vanuit een CSV-import worden gevuld.
+
+**Auto Accounting**
+
+- Dimensies worden in een nieuwe structuur opgeslagen, zodat grote
+  dimensiesets sneller laden.
+
+---
+
+## R1.7 — Sandbox 21 september 2027 · Productie 30 september 2027
+
+**Auto Accounting op het goedkeuringsscherm**
+
+- Goedkeurders kunnen rechtstreeks op het goedkeuringsscherm met Auto
+  Accounting werken.
+- De goedkeuring kan afhankelijk worden gemaakt van boekhoudvelden zoals
+  grootboekrekening of land, met een crediteurencorrectie wanneer een document
+  wordt teruggestuurd.
+- Een keuzelijst voor btw-codes in Auto Accounting zonder meerdere btw-regels
+  in te stellen.
+
+---
+
+## R2.0 — Sandbox nog aan te kondigen · Productie nog aan te kondigen
+
+**Auto Accounting**
+
+- Velden die op een lijst zijn gebaseerd, accepteren ook vrije tekst.
+- Verplichte velden worden gevalideerd.
+- Modelvoorspellingen vullen boekhoudvelden automatisch in (hybride modus met
+  het getrainde voorspellingsmodel), met een audittrail van wat het model heeft
+  ingevuld.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

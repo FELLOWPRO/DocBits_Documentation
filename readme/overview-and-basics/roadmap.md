@@ -1,6 +1,6 @@
 # Hoja de ruta de DocBits
 
-_Estado de la planificación a 15 de septiembre de 2026. Cada versión indica la
+_Estado de la planificación a 18 de septiembre de 2026. Cada versión indica la
 fecha prevista en sandbox (cuando los clientes pueden probarla) y la fecha
 prevista en producción. Los temas describen lo que está previsto para la
 versión, no lo que ya se ha publicado; el alcance y las fechas pueden cambiar.
@@ -9,15 +9,18 @@ Las correcciones urgentes entre versiones se documentan en las
 
 | Versión | Sandbox | Producción |
 |---|---|---|
-| R1.1 | 16 de septiembre de 2026 | 23 de septiembre de 2026 |
-| R1.2 | 21 de octubre de 2026 | 28 de octubre de 2026 |
-| R1.3 | 25 de noviembre de 2026 | 2 de diciembre de 2026 |
-| R1.4 | 27 de enero de 2027 | 3 de febrero de 2027 |
-| R1.5 | 10 de marzo de 2027 | 17 de marzo de 2027 |
+| R1.1 | 5 de octubre de 2026 | 14 de octubre de 2026 |
+| R1.2 | 23 de noviembre de 2026 | 2 de diciembre de 2026 |
+| R1.3 | 8 de febrero de 2027 | 17 de febrero de 2027 |
+| R1.4 | 7 de abril de 2027 | 15 de abril de 2027 |
+| R1.5 | 18 de mayo de 2027 | 27 de mayo de 2027 |
+| R1.6 | 6 de julio de 2027 | 15 de julio de 2027 |
+| R1.7 | 21 de septiembre de 2027 | 30 de septiembre de 2027 |
+| R2.0 | por anunciar | por anunciar |
 
 ---
 
-## R1.1 — Sandbox 16 de septiembre de 2026 · Producción 23 de septiembre de 2026
+## R1.1 — Sandbox 5 de octubre de 2026 · Producción 14 de octubre de 2026
 
 **Reglas de transformación y layouts**
 
@@ -28,6 +31,8 @@ Las correcciones urgentes entre versiones se documentan en las
 - La selección de layout funciona con independencia del origen del documento.
 - Reglas de precedencia claras para las etiquetas de campo en los campos de
   cabecera y en las columnas de tabla.
+- Una columna de tabla puede asignarse de nuevo después de haberse eliminado, y
+  la tabla de precios de artículos de proveedor muestra todas sus columnas.
 
 **Pantallas de aprobación y validación**
 
@@ -52,11 +57,13 @@ Las correcciones urgentes entre versiones se documentan en las
 **Flujos de trabajo y tareas**
 
 - Un botón "Nuevo flujo de trabajo", registros para los flujos de trabajo
-  avanzados, y los pasos de flujo de trabajo que cambian un campo o una casilla
-  se aplican de forma fiable.
-- Los correos de aprobación llegan a los aprobadores asignados en los flujos de
-  trabajo de facturas de compra.
+  avanzados, una pantalla de registro de Watchdog más clara, y los pasos de
+  flujo de trabajo que cambian un campo o una casilla se aplican de forma
+  fiable.
+- Al añadir una línea en un árbol de decisión se conservan los nombres de
+  usuario en lugar de mostrar IDs.
 - Cada cambio de estado de un documento queda registrado.
+- La creación de una nueva plantilla de correo vuelve a funcionar.
 
 **Importación**
 
@@ -67,19 +74,19 @@ Las correcciones urgentes entre versiones se documentan en las
 - La importación FTP recibe una verdadera opción de eliminar tras importar,
   junto a mover y archivar.
 - La carga desde la app de escáner vuelve a funcionar.
+- Los archivos BOD de orden de compra cargados en la región de EE. UU.
+  permanecen en la región de EE. UU.
 
 **Procesamiento de documentos y extracción**
 
 - Cuando el servicio de códigos de barras se bloquea, el documento muestra el
   error en lugar de permanecer indefinidamente en "Procesando".
-- "Restringir a páginas" solo limita el OCR y el recuento de páginas; ya no
-  recorta páginas del documento.
-- Guardar un documento deja intactos los datos no relacionados.
-- Un nuevo nivel de modelo de IA más económico ("Eco") para la extracción, y
-  la aplicación de etiquetas de tabla en la tabla de IA vuelve a funcionar.
-- Fusionar un PDF ZUGFeRD con otro PDF conserva los datos de la factura
-  electrónica; se ajustan las plantillas de documentos electrónicos UBL;
-  correcciones de extracción para importes, tipos impositivos y números de
+- Un nuevo nivel de modelo de IA más económico ("Eco") para la extracción.
+- Con la extracción estructurada por IA, los números de artículo de proveedor
+  entrenados se mantienen entrenados, y el número de artículo y el número de
+  artículo de proveedor ya no se intercambian.
+- Se ajustan las plantillas de documentos electrónicos UBL; correcciones de
+  extracción para importes, tipos impositivos, precios unitarios y números de
   orden de compra en layouts de proveedores concretos.
 - Se reconocen formatos de fecha adicionales.
 
@@ -88,45 +95,43 @@ Las correcciones urgentes entre versiones se documentan en las
 - La coincidencia requiere una columna de cantidad, usa el precio por cantidad
   de unidad base, y el respaldo a la última línea puede activarse o
   desactivarse por cliente.
+- Las líneas de albarán pueden seleccionarse individualmente.
 - La pantalla de documentos electrónicos ya no se congela con facturas de más
   de 250 líneas.
-- Los diagnósticos miden la cantidad incluso cuando una línea de OC no tiene
-  precio.
 
 **Touchless Intelligence**
 
-- Más detalle en el informe Touchless, y un bloqueo por orden de compra se
-  notifica como tal en lugar de como un fallo de validación de campo.
+- Más detalle en el informe Touchless, y la casilla Touchless refleja la
+  configuración guardada.
 
 **Dashboard**
 
 - El dashboard puede contener hasta 10.000 documentos por búsqueda.
 - La fecha de vencimiento del descuento y la fecha de vencimiento de la factura
   están disponibles como campos de layout y se rellenan en la importación.
-- Los usuarios compartidos de un dashboard se conservan al guardarlo;
-  "Asignado a" y "Actualizado por" muestran la persona correcta.
-- Los permisos de documento se aplican también al índice de texto completo.
+- Los usuarios compartidos de un dashboard se conservan al guardarlo, y
+  "Actualizado por" muestra la persona correcta.
+- Los documentos archivados pueden volver a sacarse del estado "Archivado".
 
 **Exportación y EDI**
 
-- La exportación BOD conserva los valores de columna de tabla de más de 30
-  caracteres.
 - Un paso adicional de exportación a Infor M3 para información adicional de la
-  factura, y precios unitarios en las exportaciones de tipo de línea 5.
-- Reimportar una recepción de entrega ya no falla por una clave duplicada.
-- Se actualizan los mapeos EDI X12 para factura (810), orden de compra (850),
-  confirmación de pedido (855), aviso de envío (856, incluida la exportación
-  WMS) y orden de cambio (860).
+  factura.
+- Una lista de embalaje con varios números de contenedor se exporta como un
+  registro por contenedor.
+- Reimportar una recepción de entrega ya no falla por una clave duplicada, y
+  los BOD de recepción de entrega se aplican en el orden correcto.
+- Se actualizan los mapeos EDI para factura, orden de compra y confirmación de
+  pedido.
 
 **Seguridad**
 
-- Los mapeos de plan de cuentas de proveedor se almacenan con parámetros SQL
-  vinculados, y la protección de organización para las claves de API se aplica
-  en todos los entornos.
+- La protección de organización para las claves de API se aplica en todos los
+  entornos.
 
 ---
 
-## R1.2 — Sandbox 21 de octubre de 2026 · Producción 28 de octubre de 2026
+## R1.2 — Sandbox 23 de noviembre de 2026 · Producción 2 de diciembre de 2026
 
 **Aprobación y coincidencia de órdenes de compra**
 
@@ -154,8 +159,6 @@ Las correcciones urgentes entre versiones se documentan en las
 - El script "Establecer suborganización" se convierte en una regla de
   transformación.
 - Las columnas estándar pueden eliminarse de un tipo de documento.
-- Un flujo de solicitud de cambio de OC y el propietario del documento en el
-  mapeo de exportación a Infor.
 
 **Exportación**
 
@@ -164,7 +167,7 @@ Las correcciones urgentes entre versiones se documentan en las
 
 ---
 
-## R1.3 — Sandbox 25 de noviembre de 2026 · Producción 2 de diciembre de 2026
+## R1.3 — Sandbox 8 de febrero de 2027 · Producción 17 de febrero de 2027
 
 **Rule Manager de Auto Accounting**
 
@@ -172,9 +175,9 @@ Las correcciones urgentes entre versiones se documentan en las
   suborganización y tipo de documento, y una pantalla de auditoría muestra qué
   regla se activó.
 - Una regla puede rellenar un valor a partir de una columna de línea de tabla.
-- Los campos y las dimensiones pueden vaciarse individualmente, las líneas sin
-  importe pueden eliminarse, y las reglas siguen funcionando en campos que
-  cambiaron de texto a lista desplegable.
+- Los campos y las dimensiones pueden vaciarse individualmente, las líneas de
+  artículo pueden eliminarse (incluidas las líneas sin importe), y las reglas
+  siguen funcionando en campos que cambiaron de texto a lista desplegable.
 
 **Coincidencia de órdenes de compra**
 
@@ -192,7 +195,7 @@ Las correcciones urgentes entre versiones se documentan en las
 
 ---
 
-## R1.4 — Sandbox 27 de enero de 2027 · Producción 3 de febrero de 2027
+## R1.4 — Sandbox 7 de abril de 2027 · Producción 15 de abril de 2027
 
 **Importación**
 
@@ -212,8 +215,9 @@ Las correcciones urgentes entre versiones se documentan en las
 **Coincidencia de órdenes de compra**
 
 - En la pantalla de coincidencia solo se ofrecen las líneas de OC viables.
-- Varias entradas de almacén pueden coincidir con una misma línea de factura, y
-  las unidades de medida se convierten durante la coincidencia de la factura.
+- Las facturas emparejadas en exceso, en las que la cantidad facturada supera
+  la cantidad recibida, se reconocen en la pantalla de coincidencia, y las
+  unidades de medida se convierten durante la coincidencia de la factura.
 
 **Otros**
 
@@ -224,7 +228,7 @@ Las correcciones urgentes entre versiones se documentan en las
 
 ---
 
-## R1.5 — Sandbox 10 de marzo de 2027 · Producción 17 de marzo de 2027
+## R1.5 — Sandbox 18 de mayo de 2027 · Producción 27 de mayo de 2027
 
 **Auto Accounting**
 
@@ -253,6 +257,49 @@ Las correcciones urgentes entre versiones se documentan en las
 - El orden de ejecución de los scripts de documento es visible en el frontend.
 - Intro y Tabulador permiten moverse entre los campos con el teclado.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-15 by the
+---
+
+## R1.6 — Sandbox 6 de julio de 2027 · Producción 15 de julio de 2027
+
+**Configuración**
+
+- La configuración admite búsquedas en todos los interruptores y subpáginas.
+- La configuración del servidor de correo permite sustituir un secreto OAuth o
+  de cliente caducado sin volver a configurar el buzón.
+- El mapa de números de artículo de proveedor (tabla de conversión de números
+  de artículo) puede rellenarse desde una importación CSV.
+
+**Auto Accounting**
+
+- Las dimensiones se almacenan en una nueva estructura para que los conjuntos
+  grandes de dimensiones se carguen más rápido.
+
+---
+
+## R1.7 — Sandbox 21 de septiembre de 2027 · Producción 30 de septiembre de 2027
+
+**Auto Accounting en la pantalla de aprobación**
+
+- Los aprobadores pueden trabajar con Auto Accounting directamente en la
+  pantalla de aprobación.
+- La aprobación puede condicionarse a campos de contabilidad como el código de
+  cuenta o el país, con una corrección de cuentas por pagar cuando se devuelve
+  un documento.
+- Una lista desplegable de códigos de impuesto en Auto Accounting sin necesidad
+  de configurar varias líneas de impuestos.
+
+---
+
+## R2.0 — Sandbox por anunciar · Producción por anunciar
+
+**Auto Accounting**
+
+- Los campos basados en una lista también aceptan texto libre.
+- Se validan los campos obligatorios.
+- Las predicciones del modelo rellenan automáticamente los campos contables
+  (modo híbrido con el modelo de predicción entrenado), con un registro de
+  auditoría de lo que rellenó el modelo.
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
      docbits-roadmap skill. Themes only; ticket keys, customer names and
      internal work are deliberately left out. Rerun the skill to refresh. -->

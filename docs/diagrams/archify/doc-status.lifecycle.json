@@ -4,7 +4,11 @@
   "meta": {
     "title": "DocBits Document Status Lifecycle",
     "locale": "en",
-    "quality_profile": "showcase"
+    "quality_profile": "showcase",
+    "viewBox": [
+      980,
+      660
+    ]
   },
   "lanes": [
     {
@@ -12,186 +16,313 @@
       "label": "Main path"
     },
     {
-      "id": "waiting",
-      "label": "Side states"
+      "id": "approval",
+      "label": "Approval + export errors"
     },
     {
-      "id": "approvals",
-      "label": "Second approval"
+      "id": "terminal",
+      "label": "Errors + final"
     }
   ],
   "states": [
     {
-      "id": "upload",
+      "id": "new",
       "type": "start",
-      "label": "Upload",
-      "sublabel": "or WatchDog upload",
+      "label": "New",
+      "sublabel": "imported",
       "lane": "main",
       "col": 0,
       "step": "01"
     },
     {
-      "id": "ocr",
+      "id": "processing",
       "type": "active",
-      "label": "OCR",
-      "sublabel": "text recognition",
+      "label": "Running",
+      "sublabel": "OCR to PO match",
       "lane": "main",
       "col": 1,
       "step": "02"
     },
     {
-      "id": "classification",
-      "type": "active",
-      "label": "Classification",
-      "sublabel": "document classified",
+      "id": "rfv",
+      "type": "waiting",
+      "label": "Ready for validation",
+      "sublabel": "user checks",
       "lane": "main",
       "col": 2,
       "step": "03"
     },
     {
-      "id": "validation",
-      "type": "waiting",
-      "label": "Ready for Validation",
-      "sublabel": "awaiting validation",
+      "id": "pending-export",
+      "type": "active",
+      "label": "Pending export",
+      "sublabel": "validated or approved",
       "lane": "main",
       "col": 3,
       "step": "04"
     },
     {
-      "id": "export",
+      "id": "exported",
       "type": "success",
-      "label": "Export",
-      "sublabel": "exported to ERP",
+      "label": "Exported",
+      "sublabel": "sent to ERP",
       "lane": "main",
       "col": 4,
       "step": "05"
     },
     {
-      "id": "workflow",
-      "type": "active",
-      "label": "Workflow",
-      "sublabel": "optional",
-      "lane": "waiting",
-      "col": 1
-    },
-    {
-      "id": "approval",
+      "id": "approval1",
       "type": "waiting",
       "label": "Pending approval",
-      "sublabel": "needs approval",
-      "lane": "waiting",
-      "col": 2
+      "sublabel": "approver",
+      "lane": "approval",
+      "col": 0,
+      "width": 118
     },
     {
-      "id": "second",
+      "id": "approval2",
       "type": "waiting",
-      "label": "Pending second approval",
-      "sublabel": "approved again",
-      "lane": "approvals",
+      "label": "Second approval",
+      "sublabel": "second approver",
+      "lane": "approval",
+      "col": 1,
+      "width": 118
+    },
+    {
+      "id": "export-error",
+      "type": "failure",
+      "label": "Export error",
+      "sublabel": "ERP refused",
+      "lane": "approval",
       "col": 2,
-      "yOffset": 100,
-      "width": 160
+      "width": 118
     },
     {
       "id": "error",
       "type": "failure",
       "label": "Error",
-      "sublabel": "recoverable",
-      "lane": "waiting",
-      "col": 0
+      "sublabel": "recoverable fault",
+      "lane": "terminal",
+      "col": 0,
+      "width": 118
+    },
+    {
+      "id": "rejected",
+      "type": "failure",
+      "label": "Rejected",
+      "sublabel": "final",
+      "lane": "terminal",
+      "col": 1,
+      "width": 118
     }
   ],
   "transitions": [
     {
-      "id": "t-upload-ocr",
-      "from": "upload",
-      "to": "ocr"
-    },
-    {
-      "id": "t-ocr-class",
-      "from": "ocr",
-      "to": "classification",
+      "id": "t-new-proc",
+      "from": "new",
+      "to": "processing",
       "route": "straight",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "t-class-val",
-      "from": "classification",
-      "to": "validation"
-    },
-    {
-      "id": "t-val-export",
-      "from": "validation",
-      "to": "export",
+      "id": "t-proc-rfv",
+      "from": "processing",
+      "to": "rfv",
       "route": "straight",
       "fromSide": "right",
       "toSide": "left"
     },
     {
-      "id": "t-val-workflow",
-      "from": "validation",
-      "to": "workflow",
+      "id": "t-pe-exp",
+      "from": "pending-export",
+      "to": "exported",
+      "route": "straight",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "t-rfv-a1",
+      "from": "rfv",
+      "to": "approval1",
+      "label": "approval needed",
       "variant": "dashed",
       "route": "straight",
       "fromSide": "bottom",
-      "toSide": "top"
+      "toSide": "top",
+      "labelAt": [
+        360,
+        233
+      ]
     },
     {
-      "id": "t-val-approval",
-      "from": "validation",
-      "to": "approval",
-      "variant": "dashed"
-    },
-    {
-      "id": "t-approval-second",
-      "from": "approval",
-      "to": "second",
+      "id": "t-a1-a2",
+      "from": "approval1",
+      "to": "approval2",
+      "label": "if required",
       "variant": "dashed",
       "route": "straight",
-      "fromSide": "bottom",
-      "toSide": "top"
+      "fromSide": "right",
+      "toSide": "left",
+      "labelAt": [
+        479,
+        356
+      ]
     },
     {
-      "id": "t-second-export",
-      "from": "second",
-      "to": "export",
+      "id": "t-a1-pe",
+      "from": "approval1",
+      "to": "pending-export",
+      "label": "approve",
       "variant": "emphasis",
-      "route": "right-channel"
+      "fromSide": "right",
+      "toSide": "left"
     },
     {
-      "id": "t-class-error",
-      "from": "classification",
-      "to": "error",
-      "variant": "security",
+      "id": "t-rfv-pe",
+      "from": "rfv",
+      "to": "pending-export",
+      "label": "validate",
+      "fromSide": "right",
+      "toSide": "left",
+      "labelAt": [
+        445,
+        205
+      ]
+    },
+    {
+      "id": "t-a2-pe",
+      "from": "approval2",
+      "to": "pending-export",
+      "label": "approve",
+      "route": "straight",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "labelAt": [
+        580,
+        233
+      ]
+    },
+    {
+      "id": "t-a2-rej",
+      "from": "approval2",
+      "to": "rejected",
+      "label": "reject",
       "route": "straight",
       "fromSide": "bottom",
-      "toSide": "top"
+      "toSide": "top",
+      "labelAt": [
+        590,
+        393
+      ]
     },
     {
-      "id": "t-error-ocr",
+      "id": "t-proc-err",
+      "from": "processing",
+      "to": "error",
+      "label": "any step",
+      "variant": "security",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "via": [
+        [
+          248,
+          395
+        ],
+        [
+          402,
+          395
+        ]
+      ],
+      "labelAt": [
+        325,
+        378
+      ]
+    },
+    {
+      "id": "t-err-proc",
       "from": "error",
-      "to": "ocr",
+      "to": "processing",
       "label": "restart",
-      "variant": "emphasis"
+      "variant": "emphasis",
+      "fromSide": "left",
+      "toSide": "bottom",
+      "via": [
+        [
+          220,
+          479
+        ],
+        [
+          220,
+          188
+        ]
+      ],
+      "labelAt": [
+        220,
+        333
+      ]
+    },
+    {
+      "id": "t-pe-xerr",
+      "from": "pending-export",
+      "to": "export-error",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "left",
+      "via": [
+        [
+          641,
+          157
+        ],
+        [
+          641,
+          307
+        ]
+      ]
+    },
+    {
+      "id": "t-xerr-pe",
+      "from": "export-error",
+      "to": "pending-export",
+      "label": "restart export",
+      "variant": "emphasis",
+      "fromSide": "left",
+      "toSide": "right",
+      "via": [
+        [
+          625,
+          307
+        ],
+        [
+          625,
+          157
+        ]
+      ],
+      "labelAt": [
+        700,
+        229
+      ]
     }
   ],
   "cards": [
     {
       "dot": "emerald",
-      "title": "Main Path",
+      "title": "Processing",
       "items": [
-        "Upload, OCR, Classification, Ready for Validation, Export",
-        "WatchDog is an optional on-prem upload client",
-        "Zugferd import/export and Auto Accounting are also statuses"
+        "Running covers OCR, classification, extraction and PO matching",
+        "E-documents such as ZUGFeRD skip OCR",
+        "Touchless documents skip validation and go to approval or export",
+        "Restart clears the results and reruns the whole pipeline"
       ]
     },
     {
-      "dot": "rose",
-      "title": "Exceptions",
+      "dot": "amber",
+      "title": "Approval and export",
       "items": [
-        "Workflow, Pending approval and Pending second approval pause the path",
-        "Error marks a failed document, which can be restarted"
+        "Approval and second approval are set per document type",
+        "Either approval step can send the document to Pending export",
+        "Both approval steps can also reject or send back for correction",
+        "Export error can restart directly back to Pending export"
       ]
     }
   ]

@@ -12,6 +12,7 @@
 * [Two-Factor Authentication (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
 * [Diagram Preview](overview-and-basics/diagram-preview/README.md)
+  * [Processing Pipeline](overview-and-basics/diagram-preview/processing-pipeline.md)
   * [Document Status Lifecycle](overview-and-basics/diagram-preview/document-status-lifecycle.md)
   * [Infor ERP Data Flow](overview-and-basics/diagram-preview/infor-erp-data-flow.md)
   * [Platform Architecture](overview-and-basics/diagram-preview/platform-architecture.md)

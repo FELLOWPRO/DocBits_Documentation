@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "DocBits Document Processing Pipeline",
+    "locale": "en",
+    "animation": "none",
+    "quality_profile": "showcase",
+    "viewBox": [1080, 540],
+    "legend": {
+      "entries": {
+        "default": { "label": "main path" },
+        "dashed": { "label": "optional step" }
+      }
+    }
+  },
+  "stages": [
+    { "label": "Import" },
+    { "label": "Recognise" },
+    { "label": "Extract" },
+    { "label": "Match" },
+    { "label": "Decide & export" }
+  ],
+  "nodes": [
+    { "id": "import", "type": "external", "label": "Import", "sublabel": "email/FTP/upload/API", "tag": "+ WatchDog", "stage": 0, "row": 0 },
+    { "id": "barcodeSplit", "type": "backend", "label": "Barcode split", "sublabel": "multi-page batches", "tag": "optional", "stage": 0, "row": 1 },
+
+    { "id": "ocr", "type": "backend", "label": "OCR", "sublabel": "PDF + quality check", "stage": 1, "row": 0 },
+    { "id": "classification", "type": "backend", "label": "Classification", "sublabel": "type + language", "tag": "classify-only stops here", "stage": 1, "row": 1 },
+
+    { "id": "splitQR", "type": "backend", "label": "Barcode / QR", "sublabel": "text-pattern split", "tag": "optional", "stage": 2, "row": 0 },
+    { "id": "extraction", "type": "backend", "label": "Extraction", "sublabel": "fields + tables", "stage": 2, "row": 1 },
+    { "id": "transform", "type": "backend", "label": "Transform", "sublabel": "normalise + rules", "stage": 2, "row": 2 },
+
+    { "id": "masterData", "type": "database", "label": "Master data lookup", "sublabel": "supplier · PO · goods receipt", "tag": "Infor BODs", "width": 130, "stage": 3, "row": 0 },
+    { "id": "poMatching", "type": "backend", "label": "PO matching", "sublabel": "item · qty · price", "tag": "2-/3-way · optional", "stage": 3, "row": 1 },
+
+    { "id": "touchless", "type": "security", "label": "Touchless?", "sublabel": "validation gate", "stage": 4, "row": 0 },
+    { "id": "approvalExport", "type": "external", "label": "Approval + export", "sublabel": "optional approval → ERP", "width": 126, "stage": 4, "row": 1 },
+    { "id": "manualValidation", "type": "frontend", "label": "Manual validation", "sublabel": "Ready for validation", "tag": "if not touchless", "width": 126, "stage": 4, "row": 2 }
+  ],
+  "flows": [
+    { "id": "import-ocr", "from": "import", "to": "ocr", "label": "new document", "variant": "default", "route": "straight" },
+    { "id": "import-barcode", "from": "import", "to": "barcodeSplit", "label": "multi-page batch", "variant": "dashed", "route": "straight", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "barcode-ocr", "from": "barcodeSplit", "to": "ocr", "label": "keeps batch_id", "variant": "dashed" },
+
+    { "id": "ocr-classification", "from": "ocr", "to": "classification", "label": "searchable text", "variant": "default", "route": "straight", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "classification-extraction", "from": "classification", "to": "extraction", "label": "typed document", "variant": "default", "route": "straight", "labelDy": 50 },
+    { "id": "classification-splitqr", "from": "classification", "to": "splitQR", "label": "pattern / QR scan", "variant": "dashed" },
+
+    { "id": "splitqr-extraction", "from": "splitQR", "to": "extraction", "label": "barcode/QR values", "variant": "dashed", "route": "straight", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "extraction-transform", "from": "extraction", "to": "transform", "label": "raw fields + tables", "variant": "default", "route": "straight", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "transform-masterdata", "from": "transform", "to": "masterData", "label": "normalised fields", "variant": "default" },
+
+    { "id": "masterdata-pomatching", "from": "masterData", "to": "poMatching", "label": "PO reference", "variant": "dashed", "route": "straight", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "masterdata-touchless", "from": "masterData", "to": "touchless", "label": "enriched document", "variant": "default", "route": "straight" },
+    { "id": "pomatching-touchless", "from": "poMatching", "to": "touchless", "label": "match result", "variant": "dashed" },
+
+    { "id": "touchless-approval", "from": "touchless", "to": "approvalExport", "label": "automatic", "variant": "default", "route": "straight", "fromSide": "bottom", "toSide": "top", "labelDy": 24 },
+    { "id": "manual-approval", "from": "manualValidation", "to": "approvalExport", "label": "validate", "variant": "dashed", "route": "straight", "fromSide": "top", "toSide": "bottom" },
+    { "id": "touchless-manual", "from": "touchless", "to": "manualValidation", "label": "manual", "variant": "dashed", "fromSide": "right", "toSide": "right", "via": [[1040, 157], [1040, 385]], "labelAt": [1052, 271] }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "How steps run",
+      "items": [
+        "Core API dispatches each step as a Celery task on Redis",
+        "The service calls back and the pipeline resumes",
+        "Any step can end in Error; Restart reruns the pipeline",
+        "E-documents (ZUGFeRD, XRechnung) skip OCR, splits, and the extraction service"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Outside the pipeline",
+      "items": [
+        "Full-text index updates after processing",
+        "DocFlow runs on status changes",
+        "Auto Accounting posts GL suggestions on the approval screen"
+      ]
+    }
+  ]
+}

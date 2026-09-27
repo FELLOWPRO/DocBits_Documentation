@@ -15,10 +15,14 @@ name: Docs Search Sync
 #   doesn't reflect the real prior state, a SUMMARY.md-only publication
 #   change, a replaced image asset, or a run that failed partway through.
 #
-# concurrency: two syncs for the same ref must never race each other's
-# OpenSearch writes — a newer push is queued behind whatever's running
-# rather than cancelling it (cancel-in-progress: false), since a
-# cancelled ingest can leave a page's stale-ordinal cleanup half-applied.
+# concurrency: ONE global group, not per-ref (CORE-6111 review round 2) —
+# a full run (nightly/workflow_dispatch) writes BOTH languages' indices
+# in a single run, so a per-ref group would still let a main-branch push
+# and a de-branch push (or a full run and either push) race each other's
+# OpenSearch writes. Every sync, on any ref, queues behind whatever's
+# already running rather than cancelling it (cancel-in-progress: false),
+# since a cancelled ingest can leave a page's stale-ordinal cleanup
+# half-applied.
 #
 # Requires two repo secrets that this PR does NOT create (see the PR
 # description for the manual setup step):
@@ -41,7 +45,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: docs-search-sync-${{ github.ref }}
+  group: docs-search-sync
   cancel-in-progress: false
 
 jobs:

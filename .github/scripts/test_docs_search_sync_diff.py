@@ -208,5 +208,103 @@ class TestSummaryChangeIngestsNewlyPublishedPages(_GitRepoTestCase):
         assert ingested_urls == set()
 
 
+class TestSameUrlRenameSkipsTheDelete(_GitRepoTestCase):
+    """CORE-6111 review round 2 (Codex): readme/foo.md -> readme/foo/
+    README.md both publish at the same url ("/foo") — the rename must
+    not delete the page it just (re-)ingested under that shared url."""
+
+    def test_a_file_to_its_own_readme_rename_does_not_delete_the_freshly_ingested_page(
+        self,
+    ):
+        body = "# Heading\n" + ("Some prose about configuration. " * 20) + "\n"
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [Foo](foo.md)\n")
+        self._write("readme/foo.md", body)
+        before = self._commit("add")
+
+        self._rename("readme/foo.md", "readme/foo/README.md")
+        self._write(
+            "readme/SUMMARY.md", "# Table of contents\n\n* [Foo](foo/README.md)\n"
+        )
+        after = self._commit("rename foo.md to foo/README.md (same url)")
+
+        sync.run_diff(before, after, "main", dry_run=False)
+
+        ingest_calls = [p for path, p in self.calls if path == "/docs/ingest"]
+        delete_calls = [p for path, p in self.calls if path == "/docs/delete"]
+        assert len(ingest_calls) == 1
+        assert ingest_calls[0]["url"] == "https://docs.docbits.com/foo"
+        assert delete_calls == []
+
+    def test_a_rename_to_a_different_url_still_deletes_the_old_one(self):
+        # Control case: a genuine url change must still delete the old
+        # url — only the SAME-url case is special-cased.
+        body = "# Heading\n" + ("Some prose about configuration. " * 20) + "\n"
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [Old](old.md)\n")
+        self._write("readme/old.md", body)
+        before = self._commit("add")
+
+        self._rename("readme/old.md", "readme/new.md")
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [New](new.md)\n")
+        after = self._commit("rename to a different url")
+
+        sync.run_diff(before, after, "main", dry_run=False)
+
+        delete_calls = [p for path, p in self.calls if path == "/docs/delete"]
+        assert len(delete_calls) == 1
+        assert delete_calls[0]["url"] == "https://docs.docbits.com/old"
+
+
+class TestAssetOnlyChangeReingestsReferencingPages(_GitRepoTestCase):
+    """CORE-6111 review round 2 (Codex): a page references an image
+    asset by PATH — the page's own markdown is untouched when only the
+    asset's content changes, so the normal name-status diff never
+    surfaces it on its own."""
+
+    def test_changing_an_asset_re_ingests_the_page_that_references_it(self):
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [Page](page.md)\n")
+        self._write(
+            "readme/page.md",
+            '# Page\ntext\n<figure><img src="../.gitbook/assets/x.png" '
+            'alt="X"></figure>\n',
+        )
+        self._write("readme/.gitbook/assets/x.png", "original-bytes")
+        before = self._commit("add page + asset")
+
+        self._write("readme/.gitbook/assets/x.png", "changed-bytes")
+        after = self._commit("replace asset content")
+
+        sync.run_diff(before, after, "main", dry_run=False)
+
+        ingested_urls = {
+            payload["url"] for path, payload in self.calls if path == "/docs/ingest"
+        }
+        assert "https://docs.docbits.com/page" in ingested_urls
+
+    def test_an_unrelated_page_is_not_reingested_for_an_asset_it_does_not_reference(
+        self,
+    ):
+        self._write(
+            "readme/SUMMARY.md", "# Table of contents\n\n* [A](a.md)\n* [B](b.md)\n"
+        )
+        self._write(
+            "readme/a.md",
+            '# A\n<figure><img src="../.gitbook/assets/x.png" alt="X"></figure>\n',
+        )
+        self._write("readme/b.md", "# B\nNo images here.\n")
+        self._write("readme/.gitbook/assets/x.png", "original-bytes")
+        before = self._commit("add")
+
+        self._write("readme/.gitbook/assets/x.png", "changed-bytes")
+        after = self._commit("replace asset content")
+
+        sync.run_diff(before, after, "main", dry_run=False)
+
+        ingested_urls = {
+            payload["url"] for path, payload in self.calls if path == "/docs/ingest"
+        }
+        assert "https://docs.docbits.com/a" in ingested_urls
+        assert "https://docs.docbits.com/b" not in ingested_urls
+
+
 if __name__ == "__main__":
     unittest.main()

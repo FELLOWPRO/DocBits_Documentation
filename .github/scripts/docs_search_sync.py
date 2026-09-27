@@ -52,6 +52,11 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 README_ROOT = "readme"
 SUMMARY_PATH = os.path.join(README_ROOT, "SUMMARY.md")
 BASE_DOCS_URL = "https://docs.docbits.com"
+# GitBook's asset convention (see resolve_images_in_markdown) — an
+# add/modify/delete/rename under here never touches a referencing page's
+# OWN markdown, so the normal name-status diff never surfaces those
+# pages on its own (see _pages_referencing_asset in run_diff).
+_ASSET_DIR_PREFIX = README_ROOT + "/.gitbook/assets/"
 _MD_LINK_RE = re.compile(r"\]\(([^)]+\.md)\)")
 
 # Image hosts the chat is allowed to show. docs.docbits.com itself, and the
@@ -446,10 +451,14 @@ def run_diff(before: str, after: str, lang: str, *, dry_run: bool) -> None:
 
     processed_paths: set[str] = set()
     summary_touched = False
+    changed_assets: set[str] = set()
 
     for status, paths in records:
         if SUMMARY_PATH in paths:
             summary_touched = True
+        for path in paths:
+            if path.startswith(_ASSET_DIR_PREFIX):
+                changed_assets.add(path)
         if status.startswith("R"):
             old_path, new_path = paths
             # Ingest the new location BEFORE deleting the old one — a
@@ -457,7 +466,22 @@ def run_diff(before: str, after: str, lang: str, *, dry_run: bool) -> None:
             # presence (Codex review: the reverse order briefly makes an
             # unchanged page invisible to search_docs).
             ingest_md_file(new_path, lang, after, dry_run=dry_run)
-            delete_md_file(old_path, lang, dry_run=dry_run)
+            # A rename can map to the SAME published url — e.g.
+            # readme/foo.md -> readme/foo/README.md both publish at
+            # "/foo" (a file <-> its own directory's README.md). Deleting
+            # "old_path"'s url in that case would delete the chunks the
+            # ingest_md_file call just wrote for "new_path" (CORE-6111
+            # review): the delete is keyed on url, not on the file path,
+            # and both files resolve to the identical url.
+            old_rel = published_rel_path(old_path)
+            new_rel = published_rel_path(new_path)
+            if old_rel is not None and old_rel == new_rel:
+                print(
+                    f"skip delete for {old_path} — renamed to {new_path}, "
+                    "same published url"
+                )
+            else:
+                delete_md_file(old_path, lang, dry_run=dry_run)
             processed_paths.update(paths)
         elif status == "D":
             delete_md_file(paths[0], lang, dry_run=dry_run)
@@ -472,6 +496,76 @@ def run_diff(before: str, after: str, lang: str, *, dry_run: bool) -> None:
         _ingest_newly_published_pages(
             before, after, lang, processed_paths, dry_run=dry_run
         )
+
+    if changed_assets:
+        _reingest_pages_referencing_changed_assets(
+            changed_assets, lang, after, processed_paths, dry_run=dry_run
+        )
+
+
+def _pages_referencing_asset(asset_repo_path: str) -> set[str]:
+    """Every markdown file under readme/ whose raw text references
+    ``asset_repo_path`` (e.g. "readme/.gitbook/assets/foo.png") by path.
+
+    Matched on the path relative to README_ROOT (".gitbook/assets/
+    foo.png") rather than the full repo-relative path: a page's actual
+    reference is a relative link whose "../" prefix depth depends on how
+    deep that page sits (see resolve_images_in_markdown), but the part
+    after README_ROOT is always the same regardless of depth.
+    """
+    if not asset_repo_path.startswith(README_ROOT + "/"):
+        return set()
+    asset_rel_to_readme = asset_repo_path[len(README_ROOT) + 1 :]
+
+    referencing: set[str] = set()
+    readme_dir = os.path.join(REPO_ROOT, README_ROOT)
+    for root, _dirs, files in os.walk(readme_dir):
+        for name in files:
+            if not name.endswith(".md"):
+                continue
+            md_abs_path = os.path.join(root, name)
+            md_repo_path = os.path.relpath(md_abs_path, REPO_ROOT).replace(
+                os.sep, "/"
+            )
+            try:
+                with open(md_abs_path, encoding="utf-8") as handle:
+                    text = handle.read()
+            except OSError:
+                continue
+            if asset_rel_to_readme in text:
+                referencing.add(md_repo_path)
+    return referencing
+
+
+def _reingest_pages_referencing_changed_assets(
+    changed_assets: set[str],
+    lang: str,
+    after: str,
+    already_processed: set[str],
+    *,
+    dry_run: bool,
+) -> None:
+    """An asset (image under .gitbook/assets/) was added, modified,
+    deleted or renamed in this push. The markdown page(s) that embed it
+    reference it by PATH, not by content — none of those pages' own
+    files are necessarily touched in the diff, so the normal name-status
+    loop never surfaces them on its own. Re-ingesting picks up the new
+    resolved image URL (or correctly drops it if the asset was removed).
+    """
+    published = published_paths_from_summary()
+    to_reingest: set[str] = set()
+    for asset_path in sorted(changed_assets):
+        referencing = _pages_referencing_asset(asset_path)
+        newly_found = referencing - already_processed
+        if newly_found:
+            print(
+                f"asset changed: {asset_path} -> re-ingesting "
+                f"{sorted(newly_found)}"
+            )
+        to_reingest |= newly_found
+
+    for md_path in sorted(to_reingest):
+        ingest_md_file(md_path, lang, after, dry_run=dry_run, published=published)
 
 
 def _ingest_newly_published_pages(

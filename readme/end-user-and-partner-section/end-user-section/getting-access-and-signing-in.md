@@ -6,7 +6,7 @@ This page explains how to get a DocBits account and how to sign in when you do n
 * [Forgot password](#forgot-password) — reset your password with a reset link.
 * [First password for admin-created accounts](#first-password-for-admin-created-accounts) — set the first password for an account your administrator created for you.
 
-Signing in with an existing account, and Two-Factor Authentication, are covered in [Two-Factor Authentication (2FA)](../../overview-and-basics/two-factor-authentication.md).
+Signing in with an existing account, and Two-Factor Authentication, are covered in [Two-Factor Authentication (2FA)](../../overview-and-basics/two-factor-authentication.md). Use the language menu at the top right of these forms if you need another display language.
 
 ## Registration
 
@@ -21,7 +21,9 @@ Fill in the form:
 3. **Password** and **Confirm password** — see the password rules below. A checklist under the password field shows which rules your password already meets.
 4. If the page shows a **reCAPTCHA** widget, complete it. The widget only appears when your DocBits deployment has bot protection enabled.
 5. Tick the checkbox to confirm that you agree to the **Terms and Conditions**.
-6. Click **Get Started**.
+6. Click **Get Started**. If you already have an account, click **Login** at the bottom to return to the sign-in page. **Visit website** opens the DocBits website for product information.
+
+Use the eye icon next to a password field to show or hide the characters you entered.
 
 ### Password rules
 
@@ -51,6 +53,8 @@ If you forgot your password:
 
    <figure><img src="../../.gitbook/assets/forget-password-form.png" alt="The Forgot Password page with the email field"><figcaption><p>The Forgot Password page. Enter your account email and DocBits will send you a reset link.</p></figcaption></figure>
 
+   If you do not want to reset your password, click **Back to Login** to return to sign-in.
+
 3. DocBits emails you a **password reset link**. Open the email and click the link — it opens the reset page.
 4. Enter your **new password twice**. The same password rules as during [registration](#password-rules) apply, and a checklist shows which rules are met.
 5. Click **Reset Password**. DocBits confirms the change and takes you back to the login screen, where you can sign in with the new password.
@@ -68,5 +72,7 @@ When your administrator adds you as a user (see [Users](../../administration-and
 1. Click the link in the invitation email. The page greets you with "Welcome to DocBits! Your account has been created. Please set your password to get started."
 2. Enter your password twice — the same [password rules](#password-rules) apply.
 3. Click **Set Password**. You can then sign in with your email and this password.
+
+The eye icons show or hide what you entered. If you leave before setting a password, **Go to Login** returns to sign-in.
 
 The link is tied to your account and works only once. If it expires before you use it, ask your administrator to resend the invitation or use **Forgot password?** with your email address.

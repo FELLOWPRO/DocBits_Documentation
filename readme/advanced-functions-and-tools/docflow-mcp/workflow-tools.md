@@ -1,6 +1,12 @@
 # Workflow Tools
 
-DocFlow MCP exposes tools for managing and testing advanced workflows, plus tools for reading workflow logs and managing workflow variables. The Card SDK tools live in their own page — see [Card SDK Tools](card-sdk-tools.md).
+DocFlow MCP exposes tools for managing and testing advanced workflows, plus tools for reading workflow logs and managing workflow variables.
+
+{% hint style="info" %}
+**Tool names through the DocBits MCP gateway.** When you connect through the unified DocBits MCP (`api.docbits.com/v3/mcp`), every DocFlow tool carries the prefix `docflow_`: `list_workflows` is called `docflow_list_workflows`, `run_workflow_with_assertions` is `docflow_run_workflow_with_assertions`. The parameters are identical. The names below are the bare DocFlow names.
+
+Workflows are **created and edited in the DocFlow designer** in the web app. The MCP reads, tests, runs and deletes them; it does not create or modify workflow graphs.
+{% endhint %} The Card SDK tools live in their own page, see [Card SDK Tools](card-sdk-tools.md).
 
 ## list\_workflows
 
@@ -17,142 +23,6 @@ Get details of a specific workflow including its node and edge structure.
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
 | `workflow_id` | string | Yes | UUID of the workflow |
-
-## create\_advanced\_workflow
-
-Create a new advanced workflow with nodes and edges.
-
-**Parameters:**
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `name` | string | Yes | Workflow name (3-126 characters) |
-| `description` | string | No | Optional description |
-| `nodes` | array | Yes | Array of workflow nodes |
-| `edges` | array | Yes | Array of edges connecting nodes |
-
-### Node Structure
-
-Each node requires:
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `node_id` | string | Unique identifier for the node |
-| `node_type` | string | See node types below |
-| `position` | object | `{x: number, y: number}` position on canvas |
-| `label` | string | Display label |
-| `card` | object | Card configuration (required for `when`, `and`, `then` — see below) |
-
-**Node types:**
-
-| Type | Card requirement | Purpose |
-|------|------------------|---------|
-| `start` | No card | Trigger node — entry point of the workflow |
-| `when` | Condition card | Trigger condition (also a valid entry point) |
-| `and` | Condition card | Additional condition gate after a `when` |
-| `or` | No card | Branch node — proceeds if any incoming branch succeeds |
-| `then` | Action card | Action to execute |
-| `delay` | No card | Wait node — pauses execution for a configured duration |
-| `all` | No card | Merge node — waits for all incoming branches |
-| `any` | No card | Merge node — proceeds on the first incoming branch |
-| `note` | No card | Sticky note / annotation; not executed |
-
-### Edge Structure
-
-Each edge requires:
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `edge_id` | string | Unique identifier for the edge |
-| `source_node_id` | string | ID of the source node |
-| `target_node_id` | string | ID of the target node |
-| `source_handle` | string | `success`, `error`, or `failed_condition` (optional) |
-| `target_handle` | string | `input` (optional) |
-
-**Source handles:**
-
-- `success` — taken when the source node succeeds (available on every executable node).
-- `failed_condition` — taken when a `when` or `and` condition card evaluates to false.
-- `error` — taken when an `and` or `then` node raises an error.
-
-### Card Configuration
-
-Cards define what a node does. Use `list_cards` or `sdk_list_cards_picker` to get available cards.
-
-```json
-{
-  "id": "card-uuid-here",
-  "card_type": "document_type_is",
-  "version": 1,
-  "variables": [
-    {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-  ]
-}
-```
-
-{% hint style="info" %}
-You only need to provide `id`, `card_type`, `version`, and `variables` for each card. The server automatically enriches cards with display metadata (svg, text, category) from the database.
-{% endhint %}
-
-**Example Request:**
-
-```json
-{
-  "name": "Simple Invoice Router",
-  "description": "Routes invoices to approval",
-  "nodes": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "position": {"x": 100, "y": 100},
-      "label": "Document is Invoice",
-      "card": {
-        "id": "card-uuid",
-        "card_type": "document_type_is",
-        "version": 1,
-        "variables": [
-          {"id": "var-uuid", "data": "INVOICE", "data_type": "string"}
-        ]
-      }
-    },
-    {
-      "node_id": "then-1",
-      "node_type": "then",
-      "position": {"x": 100, "y": 300},
-      "label": "Send Notification",
-      "card": {
-        "id": "card-uuid-2",
-        "card_type": "send_email",
-        "version": 1,
-        "variables": []
-      }
-    }
-  ],
-  "edges": [
-    {
-      "edge_id": "e1",
-      "source_node_id": "when-1",
-      "target_node_id": "then-1",
-      "source_handle": "success",
-      "target_handle": "input"
-    }
-  ]
-}
-```
-
-## update\_advanced\_workflow
-
-Update an existing advanced workflow. You can update any combination of name, description, nodes, and edges.
-
-**Parameters:**
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `workflow_id` | string | Yes | UUID of workflow to update |
-| `name` | string | No | New name |
-| `description` | string | No | New description |
-| `nodes` | array | No | New nodes (replaces all existing nodes) |
-| `edges` | array | No | New edges (replaces all existing edges) |
 
 ## delete\_workflow
 
@@ -190,3 +60,59 @@ List all available workflow cards with their conditions and configuration.
 {% hint style="info" %}
 Cards have role flags: `when_condition` (trigger), `and_condition` (additional condition), and `then_condition` (action). Use these to determine which node types a card can be used in.
 {% endhint %}
+
+## list\_workflow\_variables
+
+List all workflow variables of the organization with name, type and current value.
+
+**Parameters:** None
+
+## set\_workflow\_variable
+
+Create a workflow variable or update its value. Document-type variables have no value of their own; they are set by the workflow at run time.
+
+**Parameters:**
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `name` | string | Yes | Variable name |
+| `value` | string | No | New value |
+| `var_type` | string | No | Variable type when creating (for example `string`, `number`, `document`) |
+
+## search\_workflow\_logs
+
+Search workflow execution logs to find out why runs failed, succeeded or hit a condition mismatch.
+
+**Parameters:**
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | No | Limit to one workflow |
+| `doc_id` | string | No | Limit to runs for one document |
+| `status` | string | No | Run status to filter by |
+| `keyword` | string | No | Free-text filter on the log |
+| `include_workflow_data` | boolean | No | Include the workflow definition snapshot per run |
+| `limit` / `offset` | integer | No | Paging |
+
+## get\_workflow\_log\_detail
+
+Full detail of one run: the raw card execution logs and the workflow definition as it was at run time.
+
+**Parameters:**
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `log_id` | string | Yes | Log entry id from `search_workflow_logs` |
+
+## run\_workflow\_with\_assertions
+
+Seed workflow variables, run an advanced workflow with the real executor and check the outcome against the database. Variables are real writes, not mocks, use it to integration-test a workflow from an assistant.
+
+**Parameters:**
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `workflow_id` | string | Yes | UUID of the workflow to run |
+| `doc_id` | string | No | Document to run the workflow against |
+| `seed_variables` | array | No | Variables to create or update before the run; document-type variables can point at a `doc_id` via `value` |
+

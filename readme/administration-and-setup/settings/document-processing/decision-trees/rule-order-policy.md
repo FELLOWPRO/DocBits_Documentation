@@ -12,7 +12,7 @@ This policy applies rules in the order they appear in the decision tree and retu
 | 4    | Total Amount <= 4000 | GROUP_4     |
 | 5    | Total Amount <= 5000 | GROUP_5     |
 
-Given that the input value is **Total Amount = 3500**, the evaluation of the rules would be:
+Given that the input value is **Total Amount = 2500**, the evaluation of the rules would be:
 
 * **Rule 1**: Total Amount <= 1000 (does not match)
 * **Rule 2**: Total Amount <= 2000 (does not match)

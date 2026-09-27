@@ -23,7 +23,7 @@ Below the error message, the **Exception** is displayed, showing where the error
 
 On the left side of the page, your document is displayed along with several tools for interaction and review.
 
-<figure><img src="../../.gitbook/assets/error_3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/error_3.png" alt=""><figcaption></figcaption></figure>
 
 ### **Left Toolbar Options**
 

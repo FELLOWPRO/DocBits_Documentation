@@ -41,6 +41,8 @@ Default rule   ──► built-in, immutable via MCP
 | `get_extracted_tables` | Get line items extracted from a processed document |
 | `get_preview_pdf` | Retrieve the XSLT-rendered preview PDF for a document |
 | `get_preview_image` | Retrieve a rendered page image for a processed document |
+| `extract_edoc_table` | Extract an XML/EDI file you pass in and return the fields as a flat table together with the rule that produced each one |
+| `compare_edoc_extraction` | Compare the default and your custom extraction (and optionally a candidate rule) on one document |
 
 ### Customization (org-scoped, default org blocked)
 
@@ -51,6 +53,10 @@ Default rule   ──► built-in, immutable via MCP
 | `update_edoc_custom_attribute` | Add a new version of a custom rule, optionally activating it immediately |
 | `delete_edoc_custom_attribute` | Delete a custom rule — the system falls back to the default automatically |
 | `preview_edoc_custom_xslt` | Dry-run a XSLT transformation against an XML document before activating |
+| `get_edoc_attribute_source` | Fetch the editable source of an attribute (PREVIEW, EXTRACTION_PATHS, TRANSFORMATION) to change it |
+| `list_edoc_attribute_versions` | Version history of a custom attribute: drafts and the active version |
+| `activate_edoc_attribute_version` | Activate a specific version or draft (this is how you roll back) |
+| `delete_edoc_attribute_draft` | Delete a draft that was never activated |
 
 ### Verification
 

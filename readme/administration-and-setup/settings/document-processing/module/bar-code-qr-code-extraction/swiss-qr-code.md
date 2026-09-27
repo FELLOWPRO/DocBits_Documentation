@@ -20,31 +20,31 @@ Swiss QR Bills follow the **ISO 20022** payment standard and are issued in two v
 
 ### Detection
 
-- Magic prefix: `SPC\n0100` (v1.0) or `SPC\n0200` (v2.0)
-- ISO 20022 compliant
-- The parser also surfaces `alt-schemes` (alternative payment procedures) when present
+* Magic prefix: `SPC\n0100` (v1.0) or `SPC\n0200` (v2.0)
+* ISO 20022 compliant
+* The parser also surfaces `alt-schemes` (alternative payment procedures) when present
 
 ### Extracted Fields
 
 All fields use the `swissqr_` prefix:
 
-| Field | Description |
-|-------|-------------|
-| `swissqr_account` | IBAN or QR-IBAN of the creditor |
-| `swissqr_creditor_name` | Creditor name |
-| `swissqr_creditor_street` | Creditor street / address line |
-| `swissqr_creditor_city` | Creditor city |
-| `swissqr_creditor_postal_code` | Creditor postal code |
-| `swissqr_creditor_country` | Creditor country (ISO 3166 alpha-2) |
-| `swissqr_debtor_name` | Debtor name (if printed) |
-| `swissqr_debtor_street`, `swissqr_debtor_city`, `swissqr_debtor_postal_code`, `swissqr_debtor_country` | Debtor address |
-| `swissqr_amount` | Amount (decimal) |
-| `swissqr_currency` | Currency (ISO 4217) — typically `CHF` or `EUR` |
-| `swissqr_reference` | Structured reference (QRR or SCOR) |
-| `swissqr_reference_type` | `QRR`, `SCOR` or `NON` |
-| `swissqr_unstructured_message` | Free-text remittance |
-| `swissqr_bill_information` | Structured bill information (S1 / Swico) |
-| `swissqr_alt_schemes` | Alternative procedures (if present) |
+| Field                                                                                                  | Description                                    |
+| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
+| `swissqr_account`                                                                                      | IBAN or QR-IBAN of the creditor                |
+| `swissqr_creditor_name`                                                                                | Creditor name                                  |
+| `swissqr_creditor_street`                                                                              | Creditor street / address line                 |
+| `swissqr_creditor_city`                                                                                | Creditor city                                  |
+| `swissqr_creditor_postal_code`                                                                         | Creditor postal code                           |
+| `swissqr_creditor_country`                                                                             | Creditor country (ISO 3166 alpha-2)            |
+| `swissqr_debtor_name`                                                                                  | Debtor name (if printed)                       |
+| `swissqr_debtor_street`, `swissqr_debtor_city`, `swissqr_debtor_postal_code`, `swissqr_debtor_country` | Debtor address                                 |
+| `swissqr_amount`                                                                                       | Amount (decimal)                               |
+| `swissqr_currency`                                                                                     | Currency (ISO 4217) — typically `CHF` or `EUR` |
+| `swissqr_reference`                                                                                    | Structured reference (QRR or SCOR)             |
+| `swissqr_reference_type`                                                                               | `QRR`, `SCOR` or `NON`                         |
+| `swissqr_unstructured_message`                                                                         | Free-text remittance                           |
+| `swissqr_bill_information`                                                                             | Structured bill information (S1 / Swico)       |
+| `swissqr_alt_schemes`                                                                                  | Alternative procedures (if present)            |
 
 ### Sample API Response
 
@@ -77,6 +77,6 @@ Swiss QR Bill parsing is covered by the general **Bar-Code / QR Code Extraction*
    * Scroll down to locate the **Bar-Code / QR Code Extraction** option.
    * Toggle the slider to enable it.
 
-<figure><img src="../../../../../.gitbook/assets/barcode_qr_code_extraction_toggle.png" alt="Barcode and QR Code Extraction Toggle"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (443).png" alt="Barcode and QR Code Extraction Toggle"><figcaption></figcaption></figure>
 
-For a full list of Payment QR Code standards, see the [Overview](./README.md) page.
+For a full list of Payment QR Code standards, see the [Overview](./) page.

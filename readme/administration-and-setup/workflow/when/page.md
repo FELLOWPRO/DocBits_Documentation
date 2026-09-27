@@ -1,6 +1,6 @@
 # Document Type Operation
 
-<figure><img src="../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt=""><figcaption></figcaption></figure>
 
 ## **Purpose:**
 

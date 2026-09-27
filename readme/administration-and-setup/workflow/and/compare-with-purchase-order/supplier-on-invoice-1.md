@@ -4,7 +4,7 @@ hidden: true
 
 # Supplier on Invoice
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 ## **Purpose**
 

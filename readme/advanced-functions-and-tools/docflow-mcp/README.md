@@ -14,7 +14,7 @@ With DocFlow MCP you can:
 
 ## Tools Overview
 
-DocFlow MCP groups its tools into the following categories. Most workflow- and Card-SDK tools mirror existing REST endpoints — see the API reference for those. The categories below cover the MCP-specific surface and the workflow concepts you need to use it.
+DocFlow MCP groups its tools into the following categories. Workflows themselves are created and edited in the DocFlow designer; the MCP reads, tests, runs and deletes them. Most workflow- and Card-SDK tools mirror existing REST endpoints — see the API reference for those. The categories below cover the MCP-specific surface and the workflow concepts you need to use it.
 
 ### Workflow Management
 
@@ -22,17 +22,18 @@ DocFlow MCP groups its tools into the following categories. Most workflow- and C
 |------|-------------|
 | `list_workflows` | List all workflows for the current organization |
 | `get_workflow` | Get details of a specific workflow by ID |
-| `create_advanced_workflow` | Create a new advanced workflow with nodes and edges |
-| `update_advanced_workflow` | Update an existing advanced workflow |
 | `delete_workflow` | Delete a workflow by ID |
+| `list_workflow_variables` / `set_workflow_variable` | Read and set workflow variables |
 
 ### Workflow Testing
 
 | Tool | Description |
 |------|-------------|
 | `test_advanced_workflow` | Test an advanced workflow execution with optional document |
+| `run_workflow_with_assertions` | Seed variables, run a workflow with the real executor and check the outcome |
 | `list_test_scenarios` | List all workflow test scenarios |
 | `list_cards` | List available workflow cards/actions |
+| `search_workflow_logs` / `get_workflow_log_detail` | Find and inspect workflow runs |
 
 ### Card SDK Management
 

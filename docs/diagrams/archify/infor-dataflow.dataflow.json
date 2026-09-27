@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "DocBits and Infor ERP Data Flow",
+    "locale": "en",
+    "animation": "none",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1080,
+      640
+    ]
+  },
+  "stages": [
+    {
+      "label": "Infor LN/M3"
+    },
+    {
+      "label": "ION Desk inbound"
+    },
+    {
+      "label": "API Gateway"
+    },
+    {
+      "label": "DocBits"
+    },
+    {
+      "label": "Export targets"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "erp",
+      "type": "external",
+      "label": "Infor LN/M3",
+      "sublabel": "sends BODs",
+      "stage": 0,
+      "row": 0,
+      "tag": "Infor ERP"
+    },
+    {
+      "id": "ionInbound",
+      "type": "messagebus",
+      "label": "ION Desk",
+      "sublabel": "inbound dataflow",
+      "stage": 1,
+      "row": 0,
+      "tag": "ION Desk"
+    },
+    {
+      "id": "kinesis",
+      "type": "cloud",
+      "label": "Kinesis Stream",
+      "sublabel": "optional alt path",
+      "stage": 2,
+      "row": 2,
+      "tag": "AWS"
+    },
+    {
+      "id": "apiGateway",
+      "type": "security",
+      "label": "Infor API Gateway",
+      "sublabel": "OAuth",
+      "stage": 2,
+      "row": 0,
+      "tag": "Infor ION"
+    },
+    {
+      "id": "docbitsImport",
+      "type": "backend",
+      "label": "DocBits",
+      "sublabel": "master data (/import)",
+      "stage": 3,
+      "row": 0,
+      "tag": "supplier · PO"
+    },
+    {
+      "id": "docbitsExport",
+      "type": "backend",
+      "label": "DocBits",
+      "sublabel": "exporter registry",
+      "stage": 3,
+      "row": 2,
+      "tag": "export"
+    },
+    {
+      "id": "idm",
+      "type": "database",
+      "label": "Infor IDM",
+      "sublabel": "document storage",
+      "stage": 4,
+      "row": 0,
+      "tag": "/IDM/api/items"
+    },
+    {
+      "id": "ionMessaging",
+      "type": "messagebus",
+      "label": "ION Messaging",
+      "sublabel": "via ION API",
+      "stage": 4,
+      "row": 1,
+      "tag": "Sync.CaptureDocument"
+    },
+    {
+      "id": "ionDeskMapping",
+      "type": "messagebus",
+      "label": "ION Desk mapping",
+      "sublabel": "→ LN/M3 import",
+      "stage": 4,
+      "row": 2,
+      "tag": "per doc type"
+    },
+    {
+      "id": "directErpApi",
+      "type": "external",
+      "label": "Direct ERP API",
+      "sublabel": "M3 MI / LN SOAP",
+      "stage": 4,
+      "row": 3,
+      "tag": "optional"
+    }
+  ],
+  "flows": [
+    {
+      "from": "erp",
+      "to": "ionInbound",
+      "label": "sends BODs",
+      "variant": "default"
+    },
+    {
+      "from": "ionInbound",
+      "to": "apiGateway",
+      "label": "ION API call",
+      "classification": "OAuth",
+      "variant": "default",
+      "route": "straight",
+      "labelAt": [
+        500,
+        200
+      ]
+    },
+    {
+      "from": "ionInbound",
+      "to": "kinesis",
+      "label": "optional stream",
+      "variant": "dashed",
+      "labelAt": [
+        440,
+        270
+      ]
+    },
+    {
+      "from": "apiGateway",
+      "to": "docbitsImport",
+      "label": "REST import",
+      "classification": "/import/*_bod",
+      "variant": "default",
+      "route": "straight"
+    },
+    {
+      "from": "kinesis",
+      "to": "docbitsImport",
+      "label": "poll (60s)",
+      "variant": "dashed",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "via": [
+        [
+          637,
+          385
+        ],
+        [
+          637,
+          196
+        ],
+        [
+          745,
+          196
+        ]
+      ]
+    },
+    {
+      "from": "docbitsImport",
+      "to": "docbitsExport",
+      "label": "validated",
+      "variant": "default",
+      "labelAt": [
+        785,
+        271
+      ]
+    },
+    {
+      "from": "docbitsExport",
+      "to": "idm",
+      "label": "PDF + attributes",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "vertical-channel",
+      "channelX": 840,
+      "labelAt": [
+        840,
+        215
+      ]
+    },
+    {
+      "from": "docbitsExport",
+      "to": "ionMessaging",
+      "variant": "dashed",
+      "fromSide": "right",
+      "toSide": "left",
+      "route": "vertical-channel",
+      "channelX": 862,
+      "label": "BOD",
+      "labelAt": [
+        880,
+        330
+      ]
+    },
+    {
+      "from": "ionMessaging",
+      "to": "ionDeskMapping",
+      "label": "maps to target BODs",
+      "variant": "dashed",
+      "labelAt": [
+        1000,
+        328
+      ]
+    },
+    {
+      "from": "docbitsExport",
+      "to": "directErpApi",
+      "label": "direct call",
+      "classification": "M3 MI / LN SOAP",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "via": [
+        [
+          745,
+          450
+        ],
+        [
+          848,
+          450
+        ],
+        [
+          848,
+          499
+        ]
+      ],
+      "labelAt": [
+        795,
+        447
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Inbound master data",
+      "items": [
+        "BODs: SupplierPartyMaster, RemitToPartyMaster, PurchaseOrder, ReceiveDelivery, plus SupplierInvoice, AdvanceShipNotice, SalesOrder, ItemMaster",
+        "Main path: ION API call through the Infor API Gateway (OAuth) to DocBits /import/*_bod endpoints",
+        "Optional alternative: ION Desk also feeds an AWS Kinesis BOD stream that DocBits polls every 60 seconds"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Export & Auto Accounting",
+      "items": [
+        "PDF + attributes always go to Infor IDM via ION API (/IDM/api/items)",
+        "Either a direct ERP API call (M3 MI e.g. APS450MI, or LN SOAP ExternalInvoiceRegistration) or, when no direct exporter is configured, BOD Sync.CaptureDocument to ION Messaging (via ION API), which ION Desk then maps to target BODs for LN/M3 import",
+        "GL account suggestions on the approval screen (optional); the exporter then sends the saved accounting lines",
+        "Acknowledge BODs can optionally come back from Infor to confirm import"
+      ]
+    }
+  ]
+}

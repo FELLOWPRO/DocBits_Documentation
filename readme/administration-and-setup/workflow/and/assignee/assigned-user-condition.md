@@ -1,6 +1,6 @@
 # Assigned User Condition
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513 (1).png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/userlmn_5e16e9b23626ec1211c753fec5333513.png" alt="" width="552"><figcaption></figcaption></figure>
 
 **Purpose**
 

@@ -1,6 +1,6 @@
 # Import
 
-<figure><img src="../../../../.gitbook/assets/import_settings.png" alt="Import Settings"><figcaption><p>Import Settings Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ftp_0.png" alt="Import Settings"><figcaption><p>Import Settings Page</p></figcaption></figure>
 
 ## Overview
 
@@ -70,7 +70,7 @@ You can click the three dots in the **Action** column to access the following op
 
 You can set up an email import that automatically imports documents from your inbox as soon as they arrive. You can choose to configure either an IMAP or an OAuth connection
 
-<mark style="color:red;">**Note**</mark>:  Only documents with the following file types will be imported:
+<mark style="color:red;">**Note**</mark>: Only documents with the following file types will be imported:
 
 * `.pdf`
 * `.tiff` / `.tif`
@@ -152,9 +152,7 @@ You can click the three dots in the **Action** column to access the following op
 
     <figure><img src="../../../../.gitbook/assets/email_5.png" alt=""><figcaption></figcaption></figure>
 6. Once you’ve configured the desired behavior, you can either start importing emails by clicking **Import** or save your changes by clicking **Save**.
-7.  After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
-
-
+7. After saving your connection, you can activate it by clicking the three dots in the **Action** column of your connection, then selecting **Activate**.
 
 ### Actions for OAuth Office365
 

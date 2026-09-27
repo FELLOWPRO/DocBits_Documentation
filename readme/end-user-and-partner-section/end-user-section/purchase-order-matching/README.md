@@ -95,6 +95,39 @@ To match a purchase order line item with a line item extracted from the document
 
 You can also select **multiple purchase order lines** and match them to a **single line** in the extracted table. For more details, click [here](./#multi-matches).
 
+## Why is there no match?
+
+When a document is not matched, the screen shows **one sentence above the purchase order area** that names the reason, and what to do about it:
+
+| Message                                                        | Meaning and next step                                                                                                                                                        |
+| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| No purchase order number                                       | The document has no purchase order number. Enter it in the header field and save — matching runs again on save.                                                              |
+| No purchase order was found in the ERP for …                   | The number on the document does not exist in the ERP. Check the number and save.                                                                                             |
+| … has not been looked up yet                                   | The number arrived after processing (for example from master data). Save the document or click **Auto Match**.                                                               |
+| … is loaded but not connected                                  | The purchase order lines are on screen but nothing is matched yet. Click **Auto Match** or connect the lines by hand.                                                       |
+| … was found, but none of the purchase order lines match        | Every line failed the matching rules. Open the **matching history** to see on which column, then match by hand or correct the document.                                    |
+| The document has no line items                                 | Nothing to match against; check the table extraction.                                                                                                                        |
+| The line-item table has no purchase order columns mapped       | Quantity, unit price and item number are not mapped for this table. Map them in the table settings.                                                                          |
+| The purchase order has no open lines left                      | Every line of the order is already consumed or disabled (see [Consumed PO Line Status](./#consumed-po-line-status) and [Disable statuses](./#disable-statuses)).             |
+
+Below the sentence the screen lists candidates that were **set aside**, for example _"Ignored: 2900233285 from the line-item column is the invoice number, not a purchase order"_ or _"… is excluded by configuration"_. The message disappears once the document is matched.
+
+{% hint style="info" %}
+**Matching runs again when you save.** If the purchase order number changes, or it was never looked up before, the save itself matches the document. An existing match is never replaced by a save — and lines you removed by hand stay removed.
+{% endhint %}
+
+**If a match cannot be saved**, the screen does not report "saved": it restores the match on screen, marks the document as unsaved and shows why the server dropped it — for example _"The PO match could not be saved: the transformation rule "…" rebuilt the table"_. Administrators see a link to the rule in question. Ask an administrator to adjust the [transformation rule](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) or the [matching rules](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+
+## Matching history
+
+The **Matching history** button (clock icon in the purchase order toolbar; it requires the Analytics permission) opens a read-only replay of how the last match was decided:
+
+* the **transformation rules** that ran before matching, and whether one of them dropped a match,
+* the matching **stages and rules** that were tried — green where a match was found, red where a rule found nothing, grey where a rule was skipped by its activation condition (the tooltip says why),
+* for a failed rule, the **compared column** with the value on the document and the value on the purchase order.
+
+Opening and playing the history triggers neither matching nor export. Administrators find the same replay, with a document ID input, next to the rule set diagram in the document type's purchase order settings.
+
 ## Which columns are being matched?
 
 The Purchase Order Matching process matches only specific columns. The list below outlines which columns are matched, if available. If no [tolerance](./#accept-tolerances) is set, the columns will only match if they are an exact (100%) match.

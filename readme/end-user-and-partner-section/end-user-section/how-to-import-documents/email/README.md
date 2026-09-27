@@ -5,40 +5,44 @@ noIndex: true
 
 # Email
 
-Go to the Settings menu and select “Import” under Document Processing.
+DocBits can import documents from email in two ways. Both are configured under **Settings → Import** (Document Processing).
 
-<figure><img src="../../../../.gitbook/assets/email1.png" alt=""><figcaption></figcaption></figure>
+## Method 1 — Email Import (connect a mailbox)
 
-Scroll to the bottom of the page and select the NEW button to create a new email import.
+Connect an email account and DocBits automatically imports documents as new emails arrive. On the Import page, open the **Email Import** section and click **+ New**.
 
-<figure><img src="../../../../.gitbook/assets/email2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="Email Import section"><figcaption>Email Import — connect a mailbox for automatic document import</figcaption></figure>
 
-After pressing NEW, the following menu will be shown to you.
+Then choose the protocol for your mailbox:
 
-<figure><img src="../../../../.gitbook/assets/email3.png" alt=""><figcaption></figcaption></figure>
+* **IMAP** — see [IMAP](imap.md)
+* **OAuth (Office 365)** — see [OAuth Office365](oauth-office365.md)
 
-Here you can select which Protocol you would like.
+## Method 2 — Inbound Emails (forward to DocBits)
 
-<figure><img src="../../../../.gitbook/assets/email4.png" alt="" width="207"><figcaption></figcaption></figure>
+Forward — or send — emails directly to your organisation's unique inbound address and DocBits imports the attachments automatically. No mailbox connection is required. Open the **Inbound Emails** section on the Import page.
 
-## Supported attachment types
+<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="Inbound Emails section"><figcaption>Inbound Emails — forward documents to your DocBits address</figcaption></figure>
 
-DocBits imports the following document attachments from incoming emails:
+* **Info / E-Mail** — your organisation's unique inbound address (format `<org-id>@inbound.docbits.com`). Forward your documents to this address; use the copy icon to copy it.
+* **Import Document only from predefined E-Mail(s)** — when enabled, only emails from the senders you add to the whitelist are imported; emails from any other sender are ignored.
+* **Reply to this email if import can not be done** — sends an automatic reply to the sender when the import fails.
+* **Notify sender when import fails** — notifies the sender if their email could not be imported.
+* **Logs** — open the inbound email processing log. Click **Save** to apply your changes.
 
-| Type | File extensions | Used for |
+## Supported document attachments
+
+Both email import methods accept these document attachments:
+
+| Format | File extensions | Typical use |
 | --- | --- | --- |
-| **PDF** | `.pdf` | Invoices, delivery notes, scanned documents |
-| **TIFF** | `.tif`, `.tiff` | Scanned / faxed documents |
-| **XML** | `.xml` | Structured e-invoices (e.g. ZUGFeRD/Factur-X, XRechning, Peppol) |
-| **EDI** | – | Electronic Data Interchange messages |
+| PDF | `.pdf` | Invoices and other PDF documents |
+| TIFF | `.tif`, `.tiff` | Scanned documents |
+| XML | `.xml` | Structured electronic documents |
+| EDI / purchase order data | `.edi`, `.purchaseorder` | Electronic data interchange and purchase orders |
 
-{% hint style="info" %}
-If a forwarding gateway re-labels a document as `application/octet-stream`, DocBits still detects it from the file content and extension, and `.eml` emails are unpacked so an inner PDF/XML is imported.
-{% endhint %}
+If a forwarding service labels a PDF, TIFF, or XML file as a generic attachment, DocBits can identify it from the file content or a known file extension. Forwarded `.eml` messages can also contain supported documents; DocBits extracts those inner attachments before import.
 
-Other attachments are **not** imported:
+Images such as PNG, JPG, GIF, and BMP are not imported as documents. Inline signature images and logos in forwarded email are skipped. Office files such as Word, Excel, and PowerPoint are not supported by these email import methods.
 
-* Images such as PNG, JPG, GIF or BMP — inline images (email signatures, logos) in forwarded mails are ignored automatically and never counted as failures.
-* Office files (Word, Excel, PowerPoint) and other non-document formats.
-
-If an email arrives without a supported attachment, and sender notification is enabled, the sender receives an email explaining that the document could not be imported, together with a link back to this page.
+For forwarded emails, check **Logs** under **Inbound Emails** if a document is missing. When **Notify sender when import fails** is enabled, the sender receives an explanation and a link to this page. For a connected mailbox, use the [IMAP](imap.md) or [OAuth (Office 365)](oauth-office365.md) setup guide.

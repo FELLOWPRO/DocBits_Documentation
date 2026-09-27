@@ -35,12 +35,14 @@ Never logged, never printed — only sent in the request itself.
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import os
 import re
 import subprocess
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -48,6 +50,38 @@ README_ROOT = "readme"
 SUMMARY_PATH = os.path.join(README_ROOT, "SUMMARY.md")
 BASE_DOCS_URL = "https://docs.docbits.com"
 _MD_LINK_RE = re.compile(r"\]\(([^)]+\.md)\)")
+
+# Image hosts the chat is allowed to show. docs.docbits.com itself, and the
+# GitBook per-space files CDN — a host named "<numeric-space-id>-files.
+# gitbook.io" (confirmed live: main is 578966019-files.gitbook.io, de is
+# 2396827744-files.gitbook.io — one GitBook "space" per language variant,
+# each with its own numeric id; note the HYPHEN before "files", it is not
+# a "<id>.files.gitbook.io" subdomain). Anything else (pasted
+# googleusercontent.com links etc.) is dropped rather than shown in chat.
+_ALLOWED_IMAGE_HOST_SUFFIXES = ("-files.gitbook.io",)
+_ALLOWED_IMAGE_EXACT_HOSTS = ("docs.docbits.com",)
+
+# GitBook's exported HTML image block: <figure><img src="..." alt="...">
+# ...</figure>. Attribute order is not guaranteed, so the tag is matched
+# first and its attributes parsed separately.
+_IMG_TAG_RE = re.compile(r"<img\b([^>]*)>", re.IGNORECASE)
+_IMG_ATTR_RE = re.compile(r'(\w+)\s*=\s*"([^"]*)"')
+# Plain markdown ![alt](src) — also handled since not every image in this
+# repo uses the GitBook HTML form.
+_MD_IMAGE_RE = re.compile(r'!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)')
+
+# Extracts the real, directly-fetchable CDN url from GitBook's own
+# docs.docbits.com/~gitbook/image?url=<encoded>&...&sign=<hmac>&... proxy —
+# `sign` is a server-computed HMAC we cannot replicate, but the url it
+# wraps needs no such signature (verified: 200 image/* with alt=media
+# alone, see the PR description).
+_GITBOOK_PROXY_IMG_SRC_RE = re.compile(r'src="(https://[^"]*~gitbook/image\?[^"]*)"')
+_GITBOOK_PROXY_INNER_URL_RE = re.compile(r"[?&]url=([^&\"]+)")
+_GIT_BLOB_SHA_RE = re.compile(r"git-blob-([0-9a-f]{40})")
+
+# Per-run cache: {page_url: {blob_sha: resolved_absolute_url}}. One page
+# has many images; fetch it once, not once per image.
+_page_blob_url_cache: dict[str, dict[str, str]] = {}
 
 
 def published_rel_path(md_path: str) -> str | None:
@@ -144,6 +178,126 @@ def _run_git(args: list[str]) -> str:
     return result.stdout
 
 
+def _is_allowed_image_host(url: str) -> bool:
+    host = (urllib.parse.urlparse(url).hostname or "").lower()
+    return host in _ALLOWED_IMAGE_EXACT_HOSTS or any(
+        host.endswith(suffix) for suffix in _ALLOWED_IMAGE_HOST_SUFFIXES
+    )
+
+
+def _iter_raw_images(markdown_text: str) -> list[tuple[tuple[int, int], str, str]]:
+    """Yield ((start, end), src, alt) for every image reference in document
+    order — GitBook's exported `<figure><img src=... alt=...>` HTML form
+    and plain markdown `![alt](src)` alike."""
+    found: list[tuple[tuple[int, int], str, str]] = []
+    for match in _IMG_TAG_RE.finditer(markdown_text):
+        attrs = dict(_IMG_ATTR_RE.findall(match.group(1)))
+        src = attrs.get("src")
+        if src:
+            found.append((match.span(), src, attrs.get("alt", "")))
+    for match in _MD_IMAGE_RE.finditer(markdown_text):
+        found.append((match.span(), match.group(2), match.group(1)))
+    found.sort(key=lambda item: item[0][0])
+    return found
+
+
+def _fetch_page_blob_to_url_map(page_url: str) -> dict[str, str]:
+    """Fetch the live rendered page and map every git-blob-sha embedded in
+    its GitBook-proxied image urls to the underlying, directly-fetchable
+    CDN url. Cached per page for the run.
+
+    Returns {} (never raises) when the page can't be fetched — e.g. a
+    brand-new page this same push introduced, which GitBook's own
+    (separate, async) publish pipeline hasn't rendered yet. Callers treat
+    an empty/missing lookup as "can't resolve this image right now" and
+    drop it; the next full backfill (which re-fetches every page fresh)
+    picks it up once the live site has caught up.
+    """
+    if page_url in _page_blob_url_cache:
+        return _page_blob_url_cache[page_url]
+
+    mapping: dict[str, str] = {}
+    try:
+        # docs.docbits.com (GitBook-hosted) 403s a bare urllib default
+        # User-Agent — a normal browser UA is enough to pass.
+        request = urllib.request.Request(
+            page_url,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; DocBitsSync/1.0)"},
+        )
+        with urllib.request.urlopen(request, timeout=30) as response:
+            page_html = response.read().decode("utf-8", "replace")
+    except (urllib.error.URLError, TimeoutError) as exc:
+        print(f"::warning::could not fetch {page_url} to resolve images: {exc}")
+        _page_blob_url_cache[page_url] = mapping
+        return mapping
+
+    for match in _GITBOOK_PROXY_IMG_SRC_RE.finditer(page_html):
+        proxied_src = html.unescape(match.group(1))
+        inner_match = _GITBOOK_PROXY_INNER_URL_RE.search(proxied_src)
+        if not inner_match:
+            continue
+        inner_url = urllib.parse.unquote(inner_match.group(1))
+        blob_match = _GIT_BLOB_SHA_RE.search(inner_url)
+        if blob_match and _is_allowed_image_host(inner_url):
+            mapping[blob_match.group(1)] = inner_url
+
+    _page_blob_url_cache[page_url] = mapping
+    return mapping
+
+
+def resolve_images_in_markdown(markdown_text: str, md_path: str, page_url: str) -> str:
+    """Rewrite every image reference to a directly-fetchable absolute url on
+    an allowed host, normalised to plain markdown `![alt](url)` (so
+    fulltextsearch's chunker only needs one pattern regardless of the
+    source form).
+
+    - Already-absolute src on an allowed host (docs.docbits.com or a
+      GitBook per-space files CDN): kept as-is.
+    - Already-absolute src on any other host (pasted googleusercontent.com
+      links etc.): dropped.
+    - Relative src (GitBook's `.gitbook/assets/...` convention): resolved
+      via the local file's git blob sha, matched against the live page's
+      own rendered image urls (see `_fetch_page_blob_to_url_map`) — the
+      one thing only the live site knows is which opaque filename segment
+      GitBook assigned this particular upload. Dropped (with a warning,
+      never a hard failure) when the local file is missing or the live
+      page doesn't have a matching image yet.
+    """
+    images = _iter_raw_images(markdown_text)
+    if not images:
+        return markdown_text
+
+    blob_map: dict[str, str] | None = None
+    out: list[str] = []
+    last_end = 0
+    for (start, end), src, alt in images:
+        out.append(markdown_text[last_end:start])
+        last_end = end
+
+        resolved: str | None = None
+        if src.startswith("http://") or src.startswith("https://"):
+            if _is_allowed_image_host(src):
+                resolved = src
+        else:
+            local_rel_path = os.path.normpath(
+                os.path.join(os.path.dirname(md_path), src)
+            )
+            local_abs_path = os.path.join(REPO_ROOT, local_rel_path)
+            if os.path.exists(local_abs_path):
+                blob_sha = _run_git(["hash-object", local_rel_path]).strip()
+                if blob_map is None:
+                    blob_map = _fetch_page_blob_to_url_map(page_url)
+                resolved = blob_map.get(blob_sha)
+
+        if resolved:
+            out.append(f"![{alt}]({resolved})")
+        else:
+            print(f"::warning::dropping unresolvable image '{src}' in {md_path}")
+
+    out.append(markdown_text[last_end:])
+    return "".join(out)
+
+
 def _call_endpoint(path: str, payload: dict, *, dry_run: bool) -> dict:
     if dry_run:
         print(f"[dry-run] POST {path}: {json.dumps(payload)[:200]}")
@@ -188,6 +342,7 @@ def ingest_md_file(
         return
     title = extract_title(markdown_text, fallback=rel.rsplit("/", 1)[-1] or "DocBits")
     url = full_url(rel, lang)
+    markdown_text = resolve_images_in_markdown(markdown_text, md_path, url)
     print(f"ingest {md_path} -> {url}")
     _call_endpoint(
         "/docs/ingest",

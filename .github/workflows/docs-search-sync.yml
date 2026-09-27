@@ -4,13 +4,21 @@ name: Docs Search Sync
 # in step with docs.docbits.com.
 #
 # - push to main/de: diffs the two commits and POSTs only the changed
-#   pages (see .github/scripts/docs_search_sync.py "diff" mode).
-# - nightly schedule: reconcile-only per lang — deletes chunks for any
-#   URL no longer reachable from SUMMARY.md, without re-ingesting content.
-#   Catches what a diff-based push step can miss (e.g. a squash-merge
-#   whose `before` SHA doesn't reflect the real prior state).
-# - workflow_dispatch: full backfill per lang — re-ingests every
-#   published page, then reconciles.
+#   pages (see .github/scripts/docs_search_sync.py "diff" mode). A rename
+#   ingests the new URL before deleting the old one; a SUMMARY.md change
+#   also ingests any page newly reachable from it (even if that page's
+#   own file wasn't touched in this push).
+# - nightly schedule AND workflow_dispatch: the SAME full ingest +
+#   reconcile per lang (hash-skip keeps re-ingesting unchanged pages
+#   cheap — no re-embedding). This is the safety net for whatever a
+#   diff-based push step could miss: a squash-merge whose `before` SHA
+#   doesn't reflect the real prior state, a SUMMARY.md-only publication
+#   change, a replaced image asset, or a run that failed partway through.
+#
+# concurrency: two syncs for the same ref must never race each other's
+# OpenSearch writes — a newer push is queued behind whatever's running
+# rather than cancelling it (cancel-in-progress: false), since a
+# cancelled ingest can leave a page's stale-ordinal cleanup half-applied.
 #
 # Requires two repo secrets that this PR does NOT create (see the PR
 # description for the manual setup step):
@@ -31,6 +39,10 @@ on:
 
 permissions:
   contents: read
+
+concurrency:
+  group: docs-search-sync-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   diff-sync:
@@ -67,18 +79,7 @@ jobs:
           ref: ${{ matrix.lang }}
           fetch-depth: 1
 
-      - name: Nightly reconcile
-        if: github.event_name == 'schedule'
-        env:
-          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
-          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
-          SYNC_LANG: ${{ matrix.lang }}
-        run: |
-          python3 .github/scripts/docs_search_sync.py full \
-            --lang "$SYNC_LANG" --reconcile-only
-
-      - name: Full backfill
-        if: github.event_name == 'workflow_dispatch'
+      - name: Full ingest + reconcile
         env:
           DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
           DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}

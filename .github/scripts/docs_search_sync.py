@@ -10,12 +10,15 @@ Two modes:
 
   full --lang LANG [--reconcile-only]
       Walks every markdown page reachable from readme/SUMMARY.md at the
-      current checkout. Without --reconcile-only (workflow_dispatch, "full
-      backfill"): ingests every page, then reconciles. With
-      --reconcile-only (nightly cron): skips re-ingesting content and only
-      deletes chunks for URLs no longer published — cheap, catches pages
-      the diff-based push step missed (e.g. a squash-merge whose `before`
-      SHA doesn't reflect what actually changed).
+      current checkout. Without --reconcile-only: ingests every page (hash
+      -skip keeps re-ingesting unchanged pages cheap — no re-embedding),
+      then reconciles. Both the nightly cron AND workflow_dispatch run
+      this full form: it's the safety net that catches whatever a
+      diff-based push step missed — a squash-merge whose `before` SHA
+      doesn't reflect what actually changed, a SUMMARY.md publication
+      change, a replaced image asset, or a run that simply failed midway.
+      --reconcile-only (delete-only, no re-ingest) is kept as a
+      lighter-weight manual/ops option but nothing schedules it.
 
 URL mapping (verified against 3+ live docs.docbits.com pages, see the PR
 description): the site's root is `readme/` (see .gitbook.yaml `root: ./`),
@@ -119,18 +122,7 @@ def full_url(rel_path: str, lang: str) -> str:
     return prefix if not rel_path else f"{prefix}/{rel_path}"
 
 
-def published_paths_from_summary() -> set[str]:
-    """Every markdown file SUMMARY.md actually links to, as repo-relative
-    paths (e.g. {"readme/setup/README.md", "readme/setup/sso.md", ...}).
-
-    A file that exists on disk but isn't reachable from SUMMARY.md is not
-    a real docs.docbits.com page — ingesting it would put a dead link in
-    search results.
-    """
-    summary_file = os.path.join(REPO_ROOT, SUMMARY_PATH)
-    if not os.path.exists(summary_file):
-        return set()
-    text = open(summary_file, encoding="utf-8").read()
+def _parse_summary_links(text: str) -> set[str]:
     base_dir = os.path.dirname(SUMMARY_PATH)
     paths = set()
     for match in _MD_LINK_RE.finditer(text):
@@ -140,6 +132,28 @@ def published_paths_from_summary() -> set[str]:
         normalized = os.path.normpath(os.path.join(base_dir, target))
         paths.add(normalized.replace(os.sep, "/"))
     return paths
+
+
+def published_paths_from_summary(text: str | None = None) -> set[str]:
+    """Every markdown file SUMMARY.md actually links to, as repo-relative
+    paths (e.g. {"readme/setup/README.md", "readme/setup/sso.md", ...}).
+
+    A file that exists on disk but isn't reachable from SUMMARY.md is not
+    a real docs.docbits.com page — ingesting it would put a dead link in
+    search results.
+
+    ``text`` lets a caller pass SUMMARY.md's content at a specific git ref
+    (e.g. the push's `before` commit, via `_git_show`) instead of reading
+    the current checkout from disk — used to detect newly-published pages
+    across a SUMMARY.md change (see `_newly_published_paths` in run_diff).
+    """
+    if text is None:
+        summary_file = os.path.join(REPO_ROOT, SUMMARY_PATH)
+        if not os.path.exists(summary_file):
+            return set()
+        with open(summary_file, encoding="utf-8") as handle:
+            text = handle.read()
+    return _parse_summary_links(text)
 
 
 def extract_title(markdown_text: str, fallback: str) -> str:
@@ -175,6 +189,20 @@ def _run_git(args: list[str]) -> str:
     result = subprocess.run(
         ["git", *args], cwd=REPO_ROOT, capture_output=True, text=True, check=True
     )
+    return result.stdout
+
+
+def _git_show(ref: str, path: str) -> str | None:
+    """``git show {ref}:{path}``, or None if the file doesn't exist at that
+    ref (e.g. SUMMARY.md was created in this very push)."""
+    result = subprocess.run(
+        ["git", "show", f"{ref}:{path}"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        return None
     return result.stdout
 
 
@@ -366,6 +394,36 @@ def delete_md_file(md_path: str, lang: str, *, dry_run: bool) -> None:
     _call_endpoint("/docs/delete", {"url": url, "lang": lang}, dry_run=dry_run)
 
 
+def _parse_name_status_z(raw: str) -> list[tuple[str, list[str]]]:
+    """Parse ``git diff --name-status -z`` output into (status, paths)
+    records.
+
+    ``-z`` (NUL-separated, no path quoting) rather than the newline/tab
+    default: git C-style-quotes any path containing a non-ASCII byte
+    (umlauts, e.g. "Über") unless asked not to — the default parsing
+    (`line.split("\t")` over `splitlines()`) silently fed those quoted,
+    octal-escaped forms into every path-based check below, which would
+    then never match a real file on disk.
+    """
+    tokens = raw.split("\0")
+    if tokens and tokens[-1] == "":
+        tokens.pop()
+    records: list[tuple[str, list[str]]] = []
+    i = 0
+    while i < len(tokens):
+        status = tokens[i]
+        i += 1
+        if status.startswith("R"):
+            old_path, new_path = tokens[i], tokens[i + 1]
+            i += 2
+            records.append((status, [old_path, new_path]))
+        else:
+            path = tokens[i]
+            i += 1
+            records.append((status, [path]))
+    return records
+
+
 def run_diff(before: str, after: str, lang: str, *, dry_run: bool) -> None:
     # Both SHAs must already be present locally — the workflow's checkout
     # step uses fetch-depth: 0 so this is a plain local diff, no network
@@ -377,27 +435,64 @@ def run_diff(before: str, after: str, lang: str, *, dry_run: bool) -> None:
             "diff",
             "--name-status",
             "--find-renames",
+            "-z",
             before,
             after,
             "--",
             README_ROOT,
         ]
     )
-    for line in output.splitlines():
-        if not line.strip():
-            continue
-        parts = line.split("\t")
-        status = parts[0]
+    records = _parse_name_status_z(output)
+
+    processed_paths: set[str] = set()
+    summary_touched = False
+
+    for status, paths in records:
+        if SUMMARY_PATH in paths:
+            summary_touched = True
         if status.startswith("R"):
-            old_path, new_path = parts[1], parts[2]
-            delete_md_file(old_path, lang, dry_run=dry_run)
+            old_path, new_path = paths
+            # Ingest the new location BEFORE deleting the old one — a
+            # renamed page must never have a moment with zero search
+            # presence (Codex review: the reverse order briefly makes an
+            # unchanged page invisible to search_docs).
             ingest_md_file(new_path, lang, after, dry_run=dry_run)
+            delete_md_file(old_path, lang, dry_run=dry_run)
+            processed_paths.update(paths)
         elif status == "D":
-            delete_md_file(parts[1], lang, dry_run=dry_run)
+            delete_md_file(paths[0], lang, dry_run=dry_run)
+            processed_paths.add(paths[0])
         elif status in ("A", "M"):
-            ingest_md_file(parts[1], lang, after, dry_run=dry_run)
+            ingest_md_file(paths[0], lang, after, dry_run=dry_run)
+            processed_paths.add(paths[0])
         else:
-            print(f"::warning::unhandled git status '{status}' for {parts[1:]}")
+            print(f"::warning::unhandled git status '{status}' for {paths}")
+
+    if summary_touched:
+        _ingest_newly_published_pages(
+            before, after, lang, processed_paths, dry_run=dry_run
+        )
+
+
+def _ingest_newly_published_pages(
+    before: str, after: str, lang: str, already_processed: set[str], *, dry_run: bool
+) -> None:
+    """SUMMARY.md changed in this push — a page can become newly published
+    (added to the nav) without its own file being touched in the diff at
+    all (e.g. an existing, previously-orphaned page just gets linked in).
+    Ingest every such page immediately rather than waiting for the
+    nightly full sync to notice."""
+    before_published = published_paths_from_summary(
+        text=_git_show(before, SUMMARY_PATH) or ""
+    )
+    after_published = published_paths_from_summary()  # current checkout = after
+
+    newly_published = (after_published - before_published) - already_processed
+    for md_path in sorted(newly_published):
+        print(f"newly published via SUMMARY.md change: {md_path}")
+        ingest_md_file(
+            md_path, lang, after, dry_run=dry_run, published=after_published
+        )
 
 
 def run_full(lang: str, *, reconcile_only: bool, dry_run: bool) -> None:

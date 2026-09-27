@@ -508,6 +508,7 @@
   * [Log Settings](administration-and-setup/settings/log-settings/README.md)
     * [Task Management](administration-and-setup/settings/log-settings/task-management.md)
     * [Data Synchronization](administration-and-setup/settings/log-settings/data-synchronization.md)
+    * [Fulltext Search Settings](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
   * [API Licenses](administration-and-setup/settings/api-licenses.md)
   * [Supplier Setting](administration-and-setup/settings/supplier-setting/README.md)
     * [Supplier General Settings](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)

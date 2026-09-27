@@ -46,6 +46,7 @@
 ## End User and Partner Section
 
 * [End User Section](end-user-and-partner-section/end-user-section/README.md)
+  * [Getting Access and Signing In](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Global Quick Search](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Web Address Changes](end-user-and-partner-section/end-user-section/web-address-changes.md)

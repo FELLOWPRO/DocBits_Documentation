@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "DocBits ↔ Infor ERP Data Flow",
+    "locale": "en",
+    "animation": "none",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1080,
+      780
+    ]
+  },
+  "stages": [
+    {
+      "label": "Infor ERP"
+    },
+    {
+      "label": "ION Desk inbound"
+    },
+    {
+      "label": "DocBits"
+    },
+    {
+      "label": "ION API"
+    },
+    {
+      "label": "Infor targets"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "erpTrigger",
+      "type": "external",
+      "label": "LN / M3 trigger",
+      "sublabel": "master data BODs",
+      "stage": 0,
+      "row": 0,
+      "tag": "Infor ERP"
+    },
+    {
+      "id": "ionInbound",
+      "type": "messagebus",
+      "label": "ION Desk dataflow",
+      "sublabel": "connection point",
+      "stage": 1,
+      "row": 0,
+      "tag": "ION Desk"
+    },
+    {
+      "id": "docbits",
+      "type": "backend",
+      "label": "DocBits",
+      "sublabel": "master data validation",
+      "stage": 2,
+      "row": 1,
+      "tag": "supplier ID · PO lines"
+    },
+    {
+      "id": "ionApi",
+      "type": "cloud",
+      "label": "ION API",
+      "sublabel": "export channel",
+      "stage": 3,
+      "row": 1,
+      "tag": "Infor ION"
+    },
+    {
+      "id": "idm",
+      "type": "database",
+      "label": "Infor IDM",
+      "sublabel": "document storage",
+      "stage": 4,
+      "row": 0,
+      "tag": "PDF + attributes"
+    },
+    {
+      "id": "ionTransform",
+      "type": "messagebus",
+      "label": "ION Desk mapping",
+      "sublabel": "per document type",
+      "stage": 4,
+      "row": 2,
+      "tag": "ION Desk"
+    },
+    {
+      "id": "erpImport",
+      "type": "external",
+      "label": "LN / M3 import",
+      "sublabel": "automatic",
+      "stage": 4,
+      "row": 4,
+      "tag": "Infor ERP"
+    }
+  ],
+  "flows": [
+    {
+      "from": "erpTrigger",
+      "to": "ionInbound",
+      "label": "Sync BODs",
+      "variant": "default"
+    },
+    {
+      "from": "ionInbound",
+      "to": "docbits",
+      "label": "master data",
+      "classification": "connection point",
+      "variant": "default"
+    },
+    {
+      "from": "docbits",
+      "to": "ionApi",
+      "label": "export",
+      "classification": "validated document",
+      "variant": "emphasis"
+    },
+    {
+      "from": "ionApi",
+      "to": "idm",
+      "label": "PDF + attributes",
+      "variant": "emphasis"
+    },
+    {
+      "from": "ionApi",
+      "to": "ionTransform",
+      "label": "Sync.CaptureDocument",
+      "classification": "BOD",
+      "variant": "emphasis"
+    },
+    {
+      "from": "ionTransform",
+      "to": "erpImport",
+      "label": "target BODs",
+      "variant": "emphasis",
+      "labelDy": 40
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Master data in",
+      "items": [
+        "A trigger in LN/M3 sends Sync.SupplierPartyMaster, Sync.RemitToPartyMaster and Sync.PurchaseOrder",
+        "ION Desk routes them to a DocBits connection point",
+        "Used to identify the supplier and match PO lines"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Export out",
+      "items": [
+        "ION API sends the PDF with attributes to Infor IDM",
+        "Sync.CaptureDocument goes to ION Desk",
+        "ION Desk maps it to target BODs per document type, imported automatically into LN or M3"
+      ]
+    }
+  ]
+}

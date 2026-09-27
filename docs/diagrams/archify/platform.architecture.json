@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "DocBits Platform Architecture",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "animation": "none",
+    "viewBox": [
+      1260,
+      880
+    ]
+  },
+  "components": [
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "Web App",
+      "sublabel": "browser UI",
+      "pos": [
+        30,
+        340
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "gateway",
+      "type": "cloud",
+      "label": "API Gateway",
+      "sublabel": "entry point",
+      "pos": [
+        220,
+        340
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "auth",
+      "type": "security",
+      "label": "Authentication",
+      "sublabel": "separate service",
+      "pos": [
+        220,
+        110
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "imports",
+      "type": "external",
+      "label": "Import channels",
+      "sublabel": "Email \u00b7 FTP \u00b7 WatchDog \u00b7 REST",
+      "pos": [
+        415,
+        110
+      ],
+      "size": [
+        190,
+        64
+      ]
+    },
+    {
+      "id": "core",
+      "type": "backend",
+      "label": "Core API",
+      "sublabel": "documents & settings",
+      "pos": [
+        440,
+        340
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "postgres",
+      "type": "database",
+      "label": "PostgreSQL",
+      "sublabel": "primary database",
+      "pos": [
+        660,
+        270
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "redis",
+      "type": "database",
+      "label": "Redis",
+      "sublabel": "cache",
+      "pos": [
+        660,
+        410
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "queue",
+      "type": "messagebus",
+      "label": "Celery & Kafka",
+      "sublabel": "task and event queue",
+      "pos": [
+        440,
+        580
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "workers",
+      "type": "backend",
+      "label": "Processing workers",
+      "sublabel": "OCR \u00b7 Barcode \u00b7 Extraction \u00b7 PO Match",
+      "pos": [
+        640,
+        580
+      ],
+      "size": [
+        210,
+        64
+      ]
+    },
+    {
+      "id": "search",
+      "type": "backend",
+      "label": "Full-Text Search",
+      "sublabel": "OpenSearch \u00b7 optional",
+      "pos": [
+        675,
+        760
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "autoacct",
+      "type": "backend",
+      "label": "Auto-Accounting",
+      "sublabel": "optional module",
+      "pos": [
+        890,
+        580
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "infor",
+      "type": "external",
+      "label": "Infor ERP",
+      "sublabel": "customer ERP",
+      "pos": [
+        1090,
+        580
+      ],
+      "size": [
+        140,
+        64
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Edge / Web",
+      "wraps": [
+        "web",
+        "gateway"
+      ]
+    },
+    {
+      "kind": "security-group",
+      "label": "Authentication",
+      "wraps": [
+        "auth"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "Import",
+      "wraps": [
+        "imports"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "Core API",
+      "wraps": [
+        "core"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "Datastores",
+      "wraps": [
+        "postgres",
+        "redis"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "Background Services",
+      "wraps": [
+        "queue",
+        "workers",
+        "search",
+        "autoacct"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "web-gateway",
+      "from": "web",
+      "to": "gateway",
+      "label": "HTTPS",
+      "variant": "emphasis"
+    },
+    {
+      "id": "gateway-core",
+      "from": "gateway",
+      "to": "core",
+      "variant": "emphasis"
+    },
+    {
+      "id": "web-auth",
+      "from": "web",
+      "to": "auth",
+      "label": "sign-in",
+      "variant": "security",
+      "fromSide": "top",
+      "toSide": "left"
+    },
+    {
+      "id": "imports-core",
+      "from": "imports",
+      "to": "core",
+      "label": "upload",
+      "labelAt": [
+        510,
+        257
+      ],
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "core-postgres",
+      "from": "core",
+      "to": "postgres",
+      "label": "SQL"
+    },
+    {
+      "id": "core-redis",
+      "from": "core",
+      "to": "redis",
+      "label": "cache"
+    },
+    {
+      "id": "core-queue",
+      "from": "core",
+      "to": "queue",
+      "label": "enqueue",
+      "variant": "dashed",
+      "labelAt": [
+        510,
+        492
+      ],
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "queue-workers",
+      "from": "queue",
+      "to": "workers",
+      "label": "consume"
+    },
+    {
+      "id": "workers-search",
+      "from": "workers",
+      "to": "search",
+      "label": "index",
+      "variant": "dashed",
+      "labelAt": [
+        745,
+        702
+      ],
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "workers-autoacct",
+      "from": "workers",
+      "to": "autoacct"
+    },
+    {
+      "id": "autoacct-infor",
+      "from": "autoacct",
+      "to": "infor",
+      "label": "integrates"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Hosting & regions",
+      "items": [
+        "DigitalOcean Frankfurt (EU)",
+        "Separate US region",
+        "Every component carries a region badge"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Optional modules",
+      "items": [
+        "Full-Text Search, DocFlow, Auto-Accounting, DocNet",
+        "PO Matching is enabled per document type"
+      ]
+    }
+  ]
+}

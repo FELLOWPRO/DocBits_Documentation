@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "DocBits Document Status Lifecycle",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "main",
+      "label": "Main path"
+    },
+    {
+      "id": "waiting",
+      "label": "Side states"
+    },
+    {
+      "id": "approvals",
+      "label": "Second approval"
+    }
+  ],
+  "states": [
+    {
+      "id": "upload",
+      "type": "start",
+      "label": "Upload",
+      "sublabel": "or WatchDog upload",
+      "lane": "main",
+      "col": 0,
+      "step": "01"
+    },
+    {
+      "id": "ocr",
+      "type": "active",
+      "label": "OCR",
+      "sublabel": "text recognition",
+      "lane": "main",
+      "col": 1,
+      "step": "02"
+    },
+    {
+      "id": "classification",
+      "type": "active",
+      "label": "Classification",
+      "sublabel": "document classified",
+      "lane": "main",
+      "col": 2,
+      "step": "03"
+    },
+    {
+      "id": "validation",
+      "type": "waiting",
+      "label": "Ready for Validation",
+      "sublabel": "awaiting validation",
+      "lane": "main",
+      "col": 3,
+      "step": "04"
+    },
+    {
+      "id": "export",
+      "type": "success",
+      "label": "Export",
+      "sublabel": "exported to ERP",
+      "lane": "main",
+      "col": 4,
+      "step": "05"
+    },
+    {
+      "id": "workflow",
+      "type": "active",
+      "label": "Workflow",
+      "sublabel": "optional",
+      "lane": "waiting",
+      "col": 1
+    },
+    {
+      "id": "approval",
+      "type": "waiting",
+      "label": "Pending approval",
+      "sublabel": "needs approval",
+      "lane": "waiting",
+      "col": 2
+    },
+    {
+      "id": "second",
+      "type": "waiting",
+      "label": "Pending second approval",
+      "sublabel": "approved again",
+      "lane": "approvals",
+      "col": 2,
+      "yOffset": 100,
+      "width": 160
+    },
+    {
+      "id": "error",
+      "type": "failure",
+      "label": "Error",
+      "sublabel": "recoverable",
+      "lane": "waiting",
+      "col": 0
+    }
+  ],
+  "transitions": [
+    {
+      "id": "t-upload-ocr",
+      "from": "upload",
+      "to": "ocr"
+    },
+    {
+      "id": "t-ocr-class",
+      "from": "ocr",
+      "to": "classification",
+      "route": "straight",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "t-class-val",
+      "from": "classification",
+      "to": "validation"
+    },
+    {
+      "id": "t-val-export",
+      "from": "validation",
+      "to": "export",
+      "route": "straight",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "t-val-workflow",
+      "from": "validation",
+      "to": "workflow",
+      "variant": "dashed",
+      "route": "straight",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "t-val-approval",
+      "from": "validation",
+      "to": "approval",
+      "variant": "dashed"
+    },
+    {
+      "id": "t-approval-second",
+      "from": "approval",
+      "to": "second",
+      "variant": "dashed",
+      "route": "straight",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "t-second-export",
+      "from": "second",
+      "to": "export",
+      "variant": "emphasis",
+      "route": "right-channel"
+    },
+    {
+      "id": "t-class-error",
+      "from": "classification",
+      "to": "error",
+      "variant": "security",
+      "route": "straight",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "t-error-ocr",
+      "from": "error",
+      "to": "ocr",
+      "label": "restart",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Main Path",
+      "items": [
+        "Upload, OCR, Classification, Ready for Validation, Export",
+        "WatchDog is an optional on-prem upload client",
+        "Zugferd import/export and Auto Accounting are also statuses"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Exceptions",
+      "items": [
+        "Workflow, Pending approval and Pending second approval pause the path",
+        "Error marks a failed document, which can be restarted"
+      ]
+    }
+  ]
+}

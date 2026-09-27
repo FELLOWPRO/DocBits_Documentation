@@ -33,6 +33,6 @@ Click **Login Analytics** to view login activity data across your organization, 
    * **Email Address**: Used for login and notifications.
    * **Password**: Must comply with your organization's security policies.
    * **User Role**: Assign the appropriate role (Standard User, Admin, or System Admin).
-3. Click **Save** to create the user account. The new user will receive an email notification with their login details and a link to set their first password on the Set Password page. See [Getting Access and Signing In](../../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#first-password-for-admin-created-accounts).
+3. Click **Save** to create the user account. The new user will receive an email notification with their login details and a link to set their first password on the Set Password page. See [Getting Access and Signing In](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#first-password-for-admin-created-accounts).
 
 > **Note:** The **System Admin** role can only be chosen while creating a user — it cannot be added or removed later. Each organization can have only one System Admin, and choosing it automatically grants Admin rights too. See [Admin Privileges](admin-privileges.md#admin-vs-system-admin) to learn when to use it.

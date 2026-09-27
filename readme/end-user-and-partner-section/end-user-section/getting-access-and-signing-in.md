@@ -61,7 +61,7 @@ Reset links expire after a short time. If the link no longer works, repeat the s
 
 ## First password for admin-created accounts
 
-When your administrator adds you as a user (see [Users](../../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), you receive an email with your login details and a link to set your **first password**. The link opens the **Set Password** page:
+When your administrator adds you as a user (see [Users](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), you receive an email with your login details and a link to set your **first password**. The link opens the **Set Password** page:
 
 <figure><img src="../../.gitbook/assets/set-password-form.png" alt="The Set Password page with the welcome message"><figcaption><p>The Set Password page, shown after an administrator created your account.</p></figcaption></figure>
 

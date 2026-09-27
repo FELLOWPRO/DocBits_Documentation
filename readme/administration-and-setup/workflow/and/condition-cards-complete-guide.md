@@ -16,9 +16,9 @@ The condition cards on this page go in the **When** and **And** groups of the Wo
 **Version Pattern:** Most follow v1 → v2 pattern (adding i18n support)
 **Multi-Version Example:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Note:** Some PO comparison condition cards have 4-5 versions (see PO Matching Guide for details)
+**Note:** Some PO comparison condition cards have several versions. Use this guide for the current behavior and the release notes below for published changes.
 
-📖 [Product release notes](../../../overview-and-basics/release-notes/README.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Product release notes](../../../overview-and-basics/release-notes/README.md) | [PO Matching Guide](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

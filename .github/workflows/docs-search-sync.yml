@@ -1,0 +1,88 @@
+name: Docs Search Sync
+
+# Keeps the fulltextsearch docs search index (CORE-6111, Settings-Assistent)
+# in step with docs.docbits.com.
+#
+# - push to main/de: diffs the two commits and POSTs only the changed
+#   pages (see .github/scripts/docs_search_sync.py "diff" mode).
+# - nightly schedule: reconcile-only per lang — deletes chunks for any
+#   URL no longer reachable from SUMMARY.md, without re-ingesting content.
+#   Catches what a diff-based push step can miss (e.g. a squash-merge
+#   whose `before` SHA doesn't reflect the real prior state).
+# - workflow_dispatch: full backfill per lang — re-ingests every
+#   published page, then reconciles.
+#
+# Requires two repo secrets that this PR does NOT create (see the PR
+# description for the manual setup step):
+#   DOCS_INGEST_URL  — the fulltextsearch base URL (dev for now)
+#   DOCS_INGEST_KEY  — the shared X-Service-Key value (matches
+#                      fulltextsearch's DOCS_INGEST_SERVICE_KEY config var)
+
+on:
+  push:
+    branches:
+      - main
+      - de
+    paths:
+      - "readme/**"
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  diff-sync:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync changed pages
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ github.ref_name }}
+          SYNC_BEFORE: ${{ github.event.before }}
+          SYNC_AFTER: ${{ github.event.after }}
+        run: |
+          python3 .github/scripts/docs_search_sync.py diff \
+            --lang "$SYNC_LANG" \
+            --before "$SYNC_BEFORE" \
+            --after "$SYNC_AFTER"
+
+  full-sync:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [main, de]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.lang }}
+          fetch-depth: 1
+
+      - name: Nightly reconcile
+        if: github.event_name == 'schedule'
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+        run: |
+          python3 .github/scripts/docs_search_sync.py full \
+            --lang "$SYNC_LANG" --reconcile-only
+
+      - name: Full backfill
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+        run: |
+          python3 .github/scripts/docs_search_sync.py full \
+            --lang "$SYNC_LANG"

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "DocBits Platform Architecture",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "animation": "none",
+    "viewBox": [1100, 660]
+  },
+  "components": [
+    { "id": "web", "type": "frontend", "label": "Web App", "sublabel": "browser · app.docbits.com", "pos": [20, 310], "size": [140, 64] },
+    { "id": "gateway", "type": "cloud", "label": "Kong API Gateway", "sublabel": "TLS · CORS · host routing", "pos": [210, 310], "size": [160, 64] },
+    { "id": "auth", "type": "security", "label": "Auth Service", "sublabel": "own database", "pos": [210, 90], "size": [160, 64] },
+    { "id": "imports", "type": "external", "label": "Import Channels", "sublabel": "Email · FTP · WatchDog · REST", "pos": [410, 90], "size": [210, 64] },
+    { "id": "autoacct", "type": "backend", "label": "Auto-Accounting", "sublabel": "ML GL suggestions", "pos": [870, 90], "size": [170, 64] },
+    { "id": "core", "type": "backend", "label": "Core API", "sublabel": "doc2-api · Celery beats & callbacks", "pos": [430, 300], "size": [170, 74] },
+    { "id": "datastores", "type": "database", "label": "PostgreSQL & Storage", "sublabel": "primary + replica · DO Spaces", "pos": [670, 170], "size": [180, 64] },
+    { "id": "redis", "type": "database", "label": "Redis", "sublabel": "cache · Celery broker", "pos": [670, 400], "size": [150, 64] },
+    { "id": "processing", "type": "backend", "label": "Processing Services", "sublabel": "OCR · Barcode · Extraction", "pos": [670, 540], "size": [150, 64] },
+    { "id": "pomatch", "type": "backend", "label": "PO Match", "sublabel": "per document type", "pos": [835, 540], "size": [125, 64] },
+    { "id": "fulltext", "type": "backend", "label": "Full-Text Search", "sublabel": "indexes OpenSearch", "pos": [980, 540], "size": [100, 64] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "Edge", "wraps": ["web", "gateway"], "pad": 18 },
+    { "kind": "security-group", "label": "Identity", "wraps": ["auth"], "pad": 16 },
+    { "kind": "region", "label": "Import", "wraps": ["imports"], "pad": 16 },
+    { "kind": "region", "label": "Modules", "wraps": ["autoacct"], "pad": 14 },
+    { "kind": "region", "label": "Core", "wraps": ["core"], "pad": 14 },
+    { "kind": "region", "label": "Processing", "wraps": ["processing", "pomatch", "fulltext"], "pad": 10 },
+    { "kind": "region", "label": "Data (per region)", "wraps": ["datastores", "redis"], "pad": 18 }
+  ],
+  "connections": [
+    { "id": "web-gateway", "from": "web", "to": "gateway", "label": "HTTPS", "variant": "emphasis" },
+    { "id": "gateway-auth", "from": "gateway", "to": "auth", "label": "sign-in", "variant": "security", "fromSide": "top", "toSide": "bottom", "labelDy": -8 },
+    { "id": "gateway-core", "from": "gateway", "to": "core", "variant": "emphasis" },
+    { "id": "imports-gateway", "from": "imports", "to": "gateway", "label": "HTTPS upload", "fromSide": "bottom", "toSide": "right" },
+    { "id": "core-autoacct", "from": "core", "to": "autoacct", "label": "GL suggestions", "fromSide": "top", "via": [[515, 270], [955, 270]], "toSide": "bottom", "labelAt": [860, 258] },
+    { "id": "core-redis", "from": "core", "to": "redis", "label": "cache · enqueue", "variant": "dashed", "fromSide": "right", "toSide": "left", "labelAt": [680, 396] },
+    { "id": "core-datastores", "from": "core", "to": "datastores", "label": "SQL · object storage", "fromSide": "right", "toSide": "bottom", "labelAt": [700, 250] },
+    { "id": "redis-processing", "from": "redis", "to": "processing", "label": "consume", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "labelAt": [738, 516] },
+    { "id": "redis-pomatch", "from": "redis", "to": "pomatch", "label": "consume", "variant": "dashed", "fromSide": "bottom", "toSide": "top" },
+    { "id": "redis-fulltext", "from": "redis", "to": "fulltext", "label": "index task", "variant": "dashed", "fromSide": "right", "toSide": "top" },
+    { "id": "processing-core", "from": "processing", "to": "core", "label": "callback", "fromSide": "left", "toSide": "bottom", "labelAt": [575, 572] }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Regions",
+      "items": [
+        "EU (DigitalOcean Frankfurt · fra1) and US (sfo2) are separate Kubernetes clusters",
+        "Each region has its own Kong, PostgreSQL, Redis, OpenSearch, and Spaces; hostnames get an eu. or us. prefix",
+        "Shared across regions: Web App, AWS Kinesis (Frankfurt), and auth identities via the replication bridge"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Optional modules",
+      "items": [
+        "DocFlow and DocNet extend workflow and knowledge features",
+        "Full-Text Search indexes documents into OpenSearch",
+        "Auto-Accounting suggests GL accounts with ML",
+        "PO Matching is enabled per document type"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Infor ERP / SAP",
+      "items": [
+        "Exports go out via ION API; BOD master data comes in via AWS Kinesis (Frankfurt) or REST — see the Infor ERP data flow diagram"
+      ]
+    }
+  ]
+}

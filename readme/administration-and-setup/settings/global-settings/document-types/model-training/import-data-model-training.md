@@ -39,7 +39,7 @@ It is important to note the specific format to avoid misunderstandings, especial
 
 * **Select the sample documents:** Select the sample documents you want to import. This can be done by uploading the files from your local computer or by selecting documents from an already connected location.
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
 * **Configure the document types and subtypes (if required):** If your system supports different document types or subtypes, assign the appropriate type to each imported document. This will help the system to categorize and process the documents correctly.
 * **Start the import process:** Confirm the selection of documents and start the import process. Depending on the size and number of documents, this process may take some time.

@@ -24,13 +24,9 @@ All five profiles are supported: MINIMUM, BASIC WL, BASIC, EN 16931 (COMFORT) an
 | Field Extraction | ✅ Supported |
 | Transformation | ✅ Supported |
 
-## Default Preview
-
-<figure><img src="facturx-preview.png" alt="Factur-X 1.09 / ZUGFeRD 2.5 invoice preview in DocBits"><figcaption><p>Default DocBits preview for a Factur-X 1.09 / ZUGFeRD 2.5 invoice</p></figcaption></figure>
-
 ## Related
 
 - [ZUGFeRD 2.5](zugferd-2-5.md)
-- [ZUGFeRD Configuration](../zugferd/)
-- [ZUGFeRD Field Mapping](../zugferd/versions/)
+- [ZUGFeRD Configuration](../zugferd/configuration.md)
+- [ZUGFeRD Field Mapping](../zugferd/README.md)
 - [Supported Electronic Documents](./)

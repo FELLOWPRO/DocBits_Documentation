@@ -15,7 +15,7 @@ _For a full example with segment details, see_ [_Structure Descriptor Example_](
 
 1.  **Settings** → **Document Type** → \[Your Document (e.g., _Purchase Order_)] → **E-Doc.**\\
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (2) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. Under **E-Doc**, select your format (e.g., _EDI_ ).
 3.  Click **Structure Descriptor**.\\
 

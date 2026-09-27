@@ -23,7 +23,7 @@ From the screenshots, it's clear that these cards cover a wide range of conditio
 * **Date & Time:**
   * Conditions based on dates and times
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Document**:
   * Conditions based on document characteristics, such as type or association with a particular sub-organization. These conditions can direct workflows based on document categorization or departmental involvement.
@@ -48,7 +48,7 @@ From the screenshots, it's clear that these cards cover a wide range of conditio
 * **Assignee**:
   * Conditions based on task or document assignees. This ensures that actions are only taken when certain users are involved, enhancing accountability and task specificity.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Practical Application
 

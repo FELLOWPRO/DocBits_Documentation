@@ -8,7 +8,7 @@ In Docbits, Regex settings allow administrators to define custom patterns that t
 
 1. **Managing Regexes**:
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 20.34.42.png" alt=""><figcaption><p>Magaging Regexes</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.38.59.png" alt=""><figcaption><p>Magaging Regexes</p></figcaption></figure>
 
 **Managing Regexes**:
 

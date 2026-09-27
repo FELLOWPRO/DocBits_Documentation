@@ -18,7 +18,7 @@ Within these settings you can then make the desired configurations to ensure you
 
 <figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 01.28.41.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Key Features and Options
 

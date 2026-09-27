@@ -11,7 +11,7 @@ The Dashboard settings are designed to help administrators control the data pres
 To access the dashboard settings, navigate to:\
 **Settings → Global Settings → Dashboard**
 
-<figure><img src="../../../../.gitbook/assets/settings_dashboard.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dashboard_settings.png" alt=""><figcaption></figcaption></figure>
 
 ## **General**
 

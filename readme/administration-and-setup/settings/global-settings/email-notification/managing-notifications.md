@@ -1,35 +1,22 @@
 # Managing Notifications
 
-To edit, disable, or delete existing notifications and adapt them to changes in document processing workflows or user responsibilities, you can do the following:
+Use **Email Notification** to review notification rules and create a new one. Open **Settings → Global Settings → Email Notification**. The table shows the rule name, document type, status, priority, delay, recipients, last change and available actions. If it says **No Record Found!**, there are no rules to edit yet.
 
-**Navigate to notification settings:** Go to your system's settings where you can manage notifications. You can find these in the “Settings” section, “Global Settings” and then under “Email notification”.
+<figure><img src="../../../../.gitbook/assets/dbdc-164-notifications-list-en.png" alt="Email Notification settings in the English DocBits sandbox, showing an empty notification list and the New button"><figcaption><p>The notification list in the English sandbox. This test organisation has no saved rules.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Create a notification rule
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Select **+ New** to open the notification form.
+2. Enter a **Name**, choose a **Document Type** and an email template. The template determines the email's content.
+3. Choose the **Status** for the rule and set its **Priority**.
+4. Set **Time Unit** and **Delay** for when the notification should be sent. The form requires a delay of at least five minutes. Select **Do not Repeat** if the notification should not be repeated.
+5. Choose whether to send it to the assigned user or group, add an **Email Address** if needed, and decide whether reassignment should resend the notification.
+6. Review the recipients and timing before selecting **Save**. Select **Cancel** to leave without saving.
 
-**Look for the list of existing notifications:** In the notification settings you will find a list of existing notifications. This list shows you all notifications that are currently set up.
+<figure><img src="../../../../.gitbook/assets/dbdc-164-notifications-new-en.png" alt="New email notification form with name, document type, template, status, priority, delay, repeat and recipient options"><figcaption><p>The current New notification form in the English sandbox. No rule was saved for this screenshot.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Change an existing rule
 
-**Edit a notification:** To edit an existing notification, find the notification in the list and select the edit option. This allows you to change the notification settings, such as the document type, status, triggering events or recipients.
+Find the rule in the table and use its **Actions** menu to edit it. Check the document type, status, delay and recipients, then save your changes. If the menu offers a disable or delete action, check the rule before using it so that expected emails are not interrupted. The example organisation above has no saved rule, so those actions are not shown in the screenshots.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="192"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
-
-**Turn off a notification:** If you want to temporarily turn off a notification, find the notification in the list and select the option to turn it off. This will temporarily stop the notification without deleting it, so you can reactivate it later if necessary.
-
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="116"><figcaption></figcaption></figure>
-
-**Delete a notification:** To permanently remove a notification, find the notification in the list and select the delete option. This will completely remove the notification from the system and cannot be restored.
-
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="106"><figcaption></figcaption></figure>
-
-**Adapt to Changes:** Periodically review your notification settings and adjust as necessary to reflect changes in document processing workflows or user responsibilities. This could include updating notifications due to new events, changed responsibilities, or other organizational changes.
-
-**Save the changes:** After making your changes, don't forget to save them for them to take effect.
-
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" width="150"><figcaption></figcaption></figure>
-
-By regularly reviewing and adjusting your notification settings, you can ensure that your notifications always meet current needs and workflows. This helps ensure efficient communication and ensures that the right people are notified of important events in a timely manner.
+For more on the initial setup, see [Configuring Notifications](configuring-notifications.md). If emails do not arrive as expected, see [Troubleshooting](troubleshooting.md).

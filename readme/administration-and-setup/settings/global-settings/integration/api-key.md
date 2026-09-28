@@ -1,6 +1,6 @@
 # API Key
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-en.png" alt="The Integration &amp; SSO settings page in DocBits with the API Key section open, showing the API key list and the Create API Key button"><figcaption><p>Settings → Integration &amp; SSO → API Key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-en.png" alt="API Keys panel with the Create API Key button, key list columns and the key prefix hidden for documentation"><figcaption><p>Settings → Integration &amp; SSO → API Key. The key prefix is hidden in this screenshot.</p></figcaption></figure>
 
 The **API Key** section at the top of the Integration & SSO page lists every API key your organization has created. An API key lets another system — your ERP, a script, or a partner application — access DocBits without a user logging in. For step-by-step instructions, see [API Key Management](api-key-management.md).
 

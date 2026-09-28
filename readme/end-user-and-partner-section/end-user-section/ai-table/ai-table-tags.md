@@ -1,6 +1,8 @@
 # AI Table Tags
 
-<figure><img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXd_JRCxSEUPggV-LximBfdNvxZ76rbU6WQ6u6dfMMzEuGEnhY7I5wxCQnsoE9keW-tN7b0aFYhzfrTrwGVdDaYpoM2Ra--35o4gaMqQ4w1MMkw0GgH3ETMsW3munJM6FAq0iNlN3q_2iU3p1u3ZlksMUD8?key=fI2fX6i_3kqGWFGjP_52vw" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-tags-hero-en.png" alt="AI extracted line-item table on the validation screen with the tag field below it and the Apply, Save, Delete and Export buttons" /><figcaption></figcaption></figure>
+
+Tags tell the AI what each column of the [AI Extracted Table](README.md) means. You pick a tag for a column, DocBits adds a tag column next to it, and the AI uses the tags the next time it reads a document from this supplier.
 
 ### Step-by-step instructions on how to add tags to a table:
 
@@ -28,6 +30,8 @@
 
 * **Save Tag**: Press the Save button to save the desired tag
 * **Delete Tag:** To delete the selected tag, press the Delete button
+
+After saving, the tags stay with this supplier: the next document of the same supplier is extracted with them. To re-run the extraction for the current document with your tags, see [Re-extracting the AI table](README.md#re-extracting-the-ai-table).
 
 ### Here is a detailed explanation of each column and the possible tags:
 

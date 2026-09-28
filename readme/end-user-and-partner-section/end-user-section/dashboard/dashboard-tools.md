@@ -11,7 +11,11 @@ The dashboard is your list of documents. Open a document by selecting its name. 
 3. Select the sliders icon inside the search bar to narrow the list by **Status**, **Assigned To**, or **Restart Required**, then select **Apply**. Use **Clear filters** to remove those choices.
 4. Select a column heading to sort the table. Use the page controls at the bottom to move between result pages or change **Documents per Page**.
 
+The icon at the start of the search field opens a picker of available fields and shows which search capabilities your organization has. The **code** icon switches between the normal search view and a raw query view; use the normal view unless you already know the query syntax. The magnifying-glass icon opens **Search in document content**: **Automatic** searches visible fields first, **Always include document content** includes text inside files, and **Visible columns only** limits matches to the table fields. Searching inside files requires the relevant search capability to be enabled for your organization.
+
 <figure><img src="../../../.gitbook/assets/dbdc201_dashboard_filters_en.png" alt="Dashboard search filter panel with Status, Assigned To, Restart Required, Clear filters, and Apply"><figcaption>The filters inside the search bar.</figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_content_mode_en.png" alt="Search in document content menu with Automatic, Always include document content, and Visible columns only"><figcaption>Choose what a simple search may match.</figcaption></figure>
 
 For a guided search, see [Quick Search](quick-search.md) and [Filtering Documents](filtering-documents.md). The **?** panel explains advanced search syntax; you do not need that syntax for a simple name search.
 
@@ -23,6 +27,7 @@ For a guided search, see [Quick Search](quick-search.md) and [Filtering Document
 - Select the gear to open **Advanced settings**. There you can open keyboard shortcuts, view the email import log, or manage visible table columns. Administrators may also see a link to dashboard settings. See [Keyboard Shortcuts](keyboard-shortcuts.md) and [Change Document Columns](change-document-columns.md) for the next steps.
 - Select the bar chart to show **Analytics** above the table. Choose a category card, such as **Pending User Input**, to filter the documents. Select the chart again to hide the cards.
 - Select the saved dashboard badge below the search bar to switch or manage your own dashboard. See [Personal Dashboards](personal-dashboards.md).
+- Select **+** beside the **All** tab to add a tab for a document type. In the test organization, **Invoice** is available. Select a tab to show that type of document.
 
 <figure><img src="../../../.gitbook/assets/dbdc201_dashboard_advanced_en.png" alt="Advanced settings menu opened from the dashboard gear icon"><figcaption>Open the gear menu for dashboard options.</figcaption></figure>
 
@@ -39,6 +44,10 @@ Select **Upload**. Drag files into the **Document Uploader** or select **Click t
 Select the checkboxes beside the documents you want to act on, then open the three-dot menu in the table header. Depending on the documents and your permissions, the menu offers **Merge**, **Assign to**, **Restart**, **Restart export**, and **Delete**. Check the selected rows before choosing an action; **Delete** removes documents. For combining files, follow [Document Merging](document-merging.md).
 
 <figure><img src="../../../.gitbook/assets/dbdc201_dashboard_bulk_en.png" alt="Dashboard bulk action menu with Merge, Assign to, Restart, Restart export, and Delete"><figcaption>Bulk actions beside the table selection checkboxes.</figcaption></figure>
+
+For one document, open the three-dot menu at the end of its row. It offers actions such as **Validate**, **Assign to**, **Document flow**, **Download**, **Restart**, **Document Logs**, and **Delete**, depending on the document and your permissions. **Validate** opens the document for review; **Document flow** shows its processing history; **Restart** begins processing again; **Delete** removes it. See [Document Flow](document-flow.md) and [Document Status](document-status.md) before changing a document that is being processed.
+
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_row_actions_en.png" alt="Actions menu for one document with Validate, Assign to, Document flow, Download, Restart, Document Logs, and Delete"><figcaption>Actions for one document.</figcaption></figure>
 
 ## Other buttons your organization may show
 

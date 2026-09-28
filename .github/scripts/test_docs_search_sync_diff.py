@@ -254,6 +254,76 @@ class TestSameUrlRenameSkipsTheDelete(_GitRepoTestCase):
         assert delete_calls[0]["url"] == "https://docs.docbits.com/old"
 
 
+class TestSameUrlReplacementViaSeparateAddDeleteSkipsTheDelete(_GitRepoTestCase):
+    """CORE-6111 review round 3 (Codex): a same-url replacement isn't
+    always detected as a git rename ("R"). Content different enough to
+    fall below --find-renames' similarity threshold (default ~50%) makes
+    git emit independent "A" and "D" records instead — that shape must
+    not delete the page the same run just (re-)ingested either."""
+
+    def test_a_dissimilar_content_replacement_reported_as_separate_d_and_a_does_not_delete_the_freshly_ingested_page(
+        self,
+    ):
+        old_body = "# Old\n" + ("Alpha bravo charlie delta echo foxtrot golf. " * 30)
+        new_body = "# New\n" + ("Zulu yankee xray whiskey victor uniform tango. " * 30)
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [Foo](foo/README.md)\n")
+        self._write("readme/foo/README.md", old_body)
+        before = self._commit("add")
+
+        self._remove("readme/foo/README.md")
+        self._write("readme/foo.md", new_body)
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [Foo](foo.md)\n")
+        after = self._commit("replace foo/README.md with foo.md (same url)")
+
+        # Confirm this scenario actually exercises the case under test —
+        # a genuine rename ("R") would already be covered by
+        # TestSameUrlRenameSkipsTheDelete above. SUMMARY.md itself is
+        # also touched in this commit (a plain "M", unrelated to the
+        # foo page's own url), so it's excluded from this check.
+        records = self._diff_z_records(before, after)
+        non_summary_statuses = sorted(
+            status for status, paths in records if sync.SUMMARY_PATH not in paths
+        )
+        self.assertEqual(non_summary_statuses, ["A", "D"])
+
+        sync.run_diff(before, after, "main", dry_run=False)
+
+        ingest_calls = [p for path, p in self.calls if path == "/docs/ingest"]
+        delete_calls = [p for path, p in self.calls if path == "/docs/delete"]
+        assert len(ingest_calls) == 1
+        assert ingest_calls[0]["url"] == "https://docs.docbits.com/foo"
+        assert delete_calls == []
+
+    def test_a_dissimilar_content_replacement_to_a_different_url_still_deletes_the_old_one(
+        self,
+    ):
+        # Control case: an add+delete pair that resolve to DIFFERENT urls
+        # must still delete the old one — only the same-url case is
+        # skipped.
+        old_body = "# Old\n" + ("Alpha bravo charlie delta echo foxtrot golf. " * 30)
+        new_body = "# New\n" + ("Zulu yankee xray whiskey victor uniform tango. " * 30)
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [Old](old.md)\n")
+        self._write("readme/old.md", old_body)
+        before = self._commit("add")
+
+        self._remove("readme/old.md")
+        self._write("readme/new.md", new_body)
+        self._write("readme/SUMMARY.md", "# Table of contents\n\n* [New](new.md)\n")
+        after = self._commit("replace old.md with new.md (different url)")
+
+        records = self._diff_z_records(before, after)
+        non_summary_statuses = sorted(
+            status for status, paths in records if sync.SUMMARY_PATH not in paths
+        )
+        self.assertEqual(non_summary_statuses, ["A", "D"])
+
+        sync.run_diff(before, after, "main", dry_run=False)
+
+        delete_calls = [p for path, p in self.calls if path == "/docs/delete"]
+        assert len(delete_calls) == 1
+        assert delete_calls[0]["url"] == "https://docs.docbits.com/old"
+
+
 class TestAssetOnlyChangeReingestsReferencingPages(_GitRepoTestCase):
     """CORE-6111 review round 2 (Codex): a page references an image
     asset by PATH — the page's own markdown is untouched when only the

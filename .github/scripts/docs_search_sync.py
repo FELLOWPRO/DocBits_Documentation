@@ -453,6 +453,36 @@ def run_diff(before: str, after: str, lang: str, *, dry_run: bool) -> None:
     summary_touched = False
     changed_assets: set[str] = set()
 
+    # Pass 1: compute every URL this run will (re-)ingest, before any
+    # delete runs. A same-URL replacement isn't always a git rename ("R")
+    # — content different enough to fall below --find-renames' similarity
+    # threshold makes git emit independent "A"/"D" records instead (e.g.
+    # readme/foo/README.md -> readme/foo.md with a full rewrite, both
+    # publishing at "/foo"). Whichever shape git reports, a delete must
+    # never remove the url this same run just (re-)ingested.
+    ingest_urls: set[str] = set()
+    for status, paths in records:
+        if status.startswith("R"):
+            candidate_path = paths[1]
+        elif status in ("A", "M"):
+            candidate_path = paths[0]
+        else:
+            continue
+        rel = published_rel_path(candidate_path)
+        if rel is not None:
+            ingest_urls.add(full_url(rel, lang))
+
+    def _skip_delete_if_reingested(md_path: str) -> bool:
+        rel = published_rel_path(md_path)
+        url = full_url(rel, lang) if rel is not None else None
+        if url is not None and url in ingest_urls:
+            print(
+                f"skip delete for {md_path} — its published url is also "
+                "(re-)ingested in this run"
+            )
+            return True
+        return False
+
     for status, paths in records:
         if SUMMARY_PATH in paths:
             summary_touched = True
@@ -466,25 +496,12 @@ def run_diff(before: str, after: str, lang: str, *, dry_run: bool) -> None:
             # presence (Codex review: the reverse order briefly makes an
             # unchanged page invisible to search_docs).
             ingest_md_file(new_path, lang, after, dry_run=dry_run)
-            # A rename can map to the SAME published url — e.g.
-            # readme/foo.md -> readme/foo/README.md both publish at
-            # "/foo" (a file <-> its own directory's README.md). Deleting
-            # "old_path"'s url in that case would delete the chunks the
-            # ingest_md_file call just wrote for "new_path" (CORE-6111
-            # review): the delete is keyed on url, not on the file path,
-            # and both files resolve to the identical url.
-            old_rel = published_rel_path(old_path)
-            new_rel = published_rel_path(new_path)
-            if old_rel is not None and old_rel == new_rel:
-                print(
-                    f"skip delete for {old_path} — renamed to {new_path}, "
-                    "same published url"
-                )
-            else:
+            if not _skip_delete_if_reingested(old_path):
                 delete_md_file(old_path, lang, dry_run=dry_run)
             processed_paths.update(paths)
         elif status == "D":
-            delete_md_file(paths[0], lang, dry_run=dry_run)
+            if not _skip_delete_if_reingested(paths[0]):
+                delete_md_file(paths[0], lang, dry_run=dry_run)
             processed_paths.add(paths[0])
         elif status in ("A", "M"):
             ingest_md_file(paths[0], lang, after, dry_run=dry_run)

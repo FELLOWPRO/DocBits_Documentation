@@ -1,0 +1,93 @@
+name: Docs Search Sync
+
+# Keeps the fulltextsearch docs search index (CORE-6111, Settings-Assistent)
+# in step with docs.docbits.com.
+#
+# - push to main/de: diffs the two commits and POSTs only the changed
+#   pages (see .github/scripts/docs_search_sync.py "diff" mode). A rename
+#   ingests the new URL before deleting the old one; a SUMMARY.md change
+#   also ingests any page newly reachable from it (even if that page's
+#   own file wasn't touched in this push).
+# - nightly schedule AND workflow_dispatch: the SAME full ingest +
+#   reconcile per lang (hash-skip keeps re-ingesting unchanged pages
+#   cheap — no re-embedding). This is the safety net for whatever a
+#   diff-based push step could miss: a squash-merge whose `before` SHA
+#   doesn't reflect the real prior state, a SUMMARY.md-only publication
+#   change, a replaced image asset, or a run that failed partway through.
+#
+# concurrency: ONE global group, not per-ref (CORE-6111 review round 2) —
+# a full run (nightly/workflow_dispatch) writes BOTH languages' indices
+# in a single run, so a per-ref group would still let a main-branch push
+# and a de-branch push (or a full run and either push) race each other's
+# OpenSearch writes. Every sync, on any ref, queues behind whatever's
+# already running rather than cancelling it (cancel-in-progress: false),
+# since a cancelled ingest can leave a page's stale-ordinal cleanup
+# half-applied.
+#
+# Requires two repo secrets that this PR does NOT create (see the PR
+# description for the manual setup step):
+#   DOCS_INGEST_URL  — the fulltextsearch base URL (dev for now)
+#   DOCS_INGEST_KEY  — the shared X-Service-Key value (matches
+#                      fulltextsearch's DOCS_INGEST_SERVICE_KEY config var)
+
+on:
+  push:
+    branches:
+      - main
+      - de
+    paths:
+      - "readme/**"
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-search-sync
+  cancel-in-progress: false
+
+jobs:
+  diff-sync:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync changed pages
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ github.ref_name }}
+          SYNC_BEFORE: ${{ github.event.before }}
+          SYNC_AFTER: ${{ github.event.after }}
+        run: |
+          python3 .github/scripts/docs_search_sync.py diff \
+            --lang "$SYNC_LANG" \
+            --before "$SYNC_BEFORE" \
+            --after "$SYNC_AFTER"
+
+  full-sync:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [main, de]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.lang }}
+          fetch-depth: 1
+
+      - name: Full ingest + reconcile
+        env:
+          DOCS_INGEST_URL: ${{ secrets.DOCS_INGEST_URL }}
+          DOCS_INGEST_KEY: ${{ secrets.DOCS_INGEST_KEY }}
+          SYNC_LANG: ${{ matrix.lang }}
+        run: |
+          python3 .github/scripts/docs_search_sync.py full \
+            --lang "$SYNC_LANG"

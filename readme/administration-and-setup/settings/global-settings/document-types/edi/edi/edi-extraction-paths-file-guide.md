@@ -1,79 +1,36 @@
 # EDI Extraction Paths File Guide
 
-## 1. Overview
+The **Extraction Paths** configuration tells DocBits where to find invoice values in a structured EDI/XML document. It maps document fields and table columns to XPath expressions. Change this configuration only if you manage electronic document formats for your organization.
 
-The **Extraction Paths File** defines how data is extracted from the **structured XML** into specific document fields and tables within the interface.\
-It maps **field IDs** to **XPath expressions**, which are evaluated to pull values from the XML into the corresponding document fields.\
-This file plays a critical role in ensuring that extracted data appears correctly during field validation and downstream processing.
+## Open the extraction paths
 
-## 2. Purpose and Function
+1. Go to **Settings → Document Types**.
+2. Open **E-Doc** for the document type you want to configure. The screenshots below use **Invoice**.
+3. Expand **EDI** and select **EXTRACTION PATHS**. The row is marked **JSON**.
 
-* Maps each document field and table column to a specific location in the structured XML using XPath expressions.
-* Ensures that the correct values are populated into fields such as `order_number`, `supplier_name`, and `total_amount`.
-* Supports both **single fields** (via a `fields` object) and **tables** (via a `tables` array with row paths and column mappings).
-* Enables precise control over how data is retrieved from the XML, including the use of XPath functions like `sum()`.
+<figure><img src="../../../../../../.gitbook/assets/dbdc-137-edi-format-en.png" alt="English Sandbox EDI list with Extraction Paths marked JSON"><figcaption>EDI has separate Transformation, Preview and Extraction Paths entries.</figcaption></figure>
 
-Example field mapping:
+If you need to change another EDI component, use the corresponding [Transformation](edi-transformation-file-guide.md) or [Preview](edi-preview-file-guide.md) guide.
 
-```json
-"order_number": "//PURCHASE_ORDER/PURCHASE_ORDER/text()"
-```
+## Read the mapping
 
-## 3. Access & Basic Editing
+The detail page shows the selected document type and EDI format on the left, its versions below, and the JSON mapping on the right. The **Active** badge identifies the version currently in use. **Format** arranges the JSON for reading; it does not activate a version.
 
-#### **Accessing the File:**
+<figure><img src="../../../../../../.gitbook/assets/dbdc-137-edi-path-detail-en.png" alt="English Sandbox Extraction Paths detail showing Active version, JSON editor and Format button"><figcaption>The active EDI mapping for invoices in the documentation test organization.</figcaption></figure>
 
-1.  Go to **Settings** → **Document Type** → _\[Your Document (e.g., Purchase Order)]_ → **E-Doc**.\\
+The JSON has two main parts:
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Under the **E-Doc** tab, select your format (e.g., **EDI**).
-3.  Click **Extraction Paths** to view or edit the file.\\
+* `fields` maps a DocBits field such as `invoice_id` to the value's XPath in the XML.
+* `tables` identifies a repeating row with `row_path` and maps each table column with its `name` and `path`.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+For example, the current invoice mapping includes `"invoice_id": "//INVOICE/INVOICE_ID/text()"`. Its invoice table uses `"row_path": "//INVOICE_LINES/INVOICE_LINE"`. Your XML structure and DocBits field names may differ; copy paths from your own sample document rather than this example.
 
-#### **Draft Management:**
+## Create and check a change
 
-* **Create a Draft:** Click the ✏️ pencil icon.
-* **Delete Drafts:** Use the 🗑️ trashcan icon to remove unused drafts.
-* **Activate Changes:** Click the ✅ checkmark to publish a version.
-  * <mark style="color:red;">**Note**</mark>: Activating a new version will **automatically deactivate** the previous one.
+The pencil beside the active version creates a **draft**. Make your JSON changes in that draft. Check the field names and paths against your XML before activating it. The draft's checkmark activates that version; activating a new version replaces the previously active one. Use the trash icon only to delete an unwanted draft.
 
-## 4. Editor & Syntax
+Click **Preview** to show the test panel. Enter the DocBits **Document ID** of an uploaded EDI document and click **Test**. Compare the returned values with the source document. The screenshot shows the empty test panel; no example result is claimed.
 
-The Extraction Paths File is written in **JSON** and contains two main components:
+<figure><img src="../../../../../../.gitbook/assets/dbdc-137-edi-preview-en.png" alt="English Sandbox Extraction Paths Preview panel with Document ID input and Test button"><figcaption>Test the selected mapping with a real EDI document ID before activating a draft.</figcaption></figure>
 
-* **fields**: A dictionary where each key is a field ID and each value is an XPath expression that defines how to extract the data.
-* **tables**: A list of table definitions that include:
-  * `name`: The table’s ID.
-  * `row_path`: An XPath that identifies each row of the table.
-  * `columns`: A list of column mappings (`name`, `path`).
-
-You can also use XPath functions (e.g., `sum()`) and expressions to calculate values dynamically from repeating elements.
-
-```
-jsonCopyEdit"total_net_amount": "sum(//PURCHASE_ORDER/ORDER_LINES/ORDER_LINE/SUB_TOTAL)"
-```
-
-## 5. Preview Function (Evaluate Extraction)
-
-The **Preview Function** allows you to simulate how the extraction paths will behave with a real uploaded document.
-
-**Usage:**
-
-* Upload an EDI file through the standard upload process.
-* Copy the **Document ID**.
-* Go to the **Extraction Paths** interface.
-* Open the **Preview Function**.\
-  \
-  ![](<../../../../../../.gitbook/assets/image (7) (1) (1).png>)
-* Enter the Document ID and click **Test**.
-* The result will show how each field and table is populated based on the configured paths.
-
-This feature is essential for verifying that your XPath expressions are correctly defined and pulling the expected values before activating the draft.
-
-<figure><img src="../../../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-## 6. Video Walkthrough
-
-A video guide for this file type is available on the [Videos page.](edi-videos.md)\
-Use it to follow along with setup, editing, and previewing.
+Need the document ID? Open the uploaded document in DocBits and copy its ID. For background on these files, see [EDI Settings](README.md) and the [EDI video guide](edi-videos.md).

@@ -1,40 +1,23 @@
 # Approval Stamp
 
-## **Overview:**
+An approval stamp is an annotation added during document approval when the option is enabled for that document type. It is useful when a reviewer needs to see who approved a document and when. The previous page showed six screenshots from an older interface and treated the stamp, IDM export and PDF download options as already verified together. Check each result in your own workflow before relying on it.
 
-This feature automatically adds an approval stamp to a document when it is approved in the approval screen. If a document contains a approval stamp, it will be included when **exporting to IDM**.
+## Find the option
 
-## Activating the Approval Stamp Feature
+1. With an administrator account, open **Settings → Document Types**. Find the type you want to configure, such as **Invoice**, and select the **gear icon** on that card. The gear opens **More Settings** for that document type; **Layouts** and **Fields** open different editors.
 
-To activate the Approval Stamp feature, follow these steps:
+   <figure><img src="../../../../../../.gitbook/assets/dbdc126-document-types-en.png" alt="English DocBits Document Types page with an Invoice card and its gear icon for More Settings"><figcaption><p>Open the gear on the relevant document type.</p></figcaption></figure>
 
-1.  Go to **Settings** → **Global Settings** → **Document Types**.
+2. In **More Settings**, expand **Approval & Rejection**. Locate the **Approval Stamp** switch next to **Approve before export**, **Second Approval** and **Approval History**. The screenshot shows the synthetic **DocBits Documentation Test A** organisation with the stamp **off**. It does not show a stamped document.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_1.png" alt=""><figcaption></figcaption></figure>
-2.  **Select the Document Type** for which you want to enable the stamp approval and click on **More Settings**.
+   <figure><img src="../../../../../../.gitbook/assets/dbdc126-approval-stamp-en.png" alt="English Invoice More Settings page with Approval and Rejection expanded and Approval Stamp switched off"><figcaption><p>Check the Approval Stamp setting for the selected document type.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_2.png" alt=""><figcaption></figcaption></figure>
-3.  Under the **Approval** section, enable the **Approval Stamp** option.
+3. Enable the switch only after agreeing how approvals and exports work in your organisation. Keep a record of the previous setting so you can verify the effect on a test invoice.
 
-    <figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_3.png" alt=""><figcaption></figcaption></figure>
+## Verify an approval
 
+Send a synthetic invoice of this document type through the configured approval workflow. On the **Ready for approval** screen, approve it with an authorised test account. The current DocBits web client checks the Approval Stamp option during approval and adds a stamp annotation with the approver name and date. Reopen the approved document and inspect the annotation and the downloaded PDF that your workflow actually uses. If the stamp is absent, check the document type, approval status, setting and export configuration.
 
+An approval stamp is separate from **Second Approval** and **Approval History**. Enabling one does not prove that the others are configured. The available dashboard download actions and IDM export format depend on the environment and were not verified for this page, so this guide does not promise specific download menu labels or automatic IDM output.
 
-## After Activation:
-
-Once the feature is activated, any document in the "pending approval" state will automatically receive an approval stamp once it is approved. The stamp will include the "Approved" logo, the name of the user who approved the document, and the time at which the document was approved.
-
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_4 (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_5 (1).png" alt=""><figcaption></figcaption></figure>
-
-### Downloading PDFs with or without the **Approval Stamp** <a href="#id-4.-downloading-pdfs-with-or-without-annotations" id="id-4.-downloading-pdfs-with-or-without-annotations"></a>
-
-* If a document has an approval stamp, you can choose to download the PDF either with or without the approval stamp.
-* To do this, go to the **Dashboard**.
-* Click on the **three dots** in the **Action** column.
-* Select one of the two available download options:
-  * **Download with Annotations**
-  * **Download without Annotations**
-
-<figure><img src="../../../../../../.gitbook/assets/ApprovalStamp_6.png" alt="" width="247"><figcaption></figcaption></figure>
+The two new screenshots were visually checked in the English Test A Sandbox. No switch was changed and no document was approved or exported during this check; the stamped end state needs a dedicated synthetic approved invoice.

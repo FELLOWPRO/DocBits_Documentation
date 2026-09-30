@@ -24,6 +24,10 @@ Belge Türleri bölümü, Docbits tarafından tanınan ve işlenen tüm belge t�
 8. **Komut Dosyaları**: Bu tür belgeler için özel işleme kuralları veya iş akışları çalıştıran komut dosyalarını yazın veya değiştirin.
 9. **EDI (Elektronik Veri Değişimi)**: Standartlaştırılmış elektronik formatlarda belgelerin değişimine ilişkin ayarları yapılandırın.
 
+#### Özel Doğrulama Kuralları
+
+Bir belge türünü açın, **Özel Doğrulama Kuralları** işlevini etkinleştirin ve bu türün doğrulama kurallarını yönetmek için **Doğrulama Kurallarını Yönetin** bağlantısını seçin (işlevin belge türünde etkin olması gerekir). Var olan bir kuralı baştan oluşturmadan yeniden kullanmak için [Özel Doğrulama Kuralını Çoğaltma](../../../administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md) rehberine bakın. Rehber kural adı, kural anahtarı ve onay düğmelerini açıklar.
+
 {% hint style="info" %}
 [Belge Türü Kurulumu'na](../../../setup/document-types/) bakın.
 {% endhint %}

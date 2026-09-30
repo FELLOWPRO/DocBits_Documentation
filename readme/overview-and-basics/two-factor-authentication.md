@@ -58,7 +58,7 @@ Backup-Codes werden nur im Moment ihrer Erstellung angezeigt. DocBits kann sie n
 
 1. Geben Sie wie gewohnt Ihre E-Mail-Adresse und Ihr Passwort ein.
 
-    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Der Anmeldebildschirm. Sie können sich auch ohne Passwort über <strong>Mit einem Passkey anmelden</strong> anmelden.</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Der Anmeldebildschirm. Sie können sich auch ohne Passwort über <strong>Mit Passkey anmelden</strong> anmelden.</p></figcaption></figure>
 2. DocBits fragt nach Ihrem zweiten Faktor. Wählen Sie Ihre Methode:
    * **Authenticator** — geben Sie den aktuellen 6-stelligen Code aus Ihrer App ein.
    * **E-Mail** — klicken Sie auf **Code per E-Mail senden**, um einen Code per E-Mail zu erhalten, und geben Sie ihn dann ein.
@@ -97,4 +97,4 @@ Wenn Ihre Organisation MFA **verlangt**, können Sie sich erst mit einem Passwor
 
 ## Passwortlose Anmeldung (optional)
 
-Sobald Sie einen Passkey haben, können Sie sich **ohne Eingabe Ihres Passworts** über **Mit einem Passkey anmelden** auf dem Anmeldebildschirm anmelden. Ihr Passwort funktioniert weiterhin als Ausweichlösung. Für die passwortlose Anmeldung muss der Passkey Sie verifizieren (Touch ID / Windows Hello / PIN), sodass sie sowohl schneller als auch phishing-resistent ist.
+Sobald Sie einen Passkey haben, können Sie sich **ohne Eingabe Ihres Passworts** über **Mit Passkey anmelden** auf dem Anmeldebildschirm anmelden. Ihr Passwort funktioniert weiterhin als Ausweichlösung. Für die passwortlose Anmeldung muss der Passkey Sie verifizieren (Touch ID / Windows Hello / PIN), sodass sie sowohl schneller als auch phishing-resistent ist.

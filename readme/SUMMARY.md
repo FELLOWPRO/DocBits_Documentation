@@ -20,6 +20,7 @@
   * [Site Haritası](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Özelleştirilebilir Kenar Çubuğu](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Fikir Panosu](end-user-and-partner-section/end-user-section/idea-board.md)
+  * [Üst Bilgi Alanı Kontrolü: Veriler nereden geliyor](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)
   * [Key Features of DocBits](overview/key-features-of-docbits.md)
   * [User Support](overview/user-support.md)
   * [Dashboard](overview/dashboard/README.md)

@@ -93,4 +93,3 @@ Raporda böyle bir alan kırmızı işaretlenir. **İşlem** sütunu, ana veri k
 * **İşlem:** değerin geçtiği her adım, kaynağının simgesiyle birlikte. Geçerli değerin geldiği adım vurgulanır. Her adımın ne yaptığını, hangi değerden hangisine geçtiğini görmek için üzerine gelin.
 * **Neden:** alanın durumu. (i) simgesi değerin neden böyle olduğunu açıklar. *Alan yoktu* yazıyorsa, alan belgede mevcut değildi.
 * Uzun değerler … ile kısaltılır — tam değeri görmek için üzerine gelin.
-* **Sayfa olarak aç**, aynı raporu yazdırmak veya göndermek için kendi sayfasında gösterir.

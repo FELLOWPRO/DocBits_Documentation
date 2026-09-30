@@ -29,3 +29,20 @@ Forward — or send — emails directly to your organisation's unique inbound ad
 * **Reply to this email if import can not be done** — sends an automatic reply to the sender when the import fails.
 * **Notify sender when import fails** — notifies the sender if their email could not be imported.
 * **Logs** — open the inbound email processing log. Click **Save** to apply your changes.
+
+## Supported document attachments
+
+Both email import methods accept these document attachments:
+
+| Format | File extensions | Typical use |
+| --- | --- | --- |
+| PDF | `.pdf` | Invoices and other PDF documents |
+| TIFF | `.tif`, `.tiff` | Scanned documents |
+| XML | `.xml` | Structured electronic documents |
+| EDI / purchase order data | `.edi`, `.purchaseorder` | Electronic data interchange and purchase orders |
+
+If a forwarding service labels a PDF, TIFF, or XML file as a generic attachment, DocBits can identify it from the file content or a known file extension. Forwarded `.eml` messages can also contain supported documents; DocBits extracts those inner attachments before import.
+
+Images such as PNG, JPG, GIF, and BMP are not imported as documents. Inline signature images and logos in forwarded email are skipped. Office files such as Word, Excel, and PowerPoint are not supported by these email import methods.
+
+For forwarded emails, check **Logs** under **Inbound Emails** if a document is missing. When **Notify sender when import fails** is enabled, the sender receives an explanation and a link to this page. For a connected mailbox, use the [IMAP](imap.md) or [OAuth (Office 365)](oauth-office365.md) setup guide.

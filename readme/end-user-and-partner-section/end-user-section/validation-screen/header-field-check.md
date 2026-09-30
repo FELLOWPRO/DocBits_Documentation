@@ -93,4 +93,3 @@ U izveštaju je takvo polje označeno crveno. Kolona **Akcija** prikazuje zapis 
 * **Akcija:** svaki korak kroz koji je vrednost prošla, sa ikonom njenog izvora. Korak iz kog potiče trenutna vrednost je istaknut. Zadržite pokazivač da vidite šta je svaki korak uradio, iz koje vrednosti u koju.
 * **Razlog:** status polja. Ikona (i) objašnjava zašto je vrednost takva kakva jeste. Ako piše *Polje nije postojalo*, polja nije bilo na dokumentu.
 * Duge vrednosti se skraćuju sa … — zadržite pokazivač da vidite punu vrednost.
-* **Otvori kao stranicu** prikazuje isti izveštaj na zasebnoj stranici, za štampanje ili prosleđivanje.

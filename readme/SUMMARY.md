@@ -119,6 +119,7 @@
     * [Niestandardowe Filtry](administration-and-setup/settings/global-settings/custom-filters.md)
     * [Wygaśnięcie Dokumentu](administration-and-setup/settings/global-settings/document-expiry.md)
     * [Typy Dokumentów](administration-and-setup/settings/global-settings/document-types/README.md)
+      * [Duplikowanie niestandardowej reguły walidacji](administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md)
       * [Menedżer Układów](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Nawigacja w Menedżerze Układów](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Podtypy Dokumentów](administration-and-setup/settings/global-settings/document-types/document-sub-types.md)

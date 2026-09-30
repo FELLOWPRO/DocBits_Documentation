@@ -68,6 +68,7 @@
   * [Ekran Walidacji](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Model AI Specyficzny dla Dostawcy do Ekstrakcji Pól i Tabel](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Automatyczne Kontrole na Ekranie Walidacji](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
+    * [Kontrola pól nagłówka: skąd pochodzą dane](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)
     * [Rozmyte Dane](end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md)
     * [Kody QR](end-user-and-partner-section/end-user-section/validation-screen/qr-codes.md)
     * [Skróty Klawiaturowe](end-user-and-partner-section/end-user-section/validation-screen/keyboard-shortcuts.md)

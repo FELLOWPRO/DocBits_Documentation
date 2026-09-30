@@ -24,6 +24,10 @@ De sectie Documenttypes vermeldt alle documenttypes die door Docbits worden herk
 8. **Scripts**: Schrijf of wijzig scripts die aangepaste verwerkingsregels of workflows voor documenten van dit type uitvoeren.
 9. **E-DOC**: Configureer instellingen met betrekking tot de uitwisseling van documenten in gestandaardiseerde elektronische formaten. U kunt XRechnung, EDI, FakturaPA of EDI configureren.
 
+#### Aangepaste validatieregels
+
+Open een documenttype en selecteer **Aangepaste validatieregels** om de eigen validatieregels van dat type te beheren. Om een bestaande regel over te nemen zonder haar opnieuw te bouwen, volgt u de handleiding [Een aangepaste validatieregel dupliceren](duplicate-a-custom-validation-rule.md). Daarin worden de regelnaam, de regelsleutel en de bevestigingsknoppen uitgelegd.
+
 {% hint style="info" %}
 See [Setup Document Type](../../../setup/document-types/)
 {% endhint %}

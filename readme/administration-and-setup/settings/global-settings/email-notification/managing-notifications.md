@@ -1,22 +1,28 @@
 # Managing Notifications
 
-Use **Email Notification** to review notification rules and create a new one. Open **Settings → Global Settings → Email Notification**. The table shows the rule name, document type, status, priority, delay, recipients, last change and available actions. If it says **No Record Found!**, there are no rules to edit yet.
+Open **Settings → Email Notification** to see the rules for your organisation. A rule connects a document status to an email template and a recipient. The example below uses a demonstration rule for invoices and remains **inactive** in the DocBits Sandbox.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-164-notifications-list-en.png" alt="Email Notification settings in the English DocBits sandbox, showing an empty notification list and the New button"><figcaption><p>The notification list in the English sandbox. This test organisation has no saved rules.</p></figcaption></figure>
+## Example: an invoice is ready for validation
 
-## Create a notification rule
+Before creating a rule, prepare an email template for **Invoice** under **Settings → Email Templates**. In this example, the template is named **Docs Demo Invoice Notification**. The template supplies the email subject and message.
 
-1. Select **+ New** to open the notification form.
-2. Enter a **Name**, choose a **Document Type** and an email template. The template determines the email's content.
-3. Choose the **Status** for the rule and set its **Priority**.
-4. Set **Time Unit** and **Delay** for when the notification should be sent. The form requires a delay of at least five minutes. Select **Do not Repeat** if the notification should not be repeated.
-5. Choose whether to send it to the assigned user or group, add an **Email Address** if needed, and decide whether reassignment should resend the notification.
-6. Review the recipients and timing before selecting **Save**. Select **Cancel** to leave without saving.
+1. Select **+ New** on the **Email Notification** page.
+2. Enter **Docs Demo Invoice Validation** as the name, select **Invoice** as the document type, and choose the prepared email template.
+3. Choose **Ready for validation** as the status and **Medium** as the priority. Set **Time Unit** to **MINUTES** and **Delay** to **10**. The minimum delay for minutes is five.
+4. Select **Send Email to Assigned User/Group**. Turn on **Do not Repeat** if the message should be sent only once. Review the recipient and timing, then select **Save**.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-164-notifications-new-en.png" alt="New email notification form with name, document type, template, status, priority, delay, repeat and recipient options"><figcaption><p>The current New notification form in the English sandbox. No rule was saved for this screenshot.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-164-example-form-en-20260930.png" alt="Filled notification rule for Invoice, Ready for validation, a ten minute delay, and the assigned user or group"><figcaption><p>The saved example rule opened for editing. Its values show when and to whom the notification would be sent.</p></figcaption></figure>
 
-## Change an existing rule
+The rule now appears in the list. The documentation example was then deactivated, so its **Actions** menu offers **Activate**. Check the name, document type, status, delay, and recipient in your own list before activating a rule.
 
-Find the rule in the table and use its **Actions** menu to edit it. Check the document type, status, delay and recipients, then save your changes. If the menu offers a disable or delete action, check the rule before using it so that expected emails are not interrupted. The example organisation above has no saved rule, so those actions are not shown in the screenshots.
+<figure><img src="../../../../.gitbook/assets/dbdc-164-example-list-en-20260930.png" alt="Email Notification list with the Docs Demo Invoice Validation example rule instead of an empty table"><figcaption><p>The saved example gives you a rule to find and manage in the list.</p></figcaption></figure>
+
+## Edit, activate, or delete a rule
+
+Open the row's **Actions** menu. **Edit** opens the rule and its current values. **Activate** enables this inactive example; an active rule offers **Deactivate** instead. **Logs** opens its notification history. **Delete** removes the rule after confirmation. Check recipients and timing before activating or changing a rule.
+
+<figure><img src="../../../../.gitbook/assets/dbdc-164-example-actions-en-20260930.png" alt="Actions menu for the inactive example notification with Edit, Activate, Logs, and Delete"><figcaption><p>The available actions depend on whether the rule is active.</p></figcaption></figure>
+
+If the list says **No Record Found!**, create a rule first. If the **Document Type** or email template list is empty, configure an active document type and a matching template before returning to this form.
 
 For more on the initial setup, see [Configuring Notifications](configuring-notifications.md). If emails do not arrive as expected, see [Troubleshooting](troubleshooting.md).

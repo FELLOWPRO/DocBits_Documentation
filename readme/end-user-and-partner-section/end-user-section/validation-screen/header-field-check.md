@@ -93,4 +93,3 @@ In the report, such a field is marked red. The **Action** column shows the maste
 * **Action:** every step the value went through, with the icon of its source. The step the current value comes from is highlighted. Hover to see what each step did, from which value to which.
 * **Reason:** the status of the field. The (i) icon explains why the value is what it is.
 * Long values are shortened with … — hover to see the full value.
-* **Open as page** shows the same report on its own page, to print or send on.

@@ -94,4 +94,3 @@ No relatório, esse campo é marcado em vermelho. A coluna **Ação** mostra o r
 * **Ação:** cada etapa pela qual o valor passou, com o ícone da sua fonte. A etapa da qual vem o valor atual aparece destacada. Passe o mouse para ver o que cada etapa fez, de qual valor para qual.
 * **Motivo:** o status do campo. O ícone (i) explica por que o valor é o que é. Se constar *O campo não existia*, o campo não estava presente no documento.
 * Valores longos são encurtados com … — passe o mouse para ver o valor completo.
-* **Abrir como página** mostra o mesmo relatório em uma página própria, para imprimir ou enviar.

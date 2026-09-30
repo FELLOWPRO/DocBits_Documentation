@@ -20,6 +20,7 @@
   * [Mapa Sajta](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Prilagodljiva Bočna Traka](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Tabla Ideja](end-user-and-partner-section/end-user-section/idea-board.md)
+  * [Provera polja zaglavlja: odakle potiču podaci](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)
   * [Key Features of DocBits](overview/key-features-of-docbits.md)
   * [User Support](overview/user-support.md)
   * [Dashboard](overview/dashboard/README.md)

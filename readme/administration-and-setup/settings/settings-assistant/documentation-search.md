@@ -16,6 +16,12 @@ Documentation search currently uses the **English** and **German** help-page ind
 
 The search index is refreshed when English or German documentation changes are published from the documentation repository. A regular reconciliation also removes links to pages that are no longer in the documentation navigation. A newly published page may take a short time to appear in the assistant.
 
+### Technical overview for administrators
+
+Published help pages are split into sections and stored in a dedicated **OpenSearch documentation index** for each supported language. This index is separate from the indexes used for an organization's uploaded documents. When a page changes, unchanged sections can be skipped and changed sections are indexed again. Removed pages are deleted from the documentation index.
+
+For a question, the service combines keyword matches with vector similarity, then orders the most relevant passages. If the embedding service is unavailable, keyword search remains available. The Settings Assistant receives source links and short passages from this documentation search; it does not read an organization's document index for this purpose.
+
 If you cannot find a page, search [docs.docbits.com](https://docs.docbits.com) directly, try a more precise question, or contact DocBits support.
 
 {% hint style="info" %}

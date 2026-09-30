@@ -1,6 +1,6 @@
 # Company Information
 
-<figure><img src="../../../../.gitbook/assets/company_information.png" alt="Company Information"><figcaption><p>Company Information Page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/company_information.png" alt="Company Information form in the English DocBits Sandbox test organization"><figcaption><p>Company Information: edit the organization name, address, legal identifiers and contact details, then select Save.</p></figcaption></figure>
 
 The Company Information page lets you manage your company profile, preferences, and subscription details. It is organized into the following sections:
 
@@ -30,7 +30,17 @@ This section contains your core company data, grouped into four areas:
 * **Official Company Phone Number**: The primary phone number for your company.
 * **E-Mail**: The main email address used for official communications.
 
-After entering or updating any fields, click **Save** to apply your changes.
+After entering or updating any fields, click **Save** to apply your changes. The **?** icons beside the legal identifiers show extra field guidance. Select the section heading to expand or collapse the form.
+
+## E-mail domains
+
+Organization admins can open **Settings → Company Information → E-mail domains** to manage the domains used for automatic organization assignment. When someone signs in with Microsoft or Google and is not yet a member of an organization, DocBits can assign them to this organization if their e-mail address uses one of its listed domains. A domain can belong to only one organization.
+
+<figure><img src="../../../../.gitbook/assets/company_email_domains_en.png" alt="Expanded E-mail domains section with an empty domain list, input field and Add domain button"><figcaption><p>The English E-mail domains section before a domain is added. Enter a company domain, then select Add domain.</p></figcaption></figure>
+
+Enter the domain only, such as `example.com`, in the input and select **Add domain** or press Enter. The first domain becomes the primary domain. If more domains are listed, use **Make primary** on another row to change it, or the trash icon to remove a domain. Errors such as an invalid domain, a personal e-mail provider or a domain already assigned elsewhere appear under the input. **No domains assigned yet** means this organization has no domain rule.
+
+Before adding a domain, check which organization should receive new sign-ins. To manage existing memberships, continue with [Users](../groups-users-and-permissions/users/README.md).
 
 ## Company Preferences
 

@@ -68,6 +68,7 @@
   * [Écran de validation](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Modèle d'IA Spécifique au Fournisseur pour l'Extraction de Champs et de Tableaux](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Vérifications automatiques sur l'écran de validation](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
+    * [Contrôle des champs d'en-tête : d'où viennent les données](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)
     * [Données Floues](end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md)
     * [Codes QR](end-user-and-partner-section/end-user-section/validation-screen/qr-codes.md)
     * [Raccourcis Clavier](end-user-and-partner-section/end-user-section/validation-screen/keyboard-shortcuts.md)

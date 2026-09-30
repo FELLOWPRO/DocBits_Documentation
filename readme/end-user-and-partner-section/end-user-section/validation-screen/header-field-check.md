@@ -94,4 +94,3 @@ Nel report un campo del genere è contrassegnato in rosso. La colonna **Azione**
 * **Azione:** ogni passaggio attraversato dal valore, con l'icona della sua fonte. Il passaggio da cui proviene il valore attuale è evidenziato. Passando il cursore si vede cosa ha fatto ogni passaggio, da quale valore a quale.
 * **Motivo:** lo stato del campo. L'icona (i) spiega perché il valore è quello che è. Se indica *Il campo non esisteva*, il campo non era presente sul documento.
 * I valori lunghi vengono abbreviati con … — passare il cursore per vedere il valore completo.
-* **Apri come pagina** mostra lo stesso report su una pagina propria, da stampare o inoltrare.

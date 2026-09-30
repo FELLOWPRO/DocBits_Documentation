@@ -39,6 +39,10 @@ Below each document type, you can access the following configuration tabs:
 | **Scripts** | Write custom processing scripts that run during document processing. |
 | **E-Doc** | Configure electronic document standards (XRechnung, ZUGFeRD, EDI, FatturaPA). |
 
+## Custom Validation Rules
+
+Open a document type and select **Custom Validation Rules** to manage its own validation rules. To reuse an existing rule without rebuilding it, follow [Duplicate a Custom Validation Rule](duplicate-a-custom-validation-rule.md). The guide explains the rule name, rule key and confirmation controls.
+
 ## Creating a Custom Document Type
 
 1. Scroll down to the **Custom Document Types** section.

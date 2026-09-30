@@ -81,6 +81,7 @@
   * [Validierungsbildschirm](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Lieferantenspezifisches KI-Modell für Feld- und Tabellenextraktion](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Automatische Überprüfungen im Validierungsbildschirm](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
+    * [Kopffeld-Check: Woher die Daten kommen](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)
     * [Unscharfe Daten](end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md)
     * [QR-Codes](end-user-and-partner-section/end-user-section/validation-screen/qr-codes.md)
     * [Tastenkombinationen](end-user-and-partner-section/end-user-section/validation-screen/keyboard-shortcuts.md)

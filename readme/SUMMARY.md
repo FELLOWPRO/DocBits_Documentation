@@ -182,6 +182,7 @@
       * [Best Practices](admin-section/settings/global-settings/integration/best-practices.md)
       * [Fehlerbehebung bei häufigen Problemen](admin-section/settings/global-settings/integration/fehlerbehebung-bei-haufigen-problemen.md)
     * [Dokumenttypen](admin-section/settings/global-settings/document-types/README.md)
+      * [Benutzerdefinierte Validierungsregel duplizieren](administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md)
       * [Layout-Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Navigieren im Layout-Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Dokumentuntertypen](admin-section/settings/global-settings/document-types/document-sub-types.md)

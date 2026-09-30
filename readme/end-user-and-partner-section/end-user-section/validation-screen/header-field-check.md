@@ -94,4 +94,3 @@ En el informe, ese campo aparece marcado en rojo. La columna **Acción** muestra
 * **Acción:** cada paso por el que pasó el valor, con el icono de su fuente. El paso del que procede el valor actual aparece resaltado. Pase el cursor para ver qué hizo cada paso, de qué valor a cuál.
 * **Motivo:** el estado del campo. El icono (i) explica por qué el valor es el que es. Si indica *El campo no existía*, el campo no estaba en el documento.
 * Los valores largos se acortan con …; pase el cursor para ver el valor completo.
-* **Abrir como página** muestra el mismo informe en una página propia, para imprimirlo o enviarlo.

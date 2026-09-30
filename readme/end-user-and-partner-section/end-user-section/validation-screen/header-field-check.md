@@ -94,4 +94,3 @@ Dans le rapport, un tel champ est marqué en rouge. La colonne **Action** montre
 * **Action :** chaque étape que la valeur a traversée, avec l'icône de sa source. L'étape dont provient la valeur actuelle est surlignée. Survolez pour voir ce que chaque étape a fait, de quelle valeur à quelle valeur.
 * **Motif :** l'état du champ. L'icône (i) explique pourquoi la valeur est ce qu'elle est. Si elle indique *Le champ n'existait pas*, le champ n'était pas présent sur le document.
 * Les valeurs longues sont abrégées par … — survolez pour voir la valeur complète.
-* **Ouvrir en page** affiche le même rapport sur sa propre page, pour l'imprimer ou l'envoyer.

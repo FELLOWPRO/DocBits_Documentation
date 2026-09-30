@@ -68,6 +68,7 @@
   * [Validatiescherm](end-user-and-partner-section/end-user-section/validation-screen/README.md)
     * [Leverancierspecifiek AI-model voor Veld- en Tabelextractie](end-user-and-partner-section/end-user-section/validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md)
     * [Automatische controles op het validatiescherm](end-user-and-partner-section/end-user-section/validation-screen/automatic-checks-on-the-validation-screen.md)
+    * [Koptekstveldcontrole: waar de gegevens vandaan komen](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)
     * [Vage Gegevens](end-user-and-partner-section/end-user-section/validation-screen/fuzzy-data.md)
     * [QR-codes](end-user-and-partner-section/end-user-section/validation-screen/qr-codes.md)
     * [Toetsenbord Sneltoetsen](end-user-and-partner-section/end-user-section/validation-screen/keyboard-shortcuts.md)

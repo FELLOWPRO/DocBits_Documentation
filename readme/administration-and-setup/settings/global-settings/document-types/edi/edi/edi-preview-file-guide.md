@@ -1,69 +1,27 @@
 # EDI Preview File Guide
 
-## 1. Overview
+The **PREVIEW** file controls how a structured EDI document is displayed for a person to read. In DocBits it is an **XSLT** configuration, separate from the **EXTRACTION PATHS** JSON mapping. Use this guide if you maintain electronic document formats for your organization.
 
-The **Preview File** defines how structured XML data is rendered into a human-readable, PDF-style format. It combines **HTML and CSS** for visual presentation and uses **XSLT `select` statements** to dynamically insert data from the Custom XML.\
-This preview is displayed during **field validation** and is also included when documents are exported to **IDM**.
+## Find the Preview file
 
-## 2. Purpose and Function
+1. Go to **Settings → Document Types** and open **E-Doc** for the relevant document type.
+2. Expand the electronic format, such as **EDI** for **Invoice**.
+3. Select the **PREVIEW** row marked **XSLT**. Do not select the **Preview** button yet; that button opens a test panel after you enter the configuration.
 
-* Converts machine-readable Custom XML into a visually formatted preview (PDF).
-* Enables human-friendly review and validation of extracted data.
-* Ensures consistent rendering of key document fields such as headers, tables, totals, etc.
-* Built using **HTML + CSS** for layout and design, and **XSLT** for binding data to the layout.
+<figure><img src="../../../../../../.gitbook/assets/dbdc-138-edi-preview-list-en.png" alt="English Sandbox EDI list showing the separate PREVIEW XSLT and EXTRACTION PATHS JSON rows"><figcaption>Choose PREVIEW (XSLT) in the EDI list.</figcaption></figure>
 
-## 3. Access & Basic Editing
+## Understand the editor and versions
 
-#### **Accessing the File:**
+The detail page shows the document type, electronic format and available versions on the left. **Active** marks the version currently in use. The editor on the right contains an XSLT stylesheet. Its HTML and CSS control layout and appearance; XSLT inserts values from the structured document. **Format** arranges the source for reading and does not activate a version.
 
-1.  Go to **Settings** → **Document Type** → _\[Your Document (e.g., Purchase Order)]_ → **E-Doc**.\\
+<figure><img src="../../../../../../.gitbook/assets/dbdc-138-edi-preview-detail-en.png" alt="English Sandbox PREVIEW XSLT detail with active version, stylesheet and Format button"><figcaption>Invoice EDI Preview configuration in the documentation test organization.</figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. Under the **E-Doc** tab, select your format (e.g., **EDI**).
-3.  Click **Preview** to view or edit the file.\\
+The pencil beside the active version creates a **draft** for edits. After checking your changes, activate the draft with its checkmark. An activated version replaces the previously active one. Delete only an unwanted draft with the trash icon.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Test a preview
 
-#### **Draft Management:**
+Click the **Preview** button at the top right to open a test panel. Enter the **Document ID** of an uploaded EDI document and click **Test**. Inspect the displayed document to check whether labels, values and table rows are readable. The image shows the empty panel; it does not show a successful render.
 
-* **Create a Draft:** Click the ✏️ pencil icon.
-* **Delete Drafts:** Use the 🗑️ trashcan icon to remove unused drafts.
-* **Activate Changes:** Click the ✅ checkmark to publish a version.
-  * <mark style="color:red;">**Note**</mark>: Activating a new version will **automatically deactivate** the previous one.
+<figure><img src="../../../../../../.gitbook/assets/dbdc-138-edi-preview-panel-en.png" alt="English Sandbox PREVIEW XSLT test panel with Document ID field and Test button"><figcaption>Use a real document ID to test the selected Preview version before activation.</figcaption></figure>
 
-## 4. HTML/XSLT/CSS Editor
-
-The **Preview File** is edited in a dedicated editor that supports HTML, XSLT, and CSS.
-
-* **HTML** defines the structure of the output document (e.g., tables, divs, layout).
-* **CSS** controls the styling (e.g., fonts, spacing, colors, alignment).
-*   **XSLT `select` statements** are used to dynamically populate fields from the Custom XML, such as:
-
-    ```xml
-    <xsl:value-of select="/PURCHASE_ORDER/PURCHASE_ORDER_NUMBER/text()" />
-    ```
-* You can also use **XSLT logic** (`<xsl:if>`, `<xsl:for-each>`, etc.) to handle conditional display or iterate over line items.
-
-## 5. Preview Function (Render Output)
-
-The Preview Function allows you to test and verify how an EDI document is rendered with the current Preview File.
-
-#### **Usage:**
-
-* Upload an EDI file through the standard upload process.
-* Copy the **Document ID** of the uploaded file.
-* Navigate to the **Preview** interface.
-* Open the **Preview Function**.\
-  \
-  ![](<../../../../../../.gitbook/assets/image (7) (1) (1).png>)
-* Enter the Document ID and click **Test**.
-* The rendered PDF-style preview will be displayed using the HTML/CSS/XSLT setup.
-
-This feature is crucial for debugging data bindings, refining layout, and ensuring the document is both accurate and visually clear for users and downstream systems like **IDM**.
-
-<figure><img src="../../../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-## 6. Video Walkthrough
-
-A video guide for this file type is available on the [Videos page.](edi-videos.md)\
-Use it to follow along with setup, editing, and previewing.
+For field-to-XML mapping, use the [Extraction Paths guide](edi-extraction-paths-file-guide.md). For the source conversion step, see the [Transformation guide](edi-transformation-file-guide.md). The [EDI video guide](edi-videos.md) provides a walkthrough.

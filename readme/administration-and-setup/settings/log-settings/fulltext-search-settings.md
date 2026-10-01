@@ -1,15 +1,16 @@
 # Fulltext Search Settings
 
-<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Fulltext Search Settings"><figcaption><p>Fulltext Search Settings — Module Required Dialog</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Fulltext Search Settings in the sandbox, with a dialog explaining that the module is required and buttons for Go to Modules and Enable Now"><figcaption><p>When Fulltext Search is disabled, this dialog explains the next steps.</p></figcaption></figure>
 
-Fulltext Search Settings configures what DocBits indexes and how it makes that content searchable across documents, ERP master data, and templates. The settings page only opens when the **Fulltext Search module** is enabled — see [Fulltext Search](../document-processing/module/fulltext-search.md) for the user-facing query language.
+Fulltext Search Settings configures what DocBits indexes and how it makes that content searchable across documents, ERP master data, and templates. The settings page displays a requirement dialog until the **Fulltext Search module** is enabled — see [Fulltext Search](../document-processing/module/fulltext-search.md) for the user-facing query language.
 
 ## Prerequisites
 
-The Fulltext Search module must be activated in **Settings → Document Processing → Module → Dashboards → Full text search**. If the module is not enabled, a dialog prompts you to either:
+The Fulltext Search module must be activated in **Settings → Module → Dashboards & Analytics → Full text search**. If the module is not enabled, the dialog offers three actions:
 
-* **Go to Modules** — Navigate to the Module settings page to review the configuration.
-* **Enable Now** — Activate the Fulltext Search module directly (starts a DocSearch subscription).
+* **Help (?)** — Open the Fulltext Search documentation in a new tab before changing any setting.
+* **Go to Modules** — Open the Dashboards & Analytics module settings to review the configuration.
+* **Enable Now** — Open the subscription dialog. Review and confirm that dialog before the module is enabled; clicking this button alone does not enable it.
 
 The settings page itself becomes available once the module is active.
 

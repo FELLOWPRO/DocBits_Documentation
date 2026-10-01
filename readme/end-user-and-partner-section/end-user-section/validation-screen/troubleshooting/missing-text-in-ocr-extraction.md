@@ -1,43 +1,33 @@
 # Missing Text in OCR Extraction
 
-## **Issue**
+If text is visible on a document but a field cannot be extracted, first check whether DocBits recognized that text. A scanned image and a PDF's embedded text can produce different results. Do not change an extraction rule until you know which text is available.
 
-In some cases, text may appear to be missing in the **OCR View**, which prevents it from being extracted using the extraction feature.
+## Check the OCR view
 
-<figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_5.png" alt=""><figcaption></figcaption></figure>
+1. Open the document in **Field Validation**.
+2. In the toolbar on the right, select the **OCR View** icon. The OCR view opens in a separate browser tab.
+3. Look for the missing word or number in the recognized text overlay. If it is absent, field extraction cannot select it from that text layer. If it is present, check the field mapping instead.
 
-To verify this, click the **OCR View** button in the toolbar on the right. If the text does not appear there, it means it is not available for extraction.
+<figure><img src="../../../../.gitbook/assets/dbdc159-ocr-view-en.png" alt="OCR view of a synthetic English invoice with recognized words overlaid on the page"><figcaption><p>Compare the text on the document with the words shown in OCR View. This example shows recognized text, not a failed extraction.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_6.png" alt=""><figcaption></figcaption></figure>
+## Try OCR instead of embedded E-Text for one supplier
 
-## **Cause**
+When **Use E-Text if available** is enabled, DocBits can use text already embedded in the PDF. Text that exists only inside an image may be missing from that layer. For a supplier whose documents have this problem:
 
-The most likely cause is that the text you’re trying to extract is part of an image (e.g. a logo or scanned section) within the document.\
-When the E-Text feature is enabled, text that appears on images or logos is not included in the extracted text layer. As a result, this text cannot be accessed or extracted through standard extraction logic.
+1. Open one of that supplier's documents in **Field Validation**.
+2. Select **More options** (three dots) in the toolbar on the right.
+3. Turn off **Use E-Text if available**.
+4. Read the restart prompt and select **Confirm** to save the change and reprocess the document. Select **Cancel** to leave the setting unchanged.
+5. Open **OCR View** again after processing and check whether the missing text appears.
 
-## **Fix**
+<figure><img src="../../../../.gitbook/assets/dbdc159-supplier-etext-en.png" alt="Field Validation More options menu showing the supplier Use E-Text if available switch"><figcaption><p>The supplier E-Text switch is in More options on the validation screen.</p></figcaption></figure>
 
-To resolve this issue, disable the E-Text feature—either for the [specific supplier](missing-text-in-ocr-extraction.md#disable-e-text-for-a-specific-supplier) or for the [entire organization](missing-text-in-ocr-extraction.md#disable-e-text-for-the-entire-organization). Once E-Text is deactivated, DocBits will rely solely on OCR, which is capable of extracting text from images and logos within the document.
+<figure><img src="../../../../.gitbook/assets/dbdc159-restart-confirm-en.png" alt="Confirmation dialog explaining that the document must be restarted for the supplier E-Text change to take effect"><figcaption><p>Confirming the supplier setting restarts processing of the open document.</p></figcaption></figure>
 
-### **Disable E-Text for a Specific Supplier**
+## Change the organization default
 
-1. Open a document from the specific supplier in the **Field Validation**.
-2.  Click the three-dot menu in the toolbar on the right.
+An administrator can open **Settings → Document Processing → OCR Settings → General OCR settings** and turn off **Use E-Text if available** for the organization. This changes the default for later processing; check and reprocess already affected documents separately. See [OCR Settings](https://docs.docbits.com/administration-and-setup/settings/document-processing/ocr-settings) for the other OCR controls.
 
-    <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_2.png" alt=""><figcaption></figcaption></figure>
-3.  Uncheck **Use E-Text if available**.
+<figure><img src="../../../../.gitbook/assets/dbdc159-org-ocr-settings-en.png" alt="General OCR settings with the organization-wide Use E-Text if available switch"><figcaption><p>Use the organization setting when the issue affects documents from multiple suppliers.</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_3.png" alt=""><figcaption></figcaption></figure>
-4.  Click **Confirm** to restart processing for the document.
-
-    <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_4.png" alt=""><figcaption></figcaption></figure>
-
-### Disable E-Text for the Entire Organization
-
-1.  Go to **Settings → Document Processing → OCR Settings**.
-
-    <figure><img src="../../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
-2.  Under **General OCR Settings**, uncheck the option **Use E-Text if available**.
-
-    <figure><img src="../../../../.gitbook/assets/troubleshooting_ocr_1.png" alt=""><figcaption></figcaption></figure>
-
+If the text is still absent after reprocessing, review the scan quality and contact your DocBits administrator or support with the document ID and the page number. Do not send a sensitive document in a public support request.

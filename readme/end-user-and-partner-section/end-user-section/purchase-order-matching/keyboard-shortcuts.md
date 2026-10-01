@@ -14,8 +14,8 @@ Het PO-matching scherm heeft speciale sneltoetsen om het matchingproces te stroo
 * **Control + E** – Exporteert het document, genereert een exportbestand op basis van de toegepaste instellingen.
 * **Control + F** – Opent de zoekfunctie voor inkooporders, zodat gebruikers snel specifieke inkooporders kunnen vinden.
 * **Control + P** – Selecteert de eerste rij van de inkooporderregels, waardoor het gemakkelijk is om met ordergegevens te beginnen.
-* **Control + L** – Selecteert de eerste rij van de factuurregels, waardoor snelle toegang tot factuurdetails mogelijk is.
-* **Control + Left Click** – Selecteert of deselecteert rijen van de inkooporder, waardoor flexibele selectie van meerdere invoeren mogelijk is.
+* **Control + L** – Focus de eerste rij van de documentregels, zodat je direct bij de regelgegevens kunt beginnen.
+* **Control + Left Click** – Selecteert of deselecteert één inkooporderregel voor matching.
 * **Control + C** – Selecteert inkooporder rijen om te beginnen met mappen naar factuurregels, en zet het mappingproces op.
 * **Control + V** – Maakt de geselecteerde inkooporderregels aan de factuurregels, en koppelt gegevens efficiënt.
-* **Option + Shift + Left Click** – Selecteert alle inkooporderregels tussen de eerste geselecteerde en de laatste geselecteerde rij, wat het bulkselectieproces vereenvoudigt.
+* **Shift + Left Click** – Selecteert de inkooporderregels tussen de laatst geselecteerde regel en de regel waarop je klikt.

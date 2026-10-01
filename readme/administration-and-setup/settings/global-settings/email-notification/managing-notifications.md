@@ -1,35 +1,28 @@
 # Managing Notifications
 
-To edit, disable, or delete existing notifications and adapt them to changes in document processing workflows or user responsibilities, you can do the following:
+Open **Settings → Email Notification** to see the rules for your organisation. A rule connects a document status to an email template and a recipient. The example below uses a demonstration rule for invoices and remains **inactive** in the DocBits Sandbox.
 
-**Navigate to notification settings:** Go to your system's settings where you can manage notifications. You can find these in the “Settings” section, “Global Settings” and then under “Email notification”.
+## Example: an invoice is ready for validation
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Before creating a rule, prepare an email template for **Invoice** under **Settings → Email Templates**. In this example, the template is named **Docs Demo Invoice Notification**. The template supplies the email subject and message.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Select **+ New** on the **Email Notification** page.
+2. Enter **Docs Demo Invoice Validation** as the name, select **Invoice** as the document type, and choose the prepared email template.
+3. Choose **Ready for validation** as the status and **Medium** as the priority. Set **Time Unit** to **MINUTES** and **Delay** to **10**. The minimum delay for minutes is five.
+4. Select **Send Email to Assigned User/Group**. Turn on **Do not Repeat** if the message should be sent only once. Review the recipient and timing, then select **Save**.
 
-**Look for the list of existing notifications:** In the notification settings you will find a list of existing notifications. This list shows you all notifications that are currently set up.
+<figure><img src="../../../../.gitbook/assets/dbdc-164-example-form-en-20260930.png" alt="Filled notification rule for Invoice, Ready for validation, a ten minute delay, and the assigned user or group"><figcaption><p>The saved example rule opened for editing. Its values show when and to whom the notification would be sent.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The rule now appears in the list. The documentation example was then deactivated, so its **Actions** menu offers **Activate**. Check the name, document type, status, delay, and recipient in your own list before activating a rule.
 
-**Edit a notification:** To edit an existing notification, find the notification in the list and select the edit option. This allows you to change the notification settings, such as the document type, status, triggering events or recipients.
+<figure><img src="../../../../.gitbook/assets/dbdc-164-example-list-en-20260930.png" alt="Email Notification list with the Docs Demo Invoice Validation example rule instead of an empty table"><figcaption><p>The saved example gives you a rule to find and manage in the list.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="192"><figcaption></figcaption></figure>
+## Edit, activate, or delete a rule
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+Open the row's **Actions** menu. **Edit** opens the rule and its current values. **Activate** enables this inactive example; an active rule offers **Deactivate** instead. **Logs** opens its notification history. **Delete** removes the rule after confirmation. Check recipients and timing before activating or changing a rule.
 
-**Turn off a notification:** If you want to temporarily turn off a notification, find the notification in the list and select the option to turn it off. This will temporarily stop the notification without deleting it, so you can reactivate it later if necessary.
+<figure><img src="../../../../.gitbook/assets/dbdc-164-example-actions-en-20260930.png" alt="Actions menu for the inactive example notification with Edit, Activate, Logs, and Delete"><figcaption><p>The available actions depend on whether the rule is active.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="116"><figcaption></figcaption></figure>
+If the list says **No Record Found!**, create a rule first. If the **Document Type** or email template list is empty, configure an active document type and a matching template before returning to this form.
 
-**Delete a notification:** To permanently remove a notification, find the notification in the list and select the delete option. This will completely remove the notification from the system and cannot be restored.
-
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="106"><figcaption></figcaption></figure>
-
-**Adapt to Changes:** Periodically review your notification settings and adjust as necessary to reflect changes in document processing workflows or user responsibilities. This could include updating notifications due to new events, changed responsibilities, or other organizational changes.
-
-**Save the changes:** After making your changes, don't forget to save them for them to take effect.
-
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" width="150"><figcaption></figcaption></figure>
-
-By regularly reviewing and adjusting your notification settings, you can ensure that your notifications always meet current needs and workflows. This helps ensure efficient communication and ensures that the right people are notified of important events in a timely manner.
+For more on the initial setup, see [Configuring Notifications](configuring-notifications.md). If emails do not arrive as expected, see [Troubleshooting](troubleshooting.md).

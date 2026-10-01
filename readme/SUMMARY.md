@@ -94,6 +94,8 @@
           * [🇦🇺 AUNZ PINT](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint.md)
           * [🇦🇺 AUNZ PINT Self-Billing](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/aunz-pint-self-billing.md)
           * [🇦🇺 PINT A-NZ](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/pint-a-nz.md)
+          * [🇫🇷 FACTURX 1.09 - ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx-1-09-zugferd-2-5.md)
+          * [🇩🇪 ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-5.md)
 
         * [🇨🇱 CHILE DTE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/chile-dte.md)
         * [ZUGFeRD Genel Bakış](administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)

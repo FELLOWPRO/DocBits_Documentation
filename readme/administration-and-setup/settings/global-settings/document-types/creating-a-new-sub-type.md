@@ -1,29 +1,23 @@
 # Creating a new Sub Type
 
-## Here are step-by-step instructions to create a new subtype:
+Create a document subtype when one type of document needs its own field settings, validation layout, or scripts. You need access to **Settings → Document Types**.
 
-* **Navigate to the Settings area:** Log in to DocBits as an administrator and navigate to the Document Type Management area.
+## 1. Open the document type
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 09.02.56.png" alt=""><figcaption></figcaption></figure>
+Open **Settings → Document Types**. In the card for the relevant document type, select **Document Sub Types**. The example below uses **Invoice**; choose the type that matches your documents. Other links in the card lead to settings for the whole document type.
 
-* **Select the option to add a subtype:** Click the “+ New” button to add a new subtype.
+<figure><img src="../../../../.gitbook/assets/new-subtype-document-type-en.png" alt="Invoice card in the English Document Types settings, with the Document Sub Types link"><figcaption><p>Open subtypes for the document type you want to configure.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 09.04.46.png" alt=""><figcaption></figcaption></figure>
+## 2. Start a new subtype
 
-* **Name the subtype:** Enter a descriptive name for the new subtype. This name should clearly describe the purpose of the subtype so that users can easily understand what type of documents it represents.
+On **Document Sub Types**, select **+ New**. Existing subtypes appear in the list; the three-dot **Actions** menu is for an existing row. If **+ New** does not respond to a mouse click, focus the button with the keyboard and press **Enter**.
 
-<figure><img src="https://lh7-us.googleusercontent.com/hFxoJh9mFR52IbFtRGTstXUGjUc2u9fBzlya5kPj18REi9ampOKfek6NPaNje_fGash3brlAZkEw8MHqDPpNEPCvnb122xYiHMqwVzV35FQdoev8XLXiu7DogUuGjsoun51sum8Z8PLZo2xw9bvImRc" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-list-en.png" alt="English Document Sub Types list showing the New button and a synthetic example subtype"><figcaption><p>The documentation test organization contains only a synthetic example subtype.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/EjBS5qKWAm0SoZhLkhT2KW1q5F89vZ6FCLZ2ZzvxfJPmVE9DyyAUXieHA_56guDbKsuEvNDY9DyA-uUMx8Q1UDMSohmhyIVnnLfZaPiXrVSGsXpnjEgtpF7GtOOiRX8VsXBpu2-3lpqc0zu2LdzIYZk" alt=""><figcaption></figcaption></figure>
+## 3. Name and save it
 
-* **Configure initial settings:** Set the initial settings for the new subtype, including the default fields, options, and templates to use for this subtype. This can include adding specific metadata fields, specifying approval workflows, or configuring user permissions.
-* **Make optional configurations:** Depending on your company's requirements or the nature of the documents, you can make additional configurations to customize the new subtype to your specific needs. This may include setting default values, validation rules, or custom actions.
+Enter a **Name** using letters and underscores, then enter a descriptive **Title**. Both fields are required. The names in this screenshot are examples only. Select **Save** to create the subtype, or **Cancel** to leave without creating it.
 
-<figure><img src="https://lh7-us.googleusercontent.com/d3-6iNTABnLH9KbWlM1NMu8Nsy2-KbqTd2elHgZYF1jwZOKqP17qttUCD4j676VJN3t7J0I85wHjr8TIfv3UGgLVxNvV4ns2I82EfCKHbyfIAUA8ML6IbLzoLH4Ucn57XzgUNZLO9LeCLzlk_m-M3EQ" alt=""><figcaption><p>Action</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-en.png" alt="Create New Sub Document Type dialog with Name, Title, Cancel, and Save in English"><figcaption><p>Only Name and Title are entered at creation time.</p></figcaption></figure>
 
-* **Save the new subtype:** Once you have entered all the required information, save the new subtype to create it in the document management system.
-
-After the new subtype is created, users can add and manage documents of that type according to the initial settings you specified. Make sure you inform users about the new subtype and provide training or guidance, if necessary, to help them use it effectively.
-
-
-
+After saving, the new subtype appears in the list. To set its fields, layout, or scripts, open its **Actions** menu and follow [Configure subtypes](configure-subtypes.md). These settings are made after creation, not in the **+ New** dialog.

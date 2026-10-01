@@ -2,13 +2,13 @@
 
 ## Overview
 
-This Page describes how to import Supplier and Purchase Order data into DocBits using a Comma Separated Values (.csv) file.
+This page explains how to import supplier or purchase order data from a CSV file through the DocBits API form. The screenshots show the **Sandbox** API with empty fields; no data was imported while preparing this guide.
 
 **Important:** Before importing any data, it is crucial to **review the .csv file thoroughly** to ensure data accuracy and proper configuration. Importing incorrect data can lead to inconsistencies. Refer to the [**CSV Specifications for Purchase Order**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-purchase-order) or [**CSV Specifications for Supplier**](importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md#csv-specifications-for-supplier) sections for details on required and optional fields. If required fields are missing, the import process will fail.
 
 **Validation:** Always verify that your .csv file contains all the necessary columns as outlined in the respective specifications section before attempting the import.
 
-## Generall Requirements:
+## General requirements
 
 **Date Format:**
 
@@ -133,55 +133,35 @@ For both Supplier and Purchase Order imports, all columns marked as "Required" i
 * `iban`
 * `currency`
 
-## Access Endpoint
+## Open the import form
 
-To import data, follow these steps:
+1. Open the API documentation for the environment you intend to use: [Sandbox](https://sandbox.api.docbits.com/docs) for a trial run or [Production](https://api.docbits.com/docs) for live data. The screenshots below show Sandbox. Check the **Servers** selector before submitting anything.
+2. Select **Authorize**. Use the API key for the target organization from DocBits [Settings → Integration](../administration-and-setup/settings/global-settings/integration/README.md). The key identifies the organization for this request. Keep the key private; the screenshots intentionally show no credential.
+3. Use your browser's find function to locate `POST /master_data_lookup/import_data` under **master data lookup**. Expand **Import Data**, then select **Try it out**. **Cancel** leaves edit mode; **Reset** clears the form.
 
-1. Visit: [https://api.docbits.com/](https://api.docbits.com/)
-2.  Click the **"Authorize"** button.
+<figure><img src="../.gitbook/assets/dbdc158-swagger-home-en.png" alt="Sandbox API documentation with Servers set to sandbox-api and the Authorize button"><figcaption><p>Choose the correct environment and authorize with that organization's key.</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/import_csv_1.png" alt=""><figcaption></figcaption></figure>
-3.  Enter the API-Key and click **"Authorize"**
+<figure><img src="../.gitbook/assets/dbdc158-import-operation-en.png" alt="Expanded POST master_data_lookup/import_data endpoint with Try it out button"><figcaption><p>Open Import Data and select Try it out.</p></figcaption></figure>
 
-    * The API-Key can be found in DocBits in Settings -> Global Settings -> Integration&#x20;
-    * **Note:** The API key provided in your request determines the target organization and the user context under which the data will be imported.
+## Fill in the CSV request
 
+The form uses **multipart/form-data**. For an ordinary CSV file import, use these fields:
 
+| Field | What to enter |
+| --- | --- |
+| `data_type` | Required. Enter `supplier` or `purchase_order` to match the file. |
+| `file` | Select the CSV file. Leave `csv_data` empty when uploading a file. |
+| `sub_org_id` | Optional. Leave it unset for the organization selected by the API key; enter a sub-organization ID only when you intend to import there. |
+| `delimiter` | Choose the separator actually used in the file. The Sandbox form currently shows `;` by default; choose `,` for a comma-separated file. |
+| `replace_all` | Leave at `false` for a normal import. Setting it to `true` requests replacement of existing data for this data type and organization; use it only when that is intended. |
+| `on_conflict`, `auto_generate_id` | The form shows `REPLACE` and `false` by default. Keep these defaults unless your integration owner has verified a different setting for your import. |
 
-    <figure><img src="../.gitbook/assets/import_csv_api.png" alt=""><figcaption></figcaption></figure>
+Check the first rows of the CSV in a text editor to confirm the delimiter and the [required columns](#csv-specifications-for-purchase-order) or [supplier columns](#csv-specifications-for-supplier). Do not put an API key or customer data into screenshots or Jira tickets.
 
+<figure><img src="../.gitbook/assets/dbdc158-import-options-en.png" alt="Sandbox Import Data form showing data_type, file, delimiter, replace_all, on_conflict and auto_generate_id"><figcaption><p>Choose the file and check the separator and replacement setting.</p></figcaption></figure>
 
+## Submit and check the result
 
-    <figure><img src="../.gitbook/assets/import_csv_2.png" alt="" width="563"><figcaption></figcaption></figure>
+Review the environment, organization, `data_type`, file, delimiter and `replace_all` once more. **Execute** sends the import request; the response appears below the form. A successful HTTP response alone does not prove every CSV row is correct, so check the imported supplier or purchase order records in DocBits afterward. For purchase orders, see the [Purchase Order Dashboard](../end-user-and-partner-section/end-user-section/purchase-order-dashboard.md).
 
-
-
-1. Press **CTRL + F** (or **CMD + F** on Mac) to open the search function, and search for `/master_data_lookup/import_data`.
-2.  Click on the request to view its details, then click on "**Try it out"** to proceed.
-
-    <figure><img src="../.gitbook/assets/import_csv_3.png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../.gitbook/assets/import_csv_6.png" alt=""><figcaption></figcaption></figure>
-3.  You can now enter the required parameters in the Request Body.\
-
-
-    **Request Parameters:**
-
-    When making the import request, the following parameters need to be specified:
-
-    * **sub\_org\_id:** Remove any text from the text field to ensure the "Send empty value" option is enabled.
-    * **data\_type:** This parameter specifies the type of data being imported. It can be either `supplier` or `purchase_order` depending on the content of your .csv file.
-    * **replace\_all:** This boolean parameter determines whether all existing data in the respective database table (`supplier` or `purchase_order`) for the specified organization should be deleted before inserting the new data from the .csv file. Set this to `true` to replace all existing data or `false` to append or update with the new data.
-    *   **delimiter:** This parameter specifies the character used to separate the individual values within each row of your data file. **It is essential to identify the correct delimiter used in your file.** Common delimiters are the comma (`,`) and the semicolon (`;`).
-
-        **How to check the delimiter:**
-
-        1. Open your data file (e.g., the `.csv` file) with a plain text editor (like Notepad on Windows, TextEdit on Mac, or similar).
-        2. Examine the first few rows of data. Look for the character that consistently appears between the different pieces of information in each row. This character is your delimiter.
-        3. Set the `delimiter` parameter in your import request to this identified character (either `,` or `;`). Using the wrong delimiter will prevent the data from being parsed correctly and will result in a failed import.
-    * **on\_conflict & auto\_generate\_id:** The functionality for handling data conflicts (`on_conflict`) and automatically generating IDs (`auto_generate_id`) is currently **not implemented** for these data types.
-
-    <figure><img src="../.gitbook/assets/import_csv_4.png" alt=""><figcaption></figcaption></figure>
-4.  If you have verified that all the information is correct, you can initiate the import process by clicking the **"Execute"** button.
-
-    <figure><img src="../.gitbook/assets/import_csv_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/dbdc158-execute-ready-en.png" alt="Sandbox Import Data form showing the sandbox-api server, Execute button and response section"><figcaption><p>Execute submits the request; inspect the response and the resulting records.</p></figcaption></figure>

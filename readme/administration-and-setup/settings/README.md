@@ -1,5 +1,7 @@
 # Settings
 
+Need help with a setting? See [Find documentation with the Settings Assistant](settings-assistant/README.md).
+
 <figure><img src="../../.gitbook/assets/settings_overview.png" alt="Settings Overview"><figcaption><p>Settings Overview Page</p></figcaption></figure>
 
 The Settings area is your central hub for configuring DocBits. It is organized into five main sections:

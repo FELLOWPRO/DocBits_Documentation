@@ -122,6 +122,8 @@
 
 * [Settings](administration-and-setup/settings/README.md)
   * [Getting Around the New Layout](administration-and-setup/settings/ui-redesign-guide.md)
+  * [Settings Assistant](administration-and-setup/settings/settings-assistant/README.md)
+    * [How Documentation Search Works](administration-and-setup/settings/settings-assistant/documentation-search.md)
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)
     * [Company Information](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Company Preferences](administration-and-setup/settings/global-settings/company-information/company-preferences.md)

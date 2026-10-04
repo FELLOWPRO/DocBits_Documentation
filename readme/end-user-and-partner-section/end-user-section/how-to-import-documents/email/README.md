@@ -29,3 +29,20 @@ Inoltra — o invia direttamente — le e-mail all'indirizzo di ricezione univoc
 * **Rispondi a questa e-mail se l'importazione non è possibile** — invia una risposta automatica al mittente quando l'importazione non riesce.
 * **Notifica il mittente in caso di importazione non riuscita** — avvisa il mittente se la sua e-mail non è stata importata.
 * **Log** — apre il registro di elaborazione delle e-mail in arrivo. Fai clic su **Salva** per applicare le modifiche.
+
+## Allegati di documenti supportati
+
+Entrambi i metodi di importazione tramite e-mail accettano questi allegati di documenti:
+
+| Formato | Estensioni di file | Uso tipico |
+| --- | --- | --- |
+| PDF | `.pdf` | Fatture e altri documenti PDF |
+| TIFF | `.tif`, `.tiff` | Documenti scansionati |
+| XML | `.xml` | Documenti elettronici strutturati |
+| EDI / dati di ordine | `.edi`, `.purchaseorder` | Scambio elettronico di dati e ordini di acquisto |
+
+Se un servizio di inoltro classifica un file PDF, TIFF o XML come allegato generico, DocBits può identificarlo dal contenuto del file o da un'estensione di file nota. Anche i messaggi `.eml` inoltrati possono contenere documenti supportati; DocBits estrae quegli allegati interni prima dell'importazione.
+
+Le immagini come PNG, JPG, GIF e BMP non vengono importate come documenti. Le immagini di firma e i loghi incorporati nelle e-mail inoltrate vengono ignorati. I file Office come Word, Excel e PowerPoint non sono supportati da questi metodi di importazione tramite e-mail.
+
+Per le e-mail inoltrate, controlla **Log** in **E-mail in arrivo** se un documento manca. Quando l'opzione **Notifica il mittente in caso di importazione non riuscita** è attivata, il mittente riceve una spiegazione e un link a questa pagina. Per una casella collegata, usa la guida di configurazione [IMAP](imap.md) o [OAuth (Office 365)](oauth-office365.md).

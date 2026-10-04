@@ -29,3 +29,20 @@ Transférez — ou envoyez directement — les e-mails à l'adresse de réceptio
 * **Répondre à cet e-mail si l'import est impossible** — envoie une réponse automatique à l'expéditeur lorsque l'import échoue.
 * **Notifier l'expéditeur en cas d'échec de l'import** — informe l'expéditeur si son e-mail n'a pas pu être importé.
 * **Journaux** — ouvre le journal de traitement des e-mails entrants. Cliquez sur **Enregistrer** pour appliquer vos modifications.
+
+## Documents pris en charge parmi les pièces jointes
+
+Les deux méthodes d'import par e-mail acceptent les pièces jointes suivantes :
+
+| Format | Extensions de fichiers | Utilisation typique |
+| --- | --- | --- |
+| PDF | `.pdf` | Factures et autres documents PDF |
+| TIFF | `.tif`, `.tiff` | Documents numérisés |
+| XML | `.xml` | Documents électroniques structurés |
+| EDI / données de commande | `.edi`, `.purchaseorder` | Échange de données informatisé et commandes d'achat |
+
+Si un service de transfert qualifie un fichier PDF, TIFF ou XML de pièce jointe générique, DocBits peut l'identifier à partir du contenu du fichier ou d'une extension de fichier connue. Les messages `.eml` transférés peuvent également contenir des documents pris en charge ; DocBits extrait ces pièces jointes internes avant l'import.
+
+Les images telles que PNG, JPG, GIF et BMP ne sont pas importées en tant que documents. Les images de signature intégrées et les logos dans les e-mails transférés sont ignorés. Les fichiers Office tels que Word, Excel et PowerPoint ne sont pas pris en charge par ces méthodes d'import par e-mail.
+
+Pour les e-mails transférés, consultez **Journaux** sous **E-mails entrants** si un document manque. Lorsque l'option **Notifier l'expéditeur en cas d'échec de l'import** est activée, l'expéditeur reçoit une explication et un lien vers cette page. Pour une boîte aux lettres connectée, utilisez le guide de configuration [IMAP](imap.md) ou [OAuth (Office 365)](oauth-office365.md).

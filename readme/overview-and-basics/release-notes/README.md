@@ -537,7 +537,7 @@ DocBits artık ZUGFeRD 2.1 ve üzeri sürümler için tam destek içeriyor ve ZU
 * **Esneklik**: ZUGFeRD standardı içinde temel, konfor veya genişletilmiş profillerle çalışıyor olsanız da, DocBits her düzeydeki fatura karmaşıklığını yönetmek için araçlar sağlar.
 * **Geleceğe Hazırlık**: Daha yeni sürümler için destekle DocBits, işletmelerin AB üye devletleri ve ötesindeki gelişen e-faturalama düzenlemeleriyle uyumlu kalmasını sağlar.
 
-ZUGFeRD 2.1 ve daha yeni standartları dahil ederek, DocBits sınır ötesi işlemleri basitleştirir ve modern iş ihtiyaçlarıyla uyumlu hale gelir, bu da onu dijital dönüşüme ve mevzuata uyumluluğa öncelik veren kuruluşlar için önemli bir araç yapar. [Daha fazla bilgi](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd-1.0-2.1-and-2.3)
+ZUGFeRD 2.1 ve daha yeni standartları dahil ederek, DocBits sınır ötesi işlemleri basitleştirir ve modern iş ihtiyaçlarıyla uyumlu hale gelir, bu da onu dijital dönüşüme ve mevzuata uyumluluğa öncelik veren kuruluşlar için önemli bir araç yapar. [ZUGFeRD sürümlerini ve DocBits alan eşleşmelerini keşfedin](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Geliştirilmiş Belge İşleme için Harici API Entegrasyonu
 

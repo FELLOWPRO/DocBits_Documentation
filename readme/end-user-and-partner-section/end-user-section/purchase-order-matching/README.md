@@ -1,307 +1,61 @@
-# Bildschirm „Bestellabgleich“
+# Bildschirm „Purchase Order Matching“
 
-## Überblick
-
-Im Bildschirm **Bestellabgleich (Purchase Order Matching)** können Sie die aus Ihrem Dokument extrahierten Positionen mit den im **Infor-System** hinterlegten Positionen vergleichen, wobei die Bestellnummer als Referenz dient.
-
-Sie können:
-
-* etwaige Unterschiede zwischen extrahierten und hinterlegten Daten **sofort erkennen**
-* **Toleranzen festlegen**, um akzeptable Abweichungen zuzulassen
-* bei Bedarf **bestimmte Status aus Infor ignorieren**
-* das Dokument nach einem erfolgreichen Abgleich **freigeben und exportieren**
-* das Dokument **ablehnen**, wenn die Daten die erforderlichen Validierungskriterien nicht erfüllen
-
-Diese Seite führt Sie durch den Bestellabgleichsprozess und erläutert alle damit verbundenen Funktionen, die in diesem Bereich verfügbar sind.
-
-## Werkzeuge im Bildschirm „Bestellabgleich“
-
-Am oberen Rand des Bildschirms „Bestellabgleich“ finden Sie mehrere Werkzeuge – wie **Save**, **Auto-Match**, **Export** und weitere –, die Sie beim Abgleichsprozess unterstützen.\nEine ausführliche Beschreibung jedes Werkzeugs und seiner Funktionalität finden Sie [hier](purchase-order-matching-tools.md).
-
-<figure><img src="../../../.gitbook/assets/po_match_tools_0.png" alt=""><figcaption></figcaption></figure>
-
-## Bestellnummern filtern und hinzufügen
-
-Sie können nach bestimmten Bestellnummern suchen, indem Sie die Nummer in das Suchfeld eingeben.\nFür eine genauere Filterung klicken Sie auf das Symbol auf der rechten Seite der Suchleiste, um bestimmte Kriterien für Ihre Suche auszuwählen.
-
-<figure><img src="../../../.gitbook/assets/po_match_3.png" alt=""><figcaption></figcaption></figure>
-
-Die folgenden Filteroptionen stehen Ihnen zur Verfügung, um Ihre Suche nach Bestellungen zu verfeinern:
-
-* **Keyword** – Filtern nach Bestellnummern.
-* **Supplier** – Filtern nach Lieferantenname oder -ID.
-* **After Date** – Bestellungen anzeigen, die nach einem bestimmten Datum erstellt wurden.
-* **Before Date** – Bestellungen anzeigen, die vor einem bestimmten Datum erstellt wurden.
-* **Minimum Order Amount** – Filtern nach Mindestbestellwert.
-* **Maximum Order Amount** – Filtern nach maximalem Bestellwert.
-* **Sort By** – Auswählen des Attributs, nach dem die Ergebnisse sortiert werden (z. B. Datum, Betrag).
-* **Sort Direction** – Auswählen der Sortierreihenfolge: aufsteigend oder absteigend.
-* **Number of Records to Display** – Festlegen, wie viele Ergebnisse pro Seite angezeigt werden sollen.
-* **More** – Zu den zusätzlichen Filteroptionen gehören:
-  * **Delivery Number**
-  * **Packing Slip Number**
-  * **Item ID**
-
-Nachdem Sie Ihre Filter konfiguriert haben, klicken Sie auf **Apply**, um sie anzuwenden, oder auf **Clear**, um alle Filtereinstellungen zurückzusetzen.
-
-Die passenden Bestellungen werden auf Grundlage der angewendeten Filter angezeigt.\nSie können entweder:
-
-* die Filter anpassen und erneut suchen oder
-* auf einen Bestelleintrag doppelklicken, um ihn dem Bildschirm „Bestellabgleich“ hinzuzufügen.
-
-<figure><img src="../../../.gitbook/assets/po_match_5 (2).png" alt=""><figcaption></figcaption></figure>
-
-## Bestellnummern auswählen und Spalten neu anordnen
-
-Sie können zwischen einzelnen Bestellungen wechseln, um deren jeweilige Positionen anzuzeigen, indem Sie oben in der Tabelle auf die Bestellnummer klicken.
-
-Außerdem können Sie die Spalten innerhalb jeder Bestellansicht neu anordnen, indem Sie sie einfach per Drag & Drop in die von Ihnen bevorzugte Reihenfolge ziehen.
-
-<figure><img src="../../../.gitbook/assets/po_match_7.png" alt=""><figcaption></figcaption></figure>
-
-Um bestimmte Spalten dauerhaft auszublenden, verwenden Sie die Funktion [**PO-Tabellenspalten für Organisationen festlegen**](./#set-po-table-columns-for-organizations).
-
-## PO-Tabellenspalten für Organisationen festlegen
-
-Sie haben die Möglichkeit, bestimmte Spalten in der Bestelltabelle ein- oder auszublenden, indem Sie auf das Symbol für die Spalteneinstellungen klicken (siehe unten).\nDiese Einstellung ist sowohl im Bildschirm **Bestellabgleich** als auch im Menü **Erweiterte Bestellsuche (Advanced Purchase Order Search)** verfügbar.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_10.png" alt=""><figcaption></figcaption></figure>
-
-Weitere Einzelheiten finden Sie [hier](purchase-order-matching-tools.md#set-po-table-columns-for-organization).
-
-## Bestellnummer mit Infor neu synchronisieren
-
-Um die Daten in **DocBits** mit den Daten aus **Infor** neu zu synchronisieren, klicken Sie auf die **Aktualisierungsschaltfläche** neben der Bestellnummer über der Tabelle.
-
-<figure><img src="../../../.gitbook/assets/po_match_8 (1).png" alt=""><figcaption></figcaption></figure>
-
-Wenn Ihr Abgleichsprozess auf dem Attribut **Received Delivery Open Quantity** basiert, haben Sie außerdem die Möglichkeit, eine **manuelle Synchronisierung** durchzuführen, wie [hier](purchase-order-matching-tools.md#sync-data) ausführlich beschrieben.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_7.png" alt=""><figcaption></figcaption></figure>
-
-## Wie wird abgeglichen?
-
-Um eine Bestellposition mit einer aus dem Dokument extrahierten Position abzugleichen, haben Sie drei Möglichkeiten:
-
-1. **Drag & Drop**\n Ziehen Sie die gewünschte Bestellposition und legen Sie sie auf der entsprechenden Position in der extrahierten Tabelle ab.
-2. **Rechtsklick und Verbinden**
-   * Klicken Sie mit der rechten Maustaste auf die Bestellposition, die Sie abgleichen möchten, und wählen Sie **Select for match**.
-   * Klicken Sie anschließend mit der rechten Maustaste auf die entsprechende Position in der extrahierten Tabelle und wählen Sie **Connect**.
-3.  **Auto Match**
-
-    Klicken Sie auf die Schaltfläche **Auto Match**, damit das System automatisch versucht, alle Positionen auf Grundlage der extrahierten Daten und der Bestelldaten abzugleichen.
-
-    <figure><img src="../../../.gitbook/assets/po_tools_new_5.png" alt=""><figcaption></figcaption></figure>
-
-Sie können auch **mehrere Bestellpositionen** auswählen und sie einer **einzelnen Position** in der extrahierten Tabelle zuordnen. Weitere Einzelheiten finden Sie [hier](./#multi-matches).
-
-## Warum gibt es keine Übereinstimmung?
-
-Wenn ein Dokument nicht zugeordnet wird, zeigt der Bildschirm **einen Satz über dem Bestellbereich** an, der den Grund nennt und was zu tun ist:
-
-| Nachricht                                                      | Bedeutung und nächster Schritt                                                                                                                                               |
-| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Keine Bestellnummer                                            | Das Dokument enthält keine Bestellnummer. Geben Sie diese im Kopfbereich ein und speichern Sie — die Zuordnung wird beim Speichern erneut ausgeführt.                         |
-| Keine Bestellung im ERP für … gefunden                         | Die Nummer auf dem Dokument existiert nicht im ERP. Überprüfen Sie die Nummer und speichern Sie.                                                                              |
-| … wurde noch nicht abgefragt                                   | Die Nummer ist nach der Verarbeitung eingetroffen (z. B. aus Stammdaten). Speichern Sie das Dokument oder klicken Sie auf **Auto Match**.                                    |
-| … ist geladen, aber nicht verbunden                            | Die Bestellpositionen sind auf dem Bildschirm, aber noch nichts ist zugeordnet. Klicken Sie auf **Auto Match** oder verbinden Sie die Positionen manuell.                   |
-| … wurde gefunden, aber keine der Bestellpositionen passt      | Jede Position hat die Zuordnungsregeln nicht bestanden. Öffnen Sie die **Matching-Historie**, um zu sehen, in welcher Spalte, und ordnen Sie manuell zu oder korrigieren Sie das Dokument. |
-| Das Dokument enthält keine Positionen                          | Nichts zum Zuordnen; überprüfen Sie die Tabellenerkennung.                                                                                                                   |
-| Die Positions-Tabelle hat keine Bestellspalten zugeordnet     | Menge, Einzelpreis und Artikelnummer sind für diese Tabelle nicht zugeordnet. Ordnen Sie sie in den Tabelleneinstellungen zu.                                               |
-| Die Bestellung hat keine offenen Positionen mehr              | Jede Position der Bestellung ist bereits verbraucht oder deaktiviert (siehe [Status verbrauchter Bestellpositionen](./#consumed-po-line-status) und [Deaktivierungsstatus](./#disable-statuses)). |
-
-Unter dem Satz listet der Bildschirm Kandidaten auf, die **beiseitegelegt** wurden, zum Beispiel _"Ignoriert: 2900233285 aus der Positionsspalte ist die Rechnungsnummer, keine Bestellnummer"_ oder _"… ist durch Konfiguration ausgeschlossen"_. Die Meldung verschwindet, sobald das Dokument zugeordnet ist.
+Mit **PO-Abgleich** vergleichen Sie die für ein Dokument hinterlegten Bestellpositionen mit den extrahierten Rechnungspositionen. Die Bestelldaten können aus einer ERP-Integration oder einem anderen konfigurierten Import stammen. Der Bildschirm zeigt das Dokument neben den beiden Tabellen an, damit Sie Nummern, Mengen, Preise und Abweichungen prüfen können, bevor Sie speichern oder exportieren.
 
 {% hint style="info" %}
-**Die Zuordnung wird beim Speichern erneut ausgeführt.** Wenn sich die Bestellnummer ändert oder sie zuvor nie abgefragt wurde, erfolgt die Zuordnung beim Speichern. Eine bestehende Zuordnung wird durch das Speichern nie überschrieben — und manuell entfernte Positionen bleiben entfernt.
+Das Beispiel unten nutzt eine synthetische FellowPro-Rechnung und -Bestellung in **DocBits Documentation Test A**. Die Rechnungstabelle zeigt derzeit **Keine Positionen gefunden**. Das demonstriert die Navigation und Suche, kann aber keinen erfolgreichen Positionsabgleich zeigen. Exportieren Sie dieses Beispiel nicht als abgeglichene Rechnung.
 {% endhint %}
 
-**Wenn eine Zuordnung nicht gespeichert werden kann**, meldet der Bildschirm nicht „gespeichert“: Er stellt die Zuordnung auf dem Bildschirm wieder her, markiert das Dokument als ungespeichert und zeigt an, warum der Server sie verworfen hat — zum Beispiel _"Die PO-Zuordnung konnte nicht gespeichert werden: die Transformationsregel „…“ hat die Tabelle neu aufgebaut"_. Administratoren sehen einen Link zur betreffenden Regel. Bitten Sie einen Administrator, die [Transformationsregel](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) oder die [Zuordnungsregeln](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) anzupassen.
+<figure><img src="../../../.gitbook/assets/po-screen-de.png" alt="Deutscher PO-Abgleich-Bildschirm in der synthetischen Sandbox-Organisation: Suche, Symbolleiste, Bestellpositionen, leere Rechnungspositionstabelle und Rechnungs-Vorschau"><figcaption><p>Die Bestellung ist geladen; die Beispielrechnung hat keine extrahierten Positionen, die verbunden werden könnten.</p></figcaption></figure>
 
-## Matching-Historie
+## Bestellung finden und prüfen
 
-Die Schaltfläche **Matching-Historie** (Uhr-Symbol in der Bestell-Symbolleiste; erfordert die Analytics-Berechtigung) öffnet eine schreibgeschützte Wiedergabe, wie die letzte Zuordnung entschieden wurde:
+1. Öffnen Sie eine Rechnung im **PO-Abgleich**. Wenn Ihre Organisation mehrere Bestellungen hat, geben Sie eine Nummer in **Bestellnummer suchen** ein.
+2. Wählen Sie das Filtersymbol neben dem Suchfeld für **Schlüsselwort**, **Lieferant**, **Status**, **Status der Bestellung**, Daten, Betragsbereich, Sortierung und die Anzahl der angezeigten Datensätze. Wählen Sie **Mehr** für zusätzliche Kriterien. Wählen Sie **Anwenden**, um zu suchen, oder **Löschen**, um die Filter zurückzusetzen.
+3. Wählen Sie eine Bestellnummer oberhalb der Tabelle aus, um deren Positionen zu prüfen. Das Aktualisierungssymbol neben der Nummer lädt die Daten dieser Bestellung neu. Ein Neuladen kann von der konfigurierten Integration abhängen.
+4. Vergleichen Sie jede Bestellposition mit der Rechnung und ihrer extrahierten Tabelle. Das **+** auf einer Position klappt Abgleich-Details auf; es verbindet die Position nicht selbst mit der Rechnung. Im Beispiel erscheint **No multi-match Information**, weil keine solche Übereinstimmung existiert.
 
-* die **Transformationsregeln**, die vor der Zuordnung ausgeführt wurden, und ob eine davon eine Zuordnung verworfen hat,
-* die Zuordnungs-**Phasen und Regeln**, die versucht wurden — grün, wo eine Zuordnung gefunden wurde, rot, wo eine Regel nichts fand, grau, wo eine Regel durch ihre Aktivierungsbedingung übersprungen wurde (der Tooltip erklärt warum),
-* bei einer fehlgeschlagenen Regel die **verglichene Spalte** mit dem Wert im Dokument und dem Wert in der Bestellung.
+<figure><img src="../../../.gitbook/assets/po-filters-de.png" alt="Deutsche Bestell-Suchfilter mit Lieferant, Status, Datums- und Betragsgrenzen, Sortierung sowie Anwenden- und Löschen-Schaltflächen"><figcaption><p>Nutzen Sie das Filterpanel, um die angezeigten Bestellungen einzugrenzen.</p></figcaption></figure>
 
-Das Öffnen und Abspielen der Historie löst weder eine Zuordnung noch einen Export aus. Administratoren finden dieselbe Wiedergabe mit einer Dokument-ID-Eingabe neben dem Regelwerksdiagramm in den Bestelleinstellungen des Dokumententyps.
+<figure><img src="../../../.gitbook/assets/po-line-de.png" alt="Aufgeklappte Bestellposition mit No multi-match Information und leerer Rechnungspositionstabelle"><figcaption><p>Die aufgeklappte Position zeigt Abgleich-Details, wenn solche vorhanden sind.</p></figcaption></figure>
 
-## Welche Spalten werden abgeglichen?
+## Positionen abgleichen und das Ergebnis prüfen
 
-Beim Bestellabgleich werden nur bestimmte Spalten abgeglichen. Die folgende Liste zeigt, welche Spalten abgeglichen werden, sofern verfügbar. Wenn keine [Toleranz](./#accept-tolerances) festgelegt ist, werden die Spalten nur dann als Übereinstimmung gewertet, wenn sie exakt (zu 100 %) übereinstimmen.
+Wenn beide Tabellen Positionen enthalten, verbinden Sie eine Rechnungsposition per Drag & Drop mit der passenden Bestellposition oder nutzen Sie die Abgleich-Aktionen im Kontextmenü der Position. **Auto Match** versucht, geeignete Positionen nach den Regeln Ihrer Organisation zu verbinden. Prüfen Sie das Ergebnis vor dem Speichern: Eine gleiche Artikelnummer allein belegt nicht, dass Menge, Preis oder Lieferbedingungen übereinstimmen. Siehe [Bestellnummer-Abgleich-Tools](purchase-order-matching-tools.md) für die Symbolleiste, Spaltensteuerung und manuelle Aktionen sowie [Tastenkombinationen](keyboard-shortcuts.md) für Tastaturaktionen.
 
-* [Menge](./#quantity) (Quantity | Received Quantity | Received Delivery Open Quantity)
-* Stückpreis
-* Bestellnummer
-* Artikelnummer/Supplier Item ID
-* Zugesagtes Lieferdatum
+Wenn ein Dokument nicht abgeglichen wird, lesen Sie den Grund oberhalb des Bestellbereichs. Er kann melden, dass die Bestellnummer fehlt, die Bestellung nicht gefunden wurde, ihre Positionen nicht verfügbar sind oder die Rechnung keine extrahierten Positionen hat. Korrigieren Sie das Dokument oder die Konfiguration, die dieser Grund angibt. Administratoren können die [Abgleichregeln](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) und die [Tabellenerkennung](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) prüfen, wenn keine Rechnungspositionen erscheinen.
 
-### Menge
+Häufige Meldungen und nächste Schritte:
 
-Sie haben drei Möglichkeiten, die Menge abzugleichen.&#x20;
+| Was Sie sehen | Was Sie prüfen sollten |
+| --- | --- |
+| Keine Bestellnummer | Geben Sie die Bestellnummer im Dokument ein oder korrigieren Sie sie, und speichern Sie. |
+| Keine Bestellung gefunden | Prüfen Sie die Nummer und ob die Bestellung in diese Organisation importiert wurde. |
+| Die Bestellung wurde gefunden, aber nicht verbunden | Versuchen Sie **Auto Match**, oder verbinden Sie die Positionen manuell, nachdem Sie beide Tabellen geprüft haben. |
+| Keine Bestellposition passt | Vergleichen Sie die Rechnungswerte mit der Bestellung und prüfen Sie die Abgleich-Historie. |
+| Keine Rechnungspositionen | Prüfen Sie die [Tabellenerkennung](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md), bevor Sie abzugleichen versuchen. |
+| Keine offenen Bestellpositionen | Prüfen Sie die [Status verbrauchter Bestellpositionen](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) und die ausgeschlossenen Status. |
 
-* Quantity&#x20;
-* Received Quantity
-* Received Delivery Open Quantity&#x20;
+{% hint style="warning" %}
+Speichern kann den Abgleich nach einer geänderten oder neu erkannten Bestellnummer erneut auslösen. Prüfen Sie das angezeigte Ergebnis nach dem Speichern. Wenn ein Abgleich nicht gespeichert werden kann, lesen Sie den angezeigten Fehler auf dem Bildschirm und bitten Sie einen Administrator, die [Transformation](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) und die [Abgleichregeln](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) zu prüfen.
+{% endhint %}
 
-Diese Option können Sie unter **Settings → Global Settings → Document Types → More Settings → Purchase Order Section → Purchase Order** festlegen.
+Nutzen Sie die **Abgleich-Historie** (Uhr-Symbol, soweit Ihre Berechtigungen es erlauben), um nachzuvollziehen, wie ein früherer Abgleich entschieden wurde. Sie ist eine schreibgeschützte Ansicht. Sie können prüfen, welche Regeln liefen und warum ein Kandidat nicht passte; das Öffnen der Historie exportiert das Dokument nicht.
 
-Die ausgewählte Mengenoption bestimmt, welche **Bestell-Mengenspalte** während des Abgleichsprozesses für den Vergleich verwendet wird.
+### Mehr als eine Position pro Abgleich
 
-## **Status verbrauchter PO-Positionen (Consumed PO Line Status)**
+Eine einzelne Rechnungsposition kann mehreren Bestellpositionen entsprechen – oder umgekehrt –, soweit Ihre Abgleichregeln das erlauben. Öffnen Sie die **+**-Details einer Position, um einen vorhandenen Multi-Match zu prüfen. Prüfen Sie die kombinierte Menge und den kombinierten Preis, nicht nur eine einzelne Position. Ein leeres Detailpanel wie im obigen synthetischen Beispiel bedeutet, dass kein Multi-Match zu prüfen ist. Siehe [Bestellnummer-Abgleich-Tools](purchase-order-matching-tools.md) zum Ändern von Verbindungen.
 
-Diese Funktion fügt PO-Positionen eine Farbcodierung hinzu, sodass deren Abgleichsstatus auf einen Blick leichter erkennbar ist.\nWeitere Informationen finden Sie auf der Einstellungsseite [**Consumed PO Line Status**](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md).
+### Mengen, Abweichungen und Rabatte
 
-<figure><img src="../../../.gitbook/assets/consumed_po_line_status.png" alt="Consumed PO Line Status Indicator" width="563"><figcaption></figcaption></figure>
+Abhängig von der Konfiguration kann der Abgleich bestellte, empfangene oder verbleibende Liefermengen sowie Einzelpreis, Artikelnummer und andere zugeordnete Felder vergleichen. Eine Abweichung kann akzeptiert werden, wenn der Dokumenttyp eine konfigurierte Toleranz hat. Prüfen Sie die angezeigte Abweichung, bevor Sie sie akzeptieren. Die [Toleranzeinstellungen](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) und die [Rabatt-Hinweise](discounts.md) erläutern diese Fälle.
 
-## **Abschnitt PO-Versandauftrag (PO Shipment Order)**
+Der Summenbereich hilft, soweit verfügbar, den Nettobetrag der Rechnung mit abgeglichenen Positionen und Gebühren abzustimmen. Wenn ein **Offener Betrag** bleibt, prüfen Sie die einzelnen Positionswerte und etwaige [Kostenelemente](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md) vor dem Export.
 
-Dieser Abschnitt bietet eine visuelle Übersicht darüber, wie viel für jede PO-Position geliefert und in Rechnung gestellt wurde.\nEr hilft, den Rechnungsstellungsfortschritt anhand von Mengenwerten und einem Fortschrittsbalken zu verfolgen.
+## Summen prüfen und speichern
 
-<div align="left"><figure><img src="../../../.gitbook/assets/PO-Shipment-Order-1.jpg" alt=""><figcaption></figcaption></figure></div>
+Prüfen Sie die Rechnungs-Vorschau rechts und vergleichen Sie die Positionssummen und etwaige Gebühren. Eine vollständige Erklärung der Aktionen in der oberen Symbolleiste finden Sie in den [Bestellnummer-Abgleich-Tools](purchase-order-matching-tools.md). Wählen Sie **Speichern** nach dem Ändern von Abgleichen. Wählen Sie **Exportieren** erst, nachdem Sie das Dokument und das Abgleichergebnis geprüft haben; der Pfeil neben „Exportieren“ zeigt zusätzliche konfigurierte Exportoptionen. Ihre Organisation kann andere Exportaktionen haben.
 
-Weitere Einzelheiten finden Sie auf der Seite [**PO Shipment Order Setting**](../../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md).
+Die Symbolleiste der Vorschau erlaubt es, durch Dokumentseiten zu blättern, zu zoomen, das Original herunterzuladen und eine größere Ansicht zu öffnen. Nutzen Sie sie, um zu prüfen, dass Bestellnummer und Positionswerte wirklich auf der Rechnung erscheinen. Wenn Sie mit ungespeicherten Abgleich-Änderungen die Seite verlassen, können diese verloren gehen.
 
-## Toleranzen akzeptieren
-
-Sie können während des Abgleichsprozesses akzeptable Toleranzstufen festlegen.\nStandardmäßig werden nur exakte Übereinstimmungen (zu 100 %) als gültig betrachtet.
-
-Wenn in den Systemeinstellungen Toleranzen konfiguriert sind, können Sie diese für die zulässigen Attribute direkt in der **Extracted Table** unter der Spalte **Actions** anpassen.
-
-<figure><img src="../../../.gitbook/assets/po_match_11.png" alt=""><figcaption></figcaption></figure>
-
-Weitere Informationen zum Konfigurieren und Verwenden von Toleranzen finden Sie in der [ausführlichen Dokumentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
-
-## Rabatte
-
-Wenn in Ihrer extrahierten Tabelle Rabatte vorhanden sind, werden diese vor dem Abgleich automatisch auf den **Stückpreis** angewendet – außer bei Verwendung von [Multi-Matches](./#multi-matches). Weitere Informationen zu Rabatten finden Sie [hier](./#discounts).
-
-## Status deaktivieren
-
-Sie können bestimmte Positionen mit bestimmten Status vom Abgleich ausschließen. Weitere Informationen finden Sie in der [ausführlichen Dokumentation](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md).
-
-## Abgeglichene Positionen überprüfen
-
-Es stehen mehrere Indikatoren zur Verfügung, die Ihnen helfen zu überprüfen, ob eine Position erfolgreich abgeglichen wurde oder nicht.
-
-### Bestelltabelle
-
-<figure><img src="../../../.gitbook/assets/po_match_14.png" alt=""><figcaption></figcaption></figure>
-
-* Dieses Symbol zeigt an, dass die Bestellposition erfolgreich abgeglichen wurde.
-
-<figure><img src="../../../.gitbook/assets/guide_po_2.png" alt=""><figcaption></figcaption></figure>
-
-* Dieses Symbol zeigt an, dass die Bestellposition eine Abweichung enthält.
-
-<figure><img src="../../../.gitbook/assets/guide_po_5.png" alt=""><figcaption></figcaption></figure>
-
-### Aus dem Dokument extrahierte Tabelle
-
-*   Dieses Symbol zeigt an, dass die Position erfolgreich abgeglichen wurde. Sie können mit dem Mauszeiger über das Symbol fahren, um die entsprechende Bestellposition hervorzuheben.
-
-    <figure><img src="../../../.gitbook/assets/po_match_15.png" alt=""><figcaption></figcaption></figure>
-*   Dieses Symbol zeigt an, dass die Position eine Abweichung enthält. Sie können mit dem Mauszeiger über das Symbol fahren, um die entsprechende Bestellposition hervorzuheben und die Spalten anzuzeigen, in denen Abweichungen auftreten.
-
-    <figure><img src="../../../.gitbook/assets/po_match_new_4.png" alt=""><figcaption></figcaption></figure>
-
-## Multi-Matches
-
-Multi-Matching ermöglicht es, mehrere Positionen einer Tabelle mit einer einzelnen Position in der entsprechenden (gegenüberliegenden) Tabelle abzugleichen.
-
-<figure><img src="../../../.gitbook/assets/po_match_20.png" alt=""><figcaption></figcaption></figure>
-
-Diese Funktion ist besonders nützlich für Szenarien, in denen Details auf mehrere Positionen verteilt sind.
-
-### Abgleichskriterien
-
-Positionen gelten als übereinstimmend, wenn die folgenden aggregierten Bedingungen erfüllt sind:
-
-* **Stückpreis**:\n Der durchschnittliche Stückpreis der mehreren Positionen wird berechnet und mit dem Stückpreis in der gegenüberliegenden Tabelle verglichen.
-* **Menge**:\n Die Summe der Mengen über die abgeglichenen Positionen hinweg muss mit der Menge in der gegenüberliegenden Tabelle übereinstimmen.
-* **Zusätzliche Anforderungen**:\n Alle weiteren [Abgleichskriterien](./#which-columns-are-being-matched) müssen ebenfalls erfüllt sein.
-
-Wenn eine einzelne Position mehreren Positionen zugeordnet ist, können Sie detaillierte Informationen anzeigen, indem Sie auf das Plus-Symbol (+) neben der jeweiligen Position klicken.
-
-Dadurch wird die Ansicht erweitert, um alle abgeglichenen Einträge anzuzeigen, was Ihnen hilft, mehrere Übereinstimmungen effektiv zu überprüfen und zu verwalten.
-
-<figure><img src="../../../.gitbook/assets/po_match_19.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/po_match_18.png" alt=""><figcaption></figcaption></figure>
-
-## PO-Verbindungen entfernen
-
-Um eine Verbindung zwischen einer Bestellposition und einer extrahierten Position zu entfernen, klicken Sie einfach auf das **X**-Symbol neben dem abgeglichenen Paar.\nNach dem Entfernen wird die Verbindung aufgehoben, und die Position steht erneut für den Abgleich zur Verfügung.
-
-<figure><img src="../../../.gitbook/assets/po_match_new_2 (1).png" alt=""><figcaption></figcaption></figure>
-
-## Berechnung
-
-Unterhalb der Tabelle mit den aus Ihrem Dokument extrahierten Informationen finden Sie einfache Berechnungen, mit denen Sie überprüfen können, ob die Summen der Buchungen übereinstimmen.
-
-<figure><img src="../../../.gitbook/assets/po_matching_calculation_summary.png" alt="PO Matching Calculation Summary" width="423"><figcaption></figcaption></figure>
-
-### Erfasste Buchungen:
-
-Der Wert der erfassten Buchungen wird aus dem aus dem Dokument extrahierten Nettobetrag abgeleitet.
-
-```
-Recorded bookings = Total net amount (extracted from the document)
-```
-
-### Abgeglichene Summe:
-
-Dieser Wert wird berechnet, indem **Stückpreis** × **Menge** für alle Positionen summiert wird, die erfolgreich mit den Positionen der Bestellnummer abgeglichen wurden.
-
-```
- Matched Total = Sum of (Unit Price × Quantity) for all matched line items
-```
-
-### **Gebühren:**
-
-Etwaige anfallende Gebühren werden in diesem Abschnitt berücksichtigt, sofern vorhanden.\nWeitere Einzelheiten finden Sie in der [ausführlichen Dokumentation](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md).
-
-```
-Charges = Costing element
-```
-
-### Offener Betrag:
-
-Die resultierende Differenz wird hier angezeigt und wie folgt berechnet:
-
-```
-Unsettled amount = Recorded bookings - Matched total - Costing element
-```
-
-## Anzeige des Dokuments zur Validierung
-
-Auf der rechten Seite des Bildschirms **Bestellabgleich** können Sie das Dokument anzeigen, um die Validierung zu unterstützen.
-
-<figure><img src="../../../.gitbook/assets/po_new_1.png" alt=""><figcaption></figcaption></figure>
-
-**Funktionen der Symbolleiste des Dokumentenbetrachters:**
-
-* Blättern Sie durch die Dokumentseiten, um den Inhalt zu prüfen.
-* Klicken Sie auf den Dateinamen, um den vollständigen Validierungsbildschirm zu öffnen.
-* Geben Sie eine Seitenzahl ein und drücken Sie die Eingabetaste, um direkt zu dieser Seite zu springen.
-* Verwenden Sie die Plus- (+) und Minus-Schaltflächen (–), um in das Dokument hinein- oder herauszuzoomen.
-*   Klicken Sie auf die Schaltfläche ganz rechts, um das Dokument in einem separaten Fenster zu öffnen, was besonders nützlich ist, wenn Sie mit mehreren Bildschirmen arbeiten.
-
-    <figure><img src="../../../.gitbook/assets/po_match_10.png" alt=""><figcaption></figcaption></figure>
-
-## Änderungen speichern:
-
-Um Ihre Änderungen zu speichern, klicken Sie in der Symbolleiste auf die Schaltfläche **Save**.\nWenn Sie die Seite verlassen, ohne zu speichern, gehen alle während des Abgleichsprozesses erzielten Fortschritte verloren.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_6.png" alt=""><figcaption></figcaption></figure>
-
-## Exportieren des Dokuments
-
-Nachdem Sie alle Positionen abgeglichen und deren Richtigkeit validiert haben, können Sie das Dokument exportieren, indem Sie in der Symbolleiste auf die Schaltfläche **Export** klicken.
-
-* Wenn Sie auf den kleinen Pfeil neben der Schaltfläche **Export** klicken, werden alle verfügbaren Exportoptionen angezeigt.
-* Wenn Sie direkt auf **Export** klicken, wird die Standard-Exportoption ausgelöst (die erste in der Liste).
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_8.png" alt=""><figcaption></figcaption></figure>
+Die verfügbaren Vergleiche und Toleranzwerte hängen von Ihren Dokumenttyp-Einstellungen ab. Lesen Sie [Regeln für die Übereinstimmung von Bestellungen](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md), [Einstellungen zur Toleranz von Bestellungen](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md), [PO-Deaktivierungsstatus](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md) und [Verbrauchter PO-Zeilenstatus](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) für Administratoreneinstellungen. Für Viele-zu-eins-Positionen siehe [Rabatte](discounts.md) und die [Abgleich-Tools](purchase-order-matching-tools.md).

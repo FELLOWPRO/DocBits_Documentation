@@ -1,323 +1,61 @@
 # Schermata di Abbinamento Ordini di Acquisto
 
-{% embed url="https://youtu.be/qR-lrSaj4Ug" %}
-DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
-{% endembed %}
-
-## Panoramica
-
-Nella schermata di **Abbinamento Ordini di Acquisto**, puoi confrontare gli articoli estratti dal tuo documento con quelli memorizzati nel sistema **Infor**, utilizzando il numero dell'ordine di acquisto come riferimento.
-
-Puoi:
-
-* **Identificare immediatamente** eventuali differenze tra i dati estratti e quelli memorizzati
-* **Impostare tolleranze** per consentire deviazioni accettabili
-* **Ignorare stati specifici** da Infor, se necessario
-* **Approvare ed esportare** il documento dopo un abbinamento riuscito
-* **Rifiutare** il documento se i dati non soddisfano i criteri di validazione richiesti
-
-Questa pagina ti guiderà attraverso il processo di abbinamento degli ordini di acquisto e spiegherà tutte le funzionalità correlate disponibili in questa sezione.
-
-## Strumenti nella Schermata di Abbinamento Ordini di Acquisto
-
-Nella parte superiore della schermata di Abbinamento Ordini di Acquisto, troverai diversi strumenti—come **Salva**, **Auto-Abbina**, **Esportazione**, e altri—che assistono nel processo di abbinamento.\
-Una descrizione dettagliata di ciascun strumento e della sua funzionalità può essere trovata [qui](purchase-order-matching-tools.md).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FxPOM1IzmTGgCCAE4tAQg%252Fpo_match_tools_0.png%3Falt%3Dmedia%26token%3D420e0d50-d5c8-4b7b-8ec6-26ca9e2d7a68\&width=768\&dpr=4\&quality=100\&sign=5d32419c\&sv=2)
-
-## Filtra e Aggiungi Numeri di Ordine di Acquisto
-
-Puoi cercare numeri di ordine di acquisto specifici inserendo il numero nel campo di ricerca.\
-Per un filtraggio più raffinato, fai clic sull'icona sul lato destro della barra di ricerca per selezionare criteri specifici per la tua ricerca.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F3xeAcb5EwKQPg9rksZVE%252Fpo_match_3.png%3Falt%3Dmedia%26token%3Deef4e964-ffe5-485c-ae22-c5790a9302fc\&width=768\&dpr=4\&quality=100\&sign=b0830e56\&sv=2)
-
-Le seguenti opzioni di filtro sono disponibili per aiutarti a raffinare la tua ricerca per ordini di acquisto:
-
-* **Parola chiave** – Filtra per numeri di ordine di acquisto.
-* **Fornitore** – Filtra per nome o ID del fornitore.
-* **Dopo la data** – Mostra gli ordini di acquisto creati dopo una data specifica.
-* **Prima della data** – Mostra gli ordini di acquisto creati prima di una data specifica.
-* **Importo minimo dell'ordine** – Filtra per valore minimo dell'ordine.
-* **Importo massimo dell'ordine** – Filtra per valore massimo dell'ordine.
-* **Ordina per** – Seleziona l'attributo per ordinare i risultati (ad es., data, importo).
-* **Direzione di ordinamento** – Scegli l'ordine di ordinamento: crescente o decrescente.
-* **Numero di record da visualizzare** – Definisci quanti risultati devono essere mostrati per pagina.
-* **Di più** – Opzioni di filtraggio aggiuntive includono:
-  * **Numero di consegna**
-  * **Numero della bolla di accompagnamento**
-  * **Articolo Id**
-
-Dopo aver configurato i tuoi filtri, fai clic su **Applicare** per applicarli o **Libero** per ripristinare tutte le impostazioni di filtro.
-
-Gli ordini di acquisto abbinati verranno visualizzati in base ai filtri applicati.\
-Puoi:
-
-* Regolare i filtri e cercare di nuovo, oppure
-* Fare doppio clic su un'entrata dell'ordine di acquisto per aggiungerla alla schermata di Abbinamento Ordini di Acquisto.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2uwMlpQ42lG5fOvUy4Gx%252Fpo_match_5.png%3Falt%3Dmedia%26token%3De2751f7f-586e-4303-bb17-db2a56de2b0b\&width=768\&dpr=4\&quality=100\&sign=fbf27bf2\&sv=2)
-
-## Seleziona Numeri di Ordine di Acquisto e Riordina Colonne
-
-Puoi passare tra ordini di acquisto individuali per visualizzare i rispettivi articoli cliccando sul numero dell'ordine di acquisto nella parte superiore della tabella.
-
-Puoi anche riordinare le colonne all'interno di ciascuna vista dell'ordine di acquisto semplicemente trascinandole e rilasciandole nell'ordine preferito.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FwZzMEbGz7j20tIsouC8V%252Fpo_match_7.png%3Falt%3Dmedia%26token%3D6dc539ab-33af-40a6-8c82-04449ba317e4\&width=768\&dpr=4\&quality=100\&sign=3b8fd876\&sv=2)
-
-Per nascondere permanentemente colonne specifiche, utilizza la funzione [**Impostare le colonne della tabella PO per l'organizzazione**](./#impostare-le-colonne-della-tabella-po-per-le-organizzazioni).
-
-## Impostare le Colonne della Tabella PO per le Organizzazioni
-
-Hai la possibilità di nascondere o mostrare colonne specifiche nella tabella degli ordini di acquisto facendo clic sull'icona delle impostazioni delle colonne (mostrata di seguito).\
-Questa impostazione è disponibile sia nella schermata di **Abbinamento Ordini di Acquisto** che nel menu di **Ricerca Avanzata Ordini di Acquisto**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4nQ5loSdHlIebOh4vJ1m%252Fpo_tools_new_10.png%3Falt%3Dmedia%26token%3D84991cc8-f7ae-40f1-ba6c-cdd66722b898\&width=768\&dpr=4\&quality=100\&sign=ec34b898\&sv=2)
-
-Ulteriori dettagli possono essere trovati [qui](purchase-order-matching-tools.md#impostare-le-colonne-della-tabella-po-per-lorganizzazione).
-
-## Ri-sincronizza il numero dell'ordine di acquisto con Infor
-
-Per risincronizzare i dati in **DocBits** con i dati di **Infor**, fai clic sul **pulsante di aggiornamento** accanto al numero dell'ordine di acquisto sopra la tabella.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNQiPjtumht4wV9z8VHtw%252Fpo_match_8.png%3Falt%3Dmedia%26token%3Dcd9cb152-6b2f-475e-abeb-e9ad1cbd46cf\&width=768\&dpr=4\&quality=100\&sign=adab84c\&sv=2)
-
-Se il tuo processo di abbinamento si basa sull'attributo **Consegna ricevuta Quantità aperta**, hai anche la possibilità di eseguire una **sincronizzazione manuale**, come descritto in dettaglio [qui](purchase-order-matching-tools.md#dati-di-sincronizzazione).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FcceZaArRjBdKpI5r5u1v%252Fpo_tools_new_7.png%3Falt%3Dmedia%26token%3D49e25f09-de07-42b7-ab3d-a43a35e567c5\&width=768\&dpr=4\&quality=100\&sign=c6e75393\&sv=2)
-
-## Come abbinare?
-
-Per abbinare un articolo di un ordine di acquisto con un articolo estratto dal documento, hai tre opzioni:
-
-1. **Trascina e Rilascia**\
-   Trascina l'articolo dell'ordine di acquisto desiderato e rilascialo sull'articolo corrispondente nella tabella estratta.
-2. **Clic Destro e Collega**
-   * Fai clic destro sull'articolo dell'ordine di acquisto che desideri abbinare e seleziona **Seleziona per abbinare**.
-   * Quindi, fai clic destro sull'articolo corrispondente nella tabella estratta e seleziona **Collega**.
-3.  **Auto-Abbina**
-
-    Fai clic sul pulsante **Auto-Abbina** per consentire al sistema di tentare automaticamente di abbinare tutti gli articoli in base ai dati estratti e all'ordine di acquisto.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Flsdom16blO6pMF5rtQYS%252Fpo_tools_new_5.png%3Falt%3Dmedia%26token%3D616d6600-ff52-478a-9282-518212360106\&width=768\&dpr=4\&quality=100\&sign=ad47d853\&sv=2)
-
-Puoi anche selezionare **più righe di ordine di acquisto** e abbinarle a una **singola riga** nella tabella estratta. Per ulteriori dettagli, fai clic [qui](./#abbinamenti-multipli).
-
-## Perché non c'è corrispondenza?
-
-Quando un documento non viene abbinato, lo schermo mostra **una frase sopra l'area dell'ordine di acquisto** che indica il motivo e cosa fare a riguardo:
-
-| Messaggio                                                      | Significato e passo successivo                                                                                                                                               |
-| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Nessun numero d'ordine di acquisto                             | Il documento non ha un numero d'ordine di acquisto. Inseriscilo nel campo intestazione e salva — l'abbinamento viene eseguito di nuovo al salvataggio.                       |
-| Nessun ordine di acquisto trovato nell'ERP per …               | Il numero sul documento non esiste nell'ERP. Controlla il numero e salva.                                                                                                    |
-| … non è stato ancora cercato                                   | Il numero è arrivato dopo l'elaborazione (ad esempio dai dati master). Salva il documento o clicca su **Auto Match**.                                                        |
-| … è caricato ma non collegato                                  | Le righe dell'ordine di acquisto sono a schermo ma nulla è ancora abbinato. Clicca su **Auto Match** o collega le righe manualmente.                                         |
-| … è stato trovato, ma nessuna delle righe dell'ordine corrisponde | Ogni riga non ha superato le regole di abbinamento. Apri la **cronologia dell'abbinamento** per vedere su quale colonna, quindi abbina manualmente o correggi il documento.    |
-| Il documento non ha righe di dettaglio                         | Nulla da abbinare; controlla l'estrazione della tabella.                                                                                                                     |
-| La tabella delle righe di dettaglio non ha colonne ordine di acquisto mappate | Quantità, prezzo unitario e numero articolo non sono mappati per questa tabella. Mappali nelle impostazioni della tabella.                                                  |
-| L'ordine di acquisto non ha righe aperte rimanenti            | Ogni riga dell'ordine è già stata consumata o disabilitata (vedi [Stato riga ordine consumata](./#consumed-po-line-status) e [Stati di disabilitazione](./#disable-statuses)). |
-
-Sotto la frase lo schermo elenca i candidati che sono stati **messi da parte**, per esempio _"Ignorato: 2900233285 dalla colonna delle righe di dettaglio è il numero della fattura, non un ordine di acquisto"_ oppure _"… è escluso dalla configurazione"_. Il messaggio scompare una volta che il documento è abbinato.
+Usa **Corrispondenza PO** per confrontare le righe dell'ordine di acquisto caricate per un documento con le righe di fattura estratte. I dati dell'ordine di acquisto possono provenire da un'integrazione ERP o da un altro import configurato. La schermata mostra il documento accanto alle due tabelle, così puoi controllare numeri, quantità, prezzi e differenze prima di salvare o esportare.
 
 {% hint style="info" %}
-**L'abbinamento viene eseguito di nuovo quando salvi.** Se il numero d'ordine di acquisto cambia, o non è mai stato cercato prima, il salvataggio stesso abbina il documento. Un abbinamento esistente non viene mai sostituito da un salvataggio — e le righe che hai rimosso manualmente restano rimosse.
+L'esempio seguente usa una fattura e un ordine di acquisto sintetici FellowPro in **DocBits Documentation Test A**. La sua tabella della fattura attualmente indica **NESSUNA VOCE DI LINEA TROVATA**. Questo dimostra la navigazione e la ricerca, ma non può dimostrare un abbinamento riuscito tra righe. Non esportare questo esempio come fattura abbinata.
 {% endhint %}
 
-**Se un abbinamento non può essere salvato**, lo schermo non riporta "salvato": ripristina l'abbinamento a schermo, segna il documento come non salvato e mostra il motivo per cui il server lo ha scartato — per esempio _"L'abbinamento PO non è stato salvato: la regola di trasformazione "…" ha ricostruito la tabella"_. Gli amministratori vedono un link alla regola in questione. Chiedi a un amministratore di modificare la [regola di trasformazione](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) o le [regole di abbinamento](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+<figure><img src="../../../.gitbook/assets/dbdc-320-po-screen-it.png" alt="Schermata di Corrispondenza PO in italiano nell'organizzazione sintetica Sandbox: ricerca, barra degli strumenti, righe dell'ordine di acquisto, tabella delle righe di fattura vuota e anteprima della fattura"><figcaption><p>L'ordine di acquisto è caricato; la fattura di esempio non ha righe estratte da collegare.</p></figcaption></figure>
 
-## Cronologia dell'abbinamento
+## Trovare e ispezionare un ordine di acquisto
 
-Il pulsante **Cronologia dell'abbinamento** (icona orologio nella barra degli strumenti dell'ordine di acquisto; richiede il permesso Analytics) apre una riproduzione in sola lettura di come è stato deciso l'ultimo abbinamento:
+1. Apri una fattura in **Corrispondenza PO**. Se la tua organizzazione ha più ordini di acquisto, inserisci un numero in **Cerca il numero dell'ordine di acquisto**.
+2. Seleziona l'icona del filtro accanto alla casella di ricerca per **Parola chiave**, **Fornitore**, **Stato**, **Stato ordine**, date, intervallo di importo, ordinamento e numero di record mostrati. Seleziona **Più** per criteri aggiuntivi. Seleziona **Applica** per cercare o **Elimina** per ripristinare i filtri.
+3. Seleziona un numero di ordine di acquisto sopra la tabella per ispezionarne le righe. L'icona di aggiornamento accanto al numero ricarica i dati di quell'ordine. Un ricaricamento può dipendere dall'integrazione configurata.
+4. Confronta ogni riga dell'ordine di acquisto con la fattura e la sua tabella estratta. Il **+** su una riga espande i dettagli di abbinamento; di per sé non collega la riga alla fattura. Nell'esempio mostra **No multi-match Information** perché non esiste alcun abbinamento di quel tipo.
 
-* le **regole di trasformazione** eseguite prima dell'abbinamento, e se una di esse ha scartato un abbinamento,
-* le **fasi e regole di abbinamento** provate — verde dove è stato trovato un abbinamento, rosso dove una regola non ha trovato nulla, grigio dove una regola è stata saltata dalla sua condizione di attivazione (il tooltip spiega il motivo),
-* per una regola fallita, la **colonna confrontata** con il valore sul documento e il valore sull'ordine di acquisto.
+<figure><img src="../../../.gitbook/assets/dbdc-320-po-filters-it.png" alt="Filtri di ricerca dell'ordine di acquisto in italiano con fornitore, stati, limiti di data e importo, ordinamento e pulsanti Applica ed Elimina"><figcaption><p>Usa il pannello dei filtri per ridurre gli ordini di acquisto mostrati.</p></figcaption></figure>
 
-Aprire e riprodurre la cronologia non attiva né l'abbinamento né l'esportazione. Gli amministratori trovano la stessa riproduzione, con un input ID documento, accanto al diagramma del set di regole nelle impostazioni dell'ordine di acquisto del tipo di documento.
+<figure><img src="../../../.gitbook/assets/dbdc-320-po-line-it.png" alt="Riga dell'ordine di acquisto espansa con No multi-match Information e una tabella delle righe di fattura vuota"><figcaption><p>La riga espansa mostra i dettagli di abbinamento quando disponibili.</p></figcaption></figure>
 
-## Quali colonne vengono abbinate?
+## Abbinare le righe e verificare il risultato
 
-Il processo di Abbinamento Ordini di Acquisto abbina solo colonne specifiche. L'elenco qui sotto delinea quali colonne vengono abbinate, se disponibili. Se non viene impostata alcuna [tolleranza](./#accetta-tolleranze), le colonne verranno abbinate solo se sono un abbinamento esatto (100%).
+Quando entrambe le tabelle contengono righe, collega una riga di fattura alla riga corrispondente dell'ordine di acquisto trascinandola, oppure usa le azioni di abbinamento nel menu contestuale della riga. **Auto Match** tenta di collegare le righe idonee usando le regole della tua organizzazione. Verifica il risultato prima di salvare: il solo numero di articolo corrispondente non dimostra che quantità, prezzo o condizioni di consegna coincidano. Vedi [Strumenti di Abbinamento Ordine di Acquisto](purchase-order-matching-tools.md) per la barra degli strumenti, i controlli delle colonne e le azioni manuali, e [Scorciatoie da Tastiera](keyboard-shortcuts.md) per le azioni da tastiera.
 
-* [Quantità](./#quantita) (Quantità | Quantità ricevuta | Consegna ricevuta Quantità aperta)
-* Prezzo unitario
-* Numero dell'ordine di acquisto
-* Numero articolo/ID articolo fornitore
-* Data di consegna promessa
+Se un documento non è abbinato, leggi il motivo mostrato sopra l'area dell'ordine di acquisto. Può indicare che il numero PO è mancante, che l'ordine non è stato trovato, che le sue righe non sono disponibili o che la fattura non ha righe estratte. Correggi il documento o la configurazione indicata da quel motivo. Un amministratore può ispezionare le [regole di abbinamento](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) e l'[estrazione della tabella](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) quando non compaiono righe di fattura.
 
-### Quantità
+Messaggi comuni e passi successivi:
 
-Hai tre opzioni per abbinare la quantità.
+| Cosa vedi | Cosa controllare |
+| --- | --- |
+| Nessun numero di ordine di acquisto | Inserisci o correggi il numero PO sul documento, poi salva. |
+| Nessun ordine di acquisto trovato | Controlla il numero e verifica che l'ordine sia stato importato in questa organizzazione. |
+| L'ordine è stato trovato ma non è collegato | Prova **Auto Match**, oppure collega le righe manualmente dopo aver controllato entrambe le tabelle. |
+| Nessuna riga dell'ordine corrisponde | Confronta i valori della fattura con l'ordine e controlla la cronologia dell'abbinamento. |
+| Nessuna voce di linea nella fattura | Controlla l'[estrazione della tabella](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) prima di provare ad abbinare. |
+| Nessuna riga aperta dell'ordine | Controlla gli [stati delle righe consumate](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) e gli stati esclusi. |
 
-* Quantità
-* Quantità ricevuta
-* Consegna ricevuta Quantità aperta
+{% hint style="warning" %}
+Il salvataggio può innescare di nuovo l'abbinamento dopo un numero PO cambiato o rilevato per la prima volta. Controlla il risultato mostrato dopo il salvataggio. Se un abbinamento non può essere salvato, leggi l'errore mostrato sullo schermo e chiedi a un amministratore di verificare la [regola di trasformazione](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) e le [regole di abbinamento](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+{% endhint %}
 
-Puoi impostare questa opzione in **Impostazioni → Impostazioni globali → Tipi di documenti → Altre impostazioni → Sezione Ordine di acquisto → Ordine di acquisto**
+Usa **Cronologia dell'abbinamento** (icona dell'orologio, dove i tuoi permessi lo consentono) per ispezionare come è stato deciso un abbinamento precedente. È una vista in sola lettura. Puoi rivedere quali regole sono state eseguite e perché un candidato non ha trovato corrispondenza; aprire la cronologia non esporta il documento.
 
-La **opzione di quantità selezionata** determina quale colonna di quantità dell'**ordine di acquisto** viene utilizzata per il confronto durante il processo di corrispondenza.
+### Più di una riga per abbinamento
 
-## **Stato della riga dell'ordine di acquisto consumato**
+Una singola riga di fattura può corrispondere a diverse righe dell'ordine, o viceversa, dove le tue regole di abbinamento lo consentono. Apri i dettagli **+** su una riga per ispezionare un eventuale abbinamento multiplo esistente. Controlla la quantità e il prezzo combinati, non solo una riga. Un pannello di dettagli vuoto come l'esempio sintetico qui sopra significa che non c'è alcun abbinamento multiplo da ispezionare. Vedi [Strumenti di Abbinamento Ordine di Acquisto](purchase-order-matching-tools.md) per modificare i collegamenti.
 
-Questa funzionalità aggiunge una colorazione alle righe dell'ordine di acquisto, facilitando l'identificazione dello stato di corrispondenza con un semplice sguardo. Ulteriori informazioni sono disponibili sulla pagina delle impostazioni [**Stato della riga dell'ordine di acquisto consumato**](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md).
+### Quantità, differenze e sconti
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNoof3pErQqAvAWZpo4Fd%252Fimage.png%3Falt%3Dmedia%26token%3D21a15672-8e84-4e22-a0f2-8b65bcbfda54\&width=768\&dpr=4\&quality=100\&sign=4a68abca\&sv=2)
+A seconda della configurazione, l'abbinamento può confrontare la quantità ordinata, ricevuta o di consegna rimanente, oltre al prezzo unitario, al numero di articolo e ad altri campi mappati. Una differenza può essere accettata se il tipo di documento ha una tolleranza configurata. Controlla la discrepanza mostrata prima di accettarla. Le [impostazioni di tolleranza](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) e la [guida sugli sconti](discounts.md) spiegano questi casi.
 
-## **Sezione dell'ordine di spedizione dell'ordine di acquisto**
+L'area dei totali, quando disponibile, aiuta a riconciliare l'importo netto della fattura con le righe abbinate e le spese. Se rimane un **Importo non regolato**, ispeziona i valori delle singole righe e ogni [costing element](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md) prima dell'esportazione.
 
-Questa sezione fornisce una panoramica visiva di quanto è stato consegnato e fatturato per ciascun articolo dell'ordine di acquisto. Aiuta a monitorare il progresso della fatturazione utilizzando i valori di quantità e una barra di avanzamento.
+## Controllare i totali e salvare
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2R9tB3JySdIMk8meRSVZ%252FPO-Shipment-Order-1.jpg%3Falt%3Dmedia%26token%3D70aa50f4-84cd-4a55-b580-037b893d1f5b\&width=768\&dpr=4\&quality=100\&sign=e4619335\&sv=2)
+Rivedi l'anteprima della fattura a destra e confronta i totali di riga e le eventuali spese. Per una spiegazione completa delle azioni nella barra degli strumenti superiore, vedi [Strumenti di Abbinamento Ordine di Acquisto](purchase-order-matching-tools.md). Seleziona **Salva** dopo aver modificato gli abbinamenti. Seleziona **Esportazione** solo dopo aver controllato il documento e il risultato dell'abbinamento; la freccia accanto a Esportazione mostra scelte di esportazione aggiuntive configurate. La tua organizzazione potrebbe avere azioni di esportazione diverse.
 
-Ulteriori dettagli possono essere trovati sulla pagina delle [**Impostazioni dell'ordine di spedizione dell'ordine di acquisto**](../../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md).
+La barra degli strumenti dell'anteprima permette di spostarsi tra le pagine del documento, zoomare, scaricare l'originale e aprire una vista più grande. Usala per verificare che il numero dell'ordine di acquisto e i valori delle righe compaiano davvero sulla fattura. Se esci con modifiche di abbinamento non salvate, potrebbero andare perse.
 
-## Accetta Tolleranze
-
-Puoi specificare livelli di tolleranza accettabili durante il processo di abbinamento.\
-Per impostazione predefinita, solo gli abbinamenti esatti (100%) sono considerati validi.
-
-Se le tolleranze sono configurate nelle impostazioni di sistema, puoi regolarle per gli attributi consentiti direttamente nella **Tabella Estratta** sotto la colonna **Azioni**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJLdikqwBf45WgFqlPUYW%252Fpo_match_11.png%3Falt%3Dmedia%26token%3D0c9d533f-f994-472a-9ff8-75ef564cef5e\&width=768\&dpr=4\&quality=100\&sign=b0c004c0\&sv=2)
-
-Per ulteriori informazioni sulla configurazione e sull'uso delle tolleranze, consulta la [documentazione dettagliata](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
-
-## Sconti
-
-Se sono presenti sconti nella tua tabella estratta, verranno applicati automaticamente al prezzo unitario prima dell'abbinamento, tranne quando si utilizzano [abbinamenti multipli](./#abbinamenti-multipli). Maggiori informazioni sugli sconti possono essere trovate [qui](discounts.md).
-
-## Disabilita stati
-
-Puoi escludere righe specifiche con determinati stati dall'essere abbinate. Per ulteriori informazioni, fai riferimento alla [documentazione dettagliata](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md).
-
-## Verifica righe abbinate
-
-Diversi indicatori sono disponibili per aiutarti a verificare se un articolo è stato abbinato con successo o meno.
-
-### Tabella Ordini di Acquisto
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FB3LlWddnfNcu8kUedbvb%252Fpo_match_14.png%3Falt%3Dmedia%26token%3D484a856a-b8b2-439f-bbf9-35dd4bb55343\&width=768\&dpr=4\&quality=100\&sign=b71ea425\&sv=2)
-
-* Questa icona indica che l'articolo dell'ordine di acquisto è stato abbinato con successo.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2vcst2wCfyck9Z7ak4eO%252Fguide_po_2.png%3Falt%3Dmedia%26token%3D78f7a224-ba6b-4027-b6a0-61e5502fd7c2\&width=768\&dpr=4\&quality=100\&sign=e0d60903\&sv=2)
-
-* Questa icona indica che l'articolo dell'ordine di acquisto contiene un disallineamento.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAb1A9PwBhrvfAf5q7f5w%252Fguide_po_5.png%3Falt%3Dmedia%26token%3D6616b59d-ffa4-4202-9382-3ac8ecd8b913\&width=768\&dpr=4\&quality=100\&sign=dd476496\&sv=2)
-
-### Tabella Estratta dal Documento
-
-*   Questa icona indica che l'articolo è stato abbinato con successo. Puoi passare il mouse sopra l'icona per evidenziare la riga corrispondente dell'ordine di acquisto.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Flogrk90Ufp5NQ7fd1QEX%252Fpo_match_15.png%3Falt%3Dmedia%26token%3D59c96286-24e9-4790-a9db-8c02efaed305\&width=768\&dpr=4\&quality=100\&sign=1a296310\&sv=2)
-*   Questa icona indica che l'articolo contiene un disallineamento. Puoi passare il mouse sopra l'icona per evidenziare la riga corrispondente dell'ordine di acquisto e visualizzare le colonne in cui si verificano i disallineamenti.
-
-    ![](../../../.gitbook/assets/po_match_new_4.png)
-
-## Abbinamenti Multipli
-
-L'abbinamento multiplo consente di abbinare più righe da una tabella a una singola riga nella tabella corrispondente (opposta).
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/po_match_20.png)
-
-Questa funzione è particolarmente utile per scenari in cui i dettagli sono suddivisi su più righe.
-
-### Criteri di Abbinamento
-
-Le righe saranno considerate un abbinamento se le seguenti condizioni aggregate sono soddisfatte:
-
-* **Prezzo unitario**:\
-  Il prezzo unitario medio delle righe multiple viene calcolato e confrontato con il prezzo unitario nella tabella opposta.
-* **Quantità**:\
-  La somma delle quantità delle righe abbinate deve corrispondere alla quantità nella tabella opposta.
-* **Requisiti Aggiuntivi**:\
-  Qualsiasi ulteriore [criterio di abbinamento](./#quali-colonne-vengono-abbinate) deve essere soddisfatto.
-
-Se un singolo articolo è abbinato a più righe, puoi visualizzare informazioni dettagliate facendo clic sull'icona più (+) accanto all'articolo rispettivo.
-
-Questo espande la vista per mostrare tutte le voci abbinate, aiutandoti a verificare e gestire più abbinamenti in modo efficace.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FXueoHfU6EiDKaWBKJL2X%252Fpo_match_19.png%3Falt%3Dmedia%26token%3D9b947abd-5fbc-45e7-8e55-8b38746b5e32\&width=768\&dpr=4\&quality=100\&sign=191a712\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZJZekesrA0JB04GixOUi%252Fpo_match_18.png%3Falt%3Dmedia%26token%3D25c10718-2044-4de9-a5db-45f936d7235a\&width=768\&dpr=4\&quality=100\&sign=dd63d6c4\&sv=2)
-
-## Rimuovi Connessioni PO
-
-Per rimuovere una connessione tra un articolo dell'ordine di acquisto e un articolo estratto, fai semplicemente clic sull'icona **X** accanto alla coppia abbinata.\
-Una volta rimossa, la connessione viene annullata e l'articolo diventa nuovamente disponibile per l'abbinamento.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSznmTo3Fnfi72ccpuLZk%252Fpo_match_new_2.png%3Falt%3Dmedia%26token%3Da04727b2-c8bf-44e0-b8f4-eaedb8180500\&width=768\&dpr=4\&quality=100\&sign=b740b466\&sv=2)
-
-## Calcolo
-
-Sotto la tabella contenente le informazioni estratte dal tuo documento, puoi trovare semplici calcoli per verificare se il totale delle prenotazioni corrisponde.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FA3TOYG26aHrETnMz4ADB%252Fimage.png%3Falt%3Dmedia%26token%3Db481bbc5-d278-4a46-b3cf-813225fa10ca\&width=768\&dpr=4\&quality=100\&sign=eeca6ad9\&sv=2)
-
-### Prenotazioni registrate:
-
-Il valore delle prenotazioni registrate è derivato dall'importo netto estratto dal documento.
-
-```
-Prenotazioni registrate = Importo netto totale (estratto dal documento)
-```
-
-### Totale abbinato:
-
-Questo valore è calcolato sommando il **Prezzo unitario** × **Quantità** per tutti gli articoli che sono stati abbinati con successo con gli articoli dal numero dell'ordine di acquisto.
-
-```
- Totale abbinato = Somma di (Prezzo unitario × Quantità) per tutti gli articoli abbinati
-```
-
-### **Spese:**
-
-Eventuali spese applicabili saranno incluse in questa sezione se presenti.\
-Per ulteriori dettagli, fai riferimento alla [documentazione dettagliata](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md).
-
-```
-Spese = Elemento di costo
-```
-
-### Importo non regolato:
-
-La differenza risultante è visualizzata qui ed è calcolata come segue:
-
-```
-Importo non regolato = Prenotazioni registrate - Totale abbinato - Elemento di costo
-```
-
-## Visualizzazione del Documento per Validazione
-
-Sul lato destro della schermata di **Abbinamento Ordini di Acquisto**, puoi visualizzare il documento per assisterti nella validazione.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7X5cxghPovZfE8B2hvIy%252Fpo_new_1.png%3Falt%3Dmedia%26token%3D613a52db-b1a7-4d15-af8e-ab63725ae78c\&width=768\&dpr=4\&quality=100\&sign=3a887d60\&sv=2)
-
-**Caratteristiche della Barra degli Strumenti del Visualizzatore di Documenti:**
-
-* Scorri tra le pagine del documento per rivedere il contenuto.
-* Fai clic sul nome del file per aprire la schermata di validazione completa.
-* Inserisci un numero di pagina e premi Invio per saltare direttamente a quella pagina.
-* Usa i pulsanti più (+) e meno (–) per ingrandire o ridurre il documento.
-*   Fai clic sul pulsante all'estrema destra per aprire il documento in una finestra separata, particolarmente utile quando si lavora con più schermi.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F8nUElRimoIOprR5yV5lN%252Fpo_match_10.png%3Falt%3Dmedia%26token%3De0d6924c-127f-4333-95f9-1b32d52b0da5\&width=768\&dpr=4\&quality=100\&sign=4f8161e4\&sv=2)
-
-## Salvataggio delle Modifiche:
-
-Per salvare le tue modifiche, fai clic sul pulsante **Salva** nella barra degli strumenti.\
-Se lasci la pagina senza salvare, tutto il progresso fatto durante il processo di abbinamento andrà perso.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZ9ou72AJwvme2F7RWG7P%252Fpo_tools_new_6.png%3Falt%3Dmedia%26token%3D1d8ef55e-5ff1-4ee7-ac81-b76ff583a353\&width=768\&dpr=4\&quality=100\&sign=a17e5c90\&sv=2)
-
-## Esportazione del Documento
-
-Dopo aver abbinato tutti gli articoli e convalidato la loro correttezza, puoi esportare il documento facendo clic sul pulsante **Esportazione** nella barra degli strumenti.
-
-* Facendo clic sulla piccola freccia accanto al pulsante **Esportazione** si rivelano tutte le opzioni di esportazione disponibili.
-* Facendo clic direttamente su **Esportazione** verrà attivata l'opzione di esportazione predefinita (la prima nell'elenco).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fzc78lqQthkeTIpANlIAc%252Fpo_tools_new_8.png%3Falt%3Dmedia%26token%3Debdb58e9-b775-40a6-b7bc-82aa66f8811b\&width=768\&dpr=4\&quality=100\&sign=14ac5a25\&sv=2)
+I confronti disponibili e i valori di tolleranza dipendono dalle impostazioni del tuo tipo di documento. Leggi [Regole di Abbinamento PO](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md), [Impostazioni di Tolleranza](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md), [Stati di Disabilitazione](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md) e [Stato della Riga dell'Ordine Consumata](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) per le impostazioni dell'amministratore. Per righe da molti-a-uno, vedi [Sconti](discounts.md) e gli [Strumenti di Abbinamento](purchase-order-matching-tools.md).

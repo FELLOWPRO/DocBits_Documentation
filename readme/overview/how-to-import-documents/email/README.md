@@ -15,3 +15,20 @@ After pressing NEW, the following menu will be shown to you.
 Here you can select which Protocol you would like.
 
 ![](https://lh7-us.googleusercontent.com/nikZZGemqPpldbGBirUP7d4QAoBikHCay9Ptk8PSVft9zPkZeKuoH9gfK2ar53MpslTjw4GhldbrCw6phn1VV1Y7MMfgaZLnXaXjjERJV8pFUoyIG8Z760P3\_2DjQFUKZYMCagXBzaTm52ii5tPl8C0)
+
+## Podržani prilozi u imejlovima
+
+Oba načina uvoza putem imejla prihvataju sledeće priloge dokumenta:
+
+| Format | Ekstenzije datoteka | Uobičajena namena |
+| --- | --- | --- |
+| PDF | `.pdf` | Fakture i drugi PDF dokumenti |
+| TIFF | `.tif`, `.tiff` | Skenirani dokumenti |
+| XML | `.xml` | Strukturirani elektronski dokumenti |
+| EDI / podaci o narudžbenici | `.edi`, `.purchaseorder` | Elektronska razmena podataka i narudžbenice |
+
+Ako servis za prosleđivanje označi PDF, TIFF ili XML datoteku kao generički prilog, DocBits može da je prepozna na osnovu sadržaja datoteke ili poznate ekstenzije. Prosleđene `.eml` poruke takođe mogu da sadrže podržane dokumente; DocBits izdvaja te unutrašnje priloge pre uvoza.
+
+Slike kao što su PNG, JPG, GIF i BMP se ne uvoze kao dokumenti. Slike potpisa i logotipi u prosleđenim imejlovima se preskaču. Office datoteke, kao što su Word, Excel i PowerPoint, nisu podržane za ove načine uvoza putem imejla.
+
+Kod prosleđenih imejlova proverite **Logs** (Evidentiju) u odeljku **Inbound Emails** (Dolazni imejlovi) ako dokument nedostaje. Kada je omogućena opcija **Notify sender when import fails** (Obavesti pošiljaoca kada uvoz ne uspe), pošiljalac dobija objašnjenje i link ka ovoj stranici. Za povezano sanduče pošte koristite vodič za podešavanje [IMAP](imap.md) ili [OAuth (Office 365)](oauth-office365.md).

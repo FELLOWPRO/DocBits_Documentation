@@ -187,6 +187,8 @@
           * [🇦🇺 PINT A-NZ](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/pint-a-nz.md)
 
         * [🇨🇱 CHILE DTE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/chile-dte.md)
+          * [🇫🇷 FACTURX 1.09 - ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx-1-09-zugferd-2-5.md)
+          * [🇩🇪 ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-5.md)
       * [Regole di Trasformazione](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
       * [Altre impostazioni](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [Migliori pratiche](administration-and-setup/settings/global-settings/document-types/more-settings/purpose-and-use.md)

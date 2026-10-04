@@ -111,6 +111,7 @@ DocBits supporta **120+** standard di fatturazione elettronica e documenti in **
 | Factur-X | Supportato |
 | Factur-X 1.0.05 / ZUGFeRD 2.1 | Supportato |
 | Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Supportato |
+| [Factur-X 1.09 / ZUGFeRD 2.5](../supported-electronic-documents/facturx-1-09-zugferd-2-5.md) | Supportato |
 
 ### 🇩🇪 Germany
 
@@ -149,6 +150,7 @@ DocBits supporta **120+** standard di fatturazione elettronica e documenti in **
 | ZUGFeRD 2.2 | Supportato |
 | ZUGFeRD 2.3 | Supportato |
 | ZUGFeRD 2.3.2 | Supportato |
+| [ZUGFeRD 2.5](../supported-electronic-documents/zugferd-2-5.md) | Supportato |
 
 ### 🇮🇳 India
 

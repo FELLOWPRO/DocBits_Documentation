@@ -21,6 +21,7 @@
   * [Özelleştirilebilir Kenar Çubuğu](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
   * [Fikir Panosu](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Üst Bilgi Alanı Kontrolü: Veriler nereden geliyor](end-user-and-partner-section/end-user-section/validation-screen/header-field-check.md)
+  * [Satın Alma Siparişi Eşleştirme Ekranı](end-user-and-partner-section/end-user-section/purchase-order-matching/README.md)
   * [Key Features of DocBits](overview/key-features-of-docbits.md)
   * [User Support](overview/user-support.md)
   * [Dashboard](overview/dashboard/README.md)

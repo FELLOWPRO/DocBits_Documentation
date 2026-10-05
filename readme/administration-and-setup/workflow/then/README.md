@@ -1,76 +1,71 @@
-# Then
+# Then: choose an action card
 
-## Overview of "Then..." Action Cards
+A **Then** card tells a workflow what to do after its **When** trigger and any **And** conditions. In the **Workflow Builder**, select **Add Card** under **Then...**. Choose a category on the left or type a name in **Search Card**. Select a card preview to add it, fill in the fields shown on the card, and save the workflow. Scroll within the picker to see more cards. Select **×** to close it without adding a card. See [Workflow](../README.md) for the complete sequence.
 
-### **1. Document Field Actions:**
+The previews below show available actions, not completed settings. Pick the action that matches the outcome you want.
 
-* **Invert Checkbox:** This action toggles the state of a checkbox field in a document.
-* **Set Checkbox:** This sets the state of a checkbox field to either true (checked) or false (unchecked).
-* **Set Field to Text:** This action sets a specified document field to a given text value.
+## Document Field
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Set or invert a checkbox, put text into a field, or copy one field into another. Choose the field names and value requested by the card. See [Document Field](document-field/README.md).
 
-### **2. Document Actions:**
+<figure><img src="../../../.gitbook/assets/then-category-document-field-en.png" alt="English Then card picker with Document Field selected; previews show checkbox, text, and copy field actions."><figcaption>Change a field or copy its contents.</figcaption></figure>
 
-* **Approve the Document:** Marks a document as approved within the system.
-* **Reject the Document:** Marks a document as rejected.
+## Document
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Choose **Approve the Document** or **Reject the Document** when the workflow should make that decision. Use an **And** condition first if approval should depend on a check. See [Document](document/README.md).
 
-### **3. Export Actions:**
+<figure><img src="../../../.gitbook/assets/then-category-document-en.png" alt="English Then card picker with Document selected; Approve the Document and Reject the Document previews are visible."><figcaption>Approve or reject the current document.</figcaption></figure>
 
-* **Export document with export configuration:** Starts the export process with a specific export configuration.
-* **Start Export:** Starts the Export process.
+## Logic
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+Use these cards to convert values between number, text, and boolean formats, or read a value from JSON. Choose the input and output fields on the selected card.
 
-### **4. Status Actions:**
+<figure><img src="../../../.gitbook/assets/then-category-logic-en.png" alt="English Then card picker with Logic selected; visible previews convert data types and read values from JSON."><figcaption>Transform values for a later workflow step.</figcaption></figure>
 
-* **Change Status:** Changes the status of a document or task to a specified new status.
+## Status
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+Choose **Change Status** to move the document to a selected status. The card can also trigger another workflow. See [Status](status/README.md).
 
-### **5. Task Actions:**
+<figure><img src="../../../.gitbook/assets/then-category-status-en.png" alt="English Then card picker with Status selected; the Change Status preview includes a status field and optional workflow trigger."><figcaption>Move the document to another status.</figcaption></figure>
 
-* Assignments and notifications:
-  * **Assign Task:** Creates and assigns a task with specific details to an individual or group, including options to notify them via email.
-  * **Create a New Task:** Similar to assign but focused on setting up a completely new task within the system.
+## Prompts and Scripts
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+Choose this category to run a DocOperator prompt script. Select the script and the variables requested by the card. The card also offers execution settings such as retries.
 
-### **6. Table Actions:**
+<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-en.png" alt="English Then card picker with Prompts and Scripts selected; one DocOperator prompt script preview is visible."><figcaption>Run a configured DocOperator prompt script.</figcaption></figure>
 
-* **Calculate in Table:** Performs calculations on table data based on specified conditions and stores the results in a designated column.
-* **Change Entries:** Updates entries in a table based on specified conditions.
+## Export
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+Start an export, export with a chosen configuration, or queue a final export. Choose the export configuration and pending-task option shown on your card. See [Export](export/README.md).
 
-### **7. Assignee Actions:**
+<figure><img src="../../../.gitbook/assets/then-category-export-en.png" alt="English Then card picker with Export selected; previews show start, configured, queued, and alternate exports."><figcaption>Select when and how the document is exported.</figcaption></figure>
 
-* **Assign User from Field:** Assigns a user to a task or document based on user data stored in a specific field, with an option for a fallback user if the primary is unavailable.
-* **Assign Document to User or Group:** Directly assigns a document to a user or group, ensuring responsibility is designated appropriately.
+## Task
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+Create a task or notification and assign it to a user or group. Enter the title, description, priority, and notification settings requested by the card. Some cards assign sequentially. See [Task](task/README.md).
 
-### **8. External Interaction Actions:**
+<figure><img src="../../../.gitbook/assets/then-category-task-en.png" alt="English Then card picker with Task selected; visible previews create or assign tasks and notifications."><figcaption>Create follow-up work for a person or group.</figcaption></figure>
 
-* **Call API:** Sends a request to an external API, which can be customized with specific methods, parameters, and data.
-* **Send HTTPS Request:** Similar to API calls but specifically formatted for HTTPS protocols.
+## Email
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+Send an email using a selected template, either to recipients or to groups. Choose the template and destination on the card.
 
-### **9. Advanced Processing:**
+<figure><img src="../../../.gitbook/assets/then-category-email-en.png" alt="English Then card picker with Email selected; previews send a templated email to recipients or groups."><figcaption>Send a templated email.</figcaption></figure>
 
-* **Run Workflow:** Triggers another workflow within the system, allowing for complex process chaining.
+## Table
 
-#### Practical Application
+Change entries or calculate values in a document table. Select the table, columns, operator, and result column requested by the card. See [Table](table/README.md).
 
-These action cards are used to automate responses based on specific triggers identified in the earlier parts of the workflow setup. For instance:
+<figure><img src="../../../.gitbook/assets/then-category-table-en.png" alt="English Then card picker with Table selected; previews change entries and calculate result columns."><figcaption>Update or calculate table data.</figcaption></figure>
 
-* If a document is identified as needing review, the "Approve the Document" action can be automatically triggered once it passes all specified conditions.
-* For data management tasks, "Set Checkbox" or "Set Field to Text" actions ensure that document fields are updated automatically, reducing manual data entry and the potential for errors.
-* Complex tasks like API interactions or status changes streamline interactions not only within the ERP system but also with external services and tools, enhancing integration and functionality.
+## Assignee
 
-### Conclusion
+Assign the document to a user, group, recipient, or sub-organization. Some cards use a field or decision table and offer a fallback. Choose the right destination and fallback on the selected card. See [Assignee](assignee/README.md).
 
-The "Then..." section in your workflow system provides robust tools for defining precise actions that should occur as a result of conditions being met in the workflow. By effectively using these actions, businesses can automate routine processes, ensure data accuracy, and respond dynamically to changing information and system states. Understanding how to configure and utilize these actions is key to maximizing the efficiency and effectiveness of your ERP system's workflow capabilities.
+<figure><img src="../../../.gitbook/assets/then-category-assignee-en.png" alt="English Then card picker with Assignee selected; visible previews assign a user, recipient, group, or supplier contact."><figcaption>Route the document to the next responsible person or group.</figcaption></figure>
+
+## Action
+
+Run another workflow, send an HTTPS request, call an API, or use the cost-increase calculation card. These actions can affect other systems; ask your administrator which endpoint and settings to use. See [Action](action/README.md).
+
+<figure><img src="../../../.gitbook/assets/then-category-action-en.png" alt="English Then card picker with Action selected; previews show Run workflow, HTTPS request, API call, and cost increase calculation."><figcaption>Start another workflow or integration action.</figcaption></figure>

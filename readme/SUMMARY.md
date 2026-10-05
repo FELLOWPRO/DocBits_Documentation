@@ -484,7 +484,6 @@
   * [Card SDK](administration-and-setup/workflow/card-sdk.md)
   * [Workflow Logs](administration-and-setup/workflow/workflow-logs.md)
   * [Release](administration-and-setup/workflow/release.md)
-  * [Document Types](administration-and-setup/setup/document-types/README.md)
 * [Setup](setup/README.md)
   * [Dokumenttypen](setup/document-types/README.md)
     * [EDI-Datentransformationsprozess](setup/document-types/edi-data-transformation-process.md)

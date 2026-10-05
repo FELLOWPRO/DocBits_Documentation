@@ -122,7 +122,7 @@
     * [Caducidad de Documentos](administration-and-setup/settings/global-settings/document-expiry.md)
     * [Tipos de Documentos](administration-and-setup/settings/global-settings/document-types/README.md)
       * [Gestor de Diseño](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
-        * [Navegando el Creador de diseño](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
+        * [Navegando el Administrador de Diseño](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Subtipos de Documentos](administration-and-setup/settings/global-settings/document-types/document-sub-types.md)
       * [Columnas de Tabla](administration-and-setup/settings/global-settings/document-types/table-columns.md)
       * [Campos](administration-and-setup/settings/global-settings/document-types/fields/README.md)

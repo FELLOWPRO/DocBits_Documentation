@@ -1,66 +1,24 @@
 # eSLOG 1.6 i 2.0
 
-### Obsługiwane wersje faktur eSLOG
+**eSLOG 1.6** i **eSLOG 2.0** są w DocBits oddzielnymi formatami faktur elektronicznych. Wybierz wersję używaną przez przychodzące faktury słoweńskie. Poniższe zrzuty ekranu pokazują obecny polski interfejs Sandbox w organizacji testowej dokumentacji; nie dowodzą one, że faktura w którejś z tych wersji została przetworzona pomyślnie.
 
-Obecnie obsługiwane są **wersje faktur eSLOG 1.6 i 2.0**.
+## Znajdowanie konfiguracji
 
-Aby uzyskać oficjalną dokumentację eSLOG, możesz odwołać się do [tego linku](https://epos.si/en/eslog).
+1. Przejdź do **Ustawienia → Typy dokumentów → Faktura → E-Doc**.
+2. Rozwiń **E-SLOG 1.6** albo **E-SLOG 2.0**. Każdy format ma trzy własne pozycje.
 
-Obie wersje eSLOG są włączone domyślnie.
+<figure><img src="../../../../../.gitbook/assets/dbdc-376-eslog-16-pl.png" alt="Format E-SLOG 1.6 w polskim interfejsie Sandbox z wierszami Transformation, Preview i Extraction Paths"><figcaption>E-SLOG 1.6 na liście E-Doc faktur.</figcaption></figure>
 
-### Kroki do modyfikacji konfiguracji eSLOG
+<figure><img src="../../../../../.gitbook/assets/dbdc-376-eslog-20-pl.png" alt="Format E-SLOG 2.0 w polskim interfejsie Sandbox z wierszami Transformation, Preview i Extraction Paths"><figcaption>E-SLOG 2.0 ma oddzielne konfiguracje dla tych samych trzech kroków.</figcaption></figure>
 
-**Skonfiguruj eSLOG:**
+| Pozycja | Co kontroluje | Następny przewodnik |
+| --- | --- | --- |
+| **TRANSFORMATION (XSLT)** | Konwertuje dane źródłowe formatu na ustrukturyzowany XML. | [Transformacja](edi/edi-transformation-file-guide.md) |
+| **PREVIEW (XSLT)** | Definiuje czytelny widok dokumentu. | [Podgląd](edi/edi-preview-file-guide.md) |
+| **EXTRACTION PATHS (JSON)** | Mapuje wartości XML na pola i kolumny tabel DocBits. | [Ścieżki ekstrakcji](edi/edi-extraction-paths-file-guide.md) |
 
-* Przejdź do **Ustawienia → Ustawienia globalne → Typy dokumentów → Faktura**.
-*   Kliknij na **E-Doc**.
+Kliknij wiersz, aby zobaczyć jego wersje i konfigurację. **Default** oznacza pozycję dostarczoną przez system. **Ostatnia modyfikacja** pokazuje, kiedy dana pozycja została ostatnio zmieniona. Przycisk **Nowy** tworzy dodatkową pozycję konfiguracji. Menu trzech kropek wiersza domyślnego oferuje **Dostosuj**, które tworzy kopię specyficzną dla organizacji, oraz **Usuwać** (widoczne dla administratorów). Sprawdź dokładnie wybraną pozycję przed użyciem opcji Usuwać.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FctcfxakxpfAcknvIueSQ%252Fimage.png%3Falt%3Dmedia%26token%3Dca599f1e-323d-4b61-99af-760f5f51a75d\&width=768\&dpr=4\&quality=100\&sign=3eee1abc\&sv=2)
-* Pojawi się lista wszystkich dostępnych e-dokumentów.
-*   Zlokalizuj wersję eSLOG, którą chcesz zmodyfikować.
+<figure><img src="../../../../../.gitbook/assets/dbdc-376-eslog-detail-panel-pl.png" alt="Panel wersji po polsku z plakietką Aktywny i ikoną ołówka przy aktywnej wersji"><figcaption>Panel wersji: plakietka <strong>Aktywny</strong> i ołówek przy aktywnej wersji.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FzWM10W6vAigJ44spm4ai%252Fimage.png%3Falt%3Dmedia%26token%3Db61fe4e5-517b-47da-89ca-13a53d370abf\&width=768\&dpr=4\&quality=100\&sign=9d2c40e3\&sv=2)
-
-### **Konfiguracja transformacji i ścieżki XML:**
-
-W **ustawieniach transformacji** możesz zdefiniować ścieżkę do lokalizacji konkretnych informacji w pliku XML i zapisać je w nowej strukturze, co ułatwia dostęp do danych. **Uwaga:** Jeśli korzystasz z tej funkcjonalności, musisz używać nowo utworzonych ścieżek XML, a nie oryginalnych ścieżek XML, w **Podglądzie** i **Ścieżce ekstrakcji**.
-
-#### **Kroki do modyfikacji pliku transformacji:**
-
-1. Otwórz **Transformację**.
-2. Utwórz nowy szkic, klikając ikonę **ołówka**.
-3. Wybierz nowo utworzony szkic.
-4. Utwórz nowe pole lub zmodyfikuj istniejące.
-5. Ustaw pożądaną ścieżkę do ekstrakcji danych.
-6. Kliknij **Zapisz**.
-
-### Konfiguracja podglądu PDF
-
-**Konfiguracja podglądu PDF** jest używana do generowania wersji dokumentu czytelnej dla użytkownika. Możesz ją dostosować za pomocą HTML, aby odpowiadała Twoim potrzebom.
-
-#### **Kroki do modyfikacji pliku podglądu:**
-
-1. Otwórz **Podgląd**.
-2. Utwórz nowy szkic, klikając ikonę **ołówka**.
-3. Wybierz nowo utworzony szkic.
-4. Utwórz nowe pole lub zmodyfikuj istniejące.
-5. Ustaw pożądaną ścieżkę do ekstrakcji danych.
-6. Kliknij **Zapisz**.
-
-### Konfiguracja ścieżek ekstrakcji
-
-**Konfiguracja ścieżek ekstrakcji** jest używana do ekstrakcji danych i wypełniania pól w **ekranie walidacji**, takich jak tabela faktur lub pola skonfigurowane w układzie faktury.
-
-#### **Kroki do modyfikacji** **ścieżek ekstrakcji**:
-
-1. Otwórz **Ścieżki ekstrakcji**.
-2. Utwórz nowy szkic, klikając ikonę **ołówka**.
-3. Wybierz nowo utworzony szkic.
-4. Utwórz nowe pole lub zmodyfikuj istniejące.
-5.  Lewa strona reprezentuje **ID pola DocBits**, które można znaleźć w **Ustawienia → Ustawienia globalne → Typy dokumentów → Faktura → Pola**.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F1UkfNRxu2YiwFEpl4r78%252Fimage.png%3Falt%3Dmedia%26token%3Dc0c75088-5071-422d-89bc-1a65b47c8304\&width=768\&dpr=4\&quality=100\&sign=b671dd86\&sv=2)
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FmmL87niJd0tym9UnOTGg%252Fimage.png%3Falt%3Dmedia%26token%3D52490976-ed01-45b5-a2b1-c8374812ade3\&width=768\&dpr=4\&quality=100\&sign=b9d96dd6\&sv=2)
-6. Prawa strona reprezentuje **ścieżkę do pola** utworzonego w Transformacji.
-7. Kliknij **Zapisz**.
+Wewnątrz konfiguracji ołówek przy aktywnej wersji tworzy szkic. Sprawdź szkic w panelu testowym **Podgląd** na reprezentatywnym, przesłanym identyfikatorze dokumentu, zanim aktywujesz go znacznikiem zatwierdzenia. Ikona kosza przy szkicu usuwa ten szkic. Rzeczywiste nazwy pól i ścieżki XML zależą od Twojego pliku eSLOG; szczegóły edytora znajdziesz w odpowiednim przewodniku powyżej.

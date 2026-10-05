@@ -1,80 +1,71 @@
-# Then
+# Then: kies een actiekaart
 
-## Overzicht van "Then..."-actiekaarten
+Een **Then**-kaart geeft aan wat een workflow moet doen na de **When**-trigger en eventuele **And**-voorwaarden. Selecteer in de **Workflow Builder** **Kaart toevoegen** onder **Dan...**. Kies links een categorie of typ een naam in **Zoekkaart**. Selecteer een kaartvoorbeeld om het toe te voegen, vul de velden in die op de kaart staan, en sla de workflow op. Scroll binnen de kiezer om meer kaarten te zien. Selecteer **×** om te sluiten zonder een kaart toe te voegen. Zie [Workflow](../README.md) voor de volledige volgorde.
 
-### **1. Document Field-acties:**
+De voorbeelden hieronder tonen beschikbare acties, geen voltooide instellingen. Kies de actie die past bij het resultaat dat u wilt.
 
-* **Invert Checkbox:** Deze actie wisselt de status van een selectievakjeveld in een document om.
-* **Set Checkbox:** Hiermee wordt de status van een selectievakjeveld op true (aangevinkt) of false (niet aangevinkt) gezet.
-* **Set Field to Text:** Deze actie stelt een opgegeven documentveld in op een bepaalde tekstwaarde.
+## Document Field
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Zet een selectievakje aan of uit, plaats tekst in een veld, of kopieer de inhoud van het ene veld naar het andere. Kies de veldnamen en waarden die de kaart vraagt. Zie [Document Field](document-field/README.md).
 
-### **2. Document-acties:**
+<figure><img src="../../../.gitbook/assets/then-category-document-field-nl.png" alt="Nederlandse Then-kaartkiezer met Documentveld geselecteerd; voorbeelden tonen selectievakje omkeren, tekst instellen en veld kopiëren."><figcaption>Wijzig een veld of kopieer de inhoud ervan.</figcaption></figure>
 
-* **Approve the Document:** Markeert een document als goedgekeurd binnen het systeem.
-* **Reject the Document:** Markeert een document als afgekeurd.
+## Document
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Kies **Het document goedkeuren** of **Het document afwijzen** wanneer de workflow die beslissing moet nemen. Gebruik eerst een **And**-voorwaarde als de goedkeuring van een controle moet afhangen. Zie [Document](document/README.md).
 
-### **3. Export-acties:**
+<figure><img src="../../../.gitbook/assets/then-category-document-nl.png" alt="Nederlandse Then-kaartkiezer met Document geselecteerd; de voorbeelden Het document goedkeuren en Het document afwijzen zijn zichtbaar."><figcaption>Keur het huidige document goed of wijs het af.</figcaption></figure>
 
-* **Export document with export configuration:** Start het exportproces met een specifieke exportconfiguratie.
-* **Start Export:** Start het exportproces.
+## Logica
 
+Gebruik deze kaarten om waarden tussen getal-, tekst- en booleaanse formaten om te zetten, of om een waarde uit JSON te lezen. Kies de invoer- en uitvoervelden op de geselecteerde kaart.
 
+<figure><img src="../../../.gitbook/assets/then-category-logic-nl.png" alt="Nederlandse Then-kaartkiezer met Logica geselecteerd; zichtbare voorbeelden zetten datatypen om en lezen waarden uit JSON."><figcaption>Zet waarden om voor een latere workflowstap.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Status
 
-### **4. Status-acties:**
+Kies **Change Status** om het document naar een gekozen status te verplaatsen. De kaart kan ook een andere workflow triggeren. Zie [Status](status/README.md).
 
+<figure><img src="../../../.gitbook/assets/then-category-status-nl.png" alt="Nederlandse Then-kaartkiezer met Status geselecteerd; het voorbeeld Change Status bevat een statusveld en een optionele workflow-trigger."><figcaption>Verplaats het document naar een andere status.</figcaption></figure>
 
+## Prompts en scripts
 
-* **Change Status:** Wijzigt de status van een document of taak naar een opgegeven nieuwe status.
+Kies deze categorie om een DocOperator-prompts script uit te voeren. Selecteer het script en de variabelen die de kaart vraagt. De kaart biedt ook uitvoerinstellingen zoals pogingen om opnieuw te proberen.
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-nl.png" alt="Nederlandse Then-kaartkiezer met Prompts en scripts geselecteerd; één DocOperator-prompts script-voorbeeld is zichtbaar."><figcaption>Voer een geconfigureerd DocOperator-prompts script uit.</figcaption></figure>
 
-### **5. Task-acties:**
+## Exporteren
 
-* Toewijzingen en meldingen:
-  * **Assign Task:** Maakt een taak aan en wijst deze met specifieke details toe aan een persoon of groep, met de optie om hen via e-mail op de hoogte te stellen.
-  * **Create a New Task:** Vergelijkbaar met toewijzen, maar gericht op het opzetten van een volledig nieuwe taak binnen het systeem.
+Start een export, exporteer met een gekozen configuratie, of zet een definitieve export in de wachtrij. Kies de exportconfiguratie en de optie voor openstaande taken die op uw kaart staat. Zie [Export](export/README.md).
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-export-nl.png" alt="Nederlandse Then-kaartkiezer met Exporteren geselecteerd; voorbeelden tonen start, geconfigureerde, wachtrij- en alternatieve export."><figcaption>Kies wanneer en hoe het document wordt geëxporteerd.</figcaption></figure>
 
-### **6. Table-acties:**
+## Taak
 
-* **Calculate in Table:** Voert berekeningen uit op tabelgegevens op basis van opgegeven voorwaarden en slaat de resultaten op in een aangewezen kolom.
-* **Change Entries:** Werkt vermeldingen in een tabel bij op basis van opgegeven voorwaarden.
+Maak een taak of melding en wijs deze toe aan een gebruiker of groep. Voer de titel, beschrijving, prioriteit en meldingsinstellingen in die de kaart vraagt. Sommige kaarten wijzen sequentieel toe. Zie [Task](task/README.md).
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-task-nl.png" alt="Nederlandse Then-kaartkiezer met Taak geselecteerd; zichtbare voorbeelden maken of wijzen taken en meldingen toe."><figcaption>Maak opvolgwerk voor een persoon of groep.</figcaption></figure>
 
-### **7. Assignee-acties:**
+## E-mail
 
-* **Assign User from Field:** Wijst een gebruiker toe aan een taak of document op basis van gebruikersgegevens die in een specifiek veld zijn opgeslagen, met een optie voor een terugvalgebruiker als de primaire gebruiker niet beschikbaar is.
-* **Assign Document to User or Group:** Wijst een document rechtstreeks toe aan een gebruiker of groep, zodat de verantwoordelijkheid op de juiste manier wordt belegd.
+Verstuur een e-mail met een gekozen sjabloon, naar ontvangers of naar groepen. Kies het sjabloon en de bestemming op de kaart.
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-email-nl.png" alt="Nederlandse Then-kaartkiezer met E-mail geselecteerd; voorbeelden sturen een e-mail met sjabloon naar ontvangers of groepen."><figcaption>Verstuur een e-mail met sjabloon.</figcaption></figure>
 
-### **8. Externe-interactie-acties:**
+## Tafel
 
-* **Call API:** Verzendt een verzoek naar een externe API, dat kan worden aangepast met specifieke methoden, parameters en gegevens.
-* **Send HTTPS Request:** Vergelijkbaar met API-aanroepen, maar specifiek opgemaakt voor HTTPS-protocollen.
+Wijzig vermeldingen of bereken waarden in een documenttabel. Selecteer de tabel, kolommen, operator en resultaatkolom die de kaart vraagt. Zie [Table](table/README.md).
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-table-nl.png" alt="Nederlandse Then-kaartkiezer met Tafel geselecteerd; voorbeelden wijzigen vermeldingen en berekenen resultaatkolommen."><figcaption>Werk tabelgegevens bij of bereken ze.</figcaption></figure>
 
-### **9. Geavanceerde verwerking:**
+## Cessionaris
 
-* **Run Workflow:** Triggert een andere workflow binnen het systeem, waardoor complexe procesketens mogelijk zijn.
+Wijs het document toe aan een gebruiker, groep, ontvanger of sub-organisatie. Sommige kaarten gebruiken een veld of beslistabel en bieden een fallback. Kies de juiste bestemming en fallback op de geselecteerde kaart. Zie [Assignee](assignee/README.md).
 
-#### Praktische toepassing
+<figure><img src="../../../.gitbook/assets/then-category-assignee-nl.png" alt="Nederlandse Then-kaartkiezer met Cessionaris geselecteerd; zichtbare voorbeelden wijzen een gebruiker, ontvanger, groep of leverancierscontact toe."><figcaption>Routeer het document naar de volgende verantwoordelijke persoon of groep.</figcaption></figure>
 
-Deze actiekaarten worden gebruikt om reacties te automatiseren op basis van specifieke triggers die in de eerdere delen van de workflowconfiguratie zijn vastgesteld. Bijvoorbeeld:
+## Actie
 
-* Als een document wordt geïdentificeerd als beoordeling vereisend, kan de actie "Approve the Document" automatisch worden getriggerd zodra het aan alle opgegeven voorwaarden voldoet.
-* Voor gegevensbeheertaken zorgen de acties "Set Checkbox" of "Set Field to Text" ervoor dat documentvelden automatisch worden bijgewerkt, wat handmatige gegevensinvoer en de kans op fouten vermindert.
-* Complexe taken zoals API-interacties of statuswijzigingen stroomlijnen interacties niet alleen binnen het ERP-systeem, maar ook met externe diensten en tools, wat de integratie en functionaliteit verbetert.
+Voer een andere workflow uit, stuur een HTTPS-verzoek, roep een API aan, of gebruik de kaart voor de berekening van kostenverhogingstoeslagen. Deze acties kunnen andere systemen beïnvloeden; vraag uw beheerder welk eindpunt en welke instellingen te gebruiken. Zie [Action](action/README.md).
 
-### Conclusie
-
-Het "Then..."-gedeelte in uw workflowsysteem biedt krachtige hulpmiddelen om precieze acties te definiëren die moeten plaatsvinden wanneer aan voorwaarden in de workflow is voldaan. Door deze acties effectief te gebruiken, kunnen bedrijven routineprocessen automatiseren, de gegevensnauwkeurigheid waarborgen en dynamisch reageren op veranderende informatie en systeemtoestanden. Begrijpen hoe u deze acties configureert en gebruikt, is essentieel om de efficiëntie en effectiviteit van de workflowmogelijkheden van uw ERP-systeem te maximaliseren.
+<figure><img src="../../../.gitbook/assets/then-category-action-nl.png" alt="Nederlandse Then-kaartkiezer met Actie geselecteerd; voorbeelden tonen Werkstroom uitvoeren, HTTPS-verzoek, API-aanroep en berekening kostenverhogingstoeslag."><figcaption>Start een andere workflow of integratie-actie.</figcaption></figure>

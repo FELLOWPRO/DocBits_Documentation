@@ -1,38 +1,38 @@
 # Dokumenttypen
 
-Dokumenttypen teilen DocBits mit, mit welchen Arten von Dokumenten Ihre Organisation arbeitet. Ein Administrator findet sie unter **Settings → Document Types** im Bereich **Document Processing** des Einstellungsmenüs.
+Dokumenttypen geben an, mit welchen Dokumentarten Ihre Organisation arbeitet. Administratoren finden sie unter **Einstellungen → Dokumenttypen** im Bereich **Dokumentenverarbeitung** des Einstellungsmenüs.
 
-Die Seite zeigt zuerst die **Default Document Types**, die DocBits bereitstellt und die Sie nicht löschen können, gefolgt von den **Custom Document Types**, die für Ihre Organisation erstellt wurden. Jeder Typ hat eine eigene Karte.
+Die Seite zeigt zuerst **Standard-Dokumenttypen**, die DocBits bereitstellt und die Sie nicht löschen können, darunter **Benutzerdefinierte Dokumenttypen**, die für Ihre Organisation erstellt wurden. Jeder Typ hat eine eigene Karte.
 
-<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="Seite „Document Types“ mit der Karte für Rechnungen und weiteren Standard-Dokumenttypen, Schaltern für Aktivierung und Extraktion, Zahnrad für die Einstellungen und Konfigurationslinks"><figcaption><p>Wählen Sie eine Dokumenttyp-Karte aus, um diesen Typ zu konfigurieren.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-types-overview-de-20261005.png" alt="Seite „Dokumenttypen“ mit den Karten für Rechnung und weitere Standard-Dokumenttypen, Aktivieren- und Extraction-Schaltern, Zahnrad für Einstellungen sowie Links wie Layouts, Felder und Tabellen"><figcaption><p>Wählen Sie die Karte eines Dokumenttyps aus, um diesen Typ zu konfigurieren.</p></figcaption></figure>
 
-## Was Sie auf einer Karte tun können
+## Das können Sie auf einer Karte tun
 
-| Steuerelement | Funktion |
+| Bedienelement | Funktion |
 | --- | --- |
-| **Activate** | Macht diesen Dokumenttyp in Ihrer Organisation verfügbar oder nicht verfügbar. Ein blauer Schalter ist eingeschaltet, ein grauer ausgeschaltet. |
-| **Extraction** | Legt den Extraktionsmodus fest: **Flex**, wenn eingeschaltet, oder **Fix**, wenn ausgeschaltet. Der Schalter schaltet die Extraktion nicht einfach ein oder aus. Bewegen Sie den Mauszeiger über den Schalter, um den aktuellen Modus anzuzeigen. |
-| **Settings** (Zahnrad) | Öffnet **More Settings** für diesen Typ. Erweitern Sie dort eine Kategorie, um ihre Optionen anzuzeigen. Die Kategorien hängen vom Dokumenttyp ab. |
-| **Layouts** | Öffnet die Layout-Konfiguration. Die nächsten Schritte finden Sie im [Layout Builder](layout-builder.md). |
-| **Fields** | Öffnet die Feld- und Erkennungseinstellungen für diesen Typ. Wie Sie diese konfigurieren, erfahren Sie unter [Felder](../../settings/global-settings/document-types/fields/README.md). |
-| **Tables** | Öffnet die Konfiguration der Tabellenspalten für diesen Typ. |
-| **Scripts** | Öffnet die Verarbeitungsskripte, sofern diese Funktion verfügbar ist. |
-| **Model Training** | Öffnet das Modelltraining für diesen Typ. |
-| **E-Doc** | Öffnet die Einstellungen für elektronische Dokumente, sofern der Typ sie unterstützt. |
-| **Document Sub Types** | Öffnet die Untertypen dieses Dokumenttyps. |
+| **Aktivieren** | Macht diesen Dokumenttyp in Ihrer Organisation verfügbar oder deaktiviert ihn. Ein blauer Schalter steht auf An, ein grauer auf Aus. |
+| **Extraction** | Wählt den Extraktionsmodus: **Flex** bei aktiviertem, **Fix** bei deaktiviertem Schalter. Der Schalter schaltet die Extraktion nicht einfach ein oder aus. Fahren Sie mit der Maus über den Schalter, um den aktuellen Modus zu sehen. |
+| **Einstellungen** (Zahnrad) | Öffnet **Weitere Einstellungen** für diesen Typ. Klappen Sie dort eine Kategorie auf, um ihre Optionen zu sehen. Die Kategorien hängen vom Dokumenttyp ab. |
+| **Layouts** | Öffnet die Layout-Konfiguration. Die nächsten Schritte beschreibt [Layout-Builder](layout-builder.md). |
+| **Felder** | Öffnet die Felder und Erkennungseinstellungen für diesen Typ. Wie Sie diese konfigurieren, steht im Leitfaden [Felder](../../settings/global-settings/document-types/fields/README.md). |
+| **Tabellen** | Öffnet die Tabellenspalten-Konfiguration für diesen Typ. |
+| **Skripte** | Öffnet die Verarbeitungsskripte, wenn diese Funktion verfügbar ist. |
+| **Modell Training** | Öffnet das Modell-Training für diesen Typ. |
+| **E-Doc** | Öffnet die Einstellungen für elektronische Dokumente, wenn der Typ diese unterstützt. |
+| **Untertypen von Dokumenten** | Öffnet die Untertypen dieses Dokumenttyps. |
 
-Je nach den Funktionen Ihrer Organisation sehen Sie möglicherweise weitere Links, etwa zu Validierungs- oder Transformationsregeln. Wählen Sie den Link auf der Karte des Typs, den Sie ändern möchten.
+Je nach Funktionen Ihrer Organisation sehen Sie weitere Links, etwa für Validierungs- oder Transformationsregeln. Wählen Sie den Link auf der Karte des Typs, den Sie ändern möchten.
 
 ## Felder und Erkennungseinstellungen bearbeiten
 
-Klicken Sie auf einer Karte auf **Fields**, um die Feldgruppen anzuzeigen. Oben auf dieser Seite legen **OCR** und **Match Score** die Schwellenwerte für die Erkennung fest, **Restore Defaults** setzt diese Schwellenwerte zurück und mit **Search by Name** finden Sie ein Feld. Mit **Create new group** ordnen Sie Felder in Gruppen, mit **Create field** fügen Sie innerhalb einer Gruppe ein Feld hinzu. **Master Data Settings** öffnet die zugehörige Stammdatenkonfiguration.
+Klicken Sie auf einer Karte auf **Felder**, um die Feldgruppen des Typs zu sehen. Oben auf dieser Seite setzen **OCR** und **MATCH SCORE** die Erkennungs-Schwellenwerte, **STANDARDEINSTELLUNGEN WIEDERHERSTELLEN** setzt diese Werte zurück, und **Suche nach Name** findet ein Feld. Mit **Neue Gruppe erstellen** ordnen Sie Felder in Gruppen, und **Feld erstellen** fügt innerhalb einer Gruppe ein Feld hinzu. **Stammdaten-Einstellungen** öffnet die zugehörige Stammdaten-Konfiguration.
 
-Jede Feldzeile enthält Steuerelemente wie **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score und Formula. Lesen Sie die [Anleitung zu Feldern](../../settings/global-settings/document-types/fields/README.md), bevor Sie einzelne Werte ändern. Klicken Sie auf der Seite „Fields“ auf **Save Settings**, um Ihre Änderungen zu speichern.
+Jede Feldzeile enthält Bedienelemente wie **ERFORDERLICH**, **Schreibgeschützt**, **Versteckt**, **ÜBERPRÜFUNG ERFORDERLICH**, **KI Nutzen**, OCR, Match Score und Formel. Lesen Sie den [Felder-Leitfaden](../../settings/global-settings/document-types/fields/README.md), bevor Sie einzelne Werte ändern. Klicken Sie auf der Felder-Seite auf **Einstellungen speichern**, damit Ihre Änderungen erhalten bleiben.
 
-<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="Seite „Fields“ für Rechnungen mit Erkennungseinstellungen, Feldgruppen, Steuerelementen pro Feld und Save Settings"><figcaption><p>Die Seite „Fields“ hat eine eigene Schaltfläche „Save Settings“.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-de-20261005.png" alt="Felder-Seite des Dokumenttyps Rechnung mit Erkennungseinstellungen, Feldgruppen, Bedienelementen pro Feld und dem Knopf Einstellungen speichern"><figcaption><p>Die Felder-Seite hat einen eigenen Knopf „Einstellungen speichern“.</p></figcaption></figure>
 
-## Benutzerdefinierten Dokumenttyp erstellen
+## Einen eigenen Dokumenttyp anlegen
 
-Scrollen Sie zu **Custom Document Types** und klicken Sie auf **+ New**. Folgen Sie der Anleitung [Dokumenttypen hinzufügen/bearbeiten](../../settings/global-settings/document-types/adding-editing-document-types.md), um den neuen Typ einzurichten.
+Scrollen Sie zu **Benutzerdefinierte Dokumenttypen** und klicken Sie auf **Neu**. Wie Sie den neuen Typ einrichten, beschreibt [Dokumenttypen hinzufügen/bearbeiten](../../settings/global-settings/document-types/adding-editing-document-types.md).
 
-<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="Unterer Bereich der Seite „Document Types“ mit dem Abschnitt „Custom Document Types“ und der Schaltfläche „New“"><figcaption><p>Mit „New“ unter „Custom Document Types“ beginnen Sie, einen Typ zu erstellen.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-types-custom-new-de-20261005.png" alt="Bereich „Benutzerdefinierte Dokumenttypen“ am Ende der Dokumenttypen-Seite mit dem Knopf Neu"><figcaption><p>Beginnen Sie unter „Benutzerdefinierte Dokumenttypen“ mit **Neu**, um einen Typ anzulegen.</p></figcaption></figure>

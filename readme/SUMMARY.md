@@ -276,7 +276,6 @@
     * [Benutzerdefinierte Filter](overview/settings/global-settings/page-1.md)
     * [Integration](overview/settings/global-settings/integration/README.md)
       * [API-Aufrufe und Beispiele](overview/settings/global-settings/integration/api-calls-and-examples.md)
-      * [API-Schlüsselverwaltung](administration-and-setup/settings/global-settings/integration/api-key-management.md)
     * [Dashboard](administration-and-setup/settings/global-settings/dashboard/README.md)
       * [Anpassen von Filtern](administration-and-setup/settings/global-settings/dashboard/customizing-filters.md)
   * [Dokumentenverarbeitung](admin-section/settings/document-processing/README.md)

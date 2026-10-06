@@ -1,63 +1,13 @@
-# Activación
+# Activar o desactivar un tipo de documento
 
-## Habilitar o deshabilitar tipos de documentos en un sistema de gestión documental como Docbits permite a una organización mantener activos solo los tipos de documentos que necesita para garantizar una gestión eficiente y claridad.
+Los administradores pueden elegir qué tipos de documentos están disponibles para su organización. Puede cambiar esto en la página **Tipos de Documento** sin eliminar el tipo ni su configuración.
 
-### Aquí están los pasos para habilitar y deshabilitar tipos de documentos, junto con una explicación de la función de alternancia en la interfaz de usuario:
+1. Abra **Ajustes → Tipos de Documento**.
+2. Busque el tipo de documento, por ejemplo **Factura**, en **Tipos de documentos predeterminados** o **Tipos de documentos personalizados**.
+3. Use el interruptor **Activar** en la tarjeta de ese tipo. Un interruptor de color significa que el tipo está activo; un interruptor gris significa que está inactivo. Espere el mensaje de confirmación antes de salir de la página. Este interruptor no tiene un botón de guardar aparte.
 
-#### **Acceder a la Gestión de Tipos de Documentos**
+<figure><img src="../../../../.gitbook/assets/document-type-activation-es-20261007.png" alt="Página de Ajustes de Tipos de Documento en español con los interruptores Activar y Extraction en las tarjetas de Factura, Delivery Note y Order Confirmation"><figcaption><p>Cada tipo de documento tiene su propio interruptor Activar en el lado derecho de su tarjeta.</p></figcaption></figure>
 
-* Iniciar sesión: Inicie sesión en DocBits con derechos de administrador.
-* Navegar: Vaya a Configuración.
-* Tipos de Documentos: Busque la sección Tipos de Documentos.
+El interruptor **Extraction** que aparece junto a **Activar** es un ajuste distinto. Selecciona el modo de extracción (Flex o Fix); no activa ni desactiva el tipo de documento. El icono de engranaje abre más ajustes de ese tipo. Los enlaces bajo el nombre del tipo abren sus diseños, campos, tablas, scripts y demás áreas de configuración disponibles.
 
-
-
-**Acceder a la Lista de Tipos de Documentos**
-
-* Acceda a la lista de tipos de documentos existentes. Esta lista muestra todos los tipos de documentos definidos, tanto activos como inactivos.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_default_values.png" alt="Docbits Field Default Values"><figcaption></figcaption></figure>
-
-**Activar o desactivar un tipo de documento Seleccionar Tipo de Documento:**
-
-* Seleccione el tipo de documento que desea habilitar o deshabilitar.&#x20;
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_enable_historization.png" alt="Docbits Field Enable Historization"><figcaption></figcaption></figure>
-
-**Usar la función de alternancia:**
-
-* En la interfaz de usuario, hay un interruptor junto a cada tipo de documento que permite la activación y desactivación.&#x20;
-
-**Activación:**
-
-* Si el tipo de documento está actualmente desactivado, el interruptor puede mostrar una posición gris o apagada.&#x20;
-* Haga clic en el interruptor para activar el tipo de documento. El interruptor cambia su posición y color para indicar la activación.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_user_permissions.png" alt="Docbits Field User Permissions"><figcaption></figcaption></figure>
-
-**Desactivación:**
-
-* Si el tipo de documento está actualmente activado, el interruptor muestra una posición coloreada o encendida.&#x20;
-* Haga clic en el interruptor para desactivar el tipo de documento. El interruptor cambia su posición y color para indicar la desactivación.
-
-<figure><img src="../../../../.gitbook/assets/docbits_deactivate_doc_type_switch.png" alt="Docbits Deactivate Doc Type Switch"><figcaption></figcaption></figure>
-
-
-
-**Guardar:**&#x20;
-
-* Asegúrese de guardar todos los cambios. Algunos sistemas guardan los cambios automáticamente, mientras que otros requieren una confirmación explícita.
-
-### Notificación y documentación
-
-**Informar a los usuarios:**&#x20;
-
-* Informe a los usuarios sobre la activación o desactivación del tipo de documento, especialmente si afecta sus procesos de trabajo.
-
-**Actualizar documentación:**&#x20;
-
-* Actualice la documentación del sistema para reflejar el estado actual de los tipos de documentos.
-
-
-
-Conclusión La capacidad de habilitar o deshabilitar tipos de documentos según las necesidades de la organización es una herramienta útil para gestionar el procesamiento de documentos en Docbits. Simplemente usando la función de alternancia en la interfaz de usuario, los administradores pueden reaccionar de manera flexible y eficiente y asegurar que el sistema esté alineado óptimamente con las necesidades comerciales actuales.
+DocBits proporciona los tipos de documento predeterminados, que no se pueden eliminar. También puede crear y gestionar tipos personalizados. Consulte [Agregar y editar tipos de documentos](adding-editing-document-types.md) para los siguientes pasos de la configuración y [Columnas de tabla](table-columns/README.md) para configurar los elementos de línea extraídos.

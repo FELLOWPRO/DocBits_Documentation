@@ -1,5 +1,7 @@
 # Unterorganisationen
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/de.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Unterorganisationen"><figcaption><p>Seite „Unterorganisationen“</p></figcaption></figure>
 
 Unterorganisationen ermöglichen es Ihnen, eine hierarchische Struktur in DocBits aufzubauen, um Dokumente, Benutzer und Workflows über verschiedene Abteilungen, Teams oder Einheiten hinweg zu verwalten.

@@ -10,7 +10,7 @@ Welcome to **DocBits**, your comprehensive source for documentation strategies a
 
 [**DocBits**](https://www.docbits.com) **by** [**FELLOWPRO AG**](https://www.fellowpro.com) is an advanced intelligent document processing (IDP) solution designed to optimize and automate the handling of business documents. 
 
-Official Documentation: [doc.docbits.com](https://doc.docbits.com)
+Official Documentation: [docs.docbits.com](https://docs.docbits.com/)
 
 Below is a summary of its unique features and benefits:
 

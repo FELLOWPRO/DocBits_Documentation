@@ -2,13 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
+Aquí solo tiene que introducir la información requerida de su proveedor de correo electrónico: protocolo, encriptación, nombre del servidor, puerto, nombre de usuario, dirección de correo electrónico y contraseña, así como la carpeta de correo.
 
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-es-20261006.png" alt="El diálogo Configuración del servidor de correo electrónico con el protocolo IMAP, el nombre del servidor, el puerto 993, la encriptación SSL y el nombre de usuario y el correo electrónico escritos."><figcaption><p>El diálogo «Configuración del servidor de correo electrónico» con valores de ejemplo: protocolo IMAP, servidor imap.example.com, puerto 993, encriptación SSL.</p></figcaption></figure>
 
-Aquí solo necesitas ingresar la información requerida para tu proveedor de correo electrónico, encriptación, nombre del servidor, puerto, nombre de usuario, dirección de correo electrónico, contraseña, así como la carpeta de correo electrónico.
+## Aspectos a tener en cuenta
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
-
-Cosas a tener en cuenta
-
-* Ingresa toda la información necesaria en la interfaz de usuario. Otra información como el servidor, puerto, etc. Depende del proveedor (una búsqueda rápida en Google debería ayudar).
-* La carpeta y Mover-Importado tienen la misma función aquí. La carpeta no se puede desactivar, pero usará la Bandeja de entrada de forma predeterminada si se deja vacía.
+* Introduzca toda la información necesaria en la interfaz. La demás información, como el servidor y el puerto, depende del proveedor (una búsqueda rápida en la web debería ayudar).
+* Carpeta y Move-Imported tienen aquí la misma función. La carpeta no se puede desactivar; si la deja vacía, se usa Bandeja de entrada de forma predeterminada.

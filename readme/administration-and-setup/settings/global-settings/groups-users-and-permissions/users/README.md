@@ -1,5 +1,7 @@
 # Users
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/de.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Benutzerverwaltung"><figcaption><p>Seite zur Benutzerverwaltung</p></figcaption></figure>
 
 Auf der Seite „Users“ können Administratoren alle Benutzerkonten in Ihrer DocBits-Organisation verwalten. Hier können Sie neue Benutzer hinzufügen, Rollen zuweisen und den Zugriff steuern.

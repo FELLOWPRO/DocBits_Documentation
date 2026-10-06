@@ -236,6 +236,8 @@
       * [API Key](administration-and-setup/settings/global-settings/integration/api-key.md)
       * [Chiamate API ed Esempi](administration-and-setup/settings/global-settings/integration/api-calls-and-examples.md)
       * [Gestione delle Chiavi API](administration-and-setup/settings/global-settings/integration/api-key-management.md)
+      * [Configurazione SSO Infor](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/README.md)
+          * [V2](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v2.md)
           * [Azure SSO](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/azure-sso.md)
       * [Best practices](administration-and-setup/settings/global-settings/integration/best-practices.md)
     * [Cruscotto](administration-and-setup/settings/global-settings/cruscotto/README.md)

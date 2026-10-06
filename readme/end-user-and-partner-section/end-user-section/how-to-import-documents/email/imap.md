@@ -2,11 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-Tutaj wystarczy wprowadzić wymagane informacje dotyczące dostawcy poczty e-mail, szyfrowania, nazwy serwera, portu, nazwy użytkownika, adresu e-mail, hasła oraz folderu e-mail.
+W tym miejscu wystarczy wprowadzić wymagane informacje od dostawcy poczty e-mail: protokół, szyfrowanie, nazwę serwera, port, nazwę użytkownika, adres e-mail i hasło, a także folder poczty.
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-pl-20261006.png" alt="Okno Konfiguracja serwera poczty e-mail z protokołem IMAP, nazwą serwera, portem 993, szyfrowaniem SSL oraz wypełnioną nazwą użytkownika i adresem e-mail."><figcaption><p>Okno „Konfiguracja serwera poczty e-mail” z przykładowymi wartościami: protokół IMAP, serwer imap.example.com, port 993, szyfrowanie SSL.</p></figcaption></figure>
 
-Rzeczy do zanotowania
+## Uwagi
 
-* Wprowadź wszystkie potrzebne informacje do interfejsu użytkownika. Inne informacje, takie jak serwer, port itp., zależą od hosta (szybkie wyszukiwanie w Google powinno pomóc).
-* Folder i Move-Imported mają tutaj tę samą funkcję. Folder nie może być wyłączony, ale domyślnie użyje Skrzynki odbiorczej, jeśli pozostanie pusty.
+* Wprowadź wszystkie wymagane informacje w interfejsie. Pozostałe informacje, takie jak serwer i port, zależą od hosta (szybka wyszukiwarka internetowa powinna pomóc).
+* Folder i Move-Imported pełnią tu tę samą funkcję. Foldera nie można wyłączyć; jeśli pozostawisz go pusty, domyślnie używana jest skrzynka odbiorcza.

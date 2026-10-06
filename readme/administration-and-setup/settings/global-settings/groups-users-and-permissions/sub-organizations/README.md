@@ -1,5 +1,7 @@
 # Suborganizações
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/pt.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Suborganizações"><figcaption><p>Página de Suborganizações</p></figcaption></figure>
 
 As suborganizações permitem criar uma estrutura hierárquica no DocBits para gerir documentos, utilizadores e fluxos de trabalho em diferentes departamentos, equipas ou entidades.

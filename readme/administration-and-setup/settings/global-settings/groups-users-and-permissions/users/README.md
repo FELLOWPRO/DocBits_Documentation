@@ -1,5 +1,7 @@
 # Utilisateurs
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/fr.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gestion des utilisateurs"><figcaption><p>Page de gestion des utilisateurs</p></figcaption></figure>
 
 La page Utilisateurs permet aux administrateurs de gérer tous les comptes utilisateurs de votre organisation DocBits. Vous pouvez y ajouter de nouveaux utilisateurs, attribuer des rôles et contrôler les accès.

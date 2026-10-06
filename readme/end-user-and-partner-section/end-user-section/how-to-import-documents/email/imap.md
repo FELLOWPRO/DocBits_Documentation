@@ -2,13 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
+Choose IMAP as the protocol and enter the information for your email provider: server name, port, encryption, username, email address and password. In the next steps you set the options and the email folder.
 
-
-Here you just need to enter the required information for your email provider, encryption, server name, port, username, email address, password as well as the email folder.
-
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv\_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-en-20261006.png" alt="Email Server Setup dialog with protocol IMAP, server name, port 993, SSL encryption, username, email address and password"><figcaption><p>Email Server Setup with example values. Replace them with the details of your email provider.</p></figcaption></figure>
 
 Things to Note
 
-* Input all needed information into the UI. Other information like the server, port, etc. Depends on the host (a quick Google search should help).
-* Folder and Move-Imported have the same Function here. Folder can not be disabled, but will use Inbox by default if left empty.
+* Input all needed information into the UI. Other information like the server, port, etc. depends on the host (a quick Google search should help).
+* Folder and Move-Imported have the same function here. Folder can not be disabled, but will use Inbox by default if left empty.

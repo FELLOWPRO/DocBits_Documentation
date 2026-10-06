@@ -2,13 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
+Wählen Sie IMAP als Protokoll und geben Sie die Daten Ihres E-Mail-Anbieters ein: Servername, Port, Verschlüsselung, Benutzername, E-Mail-Adresse und Passwort. In den nächsten Schritten legen Sie die Optionen und den E-Mail-Ordner fest.
 
-
-Hier müssen Sie lediglich die erforderlichen Informationen für Ihren E-Mail-Anbieter eingeben: Verschlüsselung, Servername, Port, Benutzername, E-Mail-Adresse, Passwort sowie den E-Mail-Ordner.
-
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv\_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-de-20261006.png" alt="Dialog „E-Mail-Server einrichten“ mit Protokoll IMAP, Servername, Port 993, SSL-Verschlüsselung, Benutzername, E-Mail-Adresse und Passwort"><figcaption><p>Server-Einrichtung mit Beispielwerten. Ersetzen Sie diese durch die Angaben Ihres E-Mail-Anbieters.</p></figcaption></figure>
 
 Zu beachten
 
-* Geben Sie alle benötigten Informationen in die Benutzeroberfläche ein. Weitere Informationen wie Server, Port usw. hängen vom Host ab (eine kurze Google-Suche sollte helfen).
-* Ordner und „Importierte verschieben" haben hier dieselbe Funktion. Der Ordner kann nicht deaktiviert werden, verwendet aber standardmäßig den Posteingang, wenn er leer gelassen wird.
+* Geben Sie alle benötigten Informationen in der Benutzeroberfläche ein. Angaben wie Server, Port usw. hängen vom Anbieter ab (eine kurze Websuche hilft).
+* Ordner und „Importierte verschieben“ haben hier dieselbe Funktion. Der Ordner kann nicht deaktiviert werden, verwendet aber standardmäßig den Posteingang, wenn er leer bleibt.

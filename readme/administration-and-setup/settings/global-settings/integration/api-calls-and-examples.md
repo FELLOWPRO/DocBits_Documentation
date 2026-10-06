@@ -7,7 +7,7 @@ Une requête API permet à un autre programme de lire ou de mettre à jour des i
 1. Demandez l'accès à un administrateur de l'organisation et [créer une clé API](api-key-management.md) pour l'intégration. Conservez la clé dans un coffre secret ; ne la mettez jamais dans une capture d'écran, un document ou un fichier source.
 2. Ouvrez la [référence API Sandbox actuelle](https://sandbox.api.docbits.com/docs). Elle liste les opérations disponibles, les valeurs requises et des exemples de réponse pour cet environnement. Utilisez la référence de votre propre environnement quand vous quittez le Sandbox.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-382-api-key-context-fr.png" alt="Section Clé API de DocBits en français avec le bouton Créer une clé API ; aucune valeur de clé n'est visible"><figcaption><p>Vous trouvez les clés API sous Settings → Integration &amp; SSO. L'image ne contient aucune valeur de clé.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-382-api-key-context-fr.png" alt="Section Clé API de DocBits en français avec le bouton Créer une clé API ; aucune valeur de clé n'est visible"><figcaption><p>Vous trouvez les clés API sous Paramètres → Intégration et SSO. L'image ne contient aucune valeur de clé.</p></figcaption></figure>
 
 ## Exemple : lire les types de documents
 

@@ -2,41 +2,20 @@
 hidden: true
 ---
 
-# In Order Confirmation Purchase Order
+# Confrontare una conferma d'ordine con un ordine di acquisto
 
-### Confronto con l'ordine d'acquisto:
+Usa **Confronto con l'ordine di acquisto** nel Workflow Builder quando una conferma d'ordine deve essere verificata rispetto al suo ordine di acquisto. Aggiungi la scheda sotto **E....**, poi scegli i dati dell'ordine, un operatore e cosa deve accadere con il risultato. Gli screenshot qui sotto mostrano due versioni disponibili della scheda nell'interfaccia italiana. I loro campi sono ancora segnaposto; impostali per il tuo workflow prima di salvare.
 
-**In Order Confirmation Purchase Order**
+## Scrivere il risultato in un campo
 
-<figure><img src="https://lh7-us.googleusercontent.com/glQHETatKah-1YugeLqBb7Jim6lNJxuarRv-KEMv4NPzFfcjSm6mVhTMdI30nxdJ0SHXZ55Oup6KH7K-J6IxjUOiG0wxUX8toAaCopgBJwPyr94CPjoKuauNTmoHGGhg6f3gwHD39W7gpvijg4LQVJ4" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-410-workflow-card-write-text-it.png" alt="Scheda Confronto con l'ordine di acquisto nel Workflow Builder con i segnaposto Dati dell'ordine, Operatore, Testo, Nome del campo e Risultato della condizione." width="563"><figcaption>Versione 2: scrivere un testo in un campo in base al risultato della condizione.</figcaption></figure>
 
-#### Scheda Logic: Corrispondenza di Quantità, Prezzo unitario o Sconto
+Scegli **Dati dell'ordine** dalla conferma d'ordine e un **Operatore** per il confronto con l'ordine di acquisto. Inserisci il **Testo** da scrivere, seleziona il **Nome del campo** e scegli il **Risultato della condizione** che deve attivare la scrittura.
 
-Questa scheda logica è progettata per verificare automaticamente che la quantità, il prezzo unitario o lo sconto indicati in una conferma d'ordine corrispondano alle cifre corrispondenti nell'ordine d'acquisto. Questa verifica garantisce coerenza e accuratezza tra ciò che è stato ordinato e ciò che il fornitore conferma di consegnare.
+## Confrontare i dati
 
-#### Condizione di attivazione
+<figure><img src="../../../../.gitbook/assets/dbdc-410-workflow-card-compare-as-it.png" alt="Scheda Confronto con l'ordine di acquisto nel Workflow Builder con i segnaposto Qualsiasi/Tutti, Dati dell'ordine, Operatore e Dati di confronto." width="563"><figcaption>Versione 4: confrontare i dati selezionati della conferma d'ordine con i dati dell'ordine di acquisto.</figcaption></figure>
 
-La logica viene attivata quando una qualsiasi delle seguenti condizioni è soddisfatta in una conferma d'ordine rispetto all'ordine d'acquisto originale:
+Scegli **Qualsiasi/Tutti** per decidere se deve corrispondere una sola condizione selezionata o tutte. Poi seleziona **Dati dell'ordine**, **Operatore** e **Dati di confronto** per il confronto con l'ordine di acquisto.
 
-* **Quantity**: La quantità degli articoli ordinati corrisponde alla quantità confermata dal fornitore.
-* **Unit Price**: Il prezzo per articolo concordato corrisponde alla conferma del fornitore.
-* **Discount**: Eventuali sconti applicati sono coerenti tra l'ordine d'acquisto e la conferma d'ordine.
-
-#### Esiti
-
-* **Equals**: Se la quantità, il prezzo unitario o lo sconto della conferma d'ordine corrispondono esattamente all'ordine d'acquisto, il sistema considera la conferma valida e procede con i passaggi successivi del processo di approvvigionamento.
-* **Not Equal**: Se c'è una discrepanza nella quantità, nel prezzo unitario o nello sconto, il sistema segnala la conferma d'ordine per la revisione manuale. Ciò garantisce che eventuali discordanze vengano risolte prima di procedere.
-
-#### Vantaggi
-
-* **Accuratezza e coerenza**: Mantiene l'accuratezza nel processo di approvvigionamento, garantendo che i pagamenti e le consegne avvengano in base a cifre corrette.
-* **Efficienza**: Automatizza il processo di verifica, riducendo la necessità di controlli manuali e accelerando l'elaborazione degli ordini.
-* **Controllo dei costi**: Aiuta a prevenire pagamenti in eccesso o consegne errate intercettando precocemente le discrepanze nel processo.
-
-<figure><img src="https://lh7-us.googleusercontent.com/DRTMJxJ9XLeC5zWSU8QuZwPLkqHzmCUm9RwiUZIkcc8pVxMZsxLv56dX9spzqr7KeDkTigbeBX2DvAZRe-6MdqOgAnrO-QPnCbi4e6hP4--P_O0A0DSoQJxjGeefOS1p6GuXHs1YXv-A73DXYaE8qlI" alt="" width="563"><figcaption></figcaption></figure>
-
-1. **Definire i parametri di confronto**: Imposta i campi specifici (quantità, prezzo unitario, sconto) che la scheda logica verificherà per individuare una corrispondenza.
-2. **Automatizzare la verifica**: Configura il sistema per confrontare automaticamente questi dettagli al ricevimento di una conferma d'ordine.
-3. **Personalizzare gli avvisi**: Decidi il workflow per la gestione delle discrepanze, inclusa la personalizzazione degli avvisi per la revisione manuale.
-
-Questa scheda logica è fondamentale per garantire che i dettagli di una conferma d'ordine siano allineati all'ordine d'acquisto originale, salvaguardando l'integrità del ciclo di approvvigionamento. \`\`
+Per i passaggi circostanti, vedi [Flusso di lavoro](../../README.md) e [Confronto con l'ordine di acquisto](README.md).

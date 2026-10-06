@@ -1,5 +1,7 @@
 # Korisnici
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Upravljanje korisnicima"><figcaption><p>Stranica za upravljanje korisnicima</p></figcaption></figure>
 
 Stranica „Korisnici“ omogućava administratorima da upravljaju svim korisničkim nalozima u vašoj DocBits organizaciji. Ovde možete dodavati nove korisnike, dodeljivati uloge i kontrolisati pristup.

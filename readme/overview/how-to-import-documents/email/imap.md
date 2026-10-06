@@ -1,10 +1,12 @@
 # IMAP
 
-Here you just need to enter the required information for your email provider, encryption, server name, port, username, email address, password as well as the email folder.
+{% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv\_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
+Burada yalnızca e-posta sağlayıcınızla ilgili gerekli bilgileri girmeniz yeterlidir: protokol, şifreleme, sunucu adı, liman, kullanıcı adı, e-posta adresi ve şifre ile e-posta klasörü.
 
-Things to Note
+<figure><img src="../../../.gitbook/assets/imap-email-server-setup-tr-20261006.png" alt="IMAP protokolü, sunucu adı, 993 limanı, SSL şifrelemesi ile kullanıcı adı ve e-posta adresi doldurulmuş E-posta Sunucusu Kurulumu iletişim kutusu."><figcaption><p>Örnek değerlerle “E-posta Sunucusu Kurulumu” iletişim kutusu: protokol IMAP, sunucu imap.example.com, liman 993, şifreleme SSL.</p></figcaption></figure>
 
-* Input all needed information into the UI. Other information like the server, port, etc. Depends on the host (a quick Google search should help).
-* Folder and Move-Imported have the same Function here. Folder can not be disabled, but will use Inbox by default if left empty.
+## Dikkat edilecekler
+
+* Gerekli tüm bilgileri arayüze girin. Sunucu ve liman gibi diğer bilgiler sağlayıcıya bağlıdır (hızlı bir web araması yardımcı olur).
+* Klasör ve Move-Imported burada aynı işlevi görür. Klasör devre dışı bırakılamaz; boş bırakılırsa varsayılan olarak Gelen Kutusu kullanılır.

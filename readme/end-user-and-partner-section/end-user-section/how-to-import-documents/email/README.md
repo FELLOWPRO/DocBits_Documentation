@@ -29,3 +29,20 @@ Leiten Sie E-Mails – oder senden Sie sie direkt – an die eindeutige Eingangs
 * **Auf diese E-Mail antworten, wenn der Import nicht möglich ist** – sendet dem Absender eine automatische Antwort, wenn der Import fehlschlägt.
 * **Absender benachrichtigen, wenn der Import fehlschlägt** – benachrichtigt den Absender, wenn seine E-Mail nicht importiert werden konnte.
 * **Logs** – öffnet das Protokoll der Verarbeitung eingehender E-Mails. Klicken Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
+
+## Unterstützte Dokumentanhänge
+
+Beide E-Mail-Importmethoden akzeptieren diese Dokumentanhänge:
+
+| Format | Dateiendungen | Typische Verwendung |
+| --- | --- | --- |
+| PDF | `.pdf` | Rechnungen und andere PDF-Dokumente |
+| TIFF | `.tif`, `.tiff` | Gescannte Dokumente |
+| XML | `.xml` | Strukturierte elektronische Dokumente |
+| EDI / Bestelldaten | `.edi`, `.purchaseorder` | Elektronischer Datenaustausch und Bestellungen |
+
+Wenn ein Weiterleitungsdienst eine PDF-, TIFF- oder XML-Datei als generischen Anhang kennzeichnet, kann DocBits sie anhand des Dateiinhalts oder einer bekannten Dateiendung erkennen. Weitergeleitete `.eml`-Nachrichten können ebenfalls unterstützte Dokumente enthalten; DocBits extrahiert diese inneren Anhänge vor dem Import.
+
+Bilder wie PNG, JPG, GIF und BMP werden nicht als Dokumente importiert. Inline-Signaturbilder und Logos in weitergeleiteten E-Mails werden übersprungen. Office-Dateien wie Word, Excel und PowerPoint werden von diesen E-Mail-Importmethoden nicht unterstützt.
+
+Prüfen Sie bei weitergeleiteten E-Mails die **Logs** unter **Eingehende E-Mails**, wenn ein Dokument fehlt. Wenn **Absender benachrichtigen, wenn der Import fehlschlägt** aktiviert ist, erhält der Absender eine Erklärung und einen Link zu dieser Seite. Für ein verbundenes Postfach nutzen Sie die Anleitung zur [IMAP](imap.md)- oder [OAuth (Office 365)](oauth-office365.md)-Einrichtung.

@@ -14,7 +14,7 @@ A menu will then be displayed, select the “Merge” option which can be found 
 
 <figure><img src="../../../.gitbook/assets/document-merging (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/TV2KGh2Q38KsO5Zi-O-GKp5v42Lam4WSj8I8Ia6KjVj2c4X6vce2nFt7yJYicRWmDwKOHZDxrAsfEYtMpN-9UD2mpJ9Sfs4ueb1AYAOjKngY25JKaeEBPzUwcbrylwQ4jj_v-jkGZYLey9p9i0LfL-I" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/a-dashboard-document-merging-merge-dialog-en-20261006.png" alt="Dashboard with two documents selected and the confirmation dialog for merging them."><figcaption><p>Confirm the merge: the first selected document becomes the primary document.</p></figcaption></figure>
 
 Document merging is an important feature in a document management system that allows users to combine multiple documents into a single document. Here are some reasons why document merging can be useful:
 

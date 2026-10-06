@@ -1,19 +1,19 @@
-# Regex Manager
+# Regex Yöneticisi
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+DocBits’in bu özelliği, model sınıflandırmasına bir alternatif sunar: bir belge türü için, sınıflandırma ve diğer amaçlarla aranabilir düzenli ifadeler yazmanızı sağlar.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+Belge türü: Regex Yöneticisi, daha sonra belgede aranacak düzenli ifadeler yazmanıza olanak tanır. DocBits, tanımlı bir belgenin düzenli ifadesiyle bir eşleşme bulursa belgeyi ilgili belge türüne sınıflandırır. Örneğin “Gutschrift” terimini bulmak için bir düzenli ifade yazarsanız ve DocBits bu terimi bir belgede bulursa, belgeyi alacak dekontu olarak sınıflandırır.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+Belge kökeni: DocBits, düzenli ifadeler sayesinde bir belgenin menşe ülkesini de tanır. Örneğin İspanyolca bir belge için yazılan düzenli ifade “Factura” terimini içeriyorsa ve DocBits bu terimi belgede bulursa, belgenin İspanya kökenli olduğunu anlar ve buna göre sınıflandırır.
 
-## **Accessing the Regex Manager**
+## **Regex Yöneticisine erişim**
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+DocBits’te Ayarlar → Belge Türleri bölümüne gidin. “Özel Belge Türleri” altında “Yeni”ye tıklayın. Belge türü için bir ad girin, isteğe bağlı bir açıklama ekleyin ve belge bir tablo içeriyorsa “Tablo mevcut” kutusunu işaretleyin. Ardından “Otomatik” yerine “Düzenli ifade” seçeneğini seçin ve “Sonraki”ye tıklayın.
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx\_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B\_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../.gitbook/assets/regex-manager-create-tr-20261006.png" alt="Ad alanı, tablo mevcut kutusu, açıklama ile Otomatik ve Düzenli ifade düğmelerini içeren yeni belge türü oluşturma sayfası"><figcaption><p>Yeni belge türünü düzenli ifadelerle sınıflandırmak için “Düzenli ifade” seçeneğini seçin.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## **Regex ekleme ve kaldırma**
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+“Düzenli ifade” adımı, mevcut regex modellerini kökenleri ve modelleriyle birlikte listeler ve yeni bir regex modeli oluşturmak için “Eklemek” düğmesini sunar. İlgili girişi yönetmek için satır sonundaki işlem menüsünü kullanın. “Alanlar ve gruplar” adımına geçmek için “Sonraki”ye tıklayın.
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp\_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1\_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
+<figure><img src="../../.gitbook/assets/regex-manager-list-tr-20261006.png" alt="Eklemek düğmesi ile kökeni, modeli ve işlemleri olan üç regex modelinin tablosunu gösteren Düzenli ifade adımı"><figcaption><p>Kökeni ve modeliyle mevcut regex modelleri. “Eklemek” yeni bir model oluşturur.</p></figcaption></figure>

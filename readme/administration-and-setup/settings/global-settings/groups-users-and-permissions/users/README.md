@@ -1,5 +1,7 @@
 # Gebruikers
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/nl.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gebruikersbeheer"><figcaption><p>Pagina Gebruikersbeheer</p></figcaption></figure>
 
 Op de pagina Gebruikers kunnen beheerders alle gebruikersaccounts in uw DocBits-organisatie beheren. Hier kunt u nieuwe gebruikers toevoegen, rollen toewijzen en toegang regelen.

@@ -84,6 +84,7 @@
         * [Models & Labels](overview/settings/document-processing/module/models-and-labels.md)
         * [Show Report](overview/settings/document-processing/module/show-report.md)
         * [ZUGFeRD + Swiss QR Code Alan Eşlemesi](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)
+        * [eSLOG 1.6 ve 2.0](administration-and-setup/settings/global-settings/document-types/edi/eslog-1.6-and-2.0.md)
         * [Desteklenen Elektronik Belgeler](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md)
           * [🇦🇷 ARGENTINA AFIP](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/argentina-afip.md)
           * [🇦🇷 ARGENTINA FACTURA ELECTRONICA](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/argentina-factura-electronica.md)

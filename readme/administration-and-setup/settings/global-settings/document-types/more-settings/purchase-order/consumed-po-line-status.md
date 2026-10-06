@@ -1,30 +1,36 @@
 # Statut de la ligne de commande PO consommée
 
-## **Aperçu**
+**Le statut de la ligne de commande PO consommée** colore les lignes de bon de commande dans l'écran de correspondance selon la proportion de chaque ligne déjà appariée. Activez-le pour le type de document utilisé par vos factures si votre équipe doit repérer rapidement les lignes de PO non utilisées, partiellement utilisées et entièrement utilisées. La couleur est une aide visuelle ; vérifiez la **quantité appariée** et la colonne de quantité de PO sélectionnée avant de décider si une ligne peut être appariée à nouveau.
 
-Ce paramètre améliore l'écran de **correspondance des bons de commande** en appliquant un codage couleur aux lignes de commande PO. Il fournit une compréhension visuelle rapide du statut de correspondance pour chaque ligne.
+## Activer le paramètre
 
-## Où activer
+1. Ouvrez **Paramètres → Types de documents**. Trouvez le type de document utilisé pour vos factures et sélectionnez la roue dentée sur sa carte pour ouvrir **Plus de paramètres**. La capture montre la carte **Facture**. Laissez les interrupteurs **Activer** et **Extraction** tels quels.
 
-1. Aller à: **Paramètres** → **Paramètres globaux** → **Type de document**
-2.  Sélectionnez le type de document souhaité et cliquez sur **Autres paramètres**.
+   <figure><img src="../../../../../../.gitbook/assets/1-consumed-po-line-document-types-fr.png" alt="Page Types de documents avec la carte Facture et sa roue dentée Plus de paramètres"><figcaption><p>Ouvrez Plus de paramètres depuis la carte Facture.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  Dans la section **Bon de commande**, accédez à l'option **Mettre à jour le statut du bon de commande du document**.
+2. Dépliez **Bon de commande** s'il est replié. Trouvez **Statut de la ligne de commande consommée** et activez son interrupteur. C'est un paramètre distinct de **Mettre à jour le statut du bon de commande du document** plus bas dans la même section.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FUxtFCj5v2TU1q0qwYtFv%252Fimage.png%3Falt%3Dmedia%26token%3Dcb97a149-86d1-43e9-a5bf-a9aadaa6c047\&width=768\&dpr=4\&quality=100\&sign=3bdd311b\&sv=2)
+   <figure><img src="../../../../../../.gitbook/assets/2-consumed-po-line-settings-fr.png" alt="Section Bon de commande de la page Plus de paramètres, avec l'interrupteur Statut de la ligne de commande consommée visible"><figcaption><p>Choisissez l'interrupteur Statut de la ligne de commande consommée.</p></figcaption></figure>
 
-## **Signification des couleurs**
+   <figure><img src="../../../../../../.gitbook/assets/3-consumed-po-line-toggle-fr.png" alt="Vue rapprochée du libellé Statut de la ligne de commande consommée et de son interrupteur"><figcaption><p>L'interrupteur est éteint dans cet exemple ; allumez-le pour afficher les couleurs de correspondance.</p></figcaption></figure>
 
-*   **Blanc** – La ligne de PO n'a pas encore été **appariée**.
+3. Ouvrez une facture avec la correspondance de bon de commande et inspectez ses lignes de PO. Les exemples ci-dessous montrent comment les couleurs des lignes se rapportent à l'état de correspondance. Pour les étapes de correspondance, voir [Écran de Correspondance des Bons de Commande](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md).
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjwYiBzpTPFv8tQaTTaeJ%252Fimage.png%3Falt%3Dmedia%26token%3D20a99b45-2d61-4bd5-84b7-b0c24b04e223\&width=768\&dpr=4\&quality=100\&sign=ebdb365\&sv=2)
-*   **Bleu** – La ligne de PO a été **sélectionnée par l'utilisateur** pour correspondance.
+## Lire les couleurs des lignes de PO
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FwJK44aAJJPzJm4f4miFg%252Fimage.png%3Falt%3Dmedia%26token%3D3a51bd26-5b87-4b61-a056-ae40bccc4e55\&width=768\&dpr=4\&quality=100\&sign=d445fa07\&sv=2)
-*   **Jaune** – La ligne de PO est **partiellement appariée**; il reste encore une quantité disponible pour l'appariement.
+| Apparence | Signification | À vérifier |
+| --- | --- | --- |
+| Neutre ou blanche | Aucune quantité de cette ligne de PO n'a encore été appariée. | Vérifiez la quantité de PO et la ligne de facture avant l'appariement. |
+| Teinte bleue | Vous avez sélectionné la ligne dans l'écran de correspondance actuel. | La sélection est temporaire ; elle ne signifie pas que la ligne est entièrement appariée. |
+| Orange pâle | Une partie de la quantité est appariée, mais la quantité appariée est inférieure à la quantité de PO sélectionnée. | Vérifiez la quantité restante. |
+| Violet pâle | La quantité appariée atteint au moins la quantité de PO sélectionnée. | Ne partez pas du principe qu'une quantité supplémentaire est disponible. |
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNoof3pErQqAvAWZpo4Fd%252Fimage.png%3Falt%3Dmedia%26token%3D21a15672-8e84-4e22-a0f2-8b65bcbfda54\&width=768\&dpr=4\&quality=100\&sign=4a68abca\&sv=2)
-*   **Rose** – La ligne de PO est **entièrement appariée**; aucune quantité restante n'est disponible pour un appariement ultérieur.
+<figure><img src="../../../../../../.gitbook/assets/image (470).png" alt="Ligne de PO avec quantité appariée nulle et sans couleur de statut"><figcaption><p>Aucune quantité n'a encore été appariée.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F722yxDRHmvz6CLfIamq8%252Fimage.png%3Falt%3Dmedia%26token%3D15aecf8c-aa63-4de4-b77f-1147c8ed593a\&width=768\&dpr=4\&quality=100\&sign=c1b2c2ab\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/image (472).png" alt="Ligne de PO avec une teinte bleue de sélection dans l'écran de correspondance"><figcaption><p>La ligne est sélectionnée pour la correspondance en cours.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="Ligne de PO avec un fond orange pâle et une quantité appariée inférieure à la quantité de PO"><figcaption><p>La ligne est partiellement utilisée.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/image (473).png" alt="Ligne de PO avec un fond violet pâle et une quantité appariée égale à la quantité de PO"><figcaption><p>La ligne est entièrement utilisée.</p></figcaption></figure>
+
+Une ligne barrée a une signification différente : son statut de PO est peut-être exclu par [Statuts de désactivation des bons de commande](purchase-order-disable-statuses.md). Vérifiez ce paramètre si une ligne ne peut pas être sélectionnée.

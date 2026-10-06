@@ -1,5 +1,7 @@
 # Użytkownicy
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/pl.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Zarządzanie użytkownikami"><figcaption><p>Strona zarządzania użytkownikami</p></figcaption></figure>
 
 Strona Użytkownicy pozwala administratorom zarządzać wszystkimi kontami użytkowników w Twojej organizacji DocBits. Tutaj możesz dodawać nowych użytkowników, przypisywać role i kontrolować dostęp.

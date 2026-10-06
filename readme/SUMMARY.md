@@ -120,6 +120,7 @@
     * [Filtri Personalizzati](administration-and-setup/settings/global-settings/custom-filters.md)
     * [Scadenza del Documento](administration-and-setup/settings/global-settings/document-expiry.md)
     * [Tipi di Documento](administration-and-setup/settings/global-settings/document-types/README.md)
+      * [Duplicare una regola di convalida personalizzata](administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md)
       * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/troubleshooting.md)
       * [Gestore Layout](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Navigare il Layout Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)

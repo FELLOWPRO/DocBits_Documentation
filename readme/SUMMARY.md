@@ -194,7 +194,7 @@
         * [Ordine di acquisto](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/README.md)
           * [Table PO dans le Constructeur de Mise en Page](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/po-table-in-layout-builder.md)
           * [Controllo automatico degli aggiornamenti PO](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/auto-check-for-po-updates.md)
-          * [Stato della riga dell'ordine d'acquisto consumato](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md)
+          * [Status da linha de PO consumida](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md)
           * [Calcolo del prezzo unitario dell'OP](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/calculate-po-unit-price.md)
           * [Ordine di acquisto](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order.md)
           * [Esporta righe di PO non corrispondenti](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/export-not-matched-po-lines.md)

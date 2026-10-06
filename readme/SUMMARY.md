@@ -70,6 +70,7 @@
   * [Tasks](end-user-and-partner-section/end-user-section/tasks.md)
   * [Advance Shipment Dashboard](end-user-and-partner-section/end-user-section/advance-shipment-dashboard.md)
   * [Purchase Order Dashboard](end-user-and-partner-section/end-user-section/purchase-order-dashboard.md)
+    * [Purchase Order Detail](end-user-and-partner-section/end-user-section/purchase-order-detail.md)
   * [Invoice Dashboard](end-user-and-partner-section/end-user-section/invoice-dashboard.md)
   * [Shipment Order Dashboard](end-user-and-partner-section/end-user-section/shipment-order-dashboard.md)
   * [User Configuration Options](end-user-and-partner-section/end-user-section/user-configuration-options.md)

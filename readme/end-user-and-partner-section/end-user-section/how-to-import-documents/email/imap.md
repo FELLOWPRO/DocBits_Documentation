@@ -2,11 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-Aqui você só precisa inserir as informações necessárias para o seu provedor de e-mail, criptografia, nome do servidor, porta, nome de usuário, endereço de e-mail, senha, bem como a pasta de e-mail.
+Escolha IMAP como protocolo e introduza os dados do seu fornecedor de e-mail: nome do servidor, porta, criptografia, nome de utilizador, endereço de e-mail e palavra-passe. Nos passos seguintes define as opções e a pasta de e-mail.
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-pt-20261006.png" alt="Caixa de diálogo de configuração do servidor de e-mail com protocolo IMAP, nome do servidor, porta 993, criptografia SSL, nome de utilizador, endereço de e-mail e palavra-passe"><figcaption><p>Configuração do servidor com valores de exemplo. Substitua-os pelos dados do seu fornecedor de e-mail.</p></figcaption></figure>
 
-Coisas a Notar
+A ter em conta
 
-* Insira todas as informações necessárias na interface do usuário. Outras informações como servidor, porta, etc. Dependem do host (uma rápida pesquisa no Google deve ajudar).
-* Pasta e Mover-Importado têm a mesma função aqui. A pasta não pode ser desativada, mas usará a Caixa de Entrada por padrão se deixada vazia.
+* Introduza todas as informações necessárias na interface. Outras informações, como servidor e porta, dependem do fornecedor (uma pesquisa rápida na internet ajuda).
+* Pasta e Mover importados têm aqui a mesma função. A pasta não pode ser desativada, mas se ficar vazia é usada a caixa de entrada por predefinição.

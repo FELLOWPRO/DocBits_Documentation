@@ -1,5 +1,7 @@
 # Kullanıcılar
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/tr.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Kullanıcı Yönetimi"><figcaption><p>Kullanıcı Yönetimi Sayfası</p></figcaption></figure>
 
 Kullanıcılar sayfası, yöneticilerin DocBits kuruluşunuzdaki tüm kullanıcı hesaplarını yönetmesini sağlar. Buradan yeni kullanıcılar ekleyebilir, roller atayabilir ve erişimi denetleyebilirsiniz.

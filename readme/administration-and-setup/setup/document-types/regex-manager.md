@@ -1,19 +1,19 @@
 # Regex Manager
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+Deze functie van DocBits is een alternatief voor modelclassificatie: u kunt doorzoekbare reguliere expressies voor een documenttype schrijven, voor classificatie en andere doeleinden.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+**Documenttype:** Met de Regex Manager schrijft u reguliere expressies, en DocBits zoekt het document op deze expressies. Als een document overeenkomt met de regex van een gedefinieerd document, wordt het in het bijbehorende documenttype ingedeeld. Schrijft u bijvoorbeeld een reguliere expressie die „Gutschrift” vindt, dan classificeert DocBits elk document met deze term als creditnota.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+**Herkomst van het document:** Hiermee weet DocBits via reguliere expressies uit welk land een document afkomstig is. Als de reguliere expressie voor een Spaans document bijvoorbeeld de term „Factura” bevat en DocBits vindt deze term in een document, dan weet DocBits dat het document Spaans van oorsprong is en classificeert het dienovereenkomstig.
 
-## **Accessing the Regex Manager**
+## De Regex Manager openen
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+Om deze functie te gebruiken, gaat u naar Instellingen → Documenttypen en klikt u op „Nieuw”. Voer in de wizard „Nieuw documenttype maken” een naam in voor het documenttype en selecteer als extractiemethode „Regex” in plaats van „Auto”; ga daarna verder met „Volgende”.
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../../.gitbook/assets/regex-manager-create-nl-20261006.png" alt="De DocBits-wizard om een nieuw documenttype te maken, met de ingevulde naam en de geselecteerde optie „Regex”."><figcaption><p>De wizard „Nieuw documenttype maken” met de naam van het documenttype en de keuze tussen „Auto” en „Regex”.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## Regex toevoegen en verwijderen
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+De Regex-stap toont een tabel met de bestaande reguliere expressies, met Oorsprong en Patroon, en de knop „Toevoegen” om nieuwe regex-regels te maken.
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
+<figure><img src="../../../.gitbook/assets/regex-manager-list-nl-20261006.png" alt="De tabel van de Regex Manager met de bestaande reguliere expressies per oorsprong en patroon."><figcaption><p>De Regex-stap met de tabel van bestaande reguliere expressies en de knop „Toevoegen”.</p></figcaption></figure>

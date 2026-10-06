@@ -2,13 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
+Here you only need to enter the required information for your email provider: protocol, encryption, server name, port, username, email address and password, as well as the email folder.
 
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-en-20261006.png" alt="The Email Server Setup dialog with the IMAP protocol, the server name, port 993, SSL encryption, and the username and email address filled in."><figcaption><p>The “Email Server Setup” dialog with example values: protocol IMAP, server imap.example.com, port 993, encryption SSL.</p></figcaption></figure>
 
-Here you just need to enter the required information for your email provider, encryption, server name, port, username, email address, password as well as the email folder.
+## Things to Note
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv\_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
-
-Things to Note
-
-* Input all needed information into the UI. Other information like the server, port, etc. Depends on the host (a quick Google search should help).
-* Folder and Move-Imported have the same Function here. Folder can not be disabled, but will use Inbox by default if left empty.
+* Enter all required information in the UI. The other information, such as server and port, depends on your host (a quick web search should help).
+* Folder and Move-Imported have the same function here. The folder cannot be disabled, but if you leave it empty, Inbox is used by default.

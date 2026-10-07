@@ -60,7 +60,7 @@ plain language. Services not listed had no customer-facing changes._
 - Dimension values can be selected again for every user.
 - A customer-reported upload error is fixed.
 - "Match on total" works for suppliers whose invoice has a single line, and
-  for the supplier setups reported in DRFS-708 and DRFS-820.
+  for the supplier setups that reported it.
 - SPS e-documents: the 810 charges are adjusted, the 855 charges layout is
   updated, and the customer logo in the e-document preview is corrected.
 
@@ -169,7 +169,7 @@ plain language. Services not listed had no customer-facing changes._
   saves no longer block, and a document pending approval is refused for export.
 - PDF/A annotation keeps catalog and embedded XML, so e-invoices keep their XML
   after annotation. UBL invoices with the bare EN 16931 CustomizationID are
-  classified (ecosio).
+  classified (e-invoice network).
 - GRPR rounds to the 6 decimals M3 accepts. Base unit of measure conversion factors are added to
   the frozen line.
 - Soft-deleted trainings and formatting rules are respected, and MCP
@@ -194,7 +194,7 @@ plain language. Services not listed had no customer-facing changes._
 - Organisations own a list of e-mail domains, each assignable once. A social
   login joins the organisation that lists the verified domain, never invents an
   organisation, user or subscription, and refuses without naming anybody while
-  the administrators are told instead. Hilco SSO and the domains Microsoft
+  the administrators are told instead. The domains Microsoft
   returns are handled.
 - Every refused login carries a trace id. Admins can re-send the "Set your
   password" e-mail. The contract balance is signed and the contract start is
@@ -271,7 +271,7 @@ field stores "leave empty" on its own; field suppression).
 R1.2 / R1.4: DRFS-535 (receipt availability flag), DOP-53 (UOM conversion).
 Added from the Ready for Production Release list: DRFS-742, DU-220, MAR-67, DRFS-708, DRFS-820,
 DRFS-723, DRFS-724, DRFS-726. Not on the page (no matching code in the delta, check by hand):
-MEF-169 (S/MIME invoices from Datatronic, Email Service version unchanged), DMB-391.
+MEF-169 (S/MIME invoices from one supplier not arriving, Email Service version unchanged), DMB-391.
 Shipped although Release No. is empty or stale: OBO-156, CORE-6102, CORE-6154, CORE-6155,
 CORE-6150, CORE-6169, CORE-6181, CORE-6183, CORE-6185, CORE-6187, CORE-2606, CORE-2461,
 CORE-2457, CORE-6092 (R1.0.14 labels). -->

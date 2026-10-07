@@ -483,6 +483,8 @@ DocBits unterstützt nun vollständig die ZUGFeRD-Versionen 2.1 und höher, was 
 * **Flexibilität:** Egal ob Basis-, Komfort- oder Extended-Profil innerhalb des ZUGFeRD-Standards – DocBits bietet die passenden Werkzeuge für jede Komplexitätsstufe von Rechnungen.
 * **Zukunftssicherheit:** Durch die Unterstützung neuerer ZUGFeRD-Versionen bleibt DocBits stets konform mit den sich ändernden E-Rechnungsrichtlinien in den EU-Mitgliedstaaten und darüber hinaus.
 
+Durch die Einbindung von ZUGFeRD 2.1 und neueren Standards vereinfacht DocBits grenzüberschreitende Transaktionen und entspricht modernen Geschäftsanforderungen – ein unverzichtbares Werkzeug für Organisationen, die digitale Transformation und regulatorische Konformität priorisieren. [ZUGFeRD-Versionen und ihre DocBits-Feldzuordnungen entdecken](https://docs.docbits.com/de/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+
 ### Externe API-Integration zur verbesserten Dokumentenverarbeitung
 
 DocBits bietet nun die Möglichkeit, externe APIs bei der Dokumentenverarbeitung einzubinden, um Vollständigkeit und Genauigkeit der extrahierten Daten zu erhöhen. Diese Erweiterung reduziert den manuellen Aufwand erheblich, indem fehlende Felder in Echtzeit mit aktuellen Informationen aus vertrauenswürdigen Quellen gefüllt werden. So können Dokumente schneller und konsistenter verarbeitet werden.

@@ -5,8 +5,7 @@ R1.0.15), covering everything since the [15 September hotfix](incremental-update
 Each service lists the version being deployed, then what's new or fixed in
 plain language. Services not listed had no customer-facing changes._
 
-<!-- VIDEO: embed the 13 October highlights animation here once it is hosted:
-{% embed url="..." %} -->
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/release-notes/2026-10-13/en.mp4" %}
 
 ---
 

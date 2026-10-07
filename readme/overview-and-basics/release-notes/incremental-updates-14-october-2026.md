@@ -1,11 +1,11 @@
-# DocBits Release Notes — 13 October 2026
+# DocBits Release Notes — 14 October 2026
 
-_What changes in the DocBits production hotfix on 13 October 2026 (release
+_What changes in the DocBits production hotfix on 14 October 2026 (release
 R1.0.15), covering everything since the [15 September hotfix](incremental-updates-15-september-2026.md).
 Each service lists the version being deployed, then what's new or fixed in
 plain language. Services not listed had no customer-facing changes._
 
-{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/release-notes/2026-10-13/en.mp4" %}
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/release-notes/2026-10-14/en.mp4" %}
 
 ---
 
@@ -256,7 +256,7 @@ plain language. Services not listed had no customer-facing changes._
 _Not affected in this release: Auto Accounting, Barcode, E-Mail, FTP, Ideas,
 OCR, Operator. FTP and Operator carry only internal maintenance._
 
-<!-- Release R1.0.15 (sandbox 02-10-26, planned prod 14-10-26, deployed Tuesday 13 Oct 2026).
+<!-- Release R1.0.15 (sandbox 02-10-26, planned prod 14-10-26, deployed Wednesday 14 Oct 2026).
 Versions on prod before this deploy: API 12.83.222, Auth 1.78.38, Auth Bridge 0.4.2,
 Docflow 2.10.18, Docnet 1.56.13, Extraction 1.55.50.1, Fulltext 1.42.38, PO Match 1.59.39,
 Web App 10.70.6.

@@ -1,6 +1,6 @@
 # Release Notes
 
-> **Latest hotfix release:** [Hotfixes 13 October 2026](incremental-updates-13-october-2026.md) (R1.0.15): the Settings Assistant chat on every settings page, new AI tiers (Fast, Full, Nexus, Auto), the header field check, safer sign-in and social login, and purchase order charge matching. Previous: [Hotfixes 15 September 2026](incremental-updates-15-september-2026.md). All hotfix pages are listed in the navigation under Release Notes.
+> **Latest hotfix release:** [Hotfixes 14 October 2026](incremental-updates-14-october-2026.md) (R1.0.15): the Settings Assistant chat on every settings page, new AI tiers (Fast, Full, Nexus, Auto), the header field check, safer sign-in and social login, and purchase order charge matching. Previous: [Hotfixes 15 September 2026](incremental-updates-15-september-2026.md). All hotfix pages are listed in the navigation under Release Notes.
 
 ## **Release R1.0 13/14 June 2026**
 

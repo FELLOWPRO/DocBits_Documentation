@@ -61,9 +61,8 @@ plain language. Services not listed had no customer-facing changes._
 - A customer-reported upload error is fixed.
 - "Match on total" works for suppliers whose invoice has a single line, and
   for the supplier setups reported in DRFS-708 and DRFS-820.
-- Ruiz (SPS) e-documents: the 810 charges are adjusted, the 855 charges layout
-  is updated, and "Foods Service" is removed from the Ruiz logo in the e-document
-  preview.
+- SPS e-documents: the 810 charges are adjusted, the 855 charges layout is
+  updated, and the customer logo in the e-document preview is corrected.
 
 ---
 

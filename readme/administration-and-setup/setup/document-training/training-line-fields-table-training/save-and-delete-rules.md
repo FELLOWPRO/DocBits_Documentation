@@ -11,7 +11,7 @@ After defining all columns and corrections:
 
 This ensures DocBits will automatically use your trained layout the next time it sees a similar document.
 
-![save rules](https://lh7-us.googleusercontent.com/zVn_mYiL7PwiILj2gJ4sxaPKpEUNOfKwryiZJ2Umk2SpvGHZ8OVUznBReJHqCM7UstWTt6nq0azJrtPDK_2q4jVUZgsE7bf6toT9kl57wByn4EG3JqafBfZt5G54OZ8okUfpLUH1tvHb0mZIC119I4k)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-save-rules-en-20261006.png" alt="Table extraction screen in training mode with the Save, Save Rules and Delete Rules buttons and a rule counter of 3."><figcaption><p>Save Rules stores the rules; the counter shows how many rules exist.</p></figcaption></figure>
 
 ### Deleting Rules
 
@@ -19,4 +19,4 @@ You can remove saved rules using the **DELETE RULES** button if they were config
 
 <mark style="color:red;">**Warning**</mark>: Deleting rules affects all documents from the same supplier with the same layout. You will need to **retrain the table extraction from scratch**.
 
-![](https://lh7-us.googleusercontent.com/KyfMBBv2ghBgSmqTZ4zMVsHKaoAVwcha8XRhUPNPrVMNwsmHXCDMDSsmkJYE2EYWynD1SzMcf57dmqvGIC4u3UpQohRxZW3A2RNICsNyI6Du0-jd3ZibupkTwRnYoD_XUAbfypZ5iQj-9Z0XN_SreUs)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-save-and-delete-rules-delete-rules-en-20261006.png" alt="Confirmation dialog shown after clicking Delete Rules."><figcaption><p>Deleting rules has to be confirmed.</p></figcaption></figure>

@@ -160,6 +160,8 @@
             * [Números de Factura Extendidos](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/sample-scripts/generating-extended-invoice-numbers-script-for-docbits-1.md)
             * [USD como Moneda Predeterminada](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/sample-scripts/usd-as-default-currency.md)
       * [e-docs](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
+          * [Roadmap](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [Configuración de EDI: Visión general y beneficios](administration-and-setup/settings/global-settings/document-types/edi/edi/README.md)
           * [Guía del Archivo de Descriptores de Estructura EDI](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-structure-descriptor-file-guide/README.md)
             * [Descripción de la estructura EDI](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-structure-descriptor-file-guide/edi-structure-descriptor.md)

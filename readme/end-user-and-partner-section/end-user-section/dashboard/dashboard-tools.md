@@ -1,133 +1,58 @@
-# Dashboard Tools
+# Dashboard tools
 
-To the right of the search bar, you will find some dashboard tools.
+The dashboard is your list of documents. Open a document by selecting its name. The controls above the table help you find documents, change what you see, and upload new files. Some controls depend on your organization's settings and your permissions, so your dashboard may show fewer buttons than the example below.
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_main_en.png" alt="Current DocBits dashboard showing the date range, search bar, toolbar, saved dashboard, document table, and upload button"><figcaption>The dashboard in an English-language test organization.</figcaption></figure>
 
-## Refresh table
+## Find documents
 
-Click this button to refresh the dashboard and load the most up-to-date data and statuses.
+1. Choose a date range on the left: **30D**, **90D**, **180D**, **365D**, **All**, or **Custom**. This limits the documents shown when the date controls are available.
+2. Type a document name or ID into the search bar. The search also supports field-specific queries. Select the **?** beside the search bar to see examples and the available operators.
+3. Select the sliders icon inside the search bar to narrow the list by **Status**, **Assigned To**, or **Restart Required**, then select **Apply**. Use **Clear filters** to remove those choices.
+4. Select a column heading to sort the table. Use the page controls at the bottom to move between result pages or change **Documents per Page**.
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_2.png" alt=""><figcaption></figcaption></figure>
+The icon at the start of the search field opens a picker of available fields and shows which search capabilities your organization has. The **code** icon switches between the normal search view and a raw query view; use the normal view unless you already know the query syntax. The magnifying-glass icon opens **Search in document content**: **Automatic** searches visible fields first, **Always include document content** includes text inside files, and **Visible columns only** limits matches to the table fields. Searching inside files requires the relevant search capability to be enabled for your organization.
 
-## Advanced settings
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_filters_en.png" alt="Dashboard search filter panel with Status, Assigned To, Restart Required, Clear filters, and Apply"><figcaption>The filters inside the search bar.</figcaption></figure>
 
-Click the gear icon to open the Advanced Settings menu.
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_content_mode_en.png" alt="Search in document content menu with Automatic, Always include document content, and Visible columns only"><figcaption>Choose what a simple search may match.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_8.png" alt=""><figcaption></figcaption></figure>
+For a guided search, see [Quick Search](quick-search.md) and [Filtering Documents](filtering-documents.md). The **?** panel explains advanced search syntax; you do not need that syntax for a simple name search.
 
-In the Advanced Settings menu the following options will be available:
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_search_help_en.png" alt="Dashboard Search Fields and Syntax help window with search examples and operators"><figcaption>Search help in the dashboard.</figcaption></figure>
 
-### More settings
+## Refresh and customize the view
 
-Use this button to access the Admin Settings for the dashboard. Full documentation for these settings can be found [here](../../../administration-and-setup/settings/global-settings/dashboard/).
+- Select the circular arrow above the table to reload the document list. It does not restart document processing.
+- Select the gear to open **Advanced settings**. There you can open keyboard shortcuts, view the email import log, or manage visible table columns. Administrators may also see a link to dashboard settings. See [Keyboard Shortcuts](keyboard-shortcuts.md) and [Change Document Columns](change-document-columns.md) for the next steps.
+- Select the bar chart to show **Analytics** above the table. Choose a category card, such as **Pending User Input**, to filter the documents. Select the chart again to hide the cards.
+- Select the saved dashboard badge below the search bar to switch or manage your own dashboard. See [Personal Dashboards](personal-dashboards.md).
+- Select **+** beside the **All** tab to add a tab for a document type. In the test organization, **Invoice** is available. Select a tab to show that type of document.
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_advanced_en.png" alt="Advanced settings menu opened from the dashboard gear icon"><figcaption>Open the gear menu for dashboard options.</figcaption></figure>
 
-### Keyboard shortcuts
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_analytics_en.png" alt="Dashboard Analytics cards for All documents, In progress, Pending User Input, Pending Approval, Exported, and Error"><figcaption>Analytics cards above the document list.</figcaption></figure>
 
-Use this button to display all keyboard shortcuts for the dashboard. Detailed explanations for each shortcut can be found [here](keyboard-shortcuts.md).
+## Upload documents
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_9.png" alt=""><figcaption></figcaption></figure>
+Select **Upload**. Drag files into the **Document Uploader** or select **Click to upload** to choose them from your computer. If you know the document type, turn on **Classify as** and select the type; otherwise leave it off for automatic classification. Select **Upload** to submit the files. See [Overview of Uploaded Documents](overview-of-uploaded-documents.md) for what happens next.
 
-### Import log
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_upload_en.png" alt="Document Uploader dialog with drag-and-drop area, Click to upload, Classify as, Cancel, and Upload"><figcaption>The current upload dialog.</figcaption></figure>
 
-Use this button to open a table displaying all recently imported documents via email, along with relevant information for each.
+## Work with several documents
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_10.png" alt=""><figcaption></figcaption></figure>
+Select the checkboxes beside the documents you want to act on, then open the three-dot menu in the table header. Depending on the documents and your permissions, the menu offers **Merge**, **Assign to**, **Restart**, **Restart export**, and **Delete**. Check the selected rows before choosing an action; **Delete** removes documents. For combining files, follow [Document Merging](document-merging.md).
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_bulk_en.png" alt="Dashboard bulk action menu with Merge, Assign to, Restart, Restart export, and Delete"><figcaption>Bulk actions beside the table selection checkboxes.</figcaption></figure>
 
-You can filter the logs by subject or sender, sort columns in ascending or descending order by clicking the column headers, and rearrange them using drag-and-drop.
+For one document, open the three-dot menu at the end of its row. It offers actions such as **Validate**, **Assign to**, **Document flow**, **Download**, **Restart**, **Document Logs**, and **Delete**, depending on the document and your permissions. **Validate** opens the document for review; **Document flow** shows its processing history; **Restart** begins processing again; **Delete** removes it. See [Document Flow](document-flow.md) and [Document Status](document-status.md) before changing a document that is being processed.
 
-### Set table columns for organization
+<figure><img src="../../../.gitbook/assets/dbdc201_dashboard_row_actions_en.png" alt="Actions menu for one document with Validate, Assign to, Document flow, Download, Restart, Document Logs, and Delete"><figcaption>Actions for one document.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_11.png" alt=""><figcaption></figcaption></figure>
+## Other buttons your organization may show
 
-Click this button to open a menu where you can manage the visibility of dashboard columns. Select column names and use the arrows to add or remove them from the dashboard view. Click **Done** to save your changes.
+- The envelope button starts an email import using the organization's existing email import configuration. Ask an administrator if you are unsure whether your mailbox is configured; selecting it starts an import.
+- **Scan document** appears only when document scanning is enabled and a scanner is available.
+- **Export this table** appears only when dashboard export is enabled. Its menu offers CSV and Excel files. The export uses the documents currently displayed in the table.
 
-<figure><img src="../../../.gitbook/assets/dashborad_tools_22.png" alt=""><figcaption></figcaption></figure>
-
-You can set the column order by clicking the dots next to a column name and dragging it to the desired position.
-
-#### Add fields from a document type as columns in the dashboard
-
-You also have the option to add additional columns from specific fields of specific document types to customize your dashboard view. To do this, simply click **Add Field from Document Type**.
-
-<figure><img src="../../../.gitbook/assets/dashborad_tools_21.png" alt=""><figcaption></figcaption></figure>
-
-Choose a document type to see which fields are available for the selected type. For each document type there are different fields that you can add. You can search for a specific field using the search bar at the top.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_19.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Select the fields you want to display as columns, then click **Add to Visible Columns**. The selected fields will appear as columns on the dashboard, showing their corresponding values.
-
-## Scan document
-
-Use this button to scan a document directly.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_4.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_17.png" alt=""><figcaption></figcaption></figure>
-
-To use this feature, you need to have a scanner connected to your system. If a scanner is available, you can select it on the right, name your document, and click **Scan**. Optionally, you can adjust scanning settings on the right before starting the process.
-
-<mark style="color:red;">**Note**</mark>: This feature must be activated under **Settings -> Document Processing -> Module -> Document Type -> Document scan**
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_27.png" alt=""><figcaption></figcaption></figure>
-
-## Analytics
-
-Clicking this button will display a new area showing the current count of documents in each category.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_14.png" alt=""><figcaption></figcaption></figure>
-
-Click any category to filter the documents by that specific category.
-
-## Start e-mail import
-
-Clicking this button will check your email inbox, according to the email import configuration, and import any new documents.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_6.png" alt=""><figcaption></figcaption></figure>
-
-## Export this table
-
-Use this button to export all documents currently displayed on the dashboard, based on the number of documents shown per page.\
-You can export the table as a **.csv** or **.xlsx** file.
-
-<figure><img src="../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Note**</mark>: This feature must be activated under **Settings -> Global Settings -> Dashboard -> General -> Export Dashboard Data**
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_26.png" alt=""><figcaption></figcaption></figure>
-
-## Upload
-
-Click this button to manually upload one or more files.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_7.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_16.png" alt="" width="563"><figcaption></figcaption></figure>
-
-You can either drag and drop files into the pop-up window or click **Upload Documents** to select them from your file explorer.
-
-If you prefer to manually specify the document type instead of allowing **DocBits** to auto-classify it, toggle the **Classify As** option and select the appropriate document type from the list.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_5.png" alt=""><figcaption></figcaption></figure>
-
-After selecting your files, click **Upload** to begin the upload process.
-
-## Debugging mode
-
-You can activate debugging mode to receive an additional option.\
-To access debug mode simply add to the url `?debug=true` . Now you should have an additional option
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_24.png" alt=""><figcaption></figcaption></figure>
-
-### Show loading times
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_20.png" alt=""><figcaption></figcaption></figure>
-
-Clicking this button will open a pop-up window displaying the loading times for each service, with the total loading time shown at the bottom.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_23.png" alt="" width="375"><figcaption></figcaption></figure>
+The available buttons can differ by screen width. On a narrow screen, open **More** to find some of the actions that appear separately on a desktop screen.

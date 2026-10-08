@@ -58,7 +58,7 @@ Back-upcodes worden alleen weergegeven op het moment dat ze worden gegenereerd. 
 
 1. Voer uw e-mailadres en wachtwoord in zoals gebruikelijk.
 
-    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Het inlogscherm. U kunt ook zonder wachtwoord inloggen met <strong>Inloggen met een passkey</strong>.</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Het inlogscherm. U kunt ook zonder wachtwoord inloggen met <strong>Aanmelden met een wachtwoord</strong>.</p></figcaption></figure>
 2. DocBits vraagt om uw tweede factor. Kies uw methode:
    * **Authenticator** — typ de huidige 6-cijferige code uit uw app.
    * **E-mail** — klik op **E-mail mij een code** om een code per e-mail te ontvangen en typ die vervolgens in.
@@ -97,4 +97,4 @@ Als uw organisatie MFA **verplicht** stelt, kunt u niet met een wachtwoord inlog
 
 ## Aanmelden zonder wachtwoord (optioneel)
 
-Zodra u een passkey heeft, kunt u **zonder uw wachtwoord te typen** inloggen via **Inloggen met een passkey** op het inlogscherm. Uw wachtwoord blijft werken als terugvaloptie. Aanmelden zonder wachtwoord vereist dat de passkey u verifieert (Touch ID / Windows Hello / pincode), waardoor het zowel sneller als phishingbestendig is.
+Zodra u een passkey heeft, kunt u **zonder uw wachtwoord te typen** inloggen via **Aanmelden met een wachtwoord** op het inlogscherm. Uw wachtwoord blijft werken als terugvaloptie. Aanmelden zonder wachtwoord vereist dat de passkey u verifieert (Touch ID / Windows Hello / pincode), waardoor het zowel sneller als phishingbestendig is.

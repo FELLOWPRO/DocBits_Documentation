@@ -1,68 +1,59 @@
----
-description: Configuração das condições E nos fluxos de trabalho DocBits
----
+# E: escolher um cartão de condição
 
-# And
+Use um cartão **E** para decidir se um fluxo de trabalho deve continuar depois do seu gatilho **Quando**. Adicione as verificações necessárias antes da ação **Então**. Cada cartão mostra campos a preencher, como **Operador**, **Nome do campo** ou **Valor**; as capturas de tela mostram os modelos de cartão disponíveis, não regras concluídas.
 
-## Compreender os cartões "And"
+No **Construtor De Fluxo De Trabalho**, selecione **Adicionar cartão** em **E....**. Escolha uma categoria à esquerda em **Categorias** ou digite um nome de cartão em **Cartão de Pesquisa**. Selecione uma pré-visualização de cartão para adicioná-la ao fluxo de trabalho. Você pode rolar a lista de pré-visualizações para ver mais cartões. Use **×** para fechar o seletor sem escolher outro cartão. Depois de configurar os cartões, salve o fluxo de trabalho. Consulte [Fluxo de trabalho](../README.md) para ver as etapas **Quando**, **E** e **Então** no conjunto.
 
-### **Propósito dos cartões "And":**
+## Comparar com a ordem de compra
 
-* Os cartões **And** funcionam como cartões de condição que especificam critérios que têm de ser cumpridos para que o fluxo de trabalho continue. Atuam efetivamente como operadores lógicos "AND", ou seja, todas as condições especificadas nestes cartões têm de ser satisfeitas para que a ação seguinte seja acionada.
+Use estes cartões para comparar dados do pedido ou da fatura com uma ordem de compra, como preço unitário, data de entrega prometida, encargos ou quantidade. Escolha os campos, o operador e a tolerância que o cartão selecionado pedir. Consulte [Comparar com a ordem de compra](compare-with-purchase-order/README.md) para ver os cartões individuais.
 
-#### Categorias de cartões "And"
+<figure><img src="../../../.gitbook/assets/and-category-po-comparison-pt-20261008.png" alt="Seletor de cartões E em português com Comparar com a ordem de compra selecionado; as pré-visualizações visíveis incluem comparações de preço unitário, data de entrega, encargos e quantidade."><figcaption><p>Categoria Comparar com a ordem de compra no Sandbox em português.</p></figcaption></figure>
 
-A partir das capturas de ecrã, é claro que estes cartões abrangem uma vasta gama de condições, que incluem:
+## Campo de documento
 
-* **Compare with Purchase Order**:
-  * Condições relacionadas com a validação e comparação face a ordens de compra, tais como comparar datas de entrega, preços unitários ou diferenças de quantidade. São cruciais para garantir que as transações estão de acordo com os termos acordados.
+Escolha esta categoria para verificar uma caixa de seleção ou o estado de um campo, comparar um campo com um valor ou comparar dois campos. Preencha os marcadores **Nome do campo** e **Operador** no cartão escolhido. Algumas comparações também pedem uma tolerância. Consulte [Campo de documento](document-field/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-document-field-pt-20261008.png" alt="Seletor de cartões E em português com Campo de documento selecionado; as pré-visualizações visíveis verificam uma caixa de seleção, o estado de um campo, valores de campo e comparações entre dois campos."><figcaption><p>As verificações de Campo de documento usam valores do documento atual.</p></figcaption></figure>
 
-* **Document Field**:
-  * Envolvem condições baseadas em campos específicos dentro dos documentos, como caixas de verificação assinaladas, comparação de valores de campos ou garantir que um campo de documento cumpre uma tolerância especificada. Isto é particularmente importante para a integridade dos dados e verificações automáticas em formulários ou sistemas de gestão documental.
+## Data e hora
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Use **Data e hora** para comparar uma data ou hora com um intervalo, ou comparar o dia de hoje com uma data escolhida. Selecione o **Operador** e os valores de data no cartão. Consulte [Data e hora](date-and-time/README.md).
 
-* **Date & Time:**
-  * Condições baseadas em datas e horas
+<figure><img src="../../../.gitbook/assets/and-category-date-time-pt-20261008.png" alt="Seletor de cartões E em português com Data e hora selecionado; duas pré-visualizações comparam uma data ou hora com um intervalo e comparam o dia de hoje com uma data."><figcaption><p>Data e hora oferece uma verificação de intervalo e uma comparação com o dia de hoje.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Documento
 
-* **Document**:
-  * Condições baseadas nas características do documento, como o tipo ou a associação a uma sub-organização específica. Estas condições podem orientar os fluxos de trabalho com base na categorização do documento ou no envolvimento de departamentos.
+Use estes cartões quando o fluxo de trabalho depender do **tipo de documento** ou da **suborganização**. Escolha o tipo ou a organização indicado no cartão. Consulte [Documento](document/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-document-pt-20261008.png" alt="Seletor de cartões E em português com Documento selecionado; as pré-visualizações verificam o tipo de documento e a pertença a uma suborganização."><figcaption><p>As condições de Documento verificam o tipo ou a suborganização.</p></figcaption></figure>
 
-* **Logic**:
-  * Condições lógicas que podem envolver avaliações como "Continuar com uma probabilidade de X%" ou a execução de pedidos HTTPS, que são vitais para integrações e tomada de decisões probabilística dentro dos fluxos de trabalho.
+## Lógica
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Esta categoria inclui verificações com uma tabela de decisão, uma resposta HTTPS, a disponibilidade de um módulo, o preço de um item cotado, um valor de probabilidade ou dois valores. Abra o cartão específico e preencha os seus marcadores com nome; por exemplo, o cartão HTTPS pede um URL, um método e um código de estado aceito. Consulte [Lógica](logic/README.md).
 
-* **Status**:
-  * Focando-se no estado dos documentos ou tarefas, estas condições garantem que apenas os itens em determinados estados acionam fluxos de trabalho específicos, o que é crucial para a gestão de processos orientada por estado.
+<figure><img src="../../../.gitbook/assets/and-category-logic-pt-20261008.png" alt="Seletor de cartões E em português com Lógica selecionado; as pré-visualizações incluem cartões de tabela de decisão, solicitação HTTPS, módulo ativo, preço cotado, probabilidade e comparação de valores."><figcaption><p>Lógica oferece vários tipos de condição; escolha o que corresponde à sua regra.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Status
 
-* **Table**:
-  * Envolvem condições baseadas em dados de tabelas, como a correspondência de padrões regex ou a comparação de valores dentro de uma tabela. Tais condições são essenciais para validar e manipular grandes conjuntos de dados.
+Use **Status** para verificar se um documento tem um status escolhido ou se o seu status está num conjunto selecionado. Escolha o **Operador** e o **Status** no cartão. Consulte [Status](status/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-status-pt-20261008.png" alt="Seletor de cartões E em português com Status selecionado; duas pré-visualizações comparam o status do documento com um status ou com um conjunto de status."><figcaption><p>As condições de Status verificam o estado atual do documento.</p></figcaption></figure>
 
-* **Assignee**:
-  * Condições baseadas nos responsáveis de tarefas ou documentos. Isto garante que as ações só são realizadas quando determinados utilizadores estão envolvidos, reforçando a responsabilização e a especificidade das tarefas.
+## Mesa
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Estes cartões examinam as linhas de uma tabela do documento. As opções visíveis incluem verificações de data, padrões de texto, vida útil e comparações entre colunas. Selecione o **nome da tabela** e o **Nome da coluna** antes de escolher um operador ou padrão. Consulte [Mesa](table/README.md).
 
-### Aplicação prática
+<figure><img src="../../../.gitbook/assets/and-category-table-pt-20261008.png" alt="Seletor de cartões E em português com Mesa selecionado; as pré-visualizações visíveis incluem datas, padrão de expressão regular, vida útil e comparações entre colunas da tabela."><figcaption><p>As condições de Mesa usam linhas e colunas de uma tabela do documento.</p></figcaption></figure>
 
-Estes cartões "And" são configurados dentro do fluxo de trabalho para realizar verificações e validações que garantem que o processo cumpre rigorosamente as regras de negócio e os padrões de integridade de dados. Por exemplo:
+## Comparar com o preço de cotação
 
-* **Um fluxo de trabalho pode usar um cartão "And" para verificar se o valor total de uma fatura corresponde à ordem de compra antes de acionar o pagamento.**
-* **Outro fluxo de trabalho pode usar um cartão "And" para garantir que um documento é revisto por membros específicos da equipa antes de avançar para a fase seguinte.**
+Use estes cartões para comparar um item com dados de preço de cotação. As escolhas visíveis cobrem ID do item, tipo de fornecedor, ID do item do fornecedor, preço unitário e unidade de medida. O **Operador** e os marcadores de dados dependem do cartão selecionado.
 
-### Conclusão
+<figure><img src="../../../.gitbook/assets/and-category-quote-price-pt-20261008.png" alt="Seletor de cartões E em português com Comparar com o preço de cotação selecionado; cinco pré-visualizações cobrem ID do item, tipo de fornecedor, ID do item do fornecedor, preço unitário e unidade de medida."><figcaption><p>Comparar com o preço de cotação é uma categoria separada no seletor de cartões atual.</p></figcaption></figure>
 
-Os cartões "And" são um componente fundamental dos sistemas de fluxo de trabalho que exigem um controlo preciso da execução do processo com base em múltiplas condições. Garantem que cada passo de um fluxo de trabalho só avança quando todos os critérios necessários são plenamente cumpridos, automatizando assim árvores de decisão complexas dentro dos processos de negócio.
+## Cessionário
 
-Compreender e configurar corretamente estes cartões é crucial para aproveitar todas as capacidades do seu sistema de gestão de fluxos de trabalho, de modo a aumentar a eficiência, a precisão e a conformidade nos processos da organização.
+Use **Cessionário** quando a condição depender do usuário ou grupo atribuído. Escolha se deseja comparar com um usuário ou grupo ou com um conjunto selecionado. Consulte [Cessionário](assignee/README.md).
+
+<figure><img src="../../../.gitbook/assets/and-category-assignee-pt-20261008.png" alt="Seletor de cartões E em português com Cessionário selecionado; as pré-visualizações comparam o usuário ou grupo atribuído com uma ou várias escolhas."><figcaption><p>As condições de Cessionário verificam o usuário ou grupo atribuído ao documento.</p></figcaption></figure>

@@ -105,6 +105,7 @@
           * [ZUGFeRD 2.2 Eşleştirme](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-2.md)
           * [ZUGFeRD 2.3 Eşleştirme](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3.md)
           * [ZUGFeRD 2.3.2 Eşleştirme](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3-2.md)
+      * [Düzen Yöneticisi](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
     * [Global Settings](overview/settings/global-settings/README.md)
       * [Company Information](overview/settings/global-settings/company-information.md)
       * [İki Faktörlü Kimlik Doğrulama (Yönetici)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)

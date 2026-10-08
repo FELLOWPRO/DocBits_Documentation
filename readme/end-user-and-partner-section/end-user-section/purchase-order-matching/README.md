@@ -1,319 +1,61 @@
 # Ekran dopasowywania zamówień zakupu
 
-## Przegląd
-
-Na ekranie **Dopasowywanie zamówień zakupu** możesz porównać pozycje zamówienia wyodrębnione z dokumentu z tymi przechowywanymi w systemie **Infor**, używając numeru zamówienia jako odniesienia.
-
-Możesz:
-
-* **Natychmiast zidentyfikować** wszelkie różnice między wyodrębnionymi a przechowywanymi danymi
-* **Ustawić tolerancje** pozwalające na akceptowalne odchylenia
-* **Ignorować konkretne statusy** z Infor, jeśli to konieczne
-* **Zatwierdzić i wyeksportować** dokument po pomyślnym dopasowaniu
-* **Odrzucić** dokument, jeśli dane nie spełniają wymaganych kryteriów walidacji
-
-Ta strona poprowadzi Cię przez proces dopasowywania zamówień zakupu i wyjaśni wszystkie powiązane funkcjonalności dostępne w tej sekcji.
-
-## Narzędzia w ekranie dopasowywania zamówień zakupu
-
-Na górze ekranu dopasowywania zamówień zakupu znajdziesz kilka narzędzi—takich jak **Zapisz**, **Automatyczne dopasowanie**, **Eksport** i inne—które wspomagają proces dopasowywania.\
-Szczegółowy opis każdego narzędzia i jego funkcjonalności można znaleźć [tutaj](purchase-order-matching-tools.md).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FxPOM1IzmTGgCCAE4tAQg%252Fpo_match_tools_0.png%3Falt%3Dmedia%26token%3D420e0d50-d5c8-4b7b-8ec6-26ca9e2d7a68\&width=768\&dpr=4\&quality=100\&sign=5d32419c\&sv=2)
-
-## Filtruj i dodaj numery zamówień zakupu
-
-Możesz wyszukiwać konkretne numery zamówień zakupu, wpisując numer w polu wyszukiwania.\
-Aby uzyskać bardziej precyzyjne filtrowanie, kliknij ikonę po prawej stronie paska wyszukiwania, aby wybrać konkretne kryteria dla swojego wyszukiwania.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F3xeAcb5EwKQPg9rksZVE%252Fpo_match_3.png%3Falt%3Dmedia%26token%3Deef4e964-ffe5-485c-ae22-c5790a9302fc\&width=768\&dpr=4\&quality=100\&sign=b0830e56\&sv=2)
-
-Dostępne są następujące opcje filtrów, które pomogą Ci zawęzić wyszukiwanie zamówień:
-
-* **Słowo kluczowe** – Filtruj według numerów zamówień zakupu.
-* **Dostawca** – Filtruj według nazwy lub ID dostawcy.
-* **Po dacie** – Pokaż zamówienia zakupu utworzone po określonej dacie.
-* **Przed datą** – Pokaż zamówienia zakupu utworzone przed określoną datą.
-* **Minimalna kwota zamówienia** – Filtruj według minimalnej wartości zamówienia.
-* **Maksymalna kwota zamówienia** – Filtruj według maksymalnej wartości zamówienia.
-* **Sortuj według** – Wybierz atrybut do sortowania wyników (np. data, kwota).
-* **Sortuj kierunek** – Wybierz kierunek sortowania: rosnący lub malejący.
-* **Liczba rekordów do wyświetlenia** – Zdefiniuj, ile wyników powinno być wyświetlanych na stronie.
-* **Więcej** – Dodatkowe opcje filtrowania obejmują:
-  * **Numer dostawy**
-  * **Numer listu przewozowego**
-  * **Identyfikator przedmiotu**
-
-Po skonfigurowaniu filtrów kliknij **Stosować**, aby je zastosować, lub **Jasne**, aby zresetować wszystkie ustawienia filtrów.
-
-Dopasowane zamówienia zakupu będą wyświetlane na podstawie zastosowanych filtrów.\
-Możesz:
-
-* Dostosować filtry i wyszukać ponownie, lub
-* Kliknąć dwukrotnie na wpis zamówienia zakupu, aby dodać go do ekranu dopasowywania zamówień zakupu.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2uwMlpQ42lG5fOvUy4Gx%252Fpo_match_5.png%3Falt%3Dmedia%26token%3De2751f7f-586e-4303-bb17-db2a56de2b0b\&width=768\&dpr=4\&quality=100\&sign=fbf27bf2\&sv=2)
-
-## Wybierz numery zamówień zakupu i przestaw kolumny
-
-Możesz przełączać się między poszczególnymi zamówieniami zakupu, aby zobaczyć ich odpowiednie pozycje, klikając numer zamówienia zakupu na górze tabeli.
-
-Możesz również przestawiać kolumny w widoku każdego zamówienia zakupu, po prostu przeciągając i upuszczając je w preferowanej kolejności.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FwZzMEbGz7j20tIsouC8V%252Fpo_match_7.png%3Falt%3Dmedia%26token%3D6dc539ab-33af-40a6-8c82-04449ba317e4\&width=768\&dpr=4\&quality=100\&sign=3b8fd876\&sv=2)
-
-Aby na stałe ukryć konkretne kolumny, skorzystaj z funkcji [**Ustaw kolumny tabeli zamówień dla organizacji**](./#ustaw-kolumny-tabeli-zamowien-dla-organizacji).
-
-## Ustaw kolumny tabeli zamówień dla organizacji
-
-Masz możliwość ukrycia lub pokazania konkretnych kolumn w tabeli zamówień zakupu, klikając ikonę ustawień kolumn (pokazaną poniżej).\
-To ustawienie jest dostępne zarówno w ekranie **Dopasowywanie zamówień zakupu**, jak i w menu **Zaawansowane wyszukiwanie zamówień zakupu**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4nQ5loSdHlIebOh4vJ1m%252Fpo_tools_new_10.png%3Falt%3Dmedia%26token%3D84991cc8-f7ae-40f1-ba6c-cdd66722b898\&width=768\&dpr=4\&quality=100\&sign=ec34b898\&sv=2)
-
-Dodatkowe szczegóły można znaleźć [tutaj](purchase-order-matching-tools.md#ustaw-kolumny-tabeli-zamowien-dla-organizacji).
-
-## Ponownie synchronizuj numer zamówienia z Infor
-
-Aby ponownie zsynchronizować dane w **DocBits** z danymi z **Infor**, kliknij przycisk **odświeżania** obok numeru zamówienia powyżej tabeli.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNQiPjtumht4wV9z8VHtw%252Fpo_match_8.png%3Falt%3Dmedia%26token%3Dcd9cb152-6b2f-475e-abeb-e9ad1cbd46cf\&width=768\&dpr=4\&quality=100\&sign=adab84c\&sv=2)
-
-Jeśli Twój proces dopasowywania opiera się na atrybucie **Otrzymano Dostawa Otwarta Ilość**, masz również możliwość przeprowadzenia **ręcznej synchronizacji**, jak opisano szczegółowo [tutaj](purchase-order-matching-tools.md#synchronizuj-dane).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FcceZaArRjBdKpI5r5u1v%252Fpo_tools_new_7.png%3Falt%3Dmedia%26token%3D49e25f09-de07-42b7-ab3d-a43a35e567c5\&width=768\&dpr=4\&quality=100\&sign=c6e75393\&sv=2)
-
-## Jak dopasować?
-
-Aby dopasować pozycję zamówienia zakupu z pozycją wyodrębnioną z dokumentu, masz trzy opcje:
-
-1. **Przeciągnij i upuść**\
-   Przeciągnij żądaną pozycję zamówienia zakupu i upuść ją na odpowiadającą pozycję w wyodrębnionej tabeli.
-2. **Kliknij prawym przyciskiem i połącz**
-   * Kliknij prawym przyciskiem myszy pozycję zamówienia zakupu, którą chcesz dopasować, i wybierz **Wybierz do dopasowania**.
-   * Następnie kliknij prawym przyciskiem myszy odpowiadającą pozycję w wyodrębnionej tabeli i wybierz **Połącz**.
-3.  **Automatyczne dopasowanie**
-
-    Kliknij przycisk **Automatyczne dopasowanie**, aby system automatycznie spróbował dopasować wszystkie pozycje na podstawie wyodrębnionych danych i danych zamówienia zakupu.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Flsdom16blO6pMF5rtQYS%252Fpo_tools_new_5.png%3Falt%3Dmedia%26token%3D616d6600-ff52-478a-9282-518212360106\&width=768\&dpr=4\&quality=100\&sign=ad47d853\&sv=2)
-
-Możesz również wybrać **wiele linii zamówienia zakupu** i dopasować je do **jednej linii** w wyodrębnionej tabeli. Aby uzyskać więcej szczegółów, kliknij [tutaj](./#wiele-dopasowan).
-
-## Dlaczego nie ma dopasowania?
-
-Gdy dokument nie zostanie dopasowany, na ekranie pojawia się **jedno zdanie nad obszarem zamówienia zakupu**, które podaje powód oraz co należy zrobić:
-
-| Komunikat                                                     | Znaczenie i kolejny krok                                                                                                                                                     |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Brak numeru zamówienia                                        | Dokument nie zawiera numeru zamówienia. Wprowadź go w polu nagłówka i zapisz — dopasowanie zostanie ponownie uruchomione po zapisie.                                          |
-| Nie znaleziono zamówienia w ERP dla …                         | Numer na dokumencie nie istnieje w ERP. Sprawdź numer i zapisz.                                                                                                              |
-| … nie został jeszcze wyszukany                                | Numer pojawił się po przetworzeniu (na przykład z danych podstawowych). Zapisz dokument lub kliknij **Auto Dopasuj**.                                                        |
-| … jest załadowany, ale nie połączony                          | Pozycje zamówienia są widoczne na ekranie, ale nic jeszcze nie jest dopasowane. Kliknij **Auto Dopasuj** lub połącz pozycje ręcznie.                                         |
-| Znaleziono …, ale żadna z pozycji zamówienia nie pasuje      | Każda pozycja nie spełniła reguł dopasowania. Otwórz **historię dopasowań**, aby zobaczyć, na której kolumnie, następnie dopasuj ręcznie lub popraw dokument.               |
-| Dokument nie zawiera pozycji liniowych                        | Brak danych do dopasowania; sprawdź ekstrakcję tabeli.                                                                                                                      |
-| Tabela pozycji liniowych nie ma zmapowanych kolumn zamówienia | Ilość, cena jednostkowa i numer pozycji nie są zmapowane dla tej tabeli. Zmapuj je w ustawieniach tabeli.                                                                   |
-| Zamówienie nie ma już otwartych pozycji                      | Każda pozycja zamówienia jest już wykorzystana lub wyłączona (zobacz [Status wykorzystanej pozycji zamówienia](./#consumed-po-line-status) oraz [Statusy wyłączenia](./#disable-statuses)). |
-
-Poniżej zdania ekran wyświetla kandydatów, którzy zostali **odłożeni na bok**, na przykład _"Ignorowano: 2900233285 z kolumny pozycji liniowej to numer faktury, a nie numer zamówienia"_ lub _"… jest wykluczony przez konfigurację"_. Komunikat znika po dopasowaniu dokumentu.
+**Dopasowywanie zamówień zakupu (PO Matching)** służy do porównania pozycji zamówienia załadowanych dla dokumentu z wyodrębnionymi pozycjami faktury. Dane zamówienia mogą pochodzić z integracji z systemem ERP lub z innego skonfigurowanego importu. Ekran wyświetla dokument obok obu tabel, dzięki czemu przed zapisaniem lub eksportem możesz sprawdzić numery, ilości, ceny i różnice.
 
 {% hint style="info" %}
-**Dopasowanie jest ponownie uruchamiane po zapisie.** Jeśli numer zamówienia zmieni się lub nigdy wcześniej nie był wyszukiwany, sam zapis dopasowuje dokument. Istniejące dopasowanie nigdy nie jest zastępowane przez zapis — a pozycje usunięte ręcznie pozostają usunięte.
+Poniższy przykład używa syntetycznej faktury i zamówienia FellowPro w organizacji **DocBits Documentation Test A**. W tabeli tej faktury wyświetla się obecnie komunikat **Nie znaleziono pozycji**. Pokazuje on nawigację i wyszukiwanie, ale nie może pokazać pomyślnego dopasowania pozycji. Nie eksportuj tego przykładu jako dopasowanej faktury.
 {% endhint %}
 
-**Jeśli dopasowanie nie może zostać zapisane**, ekran nie wyświetla komunikatu "zapisano": przywraca dopasowanie na ekranie, oznacza dokument jako niezapisany i pokazuje, dlaczego serwer je odrzucił — na przykład _"Dopasowanie zamówienia nie mogło zostać zapisane: reguła transformacji "…" przebudowała tabelę"_. Administratorzy widzą link do danej reguły. Poproś administratora o dostosowanie [reguły transformacji](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) lub [reguł dopasowania](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+<figure><img src="../../../.gitbook/assets/dbdc-322-po-screen-pl.png" alt="Polski ekran dopasowywania zamówień zakupu w syntetycznej organizacji Sandbox: wyszukiwarka, pasek narzędzi, pozycje zamówienia, pusta tabela pozycji faktury i podgląd faktury"><figcaption><p>Zamówienie jest załadowane; przykładowa faktura nie ma wyodrębnionych pozycji do połączenia.</p></figcaption></figure>
 
-## Historia dopasowań
+## Znajdź i sprawdź zamówienie
 
-Przycisk **Historia dopasowań** (ikona zegara na pasku narzędzi zamówienia zakupu; wymaga uprawnienia Analytics) otwiera tylko do odczytu powtórkę, jak podjęto ostatnią decyzję o dopasowaniu:
+1. Otwórz fakturę w **Dopasowywaniu zamówień zakupu**. Jeśli Twoja organizacja ma kilka zamówień, wpisz numer w polu **Wyszukaj numer zamówienia zakupu**.
+2. Wybierz ikonę filtra obok pola wyszukiwania, aby ustawić kryteria: **Słowo kluczowe**, **Dostawca**, **Status**, **Status zamówienia**, daty, zakres kwot, sortowanie i liczbę wyświetlanych rekordów. Wybierz **Więcej**, aby dodać kolejne kryteria. Wybierz **Stosować**, aby wyszukać, lub **Jasne**, aby zresetować filtry.
+3. Wybierz numer zamówienia nad tabelą, aby sprawdzić jego pozycje. Ikona odświeżenia obok numeru ponownie ładuje dane tego zamówienia. Ponowne ładowanie może zależeć od skonfigurowanej integracji.
+4. Porównaj każdą pozycję zamówienia z fakturą i jej wyodrębnioną tabelą. Znak **+** przy pozycji rozwija szczegóły dopasowania; sam w sobie nie łączy pozycji z fakturą. W przykładzie wyświetla się **No multi-match Information**, ponieważ takie dopasowanie nie istnieje.
 
-* **reguły transformacji**, które zostały uruchomione przed dopasowaniem, oraz czy któraś z nich odrzuciła dopasowanie,
-* etapy i reguły dopasowania, które zostały wypróbowane — na zielono tam, gdzie znaleziono dopasowanie, na czerwono tam, gdzie reguła nic nie znalazła, na szaro tam, gdzie reguła została pominięta przez warunek aktywacji (podpowiedź wyjaśnia dlaczego),
-* dla nieudanej reguły, **porównywana kolumna** z wartością na dokumencie i wartością w zamówieniu.
+<figure><img src="../../../.gitbook/assets/dbdc-322-po-filters-pl.png" alt="Polskie filtry wyszukiwania zamówień: dostawca, statusy, ograniczenia dat i kwot, sortowanie oraz przyciski Stosować i Jasne"><figcaption><p>Panel filtrów służy do zawężania listy wyświetlanych zamówień.</p></figcaption></figure>
 
-Otwarcie i odtworzenie historii nie uruchamia ani dopasowania, ani eksportu. Administratorzy znajdą tę samą powtórkę, z możliwością wprowadzenia ID dokumentu, obok diagramu zestawu reguł w ustawieniach zamówienia zakupu typu dokumentu.
+<figure><img src="../../../.gitbook/assets/dbdc-322-po-line-pl.png" alt="Rozwinięta pozycja zamówienia z komunikatem No multi-match Information i pustą tabelą pozycji faktury"><figcaption><p>Rozwinięta pozycja pokazuje szczegóły dopasowania, jeśli są dostępne.</p></figcaption></figure>
 
-## Które kolumny są dopasowywane?
+## Dopasuj pozycje i sprawdź wynik
 
-Proces dopasowywania zamówień zakupu dopasowuje tylko określone kolumny. Poniższa lista przedstawia, które kolumny są dopasowywane, jeśli są dostępne. Jeśli nie ustawiono żadnej [tolerancji](./#akceptuj-tolerancje), kolumny będą dopasowywane tylko w przypadku dokładnego (100%) dopasowania.
+Gdy obie tabele zawierają pozycje, połącz pozycję faktury z odpowiadającą jej pozycją zamówienia przez przeciągnięcie albo użyj akcji dopasowania w menu kontekstowym pozycji. **Automatyczne dopasowanie** próbuje połączyć kwalifikujące się pozycje według reguł Twojej organizacji. Sprawdź wynik przed zapisaniem: sama zgodność numeru przedmiotu nie dowodzi, że ilość, cena lub warunki dostawy są zgodne. Zobacz [Narzędzia dopasowywania zamówień zakupu](purchase-order-matching-tools.md) — opis paska narzędzi, sterowania kolumnami i akcji ręcznych — oraz [Skróty klawiaturowe](keyboard-shortcuts.md) — akcje klawiaturowe.
 
-* [Ilość](./#ilosc) (Ilość | Otrzymana ilość | Otrzymano Dostawa Otwarta Ilość)
-* Cena jednostkowa
-* Numer zamówienia zakupu
-* Numer przedmiotu/ID pozycji dostawcy
-* Obiecana data dostawy
+Jeśli dokument nie został dopasowany, odczytaj powód wyświetlony nad obszarem zamówienia. Może on mówić, że brakuje numeru zamówienia, zamówienie nie zostało znalezione, jego pozycje są niedostępne albo faktura nie ma wyodrębnionych pozycji. Popraw dokument lub konfigurację wskazaną przez ten powód. Administrator może sprawdzić [reguły dopasowywania](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) i [wyodrębnianie tabel](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md), gdy nie pojawiają się pozycje faktury.
 
-### Ilość
+Typowe komunikaty i kolejne kroki:
 
-Masz trzy opcje dopasowania ilości.
+| Co widzisz | Co sprawdzić |
+| --- | --- |
+| Brak numeru zamówienia | Wpisz lub popraw numer zamówienia na dokumencie, następnie zapisz. |
+| Nie znaleziono zamówienia | Sprawdź numer i to, czy zamówienie zostało zaimportowane do tej organizacji. |
+| Zamówienie znalezione, ale niepołączone | Spróbuj użyć **Automatycznego dopasowania** albo połącz pozycje ręcznie po sprawdzeniu obu tabel. |
+| Żadna pozycja zamówienia nie pasuje | Porównaj wartości z faktury z zamówieniem i sprawdź historię dopasowań. |
+| Brak pozycji faktury | Sprawdź [wyodrębnianie tabel](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md), zanim spróbujesz dopasować. |
+| Brak otwartych pozycji zamówienia | Sprawdź [statusy zużytych pozycji](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) i wykluczone statusy. |
 
-* Ilość
-* Otrzymana ilość
-* Otrzymano Dostawa Otwarta Ilość
+{% hint style="warning" %}
+Zapisanie może ponownie uruchomić dopasowywanie po zmienionym lub nowo wykrytym numerze zamówienia. Sprawdź wyświetlony wynik po zapisaniu. Jeśli dopasowania nie da się zapisać, odczytaj błąd wyświetlony na ekranie i poproś administratora o sprawdzenie [przekształceń](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) i [reguł dopasowywania](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+{% endhint %}
 
-Możesz ustawić tę opcję w **Ustawienia → Ustawienia globalne → Typy dokumentów → Więcej ustawień → Sekcja zamówienia zakupu → Zamówienie zakupu**
+Użyj **Historii dopasowań** (ikona zegara, jeśli pozwalają na to Twoje uprawnienia), aby sprawdzić, jak rozstrzygnięto wcześniejsze dopasowanie. Jest to widok tylko do odczytu. Możesz przeanalizować, które reguły zostały uruchomione i dlaczego kandydat nie został dopasowany; otwarcie historii nie eksportuje dokumentu.
 
-Opcja wybranej ilości określa, która kolumna **ilości zamówienia zakupu** jest używana do porównywania podczas procesu dopasowywania.
+### Więcej niż jedna pozycja na dopasowanie
 
-## **Status linii zamówienia zakupu zużytego**
+Pojedyncza pozycja faktury może odpowiadać kilku pozycjom zamówienia lub odwrotnie, jeśli pozwalają na to Twoje reguły dopasowywania. Otwórz szczegóły **+** przy pozycji, aby sprawdzić istniejące dopasowanie wielokrotne. Sprawdzaj łączną ilość i cenę, a nie tylko jedną pozycję. Pusty panel szczegółów, jak w syntetycznym przykładzie powyżej, oznacza brak dopasowania wielokrotnego do sprawdzenia. Zobacz [Narzędzia dopasowywania zamówień zakupu](purchase-order-matching-tools.md) w sprawie zmiany połączeń.
 
-Ta funkcja dodaje kodowanie kolorów do linii zamówienia zakupu, ułatwiając identyfikację ich statusu dopasowania na pierwszy rzut oka. Więcej informacji można znaleźć na stronie ustawień [**Status linii zamówienia zakupu zużytego**](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md).
+### Ilości, różnice i rabaty
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNoof3pErQqAvAWZpo4Fd%252Fimage.png%3Falt%3Dmedia%26token%3D21a15672-8e84-4e22-a0f2-8b65bcbfda54\&width=768\&dpr=4\&quality=100\&sign=4a68abca\&sv=2)
+W zależności od konfiguracji dopasowywanie może porównywać ilość zamówioną, otrzymaną lub pozostałą do dostawy, a także cenę jednostkową, numer przedmiotu i inne zmapowane pola. Różnica może zostać zaakceptowana, jeśli typ dokumentu ma skonfigurowaną tolerancję. Sprawdź wyświetloną rozbieżność przed jej akceptacją. [Ustawienia tolerancji](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) i [poradnik rabatów](discounts.md) wyjaśniają te przypadki.
 
-## **Sekcja zamówienia wysyłki PO**
+Obszar sum, gdy jest dostępny, pomaga zestawić kwotę netto z faktury z dopasowanymi pozycjami i dodatkowymi kosztami. Jeśli pozostaje **Kwota nierozliczona**, sprawdź poszczególne wartości pozycji i ewentualne [elementy kosztowe](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md) przed eksportem.
 
-Ta sekcja zapewnia wizualny przegląd tego, ile zostało dostarczone i zafakturowane dla każdej pozycji zamówienia zakupu. Pomaga śledzić postęp fakturowania, korzystając z wartości ilości i paska postępu.
+## Sprawdź sumy i zapisz
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2R9tB3JySdIMk8meRSVZ%252FPO-Shipment-Order-1.jpg%3Falt%3Dmedia%26token%3D70aa50f4-84cd-4a55-b580-037b893d1f5b\&width=768\&dpr=4\&quality=100\&sign=e4619335\&sv=2)
+Sprawdź podgląd faktury po prawej i porównaj sumy pozycji oraz ewentualne dodatkowe koszty. Pełny opis akcji na górnym pasku narzędzi znajdziesz w [Narzędziach dopasowywania zamówień zakupu](purchase-order-matching-tools.md). Wybierz **Zapisz** po zmianie dopasowań. Wybierz **Eksport** dopiero po sprawdzeniu dokumentu i wyniku dopasowania; strzałka obok Eksportu pokazuje dodatkowe skonfigurowane opcje eksportu. Twoja organizacja może mieć inne akcje eksportu.
 
-Więcej szczegółów można znaleźć na stronie ustawień [**Ustawienia zamówienia wysyłki PO**](../../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md).
+Pasek narzędzi podglądu pozwala przechodzić między stronami dokumentu, powiększać, pobierać oryginał i otwierać większy widok. Użyj go, aby zweryfikować, że numer zamówienia i wartości pozycji naprawdę występują na fakturze. Jeśli opuścisz ekran z niezapisanymi zmianami dopasowań, mogą one zostać utracone.
 
-## Akceptuj tolerancje
-
-Możesz określić akceptowalne poziomy tolerancji podczas procesu dopasowywania.\
-Domyślnie tylko dokładne (100%) dopasowania są uważane za ważne.
-
-Jeśli tolerancje są skonfigurowane w ustawieniach systemu, możesz je dostosować dla dozwolonych atrybutów bezpośrednio w **Wyodrębnionej tabeli** w kolumnie **Akcje**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJLdikqwBf45WgFqlPUYW%252Fpo_match_11.png%3Falt%3Dmedia%26token%3D0c9d533f-f994-472a-9ff8-75ef564cef5e\&width=768\&dpr=4\&quality=100\&sign=b0c004c0\&sv=2)
-
-Aby uzyskać więcej informacji na temat konfigurowania i korzystania z tolerancji, zapoznaj się z [szczegółową dokumentacją](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
-
-## Rabaty
-
-Jeśli rabaty są obecne w twojej wyodrębnionej tabeli, zostaną automatycznie zastosowane do ceny jednostkowej przed dopasowaniem—z wyjątkiem sytuacji, gdy używane są [wiele dopasowań](./#wiele-dopasowan). Więcej informacji na temat rabatów można znaleźć [tutaj](discounts.md).
-
-## Wyłącz statusy
-
-Możesz wykluczyć konkretne linie z określonymi statusami z dopasowania. Aby uzyskać więcej informacji, zapoznaj się z [szczegółową dokumentacją](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md).
-
-## Weryfikacja dopasowanych linii
-
-Dostępnych jest kilka wskaźników, które pomogą Ci zweryfikować, czy pozycja została pomyślnie dopasowana, czy nie.
-
-### Tabela zamówień zakupu
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FB3LlWddnfNcu8kUedbvb%252Fpo_match_14.png%3Falt%3Dmedia%26token%3D484a856a-b8b2-439f-bbf9-35dd4bb55343\&width=768\&dpr=4\&quality=100\&sign=b71ea425\&sv=2)
-
-* Ta ikona wskazuje, że pozycja zamówienia zakupu została pomyślnie dopasowana.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2vcst2wCfyck9Z7ak4eO%252Fguide_po_2.png%3Falt%3Dmedia%26token%3D78f7a224-ba6b-4027-b6a0-61e5502fd7c2\&width=768\&dpr=4\&quality=100\&sign=e0d60903\&sv=2)
-
-* Ta ikona wskazuje, że pozycja zamówienia zakupu zawiera niezgodność.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAb1A9PwBhrvfAf5q7f5w%252Fguide_po_5.png%3Falt%3Dmedia%26token%3D6616b59d-ffa4-4202-9382-3ac8ecd8b913\&width=768\&dpr=4\&quality=100\&sign=dd476496\&sv=2)
-
-### Wyodrębniona tabela z dokumentu
-
-*   Ta ikona wskazuje, że pozycja została pomyślnie dopasowana. Możesz najechać kursorem na ikonę, aby podświetlić odpowiadającą linię zamówienia zakupu.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Flogrk90Ufp5NQ7fd1QEX%252Fpo_match_15.png%3Falt%3Dmedia%26token%3D59c96286-24e9-4790-a9db-8c02efaed305\&width=768\&dpr=4\&quality=100\&sign=1a296310\&sv=2)
-*   Ta ikona wskazuje, że pozycja zawiera niezgodność. Możesz najechać kursorem na ikonę, aby podświetlić odpowiadającą linię zamówienia zakupu i zobaczyć kolumny, w których występują niezgodności.
-
-    ![](../../../.gitbook/assets/po_match_new_4.png)
-
-## Wiele dopasowań
-
-Wiele dopasowań pozwala na dopasowanie wielu linii z jednej tabeli do jednej linii w odpowiadającej (przeciwnej) tabeli.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/po_match_20.png)
-
-Ta funkcja jest szczególnie przydatna w scenariuszach, w których szczegóły są rozdzielone na kilka pozycji.
-
-### Kryteria dopasowania
-
-Linie będą uznawane za dopasowane, jeśli spełnione są następujące skumulowane warunki:
-
-* **Cena jednostkowa**:\
-  Średnia cena jednostkowa wielu linii jest obliczana i porównywana z ceną jednostkową w przeciwnej tabeli.
-* **Ilość**:\
-  Suma ilości w dopasowanych liniach musi odpowiadać ilości w przeciwnej tabeli.
-* **Dodatkowe wymagania**:\
-  Jakiekolwiek dodatkowe [kryteria dopasowania](./#ktore-kolumny-sa-dopasowywane) muszą być również spełnione.
-
-Jeśli pojedyncza pozycja jest dopasowana do wielu linii, możesz zobaczyć szczegółowe informacje, klikając ikonę plus (+) obok odpowiedniej pozycji.
-
-To rozszerza widok, aby pokazać wszystkie dopasowane wpisy, co pomaga w weryfikacji i zarządzaniu wieloma dopasowaniami skutecznie.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FXueoHfU6EiDKaWBKJL2X%252Fpo_match_19.png%3Falt%3Dmedia%26token%3D9b947abd-5fbc-45e7-8e55-8b38746b5e32\&width=768\&dpr=4\&quality=100\&sign=191a712\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZJZekesrA0JB04GixOUi%252Fpo_match_18.png%3Falt%3Dmedia%26token%3D25c10718-2044-4de9-a5db-45f936d7235a\&width=768\&dpr=4\&quality=100\&sign=dd63d6c4\&sv=2)
-
-## Usuń połączenia zamówień
-
-Aby usunąć połączenie między pozycją zamówienia zakupu a wyodrębnioną pozycją, po prostu kliknij ikonę **X** obok dopasowanej pary.\
-Po usunięciu połączenie zostaje anulowane, a pozycja staje się ponownie dostępna do dopasowania.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSznmTo3Fnfi72ccpuLZk%252Fpo_match_new_2.png%3Falt%3Dmedia%26token%3Da04727b2-c8bf-44e0-b8f4-eaedb8180500\&width=768\&dpr=4\&quality=100\&sign=b740b466\&sv=2)
-
-## Obliczenia
-
-Poniżej tabeli zawierającej informacje wyodrębnione z Twojego dokumentu możesz znaleźć proste obliczenia, aby zweryfikować, czy całkowite rezerwacje się zgadzają.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FA3TOYG26aHrETnMz4ADB%252Fimage.png%3Falt%3Dmedia%26token%3Db481bbc5-d278-4a46-b3cf-813225fa10ca\&width=768\&dpr=4\&quality=100\&sign=eeca6ad9\&sv=2)
-
-### Zarejestrowane rezerwacje:
-
-Wartość zarejestrowanych rezerwacji pochodzi z kwoty netto wyodrębnionej z dokumentu.
-
-```
-Zarejestrowane rezerwacje = Całkowita kwota netto (wyodrębniona z dokumentu)
-```
-
-### Całkowita liczba dopasowań:
-
-Ta wartość jest obliczana przez zsumowanie **Ceny jednostkowej** × **Ilości** dla wszystkich pozycji, które pomyślnie dopasowały się z pozycjami z numeru zamówienia zakupu.
-
-```
- Całkowita liczba dopasowań = Suma (Cena jednostkowa × Ilość) dla wszystkich dopasowanych pozycji
-```
-
-### **Opłaty:**
-
-Wszelkie obowiązujące opłaty będą uwzględnione w tej sekcji, jeśli są obecne.\
-Aby uzyskać więcej szczegółów, zapoznaj się z [szczegółową dokumentacją](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md).
-
-```
-Opłaty = Element kosztowy
-```
-
-### Nierozliczona kwota:
-
-Wynikowa różnica jest wyświetlana tutaj i obliczana w następujący sposób:
-
-```
-Nierozliczona kwota = Zarejestrowane rezerwacje - Całkowita liczba dopasowań - Element kosztowy
-```
-
-## Wyświetlanie dokumentu w celu walidacji
-
-Po prawej stronie ekranu **Dopasowywanie zamówień zakupu** możesz wyświetlić dokument, aby pomóc w walidacji.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7X5cxghPovZfE8B2hvIy%252Fpo_new_1.png%3Falt%3Dmedia%26token%3D613a52db-b1a7-4d15-af8e-ab63725ae78c\&width=768\&dpr=4\&quality=100\&sign=3a887d60\&sv=2)
-
-**Funkcje paska narzędzi przeglądarki dokumentów:**
-
-* Przewijaj strony dokumentu, aby przeglądać zawartość.
-* Kliknij nazwę pliku, aby otworzyć pełny ekran walidacji.
-* Wprowadź numer strony i naciśnij Enter, aby przejść bezpośrednio do tej strony.
-* Użyj przycisków plus (+) i minus (–), aby powiększyć lub pomniejszyć dokument.
-*   Kliknij przycisk po prawej stronie, aby otworzyć dokument w osobnym oknie, co jest szczególnie przydatne podczas pracy z wieloma ekranami.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F8nUElRimoIOprR5yV5lN%252Fpo_match_10.png%3Falt%3Dmedia%26token%3De0d6924c-127f-4333-95f9-1b32d52b0da5\&width=768\&dpr=4\&quality=100\&sign=4f8161e4\&sv=2)
-
-## Zapisywanie zmian:
-
-Aby zapisać zmiany, kliknij przycisk **Zapisz** na pasku narzędzi.\
-Jeśli opuścisz stronę bez zapisania, wszystkie postępy dokonane podczas procesu dopasowywania zostaną utracone.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZ9ou72AJwvme2F7RWG7P%252Fpo_tools_new_6.png%3Falt%3Dmedia%26token%3D1d8ef55e-5ff1-4ee7-ac81-b76ff583a353\&width=768\&dpr=4\&quality=100\&sign=a17e5c90\&sv=2)
-
-## Eksportowanie dokumentu
-
-Po dopasowaniu wszystkich pozycji i zweryfikowaniu ich poprawności możesz wyeksportować dokument, klikając przycisk **Eksport** na pasku narzędzi.
-
-* Kliknięcie małej strzałki obok przycisku **Eksport** ujawnia wszystkie dostępne opcje eksportu.
-* Kliknięcie **Eksport** bezpośrednio uruchomi domyślną opcję eksportu (pierwszą na liście).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fzc78lqQthkeTIpANlIAc%252Fpo_tools_new_8.png%3Falt%3Dmedia%26token%3Debdb58e9-b775-40a6-b7bc-82aa66f8811b\&width=768\&dpr=4\&quality=100\&sign=14ac5a25\&sv=2)
+Dostępne porównania i wartości tolerancji zależą od ustawień typu dokumentu. Przeczytaj [Reguły dopasowywania zamówień](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md), [Ustawienia tolerancji](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md), [Wyłączone statusy](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md) i [Status zużytej pozycji zamówienia](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) — ustawienia administracyjne. W sprawie pozycji wiele-do-jednej zobacz [Rabaty](discounts.md) i [Narzędzia dopasowywania](purchase-order-matching-tools.md).

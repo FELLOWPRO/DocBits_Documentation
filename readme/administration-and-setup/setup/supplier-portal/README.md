@@ -57,7 +57,7 @@ Inoltre, puoi filtrare rapidamente per gli stati **In attesa di approvazione** o
 
 ## Dettagli del fornitore (vista interna)
 
-Fai clic sulla riga di un fornitore nel **Cruscotto fornitori** per aprire la vista **Dettagli del fornitore** di quel fornitore. Questa vista interna mostra le stesse sei sezioni che il fornitore compila durante la registrazione — **Dettagli fornitore**, **Indirizzo dati**, **Contatto fornitore**, **Fornitore finanziario**, **Fornitore acquisto** e **Fornitore certificati** — insieme al badge **stato** attuale del fornitore (in alto a destra, ad esempio **STATO: IN ATTESA DI APPROVAZIONE**).
+Fai clic sulla riga di un fornitore nel **Cruscotto fornitori** per aprire la vista **Dettagli del fornitore** di quel fornitore. Questa vista interna mostra le stesse sei sezioni che il fornitore compila durante la registrazione — **Fornitore Dettagli**, **Indirizzo Dati**, **Fornitore Contatto**, **Fornitore Finanziario**, **Fornitore Acquisto** e **Fornitore Certificati** — insieme al badge dello stato attuale del fornitore (in alto a destra; l'interfaccia italiana lo etichetta ancora **STATUS:** e mostra ad esempio **IN ATTESA DI APPROVAZIONE**).
 
 <figure><img src="../../../.gitbook/assets/supplier-details-internal-view-it-20261009.png" alt="Vista interna «Dettagli del fornitore» di un fornitore fittizio nell'interfaccia DocBits in italiano"><figcaption><p>Vista interna «Dettagli del fornitore»: a sinistra le sei sezioni della registrazione, in alto a destra lo stato del fornitore. Tutti i nomi e i dati sono valori d'esempio inventati (organizzazione d'esempio Musterfirma GmbH, fornitore d'esempio Fabrikam Metallbau KG).</p></figcaption></figure>
 

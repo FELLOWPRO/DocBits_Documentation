@@ -55,6 +55,14 @@ Inoltre, puoi filtrare rapidamente per gli stati **In attesa di approvazione** o
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
+## Dettagli del fornitore (vista interna)
+
+Fai clic sulla riga di un fornitore nel **Cruscotto fornitori** per aprire la vista **Dettagli del fornitore** di quel fornitore. Questa vista interna mostra le stesse sei sezioni che il fornitore compila durante la registrazione — **Fornitore Dettagli**, **Indirizzo Dati**, **Fornitore Contatto**, **Fornitore Finanziario**, **Fornitore Acquisto** e **Fornitore Certificati** — insieme al badge dello stato attuale del fornitore (in alto a destra, ad esempio **STATO: IN ATTESA DI APPROVAZIONE**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-it-20261009.png" alt="Vista interna «Dettagli del fornitore» di un fornitore fittizio nell'interfaccia DocBits in italiano"><figcaption><p>Vista interna «Dettagli del fornitore»: a sinistra le sei sezioni della registrazione, in alto a destra lo stato del fornitore. Tutti i nomi e i dati sono valori d'esempio inventati (organizzazione d'esempio Musterfirma GmbH, fornitore d'esempio Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Usa questa vista per verificare il profilo di un fornitore, correggere o completare i dati mancanti e preparare la decisione di approvazione. Per la descrizione di ogni sezione, consulta [Registrazione del fornitore](supplier-registration.md). Il pulsante Indietro in alto nella vista ti riporta al **Cruscotto fornitori** senza salvare nulla.
+
 ## Stato del fornitore
 
 Se stai utilizzando il **Portale fornitori**, è importante comprendere i diversi stati che i fornitori possono avere. Di seguito è riportato un elenco di tutti i possibili stati dei fornitori e i loro significati:

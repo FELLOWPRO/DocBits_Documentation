@@ -4,7 +4,7 @@ description: Konfiguracja karty warunku I (And) w przepływach pracy DocBits
 
 # And: wybór karty warunku
 
-Karty **And** (I) służą do decydowania, czy przepływ pracy ma być kontynuowany po wyzwalaczu **When** (Gdy). Dodaj potrzebne sprawdzenia przed akcją **Then** (Następnie). Każda karta pokazuje pola do wypełnienia, takie jak **Operator**, **Field Name** (Nazwa pola) czy **Value** (Wartość); zrzuty ekranu pokazują dostępne szablony kart, a nie ukończone reguły.
+Karty **And** (I) służą do decydowania, czy przepływ pracy ma być kontynuowany po wyzwalaczu **When** (Gdy). Dodaj potrzebne sprawdzenia przed akcją **Then** (Następnie). Każda karta pokazuje pola do wypełnienia, takie jak **Operator**, **Nazwa pola** czy **Wartość**; zrzuty ekranu pokazują dostępne szablony kart, a nie ukończone reguły.
 
 W **Konstruktorze Przepływu Pracy** wybierz **Dodaj kartę** pod sekcją **I...** (And...). Wybierz kategorię po lewej stronie albo wpisz nazwę karty w polu **Wyszukaj kartę**. Wybierz podgląd karty, aby dodać ją do przepływu pracy. Listę podglądów można przewijać, aby zobaczyć więcej kart. Użyj przycisku **×**, aby zamknąć wybór bez dodawania kolejnej karty. Po skonfigurowaniu kart zapisz przepływ pracy. Zobacz [Przepływ pracy](../README.md), aby poznać otaczające kroki **Gdy**, **I** i **Następnie**.
 

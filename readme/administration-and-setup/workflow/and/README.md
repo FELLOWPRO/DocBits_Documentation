@@ -1,64 +1,59 @@
-# And
+# Y: elegir una tarjeta de condición
 
-## Comprender las tarjetas "And"
+Use una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activador **En**. Añada las comprobaciones que necesite antes de la acción **Entonces**. Cada tarjeta muestra campos que se rellenan, como **Operador**, **Datos del pedido** o **Texto**; las capturas de pantalla muestran las plantillas de tarjetas disponibles, no reglas guardadas.
 
-### **Propósito de las tarjetas "And":**
+En el **Constructor De Flujo De Trabajo**, seleccione **Añadir tarjeta** bajo **Y....**. Elija una categoría a la izquierda o escriba un nombre de tarjeta en **Buscar tarjeta**. Seleccione una vista previa de tarjeta para añadirla al flujo de trabajo. Puede desplazar la lista de vistas previas para ver más tarjetas. Use **×** para cerrar el selector sin elegir otra tarjeta. Tras configurar las tarjetas, guarde el flujo de trabajo. Consulte [Workflow](../README.md) para conocer los pasos **En**, **Y** y **Entonces** en conjunto.
 
-* Las tarjetas **And** funcionan como tarjetas de condición que especifican criterios que deben cumplirse para que el flujo de trabajo continúe. Actúan eficazmente como operadores lógicos "AND", lo que significa que todas las condiciones especificadas en estas tarjetas deben cumplirse para que se dispare la acción posterior.
+## Comparar con la orden de compra
 
-#### Categorías de tarjetas "And"
+Use estas tarjetas para comparar datos del pedido o de la factura con una orden de compra, como el precio unitario, la fecha de entrega prometida, los cargos o la cantidad. Rellene los campos, el operador y la tolerancia que pida la tarjeta seleccionada. Consulte [Compare with Purchase Order](compare-with-purchase-order/README.md) para ver las tarjetas individuales.
 
-A partir de las capturas de pantalla, queda claro que estas tarjetas cubren una amplia gama de condiciones, que incluyen:
+<figure><img src="../../../.gitbook/assets/and-category-po-comparison-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Comparar con la orden de compra seleccionada; se ven vistas previas de comparaciones de precio unitario, fecha de entrega, cargos y cantidad."><figcaption>Categoría Comparar con la orden de compra en el Sandbox en español.</figcaption></figure>
 
-* **Compare with Purchase Order**:
-  * Condiciones relacionadas con la validación y la comparación frente a órdenes de compra, como comparar fechas de entrega, precios unitarios o diferencias de cantidad. Son cruciales para garantizar que las transacciones se ajusten a los términos acordados.
+## Campo del documento
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Elija esta categoría para comprobar una casilla o el estado de un campo, comparar un campo con un valor o comparar dos campos. Rellene los marcadores **Nombre del campo** y **Operador** de la tarjeta elegida. Algunas comparaciones también piden una tolerancia. Consulte [Document Field](document-field/README.md).
 
-* **Document Field**:
-  * Implican condiciones basadas en campos específicos dentro de los documentos, como casillas de verificación marcadas, comparación de valores de campo o garantizar que un campo de documento cumpla una tolerancia especificada. Esto es especialmente importante para la integridad de los datos y las comprobaciones automatizadas dentro de formularios o sistemas de gestión de documentos.
+<figure><img src="../../../.gitbook/assets/and-category-document-field-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Campo del documento seleccionada; se ven vistas previas que comprueban una casilla, el estado de un campo, valores de campo y comparaciones entre dos campos."><figcaption>Las comprobaciones de Campo del documento usan valores del documento actual.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Fecha & Hora
 
-* **Date & Time:**
-  * Condiciones basadas en fechas y horas.
+Use **Fecha & Hora** para comparar una fecha u hora con un rango, o comparar el día de hoy con una fecha elegida. Seleccione el **Operador** y los valores de fecha en la tarjeta. Consulte [Date & Time](date-and-time/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-date-time-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Fecha & Hora seleccionada; dos vistas previas comparan una fecha u hora con un rango y comparan el día de hoy con una fecha."><figcaption>Fecha & Hora ofrece una comprobación de rango y una comparación con el día de hoy.</figcaption></figure>
 
-* **Document**:
-  * Condiciones basadas en características del documento, como el tipo o la asociación con una suborganización concreta. Estas condiciones pueden dirigir los flujos de trabajo en función de la categorización del documento o la participación departamental.
+## Documento
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Use estas tarjetas cuando el flujo de trabajo deba depender del **tipo de documento** o de la **suborganización**. Elija el tipo u organización indicado en la tarjeta. Consulte [Document](document/README.md).
 
-* **Logic**:
-  * Condiciones lógicas que pueden implicar evaluaciones como "Continuar con una probabilidad del X %" o ejecutar solicitudes HTTPS, que son vitales para las integraciones y la toma de decisiones probabilística dentro de los flujos de trabajo.
+<figure><img src="../../../.gitbook/assets/and-category-document-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Documento seleccionada; las vistas previas comprueban el tipo de documento y la pertenencia a una suborganización."><figcaption>Las condiciones de Documento comprueban el tipo o la suborganización.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Lógica
 
-* **Status**:
-  * Centradas en el estado de los documentos o las tareas, estas condiciones garantizan que solo los elementos en ciertos estados disparen flujos de trabajo específicos, lo que es crucial para la gestión de procesos basada en el estado.
+Esta categoría incluye comprobaciones con una tabla de decisión, una respuesta HTTPS, la disponibilidad de un módulo, el precio de un artículo cotizado, un valor de probabilidad o dos valores. Abra la tarjeta concreta y rellene sus marcadores con nombre; por ejemplo, la tarjeta HTTPS pide una URL, un método y un código de estado aceptado. Consulte [Logic](logic/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-logic-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Lógica seleccionada; se ven vistas previas de tabla de decisión, solicitud HTTPS, módulo activo, precio cotizado, probabilidad y comparación de valores."><figcaption>Lógica ofrece varios tipos de condición; elija la que coincida con su regla.</figcaption></figure>
 
-* **Table**:
-  * Implican condiciones basadas en datos de tablas, como la coincidencia de patrones regex o la comparación de valores dentro de una tabla. Estas condiciones son esenciales para validar y manipular grandes conjuntos de datos.
+## Estado
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Use **Estado** para comprobar si un documento tiene un estado elegido o si su estado está dentro de un conjunto seleccionado. Elija el **Operador** y el **Estado** en la tarjeta. Consulte [Status](status/README.md).
 
-* **Assignee**:
-  * Condiciones basadas en los asignatarios de tareas o documentos. Esto garantiza que las acciones solo se realicen cuando ciertos usuarios estén implicados, mejorando la responsabilidad y la especificidad de las tareas.
+<figure><img src="../../../.gitbook/assets/and-category-status-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Estado seleccionada; dos vistas previas comparan el estado del documento con un estado o con un conjunto de estados."><figcaption>Las condiciones de Estado comprueban el estado actual del documento.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Cuadro
 
-### Aplicación práctica
+Estas tarjetas examinan las filas de una tabla del documento. Las opciones visibles incluyen comprobaciones de fecha, patrones de texto, vida útil y comparaciones entre columnas. Seleccione el nombre de la tabla y de la columna antes de elegir un operador o patrón. Consulte [Table](table/README.md).
 
-Estas tarjetas "And" se configuran dentro del flujo de trabajo para realizar comprobaciones y validaciones que garantizan que el proceso se ajuste estrictamente a las reglas de negocio y los estándares de integridad de datos. Por ejemplo:
+<figure><img src="../../../.gitbook/assets/and-category-table-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Cuadro seleccionada; se ven vistas previas de fecha, patrón de expresión regular, vida útil y comparaciones de columnas de tabla."><figcaption>Las condiciones de Cuadro usan filas y columnas de una tabla del documento.</figcaption></figure>
 
-* **Un flujo de trabajo podría usar una tarjeta "And" para verificar que el importe total de una factura coincide con la orden de compra antes de disparar el pago.**
-* **Otro flujo de trabajo podría usar una tarjeta "And" para garantizar que un documento sea revisado por miembros específicos del equipo antes de que avance a la siguiente etapa.**
+## Comparar con el precio de cotización
 
-### Conclusión
+Use estas tarjetas para comparar un artículo con datos de precios cotizados. Las opciones visibles cubren el ID del artículo, el tipo de proveedor, el ID del artículo del proveedor, el precio unitario y la unidad de medida. El **Operador** y los marcadores de datos dependen de la tarjeta que seleccione.
 
-Las tarjetas "And" son un componente fundamental de los sistemas de flujo de trabajo que requieren un control preciso de la ejecución del proceso en función de múltiples condiciones. Garantizan que cada paso de un flujo de trabajo solo avance cuando se cumplan rigurosamente todos los criterios necesarios, automatizando así árboles de decisión complejos dentro de los procesos de negocio.
+<figure><img src="../../../.gitbook/assets/and-category-quote-price-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Comparar con el precio de cotización seleccionada; cinco vistas previas cubren ID del artículo, tipo de proveedor, ID del artículo del proveedor, precio unitario y unidad de medida."><figcaption>Comparar con el precio de cotización es una categoría propia del selector de tarjetas actual.</figcaption></figure>
 
-Comprender y configurar correctamente estas tarjetas es crucial para aprovechar todas las capacidades de su sistema de gestión de flujos de trabajo y mejorar la eficiencia, la precisión y el cumplimiento dentro de los procesos de la organización.
+## Asignado a
+
+Use **Asignado a** cuando la condición dependa del usuario o grupo asignado. Elija si se compara con un usuario o grupo concreto o con un conjunto seleccionado. Consulte [Assignee](assignee/README.md).
+
+<figure><img src="../../../.gitbook/assets/and-category-assignee-es-20261008.png" alt="Selector de tarjetas Y en español con la categoría Asignado a seleccionada; las vistas previas comparan el usuario o grupo asignado con una o varias opciones."><figcaption>Las condiciones de Asignado a comprueban el usuario o grupo asignado al documento.</figcaption></figure>

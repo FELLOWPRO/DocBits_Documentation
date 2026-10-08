@@ -1,6 +1,6 @@
 # Sürüm Notları
 
-> **En son hotfix sürümü:** [Hotfixler 15 Eylül 2026](incremental-updates-15-september-2026.md) (R1.0.13): pano araması için tek bir kural seti, tek bir arama alanı benzersiz olduğunda tedarikçi tanınır, satın alma siparişi eşleştirmesi kendini açıklar, takılan belgeler ve yanlış dışa aktarma hataları düzeltildi, Touchless Intelligence, daha hızlı oturum açma ve büyük ana verilerde donma yok. Önceki: [Hotfixler 8 Eylül 2026](incremental-updates-8-september-2026.md). Tüm hotfix sayfaları, Yayın Notları altında gezinme menüsünde listelenmiştir.
+> **En son hotfix sürümü:** [Hotfixler 14 Ekim 2026](incremental-updates-14-october-2026.md) (R1.0.15): her ayar sayfasında Ayarlar Asistanı sohbeti, yeni yapay zeka kademeleri (Fast, Full, Nexus, Auto), başlık alanı denetimi, daha güvenli oturum açma ve sosyal giriş ile satın alma siparişi ücret eşleştirmesi. Önceki: [Hotfixler 15 Eylül 2026](incremental-updates-15-september-2026.md). Tüm hotfix sayfaları, Sürüm Notları altında gezinme menüsünde listelenmiştir.
 
 ## **Release R1.0 13/14 Haziran 2026**
 

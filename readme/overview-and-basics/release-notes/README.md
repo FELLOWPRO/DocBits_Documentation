@@ -1,6 +1,6 @@
 # Notas de versión
 
-> **Última versión de hotfix:** [Hotfixes 15 de septiembre de 2026](incremental-updates-15-september-2026.md) (R1.0.13): un único conjunto de reglas para la búsqueda del dashboard, proveedores reconocidos cuando un solo campo de búsqueda es único, coincidencia de órdenes de compra que se explica por sí misma, documentos atascados y falsos errores de exportación corregidos, Touchless Intelligence, inicio de sesión más rápido y datos maestros grandes sin congelaciones. Anterior: [Hotfixes 8 de septiembre de 2026](incremental-updates-8-september-2026.md). Todas las páginas de hotfix están listadas en la navegación bajo Notas de la versión.
+> **Última versión de hotfix:** [Hotfixes 14 de octubre de 2026](incremental-updates-14-october-2026.md) (R1.0.15): el chat del asistente de configuración en cada página de configuración, nuevos niveles de IA (Fast, Full, Nexus, Auto), la comprobación de campos de cabecera, inicio de sesión y acceso social más seguros, y coincidencia de cargos de órdenes de compra. Anterior: [Hotfixes 15 de septiembre de 2026](incremental-updates-15-september-2026.md). Todas las páginas de hotfix están listadas en la navegación bajo Notas de la versión.
 
 ## **Release R1.0 23/24 de mayo de 2026**
 

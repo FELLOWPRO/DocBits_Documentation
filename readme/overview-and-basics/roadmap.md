@@ -1,6 +1,6 @@
 # Hoja de ruta de DocBits
 
-_Estado de la planificación a 18 de septiembre de 2026. Cada versión indica la
+_Estado de la planificación a 7 de octubre de 2026. Cada versión indica la
 fecha prevista en sandbox (cuando los clientes pueden probarla) y la fecha
 prevista en producción. Los temas describen lo que está previsto para la
 versión, no lo que ya se ha publicado; el alcance y las fechas pueden cambiar.
@@ -9,50 +9,62 @@ Las correcciones urgentes entre versiones se documentan en las
 
 | Versión | Sandbox | Producción |
 |---|---|---|
-| R1.1 | 5 de octubre de 2026 | 14 de octubre de 2026 |
-| R1.2 | 23 de noviembre de 2026 | 2 de diciembre de 2026 |
-| R1.3 | 8 de febrero de 2027 | 17 de febrero de 2027 |
-| R1.4 | 7 de abril de 2027 | 15 de abril de 2027 |
-| R1.5 | 18 de mayo de 2027 | 27 de mayo de 2027 |
-| R1.6 | 6 de julio de 2027 | 15 de julio de 2027 |
-| R1.7 | 21 de septiembre de 2027 | 30 de septiembre de 2027 |
-| R2.0 | por anunciar | por anunciar |
+| R1.1 | 16 de octubre de 2026 | 4 de noviembre de 2026 |
+| R1.2 | 16 de febrero de 2027 | 3 de marzo de 2027 |
+| R1.3 | 1 de junio de 2027 | 16 de junio de 2027 |
+| R1.4 | 5 de octubre de 2027 | 20 de octubre de 2027 |
 
 ---
 
-## R1.1 — Sandbox 5 de octubre de 2026 · Producción 14 de octubre de 2026
+## R1.1 — Sandbox 16 de octubre de 2026 · Producción 4 de noviembre de 2026
 
 **Reglas de transformación y layouts**
 
 - Un motor de reglas para los valores extraídos de campos y columnas:
   establecer, reemplazar o derivar valores con grupos de condiciones anidados,
-  con una pantalla de configuración para gestionar las reglas. Las reglas de
-  selección de layout reciben las mismas condiciones anidadas.
-- La selección de layout funciona con independencia del origen del documento.
+  con una pantalla de configuración para gestionar las reglas. La condición "es
+  uno de" admite varios valores, la lista de reglas puede buscarse por ID de
+  regla, y las reglas también se ejecutan después de la consulta de datos
+  maestros.
+- Las reglas de selección de layout reciben las mismas condiciones anidadas y un
+  registro de ejecución opcional. La selección de layout funciona con
+  independencia del origen del documento.
+- Manage Layouts, las reglas de validación personalizadas y las reglas de
+  transformación ya no necesitan el interruptor beta.
 - Reglas de precedencia claras para las etiquetas de campo en los campos de
-  cabecera y en las columnas de tabla.
+  cabecera y en las columnas de tabla. Los usuarios pueden crear sus propias
+  claves de traducción para los ajustes de campo y las columnas de tabla.
 - Una columna de tabla puede asignarse de nuevo después de haberse eliminado, y
   la tabla de precios de artículos de proveedor muestra todas sus columnas.
 
 **Pantallas de aprobación y validación**
 
 - Las tres tablas de líneas de la pantalla de aprobación (líneas de factura,
-  líneas de comparación, coincidencia de OC) comparten un mismo estilo, y la
-  vista de comparación muestra el número de artículo que corresponde a la
-  línea.
+  líneas de comparación, coincidencia de OC) comparten un mismo estilo.
 - El último panel lateral abierto (flujo de actividad o historial de
   aprobación) se recuerda por usuario.
 - Fusionar documentos desde la pantalla de aprobación con el cargador de
   documentos.
 - Las reglas de validación personalizadas tratan los gastos de envío de forma
-  genérica, y se corrigen las reglas que informaban de un falso negativo.
-- Una barra de carga sustituye al icono de carga simple; URLs de página más
-  amigables.
+  genérica, muestran un mensaje de campo en lugar de un error general cuando un
+  campo obligatorio está vacío, y se corrigen las reglas que informaban de un
+  falso negativo. Las reglas predeterminadas del sistema pueden duplicarse.
+- Se notifica una discrepancia entre cantidad e importe neto en una tabla
+  extraída por IA, una factura con una orden de compra emparejada ya no se
+  clasifica como factura de costes, y se acepta una fecha reformateada por una
+  regla.
+- Se corrige una pantalla de aprobación que se quedaba bloqueada en la
+  superposición de carga tras aprobar o rechazar. Una barra de carga sustituye
+  al icono de carga simple, y las URLs de página son más amigables.
+- Abrir un enlace a un documento después de que la sesión haya caducado lleva a
+  la página de inicio de sesión en lugar de a un 404.
 
 **Detección de duplicados**
 
 - Los campos personalizados aparecen en el resultado de la detección de
   duplicados, y se puede buscar en la configuración de duplicados.
+- "Bloquear exportación de documentos duplicados" bloquea la exportación de un
+  duplicado detectado.
 
 **Flujos de trabajo y tareas**
 
@@ -64,15 +76,21 @@ Las correcciones urgentes entre versiones se documentan en las
   usuario en lugar de mostrar IDs.
 - Cada cambio de estado de un documento queda registrado.
 - La creación de una nueva plantilla de correo vuelve a funcionar.
+- La lista de tareas muestra sus tareas en la primera carga.
 
 **Importación**
 
 - La importación de correo mueve un mensaje fuera de la bandeja de entrada solo
   después de confirmarse la carga, trata un reenvío entregado de nuevo como una
-  única entrega, registra quién guardó por última vez y acepta correos firmados
-  con S/MIME.
-- La importación FTP recibe una verdadera opción de eliminar tras importar,
-  junto a mover y archivar.
+  única entrega, registra quién guardó por última vez y lista un adjunto una
+  sola vez con el motivo cuando falla.
+- La importación FTP y SFTP recibe una verdadera opción de eliminar tras
+  importar, junto a mover y archivar. Las contraseñas ya no se corrompen al
+  editar una configuración, la prueba de conexión funciona para las nuevas
+  conexiones SFTP, y una conexión SFTP fallida o un inicio de sesión incorrecto
+  muestra un mensaje específico en lugar de un error general.
+- Se avisa a los administradores en el asistente de configuración cuando una
+  importación FTP o de correo configurada deja de funcionar.
 - La carga desde la app de escáner vuelve a funcionar.
 - Los archivos BOD de orden de compra cargados en la región de EE. UU.
   permanecen en la región de EE. UU.
@@ -89,6 +107,7 @@ Las correcciones urgentes entre versiones se documentan en las
   extracción para importes, tipos impositivos, precios unitarios y números de
   orden de compra en layouts de proveedores concretos.
 - Se reconocen formatos de fecha adicionales.
+- Una factura de costes con dos tipos de IVA conserva ambas líneas contables.
 
 **Coincidencia de órdenes de compra**
 
@@ -104,14 +123,18 @@ Las correcciones urgentes entre versiones se documentan en las
 - Más detalle en el informe Touchless, y la casilla Touchless refleja la
   configuración guardada.
 
-**Dashboard**
+**Dashboard, cuentas y suscripción**
 
-- El dashboard puede contener hasta 10.000 documentos por búsqueda.
+- El dashboard puede contener hasta 10.000 documentos por búsqueda, y un filtro
+  de fecha personalizado se aplica correctamente.
 - La fecha de vencimiento del descuento y la fecha de vencimiento de la factura
   están disponibles como campos de layout y se rellenan en la importación.
 - Los usuarios compartidos de un dashboard se conservan al guardarlo, y
   "Actualizado por" muestra la persona correcta.
 - Los documentos archivados pueden volver a sacarse del estado "Archivado".
+- Los usuarios pueden volver a iniciar sesión tras restablecer la contraseña.
+- La página del plan de suscripción muestra el uso del plan y de sus
+  funciones.
 
 **Exportación y EDI**
 
@@ -123,6 +146,8 @@ Las correcciones urgentes entre versiones se documentan en las
   los BOD de recepción de entrega se aplican en el orden correcto.
 - Se actualizan los mapeos EDI para factura, orden de compra y confirmación de
   pedido.
+- Funciona la prueba de conexión de una nueva configuración de exportación a
+  Infor IDM o Infor LN.
 
 **Seguridad**
 
@@ -131,28 +156,32 @@ Las correcciones urgentes entre versiones se documentan en las
 
 ---
 
-## R1.2 — Sandbox 23 de noviembre de 2026 · Producción 2 de diciembre de 2026
+## R1.2 — Sandbox 16 de febrero de 2027 · Producción 3 de marzo de 2027
 
 **Aprobación y coincidencia de órdenes de compra**
 
 - Un estado "Pendiente de respuesta" pausa un documento hasta que alguien
   responde, sin romper el flujo de trabajo ni el historial de auditoría, y los
   aprobadores pueden hacer preguntas sin interrumpir el flujo de aprobación.
+- Un documento puede reasignarse a otro usuario (primera fase).
 - Las facturas de prepago pueden emparejarse antes de la recepción de
   mercancías mientras "Coincidencia sobre cantidad recibida" permanece activa.
+- La pantalla de coincidencia ofrece solo las líneas de OC viables, y las
+  coincidencias de varias líneas que omiten la comparación de precios siguen
+  mostrando el precio unitario en la pantalla de aprobación.
 - Un indicador de disponibilidad de recepción compara las cantidades facturadas
   y recibidas.
 - Confirmaciones de pedido: los elementos de costeo se muestran mientras la
   aprobación está pendiente, posiciones de recargo con código de color en la
   coincidencia de OC, y la columna de número de artículo en las líneas de la
   factura.
-- Las columnas sin mapear ya no alimentan el cálculo del importe de la tabla.
 - Se gestionan las líneas RMA de proveedor.
 
 **Importación y clasificación**
 
-- La dirección del remitente está disponible desde la importación de correo.
 - El tipo de proveedor se deriva de las líneas de artículo.
+- El formulario de tickets de soporte acepta adjuntos y vincula la organización
+  automáticamente.
 
 **Configuración y automatización**
 
@@ -164,20 +193,26 @@ Las correcciones urgentes entre versiones se documentan en las
 
 - El historial de exportación vuelve a listar los documentos exportados.
 - Las facturas de flete se exportan a Infor LN.
+- Nombres de archivo de exportación configurables.
+- Integración fiscal con Vertex ampliada.
 
 ---
 
-## R1.3 — Sandbox 8 de febrero de 2027 · Producción 17 de febrero de 2027
+## R1.3 — Sandbox 1 de junio de 2027 · Producción 16 de junio de 2027
 
 **Rule Manager de Auto Accounting**
 
 - Las reglas asignan cuentas y dimensiones automáticamente, con ámbito por
   suborganización y tipo de documento, y una pantalla de auditoría muestra qué
   regla se activó.
-- Una regla puede rellenar un valor a partir de una columna de línea de tabla.
+- Una regla puede consultar los datos maestros y asignar varios campos a la
+  vez, o rellenar un valor a partir de una columna de línea de tabla.
 - Los campos y las dimensiones pueden vaciarse individualmente, las líneas de
   artículo pueden eliminarse (incluidas las líneas sin importe), y las reglas
   siguen funcionando en campos que cambiaron de texto a lista desplegable.
+- Las predicciones admiten varios códigos de impuesto y dimensiones,
+  comprobantes y referencias de contabilización. Las pantallas de Auto
+  Accounting están disponibles en varios idiomas.
 
 **Coincidencia de órdenes de compra**
 
@@ -187,96 +222,19 @@ Las correcciones urgentes entre versiones se documentan en las
   redondeo configurable con una cuenta de redondeo, y cálculos con cuatro
   decimales mostrados como tres.
 
-**Exportación**
-
-- Nombres de archivo de exportación configurables.
-- Un documento incompleto en Infor LN se elimina tras una exportación fallida.
-- El conector de base de datos incluye todas las tablas relevantes.
-
----
-
-## R1.4 — Sandbox 7 de abril de 2027 · Producción 15 de abril de 2027
-
-**Importación**
-
-- Un mecanismo de reintento para la importación FTP, de correo y de correo
-  entrante, con reprocesamiento automático y manual.
-
-**DocNet Agents**
-
-- Entrada de pedidos: un pedido de cliente se convierte en una orden de venta
-  en Infor M3 o Infor LN (primera versión, documentos de texto).
-
-**Aprobación**
-
-- Un flujo de aprobación mejorado, delegación a otro usuario durante la
-  aprobación, y un botón "Exportar y siguiente".
-
-**Coincidencia de órdenes de compra**
-
-- En la pantalla de coincidencia solo se ofrecen las líneas de OC viables.
-- Las facturas emparejadas en exceso, en las que la cantidad facturada supera
-  la cantidad recibida, se reconocen en la pantalla de coincidencia, y las
-  unidades de medida se convierten durante la coincidencia de la factura.
-
-**Otros**
-
-- Ronda de comentarios sobre el Rule Manager.
-- El formulario de tickets de soporte acepta adjuntos y vincula la organización
-  automáticamente.
-- Integración fiscal con Vertex ampliada.
-
----
-
-## R1.5 — Sandbox 18 de mayo de 2027 · Producción 27 de mayo de 2027
-
-**Auto Accounting**
-
-- Acción de búsqueda del Rule Manager: coincidir con los datos maestros y
-  asignar varios campos a la vez.
-- Las predicciones admiten varios códigos de impuesto y dimensiones,
-  comprobantes y referencias de contabilización.
-- Pantallas de Auto Accounting en varios idiomas.
-
-**Aprobación y coincidencia de órdenes de compra**
-
-- Reasignar un documento a otro usuario.
-- El orden de las columnas en la pantalla de coincidencia de OC se guarda por
-  usuario.
-- Los códigos de cargo (peaje, transporte, energía) se reconocen y su coste se
-  distribuye.
-
-**Controles de exportación**
-
-- La exportación se bloquea con una advertencia cuando la cantidad emparejada
-  supera o difiere demasiado de la cantidad recibida, o cuando la fecha de
-  contabilización es anterior a la fecha de entrada en almacén.
-
 **Usabilidad**
 
 - El orden de ejecución de los scripts de documento es visible en el frontend.
 - Intro y Tabulador permiten moverse entre los campos con el teclado.
 
----
+**Exportación**
 
-## R1.6 — Sandbox 6 de julio de 2027 · Producción 15 de julio de 2027
-
-**Configuración**
-
-- La configuración admite búsquedas en todos los interruptores y subpáginas.
-- La configuración del servidor de correo permite sustituir un secreto OAuth o
-  de cliente caducado sin volver a configurar el buzón.
-- El mapa de números de artículo de proveedor (tabla de conversión de números
-  de artículo) puede rellenarse desde una importación CSV.
-
-**Auto Accounting**
-
-- Las dimensiones se almacenan en una nueva estructura para que los conjuntos
-  grandes de dimensiones se carguen más rápido.
+- Un documento incompleto en Infor LN se elimina tras una exportación fallida.
+- El conector de base de datos incluye todas las tablas relevantes.
 
 ---
 
-## R1.7 — Sandbox 21 de septiembre de 2027 · Producción 30 de septiembre de 2027
+## R1.4 — Sandbox 5 de octubre de 2027 · Producción 20 de octubre de 2027
 
 **Auto Accounting en la pantalla de aprobación**
 
@@ -287,19 +245,44 @@ Las correcciones urgentes entre versiones se documentan en las
   un documento.
 - Una lista desplegable de códigos de impuesto en Auto Accounting sin necesidad
   de configurar varias líneas de impuestos.
+- Las dimensiones se almacenan en una nueva estructura para que los conjuntos
+  grandes de dimensiones se carguen más rápido, y el Rule Manager recibe una
+  ronda de comentarios.
 
----
+**Aprobación**
 
-## R2.0 — Sandbox por anunciar · Producción por anunciar
+- Un flujo de aprobación mejorado, delegación a otro usuario durante la
+  aprobación, y un botón "Exportar y siguiente".
 
-**Auto Accounting**
+**Coincidencia de órdenes de compra y controles de exportación**
 
-- Los campos basados en una lista también aceptan texto libre.
-- Se validan los campos obligatorios.
-- Las predicciones del modelo rellenan automáticamente los campos contables
-  (modo híbrido con el modelo de predicción entrenado), con un registro de
-  auditoría de lo que rellenó el modelo.
+- Las facturas emparejadas en exceso, en las que la cantidad facturada supera
+  la cantidad recibida, se reconocen en la pantalla de coincidencia, y las
+  unidades de medida se convierten durante la coincidencia de la factura.
+- Los códigos de cargo (peaje, transporte, energía) se reconocen y su coste se
+  distribuye.
+- La exportación se bloquea con una advertencia cuando la cantidad emparejada
+  supera o difiere demasiado de la cantidad recibida, o cuando la fecha de
+  contabilización es anterior a la fecha de entrada en almacén.
 
-<!-- Generated from Jira "Release No." (customfield_10392) on 2026-09-18 by the
-     docbits-roadmap skill. Themes only; ticket keys, customer names and
-     internal work are deliberately left out. Rerun the skill to refresh. -->
+**Importación y configuración**
+
+- Un mecanismo de reintento para la importación FTP, de correo y de correo
+  entrante, con reprocesamiento automático y manual, y la dirección del
+  remitente está disponible desde la importación de correo.
+- La configuración admite búsquedas en todos los interruptores y subpáginas.
+- La configuración del servidor de correo permite sustituir un secreto OAuth o
+  de cliente caducado sin volver a configurar el buzón.
+- El mapa de números de artículo de proveedor (tabla de conversión de números
+  de artículo) puede rellenarse desde una importación CSV.
+- El historial de aprobación puede exportarse mediante la exportación SFTP.
+
+**DocNet Agents**
+
+- Entrada de pedidos: un pedido de cliente se convierte en una orden de venta
+  en Infor M3 o Infor LN (primera versión, documentos de texto).
+
+<!-- Generated from Jira "Release No." (customfield_10392) on 2026-10-07 by the
+     docbits-roadmap skill. Releases up to R1.4 only; R1.5 and later are not
+     published yet. Themes only; ticket keys, customer names and internal work
+     are deliberately left out. Rerun the skill to refresh. -->

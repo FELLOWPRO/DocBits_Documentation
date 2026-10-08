@@ -173,7 +173,7 @@
         * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)
       * [Velden](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Purpose and Use](administration-and-setup/settings/global-settings/document-types/fields/purpose-and-use.md)
-        * [Configuring Field Properties](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
+        * [Velden Eigenschappen Configureren](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
         * [Setting Validation and Match Score](administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md)
         * [Velden Toevoegen en Bewerken](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
         * [Best practices](administration-and-setup/settings/global-settings/document-types/fields/best-practices-3.md)

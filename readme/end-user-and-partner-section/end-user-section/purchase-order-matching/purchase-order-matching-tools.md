@@ -1,107 +1,40 @@
 # Purchase Order Matching Tools
 
-## Overview
+The PO Matching screen places the purchase order search and tools above the PO lines. The invoice preview remains on the right. The available actions can vary with your permissions, document data, and your organization's settings.
 
-To the right of the search bar, you’ll find several useful tools related to the purchase order matching process.\
-This page provides a detailed explanation of each tool and its functionality.
+<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-overview-en.png" alt="English PO Matching screen in the DocBits Documentation Test A sandbox: PO search, action toolbar, PO lines, invoice section and document preview"><figcaption><p>Find the search field and action toolbar above the purchase order lines.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/po_match_tools_0.png" alt=""><figcaption></figcaption></figure>
+## Find the right purchase order
 
-## Help
+Enter a purchase order number in **Search purchase order number** and select a result. The filter icon beside the field opens additional search options: keyword, supplier, status, order status, date range, order amount, sort order, and number of records. Choose **Apply** to use the filters or **Clear** to reset them. Filtering the list does not match or export the invoice.
 
-Use this button to navigate to the documentation page for the Purchase Order Matching section.
+<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-filter-en.png" alt="Purchase order search filter with supplier, status, dates, amount and sorting fields"><figcaption><p>Open the filter icon beside the PO search field for more search options.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/po_tools_new_1.png" alt=""><figcaption></figcaption></figure>
+## Toolbar actions
+
+Read the tooltip for an icon before selecting it. The toolbar can show:
+
+| Action | What it does |
+| --- | --- |
+| **Matching history** (clock) | Opens previous matching activity for this document. It does not start a new match. |
+| **Help** (?) | Opens the PO Matching help page in a new browser tab. |
+| **Keyboard shortcuts** (keyboard) | Shows the shortcuts available on this screen. See [Keyboard Shortcuts](keyboard-shortcuts.md). |
+| **Training mode** (table) | Turns dragging PO rows into the invoice table on or off. It is useful only when the document has invoice line items; the sample screen below has none. |
+| **Tasks / Create task** | Opens document tasks or creates a task when these actions are available for your document and role. See [Tasks](../tasks.md). |
+| **Auto Accounting** | Opens accounting for this document when accounting data is present. |
+| **Auto PO match** (wand) | Runs automatic matching. If the organization has enabled automatic export and the resulting match meets its conditions, this action can export too. Review the document before using it. See [Automatic Purchase Order Data Matching](automatic-purchase-order-data-matching.md). |
+| **Save** (disk) | Saves PO matching changes to the document. |
+| **Sync Data** | Available only for the corresponding PO quantity setting; refreshes selected PO data from the connected system. Use the displayed PO number and available sync options. |
+| **Export** | Exports the document after matching. If your organization offers multiple export targets, use the arrow beside **Export** to select one. |
+
+The PO tab also has a refresh icon for reloading that purchase order. The column settings icon at the right of the table header controls which PO columns are visible. These change the view of the PO table, not the invoice's extracted values.
 
 ## Keyboard shortcuts
 
-Use this button to display all keyboard shortcuts for the dashboard. Detailed explanations for each shortcut can be found [here](keyboard-shortcuts.md).
+Select the keyboard icon to see the current shortcut list. Common examples include **Ctrl+F** to focus PO search, **Ctrl+K** to reopen the shortcut dialog, **Ctrl+S** to save, and **Ctrl+E** to export. The dialog is the source for the complete list on your current screen.
 
-<figure><img src="../../../.gitbook/assets/po_tools_new_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-190-po-tools-shortcuts-en.png" alt="Keyboard shortcuts dialog on the English PO Matching screen"><figcaption><p>Open the keyboard icon to see the shortcuts supported by this screen.</p></figcaption></figure>
 
-## Turn on/off training mode
-
-This button allows you to activate or deactivate Training Mode.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_3.png" alt=""><figcaption></figcaption></figure>
-
-When **Training Mode** is enabled, you can create exact copies of purchase order line items in the extracted table.\
-This feature is designed to help you practice and better understand how the purchase order matching process works in a safe, test environment.
-
-To create a copy, simply drag and drop a purchase order line item into the extracted table.
-
-## Auto Accounting
-
-Click this button to be redirected to the Auto Accounting section.
-
-<figure><img src="../../../.gitbook/assets/po_match_tools_12.png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Note**</mark>: This feature is only available if **Auto Accounting** is activated for your organization.
-
-## Tasks
-
-Click this button to be redirected to the task section related to the document you are currently working on.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_11.png" alt=""><figcaption></figcaption></figure>
-
-## Create task
-
-Use this button to create tasks directly related to the current document.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_4.png" alt=""><figcaption></figcaption></figure>
-
-To create a valid task, you must enter a name, provide a description, and assign it to a user or group. Optionally, you can mark the task as notification-only, set its priority (Low, Medium, or High), define its status, and specify a deadline.
-
-<figure><img src="../../../.gitbook/assets/po_match_tools_9.png" alt="" width="563"><figcaption></figcaption></figure>
-
-## Auto PO match
-
-Click this button to automatically perform the Purchase Order matching.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_5.png" alt=""><figcaption></figcaption></figure>
-
-## Save
-
-Click this button to save the matched Purchase Order lines.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_6.png" alt=""><figcaption></figcaption></figure>
-
-## Sync Data
-
-Click this button to manually synchronize data for a specified Purchase Order number between DocBits and Infor.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_7.png" alt=""><figcaption></figcaption></figure>
-
-You need to provide a valid Purchase Order number, then select which of the available options you want to synchronize. After that, you can proceed to synchronize your data.
-
-<figure><img src="../../../.gitbook/assets/po_match_tools_10.png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Note**</mark>: This feature is only available if your matching process is based on **Received Delivery Open Quantity**.\
-You can change this setting by navigating to:\
-**Settings → Global Settings → Document Types → More Settings → Purchase Order Section → Purchase Order**.
-
-## Export
-
-Click **Export** to export the document after completing the PO matching process.\
-If multiple export options are available, the first option will be used by default.\
-To view and select from all available export options, click the small arrow next to the Export button.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_8.png" alt=""><figcaption></figcaption></figure>
-
-## Auto Export if PO matched 100%
-
-If enabled, documents are automatically matched and exported when the purchase order number exactly matches the information extracted from the document.
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_9.png" alt=""><figcaption></figcaption></figure>
-
-## Set PO Table Columns for Organization
-
-<figure><img src="../../../.gitbook/assets/po_tools_new_10.png" alt=""><figcaption></figcaption></figure>
-
-Click this button to open a menu where you can manage the visibility of columns in the purchase order table.\
-Use the checkboxes and arrow buttons to move columns between the **Visible** and **Hidden** sections.\
-You can also reorder columns by dragging and dropping the column names.\
-Click **Done** to save your changes.
-
-<figure><img src="../../../.gitbook/assets/po_match_6.png" alt=""><figcaption></figcaption></figure>
-
+{% hint style="info" %}
+This screenshot uses a synthetic invoice and purchase order in the DocBits Documentation Test A sandbox. Its invoice has no extracted line items, so it cannot demonstrate a successful match. Match, save, sync, and export actions were not run for these screenshots.
+{% endhint %}

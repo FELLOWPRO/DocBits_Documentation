@@ -55,6 +55,12 @@ Additionally, you can quickly filter by the statuses **Pending Approval** or **P
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
 
+## Supplier Details (internal view)
+
+Click a supplier's row in the **Supplier Dashboard** to open the **Supplier Details** view for that supplier. This internal view shows the same six sections that the supplier fills in during registration — **Supplier Details**, **Address Data**, **Supplier Contact**, **Supplier Financial**, **Supplier Purchase** and **Supplier Certificates** — together with the supplier's current **status** badge.
+
+Use this view to review a supplier's profile, correct or complete missing data, and prepare the approval decision. For a description of each section, see [Supplier Registration](supplier-registration.md). The back button at the top of the view returns you to the **Supplier Dashboard**.
+
 ## Supplier Status
 
 If you're using the **Supplier Portal**, it's important to understand the different statuses that suppliers can have. Below is a list of all possible supplier statuses and their meanings:

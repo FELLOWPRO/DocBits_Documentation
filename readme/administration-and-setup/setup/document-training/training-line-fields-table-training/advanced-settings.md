@@ -4,7 +4,7 @@ In some documents, table structures can be complex—spanning multiple lines, co
 
 To access these settings, activate **Training Mode** and click the **Settings** gear icon in the top action bar:
 
-![advanced-settings](https://lh7-us.googleusercontent.com/W1cBx4IOjycKv6IZM9AX8Wggj1eEBgzBVJWgsyWkutX9dRRJuEjQtSCsPaNZuRndd9ewMVvfqSXr45C-2cO-pxXkYFdl_9eEGVW6-UBqqZCsuhia6alJjD1ZuZawwSbjS9Yeywe1wDK5yAcIOUH5QAw)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-gear-en-20261006.png" alt="Table extraction screen in training mode with the mouse over the Settings gear icon in the top action bar."><figcaption><p>The Settings gear in the training mode action bar opens the Advanced Settings.</p></figcaption></figure>
 
 ### Header Row Count
 
@@ -12,11 +12,11 @@ To access these settings, activate **Training Mode** and click the **Settings** 
 
 Some tables have multi-line headers. For example, this table’s header spans two lines:
 
-![](https://lh7-us.googleusercontent.com/J_nYZKzUSJHcpJuNp1ykf6shnfetOuiIPhyhyTfSqh_cTsDT5obwOSIc21OsLkjF9tMBP7Q1GQ1ZQfBsEmQIrJpfX3QpdjHnLkzInsjpngeg2L7i_TAyl9MdVmgHsDpUvoURdxfqp8FOdJxuRAMCwhk)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-two-lines-en-20261006.png" alt="Invoice table whose header spans two lines (Preis / in EUR and Betrag / in EUR)."><figcaption><p>A table header that spans two lines.</p></figcaption></figure>
 
 Set the **Header row count** to match:
 
-![header row count](https://lh7-us.googleusercontent.com/G8-QpKxnRin9PGPmkbtJ35r1EugXsD4_Yd5QvTkdbb7sXqRVC3a9t0cIlNILJHLr--GsykgAlMJmMYbJaUoMqHEPvAT3PlPNf-syCmPz_GVMFEMsbhcHI2DQBbT4MJXjS2Sx7M3xl4zAzcw3aa-XNms)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-row-count-en-20261006.png" alt="Settings dialog with Header row count set to 2."><figcaption><p>Header row count set to 2 in the Settings dialog.</p></figcaption></figure>
 
 #### Why is this important?
 
@@ -24,11 +24,11 @@ If you don’t set this, DocBits may treat the second line as data instead of pa
 
 **Before:**
 
-![](https://lh7-us.googleusercontent.com/35BElgcq-zbs8wcGcguVSKHRpwQXqQG9dQmBaYa8BT4RNwJxd6g-jL5wlQgrnVLrMxtpncr8ayaasWVV3snGpBiDUWs4Zx7Tn2Dck-YFBpanlcN500yIWkVz9RJXQhoq6op0WbYcgklp_LsmE9LXt9k)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-before-en-20261006.png" alt="Extracted table with a wrong header row count: the second header line appears as a data row and the column headers are not mapped."><figcaption><p>Before: the second header line is treated as data.</p></figcaption></figure>
 
 After:
 
-![](https://lh7-us.googleusercontent.com/bPGn9eWPK3Mmbu_ab2N3tVVP8ODho4MW6r6ynSKJWiPxq-IPlP_0Q1ghfcwjN56Sp_HA0nV-fedAfzkZoAXsj5O5ata32PCXPHJQ-dizWZ1OdpdEPS5wSPNW9jjc7TSPKQiNnCGPjLtnXQDLCbwEj3U)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-en-20261006.png" alt="Extracted table with Header row count 2: columns are mapped to Position, Description, Quantity, Unit Price and Net Amount and the rows are correct."><figcaption><p>After: header and data rows are separated correctly.</p></figcaption></figure>
 
 ### Move Extra Rows to Trash
 
@@ -36,15 +36,15 @@ After:
 
 In this example, the description spills into multiple rows, but only the first line is relevant:
 
-![](https://lh7-us.googleusercontent.com/AEFanKF7uUtS_78nxi5zESPW8WOESa0Do_sCQCsttC21KoFK-sB9TQgFHboJB7CMEpc_auEbeXINU4BpEh8XuNMBHDYhuwjVX40cRyygxECs3XogrurWKNdw4s4F1kxWXLGrrF4jSqd1bba0dKPVO2E)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-overflow-doc-en-20261006.png" alt="Invoice table where the description of each item continues on additional text lines below the item."><figcaption><p>The description spills into several lines of which only the first is relevant.</p></figcaption></figure>
 
 Enable **Move Extra Rows to Trash** to remove the overflow:
 
-![](https://lh7-us.googleusercontent.com/QdYUZ0ANpuFRkvNxVZzYfEhTRVf2fk1jPmoNUZcNotdkgL6VDHV1BgBXU2xqFfjBJ7W6uvB8TRZcpKEk7Qk_c0mIohiS4Jl9ZPRpG7HdS_EktuCcAtJ4KjJ_vYvYok7lv0nz2MfVMG08oDFqRSyFHy4)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-move-extra-rows-en-20261006.png" alt="Settings dialog with Move Extra Rows to set to Trash."><figcaption><p>Move Extra Rows to Trash enabled.</p></figcaption></figure>
 
 **Result after mapping:**
 
-![](https://lh7-us.googleusercontent.com/zto-P_Knp1YQmCUBU6_vCg2IEwaBiBeAao8Jvu30-89x_Sj2BLDSTQu31vUNBlaQp73DPVy2F-UZawn8j4hxycD6bpfCf_KXZYvrqH5w0cwGwsjatBelIh6gdenY-NpzmQ372jtthucHpMrsXNz3DcA)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-en-20261006.png" alt="Extracted table with three clean rows after the extra description lines were moved to trash and the columns were mapped."><figcaption><p>Result after mapping: only the relevant rows remain.</p></figcaption></figure>
 
 
 
@@ -56,19 +56,19 @@ Here, only three out of six rows are relevant. Two key columns are mapped (e.g. 
 
 Start by setting **Header row count** and the **Minimum grouped rows**:
 
-![](https://lh7-us.googleusercontent.com/p0k-n1IG3_FHexG4iAlISSmN4Yaq9xUjRO2cLpV3w6a67DpULRnxj4x291DOXBVx2SHqKp6Zs-ZXxr8KHKzT9O6oCwgEOkvfMqwpDGZUrfFpozdR16sbaybtrMEqDOXO1TsNmuPFz6mOKX0pR8I5RO8)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-en-20261006.png" alt="Settings dialog with Header row count 2 and the Advanced Settings section expanded showing Minimum grouped rows set to 2."><figcaption><p>Header row count and Minimum grouped rows set in the Settings dialog.</p></figcaption></figure>
 
 Also enable **Move Extra Rows to Trash** to clean up irrelevant data:
 
-![](https://lh7-us.googleusercontent.com/P9Mbga3kWRkhRFYPRQKN6IXCYTnMHpfXr7GIBqbuwz-RYyq7fMuKRxJgzU0HVdxFxkI_5S2DA8ThYNveXlgrDYZ7JP_jOYf9wd9ldDzg1abzMD7HE0sN8NC-wrWdoZvm5M2q_XVWTi6epBMBtHvbFe0)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-min-grouped-trash-en-20261006.png" alt="Settings dialog with Header row count 2, Move Extra Rows to Trash and Minimum grouped rows 2."><figcaption><p>Move Extra Rows to Trash enabled in addition.</p></figcaption></figure>
 
 Then define the grouping key column, e.g. _Position_:
 
-![](https://lh7-us.googleusercontent.com/5hy2YTNQRZ6plQZnc1HwAbAUXU7LKfNpLdlfr8sPnDXMryv0KoAGgkcqAWqjvznvBa1YwW0ecTrpStpm5AIc0qiFX1zB-I_y_crIx0jKS2t6QVKdAz66Wb3XMt9sRsEUHKIuk51_AatHNCRZjOghn4A)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-group-key-en-20261006.png" alt="Extracted table with the column menu of the Position column open showing Delete column, Group rows and Regex."><figcaption><p>Choose Group rows in the column menu of the grouping key column (Position).</p></figcaption></figure>
 
 **Result:**
 
-<figure><img src="https://lh7-us.googleusercontent.com/xaorEjiOEeypLMAAOXvm3VAc5BVzhIujUeLdSt0SPwrEz5x_hd8sb3Hhc7OpnUpzj6qvjWWptOsefhxjF5pIzf12RVXah1wPhlMoa3Wwx7T3s_D7Pzw8cryaAzgh8SpN-uTxpl1FWke8v33dh2VNgJ0" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-en-20261006.png" alt="Extracted table with three grouped rows after grouping by Position and trashing extra rows."><figcaption><p>Result: the six physical rows are grouped into three line items.</p></figcaption></figure>
 
 ### Reverse Grouping
 
@@ -76,16 +76,16 @@ Then define the grouping key column, e.g. _Position_:
 
 If the row that should be grouped with other data appears _above_ the grouping key, enable this option:
 
-![](https://lh7-us.googleusercontent.com/iH7rDa637FWtr8wWtXpdqSh68xsaOFrb_vIWf-ZOpAjExmFPHVRaDGGipdwNy30gpLmEWT0UujjqlbcSlHU7ldQ5zhAy15pMxuqbDpS2xFSuL35EjbaXfFQTOSSO3QE_I37kvdL3i5k-N7F_9tedMss)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-doc-en-20261006.png" alt="Invoice table in which the description line stands above the line that carries position, quantity and amounts."><figcaption><p>The grouping row appears after the rows it should group.</p></figcaption></figure>
 
 Enable **Reverse grouping**, group by a main column (e.g. Net amount), and use **Move Extra Rows to Trash** if needed:
 
-![](https://lh7-us.googleusercontent.com/FJNKYXmELlMFi-Zh_0Pjgc0pcKI2-_UbDhF7b4D5p7GA4f9r-FqjruzkJw3nfJH4NA0G_BC2xQpJEzl26GbOlPt9fPyOkGowtGWgRWt5GJ62Vj-Qd04rDP0kzDFiJnRlpWF13d9YQ1e-FurQI-gHJx4)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-dialog-en-20261006.png" alt="Settings dialog with Reverse grouping checked, Move Extra Rows to Trash and Header row count 2."><figcaption><p>Reverse grouping enabled together with Move Extra Rows to Trash.</p></figcaption></figure>
 
 **Final result:**\
 
 
-<figure><img src="https://lh7-us.googleusercontent.com/e8x8gIUV10Y_FmPeW_X-UZw6uJ8P7alQTDy_m5OGGLZ8Ev7Ip-C-6fqtTixiSU0ZnLMIc4VR_f0xJV6beDnl7bFBIh4U2dME8KHB3qokj__SrQGp-3BXeOsN63SabFNd5miRCtK-jlf49nzcbbe8UJw" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-reverse-result-en-20261006.png" alt="Extracted table with three rows after reverse grouping by the amount column."><figcaption><p>Final result with reverse grouping.</p></figcaption></figure>
 
 ### Summary
 

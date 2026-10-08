@@ -28,6 +28,7 @@
   * [Hotfixes 12–25 August 2026](overview-and-basics/release-notes/incremental-updates-12-25-august-2026.md)
   * [Hotfixes 8 September 2026](overview-and-basics/release-notes/incremental-updates-8-september-2026.md)
   * [Hotfixes 15 September 2026](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)
+  * [Hotfixes 14 October 2026](overview-and-basics/release-notes/incremental-updates-14-october-2026.md)
 * [Roadmap](overview-and-basics/roadmap.md)
 * [FAQ](overview-and-basics/faq/README.md)
   * [General Information](overview-and-basics/faq/general-information.md)
@@ -46,6 +47,7 @@
 ## End User and Partner Section
 
 * [End User Section](end-user-and-partner-section/end-user-section/README.md)
+  * [Getting Access and Signing In](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Global Quick Search](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Web Address Changes](end-user-and-partner-section/end-user-section/web-address-changes.md)
@@ -314,6 +316,7 @@
           * [🇫🇷 FACTURX](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx.md)
           * [🇫🇷 FACTURX 1.0.05 - ZUGFERD 2.1](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx-1-0-05-zugferd-2-1.md)
           * [🇫🇷 FACTURX 1.0.07.2 - ZUGFERD 2.3.2](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx-1-0-07-2-zugferd-2-3-2.md)
+          * [🇫🇷 FACTURX 1.09 - ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx-1-09-zugferd-2-5.md)
           * [🇮🇹 FATTURAPA](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/fatturapa.md)
           * [🇫🇮 FINVOICE 1.3](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/finvoice-1-3.md)
           * [🇫🇮 FINVOICE 2.0](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/finvoice-2-0.md)
@@ -400,6 +403,7 @@
           * [🇩🇪 ZUGFERD 2.2](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-2.md)
           * [🇩🇪 ZUGFERD 2.3](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-3.md)
           * [🇩🇪 ZUGFERD 2.3.2](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-3-2.md)
+          * [🇩🇪 ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-5.md)
       * [Rule Conditions (Applies when)](administration-and-setup/settings/global-settings/document-types/rule-conditions-applies-when.md)
       * [Custom Validation Rules](administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md)
       * [Transformation Rules](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
@@ -513,6 +517,7 @@
   * [Log Settings](administration-and-setup/settings/log-settings/README.md)
     * [Task Management](administration-and-setup/settings/log-settings/task-management.md)
     * [Data Synchronization](administration-and-setup/settings/log-settings/data-synchronization.md)
+    * [Fulltext Search Settings](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
     * [Access Audit](administration-and-setup/settings/log-settings/access-audit.md)
   * [API Licenses](administration-and-setup/settings/api-licenses.md)
   * [Supplier Setting](administration-and-setup/settings/supplier-setting/README.md)
@@ -756,6 +761,7 @@
 
 ## Advanced functions and tools
 
+* [Knowledge Graph Explorer](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
   * [Setup & Configuration](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)

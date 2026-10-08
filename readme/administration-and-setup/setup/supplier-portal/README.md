@@ -55,6 +55,14 @@ Dodatkowo możesz szybko filtrować według statusów **Oczekujące na zatwierdz
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
+## Szczegóły dostawcy (widok wewnętrzny)
+
+Kliknij wiersz dostawcy w **Panelu dostawcy**, aby otworzyć widok **Szczegóły Dostawcy** dla tego dostawcy. Ten widok wewnętrzny pokazuje te same sześć sekcji, które dostawca wypełnia podczas rejestracji — **Szczegóły Dostawcy**, **Dane Adresowe**, **Kontakt z Dostawcą**, **Finanse Dostawcy**, **Zakup Dostawcy** i **Certyfikaty Dostawcy** — wraz z plakietką aktualnego **statusu** dostawcy (w prawym górnym rogu, np. **STATUS: OCZEKUJĄCE NA ZATWIERDZENIE**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-pl-20261009.png" alt="Widok wewnętrzny „Szczegóły Dostawcy” fikcyjnego dostawcy w interfejsie DocBits w języku polskim"><figcaption><p>Widok wewnętrzny „Szczegóły Dostawcy”: po lewej sześć sekcji rejestracji, w prawym górnym rogu status dostawcy. Wszystkie nazwy i dane to wymyślone wartości przykładowe (przykładowa organizacja Musterfirma GmbH, przykładowy dostawca Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Użyj tego widoku, aby przejrzeć profil dostawcy, uzupełnić lub poprawić brakujące dane oraz przygotować decyzję o zatwierdzeniu. Opis każdej sekcji znajdziesz na stronie [Rejestracja Dostawcy](supplier-registration.md). Przycisk powrotu u góry widoku wraca do **Panelu dostawcy** bez zapisywania zmian.
+
 ## Status dostawcy
 
 Jeśli korzystasz z **Portalu dostawców**, ważne jest, aby zrozumieć różne statusy, jakie mogą mieć dostawcy. Poniżej znajduje się lista wszystkich możliwych statusów dostawców i ich znaczenia:

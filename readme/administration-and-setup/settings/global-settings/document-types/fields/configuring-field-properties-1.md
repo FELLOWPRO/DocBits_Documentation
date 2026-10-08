@@ -26,9 +26,9 @@ Klizači **OCR** i **Match Score** u odeljku **Recognition Settings** primenjuju
 
 ## Ostale kontrole u ovom prikazu
 
-- **Create new group** i **Create field** dodaju grupu ili polje. Vidite [Dodavanje i uređivanje polja](adding-and-editing-fields.md).
-- **Master Data Settings** otvara [podešavanja matičnih podataka](master-data-settings.md).
+- **Create new group** i **Create field** dodaju grupu ili polje. Odgovarajuća stranica na srpskom još nije prevedena (posebno potzadatke).
+- **Master Data Settings** otvara podešavanja matičnih podataka. Odgovarajuća stranica na srpskom još nije prevedena (posebno potzadatke).
 - Polja za štikliranje krajnje levo biraju polja. Obližnji meni nudi **Reassign Field Group** za izabrana polja.
 - Dugme sa plus pored **Formula** otvara uređivač formula za to polje. Ikona **info** prikazuje informacije o polju. Ikona za brisanje nije dostupna za standardna polja.
 
-Za više o validaciji i uparivanju vidite [Podešavanje validacije i rezultata uparivanja](setting-validation-and-match-score.md).
+Za više o validaciji i uparivanju videće se na stranici Podešavanje validacije i rezultata uparivanja; ona na srpskom još nije prevedena (posebno potzadatke).

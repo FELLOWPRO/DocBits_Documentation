@@ -7,7 +7,7 @@ Usate **Impostazioni → Tipi Di Documento → Campi** per controllare il compor
 ## Trovare un campo e modificarne le proprietà
 
 1. In **Ricerca per nome** inserite il nome o l'etichetta del campo. Questo filtra l'elenco; non modifica il campo.
-2. Trovate la riga del campo. Per esempio **invoice_number** ha il nome tecnico `invoice_number`.
+2. Trovate la riga del campo. La riga **Numero fattura** risponde per esempio al nome tecnico `invoice_number`.
 3. Regolate i controlli di quella riga e poi scegliete **Salva le impostazioni**. Lo stesso pulsante di salvataggio è disponibile sopra e sotto la tabella.
 
 <figure><img src="../../../../../.gitbook/assets/configuring-field-properties-1-filtered-it-20261008.png" alt="Riga del campo numero fattura in italiano con i controlli OBBLIGATORIO, Solo Lettura, Nascosto, CONVALIDA DELLA FORZA, Utilizzare L'IA, OCR e PUNTEGGIO DELLA PARTITA"><figcaption>La riga del campo numero fattura dopo la ricerca di `invoice_number`.</figcaption></figure>

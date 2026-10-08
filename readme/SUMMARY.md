@@ -228,6 +228,8 @@
         * [Best Practices](administration-and-setup/settings/global-settings/document-types/script/best-practices-5.md)
         * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/script/troubleshooting-4.md)
       * [e-docs](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
+          * [Roadmap](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [EDI-instellingen: Overzicht & Voordelen](administration-and-setup/settings/global-settings/document-types/edi/edi/README.md)
           * [EDI Structuur Descriptor Bestand Gids](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-structure-descriptor-file-guide/README.md)
             * [EDI Structuur beschrijving](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-structure-descriptor-file-guide/edi-structure-descriptor.md)

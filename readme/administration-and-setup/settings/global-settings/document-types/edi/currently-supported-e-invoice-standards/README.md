@@ -111,6 +111,7 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 | Factur-X | Pris en charge |
 | Factur-X 1.0.05 / ZUGFeRD 2.1 | Pris en charge |
 | Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Pris en charge |
+| [Factur-X 1.09 / ZUGFeRD 2.5](../supported-electronic-documents/facturx-1-09-zugferd-2-5.md) | Pris en charge |
 
 ### 🇩🇪 Germany
 
@@ -149,6 +150,7 @@ DocBits prend en charge **120+** normes de facturation électronique et de docum
 | ZUGFeRD 2.2 | Pris en charge |
 | ZUGFeRD 2.3 | Pris en charge |
 | ZUGFeRD 2.3.2 | Pris en charge |
+| [ZUGFeRD 2.5](../supported-electronic-documents/zugferd-2-5.md) | Pris en charge |
 
 ### 🇮🇳 India
 

@@ -55,6 +55,14 @@ De plus, vous pouvez rapidement filtrer par les statuts **En attente de validati
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
+## Détails du Fournisseur (vue interne)
+
+Cliquez sur la ligne d'un fournisseur dans le **Tableau de bord des fournisseurs** pour ouvrir la vue **Détails du Fournisseur** de ce fournisseur. Cette vue interne affiche les six mêmes sections que le fournisseur remplit lors de son inscription — **Fournisseur Détails**, **Adresse Data**, **Fournisseur Contact**, **Fournisseur Financier**, **Fournisseur Achat** et **Fournisseur Certificates** — ainsi que le badge **Statut** actuel du fournisseur (en haut à droite, par exemple **STATUT : EN ATTENTE DE VALIDATION**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-fr-20261009.png" alt="Vue interne « Détails du Fournisseur » d'un fournisseur fictif dans l'interface DocBits en français"><figcaption><p>Vue interne « Détails du Fournisseur » : à gauche les six sections de l'inscription, en haut à droite le statut du fournisseur. Tous les noms et données sont des valeurs d'exemple inventées (organisation d'exemple Musterfirma GmbH, fournisseur d'exemple Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Utilisez cette vue pour vérifier le profil d'un fournisseur, compléter ou corriger des données manquantes et préparer la décision de validation. Pour une description de chaque section, consultez [Inscription du Fournisseur](supplier-registration.md). Le bouton de retour en haut de la vue vous ramène au **Tableau de bord des fournisseurs** sans rien enregistrer.
+
 ## Statut du fournisseur
 
 Si vous utilisez le **Tableau de bord du fournisseur**, il est important de comprendre les différents statuts que les fournisseurs peuvent avoir. Voici une liste de tous les statuts possibles des fournisseurs et leur signification :

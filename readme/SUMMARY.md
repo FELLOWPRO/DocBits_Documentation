@@ -197,6 +197,7 @@
         * [Save and Delete Rules](setup/document-training/training-line-fields-table-training/save-and-delete-rules.md)
     * [SSO Configuration](setup/sso-configuration.md)
     * [Postman for DocBits](setup/postman-for-docbits.md)
+    * [Konfigurisanje Svojstava Polja](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
     * [Skriptovanje u DocBits-u](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)
       * [Kontekst varijable](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/context-variables.md)
       * [Funkcije](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/functions.md)

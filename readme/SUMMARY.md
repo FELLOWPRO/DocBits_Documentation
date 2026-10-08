@@ -144,6 +144,7 @@
       * [Best practices](administration-and-setup/settings/global-settings/integration/best-practices.md)
       * [Troubleshooting Common Issues](administration-and-setup/settings/global-settings/integration/troubleshooting-common-issues.md)
     * [Documenttypes](administration-and-setup/settings/global-settings/document-types/README.md)
+      * [Een aangepaste validatieregel dupliceren](administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md)
       * [Purpose and Scope](administration-and-setup/settings/global-settings/document-types/purpose-and-scope.md)
       * [Adding/Editing Document Types](administration-and-setup/settings/global-settings/document-types/adding-editing-document-types.md)
       * [Activation](administration-and-setup/settings/global-settings/document-types/activation.md)

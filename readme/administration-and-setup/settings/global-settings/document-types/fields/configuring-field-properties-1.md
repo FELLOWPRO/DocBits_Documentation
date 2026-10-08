@@ -1,95 +1,34 @@
 # Configuration des propriétés de champ
 
-## Instructions détaillées sur le paramétrage des propriétés telles que Obligatoire, Lecture seule, Masqué et OCR.
+Utilisez **Paramètres → Types de Documents → Champs** pour contrôler le comportement des champs d'un type de document. Sélectionnez d'abord le type de document ; l'exemple ci-dessous montre **Facture** dans l'interface française.
 
-### Obligatoire (Required) :
+<figure><img src="../../../../../.gitbook/assets/configuring-field-properties-1-overview-fr-20261008.png" alt="Paramètres des champs de la facture en français avec les seuils de reconnaissance (OCR et SCORE DU MATCH), la recherche, le tableau des champs et Enregistrer les paramètres"><figcaption>Paramètres des champs de la facture dans une organisation DocBits de bac à sable.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_configure_classification_rule.png" alt="Docbits Configure Classification Rule"><figcaption></figcaption></figure>
+## Trouver un champ et modifier ses propriétés
 
-Si un champ est marqué comme Obligatoire, cela signifie que ce champ doit être rempli avant que le document ne puisse être enregistré ou traité.
+1. Dans **Recherche par nom**, saisissez le nom technique ou le libellé du champ. Cela filtre la liste ; cela ne modifie pas le champ.
+2. Repérez la ligne du champ. Par exemple, le champ **Numéro de facture** porte le nom technique `invoice_number`.
+3. Réglez les contrôles de cette ligne, puis sélectionnez **Enregistrer les paramètres**. Le même bouton d'enregistrement est disponible au-dessus et en dessous du tableau.
 
-**Pour définir cette propriété :**
+<figure><img src="../../../../../.gitbook/assets/configuring-field-properties-1-filtered-fr-20261008.png" alt="Ligne du champ Numéro de facture en français avec REQUIS, Lecture Seule, Masqué, VALIDATION DE LA FORCE, Utiliser L'IA, OCR et SCORE DU MATCH"><figcaption>La ligne du champ Numéro de facture après une recherche sur `invoice_number`.</figcaption></figure>
 
-* Naviguez vers les paramètres du champ dans votre système DocBits.
-* Activez l'option "Obligatoire" pour le champ concerné.
+| Contrôle | À quoi il sert |
+| --- | --- |
+| **REQUIS** | Marque les informations qui doivent être présentes pour la validation. Après avoir modifié ce réglage, vérifiez le résultat de validation d'un document. |
+| **Lecture Seule** | Affiche un champ sans permettre aux utilisateurs de modifier sa valeur. |
+| **Masqué** | Retire le champ de la vue normale du document. |
+| **VALIDATION DE LA FORCE** | Exige que le champ passe la validation. Configurez les règles détaillées séparément ; cette case à cocher n'est pas un éditeur de règles. |
+| **Utiliser L'IA** | Demande ou arrête l'extraction par IA pour ce champ. La ligne indique si l'extraction est demandée. |
+| **OCR** | Saisissez le seuil de confiance OCR du champ. Il s'agit d'un nombre, pas d'un interrupteur marche/arrêt ni d'un réglage de langue. |
+| **SCORE DU MATCH** | Saisissez le seuil de correspondance du champ. Il s'agit d'un nombre, pas d'un interrupteur marche/arrêt. |
 
-**Impact :**
+Les curseurs **OCR** et **SCORE DU MATCH** sous **PARAMÈTRES DE RECONNAISSANCE** appliquent des valeurs à toute la liste des champs. Les cases à cocher directement sous les titres de colonnes appliquent **REQUIS**, **Lecture Seule**, **Masqué** ou **VALIDATION DE LA FORCE** à toute la liste. Vérifiez les lignes concernées avant de sélectionner **Enregistrer les paramètres**. **RESTAURER LES VALEURS PAR DÉFAUT** réinitialise la configuration des champs ; utilisez-le uniquement si vous voulez remplacer vos modifications.
 
-* Ce paramètre garantit que les informations importantes sont saisies et qu'aucun document ne peut être traité sans les données requises.
+## Autres contrôles dans cette vue
 
-### Lecture seule (Read Only) :
+- **Créer un nouveau groupe** et **Créer un champ** ajoutent un groupe ou un champ. Voir [Ajout et Édition de Champs](adding-and-editing-fields.md).
+- **Paramètres des données maîtres** ouvre la [configuration des données de base](master-data-settings.md).
+- Les cases à cocher situées le plus à gauche sélectionnent des champs. Le menu adjacent propose **Réaffecter le groupe de champ** pour les champs sélectionnés.
+- Le bouton plus **FORMULE** ouvre l'éditeur de formule de ce champ. L'icône **info** affiche les informations du champ. L'icône de suppression n'est pas disponible pour les champs standard.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_model_prediction_test.png" alt="Docbits Model Prediction Test"><figcaption></figcaption></figure>
-
-Si un champ est marqué comme Lecture seule, cela signifie que les utilisateurs peuvent voir le contenu de ce champ, mais ne peuvent y apporter aucune modification.
-
-**Pour définir cette propriété :**
-
-* Allez dans les options du champ. Activez l'option "Lecture seule" pour le champ souhaité.
-
-**Impact :**
-
-* Ce paramètre peut être utile pour protéger des informations sensibles ou pour s'assurer que des données importantes ne sont pas modifiées accidentellement.
-
-### Masqué (Hidden) :
-
-<figure><img src="../../../../../.gitbook/assets/docbits_classification_extraction_settings.png" alt="Docbits Classification Extraction Settings"><figcaption></figcaption></figure>
-
-Si un champ est marqué comme "Masqué", cela signifie que le champ sera caché dans l'interface utilisateur et que les utilisateurs ne pourront ni le voir ni y accéder.
-
-**Pour définir cette propriété :**
-
-* Allez dans les options du champ.
-* Activez l'option "Masqué" pour le champ correspondant.
-
-**Impact :**
-
-* Ce paramètre est souvent utilisé pour masquer des champs internes ou techniques qui ne sont pas pertinents pour l'utilisateur final ou qui ne sont nécessaires que pour le traitement interne.
-
-### OCR (Reconnaissance Optique de Caractères) :
-
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
-
-Si un champ est configuré pour l'OCR, cela signifie que le système tentera d'extraire le texte du document et de l'insérer dans ce champ. Ce paramètre est généralement utilisé pour les champs destinés à être remplis automatiquement.
-
-**Pour configurer cela :**
-
-* Activez l'option OCR pour le champ correspondant.
-* Si nécessaire, configurez les paramètres OCR tels que la langue, la police, etc.
-
-**Impact :**
-
-* L'utilisation de l'OCR permet de traiter les documents automatiquement en extrayant des informations des textes et en les saisissant dans les champs appropriés, réduisant ainsi l'effort manuel et augmentant l'efficacité.
-
-### Validation forcée (Forced validation) :
-
-<figure><img src="../../../../../.gitbook/assets/docbits_sql_alter_table_syntax.png" alt="Docbits Sql Alter Table Syntax"><figcaption></figcaption></figure>
-
-Configurez les règles de validation en conséquence, telles que les limites numériques, les expressions régulières ou les relations avec d'autres champs.
-
-**Pour configurer cela :**
-
-* Enregistrez les modifications.
-
-**Impact :**
-
-* La validation forcée vérifie les données saisies par rapport aux critères spécifiés pour s'assurer qu'elles sont valides. Cela aide à détecter les erreurs tôt et à améliorer la qualité des données.
-
-### Score de correspondance (Match Score) :
-
-<figure><img src="../../../../../.gitbook/assets/docbits_add_new_column_steps.png" alt="Docbits Add New Column Steps"><figcaption></figcaption></figure>
-
-En comparant les données saisies avec des données de référence, le score de correspondance peut aider à confirmer l'exactitude et la validité des données. Si le score de correspondance dépasse un certain seuil, la correspondance est considérée comme réussie.
-
-**Pour configurer cela :**
-
-* Activez l'option Match Score et définissez le seuil souhaité.
-* Enregistrez les modifications.
-
-**Impact :**
-
-* Le score de correspondance est utilisé pour évaluer l'exactitude des correspondances entre les données saisies et les valeurs de référence. Si le score obtenu dépasse le seuil fixé, la correspondance est considérée comme réussie. Ceci est particulièrement utile pour les champs qui nécessitent une validation de données ou un appariement de données, tels que les champs contenant un nom, une adresse e-mail, etc. par exemple, lors de la vérification des données clients.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_column_requirements_analysis.png" alt="Docbits Column Requirements Analysis" width="258"><figcaption></figcaption></figure>
-
-En configurant soigneusement ces propriétés de champ, vous pouvez optimiser les flux de travail de traitement de documents et vous assurer que vos données sont correctement saisies, protégées et traitées efficacement.
+Pour en savoir plus sur la validation et la correspondance, voir [Setting Validation and Match Score](setting-validation-and-match-score.md).

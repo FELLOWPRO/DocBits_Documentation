@@ -190,6 +190,8 @@
           * [🇦🇹 AUSTRIA EBINTERFACE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/austria-ebinterface.md)
           * [🇦🇹 AUSTRIA EBINTERFACE 6.0](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/austria-ebinterface-6-0.md)
           * [🇦🇹 AUSTRIA EBINTERFACE 6.1](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/austria-ebinterface-6-1.md)
+          * [🇫🇷 FACTURX 1.09 - ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx-1-09-zugferd-2-5.md)
+          * [🇩🇪 ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-5.md)
       * [Reglas de Transformación](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
       * [Más ajustes](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
         * [Mejores prácticas](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)

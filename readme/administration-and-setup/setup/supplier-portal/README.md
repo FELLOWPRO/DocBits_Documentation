@@ -61,6 +61,14 @@ Zusätzlich können Sie schnell nach den Status **Genehmigung ausstehend** oder 
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/10.png)
 
+## Interner Einstieg in die Supplier-Details-Ansicht
+
+Klicken Sie im **Dashboard für Lieferanten** auf die Zeile eines Lieferanten, um die Ansicht **Lieferanten Details** für diesen Lieferanten zu öffnen. Diese interne Ansicht zeigt dieselben sechs Abschnitte, die der Lieferant bei der Registrierung ausfüllt — **Lieferanten Details**, **Adress Daten**, **Lieferant Kontakt**, **Lieferant Finanzen**, **Einkauf vom Lieferanten** und **Lieferanten Zertifikate** — zusammen mit dem aktuellen **Status** des Lieferanten (oben rechts als **STATUS** mit Badge, zum Beispiel **GENEHMIGUNG AUSSTEHEND**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-de-20261008.png" alt="Interne Ansicht „Lieferanten Details“ eines erfundenen Lieferanten in der Sandbox-Oberfläche auf Deutsch"><figcaption><p>Interne Ansicht „Lieferanten Details“: links die sechs Abschnitte der Registrierung, oben rechts der Status des Lieferanten. Alle Daten sind erfundene Beispielwerte.</p></figcaption></figure>
+
+Nutzen Sie diese Ansicht, um das Lieferantenprofil zu prüfen, fehlende Daten zu ergänzen oder zu korrigieren und die Freigabeentscheidung vorzubereiten. Eine Beschreibung jedes Abschnitts finden Sie unter [Lieferantenregistrierung](supplier-registration.md). Über die Zurück-Schaltfläche oben links in der Ansicht kehren Sie zum **Dashboard für Lieferanten** zurück, ohne etwas zu speichern.
+
 ## Status der Lieferanten
 
 Wenn Sie das **Lieferanten-Portal** verwenden, ist es wichtig, die verschiedenen Status zu verstehen, die Lieferanten haben können. Unten finden Sie eine Liste aller möglichen Lieferantenstatus und deren Bedeutungen:

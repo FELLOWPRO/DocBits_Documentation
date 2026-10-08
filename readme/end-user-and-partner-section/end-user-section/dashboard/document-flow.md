@@ -10,7 +10,7 @@ Sur le [tableau de bord](../dashboard/), trouvez le document. Dans sa colonne **
 
 ## Ouvrir depuis la Validation Des Champs
 
-Ouvrez le document. Dans **Validation Des Champs**, sélectionnez les trois points dans la barre d'actions de droite, puis **Flux de documents** sous **Plus d'options**.
+Ouvrez le document. Dans **[Validation Des Champs](../validation-screen/)**, sélectionnez les trois points dans la barre d'actions de droite, puis **Flux de documents** sous **Plus d'options**.
 
 <figure><img src="../../../.gitbook/assets/document-flow-validation-menu-fr-20261008.png" alt="Écran Validation Des Champs en français montrant le menu Plus d'options et son entrée Flux de documents à côté d'une facture synthétique."><figcaption>Le même flux est disponible depuis la vue du document.</figcaption></figure>
 

@@ -1,327 +1,61 @@
-# Pantalla de Coincidencia de Órdenes de Compra
+# Pantalla de coincidencia de órdenes de compra
 
-{% embed url="https://youtu.be/qR-lrSaj4Ug" %}
-DocBits PO Matching Tutorial: Auto/Manual Line Matching, Tolerances & Mismatch Indicators
-{% endembed %}
-
-## Descripción general
-
-En la pantalla de **Coincidencia de Órdenes de Compra**, puedes comparar los artículos de línea extraídos de tu documento con aquellos almacenados en el **sistema Infor**, utilizando el número de orden de compra como referencia.
-
-## Descripción general
-
-En la pantalla de **Coincidencia de Órdenes de Compra**, puedes comparar los artículos de línea extraídos de tu documento con aquellos almacenados en el **sistema Infor**, utilizando el número de orden de compra como referencia.
-
-Puedes:
-
-* **Identificar inmediatamente** cualquier diferencia entre los datos extraídos y los almacenados
-* **Establecer tolerancias** para permitir desviaciones aceptables
-* **Ignorar estados específicos** de Infor, si es necesario
-* **Aprobar y exportar** el documento después de una coincidencia exitosa
-* **Rechazar** el documento si los datos no cumplen con los criterios de validación requeridos
-
-Esta página te guiará a través del proceso de coincidencia de órdenes de compra y explicará toda la funcionalidad relacionada disponible en esta sección.
-
-## Herramientas en la Pantalla de Coincidencia de Órdenes de Compra
-
-En la parte superior de la pantalla de Coincidencia de Órdenes de Compra, encontrarás varias herramientas, como **Guardar**, **Coincidencia Automática**, **Exportar**, y otras, que ayudan con el proceso de coincidencia.\
-Una descripción detallada de cada herramienta y su funcionalidad se puede encontrar [aquí](purchase-order-matching-tools.md).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FxPOM1IzmTGgCCAE4tAQg%252Fpo_match_tools_0.png%3Falt%3Dmedia%26token%3D420e0d50-d5c8-4b7b-8ec6-26ca9e2d7a68\&width=768\&dpr=4\&quality=100\&sign=5d32419c\&sv=2)
-
-## Filtrar y Agregar Números de Órdenes de Compra
-
-Puedes buscar números de órdenes de compra específicos ingresando el número en el campo de búsqueda.\
-Para un filtrado más refinado, haz clic en el ícono en el lado derecho de la barra de búsqueda para seleccionar criterios específicos para tu búsqueda.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F3xeAcb5EwKQPg9rksZVE%252Fpo_match_3.png%3Falt%3Dmedia%26token%3Deef4e964-ffe5-485c-ae22-c5790a9302fc\&width=768\&dpr=4\&quality=100\&sign=b0830e56\&sv=2)
-
-Las siguientes opciones de filtro están disponibles para ayudarte a refinar tu búsqueda de órdenes de compra:
-
-* **Palabra clave** – Filtrar por números de órdenes de compra.
-* **Proveedor** – Filtrar por nombre o ID del proveedor.
-* **Después de la fecha** – Mostrar órdenes de compra creadas después de una fecha específica.
-* **Antes de la fecha** – Mostrar órdenes de compra creadas antes de una fecha específica.
-* **Cantidad mínima de pedido** – Filtrar por valor mínimo de pedido.
-* **Cantidad máxima de pedido** – Filtrar por valor máximo de pedido.
-* **Ordenar por** – Seleccionar el atributo para ordenar los resultados (por ejemplo, fecha, monto).
-* **Dirección de clasificación** – Elegir el orden de clasificación: ascendente o descendente.
-* **Número de registros** – Definir cuántos resultados deben mostrarse por página.
-* **Más** – Opciones de filtrado adicionales incluyen:
-  * **Número de entrega**
-  * **Número de albarán**
-  * **ID del Artículo**
-
-Después de configurar tus filtros, haz clic en **Aplicar** para aplicarlos o **Borrar** para restablecer todas las configuraciones de filtro.
-
-Las órdenes de compra coincidentes se mostrarán según los filtros aplicados.\
-Puedes:
-
-* Ajustar los filtros y buscar nuevamente, o
-* Hacer doble clic en una entrada de orden de compra para agregarla a la pantalla de Coincidencia de Órdenes de Compra.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2uwMlpQ42lG5fOvUy4Gx%252Fpo_match_5.png%3Falt%3Dmedia%26token%3De2751f7f-586e-4303-bb17-db2a56de2b0b\&width=768\&dpr=4\&quality=100\&sign=fbf27bf2\&sv=2)
-
-## Seleccionar Números de Órdenes de Compra y Reorganizar Columnas
-
-Puedes cambiar entre órdenes de compra individuales para ver sus respectivos artículos de línea haciendo clic en el número de orden de compra en la parte superior de la tabla.
-
-También puedes reorganizar las columnas dentro de cada vista de orden de compra simplemente arrastrándolas y soltándolas en tu orden preferido.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FwZzMEbGz7j20tIsouC8V%252Fpo_match_7.png%3Falt%3Dmedia%26token%3D6dc539ab-33af-40a6-8c82-04449ba317e4\&width=768\&dpr=4\&quality=100\&sign=3b8fd876\&sv=2)
-
-Para ocultar permanentemente columnas específicas, utiliza la función [**Establecer las columnas de la tabla PO para la organización**](./#establecer-las-columnas-de-la-tabla-po-para-la-organizacion).
-
-## Establecer las columnas de la tabla PO para la organización
-
-Tienes la opción de ocultar o mostrar columnas específicas en la tabla de órdenes de compra haciendo clic en el ícono de configuración de columnas (mostrado a continuación).\
-Esta configuración está disponible tanto en la pantalla de **Coincidencia de Órdenes de Compra** como en el menú de **Búsqueda Avanzada de Órdenes de Compra**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F4nQ5loSdHlIebOh4vJ1m%252Fpo_tools_new_10.png%3Falt%3Dmedia%26token%3D84991cc8-f7ae-40f1-ba6c-cdd66722b898\&width=768\&dpr=4\&quality=100\&sign=ec34b898\&sv=2)
-
-Se pueden encontrar detalles adicionales [aquí](purchase-order-matching-tools.md#establecer-las-columnas-de-la-tabla-po-para-la-organizacion).
-
-## Re-sincronizar el número de orden de compra con Infor
-
-Para re-sincronizar los datos en **DocBits** con los datos de **Infor**, haz clic en el **botón de actualizar** junto al número de orden de compra encima de la tabla.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNQiPjtumht4wV9z8VHtw%252Fpo_match_8.png%3Falt%3Dmedia%26token%3Dcd9cb152-6b2f-475e-abeb-e9ad1cbd46cf\&width=768\&dpr=4\&quality=100\&sign=adab84c\&sv=2)
-
-Si tu proceso de coincidencia se basa en el atributo **Entrega recibida Cantidad pendiente**, también tienes la opción de realizar una **sincronización manual**, como se describe en detalle [aquí](purchase-order-matching-tools.md#sincronizar-datos).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FcceZaArRjBdKpI5r5u1v%252Fpo_tools_new_7.png%3Falt%3Dmedia%26token%3D49e25f09-de07-42b7-ab3d-a43a35e567c5\&width=768\&dpr=4\&quality=100\&sign=c6e75393\&sv=2)
-
-## ¿Por qué no hay coincidencia?
-
-Cuando un documento no coincide, la pantalla muestra **una frase encima del área de la orden de compra** que indica la razón y qué hacer al respecto:
-
-| Mensaje                                                        | Significado y siguiente paso                                                                                                                                                  |
-| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| No purchase order number                                       | El documento no tiene número de orden de compra. Introdúcelo en el campo del encabezado y guarda — la coincidencia se ejecuta nuevamente al guardar.                         |
-| No purchase order was found in the ERP for …                   | El número en el documento no existe en el ERP. Verifica el número y guarda.                                                                                                  |
-| … has not been looked up yet                                   | El número llegó después del procesamiento (por ejemplo, desde datos maestros). Guarda el documento o haz clic en **Auto Match**.                                             |
-| … is loaded but not connected                                  | Las líneas de la orden de compra están en pantalla pero aún no hay coincidencias. Haz clic en **Auto Match** o conecta las líneas manualmente.                               |
-| … was found, but none of the purchase order lines match        | Cada línea falló en las reglas de coincidencia. Abre el **historial de coincidencias** para ver en qué columna, luego haz la coincidencia manualmente o corrige el documento. |
-| The document has no line items                                 | No hay nada con qué hacer la coincidencia; verifica la extracción de la tabla.                                                                                                |
-| The line-item table has no purchase order columns mapped       | Cantidad, precio unitario y número de artículo no están mapeados para esta tabla. Mapealos en la configuración de la tabla.                                                |
-| The purchase order has no open lines left                      | Cada línea de la orden ya está consumida o deshabilitada (ver [Estado de línea de OC consumida](./#consumed-po-line-status) y [Estados deshabilitados](./#disable-statuses)). |
-
-Debajo de la frase, la pantalla lista candidatos que fueron **apartados**, por ejemplo _"Ignorado: 2900233285 de la columna de línea de artículo es el número de factura, no una orden de compra"_ o _"… está excluido por configuración"_. El mensaje desaparece una vez que el documento coincide.
+Use **PO Matching** (Coincidencia de OC) para comparar las líneas de la orden de compra cargadas para un documento con las líneas de factura extraídas. Los datos de la orden de compra pueden provenir de una integración con el ERP o de otra importación configurada. La pantalla muestra el documento junto a las dos tablas para que pueda comprobar números, cantidades, precios y diferencias antes de guardar o exportar.
 
 {% hint style="info" %}
-**La coincidencia se ejecuta nuevamente cuando guardas.** Si el número de orden de compra cambia, o nunca se buscó antes, el guardado en sí hace la coincidencia del documento. Una coincidencia existente nunca es reemplazada por un guardado — y las líneas que eliminaste manualmente permanecen eliminadas.
+El ejemplo siguiente usa una factura y una orden de compra sintéticas de FellowPro en **DocBits Documentation Test A**. Su tabla de facturas muestra actualmente **No se encuentran líneas de pedido**. Esto demuestra la navegación y la búsqueda, pero no puede demostrar una coincidencia de líneas correcta. No exporte este ejemplo como una factura coincidente.
 {% endhint %}
 
-**Si no se puede guardar una coincidencia**, la pantalla no muestra "guardado": restaura la coincidencia en pantalla, marca el documento como no guardado y muestra por qué el servidor la rechazó — por ejemplo _"No se pudo guardar la coincidencia de la OC: la regla de transformación "…" reconstruyó la tabla"_. Los administradores ven un enlace a la regla en cuestión. Pide a un administrador que ajuste la [regla de transformación](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) o las [reglas de coincidencia](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+<figure><img src="../../../.gitbook/assets/dbdc-318-po-screen-es.png" alt="Pantalla de PO Matching en español en la organización sintética de Sandbox: búsqueda, barra de herramientas, líneas de la orden de compra, tabla de líneas de factura vacía y vista previa de la factura"><figcaption><p>La orden de compra está cargada; la factura de ejemplo no tiene líneas extraídas que conectar.</p></figcaption></figure>
 
-## Historial de coincidencias
+## Buscar e inspeccionar una orden de compra
 
-El botón **Historial de coincidencias** (icono de reloj en la barra de herramientas de la orden de compra; requiere el permiso de Analytics) abre una reproducción de solo lectura de cómo se decidió la última coincidencia:
+1. Abra una factura en **PO Matching**. Si su organización tiene varias órdenes de compra, introduzca un número en **Número de pedido de compra de búsqueda**.
+2. Seleccione el icono de filtros junto al cuadro de búsqueda para **Palabra clave**, **Proveedor**, **Estado**, **Estado del pedido**, fechas, rango de importes, ordenación y número de registros mostrados. Seleccione **Más** para criterios adicionales. Seleccione **Aplicar** para buscar o **Borrar** para restablecer los filtros.
+3. Seleccione un número de orden de compra sobre la tabla para inspeccionar sus líneas. El icono de actualización junto al número vuelve a cargar los datos de ese pedido. Una recarga puede depender de la integración configurada.
+4. Compare cada línea de la orden de compra con la factura y su tabla extraída. El **+** de una línea amplía los detalles de coincidencia; por sí solo no conecta la línea con la factura. En el ejemplo muestra **No multi-match Information** porque no existe dicha coincidencia.
 
-* las **reglas de transformación** que se ejecutaron antes de la coincidencia, y si alguna descartó una coincidencia,
-* las **etapas y reglas** de coincidencia que se intentaron — en verde donde se encontró una coincidencia, rojo donde una regla no encontró nada, gris donde una regla fue omitida por su condición de activación (el tooltip indica por qué),
-* para una regla fallida, la **columna comparada** con el valor en el documento y el valor en la orden de compra.
+<figure><img src="../../../.gitbook/assets/dbdc-318-po-filters-es.png" alt="Filtros de búsqueda de órdenes de compra en español con proveedor, estados, límites de fecha e importe, ordenación y los botones Aplicar y Borrar"><figcaption><p>Use el panel de filtros para reducir las órdenes de compra mostradas.</p></figcaption></figure>
 
-Abrir y reproducir el historial no activa ni la coincidencia ni la exportación. Los administradores encuentran la misma reproducción, con un campo para el ID del documento, junto al diagrama del conjunto de reglas en la configuración de orden de compra del tipo de documento.
+<figure><img src="../../../.gitbook/assets/dbdc-318-po-line-es.png" alt="Línea de orden de compra expandida con No multi-match Information y una tabla de líneas de factura vacía"><figcaption><p>La línea expandida muestra los detalles de coincidencia cuando están disponibles.</p></figcaption></figure>
 
-## ¿Cómo hacer coincidencias?
+## Coincidir líneas y revisar el resultado
 
-Para hacer coincidir un artículo de línea de orden de compra con un artículo de línea extraído del documento, tienes tres opciones:
+Cuando ambas tablas contengan líneas, conecte una línea de factura con la línea correspondiente de la orden de compra arrastrándola, o use las acciones de coincidencia del menú contextual de la línea. **Auto Match** (Coincidencia automática) intenta conectar las líneas elegibles según las reglas de su organización. Compruebe el resultado antes de guardar: un número de artículo coincidente por sí solo no demuestra que la cantidad, el precio o las condiciones de entrega coincidan. Consulte [Herramientas de coincidencia de órdenes de compra](purchase-order-matching-tools.md) para la barra de herramientas, los controles de columnas y las acciones manuales, y [Atajos de teclado](keyboard-shortcuts.md) para las acciones con teclado.
 
-1. **Arrastrar y soltar**\
-   Arrastra el artículo de línea de orden de compra deseado y suéltalo sobre el artículo de línea correspondiente en la tabla extraída.
-2. **Clic derecho y conectar**
-   * Haz clic derecho en el artículo de línea de orden de compra que deseas coincidir y selecciona **Seleccionar para coincidencia**.
-   * Luego, haz clic derecho en el artículo de línea correspondiente en la tabla extraída y selecciona **Conectar**.
-3.  **Coincidencia automática**
+Si un documento no coincide, lea el motivo mostrado sobre el área de la orden de compra. Puede indicar que falta el número de OC, que el pedido no se encontró, que sus líneas no están disponibles o que la factura no tiene líneas extraídas. Corrija el documento o la configuración indicada por ese motivo. Un administrador puede inspeccionar las [reglas de coincidencia](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) y la [extracción de tablas](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) cuando no aparezcan líneas de factura.
 
-    Haz clic en el botón **Coincidencia Automática** para permitir que el sistema intente automáticamente hacer coincidir todos los artículos de línea basándose en los datos extraídos y de la orden de compra.
+Mensajes habituales y pasos siguientes:
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Flsdom16blO6pMF5rtQYS%252Fpo_tools_new_5.png%3Falt%3Dmedia%26token%3D616d6600-ff52-478a-9282-518212360106\&width=768\&dpr=4\&quality=100\&sign=ad47d853\&sv=2)
+| Lo que ve | Qué comprobar |
+| --- | --- |
+| Sin número de orden de compra | Introduzca o corrija el número de OC en el documento y guarde. |
+| No se encontró la orden de compra | Compruebe el número y si el pedido se importó a esta organización. |
+| El pedido se encontró pero no está conectado | Pruebe **Auto Match** o conecte las líneas manualmente tras comprobar ambas tablas. |
+| Ninguna línea del pedido coincide | Compare los valores de la factura con el pedido y revise el historial de coincidencias. |
+| Sin líneas de factura | Compruebe la [extracción de tablas](../../../administration-and-setup/settings/document-processing/classification-and-extraction/README.md) antes de intentar coincidir. |
+| Sin líneas de pedido abiertas | Compruebe los [estados de línea consumida](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) y los estados excluidos. |
 
-También puedes seleccionar **varias líneas de órdenes de compra** y hacerlas coincidir con una **única línea** en la tabla extraída. Para más detalles, haz clic [aquí](./#coincidencias-multiples).
+{% hint style="warning" %}
+Guardar puede volver a activar la coincidencia tras un número de OC cambiado o recién detectado. Compruebe el resultado mostrado después de guardar. Si una coincidencia no se puede guardar, lea el error mostrado en pantalla y pida a un administrador que revise la [transformación](../../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) y las [reglas de coincidencia](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+{% endhint %}
 
-## ¿Qué columnas se están coincidiendo?
+Use **Historial de coincidencias** (icono de reloj, si sus permisos lo permiten) para inspeccionar cómo se decidió una coincidencia anterior. Es una vista de solo lectura. Puede revisar qué reglas se ejecutaron y por qué un candidato no coincidió; abrir el historial no exporta el documento.
 
-El proceso de Coincidencia de Órdenes de Compra solo coincide columnas específicas. La lista a continuación describe qué columnas se coinciden, si están disponibles. Si no se establece ninguna [tolerancia](./#aceptar-tolerancias), las columnas solo coincidirán si son una coincidencia exacta (100%).
+### Más de una línea por coincidencia
 
-* [Cantidad](./#cantidad) (Cantidad | Cantidad recibida | Entrega recibida Cantidad pendiente)
-* Precio unitario
-* Número de Orden de Compra
-* Número de artículo/ID de artículo del proveedor
-* Fecha de entrega prometida
+Una sola línea de factura puede corresponder a varias líneas de pedido, o al revés, donde sus reglas de coincidencia lo permitan. Abra los detalles **+** de una línea para inspeccionar cualquier coincidencia múltiple existente. Compruebe la cantidad y el precio combinados, no solo una línea. Un panel de detalles vacío como el ejemplo sintético anterior significa que no hay ninguna coincidencia múltiple que inspeccionar. Consulte [Herramientas de coincidencia de órdenes de compra](purchase-order-matching-tools.md) para cambiar las conexiones.
 
-### Cantidad
+### Cantidades, diferencias y descuentos
 
-Tienes tres opciones para hacer coincidir la cantidad.
+Según la configuración, la coincidencia puede comparar la cantidad de pedido, recibida o de entrega restante, así como el precio unitario, el número de artículo y otros campos mapeados. Una diferencia puede aceptarse si el tipo de documento tiene una tolerancia configurada. Compruebe la diferencia mostrada antes de aceptarla. La [configuración de tolerancia](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) y la [guía de descuentos](discounts.md) explican estos casos.
 
-* Cantidad
-* Cantidad recibida
-* Entrega recibida Cantidad pendiente
+El área de totales, cuando está disponible, ayuda a conciliar el importe neto de la factura con las líneas coincidentes y los cargos. Si queda un **Importe pendiente**, inspeccione los valores de las líneas individuales y cualquier [elemento de coste](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md) antes de exportar.
 
-Puedes establecer esta opción en **Ajustes → Ajustes globales → Tipos de documentos → Más ajustes → Sección de Orden de Compra → Orden de Compra**
+## Comprobar totales y guardar
 
-La opción de cantidad seleccionada determina qué columna de **cantidad de orden de compra** se utiliza para la comparación durante el proceso de coincidencia.
+Revise la vista previa de la factura a la derecha y compare los totales de las líneas y los cargos. Para una explicación completa de las acciones de la barra de herramientas superior, consulte [Herramientas de coincidencia de órdenes de compra](purchase-order-matching-tools.md). Seleccione **Guardar** tras cambiar las coincidencias. Seleccione **Exportar** solo después de haber comprobado el documento y el resultado de la coincidencia; la flecha junto a Exportar muestra opciones de exportación adicionales configuradas. Su organización puede tener acciones de exportación diferentes.
 
-## **Estado de la línea de PO consumida**
+La barra de herramientas de la vista previa permite moverse entre las páginas del documento, ampliar, descargar el original y abrir una vista más grande. Úsela para verificar que el número de orden de compra y los valores de las líneas aparecen realmente en la factura. Si sale con cambios de coincidencia sin guardar, pueden perderse.
 
-Esta función agrega codificación de colores a las líneas de PO, facilitando la identificación de su estado de coincidencia de un vistazo. Más información está disponible en la página de configuración de [**Estado de la línea de PO consumida**](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNoof3pErQqAvAWZpo4Fd%252Fimage.png%3Falt%3Dmedia%26token%3D21a15672-8e84-4e22-a0f2-8b65bcbfda54\&width=768\&dpr=4\&quality=100\&sign=4a68abca\&sv=2)
-
-## **Sección de orden de envío de PO**
-
-Esta sección proporciona una visión general visual de cuánto se ha entregado y facturado por cada ítem de PO. Ayuda a rastrear el progreso de facturación utilizando valores de cantidad y una barra de progreso.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2R9tB3JySdIMk8meRSVZ%252FPO-Shipment-Order-1.jpg%3Falt%3Dmedia%26token%3D70aa50f4-84cd-4a55-b580-037b893d1f5b\&width=768\&dpr=4\&quality=100\&sign=e4619335\&sv=2)
-
-Se pueden encontrar más detalles en la página de [**Configuración de orden de envío de PO**](../../../administration-and-setup/settings/document-processing/module/po-shipment-order-setting.md).
-
-## Aceptar Tolerancias
-
-Puedes especificar niveles de tolerancia aceptables durante el proceso de coincidencia.\
-Por defecto, solo las coincidencias exactas (100%) se consideran válidas.
-
-Si se configuran tolerancias en la configuración del sistema, puedes ajustarlas para los atributos permitidos directamente en la **Tabla Extraída** bajo la columna **Comportamiento**.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FJLdikqwBf45WgFqlPUYW%252Fpo_match_11.png%3Falt%3Dmedia%26token%3D0c9d533f-f994-472a-9ff8-75ef564cef5e\&width=768\&dpr=4\&quality=100\&sign=b0c004c0\&sv=2)
-
-Para más información sobre cómo configurar y usar tolerancias, consulta la [documentación detallada](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
-
-## Descuentos
-
-Si hay descuentos presentes en su tabla extraída, se aplicarán automáticamente al precio unitario antes de la coincidencia, excepto cuando se utilicen [coincidencias múltiples](./#coincidencias-multiples). Más información sobre los descuentos se puede encontrar [aquí](discounts.md).
-
-## Deshabilitar estados
-
-Puedes excluir líneas específicas con ciertos estados de ser coincidentes. Para más información, consulta la [documentación detallada](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md).
-
-## Verificar líneas coincidentes
-
-Varios indicadores están disponibles para ayudarte a verificar si un artículo de línea ha sido coincidente exitosamente o no.
-
-### Tabla de Órdenes de Compra
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FB3LlWddnfNcu8kUedbvb%252Fpo_match_14.png%3Falt%3Dmedia%26token%3D484a856a-b8b2-439f-bbf9-35dd4bb55343\&width=768\&dpr=4\&quality=100\&sign=b71ea425\&sv=2)
-
-* Este ícono indica que el artículo de línea de la orden de compra ha sido coincidente exitosamente.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F2vcst2wCfyck9Z7ak4eO%252Fguide_po_2.png%3Falt%3Dmedia%26token%3D78f7a224-ba6b-4027-b6a0-61e5502fd7c2\&width=768\&dpr=4\&quality=100\&sign=e0d60903\&sv=2)
-
-* Este ícono indica que el artículo de línea de la orden de compra contiene un desajuste.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FAb1A9PwBhrvfAf5q7f5w%252Fguide_po_5.png%3Falt%3Dmedia%26token%3D6616b59d-ffa4-4202-9382-3ac8ecd8b913\&width=768\&dpr=4\&quality=100\&sign=dd476496\&sv=2)
-
-### Tabla Extraída del Documento
-
-*   Este ícono indica que el artículo de línea ha sido coincidente exitosamente. Puedes pasar el cursor sobre el ícono para resaltar la línea de orden de compra correspondiente.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Flogrk90Ufp5NQ7fd1QEX%252Fpo_match_15.png%3Falt%3Dmedia%26token%3D59c96286-24e9-4790-a9db-8c02efaed305\&width=768\&dpr=4\&quality=100\&sign=1a296310\&sv=2)
-*   Este ícono indica que el artículo de línea contiene un desajuste. Puedes pasar el cursor sobre el ícono para resaltar la línea de orden de compra correspondiente y ver las columnas donde ocurren desajustes.
-
-    ![](../../../.gitbook/assets/po_match_new_4.png)
-
-## Coincidencias Múltiples
-
-La coincidencia múltiple permite que varias líneas de una tabla se coincidan con una única línea en la tabla correspondiente (opuesta).
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/po_match_20.png)
-
-Esta función es particularmente útil para escenarios donde los detalles están divididos en varios artículos de línea.
-
-### Criterios de Coincidencia
-
-Las líneas se considerarán una coincidencia si se cumplen las siguientes condiciones agregadas:
-
-* **Precio Unitario**:\
-  Se calcula el precio unitario promedio de las múltiples líneas y se compara con el precio unitario en la tabla opuesta.
-* **Cantidad**:\
-  La suma de las cantidades a través de las líneas coincidentes debe coincidir con la cantidad en la tabla opuesta.
-* **Requisitos Adicionales**:\
-  Cualquier [criterio de coincidencia adicional](./#que-columnas-se-estan-coincidiendo) también debe ser satisfecho.
-
-Si un solo artículo de línea se coincide con múltiples líneas, puedes ver información detallada haciendo clic en el ícono de más (+) junto al artículo de línea respectivo.
-
-Esto expande la vista para mostrar todas las entradas coincidentes, ayudándote a verificar y gestionar múltiples coincidencias de manera efectiva.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FXueoHfU6EiDKaWBKJL2X%252Fpo_match_19.png%3Falt%3Dmedia%26token%3D9b947abd-5fbc-45e7-8e55-8b38746b5e32\&width=768\&dpr=4\&quality=100\&sign=191a712\&sv=2)
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZJZekesrA0JB04GixOUi%252Fpo_match_18.png%3Falt%3Dmedia%26token%3D25c10718-2044-4de9-a5db-45f936d7235a\&width=768\&dpr=4\&quality=100\&sign=dd63d6c4\&sv=2)
-
-## Eliminar Conexiones de PO
-
-Para eliminar una conexión entre un artículo de línea de orden de compra y un artículo de línea extraído, simplemente haz clic en el ícono **X** junto al par coincidente.\
-Una vez eliminado, la conexión se cancela y el artículo de línea se vuelve disponible para coincidencias nuevamente.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSznmTo3Fnfi72ccpuLZk%252Fpo_match_new_2.png%3Falt%3Dmedia%26token%3Da04727b2-c8bf-44e0-b8f4-eaedb8180500\&width=768\&dpr=4\&quality=100\&sign=b740b466\&sv=2)
-
-## Cálculo
-
-Debajo de la tabla que contiene la información extraída de tu documento, puedes encontrar cálculos simples para verificar si las reservas totales coinciden.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FA3TOYG26aHrETnMz4ADB%252Fimage.png%3Falt%3Dmedia%26token%3Db481bbc5-d278-4a46-b3cf-813225fa10ca\&width=768\&dpr=4\&quality=100\&sign=eeca6ad9\&sv=2)
-
-### Reservas registradas:
-
-El valor de las reservas registradas se deriva del importe neto extraído del documento.
-
-```
-Reservas registradas = Importe neto total (extraído del documento)
-```
-
-### Total coincidente:
-
-Este valor se calcula sumando el **Precio unitario** × **Cantidad** para todos los artículos de línea que coincidieron exitosamente con los artículos de línea del número de orden de compra.
-
-```
- Total coincidente = Suma de (Precio unitario × Cantidad) para todos los artículos de línea coincidentes
-```
-
-### **Cargos:**
-
-Cualquier cargo aplicable se incluirá en esta sección si está presente.\
-Para más detalles, consulta la [documentación detallada](../../../administration-and-setup/settings/document-processing/classification-and-extraction/table-extraction-for-costing-element.md).
-
-```
-Cargos = Elemento de costo
-```
-
-### Cantidad pendiente de liquidar:
-
-La diferencia resultante se muestra aquí y se calcula de la siguiente manera:
-
-```
-Cantidad pendiente de liquidar = Reservas registradas - Total coincidente - Elemento de costo
-```
-
-## Visualización del Documento para Validación
-
-En el lado derecho de la pantalla de **Coincidencia de Órdenes de Compra**, puedes ver el documento para ayudar con la validación.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7X5cxghPovZfE8B2hvIy%252Fpo_new_1.png%3Falt%3Dmedia%26token%3D613a52db-b1a7-4d15-af8e-ab63725ae78c\&width=768\&dpr=4\&quality=100\&sign=3a887d60\&sv=2)
-
-**Características de la Barra de Herramientas del Visor de Documentos:**
-
-* Desplázate por las páginas del documento para revisar el contenido.
-* Haz clic en el nombre del archivo para abrir la pantalla de validación completa.
-* Ingresa un número de página y presiona Enter para saltar directamente a esa página.
-* Usa los botones más (+) y menos (–) para acercar o alejar el documento.
-*   Haz clic en el botón en el extremo derecho para abrir el documento en una ventana separada, lo cual es especialmente útil cuando trabajas con múltiples pantallas.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F8nUElRimoIOprR5yV5lN%252Fpo_match_10.png%3Falt%3Dmedia%26token%3De0d6924c-127f-4333-95f9-1b32d52b0da5\&width=768\&dpr=4\&quality=100\&sign=4f8161e4\&sv=2)
-
-## Guardar Cambios:
-
-Para guardar tus cambios, haz clic en el botón **Guardar** en la barra de herramientas.\
-Si abandonas la página sin guardar, todo el progreso realizado durante el proceso de coincidencia se perderá.
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZ9ou72AJwvme2F7RWG7P%252Fpo_tools_new_6.png%3Falt%3Dmedia%26token%3D1d8ef55e-5ff1-4ee7-ac81-b76ff583a353\&width=768\&dpr=4\&quality=100\&sign=a17e5c90\&sv=2)
-
-## Exportar el Documento
-
-Después de hacer coincidir todos los artículos de línea y validar su corrección, puedes exportar el documento haciendo clic en el botón **Exportar** en la barra de herramientas.
-
-* Hacer clic en la pequeña flecha junto al botón **Exportar** revela todas las opciones de exportación disponibles.
-* Hacer clic en **Exportar** directamente activará la opción de exportación predeterminada (la primera en la lista).
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fzc78lqQthkeTIpANlIAc%252Fpo_tools_new_8.png%3Falt%3Dmedia%26token%3Debdb58e9-b775-40a6-b7bc-82aa66f8811b\&width=768\&dpr=4\&quality=100\&sign=14ac5a25\&sv=2)
+Las comparaciones disponibles y los valores de tolerancia dependen de la configuración de su tipo de documento. Lea [Reglas de coincidencia de OC](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md), [Configuración de tolerancia](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md), [Estados deshabilitados](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-disable-statuses.md) y [Estado de línea de OC consumida](../../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/consumed-po-line-status.md) para la configuración de administradores. Para líneas de muchos a uno, consulte [Descuentos](discounts.md) y las [Herramientas de coincidencia](purchase-order-matching-tools.md).

@@ -1,6 +1,6 @@
 # Release-Notizen
 
-> **Neueste Hotfix-Version:** [Hotfixes 15. September 2026](incremental-updates-15-september-2026.md) (R1.0.13): ein Regelwerk für die Dashboard-Suche, Lieferanten werden erkannt, sobald ein einzelnes Nachschlagefeld eindeutig ist, ein Bestellabgleich, der sich selbst erklärt, hängende Dokumente und falsche Exportfehler behoben, Touchless Intelligence, schnellere Anmeldung und große Stammdaten ohne Einfrieren. Vorherige: [Hotfixes 8. September 2026](incremental-updates-8-september-2026.md). Alle Hotfix-Seiten sind in der Navigation unter Versionshinweise aufgeführt.
+> **Neueste Hotfix-Version:** [Hotfixes 14. Oktober 2026](incremental-updates-14-october-2026.md) (R1.0.15): der Settings Assistant als Chat auf jeder Einstellungsseite, neue KI-Stufen (Fast, Full, Nexus, Auto), die Prüfung der Kopffelder, sicherere Anmeldung und Social Login sowie Bestellabgleich für Nebenkosten. Vorherige: [Hotfixes 15. September 2026](incremental-updates-15-september-2026.md). Alle Hotfix-Seiten sind in der Navigation unter Versionshinweise aufgeführt.
 
 ## **Release R1.0 23./24. Mai 2026**
 

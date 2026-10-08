@@ -55,6 +55,14 @@ Além disso, você pode filtrar rapidamente pelos status **Aprovação Pendente*
 
 <figure><img src="../../../.gitbook/assets/supplier_portal_10.png" alt=""><figcaption></figcaption></figure>
 
+## Detalhes do Fornecedor (visão interna)
+
+Clique na linha de um fornecedor no **Painel do Fornecedor** para abrir a visão **Detalhes do Fornecedor** desse fornecedor. Esta visão interna mostra as mesmas seis seções que o fornecedor preenche durante o registro — **Dados do Fornecedor**, **Dados de Endereço**, **Contato do Fornecedor**, **Financeiro do Fornecedor**, **Compras do Fornecedor** e **Certificados do Fornecedor** — juntamente com o selo de **Status** atual do fornecedor (no canto superior direito, por exemplo **STATUS: APROVAÇÃO PENDENTE**).
+
+<figure><img src="../../../.gitbook/assets/supplier-details-internal-view-pt-20261009.png" alt="Visão interna «Detalhes do Fornecedor» de um fornecedor fictício na interface do DocBits em português"><figcaption><p>Visão interna «Detalhes do Fornecedor»: à esquerda, as seis seções do registro; no canto superior direito, o status do fornecedor. Todos os nomes e dados são valores de exemplo inventados (organização de exemplo Musterfirma GmbH, fornecedor de exemplo Fabrikam Metallbau KG).</p></figcaption></figure>
+
+Use esta visão para revisar o perfil de um fornecedor, corrigir ou completar dados em falta e preparar a decisão de aprovação. Para uma descrição de cada seção, consulte [Registro de Fornecedor](supplier-registration.md). O botão de voltar na parte superior da visão leva você de volta ao **Painel do Fornecedor** sem salvar nada.
+
 ## Status do Fornecedor
 
 Se você está usando o **Portal do Fornecedor**, é importante entender os diferentes status que os fornecedores podem ter. Abaixo está uma lista de todos os status de fornecedor possíveis e seus significados:

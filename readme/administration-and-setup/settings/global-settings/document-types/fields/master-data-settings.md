@@ -1,291 +1,70 @@
 # Master Data Settings
 
-## Overview
+Master Data Settings connect a document's validation fields to data stored under [Lookup Master Data](../../../document-processing/master-data-lookup.md). Use **Lookup Master Data** to find and fill matching records. Use **LOV Master Data** to offer a list of values from a dataset.
 
-In the **Master Data Settings** section of the **Fields** settings for a specific Document Type, you can view and configure master data mappings to fields used in field validation, using data from [**Master Data Lookup**](../../../document-processing/master-data-lookup.md).
+## Open the settings
 
-These mappings define how master data is applied to individual fields during validation. This page provides a detailed guide on how to configure and manage these mappings.
+1. In **Settings**, open **Document Processing → Document Types**.
+2. Open the document type you want to configure, such as **Invoice**, and select **Fields**.
+3. Select **Master Data Settings**. The page contains separate **Lookup Master Data** and **LOV Master Data** sections. Select a section heading to expand it.
 
-## **Accessing** Master Data Settings **Settings**
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-overview-en.png" alt="Invoice Master Data Settings in the current DocBits Sandbox, showing Lookup Master Data and LOV Master Data"><figcaption>Choose the section that matches the type of field you want to configure.</figcaption></figure>
 
-To access the **Master Data Settings** settings:
+## Match a record with Lookup Master Data
 
-1.  Go to **Settings → Global Settings → Document Types**
+**Lookup Master Data** configurations search a dataset and map a matching record to document fields. The list shows each configuration's name and whether it is active. A **Default** badge identifies a DocBits configuration; you can deactivate it, but you cannot edit or delete it.
 
-    <figure><img src="../../../../../.gitbook/assets/document_types.png" alt=""><figcaption></figcaption></figure>
-2.  Select the desired **Document Type** and click on **Fields**.
+### Create a lookup configuration
 
-    <figure><img src="../../../../../.gitbook/assets/settings_document_types_fields.png" alt=""><figcaption></figcaption></figure>
-3.  Click on **Master Data Settings**
+1. Select **Create Lookup Config**.
+2. Enter a **Lookup Name** and choose the **Lookup Dataset Name** that contains the records to search.
+3. Choose a **Conflict Handler** for cases where several records match:
+   * **Best Score** chooses the strongest match.
+   * **Return None** leaves the result empty for a user to decide.
+   * **Return First** uses the first result.
+4. Choose **HEADER** for document fields or **LINE** for fields in a document table. For **LINE**, also choose **Context Detail**, the table where the lookup applies.
+5. Turn on **Match All** if every configured search field must match a record. Leave it off if one matching field is enough. Select **Create**.
 
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-lookup-config-en.png" alt="Create Master Data Config dialog with dataset, conflict handler, context type and Match All options"><figcaption>The lookup configuration form for an Invoice header.</figcaption></figure>
 
-## Lookup Master Data
+**Match All** and **Conflict Handler** affect automatic supplier recognition. See [Fuzzy data configuration with master data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md) for worked examples.
 
-In the **Lookup Master Data** section, you can create lookup configs from your master data to use as field mappings during field validation.
+### Map fields in a configuration
 
-### Default Entries
+Expand a configuration to see its mapped fields. In the example below, **Supplier Name** is searchable, while **Supplier Number** is set to trigger the lookup automatically. Your organisation's mappings may differ.
 
-In the **Lookup Master Data** section, certain default entries are provided by **DocBits**. These entries:
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-supplier-fields-en.png" alt="Expanded Supplier lookup showing Lookup Field, Validation Field, Parent Field, Searchable, Auto Trigger and Actions columns"><figcaption>Expand a lookup to inspect the fields that participate in matching.</figcaption></figure>
 
-* Cannot be edited or deleted
-* Can be deactivated if not needed
+Select **Create** inside the expanded configuration to add a mapping:
 
-Default entries are clearly marked with a **Default** tag for easy identification.
+* **Lookup Field** is the dataset column to search.
+* **Validation Field** is the document field that receives the result.
+* **Parent Field** optionally checks the result against a related field.
+* **Search Operator** controls how text is compared. **Smart** ignores spaces and punctuation; the other choices include Contains, Starts With, Ends With and Exact.
+* **Auto Trigger** starts a lookup when this field is filled. **Searchable** lets the field participate in searches and supports manual lookup during validation.
 
-<figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_2.png" alt=""><figcaption></figcaption></figure>
+Select **Create** to add the mapping. Use the three-dot **Actions** menu on a row to edit or delete an editable mapping. Default mappings can only be viewed.
 
-### **Create Lookup Config**
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-create-field-en.png" alt="Create Master Data Fields dialog with Lookup Field, Validation Field, Parent Field, Search Operator, Auto Trigger and Searchable"><figcaption>Choose how a dataset column maps to a document field.</figcaption></figure>
 
-To create a new lookup config for Master Data:
+Use the three-dot menu on a configuration to activate or deactivate it, duplicate it, or edit it. A default configuration offers **View** in place of **Edit** and cannot be deleted. Deleting a custom configuration or field removes its mapping; check which document fields depend on it first.
 
-1. Navigate to the **Lookup Master Data** section.
-2.  Click **Create Lookup Config** in the top-right corner.
+## Offer a list with LOV Master Data
 
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_3.png" alt=""><figcaption></figcaption></figure>
-3. Configure the following options:
-   * **Lookup Name**\
-     The name of the lookup config.
-   * **Lookup Dataset Name**\
-     Select the dataset that should be used for this lookup config.
-   * **Conflict Handler**\
-     A conflict means the search found more than one record. This setting decides what happens then:
-     * **Best Score** – Uses the entry that matches the most fields. Never leaves the field empty, so it can pick the wrong record.
-     * **Return None** – Leaves the field empty, so that a user picks the right record.
-     * **Return First** – Uses the first matched value.
-   *   **Context Type**
+**LOV Master Data** creates dropdown choices from a master data dataset. You can also add filter fields so an earlier selection narrows the choices shown next.
 
-       Specifies where in the document the lookup config will be applied. Choose between:
+Expand **LOV Master Data**, then select **Create Lov Lookup Config**. If no configuration exists, the section shows only this button.
 
-       **HEADER**
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-overview-en.png" alt="Expanded LOV Master Data section with the Create Lov Lookup Config button"><figcaption>Open this section when a document field should offer dataset values as choices.</figcaption></figure>
 
-       The lookup is used in field validation. Configure the following:
+In the form, enter **Lookup Lov Name**, choose **Lookup Lov Dataset Name**, and set **Context Type** to **HEADER** or **LINE**. For **LINE**, select **Context Detail** to identify the document table. Then choose:
 
-       * **Match All**\
-         When enabled, a record must match **all** used fields. When disabled (default), matching **one** field is enough, which returns a longer list.
+* **Lookup Label Field**: the value users see in the dropdown.
+* **Lookup Value Field**: the value stored for the selection and used for filtering.
+* **Out Field**: the document field filled by the selected label.
 
-       <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_4.png" alt=""><figcaption></figcaption></figure>
+Select **Create** to save the configuration. Expand it to inspect its fields, or use its three-dot menu to activate, duplicate, edit or delete it.
 
-       \
-       **LINE**
+<figure><img src="../../../../../.gitbook/assets/dbdc-202-lov-config-en.png" alt="Create LOV Master Data Config dialog with dataset, context, label field, value field and out field"><figcaption>Connect a dataset value and its visible label to a document field.</figcaption></figure>
 
-       The lookup is used within a document table. Configure the following:
-
-       * **Context Detail**\
-         Select the specific table to which the lookup should be applied.
-       * **Match All**\
-         When enabled, a record must match **all** used fields. When disabled (default), matching **one** field is enough, which returns a longer list.
-
-       <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_5.png" alt=""><figcaption></figcaption></figure>
-{% hint style="info" %}
-**Match All** and **Conflict Handler** work together and decide whether a supplier is recognised automatically. The setup page explains both with examples:
-
-{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
-[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
-{% endcontent-ref %}
-{% endhint %}
-
-4.  Click **Save** to create the lookup config.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_6.png" alt=""><figcaption></figcaption></figure>
-
-### Actions on Existing Lookup Config
-
-To manage an existing lookup config, click the three dots in the top-right corner of the configuration you want to modify.
-
-<figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_7.png" alt=""><figcaption></figcaption></figure>
-
-The following actions are available:
-
-* **Activate / Deactivate**\
-  Toggle the status of the lookup config.
-  * Active configurations are marked with an **Active** tag.
-  * Inactive configurations are marked with an **Inactive** tag.
-*   **Duplicate**\
-    After entering a name and clicking **Done**, a copy of the selected lookup config is created.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_8.png" alt=""><figcaption></figcaption></figure>
-* **Edit/View**\
-  Allows you to modify the selected lookup config.\
-  After making your changes, click **Save** to apply them.\
-  <mark style="color:red;">**Note**</mark>: Default lookup configs can only be viewed, not edited. The **Edit** option will be replaced by **View**.
-*   **Delete**\
-    Permanently deletes the selected lookup config after confirmation.\
-    <mark style="color:red;">**Note**</mark>: Only configurations without the **Default** tag can be deleted.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_9.png" alt=""><figcaption></figcaption></figure>
-
-### Create New Field
-
-To add a new field to your lookup config:
-
-1. Open your desired lookup config.
-2.  Click **Create** in the top-right corner.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_10.png" alt=""><figcaption></figcaption></figure>
-3. Configure the necessary options.
-   * **Lookup Field**\
-     The field that will be searched within the selected lookup dataset.
-   * **Validation Field**\
-     The field that will be displayed during field validation.
-   * **Parent Field** (optional)\
-     This field is used to validate the correctness of the value in the **Validation Field** by ensuring it matches the corresponding parent entry in the lookup dataset.
-   * **Search Operator** (optional)\
-     Choose how **DocBits** searches for matches in the lookup dataset:
-     * **Smart** – _(Default)_ Ignores spaces and punctuation and searches for the term **anywhere** in the field. "Meier" therefore also finds "Meier Bau GmbH".
-     * **Contains** – Searches for entries that contain the exact term anywhere in the field.
-     * **Ends With** – Searches for entries that end with the specified term.
-     * **Exact** – Searches for an exact match of the entire value.
-     * **Starts With** – Searches for entries that begin with the specified term.
-   * **Auto Trigger** (optional)\
-     When enabled, DocBits will automatically populate all fields in the lookup config as soon as this field is filled.
-   *   **Searchable** (optional)\
-       When enabled, users can manually search for master data during field validation, **and** the field takes part in the automatic search. Leave it unticked for a field that should not influence the automatic result.
-
-       <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_12.png" alt=""><figcaption></figcaption></figure>
-
-       <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_13.png" alt=""><figcaption></figcaption></figure>
-4.  Click **Save** to create the new field.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_11.png" alt=""><figcaption></figcaption></figure>
-
-### Actions on Existing Field
-
-To manage an existing field, click the three dots in the **Actions** column next to the field you want to modify.
-
-<figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_14.png" alt=""><figcaption></figcaption></figure>
-
-The following actions are available:
-
-* **Edit/View**\
-  Allows you to modify the selected field.\
-  After making your changes, click **Save** to apply them.\
-  <mark style="color:red;">**Note**</mark>: Default fields can only be viewed, not edited. In these cases, the **Edit** option will appear as **View**.
-*   **Delete**\
-    Permanently deletes the selected field after confirmation.\
-    <mark style="color:red;">**Note**</mark>: Only fields without the **Default** tag can be deleted.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_9.png" alt=""><figcaption></figcaption></figure>
-
-## LOV Master Data
-
-The **LOV Master Data** section allows you to create dropdown configurations using values from your master data. These dropdowns can be standalone or dependent on other dropdowns, enabling dynamic filtering and cascading selections during field validation.
-
-### Create LOV Lookup Config
-
-A lov lookup config defines how dropdown options are sourced from a master data table and how those values are displayed and populated into document fields.
-
-**To create a new LOV Lookup Config:**
-
-1. Navigate to the **LOV Master Data** section.
-2.  Click **Create LOV Lookup Config** in the top-right corner.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_15.png" alt=""><figcaption></figcaption></figure>
-3. Configure the following options:
-   * **Lookup Lov Name**\
-     The name of the lov lookup config.
-   * **Lookup Lov Dataset Name**\
-     Select the master data table that should be used for this lov lookup config.
-   *   **Context Type**\
-       Specifies where in the document the lov lookup config will be applied:
-
-       **HEADER**
-
-       The lov lookup config is used in field validation. Configure the following:
-
-       * **Lookup Label Field**\
-         Select the column whose value will be displayed in the dropdown.
-       * **Lookup Value Field**\
-         Select the column whose value will be stored internally and used for filtering when a selection is made. This value is not displayed to the user.
-       * **Out Field**\
-         Defines the field in field validation that will receive the selected label from the dropdown.
-
-       <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_16.png" alt=""><figcaption></figcaption></figure>
-
-       \
-       **LINE**
-
-       The lov lookup config is used within a document table. Configure the following:
-
-       * **Context Detail**\
-         Select the specific table where this lov lookup config should be active.
-       * **Lookup Label Field**\
-         The column whose value will be displayed in the dropdown.
-       * **Lookup Value Field**\
-         Select the column whose value will be stored internally and used for filtering when a selection is made. This value is not displayed to the user.
-       * **Out Field**\
-         Specifies the target field in the table where the selected label will be populated.
-
-       <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_17.png" alt=""><figcaption></figcaption></figure>
-4.  Click **Save** to create the lov lookup configuration.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_18.png" alt=""><figcaption></figcaption></figure>
-
-### Actions on Existing Lookup Config
-
-To manage an existing lov lookup config, click the three dots in the top-right corner of the configuration.
-
-<figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_19.png" alt=""><figcaption></figcaption></figure>
-
-**Available Actions:**
-
-* **Activate / Deactivate**\
-  Toggle the status of the lov lookup config.
-  * **Active** configurations are marked with an **Active** tag.
-  * **Inactive** configurations are marked with an **Inactive** tag.
-*   **Duplicate**\
-    After entering a name and clicking **Done**, a copy of the selected lov lookup config is created.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_21.png" alt=""><figcaption></figcaption></figure>
-* **Edit / View**\
-  Modify the selected config. After making changes, click **Save**.
-*   **Delete**\
-    Permanently deletes the config after confirmation.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_20.png" alt=""><figcaption></figcaption></figure>
-
-### Create New Field
-
-Within each lov lookup config, you can define additional fields as dropdowns that act as pre-filters for the main lov logic.
-
-These fields are evaluated before the main lov dropdown is loaded. Based on the values selected in these fields, the results of the main lov field are dynamically filtered—enabling dependent dropdowns.\
-For example, selecting a country in a pre-filter field can narrow down the city options in the main lov dropdown.
-
-In addition to creating new fields, you can also use existing fields as pre-filters. When configured this way, the selected value in the existing field will filter the main lov dropdown automatically.
-
-**To add a new field:**
-
-1. Open the desired lov lookup config.
-2.  Click **Create** in the top-right corner.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_22.png" alt=""><figcaption></figcaption></figure>
-3.  Configure the necessary options.
-
-    **Field Configuration Options (applies to both HEADER and LINE contexts):**
-
-    * **Lookup Field**\
-      The column to be searched in the selected dataset for dropdown values.
-      * **Filter Field**\
-        Specifies the field whose value is used to pre-filter the results of the lov lookup config before the main dropdown is populated.
-      * **Filter Value** (optional)\
-        Add static filters to further narrow down the lookup results.
-      * **Required**\
-        When enabled, this field must be populated before any dependent dropdowns can be filled.
-4.  Click **Save** to create the new field.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_23.png" alt=""><figcaption></figcaption></figure>
-
-### Actions on Existing Field
-
-To manage an existing field within a lov lookup config, click the three dots in the **Actions** column next to the field.
-
-<figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_24.png" alt=""><figcaption></figcaption></figure>
-
-**Available Actions:**
-
-* **Edit**\
-  Modify the selected field. After changes, click **Save** to apply.
-*   **Delete**\
-    Permanently removes the field after confirmation.
-
-    <figure><img src="../../../../../.gitbook/assets/fields_master_data_settings_20.png" alt=""><figcaption></figcaption></figure>
+To make dependent dropdowns, select **Create** inside an expanded LOV configuration and choose a **Lookup Field** and **Filter Field**. The filter field's value narrows the choices returned by the lookup. You can also set a static **Filter Value** and mark a field **Required**. Use the row's three-dot menu to edit or delete a custom filter field.

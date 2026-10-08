@@ -2,7 +2,7 @@
 
 Use una tarjeta **Y** para decidir si un flujo de trabajo debe continuar después de su activador **En**. Añada las comprobaciones que necesite antes de la acción **Entonces**. Cada tarjeta muestra campos que se rellenan, como **Operador**, **Datos del pedido** o **Texto**; las capturas de pantalla muestran las plantillas de tarjetas disponibles, no reglas guardadas.
 
-En el **Constructor De Flujo De Trabajo**, seleccione **Añadir tarjeta** bajo **Y....**. Elija una categoría a la izquierda o escriba un nombre de tarjeta en **Buscar tarjeta**. Seleccione una vista previa de tarjeta para añadirla al flujo de trabajo. Puede desplazar la lista de vistas previas para ver más tarjetas. Use **×** para cerrar el selector sin elegir otra tarjeta. Tras configurar las tarjetas, guarde el flujo de trabajo. Consulte [Workflow](../README.md) para conocer los pasos **En**, **Y** y **Entonces** en conjunto.
+En el **Constructor De Flujo De Trabajo**, seleccione **Añadir tarjeta** bajo **Y....**. Elija una categoría a la izquierda en **Categorías** o escriba un nombre de tarjeta en **Buscar tarjeta**. Seleccione una vista previa de tarjeta para añadirla al flujo de trabajo. Puede desplazar la lista de vistas previas para ver más tarjetas. Use **×** para cerrar el selector sin elegir otra tarjeta. Tras configurar las tarjetas, guarde el flujo de trabajo. Consulte [Workflow](../README.md) para conocer los pasos **En**, **Y** y **Entonces** en conjunto.
 
 ## Comparar con la orden de compra
 

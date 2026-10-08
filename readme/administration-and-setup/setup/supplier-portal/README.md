@@ -57,7 +57,7 @@ Además, puedes filtrar rápidamente por los estados **Pendiente de aprobación*
 
 ## Detalles del Proveedor (vista interna)
 
-Haga clic en la fila de un proveedor en el **Panel de proveedores** para abrir la vista **Detalles del Proveedor** de ese proveedor. Esta vista interna muestra las mismas seis secciones que el proveedor completa durante el registro — **Detalles del Proveedor**, **Datos de Dirección**, **Proveedor Contacto**, **Proveedor Financiero**, **Proveedor Compra** y **Cargar Certificados** — junto con la insignia del **estado** actual del proveedor.
+Haga clic en la fila de un proveedor en el **Panel de proveedores** para abrir la vista **Detalles del Proveedor** de ese proveedor. Esta vista interna muestra las mismas seis secciones que el proveedor completa durante el registro — **Detalles del Proveedor**, **Datos de Dirección**, **Contacto del Proveedor**, **Financiera del Proveedor**, **Compras del Proveedor** y **Certificados del Proveedor** — junto con la insignia del **estado** actual del proveedor.
 
 Utilice esta vista para revisar el perfil de un proveedor, corregir o completar datos que falten y preparar la decisión de aprobación. Para una descripción de cada sección, consulte [Registro de Proveedores](supplier-registration.md). El botón de retroceso en la parte superior de la vista lo devuelve al **Panel de proveedores**.
 

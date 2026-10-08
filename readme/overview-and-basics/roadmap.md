@@ -207,7 +207,7 @@ verschieben. Hotfixes zwischen den Releases sind in den
 - Regeln weisen Konten und Dimensionen automatisch zu, eingegrenzt pro
   Unterorganisation und Dokumenttyp, mit einem Audit-Bildschirm, der zeigt,
   welche Regel gegriffen hat.
-- Eine Regel kann stammdaten nachschlagen und mehrere Felder auf einmal
+- Eine Regel kann Stammdaten nachschlagen und mehrere Felder auf einmal
   zuweisen oder einen Wert aus einer Spalte der Tabellenpositionen befüllen.
 - Felder und Dimensionen lassen sich einzeln leeren, Positionen lassen sich
   löschen (auch Positionen ohne Betrag), und Regeln funktionieren weiter bei

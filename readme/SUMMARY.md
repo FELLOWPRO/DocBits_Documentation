@@ -190,6 +190,7 @@
       * [Tabellenspalten](admin-section/settings/global-settings/document-types/table-columns.md)
       * [Felder](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Hinzufügen und Bearbeiten von Feldern](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
+        * [Konfigurieren von Feldeigenschaften](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
         * [Stammdaten-Einstellungen](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Modelltraining](admin-section/settings/global-settings/document-types/model-training.md)
       * [Reguläre Ausdrücke](admin-section/settings/global-settings/document-types/regex.md)

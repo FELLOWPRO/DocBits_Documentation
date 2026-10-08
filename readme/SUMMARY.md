@@ -37,6 +37,7 @@
     * [Overview of Uploaded Documents](overview/dashboard/overview-of-uploaded-documents.md)
     * [Task Counter](overview/dashboard/task-counter.md)
     * [Validated Extracted Fields](overview/dashboard/validated-extracted-fields.md)
+    * [Belge Akışı](end-user-and-partner-section/end-user-section/dashboard/document-flow.md)
     * [Video Karuseli](end-user-and-partner-section/end-user-section/dashboard/video-carousel.md)
   * [How to Import Documents](overview/how-to-import-documents/README.md)
     * [FTP](overview/how-to-import-documents/ftp.md)

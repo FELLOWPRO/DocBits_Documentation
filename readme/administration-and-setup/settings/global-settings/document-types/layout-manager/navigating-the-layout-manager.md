@@ -8,21 +8,21 @@ Belgede görünen grupları ve alanları düzenlemek için **Düzen Oluşturucu*
 2. **Fatura** kartını bulun ve üzerindeki **Yerleşim Planları** bağlantısını seçin. Düzen Oluşturucu bu belge türü için açılır.
 3. Sol üstteki düzen seçicisini kontrol edin. Aşağıdaki örnekte **DEFAULT** görünür.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc351-document-types-tr.png" alt="Türkçe Belge Türleri sayfasında Fatura kartı ve Yerleşim Planları bağlantısı"><figcaption>**Yerleşim Planları** bağlantısını Fatura kartından açın.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc549-document-types-tr-20261008.png" alt="Türkçe Belge Türleri sayfasında Fatura kartı ve Yerleşim Planları bağlantısı"><figcaption>**Yerleşim Planları** bağlantısını Fatura kartından açın.</figcaption></figure>
 
 ## Grupları ve alanları bulma
 
 Soldaki **Elementler** panelinde üç bölüm vardır. **Gruplar** belge bölümlerini listeler; ortadaki tuval bunların güncel yerleşimini gösterir. Tuvalde bir alan seçin ve görüntüleme ayarlarını değiştirmek için **Özellikler**'i açın. Kullanılabilir seçenekler ayrıntılı olarak Alan Özelliklerini Yapılandırma rehberinde anlatılır.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc351-layout-groups-tr.png" alt="Türkçe Fatura Düzen Oluşturucu: Elementler panelinde Gruplar bölümü ve tuvalde gruplanmış alanlar"><figcaption>Gruplar listesi ve Fatura düzeni tuvali.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc549-layout-groups-tr-20261008.png" alt="Türkçe Fatura Düzen Oluşturucu: Elementler panelinde Gruplar bölümü ve tuvalde gruplanmış alanlar"><figcaption>Gruplar listesi ve Fatura düzeni tuvali.</figcaption></figure>
 
 Kullanılabilir belge alanlarını bulmak için **Alanlar** bölümünü açın. Liste uzunsa arama kutusunu kullanın, ardından alanı tuvalde istediğiniz grubun içine sürükleyin. Düzene zaten yerleştirilmiş alanlar bu listede kullanılamaz görünebilir.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc351-layout-fields-tr.png" alt="Türkçe Düzen Oluşturucu Alanlar paneli: arama kutusu ve kullanılabilir Fatura alanları"><figcaption>Bir alanı yerleştirmeden önce kullanılabilir alanlarda arama yapın.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc549-layout-fields-tr-20261008.png" alt="Türkçe Düzen Oluşturucu Alanlar paneli: arama kutusu ve kullanılabilir Fatura alanları"><figcaption>Bir alanı yerleştirmeden önce kullanılabilir alanlarda arama yapın.</figcaption></figure>
 
 Text, Label, Check Box, Horizontal Separator, Button ve Sub Group gibi görsel öğeler için **Form Elemanları** bölümünü açın. İhtiyacınız olan öğeyi tuvale sürükleyin, ardından **Özellikler**'ini kontrol edin.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc351-layout-form-elements-tr.png" alt="Türkçe Düzen Oluşturucu Form Elemanları paneli: metin, etiket, onay kutusu, düğme ve alt grup öğeleri"><figcaption>Güncel Form Elemanları paleti.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc549-layout-form-elements-tr-20261008.png" alt="Türkçe Düzen Oluşturucu Form Elemanları paneli: metin, etiket, onay kutusu, düğme ve alt grup öğeleri"><figcaption>Güncel Form Elemanları paleti.</figcaption></figure>
 
 ## Düzenleme ve kaydetme
 

@@ -57,7 +57,7 @@ De plus, vous pouvez rapidement filtrer par les statuts **En attente de validati
 
 ## Détails du Fournisseur (vue interne)
 
-Cliquez sur la ligne d'un fournisseur dans le **Tableau de bord des fournisseurs** pour ouvrir la vue **Détails du Fournisseur** de ce fournisseur. Cette vue interne affiche les six mêmes sections que le fournisseur remplit lors de son inscription — **Fournisseur Détails**, **Adresse Data**, **Fournisseur Contact**, **Fournisseur Financier**, **Fournisseur Achat** et **Fournisseur Certificates** — ainsi que le badge **Statut** actuel du fournisseur (en haut à droite, par exemple **STATUT : EN ATTENTE DE VALIDATION**).
+Cliquez sur la ligne d'un fournisseur dans le **Tableau de bord des fournisseurs** pour ouvrir la vue **Détails du Fournisseur** de ce fournisseur. Cette vue interne affiche les six mêmes sections que le fournisseur remplit lors de son inscription — **Détails du Fournisseur**, **Données d'Adresse**, **Contact du Fournisseur**, **Financier du Fournisseur**, **Achats du Fournisseur** et **Certificats du Fournisseur** — ainsi que le badge **Statut** actuel du fournisseur (en haut à droite, par exemple **STATUT : EN ATTENTE DE VALIDATION**).
 
 <figure><img src="../../../.gitbook/assets/supplier-details-internal-view-fr-20261009.png" alt="Vue interne « Détails du Fournisseur » d'un fournisseur fictif dans l'interface DocBits en français"><figcaption><p>Vue interne « Détails du Fournisseur » : à gauche les six sections de l'inscription, en haut à droite le statut du fournisseur. Tous les noms et données sont des valeurs d'exemple inventées (organisation d'exemple Musterfirma GmbH, fournisseur d'exemple Fabrikam Metallbau KG).</p></figcaption></figure>
 

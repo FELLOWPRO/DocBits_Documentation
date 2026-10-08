@@ -4,13 +4,13 @@
 
 ## Öffnen über das Dashboard
 
-Suchen Sie im **Dashboard** das Dokument. Wählen Sie in der Spalte **Aktionen** die drei Punkte und dann **Dokumentenfluss**. Die Option öffnet den Flow dieses Dokuments; sie ändert das Dokument nicht.
+Suchen Sie im [Dashboard](../dashboard/) das Dokument. Wählen Sie in der Spalte **Aktionen** die drei Punkte und dann **Dokumentenfluss**. Die Option öffnet den Flow dieses Dokuments; sie ändert das Dokument nicht.
 
 <figure><img src="../../../.gitbook/assets/document-flow-dashboard-menu-de-20261008.png" alt="Deutsches Dashboard mit geöffnetem Aktionen-Menü einer synthetischen Rechnung; Dokumentenfluss steht unterhalb von Zuweisen an."><figcaption>Wählen Sie Dokumentenfluss im Aktionen-Menü des Dokuments.</figcaption></figure>
 
 ## Öffnen über die Feldvalidierung
 
-Öffnen Sie das Dokument. Wählen Sie in der **Feldvalidierung** die drei Punkte in der rechten Aktionsleiste und dann unter **Mehr Optionen** **Dokumentenfluss**.
+Öffnen Sie das Dokument. Wählen Sie im [Validierungsbildschirm](../validation-screen/) die drei Punkte in der rechten Aktionsleiste und dann unter **Mehr Optionen** **Dokumentenfluss**.
 
 <figure><img src="../../../.gitbook/assets/document-flow-validation-menu-de-20261008.png" alt="Deutscher Feldvalidierung-Bildschirm mit dem Menü Mehr Optionen und dem Eintrag Dokumentenfluss neben einer synthetischen Rechnung."><figcaption>Derselbe Flow ist über die Dokumentenansicht erreichbar.</figcaption></figure>
 

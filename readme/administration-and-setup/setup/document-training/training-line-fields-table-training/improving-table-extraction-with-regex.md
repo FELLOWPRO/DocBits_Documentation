@@ -25,6 +25,8 @@ Luego puedes **agrupar filas basadas en una columna**, como "Posición". Esto fu
 
 <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-es.png" alt="Tabla extraída en la que las líneas de descripción agrupadas por Posición forman una sola entrada por posición."><figcaption><p>Tras agrupar por Posición, las líneas relacionadas forman una sola entrada.</p></figcaption></figure>
 
+Cuántas sublíneas se combinan en una entrada y cómo se comporta la agrupación se configura en la [Configuración Avanzada](advanced-settings.md), en **Mínimo de filas agrupadas** y **Agrupamiento Inverso**.
+
 ## 2. Selección Manual de Filas
 
 En algunos casos, el texto en un documento se extiende a través de varias columnas en una sola fila, lo que dificulta la asignación automática.
@@ -50,6 +52,8 @@ Aquí tienes un ejemplo donde la línea "PRAEF" se superpone a **Bezeichnung**, 
 
 > Nota: Las columnas de color violeta ya están mapeadas por el sistema y no pueden editarse manualmente.
 
+Este procedimiento pertenece al **modo de corrección**, en el que corriges valores manualmente. Qué puedes hacer allí y cuándo usarlo en lugar del **Modo Formación** se describe en [Entrenamiento de Campos de Línea / Tabla de Entrenamiento](README.md).
+
 ## 3. Mapeo de Columnas
 
 El mapeo de columnas vincula tus datos extraídos con los encabezados de columna esperados, asegurando consistencia y exportabilidad.
@@ -62,6 +66,8 @@ Para mapear o remapear una columna:
 <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-es.png" alt="Tabla extraída con el menú desplegable del encabezado de columna abierto, mostrando las columnas de destino Descripción, Número De Artículo, Importe Neto, Posición, Cantidad, Importe Total Factura, Unidad y Precio Unitario."><figcaption><p>Elige la columna de destino en el menú desplegable del encabezado.</p></figcaption></figure>
 
 Puedes ajustar el mapeo tantas veces como sea necesario.
+
+Más información sobre cómo se crean tablas y columnas en general en [Definición de Tablas y Columnas](defining-tables-and-columns.md).
 
 ## 4. Extraer de Arriba / Abajo
 
@@ -115,6 +121,8 @@ Esta función te permite definir una expresión regular (regex) para cada encabe
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FC4R2o2W10ct1o0oesTLZ%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250303135153.jpg%3Falt%3Dmedia%26token%3D43e53a05-53fe-4503-ba51-55c85910bd82\&width=768\&dpr=4\&quality=100\&sign=9ec6eb7b\&sv=2)
 7. **Guarda la regla y confirma** para aplicar los cambios.
 
+Cómo guardar o volver a eliminar tus reglas entrenadas de forma permanente se describe en [Guardar y Eliminar Reglas](save-and-delete-rules.md).
+
 ## Cuándo Usar Cada Función
 
 Utiliza estas herramientas para aumentar la precisión de la extracción y reducir el trabajo manual:
@@ -123,3 +131,9 @@ Utiliza estas herramientas para aumentar la precisión de la extracción y reduc
 * **Selección Manual de Filas**: Cuando las filas no están estructuradas de manera limpia y partes del contenido caen en las columnas incorrectas.
 * **Mapeo de Columnas**: Cuando los nombres de columna detectados automáticamente no coinciden con tu estructura o necesitan refinamiento.
 * **Reglas de Regex**: Cuando los encabezados de tabla varían ligeramente entre documentos del mismo proveedor o el OCR introduce inconsistencias.
+
+Guías relacionadas en esta área:
+
+* [Configuración Avanzada](advanced-settings.md) – agrupación, filas de encabezado y tratamiento de filas adicionales.
+* [Definición de Tablas y Columnas](defining-tables-and-columns.md) – crear tablas y columnas.
+* [Guardar y Eliminar Reglas](save-and-delete-rules.md) – conservar o descartar de forma permanente el diseño entrenado.

@@ -1,24 +1,20 @@
-# PO Matching
+# Coincidencia de Órdenes de Compra
 
-When it comes to testing your PO Matching configuration, you will need to create a Purchase order in LN/M3 in order to check whether INFOR is synced with DocBits.&#x20;
+Para probar la configuración de Coincidencia de Órdenes de Compra (PO Matching), debe crear una orden de compra en LN/M3 para comprobar si INFOR está sincronizado con DocBits.&#x20;
 
-## Creating a Purchase Order in INFOR
-
-{% embed url="https://youtu.be/hn_bkeUMxJg" %}
-{% endembed %}
-
+## Crear una orden de compra en INFOR
 
 * LN: https://docs.infor.com/ln/10.4/en-us/lnolh/docs/ln\_10.4\_procpoug\_\_en-us.pdf&#x20;
 * M3: https://docs.infor.com/m3udi/16.x/en-us/m3beud/default.html?helpcontent=ois610.html&#x20;
 
-Once you have created your purchase order, go to Settings → Master Data Lookup and search for the purchase order number of the PO you just created as it should now appear in your purchase order master data in DocBits.
+Una vez creada la orden de compra, vaya a **Ajustes → Procesamiento de documentos → [Búsqueda de datos maestros](../../settings/document-processing/master-data-lookup.md)** y busque el número de orden de compra que acaba de crear: debería aparecer ya en los datos maestros de órdenes de compra de DocBits.
 
-![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
+<figure><img src="../../../.gitbook/assets/a-testing-po-matching-master-data-es-20261009.png" alt="Página Búsqueda de datos maestros en español, con la pestaña Orden De Compra y la tabla de órdenes de compra importadas."><figcaption><p>Las órdenes de compra aparecen en la Búsqueda de datos maestros.</p></figcaption></figure>
 
-You should see your unique PO number here, this means that DocBits and INFOR are correctly synced.
+Si ve aquí su número de orden de compra, DocBits e INFOR están sincronizados correctamente.
 
-Now upload your invoice that matches the quantity and unit prices of the purchase order you created. Validate the document and select PO Matching on the validation screen.
+Ahora suba la factura cuyas cantidades y precios unitarios coinciden con la orden de compra que creó. Valide el documento y seleccione **PO Matching** en la pantalla de validación: la [Pantalla de Coincidencia de Órdenes de Compra](../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md) explica cómo buscar la orden de compra, revisar sus líneas y conectarlas con las líneas de la factura.
 
-The PO and invoice line items should automatically match, then simply select the export option and check whether or not the document gets exported without any errors. If you do encounter an export error, create a ticket for the DocBits support team to assist you. If you are unsure of how to create a ticket within DocBits, please consult our DocBits Overview documentation for assistance.
+Las líneas de la orden de compra y de la factura deberían coincidir automáticamente. Después, seleccione la opción de exportación y compruebe si el documento se exporta sin errores. Si aparece un error de exportación, cree un ticket para el equipo de soporte de DocBits siguiendo [Crear un ticket](../../../end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md).
 
 \

@@ -10,8 +10,8 @@ Mit den Zulassungsoptionen legen Sie fest, wie ein Dokument geprüft wird, bevor
 
 | Option | Wofür sie da ist |
 | --- | --- |
-| **Vor dem Export genehmigen** | Verlangt eine Genehmigungsentscheidung, bevor das Dokument exportiert werden kann. |
-| **Zweitgenehmigung** | Fügt einen weiteren Genehmigungsschritt hinzu, wenn eine Entscheidung für Ihren Prozess nicht ausreicht. |
+| **Erste Genehmigung** | Verlangt eine Genehmigungsentscheidung, bevor das Dokument exportiert werden kann. Im Sandbox-UI ist zusätzlich die Bezeichnung **Vor dem Export genehmigen V2** sichtbar. |
+| **Zweite Genehmigung** | Fügt einen weiteren Genehmigungsschritt hinzu, wenn eine Entscheidung für Ihren Prozess nicht ausreicht. |
 | **Genehmigungsstempel** | Versieht ein genehmigtes Dokument mit einem Genehmigungsvermerk. Einrichtung und Download-Optionen siehe [Genehmigungsstempel](approval-stamp.md). |
 | **Genehmigungsverlauf** | Speichert eine Aufzeichnung der Genehmigungsentscheidungen. Die Einstellung und das Prüfen des Verlaufs siehe [Genehmigungsverlauf](approval-history.md). |
 

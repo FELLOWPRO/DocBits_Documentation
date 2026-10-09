@@ -2,7 +2,7 @@
 
 Les cartes de condition de cette page se placent dans les groupes **When** et **And** du Concepteur de workflow — elles déterminent si les actions Then s'exécutent :
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Les cartes de condition sont ajoutées aux groupes <strong>When</strong> et <strong>And</strong> via <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Canevas du Concepteur de workflow avec les groupes de cartes Quand, Et et Dans ce cas"><figcaption><p>Les cartes de condition sont ajoutées aux groupes <strong>When</strong> et <strong>And</strong> via <strong>Add Card</strong>.</p></figcaption></figure>
 
 **Covers:** 31 remaining condition cards
 
@@ -14,9 +14,9 @@ Les cartes de condition de cette page se placent dans les groupes **When** et **
 **Version Pattern:** Most follow v1 → v2 pattern (adding i18n support)
 **Multi-Version Example:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Note:** Some PO comparison condition cards have 4-5 versions (see PO Matching Guide for details)
+**Note :** Certaines cartes de condition de comparaison de PO ont plusieurs versions. Utilisez ce guide pour le comportement actuel et les notes de version ci-dessous pour les modifications publiées.
 
-📖 [Complete Version History](../../../changelog/release.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Notes de version du produit](../../../overview-and-basics/release-notes/README.md) | [Guide du rapprochement de PO](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

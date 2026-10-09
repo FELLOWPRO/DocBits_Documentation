@@ -4,7 +4,7 @@
 
 {% embed url="https://youtu.be/Vvy38N_5g3Y" %}
 
-Hier müssen Sie lediglich die gewünschte Unterorganisation auswählen und auf „Authentifizieren“ drücken
+Wählen Sie unter **Dokumentenweiterleitung** das Ziel für Ihre importierten Dokumente und klicken Sie anschließend auf **Authentifizieren**. Die Unterorganisation wählen Sie im letzten Schritt der Einrichtung.
 
 <figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-authenticate-de-20261009.png" alt="Dialog „E-Mail-Server-Einrichtung“ mit dem Protokoll OAuth Office365, der Dokumentenweiterleitung und der Schaltfläche „Authentifizieren“."><figcaption><p>Wählen Sie die Weiterleitung und klicken Sie auf „Authentifizieren“.</p></figcaption></figure>
 

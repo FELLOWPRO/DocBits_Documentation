@@ -1,13 +1,13 @@
 # Criar um ticket
 
-Esta é uma ferramenta disponível para você, na tela de validação, no caso de ocorrer algum tipo de problema ao validar seu documento no DocBits.
+Esta é uma ferramenta disponível para você, na tela de validação, no caso de ocorrer algum tipo de problema ao validar seu documento no DocBits. Como verificar um documento na [tela de validação](../validation-screen/README.md) está descrito lá.
 
 Este recurso está localizado no menu acima da área de visualização do documento, como abaixo
 
-![](https://lh7-us.googleusercontent.com/wgH8UDoDmtxAwaFoO3NUQM9NIQyINnNenBFMe4b_mKfnx7LrJA_8dPbKLoTNvHhHNyznEyy2JDLzoOHW39n1GnTIoBIUgUTCvMVKMPGMYJrFTU6JnqFxjc67j-idDupjbGfMqEwoSgrBPt3mvor1Tds)
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-menu-pt-20261009.png" alt="Tela de validação com o mouse sobre o botão Criar tíquete na barra de ações à direita."><figcaption><p>O botão "Criar tíquete" na barra de ações da tela de validação.</p></figcaption></figure>
 
-Uma vez clicado, o seguinte formulário de ticket será exibido para você.
+Depois de clicar, o seguinte formulário de ticket será exibido para você.
 
-![](https://lh7-us.googleusercontent.com/DxlkEirrpbtGXs8R6gHD9MtaUqd5mY9L1ya1PdGIwZIHnuoj0wflDML6ZjYzrHxqXos-0uwhMAJI69_zhO92dNWrwAmYpPwAe2C8sHvo0Tf8f8PG7SktBv4JiY6QfxxDNtO55S3xmQsze48ZophpDPc)
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-form-pt-20261009.png" alt="Tela de validação com o formulário Ticket de suporte aberto: Nome, E-mail, Assunto, Prioridade, Mensagem, Captura de tela, Carregar arquivo e Enviar."><figcaption><p>O formulário "Ticket de suporte".</p></figcaption></figure>
 
 É aqui que você preencherá seus dados e descreverá o erro. Você também pode, se aplicável, anexar uma captura de tela do problema e anexar um arquivo relevante.

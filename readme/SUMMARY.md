@@ -93,7 +93,7 @@
     * [WatchDog](readme-1/how-to-import-documents/watchdog.md)
   * [Errore](end-user-and-partner-section/end-user-section/error-page.md)
   * [Supporto tecnico in DocBits](end-user-and-partner-section/end-user-section/technical-support-in-docbits/README.md)
-    * [Crea un ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
+    * [Criar um ticket](end-user-and-partner-section/end-user-section/technical-support-in-docbits/create-a-ticket.md)
     * [Icone di aiuto](end-user-and-partner-section/end-user-section/technical-support-in-docbits/help-icons.md)
     * [Debug Collector](end-user-and-partner-section/end-user-section/debug-collector.md)
   * [Quadro de Ideias](end-user-and-partner-section/end-user-section/idea-board.md)

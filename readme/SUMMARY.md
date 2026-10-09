@@ -114,7 +114,7 @@
 
 * [Impostazioni](administration-and-setup/settings/README.md)
   * [Orientação no Novo Layout](administration-and-setup/settings/ui-redesign-guide.md)
-  * [Impostazioni Globali](administration-and-setup/settings/global-settings/README.md)
+  * [Configurações Globais](administration-and-setup/settings/global-settings/README.md)
     * [Informazioni sulla Società](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Preferenze aziendali](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
       * [Definire il Colore dell'App nelle Impostazioni della Società](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)

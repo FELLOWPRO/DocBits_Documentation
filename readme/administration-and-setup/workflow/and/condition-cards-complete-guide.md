@@ -2,7 +2,7 @@
 
 Die Bedingungskarten auf dieser Seite gehören in die **When**- und **And**-Gruppe des Workflow-Builders – sie entscheiden, ob die Then-Aktionen ausgeführt werden:
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Bedingungskarten werden über <strong>Add Card</strong> zur <strong>When</strong>- und <strong>And</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow-Builder-Canvas mit When-, And- und Then-Karten"><figcaption><p>Bedingungskarten werden über <strong>Add Card</strong> zur <strong>When</strong>- und <strong>And</strong>-Gruppe hinzugefügt.</p></figcaption></figure>
 
 **Covers:** 31 remaining condition cards
 
@@ -14,9 +14,9 @@ Die Bedingungskarten auf dieser Seite gehören in die **When**- und **And**-Grup
 **Version Pattern:** Most follow v1 → v2 pattern (adding i18n support)
 **Multi-Version Example:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Note:** Some PO comparison condition cards have 4-5 versions (see PO Matching Guide for details)
+**Note:** Einige Bedingungskarten für den PO-Vergleich haben mehrere Versionen. Verwenden Sie diese Anleitung für das aktuelle Verhalten und die untenstehenden Release-Notizen für veröffentlichte Änderungen.
 
-📖 [Complete Version History](../../../changelog/release.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Release-Notizen](../../../overview-and-basics/release-notes/README.md) | [PO-Matching-Anleitung](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

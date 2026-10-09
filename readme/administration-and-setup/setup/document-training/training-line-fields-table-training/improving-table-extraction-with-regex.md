@@ -15,15 +15,15 @@ Documentos como facturas o confirmaciones de pedidos a menudo contienen entradas
 
 Toma este ejemplo de factura en alemán: la columna "Bezeichnung" (descripción) abarca varias filas:
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-multiline-doc-es.png" alt="Tabla de una factura alemana en la que la descripción (Bezeichnung) de cada artículo ocupa varias líneas."><figcaption><p>Una columna de descripción que abarca varias filas.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-multiline-doc-es-20261009.png" alt="Tabla de una factura alemana en la que la descripción (Bezeichnung) de cada artículo ocupa varias líneas."><figcaption><p>Una columna de descripción que abarca varias filas.</p></figcaption></figure>
 
 Inicialmente, DocBits extrae cada fila por separado:
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-es.png" alt="Tabla extraída en la vista Extracción De Tabla, donde cada línea de texto de la descripción se ha convertido en una fila propia."><figcaption><p>DocBits extrae primero cada fila por separado.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-es-20261009.png" alt="Tabla extraída en la vista Extracción De Tabla, donde cada línea de texto de la descripción se ha convertido en una fila propia."><figcaption><p>DocBits extrae primero cada fila por separado.</p></figcaption></figure>
 
 Luego puedes **agrupar filas basadas en una columna**, como "Posición". Esto fusiona líneas relacionadas en una entrada única y estructurada:
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-es.png" alt="Tabla extraída en la que las líneas de descripción agrupadas por Posición forman una sola entrada por posición."><figcaption><p>Tras agrupar por Posición, las líneas relacionadas forman una sola entrada.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-es-20261009.png" alt="Tabla extraída en la que las líneas de descripción agrupadas por Posición forman una sola entrada por posición."><figcaption><p>Tras agrupar por Posición, las líneas relacionadas forman una sola entrada.</p></figcaption></figure>
 
 Cuántas sublíneas se combinan en una entrada y cómo se comporta la agrupación se configura en la [Configuración Avanzada](advanced-settings.md), en **Mínimo de filas agrupadas** y **Agrupamiento Inverso**.
 
@@ -33,22 +33,22 @@ En algunos casos, el texto en un documento se extiende a través de varias colum
 
 Aquí tienes un ejemplo donde la línea "PRAEF" se superpone a **Bezeichnung**, **Menge**, **ME** y **Preis in EUR**:
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-es.png" alt="Tabla de una factura con una línea PRAEF cuyo texto se extiende por varias columnas."><figcaption><p>Una línea PRAEF que no coincide con la estructura de columnas.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-es-20261009.png" alt="Tabla de una factura con una línea PRAEF cuyo texto se extiende por varias columnas."><figcaption><p>Una línea PRAEF que no coincide con la estructura de columnas.</p></figcaption></figure>
 
 ### Cómo Asignar Valores Manualmente:
 
 1.  **Activar el Modo Formación**
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-es.png" alt="Pantalla de Extracción De Tabla con el Modo Formación activado."><figcaption><p>Modo Formación activado.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-es-20261009.png" alt="Pantalla de Extracción De Tabla con el Modo Formación activado."><figcaption><p>Modo Formación activado.</p></figcaption></figure>
 
 
 2.  **Activar el Modo de Edición de Filas**
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-es.png" alt="Pantalla de Extracción De Tabla con el Modo de edición de datos de fila activado y su texto de ayuda visible."><figcaption><p>Modo de edición de datos de fila activado.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-es-20261009.png" alt="Pantalla de Extracción De Tabla con el Modo de edición de datos de fila activado y su texto de ayuda visible."><figcaption><p>Modo de edición de datos de fila activado.</p></figcaption></figure>
 
 3.  **Seleccionar y Mapear Texto** Haz clic en la pieza de texto correcta y asígnala a un encabezado de columna **azul**.
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-es.png" alt="Tabla extraída en el modo de edición de filas con los encabezados de columna azules, aún sin rellenar, que se pueden asignar manualmente."><figcaption><p>Los encabezados de columna azules se pueden rellenar manualmente.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-es-20261009.png" alt="Tabla extraída en el modo de edición de filas con los encabezados de columna azules, aún sin rellenar, que se pueden asignar manualmente."><figcaption><p>Los encabezados de columna azules se pueden rellenar manualmente.</p></figcaption></figure>
 
 > Nota: Las columnas de color violeta ya están mapeadas por el sistema y no pueden editarse manualmente.
 
@@ -63,7 +63,7 @@ Para mapear o remapear una columna:
 1. Haz clic en el encabezado de columna en la vista de extracción.
 2. Elige la columna de destino correcta en el menú desplegable.
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-es.png" alt="Tabla extraída con el menú desplegable del encabezado de columna abierto, mostrando las columnas de destino Descripción, Número De Artículo, Importe Neto, Posición, Cantidad, Importe Total Factura, Unidad y Precio Unitario."><figcaption><p>Elige la columna de destino en el menú desplegable del encabezado.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-es-20261009.png" alt="Tabla extraída con el menú desplegable del encabezado de columna abierto, mostrando las columnas de destino Descripción, Número De Artículo, Importe Neto, Posición, Cantidad, Importe Total Factura, Unidad y Precio Unitario."><figcaption><p>Elige la columna de destino en el menú desplegable del encabezado.</p></figcaption></figure>
 
 Puedes ajustar el mapeo tantas veces como sea necesario.
 

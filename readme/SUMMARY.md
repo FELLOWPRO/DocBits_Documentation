@@ -461,7 +461,7 @@
       * [Zapisywanie i Usuwanie Reguł](administration-and-setup/setup/document-training/training-line-fields-table-training/save-and-delete-rules.md)
   * [Konfiguracja logowania jednokrotnego (SSO)](administration-and-setup/setup/sso-configuration.md)
   * [Testowanie](administration-and-setup/setup/testing/README.md)
-    * [PO Matching](administration-and-setup/setup/testing/po-matching.md)
+    * [Dopasowywanie zamówień zakupu (PO Matching)](administration-and-setup/setup/testing/po-matching.md)
     * [Auto Accounting](administration-and-setup/setup/testing/auto-accounting/README.md)
       * [LN](administration-and-setup/setup/testing/auto-accounting/ln.md)
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)

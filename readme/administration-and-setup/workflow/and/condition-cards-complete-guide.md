@@ -1,8 +1,8 @@
 # Condition Cards - Complete Guide
 
-Os cartões de condição desta página ficam nos grupos **When** e **And** do Construtor de fluxos de trabalho — decidem se as ações Then são executadas:
+Os cartões de condição desta página ficam nos grupos **When** e **And** do Construtor de fluxos de trabalho — decidem se as ações Then são executadas. Para usar o canvas — **Adicionar cartão**, **Salvar modelo**, **Salvar fluxo de trabalho** — consulte o [guia Standard Workflow](../standard-workflow-builder.md):
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Os cartões de condição são adicionados aos grupos <strong>When</strong> e <strong>And</strong> através de <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Canvas do Construtor de fluxo de trabalho com os grupos de cartões When, And e Then"><figcaption><p>Os cartões de condição são adicionados aos grupos <strong>When</strong> e <strong>And</strong> através de <strong>Adicionar cartão</strong>.</p></figcaption></figure>
 
 **Abrange:** 31 cartões de condição restantes
 
@@ -14,9 +14,9 @@ Os cartões de condição desta página ficam nos grupos **When** e **And** do C
 **Padrão de versão:** A maioria segue o padrão v1 → v2 (adição de suporte de i18n)
 **Exemplo multiversão:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Nota:** Alguns cartões de condição de comparação de PO têm 4-5 versões (consulte o PO Matching Guide para mais detalhes)
+**Nota:** Alguns cartões de condição de comparação de PO têm várias versões. Use este guia para o comportamento atual e as notas de versão abaixo para alterações publicadas.
 
-📖 [Complete Version History](../../../changelog/release.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Notas de versão do produto](../../../overview-and-basics/release-notes/README.md) | [Guia de PO Matching](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

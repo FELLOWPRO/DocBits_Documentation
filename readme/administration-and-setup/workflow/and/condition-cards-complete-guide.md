@@ -1,8 +1,8 @@
 # Condition Cards - Complete Guide
 
-Le schede di condizione di questa pagina vanno nei gruppi **When** e **And** del Generatore di workflow — decidono se eseguire le azioni Then:
+Le schede di condizione di questa pagina vanno nei gruppi **When** e **And** del Generatore di workflow — decidono se eseguire le azioni Then. Per usare il canvas — **Aggiungi scheda**, **Salva modello**, **Salva flusso di lavoro** — consulta la [guida Standard Workflow](../standard-workflow-builder.md):
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Le schede di condizione vengono aggiunte ai gruppi <strong>When</strong> e <strong>And</strong> tramite <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Canvas del Generatore di workflow con i gruppi di schede When, And e Then"><figcaption><p>Le schede di condizione vengono aggiunte ai gruppi <strong>When</strong> e <strong>And</strong> tramite <strong>Aggiungi scheda</strong>.</p></figcaption></figure>
 
 **Copre:** le 31 condition card rimanenti
 
@@ -14,9 +14,9 @@ Le schede di condizione di questa pagina vanno nei gruppi **When** e **And** del
 **Schema delle Versioni:** la maggior parte segue lo schema v1 → v2 (aggiunta del supporto i18n)
 **Esempio Multi-Versione:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Nota:** alcune condition card di confronto PO hanno 4-5 versioni (vedi la Guida al PO Matching per i dettagli)
+**Nota:** alcune condition card di confronto PO hanno diverse versioni. Usa questa guida per il comportamento attuale e le note della versione qui sotto per le modifiche pubblicate.
 
-📖 [Cronologia Completa delle Versioni](../../../changelog/release.md) | [Database delle Versioni delle Card](../../../../DocFlow/docs/card_version.md) | [Guida al PO Matching](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Note della versione del prodotto](../../../overview-and-basics/release-notes/README.md) | [Guida al PO Matching](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

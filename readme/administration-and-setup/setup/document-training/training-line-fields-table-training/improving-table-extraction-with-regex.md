@@ -42,11 +42,11 @@ Aqui está um exemplo em que a linha "PRAEF" se sobrepõe a **Bezeichnung**, **M
     <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-pt-20261009.png" alt="Tela de Extração de Tabela com o Modo de treinamento ativado."><figcaption><p>Modo de treinamento ativado.</p></figcaption></figure>
 2.  **Ativar o Modo de Edição de Linha**
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-pt-20261009.png" alt="Tela de Extração de Tabela com o modo Edição de dados de linha: Ativado e a dica de ferramenta correspondente visível."><figcaption><p>Modo de edição de linha ativado.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-pt-20261009.png" alt="Tela de Extração de Tabela com o modo Edição de dados de linha ativado e a tabela pronta para edição manual."><figcaption><p>Modo de edição de linha ativado.</p></figcaption></figure>
 3.  **Selecionar e Mapear Texto**\
     Clique na parte correta do texto e atribua-a a um cabeçalho de coluna **azul**.
 
-    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-pt-20261009.png" alt="Tabela extraída no modo de edição de linha com os cabeçalhos de coluna azuis, ainda vazios, que podem ser atribuídos manualmente."><figcaption><p>Os cabeçalhos de coluna azuis podem ser preenchidos manualmente.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-pt-20261009.png" alt="Tabela extraída no modo de edição de linha, rolada para a direita para mostrar os cabeçalhos de coluna azuis à espera de preenchimento manual."><figcaption><p>Os cabeçalhos de coluna azuis podem ser preenchidos manualmente.</p></figcaption></figure>
 
 > Nota: As colunas de cor violeta já estão mapeadas pelo sistema e não podem ser editadas manualmente.
 

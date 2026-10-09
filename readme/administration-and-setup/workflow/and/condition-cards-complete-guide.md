@@ -2,7 +2,7 @@
 
 Las tarjetas de condición de esta página van en los grupos **When** y **And** del Generador de flujos de trabajo: deciden si se ejecutan las acciones Then:
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Las tarjetas de condición se añaden a los grupos <strong>When</strong> y <strong>And</strong> mediante <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Lienzo del Workflow Builder con tarjetas When, And y Then"><figcaption><p>Las tarjetas de condición se añaden a los grupos <strong>When</strong> y <strong>And</strong> mediante <strong>Add Card</strong>.</p></figcaption></figure>
 
 **Cubre:** 31 tarjetas de condición restantes
 
@@ -14,9 +14,9 @@ Las tarjetas de condición de esta página van en los grupos **When** y **And** 
 **Patrón de versión:** La mayoría sigue el patrón v1 → v2 (añadiendo soporte de i18n)
 **Ejemplo con varias versiones:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Nota:** Algunas tarjetas de condición de comparación de PO tienen 4-5 versiones (consulte la PO Matching Guide para más detalles)
+**Nota:** Algunas tarjetas de condición de comparación de PO tienen varias versiones. Use esta guía para conocer el comportamiento actual y las notas de la versión que aparecen más abajo para los cambios publicados.
 
-📖 [Complete Version History](../../../changelog/release.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Notas de la versión del producto](../../../overview-and-basics/release-notes/README.md) | [Guía de PO Matching](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

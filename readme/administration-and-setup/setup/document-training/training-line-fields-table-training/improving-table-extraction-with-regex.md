@@ -15,15 +15,17 @@ Documentos como faturas ou confirmações de pedidos frequentemente contêm entr
 
 Considere este exemplo de fatura alemã — a coluna "Bezeichnung" (descrição) abrange várias linhas:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FVino2M4Esor3IRHGqBd5Brx7_lKPIwEOlRYBHzMXw4WoacFNW39hbWuwoUNGocubx4Bh9_BvUBqZSWA4U_NmU8FBw4Q1_AiTASgMx-2MLKvsHLJY057oqyks0fQ5b7mI577JTX5rBKdEG90O9F5TcoU\&width=768\&dpr=4\&quality=100\&sign=ae0bd75a\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-multiline-doc-pt-20261009.png" alt="Tabela de uma fatura alemã em que a descrição (Bezeichnung) de cada item abrange várias linhas."><figcaption><p>Uma coluna de descrição que abrange várias linhas.</p></figcaption></figure>
 
 Inicialmente, o DocBits extrai cada linha separadamente:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FUX5OdkW59HPVROnNzSeZbDw4NYTPbfayDLIXBQi0pwHzUEJ1B5t7I9uKBNc0dmOB3Cile8Xv6AdgVXuUd0aMbQFGWagBCEetw8P-N4zgG_cGTjWHhpDtGQZg27UZKdCDJ5FeEDJgFAYtTB8kZrMSdho\&width=768\&dpr=4\&quality=100\&sign=b6990876\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-initial-extraction-pt-20261009.png" alt="Tabela extraída na visualização Extração de Tabela em que cada linha de texto da descrição se tornou uma linha própria."><figcaption><p>O DocBits extrai cada linha separadamente no início.</p></figcaption></figure>
 
 Em seguida, você pode **agrupar linhas com base em uma coluna**, como "Posição". Isso mescla linhas relacionadas em uma entrada única e estruturada:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FPxA6h2udUuYd1YmHV97t-bzfZzipFpdA5t8gjpGXWx9sA-I4tW3tYwD28icv88UEmitz0EAaWuGkU5ZwqAjcQnoOkmg9u1AcBJW3nITU6eFa0foHB-AQPb0qv0AWaaEwM6WvwaEcAODEUzKtvRZOMN0\&width=768\&dpr=4\&quality=100\&sign=36b99bc7\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-grouped-result-pt-20261009.png" alt="Tabela extraída em que as linhas de descrição agrupadas por Posição formam uma entrada por posição."><figcaption><p>Após o agrupamento por Posição, as linhas relacionadas formam uma única entrada.</p></figcaption></figure>
+
+Quantas sublinhas são mescladas em uma entrada e como o agrupamento se comporta você define nas [Configurações Avançadas](advanced-settings.md) em **Mínimo de Linhas Agrupadas** e **Agrupamento Reverso**.
 
 ## 2. Seleção Manual de Linhas
 
@@ -31,21 +33,24 @@ Em alguns casos, o texto em um documento está distribuído por várias colunas 
 
 Aqui está um exemplo em que a linha "PRAEF" se sobrepõe a **Bezeichnung**, **Menge**, **ME** e **Preis in EUR**:
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FLbVbmfdOBpeCWDftPvW0qjEHjbLmWYRrAGTZHVW8VEHQTEvl5GoqH2wkFE5iUOySmF50b1V8CDAZhfMzPTeMQscmc61SDKaqSCW-y0Z7fjlwOjhtjxWD44oCsgHmwrgrBD4cuEGgn9JY_UX3t9jRlPs\&width=768\&dpr=4\&quality=100\&sign=5ff4a2e1\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-misalignment-pt-20261009.png" alt="Tabela de uma fatura com uma linha PRAEF cujo texto atravessa várias colunas."><figcaption><p>Uma linha PRAEF que não se alinha à estrutura de colunas.</p></figcaption></figure>
 
 ### Como Atribuir Valores Manualmente:
 
 1.  **Ativar o Modo de Treinamento**
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F4D8iCXk0p_Mur8bX_11ne_2iA-GOxoFi2OQWlSEvrH1auoE0ksnYXpZx3Pw3PUJJRZJN85dnQlSSBB369FfafXAy8adjFZcnepQnODSaaIj69cxtUKFAXPgn5eyPE6jbJuzStJALMgumlt49Z1Pv3FY\&width=768\&dpr=4\&quality=100\&sign=232c58a9\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-training-mode-pt-20261009.png" alt="Tela de Extração de Tabela com o Modo de treinamento ativado."><figcaption><p>Modo de treinamento ativado.</p></figcaption></figure>
 2.  **Ativar o Modo de Edição de Linha**
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2F8YQmo_WRuKKVjk1a_eoxSBiQr0GncuS4BmCA0aI9aOlrbsIvdj8dZlurxxBHp2lH4ozT4HPWw9qYDW7xLQ7u2DSyU8DrNzSBC7LjzKLTDJ2tudY9a_DENDoK5Aya6L1hcf1WF1RD92S_DzhGVV4Gh6Q\&width=768\&dpr=4\&quality=100\&sign=8fc5c089\&sv=2)
-3.  **Selecionar e Mapear Texto** Clique na parte correta do texto e atribua-a a um cabeçalho de coluna **azul**.
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-row-edit-mode-pt-20261009.png" alt="Tela de Extração de Tabela com o modo Edição de dados de linha: Ativado e a dica de ferramenta correspondente visível."><figcaption><p>Modo de edição de linha ativado.</p></figcaption></figure>
+3.  **Selecionar e Mapear Texto**\
+    Clique na parte correta do texto e atribua-a a um cabeçalho de coluna **azul**.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2Fi2tlbwl9qFE0clthaoRPe7kcPRiURCvemuLEjBK4uAnfsR4auXbftMfEY1ZW5WXwezTBVSG5hbNRkddwIeLtrgJUvZoeKGdPKN8f75O_dPdIWkm4EFALfAj-evDUI3UKrgNOTNjF37C1bBLtE95OA1w\&width=768\&dpr=4\&quality=100\&sign=842a42\&sv=2)
+    <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-editable-columns-pt-20261009.png" alt="Tabela extraída no modo de edição de linha com os cabeçalhos de coluna azuis, ainda vazios, que podem ser atribuídos manualmente."><figcaption><p>Os cabeçalhos de coluna azuis podem ser preenchidos manualmente.</p></figcaption></figure>
 
 > Nota: As colunas de cor violeta já estão mapeadas pelo sistema e não podem ser editadas manualmente.
+
+Esse trabalho acontece no **modo de edição de dados de linha** (**Edição de dados de linha: Ativado**). O que você pode fazer nele e quando usá-lo em vez do **Modo de Treinamento** está descrito em [Training Line Fields/Table Training](README.md).
 
 ## 3. Mapeamento de Colunas
 
@@ -56,9 +61,11 @@ Para mapear ou remapear uma coluna:
 1. Clique no cabeçalho da coluna na visualização de extração.
 2. Escolha a coluna de destino correta no menu suspenso.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FX_65pCWrI4HMFr_aiA0eoSDp-yIYy49lULzAZaiIgnr0aIowlLSed21MuehkGLs4UIdQousdfhiZi5pnQtpZ0uUn6dxlzii7WPQvov-kN1_Jimsi6U6zowOLxjBzZzZ47kaRhduAVBd_Ya9QQtXTpJ4\&width=768\&dpr=4\&quality=100\&sign=4e2a3bdc\&sv=2)
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-improving-table-extraction-with-regex-mapping-dropdown-pt-20261009.png" alt="Tabela extraída com o menu suspenso do cabeçalho de coluna aberto, listando as colunas de destino Descrição, Número do item, Valor líquido, Posição, Quantidade, Montante total, Unidade e Preço unitário."><figcaption><p>Escolha a coluna de destino no menu suspenso do cabeçalho.</p></figcaption></figure>
 
 Você pode ajustar o mapeamento quantas vezes forem necessárias.
+
+Veja [Definindo Tabelas e Colunas](defining-tables-and-columns.md) para mais informações sobre a criação de tabelas e colunas.
 
 ## 4. Extrair de Acima / Abaixo
 
@@ -112,6 +119,8 @@ Essa funcionalidade permite que você defina um regex para cada cabeçalho de ta
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FC4R2o2W10ct1o0oesTLZ%252FiScreen%2520Shoter%2520-%2520Google%2520Chrome%2520-%2520250303135153.jpg%3Falt%3Dmedia%26token%3D43e53a05-53fe-4503-ba51-55c85910bd82\&width=768\&dpr=4\&quality=100\&sign=9ec6eb7b\&sv=2)
 7. **Salve a regra e confirme** para aplicar as alterações.
 
+Para salvar ou excluir regras treinadas de forma permanente, veja [Salvar e Excluir Regras](save-and-delete-rules.md).
+
 ## Quando Usar Cada Recurso
 
 Use essas ferramentas para aumentar a precisão da extração e reduzir o trabalho manual:
@@ -120,3 +129,9 @@ Use essas ferramentas para aumentar a precisão da extração e reduzir o trabal
 * **Seleção Manual de Linhas**: Quando as linhas não estão estruturadas de forma limpa e partes do conteúdo caem nas colunas erradas.
 * **Mapeamento de Colunas**: Quando os nomes das colunas detectados automaticamente não correspondem à sua estrutura ou precisam de refinamento.
 * **Regras de Regex**: Quando os cabeçalhos de tabela variam ligeiramente entre documentos do mesmo fornecedor ou o OCR introduz inconsistências.
+
+Guias relacionados nesta área:
+
+* [Configurações Avançadas](advanced-settings.md) – agrupamento, linhas de cabeçalho e tratamento de linhas extras.
+* [Definindo Tabelas e Colunas](defining-tables-and-columns.md) – criar tabelas e colunas para o treinamento.
+* [Salvar e Excluir Regras](save-and-delete-rules.md) – aplicar ou remover permanentemente um layout treinado.

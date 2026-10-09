@@ -4,9 +4,9 @@
 
 {% embed url="https://youtu.be/Vvy38N_5g3Y" %}
 
-Hier müssen Sie lediglich die gewünschte Unterorganisation auswählen und auf „Authentifizieren" drücken
+Hier müssen Sie lediglich die gewünschte Unterorganisation auswählen und auf „Authentifizieren“ drücken
 
-![](https://lh7-us.googleusercontent.com/9G20nHREc07d9zo5hVLly4SSoxi9J1TqXxrWeqz5YS50cht3L9th76sd9hYU20IWrktlZNhO1yyjhbvraus-4w32TLyprjtKwgyi9lFAJceGK8KFzCNUytmofDGhZKShu1zFds6QKJ9lM4MYMSgvg7E)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-authenticate-de-20261009.png" alt="Dialog „E-Mail-Server-Einrichtung“ mit dem Protokoll OAuth Office365, der Dokumentenweiterleitung und der Schaltfläche „Authentifizieren“."><figcaption><p>Wählen Sie die Weiterleitung und klicken Sie auf „Authentifizieren“.</p></figcaption></figure>
 
 Sie werden auf diese Microsoft-Seite weitergeleitet und müssen einen Code eingeben.
 
@@ -14,22 +14,22 @@ Sie werden auf diese Microsoft-Seite weitergeleitet und müssen einen Code einge
 
 Diesen Code finden Sie, indem Sie zu DocBits zurückwechseln; der Code wird dort wie unten dargestellt angezeigt. Kopieren Sie den Code einfach und geben Sie ihn auf der Microsoft-Seite ein. Anschließend müssen Sie Ihre eigenen Microsoft-Anmeldedaten eingeben.
 
-![](https://lh7-us.googleusercontent.com/hr9w8r49gmHgELBAbDRAlsQ0VvwCiXerINt5nSAwwdjvOQFfHF5Q7rwEscT0VVyemqo9RQWxc9bl5aHb9jbD0s-bu461lkdWK1DZzsIgTPf6V-HqmzCq36cijOWZbVB0MEVVVVWVjL70baSo75lYyvo)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-code-de-20261009.png" alt="Dialog „E-Mail-Server-Einrichtung“ mit dem Microsoft-Authentifizierungscode, der Schaltfläche „Kopieren“ und der Schaltfläche „Authentifizierung abschließen“."><figcaption><p>Der Microsoft-Code wird in DocBits angezeigt.</p></figcaption></figure>
 
-Drücken Sie die Schaltfläche FINISH AUTHENTICATION und Sie werden zu diesem Menü weitergeleitet
+Drücken Sie die Schaltfläche „Authentifizierung abschließen“ und Sie werden zu diesem Menü weitergeleitet
 
-![](https://lh7-us.googleusercontent.com/bCd4hqZc1Syli70kvlzqDkLfa1QYqq96K6K1EDc-6DabCceBmVl_LkRb5Z2AZrHAOdDpxPzUw61oR3Bw5EklLNZp3iXoVlirlCR763m75ZFNfQlTc4g9iShfrtXFpBXnZv7B6835h57jKVcITo31-Gk)
+<figure><img src="../../../../.gitbook/assets/a-email-oauth-office365-options-de-20261009.png" alt="Dialog „E-Mail-Server-Einrichtung“ nach der Authentifizierung mit den Schaltern „Ordner verwenden“, „Geteiltes Postfach verwenden“ und „E-Mails in einen anderen Ordner verschieben“."><figcaption><p>Optionen nach dem Abschluss der Authentifizierung.</p></figcaption></figure>
 
 **Ordner verwenden**
 
 Wenn Sie einen anderen Ordner als Ihren Posteingang verwenden, geben Sie den Ordnernamen ein, nachdem Sie den Schieberegler aktiviert haben.
 
-**Gemeinsames Postfach verwenden**
+**Geteiltes Postfach verwenden**
 
 Wenn der E-Mail-Import auf einen Posteingang oder einen Ordner eines gemeinsamen Postfachs zugreifen soll, geben Sie hier die E-Mail-Adresse ein, nachdem Sie den Schieberegler aktiviert haben.
 
 **Importierte E-Mails in den Papierkorb verschieben**
 
-Wenn Sie alle E-Mails importieren möchten, nicht nur die ungelesenen, und diese in den Papierkorb verschieben lassen möchten, aktivieren Sie diese Option. Andernfalls werden nur ungelesene E-Mails geprüft, die Dokumente importiert, die E-Mail auf „gelesen" gesetzt und an ihrem aktuellen Ort belassen.
+Wenn Sie alle E-Mails importieren möchten, nicht nur die ungelesenen, und diese in den Papierkorb verschieben lassen möchten, aktivieren Sie diese Option. Andernfalls werden nur ungelesene E-Mails geprüft, die Dokumente importiert, die E-Mail auf „gelesen“ gesetzt und an ihrem aktuellen Ort belassen.
 
 Falls Sie eine Fehlermeldung erhalten, die darauf hinweist, dass Sie nicht über die Rechte verfügen, eine solche Verbindung herzustellen, müsste jemand mit Administratorrechten innerhalb von Azure diese Verbindung autorisieren. Weitere Informationen finden Sie auf der folgenden Seite: https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal#grant-tenant-wide-admin-consent-in-enterprise-apps

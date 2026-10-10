@@ -24,7 +24,7 @@ The page is intended for administrators and is not linked in the sidebar. There 
 | **Reload Page** | Reloads DocBits so the app can fetch fresh files and rebuild its caches. Try this first. |
 | **Clear All Caches** | Deletes every cache listed under *Cached Items*. The next reload refetches the application files. |
 | **Unregister Service Workers** | Removes the registered Service Workers so they stop serving cached files. They are re-registered on the next visit. |
-| **Emergency Cleanup** | Clears all caches **and** unregisters all Service Workers in one step, then reloads the page and stores the current version as the new baseline. Use this when the screen stays blank. |
+| **Emergency Cleanup** | Attempts to clear all caches **and** unregister all Service Workers, then reloads the page. The stored version changes only after both cleanup steps succeed and a current app version is available. Use this when the screen stays blank. |
 
 ⚠️ **Warning:** These tools are for debugging only. Use **Emergency Cleanup** only if you're experiencing a blank screen issue. Clearing caches is safe — no documents or settings are stored in them — but the next page load will be slower while everything is fetched again.
 
@@ -33,5 +33,5 @@ The page is intended for administrators and is not linked in the sidebar. There 
 1. Open the PWA Cache Status page and check whether **Version Mismatch** shows *Yes*.
 2. Click **Reload Page**. If the app comes back, you are done.
 3. If the screen is still blank, click **Clear All Caches** and then **Reload Page**.
-4. If it is still blank, click **Emergency Cleanup** — it clears everything, reloads the app and updates the stored version.
+4. If it is still blank, click **Emergency Cleanup**. It attempts both cleanup steps and reloads the app. If either step fails, the stored version stays unchanged.
 5. If none of this helps, collect diagnostics with the **Debug Collector** (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and send them to support — see [Debug Collector](debug-collector.md).

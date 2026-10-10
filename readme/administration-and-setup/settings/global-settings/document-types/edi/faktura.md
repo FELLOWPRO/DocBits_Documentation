@@ -1,86 +1,35 @@
-# Fattura
+# FatturaPA: visualizzare un attributo sulle righe fattura
 
-## Visualizzare l'attributo su ogni riga
+FatturaPA è il formato di fattura elettronica italiano. Questa pagina spiega dove controllare un attributo di riga, ad esempio il numero dell'ordine di acquisto, prima di modificarne la mappatura o l'anteprima della fattura. **Non aggiungere una seconda colonna `PURCHASE_ORDER` senza prima controllare la mappatura attiva:** la mappatura attuale della Sandbox ne contiene già una.
 
-Se si desidera visualizzare un attributo specifico (come il numero dell'ordine di acquisto) su ogni riga, seguire i passaggi seguenti. L'approccio differirà a seconda che l'attributo sia necessario nell'estrazione JSON o nell'output XSL.
+## Trovare i tre file FatturaPA
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.33.16.png" alt=""><figcaption></figcaption></figure>
+Aprire **Impostazioni → Tipi di Documento → E-Doc**, selezionare **INVOICE**, quindi espandere **FATTURAPA**. L'elenco attuale contiene tre file diversi:
 
-### Metodo 1: Visualizzare l'attributo nell'estrazione JSON (configurazione DocBits)
+* **TRANSFORMATION (XSLT)** legge l'XML sorgente FatturaPA e produce i dati fattura normalizzati.
+* **PREVIEW (XSLT)** crea l'anteprima visiva della fattura in stile HTML/PDF a partire da questi dati.
+* **EXTRACTION PATHS (JSON)** mappa i valori normalizzati nei campi e nelle colonne della tabella di DocBits.
 
-1. Andare su **Impostazioni**
-2. Andare su **Tipi di documento**
-3. Selezionare **Invoice/E-Doc**
+<figure><img src="../../../../../.gitbook/assets/dbdc-628-fatturapa-list-it-20261010.png" alt="Impostazioni E-Doc della Sandbox in italiano con FATTURAPA, Transformation, Preview ed Extraction Paths"><figcaption><p>L'elenco attuale dei file FATTURAPA nella Sandbox in italiano.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.07.58.png" alt=""><figcaption></figcaption></figure>
+## Controllare il valore di riga estratto
 
-4. Aprire la scheda **"FATTURAPA"**
-5. Fare clic su **JSON**
+Aprire **EXTRACTION PATHS (JSON)**. Nella versione attiva, trovare l'array `tables` con le sue `columns`. La versione visibile nella Sandbox include già `{"name": "PURCHASE_ORDER", "path": "PURCHASE_ORDER"}`. Controllare il valore in una fattura di prova reale prima di modificarlo. Se serve un altro attributo, individuarne il valore nei dati normalizzati, quindi aggiungere un nome di colonna distinto e il percorso corrispondente in una versione bozza.
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.01.13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-628-fatturapa-json-it-20261010.png" alt="Percorsi di estrazione FATTURAPA in JSON con la versione attiva e una colonna tabella PURCHASE_ORDER esistente"><figcaption><p>La mappatura di estrazione JSON attiva contiene già una colonna per il numero d'ordine.</p></figcaption></figure>
 
-6. Per creare una bozza, fare clic sull'icona della **penna**
+Per la spiegazione dettagliata dei percorsi di estrazione, vedere la [Guida al File dei Percorsi di Estrazione EDI](edi/edi-extraction-paths-file-guide.md).
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
+## Modificare trasformazione o anteprima solo quando necessario
 
-7. All'interno dell'array `"tables"`, aggiungere la colonna specifica che si desidera visualizzare fornendo un nome e un percorso:
+Se il valore normalizzato manca, esaminare **TRANSFORMATION (XSLT)** e il percorso XML sorgente che dovrebbe produrlo. Una modifica qui influisce sui dati usati dai passaggi successivi di mappatura e anteprima. Se il valore viene estratto correttamente ma è assente dalla fattura visiva, esaminare **PREVIEW (XSLT)** e la riga della tabella interessata in quel modello. I due file XSLT hanno scopi diversi.
 
-```
-{ 
-"name": "PURCHASE_ORDER",    
-"path":"path_to_source" 
-}
-```
+<figure><img src="../../../../../.gitbook/assets/dbdc-628-fatturapa-transformation-it-20261010.png" alt="Trasformazione FATTURAPA attiva in XSLT che produce i dati fattura INVOICE normalizzati"><figcaption><p>La trasformazione legge l'XML sorgente e crea i campi fattura normalizzati.</p></figcaption></figure>
 
-**NOTA:** I documenti elettronici avranno sempre l'origine impostata su **Gran Bretagna**, quindi gli importi saranno salvati in formato internazionale, utilizzando un **punto (.)** come separatore decimale.
+<figure><img src="../../../../../.gitbook/assets/dbdc-628-fatturapa-preview-it-20261010.png" alt="Anteprima FATTURAPA attiva in XSLT con output HTML e stili della tabella fattura"><figcaption><p>L'anteprima controlla l'output visivo della fattura.</p></figcaption></figure>
 
-8. Salvare la bozza
+Come si lavora con i due file XSLT è spiegato nella [Guida al File di Trasformazione EDI](edi/edi-transformation-file-guide.md) e nella [Guida al File Anteprima EDI](edi/edi-preview-file-guide.md).
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
+Usare la matita su una scheda di versione per preparare una modifica. Controllare la bozza e usare **Anteprima** con una fattura FatturaPA rappresentativa prima di attivarla. Le schermate mostrano le versioni attuali; in questa sessione della Sandbox non è stata salvata alcuna bozza né eseguito un test di anteprima.
 
-9. Assicurarsi che la bozza sia quella **attiva**.
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>
-
-### Metodo 2: Visualizzare l'attributo nell'output XSL (anteprima HTML/PDF)
-
-1. Andare su **Impostazioni**
-2. Andare su **Tipi di documento**
-3. Selezionare **Invoice/E-Doc**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.07.58.png" alt=""><figcaption></figcaption></figure>
-
-4. Aprire la scheda **"FATTURAPA"**
-5. **Fare clic su XLST**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.23.06.png" alt=""><figcaption></figcaption></figure>
-
-6. Per creare una bozza, fare clic sull'icona della **penna**
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 14.58.56.png" alt=""><figcaption></figcaption></figure>
-
-7. Nel blocco `<xsl:for-each select="path">` che genera le righe della tabella, aggiungere uno snippet come questo dove si desidera che appaia l'attributo (ad esempio, in una colonna propria):
-
-```
-<tr>
-    <!-- Altre colonne ... -->
-
-    <td>
-        <!-- Numero d'ordine -->
-        <xsl:variable name="variable_name" select="value" />
-        <xsl:value-of 
-            select="path_to_attribute" 
-        />
-    </td>
-</tr>
-```
-
-**NOTA:** I documenti elettronici avranno sempre l'origine impostata su **Gran Bretagna**, quindi gli importi saranno salvati in formato internazionale, utilizzando un **punto (.)** como separatore decimale.
-
-8. Salvare la bozza
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 15.11.04.png" alt=""><figcaption></figcaption></figure>
-
-9. Assicurarsi che la bozza sia quella **attiva**.
-
-<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-01-28 at 16.03.50.png" alt=""><figcaption></figcaption></figure>
+L'istruzione precedente, secondo cui tutti i documenti elettronici hanno la Gran Bretagna come origine, non è una regola generale affidabile. Verificare paese, valuta e formato numerico della fattura rispetto al documento sorgente e alla configurazione della propria organizzazione.

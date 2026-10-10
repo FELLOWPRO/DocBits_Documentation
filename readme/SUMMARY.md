@@ -503,7 +503,7 @@
 * [Eksportowanie do INFOR](infor-integration-and-configuration/exporting-to-infor/README.md)
   * [Tworzenie pliku mapowania BOD](infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
   * [Tworzenie pliku mapowania IDM](infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-  * [Tworzenie punktu końcowego ION API](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
+  * [Tworzenie punktu końcowego Infor ION API dla eksportów DocBits](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
   * [Tworzenie pliku ION API](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-file.md)
   * [Eksport do mapowania M3 (API)](infor-integration-and-configuration/exporting-to-infor/export-to-m3-mapping-api.md)
   * [Eksportowanie do IDM](infor-integration-and-configuration/exporting-to-infor/exporting-to-idm.md)

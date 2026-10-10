@@ -1,6 +1,6 @@
 # Configurações de dados mestre
 
-As **Configurações de dados mestre** ligam os campos de validação de um documento aos dados guardados em [Pesquisar Dados Mestres](../../../document-processing/master-data-lookup.md). Use **Pesquisar Dados Mestres** para encontrar e preencher registos correspondentes. Use **Dados Mestres LOV** para oferecer uma lista de valores de um conjunto de dados.
+As **Configurações de dados mestre** ligam os campos de validação de um documento aos dados guardados em [Pesquisa de dados mestre](../../../document-processing/master-data-lookup.md). Use **Pesquisar Dados Mestres** para encontrar e preencher registos correspondentes. Use **Dados Mestres LOV** para oferecer uma lista de valores de um conjunto de dados.
 
 ## Abrir as configurações
 
@@ -27,7 +27,7 @@ As configurações em **Pesquisar Dados Mestres** procuram num conjunto de dados
 
 <figure><img src="../../../../../.gitbook/assets/dbdc202-lookup-config-pt-20261010.png" alt="Janela Criar configuração de dados mestre com tipo de documento, nome da pesquisa, nome do conjunto de dados de pesquisa, manipulador de conflitos, tipo de contexto e Combinar tudo"><figcaption>O formulário de uma configuração de pesquisa para o cabeçalho de uma Fatura.</figcaption></figure>
 
-**Combinar tudo** e o **Manipulador de conflitos** afetam o reconhecimento automático de fornecedores. Veja [Configuração de dados difusos com dados mestre](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md) para exemplos práticos.
+**Combinar tudo** e o **Manipulador de conflitos** afetam o reconhecimento automático de fornecedores. Veja [Configuração de Dados Fuzzy com Dados Mestres](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md) para exemplos práticos.
 
 ### Mapear campos numa configuração
 

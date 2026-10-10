@@ -1,133 +1,58 @@
 # Dashboard-Werkzeuge
 
-Rechts neben der Suchleiste finden Sie einige Dashboard-Werkzeuge.
+Das Dashboard ist Ihre Dokumentliste. Öffnen Sie ein Dokument, indem Sie seinen Namen auswählen. Die Bedienelemente über der Tabelle helfen Ihnen, Dokumente zu finden, die Ansicht zu ändern und neue Dateien hochzuladen. Einige Bedienelemente hängen von den Einstellungen Ihrer Organisation und Ihren Berechtigungen ab, daher kann Ihr Dashboard weniger Schaltflächen anzeigen als das Beispiel unten.
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_main_de.png" alt="Aktuelles DocBits-Dashboard mit Zeitraum, Suchleiste, Werkzeugleiste, gespeichertem Dashboard, Dokumenttabelle und Upload-Schaltfläche"><figcaption>Das Dashboard in einer deutschsprachigen Testorganisation.</figcaption></figure>
 
-## Tabelle aktualisieren
+## Dokumente finden
 
-Klicken Sie auf diese Schaltfläche, um das Dashboard zu aktualisieren und die aktuellsten Daten und Status zu laden.
+1. Wählen Sie links einen Zeitraum: **30T**, **90T**, **180T**, **365T**, **Alle** oder **Benutzerdefiniert**. Damit begrenzen Sie die angezeigten Dokumente, sofern die Datumssteuerung verfügbar ist.
+2. Geben Sie einen Dokumentnamen oder eine ID in die Suchleiste ein. Die Suche unterstützt außerdem feldspezifische Abfragen. Wählen Sie das **?** neben der Suchleiste, um Beispiele und die verfügbaren Operatoren zu sehen.
+3. Wählen Sie das Schieberegler-Symbol in der Suchleiste, um die Liste nach **Status**, **Zugewiesen An** oder **Neustart Erforderlich** einzuschränken, und wählen Sie dann **Anwenden**. Mit **Filter löschen** entfernen Sie diese Auswahl wieder.
+4. Wählen Sie eine Spaltenüberschrift, um die Tabelle zu sortieren. Verwenden Sie die Seitensteuerung unten, um zwischen Ergebnisseiten zu wechseln oder **Dokumente pro Seite:** zu ändern.
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_2.png" alt=""><figcaption></figcaption></figure>
+Das Symbol am Beginn des Suchfelds öffnet eine Auswahl der verfügbaren Felder und zeigt, welche Suchfunktionen Ihre Organisation hat. Das **code**-Symbol wechselt zwischen der normalen Suchansicht und einer Rohabfrage-Ansicht; verwenden Sie die normale Ansicht, sofern Sie die Abfragesyntax nicht bereits kennen. Das Lupensymbol öffnet **Suche im Dokumentinhalt**: **Automatisch** durchsucht zuerst sichtbare Felder, **Dokumentinhalt immer einbeziehen** bezieht Text innerhalb von Dateien ein, und **Nur sichtbare Spalten** beschränkt Treffer auf die Tabellenfelder. Die Suche innerhalb von Dateien erfordert, dass die entsprechende Suchfunktion für Ihre Organisation aktiviert ist.
 
-## Erweiterte Einstellungen
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_filters_de.png" alt="Filterbereich der Dashboard-Suche mit Status, Zugewiesen An, Neustart Erforderlich, Filter löschen und Anwenden"><figcaption>Die Filter innerhalb der Suchleiste.</figcaption></figure>
 
-Klicken Sie auf das Zahnradsymbol, um das Menü „Erweiterte Einstellungen“ zu öffnen.
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_content_mode_de.png" alt="Menü „Suche im Dokumentinhalt“ mit Automatisch, Dokumentinhalt immer einbeziehen und Nur sichtbare Spalten"><figcaption>Legen Sie fest, was eine einfache Suche abgleichen darf.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_8.png" alt=""><figcaption></figcaption></figure>
+Für eine geführte Suche lesen Sie [Schnellsuche](quick-search.md) und [Dokumente filtern](filtering-documents.md). Das **?**-Fenster erklärt die erweiterte Suchsyntax; für eine einfache Namenssuche benötigen Sie diese Syntax nicht.
 
-Im Menü „Erweiterte Einstellungen“ stehen die folgenden Optionen zur Verfügung:
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_search_help_de.png" alt="Hilfefenster „Dashboard-Suche — Felder &amp; Syntax“ mit Suchbeispielen und Operatoren"><figcaption>Suchhilfe im Dashboard.</figcaption></figure>
 
-### Weitere Einstellungen
+## Ansicht aktualisieren und anpassen
 
-Verwenden Sie diese Schaltfläche, um auf die Admin-Einstellungen für das Dashboard zuzugreifen. Die vollständige Dokumentation zu diesen Einstellungen finden Sie [hier](../../../administration-and-setup/settings/global-settings/dashboard/).
+- Wählen Sie den kreisförmigen Pfeil über der Tabelle, um die Dokumentliste neu zu laden. Er startet die Dokumentverarbeitung nicht neu.
+- Wählen Sie das Zahnrad, um die **Erweiterten Einstellungen** zu öffnen. Dort können Sie Tastenkombinationen öffnen, das E-Mail-Importprotokoll ansehen oder sichtbare Tabellenspalten verwalten. Administratoren sehen möglicherweise zusätzlich einen Link zu den Dashboard-Einstellungen. Die nächsten Schritte finden Sie unter [Tastenkombinationen](keyboard-shortcuts.md) und [Dokumentspalten ändern](change-document-columns.md).
+- Wählen Sie das Balkendiagramm, um **Analytik** über der Tabelle anzuzeigen. Wählen Sie eine Kategoriekarte wie **Ausstehende Benutzereingaben**, um die Dokumente zu filtern. Wählen Sie das Diagramm erneut, um die Karten auszublenden.
+- Wählen Sie die Kennzeichnung des gespeicherten Dashboards unter der Suchleiste, um Ihr eigenes Dashboard zu wechseln oder zu verwalten. Siehe [Persönliche Dashboards](personal-dashboards.md).
+- Wählen Sie **+** neben der Registerkarte **Alle**, um eine Registerkarte für einen Dokumenttyp hinzuzufügen. In der Testorganisation ist **Rechnung** verfügbar. Wählen Sie eine Registerkarte, um diesen Dokumenttyp anzuzeigen.
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_advanced_de.png" alt="Menü „Erweiterte Einstellungen“, geöffnet über das Zahnrad-Symbol des Dashboards"><figcaption>Öffnen Sie das Zahnradmenü für Dashboard-Optionen.</figcaption></figure>
 
-### Tastenkombinationen
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_analytics_de.png" alt="Analytik-Karten im Dashboard für Alle Dokumente, In Arbeit, Ausstehende Benutzereingaben, Genehmigung ausstehend, Exportiert und Fehler"><figcaption>Analytik-Karten über der Dokumentliste.</figcaption></figure>
 
-Verwenden Sie diese Schaltfläche, um alle Tastenkombinationen für das Dashboard anzuzeigen. Detaillierte Erläuterungen zu den einzelnen Tastenkombinationen finden Sie [hier](keyboard-shortcuts.md).
+## Dokumente hochladen
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_9.png" alt=""><figcaption></figcaption></figure>
+Wählen Sie **Upload**. Ziehen Sie Dateien in den **Dokument-Uploader** oder wählen Sie **Zum Hochladen klicken**, um sie von Ihrem Computer auszuwählen. Wenn Sie den Dokumenttyp kennen, aktivieren Sie **Classify as** und wählen Sie den Typ; andernfalls lassen Sie die Option aus, damit automatisch klassifiziert wird. Wählen Sie **Upload**, um die Dateien zu übermitteln. Was danach geschieht, lesen Sie unter [Übersicht der hochgeladenen Dokumente](overview-of-uploaded-documents.md).
 
-### Importprotokoll
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_upload_de.png" alt="Dialog „Dokument-Uploader“ mit Drag-and-Drop-Bereich, Zum Hochladen klicken, Classify as, Abbrechen und Upload"><figcaption>Der aktuelle Upload-Dialog.</figcaption></figure>
 
-Verwenden Sie diese Schaltfläche, um eine Tabelle zu öffnen, die alle kürzlich per E-Mail importierten Dokumente zusammen mit relevanten Informationen zu jedem einzelnen anzeigt.
+## Mit mehreren Dokumenten arbeiten
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_10.png" alt=""><figcaption></figcaption></figure>
+Aktivieren Sie die Kontrollkästchen neben den Dokumenten, auf die Sie einwirken möchten, und öffnen Sie dann das Drei-Punkte-Menü in der Tabellenkopfzeile. Je nach Dokumenten und Ihren Berechtigungen bietet das Menü **Zusammenführen**, **Zuweisen an**, **Neustart**, **Export neu starten** und **Löschen**. Prüfen Sie die ausgewählten Zeilen, bevor Sie eine Aktion wählen; **Löschen** entfernt Dokumente. Zum Zusammenführen von Dateien folgen Sie [Dokumentenzusammenführung](document-merging.md).
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_bulk_de.png" alt="Menü für Massenaktionen im Dashboard mit Zusammenführen, Zuweisen an, Neustart, Export neu starten und Löschen"><figcaption>Massenaktionen neben den Auswahl-Kontrollkästchen der Tabelle.</figcaption></figure>
 
-Sie können die Protokolle nach Betreff oder Absender filtern, Spalten durch Klicken auf die Spaltenüberschriften auf- oder absteigend sortieren und sie per Drag-and-drop neu anordnen.
+Für ein einzelnes Dokument öffnen Sie das Drei-Punkte-Menü am Ende seiner Zeile. Es bietet Aktionen wie **Validiere**, **Zuweisen an**, **Dokumentenfluss**, **Herunterladen**, **Neustart**, **Dokumenten-Logs** und **Löschen**, abhängig vom Dokument und Ihren Berechtigungen. **Validiere** öffnet das Dokument zur Überprüfung; **Dokumentenfluss** zeigt seinen Verarbeitungsverlauf; **Neustart** startet die Verarbeitung erneut; **Löschen** entfernt es. Lesen Sie [Dokument-Flow](document-flow.md) und [Dokumentenstatus](document-status.md), bevor Sie ein Dokument ändern, das gerade verarbeitet wird.
 
-### Tabellenspalten für die Organisation festlegen
+<figure><img src="../../../.gitbook/assets/dbdc581_dashboard_row_actions_de.png" alt="Aktionsmenü für ein einzelnes Dokument mit Validiere, Zuweisen an, Dokumentenfluss, Herunterladen, Neustart, Dokumenten-Logs und Löschen"><figcaption>Aktionen für ein einzelnes Dokument.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dashboard_tools_11.png" alt=""><figcaption></figcaption></figure>
+## Weitere Schaltflächen, die Ihre Organisation anzeigen kann
 
-Klicken Sie auf diese Schaltfläche, um ein Menü zu öffnen, in dem Sie die Sichtbarkeit der Dashboard-Spalten verwalten können. Wählen Sie Spaltennamen aus und verwenden Sie die Pfeile, um sie zur Dashboard-Ansicht hinzuzufügen oder daraus zu entfernen. Klicken Sie auf **Fertig**, um Ihre Änderungen zu speichern.
+- Die Umschlag-Schaltfläche startet einen E-Mail-Import mit der vorhandenen E-Mail-Importkonfiguration Ihrer Organisation. Fragen Sie einen Administrator, wenn Sie unsicher sind, ob Ihr Postfach konfiguriert ist; die Auswahl startet einen Import.
+- **Dokument scannen** erscheint nur, wenn das Scannen von Dokumenten aktiviert ist und ein Scanner verfügbar ist.
+- **Diese Tabelle exportieren** erscheint nur, wenn der Dashboard-Export aktiviert ist. Das Menü bietet CSV- und Excel-Dateien. Der Export verwendet die aktuell in der Tabelle angezeigten Dokumente.
 
-<figure><img src="../../../.gitbook/assets/dashborad_tools_22.png" alt=""><figcaption></figcaption></figure>
-
-Sie können die Spaltenreihenfolge festlegen, indem Sie auf die Punkte neben einem Spaltennamen klicken und ihn an die gewünschte Position ziehen.
-
-#### Felder aus einem Dokumenttyp als Spalten im Dashboard hinzufügen
-
-Sie haben außerdem die Möglichkeit, zusätzliche Spalten aus bestimmten Feldern bestimmter Dokumenttypen hinzuzufügen, um Ihre Dashboard-Ansicht anzupassen. Klicken Sie dazu einfach auf **Feld aus Dokumenttyp hinzufügen**.
-
-<figure><img src="../../../.gitbook/assets/dashborad_tools_21.png" alt=""><figcaption></figcaption></figure>
-
-Wählen Sie einen Dokumenttyp aus, um zu sehen, welche Felder für den ausgewählten Typ verfügbar sind. Für jeden Dokumenttyp gibt es unterschiedliche Felder, die Sie hinzufügen können. Über die Suchleiste oben können Sie nach einem bestimmten Feld suchen.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_19.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Wählen Sie die Felder aus, die Sie als Spalten anzeigen möchten, und klicken Sie dann auf **Zu sichtbaren Spalten hinzufügen**. Die ausgewählten Felder erscheinen als Spalten im Dashboard und zeigen ihre entsprechenden Werte an.
-
-## Dokument scannen
-
-Verwenden Sie diese Schaltfläche, um ein Dokument direkt zu scannen.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_4.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_17.png" alt=""><figcaption></figcaption></figure>
-
-Um diese Funktion zu nutzen, muss ein Scanner mit Ihrem System verbunden sein. Wenn ein Scanner verfügbar ist, können Sie ihn auf der rechten Seite auswählen, Ihrem Dokument einen Namen geben und auf **Scannen** klicken. Optional können Sie vor dem Start des Vorgangs die Scaneinstellungen auf der rechten Seite anpassen.
-
-<mark style="color:red;">**Hinweis**</mark>: Diese Funktion muss unter **Einstellungen -> Dokumentenverarbeitung -> Modul -> Dokumenttyp -> Dokumentscan** aktiviert werden.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_27.png" alt=""><figcaption></figcaption></figure>
-
-## Analytik
-
-Wenn Sie auf diese Schaltfläche klicken, wird ein neuer Bereich angezeigt, der die aktuelle Anzahl der Dokumente in jeder Kategorie zeigt.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_14.png" alt=""><figcaption></figcaption></figure>
-
-Klicken Sie auf eine beliebige Kategorie, um die Dokumente nach dieser bestimmten Kategorie zu filtern.
-
-## E-Mail-Import starten
-
-Wenn Sie auf diese Schaltfläche klicken, wird Ihr E-Mail-Posteingang gemäß der E-Mail-Importkonfiguration überprüft und alle neuen Dokumente werden importiert.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_6.png" alt=""><figcaption></figcaption></figure>
-
-## Diese Tabelle exportieren
-
-Verwenden Sie diese Schaltfläche, um alle derzeit im Dashboard angezeigten Dokumente zu exportieren, basierend auf der Anzahl der pro Seite angezeigten Dokumente.\
-Sie können die Tabelle als **.csv**- oder **.xlsx**-Datei exportieren.
-
-<figure><img src="../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Hinweis**</mark>: Diese Funktion muss unter **Einstellungen -> Globale Einstellungen -> Dashboard -> Allgemein -> Dashboard-Daten exportieren** aktiviert werden.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_26.png" alt=""><figcaption></figcaption></figure>
-
-## Hochladen
-
-Klicken Sie auf diese Schaltfläche, um eine oder mehrere Dateien manuell hochzuladen.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_7.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_16.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Sie können Dateien entweder per Drag-and-drop in das Pop-up-Fenster ziehen oder auf **Dokumente hochladen** klicken, um sie aus Ihrem Datei-Explorer auszuwählen.
-
-Wenn Sie den Dokumenttyp lieber manuell angeben möchten, anstatt **DocBits** ihn automatisch klassifizieren zu lassen, aktivieren Sie die Option **Klassifizieren als** und wählen Sie den passenden Dokumenttyp aus der Liste aus.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_5.png" alt=""><figcaption></figcaption></figure>
-
-Nachdem Sie Ihre Dateien ausgewählt haben, klicken Sie auf **Hochladen**, um den Upload-Vorgang zu starten.
-
-## Debugging-Modus
-
-Sie können den Debugging-Modus aktivieren, um eine zusätzliche Option zu erhalten.\
-Um den Debug-Modus aufzurufen, fügen Sie einfach `?debug=true` zur URL hinzu. Nun sollten Sie eine zusätzliche Option haben.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_24.png" alt=""><figcaption></figcaption></figure>
-
-### Ladezeiten anzeigen
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_20.png" alt=""><figcaption></figcaption></figure>
-
-Wenn Sie auf diese Schaltfläche klicken, öffnet sich ein Pop-up-Fenster, das die Ladezeiten für jeden Dienst anzeigt, wobei die Gesamtladezeit unten dargestellt wird.
-
-<figure><img src="../../../.gitbook/assets/dashboard_tools_23.png" alt="" width="375"><figcaption></figcaption></figure>
+Die verfügbaren Schaltflächen können je nach Bildschirmbreite abweichen. Öffnen Sie auf einem schmalen Bildschirm **Mehr**, um einige der Aktionen zu finden, die auf einem Desktop-Bildschirm einzeln erscheinen.

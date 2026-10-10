@@ -59,7 +59,7 @@ Use the icon buttons in the **Actions** column of each row:
 - **Enable / Disable** — switch an approved card on or off.
 - **Delete** — remove the card. This is only possible once the card is rejected or disabled; the tooltip tells you to disable it first.
 
-To remove several cards at once, tick their checkboxes — a bar appears above the table with a **Delete (n)** action for all selected rows.
+To remove rejected or disabled cards, use the **Delete** action on each card’s row.
 
 <figure><img src="../../.gitbook/assets/card-sdk-submissions-en-20261010.png" alt="Card SDK page, Submissions tab, with a table of submitted cards and per-row Approve, Reject, Enable, Disable and Delete actions"><figcaption><p>The <strong>Submissions</strong> tab with approved, validated, and rejected cards.</p></figcaption></figure>
 

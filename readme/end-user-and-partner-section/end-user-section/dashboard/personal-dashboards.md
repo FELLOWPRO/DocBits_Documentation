@@ -1,103 +1,39 @@
 # Paneles personales
 
-## Descripción general
+Un panel personal guarda una vista de la lista de documentos para que puedas volver a los filtros y columnas que usas con frecuencia. Puedes mantenerlo privado, hacerlo visible para todos los miembros de tu organización o compartirlo con grupos y usuarios seleccionados. Para saber cómo filtrar la lista de documentos antes de guardar una vista, consulta [Búsqueda rápida](quick-search.md).
 
-Puedes crear y gestionar paneles personalizados adaptados a tus necesidades específicas. Estos paneles te permiten:
+## Crear un panel
 
-* Definir un orden de columnas personalizado
-* Seleccionar únicamente las columnas relevantes para tu caso de uso
-* Aplicar y guardar filtros personalizados
-* Compartir paneles con miembros del equipo
+1. En el **Panel**, define los filtros y las columnas que quieres guardar.
+2. Selecciona la insignia del panel debajo de la barra de búsqueda. Muestra la vista actual y el número de documentos, por ejemplo **Todos los documentos (10)**.
+3. Selecciona **Crear un nuevo panel de control**.
 
-## Crear un nuevo panel de control
+<figure><img src="../../../.gitbook/assets/dbdc-605-dashboard-menu-es.png" alt="Menú de la insignia del panel con Crear un nuevo panel de control, Panel de control predeterminado y Guardar cambios en el panel"><figcaption><p>Abre la insignia del panel actual para crear una vista guardada.</p></figcaption></figure>
 
-Para crear un nuevo panel:
+4. Introduce un nombre y elige quién puede ver el panel:
+   * **Visible sólo para mí** mantiene la vista privada.
+   * **Visible para todos los usuarios** la pone a disposición de tu organización.
+   * **Compartir con grupos y usuarios** te permite seleccionar grupos o personas específicas.
+5. Selecciona **Guardar**.
 
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
+<figure><img src="../../../.gitbook/assets/dbdc-605-dashboard-create-es.png" alt="Diálogo Crear un nuevo panel de control con nombre, opciones de visibilidad y botón Guardar"><figcaption><p>Ponle nombre al panel y elige su visibilidad antes de guardarlo.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Haz clic en **Crear un nuevo panel de control**.
+<figure><img src="../../../.gitbook/assets/dbdc-605-dashboard-share-options-es.png" alt="Opción de compartir el panel con los campos Grupos y Seleccionar usuario"><figcaption><p>Selecciona grupos o usuarios cuando quieras compartir un panel con personas específicas.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_2.png)
-3.  Introduce un nombre para tu panel.
+## Abrir o cambiar un panel
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_3.png)
-4. Establece el nivel de visibilidad deseado. Puedes elegir entre:
-   * **Visible sólo para mí**: Solo tú (el usuario que ha iniciado sesión actualmente) puedes ver este panel.
-   * **Visible para todos los usuarios**: Todos los usuarios de tu organización tendrán acceso de visualización.
-   *   **Compartir con grupos y usuarios**: Selecciona usuarios o grupos de usuarios específicos que tendrán acceso de visualización al panel.
+Selecciona la insignia del panel y después elige un panel guardado de la lista. Selecciona **Panel de control predeterminado** para volver a la vista predeterminada. La insignia muestra el nombre del panel activo.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_4.png)
-5.  Haz clic en **Guardar** para crear y guardar tu panel.
+Para cambiar un panel del que eres propietario, pasa el cursor sobre su nombre en la lista y selecciona el icono del **lápiz**. En **Editar panel de control**, cambia su nombre o visibilidad y selecciona **Guardar**. Un panel compartido contigo por otra persona no se puede editar desde tu cuenta.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_5.png)
+<figure><img src="../../../.gitbook/assets/dbdc-605-dashboard-edit-controls-es.png" alt="Fila de panel guardado con los iconos de editar (lápiz) y eliminar (papelera) visibles al pasar el cursor"><figcaption><p>Pasa el cursor sobre un panel del que eres propietario para ver sus controles de edición y eliminación.</p></figcaption></figure>
 
-## Cambiar entre paneles
+<figure><img src="../../../.gitbook/assets/dbdc-605-dashboard-edit-dialog-es.png" alt="Diálogo Editar panel de control con el nombre guardado y las opciones de visibilidad"><figcaption><p>Usa el diálogo Editar panel de control para cambiar el nombre del panel o quién puede verlo.</p></figcaption></figure>
 
-Para cambiar entre paneles:
+## Guardar cambios en la vista actual
 
-1. Haz clic en el botón de filtro debajo de la barra de búsqueda.
-2.  En el menú desplegable, selecciona un panel de la lista de paneles personales o compartidos.
+Después de cambiar filtros o columnas en un panel del que eres propietario, selecciona **Guardar cambios en el panel** en el menú del panel. La acción no está disponible si no hay ningún panel seleccionado, si la vista no ha cambiado o si el panel seleccionado pertenece a otra persona.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_6.png)
+## Eliminar un panel
 
-<mark style="color:red;">**Nota**</mark>: Puedes identificar si un panel es personal o compartido comprobando el icono delante del nombre del panel.
-
-## Edición/Borrado de un panel personal
-
-Para editar tu panel personal o compartido:
-
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Haz clic en el nombre del panel personal que deseas editar.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3. Realiza los cambios deseados, como:
-   * Cambiar el orden de las columnas
-   * Ajustar la visibilidad de las columnas
-   * Editar filtros
-
-### **Guardar cambios en el panel**
-
-Una vez que hayas realizado tus cambios, haz clic en el botón de filtro debajo de la barra de búsqueda y luego selecciona **Guardar cambios en el panel**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_11.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo los paneles personales pueden editarse. Los paneles compartidos solo pueden ser editados por su creador original.
-
-### **Cambiar el nombre de un panel**
-
-Para cambiar el nombre de un panel personal o compartido:
-
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Selecciona el panel cuyo nombre deseas cambiar.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3.  Selecciona **Cambiar el nombre del panel actual**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_8.png)
-4.  Introduce el nuevo nombre y luego haz clic en **Guardar**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_9.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo los paneles personales pueden cambiarse de nombre. Los paneles compartidos solo pueden ser renombrados por su creador original.
-
-### Borrar un panel
-
-Para borrar un panel personal:
-
-1.  Haz clic en el botón de filtro debajo de la barra de búsqueda.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2. Pasa el cursor sobre el panel que deseas borrar.
-3.  Haz clic en el icono de papelera junto a él.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_12.png)
-4.  Confirma el borrado haciendo clic en **Borrar**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_13.png)
-
-<mark style="color:red;">**Nota**</mark>: Solo los paneles personales pueden borrarse. Los paneles compartidos solo pueden ser borrados por su creador original.
+Abre la lista de paneles, pasa el cursor sobre un panel del que eres propietario y selecciona el icono de la **papelera**. Confirma con **Borrar**. El control de eliminación no está disponible para un panel que otra persona ha compartido contigo.

@@ -167,6 +167,7 @@
           * [Guida al File di Trasformazione EDI](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-transformation-file-guide.md)
           * [Guida al File Anteprima EDI](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-preview-file-guide.md)
           * [Guida al File dei Percorsi di Estrazione EDI](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-extraction-paths-file-guide.md)
+        * [Faktura](administration-and-setup/settings/global-settings/document-types/edi/faktura.md)
         * [Visão geral do ZUGFeRD](administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)
           * [Configuração do ZUGFeRD](administration-and-setup/settings/global-settings/document-types/edi/zugferd/configuration.md)
           * [Mapeamento ZUGFeRD 1.0](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-1-0.md)

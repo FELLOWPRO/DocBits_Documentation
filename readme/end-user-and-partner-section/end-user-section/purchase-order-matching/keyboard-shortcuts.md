@@ -16,6 +16,6 @@ L'écran de correspondance de commande d'achat a des raccourcis dédiés pour ra
 * **Control + P** – Sélectionne la première ligne des lignes de commande d'achat, facilitant le travail avec les données de commande.
 * **Control + L** – Sélectionne la première ligne des lignes de facture, permettant un accès rapide aux détails de la facture.
 * **Control + Clic Gauche** – Sélectionne ou désélectionne des lignes de commande d'achat, permettant une sélection flexible de plusieurs entrées.
-* **Control + C / Alt + C** – Sélectionne des lignes de commande d'achat pour commencer à les mapper aux lignes de facture, préparant le processus de mappage.
-* **Control + V / Alt + V** – Mappe les lignes de commande d'achat sélectionnées aux lignes de facture, liant les données efficacement.
+* **Control + C** – Sélectionne des lignes de commande d'achat pour commencer à les mapper aux lignes de facture, préparant le processus de mappage.
+* **Control + V** – Mappe les lignes de commande d'achat sélectionnées aux lignes de facture, liant les données efficacement.
 * **Option + Shift + Clic Gauche** – Sélectionne toutes les lignes de commande d'achat entre la première ligne sélectionnée et la dernière ligne sélectionnée, simplifiant le processus de sélection en masse.

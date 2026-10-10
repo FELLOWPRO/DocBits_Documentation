@@ -121,6 +121,7 @@
     * [Filtres Personnalisés](administration-and-setup/settings/global-settings/custom-filters.md)
     * [Expiration de Document](administration-and-setup/settings/global-settings/document-expiry.md)
     * [Types de Document](administration-and-setup/settings/global-settings/document-types/README.md)
+      * [Ajouter/Modifier des Types de Documents](administration-and-setup/settings/global-settings/document-types/adding-editing-document-types.md)
       * [Gestionnaire de Mise en Page](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Navigation dans le Gestionnaire de Mise en Page](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Sous-Types de Document](administration-and-setup/settings/global-settings/document-types/document-sub-types.md)

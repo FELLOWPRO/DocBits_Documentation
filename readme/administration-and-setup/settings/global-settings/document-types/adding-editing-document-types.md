@@ -1,113 +1,36 @@
-# Hinzufügen/Bearbeiten von Dokumenttypen
+# Hinzufügen und Bearbeiten von Dokumenttypen
 
-{% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Document Types Explained: Create, Configure & Assign Processing Settings
-{% endembed %}
+Administratoren können einen benutzerdefinierten Dokumenttyp anlegen oder die Einstellungen eines bestehenden ändern. Öffnen Sie **Einstellungen → Dokumentenverarbeitung → Dokumenttypen**. Die Seite trennt die mitgelieferten **Standard-Dokumenttypen** von den **Benutzerdefinierten Dokumenttypen**.
 
-## Das Hinzufügen oder Bearbeiten von Dokumenttypen in DocBits umfasst mehrere Schritte. Diese Schritte umfassen das Definieren von Layouts, Feldern und Extraktionsregeln.
+<figure><img src="../../../../.gitbook/assets/dbdc611-doctypes-overview-de.png" alt="Seite Dokumenttypen mit der Rechnung-Karte und den Schaltflächen Aktivieren, Extraction, Einstellungen sowie Links zu Layouts, Felder, Tabellen, Skripte und Modell Training"><figcaption><p>Öffnen Sie über eine Dokumenttyp-Karte die Einstellung, die Sie ändern möchten.</p></figcaption></figure>
 
-### Hier ist eine detaillierte Anleitung:
+## Einen benutzerdefinierten Dokumenttyp erstellen
 
-#### Zugriff auf die Dokumenttypenverwaltung
+1. Scrollen Sie zu **Benutzerdefinierte Dokumenttypen** und wählen Sie **+ Neu**. Die Standardtypen von DocBits können nicht gelöscht werden; legen Sie für eine neue Kategorie einen benutzerdefinierten Typ an.
+2. Unter **Erstellen** vergeben Sie einen klaren **Namen** und eine **Beschreibung**. Wählen Sie **Tabelle verfügbar**, wenn dieser Dokumenttyp Positionstabellen benötigt. Wählen Sie **Automatisch** für das Modelltraining mit Beispieldokumenten oder **Regex** für die erkennung über Muster.
+3. Wählen Sie **Weiter**, um den Dokumenttyp zu erstellen und mit der Einrichtung fortzufahren. **Weiter speichert den neuen Typ an dieser Stelle**; es ist keine reine Vorschau. Vermeiden Sie einen Testnamen in einer Produktionsorganisation.
+4. Für **Automatisch** laden Sie mindestens **10 Beispieldokumente** hoch, bevor Sie fortfahren. Für **Regex** legen Sie mindestens **zwei Muster** an. Diese Anforderungen stammen aus dem aktuellen Erstellungsablauf. Einzelheiten zum Training finden Sie unter [Modelltraining](model-training/README.md).
+5. Unter **Felder und Gruppen** legen Sie die benötigten Gruppen und mindestens ein Feld an. Wenn **Tabelle verfügbar** ausgewählt wurde, fahren Sie mit **Tabellen und Spalten** fort und konfigurieren Sie die Tabelle. Wählen Sie **Fertigstellen**, sobald die erforderliche Einrichtung abgeschlossen ist.
 
-* **Anmelden:** Melden Sie sich mit Ihren Administratorrechten bei DocBits an.
-* **Navigieren:** Gehen Sie zu Einstellungen.
-* **Dokumenttypen:** Suchen Sie den Bereich "Dokumenttypen".
+<figure><img src="../../../../.gitbook/assets/dbdc611-doctypes-custom-new-de.png" alt="Bereich Benutzerdefinierte Dokumenttypen mit der Schaltfläche Neu"><figcaption><p>Die Schaltfläche Neu startet den Assistenten für den benutzerdefinierten Dokumenttyp.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_types_section.png" alt="Docbits Document Types Section"><figcaption><p>Einstellungen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc611-doctypes-create-form-de.png" alt="Formular Neue Dokumentart erstellen mit Name, Tabelle verfügbar, Beschreibung, Automatisch, Regex und Weiter"><figcaption><p>Wählen Sie Typ und Erkennungsmethode, bevor Sie Weiter auswählen.</p></figcaption></figure>
 
-### Hinzufügen eines neuen Dokumenttyps
+## Einen bestehenden Dokumenttyp bearbeiten
 
-**Erstellen eines neuen Dokumenttyps:**
+Suchen Sie die Karte des Typs unter **Standard-Dokumenttypen** oder **Benutzerdefinierte Dokumenttypen**. Die Schaltflächen auf jeder Karte haben unterschiedliche Aufgaben:
 
-* Klicken Sie auf die Schaltfläche "+ Neu".
+| Schaltfläche | Funktion |
+| --- | --- |
+| **Aktivieren** | Schaltet die Verarbeitung dieses Dokumenttyps ein oder aus. Prüfen Sie den aktuellen Zustand, bevor Sie ihn ändern. |
+| **Extraction** | Wechselt zwischen den Extraktionsmodi **Flex** und **Fix**; er aktiviert oder deaktiviert den Dokumenttyp nicht. Fahren Sie mit der Maus über den Schalter, um den aktuellen Modus zu sehen. |
+| **Einstellungen** (Zahnrad) | Öffnet **Weitere Einstellungen** für diesen Dokumenttyp. |
+| **Layouts** | Öffnet das Validierungslayout. Siehe [Navigieren im Layout-Manager](layout-manager/navigating-the-layout-manager.md). |
+| **Felder** | Öffnet die Feldkonfiguration. Siehe [Hinzufügen und Bearbeiten von Feldern](fields/adding-and-editing-fields.md). |
+| **Tabellen** | Öffnet die Tabellenspalten für diesen Dokumenttyp. |
+| **Skripte** | Öffnet die Verarbeitungsskripte, wenn diese Funktion verfügbar ist. |
+| **Modell Training** | Öffnet Trainingsdaten und Modelloptionen. |
+| **E-Doc** | Öffnet die E-Dokument-Einstellungen, sofern verfügbar. Siehe [E-Dokumente](edi/README.md). |
+| **Untertypen von Dokumenten** | Öffnet die Untertyp-Einstellungen; siehe [Dokumentuntertypen](document-sub-types.md). |
 
-<figure><img src="../../../../.gitbook/assets/docbits_new_document_type_basic_info.png" alt="Docbits New Document Type Basic Info"><figcaption></figcaption></figure>
-
-**Grundlegende Informationen:**
-
-* Geben Sie einen Namen für den neuen Dokumenttyp ein (z. B. "Rechnung", "Vertrag", "Bericht").
-* Fügen Sie eine Beschreibung hinzu, die den Zweck und die Verwendung des Dokumenttyps erklärt.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_publish_button.png" alt="Docbits Script Publish Button"><figcaption></figcaption></figure>
-
-**Betrag- und Datumsformat**
-
-* Geben Sie das Format für Betrag und Datum ein.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_management_nav.png" alt="Docbits Script Management Nav"><figcaption></figcaption></figure>
-
-**Beispieldokumente importieren**
-
-* Laden Sie Beispieldokumente per Drag & Drop hoch.
-* Für das Training müssen mindestens 10 Dokumente hochgeladen werden.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_list_enable_disable.png" alt="Docbits Script List Enable Disable"><figcaption><p>Hochladen & Trainieren</p></figcaption></figure>
-
-**Gruppen hinzufügen**
-
-* Klicken Sie auf die Schaltfläche "Hinzufügen" und geben Sie den Gruppennamen ein.
-* Sie können auch einen vorhandenen Dokumenttyp klonen.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_save_changes_2.png" alt="Docbits Script Save Changes 2" width="375"><figcaption><p>Felder & Gruppen</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (163).png" alt="" width="279"><figcaption><p>Neue Gruppe erstellen</p></figcaption></figure>
-
-**Felder hinzufügen:**
-
-* Fügen Sie neue Felder hinzu, indem Sie auf "Hinzufügen" klicken.
-* Geben Sie den Namen des Feldes (z. B. "Rechnungsnummer", "Datum", "Betrag") und den Datentyp (z. B. Text, Zahl, Datum) ein.
-
-<figure><img src="../../../../.gitbook/assets/docbits_script_test_environment.png" alt="Docbits Script Test Environment" width="375"><figcaption><p>Felder & Gruppen</p></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="278"><figcaption><p>Neues Feld erstellen</p></figcaption></figure>
-
-**Fertigstellen**
-
-* Sobald alle Details eingegeben sind, klicken Sie auf "Fertigstellen" und der neue Dokumenttyp wird erstellt.
-
-<figure><img src="../../../../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
-
-### Bearbeiten eines vorhandenen Dokumenttyps
-
-**Dokumenttyp auswählen:**
-
-* Wählen Sie den Dokumenttyp, den Sie bearbeiten möchten, aus der Liste der vorhandenen Dokumenttypen aus.
-* Unter dem Dokumenttyp finden Sie verschiedene Bearbeitungsoptionen, z. B. Bearbeiten des Layouts, der Felder, der Tabellenspalten usw.
-
-<figure><img src="../../../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
-
-**Mehr Einstellungen:**
-
-* Klicken Sie auf die Schaltfläche Bearbeiten neben dem Dokumenttyp.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_elements_list.png" alt="Docbits Field Elements List"><figcaption><p>Mehr Einstellungen</p></figcaption></figure>
-
-* Hier können Sie weitere Einstellungen für den Dokumenttyp vornehmen, z. B. Designvorlage, ob ein Dokument vor dem Export genehmigt werden muss und viele andere Details.
-
-<figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
-
-### Extraktionsregeln definieren
-
-**Regeln definieren:**
-
-* Gehen Sie zum Bereich Extraktionsregeln.
-* Erstellen Sie Regeln, die festlegen, wie Daten aus Dokumenten extrahiert werden sollen. Dies kann die Verwendung von regulären Ausdrücken oder anderen Mustererkennungstechniken umfassen.
-
-**Regeln testen:**
-
-* Testen Sie die Extraktionsregeln mit Beispieldokumenten, um sicherzustellen, dass die Daten korrekt erkannt und extrahiert werden.
-
-**Feinabstimmung:**
-
-* Passen Sie die Extraktionsregeln basierend auf den Testergebnissen an, um Genauigkeit und Effizienz zu verbessern.
-
-### Training und Dokumentation
-
-**Benutzer informieren:**
-
-* Informieren Sie die Benutzer über den neuen oder geänderten Dokumenttyp und bieten Sie bei Bedarf Schulungen an.
-
-**Dokumentation:**
-
-Aktualisieren Sie die Systemdokumentation, um die neuen oder geänderten Dokumenttypen und deren Verwendung zu beschreiben. Durch sorgfältiges Einrichten und Verwalten von Dokumenttypen in DocBits können Sie sicherstellen, dass Dokumente korrekt klassifiziert und effizient verarbeitet werden. Dies verbessert die Gesamtleistung des Dokumentenmanagementsystems und trägt zur Genauigkeit und Produktivität Ihrer Organisation bei.
+Die auf einer Karte angezeigten Links hängen von den aktivierten Funktionen der Organisation und vom Dokumenttyp ab. Öffnen Sie den betreffenden Bereich, nehmen Sie dort die gewünschte Änderung vor und prüfen Sie ein Beispieldokument in der Validierungsansicht, bevor Sie den aktualisierten Typ im regulären Betrieb verwenden.

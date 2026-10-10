@@ -30,7 +30,7 @@ The right card, **Live Testing**, lets you actively exercise the connection:
 
 * **WebSocket Endpoint** — shows the WebSocket URL the app is using. **Test Endpoint Accessibility** sends a regular web request to the server behind that URL and shows the answer in **Last Response**, so you can tell whether the server itself is reachable.
 * **Dashboard Data Request** — sends a dashboard data request over the WebSocket connection. You can pass filter parameters as JSON (for example `{}` for no filter). The response in **Last Response** includes the number of documents returned — if this stays at zero while documents exist, real-time data delivery is broken.
-* **Channel Subscription** — subscribes to or unsubscribes from a live channel (default: `dashboard`). The dashboard listens on this channel; if subscribing fails, live updates cannot reach the dashboard.
+* **Channel Subscription** — subscribes to or unsubscribes from a live channel (default: `dashboard`) with the **Subscribe** and **Unsubscribe** buttons. The dashboard listens on this channel; if subscribing fails, live updates cannot reach the dashboard.
 * **Last Response** — shows the raw result of the most recent test as JSON, including timestamps and error messages. Copy this into your support ticket when asked.
 
 ## Diagnostics buttons

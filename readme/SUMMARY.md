@@ -510,7 +510,7 @@
 * [Exportación a INFOR](infor-integration-and-configuration/exporting-to-infor/README.md)
   * [Creación de un Archivo de Mapeo BOD](infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
   * [Creando un Archivo de Mapeo IDM](infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-  * [Creación de un Endpoint de API ION](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
+  * [Creación de un endpoint de la API de ION para exportaciones de DocBits](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
   * [Creación de un Archivo de API ION](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-file.md)
   * [Exportación a M3 Mapeo (API)](infor-integration-and-configuration/exporting-to-infor/export-to-m3-mapping-api.md)
   * [Exportación a IDM](infor-integration-and-configuration/exporting-to-infor/exporting-to-idm.md)

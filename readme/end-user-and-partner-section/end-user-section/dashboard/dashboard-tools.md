@@ -1,133 +1,58 @@
 # Narzędzia panelu
 
-Po prawej stronie paska wyszukiwania znajdziesz kilka narzędzi panelu.
+Panel to Twoja lista dokumentów. Otwórz dokument, wybierając jego nazwę. Elementy nad tabelą pomagają znajdować dokumenty, zmieniać widok i przesyłać nowe pliki. Niektóre elementy zależą od ustawień organizacji i Twoich uprawnień, dlatego Twój panel może pokazywać mniej przycisków niż w przykładzie poniżej.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_1.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-main-pl-20261010.png" alt="Aktualny panel DocBits z zakresem dat, paskiem wyszukiwania, paskiem narzędzi, zapisanym panelem, tabelą dokumentów i przyciskiem Wgrywać"><figcaption><p>Panel w organizacji testowej w języku polskim.</p></figcaption></figure>
 
-## Odśwież tabelę
+## Znajdowanie dokumentów
 
-Kliknij ten przycisk, aby odświeżyć Panel i wczytać najnowsze dane i statusy.
+1. Wybierz po lewej zakres dat: **30D**, **90D**, **180D**, **365D**, **Wszystko** lub **Zwyczaj**. Ogranicza on dokumenty wyświetlane, gdy kontrolki daty są dostępne.
+2. Wpisz nazwę lub identyfikator dokumentu w pasku wyszukiwania. Wyszukiwanie obsługuje też zapytania wskazujące pole. Wybierz **?** obok paska wyszukiwania, aby zobaczyć przykłady i dostępne operatory.
+3. Wybierz ikonę suwaków w pasku wyszukiwania, aby zawęzić listę według **Status**, **Przypisany Do** lub **Wymagane Ponowne Uruchomienie**, a następnie wybierz **Stosować**. Użyj **Wyczyść filtry**, aby usunąć ten wybór.
+4. Wybierz nagłówek kolumny, aby posortować tabelę. Użyj kontrolek stron na dole, aby przechodzić między stronami wyników lub zmienić **Dokumentów na stronę:**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_2.png)
+Ikona na początku pola wyszukiwania otwiera listę dostępnych pól i pokazuje, jakie możliwości wyszukiwania ma Twoja organizacja. Ikona **code** przełącza widok zwykłego wyszukiwania i widok surowej kwerendy; używaj widoku zwykłego, chyba że znasz już składnię kwerend. Ikona lupy otwiera **Wyszukaj w treści dokumentu**: **Automatyczny** najpierw przeszukuje widoczne pola, **Zawsze uwzględniaj treść dokumentu** obejmuje też tekst w plikach, a **Tylko widoczne kolumny** ogranicza trafienia do pól tabeli. Wyszukiwanie w plikach wymaga włączenia odpowiedniej możliwości wyszukiwania dla Twojej organizacji.
 
-## Ustawienia zaawansowane
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-filters-pl-20261010.png" alt="Panel filtrów wyszukiwania z Status, Przypisany Do, Wymagane Ponowne Uruchomienie, Wyczyść filtry i Stosować"><figcaption><p>Filtry w pasku wyszukiwania.</p></figcaption></figure>
 
-Kliknij ikonę koła zębatego, aby otworzyć menu Ustawienia zaawansowane.
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-content-mode-pl-20261010.png" alt="Menu Wyszukaj w treści dokumentu z Automatyczny, Zawsze uwzględniaj treść dokumentu i Tylko widoczne kolumny"><figcaption><p>Wybierz, z czym może zgodzić się proste wyszukiwanie.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_8.png)
+Aby wyszukiwać krok po kroku, zobacz [Szybkie wyszukiwanie](quick-search.md) i [Filtrowanie dokumentów](filtering-documents.md). Panel **?** wyjaśnia zaawansowaną składnię wyszukiwania; nie potrzebujesz jej do prostego wyszukiwania po nazwie.
 
-W menu Ustawienia zaawansowane dostępne będą następujące opcje:
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-search-help-pl-20261010.png" alt="Okno pomocy Wyszukiwanie w panelu — pola i składnia z przykładami wyszukiwania i operatorami"><figcaption><p>Pomoc wyszukiwania w panelu.</p></figcaption></figure>
 
-### Więcej ustawień
+## Odświeżanie i dostosowywanie widoku
 
-Użyj tego przycisku, aby przejść do Ustawienia administratora dla Panelu. Pełną dokumentację tych ustawień znajdziesz [tutaj](../../../administration-and-setup/settings/global-settings/dashboard/).
+- Wybierz kołową strzałkę nad tabelą, aby wczytać listę dokumentów ponownie. Nie uruchamia ona ponownie przetwarzania dokumentów.
+- Wybierz koło zębate, aby otworzyć menu ustawień panelu. Znajdziesz w nim skróty klawiaturowe, dziennik importu e-mail oraz zarządzanie widocznymi kolumnami tabeli. Administratorzy mogą dodatkowo widzieć link do ustawień panelu. Zobacz [Skróty Klawiaturowe](keyboard-shortcuts.md) i [Zmiana Kolumn Dokumentu](change-document-columns.md), aby przejść do kolejnych kroków.
+- Wybierz wykres słupkowy, aby pokazać **Analityka** nad tabelą. Wybierz kartę kategorii, na przykład **Oczekiwanie na dane wejściowe użytkownika**, aby przefiltrować dokumenty. Wybierz wykres ponownie, aby ukryć karty.
+- Wybierz plakietkę zapisanego panelu pod paskiem wyszukiwania, aby przełączyć lub zarządzać własnym panelem. Zobacz [Osobiste Panele](personal-dashboards.md).
+- Wybierz **+** obok karty **Wszystko**, aby dodać kartę dla typu dokumentu. W organizacji testowej dostępna jest **Faktura**. Wybierz kartę, aby pokazać dokumenty tego typu.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_3.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-advanced-pl-20261010.png" alt="Menu ustawień panelu otwarte z ikony koła zębatego"><figcaption><p>Otwórz menu koła zębatego, aby zobaczyć opcje panelu.</p></figcaption></figure>
 
-### Skróty klawiaturowe
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-analytics-pl-20261010.png" alt="Karty Analityka panelu dla Wszystkie dokumenty, W toku, Oczekiwanie na dane wejściowe użytkownika, Oczekujące na zatwierdzenie, Eksportowano i Błąd"><figcaption><p>Karty Analityka nad listą dokumentów.</p></figcaption></figure>
 
-Użyj tego przycisku, aby wyświetlić wszystkie skróty klawiaturowe dla Panelu. Szczegółowe objaśnienia każdego skrótu znajdziesz [tutaj](keyboard-shortcuts.md).
+## Wgrywanie dokumentów
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_9.png)
+Wybierz **Wgrywać**. Przeciągnij pliki do **Program do przesyłania dokumentów** lub wybierz **Kliknij, aby przesłać**, aby wybrać je z komputera. Jeśli znasz typ dokumentu, włącz **Classify as** i wybierz typ; w przeciwnym razie zostaw tę opcję wyłączoną, aby dokumenty sklasyfikowano automatycznie. Wybierz **Wgrywać**, aby przesłać pliki. Co dzieje się potem, opisano w [Przegląd Przesłanych Dokumentów](overview-of-uploaded-documents.md).
 
-### Importuj dziennik
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-upload-pl-20261010.png" alt="Okno Program do przesyłania dokumentów z polem przeciągania i upuszczania, Kliknij, aby przesłać, Classify as, Anulować i Wgrywać"><figcaption><p>Aktualne okno przesyłania dokumentów.</p></figcaption></figure>
 
-Użyj tego przycisku, aby otworzyć tabelę wyświetlającą wszystkie ostatnio zaimportowane dokumenty przez e-mail wraz z odpowiednimi informacjami dla każdego z nich.
+## Praca na wielu dokumentach
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_10.png)
+Zaznacz pola wyboru obok dokumentów, które chcesz obsłużyć, a następnie otwórz menu trzech kropek w nagłówku tabeli. W zależności od dokumentów i Twoich uprawnień menu oferuje **Łączyć**, **Przypisz do**, **Uruchom ponownie**, **Uruchom ponownie eksport** i **Usuwać**. Sprawdź zaznaczone wiersze przed wybraniem akcji; **Usuwać** usuwa dokumenty. Aby łączyć pliki, postępuj zgodnie z [Scalanie Dokumentów](document-merging.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_15.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-bulk-pl-20261010.png" alt="Menu akcji masowych z Łączyć, Przypisz do, Uruchom ponownie, Uruchom ponownie eksport i Usuwać"><figcaption><p>Akcje masowe obok pól wyboru tabeli.</p></figcaption></figure>
 
-Możesz filtrować dzienniki według tematu lub nadawcy, sortować kolumny rosnąco lub malejąco, klikając nagłówki kolumn, oraz zmieniać ich kolejność metodą drag-and-drop.
+Dla jednego dokumentu otwórz menu trzech kropek na końcu jego wiersza. Oferuje ono akcje takie jak **Uprawomocnić**, **Przypisz do**, **Przepływ dokumentów**, **Pobierać**, **Uruchom ponownie**, **Dzienniki dokumentów** i **Usuwać** — w zależności od dokumentu i Twoich uprawnień. **Uprawomocnić** otwiera dokument do sprawdzenia; **Przepływ dokumentów** pokazuje historię przetwarzania; **Uruchom ponownie** zaczyna przetwarzanie od nowa; **Usuwać** usuwa dokument. Zobacz [Przepływ Dokumentów](document-flow.md) i [Status Dokumentu](document-status.md), zanim zmienisz dokument właśnie przetwarzany.
 
-### Ustaw kolumny tabeli dla organizacji
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-row-actions-pl-20261010.png" alt="Menu akcji jednego dokumentu z Uprawomocnić, Przypisz do, Przepływ dokumentów, Pobierać, Uruchom ponownie, Dzienniki dokumentów i Usuwać"><figcaption><p>Akcje dla jednego dokumentu.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_11.png)
+## Inne przyciski, które może pokazywać Twoja organizacja
 
-Kliknij ten przycisk, aby otworzyć menu, w którym możesz zarządzać widocznością kolumn panelu. Wybierz nazwy kolumn i użyj strzałek, aby dodać je do widoku panelu lub usunąć z niego. Kliknij **Zrobione**, aby zapisać zmiany.
+- Przycisk z kopertą uruchamia import e-mail według istniejącej konfiguracji importu e-mail organizacji. Zapytaj administratora, jeśli nie masz pewności, czy Twoja skrzynka jest skonfigurowana; wybranie tego przycisku rozpoczyna import.
+- **Skanuj dokument** pojawia się tylko, gdy skanowanie dokumentów jest włączone i dostępny jest skaner.
+- **Eksportuj tę tabelę** pojawia się tylko, gdy eksport panelu jest włączony. Menu oferuje pliki CSV i Excel. Eksport obejmuje dokumenty aktualnie wyświetlane w tabeli.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashborad_tools_22.png)
-
-Możesz ustawić kolejność kolumn, klikając kropki obok nazwy kolumny i przeciągając ją w żądane miejsce.
-
-#### Dodaj pola z typu dokumentu jako kolumny w panelu
-
-Masz również możliwość dodania dodatkowych kolumn z określonych pól wybranych typów dokumentów, aby dostosować widok panelu. Aby to zrobić, po prostu kliknij **Dodaj pole z typu dokumentu**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashborad_tools_21.png)
-
-Wybierz typ dokumentu, aby zobaczyć, które pola są dostępne dla wybranego typu. Dla każdego typu dokumentu dostępne są różne pola, które możesz dodać. Możesz wyszukać konkretne pole, używając paska wyszukiwania u góry.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_19.png)
-
-Wybierz pola, które chcesz wyświetlać jako kolumny, a następnie kliknij **Dodaj do widocznych kolumn**. Wybrane pola pojawią się jako kolumny na panelu, pokazując odpowiadające im wartości.
-
-## Skanuj dokument
-
-Użyj tego przycisku, aby bezpośrednio zeskanować dokument.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_4.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_17.png)
-
-Aby skorzystać z tej funkcji, musisz mieć podłączony do systemu skaner. Jeśli skaner jest dostępny, możesz wybrać go po prawej stronie, nazwać swój dokument i kliknąć **Skanuj**. Opcjonalnie możesz dostosować ustawienia skanowania po prawej stronie przed rozpoczęciem procesu.
-
-<mark style="color:red;">**Uwaga**</mark>: Tę funkcję należy aktywować w **Ustawienia -> Przetwarzanie dokumentów -> Moduł -> Typ dokumentu -> Skanowanie dokumentów**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_27.png)
-
-## Analityka
-
-Kliknięcie tego przycisku spowoduje wyświetlenie nowego obszaru z bieżącą liczbą dokumentów w każdej kategorii.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_14.png)
-
-Kliknij dowolną kategorię, aby przefiltrować dokumenty według tej kategorii.
-
-## Rozpocznij importowanie wiadomości e-mail
-
-Kliknięcie tego przycisku spowoduje sprawdzenie skrzynki odbiorczej e-mail zgodnie z konfiguracją importu e-mail i zaimportowanie nowych dokumentów.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_6.png)
-
-## Eksportuj tę tabelę
-
-Użyj tego przycisku, aby wyeksportować wszystkie dokumenty aktualnie wyświetlane na panelu zgodnie z liczbą dokumentów pokazywanych na stronę.\
-Możesz wyeksportować tabelę jako plik **.csv** lub **.xlsx**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
-
-<mark style="color:red;">**Uwaga**</mark>: Tę funkcję należy aktywować w **Ustawienia -> Ustawienia globalne -> Panel -> Ogólny -> Eksportuj dane pulpitu nawigacyjnego**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_26.png)
-
-## Wgrywać
-
-Kliknij ten przycisk, aby ręcznie wgrać jeden lub więcej plików.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_7.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_16.png)
-
-Możesz przeciągnąć i upuścić pliki do okna pop-up lub kliknąć **Prześlij dokumenty**, aby wybrać je w eksploratorze plików.
-
-Jeśli wolisz ręcznie określić typ dokumentu zamiast pozwalać, aby **DocBits** sklasyfikował go automatycznie, przełącz opcję **Klasyfikuj jako** i wybierz odpowiedni typ dokumentu z listy.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_5.png)
-
-Po wybraniu plików kliknij **Wgrywać**, aby rozpocząć proces wgrywania.
-
-## Tryb debugowania
-
-Możesz aktywować tryb debugowania, aby uzyskać dodatkową opcję.\
-Aby uzyskać dostęp do trybu debugowania, po prostu dodaj do adresu URL `?debug=true`. Teraz powinieneś/powinnaś mieć dodatkową opcję
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_24.png)
-
-### Pokaż czasy ładowania
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_20.png)
-
-Kliknięcie tego przycisku otworzy okno pop-up wyświetlające czasy ładowania dla każdej usługi, a łączny czas ładowania zostanie pokazany na dole.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_23.png)
+Dostępne przyciski mogą różnić się w zależności od szerokości ekranu. Na wąskim ekranie otwórz **Więcej**, aby znaleźć część akcji, które na ekranie komputera wyświetlane są osobno.

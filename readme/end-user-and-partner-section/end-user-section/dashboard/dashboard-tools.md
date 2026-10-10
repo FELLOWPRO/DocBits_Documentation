@@ -1,133 +1,58 @@
-# Strumenti del Cruscotto
+# Strumenti del cruscotto
 
-A destra della barra di ricerca, troverai alcuni strumenti del cruscotto.
+Il cruscotto è l'elenco dei tuoi documenti. Apri un documento selezionandone il nome. I controlli sopra la tabella ti aiutano a trovare i documenti, a modificare la vista e a caricare nuovi file. Alcuni controlli dipendono dalle impostazioni della tua organizzazione e dai tuoi permessi, quindi il tuo cruscotto potrebbe mostrare meno pulsanti rispetto all'esempio qui sotto.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_1.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-main-it-20261010.png" alt="Cruscotto DocBits attuale con intervallo di date, barra di ricerca, barra degli strumenti, cruscotto salvato, tabella dei documenti e pulsante Caricare"><figcaption><p>Il cruscotto in un'organizzazione di prova in lingua italiana.</p></figcaption></figure>
 
-## Aggiornare la tabella
+## Trovare i documenti
 
-Fare clic su questo pulsante per aggiornare il cruscotto e caricare i dati e gli stati più aggiornati.
+1. Scegli un intervallo di date a sinistra: **30D**, **90D**, **180D**, **365D**, **Tutti** o **Personalizzato**. Questo limita i documenti mostrati quando i controlli delle date sono disponibili.
+2. Digita il nome o l'ID di un documento nella barra di ricerca. La ricerca supporta anche query specifiche per campo. Seleziona il **?** accanto alla barra di ricerca per vedere esempi e gli operatori disponibili.
+3. Seleziona l'icona dei cursori dentro la barra di ricerca per restringere l'elenco per **Stato**, **Assegnato A** o **Riavvio Richiesto**, poi seleziona **Applicare**. Usa **Cancella i filtri** per rimuovere queste scelte.
+4. Seleziona l'intestazione di una colonna per ordinare la tabella. Usa i controlli di pagina in basso per passare da una pagina di risultati all'altra o per modificare **Documenti per pagina:**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_2.png)
+L'icona all'inizio del campo di ricerca apre un selettore dei campi disponibili e mostra quali funzionalità di ricerca ha la tua organizzazione. L'icona del **codice** alterna la vista di ricerca normale e una vista di query grezza; usa la vista normale a meno che tu non conosca già la sintassi delle query. L'icona della lente d'ingrandimento apre **Cerca nel contenuto del documento**: **Automatico** cerca prima nei campi visibili, **Includi sempre il contenuto del documento** include il testo dentro i file e **Solo colonne visibili** limita i risultati ai campi della tabella. La ricerca dentro i file richiede che la relativa funzionalità di ricerca sia abilitata per la tua organizzazione.
 
-## Impostazioni avanzate
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-filters-it-20261010.png" alt="Pannello dei filtri di ricerca del cruscotto con Stato, Assegnato A, Riavvio Richiesto, Cancella i filtri e Applicare"><figcaption><p>I filtri dentro la barra di ricerca.</p></figcaption></figure>
 
-Fare clic sull’icona a forma di ingranaggio per aprire il menu Impostazioni avanzate.
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-content-mode-it-20261010.png" alt="Menu Cerca nel contenuto del documento con Automatico, Includi sempre il contenuto del documento e Solo colonne visibili"><figcaption><p>Scegli cosa può corrispondere una ricerca semplice.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_8.png)
+Per una ricerca guidata, vedi [Ricerca rapida](quick-search.md) e [Filtraggio dei documenti](filtering-documents.md). Il pannello **?** spiega la sintassi di ricerca avanzata; non ti serve quella sintassi per una semplice ricerca per nome.
 
-Nel menu Impostazioni avanzate saranno disponibili le seguenti opzioni:
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-search-help-it-20261010.png" alt="Finestra di aiuto Ricerca nella dashboard: campi e sintassi con esempi di ricerca e operatori"><figcaption><p>La guida alla ricerca nel cruscotto.</p></figcaption></figure>
 
-### Altre impostazioni
+## Aggiornare e personalizzare la vista
 
-Utilizzare questo pulsante per accedere alle Impostazioni di amministrazione del cruscotto. La documentazione completa per queste impostazioni è disponibile [qui](../../../administration-and-setup/settings/global-settings/cruscotto/).
+- Seleziona la freccia circolare sopra la tabella per ricaricare l'elenco dei documenti. Non riavvia l'elaborazione dei documenti.
+- Seleziona l'ingranaggio per aprire le impostazioni avanzate del cruscotto. Da lì puoi aprire le scorciatoie da tastiera, vedere il registro di importazione delle e-mail o gestire le colonne visibili della tabella. Gli amministratori possono vedere anche un collegamento alle impostazioni del cruscotto. Vedi [Scorciatoie da Tastiera](keyboard-shortcuts.md) e [Modificare le Colonne del Documento](change-document-columns.md) per i passaggi successivi.
+- Seleziona il grafico a barre per mostrare l'**Analisi** sopra la tabella. Scegli una carta di categoria, come **In attesa dell'input dell'utente**, per filtrare i documenti. Seleziona di nuovo il grafico per nascondere le carte.
+- Seleziona il contrassegno del cruscotto salvato sotto la barra di ricerca per cambiare o gestire il tuo cruscotto personale. Vedi [Cruscotti personali](personal-dashboards.md).
+- Seleziona **+** accanto alla scheda **Tutti** per aggiungere una scheda per un tipo di documento. Nell'organizzazione di prova è disponibile **Fattura**. Seleziona una scheda per mostrare quel tipo di documento.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_3.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-advanced-it-20261010.png" alt="Menu delle impostazioni avanzate aperto dall'icona dell'ingranaggio del cruscotto"><figcaption><p>Apri il menu dell'ingranaggio per le opzioni del cruscotto.</p></figcaption></figure>
 
-### Scorciatoie da tastiera
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-analytics-it-20261010.png" alt="Carte di Analisi del cruscotto per Tutti i documenti, In corso, In attesa dell'input dell'utente, In attesa di approvazione, Esportato ed Errore"><figcaption><p>Le carte di Analisi sopra l'elenco dei documenti.</p></figcaption></figure>
 
-Utilizzare questo pulsante per visualizzare tutte le scorciatoie da tastiera per il cruscotto. Spiegazioni dettagliate per ogni scorciatoia sono disponibili [qui](keyboard-shortcuts.md).
+## Caricare documenti
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_9.png)
+Seleziona **Caricare**. Trascina i file nel **Caricatore di documenti** o seleziona **Clicca per caricare** per sceglierli dal tuo computer. Se conosci il tipo di documento, attiva **Classify as** e seleziona il tipo; altrimenti lascialo spento per la classificazione automatica. Seleziona **Caricare** per inviare i file. Vedi [Panoramica dei documenti caricati](overview-of-uploaded-documents.md) per cosa succede dopo.
 
-### Importa registro
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-upload-it-20261010.png" alt="Finestra Caricatore di documenti con area di trascinamento, Clicca per caricare, Classify as, Annullamento e Caricare"><figcaption><p>La finestra di caricamento attuale.</p></figcaption></figure>
 
-Utilizzare questo pulsante per aprire una tabella che mostra tutti i documenti importati di recente via e-mail, insieme alle informazioni pertinenti per ciascuno.
+## Lavorare con più documenti
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_10.png)
+Seleziona le caselle di controllo accanto ai documenti su cui vuoi agire, poi apri il menu a tre punti nell'intestazione della tabella. A seconda dei documenti e dei tuoi permessi, il menu offre **Unire**, **Assegnare a**, **Riavvio**, **Riavviare l'esportazione** e **Cancellare**. Controlla le righe selezionate prima di scegliere un'azione; **Cancellare** rimuove i documenti. Per unire più file, segui [Unione di Documenti](document-merging.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_15.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-bulk-it-20261010.png" alt="Menu delle azioni massive con Unire, Assegnare a, Riavvio, Riavviare l'esportazione e Cancellare"><figcaption><p>Azioni massive accanto alle caselle di selezione della tabella.</p></figcaption></figure>
 
-È possibile filtrare i registri per oggetto o mittente, ordinare le colonne in ordine crescente o decrescente facendo clic sulle intestazioni di colonna e riordinarle tramite drag-and-drop.
+Per un solo documento, apri il menu a tre punti in fondo alla sua riga. Offre azioni come **Convalidare**, **Assegnare a**, **Flusso dei documenti**, **Scaricare**, **Riavvio**, **Registri dei documenti** e **Cancellare**, a seconda del documento e dei tuoi permessi. **Convalidare** apre il documento in revisione; **Flusso dei documenti** mostra la sua cronologia di elaborazione; **Riavvio** riavvia l'elaborazione; **Cancellare** lo rimuove. Vedi [Flusso Documento](document-flow.md) e [Stato del documento](document-status.md) prima di modificare un documento in elaborazione.
 
-### Impostare le colonne della tabella per l'organizzazione
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-row-actions-it-20261010.png" alt="Menu delle azioni per un documento con Convalidare, Assegnare a, Flusso dei documenti, Scaricare, Riavvio, Registri dei documenti e Cancellare"><figcaption><p>Azioni per un singolo documento.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_11.png)
+## Altri pulsanti che la tua organizzazione potrebbe mostrare
 
-Fare clic su questo pulsante per aprire un menu in cui è possibile gestire la visibilità delle colonne del cruscotto. Selezionare i nomi delle colonne e utilizzare le frecce per aggiungerle o rimuoverle dalla vista del cruscotto. Fare clic su **Fatto** per salvare le modifiche.
+- Il pulsante della busta avvia un'importazione di e-mail usando la configurazione di importazione delle e-mail esistente dell'organizzazione. Chiedi a un amministratore se non sei sicuro che la tua casella di posta sia configurata; selezionarlo avvia un'importazione.
+- **Scansione del documento** appare solo quando la scansione dei documenti è abilitata e uno scanner è disponibile.
+- **Esportazione della tabella** appare solo quando l'esportazione del cruscotto è abilitata. Il suo menu offre file CSV ed Excel. L'esportazione usa i documenti attualmente visualizzati nella tabella.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashborad_tools_22.png)
-
-È possibile impostare l’ordine delle colonne facendo clic sui puntini accanto al nome di una colonna e trascinandola nella posizione desiderata.
-
-#### Aggiungere campi da un tipo di documento come colonne nel Cruscotto
-
-Hai anche la possibilità di aggiungere ulteriori colonne da campi specifici di determinati tipi di documento per personalizzare la vista del cruscotto. Per farlo, fai semplicemente clic su **Aggiungi campo dal tipo di documento**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashborad_tools_21.png)
-
-Scegli un tipo di documento per vedere quali campi sono disponibili per il tipo selezionato. Per ogni tipo di documento sono disponibili campi diversi che puoi aggiungere. Puoi cercare un campo specifico utilizzando la barra di ricerca in alto.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_19.png)
-
-Seleziona i campi che desideri visualizzare come colonne, quindi fai clic su **Aggiungi alle colonne visibili**. I campi selezionati appariranno come colonne nel cruscotto, mostrando i relativi valori.
-
-## Scansione del documento
-
-Utilizzare questo pulsante per acquisire direttamente un documento.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_4.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_17.png)
-
-Per utilizzare questa funzione, è necessario disporre di uno scanner collegato al sistema. Se è disponibile uno scanner, è possibile selezionarlo a destra, assegnare un nome al documento e fare clic su **Scansiona**. Facoltativamente, è possibile regolare le impostazioni di scansione sulla destra prima di avviare il processo.
-
-<mark style="color:red;">**Nota**</mark>: Questa funzione deve essere attivata in **Impostazioni -> Elaborazione dei documenti -> Modulo -> Tipo di documento -> Scansione dei documenti**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_27.png)
-
-## Analisi
-
-Facendo clic su questo pulsante verrà visualizzata una nuova area che mostra il conteggio attuale dei documenti in ciascuna categoria.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_14.png)
-
-Fare clic su qualsiasi categoria per filtrare i documenti in base a quella specifica categoria.
-
-## Avviare l'importazione di e-mail
-
-Facendo clic su questo pulsante, il sistema controllerà la tua casella di posta in base alla configurazione di importazione delle e-mail e importerà eventuali nuovi documenti.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_6.png)
-
-## Esportazione della tabella
-
-Utilizzare questo pulsante per esportare tutti i documenti attualmente visualizzati nel cruscotto, in base al numero di documenti mostrati per pagina.\
-È possibile esportare la tabella come file **.csv** o **.xlsx**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
-
-<mark style="color:red;">**Nota**</mark>: Questa funzione deve essere attivata in **Impostazioni -> Impostazioni globali -> Cruscotto -> Generale -> Esportazione dei dati del dashboard**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_26.png)
-
-## Caricare
-
-Fare clic su questo pulsante per caricare manualmente uno o più file.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_7.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_16.png)
-
-È possibile trascinare e rilasciare i file nella finestra pop-up oppure fare clic su **Caricare i documenti** per selezionarli dal file explorer.
-
-Se si preferisce specificare manualmente il tipo di documento invece di consentire a **DocBits** di classificarlo automaticamente, attivare l'opzione **Classificare come:** e selezionare il tipo di documento appropriato dall'elenco.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_5.png)
-
-Dopo aver selezionato i file, fare clic su **Caricare** per avviare il processo di caricamento.
-
-## Modalità di debug
-
-È possibile attivare la modalità di debug per ottenere un'opzione aggiuntiva.\
-Per accedere alla modalità di debug è sufficiente aggiungere all'url `?debug=true` . Ora dovresti avere un'opzione aggiuntiva
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_24.png)
-
-### Mostra i tempi di caricamento
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_20.png)
-
-Facendo clic su questo pulsante si aprirà una finestra pop-up che mostra i tempi di caricamento per ciascun servizio, con il tempo totale di caricamento mostrato in basso.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_23.png)
+I pulsanti disponibili possono variare in base alla larghezza dello schermo. Su uno schermo stretto, apri **Altro** per trovare alcune delle azioni che su uno schermo desktop appaiono separatamente.

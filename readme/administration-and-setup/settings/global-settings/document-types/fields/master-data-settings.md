@@ -1,18 +1,18 @@
 # Ustawienia danych głównych
 
-Ustawienia danych głównych łączą pola walidacji dokumentu z danymi przechowywanymi na stronie [Wyszukiwanie danych podstawowych](../../../document-processing/master-data-lookup.md). Użyj **Wyszukiwanie danych głównych**, aby znaleźć i wypełnić pasujące rekordy. Użyj **Dane główne LOV**, aby zaproponować listę wartości z zestawu danych.
+Ustawienia danych głównych łączą pola walidacji dokumentu z danymi przechowywanymi na stronie [Wyszukiwanie danych podstawowych](../../../document-processing/master-data-lookup.md). Użyj **Wyszukaj dane główne**, aby znaleźć i wypełnić pasujące rekordy. Użyj **Dane główne LOV**, aby zaproponować listę wartości z zestawu danych.
 
 ## Otwórz ustawienia
 
 1. W **Ustawienia** otwórz **Przetwarzanie dokumentów → Typy dokumentów**.
 2. Otwórz typ dokumentu, który chcesz skonfigurować, na przykład **Faktura**, i wybierz **Pola**.
-3. Wybierz **Ustawienia danych głównych**. Strona zawiera oddzielne sekcje **Wyszukiwanie danych głównych** i **Dane główne LOV**. Wybierz nagłówek sekcji, aby ją rozwinąć.
+3. Wybierz **Ustawienia danych głównych**. Strona zawiera oddzielne sekcje **Wyszukaj dane główne** i **Dane główne LOV**. Wybierz nagłówek sekcji, aby ją rozwinąć.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc202-overview-pl-20261010.png" alt="Ustawienia danych głównych faktury w bieżącym sandboxie DocBits z sekcjami Wyszukiwanie danych głównych i Dane główne LOV"><figcaption>Wybierz sekcję odpowiadającą typowi pola, który chcesz skonfigurować.</figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc202-overview-pl-20261010.png" alt="Ustawienia danych głównych faktury w bieżącym sandboxie DocBits z sekcjami Wyszukaj dane główne i Dane główne LOV"><figcaption>Wybierz sekcję odpowiadającą typowi pola, który chcesz skonfigurować.</figcaption></figure>
 
 ## Dopasuj rekord za pomocą Wyszukiwania danych głównych
 
-Konfiguracje **Wyszukiwanie danych głównych** przeszukują zestaw danych i przypisują pasujący rekord do pól dokumentu. Lista pokazuje nazwę każdej konfiguracji oraz informację, czy jest aktywna. Etykieta **Domyślny** oznacza konfigurację DocBits; możesz ją dezaktywować, ale nie możesz jej edytować ani usunąć.
+Konfiguracje **Wyszukaj dane główne** przeszukują zestaw danych i przypisują pasujący rekord do pól dokumentu. Lista pokazuje nazwę każdej konfiguracji oraz informację, czy jest aktywna. Etykieta **Domyślny** oznacza konfigurację DocBits; możesz ją dezaktywować, ale nie możesz jej edytować ani usunąć.
 
 ### Utwórz konfigurację wyszukiwania
 

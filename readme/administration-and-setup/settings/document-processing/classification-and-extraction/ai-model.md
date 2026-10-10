@@ -16,7 +16,7 @@ In this section, you can review the token cost for each model and see which mode
 
 ## AI Model Options
 
-DocBits offers six AI model options for field and table extraction. They differ in the balance between **extraction accuracy**, **processing speed**, and **token cost per document** — so you can match the option to the kind of documents you process. Hover over the info icon next to the setting to see the token cost for the currently selected option.
+DocBits offers six AI model options for field and table extraction. They differ in the balance between **extraction accuracy**, **processing speed**, and **token cost per document** — so you can match the option to the kind of documents you process. Hover over the info icon next to the setting to see the token cost for the currently selected option. If no model is set for a supplier, unset means Fast is used.
 
 * **Full** – The most thorough option, with the highest extraction accuracy. Best for complex layouts, low-quality scans, or documents where precision matters most. As the most powerful option it is also the slowest, at **2 tokens per document**.
 * **Fast** – A balanced option that combines strong accuracy with quicker processing at a lower cost. This is the default tier: suppliers without their own AI model setting use Fast, at **1 token per document**.

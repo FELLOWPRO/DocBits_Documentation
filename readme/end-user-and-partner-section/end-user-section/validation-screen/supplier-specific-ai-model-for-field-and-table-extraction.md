@@ -3,7 +3,7 @@
 In the tools section of the **Validation screen**, you can choose the AI model used for **Field Extraction** and **Table Extraction**.\
 The selected **AI model** is applied to all documents for the current supplier only.
 
-To change the model, open the options menu by clicking the **three dots** on the right side of the screen, then choose one of the available models:<br>
+To change the model, open the options menu by clicking the **More options** (three dots) button on the right side of the screen, then choose one of the available models:<br>
 
 * **Full** – Highest accuracy; costs 2 tokens per document
 * **Fast** – Default tier; costs 1 token per document

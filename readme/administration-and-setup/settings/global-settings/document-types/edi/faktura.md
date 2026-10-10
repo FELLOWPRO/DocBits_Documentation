@@ -14,7 +14,7 @@ Otwórz **Ustawienia → Typy Dokumentów → E-Doc**, wybierz **INVOICE**, a na
 
 ## Sprawdź wyekstrahowaną wartość linii
 
-Otwórz **EXTRACTION PATHS (JSON)**. W aktywnej wersji znajdź tablicę `tables` i jej `columns`. Widoczna wersja w Sandboksie zawiera już `{"name": "PURCHASE_ORDER", "path": "PURCHASE_ORDER"`. Sprawdź wartość na rzeczywistej fakturze testowej przed jej edycją. Jeśli potrzebujesz innego atrybutu, ustal jego wartość w znormalizowanych danych, a następnie dodaj odrębną nazwę kolumny i odpowiadającą jej ścieżkę w wersji roboczej.
+Otwórz **EXTRACTION PATHS (JSON)**. W aktywnej wersji znajdź tablicę `tables` i jej `columns`. Widoczna wersja w Sandboksie zawiera już `{"name": "PURCHASE_ORDER", "path": "PURCHASE_ORDER"}`. Sprawdź wartość na rzeczywistej fakturze testowej przed jej edycją. Jeśli potrzebujesz innego atrybutu, ustal jego wartość w znormalizowanych danych, a następnie dodaj odrębną nazwę kolumny i odpowiadającą jej ścieżkę w wersji roboczej.
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-630-fatturapa-json-pl-20261010.png" alt="FATTURAPA Extraction Paths JSON z aktywną wersją i istniejącą kolumną tabeli PURCHASE_ORDER"><figcaption><p>Aktywne mapowanie ekstrakcji JSON zawiera już kolumnę numeru zamówienia zakupu.</p></figcaption></figure>
 
@@ -26,6 +26,6 @@ Jeśli znormalizowana wartość jest nieobecna, obejrzyj **TRANSFORMATION (XSLT)
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-630-fatturapa-preview-pl-20261010.png" alt="Aktywny podgląd XSLT FATTURAPA z wyjściem HTML i stylami tabeli faktury"><figcaption><p>Podgląd steruje wizualnym wynikiem faktury.</p></figcaption></figure>
 
-Użyj ikony ołówka na karcie wersji, aby przygotować zmianę. Przejrzyj wersję roboczą i użyj **Podglądu** z reprezentatywną fakturą FatturaPA przed jej aktywacją. Zrzuty ekranu pokazują aktualne wersje aktywne; w tej sesji Sandboksa nie zapisano wersji roboczej ani nie uruchomiono testu podglądu.
+Użyj ikony ołówka na karcie wersji, aby przygotować zmianę. Przejrzyj wersję roboczą i użyj **Zapowiedzi** z reprezentatywną fakturą FatturaPA przed jej aktywacją. Zrzuty ekranu pokazują aktualne wersje aktywne; w tej sesji Sandboksa nie zapisano wersji roboczej ani nie uruchomiono testu podglądu.
 
 Dawna instrukcja, że wszystkie dokumenty elektroniczne mają jako pochodzenie Wielką Brytanię, nie jest bezpieczną regułą ogólną. Sprawdź kraj, walutę i format liczbowy faktury w odniesieniu do dokumentu źródłowego oraz konfiguracji Twojej organizacji.

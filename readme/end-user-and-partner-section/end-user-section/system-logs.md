@@ -58,7 +58,7 @@ Click a row to expand it. The detail panel shows the full timestamp, the level, 
 
 <figure><img src="../../.gitbook/assets/system-logs-raw-view-en-20261011.png" alt="Raw View showing the log lines as plain text with an Export Logs button"><figcaption><p>Raw View: the same log data as plain text, ready to copy or export.</p></figcaption></figure>
 
-Raw View adds an **Export Logs** button. It downloads the current log data as a text file — for example, to attach to a support ticket when you [create a ticket](technical-support-in-docbits/create-a-ticket.md). The table view itself has no export; switch to Raw View first.
+Raw View adds an **Export Logs** button. It downloads the log data as a text file — including your active filters and date range — for example, to attach to a support ticket when you [create a ticket](technical-support-in-docbits/create-a-ticket.md). The table view itself has no export; switch to Raw View first.
 
 Below the table, **Logs Per Page** sets how many entries are shown at once, and the page numbers move through longer result lists.
 

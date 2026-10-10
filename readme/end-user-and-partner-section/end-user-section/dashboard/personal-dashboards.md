@@ -1,6 +1,6 @@
 # Osobiste Panele
 
-Osobisty panel zapisuje widok listy dokumentów, dzięki czemu możesz wrócić do filtrów i kolumn, których często używasz. Możesz zachować go jako prywatny, udostępnić wszystkim w swojej organizacji lub udostępnić wybranym grupom i użytkownikom. Jak filtrować listę dokumentów przed zapisaniem widoku, opisuje [Szybkie wyszukiwanie](quick-search.md).
+Osobisty panel zapisuje widok listy dokumentów, dzięki czemu możesz wrócić do filtrów i kolumn, których często używasz. Możesz zachować go jako prywatny, udostępnić go wszystkim w swojej organizacji lub udostępnić wybranym grupom i użytkownikom. Jak filtrować listę dokumentów przed zapisaniem widoku, opisuje [Szybkie wyszukiwanie](quick-search.md).
 
 ## Utwórz panel
 

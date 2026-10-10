@@ -10,7 +10,7 @@ Open the sidebar and click **Ideas**, or navigate to `/ideas` directly.
 
 ## Channels
 
-A row of channel chips sits at the top of the board: **All**, **General**, **AI Workforce**, **Workflow**, **Dashboard**, **Import / Export**, and **Document Processing**. Click a chip to show only the ideas in that product area; **All** clears the channel filter. Every idea belongs to one channel, shown as a badge on its card.
+A row of channel chips sits at the top of the board: **All**, **General**, **AI Workforce**, **Workflow**, **Dashboard**, **Import / Export**, and **Document Processing**. Click a chip to show only the ideas in that product area; **All** clears the channel filter. Every idea belongs to one channel, shown as a badge on its card. The **AI Workforce** channel collects ideas for the [AI Workforce](/advanced-functions-and-tools/ai_workforce) features.
 
 ## Browsing ideas
 

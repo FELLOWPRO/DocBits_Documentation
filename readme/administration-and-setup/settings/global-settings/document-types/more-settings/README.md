@@ -21,6 +21,12 @@ In the "More Settings" section, you can find various options related to individu
 
 * [**Duplicate Document Detection**](duplicate-document-handling.md): This allows you to detect and handle duplicate documents.
 
+## Vertex Tax Verification
+
+* **Vertex Tax Verification**: When the Vertex Tax Integration is enabled for your organization, this setting verifies the tax calculated by Vertex against the tax charged on the document. You can design the verification screen layout with the **Design Vertex Tax Verification** link, which opens the **Layout Builder** for this document type. For detailed instructions on how to use the **Layout Builder**, click [here](../../../../setup/document-types/layout-builder.md). For details on enabling the integration and choosing a verification trigger, see **Module** → **Order & Finance** → **Vertex Tax Integration** in the [Module settings](../../../document-processing/module/README.md).
+
+<figure><img src="../../../../../.gitbook/assets/more-settings-vertex-tax-verification-panel-en-20261010.png" alt="More Settings for an invoice document type with the Vertex Tax Verification section expanded, showing the Vertex Tax Verification toggle and the Design Vertex Tax Verification link"><figcaption>The <strong>Vertex Tax Verification</strong> section in <strong>More Settings</strong>. Use <strong>Design Vertex Tax Verification</strong> to open the Layout Builder for the verification screen.</figcaption></figure>
+
 ## In Review
 
 * **Design in Review Form**: Configure the layout of review forms using the **Layout Builder**. This layout determines how content is presented during the document review process. For detailed instructions on how to use the **Layout Builder**, click [here](../../../../setup/document-types/layout-builder.md).

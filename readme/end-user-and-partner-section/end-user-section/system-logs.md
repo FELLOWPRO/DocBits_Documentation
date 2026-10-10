@@ -12,7 +12,7 @@ For a one-click snapshot of your own browser session instead of the system's his
 
 ## The six tabs
 
-<figure><img src="../../.gitbook/assets/system-logs-tabs-en-20261011.png" alt="System Logs page with the six tabs System Overview, Performance Metrics, Error Analysis, Real-time Monitoring, Service Health and Log Entries"><figcaption><p>The System Logs page opens with six tabs; the Log Entries tab is the one with working data today.</p></figcaption></figure>
+The page opens with six tabs across the top; the Log Entries tab is the one with working data today.
 
 | Tab | What it is for |
 | --- | --- |

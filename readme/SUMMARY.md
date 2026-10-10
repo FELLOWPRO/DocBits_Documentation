@@ -180,6 +180,7 @@
       * [API-Aufrufe und Beispiele](admin-section/settings/global-settings/integration/api-aufrufe-und-beispiele.md)
       * [API-Schlüsselverwaltung](administration-and-setup/settings/global-settings/integration/api-key-management.md)
       * [Konfiguration von Single Sign-On (SSO)](admin-section/settings/global-settings/integration/konfiguration-von-single-sign-on-sso.md)
+        * [V1: Infor Ming.le Portal SSO](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v1.md)
       * [Konfiguration des Identitätsdienstanbieters](admin-section/settings/global-settings/integration/konfiguration-des-identitatsdienstanbieters.md)
       * [Best Practices](admin-section/settings/global-settings/integration/best-practices.md)
       * [Fehlerbehebung bei häufigen Problemen](admin-section/settings/global-settings/integration/fehlerbehebung-bei-haufigen-problemen.md)

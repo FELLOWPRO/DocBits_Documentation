@@ -494,7 +494,7 @@
 * [Exportation vers INFOR](infor-integration-and-configuration/exporting-to-infor/README.md)
   * [Création d'un fichier de mappage BOD](infor-integration-and-configuration/exporting-to-infor/creating-a-bod-mapping-file.md)
   * [Création d'un fichier de mappage IDM](infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-  * [Création d'un endpoint ION API](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
+  * [Création d'un point de terminaison ION API](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-endpoint.md)
   * [Création d'un fichier ION API](infor-integration-and-configuration/exporting-to-infor/creating-an-ion-api-file.md)
   * [Exportation vers M3 Mapping (API)](infor-integration-and-configuration/exporting-to-infor/export-to-m3-mapping-api.md)
   * [Exportation vers IDM](infor-integration-and-configuration/exporting-to-infor/exporting-to-idm.md)

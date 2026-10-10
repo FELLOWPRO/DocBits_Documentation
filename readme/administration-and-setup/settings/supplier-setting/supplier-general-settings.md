@@ -28,8 +28,8 @@ By default, suppliers register with the standard fields of the supplier layout. 
 
 The **Status** section defines the workflow a supplier registration moves through. The left panel lists all statuses in order; the right panel configures the status you select. For the meaning of the built-in statuses (Open, Pending Registration, Pending Approval, Approved, and so on), see [Supplier Portal — Supplier Status](../../setup/supplier-portal/README.md#supplier-status).
 
-* **Reorder statuses**: drag a status by the handle on its left. The order is saved automatically and controls the sequence shown in the supplier dashboard.
-* **Select a status**: click a status in the list to load it into the **Configure Status** panel. Built-in statuses are locked — their name cannot be changed, only their approval settings.
+* **Reorder statuses**: drag a status by the handle on its left. The new order is saved automatically.
+* **Select a status**: click a status in the list to load it into the **Configure Status** panel. Built-in statuses are locked: their name and approval settings cannot be changed, and they cannot be deleted.
 * **Status Name**: type a name to create a new custom status (when none is selected), or rename the selected custom status.
 * **Approval Status**: turn on **Mark this as a status that requires approval** if a supplier may only leave this status after an explicit approval. The status then carries an *Approval* badge in the list.
 * **Who Can Approve**: once a status requires approval, choose which roles may approve it — **Admin User**, the **Referrer** (the user who invited the supplier), the **Assignee**, and any number of **User Groups**.
@@ -44,7 +44,7 @@ Use **Vendor ID Grouping** when the same supplier appears in your system under s
 2. Click **Create new group**. Each group needs at least two IDs; otherwise a warning is shown and no group is created.
 3. Each group appears as a row of ID chips labelled **GROUP 1**, **GROUP 2**, and so on. Changes are saved automatically.
 4. **Edit a group**: click its row, adjust the comma-separated list, then click **Save** (or **Cancel** to discard).
-   **Delete a group**: click the trash icon at the end of the row.
+5. **Delete a group**: click the trash icon at the end of the row.
 
 ### Upload Logo
 
@@ -103,5 +103,5 @@ This section holds documents that support suppliers during registration — for 
 
 * **Upload**: click **Upload**, then choose the file. It appears in the table once the upload finished.
 * **Preview**: click the eye icon next to a document name to open the document in a preview window.
-* **Copy link**: use the copy action in the **Actions** column to copy a direct link to the document to the clipboard, for example to add it to your own instructions.
+* **Copy link**: use the copy action in the **Actions** column to copy a link to the document to the clipboard, for example to add it to your own instructions.
 * **Delete**: use the delete action in the **Actions** column and confirm the prompt.

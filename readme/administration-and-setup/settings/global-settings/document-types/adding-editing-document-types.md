@@ -6,8 +6,8 @@ Administratoren können einen benutzerdefinierten Dokumenttyp anlegen oder die E
 
 ## Einen benutzerdefinierten Dokumenttyp erstellen
 
-1. Scrollen Sie zu **Benutzerdefinierte Dokumenttypen** und wählen Sie **+ Neu**. Die Standardtypen von DocBits können nicht gelöscht werden; legen Sie für eine neue Kategorie einen benutzerdefinierten Typ an.
-2. Unter **Erstellen** vergeben Sie einen klaren **Namen** und eine **Beschreibung**. Wählen Sie **Tabelle verfügbar**, wenn dieser Dokumenttyp Positionstabellen benötigt. Wählen Sie **Automatisch** für das Modelltraining mit Beispieldokumenten oder **Regex** für die erkennung über Muster.
+1. Scrollen Sie zu **Benutzerdefinierte Dokumenttypen** und wählen Sie **+ Neu**. Der Assistent öffnet **Neue Dokumentart Erstellen**. Die Standardtypen von DocBits können nicht gelöscht werden; legen Sie für eine neue Kategorie einen benutzerdefinierten Typ an.
+2. Unter **Erstellen** vergeben Sie einen klaren **Namen** und eine **Beschreibung**. Wählen Sie **Tabelle verfügbar**, wenn dieser Dokumenttyp Positionstabellen benötigt. Wählen Sie **Automatisch** für das Modelltraining mit Beispieldokumenten oder **Regex** für die Erkennung über Muster.
 3. Wählen Sie **Weiter**, um den Dokumenttyp zu erstellen und mit der Einrichtung fortzufahren. **Weiter speichert den neuen Typ an dieser Stelle**; es ist keine reine Vorschau. Vermeiden Sie einen Testnamen in einer Produktionsorganisation.
 4. Für **Automatisch** laden Sie mindestens **10 Beispieldokumente** hoch, bevor Sie fortfahren. Für **Regex** legen Sie mindestens **zwei Muster** an. Diese Anforderungen stammen aus dem aktuellen Erstellungsablauf. Einzelheiten zum Training finden Sie unter [Modelltraining](model-training/README.md).
 5. Unter **Felder und Gruppen** legen Sie die benötigten Gruppen und mindestens ein Feld an. Wenn **Tabelle verfügbar** ausgewählt wurde, fahren Sie mit **Tabellen und Spalten** fort und konfigurieren Sie die Tabelle. Wählen Sie **Fertigstellen**, sobald die erforderliche Einrichtung abgeschlossen ist.

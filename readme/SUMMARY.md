@@ -53,7 +53,7 @@
     * [Panoramica dei documenti caricati](end-user-and-partner-section/end-user-section/dashboard/overview-of-uploaded-documents.md)
     * [Contatore di attività](end-user-and-partner-section/end-user-section/dashboard/task-counter.md)
     * [Campi estratti validati](end-user-and-partner-section/end-user-section/dashboard/validated-extracted-fields.md)
-    * [Flusso Documento](end-user-and-partner-section/end-user-section/dashboard/document-flow.md)
+    * [Fluxo de Documentos](end-user-and-partner-section/end-user-section/dashboard/document-flow.md)
     * [Carrossel de Vídeos](end-user-and-partner-section/end-user-section/dashboard/video-carousel.md)
     * [Best Practice](end-user-and-partner-section/end-user-section/dashboard/melhor-pratica.md)
     * [Risoluzione dei problemi](end-user-and-partner-section/end-user-section/dashboard/troubleshooting.md)

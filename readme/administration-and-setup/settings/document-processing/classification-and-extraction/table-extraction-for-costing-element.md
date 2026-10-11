@@ -8,7 +8,7 @@ Kostenelementen zijn toeslagen of andere bedragen die als tabelregels op een fac
 2. Blijf op **Algemeen** en vouw **Extractie** uit.
 3. Zoek **Tabelextractie voor kostenelement** onder de velden die voor tabelleextractie worden vereist. Een beheerder kan deze schakelaar voor de organisatie aanzetten.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-nl-20261011.png" alt="Nederlandstalige instellingen Classificatie en Extractie met de schakelaar Tabelextractie voor kostenelement zichtbaar en uit"><figcaption><p>De schakelaar staat uit in de gesynthetiseerde testorganisatie. Hij is voor deze handleiding niet gewijzigd.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-nl-20261011.png" alt="Nederlandstalige instellingen Classificatie en Extractie met de schakelaar Tabelextractie voor kostenelement zichtbaar en aan"><figcaption><p>De schakelaar staat aan in deze synthetische opname. De afbeelding bewijst niet de instelling van een echte organisatie.</p></figcaption></figure>
 
 {% hint style="info" %}
 De schakelaar alleen maakt geen kostenelementen of factuurregels aan. Configureer eerst de elementen en importeer eventueel vereiste gegevens. De gekoppelde [handleiding voor het instellen van kostenelementen](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) legt het M3-voorbeeld uit. Zie [Classificatie en extractie](README.md) voor de andere extractiebedieningselementen.

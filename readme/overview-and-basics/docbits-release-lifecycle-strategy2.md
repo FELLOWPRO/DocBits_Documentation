@@ -15,6 +15,9 @@ VESTA and NOVA are **release channels**, not indicators of release quality. Both
 
 ## Lifecycle overview
 
+![DocBits VESTA and NOVA three-phase release lifecycle](docbits-release-lifecycle.png)
+
+
 | Phase | VESTA | NOVA | Customer experience |
 |---|---|---|---|
 | **Phase #1 — VESTA Production + NOVA Development** | **R1.0.x** in production | **R1.1** in development | Customers use VESTA while the next release is developed. |

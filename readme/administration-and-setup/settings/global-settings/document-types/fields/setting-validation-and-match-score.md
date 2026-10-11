@@ -1,44 +1,25 @@
-# Setting Validation and Match Score
+# Instelling Validatie forceren en Wedstrijdscore
 
-## Instructions for using the Force Validation and Match Value settings to improve data integrity and recognition accuracy.
+In **Velden** kunt u de validatie- en herkenningsdrempels voor een documenttype instellen. Deze pagina gebruikt **Factuur** in een testorganisatie van de documentatie. Ze legt het huidige selectievakje **FORCE VALIDATIE** en de besturingselementen voor de **WEDSTRIJDSCORE** uit.
 
-Here are instructions for using the Force Validation and Match Value settings to improve data integrity and recognition accuracy in a document processing system:
+## De veldinstellingen openen
 
-### Force Validation:
+1. Ga naar **Instellingen → Documenttypen → Factuur → Velden**.
+2. Gebruik **Zoeken op naam** om een veld te vinden, bijvoorbeeld `invoice_number` (weergegeven als **Factuurnummer**).
+3. Controleer de veldrij voordat u een instelling wijzigt. **VEREIST**, **Alleen Lezen**, **Verborgen** en **FORCE VALIDATIE** zijn afzonderlijke selectievakjes.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_force_validation_setting.png" alt="Docbits Force Validation Setting" width="151"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-143-fields-overview-nl-20261011.png" alt="Nederlandse Sandbox-pagina Velden met herkenningsinstellingen, de besturingselementen OCR en WEDSTRIJDSCORE, veldkolommen en Instellingen opslaan"><figcaption><p>De herkenningsbesturingselementen staan boven de veldenlijst.</p></figcaption></figure>
 
-This setting allows you to set rules that check whether the data entered meets certain criteria.
+## Force Validatie
 
-**To set this up:**
+Vink **FORCE VALIDATIE** aan in de veldrij om voor dat veld een strengere validatie toe te passen. Het selectievakje staat los van **VEREIST**: een veld als vereist markeren vinkt Force Validatie niet automatisch aan. Het selectievakje kan niet beschikbaar zijn wanneer een veld verborgen of alleen-lezen is. Klik op **Instellingen opslaan** nadat u de veldconfiguratie hebt gewijzigd.
 
-* Go to the settings of the field in question.
-* Enable the Force Validation option.
-* Define the validation rules to check. These can be, for example, numeric limits, regular expressions for text fields, or relationships to other fields.
+De oude instructies stelden voor om hier numerieke grenzen of reguliere expressies in te voeren. De huidige Velden-tabel toont geen regeleditor in de cel FORCE VALIDATIE. Voor veldspecifieke regels zie [Veldeigenschaften configureren](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_regex.png" alt="Docbits Validation Rules Regex"><figcaption></figcaption></figure>
+## Wedstrijdscore
 
-<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_example.png" alt="Docbits Validation Rules Example" width="375"><figcaption></figcaption></figure>
+**WEDSTRIJDSCORE** is een numerieke drempelwaarde, geen vaste referentiewaarde. De schuifregelaar **WEDSTRIJDSCORE** onder **HERKENNINGSINSTELLINGEN** past zijn waarde toe op de veldrijen van het documenttype; gebruik het veld **WEDSTRIJDSCORE** van een veldrij voor een afzonderlijke waarde. In de testorganisatie tonen de schuifregelaar en `invoice_number` beide **80**. Controleer de betrokken velden en klik vervolgens op **Instellingen opslaan**.
 
-**Impact:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-nl-20261011.png" alt="Nederlandse Sandbox-veldrij invoice_number met aangevinkte FORCE VALIDATIE en Wedstrijdscore 80"><figcaption><p>Zoek een veld om het selectievakje FORCE VALIDATIE en de wedstrijdscorewaarde te controleren.</p></figcaption></figure>
 
-* Enforcing validation rules helps detect errors early and improves data quality. Users are prompted to enter correct data, which increases the integrity of the database.
-
-### Match Score:
-
-<figure><img src="../../../../../.gitbook/assets/docbits_match_score_setting.png" alt="Docbits Match Score Setting" width="116"><figcaption></figcaption></figure>
-
-This setting allows you to match the entered value against a predefined reference value.
-
-**To set this up:**
-
-* Navigate to the field's settings.
-* Enable the Match Value option.
-* Enter the reference value to compare the entered value against.
-
-**Impact:**
-
-* Setting a match value allows you to ensure that the entered data matches a known standard or predefined norm. This is especially useful when you want to ensure that the data is consistent and meets certain criteria.
-* Using these settings can improve data integrity and recognition accuracy in your document processing system.
-
-You ensure that only correct and valid data is captured, increasing the quality of your database and improving the reliability of your analytics and reports.
+**OCR** is een afzonderlijke herkenningsdrempel naast de Wedstrijdscore. **STANDAARDINSTELLINGEN HERSTELLEN** zet de instellingen terug; gebruik het alleen wanneer u uw eigen drempelwaarden wilt verwijderen. Voor andere veldopties zie het [Velden-overzicht](README.md).

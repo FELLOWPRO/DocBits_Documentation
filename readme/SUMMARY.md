@@ -523,6 +523,7 @@
 ## Funciones y herramientas avanzadas <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
 * [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
+* [Explorador de gráficos de conocimiento](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [DocFlow MCP](advanced-functions-and-tools/docflow-mcp/README.md)
   * [Configuración](advanced-functions-and-tools/docflow-mcp/setup-and-configuration.md)
   * [Herramientas de Flujo de Trabajo](advanced-functions-and-tools/docflow-mcp/workflow-tools.md)

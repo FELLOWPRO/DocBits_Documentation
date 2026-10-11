@@ -1,11 +1,13 @@
 # Maak een ticket aan
 
-{% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
-{% endembed %}
+Dit is een hulpmiddel dat u ter beschikking staat, op het validatiescherm, wanneer er zich een probleem voordoet bij het valideren van uw document in DocBits. Zie [het validatiescherm](../validation-screen/README.md) voor meer informatie over het controleren van een document.
+
+Deze functie bevindt zich in het menu boven het voorbeeldgedeelte van het document, zoals hieronder
+
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-menu-nl-20261009.png" alt="Validatiescherm met de muis op de knop Ticket aanmaken in de rechteractiebalk."><figcaption><p>De knop 'Ticket aanmaken' in de actiebalk van het validatiescherm.</p></figcaption></figure>
 
 Zodra u erop klikt, wordt het volgende ticketformulier aan u getoond.
 
-![](https://lh7-us.googleusercontent.com/DxlkEirrpbtGXs8R6gHD9MtaUqd5mY9L1ya1PdGIwZIHnuoj0wflDML6ZjYzrHxqXos-0uwhMAJI69_zhO92dNWrwAmYpPwAe2C8sHvo0Tf8f8PG7SktBv4JiY6QfxxDNtO55S3xmQsze48ZophpDPc)
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-form-nl-20261009.png" alt="Validatiescherm met het formulier Ondersteuningsticket geopend: Naam, E-mail, Onderwerp, Prioriteit, Bericht, Schermafbeelding en Bestand uploaden."><figcaption><p>Het formulier 'Ondersteuningsticket'.</p></figcaption></figure>
 
-Hier vult u uw gegevens in en beschrijft u de fout. U kunt ook, indien van toepassing, een screenshot van het probleem bijvoegen en een relevant bestand toevoegen.
+Hier vult u uw gegevens in en beschrijft u de fout. U kunt ook, indien van toepassing, een schermafbeelding van het probleem bijvoegen en een relevant bestand toevoegen.

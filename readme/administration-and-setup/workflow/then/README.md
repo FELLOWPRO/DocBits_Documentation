@@ -1,76 +1,71 @@
-# Then
+# Then: bir eylem kartı seçin
 
-## "Then..." Eylem Kartlarına Genel Bakış
+Bir **Then** kartı, bir iş akışına **When** tetikleyicisinden ve varsa **And** koşullarından sonra ne yapacağını söyler. **İş Akışı Oluşturucu**'da **Daha sonra...** altındaki **Kart Ekle** seçeneğine tıklayın. Soldan bir kategori seçin veya **Arama Kartı** alanına bir ad yazın. Eklemek için bir kart ön izlemesi seçin, kartta gösterilen alanları doldurun ve iş akışını kaydedin. Daha fazla kart görmek için seçici içinde kaydırın. Kart eklemeden kapatmak için **×** seçeneğine tıklayın. Tam sıralama için [İş Akışı](../README.md) sayfasına bakın.
 
-### **1. Belge Alanı Eylemleri:**
+Aşağıdaki ön izlemeler kullanılabilecek eylemleri gösterir, tamamlanmış ayarları değil. İstediğiniz sonuca uyan eylemi seçin.
 
-* **Invert Checkbox:** Bu eylem, bir belgedeki onay kutusu alanının durumunu değiştirir.
-* **Set Checkbox:** Bu, bir onay kutusu alanının durumunu true (işaretli) veya false (işaretsiz) olarak ayarlar.
-* **Set Field to Text:** Bu eylem, belirtilen bir belge alanını verilen bir metin değerine ayarlar.
+## Belge Alanı
 
-<figure><img src="../../../.gitbook/assets/then1 (1).png" alt=""><figcaption></figcaption></figure>
+Bir onay kutusunu ayarlayın veya ters çevirin, bir alana metin yazın, ya da bir alanın içeriğini başka bir alana kopyalayın. Kartta istenen alan adlarını ve değeri seçin. Bkz. [Belge Alanı](document-field/README.md).
 
-### **2. Belge Eylemleri:**
+<figure><img src="../../../.gitbook/assets/then-category-document-field-tr.png" alt="Belge Alanı seçili Türkçe Then kart seçicisi; ön izlemelerde onay kutusu, metin ve alan kopyalama eylemleri görünüyor."><figcaption>Bir alanı değiştirin veya içeriğini kopyalayın.</figcaption></figure>
 
-* **Approve the Document:** Bir belgeyi sistemde onaylanmış olarak işaretler.
-* **Reject the Document:** Bir belgeyi reddedilmiş olarak işaretler.
+## Belge
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+İş akışı bu kararı vermeliyse **Belgeyi Onayla** veya **Belgeyi Reddet** seçeneğini seçin. Onay bir denetime bağlı olacaksa önce bir **And** koşulu ekleyin. Bkz. [Belge](document/README.md).
 
-### **3. Dışa Aktarma Eylemleri:**
+<figure><img src="../../../.gitbook/assets/then-category-document-tr.png" alt="Belge seçili Türkçe Then kart seçicisi; Belgeyi Onayla ve Belgeyi Reddet ön izlemeleri görünüyor."><figcaption>Geçerli belgeyi onaylayın veya reddedin.</figcaption></figure>
 
-* **Export document with export configuration:** Belirli bir dışa aktarma yapılandırmasıyla dışa aktarma sürecini başlatır.
-* **Start Export:** Dışa aktarma sürecini başlatır.
+## Mantık
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+Bu kartlarla değerleri sayı, metin ve boolean biçimleri arasında dönüştürün ya da JSON içinden bir değer okuyun. Seçilen kartta girdi ve çıktı alanlarını belirleyin.
 
-### **4. Durum Eylemleri:**
+<figure><img src="../../../.gitbook/assets/then-category-logic-tr.png" alt="Mantık seçili Türkçe Then kart seçicisi; görünen ön izlemeler veri türlerini dönüştürür ve JSON içinden değer okur."><figcaption>Bir sonraki iş akışı adımı için değerleri dönüştürün.</figcaption></figure>
 
-* **Change Status:** Bir belgenin veya görevin durumunu belirtilen yeni bir duruma değiştirir.
+## Durum
 
-<figure><img src="../../../.gitbook/assets/then3 (1).png" alt=""><figcaption></figcaption></figure>
+Belgeyi seçilen bir duruma taşımak için **Durumu Değiştir** seçeneğini seçin. Bu kart ayrıca başka bir iş akışını da tetikleyebilir. Bkz. [Durum](status/README.md).
 
-### **5. Görev Eylemleri:**
+<figure><img src="../../../.gitbook/assets/then-category-status-tr.png" alt="Durum seçili Türkçe Then kart seçicisi; Durumu Değiştir ön izlemesinde bir durum alanı ve isteğe bağlı iş akışı tetikleme görülüyor."><figcaption>Belgeyi başka bir duruma taşıyın.</figcaption></figure>
 
-* Atamalar ve bildirimler:
-  * **Assign Task:** Belirli ayrıntılarla bir görev oluşturur ve bir kişiye veya gruba atar, onları e-posta yoluyla bilgilendirme seçenekleri dahil.
-  * **Create a New Task:** Atamaya benzer ama sistemde tamamen yeni bir görev kurmaya odaklanmıştır.
+## İstemler ve Komut Dosyaları
 
-<figure><img src="../../../.gitbook/assets/then4 (1).png" alt=""><figcaption></figcaption></figure>
+Bir DocOperator istem komut dosyasını çalıştırmak için bu kategoriyi seçin. Kartta istenen komut dosyasını ve değişkenleri seçin. Kart ayrıca yeniden denemeler gibi çalıştırma ayarları da sunar.
 
-### **6. Tablo Eylemleri:**
+<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-tr.png" alt="İstemler ve Komut Dosyaları seçili Türkçe Then kart seçicisi; bir DocOperator istem komut dosyası ön izlemesi görünüyor."><figcaption>Yapılandırılmış bir DocOperator istem komut dosyasını çalıştırın.</figcaption></figure>
 
-* **Calculate in Table:** Belirtilen koşullara göre tablo verileri üzerinde hesaplamalar gerçekleştirir ve sonuçları belirlenen bir sütunda depolar.
-* **Change Entries:** Belirtilen koşullara göre bir tablodaki girişleri günceller.
+## İhracat
 
-<figure><img src="../../../.gitbook/assets/then5 (1).png" alt=""><figcaption></figcaption></figure>
+Bir dışa aktarma başlatın, seçilen bir yapılandırmayla dışa aktarın veya nihai bir dışa aktarmayı kuyruğa alın. Kartta gösterilen dışa aktarma yapılandırmasını ve bekleyen görev seçeneğini belirleyin. Bkz. [İhracat](export/README.md).
 
-### **7. Atanan (Assignee) Eylemleri:**
+<figure><img src="../../../.gitbook/assets/then-category-export-tr.png" alt="İhracat seçili Türkçe Then kart seçicisi; ön izlemelerde başlatma, yapılandırmalı, kuyruğa alınmış ve alternatif dışa aktarmalar görünüyor."><figcaption>Belgenin ne zaman ve nasıl dışa aktarılacağını seçin.</figcaption></figure>
 
-* **Assign User from Field:** Belirli bir alanda depolanan kullanıcı verisine göre bir görevi veya belgeyi bir kullanıcıya atar, birincil kullanıcı kullanılamıyorsa yedek bir kullanıcı seçeneğiyle.
-* **Assign Document to User or Group:** Bir belgeyi doğrudan bir kullanıcıya veya gruba atar ve sorumluluğun uygun şekilde belirlenmesini sağlar.
+## Görev
 
-<figure><img src="../../../.gitbook/assets/then6 (1).png" alt=""><figcaption></figcaption></figure>
+Bir görev veya bildirim oluşturun ve bir kullanıcıya ya da gruba atayın. Kartta istenen başlığı, tanımı, önceliği ve bildirim ayarlarını girin. Bazı kartlar sırayla atama yapar. Bkz. [Görev](task/README.md).
 
-### **8. Harici Etkileşim Eylemleri:**
+<figure><img src="../../../.gitbook/assets/then-category-task-tr.png" alt="Görev seçili Türkçe Then kart seçicisi; görünen ön izlemeler görev ve bildirim oluşturur veya atar."><figcaption>Bir kişi veya grup için izleme işi oluşturun.</figcaption></figure>
 
-* **Call API:** Belirli yöntemler, parametreler ve verilerle özelleştirilebilen, harici bir API'ye istek gönderir.
-* **Send HTTPS Request:** API çağrılarına benzer ama özellikle HTTPS protokolleri için biçimlendirilmiştir.
+## E-posta
 
-<figure><img src="../../../.gitbook/assets/then7 (1).png" alt=""><figcaption></figcaption></figure>
+Seçilen bir şablonla, alıcılara veya gruplara e-posta gönderin. Kartta şablonu ve hedefi seçin.
 
-### **9. Gelişmiş İşleme:**
+<figure><img src="../../../.gitbook/assets/then-category-email-tr.png" alt="E-posta seçili Türkçe Then kart seçicisi; ön izlemeler şablonlu bir e-postayı alıcılara veya gruplara gönderir."><figcaption>Şablonlu bir e-posta gönderin.</figcaption></figure>
 
-* **Run Workflow:** Sistemde başka bir iş akışını tetikler ve karmaşık süreç zincirlemesine olanak tanır.
+## Masa
 
-#### Pratik Uygulama
+Bir belge tablosundaki girdileri değiştirin veya değerleri hesaplayın. Kartta istenen tabloyu, sütunları, operatörü ve sonuç sütununu seçin. Bkz. [Masa](table/README.md).
 
-Bu eylem kartları, iş akışı kurulumunun önceki bölümlerinde tanımlanan belirli tetikleyicilere göre yanıtları otomatikleştirmek için kullanılır. Örneğin:
+<figure><img src="../../../.gitbook/assets/then-category-table-tr.png" alt="Masa seçili Türkçe Then kart seçicisi; ön izlemeler girdileri değiştirir ve sonuç sütunları hesaplar."><figcaption>Tablo verilerini güncelleyin veya hesaplayın.</figcaption></figure>
 
-* Bir belge inceleme gerektirir olarak tanımlanırsa, tüm belirtilen koşulları geçtikten sonra "Approve the Document" eylemi otomatik olarak tetiklenebilir.
-* Veri yönetimi görevleri için, "Set Checkbox" veya "Set Field to Text" eylemleri belge alanlarının otomatik olarak güncellenmesini sağlar, manuel veri girişini ve hata olasılığını azaltır.
-* API etkileşimleri veya durum değişiklikleri gibi karmaşık görevler, yalnızca ERP sistemi içinde değil aynı zamanda harici servisler ve araçlarla da etkileşimleri kolaylaştırır, entegrasyonu ve işlevselliği artırır.
+## Atanan kişi
 
-### Sonuç
+Belgeyi bir kullanıcıya, gruba, alıcıya veya alt kuruluşa atayın. Bazı kartlar bir alan veya karar tablosu kullanır ve bir yedek seçenek sunar. Seçilen kartta doğru hedefi ve yedeği belirleyin. Bkz. [Atanan kişi](assignee/README.md).
 
-İş akışı sisteminizdeki "Then..." bölümü, iş akışında koşulların karşılanması sonucunda gerçekleşmesi gereken kesin eylemleri tanımlamak için sağlam araçlar sunar. Bu eylemleri etkili bir şekilde kullanarak, işletmeler rutin süreçleri otomatikleştirebilir, veri doğruluğunu sağlayabilir ve değişen bilgilere ve sistem durumlarına dinamik olarak yanıt verebilir. Bu eylemlerin nasıl yapılandırılacağını ve kullanılacağını anlamak, ERP sisteminizin iş akışı yeteneklerinin verimliliğini ve etkinliğini en üst düzeye çıkarmanın anahtarıdır.
+<figure><img src="../../../.gitbook/assets/then-category-assignee-tr.png" alt="Atanan kişi seçili Türkçe Then kart seçicisi; görünen ön izlemeler bir kullanıcı, alıcı, grup veya tedarikçi kişisi atar."><figcaption>Belgeyi sıradaki sorumlu kişiye veya gruba yönlendirin.</figcaption></figure>
+
+## Aksiyon
+
+Başka bir iş akışını çalıştırın, HTTPS isteği gönderin, bir API'yi çağırın veya maliyet artışı hesaplama kartını kullanın. Bu eylemler diğer sistemleri etkileyebilir; hangi uç nokta ve ayarların kullanılacağını yöneticinizden öğrenin. Bkz. [Aksiyon](action/README.md).
+
+<figure><img src="../../../.gitbook/assets/then-category-action-tr.png" alt="Aksiyon seçili Türkçe Then kart seçicisi; ön izlemelerde İş akışını çalıştır, HTTPS isteği, API'yi çağır ve maliyet artışı hesaplama görülüyor."><figcaption>Başka bir iş akışı veya entegrasyon eylemi başlatın.</figcaption></figure>

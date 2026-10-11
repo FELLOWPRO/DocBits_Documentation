@@ -127,6 +127,7 @@
       * [Colonnes de Tableau](administration-and-setup/settings/global-settings/document-types/table-columns.md)
       * [Champs](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Ajout et Édition de Champs](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
+        * [Configuration des propriétés de champ](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
         * [Réglages des données de base](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Formation de Modèle](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Regex](administration-and-setup/settings/global-settings/document-types/regex.md)

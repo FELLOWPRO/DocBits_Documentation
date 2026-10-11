@@ -192,6 +192,7 @@
         * [Hinzufügen und Bearbeiten von Feldern](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
         * [Stammdaten-Einstellungen](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Modelltraining](admin-section/settings/global-settings/document-types/model-training.md)
+        * [Datenimport: Modelltraining](administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md)
       * [Reguläre Ausdrücke](admin-section/settings/global-settings/document-types/regex.md)
       * [Skript](administration-and-setup/settings/global-settings/document-types/script/README.md)
         * [Skripterstellung in DocBits](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)

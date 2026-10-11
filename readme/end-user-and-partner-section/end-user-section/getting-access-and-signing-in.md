@@ -1,4 +1,4 @@
-# Erste Schritte und Anmeldung — Volltext (DE-Übersetzung der EN-Quelle `main` @ 507f98296)
+# Erste Schritte und Anmeldung
 
 Diese Seite erklärt, wie Sie ein DocBits-Konto erhalten und wie Sie sich anmelden, wenn Sie Ihr Passwort nicht haben:
 

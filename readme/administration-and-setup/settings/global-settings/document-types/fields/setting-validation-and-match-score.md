@@ -14,12 +14,12 @@ In **Velden** kunt u de validatie- en herkenningsdrempels voor een documenttype 
 
 Vink **FORCE VALIDATIE** aan in de veldrij om voor dat veld een strengere validatie toe te passen. Het selectievakje staat los van **VEREIST**: een veld als vereist markeren vinkt Force Validatie niet automatisch aan. Het selectievakje kan niet beschikbaar zijn wanneer een veld verborgen of alleen-lezen is. Klik op **Instellingen opslaan** nadat u de veldconfiguratie hebt gewijzigd.
 
-De oude instructies stelden voor om hier numerieke grenzen of reguliere expressies in te voeren. De huidige Velden-tabel toont geen regeleditor in de cel FORCE VALIDATIE. Voor veldspecifieke regels zie [Veldeigenschaften configureren](configuring-field-properties-1.md).
+De oude instructies stelden voor om hier numerieke grenzen of reguliere expressies in te voeren. De huidige Velden-tabel toont geen regeleditor in de cel FORCE VALIDATIE. Voor veldspecifieke regels zie [Veldeigenschappen configureren](configuring-field-properties-1.md).
 
 ## Wedstrijdscore
 
-**WEDSTRIJDSCORE** is een numerieke drempelwaarde, geen vaste referentiewaarde. De schuifregelaar **WEDSTRIJDSCORE** onder **HERKENNINGSINSTELLINGEN** past zijn waarde toe op de veldrijen van het documenttype; gebruik het veld **WEDSTRIJDSCORE** van een veldrij voor een afzonderlijke waarde. In de testorganisatie tonen de schuifregelaar en `invoice_number` beide **80**. Controleer de betrokken velden en klik vervolgens op **Instellingen opslaan**.
+**WEDSTRIJDSCORE** is een numerieke drempelwaarde, geen vaste referentiewaarde. De schuifregelaars **OCR** en **WEDSTRIJDSCORE** onder **HERKENNINGSINSTELLINGEN** passen hun waarde toe op de veldrijen van het documenttype; gebruik de invoervelden **OCR** en **WEDSTRIJDSCORE** van een veldrij voor afzonderlijke waarden. In de testorganisatie tonen beide schuifregelaars **80**, terwijl de rij `invoice_number` **60** toont. Controleer de betrokken velden en klik vervolgens op **Instellingen opslaan**.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-nl-20261011.png" alt="Nederlandse Sandbox-veldrij invoice_number met aangevinkte FORCE VALIDATIE en Wedstrijdscore 80"><figcaption><p>Zoek een veld om het selectievakje FORCE VALIDATIE en de wedstrijdscorewaarde te controleren.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-nl-20261011.png" alt="Nederlandse Sandbox-veldrij invoice_number met aangevinkte FORCE VALIDATIE en Wedstrijdscore 60"><figcaption><p>Zoek een veld om het selectievakje FORCE VALIDATIE en de wedstrijdscorewaarde te controleren.</p></figcaption></figure>
 
 **OCR** is een afzonderlijke herkenningsdrempel naast de Wedstrijdscore. **STANDAARDINSTELLINGEN HERSTELLEN** zet de instellingen terug; gebruik het alleen wanneer u uw eigen drempelwaarden wilt verwijderen. Voor andere veldopties zie het [Velden-overzicht](README.md).

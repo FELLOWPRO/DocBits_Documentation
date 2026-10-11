@@ -1,63 +1,13 @@
-# Aktivierung
+# Dokumenttyp aktivieren oder deaktivieren
 
-## Das Aktivieren oder Deaktivieren von Dokumenttypen in einem Dokumentenmanagementsystem wie Docbits ermöglicht es einer Organisation, nur die Dokumenttypen aktiv zu halten, die sie benötigt, um eine effiziente Verwaltung und Klarheit zu gewährleisten.
+Administratoren können festlegen, welche Dokumenttypen in ihrer Organisation verfügbar sind. Sie ändern dies auf der Seite **Dokumenttypen**, ohne den Typ oder seine Konfiguration zu löschen.
 
-### Hier sind die Schritte zum Aktivieren und Deaktivieren von Dokumenttypen sowie eine Erklärung der Umschaltfunktion in der Benutzeroberfläche:
+1. Öffnen Sie **Einstellungen → Dokumenttypen**.
+2. Suchen Sie den Dokumenttyp, zum Beispiel **Rechnung**, unter **Standard-Dokumenttypen** oder **Benutzerdefinierte Dokumenttypen**.
+3. Nutzen Sie den Schalter **Aktivieren** auf der Karte des Typs. Ein farbiger Schalter bedeutet, dass der Typ aktiv ist; ein grauer Schalter bedeutet, dass er inaktiv ist. Warten Sie die Bestätigungsmeldung ab, bevor Sie die Seite verlassen. Für diesen Schalter gibt es keine separate Speichern-Schaltfläche.
 
-#### **Zugriff auf die Dokumenttypenverwaltung**
+<figure><img src="../../../../.gitbook/assets/document-type-activation-de-20261006.png" alt="Deutsche Einstellungen der Dokumenttypen mit den Schaltern Aktivieren und Extraction auf den Karten Rechnung, Delivery Note und Order Confirmation"><figcaption><p>Jeder Dokumenttyp hat einen eigenen Schalter Aktivieren rechts auf seiner Karte.</p></figcaption></figure>
 
-* Anmelden: Melden Sie sich mit Administratorrechten bei DocBits an.
-* Navigieren: Gehen Sie zu Einstellungen.
-* Dokumenttypen: Suchen Sie den Bereich Dokumenttypen.
+Der Schalter **Extraction** neben **Aktivieren** ist eine andere Einstellung. Er wählt den Extraktionsmodus (Flex oder Fix); er aktiviert oder deaktiviert den Dokumenttyp nicht. Das Zahnrad-Symbol öffnet weitere Einstellungen für diesen Typ. Die Links unter dem Typnamen öffnen seine Layouts, Felder, Tabellen, Skripte und die übrigen verfügbaren Konfigurationsbereiche.
 
-
-
-**Zugriff auf die Liste der Dokumenttypen**
-
-* Greifen Sie auf die Liste der vorhandenen Dokumenttypen zu. Diese Liste zeigt alle definierten Dokumenttypen an, sowohl aktive als auch inaktive.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_default_values.png" alt="Docbits Field Default Values"><figcaption></figcaption></figure>
-
-**Aktivieren oder Deaktivieren eines Dokumenttyps Dokumenttyp auswählen:**
-
-* Wählen Sie den Dokumenttyp aus, den Sie aktivieren oder deaktivieren möchten.&#x20;
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_enable_historization.png" alt="Docbits Field Enable Historization"><figcaption></figcaption></figure>
-
-**Verwenden der Umschaltfunktion:**
-
-* In der Benutzeroberfläche befindet sich neben jedem Dokumenttyp ein Umschalter, der die Aktivierung und Deaktivierung ermöglicht.&#x20;
-
-**Aktivierung:**
-
-* Wenn der Dokumenttyp derzeit deaktiviert ist, zeigt der Schalter möglicherweise eine graue oder "Aus"-Position an.&#x20;
-* Klicken Sie auf den Schalter, um den Dokumenttyp zu aktivieren. Der Schalter ändert seine Position und Farbe, um die Aktivierung anzuzeigen.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_user_permissions.png" alt="Docbits Field User Permissions"><figcaption></figcaption></figure>
-
-**Deaktivierung:**
-
-* Wenn der Dokumenttyp derzeit aktiviert ist, zeigt der Schalter eine farbige oder "Ein"-Position an.&#x20;
-* Klicken Sie auf den Schalter, um den Dokumenttyp zu deaktivieren. Der Schalter ändert seine Position und Farbe, um die Deaktivierung anzuzeigen.
-
-<figure><img src="../../../../.gitbook/assets/docbits_deactivate_doc_type_switch.png" alt="Docbits Deactivate Doc Type Switch"><figcaption></figcaption></figure>
-
-
-
-**Speichern:**&#x20;
-
-* Stellen Sie sicher, dass alle Änderungen gespeichert werden. Einige Systeme speichern Änderungen automatisch, während andere eine explizite Bestätigung erfordern.
-
-### Benachrichtigung und Dokumentation
-
-**Benutzer informieren:**&#x20;
-
-* Informieren Sie die Benutzer über die Aktivierung oder Deaktivierung des Dokumenttyps, insbesondere wenn dies Auswirkungen auf ihre Arbeitsprozesse hat.
-
-**Dokumentation aktualisieren:**&#x20;
-
-* Aktualisieren Sie die Systemdokumentation, um den aktuellen Status der Dokumenttypen widerzuspiegeln.
-
-
-
-Fazit: Die Möglichkeit, Dokumenttypen je nach Bedarf der Organisation zu aktivieren oder zu deaktivieren, ist ein nützliches Werkzeug für die Verwaltung der Dokumentenverarbeitung in Docbits. Durch einfaches Verwenden der Umschaltfunktion in der Benutzeroberfläche können Administratoren flexibel und effizient reagieren und sicherstellen, dass das System optimal auf die aktuellen Geschäftsanforderungen abgestimmt ist.
+DocBits stellt die Standard-Dokumenttypen bereit, die nicht gelöscht werden können. Sie können auch eigene Typen anlegen und verwalten. Siehe [Dokumenttypen hinzufügen und bearbeiten](adding-editing-document-types.md) für die nächsten Einrichtungsschritte und [Tabellenspalten](table-columns/README.md) zum Konfigurieren der extrahierten Positionen.

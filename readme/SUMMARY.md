@@ -506,6 +506,7 @@
 
 ## Fonctions et outils avancés <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [Explorateur de graphe de connaissances](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [Postman pour DocBits](advanced-functions-and-tools/postman-for-docbits/README.md)
   * [Testez votre connexion BOD avec Postman](advanced-functions-and-tools/postman-for-docbits/test-your-bod-connection-with-postman.md)

@@ -1,6 +1,6 @@
 # DocBits Release Lifecycle Strategy
 
-DocBits, the application from FELLOWPRO, provides two release channels, **VESTA** and **NOVA**, so your organization can prepare for upcoming releases and choose when to adopt them during the parallel production phase.
+DocBits provides two release channels, **VESTA** and **NOVA**, so your organization can prepare for upcoming releases and choose when to adopt them during the parallel production phase.
 
 Both channels are production capable. VESTA provides the current common release, while NOVA introduces the next release through development, validation, and production availability. During parallel production, the channels offer different releases at the same time.
 

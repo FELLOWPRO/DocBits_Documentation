@@ -52,19 +52,11 @@ Veja aqui adicionar [Script em DocBits](../../../administration-and-setup/settin
 
 <figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
 
-Existem campos que são obrigatórios para edições futuras, estes podem ser editados nas configurações.
+Os campos que precisam de atenção exibem uma borda colorida ou um ícone de informação. No exemplo abaixo, o campo **Número da fatura** tem uma borda vermelha e um ícone de aviso. O valor está visível na fatura à direita, mas o DocBits não o extraiu do documento. Selecione o número no documento ou corrija o campo e, em seguida, salve o documento.
 
-Use a dica de ferramenta para descobrir se:
+Passe o cursor ou selecione o ícone de informação ao lado de um campo para ler o motivo específico. Dependendo do campo, a mensagem pode indicar uma extração ausente, um valor obrigatório, uma confiança baixa ou uma discrepância de validação. Se o aviso se referir aos totais, compare os campos de valor com a fatura e use [Verificações Automáticas no Ecrã de Validação](automatic-checks-on-the-validation-screen.md) para a verificação correspondente.
 
-* É um campo obrigatório (required)
-* Validação necessária
-* Baixa confiança
-* Descompasso no valor total de impostos
-
-**Campos Obrigatórios:**
-
-* **Propósito:** Identifica campos obrigatórios dentro dos documentos que devem ser preenchidos ou corrigidos antes de um processamento adicional.
-* **Caso de Uso:** Garante que dados essenciais sejam capturados com precisão, mantendo a integridade dos dados e conformidade com as regras de negócios.
+<figure><img src="../../../.gitbook/assets/validation-required-field-en-2026.png" alt="Ecrã de validação do DocBits com um aviso vermelho no número da fatura e o número correspondente visível numa fatura sintética"><figcaption><p>Um campo que precisa de atenção junto à fatura usada para verificar o seu valor.</p></figcaption></figure>
 
 ## Tabela extraída (itens de linha)
 

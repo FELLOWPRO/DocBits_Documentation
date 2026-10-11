@@ -24,6 +24,10 @@ The Document Types section lists all document types recognized and processed by 
 8. **Scripts**: Write or modify scripts that run custom processing rules or workflows for documents of this type.
 9. **E-DOC**: Configure settings related to the exchange of documents in standardized electronic formats. You can configure XRechnung, EDI, FakturaPA or EDI
 
+#### Reglas de validación personalizadas
+
+Abra un tipo de documento y seleccione **Reglas de validación personalizadas** para gestionar las reglas de validación propias de ese tipo (la función debe estar activada en el tipo de documento). Para reutilizar una regla existente sin recrearla, siga la guía [Duplicar una regla de validación personalizada](duplicate-a-custom-validation-rule.md). La guía explica el nombre de la regla, la clave de reglas y los botones de confirmación.
+
 {% hint style="info" %}
 See [Setup Document Type](../../../setup/document-types/)
 {% endhint %}

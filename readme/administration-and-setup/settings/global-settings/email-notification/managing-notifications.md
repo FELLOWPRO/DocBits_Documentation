@@ -23,7 +23,7 @@ Reguła pojawia się teraz na liście. Przykład dokumentacyjny został następn
 
 Otwórz menu **Actions** wiersza. **Redagować** otwiera regułę z jej bieżącymi wartościami. **Aktywować** włącza ten nieaktywny przykład; aktywna reguła oferuje zamiast tego **Dezaktywować**. **Dzienniki** otwiera historię powiadomień reguły. **Usuwać** usuwa regułę po potwierdzeniu. Przed aktywacją lub zmianą reguły sprawdź odbiorców i czas.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-164-example-actions-pl-20261011-readable.png" alt="Menu Actions nieaktywnej reguły demonstracyjnej z Redagować, Aktywować, Dzienniki i Usuwać"><figcaption><p>Zbliżenie menu tej samej nieaktywnej reguły. Kolumnę Nazwa przeniesiono obok Actions, aby nazwa i działania były czytelne. Dostępne działania zależą od tego, czy reguła jest aktywna.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-164-example-actions-pl-20261011-stable.png" alt="Menu Actions nieaktywnej reguły demonstracyjnej z Redagować, Aktywować, Dzienniki i Usuwać"><figcaption><p>Zbliżenie menu tej samej nieaktywnej reguły. Kolumnę Nazwa przeniesiono obok Actions, aby nazwa i działania były czytelne. Dostępne działania zależą od tego, czy reguła jest aktywna.</p></figcaption></figure>
 
 Jeśli lista pokazuje **No Record Found!**, najpierw utwórz regułę. Jeśli lista **Typ Dokumentu** lub szablonów e-mail jest pusta, skonfiguruj aktywny typ dokumentu i pasujący szablon, zanim wrócisz do tego formularza.
 

@@ -4,7 +4,7 @@
 
 ## Descripción General
 
-<figure><img src="../../../.gitbook/assets/validation_screen1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_overview_es.png" alt="Pantalla de validación de DocBits en español con los campos de cabecera, la tabla de líneas de detalle y el visor de documentos"><figcaption><p>La pantalla de validación con un documento de ejemplo</p></figcaption></figure>
 
 ### Origen del Documento (Document Origin)
 
@@ -44,21 +44,11 @@ Vea aquí agregar [Script en DocBits](../../../administration-and-setup/settings
 
 ### **Campos Requeridos:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-required-field-es-2026.png" alt="Pantalla de validación de DocBits en español con una advertencia en rojo en el número de factura y el número coincidente visible en una factura sintética"><figcaption><p>Un campo que requiere atención junto a la factura usada para comprobar su valor.</p></figcaption></figure>
 
-Hay campos que son necesarios para una edición posterior, estos se pueden editar en la configuración.
+Los campos que requieren atención muestran un borde de color o un icono de información. En el ejemplo anterior, el campo **Número de factura** tiene un borde rojo y un icono de advertencia. El valor es visible en la factura de la derecha, pero DocBits no lo extrajo del documento. Seleccione el número en el documento o corrija el campo y guarde el documento.
 
-Use el consejo de herramienta para averiguar si:
-
-* Es un campo obligatorio (requerido)
-* Se requiere validación
-* Baja confianza
-* Desajuste del monto total de impuestos
-
-**Campos Requeridos:**
-
-* **Propósito:** Identifica campos obligatorios dentro de los documentos que deben completarse o corregirse antes de un procesamiento posterior.
-* **Caso de Uso:** Asegura que los datos esenciales se capturen con precisión, manteniendo la integridad de los datos y el cumplimiento de las reglas comerciales.
+Pase el cursor sobre el icono de información junto a un campo, o selecciónelo, para leer el motivo concreto. Según el campo, el mensaje puede indicar una extracción ausente, un valor obligatorio, una confianza baja o un desajuste de validación. Si la advertencia afecta a los totales, compare los campos de importe con la factura y use [Comprobaciones Automáticas en la Pantalla de Validación](automatic-checks-on-the-validation-screen.md) para la comprobación correspondiente.
 
 ## Tabla extraída (líneas de detalle)
 

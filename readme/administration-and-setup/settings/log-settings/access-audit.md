@@ -1,6 +1,6 @@
 # Audit Accesso
 
-<figure><img src="../../../.gitbook/assets/access_audit_settings_page_it.png" alt="Audit Logs con la piste di audit disattivata; la pagina mostra il selettore dell'organizzazione, i filtri, Enable Now, Auto-refresh, Refresh ed Export"><figcaption><p>La pagina Sandbox in italiano prima che la registrazione audit sia attivata.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/access_audit_settings_page_it.png" alt="Audit Logs con la registrazione audit disattivata; la pagina mostra il selettore dell'organizzazione, i filtri, Enable Now, Auto-refresh, Refresh ed Export"><figcaption><p>La pagina Sandbox in italiano prima che la registrazione audit sia attivata.</p></figcaption></figure>
 
 Audit Accesso registra chi ha creato, modificato o eliminato una risorsa e quando. Apri **Impostazioni → Registro Attività → Audit Accesso** per consultare il registro. Attiva il servizio per un'organizzazione solo quando intendi raccogliere eventi di audit.
 

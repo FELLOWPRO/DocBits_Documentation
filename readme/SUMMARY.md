@@ -191,7 +191,7 @@
         * [Risoluzione dei problemi](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)
         * [Rilevamento dei duplicati](administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md)
         * [Approvazione](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
-          * [Timbro di approvazione](administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-stamp.md)
+          * [Selo de aprovação](administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-stamp.md)
           * [Storia dell'approvazione](administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history.md)
         * [Ordine di acquisto](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/README.md)
           * [Table PO dans le Constructeur de Mise en Page](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/po-table-in-layout-builder.md)

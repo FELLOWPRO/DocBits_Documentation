@@ -18,7 +18,7 @@ Die alten Anweisungen schlugen vor, hier numerische Grenzwerte oder reguläre Au
 
 ## Match Score
 
-**Match Score** ist ein numerischer Schwellenwert, kein fester Referenzwert. Der **MATCH SCORE**-Regler unter **ERKENNUNGSEINSTELLUNGEN** wendet seinen Wert auf die Feldzeilen des Dokumenttyps an; verwenden Sie das **MATCH SCORE**-Eingabefeld einer Feldzeile für einen einzelnen Wert. In der Testorganisation zeigen der Regler und `invoice_number` beide den Wert **60**. Prüfen Sie die betroffenen Felder und klicken Sie dann auf **Einstellungen speichern**.
+**Match Score** ist ein numerischer Schwellenwert, kein fester Referenzwert. Die Regler **OCR** und **MATCH SCORE** unter **ERKENNUNGSEINSTELLUNGEN** wenden ihren Wert auf die Feldzeilen des Dokumenttyps an; verwenden Sie das **MATCH SCORE**-Eingabefeld einer Feldzeile für einen einzelnen Wert. In der Testorganisation zeigen beide Regler **80**, die Zeile `invoice_number` zeigt **60**. Prüfen Sie die betroffenen Felder und klicken Sie dann auf **Einstellungen speichern**.
 
 <figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-de-20261011.png" alt="Deutsche Sandbox-Feldzeile invoice_number mit aktivierter ÜBERPRÜFUNG ERFORDERLICH und Match Score 60"><figcaption>Suchen Sie nach einem Feld, um sein Kontrollkästchen ÜBERPRÜFUNG ERFORDERLICH und seinen Match-Score-Wert zu prüfen.</figcaption></figure>
 

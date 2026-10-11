@@ -457,7 +457,7 @@
       * [Salvare ed Eliminare Regole](administration-and-setup/setup/document-training/training-line-fields-table-training/save-and-delete-rules.md)
   * [Configurazione SSO](administration-and-setup/setup/sso-configuration.md)
   * [Test](administration-and-setup/setup/testing/README.md)
-    * [Abbinamento PO](administration-and-setup/setup/testing/po-matching.md)
+    * [Correspondência de Ordens de Compra (PO Matching)](administration-and-setup/setup/testing/po-matching.md)
     * [Contabilità Automatica](administration-and-setup/setup/testing/auto-accounting/README.md)
       * [LN](administration-and-setup/setup/testing/auto-accounting/ln.md)
       * [M3](administration-and-setup/setup/testing/auto-accounting/m3.md)

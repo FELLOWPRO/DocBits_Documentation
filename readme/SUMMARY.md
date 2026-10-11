@@ -380,6 +380,7 @@
     * [Taakbeheer](administration-and-setup/settings/log-settings/task-management.md)
     * [Gegevenssynchronisatie](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Volledige-Tekstzoek-Instellingen](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Toegangsaudit](administration-and-setup/settings/log-settings/access-audit.md)
   * [Leverancier Instelling](administration-and-setup/settings/supplier-setting/README.md)
     * [Leverancier Algemene Instellingen](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
     * [E-mail Sjablonen Bewerken](administration-and-setup/settings/supplier-setting/editing-email-templates.md)

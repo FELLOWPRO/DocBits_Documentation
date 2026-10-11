@@ -129,6 +129,7 @@
       * [Pola](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Dodawanie i Edytowanie Pól](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
         * [Ustawienia danych głównych](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
+        * [Konfigurowanie Właściwości Pola](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
       * [Szkolenie Modelu](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Wyrażenia Regularne](administration-and-setup/settings/global-settings/document-types/regex.md)
       * [Skrypt](administration-and-setup/settings/global-settings/document-types/script/README.md)

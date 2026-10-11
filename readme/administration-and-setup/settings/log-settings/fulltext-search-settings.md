@@ -6,7 +6,7 @@ Ustawienia Wyszukiwania Pełnotekstowego określają, co DocBits indeksuje i jak
 
 ## Wymagania wstępne
 
-Moduł Wyszukiwania Pełnotekstowego musi być aktywowany w **Ustawienia → Moduł → Dashboards & Analytics → Wyszukiwanie pełnotekstowe**. Jeśli moduł nie jest włączony, okno oferuje trzy działania:
+Moduł Wyszukiwania Pełnotekstowego musi być aktywowany w **Ustawienia → Moduł → Dashboards & Analytics → Full text search**. Jeśli moduł nie jest włączony, okno oferuje trzy działania:
 
 * **Pomoc (?)** — otwiera dokumentację Wyszukiwania Pełnotekstowego w nowej karcie, zanim zmienisz jakiekolwiek ustawienie.
 * **Przejdź do modułów** — otwiera ustawienia modułu Dashboards & Analytics, aby przejrzeć konfigurację.

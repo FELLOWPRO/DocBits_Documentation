@@ -1,80 +1,71 @@
-# Then
+# Then : choisir une carte d'action
 
-## Aperçu des cartes d'action « Then… »
+Une carte **Then** indique à un workflow quoi faire après son déclencheur **When** et ses éventuelles conditions **And**. Dans le **Workflow Builder**, sélectionnez **Ajouter une carte** sous **Dans ce cas...**. Choisissez une catégorie à gauche ou tapez un nom dans **Carte de recherche**. Sélectionnez un aperçu de carte pour l'ajouter, remplissez les champs affichés sur la carte, puis enregistrez le workflow. Faites défiler la fenêtre de sélection pour voir d'autres cartes. Sélectionnez **×** pour la fermer sans ajouter de carte. Voir [Workflow](../README.md) pour la séquence complète.
 
-### **1. Actions sur les champs de document :**
+Les aperçus ci-dessous montrent des actions disponibles, pas des paramètres déjà configurés. Choisissez l'action qui correspond au résultat souhaité.
 
-* **Invert Checkbox :** cette action inverse l'état d'un champ de type case à cocher dans un document.
-* **Set Checkbox :** définit l'état d'un champ de type case à cocher sur vrai (cochée) ou faux (décochée).
-* **Set Field to Text :** cette action définit un champ de document donné sur une valeur texte spécifiée.
+## Champ du document
 
-<figure><img src="../../../.gitbook/assets/then1.png" alt=""><figcaption></figcaption></figure>
+Définir ou inverser une case à cocher, saisir du texte dans un champ, ou copier un champ dans un autre. Choisissez les noms de champs et les valeurs demandés par la carte. Voir [Champ du document](document-field/README.md).
 
-### **2. Actions sur le document :**
+<figure><img src="../../../.gitbook/assets/then-category-document-field-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Champ du document sélectionnée ; les aperçus montrent les actions case à cocher, texte et copie de champ."><figcaption>Modifier un champ ou copier son contenu.</figcaption></figure>
 
-* **Approve the Document :** marque un document comme approuvé dans le système.
-* **Reject the Document :** marque un document comme rejeté.
+## Document
 
-<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+Choisissez **Approuver le document** ou **Rejeter le document** lorsque le workflow doit prendre cette décision. Ajoutez d'abord une condition **And** si l'approbation doit dépendre d'un contrôle. Voir [Document](document/README.md).
 
-### **3. Actions d'export :**
+<figure><img src="../../../.gitbook/assets/then-category-document-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Document sélectionnée ; les aperçus Approuver le document et Rejeter le document sont visibles."><figcaption>Approuver ou rejeter le document actuel.</figcaption></figure>
 
-* **Export document with export configuration :** lance le processus d'export avec une configuration d'export spécifique.
-* **Start Export :** lance le processus d'export.
+## Logique
 
+Utilisez ces cartes pour convertir des valeurs entre formats numérique, texte et booléen, ou pour lire une valeur dans un JSON. Choisissez les champs d'entrée et de sortie sur la carte sélectionnée.
 
+<figure><img src="../../../.gitbook/assets/then-category-logic-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Logique sélectionnée ; les aperçus visibles convertissent des types de données et lisent des valeurs dans un JSON."><figcaption>Transformer des valeurs pour une étape ultérieure du workflow.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+## Statut
 
-### **4. Actions sur le statut :**
+Choisissez **Modifier le statut** pour faire passer le document au statut sélectionné. La carte peut aussi déclencher un autre workflow. Voir [Statut](status/README.md).
 
+<figure><img src="../../../.gitbook/assets/then-category-status-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Statut sélectionnée ; l'aperçu Modifier le statut contient un champ de statut et un déclenchement de workflow facultatif."><figcaption>Faire passer le document à un autre statut.</figcaption></figure>
 
+## Invites et scripts
 
-* **Change Status :** change le statut d'un document ou d'une tâche en un nouveau statut spécifié.
+Choisissez cette catégorie pour exécuter un script d'invite DocOperator. Sélectionnez le script et les variables demandés par la carte. La carte propose aussi des paramètres d'exécution tels que les tentatives.
 
-<figure><img src="../../../.gitbook/assets/then3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-prompts-scripts-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Invites et scripts sélectionnée ; un aperçu de script d'invite DocOperator est visible."><figcaption>Exécuter un script d'invite DocOperator configuré.</figcaption></figure>
 
-### **5. Actions sur les tâches :**
+## Exportation
 
-* Attributions et notifications :
-  * **Assign Task :** crée et assigne une tâche avec des détails précis à une personne ou à un groupe, avec la possibilité de les notifier par e-mail.
-  * **Create a New Task :** similaire à l'attribution, mais axé sur la création d'une tâche entièrement nouvelle dans le système.
+Lancer une exportation, exporter avec une configuration choisie, ou mettre en file d'attente une exportation finale. Choisissez la configuration d'exportation et l'option de tâches en attente affichés sur votre carte. Voir [Exportation](export/README.md).
 
-<figure><img src="../../../.gitbook/assets/then4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-export-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Exportation sélectionnée ; les aperçus montrent le lancement, l'exportation configurée, la file d'attente et l'exportation finale."><figcaption>Choisir quand et comment le document est exporté.</figcaption></figure>
 
-### **6. Actions sur les tableaux :**
+## Tâche
 
-* **Calculate in Table :** effectue des calculs sur les données d'un tableau selon des conditions spécifiées et stocke les résultats dans une colonne désignée.
-* **Change Entries :** met à jour les entrées d'un tableau selon des conditions spécifiées.
+Créer une tâche ou une notification et l'assigner à un utilisateur ou à un groupe. Saisissez le titre, la description, la priorité et les paramètres de notification demandés par la carte. Certaines cartes assignent de façon séquentielle. Voir [Tâche](task/README.md).
 
-<figure><img src="../../../.gitbook/assets/then5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-task-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Tâche sélectionnée ; les aperçus visibles créent ou assignent des tâches et des notifications."><figcaption>Créer un travail de suivi pour une personne ou un groupe.</figcaption></figure>
 
-### **7. Actions sur l'assigné :**
+## E-mail
 
-* **Assign User from Field :** assigne un utilisateur à une tâche ou à un document à partir des données utilisateur stockées dans un champ spécifique, avec une option d'utilisateur de repli si l'utilisateur principal n'est pas disponible.
-* **Assign Document to User or Group :** assigne directement un document à un utilisateur ou à un groupe, garantissant que la responsabilité est correctement désignée.
+Envoyer un e-mail à l'aide d'un modèle sélectionné, soit à des destinataires, soit à des groupes. Choisissez le modèle et la destination sur la carte.
 
-<figure><img src="../../../.gitbook/assets/then6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-email-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie E-mail sélectionnée ; les aperçus envoient un e-mail avec modèle à des destinataires ou à des groupes."><figcaption>Envoyer un e-mail avec un modèle.</figcaption></figure>
 
-### **8. Actions d'interaction externe :**
+## Tableau
 
-* **Call API :** envoie une requête à une API externe, personnalisable avec des méthodes, des paramètres et des données spécifiques.
-* **Send HTTPS Request :** similaire aux appels d'API, mais spécifiquement formaté pour les protocoles HTTPS.
+Modifier des entrées ou calculer des valeurs dans un tableau de document. Sélectionnez le tableau, les colonnes, l'opérateur et la colonne de résultat demandés par la carte. Voir [Tableau](table/README.md).
 
-<figure><img src="../../../.gitbook/assets/then7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/then-category-table-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Tableau sélectionnée ; les aperçus modifient des entrées et calculent des colonnes de résultat."><figcaption>Mettre à jour ou calculer les données d'un tableau.</figcaption></figure>
 
-### **9. Traitement avancé :**
+## Attribué à
 
-* **Run Workflow :** déclenche un autre workflow au sein du système, permettant un enchaînement complexe de processus.
+Assigner le document à un utilisateur, un groupe, un bénéficiaire ou une sous-organisation. Certaines cartes utilisent un champ ou une table de décision et proposent une solution de repli. Choisissez la bonne destination et la solution de repli sur la carte sélectionnée. Voir [Attribué à](assignee/README.md).
 
-#### Application pratique
+<figure><img src="../../../.gitbook/assets/then-category-assignee-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Attribué à sélectionnée ; les aperçus visibles assignent un utilisateur, un bénéficiaire, un groupe ou un contact fournisseur."><figcaption>Acheminer le document vers la prochaine personne ou le prochain groupe responsable.</figcaption></figure>
 
-Ces cartes d'action servent à automatiser des réponses en fonction de déclencheurs précis identifiés dans les parties précédentes de la configuration du workflow. Par exemple :
+## Action
 
-* Si un document est identifié comme nécessitant un examen, l'action « Approve the Document » peut être déclenchée automatiquement une fois qu'il satisfait toutes les conditions spécifiées.
-* Pour les tâches de gestion des données, les actions « Set Checkbox » ou « Set Field to Text » garantissent la mise à jour automatique des champs de document, réduisant la saisie manuelle et le risque d'erreurs.
-* Les tâches complexes telles que les interactions d'API ou les changements de statut rationalisent les interactions non seulement au sein du système ERP, mais aussi avec des services et outils externes, améliorant l'intégration et la fonctionnalité.
+Exécuter un autre workflow, envoyer une requête HTTPS, appeler une API, ou utiliser la carte de calcul d'IA pour les majorations de coûts. Ces actions peuvent affecter d'autres systèmes ; demandez à votre administrateur quel point d'accès et quels paramètres utiliser. Voir [Action](action/README.md).
 
-### Conclusion
-
-La section « Then… » de votre système de workflow fournit des outils robustes pour définir des actions précises qui doivent se produire lorsque les conditions du workflow sont remplies. En utilisant efficacement ces actions, les entreprises peuvent automatiser les processus routiniers, garantir l'exactitude des données et réagir de manière dynamique aux évolutions des informations et des états du système. Comprendre comment configurer et exploiter ces actions est essentiel pour maximiser l'efficacité des capacités de workflow de votre système ERP.
+<figure><img src="../../../.gitbook/assets/then-category-action-fr.png" alt="Sélecteur de cartes Then en français avec la catégorie Action sélectionnée ; les aperçus montrent Exécuter le flux de travail, requête HTTPS, appel d'API et calcul de l'IA pour les majorations de coûts."><figcaption>Démarrer un autre workflow ou une action d'intégration.</figcaption></figure>

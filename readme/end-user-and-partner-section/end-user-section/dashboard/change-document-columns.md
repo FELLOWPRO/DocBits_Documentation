@@ -10,13 +10,13 @@ hidden: true
 
 The following menu will then be displayed:
 
-![Advanced Settings Menu](https://lh7-us.googleusercontent.com/wWt5QbmwZf44enmOoLcofh6SvyYPiHTav9OiEog_m2xtnty6X73pFlhfdM9aglx89_pfbiACZx5BejagV-wAKwlDTuGoGNu5jgbcZ5djrZ_h1IgGp-8uaq8UHY-umjrs96hb4FZOzHFzdLasg2F_ftw)
+<figure><img src="../../../.gitbook/assets/a-dashboard-change-document-columns-menu-en-20261006.png" alt="Dashboard toolbar with the Advanced settings menu open."><figcaption><p>The advanced settings menu.</p></figcaption></figure>
 
 Select the button labeled “Set dashboard columns for organization” and a list of all the column names will be shown.
 
 From this menu, you can select the column names and use the arrows to add and remove the columns you desire.
 
-![Dashboard Column Settings](https://lh7-us.googleusercontent.com/cXnnrIR-y4TRDnRE9irGvvjnmkN-HSGEQTh7FiwsjRHzXF7FNjd-_gLO-m55fLlv6lVjk-VvThgdW5JWgqIVZSm5tfk3hC7xrj68uRE5OgIPMtYIrpxOhhYzk4OMibyDBqvHQ0VZaDAysZohlH8dxm8)
+<figure><img src="../../../.gitbook/assets/a-dashboard-change-document-columns-dialog-en-20261006.png" alt="Columns settings dialog with Hidden columns and Visible columns lists and arrows to move columns."><figcaption><p>Move columns between hidden and visible columns.</p></figcaption></figure>
 
 <div data-full-width="true"><figure><img src="../../../.gitbook/assets/dashboard_column_ordering.png" alt="Reordering Dashboard Columns"><figcaption></figcaption></figure></div>
 

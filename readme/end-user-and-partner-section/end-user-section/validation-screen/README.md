@@ -44,7 +44,7 @@ Zie hier toevoegen [Script in DocBits](../../../administration-and-setup/setting
 
 ### **Verplichte velden:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Verplichte velden"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_mandatory_fields.png" alt="Docbits Mandatory Fields"><figcaption></figcaption></figure>
 
 Velden die aandacht nodig hebben, tonen een gekleurd kader of een informatiepictogram. In het onderstaande voorbeeld heeft het veld **Factuurnummer** een rood kader en een waarschuwingspictogram. De waarde is zichtbaar op de factuur rechts, maar DocBits heeft deze niet uit het document geëxtraheerd. Selecteer het nummer op het document of corrigeer het veld en sla het document vervolgens op.
 

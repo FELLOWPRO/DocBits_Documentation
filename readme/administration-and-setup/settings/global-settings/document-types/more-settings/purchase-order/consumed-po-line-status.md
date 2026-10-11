@@ -1,30 +1,36 @@
 # Verbrauchter PO-Zeilenstatus
 
-**Übersicht**
+**Der Verbrauchte PO-Zeilenstatus** färbt Bestellpositionen (PO-Positionen) in der Abgleichsansicht entsprechend dem Anteil ein, der bereits abgeglichen wurde. Aktivieren Sie die Einstellung für den Dokumenttyp Ihrer Rechnungen, wenn Ihr Team noch nicht genutzte, teilweise genutzte und vollständig genutzte PO-Positionen schnell erkennen soll. Die Farbe ist nur ein visuelles Hilfsmittel; prüfen Sie vor der Entscheidung, ob eine Position erneut abgeglichen werden kann, die **Abgeglichene Menge** und die gewählte PO-Mengenspalte.
 
-Diese Einstellung verbessert den Bildschirm **Purchase Order Matching**, indem sie die Farbcodierung auf PO-Zeilen anwendet. Sie bietet ein schnelles visuelles Verständnis des Abgleichstatus für jede Zeile.
+## Einstellung aktivieren
 
-## Wo zu aktivieren
+1. Öffnen Sie **Einstellungen → Dokumenttypen**. Suchen Sie den Dokumenttyp, den Sie für Ihre Rechnungen verwenden, und wählen Sie das Zahnrad auf seiner Karte, um **Weitere Einstellungen** zu öffnen. Der Screenshot zeigt die Karte **Rechnung**. Lassen Sie die Schalter **Aktivieren** und **Extraktion** unverändert.
 
-1. Gehe zu: **Einstellungen** → \*\* Globale Einstellungen\*\* → **Dokumententyp**
-2.  Wählen Sie den gewünschten Dokumententyp aus und klicken Sie auf **Weitere Einstellungen**.
+   <figure><img src="../../../../../../.gitbook/assets/1-consumed-po-line-document-types-de.png" alt="Dokumenttypen-Seite mit der Rechnung-Karte und ihrem Zahnrad für Weitere Einstellungen"><figcaption><p>Weitere Einstellungen über die Rechnung-Karte öffnen.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  Im Abschnitt **Purchase Order** navigieren Sie zur Option **Update Document Purchase Order Status**.
+2. Klappen Sie **Bestellung** auf, falls es eingeklappt ist. Suchen Sie **Status der verbrauchten Bestellposition** und aktivieren Sie seinen Schalter. Das ist eine eigene Einstellung, unabhängig von **Dokumentstatus für Einkaufsbestellung aktualisieren** weiter unten im selben Abschnitt.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FUxtFCj5v2TU1q0qwYtFv%252Fimage.png%3Falt%3Dmedia%26token%3Dcb97a149-86d1-43e9-a5bf-a9aadaa6c047\&width=768\&dpr=4\&quality=100\&sign=3bdd311b\&sv=2)
+   <figure><img src="../../../../../../.gitbook/assets/2-consumed-po-line-settings-de.png" alt="Abschnitt Bestellung der Weitere-Einstellungen-Seite mit dem sichtbaren Schalter Status der verbrauchten Bestellposition"><figcaption><p>Den Schalter „Status der verbrauchten Bestellposition“ wählen.</p></figcaption></figure>
 
-## **Was die Farben bedeuten**
+   <figure><img src="../../../../../../.gitbook/assets/3-consumed-po-line-toggle-de.png" alt="Nahaufnahme des Labels Status der verbrauchten Bestellposition und seines Schalters"><figcaption><p>Der Schalter ist in diesem Beispiel ausgeschaltet; schalten Sie ihn ein, um die Abgleichsfarben zu sehen.</p></figcaption></figure>
 
-*   **Weiß** – Die PO-Zeile wurde noch **nicht abgeglichen**.
+3. Öffnen Sie eine Rechnung mit Bestellabgleich und prüfen Sie ihre PO-Positionen. Die Beispiele unten zeigen, wie die Positionsfarben zum Abgleichstatus gehören. Die Abgleichsschritte finden Sie unter [Bildschirm „Bestellabgleich“](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md).
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjwYiBzpTPFv8tQaTTaeJ%252Fimage.png%3Falt%3Dmedia%26token%3D20a99b45-2d61-4bd5-84b7-b0c24b04e223\&width=768\&dpr=4\&quality=100\&sign=ebdb365\&sv=2)
-*   **Blau** – Die PO-Zeile wurde vom Benutzer **ausgewählt**, um abgeglichen zu werden.
+## Die PO-Positionsfarben lesen
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FwJK44aAJJPzJm4f4miFg%252Fimage.png%3Falt%3Dmedia%26token%3D3a51bd26-5b87-4b61-a056-ae40bccc4e55\&width=768\&dpr=4\&quality=100\&sign=d445fa07\&sv=2)
-*   **Gelb** – Die PO-Zeile ist **teilweise abgeglichen**; es steht noch eine Menge zur Verfügung, die abgeglichen werden kann.
+| Aussehen | Bedeutung | Was prüfen |
+| --- | --- | --- |
+| Unauffällig oder weiß | Für diese PO-Position wurde noch keine Menge abgeglichen. | PO-Menge und Rechnungsposition vor dem Abgleich prüfen. |
+| Blauer Ton | Sie haben die Position in der aktuellen Abgleichsansicht ausgewählt. | Die Auswahl ist vorübergehend; sie bedeutet nicht, dass die Position vollständig abgeglichen ist. |
+| Blassorange | Ein Teil der Menge ist abgeglichen, aber die abgeglichene Menge liegt unter der gewählten PO-Menge. | Prüfen, welche Menge noch verfügbar ist. |
+| Blassviolett | Die abgeglichene Menge erreicht mindestens die gewählte PO-Menge. | Gehen Sie nicht davon aus, dass weitere Menge verfügbar ist. |
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNoof3pErQqAvAWZpo4Fd%252Fimage.png%3Falt%3Dmedia%26token%3D21a15672-8e84-4e22-a0f2-8b65bcbfda54\&width=768\&dpr=4\&quality=100\&sign=4a68abca\&sv=2)
-*   **Pink** – Die PO-Zeile ist **vollständig abgeglichen**; es steht keine weitere Menge zur Verfügung, die abgeglichen werden kann.
+<figure><img src="../../../../../../.gitbook/assets/image (470).png" alt="PO-Position mit abgeglichener Menge null und ohne Statusfarbe"><figcaption><p>Für diese Position wurde noch keine Menge abgeglichen.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F722yxDRHmvz6CLfIamq8%252Fimage.png%3Falt%3Dmedia%26token%3D15aecf8c-aa63-4de4-b77f-1147c8ed593a\&width=768\&dpr=4\&quality=100\&sign=c1b2c2ab\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/image (472).png" alt="PO-Position mit blauem Auswahlton in der Abgleichsansicht"><figcaption><p>Die Position ist für den aktuellen Abgleich ausgewählt.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="PO-Position mit blassoranger Hintergrundfarbe und abgeglichener Menge unter der PO-Menge"><figcaption><p>Die Position ist teilweise genutzt.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/image (473).png" alt="PO-Position mit blassvioletter Hintergrundfarbe und abgeglichener Menge gleich der PO-Menge"><figcaption><p>Die Position ist vollständig genutzt.</p></figcaption></figure>
+
+Eine durchgestrichene Position hat eine andere Bedeutung: Ihr PO-Status ist möglicherweise durch [PO-Deaktivierungsstatus](purchase-order-disable-statuses.md) ausgeschlossen. Prüfen Sie diese Einstellung, wenn sich eine Position nicht auswählen lässt.

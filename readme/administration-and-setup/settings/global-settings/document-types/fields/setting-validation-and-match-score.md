@@ -1,44 +1,25 @@
-# Definindo Validação e Pontuação de Correspondência
+# Definição de Validação e Pontuação de Correspondência
 
-## Instruções para usar as configurações de Forçar Validação e Valor de Correspondência para melhorar a integridade dos dados e a precisão do reconhecimento.
+Em **Campos**, você pode definir os limites de validação e de reconhecimento de um tipo de documento. Esta página usa **Fatura** em uma organização de teste da documentação. Ela explica a caixa de seleção **VALIDAÇÃO DE FORÇA** atual e os controles **PLACAR DA PARTIDA**.
 
-Aqui estão as instruções para usar as configurações de Forçar Validação e Valor de Correspondência para melhorar a integridade dos dados e a precisão do reconhecimento em um sistema de processamento de documentos:
+## Abrir as configurações dos campos
 
-### Forçar Validação (Force Validation):
+1. Vá para **Configurações → Tipos de Documentos → Fatura → Campos**.
+2. Use **Pesquisar por nome** para localizar um campo, por exemplo `invoice_id` (exibido como **Número da fatura**).
+3. Verifique a linha do campo antes de alterar uma configuração. **OBRIGATÓRIO**, **Somente Leitura**, **Escondido** e **VALIDAÇÃO DE FORÇA** são caixas de seleção separadas.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_choose_column_type.png" alt="Docbits Choose Column Type" width="151"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-680-fields-overview-pt.png" alt="Página Campos da Sandbox em português mostrando Configurações de Reconhecimento, os controles OCR e PLACAR DA PARTIDA, as colunas dos campos e o botão Salvar configurações"><figcaption><p>Os controles de reconhecimento aparecem acima da lista de campos.</p></figcaption></figure>
 
-Esta configuração permite definir regras que verificam se os dados inseridos atendem a determinados critérios.
+## VALIDAÇÃO DE FORÇA
 
-**Para configurar isso:**
+Selecione **VALIDAÇÃO DE FORÇA** na linha do campo para aplicar uma validação mais rigorosa a esse campo. A caixa de seleção é separada de **OBRIGATÓRIO**: marcar um campo como obrigatório não seleciona VALIDAÇÃO DE FORÇA automaticamente. A caixa de seleção pode ficar indisponível quando um campo está escondido ou é somente leitura. Depois de alterar a configuração do campo, clique em **Salvar configurações**.
 
-* Vá para as configurações do campo em questão.
-* Ative a opção Forçar Validação.
-* Defina as regras de validação a serem verificadas. Podem ser, por exemplo, limites numéricos, expressões regulares para campos de texto ou relações com outros campos.
+As instruções antigas sugeriam inserir aqui limites numéricos ou expressões regulares. A tabela Campos atual não mostra um editor de regras na célula de VALIDAÇÃO DE FORÇA. Para regras específicas de um campo, consulte [Configurando Propriedades de Campo](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+## PLACAR DA PARTIDA
 
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+**PLACAR DA PARTIDA** é um limite numérico, não um valor de referência fixo. O controle deslizante **PLACAR DA PARTIDA** em **CONFIGURAÇÕES DE RECONHECIMENTO** aplica o próprio valor às linhas de campos do tipo de documento; use a entrada **PLACAR DA PARTIDA** de uma linha de campo para um valor individual. Na organização de teste, o controle deslizante e `invoice_id` mostram ambos **50**. Revise os campos afetados e, em seguida, clique em **Salvar configurações**.
 
-**Impacto:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-680-invoice-id-settings-pt.png" alt="Linha do campo invoice_id na Sandbox em português com VALIDAÇÃO DE FORÇA marcada e PLACAR DA PARTIDA igual a 50"><figcaption><p>Pesquise um campo para verificar sua caixa de VALIDAÇÃO DE FORÇA e o valor de PLACAR DA PARTIDA.</p></figcaption></figure>
 
-* A aplicação de regras de validação ajuda a detectar erros precocemente e melhora a qualidade dos dados. Os usuários são solicitados a inserir dados corretos, o que aumenta a integridade do banco de dados.
-
-### Pontuação de Correspondência (Match Score):
-
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
-
-Esta configuração permite que você compare o valor inserido com um valor de referência predefinido.
-
-**Para configurar isso:**
-
-* Navegue até as configurações do campo.
-* Ative a opção Valor de Correspondência (Match Value).
-* Insira o valor de referência com o qual comparar o valor inserido.
-
-**Impacto:**
-
-* Definir um valor de correspondência permite garantir que os dados inseridos correspondam a um padrão conhecido ou a uma norma predefinida. Isso é especialmente útil quando você deseja garantir que os dados sejam consistentes e atendam a determinados critérios.
-* O uso dessas configurações pode melhorar a integridade dos dados e a precisão do reconhecimento em seu sistema de processamento de documentos.
-
-Você garante que apenas dados corretos e válidos sejam capturados, aumentando a qualidade do seu banco de dados e melhorando a confiabilidade de suas análises e relatórios.
+**OCR** é um limite de reconhecimento separado, ao lado de PLACAR DA PARTIDA. **RESTAURAR PADRÕES** redefine as configurações; use-o apenas quando pretende descartar seus limites personalizados. Para outras opções de campos, consulte a visão geral de [Campos](README.md).

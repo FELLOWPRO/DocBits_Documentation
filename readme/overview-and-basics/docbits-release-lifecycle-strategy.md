@@ -49,13 +49,13 @@ This switch is self-service. FELLOWPRO does not select which customers should mo
 
 ## Release rollover and the next cycle
 
-When the NOVA release is ready to become the common production release, FELLOWPRO manages the rollover:
+FELLOWPRO manages the rollover once the NOVA release is ready to become the common production release and acceptance of the planned transition has been obtained from all customers:
 
 **NOVA R1.1.x → VESTA R1.1.x**
 
-### Advance announcement
+### Advance announcement and customer acceptance
 
-FELLOWPRO announces the planned rollover to all customers in advance by email. The announcement invites you to contact FELLOWPRO with any concerns or objections so they can be discussed before the transition.
+FELLOWPRO announces the planned rollover to all customers in advance by email and seeks their acceptance of the transition. You are invited to contact FELLOWPRO with any concerns or objections so they can be discussed before the rollover. The rollover and recycling of NOVA proceed only once the release is ready and all customers have accepted the planned transition.
 
 ### What changes at rollover
 
@@ -69,14 +69,18 @@ The same three phases then repeat with the new version numbers.
 
 ### Release cadence
 
-The cycle is expected to repeat approximately every **3–4 months**, subject to release readiness. This cadence is indicative, rather than a fixed schedule or guaranteed release date. FELLOWPRO announces each planned rollover in advance.
+FELLOWPRO currently plans for a release cycle of approximately **3–4 months**. This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date.
+
+The timing of each rollover and the recycling of NOVA depends on both **release readiness and acceptance of the planned transition by all customers**. If additional time is needed to achieve release readiness, address customer concerns, or obtain acceptance from every customer, the cycle will be extended and may take longer than four months.
+
+FELLOWPRO communicates each planned rollover in advance. Any indicative timing remains subject to these conditions being met.
 
 ## Responsibilities and customer choice
 
 | Transition | Who manages it | What to expect |
 | --- | --- | --- |
 | **Switch from VESTA to NOVA during Phase 3** | Your organization | Evaluate NOVA in the sandbox and choose whether and when to switch using the application's Release Channel setting. |
-| **Roll over NOVA R1.1.x into VESTA R1.1.x** | FELLOWPRO | Receive an advance email announcement, raise any concerns or objections, and prepare for the new common production release and retirement of R1.0.x. |
+| **Roll over NOVA R1.1.x into VESTA R1.1.x** | FELLOWPRO | Review the advance email announcement, raise any concerns or objections, and confirm acceptance of the planned transition. FELLOWPRO proceeds once the release is ready and all customers have accepted. |
 
 ## Frequently asked questions
 
@@ -94,7 +98,7 @@ NOVA becomes a live production release in Phase 3, after development and QA/UAT.
 
 ### How will we know about the rollover, and can we raise objections?
 
-FELLOWPRO emails all customers in advance of the planned rollover. You are invited to contact FELLOWPRO with any concerns or objections to discuss before the transition.
+FELLOWPRO emails all customers in advance and seeks acceptance of the planned transition. You are invited to raise any concerns or objections with FELLOWPRO. The rollover and recycling of NOVA proceed only once the release is ready and acceptance has been obtained from all customers.
 
 ### Can we continue using R1.0.x after the rollover?
 
@@ -110,4 +114,4 @@ NOVA is recycled for development of the next release, R1.2 in this example. VEST
 
 ### Is a new release guaranteed every three to four months?
 
-No. The approximate 3–4 month cadence depends on release readiness. FELLOWPRO communicates the planned rollover in advance for each cycle.
+No. The approximate 3–4 month cadence is a current planning estimate, not a guaranteed schedule or a maximum duration. Rollover and recycling of NOVA require both release readiness and acceptance from all customers. If either condition requires more time, the cycle will be extended and may exceed four months. FELLOWPRO communicates each planned rollover in advance.

@@ -162,7 +162,7 @@
         * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/layout-manager/troubleshooting.md)
       * [Document Sub Types](administration-and-setup/settings/global-settings/document-types/document-sub-types.md)
       * [Creating a new Sub Type](administration-and-setup/settings/global-settings/document-types/creating-a-new-sub-type.md)
-      * [Configure subtypes](administration-and-setup/settings/global-settings/document-types/configure-subtypes.md)
+      * [Subtypes configureren](administration-and-setup/settings/global-settings/document-types/configure-subtypes.md)
       * [Using Actions](administration-and-setup/settings/global-settings/document-types/using-actions.md)
       * [Best Practices](administration-and-setup/settings/global-settings/document-types/best-practices-1.md)
       * [Tabelkolommen](administration-and-setup/settings/global-settings/document-types/table-columns/README.md)

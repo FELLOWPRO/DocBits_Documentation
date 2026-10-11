@@ -1,59 +1,59 @@
-# And
+# And: een conditiekaart kiezen
 
-## "And"-kaarten begrijpen
+Gebruik een **And**-kaart om te bepalen of een workflow doorgaat na de **When**-trigger. Voeg de controles toe die je nodig hebt vóór de **Then**-actie. Elke kaart toont velden om in te vullen, zoals **Operator**, **Veldnaam** of **Waarde**; de schermafbeeldingen tonen de beschikbare kaartsjablonen, geen voltooide regels.
 
-### **Doel van 'And'-kaarten:**
+Kies in de **Workflow Builder** **Kaart toevoegen** onder **En....**. Kies links een categorie of typ een kaartnaam in **Zoekkaart**. Selecteer een kaartvoorbeeld om die aan de workflow toe te voegen. Je kunt door de voorbeeldlijst scrollen om meer kaarten te zien. Gebruik **×** om de keuzelijst te sluiten zonder een andere kaart te kiezen. Sla de workflow op nadat je de kaarten hebt ingesteld. Zie [Workflow](../README.md) voor de omringende **When**-, **En**- en **Dan**-stappen.
 
-* **And**-kaarten fungeren als voorwaardekaarten die criteria specificeren waaraan moet worden voldaan om de workflow voort te zetten. Ze werken in feite als logische "AND"-operatoren, wat betekent dat aan alle in deze kaarten opgegeven voorwaarden moet worden voldaan voordat de volgende actie wordt getriggerd.
+## Vergelijk met inkooporder
 
-#### Categorieën van 'And'-kaarten
+Gebruik deze kaarten om order- of factuurgegevens te vergelijken met een inkooporder, zoals eenheidsprijs, beloofde leverdatum, toeslagen of hoeveelheid. Kies de velden, de operator en eventuele tolerantie die de geselecteerde kaart vraagt. Zie [Vergelijk met inkooporder](compare-with-purchase-order/README.md) voor de losse kaarten.
 
-Uit de schermafbeeldingen blijkt duidelijk dat deze kaarten een breed scala aan voorwaarden bestrijken, waaronder:
+<figure><img src="../../../.gitbook/assets/and-category-po-comparison-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Vergelijk met inkooporder geselecteerd; zichtbare voorbeelden vergelijken eenheidsprijs, leverdatum, toeslagen en hoeveelheid."><figcaption>Categorie Vergelijk met inkooporder in de Nederlandse Sandbox.</figcaption></figure>
 
-* **Compare with Purchase Order**:
-  * Voorwaarden met betrekking tot validatie en vergelijking met inkooporders, zoals het vergelijken van leverdata, eenheidsprijzen of verschillen in hoeveelheid. Deze zijn cruciaal om ervoor te zorgen dat transacties overeenkomen met de afgesproken voorwaarden.
+## Documentveld
 
-<figure><img src="../../../../.gitbook/assets/workflow_and_comparison.png" alt="Workflow And Vergelijking"><figcaption></figcaption></figure>
+Kies deze categorie om een selectievakje of veldstatus te controleren, een veld met een waarde te vergelijken of twee velden met elkaar te vergelijken. Vul **Veldnaam** en **Operator** in op de gekozen kaart. Sommige vergelijkingen vragen ook om een tolerantie. Zie [Documentveld](document-field/README.md).
 
-* **Document Field**:
-  * Deze betreffen voorwaarden op basis van specifieke velden binnen documenten, zoals aangevinkte selectievakjes, het vergelijken van veldwaarden, of het waarborgen dat een documentveld binnen een opgegeven tolerantie valt. Dit is met name belangrijk voor data-integriteit en geautomatiseerde controles binnen formulieren of documentbeheersystemen.
+<figure><img src="../../../.gitbook/assets/and-category-document-field-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Documentveld geselecteerd; zichtbaar voorbeeld controleert een Docveld met Veldnaam, Operator en Waarde."><figcaption>Documentveld-controles gebruiken waarden uit het huidige document.</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow_and_document_field.png" alt="Workflow And Document Field"><figcaption></figcaption></figure>
+## Datum en tijd
 
-* **Document**:
-  * Voorwaarden op basis van documentkenmerken, zoals het type of de koppeling aan een bepaalde suborganisatie. Deze voorwaarden kunnen workflows sturen op basis van documentcategorisatie of betrokkenheid van een afdeling.
+Gebruik **Datum en tijd** om een datum of tijd met een bereik te vergelijken, of **Vandaag** met een gekozen datum. Kies de **Operator** en datumwaarden op de kaart. Zie [Datum en tijd](date-and-time/README.md).
 
-<figure><img src="../../../../.gitbook/assets/workflow_and_document_type.png" alt="Workflow And Document Type"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-date-time-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Datum en tijd geselecteerd; de voorbeelden wf_card_date_in_range en wf_card_today_compare_with_date."><figcaption>Datum en tijd biedt een bereikcontrole en een controle tegen vandaag.</figcaption></figure>
 
-* **Logic**:
-  * Logische voorwaarden die evaluaties kunnen omvatten zoals "Continue with a chance of X%" of het uitvoeren van HTTPS-verzoeken, wat essentieel is voor integraties en probabilistische besluitvorming binnen workflows.
+## Document
 
-<figure><img src="../../../../.gitbook/assets/workflow_and_logic.png" alt="Workflow And Logica"><figcaption></figcaption></figure>
+Gebruik deze kaarten als een workflow afhangt van het **documenttype** of de **suborganisatie**. Kies het type of de organisatie die op de kaart wordt genoemd. Zie [Document](document/README.md).
 
-* **Status**:
-  * Deze voorwaarden richten zich op de status van documenten of taken en zorgen ervoor dat alleen items in bepaalde toestanden specifieke workflows triggeren, wat cruciaal is voor statusgestuurd procesbeheer.
+<figure><img src="../../../.gitbook/assets/and-category-document-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Document geselecteerd; voorbeelden controleren het Documenttype en een Documenttype een van de volgende."><figcaption>Documentcondities controleren type of suborganisatie.</figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/workflow_and_status.png" alt="Workflow And Status"><figcaption></figcaption></figure>
+## Logica
 
-* **Table**:
-  * Deze betreffen voorwaarden op basis van tabelgegevens, zoals het matchen van regex-patronen of het vergelijken van waarden binnen een tabel. Dergelijke voorwaarden zijn essentieel voor het valideren en bewerken van grote datasets.
+Deze categorie bevat controles met een beslistabel, een HTTPS-antwoord, modulebeschikbaarheid, een offerteprijs, een kanswaarde of twee waarden. Open de specifieke kaart en vul de genoemde velden in; bijvoorbeeld de HTTPS-kaart vraagt om een URL, een methode en een geaccepteerde statuscode. Zie [Logica](logic/README.md).
 
-<figure><img src="../../../../.gitbook/assets/workflow_and_table.png" alt="Workflow And Tabel"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-logic-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Logica geselecteerd; voorbeelden zijn beslistabel, HTTPS-verzoek, module actief, offerte-prijs, kans en waardevergelijking."><figcaption>Logica biedt verschillende conditietypes; kies degene die bij je regel past.</figcaption></figure>
 
-* **Assignee**:
-  * Voorwaarden op basis van de toegewezenen van een taak of document. Dit zorgt ervoor dat acties alleen worden uitgevoerd wanneer bepaalde gebruikers betrokken zijn, wat de verantwoording en taakspecificiteit verbetert.
+## Status
 
-<figure><img src="../../../../.gitbook/assets/workflow_and_assignee.png" alt="Workflow And Toegewezene"><figcaption></figcaption></figure>
+Gebruik **Status** om te controleren of een document een gekozen status heeft of of de status in een geselecteerde reeks zit. Kies de **Operator** en **Status** op de kaart. Zie [Status](status/README.md).
 
-### Praktische toepassing
+<figure><img src="../../../.gitbook/assets/and-category-status-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Status geselecteerd; de voorbeelden wf_card_document_status_is en wf_card_document_status_in_list."><figcaption>Statuscondities controleren de huidige documentstatus.</figcaption></figure>
 
-Deze "And"-kaarten worden binnen de workflow geconfigureerd om controles en validaties uit te voeren die ervoor zorgen dat het proces zich strikt houdt aan bedrijfsregels en data-integriteitsnormen. Bijvoorbeeld:
+## Tafel
 
-* **Een workflow kan een 'And'-kaart gebruiken om te verifiëren dat het totaalbedrag van een factuur overeenkomt met de inkooporder voordat een betaling wordt getriggerd.**
-* **Een andere workflow kan een 'And'-kaart gebruiken om ervoor te zorgen dat een document door specifieke teamleden wordt beoordeeld voordat het naar de volgende fase gaat.**
+Deze kaarten onderzoeken tabelrijen van het document. De zichtbare opties zijn datumcontroles, tekstpatronen, houdbaarheid en vergelijkingen tussen kolommen. Kies eerst de **Tabelnaam** en **Kolomnaam** voordat je een operator of patroon kiest. Zie [Tafel](table/README.md).
 
-### Conclusie
+<figure><img src="../../../.gitbook/assets/and-category-table-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Tafel geselecteerd; zichtbare voorbeelden zijn datumcontrole, regex-patroon, houdbaarheid en kolomvergelijking."><figcaption>Tafelcondities gebruiken rijen en kolommen uit een documenttabel.</figcaption></figure>
 
-"And"-kaarten zijn een fundamenteel onderdeel van workflowsystemen die nauwkeurige controle over de procesuitvoering op basis van meerdere voorwaarden vereisen. Ze zorgen ervoor dat elke stap van een workflow alleen wordt voortgezet wanneer aan alle noodzakelijke criteria volledig is voldaan, waardoor complexe beslisbomen binnen bedrijfsprocessen worden geautomatiseerd.
+## Vergelijk met offerteprijs
 
-Het correct begrijpen en configureren van deze kaarten is cruciaal om de volledige mogelijkheden van uw workflowbeheersysteem te benutten en zo de efficiëntie, nauwkeurigheid en naleving binnen organisatorische processen te verbeteren.
+Gebruik deze kaarten om een artikel te vergelijken met offertegegevens. De zichtbare keuzes betreffen artikel-ID, leverancierstype, leveranciersartikel-ID, eenheidsprijs en eenheid. De **Operator** en datavelden hangen af van de kaart die je kiest.
+
+<figure><img src="../../../.gitbook/assets/and-category-quote-price-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Vergelijk met offerteprijs geselecteerd; vijf voorbeelden betreffen artikel-ID, leverancierstype, leveranciersartikel-ID, eenheidsprijs en eenheid."><figcaption>Vergelijk met offerteprijs is een aparte categorie in de huidige kaartkiezer.</figcaption></figure>
+
+## Cessionaris
+
+Gebruik **Cessionaris** wanneer de conditie afhangt van de toegewezen gebruiker of groep. Kies of je met één gebruiker of groep wilt vergelijken of met een geselecteerde reeks. Zie [Cessionaris](assignee/README.md).
+
+<figure><img src="../../../.gitbook/assets/and-category-assignee-nl-20261008.png" alt="Nederlandse En-kaartkiezer met Cessionaris geselecteerd; voorbeelden vergelijken toegewezen gebruiker of groep met één of meerdere keuzes."><figcaption>Cessionaris-condities controleren de gebruiker of groep die aan het document is toegewezen.</figcaption></figure>

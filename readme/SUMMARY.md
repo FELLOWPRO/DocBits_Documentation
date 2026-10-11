@@ -411,7 +411,7 @@
       * [Card description](administration-and-setup/workflow/when/card-description.md)
       * [Document Type Operation](administration-and-setup/workflow/when/page.md)
       * [Document Type One of](administration-and-setup/workflow/when/document-type-one-of.md)
-    * [And](administration-and-setup/workflow/and/README.md)
+    * [En](administration-and-setup/workflow/and/README.md)
       * [Compare with Purchase Order](administration-and-setup/workflow/and/compare-with-purchase-order/README.md)
         * [Combined Price of Quantity Difference](administration-and-setup/workflow/and/compare-with-purchase-order/combined-price-of-quantity-difference.md)
         * [Promised delivery date for line items in table with promised delivery date](administration-and-setup/workflow/and/compare-with-purchase-order/promised-delivery-date-for-line-items-in-table-with-promised-delivery-date/README.md)

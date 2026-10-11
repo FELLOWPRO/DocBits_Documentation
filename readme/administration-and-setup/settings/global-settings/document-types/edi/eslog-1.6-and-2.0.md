@@ -1,70 +1,24 @@
 # eSLOG 1.6 et 2.0
 
-### Versions de Facture eSLOG Supportées
+**eSLOG 1.6** et **eSLOG 2.0** apparaissent comme des formats de facture électronique distincts dans DocBits. Choisissez la version utilisée par vos factures slovènes entrantes. Les captures d'écran ci-dessous montrent l'interface Sandbox française actuelle dans une organisation de test de documentation ; elles ne prouvent pas qu'une facture de l'une ou l'autre version a été traitée avec succès.
 
-Actuellement, **les versions de facture eSLOG 1.6 et 2.0** sont supportées.
+Pour la documentation officielle d'eSLOG, vous pouvez vous référer à [ce lien](https://epos.si/en/eslog). Les deux versions d'eSLOG sont activées par défaut.
 
-Pour la documentation officielle d'eSLOG, vous pouvez vous référer à [ce lien](https://epos.si/en/eslog).
+## Rechercher les configurations
 
-Les deux versions d'eSLOG sont activées par défaut.
+1. Accédez à **Paramètres → Types de Documents → Facture → E-Doc**.
+2. Développez **E-SLOG 1.6** ou **E-SLOG 2.0**. Chaque format possède ses propres trois entrées.
 
-### Étapes pour Modifier la Configuration d'eSLOG
+<figure><img src="../../../../../.gitbook/assets/dbdc-373-eslog-16-fr.png" alt="Panneau E-SLOG 1.6 de la Sandbox en français avec les lignes Transformation, Aperçu et Chemins d'extraction"><figcaption>E-SLOG 1.6 dans la liste E-Doc de Facture.</figcaption></figure>
 
-**Configurer eSLOG :**
+<figure><img src="../../../../../.gitbook/assets/dbdc-373-eslog-20-fr.png" alt="Panneau E-SLOG 2.0 de la Sandbox en français avec les lignes Transformation, Aperçu et Chemins d'extraction"><figcaption>E-SLOG 2.0 dispose de configurations séparées pour les trois mêmes étapes.</figcaption></figure>
 
-* Accédez à **Paramètres → Paramètres globaux → Types de documents → Facture**.
-*   Cliquez sur **E-Doc**.\
+| Entrée | Ce qu'elle contrôle | Guide suivant |
+| --- | --- | --- |
+| **TRANSFORMATION (XSLT)** | Convertit les données sources du format en XML structuré. | [Transformation](edi/edi-transformation-file-guide.md) |
+| **PREVIEW (XSLT)** | Définit la vue lisible du document. | [Aperçu](edi/edi-preview-file-guide.md) |
+| **EXTRACTION PATHS (JSON)** | Associe les valeurs XML aux champs et colonnes de tableau de DocBits. | [Chemins d'extraction](edi/edi-extraction-paths-file-guide.md) |
 
+Cliquez sur une ligne pour afficher ses versions et sa configuration. **Default** identifie l'entrée fournie. **Dernière modification en date du** indique quand cette entrée a été modifiée pour la dernière fois. Le bouton **Nouveau** crée une entrée de configuration supplémentaire. Le menu à trois points d'une ligne par défaut propose **Personnaliser**, qui crée une copie spécifique à l'organisation, et **Supprimer** ; vérifiez attentivement la ligne sélectionnée avant d'utiliser Supprimer.
 
-    <figure><img src="../../../../../.gitbook/assets/docbits_docbits_image_5.png" alt="DocBits DocBits Image 5"><figcaption></figcaption></figure>
-* Une liste de tous les e-docs disponibles apparaîtra.
-*   Localisez la version d'eSLOG que vous souhaitez modifier.\
-
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_supplier_invoice.png" alt="DocBits Fournisseur Facture"><figcaption></figcaption></figure>
-
-### **Configuration de la Transformation et du Chemin XML :**
-
-Dans les **paramètres de transformation**, vous pouvez définir le chemin pour localiser des informations spécifiques dans le fichier XML et les enregistrer dans une nouvelle structure, facilitant ainsi l'accès aux données. **Remarque :** Si vous utilisez cette fonctionnalité, vous devez utiliser les nouveaux chemins XML créés, et non les chemins XML d'origine, dans l'**Aperçu** et le **Chemin d'extraction**.
-
-#### **Étapes pour Modifier le Fichier de Transformation :**
-
-1. Ouvrez la **Transformation**.
-2. Créez un nouveau brouillon en cliquant sur l'**icône de crayon**.
-3. Sélectionnez le brouillon nouvellement créé.
-4. Créez un nouveau champ ou modifiez un champ existant.
-5. Définissez le chemin souhaité pour l'extraction des données.
-6. Cliquez sur **Enregistrer**.
-
-### Configuration de l'Aperçu PDF
-
-La **Configuration de l'Aperçu PDF** est utilisée pour générer une version lisible par l'utilisateur du document. Vous pouvez la personnaliser avec du HTML pour répondre à vos besoins.
-
-#### **Étapes pour Modifier le Fichier d'Aperçu :**
-
-1. Ouvrez l'**Aperçu**.
-2. Créez un nouveau brouillon en cliquant sur l'**icône de crayon**.
-3. Sélectionnez le brouillon nouvellement créé.
-4. Créez un nouveau champ ou modifiez un champ existant.
-5. Définissez le chemin souhaité pour l'extraction des données.
-6. Cliquez sur **Enregistrer**.
-
-### Configuration des Chemins d'Extraction
-
-La **Configuration des Chemins d'Extraction** est utilisée pour extraire des données et remplir des champs dans l'**écran de validation**, tels que le tableau des factures ou les champs configurés dans la mise en page de la facture.
-
-#### **Étapes pour Modifier les Chemins d'Extraction :**
-
-1. Ouvrez les **Chemins d'Extraction**.
-2. Créez un nouveau brouillon en cliquant sur l'**icône de crayon**.
-3. Sélectionnez le brouillon nouvellement créé.
-4. Créez un nouveau champ ou modifiez un champ existant.
-5.  Le côté gauche représente l'**ID de champ DocBits**, qui peut être trouvé dans **Paramètres → Paramètres globaux → Types de documents → Facture → Champs**.\
-    \
-
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_error_approval.png" alt="DocBits Erreur Approbation"><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Paramètres Workflow"><figcaption></figcaption></figure>
-6. Le côté droit représente le **chemin vers le champ** créé dans la Transformation.
-7. Cliquez sur **Enregistrer**.
+Dans une configuration, le crayon à côté d'une version active crée un brouillon. Vérifiez un brouillon avec le panneau de test **Aperçu** et un identifiant de document téléversé représentatif avant de l'activer avec la coche. L'icône corbeille d'un brouillon supprime ce brouillon. Les noms de champs et les chemins XML réels dépendent de votre fichier eSLOG ; utilisez le guide correspondant ci-dessus pour les détails de l'éditeur.

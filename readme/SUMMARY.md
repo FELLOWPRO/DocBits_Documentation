@@ -130,6 +130,7 @@
       * [Campi](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Navigare il Layout Manager](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
         * [Impostazioni dei dati master](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
+        * [Configurando Propriedades do Campo](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
       * [Addestramento del Modello](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Espressioni Regolari](administration-and-setup/settings/global-settings/document-types/regex.md)
       * [Script](administration-and-setup/settings/global-settings/document-types/script/README.md)

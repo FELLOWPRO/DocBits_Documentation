@@ -4,7 +4,7 @@ Use esta guía para planificar los datos maestros necesarios para la autocontabi
 
 ## Comprobar la opción de DocBits
 
-Un administrador puede abrir **Ajustes → Módulo → Pedido y Finanzas → Contabilidad automática**. El menú **Tipo** ofrece **LN** y **M3**. Elija **M3** solo para una integración con M3 y active el interruptor después de haber verificado el flujo de datos y los datos maestros necesarios. Las capturas de pantalla muestran el entorno de pruebas **DocBits Documentation Test A** en inglés. Su interruptor estaba **desactivado**, su Tipo actual era **LN** y abrir el menú no guardó ni modificó ninguna opción.
+Un administrador puede abrir **Ajustes → Módulo → Pedido y Finanzas → Contabilidad automática**. El menú **Tipo** ofrece **LN** y **M3**. Elija **M3** solo para una integración con M3 y active el interruptor después de haber verificado el flujo de datos y los datos maestros necesarios. Las capturas de pantalla siguientes muestran esta página en el entorno de pruebas de DocBits en español. El interruptor estaba **desactivado**, el Tipo actual era **LN** y abrir el menú no guardó ni modificó ninguna opción.
 
 <figure><img src="../../../.gitbook/assets/dbdc765-auto-accounting-settings-es-20261011.png" alt="Ajustes de Pedido y Finanzas de DocBits en español, con Contabilidad automática desactivada y Tipo establecido en LN"><figcaption><p>Ubique Contabilidad automática en Pedido y Finanzas; en este ejemplo del entorno de pruebas está desactivada.</p></figcaption></figure>
 

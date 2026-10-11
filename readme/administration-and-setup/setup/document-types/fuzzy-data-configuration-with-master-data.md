@@ -1,118 +1,40 @@
 # Fuzzy Data Configuration with Master Data
 
-### **Overview**
+Use a master-data lookup to recognise a supplier from values on an invoice. The lookup searches an imported dataset and can fill the document's supplier fields. Configure each document type separately. The example here uses **Invoice** in the synthetic **DocBits Documentation Test A** organization.
 
-Each document type has its own default configurations and must be set up separately. While this example explains the setup for **Invoices**, the same process applies to all document types.
+## Open the lookup settings
 
-### To configure Fuzzy Data, navigate to:
+1. Open **Settings → Document Processing → Document Types**.
+2. Select **Invoice → Fields → Master Data Settings**.
+3. Expand **Lookup Master Data**. The test organization shows **Company Data**, **Purchase Order Header**, **Supplier**, and **Taxcode**. Your organization may have additional configurations.
 
-Settings → Global Settings → Document Types → Invoice → Fields → Master Data Settings → Lookup Master Data
+<figure><img src="../../../.gitbook/assets/dbdc-152-lookup-overview-en.png" alt="English Invoice Master Data Settings with four active lookup groups and Create Lookup Config in Test A"><figcaption><p>Select a lookup group to inspect its fields or choose Create Lookup Config for a new one.</p></figcaption></figure>
 
-<div align="center"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_1.png" alt="" width="454"><figcaption></figcaption></figure></div>
+The **Active** label shows that a configuration is enabled. Use the three-dot menu to inspect available actions such as activating, deactivating, duplicating, or editing a configuration. Default configurations can be viewed but cannot be edited or deleted; a custom configuration has more actions. Do not deactivate a lookup until you have checked which document fields depend on it.
 
-### **Default Lookups**
+{% hint style="info" %}
+The relevant supplier master data must be imported before a lookup can find it. See [Importing Master Data](../../../infor-integration-and-configuration/importing-customer-master-data/README.md) and [Master Data Settings](../../settings/global-settings/document-types/fields/master-data-settings.md) for the broader setup.
+{% endhint %}
 
-There are **four default lookup groups** for invoices:
+## Create a lookup configuration
 
-1. **Company Data**
-2. **Purchase Order Header**
-3. **Supplier**
-4. **Tax Code**
+Select **Create Lookup Config**. Enter a **Lookup Name**, choose a **Lookup Dataset Name**, and set **Context Type** to **HEADER** for document fields or **LINE** for a table. For **LINE**, also choose the relevant table as **Context Detail**. Set **Conflict Handler** to decide what happens when several records match. **Match All** requires every used search field to match the same record; with it off, one matching field can be enough.
 
-<figure><img src="../../../.gitbook/assets/fuzzy_data_config_2.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc-152-create-lookup-en.png" alt="English Create Master Data Config dialog with lookup name, dataset, conflict handler, context type and Match All"><figcaption><p>The dialog was opened for documentation; no configuration was created.</p></figcaption></figure>
 
-Each group contains specific fields. Click on a group to **expand** it and view the fields. Default lookup groups are labeled with a **"Default" tag**.
+The conflict choices are **Best Score**, **Return None**, and **Return First**. Use **Return None** when a person should decide between ambiguous suppliers; review the worked examples below before choosing **Best Score** or **Match All**.
 
-### **Lookup Configuration Status**
+## Choose fields for supplier recognition
 
-* **Active configurations** are marked with an **"Activated" tag**.
-* **Deactivated configurations** are marked with a **"Deactivated" tag**.
+Expand **Supplier** to see its mappings. The table shows the dataset **Lookup Field**, its **Validation Field** on the document, optional **Parent Field**, and whether **Searchable** or **Auto Trigger** is enabled. In Test A, Supplier Name is searchable and Supplier Number is an auto trigger; those flags may differ in another organization.
 
-### **Prerequisite: Importing Master Data**
+<figure><img src="../../../.gitbook/assets/dbdc-152-supplier-fields-en.png" alt="English expanded Supplier lookup with field mappings, Searchable and Auto Trigger columns"><figcaption><p>Check which fields can participate in supplier recognition before changing the match rule.</p></figcaption></figure>
 
-For Fuzzy Data to function correctly, the relevant **master data** must be imported. Without this, the system has no reference data to use. Here is how to import master data:
+To add a mapping, select **Create** inside the expanded group, then choose **Lookup Field**, **Validation Field**, optional **Parent Field**, and **Search Operator**. The operator determines how text is compared; use **Exact** for a strict identifier and consider **Smart** or **Contains** only when partial text should match. **Auto Trigger** starts a lookup after that document field receives a value. **Searchable** includes it in search and makes manual lookup available during validation. Select **Create** only after checking the mapping.
 
-{% content-ref url="../../../infor-integration-and-configuration/importing-customer-master-data/" %}
-[importing-customer-master-data](../../../infor-integration-and-configuration/importing-customer-master-data/)
-{% endcontent-ref %}
+<figure><img src="../../../.gitbook/assets/dbdc-152-create-field-en.png" alt="English Create Master Data Fields dialog with field selectors, Search Operator, Auto Trigger and Searchable"><figcaption><p>The form was inspected without saving a new field.</p></figcaption></figure>
 
-### **Managing Lookup Groups**
-
-Each lookup group is **activated by default** but can be modified by clicking the three dots:
-
-* **Deactivate** → Deactivates a group. _(Only available for activated groups)_
-* **Activate** → Deactivates a group. _(Only available for deactivated groups)_
-* **Duplicate** → Creates a copy that can be modified without affecting the original.
-* **View** → Displays information such as the **document type** it belongs to and the **lookup table** it uses. _(Only available for default groups)_
-* **Edit** → Available for **non-default** groups. Allows modifying group details.
-* **Delete** → Removes the group entirely. _(Only for non-default groups)_
-
-### **Creating a New Lookup Configuration**
-
-There are **two ways** to create a lookup configuration:
-
-1.  **Duplicate an existing lookup**
-
-
-
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_3.png" alt=""><figcaption></figcaption></figure>
-
-    * This copies all information and fields from an existing group.
-    * You only need to provide a **new name**.
-2.  **Create a lookup from scratch**\
-
-
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_4.png" alt=""><figcaption></figcaption></figure>
-
-    * Click **"Create Lookup Configuration"**.
-    * Fill in the required details:
-      * **Configuration Name**
-      * **Lookup Table** (Master Data Table to be used)
-      * **Conflict Handler** (Choose one: Best Score, Return None, Return First)
-      * **Context Type** → Defines where the lookup is applied:
-        * **Header** → Used for document-level fields such as Invoice Number, Date, etc.
-        * **Line** → Used for line item fields within the invoice table. If **Line** is selected, the user must also specify **which invoice table** should be used.
-      * **Match All** → When enabled, a supplier must match **all** used fields. When disabled, matching **one** field is enough. See [How DocBits Picks One Supplier](#how-docbits-picks-one-supplier).
-
-### **Managing Fields Within a Lookup Group**
-
-Each group contains fields that can be **added, removed, edited, or viewed**, depending on whether they are default fields or custom fields.
-
-#### **Default Fields**
-
-*   Marked with a **"Default" tag**.\
-
-
-    <div align="left"><figure><img src="../../../.gitbook/assets/fuzzy_data_config_5.png" alt="" width="251"><figcaption></figcaption></figure></div>
-* **Can only be viewed**, not edited or deleted.
-
-#### **Non-Default Fields**
-
-* **Can be edited or deleted** by clicking the three dots and selecting **Edit** or **Remove**.
-
-#### **Adding a New Field**
-
-<mark style="color:red;">**Note:**</mark> You can create fields inside a default Lookup configurations.
-
-To add a new field within a group:
-
-1.  Click **"Create"** inside the relevant group.\
-
-
-    <figure><img src="../../../.gitbook/assets/fuzzy_data_config_6.png" alt=""><figcaption></figcaption></figure>
-2. Provide the following details:
-   * **Lookup Field** → Column name from the master data lookup table.
-   * **Validation Field** → Corresponding DocBits field.
-   * **Parent Field** →&#x20;
-   * **Search Operator** → Choose one:
-     * Smart
-     * Contains
-     * Exact
-     * Starts with
-     * Ends with
-   * **Checkboxes:**
-     * **Auto Trigger** → When enabled, the field will automatically trigger the lookup process during extraction. That means as soon as the related DocBits field is populated, the system will  populate the remaining fields **automatically**.
-     * **Searchable** → Adds the field to the **automatic** supplier search **and** enables it as a **Fuzzy Data** field for manual searches (blue icon in validation screen). See [How DocBits Picks One Supplier](#how-docbits-picks-one-supplier).
+The worked examples below explain how these flags, Match All, and the conflict handler interact. No live supplier-recognition result was generated for this documentation check.
 
 ### **How DocBits Picks One Supplier**
 
@@ -185,7 +107,4 @@ Almost always one more field started to deliver a value. Check in this order:
 
 After configuring Fuzzy Data fields, **make sure to add them to the layout using the Layout Builder**. If fields are not added to the layout, they will not be available for use.
 
-{% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
-[layout-manager](../../settings/global-settings/document-types/layout-manager/)
-{% endcontent-ref %}
-
+[Layout Builder](layout-builder.md)

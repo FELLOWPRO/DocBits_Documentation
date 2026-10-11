@@ -37,6 +37,6 @@ Zie [Aanmeldingsanalyses](login-analytics.md) voor de volledige uitsplitsing.
    * **E-mailadres**: Wordt gebruikt om in te loggen en voor meldingen.
    * **Wachtwoord**: Moet voldoen aan het beveiligingsbeleid van uw organisatie.
    * **Gebruikersrol**: Wijs de juiste rol toe (Standard User, Admin of System Admin).
-3. Klik op **Opslaan** om het gebruikersaccount aan te maken. De nieuwe gebruiker ontvangt een e-mail met de inloggegevens.
+3. Klik op **Opslaan** om het gebruikersaccount aan te maken. De nieuwe gebruiker ontvangt een e-mail met de inloggegevens en een koppeling om het eerste wachtwoord in te stellen op de pagina Stel een wachtwoord in. Zie [Toegang verkrijgen en inloggen](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#eerste-wachtwoord-voor-door-de-beheerder-aangemaakte-accounts).
 
 > **Let op:** De rol **System Admin** kan alleen worden gekozen bij het aanmaken van een gebruiker — die kan later niet meer worden toegevoegd of verwijderd. Elke organisatie kan slechts één System Admin hebben, en bij het kiezen ervan worden automatisch ook Admin-rechten toegekend. Zie [Beheerdersrechten](admin-privileges.md#admin-vs-system-admin) om te leren wanneer u deze rol gebruikt.

@@ -35,6 +35,6 @@ Klicken Sie auf **Login Analytics**, um Daten zur Anmeldeaktivität in Ihrer ges
    * **Email Address**: Wird für die Anmeldung und für Benachrichtigungen verwendet.
    * **Password**: Muss den Sicherheitsrichtlinien Ihrer Organisation entsprechen.
    * **User Role**: Weisen Sie die passende Rolle zu (Standard User, Admin oder System Admin).
-3. Klicken Sie auf **Save**, um das Benutzerkonto anzulegen. Der neue Benutzer erhält eine E-Mail-Benachrichtigung mit seinen Anmeldedaten.
+3. Klicken Sie auf **Save**, um das Benutzerkonto anzulegen. Der neue Benutzer erhält eine E-Mail-Benachrichtigung mit seinen Anmeldedaten und einem Link, um sein erstes Passwort auf der Seite **Passwort festlegen** zu setzen. Siehe [Erste Schritte und Anmeldung](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#erstes-passwort-für-vom-administrator-angelegte-konten).
 
 > **Hinweis:** Die Rolle **System Admin** kann nur beim Anlegen eines Benutzers gewählt werden – sie kann später weder hinzugefügt noch entfernt werden. Jede Organisation kann nur einen System Admin haben, und mit der Auswahl werden automatisch auch Admin-Rechte vergeben. Wann Sie diese Rolle verwenden sollten, erfahren Sie unter [Admin-Privilegien](admin-privileges.md#admin-vs-system-admin).

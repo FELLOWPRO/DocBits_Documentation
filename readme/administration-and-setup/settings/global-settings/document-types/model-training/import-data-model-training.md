@@ -11,7 +11,7 @@ Verwenden Sie diese Seite, um Beispiel-PDFs für einen Dokumenttyp hinzuzufügen
 
 Die übrigen Steuerelemente auf dieser Karte haben andere Zwecke: **Aktivieren** schaltet den Dokumenttyp ein, **Extraction** wechselt seinen Extraktionsmodus, das Zahnrad öffnet seine Einstellungen, und die übrigen Links öffnen andere Konfigurationsbereiche. Nur um Modell Training zu öffnen, müssen Sie nichts davon ändern.
 
-Die Seite **Trainingsmodel** zeigt die Anzahl der Beispiele und eine Liste der hochgeladenen Trainingsdokumente. In der Beispielorganisation ist die Liste leer; Ihre Organisation kann andere Dokumente und Zahlen anzeigen.
+Die Seite **Trainingsmodel** zeigt die Anzahl der Beispiele und eine Liste der hochgeladenen Trainingsdokumente. Im gezeigten Beispiel enthält die Liste fünf PDF-Dokumente; Ihre Organisation kann andere Dokumente und Zahlen anzeigen.
 
 <figure><img src="../../../../../.gitbook/assets/dbdc646-model-training-de-20261011.png" alt="Seite Trainingsmodel der Rechnung mit Beispielanzahl sowie den Schaltflächen Import, Trainingsmodel, Test-Klassifizierung und der Dokumentenliste"><figcaption><p>Die drei Aktionen befinden sich oben rechts über der Trainingsliste.</p></figcaption></figure>
 

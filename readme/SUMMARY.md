@@ -515,6 +515,7 @@
 
 ## Zaawansowane funkcje i narzędzia <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [Eksplorator grafów wiedzy](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [Postman dla DocBits](advanced-functions-and-tools/postman-for-docbits/README.md)
   * [Przetestuj swoje połączenie BOD za pomocą Postman](advanced-functions-and-tools/postman-for-docbits/test-your-bod-connection-with-postman.md)
 * [Importowanie danych dostawcy i zamówień zakupu do DocBits z plików CSV](advanced-functions-and-tools/importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md)

@@ -8,7 +8,7 @@ Los elementos de costos son cargos u otros importes representados como líneas d
 2. Permanezca en **General** y despliegue **Extracción**.
 3. Busque **Extracción de tablas para el cálculo de costes** debajo de los campos solicitados para la extracción de tablas. Un administrador puede activar este interruptor para la organización.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-es-20261011.png" alt="Ajustes de Clasificación y extracción en español con el interruptor Extracción de tablas para el cálculo de costes visible y desactivado"><figcaption><p>El interruptor está desactivado en la organización de prueba sintética. No se cambió para esta guía.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-es-20261011.png" alt="Ajustes de Clasificación y extracción en español con el interruptor Extracción de tablas para el cálculo de costes visible y activado"><figcaption><p>El interruptor aparece activado en esta captura sintética. La imagen no demuestra el estado de una organización real.</p></figcaption></figure>
 
 {% hint style="info" %}
 El interruptor por sí solo no crea elementos de costos ni líneas de factura. Configure primero los elementos e importe los datos necesarios. La [guía de configuración de elementos de costos](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) vinculada explica el ejemplo de M3. Consulte [Clasificación y extracción](README.md) para ver los demás controles de extracción.

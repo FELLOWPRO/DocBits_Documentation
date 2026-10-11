@@ -252,6 +252,8 @@
           * [🇧🇷 BRAZIL NFC-E](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/brazil-nfce.md)
           * [🇧🇷 BRAZIL CT-E](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/brazil-cte.md)
           * [🇧🇷 BRAZIL NFS-E](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/brazil-nfse.md)
+          * [🇫🇷 FACTURX 1.09 - ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/facturx-1-09-zugferd-2-5.md)
+          * [🇩🇪 ZUGFERD 2.5](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/zugferd-2-5.md)
       * [Transformationsregeln](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
       * [Weitere Einstellungen](admin-section/settings/global-settings/document-types/more-settings/README.md)
         * [Best Practices](admin-section/settings/global-settings/document-types/more-settings/best-practices.md)

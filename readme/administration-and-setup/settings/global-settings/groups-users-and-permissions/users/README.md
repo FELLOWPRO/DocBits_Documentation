@@ -37,6 +37,6 @@ Zobacz [Analiza logowań](login-analytics.md), aby poznać pełne szczegóły.
    * **Adres e-mail**: Używany do logowania i powiadomień.
    * **Hasło**: Musi być zgodne z zasadami bezpieczeństwa Twojej organizacji.
    * **Rola użytkownika**: Przypisz odpowiednią rolę (Standard User, Admin lub System Admin).
-3. Kliknij **Zapisz**, aby utworzyć konto użytkownika. Nowy użytkownik otrzyma powiadomienie e-mail z danymi do logowania.
+3. Kliknij **Zapisz**, aby utworzyć konto użytkownika. Nowy użytkownik otrzyma powiadomienie e-mail z danymi do logowania oraz linkiem do ustawienia pierwszego hasła na stronie Ustaw hasło. Zobacz [Uzyskiwanie dostępu i logowanie](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#pierwsze-hasło-dla-kont-utworzonych-przez-administratora).
 
 > **Uwaga:** Rolę **System Admin** można wybrać wyłącznie podczas tworzenia użytkownika — nie da się jej dodać ani usunąć później. Każda organizacja może mieć tylko jednego System Admina, a jego wybór automatycznie nadaje również uprawnienia Admin. Zobacz [Uprawnienia administratora](admin-privileges.md#admin-vs-system-admin), aby dowiedzieć się, kiedy z niej korzystać.

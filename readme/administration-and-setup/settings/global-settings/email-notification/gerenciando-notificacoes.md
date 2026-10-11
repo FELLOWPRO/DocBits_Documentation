@@ -21,7 +21,7 @@ A regra agora aparece na lista. O exemplo da documentação foi desativado depoi
 
 Abra o menu **Actions** da linha. **Editar** abre a regra com seus valores atuais. **Ativar** habilita este exemplo inativo; uma regra ativa oferece **Desativar** em vez disso. **Registros** abre o histórico de notificações da regra. **Excluir** remove a regra após a confirmação. Verifique os destinatários e o momento do envio antes de ativar ou alterar uma regra.
 
-<figure><img src="../../../../.gitbook/assets/dbdc645-notifications-actions-pt-20261011.png" alt="Menu Actions da notificação de exemplo inativa com Editar, Ativar, Registros e Excluir"><figcaption><p>As ações disponíveis dependem de a regra estar ativa.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc645-notifications-actions-inactive-pt-20261011.png" alt="Menu Actions da regra de exemplo inativa com Editar, Ativar, Registros e Excluir"><figcaption><p>A regra desativada do exemplo oferece Ativar; uma regra ativa oferece Desativar.</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/dbdc645-notifications-delete-pt-20261011.png" alt="Aviso de confirmação Tem certeza? antes de excluir a regra de notificação"><figcaption><p>A exclusão pede confirmação e não pode ser desfeita depois.</p></figcaption></figure>
 

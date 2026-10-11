@@ -130,6 +130,7 @@
       * [Campi](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Navigare il Layout Manager](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
         * [Impostazioni dei dati master](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
+        * [Definire la Validazione e il Punteggio della Partita](administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md)
       * [Addestramento del Modello](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Espressioni Regolari](administration-and-setup/settings/global-settings/document-types/regex.md)
       * [Script](administration-and-setup/settings/global-settings/document-types/script/README.md)

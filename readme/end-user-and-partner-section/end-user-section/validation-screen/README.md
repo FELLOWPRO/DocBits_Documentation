@@ -50,19 +50,11 @@ Siehe hier [Scripting in DocBits](../../../administration-and-setup/settings/glo
 
 <figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
 
-Es gibt Felder, die für die weitere Bearbeitung erforderlich sind; diese können in den Einstellungen bearbeitet werden.
+Felder, die Aufmerksamkeit benötigen, zeigen einen farbigen Rahmen oder ein Informationssymbol. Im Beispiel unten hat das Feld **Rechnungsnummer** einen roten Rahmen und ein Warnsymbol. Der Wert ist auf der Rechnung rechts sichtbar, aber DocBits hat ihn nicht aus dem Dokument extrahiert. Wählen Sie die Nummer im Dokument aus oder korrigieren Sie das Feld und speichern Sie dann das Dokument.
 
-Verwenden Sie den Tooltip, um herauszufinden, ob:
+Bewegen Sie den Mauszeiger über das Informationssymbol neben einem Feld oder wählen Sie es aus, um den genauen Grund zu lesen. Je nach Feld zeigt die Meldung eine fehlende Extraktion, einen erforderlichen Wert, ein geringes Konfidenzniveau oder eine Validierungsabweichung an. Betrifft die Warnung die Beträge, vergleichen Sie die Betragsfelder mit der Rechnung und verwenden Sie [Automatische Überprüfungen im Validierungsbildschirm](automatic-checks-on-the-validation-screen.md) für die passende Prüfung.
 
-* Ist es ein Pflichtfeld (erforderlich)
-* Validierung erforderlich
-* Geringes Vertrauen
-* Volle Steuerbetragsabweichung
-
-**Erforderliche Felder:**
-
-* **Zweck:** Identifiziert Pflichtfelder innerhalb von Dokumenten, die ausgefüllt oder korrigiert werden müssen, bevor eine weitere Verarbeitung erfolgt.
-* **Anwendungsfall:** Stellt sicher, dass wesentliche Daten genau erfasst werden, um die Datenintegrität und die Einhaltung von Geschäftsregeln zu gewährleisten.
+<figure><img src="../../../.gitbook/assets/validation-required-field-de-20261011.png" alt="Deutscher DocBits-Validierungsbildschirm mit roter Warnung an der Rechnungsnummer und der passenden Nummer auf einer synthetischen Rechnung"><figcaption><p>Ein Feld mit Handlungsbedarf neben der Rechnung, mit der der Wert geprüft wird.</p></figcaption></figure>
 
 ## Extrahierte Tabelle (Positionen)
 

@@ -1,4 +1,4 @@
-# Instelling Validatie forceren en Wedstrijdscore
+# Instelling Validatie en Wedstrijdscore
 
 In **Velden** kunt u de validatie- en herkenningsdrempels voor een documenttype instellen. Deze pagina gebruikt **Factuur** in een testorganisatie van de documentatie. Ze legt het huidige selectievakje **FORCE VALIDATIE** en de besturingselementen voor de **WEDSTRIJDSCORE** uit.
 

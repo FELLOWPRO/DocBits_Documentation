@@ -586,7 +586,7 @@
       * [Purchase Order BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/purchase-order-bod-mapping.md)
       * [ReceiveDelivery BOD-toewijzing](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/receivedelivery-bod.md)
       * [Auto Accounting BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/auto-accounting-bod-mapping.md)
-    * [Auto Accounting](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
+    * [Automatische boekhouding](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
     * [Suppliers and Purchase Orders](infor-integration-and-configuration/importing-customer-master-data/m3/suppliers-and-purchase-orders.md)
     * [Alle leveranciers importeren](infor-integration-and-configuration/importing-customer-master-data/m3/how-to-import-all-suppliers.md)
     * [Tabelextractie voor kostenelement](infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)

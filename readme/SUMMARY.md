@@ -129,6 +129,7 @@
         * [Ajout et Édition de Champs](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
         * [Réglages des données de base](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Formation de Modèle](administration-and-setup/settings/global-settings/document-types/model-training.md)
+        * [Importer des documents d'exemple pour l'entraînement du modèle](administration-and-setup/settings/global-settings/document-types/model-training/import-data-model-training.md)
       * [Regex](administration-and-setup/settings/global-settings/document-types/regex.md)
       * [Script](administration-and-setup/settings/global-settings/document-types/script/README.md)
         * [Scripting dans DocBits](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)

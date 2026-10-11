@@ -125,6 +125,7 @@
       * [Gestor de Diseño](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Navegando el Administrador de Diseño](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Subtipos de Documentos](administration-and-setup/settings/global-settings/document-types/document-sub-types.md)
+      * [Crear un nuevo subtipo](administration-and-setup/settings/global-settings/document-types/creating-a-new-sub-type.md)
       * [Columnas de Tabla](administration-and-setup/settings/global-settings/document-types/table-columns.md)
       * [Campos](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Agregando y Editando Campos](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)

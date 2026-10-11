@@ -22,6 +22,10 @@ Der Abschnitt Dokumententypen listet alle von Docbits erkannten und verarbeitete
 8. **Skripte**: Schreiben oder ändern Sie Skripte, die benutzerdefinierte Verarbeitungsregeln oder Workflows für Dokumente dieses Typs ausführen.
 9. **EDI (Electronic Data Interchange)**: Konfigurieren Sie Einstellungen im Zusammenhang mit dem Austausch von Dokumenten in standardisierten elektronischen Formaten.
 
+#### Benutzerdefinierte Validierungsregeln
+
+Öffnen Sie einen Dokumenttyp und wählen Sie **Validierungsregeln**, um die eigenen Validierungsregeln dieses Typs zu verwalten (die Funktion muss beim Dokumenttyp aktiviert sein). Um eine vorhandene Regel zu übernehmen, ohne sie neu zu erstellen, folgen Sie der Anleitung [Benutzerdefinierte Validierungsregel duplizieren](../../../../administration-and-setup/settings/global-settings/document-types/duplicate-a-custom-validation-rule.md). Sie erklärt Regelname, Regelschlüssel und die Bestätigungs-Schaltflächen.
+
 {% hint style="info" %}
 Siehe [Einrichten von Dokumententypen](../../../setup/document-types/)
 {% endhint %}

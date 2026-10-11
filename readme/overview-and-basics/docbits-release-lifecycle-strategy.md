@@ -1,6 +1,6 @@
 # DocBits Release Lifecycle Strategy
 
-DocBits provides two release channels, **VESTA** and **NOVA**, so your organization can prepare for upcoming releases and choose when to adopt them during the parallel production phase.
+DocBits, the application from FELLOWPRO, provides two release channels, **VESTA** and **NOVA**, so your organization can prepare for upcoming releases and choose when to adopt them during the parallel production phase.
 
 Both channels are production capable. VESTA provides the current common release, while NOVA introduces the next release through development, validation, and production availability. During parallel production, the channels offer different releases at the same time.
 
@@ -13,7 +13,7 @@ Each release cycle follows three phases, followed by a release rollover and the 
 | Phase 1 — Development | R1.0.x in production | R1.1 in development | Continue using VESTA while the next release is prepared. |
 | Phase 2 — QA and acceptance testing | R1.0.x in production | R1.1 in quality assurance and user acceptance testing | Evaluate the upcoming release in the NOVA sandbox while continuing production work on VESTA. |
 | Phase 3 — Parallel production | R1.0.x in production | R1.1.x in production | After sandbox evaluation, choose whether and when to switch to NOVA through the application's release-channel setting. |
-| Release rollover | R1.1.x becomes the common VESTA release | R1.1.x is carried forward into VESTA | DocBits manages the rollover following advance email communication. |
+| Release rollover | R1.1.x becomes the common VESTA release | R1.1.x is carried forward into VESTA | FELLOWPRO manages the rollover following advance email communication. |
 | Next cycle | R1.1.x in production | R1.2 in development | The same three-phase lifecycle begins again. |
 
 ## Phase 1 — Continue on VESTA while the next release is developed
@@ -43,26 +43,26 @@ During this phase, your organization controls whether and when to move from VEST
 2. Decide when your organization is ready to use it in production.
 3. Use the application's **release-channel setting** to switch from VESTA to NOVA.
 
-You can continue using VESTA during parallel production if you prefer to adopt the new release through the subsequent DocBits-managed rollover.
+You can continue using VESTA during parallel production if you prefer to adopt the new release through the subsequent FELLOWPRO-managed rollover.
 
 ## Release rollover — NOVA becomes the next VESTA release
 
-Following the parallel production phase, DocBits manages the release rollover. The release available through **NOVA R1.1.x becomes VESTA R1.1.x**, establishing it as the common production release for the next cycle.
+Following the parallel production phase, FELLOWPRO manages the release rollover. The release available through **NOVA R1.1.x becomes VESTA R1.1.x**, establishing it as the common production release for the next cycle.
 
 The direction of this rollover is:
 
 **NOVA R1.1.x → VESTA R1.1.x**
 
-Before the rollover, DocBits sends an advance email announcement to all customers. The announcement invites you to contact DocBits with any concerns or objections so they can be discussed before the rollover proceeds.
+Before the rollover, FELLOWPRO sends an advance email announcement to all customers. The announcement invites you to contact FELLOWPRO with any concerns or objections so they can be discussed before the rollover proceeds.
 
-This is a DocBits-managed lifecycle milestone. It is distinct from your organization's choice to switch from VESTA to NOVA during parallel production.
+This is a FELLOWPRO-managed lifecycle milestone. It is distinct from your organization's choice to switch from VESTA to NOVA during parallel production.
 
 ### Who controls each transition?
 
 | Transition | Managed by | Purpose |
 | --- | --- | --- |
 | Customer rollout: switch from VESTA to NOVA during Phase 3 | Your organization, through the application's release-channel setting | Adopt the new production release after sandbox evaluation, at a time you choose during parallel production. |
-| Release rollover: NOVA R1.1.x becomes VESTA R1.1.x | DocBits, following advance email communication and discussion of any objections | Make the new release the common VESTA production release and prepare for the next cycle. |
+| Release rollover: NOVA R1.1.x becomes VESTA R1.1.x | FELLOWPRO, following advance email communication and discussion of any objections | Make the new release the common VESTA production release and prepare for the next cycle. |
 
 ## The next release cycle
 
@@ -78,11 +78,11 @@ Yes. Both channels are production capable, and both offer production releases du
 
 ### Do we need to switch to NOVA as soon as it becomes available?
 
-No. During parallel production, you choose whether and when to switch after evaluating the release in the NOVA sandbox. You may continue using VESTA until the DocBits-managed rollover brings the new release to VESTA.
+No. During parallel production, you choose whether and when to switch after evaluating the release in the NOVA sandbox. You may continue using VESTA until the FELLOWPRO-managed rollover brings the new release to VESTA.
 
 ### How will we know about the rollover?
 
-DocBits announces it in advance by email to all customers. If you have concerns or objections, contact DocBits as invited in that announcement to discuss them before the rollover.
+FELLOWPRO announces it in advance by email to all customers. If you have concerns or objections, contact FELLOWPRO as invited in that announcement to discuss them before the rollover.
 
 ### What happens to NOVA after the rollover?
 

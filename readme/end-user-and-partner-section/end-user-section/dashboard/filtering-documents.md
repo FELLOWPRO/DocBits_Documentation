@@ -1,58 +1,45 @@
 # Documenten filteren
 
-## Standaard filteropties
+Gebruik de zoekbalk van het Dashboard, het filterpaneel, het datumbereik en de tabbladen voor documenttypen om de documentlijst te beperken. De bedieningselementen werken samen: een document moet overeenkomen met de actieve zoekopdracht en filters om in de tabel te blijven.
 
-Je kunt naar specifieke documenten zoeken door de documentnaam of ID in te voeren in de zoekbalk bovenaan het Dashboard.
+## Zoek een document op naam
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_1.png)
+1. Open het **Dashboard**.
+2. Typ een deel van een documentnaam in de zoekbalk boven de tabel en druk op **Enter**. Het aantal in de dashboardbadge en de tabel worden bijgewerkt met de overeenkomende documenten.
+3. Vervang de zoekterm wanneer je een ander document zoekt. Voor zoekopdrachten op veld en de zoeksyntaxis, zie [Snel zoeken](quick-search.md).
 
-Voor verfijnder filteren klik je op het filterpictogram aan de rechterkant van de zoekbalk om specifieke criteria voor het zoeken naar documenten te selecteren.
+<figure><img src="../../../.gitbook/assets/dbdc167-filtering-search-result-nl-20261011.png" alt="Dashboard in het Nederlands met één overeenkomend testdocument na een zoekopdracht op documentnaam"><figcaption><p>Een zoekopdracht op documentnaam beperkt de documentlijst.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_2.png)
+## Filter op status, toewijzing of herstart
 
-De volgende filteropties zijn beschikbaar:
+1. Selecteer het pictogram **Filters** (schuifregelaars) rechtsbovenaan de zoekbalk.
+2. Kies een of meer **Status**-waarden. Je kunt meerdere statussen tegelijk selecteren.
+3. In **Toegewezen Aan** selecteer je de gebruikers waarvan je documenten wilt zien. Als je organisatie groepsrechten heeft ingeschakeld, kunnen groepen in dezelfde lijst verschijnen. In dit paneel bestaat geen apart veld **Toegewezen aan groep**.
+4. Selecteer **Opnieuw Opstarten Vereist** om documenten te tonen die een herstart nodig hebben.
+5. Selecteer **Toepassen**. Selecteer **Filters wissen** in dit paneel om deze selecties te verwijderen; de zoektekst en het datumbereik zijn afzonderlijke bedieningselementen.
 
-* **Status**: Filter op verwerkingsstatus (bijv. Ready for validation, Rejected).
-*   **Toegewezen aan**: Filter op de gebruikers aan wie het document is toegewezen.
+<figure><img src="../../../.gitbook/assets/dbdc167-filtering-filter-panel-nl-20261011.png" alt="Filterpaneel in het Nederlands met Status, Toegewezen Aan, Opnieuw Opstarten Vereist, Filters wissen en Toepassen"><figcaption><p>Het huidige filterpaneel heeft drie criteria en twee acties.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_9.png)
-* **Toegewezen aan groep**: Filter op de groepen waaraan het document is toegewezen.
-* **Opnieuw opstarten vereist**: Filter op documenten waarvoor een herstart vereist is.
+<figure><img src="../../../.gitbook/assets/dbdc167-filtering-status-options-nl-20261011.png" alt="Keuzelijst Status in het Nederlands met selecteerbare verwerkingsstatussen"><figcaption><p>Selecteer de verwerkingsstatussen die je nodig hebt.</p></figcaption></figure>
 
-Klik op **Toepassen** om de geselecteerde filters toe te passen, of **Filters wissen** om ze te resetten.
+<figure><img src="../../../.gitbook/assets/dbdc167-filtering-assignee-options-nl-20261011.png" alt="Keuzelijst Toegewezen Aan met de gebruikers in de testorganisatie"><figcaption><p>Selecteer een gebruiker in Toegewezen Aan.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_3.png)
+Voor een uitleg van elke verwerkingsstatus, zie [Documentstatus](document-status.md).
 
-## Tijdsgebaseerd filteren
+## Kies een importdatumbereik
 
-Om documenten te filteren op importdatum, gebruik je het tijdfilter rechts van de zoekbalk. Je kunt kiezen uit de volgende vooraf ingestelde perioden:
+Boven de zoekbalk selecteer je **30D**, **90D**, **180D**, **365D** of **Alle** om het datumbereik van de import te wijzigen. Selecteer **Aangepast**, kies **Startdatum** en **Einddatum** en selecteer daarna **Toepassen** voor een specifiek bereik. De huidige keuze is gemarkeerd.
 
-* **30 dagen**
-* **90 dagen**
-* **180 dagen**
-* **365 dagen**
-* **Alle**
+<figure><img src="../../../.gitbook/assets/dbdc167-filtering-custom-dates-nl-20261011.png" alt="Aangepast datumbereik in het Nederlands met Startdatum, Einddatum en Toepassen"><figcaption><p>Gebruik Aangepast als de vooraf ingestelde perioden niet passen.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_4.png)
+## Gebruik de tabbladen voor documenttypen
 
-Je kunt ook een aangepast datumbereik selecteren door op **Aangepast** te klikken en vervolgens een **Startdatum** en **Einddatum** op te geven. Klik daarna op **Toepassen** om het filter te activeren.
+1. Selecteer **+** naast **Alle**. Het menu toont de documenttypen die voor je organisatie beschikbaar zijn.
+2. Selecteer een type, bijvoorbeeld **Factuur**, om het tabblad toe te voegen. Selecteer daarna het nieuwe tabblad om de tabel tot dat type te beperken. **Alle** verwijdert de typebeperking zonder het tabblad te verwijderen.
+3. Om een typetabblad te verwijderen, selecteer je de **×**. Het tabblad **Alle** kan niet worden verwijderd.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_5.png)
+<figure><img src="../../../.gitbook/assets/dbdc167-filtering-document-type-menu-nl-20261011.png" alt="Menu met plusteken op het Dashboard in het Nederlands met Factuur als beschikbaar documenttype"><figcaption><p>Voeg een typetabblad toe via het menu met het plusteken.</p></figcaption></figure>
 
-<mark style="color:red;">**Opmerking**</mark>: Het selecteren van een langere periode kan resulteren in langere laadtijden.
+<figure><img src="../../../.gitbook/assets/dbdc167-filtering-invoice-tab-nl-20261011.png" alt="Tabblad documenttype Factuur geselecteerd op het Dashboard in het Nederlands, met het verwijderpictogram zichtbaar"><figcaption><p>Kies het tabblad om het typefilter toe te passen; gebruik × om het tabblad te verwijderen.</p></figcaption></figure>
 
-## Filteren op documenttype
-
-Om te filteren op specifieke documenttypes:
-
-1.  Klik op het plus (+)-pictogram bovenaan het Dashboard.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_6.png)
-2. Selecteer een documenttype uit de lijst.
-3.  Na het selecteren van een documenttype kun je met de tabbladen bovenaan het Dashboard tussen filters schakelen.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_7.png)
-
-Om een specifiek filter te verwijderen, beweeg je de muis over het filterlabel en klik je op de rode X. Dit verwijdert het filter uit de tablijst.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_8.png)
+Als het menu **+** geen typen toont, vraag dan een beheerder om te controleren welke documenttypen actief zijn voor je organisatie. Zie [Documenttypen](../../../administration-and-setup/settings/global-settings/document-types/README.md). Om een combinatie van filters te bewaren voor later, zie [Persoonlijke Dashboards](personal-dashboards.md).

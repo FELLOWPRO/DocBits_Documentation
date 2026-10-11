@@ -8,7 +8,7 @@ Kostenelemente sind Gebühren oder sonstige Beträge, die als Positionen in der 
 2. Bleiben Sie auf **Allgemein** und klappen Sie **Extraktion** auf.
 3. Suchen Sie **Tabellenextraktion für Kalkulationselement** unterhalb der Felder, die für die Tabellenextraktion angefordert wurden. Ein Administrator kann diesen Schalter für die Organisation einschalten.
 
-<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-de-20261011.png" alt="Klassifizierung und Extraktion-Einstellungen in der Testorganisation A auf Deutsch, mit dem sichtbaren, ausgeschalteten Schalter Tabellenextraktion für Kalkulationselement"><figcaption><p>Der Schalter ist in der synthetischen Testorganisation A ausgeschaltet. Er wurde für diese Anleitung nicht geändert.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-146-costing-setting-de-20261011.png" alt="Synthetische deutschsprachige Einstellung Klassifizierung und Extraktion mit dem sichtbaren, eingeschalteten Schalter Tabellenextraktion für Kalkulationselement"><figcaption><p>Der Schalter erscheint in dieser synthetischen Aufnahme eingeschaltet. Das Bild belegt nicht den Zustand einer realen Organisation.</p></figcaption></figure>
 
 {% hint style="info" %}
 Der Schalter allein erzeugt keine Kostenelemente oder Rechnungspositionen. Konfigurieren Sie zuerst die Kostenelemente und importieren Sie die benötigten Daten. Die verknüpfte [Anleitung zur Einrichtung von Kostenelementen](../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md) zeigt das M3-Beispiel. Weitere Extraktionseinstellungen finden Sie unter [Klassifizierung und Extraktion](README.md).

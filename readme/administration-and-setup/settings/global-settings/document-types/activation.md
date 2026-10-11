@@ -1,63 +1,13 @@
 # Activation
 
-## Activer ou désactiver des types de documents dans un système de gestion de documents comme Docbits permet à une organisation de ne garder actifs que les types de documents dont elle a besoin pour assurer une gestion efficace et claire.
+Les administrateurs choisissent les types de documents disponibles pour leur organisation. Ce réglage se modifie sur la page **Types de documents**, sans supprimer le type ni sa configuration.
 
-### Voici les étapes pour activer et désactiver des types de documents, ainsi qu'une explication de la fonction de basculement dans l'interface utilisateur :
+1. Ouvrez **Paramètres → Types de documents**.
+2. Trouvez le type de document, par exemple **Facture**, dans **Types de documents par défaut** ou **Types de documents personnalisés**.
+3. Utilisez l'interrupteur **Activer** sur la carte de ce type. Un interrupteur coloré signifie que le type est actif ; un interrupteur gris signifie qu'il est inactif. Attendez le message de confirmation avant de quitter la page. Cet interrupteur n'a pas de bouton Enregistrer séparé.
 
-#### **Accéder à la Gestion des Types de Documents**
+<figure><img src="../../../../.gitbook/assets/document-type-activation-fr-20261006.png" alt="Paramètres Types de documents en français montrant les interrupteurs Activer et Extraction sur les cartes Facture, Credit Note et Delivery Note"><figcaption><p>Chaque type de document dispose de son propre interrupteur Activer à droite de sa carte.</p></figcaption></figure>
 
-* Se connecter : Connectez-vous à DocBits avec des droits d'administrateur.
-* Naviguer : Allez dans Paramètres.
-* Types de Documents : Trouvez la section Types de Documents.
+L'interrupteur **Extraction** placé à côté d'**Activer** est un réglage différent. Il sélectionne le mode d'extraction (Flex ou Fix) ; il n'active ni ne désactive le type de document. L'icône d'engrenage ouvre d'autres paramètres pour ce type. Les liens sous le nom du type ouvrent ses plans, ses champs, ses tables, ses scénarios et les autres zones de configuration disponibles.
 
-
-
-**Accéder à la Liste des Types de Documents**
-
-* Accédez à la liste des types de documents existants. Cette liste montre tous les types de documents définis, à la fois actifs et inactifs.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_default_values.png" alt="Docbits Field Default Values"><figcaption></figcaption></figure>
-
-**Activer ou désactiver un type de document Sélectionner le Type de Document :**
-
-* Sélectionnez le type de document que vous souhaitez activer ou désactiver.&#x20;
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_enable_historization.png" alt="Docbits Field Enable Historization"><figcaption></figcaption></figure>
-
-**Utiliser la fonction de basculement :**
-
-* Dans l'interface utilisateur, il y a un interrupteur à côté de chaque type de document qui permet l'activation et la désactivation.&#x20;
-
-**Activation :**
-
-* Si le type de document est actuellement désactivé, l'interrupteur peut montrer une position grise ou éteinte.&#x20;
-* Cliquez sur l'interrupteur pour activer le type de document. L'interrupteur change de position et de couleur pour indiquer l'activation.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_user_permissions.png" alt="Docbits Field User Permissions"><figcaption></figcaption></figure>
-
-**Désactivation :**
-
-* Si le type de document est actuellement activé, l'interrupteur montre une position colorée ou allumée.&#x20;
-* Cliquez sur l'interrupteur pour désactiver le type de document. L'interrupteur change de position et de couleur pour indiquer la désactivation.
-
-<figure><img src="../../../../.gitbook/assets/docbits_deactivate_doc_type_switch.png" alt="Docbits Deactivate Doc Type Switch"><figcaption></figcaption></figure>
-
-
-
-**Enregistrer :**&#x20;
-
-* Assurez-vous que toutes les modifications sont enregistrées. Certains systèmes enregistrent les modifications automatiquement, tandis que d'autres nécessitent une confirmation explicite.
-
-### Notification et documentation
-
-**Informer les utilisateurs :**&#x20;
-
-* Informez les utilisateurs de l'activation ou de la désactivation du type de document, surtout si cela impacte leurs processus de travail.
-
-**Mettre à jour la documentation :**&#x20;
-
-* Mettez à jour la documentation du système pour refléter le statut actuel des types de documents.
-
-
-
-Conclusion La capacité d'activer ou de désactiver des types de documents en fonction des besoins de l'organisation est un outil utile pour gérer le traitement des documents dans Docbits. En utilisant simplement la fonction de basculement dans l'interface utilisateur, les administrateurs peuvent réagir de manière flexible et efficace et s'assurer que le système est aligné de manière optimale avec les besoins actuels de l'entreprise.
+DocBits fournit les types de documents par défaut, qui ne peuvent pas être supprimés. Vous pouvez aussi créer et gérer des types personnalisés. Voir [Ajout/Modification de Types de Documents](adding-editing-document-types.md) pour les étapes de configuration suivantes et [Colonnes de Tableau](table-columns.md) pour configurer les éléments de ligne extraits.

@@ -46,21 +46,11 @@ Zie hier toevoegen [Script in DocBits](../../../administration-and-setup/setting
 
 <figure><img src="../../../.gitbook/assets/docbits_mandatory_fields.png" alt="Docbits Mandatory Fields"><figcaption></figcaption></figure>
 
-Er zijn velden die vereist zijn voor verdere bewerking, deze kunnen in de instellingen worden bewerkt.
+Velden die aandacht nodig hebben, tonen een gekleurde rand of een informatiepictogram. In het onderstaande voorbeeld heeft het veld **Factuurnummer** een rode rand en een waarschuwpictogram. De waarde is rechts op de factuur zichtbaar, maar DocBits heeft deze niet uit het document gehaald. Selecteer het nummer op het document of corrigeer het veld, en sla het document vervolgens op.
 
-Gebruik de tooltips om te achterhalen of:
+Beweeg over het informatiepictogram naast een veld of selecteer het om de specifieke reden te lezen. Afhankelijk van het veld kan het melding maken van een ontbrekende extractie, een verplichte waarde, een lage betrouwbaarheid of een validatie-afwijking. Als de waarschuwing de totalen betreft, vergelijk dan de bedragvelden met de factuur en gebruik [Automatische controles op het validatiescherm](automatic-checks-on-the-validation-screen.md) voor de betreffende controle.
 
-* Is het een verplicht veld (vereist)
-* Validatie vereist
-* Lage betrouwbaarheid
-* Volledig belastingbedrag mismatch
-
-**Verplichte velden:**
-
-* **Doel:** Identificeert verplichte velden binnen documenten die moeten worden ingevuld of gecorrigeerd voordat verdere verwerking plaatsvindt.
-* **Gebruiksscenario:** Zorgt ervoor dat essentiële gegevens nauwkeurig worden vastgelegd, waardoor de integriteit van de gegevens en de naleving van bedrijfsregels behouden blijven.
-
-<figure><img src="https://lh7-us.googleusercontent.com/3-ZXi-fUcWlM0nUaOAQbY7bynchbIN30JReKRdijyMFvX_GIHrnbcismANdOi6UfYa6GCPvk9wnOixya0E_rBk3V8hQduS-gBZJi4k0Kq8jeN93DxC2w5J-YRqeV9IkVB6oiH8tm0-y7gWJO_8fBplo" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-required-field-en-2026.png" alt="Nederlandstalig DocBits-validatiescherm met een rode waarschuwing bij het factuurnummer en het bijbehorende nummer zichtbaar op een synthetische factuur"><figcaption><p>Een veld dat aandacht nodig heeft, naast de factuur waarmee de waarde wordt gecontroleerd.</p></figcaption></figure>
 
 ## Geëxtraheerde tabel (regelitems)
 

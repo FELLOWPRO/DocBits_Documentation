@@ -131,6 +131,7 @@
       * [Formation de Modèle](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Regex](administration-and-setup/settings/global-settings/document-types/regex.md)
       * [Script](administration-and-setup/settings/global-settings/document-types/script/README.md)
+        * [Activation et gestion des scripts](administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md)
         * [Scripting dans DocBits](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)
           * [Fonctions](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/functions.md)
           * [Fonctions de Recherche Fulltext et Vectorielle](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md)

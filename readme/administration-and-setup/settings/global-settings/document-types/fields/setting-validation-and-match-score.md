@@ -1,44 +1,25 @@
 # Paramétrage de la validation et du score de correspondance
 
-## Instructions pour l'utilisation des paramètres Validation forcée et Valeur de correspondance afin d'améliorer l'intégrité des données et la précision de la reconnaissance.
+Dans **Champs**, vous pouvez définir les seuils de validation et de reconnaissance d'un type de document. Cette page utilise **Facture** dans une organisation de test de la documentation. Elle explique la case à cocher **VALIDATION DE LA FORCE** et les contrôles **SCORE DU MATCH** actuels.
 
-Voici les instructions pour l'utilisation des paramètres Validation forcée et Valeur de correspondance afin d'améliorer l'intégrité des données et la précision de la reconnaissance dans un système de traitement de documents :
+## Ouvrir les paramètres des champs
 
-### Validation forcée (Force Validation) :
+1. Allez dans **Paramètres → Types De Documents → Facture → Champs**.
+2. Utilisez **Recherche par nom** pour trouver un champ, par exemple `invoice_number` (affiché comme **Numéro de la facture**).
+3. Vérifiez la ligne du champ avant de modifier un paramètre. **REQUIS**, **Lecture Seule**, **Masqué** et **VALIDATION DE LA FORCE** sont des cases à cocher indépendantes.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_choose_column_type.png" alt="Docbits Choose Column Type" width="151"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-676-fields-overview-fr-20261011.png" alt="Page Champs de la Sandbox en français montrant les PARAMÈTRES DE RECONNAISSANCE, les contrôles OCR et SCORE DU MATCH, les colonnes de champs et Enregistrer les paramètres"><figcaption><p>Les contrôles de reconnaissance apparaissent au-dessus de la liste des champs.</p></figcaption></figure>
 
-Ce paramètre vous permet de définir des règles qui vérifient si les données saisies répondent à certains critères.
+## VALIDATION DE LA FORCE (Force Validation)
 
-**Pour configurer cela :**
+Cochez **VALIDATION DE LA FORCE** dans la ligne du champ pour appliquer une validation plus stricte à ce champ. La case à cocher est indépendante de **REQUIS** : marquer un champ comme requis ne coche pas VALIDATION DE LA FORCE automatiquement. La case à cocher peut être indisponible lorsque un champ est masqué ou en lecture seule. Cliquez sur **Enregistrer les paramètres** après avoir modifié la configuration du champ.
 
-* Allez dans les paramètres du champ en question.
-* Activez l'option Validation forcée.
-* Définissez les règles de validation à vérifier. Il peut s'agir, par exemple, de limites numériques, d'expressions régulières pour les champs de texte ou de relations avec d'autres champs.
+Les anciennes instructions suggéraient de saisir ici des limites numériques ou des expressions régulières. La table des Champs actuelle n'affiche pas d'éditeur de règles dans la cellule VALIDATION DE LA FORCE. Pour les règles spécifiques à un champ, consultez [Configuration des propriétés de champ](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+## SCORE DU MATCH (Match Score)
 
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+**SCORE DU MATCH** est un seuil numérique, pas une valeur de référence fixe. Le curseur **SCORE DU MATCH** dans **PARAMÈTRES DE RECONNAISSANCE** applique sa valeur aux lignes de champs du type de document ; utilisez le champ **SCORE DU MATCH** d'une ligne pour une valeur individuelle. Dans l'organisation de test, le curseur affiche **80** et la ligne `invoice_number` affiche **60**. Vérifiez les champs concernés, puis cliquez sur **Enregistrer les paramètres**.
 
-**Impact :**
+<figure><img src="../../../../../.gitbook/assets/dbdc-676-invoice-id-settings-fr-20261011.png" alt="Ligne du champ invoice_number dans la Sandbox en français avec VALIDATION DE LA FORCE cochée et SCORE DU MATCH 60"><figcaption><p>Recherchez un champ pour vérifier sa case VALIDATION DE LA FORCE et sa valeur de SCORE DU MATCH.</p></figcaption></figure>
 
-* L'application de règles de validation aide à détecter les erreurs tôt et améliore la qualité des données. Les utilisateurs sont invités à saisir des données correctes, ce qui augmente l'intégrité de la base de données.
-
-### Score de correspondance (Match Score) :
-
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
-
-Ce paramètre vous permet de faire correspondre la valeur saisie par rapport à une valeur de référence prédéfinie.
-
-**Pour configurer cela :**
-
-* Naviguez vers les paramètres du champ.
-* Activez l'option Valeur de correspondance (Match Value).
-* Saisissez la valeur de référence par rapport à laquelle comparer la valeur saisie.
-
-**Impact :**
-
-* Définir une valeur de correspondance vous permet de vous assurer que les données saisies correspondent à une norme connue ou prédéfinie. Ceci est particulièrement utile lorsque vous souhaitez vous assurer que les données sont cohérentes et répondent à certains critères.
-* L'utilisation de ces paramètres peut améliorer l'intégrité des données et la précision de la reconnaissance dans votre système de traitement de documents.
-
-Vous vous assurez que seules des données correctes et valides sont saisies, augmentant ainsi la qualité de votre base de données et améliorant la fiabilité de vos analyses et rapports.
+**OCR** est un seuil de reconnaissance distinct situé à côté du SCORE DU MATCH. **RESTAURER LES VALEURS PAR DÉFAUT** réinitialise les paramètres ; utilisez-le uniquement lorsque vous souhaitez abandonner vos seuils personnalisés. Pour les autres options de champs, consultez la [présentation des Champs](README.md).

@@ -1,44 +1,25 @@
 # Festlegen von Validierung und Match Score
 
-## Anweisungen zur Verwendung der Einstellungen "Erzwungene Validierung" und "Match Score", um die Datenintegrität und Erkennungsgenauigkeit zu verbessern.
+In **Felder** können Sie Validierung und Erkennungsschwellenwerte für einen Dokumenttyp festlegen. Diese Seite verwendet **Rechnung** in einer Dokumentationstestorganisation. Sie erläutert das aktuelle Kontrollkästchen **ÜBERPRÜFUNG ERFORDERLICH** und die **Match Score**-Steuerung.
 
-Hier finden Sie Anweisungen zur Verwendung der Einstellungen "Erzwungene Validierung" und "Match Score", um die Datenintegrität und Erkennungsgenauigkeit in einem Belegverarbeitungssystem zu verbessern:
+## Felder-Einstellungen öffnen
 
-### Erzwungene Validierung (Force Validation):
+1. Gehen Sie zu **Einstellungen → Dokumenttypen → Rechnung → Felder**.
+2. Verwenden Sie **Suche nach Name**, um ein Feld zu finden, zum Beispiel `invoice_number` (angezeigt als **Rechnungsnummer**).
+3. Prüfen Sie die Feldzeile, bevor Sie eine Einstellung ändern. **ERFORDERLICH**, **Schreibgeschützt**, **Versteckt** und **ÜBERPRÜFUNG ERFORDERLICH** sind getrennte Kontrollkästchen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_choose_column_type.png" alt="Docbits Choose Column Type" width="151"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-143-fields-overview-de-20261011.png" alt="Deutsche Sandbox-Seite Felder mit Erkennungseinstellungen, OCR- und Match-Score-Reglern, Feldspalten und Einstellungen speichern"><figcaption>Die Erkennungssteuerungen stehen über der Feldliste.</figcaption></figure>
 
-Diese Einstellung ermöglicht es Ihnen, Regeln festzulegen, die prüfen, ob die eingegebenen Daten bestimmte Kriterien erfüllen.
+## ÜBERPRÜFUNG ERFORDERLICH (Force Validation)
 
-**So richten Sie dies ein:**
+Aktivieren Sie **ÜBERPRÜFUNG ERFORDERLICH** in der Feldzeile, um für dieses Feld eine strengere Validierung anzuwenden. Das Kontrollkästchen ist von **ERFORDERLICH** getrennt: Ein Feld als erforderlich zu markieren wählt ÜBERPRÜFUNG ERFORDERLICH nicht automatisch mit aus. Das Kontrollkästchen kann nicht verfügbar sein, wenn ein Feld ausgeblendet oder schreibgeschützt ist. Klicken Sie nach dem Ändern der Feldkonfiguration auf **Einstellungen speichern**.
 
-* Gehen Sie zu den Einstellungen des betreffenden Feldes.
-* Aktivieren Sie die Option "Erzwungene Validierung".
-* Definieren Sie die zu prüfenden Validierungsregeln. Dies können beispielsweise numerische Grenzwerte, reguläre Ausdrücke für Textfelder oder Beziehungen zu anderen Feldern sein.
+Die alten Anweisungen schlugen vor, hier numerische Grenzwerte oder reguläre Ausdrücke einzugeben. Die aktuelle Felder-Tabelle zeigt in der Zelle ÜBERPRÜFUNG ERFORDERLICH keinen Regeleditor. Für feldspezifische Regeln siehe [Konfigurieren von Feldeigenschaften](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+## Match Score
 
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+**Match Score** ist ein numerischer Schwellenwert, kein fester Referenzwert. Der **MATCH SCORE**-Regler unter **ERKENNUNGSEINSTELLUNGEN** wendet seinen Wert auf die Feldzeilen des Dokumenttyps an; verwenden Sie das **MATCH SCORE**-Eingabefeld einer Feldzeile für einen einzelnen Wert. In der Testorganisation zeigen der Regler und `invoice_number` beide den Wert **60**. Prüfen Sie die betroffenen Felder und klicken Sie dann auf **Einstellungen speichern**.
 
-**Auswirkung:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-143-invoice-id-settings-de-20261011.png" alt="Deutsche Sandbox-Feldzeile invoice_number mit aktivierter ÜBERPRÜFUNG ERFORDERLICH und Match Score 60"><figcaption>Suchen Sie nach einem Feld, um sein Kontrollkästchen ÜBERPRÜFUNG ERFORDERLICH und seinen Match-Score-Wert zu prüfen.</figcaption></figure>
 
-* Das Erzwingen von Validierungsregeln hilft, Fehler frühzeitig zu erkennen und die Datenqualität zu verbessern. Benutzer werden aufgefordert, korrekte Daten einzugeben, was die Integrität der Datenbank erhöht.
-
-### Übereinstimmungswert (Match Score):
-
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
-
-Diese Einstellung ermöglicht es Ihnen, den eingegebenen Wert mit einem vordefinierten Referenzwert abzugleichen.
-
-**So richten Sie dies ein:**
-
-* Navigieren Sie zu den Feldeinstellungen.
-* Aktivieren Sie die Option "Match Value".
-* Geben Sie den Referenzwert ein, mit dem der eingegebene Wert verglichen werden soll.
-
-**Auswirkung:**
-
-* Durch das Festlegen eines Match-Werts können Sie sicherstellen, dass die eingegebenen Daten mit einem bekannten Standard oder einer vordefinierten Norm übereinstimmen. Dies ist besonders nützlich, wenn Sie sicherstellen möchten, dass die Daten konsistent sind und bestimmte Kriterien erfüllen.
-* Die Verwendung dieser Einstellungen kann die Datenintegrität und Erkennungsgenauigkeit in Ihrem Belegverarbeitungssystem verbessern.
-
-Sie stellen sicher, dass nur korrekte und gültige Daten erfasst werden, was die Qualität Ihrer Datenbank erhöht und die Zuverlässigkeit Ihrer Analysen und Berichte verbessert.
+**OCR** ist ein separater Erkennungsschwellenwert neben dem Match Score. **STANDARDEINSTELLUNGEN WIEDERHERSTELLEN** setzt die Einstellungen zurück; verwenden Sie es nur, wenn Sie Ihre eigenen Schwellenwerte verwerfen möchten. Weitere Feldoptionen finden Sie in der [Felder-Übersicht](README.md).

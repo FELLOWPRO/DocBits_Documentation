@@ -13,7 +13,7 @@ Each release cycle follows three phases, followed by a release rollover and the 
 | Phase 1 — Development | R1.0.x in production | R1.1 in development | Continue using VESTA while the next release is prepared. |
 | Phase 2 — QA and acceptance testing | R1.0.x in production | R1.1 in quality assurance and user acceptance testing | Evaluate the upcoming release in the NOVA sandbox while continuing production work on VESTA. |
 | Phase 3 — Parallel production | R1.0.x in production | R1.1.x in production | After sandbox evaluation, choose whether and when to switch to NOVA through the application's release-channel setting. |
-| Release rollover | R1.1.x becomes the common VESTA release | R1.1.x is carried forward into VESTA | FELLOWPRO manages the rollover following advance email communication. |
+| Release rollover | R1.1.x replaces R1.0.x as the common VESTA release | R1.1.x is carried forward into VESTA | FELLOWPRO manages the rollover following advance email communication; R1.0.x is decommissioned and is no longer available. |
 | Next cycle | R1.1.x in production | R1.2 in development | The same three-phase lifecycle begins again. |
 
 ## Phase 1 — Continue on VESTA while the next release is developed
@@ -53,6 +53,8 @@ The direction of this rollover is:
 
 **NOVA R1.1.x → VESTA R1.1.x**
 
+At this rollover, the previous release, **R1.0.x, is decommissioned and is no longer available through any channel or by any other means**. R1.1.x becomes the common VESTA production release, and NOVA is recycled and prepared for development of R1.2. Continuing to use R1.0.x is therefore only possible before the rollover.
+
 Before the rollover, FELLOWPRO sends an advance email announcement to all customers. The announcement invites you to contact FELLOWPRO with any concerns or objections so they can be discussed before the rollover proceeds.
 
 This is a FELLOWPRO-managed lifecycle milestone. It is distinct from your organization's choice to switch from VESTA to NOVA during parallel production.
@@ -83,6 +85,10 @@ No. During parallel production, you choose whether and when to switch after eval
 ### How will we know about the rollover?
 
 FELLOWPRO announces it in advance by email to all customers. If you have concerns or objections, contact FELLOWPRO as invited in that announcement to discuss them before the rollover.
+
+### Can we continue using R1.0.x after the rollover?
+
+No. When NOVA R1.1.x becomes VESTA R1.1.x, R1.0.x is decommissioned and is no longer available through any channel or by any other means. VESTA provides R1.1.x, while NOVA is recycled and prepared for development of R1.2.
 
 ### What happens to NOVA after the rollover?
 

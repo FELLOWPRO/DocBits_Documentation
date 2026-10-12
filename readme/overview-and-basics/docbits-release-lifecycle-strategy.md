@@ -25,17 +25,6 @@ Each cycle consists of three phases. A FELLOWPRO-managed rollover then brings th
 
 After the rollover, all customers use VESTA R1.1.x, and NOVA is recycled for development of R1.2. Phase 1 begins again with these updated versions.
 
-### Important: Check environment availability before switching
-
-Only switch between VESTA and NOVA through **Settings > Company Information > Release Channel** when releases are available in parallel and ready for use in the **corresponding environment on both channels**. Sandbox and production availability must be assessed separately:
-
-- **Sandbox:** You can switch from VESTA Sandbox to NOVA Sandbox once the new release is ready and available in NOVA Sandbox, while VESTA Sandbox remains available. The same readiness requirement applies when switching back.
-- **Production:** You can switch between VESTA Production and NOVA Production only while both production releases are ready and available in parallel. Availability in NOVA Sandbox does not mean that NOVA Production is ready for use.
-
-Switching when the corresponding environment is not ready or available may disrupt your operations. FELLOWPRO sends release announcement emails a few days before releases become available in sandbox or production. Check these announcements before switching. If you are unsure whether a switch is available or appropriate for your organization, contact FELLOWPRO Support for confirmation.
-
-**Planned availability control:** FELLOWPRO is working on a Yes/No control that will allow Support to make the Release Channel setting read-only or enable channel switching independently of a software deployment. Once this control is available, Support will use it to enable switching when the corresponding environments are ready and to keep the setting read-only otherwise. This is intended to allow customers to switch safely between VESTA and NOVA when the setting is enabled. Until this control is introduced, an editable setting alone should not be treated as confirmation that switching is appropriate; follow the release announcements or confirm with Support.
-
 ### Phase 1 — Development
 
 VESTA provides the current production release, R1.0.x, while the next release, R1.1, is developed in NOVA. Your organization continues its day-to-day work on VESTA throughout this phase.
@@ -112,7 +101,22 @@ A general cadence cannot be specified for stabilization hotfixes in NOVA product
 | **Switch between VESTA and NOVA during Phase 3** | Your organization | Evaluate NOVA in the sandbox and choose whether and when to switch. Use **Settings > Company Information > Release Channel** to select NOVA or return to VESTA during parallel production. |
 | **Roll over NOVA R1.1.x into VESTA R1.1.x** | FELLOWPRO | Review the advance email announcement, raise any concerns or objections, and confirm acceptance of the planned transition. FELLOWPRO proceeds once the release is ready and all customers have accepted. |
 
+## Important: Check environment availability before switching
+
+Only switch between VESTA and NOVA through **Settings > Company Information > Release Channel** when releases are available in parallel and ready for use in the **corresponding environment on both channels**. Sandbox and production availability must be assessed separately:
+
+- **Sandbox:** You can switch from VESTA Sandbox to NOVA Sandbox once the new release is ready and available in NOVA Sandbox, while VESTA Sandbox remains available. The same readiness requirement applies when switching back.
+- **Production:** You can switch between VESTA Production and NOVA Production only while both production releases are ready and available in parallel. Availability in NOVA Sandbox does not mean that NOVA Production is ready for use.
+
+Switching when the corresponding environment is not ready or available may disrupt your operations. FELLOWPRO sends release announcement emails a few days before releases become available in sandbox or production. Check these announcements before switching. If you are unsure whether a switch is available or appropriate for your organization, contact FELLOWPRO Support for confirmation.
+
+**Planned availability control:** FELLOWPRO is working on a Yes/No control that will allow Support to make the Release Channel setting read-only or enable channel switching independently of a software deployment. Once this control is available, Support will use it to enable switching when the corresponding environments are ready and to keep the setting read-only otherwise. This is intended to allow customers to switch safely between VESTA and NOVA when the setting is enabled. Until this control is introduced, an editable setting alone should not be treated as confirmation that switching is appropriate; follow the release announcements or confirm with Support.
+
 ## Frequently asked questions
+
+### How do we know whether it is safe to switch between VESTA and NOVA?
+
+Check the release announcement for the environment you intend to use, or ask FELLOWPRO Support to confirm that switching is appropriate. Both corresponding environments must be ready and available in parallel; sandbox readiness does not confirm production readiness. See [Important: Check environment availability before switching](#important-check-environment-availability-before-switching) above for the full guidance, including the planned control for enabling or disabling channel switching.
 
 ### Can we remain on VESTA while NOVA is available in production?
 

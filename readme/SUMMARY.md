@@ -14,6 +14,7 @@
 * [Zwei-Faktor-Authentifizierung (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
 * [Infor Infrastruktur](infor-infrastructure.md)
+* [DocBits Release-Lebenszyklus-Strategie](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Release-Notizen](overview-and-basics/release-notes/README.md)
   * [Hotfixes 21.–25. Juni 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Hotfixes 26.–30. Juni 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)

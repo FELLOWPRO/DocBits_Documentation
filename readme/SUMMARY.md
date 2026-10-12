@@ -40,6 +40,7 @@
 ## Section utilisateurs et partenaires <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Section utilisateur final](end-user-and-partner-section/end-user-section/README.md)
+  * [Accéder à DocBits et se connecter](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Recherche Rapide Globale](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Plan du Site](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Barre Latérale Personnalisable](end-user-and-partner-section/end-user-section/customizable-sidebar.md)

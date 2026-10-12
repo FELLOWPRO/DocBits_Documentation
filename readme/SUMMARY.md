@@ -10,6 +10,7 @@
 * [FAQ Sécurité & Conformité](overview-and-basics/security-and-compliance-faq.md)
 * [Authentification à deux facteurs (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infrastructure Infor](overview-and-basics/infor-infrastructure.md)
+* [Stratégie de cycle de vie des versions DocBits](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Notes de version](overview-and-basics/release-notes/README.md)
   * [Hotfixes 21-25 juin 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Hotfixes 26-30 juin 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)

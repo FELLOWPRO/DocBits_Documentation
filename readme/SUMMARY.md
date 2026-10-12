@@ -188,7 +188,7 @@
         * [🇨🇱 CHILE DTE](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/chile-dte.md)
       * [Regras de Transformação](administration-and-setup/settings/global-settings/document-types/transformation-rules.md)
       * [Mais Configurações](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
-        * [Migliori pratiche](administration-and-setup/settings/global-settings/document-types/more-settings/README.md)
+        * [Melhores práticas](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [Resolução de Problemas](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)
         * [Detecção de duplicatas](administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md)
         * [Aprovação](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)

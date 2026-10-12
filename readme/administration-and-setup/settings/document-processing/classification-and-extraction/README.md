@@ -18,7 +18,7 @@ Cette page décrit en détail tous les paramètres disponibles.
 Pour accéder aux paramètres **Classification et extraction**, allez dans :\
 **Paramètres → Traitement des documents → Classification et extraction**
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc861-settings-nav-fr-20261012.png" alt="Navigation des paramètres avec Traitement des documents et Classification et extraction mise en évidence"><figcaption><p>Ouvrez <strong>Paramètres → Traitement des documents → Classification et extraction</strong>.</p></figcaption></figure>
 
 ## Division des documents
 
@@ -72,9 +72,16 @@ En savoir plus sur l'entraînement [ici](../../../setup/document-training/traini
 
 **Extraction de tableaux par IA :** utilise l'IA pour extraire le tableau de n'importe quel fournisseur sans entraînement. Si les résultats pour un fournisseur ne sont pas assez précis, entraînez le tableau de ce fournisseur ; les règles enregistrées prennent alors le pas sur l'IA pour ce fournisseur.
 
-**Utiliser l'extraction de tableaux Vision (IA) :** l'IA lit l'image de la page au lieu de la couche de texte. Utile pour les documents numérisés et les tableaux sans structure de texte claire ; plus lent.
+**Utiliser l'extraction de tableaux Vision (IA) :** l'IA lit l'image de la page au lieu de la couche de texte. Utile pour les documents numérisés et les tableaux sans structure de texte claire ; plus lent. Le menu déroulant à côté de l'interrupteur détermine l'intensité avec laquelle l'image de la page est utilisée :
 
-**Utiliser l'extraction structurée (IA) :** l'IA renvoie le tableau dans une structure fixe qui correspond directement aux colonnes de tableau configurées. Recommandé lorsque les en-têtes de colonnes varient beaucoup d'un document à l'autre.
+* **Désactivé (texte uniquement)** – Seule la couche de texte est utilisée. C'est le réglage par défaut.
+* **Images uniquement** – Seule l'image de la page est lue.
+* **Hybride (texte et images)** – La couche de texte et l'image de la page sont combinées dans la même requête.
+* **Auto (décidé par document)** – DocBits décide par document si la couche de texte suffit.
+
+Le mode est stocké sous la clé de préférence `TABLE_EXTRACTION_VISION_MODE` ; l'ancien interrupteur `TABLE_EXTRACTION_USE_VISION` subsiste et équivaut en pratique à *Images uniquement*.
+
+**Utiliser l'extraction structurée (IA) :** l'IA renvoie le tableau dans une structure fixe qui correspond directement aux colonnes de tableau configurées. Recommandé lorsque les en-têtes de colonnes varient beaucoup d'un document à l'autre. Un clic sur le paramètre ouvre un aperçu des champs et colonnes qui seront exactement demandés à l'IA : les champs d'en-tête et les colonnes de ligne sont listés avec leur origine (champs standard demandés ou désactivés), ainsi que le mode de sortie attendu (par exemple *strict* – aucune colonne supplémentaire). Les champs configurés pour le type de document mais désactivés ne sont pas demandés à l'IA.
 
 **Extraction de tableaux pour le calcul des coûts :** lorsque cette option est activée, DocBits peut extraire les éléments de coût des tableaux au niveau des lignes et les classer en conséquence.\
 Explication détaillée [ici](table-extraction-for-costing-element.md).
@@ -84,11 +91,11 @@ Plus d'informations sur ce paramètre [ici](auto-extract-tax-code.md).
 
 **Enregistrer les règles d'extraction (administrateurs uniquement) :** seuls les administrateurs peuvent cliquer sur *Enregistrer les règles* dans l'entraînement de tableau. Activez cette option lorsque des utilisateurs enregistrent régulièrement des règles qui cassent l'extraction d'un fournisseur.
 
-**Modèle d'IA :** sélectionne le niveau d'IA utilisé pour l'extraction de tableaux : **Fast** (par défaut), **Full** (précision maximale, plus lent) ou **Nexus** (troisième niveau, sur activation). Le tableau sous le sélecteur indique :
+**Modèle d'IA :** sélectionne le niveau d'IA utilisé pour l'extraction de tableaux. Six options sont disponibles : **Full** (précision maximale, le plus lent, 2 tokens par document), **Fast** (par défaut ; 1 token par document), **Nexus** et **Nexus Flash** (famille de modèles alternative, sur activation), ainsi que **Auto** et **Auto Nexus**, où DocBits décide par document de la puissance de modèle nécessaire. Le tableau sous le sélecteur indique :
 
 * Quels **fournisseurs** utilisent quel modèle d'IA
-* S'ils utilisent l'E-Text
-* Des options pour supprimer une entrée ou réinitialiser les données d'entraînement
+* S'ils utilisent l'extraction structurée (IA) et l'E-Text
+* Des options pour supprimer une entrée et ainsi réinitialiser le fournisseur au réglage par défaut
 
 Ce paramètre est expliqué en détail [ici](ai-model.md).
 
@@ -110,12 +117,13 @@ Chaque option de cette section est stockée sous forme de préférence d'organis
 |---|---|---|
 | Extraction de tableaux | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | Extraction de tableaux par IA | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Utiliser l'extraction de tableaux Vision (IA) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Utiliser l'extraction de tableaux Vision (IA) | `TABLE_EXTRACTION_VISION_MODE` | `off` (par défaut), `vision`, `hybrid`, `auto` |
+| Utiliser l'extraction de tableaux Vision (IA) – ancien interrupteur | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` ; équivaut en pratique à `vision` |
 | Utiliser l'extraction structurée (IA) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Extraction de tableaux pour le calcul des coûts | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Extraction automatique du code fiscal | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Enregistrer les règles d'extraction (administrateurs uniquement) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| Modèle d'IA | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Modèle d'IA | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Version de l'extraction de tableaux (boîte de dialogue de confirmation) | `TBL_EXT_VERSION` | chaîne de version |
 | Paramètres de l'OCR → Utiliser les données IA pour les tableaux si disponibles | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | Paramètres de l'OCR → Utiliser l'E-Text si disponible | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
@@ -124,6 +132,7 @@ Remarques :
 
 * Les préférences booléennes sont stockées sous forme de chaînes `true` / `false` ; une clé jamais définie compte comme `false`. Si vous envoyez `1` ou `0`, DocBits stocke `true` / `false`.
 * `AI_MODEL` non défini équivaut à **Fast**.
+* Un `TABLE_EXTRACTION_VISION_MODE` non défini est déduit de l'ancien interrupteur `TABLE_EXTRACTION_USE_VISION` : `true` donne `vision`, toute autre valeur donne `off`.
 * La modification d'une clé prend effet pour les documents traités ensuite. Redémarrez un document pour le réextraire avec le nouveau paramètre.
 * Les choix par fournisseur (E-Text, modèle d'IA, règles enregistrées) ne sont pas des préférences d'organisation ; ils se définissent sur l'écran de validation, sous *Plus de paramètres*, pour un document de ce fournisseur.
 

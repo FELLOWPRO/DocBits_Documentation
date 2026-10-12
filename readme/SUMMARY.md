@@ -293,6 +293,7 @@
     * [Gestione delle Attività](administration-and-setup/settings/log-settings/task-management.md)
     * [Sincronizzazione dei Dati](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Impostazioni della Ricerca a Testo Completo](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Analisi](administration-and-setup/settings/log-settings/analytics.md)
   * [Licenze API](administration-and-setup/settings/licenze-api.md)
   * [Impostazione del Fornitore](administration-and-setup/settings/supplier-setting/README.md)
     * [Impostazioni Generali del Fornitore](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)

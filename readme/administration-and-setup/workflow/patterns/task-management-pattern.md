@@ -741,7 +741,7 @@ Day 5: IF still not completed:
 ### Prossimi passi
 - Aggiungi le notifiche via email: [Send Email Guide](../then/action/send-email-groups-guide.md)
 - Implementa l'instradamento complesso: [Decision Logic Pattern](decision-logic-pattern.md)
-- Gestisci gli errori: [Error Handling Pattern](error-handling-pattern.md)
+- Risolvi gli errori nei task: [Gestione degli errori](#gestione-degli-errori) sopra
 
 ---
 

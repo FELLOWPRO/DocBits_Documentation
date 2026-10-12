@@ -74,9 +74,16 @@ Learn more about training [here](../../../setup/document-training/training-line-
 
 **AI Table Extraction:** Uses AI to extract the table of any supplier without training. If the results for one supplier are not accurate enough, train that supplier's table; the saved rules then take precedence over the AI for that supplier.
 
-**Use Table Extraction Vision (AI):** The AI reads the page image instead of the text layer. Helps with scanned documents and tables without clear text structure; slower.
+**Use Table Extraction Vision (AI):** The AI reads the page image instead of the text layer. Helps with scanned documents and tables without clear text structure; slower. The dropdown next to the switch chooses how aggressively the page image is used:
 
-**Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot.
+* **Off (text only)** – Only the text layer is used. This is the default.
+* **Images only** – Only the page image is read.
+* **Hybrid (text and images)** – Text layer and page image are combined in the same request.
+* **Auto (decided per document)** – DocBits decides per document whether the text layer suffices.
+
+The mode is stored under the preference key `TABLE_EXTRACTION_VISION_MODE`; the legacy switch `TABLE_EXTRACTION_USE_VISION` remains and effectively means *Images only*.
+
+**Use Structured Extraction (AI):** The AI returns the table in a fixed structure that maps directly onto the configured table columns. Recommended when column headers on the documents vary a lot. Clicking the setting opens a preview of exactly which fields and columns the AI will be asked for: header fields and line columns are listed with their source (requested or disabled standard fields), and the expected output mode (e.g. *strict* – no additional columns). Fields that are configured for the document type but switched off are not requested from the AI.
 
 **Table Extraction for Costing Element:** When enabled, DocBits can extract costing elements from tables at the line level and classify them accordingly.\
 Detailed explanation available [here](table-extraction-for-costing-element.md).
@@ -86,11 +93,11 @@ More information on this setting [here](auto-extract-tax-code.md).
 
 **Save extraction rules (Admin only):** Only administrators can click *Save Rules* in table training. Switch it on when users keep saving rules that break a supplier's extraction.
 
-**AI Model:** Selects the AI tier used for table extraction: **Fast** (default), **Full** (highest accuracy, slower) or **Nexus** (opt-in third tier). The table below the selector shows:
+**AI Model:** Selects the AI tier used for table extraction. Six options are available: **Full** (highest accuracy, slowest, 2 tokens per document), **Fast** (default; 1 token per document), **Nexus** and **Nexus Flash** (alternative model family, opt-in), plus **Auto** and **Auto Nexus**, where DocBits decides per document how strong a model is needed. The table below the selector shows:
 
 * Which **suppliers** use which AI model
-* Whether they use E-Text
-* Options to delete an entry or reset the training data
+* Whether they use structured extraction (AI) and E-Text
+* Options to delete an entry and thereby reset the supplier to the default
 
 This setting is explained in detail [here](ai-model.md).
 
@@ -112,12 +119,13 @@ Every toggle in this section is stored as an organization preference. Use the ke
 |---|---|---|
 | Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (default), `vision`, `hybrid`, `auto` |
+| Use Table Extraction Vision (AI) – legacy switch | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; effectively means `vision` |
 | Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| AI Model | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| AI Model | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Table extraction version (confirmation dialog) | `TBL_EXT_VERSION` | version string |
 | OCR Settings → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | OCR Settings → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
@@ -126,6 +134,7 @@ Notes:
 
 * Boolean preferences are stored as the strings `true` / `false`; a key that was never set counts as `false`. If you send `1` or `0`, DocBits stores `true` / `false`.
 * `AI_MODEL` unset means **Fast**.
+* `TABLE_EXTRACTION_VISION_MODE` unset is resolved from the legacy `TABLE_EXTRACTION_USE_VISION` switch: `true` resolves to `vision`, anything else to `off`.
 * Changing a key takes effect for documents processed afterwards. Restart a document to re-extract it with the new setting.
 * Per-supplier choices (E-Text, AI model, saved rules) are not organization preferences; they are set on the validation screen under *More settings* for a document of that supplier.
 

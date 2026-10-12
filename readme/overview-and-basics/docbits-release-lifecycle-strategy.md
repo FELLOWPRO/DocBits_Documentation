@@ -73,11 +73,23 @@ The diagram below illustrates the release cycle described above in greater detai
 
 ### Release cadence
 
-FELLOWPRO currently plans for a release cycle of approximately **3–4 months**. This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date.
+The planned cadence differs between major and minor releases introduced through NOVA and hotfixes applied to the production releases in VESTA and NOVA.
 
-The timing of each rollover and the recycling of NOVA depends on both **release readiness and acceptance of the planned transition by all customers**. If additional time is needed to achieve release readiness, address customer concerns, or obtain acceptance from every customer, the cycle will be extended and may take longer than four months.
+#### Major and minor releases through NOVA
+
+FELLOWPRO currently plans a cycle of approximately **3–4 months for major and minor releases** introduced through the NOVA release channel, such as **Rx** and **Rx.y**. This estimate applies to the release lifecycle described above, including the subsequent rollover into VESTA and recycling of NOVA for the next release. It does not describe the frequency of hotfixes.
+
+This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date. The timing of each rollover and the recycling of NOVA depends on both **release readiness and acceptance of the planned transition by all customers**. If additional time is needed to achieve release readiness, address customer concerns, or obtain acceptance from every customer, the cycle will be extended and may take longer than four months.
 
 FELLOWPRO communicates each planned rollover in advance. Any indicative timing remains subject to these conditions being met.
+
+#### Hotfixes in VESTA production
+
+Hotfixes for the VESTA production release are expected approximately **once a month, or at somewhat longer intervals**. This is an indicative cadence rather than a fixed schedule or guaranteed delivery date.
+
+#### Stabilization hotfixes in NOVA production
+
+A general cadence cannot be specified for stabilization hotfixes in NOVA production. NOVA introduces entirely new releases, so the timing and frequency of these hotfixes depend on the stabilization needs of the particular release. They therefore do not follow the indicative monthly cadence for VESTA or the 3–4 month cycle for major and minor releases.
 
 ## Responsibilities and customer choice
 
@@ -116,6 +128,6 @@ Your switch to NOVA during Phase 3 is a self-service choice about when to adopt 
 
 NOVA is recycled for development of the next release, R1.2 in this example. VESTA provides R1.1.x while NOVA progresses through development, QA/UAT, and parallel production again.
 
-### Is a new release guaranteed every three to four months?
+### Is a major or minor release guaranteed every three to four months?
 
-No. The approximate 3–4 month cadence is a current planning estimate, not a guaranteed schedule or a maximum duration. Rollover and recycling of NOVA require both release readiness and acceptance from all customers. If either condition requires more time, the cycle will be extended and may exceed four months. FELLOWPRO communicates each planned rollover in advance.
+No. The approximate 3–4 month cadence for major and minor releases introduced through NOVA is a current planning estimate, not a guaranteed schedule or a maximum duration. Rollover and recycling of NOVA require both release readiness and acceptance from all customers. If either condition requires more time, the cycle will be extended and may exceed four months. FELLOWPRO communicates each planned rollover in advance.

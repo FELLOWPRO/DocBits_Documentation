@@ -53,7 +53,6 @@
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Web Address Changes](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [Customizable Sidebar](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
-  * [Idea Board](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Dashboard](end-user-and-partner-section/end-user-section/dashboard/README.md)
     * [Dashboard Tools](end-user-and-partner-section/end-user-section/dashboard/dashboard-tools.md)
     * [Change Document Columns](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)

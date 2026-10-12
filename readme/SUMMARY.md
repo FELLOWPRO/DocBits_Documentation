@@ -40,6 +40,7 @@
 ## Sección de usuarios finales y socios <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sección de usuario final](end-user-and-partner-section/end-user-section/README.md)
+  * [Obtener acceso e iniciar sesión](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Búsqueda Rápida Global](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Barra Lateral Personalizable](end-user-and-partner-section/end-user-section/customizable-sidebar.md)

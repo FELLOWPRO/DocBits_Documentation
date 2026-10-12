@@ -1,8 +1,8 @@
 # DocBits Release Lifecycle Strategy
 
-DocBits uses two release channels, **VESTA** and **NOVA**, to introduce new releases and give your organization time to evaluate them before adoption. During parallel production, you choose whether and when to switch to the new release. FELLOWPRO then manages the rollover that makes it the common production release for all customers.
+With the rollout of the upcoming minor release R1.1,&#x20;DocBits will introduce a new release lifecycle strategy based on two release channels: VESTA and NOVA.
 
-The version numbers in this guide—R1.0.x, R1.1.x, and R1.2—are illustrative. The same lifecycle repeats with successive releases; `x` represents updates within a release series.
+**NOVA** is the channel for introducing new major and minor releases, such as **Rx** and **Rx.y**. **VESTA** continues to provide the existing production release.
 
 ## Release channels
 

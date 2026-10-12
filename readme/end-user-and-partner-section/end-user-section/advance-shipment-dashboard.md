@@ -35,11 +35,15 @@ Type in the search bar to filter the list by the entered text; the list updates 
 | **Shipments Per Page** | Number of rows shown per page (10, 25 or 50). |
 | **Clear filters** | Remove all filters and the search text. |
 
+<figure><img src="../../.gitbook/assets/advance-shipment-dashboard-filterpanel-en-20261012.png" alt="Filter panel of the Advance Shipment Dashboard with the fields PO Number, Order Number, Order date, After Date, Before Date, Shipments Per Page and the Clear filters button"><figcaption><p>The filter panel of the search bar.</p></figcaption></figure>
+
 The **refresh** button next to the search bar reloads the list, for example after new shipments were imported.
 
 ## Row actions
 
 Open the **more_vert** (three dots) menu at the end of a row:
+
+<figure><img src="../../.gitbook/assets/advance-shipment-dashboard-rowmenu-en-20261012.png" alt="Row action menu of an advance shipment order with the entries Export and Share"><figcaption><p>The row menu with the entries <strong>Export</strong> and <strong>Share</strong>.</p></figcaption></figure>
 
 * **Export** downloads the shipment document of the order as a PDF file.
 * **Share** copies a magic link to your clipboard. Anyone who opens the link sees the order detail page of this shipment without logging in (the link uses the `/share/sales-orders/...` address — see [Web Address Changes](web-address-changes.md#shared-links)). Only share the link with people you trust — the link opens the order directly.

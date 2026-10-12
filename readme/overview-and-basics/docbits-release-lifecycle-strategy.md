@@ -25,6 +25,17 @@ Each cycle consists of three phases. A FELLOWPRO-managed rollover then brings th
 
 After the rollover, all customers use VESTA R1.1.x, and NOVA is recycled for development of R1.2. Phase 1 begins again with these updated versions.
 
+### Important: Check environment availability before switching
+
+Only switch between VESTA and NOVA through **Settings > Company Information > Release Channel** when releases are available in parallel and ready for use in the **corresponding environment on both channels**. Sandbox and production availability must be assessed separately:
+
+- **Sandbox:** You can switch from VESTA Sandbox to NOVA Sandbox once the new release is ready and available in NOVA Sandbox, while VESTA Sandbox remains available. The same readiness requirement applies when switching back.
+- **Production:** You can switch between VESTA Production and NOVA Production only while both production releases are ready and available in parallel. Availability in NOVA Sandbox does not mean that NOVA Production is ready for use.
+
+Switching when the corresponding environment is not ready or available may disrupt your operations. FELLOWPRO sends release announcement emails a few days before releases become available in sandbox or production. Check these announcements before switching. If you are unsure whether a switch is available or appropriate for your organization, contact FELLOWPRO Support for confirmation.
+
+**Planned availability control:** FELLOWPRO is working on a Yes/No control that will allow Support to make the Release Channel setting read-only or enable channel switching independently of a software deployment. Once this control is available, Support will use it to enable switching when the corresponding environments are ready and to keep the setting read-only otherwise. This is intended to allow customers to switch safely between VESTA and NOVA when the setting is enabled. Until this control is introduced, an editable setting alone should not be treated as confirmation that switching is appropriate; follow the release announcements or confirm with Support.
+
 ### Phase 1 — Development
 
 VESTA provides the current production release, R1.0.x, while the next release, R1.1, is developed in NOVA. Your organization continues its day-to-day work on VESTA throughout this phase.
@@ -42,8 +53,9 @@ VESTA R1.0.x and NOVA R1.1.x are both live production releases. Your organizatio
 To adopt NOVA during this phase:
 
 1. Evaluate the release in the NOVA sandbox.
-2. Decide when your organization is ready to use it in production.
-3. In DocBits, go to **Settings > Company Information > Release Channel** and select **NOVA**.
+2. Check the release announcement or confirm with FELLOWPRO Support that both production environments are ready and available for switching.
+3. Decide when your organization is ready to use the new release in production.
+4. In DocBits, go to **Settings > Company Information > Release Channel** and select **NOVA**.
 
 During parallel production, you can also switch back to VESTA by going to **Settings > Company Information > Release Channel** and selecting **VESTA**.
 
@@ -107,6 +119,8 @@ A general cadence cannot be specified for stabilization hotfixes in NOVA product
 Yes. During Phase 3, you may remain on VESTA or switch to NOVA when your organization is ready. At the subsequent rollover, the new release becomes VESTA and the previous release is retired.
 
 ### How do we switch to NOVA or back to VESTA?
+
+First, check that the corresponding environment is ready and available on both channels, as explained in [Check environment availability before switching](#important-check-environment-availability-before-switching). Sandbox availability and production availability are separate.
 
 During Phase 3, go to **Settings > Company Information > Release Channel** in DocBits and select **NOVA** to adopt the new production release, or **VESTA** to return to the current VESTA production release. Your organization makes this choice independently, based on its needs and evaluation of NOVA in the sandbox. This choice applies while both releases are available in parallel; the previous VESTA release is retired at rollover.
 

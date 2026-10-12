@@ -10,6 +10,7 @@
 * [Beveiliging & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
 * [Twee-factor-authenticatie (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructuur](overview-and-basics/infor-infrastructure.md)
+* [DocBits-releaselevenscyclusstrategie](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Release-opmerkingen](overview-and-basics/release-notes/README.md)
   * [Updates — 21–25 juni 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Updates — 26–30 juni 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)

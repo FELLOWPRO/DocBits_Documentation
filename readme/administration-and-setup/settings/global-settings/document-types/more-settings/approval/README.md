@@ -26,20 +26,20 @@ With **Approve before export** on, the panel shows a link next to each approval 
 
 | Link in the panel | Next to | Form the reviewer sees |
 | --- | --- | --- |
-| **DESIGN APPROVAL FORM** | **Approve before export** | The approval form for a document that is waiting for approval. |
-| **DESIGN APPROVAL FORM V2** | **Approve before export V2** | The approval form used when V2 is on. |
+| **DESIGN APPROVAL FORM** | **Approve before export** | The standard approval form for a document that is waiting for approval. |
+| **DESIGN APPROVAL FORM V2** | **Approve before export V2** | The approval form for the newer approval screen. |
 | **DESIGN SECOND APPROVAL FORM** | **Second Approval** | The form for the second approval step. |
 | **DESIGN IN REVIEW FORM** | its own row, shown while **Approve before export** is on | The form a reviewer uses while checking a document that is in review. |
 | **DESIGN REJECT FORM** | its own row | The form a reviewer uses to reject a document, so they can record a reason. |
 
-A link appears only when the matching step is switched on. The **DESIGN IN REVIEW FORM** row is shown as long as **Approve before export** is on; the **DESIGN REJECT FORM** row is always available in the panel.
+A link appears only when the matching step is switched on. The **Design In Review Form** row is shown as long as **Approve before export** is on; the **Design Reject Form** row is always available in the panel. The panel in the example above has **Approve before export** on, so it already shows the **DESIGN APPROVAL FORM** link plus the **Design In Review Form** and **Design Reject Form** rows:
 
-<figure><img src="../../../../../../.gitbook/assets/approval-design-form-buttons-en-20261012.png" alt="English Approval and Rejection panel showing Approve before export with its DESIGN APPROVAL FORM link and the Design In Review Form and Design Reject Form rows"><figcaption>The approval steps and their Design links in the panel. Each link opens the form builder for that step.</figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/approval-design-form-buttons-en-20261012.png" alt="English Approval and Rejection panel showing the DESIGN APPROVAL FORM link and the Design In Review Form and Design Reject Form rows"><figcaption>The approval steps and their Design links. Each link opens the form builder for that step.</figcaption></figure>
 
-Selecting a link opens the **form builder** for that form. It is the same builder that is used for document layouts: the top bar starts with the language origin selector (here **DEFAULT**) followed by a coloured badge that names the form you are editing, and the left panel has three tabs:
+Selecting a link opens the **form builder** for that form. It is the same builder that is used for document layouts: the top bar starts with the language-origin selector (here **DEFAULT**) followed by a coloured badge that names the form you are editing — **Approval**, **Review** or **Reject**. The left panel has three tabs:
 
-- **Settings** (gear icon) — set the image and canvas options for this form.
-- **Elements** — expand **Groups**, **Fields** and **Form Elements** and drag what you need onto the canvas. **Fields** holds the document fields, **Form Elements** holds visual controls such as text, labels, checkboxes and buttons.
+- **Settings** (gear icon) — control the behaviour of the form: **Show Tab Index** and **Auto generate tab index** for the tab order, **Disable Extraction**, and the **Validation time spent counter**.
+- **Elements** — expand **GROUPS**, **FIELDS** and **FORM ELEMENTS** and drag what you need onto the canvas. **Fields** holds the document fields; **Form Elements** holds the controls you place on the form, such as **Text**, **Label**, **Check Box**, **Horizontal Separator**, **Notes** and **Button**, along with the approver controls **Document Approver** and **Second Approver**.
 - **Properties** — select something on the canvas to change its label, size, colour and other settings.
 
 The top bar also offers **Use default template** to discard your changes, **Edit JSON** to work on the form definition directly, and **Save**. Saving stores the form for that step and document type only, so the approval form, the in-review form and the reject form are kept apart and none of them changes the document layout.

@@ -13,7 +13,7 @@ The version numbers in this guide—R1.0.x, R1.1.x, and R1.2—are illustrative.
 
 ## Lifecycle overview
 
-![DocBits VESTA and NOVA three-phase release lifecycle](docbits-release-lifecycle-strategy.png)
+![DocBits VESTA and NOVA three-phase release lifecycle](../.gitbook/assets/docbits-release-lifecycle-strategy.png)
 
 Each cycle consists of three phases. A FELLOWPRO-managed rollover then brings the NOVA production release into VESTA and starts the next cycle.
 
@@ -69,7 +69,7 @@ The same three phases then repeat with the new version numbers.
 
 The diagram below illustrates the release cycle described above in greater detail.
 
-![Detailed DocBits VESTA and NOVA release cycle](docbits-release-lifecycle-strategy-details.png)
+![Detailed DocBits VESTA and NOVA release cycle](../.gitbook/assets/docbits-release-lifecycle-strategy-details.png)
 
 ### Release cadence
 

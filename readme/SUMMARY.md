@@ -16,6 +16,7 @@
   * [Document Status Lifecycle](overview-and-basics/diagram-preview/document-status-lifecycle.md)
   * [Infor ERP Data Flow](overview-and-basics/diagram-preview/infor-erp-data-flow.md)
   * [Platform Architecture](overview-and-basics/diagram-preview/platform-architecture.md)
+* [DocBits Release Lifecycle Strategy](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Release Notes](overview-and-basics/release-notes/README.md)
   * [Testing Availability on Sandbox](overview-and-basics/release-notes/testing-availability-on-sandbox.md)
   * [Hotfixes 21–25 June 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)

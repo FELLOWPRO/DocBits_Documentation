@@ -43,9 +43,11 @@ To adopt NOVA during this phase:
 
 1. Evaluate the release in the NOVA sandbox.
 2. Decide when your organization is ready to use it in production.
-3. Switch from VESTA to NOVA using the **Release Channel** setting in the DocBits application.
+3. In DocBits, go to **Settings > Company Information > Release Channel** and select **NOVA**.
 
-This switch is self-service. FELLOWPRO does not select which customers should move to NOVA. You may continue using VESTA throughout parallel production and adopt the new release through the subsequent rollover.
+During parallel production, you can also switch back to VESTA by going to **Settings > Company Information > Release Channel** and selecting **VESTA**.
+
+Channel switching is self-service. FELLOWPRO does not select which customers should move to NOVA. You may continue using VESTA throughout parallel production and adopt the new release through the subsequent rollover.
 
 ## Release rollover and the next cycle
 
@@ -95,7 +97,7 @@ A general cadence cannot be specified for stabilization hotfixes in NOVA product
 
 | Transition | Who manages it | What to expect |
 | --- | --- | --- |
-| **Switch from VESTA to NOVA during Phase 3** | Your organization | Evaluate NOVA in the sandbox and choose whether and when to switch using the application's Release Channel setting. |
+| **Switch between VESTA and NOVA during Phase 3** | Your organization | Evaluate NOVA in the sandbox and choose whether and when to switch. Use **Settings > Company Information > Release Channel** to select NOVA or return to VESTA during parallel production. |
 | **Roll over NOVA R1.1.x into VESTA R1.1.x** | FELLOWPRO | Review the advance email announcement, raise any concerns or objections, and confirm acceptance of the planned transition. FELLOWPRO proceeds once the release is ready and all customers have accepted. |
 
 ## Frequently asked questions
@@ -104,9 +106,9 @@ A general cadence cannot be specified for stabilization hotfixes in NOVA product
 
 Yes. During Phase 3, you may remain on VESTA or switch to NOVA when your organization is ready. At the subsequent rollover, the new release becomes VESTA and the previous release is retired.
 
-### How do we switch to NOVA?
+### How do we switch to NOVA or back to VESTA?
 
-Once NOVA is available in production, use the **Release Channel** setting in the DocBits application. Your organization makes this choice independently, based on its needs and evaluation of the release in the NOVA sandbox.
+During Phase 3, go to **Settings > Company Information > Release Channel** in DocBits and select **NOVA** to adopt the new production release, or **VESTA** to return to the current VESTA production release. Your organization makes this choice independently, based on its needs and evaluation of NOVA in the sandbox. This choice applies while both releases are available in parallel; the previous VESTA release is retired at rollover.
 
 ### When is NOVA available for production use?
 

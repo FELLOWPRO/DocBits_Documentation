@@ -67,6 +67,10 @@ FELLOWPRO announces the planned rollover to all customers in advance by email an
 
 The same three phases then repeat with the new version numbers.
 
+The diagram below illustrates the release cycle described above in greater detail.
+
+![Detailed DocBits VESTA and NOVA release cycle](docbits-release-lifecycle-strategy-details.png)
+
 ### Release cadence
 
 FELLOWPRO currently plans for a release cycle of approximately **3–4 months**. This interval reflects our present planning estimate; it is not a fixed schedule, a maximum cycle duration, or a guarantee of a release or rollover date.

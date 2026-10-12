@@ -741,6 +741,7 @@ Day 5: IF still not completed:
 ### Prochaines étapes
 - Ajouter des notifications par e-mail : [Guide e-mail](../then/action/send-email-groups-guide.md)
 - Mettre en place un routage complexe : [Modèle de logique de décision](decision-logic-pattern.md)
+- Résoudre les erreurs de tâches : [Gestion des erreurs](#gestion-des-erreurs) ci-dessus
 
 ---
 

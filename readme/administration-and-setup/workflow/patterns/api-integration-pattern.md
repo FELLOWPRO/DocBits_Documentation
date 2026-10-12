@@ -582,6 +582,11 @@ Avant de déployer ce modèle :
 - **ACTION_SET_FIELD_TO_TEXT** – [Guide de manipulation des champs](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** – [Guide des cartes de condition](../and/condition-cards-complete-guide.md#field-comparison)
 
+### Prochaines étapes
+- Résoudre les erreurs d'API : [Gestion des erreurs](#gestion-des-erreurs) ci-dessus
+- Ajouter la création de tâches : [Modèle de gestion des tâches](task-management-pattern.md)
+- Transformer les données : [Modèle de transformation des données](data-transformation-pattern.md)
+
 ---
 
 ## Support & ressources

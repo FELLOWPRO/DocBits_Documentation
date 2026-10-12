@@ -523,7 +523,7 @@
     * [Wareneingänge importieren (Receive Delivery BOD)](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/receive-delivery-bod.md)
     * [Stammdaten aus XML importieren](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/master-data-xml.md)
   * [LN](infor-integration-and-configuration/importing-customer-master-data/ln/README.md)
-    * [Auto Accounting](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
+    * [Auto Accounting mit Infor LN](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
     * [Tax Codes](infor-integration-and-configuration/importing-customer-master-data/ln/tax-codes.md)
 
 ## Infor Integration und Konfiguration <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>

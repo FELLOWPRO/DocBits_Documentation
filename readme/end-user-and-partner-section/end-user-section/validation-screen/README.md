@@ -46,19 +46,11 @@ Vea aquí agregar [Script en DocBits](../../../administration-and-setup/settings
 
 <figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
 
-Hay campos que son necesarios para una edición posterior, estos se pueden editar en la configuración.
+Hay campos que requieren atención: muestran un borde de color o un icono de información. En el ejemplo siguiente, el campo **Número de factura** tiene un borde rojo y un icono de advertencia. El valor es visible en la factura de la derecha, pero DocBits no lo extrajo del documento. Seleccione el número en el documento o corrija el campo y guarde el documento.
 
-Use el consejo de herramienta para averiguar si:
+Pase el ratón o seleccione el icono de información junto a un campo para leer el motivo concreto. Según el campo, el mensaje puede indicar una extracción ausente, un valor obligatorio, una confianza baja o un desajuste de validación. Si la advertencia afecta a los totales, compare los campos de importe con la factura y use [Comprobaciones Automáticas en la Pantalla de Validación](automatic-checks-on-the-validation-screen.md) para la comprobación correspondiente.
 
-* Es un campo obligatorio (requerido)
-* Se requiere validación
-* Baja confianza
-* Desajuste del monto total de impuestos
-
-**Campos Requeridos:**
-
-* **Propósito:** Identifica campos obligatorios dentro de los documentos que deben completarse o corregirse antes de un procesamiento posterior.
-* **Caso de Uso:** Asegura que los datos esenciales se capturen con precisión, manteniendo la integridad de los datos y el cumplimiento de las reglas comerciales.
+<figure><img src="../../../.gitbook/assets/validation-required-field-en-2026.png" alt="Pantalla de validación de DocBits con una advertencia roja en el número de factura y el número correspondiente visible en una factura sintética"><figcaption><p>Un campo que requiere atención junto a la factura usada para comprobar su valor.</p></figcaption></figure>
 
 ## Tabla extraída (líneas de detalle)
 

@@ -1,65 +1,31 @@
 # Détection des doublons
 
-## Aperçu
+Utilisez la **Détection des doublons** pour signaler les documents qui correspondent à un autre document sur des champs choisis, dans une période donnée. Les options appartiennent à chaque type de document.
 
-Dans **DocBits**, vous pouvez filtrer les documents en double en spécifiant quels champs doivent correspondre et en définissant un intervalle de temps pendant lequel les doublons doivent être détectés.
+## Ouvrir les paramètres
 
-Cette page fournit un guide détaillé sur la façon d'activer et d'utiliser efficacement la fonctionnalité **Détection des doublons**.
+1. Ouvrez **Paramètres → Types de Documents**.
+2. Sur le type de document que vous voulez configurer, sélectionnez **Plus De Paramètres**.
+3. Dans **Plus De Paramètres**, ouvrez **Détection des doublons**.
 
-## Activation de la Détection des doublons
+<figure><img src="../../../../../.gitbook/assets/dbdc662-duplicate-settings-off-fr-20261011.png" alt="Plus De Paramètres pour Facture avec la section Détection des doublons ouverte et les options de détection désactivées"><figcaption><p>Les paramètres de Facture montrent quatre interrupteurs séparés. Les sélecteurs de champs et d'intervalle apparaissent lorsque la détection est activée.</p></figcaption></figure>
 
-Pour activer la détection des documents en double dans **DocBits**, suivez ces étapes :
+## Choisir ce qui compte comme doublon
 
-1.  Accédez à **Paramètres** → **Paramètres globaux** → **Types de documents**.
+1. Activez **Détection des documents en double**. Les sélecteurs **Champs de détection des doublons** et **Intervalle de détection des doublons** apparaissent.
+2. Sélectionnez les champs qui doivent correspondre. Pour une facture, vous pouvez choisir par exemple le numéro de la facture et le nom du fournisseur. Choisissez des champs qui distinguent les documents dans votre propre processus.
+3. Choisissez un intervalle : **1 mois**, **3 mois (recommandé)**, **6 mois** ou **1 an**. Un intervalle plus long vérifie une plage de dates plus large et peut allonger le temps de chargement.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
-2.  Sélectionnez le **Type de document** souhaité et cliquez sur **Plus de paramètres**.
+Chaque modification est enregistrée dès que vous la faites ; il n'y a pas de bouton d'enregistrement séparé dans cette section. Si vous désactivez la détection, les sélecteurs de champs et d'intervalle sont masqués.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
-3.  Allez à la section **Détection des doublons**.
+<figure><img src="../../../../../.gitbook/assets/dbdc662-duplicate-settings-on-fr-20261011.png" alt="Détection des documents en double activée, avec les sélecteurs de champs et d'intervalle"><figcaption><p>Activez la détection avant de choisir les champs de comparaison et l'intervalle de temps.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_3.png)
+<figure><img src="../../../../../.gitbook/assets/dbdc662-duplicate-interval-options-fr-20261011.png" alt="Menu Intervalle de détection des doublons avec un mois, trois mois, six mois et un an"><figcaption><p>Trois mois est marqué comme intervalle recommandé dans le menu.</p></figcaption></figure>
 
-DocBits fournit deux options pour identifier les documents en double :
+Pour **Facture**, cette section propose aussi **Détection des factures en double**, **Bloquer l'exportation de documents en double** et **Ignorer la file d'attente hors taxes**. Ce sont des interrupteurs séparés ; activez uniquement le comportement dont votre processus de facturation a besoin. Les interrupteurs supplémentaires ne sont pas affichés pour les autres types de documents.
 
-1. **Détection des documents en double** :\
-   Cette fonctionnalité vérifie les documents en double téléchargés sur **DocBits** en fonction des critères sélectionnés. Si un document correspond aux critères sélectionnés parmi d'autres documents, il sera signalé comme un doublon.
-2.  **Détection des factures en double** (Disponible uniquement pour le type de document **Facture**) :\
-    Cette fonctionnalité nécessite la synchronisation des factures fournisseurs d'Infor vers DocBits. Elle compare les numéros de facture dans le tableau de bord DocBits avec ceux d'Infor. Si le même numéro de facture apparaît plus d'une fois, il sera signalé comme un doublon.
+## Examiner un document signalé
 
-    <mark style="color:red;">**Remarque**</mark> : L'utilisation de la fonctionnalité **Détection des factures en double** entraînera un coût de crédit supplémentaire.
+Quand DocBits trouve une correspondance, la ligne du document sur le **Tableau de bord** affiche une icône de doublon. Sélectionnez l'icône pour comparer les enregistrements correspondants dans le panneau latéral. L'icône n'apparaît que lorsqu'une correspondance existe.
 
-## Filtrer les documents qui doivent être détectés comme doublons
-
-Une fois la **Détection des doublons** activée, deux menus déroulants seront disponibles pour la configuration :
-
-*   **Champs de détection des doublons**\
-    Sélectionnez les champs qui doivent être utilisés pour identifier les doublons (par exemple, Identification du fournisseur, Date, Numéro de facture, etc.). Les documents correspondant à ces champs seront signalés comme des doublons.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_4.png)
-*   **Intervalle de détection des doublons**
-
-    Utilisez ce paramètre pour définir la plage de temps dans laquelle les doublons sont détectés. Les documents téléchargés dans l'intervalle sélectionné seront comparés les uns aux autres en fonction des champs sélectionnés.
-
-    **Options disponibles :**
-
-    * 1 mois
-    * 3 mois (Recommandé)
-    * 6 mois
-    * 1 an
-
-    <mark style="color:red;">**Remarque**</mark> : Un intervalle de 3 mois est recommandé pour garantir des performances optimales. La sélection d'un intervalle plus long peut entraîner des temps de chargement plus lents du tableau de bord.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
-
-## Affichage des documents en double sur le Tableau de bord
-
-Une fois la **Détection des doublons** activée, tous les documents identifiés comme doublons afficheront une icône d'indicateur de doublon sur le tableau de bord.
-
-*   Cliquez sur cette icône pour ouvrir les enregistrements correspondants dans une vue en écran partagé pour une comparaison facile.\
-    <mark style="color:red;">**Remarque**</mark> : L'icône n'apparaîtra que si au moins un doublon a été détecté pour le document.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_7.png)
-*   Lors de la visualisation d'un document signalé, une barre d'avertissement apparaîtra en haut, indiquant que le document est un doublon.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+Lorsque vous ouvrez un document signalé, l'avertissement de doublon propose de consulter le doublon, de continuer malgré tout et, si le document n'a pas déjà été archivé, de l'archiver. Examinez les enregistrements correspondants avant de choisir une action. Voir [le guide du Tableau de bord](../../dashboard/README.md) pour la liste des documents.

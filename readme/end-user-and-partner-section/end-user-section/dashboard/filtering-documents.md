@@ -1,58 +1,45 @@
 # Dokumente filtern
 
-## Standard-Filteroptionen
+Nutzen Sie die Suchleiste des Dashboards, den Filterbereich, den Datumsbereich und die Dokumenttyp-Tabs, um die Dokumentliste einzugrenzen. Die Steuerungen greifen zusammen: Ein Dokument muss sowohl der aktiven Suche als auch den aktiven Filtern entsprechen, um in der Tabelle zu bleiben.
 
-Sie können nach bestimmten Dokumenten suchen, indem Sie den Dokumentnamen oder die ID in die Suchleiste oben im Dashboard eingeben.
+## Ein Dokument anhand des Namens suchen
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_1.png" alt=""><figcaption></figcaption></figure>
+1. Öffnen Sie das **Dashboard**.
+2. Geben Sie einen Teil eines Dokumentnamens in die Suchleiste über der Tabelle ein und drücken Sie **Enter**. Die Zahl im Dashboard-Abzeichen und die Tabelle aktualisieren sich und zeigen die passenden Dokumente an.
+3. Ersetzen Sie den Suchbegriff, wenn Sie ein anderes Dokument suchen möchten. Für Feldsuchen und Suchsyntax siehe [Schnellsuche](quick-search.md).
 
-Für eine verfeinerte Filterung klicken Sie auf das Filtersymbol auf der rechten Seite der Suchleiste, um bestimmte Kriterien für die Suche nach Dokumenten auszuwählen.
+<figure><img src="../../../.gitbook/assets/dbdc167_search_result_de_20261010.png" alt="Deutsches Dashboard mit einem passenden Testdokument nach der Suche nach einem Dokumentnamen"><figcaption>Die Suche nach einem Dokumentnamen grenzt die Liste der Testdokumente ein.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_2.png" alt=""><figcaption></figcaption></figure>
+## Nach Status, Zuständigkeit oder Neustart-Anforderung filtern
 
-Die folgenden Filteroptionen sind verfügbar:
+1. Wählen Sie das **Filtersymbol** (Schieberegler) am rechten Ende der Suchleiste.
+2. Wählen Sie einen oder mehrere **Status**-Werte aus. Sie können mehrere Status gleichzeitig auswählen.
+3. Wählen Sie unter **Zugewiesen An** die Benutzer aus, deren Dokumente Sie sehen möchten. Wenn in Ihrer Organisation Gruppenberechtigungen aktiviert sind, können Gruppen in derselben Liste erscheinen. Ein separates Feld **Der Gruppe zugewiesen** gibt es in diesem Bereich nicht.
+4. Wählen Sie **Neustart Erforderlich** aus, um Dokumente anzuzeigen, die einen Neustart benötigen.
+5. Wählen Sie **Anwenden**. Wählen Sie in diesem Bereich **Filter löschen**, um diese Auswahlen zu entfernen; Suchtext und Datumsbereich sind davon unabhängige Steuerungen.
 
-* **Status**: Filtern nach Verarbeitungsstatus (z. B. Bereit zur Validierung, Abgelehnt).
-*   **Zugewiesen an**: Filtern nach den dem Dokument zugewiesenen Benutzern.
+<figure><img src="../../../.gitbook/assets/dbdc167_filter_panel_de_20261010.png" alt="Filterbereich des deutschen Dashboards mit Status, Zugewiesen An, Neustart Erforderlich, Filter löschen und Anwenden"><figcaption>Der aktuelle Filterbereich hat drei Kriterien und zwei Aktionen.</figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_9.png" alt=""><figcaption></figcaption></figure>
-* **Gruppe zugewiesen**: Filtern nach den dem Dokument zugewiesenen Gruppen.
-* **Neustart erforderlich**: Filtern nach Dokumenten, die einen Neustart erfordern.
+<figure><img src="../../../.gitbook/assets/dbdc167_status_options_de_20261010.png" alt="Status-Dropdown im Filterbereich des deutschen Dashboards mit auswählbaren Verarbeitungsstatus"><figcaption>Wählen Sie die benötigten Verarbeitungsstatus aus.</figcaption></figure>
 
-Klicken Sie auf **Anwenden**, um die ausgewählten Filter anzuwenden, oder auf **Filter zurücksetzen**, um sie zurückzusetzen.
+<figure><img src="../../../.gitbook/assets/dbdc167_assignee_options_de_20261010.png" alt="Dropdown Zugewiesen An mit den synthetischen Benutzern der Testorganisation"><figcaption>Wählen Sie unter Zugewiesen An einen Benutzer aus.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_3.png" alt=""><figcaption></figcaption></figure>
+Eine Erklärung, was die einzelnen Verarbeitungsstatus bedeuten, finden Sie unter [Dokumentstatus](document-status.md).
 
-## Zeitbasierte Filterung
+## Importzeitraum wählen
 
-Um Dokumente nach Importdatum zu filtern, verwenden Sie den Zeitfilter rechts neben der Suchleiste. Sie können aus den folgenden voreingestellten Zeiträumen wählen:
+Wählen Sie oberhalb der Suchleiste **30T**, **90T**, **180T**, **365T** oder **Alle**, um den Importzeitraum zu ändern. Wählen Sie **Benutzerdefiniert**, legen Sie **Start** und **Ende** fest und wählen Sie dann **Anwenden**, um einen bestimmten Zeitraum einzustellen. Die aktuelle Auswahl ist hervorgehoben.
 
-* **30 Tage**
-* **90 Tage**
-* **180 Tage**
-* **365 Tage**
-* **Alle**
+<figure><img src="../../../.gitbook/assets/dbdc167_custom_dates_de_20261010.png" alt="Benutzerdefinierter Zeitraum im deutschen Dashboard mit Start, Ende und Anwenden"><figcaption>Benutzen Sie Benutzerdefiniert, wenn die voreingestellten Zeiträume nicht passen.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_4.png" alt=""><figcaption></figcaption></figure>
+## Dokumenttyp-Tabs verwenden
 
-Sie können auch einen benutzerdefinierten Zeitraum auswählen, indem Sie auf **Benutzerdefiniert** klicken und dann ein **Startdatum** und ein **Enddatum** angeben. Klicken Sie anschließend auf **Anwenden**, um den Filter zu aktivieren.
+1. Wählen Sie **+** neben **Alle**. Das Menü listet die Dokumenttypen auf, die Ihrer Organisation zur Verfügung stehen.
+2. Wählen Sie einen Typ, z. B. **Rechnung**, um dessen Tab hinzuzufügen. Wählen Sie dann den neuen Tab an, um die Tabelle auf diesen Typ zu filtern. **Alle** entfernt die Typ-Beschränkung, ohne den Tab zu löschen.
+3. Um einen Typ-Tab zu entfernen, wählen Sie sein **×** an. Der Tab **Alle** kann nicht entfernt werden.
 
-<figure><img src="../../../.gitbook/assets/FilteringDocs_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc167_document_type_menu_de_20261010.png" alt="Plus-Menü des deutschen Dashboards mit Rechnung als verfügbarem Dokumenttyp"><figcaption>Fügen Sie über das Plus-Menü einen Dokumenttyp-Tab hinzu.</figcaption></figure>
 
-<mark style="color:red;">**Hinweis**</mark>: Die Auswahl eines längeren Zeitraums kann zu längeren Ladezeiten führen.
+<figure><img src="../../../.gitbook/assets/dbdc167_invoice_tab_de_20261010.png" alt="Ausgewählter Rechnung-Tab als Dokumenttyp im deutschen Dashboard mit sichtbarem Entfernen-Symbol"><figcaption>Wählen Sie den Tab an, um den Typfilter anzuwenden; mit × entfernen Sie den Tab.</figcaption></figure>
 
-## Nach Dokumenttyp filtern
-
-So filtern Sie nach bestimmten Dokumenttypen:
-
-1.  Klicken Sie auf das Plus-Symbol (+) oben im Dashboard.
-
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_6.png" alt=""><figcaption></figcaption></figure>
-2. Wählen Sie einen Dokumenttyp aus der Liste aus.
-3.  Nachdem Sie einen Dokumenttyp ausgewählt haben, können Sie über die Registerkarten oben im Dashboard zwischen den Filtern wechseln.
-
-    <figure><img src="../../../.gitbook/assets/FilteringDocs_7.png" alt=""><figcaption></figcaption></figure>
-
-Um einen bestimmten Filter zu entfernen, fahren Sie mit dem Mauszeiger über die Filtermarkierung und klicken Sie auf das rote X. Dadurch wird der Filter aus der Registerkartenliste entfernt.
-
-<figure><img src="../../../.gitbook/assets/FilteringDocs_8.png" alt=""><figcaption></figcaption></figure>
+Wenn das **+**-Menü keine Typen enthält, bitten Sie einen Administrator zu prüfen, welche Dokumenttypen für Ihre Organisation aktiv sind. Siehe [Dokumenttypen](../../../administration-and-setup/settings/global-settings/document-types/README.md). Um eine Kombination von Filtern für später zu speichern, siehe [Persönliche Dashboards](personal-dashboards.md).

@@ -46,9 +46,9 @@ Vea aquí agregar [Script en DocBits](../../../administration-and-setup/settings
 
 <figure><img src="../../../.gitbook/assets/validation-required-field-es-2026.png" alt="Pantalla de validación de DocBits en español con una advertencia en rojo en el número de factura y el número coincidente visible en una factura sintética"><figcaption><p>Un campo que requiere atención junto a la factura usada para comprobar su valor.</p></figcaption></figure>
 
-Los campos que requieren atención muestran un borde de color o un icono de información. En el ejemplo anterior, el campo **Número de factura** tiene un borde rojo y un icono de advertencia. El valor es visible en la factura de la derecha, pero DocBits no lo extrajo del documento. Seleccione el número en el documento o corrija el campo y guarde el documento.
+Hay campos que requieren atención: muestran un borde de color o un icono de información. En el ejemplo anterior, el campo **Número de factura** tiene un borde rojo y un icono de advertencia. El valor es visible en la factura de la derecha, pero DocBits no lo extrajo del documento. Seleccione el número en el documento o corrija el campo y guarde el documento.
 
-Pase el cursor sobre el icono de información junto a un campo, o selecciónelo, para leer el motivo concreto. Según el campo, el mensaje puede indicar una extracción ausente, un valor obligatorio, una confianza baja o un desajuste de validación. Si la advertencia afecta a los totales, compare los campos de importe con la factura y use [Comprobaciones Automáticas en la Pantalla de Validación](automatic-checks-on-the-validation-screen.md) para la comprobación correspondiente.
+Pase el ratón o seleccione el icono de información junto a un campo para leer el motivo concreto. Según el campo, el mensaje puede indicar una extracción ausente, un valor obligatorio, una confianza baja o un desajuste de validación. Si la advertencia afecta a los totales, compare los campos de importe con la factura y use [Comprobaciones Automáticas en la Pantalla de Validación](automatic-checks-on-the-validation-screen.md) para la comprobación correspondiente.
 
 ## Tabla extraída (líneas de detalle)
 

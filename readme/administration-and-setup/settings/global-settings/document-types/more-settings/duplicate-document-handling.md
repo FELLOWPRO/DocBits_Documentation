@@ -1,65 +1,31 @@
 # Detección de duplicados
 
-## Resumen
+Use la **Detección de duplicados** para marcar documentos que coincidan con otro documento en los campos seleccionados dentro de un intervalo de tiempo elegido. Las opciones pertenecen a cada tipo de documento.
 
-En **DocBits**, puedes filtrar documentos duplicados especificando qué campos deben coincidir y definiendo un intervalo de tiempo durante el cual se deben detectar duplicados.
+## Abrir los ajustes
 
-Esta página proporciona una guía detallada sobre cómo habilitar y utilizar la función de **Detección de duplicados** de manera efectiva.
+1. Abra **Ajustes → Tipos de Documento**.
+2. En el tipo de documento que desee configurar, seleccione **Ajustes**.
+3. En **Más Ajustes**, abra **Detección de duplicados**.
 
-## Habilitar la Detección de duplicados
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-off-es-20261011.png" alt="Más Ajustes de Factura con la sección Detección de duplicados abierta y las opciones de detección desactivadas"><figcaption><p>Los ajustes de Factura muestran cuatro interruptores independientes. Los selectores de campos e intervalo aparecen al activar la detección.</p></figcaption></figure>
 
-Para habilitar la detección de documentos duplicados en **DocBits**, sigue estos pasos:
+## Definir qué cuenta como duplicado
 
-1.  Navega a **Ajustes** → **Ajustes globales** → **Tipos de documentos**.
+1. Active **Detección de documentos duplicados**. Aparecen los selectores **Campos de detección de duplicados** e **Intervalo de detección de duplicados**.
+2. Seleccione los campos que deben coincidir. Para una factura, puede elegir **Nombre del proveedor** y **Número de factura**. Elija campos que distingan los documentos en su propio proceso.
+3. Elija un intervalo: **1 mes**, **3 meses (recomendado)**, **6 meses** o **1 año**. Un intervalo más largo comprueba un rango de fechas más amplio y puede tardar más en cargar.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_1.png)
-2.  Selecciona el **Tipo de documento** deseado y haz clic en **Más ajustes**.
+Cada cambio se guarda al realizarlo; no hay ningún botón Guardar independiente en esta sección. Si desactiva la detección, los selectores de campos e intervalo se ocultan.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Calculate_PO_unit_price_2.png)
-3.  Ve a la sección de **Detección de duplicados**.
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-settings-on-es-20261011.png" alt="Detección de documentos duplicados activada, mostrando los selectores de campos e intervalo"><figcaption><p>Active la detección antes de seleccionar los campos de comparación y el intervalo de tiempo.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_3.png)
+<figure><img src="../../../../../.gitbook/assets/more-settings-duplicate-document-handling-interval-options-es-20261011.png" alt="Menú Intervalo de detección de duplicados con un mes, tres meses, seis meses y un año"><figcaption><p>Tres meses aparece marcado como el intervalo recomendado en el menú.</p></figcaption></figure>
 
-DocBits proporciona dos opciones para identificar documentos duplicados:
+Para **Factura**, esta sección también ofrece **Detección de facturas duplicadas**, **Exportación de documentos duplicados en bloque** e **Ignorar la línea libre de impuestos**. Son interruptores independientes; active solo el comportamiento que necesite su proceso de facturas. Los interruptores adicionales no se muestran para otros tipos de documento.
 
-1. **Detección de documentos duplicados**:\
-   Esta función verifica si hay documentos duplicados subidos a **DocBits** según los criterios seleccionados. Si algún documento coincide con los criterios seleccionados en otros documentos, se marcará como duplicado.
-2.  **Detección de facturas duplicadas** (Solo disponible para el tipo de documento **Factura**):\
-    Esta función requiere sincronizar las facturas de proveedores desde Infor a DocBits. Compara los números de factura en el panel de DocBits con los de Infor. Si el mismo número de factura aparece más de una vez, se marcará como duplicado.
+## Revisar un documento marcado
 
-    <mark style="color:red;">**Nota**</mark>: Utilizar la función de **Detección de facturas duplicadas** resultará en un cargo adicional de crédito.
+Cuando DocBits encuentra una coincidencia, la fila del documento en el **Panel** muestra un icono de duplicado. Seleccione el icono para comparar los registros coincidentes en el panel lateral. El icono aparece solo cuando existe una coincidencia.
 
-## Filtrar qué documentos deben ser detectados como duplicados
-
-Una vez que la **Detección de duplicados** está habilitada, estarán disponibles dos menús desplegables para la configuración:
-
-*   **Campos de detección de duplicados**\
-    Selecciona los campos que deben utilizarse para identificar duplicados (por ejemplo, Identificación del proveedor, Fecha, Número de factura, etc.). Los documentos que coincidan con estos campos se marcarán como duplicados.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_4.png)
-*   **Intervalo de detección de duplicados**
-
-    Utiliza esta configuración para definir el rango de tiempo dentro del cual se detectan duplicados. Los documentos subidos dentro del intervalo seleccionado se compararán entre sí según los campos seleccionados.
-
-    **Opciones disponibles:**
-
-    * 1 mes
-    * 3 meses (Recomendado)
-    * 6 meses
-    * 1 año
-
-    <mark style="color:red;">**Nota**</mark>: Se recomienda un intervalo de 3 meses para asegurar un rendimiento óptimo. Seleccionar un intervalo más largo puede llevar a tiempos de carga más lentos en el panel.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_6.png)
-
-## Ver documentos duplicados en el Panel
-
-Una vez que la **Detección de duplicados** está habilitada, cualquier documento identificado como duplicado mostrará un ícono de indicador de duplicado en el panel.
-
-*   Haz clic en este ícono para abrir los registros coincidentes en una vista de pantalla dividida para una fácil comparación.\
-    <mark style="color:red;">**Nota**</mark>: El ícono solo aparecerá si se ha detectado al menos un duplicado para el documento.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_7.png)
-*   Al ver un documento marcado, aparecerá una barra de advertencia en la parte superior, indicando que el documento es un duplicado.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/DuplicateDocument_5.png)
+Al abrir un documento marcado, la advertencia de duplicado ofrece **Ver duplicados**, **Proceder de todos modos** y, si el documento aún no se ha archivado, **Archivo**. Revise los registros coincidentes antes de elegir una acción. Consulte [la guía del Panel](../../dashboard/README.md) para ver la lista de documentos.

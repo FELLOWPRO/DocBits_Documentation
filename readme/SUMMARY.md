@@ -164,6 +164,7 @@
           * [Mappage ZUGFeRD 2.3.2](administration-and-setup/settings/global-settings/document-types/edi/zugferd/versions/zugferd-2-3-2.md)
         * [Mappage des champs ZUGFeRD + Code QR suisse](administration-and-setup/settings/global-settings/document-types/edi/zugferd-and-swiss-qr-merge.md)
         * [eSLOG 1.6 et 2.0](administration-and-setup/settings/global-settings/document-types/edi/eslog-1.6-and-2.0.md)
+        * [FatturaPA](administration-and-setup/settings/global-settings/document-types/edi/faktura.md)
         * [Documents électroniques pris en charge](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/README.md)
           * [🇦🇷 ARGENTINA AFIP](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/argentina-afip.md)
           * [🇦🇷 ARGENTINA FACTURA ELECTRONICA](administration-and-setup/settings/global-settings/document-types/edi/supported-electronic-documents/argentina-factura-electronica.md)

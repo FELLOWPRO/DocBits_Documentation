@@ -1,44 +1,25 @@
-# Impostazione della Convalida e del Match Score
+# Impostazioni di Convalida e Punteggio della Partita
 
-## Istruzioni per l'utilizzo delle impostazioni Convalida forzata e Valore di corrispondenza per migliorare l'integrità dei dati e l'accuratezza del riconoscimento.
+In **Campi** puoi impostare le soglie di convalida e di riconoscimento di un tipo di documento. Questa pagina usa **Fattura** in un'organizzazione di prova della documentazione. Spiega l'attuale casella **CONVALIDA DELLA FORZA** e i controlli **PUNTEGGIO DELLA PARTITA**.
 
-Ecco le istruzioni per l'utilizzo delle impostazioni Convalida forzata e Valore di corrispondenza per migliorare l'integrità dei dati e l'accuratezza del riconoscimento in un sistema di elaborazione dei documenti:
+## Aprire le impostazioni dei campi
 
-### Convalida forzata (Force Validation):
+1. Vai a **Impostazioni → Tipi di Documento → Fattura → Campi**.
+2. Usa **Ricerca per nome** per trovare un campo, ad esempio `invoice_id` (mostrato come **Numero fattura**).
+3. Controlla la riga del campo prima di modificare un'impostazione. **OBBLIGATORIO**, **Solo Lettura**, **Nascosto** e **CONVALIDA DELLA FORZA** sono caselle di controllo separate.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_choose_column_type.png" alt="Docbits Choose Column Type" width="151"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-677-fields-overview-it.png" alt="Pagina Campi della Sandbox in italiano con Impostazioni di riconoscimento, i controlli OCR e PUNTEGGIO DELLA PARTITA, le colonne dei campi e il pulsante Salva le impostazioni"><figcaption><p>I controlli di riconoscimento compaiono sopra l'elenco dei campi.</p></figcaption></figure>
 
-Questa impostazione consente di definire regole che verificano se i dati inseriti soddisfano determinati criteri.
+## CONVALIDA DELLA FORZA
 
-**Per configurarlo:**
+Seleziona **CONVALIDA DELLA FORZA** nella riga del campo per applicare a quel campo una convalida più rigorosa. La casella è separata da **OBBLIGATORIO**: contrassegnare un campo come obbligatorio non seleziona automaticamente CONVALIDA DELLA FORZA. La casella può non essere disponibile quando un campo è nascosto o di sola lettura. Dopo aver modificato la configurazione del campo, fai clic su **Salva le impostazioni**.
 
-* Andare alle impostazioni del campo in questione.
-* Abilitare l'opzione Convalida forzata.
-* Definire le regole di convalida da controllare. Queste possono essere, ad esempio, limiti numerici, espressioni regolari per i campi di testo o relazioni con altri campi.
+Le istruzioni precedenti suggerivano di inserire qui limiti numerici o espressioni regolari. L'attuale tabella Campi non mostra un editor di regole nella cella CONVALIDA DELLA FORZA. Per le regole specifiche di un campo, consulta [Configurazione delle Proprietà del Campo](configuring-field-properties-1.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+## PUNTEGGIO DELLA PARTITA
 
-<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+**PUNTEGGIO DELLA PARTITA** è una soglia numerica, non un valore di riferimento fisso. Il cursore **PUNTEGGIO DELLA PARTITA** in **IMPOSTAZIONI DI RICONOSCIMENTO** applica il proprio valore alle righe dei campi del tipo di documento; per un valore individuale usa l'input **PUNTEGGIO DELLA PARTITA** della singola riga di campo. Nell'organizzazione di prova, il cursore e `invoice_id` mostrano entrambi **50**. Verifica i campi interessati, poi fai clic su **Salva le impostazioni**.
 
-**Impatto:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-677-invoice-id-settings-it.png" alt="Riga del campo invoice_id nella Sandbox in italiano con CONVALIDA DELLA FORZA selezionata e PUNTEGGIO DELLA PARTITA pari a 50"><figcaption><p>Cerca un campo per verificarne la casella CONVALIDA DELLA FORZA e il valore PUNTEGGIO DELLA PARTITA.</p></figcaption></figure>
 
-* L'applicazione delle regole di convalida aiuta a rilevare tempestivamente gli errori e migliora la qualità dei dati. Agli utenti viene chiesto di inserire dati corretti, il che aumenta l'integrità del database.
-
-### Punteggio di corrispondenza (Match Score):
-
-<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
-
-Questa impostazione consente di confrontare il valore inserito con un valore di riferimento predefinito.
-
-**Per configurarlo:**
-
-* Navigare nelle impostazioni del campo.
-* Abilitare l'opzione Valore di corrispondenza.
-* Inserire il valore di riferimento con cui confrontare il valore inserito.
-
-**Impatto:**
-
-* L'impostazione di un valore di corrispondenza consente di garantire che i dati inseriti corrispondano a uno standard noto o a una norma predefinita. Ciò è particolarmente utile quando si desidera garantire che i dati siano coerenti e soddisfino determinati criteri.
-* L'utilizzo di queste impostazioni può migliorare l'integrità dei dati e l'accuratezza del riconoscimento nel sistema di elaborazione dei documenti.
-
-Si garantisce che vengano acquisiti solo dati corretti e validi, aumentando la qualità del database e migliorando l'affidabilità delle analisi e dei report.
+**OCR** è una soglia di riconoscimento separata, accanto a PUNTEGGIO DELLA PARTITA. **RIPRISTINARE LE IMPOSTAZIONI PREDEFINITE** reimposta le configurazioni; usalo solo se intendi scartare le tue soglie personalizzate. Per le altre opzioni dei campi, consulta la panoramica di [Campi](README.md).

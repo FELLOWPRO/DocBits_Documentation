@@ -14,6 +14,7 @@
 * [Zwei-Faktor-Authentifizierung (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
 * [Infor Infrastruktur](infor-infrastructure.md)
+* [DocBits Release-Lebenszyklus-Strategie](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Release-Notizen](overview-and-basics/release-notes/README.md)
   * [Hotfixes 21.–25. Juni 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Hotfixes 26.–30. Juni 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
@@ -45,6 +46,7 @@
 ## Endnutzer und Partner Bereich <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Endbenutzer Abschnitt](end-user-section/README.md)
+  * [Erste Schritte und Anmeldung](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Globale Schnellsuche](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Anpassbare Seitenleiste](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
@@ -327,6 +329,7 @@
     * [Aufgabenverwaltung](administration-and-setup/settings/log-settings/task-management.md)
     * [Daten Synchronization](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Volltextsuche-Einstellungen](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Zugriffsprotokoll](administration-and-setup/settings/log-settings/access-audit.md)
     * [Analytik](administration-and-setup/settings/log-settings/analytics.md)
   * [API Lizenzen](administration-and-setup/settings/api-licenses.md)
   * [Lieferanten Einstellungen](administration-and-setup/settings/supplier-setting/README.md)

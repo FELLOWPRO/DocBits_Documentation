@@ -1,35 +1,28 @@
 # Meldingen beheren
 
-Om bestaande meldingen te bewerken, uit te schakelen of te verwijderen en deze aan te passen aan wijzigingen in de verwerkingsworkflows van documenten of gebruikersverantwoordelijkheden, kunt u het volgende doen:
+Open **Instellingen → E-Mailmelding** om de regels van je organisatie te bekijken. Een regel verbindt een documentstatus met een e-mailsjabloon en een ontvanger. Het onderstaande voorbeeld gebruikt een demonstratieregel voor facturen en blijft in de DocBits Sandbox **inactief**.
 
-**Navigeer naar meldingsinstellingen:** Ga naar de instellingen van uw systeem waar u meldingen kunt beheren. U vindt deze in het gedeelte "Instellingen", "Globale instellingen" en vervolgens onder "E-mailmelding".
+## Voorbeeld: een factuur is klaar voor validatie
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Maak voordat je een regel aanmaakt een e-mailsjabloon voor het documenttype **Invoice** aan onder **Instellingen → E-mailsjablonen**. In dit voorbeeld heet het sjabloon **Docs Demo Invoice Notification**. Het sjabloon levert het onderwerp en de tekst van de e-mail.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Selecteer **Nieuw** op de pagina **E-Mailmelding**.
+2. Voer een naam in, in dit voorbeeld **Docs Demo Invoice Validation**, selecteer **Invoice** als documenttype en kies het voorbereide sjabloon onder **Selecteer e-mailsjabloon**.
+3. Kies de status en de prioriteit, in dit voorbeeld **Approved** en **Hoog**. Zet **Tijdseenheid** op **NOTULEN** en vul bij **Vertraging** het aantal minuten in; de app vermeldt **Minimaal 5 minuten**. Zet **Niet herhalen** aan als het bericht maar één keer mag worden verzonden.
+4. Selecteer **E-mail verzenden naar toegewezen gebruiker/groep**, controleer ontvanger en timing en selecteer **Opslaan**.
 
-**Zoek naar de lijst met bestaande meldingen:** In de meldingsinstellingen vindt u een lijst met bestaande meldingen. Deze lijst toont u alle meldingen die momenteel zijn ingesteld.
+<figure><img src="../../../../.gitbook/assets/dbdc-643-example-form-nl-20261011.png" alt="Ingevulde meldingsregel voor Invoice, status Approved, prioriteit Hoog, tijdseenheid NOTULEN en de toegewezen gebruiker of groep"><figcaption><p>De opgeslagen voorbeeldregel, geopend om te bewerken. De waarden tonen wanneer en naar wie de melding zou worden verzonden.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+De regel verschijnt nu in de lijst. De voorbeeldlijst toont de kolommen **Naam**, **Documenttype**, **Status**, **Prioriteit**, **Vertraging**, **E-Mail Naar**, **Laatst Gewijzigd Door** en **Laatst Gewijzigd Op**. Controleer naam, documenttype, status, vertraging en ontvanger in je eigen lijst voordat je een regel activeert.
 
-**Een melding bewerken:** Om een bestaande melding te bewerken, zoekt u de melding in de lijst en selecteert u de bewerkingsoptie. Hiermee kunt u de meldingsinstellingen wijzigen, zoals het documenttype, de status, triggergebeurtenissen of ontvangers.
+<figure><img src="../../../../.gitbook/assets/dbdc-643-example-list-nl-20261011.png" alt="Lijst E-Mailmelding met drie voorbeeldregels in plaats van een lege tabel"><figcaption><p>De opgeslagen voorbeelden geven je regels om in de lijst te vinden en te beheren.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="192"><figcaption></figcaption></figure>
+## Regel bewerken, activeren of verwijderen
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+Open het menu **Actions** van de regel. **Bewerking** opent de regel met de huidige waarden. **Deactiveren** schakelt een actieve regel uit; een inactieve regel biedt **Activeren** in plaats daarvan. **Logboeken** opent de meldingsgeschiedenis van de regel. **Verwijderen** verwijdert de regel; de app vraagt dan **Weet je het zeker? Als je het record wilt verwijderen, druk dan op Delete.** Controleer ontvanger en timing voordat je een regel activeert of wijzigt.
 
-**Een melding uitschakelen:** Als u een melding tijdelijk wilt uitschakelen, zoekt u de melding in de lijst en selecteert u de optie om deze uit te schakelen. Hiermem wordt de melding tijdelijk gestopt zonder deze te verwijderen, zodat u deze later indien nodig weer kunt activeren.
+<figure><img src="../../../../.gitbook/assets/dbdc-643-example-actions-nl-20261011.png" alt="Actions-menu van een actieve voorbeeldmelding met Bewerking, Deactiveren, Logboeken en Verwijderen"><figcaption><p>De beschikbare acties hangen ervan af of de regel actief is.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="116"><figcaption></figcaption></figure>
+Als de lijst **No Record Found!** toont, maak dan eerst een regel aan. Als de lijst **Documenttype** of de lijst met e-mailsjablonen leeg is, configureer dan eerst een actief documenttype en een passend sjabloon voordat je naar dit formulier terugkeert.
 
-**Een melding verwijderen:** Om een melding definitief te verwijderen, zoekt u de melding in de lijst en selecteert u de verwijderoptie. Hiermee wordt de melding volledig uit het systeem verwijderd en kan deze niet worden hersteld.
-
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="106"><figcaption></figcaption></figure>
-
-**Aanpassen aan wijzigingen:** Controleer periodiek uw meldingsinstellingen en pas ze indien nodig aan om wijzigingen in de verwerkingsworkflows van documenten of gebruikersverantwoordelijkheden te weerspiegelen. Dit kan het bijwerken van meldingen omvatten vanwege nieuwe gebeurtenissen, gewijzigde verantwoordelijkheden of andere organisatorische wijzigingen.
-
-**De wijzigingen opslaan:** Vergeet na het aanbrengen van uw wijzigingen niet deze op te slaan om ze van kracht te laten worden.
-
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt="" width="150"><figcaption></figcaption></figure>
-
-Door regelmatig uw meldingsinstellingen te controleren en aan te passen, kunt u ervoor zorgen dat uw meldingen altijd voldoen aan de huidige behoeften en workflows. Dit helpt bij een efficiënte communicatie en zorgt ervoor dat de juiste mensen tijdig op de hoogte worden gesteld van belangrijke gebeurtenissen.
+Zie voor de eerste configuratie [Meldingen configureren](configuring-notifications.md). Als e-mails niet aankomen zoals verwacht, zie [Problemen oplossen](troubleshooting.md).

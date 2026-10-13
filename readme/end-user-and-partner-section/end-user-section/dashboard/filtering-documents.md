@@ -1,58 +1,45 @@
 # Filtrar documentos
 
-## Opções de filtragem padrão
+Use a barra de pesquisa do painel, o painel de filtros, o intervalo de datas e as abas de tipos de documento para restringir a lista de documentos. Os controles funcionam em conjunto: um documento precisa corresponder à pesquisa ativa e aos filtros aplicados para permanecer na tabela.
 
-Você pode pesquisar documentos específicos digitando o nome do documento ou ID na barra de pesquisa localizada no topo do painel.
+## Encontrar um documento pelo nome
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_1.png)
+1. Abra o **Painel**.
+2. Digite parte do nome de um documento na barra de pesquisa acima da tabela e pressione **Enter**. A contagem no indicador do painel e a tabela são atualizadas para mostrar os documentos correspondentes.
+3. Substitua o termo de pesquisa quando quiser procurar outro documento. Para pesquisas por campo e sintaxe de pesquisa, consulte [Pesquisa rápida](quick-search.md).
 
-Para uma filtragem mais refinada, clique no ícone de filtro localizado no lado direito da barra de pesquisa para selecionar critérios específicos para pesquisar documentos.
+<figure><img src="../../../.gitbook/assets/dbdc167_search-result_pt_20261010.png" alt="Painel em português mostrando uma fatura de teste correspondente após uma pesquisa pelo nome do documento"><figcaption>Uma pesquisa pelo nome do documento restringe a lista de documentos de teste.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_2.png)
+## Filtrar por status, responsável ou necessidade de reinicialização
 
-As seguintes opções de filtro estão disponíveis:
+1. Selecione o ícone **Filtros** (controles deslizantes) na extremidade direita da barra de pesquisa.
+2. Escolha um ou mais valores de **Status**. Você pode selecionar vários status ao mesmo tempo.
+3. Em **Atribuído A**, selecione os usuários cujos documentos você deseja ver. Se a sua organização tiver permissões de grupo ativadas, os grupos também podem aparecer nesta mesma lista. Não há um campo separado **Atribuído ao grupo** neste painel.
+4. Selecione **Reinicialização Necessária** para mostrar os documentos que precisam de uma reinicialização.
+5. Selecione **Aplicar**. Selecione **Limpar filtros** neste painel para remover essas seleções; o texto da pesquisa e o intervalo de datas são controles separados.
 
-* **Status**: Filtrar por status de processamento (por exemplo, Pronto para validação, Rejeitado).
-*   **Atribuído a**: Filtrar pelos usuários atribuídos ao documento.
+<figure><img src="../../../.gitbook/assets/dbdc167_filter-panel_pt_20261010.png" alt="Painel de filtros do painel em português com Status, Atribuído A, Reinicialização Necessária, Limpar filtros e Aplicar"><figcaption>O painel de filtros atual tem três critérios e duas ações.</figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_9.png)
-* **Atribuído ao grupo**: Filtrar pelos grupos atribuídos ao documento.
-* **Reiniciar necessário**: Filtrar documentos que requerem reinicialização.
+<figure><img src="../../../.gitbook/assets/dbdc167_status-options_pt_20261010.png" alt="Menu suspenso de Status no painel de filtros do painel em português com status de processamento selecionáveis"><figcaption>Selecione os status de processamento de que precisa.</figcaption></figure>
 
-Clique em **Aplicar** para aplicar os filtros selecionados, ou **Limpar filtros** para redefini-los.
+<figure><img src="../../../.gitbook/assets/dbdc167_assignee-options_pt_20261010.png" alt="Menu suspenso Atribuído A mostrando os usuários sintéticos na organização de teste"><figcaption>Selecione um usuário em Atribuído A.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_3.png)
+Para uma explicação do significado de cada status de processamento, consulte [Status do Documento](document-status.md).
 
-## Filtragem baseada em tempo
+## Escolher um intervalo de datas de importação
 
-Para filtrar documentos por data de importação, use o filtro de tempo localizado à direita da barra de pesquisa. Você pode escolher entre os seguintes intervalos de tempo predefinidos:
+Acima da barra de pesquisa, selecione **30D**, **90D**, **180D**, **365D** ou **Todos** para alterar o intervalo de datas de importação. Selecione **Personalizado**, escolha **Data De Início** e **Data De Término** e, em seguida, selecione **Aplicar** para um intervalo específico. A opção atual fica destacada.
 
-* **30 Dias**
-* **90 Dias**
-* **180 Dias**
-* **365 Dias**
-* **Todos**
+<figure><img src="../../../.gitbook/assets/dbdc167_custom-dates_pt_20261010.png" alt="Intervalo de datas personalizado no painel em português com Data De Início, Data De Término e Aplicar"><figcaption>Use Personalizado quando os intervalos de datas predefinidos não forem adequados.</figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_4.png)
+## Usar abas de tipos de documento
 
-Você também pode selecionar um intervalo de datas personalizado clicando em **Personalizado**, depois especificando uma **Data de início** e **Data de término**. Depois disso, clique em **Aplicar** para ativar o filtro.
+1. Selecione **+** ao lado de **Todos**. O menu lista os tipos de documento disponíveis para a sua organização.
+2. Selecione um tipo, como **Fatura**, para adicionar a sua aba. Em seguida, selecione a nova aba para filtrar a tabela por esse tipo. **Todos** remove a restrição de tipo sem excluir a aba.
+3. Para remover uma aba de tipo, selecione o **×** dela. A aba **Todos** não pode ser removida.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_5.png)
+<figure><img src="../../../.gitbook/assets/dbdc167_document-type-menu_pt_20261010.png" alt="Menu de adição no painel em português mostrando Fatura como um tipo de documento disponível"><figcaption>Adicione uma aba de tipo de documento pelo menu de adição.</figcaption></figure>
 
-<mark style="color:red;">**Observação**</mark>: Selecionar um período de tempo mais longo pode resultar em tempos de carregamento mais lentos.
+<figure><img src="../../../.gitbook/assets/dbdc167_invoice-tab_pt_20261010.png" alt="Aba do tipo de documento Fatura selecionada no painel em português, com o ícone de remoção visível"><figcaption>Escolha a aba para aplicar o filtro de tipo; use × para remover a aba.</figcaption></figure>
 
-## Filtrar por tipo de documento
-
-Para filtrar por tipos de documento específicos:
-
-1.  Clique no ícone de mais (+) no topo do painel.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_6.png)
-2. Selecione um tipo de documento da lista.
-3.  Após selecionar um tipo de documento, você pode alternar entre filtros usando as abas no topo do painel.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_7.png)
-
-Para remover um filtro específico, passe o mouse sobre a etiqueta do filtro e clique no X vermelho. Isso removerá o filtro da lista de abas.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/FilteringDocs_8.png)
+Se o menu **+** não tiver tipos, peça a um administrador para verificar quais tipos de documento estão ativos para a sua organização. Consulte [Document Types](../../../administration-and-setup/settings/global-settings/document-types/README.md). Para salvar uma combinação de filtros para usar mais tarde, consulte [Painéis pessoais](personal-dashboards.md).

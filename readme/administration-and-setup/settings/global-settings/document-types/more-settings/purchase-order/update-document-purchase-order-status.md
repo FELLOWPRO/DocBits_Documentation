@@ -1,39 +1,45 @@
-# Atualizar Status do Pedido de Compra do Documento
+# Atualizar o Status do Pedido de Compra do Documento
 
+Essa configuração é para tipos de documento que usam pedidos de compra. Ela controla se um documento pode receber atualizações de status a partir do pedido de compra vinculado. O interruptor é configurado por tipo de documento. Para ver um status de PO no painel, o campo relevante também precisa estar disponível e visível como coluna.
 
+Antes de alterar a configuração, escolha a organização e o tipo de documento corretos. Você precisa de acesso de administrador para editar as configurações do tipo de documento. Um pedido de compra precisa estar vinculado a um documento antes que uma mudança de status possa ser verificada.
 
-## Visão Geral
+## Ativar a configuração
 
-Quando ativado, a coluna **Status do PO** no painel é atualizada automaticamente sempre que o status do pedido de compra é alterado.
+1. Abra **Configurações → Processamento de Documentos → Tipos de Documentos**.
+2. Encontre o tipo de documento usado para os documentos vinculados a POs, por exemplo **Fatura**, e selecione a engrenagem no cartão dele para abrir **Mais Configurações**.
+3. Expanda **Ordem de compra**. Encontre **Atualizar status do pedido de compra do documento** e ative-o. O ícone de ajuda próximo explica a opção na aplicação. Alterar esse interruptor não altera as outras configurações de PO na mesma seção.
 
-## Onde Ativar
+<figure><img src="../../../../../../.gitbook/assets/dbdc701-document-types-pt-20261011.png" alt="Página Tipos de Documentos com o cartão Fatura e a engrenagem de Mais Configurações"><figcaption>Abra as configurações do tipo de documento que você usa.</figcaption></figure>
 
-1. Acesse: **Configurações** → **Configurações Globais** → **Tipo de Documento**
-2.  Selecione o tipo de documento desejado e clique em **Mais Configurações**.
+<figure><img src="../../../../../../.gitbook/assets/dbdc701-po-settings-pt-20261011.png" alt="Seção Ordem de compra de Mais Configurações com o interruptor Atualizar status do pedido de compra do documento"><figcaption>O interruptor de atualização de status nas configurações de Ordem de compra.</figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  Na seção **Pedido de Compra**, vá para a opção **Atualizar Status do Pedido de Compra do Documento**.
+## Mostrar um status de PO no painel
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSsFkQ46Jd4tn0WGqNSjk%252Fimage.png%3Falt%3Dmedia%26token%3D51ee4f2d-76ae-42b4-a748-f0e9d340b329\&width=768\&dpr=4\&quality=100\&sign=e0f4b1af\&sv=2)
+1. Volte ao painel e selecione a engrenagem acima da tabela de documentos.
+2. Abra **Configurações de colunas** no menu de configurações avançadas.
+3. Selecione **Adicionar campo do tipo de documento**, escolha o tipo de documento e pesquise o campo de status da PO. Se esse campo estiver disponível, selecione-o, escolha **Adicionar às colunas visíveis** e depois **Concluído**.
 
-## Como Funciona
+O diálogo de colunas contém **Colunas ocultas** e **Colunas visíveis**. Use as setas para mover uma coluna selecionada entre elas. Veja [Modificar as Colunas do Documento](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md) para o guia completo de colunas. Se o campo de status da PO não existir para o tipo selecionado, peça a um administrador para verificar o campo e a configuração de lookup; apenas o interruptor de exibição não cria um campo ausente.
 
-Quando essa configuração está ativada, a coluna **Status do PO** no painel refletirá automaticamente o status atual do pedido de compra. Por exemplo, se o status do PO for atualizado para _Recebido_ ou _Faturado_, a coluna do painel será atualizada para mostrar esse novo status.
+<figure><img src="../../../../../../.gitbook/assets/dbdc701-dashboard-columns-pt-20261011.png" alt="Diálogo Configurações de colunas do painel com Colunas ocultas, Colunas visíveis e Adicionar campo do tipo de documento"><figcaption>Escolha quais colunas aparecem no painel.</figcaption></figure>
 
-<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FmWZIOi5pqWyeagCfiXgy%252FStatus%2520on%2520Dashboard.jpg%3Falt%3Dmedia%26token%3D3aad59e7-d249-4f07-afa3-c68429128cec&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6cde440e&#x26;sv=2" alt="" width="375"></div>
+## Verificar o lookup do pedido de compra
 
-## Configurando
+Em **Configurações → Processamento de Documentos → Tipos de Documentos → Campos → Configurações De Dados Mestre**, expanda **Pesquisar Dados Mestres** e depois **Order Header Lookup**. Verifique se o mapeamento necessário do campo de PO existe e se o lookup relevante tem **Gatilho Automático** quando um lookup automático for necessário. A imagem abaixo mostra a lista de configuração; os círculos riscados significam que o Gatilho Automático está desligado para essas linhas de exemplo. Ela não demonstra um status de PO atualizado.
 
-1. **Ative a Configuração** Acesse o local mencionado acima e ative a configuração.
-2. **Adicione a Coluna de Status do PO (se não estiver visível)** Se a coluna **Status do PO** não estiver visível no painel:
-   *   Acesse: **Configurações Avançadas** → **Definir Colunas da Tabela para Organizações**
+<figure><img src="../../../../../../.gitbook/assets/dbdc701-lookup-po-header-pt-20261011.png" alt="Configuração do Order Header Lookup mostrando Pesquisável e Gatilho Automático para cada campo"><figcaption>Verifique as linhas reais de lookup do tipo de documento.</figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fn6GyECCtvUeKLYd6FkEH%252Fimage.png%3Falt%3Dmedia%26token%3Da023deba-748f-4140-bb33-17483c91f2cf\&width=768\&dpr=4\&quality=100\&sign=164eb544\&sv=2)
-   * Adicione o campo do tipo de documento pesquisando por **Status do PO**
-3. **Configurar configuração de pesquisa**
-   *   Configure o campo de Status no cabeçalho do pedido de compra da seguinte forma:
+Para obter ajuda na configuração de um lookup, veja [Configuração de Dados Fuzzy com Dados Mestres](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Folrh285NuJO787Udc80C%252Fimage.png%3Falt%3Dmedia%26token%3Def5abe46-fe94-4946-a893-66f7ca21322b\&width=768\&dpr=4\&quality=100\&sign=415e657e\&sv=2)
-   * **Observação:** **O pedido de compra precisa estar no Acionador Automático, caso contrário as atualizações de status podem não ser feitas corretamente**
-   * Não sabe como **Configurar configuração de pesquisa? Aqui está o** [**guia de configuração de pesquisa**](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
-4. **Verificar** Receba ou fature um PO e verifique no painel se o status foi atualizado corretamente.
+## Verificar com um documento conhecido
+
+Use um documento já vinculado a um pedido de compra de teste. Altere o status desse pedido de compra pelo seu processo normal, atualize o painel e verifique o documento e o campo de status da PO visível. Se o status não for atualizado, verifique o vínculo de PO do documento, a configuração de lookup e se o campo relevante foi adicionado ao painel. Não conclua que a atualização foi bem-sucedida apenas pelo interruptor.
+
+## Achados de tradução da aplicação
+
+Os termos acima são as etiquetas reais da interface em português, verificados com o executável em sandbox. Alguns termos da aplicação permanecem inconsistentes ou não traduzidos em PT e são reportados aqui, sem correção na documentação:
+
+- Nomes de tipo de documento sem tradução nos cartões: `Purchase Order`, `Order Confirmation`, `Customs Declaration`, `Freight Letter`; cabeçalho de coluna `Extraction`.
+- Nomes de lookup sem tradução: `Supplier Lookup`, `Order Header Lookup`, `Order Line Lookup`; valores de status `No Match`; coluna de ações `Actions`.
+- Nomenclatura inconsistente na mesma seção: o menu mostra **Tipos De Documentos** e **Ordem de compra**, mas o cartão do tipo e o painel mostram **Fatura** (italiano para "fatura/factura").

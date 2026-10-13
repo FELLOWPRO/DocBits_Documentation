@@ -12,21 +12,42 @@ Groups and Permissions allow you to control which users can access specific docu
 
 Use the toggle at the top of the page to enable or disable the groups and permissions system. When disabled, the system uses a simpler access model without group-based restrictions.
 
-## Group List
+## Managing Groups in the Navigator
 
-The table displays all configured groups with:
+The page is split into two panes. The left pane is the group navigator:
 
-| Column | Description |
+| Element | Description |
+|---------|-------------|
+| **Search** | Filters the list of groups by name as you type. |
+| **+ New** | Creates a new group. See [Adding/Editing Groups](adding-editing-groups.md). |
+| **Group entry** | Selects the group and opens its details in the right pane. Until a group is selected, the right pane shows *Select a group to view details*. |
+
+Each group entry carries a **⋮** (more actions) menu:
+
+| Action | Description |
 |--------|-------------|
-| **Group Name** | The name of the group. |
-| **Group Description** | A brief description of the group's purpose. |
-| **Actions** | Menu with options to edit or delete the group. |
+| **Edit** | Opens the group so you can change its name and description. |
+| **View Access Control** | Opens the group's permission matrix, where document-type and field-level permissions are configured per group. |
+| **Delete** | Removes the group after a confirmation. |
 
-Use the **Search** bar to find groups by name. Click **+ New** to create a new group.
+## Menu Tab Access
+
+The group details pane contains a **Menu tabs** section. It defines, for this role, which menu tabs the role's members may see:
+
+* Tick a tab to grant it to this role.
+* Clear a tab to take it away from this role.
+
+Every role is configured on its own, so two roles can see different menu tabs. The list only contains tabs that an administrator may hand to a role — currently the **Analytics dashboard**.
+
+{% hint style="info" %}
+**Empty = organisation admins only.** If no tab is ticked for a role, members of that role see none of the gated tabs; only organisation admins keep access to them. The same note is shown as a hint under the **Menu tabs** heading.
+{% endhint %}
+
+<figure><img src="../../../../../.gitbook/assets/settings-roles-menu-tabs-en-20261010.png" alt="Group details with the Menu tabs section"><figcaption><p>Selecting a group in the navigator opens its details, including the <strong>Menu tabs</strong> section.</p></figcaption></figure>
 
 ## Configuring Group Permissions
 
-When you select a group (via the Actions menu → Edit), a permissions table appears where you can configure access per document type:
+When you open a group (via the group's **⋮** menu → **View Access Control**), a permissions table appears where you can configure access per document type:
 
 | Permission | Description |
 |------------|-------------|

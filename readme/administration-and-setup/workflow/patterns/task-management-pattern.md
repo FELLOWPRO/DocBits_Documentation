@@ -741,6 +741,7 @@ Day 5: IF still not completed:
 ### Próximos passos
 - Adicionar notificações por e-mail: [Guia de e-mail](../then/action/send-email-groups-guide.md)
 - Implementar encaminhamento complexo: [Padrão de Lógica de Decisão](decision-logic-pattern.md)
+- Resolver erros de tarefas: [Tratamento de erros](#tratamento-de-erros) acima
 
 ---
 

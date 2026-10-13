@@ -493,7 +493,7 @@
     * [Importar Entradas de Mercancías (Receive Delivery BOD)](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/receive-delivery-bod.md)
     * [Importar Datos Maestros desde XML](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/master-data-xml.md)
   * [LN](infor-integration-and-configuration/importing-customer-master-data/ln/README.md)
-    * [Contabilidad Automática](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
+    * [Contabilidad automática con Infor LN](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
     * [Proveedores y Órdenes de Compra](infor-integration-and-configuration/importing-customer-master-data/ln/suppliers-and-purchase-orders.md)
     * [Códigos de Impuestos](infor-integration-and-configuration/importing-customer-master-data/ln/tax-codes.md)
   * [M3](infor-integration-and-configuration/importing-customer-master-data/m3/README.md)

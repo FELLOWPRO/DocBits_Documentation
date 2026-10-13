@@ -488,7 +488,7 @@
     * [Importowanie Przyjęć Towarów (Receive Delivery BOD)](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/receive-delivery-bod.md)
     * [Importowanie Danych Głównych z XML](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/master-data-xml.md)
   * [LN](infor-integration-and-configuration/importing-customer-master-data/ln/README.md)
-    * [Automatyczne Księgowanie](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
+    * [Automatyczne Księgowanie z Infor LN](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
     * [Dostawcy i Zamówienia Zakupu](infor-integration-and-configuration/importing-customer-master-data/ln/suppliers-and-purchase-orders.md)
     * [Kody Podatkowe](infor-integration-and-configuration/importing-customer-master-data/ln/tax-codes.md)
   * [M3](infor-integration-and-configuration/importing-customer-master-data/m3/README.md)

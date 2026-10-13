@@ -130,6 +130,8 @@
       * [Kolumny Tabeli](administration-and-setup/settings/global-settings/document-types/table-columns.md)
       * [Pola](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Dodawanie i Edytowanie Pól](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
+        * [Konfigurowanie właściwości pola](administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md)
+        * [Ustawianie walidacji i wyniku dopasowania](administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md)
         * [Ustawienia danych głównych](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Szkolenie Modelu](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Wyrażenia Regularne](administration-and-setup/settings/global-settings/document-types/regex.md)

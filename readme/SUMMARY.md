@@ -275,6 +275,7 @@
           * [Aktualisieren des Dokuments Bestellstatus](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/update-document-purchase-order-status.md)
           * [Lieferantenartikelnummernkarte - Administrationsdokumentation](administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/lieferantenartikelnummernkarte-administrationsdokumentation.md)
     * [E-Mail-Benachrichtigung](overview/settings/global-settings/email-notification.md)
+      * [Benachrichtigungen verwalten](administration-and-setup/settings/global-settings/email-notification/managing-notifications.md)
     * [E-Mail-Vorlagen](administration-and-setup/settings/global-settings/e-mail-templates.md)
     * [Benutzerdefinierte Filter](overview/settings/global-settings/page-1.md)
     * [Integration](overview/settings/global-settings/integration/README.md)

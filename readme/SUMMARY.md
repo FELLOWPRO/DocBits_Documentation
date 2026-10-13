@@ -10,6 +10,7 @@
 * [FAQ Bezpieczeństwo i Zgodność](overview-and-basics/security-and-compliance-faq.md)
 * [Uwierzytelnianie dwuskładnikowe (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastruktura](overview-and-basics/infor-infrastructure.md)
+* [Strategia cyklu życia wydań DocBits](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Informacje o wersji](overview-and-basics/release-notes/README.md)
   * [Aktualizacje — 21–25 czerwca 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Aktualizacje — 26–30 czerwca 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
@@ -39,6 +40,7 @@
 ## Sekcja użytkowników końcowych i partnerów <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sekcja użytkownika końcowego](end-user-and-partner-section/end-user-section/README.md)
+  * [Uzyskiwanie dostępu i logowanie](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Globalne Szybkie Wyszukiwanie](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Mapa Witryny](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Konfigurowalny Pasek Boczny](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
@@ -285,6 +287,8 @@
     * [Zarządzanie Zadaniami](administration-and-setup/settings/log-settings/task-management.md)
     * [Synchronizacja Danych](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Ustawienia Wyszukiwania Pełnotekstowego](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Audyt Dostępu](administration-and-setup/settings/log-settings/access-audit.md)
+    * [Analityka](administration-and-setup/settings/log-settings/analytics.md)
   * [Licencje API](administration-and-setup/settings/api-licenses.md)
   * [Ustawienia Dostawcy](administration-and-setup/settings/supplier-setting/README.md)
     * [Ustawienia ogólne dostawcy](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)

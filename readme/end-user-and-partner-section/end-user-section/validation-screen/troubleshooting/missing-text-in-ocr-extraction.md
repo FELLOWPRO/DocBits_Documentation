@@ -8,7 +8,7 @@ If text is visible on a document but a field cannot be extracted, first check wh
 2. In the toolbar on the right, select the **OCR View** icon. The OCR view opens in a separate browser tab.
 3. Look for the missing word or number in the recognized text overlay. If it is absent, field extraction cannot select it from that text layer. If it is present, check the field mapping instead.
 
-<figure><img src="../../../../.gitbook/assets/dbdc159-ocr-view-en.png" alt="OCR view of a synthetic English invoice with recognized words overlaid on the page"><figcaption><p>Compare the text on the document with the words shown in OCR View. This example shows recognized text, not a failed extraction.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc159-ocr-view-en.png" alt="OCR view of a synthetic English invoice with recognized words overlaid on the page"><figcaption><p>Compare the text on the document with the words shown in OCR View — here the invoice table columns Line, Article, Service, Units, Price each and Amount are all recognized. This example shows recognized text, not a failed extraction.</p></figcaption></figure>
 
 ## Try OCR instead of embedded E-Text for one supplier
 

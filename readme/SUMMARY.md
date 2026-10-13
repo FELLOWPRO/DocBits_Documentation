@@ -130,6 +130,7 @@
       * [Columnas de Tabla](administration-and-setup/settings/global-settings/document-types/table-columns.md)
       * [Campos](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Agregando y Editando Campos](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)
+        * [Establecer Validación y Puntaje de Partido](administration-and-setup/settings/global-settings/document-types/fields/setting-validation-and-match-score.md)
         * [Ajustes de datos maestros](administration-and-setup/settings/global-settings/document-types/fields/master-data-settings.md)
       * [Entrenamiento de Modelos](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Regex](administration-and-setup/settings/global-settings/document-types/regex.md)

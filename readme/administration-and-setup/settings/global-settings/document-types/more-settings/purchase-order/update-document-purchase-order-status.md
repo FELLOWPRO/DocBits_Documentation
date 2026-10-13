@@ -1,43 +1,46 @@
 # Actualizar Estado de Orden de Compra de Documentos
 
+Esta configuración es para los tipos de documentos que utilizan órdenes de compra. Controla si un documento puede recibir actualizaciones de estado de su orden de compra vinculada. El interruptor se configura por tipo de documento. Para ver un estado de OC en el panel, el campo correspondiente también debe estar disponible y visible como columna.
 
+Antes de cambiar la configuración, elija la organización y el tipo de documento correctos. Necesita acceso de administrador para editar la configuración de los tipos de documentos. Una orden de compra debe estar vinculada a un documento antes de poder comprobar un cambio de estado.
 
-## Resumen
+## Activar la configuración
 
-Cuando está habilitado, la columna **Estado de OC** en el panel se actualiza automáticamente cada vez que cambia el estado de la orden de compra.
+1. Abra **Ajustes → Tipos De Documento**.
+2. Busque el tipo de documento utilizado para los documentos vinculados a la OC, como **Factura**, y seleccione el engranaje de su tarjeta para abrir **Más Ajustes**.
+3. Expanda **Orden de compra**. Busque **Actualizar el estado de la orden de compra del documento** y actívelo. El icono de ayuda cercano explica la opción dentro de la aplicación. Cambiar este interruptor no modifica las demás configuraciones de PO de la misma sección.
 
-## Dónde Activar
+<figure><img src="../../../../../../.gitbook/assets/dbdc696-document-types-es-20261011.png" alt="Página de Tipos de Documento con la tarjeta Factura y su engranaje de Más Ajustes"><figcaption>Abra la configuración del tipo de documento que utiliza.</figcaption></figure>
 
-1. Ir a: **Configuración** → **Configuración Global** → **Tipo de Documento**
-2.  Seleccionar el tipo de documento deseado y hacer clic en **Más Configuraciones**.\
+<figure><img src="../../../../../../.gitbook/assets/dbdc696-po-settings-es-20261011.png" alt="Sección Orden de compra de Más Ajustes con el interruptor Actualizar el estado de la orden de compra del documento"><figcaption>El interruptor de actualización de estado en la configuración de Orden de compra.</figcaption></figure>
 
+## Mostrar un estado de OC en el panel
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  En la sección **Orden de Compra**, navegar hasta la opción **Actualizar Estado de Orden de Compra de Documentos**.\
+1. Vuelva al panel y seleccione el engranaje situado encima de la tabla de documentos.
+2. Abra **Configuración de columnas** desde el menú de ajustes avanzados.
+3. Seleccione **Agregar campo desde el tipo de documento**, elija el tipo de documento y busque **Estado de OC**. Si ese campo está disponible, selecciónelo, elija **Agregar a Columnas visibles** y luego seleccione **Hecho**.
 
+El cuadro de diálogo de columnas contiene **Columnas ocultas** y **Columnas visibles**. Utilice las flechas para mover una columna seleccionada entre ambas. Consulte [Cambiar columnas del documento](../../../../../../end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md) para ver la guía completa de columnas. Si **Estado de OC** no aparece para el tipo seleccionado, pida a un administrador que compruebe su campo y la configuración de búsqueda; el interruptor de visualización por sí solo no crea un campo inexistente.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSsFkQ46Jd4tn0WGqNSjk%252Fimage.png%3Falt%3Dmedia%26token%3D51ee4f2d-76ae-42b4-a748-f0e9d340b329\&width=768\&dpr=4\&quality=100\&sign=e0f4b1af\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/dbdc696-dashboard-columns-es-20261011.png" alt="Cuadro de diálogo Configuración de columnas del panel con Columnas ocultas, Columnas visibles y Agregar campo desde el tipo de documento"><figcaption>Elija qué columnas aparecen en el panel.</figcaption></figure>
 
-## Cómo Funciona
+## Comprobar la búsqueda de la orden de compra
 
-Cuando esta configuración está habilitada, la columna **Estado de OC** en el panel reflejará automáticamente el estado actual de la orden de compra. Por ejemplo, si el estado de la OC se actualiza a _Recibido_ o _Facturado_, la columna del panel se actualizará en consecuencia para mostrar este nuevo estado.
+En **Ajustes → Tipos De Documento → Campos → Ajustes De Datos Maestros**, expanda **Búsqueda de datos maestros** y luego **Order Header Lookup**. Compruebe que existe la asignación del campo de OC requerido y que la búsqueda correspondiente tiene **Disparador Automático** cuando se necesita una búsqueda automática. La captura siguiente muestra la lista de configuraciones; no demuestra un estado de OC actualizado.
 
-<div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FmWZIOi5pqWyeagCfiXgy%252FStatus%2520on%2520Dashboard.jpg%3Falt%3Dmedia%26token%3D3aad59e7-d249-4f07-afa3-c68429128cec&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=6cde440e&#x26;sv=2" alt="" width="375"></div>
+<figure><img src="../../../../../../.gitbook/assets/dbdc696-lookup-po-header-es-20261011.png" alt="Página Búsqueda de datos maestros con las configuraciones de búsqueda Supplier Lookup, Order Header Lookup y Order Line Lookup"><figcaption>Compruebe las filas de búsqueda reales del tipo de documento.</figcaption></figure>
 
-## Configuración
+Para obtener ayuda con la configuración de una búsqueda, consulte [Configuración de Datos Difusos con Datos Maestros](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
-1. **Habilitar la Configuración** Navegar a la ubicación mencionada anteriormente y activar la configuración.
-2. **Agregar la Columna de Estado de OC (si no es visible)** Si la columna **Estado de OC** no es visible en el panel:
-   *   Ir a: **Configuración Avanzada** → **Establecer Columnas de Tabla para Organizaciones**\
+## Verificar con un documento conocido
 
+Utilice un documento que ya esté vinculado a una orden de compra de prueba. Cambie el estado de esa orden de compra mediante su proceso habitual, actualice el panel y compruebe el documento y el campo de estado de OC visible. Si el estado no se actualiza, revise el vínculo de OC del documento, la configuración de búsqueda y si el campo correspondiente se agregó al panel. No deduzca una actualización correcta solo del interruptor.
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fn6GyECCtvUeKLYd6FkEH%252Fimage.png%3Falt%3Dmedia%26token%3Da023deba-748f-4140-bb33-17483c91f2cf\&width=768\&dpr=4\&quality=100\&sign=164eb544\&sv=2)
-   * Agregar el campo del tipo de documento buscando **Estado de OC**
-3. **Configurar la configuración de búsqueda**
-   *   Configurar el campo de Estado en la búsqueda de encabezado de orden de compra de esta manera:\
+## Hallazgos de traducción de la aplicación
 
+Estos términos aparecen sin traducir o de forma inconsistente en la interfaz en español (versión 10.78.9.5); se citan tal cual y se han notificado, no corregido en la documentación:
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Folrh285NuJO787Udc80C%252Fimage.png%3Falt%3Dmedia%26token%3Def5abe46-fe94-4946-a893-66f7ca21322b\&width=768\&dpr=4\&quality=100\&sign=415e657e\&sv=2)
-   * **Nota:** **La orden de compra debe estar en Activación Automática de lo contrario las actualizaciones de estado pueden no realizarse correctamente**
-   * ¿No sabes cómo **Configurar la configuración de búsqueda? Aquí tienes la** [**guía de configuración de búsqueda**](../../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
-4. **Verificar** Recibir o facturar una OC, luego verificar en el panel para confirmar que el estado se ha actualizado correctamente.
+1. En la página Tipos de Documento, los nombres de tipo **Purchase Order**, **Delivery Note**, **Order Confirmation**, **Customs Declaration** y **Freight Letter**, así como el encabezado de columna **Extraction**, permanecen en inglés.
+2. En el panel, el encabezado de columna **Suboficial** es una traducción incorrecta de "Sub-Org".
+3. En la configuración de PO, el interruptor se llama **Actualizar el estado de la orden de compra del documento**, mientras que el título de la página dice "Actualizar Estado de Orden de Compra de Documentos".
+4. En Búsqueda de datos maestros, los nombres de las configuraciones **Supplier Lookup**, **Order Header Lookup** y **Order Line Lookup** permanecen en inglés, y la etiqueta predeterminada se muestra como **Defecto**.

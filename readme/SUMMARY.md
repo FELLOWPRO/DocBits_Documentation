@@ -230,6 +230,7 @@
         * [Resolução de Problemas de Controle de Acesso e Permissões](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/troubleshooting.md)
     * [Integração](administration-and-setup/settings/global-settings/integration/README.md)
       * [Chamadas de API e Exemplos](administration-and-setup/settings/global-settings/integration/api-calls-and-examples.md)
+      * [Chave de API](administration-and-setup/settings/global-settings/integration/api-key.md)
       * [Gestão de Chaves API](administration-and-setup/settings/global-settings/integration/api-key-management.md)
       * [Configuração de Single Sign-On (SSO)](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/README.md)
         * [Configuração de SSO da Infor](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/README.md)

@@ -610,6 +610,7 @@
 
 ## Geavanceerde functies en tools <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [Kennisgrafiekverkenner](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [Course](advanced-functions-and-tools/course/README.md)
   * [A Step-by-Step Guide](advanced-functions-and-tools/course/a-step-by-step-guide.md)
   * [Connect DocBits with Infor SSO](advanced-functions-and-tools/course/connect-docbits-with-infor-sso.md)

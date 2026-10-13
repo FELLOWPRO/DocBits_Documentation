@@ -1,12 +1,6 @@
-# PT - TRANSLATED
-
-**Translated to Português**
-
----
-
-# Document Processing
+# Processamento de Documentos
 
 
 
 
-...
+

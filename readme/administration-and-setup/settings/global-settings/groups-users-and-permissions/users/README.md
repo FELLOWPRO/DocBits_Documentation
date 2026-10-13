@@ -37,6 +37,6 @@ Consulte [Análise de Logins](login-analytics.md) para o detalhamento completo.
    * **Endereço de E-mail**: Usado para login e notificações.
    * **Senha**: Deve estar de acordo com as políticas de segurança da sua organização.
    * **Função do Usuário**: Atribua a função adequada (Standard User, Admin ou System Admin).
-3. Clique em **Salvar** para criar a conta do usuário. O novo usuário receberá uma notificação por e-mail com seus dados de login.
+3. Clique em **Salvar** para criar a conta do usuário. O novo usuário receberá uma notificação por e-mail com seus dados de login e um link para definir a primeira senha na página Definir senha. Consulte [Obter acesso e iniciar sessão](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#primeira-palavra-passe-para-contas-criadas-pelo-administrador).
 
 > **Observação:** A função de **System Admin** só pode ser escolhida ao criar um usuário — ela não pode ser adicionada ou removida depois. Cada organização pode ter apenas um System Admin, e escolher essa função concede automaticamente também os direitos de Admin. Consulte [Privilégios de Administrador](admin-privileges.md#admin-vs-system-admin) para saber quando utilizá-la.

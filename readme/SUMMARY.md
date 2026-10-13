@@ -148,6 +148,8 @@
             * [Validation de Fournisseur ERP](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/sample-scripts/erp-vendor-validation.md)
             * [Compléter les Champs depuis l'Historique](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/sample-scripts/fill-missing-fields-from-history.md)
       * [e-docs](administration-and-setup/settings/global-settings/document-types/edi/README.md)
+        * [Currently Supported E-Invoice Standards](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/README.md)
+          * [Roadmap](administration-and-setup/settings/global-settings/document-types/edi/currently-supported-e-invoice-standards/roadmap.md)
         * [Paramètres EDI : Aperçu & Avantages](administration-and-setup/settings/global-settings/document-types/edi/edi/README.md)
           * [Guide du fichier de description de la structure EDI](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-structure-descriptor-file-guide/README.md)
             * [Descripteur de structure EDI](administration-and-setup/settings/global-settings/document-types/edi/edi/edi-structure-descriptor-file-guide/edi-structure-descriptor.md)

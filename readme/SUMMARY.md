@@ -539,7 +539,7 @@
     * [Lieferanten und Bestellungen](setup/importing-customer-master-data/ln/suppliers-and-purchase-orders.md)
     * [Tax Codes](setup/importing-customer-master-data/ln/tax-codes.md)
   * [M3](setup/importing-customer-master-data/m3/README.md)
-    * [Import von Infor M3 zu DocBits via API](infor-integration-and-configuration/importing-customer-master-data/m3/import-from-infor-m3-to-docbits-via-api.md)
+    * [Stammdaten aus Infor M3 über die ION-API importieren](infor-integration-and-configuration/importing-customer-master-data/m3/import-from-infor-m3-to-docbits-via-api.md)
     * [BOD-Mappings](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/README.md)
       * [Lieferanten BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/supplier-bod-mapping.md)
       * [Purchase Order BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/purchase-order-bod-mapping.md)

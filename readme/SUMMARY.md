@@ -487,7 +487,7 @@
       * [Mappage BOD Purchase Order](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/purchase-order-bod-mapping.md)
       * [Mappage BOD ReceiveDelivery](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/receivedelivery-bod.md)
       * [Auto Accounting BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/auto-accounting-bod-mapping.md)
-    * [Auto Accounting](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
+    * [Comptabilité Automatique](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
     * [Suppliers and Purchase Orders](infor-integration-and-configuration/importing-customer-master-data/m3/suppliers-and-purchase-orders.md)
     * [Comment importer tous les fournisseurs](infor-integration-and-configuration/importing-customer-master-data/m3/how-to-import-all-suppliers.md)
     * [Extraction de tableaux pour le calcul des coûts](infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)

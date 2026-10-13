@@ -136,6 +136,7 @@
       * [Addestramento del Modello](administration-and-setup/settings/global-settings/document-types/model-training.md)
       * [Espressioni Regolari](administration-and-setup/settings/global-settings/document-types/regex.md)
       * [Script](administration-and-setup/settings/global-settings/document-types/script/README.md)
+        * [Attivazione e gestione degli script](administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md)
         * [Scripting in DocBits](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/README.md)
           * [Variabili di Contesto](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/context-variables.md)
           * [Funzioni](administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/functions.md)

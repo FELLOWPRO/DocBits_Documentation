@@ -1,56 +1,39 @@
 # Datenimport: Modelltraining
 
-Detaillierte Anweisungen zum Importieren von Beispielbelegen für das Training, einschließlich des zu verwendenden Formats und der Belegtypen.
+Verwenden Sie diese Seite, um Beispiel-PDFs für einen Dokumenttyp hinzuzufügen und anschließend sein Klassifizierungsmodell zu trainieren oder zu testen. Sie benötigen Zugriff auf **Einstellungen** und **Dokumenttypen**. Den Zweck der Trainingsfunktionen finden Sie unter [Zweck und Verwendung: Modelltraining](purpose-and-use-model-training.md).
 
-**Um Beispielbelege für das Training zu importieren, führen Sie folgende Schritte aus:**
+## Den Dokumenttyp öffnen
 
-* **Vorbereiten der Beispielbelege:** Stellen Sie sicher, dass die Beispielbelege in einem unterstützten Format vorliegen, wie z. B. PDF, Word, Excel usw. Diese Belege sollten eine Vielzahl von Typen und Formaten abdecken, die im Produktivbetrieb des Belegverarbeitungssystems auftreten können.
-* **Navigieren zur Importfunktion:** Melden Sie sich im Administrationsbereich des Belegverarbeitungssystems an und navigieren Sie zu dem Bereich, in dem Sie neue Belege importieren können.
+1. Wechseln Sie zu **Einstellungen → Dokumenttypen**.
+2. Suchen Sie den Dokumenttyp, den Sie trainieren möchten. Wählen Sie in seiner Zeile **Modell Training**. Das folgende Beispiel verwendet **Rechnung**.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_global_settings_import_nav.png" alt="Docbits Global Settings Import Nav"><figcaption><p>Globale Einstellungen</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc646-document-types-de-20261011.png" alt="Zeile Rechnung auf der Seite Dokumenttypen mit dem Link Modell Training"><figcaption><p>Modell Training öffnen Sie über den gewählten Dokumenttyp.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_function_area.png" alt="Docbits Import Function Area"><figcaption></figcaption></figure>
+Die übrigen Steuerelemente auf dieser Karte haben andere Zwecke: **Aktivieren** schaltet den Dokumenttyp ein, **Extraction** wechselt seinen Extraktionsmodus, das Zahnrad öffnet seine Einstellungen, und die übrigen Links öffnen andere Konfigurationsbereiche. Nur um Modell Training zu öffnen, müssen Sie nichts davon ändern.
 
-* **Auswählen der Option zum Importieren von Belegen:** Klicken Sie auf die Schaltfläche oder den Link zum Importieren von Belegen. Es kann eine Option wie "Importieren" geben.
+Die Seite **Trainingsmodel** zeigt die Anzahl der Beispiele und eine Liste der hochgeladenen Trainingsdokumente. Im gezeigten Beispiel enthält die Liste fünf PDF-Dokumente; Ihre Organisation kann andere Dokumente und Zahlen anzeigen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_documents_button.png" alt="Docbits Import Documents Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc646-model-training-de-20261011.png" alt="Seite Trainingsmodel der Rechnung mit Beispielanzahl sowie den Schaltflächen Import, Trainingsmodel, Test-Klassifizierung und der Dokumentenliste"><figcaption><p>Die drei Aktionen befinden sich oben rechts über der Trainingsliste.</p></figcaption></figure>
 
-* **Betrags- & Datumsformat auswählen:**
+## Beispiel-PDFs importieren
 
-<figure><img src="../../../../../.gitbook/assets/docbits_manage_users_button.png" alt="Docbits Manage Users Button"><figcaption></figcaption></figure>
+1. Wählen Sie **Import**.
+2. Wählen Sie das **Betrag und Datumsformat**, das zum Beispieldokument passt. Wählen Sie zum Beispiel **United States** für US-Nummern- und Datumsformate. Diese Auswahl sagt DocBits, wie Werte im hochgeladenen Dokument zu lesen sind; sie ändert nicht die Sprache der App.
+3. Ziehen Sie PDF-Dateien in den Dialog oder wählen Sie sie über **Upload** aus. Der aktuelle Import für Beispieldokumente akzeptiert **PDF-Dateien**; andere Dateitypen werden abgelehnt. Mit der Auswahl der Dateien beginnt der Upload.
+4. Schließen Sie den Dialog und prüfen Sie, ob die Dokumente in der Trainingsliste erscheinen. Meldet DocBits einen Upload-Fehler oder dass ein Dokument bereits existiert, korrigieren Sie die Datei oder wählen Sie ein anderes Beispiel, bevor Sie fortfahren.
 
-**Betragsformat:**
+<figure><img src="../../../../../.gitbook/assets/dbdc646-import-dialog-de-20261011.png" alt="Import-Dialog mit Auswahlfeld für Betrag und Datumsformat, Ablehn-Bereich für Dateien und Upload-Feld"><figcaption><p>Wählen Sie das Format, bevor Sie Beispiel-PDFs auswählen.</p></figcaption></figure>
 
-Das Betragsformat kann je nach Region variieren, aber im Allgemeinen gibt es einige gängige Konventionen:
+<figure><img src="../../../../../.gitbook/assets/dbdc646-format-menu-de-20261011.png" alt="Menü Betrag und Datumsformat mit Ländern und Regionen, darunter Germany und United Kingdom"><figcaption><p>Wählen Sie das Format des Dokuments, nicht Ihre bevorzugte Oberflächensprache.</p></figcaption></figure>
 
-1. Währungssymbol: Das Währungssymbol wird normalerweise vor dem Betrag angegeben, z. B. "$" für US-Dollar, "€" für Euro, "£" für britisches Pfund usw.
-2. Tausendertrennzeichen: In einigen Ländern werden lange Zahlen zur besseren Lesbarkeit durch ein Tausendertrennzeichen getrennt. In den USA wird üblicherweise ein Komma verwendet (z. B. 1,000), während in vielen europäischen Ländern ein Punkt verwendet wird (z. B. 1.000).
-3. Dezimaltrennzeichen: Das Dezimaltrennzeichen wird verwendet, um den ganzzahligen Teil von den Dezimalstellen zu trennen. Die meisten englischsprachigen Länder verwenden einen Punkt (z. B. 10.99), während viele europäische Länder ein Komma verwenden (z. B. 10,99).
+Aktionen zu importierten Beispielen finden Sie unter [Trainingsdaten verwalten](manage-training-data.md).
 
-#### Datumsformat:
+## Das Modell trainieren und prüfen
 
-Das Datumsformat variiert ebenfalls je nach Region, wobei verschiedene Länder unterschiedliche Konventionen haben. Hier sind die gängigsten Formate:
+Wenn die gewünschten Beispiel-PDFs in der Liste stehen, wählen Sie **Trainingsmodel**. DocBits kann das Training im Hintergrund verarbeiten; warten Sie die Abschlussmeldung ab, bevor Sie das neue Modell als fertig betrachten. Die Beispielanzahl und eine auf dieser Seite angezeigte Plan-Grenze gehören zu Ihrer Organisation.
 
-1. Tag-Monat-Jahr (TT-MM-JJ oder TT.MM.JJ): In vielen europäischen Ländern wird das Datum im Format Tag-Monat-Jahr angegeben. Beispielsweise steht "21.05.24" für den 21. Mai 2024.
-2. Monat-Tag-Jahr (MM-TT-JJ oder MM/TT/JJ): In den Vereinigten Staaten wird häufig das Format Monat-Tag-Jahr verwendet. Beispielsweise steht "05/21/24" für den 21. Mai 2024.
-3. Jahr-Monat-Tag (JJ-MM-TT oder JJ/MM/TT): In einigen anderen Ländern wird das Format Jahr-Monat-Tag bevorzugt. Beispielsweise steht "24/05/21" für den 21. Mai 2024.
+Um die Klassifizierung zu prüfen, wählen Sie **Test-Klassifizierung** und laden Sie in dem Dialog eine separate Beispiel Datei hoch. Nach der Verarbeitung zeigt DocBits, ob der vorhergesagte Dokumenttyp mit dieser Seite übereinstimmt, und meldet Einzelheiten zur Klassifizierung. Der leere Test-Dialog unten wird ohne hochgeladene Datei gezeigt.
 
-Es ist wichtig, das spezifische Format zu beachten, um Missverständnisse zu vermeiden, insbesondere bei internationalen Mitteilungen oder Finanztransaktionen.
+<figure><img src="../../../../../.gitbook/assets/dbdc646-test-dialog-de-20261011.png" alt="Dialog Test-Klassifizierung mit Bereich zum Ablegen von Dateien und Upload-Feld"><figcaption><p>Mit Test-Klassifizierung prüfen Sie das Modell mit einem weiteren Dokument.</p></figcaption></figure>
 
-* **Auswählen der Beispielbelege:** Wählen Sie die Beispielbelege aus, die Sie importieren möchten. Dies kann durch Hochladen der Dateien von Ihrem lokalen Computer oder durch Auswahl von Belegen von einem bereits verbundenen Speicherort erfolgen.
-
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt=""><figcaption></figcaption></figure>
-
-* **Konfigurieren der Belegtypen und Untertypen (falls erforderlich):** Wenn Ihr System verschiedene Belegtypen oder Untertypen unterstützt, weisen Sie jedem importierten Beleg den entsprechenden Typ zu. Dies hilft dem System, die Belege korrekt zu kategorisieren und zu verarbeiten.
-* **Starten des Importvorgangs:** Bestätigen Sie die Auswahl der Belege und starten Sie den Importvorgang. Je nach Größe und Anzahl der Belege kann dieser Vorgang einige Zeit in Anspruch nehmen.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_user_settings_menu.png" alt="Docbits User Settings Menu"><figcaption></figcaption></figure>
-
-* **Prüfen des Importstatus:** Überprüfen Sie den Status des Importvorgangs, um sicherzustellen, dass alle Belege erfolgreich importiert wurden. Stellen Sie sicher, dass keine Fehler aufgetreten sind und dass die Belege korrekt verarbeitet wurden.
-* **Trainieren des Modells:** Nachdem die Belege importiert wurden, verwenden Sie diese, um das Modell des Belegverarbeitungssystems zu trainieren. Führen Sie das Training gemäß den Anweisungen des Systems durch, um sicherzustellen, dass es die Beispieldaten effektiv verarbeiten kann.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_user_role_edit.png" alt="Docbits User Role Edit"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/docbits_select_user_list.png" alt="Docbits Select User List" width="284"><figcaption></figcaption></figure>
-
-Durch regelmäßiges Hinzufügen von Beispielbelegen zum Training können Sie sicherstellen, dass Ihr Belegverarbeitungssystem immer auf dem neuesten Stand ist und eine genaue und effiziente Verarbeitung bietet.
+Zur Deutung des Ergebnisses siehe [Das Modell testen](testing-the-model.md). Wenn das Ergebnis schlecht ist, prüfen Sie die [Trainingsdaten](manage-training-data.md) und die [Fehlerbehebung](troubleshooting.md), bevor Sie weitere Beispiele hinzufügen.

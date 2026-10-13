@@ -236,6 +236,7 @@
         * [Control de Acceso](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/access-control.md)
         * [Solución de Problemas de Control de Acceso y Problemas de Permisos](administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/troubleshooting.md)
     * [Integración](administration-and-setup/settings/global-settings/integration/README.md)
+      * [Clave de API](administration-and-setup/settings/global-settings/integration/api-key.md)
       * [Configuración de inicio de sesión único (SSO)](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/README.md)
         * [Configuración SSO de Infor](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/README.md)
           * [V1: SSO de Infor Ming.le Portal](administration-and-setup/settings/global-settings/integration/configuring-single-sign-on-sso/sso-configuration/v1.md)

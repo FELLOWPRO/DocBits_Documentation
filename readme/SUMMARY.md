@@ -287,6 +287,7 @@
     * [Sincronização de Dados](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Configurações de Pesquisa de Texto Completo](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
     * [Auditoria de Acesso](administration-and-setup/settings/log-settings/access-audit.md)
+    * [Análise](administration-and-setup/settings/log-settings/analytics.md)
   * [Licenze API](administration-and-setup/settings/api-licenses.md)
   * [Configuração do Fornecedor](administration-and-setup/settings/supplier-setting/README.md)
     * [Configurações Gerais do Fornecedor](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)

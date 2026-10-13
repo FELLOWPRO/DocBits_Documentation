@@ -545,7 +545,7 @@
       * [Purchase Order BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/purchase-order-bod-mapping.md)
       * [ReceiveDelivery BOD-Zuordnung](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/receivedelivery-bod.md)
       * [Auto Accounting BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/auto-accounting-bod-mapping.md)
-    * [Auto Accounting](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
+    * [Auto Accounting mit Infor M3](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
     * [Suppliers and Purchase Orders](infor-integration-and-configuration/importing-customer-master-data/m3/suppliers-and-purchase-orders.md)
     * [Automatische Buchung](setup/importing-customer-master-data/m3/auto-accounting.md)
     * [Lieferanten und Bestellungen](setup/importing-customer-master-data/m3/suppliers-and-purchase-orders.md)

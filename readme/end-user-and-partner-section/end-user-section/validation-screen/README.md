@@ -4,7 +4,7 @@
 
 ## Descripción General
 
-<figure><img src="../../../.gitbook/assets/validation_screen1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_overview_es.png" alt="Pantalla de validación de DocBits en español con los campos de cabecera, la tabla de líneas de detalle y el visor de documentos"><figcaption><p>La pantalla de validación con un documento de ejemplo</p></figcaption></figure>
 
 ### Origen del Documento (Document Origin)
 
@@ -44,13 +44,11 @@ Vea aquí agregar [Script en DocBits](../../../administration-and-setup/settings
 
 ### **Campos Requeridos:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-required-field-es-2026.png" alt="Pantalla de validación de DocBits en español con una advertencia en rojo en el número de factura y el número coincidente visible en una factura sintética"><figcaption><p>Un campo que requiere atención junto a la factura usada para comprobar su valor.</p></figcaption></figure>
 
-Hay campos que requieren atención: muestran un borde de color o un icono de información. En el ejemplo siguiente, el campo **Número de factura** tiene un borde rojo y un icono de advertencia. El valor es visible en la factura de la derecha, pero DocBits no lo extrajo del documento. Seleccione el número en el documento o corrija el campo y guarde el documento.
+Hay campos que requieren atención: muestran un borde de color o un icono de información. En el ejemplo anterior, el campo **Número de factura** tiene un borde rojo y un icono de advertencia. El valor es visible en la factura de la derecha, pero DocBits no lo extrajo del documento. Seleccione el número en el documento o corrija el campo y guarde el documento.
 
 Pase el ratón o seleccione el icono de información junto a un campo para leer el motivo concreto. Según el campo, el mensaje puede indicar una extracción ausente, un valor obligatorio, una confianza baja o un desajuste de validación. Si la advertencia afecta a los totales, compare los campos de importe con la factura y use [Comprobaciones Automáticas en la Pantalla de Validación](automatic-checks-on-the-validation-screen.md) para la comprobación correspondiente.
-
-<figure><img src="../../../.gitbook/assets/validation-required-field-en-2026.png" alt="Pantalla de validación de DocBits con una advertencia roja en el número de factura y el número correspondiente visible en una factura sintética"><figcaption><p>Un campo que requiere atención junto a la factura usada para comprobar su valor.</p></figcaption></figure>
 
 ## Tabla extraída (líneas de detalle)
 

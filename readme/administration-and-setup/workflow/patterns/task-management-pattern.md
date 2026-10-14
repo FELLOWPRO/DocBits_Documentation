@@ -741,6 +741,7 @@ Day 5: IF still not completed:
 ### Nächste Schritte
 - E-Mail-Benachrichtigungen hinzufügen: [E-Mail-Leitfaden](../then/action/send-email-groups-guide.md)
 - Komplexes Routing umsetzen: [Entscheidungslogik-Pattern](decision-logic-pattern.md)
+- Fehler bei Aufgaben beheben: [Fehlerbehandlung](#fehlerbehandlung) oben
 
 ---
 

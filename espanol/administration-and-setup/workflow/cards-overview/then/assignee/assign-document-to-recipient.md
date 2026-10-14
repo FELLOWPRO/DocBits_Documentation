@@ -1,6 +1,6 @@
 # Assign document to recipient
 
-<figure><img src="../../../../../.gitbook/assets/And1 (26).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Propósito:**
 

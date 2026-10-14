@@ -1,78 +1,68 @@
 # WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-overview-infographic.svg" alt="Resumen de WatchDog"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-infographic-es.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-en.png" alt="Infografía de WatchDog"><figcaption></figcaption></figure>
+**Installation and Settings**
 
-**WatchDog** es un servicio local basado en Windows que supervisa carpetas locales en busca de documentos entrantes, los carga en la nube de DocBits para su procesamiento y exporta los documentos terminados de vuelta a carpetas locales o a sistemas ERP.
+After downloading the WatchDog.exe file, search for Command Prompt → Run as administrator on your Windows device.
 
-## Funciones principales
+![](https://lh7-us.googleusercontent.com/a2kmyk7eD7HqZfPiLWmvSGFnpzg9oHejHe5TpE6gFwErFyJYYBB5BZjqopwr-cEqmlMvaW8-PgARZUGI9KMKHSkz-lU_C_w6aHrVA4Wqhwo8WBSqnBfVvCpSckqLu4PwUriGs1MxbKHBBkuQ2pPaVRM)
 
-* **Supervisión automática de carpetas** — vigila rutas locales y rutas de red UNC en busca de nuevos PDF
-* **Compatibilidad con varias configuraciones** — varias configuraciones de importación y exportación por instancia
-* **6 métodos de exportación** — Local Folder, Infor IDM, Infor BOD, ION API, GLS840MI, REST API
-* **Auto-Update** — actualizaciones automáticas de versión con reversión en caso de fallo
-* **Gestión remota** — reinicio, actualización y configuración desde la interfaz de DocBits
+Once this is opened, call the file by typing the path of where the WatchDog.exe file is stored on your device like below
 
-## Inicio rápido
+![](https://lh7-us.googleusercontent.com/W_jDgPVTtpEW96jR0w_ibnZGY2CVwF2nAN0nEjMW3liw10bgPGlADiVR_lWyEAlfGYRD--gSQMdEqboRlMW5TAEP6Ao3GOW-hP3tQimA58K9Uh-WNZf7i06YYNqk5_EgKERYkjMzPx1Xd56qH2Pw8wA)
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Pestaña General de WatchDog"><figcaption></figcaption></figure>
+Type install after the file path and press ENTER on your keyboard
 
-### 1. Descargue WatchDog
+![](https://lh7-us.googleusercontent.com/vZQxNIh_wY2SFTznxNTboFOSePmEMqXQMWbhsSoO45B_mIh_6C-yjfJ4SPleBIIV4p943XBN1E-3HJBgFXRRABVfDX9Ey-dnb9c5KYaNleOmE5x1ocK32zLQ4luc71rmcbv7V_dQ8pEtH_WoWZkN0fg)
 
-Descargue `WatchDog.exe` desde **Settings → Document Processing → WatchDog → General Tab** en la aplicación DocBits.
+You should receive the following error message as it will start the application in UI mode and there is no configuration present yet.
 
-### 2. Configure con la clave de API
+![](https://lh7-us.googleusercontent.com/HmudHszeaiAj3xIlb1Oz1IXPh3Kz1JovUvPjkr9UI7EwSGbGWRK7xVhUNwc9LGlt3t1RRVR0l7DFLfG_Ob2b8Yxd4DffLb27Hv3z22tzf9LqDVTn577CFV-4Bzs2P_vTsGDJvtNzf8XW0wPiaWLDj2o)
 
-Abra el **Símbolo del sistema como administrador** y ejecute:
+The application will automatically open up after installation. At the top, navigate to Einstellungen (Settings) and here you will see 2 separate sections.
 
-```powershell
-WatchDog.exe -api YOUR_API_KEY
-```
+**Folder settings (Ordner Einstellungen)**
 
-> **Nota:** La clave de API está disponible en los ajustes de DocBits, en la pestaña General de WatchDog. Con ella, WatchDog se conecta a su organización de DocBits.
+![](https://lh7-us.googleusercontent.com/8uSWIY8EJKPrKj9Zk5buY_ByE9fu2oE7mJ-shG1VB2n7QWyVLAfDfUFdj-Jv3hBq2ncf2Ls1Wh3Lm7Kf-TFqet7yFso2S6srnZev-yzVdKjUxtCMTt2IUtWvUwUU0LMGktA8ioBfIkkZGqG4f53yYHM)
 
-### 3. Instale como servicio de Windows
+This is where you will configure the file pathways for where the documents will be read and processed. The read pathway will be for the documents that you want WatchDog to extract and process, whereas the processed pathway will be used to indicate which documents from the read folder where extracted and processed.
 
-```powershell
-WatchDog.exe install
-WatchDog.exe start
-```
+**General settings (Allgemeine Einstellungen)**
 
-### 4. Cree configuraciones en DocBits
+![](https://lh7-us.googleusercontent.com/mTUxSXPBZi_TTtVEQbGQXyXNonkIuganpTjqaamkB7C7zZ7Qaodvf9Sl8nXjnp6ZpYNf8XOwvuk-MYYEyGkFcKB-SqC9lklBXehC-3jMI7G12tXqfa6ROWywPBFE4fy-p-DcuLo3QdZXy-1rjSzlu9s)
 
-Todas las configuraciones de importación y exportación se crean directamente en la **aplicación DocBits**:
+This is where you will configure your DocBits application with WatchDog. You will be required to enter your DocBits environment, API key and the document type (as indicated above). To add more than one document type, separate the names of the document types with a comma (INVOICE,DELIVERY-NOTE,PURCHASE-ORDER, etc.)
 
-**Settings → Document Processing → WatchDog → Configurations Tab**
+If an invalid configuration is entered for any of the fields, you will receive an error message like the one below.
 
-* **Import Configurations** — definen las carpetas vigiladas y los tipos de documento
-* **Export Configurations** — definen los destinos de exportación, las plantillas XSLT y los métodos de exportación
+![](https://lh7-us.googleusercontent.com/BIOMuVCPUojfwPVr-cJukzvoBdWdtxzj5XCXocWlZwbaXwkTpb4u5Gk84vKu-_Z5UxvZ2cq0asHs4aFRLklBrUOKA19d2R4nqsxyZjd3iJlh3y97f07OfzEyv6jl7JpnorANzdPIgyZfqwmCEYZOlek)
 
-> **Importante:** Las configuraciones de exportación requieren un **tipo de documento** (`doc_type`). Las configuraciones sin tipo de documento serán rechazadas.
+Once this is complete, go back to the Command Prompt area and re-run the WatchDog.exe file and this time it will be correctly installed due to the configurations now being present
 
-### 5. Inicio automático (opcional)
+![](https://lh7-us.googleusercontent.com/GqtwbyvQjjNb1u9DY_Eww2woOdK1nYMm0oRMFxEGWSP9oSYN51eu1kkWiDzenz1rHGLvYG-ocwosOK2bTM6ruXTI5co05kjV2HPGI-8TgEIBTVCPpTrvs37SKMk9eBWY0KEj9vCCyPeqXYgCVD0DDXw)
 
-Para iniciar WatchDog automáticamente al arrancar el sistema:
+To start the application is UI mode, run the following command
 
-1. Abra **Servicios** (`Win + R` → `services.msc`)
-2. Busque **WatchDog** en la lista
-3. Establezca **Tipo de inicio** en **Automático (inicio retrasado)**
+![](https://lh7-us.googleusercontent.com/LELZuaiuL8ukiKPE-pbezsOZAICffXxAomx6gSe0vOvYaIdkr8Sr7X2znc_Lb3G76bh11X6kGPizWzoA05L-nBwUcJV8NNLUgQuGOf0TyICmhyL4syhnZFGu82JP0a3dORlQXz9MnTA_f-8b6oy8v6g)
 
-## Referencia de comandos
+If you just want to start the application, run this command instead.
 
-| Comando | Descripción |
-| :--- | :--- |
-| `WatchDog.exe -api KEY` | Configura la clave de API y se conecta a DocBits |
-| `WatchDog.exe install` | Instala como servicio de Windows |
-| `WatchDog.exe start` | Inicia el servicio |
-| `WatchDog.exe stop` | Detiene el servicio |
-| `WatchDog.exe debug` | Se ejecuta en modo consola para la resolución de problemas |
-| `WatchDog.exe --version` | Muestra la versión actual |
-| `WatchDog.exe --list-folders` | Muestra las carpetas vigiladas configuradas |
-| `WatchDog.exe remove` | Desinstala el servicio |
+![](https://lh7-us.googleusercontent.com/yHiO-x4CPGIjC9hRx6o-Wr5lAYiwjGi0vNBp3faB91OYIqm8TTZcz3SVDgjSmq_7TN11aVCsNHoHV5sR0FHsA5DJqxJ74z3lAmXoaDkkMutl7yXj4fCoabX-9SwfsWJwOaooiVZhCvOKFXvJOCBicEA)
 
-## Más recursos
+**Auto Start**
 
-* [Instalación de WatchDog](watchdog-installation.md)
-* [Configuración de WatchDog](watchdog-v2-configuration.md)
-* [Preguntas frecuentes de administración de WatchDog](watchdog-admin-faq.md)
+In order to set up the WatchDog app in a manner that allows it to automatically start once you turn your system on.
+
+Simply open “Services” in the settings of your Windows machine.
+
+![](https://lh7-us.googleusercontent.com/IEqq96LGZ9lBz2E0ApDrTz5huYutY7G1DecXLwhkdIF0pS235RN9HIqcehuJvXv5tyLdOnobhM_VNeMFA7tnMhwvWCnFRU5G14cHWN1swA4ZYF1rjvKzZtFMaCK2MDsPebvIz3MejDwjiYEiQ-_BQyg)
+
+Search for WatchDog in the local services and open the service (double-click on the entry)
+
+![](https://lh7-us.googleusercontent.com/qOtVCqR-zytJw2zifnjHmW_s5Hl6ijJt72d3PRI_euZU0H3wA-QD69mSFOnyDEnCVJXblEeA_Zbh5iQsyPa8gPJ85TY8wz-Ir0aMd2SWoKizKw1G4yi9jOmtxZG7-9EZbOvborv45OASD6zSa6lLbAk)
+
+In the above menu you will have the following options for automatic starting:
+
+* Select Automatic, the service will start on boot
+* Automatic (Delayed Start), this will wait 2 minutes after boot to start the service

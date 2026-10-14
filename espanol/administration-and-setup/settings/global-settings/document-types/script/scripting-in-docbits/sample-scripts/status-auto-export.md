@@ -1,4 +1,4 @@
-# Auto-Exportacion por Condiciones
+# Auto-Exportación por Condiciones
 
 ## Que hace este script?
 
@@ -45,5 +45,5 @@ if any(s in supplier for s in auto_export_suppliers) and net_float < 500:
 
 ## Funciones Utilizadas
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer valores de campos
-- [update\_document\_status\_with\_doc\_id()](../business-logic-functions.md#update\_document\_status\_with\_doc\_id) — Cambiar estado del documento
+* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer valores de campos
+* [update\_document\_status\_with\_doc\_id()](../functions/business-logic-functions.md#update_document_status_with_doc_id) — Cambiar estado del documento

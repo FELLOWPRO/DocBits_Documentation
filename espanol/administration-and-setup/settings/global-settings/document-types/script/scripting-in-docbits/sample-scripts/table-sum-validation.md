@@ -1,4 +1,4 @@
-# Validacion de Suma de Tabla
+# Validación de Suma de Tabla
 
 ## Que hace este script?
 
@@ -60,14 +60,14 @@ if table:
 ## Explicacion Paso a Paso
 
 1. **Obtener tabla de factura** de `tables_dict`
-2. **Sumar todos los valores LINE_TOTAL** a traves de las filas de la tabla
+2. **Sumar todos los valores LINE\_TOTAL** a traves de las filas de la tabla
 3. **Comparar** la suma calculada con el monto neto extraido
 4. **Actualizar o marcar** — ya sea reemplazar el monto neto o marcarlo como invalido
 
 ## Funciones Utilizadas
 
-- [get\_column\_value()](../table-functions.md#get\_column\_value) — Leer valores de columna de filas
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer monto neto
-- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — Establecer monto corregido
-- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Marcar campo como invalido
-- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — Marcar campo como valido
+* [get\_column\_value()](../functions/table-functions.md#get_column_value) — Leer valores de columna de filas
+* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer monto neto
+* [set\_amount\_value()](../functions/field-functions.md#set_amount_value) — Establecer monto corregido
+* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Marcar campo como invalido
+* [set\_field\_as\_valid()](../functions/field-functions.md#set_field_as_valid) — Marcar campo como valido

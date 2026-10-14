@@ -1,26 +1,31 @@
-# Crear un nuevo Subtipo
+# Crear un nuevo subtipo
 
-## Aquí hay instrucciones paso a paso para crear un nuevo subtipo:
+Cree un subtipo de documento cuando un tipo de documento necesite sus propios ajustes de campos, su propio diseño de validación o sus propios scripts. Necesita acceso a **Ajustes → Tipos de Documento**.
 
-*   **Navegar al área de Configuración:** Inicie sesión en DocBits como administrador y navegue al área de Gestión de Tipos de Documentos.
+## 1. Abrir el tipo de documento
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_type_settings_nav.png" alt="Docbits Document Type Settings Nav"><figcaption></figcaption></figure>
+Abra **Ajustes → Tipos de Documento**. En la tarjeta del tipo de documento correspondiente, seleccione **Subtipos de documentos**. El ejemplo siguiente utiliza **Factura**; elija el tipo que corresponda a sus documentos. Los demás enlaces de la tarjeta llevan a los ajustes de todo el tipo de documento.
 
-*   **Seleccionar la opción para agregar un subtipo:** Haga clic en el botón "+ Nuevo" para agregar un nuevo subtipo.
+<figure><img src="../../../../.gitbook/assets/new-subtype-document-type-es.png" alt="Tarjeta Factura en los ajustes españoles Tipos de Documento, con el enlace Subtipos de documentos"><figcaption><p>Abra los subtipos del tipo de documento que desea configurar.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_add_subtype_button.png" alt="Docbits Add Subtype Button"><figcaption></figcaption></figure>
+## 2. Iniciar un nuevo subtipo
 
-*   **Nombrar el subtipo:** Ingrese un nombre descriptivo para el nuevo subtipo. Este nombre debe describir claramente el propósito del subtipo para que los usuarios puedan entender fácilmente qué tipo de documentos representa.
+En **Subtipos de documentos**, seleccione **+ Nuevo**. Los subtipos existentes aparecen en la lista; el menú **Actions** de tres puntos corresponde a una fila existente. Si **+ Nuevo** no responde al clic del ratón, enfoque el botón con el teclado y pulse **Enter**.
 
-<figure><img src="https://lh7-us.googleusercontent.com/hFxoJh9mFR52IbFtRGTstXUGjUc2u9fBzlya5kPj18REi9ampOKfek6NPaNje_fGash3brlAZkEw8MHqDPpNEPCvnb122xYiHMqwVzV35FQdoev8XLXiu7DogUuGjsoun51sum8Z8PLZo2xw9bvImRc" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-list-es.png" alt="Lista española Subtubos De Documentos con el botón Nuevo y un subtipo de ejemplo sintético"><figcaption><p>La organización de prueba de la documentación contiene únicamente subtipos de ejemplo sintéticos.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/EjBS5qKWAm0SoZhLkhT2KW1q5F89vZ6FCLZ2ZzvxfJPmVE9DyyAUXieHA_56guDbKsuEvNDY9DyA-uUMx8Q1UDMSohmhyIVnnLfZaPiXrVSGsXpnjEgtpF7GtOOiRX8VsXBpu2-3lpqc0zu2LdzIYZk" alt=""><figcaption></figcaption></figure>
+## 3. Nombrarlo y guardarlo
 
-*   **Configurar ajustes iniciales:** Establezca los ajustes iniciales para el nuevo subtipo, incluidos los campos predeterminados, las opciones y las plantillas a utilizar para este subtipo. Esto puede incluir agregar campos de metadatos específicos, especificar flujos de trabajo de aprobación o configurar permisos de usuario.
-*   **Realizar configuraciones opcionales:** Dependiendo de los requisitos de su empresa o la naturaleza de los documentos, puede realizar configuraciones adicionales para personalizar el nuevo subtipo a sus necesidades específicas. Esto puede incluir establecer valores predeterminados, reglas de validación o acciones personalizadas.
+Introduzca un **Name** con letras y guiones bajos y, a continuación, introduzca un **Título** descriptivo. Ambos campos son obligatorios. Los nombres de esta captura de pantalla son solo ejemplos. Seleccione **Guardar** para crear el subtipo, o **Cancelar** para salir sin crearlo.
 
-<figure><img src="https://lh7-us.googleusercontent.com/d3-6iNTABnLH9KbWlM1NMu8Nsy2-KbqTd2elHgZYF1jwZOKqP17qttUCD4j676VJN3t7J0I85wHjr8TIfv3UGgLVxNvV4ns2I82EfCKHbyfIAUA8ML6IbLzoLH4Ucn57XzgUNZLO9LeCLzlk_m-M3EQ" alt=""><figcaption><p>Acción</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-es.png" alt="Diálogo Crear un nuevo tipo de documento con Name, Título, Cancelar y Guardar en español"><figcaption><p>Solo se introducen Name y Título al crear el subtipo.</p></figcaption></figure>
 
-*   **Guardar el nuevo subtipo:** Una vez que haya ingresado toda la información requerida, guarde el nuevo subtipo para crearlo en el sistema de gestión documental.
+Después de guardar, el nuevo subtipo aparece en la lista. Para definir sus campos, su diseño o sus scripts, abra su menú **Actions** y siga [Configurar subtipos](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/settings/global-settings/document-types/configure-subtypes.md). Estos ajustes se realizan después de la creación, no en el diálogo **+ Nuevo**. La página [Configurar subtipos](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/settings/global-settings/document-types/configure-subtypes.md) explica las opciones Campos, Creador de diseño y Guiones de un subtipo existente.
 
-Después de que se crea el nuevo subtipo, los usuarios pueden agregar y administrar documentos de ese tipo de acuerdo con la configuración inicial que especificó. Asegúrese de informar a los usuarios sobre el nuevo subtipo y proporcione capacitación u orientación, si es necesario, para ayudarlos a usarlo de manera efectiva.
+## Hallazgos de traducción de la aplicación
+
+* El encabezado de columna de la lista de subtipos permanece en inglés **Name** en la interfaz española.
+* El encabezado del menú de fila permanece en inglés **Actions** en la interfaz española.
+* **Extraction** no está traducido en la tarjeta del tipo de documento.
+* El diálogo de creación usa **Crear un nuevo tipo de documento**, mientras el título de la página es «Crear un nuevo subtipo»: el diálogo no menciona «subtipo».
+* El texto de ayuda del campo muestra **El campo solo puede contener caracteres y subrayar**; «subrayar» es el verbo _subrayar_, no el sustantivo «guion bajo» (_underscore_).

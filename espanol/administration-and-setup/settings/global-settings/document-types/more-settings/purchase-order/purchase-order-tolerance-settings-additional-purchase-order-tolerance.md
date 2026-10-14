@@ -1,63 +1,63 @@
 # Ajuste de tolerancias de órdenes de compra / Tolerancia adicional de órdenes de compra
 
-## **Ajuste para configurar las tolerancias de órdenes de compra**&#x20;
+**Ajuste para configurar las tolerancias de órdenes de compra**
 
-Vaya a **Configuración → Configuración general → Tipos de documento → More Settings → Sección Purchase Order → PO Tolerance Setting**
+Ir a **Ajuste → Ajuste General → Tipos de Documentos → Más Configuraciones → Sección de Órdenes de Compra → Ajuste de Tolerancia de Órdenes de Compra**
 
-### **Cómo funciona**
+#### **Cómo Funciona**
 
-Cuando está habilitado, este ajuste permite definir tolerancias para la **Cantidad** y/o el **Precio unitario**. Estas tolerancias pueden establecerse como un porcentaje o como un valor fijo. Esto significa que una factura puede desviarse de la orden de compra (OC) dentro del rango de tolerancia especificado sin ser marcada como una discrepancia, lo que proporciona flexibilidad y garantiza un procesamiento fluido.
+Cuando está habilitada, esta Ajuste permite definir tolerancias para **Cantidad** y/o **Precio Unitario**. Estas tolerancias pueden establecerse como un porcentaje o como un valor fijo. Esto significa que una factura puede desviarse de la orden de compra (OC) dentro del rango de tolerancia especificado sin ser marcada como un desajuste, proporcionando flexibilidad mientras se asegura un procesamiento fluido.
 
 <mark style="color:red;">**NOTA**</mark>**:** Las tolerancias funcionan en ambas direcciones; es decir, el valor de la factura puede ser mayor o menor que el valor de la OC dentro del rango permitido.
 
-### **Configuración**
+#### **Configurándolo**
 
-1. **Habilite el ajuste:**
-   * Active PO Tolerance Setting con el botón de alternancia.
-2. **Configure las tolerancias:**
-   * Aparecerán cuatro campos:
-     * Un campo para el **importe de tolerancia de cantidad**.
-     * Un campo para el **importe de tolerancia de precio unitario**.
-   * Detrás de cada campo hay un menú desplegable donde puede seleccionar el tipo de tolerancia:
-     * **Percent:** Indica una tolerancia porcentual.
-     * **Value:** Indica un importe fijo en el que puede diferir el valor.
+* **Habilitar la Ajuste:**
+  * Activa la Ajuste de Tolerancia de OC usando el botón de alternancia.
+* **Configurar Tolerancias:**
+  * Aparecerán cuatro campos:
+    * Un campo para el **Monto de Tolerancia de Cantidad**.
+    * Un campo para el **Monto de Tolerancia de Precio Unitario**.
+  * Detrás de cada campo, hay un menú desplegable donde puedes seleccionar el tipo de tolerancia:
+    * **Porcentaje:** Indica una tolerancia porcentual.
+    * **Valor:** Indica un monto fijo por el cual el valor puede diferir.
 
-<figure><img src="../../../../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_po_tolerance_value_fixed.jpg" alt="DocBits Po Tolerancia Valor Fijo"><figcaption></figcaption></figure>
 
-### **Escenario de ejemplo:**
+**Escenario de Ejemplo:**
 
-* Supongamos que la **tolerancia de precio unitario** está establecida en **5 %**.
+* Supongamos que la **Tolerancia de Precio Unitario** está configurada en **5%**.
 * La orden de compra incluye dos líneas:
-  * **Línea 1:** Precio unitario = **$5.00**
-  * **Línea 2:** Precio unitario = **$2.00**
+  * **Línea 1:** Precio Unitario = **$5.00**
+  * **Línea 2:** Precio Unitario = **$2.00**
 * En la factura:
-  * **Línea 1:** El precio unitario se ajusta a **$4.80** (**dentro** de la tolerancia del 5 %).
-  * **Línea 2:** El precio unitario se ajusta a **$2.20** (**fuera** de la tolerancia del 5 %).
+  * **Línea 1:** El precio unitario se ajusta a **$4.80** (**dentro** de la tolerancia del 5%).
+  * **Línea 2:** El precio unitario se ajusta a **$2.20** (**fuera** de la tolerancia del 5%).
 * **Resultado:**
-  * La línea 1 **no se marca** como discrepancia porque $4.80 está dentro del 5 % de $5.00.
-  * La línea 2 **se marca** como discrepancia porque $2.20 supera la desviación permitida del 5 % respecto a $2.00. Ahora el usuario debe actuar para resolver la discrepancia antes de que la factura pueda seguir procesándose.
+  * La Línea 1 **no se marca** como un desajuste porque $4.80 está dentro del 5% de $5.00.
+  * La Línea 2 **se marca** como un desajuste porque $2.20 excede la desviación permitida del 5% de $2.00. El usuario ahora debe tomar medidas para resolver el desajuste antes de que la factura pueda ser procesada.
 
-<figure><img src="../../../../../../.gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_po_tolerance_mismatch_example.jpg" alt="DocBits Po Tolerancia Desajuste Ejemplo"><figcaption></figcaption></figure>
 
-## Ajuste para configurar la tolerancia adicional de órdenes de compra
+### **Ajuste** para configurar la **Ajuste** Adicional de Tolerancia de Órdenes de Compra
 
-Vaya a **Configuración → Configuración general → Tipos de documento → More Settings → Sección Purchase Order → Additional PO Tolerance Setting**
+Ir a **Ajuste → Ajuste General → Tipos de Documentos → Más Configuraciones → Sección de Órdenes de Compra → Ajuste de tolerancia de PO adicional**
 
-### **Cómo funciona**
+#### **Cómo Funciona**
 
-Cuando está habilitado, este ajuste permite definir tolerancias para el **Flete**, los **Cargos** y/o el **Impuesto**. Estas tolerancias pueden establecerse como un porcentaje o como un valor fijo, lo que permite que las facturas varíen ligeramente respecto a los valores de la OC sin ser marcadas como discrepancias. Esto proporciona flexibilidad adicional y garantiza que las diferencias menores no interrumpan el flujo de trabajo.
+Cuando está habilitada, esta Ajuste permite definir tolerancias para **Flete**, **Cargos** y/o **Impuesto**. Estas tolerancias pueden establecerse como un porcentaje o como un valor fijo, permitiendo que las facturas varíen ligeramente de los valores de la OC sin ser marcadas como desajustes. Esto proporciona flexibilidad adicional y asegura que las diferencias menores no interrumpan el flujo de trabajo.
 
-<mark style="color:red;">**NOTA**</mark>**:** Al igual que los ajustes de tolerancia estándar, estas tolerancias se aplican en ambas direcciones, permitiendo aumentos o disminuciones dentro de los límites establecidos.
+<mark style="color:red;">**NOTA**</mark>: Al igual que las Ajuste de tolerancia estándar, estas tolerancias se aplican en ambas direcciones, permitiendo aumentos o disminuciones dentro de los límites establecidos.
 
-### **Configuración**
+#### **Configurándolo**
 
-1. **Habilite el ajuste:**
-   * Active Additional PO Tolerance Setting con el botón de alternancia.
-2. **Configure las tolerancias:**
-   * Se mostrarán seis campos:
-     * Un campo para cada uno de los importes de tolerancia de **Flete**, **Cargos** e **Impuesto**.
-   * Cada campo tiene un menú desplegable donde puede elegir el tipo de tolerancia:
-     * **Percent:** La tolerancia se define como un porcentaje.
-     * **Value:** La tolerancia se define como un importe fijo.
+* **Habilitar la Ajuste:**
+  * Activa la Ajuste Adicional de Tolerancia de OC usando el botón de alternancia.
+* **Configurar Tolerancias:**
+  * Seis campos se volverán visibles:
+    * Un campo para cada uno de los montos de tolerancia para **Flete**, **Cargos** e **Impuesto**.
+  * Cada campo tiene un menú desplegable correspondiente donde puedes elegir el tipo de tolerancia:
+    * **Porcentaje:** La tolerancia se define como un porcentaje.
+    * **Valor:** La tolerancia se define como un monto fijo.
 
-<figure><img src="../../../../../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_po_tolerance_settings.jpg" alt="DocBits Po Tolerancia Configuración"><figcaption></figcaption></figure>

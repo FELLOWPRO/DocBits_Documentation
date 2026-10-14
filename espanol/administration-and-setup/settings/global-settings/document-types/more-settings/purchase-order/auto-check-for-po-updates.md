@@ -2,13 +2,11 @@
 
 #### Dónde Encontrarlo
 
-Ir a **Ajuste** → **Ajuste General** → **Tipos de Documentos** → **Más Configuraciones** → **Sección de Órdenes de Compra** → **Verificación Automática de Actualizaciones de OC**&#x20;
+Ir a **Ajuste** → **Ajuste General** → **Tipos de Documentos** → **Más Configuraciones** → **Sección de Órdenes de Compra** → **Verificación Automática de Actualizaciones de OC**
 
 Activa el botón para habilitar esta configuración.
 
 <figure><img src="../../../../../../.gitbook/assets/docbits_po_auto_check_settings.jpg" alt="DocBits Po Auto Verificación Configuración"><figcaption></figcaption></figure>
-
-
 
 Cómo Funciona
 
@@ -18,4 +16,4 @@ Cuando está habilitada, el sistema proporciona un **indicador visual** en la pa
 
 Para refrescar la orden de compra, haz clic en el **ícono de refresco** junto al número de la orden de compra (ver imagen a continuación).
 
-​![](<../../../../../../.gitbook/assets/image (5).png>)
+​

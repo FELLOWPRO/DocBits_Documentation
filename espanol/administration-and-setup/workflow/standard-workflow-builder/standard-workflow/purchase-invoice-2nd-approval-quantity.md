@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Quantity
 
-<figure><img src="../../../../.gitbook/assets/And1 (32).png" alt="DocBits Aprobación Factura 4"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="DocBits Aprobación Factura 4"><figcaption></figcaption></figure>
 
 Este título indica que la regla se refiere específicamente al tratamiento de las facturas de compra durante una fase de aprobación secundaria, con énfasis en la verificación de la exactitud de las cantidades indicadas.
 

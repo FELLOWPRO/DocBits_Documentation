@@ -57,11 +57,11 @@ El Diseñador de árboles de decisión te permite configurar las reglas que rige
 
 Este árbol de decisión evalúa el campo **Total Amount** y lo asigna a distintos grupos según condiciones predefinidas. Cada regla compara el importe total con un valor específico y, según qué condición sea verdadera, se devuelve el **Group** correspondiente.
 
-<figure><img src="../../../../.gitbook/assets/And1 (26).png" alt="Ejemplo de árbol de decisión con importe total"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Ejemplo de árbol de decisión con importe total"><figcaption></figcaption></figure>
 
 Este árbol de decisión evalúa dos condiciones clave para determinar qué grupo debe asignarse: **Total Amount** y **Warehouse Status**. El árbol utiliza umbrales basados en el importe total para definir qué grupo se devuelve, con la distinción adicional de si el almacén está designado como "Warehouse Main", "Warehouse Sub" o "Not Warehouse Main".
 
-<figure><img src="../../../../.gitbook/assets/And1 (26).png" alt="Ejemplo de árbol de decisión con estado de almacén"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Ejemplo de árbol de decisión con estado de almacén"><figcaption></figcaption></figure>
 
 Cada regla se evalúa de forma secuencial.
 
@@ -88,23 +88,23 @@ La política del árbol de decisión define cómo se procesan varias reglas dent
 
     * En el diseñador de árboles de decisión, busca el botón **Test**.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (26).png" alt="Botón de prueba del árbol de decisión" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Botón de prueba del árbol de decisión" width="563"><figcaption></figcaption></figure>
 2.  **Abre la ventana emergente de prueba:**
 
     * Haz clic en el botón **Test**.
     * Aparecerá una ventana emergente con campos de entrada que se corresponden con los criterios utilizados en el árbol de decisión.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (26).png" alt="Ventana emergente de prueba del árbol de decisión" width="421"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Ventana emergente de prueba del árbol de decisión" width="421"><figcaption></figcaption></figure>
 3. **Proporciona valores de entrada:**
    *   Introduce valores en los campos de entrada para simular un escenario real.
 
-       <figure><img src="../../../../.gitbook/assets/And1 (26).png" alt="Entrada de prueba del árbol de decisión" width="428"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/And1.png" alt="Entrada de prueba del árbol de decisión" width="428"><figcaption></figcaption></figure>
 4.  **Evalúa los resultados:**
 
     * Tras introducir los datos de entrada, el árbol los procesa según la política elegida.
     * El sistema resalta la regla o reglas que coinciden con los datos de entrada proporcionados.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (26).png" alt="Resultado de prueba del árbol de decisión" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Resultado de prueba del árbol de decisión" width="563"><figcaption></figcaption></figure>
 5. **Revisa los comentarios cuando no haya coincidencia:**
    * Si no se resalta ninguna regla, el sistema mostrará comentarios que explican por qué no coincidió ninguna regla.
    * Usa estos comentarios para ajustar los datos de entrada o revisar la configuración del árbol en busca de posibles problemas.

@@ -10,7 +10,6 @@ Esta función te ayuda a gestionar y conciliar los números de artículo entre t
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
-
 1. **Emparejamiento Manual:**
    * La primera vez que encuentres una discrepancia entre tu número de artículo y el número de artículo de tu proveedor, necesitas emparejarlos manualmente.
    * Puedes hacerlo ingresando el número de artículo del proveedor correcto correspondiente a tu número de artículo interno.
@@ -26,7 +25,7 @@ Esta función te ayuda a gestionar y conciliar los números de artículo entre t
 * **Acción:** Opciones para gestionar los mapeos, como eliminar mapeos incorrectos.
 
 {% hint style="info" %}
-Consulta también la [Sección de Administración](broken-reference)
+Consulta también la [Sección de Administración](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/end-user-and-partner-section/end-user-section/purchase-order-matching/broken-reference/README.md)
 {% endhint %}
 
 ## **Beneficios**

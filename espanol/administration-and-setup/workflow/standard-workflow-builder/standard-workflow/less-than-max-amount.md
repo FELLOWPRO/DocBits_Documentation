@@ -1,6 +1,6 @@
 # Less than Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (28).png" alt="DocBits Factura"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="DocBits Factura"><figcaption></figcaption></figure>
 
 Este título sugiere que la regla o condición que se está configurando está diseñada para gestionar las facturas cuyo importe total es menor o igual que un importe máximo especificado.
 

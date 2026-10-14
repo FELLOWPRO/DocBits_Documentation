@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Quantity Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt="DocBits Compra Pedido Exportar 6"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="DocBits Compra Pedido Exportar 6"><figcaption></figcaption></figure>
 
 Este título indica que la regla está configurada para gestionar la segunda fase de aprobación de las facturas de compra, con énfasis en los detalles de cantidad, garantizando que las cantidades de la factura coincidan con las del pedido de compra original.
 

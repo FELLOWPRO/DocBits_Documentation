@@ -3,8 +3,6 @@
 Esta guía te lleva a través de la conexión de la **base de datos de solo lectura de DocBits a Power BI Desktop** utilizando el **controlador ODBC de PostgreSQL**. Cubre la instalación del controlador, configuración de ODBC, integración con Power BI y actualización programada.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
-{% endembed %}
-
 
 ### 1. Instalar el controlador ODBC de PostgreSQL
 
@@ -76,5 +74,3 @@ Esta guía te lleva a través de la conexión de la **base de datos de solo lect
 * Más información [aquí](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
 
 ### 7. Ejemplos de paneles y vistas de datos
-
-![](<../../.gitbook/assets/example_4 (1).avif>)![](<../../.gitbook/assets/example_3 (1).avif>)![](<../../.gitbook/assets/example_2 (1).avif>)![](<../../.gitbook/assets/example_1 (1).avif>)

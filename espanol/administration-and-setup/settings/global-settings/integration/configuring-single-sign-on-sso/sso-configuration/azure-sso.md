@@ -1,5 +1,7 @@
 ---
-description: Usar DocBits con tu inicio de sesión de Microsoft sin utilizar una contraseña (independiente)
+description: >-
+  Usar DocBits con tu inicio de sesión de Microsoft sin utilizar una contraseña
+  (independiente)
 ---
 
 # Azure SSO
@@ -21,7 +23,7 @@ Realiza los siguientes pasos para añadir SAML SSO en Azure AD:
 
 * Haz clic en \`+ Create your own application\`
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure></div>
 
 * Introduce un nombre para tu aplicación. Mantén el resto de las selecciones predeterminadas.
 
@@ -49,7 +51,7 @@ A continuación, asigna usuarios o grupos a la configuración de SSO.
 
 ![](https://docbits.com/wp-content/uploads/2023/09/DocBits_Azure_8.png)
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (216) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure></div>
 
 * Ve a la lista de la vista \`Groups\` y busca los grupos asignados.
 

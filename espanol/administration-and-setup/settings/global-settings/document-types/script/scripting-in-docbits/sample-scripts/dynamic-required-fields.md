@@ -1,4 +1,4 @@
-# Campos Obligatorios Dinamicos
+# Campos Obligatorios Dinámicos
 
 ## Que hace este script?
 
@@ -53,8 +53,8 @@ else:
 
 ## Funciones Utilizadas
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer campo de control
-- [set\_is\_required()](../field-functions.md#set\_is\_required) — Establecer campo como obligatorio/opcional
-- [set\_is\_hidden()](../field-functions.md#set\_is\_hidden) — Mostrar/ocultar campos
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Establecer campo de categoria
-- [delete\_tables()](../table-functions.md#delete\_tables) — Eliminar tablas para facturas de costos
+* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer campo de control
+* [set\_is\_required()](../functions/field-functions.md#set_is_required) — Establecer campo como obligatorio/opcional
+* [set\_is\_hidden()](../functions/field-functions.md#set_is_hidden) — Mostrar/ocultar campos
+* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Establecer campo de categoria
+* [delete\_tables()](../functions/table-functions.md#delete_tables) — Eliminar tablas para facturas de costos

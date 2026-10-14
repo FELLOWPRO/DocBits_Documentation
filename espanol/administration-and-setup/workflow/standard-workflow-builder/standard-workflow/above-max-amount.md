@@ -1,6 +1,6 @@
 # Above Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (27).png" alt="DocBits Factura 2"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="DocBits Factura 2"><figcaption></figcaption></figure>
 
 Este título indica que la regla está diseñada para gestionar los casos en los que el total de la factura es mayor que el importe máximo que un aprobador está autorizado a tramitar.
 

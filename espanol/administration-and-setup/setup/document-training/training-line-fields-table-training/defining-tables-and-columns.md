@@ -1,74 +1,51 @@
-# Definir tablas y columnas
+# Definición de Tablas y Columnas
 
-Utilice esta guía para definir manualmente tablas y columnas para la extracción de líneas de artículo en DocBits. Resulta especialmente útil cuando la detección automática no captura por completo la estructura de la tabla o cuando necesita añadir campos personalizados.
+## Definir Tablas
 
-### 1. Acceda a la vista de extracción de tablas
+Para definir tablas y columnas en un documento, por favor importe un documento, ábralo y vaya a la vista de extracción de tablas como ya se conoce (a través de "Ítems de línea").
 
-Abra su documento en DocBits y haga clic en el botón **“Table Training”** para entrar en la vista de extracción de tablas.
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_1.png)
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
+Terminarás en la siguiente pantalla donde puedes activar el Modo de Entrenamiento:
 
-### 2. Active el modo de entrenamiento
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_2.png)
 
-Para definir o modificar tablas y columnas manualmente, haga clic en **“TRAINING MODE”.**
+A través del botón "Editar" se activará el modo de selección de tabla y podrás editar el documento mostrado en el lado izquierdo:
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_3.png)
 
-### 3. Defina el área de la tabla
+En general, ahora puedes utilizar la funcionalidad de autodetección de tablas y el sistema definirá automáticamente las tablas en el documento:
 
-Después de entrar en el modo de entrenamiento, puede definir dónde se encuentra la tabla en el documento. Tiene dos opciones:
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_4.png)
 
-#### Opción 1: usar la detección automática
+Si el sistema no puede encontrar las tablas automáticamente, puedes definir manualmente las tablas en el documento como se muestra en el video a continuación:
 
-Haga clic en el botón **“Auto-Detect Tables”** para que DocBits intente identificar por sí mismo el área de la tabla.
+## Definir Columnas
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
+Una vez que las tablas estén definidas, puedes definir manualmente las columnas a través del siguiente botón:
 
-Si la detección es correcta, el contorno de la tabla se mostrará automáticamente. A continuación, puede pasar a definir las columnas.
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_5.png)
 
-#### Opción 2: definir la tabla manualmente
+Define y ordena las columnas arrastrándolas y soltándolas en el documento. Repite esto para las tablas en las otras páginas también. Como alternativa, si las tablas son iguales en cada página, puedes usar el siguiente botón para usar la misma columna para todas las tablas definidas en el documento. Esta funcionalidad copia las columnas que has definido a todas las demás páginas también:
 
-Si la detección automática falla o no es precisa, puede definir la tabla manualmente:
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_6.png)
 
-1. Haga clic en el botón **“Edit”** para activar el modo de selección de tablas.
-2. Dibuje un rectángulo alrededor del área de la tabla en la vista del documento de la izquierda.
+Si el documento es muy confuso, se puede hacer zoom para acercar o alejar utilizando la funcionalidad de "Acercar" y "Alejar". Esto es útil, por ejemplo, cuando hay mucha información junta y esto dificulta definir las columnas:
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_7.png)
 
-### 4. Añada y defina columnas
+Si definiste una columna por error, puedes seleccionarla haciendo clic en ella y eliminarla a través del siguiente botón:
 
-Una vez definidas las tablas, puede definir las columnas manualmente mediante el siguiente botón:\
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_8.png)
 
+Nota: El botón solo es visible si la columna está seleccionada.
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
+Si has terminado de definir todas las tablas y todas las columnas en tu documento, utiliza el botón "Guardar" para activar tus cambios y extraer los datos del documento:
 
-Defina y ordene las columnas arrastrando y soltando sobre el documento. Repita este paso también para las tablas de las demás páginas. Como alternativa, si las tablas son iguales en cada página, puede utilizar el siguiente botón para usar las mismas columnas en todas las tablas definidas en el documento. Esta función copia las columnas que ha definido también a todas las demás páginas:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
-
-Utilice la función de **zoom** para definir mejor las columnas en documentos saturados o complejos, por ejemplo, cuando hay mucha información muy junta y resulta difícil definir las columnas:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
-
-Si ha definido una columna por error, puede seleccionarla haciendo clic en ella y eliminarla mediante el siguiente botón:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
-
-<mark style="color:red;">**Nota**</mark>: el botón solo es visible si la columna está seleccionada.
-
-Cuando haya terminado de definir todas las tablas y todas las columnas de su documento, utilice el botón “Save” para activar los cambios y extraer los datos del documento:
-
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_9.png)
 
 Los datos de todas las áreas definidas se extraerán y se mostrarán en el lado derecho:
 
-<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
+En la siguiente sección aprenderás cómo ajustar los datos que se han extraído.
 
-### 6. Guarde y extraiga
-
-Haga clic en **“Save Rules”** una vez definidas todas las tablas y columnas.
-
-* Esto indica a DocBits dónde encontrar los datos de la tabla para este proveedor concreto.
-* La próxima vez que se cargue un documento del mismo proveedor, DocBits extraerá automáticamente la tabla con las reglas guardadas.
-
-<mark style="color:red;">**Nota**</mark>: este entrenamiento es específico de cada proveedor. No se aplicará a documentos de otros proveedores.
+<figure><img src="https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_10.png" alt="" width="563"><figcaption></figcaption></figure>

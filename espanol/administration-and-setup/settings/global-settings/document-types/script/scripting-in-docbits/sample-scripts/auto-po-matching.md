@@ -1,4 +1,4 @@
-# Coincidencia Automatica de OC
+# Coincidencia Automática de OC
 
 ## Que hace este script?
 
@@ -39,12 +39,13 @@ if po_nr:
 ## Que sucede despues de la coincidencia?
 
 El `document_data` se actualiza con:
-- `po_items` — Partidas de OC coincidentes
-- `po_match_status` — Resultado de coincidencia (`"matched"`, `"partially_matched"`, etc.)
-- `po_multi_matched` — Si se coincidieron multiples OCs
+
+* `po_items` — Partidas de OC coincidentes
+* `po_match_status` — Resultado de coincidencia (`"matched"`, `"partially_matched"`, etc.)
+* `po_multi_matched` — Si se coincidieron multiples OCs
 
 ## Funciones Utilizadas
 
-- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer valor del campo
-- [set\_field\_value()](../field-functions.md#set\_field\_value) — Escribir numero de OC limpio
-- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — Activar coincidencia de OC
+* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer valor del campo
+* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Escribir numero de OC limpio
+* [auto\_po\_match\_for\_purchase\_orders()](../functions/business-logic-functions.md#auto_po_match_for_purchase_orders) — Activar coincidencia de OC

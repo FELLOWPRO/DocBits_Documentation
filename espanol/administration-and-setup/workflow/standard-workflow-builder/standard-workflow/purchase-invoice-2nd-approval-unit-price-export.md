@@ -1,6 +1,6 @@
 # Purchase Invoice - 2nd Approval Unit Price Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (31).png" alt="DocBits Compra Pedido Exportar 5"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="DocBits Compra Pedido Exportar 5"><figcaption></figcaption></figure>
 
 Este título indica que la regla está configurada para gestionar la segunda fase de aprobación de las facturas de compra, con énfasis en el precio unitario, garantizando que coincida con los términos acordados.
 

@@ -1,13 +1,13 @@
-# Creación de un archivo de mapeo IDM
+# Creando un Archivo de Mapeo IDM
 
-## Campos del archivo de mapeo IDM
+## Campos Requeridos para el Archivo de Mapeo IDM
 
 Al crear un archivo de mapeo IDM, se requieren los siguientes campos:
 
-* **Definición del tipo de documento**
-  * Asegúrese de que el código del tipo de documento en DocBits coincida con el nombre utilizado en la URL de la configuración de campos, igual que en el archivo de mapeo BOD.
-  * Verifique que el nombre del tipo de documento en IDM se corresponda con la configuración de su sistema. Por ejemplo, en M3 puede ser **M3_SupplierInvoice**, mientras que en LN será distinto según su configuración.
-    * Encontrará una guía sobre cómo navegar en IDM en Document Manager en IDM, en esta misma página.
+* **Definición del Tipo de Documento**
+  * Asegúrese de que el código del tipo de documento en DocBits coincida con el nombre utilizado en la URL de la configuración del campo, similar al Archivo de Mapeo BOD.
+  * Verifique que el nombre del tipo de documento en IDM esté alineado con la configuración de su sistema. Por ejemplo, en M3, puede ser **M3\_SupplierInvoice**, mientras que en LN, será diferente según su configuración.
+    * Una guía sobre cómo navegar en IDM se puede encontrar en el Administrador de Documentos en IDM en esta página.
 
 ```properties
 #Define Name of document
@@ -16,20 +16,18 @@ Al crear un archivo de mapeo IDM, se requieren los siguientes campos:
 INVOICE=M3_SupplierInvoice
 ```
 
-*   **Valores estáticos**
+* **Valores Estáticos**
+  *   Primero, defina todos los valores estáticos en una sola línea utilizando la clave **Static\_Values**:
 
-    * Primero, defina todos los valores estáticos en una sola línea con la clave **Static_Values**:
+      ```properties
+      Static_Values=FileNameSeparator,ACLString
+      ```
+  *   Luego, asigne valores a cada variable estática utilizando el prefijo **SV\_**:
 
-    ```properties
-    Static_Values=FileNameSeparator,ACLString
-    ```
-
-    * Después, asigne valores a cada variable estática con el prefijo **SV_**:
-
-    ```properties
-    SV_FileNameSeparator=_ 
-    SV_ACLString=Public
-    ```
+      ```properties
+      SV_FileNameSeparator=_
+      SV_ACLString=Public
+      ```
 
 ```properties
 #Define mappings for the static values
@@ -40,45 +38,37 @@ SV_FileNameSeparator=_
 SV_ACLString=Public
 ```
 
-* **Campos estáticos**
-  * Los campos estáticos sirven para establecer valores concretos e inmutables en todos los documentos. Estos valores se mantienen iguales en todos los documentos.
-  *   Comience enumerando todos los campos **Static** utilizados, indicando el **IDMAttributeId** y el tipo.
-
-      ```properties
-      Static_Fields=BOD_AccountingEntityID:STRING,M3_Company:STRING,M3_Division:STRING
-      ```
-  *   Después, asigne valores estáticos a cada campo con el prefijo `SF_`:
-
-      ```properties
-      SF_BOD_AccountingEntityID=921_VVB
-      SF_M3_Company=921
-      SF_M3_Division=VVB
-      ```
+* **Definición del Campo ACL**
 
 ```properties
-#Define mappings for the static fields
-#Example: Static_Fields=<IDMAttributeId>:<type>
-Static_Fields=BOD_AccountingEntityID:STRING,M3_Company:STRING,M3_Division:STRING
-#Example: SF_<IDMAttributeId> = StaticValue
-#SF_MDS_EntityType=InforERPEnterpriseFinancialsReceivedInvoice
-SF_BOD_AccountingEntityID=921_VVB
-SF_M3_Company=921
-SF_M3_Division=VVB
+#Define ACL Field value
+#Example: ACL_Fields= Concatenation of other defined fields that together should be a valid ACL in IDM
+ACL_Fields=SV_ACLString
 ```
 
-* **Campos de índice**
-  *   Comience enumerando todos los campos de índice utilizados, indicando el **IDMAttributeId** y el tipo.
+* **Nombre Buscable en IDM**
+  * El **Nombre PDF Buscable** será el nombre del documento en IDM.
 
-      ```properties
-      Index_Fields=delivery_note_id:STRING,delivery_date:STRING,CORRELATION_ID:STRING,ACCOUNTING_ENTITY:STRING,GROUP_ACCOUNTING_ENTITY:STRING,supplier_name:STRING,supplier_id:STRING,purchase_order:STRING
-      ```
-  *   Cada campo mapeado sigue el formato:
+```properties
+#Define Resource Mapping
+#Example: Searchable_PDF_Name= Concatenation of other defined fields
+Searchable_PDF_Name=IF_INVOICE_ID
+```
 
-      ```properties
-      IF_<DocBitsFieldID> = <IDMAttributeId>
-      ```
+## Mapeo de Campos
 
-      * Confirme que **IndexFieldFromDocBits = IDMAttributeID**, de modo que el mapeo de campos en DocBits se corresponda con los atributos en IDM (Document Type → Attributes).\        Encontrará una guía sobre cómo navegar en IDM en Document Manager en IDM, en esta misma página.
+*   Comience enumerando todos los campos de índice utilizados, especificando el ID y el tipo de campo.
+
+    ```properties
+    Index_Fields=INVOICE_ID:STRING,INVOICE_DATE:STRING,COMPANY:STRING,DIVISION:STRING,DIVISION_NO:STRING,CORRELATION_ID:STRING,SUPPLIER_ID:STRING,SUPPLIER_NAME:STRING
+    ```
+*   Cada campo mapeado sigue el formato:
+
+    ```properties
+    IF_<DocBitsFieldID> = <IDMAttributeId>
+    ```
+
+    * Confirme que **IndexFieldFromDocBits = IDMAttributeID**, asegurándose de que el mapeo de campos en DocBits esté alineado con los atributos en IDM (Tipo de Documento → Atributos). Una guía sobre cómo navegar en IDM se puede encontrar en el Administrador de Documentos en IDM en esta página.
 
 ```properties
 #Define index fields
@@ -95,44 +85,25 @@ IF_SUPPLIER_ID=BOD_RemitToPartyID
 IF_SUPPLIER_NAME=BOD_SupplierPartyID
 ```
 
-* **Definición del campo ACL**
+![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FT2n2w4uDCJvv7CJ5zrdk%2Fuploads%2FzT9MMKlFCSBJtRW1pf4s%2Fimage.png?alt=media\&token=ea2f6ae2-f9f2-48d3-98e3-ed06dcda69f1)
 
-```properties
-#Define ACL Field value
-#Example: ACL_Fields= Concatenation of other defined fields that together should be a valid ACL in IDM
-ACL_Fields=SV_ACLString
+### Exportación de archivos XML y EDI
+
+Para exportar el archivo XML/EDI original junto con el PDF generado, necesitas modificar el archivo de Mapeo IDM, en la configuración de exportación. Primero, actualiza la sección **Static\_Values** agregando el prefijo y la extensión del archivo. Después de eso, define el mapeo real para asegurar la correcta configuración de exportación.
+
+Si ya está configurada una exportación para facturas a IDM, el PDF generado ya debería estar incluido en la exportación. Si no necesitas el archivo XML, puedes omitir la siguiente parte. Sin embargo, si necesitas el archivo XML, sigue los pasos a continuación.
+
+#### Actualizando los Valores Estáticos:
+
+Encuentra el campo **Static\_Values** y agrega lo siguiente:
+
 ```
-
-* **Nombre con capacidad de búsqueda en IDM**
-  * El **Searchable PDF Name** será el nombre del documento en IDM.
-
-```properties
-#Define Resource Mapping
-#Example: Searchable_PDF_Name= Concatenation of other defined fields
-Searchable_PDF_Name=IF_INVOICE_ID 
-```
-
-
-
-<figure><img src="../../.gitbook/assets/idm_mapping_file_example.png" alt="Ejemplo de archivo de mapeo IDM"><figcaption></figcaption></figure>
-
-## Exportación de archivos XML y EDI
-
-Para exportar el archivo XML/EDI original junto con el PDF generado, debe modificar el archivo de mapeo IDM en la configuración de exportación. Primero, actualice la sección **Static_Values** añadiendo el prefijo y la extensión del archivo. Después, defina el mapeo real para garantizar la configuración de exportación correcta.
-
-Si ya hay una exportación de facturas a IDM configurada, el PDF generado ya debería estar incluido en la exportación. Si no necesita el archivo XML, puede omitir la siguiente parte. Sin embargo, si sí lo necesita, siga los pasos que se indican a continuación.
-
-### Actualización de los valores estáticos:
-
-Busque el campo **Static_Values** y añada lo siguiente:a
-
-```properties
 ,EDI_FILE_PREFIX,XML_FILE_PREFIX,PDF_FILE_PREFIX,PDF_FILE_EXTENSION,EDI_FILE_EXTENSION,XML_FILE_EXTENSION
 ```
 
-Después, añada las siguientes entradas debajo de **SV_ACLString**:
+Luego, agrega las siguientes entradas debajo de **SV\_ACLString**:
 
-```properties
+```
 SV_EDI_FILE_PREFIX=EDI_810_
 SV_XML_FILE_PREFIX=XML_810_
 SV_PDF_FILE_PREFIX=INV_EDI_
@@ -141,31 +112,34 @@ SV_EDI_FILE_EXTENSION=.xml
 SV_XML_FILE_EXTENSION=.xml
 ```
 
-<figure><img src="../../.gitbook/assets/static_values_configuration_example.png" alt="Ejemplo de configuración de valores estáticos"><figcaption></figcaption></figure>
+Después de eso, agrega el mapeo real, asegurándote de que el tipo de documento de exportación corresponda al tipo de proveedor IDM.
 
-### Mapeo XML
+![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F6k18wa4zSaSZkvfEKMwW%252Fimage.png%3Falt%3Dmedia%26token%3De6c49d36-44b9-4d18-9d22-63d30205dbd5\&width=768\&dpr=4\&quality=100\&sign=3ac8bc32\&sv=2)
 
-Añada el siguiente mapeo al final del archivo:
+#### Mapeo XML
 
-<pre class="language-properties"><code class="lang-properties"><strong>EMBEDDED_FILES_EXPORT = TRANSFORMED, XML
-</strong>EFE_TRANSFORMED_SOURCE_NAME = Transformed.xml
+Agrega el siguiente mapeo al final del archivo:
+
+```
+EMBEDDED_FILES_EXPORT = TRANSFORMED, XML
+EFE_TRANSFORMED_SOURCE_NAME = Transformed.xml
 EFE_TRANSFORMED_EXPORT_DOC_TYPE = M3_SupplierInvoice
 EFE_TRANSFORMED_EXPORT_FILENAME = SV_XML_FILE_PREFIX+IF_INVOICE_ID+SV_XML_FILE_EXTENSION
 
 EFE_XML_SOURCE_NAME = XML_DOCUMENT.xml
 EFE_XML_EXPORT_DOC_TYPE = M3_SupplierInvoice
 EFE_XML_EXPORT_FILENAME = SV_XML_FILE_PREFIX+IF_INVOICE_ID+SV_XML_FILE_EXTENSION
-</code></pre>
+```
 
-Nota: asegúrese de que **export_doc_type** esté configurado con el tipo de factura de IDM. En este ejemplo está configurado para **M3**.
+Nota: Asegúrate de que **export\_doc\_type** esté configurado al tipo de factura IDM. En este ejemplo, está configurado para **M3**.
 
-<figure><img src="../../.gitbook/assets/xml_mapping_example.png" alt="Ejemplo de mapeo XML"><figcaption></figcaption></figure>
+![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FlXToG368VI7Fc7HDguCn%252Fimage.png%3Falt%3Dmedia%26token%3Dcb153977-34e1-4f5f-a416-60e3141b4aca\&width=768\&dpr=4\&quality=100\&sign=b7d9585c\&sv=2)
 
-### Mapeo EDI
+#### Mapeo EDI
 
-Añada el siguiente mapeo al final del archivo:
+Agrega el siguiente mapeo al final del archivo:
 
-```properties
+```
 EMBEDDED_FILES_EXPORT = TRANSFORMED, EDI
 EFE_TRANSFORMED_SOURCE_NAME = Transformed.xml
 EFE_TRANSFORMED_EXPORT_DOC_TYPE = M3_SupplierInvoice
@@ -176,28 +150,28 @@ EFE_EDI_EXPORT_DOC_TYPE = M3_SupplierInvoice
 EFE_EDI_EXPORT_FILENAME = SV_EDI_FILE_PREFIX+IF_INVOICE_NUMBER+SV_EDI_FILE_EXTENSION
 ```
 
-Nota: asegúrese de que **export_doc_type** esté configurado con el tipo de factura de IDM. En este ejemplo está configurado para **M3**.
+Nota: Asegúrate de que **export\_doc\_type** esté configurado al tipo de factura IDM. En este ejemplo, está configurado para **M3**.
 
-<figure><img src="../../.gitbook/assets/edi_mapping_example.png" alt="Ejemplo de mapeo EDI"><figcaption></figcaption></figure>
+![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSrF54zkGq6aYYuJq1KAI%252Fimage.png%3Falt%3Dmedia%26token%3D403c9bfa-7e97-4d3c-a4b0-1bb82b98fe50\&width=768\&dpr=4\&quality=100\&sign=a768865f\&sv=2)
 
-### Document Manager en Infor
+#### Gestor de Documentos en Infor
 
-Vaya a Document Manager y seleccione el nombre del tipo de documento que está intentando exportar, por ejemplo, Supplier Invoice.
+Ve al Gestor de Documentos y selecciona el nombre del tipo de documento actual que estás tratando de exportar, por ejemplo, Factura de Proveedor.
 
-![](https://lh7-us.googleusercontent.com/EV3uw3R1L6_RRANB7FRLwtUFMbv_KGtL4x6kAk6lEYhwI90UeG2uWqFD2Azpxv-SRFl9zfvdratOZbXxp2D1-SryLo3Boj2x9Xc4PQXJ6vUhX5c9pvhv4XHuCk-qMK51DZ885vRUJ5dwES7k84uhoyk)
+![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FEV3uw3R1L6_RRANB7FRLwtUFMbv_KGtL4x6kAk6lEYhwI90UeG2uWqFD2Azpxv-SRFl9zfvdratOZbXxp2D1-SryLo3Boj2x9Xc4PQXJ6vUhX5c9pvhv4XHuCk-qMK51DZ885vRUJ5dwES7k84uhoyk\&width=768\&dpr=4\&quality=100\&sign=a2f25ec9\&sv=2)
 
-Haga clic en el icono anterior y, después, en Administration → Document Type, y busque en la lista el tipo de documento que necesita
+Haz clic en el ícono de arriba y luego haz clic en Administración → Tipo de Documento y luego encuentra el tipo de documento que necesitas en la lista.
 
-![](https://lh7-us.googleusercontent.com/ldsuINS9SCUQm3E57s8j_95gzBGwHQFavcf6d3myg6tuVxRoQHtq8R-6we5OEJ63swDxwPc9w7hbySWqWdfaMsGdQpn99m6EchPY5f5DzXEj-8mjocwPNtdJVNP34CuPvw0JIImDgFX1Q05M8-ogZo8)
+![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FldsuINS9SCUQm3E57s8j_95gzBGwHQFavcf6d3myg6tuVxRoQHtq8R-6we5OEJ63swDxwPc9w7hbySWqWdfaMsGdQpn99m6EchPY5f5DzXEj-8mjocwPNtdJVNP34CuPvw0JIImDgFX1Q05M8-ogZo8\&width=768\&dpr=4\&quality=100\&sign=a1149783\&sv=2)
 
-Como se muestra a continuación, verá el nombre del tipo de documento tal como figura en INFOR
+Como se muestra a continuación, verás el nombre del tipo de documento tal como está en INFOR.
 
-![](https://lh7-us.googleusercontent.com/KSreWGS7TqdMP64BqtufM24xk0RDnNDHUZapnPsSuRj_umPJ3icll89KI2RYpbtet2F6ccL8QfYbl27-2j1nQPwQ0z-Nq873c4Tv72ee9AJhKMxynIUxmJKKsQQCupW_dpRfw_5BXm0WvAnw4HOALmw)
+![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FKSreWGS7TqdMP64BqtufM24xk0RDnNDHUZapnPsSuRj_umPJ3icll89KI2RYpbtet2F6ccL8QfYbl27-2j1nQPwQ0z-Nq873c4Tv72ee9AJhKMxynIUxmJKKsQQCupW_dpRfw_5BXm0WvAnw4HOALmw\&width=768\&dpr=4\&quality=100\&sign=62bfe0a6\&sv=2)
 
-Asegúrese de que el nombre aparezca exactamente así en el archivo de mapeo IDM
+Asegúrate de que este sea el nombre que se muestra en el Archivo de Mapeo IDM.
 
-## Cargar el archivo en DocBits
+### Subir Archivo a DocBits
 
-Una vez preparado el archivo, cárguelo en su configuración de exportación en DocBits. Está disponible en Settings → Export.
+Una vez que el archivo esté preparado, súbelo a tu configuración de exportación en DocBits. Esto está disponible en Configuración → Exportar.
 
-![](https://lh7-us.googleusercontent.com/rUHhvImiWamK6JxnWSPL4JEioAJq3AmvdsubJDo-DoDV9F_i5mZ42YDnjqZUYKYSJu1Cetc_4fLwlvvmoZXYIzmBf3hoyW6RjfP9HQ8FkNDhW1IbLHvNTCHWFRaeCECdZ97u79-Eu37TvzqnqGPEayM)
+![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2Flh7-us.googleusercontent.com%2FrUHhvImiWamK6JxnWSPL4JEioAJq3AmvdsubJDo-DoDV9F_i5mZ42YDnjqZUYKYSJu1Cetc_4fLwlvvmoZXYIzmBf3hoyW6RjfP9HQ8FkNDhW1IbLHvNTCHWFRaeCECdZ97u79-Eu37TvzqnqGPEayM\&width=768\&dpr=4\&quality=100\&sign=a13b8c88\&sv=2)

@@ -1,25 +1,30 @@
 # API-sleutel
 
-<figure><img src="https://lh7-us.googleusercontent.com/ulCymk1gu-de14qTaFfJwTEmAUp7DY000A40P3nTgRIb7pYXolCbh_GPJvRib5haIH75dPFewY5tJQ0xNbGP3wdSOgCxu7gdVBwlvxkHFcP_3HM3R15zuuBOZM2jEdFxlp2CpV1VDfktmLFSSw4BuLs" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/api-key-settings-page-nl.png" alt="Paneel API-sleutels met de knop API-sleutel aanmaken, de kolommen van de sleutellijst en het verborgen sleutelprefix voor documentatie"><figcaption><p>Instellingen → Integratie &amp; SSO → API-sleutel. Het sleutelprefix is verborgen in deze schermafbeelding.</p></figcaption></figure>
 
-### API-sleutel
+De sectie **API-sleutel** bovenaan de pagina Integratie & SSO toont elke API-sleutel die uw organisatie heeft aangemaakt. Met een API-sleutel kan een ander systeem — uw ERP, een script of een partnerapplicatie — toegang krijgen tot DocBits zonder dat een gebruiker inlogt. Voor stapsgewijze instructies raadpleegt u [API-sleutelbeheer](api-key-management.md).
 
-* **Sleutel:** Dit is de unieke identificatie die door externe applicaties wordt gebruikt om toegang te krijgen tot de API van DocBits. Het is cruciaal voor het authenticeren van verzoeken die vanuit andere software naar DocBits worden verzonden.
-* Acties zoals het bekijken, opnieuw genereren of kopiëren van de API-sleutel kunnen hier worden uitgevoerd, afhankelijk van de specifieke behoeften and beveiligingsprotocollen.
+### API-sleutellijst
 
-### Instellingen voor SSO (Single Sign-On) serviceprovider
+* **Sleutel:** De eerste tekens van de sleutel, gevolgd door `****`. De volledige sleutel wordt slechts één keer getoond, bij het aanmaken, en kan daarna niet meer worden bekeken. Het kopieerpictogram naast de sleutel kopieert het zichtbare prefix naar uw klembord.
+* **Naam / Verloopt / Laatst gebruikt / Status:** Elke rij toont de naam van de sleutel, wanneer deze stopt met werken, wanneer een verzoek deze voor het laatst heeft gebruikt en of deze nog actief is.
+* **API-sleutel aanmaken:** Opent een dialoogvenster om een nieuwe sleutel voor een integratie aan te maken. Zie [API-sleutelbeheer](api-key-management.md) voor de velden en de eenmalige weergave van de sleutel.
+* **Actions (menu met drie puntjes):** Opent de acties voor een sleutel, waar u de naam kunt bewerken, de sleutel kunt intrekken of een reeds ingetrokken sleutel kunt verwijderen. Intrekken schakelt de sleutel permanent uit.
 
-* **Entity ID:** Dit is de identificatie voor DocBits als serviceprovider in de SSO-configuratie. Het identificeert DocBits uniek binnen het SSO-framework.
-* **SLO (Single Logout) URL:** De URL waarnaar SSO-sessies worden verzonden om tegelijkertijd uit te loggen bij alle via SSO verbonden applicaties.
-* **SSO URL:** De URL die wordt gebruikt voor het initiëren van het single sign-on proces.
-* Acties zoals "Certificaat downloaden" and "Metagegevens downloaden" zijn beschikbaar voor het verkrijgen van de noodzakelijke beveiligingscertificaten and metagegevensinformatie die worden gebruikt bij het instellen and onderhouden van SSO-integratie.
+### SSO (Single Sign-On) serviceproviderinstellingen
 
-{% hint style="info" %}
-Zie SSO instellen
-{% endhint %}
+Dit zijn de waarden die uw identiteitsprovider nodig heeft om gebruikers met uw bedrijfsaanmelding te laten inloggen op DocBits. Voor de volledige installatiegids raadpleegt u [Configuring Single Sign-On (SSO)](configuring-single-sign-on-sso/).
 
-### Instellingen voor identiteitsserviceprovider
+* **Entiteits-ID:** De identificatie van DocBits als serviceprovider in de SSO-configuratie. Het kopieerpictogram kopieert de waarde naar uw klembord.
+* **SLO-URL (Single Logout):** De URL waarmee een gebruiker tegelijk wordt uitgelogd bij alle via SSO verbonden applicaties. Het kopieerpictogram kopieert de waarde.
+* **SSO-URL:** De URL die wordt gebruikt om het single sign-on proces te starten. Het kopieerpictogram kopieert de waarde.
+* **Certificaat downloaden:** Downloadt het beveiligingscertificaat dat uw identiteitsprovider nodig heeft om DocBits te vertrouwen.
+* **Metagegevens downloaden:** Downloadt het SAML-metadatabestand dat direct in de meeste identiteitsproviders kan worden geïmporteerd.
 
-* **Tenant ID:** Dit kan worden gebruikt wanneer DocBits integreert met clouddiensten die een tenant-identificatie vereisen om gegevens and toegangsconfiguraties te beheren die specifiek zijn voor het bedrijf dat DocBits gebruikt.
-* **Bestand uploaden:** Hiermee kan de beheerder configuratiebestanden of andere noodzakelijke bestanden uploaden die integratie met een identiteitsprovider vergemakkelijken.
-* **Configureren:** Een knop om de instellingen toe te passen of bij te werken na het aanbrengen van wijzigingen of het uploaden van nieuwe configuraties.
+### Identiteitsserviceproviderinstellingen
+
+Configureer DocBits om uw externe identiteitsprovider (IdP) voor het inloggen te gebruiken. Voor de volledige gids raadpleegt u [Identity Service Provider Configuration](identity-service-provider-configuration.md).
+
+* **Huurder-ID:** De tenant-identificatie van uw identiteitsprovider, gebruikt wanneer DocBits integreert met clouddiensten die toegang per tenant beheren.
+* **Bestand uploaden:** Uploadt het metadata- of configuratiebestand dat u van uw identiteitsprovider heeft ontvangen.
+* **Configure:** Slaat de instellingen op en past de geüploade configuratie toe. Voer eerst de Huurder-ID in of upload het bestand en klik vervolgens op **Configure**.

@@ -582,6 +582,11 @@ Przed wdrożeniem tego wzorca na produkcję:
 - **ACTION_SET_FIELD_TO_TEXT** – [Przewodnik po manipulacji polami](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** – [Przewodnik po kartach warunków](../and/condition-cards-complete-guide.md#field-comparison)
 
+### Następne kroki
+- Rozwiąż błędy API: [Obsługa błędów](#obsluga-bledow) powyżej
+- Dodaj tworzenie zadań: [Wzorzec zarządzania zadaniami](task-management-pattern.md)
+- Przekształć dane: [Wzorzec transformacji danych](data-transformation-pattern.md)
+
 ---
 
 ## Wsparcie i zasoby

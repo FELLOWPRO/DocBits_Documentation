@@ -18,7 +18,7 @@ Po włączeniu pierwszego składnika DocBits przekazuje Ci również **dziesię�
 
 Otwórz **ustawienia profilu / konta** (menu konta w prawym górnym rogu → **Edytuj profil**) i wybierz **Uwierzytelnianie dwuskładnikowe**. Okno dialogowe 2FA pokazuje bieżący stan i metody, które możesz dodać.
 
-<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>Okno dialogowe uwierzytelniania dwuskładnikowego. Stąd możesz włączyć aplikację uwierzytelniającą, weryfikację e-mail, dodać klucz dostępu lub otworzyć <strong>Zarządzaj</strong>.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/mfa-2fa-dialog.png" alt="The Two-factor authentication dialog"><figcaption><p>Okno dialogowe uwierzytelniania dwuskładnikowego. Stąd możesz włączyć aplikację uwierzytelniającą, weryfikację e-mail, dodać klucz dostępu lub otworzyć <strong>Zarządzać</strong>.</p></figcaption></figure>
 
 ## Konfiguracja aplikacji uwierzytelniającej (TOTP)
 
@@ -58,7 +58,7 @@ Kody zapasowe są wyświetlane tylko w momencie ich wygenerowania. DocBits nie m
 
 1. Wprowadź swój adres e-mail i hasło jak zwykle.
 
-    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Ekran logowania. Możesz też zalogować się bez hasła za pomocą <strong>Zaloguj się kluczem dostępu</strong>.</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Ekran logowania. Możesz też zalogować się bez hasła za pomocą <strong>Zaloguj się za pomocą klucza dostępu</strong>.</p></figcaption></figure>
 2. DocBits prosi o drugi składnik. Wybierz swoją metodę:
    * **Aplikacja uwierzytelniająca** — wpisz bieżący 6-cyfrowy kod z aplikacji.
    * **E-mail** — kliknij **Wyślij mi kod e-mailem**, aby otrzymać kod e-mailem, a następnie go wpisz.
@@ -80,12 +80,12 @@ Na ekranie drugiego składnika możesz zaznaczyć **Zapamiętaj to urządzenie**
 
 ## Zarządzanie kluczami dostępu i zaufanymi urządzeniami
 
-Otwórz okno dialogowe 2FA i kliknij **Zarządzaj**, aby przejrzeć zarejestrowane elementy.
+Otwórz okno dialogowe 2FA i kliknij **Zarządzać**, aby przejrzeć zarejestrowane elementy.
 
 * **Klucze dostępu** — zmień nazwę klucza dostępu (kliknij jego nazwę) lub usuń go. Usunięcie ostatniego pozostałego składnika wyłącza 2FA.
 * **Zaufane urządzenia** — odwołaj pojedyncze urządzenie lub użyj **Odwołaj wszystkie urządzenia**, aby wymusić ponowne pytanie o 2FA wszędzie.
 
-<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>Widok Zarządzaj wyświetla zarejestrowane klucze dostępu i zaufane urządzenia, w którym możesz zmieniać ich nazwy lub je usuwać.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/mfa-passkeys-list.png" alt="Managing enrolled passkeys and trusted devices"><figcaption><p>Widok **Zarządzać** wyświetla zarejestrowane klucze dostępu i zaufane urządzenia, w którym możesz zmieniać ich nazwy lub je usuwać.</p></figcaption></figure>
 
 ## Wyłączanie 2FA
 
@@ -97,4 +97,4 @@ Jeśli Twoja organizacja **wymaga** MFA, nie możesz zalogować się hasłem, do
 
 ## Logowanie bez hasła (opcjonalne)
 
-Gdy masz już klucz dostępu, możesz zalogować się **bez wpisywania hasła** za pomocą **Zaloguj się kluczem dostępu** na ekranie logowania. Twoje hasło nadal działa jako opcja awaryjna. Logowanie bez hasła wymaga, aby klucz dostępu Cię zweryfikował (Touch ID / Windows Hello / PIN), dzięki czemu jest szybsze i odporne na phishing.
+Gdy masz już klucz dostępu, możesz zalogować się **bez wpisywania hasła** za pomocą **Zaloguj się za pomocą klucza dostępu** na ekranie logowania. Twoje hasło nadal działa jako opcja awaryjna. Logowanie bez hasła wymaga, aby klucz dostępu Cię zweryfikował (Touch ID / Windows Hello / PIN), dzięki czemu jest szybsze i odporne na phishing.

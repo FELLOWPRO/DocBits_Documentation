@@ -277,11 +277,76 @@ Każdy wzorzec zawiera następujące ustandaryzowane sekcje:
 - [Pełny indeks przewodników po workflow](../README.md)
 - [Przewodniki po poszczególnych kartach](../then/action/)
 - [Referencja kart warunków](../and/condition-cards-complete-guide.md)
+- [Mapa powiązań workflow](../../../../WORKFLOW_LINKING_MAP.md)
+
+**Dodatkowe zasoby:**
+- [Krótki przewodnik referencyjny](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- [Informacje o wydaniu z października 2025](../changelog/2025-10-october.md)
+- [Referencja wersjonowania kart](../../../docs/card_version.md)
 
 **Kontakt:**
 - Opinie o wzorcach: docs@docbits.com
 - Wsparcie techniczne: support@docbits.com
 - Pomoc we wdrożeniu: consulting@docbits.com
+
+---
+
+## Statystyki wzorców
+
+| Metryka | Wartość |
+|--------|-------|
+| **Łączna liczba wzorców** | 5 |
+| **Łączna liczba omówionych kart** | 30+ |
+| **Łączna dokumentacja** | ok. 1200 wierszy |
+| **Przykładowe scenariusze** | 25+ |
+| **Szablony konfiguracji** | 15+ |
+| **Diagramy workflow** | 5 kompletnych diagramów |
+| **Odsyłacze** | 87+ linków wewnętrznych |
+
+---
+
+## Współtworzenie wzorców
+
+Masz wzorzec workflow, który mógłby pomóc innym?
+
+**Zasady współtworzenia wzorców:**
+
+1. **Udokumentuj swój workflow**
+   - Jasny scenariusz biznesowy
+   - Wdrożenie krok po kroku
+   - Działające przykłady konfiguracji
+   - Rzeczywiste wyniki testów
+
+2. **Zastosuj szablon wzorca**
+   - Użyj standardowej struktury sekcji
+   - Uwzględnij wszystkie wymagane elementy
+   - Dołącz diagramy/przykłady
+   - Dodaj przewodnik rozwiązywania problemów
+
+3. **Prześlij do przeglądu**
+   - Wyślij e-mail na adres: docs@docbits.com
+   - Dołącz: opis wzorca, przypadki użycia, przewodnik wdrożenia
+   - Dokonamy przeglądu i ewentualnie dodamy do oficjalnej dokumentacji
+
+**Korzyści:**
+- Pomagasz innym użytkownikom DocBits
+- Zostajesz wyróżniony w dokumentacji
+- Wzbogacasz ogólną bazę wiedzy o produkcie
+- Otrzymujesz opinie o swoim wdrożeniu
+
+---
+
+## Historia zmian
+
+### Wersja 1.0 (23 października 2025)
+- Pierwsze wydanie 5 obszernych wzorców workflow
+- Dodano wzorzec integracji API
+- Dodano wzorzec zarządzania zadaniami
+- Dodano wzorzec PO Matching
+- Dodano wzorzec logiki decyzyjnej
+- Dodano wzorzec transformacji danych
+- Wdrożono linkowanie krzyżowe (87 linków)
+- Utworzono przewodnik wyboru wzorca
 
 ---
 
@@ -300,6 +365,11 @@ Każdy wzorzec zawiera następujące ustandaryzowane sekcje:
 5. Przetestuj na przykładowych dokumentach
 6. Wdróż na produkcję
 7. Monitoruj i optymalizuj
+
+**Potrzebujesz więcej pomocy?**
+- Zapoznaj się z [Przeglądem dokumentacji workflow](../README.md)
+- Sprawdź [Krótki przewodnik referencyjny](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- Skontaktuj się z zespołem wsparcia
 
 ---
 

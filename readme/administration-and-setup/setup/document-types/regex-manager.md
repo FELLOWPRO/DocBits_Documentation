@@ -1,19 +1,19 @@
-# Regex Manager
+# Menedżer Wyrażeń Regularnych
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+Ta funkcja DocBits jest alternatywą dla klasyfikacji opartej na modelach: pozwala pisać przeszukiwalne wyrażenia regularne dla typu dokumentu, do klasyfikacji i innych celów.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+Typ dokumentu: Menedżer Wyrażeń Regularnych umożliwia pisanie wyrażeń regularnych, które są następnie wyszukiwane w dokumencie. Jeśli DocBits znajdzie dopasowanie do wyrażenia regularnego zdefiniowanego dokumentu, przypisze dokument do odpowiedniego typu dokumentu. Na przykład jeśli napiszesz wyrażenie regularne wyszukujące „Gutschrift”, a DocBits znajdzie ten termin w dokumencie, sklasyfikuje go jako notę kredytową.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+Pochodzenie dokumentu: dzięki wyrażeniom regularnym DocBits rozpoznaje także kraj pochodzenia dokumentu. Na przykład jeśli wyrażenie regularne dla dokumentu hiszpańskiego zawiera termin „Factura”, a DocBits znajdzie go w dokumencie, uzna, że dokument pochodzi z Hiszpanii, i odpowiednio go sklasyfikuje.
 
-## **Accessing the Regex Manager**
+## **Otwieranie Menedżera Wyrażeń Regularnych**
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+W DocBits przejdź do Ustawienia → Typy dokumentów. W sekcji „Niestandardowe typy dokumentów” kliknij „Nowy”. Wpisz nazwę typu dokumentu, opcjonalnie dodaj opis i zaznacz „Dostępny stół”, jeśli dokument zawiera tabelę. Następnie wybierz „Wyrażenie regularne” zamiast „Automatyczny” i kliknij „Następny”.
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx\_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B\_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../../.gitbook/assets/regex-manager-create-pl-20261006.png" alt="Strona tworzenia nowego typu dokumentu z polem nazwy, polem wyboru dostępnej tabeli, opisem oraz przyciskami Automatyczny i Wyrażenie regularne"><figcaption><p>Wybierz „Wyrażenie regularne”, aby klasyfikować nowy typ dokumentu za pomocą wyrażeń regularnych.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## **Dodawanie i usuwanie wyrażeń regularnych**
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+Krok „Wyrażenie regularne” pokazuje istniejące modele, każdy z pochodzeniem i wzorem, oraz przycisk „Dodać” do tworzenia nowego modelu. Menu akcji na końcu wiersza służy do zarządzania danym wpisem. Kliknij „Następny”, aby przejść do kroku „Pola i grupy”.
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp\_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1\_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
+<figure><img src="../../../.gitbook/assets/regex-manager-list-pl-20261006.png" alt="Krok Wyrażenie regularne z przyciskiem Dodać i tabelą z trzema modelami wyrażeń regularnych, z pochodzeniem, wzorem i akcjami"><figcaption><p>Istniejące modele wyrażeń regularnych z pochodzeniem i wzorem. „Dodać” tworzy nowy model.</p></figcaption></figure>

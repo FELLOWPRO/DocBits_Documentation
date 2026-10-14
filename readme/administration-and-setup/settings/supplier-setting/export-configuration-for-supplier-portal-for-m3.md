@@ -1,21 +1,23 @@
 # Eksport konfiguracji dla Portalu Dostawcy
 
-### Przegląd
+<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Supplier Export Configuration"><figcaption><p>Strona Supplier Export Configuration</p></figcaption></figure>
+
+## Przegląd
 
 Plik konfiguracji eksportu jest kluczowym elementem w portalu dostawcy, definiującym, w jaki sposób dane są mapowane między portalem dostawcy a systemem ERP. Ta konfiguracja zapewnia, że dane są dokładnie przesyłane i synchronizowane między systemami, co umożliwia płynne i efektywne operacje.
 
-### Struktura pliku konfiguracyjnego
+## Struktura pliku konfiguracyjnego
 
 Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera wiele mapowań. Każde mapowanie jest powiązane z określonym programem w systemie ERP i definiuje działania do wykonania, pola do zmapowania oraz wszelkie warunki do zastosowania.
 
-### Kluczowe komponenty
+## Kluczowe komponenty
 
-#### 1. Program
+### 1. Program
 
 * **Definicja**: Określa program ERP, do którego odnosi się mapowanie.
 * **Przykład**: `"program": "CRS620MI"`
 
-#### 2. Działania
+### 2. Actions
 
 * **Definicja**: Definiuje działania, które można wykonać, takie jak dodawanie lub aktualizowanie rekordów.
 *   **Przykład**:
@@ -27,7 +29,7 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
     }
     ```
 
-#### 3. Mapowanie
+### 3. Mapping
 
 • Definicja: Określa mapowanie między polami w systemie ERP a polami w portalu dostawcy.
 
@@ -35,9 +37,9 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 
 • erp\_field\_name: Nazwa pola w systemie ERP.
 
-• value\_field\_name: Odpowiednia nazwa pola w portalu dostawcy.
+• value\_field\_name: Odpowiadająca nazwa pola w portalu dostawcy.
 
-• value: Statyczna wartość, która ma być używana, jeśli nie istnieje odpowiednie pole w portalu dostawcy.
+• value: Wartość statyczna używana, gdy w portalu dostawcy nie istnieje odpowiadające pole.
 
 • if\_conditions: Opcjonalne warunki, które określają wartość na podstawie określonych kryteriów.
 
@@ -50,9 +52,9 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 }
 ```
 
-#### 4. Logika warunkowa (if\_conditions)
+### 4. Logika warunkowa (if\_conditions)
 
-• Definicja: Określa warunki, które muszą być spełnione, aby użyć określonej wartości.
+• Definicja: Określa warunki, które muszą zostać spełnione, aby została użyta dana wartość.
 
 • Komponenty:
 
@@ -60,7 +62,7 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 
 • field\_value: Wartość, która uruchamia warunek.
 
-• then\_value: Wartość do użycia, jeśli warunek jest spełniony.
+• then\_value: Wartość użyta, gdy warunek jest spełniony.
 
 • Przykład:
 
@@ -76,9 +78,9 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 }
 ```
 
-#### 5. Pętle (loop\_on)
+### 5. Pętle (loop\_on)
 
-• Definicja: Definiuje sekcje, w których konfiguracja powinna iterować po liście elementów, takich jak szczegóły adresu lub referencji.
+• Definicja: Określa sekcje, w których konfiguracja ma iterować po liście elementów, takich jak szczegóły adresu lub referencji.
 
 • Przykład:
 
@@ -86,9 +88,9 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 "loop_on": "address_details"
 ```
 
-#### 6. Pola obliczeniowe (value\_field\_calculated)
+### 6. Pola obliczane (value\_field\_calculated)
 
-• Definicja: Określa pola, które powinny być obliczane w czasie rzeczywistym, takie jak generowanie bieżącej daty.
+• Definicja: Określa pola, które mają być obliczane w czasie wykonania, na przykład generowanie bieżącej daty.
 
 • Przykład:
 
@@ -99,9 +101,9 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 }
 ```
 
-#### 7. Mapowania pól z listami (mapping\_field\_name i mapping\_list)
+### 7. Mapowania pól z listami (mapping\_field\_name i mapping\_list)
 
-• Definicja: Mapuje konkretne wartości z portalu dostawcy do odpowiadających wartości w systemie ERP na podstawie wcześniej zdefiniowanej listy.
+• Definicja: Mapuje określone wartości z portalu dostawcy na odpowiadające wartości w systemie ERP na podstawie predefiniowanej listy.
 
 • Komponenty:
 
@@ -126,19 +128,19 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 }
 ```
 
-### Przykład analizy konfiguracji
+## Analiza przykładowej konfiguracji
 
-#### Dodawanie i aktualizacja dostawcy (CRS620MI)
+### Dodawanie i aktualizacja dostawcy (CRS620MI)
 
 • Program: CRS620MI
 
-• Działania:
+• Actions:
 
-• Dodaj dostawcę: AddSupplier
+• Add Supplier: AddSupplier
 
-• Zaktualizuj dostawcę: UpdSupplier
+• Update Supplier: UpdSupplier
 
-• Mapowanie pól:
+• Pola mapowania:
 
 • SUNO → supplier\_number
 
@@ -148,19 +150,19 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 
 • TINO → tax\_id
 
-• Dodatkowe pola obejmują statyczne wartości i mapowania warunkowe.
+• Dodatkowe pola obejmują wartości statyczne i mapowania warunkowe.
 
-#### Szczegóły adresu (CRS620MI)
+### Szczegóły adresu (CRS620MI)
 
-• Pętla: _**address\_details**_
+• Loop On: _**address\_details**_
 
-• Działania:
+• Actions:
 
-• Dodaj adres: AddAddress
+• Add Address: AddAddress
 
-• Zaktualizuj adres: AddAddress
+• Update Address: AddAddress
 
-• Mapowanie pól:
+• Pola mapowania:
 
 • SUNO → supplier\_number
 
@@ -168,55 +170,55 @@ Plik konfiguracji eksportu jest zorganizowany jako obiekt JSON, który zawiera w
 
 • TOWN → city
 
-• Dodatkowe pola obejmują pola obliczeniowe, takie jak now() dla bieżącej daty.
+• Dodatkowe pola obejmują pola obliczane, takie jak now() dla bieżącej daty.
 
-#### Szczegóły referencji (CRS620MI)
+### Szczegóły referencji (CRS620MI)
 
-• Pętla: _**reference\_details**_
+• Loop On: _**reference\_details**_
 
-• Działania:
+• Actions:
 
-• Dodaj referencję dostawcy: AddSupplierRef
+• Add Supplier Reference: AddSupplierRef
 
-• Zaktualizuj referencję dostawcy: AddSupplierRef
+• Update Supplier Reference: AddSupplierRef
 
-• Mapowanie pól:
+• Pola mapowania:
 
 • SUNO → supplier\_number
 
 • RFTY → reference\_type
 
-• RFID jest mapowane przy użyciu listy do tłumaczenia typów, takich jak „PURCHASING”, „QA” i „FINANCE”.
+• RFID jest mapowane za pomocą listy, aby przetłumaczyć typy takie jak „PURCHASING”, „QA” i „FINANCE”.
 
-### Używanie konfiguracji eksportu
+## Korzystanie z konfiguracji eksportu
 
-#### 1. Przesyłanie pliku konfiguracyjnego
+### 1. Przesyłanie pliku konfiguracyjnego
 
-**1. Przejdź do konfiguracji eksportu:**
+#### 1. Przejdź do Export Configuration:
 
-• Przejdź do sekcji konfiguracji eksportu z głównego menu.
+• Przejdź z menu głównego do sekcji Export Configuration.
 
-**2. Prześlij plik konfiguracyjny:**
+#### 2. Prześlij plik konfiguracyjny:
 
-• Kliknij na sekcje pliku ION-Mapping lub IDM Mapping, aby przesłać odpowiedni plik konfiguracyjny.
+• Kliknij sekcje ION-Mapping File lub IDM Mapping File, aby przesłać odpowiedni plik konfiguracyjny.
 
-**3. Zapisz konfigurację:**
+#### 3. Zapisz konfigurację:
 
-• Po przesłaniu kliknij przycisk Zapisz, aby zastosować konfigurację.
+• Po przesłaniu kliknij przycisk Save, aby zastosować konfigurację.
 
-#### 2. Używanie domyślnych szablonów
+### 2. Korzystanie z szablonów domyślnych
 
-• Kliknij przycisk Użyj domyślnego szablonu, jeśli chcesz powrócić do domyślnego szablonu konfiguracji dostarczonego przez system.
+• Kliknij przycisk Use Default Template, jeśli chcesz wrócić do domyślnego szablonu konfiguracji dostarczanego przez system.
 
-#### 3. Formatowanie JSON
+### 3. Formatowanie JSON
 
-• Użyj przycisku Formatuj, aby automatycznie sformatować kod JSON dla lepszej czytelności.
+• Użyj przycisku Format, aby automatycznie sformatować kod JSON w celu lepszej czytelności.
 
-### Podsumowanie
+## Podsumowanie
 
-Ten plik konfiguracyjny jest niezbędny do zapewnienia, że dane między portalem dostawcy a systemem ERP są poprawnie mapowane i synchronizowane. Rozumiejąc strukturę i kluczowe komponenty, administratorzy mogą skutecznie zarządzać i dostosowywać proces eksportu, aby spełnić swoje specyficzne wymagania biznesowe.
+Ten plik konfiguracyjny jest niezbędny, aby dane między portalem dostawcy a systemem ERP były poprawnie mapowane i synchronizowane. Dzięki zrozumieniu struktury i kluczowych komponentów administratorzy mogą skutecznie zarządzać procesem eksportu i dostosowywać go do swoich specyficznych wymagań biznesowych.
 
-### Pełny przykład
+## Pełny przykład&#x20;
 
 ```json
 [{

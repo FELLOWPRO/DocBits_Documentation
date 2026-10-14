@@ -33,7 +33,7 @@ Zanim dokument będzie można zatwierdzić, DocBits sprawdza tabelę:
 
 Okno zatwierdzania wymienia, czego jeszcze brakuje. Administrator może wyłączyć wszystkie kontrole tabeli dla typu dokumentu opcją **Pomiń walidację tabeli** (Typy dokumentów → Więcej ustawień); sumy pozycji i wymagane kolumny nie są wtedy sprawdzane, kontrole nagłówka pozostają.
 
-Szczegóły komunikatów: [Rozwiązywanie problemów z ekstrakcją tabeli](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md#messages-on-the-table).
+Szczegóły komunikatów: [Rozwiązywanie problemów z ekstrakcją tabeli](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md#komunikaty-na-tabeli).
 
 ## Pusta tabela
 

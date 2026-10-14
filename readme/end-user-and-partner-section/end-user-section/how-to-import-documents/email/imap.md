@@ -2,11 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
-Tutaj wystarczy wprowadzić wymagane informacje dotyczące dostawcy poczty e-mail, szyfrowania, nazwy serwera, portu, nazwy użytkownika, adresu e-mail, hasła oraz folderu e-mail.
+Wybierz IMAP jako protokół i wpisz dane swojego dostawcy poczty: nazwę serwera, port, szyfrowanie, nazwę użytkownika, adres e-mail i hasło. W kolejnych krokach ustawisz opcje i folder poczty.
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-pl-20261006.png" alt="Okno konfiguracji serwera poczty z protokołem IMAP, nazwą serwera, portem 993, szyfrowaniem SSL, nazwą użytkownika, adresem e-mail i hasłem"><figcaption><p>Konfiguracja serwera z przykładowymi wartościami. Zastąp je danymi swojego dostawcy poczty.</p></figcaption></figure>
 
-Rzeczy do zanotowania
+Warto pamiętać
 
-* Wprowadź wszystkie potrzebne informacje do interfejsu użytkownika. Inne informacje, takie jak serwer, port itp., zależą od hosta (szybkie wyszukiwanie w Google powinno pomóc).
-* Folder i Move-Imported mają tutaj tę samą funkcję. Folder nie może być wyłączony, ale domyślnie użyje Skrzynki odbiorczej, jeśli pozostanie pusty.
+* Wprowadź wszystkie potrzebne informacje w interfejsie. Pozostałe dane, takie jak serwer czy port, zależą od dostawcy (pomocne może być szybkie wyszukanie w internecie).
+* Folder i Przenieś zaimportowane pełnią tu tę samą funkcję. Folderu nie można wyłączyć, ale jeśli pozostanie pusty, domyślnie używana jest skrzynka odbiorcza.

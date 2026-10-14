@@ -1,11 +1,13 @@
 # Utwórz zgłoszenie
 
-{% embed url="https://youtu.be/fQUIrp-qz9c" %}
-DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
-{% endembed %}
+Jest to narzędzie dostępne na ekranie walidacji, na wypadek gdyby podczas walidacji dokumentu w DocBits wystąpił jakiś problem. Zobacz [Ekran Walidacji](../validation-screen/README.md), aby dowiedzieć się więcej o sprawdzaniu dokumentu.
 
-Po kliknięciu zostanie wyświetlony następujący formularz zgłoszenia.
+Ta funkcja znajduje się w menu nad obszarem podglądu dokumentu, jak poniżej
 
-![](https://lh7-us.googleusercontent.com/DxlkEirrpbtGXs8R6gHD9MtaUqd5mY9L1ya1PdGIwZIHnuoj0wflDML6ZjYzrHxqXos-0uwhMAJI69_zhO92dNWrwAmYpPwAe2C8sHvo0Tf8f8PG7SktBv4JiY6QfxxDNtO55S3xmQsze48ZophpDPc)
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-menu-pl-20261009.png" alt="Ekran walidacji z kursorem myszy na przycisku Utwórz bilet w prawym pasku akcji."><figcaption><p>Przycisk „Utwórz bilet” na pasku akcji ekranu walidacji.</p></figcaption></figure>
 
-Tutaj wypełnisz swoje dane oraz opiszesz błąd. Możesz również, jeśli to możliwe, dołączyć zrzut ekranu problemu i załączyć odpowiedni plik.
+Po kliknięciu wyświetlony zostanie następujący formularz zgłoszenia.
+
+<figure><img src="../../../.gitbook/assets/a-technical-support-in-docbits-create-a-ticket-form-pl-20261009.png" alt="Ekran walidacji z otwartym formularzem Bilet wsparcia: Nazwa, E-mail, Temat, Priorytet, Wiadomość, Zrzut ekranu i Prześlij plik."><figcaption><p>Formularz „Bilet wsparcia”.</p></figcaption></figure>
+
+Tutaj wypełnisz swoje dane oraz opiszesz błąd. Możesz również, jeśli ma to zastosowanie, dołączyć zrzut ekranu problemu i załączyć odpowiedni plik.

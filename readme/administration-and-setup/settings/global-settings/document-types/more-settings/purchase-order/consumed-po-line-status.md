@@ -1,30 +1,36 @@
 # Status linii zamówienia PO
 
-## **Przegląd**
+**Consumed PO line status** koloruje linie zamówienia zakupu w widoku dopasowania zgodnie z tym, jaka część każdej linii została już dopasowana. Włącz to ustawienie dla typu dokumentu faktury, jeśli Twój zespół chce szybko rozpoznawać niewykorzystane, częściowo wykorzystane i w pełni wykorzystane linie PO. Kolor jest pomocą wizualną; przed podjęciem decyzji, czy linię można dopasować ponownie, sprawdź **Matched Quantity** oraz wybraną kolumnę ilości PO.
 
-To ustawienie ulepsza ekran **Dopasowania zamówienia zakupu**, stosując kodowanie kolorów do linii PO. Zapewnia szybkie wizualne zrozumienie statusu dopasowania dla każdej linii.
+## Włączanie ustawienia
 
-## Gdzie aktywować
+1. Otwórz **Settings → Document Types**. Znajdź typ dokumentu używany dla Twoich faktur i wybierz koło zębate na jego karcie, aby otworzyć **More Settings**. Zrzut ekranu pokazuje kartę **Invoice**. Pozostaw przełączniki **Activate** i **Extraction** bez zmian.
 
-1. Przejdź do: **Ustawienia** → **Ustawienia globalne** → **Typ dokumentu**
-2.  Wybierz pożądany typ dokumentu i kliknij **Więcej ustawień**.
+   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-document-types-en.png" alt="Strona Document Types z kartą Invoice i jej kołem zębatym More Settings"><figcaption><p>Otwórz More Settings z karty Invoice.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fsd3ebb3IETh7wNSA5flh%252Fimage.png%3Falt%3Dmedia%26token%3D6f1d286b-e006-4b23-9866-9ed37bf2bdaa\&width=768\&dpr=4\&quality=100\&sign=b0f0b121\&sv=2)
-3.  W sekcji **Zamówienie zakupu**, przejdź do opcji **Aktualizuj status zamówienia zakupu**.
+2. Rozwiń **Purchase Order**, jeśli sekcja jest zwinięta. Znajdź **Consumed PO line status** i włącz jego przełącznik. Jest to osobne ustawienie od **Update Document Purchase Order Status**, znajdującego się niżej w tej samej sekcji.
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FUxtFCj5v2TU1q0qwYtFv%252Fimage.png%3Falt%3Dmedia%26token%3Dcb97a149-86d1-43e9-a5bf-a9aadaa6c047\&width=768\&dpr=4\&quality=100\&sign=3bdd311b\&sv=2)
+   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-settings-en.png" alt="Sekcja Purchase Order w More Settings z widocznym przełącznikiem Consumed PO line status"><figcaption><p>Wybierz przełącznik Consumed PO line status.</p></figcaption></figure>
 
-## **Co oznaczają kolory**
+   <figure><img src="../../../../../../.gitbook/assets/consumed-po-line-toggle-en.png" alt="Zbliżenie na etykietę i przełącznik Consumed PO line status"><figcaption><p>W tym przykładzie przełącznik jest wyłączony; włącz go, aby wyświetlać kolory dopasowania.</p></figcaption></figure>
 
-*   **Biały** – Linia PO nie została jeszcze **dopasowana**.
+3. Otwórz fakturę z dopasowaniem zamówienia zakupu i sprawdź jej linie PO. Poniższe przykłady pokazują, jak kolory linii odpowiadają stanowi dopasowania. Kroki dopasowania znajdziesz w [Purchase Order Matching](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md).
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjwYiBzpTPFv8tQaTTaeJ%252Fimage.png%3Falt%3Dmedia%26token%3D20a99b45-2d61-4bd5-84b7-b0c24b04e223\&width=768\&dpr=4\&quality=100\&sign=ebdb365\&sv=2)
-*   **Niebieski** – Linia PO została **wybrana przez użytkownika** do dopasowania.
+## Odczytywanie kolorów linii PO
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FwJK44aAJJPzJm4f4miFg%252Fimage.png%3Falt%3Dmedia%26token%3D3a51bd26-5b87-4b61-a056-ae40bccc4e55\&width=768\&dpr=4\&quality=100\&sign=d445fa07\&sv=2)
-*   **Żółty** – Linia PO jest **częściowo dopasowana**; nadal dostępna jest ilość do dopasowania.
+| Wygląd | Znaczenie | Co sprawdzić |
+| --- | --- | --- |
+| Zwykły lub biały | Żadna ilość z tej linii PO nie została jeszcze dopasowana. | Przed dopasowaniem sprawdź ilość PO i linię faktury. |
+| Niebieski odcień | Linia została wybrana w bieżącym widoku dopasowania. | Wybór jest tymczasowy; nie oznacza, że linia jest w pełni dopasowana. |
+| Jasnopomarańczowy | Część ilości została dopasowana, ale dopasowana ilość jest mniejsza niż wybrana ilość PO. | Sprawdź, ile ilości pozostało. |
+| Jasnofioletowy | Dopasowana ilość jest co najmniej równa wybranej ilości PO. | Nie zakładaj, że dostępna jest dodatkowa ilość. |
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNoof3pErQqAvAWZpo4Fd%252Fimage.png%3Falt%3Dmedia%26token%3D21a15672-8e84-4e22-a0f2-8b65bcbfda54\&width=768\&dpr=4\&quality=100\&sign=4a68abca\&sv=2)
-*   **Różowy** – Linia PO jest **w pełni dopasowana**; nie ma dostępnej ilości do dalszego dopasowania.
+<figure><img src="../../../../../../.gitbook/assets/image (470).png" alt="Linia PO z zerową dopasowaną ilością i bez koloru statusu"><figcaption><p>Żadna ilość nie została jeszcze dopasowana.</p></figcaption></figure>
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F722yxDRHmvz6CLfIamq8%252Fimage.png%3Falt%3Dmedia%26token%3D15aecf8c-aa63-4de4-b77f-1147c8ed593a\&width=768\&dpr=4\&quality=100\&sign=c1b2c2ab\&sv=2)
+<figure><img src="../../../../../../.gitbook/assets/image (472).png" alt="Linia PO z niebieskim odcieniem zaznaczenia w widoku dopasowania"><figcaption><p>Linia jest wybrana do bieżącego dopasowania.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/consumed_po_line_status.png" alt="Linia PO z jasnopomarańczowym tłem i dopasowaną ilością mniejszą niż ilość PO"><figcaption><p>Linia jest częściowo wykorzystana.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/image (473).png" alt="Linia PO z jasnofioletowym tłem i dopasowaną ilością równą ilości PO"><figcaption><p>Linia jest w pełni wykorzystana.</p></figcaption></figure>
+
+Przekreślona linia ma inne znaczenie: jej status PO może być wykluczony przez [PO disable statuses](purchase-order-disable-statuses.md). Jeśli nie można wybrać linii, sprawdź to ustawienie.

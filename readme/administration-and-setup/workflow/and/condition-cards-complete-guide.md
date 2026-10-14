@@ -1,8 +1,8 @@
 # Condition Cards - Complete Guide
 
-De voorwaardekaarten op deze pagina horen in de **When**- en **And**-groep van de Workflow Builder — ze bepalen of de Then-acties worden uitgevoerd:
+De voorwaardekaarten op deze pagina horen in de **When**- en **And**-groep van de Workflow Builder — ze bepalen of de Then-acties worden uitgevoerd. Voor het gebruik van het canvas — **Kaart toevoegen**, **Workflow opslaan**, **Sjabloon opslaan** — zie de [gids Standaard workflow](../standard-workflow-builder.md):
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Voorwaardekaarten worden via <strong>Add Card</strong> aan de <strong>When</strong>- en <strong>And</strong>-groep toegevoegd.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder-canvas met de kaartgroepen When, And en Then"><figcaption><p>Voorwaardekaarten worden via <strong>Add Card</strong> aan de <strong>When</strong>- en <strong>And</strong>-groep toegevoegd.</p></figcaption></figure>
 
 **Covers:** 31 remaining condition cards
 
@@ -14,9 +14,9 @@ De voorwaardekaarten op deze pagina horen in de **When**- en **And**-groep van d
 **Version Pattern:** Most follow v1 → v2 pattern (adding i18n support)
 **Multi-Version Example:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Note:** Some PO comparison condition cards have 4-5 versions (see PO Matching Guide for details)
+**Opmerking:** Sommige voorwaardekaarten voor PO-vergelijking hebben meerdere versies. Gebruik deze gids voor het huidige gedrag en de release-opmerkingen hieronder voor gepubliceerde wijzigingen.
 
-📖 [Complete Version History](../../../changelog/release.md) | [Card Version Database](../../../../DocFlow/docs/card_version.md) | [PO Matching Guide](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Release-opmerkingen van het product](../../../overview-and-basics/release-notes/README.md) | [PO Matching Gids](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

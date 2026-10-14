@@ -582,6 +582,11 @@ Antes da utilização em produção deste padrão:
 - **ACTION_SET_FIELD_TO_TEXT** – [Guia de manipulação de campos](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** – [Guia de cartas de condição](../and/condition-cards-complete-guide.md#field-comparison)
 
+### Próximos passos
+- Resolver erros de API: [Tratamento de erros](#tratamento-de-erros) acima
+- Adicionar criação de tarefas: [Padrão de Gestão de Tarefas](task-management-pattern.md)
+- Transformar dados: [Padrão de Transformação de Dados](data-transformation-pattern.md)
+
 ---
 
 ## Suporte e recursos

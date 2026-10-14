@@ -582,6 +582,11 @@ Vor dem Produktiveinsatz dieses Patterns:
 - **ACTION_SET_FIELD_TO_TEXT** – [Leitfaden Feldmanipulation](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** – [Leitfaden Bedingungskarten](../and/condition-cards-complete-guide.md#field-comparison)
 
+### Nächste Schritte
+- API-Fehler beheben: [Fehlerbehandlung](#fehlerbehandlung) oben
+- Aufgabenerstellung hinzufügen: [Aufgabenverwaltungs-Pattern](task-management-pattern.md)
+- Daten transformieren: [Datentransformations-Pattern](data-transformation-pattern.md)
+
 ---
 
 ## Support & Ressourcen

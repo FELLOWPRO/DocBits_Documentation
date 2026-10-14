@@ -2,20 +2,20 @@
 hidden: true
 ---
 
-# Een orderbevestiging vergelijken met een inkooporder
+# Orderbevestiging vergelijken met een inkooporder
 
-Gebruik **Compare with Purchase Order** in de Workflow Builder wanneer een orderbevestiging moet worden gecontroleerd aan de hand van de bijbehorende inkooporder. Voeg de kaart toe onder **And...** en kies vervolgens de ordergegevens, een operator en wat er met het resultaat moet gebeuren. De onderstaande schermafbeeldingen tonen twee beschikbare kaartversies in de Engelstalige interface. De velden zijn nog plaatshouders; stel ze voor uw eigen workflow in voordat u opslaat.
+Gebruik **Vergelijk met inkooporder** in de Workflow Builder wanneer een orderbevestiging met de bijbehorende inkooporder gecontroleerd moet worden. Voeg de kaart toe onder **En....**, kies vervolgens de bestelgegevens, een operator en wat er met het resultaat moet gebeuren. De onderstaande afbeeldingen tonen twee beschikbare kaartversies in de Nederlandse interface. De velden zijn nog tijdelijke aanduidingen; stel ze in voor uw eigen workflow voordat u opslaat.
 
-## Het resultaat naar een veld schrijven
+## Het resultaat in een veld schrijven
 
-<figure><img src="../../../../.gitbook/assets/dbdc-133-workflow-card-write-text.png" alt="Compare with Purchase Order card in the Workflow Builder with Order Data, Operator, Text, Field Name, and Result of condition placeholders." width="563"><figcaption>Versie 2: tekst naar een veld schrijven op basis van het resultaat van de voorwaarde.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-411-workflow-card-write-text-nl.png" alt="Kaart Vergelijk met inkooporder in de Workflow Builder met de tijdelijke aanduidingen Bestelgegevens, Operator, Tekst, Veldnaam en Resultaat van de conditie." width="563"><figcaption>Versie 2: tekst schrijven in een veld op basis van het resultaat van de conditie.</figcaption></figure>
 
-Kies **Order Data** uit de orderbevestiging en een **Operator** voor de vergelijking met de inkooporder. Voer de te schrijven **Text** in, selecteer de **Field Name** en kies het **Result of condition** dat het schrijven moet activeren.
+Kies **Bestelgegevens** uit de orderbevestiging en een **Operator** voor de vergelijking met de inkooporder. Voer de **Tekst** in die u wilt schrijven, selecteer de **Veldnaam** en kies het **Resultaat van de conditie** dat het schrijven moet activeren.
 
 ## De gegevens vergelijken
 
-<figure><img src="../../../../.gitbook/assets/dbdc-133-workflow-card-compare-as.png" alt="Compare with Purchase Order card in the Workflow Builder with Any/All, Order Data, Operator, and Comparison Data placeholders." width="563"><figcaption>Versie 4: geselecteerde gegevens van de orderbevestiging vergelijken met gegevens van de inkooporder.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-411-workflow-card-compare-as-nl.png" alt="Kaart Vergelijk met inkooporder in de Workflow Builder met de tijdelijke aanduidingen Elk/Alle, Bestelgegevens, Operator en Vergelijkingsgegevens." width="563"><figcaption>Versie 4: geselecteerde gegevens van de orderbevestiging vergelijken met de gegevens van de inkooporder.</figcaption></figure>
 
-Kies **Any/All** om te bepalen of aan één of aan alle geselecteerde voorwaarden moet worden voldaan. Selecteer daarna de **Order Data**, **Operator** en **Comparison Data** voor de vergelijking met de inkooporder.
+Kies **Elk/Alle** om te bepalen of een of alle geselecteerde voorwaarden moeten overeenkomen. Selecteer daarna de **Bestelgegevens**, de **Operator** en de **Vergelijkingsgegevens** voor de vergelijking met de inkooporder.
 
-Zie voor de omliggende stappen [Workflow](../../README.md) en [Compare with Purchase Order](README.md).
+Zie [Workflow](../../README.md) en [Vergelijk met inkooporder](README.md) voor de stappen ervoor en erna.

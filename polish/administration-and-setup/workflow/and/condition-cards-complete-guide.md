@@ -1,8 +1,8 @@
 # Condition Cards - Complete Guide
 
-Karty warunków na tej stronie trafiają do grup **When** i **And** w Kreatorze przepływów — decydują, czy akcje Then zostaną wykonane:
+Karty warunków na tej stronie trafiają do grup **When** i **And** w Kreatorze przepływów — decydują, czy akcje Then zostaną wykonane. Obszar roboczy — **Dodaj kartę**, **Zapisz szablon**, **Zapisz przepływ pracy** — opisuje [przewodnik Standard Workflow](../standard-workflow-builder.md):
 
-<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder"><figcaption><p>Karty warunków dodaje się do grup <strong>When</strong> i <strong>And</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Obszar roboczy Kreatora przepływów z grupami kart When, And i Then"><figcaption><p>Karty warunków dodaje się do grup <strong>When</strong> i <strong>And</strong> za pomocą <strong>Add Card</strong>.</p></figcaption></figure>
 
 **Obejmuje:** 31 pozostałych kart warunków
 
@@ -14,9 +14,9 @@ Karty warunków na tej stronie trafiają do grup **When** i **And** w Kreatorze 
 **Wzorzec wersji:** Większość podąża za wzorcem v1 → v2 (dodanie obsługi i18n)
 **Przykład wielowersyjny:** CONDITION_DECISION_TREE_DATA (v2-v3)
 
-**Uwaga:** Niektóre karty warunków porównania PO mają 4-5 wersji (szczegóły w przewodniku PO Matching)
+**Uwaga:** Niektóre karty warunków porównania PO mają kilka wersji. Bieżące zachowanie opisuje ta instrukcja, a opublikowane zmiany — poniższe notatki o wydaniu.
 
-📖 [Pełna historia wersji](../../../changelog/release.md) | [Baza danych wersji kart](../../../../DocFlow/docs/card_version.md) | [Przewodnik PO Matching](../compare-with-purchase-order/po-matching-complete-guide.md)
+📖 [Notatki o wydaniu produktu](../../../overview-and-basics/release-notes/README.md) | [Przewodnik PO Matching](compare-with-purchase-order/po-matching-complete-guide.md)
 
 ---
 

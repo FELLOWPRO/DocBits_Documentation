@@ -582,6 +582,11 @@ Antes de desplegar este patrón:
 - **ACTION_SET_FIELD_TO_TEXT**: [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES**: [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#field-comparison)
 
+### Próximos pasos
+- Resolver errores de la API: [Gestión de errores](#gestion-de-errores) anterior
+- Añadir creación de tareas: [Patrón de gestión de tareas](task-management-pattern.md)
+- Transformar datos: [Patrón de transformación de datos](data-transformation-pattern.md)
+
 ---
 
 ## Soporte y recursos

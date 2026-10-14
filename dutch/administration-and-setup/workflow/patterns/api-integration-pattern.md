@@ -583,7 +583,7 @@ Voordat u dit patroon implementeert:
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES** - [Gids Conditiekaarten](../and/condition-cards-complete-guide.md#field-comparison)
 
 ### Volgende Stappen
-- Implementeer foutafhandeling: [Foutafhandeling Patroon](error-handling-pattern.md)
+- API-fouten oplossen: [Foutafhandeling](#foutafhandeling) hierboven
 - Voeg taakcreatie toe: [Taakbeheer Patroon](task-management-pattern.md)
 - Transformeer gegevens: [Gegevenstransformatie Patroon](data-transformation-pattern.md)
 

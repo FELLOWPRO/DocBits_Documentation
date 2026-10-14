@@ -1,4 +1,4 @@
-# Task Counter
+# Aufgabenzähler
 
 Der Aufgabenzähler befindet sich in der oberen rechten Ecke der Startseite des Dashboards.
 

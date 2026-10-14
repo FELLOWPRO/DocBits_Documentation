@@ -1,23 +1,23 @@
-# Endbenutzer Abschnitt
+# Endbenutzerbereich
 
 ### Erste Schritte
 
-* **Anmeldung und Navigation:** Wie man auf Docbits zugreift und durch die Benutzeroberfläche navigiert.
-* **Erstkonfiguration:** Einrichten von Docbits für die erstmalige Verwendung.
+* **Anmeldung und Navigation:** So greifen Sie auf Docbits zu und navigieren durch die Benutzeroberfläche.
+* **Erstkonfiguration:** Einrichtung von Docbits für die erste Verwendung.
 
-### Tägliche Verwendung
+### Tägliche Nutzung
 
-* **Dokumenteneinreichung:** Anweisungen zur Einreichung von Dokumenten in Docbits.
-* **Dokumentüberprüfung und Genehmigung:**
-* **Bestellungen genehmigen:** Schritte zur Überprüfung und Genehmigung von Bestellformularen.
-* **Rechnungen bearbeiten:** Anleitung zur Bearbeitung eingehender Rechnungen zur Zahlung.
+* **Dokumentenübermittlung:** Anweisungen zum Übermitteln von Dokumenten an Docbits.
+* **Dokumentenprüfung und -freigabe:**
+  * **Bestellungen freigeben:** Schritte zum Prüfen und Freigeben von Bestellformularen.
+  * **Rechnungen verarbeiten:** Anleitung, wie Sie eingehende Rechnungen zur Zahlung verarbeiten.
 
-### Dokumentenverwaltung
+### Dokumente verwalten
 
-* **Suchen und Abrufen:** Wie man Dokumente innerhalb von Docbits findet und darauf zugreift.
-* **Bearbeiten und Aktualisieren:** Dokumente bearbeiten und ihren Status aktualisieren.
+* **Suchen und Abrufen:** So finden Sie Dokumente in Docbits und greifen darauf zu.
+* **Bearbeiten und Aktualisieren:** Bearbeiten von Dokumenten und Aktualisieren ihres Status.
 
 ### Fehlerbehebung
 
-* **Häufige Probleme:** Lösungen für häufige Probleme, auf die Benutzer stoßen.
-* [**Support-Kontakt**](ressources-and-support/user-support.md)**:** Wie man den Support für Hilfe erreicht.
+* **Häufige Probleme:** Lösungen für häufig auftretende Probleme der Benutzer.
+* [**Support-Kontakt**](ressources-and-support/user-support.md)**:** So erreichen Sie den Support für Unterstützung.

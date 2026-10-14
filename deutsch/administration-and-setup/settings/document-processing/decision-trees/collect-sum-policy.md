@@ -5,12 +5,12 @@ Diese Policy sammelt alle zutreffenden Regeln und summiert die Ergebnisse. Sie f
 **Beispiel:**
 
 | Regel | Bedingung            | Rückgabewert |
-| ----- | -------------------- | ------------ |
-| 1     | Total Amount <= 1000 | 1            |
-| 2     | Total Amount <= 2000 | 2            |
-| 3     | Total Amount <= 3000 | 3            |
-| 4     | Total Amount <= 4000 | 4            |
-| 5     | Total Amount <= 5000 | 5            |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | 1            |
+| 2    | Total Amount <= 2000 | 2            |
+| 3    | Total Amount <= 3000 | 3            |
+| 4    | Total Amount <= 4000 | 4            |
+| 5    | Total Amount <= 5000 | 5            |
 
 Für den Eingabewert **Total Amount = 2500** würde die Auswertung der Regeln wie folgt aussehen:
 

@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-Diese Einstellung aktiviert den [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching-1/) Abschnitt, der nach der Dokumentvalidierung zugänglich wird.
+Diese Einstellung aktiviert den [**Purchase Order Matching**](../../../../../../end-user-section/purchase-order-matching/) Abschnitt, der nach der Dokumentvalidierung zugänglich wird.
 
 <mark style="color:red;">**Hinweis**</mark>: Für den **Rechnung** Dokumenttyp müssen die folgenden zusätzlichen Anforderungen erfüllt sein:
 
@@ -22,7 +22,7 @@ Diese Einstellung aktiviert den [**Purchase Order Matching**](../../../../../../
 
 ## **Funktionalität**
 
-Sobald aktiviert, wird der [**Purchase Order Matching**](../../../../../../end-user-and-partner-section/end-user-section/purchase-order-matching-1/) Abschnitt nach der Dokumentvalidierung verfügbar.
+Sobald aktiviert, wird der [**Purchase Order Matching**](../../../../../../end-user-section/purchase-order-matching/) Abschnitt nach der Dokumentvalidierung verfügbar.
 
 Du kannst auch konfigurieren, welcher Typ von Menge aus **Infor** für das Matching verwendet werden soll, indem du eine der folgenden Optionen aus dem Dropdown-Menü neben der Einstellung auswählst:
 

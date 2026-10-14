@@ -27,7 +27,7 @@ Der oben angepinnte Kopfbereich enthält das Suchfeld und die Filterpillen. Tipp
 
 Die aktuelle Suche und der Filter werden der URL hinzugefügt, sodass eine gefilterte Ansicht als Lesezeichen gespeichert oder geteilt werden kann.
 
-Die Sitemap respektiert die gleiche Berechtigungsprüfung wie der Rest von DocBits. Seiten, auf die Sie keinen Zugriff haben, werden nicht angezeigt.
+<mark>Die Sitemap respektiert die gleiche Berechtigungsprüfung wie der Rest von DocBits. Seiten, auf die Sie keinen Zugriff haben, werden nicht angezeigt.</mark>
 
 ## Entwicklermodus
 

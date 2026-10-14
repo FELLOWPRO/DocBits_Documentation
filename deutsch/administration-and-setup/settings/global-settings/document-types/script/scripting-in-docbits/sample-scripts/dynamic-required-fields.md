@@ -53,8 +53,8 @@ else:
 
 ## Verwendete Funktionen
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Steuerungsfeld lesen
-* [set\_is\_required()](../functions/field-functions.md#set_is_required) — Feld als Pflicht/optional setzen
-* [set\_is\_hidden()](../functions/field-functions.md#set_is_hidden) — Felder ein-/ausblenden
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Kategoriefeld setzen
-* [delete\_tables()](../functions/table-functions.md#delete_tables) — Tabellen für Kostenrechnungen entfernen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Steuerungsfeld lesen
+- [set\_is\_required()](../field-functions.md#set\_is\_required) — Feld als Pflicht/optional setzen
+- [set\_is\_hidden()](../field-functions.md#set\_is\_hidden) — Felder ein-/ausblenden
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Kategoriefeld setzen
+- [delete\_tables()](../table-functions.md#delete\_tables) — Tabellen für Kostenrechnungen entfernen

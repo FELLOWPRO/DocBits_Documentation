@@ -1,3 +1,1 @@
-# Partner Section
-
-
+# Partnerbereich

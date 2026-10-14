@@ -32,11 +32,11 @@ Das Analytics Dashboard wird über eine Moduleinstellung gesteuert. Nach der Akt
 
 Wählen Sie die passende Perspektive für Ihre Analyse. Jeder Flow-Typ bietet Ihnen eine andere Sichtweise auf dieselben Daten.
 
-| Flow-Typ                | Zweck                                                           | Schlüsselfrage                                                            |
-| ----------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| **Status**              | Verfolgung des Dokumentenlebenszyklus vom Import bis zum Export | _"Wie lange dauern meine Dokumente insgesamt vom Import bis zum Export?"_ |
-| **Verarbeitung**        | Technische Modul-Leistungsanalyse                               | _"Welche Verarbeitungsschritte sind Engpässe?"_                           |
-| **Benutzerinteraktion** | Menschliche Berührungspunkte und Wartezeiten                    | _"Wie lange warten Dokumente auf Benutzer?"_                              |
+| Flow-Typ | Zweck | Schlüsselfrage |
+| --- | --- | --- |
+| **Status** | Verfolgung des Dokumentenlebenszyklus vom Import bis zum Export | *"Wie lange dauern meine Dokumente insgesamt vom Import bis zum Export?"* |
+| **Verarbeitung** | Technische Modul-Leistungsanalyse | *"Welche Verarbeitungsschritte sind Engpässe?"* |
+| **Benutzerinteraktion** | Menschliche Berührungspunkte und Wartezeiten | *"Wie lange warten Dokumente auf Benutzer?"* |
 
 Verwenden Sie den Schalter **Flow-Typ** oben im Dashboard, um zwischen den Perspektiven zu wechseln.
 
@@ -105,7 +105,7 @@ Analysieren Sie einen beliebigen Zeitraum von **7 Tagen** bis zu einem **vollen 
 
 ## Flow-Schritt-Karten
 
-Jede Karte repräsentiert einen Flow-Schritt basierend auf dem ausgewählten **Flow-Typ**. Die Karten passen sich Ihrer Auswahl an – sie zeigen Lebenszyklusphasen für _Status_, Verarbeitungsmodule für _Verarbeitung_ oder Benutzerberührungspunkte für _Benutzerinteraktion_.
+Jede Karte repräsentiert einen Flow-Schritt basierend auf dem ausgewählten **Flow-Typ**. Die Karten passen sich Ihrer Auswahl an – sie zeigen Lebenszyklusphasen für *Status*, Verarbeitungsmodule für *Verarbeitung* oder Benutzerberührungspunkte für *Benutzerinteraktion*.
 
 Jede Karte zeigt:
 

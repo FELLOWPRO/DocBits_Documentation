@@ -23,7 +23,7 @@ DocBits erkennt die Barcodes während der Dokumentverarbeitung und bietet ihre d
 <figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="Demo-Rechnung mit mehreren Barcode-Typen"><figcaption><p>Beispielhafte DocBits-Demo-Rechnung mit drei Barcode-Typen (QR-Code → Bestellnummer, Code 128 → Rechnungsnummer, EAN-13 → Lieferanten-GLN), die jeweils einen einem Feld zuordenbaren Wert kodieren.</p></figcaption></figure>
 
 {% hint style="info" %}
-Welche Barcode-Typen erkannt werden, steuert die Einstellung **Bar-Code / QR-Code-Extraktion** (`Barcode Extraction Types`). Zeigt der Dialog _„no barcodes extracted found“_, stellen Sie sicher, dass die Barcode-Extraktion aktiviert ist und die erwarteten Typen (z. B. `QRCODE`, `CODE128`, `EAN13`) ausgewählt sind. Siehe [Bar-Code / QR-Code-Extraktion](https://github.com/Fellow-Consulting-AG/docbits/tree/de/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+Welche Barcode-Typen erkannt werden, steuert die Einstellung **Bar-Code / QR-Code-Extraktion** (`Barcode Extraction Types`). Zeigt der Dialog *„no barcodes extracted found“*, stellen Sie sicher, dass die Barcode-Extraktion aktiviert ist und die erwarteten Typen (z. B. `QRCODE`, `CODE128`, `EAN13`) ausgewählt sind. Siehe [Bar-Code / QR-Code-Extraktion](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Den Barcode-Zuordnungs-Dialog verwenden
@@ -62,8 +62,8 @@ Welche Barcode-Typen erkannt werden, steuert die Einstellung **Bar-Code / QR-Cod
 
 * **Dokumente mit Barcodes**: Wenn Ihre Dokumente Barcodes/QR-Codes enthalten, deren Werte in bestimmte Felder gehören (z. B. Bestell- oder Referenznummern).
 * **Manuelle Validierungs-Workflows**: Wenn eine Person Dokumente prüft und Felder schnell aus Barcodes befüllen möchte.
-* **Ausgeschaltet lassen**, wenn Ihre Dokumente keine nutzbaren Barcodes haben oder Sie nur die automatische Barcode-/QR-**Extraktion** benötigen — siehe [Bar-Code / QR-Code-Extraktion](https://github.com/Fellow-Consulting-AG/docbits/tree/de/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+* **Ausgeschaltet lassen**, wenn Ihre Dokumente keine nutzbaren Barcodes haben oder Sie nur die automatische Barcode-/QR-**Extraktion** benötigen — siehe [Bar-Code / QR-Code-Extraktion](bar-code-qr-code-extraction/README.md).
 
 {% hint style="info" %}
-**Hier geht es darum, einen Barcode-/QR-Wert auszulesen und ihn bei der Validierung einem Feld zuzuordnen.** Das automatische Extrahieren strukturierter Daten aus Zahlungscodes (z. B. Swiss QR Bill oder GiroCode) — sowie das Aufteilen einer mehrseitigen Datei an Barcode-Trennseiten — übernimmt eine **andere** Einstellung: [Bar-Code / QR-Code-Extraktion](https://github.com/Fellow-Consulting-AG/docbits/tree/de/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+**Hier geht es darum, einen Barcode-/QR-Wert auszulesen und ihn bei der Validierung einem Feld zuzuordnen.** Das automatische Extrahieren strukturierter Daten aus Zahlungscodes (z. B. Swiss QR Bill oder GiroCode) — sowie das Aufteilen einer mehrseitigen Datei an Barcode-Trennseiten — übernimmt eine **andere** Einstellung: [Bar-Code / QR-Code-Extraktion](bar-code-qr-code-extraction/README.md).
 {% endhint %}

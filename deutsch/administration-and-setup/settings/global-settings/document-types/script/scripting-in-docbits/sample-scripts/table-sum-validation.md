@@ -60,14 +60,14 @@ if table:
 ## Schritt-für-Schritt-Erklärung
 
 1. **Rechnungstabelle abrufen** aus `tables_dict`
-2. **Alle LINE\_TOTAL-Werte summieren** über die Tabellenzeilen
+2. **Alle LINE_TOTAL-Werte summieren** über die Tabellenzeilen
 3. **Vergleichen** der berechneten Summe mit dem extrahierten Nettobetrag
 4. **Aktualisieren oder kennzeichnen** — entweder den Nettobetrag ersetzen oder als ungültig markieren
 
 ## Verwendete Funktionen
 
-* [get\_column\_value()](../functions/table-functions.md#get_column_value) — Spaltenwerte aus Zeilen lesen
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Nettobetrag lesen
-* [set\_amount\_value()](../functions/field-functions.md#set_amount_value) — Korrigierten Betrag setzen
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Feld als ungültig markieren
-* [set\_field\_as\_valid()](../functions/field-functions.md#set_field_as_valid) — Feld als gültig markieren
+- [get\_column\_value()](../table-functions.md#get\_column\_value) — Spaltenwerte aus Zeilen lesen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Nettobetrag lesen
+- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — Korrigierten Betrag setzen
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Feld als ungültig markieren
+- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — Feld als gültig markieren

@@ -17,11 +17,11 @@ Unterorganisationen ermöglichen es Ihnen, eine hierarchische Struktur in DocBit
 
 Die Tabelle zeigt alle vorhandenen Unterorganisationen mit:
 
-| Spalte           | Beschreibung                                                                                  |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| **Name**         | Der Name der Unterorganisation.                                                               |
-| **Beschreibung** | Eine kurze Beschreibung des Zwecks der Unterorganisation.                                     |
-| **Aktionen**     | Menü mit Optionen zum Verwalten von Benutzern, Bearbeiten oder Löschen der Unterorganisation. |
+| Spalte | Beschreibung |
+|--------|-------------|
+| **Name** | Der Name der Unterorganisation. |
+| **Beschreibung** | Eine kurze Beschreibung des Zwecks der Unterorganisation. |
+| **Aktionen** | Menü mit Optionen zum Verwalten von Benutzern, Bearbeiten oder Löschen der Unterorganisation. |
 
 Verwenden Sie die **Suchleiste**, um Unterorganisationen schnell anhand des Namens zu finden.
 

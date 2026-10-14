@@ -1,19 +1,19 @@
-# Dokumentenstatus
+# Dokumentstatus
 
-Wenn Sie die DocBits-Software zur Dokumentenverarbeitung verwenden, ist es wichtig zu verstehen, welche verschiedenen Dokumentenstatus Ihre Dateien haben können. Hier ist eine vollständige Liste aller möglichen Dokumentenstatus in DocBits:
+Wenn Sie die DocBits-Software zur Dokumentenverarbeitung verwenden, ist es wichtig, die verschiedenen Dokumentstatus zu verstehen, die Ihre Dateien haben können. Hier finden Sie eine vollständige Liste aller möglichen Dokumentstatus in DocBits:
 
 * WatchDog Start: Das Watchdog-Modul wird gestartet.
-* WatchDog Split: Das Dokument wird im Watchdog aufgeteilt.
-* WatchDog Upload: Das Dokument wird im Watchdog hochgeladen.
+* WatchDog Split: Das Dokument wird in Watchdog aufgeteilt.
+* WatchDog Upload: Das Dokument wird in Watchdog hochgeladen.
 * Upload: Das Dokument wird hochgeladen.
 * OCR: Die optische Zeichenerkennung (OCR) wird derzeit auf dem Dokument ausgeführt.
-* Klassifizierung: Das Dokument wird klassifiziert.
-* Zugferd-Import: Ein Zugferd-Dokument wird importiert.
-* Bereit zur Validierung: Das Dokument ist bereit zur Validierung.
-* Zugferd-Export: Ein Zugferd-Dokument wird exportiert.
-* Workflow: Ein Workflow wird derzeit mit diesem Dokument ausgeführt.
-* Genehmigung ausstehend: Das Dokument muss genehmigt werden.
-* Zweite Genehmigung ausstehend: Das Dokument muss ein zweites Mal genehmigt werden.
-* Automatische Buchhaltung: Die automatische Buchhaltung läuft.
+* Classification: Das Dokument wird klassifiziert.
+* Zugferd import: Ein Zugferd-Dokument wird importiert.
+* Ready for Validation: Das Dokument ist bereit zur Validierung.
+* Zugferd export: Ein Zugferd-Dokument wird exportiert.
+* Workflow: Mit diesem Dokument läuft derzeit ein Workflow.
+* Pending approval: Das Dokument muss genehmigt werden.
+* Pending second approval: Das Dokument muss ein zweites Mal genehmigt werden.
+* Auto Accounting: Die automatische Buchhaltung läuft.
 * Export: Das Dokument wird exportiert.
-* Fehler: Ein Fehler ist im Dokument aufgetreten.
+* Error: In dem Dokument ist ein Fehler aufgetreten.

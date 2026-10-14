@@ -1,4 +1,4 @@
-# DocBits Infor on Premise Customer
+# DocBits Infor On-Premise-Kunde
 
 Um Daten an einen Infor-On-Premise-Kunden zu senden, bieten wir zwei Wege an: Site-to-Site mit IPsec oder [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
 
@@ -10,16 +10,16 @@ Um Daten an einen Infor-On-Premise-Kunden zu senden, bieten wir zwei Wege an: Si
 
 ### 1. Konfigurationsinformationen:
 
-| **IPSEC-VPN-Einrichtung**       |                                                                 |
-| ------------------------------- | --------------------------------------------------------------- |
-|                                 | **Endpunkt B**                                                  |
-| **Kunde**                       | _**FELLOWPRO AG**_                                              |
-| **Name des Ansprechpartners**   | _**Daniel Lopez**_                                              |
-| **E-Mail**                      | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
-| **Endpunkt-Hardware/-Software** | _**StrongWAN**_                                                 |
-| **Standort der Firewall**       | _**Frankfurt**_                                                 |
-| **Endpunkt-IP**                 | _**46.101.133.158**_                                            |
-| **Netzwerk/Host 1**             | _**10.135.0.0/16**_                                             |
+| **IPSEC-VPN-Einrichtung**      |                                                                 |
+| ------------------------------ | --------------------------------------------------------------- |
+|                                | **Endpunkt B**                                                  |
+| **Kunde**                      | _**FELLOWPRO AG**_                                              |
+| **Name des Ansprechpartners**  | _**Daniel Lopez**_                                              |
+| **E-Mail**                     | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
+| **Endpunkt-Hardware/-Software**| _**StrongWAN**_                                                 |
+| **Standort der Firewall**      | _**Frankfurt**_                                                 |
+| **Endpunkt-IP**                | _**46.101.133.158**_                                            |
+| **Netzwerk/Host 1**            | _**10.135.0.0/16**_                                             |
 
 ### 2. Für ein IPsec-Site-to-Site-VPN müssen Sie die folgenden Ports konfigurieren und öffnen:
 

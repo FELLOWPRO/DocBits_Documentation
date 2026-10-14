@@ -20,7 +20,7 @@ Jedes Ergebnis zeigt:
 
 Verwenden Sie die Pfeiltasten oben und unten, um ein Ergebnis zu markieren, und drücken Sie dann <kbd>Enter</kbd>, um es zu öffnen. Drücken Sie <kbd>Esc</kbd>, um das Fenster zu schließen.
 
-Es werden nur Einträge angezeigt, für die Sie eine Berechtigung haben. Einträge, die nur für Administratoren bestimmt sind, sind für andere Benutzer ausgeblendet.
+<mark>Es werden nur Einträge angezeigt, für die Sie eine Berechtigung haben. Einträge, die nur für Administratoren bestimmt sind, sind für andere Benutzer ausgeblendet.</mark>
 
 ## Letzte Suchen
 
@@ -41,9 +41,9 @@ Wenn die acht sichtbaren Ergebnisse nicht ausreichen, klicken Sie unten im Fenst
 
 ## Tastaturreferenz
 
-| Taste                                         | Aktion                          |
-| --------------------------------------------- | ------------------------------- |
+| Taste | Aktion |
+|---|---|
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Schnellsuche von überall öffnen |
-| <kbd>↑</kbd> / <kbd>↓</kbd>                   | Zwischen Ergebnissen wechseln   |
-| <kbd>Enter</kbd>                              | Markiertes Ergebnis öffnen      |
-| <kbd>Esc</kbd>                                | Fenster schließen               |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Zwischen Ergebnissen wechseln |
+| <kbd>Enter</kbd> | Markiertes Ergebnis öffnen |
+| <kbd>Esc</kbd> | Fenster schließen |

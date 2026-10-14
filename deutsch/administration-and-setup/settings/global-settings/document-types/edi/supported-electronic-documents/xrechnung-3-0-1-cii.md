@@ -1,0 +1,33 @@
+---
+description: Unterstützung des elektronischen Dokuments XRECHNUNG 3.0.1 CII in DocBits
+---
+
+# 🇩🇪 XRECHNUNG 3.0.1 CII
+
+| Eigenschaft       | Wert                                        |
+| ----------------- | ------------------------------------------- |
+| **Land / Region** | Deutschland                                 |
+| **Dokumenttypen** | Rechnung, Gutschrift                        |
+| **Format**        | CII                                         |
+| **Standard**      | XRechnung 3.0.1                             |
+| **Basiert auf**   | EN 16931 (UN/CEFACT Cross Industry Invoice) |
+
+XRechnung 3.0.1 ist die aktuelle Generation des deutschen E-Rechnungsstandards und entspricht den neuesten Aktualisierungen von EN 16931. Wartungsversion mit Korrekturen an den Validierungsartefakten und Klarstellungen in der technischen Dokumentation.
+
+## Unterstützungsstatus
+
+| Komponente     | Status        |
+| -------------- | ------------- |
+| Vorschau       | ✅ Unterstützt |
+| Feldextraktion | ✅ Unterstützt |
+| Transformation | ✅ Unterstützt |
+
+## Standard-Vorschau
+
+<figure><img src="../../../../../../.gitbook/assets/xrechnung-cii-preview.png" alt="Vorschau einer XRechnung 3.0.1 CII-Rechnung in DocBits"><figcaption><p>Standard-Vorschau von DocBits für eine deutsche XRechnung 3.0.1 CII-Rechnung</p></figcaption></figure>
+
+## Verwandte Themen
+
+* [XRechnung-Konfiguration](../xrechnung/)
+* [XRechnung-Feldzuordnung](../xrechnung/mapping-xrechnung-in-docbits/)
+* [Unterstützte elektronische Dokumente](./)

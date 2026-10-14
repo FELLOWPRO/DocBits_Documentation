@@ -4,23 +4,23 @@ description: Unterstützung für das elektronische Dokument BRAZIL NFS-E in DocB
 
 # 🇧🇷 BRAZIL NFS-E
 
-| Eigenschaft       | Wert                                                                         |
-| ----------------- | ---------------------------------------------------------------------------- |
-| **Land / Region** | Brasilien                                                                    |
-| **Dokumenttypen** | Dienstleistungsrechnung (Nota Fiscal de Serviços Eletrônica)                 |
-| **Format**        | XML                                                                          |
-| **Standard**      | NFS-e 2.04 (ABRASF-Nationalstandard für kommunale Dienstleistungsrechnungen) |
-| **Locale**        | `pt_BR`                                                                      |
+| Eigenschaft          | Wert                                                                              |
+| -------------------- | --------------------------------------------------------------------------------- |
+| **Land / Region**    | Brasilien                                                                         |
+| **Dokumenttypen**    | Dienstleistungsrechnung (Nota Fiscal de Serviços Eletrônica)                      |
+| **Format**           | XML                                                                               |
+| **Standard**         | NFS-e 2.04 (ABRASF-Nationalstandard für kommunale Dienstleistungsrechnungen)      |
+| **Locale**           | `pt_BR`                                                                           |
 
-NFS-e (Nota Fiscal de Serviços Eletrônica) ist die brasilianische elektronische Rechnung für Dienstleistungen, die auf kommunaler Ebene gemäß dem ABRASF-Standard ausgestellt wird. Die Hauptsteuer ist ISS (Imposto Sobre Serviços). Lieferant/Käufer werden als `PrestadorServico` / `TomadorServico` bezeichnet. Die Dienstleistungsbeschreibung befindet sich im Element `Discriminacao`.
+NFS-e (Nota Fiscal de Serviços Eletrônica) ist die brasilianische elektronische Rechnung für Dienstleistungen, die auf kommunaler Ebene ausgestellt wird. DocBits unterstützt das Standardschema der ABRASF (Associação Brasileira das Secretarias de Finanças das Capitais). NFS-e-Dokumente verwenden eine andere XML-Struktur als NF-e: Die Hauptsteuer ist ISS (Imposto Sobre Serviços) statt ICMS, und Lieferant bzw. Käufer heißen `PrestadorServico` / `TomadorServico`. Das Element `Discriminacao` enthält die Freitextbeschreibung der Dienstleistung.
 
 ## Unterstützungsstatus
 
-| Komponente     | Status        |
-| -------------- | ------------- |
-| Vorschau       | ✅ Unterstützt |
-| Feldextraktion | ✅ Unterstützt |
-| Transformation | ✅ Unterstützt |
+| Komponente      | Status         |
+| --------------- | -------------- |
+| Vorschau        | ✅ Unterstützt |
+| Feldextraktion  | ✅ Unterstützt |
+| Transformation  | ✅ Unterstützt |
 
 ## Standard-Vorschau
 
@@ -43,11 +43,15 @@ NFS-e (Nota Fiscal de Serviços Eletrônica) ist die brasilianische elektronisch
 | `buyer_name`    | `//*[local-name()='TomadorServico']//*[local-name()='RazaoSocial']`   | Name des Dienstleistungsnehmers       |
 | `buyer_id`      | `//*[local-name()='TomadorServico']//*[local-name()='Cnpj']`          | CNPJ des Dienstleistungsnehmers       |
 
-> NFS-e beschreibt eine einzelne Dienstleistung im Element `Discriminacao`. Es wird keine `INVOICE_TABLE` extrahiert.
+> NFS-e beschreibt eine einzelne Dienstleistung im Element `Discriminacao` und nicht einzelne Positionen. Es wird keine `INVOICE_TABLE` extrahiert.
 
 ## Klassifizierungsregel
 
-DocBits erkennt BRAZIL NFS-E über `http://www.abrasf.org.br/nfse.xsd` im XML-Namensraum.
+DocBits erkennt BRAZIL NFS-E Dokumente anhand des Namensraums:
+
+```
+http://www.abrasf.org.br/nfse.xsd
+```
 
 ## Verwandte Dokumente
 

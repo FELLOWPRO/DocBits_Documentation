@@ -1,26 +1,26 @@
 # Dokumentenablauf
 
-<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Einstellungen zum Ablauf von Dokumenten"><figcaption><p>Einstellungen zum Ablauf von Dokumenten</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Einstellungen für den Dokumentenablauf"><figcaption><p>Einstellungen für den Dokumentenablauf</p></figcaption></figure>
 
-Unter **Dokumentenverarbeitung → Ablauf von Dokumenten** legen Sie fest, wie lange DocBits Ihre Dokumente aufbewahrt, bevor sie automatisch gelöscht werden. Das hilft Ihnen, Speicherplatz zu verwalten, Aufbewahrungsrichtlinien durchzusetzen und gesetzliche oder organisatorische Vorgaben zur Speicherdauer von Dokumenten einzuhalten.
+Unter **Document Processing → Documents Expiry** steuern Sie, wie lange DocBits Ihre Dokumente aufbewahrt, bevor sie automatisch gelöscht werden. Das hilft Ihnen, Speicherplatz zu verwalten, Richtlinien zur Datenaufbewahrung durchzusetzen und gesetzliche oder organisatorische Vorgaben zur Dauer der Dokumentenspeicherung einzuhalten.
 
 Zwei Einstellungen steuern die automatische Löschung:
 
-| Einstellung                        | Was sie steuert                                                                                                                   |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Dokument löschen nach**          | Wie lange ein verarbeitetes Dokument aufbewahrt wird, bevor es automatisch gelöscht wird.                                         |
-| **Fertiges Dokument löschen nach** | Wie lange ein fertiges (vollständig verarbeitetes und exportiertes) Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
+| Einstellung | Was sie steuert |
+|---------|------------------|
+| **Delete document after** | Wie lange ein verarbeitetes Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
+| **Delete finished document after** | Wie lange ein abgeschlossenes (vollständig verarbeitetes und exportiertes) Dokument aufbewahrt wird, bevor es automatisch gelöscht wird. |
 
-Für jede Einstellung wählen Sie einen Zeitraum aus dem Dropdown:
+Für jede Einstellung wählen Sie im Dropdown-Menü einen Zeitraum:
 
-<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Verfügbare Aufbewahrungszeiträume"><figcaption><p>Verfügbare Aufbewahrungszeiträume</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Optionen für den Dokumentenablauf"><figcaption><p>Verfügbare Aufbewahrungszeiträume</p></figcaption></figure>
 
-| Option         | Bedeutung                                                            |
-| -------------- | -------------------------------------------------------------------- |
-| **Standard**   | Den System-Standardzeitraum verwenden (keine eigene Überschreibung). |
-| **48 Stunden** | 48 Stunden nach der Verarbeitung löschen.                            |
-| **1 Woche**    | Nach einer Woche löschen.                                            |
-| **2 Wochen**   | Nach zwei Wochen löschen.                                            |
-| **4 Wochen**   | Nach vier Wochen löschen.                                            |
+| Option | Bedeutung |
+|--------|---------|
+| **Default** | Der Standard-Aufbewahrungszeitraum des Systems wird verwendet (keine benutzerdefinierte Abweichung). |
+| **48 Hours** | Löschung 48 Stunden nach der Verarbeitung. |
+| **1 Week** | Löschung nach einer Woche. |
+| **2 Weeks** | Löschung nach zwei Wochen. |
+| **4 Weeks** | Löschung nach vier Wochen. |
 
-Beide Einstellungen stellen sicher, dass Dokumente nicht länger als nötig im System verbleiben – das vermeidet unnötigen Speicherverbrauch und hält den Dokumenten-Workflow übersichtlich. Sie sind besonders wichtig für Organisationen, die bestimmte regulatorische Anforderungen an die Dokumentenaufbewahrung erfüllen müssen.
+Beide Einstellungen stellen sicher, dass Dokumente nicht länger als nötig im System verbleiben. So vermeiden Sie unnötigen Speicherverbrauch und halten den Dokumenten-Workflow übersichtlich. Besonders wichtig sind sie für Organisationen, die bestimmte regulatorische Anforderungen an die Dokumentenaufbewahrung erfüllen müssen.

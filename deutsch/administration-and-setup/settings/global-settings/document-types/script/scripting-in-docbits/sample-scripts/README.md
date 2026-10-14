@@ -5,34 +5,29 @@ Produktionsreife Skriptbeispiele für häufige DocBits-Automatisierungsanwendung
 ## Beispiele nach Anwendungsfall
 
 ### Datenvalidierung
-
-* [Lieferanten-Lookup-Validierung](lookup-supplier-validation.md) — Lieferant gegen Stammdaten validieren
-* [Tabellensummen-Validierung](table-sum-validation.md) — Positionssummen mit Nettobetrag abgleichen
+- [Lieferanten-Lookup-Validierung](lookup-supplier-validation.md) — Lieferant gegen Stammdaten validieren
+- [Tabellensummen-Validierung](table-sum-validation.md) — Positionssummen mit Nettobetrag abgleichen
 
 ### Automatisierung
-
-* [Automatisches PO-Matching](auto-po-matching.md) — Automatisches PO-Matching auslösen
-* [Auto-Export nach Bedingungen](status-auto-export.md) — Validierung für risikoarme Rechnungen überspringen
-* [Fälligkeitsberechnung](due-date-calculation.md) — Zahlungsbedingungen mit Wochenend-Überspringung berechnen
+- [Automatisches PO-Matching](auto-po-matching.md) — Automatisches PO-Matching auslösen
+- [Auto-Export nach Bedingungen](status-auto-export.md) — Validierung für risikoarme Rechnungen überspringen
+- [Fälligkeitsberechnung](due-date-calculation.md) — Zahlungsbedingungen mit Wochenend-Überspringung berechnen
 
 ### Geschäftsregeln
-
-* [Steuercode-Erkennung](tax-code-detection.md) — Steuercode aus Volltext und Beträgen ermitteln
-* [Aufgabe bei hohem Betrag](task-high-amount.md) — Genehmigungsaufgabe für große Rechnungen erstellen
-* [Dynamische Pflichtfelder](dynamic-required-fields.md) — Pflichtfelder basierend auf Währung anpassen
+- [Steuercode-Erkennung](tax-code-detection.md) — Steuercode aus Volltext und Beträgen ermitteln
+- [Aufgabe bei hohem Betrag](task-high-amount.md) — Genehmigungsaufgabe für große Rechnungen erstellen
+- [Dynamische Pflichtfelder](dynamic-required-fields.md) — Pflichtfelder basierend auf Währung anpassen
 
 ### Fulltext & Vector Search
-
-* [Duplikat-Rechnungserkennung](duplicate-invoice-detection.md) — Duplikate per Volltextsuche finden
-* [Ähnliche Dokumente erkennen](similar-document-detection.md) — Ähnliche Dokumente per Vektorsuche markieren
-* [Compliance-Textsuche](compliance-text-search.md) — Nach Compliance-Schlüsselwörtern suchen (z.B. Reverse Charge)
-* [ERP-Lieferanten-Validierung](erp-vendor-validation.md) — Lieferant gegen ERP-Stammdaten prüfen
-* [Fehlende Felder aus Dokumenthistorie füllen](fill-missing-fields-from-history.md) — Felder automatisch aus vergangenen Dokumenten füllen
+- [Duplikat-Rechnungserkennung](duplicate-invoice-detection.md) — Duplikate per Volltextsuche finden
+- [Ähnliche Dokumente erkennen](similar-document-detection.md) — Ähnliche Dokumente per Vektorsuche markieren
+- [Compliance-Textsuche](compliance-text-search.md) — Nach Compliance-Schlüsselwörtern suchen (z.B. Reverse Charge)
+- [ERP-Lieferanten-Validierung](erp-vendor-validation.md) — Lieferant gegen ERP-Stammdaten prüfen
+- [Fehlende Felder aus Dokumenthistorie füllen](fill-missing-fields-from-history.md) — Felder automatisch aus vergangenen Dokumenten füllen
 
 ### Legacy-Beispiele
-
-* [Berechnung der Gesamtkosten](calculating-total-charges-script-for-docbits-1.md) — Fracht- und Verpackungsbeträge summieren
-* [Leere Zeilen löschen](delete-lines-with-empty-quantity-and-amount.md) — Zeilen mit Menge/Betrag null entfernen
-* [Exportzertifikat-Referenznummern](formatting-export-certificate-reference-numbers-script-for-docbits.md) — Referenznummern mit führenden Nullen auffüllen
-* [Erweiterte Rechnungsnummern](generating-extended-invoice-numbers-script-for-docbits-1.md) — Rechnungs-ID und Bestellnummer verketten
-* [USD als Standardwährung](usd-as-default-currency.md) — USD als Standardwährung festlegen
+- [Berechnung der Gesamtkosten](calculating-total-charges-script-for-docbits-1.md) — Fracht- und Verpackungsbeträge summieren
+- [Leere Zeilen löschen](delete-lines-with-empty-quantity-and-amount.md) — Zeilen mit Menge/Betrag null entfernen
+- [Exportzertifikat-Referenznummern](formatting-export-certificate-reference-numbers-script-for-docbits.md) — Referenznummern mit führenden Nullen auffüllen
+- [Erweiterte Rechnungsnummern](generating-extended-invoice-numbers-script-for-docbits-1.md) — Rechnungs-ID und Bestellnummer verketten
+- [USD als Standardwährung](usd-as-default-currency.md) — USD als Standardwährung festlegen

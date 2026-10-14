@@ -1,4 +1,4 @@
-# Our Document Priority System
+# Unser Dokumenten-Prioritätssystem
 
 In unserem Dokumentenverarbeitungssystem bearbeiten wir täglich ein großes Volumen an Dokumenten von mehreren Kunden. Um sicherzustellen, dass die Dokumente jedes Kunden zeitnah verarbeitet werden, haben wir ein ausgeklügeltes Prioritätssystem implementiert. Dieses System passt die Prioritäten dynamisch an die Anzahl der ausstehenden Dokumente eines Kunden an und gewährleistet so **Fairness** und **Effizienz**. Schauen wir uns an, wie dieses Prioritätssystem funktioniert und wann der Aufgabenzähler zurückgesetzt wird.
 

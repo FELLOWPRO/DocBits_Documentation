@@ -32,8 +32,8 @@ Jede Gruppe enthält spezifische Felder. Klicken Sie auf eine Gruppe, um sie zu 
 
 Damit Fuzzy-Daten korrekt funktionieren, müssen die relevanten **Masterdaten** importiert werden. Ohne dies hat das System keine Referenzdaten zur Verwendung. Hier erfahren Sie, wie Sie Masterdaten importieren:
 
-{% content-ref url="../../../infor-integration-and-configuration/importing-customer-master-data/" %}
-[importing-customer-master-data](../../../infor-integration-and-configuration/importing-customer-master-data/)
+{% content-ref url="../../../setup/importing-customer-master-data/" %}
+[importing-customer-master-data](../../../setup/importing-customer-master-data/)
 {% endcontent-ref %}
 
 ## **Verwalten von Nachschlagegruppen**
@@ -51,13 +51,15 @@ Jede Nachschlagegruppe ist standardmäßig **aktiviert**, kann jedoch durch Klic
 
 Es gibt **zwei Möglichkeiten**, eine Nachschlagekonfiguration zu erstellen:
 
-1.  **Duplizieren einer vorhandenen Nachschlagegruppe**\\
+1.  **Duplizieren einer vorhandenen Nachschlagegruppe**\
+
 
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZUlPcWGrx1oITQS3tgZP%252Fimage.png%3Falt%3Dmedia%26token%3D59fb300d-836e-40d0-84b7-4a405cf7f321\&width=768\&dpr=4\&quality=100\&sign=3442db8f\&sv=2)
 
     * Dies kopiert alle Informationen und Felder aus einer vorhandenen Gruppe.
     * Es muss nur ein **neuer Name** angegeben werden.
-2.  **Erstellen einer Nachschlagegruppe von Grund auf neu**\\
+2.  **Erstellen einer Nachschlagegruppe von Grund auf neu**\
+
 
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FNbEpo2p5Q8D1d7DUchBF%252Fimage.png%3Falt%3Dmedia%26token%3D401314b5-44d0-47df-b3e6-69fea83cce82\&width=768\&dpr=4\&quality=100\&sign=1d0ce322\&sv=2)
 
@@ -75,7 +77,8 @@ Jede Gruppe enthält Felder, die je nachdem, ob es sich um Standardfelder oder b
 
 ### **Standardfelder**
 
-*   Gekennzeichnet mit einem **"Standard" Tag**.\\
+*   Gekennzeichnet mit einem **"Standard" Tag**.\
+
 
     <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fh37McVpB0tBo5wqiAttR%252Fimage.png%3Falt%3Dmedia%26token%3Dcabce083-83a5-4881-a64f-88a8757df49b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=b3739019&#x26;sv=2" alt="" width="375"></div>
 * **Kann nur angezeigt**, nicht bearbeitet oder gelöscht werden.
@@ -90,7 +93,8 @@ Jede Gruppe enthält Felder, die je nachdem, ob es sich um Standardfelder oder b
 
 Um ein neues Feld innerhalb einer Gruppe hinzuzufügen:
 
-1.  Klicken Sie innerhalb der relevanten Gruppe auf **"Erstellen"**.\\
+1.  Klicken Sie innerhalb der relevanten Gruppe auf **"Erstellen"**.\
+
 
     ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FvmIXTEQQHKKNbvTJj1b4%252Fimage.png%3Falt%3Dmedia%26token%3D8569867b-9f5b-4865-90bd-f2e41e846979\&width=768\&dpr=4\&quality=100\&sign=603cb7df\&sv=2)
 2. Geben Sie die folgenden Details an:
@@ -109,7 +113,8 @@ Um ein neues Feld innerhalb einer Gruppe hinzuzufügen:
 
 ## **Letzter Schritt: Hinzufügen von Feldern zum Layout**
 
-Nachdem Sie die Fuzzy-Datenfelder konfiguriert haben, **stellen Sie sicher, dass Sie sie mithilfe des Layout-Editors zum Layout hinzufügen**. Wenn Felder nicht zum Layout hinzugefügt werden, stehen sie nicht zur Verfügung.\\
+Nachdem Sie die Fuzzy-Datenfelder konfiguriert haben, **stellen Sie sicher, dass Sie sie mithilfe des Layout-Editors zum Layout hinzufügen**. Wenn Felder nicht zum Layout hinzugefügt werden, stehen sie nicht zur Verfügung.\
+
 
 {% content-ref url="../../settings/global-settings/document-types/layout-manager/" %}
 [layout-manager](../../settings/global-settings/document-types/layout-manager/)
@@ -153,7 +158,13 @@ Die **Konfliktverarbeitung (Conflict Handler)** entscheidet:
 
 In allen Beispielen hat das Dokument eine Steuernummer und einen Lieferantennamen, und beide Felder sind **Durchsuchbar**.
 
-<table><thead><tr><th width="150">Steuernummer findet</th><th width="150">Name findet</th><th width="150">Alle abgleichen aus + Return None</th><th width="150">Alle abgleichen ein + Return None</th><th width="150">Alle abgleichen aus + Best Score</th></tr></thead><tbody><tr><td>nur A</td><td>A und B</td><td>leer</td><td><strong>A</strong></td><td><strong>A</strong></td></tr><tr><td>A und B</td><td>nur B</td><td>leer</td><td><strong>B</strong></td><td><strong>B</strong></td></tr><tr><td>A, B und C</td><td>C, D und E</td><td>leer</td><td><strong>C</strong></td><td><strong>C</strong></td></tr><tr><td>A, B und C</td><td>B, C und D</td><td>leer</td><td>leer</td><td>B oder C, nicht verlässlich</td></tr><tr><td>nur A</td><td>nichts</td><td><strong>A</strong></td><td>leer</td><td><strong>A</strong></td></tr></tbody></table>
+<table><thead><tr><th width="150">Steuernummer findet</th><th width="150">Name findet</th><th width="150">Alle abgleichen aus + Return None</th><th width="150">Alle abgleichen ein + Return None</th><th width="150">Alle abgleichen aus + Best Score</th></tr></thead><tbody>
+<tr><td>nur A</td><td>A und B</td><td>leer</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A und B</td><td>nur B</td><td>leer</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B und C</td><td>C, D und E</td><td>leer</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B und C</td><td>B, C und D</td><td>leer</td><td>leer</td><td>B oder C, nicht verlässlich</td></tr>
+<tr><td>nur A</td><td>nichts</td><td><strong>A</strong></td><td>leer</td><td><strong>A</strong></td></tr>
+</tbody></table>
 
 So lesen Sie die Tabelle:
 

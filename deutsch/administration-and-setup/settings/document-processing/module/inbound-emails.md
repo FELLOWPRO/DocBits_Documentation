@@ -4,10 +4,10 @@
 
 DocBits kann Dokumente direkt aus E-Mails übernehmen — ohne manuelles Hochladen. Es gibt **zwei Wege**, E-Mail-Dokumente einzuspielen, beide unter **Einstellungen → Dokumentverarbeitung → Import**:
 
-| Methode                                          | Funktionsweise                                                                                                                                                          | Am besten für                                                                                    |
-| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| **E-Mail-Import-Konto**                          | DocBits verbindet sich mit einem Postfach, das Ihnen gehört (**IMAP**, **OAuth Office365** oder **OAuth Office365 – Tenant**), und importiert die gefundenen Dokumente. | Ein dediziertes Postfach, das Ihre Dokumente bereits empfängt (z. B. `rechnungen@ihrefirma.de`). |
-| **Weitergeleitete E-Mails (Eingehende E-Mails)** | DocBits stellt Ihnen eine eindeutige Adresse bereit; autorisierte Absender können Dokumente dorthin **weiterleiten**.                                                   | Spontanes Weiterleiten von vielen Absendern, ohne Postfach-Zugangsdaten zu teilen.               |
+| Methode | Funktionsweise | Am besten für |
+|---------|----------------|---------------|
+| **E-Mail-Import-Konto** | DocBits verbindet sich mit einem Postfach, das Ihnen gehört (**IMAP**, **OAuth Office365** oder **OAuth Office365 – Tenant**), und importiert die gefundenen Dokumente. | Ein dediziertes Postfach, das Ihre Dokumente bereits empfängt (z. B. `rechnungen@ihrefirma.de`). |
+| **Weitergeleitete E-Mails (Eingehende E-Mails)** | DocBits stellt Ihnen eine eindeutige Adresse bereit; autorisierte Absender können Dokumente dorthin **weiterleiten**. | Spontanes Weiterleiten von vielen Absendern, ohne Postfach-Zugangsdaten zu teilen. |
 
 Sie können jede Methode einzeln oder beide zusammen verwenden.
 
@@ -64,7 +64,7 @@ Sobald es aktiviert ist, erscheint unter **Einstellungen → Dokumentverarbeitun
 Klicken Sie auf **Speichern**, um Ihre Änderungen zu übernehmen.
 
 {% hint style="info" %}
-**Welche Anhänge werden importiert?** DocBits importiert die unterstützten Dokumentanhänge — die vollständige Liste der Dateitypen finden Sie unter [Import → E-Mail-Import](../import/#email-import) — und entpackt weitergeleitete `.eml`-Nachrichten sowie Outlook-`winmail.dat`-Anhänge (TNEF), um die darin enthaltenen Dokumente zu importieren. Die Erkennung basiert zudem auf dem **tatsächlichen Dateiinhalt**, sodass Anhänge, die ein weiterleitender Mailserver mit einem generischen Typ (`application/octet-stream`) neu kennzeichnet, dennoch korrekt importiert werden. Inline-Bilder (Signatur-Logos / eingebettete Grafiken) werden ignoriert.
+**Welche Anhänge werden importiert?** DocBits importiert die unterstützten Dokumentanhänge — die vollständige Liste der Dateitypen finden Sie unter [Import → E-Mail-Import](../import/README.md#email-import) — und entpackt weitergeleitete `.eml`-Nachrichten sowie Outlook-`winmail.dat`-Anhänge (TNEF), um die darin enthaltenen Dokumente zu importieren. Die Erkennung basiert zudem auf dem **tatsächlichen Dateiinhalt**, sodass Anhänge, die ein weiterleitender Mailserver mit einem generischen Typ (`application/octet-stream`) neu kennzeichnet, dennoch korrekt importiert werden. Inline-Bilder (Signatur-Logos / eingebettete Grafiken) werden ignoriert.
 {% endhint %}
 
 ### Wann welche Methode

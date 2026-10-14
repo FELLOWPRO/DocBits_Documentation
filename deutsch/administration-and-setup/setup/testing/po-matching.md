@@ -1,21 +1,22 @@
 # PO Matching
 
-When it comes to testing your PO Matching configuration, you will need to create a Purchase order in LN/M3 in order to check whether INFOR is synced with DocBits.&#x20;
+Um Ihre PO-Matching-Konfiguration zu testen, müssen Sie in LN/M3 eine Bestellung (Purchase Order) anlegen, um zu prüfen, ob INFOR mit DocBits synchronisiert ist.&#x20;
 
-## Creating a Purchase Order in INFOR
+## Bestellung in INFOR anlegen
 
 * LN: https://docs.infor.com/ln/10.4/en-us/lnolh/docs/ln\_10.4\_procpoug\_\_en-us.pdf&#x20;
 * M3: https://docs.infor.com/m3udi/16.x/en-us/m3beud/default.html?helpcontent=ois610.html&#x20;
 
-Once you have created your purchase order, go to Settings → Master Data Lookup and search for the purchase order number of the PO you just created as it should now appear in your purchase order master data in DocBits.
+Nachdem Sie Ihre Bestellung angelegt haben, gehen Sie zu Settings → Master Data Lookup und suchen Sie nach der Bestellnummer der soeben angelegten Bestellung. Sie sollte nun in Ihren Bestellstammdaten in DocBits erscheinen.
 
 ![](https://lh7-us.googleusercontent.com/JKGJdww6uF6U5mc1s1X\_uCcEMPYeqcikfrFOFjxpxpuaNjw-XmzNmIV2G2x6R-ZpwN2KlZACQe5Hs\_UB26klGU5XZyu6srVVLPVkS9AgEDZ1SO75YF-4ZTIt-aAuxoyyoW5sNPLsl0UxXwk193QNrFs)
 
-You should see your unique PO number here, this means that DocBits and INFOR are correctly synced.
+Hier sollte Ihre eindeutige Bestellnummer angezeigt werden. Das bedeutet, dass DocBits und INFOR korrekt synchronisiert sind.
 
-Now upload your invoice that matches the quantity and unit prices of the purchase order you created. Validate the document and select PO Matching on the validation screen.
+Laden Sie nun eine Rechnung hoch, die in Menge und Einzelpreisen mit der von Ihnen angelegten Bestellung übereinstimmt. Validieren Sie das Dokument und wählen Sie auf dem Validierungsbildschirm PO Matching.
 
-The PO and invoice line items should automatically match, then simply select the export option and check whether or not the document gets exported without any errors. If you do encounter an export error, create a ticket for the DocBits support team to assist you. If you are unsure of how to create a ticket within DocBits, please consult our DocBits Overview documentation for assistance.
+Die Positionen von Bestellung und Rechnung sollten automatisch zugeordnet werden. Wählen Sie anschließend die Exportoption und prüfen Sie, ob das Dokument ohne Fehler exportiert wird. Wenn ein Exportfehler auftritt, erstellen Sie ein Ticket für das DocBits-Support-Team, das Ihnen weiterhilft. Falls Sie nicht wissen, wie Sie in DocBits ein Ticket erstellen, lesen Sie bitte unsere Dokumentation „DocBits Overview“.
 
 \
+
 

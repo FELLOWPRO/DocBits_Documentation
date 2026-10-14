@@ -15,20 +15,21 @@ DocBits unterstützt alle wichtigen Versionen von ZUGFeRD, einschließlich:
 * **2.3** (entspricht FACTUR-X 1.07.2)
 * **2.3.2**
 
-#### Standard-Aktivierung und Modifikation
+#### Standard-Aktivierung und Änderung
 
-Der ZUGFeRD-Standard ist standardmäßig immer aktiv, Sie können jedoch bei Bedarf Änderungen daran vornehmen.
+Der ZUGFeRD-Standard ist standardmäßig immer aktiv, Sie können ihn jedoch bei Bedarf anpassen.
 
 ### **Schritte zur Änderung der ZUGFeRD-Einstellungen:**
 
 1. Navigieren Sie zu **Einstellungen → Globale Einstellungen → Dokumententypen → Rechnung**.
-2. Klicken Sie auf **E-Doc**.
+2. Klicken Sie auf **E-Doc**.\\
 3. Eine Liste aller verfügbaren E-Docs wird angezeigt.
-4. Suchen Sie die **ZUGFeRD**-Version, die Sie ändern möchten.
+4. Suchen Sie die **ZUGFeRD**-Version, die Sie ändern möchten.\\
 
 ## **Konfiguration von Transformation und XML-Pfad:**
 
-In den **Transformations-Einstellungen** können Sie den Pfad definieren, um bestimmte Informationen innerhalb der XML-Datei zu finden und in einer neuen Struktur zu speichern, was den Zugriff auf die Daten erleichtert. <mark style="color:red;">**Hinweis**</mark>: Wenn Sie diese Funktionalität nutzen, müssen Sie die neu erstellten XML-Pfade verwenden, nicht die ursprünglichen XML-Pfade, in der **Vorschau** und dem **Extraktionspfad**.
+In den **Transformations-Einstellungen** können Sie den Pfad definieren, um bestimmte Informationen innerhalb der XML-Datei zu finden und in einer neuen Struktur zu speichern, was den Zugriff auf die Daten erleichtert.\
+<mark style="color:red;">**Hinweis**</mark>: Wenn Sie diese Funktionalität nutzen, müssen Sie in der **Vorschau** und im **Extraktionspfad** die neu erstellten XML-Pfade verwenden, nicht die ursprünglichen XML-Pfade.
 
 ### **Schritte zur Änderung der Transformationsdatei:**
 
@@ -43,9 +44,9 @@ In den **Transformations-Einstellungen** können Sie den Pfad definieren, um bes
 
 * Die **Vorschaudatei** wird nur für **FACTUR-X** verwendet und nicht für **ZUGFeRD**. ZUGFeRD verwendet das Original-**PDF**.
 
-## Vorschau PDF Konfiguration
+## Vorschau-PDF-Konfiguration
 
-Die **Vorschau PDF Konfiguration** wird verwendet, um eine benutzerlesbare Version des Dokuments zu erstellen. Sie können sie mit HTML an Ihre Bedürfnisse anpassen.
+Die **Vorschau-PDF-Konfiguration** wird verwendet, um eine für Benutzer lesbare Version des Dokuments zu erzeugen. Sie können sie mit HTML an Ihre Bedürfnisse anpassen.
 
 ### **Schritte zur Änderung der Vorschaudatei:**
 
@@ -56,9 +57,9 @@ Die **Vorschau PDF Konfiguration** wird verwendet, um eine benutzerlesbare Versi
 5. Legen Sie den gewünschten Pfad für die Datenextraktion fest.
 6. Klicken Sie auf **Speichern**.
 
-## Extraktionspfade Konfiguration
+## Konfiguration der Extraktionspfade
 
-Die **Extraktionspfade Konfiguration** wird verwendet, um Daten zu extrahieren und Felder in der **Validierungsmaske** zu füllen, wie z.B. die Rechnungstabelle oder die im Rechnungslayout konfigurierten Felder.
+Die **Konfiguration der Extraktionspfade** wird verwendet, um Daten zu extrahieren und Felder in der **Validierungsmaske** zu füllen, wie z. B. die Rechnungstabelle oder die im Rechnungslayout konfigurierten Felder.
 
 ### **Schritte zur Änderung der** **Extraktionspfade**:
 
@@ -66,8 +67,8 @@ Die **Extraktionspfade Konfiguration** wird verwendet, um Daten zu extrahieren u
 2. Erstellen Sie einen neuen Entwurf, indem Sie auf das **Stiftsymbol** klicken.
 3. Wählen Sie den neu erstellten Entwurf aus.
 4. Erstellen Sie ein neues Feld oder ändern Sie ein bestehendes.
-5. Die linke Seite stellt die **DocBits-Feld-ID** dar, die unter **Einstellungen → Globale Einstellungen → Dokumententypen → Rechnung → Felder** zu finden ist.
-6. Die rechte Seite stellt den in der Transformation erstellten **Pfad zum Feld** dar.
+5. Die linke Seite steht für die **DocBits-Feld-ID**, die Sie unter **Einstellungen → Globale Einstellungen → Dokumententypen → Rechnung → Felder** finden.\\
+6. Die rechte Seite steht für den **Pfad zum Feld**, das in der Transformation erstellt wurde.
 7. Klicken Sie auf **Speichern**.
 
-Durch Befolgen dieser Schritte können Sie eine genaue Datenextraktion und Validierung für ZUGFeRD-Rechnungen sicherstellen.
+Wenn Sie diese Schritte befolgen, stellen Sie eine genaue Datenextraktion und Validierung für ZUGFeRD-Rechnungen sicher.

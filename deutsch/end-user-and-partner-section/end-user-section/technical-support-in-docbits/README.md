@@ -1,4 +1,4 @@
-# Technical Support in DocBits
+# Technischer Support in DocBits
 
 ### Technischer Support in DocBits <a href="#hy7z6t7p8psl" id="hy7z6t7p8psl"></a>
 

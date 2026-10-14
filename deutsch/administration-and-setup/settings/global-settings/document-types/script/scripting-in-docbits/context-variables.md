@@ -2,7 +2,7 @@
 
 Jedes Skript erhält automatisch die folgenden Variablen in seinem Ausführungskontext. Diese müssen **nicht** importiert werden — sie stehen einfach zur Verfügung.
 
-***
+---
 
 ## Hauptvariablen
 
@@ -151,7 +151,7 @@ user       # UserAuthentication-Objekt — für API-Aufrufe wie is_supplier_vali
 **`user` ist nicht immer vollständig verfügbar:** Im Celery-Worker-Kontext (automatische Verarbeitung) hat `user` eingeschränkte Eigenschaften. Im UI-Kontext (`ON_FIELD_CHANGE`, `ON_SAVE`) ist es das vollständige Benutzerobjekt.
 {% endhint %}
 
-***
+---
 
 ## Häufige Zugriffsmuster
 

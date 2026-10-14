@@ -1,4 +1,4 @@
-# Export to M3 Mapping (API)
+# Export nach M3 Mapping (API)
 
 ### Abschnitte
 
@@ -36,9 +36,16 @@ Feld entfernen:
 #### **Verfügbare M3-API-Felder:**
 
 * Die verfügbaren M3-Felder können durch Öffnen des entsprechenden Bildschirms in M3 überprüft werden.
+
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274 (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee (1).png" alt=""><figcaption></figcaption></figure>
+
 * Auf ähnliche Weise können Sie die Feldnamen für Zeilen abrufen.
 
 ### Header:
+
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871 (1).png" alt=""><figcaption></figcaption></figure>
 
 Felderlisten-Eigenschaft: StaticFields
 

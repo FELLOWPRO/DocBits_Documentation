@@ -4,6 +4,7 @@ Um Ihre Einstellungen zu konfigurieren, klicken Sie auf das Benutzer-Icon in der
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
+
 <figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/user_config_options_2.png" alt="" width="308"><figcaption></figcaption></figure>

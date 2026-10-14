@@ -1,3 +1,1 @@
-# Importing Master Data
-
-
+# Import von Stammdaten

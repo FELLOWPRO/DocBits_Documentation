@@ -2,8 +2,8 @@
 
 Der DocBits Auto-Accounting-Workflow konsumiert zwei BODs aus Infor M3, um Kostenrechnungen mit gültigen Buchhaltungsdimensionen anzureichern:
 
-* **`Sync.CodeDefinition`** — liefert die Liste der gültigen Werte pro Buchhaltungsdimension (Kostenstelle, Projekt, Kontogruppe, …).
-* **`Sync.ChartOfAccounts`** — liefert den Kontenplan zusammen mit dem an jedem Konto hängenden Dimensions-Profil.
+- **`Sync.CodeDefinition`** — liefert die Liste der gültigen Werte pro Buchhaltungsdimension (Kostenstelle, Projekt, Kontogruppe, …).
+- **`Sync.ChartOfAccounts`** — liefert den Kontenplan zusammen mit dem an jedem Konto hängenden Dimensions-Profil.
 
 {% file src="../../../../.gitbook/assets/Sync.CodeDefinition.pdf" %}
 CodeDefinition — Original BOD Mapping Referenz (PDF)
@@ -39,23 +39,23 @@ CodeDefinition — Original BOD Mapping Referenz (PDF)
 
 ### Feldreferenz
 
-| DocBits Feld  | Beschreibung                                                                                                                                                                                                                                        |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ID`          | Primärschlüssel in `m3flexdimension`. In **Fall 1** wird der Dimensions-Code dem M3 `DocumentID/ID` vorangestellt, damit Einträge eindeutig bleiben, wenn derselbe Code in verschiedenen Dimensionen vorkommt; **Fall 2** verwendet die rohe M3-ID. |
-| `Dimension`   | Dimensionsname (z. B. Kostenstelle, Projekt). Aus `CodeValue/@listID` per `substring(..., 21)` extrahiert — siehe Hinweis unten.                                                                                                                    |
-| `ListID`      | Vollständiger, ungeschnittener `ListID`-Wert. Wird zusammen mit `Dimension` gehalten, damit der ursprüngliche Namespace-Präfix für Audit-Zwecke und Downstream-Tools erhalten bleibt.                                                               |
-| `CodeValue`   | Der eigentliche Dimensions-Code (z. B. Kostenstellen-Nummer `1000`).                                                                                                                                                                                |
-| `Description` | Menschenlesbare Beschreibung des Codes (z. B. „Marketing").                                                                                                                                                                                         |
+| DocBits Feld | Beschreibung |
+|---|---|
+| `ID` | Primärschlüssel in `m3flexdimension`. In **Fall 1** wird der Dimensions-Code dem M3 `DocumentID/ID` vorangestellt, damit Einträge eindeutig bleiben, wenn derselbe Code in verschiedenen Dimensionen vorkommt; **Fall 2** verwendet die rohe M3-ID. |
+| `Dimension` | Dimensionsname (z. B. Kostenstelle, Projekt). Aus `CodeValue/@listID` per `substring(..., 21)` extrahiert — siehe Hinweis unten. |
+| `ListID` | Vollständiger, ungeschnittener `ListID`-Wert. Wird zusammen mit `Dimension` gehalten, damit der ursprüngliche Namespace-Präfix für Audit-Zwecke und Downstream-Tools erhalten bleibt. |
+| `CodeValue` | Der eigentliche Dimensions-Code (z. B. Kostenstellen-Nummer `1000`). |
+| `Description` | Menschenlesbare Beschreibung des Codes (z. B. „Marketing"). |
 
 ### Zum Ausdruck `substring(..., 21)`
 
 Das zweite Argument der XPath-Funktion `substring()` ist eine 1-basierte Startposition — es ist **kein** `listID`-Wert. M3 emittiert `@listID` mit einem 20 Zeichen langen Namespace-Präfix (zum Beispiel `lng.m3.dimension.D1`), sodass `substring(value, 21)` den Dimensions-Code nach dem Präfix zurückliefert (`D1` im Beispiel). Wenn Ihr M3 einen anderen Präfix verwendet, muss der Offset angepasst werden — kontaktieren Sie uns bitte mit einem Beispiel-BOD, bevor Sie Auto-Accounting gegen einen nicht-standardmäßigen Mandanten konfigurieren.
 
-Die kanonische Quelle für den Dimensions-Code ist `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. Die `substring(@listID, 21)`-Form bleibt hier als Fallback für Mandanten erhalten, in denen `DocumentID/ID` nicht befüllt ist. Die Umstellung des Mappings auf `DocumentID/ID` als bevorzugte Quelle sowie die Filterung auf `CodeDefinitionVariant='Accounting Dimension'` (siehe nächster Abschnitt) ist als Verfeinerung geplant.
+Die kanonische Quelle für den Dimensions-Code ist `/SyncCodeDefinition/DataArea/CodeDefinition/DocumentID/ID`. Die `substring(@listID, 21)`-Form bleibt hier als Fallback für Mandanten erhalten, in denen `DocumentID/ID` nicht befüllt ist. Die Umstellung des Mappings auf `DocumentID/ID` als bevorzugte Quelle sowie die Filterung auf `CodeDefinitionVariant='Accounting Dimension'` (siehe nächster Abschnitt) ist als Verfeinerung geplant. <!-- tracked in DOCB-12315 -->
 
 ### Welche `CodeDefinition`-Varianten verarbeitet DocBits?
 
-`Sync.CodeDefinition` ist ein generischer BOD, den M3 für viele unterschiedliche Objekte emittiert (Buchhaltungsdimensionen, Status-Codes, Klassifikationslisten …). Für den Auto-Accounting-Workflow sind nur Einträge mit `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'` relevant. Bis der Processor diesen Filter nativ durchsetzt, empfehlen wir, im ION-DataFlow auf `CodeDefinitionVariant` zu filtern, bevor der BOD DocBits erreicht — andernfalls werden Nicht-Dimensions-`CodeDefinition`-BODs in `m3flexdimension` ingestiert und überfrachten den Picker in der Kostenrechnungs-UI.
+`Sync.CodeDefinition` ist ein generischer BOD, den M3 für viele unterschiedliche Objekte emittiert (Buchhaltungsdimensionen, Status-Codes, Klassifikationslisten …). Für den Auto-Accounting-Workflow sind nur Einträge mit `Property/NameValue[@name='CodeDefinitionVariant']='Accounting Dimension'` relevant. Bis der Processor diesen Filter nativ durchsetzt, empfehlen wir, im ION-DataFlow auf `CodeDefinitionVariant` zu filtern, bevor der BOD DocBits erreicht — andernfalls werden Nicht-Dimensions-`CodeDefinition`-BODs in `m3flexdimension` ingestiert und überfrachten den Picker in der Kostenrechnungs-UI. <!-- tracked in DOCB-12315 -->
 
 ### Wie die Dimensionen in Kostenrechnungen einfließen
 

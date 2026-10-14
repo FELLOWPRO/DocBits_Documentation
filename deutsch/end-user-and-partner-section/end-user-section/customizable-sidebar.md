@@ -35,4 +35,4 @@ Ihre Einstellungen werden beim Klick auf **Fertig** automatisch gespeichert und 
 
 Wenn in einer späteren Version eine neue Funktion zu DocBits hinzukommt, wird sie mit Standardsichtbarkeit ans Ende Ihrer Seitenleiste angefügt. Verschieben oder verbergen Sie sie im Bearbeitungsmodus, um sie an Ihre Routine anzupassen.
 
-Funktionen, für die Sie keine Berechtigung haben, werden in der Anpassungsliste nie angezeigt — Sie können nichts versehentlich aktivieren, das Ihre Rolle nicht öffnen kann.
+<mark>Funktionen, für die Sie keine Berechtigung haben, werden in der Anpassungsliste nie angezeigt — Sie können nichts versehentlich aktivieren, das Ihre Rolle nicht öffnen kann.</mark>

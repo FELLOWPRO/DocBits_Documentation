@@ -1,4 +1,4 @@
-# Aufgabe bei hohem Betrag
+# Aufgabe bei hohem Rechnungsbetrag
 
 ## Was macht dieses Skript?
 
@@ -43,6 +43,6 @@ except ValueError:
 
 ## Verwendete Funktionen
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Feldwert lesen
-* [get\_group\_by\_name()](../functions/business-logic-functions.md#get_group_by_id--get_group_by_name) — Gruppe nach Name finden
-* [create\_document\_task()](../functions/business-logic-functions.md#create_document_task) — Genehmigungsaufgabe erstellen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Feldwert lesen
+- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Gruppe nach Name finden
+- [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Genehmigungsaufgabe erstellen

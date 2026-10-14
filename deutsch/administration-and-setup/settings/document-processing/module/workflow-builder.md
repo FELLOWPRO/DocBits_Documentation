@@ -31,7 +31,7 @@ Das Einschalten des Schalters legt nicht nur einen Schalter um — es startet ei
 4. Öffnen Sie den Abschnitt **Dokumenttyp**.
 5. Finden Sie **Workflow Builder** und schalten Sie den Schalter ein.
 6. Wählen Sie im Dialog Ihren DocFlow-Plan (Standard, optional Advanced) und bestätigen Sie. DocFlow wird aktiviert, sobald das Abonnement erstellt ist.
-7. Entwerfen Sie anschließend Ihre Dokument-Workflows in DocFlow — siehe den Abschnitt [Workflow](../../../workflow/), wie Sie sie erstellen.
+7. Entwerfen Sie anschließend Ihre Dokument-Workflows in DocFlow — siehe den Abschnitt [Workflow](../../../workflow/README.md), wie Sie sie erstellen.
 
 ### Wann diese Funktion nutzen
 

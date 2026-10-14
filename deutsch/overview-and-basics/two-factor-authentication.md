@@ -56,15 +56,14 @@ Backup-Codes werden nur im Moment ihrer Erstellung angezeigt. DocBits kann sie n
 
 ## Anmelden mit 2FA
 
-1.  Geben Sie wie gewohnt Ihre E-Mail-Adresse und Ihr Passwort ein.
+1. Geben Sie wie gewohnt Ihre E-Mail-Adresse und Ihr Passwort ein.
 
     <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Der Anmeldebildschirm. Sie können sich auch ohne Passwort über <strong>Mit Passkey anmelden</strong> anmelden.</p></figcaption></figure>
-2.  DocBits fragt nach Ihrem zweiten Faktor. Wählen Sie Ihre Methode:
-
-    * **Authenticator** — geben Sie den aktuellen 6-stelligen Code aus Ihrer App ein.
-    * **E-Mail** — klicken Sie auf **Code per E-Mail senden**, um einen Code per E-Mail zu erhalten, und geben Sie ihn dann ein.
-    * **Passkey** — klicken Sie auf **Passkey verwenden** und bestätigen Sie mit Touch ID / Windows Hello / Ihrem Schlüssel.
-    * **Backup-Code** — falls Sie Ihre übliche Methode nicht verwenden können.
+2. DocBits fragt nach Ihrem zweiten Faktor. Wählen Sie Ihre Methode:
+   * **Authenticator** — geben Sie den aktuellen 6-stelligen Code aus Ihrer App ein.
+   * **E-Mail** — klicken Sie auf **Code per E-Mail senden**, um einen Code per E-Mail zu erhalten, und geben Sie ihn dann ein.
+   * **Passkey** — klicken Sie auf **Passkey verwenden** und bestätigen Sie mit Touch ID / Windows Hello / Ihrem Schlüssel.
+   * **Backup-Code** — falls Sie Ihre übliche Methode nicht verwenden können.
 
     <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Nach Ihrem Passwort fragt DocBits nach Ihrem zweiten Faktor. Wechseln Sie die Methode mit <strong>Passkey verwenden</strong> oder <strong>Code per E-Mail senden</strong> und stufen Sie das Gerät optional für 30 Tage als vertrauenswürdig ein.</p></figcaption></figure>
 3. Bei Erfolg sind Sie angemeldet.

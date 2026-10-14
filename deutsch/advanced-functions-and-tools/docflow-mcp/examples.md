@@ -89,7 +89,7 @@ Die Karte ist nun aktiv und kann in Workflows verwendet werden.
 
 ### Schritt 5: Einen Workflow mit der Karte erstellen
 
-Öffnen Sie den **DocFlow-Designer** in der Web-App, erstellen Sie einen erweiterten Workflow und fügen Sie die genehmigte Karte als Knoten hinzu, zum Beispiel einen Auslöser _Document Received_, die Karte _High Value Check_ und einen _Approval_-Knoten für den `true`-Zweig. Workflow-Graphen werden im Designer erstellt und bearbeitet; das MCP erstellt sie nicht.
+Öffnen Sie den **DocFlow-Designer** in der Web-App, erstellen Sie einen erweiterten Workflow und fügen Sie die genehmigte Karte als Knoten hinzu, zum Beispiel einen Auslöser *Document Received*, die Karte *High Value Check* und einen *Approval*-Knoten für den `true`-Zweig. Workflow-Graphen werden im Designer erstellt und bearbeitet; das MCP erstellt sie nicht.
 
 Zurück im Assistenten bestätigen Sie, dass der Workflow existiert, und lesen seine Struktur:
 
@@ -112,7 +112,7 @@ Rufen Sie `test_advanced_workflow` auf:
 
 Ueberpruefen Sie die Ausfuehrungsprotokolle, um sicherzustellen, dass jeder Knoten korrekt ausgefuehrt wurde.
 
-***
+---
 
 ## Beispiel 2: Einen Workflow mit integrierten Karten erstellen
 
@@ -134,10 +134,9 @@ Rufen Sie `sdk_list_cards_picker` auf, um alle verfuegbaren Karten mit ihren Rol
 ```
 
 Filtern Sie nach Rolle:
-
-* `is_when: true` -- Verwendung in WHEN-Knoten (Ausloeser)
-* `is_and: true` -- Verwendung in AND-Knoten (zusaetzliche Bedingungen)
-* `is_then: true` -- Verwendung in THEN-Knoten (Aktionen)
+- `is_when: true` -- Verwendung in WHEN-Knoten (Ausloeser)
+- `is_and: true` -- Verwendung in AND-Knoten (zusaetzliche Bedingungen)
+- `is_then: true` -- Verwendung in THEN-Knoten (Aktionen)
 
 ### Schritt 2: Den Workflow erstellen
 
@@ -212,7 +211,7 @@ Filtern Sie nach Rolle:
 
 Dies erstellt einen Workflow: **WHEN** das Dokument eine Rechnung ist **AND** der Betrag > 1000 **THEN** Status auf "Review" setzen.
 
-***
+---
 
 ## Beispiel 3: Karten von GitHub importieren
 

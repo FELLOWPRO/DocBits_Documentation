@@ -1,4 +1,4 @@
-# Export Module
+# Exportmodul
 
 ## Überblick
 
@@ -12,8 +12,8 @@ Die Export-Seite zeigt alle konfigurierten Export-Setups an, einschließlich der
 
 Sie finden es unter: **Settings** → **Document Processing** → **Export**
 
-<figure><img src="../../.gitbook/assets/export_list_view.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/export_settings_menu_access.png" alt=""><figcaption></figcaption></figure>
 
 Ausführliche Anleitungen zur Konfiguration der einzelnen Exporttypen, einschließlich Screenshots und Feldbeschreibungen, finden Sie im vollständigen Leitfaden:
 
-[Leitfaden zur Exportkonfiguration anzeigen](../../administration-and-setup/settings/document-processing/export/)
+[Leitfaden zur Exportkonfiguration anzeigen](../../administration-and-setup/settings/document-processing/export.md)

@@ -15,12 +15,14 @@ Um diese Funktion zu aktivieren:
 
 * **Wenn aktiviert**:
   * Die **Bestellübersicht Tabelle** erscheint im **Tabellenbereich** im **Layout Builder**.
-  *   Es wird keine Benachrichtigung angezeigt, dass das Modul deaktiviert ist.\\
+  *   Es wird keine Benachrichtigung angezeigt, dass das Modul deaktiviert ist.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_docbits_image_13.jpg" alt="DocBits Bild"><figcaption></figcaption></figure>
 * **Wenn deaktiviert**:
   * Ein Hinweis zeigt an, dass das Modul deaktiviert ist.
-  *   Die **PO-Tabelle** wird im **Validierungsbildschirm** nicht sichtbar sein.\\
+  *   Die **PO-Tabelle** wird im **Validierungsbildschirm** nicht sichtbar sein.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_docbits_image_14.jpg" alt="DocBits Bild"><figcaption></figcaption></figure>
 
@@ -43,5 +45,7 @@ Wenn die **PO-Tabelle** fehlt oder entfernt wurde, befolgen Sie diese Schritte:
 Sobald hinzugefügt und aktiviert, wird die **PO-Tabelle** im **Layout Builder** und im **Validierungsbildschirm** sichtbar sein, wenn eine **Bestellung** für eine Rechnung verfügbar ist.
 
 <figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_table_4.jpg" alt="Bestellung Tabelle Rechnung Übersicht"><figcaption></figcaption></figure>
+
+
 
 ​

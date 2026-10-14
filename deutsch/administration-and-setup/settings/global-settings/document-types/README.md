@@ -1,27 +1,55 @@
 # Dokumenttypen
 
-#### Übersicht
+{% embed url="https://youtu.be/pFz_6tvNlU4" %}
+DocBits Document Types Explained: Create, Configure & Assign Processing Settings
+{% endembed %}
 
-Der Abschnitt Dokumententypen listet alle von Docbits erkannten und verarbeiteten Dokumententypen auf. Administratoren können verschiedene Aspekte wie Layout, Felddefinitionen, Extraktionsregeln und mehr für jeden Dokumententyp verwalten. Diese Anpassung ist entscheidend, um eine genaue Datenverarbeitung und die Einhaltung organisatorischer Standards sicherzustellen.
+<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Dokumenttypen"><figcaption><p>Seite „Dokumenttypen“</p></figcaption></figure>
 
-#### Hauptfunktionen und Optionen
+## Übersicht
 
-1. **Liste der Dokumententypen**:
+Die Seite „Document Types“ listet alle Dokumenttypen auf, die DocBits erkennt und verarbeitet. Sie ist in zwei Bereiche unterteilt:
 
-* Jede Zeile repräsentiert einen Dokumententyp wie Rechnung, Gutschrift, Lieferschein usw.
-* Dokumententypen können Standard- oder benutzerdefiniert sein, wie durch Bezeichnungen wie "Standard" angezeigt.
+* **Default Document Types**: Vorkonfigurierte Typen von DocBits (Rechnung, Gutschrift, Lieferschein, Auftragsbestätigung, Vertrag, ZUGFeRD usw.). Diese können nicht gelöscht werden.
+* **Custom Document Types**: Typen, die Sie für Ihre spezifischen geschäftlichen Anforderungen erstellen. Diese können bearbeitet und gelöscht werden.
 
-2. **Layout bearbeiten**: Diese Option ermöglicht es Administratoren, die Einstellungen des Dokumentenlayouts zu ändern, einschließlich der Definition, wie das Dokument erscheint und wo sich Datenfelder befinden.
-3. **Dokumentenuntertypen**: Wenn Dokumententypen Unterkategorien haben, können Administratoren mit dieser Option Einstellungen konfigurieren, die spezifisch für jeden Untertyp sind.
-4. **Tabellenspalten**: Passen Sie an, welche Datenspalten angezeigt werden sollen, wenn der Dokumententyp in Listen oder Berichten angezeigt wird.
-5. **Felder**: Verwalten Sie die mit dem Dokumententyp verbundenen Datenfelder, einschließlich Hinzufügen neuer Felder oder Ändern vorhandener.
-6. **Modelltraining**: Konfigurieren und trainieren Sie das Modell, das zur Erkennung und Extraktion von Daten aus den Dokumenten verwendet wird. Dies kann das Festlegen von Parametern für maschinelles Lernen umfassen, die sich im Laufe der Zeit mit mehr Daten verbessern.
-7. **Regex**: Richten Sie reguläre Ausdrücke ein, die zur Extraktion von Daten aus Dokumenten basierend auf Mustern verwendet werden. Dies ist besonders nützlich für die Extraktion strukturierter Daten.
-8. **Skripte**: Schreiben oder ändern Sie Skripte, die benutzerdefinierte Verarbeitungsregeln oder Workflows für Dokumente dieses Typs ausführen.
-9. **EDI (Electronic Data Interchange)**: Konfigurieren Sie Einstellungen im Zusammenhang mit dem Austausch von Dokumenten in standardisierten elektronischen Formaten.
+## Steuerelemente pro Dokumenttyp
+
+Jede Dokumenttyp-Karte zeigt:
+
+| Steuerelement | Beschreibung |
+|---------|-------------|
+| **Activate** | Schalter, um diesen Dokumenttyp für die Verarbeitung zu aktivieren oder zu deaktivieren. |
+| **Extraction** | Schalter, um die KI-basierte Datenextraktion für diesen Typ zu aktivieren oder zu deaktivieren. |
+| **Settings** (Zahnradsymbol) | Öffnet weitere Konfigurationsoptionen für den Dokumenttyp. |
+
+## Konfigurations-Tabs
+
+Unterhalb jedes Dokumenttyps erreichen Sie die folgenden Konfigurations-Tabs:
+
+| Tab | Beschreibung |
+|-----|-------------|
+| **Labels** | Anzeigebezeichnungen und Übersetzungen für den Dokumenttyp verwalten. |
+| **Edit layout** | Anpassen, wie das Dokument in der Validierungsansicht erscheint, einschließlich der Feldpositionen. |
+| **Document Sub Types** | Unterkategorien für diesen Dokumenttyp konfigurieren (z. B. verschiedene Rechnungsformate). |
+| **Table columns** | Festlegen, welche Datenspalten in der Tabelle der Positionen erscheinen. |
+| **Fields** | Die aus dem Dokument extrahierten Datenfelder verwalten (Felder hinzufügen, bearbeiten oder entfernen). |
+| **Model Training** | Das KI-Modell zur Erkennung und Extraktion von Daten konfigurieren und trainieren. |
+| **Regex** | Reguläre Ausdrücke für die musterbasierte Datenextraktion einrichten. |
+| **Scripts** | Eigene Verarbeitungsskripte schreiben, die während der Dokumentenverarbeitung ausgeführt werden. |
+| **E-Doc** | Standards für elektronische Dokumente konfigurieren (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+
+## Benutzerdefinierte Validierungsregeln
+
+Öffnen Sie einen Dokumenttyp und wählen Sie **Custom Validation Rules**, um seine eigenen Validierungsregeln zu verwalten. Um eine vorhandene Regel wiederzuverwenden, ohne sie neu aufzubauen, folgen Sie der Anleitung [Benutzerdefinierte Validierungsregel duplizieren](duplicate-a-custom-validation-rule.md). Die Anleitung erklärt den Regelnamen, den Regelschlüssel und die Bestätigungssteuerelemente.
+
+## Einen benutzerdefinierten Dokumenttyp erstellen
+
+1. Scrollen Sie nach unten zum Abschnitt **Custom Document Types**.
+2. Klicken Sie auf **+ New**.
+3. Geben Sie einen Namen für den neuen Dokumenttyp ein.
+4. Konfigurieren Sie Felder, Layout und Extraktionseinstellungen nach Bedarf.
 
 {% hint style="info" %}
-Siehe [Einrichten von Dokumententypen](https://github.com/Fellow-Consulting-AG/docbits/tree/de/readme/admin-section/setup/document-types/README.md)
+Detaillierte Anleitungen zur Einrichtung finden Sie unter [Dokumenttyp einrichten](../../../setup/document-types/).
 {% endhint %}
-
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2489" %}

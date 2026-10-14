@@ -1,17 +1,60 @@
-# Integration
+# Integration & SSO
 
-Die Integrations Einstellungen spielen eine entscheidende Rolle für die Effizienz und Funktionalität von Docbits, da sie eine nahtlose Interaktion mit anderen Tools und Diensten ermöglichen. Hier sind einige Gründe, warum die ordnungsgemäße Konfiguration der Integrations Einstellungen wichtig ist:
+<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="Integration & SSO"><figcaption><p>Seite Integration & SSO</p></figcaption></figure>
 
-## API-Schlüssel
+Auf der Seite Integration & SSO verwalten Sie API-Schlüssel für den programmatischen Zugriff, Organisations-IDs und die Konfiguration von Single Sign-On (SSO).
 
-<figure><img src="https://lh7-us.googleusercontent.com/lFBSwUxiK35KkhYh46gw35BsD10rvHK6_1_Tnf449-jd2WJleDhxPzHpUmNdbP1mst5TkLBpGj5iJyiR_Dxpbta6S9p4Rb3FWj7RIc628Kw-RgqpVvLDYggagjuFI1DdLfOJqkTWHBE0JLQRolTWvOc" alt="" width="563"><figcaption></figcaption></figure>
+## API Key
 
-Die Integrations Einstellungen spielen eine entscheidende Rolle für die Effizienz und Funktionalität von DocBits, da sie eine nahtlose Interaktion mit anderen Tools und Diensten ermöglichen. Hier sind einige Gründe, warum die ordnungsgemäße Konfiguration der Integrations Einstellungen wichtig ist:
+Verwalten Sie API-Schlüssel, die für den programmatischen Zugriff auf DocBits verwendet werden.
 
-* **Erhöhte Effizienz:** Die Integration mit anderen Tools und Diensten kann Arbeitsabläufe optimieren und die Effizienz steigern. Zum Beispiel können Dokumente automatisch zwischen Docbits und einem CRM-System ausgetauscht werden, was manuelle Eingaben reduziert und die Produktivität erhöht.
-* **Datenkonsistenz:** Die Integration ermöglicht den nahtlosen Austausch von Daten zwischen verschiedenen Systemen, was die Datenkonsistenz und -genauigkeit verbessert. Dies vermeidet Inkonsistenzen oder doppelte Dateneingaben, die zu Fehlern führen könnten.
-* **Echtzeit-Updates:** Die Integration ermöglicht Echtzeit-Updates zwischen verschiedenen Plattformen, sodass die Benutzer immer die neuesten Informationen haben. Dies ist besonders wichtig für kritische Geschäftsprozesse, die Echtzeitinformationen erfordern.
-* **Aufgabenautomatisierung:** Die Integration ermöglicht die Automatisierung routinemäßiger Aufgaben, wodurch Zeit und Ressourcen gespart werden. Zum Beispiel können Benachrichtigungen automatisch ausgelöst werden, wenn ein bestimmtes Ereignis in einem anderen System eintritt, ohne dass manuelles Eingreifen erforderlich ist.
-* **Verbesserte Benutzererfahrung:** Eine gut konfigurierte Integration sorgt für eine nahtlose Benutzererfahrung, da die Benutzer nicht zwischen verschiedenen Systemen wechseln müssen, um auf relevante Informationen zuzugreifen. Dies verbessert die Benutzerzufriedenheit und trägt zur Effizienz bei.
+| Spalte | Beschreibung |
+|--------|-------------|
+| **Key** | Der maskierte Wert des API-Schlüssels. Klicken Sie auf das Kopiersymbol, um den vollständigen Schlüssel zu kopieren. |
+| **Name** | Ein aussagekräftiger Name für den Schlüssel. |
+| **Expires** | Ablaufdatum (oder „Never“). |
+| **Last Used** | Wann der Schlüssel zuletzt verwendet wurde. |
+| **Status** | Active oder Inactive. |
+| **Actions** | Drei-Punkte-Menü zum Widerrufen oder Löschen. |
 
-Um die Integrations Einstellungen ordnungsgemäß zu konfigurieren, ist es wichtig, die Anforderungen der Organisation zu verstehen und sicherzustellen, dass die Integration nahtlos in bestehende Arbeitsabläufe und Prozesse integriert wird. Dies erfordert eine gründliche Planung, Konfiguration und Überwachung der Integration, um sicherzustellen, dass sie reibungslos funktioniert und den gewünschten Wert liefert.
+Klicken Sie auf **+ Create API Key**, um einen neuen Schlüssel zu erzeugen.
+
+## ID
+
+Zeigt die Kennungen Ihrer Organisation:
+
+| Feld | Beschreibung |
+|-------|-------------|
+| **Org ID** | Die eindeutige Kennung Ihrer Organisation. |
+| **Sub Org ID** | Die ID der aktuell ausgewählten Unterorganisation. |
+
+## SSO Service Provider Settings
+
+DocBits-SSO-Konfigurationswerte, die Sie beim Einrichten Ihres Identity Providers benötigen:
+
+| Feld | Beschreibung |
+|-------|-------------|
+| **Entity ID** | Die SAML-Metadaten-URL für DocBits. |
+| **SLO URL** | URL für Single Logout. |
+| **SSO URL** | URL des Assertion Consumer Service. |
+
+Außerdem können Sie für Ihre IdP-Konfiguration **Download Certificate** und **Download Metadata** verwenden.
+
+## Identity Service Provider Settings
+
+Konfigurieren Sie Ihren externen Identity Provider (IdP):
+
+| Feld | Beschreibung |
+|-------|-------------|
+| **Tenant ID** | Die Mandantenkennung Ihres IdP. |
+| **Upload file** | Laden Sie die Metadaten-XML-Datei Ihres IdP hoch. |
+
+Klicken Sie auf **Configure**, um Ihre IdP-Einstellungen zu speichern.
+
+* **Höhere Effizienz:** Die Integration mit anderen Tools und Diensten kann Arbeitsabläufe straffen und die Effizienz steigern. Beispielsweise können Dokumente automatisch zwischen Docbits und einem CRM-System ausgetauscht werden, was manuelle Eingaben reduziert und die Produktivität erhöht
+* **Datenkonsistenz:** Die Integration ermöglicht den nahtlosen Datenaustausch zwischen verschiedenen Systemen und verbessert so Konsistenz und Genauigkeit der Daten. Das vermeidet Inkonsistenzen oder doppelte Dateneingaben, die zu Fehlern führen könnten.
+* **Aktualisierungen in Echtzeit**: Die Integration ermöglicht Aktualisierungen in Echtzeit zwischen verschiedenen Plattformen, sodass Benutzer stets die neuesten Informationen haben. Das ist besonders wichtig für kritische Geschäftsprozesse, die Informationen in Echtzeit erfordern.
+* **Automatisierung von Aufgaben:** Die Integration ermöglicht es, Routineaufgaben zu automatisieren und so Zeit und Ressourcen zu sparen. Beispielsweise können Benachrichtigungen automatisch ausgelöst werden, wenn in einem anderen System ein bestimmtes Ereignis eintritt, ohne dass ein manueller Eingriff nötig ist.
+* **Verbesserte Benutzererfahrung:** Eine gut konfigurierte Integration sorgt für eine nahtlose Benutzererfahrung, da Benutzer nicht zwischen verschiedenen Systemen wechseln müssen, um auf relevante Informationen zuzugreifen. Das steigert die Zufriedenheit der Benutzer und trägt zur Effizienz bei.
+
+Um die Integrationseinstellungen richtig zu konfigurieren, ist es wichtig, die Anforderungen der Organisation zu verstehen und sicherzustellen, dass die Integration nahtlos in bestehende Arbeitsabläufe und Prozesse eingebunden ist. Das erfordert eine sorgfältige Planung, Konfiguration und Überwachung der Integration, damit sie reibungslos funktioniert und den gewünschten Nutzen bringt.

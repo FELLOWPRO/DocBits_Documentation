@@ -1,4 +1,4 @@
-# Compliance-Textsuche
+# Compliance-Textsuche (Reverse Charge)
 
 {% hint style="info" %}
 **Verfügbar ab Version 11.48.0** — Erfordert `OPENSEARCH_ENABLED` Lizenz.
@@ -41,5 +41,5 @@ if rc_fuzzy:
 
 ## Verwendete Funktionen
 
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search)
-* [set\_field\_value()](../functions/field-functions.md#set_field_value)
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search)
+- [set\_field\_value()](../field-functions.md#set\_field\_value)

@@ -1,4 +1,4 @@
-# Invoice Automation Testing with DocBits
+# Test der Rechnungsautomatisierung mit DocBits
 
 ## Überblick
 
@@ -6,15 +6,15 @@ Dieses Dokument beschreibt den Testplan für die Rechnungsautomatisierung mit Do
 
 ## Testfälle
 
-| ID | Testfall                                                                         | Beschreibung                                                                                                                                                                                 | Status    |
-| -- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1  | Kostenrechnungen                                                                 | Rechnungen ohne Bestellung werden in DocBits erfolgreich verarbeitet und als „Kostenrechnung" nach LN exportiert.                                                                            | ZU TESTEN |
-| 2  | Bestellbezogene Rechnung mit perfekter Übereinstimmung                           | Bestellbezogene Rechnungen werden in DocBits erfolgreich verarbeitet, mit einer perfekten Übereinstimmung von Rechnung zu Bestellung, da Artikelnummer, Menge und Stückpreis übereinstimmen. | ZU TESTEN |
-| 3  | Bestellbezogene Rechnungen mit abweichender Menge                                | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung bei der Menge.                                                                   | ZU TESTEN |
-| 4  | Bestellbezogene Rechnungen mit abweichendem Stückpreis                           | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung beim Stückpreis.                                                                 | ZU TESTEN |
-| 5  | Bestellbezogene Rechnungen mit abweichender oder nicht vorhandener Artikelnummer | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung oder eine nicht vorhandene Artikelnummer.                                        | ZU TESTEN |
-| 6  | Bestellbezogene Rechnungen mit einer Abweichung innerhalb der Toleranz           | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung bei Menge oder Stückpreis, die jedoch innerhalb der Toleranz liegt.              | ZU TESTEN |
-| 7  | Gutschriften                                                                     | Gutschriften werden in DocBits erfolgreich verarbeitet und nach LN exportiert. Klären Sie, ob die Beträge mit positivem oder negativem Vorzeichen exportiert werden sollen.                  | ZU TESTEN |
+| ID | Testfall                                                                    | Beschreibung                                                                                                                                                                              | Status            |
+| -- | -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| 1  | Kostenrechnungen                                                          | Rechnungen ohne Bestellung werden in DocBits erfolgreich verarbeitet und als „Kostenrechnung" nach LN exportiert.                                                                          | ZU TESTEN         |
+| 2  | Bestellbezogene Rechnung mit perfekter Übereinstimmung                    | Bestellbezogene Rechnungen werden in DocBits erfolgreich verarbeitet, mit einer perfekten Übereinstimmung von Rechnung zu Bestellung, da Artikelnummer, Menge und Stückpreis übereinstimmen. | ZU TESTEN         |
+| 3  | Bestellbezogene Rechnungen mit abweichender Menge                         | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung bei der Menge.                                                                 | ZU TESTEN         |
+| 4  | Bestellbezogene Rechnungen mit abweichendem Stückpreis                    | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung beim Stückpreis.                                                               | ZU TESTEN         |
+| 5  | Bestellbezogene Rechnungen mit abweichender oder nicht vorhandener Artikelnummer | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung oder eine nicht vorhandene Artikelnummer.                                | ZU TESTEN         |
+| 6  | Bestellbezogene Rechnungen mit einer Abweichung innerhalb der Toleranz    | Bestellbezogene Rechnungen werden in DocBits verarbeitet, aber im PO-Matching-Modul gibt es eine Abweichung bei Menge oder Stückpreis, die jedoch innerhalb der Toleranz liegt.            | ZU TESTEN         |
+| 7  | Gutschriften                                                              | Gutschriften werden in DocBits erfolgreich verarbeitet und nach LN exportiert. Klären Sie, ob die Beträge mit positivem oder negativem Vorzeichen exportiert werden sollen.                | ZU TESTEN         |
 
 ## Plan für den Test mit dem Kunden
 

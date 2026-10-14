@@ -63,4 +63,4 @@ Die Filter werden kombiniert, sodass Sie zum Beispiel mit wenigen Klicks auf „
 
 Das Menü auf einer Karte (Drei-Punkte-Schaltfläche) erlaubt es Ihnen, eine von Ihnen eingereichte Idee zu bearbeiten oder zu löschen.
 
-Das Ideenboard ist für Produktrückmeldungen gedacht, nicht für Vorfallsmeldungen. Verwenden Sie ein Support-Ticket für Probleme, die Ihre Arbeit heute blockieren.
+<mark>Das Ideenboard ist für Produktrückmeldungen gedacht, nicht für Vorfallsmeldungen. Verwenden Sie ein Support-Ticket für Probleme, die Ihre Arbeit heute blockieren.</mark>

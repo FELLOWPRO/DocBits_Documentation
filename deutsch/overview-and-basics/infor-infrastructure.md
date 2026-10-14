@@ -1,8 +1,10 @@
-# Infor Infrastructure
+# Infor-Infrastruktur
 
 ### Offener Port 443 & sichere Kommunikation
 
 Wir verstehen, wie wichtig eine sichere Datenübertragung ist. Deshalb verwenden wir den offenen Port 443, den Standardport für HTTPS, um sicherzustellen, dass alle übertragenen Daten verschlüsselt und sicher sind. Unsere SSL-gesicherten Verbindungen garantieren, dass Ihre Daten bei jedem Schritt des Prozesses geschützt sind.
+
+<figure><img src="../.gitbook/assets/secure.svg" alt="Open Port 443 &#x26; Secure Communication - DocBits"><figcaption><p>Sichere Datenübertragung</p></figcaption></figure>
 
 ### Kommunikation mit der Datenbank
 
@@ -18,6 +20,10 @@ Wir erlauben für die Kommunikation mit unseren Servern ausschließlich HTTPS-ge
 
 ### Infor Cloud
 
+<figure><img src="../.gitbook/assets/DocBits_II_infra_cloud.webp" alt=""><figcaption></figcaption></figure>
+
 ### Infor On-Prem
 
 Flexibilität ist entscheidend, und wir bieten sowohl Cloud- als auch On-Premise-Lösungen an. Mit unserer On-Premise-Option müssen keine Ports geöffnet werden, sodass die Sicherheit Ihres Netzwerks uneingeschränkt erhalten bleibt. Ob in der Cloud oder im eigenen Haus – wir haben für Sie die passende Lösung.
+
+<figure><img src="../.gitbook/assets/DocBits_II_infra-on-prem-1024x355.webp" alt=""><figcaption></figcaption></figure>

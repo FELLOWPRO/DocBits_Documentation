@@ -1,4 +1,4 @@
-# Workflow Logs
+# Workflow-Protokolle
 
 ## **Übersicht**
 

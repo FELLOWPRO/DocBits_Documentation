@@ -38,13 +38,13 @@ Ein System Admin ist in dreierlei Hinsicht besonders:
 
 ### Auf einen Blick
 
-|                                                  | Admin              | System Admin                      |
-| ------------------------------------------------ | ------------------ | --------------------------------- |
-| Voller Zugriff zur Verwaltung der Organisation   | Ja                 | Ja                                |
-| Wie viele möglich sind                           | So viele wie nötig | Nur einer                         |
-| Nach dem Anlegen des Benutzers änderbar          | Ja, jederzeit      | Nein, nur beim Anlegen festgelegt |
-| Für automatische Aktionen im Hintergrund genutzt | Nein               | Ja                                |
-| Verfügt immer über Admin-Rechte                  | –                  | Ja                                |
+| | Admin | System Admin |
+|---|---|---|
+| Voller Zugriff zur Verwaltung der Organisation | Ja | Ja |
+| Wie viele möglich sind | So viele wie nötig | Nur einer |
+| Nach dem Anlegen des Benutzers änderbar | Ja, jederzeit | Nein, nur beim Anlegen festgelegt |
+| Für automatische Aktionen im Hintergrund genutzt | Nein | Ja |
+| Verfügt immer über Admin-Rechte | – | Ja |
 
 ## Bewährte Sicherheitspraktiken
 

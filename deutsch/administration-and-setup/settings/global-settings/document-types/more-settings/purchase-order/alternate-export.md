@@ -19,7 +19,7 @@ Diese Seite erklärt, wie Sie diese Option einrichten.
 
 Sobald die Einstellung aktiviert ist, können Sie einen Dokumentstatus auswählen und eine vordefinierte Exportkonfiguration zuweisen.
 
-Weitere Informationen zur Einrichtung von Exportkonfigurationen finden Sie [hier](https://github.com/Fellow-Consulting-AG/docbits/tree/de/readme/admin-section/settings/document-processing/export.md).
+Weitere Informationen zur Einrichtung von Exportkonfigurationen finden Sie [hier](../../../../../../admin-section/settings/document-processing/export.md).
 
 Sie können zwischen den folgenden Status wählen:
 

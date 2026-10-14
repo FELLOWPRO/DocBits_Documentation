@@ -1,8 +1,10 @@
-# Lieferanten-Portal
+# Lieferantenportal
 
 ## Übersicht
 
 {% embed url="https://youtu.be/R5IrCpiP__4" %}
+{% endembed %}
+
 
 Diese Seite erklärt, wie man das **Lieferanten-Portal** aktiviert und nutzt, sowie wo man alle relevanten Einstellungen findet. Das Lieferanten-Portal ermöglicht es Ihnen, Lieferanten zu **DocBits** einzuladen. Sobald der Zugang gewährt ist, können Lieferanten sich anmelden, um den Status ihrer **Bestellungen** und **Rechnungen** direkt in **DocBits** einzusehen.
 

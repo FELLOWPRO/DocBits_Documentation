@@ -1,4 +1,4 @@
-# Exportzertifikat-Referenznummern
+# Formatierung von Exportzertifikat-Referenznummern - Skript für DocBits
 
 Dieses Dokument beschreibt das Skript "Formatierung von Exportzertifikat-Referenznummern", das darauf abzielt, Referenznummern auf Exportzertifikaten in DocBits zu standardisieren. Eine ordnungsgemäße Formatierung stellt sicher, dass Referenznummern den Anforderungen externer Systeme oder behördlicher Vorschriften entsprechen.
 

@@ -6,7 +6,7 @@ Die Seite **Validierungsregeln** (**E-Dokumente → Regeln**) steuert, wie DocBi
 
 ## Validierungs-Setup
 
-Die Karte **Validierungs-Setup** zeigt Ihr aktuelles Validierungsprofil (zum Beispiel _B2G – Public Sector Receiver_). Klicken Sie auf **Antworten bearbeiten**, um den Setup-Assistenten erneut auszuführen und den Standard zu ändern, gegen den validiert wird.
+Die Karte **Validierungs-Setup** zeigt Ihr aktuelles Validierungsprofil (zum Beispiel *B2G – Public Sector Receiver*). Klicken Sie auf **Antworten bearbeiten**, um den Setup-Assistenten erneut auszuführen und den Standard zu ändern, gegen den validiert wird.
 
 ## Akzeptierte XRechnung-Versionen
 
@@ -20,12 +20,12 @@ Wählen Sie über **Alle akzeptieren** / **Leeren** und anschließend **Speicher
 
 Jede Validierungsregel hat einen **Schweregrad**, der bestimmt, was beim Auslösen geschieht:
 
-| Schweregrad | Auswirkung                                                                                                                                                     |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FATAL**   | Stoppt die Verarbeitung sofort. Keine weitere Ebene wird geprüft; das Dokument geht in den Fehlerstatus.                                                       |
-| **ERROR**   | Das Dokument wird abgelehnt. Andere Findings desselben Dokuments werden weiterhin angezeigt; die Lieferantenbenachrichtigung (falls aktiviert) wird ausgelöst. |
-| **WARNING** | Erscheint im Validierungsbericht, das Dokument durchläuft die Pipeline jedoch normal.                                                                          |
-| **INFO**    | Nur Audit-Log. Keine nutzerseitige Auswirkung und keine Ablehnung.                                                                                             |
+| Schweregrad | Auswirkung |
+|-------------|------------|
+| **FATAL** | Stoppt die Verarbeitung sofort. Keine weitere Ebene wird geprüft; das Dokument geht in den Fehlerstatus. |
+| **ERROR** | Das Dokument wird abgelehnt. Andere Findings desselben Dokuments werden weiterhin angezeigt; die Lieferantenbenachrichtigung (falls aktiviert) wird ausgelöst. |
+| **WARNING** | Erscheint im Validierungsbericht, das Dokument durchläuft die Pipeline jedoch normal. |
+| **INFO** | Nur Audit-Log. Keine nutzerseitige Auswirkung und keine Ablehnung. |
 
 ## Schweregrade überschreiben
 

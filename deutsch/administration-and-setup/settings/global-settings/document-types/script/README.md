@@ -1,4 +1,6 @@
-# Skript
+# Script
+
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.25.png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
@@ -21,5 +23,7 @@ Skripte in DocBits werden in der Regel in einer Skriptsprache geschrieben, die v
 
 * Bietet eine Benutzeroberfläche, in der Skripte geschrieben und bearbeitet werden können. Der Editor unterstützt in der Regel Syntaxhervorhebung, Fehlerhervorhebung und andere Funktionen zur Unterstützung bei der Skriptentwicklung.
 * **Beispiel-Skript**: Skripte können Operationen wie das Durchlaufen von Rechnungszeilen zur Validierung von Summen oder zum Entfernen von Einträgen, die bestimmte Kriterien nicht erfüllen, enthalten.
+
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.37.png" alt=""><figcaption></figcaption></figure>
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2498" %}

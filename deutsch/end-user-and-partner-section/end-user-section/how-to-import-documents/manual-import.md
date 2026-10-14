@@ -1,4 +1,4 @@
-# Manual Import
+# Manueller Import
 
 Wenn Sie Dokumente manuell in DocBits importieren möchten, gehen Sie wie folgt vor:
 

@@ -1,37 +1,50 @@
 # Card SDK Tools
 
-Die Card SDK Tools ermoeglichen es Ihnen, benutzerdefinierte Partner-Karten ueber MCP zu erstellen, zu validieren, zu testen und zu verwalten. Partner-Karten erweitern DocFlow mit benutzerdefinierter Geschaeftslogik, die in Python geschrieben ist.
+Mit den Card SDK Tools können Sie benutzerdefinierte Partnerkarten über MCP erstellen, validieren, testen und verwalten. Partnerkarten erweitern DocFlow um benutzerdefinierte, in Python geschriebene Geschäftslogik.
 
-## Karten-Lebenszyklus
+## Lebenszyklus einer Karte
 
-```
-Erstellen → Validieren → Testen → Genehmigen → In Workflows verwenden
-```
+Eine Partnerkarte durchläuft diese Einreichungsstatus (`partner_status`):
 
-1. **Erstellen** Sie eine Karte mit `sdk_create_card` oder `sdk_import_github`
-2. **Validieren** Sie mit `sdk_validate_card` (5-stufige Validierung)
-3. **Testen** Sie mit `sdk_test_card` (Sandbox-Ausfuehrung)
-4. **Genehmigen** Sie mit `sdk_approve_card` (Admin erforderlich)
-5. Die Karte ist nun in `list_cards` verfuegbar und kann in Workflows verwendet werden
+| Status | Bedeutung | Sichtbarkeit in Workflows |
+|-------|---------|---------------------|
+| `validating` | Einreichung angenommen; die Validierungspipeline läuft. | Nur einreichende Organisation |
+| `validated` | Alle Validierungsstufen bestanden. Wartet auf die Genehmigung durch einen Admin. | Nur einreichende Organisation |
+| `rejected` | Validierung fehlgeschlagen oder ein Admin hat die Karte abgelehnt. Der Quellcode bleibt zur Prüfung erhalten. | Nur einreichende Organisation |
+| `approved` | Ein Admin hat die Karte genehmigt; `enabled = true`. | **Alle Organisationen** |
+| `disabled` | Zuvor genehmigte Karte, die ein Admin deaktiviert hat. | Nur einreichende Organisation |
+| `deleted` | Soft-Delete; wird von Einreichungslisten nicht zurückgegeben. | Ausgeblendet |
+
+{% hint style="warning" %}
+**Sichtbarkeit für Organisationen:** Eine Partnerkarte steht Workflow-Knoten in `list_cards` erst zur Verfügung, nachdem sie **genehmigt** wurde. Genehmigte Partnerkarten sind für jede Organisation auf der Plattform sichtbar – die Genehmigung ist eine globale Aktivierung, keine pro Organisation. Nicht genehmigte Karten (validating, validated, rejected, disabled) sind nur für die Organisation sichtbar, die sie eingereicht hat.
+{% endhint %}
+
+Typischer Ablauf:
+
+1. **Erstellen** Sie eine Karte mit `sdk_create_card` oder `sdk_import_github` – dies führt die Validierungspipeline aus und speichert die Karte mit `partner_status = validated` (bei einem Fehler mit `rejected`).
+2. **Validieren** Sie mit `sdk_validate_card`, um eine vorhandene Karte erneut zu prüfen oder neuen Quellcode ohne Speichern zu testen (Dry-Run).
+3. **Testen** Sie mit `sdk_test_card`, um die Karte in der Sandbox gegen einen Mock-Kontext auszuführen.
+4. **Genehmigen** Sie mit `sdk_approve_card` (nur Organisations-Admin) – führt die AST- und Verhaltensvalidierung erneut aus und setzt dann `partner_status = approved` und `enabled = true`.
+5. Nach der Genehmigung erscheint die Karte in `list_cards` für jede Organisation und kann aus Workflow-Knoten referenziert werden.
 
 ## Entwicklungs-Tools
 
 ### sdk\_create\_card
 
-Eine neue Partner-Karte aus Quellcode und Manifesten erstellen. Fuehrt die vollstaendige 5-stufige Validierung durch und speichert die Karte in der Datenbank. Die Karte beginnt im Status "ausstehend" und erfordert eine Admin-Genehmigung zur Aktivierung.
+Erstellt eine neue Partnerkarte aus Quellcode und Manifesten. Führt die vollständige Validierungspipeline aus (siehe [Validierungsstufen](#sdk_validate_card) unten) und speichert die Karte in der Datenbank. Die Karte landet im Status `validated` und benötigt die Genehmigung eines Admins, bevor sie in Workflows verwendet werden kann.
 
 **Parameter:**
 
-| Parameter       | Typ    | Erforderlich | Beschreibung                                                   |
-| --------------- | ------ | ------------ | -------------------------------------------------------------- |
-| `app_manifest`  | object | Ja           | App-Manifest mit id, name, version, Partner-Info               |
-| `card_manifest` | object | Ja           | Karten-Manifest mit id, title, entry\_point, class\_name, args |
-| `card_type`     | string | Ja           | `action` oder `condition`                                      |
-| `source_code`   | string | Ja           | Python-Quellcode (muss `PartnerCard` erweitern)                |
-| `test_code`     | string | Ja           | Pytest-Testcode fuer die Karte                                 |
-| `locales`       | object | Nein         | Uebersetzungen, z.B. `{"en": {...}, "de": {...}}`              |
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `app_manifest` | object | Ja | App-Manifest mit id, name, version, Partnerinformationen |
+| `card_manifest` | object | Ja | Karten-Manifest mit id, title, entry\_point, class\_name, args |
+| `card_type` | string | Ja | `action` oder `condition` |
+| `source_code` | string | Ja | Python-Quellcode (muss `PartnerCard` erweitern) |
+| `test_code` | string | Ja | Pytest-Testcode für die Karte |
+| `locales` | object | Nein | Übersetzungen, z. B. `{"en": {...}, "de": {...}}` |
 
-**App-Manifest-Beispiel:**
+**Beispiel für ein App-Manifest:**
 
 ```json
 {
@@ -45,7 +58,7 @@ Eine neue Partner-Karte aus Quellcode und Manifesten erstellen. Fuehrt die volls
 }
 ```
 
-**Karten-Manifest-Beispiel:**
+**Beispiel für ein Karten-Manifest:**
 
 ```json
 {
@@ -68,59 +81,53 @@ Eine neue Partner-Karte aus Quellcode und Manifesten erstellen. Fuehrt die volls
 
 ```python
 from api.sdk.base import PartnerCard
+from api.sdk.context import ExecutionContext
 from api.sdk.result import CardResult, CardStatus
 
 class AmountThreshold(PartnerCard):
-    def execute(self, context):
+    def execute(self, context: ExecutionContext) -> CardResult:
         threshold = float(self.variables.get("threshold", 0))
         total = context.document_fields.get("total_amount", 0)
         if float(total) > threshold:
             return CardResult(
                 status=CardStatus.SUCCESS,
-                message=f"Amount {total} exceeds threshold {threshold}"
+                message=f"Amount {total} exceeds threshold {threshold}",
             )
         return CardResult(
-            status=CardStatus.FAILURE,
-            message=f"Amount {total} below threshold {threshold}"
+            status=CardStatus.FAILED,
+            message=f"Amount {total} below threshold {threshold}",
         )
 ```
 
-**Beispielantwort:**
+{% hint style="info" %}
+`CardStatus` hat drei Werte, die direkt auf Workflow-Kanten abgebildet werden:
 
-```json
-{
-  "success": true,
-  "cards": ["amount-threshold"],
-  "validation_report": {
-    "status": "validated",
-    "stages": {
-      "structure": {"passed": true},
-      "ast_analysis": {"passed": true},
-      "dependencies": {"passed": true},
-      "tests": {"passed": true},
-      "behavioral": {"passed": true}
-    }
-  }
-}
-```
+| Status | Genommene Kante | Verwendung |
+|--------|------------|------------|
+| `SUCCESS` | `success` | Karte war erfolgreich – gilt für Bedingungen und Aktionen. |
+| `FAILED` | `failed_condition` | **Nur Bedingungskarten.** Die Bedingung wurde als falsch ausgewertet – der Workflow nimmt den „Else“-Zweig. Aktionskarten haben keinen `failed_condition`-Anschluss; gibt eine Aktion `FAILED` zurück, hat die Ausführung keinen Weg mehr. |
+| `ERROR` | `error` | Ein unerwarteter Laufzeitfehler (Exception). Gilt für Bedingungen und Aktionen. |
+
+Kurz gesagt: Aktionen geben `SUCCESS` oder `ERROR` zurück; Bedingungen können zusätzlich `FAILED` zurückgeben.
+{% endhint %}
 
 ### sdk\_validate\_card
 
-5-stufige Validierung einer Partner-Karte ohne Speichern ausfuehren. Zwei Modi:
+Führt die Validierungspipeline für eine Partnerkarte aus, ohne zu speichern. Zwei Modi:
 
-* **Modus A** -- Eine bestehende Karte anhand der ID validieren
-* **Modus B** -- Neuen Quellcode inline validieren
+- **Modus A** – Eine vorhandene Karte anhand der ID validieren
+- **Modus B** – Neuen Quellcode inline validieren
 
 **Parameter:**
 
-| Parameter       | Typ    | Erforderlich | Beschreibung                           |
-| --------------- | ------ | ------------ | -------------------------------------- |
-| `card_id`       | string | Nein         | UUID einer bestehenden Karte (Modus A) |
-| `app_manifest`  | object | Nein         | App-Manifest (Modus B)                 |
-| `card_manifest` | object | Nein         | Karten-Manifest (Modus B)              |
-| `card_type`     | string | Nein         | `action` oder `condition` (Modus B)    |
-| `source_code`   | string | Nein         | Python-Quellcode (Modus B)             |
-| `test_code`     | string | Nein         | Testcode (Modus B)                     |
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `card_id` | string | Nein | UUID einer vorhandenen Karte (Modus A) |
+| `app_manifest` | object | Nein | App-Manifest (Modus B) |
+| `card_manifest` | object | Nein | Karten-Manifest (Modus B) |
+| `card_type` | string | Nein | `action` oder `condition` (Modus B) |
+| `source_code` | string | Nein | Python-Quellcode (Modus B) |
+| `test_code` | string | Nein | Testcode (Modus B) |
 
 {% hint style="info" %}
 Geben Sie entweder nur `card_id` an (Modus A) oder `app_manifest` + `card_manifest` + `source_code` zusammen (Modus B).
@@ -128,27 +135,30 @@ Geben Sie entweder nur `card_id` an (Modus A) oder `app_manifest` + `card_manife
 
 **Validierungsstufen:**
 
-1. **Struktur** -- Ueberprueft Dateilayout, Manifest-Schema, erforderliche Dateien
-2. **AST-Analyse** -- Prueft Python-Syntax, Klassenhierarchie, Methodensignaturen
-3. **Abhaengigkeiten** -- Validiert Imports gegen erlaubte Module
-4. **Tests** -- Fuehrt die Testsuite der Karte aus
-5. **Verhalten** -- Fuehrt die Karte in der Sandbox aus, um das Laufzeitverhalten zu pruefen
+1. **Structure** – Prüft das Dateilayout, das Manifest-Schema (`app.json`, `.docflowcompose/flow/...`) und ob die deklarierten Einstiegspunkte existieren.
+2. **Locales** – Gleicht die in der Karte verwendeten Übersetzungsschlüssel mit den Dateien `locales/<lang>.json` ab; schlägt fehl, wenn ein Schlüssel in einer deklarierten Sprache fehlt.
+3. **AST Analysis** – Durchläuft jede `.py`-Datei unter `src/` und prüft auf verbotene Imports, gefährliche Aufrufe sowie Anforderungen an Klassenhierarchie und Methodensignaturen.
+4. **Dependencies** – Validiert, dass alle Imports auf erlaubte Module aus der SDK-Whitelist verweisen.
+5. **Tests** – Führt die pytest-Suite der Karte mit reduzierten rlimits aus.
+6. **Behavioral** – Führt die Karte in der Produktions-Sandbox gegen einen minimalen Mock-Kontext aus, um das Laufzeitverhalten zu bestätigen.
+
+Die Stufen laufen der Reihe nach; die erste fehlschlagende Stufe bricht die übrigen ab. Stufe 6 (Behavioral) wird bei der Genehmigung erneut ausgeführt, als zusätzliche Sicherheitsprüfung, bevor die Karte aktiviert wird.
 
 ### sdk\_test\_card
 
-Eine Partner-Karte in einer Sandbox-Umgebung mit einem Mock-Kontext ausfuehren. Verwendet das gleiche Sicherheitsmodell wie die Produktion (eingeschraenkte Builtins, Import-Whitelist, 10-Sekunden-Timeout).
+Führt eine Partnerkarte in einer Sandbox-Umgebung mit einem Mock-Kontext aus. Die Sandbox erzwingt eingeschränkte Builtins, eine kuratierte Import-Allowlist, ein Ausführungs-Timeout und reduzierte Prozess-Ressourcenlimits – dieselben Einschränkungen, unter denen eine Karte nach der Genehmigung läuft.
 
 **Parameter:**
 
-| Parameter      | Typ    | Erforderlich | Beschreibung                            |
-| -------------- | ------ | ------------ | --------------------------------------- |
-| `card_id`      | string | Nein         | UUID einer bestehenden Karte (Modus A)  |
-| `source_code`  | string | Nein         | Quellcode fuer Inline-Tests (Modus B)   |
-| `class_name`   | string | Nein         | Klassenname fuer Inline-Tests (Modus B) |
-| `variables`    | object | Nein         | Variablen fuer den Karten-Konstruktor   |
-| `mock_context` | object | Nein         | Mock-Ausfuehrungskontext                |
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `card_id` | string | Nein | UUID einer vorhandenen Karte (Modus A) |
+| `source_code` | string | Nein | Quellcode für Inline-Tests (Modus B) |
+| `class_name` | string | Nein | Klassenname für Inline-Tests (Modus B) |
+| `variables` | object | Nein | Variablen, die an den Konstruktor der Karte übergeben werden |
+| `mock_context` | object | Nein | Mock-Ausführungskontext |
 
-**Mock-Kontext-Felder:**
+**Felder des Mock-Kontexts:**
 
 ```json
 {
@@ -165,29 +175,19 @@ Eine Partner-Karte in einer Sandbox-Umgebung mit einem Mock-Kontext ausfuehren. 
 }
 ```
 
-**Beispielantwort:**
-
-```json
-{
-  "success": true,
-  "status": "CardStatus.SUCCESS",
-  "message": "Amount 1500.00 exceeds threshold 1000",
-  "data": {},
-  "logs": ["Checking threshold...", "Amount exceeds threshold"]
-}
-```
+Das Tool liefert `execution_success` (ob die Sandbox die Karte vollständig ausgeführt hat – ein Timeout, ein Import-Verstoß oder eine ausgelöste Exception setzt den Wert auf `false`), `card_status` (der von `execute()` selbst zurückgegebene `CardStatus`), die `message` und `data` der Karte, die erfassten `logs` sowie `execution_time_ms`.
 
 ### sdk\_import\_github
 
-Eine Partner-App aus einem GitHub-Repository importieren. Klont das Repository, liest `app.json` und importiert alle Karten aus dem `.docflowcompose`-Verzeichnis.
+Importiert eine Partner-App aus einem GitHub-Repository. Klont das Repository, liest `app.json` und importiert alle im Verzeichnis `.docflowcompose` gefundenen Karten.
 
 **Parameter:**
 
-| Parameter    | Typ    | Erforderlich | Beschreibung                                          |
-| ------------ | ------ | ------------ | ----------------------------------------------------- |
-| `github_url` | string | Ja           | GitHub-HTTPS-URL (z.B. `https://github.com/org/repo`) |
-| `branch`     | string | Nein         | Zu klonender Branch (Standard: `main`)                |
-| `token`      | string | Nein         | GitHub-Token fuer private Repositories                |
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `github_url` | string | Ja | GitHub-HTTPS-URL (z. B. `https://github.com/org/repo`) |
+| `branch` | string | Nein | Zu klonender Branch (Standard: `main`) |
+| `token` | string | Nein | GitHub-Token für private Repositories |
 
 **Erwartete Repository-Struktur:**
 
@@ -207,96 +207,48 @@ repo/
     test_card.py
 ```
 
-**Beispielantwort:**
-
-```json
-{
-  "success": true,
-  "message": "Imported 2 cards from GitHub. Status: validated",
-  "app_id": "com.acme.invoice-tools",
-  "cards_created": ["my-action", "my-condition"],
-  "validation_report": {"status": "validated"}
-}
-```
-
 ## Verwaltungs-Tools
 
 ### sdk\_list\_submissions
 
-Alle Partner-Karten-Einreichungen der aktuellen Organisation auflisten.
+Listet alle Partnerkarten-Einreichungen der aktuellen Organisation auf.
 
 **Parameter:** Keine
 
-**Beispielantwort:**
-
-```json
-[
-  {
-    "card_id": "card-uuid",
-    "card_name": "Amount Threshold Check",
-    "partner_app_id": "com.acme.invoice-tools",
-    "partner_status": "validated",
-    "version": "1.0.0",
-    "card_type": "condition",
-    "enabled": false,
-    "submitted_at": "2025-03-20T10:00:00"
-  }
-]
-```
-
 ### sdk\_get\_submission\_status
 
-Den Validierungsstatus und Bericht fuer eine bestimmte Partner-Karten-Einreichung abrufen.
+Ruft den Validierungsstatus und den Bericht für eine bestimmte Partnerkarten-Einreichung ab.
 
 **Parameter:**
 
-| Parameter | Typ    | Erforderlich | Beschreibung           |
-| --------- | ------ | ------------ | ---------------------- |
-| `card_id` | string | Ja           | UUID der Partner-Karte |
-
-**Beispielantwort:**
-
-```json
-{
-  "card_id": "card-uuid",
-  "status": "validated",
-  "validation_report": {
-    "status": "validated",
-    "stages": {
-      "structure": {"passed": true},
-      "ast_analysis": {"passed": true},
-      "dependencies": {"passed": true},
-      "tests": {"passed": true},
-      "behavioral": {"passed": true}
-    }
-  }
-}
-```
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `card_id` | string | Ja | UUID der Partnerkarte |
 
 ### sdk\_approve\_card
 
-Eine validierte Partner-Karte genehmigen und fuer die Verwendung in Workflows aktivieren. Die Karte wird in der Laufzeit-Registry registriert und ist in `list_cards` verfuegbar.
+Genehmigt eine validierte Partnerkarte und aktiviert sie. Die Genehmigung führt die AST- und Verhaltensvalidierung als zusätzliche Sicherheitsprüfung erneut aus, setzt `partner_status = approved` und `enabled = true` und registriert die Karte in der Laufzeit-Registry. Nach der Genehmigung erscheint die Karte in `list_cards` für **jede Organisation**, nicht nur für die einreichende.
 
 **Parameter:**
 
-| Parameter | Typ    | Erforderlich | Beschreibung           |
-| --------- | ------ | ------------ | ---------------------- |
-| `card_id` | string | Ja           | UUID der Partner-Karte |
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `card_id` | string | Ja | UUID der Partnerkarte |
 
 {% hint style="warning" %}
-Erfordert Organisations-Admin-Berechtigungen. Die Karte muss sich im Status `validated` oder `rejected` befinden.
+Erfordert Organisations-Admin-Berechtigungen. Die Karte muss sich im Status `validated` befinden. Abgelehnte Karten müssen erneut hochgeladen und erneut validiert werden, bevor sie genehmigt werden können.
 {% endhint %}
 
 ### sdk\_reject\_card
 
-Eine Partner-Karten-Einreichung ablehnen und deaktivieren.
+Lehnt eine Partnerkarten-Einreichung ab und deaktiviert sie.
 
 **Parameter:**
 
-| Parameter | Typ    | Erforderlich | Beschreibung             |
-| --------- | ------ | ------------ | ------------------------ |
-| `card_id` | string | Ja           | UUID der Partner-Karte   |
-| `reason`  | string | Nein         | Grund fuer die Ablehnung |
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `card_id` | string | Ja | UUID der Partnerkarte |
+| `reason` | string | Nein | Grund der Ablehnung |
 
 {% hint style="warning" %}
 Erfordert Organisations-Admin-Berechtigungen.
@@ -304,13 +256,13 @@ Erfordert Organisations-Admin-Berechtigungen.
 
 ### sdk\_delete\_submission
 
-Eine Partner-Karten-Einreichung deaktivieren oder loeschen. Abgelehnte oder deaktivierte Karten werden physisch aus der Datenbank geloescht. Aktive Karten werden zuerst deaktiviert.
+Löscht eine Partnerkarten-Einreichung per Soft-Delete, unabhängig von ihrem aktuellen Status. Setzt `partner_status = deleted`, `enabled = false` und `deprecated = true`. Die Zeile bleibt zu Prüfzwecken erhalten, wird aber in Einreichungslisten und in `list_cards` ausgeblendet.
 
 **Parameter:**
 
-| Parameter | Typ    | Erforderlich | Beschreibung           |
-| --------- | ------ | ------------ | ---------------------- |
-| `card_id` | string | Ja           | UUID der Partner-Karte |
+| Parameter | Typ | Erforderlich | Beschreibung |
+|-----------|------|----------|-------------|
+| `card_id` | string | Ja | UUID der Partnerkarte |
 
 {% hint style="warning" %}
 Erfordert Organisations-Admin-Berechtigungen.
@@ -318,23 +270,32 @@ Erfordert Organisations-Admin-Berechtigungen.
 
 ### sdk\_list\_cards\_picker
 
-Alle aktivierten, nicht veralteten Karten mit Rollen-Flags auflisten. Nuetzlich um zu bestimmen, welche Karten in welchen Knotentypen beim Erstellen von Workflows verwendet werden koennen.
+Listet alle aktivierten, nicht veralteten Karten mit Rollen-Flags auf. Nützlich, um beim Erstellen von Workflows zu bestimmen, welche Karten in welchen Knotentypen verwendet werden können.
 
 **Parameter:** Keine
 
-**Beispielantwort:**
+## Aktuelle Fähigkeiten & Roadmap
 
-```json
-[
-  {
-    "card_id": "card-uuid",
-    "card_name": "Document Type Is",
-    "category": "Document",
-    "card_type": "document_type_is",
-    "is_when": true,
-    "is_and": false,
-    "is_then": false,
-    "is_partner_card": false
-  }
-]
-```
+Das Partner Card SDK wird schrittweise ausgerollt. Hier sehen Sie, worauf sich Ihre Karte heute verlassen kann und was noch umgesetzt wird:
+
+| Fähigkeit | Status |
+|------------|--------|
+| **Feldbedingungen** – Dokumentfelder aus `context.document_fields` lesen und in Bedingungskarten anhand ihrer Werte verzweigen | ✅ Implementiert |
+| **Ausgehende HTTP-Anfragen** – externe Dienste aus einer Karte heraus aufrufen | 🚧 Wird derzeit hinzugefügt |
+| **Erweiterte Dokumentinformationen** – zusätzliche Dokument-Metadaten (über `document_id`, `document_type` und `document_fields` hinaus) im `ExecutionContext` | 🚧 Wird derzeit hinzugefügt |
+| **Hilfsfunktionen für Datenbanktabellen-Lookups** – integrierte Helfer zum Lesen aus DocBits-Stammdaten-/Lookup-Tabellen innerhalb einer Karte | 📅 Geplant für 1.1 |
+| **Quellcode-Ansicht für Partnerkarten** – schreibgeschützte Ansicht des eingereichten Partnerkarten-Codes in der DocBits-Oberfläche, damit Admins prüfen können, was sie genehmigen | 📅 Geplant für 1.1 |
+
+{% hint style="info" %}
+Benötigt Ihre Karte eine Fähigkeit, die noch in Arbeit ist, schlägt die Validierung fehl (verbotener Import, fehlendes Kontextattribut oder Sandbox-Einschränkung), bis der entsprechende Teil bereitgestellt wird. Diese Seite wird aktualisiert, sobald eine Fähigkeit ausgeliefert wird.
+{% endhint %}
+
+{% hint style="danger" %}
+**Partnerkarten führen Code von Dritten aus – Nutzung auf eigenes Risiko.**
+
+Über das Partner Card SDK hochgeladene Karten werden von DocBits nur **teilweise validiert**. Die Validierungspipeline prüft Struktur, Locales, Imports, AST-Muster, Abhängigkeiten, die eigenen Tests der Karte und einen Verhaltens-Smoke-Test in der Sandbox – sie stellt **keine** vollständige Sicherheitsprüfung und keine funktionale Garantie für die Geschäftslogik der Karte dar.
+
+Sobald ein Organisations-Admin eine Partnerkarte genehmigt, steht sie jeder Organisation auf der Plattform zur Verfügung und läuft in der Produktions-Sandbox mit echten Dokumenten. Das Genehmigen und Aktivieren einer Partnerkarte ist daher eine ausdrückliche Vertrauensentscheidung des genehmigenden Admins. DocBits übernimmt keine Haftung für Datenverlust, falsches Routing, offengelegte Informationen oder sonstige Folgen, die durch eine von Ihnen installierte oder genehmigte Partnerkarte verursacht werden.
+
+Sind Sie nicht der ursprüngliche Autor der Karte, prüfen Sie den Quellcode (und nutzen Sie, sobald 1.1 verfügbar ist, die Quellcode-Ansicht für Partnerkarten), bevor Sie sie genehmigen.
+{% endhint %}

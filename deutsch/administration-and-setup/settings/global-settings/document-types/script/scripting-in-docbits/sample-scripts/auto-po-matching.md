@@ -39,13 +39,12 @@ if po_nr:
 ## Was passiert nach dem Matching?
 
 Die `document_data` werden aktualisiert mit:
-
-* `po_items` — Zugeordnete Bestellpositionen
-* `po_match_status` — Abgleichergebnis (`"matched"`, `"partially_matched"` usw.)
-* `po_multi_matched` — Ob mehrere Bestellungen zugeordnet wurden
+- `po_items` — Zugeordnete Bestellpositionen
+- `po_match_status` — Abgleichergebnis (`"matched"`, `"partially_matched"` usw.)
+- `po_multi_matched` — Ob mehrere Bestellungen zugeordnet wurden
 
 ## Verwendete Funktionen
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Feldwert lesen
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Bereinigte PO-Nummer schreiben
-* [auto\_po\_match\_for\_purchase\_orders()](../functions/business-logic-functions.md#auto_po_match_for_purchase_orders) — PO-Matching auslösen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Feldwert lesen
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Bereinigte PO-Nummer schreiben
+- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — PO-Matching auslösen

@@ -1,4 +1,4 @@
-# How to Import Documents
+# So importieren Sie Dokumente
 
 {% embed url="https://youtu.be/5_11Q0JbeaU" %}
 DocBits Import-Tutorial: Dokumente hochladen, Drag & Drop + manuelle vs. automatische Klassifizierung

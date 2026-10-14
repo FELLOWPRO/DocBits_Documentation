@@ -45,5 +45,5 @@ if any(s in supplier for s in auto_export_suppliers) and net_float < 500:
 
 ## Verwendete Funktionen
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Feldwerte lesen
-* [update\_document\_status\_with\_doc\_id()](../functions/business-logic-functions.md#update_document_status_with_doc_id) — Dokumentstatus ändern
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Feldwerte lesen
+- [update\_document\_status\_with\_doc\_id()](../business-logic-functions.md#update\_document\_status\_with\_doc\_id) — Dokumentstatus ändern

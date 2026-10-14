@@ -1,4 +1,4 @@
-# AI Table
+# KI-Tabelle
 
 Entdecken Sie die revolutionären Möglichkeiten von **DocBits**, einem hochmodernen Werkzeug für die Dokumentenverarbeitung, das die Komplexität der Tabellenextraktion, des Purchase-Order-(PO-)Matchings und der Verwaltung von Kostenrechnungen vereinfacht.
 

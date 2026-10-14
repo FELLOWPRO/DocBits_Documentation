@@ -1,10 +1,10 @@
 ---
 description: >-
-  Wie Sie die API Keys finden und erstellen, mit denen andere Systeme Zugriff
-  auf DocBits erhalten
+  Wie Sie die API Keys finden und erstellen, mit denen andere Systeme Zugriff auf
+  DocBits erhalten
 ---
 
-# API-Schlüsselverwaltung
+# API Key Management
 
 Ein API Key erlaubt es einem anderen System — Ihrem ERP, einem Skript oder einer Partneranwendung — mit DocBits zu sprechen, ohne dass sich ein Benutzer anmeldet. Ihre Organisation kann so viele Keys halten, wie Sie benötigen, und jeder wird für sich verwaltet: Geben Sie ihm einen eigenen Namen, entscheiden Sie, ob er abläuft, und widerrufen Sie ihn einzeln, falls er jemals offengelegt wird.
 
@@ -24,14 +24,14 @@ Der Abschnitt **API Key** oben auf der Seite listet jeden Key auf, den Ihre Orga
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
 
-| Spalte        | Was sie Ihnen sagt                                                                                                                                                                              |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key**       | Die ersten Zeichen des Keys, gefolgt von `****`. Der Rest wird nach dem Erstellen nie wieder angezeigt — siehe [Einen API Key erstellen](api-key-management.md#einen-api-key-erstellen).        |
-| **Name**      | Der Name, den Sie dem Key gegeben haben, mit seiner Beschreibung darunter.                                                                                                                      |
-| **Expires**   | Das Datum, an dem der Key aufhört zu funktionieren, oder **Never**, wenn Sie keines gesetzt haben.                                                                                              |
+| Spalte | Was sie Ihnen sagt |
+| --- | --- |
+| **Key** | Die ersten Zeichen des Keys, gefolgt von `****`. Der Rest wird nach dem Erstellen nie wieder angezeigt — siehe [Einen API Key erstellen](#einen-api-key-erstellen). |
+| **Name** | Der Name, den Sie dem Key gegeben haben, mit seiner Beschreibung darunter. |
+| **Expires** | Das Datum, an dem der Key aufhört zu funktionieren, oder **Never**, wenn Sie keines gesetzt haben. |
 | **Last Used** | Wann zuletzt eine Anfrage mit diesem Key eingegangen ist. **Never used** bedeutet, dass ihn noch kein System verwendet hat — nützlich, um Keys zu erkennen, die Sie gefahrlos entfernen können. |
-| **Status**    | **Active** bedeutet, dass der Key funktioniert. Ein widerrufener Key ist dauerhaft abgeschaltet.                                                                                                |
-| **Actions**   | Das Drei-Punkte-Menü, über das Sie den Key widerrufen können.                                                                                                                                   |
+| **Status** | **Active** bedeutet, dass der Key funktioniert. Ein widerrufener Key ist dauerhaft abgeschaltet. |
+| **Actions** | Das Drei-Punkte-Menü, über das Sie den Key widerrufen können. |
 
 Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blätterelemente unten in der Liste.
 
@@ -46,11 +46,11 @@ Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blättere
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-create-dialog.png)
 
-| Feld            | Was Sie eintragen                                                                                                                                                                                  |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key Name**    | Erforderlich. Benennen Sie ihn nach dem System, das ihn verwenden wird — `M3 Production`, `Invoice Import Script` — damit Sie später erkennen, zu welcher Integration ein Key gehört.              |
-| **Description** | Optional. Platz für eine Notiz, wofür der Key da ist oder wer ihn eingerichtet hat.                                                                                                                |
-| **Expiration**  | Wählen Sie ein Ablaufdatum oder belassen Sie es auf **Never expires**. Ein Ablaufdatum ist die sicherere Wahl: Der Key verabschiedet sich von selbst, falls die Integration einmal vergessen wird. |
+| Feld | Was Sie eintragen |
+| --- | --- |
+| **Key Name** | Erforderlich. Benennen Sie ihn nach dem System, das ihn verwenden wird — `M3 Production`, `Invoice Import Script` — damit Sie später erkennen, zu welcher Integration ein Key gehört. |
+| **Description** | Optional. Platz für eine Notiz, wofür der Key da ist oder wer ihn eingerichtet hat. |
+| **Expiration** | Wählen Sie ein Ablaufdatum oder belassen Sie es auf **Never expires**. Ein Ablaufdatum ist die sicherere Wahl: Der Key verabschiedet sich von selbst, falls die Integration einmal vergessen wird. |
 
 3. Klicken Sie auf **Create**. DocBits zeigt Ihnen den neuen Key:
 

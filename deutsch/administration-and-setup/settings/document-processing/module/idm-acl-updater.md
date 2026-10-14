@@ -1,29 +1,30 @@
 # IDM ACL Updater
 
-## Übersicht
+## Overview
 
-Das ACL-Updater-Modul ist verantwortlich für die Aktualisierung und Verwaltung von Access Control Lists (ACLs) innerhalb von DocBits. Dies stellt sicher, dass angemessene Berechtigungen und Sicherheitsmaßnahmen für den Zugriff auf und die Handhabung von Dokumenten vorhanden sind.
+The ACL-Updater module is responsible for updating and managing Access Control Lists (ACLs) within DocBits. This ensures that appropriate permissions and security measures are in place for document access and handling.
 
-## Aktivierungsanweisungen
+## Activation Instructions
 
-Um das ACL-Updater-Modul zu aktivieren, befolgen Sie diese Schritte:
+To activate the ACL-Updater module, follow these steps:
 
-1. Navigieren Sie zu **Einstellungen**.
-2. Wählen Sie **Dokumentenverarbeitung**.
-3. Wählen Sie **Module**.
-4. Gehen Sie zu **Dokumenttyp**.
-5. Aktivieren Sie den **IDM ACL-Updater**, indem Sie den entsprechenden Schieberegler aktivieren.
+1. Navigate to **Settings**.
+2. Select **Document Processing**.
+3. Select **Module**.
+4. Go to **Document Type**.
+5. Activate the **IDM ACL-Updater** by enabling the corresponding slider.
 
-Sobald das Modul aktiviert ist, können Sie eine **ION Mapping-Datei** auswählen, die Sie verwenden möchten.
+Once the module is activated, you can select an **ION Mapping File** to use.
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1_de.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER1.png" alt=""><figcaption></figcaption></figure>
 
-### Hinzufügen von ACL-Informationen
+### Adding ACL Information
 
-Um ACL-Informationen hinzuzufügen, klicken Sie auf die Schaltfläche **Hinzufügen**. Sie können dann die folgenden Details angeben:
+To add ACL information, click the **Add** button. You can then specify the following details:
 
-* **IDM Dokumenttyp**
-* **Aktueller IDM ACL-Status**
-* **Neuer IDM ACL-Status**
+* **IDM Document Type**
+* **Current IDM ACL Status**
+* **New IDM ACL Status**
 
-<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2_de.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IDM-ACL-UPDATER2.png" alt="" width="563"><figcaption></figcaption></figure>
+

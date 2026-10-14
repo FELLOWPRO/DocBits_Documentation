@@ -1,4 +1,4 @@
-# Berechnung der Gesamtkosten
+# Berechnung der Gesamtkosten - Skript für DocBits
 
 Das Skript "Berechnung der Gesamtkosten" automatisiert den Prozess der Summierung verschiedener Gebühren und zusätzlicher Beträge innerhalb von Rechnungsdokumenten. Diese Anleitung führt durch die Skripteinrichtung, Logik und Anwendung, um genaue Gesamtkostenberechnungen in Dokumenten sicherzustellen.
 

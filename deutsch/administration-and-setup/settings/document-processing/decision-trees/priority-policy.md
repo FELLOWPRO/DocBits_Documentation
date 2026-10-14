@@ -14,4 +14,4 @@ Wenn der Gesamtbetrag **1500** ist, werden die Regeln wie folgt ausgewertet:
 * **Regel 4**: Total Amount <= 4000 (trifft zu)
 * **Regel 5**: Total Amount <= 5000 (trifft zu)
 
-Da die Priorität in der Reihenfolge **5, 4, 3, 2, 1** angewendet wird, ist die zutreffende Regel mit der höchsten Priorität **Regel 5** (**GROUP\_5**). Der Entscheidungsbaum gibt **GROUP\_5** zurück, weil **Regel 5** die höchste Priorität hat (Priorität 1).
+Da die Priorität in der Reihenfolge **5, 4, 3, 2, 1** angewendet wird, ist die zutreffende Regel mit der höchsten Priorität **Regel 5** (**GROUP_5**). Der Entscheidungsbaum gibt **GROUP_5** zurück, weil **Regel 5** die höchste Priorität hat (Priorität 1).

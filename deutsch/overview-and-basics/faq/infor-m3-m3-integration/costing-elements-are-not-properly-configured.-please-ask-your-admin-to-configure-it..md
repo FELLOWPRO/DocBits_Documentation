@@ -1,4 +1,4 @@
-# Kostenelemente sind nicht ordnungsgemäß konfiguriert. Bitte fragen Sie Ihren Administrator, es zu ko
+# Kostenelemente sind nicht ordnungsgemäß konfiguriert. Bitte fragen Sie Ihren Administrator, es zu konfigurieren.
 
 Wenn Sie die Fehlermeldung **"Kostenelemente sind nicht ordnungsgemäß konfiguriert. Bitte fragen Sie Ihren Administrator, es zu konfigurieren,"** erhalten, könnte dies an einem der folgenden Gründe liegen:
 

@@ -1,4 +1,4 @@
-# Error
+# Fehler
 
 ## Überblick
 
@@ -17,11 +17,17 @@ Diese Seite bietet einen Überblick über die verfügbaren Werkzeuge, die Ihnen 
 Auf der rechten Seite der Dokumentenansicht finden Sie die **Fehlermeldung**, die eine kurze Beschreibung dessen liefert, was schiefgelaufen ist.\
 Unterhalb der Fehlermeldung wird die **Ausnahme (Exception)** angezeigt, die zeigt, wo im Code der Fehler aufgetreten ist. Diese Information ist hilfreich für die Fehlersuche und sollte beim Melden des Problems an den Support angegeben werden.
 
+<figure><img src="../../.gitbook/assets/error_2.png" alt=""><figcaption></figcaption></figure>
+
 ## Bearbeitungsoptionen
 
 Auf der linken Seite der Seite wird Ihr Dokument zusammen mit mehreren Werkzeugen zur Interaktion und Überprüfung angezeigt.
 
+<figure><img src="../../.gitbook/assets/error_3 (1).png" alt=""><figcaption></figcaption></figure>
+
 ### **Optionen der linken Symbolleiste**
+
+<figure><img src="../../.gitbook/assets/error_4.png" alt=""><figcaption></figcaption></figure>
 
 Die Symbolleiste auf der linken Seite der Seite bietet Werkzeuge zur Interaktion mit dem Dokument:
 
@@ -44,6 +50,8 @@ Die Symbolleiste auf der linken Seite der Seite bietet Werkzeuge zur Interaktion
 
 ### **Optionen der rechten Symbolleiste**
 
+<figure><img src="../../.gitbook/assets/error_5.png" alt=""><figcaption></figcaption></figure>
+
 Die Symbolleiste auf der rechten Seite der Seite bietet zusätzliche Funktionen:
 
 * **Dokument herunterladen**\
@@ -63,9 +71,12 @@ Wenn ein Dokument in den Status **Fehler** wechselt, haben Sie mehrere Möglichk
 
 In vielen Fällen kann ein Neustart des Dokuments das Problem beheben und die Verarbeitung fortsetzen.
 
-* So starten Sie das Dokument neu:
-  1. Klicken Sie auf die drei Punkte in der Spalte **Aktionen**.
-  2. Wählen Sie **Neu starten** aus dem Menü.
+*   So starten Sie das Dokument neu:
+
+    1. Klicken Sie auf die drei Punkte in der Spalte **Aktionen**.
+    2. Wählen Sie **Neu starten** aus dem Menü.
+
+    <figure><img src="../../.gitbook/assets/error_1.png" alt=""><figcaption></figcaption></figure>
 
 **2. Support kontaktieren**
 

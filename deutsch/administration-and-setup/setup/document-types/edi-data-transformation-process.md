@@ -1,13 +1,13 @@
 # EDI-Datentransformationsprozess
 
-####
+{% embed url="https://youtu.be/OmYbGG0ea0w?si=7okB6WP8kiKIZuec" %}
 
-<figure><img src="../../../.gitbook/assets/EDI (1) (3).png" alt="DocBits Bild"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/EDI.png" alt=""><figcaption></figcaption></figure>
 
-#### Step 1: Structure Descriptor
+#### Schritt 1: Strukturbeschreibung (Structure Descriptor)
 
 * **Format**: JSON
-* **Purpose**: This step involves defining the structure of the EDI data. It includes specifying segments such as `SAC`, `N1`, and `PO1`, and details the fields contained within each segment. For segments that contain nested structures, loops are defined to properly organize the data hierarchy.
+* **Zweck**: In diesem Schritt wird die Struktur der EDI-Daten definiert. Dazu gehört die Angabe von Segmenten wie `SAC`, `N1` und `PO1` sowie die Beschreibung der Felder, die in den einzelnen Segmenten enthalten sind. Für Segmente mit verschachtelten Strukturen werden Schleifen (Loops) definiert, damit die Datenhierarchie korrekt abgebildet wird.
 
 ```json
 {
@@ -22,10 +22,10 @@
 }
 ```
 
-#### Step 2: Transformation Using XSLT
+#### Schritt 2: Transformation mit XSLT
 
 * **Format**: XSLT
-* **Purpose**: This step involves transforming the structured JSON data into a structured XML format, specifically tailoring the output to meet the requirements for further processing or integration. This transformation helps in extracting precise information like acknowledgement types, order details, and conditional elements based on specific values.
+* **Zweck**: In diesem Schritt werden die strukturierten JSON-Daten in ein strukturiertes XML-Format transformiert. Die Ausgabe wird dabei gezielt auf die Anforderungen der Weiterverarbeitung oder Integration zugeschnitten. Diese Transformation hilft, präzise Informationen wie Bestätigungstypen, Bestelldetails und bedingte Elemente anhand bestimmter Werte zu extrahieren.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -49,10 +49,10 @@
 
 ```
 
-#### Step 3: Preview (HTML Conversion)
+#### Schritt 3: Vorschau (HTML-Konvertierung)
 
-* **Format**: XSLT (outputting HTML)
-* **Purpose**: Converts the XML data from Step 2 into an HTML format for previewing the transformed data in a readable and visually appealing format. The HTML layout includes styles for presentation and structures data like purchase orders, supplier details, and order terms for easy viewing.
+* **Format**: XSLT (mit HTML-Ausgabe)
+* **Zweck**: Konvertiert die XML-Daten aus Schritt 2 in ein HTML-Format, um die transformierten Daten in einer gut lesbaren und ansprechenden Form als Vorschau anzuzeigen. Das HTML-Layout enthält Stile für die Darstellung und strukturiert Daten wie Bestellungen, Lieferantendetails und Bestellbedingungen für eine übersichtliche Ansicht.
 
 ```xml
 <xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -77,10 +77,10 @@
 
 ```
 
-#### Step 4: Extraction Paths
+#### Schritt 4: Extraktionspfade
 
 * **Format**: JSON
-* **Purpose**: Specifies JSON paths for extracting key values from the XML data produced in Step 2. These paths are used to retrieve specific data points such as purchase orders and currency, which are crucial for downstream processing and integration into other systems.
+* **Zweck**: Legt JSON-Pfade fest, mit denen Schlüsselwerte aus den in Schritt 2 erzeugten XML-Daten extrahiert werden. Diese Pfade dienen dazu, bestimmte Datenpunkte wie Bestellungen und Währung abzurufen, die für die nachgelagerte Verarbeitung und die Integration in andere Systeme entscheidend sind.
 
 ```json
 {
@@ -102,4 +102,4 @@
 }
 ```
 
-This updated sequence ensures a thorough process, transforming raw EDI data into structured, actionable information using JSON for data structuring, XSLT for transformation and HTML preview, followed by JSON paths for data extraction and integration.
+Diese aktualisierte Abfolge gewährleistet einen durchgängigen Prozess, der rohe EDI-Daten in strukturierte, verwertbare Informationen umwandelt: JSON für die Datenstrukturierung, XSLT für die Transformation und die HTML-Vorschau, anschließend JSON-Pfade für die Datenextraktion und Integration.

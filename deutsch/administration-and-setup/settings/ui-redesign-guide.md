@@ -15,15 +15,15 @@ Die vollständige Anleitung für Anordnen, Ausblenden und Anheften finden Sie un
 
 Das Menü Einstellungen ist nach Absicht statt nach Datenmodell gruppiert. Wenn Sie eine Einstellung suchen, sich aber nicht erinnern, wo sie war, probieren Sie die passende Gruppe unten:
 
-| Sie suchen …                                                     | Öffnen Sie Einstellungen →                                  |
-| ---------------------------------------------------------------- | ----------------------------------------------------------- |
-| Firmenname, Logo, Zeitzone, App-Farbe                            | Unternehmen & Benutzer → Unternehmensinformationen          |
-| Benutzer, Gruppen, Berechtigungen                                | Unternehmen & Benutzer → Gruppen, Benutzer & Berechtigungen |
-| API-Schlüssel, ERP-Verbindungen, Export-Konfigurationen          | Integration                                                 |
-| Dokumenttypen, Felder, Skripte, EDI, Modelltraining              | Dokumenttypen                                               |
-| OCR-Einstellungen, Entscheidungsbäume, Wertelisten, Regelmanager | Dokumentenverarbeitung                                      |
-| Zugriffs-Audit, Analyse, Volltextindex, Ereignisprotokoll        | Logging & Suche                                             |
-| Lieferantenportal, Watchdog                                      | Einrichtung                                                 |
+| Sie suchen … | Öffnen Sie Einstellungen → |
+|---|---|
+| Firmenname, Logo, Zeitzone, App-Farbe | Unternehmen & Benutzer → Unternehmensinformationen |
+| Benutzer, Gruppen, Berechtigungen | Unternehmen & Benutzer → Gruppen, Benutzer & Berechtigungen |
+| API-Schlüssel, ERP-Verbindungen, Export-Konfigurationen | Integration |
+| Dokumenttypen, Felder, Skripte, EDI, Modelltraining | Dokumenttypen |
+| OCR-Einstellungen, Entscheidungsbäume, Wertelisten, Regelmanager | Dokumentenverarbeitung |
+| Zugriffs-Audit, Analyse, Volltextindex, Ereignisprotokoll | Logging & Suche |
+| Lieferantenportal, Watchdog | Einrichtung |
 
 Innerhalb jeder Gruppe sind die am häufigsten genutzten Seiten oben angeordnet.
 

@@ -6,7 +6,7 @@ description: >-
 
 # Kopffeld-Check: Woher die Daten kommen
 
-Der Button **Kopffeld-Check** sitzt im Validierungsbildschirm neben **Speichern**. Er öffnet den Bericht _Woher kommt jeder Wert?_: Für jedes Kopffeld zeigt er, was auf dem Dokument stand, was den Wert unterwegs verändert hat, was DocBits jetzt anzeigt und warum.
+Der Button **Kopffeld-Check** sitzt im Validierungsbildschirm neben **Speichern**. Er öffnet den Bericht *Woher kommt jeder Wert?*: Für jedes Kopffeld zeigt er, was auf dem Dokument stand, was den Wert unterwegs verändert hat, was DocBits jetzt anzeigt und warum.
 
 Diese Seite erklärt, wie ein Wert entsteht und was die einzelnen Quellen bedeuten. Es ist kein Expertenwissen nötig.
 
@@ -16,12 +16,12 @@ Der Kopffeld-Check gehört zum Modul **Analytics**. Ist der Button ausgegraut, k
 
 ## Ein Wert entsteht immer in dieser Reihenfolge
 
-| Schritt             | Was passiert                                                                                                         |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **1. Lesen**        | Der Wert wird aus dem Dokument gelesen — durch eine trainierte Regel, durch die KI oder direkt aus einer E-Rechnung. |
-| **2. Umformen**     | Skripte und Transformationsregeln des Kunden verändern den gelesenen Wert: kürzen, ergänzen, das Format anpassen.    |
-| **3. Nachschlagen** | Der Wert wird in den Stammdaten gesucht. Wird etwas gefunden, ersetzt der Stammdatensatz den gelesenen Wert.         |
-| **4. Anzeigen**     | Der Benutzer sieht nur das Ergebnis. Was unterwegs passiert ist, zeigt der Kopffeld-Check.                           |
+| Schritt | Was passiert |
+| --- | --- |
+| **1. Lesen** | Der Wert wird aus dem Dokument gelesen — durch eine trainierte Regel, durch die KI oder direkt aus einer E-Rechnung. |
+| **2. Umformen** | Skripte und Transformationsregeln des Kunden verändern den gelesenen Wert: kürzen, ergänzen, das Format anpassen. |
+| **3. Nachschlagen** | Der Wert wird in den Stammdaten gesucht. Wird etwas gefunden, ersetzt der Stammdatensatz den gelesenen Wert. |
+| **4. Anzeigen** | Der Benutzer sieht nur das Ergebnis. Was unterwegs passiert ist, zeigt der Kopffeld-Check. |
 
 Schritt 2 und 3 laufen nicht immer — aber wenn sie laufen, verändern sie den Wert. Genau daher kommen die meisten gemeldeten Fälle.
 
@@ -84,12 +84,12 @@ Aus einem Barcode oder QR-Code auf dem Dokument gelesen.
 Steht in einem Feld plötzlich ein Wert, der so nicht auf dem Dokument steht, war es fast nie die KI — sondern Schritt 2 oder Schritt 3. Am häufigsten der Stammdaten-Treffer, der auch Teiltreffer akzeptiert: `1001` trifft `06O051001`, und mit der gefundenen Bestellung ändert sich auch der Lieferant.
 {% endhint %}
 
-Im Bericht ist ein solches Feld rot markiert. Die Spalte **Aktion** zeigt den Stammdatensatz zusammen mit einem roten Chip _nur Teiltreffer_, und der übereinstimmende Teil des Werts ist hervorgehoben.
+Im Bericht ist ein solches Feld rot markiert. Die Spalte **Aktion** zeigt den Stammdatensatz zusammen mit einem roten Chip *nur Teiltreffer*, und der übereinstimmende Teil des Werts ist hervorgehoben.
 
 ## Den Bericht lesen
 
 * **Status-Chips** oben zählen die Felder, die unverändert aus dem Dokument kamen, unterwegs verändert wurden oder so nicht auf dem Dokument stehen. Ein Klick auf einen Chip zeigt nur diese Felder; ein weiterer Klick zeigt wieder alle.
 * **Quellenfilter:** Die Symbolreihe zeigt jede Extraktionsmethode. Ein Klick zeigt nur die Felder, die durch sie gelaufen sind.
 * **Aktion:** jeder Schritt, den der Wert durchlaufen hat, mit dem Symbol seiner Quelle. Der Schritt, aus dem der aktuelle Wert stammt, ist hervorgehoben. Beim Darüberfahren sehen Sie, was jeder Schritt getan hat, von welchem Wert zu welchem.
-* **Grund:** der Status des Feldes. Das (i)-Symbol erklärt, warum der Wert so ist, wie er ist. Steht dort _Feld gab es nicht_, war das Feld auf dem Dokument nicht vorhanden.
+* **Grund:** der Status des Feldes. Das (i)-Symbol erklärt, warum der Wert so ist, wie er ist. Steht dort *Feld gab es nicht*, war das Feld auf dem Dokument nicht vorhanden.
 * Lange Werte werden mit … gekürzt — beim Darüberfahren erscheint der volle Wert.

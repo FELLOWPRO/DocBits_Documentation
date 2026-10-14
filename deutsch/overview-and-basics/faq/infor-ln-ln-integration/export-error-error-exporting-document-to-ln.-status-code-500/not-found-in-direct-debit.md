@@ -1,4 +1,4 @@
-# not found in direct debit
+# Nicht gefunden in Lastschrift
 
 ## **Schritt 1: LN-Konfiguration prüfen**
 
@@ -24,12 +24,19 @@ Wenn das **Automatic Matching** auf **Match to Purchase Receipt** eingestellt is
 ## **Schritt 3: LN-Mapping-Datei bearbeiten**
 
 1. Öffnen Sie die heruntergeladene **LN-Mapping**-Datei.
-2. Suchen Sie nach dem Feld **IRF\_PackingSlip**.
-   * Wenn das Feld **IRF\_PackingSlip** vorhanden und auf **nichts** (leer) gesetzt ist, aktualisieren Sie es auf **TF\_packing\_slip**.
-   * Wenn das Feld **IRF\_PackingSlip** **nicht vorhanden** ist, fügen Sie es der Datei hinzu und setzen Sie seinen Wert auf **TF\_packing\_slip**.
+2.  Suchen Sie nach dem Feld **IRF\_PackingSlip**.
+
+    * Wenn das Feld **IRF\_PackingSlip** vorhanden und auf **nichts** (leer) gesetzt ist, aktualisieren Sie es auf **TF\_packing\_slip**.
+    * Wenn das Feld **IRF\_PackingSlip** **nicht vorhanden** ist, fügen Sie es der Datei hinzu und setzen Sie seinen Wert auf **TF\_packing\_slip**.&#x20;
+
+
 3. Fügen Sie für das Feld **InvoiceReceiptFields** den Wert **PackingSlip** zu den Werten hinzu.
 
 Es sollte wie folgt aussehen:
+
+<figure><img src="../../../../.gitbook/assets/image (328).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## **Schritt 4: Die aktualisierte Datei wieder in DocBits hinzufügen**
 

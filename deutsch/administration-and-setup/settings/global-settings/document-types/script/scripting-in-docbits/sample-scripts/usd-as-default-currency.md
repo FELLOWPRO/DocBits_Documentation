@@ -1,7 +1,5 @@
 ---
-description: >-
-  Ein Skript, das USD als Standardwährung festlegt und prüft, ob sie gültig ist
-  oder nicht
+description: Ein Skript, das USD als Standardwährung festlegt und prüft, ob sie gültig ist oder nicht
 ---
 
 # USD als Standardwährung

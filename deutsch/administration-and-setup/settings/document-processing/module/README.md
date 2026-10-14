@@ -1,20 +1,90 @@
-# Module
+# Modul
 
-* **Automatische Buchhaltung**: DocBits bietet automatisierte Buchhaltungsfunktionen, die den Prozess der Abwicklung von Finanztransaktionen im Zusammenhang mit Bestellungen (POs) und anderen Dokumenten vereinfachen.
-* **M3 Integration**: Integration mit M3, einer ERP-Softwarelösung, die eine nahtlose Interaktion zwischen DocBits und M3 für eine verbesserte Dokumentenverwaltung und -verarbeitung ermöglicht.
-* **PO-Dashboard**: Ein zentrales Dashboard innerhalb von DocBits, das speziell zur Verwaltung und Überwachung von Bestellungen entwickelt wurde und Einblicke und Analysen für effizientes Tracking und Entscheidungsfindung bietet.
-* **Versandauftrags-Dashboard**: Ähnlich wie das PO-Dashboard konzentriert sich dieses Feature auf die Verwaltung und Überwachung von Versandaufträgen und erleichtert reibungslose Logistikoperationen.
-* **Dashboards v2**: Eine aktualisierte Version der Dashboard-Benutzeroberfläche, wahrscheinlich mit verbesserter Benutzererfahrung und zusätzlichen Funktionen für eine verbesserte Benutzerfreundlichkeit.
-* **Erweitertes Versandauftrags-Dashboard**: Ein spezialisiertes Dashboard für die fortgeschrittene Überwachung und Verwaltung von versandbezogenen Aktivitäten, das tiefere Einblicke und Funktionalitäten bietet.
-* **Lieferantenportal**: Ein Portal innerhalb von DocBits, das Lieferanten gewidmet ist und es ihnen ermöglicht, mit dem System zu interagieren und zusammenzuarbeiten, um die Kommunikation und Effizienz in der Lieferkette zu verbessern.
-* **Workflow-Builder**: Ein Tool zum Erstellen und Anpassen von Workflows innerhalb von DocBits, das es Benutzern ermöglicht, spezifische Prozesse zu definieren und die Dokumentenverarbeitung gemäß ihren individuellen Geschäftsanforderungen zu automatisieren.
-* **Layout-Builder**: Ermöglicht es Benutzern, das Layout von Dokumenten innerhalb von DocBits zu entwerfen und anzupassen, um die Einhaltung von Branding- und Benutzerfreundlichkeitsstandards sicherzustellen.
-* **Annotation-Modus**: Ein Feature, das es Benutzern ermöglicht, Dokumente direkt innerhalb der DocBits-Benutzeroberfläche zu annotieren und zu markieren, um die Zusammenarbeit und Rückmeldung zu erleichtern.
-* **Bericht anzeigen**: Funktionalität zum Generieren und Anzeigen von Berichten innerhalb von DocBits, die Einblicke und Analysen zu verschiedenen Aspekten der Dokumentenverarbeitung und -verwaltung bieten.
-* **Modelle & Labels**: Tools zur Definition und Konfiguration von Dokumentenerkennungsmodellen und -labels innerhalb von DocBits, um die Genauigkeit und Effizienz bei der Dokumentenverarbeitung zu verbessern.
-* **Dokumentskript**: Wahrscheinlich ein Feature zum Skripten und Automatisieren spezifischer Aktionen oder Prozesse im Zusammenhang mit der Dokumentenverarbeitung innerhalb von DocBits.
-* **Dokumentscan**: Fähigkeit zum Scannen physischer Dokumente und Importieren in DocBits zur digitalen Verarbeitung und Verwaltung.
-* **QR-Code-Extraktion**: Ein Feature zur Extraktion von Informationen aus in Dokumenten eingebetteten QR-Codes, um die automatisierte Datenerfassung und -verarbeitung zu ermöglichen.
-* **Benutzerdefinierte Stammdateien**: Ermöglicht es Benutzern, benutzerdefinierte Stammdateifelder und -attribute innerhalb von DocBits zu definieren und zu verwalten, um das System an ihre spezifischen Geschäftsanforderungen anzupassen.
-* **Aufgaben & Benachrichtigungen**: Funktionalität zur Verwaltung von Aufgaben und zum Empfangen von Benachrichtigungen innerhalb von DocBits, um eine rechtzeitige Aktion und Kommunikation in Bezug auf Dokumentenverarbeitungsaktivitäten sicherzustellen.
-* **IDM ACL-Updater**: Dieses Modul befasst sich wahrscheinlich mit der Aktualisierung und Verwaltung von Zugriffskontrollisten (ACLs) innerhalb von DocBits, um angemessene Berechtigungen und Sicherheit für den Dokumentenzugriff und -handling zu gewährleisten.
+<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Moduleinstellungen"><figcaption><p>Seite „Moduleinstellungen“</p></figcaption></figure>
+
+Auf der Seite „Module“ aktivieren oder deaktivieren Sie optionale Funktionen in DocBits. Jeder Abschnitt fasst zusammengehörige Module zusammen, die ein- oder ausgeschaltet werden können.
+
+## Purchase Order
+
+Einstellungen für PO Matching und Validierung.
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **Auto Export if PO matched 100%** | Exportiert das Dokument automatisch, wenn das PO Matching 100 % erreicht. |
+| **PO Dashboard** | Aktiviert das Bestellungs-Dashboard. Enthält das Feld **PO Date Limit**, um die Bestelldaten nach Datum einzugrenzen. |
+| **PO Shipment Order** | Aktiviert die Verarbeitung von Lieferaufträgen, die mit Bestellungen verknüpft sind. |
+| **Shipment Order Dashboard** | Aktiviert ein eigenes Dashboard für Lieferaufträge. |
+
+## Auto Accounting
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **Auto Accounting** | Aktiviert die automatische Kontierung für Dokumente. Wählen Sie den ERP-Typ (z. B. LN, M3). |
+
+## Dashboards
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **Advance Shipment Dashboard** | Dashboard zur Überwachung von Aktivitäten rund um Lieferavise. |
+| **Invoice Dashboard** | Dashboard zur Rechnungsüberwachung und -analyse. |
+| **Full Text Search** | Aktiviert die Volltextsuche über Dokumente hinweg. |
+| **Analytics Dashboard** | Aktiviert das Analytics-Übersichts-Dashboard. |
+
+## Database Access
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **DB Access** | Aktiviert den direkten Datenbankzugriff für die Organisation. |
+
+## AI Dashboard
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **AI Document Warehouse** | KI-gestützte Analysen des Dokumenten-Warehouse. |
+| **Dashboard v2** | Aktualisiertes Dashboard mit erweiterten Funktionen. |
+| **Clickhouse Direct Access** | Aktiviert den direkten Zugriff auf die Clickhouse-Datenbank. |
+| **Supplier Statistics** | Aktiviert Statistiken und Berichte auf Lieferantenebene. |
+
+## Shipping & Supplier
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **Supplier Portal** | Aktiviert das Lieferantenportal für die Zusammenarbeit mit Lieferanten. |
+
+## Document Type
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **Workflow Builder** | Dokumentenverarbeitungs-Workflows erstellen und anpassen. |
+| **Annotation Mode** | Ermöglicht Benutzern, Dokumente in der Validierungsansicht zu annotieren. |
+| **Show Report** | Aktiviert die Berichtserstellung für Dokumente. |
+| **Inbound Emails** | Aktiviert die Verarbeitung eingehender E-Mails pro Dokumenttyp. |
+| **Models & Labels** | KI-Modelle und Labels für die Dokumentenerkennung verwalten. |
+| **Document Script** | Aktiviert benutzerdefinierte Skripte für die Dokumentenverarbeitung. |
+| **Document Scan** | Aktiviert die Dokumentenscan-Funktion. |
+| **Bar-Code/QR Code Extraction** | Extrahiert Barcode-/QR-Code-Daten aus Dokumenten. Wählen Sie die unterstützten Codetypen. |
+| **Custom Master Data** | Aktiviert benutzerdefinierte Stammdatenfelder. |
+| **Tasks & Notifications** | Aktiviert die Aufgabenverwaltung und Benachrichtigungsfunktionen. Enthält den Schalter **Dashboard Tasks Count**. |
+| **DocBits Operator** | Aktiviert die Browser-Automatisierung DocBits Operator. |
+| **DocNet** | Aktiviert die Dokumentenvernetzung DocNet. |
+| **IDM ACL Updater** | Aktualisiert die Zugriffssteuerungslisten (ACLs) von Infor Document Management. Laden Sie eine ION-Mapping-Datei hoch und konfigurieren Sie die Zuordnungen von Infor-Doctype zu ACL. |
+| **Barcode Assignment** | Aktiviert die Zuweisung von Barcodes zu Dokumenten. |
+| **Set Negative Sign For Credit Notes** | Setzt bei Gutschriftsbeträgen automatisch ein negatives Vorzeichen. |
+
+## BOD Connection Stream
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **BOD Connection Stream** | Aktiviert die BOD-Integration (Business Object Document). Zeigt den für die Verbindung verwendeten **Stream Name** an. |
+
+## Analytics
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **Use PostgreSQL for Quality Analytics** | Wechselt zwischen Prometheus (Echtzeit, wird bei Deployments zurückgesetzt) und PostgreSQL (dauerhaft 90 Tage, Trendanalyse, Felder mit der schlechtesten Leistung). |
+
+## Vertex Tax Integration
+
+| Einstellung | Beschreibung |
+|---------|-------------|
+| **Vertex Tax Integration** | Aktiviert die Steuerberechnung mit Vertex. Konfigurieren Sie **Base URL**, **Client ID** und **Client Secret**. Prüfen Sie die Verbindung mit **Test Connection**. |

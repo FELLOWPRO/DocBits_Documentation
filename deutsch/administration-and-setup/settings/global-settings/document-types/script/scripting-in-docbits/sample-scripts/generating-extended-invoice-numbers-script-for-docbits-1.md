@@ -1,4 +1,4 @@
-# Erweiterte Rechnungsnummern
+# Generierung erweiterter Rechnungsnummern - Skript für DocBits
 
 Dieses Dokument beschreibt das Skript "Generierung erweiterter Rechnungsnummern", das die Erstellung erweiterter Rechnungsnummern in DocBits automatisiert. Erweiterte Rechnungsnummern kombinieren mehrere Dokumentkennungen, wie die Rechnungs-ID und die Bestellnummer, zu einem einzigen, umfassenden Identifikator. Dieses Skript verbessert die Dokumentenrückverfolgbarkeit und vereinfacht die Datenhaltung.
 

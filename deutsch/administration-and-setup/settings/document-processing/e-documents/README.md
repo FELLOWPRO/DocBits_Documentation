@@ -2,8 +2,8 @@
 
 DocBits validiert eingehende elektronische Rechnungen (E-Rechnungen) anhand der offiziellen Standards – **XRechnung**, **ZUGFeRD** und **Factur-X** – und leitet gefundene Probleme an die richtige Stelle weiter. Die Einstellungsgruppe **E-Dokumente** (unter **Dokumentenverarbeitung**) umfasst zwei Seiten:
 
-* [**Validierungsregeln**](validation-rules.md) – legen Sie fest, welche E-Rechnungs-Versionen und -Profile Sie akzeptieren, und bestimmen Sie den Schweregrad jeder Validierungsregel für Ihre Organisation.
-* [**Benachrichtigungsrouting**](notification-routing.md) – ordnen Sie Validierungs-Findings dem KI-Workforce-Agenten zu, der sie bearbeiten soll.
+* **[Validierungsregeln](validation-rules.md)** – legen Sie fest, welche E-Rechnungs-Versionen und -Profile Sie akzeptieren, und bestimmen Sie den Schweregrad jeder Validierungsregel für Ihre Organisation.
+* **[Benachrichtigungsrouting](notification-routing.md)** – ordnen Sie Validierungs-Findings dem KI-Workforce-Agenten zu, der sie bearbeiten soll.
 
 Gemeinsam legen Sie damit fest, **was auf einer eingehenden E-Rechnung als Problem gilt** und **wer sich darum kümmert**.
 
@@ -20,6 +20,6 @@ Gehen Sie zu **Einstellungen → Dokumenttypen → Rechnung → Erweiterte Einst
 
 > Die E-Rechnungs-Validierung wird **je Dokumenttyp** konfiguriert. Derzeit gilt sie für den Dokumenttyp **Rechnung**; aktivieren Sie sie für jeden Dokumenttyp, der validiert werden soll.
 
-Sie können auch direkt hierher springen — mit der **globalen Schnellsuche**: Drücken Sie <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Strg</kbd> + <kbd>K</kbd> unter Windows und Linux) an beliebiger Stelle in DocBits und tippen Sie _e-invoice_.
+Sie können auch direkt hierher springen — mit der **globalen Schnellsuche**: Drücken Sie <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Strg</kbd> + <kbd>K</kbd> unter Windows und Linux) an beliebiger Stelle in DocBits und tippen Sie *e-invoice*.
 
 <figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Globale Schnellsuche springt zur E-Rechnungs-Validierung"><figcaption><p>Tippen Sie „e-invoice" in die Schnellsuche, um direkt zum Schalter zu springen.</p></figcaption></figure>

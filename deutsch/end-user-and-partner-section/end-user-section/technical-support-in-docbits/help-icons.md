@@ -1,4 +1,4 @@
-# Help Icons
+# Hilfe-Symbole
 
 Überall in DocBits wurden Hilfe-Symbole platziert, um Ihnen dabei zu helfen, zu lernen und zu verstehen, was eine Funktion tatsächlich bewirkt und wie sie Sie bei Ihrer Dokumentenverarbeitung unterstützen kann.
 

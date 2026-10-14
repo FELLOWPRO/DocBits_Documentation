@@ -1,6 +1,6 @@
-# Field Mappings
+# Feldzuordnungen
 
-Below you will find the necessary field mappings for importing master data, from Infor, into DocBits.
+Nachfolgend finden Sie die erforderlichen Feldzuordnungen für den Import von Stammdaten aus Infor in DocBits.
 
 ## Auto Accounting (LN)
 
@@ -125,4 +125,5 @@ Below you will find the necessary field mappings for importing master data, from
     "TaxRateFree": "number(concat('0',//DataArea/LnTaxCode/SingularRatesGroup/SingularRate[2]/RateNumeric))*100"
 }
 ```
+
 

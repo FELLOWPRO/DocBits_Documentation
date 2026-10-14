@@ -1,11 +1,5 @@
-# API Lizenzen
+# System Licenses
 
-## DE - TRANSLATED
+<figure><img src="../../.gitbook/assets/system_licenses.png" alt="System Licenses"><figcaption><p>Seite „System Licenses“</p></figcaption></figure>
 
-**Translated to Deutsch**
-
-***
-
-## API Licenses
-
-In the "API Licenses" settings, you will find a list of all packages used, the version of the package used and the associated licenses. ...
+Die Seite „System Licenses“ (auch API Licenses genannt) zeigt alle von DocBits verwendeten Softwarepakete von Drittanbietern, einschließlich ihrer Versionsnummern und der zugehörigen Open-Source-Lizenzen. Diese Informationen dienen der Compliance und Transparenz.

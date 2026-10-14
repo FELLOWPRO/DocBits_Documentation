@@ -1,20 +1,19 @@
 # Regex Manager
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+Diese Funktion von DocBits bietet Ihnen eine Alternative zur modellbasierten Klassifizierung, da Sie damit durchsuchbare reguläre Ausdrücke für einen Dokumenttyp schreiben können, zur Klassifizierung und für andere Zwecke.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+Dokumenttyp: Mit dem Regex Manager schreiben Sie reguläre Ausdrücke, nach denen anschließend im Dokument gesucht wird. Findet DocBits eine Übereinstimmung mit dem regulären Ausdruck eines definierten Dokumenttyps, ordnet es das Dokument diesem Dokumenttyp zu. Wenn Sie zum Beispiel einen regulären Ausdruck für „Gutschrift“ schreiben und DocBits diesen Begriff in einem Dokument findet, wird das Dokument als Gutschrift klassifiziert.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+Dokumentherkunft: Über reguläre Ausdrücke erkennt DocBits auch das Herkunftsland eines Dokuments. Enthält ein regulärer Ausdruck für ein spanisches Dokument zum Beispiel den Begriff „Factura“ und DocBits findet diesen Begriff im Dokument, weiß es, dass das Dokument spanischer Herkunft ist, und ordnet es entsprechend zu.
 
-## **Accessing the Regex Manager**
+## **Den Regex Manager öffnen**
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+Gehen Sie in DocBits zu Einstellungen → Dokumenttypen. Klicken Sie unter „Benutzerdefinierte Dokumenttypen“ auf „Neu“. Geben Sie einen Namen für den Dokumenttyp ein, ergänzen Sie optional eine Beschreibung und aktivieren Sie „Tabelle verfügbar“, wenn das Dokument eine Tabelle enthält. Wählen Sie dann „Regex“ statt „Automatisch“ und klicken Sie auf „Weiter“.
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx\_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B\_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../../.gitbook/assets/regex-manager-create-de-20261006.png" alt="Seite „Neue Dokumentart erstellen“ mit Namensfeld, Option „Tabelle verfügbar“, Beschreibung und den Schaltflächen „Automatisch“ und „Regex“"><figcaption><p>Wählen Sie „Regex“, um den neuen Dokumenttyp mit regulären Ausdrücken zu klassifizieren.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## **Regex hinzufügen und entfernen**
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+Der Schritt „Regex“ zeigt die bereits vorhandenen Regex-Modelle mit Herkunft und Muster sowie die Schaltfläche „hinzufügen“, mit der Sie ein neues Regex-Modell anlegen. Über das Aktionsmenü am Zeilenende verwalten Sie den jeweiligen Eintrag. Mit „Weiter“ gelangen Sie zu „Felder und Gruppen“.
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp\_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1\_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
-
+<figure><img src="../../../.gitbook/assets/regex-manager-list-de-20261006.png" alt="Schritt „Regex“ mit der Schaltfläche „hinzufügen“ und einer Tabelle mit drei Regex-Modellen, Herkunft, Muster und Aktionen"><figcaption><p>Vorhandene Regex-Modelle mit Herkunft und Muster. Mit „hinzufügen“ legen Sie ein neues an.</p></figcaption></figure>

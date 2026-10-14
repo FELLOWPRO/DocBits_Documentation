@@ -1,45 +1,45 @@
 # Origin Layouts
 
 {% embed url="https://youtu.be/-m45XGiIeig" %}
-DocBits Origin-Einstellung erklärt: Länderstandards für Datums- und Zahlenformate
+DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
 {% endembed %}
 
-DocBits zeichnet sich durch die Anpassung von Dokumentlayouts entsprechend ihrer geografischen Herkunft aus und standardisiert gleichzeitig Elemente wie Währungsformate basierend auf den Browsereinstellungen des Benutzers. Lassen Sie uns erkunden, wie Sie den Layout Builder nutzen können, um Layouts für verschiedene Herkünfte anzupassen, wie z.B. die USA und Deutschland.
+DocBits passt Dokumentlayouts hervorragend an ihre geografische Herkunft an und standardisiert gleichzeitig Elemente wie Währungsformate anhand der Browser-Einstellungen des Benutzers. Sehen wir uns an, wie Sie mit dem Layout Builder Layouts für unterschiedliche Herkunftsländer anpassen können, zum Beispiel für die USA und Deutschland.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_1.png)
+<figure><img src="../../../.gitbook/assets/origin_layout_1.png" alt=""><figcaption></figcaption></figure>
 
-## **Verstehen der herkunftsbasierten Anpassung**
+## **Herkunftsbasierte Anpassung verstehen**
 
-* Währungs- und Formatstandardisierung: Unabhängig von der ursprünglichen Währung oder dem Format des Dokuments konvertiert DocBits diese Elemente auf dem Server in ein standardisiertes ISO-Format, entsprechend den Browsereinstellungen des Benutzers.
-* Geografische Layoutanpassung: Das System ermöglicht die Anpassung von Dokumentlayouts basierend auf ihrer geografischen Herkunft. Das bedeutet, dass Sie spezifische Felder und Formate für Dokumente aus verschiedenen Ländern definieren können.
+* Standardisierung von Währung und Format: Unabhängig von der Währung oder dem Format des Originaldokuments wandelt DocBits diese Elemente auf dem Server entsprechend den Browser-Einstellungen des Benutzers in ein standardisiertes ISO-Format um.
+* Geografische Layout-Anpassung: Das System ermöglicht es, Dokumentlayouts anhand ihrer geografischen Herkunft anzupassen. Sie können also für Dokumente aus verschiedenen Ländern jeweils eigene Felder und Formate festlegen.
 
-## **Beispiel: USA vs. Deutschland Layouts**
+## **Beispiel: Layouts für die USA und Deutschland**
 
-* USA-Layout: Für eine US-Rechnung könnten Sie Felder für City Tax (Stadtsteuer) hinzufügen, entsprechend der üblichen Steuerstruktur in den USA.
-* Deutschland-Layout: Im Gegensatz dazu kann ein deutsches Rechnungslayout das City Tax-Feld weglassen, da dies in Deutschland keine Standardgebühr ist.
+* US-Layout: Für eine US-Rechnung können Sie Felder für die City Tax aufnehmen, passend zur üblichen Steuerstruktur in den USA.
+* Deutschland-Layout: Ein deutsches Rechnungslayout kann das Feld für die City Tax dagegen weglassen, da diese in Deutschland keine übliche Abgabe ist.
 
-## **Verwendung des Layout Builders**
+## **Den Layout Builder verwenden**
 
-* Origin Layout auswählen: Wählen Sie im Layout Builder das Basislayout entsprechend der Dokumentherkunft.
-* Felder anpassen: Passen Sie das Layout an, indem Sie Felder hinzufügen oder entfernen. Fügen Sie beispielsweise 'City Tax' für ein US-Layout hinzu.
-* Anwenden und testen: Nach der Anpassung wenden Sie das Layout auf Ihre Dokumente an und testen Sie es, um die Genauigkeit sicherzustellen.
+* Origin Layout auswählen: Wählen Sie im Layout Builder das Basislayout, das der Herkunft des Dokuments entspricht.
+* Felder anpassen: Passen Sie das Layout an, indem Sie Felder hinzufügen oder entfernen. Nehmen Sie zum Beispiel für ein US-Layout das Feld „City Tax“ auf.
+* Anwenden und testen: Wenden Sie das angepasste Layout auf Ihre Dokumente an und testen Sie es, um die Korrektheit sicherzustellen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_2.svg)
+<figure><img src="../../../.gitbook/assets/origin_layout_2.svg" alt=""><figcaption></figcaption></figure>
 
-## **Tipps für effektive Anpassung**
+## **Tipps für eine wirkungsvolle Anpassung**
 
-* Regionale Unterschiede verstehen: Machen Sie sich mit den Steuer- und Formatnuancen verschiedener Regionen vertraut.
-* Konsistente Aktualisierungen: Aktualisieren Sie Ihre Layouts regelmäßig, um Änderungen in den regionalen Vorschriften zu berücksichtigen.
-* Benutzerfeedback: Nutzen Sie das Feedback von Benutzern aus verschiedenen Regionen, um Layouts weiter zu verfeinern.
+* Regionale Unterschiede verstehen: Machen Sie sich mit den steuerlichen und formatbezogenen Besonderheiten der einzelnen Regionen vertraut.
+* Regelmäßige Aktualisierung: Aktualisieren Sie Ihre Layouts regelmäßig, damit sie Änderungen regionaler Vorschriften widerspiegeln.
+* Feedback der Benutzer: Nutzen Sie das Feedback von Benutzern in unterschiedlichen Regionen, um Layouts weiter zu verfeinern.
 
-## Standardlayout auf mehrere Origins anwenden
+## Standardlayout auf mehrere Herkunftsländer anwenden
 
-Wenn Sie das Standardlayout auf mehrere Origins anwenden möchten, drücken Sie **Standardlayout auf die Herkunft anwenden**.
+Wenn Sie das Standardlayout auf mehrere Herkunftsländer anwenden möchten, klicken Sie auf **Apply Default To Origins**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_3.png)
+<figure><img src="../../../.gitbook/assets/origin_layout_3.png" alt=""><figcaption></figcaption></figure>
 
-Ein Popup erscheint, in dem Sie die Origins auswählen können, auf die Sie das Standardlayout anwenden möchten. Sie können **Alle auswählen** oder **Auswahl aufheben** verwenden, um Ihre Auswahl schnell zu verwalten. Das Popup zeigt die Anzahl der aktuell ausgewählten Origins an.
+Es öffnet sich ein Popup, in dem Sie die Herkunftsländer auswählen können, auf die das Standardlayout angewendet werden soll. Mit **Select All** oder **Unselect All** können Sie Ihre Auswahl schnell anpassen. Das Popup zeigt die Anzahl der aktuell ausgewählten Herkunftsländer an.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/origin_layout_4.png)
+<figure><img src="../../../.gitbook/assets/origin_layout_4.png" alt=""><figcaption></figcaption></figure>
 
-Nach Ihrer Auswahl klicken Sie auf **Auf Herkünfte anwenden**. Eine Erfolgsmeldung bestätigt, dass die Origins aktualisiert wurden.
+Klicken Sie nach der Auswahl auf **Apply to Origins**. Eine Erfolgsmeldung bestätigt, dass die Herkunftsländer aktualisiert wurden.

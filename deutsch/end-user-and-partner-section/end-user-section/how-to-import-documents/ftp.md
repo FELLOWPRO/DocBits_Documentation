@@ -21,6 +21,8 @@ Voraussetzungen
 
 Geben Sie die SFTP-Anmeldedaten in die vorgesehenen Felder ein und wählen Sie „Speichern" (das Feld „API-Schlüssel" wird automatisch mit dem API-Schlüssel der Umgebung gefüllt, in der Sie arbeiten).
 
+<figure><img src="../../../.gitbook/assets/ftp_import_configuration_form.png" alt="FTP Import Configuration Form"><figcaption></figcaption></figure>
+
 Sobald Sie alle erforderlichen Details Ihres SFTP eingegeben haben, klicken Sie auf SPEICHERN.
 
 ### **FTP-Dateiarchivierung**
@@ -33,3 +35,5 @@ Sobald Sie alle erforderlichen Details Ihres SFTP eingegeben haben, klicken Sie 
    * Wählen Sie den gewünschten Ordnerpfad auf dem SFTP-/FTP-Server aus, in dem die archivierten Dateien gespeichert werden sollen.
 3. **Änderungen speichern**
    * Klicken Sie auf die Schaltfläche **Speichern**, um die Änderungen zu übernehmen.
+
+<figure><img src="../../../.gitbook/assets/ftp_file_archiving_settings.png" alt="FTP File Archiving Settings"><figcaption></figcaption></figure>

@@ -1,4 +1,4 @@
-# Zugangskontrolle
+# Zugriffskontrolle
 
 ## Übersicht
 
@@ -13,7 +13,7 @@ Die Zugriffskontrolle greift nur, wenn das System **Gruppen & Berechtigungen** e
 Jede Gruppe kann konfiguriert werden für:
 
 * **Dokumentzugriff** — ob die Gruppe einen Dokumenttyp überhaupt nutzen darf.
-* **Aktionsberechtigungen** — welche Aktionen (auflisten, anzeigen, bearbeiten, löschen, massenaktualisieren, genehmigen) die Gruppe ausführen darf und _für welche Dokumente_.
+* **Aktionsberechtigungen** — welche Aktionen (auflisten, anzeigen, bearbeiten, löschen, massenaktualisieren, genehmigen) die Gruppe ausführen darf und *für welche Dokumente*.
 * **Feldberechtigungen** — ob jedes einzelne Feld eines Dokumenttyps bearbeitbar, schreibgeschützt oder ausgeblendet ist.
 
 ## Aktivierung
@@ -42,7 +42,7 @@ Wenn ein Benutzer etwas mit einem Dokument tun möchte, prüft DocBits der Reihe
 
 1. **Ist das System Gruppen & Berechtigungen eingeschaltet und der Benutzer kein Administrator?** Wenn aus oder der Benutzer ist Administrator → voller Zugriff.
 2. **Ist der Dokumenttyp für eine der Gruppen des Benutzers aktiviert?** Wenn deaktiviert → der Benutzer kann diesen Dokumenttyp nicht sehen oder nutzen.
-3. **Welcher Zugriffsbereich ist für die Aktion gesetzt?** (z. B. _Bearbeiten = Owner_). Der Bereich wird mit der Beziehung des Benutzers zu _diesem konkreten Dokument_ abgeglichen — ist er Eigentümer, Zugewiesener, beides oder keines?
+3. **Welcher Zugriffsbereich ist für die Aktion gesetzt?** (z. B. *Bearbeiten = Owner*). Der Bereich wird mit der Beziehung des Benutzers zu *diesem konkreten Dokument* abgeglichen — ist er Eigentümer, Zugewiesener, beides oder keines?
 4. **Welche Feldberechtigung gilt?** Selbst wenn ein Benutzer ein Dokument öffnen darf, können einzelne Felder weiterhin ausgeblendet oder gesperrt sein.
 
 ## Dokumenttyp-Berechtigungen
@@ -51,30 +51,30 @@ Jede Zeile der Matrix ist ein Dokumenttyp (Invoice, Credit Note, Purchase Order,
 
 Die erste Spalte ist ein Schalter **Aktiviert / Deaktiviert**. Deaktivieren Sie ihn, kann die Gruppe diesen Dokumenttyp gar nicht nutzen — er verschwindet aus ihrem Dashboard. Aktivieren Sie ihn, werden die sieben Aktionsspalten bearbeitbar.
 
-| Aktion                   | Bestimmt, ob die Gruppe …                           |
-| ------------------------ | --------------------------------------------------- |
-| **Liste**                | den Dokumenttyp in der Dashboard-Liste sehen darf.  |
-| **Anzeigen**             | ein Dokument öffnen und seine Details ansehen darf. |
-| **Bearbeiten**           | Feldwerte eines Dokuments ändern darf.              |
-| **Löschen**              | ein Dokument löschen darf.                          |
-| **Massenaktualisierung** | mehrere Dokumente auf einmal aktualisieren darf.    |
-| **Erste Genehmigung**    | die Genehmigung der ersten Stufe erteilen darf.     |
-| **Zweite Genehmigung**   | die Genehmigung der zweiten Stufe erteilen darf.    |
+| Aktion | Bestimmt, ob die Gruppe … |
+|--------|----------------------------|
+| **Liste** | den Dokumenttyp in der Dashboard-Liste sehen darf. |
+| **Anzeigen** | ein Dokument öffnen und seine Details ansehen darf. |
+| **Bearbeiten** | Feldwerte eines Dokuments ändern darf. |
+| **Löschen** | ein Dokument löschen darf. |
+| **Massenaktualisierung** | mehrere Dokumente auf einmal aktualisieren darf. |
+| **Erste Genehmigung** | die Genehmigung der ersten Stufe erteilen darf. |
+| **Zweite Genehmigung** | die Genehmigung der zweiten Stufe erteilen darf. |
 
 ### Zugriffsbereiche
 
-Jede Aktionsspalte ist ein Dropdown. Der gewählte Wert beantwortet die Frage _„für welche Dokumente darf die Gruppe das tun?"_. Die Bereichsnamen erscheinen in der Oberfläche auf Englisch:
+Jede Aktionsspalte ist ein Dropdown. Der gewählte Wert beantwortet die Frage *„für welche Dokumente darf die Gruppe das tun?"*. Die Bereichsnamen erscheinen in der Oberfläche auf Englisch:
 
-| Bereich              | Wer ist erlaubt                                                          | Wirkung auf ein Dokument                                                                                |
-| -------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| **No Access**        | Niemand in der Gruppe.                                                   | Die Aktion ist für alle in der Gruppe gesperrt — die Schaltfläche ist ausgeblendet oder deaktiviert.    |
-| **Everyone**         | Jedes Mitglied der Gruppe.                                               | Jedes Gruppenmitglied kann die Aktion bei **jedem** Dokument dieses Typs ausführen.                     |
-| **Owner**            | Nur der Benutzer, der das Dokument **erstellt / hochgeladen** hat.       | Die Aktion funktioniert nur bei Dokumenten, die der Benutzer selbst hochgeladen hat.                    |
-| **Assignee**         | Nur der Benutzer (oder die Gruppe), dem das Dokument **zugewiesen** ist. | Die Aktion funktioniert nur bei Dokumenten, die dem Benutzer oder einer seiner Gruppen zugewiesen sind. |
-| **Owner & Assignee** | Der Eigentümer **oder** der Zugewiesene.                                 | Die Aktion funktioniert, wenn der Benutzer _entweder_ der Hochladende _oder_ der Zugewiesene ist.       |
+| Bereich | Wer ist erlaubt | Wirkung auf ein Dokument |
+|---------|-----------------|--------------------------|
+| **No Access** | Niemand in der Gruppe. | Die Aktion ist für alle in der Gruppe gesperrt — die Schaltfläche ist ausgeblendet oder deaktiviert. |
+| **Everyone** | Jedes Mitglied der Gruppe. | Jedes Gruppenmitglied kann die Aktion bei **jedem** Dokument dieses Typs ausführen. |
+| **Owner** | Nur der Benutzer, der das Dokument **erstellt / hochgeladen** hat. | Die Aktion funktioniert nur bei Dokumenten, die der Benutzer selbst hochgeladen hat. |
+| **Assignee** | Nur der Benutzer (oder die Gruppe), dem das Dokument **zugewiesen** ist. | Die Aktion funktioniert nur bei Dokumenten, die dem Benutzer oder einer seiner Gruppen zugewiesen sind. |
+| **Owner & Assignee** | Der Eigentümer **oder** der Zugewiesene. | Die Aktion funktioniert, wenn der Benutzer *entweder* der Hochladende *oder* der Zugewiesene ist. |
 
 {% hint style="info" %}
-**Owner** und **Assignee** hängen von der _Beziehung zwischen dem Benutzer und jedem einzelnen Dokument_ ab. Zwei Mitglieder derselben Gruppe können daher beim selben Beleg unterschiedliche Rechte haben — siehe das durchgespielte Beispiel unten.
+**Owner** und **Assignee** hängen von der *Beziehung zwischen dem Benutzer und jedem einzelnen Dokument* ab. Zwei Mitglieder derselben Gruppe können daher beim selben Beleg unterschiedliche Rechte haben — siehe das durchgespielte Beispiel unten.
 {% endhint %}
 
 <figure><img src="../../../../../.gitbook/assets/access_control_matrix.png" alt="Zugriffskontroll-Matrix einer Gruppe"><figcaption><p>Die Dokumenttyp-Berechtigungsmatrix. Hier ist der Typ <strong>Invoice</strong> aktiviert und seine Aktionen sind auf verschiedene Zugriffsbereiche gesetzt; die übrigen Typen sind deaktiviert.</p></figcaption></figure>
@@ -85,7 +85,7 @@ Jede Aktionsspalte ist ein Dropdown. Der gewählte Wert beantwortet die Frage _�
 
 Das Genehmigen eines Dokuments löst im Hintergrund **zwei Aktionen** aus: DocBits **speichert** zuerst das Dokument und setzt es dann auf den genehmigten Status. Der Speicherschritt benötigt die Berechtigung **Bearbeiten** — die beiden Berechtigungen sind also verknüpft.
 
-Ein Benutzer, der nur **Erste Genehmigung** oder **Zweite Genehmigung** erhält — aber _nicht_ **Bearbeiten** —, läuft beim Speicherschritt in einen Berechtigungsfehler und kann das Dokument nicht genehmigen.
+Ein Benutzer, der nur **Erste Genehmigung** oder **Zweite Genehmigung** erhält — aber *nicht* **Bearbeiten** —, läuft beim Speicherschritt in einen Berechtigungsfehler und kann das Dokument nicht genehmigen.
 
 {% hint style="warning" %}
 Wann immer Sie **Erste Genehmigung** oder **Zweite Genehmigung** vergeben, vergeben Sie auch **Bearbeiten** (und **Anzeigen**) für denselben Dokumenttyp. Eine Genehmigungsberechtigung allein reicht nicht aus.
@@ -93,14 +93,14 @@ Wann immer Sie **Erste Genehmigung** oder **Zweite Genehmigung** vergeben, verge
 
 ## Feldberechtigungen
 
-Klicken Sie auf eine Dokumenttyp-Zeile, um darunter das Panel **Feldberechtigungen** zu öffnen. Felder sind in Reiter gegliedert (z. B. _Tabellenspalten_, _Details der Rechnung_, _Einzelheiten zur Zahlung_, _Steuersätze & Beträge_). Jedes Feld hat seine eigene Zugriffsstufe:
+Klicken Sie auf eine Dokumenttyp-Zeile, um darunter das Panel **Feldberechtigungen** zu öffnen. Felder sind in Reiter gegliedert (z. B. *Tabellenspalten*, *Details der Rechnung*, *Einzelheiten zur Zahlung*, *Steuersätze & Beträge*). Jedes Feld hat seine eigene Zugriffsstufe:
 
-| Stufe               | Wirkung auf das Feld                                                                                  |
-| ------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Lesen/Schreiben** | Das Feld ist sichtbar **und** bearbeitbar.                                                            |
-| **Nur Lesen**       | Das Feld ist sichtbar, kann aber **nicht bearbeitet** werden (ausgegraut).                            |
-| **Genehmigung**     | Das Feld kann bearbeitet werden, die Änderung durchläuft aber zuerst einen **Genehmigungs-Workflow**. |
-| **Kein Zugriff**    | Das Feld ist **vollständig ausgeblendet** — der Benutzer sieht es nie.                                |
+| Stufe | Wirkung auf das Feld |
+|-------|----------------------|
+| **Lesen/Schreiben** | Das Feld ist sichtbar **und** bearbeitbar. |
+| **Nur Lesen** | Das Feld ist sichtbar, kann aber **nicht bearbeitet** werden (ausgegraut). |
+| **Genehmigung** | Das Feld kann bearbeitet werden, die Änderung durchläuft aber zuerst einen **Genehmigungs-Workflow**. |
+| **Kein Zugriff** | Das Feld ist **vollständig ausgeblendet** — der Benutzer sieht es nie. |
 
 {% hint style="info" %}
 Feldregeln gelten für **alle** Mitglieder der Gruppe gleichermaßen — sie hängen nicht von Eigentümer/Zugewiesenem ab. Nutzen Sie sie, um sensible Felder (z. B. einen Rabatt oder einen Gesamtbetrag) für eine ganze Gruppe auszublenden oder zu sperren.
@@ -110,48 +110,48 @@ Feldregeln gelten für **alle** Mitglieder der Gruppe gleichermaßen — sie hä
 
 ## Durchgespieltes Beispiel: Was die Zugriffskontrolle bei einem echten Beleg bewirkt
 
-Angenommen, Sie erstellen eine Gruppe **AP\_CLERK** für Ihre Kreditorenbuchhalter und konfigurieren den Dokumenttyp **Invoice** wie folgt:
+Angenommen, Sie erstellen eine Gruppe **AP_CLERK** für Ihre Kreditorenbuchhalter und konfigurieren den Dokumenttyp **Invoice** wie folgt:
 
 **Dokumenttyp-Berechtigungen für Invoice**
 
-| Aktion               | Bereich          |
-| -------------------- | ---------------- |
-| Aktiviert            | ✅ An             |
-| Liste                | Everyone         |
-| Anzeigen             | Everyone         |
-| Bearbeiten           | Owner & Assignee |
-| Löschen              | No Access        |
-| Massenaktualisierung | No Access        |
-| Erste Genehmigung    | Assignee         |
-| Zweite Genehmigung   | No Access        |
+| Aktion | Bereich |
+|--------|---------|
+| Aktiviert | ✅ An |
+| Liste | Everyone |
+| Anzeigen | Everyone |
+| Bearbeiten | Owner & Assignee |
+| Löschen | No Access |
+| Massenaktualisierung | No Access |
+| Erste Genehmigung | Assignee |
+| Zweite Genehmigung | No Access |
 
 **Feldberechtigungen für Invoice**
 
-| Feld                    | Stufe           |
-| ----------------------- | --------------- |
-| `TOTAL_AMOUNT`          | Nur Lesen       |
-| `CUSTOMER_DISCOUNT`     | Kein Zugriff    |
-| _(alle anderen Felder)_ | Lesen/Schreiben |
+| Feld | Stufe |
+|------|-------|
+| `TOTAL_AMOUNT` | Nur Lesen |
+| `CUSTOMER_DISCOUNT` | Kein Zugriff |
+| *(alle anderen Felder)* | Lesen/Schreiben |
 
-Verfolgen Sie nun ein konkretes Dokument — den Beleg **INV-4711**, den **Maria hochgeladen** hat und der **Maria zugewiesen** ist. Sowohl Maria als auch ihr Kollege Tom sind in der Gruppe **AP\_CLERK**.
+Verfolgen Sie nun ein konkretes Dokument — den Beleg **INV-4711**, den **Maria hochgeladen** hat und der **Maria zugewiesen** ist. Sowohl Maria als auch ihr Kollege Tom sind in der Gruppe **AP_CLERK**.
 
-**Maria (Eigentümerin&#x20;**_**und**_**&#x20;Zugewiesene von INV-4711):**
+**Maria (Eigentümerin *und* Zugewiesene von INV-4711):**
 
-* ✅ Sieht INV-4711 in der Dashboard-Liste _(Liste = Everyone)_.
-* ✅ Öffnet ihn _(Anzeigen = Everyone)_.
-* ✅ Bearbeitet Lieferantennamen und Positionen _(Bearbeiten = Owner & Assignee — sie ist die Eigentümerin)_.
-* 🔒 Sieht `TOTAL_AMOUNT`, das Feld ist aber ausgegraut und nicht änderbar _(Nur Lesen)_.
-* 🚫 Sieht das Feld `CUSTOMER_DISCOUNT` gar nicht _(Kein Zugriff)_.
-* 🚫 Die Schaltfläche **Löschen** ist ausgeblendet _(Löschen = No Access — niemand in der Gruppe darf löschen)_.
-* ✅ Kann die **erste Genehmigung** erteilen _(Erste Genehmigung = Assignee — sie ist die Zugewiesene)_.
+* ✅ Sieht INV-4711 in der Dashboard-Liste *(Liste = Everyone)*.
+* ✅ Öffnet ihn *(Anzeigen = Everyone)*.
+* ✅ Bearbeitet Lieferantennamen und Positionen *(Bearbeiten = Owner & Assignee — sie ist die Eigentümerin)*.
+* 🔒 Sieht `TOTAL_AMOUNT`, das Feld ist aber ausgegraut und nicht änderbar *(Nur Lesen)*.
+* 🚫 Sieht das Feld `CUSTOMER_DISCOUNT` gar nicht *(Kein Zugriff)*.
+* 🚫 Die Schaltfläche **Löschen** ist ausgeblendet *(Löschen = No Access — niemand in der Gruppe darf löschen)*.
+* ✅ Kann die **erste Genehmigung** erteilen *(Erste Genehmigung = Assignee — sie ist die Zugewiesene)*.
 
-**Tom (gleiche Gruppe, hat INV-4711 aber&#x20;**_**nicht**_**&#x20;hochgeladen und er ist ihm&#x20;**_**nicht**_**&#x20;zugewiesen):**
+**Tom (gleiche Gruppe, hat INV-4711 aber *nicht* hochgeladen und er ist ihm *nicht* zugewiesen):**
 
-* ✅ Sieht ihn in der Liste und ✅ öffnet ihn _(Liste & Anzeigen = Everyone)_.
-* 🚫 Kann nichts bearbeiten — das Dokument öffnet **schreibgeschützt** _(Bearbeiten = Owner & Assignee — Tom ist keines von beiden)_.
-* 🔒 / 🚫 Sieht genau dieselbe Feldsichtbarkeit wie Maria: `TOTAL_AMOUNT` gesperrt, `CUSTOMER_DISCOUNT` ausgeblendet _(Feldregeln gelten für die ganze Gruppe)_.
-* 🚫 Kann die erste Genehmigung nicht erteilen _(Erste Genehmigung = Assignee — nicht Tom)_.
-* 🚫 Kann nicht löschen _(No Access)_.
+* ✅ Sieht ihn in der Liste und ✅ öffnet ihn *(Liste & Anzeigen = Everyone)*.
+* 🚫 Kann nichts bearbeiten — das Dokument öffnet **schreibgeschützt** *(Bearbeiten = Owner & Assignee — Tom ist keines von beiden)*.
+* 🔒 / 🚫 Sieht genau dieselbe Feldsichtbarkeit wie Maria: `TOTAL_AMOUNT` gesperrt, `CUSTOMER_DISCOUNT` ausgeblendet *(Feldregeln gelten für die ganze Gruppe)*.
+* 🚫 Kann die erste Genehmigung nicht erteilen *(Erste Genehmigung = Assignee — nicht Tom)*.
+* 🚫 Kann nicht löschen *(No Access)*.
 
 **Was dieses Beispiel zeigt**
 

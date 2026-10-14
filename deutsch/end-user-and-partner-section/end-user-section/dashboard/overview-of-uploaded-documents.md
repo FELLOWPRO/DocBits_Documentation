@@ -1,4 +1,4 @@
-# Overview of Uploaded Documents
+# Übersicht der hochgeladenen Dokumente
 
 Der zweite Teil des Dashboards ist eine Übersicht über alle hochgeladenen Dokumente. Sie können alle Dokumente anzeigen oder nur die, die Ihnen zugewiesen sind. Sie können auch nach Dokumenten anhand des Namens suchen.
 

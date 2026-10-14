@@ -1,4 +1,4 @@
-# Creating an IDM Mapping File
+# Erstellen einer IDM-Mapping-Datei
 
 ## Felder für die IDM-Mapping-Datei
 
@@ -6,7 +6,7 @@ Beim Erstellen einer IDM-Mapping-Datei sind die folgenden Felder erforderlich:
 
 * **Document Type Definition**
   * Stellen Sie sicher, dass der Dokumenttyp-Code in DocBits mit dem in der URL der Feldeinstellungen verwendeten Namen übereinstimmt, ähnlich wie bei der BOD-Mapping-Datei.
-  * Überprüfen Sie, ob der Dokumenttypname in IDM mit Ihrer Systemkonfiguration übereinstimmt. In M3 könnte er beispielsweise **M3\_SupplierInvoice** lauten, während er in LN je nach Ihrer Einrichtung anders ausfällt.
+  * Überprüfen Sie, ob der Dokumenttypname in IDM mit Ihrer Systemkonfiguration übereinstimmt. In M3 könnte er beispielsweise **M3_SupplierInvoice** lauten, während er in LN je nach Ihrer Einrichtung anders ausfällt.
     * Eine Anleitung zur Navigation in IDM finden Sie unter Document Manager in IDM auf dieser Seite.
 
 ```properties
@@ -18,13 +18,13 @@ INVOICE=M3_SupplierInvoice
 
 *   **Static Values**
 
-    * Definieren Sie zunächst alle statischen Werte in einer einzigen Zeile mit dem Schlüssel **Static\_Values**:
+    * Definieren Sie zunächst alle statischen Werte in einer einzigen Zeile mit dem Schlüssel **Static_Values**:
 
     ```properties
     Static_Values=FileNameSeparator,ACLString
     ```
 
-    * Weisen Sie anschließend jeder statischen Variablen mit dem Präfix **SV\_** einen Wert zu:
+    * Weisen Sie anschließend jeder statischen Variablen mit dem Präfix **SV_** einen Wert zu:
 
     ```properties
     SV_FileNameSeparator=_ 
@@ -78,7 +78,7 @@ SF_M3_Division=VVB
       IF_<DocBitsFieldID> = <IDMAttributeId>
       ```
 
-      * Stellen Sie sicher, dass **IndexFieldFromDocBits = IDMAttributeID** gilt, um zu gewährleisten, dass die Feldzuordnung in DocBits mit den Attributen in IDM übereinstimmt (Document Type → Attributes).\ Eine Anleitung zur Navigation in IDM finden Sie unter Document Manager in IDM auf dieser Seite.
+      * Stellen Sie sicher, dass **IndexFieldFromDocBits = IDMAttributeID** gilt, um zu gewährleisten, dass die Feldzuordnung in DocBits mit den Attributen in IDM übereinstimmt (Document Type → Attributes).\        Eine Anleitung zur Navigation in IDM finden Sie unter Document Manager in IDM auf dieser Seite.
 
 ```properties
 #Define index fields
@@ -112,21 +112,25 @@ ACL_Fields=SV_ACLString
 Searchable_PDF_Name=IF_INVOICE_ID 
 ```
 
+
+
+<figure><img src="../../.gitbook/assets/idm_mapping_file_example.png" alt="IDM Mapping File Example"><figcaption></figcaption></figure>
+
 ## Export von XML- und EDI-Dateien
 
-Um die ursprüngliche XML-/EDI-Datei zusammen mit dem generierten PDF zu exportieren, müssen Sie die IDM-Mapping-Datei in der Exportkonfiguration ändern. Aktualisieren Sie zunächst den Abschnitt **Static\_Values**, indem Sie das Datei-Präfix und die Dateierweiterung hinzufügen. Definieren Sie anschließend das eigentliche Mapping, um die korrekte Exportkonfiguration sicherzustellen.
+Um die ursprüngliche XML-/EDI-Datei zusammen mit dem generierten PDF zu exportieren, müssen Sie die IDM-Mapping-Datei in der Exportkonfiguration ändern. Aktualisieren Sie zunächst den Abschnitt **Static_Values**, indem Sie das Datei-Präfix und die Dateierweiterung hinzufügen. Definieren Sie anschließend das eigentliche Mapping, um die korrekte Exportkonfiguration sicherzustellen.
 
 Wenn bereits ein Export von Rechnungen nach IDM eingerichtet ist, sollte das generierte PDF bereits im Export enthalten sein. Wenn Sie die XML-Datei nicht benötigen, können Sie den nächsten Teil überspringen. Falls Sie die XML-Datei jedoch benötigen, befolgen Sie die nachstehenden Schritte.
 
 ### Aktualisieren der Static Values:
 
-Suchen Sie das Feld **Static\_Values** und fügen Sie Folgendes hinzu:
+Suchen Sie das Feld **Static_Values** und fügen Sie Folgendes hinzu:
 
 ```properties
 ,EDI_FILE_PREFIX,XML_FILE_PREFIX,PDF_FILE_PREFIX,PDF_FILE_EXTENSION,EDI_FILE_EXTENSION,XML_FILE_EXTENSION
 ```
 
-Fügen Sie anschließend die folgenden Einträge unterhalb von **SV\_ACLString** hinzu:
+Fügen Sie anschließend die folgenden Einträge unterhalb von **SV_ACLString** hinzu:
 
 ```properties
 SV_EDI_FILE_PREFIX=EDI_810_
@@ -136,6 +140,8 @@ SV_PDF_FILE_EXTENSION=.pdf
 SV_EDI_FILE_EXTENSION=.xml
 SV_XML_FILE_EXTENSION=.xml
 ```
+
+<figure><img src="../../.gitbook/assets/static_values_configuration_example.png" alt="Static Values Configuration Example"><figcaption></figcaption></figure>
 
 ### XML-Mapping
 
@@ -151,7 +157,9 @@ EFE_XML_EXPORT_DOC_TYPE = M3_SupplierInvoice
 EFE_XML_EXPORT_FILENAME = SV_XML_FILE_PREFIX+IF_INVOICE_ID+SV_XML_FILE_EXTENSION
 </code></pre>
 
-Hinweis: Stellen Sie sicher, dass **export\_doc\_type** auf den IDM-Rechnungstyp gesetzt ist. In diesem Beispiel ist es für **M3** festgelegt.
+Hinweis: Stellen Sie sicher, dass **export_doc_type** auf den IDM-Rechnungstyp gesetzt ist. In diesem Beispiel ist es für **M3** festgelegt.
+
+<figure><img src="../../.gitbook/assets/xml_mapping_example.png" alt="XML Mapping Example"><figcaption></figcaption></figure>
 
 ### EDI-Mapping
 
@@ -168,7 +176,9 @@ EFE_EDI_EXPORT_DOC_TYPE = M3_SupplierInvoice
 EFE_EDI_EXPORT_FILENAME = SV_EDI_FILE_PREFIX+IF_INVOICE_NUMBER+SV_EDI_FILE_EXTENSION
 ```
 
-Hinweis: Stellen Sie sicher, dass **export\_doc\_type** auf den IDM-Rechnungstyp gesetzt ist. In diesem Beispiel ist es für **M3** festgelegt.
+Hinweis: Stellen Sie sicher, dass **export_doc_type** auf den IDM-Rechnungstyp gesetzt ist. In diesem Beispiel ist es für **M3** festgelegt.
+
+<figure><img src="../../.gitbook/assets/edi_mapping_example.png" alt="EDI Mapping Example"><figcaption></figcaption></figure>
 
 ### Document Manager in Infor
 

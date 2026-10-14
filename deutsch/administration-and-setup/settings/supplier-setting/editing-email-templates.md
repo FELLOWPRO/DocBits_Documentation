@@ -1,76 +1,83 @@
-# Email Vorlagen editieren
+# E-Mail-Vorlagen bearbeiten
 
-**Übersicht**\
-Die Funktion **E-Mail-Vorlagen** ermöglicht es Administratoren, E-Mail-Kommunikation zu erstellen und anzupassen, die automatisch an Lieferanten gesendet wird. Eines der Schlüsselelemente, das in diesen Vorlagen verwendet wird, ist der **\{{magic\_link\}}**, der einen dynamischen Link enthält, der für jeden Empfänger individuell angepasst wird.
+<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="E-Mail-Vorlagen für Lieferanten"><figcaption><p>Seite E-Mail-Vorlagen für Lieferanten</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/docbits_approval_supplier.png" alt="Genehmigung Lieferant Einstellungen E-Mail Import Bestellung Tabelle Übersicht"><figcaption></figcaption></figure>
+### Überblick
 
-**Was ist \{{magic\_link\}}?**\
-Der **\{{magic\_link\}}** ist ein Platzhalter, der beim Versenden der E-Mail automatisch durch eine eindeutige URL ersetzt wird. Diese URL leitet den Empfänger in der Regel dazu, eine Aktion abzuschließen, wie z. B. eine Registrierung, Genehmigung oder den Zugriff auf einen bestimmten Bereich des Lieferantenportals.
+Mit der Funktion E-Mail-Vorlagen können Administratoren E-Mail-Kommunikation erstellen und anpassen, die automatisch an Lieferanten gesendet wird. Eines der Schlüsselelemente dieser Vorlagen ist der `{{magic_link}}`, der einen dynamischen, auf jeden Empfänger zugeschnittenen Link bereitstellt.
 
-**Bearbeiten von E-Mail-Vorlagen**
+#### Was ist `{{magic_link}}`?
 
-<figure><img src="../../../.gitbook/assets/docbits_email.png" alt="E-Mail Übersicht"><figcaption></figcaption></figure>
+Der `{{magic_link}}` ist ein Platzhalter, der beim Versand der E-Mail dynamisch durch eine eindeutige URL ersetzt wird. Diese URL leitet den Empfänger in der Regel dazu, eine Aktion abzuschließen, etwa eine Registrierung, eine Genehmigung oder den Zugriff auf einen bestimmten Bereich des Lieferantenportals.
 
-**Zugriff auf den E-Mail-Template-Editor**
+### E-Mail-Vorlagen bearbeiten
 
-1. **Navigieren Sie zu den E-Mail-Templates:**\
-   Gehen Sie im Hauptmenü zum Abschnitt "E-Mail-Templates".
-2. **Wählen Sie eine Vorlage zur Bearbeitung aus:**\
-   Wählen Sie die E-Mail-Vorlage, die Sie bearbeiten möchten, indem Sie auf den Vorlagennamen klicken (z. B. "Lieferanteneinladung").
-3. **Bearbeiten Sie die Vorlage:**\
-   Der Editor ermöglicht es Ihnen, sowohl den HTML-Code als auch das visuelle Design der E-Mail zu bearbeiten.\
-   Sie können über die bereitgestellten Registerkarten zwischen der visuellen Bearbeitung und dem Code-Editor wechseln.
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/docbits_docbits_image_16 (1).png" alt="DocBits Bild"><figcaption></figcaption></figure>
+#### Auf den E-Mail-Vorlagen-Editor zugreifen
 
-***
+1. **Zu den E-Mail-Vorlagen navigieren**:
+   * Gehen Sie im Hauptmenü zum Abschnitt **Email Templates**.
+2. **Eine Vorlage zur Bearbeitung auswählen**:
+   * Wählen Sie die E-Mail-Vorlage, die Sie bearbeiten möchten, indem Sie auf den Vorlagennamen klicken (z. B. „Supplier Invitation Email“).
+3. **Die Vorlage bearbeiten**:
+   * Mit dem Editor können Sie sowohl den HTML-Code als auch das visuelle Design der E-Mail ändern.
+   * Über die bereitgestellten Registerkarten können Sie zwischen visueller Bearbeitung und Code-Bearbeitung wechseln.
 
-**Definition von \{{magic\_link\}} als Link**
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
 
-Um \{{magic\_link\}} als klickbaren Link in der E-Mail zu definieren, muss dieser korrekt im HTML-Code der Vorlage formatiert werden. Gehen Sie folgendermaßen vor:
+#### `{{magic_link}}` als Link definieren
 
-1. **Finden Sie den Link-Abschnitt im HTML-Code:**\
-   Im Code-Editor suchen Sie den Abschnitt, in dem der Magic-Link erscheinen soll. Dieser befindet sich in der Regel in einem \<a> (Anchor)-Tag.
-2. **Fügen Sie den \{{magic\_link\}}-Platzhalter ein:**\
-   Ersetzen Sie das **href**-Attribut des Anchor-Tags durch \{{magic\_link\}}.\
-   Stellen Sie sicher, dass der Link im Stil der E-Mail-Vorlage korrekt formatiert ist. Hier ist ein Beispiel:
+Damit `{{magic_link}}` in der E-Mail als anklickbarer Link erscheint, muss er im HTML-Code der Vorlage korrekt formatiert sein. Gehen Sie dazu wie folgt vor:
 
-```html
-<a href="{{magic_link}}" target="_blank" style="
-    background-color: #B7184B;
-    border-radius: 25px;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 12px 25px;
-    color: #FFFFFF;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;">
-    Registrierung abschließen
-</a>
-```
+1. **Den Link-Abschnitt im HTML-Code finden**:
+   * Suchen Sie im Code-Editor den Abschnitt, in dem der Magic Link erscheinen soll. Er befindet sich in der Regel in einem `<a>`-Tag (Anker).
+2.  **Den Platzhalter `{{magic_link}}` einfügen**:
 
-3. **Passen Sie den Linktext an:**\
-   Ändern Sie den Text zwischen den öffnenden und schließenden \<a>-Tags, um die gewünschte Aktion des Benutzers widerzuspiegeln, z. B. „Registrierung abschließen“ oder „Auf Ihr Konto zugreifen“.
-4. **Speichern und testen Sie die Vorlage:**\
-   • Klicken Sie nach den Änderungen auf die Schaltfläche "Speichern".\
-   • Sie können die Schaltfläche "Test senden" verwenden, um eine Test-E-Mail zu senden und sicherzustellen, dass der Link wie gewünscht funktioniert.
+    * Ersetzen Sie das Attribut `href` des Anker-Tags durch `{{magic_link}}`.
+    * Achten Sie darauf, dass der Link passend zur E-Mail-Vorlage gestaltet ist. Hier ein Beispiel:
 
-***
+    ```html
+    <a href="{{magic_link}}" target="_blank" style="
+        background-color: #B7184B;
+        border-radius: 25px;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 12px 25px;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;">
+        Complete Registration
+    </a>
+    ```
 
-**Best Practices für die Verwendung von \{{magic\_link\}}**
+### 3. Den Linktext anpassen:
 
-* **Platzierung des Links:** Platzieren Sie den \{{magic\_link\}} gut sichtbar in der E-Mail, damit er für die Empfänger leicht zugänglich ist.
-* **Eindeutiger Call-to-Action:** Der Text im Link sollte eine klare Aufforderung zur Handlung sein, wie z. B. „Registrierung abschließen“ oder „E-Mail bestätigen“.
-* **Stil:** Achten Sie darauf, dass der Link stilistisch mit der restlichen E-Mail übereinstimmt und sich optisch abhebt.
-* **Testen:** Senden Sie nach jeder Bearbeitung eine Test-E-Mail, um zu prüfen, ob der \{{magic\_link\}} korrekt aufgelöst wird und die Formatierung stimmt.
+• Ändern Sie den Text zwischen dem öffnenden \<a> und dem schließenden \</a>-Tag so, dass er die Aktion widerspiegelt, die der Benutzer ausführen soll, zum Beispiel „Registrierung abschließen“ oder „Auf Ihr Konto zugreifen“.
 
-***
+4\. Die Vorlage speichern und testen:
 
-**Fazit**
+• Klicken Sie nach den Änderungen auf die Schaltfläche Save.
 
-Durch die korrekte Definition des \{{magic\_link\}} in Ihren E-Mail-Vorlagen stellen Sie sicher, dass die Empfänger personalisierte und handlungsorientierte E-Mails erhalten, die sie zur entsprechenden Aufgabe im Lieferantenportal führen. Dies verbessert das Benutzererlebnis und gewährleistet einen reibungslosen Onboarding- und Kommunikationsprozess.
+• Mit der Schaltfläche Send Test können Sie eine Test-E-Mail senden, um sicherzustellen, dass der Link wie erwartet funktioniert.
 
-Diese Dokumentation bietet Administratoren eine Schritt-für-Schritt-Anleitung, wie der \{{magic\_link\}} in E-Mail-Vorlagen definiert und verwendet wird, um sicherzustellen, dass die E-Mails sowohl funktional als auch optisch ansprechend sind.
+## Best Practices für die Verwendung von \{{magic\_link\}}
+
+• Platzierung des Links: Platzieren Sie den \{{magic\_link\}} gut sichtbar in der E-Mail, damit er für die Empfänger leicht zugänglich ist.
+
+• Eindeutiger Call-to-Action: Der Text im Link sollte eine klare Handlungsaufforderung sein, etwa „Registrierung abschließen“ oder „E-Mail-Adresse bestätigen“.
+
+• Gestaltung: Achten Sie darauf, dass der Link zur übrigen E-Mail-Vorlage passend gestaltet ist und optisch hervorsticht.
+
+• Testen: Senden Sie nach der Bearbeitung der Vorlage immer eine Test-E-Mail, um zu prüfen, dass der \{{magic\_link\}} korrekt aufgelöst wird und die Gestaltung passt.
+
+## Fazit
+
+Wenn Sie den \{{magic\_link\}} in Ihren E-Mail-Vorlagen korrekt definieren, stellen Sie sicher, dass Empfänger eine personalisierte und handlungsorientierte E-Mail erhalten, die sie zur passenden Aufgabe in Ihrem Lieferantenportal führt. Das verbessert die Benutzererfahrung und sorgt für ein reibungsloses Onboarding und reibungslose Kommunikationsprozesse.
+
+\
+
+
+Diese Dokumentation bietet Administratoren eine Schritt-für-Schritt-Anleitung, wie sie den \{{magic\_link\}} in E-Mail-Vorlagen definieren und verwenden, damit die E-Mails sowohl funktionsfähig als auch optisch ansprechend sind.

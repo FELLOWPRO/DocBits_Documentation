@@ -1,0 +1,130 @@
+name: Sync Language Folders
+
+# Bridges the translation branches into the folders the GitBook language
+# spaces import.
+#
+# The translation team and the nightly docs bots merge German, Spanish, ...
+# pages into the language branches (de, es, fr, it, pt, pl, nl) under
+# `readme/`. The GitBook language spaces use Git Sync "GitHub -> GitBook"
+# on `main` and import `deutsch/`, `espanol/`, `french/`, `italian/`,
+# `portuguese/`, `polish/`, `dutch/`. Nothing carried a merged translation
+# from the branch to that folder, so it never reached GitBook.
+#
+# This workflow mirrors, per language, the pages listed in the branch's
+# `readme/SUMMARY.md` (plus the images and attachments they reference) into
+# `main:<folder>/` and commits the result to main, one commit per language
+# that changed. See .github/scripts/language_bridge.py for the exact rules.
+#
+# Safety: a single markdown error makes GitBook abort the whole import and
+# export its old state over the repository. language_bridge.py therefore
+# validates a language first (navigation entries have files, GitBook tags are
+# balanced, front matter is well-formed, `{% file %}` targets exist) and
+# writes NOTHING for a language that fails. The run then ends red so the
+# failure is visible, but the other languages are still synced.
+#
+# Triggers: a schedule and workflow_dispatch (optionally one language). A
+# `push` trigger on the language branches would need this file on every
+# branch, because GitHub runs the workflow as it exists on the pushed ref.
+# The schedule picks merged work up within the interval; run it manually
+# when a translation must be live immediately.
+#
+# This workflow only runs on schedule / manual dispatch, so its own pushes to
+# main can never trigger it again.
+#
+# concurrency: one global group, never cancelled mid-run, so two syncs cannot
+# race each other's push to main.
+#
+# Needs no extra secrets: the default GITHUB_TOKEN with `contents: write`
+# pushes to main (if main later requires pull requests for all pushes, this
+# push needs a bypass for github-actions[bot] or a PAT secret).
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      lang:
+        description: "Only this language (de, es, fr, it, pt, pl, nl); empty = all"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-language-folders
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML (front matter validation)
+        run: python3 -m pip install --quiet pyyaml
+
+      - name: Sync every language folder
+        env:
+          ONLY_LANG: ${{ github.event.inputs.lang }}
+        run: |
+          set -u
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          declare -A FOLDER=( [de]=deutsch [es]=espanol [fr]=french [it]=italian [pt]=portuguese [pl]=polish [nl]=dutch )
+          LANGS="de es fr it pt pl nl"
+          if [ -n "${ONLY_LANG}" ]; then LANGS="${ONLY_LANG}"; fi
+
+          failed=""
+          synced=0
+          for lang in ${LANGS}; do
+            dir="${FOLDER[$lang]:-}"
+            if [ -z "${dir}" ]; then echo "::error::unknown language ${lang}"; failed="${failed} ${lang}"; continue; fi
+            echo "::group::${lang} -> ${dir}/"
+
+            if ! git fetch --quiet origin "${lang}"; then
+              echo "::error::cannot fetch branch ${lang}"; failed="${failed} ${lang}"; echo "::endgroup::"; continue
+            fi
+            src="${RUNNER_TEMP}/src-${lang}"
+            git worktree add --quiet --detach "${src}" "origin/${lang}"
+
+            if python3 .github/scripts/language_bridge.py sync --lang "${lang}" --source "${src}" --dest . | tee "${RUNNER_TEMP}/out-${lang}.txt"; then
+              if [ -n "$(git status --porcelain -- "${dir}")" ]; then
+                sha="$(git rev-parse --short "origin/${lang}")"
+                git add -A -- "${dir}"
+                git commit --quiet -m "docs(${lang}): sync ${dir}/ from branch ${lang} (${sha})" \
+                           -m "$(grep '^RESULT' "${RUNNER_TEMP}/out-${lang}.txt")"
+                synced=$((synced + 1))
+              else
+                echo "nothing to sync"
+              fi
+            else
+              echo "::error::${lang}: validation failed, ${dir}/ left untouched"
+              git checkout --quiet -- "${dir}" 2>/dev/null || true
+              git clean --quiet -fd -- "${dir}"
+              failed="${failed} ${lang}"
+            fi
+            git worktree remove --force "${src}"
+            echo "::endgroup::"
+          done
+
+          if [ "${synced}" -gt 0 ]; then
+            for attempt in 1 2 3; do
+              if git push origin HEAD:main; then break; fi
+              echo "push rejected (attempt ${attempt}), rebasing"
+              git pull --rebase --quiet origin main
+              if [ "${attempt}" -eq 3 ]; then echo "::error::could not push to main"; failed="${failed} push"; fi
+            done
+          fi
+
+          echo "synced languages: ${synced}; failed:${failed:- none}"
+          if [ -n "${failed}" ]; then exit 1; fi

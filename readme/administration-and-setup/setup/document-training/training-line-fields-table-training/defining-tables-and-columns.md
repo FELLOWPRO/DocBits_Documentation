@@ -1,51 +1,74 @@
-# Definiowanie Tabel i Kolumn
+# Definiowanie tabel i kolumn
 
-## Definiowanie Tabel
+Skorzystaj z tego przewodnika, aby ręcznie zdefiniować tabele i kolumny do ekstrakcji pozycji liniowych w DocBits. Jest to szczególnie przydatne, gdy automatyczne wykrywanie nie rozpoznaje w pełni struktury tabeli lub gdy trzeba dodać własne pola.
 
-Aby zdefiniować tabele i kolumny w dokumencie, zaimportuj dokument, otwórz go i przejdź do widoku ekstrakcji tabel, jak już jest znane (za pomocą "Pozycje liniowe").
+### 1. Otwórz widok ekstrakcji tabel
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_1.png)
+Otwórz dokument w DocBits i kliknij przycisk **„Table Training”**, aby przejść do widoku ekstrakcji tabel.
 
-Znajdziesz się na następującym ekranie, gdzie możesz aktywować tryb szkoleniowy:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_2.png)
+### 2. Aktywuj tryb szkolenia
 
-Za pomocą przycisku "Edytuj" zostanie aktywowany tryb wyboru tabeli i będziesz mógł edytować dokument pokazany po lewej stronie:
+Aby ręcznie zdefiniować lub zmodyfikować tabele i kolumny, kliknij **„TRAINING MODE”**.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_3.png)
+<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Ogólnie rzecz biorąc, teraz możesz użyć funkcji automatycznego wykrywania tabel, a system automatycznie zdefiniuje tabele w dokumencie:
+### 3. Zdefiniuj obszar tabeli
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_4.png)
+Po przejściu do trybu szkolenia możesz określić, gdzie na dokumencie znajduje się tabela. Masz do wyboru dwie opcje:
 
-Jeśli system nie jest w stanie znaleźć tabel automatycznie, możesz ręcznie zdefiniować tabele w dokumencie, jak pokazano w poniższym filmie:
+#### Opcja 1: Użyj automatycznego wykrywania
 
-## Definiowanie Kolumn
+Kliknij przycisk **„Auto-Detect Tables”**, aby DocBits spróbował samodzielnie rozpoznać obszar tabeli.
 
-Gdy tabele są zdefiniowane, możesz ręcznie zdefiniować kolumny za pomocą następującego przycisku:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_5.png)
+Jeśli wykrywanie się powiedzie, obrys tabeli zostanie wyświetlony automatycznie. Następnie możesz przejść do definiowania kolumn.
 
-Zdefiniuj i posortuj kolumny za pomocą przeciągania i upuszczania na dokumencie. Powtórz to samo dla tabel na innych stronach. W przypadku, gdy tabele są identyczne na każdej stronie, można skorzystać z następującego przycisku, aby użyć tych samych kolumn dla wszystkich zdefiniowanych tabel w dokumencie. Ta funkcja kopiuje zdefiniowane kolumny do wszystkich innych stron:
+#### Opcja 2: Zdefiniuj tabelę ręcznie
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_6.png)
+Jeśli automatyczne wykrywanie zawiedzie lub jest niedokładne, możesz zdefiniować tabelę ręcznie:
 
-Jeśli dokument jest bardzo zagmatwany, można go przybliżyć i oddalić za pomocą funkcji "Powiększ" i "Pomniejsz". Jest to pomocne, na przykład, gdy wiele informacji jest blisko siebie, co sprawia, że trudno zdefiniować kolumny:
+1. Kliknij przycisk **„Edit”**, aby aktywować tryb wyboru tabeli.
+2. Narysuj prostokąt wokół obszaru tabeli w widoku dokumentu po lewej stronie.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_7.png)
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Jeśli zdefiniowałeś kolumnę przez pomyłkę, możesz ją zaznaczyć, klikając ją, a następnie usunąć za pomocą następującego przycisku:
+### 4. Dodaj i zdefiniuj kolumny
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_8.png)
+Gdy tabele są zdefiniowane, możesz ręcznie zdefiniować kolumny za pomocą następującego przycisku:\
 
-Uwaga: Przycisk jest widoczny tylko wtedy, gdy kolumna jest zaznaczona.
 
-Gdy zakończysz definiowanie wszystkich tabel i kolumn w dokumencie, użyj przycisku "Zapisz", aby aktywować swoje zmiany i wydobyć dane z dokumentu:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_9.png)
+Zdefiniuj i posortuj kolumny za pomocą przeciągania i upuszczania na dokumencie. Powtórz to samo dla tabel na pozostałych stronach. Jeśli tabele są identyczne na każdej stronie, możesz użyć następującego przycisku, aby zastosować te same kolumny do wszystkich tabel zdefiniowanych w dokumencie. Ta funkcja kopiuje zdefiniowane kolumny również na wszystkie pozostałe strony:
 
-Dane wszystkich zdefiniowanych obszarów zostaną wydobyte i pokazane po prawej stronie:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
 
-&#x20;W następnej sekcji dowiesz się, jak dostosować dane, które zostały wydobyte.
+Użyj funkcji **powiększania**, aby lepiej zdefiniować kolumny w zagmatwanych lub złożonych dokumentach, na przykład gdy wiele informacji znajduje się blisko siebie i utrudnia to zdefiniowanie kolumn:
 
-<figure><img src="https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_10.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
+
+Jeśli kolumna została zdefiniowana przez pomyłkę, możesz ją zaznaczyć, klikając ją, i usunąć za pomocą następującego przycisku:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
+
+<mark style="color:red;">**Uwaga**</mark>: Przycisk jest widoczny tylko wtedy, gdy kolumna jest zaznaczona.
+
+Gdy skończysz definiować wszystkie tabele i kolumny w dokumencie, użyj przycisku „Zapisz”, aby aktywować zmiany i wyodrębnić dane z dokumentu:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
+
+Dane ze wszystkich zdefiniowanych obszarów zostaną wyodrębnione i wyświetlone po prawej stronie:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
+
+### 6. Zapisz i wyodrębnij
+
+Kliknij **„Save Rules”** po zdefiniowaniu wszystkich tabel i kolumn.
+
+* Dzięki temu DocBits wie, gdzie szukać danych tabeli dla tego konkretnego dostawcy.
+* Przy następnym przesłaniu dokumentu od tego samego dostawcy DocBits automatycznie wyodrębni tabelę, korzystając z zapisanych reguł.
+
+<mark style="color:red;">**Uwaga**</mark>: To szkolenie jest specyficzne dla dostawcy. Nie będzie stosowane do dokumentów od innych dostawców.

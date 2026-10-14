@@ -1,73 +1,46 @@
 # Edytowanie i usuwanie kolumn
 
-Edytowanie i usuwanie kolumn w tabeli bazy danych to ważne operacje, które należy wykonywać ostrożnie, aby zapewnić integralność danych i uwzględnić potencjalny wpływ na logikę aplikacji oraz raportowanie.
+Wszystko oprócz tytułu zmienia się bezpośrednio na liście; nie ma okna edycji.
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+**Gdzie:** Settings → Global Settings → Document Types → Table Columns
 
-**Oto szczegółowe kroki dla obu działań:**
+## Przełączanie flagi
 
-## Edytowanie kolumny:
+Zaznacz lub odznacz pole wyboru w wierszu. Zmiana jest zapisywana natychmiast (*Successfully saved*).
 
-<figure><img src="../../../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+| Flaga | Włączona | Wyłączona |
+|---|---|---|
+| **Is Required** | Zatwierdzenie jest blokowane, dopóki kolumna jest pusta w którymkolwiek wierszu; ekran walidacji oznacza komórkę. | Puste komórki są dozwolone. |
+| **Read Only** | Wartość jest wyświetlana, ale nie można jej nadpisać. Używaj dla wartości pochodzących z wyszukiwania lub ze skryptu. | Użytkownicy mogą edytować komórkę. |
+| **Hidden** | Kolumna znika z ekranu walidacji i z eksportu. Jej dane są zachowane. | Kolumna jest wyświetlana i eksportowana. |
+| **Use AI** | Kolumnę wypełnia ekstrakcja tabel przez AI, również dla dostawców z wytrenowanymi regułami. | Kolumnę wypełniają wytrenowane reguły albo AI, gdy reguł nie ma. |
 
-**Zmiana tytułu:**
+{% hint style="info" %}
+Flagi obowiązują dla dokumentów przesłanych lub uruchomionych ponownie **po** zmianie. Otwarte dokumenty zachowują bieżącą tabelę, dopóki nie zostaną uruchomione ponownie.
+{% endhint %}
 
-* Kliknij tytuł kolumny, którą chcesz zmienić, otworzy się okno, w którym możesz zmienić tytuł kolumny.
+## Zmiana tytułu
 
-**Analiza wymagań:**
+Kliknij ikonę tłumaczenia w kolumnie *Actions* (*Update translation key*), wpisz nową etykietę i potwierdź. Ikona informacji obok pokazuje, która etykieta obowiązuje obecnie i skąd pochodzi. Zmienia się tylko etykieta; techniczna *Column name* pozostaje taka sama, więc skrypty, mapowania eksportu i wytrenowane reguły nadal działają.
 
-* Określ powód edytowania kolumny. Może być konieczna zmiana typu danych, dodanie lub usunięcie ograniczeń albo zmiana nazwy kolumny.
+## Zmiana typu lub tabeli
 
-**Przegląd wpływu:**
+Nie jest to możliwe. Ukryj kolumnę (lub usuń ją, jeśli jest Twoja własna) i dodaj nową z właściwym typem.
 
-* Przed wprowadzeniem jakichkolwiek zmian sprawdź, jak wpłyną one na istniejące dane i logikę aplikacji. Na przykład zmiany typu danych mogą spowodować konwersję lub utratę danych.
+## Usuwanie kolumny
 
-**Kopia zapasowa bazy danych:**
+Akcja usuwania jest dostępna tylko dla kolumn utworzonych przez Twoją organizację. Kolumn domyślnych nie można usunąć, ukryj je.
 
-* Wykonaj kopię zapasową bazy danych, aby zapewnić sobie działającą wersję, do której można wrócić w razie jakichkolwiek problemów.
+1. Otwórz menu z trzema kropkami w kolumnie *Actions* i wybierz **Delete**. Dla kolumn domyślnych ta pozycja nie jest dostępna.
+2. Potwierdź.
 
-**Wykonanie instrukcji SQL:**
+Co się dzieje:
 
-* Użyj instrukcji SQL ALTER TABLE, aby wprowadzić pożądane zmiany w kolumnie. Dokładna składnia zależy od używanej platformy bazodanowej i zmian, które chcesz wprowadzić.
+* Kolumna zostaje usunięta z konfiguracji. Dokumenty przetwarzane **od tej chwili** jej nie mają.
+* Dokumenty, które zostały już wyodrębnione, zachowują kolumnę i jej wartości, dopóki nie zostaną uruchomione ponownie.
+* Wytrenowane reguły, które mapowały tę kolumnę, nadal działają dla pozostałych kolumn; mapowanie usuniętej kolumny jest ignorowane.
+* Jeśli kolumna jest przywołana w mapowaniu eksportu lub w skrypcie, usuń to odwołanie; w przeciwnym razie eksport lub skrypt zakończy się błędem brakującej kolumny.
 
-**Migracja danych:**
+## Cofnięcie usunięcia
 
-* Jeśli zmienisz typ danych kolumny, może być konieczne przeprowadzenie migracji danych w celu przekonwertowania istniejących danych do nowego formatu.
-
-**Testowanie i walidacja:**
-
-* Po edytowaniu kolumny dokładnie sprawdź, czy Twoja aplikacja działa prawidłowo oraz czy dane są poprawnie przechowywane i pobierane.
-
-## Usuwanie kolumny:
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 13.39.00.png" alt=""><figcaption></figcaption></figure>
-
-**Analiza wymagań:**
-
-* Upewnij się, że rozumiesz powody usunięcia kolumny. Czy kolumna nie jest już istotna, czy też istnieją inne sposoby jej konsolidacji?
-
-**Przegląd wpływu:**
-
-* Przeanalizuj, jak usunięcie kolumny wpłynie na istniejące dane, logikę aplikacji i raportowanie. Może to spowodować utratę danych lub wpłynąć na zapytania i raporty.
-
-**Kopia zapasowa bazy danych:**
-
-* Wykonaj pełną kopię zapasową bazy danych, aby móc przywrócić dane w razie nieoczekiwanych problemów.
-
-**Wykonanie instrukcji SQL:**
-
-* Użyj instrukcji SQL ALTER TABLE, aby usunąć kolumnę. Dokładna składnia różni się w zależności od platformy bazodanowej.
-
-**Migracja danych (jeśli wymagana):**
-
-* Jeśli w usuwanej kolumnie znajdują się ważne dane, może być konieczne przeprowadzenie migracji danych w celu przeniesienia ich w inne miejsce lub usunięcia.
-
-**Dostosowanie logiki aplikacji:**
-
-* Upewnij się, że logika Twojej aplikacji została odpowiednio dostosowana, aby nie odwoływała się już do usuniętej kolumny.
-
-**Testowanie i walidacja:**
-
-* Dokładnie sprawdź, czy Twoja aplikacja działa poprawnie oraz czy wszystkie funkcje dotyczące danych i raportowania działają zgodnie z oczekiwaniami.
-
-Podczas edytowania lub usuwania kolumn kluczowe jest, abyś w pełni rozumiał wpływ tych działań oraz podjął odpowiednie środki ostrożności w celu zachowania integralności bazy danych i zapewnienia płynnego działania aplikacji.
+Usuniętej kolumny nie można przywrócić z listy. Dodaj ją ponownie z tym samym tytułem: nazwa techniczna jest tworzona na podstawie tytułu, więc kolumna utworzona z tym samym tytułem otrzymuje tę samą *Column name* i istniejące mapowania znów do niej pasują.

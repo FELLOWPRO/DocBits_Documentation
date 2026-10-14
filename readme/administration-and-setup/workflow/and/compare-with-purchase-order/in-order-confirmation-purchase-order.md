@@ -2,41 +2,20 @@
 hidden: true
 ---
 
-# In Order Confirmation Purchase Order
+# Porównanie potwierdzenia zamówienia z zamówieniem zakupu
 
-### Compare with Purchase Order:
+Użyj **Compare with Purchase Order** w Workflow Builder, gdy potwierdzenie zamówienia trzeba sprawdzić względem jego zamówienia zakupu. Dodaj kartę pod **And...**, a następnie wybierz dane zamówienia, operator i to, co ma się stać z wynikiem. Poniższe zrzuty ekranu pokazują dwie dostępne wersje karty w angielskim interfejsie. Ich pola są nadal polami zastępczymi; ustaw je dla swojego przepływu pracy przed zapisaniem.
 
-**In Order Confirmation Purchase Order**
+## Zapisz wynik w polu
 
-<figure><img src="https://lh7-us.googleusercontent.com/glQHETatKah-1YugeLqBb7Jim6lNJxuarRv-KEMv4NPzFfcjSm6mVhTMdI30nxdJ0SHXZ55Oup6KH7K-J6IxjUOiG0wxUX8toAaCopgBJwPyr94CPjoKuauNTmoHGGhg6f3gwHD39W7gpvijg4LQVJ4" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-133-workflow-card-write-text.png" alt="Karta Compare with Purchase Order w Workflow Builder z polami zastępczymi Order Data, Operator, Text, Field Name i Result of condition." width="563"><figcaption>Wersja 2: zapisz tekst w polu na podstawie wyniku warunku.</figcaption></figure>
 
-#### Logic Card: Quantity or Unit Price or Discount Match
+Wybierz **Order Data** z potwierdzenia zamówienia oraz **Operator** porównania z zamówieniem zakupu. Wpisz **Text** do zapisania, wybierz **Field Name** i wskaż **Result of condition**, który ma wywołać zapis.
 
-Ta karta logiczna służy do automatycznej weryfikacji, czy ilość, cena jednostkowa lub rabat wyszczególnione w potwierdzeniu zamówienia są zgodne z odpowiadającymi im wartościami w zamówieniu zakupu. Weryfikacja ta zapewnia spójność i dokładność między tym, co zostało zamówione, a tym, co dostawca potwierdza dostarczyć.
+## Porównaj dane
 
-#### Trigger Condition
+<figure><img src="../../../../.gitbook/assets/dbdc-133-workflow-card-compare-as.png" alt="Karta Compare with Purchase Order w Workflow Builder z polami zastępczymi Any/All, Order Data, Operator i Comparison Data." width="563"><figcaption>Wersja 4: porównaj wybrane dane potwierdzenia zamówienia z danymi zamówienia zakupu.</figcaption></figure>
 
-Logika jest aktywowana, gdy którykolwiek z następujących warunków jest spełniony w potwierdzeniu zamówienia w odniesieniu do oryginalnego zamówienia zakupu:
+Wybierz **Any/All**, aby zdecydować, czy ma pasować jeden, czy wszystkie wybrane warunki. Następnie wybierz **Order Data**, **Operator** i **Comparison Data** dla porównania z zamówieniem zakupu.
 
-* **Quantity**: Ilość zamówionych pozycji odpowiada ilości potwierdzonej przez dostawcę.
-* **Unit Price**: Uzgodniona cena za pozycję odpowiada potwierdzeniu dostawcy.
-* **Discount**: Wszelkie zastosowane rabaty są spójne między zamówieniem zakupu a potwierdzeniem zamówienia.
-
-#### Outcomes
-
-* **Equals**: Jeśli ilość, cena jednostkowa lub rabat w potwierdzeniu zamówienia dokładnie odpowiadają zamówieniu zakupu, system uznaje potwierdzenie za prawidłowe i kontynuuje kolejne kroki w procesie zakupowym.
-* **Not Equal**: Jeśli istnieje rozbieżność w ilości, cenie jednostkowej lub rabacie, system oznacza potwierdzenie zamówienia do ręcznego przeglądu. Zapewnia to rozwiązanie wszelkich niezgodności przed kontynuowaniem.
-
-#### Benefits
-
-* **Accuracy and Consistency**: Utrzymuje dokładność w procesie zakupowym, zapewniając, że płatności i dostawy są realizowane na podstawie poprawnych wartości.
-* **Efficiency**: Automatyzuje proces weryfikacji, redukując potrzebę ręcznych kontroli i przyspieszając przetwarzanie zamówień.
-* **Cost Control**: Pomaga zapobiegać nadpłatom lub nieprawidłowym dostawom, wcześnie wychwytując rozbieżności w procesie.
-
-<figure><img src="https://lh7-us.googleusercontent.com/DRTMJxJ9XLeC5zWSU8QuZwPLkqHzmCUm9RwiUZIkcc8pVxMZsxLv56dX9spzqr7KeDkTigbeBX2DvAZRe-6MdqOgAnrO-QPnCbi4e6hP4--P_O0A0DSoQJxjGeefOS1p6GuXHs1YXv-A73DXYaE8qlI" alt="" width="563"><figcaption></figcaption></figure>
-
-1. **Define Comparison Parameters**: Skonfiguruj konkretne pola (ilość, cena jednostkowa, rabat), które karta logiczna będzie sprawdzać pod kątem zgodności.
-2. **Automate Verification**: Skonfiguruj system tak, aby automatycznie porównywał te szczegóły po otrzymaniu potwierdzenia zamówienia.
-3. **Customize Alerts**: Zdecyduj o przepływie pracy do obsługi rozbieżności, w tym dostosowaniu alertów do ręcznego przeglądu.
-
-Ta karta logiczna jest kluczowa dla zapewnienia, że szczegóły potwierdzenia zamówienia są zgodne z oryginalnym zamówieniem zakupu, chroniąc integralność cyklu zakupowego. \`\`
+Informacje o otaczających krokach znajdziesz w [Workflow](../../README.md) i [Compare with Purchase Order](README.md).

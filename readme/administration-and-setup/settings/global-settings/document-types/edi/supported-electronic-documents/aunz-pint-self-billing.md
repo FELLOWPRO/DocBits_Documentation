@@ -33,7 +33,7 @@ Mapowanie pól jest identyczne jak w [AUNZ PINT](aunz-pint.md) z następującą 
 - **Role stron są odwrócone**: W self-billing kupujący jest stroną fakturowaną, a dostawca jest stroną fakturowaną
 - `CustomizationID` zawiera `urn:peppol.org:pint:selfbilling-1@aunz` zamiast `billing-1@aunz`
 
-Pełną tabelę mapowania pól znajdziesz w [AUNZ PINT](aunz-pint.md#field-mapping).
+Pełną tabelę mapowania pól znajdziesz w [AUNZ PINT](aunz-pint.md#mapowanie-pol).
 
 ## Reguła klasyfikacji
 

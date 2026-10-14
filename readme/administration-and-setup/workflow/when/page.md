@@ -1,37 +1,31 @@
 # Document Type Operation
 
-<figure><img src="../../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/userlmn_5cc120c265b7a237929e829ce781b452.png" alt=""><figcaption></figcaption></figure>
 
-**Cel**
+## **Cel:**
 
 Ta karta przepływu pracy jest specjalnie zaprojektowana do wykonywania predefiniowanych operacji na dokumentach kategoryzowanych według typu. Usprawnia obsługę różnych form dokumentów w systemie ERP, zapewniając, że każdy typ jest przetwarzany zgodnie ze swoimi unikalnymi wymaganiami i politykami organizacyjnymi.
 
-**Komponenty karty**
+## **Funkcjonalność:**
 
-1. **Operator**
-   * **Opis**: Określa akcję, która ma zostać wykonana na dokumencie.
-   * **Przykłady**: Typowe operacje obejmują "Validate", "Store", "Process", "Send" itp. Każdy operator definiuje zestaw zadań, które system automatyzuje na podstawie typu dokumentu.
-2. **Document Type**
-   * **Opis**: Identyfikuje kategorię dokumentu, do której zostanie zastosowana operacja.
-   * **Szczegóły**: Typy mogą obejmować faktury, zamówienia zakupu, umowy, rekordy pracowników itp. Każdy typ ma powiązane z nim określone reguły i przepływy pracy.
+* **Walidacja typu dokumentu**: Karta sprawdza, czy dokument odpowiada określonemu typowi, co pozwala użytkownikom potwierdzić jego kategoryzację.
+* **Operator**: Użytkownicy mogą ustawić warunki określające typ dokumentu. Dostępne operatory:
+  * **Is**: Potwierdza, że dokument odpowiada wskazanemu typowi dokumentu.
+  * **Is Not**: Zapewnia, że dokument nie odpowiada wskazanemu typowi dokumentu.
+* **Typy dokumentów**: Obsługiwane typy dokumentów:
+  * **Invoice**
+  * **Debit Note**
+  * **Credit Note**
+  * **Purchase Order**
+  * **Order Confirmation**
+  * **Advance Shipment Notice**
 
-**Funkcjonalność**
+## **Zastosowanie**:
 
-* **Klasyfikacja dokumentu**: Automatycznie identyfikuje i klasyfikuje dokumenty w momencie ich wejścia do systemu ERP na podstawie ich metadanych, treści lub innych identyfikatorów.
-* **Wykonanie operacji**: Wykonuje określoną operację dla dokumentów zidentyfikowanego typu. Wykonanie to może obejmować:
-  * **Validate**: Sprawdzanie dokumentu pod kątem kompletności, poprawności i zgodności ze standardami.
-  * **Store**: Zapisywanie dokumentu w wyznaczonym repozytorium z odpowiednim indeksowaniem.
-  * **Process**: Stosowanie logiki biznesowej do dokumentu, takiej jak obliczanie sum na fakturze lub aktualizacja rekordów bazy danych.
-  * **Send**: Dystrybucja dokumentu do innych jednostek biznesowych lub partnerów zewnętrznych na podstawie wymagań przepływu pracy.
-* **Zgodność i bezpieczeństwo**: Zapewnia, że wszystkie operacje są zgodne z przepisami regulacyjnymi i protokołami bezpieczeństwa specyficznymi dla typu dokumentu.
-* **Automatyzacja i integracja**: Bezproblemowo integruje się z innymi przepływami pracy w systemie ERP, ułatwiając zautomatyzowane przejścia między różnymi etapami operacyjnymi.
+Ta karta jest przydatna dla menedżerów dokumentów i administratorów, którzy muszą zadbać o prawidłową klasyfikację dokumentów w celu usprawnienia ich przetwarzania. Walidacja typów dokumentów zwiększa automatyzację przepływów pracy, umożliwia akcje specyficzne dla dokumentu i utrzymuje porządek w rekordach.
 
-**Interakcje użytkownika**
+## **Przykładowy scenariusz**:
 
-* **Konfiguracja**: Użytkownicy konfigurują kartę, definiując zarówno operator, jak i typ dokumentu. W zależności od złożoności operacji można ustawić dodatkowe parametry.
-* **Monitorowanie i raportowanie**: Użytkownicy mogą monitorować operacje stosowane do różnych typów dokumentów za pośrednictwem pulpitu, który dostarcza aktualizacji statusu w czasie rzeczywistym, dzienniki i raporty.
-* **Obsługa błędów i nadpisania**: Zapewnia mechanizmy obsługi błędów lub wyjątków podczas wykonywania operacji. Użytkownicy mogą w razie potrzeby interweniować ręcznie, dostosowując procesy lub przekierowując dokumenty.
+* Użytkownik przesyła dokument oznaczony jako „Debit Note”. Za pomocą operatora „Is” karta potwierdza, że typ dokumentu rzeczywiście jest „Debit Note”, co pozwala systemowi zastosować odpowiednie reguły przetwarzania i właściwie go skategoryzować.
 
-#### Podsumowanie
-
-Karta przepływu pracy "Document Type Operation" jest kluczowym komponentem do efektywnego zarządzania procesami opartymi na dokumentach w systemie ERP. Automatyzuje rutynowe zadania, redukuje błędy i zapewnia spójność w podobnych typach dokumentów, zwiększając tym samym ogólną produktywność i zgodność. Skuteczne udokumentowanie tej karty w instrukcji systemu pomoże użytkownikom zrozumieć jej funkcjonalność oraz sposób jej wykorzystania do optymalizacji procesów zarządzania dokumentami w codziennych operacjach. Jeśli istnieją dodatkowe konkretne szczegóły lub przykłady, które należy uwzględnić na podstawie możliwości systemu ERP lub potrzeb specyficznych dla branży, należy je odpowiednio dostosować.
+Dzięki zastosowaniu karty „Document Type” organizacje mogą zautomatyzować klasyfikację dokumentów, zapewnić spójność w obsłudze dokumentów i zwiększyć wydajność przepływów pracy związanych z zarządzaniem dokumentami.

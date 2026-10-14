@@ -1,68 +1,59 @@
----
-description: Konfiguracja warunków I w przepływach pracy DocBits
----
+# And: wybierz kartę warunku
 
-# And
+Użyj karty **And**, aby zdecydować, czy przepływ pracy ma być kontynuowany po wyzwalaczu **When**. Dodaj kontrole, których potrzebujesz, przed akcją **Then**. Każda karta pokazuje pola do wypełnienia, takie jak **Operator**, **Field Name** lub **Value**; zrzuty ekranu przedstawiają dostępne szablony kart, a nie gotowe reguły.
 
-## Zrozumienie kart "And"
+W **Workflow Builder** wybierz **Add Card** pod **And...**. Wybierz kategorię po lewej stronie lub wpisz nazwę karty w polu **Search Card**. Wybierz podgląd karty, aby dodać ją do przepływu pracy. Możesz przewijać listę podglądów, aby zobaczyć więcej kart. Użyj **×**, aby zamknąć selektor bez wybierania kolejnej karty. Po skonfigurowaniu kart zapisz przepływ pracy. Zobacz [Workflow](../README.md), aby poznać otaczające kroki **When**, **And** i **Then**.
 
-### **Cel kart "And":**
+## Compare with Purchase Order
 
-* Karty **And** pełnią funkcję kart warunków, które określają kryteria, jakie muszą zostać spełnione, aby przepływ pracy mógł być kontynuowany. Działają one efektywnie jako logiczne operatory "AND", co oznacza, że wszystkie warunki określone na tych kartach muszą być spełnione, aby kolejna akcja została wyzwolona.
+Użyj tych kart, aby porównać dane zamówienia lub faktury z zamówieniem zakupu, na przykład cenę jednostkową, obiecaną datę dostawy, opłaty lub ilość. Wybierz pola, operator i ewentualną tolerancję, o którą prosi wybrana karta. Poszczególne karty opisano w [Compare with Purchase Order](compare-with-purchase-order/README.md).
 
-#### Kategorie kart "And"
+<figure><img src="../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Compare with Purchase Order; widoczne podglądy obejmują porównanie ceny jednostkowej, daty dostawy, opłat i ilości."><figcaption>Kategoria Compare with Purchase Order w angielskim środowisku Sandbox.</figcaption></figure>
 
-Na podstawie zrzutów ekranu widać, że karty te obejmują szeroki zakres warunków, które obejmują:
+## Document Field
 
-* **Compare with Purchase Order**:
-  * Warunki związane z walidacją i porównaniem z zamówieniami zakupu, takie jak porównywanie dat dostawy, cen jednostkowych lub różnic w ilości. Są one kluczowe dla zapewnienia zgodności transakcji z uzgodnionymi warunkami.
+Wybierz tę kategorię, aby sprawdzić pole wyboru lub status pola, porównać pole z wartością albo porównać dwa pola. Wypełnij pola zastępcze **Field Name** i **Operator** na wybranej karcie. Niektóre porównania wymagają także podania tolerancji. Zobacz [Document Field](document-field/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-document-field-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Document Field; widoczne podglądy sprawdzają pole wyboru, status pola, wartości pól i porównania dwóch pól."><figcaption>Kontrole Document Field korzystają z wartości z bieżącego dokumentu.</figcaption></figure>
 
-* **Document Field**:
-  * Dotyczą one warunków opartych na określonych polach w dokumentach, takich jak zaznaczone pola wyboru, porównanie wartości pól lub sprawdzanie, czy pole dokumentu mieści się w określonej tolerancji. Jest to szczególnie ważne dla integralności danych oraz automatycznych kontroli w formularzach lub systemach zarządzania dokumentami.
+## Date & Time
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Użyj **Date & Time**, aby porównać datę lub godzinę z zakresem albo porównać **Today** z wybraną datą. Wybierz **Operator** i wartości dat na karcie. Zobacz [Date & Time](date-and-time/README.md).
 
-* **Date & Time:**
-  * Warunki oparte na datach i godzinach
+<figure><img src="../../../.gitbook/assets/and-category-date-time-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Date & Time; dwa podglądy porównują datę lub godzinę z zakresem oraz porównują Today z datą."><figcaption>Date & Time oferuje kontrolę zakresu i kontrolę względem dzisiejszej daty.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Document
 
-* **Document**:
-  * Warunki oparte na cechach dokumentu, takich jak typ lub powiązanie z określoną sub-organizacją. Warunki te mogą kierować przepływami pracy na podstawie kategoryzacji dokumentu lub zaangażowania działu.
+Użyj tych kart, gdy przepływ pracy ma zależeć od **typu dokumentu** lub **podorganizacji**. Wybierz typ lub organizację wskazaną na karcie. Zobacz [Document](document/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-document-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Document; podglądy sprawdzają typ dokumentu i przynależność do podorganizacji."><figcaption>Warunki Document sprawdzają typ lub podorganizację.</figcaption></figure>
 
-* **Logic**:
-  * Warunki logiczne, które mogą obejmować oceny typu "Continue with a chance of X%" lub wykonywanie żądań HTTPS, kluczowe dla integracji oraz podejmowania decyzji probabilistycznych w ramach przepływów pracy.
+## Logic
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Ta kategoria obejmuje kontrole z użyciem tabeli decyzyjnej, odpowiedzi HTTPS, dostępności modułu, ceny z oferty, wartości szansy lub dwóch wartości. Otwórz konkretną kartę i wypełnij jej nazwane pola zastępcze; na przykład karta HTTPS prosi o adres URL, metodę i akceptowany kod statusu. Zobacz [Logic](logic/README.md).
 
-* **Status**:
-  * Skupiając się na statusie dokumentów lub zadań, warunki te zapewniają, że tylko elementy w określonych stanach wyzwalają konkretne przepływy pracy, co jest kluczowe dla zarządzania procesami opartego na statusie.
+<figure><img src="../../../.gitbook/assets/and-category-logic-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Logic; podglądy obejmują karty tabeli decyzyjnej, żądania HTTPS, aktywnego modułu, ceny z oferty, szansy i porównania wartości."><figcaption>Logic oferuje kilka różnych typów warunków; wybierz ten, który odpowiada Twojej regule.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Status
 
-* **Table**:
-  * Dotyczą one warunków opartych na danych tabelarycznych, takich jak dopasowywanie wzorców regex lub porównywanie wartości w tabeli. Takie warunki są niezbędne do walidacji i manipulacji dużymi zbiorami danych.
+Użyj **Status**, aby sprawdzić, czy dokument ma wybrany status lub czy jego status należy do wybranego zbioru. Wybierz **Operator** i **Status** na karcie. Zobacz [Status](status/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-status-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Status; dwa podglądy porównują Document status ze Status lub zbiorem statusów."><figcaption>Warunki Status sprawdzają bieżący stan dokumentu.</figcaption></figure>
 
-* **Assignee**:
-  * Warunki oparte na osobach przypisanych do zadania lub dokumentu. Zapewnia to, że akcje są podejmowane tylko wtedy, gdy zaangażowani są określeni użytkownicy, co zwiększa odpowiedzialność i precyzję zadań.
+## Table
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Te karty badają wiersze tabeli dokumentu. Widoczne opcje obejmują kontrole dat, wzorce tekstowe, okres trwałości i porównania między kolumnami. Przed wybraniem operatora lub wzorca wybierz **Table name** i **Column Name**. Zobacz [Table](table/README.md).
 
-### Praktyczne zastosowanie
+<figure><img src="../../../.gitbook/assets/and-category-table-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Table; widoczne podglądy obejmują datę, wzorzec regex, okres trwałości i porównania kolumn tabeli."><figcaption>Warunki Table korzystają z wierszy i kolumn tabeli dokumentu.</figcaption></figure>
 
-Te karty "And" są konfigurowane w przepływie pracy w celu przeprowadzania kontroli i walidacji, które zapewniają, że proces ściśle przestrzega reguł biznesowych i standardów integralności danych. Na przykład:
+## Compare with Quote Price
 
-* **Przepływ pracy może używać karty "And", aby zweryfikować, że całkowita kwota faktury jest zgodna z zamówieniem zakupu, zanim wyzwoli płatność.**
-* **Inny przepływ pracy może używać karty "And", aby zapewnić, że dokument zostanie sprawdzony przez określonych członków zespołu, zanim przejdzie do następnego etapu.**
+Użyj tych kart, aby porównać pozycję z danymi o cenie z oferty. Widoczne opcje obejmują identyfikator pozycji, typ dostawcy, identyfikator pozycji dostawcy, cenę jednostkową i jednostkę miary. **Operator** i pola zastępcze danych zależą od wybranej karty.
 
-### Podsumowanie
+<figure><img src="../../../.gitbook/assets/and-category-quote-price-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Compare with Quote Price; pięć podglądów obejmuje identyfikator pozycji, typ dostawcy, identyfikator pozycji dostawcy, cenę jednostkową i jednostkę miary."><figcaption>Compare with Quote Price jest osobną kategorią w bieżącym selektorze kart.</figcaption></figure>
 
-Karty "And" są podstawowym elementem systemów przepływu pracy, które wymagają precyzyjnej kontroli nad wykonywaniem procesu na podstawie wielu warunków. Zapewniają one, że każdy krok przepływu pracy jest realizowany tylko wtedy, gdy wszystkie niezbędne kryteria zostaną w pełni spełnione, automatyzując w ten sposób złożone drzewa decyzyjne w procesach biznesowych.
+## Assignee
 
-Zrozumienie i prawidłowe skonfigurowanie tych kart jest kluczowe dla wykorzystania pełnych możliwości systemu zarządzania przepływem pracy w celu zwiększenia wydajności, dokładności i zgodności w procesach organizacyjnych.
+Użyj **Assignee**, gdy warunek zależy od przypisanego użytkownika lub grupy. Wybierz, czy porównywać z jednym użytkownikiem lub jedną grupą, czy z wybranym zbiorem. Zobacz [Assignee](assignee/README.md).
+
+<figure><img src="../../../.gitbook/assets/and-category-assignee-en.png" alt="Selektor kart And w języku angielskim z wybraną kategorią Assignee; podglądy porównują przypisanego użytkownika lub grupę z jednym lub kilkoma wyborami."><figcaption>Warunki Assignee sprawdzają użytkownika lub grupę przypisaną do dokumentu.</figcaption></figure>

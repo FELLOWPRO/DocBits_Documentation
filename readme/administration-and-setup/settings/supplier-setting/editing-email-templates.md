@@ -1,35 +1,41 @@
 # Edytowanie szablonów e-maili
 
-#### Przegląd
+<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Szablony e-maili dostawców"><figcaption><p>Strona szablonów e-maili dostawców</p></figcaption></figure>
 
-Funkcja szablonów e-maili pozwala administratorom na tworzenie i dostosowywanie komunikacji e-mailowej, która jest automatycznie wysyłana do dostawców. Jednym z kluczowych elementów używanych w tych szablonach jest `{{magic_link}}`, który zapewnia dynamiczny link dostosowany do każdego odbiorcy.
+### Przegląd
 
-**Czym jest `{{magic_link}}`?**
+Funkcja Email Templates pozwala administratorom tworzyć i dostosowywać komunikację e-mailową, która jest automatycznie wysyłana do dostawców. Jednym z kluczowych elementów używanych w tych szablonach jest `{{magic_link}}`, który zapewnia dynamiczny link dostosowany do każdego odbiorcy.
 
-`{{magic_link}}` to znacznik, który jest dynamicznie zastępowany unikalnym URL-em w momencie wysyłania e-maila. Ten URL zazwyczaj kieruje odbiorcę do wykonania akcji, takiej jak rejestracja, zatwierdzenie lub uzyskanie dostępu do konkretnej części portalu dostawcy.
+#### Czym jest `{{magic_link}}`?
 
-#### Edytowanie szablonów e-maili
+`{{magic_link}}` to znacznik zastępczy, który jest dynamicznie zastępowany unikalnym adresem URL w momencie wysyłania e-maila. Ten adres zazwyczaj kieruje odbiorcę do wykonania akcji, takiej jak rejestracja, zatwierdzenie lub uzyskanie dostępu do konkretnej części portalu dostawcy.
 
-**Uzyskiwanie dostępu do edytora szablonów e-maili**
+### Edytowanie szablonów e-maili
 
-1. **Przejdź do szablonów e-maili**:
-   * Przejdź do sekcji **Szablony e-maili** z głównego menu.
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
+
+#### Dostęp do edytora szablonów e-maili
+
+1. **Przejdź do Email Templates**:
+   * Przejdź z menu głównego do sekcji **Email Templates**.
 2. **Wybierz szablon do edycji**:
-   * Wybierz szablon e-maila, który chcesz edytować, klikając na nazwę szablonu (np. "E-mail zaproszenia dla dostawcy").
+   * Wybierz szablon e-maila, który chcesz edytować, klikając jego nazwę (np. „Supplier Invitation Email”).
 3. **Edytuj szablon**:
-   * Edytor pozwala na modyfikację zarówno kodu HTML, jak i wizualnego wyglądu e-maila.
-   * Możesz przełączać się między edytowaniem wizualnym a edytowaniem kodu, korzystając z dostępnych zakładek.
+   * Edytor pozwala modyfikować zarówno kod HTML, jak i wizualny wygląd e-maila.
+   * Możesz przełączać się między edycją wizualną a edycją kodu za pomocą dostępnych zakładek.
 
-**Definiowanie `{{magic_link}}` jako linku**
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+
+#### Definiowanie `{{magic_link}}` jako linku
 
 Aby zdefiniować `{{magic_link}}` jako klikalny link w e-mailu, musisz upewnić się, że jest on poprawnie sformatowany w kodzie HTML szablonu. Wykonaj następujące kroki:
 
-1. **Zlokalizuj sekcję linku w kodzie HTML**:
-   * W edytorze kodu znajdź sekcję, w której chcesz, aby magiczny link się pojawił. Zazwyczaj znajduje się to w tagu `<a>` (kotwicy).
-2.  **Wstaw znacznik `{{magic_link}}`**:
+1. **Znajdź sekcję linku w kodzie HTML**:
+   * W edytorze kodu znajdź miejsce, w którym ma się pojawić magic link. Zazwyczaj znajduje się ono wewnątrz tagu `<a>` (kotwicy).
+2.  **Wstaw znacznik zastępczy `{{magic_link}}`**:
 
-    * Zastąp atrybut `href` tagu kotwicy `{{magic_link}}`.
-    * Upewnij się, że link jest odpowiednio stylizowany dla szablonu e-maila. Oto przykład:
+    * Zastąp atrybut `href` tagu kotwicy wartością `{{magic_link}}`.
+    * Upewnij się, że link jest odpowiednio ostylowany dla szablonu e-maila. Oto przykład:
 
     ```html
     <a href="{{magic_link}}" target="_blank" style="
@@ -43,34 +49,35 @@ Aby zdefiniować `{{magic_link}}` jako klikalny link w e-mailu, musisz upewnić 
         text-decoration: none;
         display: inline-block;
         cursor: pointer;">
-        Zakończ rejestrację
+        Complete Registration
     </a>
     ```
 
-#### 3. Dostosuj tekst linku:
+### 3. Dostosuj tekst linku:
 
-• Zmień tekst pomiędzy otwierającymi \<a> a zamykającymi \</a> tagami, aby odzwierciedlał akcję, którą chcesz, aby użytkownik wykonał. Na przykład „Zakończ rejestrację” lub „Uzyskaj dostęp do swojego konta”.
+• Zmień tekst między otwierającym \<a> a zamykającym \</a> tak, aby odzwierciedlał akcję, którą użytkownik ma wykonać. Na przykład „Complete Registration” lub „Access Your Account”.
 
-4. Zapisz i przetestuj szablon:
+4\. Zapisz i przetestuj szablon:
 
-• Po wprowadzeniu zmian kliknij przycisk Zapisz.
+• Po wprowadzeniu zmian kliknij przycisk Save.
 
-• Możesz użyć przycisku Wyślij test, aby wysłać testowy e-mail i upewnić się, że link działa zgodnie z oczekiwaniami.
+• Możesz użyć przycisku Send Test, aby wysłać testowy e-mail i upewnić się, że link działa zgodnie z oczekiwaniami.
 
-### Najlepsze praktyki dotyczące używania \{{magic\_link\}}
+## Najlepsze praktyki używania \{{magic\_link\}}
 
-• Umiejscowienie linku: Umieść \{{magic\_link\}} w widocznym miejscu w e-mailu, aby zapewnić łatwy dostęp dla odbiorców.
+• Umiejscowienie linku: Umieść \{{magic\_link\}} w widocznym miejscu e-maila, aby odbiorcy mieli do niego łatwy dostęp.
 
-• Jasne wezwanie do działania: Tekst w linku powinien być jasnym wezwaniem do działania, takim jak „Zakończ rejestrację” lub „Potwierdź swój e-mail”.
+• Jasne wezwanie do działania: Tekst w linku powinien być jasnym wezwaniem do działania, takim jak „Complete Registration” lub „Confirm Your Email”.
 
-• Stylizacja: Upewnij się, że link jest stylizowany w sposób spójny z resztą szablonu e-maila i wyróżnia się wizualnie.
+• Stylizacja: Upewnij się, że link jest ostylowany spójnie z resztą szablonu e-maila i wyróżnia się wizualnie.
 
-• Testowanie: Zawsze wysyłaj testowy e-mail po edytowaniu szablonu, aby zweryfikować, że \{{magic\_link\}} działa poprawnie i stylizacja jest odpowiednia.
+• Testowanie: Zawsze wysyłaj testowy e-mail po edycji szablonu, aby sprawdzić, czy \{{magic\_link\}} jest poprawnie rozwiązywany, a stylizacja odpowiednia.
 
-### Podsumowanie
+## Podsumowanie
 
-Poprawne zdefiniowanie \{{magic\_link\}} w szablonach e-maili zapewnia, że odbiorcy otrzymują spersonalizowany i wykonalny e-mail, który prowadzi ich do odpowiedniego zadania w Twoim portalu dostawcy. To poprawia doświadczenie użytkownika i zapewnia płynne procesy onboardingu i komunikacji.
+Prawidłowe zdefiniowanie \{{magic\_link\}} w szablonach e-maili zapewnia, że odbiorcy otrzymują spersonalizowany e-mail z jasnym wezwaniem do działania, który prowadzi ich do odpowiedniego zadania w Twoim portalu dostawcy. Poprawia to doświadczenie użytkownika i zapewnia płynny onboarding oraz komunikację.
 
-\\
+\
 
-Dokumentacja ta zawiera szczegółowe instrukcje krok po kroku dla administratorów dotyczące definiowania i używania \{{magic\_link\}} w szablonach e-maili, zapewniając, że e-maile są zarówno funkcjonalne, jak i estetycznie atrakcyjne.
+
+Ta dokumentacja zawiera administratorom instrukcje krok po kroku dotyczące definiowania i używania \{{magic\_link\}} w szablonach e-maili, dzięki czemu e-maile są zarówno funkcjonalne, jak i atrakcyjne wizualnie.

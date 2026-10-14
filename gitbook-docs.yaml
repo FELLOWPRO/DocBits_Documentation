@@ -9,7 +9,7 @@ site:
       default: true
       content:
         directory: ./docbits
-        language: en
+        language: zh-tw
     - type: space
       key: space-2
       title: 🇩🇪 Deutsch
@@ -26,7 +26,9 @@ site:
         language: es
     - type: space
       key: space-4
-      title: 🇫🇷 Français
+      title: Français
+      localizedTitle:
+        fr: Français
       path: french
       content:
         directory: ./french
@@ -60,8 +62,8 @@ site:
         language: nl
     - type: space
       key: space-9
-      title: Chinese
+      title: 🇨🇳 Chinese
       path: chinese
       content:
         directory: ./docbits
-        language: en
+        language: zh-tw

@@ -187,6 +187,7 @@
       * [Layout-Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Navigieren im Layout-Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Dokumentuntertypen](admin-section/settings/global-settings/document-types/document-sub-types.md)
+      * [Erstellen eines neuen Untertyps](administration-and-setup/settings/global-settings/document-types/creating-a-new-sub-type.md)
       * [Tabellenspalten](admin-section/settings/global-settings/document-types/table-columns.md)
       * [Felder](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Hinzufügen und Bearbeiten von Feldern](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)

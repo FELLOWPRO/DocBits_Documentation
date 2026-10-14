@@ -1,12 +1,1 @@
-# ES - TRANSLATED
-
-**Translated to Español**
-
----
-
-# Document Processing
-
-
-
-
-...
+# Procesamiento de documentos

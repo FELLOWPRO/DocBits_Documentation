@@ -1,37 +1,37 @@
-# Currently Supported E-Invoice Standards
+# Estándares de facturación electrónica compatibles actualmente
 
 {% embed url="https://www.youtube.com/watch?v=AxrHNEmmXtg" %}
 {% endembed %}
 
-## Supported Electronic Documents by Country
+## Documentos electrónicos compatibles por país
 
-DocBits admite **120+** estándares de facturación electrónica y documentos en **30+ países**. La siguiente tabla está organizada por país.
+DocBits admite más de **120** estándares de facturación electrónica y de documentos en más de **30 países**. Las siguientes tablas están organizadas por país.
 
 ### 🇦🇷 Argentina
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [ARGENTINA AFIP](../supported-electronic-documents/argentina-afip.md) | Compatible |
 | [ARGENTINA FACTURA ELECTRONICA](../supported-electronic-documents/argentina-factura-electronica.md) | Compatible |
 
 ### 🇦🇹 Austria
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| ebInterface 4.3 | Compatible |
-| ebInterface 5.0 | Compatible |
-| ebInterface 6.0 | Compatible |
-| ebInterface 6.1 | Compatible |
+| [AUSTRIA EBINTERFACE](../supported-electronic-documents/austria-ebinterface.md) (4.3 – 6.1) | Compatible |
+| [AUSTRIA EBINTERFACE 6.0](../supported-electronic-documents/austria-ebinterface-6-0.md) | Compatible |
+| [AUSTRIA EBINTERFACE 6.1](../supported-electronic-documents/austria-ebinterface-6-1.md) | Compatible |
 
-### 🇦🇺 Australia / 🇳🇿 New Zealand
+### 🇦🇺 Australia / 🇳🇿 Nueva Zelanda
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| PINT A-NZ | Compatible |
+| [AUNZ PINT](../supported-electronic-documents/aunz-pint.md) (incl. Self-Billing) | Compatible |
+| [PINT A-NZ](../supported-electronic-documents/pint-a-nz.md) | Compatible |
 
-### 🇧🇷 Brazil
+### 🇧🇷 Brasil
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [CT-e](../supported-electronic-documents/brazil-cte.md) | Compatible |
 | [NF-e](../supported-electronic-documents/brazil-nfe.md) | Compatible |
@@ -40,37 +40,37 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 
 ### 🇨🇱 Chile
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| DTE | Compatible |
-| DTE FACTURA | Compatible |
-| FACTURA ELECTRONICA | Compatible |
+| [CHILE DTE](../supported-electronic-documents/chile-dte.md) | Compatible |
+| [CHILE DTE FACTURA](../supported-electronic-documents/chile-dte.md) | Compatible |
+| [CHILE DTE NOTA CREDITO](../supported-electronic-documents/chile-dte.md) | Compatible |
 
 ### 🇨🇳 China
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| E-FAPIAO | Compatible |
-| FAPIAO | Compatible |
-| GENERAL VAT INVOICE | Compatible |
-| SPECIAL VAT INVOICE | Compatible |
+| [E-FAPIAO](../supported-electronic-documents/china-fapiao.md) | Compatible |
+| [FAPIAO](../supported-electronic-documents/china-fapiao.md) | Compatible |
+| [GENERAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Compatible |
+| [SPECIAL VAT INVOICE](../supported-electronic-documents/china-fapiao.md) | Compatible |
 
 ### 🇨🇴 Colombia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [DOCUMENTO SOPORTE](../supported-electronic-documents/colombia-dian.md) | Compatible |
 | [FACTURA ELECTRONICA](../supported-electronic-documents/colombia-dian.md) | Compatible |
 
-### 🇩🇰 Denmark
+### 🇩🇰 Dinamarca
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [OIOUBL 2.1](../supported-electronic-documents/denmark-oioubl.md) | Compatible |
 
 ### 🇪🇨 Ecuador
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [FACTURA ELECTRONICA](../supported-electronic-documents/ecuador-sri.md) | Compatible |
 | [SRI](../supported-electronic-documents/ecuador-sri.md) | Compatible |
@@ -79,24 +79,24 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 | [SRI 2.0.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
 | [SRI 2.1.0](../supported-electronic-documents/ecuador-sri.md) | Compatible |
 
-### 🇪🇸 Spain
+### 🇪🇸 España
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [Facturae](../supported-electronic-documents/spain-facturae.md) | Compatible |
 | [Facturae 3.2](../supported-electronic-documents/spain-facturae.md) | Compatible |
 | [Facturae 3.2.1](../supported-electronic-documents/spain-facturae.md) | Compatible |
 | [Facturae 3.2.2](../supported-electronic-documents/spain-facturae.md) | Compatible |
 
-### 🇪🇺 European Union
+### 🇪🇺 Unión Europea
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| PEPPOL BIS 3.0 | Compatible |
+| [PEPPOL BIS 3.0](../supported-electronic-documents/peppol-bis-3-0.md) | Compatible |
 
-### 🇫🇮 Finland
+### 🇫🇮 Finlandia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [Finvoice 1.3](../supported-electronic-documents/finland-finvoice.md) | Compatible |
 | [Finvoice 2.0](../supported-electronic-documents/finland-finvoice.md) | Compatible |
@@ -104,227 +104,229 @@ DocBits admite **120+** estándares de facturación electrónica y documentos en
 | [Finvoice 3.0](../supported-electronic-documents/finland-finvoice.md) | Compatible |
 | [TEAPPSXML](../supported-electronic-documents/finland-teappsxml.md) | Compatible |
 
-### 🇫🇷 France
+### 🇫🇷 Francia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| Factur-X | Compatible |
-| Factur-X 1.0.05 / ZUGFeRD 2.1 | Compatible |
-| Factur-X 1.0.07.2 / ZUGFeRD 2.3.2 | Compatible |
+| [Factur-X](../supported-electronic-documents/facturx.md) | Compatible |
+| [Factur-X 1.0.05 / ZUGFeRD 2.1](../supported-electronic-documents/facturx-1-0-05-zugferd-2-1.md) | Compatible |
+| [Factur-X 1.0.07.2 / ZUGFeRD 2.3.2](../supported-electronic-documents/facturx-1-0-07-2-zugferd-2-3-2.md) | Compatible |
+| [Factur-X 1.09 / ZUGFeRD 2.5](../supported-electronic-documents/facturx-1-09-zugferd-2-5.md) | Compatible |
 
-### 🇩🇪 Germany
+### 🇩🇪 Alemania
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| XRechnung 1.0 CII | Compatible |
-| XRechnung 1.0 UBL | Compatible |
-| XRechnung 1.1 CII | Compatible |
-| XRechnung 1.1 UBL | Compatible |
-| XRechnung 1.2 CII | Compatible |
-| XRechnung 1.2 UBL | Compatible |
-| XRechnung 1.2.1 CII | Compatible |
-| XRechnung 1.2.1 UBL | Compatible |
-| XRechnung 1.2.2 CII | Compatible |
-| XRechnung 1.2.2 UBL | Compatible |
-| XRechnung 2.0 CII | Compatible |
-| XRechnung 2.0 UBL | Compatible |
-| XRechnung 2.0.1 CII | Compatible |
-| XRechnung 2.0.1 UBL | Compatible |
-| XRechnung 2.1 CII | Compatible |
-| XRechnung 2.1 UBL | Compatible |
-| XRechnung 2.2 CII | Compatible |
-| XRechnung 2.2 UBL | Compatible |
-| XRechnung 2.3 CII | Compatible |
-| XRechnung 2.3 UBL | Compatible |
-| XRechnung 3.0 CII | Compatible |
-| XRechnung 3.0 UBL | Compatible |
-| XRechnung 3.0.1 CII | Compatible |
-| XRechnung 3.0.1 UBL | Compatible |
-| XRechnung 3.0.2 CII | Compatible |
-| XRechnung 3.0.2 UBL | Compatible |
-| ZUGFeRD 1.0 | Compatible |
-| ZUGFeRD 1.0 Basic | Compatible |
-| ZUGFeRD 1.0 Comfort | Compatible |
-| ZUGFeRD 1.0 Extended | Compatible |
-| ZUGFeRD 2.2 | Compatible |
-| ZUGFeRD 2.3 | Compatible |
-| ZUGFeRD 2.3.2 | Compatible |
+| [XRechnung 1.0 CII](../supported-electronic-documents/xrechnung-1-0-cii.md) | Compatible |
+| [XRechnung 1.0 UBL](../supported-electronic-documents/xrechnung-1-0-ubl.md) | Compatible |
+| [XRechnung 1.1 CII](../supported-electronic-documents/xrechnung-1-1-cii.md) | Compatible |
+| [XRechnung 1.1 UBL](../supported-electronic-documents/xrechnung-1-1-ubl.md) | Compatible |
+| [XRechnung 1.2 CII](../supported-electronic-documents/xrechnung-1-2-cii.md) | Compatible |
+| [XRechnung 1.2 UBL](../supported-electronic-documents/xrechnung-1-2-ubl.md) | Compatible |
+| [XRechnung 1.2.1 CII](../supported-electronic-documents/xrechnung-1-2-1-cii.md) | Compatible |
+| [XRechnung 1.2.1 UBL](../supported-electronic-documents/xrechnung-1-2-1-ubl.md) | Compatible |
+| [XRechnung 1.2.2 CII](../supported-electronic-documents/xrechnung-1-2-2-cii.md) | Compatible |
+| [XRechnung 1.2.2 UBL](../supported-electronic-documents/xrechnung-1-2-2-ubl.md) | Compatible |
+| [XRechnung 2.0 CII](../supported-electronic-documents/xrechnung-2-0-cii.md) | Compatible |
+| [XRechnung 2.0 UBL](../supported-electronic-documents/xrechnung-2-0-ubl.md) | Compatible |
+| [XRechnung 2.0.1 CII](../supported-electronic-documents/xrechnung-2-0-1-cii.md) | Compatible |
+| [XRechnung 2.0.1 UBL](../supported-electronic-documents/xrechnung-2-0-1-ubl.md) | Compatible |
+| [XRechnung 2.1 CII](../supported-electronic-documents/xrechnung-2-1-cii.md) | Compatible |
+| [XRechnung 2.1 UBL](../supported-electronic-documents/xrechnung-2-1-ubl.md) | Compatible |
+| [XRechnung 2.2 CII](../supported-electronic-documents/xrechnung-2-2-cii.md) | Compatible |
+| [XRechnung 2.2 UBL](../supported-electronic-documents/xrechnung-2-2-ubl.md) | Compatible |
+| [XRechnung 2.3 CII](../supported-electronic-documents/xrechnung-2-3-cii.md) | Compatible |
+| [XRechnung 2.3 UBL](../supported-electronic-documents/xrechnung-2-3-ubl.md) | Compatible |
+| [XRechnung 3.0 CII](../supported-electronic-documents/xrechnung-3-0-cii.md) | Compatible |
+| [XRechnung 3.0 UBL](../supported-electronic-documents/xrechnung-3-0-ubl.md) | Compatible |
+| [XRechnung 3.0.1 CII](../supported-electronic-documents/xrechnung-3-0-1-cii.md) | Compatible |
+| [XRechnung 3.0.1 UBL](../supported-electronic-documents/xrechnung-3-0-1-ubl.md) | Compatible |
+| [XRechnung 3.0.2 CII](../supported-electronic-documents/xrechnung-3-0-2-cii.md) | Compatible |
+| [XRechnung 3.0.2 UBL](../supported-electronic-documents/xrechnung-3-0-2-ubl.md) | Compatible |
+| [ZUGFeRD 1.0](../supported-electronic-documents/zugferd-1-0.md) | Compatible |
+| [ZUGFeRD 1.0 Basic](../supported-electronic-documents/zugferd-1-0-basic.md) | Compatible |
+| [ZUGFeRD 1.0 Comfort](../supported-electronic-documents/zugferd-1-0-comfort.md) | Compatible |
+| [ZUGFeRD 1.0 Extended](../supported-electronic-documents/zugferd-1-0-extended.md) | Compatible |
+| [ZUGFeRD 2.2](../supported-electronic-documents/zugferd-2-2.md) | Compatible |
+| [ZUGFeRD 2.3](../supported-electronic-documents/zugferd-2-3.md) | Compatible |
+| [ZUGFeRD 2.3.2](../supported-electronic-documents/zugferd-2-3-2.md) | Compatible |
+| [ZUGFeRD 2.5](../supported-electronic-documents/zugferd-2-5.md) | Compatible |
 
 ### 🇮🇳 India
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | [GST E-Invoice](../supported-electronic-documents/india-gst-e-invoice.md) | Compatible |
 
 ### 🇮🇩 Indonesia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| E-Faktur | Compatible |
+| [E-Faktur](../supported-electronic-documents/indonesia-e-faktur.md) | Compatible |
 
-### 🇮🇹 Italy
+### 🇮🇹 Italia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| FatturaPA | Compatible |
+| [FatturaPA](../supported-electronic-documents/fatturapa.md) | Compatible |
 
-### 🇯🇵 Japan
+### 🇯🇵 Japón
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| JP PINT | Compatible |
-| JP PINT Self-Billing | Compatible |
+| [JP PINT](../supported-electronic-documents/jp-pint.md) | Compatible |
+| [JP PINT Self-Billing](../supported-electronic-documents/jp-pint-self-billing.md) | Compatible |
 
-### 🇰🇿 Kazakhstan
+### 🇰🇿 Kazajistán
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| ESF | Compatible |
+| [ESF](../supported-electronic-documents/kazakhstan-esf.md) | Compatible |
 
-### 🇰🇷 Korea
+### 🇰🇷 Corea
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| E-Tax Invoice | Compatible |
-| NTS | Compatible |
+| [E-Tax Invoice](../supported-electronic-documents/korea-e-tax-invoice.md) | Compatible |
+| [NTS](../supported-electronic-documents/korea-nts.md) | Compatible |
 
-### 🇲🇾 Malaysia
+### 🇲🇾 Malasia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| MyInvois | Compatible |
+| [MyInvois](../supported-electronic-documents/myinvois.md) | Compatible |
 
-### 🇲🇽 Mexico
+### 🇲🇽 México
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| CFDI 3.3 | Compatible |
-| CFDI 4.0 | Compatible |
+| [CFDI 3.3](../supported-electronic-documents/mexico-cfdi-3-3.md) | Compatible |
+| [CFDI 4.0](../supported-electronic-documents/mexico-cfdi-4-0.md) | Compatible |
 
-### 🇳🇱 Netherlands
+### 🇳🇱 Países Bajos
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| SI-UBL 2.0 | Compatible |
+| [SI-UBL 2.0](../supported-electronic-documents/si-ubl-2-0.md) | Compatible |
 
-### 🇳🇴 Norway
+### 🇳🇴 Noruega
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| EHF Invoice 3.0 | Compatible |
+| [EHF Invoice 3.0](../supported-electronic-documents/ehf-invoice-3-0.md) | Compatible |
 
 ### 🇵🇾 Paraguay
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| DTE | Compatible |
-| SIFEN | Compatible |
-| SIFEN 150 | Compatible |
+| [DTE](../supported-electronic-documents/paraguay-dte.md) | Compatible |
+| [SIFEN](../supported-electronic-documents/paraguay-sifen.md) | Compatible |
+| [SIFEN 150](../supported-electronic-documents/paraguay-sifen-150.md) | Compatible |
 
-### 🇵🇪 Peru
+### 🇵🇪 Perú
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| CPE | Compatible |
-| CPE UBL 2.0 | Compatible |
-| CPE UBL 2.1 | Compatible |
-| FACTURA ELECTRONICA | Compatible |
+| [CPE](../supported-electronic-documents/peru-cpe.md) | Compatible |
+| [CPE UBL 2.0](../supported-electronic-documents/peru-cpe-ubl-2-0.md) | Compatible |
+| [CPE UBL 2.1](../supported-electronic-documents/peru-cpe-ubl-2-1.md) | Compatible |
+| [FACTURA ELECTRONICA](../supported-electronic-documents/peru-factura-electronica.md) | Compatible |
 
-### 🇵🇭 Philippines
+### 🇵🇭 Filipinas
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| EIS | Compatible |
+| [EIS](../supported-electronic-documents/philippines-eis.md) | Compatible |
 
-### 🇵🇱 Poland
+### 🇵🇱 Polonia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| KSeF | Compatible |
-| KSeF FA2 | Compatible |
-| KSeF FA3 | Compatible |
+| [KSeF](../supported-electronic-documents/ksef.md) | Compatible |
+| [KSeF FA2](../supported-electronic-documents/ksef-fa2.md) | Compatible |
+| [KSeF FA3](../supported-electronic-documents/ksef-fa3.md) | Compatible |
 
-### 🇸🇦 Saudi Arabia
+### 🇸🇦 Arabia Saudí
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| ZATCA Fatoorah | Compatible |
-| ZATCA Reporting | Compatible |
-| ZATCA Simplified | Compatible |
-| ZATCA Tax Invoice | Compatible |
+| [ZATCA Fatoorah](../supported-electronic-documents/zatca-fatoorah.md) | Compatible |
+| [ZATCA Reporting](../supported-electronic-documents/zatca-reporting.md) | Compatible |
+| [ZATCA Simplified](../supported-electronic-documents/zatca-simplified.md) | Compatible |
+| [ZATCA Tax Invoice](../supported-electronic-documents/zatca-tax-invoice.md) | Compatible |
 
-### 🇸🇬 Singapore
+### 🇸🇬 Singapur
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| InvoiceNow | Compatible |
-| InvoiceNow SG | Compatible |
+| [InvoiceNow](../supported-electronic-documents/invoicenow.md) | Compatible |
+| [InvoiceNow SG](../supported-electronic-documents/invoicenow-sg.md) | Compatible |
 
-### 🇸🇮 Slovenia
+### 🇸🇮 Eslovenia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | e-SLOG 1.6 | Compatible |
 | e-SLOG 2.0 | Compatible |
 
-### 🇸🇪 Sweden
+### 🇸🇪 Suecia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| Svefaktura 1.0 | Compatible |
+| [Svefaktura 1.0](../supported-electronic-documents/svefaktura-1-0.md) | Compatible |
 
-### 🇹🇼 Taiwan
+### 🇹🇼 Taiwán
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| eGUI | Compatible |
+| [eGUI](../supported-electronic-documents/taiwan-egui.md) | Compatible |
 
-### 🇹🇭 Thailand
+### 🇹🇭 Tailandia
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| E-Tax Invoice | Compatible |
+| [E-Tax Invoice](../supported-electronic-documents/thailand-e-tax-invoice.md) | Compatible |
 
-### 🇹🇷 Turkey
+### 🇹🇷 Turquía
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| E-Arsiv | Compatible |
-| E-Fatura | Compatible |
+| [E-Arsiv](../supported-electronic-documents/turkey-e-arsiv.md) | Compatible |
+| [E-Fatura](../supported-electronic-documents/turkey-e-fatura.md) | Compatible |
 
-### 🇦🇪 United Arab Emirates
+### 🇦🇪 Emiratos Árabes Unidos
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| VAT Invoice | Compatible |
+| [VAT Invoice](../supported-electronic-documents/uae-vat-invoice.md) | Compatible |
 
 ### 🇺🇾 Uruguay
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| CFE | Compatible |
-| CFE 24 | Compatible |
-| CFE 25 | Compatible |
-| E-Factura | Compatible |
-| E-Nota Credito | Compatible |
+| [CFE](../supported-electronic-documents/uruguay-cfe.md) | Compatible |
+| [CFE 24](../supported-electronic-documents/uruguay-cfe-24.md) | Compatible |
+| [CFE 25](../supported-electronic-documents/uruguay-cfe-25.md) | Compatible |
+| [E-Factura](../supported-electronic-documents/uruguay-e-factura.md) | Compatible |
+| [E-Nota Credito](../supported-electronic-documents/uruguay-e-nota-credito.md) | Compatible |
 
 ### 🇻🇳 Vietnam
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
-| E-Invoice | Compatible |
+| [E-Invoice](../supported-electronic-documents/vietnam-e-invoice.md) | Compatible |
 
-### International / Multi-Country Standards
+### Estándares internacionales y multipaís
 
-| Standard | Estado |
+| Estándar | Estado |
 |---|---|
 | BOD | Compatible |
 | EDI | Compatible |
-| INVOIC02 | Compatible |
-| SPS Commerce RSX 7.7.4 | Compatible |
-| UBL 2.1 | Compatible |
+| [INVOIC02](../supported-electronic-documents/invoic02.md) | Compatible |
+| [SPS Commerce RSX 7.7.4](../supported-electronic-documents/sps-commerce-rsx-7-7-4.md) | Compatible |
+| [UBL 2.1](../supported-electronic-documents/ubl-2-1.md) | Compatible |
 
-## Roadmap for Upcoming Implementation
+## Hoja de ruta de las próximas implementaciones
 
 {% content-ref url="roadmap.md" %}
 [roadmap.md](roadmap.md)

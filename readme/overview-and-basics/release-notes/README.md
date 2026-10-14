@@ -434,3 +434,120 @@
 * Naprawiono problem, w którym tokeny subskrypcyjne były wyświetlane nieprawidłowo.
 * Rozwiązano problem, w którym ekran zadań wyświetlał nieaktualną wersję dokumentu.
 * Naprawiono problem, który powodował, że dokumenty nie zmieniały swojego statusu.
+
+## Wydanie Winter Frost 22 stycznia 2025
+
+#### Nowe funkcje
+
+### Obsługa ZUGFeRD 2.1 i nowszych wersji
+
+DocBits oferuje teraz pełną obsługę wersji ZUGFeRD 2.1 i nowszych, co umożliwia płynne przetwarzanie faktur elektronicznych zgodnych ze standardem ZUGFeRD. Integracja zapewnia:
+
+* **Kompatybilność**: DocBits potrafi obsługiwać faktury ZUGFeRD zarówno w ustrukturyzowanej (XML), jak i nieustrukturyzowanej (PDF) formie, zachowując zgodność z normami UE, takimi jak EN 16931 dla fakturowania elektronicznego.
+* **Wydajność**: Użytkownicy mogą bez wysiłku importować, walidować i ekstrakować dane z faktur elektronicznych ZUGFeRD, co minimalizuje ręczne wprowadzanie danych i skraca czas przetwarzania.
+* **Elastyczność**: Niezależnie od tego, czy pracujesz z profilami basic, comfort czy extended w ramach standardu ZUGFeRD, DocBits udostępnia narzędzia do zarządzania każdym poziomem złożoności faktur.
+* **Przyszłościowość**: Dzięki obsłudze nowszych wersji DocBits zapewnia, że firmy pozostają zgodne ze stale rozwijającymi się przepisami dotyczącymi fakturowania elektronicznego w państwach członkowskich UE i poza nimi.
+
+Wdrażając standardy ZUGFeRD 2.1 i nowsze, DocBits upraszcza transakcje transgraniczne i odpowiada współczesnym potrzebom biznesowym, będąc niezbędnym narzędziem dla organizacji stawiających na transformację cyfrową i zgodność z przepisami. [Poznaj wersje ZUGFeRD i ich mapowania w DocBits](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+
+### Integracja z zewnętrznymi API dla usprawnionego przetwarzania dokumentów
+
+DocBits wprowadza zaawansowaną możliwość wykorzystania zewnętrznych API podczas przetwarzania dokumentów, co zwiększa kompletność i dokładność ekstrakowanych danych. Funkcja ta znacząco redukuje ręczne wprowadzanie danych, uzupełniając brakujące pola dokładnymi, aktualnymi informacjami pozyskiwanymi w czasie rzeczywistym ze sprawdzonych źródeł. Zapewnia to szybsze i bardziej spójne przetwarzanie dokumentów.
+
+### Dostęp Cross Sub-Organizations
+
+W organizacjach z włączoną obsługą wielu podorganizacji DocBits wprowadza funkcję Cross Sub-Organizations. To ulepszenie pozwala użytkownikom administracyjnym usprawnić zarządzanie dokumentami we wszystkich podorganizacjach w ramach jednego obszaru. Użytkownicy administratorzy mogą teraz uzyskiwać dostęp do wszystkich dokumentów ze wszystkich podorganizacji i je przeglądać bez konieczności przełączania podorganizacji. Ta scentralizowana widoczność umożliwia administratorom przeglądanie wszystkich dokumentów wszystkich podorganizacji, ułatwiając znajdowanie konkretnych plików przy zachowaniu pełnego przeglądu. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
+
+<figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt=""><figcaption></figcaption></figure>
+
+### Widoczność dokumentów na podstawie uprawnień grup
+
+DocBits wprowadza ulepszone mechanizmy kontroli widoczności dokumentów, umożliwiające dokładniejsze zarządzanie dostępem dla użytkowników niebędących administratorami dzięki uprawnieniom opartym na grupach. Funkcja ta pozwala administratorom definiować, które dokumenty są widoczne dla konkretnych użytkowników lub grup, zapewniając usprawnione przepływy pracy i wyższe bezpieczeństwo danych. Użytkownicy administratorzy mogą przypisywać dokumenty do konkretnych grup, nadając widoczność wyłącznie użytkownikom w tych grupach. Dzięki temu użytkownicy widzą tylko dokumenty istotne dla ich roli lub zespołu, co zmniejsza nadmiar informacji i zwiększa koncentrację. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
+
+<figure><img src="../../.gitbook/assets/Group Based Permission.png" alt=""><figcaption></figcaption></figure>
+
+### Sekwencyjny przepływ pracy i historia zatwierdzania
+
+DocBits wprowadza funkcję sekwencyjnego przepływu pracy i historii zatwierdzania, zaprojektowaną w celu zwiększenia efektywności przetwarzania dokumentów i rozliczalności. Dzięki umożliwieniu dokumentom podążania zdefiniowanym drzewem decyzyjnym funkcja ta zapewnia uporządkowany przegląd i zatwierdzanie, zachowując pełny rejek podjętych działań. Zarządzanie sekwencyjnym przepływem pracy:
+
+* Dokumenty można przypisywać do wielu użytkowników w zdefiniowanej kolejności, zapewniając, że każdy etap przeglądu lub walidacji odbywa się we właściwej kolejności.
+* Każdy użytkownik w przepływie pracy jest powiadamiany, gdy przypada jego kolej na działanie na dokumencie, co zmniejsza dezorientację i opóźnienia.
+* Przepływy pracy można dostosować do konkretnych procesów biznesowych
+
+**Historia zatwierdzania:**
+
+* Pełny rejestr wszystkich działań podjętych na dokumencie jest dostępny w widokach walidacji i zatwierdzania. Zawiera on:
+  * Działania użytkowników (np. „zatwierdzono”, „odrzucono”)
+  * Znaczniki czasu dla każdego działania
+  * Komentarze lub notatki dodane przez użytkowników podczas przeglądu
+* Historia zapewnia przejrzystość i stanowi ślad audytu dla celów zgodności z przepisami i rozwiązywania problemów. [Dowiedz się więcej](https://docs.docbits.com/polish/administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history)
+
+<figure><img src="../../.gitbook/assets/Approval History.png" alt=""><figcaption></figcaption></figure>
+
+### Ulepszenie archiwizacji dokumentów SFTP/FTP
+
+Ulepszenie archiwizacji dokumentów SFTP/FTP w DocBits rozszerza istniejącą funkcjonalność importu o płynną metodę archiwizowania plików po ich przetworzeniu. Nowe ustawienie w konfiguracji importu FTP pozwala użytkownikom włączać lub wyłączać archiwizację plików. Po pomyślnym zaimportowaniu i przetworzeniu plików w DocBits są one automatycznie archiwizowane w wskazanym folderze na serwerze SFTP/FTP, jeśli opcja jest włączona. Zapewnia to zachowanie przetworzonych plików do celów dokumentacji bez zaśmiecania aktywnych katalogów importu. [Dowiedz się więcej](https://docs.docbits.com/polish/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
+
+<figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt=""><figcaption></figcaption></figure>
+
+### Wiele sekcji podatkowych dla typu podatku i eksportu do LN
+
+Funkcja ta rozszerza możliwości obsługi podatków dzięki szczegółowej klasyfikacji i eksportowi informacji podatkowych do Infor LN (Full Tax, Reduced Tax, Tax Free). Umożliwia to lepsze dopasowanie do złożonych struktur podatkowych i zapewnia płynną integrację z systemami księgowymi.
+
+**Wiele sekcji podatkowych na typ**:
+
+* DocBits obsługuje teraz dodawanie wielu sekcji podatkowych w ramach każdego typu podatku, takich jak:
+  * Full Tax: Standardowe stawki VAT lub podatku od sprzedaży.
+  * Reduced Tax: Niższe stawki dla konkretnych towarów lub usług (np. produktów podstawowych).
+  * Tax-Free: Zwolnienia dla kwalifikujących się transakcji.
+* Sekcje te umożliwiają precyzyjną kategoryzację kwot podatku, zapewniając zgodność z przepisami podatkowymi i standardami rachunkowości.
+
+**Dynamiczna integracja z automatyczną księgowością**:
+
+* Na podstawie danych ekstrakowanych podczas przetwarzania dokumentu odpowiednie sekcje podatkowe są automatycznie wyświetlane na ekranie automatycznej księgowości.
+* Zapewnia to użytkownikom możliwość szybkiej walidacji i korekty pozycji podatkowych bez ręcznego obliczania ani ponownego wprowadzania, usprawniając przepływ pracy.
+
+**Eksport do Infor LN**:
+
+* Dane podatkowe, wraz ze wszystkimi istotnymi sekcjami i klasyfikacjami, są bezproblemowo eksportowane do Infor LN, zapewniając spójność między przetwarzaniem dokumentów w DocBits a systemem planowania zasobów przedsiębiorstwa (ERP).
+* Eksportowane dane są łączone z odpowiednimi pozycjami kosztowymi w Infor LN, zachowując przejrzystą identyfikowalność i dokładne raportowanie finansowe.
+
+<figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/MultipleTaxLineAuto Accounting.png" alt=""><figcaption></figcaption></figure>
+
+### Ulepszenia pulpitu nawigacyjnego
+
+DocBits wprowadził znaczące aktualizacje pulpitu nawigacyjnego, skupiając się na użyteczności, efektywności i lepszej widoczności danych. Ulepszenia te obejmują nowy filtr „Assigned To Group” oraz zoptymalizowany interfejs użytkownika dla dzienników dokumentów, co ułatwia użytkownikom interakcję z dokumentami i zarządzanie nimi.
+
+### Ulepszenia dopasowywania zamówień zakupu (PO Matching)
+
+DocBits wprowadza kilka ulepszeń użyteczności ekranu dopasowywania zamówień zakupu (PO Matching), zaprojektowanych w celu usprawnienia procesu dopasowywania pozycji zamówienia zakupu (PO) do faktur. Ulepszenia te oferują bardziej intuicyjne sterowanie wieloma pozycjami i zapewniają czytelne wskaźniki wizualne do obsługi nieaktualnych danych zamówień.
+
+**Ctrl + kliknięcie dla indywidualnego wyboru pozycji**:
+
+* Użytkownicy mogą teraz przytrzymać klawisz Ctrl i kliknąć konkretne pozycje, aby zaznaczyć wiele rozproszonych wierszy na ekranie dopasowywania PO.
+
+**Shift + kliknięcie dla wyboru zakresu**:
+
+* Użytkownicy mogą zaznaczyć zakres wierszy, przytrzymując klawisz Shift, klikając pierwszy wiersz, a następnie ostatni wiersz. Wszystkie wiersze pomiędzy pierwszym a ostatnim zaznaczeniem zostaną automatycznie wybrane.
+
+**Automatyczne wykrywanie nieaktualnych danych**:
+
+* Jeśli dane zamówienia zakupu powiązane z fakturą są nieaktualne (na podstawie ustawień systemowych), wyświetlona zostanie ikona informująca użytkownika. Ten wskaźnik wizualny zapewnia, że użytkownicy mają świadomość nieaktualnych danych, które mogą nie odzwierciedlać najnowszych aktualizacji zamówienia zakupu.
+
+### Poprawki błędów
+
+* Rozwiązano problem zapewniający poprawne wyświetlanie wszystkich możliwych wartości podczas procesów automatycznej księgowości
+* Ulepszono interfejs użytkownika logów przepływu pracy, aby nawigacja i użyteczność były bardziej intuicyjne
+* Zaktualizowano pola dokumentów, aby wyświetlały dodatkowe informacje, takie jak flagi wymagane i ukryte, bezpośrednio w interfejsie użytkownika
+* Dodano widoczność opisów grup w ustawieniach grup
+* Wyświetlano ograniczenia długości nazw grup podczas tworzenia, aby zapobiec błędom
+* Rozwiązano problemy w funkcjonalności testowania drzewa decyzyjnego i naprawiono niespójności tłumaczeń
+* Ulepszono funkcję wyszukiwania w logach przepływu pracy dla bardziej dokładnych i skutecznych wyników
+* Naprawiono problem zapobiegający przypadkowemu usuwaniu szkiców e-dokumentów przez użytkowników
+* Rozwiązano błędy w procesie importu e-maili, zapewniając płynną integrację i obsługę danych
+* Naprawiono problemy z zapisywaniem tagów generowanych przez AI, zapewniając spójne zachowywanie danych
+* Skorygowano problem sortowania występujący podczas stosowania sortowania na różnych stronach pulpitu nawigacyjnego
+* Ulepszono licznik dokumentów, aby dokładnie wyświetlał liczbę dokumentów przetworzonych przez DocBits
+* Ulepszono tłumaczenia w całej aplikacji, aby zwiększyć użyteczność dla różnych języków

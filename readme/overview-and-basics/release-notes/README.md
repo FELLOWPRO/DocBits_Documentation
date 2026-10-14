@@ -434,3 +434,121 @@
 * Corrigido um problema onde os tokens de assinatura eram exibidos incorretamente.
 * Resolvido um problema onde a tela de tarefas exibia uma versão desatualizada do documento.
 * Corrigido um problema que fazia com que os documentos não mudassem seu status.
+
+## Lançamento Winter Frost 22 de janeiro de 2025
+
+#### Novas funcionalidades
+
+### Suporte para ZUGFeRD 2.1 e versões mais recentes
+
+O DocBits inclui agora suporte completo para as versões 2.1 e superiores do ZUGFeRD, permitindo o tratamento e o processamento sem descontinuidade de faturas eletrónicas em conformidade com o ZUGFeRD. A integração garante:
+
+* **Compatibilidade**: o DocBits é capaz de gerir faturas ZUGFeRD tanto no formato estruturado (XML) como no não estruturado (PDF), mantendo a conformidade com normas da UE como a EN 16931 para a faturação eletrónica.
+* **Eficiência**: os utilizadores podem importar, validar e extrair dados de faturas eletrónicas ZUGFeRD sem esforço, minimizando a introdução manual de dados e reduzindo o tempo de processamento.
+* **Flexibilidade**: quer esteja a trabalhar com os perfis basic, comfort ou extended dentro do padrão ZUGFeRD, o DocBits fornece ferramentas para gerir cada nível de complexidade da fatura.
+* **Preparação para o futuro**: com o suporte para versões mais recentes, o DocBits garante que as empresas permanecem em conformidade com as regulamentações de faturação eletrónica em constante evolução, nos Estados-Membros da UE e além.
+
+Ao incorporar os padrões ZUGFeRD 2.1 e mais recentes, o DocBits simplifica as transações transfronteiriças e está alinhado com as necessidades empresariais modernas, tornando-se uma ferramenta essencial para organizações que priorizam a transformação digital e a conformidade regulamentar. [Explore as versões ZUGFeRD e os seus mapeamentos no DocBits](../../administration-and-setup/settings/global-settings/document-types/edi/zugferd/README.md)
+
+### Integração de API externa para um processamento de documentos aprimorado
+
+O DocBits introduz uma capacidade avançada de utilizar APIs externas durante o processamento de documentos, melhorando a completude e a precisão dos dados extraídos. Esta funcionalidade reduz significativamente a introdução manual de dados ao preencher campos em falta com informação precisa e atualizada, obtida em tempo real a partir de fontes fidedignas. Garante que os documentos são processados mais rapidamente e com maior consistência.
+
+### Acesso entre suborganizações (Cross Sub-Organizations)
+
+Para organizações com várias suborganizações ativadas, o DocBits introduz a funcionalidade Cross Sub-Organizations. Esta melhoria permite aos utilizadores administrativos simplificar a gestão de documentos em todas as suborganizações sob uma única estrutura. Os utilizadores administradores podem agora aceder e ver todos os documentos de todas as suborganizações sem necessidade de alternar entre suborganizações. Esta visibilidade centralizada permite aos administradores ver todos os documentos de todas as suborganizações, facilitando a localização de ficheiros específicos sem perder a visão global. [Saber mais](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations/README.md)
+
+<figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt="Seletor de suborganizações no canto superior direito do painel"><figcaption><p>Alternar entre suborganizações ou ver todas de uma vez com a opção Cross</p></figcaption></figure>
+
+### Visibilidade de documentos com base em permissões de grupos
+
+O DocBits introduz controlos de visibilidade de documentos aprimorados, permitindo uma gestão de acesso mais precisa para utilizadores não administradores através de permissões baseadas em grupos. Esta funcionalidade permite aos administradores definir que documentos são visíveis para utilizadores ou grupos específicos, garantindo fluxos de trabalho mais eficientes e maior segurança dos dados. Os utilizadores administradores podem atribuir documentos a grupos específicos, concedendo visibilidade apenas aos utilizadores desses grupos. Desta forma, cada utilizador vê apenas os documentos relevantes para a sua função ou equipa, reduzindo o ruído e aumentando o foco. [Saber mais](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions/README.md)
+
+<figure><img src="../../.gitbook/assets/Group Based Permission.png" alt="Definição de permissões baseadas em grupos nas configurações"><figcaption><p>Atribuir documentos a grupos para controlar quem os pode ver</p></figcaption></figure>
+
+### Fluxo de trabalho sequencial e histórico de aprovações
+
+O DocBits introduz uma poderosa funcionalidade de fluxo de trabalho sequencial com histórico de aprovações, concebida para melhorar a eficiência e a responsabilidade no processamento de documentos. Ao permitir que os documentos sigam uma árvore de decisão predefinida, esta funcionalidade garante uma revisão e aprovação ordenadas, mantendo um registo completo das ações efetuadas. Gestão de fluxo de trabalho sequencial:
+
+* Os documentos podem ser atribuídos a vários utilizadores numa sequência predefinida, garantindo que cada etapa de revisão ou validação ocorre na ordem correta.
+* Cada utilizador no fluxo de trabalho é notificado quando é a sua vez de agir sobre o documento, reduzindo confusões e atrasos.
+* Os fluxos de trabalho podem ser personalizados para se adaptarem a processos empresariais específicos.
+
+**Histórico de aprovações:**
+
+* Um registo completo de todas as ações efetuadas sobre o documento está disponível nas vistas de Validação e Aprovação. Este registo inclui:
+  * Ações do utilizador (por exemplo, "aprovado", "rejeitado")
+  * Data e hora de cada ação
+  * Comentários ou notas adicionados pelos utilizadores durante a revisão
+* O histórico garante transparência e fornece um registo de auditoria para efeitos de conformidade e resolução de problemas. [Saber mais](../../administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history.md)
+
+<figure><img src="../../.gitbook/assets/Approval History.png" alt="Histórico de aprovações de um documento com ações, utilizadores e datas"><figcaption><p>Cada aprovação e rejeição fica registada com utilizador e data</p></figcaption></figure>
+
+### Aprimoramento do arquivo de documentos SFTP/FTP
+
+O aprimoramento do arquivo de documentos SFTP/FTP no DocBits parte da funcionalidade de importação existente, introduzindo um método simples para arquivar ficheiros após serem processados. Uma nova definição na configuração de importação FTP permite ativar ou desativar o arquivamento de ficheiros. Depois de os ficheiros serem importados e processados com sucesso no DocBits, são automaticamente arquivados numa pasta designada no servidor SFTP/FTP, se a opção estiver ativada. Isto garante que os ficheiros processados são preservados para efeitos de registo sem sobrecarregar os diretórios de importação ativos. [Saber mais](../../end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md)
+
+<figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt="Configuração de importação FTP com a opção de arquivamento de ficheiros"><figcaption><p>Ativar o arquivamento automático na configuração de importação FTP</p></figcaption></figure>
+
+### Secções múltiplas de imposto por tipo de imposto e exportação para o LN
+
+Esta funcionalidade aprimora o tratamento de impostos ao permitir a classificação detalhada e a exportação de informação fiscal para o Infor LN (Full Tax, Reduced Tax, Tax Free). Isto permite um melhor alinhamento com estruturas fiscais complexas e garante uma integração sem descontinuidade com os sistemas de contabilidade.
+
+**Várias secções de imposto por tipo**:
+
+* O DocBits passa a suportar a adição de várias secções de imposto sob cada tipo de imposto, tais como:
+  * Full Tax: taxas padrão de IVA ou de imposto sobre vendas.
+  * Reduced Tax: taxas reduzidas para bens ou serviços específicos (por exemplo, bens essenciais).
+  * Tax-Free: isenções para operações elegíveis.
+* Estas secções permitem uma categorização precisa dos montantes de imposto, garantindo conformidade com as regulamentações fiscais e as normas contabilísticas.
+
+**Integração dinâmica com a Contabilidade Automática**:
+
+* Com base nos dados extraídos durante o processamento do documento, as secções de imposto relevantes são apresentadas automaticamente no ecrã de Contabilidade Automática.
+* Isto garante que os utilizadores podem validar e ajustar as entradas fiscais rapidamente, sem cálculos manuais nem nova introdução de dados, simplificando o fluxo de trabalho.
+
+**Exportação para o Infor LN**:
+
+* Os dados fiscais, incluindo todas as secções e classificações relevantes, são exportados sem descontinuidade para o Infor LN, garantindo consistência entre o processamento de documentos no DocBits e o sistema de planeamento de recursos empresariais (ERP).
+* Os dados exportados são ligados às respetivas linhas de custo no Infor LN, mantendo a rastreabilidade clara e um relatório financeiro rigoroso.
+
+<figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt="Várias secções de imposto num documento"><figcaption><p>Secções de imposto separadas por tipo: Full Tax, Reduced Tax e Tax-Free</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/MultipleTaxLineAuto Accounting.png" alt="Secções de imposto na tela de Contabilidade Automática"><figcaption><p>As secções de imposto aparecem automaticamente na Contabilidade Automática</p></figcaption></figure>
+
+### Aprimoramentos do painel
+
+O DocBits introduziu atualizações significativas no painel, com foco na usabilidade, na eficiência e numa melhor visibilidade dos dados. Estas melhorias incluem um novo filtro "Assigned To Group" e uma interface otimizada para os registos de documentos (Document Logs), tornando mais simples a interação e a gestão dos documentos por parte dos utilizadores.
+
+### Aprimoramentos da correspondência de ordens de compra
+
+O DocBits introduz várias melhorias de usabilidade no ecrã de correspondência de ordens de compra (PO), concebidas para simplificar a correspondência entre as linhas da ordem de compra e as faturas. Estas melhorias oferecem controlos mais intuitivos para a seleção de várias linhas e indicadores visuais claros para o tratamento de dados de PO desatualizados.
+
+**Ctrl + clique para seleção individual de linhas**:
+
+* Os utilizadores podem agora manter a tecla Ctrl premida e clicar em linhas específicas para selecionar várias linhas não contíguas no ecrã de correspondência de PO.
+
+**Shift + clique para seleção de intervalos**:
+
+* Os utilizadores podem selecionar um intervalo de linhas mantendo premida a tecla Shift, clicando na primeira linha e depois na última. Todas as linhas entre a primeira e a última seleção são selecionadas automaticamente.
+
+**Deteção automática de dados desatualizados**:
+
+* Se os dados da PO associados a uma fatura forem antigos (com base nas definições do sistema), será exibido um ícone para notificar o utilizador. Este indicador visual garante que os utilizadores reconhecem dados desatualizados que podem não refletir as atualizações mais recentes da ordem de compra.
+
+### Correções de bugs
+
+* Resolvido um problema para garantir que todos os valores possíveis são exibidos corretamente durante os processos de contabilidade automática
+* Melhorada a interface do utilizador dos registos de fluxo de trabalho (Workflow Logs) para tornar a navegação e a usabilidade mais intuitivas
+* Atualizados os campos do documento para exibir informações adicionais, como as marcas de obrigatório e oculto, diretamente na interface
+* Adicionada a visibilidade das descrições de grupos nas configurações de grupos
+* Exibidas as restrições de comprimento dos nomes de grupos durante a criação, para evitar erros
+* Corrigidos problemas na funcionalidade de teste da árvore de decisão e resolvidas inconsistências de tradução
+* Melhorada a funcionalidade de pesquisa nos registos de fluxo de trabalho para resultados mais precisos e eficazes
+* Corrigido um problema que impedia a eliminação involuntária de rascunhos de documentos eletrónicos
+* Resolvidos bugs no processo de importação de e-mails para garantir uma integração e um tratamento de dados sem descontinuidade
+* Corrigidos problemas ao guardar etiquetas geradas por IA, garantindo a retenção consistente dos dados
+* Corrigido um problema de ordenação que ocorria ao aplicar ordenações entre diferentes páginas do painel
+* Aprimorado o contador de documentos para exibir com exatidão o número de documentos processados pelo DocBits
+* Melhoradas traduções em toda a aplicação para aumentar a usabilidade nos diferentes idiomas
+

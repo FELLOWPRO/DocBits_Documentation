@@ -1,4 +1,4 @@
-# Cálculo de Fecha de Vencimiento
+# Calculo de Fecha de Vencimiento
 
 ## Que hace este script?
 
@@ -57,5 +57,5 @@ set_date_value(document_data, "delivery_date", None)  # None = hoy
 
 ## Funciones Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer fecha de factura
-* [set\_date\_value()](../functions/field-functions.md#set_date_value) — Calcular y establecer fecha de vencimiento
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer fecha de factura
+- [set\_date\_value()](../field-functions.md#set\_date\_value) — Calcular y establecer fecha de vencimiento

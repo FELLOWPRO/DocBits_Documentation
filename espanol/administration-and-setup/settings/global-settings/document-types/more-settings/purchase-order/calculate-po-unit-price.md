@@ -1,4 +1,4 @@
-# Calcular el precio unitario del pedido
+# Calcular el precio unitario de la orden de compra
 
 ## **Resumen**
 
@@ -6,9 +6,15 @@ Puede elegir calcular automáticamente el **precio unitario** de cada línea de 
 
 ## **Pasos para la activación**
 
-1. Navegue a **Configuración** -> **Configuración global** -> **Tipos de documento**.
-2. Seleccione el tipo de documento deseado y haga clic en **Más configuraciones**.
-3. En la sección **Orden de compra**, active la opción **Calcular precio unitario de OC**.
+1.  Navegue a **Configuración** -> **Configuración global** -> **Tipos de documento**.
+
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
+2.  Seleccione el tipo de documento deseado y haga clic en **Más configuraciones**.
+
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+3.  En la sección **Orden de compra**, active la opción **Calcular precio unitario de OC**.
+
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
 
 ## Cómo se calcula el precio
 
@@ -18,11 +24,11 @@ Una vez activada la configuración, el precio unitario de una línea de orden de
 
 donde el **importe de línea** se elige así:
 
-| La línea de orden de compra contiene                                                        | Importe de línea usado                          |
-| ------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| un **importe neto** (`extended_amount`) que es mayor que 0 y no supera el total de la línea | el importe neto                                 |
-| no hay importe neto, o el importe neto supera el total de la línea                          | el **total** de la línea (`total_amount`)       |
-| no hay importe positivo, o no hay cantidad positiva                                         | no se calcula nada, el precio de OC se mantiene |
+| La línea de orden de compra contiene                                                           | Importe de línea usado                 |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------ |
+| un **importe neto** (`extended_amount`) que es mayor que 0 y no supera el total de la línea    | el importe neto                       |
+| no hay importe neto, o el importe neto supera el total de la línea                             | el **total** de la línea (`total_amount`) |
+| no hay importe positivo, o no hay cantidad positiva                                           | no se calcula nada, el precio de OC se mantiene |
 
 Por qué el importe neto viene primero: las fuentes ERP (Infor BODs) envían el importe neto de la línea como `extended_amount` y llevan **impuestos y cargos adicionales** en `total_amount`. Dividir un total con impuestos por la cantidad da un precio unitario bruto, y cada factura que se valora neta entonces aparece como _precio unitario subestimado_ aunque sea correcto. Ejemplo de una línea real de orden de compra: cantidad 9, importe neto 879.84, total 954.63 (8.5 % de impuesto) — el precio basado en neto es 97.76 y coincide con la factura; el precio basado en total sería 106.07.
 
@@ -40,5 +46,5 @@ En este caso, el precio unitario (sin el descuento) se extrae del documento, mie
 
 ## Configuraciones relacionadas
 
-* [Reglas de conciliación de órdenes de compra](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) — las reglas comparan el precio unitario **efectivo**, que es este precio calculado cuando la configuración está activada.
+* [Reglas de conciliación de órdenes de compra](purchase-order-matching-rules.md) — las reglas comparan el precio unitario **efectivo**, que es este precio calculado cuando la configuración está activada.
 * [Configuración de tolerancia de órdenes de compra](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — cuánto puede desviarse el precio de la factura del precio calculado.

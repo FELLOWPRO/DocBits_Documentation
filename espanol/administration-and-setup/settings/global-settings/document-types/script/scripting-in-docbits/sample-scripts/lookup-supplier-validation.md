@@ -1,4 +1,4 @@
-# Validación de Proveedor por Lookup
+# Validacion de Proveedor por Lookup
 
 ## Que hace este script?
 
@@ -44,7 +44,7 @@ if supplier_id:
 
 ## Funciones Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer valor del campo
-* [get\_lookup\_records()](../functions/business-logic-functions.md#get_lookup_records) — Consultar datos maestros
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Escribir valor del campo
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Mostrar error de validacion
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer valor del campo
+- [get\_lookup\_records()](../business-logic-functions.md#get\_lookup\_records) — Consultar datos maestros
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Escribir valor del campo
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Mostrar error de validacion

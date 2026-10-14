@@ -12,9 +12,9 @@ Un escenario de prueba captura un flujo de trabajo, una entrada de ejemplo y el 
 
 ## Trabajar con escenarios
 
-* **Add Test Scenario** — crea un nuevo escenario a partir de un flujo de trabajo y un documento de ejemplo.
-* **Run All Tests** — ejecuta todos los escenarios a la vez y comprueba de un vistazo qué flujos de trabajo siguen aprobando.
-* **View Details** — abre un escenario para inspeccionar su resultado.
+- **Add Test Scenario** — crea un nuevo escenario a partir de un flujo de trabajo y un documento de ejemplo.
+- **Run All Tests** — ejecuta todos los escenarios a la vez y comprueba de un vistazo qué flujos de trabajo siguen aprobando.
+- **View Details** — abre un escenario para inspeccionar su resultado.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Detalles del escenario de prueba del flujo de trabajo con estado, tiempo de ejecución y datos"><figcaption><p>Detalles del escenario: nombre, estado, tiempo de ejecución y los datos reales frente a los extraídos que produjo la ejecución.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ La vista de detalles muestra el nombre del escenario y su **estado**, el **nombr
 
 Son dos cosas diferentes:
 
-* **Test Manager** (esta página) — escenarios _guardados y repetibles_ con resultados esperados, ejecutados en conjunto con **Run All Tests**. Úsalo para pruebas de regresión tras realizar cambios.
-* **Pruebas en el editor** — los controles integrados **Validate** y **Test** dentro del editor de flujos de trabajo Avanzados, para comprobaciones rápidas mientras construyes. Consulta [Validación y pruebas](advanced-workflow-builder/validation-and-testing.md).
+- **Test Manager** (esta página) — escenarios *guardados y repetibles* con resultados esperados, ejecutados en conjunto con **Run All Tests**. Úsalo para pruebas de regresión tras realizar cambios.
+- **Pruebas en el editor** — los controles integrados **Validate** y **Test** dentro del editor de flujos de trabajo Avanzados, para comprobaciones rápidas mientras construyes. Consulta [Validación y pruebas](advanced-workflow/validation-and-testing.md).

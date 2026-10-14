@@ -1,4 +1,4 @@
-# Tarea por Monto Elevado
+# Tarea por Monto Elevado de Factura
 
 ## Que hace este script?
 
@@ -43,6 +43,6 @@ except ValueError:
 
 ## Funciones Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer valor del campo
-* [get\_group\_by\_name()](../functions/business-logic-functions.md#get_group_by_id--get_group_by_name) — Buscar grupo por nombre
-* [create\_document\_task()](../functions/business-logic-functions.md#create_document_task) — Crear tarea de aprobacion
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer valor del campo
+- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Buscar grupo por nombre
+- [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Crear tarea de aprobacion

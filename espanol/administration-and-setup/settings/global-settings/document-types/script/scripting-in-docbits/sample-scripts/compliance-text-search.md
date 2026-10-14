@@ -1,4 +1,4 @@
-# Búsqueda de Texto de Cumplimiento
+# Búsqueda de Texto de Cumplimiento (Reverse Charge)
 
 {% hint style="info" %}
 **Disponible desde la versión 11.48.0** — Requiere licencia `OPENSEARCH_ENABLED`.
@@ -41,5 +41,5 @@ if rc_fuzzy:
 
 ## Funciones Utilizadas
 
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search)
-* [set\_field\_value()](../functions/field-functions.md#set_field_value)
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search)
+- [set\_field\_value()](../field-functions.md#set\_field\_value)

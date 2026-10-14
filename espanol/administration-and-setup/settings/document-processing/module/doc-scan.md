@@ -2,23 +2,23 @@
 description: Doc Scan offers very easy Document creation via your local Scanner.
 ---
 
-# Escaneo de Documentos
+# Doc Scan
 
 ### Download Scanner Software
 
 Click Scan Document on the DocBits Dashboard
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
 As your scanner is not installed yet, you’ll get the following message
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
 Depending on which operating system you use, press the appropriate button to download.
 
 Open the installation file and you will see the following
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
 Click on `Continue`, accept the Software License Agreement with `Agree` and continue to install the software.
 
@@ -26,23 +26,23 @@ Installing this software requires 33,6 MB of space. You can change the install l
 
 As soon as the following screen is displayed you’re almost done.
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 Open web browser to test if the app works by entering: https://local.polydocs.io:12500/ If you see this message on the screen, you must first configure some settings in your FritzBox network settings if you are using one.
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
 
 When you see this screen you are ready to click on DocBits.
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
 
 You will be redirected to the DocBits login page where you can enter your credentials to access your dashboard.
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
 
 All you have to do now is activate Doc Scan in the settings under Modules.
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
 
 ### FritzBox network settings
 
@@ -50,7 +50,8 @@ If you get the following error after installing and calling up the url https://l
 You may see one of the following error messages:“DNS timed out”“DNS request timed out”\
 \*Caused\*\
 For security reasons, the FRITZ!Box suppresses DNS responses that refer to IP addresses in your own home network. This is a security feature of the FRITZ!Box to protect against so-called DNS rebinding attacks.\
-If you use a FritzBox, you must first make the following settings in the FritzBox menu:\\
+If you use a FritzBox, you must first make the following settings in the FritzBox menu:\
+
 
 1. In the FRITZ!Box user interface, click on \`Heimnetz\`.
 2. \`Heimnetz\` Click in the menu \`Netzwerk\`.
@@ -73,15 +74,21 @@ Copy
 
 **Legend:**
 
+&#x20;
+
 * Yes – device works perfectly
 * No – protocol not supported by device
 * ? – device works with sane-airscan, but protocol is not reported by user
 * Space – author has no information on this mode/device combination
 
+&#x20;
+
 **Definitions:**
 
 * eSCL stands for Airscan is a SANE WebScan frontend that supports Apple’s AirScan protocol. The scanners are automatically detected and published via mDNS.
 * WSD stands for “Web Services on Devices” and is a network communication protocol used for printer discovery and management over a local area network. In WSD mode, printers can be automatically discovered and added to a computer system without requiring manual configuration or installing additional printer drivers. It enables easy setup and printing to compatible printers over a network. WSD mode is commonly used in Windows operating systems to discover and connect printers on the network.
+
+
 
 | Device                            | eSCL mode | WSD mode |
 | --------------------------------- | --------- | -------- |

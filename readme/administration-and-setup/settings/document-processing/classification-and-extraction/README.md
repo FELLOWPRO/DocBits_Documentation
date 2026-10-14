@@ -18,7 +18,7 @@ This page provides a detailed explanation of all available settings.
 To access the **Classification and Extraction** settings, go to:\
 **Settings → Document Processing → Classification and Extraction**
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc864-settings-nav-pl-20261012.png" alt="Nawigacja Ustawień z wyróżnionymi pozycjami Przetwarzanie dokumentów oraz Klasyfikacja i ekstrakcja"><figcaption><p>Otwórz <strong>Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja</strong>.</p></figcaption></figure>
 
 ## Document Splitting
 
@@ -72,9 +72,16 @@ Więcej o szkoleniu [tutaj](../../../setup/document-training/training-line-field
 
 **Ekstrakcja tabeli AI (AI Table Extraction):** Wykorzystuje AI do wyodrębniania tabeli dowolnego dostawcy bez szkolenia. Jeśli wyniki dla jednego dostawcy nie są wystarczająco dokładne, wytrenuj tabelę tego dostawcy; zapisane reguły mają wtedy pierwszeństwo przed AI dla tego dostawcy.
 
-**Użyj ekstrakcji tabeli Vision (AI) (Use Table Extraction Vision (AI)):** AI odczytuje obraz strony zamiast warstwy tekstowej. Pomaga przy dokumentach skanowanych i tabelach bez wyraźnej struktury tekstowej; działa wolniej.
+**Użyj wizji ekstrakcji tabeli (AI):** AI odczytuje obraz strony zamiast warstwy tekstowej. Pomaga przy dokumentach skanowanych i tabelach bez wyraźnej struktury tekstowej; działa wolniej. Rozwijana lista obok przełącznika określa, jak intensywnie używany jest obraz strony:
 
-**Użyj ekstrakcji strukturalnej (AI) (Use Structured Extraction (AI)):** AI zwraca tabelę w stałej strukturze, która mapuje się bezpośrednio na skonfigurowane kolumny tabeli. Zalecane, gdy nagłówki kolumn na dokumentach mocno się różnią.
+* **Wyłączone (tylko tekst)** – Używana jest tylko warstwa tekstowa. To ustawienie domyślne.
+* **Tylko obrazy** – Odczytywany jest wyłącznie obraz strony.
+* **Hybrydowy (tekst i obrazy)** – Warstwa tekstowa i obraz strony są łączone w tym samym żądaniu.
+* **Auto (decydowane dla każdego dokumentu)** – DocBits decyduje dla każdego dokumentu osobno, czy warstwa tekstowa wystarcza.
+
+Tryb jest zapisywany pod kluczem preferencji `TABLE_EXTRACTION_VISION_MODE`; starszy przełącznik `TABLE_EXTRACTION_USE_VISION` pozostaje i oznacza w praktyce *Tylko obrazy*.
+
+**Użyj ekstrakcji strukturalnej (AI):** AI zwraca tabelę w stałej strukturze, która mapuje się bezpośrednio na skonfigurowane kolumny tabeli. Zalecane, gdy nagłówki kolumn na dokumentach mocno się różnią. Kliknięcie tego ustawienia otwiera podgląd tego, o jakie pola i kolumny AI zostanie dokładnie poproszona: pola nagłówka oraz kolumny wierszy są wymienione wraz z ich źródłem (żądane albo wyłączone pola standardowe) wraz z oczekiwanym trybem wyjścia (na przykład *strict* – bez dodatkowych kolumn). Pola skonfigurowane dla typu dokumentu, ale wyłączone, nie są żądane od AI.
 
 **Ekstrakcja tabeli dla elementu kosztowego (Table Extraction for Costing Element):** Po włączeniu DocBits może wyodrębniać elementy kosztowe z tabel na poziomie pozycji i odpowiednio je klasyfikować.\
 Szczegółowe wyjaśnienie [tutaj](table-extraction-for-costing-element.md).
@@ -84,11 +91,11 @@ Więcej informacji o tym ustawieniu [tutaj](auto-extract-tax-code.md).
 
 **Zapisywanie reguł ekstrakcji (tylko administrator) (Save extraction rules (Admin only)):** Tylko administratorzy mogą kliknąć *Save Rules* w szkoleniu tabeli. Włącz tę opcję, gdy użytkownicy zapisują reguły, które psują ekstrakcję dostawcy.
 
-**Model AI (AI Model):** Wybiera poziom AI używany do ekstrakcji tabeli: **Fast** (domyślny), **Full** (najwyższa dokładność, wolniejszy) lub **Nexus** (opcjonalny trzeci poziom). Tabela pod selektorem pokazuje:
+**Model sztucznej inteligencji:** Wybiera poziom AI używany do ekstrakcji tabeli. Dostępnych jest sześć opcji: **Full** (najwyższa dokładność, najwolniejsza, 2 tokeny na dokument), **Fast** (domyślna; 1 token na dokument), **Nexus** i **Nexus Flash** (alternatywna rodzina modeli, opcjonalnie) oraz **Auto** i **Auto Nexus**, w których DocBits decyduje dla każdego dokumentu, jak silny model jest potrzebny. Tabela pod selektorem pokazuje:
 
 * Którzy **dostawcy** używają którego modelu AI
-* Czy używają E-Text
-* Opcje usunięcia wpisu lub zresetowania danych szkoleniowych
+* Czy używają ekstrakcji strukturalnej (AI) i E-Textu
+* Opcje usunięcia wpisu i zresetowania w ten sposób dostawcy do wartości domyślnej
 
 To ustawienie jest szczegółowo opisane [tutaj](ai-model.md).
 
@@ -110,12 +117,13 @@ Każdy przełącznik w tej sekcji jest zapisywany jako preferencja organizacji. 
 |---|---|---|
 | Table Extraction | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | AI Table extraction | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Use Table Extraction Vision (AI) | `TABLE_EXTRACTION_VISION_MODE` | `off` (domyślnie), `vision`, `hybrid`, `auto` |
+| Use Table Extraction Vision (AI) – starszy przełącznik | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; oznacza w praktyce `vision` |
 | Use Structured Extraction (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Table extraction for costing element | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Auto extract tax code | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Save extraction rules (Admin only) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| AI Model | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Model sztucznej inteligencji | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Wersja ekstrakcji tabeli (okno potwierdzenia) | `TBL_EXT_VERSION` | ciąg wersji |
 | Ustawienia OCR → Use AI data for tables if available | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | Ustawienia OCR → Use E-Text if available | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
@@ -124,6 +132,7 @@ Uwagi:
 
 * Preferencje logiczne są zapisywane jako ciągi `true` / `false`; klucz, który nigdy nie został ustawiony, liczy się jako `false`. Jeśli wyślesz `1` lub `0`, DocBits zapisze `true` / `false`.
 * Nieustawiony `AI_MODEL` oznacza **Fast**.
+* Nieustawiony `TABLE_EXTRACTION_VISION_MODE` jest wyznaczany ze starszego przełącznika `TABLE_EXTRACTION_USE_VISION`: `true` daje `vision`, każda inna wartość daje `off`.
 * Zmiana klucza obowiązuje dla dokumentów przetwarzanych później. Uruchom dokument ponownie, aby wyodrębnić go ponownie z nowym ustawieniem.
 * Wybory dla poszczególnych dostawców (E-Text, model AI, zapisane reguły) nie są preferencjami organizacji; ustawia się je na ekranie walidacji w *Więcej ustawień* dla dokumentu tego dostawcy.
 

@@ -127,6 +127,7 @@
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)
     * [Company Information](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Company Preferences](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
+      * [Settings Assistant](administration-and-setup/settings/global-settings/company-information/settings-assistant.md)
       * [Defining App Color in Company Settings](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)
       * [Two-Factor Authentication (Admin)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)
     * [Groups, Users and Permissions](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)
@@ -708,6 +709,7 @@
     * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Report Page](administration-and-setup/report-page.md)
 * [Analytics Dashboard](administration-and-setup/analytics-dashboard.md)
+  * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
 
 ## Infor Integration and Configuration
 

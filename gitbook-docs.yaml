@@ -9,12 +9,14 @@ site:
       default: true
       content:
         directory: ./docbits
+        language: en
     - type: space
       key: space-2
       title: 🇩🇪 Deutsch
       path: deutsch
       content:
         directory: ./deutsch
+        language: de
     - type: space
       key: space-3
       title: 🇪🇸 Español
@@ -34,12 +36,14 @@ site:
       path: italian
       content:
         directory: ./italian
+        language: it
     - type: space
       key: space-6
       title: 🇵🇹 Português
       path: portuguese
       content:
         directory: ./portuguese
+        language: pt
     - type: space
       key: space-7
       title: 🇵🇱 Polski

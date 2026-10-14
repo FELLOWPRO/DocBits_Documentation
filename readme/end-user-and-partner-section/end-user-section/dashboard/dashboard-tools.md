@@ -1,133 +1,58 @@
 # Dashboard-hulpmiddelen
 
-Rechts van de zoekbalk vindt u enkele dashboard-hulpmiddelen.
+Het dashboard is uw lijst met documenten. Open een document door de naam te selecteren. De bedieningselementen boven de tabel helpen u documenten te vinden, het beeld aan te passen en nieuwe bestanden te uploaden. Sommige bedieningselementen hangen af van de instellingen van uw organisatie en van uw rechten, dus uw dashboard kan minder knoppen tonen dan het voorbeeld hieronder.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_1.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-main-nl-20261010.png" alt="Huidig DocBits-dashboard met datumbereik, zoekbalk, werkbalk, opgeslagen dashboard, documententabel en knop Uploaden"><figcaption><p>Het dashboard in een testorganisatie in het Nederlands.</p></figcaption></figure>
 
-## Tabel vernieuwen
+## Documenten vinden
 
-Klik op deze knop om het dashboard te vernieuwen en de meest actuele gegevens en statussen te laden.
+1. Kies links een datumbereik: **30D**, **90D**, **180D**, **365D**, **Alle** of **Aangepast**. Dit beperkt de getoonde documenten wanneer de datumbediening beschikbaar is.
+2. Typ een documentnaam of -ID in de zoekbalk. Zoeken ondersteunt ook veldspecifieke query's. Selecteer de **?** naast de zoekbalk om voorbeelden en de beschikbare operatoren te zien.
+3. Selecteer het pictogram met de schuifregelaars in de zoekbalk om de lijst te beperken op **Status**, **Toegewezen Aan** of **Opnieuw Opstarten Vereist**, en selecteer daarna **Toepassen**. Gebruik **Filters wissen** om deze keuzes te verwijderen.
+4. Selecteer een kolomkop om de tabel te sorteren. Gebruik de pagina-bediening onderaan om tussen resultaatpagina's te wisselen of **Documenten per pagina:** te wijzigen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_2.png)
+Het pictogram aan het begin van het zoekveld opent een keuzelijst met beschikbare velden en toont welke zoekfuncties uw organisatie heeft. Het **code**-pictogram wisselt tussen de normale zoekweergave en een ruwe queryweergave; gebruik de normale weergave tenzij u de querysyntaxis al kent. Het vergrootglaspictogram opent **Zoeken in de documentinhoud**: **Automatisch** zoekt eerst in zichtbare velden, **Voeg altijd de documentinhoud toe.** neemt ook tekst in bestanden op, en **Alleen zichtbare kolommen** beperkt treffers tot de velden in de tabel. Zoeken in bestanden vereist dat de betreffende zoekfunctie voor uw organisatie is ingeschakeld.
 
-## Geavanceerde instellingen
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-filters-nl-20261010.png" alt="Zoekfilterpaneel van het dashboard met Status, Toegewezen Aan, Opnieuw Opstarten Vereist, Filters wissen en Toepassen"><figcaption><p>De filters in de zoekbalk.</p></figcaption></figure>
 
-Klik op het tandwielpictogram om het menu Geavanceerde instellingen te openen.
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-content-mode-nl-20261010.png" alt="Menu Zoeken in de documentinhoud met Automatisch, Voeg altijd de documentinhoud toe. en Alleen zichtbare kolommen"><figcaption><p>Kies waarop een eenvoudige zoekopdracht mag overeenkomen.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_8.png)
+Voor een begeleide zoekopdracht, zie [Snel zoeken](quick-search.md) en [Documenten filteren](filtering-documents.md). Het **?**-paneel legt de geavanceerde zoeksyntaxis uit; die syntaxis heeft u voor een eenvoudige zoekopdracht op naam niet nodig.
 
-In het menu Geavanceerde instellingen zijn de volgende opties beschikbaar:
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-search-help-nl-20261010.png" alt="Help-venster Zoekvelden en syntaxis van het dashboard met zoekvoorbeelden en operatoren"><figcaption><p>Zoekhulp in het dashboard.</p></figcaption></figure>
 
-### Meer instellingen
+## Vernieuwen en het beeld aanpassen
 
-Gebruik deze knop om toegang te krijgen tot de Beheerinstellingen voor het dashboard. Volledige documentatie voor deze instellingen vindt u [hier](../../../administration-and-setup/settings/global-settings/dashboard/).
+- Selecteer de cirkelpijl boven de tabel om de documentenlijst opnieuw te laden. Hiermee wordt de documentverwerking niet opnieuw gestart.
+- Selecteer het tandwiel voor de geavanceerde dashboardinstellingen. Van daaruit opent u de toetsenbordsneltoetsen, het importlogboek van e-mails of beheert u de zichtbare tabelkolommen. Beheerders zien mogelijk ook een link naar de dashboardinstellingen. Zie [Toetsenbord Sneltoetsen](keyboard-shortcuts.md) en [Wijzig Document Kolommen](change-document-columns.md) voor de volgende stappen.
+- Selecteer het staafdiagram om **Analyse** boven de tabel te tonen. Kies een categoriekaart, zoals **In afwachting van gebruikersinvoer**, om de documenten te filteren. Selecteer het diagram opnieuw om de kaarten te verbergen.
+- Selecteer het merkteken van het opgeslagen dashboard onder de zoekbalk om uw eigen dashboard te wisselen of te beheren. Zie [Persoonlijke Dashboards](personal-dashboards.md).
+- Selecteer **+** naast het tabblad **Alle** om een tabblad voor een documenttype toe te voegen. In de testorganisatie is **Factuur** beschikbaar. Selecteer een tabblad om dat type document te tonen.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_3.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-advanced-nl-20261010.png" alt="Menu met geavanceerde instellingen, geopend vanuit het tandwiepictogram van het dashboard"><figcaption><p>Open het tandwielmenu voor dashboardopties.</p></figcaption></figure>
 
-### Sneltoetsen
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-analytics-nl-20261010.png" alt="Analysekaarten van het dashboard voor Alle documenten, In uitvoering, In afwachting van gebruikersinvoer, In afwachting van goedkeuring, Geëxporteerd en Fout"><figcaption><p>De Analysekaarten boven de documentenlijst.</p></figcaption></figure>
 
-Gebruik deze knop om alle sneltoetsen voor het dashboard weer te geven. Gedetailleerde uitleg voor elke sneltoets vindt u [hier](keyboard-shortcuts.md).
+## Documenten uploaden
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_9.png)
+Selecteer **Uploaden**. Sleep bestanden naar de **Documentuploader** of selecteer **Klik om te uploaden** om ze van uw computer te kiezen. Als u het documenttype kent, schakelt u **Classify as** in en selecteert u het type; laat het anders uit voor automatische classificatie. Selecteer **Uploaden** om de bestanden te verzenden. Zie [Overzicht van Geüploade Documenten](overview-of-uploaded-documents.md) voor wat er daarna gebeurt.
 
-### Importlogboek
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-upload-nl-20261010.png" alt="Documentuploader-dialoog met sleepgebied, Klik om te uploaden, Classify as, Annuleren en Uploaden"><figcaption><p>De huidige uploadvenster.</p></figcaption></figure>
 
-Gebruik deze knop om een tabel te openen met alle recent via e-mail geïmporteerde documenten, inclusief relevante informatie per document.
+## Werken met meerdere documenten
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_10.png)
+Selecteer de selectievakjes naast de documenten waarmee u iets wilt doen, en open het menu met de drie puntjes in de kop van de tabel. Afhankelijk van de documenten en uw rechten biedt het menu **Samenvoegen**, **Toewijzen aan**, **Opnieuw starten**, **Export opnieuw starten** en **Verwijderen**. Controleer de geselecteerde rijen voordat u een actie kiest; **Verwijderen** verwijdert documenten. Volg voor het combineren van bestanden [Documenten Samenvoegen](document-merging.md).
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_15.png)
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-bulk-nl-20261010.png" alt="Menu met acties voor meerdere documenten met Samenvoegen, Toewijzen aan, Opnieuw starten, Export opnieuw starten en Verwijderen"><figcaption><p>Acties voor meerdere documenten naast de selectievakjes van de tabel.</p></figcaption></figure>
 
-U kunt de logboeken filteren op onderwerp of afzender, kolommen oplopend of aflopend sorteren door op de kolomkoppen te klikken en ze rangschikken met slepen-en-neerzetten.
+Open voor één document het menu met de drie puntjes aan het einde van de rij. Het biedt acties zoals **Valideren**, **Toewijzen aan**, **Documentstroom**, **Download**, **Opnieuw starten**, **Documentlogboeken** en **Verwijderen**, afhankelijk van het document en uw rechten. **Valideren** opent het document voor beoordeling; **Documentstroom** toont de verwerkingsgeschiedenis; **Opnieuw starten** begint de verwerking opnieuw; **Verwijderen** verwijdert het document. Zie [Documentflow](document-flow.md) en [Documentstatus](document-status.md) voordat u een document wijzigt dat wordt verwerkt.
 
-### Tabelkolommen instellen voor organisatie
+<figure><img src="../../../.gitbook/assets/dbdc201-dashboard-row-actions-nl-20261010.png" alt="Actiemenu voor één document met Valideren, Toewijzen aan, Documentstroom, Download, Opnieuw starten, Documentlogboeken en Verwijderen"><figcaption><p>Acties voor één document.</p></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_11.png)
+## Andere knoppen die uw organisatie mogelijk toont
 
-Klik op deze knop om een menu te openen waarmee u de zichtbaarheid van dashboardkolommen kunt beheren. Selecteer kolomnamen en gebruik de pijlen om ze toe te voegen aan of te verwijderen uit de dashboardweergave. Klik op **Klaar** om uw wijzigingen op te slaan.
+- De knop met de envelop start een e-mailimport met de bestaande e-mailimportconfiguratie van de organisatie. Vraag een beheerder als u niet zeker weet of uw mailbox is geconfigureerd; door deze te selecteren start een import.
+- **Document scannen** verschijnt alleen wanneer document scannen is ingeschakeld en er een scanner beschikbaar is.
+- **Exporteer deze tabel** verschijnt alleen wanneer exporteren van het dashboard is ingeschakeld. Het menu biedt CSV- en Excel-bestanden. De export gebruikt de documenten die momenteel in de tabel worden weergegeven.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashborad_tools_22.png)
-
-U kunt de kolomvolgorde instellen door op de puntjes naast een kolomnaam te klikken en deze naar de gewenste positie te slepen.
-
-#### Velden uit een documenttype als kolommen aan het dashboard toevoegen
-
-U hebt ook de mogelijkheid om extra kolommen toe te voegen vanuit specifieke velden van specifieke documenttypes om uw dashboardweergave aan te passen. Klik hiervoor op **Veld toevoegen vanuit documenttype**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashborad_tools_21.png)
-
-Kies een documenttype om te zien welke velden beschikbaar zijn voor het geselecteerde type. Voor elk documenttype zijn er verschillende velden die u kunt toevoegen. U kunt naar een specifiek veld zoeken via de zoekbalk bovenaan.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_19.png)
-
-Selecteer de velden die u als kolommen wilt weergeven en klik vervolgens op **Toevoegen aan zichtbare kolommen**. De geselecteerde velden verschijnen als kolommen op het dashboard en tonen hun bijbehorende waarden.
-
-## Document scannen
-
-Gebruik deze knop om direct een document te scannen.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_4.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_17.png)
-
-Om deze functie te gebruiken, moet er een scanner op uw systeem zijn aangesloten. Als er een scanner beschikbaar is, kunt u die rechts selecteren, uw document een naam geven en op **Scannen** klikken. Optioneel kunt u rechts de scaninstellingen aanpassen voordat u het proces start.
-
-<mark style="color:red;">**Opmerking**</mark>: Deze functie moet worden geactiveerd onder **Instellingen -> Documentverwerking -> Module -> Documenttype -> Document scannen**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_27.png)
-
-## Analyse
-
-Door op deze knop te klikken verschijnt er een nieuw gebied met het huidige aantal documenten per categorie.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_14.png)
-
-Klik op een categorie om de documenten op die specifieke categorie te filteren.
-
-## E-mail importeren starten
-
-Door op deze knop te klikken wordt uw e-mailinbox gecontroleerd op basis van de configuratie voor e-mailimport en worden nieuwe documenten geïmporteerd.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_6.png)
-
-## Exporteer deze tabel
-
-Gebruik deze knop om alle documenten te exporteren die momenteel op het dashboard worden weergegeven, op basis van het aantal documenten dat per pagina wordt getoond.\
-U kunt de tabel exporteren als een **.csv**- of **.xlsx**-bestand.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_settings_3.png)
-
-<mark style="color:red;">**Opmerking**</mark>: Deze functie moet worden geactiveerd onder **Instellingen -> Algemene instellingen -> Dashboard -> Algemeen -> Dashboardgegevens exporteren**
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_26.png)
-
-## Uploaden
-
-Klik op deze knop om handmatig een of meer bestanden te uploaden.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_7.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_16.png)
-
-U kunt bestanden naar het pop-upvenster slepen en neerzetten of klikken op **Documenten uploaden** om ze te selecteren via uw bestandsverkenner.
-
-Als je liever handmatig het documenttype opgeeft in plaats van **DocBits** het automatisch te laten classificeren, schakel dan de optie **Classificeren als** in en selecteer het juiste documenttype uit de lijst.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_5.png)
-
-Klik na het selecteren van uw bestanden op **Uploaden** om het uploadproces te starten.
-
-## Debugmodus
-
-U kunt de debugmodus activeren om een extra optie te krijgen.\
-Voeg om de debugmodus te openen eenvoudig aan de URL `?debug=true` toe. Nu zou u een extra optie moeten hebben
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_24.png)
-
-### Laadtijden weergeven
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_20.png)
-
-Door op deze knop te klikken, wordt een pop-upvenster geopend met de laadtijden per service, met onderaan de totale laadtijd.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/dashboard_tools_23.png)
+De beschikbare knoppen kunnen per schermbreedte verschillen. Open op een smal scherm **Meer** om enkele acties te vinden die op een desktopscherm apart verschijnen.

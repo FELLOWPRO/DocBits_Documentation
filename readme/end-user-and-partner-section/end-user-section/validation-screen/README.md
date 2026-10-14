@@ -46,21 +46,11 @@ Zobacz tutaj dodawanie[ skryptu w DocBits](../../../administration-and-setup/set
 
 <figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Pola wymagane"><figcaption></figcaption></figure>
 
-Istnieją pola, które są wymagane do dalszej edycji; można je edytować w ustawieniach.
+Pola wymagające uwagi mają kolorową obwódkę lub ikonę informacji. W poniższym przykładzie pole **Numer faktury** ma czerwoną obwódkę i ikonę ostrzeżenia. Wartość jest widoczna na fakturze po prawej stronie, ale DocBits nie wyodrębnił jej z dokumentu. Zaznacz numer na dokumencie albo popraw pole, a następnie zapisz dokument.
 
-Użyj podpowiedzi, aby sprawdzić, czy:
+Najedź kursorem na ikonę informacji obok pola lub wybierz ją, aby przeczytać konkretny powód. W zależności od pola komunikat może wskazywać brakującą ekstrakcję, wymaganą wartość, niską pewność lub niezgodność walidacji. Jeśli ostrzeżenie dotyczy kwot, porównaj pola kwot z fakturą i użyj strony [Automatyczne kontrole na ekranie walidacji](automatic-checks-on-the-validation-screen.md), aby sprawdzić odpowiednią kontrolę.
 
-* Jest to pole obowiązkowe (wymagane)
-* Wymagana jest walidacja
-* Niska pewność
-* Niezgodność pełnej kwoty podatku
-
-**Pola wymagane:**
-
-* **Cel:** Identyfikuje obowiązkowe pola w dokumentach, które muszą zostać wypełnione lub poprawione przed dalszym przetwarzaniem.
-* **Przypadek użycia:** Zapewnia dokładne zapisanie niezbędnych danych, utrzymując integralność danych i zgodność z regułami biznesowymi.
-
-<figure><img src="https://lh7-us.googleusercontent.com/3-ZXi-fUcWlM0nUaOAQbY7bynchbIN30JReKRdijyMFvX_GIHrnbcismANdOi6UfYa6GCPvk9wnOixya0E_rBk3V8hQduS-gBZJi4k0Kq8jeN93DxC2w5J-YRqeV9IkVB6oiH8tm0-y7gWJO_8fBplo" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-required-field-pl-2026.png" alt="Ekran walidacji DocBits w języku polskim z czerwonym ostrzeżeniem przy numerze faktury i widocznym tym samym numerem na fakturze syntetycznej"><figcaption><p>Pole wymagające uwagi obok faktury używanej do sprawdzenia jego wartości.</p></figcaption></figure>
 
 ## Wyodrębniona tabela (pozycje)
 

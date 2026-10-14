@@ -12,9 +12,9 @@ Hay dos endpoints y hacen lo mismo. La única diferencia está en cómo entrega 
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
 
-| Endpoint                         | Cuándo usarlo                                                                                                                                                                                                                        |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/import/purchase_order_bod`     | Tiene el BOD como **archivo XML** y quiere subirlo.                                                                                                                                                                                  |
+| Endpoint | Cuándo usarlo |
+| --- | --- |
+| `/import/purchase_order_bod` | Tiene el BOD como **archivo XML** y quiere subirlo. |
 | `/import/purchase_order_bod_xml` | Quiere enviar el **contenido XML** en la petición en lugar de un archivo. El BOD hay que envolverlo en JSON, así que esto encaja con XML corto o con otro sistema que llame a la API — para un BOD completo a mano, suba el archivo. |
 
 Ambos se describen a continuación. Los pasos 1 y 2 son iguales en los dos casos.
@@ -95,13 +95,13 @@ Haga clic en **Try it out** y rellene el formulario del endpoint que haya elegid
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
 
-| Campo                             |                                                                                                                                                                                                                                            |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **file**                          | Obligatorio. Haga clic en **Choose file** y seleccione su archivo XML `SyncPurchaseOrder`.                                                                                                                                                 |
-| **org\_id**                       | Su Org ID — el mismo valor que puso en **X-ORG-ID** en el paso 2. Ponerlo también aquí hace explícito en qué organización escribe la petición. Tiene que ser una organización a la que su API key tenga acceso; cualquier otra se rechaza. |
-| **sub\_org\_id**                  | Solo hace falta si trabaja con suborganizaciones. Si no, déjelo vacío.                                                                                                                                                                     |
-| **custom\_fields\_mapping**       | Opcional. Lee campos de cabecera adicionales del BOD hacia los campos personalizados del pedido. Consulte [Asignaciones de campos personalizados](purchase-order-bod.md#asignaciones-de-campos-personalizados) más abajo.                  |
-| **custom\_line\_fields\_mapping** | Opcional. Lo mismo, para campos adicionales en las líneas del pedido.                                                                                                                                                                      |
+| Campo | |
+| --- | --- |
+| **file** | Obligatorio. Haga clic en **Choose file** y seleccione su archivo XML `SyncPurchaseOrder`. |
+| **org\_id** | Su Org ID — el mismo valor que puso en **X-ORG-ID** en el paso 2. Ponerlo también aquí hace explícito en qué organización escribe la petición. Tiene que ser una organización a la que su API key tenga acceso; cualquier otra se rechaza. |
+| **sub\_org\_id** | Solo hace falta si trabaja con suborganizaciones. Si no, déjelo vacío. |
+| **custom\_fields\_mapping** | Opcional. Lee campos de cabecera adicionales del BOD hacia los campos personalizados del pedido. Consulte [Asignaciones de campos personalizados](#asignaciones-de-campos-personalizados) más abajo. |
+| **custom\_line\_fields\_mapping** | Opcional. Lo mismo, para campos adicionales en las líneas del pedido. |
 
 {% hint style="warning" %}
 **`string` es un valor, no un marcador de posición.** Swagger rellena los campos opcionales con la palabra `string`, y se envía tal cual si la deja ahí — una importación con `org_id` puesto a `string` fallará.
@@ -189,6 +189,8 @@ Si algo no estaba bien en la petición, obtiene `"success": false` junto con un 
 * En DocBits, vaya a **Settings → Document Processing → Lookup Master Data**.
 * Seleccione **BOD Input Data** a la izquierda y abra la pestaña **Purchase Order**.
 * Busque el número de pedido de su BOD.
+
+<!-- SCREENSHOT F: Lookup Master Data with BOD Input Data selected and the Purchase Order tab open -->
 
 Si el pedido aparece en la lista, la importación funcionó y el pedido de compra está disponible para el PO matching.
 

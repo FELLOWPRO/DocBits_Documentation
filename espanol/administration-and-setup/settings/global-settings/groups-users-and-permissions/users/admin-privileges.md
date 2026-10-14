@@ -38,13 +38,13 @@ Un System Admin es especial en tres aspectos:
 
 ### De un vistazo
 
-|                                                   | Admin                    | System Admin                  |
-| ------------------------------------------------- | ------------------------ | ----------------------------- |
-| Acceso completo para gestionar la organización    | Sí                       | Sí                            |
-| Cuántos puede tener                               | Tantos como necesite     | Solo uno                      |
-| Se puede cambiar después de crear el usuario      | Sí, en cualquier momento | No, solo se define al crearlo |
-| Se usa para acciones automáticas en segundo plano | No                       | Sí                            |
-| Siempre tiene derechos de Admin                   | —                        | Sí                            |
+| | Admin | System Admin |
+|---|---|---|
+| Acceso completo para gestionar la organización | Sí | Sí |
+| Cuántos puede tener | Tantos como necesite | Solo uno |
+| Se puede cambiar después de crear el usuario | Sí, en cualquier momento | No, solo se define al crearlo |
+| Se usa para acciones automáticas en segundo plano | No | Sí |
+| Siempre tiene derechos de Admin | — | Sí |
 
 ## Mejores prácticas de seguridad
 

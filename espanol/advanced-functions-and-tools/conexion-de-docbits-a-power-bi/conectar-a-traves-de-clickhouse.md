@@ -3,6 +3,8 @@
 Esta guía te lleva a través de la conexión de **ClickHouse** a **Power BI Desktop** usando el **controlador ODBC**. Cubre la instalación del controlador, la configuración ODBC, la integración con Power BI y la configuración de actualización de datos.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
+{% endembed %}
+
 
 ### 1. Instalar el Controlador ODBC de ClickHouse
 
@@ -71,3 +73,5 @@ Esta guía te lleva a través de la conexión de **ClickHouse** a **Power BI Des
 * Más información [aquí](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
 
 ### 7. Ejemplo de Tableros y Vistas de Datos
+
+![](<../../.gitbook/assets/example_4 (1).avif>) ![](<../../.gitbook/assets/example_3 (1).avif>) ![](<../../.gitbook/assets/example_2 (1).avif>) ![](<../../.gitbook/assets/example_1 (1).avif>)

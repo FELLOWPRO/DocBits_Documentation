@@ -1,0 +1,42 @@
+# Añadir una nueva columna
+
+Añada una columna cuando deba capturarse por línea un valor que las columnas predeterminadas no cubren: un centro de coste, un número de proyecto, un número de artículo interno.
+
+## Antes de empezar
+
+* Decida a qué **tabla** pertenece la columna. La mayoría de los tipos de documento tienen una tabla (por ejemplo, `INVOICE_TABLE`). Si la lista está vacía, haga clic primero en **Create new table**; el cuadro de diálogo solo pide un nombre de tabla.
+* Decida el **tipo**: `AMOUNT` para dinero, `NUMBER` para cantidades, `DATE`, `BOOLEAN` para sí/no, `CURRENCY` para un código de moneda ISO y `STRING` para todo lo demás. El tipo no se puede cambiar después de guardar.
+* Compruebe si ya existe una **columna predeterminada** con el mismo significado pero oculta. Las columnas ocultas aparecen en la lista con el indicador *Hidden* activado; muéstrela en lugar de crear un duplicado.
+
+## Pasos
+
+1. Abra **Settings → Global Settings → Document Types → Table Columns**.
+2. Haga clic en **Add new table column**.
+
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Cuadro de diálogo Add new table column con Title, Is column required, Select column type y Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
+
+3. Rellene el cuadro de diálogo:
+
+| Campo | Qué introducir |
+|---|---|
+| **Title** | Etiqueta que ve el usuario en la pantalla de validación, por ejemplo `Cost Centre`. Solo letras y números. DocBits deriva de ella el *Column name* técnico (`COST_CENTRE`). |
+| **Is column required?** | Márquela cuando el documento no deba aprobarse mientras la columna esté vacía en alguna fila. |
+| **Select column type** | Consulte la lista de tipos anterior. |
+| **Select Table** | La tabla que recibe la columna. |
+
+4. Haga clic en **Proceed**. La columna aparece en la lista con *Read Only*, *Hidden* y *Use AI* sin marcar. Cambie esos indicadores en la lista si es necesario; consulte [Editar y eliminar columnas](editing-and-deleting-columns.md).
+
+## Después de añadirla
+
+* La columna está **vacía en los documentos existentes**. Se rellena en los documentos cargados o reiniciados después del cambio.
+* En el caso de proveedores con **reglas entrenadas**, abra uno de sus documentos en el entrenamiento de tablas y asigne la nueva columna; de lo contrario, la columna permanece vacía para ese proveedor. Consulte [Defining tables and columns](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* Con la **extracción de tablas con IA**, la IA rellena la columna si el valor es reconocible en el documento. Marque la columna con *Use AI* si el proveedor tiene reglas entrenadas pero esta columna debe seguir procediendo de la IA.
+* Añada la columna al **mapeo de exportación** si el ERP debe recibirla; consulte [Export](../../../document-processing/export.md).
+
+## Mensajes
+
+| Mensaje | Significado |
+|---|---|
+| *Column name already exists* | Ya hay una columna con este nombre técnico en la tabla. Elija otro título. |
+| *Column name already exists – Please activate it in Table Column settings* | Una columna predeterminada oculta tiene este nombre. Desmarque su indicador *Hidden* en lugar de crear una nueva. |
+| *No table exists. Please create table before creating columns.* | El tipo de documento aún no tiene tabla: haga clic primero en **Create new table**. |

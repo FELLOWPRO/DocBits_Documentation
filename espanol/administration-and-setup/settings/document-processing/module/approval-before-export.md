@@ -1,2 +1,1 @@
-# Aprobación Antes de Exportar
-
+# Aprobación Antes de la Exportación

@@ -1,4 +1,4 @@
-# Detección de Código Fiscal
+# Deteccion de Codigo Fiscal
 
 ## Que hace este script?
 
@@ -52,6 +52,6 @@ elif net > 0:
 
 ## Funciones Utilizadas
 
-* [get\_document\_content()](../functions/business-logic-functions.md#get_document_content) — Leer texto completo OCR
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leer valores de campos
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Establecer codigo fiscal
+- [get\_document\_content()](../business-logic-functions.md#get\_document\_content) — Leer texto completo OCR
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leer valores de campos
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Establecer codigo fiscal

@@ -6,11 +6,11 @@ DocFlow expone un servidor **Model Context Protocol (MCP)** que permite a los as
 
 Con DocFlow MCP puedes:
 
-* **Listar, crear, actualizar y eliminar** flujos de trabajo avanzados
-* **Probar flujos de trabajo** con documentos reales o simulados
-* **Crear tarjetas personalizadas** usando el Partner Card SDK
-* **Validar, probar, aprobar y gestionar** envíos de tarjetas de socios
-* **Importar tarjetas** directamente desde repositorios de GitHub
+- **Listar, crear, actualizar y eliminar** flujos de trabajo avanzados
+- **Probar flujos de trabajo** con documentos reales o simulados
+- **Crear tarjetas personalizadas** usando el Partner Card SDK
+- **Validar, probar, aprobar y gestionar** envíos de tarjetas de socios
+- **Importar tarjetas** directamente desde repositorios de GitHub
 
 ## Resumen de herramientas
 
@@ -18,39 +18,39 @@ DocFlow MCP proporciona **18 herramientas** en cuatro categorías:
 
 ### Gestión de flujos de trabajo
 
-| Herramienta       | Descripción                                                  |
-| ----------------- | ------------------------------------------------------------ |
-| `list_workflows`  | Listar todos los flujos de trabajo de la organización actual |
-| `get_workflow`    | Obtener detalles de un flujo de trabajo específico por ID    |
-| `delete_workflow` | Eliminar un flujo de trabajo por ID                          |
+| Herramienta | Descripción |
+|------|-------------|
+| `list_workflows` | Listar todos los flujos de trabajo de la organización actual |
+| `get_workflow` | Obtener detalles de un flujo de trabajo específico por ID |
+| `delete_workflow` | Eliminar un flujo de trabajo por ID |
 
 ### Pruebas de flujos de trabajo
 
-| Herramienta              | Descripción                                                                |
-| ------------------------ | -------------------------------------------------------------------------- |
+| Herramienta | Descripción |
+|------|-------------|
 | `test_advanced_workflow` | Probar la ejecución de un flujo de trabajo avanzado con documento opcional |
-| `list_test_scenarios`    | Listar todos los escenarios de prueba de flujos de trabajo                 |
-| `list_cards`             | Listar las tarjetas/acciones de flujo de trabajo disponibles               |
+| `list_test_scenarios` | Listar todos los escenarios de prueba de flujos de trabajo |
+| `list_cards` | Listar las tarjetas/acciones de flujo de trabajo disponibles |
 
 ### Gestión del Card SDK
 
-| Herramienta                 | Descripción                                                  |
-| --------------------------- | ------------------------------------------------------------ |
-| `sdk_list_submissions`      | Listar todos los envíos de tarjetas de socios                |
-| `sdk_get_submission_status` | Obtener el estado de validación de un envío                  |
-| `sdk_approve_card`          | Aprobar una tarjeta de socio validada (admin)                |
-| `sdk_reject_card`           | Rechazar un envío de tarjeta de socio (admin)                |
-| `sdk_delete_submission`     | Desactivar o eliminar un envío (admin)                       |
-| `sdk_list_cards_picker`     | Listar todas las tarjetas habilitadas con indicadores de rol |
+| Herramienta | Descripción |
+|------|-------------|
+| `sdk_list_submissions` | Listar todos los envíos de tarjetas de socios |
+| `sdk_get_submission_status` | Obtener el estado de validación de un envío |
+| `sdk_approve_card` | Aprobar una tarjeta de socio validada (admin) |
+| `sdk_reject_card` | Rechazar un envío de tarjeta de socio (admin) |
+| `sdk_delete_submission` | Desactivar o eliminar un envío (admin) |
+| `sdk_list_cards_picker` | Listar todas las tarjetas habilitadas con indicadores de rol |
 
 ### Desarrollo del Card SDK
 
-| Herramienta         | Descripción                                                |
-| ------------------- | ---------------------------------------------------------- |
-| `sdk_create_card`   | Crear una nueva tarjeta de socio a partir de código fuente |
-| `sdk_validate_card` | Ejecutar validación de 5 etapas sin guardar                |
-| `sdk_test_card`     | Ejecutar una tarjeta en un entorno aislado (sandbox)       |
-| `sdk_import_github` | Importar una aplicación de socio desde GitHub              |
+| Herramienta | Descripción |
+|------|-------------|
+| `sdk_create_card` | Crear una nueva tarjeta de socio a partir de código fuente |
+| `sdk_validate_card` | Ejecutar validación de 5 etapas sin guardar |
+| `sdk_test_card` | Ejecutar una tarjeta en un entorno aislado (sandbox) |
+| `sdk_import_github` | Importar una aplicación de socio desde GitHub |
 
 ## Primeros pasos
 

@@ -127,4 +127,4 @@ El precio del módulo de búsqueda de texto completo se gestiona a través de su
 
 * [Configuración de búsqueda de texto completo](../../log-settings/fulltext-search-settings.md) — gestión del índice e interruptor del índice vectorial.
 * [Funciones de Fulltext y Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API de scripting para `fulltext_search()` y `vector_search()`.
-* [Resumen de módulos](./) — lista completa de los módulos opcionales de DocBits.
+* [Resumen de módulos](README.md) — lista completa de los módulos opcionales de DocBits.

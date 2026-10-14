@@ -6,9 +6,9 @@ El **Card SDK** permite a partners y desarrolladores crear tarjetas de flujo de 
 
 ## Cómo funciona
 
-* **Download SDK Template** — comience a partir de la plantilla oficial que contiene la estructura esperada.
-* **Upload ZIP** — el ZIP debe contener `app.json` y una carpeta `.docflowcompose/flow/` con las definiciones de las tarjetas (máx. 10 MB). Upload & Validate comprueba el paquete antes de aceptarlo.
-* **GitHub Import** — importe una definición de tarjeta directamente desde un repositorio de GitHub.
-* **Submissions** — haga seguimiento del estado de las tarjetas que ha enviado.
+- **Download SDK Template** — comience a partir de la plantilla oficial que contiene la estructura esperada.
+- **Upload ZIP** — el ZIP debe contener `app.json` y una carpeta `.docflowcompose/flow/` con las definiciones de las tarjetas (máx. 10 MB). Upload &#x26; Validate comprueba el paquete antes de aceptarlo.
+- **GitHub Import** — importe una definición de tarjeta directamente desde un repositorio de GitHub.
+- **Submissions** — haga seguimiento del estado de las tarjetas que ha enviado.
 
 Una vez validadas y aceptadas, sus tarjetas personalizadas aparecen en la biblioteca **Add Card** junto a las tarjetas integradas.

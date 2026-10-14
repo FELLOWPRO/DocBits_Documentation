@@ -9,5 +9,3 @@ Press the following icon to view the individual line items of the invoice.
 ![](https://lh7-us.googleusercontent.com/pbvFiudy0xpItlMyi2h047J3edFK7Vmz5zxJqk5q82XVwT42EHnCdscu-P0I-Yg4L9Fv7iA9dIipiJY5FlUMFxsXHNTftgodKWiXRRLeQoAcTfxkfySVWxqBzMvrJfx\_eFijHC-Mnz7laYSrr3utkSI)
 
 Here you can confirm the line items with what you exported using auto accounting.
-
-

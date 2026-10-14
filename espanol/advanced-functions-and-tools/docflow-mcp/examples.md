@@ -89,7 +89,7 @@ La tarjeta ahora está activa y disponible para su uso en flujos de trabajo.
 
 ### Paso 5: Construir un flujo de trabajo con la tarjeta
 
-Abre el **diseñador de DocFlow** en la aplicación web, crea un flujo de trabajo avanzado y añade la tarjeta aprobada como nodo, por ejemplo un disparador _Document Received_, la tarjeta _High Value Check_ y un nodo _Approval_ para la rama `true`. Los grafos de flujos de trabajo se crean y editan en el diseñador; el MCP no los crea.
+Abre el **diseñador de DocFlow** en la aplicación web, crea un flujo de trabajo avanzado y añade la tarjeta aprobada como nodo, por ejemplo un disparador *Document Received*, la tarjeta *High Value Check* y un nodo *Approval* para la rama `true`. Los grafos de flujos de trabajo se crean y editan en el diseñador; el MCP no los crea.
 
 De vuelta en el asistente, confirma que el flujo de trabajo existe y lee su estructura:
 
@@ -112,7 +112,7 @@ Llama a `test_advanced_workflow`:
 
 Revisa los registros de ejecución para verificar que cada nodo se ejecutó correctamente.
 
-***
+---
 
 ## Ejemplo 2: Construir un flujo de trabajo con tarjetas integradas
 
@@ -134,10 +134,9 @@ Llama a `sdk_list_cards_picker` para ver todas las tarjetas disponibles con sus 
 ```
 
 Filtra por rol:
-
-* `is_when: true` — Usar en nodos WHEN (disparadores)
-* `is_and: true` — Usar en nodos AND (condiciones adicionales)
-* `is_then: true` — Usar en nodos THEN (acciones)
+- `is_when: true` — Usar en nodos WHEN (disparadores)
+- `is_and: true` — Usar en nodos AND (condiciones adicionales)
+- `is_then: true` — Usar en nodos THEN (acciones)
 
 ### Paso 2: Crear el flujo de trabajo
 
@@ -212,7 +211,7 @@ Filtra por rol:
 
 Esto crea un flujo de trabajo: **WHEN** el documento es una factura **AND** el monto > 1000 **THEN** establecer el estado a revisión.
 
-***
+---
 
 ## Ejemplo 3: Importar tarjetas desde GitHub
 

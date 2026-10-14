@@ -35,4 +35,4 @@ Sus preferencias se guardan automáticamente al pulsar **Hecho** y persisten ent
 
 Cuando se añade una nueva función a DocBits en una futura versión, se incorpora al final de su barra lateral con visibilidad por defecto. Reordene u ocúltela en modo edición para adaptarla a su rutina.
 
-Las funciones para las que no tiene permiso nunca se muestran en la lista de personalización — no puede activar accidentalmente algo que su rol no puede abrir.
+<mark>Las funciones para las que no tiene permiso nunca se muestran en la lista de personalización — no puede activar accidentalmente algo que su rol no puede abrir.</mark>

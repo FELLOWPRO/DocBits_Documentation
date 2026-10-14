@@ -63,4 +63,4 @@ Los filtros se combinan, por lo que puede acotar, por ejemplo, a "Mejoras Mejor 
 
 El menú de la tarjeta (botón de tres puntos) permite editar o borrar una idea que usted envió.
 
-El Tablero de Ideas sirve para retroalimentación de producto, no para reportar incidencias. Use un ticket de soporte para problemas que bloquean su trabajo hoy.
+<mark>El Tablero de Ideas sirve para retroalimentación de producto, no para reportar incidencias. Use un ticket de soporte para problemas que bloquean su trabajo hoy.</mark>

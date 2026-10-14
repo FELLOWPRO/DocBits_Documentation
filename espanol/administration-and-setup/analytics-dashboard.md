@@ -32,11 +32,11 @@ El Panel de Análisis se controla mediante un ajuste del módulo. Una vez habili
 
 Elija la perspectiva adecuada para su análisis. Cada tipo de flujo le ofrece una perspectiva diferente sobre los mismos datos.
 
-| Tipo de flujo               | Propósito                                                                                          | Pregunta clave                                                                             |
-| --------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| **Estado**                  | Realizar el seguimiento del ciclo de vida del documento, desde la importación hasta la exportación | _"¿Cuál es el tiempo total de mis documentos, desde la importación hasta la exportación?"_ |
-| **Procesamiento**           | Análisis técnico del rendimiento del módulo                                                        | _"¿Qué pasos de procesamiento son cuellos de botella?"_                                    |
-| **Interacción del usuario** | Puntos de contacto humanos y tiempos de espera                                                     | _"¿Cuánto tiempo esperan los documentos a los usuarios?"_                                  |
+| Tipo de flujo | Propósito | Pregunta clave |
+| --- | --- | --- |
+| **Estado** | Realizar el seguimiento del ciclo de vida del documento, desde la importación hasta la exportación | *"¿Cuál es el tiempo total de mis documentos, desde la importación hasta la exportación?"* |
+| **Procesamiento** | Análisis técnico del rendimiento del módulo | *"¿Qué pasos de procesamiento son cuellos de botella?"* |
+| **Interacción del usuario** | Puntos de contacto humanos y tiempos de espera | *"¿Cuánto tiempo esperan los documentos a los usuarios?"* |
 
 Utilice el conmutador **Tipo de flujo** en la parte superior del panel para alternar entre perspectivas.
 
@@ -105,7 +105,7 @@ Analice cualquier período desde **7 días** hasta un **año completo**, o estab
 
 ## Tarjetas de Pasos de flujo
 
-Cada tarjeta representa un paso del flujo basado en el **Tipo de flujo** seleccionado. Las tarjetas se adaptan a su selección — mostrando las etapas del ciclo de vida para _Estado_, los módulos de procesamiento para _Procesamiento_, o los puntos de contacto del usuario para _Interacción del usuario_.
+Cada tarjeta representa un paso del flujo basado en el **Tipo de flujo** seleccionado. Las tarjetas se adaptan a su selección — mostrando las etapas del ciclo de vida para *Estado*, los módulos de procesamiento para *Procesamiento*, o los puntos de contacto del usuario para *Interacción del usuario*.
 
 Cada tarjeta muestra:
 

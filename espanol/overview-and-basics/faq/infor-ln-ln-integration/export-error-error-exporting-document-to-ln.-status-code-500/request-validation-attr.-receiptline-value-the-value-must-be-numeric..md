@@ -49,7 +49,7 @@ Si la **Orden de Compra** parece correcta y contiene los detalles necesarios, pu
 
 Debería lucir como sigue:
 
-<figure><img src="../../../../.gitbook/assets/docbits_settings_workflow_2 (3).png" alt="DocBits Configuración Flujo de trabajo 2" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_settings_workflow_2.png" alt="DocBits Configuración Flujo de trabajo 2" width="563"><figcaption></figcaption></figure>
 
 ## **Paso 4: Agregar el Archivo Actualizado de Vuelta a DocBits**
 

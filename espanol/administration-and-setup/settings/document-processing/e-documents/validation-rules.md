@@ -6,7 +6,7 @@ La página **Reglas de validación** (**Documentos electrónicos → Reglas**) c
 
 ## Configuración de validación
 
-La tarjeta **Configuración de validación** muestra su perfil de validación actual (por ejemplo, _B2G — Public Sector Receiver_). Haga clic en **Editar respuestas** para volver a ejecutar el asistente de configuración y cambiar el estándar con el que se valida.
+La tarjeta **Configuración de validación** muestra su perfil de validación actual (por ejemplo, *B2G — Public Sector Receiver*). Haga clic en **Editar respuestas** para volver a ejecutar el asistente de configuración y cambiar el estándar con el que se valida.
 
 ## Versiones de XRechnung aceptadas
 
@@ -20,12 +20,12 @@ Elija qué **perfiles** acepta (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, X
 
 Cada regla de validación tiene una **gravedad** que decide qué ocurre cuando se activa:
 
-| Gravedad    | Efecto                                                                                                                                            |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FATAL**   | Detiene el procesamiento de inmediato. No se comprueba ninguna capa posterior; el documento pasa a Error.                                         |
-| **ERROR**   | El documento se rechaza. Los demás hallazgos del mismo documento se siguen mostrando; la notificación al proveedor (si está activada) se dispara. |
-| **WARNING** | Aparece en el informe de validación, pero el documento continúa por el flujo con normalidad.                                                      |
-| **INFO**    | Solo registro de auditoría. Sin efecto visible para el usuario ni rechazo.                                                                        |
+| Gravedad | Efecto |
+|----------|--------|
+| **FATAL** | Detiene el procesamiento de inmediato. No se comprueba ninguna capa posterior; el documento pasa a Error. |
+| **ERROR** | El documento se rechaza. Los demás hallazgos del mismo documento se siguen mostrando; la notificación al proveedor (si está activada) se dispara. |
+| **WARNING** | Aparece en el informe de validación, pero el documento continúa por el flujo con normalidad. |
+| **INFO** | Solo registro de auditoría. Sin efecto visible para el usuario ni rechazo. |
 
 ## Anular la gravedad de las reglas
 

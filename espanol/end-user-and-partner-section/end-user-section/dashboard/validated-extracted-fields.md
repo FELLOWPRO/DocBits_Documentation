@@ -1,4 +1,4 @@
-# Campos extraídos validados
+# Campos Extraídos Validados
 
 La pantalla de validación te permite verificar, editar y validar todos los documentos importados. Puedes ver el nombre del documento, cuántas páginas contiene, la fecha en que se importó y su estado. El botón de acciones te permite asignar, reiniciar, validar o eliminar el documento.
 

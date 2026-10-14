@@ -17,11 +17,11 @@ Las suborganizaciones le permiten crear una estructura jerárquica en DocBits pa
 
 La tabla muestra todas las suborganizaciones existentes con:
 
-| Columna         | Descripción                                                                      |
-| --------------- | -------------------------------------------------------------------------------- |
-| **Nombre**      | El nombre de la suborganización.                                                 |
-| **Descripción** | Una breve descripción del propósito de la suborganización.                       |
-| **Acciones**    | Menú con opciones para gestionar usuarios, editar o eliminar la suborganización. |
+| Columna | Descripción |
+|--------|-------------|
+| **Nombre** | El nombre de la suborganización. |
+| **Descripción** | Una breve descripción del propósito de la suborganización. |
+| **Acciones** | Menú con opciones para gestionar usuarios, editar o eliminar la suborganización. |
 
 Utilice la barra de **búsqueda** para encontrar rápidamente suborganizaciones por su nombre.
 

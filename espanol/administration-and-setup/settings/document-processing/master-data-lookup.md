@@ -1,6 +1,7 @@
-# Búsqueda de datos maestro
+# Búsqueda de datos maestros
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
 La **Búsqueda de datos maestros** (barra lateral: **Lookup Master Data**) le permite ver y gestionar los datos maestros que DocBits utiliza para validar los datos extraídos de los documentos frente a su sistema ERP. Es esencial para un PO matching preciso, la validación de proveedores y el autocompletado de campos. Ábrala desde **Configuración → Procesamiento de documentos → Lookup Master Data**.
 
@@ -10,12 +11,12 @@ La **Búsqueda de datos maestros** (barra lateral: **Lookup Master Data**) le pe
 
 El panel izquierdo enumera cuatro categorías de fuentes de datos:
 
-| Fuente                  | Descripción                                                                                                                      |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **BOD Input Data**      | Datos recibidos a través de mensajes Infor BOD (Business Object Document).                                                       |
-| **ERP API Data**        | Datos obtenidos directamente de su sistema ERP mediante API. Haga clic en el icono de engranaje para configurar la conexión API. |
-| **Imported**            | Datos importados manualmente (por ejemplo, mediante carga de CSV). Haga clic en el icono **+** para añadir nuevos datos.         |
-| **DocBits Master Data** | Datos maestros internos gestionados dentro de DocBits.                                                                           |
+| Fuente | Descripción |
+|--------|-------------|
+| **BOD Input Data** | Datos recibidos a través de mensajes Infor BOD (Business Object Document). |
+| **ERP API Data** | Datos obtenidos directamente de su sistema ERP mediante API. Haga clic en el icono de engranaje para configurar la conexión API. |
+| **Imported** | Datos importados manualmente (por ejemplo, mediante carga de CSV). Haga clic en el icono **+** para añadir nuevos datos. |
+| **DocBits Master Data** | Datos maestros internos gestionados dentro de DocBits. |
 
 ## Tabla de datos
 

@@ -1,4 +1,4 @@
-# Estado del documento
+# Estado del Documento
 
 Si estás utilizando el software DocBits para el procesamiento de documentos, es esencial comprender los diferentes estados que tus archivos pueden tener. Aquí tienes una lista completa de todos los posibles estados de documento en DocBits:
 

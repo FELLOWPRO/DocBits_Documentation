@@ -31,7 +31,7 @@ Activar el interruptor no solo cambia un ajuste, sino que inicia una **suscripci
 4. Abra la sección **Tipo de documento**.
 5. Busque **Workflow Builder** y active el interruptor.
 6. En el cuadro de diálogo, elija su plan de DocFlow (Standard, opcionalmente Advanced) y confirme. DocFlow se activa una vez creada la suscripción.
-7. Después, diseñe sus flujos de trabajo de documentos en DocFlow; consulte la sección [Workflow](../../../workflow/) para saber cómo crearlos.
+7. Después, diseñe sus flujos de trabajo de documentos en DocFlow; consulte la sección [Workflow](../../../workflow/README.md) para saber cómo crearlos.
 
 ### Cuándo usar esta función
 

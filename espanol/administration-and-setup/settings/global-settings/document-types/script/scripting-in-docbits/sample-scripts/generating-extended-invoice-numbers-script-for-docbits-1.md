@@ -1,4 +1,4 @@
-# Números de Factura Extendidos
+# Script de Generacion de Numeros de Factura Extendidos para DocBits
 
 Este documento detalla el script "Generating Extended Invoice Numbers", que automatiza la creacion de numeros de factura extendidos en DocBits. Los numeros de factura extendidos combinan multiples identificadores de documentos, como el ID de factura y el numero de orden de compra, en un solo identificador completo. Este script mejora la trazabilidad de documentos y simplifica el mantenimiento de registros.
 

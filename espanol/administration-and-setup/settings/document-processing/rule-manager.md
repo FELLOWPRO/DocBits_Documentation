@@ -126,6 +126,8 @@ Define acciones específicas a tomar cuando se detecta una discrepancia:
 
 • Acción: El sistema ajusta el precio unitario para que coincida con la PO y aplica cualquier cargo de línea necesario.
 
+
+
 **Caso 6: Cantidad Dentro de la Tolerancia, Precio Unitario Fuera de la Tolerancia Negativa (Rechazado)**
 
 • Propósito: Trata casos donde el precio unitario es menor de lo esperado y está fuera del rango de tolerancia, lo que lleva al rechazo.

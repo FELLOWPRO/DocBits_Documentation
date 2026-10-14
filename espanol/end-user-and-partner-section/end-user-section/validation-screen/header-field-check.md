@@ -1,12 +1,13 @@
 ---
 description: >-
-  De dónde viene el valor de un campo de cabecera y cómo se crea: la explicación
-  detrás de la Comprobación de campos de cabecera en la pantalla de validación.
+  De dónde viene el valor de un campo de cabecera y cómo se crea: la
+  explicación detrás de la Comprobación de campos de cabecera en la pantalla de
+  validación.
 ---
 
 # Comprobación de campos de cabecera: de dónde vienen los datos
 
-El botón **Comprobación de campos de cabecera** está junto a **Guardar** en la pantalla de validación. Abre el informe _¿De dónde viene cada valor?_: para cada campo de cabecera muestra qué había en el documento, qué cambió el valor por el camino, qué muestra DocBits ahora y por qué.
+El botón **Comprobación de campos de cabecera** está junto a **Guardar** en la pantalla de validación. Abre el informe *¿De dónde viene cada valor?*: para cada campo de cabecera muestra qué había en el documento, qué cambió el valor por el camino, qué muestra DocBits ahora y por qué.
 
 Esta página explica cómo se crea un valor y qué significa cada fuente. No se necesitan conocimientos técnicos.
 
@@ -16,12 +17,12 @@ La Comprobación de campos de cabecera forma parte del módulo **Analytics**. Si
 
 ## Un valor siempre se crea en este orden
 
-| Paso               | Qué ocurre                                                                                                                      |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Leer**        | El valor se lee del documento: mediante una regla entrenada, mediante la IA o directamente desde una factura electrónica.       |
+| Paso | Qué ocurre |
+| --- | --- |
+| **1. Leer** | El valor se lee del documento: mediante una regla entrenada, mediante la IA o directamente desde una factura electrónica. |
 | **2. Transformar** | Los scripts y las reglas de transformación del cliente modifican el valor leído: lo acortan, lo completan o ajustan su formato. |
-| **3. Buscar**      | El valor se busca en los datos maestros. Si se encuentra algo, el registro de datos maestros sustituye al valor leído.          |
-| **4. Mostrar**     | El usuario solo ve el resultado. Lo que ocurrió por el camino lo muestra la Comprobación de campos de cabecera.                 |
+| **3. Buscar** | El valor se busca en los datos maestros. Si se encuentra algo, el registro de datos maestros sustituye al valor leído. |
+| **4. Mostrar** | El usuario solo ve el resultado. Lo que ocurrió por el camino lo muestra la Comprobación de campos de cabecera. |
 
 Los pasos 2 y 3 no siempre se ejecutan, pero cuando lo hacen, cambian el valor. De ahí vienen la mayoría de los casos reportados.
 
@@ -84,12 +85,12 @@ Leído de un código de barras o código QR del documento.
 Cuando un campo contiene de repente un valor que no aparece así en el documento, casi nunca fue la IA, sino el paso 2 o el paso 3. Lo más habitual es la coincidencia en datos maestros, que también acepta coincidencias parciales: `1001` coincide con `06O051001`, y con el pedido encontrado cambia también el proveedor.
 {% endhint %}
 
-En el informe, ese campo aparece marcado en rojo. La columna **Acción** muestra el registro de datos maestros junto con un chip rojo _solo coincidencia parcial_, y la parte coincidente del valor aparece resaltada.
+En el informe, ese campo aparece marcado en rojo. La columna **Acción** muestra el registro de datos maestros junto con un chip rojo *solo coincidencia parcial*, y la parte coincidente del valor aparece resaltada.
 
 ## Cómo leer el informe
 
 * **Chips de estado** en la parte superior cuentan los campos que vinieron sin cambios del documento, los que cambiaron por el camino y los que no están en el documento tal como se muestran. Haga clic en un chip para ver solo esos campos; vuelva a hacer clic para ver todos.
 * **Filtro de fuente:** la fila de iconos muestra cada método de extracción. Haga clic en uno para ver solo los campos que pasaron por él.
 * **Acción:** cada paso por el que pasó el valor, con el icono de su fuente. El paso del que procede el valor actual aparece resaltado. Pase el cursor para ver qué hizo cada paso, de qué valor a cuál.
-* **Motivo:** el estado del campo. El icono (i) explica por qué el valor es el que es. Si indica _El campo no existía_, el campo no estaba en el documento.
+* **Motivo:** el estado del campo. El icono (i) explica por qué el valor es el que es. Si indica *El campo no existía*, el campo no estaba en el documento.
 * Los valores largos se acortan con …; pase el cursor para ver el valor completo.

@@ -1,4 +1,4 @@
-# Regex
+# Expresiones Regulares
 
 <figure><img src="../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Regex Management"><figcaption></figcaption></figure>
 
@@ -7,7 +7,6 @@ En DocBits, la configuración de Expresiones Regulares permite a los administrad
 #### Características Clave y Opciones
 
 1. **Gestión de Expresiones Regulares**:
-
 * **Agregar**: Permite crear un nuevo patrón de regex para un tipo de documento específico.
 * **Guardar Cambios**: Guarda las modificaciones en las configuraciones de regex existentes.
 * **Patrón**: Aquí puedes definir el patrón de regex que coincide con el formato de datos específico requerido.

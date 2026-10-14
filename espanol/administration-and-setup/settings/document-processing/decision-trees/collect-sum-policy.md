@@ -5,12 +5,12 @@ Esta política recopila todas las reglas coincidentes y suma los resultados. Sol
 **Ejemplo:**
 
 | Regla | Condición            | Valor devuelto |
-| ----- | -------------------- | -------------- |
-| 1     | Total Amount <= 1000 | 1              |
-| 2     | Total Amount <= 2000 | 2              |
-| 3     | Total Amount <= 3000 | 3              |
-| 4     | Total Amount <= 4000 | 4              |
-| 5     | Total Amount <= 5000 | 5              |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | 1            |
+| 2    | Total Amount <= 2000 | 2            |
+| 3    | Total Amount <= 3000 | 3            |
+| 4    | Total Amount <= 4000 | 4            |
+| 5    | Total Amount <= 5000 | 5            |
 
 Para el valor de entrada **Total Amount = 2500**, la evaluación de las reglas sería:
 

@@ -26,7 +26,7 @@ La pestaña Documentos cubre todo lo relacionado con la indexación de documento
 * **Acciones de reindexación** — inicie una reindexación completa o incremental. Mientras se ejecuta una reindexación, ve el progreso en vivo (documentos por minuto, tiempo estimado), el estado actual del flujo y el último fallo (si lo hay).
 * **Diagnóstico de sincronización** — diagnóstico bajo demanda para casos en los que el índice parece estar desincronizado del almacén de documentos subyacente.
 
-La reindexación no es destructiva — la búsqueda existente sigue funcionando mientras se reconstruye el nuevo índice.
+<mark>La reindexación no es destructiva — la búsqueda existente sigue funcionando mientras se reconstruye el nuevo índice.</mark>
 
 ### Pestaña ERP
 

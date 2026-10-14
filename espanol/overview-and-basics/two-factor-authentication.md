@@ -56,15 +56,14 @@ Los códigos de respaldo solo se muestran en el momento en que se generan. DocBi
 
 ## Iniciar sesión con 2FA
 
-1.  Introduce tu correo electrónico y contraseña como de costumbre.
+1. Introduce tu correo electrónico y contraseña como de costumbre.
 
     <figure><img src="../.gitbook/assets/mfa-login.png" alt="La pantalla de inicio de sesión de DocBits"><figcaption><p>La pantalla de inicio de sesión. También puedes iniciar sesión sin contraseña usando <strong>Iniciar sesión con una clave de acceso</strong>.</p></figcaption></figure>
-2.  DocBits solicita tu segundo factor. Elige tu método:
-
-    * **Autenticador** — escribe el código actual de 6 dígitos de tu aplicación.
-    * **Correo electrónico** — haz clic en **Enviarme un código por correo electrónico** para recibir un código por correo, luego escríbelo.
-    * **Clave de acceso** — haz clic en **Usar una clave de acceso** y confirma con Touch ID / Windows Hello / tu clave.
-    * **Código de respaldo** — si no puedes usar tu método habitual.
+2. DocBits solicita tu segundo factor. Elige tu método:
+   * **Autenticador** — escribe el código actual de 6 dígitos de tu aplicación.
+   * **Correo electrónico** — haz clic en **Enviarme un código por correo electrónico** para recibir un código por correo, luego escríbelo.
+   * **Clave de acceso** — haz clic en **Usar una clave de acceso** y confirma con Touch ID / Windows Hello / tu clave.
+   * **Código de respaldo** — si no puedes usar tu método habitual.
 
     <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="La pantalla de verificación del segundo factor"><figcaption><p>Después de tu contraseña, DocBits solicita tu segundo factor. Cambia de método con <strong>Usar una clave de acceso</strong> o <strong>Enviarme un código por correo electrónico</strong>, y opcionalmente confía en el dispositivo durante 30 días.</p></figcaption></figure>
 3. Si tiene éxito, habrás iniciado sesión.

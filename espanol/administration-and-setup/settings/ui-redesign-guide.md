@@ -15,15 +15,15 @@ Para el paseo completo por reordenar, ocultar y fijar, consulte [Barra Lateral P
 
 El menú Configuración está agrupado por intención y no por modelo de datos. Si recuerda una opción pero no la encuentra, pruebe el grupo correspondiente a continuación:
 
-| Si busca…                                                                     | Abra Configuración →                             |
-| ----------------------------------------------------------------------------- | ------------------------------------------------ |
-| Nombre de la empresa, logotipo, zona horaria, color de la aplicación          | Empresa y Usuarios → Información de la Empresa   |
-| Usuarios, grupos, permisos                                                    | Empresa y Usuarios → Grupos, Usuarios y Permisos |
-| Claves de API, conexiones ERP, configuraciones de exportación                 | Integración                                      |
-| Tipos de documento, campos, scripts, EDI, entrenamiento de modelos            | Tipos de Documento                               |
-| Configuración OCR, árboles de decisión, listas de valores, gestor de reglas   | Procesamiento de Documentos                      |
-| Auditoría de acceso, analítica, índice de texto completo, registro de eventos | Registros y Búsqueda                             |
-| Portal de proveedores, Watchdog                                               | Configuración                                    |
+| Si busca… | Abra Configuración → |
+|---|---|
+| Nombre de la empresa, logotipo, zona horaria, color de la aplicación | Empresa y Usuarios → Información de la Empresa |
+| Usuarios, grupos, permisos | Empresa y Usuarios → Grupos, Usuarios y Permisos |
+| Claves de API, conexiones ERP, configuraciones de exportación | Integración |
+| Tipos de documento, campos, scripts, EDI, entrenamiento de modelos | Tipos de Documento |
+| Configuración OCR, árboles de decisión, listas de valores, gestor de reglas | Procesamiento de Documentos |
+| Auditoría de acceso, analítica, índice de texto completo, registro de eventos | Registros y Búsqueda |
+| Portal de proveedores, Watchdog | Configuración |
 
 Dentro de cada grupo, las páginas más usadas están situadas arriba.
 

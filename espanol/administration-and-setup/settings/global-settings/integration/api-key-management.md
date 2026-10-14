@@ -1,10 +1,9 @@
 ---
 description: >-
-  Cómo encontrar y crear las claves API que dan acceso a DocBits a otros
-  sistemas
+  Cómo encontrar y crear las claves API que dan acceso a DocBits a otros sistemas
 ---
 
-# Gestión de Claves API
+# API Key Management
 
 Una API key permite que otro sistema — su ERP, un script o una aplicación de un socio — hable con DocBits sin que inicie sesión ningún usuario. Su organización puede tener tantas claves como necesite, y cada una se gestiona por separado: póngale su propio nombre, decida si caduca y revóquela individualmente si alguna vez queda expuesta.
 
@@ -24,14 +23,14 @@ La sección **API Key** de la parte superior de la página lista todas las clave
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
 
-| Columna       | Qué le indica                                                                                                                                                                                  |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key**       | Los primeros caracteres de la clave, seguidos de `****`. El resto no se vuelve a mostrar nunca después de crearla — consulte [Crear una clave API](api-key-management.md#crear-una-clave-api). |
-| **Name**      | El nombre que le dio a la clave, con su descripción debajo.                                                                                                                                    |
-| **Expires**   | La fecha en la que la clave deja de funcionar, o **Never** si no puso ninguna.                                                                                                                 |
-| **Last Used** | Cuándo llegó por última vez una petición con esta clave. **Never used** significa que ningún sistema la ha usado todavía — útil para detectar claves que puede quitar sin riesgo.              |
-| **Status**    | **Active** significa que la clave funciona. Una clave revocada queda desactivada de forma permanente.                                                                                          |
-| **Actions**   | El menú de tres puntos, donde puede revocar la clave.                                                                                                                                          |
+| Columna | Qué le indica |
+| --- | --- |
+| **Key** | Los primeros caracteres de la clave, seguidos de `****`. El resto no se vuelve a mostrar nunca después de crearla — consulte [Crear una clave API](#crear-una-clave-api). |
+| **Name** | El nombre que le dio a la clave, con su descripción debajo. |
+| **Expires** | La fecha en la que la clave deja de funcionar, o **Never** si no puso ninguna. |
+| **Last Used** | Cuándo llegó por última vez una petición con esta clave. **Never used** significa que ningún sistema la ha usado todavía — útil para detectar claves que puede quitar sin riesgo. |
+| **Status** | **Active** significa que la clave funciona. Una clave revocada queda desactivada de forma permanente. |
+| **Actions** | El menú de tres puntos, donde puede revocar la clave. |
 
 Si tiene más claves de las que caben en una página, use los controles de paginación del final de la lista.
 
@@ -46,11 +45,11 @@ Si tiene más claves de las que caben en una página, use los controles de pagin
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-create-dialog.png)
 
-| Campo           | Qué introducir                                                                                                                                                              |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key Name**    | Obligatorio. Póngale el nombre del sistema que la va a usar — `M3 Production`, `Invoice Import Script` — para que luego pueda saber a qué integración pertenece cada clave. |
-| **Description** | Opcional. Espacio para una nota sobre para qué sirve la clave o quién la configuró.                                                                                         |
-| **Expiration**  | Elija una fecha de caducidad o déjelo en **Never expires**. Una fecha de caducidad es la opción más segura: la clave se retira sola si alguna vez se olvida la integración. |
+| Campo | Qué introducir |
+| --- | --- |
+| **Key Name** | Obligatorio. Póngale el nombre del sistema que la va a usar — `M3 Production`, `Invoice Import Script` — para que luego pueda saber a qué integración pertenece cada clave. |
+| **Description** | Opcional. Espacio para una nota sobre para qué sirve la clave o quién la configuró. |
+| **Expiration** | Elija una fecha de caducidad o déjelo en **Never expires**. Una fecha de caducidad es la opción más segura: la clave se retira sola si alguna vez se olvida la integración. |
 
 3. Haga clic en **Create**. DocBits le muestra la clave nueva:
 

@@ -7,14 +7,14 @@
 1. Vaya a **Ajustes → Tipos de documentos → Factura → E-Doc**.
 2. Despliegue **E-SLOG 1.6** o **E-SLOG 2.0**. Cada formato tiene sus propias tres entradas.
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-372-eslog-16-es.png" alt="Formato E-SLOG 1.6 en el Sandbox con las filas Transformation, Preview y Extraction Paths"><figcaption><p>E-SLOG 1.6 en la lista E-Doc de Factura.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-372-eslog-16-es.png" alt="Formato E-SLOG 1.6 en el Sandbox con las filas Transformation, Preview y Extraction Paths"><figcaption>E-SLOG 1.6 en la lista E-Doc de Factura.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/dbdc-372-eslog-20-es.png" alt="Formato E-SLOG 2.0 en el Sandbox con las filas Transformation, Preview y Extraction Paths"><figcaption><p>E-SLOG 2.0 tiene configuraciones separadas para los mismos tres pasos.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-372-eslog-20-es.png" alt="Formato E-SLOG 2.0 en el Sandbox con las filas Transformation, Preview y Extraction Paths"><figcaption>E-SLOG 2.0 tiene configuraciones separadas para los mismos tres pasos.</figcaption></figure>
 
-| Entrada                     | Qué controla                                                        | Guía siguiente                                                |
-| --------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------- |
-| **TRANSFORMATION (XSLT)**   | Convierte los datos fuente del formato en XML estructurado.         | [Transformación](edi/edi-transformation-file-guide.md)        |
-| **PREVIEW (XSLT)**          | Define la vista legible del documento.                              | [Vista previa](edi/edi-preview-file-guide.md)                 |
+| Entrada | Qué controla | Guía siguiente |
+| --- | --- | --- |
+| **TRANSFORMATION (XSLT)** | Convierte los datos fuente del formato en XML estructurado. | [Transformación](edi/edi-transformation-file-guide.md) |
+| **PREVIEW (XSLT)** | Define la vista legible del documento. | [Vista previa](edi/edi-preview-file-guide.md) |
 | **EXTRACTION PATHS (JSON)** | Asigna los valores XML a los campos y columnas de tabla de DocBits. | [Rutas de extracción](edi/edi-extraction-paths-file-guide.md) |
 
 Haga clic en una fila para ver sus versiones y su configuración. **Default** identifica la entrada proporcionada. **Last Modified At** muestra cuándo se cambió por última vez esa entrada. El botón **Nuevo** crea una entrada de configuración adicional. El menú de tres puntos de una fila **Default** ofrece **Personalizar**, que crea una copia específica de la organización, y **Borrar**; revise con atención la fila seleccionada antes de usar Borrar.

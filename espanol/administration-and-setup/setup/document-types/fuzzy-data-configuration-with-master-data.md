@@ -153,7 +153,13 @@ El **Manejador de conflictos (Conflict Handler)** decide:
 
 En todos los ejemplos el documento lleva un NIF y un nombre de proveedor, y ambos campos son **Buscables**.
 
-<table><thead><tr><th width="150">El NIF encuentra</th><th width="150">El nombre encuentra</th><th width="150">Coincidir todo desactivado + Return None</th><th width="150">Coincidir todo activado + Return None</th><th width="150">Coincidir todo desactivado + Best Score</th></tr></thead><tbody><tr><td>solo A</td><td>A y B</td><td>vacío</td><td><strong>A</strong></td><td><strong>A</strong></td></tr><tr><td>A y B</td><td>solo B</td><td>vacío</td><td><strong>B</strong></td><td><strong>B</strong></td></tr><tr><td>A, B y C</td><td>C, D y E</td><td>vacío</td><td><strong>C</strong></td><td><strong>C</strong></td></tr><tr><td>A, B y C</td><td>B, C y D</td><td>vacío</td><td>vacío</td><td>B o C, no fiable</td></tr><tr><td>solo A</td><td>nada</td><td><strong>A</strong></td><td>vacío</td><td><strong>A</strong></td></tr></tbody></table>
+<table><thead><tr><th width="150">El NIF encuentra</th><th width="150">El nombre encuentra</th><th width="150">Coincidir todo desactivado + Return None</th><th width="150">Coincidir todo activado + Return None</th><th width="150">Coincidir todo desactivado + Best Score</th></tr></thead><tbody>
+<tr><td>solo A</td><td>A y B</td><td>vacío</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A y B</td><td>solo B</td><td>vacío</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B y C</td><td>C, D y E</td><td>vacío</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B y C</td><td>B, C y D</td><td>vacío</td><td>vacío</td><td>B o C, no fiable</td></tr>
+<tr><td>solo A</td><td>nada</td><td><strong>A</strong></td><td>vacío</td><td><strong>A</strong></td></tr>
+</tbody></table>
 
 Cómo leer la tabla:
 

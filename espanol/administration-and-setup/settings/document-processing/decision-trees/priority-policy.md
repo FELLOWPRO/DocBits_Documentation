@@ -14,4 +14,4 @@ Si el importe total es **1500**, las reglas evaluadas serán:
 * **Regla 4**: Total Amount <= 4000 (coincide)
 * **Regla 5**: Total Amount <= 5000 (coincide)
 
-Dado que la prioridad se aplica en el orden **5, 4, 3, 2, 1**, la regla coincidente de mayor prioridad será la **Regla 5** (**GROUP\_5**). El árbol de decisión devolverá **GROUP\_5** porque la **Regla 5** tiene la prioridad más alta (prioridad 1).
+Dado que la prioridad se aplica en el orden **5, 4, 3, 2, 1**, la regla coincidente de mayor prioridad será la **Regla 5** (**GROUP_5**). El árbol de decisión devolverá **GROUP_5** porque la **Regla 5** tiene la prioridad más alta (prioridad 1).

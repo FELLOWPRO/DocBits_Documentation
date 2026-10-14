@@ -1,6 +1,8 @@
-# Documentos validados
+# Documentos Validados
 
 En este video, los espectadores son presentados a la interfaz fácil de usar de Doc**Bit**, enfocándose específicamente en la validación de documentos. El tutorial enfatiza la simplicidad del sistema, donde no se requiere programación ni fórmulas complejas.
+
+
 
 {% embed url="https://www.youtube.com/watch?v=FD9dC2_nvuw" %}
 

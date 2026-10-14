@@ -1,4 +1,4 @@
-# Resumen de documentos cargados
+# Resumen de los Documentos Subidos
 
 La segunda parte del panel es un resumen de todos los documentos subidos. Puedes ver todos los documentos o solo los asignados a ti. También puedes buscar documentos por nombre.
 

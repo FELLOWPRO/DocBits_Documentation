@@ -2,8 +2,8 @@
 
 DocBits valida las facturas electrónicas entrantes (e-invoices) según los estándares oficiales —**XRechnung**, **ZUGFeRD** y **Factur-X**— y enruta cualquier problema que detecte al responsable adecuado. El grupo de ajustes **Documentos electrónicos** (en **Procesamiento de documentos**) tiene dos páginas:
 
-* [**Reglas de validación**](validation-rules.md): elija qué versiones y perfiles de factura electrónica acepta y establezca la gravedad de cada regla de validación para su organización.
-* [**Enrutamiento de notificaciones**](notification-routing.md): asigne los hallazgos de validación al agente de AI Workforce que debe gestionarlos.
+* **[Reglas de validación](validation-rules.md)**: elija qué versiones y perfiles de factura electrónica acepta y establezca la gravedad de cada regla de validación para su organización.
+* **[Enrutamiento de notificaciones](notification-routing.md)**: asigne los hallazgos de validación al agente de AI Workforce que debe gestionarlos.
 
 Juntas le permiten decidir **qué se considera un problema** en una factura electrónica entrante y **quién se encarga de ello**.
 
@@ -20,6 +20,6 @@ Vaya a **Ajustes → Tipos de documento → Factura → Ajustes avanzados** y ab
 
 > La validación de facturas electrónicas se configura **por tipo de documento**. Actualmente se aplica al tipo de documento **Factura**; actívela en cada tipo de documento que deba validarse.
 
-También puede saltar directamente aquí con la **búsqueda rápida global**: pulse <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> en Windows y Linux) en cualquier parte de DocBits y escriba _e-invoice_.
+También puede saltar directamente aquí con la **búsqueda rápida global**: pulse <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> en Windows y Linux) en cualquier parte de DocBits y escriba *e-invoice*.
 
 <figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La búsqueda rápida global salta a Validación de facturas electrónicas"><figcaption><p>Escriba «e-invoice» en la búsqueda rápida para saltar directamente al interruptor.</p></figcaption></figure>

@@ -16,12 +16,12 @@ Active **Mostrar campos calculados** para que los campos de factura calculados a
 
 Elija cómo se ajusta una fecha de vencimiento que cae en sábado o domingo. Esto se aplica **tanto** a la fecha de vencimiento de la factura como a la del descuento (Skonto).
 
-| Convención               | Efecto                                                                           |
-| ------------------------ | -------------------------------------------------------------------------------- |
-| **Ninguna**              | Mantener la fecha de calendario (sin ajuste).                                    |
-| **Siguiente**            | Mover sábado/domingo al lunes siguiente.                                         |
-| **Anterior**             | Mover sábado/domingo al viernes anterior.                                        |
-| **Más cercana**          | Sábado → viernes, domingo → lunes.                                               |
+| Convención | Efecto |
+|------------|--------|
+| **Ninguna** | Mantener la fecha de calendario (sin ajuste). |
+| **Siguiente** | Mover sábado/domingo al lunes siguiente. |
+| **Anterior** | Mover sábado/domingo al viernes anterior. |
+| **Más cercana** | Sábado → viernes, domingo → lunes. |
 | **Siguiente modificada** | Lunes siguiente, salvo que cruce al mes siguiente; entonces el viernes anterior. |
 
 ### Código de asignación de cuentas por pagar (AP)
@@ -42,21 +42,21 @@ DocBits reconoce los siguientes códigos de condiciones de pago y de descuento.
 
 **Formatos de condiciones de pago admitidos**
 
-| Formato          | Ejemplo             | Significado              |
-| ---------------- | ------------------- | ------------------------ |
-| Infor M3         | `N90`, `N30`        | Neto 90 / 30 días        |
-| Infor M3         | `NET`               | Pago contra recepción    |
-| Infor M3         | `M20`               | Día 20 del mes siguiente |
-| Infor M3         | `E15`               | Fin de mes + 15 días     |
-| Infor LN         | `030`, `30`         | Neto 30 días             |
-| Reversed         | `14N`, `30N`        | Neto 14 / 30 días        |
-| Códigos de texto | `REC`, `DUE`, `COD` | Pago contra recepción    |
+| Formato | Ejemplo | Significado |
+|---------|---------|-------------|
+| Infor M3 | `N90`, `N30` | Neto 90 / 30 días |
+| Infor M3 | `NET` | Pago contra recepción |
+| Infor M3 | `M20` | Día 20 del mes siguiente |
+| Infor M3 | `E15` | Fin de mes + 15 días |
+| Infor LN | `030`, `30` | Neto 30 días |
+| Reversed | `14N`, `30N` | Neto 14 / 30 días |
+| Códigos de texto | `REC`, `DUE`, `COD` | Pago contra recepción |
 
 **Formato de condiciones de descuento**: las condiciones de descuento codifican los descuentos por pronto pago como códigos de 3 dígitos: el primer dígito es el porcentaje de descuento y los dos últimos son los días dentro de los cuales se debe pagar.
 
-| Código | Significado                            |
-| ------ | -------------------------------------- |
-| `210`  | 2 % de descuento si se paga en 10 días |
-| `130`  | 1 % de descuento si se paga en 30 días |
-| `545`  | 5 % de descuento si se paga en 45 días |
-| `0`    | Sin descuento                          |
+| Código | Significado |
+|--------|-------------|
+| `210` | 2 % de descuento si se paga en 10 días |
+| `130` | 1 % de descuento si se paga en 30 días |
+| `545` | 5 % de descuento si se paga en 45 días |
+| `0` | Sin descuento |

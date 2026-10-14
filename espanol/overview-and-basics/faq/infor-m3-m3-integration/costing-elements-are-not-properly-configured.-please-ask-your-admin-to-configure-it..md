@@ -1,4 +1,4 @@
-# Los elementos de costeo no están configurados correctamente. Por favor, pida a su administrador que
+# Los elementos de costeo no están configurados correctamente. Por favor, pida a su administrador que lo configure.
 
 Si encuentra el mensaje de error **"Los elementos de costeo no están configurados correctamente. Por favor, pida a su administrador que lo configure,"** podría deberse a una de las siguientes razones:
 

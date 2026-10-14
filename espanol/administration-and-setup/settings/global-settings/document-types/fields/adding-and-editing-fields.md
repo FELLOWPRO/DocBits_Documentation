@@ -1,5 +1,7 @@
 # Agregando y Editando Campos
 
+
+
 ### Aquí están los pasos para agregar un nuevo campo o modificar campos existentes en DocBits, incluyendo detalles sobre cómo acceder a opciones de configuración avanzadas:
 
 #### Agregar un nuevo campo

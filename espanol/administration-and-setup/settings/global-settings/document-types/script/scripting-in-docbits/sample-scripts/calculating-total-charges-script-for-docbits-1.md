@@ -1,4 +1,4 @@
-# Cálculo de Cargos Totales
+# Script de Calculo de Cargos Totales para DocBits
 
 El script "Calculating Total Charges" automatiza el proceso de sumar varios cargos y montos adicionales dentro de documentos de factura. Esta guia le explica la configuracion, logica y aplicacion del script para garantizar calculos precisos de cargos totales en sus documentos.
 

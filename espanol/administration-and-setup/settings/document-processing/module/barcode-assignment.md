@@ -23,7 +23,7 @@ DocBits detecta los códigos de barras durante el procesamiento del documento y 
 <figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="Factura de demostración con varios tipos de código de barras"><figcaption><p>Factura de demostración de DocBits con tres tipos de código de barras (código QR → número de pedido, Code 128 → número de factura, EAN-13 → GLN de proveedor), cada uno codificando un valor que puede asignar a un campo.</p></figcaption></figure>
 
 {% hint style="info" %}
-Qué tipos de código de barras se detectan lo controla la opción **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Si el diálogo muestra _«no barcodes extracted found»_, asegúrese de que la extracción de códigos de barras está activada y de que los tipos esperados (p. ej., `QRCODE`, `CODE128`, `EAN13`) están seleccionados. Consulte [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+Qué tipos de código de barras se detectan lo controla la opción **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Si el diálogo muestra *«no barcodes extracted found»*, asegúrese de que la extracción de códigos de barras está activada y de que los tipos esperados (p. ej., `QRCODE`, `CODE128`, `EAN13`) están seleccionados. Consulte [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Uso del diálogo de Asignación por código de barras
@@ -62,8 +62,8 @@ Qué tipos de código de barras se detectan lo controla la opción **Bar-Code / 
 
 * **Documentos con códigos de barras**: Cuando sus documentos llevan códigos de barras/QR cuyos valores pertenecen a campos específicos (p. ej., números de pedido o de referencia).
 * **Flujos de validación manual**: Cuando una persona revisa documentos y quiere rellenar campos rápidamente a partir de códigos de barras.
-* **Déjela desactivada** si sus documentos no tienen códigos de barras útiles, o si solo necesita la **extracción** automática de códigos de barras/QR — consulte [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+* **Déjela desactivada** si sus documentos no tienen códigos de barras útiles, o si solo necesita la **extracción** automática de códigos de barras/QR — consulte [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 
 {% hint style="info" %}
-**Esto sirve para leer un valor de código de barras/QR y asignarlo a un campo durante la validación.** La extracción automática de datos estructurados de códigos de pago (como Swiss QR Bill o GiroCode) — y la división de un archivo de varias páginas en las páginas separadoras con código de barras — las gestiona una opción **diferente**: [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+**Esto sirve para leer un valor de código de barras/QR y asignarlo a un campo durante la validación.** La extracción automática de datos estructurados de códigos de pago (como Swiss QR Bill o GiroCode) — y la división de un archivo de varias páginas en las páginas separadoras con código de barras — las gestiona una opción **diferente**: [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}

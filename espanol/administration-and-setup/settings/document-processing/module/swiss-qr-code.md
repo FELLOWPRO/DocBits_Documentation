@@ -1,2 +1,1 @@
-# Código QR Suizo
-
+# Código QR suizo

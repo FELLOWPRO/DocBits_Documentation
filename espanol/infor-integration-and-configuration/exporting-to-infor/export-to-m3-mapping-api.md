@@ -1,163 +1,163 @@
-# Exportación a M3 Mapeo (API)
+# Exportación a M3 Mapping (API)
 
-### Sections
+### Secciones
 
-M3 export mapping file is divided in 5 sections and each section is further divided into 2 sections
+El archivo de mapeo de exportación a M3 se divide en 5 secciones, y cada sección se divide a su vez en 2 secciones
 
-* Header
-  * Header Static Fields
-  * Header Fields
-* Tax Lines
-  * Tax Line Static Fields
-  * Tax Line Fields
-* Receipt Lines
-  * Receipt Line Static Fields
-  * Receipt Line Fields
-* Order Charge Lines (Additional Amounts)
-  * Order Charge Static Fields
-  * Order Charge Fields
-* Cost Lines
-  * Cost Line Static Fields
-  * Cost Line Fields
+* Header (Cabecera)
+  * Header Static Fields (Campos estáticos de cabecera)
+  * Header Fields (Campos de cabecera)
+* Tax Lines (Líneas de impuestos)
+  * Tax Line Static Fields (Campos estáticos de línea de impuestos)
+  * Tax Line Fields (Campos de línea de impuestos)
+* Receipt Lines (Líneas de recepción)
+  * Receipt Line Static Fields (Campos estáticos de línea de recepción)
+  * Receipt Line Fields (Campos de línea de recepción)
+* Order Charge Lines (Importes adicionales)
+  * Order Charge Static Fields (Campos estáticos de cargos del pedido)
+  * Order Charge Fields (Campos de cargos del pedido)
+* Cost Lines (Líneas de costes)
+  * Cost Line Static Fields (Campos estáticos de línea de costes)
+  * Cost Line Fields (Campos de línea de costes)
 
-### Adding and Removing Fields
+### Añadir y eliminar campos
 
-Adding New Field:
+Añadir un campo nuevo:
 
-* First we need to add the **M3 api field name** to the relevant section’s fields list property (e.g. StaticFields, HeaderFields, InvoiceTaxFields)
-* Define the static value or document field name for the api field with appropriate prefix for the section
-  * Example 1: To define a static value of **AAA** for the M3 api field **DIVI.** First we added DIVI to **StaticFields** property. Then we add a line **SF\_DIVI = AAA** as SF\_ is the prefix for static fields
-  * Example2: To map header field **IVDT (invoice data)** to invoice\_date field of DocBits. First we add IVDT to **HeaderFields** property. Then we add a line HF\_IVDT = invoice\_date as HF\_ is the prefix for header fields
+* Primero hay que añadir el **nombre del campo de la API de M3** a la propiedad de lista de campos de la sección correspondiente (por ejemplo, StaticFields, HeaderFields, InvoiceTaxFields)
+* Defina el valor estático o el nombre del campo del documento para el campo de la API con el prefijo adecuado para la sección
+  * Ejemplo 1: Para definir un valor estático **AAA** para el campo de la API de M3 **DIVI.** Primero añadimos DIVI a la propiedad **StaticFields**. Después añadimos una línea **SF\_DIVI = AAA**, ya que SF\_ es el prefijo de los campos estáticos
+  * Ejemplo 2: Para mapear el campo de cabecera **IVDT (fecha de factura)** al campo invoice\_date de DocBits. Primero añadimos IVDT a la propiedad **HeaderFields**. Después añadimos una línea HF\_IVDT = invoice\_date, ya que HF\_ es el prefijo de los campos de cabecera
 
-Removing Field:
+Eliminar un campo:
 
-* Just remove the field from section’s field list property and remove the line defining value for the field.
+* Basta con quitar el campo de la propiedad de lista de campos de la sección y eliminar la línea que define el valor del campo.
 
-#### **Available M3 Api Fields:**
+#### **Campos disponibles de la API de M3:**
 
-* Available M3 fields can be checked by opening appropriate screen in M3.
+* Los campos de M3 disponibles se pueden consultar abriendo la pantalla correspondiente en M3.
 
-<figure><img src="../../.gitbook/assets/100%PO (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/100%PO (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
 
-* Similarly you can get field names for lines
+* De la misma forma puede obtener los nombres de los campos de las líneas
 
-### Header:
+### Cabecera (Header):
 
-<figure><img src="../../.gitbook/assets/100%PO (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
-Fields List Property: StaticFields
+Propiedad de lista de campos: StaticFields
 
-Section Fields Prefix: SF\_
+Prefijo de los campos de la sección: SF\_
 
-Available Fields: You can map any M3 api field with any static value
+Campos disponibles: Puede mapear cualquier campo de la API de M3 con cualquier valor estático
 
 #### **Header Fields**
 
-Fields List Property: HeaderFields
+Propiedad de lista de campos: HeaderFields
 
-Section Fields Prefix: HF\_
+Prefijo de los campos de la sección: HF\_
 
-Available Fields: You can map any DocBits field to any M3 api field
+Campos disponibles: Puede mapear cualquier campo de DocBits a cualquier campo de la API de M3
 
-### Tax Line:
+### Línea de impuestos (Tax Line):
 
 #### Tax Line Static Fields:
 
-Fields List Property: InvoiceTaxStaticFields
+Propiedad de lista de campos: InvoiceTaxStaticFields
 
-Section Fields Prefix: IT\_SF\_
+Prefijo de los campos de la sección: IT\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: You can put any value as they are static fields
+Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
 #### Tax Line Fields:
 
-Fields List Property: InvoiceTaxFields
+Propiedad de lista de campos: InvoiceTaxFields
 
-M3 Fields Prefix: ITF\_
+Prefijo de los campos de M3: ITF\_
 
-DocBits Table Field Prefix: TF\_
+Prefijo de los campos de tabla de DocBits: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
+Campos de DocBits disponibles: line\_number, tax\_amount, tax\_rate, net\_amount, gross\_amount, tax\_code\_full, tax\_code, tax\_country
 
-### Receipt Line:
+### Línea de recepción (Receipt Line):
 
 #### Receipt Line Static Fields:
 
-Fields List Property: InvoiceReceiptStaticFields
+Propiedad de lista de campos: InvoiceReceiptStaticFields
 
-Section Fields Prefix: IR\_SF\_
+Prefijo de los campos de la sección: IR\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: You can put any value as they are static fields
+Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
 #### Receipt Line Fields:
 
-Fields List Property: InvoiceReceiptFields
+Propiedad de lista de campos: InvoiceReceiptFields
 
-M3 Fields Prefix: IRF\_
+Prefijo de los campos de M3: IRF\_
 
-DocBits Table Field Prefix: TF\_
+Prefijo de los campos de tabla de DocBits: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
+Campos de DocBits disponibles: packing\_slip, purchase\_order, line\_number, line\_sequence, delivery\_number, delivery\_line, amount, quantity, total\_net\_amount
 
-### Order Charge Line:
+### Línea de cargos del pedido (Order Charge Line):
 
 #### Order Charge Static Fields:
 
-Fields List Property: OrderChargeStaticFields
+Propiedad de lista de campos: OrderChargeStaticFields
 
-Section Fields Prefix: OC\_SF\_
+Prefijo de los campos de la sección: OC\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: You can put any value as they are static fields
+Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
 #### Order Charge Fields:
 
-Fields List Property: OrderChargeFields
+Propiedad de lista de campos: OrderChargeFields
 
-M3 Fields Prefix: OCF\_
+Prefijo de los campos de M3: OCF\_
 
-DocBits Table Field Prefix: TF\_
+Prefijo de los campos de tabla de DocBits: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
+Campos de DocBits disponibles: ledger\_account, dimension\_2-7, amount, quantity, quantity2, position
 
-### Cost Line:
+### Línea de costes (Cost Line):
 
 #### Cost Line Static Fields:
 
-Fields List Property: InvoiceCostStaticFields
+Propiedad de lista de campos: InvoiceCostStaticFields
 
-Section Fields Prefix: IC\_SF\_
+Prefijo de los campos de la sección: IC\_SF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: You can put any value as they are static fields
+Campos de DocBits disponibles: Puede introducir cualquier valor, ya que son campos estáticos
 
 #### Cost Line Fields:
 
-Fields List Property: InvoiceCostFields
+Propiedad de lista de campos: InvoiceCostFields
 
-M3 Fields Prefix: ICF\_
+Prefijo de los campos de M3: ICF\_
 
-DocBits Table Field Prefix: TF\_
+Prefijo de los campos de tabla de DocBits: TF\_
 
-Available M3 Fields: Please check M3 API or UI
+Campos de M3 disponibles: Consulte la API o la interfaz de M3
 
-Available DocBits Fields: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
+Campos de DocBits disponibles: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
 
-New update
+Nueva actualización
 
 ```
 ###########################
@@ -293,3 +293,234 @@ ICF_AO05=TF_accounting_object_5
 ICF_AO06=TF_accounting_object_6
 ICF_AO07=TF_accounting_object_7
 ```
+
+### Para clientes de EE. UU. actualizamos este mapeo a la V3
+
+````
+```
+# Changes from Version 2 to Version 3:# -StaticFields=DIVI,IBTP,BSCD,IMCD,TEPY,PYME,APCD,CRTP,GEOC,BKID
+# -SF_DIVI=PJA
+# +StaticFields=DIVI,IBTP,BSCD,IMCD,TEPY,PYME,APCD,CRTP,CONO,GEOC
+# +SF_DIVI=RFP
+# +SF_CONO=001
+# -SF_TEPY=J30
+# -SF_PYME=PTR
+# +#SF_TEPY=N00
+# +#SF_PYME=CSH
+# +#SF_APCD=MHIDALGO
+# -SF_BKID=001
+# +SF_GEOC=999999999
+# +#SF_BKID=DJ1
+# -HeaderFields=SUNO,IVDT,SINO,SPYN,CUCD,CUAM,VTAM,ACDT,SERS,FTCO,BSCD,PUNO,TXAP,CORI,PAIN
+# +HeaderFields=SUNO,IVDT,SINO,SPYN,CUCD,CUAM,VTAM,ACDT,SERS,FTCO,BSCD,PUNO,TXAP,CORI,PAIN,TCHG,CDC1,APCD,TEPY,PYME,BKID
+# -HF_CUAM=total_net_amount
+# +HF_CUAM=total_net_amount_us
+# -HF_ACDT=invoice_date
+# +#HF_ACDT=invoice_date
+# -HF_CORI = correlation_id
+# -HF_PAIN = sqr_field_esr_reference
+# -
+# +HF_CORI=correlation_id
+# +HF_PAIN=sqr_field_esr_reference
+# +HF_TCHG=additional_amount
+# +HF_CDC1=negative_amount
+# +HF_APCD=buyer_id
+# +HF_TEPY=payment_terms
+# +HF_PYME=payment_method
+# +HF_BKID=bank_id
+# +#HF_GEOC=supplier_geoc
+# -## Tax Line Static Fields
+# -InvoiceTaxStaticFields=RDTP,DIVI,VTCD
+# -IT_SF_RDTP=3
+# -IT_SF_DIVI=PJA
+# +# ## Tax Line Static Fields
+# +# InvoiceTaxStaticFields=RDTP,DIVI,VTCD,CONO
+# +# IT_SF_RDTP=3
+# +# IT_SF_DIVI=AAA
+# +# IT_SF_CONO=780
+# -## Tax Line Fields
+# -InvoiceTaxFields=VTCD,VTA1,VTP1,CLAM
+# -ITF_VTCD=TF_tax_code
+# -ITF_VTA1=TF_tax_amount
+# -ITF_VTP1=TF_tax_rate
+# -ITF_CLAM=TF_gross_amount
+# +# ## Tax Line Fields
+# +# InvoiceTaxFields=VTCD,VTA1,VTP1,CLAM
+# +# ITF_VTCD=TF_tax_code
+# +# ITF_VTA1=TF_tax_amount
+# +# ITF_VTP1=TF_tax_rate
+# +# ITF_CLAM=TF_gross_amount
+# -InvoiceReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD
+# +InvoiceReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
+# -IR_SF_DIVI=PJA
+# -IR_SF_SERS=0
+# +IR_SF_DIVI=RFP
+# -IR_SF_VTCD=52
+# +#IR_SF_VTCD=52
+# +IR_SF_CONO=001
+# -InvoiceReceiptFields=IVQA,PUUN,PUNO,PNLI,ITNO,POPN,SUDO,NEPR,GRPR,PPUN,NLAM,GLAM
+# +InvoiceReceiptFields=IVQA,PUUN,PUNO,PNLI,ITNO,POPN,SUDO,NEPR,GRPR,PPUN,NLAM,GLAM,TCHG,CDC1
+# -#IRF_PUNO = TF_purchase_order
+# -#IRF_PNLI = TF_line_number
+# +IRF_PUNO = TF_purchase_order
+# +IRF_PNLI = TF_line_number
+# -#IRF_NEPR = TF_net_unit_price
+# +IRF_NEPR = TF_net_unit_price
+# -IRF_PPUN = TF_unit
+# -#IRF_NLAM = TF_net_amount
+# +IRF_PPUN = TF_unit_code_price
+# +IRF_NLAM = TF_net_amount
+# +IRF_TCHG = TF_charges
+# +IRF_CDC1 = TF_discount
+# -OrderChargeStaticFields=RDTP,DIVI
+# +OrderChargeStaticFields=RDTP,DIVI,CONO
+# -OC_SF_DIVI=PJA
+# +OC_SF_DIVI=RFP
+# +OC_SF_CONO=001
+# -InvoiceCostStaticFields=RDTP,DIVI
+# +InvoiceCostStaticFields=RDTP,DIVI,CONO
+# -IC_SF_DIVI=PJA
+# +IC_SF_DIVI=RFP
+# +IC_SF_CONO=001
+
+###########################
+# Header
+###########################
+
+## Header Static Fields
+StaticFields=DIVI,IBTP,BSCD,IMCD,TEPY,PYME,APCD,CRTP,CONO,GEOC
+SF_DIVI=RFP
+SF_IBTP=20
+SF_CONO=001
+#SF_BSCD=DE
+SF_IMCD=0
+#SF_TEPY=N00
+#SF_PYME=CSH
+#SF_APCD=MHIDALGO
+SF_CRTP=1
+SF_GEOC=999999999
+#SF_BKID=DJ1
+
+## Header Fields
+HeaderFields=SUNO,IVDT,SINO,SPYN,CUCD,CUAM,VTAM,ACDT,SERS,FTCO,BSCD,PUNO,TXAP,CORI,PAIN,TCHG,CDC1,APCD,TEPY,PYME,BKID
+HF_SUNO=supplier_id
+HF_IVDT=invoice_date
+HF_SINO=invoice_id
+HF_SPYN=supplier_id
+HF_CUCD=currency
+HF_CUAM=total_net_amount_us
+#HF_VTAM=total_tax_amount
+#HF_ACDT=invoice_date
+#HF_SERS=invoice_sub_type
+HF_FTCO=supplier_country_code
+HF_PUNO=purchase_order
+HF_TXAP=tax_country_1
+HF_CORI=correlation_id
+HF_PAIN=sqr_field_esr_reference
+HF_TCHG=additional_amount
+HF_CDC1=negative_amount
+HF_APCD=buyer_id
+HF_TEPY=payment_terms
+HF_PYME=payment_method
+HF_BKID=bank_id
+#HF_GEOC=supplier_geoc
+
+###########################
+# Tax Line
+###########################
+
+# ## Tax Line Static Fields
+# InvoiceTaxStaticFields=RDTP,DIVI,VTCD,CONO
+# IT_SF_RDTP=3
+# IT_SF_DIVI=AAA
+# IT_SF_CONO=780
+
+# ## Tax Line Fields
+# InvoiceTaxFields=VTCD,VTA1,VTP1,CLAM
+# ITF_VTCD=TF_tax_code
+# ITF_VTA1=TF_tax_amount
+# ITF_VTP1=TF_tax_rate
+# ITF_CLAM=TF_gross_amount
+
+###########################
+# Receipt Line
+###########################
+
+InvoiceReceipt=invoice_table
+
+## Receipt Line Static Fields
+InvoiceReceiptStaticFields=RDTP,DIVI,SERS,RELP,VTCD,CONO
+IR_SF_RDTP=1
+IR_SF_DIVI=RFP
+IR_SF_RELP=1
+#IR_SF_VTCD=52
+IR_SF_CONO=001
+
+## Receipt Line Fields
+InvoiceReceiptFields=IVQA,PUUN,PUNO,PNLI,ITNO,POPN,SUDO,NEPR,GRPR,PPUN,NLAM,GLAM,TCHG,CDC1
+IRF_IVQA = TF_quantity
+IRF_PUUN = TF_unit
+IRF_PUNO = TF_purchase_order
+IRF_PNLI = TF_line_number
+IRF_ITNO = TF_item_number
+IRF_POPN = TF_item_number
+IRF_SUDO = TF_packing_slip
+IRF_NEPR = TF_net_unit_price
+IRF_GRPR = TF_gross_unit_price
+IRF_PPUN = TF_unit_code_price
+IRF_NLAM = TF_net_amount
+IRF_GLAM = TF_total_amount
+IRF_TCHG = TF_charges
+IRF_CDC1 = TF_discount
+
+###########################
+# Order Charge Line
+###########################
+
+OrderCharge=order_charges
+
+## Order Charge Static Fields
+OrderChargeStaticFields=RDTP,DIVI,CONO
+OC_SF_RDTP=2
+OC_SF_DIVI=RFP
+OC_SF_CONO=001
+
+## Order Charge Fields
+OrderChargeFields=NLAM,CHGT,CEID
+OCF_NLAM=TF_amount
+OCF_CHGT=TF_voucher_text
+OCF_CEID=TF_ledger_account
+
+
+###########################
+# Cost Line
+###########################
+
+InvoiceCost=cost_lines
+
+## Cost Line Static Fields
+InvoiceCostStaticFields=RDTP,DIVI,CONO
+IC_SF_RDTP=8
+IC_SF_DIVI=RFP
+IC_SF_CONO=001
+
+## Cost Line Fields
+InvoiceCostFields=NLAM,VTXT,AO01,AO02,AO03,AO04,AO05,AO06,AO07,VTCD,AIT1,AIT2,AIT3,AIT4,AIT5,AIT6,AIT7,VTP1,VTP2
+ICF_NLAM=TF_amount
+ICF_VTXT=TF_voucher_text
+ICF_AIT1=TF_ledger_account
+ICF_AIT2=TF_dimension_2
+ICF_AIT3=TF_dimension_3
+ICF_AIT4=TF_dimension_4
+ICF_AIT5=TF_dimension_5
+ICF_AIT6=TF_dimension_6
+ICF_AIT7=TF_dimension_7
+ICF_AO01=TF_accounting_object_1
+ICF_AO02=TF_accounting_object_2
+ICF_AO03=TF_accounting_object_3
+ICF_AO04=TF_accounting_object_4
+ICF_AO05=TF_accounting_object_5
+ICF_AO06=TF_accounting_object_6
+ICF_AO07=TF_accounting_object_7
+```
+````

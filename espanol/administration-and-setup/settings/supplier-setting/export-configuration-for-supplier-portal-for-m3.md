@@ -1,21 +1,23 @@
-# Exportar la configuración del portal de proveedores para M3
+# Configuración de exportación del portal de proveedores
 
-### Descripción General
+<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Configuración de exportación de proveedores"><figcaption><p>Página de configuración de exportación de proveedores</p></figcaption></figure>
+
+## Descripción general
 
 El archivo de configuración de exportación es un componente crucial en el portal de proveedores, definiendo cómo se mapea la información entre el portal de proveedores y el sistema ERP. Esta configuración asegura que los datos se transfieran y sincronicen con precisión entre los sistemas, permitiendo operaciones fluidas y eficientes.
 
-### Estructura del Archivo de Configuración
+## Estructura del archivo de configuración
 
 El archivo de configuración de exportación está estructurado como un objeto JSON que contiene múltiples mapeos. Cada mapeo está asociado con un programa específico en el sistema ERP y define las acciones a realizar, los campos a mapear y cualquier condición que se deba aplicar.
 
-### Componentes Clave
+## Componentes clave
 
-#### 1. Programa
+### 1. Programa
 
 * **Definición**: Especifica el programa ERP al que se aplica el mapeo.
 * **Ejemplo**: `"program": "CRS620MI"`
 
-#### 2. Acciones
+### 2. Acciones
 
 * **Definición**: Define las acciones que se pueden realizar, como agregar o actualizar registros.
 *   **Ejemplo**:
@@ -27,7 +29,7 @@ El archivo de configuración de exportación está estructurado como un objeto J
     }
     ```
 
-#### 3. Mapeo
+### 3. Mapeo
 
 • Definición: Especifica el mapeo entre los campos en el sistema ERP y los campos en el portal de proveedores.
 
@@ -50,7 +52,7 @@ El archivo de configuración de exportación está estructurado como un objeto J
 }
 ```
 
-#### 4. Lógica Condicional (if\_conditions)
+### 4. Lógica condicional (if\_conditions)
 
 • Definición: Especifica las condiciones que deben cumplirse para que se utilice un valor particular.
 
@@ -76,7 +78,7 @@ El archivo de configuración de exportación está estructurado como un objeto J
 }
 ```
 
-#### 5. Bucles (loop\_on)
+### 5. Bucles (loop\_on)
 
 • Definición: Define las secciones donde la configuración debe iterar sobre una lista de elementos, como detalles de dirección o referencia.
 
@@ -86,7 +88,7 @@ El archivo de configuración de exportación está estructurado como un objeto J
 "loop_on": "address_details"
 ```
 
-#### 6. Campos Calculados (value\_field\_calculated)
+### 6. Campos calculados (value\_field\_calculated)
 
 • Definición: Especifica campos que deben ser calculados en tiempo de ejecución, como generar la fecha actual.
 
@@ -99,7 +101,7 @@ El archivo de configuración de exportación está estructurado como un objeto J
 }
 ```
 
-#### 7. Mapeos de Campos con Listas (mapping\_field\_name y mapping\_list)
+### 7. Mapeos de campos con listas (mapping\_field\_name y mapping\_list)
 
 • Definición: Mapea valores específicos del portal de proveedores a valores correspondientes en el sistema ERP según una lista predefinida.
 
@@ -126,9 +128,9 @@ El archivo de configuración de exportación está estructurado como un objeto J
 }
 ```
 
-### Desglose de Ejemplo de Configuración
+## Desglose de ejemplo de configuración
 
-#### Adición y Actualización de Proveedores (CRS620MI)
+### Alta y actualización de proveedores (CRS620MI)
 
 • Programa: CRS620MI
 
@@ -150,7 +152,7 @@ El archivo de configuración de exportación está estructurado como un objeto J
 
 • Campos adicionales incluyen valores estáticos y mapeos condicionales.
 
-#### Detalles de Dirección (CRS620MI)
+### Detalles de dirección (CRS620MI)
 
 • Loop On: _**address\_details**_
 
@@ -170,7 +172,7 @@ El archivo de configuración de exportación está estructurado como un objeto J
 
 • Campos adicionales incluyen campos calculados como now() para la fecha actual.
 
-#### Detalles de Referencia (CRS620MI)
+### Detalles de referencia (CRS620MI)
 
 • Loop On: _**reference\_details**_
 
@@ -188,35 +190,35 @@ El archivo de configuración de exportación está estructurado como un objeto J
 
 • RFID se mapea utilizando una lista para traducir tipos como “PURCHASING”, “QA” y “FINANCE”.
 
-### Usando la Configuración de Exportación
+## Uso de la configuración de exportación
 
-#### 1. Subiendo el Archivo de Configuración
+### 1. Subir el archivo de configuración
 
-**1. Navegar a la Configuración de Exportación:**
+#### 1. Vaya a la configuración de exportación:
 
 • Vaya a la sección de Configuración de Exportación desde el menú principal.
 
-**2. Subir el Archivo de Configuración:**
+#### 2. Suba el archivo de configuración:
 
 • Haga clic en las secciones de Archivo de Mapeo ION o Archivo de Mapeo IDM para subir el archivo de configuración respectivo.
 
-**3. Guardar la Configuración:**
+#### 3. Guarde la configuración:
 
 • Después de subir, haga clic en el botón Guardar para aplicar la configuración.
 
-#### 2. Usando Plantillas Predeterminadas
+### 2. Uso de plantillas predeterminadas
 
 • Haga clic en el botón Usar Plantilla Predeterminada si desea volver a la plantilla de configuración predeterminada proporcionada por el sistema.
 
-#### 3. Formateando el JSON
+### 3. Formateo del JSON
 
 • Use el botón Formato para formatear automáticamente el código JSON para una mejor legibilidad.
 
-### Conclusión
+## Conclusión
 
 Este archivo de configuración es esencial para asegurar que los datos entre el portal de proveedores y el sistema ERP estén correctamente mapeados y sincronizados. Al comprender la estructura y los componentes clave, los administradores pueden gestionar y personalizar eficazmente el proceso de exportación para satisfacer sus requisitos comerciales específicos.
 
-### Ejemplo Completo
+## Ejemplo completo&#x20;
 
 ```json
 [{

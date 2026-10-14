@@ -1,4 +1,4 @@
-# Eliminar Líneas Vacías
+# Eliminar lineas con cantidad y monto vacios
 
 #### Parte 1: Eliminar Lineas con Cantidad y Monto Vacios
 

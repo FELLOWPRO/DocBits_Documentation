@@ -27,5 +27,3 @@ Once you have downloaded the ION API file from Infor, you can upload it by going
 ![](https://lh7-us.googleusercontent.com/ONyqYFVhCO3PTyBM6Y-OLrwdXGSQgYBoq4M-7Uof7XKjNhYvemhbjtjcgT4mKZ2-dVc4TWkesSgOWwXGf\_a4xLj0X27Y7ZloQSwTD0ey1yIUBNkkvcTX8rf6l24ljltClVoVCJlUWsyVxmzMhWdLDnI)
 
 \
-
-

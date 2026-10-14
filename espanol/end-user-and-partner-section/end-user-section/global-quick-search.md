@@ -20,7 +20,7 @@ Cada resultado muestra:
 
 Use las teclas de flecha arriba y abajo para resaltar un resultado y luego pulse <kbd>Enter</kbd> para abrirlo. Pulse <kbd>Esc</kbd> para cerrar la ventana.
 
-Solo aparecen en la lista de resultados las entradas para las que tiene permiso. Las entradas reservadas a administradores están ocultas para usuarios sin ese rol.
+<mark>Solo aparecen en la lista de resultados las entradas para las que tiene permiso. Las entradas reservadas a administradores están ocultas para usuarios sin ese rol.</mark>
 
 ## Búsquedas recientes
 
@@ -41,9 +41,9 @@ Si los ocho resultados visibles no son suficientes, haga clic en el enlace **Ver
 
 ## Referencia de teclado
 
-| Tecla                                         | Acción                                         |
-| --------------------------------------------- | ---------------------------------------------- |
+| Tecla | Acción |
+|---|---|
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Abrir la Búsqueda Rápida desde cualquier lugar |
-| <kbd>↑</kbd> / <kbd>↓</kbd>                   | Moverse entre los resultados                   |
-| <kbd>Enter</kbd>                              | Abrir el resultado resaltado                   |
-| <kbd>Esc</kbd>                                | Cerrar la ventana                              |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Moverse entre los resultados |
+| <kbd>Enter</kbd> | Abrir el resultado resaltado |
+| <kbd>Esc</kbd> | Cerrar la ventana |

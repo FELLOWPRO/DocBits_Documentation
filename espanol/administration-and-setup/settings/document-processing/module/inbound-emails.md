@@ -4,10 +4,10 @@
 
 DocBits puede recoger documentos directamente del correo electrónico, sin necesidad de subirlos manualmente. Hay **dos formas** de incorporar documentos por correo, ambas en **Configuración → Procesamiento de documentos → Importar**:
 
-| Método                                     | Cómo funciona                                                                                                                                        | Ideal para                                                                        |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **Cuenta de importación de correo**        | DocBits se conecta a un buzón de su propiedad (**IMAP**, **OAuth Office365** u **OAuth Office365 – Tenant**) e importa los documentos que encuentra. | Un buzón dedicado que ya recibe sus documentos (p. ej. `facturas@suempresa.com`). |
-| **Reenvío de correos (Correos entrantes)** | DocBits le proporciona una dirección única; cualquier remitente autorizado puede **reenviar** documentos a ella.                                     | Reenvío puntual desde muchos remitentes sin compartir credenciales del buzón.     |
+| Método | Cómo funciona | Ideal para |
+|--------|---------------|------------|
+| **Cuenta de importación de correo** | DocBits se conecta a un buzón de su propiedad (**IMAP**, **OAuth Office365** u **OAuth Office365 – Tenant**) e importa los documentos que encuentra. | Un buzón dedicado que ya recibe sus documentos (p. ej. `facturas@suempresa.com`). |
+| **Reenvío de correos (Correos entrantes)** | DocBits le proporciona una dirección única; cualquier remitente autorizado puede **reenviar** documentos a ella. | Reenvío puntual desde muchos remitentes sin compartir credenciales del buzón. |
 
 Puede usar cada método por separado o ambos a la vez.
 
@@ -64,7 +64,7 @@ Una vez activado, aparece una sección **Correos entrantes** en **Configuración
 Haga clic en **Guardar** para aplicar los cambios.
 
 {% hint style="info" %}
-**¿Qué adjuntos se importan?** DocBits importa los adjuntos de documentos admitidos —consulte [Importar → Importación de correo](../import/#email-import) para ver la lista completa de tipos de archivo— y descomprime los mensajes `.eml` reenviados y los adjuntos `winmail.dat` (TNEF) de Outlook para importar los documentos que contienen. La detección también se basa en el **contenido real del archivo**, por lo que los adjuntos a los que un servidor de correo de reenvío reasigna un tipo genérico (`application/octet-stream`) se importan igualmente de forma correcta. Las imágenes en línea (logotipos de firma / gráficos incrustados) se ignoran.
+**¿Qué adjuntos se importan?** DocBits importa los adjuntos de documentos admitidos —consulte [Importar → Importación de correo](../import/README.md#email-import) para ver la lista completa de tipos de archivo— y descomprime los mensajes `.eml` reenviados y los adjuntos `winmail.dat` (TNEF) de Outlook para importar los documentos que contienen. La detección también se basa en el **contenido real del archivo**, por lo que los adjuntos a los que un servidor de correo de reenvío reasigna un tipo genérico (`application/octet-stream`) se importan igualmente de forma correcta. Las imágenes en línea (logotipos de firma / gráficos incrustados) se ignoran.
 {% endhint %}
 
 ### Cuándo usar cada método

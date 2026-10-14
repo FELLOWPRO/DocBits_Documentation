@@ -27,7 +27,7 @@ La cabecera fija arriba de la página alberga el cuadro de búsqueda y los filtr
 
 La búsqueda y el filtro actuales se añaden a la URL, por lo que una vista filtrada se puede guardar como marcador o compartir.
 
-La Sitemap respeta los mismos permisos que el resto de DocBits. Las páginas a las que no tiene acceso no aparecen.
+<mark>La Sitemap respeta los mismos permisos que el resto de DocBits. Las páginas a las que no tiene acceso no aparecen.</mark>
 
 ## Modo desarrollador
 

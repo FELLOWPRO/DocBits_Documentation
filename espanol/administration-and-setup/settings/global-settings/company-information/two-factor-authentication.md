@@ -31,7 +31,7 @@ Activar esto bloquea los inicios de sesión con contraseña para los miembros qu
 Debajo del interruptor, el panel de **adopción de MFA** muestra qué tan extendido está el uso de la 2FA en tu organización antes de que la apliques:
 
 * el **porcentaje de adopción** general y una barra de progreso,
-* cuántos de tus miembros tienen la 2FA activada (p. ej., _0 de 74 miembros_),
+* cuántos de tus miembros tienen la 2FA activada (p. ej., *0 de 74 miembros*),
 * un desglose por factor: **Autenticador**, **Correo electrónico** y **Clave de acceso**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>El informe de adopción de MFA: porcentaje general, miembros registrados y un desglose por factor.</p></figcaption></figure>

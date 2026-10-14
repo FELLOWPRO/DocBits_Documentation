@@ -15,12 +15,14 @@ Para habilitar esta función:
 
 * **Cuando está habilitado**:
   * La **tabla de Orden de Compra** aparece dentro de la **Sección de Tablas** en el **Constructor de Diseño**.
-  *   No se mostrará ninguna notificación sobre el módulo deshabilitado.\\
+  *   No se mostrará ninguna notificación sobre el módulo deshabilitado.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 * **Cuando está deshabilitado**:
   * Una pista indicará que el módulo está deshabilitado.
-  *   La **tabla de PO** no será visible en la **Pantalla de Validación**.\\
+  *   La **tabla de PO** no será visible en la **Pantalla de Validación**.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_supplier.png" alt="DocBits Compra Pedido Proveedor"><figcaption></figcaption></figure>
 

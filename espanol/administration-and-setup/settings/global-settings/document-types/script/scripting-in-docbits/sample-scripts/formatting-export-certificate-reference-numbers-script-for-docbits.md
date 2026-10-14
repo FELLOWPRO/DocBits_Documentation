@@ -1,4 +1,4 @@
-# Números de Certificado de Exportación
+# Script de Formato de Numeros de Referencia de Certificado de Exportacion para DocBits
 
 Este documento describe el script "Formatting Export Certificate Reference Numbers", destinado a estandarizar los numeros de referencia en certificados de exportacion en DocBits. El formato adecuado asegura que los numeros de referencia cumplan con los requisitos de sistemas externos o regulaciones.
 

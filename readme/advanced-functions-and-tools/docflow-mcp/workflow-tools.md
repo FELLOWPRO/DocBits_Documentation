@@ -14,23 +14,6 @@ Lister tous les workflows de l'organisation actuelle.
 
 **Paramètres :** Aucun
 
-**Exemple de réponse :**
-
-```json
-[
-  {
-    "id": "a1b2c3d4-...",
-    "name": "Invoice Approval",
-    "version": 3,
-    "enabled": true,
-    "doc_types": ["INVOICE"],
-    "workflow_type": "advanced",
-    "created_on": "2025-01-15 10:30:00",
-    "last_modified_on": "2025-03-20 14:22:00"
-  }
-]
-```
-
 ## get\_workflow
 
 Obtenir les détails d'un workflow spécifique, y compris sa structure de nœuds et d'arêtes.
@@ -41,29 +24,6 @@ Obtenir les détails d'un workflow spécifique, y compris sa structure de nœuds
 |-----------|------|-------------|-------------|
 | `workflow_id` | string | Oui | UUID du workflow |
 
-**Exemple de réponse :**
-
-```json
-{
-  "id": "a1b2c3d4-...",
-  "name": "Invoice Approval",
-  "version": 3,
-  "enabled": true,
-  "doc_types": ["INVOICE"],
-  "workflow_type": "advanced",
-  "description": "Routes invoices based on amount",
-  "advanced_config": {
-    "nodes": [
-      {"node_id": "when-1", "node_type": "when", "label": "Amount > 1000"},
-      {"node_id": "then-1", "node_type": "then", "label": "Send for Approval"}
-    ],
-    "edges": [
-      {"source_node_id": "when-1", "target_node_id": "then-1"}
-    ]
-  }
-}
-```
-
 ## delete\_workflow
 
 Supprimer un workflow par ID (suppression logique).
@@ -73,15 +33,6 @@ Supprimer un workflow par ID (suppression logique).
 | Paramètre | Type | Obligatoire | Description |
 |-----------|------|-------------|-------------|
 | `workflow_id` | string | Oui | UUID du workflow à supprimer |
-
-**Exemple de réponse :**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-..."
-}
-```
 
 ## test\_advanced\_workflow
 
@@ -94,83 +45,17 @@ Tester l'exécution d'un workflow avancé. Vous pouvez optionnellement fournir u
 | `workflow_id` | string | Oui | UUID du workflow avancé |
 | `doc_id` | string | Non | UUID d'un document pour le test |
 
-**Exemple de réponse :**
-
-```json
-{
-  "success": true,
-  "workflow_id": "a1b2c3d4-...",
-  "execution_time": 0.234,
-  "workflow_result": "completed",
-  "node_results": {
-    "when-1": {"status": "success", "output": true},
-    "then-1": {"status": "success"}
-  },
-  "logs": [
-    {
-      "node_id": "when-1",
-      "node_type": "when",
-      "status": "success",
-      "error": null,
-      "duration_ms": 12
-    }
-  ]
-}
-```
-
 ## list\_test\_scenarios
 
 Lister tous les scénarios de test de workflow pour l'organisation.
 
 **Paramètres :** Aucun
 
-**Exemple de réponse :**
-
-```json
-[
-  {
-    "id": "scenario-uuid",
-    "name": "Invoice over 1000 EUR",
-    "workflow_id": "a1b2c3d4-...",
-    "enabled": true,
-    "status": "passed",
-    "last_run": "2025-03-20 14:00:00"
-  }
-]
-```
-
 ## list\_cards
 
 Lister toutes les cartes de workflow disponibles avec leurs conditions et configuration.
 
 **Paramètres :** Aucun
-
-**Exemple de réponse :**
-
-```json
-[
-  {
-    "id": "card-uuid",
-    "text": "Document Type Is",
-    "card_type": "document_type_is",
-    "card_version": 1,
-    "category": "Document",
-    "when_condition": true,
-    "and_condition": false,
-    "then_condition": false
-  },
-  {
-    "id": "card-uuid-2",
-    "text": "Send Email Notification",
-    "card_type": "send_email",
-    "card_version": 1,
-    "category": "Communication",
-    "when_condition": false,
-    "and_condition": false,
-    "then_condition": true
-  }
-]
-```
 
 {% hint style="info" %}
 Les cartes ont des indicateurs de rôle : `when_condition` (déclencheur), `and_condition` (condition supplémentaire) et `then_condition` (action). Utilisez-les pour déterminer dans quels types de nœuds une carte peut être utilisée.

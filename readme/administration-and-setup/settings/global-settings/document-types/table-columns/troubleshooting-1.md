@@ -1,55 +1,42 @@
 # Dépannage
 
-## Voici des solutions aux problèmes courants liés aux configurations des colonnes de table :
+## La nouvelle colonne n'apparaît pas sur l'écran de validation
 
+* Le document a été traité avant l'ajout de la colonne. Les modifications s'appliquent aux documents importés ou redémarrés ensuite, **redémarrez le document** (Dashboard → menu du document → Restart).
+* La colonne est **Hidden**. Vérifiez l'option dans la liste Table Columns.
+* La colonne a été ajoutée à une **autre table** que celle affichée. L'écran de validation affiche les tables du type de document ; comparez la colonne *Table name*.
+* Le document n'est pas du type de document que vous avez configuré.
 
+## La colonne est là mais toujours vide
 
-**Configurations de colonnes incorrectes :**
+* Le fournisseur dispose de **règles entraînées** et la nouvelle colonne n'y est pas mappée. Ouvrez l'un des documents du fournisseur dans l'entraînement de tableau et mappez la colonne, ou activez *Use AI* sur la colonne.
+* Avec l'extraction par IA, la valeur n'est pas reconnaissable sur le document (pas d'en-tête, abrégée, dans une autre langue). Ajoutez un [AI table tag](../../../../../end-user-and-partner-section/end-user-section/ai-table/ai-table-tags.md) qui nomme la colonne, ou mappez-la dans l'entraînement.
 
-* **Problème :** Les données ne s'affichent pas ou ne sont pas stockées correctement, possiblement en raison de types de données incorrects, de contraintes manquantes ou de noms de colonnes insuffisants.
-*   **Solution :**
+## « Column name already exists »
 
-    Examinez les configurations des colonnes dans la table de la base de données et assurez-vous que les types de données conviennent à chaque colonne.
+Une colonne portant le même nom technique existe déjà dans la table. Si elle ne figure pas dans la liste, il s'agit d'une colonne par défaut masquée : le message indique *Please activate it in Table Column settings*. Désactivez *Hidden* sur cette colonne au lieu d'en créer une nouvelle.
 
-    Ajoutez les contraintes manquantes telles que NOT NULL ou UNIQUE pour améliorer l'intégrité des données.
+## L'approbation est bloquée par une colonne obligatoire
 
-    Renommez les colonnes pour utiliser des noms plus explicites et uniques qui décrivent précisément le contenu de la colonne.
+Le message sur le tableau nomme la colonne. Renseignez la cellule dans chaque ligne ou (si la valeur n'existe pas sur ce document) décochez *Is Required* pour la colonne, redémarrez le document et réessayez. Demandez-vous si la colonne doit réellement être obligatoire (voir [Bonnes pratiques](best-practices-2.md)).
 
+## L'IA renseigne une colonne avec une mauvaise valeur
 
+Cas typique : `CHARGES` reçoit le total de la ligne, et chaque ligne échoue alors au contrôle du total avec *Line total does not match quantity x unit price (expected …, got …)*, car les frais font partie de la formule `quantité × prix unitaire + frais`.
 
-**Problèmes causés par des colonnes supprimées :**
+* Décochez *Use AI* sur la colonne si les règles entraînées la saisissent correctement.
+* Si le fournisseur n'a pas de règles, entraînez le tableau une fois (Table training) afin que la colonne soit liée à la bonne position, ou masquez la colonne si le fournisseur n'imprime jamais cette valeur.
+* En dernier recours, *Skip table validation* dans les More Settings du type de document désactive tous les contrôles de tableau pour l'ensemble du type de document ; l'écart n'est alors plus détecté, pas plus que les colonnes obligatoires vides.
 
-* **Problème :** Après la suppression d'une colonne d'une table, des problèmes surviennent car des rapports, des requêtes ou la logique applicative font toujours référence à cette colonne.
-*   **Solution :**
+## PO matching : « Line Item Table is missing Mandatory column »
 
-    Examinez tous les rapports, requêtes et la logique applicative pour vous assurer qu'il n'existe plus de références à la colonne supprimée.
+Le PO matching nécessite les colonnes par défaut numéro d'article, prix unitaire, quantité et montant total. L'une d'elles est masquée ou a été remplacée par une colonne personnalisée. Réaffichez la colonne par défaut, ou mappez la valeur sur celle-ci dans l'entraînement de tableau.
 
-    Mettez à jour tous les rapports, requêtes et la logique applicative concernés pour refléter ou supprimer la colonne supprimée. Si nécessaire, restaurez temporairement la colonne supprimée et migrez les données vers une nouvelle structure avant de la supprimer définitivement.
+## Un script ou un export échoue après la suppression d'une colonne
 
+Le script ou le mapping d'export fait toujours référence au *Column name* supprimé. Supprimez la référence, ou ajoutez à nouveau la colonne avec le même titre ; le nom technique est dérivé du titre et correspond de nouveau.
 
+## Pour aller plus loin
 
-**Données manquantes ou incohérentes :**
-
-* **Problème :** Les données sont incomplètes ou incohérentes en raison de champs obligatoires manquants ou de types de données incorrects.
-*   **Solution :**&#x20;
-
-    Examinez la structure de la table et assurez-vous que tous les champs obligatoires sont marqués NOT NULL pour garantir qu'aucune donnée importante ne manque.
-
-    Effectuez un nettoyage des données pour corriger les données incohérentes ou invalides et mettez à jour les types de données si nécessaire pour améliorer la cohérence.
-
-
-
-**Problèmes de performance dus à des index manquants :**
-
-* **Problème :** Les requêtes sur de grandes tables sont lentes car des colonnes importantes ne sont pas indexées.
-*   **Solution :**&#x20;
-
-    Identifiez les colonnes les plus fréquemment interrogées et ajoutez des index pour améliorer la performance des requêtes.
-
-    Sachez que trop d'index peuvent également affecter les performances d'écriture et de mise à jour ; un indexage équilibré est donc important.
-
-
-
-En appliquant ces solutions, vous pouvez résoudre les problèmes courants liés aux colonnes de table et améliorer l'efficacité, la cohérence et la performance de votre base de données.
-
-
+* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md) : qualité de l'extraction, OCR, E-Text
+* [Training Line Fields / Table Training](../../../../setup/document-training/training-line-fields-table-training/README.md)

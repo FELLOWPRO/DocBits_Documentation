@@ -1,35 +1,41 @@
-# Modification des Modèles d'Email
+# Modification des modèles d'e-mails
 
-#### Aperçu
+<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="Modèles d'e-mails des fournisseurs"><figcaption><p>Page des modèles d'e-mails des fournisseurs</p></figcaption></figure>
 
-La fonctionnalité des Modèles d'Email permet aux administrateurs de créer et de personnaliser des communications par email qui sont automatiquement envoyées aux fournisseurs. L'un des éléments clés utilisés dans ces modèles est le `{{magic_link}}`, qui fournit un lien dynamique adapté à chaque destinataire.
+### Aperçu
 
-**Qu'est-ce que `{{magic_link}}` ?**
+La fonctionnalité Email Templates permet aux administrateurs de créer et de personnaliser les e-mails envoyés automatiquement aux fournisseurs. L'un des éléments clés utilisés dans ces modèles est le `{{magic_link}}`, qui fournit un lien dynamique adapté à chaque destinataire.
 
-Le `{{magic_link}}` est un espace réservé qui est remplacé dynamiquement par une URL unique lorsque l'email est envoyé. Cette URL dirige généralement le destinataire à accomplir une action, comme l'inscription, l'approbation ou l'accès à une partie spécifique du portail fournisseur.
+#### Qu'est-ce que `{{magic_link}}` ?
 
-#### Modification des Modèles d'Email
+Le `{{magic_link}}` est un espace réservé qui est remplacé dynamiquement par une URL unique lors de l'envoi de l'e-mail. Cette URL dirige généralement le destinataire vers une action à effectuer, comme l'inscription, l'approbation ou l'accès à une partie précise du portail fournisseur.
 
-**Accéder à l'Éditeur de Modèle d'Email**
+### Modification des modèles d'e-mails
 
-1. **Naviguer vers les Modèles d'Email** :
-   * Allez dans la section **Modèles d'Email** depuis le menu principal.
-2. **Sélectionner un Modèle à Modifier** :
-   * Choisissez le modèle d'email que vous souhaitez modifier en cliquant sur le nom du modèle (par exemple, "Email d'Invitation au Fournisseur").
-3. **Modifier le Modèle** :
-   * L'éditeur vous permet de modifier à la fois le code HTML et le design visuel de l'email.
-   * Vous pouvez basculer entre l'édition visuelle et l'édition de code en utilisant les onglets fournis.
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
 
-**Définir `{{magic_link}}` comme un Lien**
+#### Accès à l'éditeur de modèles d'e-mails
 
-Pour définir `{{magic_link}}` comme un lien cliquable dans l'email, vous devez vous assurer qu'il est correctement formaté dans le code HTML du modèle. Suivez ces étapes :
+1. **Accédez à Email Templates** :
+   * Allez dans la section **Email Templates** depuis le menu principal.
+2. **Sélectionnez un modèle à modifier** :
+   * Choisissez le modèle d'e-mail que vous souhaitez modifier en cliquant sur son nom (par exemple « Supplier Invitation Email »).
+3. **Modifiez le modèle** :
+   * L'éditeur vous permet de modifier à la fois le code HTML et la conception visuelle de l'e-mail.
+   * Vous pouvez passer de l'édition visuelle à l'édition du code grâce aux onglets prévus à cet effet.
 
-1. **Localiser la Section de Lien dans le Code HTML** :
-   * Dans l'éditeur de code, trouvez la section où vous souhaitez que le lien magique apparaisse. Cela se trouve généralement dans une balise `<a>` (ancre).
-2.  **Insérer l'Espace Réservé `{{magic_link}}`** :
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
+
+#### Définir `{{magic_link}}` comme lien
+
+Pour définir `{{magic_link}}` comme lien cliquable dans l'e-mail, vous devez vous assurer qu'il est correctement formaté dans le code HTML du modèle. Suivez ces étapes :
+
+1. **Repérez la section du lien dans le code HTML** :
+   * Dans l'éditeur de code, trouvez l'endroit où vous souhaitez faire apparaître le lien magique. Il se trouve généralement dans une balise `<a>` (ancre).
+2.  **Insérez l'espace réservé `{{magic_link}}`** :
 
     * Remplacez l'attribut `href` de la balise d'ancre par `{{magic_link}}`.
-    * Assurez-vous que le lien est stylé de manière appropriée pour le modèle d'email. Voici un exemple :
+    * Veillez à ce que le lien soit mis en forme de manière appropriée pour le modèle d'e-mail. Voici un exemple :
 
     ```html
     <a href="{{magic_link}}" target="_blank" style="
@@ -43,34 +49,35 @@ Pour définir `{{magic_link}}` comme un lien cliquable dans l'email, vous devez 
         text-decoration: none;
         display: inline-block;
         cursor: pointer;">
-        Compléter l'Inscription
+        Complete Registration
     </a>
     ```
 
-#### 3. Personnaliser le Texte du Lien :
+### 3. Personnaliser le texte du lien :
 
-• Modifiez le texte entre les balises d'ouverture \<a> et de fermeture \</a> pour refléter l'action que vous souhaitez que l'utilisateur effectue. Par exemple, “Compléter l'Inscription” ou “Accéder à Votre Compte”.
+• Modifiez le texte entre les balises ouvrante \<a> et fermante \</a> pour refléter l'action que vous souhaitez voir effectuer par l'utilisateur. Par exemple « Complete Registration » ou « Access Your Account ».
 
-4. Enregistrer et Tester le Modèle :
+4\. Enregistrer et tester le modèle :
 
-• Après avoir effectué les modifications, cliquez sur le bouton Enregistrer.
+• Après avoir effectué les modifications, cliquez sur le bouton Save.
 
-• Vous pouvez utiliser le bouton Envoyer un Test pour envoyer un email test afin de vous assurer que le lien fonctionne comme prévu.
+• Vous pouvez utiliser le bouton Send Test pour envoyer un e-mail de test et vérifier que le lien fonctionne comme prévu.
 
-### Meilleures Pratiques pour Utiliser \{{magic\_link\}}
+## Bonnes pratiques pour l'utilisation de \{{magic\_link\}}
 
-• Placement du Lien : Placez le \{{magic\_link\}} de manière proéminente dans l'email pour garantir qu'il est facilement accessible aux destinataires.
+• Emplacement du lien : placez le \{{magic\_link\}} de manière bien visible dans l'e-mail afin qu'il soit facilement accessible aux destinataires.
 
-• Appel à l'Action Clair : Le texte à l'intérieur du lien doit être un appel à l'action clair, tel que “Compléter l'Inscription” ou “Confirmer Votre Email.”
+• Appel à l'action clair : le texte du lien doit être un appel à l'action clair, tel que « Complete Registration » ou « Confirm Your Email ».
 
-• Style : Assurez-vous que le lien est stylé de manière cohérente avec le reste du modèle d'email et se distingue visuellement.
+• Mise en forme : veillez à ce que le lien soit mis en forme de manière cohérente avec le reste du modèle d'e-mail et ressorte visuellement.
 
-• Test : Envoyez toujours un email test après avoir modifié le modèle pour vérifier que le \{{magic\_link\}} se résout correctement et que le style est approprié.
+• Test : envoyez toujours un e-mail de test après avoir modifié le modèle afin de vérifier que le \{{magic\_link\}} est correctement résolu et que la mise en forme est appropriée.
 
-### Conclusion
+## Conclusion
 
-En définissant correctement le \{{magic\_link\}} dans vos modèles d'email, vous pouvez vous assurer que les destinataires reçoivent un email personnalisé et actionnable qui les guide vers la tâche appropriée dans votre portail fournisseur. Cela améliore l'expérience utilisateur et garantit des processus d'intégration et de communication fluides.
+En définissant correctement le \{{magic\_link\}} dans vos modèles d'e-mails, vous vous assurez que les destinataires reçoivent un e-mail personnalisé et exploitable qui les guide vers la tâche appropriée dans votre portail fournisseur. Cela améliore l'expérience utilisateur et garantit des processus d'intégration et de communication fluides.
 
-\\
+\
 
-Cette documentation fournit des instructions étape par étape pour les administrateurs sur la façon de définir et d'utiliser le \{{magic\_link\}} dans les modèles d'email, garantissant que les emails sont à la fois fonctionnels et visuellement attrayants.
+
+Cette documentation fournit aux administrateurs des instructions pas à pas pour définir et utiliser le \{{magic\_link\}} dans les modèles d'e-mails, afin que les e-mails soient à la fois fonctionnels et visuellement attrayants.

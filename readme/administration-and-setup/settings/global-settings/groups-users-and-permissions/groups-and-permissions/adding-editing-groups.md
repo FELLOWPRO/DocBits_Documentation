@@ -1,21 +1,38 @@
-# Ajout/Modification de Groupes
+# Ajout/modification de groupes
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-### Pour ajouter un nouveau groupe ou changer les permissions d'un groupe existant, vous pouvez faire ce qui suit :
+## Pour ajouter un nouveau groupe ou modifier les autorisations d'un groupe existant, procédez comme suit :
 
-* **Naviguer vers les Paramètres de Groupe :** Connectez-vous à votre compte administrateur et allez dans les Paramètres de Groupe dans le panneau d'administration.
+* **Accédez aux paramètres des groupes :** Connectez-vous à votre compte administrateur et allez dans Group Settings dans le panneau d'administration.
 
-Cette fenêtre s'ouvrira :
+<figure><img src="../../../../../.gitbook/assets/groups_settings_overview.png" alt="Vue d'ensemble des paramètres des groupes"><figcaption></figcaption></figure>
 
-* **Cliquez sur le bouton + Nouveau :** Si vous souhaitez ajouter un nouveau groupe, cliquez sur le bouton + Nouveau pour commencer le processus d'ajout d'un nouveau groupe.
-* **Remplissez le tableau :** Fournissez le nom du groupe et une description du groupe.
-* **Enregistrez les détails :** Une fois que vous avez rempli le nom du groupe et la description, cliquez sur le bouton "Enregistrer".
+Cette fenêtre s'ouvre :
 
-### Modification des Groupes :
+<figure><img src="../../../../../.gitbook/assets/groups_list_overview.png" alt="Vue d'ensemble de la liste des groupes"><figcaption></figcaption></figure>
 
-* **Modifier les Groupes :** Pour modifier des groupes, cliquez sur "modifier", ici vous pouvez changer le nom du groupe.
-* **Activer les Groupes & permissions :** Pour rendre le groupe visible, "Groupes & permissions" doit être activé.
-* **Vérifiez les résultats :** Après avoir enregistré, examinez les résultats pour vous assurer que le groupe a été ajouté, modifié ou mis à jour avec succès.
+* **Cliquez sur le bouton + New :** Si vous souhaitez ajouter un nouveau groupe, cliquez sur le bouton + New pour démarrer le processus d'ajout d'un nouveau groupe.
+
+<figure><img src="../../../../../.gitbook/assets/add_new_group_button.png" alt="Bouton d'ajout d'un nouveau groupe"><figcaption></figcaption></figure>
+
+* **Remplissez le formulaire :** Indiquez le nom du groupe et une description du groupe.
+* **Enregistrez les informations :** Une fois le nom et la description du groupe renseignés, cliquez sur le bouton « Save ».
+
+<figure><img src="../../../../../.gitbook/assets/new_group_form_save.png" alt="Enregistrement du formulaire de nouveau groupe"><figcaption></figcaption></figure>
+
+## Modification des groupes :
+
+* **Modifier les groupes :** Pour modifier des groupes, cliquez sur « edit » ; vous pouvez ici changer le nom du groupe
+
+<figure><img src="../../../../../.gitbook/assets/edit_group_button.png" alt="Bouton de modification du groupe"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/edit_group_form.png" alt="Formulaire de modification du groupe"><figcaption></figcaption></figure>
+
+* **Activer Groups & permissions :** Pour que le groupe soit visible, « Groups & permissions » doit être activé.
+
+<figure><img src="../../../../../.gitbook/assets/enable_groups_and_permissions_toggle.png" alt="Commutateur d'activation de Groups and Permissions"><figcaption></figcaption></figure>
+
+* **Vérifiez les résultats :** Après l'enregistrement, contrôlez les résultats pour vous assurer que le groupe a bien été ajouté, modifié ou mis à jour.

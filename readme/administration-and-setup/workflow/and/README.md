@@ -1,64 +1,59 @@
-# And
+# And : choisir une carte de condition
 
-## Comprendre les cartes « And »
+Utilisez une carte **And** pour décider si un workflow doit se poursuivre après son déclencheur **When**. Ajoutez les contrôles dont vous avez besoin avant l'action **Then**. Chaque carte affiche des champs à renseigner, comme **Operator**, **Field Name** ou **Value** ; les captures d'écran montrent les modèles de cartes disponibles, et non des règles terminées.
 
-### **Objectif des cartes « And » :**
+Dans le **Workflow Builder**, sélectionnez **Add Card** sous **And...**. Choisissez une catégorie à gauche, ou saisissez le nom d'une carte dans **Search Card**. Sélectionnez l'aperçu d'une carte pour l'ajouter au workflow. Vous pouvez faire défiler la liste des aperçus pour voir d'autres cartes. Utilisez **×** pour fermer le sélecteur sans choisir d'autre carte. Une fois les cartes configurées, enregistrez le workflow. Consultez [Workflow](../README.md) pour les étapes **When**, **And** et **Then** dans leur ensemble.
 
-* Les cartes **And** servent de cartes de condition qui définissent les critères devant être remplis pour que le workflow se poursuive. Elles agissent en pratique comme des opérateurs logiques « ET » : toutes les conditions spécifiées dans ces cartes doivent être satisfaites pour que l'action suivante soit déclenchée.
+## Compare with Purchase Order
 
-#### Catégories de cartes « And »
+Utilisez ces cartes pour comparer les données d'une commande ou d'une facture avec un bon de commande, par exemple le prix unitaire, la date de livraison promise, les frais ou la quantité. Choisissez les champs, l'opérateur et la tolérance éventuelle demandés par la carte sélectionnée. Consultez [Compare with Purchase Order](compare-with-purchase-order/README.md) pour le détail des cartes.
 
-D'après les captures d'écran, ces cartes couvrent un large éventail de conditions, parmi lesquelles :
+<figure><img src="../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Sélecteur de cartes And en anglais avec Compare with Purchase Order sélectionné ; les aperçus visibles comprennent les comparaisons de prix unitaire, de date de livraison, de frais et de quantité."><figcaption>Catégorie Compare with Purchase Order dans le Sandbox anglais.</figcaption></figure>
 
-* **Compare with Purchase Order** :
-  * Des conditions liées à la validation et à la comparaison par rapport aux bons de commande, comme la comparaison des dates de livraison, des prix unitaires ou des écarts de quantité. Elles sont essentielles pour garantir que les transactions respectent les conditions convenues.
+## Document Field
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Choisissez cette catégorie pour vérifier une case à cocher ou le statut d'un champ, comparer un champ avec une valeur ou comparer deux champs. Renseignez les espaces réservés **Field Name** et **Operator** de la carte choisie. Certaines comparaisons demandent également une tolérance. Consultez [Document Field](document-field/README.md).
 
-* **Document Field** :
-  * Elles impliquent des conditions basées sur des champs spécifiques au sein des documents, comme des cases cochées, la comparaison de valeurs de champs ou la vérification qu'un champ de document respecte une tolérance définie. C'est particulièrement important pour l'intégrité des données et les contrôles automatisés au sein des formulaires ou des systèmes de gestion documentaire.
+<figure><img src="../../../.gitbook/assets/and-category-document-field-en.png" alt="Sélecteur de cartes And en anglais avec Document Field sélectionné ; les aperçus visibles vérifient une case à cocher, le statut d'un champ, des valeurs de champs et des comparaisons entre deux champs."><figcaption>Les contrôles Document Field utilisent les valeurs du document en cours.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Date & Time
 
-* **Date & Time :**
-  * Des conditions basées sur les dates et les heures
+Utilisez **Date & Time** pour comparer une date ou une heure avec une plage, ou pour comparer **Today** avec une date choisie. Sélectionnez l'**Operator** et les valeurs de date dans la carte. Consultez [Date & Time](date-and-time/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-date-time-en.png" alt="Sélecteur de cartes And en anglais avec Date & Time sélectionné ; deux aperçus comparent une date ou une heure avec une plage et comparent Today avec une Date."><figcaption>Date & Time propose un contrôle de plage et un contrôle par rapport à la date du jour.</figcaption></figure>
 
-* **Document** :
-  * Des conditions basées sur les caractéristiques du document, comme son type ou son association à une sous-organisation particulière. Ces conditions peuvent orienter les workflows en fonction de la catégorisation des documents ou de l'implication d'un service.
+## Document
 
-<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Utilisez ces cartes lorsqu'un workflow doit dépendre du **type de document** ou de la **sous-organisation**. Choisissez le type ou l'organisation indiqué dans la carte. Consultez [Document](document/README.md).
 
-* **Logic** :
-  * Des conditions logiques pouvant impliquer des évaluations telles que « Continuer avec une probabilité de X % » ou l'exécution de requêtes HTTPS, essentielles pour les intégrations et la prise de décision probabiliste au sein des workflows.
+<figure><img src="../../../.gitbook/assets/and-category-document-en.png" alt="Sélecteur de cartes And en anglais avec Document sélectionné ; les aperçus vérifient le type de document et l'appartenance à une sous-organisation."><figcaption>Les conditions Document vérifient le type ou la sous-organisation.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Logic
 
-* **Status** :
-  * Centrées sur le statut des documents ou des tâches, ces conditions garantissent que seuls les éléments dans certains états déclenchent des workflows spécifiques, ce qui est essentiel pour une gestion de processus pilotée par le statut.
+Cette catégorie comprend des contrôles reposant sur une table de décision, une réponse HTTPS, la disponibilité d'un module, un prix d'article proposé dans un devis, une valeur de probabilité ou deux valeurs. Ouvrez la carte concernée et renseignez ses espaces réservés nommés ; par exemple, la carte HTTPS demande une URL, une méthode et un code de statut accepté. Consultez [Logic](logic/README.md).
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/and-category-logic-en.png" alt="Sélecteur de cartes And en anglais avec Logic sélectionné ; les aperçus comprennent les cartes table de décision, requête HTTPS, module actif, prix du devis, probabilité et comparaison de valeurs."><figcaption>Logic propose plusieurs types de conditions ; choisissez celui qui correspond à votre règle.</figcaption></figure>
 
-* **Table** :
-  * Elles impliquent des conditions basées sur les données d'un tableau, comme la correspondance avec des motifs regex ou la comparaison de valeurs au sein d'un tableau. De telles conditions sont essentielles pour valider et manipuler de grands ensembles de données.
+## Status
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Utilisez **Status** pour vérifier si un document a un statut donné ou si son statut fait partie d'un ensemble sélectionné. Choisissez l'**Operator** et le **Status** dans la carte. Consultez [Status](status/README.md).
 
-* **Assignee** :
-  * Des conditions basées sur les assignés d'une tâche ou d'un document. Cela garantit que les actions ne sont effectuées que lorsque certains utilisateurs sont impliqués, renforçant la responsabilité et la précision des tâches.
+<figure><img src="../../../.gitbook/assets/and-category-status-en.png" alt="Sélecteur de cartes And en anglais avec Status sélectionné ; deux aperçus comparent le statut du document avec un Status ou un ensemble de statuts."><figcaption>Les conditions Status vérifient l'état actuel du document.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Table
 
-### Application pratique
+Ces cartes examinent les lignes des tableaux d'un document. Les options visibles comprennent des contrôles de dates, des motifs de texte, la durée de conservation et des comparaisons entre colonnes. Sélectionnez le **Table name** et le **Column Name** avant de choisir un opérateur ou un motif. Consultez [Table](table/README.md).
 
-Ces cartes « And » sont configurées au sein du workflow pour effectuer des contrôles et des validations qui garantissent que le processus respecte strictement les règles métier et les normes d'intégrité des données. Par exemple :
+<figure><img src="../../../.gitbook/assets/and-category-table-en.png" alt="Sélecteur de cartes And en anglais avec Table sélectionné ; les aperçus visibles comprennent la date, le motif regex, la durée de conservation et les comparaisons de colonnes de tableau."><figcaption>Les conditions Table utilisent les lignes et les colonnes d'un tableau du document.</figcaption></figure>
 
-* **Un workflow peut utiliser une carte « And » pour vérifier que le montant total d'une facture correspond au bon de commande avant de déclencher le paiement.**
-* **Un autre workflow pourrait utiliser une carte « And » pour s'assurer qu'un document est examiné par des membres d'équipe précis avant de passer à l'étape suivante.**
+## Compare with Quote Price
 
-### Conclusion
+Utilisez ces cartes pour comparer un article avec les données de prix d'un devis. Les choix visibles couvrent l'ID de l'article, le type de fournisseur, l'ID d'article du fournisseur, le prix unitaire et l'unité de mesure. L'**Operator** et les espaces réservés de données dépendent de la carte que vous sélectionnez.
 
-Les cartes « And » constituent un composant fondamental des systèmes de workflow qui exigent un contrôle précis de l'exécution des processus en fonction de plusieurs conditions. Elles garantissent que chaque étape d'un workflow ne se poursuit que lorsque tous les critères nécessaires sont pleinement remplis, automatisant ainsi des arbres de décision complexes au sein des processus métier.
+<figure><img src="../../../.gitbook/assets/and-category-quote-price-en.png" alt="Sélecteur de cartes And en anglais avec Compare with Quote Price sélectionné ; cinq aperçus couvrent l'ID de l'article, le type de fournisseur, l'ID d'article du fournisseur, le prix unitaire et l'unité de mesure."><figcaption>Compare with Quote Price est une catégorie distincte dans le sélecteur de cartes actuel.</figcaption></figure>
 
-Comprendre et configurer correctement ces cartes est essentiel pour exploiter pleinement les capacités de votre système de gestion des workflows afin d'améliorer l'efficacité, la précision et la conformité au sein des processus organisationnels.
+## Assignee
+
+Utilisez **Assignee** lorsque la condition dépend de l'utilisateur ou du groupe assigné. Choisissez si la comparaison porte sur un seul utilisateur ou groupe, ou sur un ensemble sélectionné. Consultez [Assignee](assignee/README.md).
+
+<figure><img src="../../../.gitbook/assets/and-category-assignee-en.png" alt="Sélecteur de cartes And en anglais avec Assignee sélectionné ; les aperçus comparent l'utilisateur ou le groupe assigné avec un ou plusieurs choix."><figcaption>Les conditions Assignee vérifient l'utilisateur ou le groupe assigné au document.</figcaption></figure>

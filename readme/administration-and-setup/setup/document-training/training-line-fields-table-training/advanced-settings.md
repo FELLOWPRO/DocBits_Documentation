@@ -6,6 +6,8 @@ To access these settings, activate **Training Mode** and click the **Settings** 
 
 <figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-gear-en-20261006.png" alt="Table extraction screen in training mode with the mouse over the Settings gear icon in the top action bar."><figcaption><p>The Settings gear in the training mode action bar opens the Advanced Settings.</p></figcaption></figure>
 
+The examples below use a synthetic invoice and controlled reference responses. They illustrate the settings, the requests triggered by the UI actions and the displayed reference results. They do not verify the extraction service against a real document. In the three replacement result figures, Settings is reopened after the action so that the configuration and the remaining rows can be seen together. The same three line items remain in these examples; the different actions and settings explain how each reference result was reached.
+
 ### Header Row Count
 
 **Use this setting to define how many lines make up the table header.**
@@ -28,7 +30,7 @@ If you don’t set this, DocBits may treat the second line as data instead of pa
 
 After:
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-en-20261006.png" alt="Extracted table with Header row count 2: columns are mapped to Position, Description, Quantity, Unit Price and Net Amount and the rows are correct."><figcaption><p>After: header and data rows are separated correctly.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-header-after-en-20261011.png" alt="Reference table after setting Header row count to 2 and clicking Proceed; the second header line is absent from the data rows and the original column names remain. Settings is reopened."><figcaption><p>Reference result after Proceed: four displayed rows become three. The extra “in EUR” header line is absent; changing Header row count does not itself demonstrate column mapping.</p></figcaption></figure>
 
 ### Move Extra Rows to Trash
 
@@ -44,7 +46,7 @@ Enable **Move Extra Rows to Trash** to remove the overflow:
 
 **Result after mapping:**
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-en-20261006.png" alt="Extracted table with three clean rows after the extra description lines were moved to trash and the columns were mapped."><figcaption><p>Result after mapping: only the relevant rows remain.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-trash-result-en-20261011.png" alt="Reference table after selecting Trash and clicking Proceed; three item rows remain. The reopened Settings dialog shows Header row count 1 and Move Extra Rows to Trash."><figcaption><p>Reference result after Proceed: seven displayed rows become three, with the overflow description lines absent. The column mapping was already present in this example.</p></figcaption></figure>
 
 
 
@@ -68,7 +70,7 @@ Then define the grouping key column, e.g. _Position_:
 
 **Result:**
 
-<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-en-20261006.png" alt="Extracted table with three grouped rows after grouping by Position and trashing extra rows."><figcaption><p>Result: the six physical rows are grouped into three line items.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a-training-line-fields-table-training-advanced-settings-grouped-result-en-20261011.png" alt="Reference table after setting Minimum grouped rows to 2 and selecting Group rows in the Position column menu; three item rows remain. Settings is reopened with Header row count 2 and Move Extra Rows to Trash."><figcaption><p>Reference result after the Position → Group rows action: six displayed rows become three. The reopened settings show the grouping threshold of 2; Proceed alone had left six rows.</p></figcaption></figure>
 
 ### Reverse Grouping
 

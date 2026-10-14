@@ -21,6 +21,7 @@ site:
       path: espanol
       content:
         directory: ./espanol
+        language: es
     - type: space
       key: space-4
       title: 🇫🇷 Français

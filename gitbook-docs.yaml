@@ -32,6 +32,7 @@ site:
       path: french
       content:
         directory: ./french
+        language: fr
     - type: space
       key: space-5
       title: 🇮🇹 Italiano

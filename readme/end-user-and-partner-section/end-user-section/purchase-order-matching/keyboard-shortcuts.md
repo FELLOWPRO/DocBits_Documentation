@@ -14,8 +14,8 @@ Ekran dopasowywania PO ma dedykowane skróty, aby uprościć proces dopasowywani
 * **Control + E** – Eksportuje dokument, generując plik eksportu na podstawie zastosowanych ustawień.
 * **Control + F** – Otwiera funkcję wyszukiwania zamówienia zakupu, umożliwiając użytkownikom szybkie zlokalizowanie konkretnych zamówień.
 * **Control + P** – Wybiera pierwszy wiersz linii zamówienia zakupu, ułatwiając rozpoczęcie pracy z danymi zamówienia.
-* **Control + L** – Wybiera pierwszy wiersz linii faktury, umożliwiając szybki dostęp do szczegółów faktury.
-* **Control + Left Click** – Wybiera lub odznacza wiersze zamówienia zakupu, umożliwiając elastyczny wybór wielu wpisów.
+* **Control + L** – Ustawia fokus na pierwszym wierszu pozycji.
+* **Control + Left Click** – Zaznacza lub odznacza pojedynczą linię zamówienia zakupu do dopasowania.
 * **Control + C** – Wybiera wiersze zamówienia zakupu, aby rozpocząć mapowanie do linii faktury, przygotowując proces mapowania.
 * **Control + V** – Mapuje wybrane linie zamówienia zakupu do linii faktury, efektywnie łącząc dane.
-* **Option + Shift + Left Click** – Wybiera wszystkie linie zamówienia zakupu między pierwszym a ostatnim wybranym wierszem, upraszczając proces zbiorowego wyboru.
+* **Shift + Left Click** – Zaznacza linie zamówienia zakupu między ostatnio wybraną linią a linią, w którą klikniesz.

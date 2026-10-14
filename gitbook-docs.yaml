@@ -61,10 +61,3 @@ site:
       content:
         directory: ./dutch
         language: nl
-    - type: space
-      key: space-9
-      title: 🇨🇳 Chinese
-      path: chinese
-      content:
-        directory: ./docbits
-        language: en

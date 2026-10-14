@@ -18,7 +18,7 @@ This page provides a detailed explanation of all available settings.
 To access the **Classification and Extraction** settings, go to:\
 **Settings → Document Processing → Classification and Extraction**
 
-<figure><img src="../../../../.gitbook/assets/settings_classification_and_extraction.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc865-settings-nav-pt-20261012.png" alt="Navegação das configurações com Processamento de documentos e Classificação e Extração realçados"><figcaption><p>Abra <strong>Configurações → Processamento de documentos → Classificação e Extração</strong>.</p></figcaption></figure>
 
 ## Document Splitting
 
@@ -86,9 +86,16 @@ Saiba mais sobre o treino [aqui](../../../setup/document-training/training-line-
 
 **Extração de tabelas por IA:** Usa IA para extrair a tabela de qualquer fornecedor sem treino. Se os resultados de um fornecedor não forem suficientemente precisos, treine a tabela desse fornecedor; as regras guardadas passam então a ter precedência sobre a IA para esse fornecedor.
 
-**Usar Extração de tabelas Vision (IA):** A IA lê a imagem da página em vez da camada de texto. Ajuda com documentos digitalizados e tabelas sem uma estrutura de texto clara; é mais lenta.
+**Usar Extração de tabelas Vision (IA):** A IA lê a imagem da página em vez da camada de texto. Ajuda com documentos digitalizados e tabelas sem uma estrutura de texto clara; é mais lenta. A lista pendente ao lado do botão escolhe com que intensidade a imagem da página é utilizada:
 
-**Usar Extração estruturada (IA):** A IA devolve a tabela numa estrutura fixa que é mapeada diretamente para as colunas de tabela configuradas. Recomendado quando os cabeçalhos das colunas nos documentos variam muito.
+* **Desativado (somente texto)** – Só é utilizada a camada de texto. Esta é a predefinição.
+* **Somente imagens** – Só é lida a imagem da página.
+* **Híbrido (texto e imagens)** – A camada de texto e a imagem da página são combinadas no mesmo pedido.
+* **Auto (decidido por documento)** – O DocBits decide por documento se a camada de texto é suficiente.
+
+O modo é guardado na chave de preferência `TABLE_EXTRACTION_VISION_MODE`; o botão antigo `TABLE_EXTRACTION_USE_VISION` mantém-se e significa, na prática, *Somente imagens*.
+
+**Usar Extração estruturada (IA):** A IA devolve a tabela numa estrutura fixa que é mapeada diretamente para as colunas de tabela configuradas. Recomendado quando os cabeçalhos das colunas nos documentos variam muito. Clicar na definição abre uma pré-visualização exata dos campos e colunas que serão pedidos à IA: os campos de cabeçalho e as colunas de linhas são listados com a sua origem (campos padrão pedidos ou desativados), juntamente com o modo de saída esperado (por exemplo, *strict* – sem colunas adicionais). Os campos configurados para o tipo de documento mas desativados não são pedidos à IA.
 
 **Extração de tabelas para elemento de custo:** Quando ativada, o DocBits pode extrair elementos de custo das tabelas ao nível da linha e classificá-los em conformidade.\
 Explicação detalhada disponível [aqui](table-extraction-for-costing-element.md).
@@ -98,11 +105,11 @@ Mais informações sobre esta definição [aqui](auto-extract-tax-code.md).
 
 **Guardar regras de extração (apenas administradores):** Só os administradores podem clicar em *Guardar regras* no treino de tabelas. Ative-a quando os utilizadores continuam a guardar regras que estragam a extração de um fornecedor.
 
-**Modelo de IA:** Seleciona o nível de IA usado para a extração de tabelas: **Fast** (predefinição), **Full** (máxima precisão, mais lento) ou **Nexus** (terceiro nível, de ativação opcional). A tabela por baixo do seletor mostra:
+**Modelo de IA:** Seleciona o nível de IA usado para a extração de tabelas. Estão disponíveis seis opções: **Full** (máxima precisão, a mais lenta, 2 tokens por documento), **Fast** (predefinição; 1 token por documento), **Nexus** e **Nexus Flash** (família de modelos alternativa, de ativação opcional), além de **Auto** e **Auto Nexus**, em que o DocBits decide por documento quão forte é o modelo necessário. A tabela por baixo do seletor mostra:
 
 * Quais os **fornecedores** que usam cada modelo de IA
-* Se usam E-Text
-* Opções para eliminar uma entrada ou repor os dados de treino
+* Se usam a extração estruturada (IA) e o E-Text
+* Opções para eliminar uma entrada e, assim, repor o fornecedor no valor predefinido
 
 Esta definição é explicada em detalhe [aqui](ai-model.md).
 
@@ -124,12 +131,13 @@ Cada opção desta secção é guardada como uma preferência da organização. 
 |---|---|---|
 | Extração de tabelas | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
 | Extração de tabelas por IA | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
-| Usar Extração de tabelas Vision (IA) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Usar Extração de tabelas Vision (IA) | `TABLE_EXTRACTION_VISION_MODE` | `off` (predefinição), `vision`, `hybrid`, `auto` |
+| Usar Extração de tabelas Vision (IA) – botão antigo | `TABLE_EXTRACTION_USE_VISION` | `true` / `false`; significa, na prática, `vision` |
 | Usar Extração estruturada (IA) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
 | Extração de tabelas para elemento de custo | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
 | Extrair automaticamente o código de imposto | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
 | Guardar regras de extração (apenas administradores) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
-| Modelo de IA | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Modelo de IA | `AI_MODEL` | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
 | Versão da extração de tabelas (caixa de diálogo de confirmação) | `TBL_EXT_VERSION` | cadeia de versão |
 | Definições OCR → Usar dados de IA para tabelas, se disponíveis | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
 | Definições OCR → Usar E-Text, se disponível | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
@@ -138,6 +146,7 @@ Notas:
 
 * As preferências booleanas são guardadas como as cadeias `true` / `false`; uma chave que nunca foi definida conta como `false`. Se enviar `1` ou `0`, o DocBits guarda `true` / `false`.
 * `AI_MODEL` não definido significa **Fast**.
+* Um `TABLE_EXTRACTION_VISION_MODE` não definido é resolvido a partir do botão antigo `TABLE_EXTRACTION_USE_VISION`: `true` dá `vision`, qualquer outro valor dá `off`.
 * A alteração de uma chave produz efeito nos documentos processados posteriormente. Reinicie um documento para o extrair novamente com a nova definição.
 * As escolhas por fornecedor (E-Text, modelo de IA, regras guardadas) não são preferências da organização; são definidas no ecrã de validação em *Mais definições* num documento desse fornecedor.
 

@@ -1,4 +1,4 @@
-# Wykrywanie Podobnych Dokumentow
+# Wykrywanie Podobnych Dokumentow (Wyszukiwanie Wektorowe)
 
 {% hint style="info" %}
 **Dostepne od wersji 11.48.0** — Wymaga licencji `OPENSEARCH_ENABLED`.
@@ -39,12 +39,11 @@ for doc in similar:
 Tekst OCR kazdego dokumentu jest konwertowany na osadzenie wektorowe 384-wymiarowe podczas indeksowania. `vector_search()` znajduje najblizszych sasiadow w tej przestrzeni wektorowej za pomoca k-NN (k-Nearest Neighbors), zwracajac dokumenty, ktorych tresc jest semantycznie podobna — nawet jesli dokladne slowa sa rozne.
 
 **Zastosowania:**
-
-* Wykrywanie oszustw (niemal identyczne faktury od roznych "dostawcow")
-* Wykrywanie duplikatow wykraczajace poza dokladne dopasowanie tekstu
-* Znajdowanie powiazanych dokumentow w roznych formatach lub jezykach
+- Wykrywanie oszustw (niemal identyczne faktury od roznych "dostawcow")
+- Wykrywanie duplikatow wykraczajace poza dokladne dopasowanie tekstu
+- Znajdowanie powiazanych dokumentow w roznych formatach lub jezykach
 
 ## Uzyte Funkcje
 
-* [vector\_search()](../fulltext-search-functions.md#vector_search) — Znajdz semantycznie podobne dokumenty
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Pokaz blad walidacji
+- [vector\_search()](../fulltext-search-functions.md#vector\_search) — Znajdz semantycznie podobne dokumenty
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Pokaz blad walidacji

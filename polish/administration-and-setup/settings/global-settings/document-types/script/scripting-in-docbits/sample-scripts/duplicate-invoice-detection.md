@@ -48,6 +48,6 @@ if inv_id and vendor:
 
 ## Uzyte Funkcje
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczytaj wartosc pola
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — Przeszukaj tekst OCR wszystkich dokumentow
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Pokaz blad walidacji
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczytaj wartosc pola
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — Przeszukaj tekst OCR wszystkich dokumentow
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Pokaz blad walidacji

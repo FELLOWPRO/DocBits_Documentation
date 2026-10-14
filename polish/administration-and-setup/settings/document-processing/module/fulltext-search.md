@@ -127,4 +127,4 @@ Ceny modułu wyszukiwania pełnotekstowego ustala Twój opiekun handlowy DocBits
 
 * [Ustawienia wyszukiwania pełnotekstowego](../../log-settings/fulltext-search-settings.md) — zarządzanie indeksem i przełącznik indeksu wektorowego.
 * [Funkcje Fulltext i Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API skryptów dla `fulltext_search()` i `vector_search()`.
-* [Przegląd modułów](./) — pełna lista opcjonalnych modułów DocBits.
+* [Przegląd modułów](README.md) — pełna lista opcjonalnych modułów DocBits.

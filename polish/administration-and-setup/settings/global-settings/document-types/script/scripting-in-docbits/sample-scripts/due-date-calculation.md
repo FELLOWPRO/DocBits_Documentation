@@ -57,5 +57,5 @@ set_date_value(document_data, "delivery_date", None)  # None = dzisiaj
 
 ## Użyte funkcje
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczyt daty faktury
-* [set\_date\_value()](../functions/field-functions.md#set_date_value) — Obliczanie i ustawianie terminu płatności
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczyt daty faktury
+- [set\_date\_value()](../field-functions.md#set\_date\_value) — Obliczanie i ustawianie terminu płatności

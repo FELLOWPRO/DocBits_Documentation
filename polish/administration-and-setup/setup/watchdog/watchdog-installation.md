@@ -1,78 +1,136 @@
 # Instalacja WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-pl.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="Kroki instalacji WatchDog"><figcaption></figcaption></figure>
 
-### Konfigurowanie WatchDog w DocBits
+> **Zalecane:** Użyj nowoczesnej konfiguracji opisanej poniżej. Konfiguracje WatchDog są teraz tworzone bezpośrednio w aplikacji DocBits — lokalne pliki konfiguracyjne nie są potrzebne.
+
+## Wymagania wstępne
+
+* Windows Server lub Windows 10/11
+* Dostęp administratora
+* Łączność sieciowa z API DocBits
+* Klucz API DocBits (dostępny w Settings → WatchDog → karta General)
+
+## Kroki instalacji
+
+### 1. Utwórz wymagane foldery
+
+Utwórz katalog główny i podfoldery dla WatchDog:
+
+```
+C:\WatchDog\              ← WatchDog executable
+C:\WatchDog\Import\       ← Watch folder for incoming documents
+C:\WatchDog\Processed\    ← Success folder for processed documents
+C:\WatchDog\Export\        ← Export folder for exported files
+```
+
+> **Uwaga:** Zaleca się używanie ścieżek lokalnych. Ścieżki sieciowe UNC (np. `\\server\share`) są obsługiwane, ale mogą wymagać Polling Observer, aby niezawodnie wykrywać pliki.
+
+### 2. Pobierz WatchDog
+
+Pobierz `WatchDog.exe` z aplikacji DocBits:
+
+**Settings → Document Processing → WatchDog → karta General → Download**
+
+Umieść pobrany plik `WatchDog.exe` w `C:\WatchDog\`.
+
+### 3. Skonfiguruj połączenie z API
+
+Otwórz **Wiersz polecenia (CMD)** jako **Administrator** i uruchom:
+
+```powershell
+cd C:\WatchDog
+WatchDog.exe -api YOUR_API_KEY
+```
+
+To połączy WatchDog z Twoją organizacją DocBits i automatycznie pobierze konfiguracje.
+
+### 4. Zainstaluj jako usługę systemu Windows
+
+```powershell
+WatchDog.exe install
+```
+
+### 5. Uruchom usługę
+
+```powershell
+WatchDog.exe start
+```
+
+### 6. Utwórz konfiguracje w DocBits
+
+Przejdź w DocBits do **Settings → Document Processing → WatchDog → karta Configurations**:
+
+* Kliknij **New Import Configuration**, aby ustawić foldery nadzorowane
+* Kliknij **New Export Configuration**, aby ustawić miejsca docelowe eksportu
+
+> **Ważne:** Konfiguracje eksportu wymagają **typu dokumentu**. Wszystkie konfiguracje są zarządzane centralnie w DocBits, a nie w lokalnych plikach konfiguracyjnych.
+
+### 7. Ustaw automatyczne uruchamianie
+
+1. Otwórz **Usługi** (`Win + R` → `services.msc`)
+2. Znajdź **WatchDog** na liście usług
+3. Kliknij dwukrotnie, aby otworzyć właściwości
+4. Ustaw **Typ uruchomienia** na **Automatyczny (opóźniony start)**
+5. Kliknij **OK**
+
+## Weryfikacja instalacji
+
+Po instalacji sprawdź stan WatchDog w DocBits:
+
+**Settings → WatchDog → karta General**
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Karta General WatchDog — stan usługi"><figcaption></figcaption></figure>
+
+* ✅ **Online** — WatchDog jest połączony i wysyła heartbeat
+* Powinny być widoczne wersja, czas ostatniego restartu i informacje o systemie
+
+## Opis poleceń
+
+| Polecenie | Opis |
+| :--- | :--- |
+| `WatchDog.exe -api KEY` | Konfiguruje klucz API |
+| `WatchDog.exe install` | Instaluje jako usługę systemu Windows |
+| `WatchDog.exe start` | Uruchamia usługę |
+| `WatchDog.exe stop` | Zatrzymuje usługę |
+| `WatchDog.exe debug` | Uruchamia w trybie konsoli (do rozwiązywania problemów) |
+| `WatchDog.exe remove` | Odinstalowuje usługę |
+| `WatchDog.exe --version` | Pokazuje bieżącą wersję |
+| `WatchDog.exe --list-folders` | Wyświetla skonfigurowane foldery nadzorowane |
+| `WatchDog.exe --add-folder PATH` | Dodaje folder nadzorowany |
+| `WatchDog.exe --remove-folder PATH` | Usuwa folder nadzorowany |
+
+---
+
+## Starsza wersja: konfiguracja V1 (przestarzała)
+
+Poniższa metoda konfiguracji V1 z lokalnymi plikami konfiguracyjnymi jest **przestarzała**. Zamiast niej użyj nowoczesnej konfiguracji opartej na API, opisanej powyżej.
+
+<details>
+<summary>Konfiguracja V1 (kliknij, aby rozwinąć)</summary>
+
+### Konfigurowanie WatchDog w DocBits (V1)
 
 1. **Dostęp do ustawień WatchDog**
-   * Przejdź do **Ustawienia → Przetwarzanie dokumentów → WatchDog**.
+   * Przejdź do **Settings → Document Processing → WatchDog**
 2. **Ustawienia folderów**
-   * Zdefiniuj ścieżki, w których WatchDog znajduje i przetwarza dokumenty.
-   *   Ścieżki folderów powinny odpowiadać tym utworzonym podczas instalacji:
+   * Zdefiniuj ścieżki: `C:/WatchDog/Read` i `C:/WatchDog/Processed`
 
-       * `C:/WatchDog/Read`
-       * `C:/WatchDog/Processed`
+   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="Ustawienia folderów WatchDog"><figcaption></figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FzG1EFmtSO4AxZjWir401%252Fimage.png%3Falt%3Dmedia%26token%3Dc356e023-8cfb-4f45-b863-b27c5af1d9df\&width=768\&dpr=4\&quality=100\&sign=1b1ae0c4\&sv=2)
-   * <mark style="color:red;">**Uwaga**</mark><mark style="color:red;">:</mark> **Zaleca się używanie lokalnych ścieżek. Powinny one odpowiadać folderom w instalacji DocBits**
 3. **Ustawienia ogólne**
-   *   Wybierz typy dokumentów do przetworzenia, zaznaczając odpowiednie pola wyboru.\\
+   * Wybierz typy dokumentów, skonfiguruj miejsce docelowe eksportu
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZbCt5UHd37PdNZsVItdt%252Fimage.png%3Falt%3Dmedia%26token%3Db3c3f203-0f60-42a0-bd56-ee70c204f5e8\&width=768\&dpr=4\&quality=100\&sign=becd5e31\&sv=2)
-   * **Podział kodów kreskowych:** Włączony umożliwia podział kodów kreskowych.
-   * **Operator DocBits:** Po włączeniu otwiera przeglądarkę Chrome w tle dla Operatora DocBits.
-   * **Miejsce eksportu:** Ustawia miejsce eksportu.
-     * **Infor:** Dokumenty są eksportowane do Infor.
-     * **Folder eksportu:** Dokumenty są eksportowane do zdefiniowanego folderu, który można skonfigurować poniżej.
+   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="Ustawienia ogólne WatchDog"><figcaption></figcaption></figure>
+
 4. **Konfiguracje eksportu**
-   * Wyświetla wszystkie skonfigurowane eksporty dla **przetwarzania lokalnego**.
-   *   Pokazuje znacznik czasu **ostatniego udanego połączenia** dla każdej konfiguracji.\\
+   * Pokazuje skonfigurowane eksporty dla przetwarzania lokalnego (on-premise)
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FRvK5qn6EggWJxcSYNP5J%252Fimage.png%3Falt%3Dmedia%26token%3D195b9cc6-c5ac-4ee6-90da-b3ee9696ee30\&width=768\&dpr=4\&quality=100\&sign=3bc11ec5\&sv=2)
-5. **Konfiguracja bod\_mapping (Opcjonalnie)**
-   * <mark style="color:red;">**Wymagane pola:**</mark> Zanim dodasz niestandardowe mapowania metadanych, musisz zdefiniować następujące dwa wartości
-     * **`file_name`**
-     * **`pdf_path`**
-   *   Kliknij **Dodaj wiersz**, aby zdefiniować mapowania metadanych.\\
+   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="Konfiguracje eksportu WatchDog"><figcaption></figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FlzUqcr51kq18OrmYAR8X%252Fimage.png%3Falt%3Dmedia%26token%3D3035122b-f1d3-44cc-bfe6-5230943bd77d\&width=768\&dpr=4\&quality=100\&sign=e98d5a1b\&sv=2)
-   * **Wartość:** Określa nazwę pola dla metadanych.
-   * **Ścieżka:** Wyrażenie XPath wskazujące na dane XML, które powinny być przypisane do pola.
-   * **Ikona kosza:** Używana do usunięcia konkretnego wiersza.
-6. **Pobierz konfigurację**
-   * Zapisz konfigurację
-   *   Pobierz konfigurację\\
+5. **Pobierz konfigurację**
+   * Pobierz `watchdog-config.json` i umieść go w `C:\WatchDog\`
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZXiz4KB7QpnaqD9XwX3o%252Fimage.png%3Falt%3Dmedia%26token%3D04c9f8dc-7d79-443f-9ce4-6d4214edc98b\&width=768\&dpr=4\&quality=100\&sign=574a4218\&sv=2)
+   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Pobierz konfigurację"><figcaption></figcaption></figure>
 
-### Przewodnik instalacji WatchDog
-
-1. **Utwórz wymagane foldery**
-   * Utwórz główny katalog: `C:/WatchDog`
-   * Wewnątrz `C:/WatchDog` utwórz następujące podfoldery: **Uwaga:** powinny one odpowiadać folderom w DocBits.
-     * `C:/WatchDog/Read`
-     * `C:/WatchDog/Processed`
-   * <mark style="color:red;">**Uwaga:**</mark>**&#x20;Zaleca się używanie lokalnych ścieżek. Powinny one odpowiadać folderom w konfiguracji DocBits**
-2. **Pobierz WatchDog**
-   * Pobierz najnowszą wersję `WatchDog.exe` z: [https://github.com/Fellow-Consulting-AG/WatchDog](https://github.com/Fellow-Consulting-AG/WatchDog)
-   * Umieść pobrany plik `WatchDog.exe` w `C:/WatchDog`.
-   * Umieść pobrany plik `watchdog-config.json` w `C:/WatchDog`.
-   * Otwórz `watchdog-config.json` i zmień **config\_path.**
-   * W tym przykładzie:
-     * `"config_path": "C:/WatchDog/watchdog-config.json"`
-3. **Zainstaluj WatchDog**
-   * Otwórz **Wiersz polecenia (CMD)** z **uprawnieniami administratora**.
-   * Przejdź do folderu WatchDog.
-   *   Uruchom następujące polecenie, aby zainstalować WatchDog:
-
-       `WatchDog.exe install`
-4. **Uruchom usługę WatchDog**
-   *   Uruchom następujące polecenie w CMD:
-
-       `WatchDog.exe start`
-5. **Ustaw typ uruchamiania**
-   * Otwórz **Usługi** (Naciśnij `Win + R`, wpisz `services.msc` i naciśnij **Enter**).
-   * Zlokalizuj **WatchDog** na liście usług.
-   * Kliknij dwukrotnie, aby otworzyć jego właściwości.
-   * Ustaw **Typ uruchamiania** na **Automatyczny (opóźniony start)**.
-   * Kliknij **OK**.
+</details>

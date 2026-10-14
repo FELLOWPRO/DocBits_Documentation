@@ -16,12 +16,12 @@ Włącz **Pokaż obliczone pola**, aby automatycznie obliczone pola faktury — 
 
 Wybierz, jak dostosowywany jest termin płatności przypadający w sobotę lub niedzielę. Dotyczy to **zarówno** terminu płatności faktury, jak i terminu płatności rabatu (Skonto).
 
-| Konwencja                  | Efekt                                                                                |
-| -------------------------- | ------------------------------------------------------------------------------------ |
-| **Brak**                   | Zachowaj datę kalendarzową (bez dostosowania).                                       |
-| **Następna**               | Przenieś sob./niedz. na następny poniedziałek.                                       |
-| **Poprzednia**             | Przenieś sob./niedz. na poprzedni piątek.                                            |
-| **Najbliższa**             | Sobota → piątek, niedziela → poniedziałek.                                           |
+| Konwencja | Efekt |
+|-----------|-------|
+| **Brak** | Zachowaj datę kalendarzową (bez dostosowania). |
+| **Następna** | Przenieś sob./niedz. na następny poniedziałek. |
+| **Poprzednia** | Przenieś sob./niedz. na poprzedni piątek. |
+| **Najbliższa** | Sobota → piątek, niedziela → poniedziałek. |
 | **Zmodyfikowana następna** | Następny poniedziałek, chyba że wypada w następnym miesiącu; wtedy poprzedni piątek. |
 
 ### Kod przypisania AP
@@ -42,21 +42,21 @@ DocBits rozpoznaje następujące kody warunków płatności i rabatu.
 
 **Obsługiwane formaty warunków płatności**
 
-| Format        | Przykład            | Znaczenie                    |
-| ------------- | ------------------- | ---------------------------- |
-| Infor M3      | `N90`, `N30`        | Netto 90 / 30 dni            |
-| Infor M3      | `NET`               | Płatne przy odbiorze         |
-| Infor M3      | `M20`               | 20. dnia następnego miesiąca |
-| Infor M3      | `E15`               | Koniec miesiąca + 15 dni     |
-| Infor LN      | `030`, `30`         | Netto 30 dni                 |
-| Reversed      | `14N`, `30N`        | Netto 14 / 30 dni            |
-| Kody tekstowe | `REC`, `DUE`, `COD` | Płatne przy odbiorze         |
+| Format | Przykład | Znaczenie |
+|--------|----------|-----------|
+| Infor M3 | `N90`, `N30` | Netto 90 / 30 dni |
+| Infor M3 | `NET` | Płatne przy odbiorze |
+| Infor M3 | `M20` | 20. dnia następnego miesiąca |
+| Infor M3 | `E15` | Koniec miesiąca + 15 dni |
+| Infor LN | `030`, `30` | Netto 30 dni |
+| Reversed | `14N`, `30N` | Netto 14 / 30 dni |
+| Kody tekstowe | `REC`, `DUE`, `COD` | Płatne przy odbiorze |
 
 **Format warunków rabatu** — warunki rabatu kodują rabaty za wcześniejszą płatność jako kody 3-cyfrowe: pierwsza cyfra to procent rabatu, dwie ostatnie to liczba dni, w ciągu których należy zapłacić.
 
-| Kod   | Znaczenie                               |
-| ----- | --------------------------------------- |
+| Kod | Znaczenie |
+|-----|-----------|
 | `210` | 2% rabatu przy płatności w ciągu 10 dni |
 | `130` | 1% rabatu przy płatności w ciągu 30 dni |
 | `545` | 5% rabatu przy płatności w ciągu 45 dni |
-| `0`   | Brak rabatu                             |
+| `0` | Brak rabatu |

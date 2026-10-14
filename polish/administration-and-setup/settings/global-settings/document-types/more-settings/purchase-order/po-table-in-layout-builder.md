@@ -15,14 +15,16 @@ Aby włączyć tę funkcję:
 
 * **Gdy włączone**:
   * Tabela **Zamówienia Zakupu** pojawia się w **Sekcji Tabeli** w **Kreatorze Układów**.
-  *   Nie zostanie wyświetlona żadna powiadomienie o tym, że moduł jest wyłączony.\\
+  *   Nie zostanie wyświetlona żadna powiadomienie o tym, że moduł jest wyłączony.\
 
-      <figure><img src="../../../../../../.gitbook/assets/docbits_settings_workflow (17).png" alt="DocBits Ustawienia Przepływ pracy"><figcaption></figcaption></figure>
+
+      <figure><img src="../../../../../../.gitbook/assets/docbits_settings_workflow.png" alt="DocBits Ustawienia Przepływ pracy"><figcaption></figcaption></figure>
 * **Gdy wyłączone**:
   * Wskazówka wskaże, że moduł jest wyłączony.
-  *   Tabela **PO** nie będzie widoczna na **Ekranie Walidacji**.\\
+  *   Tabela **PO** nie będzie widoczna na **Ekranie Walidacji**.\
 
-      <figure><img src="../../../../../../.gitbook/assets/docbits_approval_supplier (2).png" alt="DocBits Zatwierdzenie Dostawca"><figcaption></figcaption></figure>
+
+      <figure><img src="../../../../../../.gitbook/assets/docbits_approval_supplier.png" alt="DocBits Zatwierdzenie Dostawca"><figcaption></figcaption></figure>
 
 **Jak uzyskać dostęp do Kreatora Układów**
 

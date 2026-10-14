@@ -4,31 +4,31 @@ Tabela wyodrębniona przez AI to tabela pozycji, którą DocBits odczytuje za po
 
 ## Kiedy otrzymujesz tabelę AI
 
-* Administrator włączył opcję **Ekstrakcja tabeli AI** (_AI Table extraction_, Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja). Jeśli jest wyłączona, w obszarze tabeli wyświetla się komunikat _AI Table will display here. Enable in …_.
-* Dostawca **nie ma zapisanych reguł**. Gdy tylko ktoś wytrenuje tabelę dostawcy i kliknie _Save Rules_, zapisane reguły zastępują tabelę AI dla tego dostawcy; wiersze pojawiają się wtedy w zakładce _Extracted table_ zamiast w zakładce _AI Extracted table_.
-* Wyjątek: kolumny oznaczone **Użyj AI** (_Use AI_) w ustawieniach kolumn tabeli wypełnia AI nawet u dostawców z zapisanymi regułami, patrz [Użyj AI dla pojedynczych kolumn](./#use-ai-per-column).
+* Administrator włączył opcję **Ekstrakcja tabeli AI** (*AI Table extraction*, Ustawienia → Przetwarzanie dokumentów → Klasyfikacja i ekstrakcja). Jeśli jest wyłączona, w obszarze tabeli wyświetla się komunikat *AI Table will display here. Enable in …*.
+* Dostawca **nie ma zapisanych reguł**. Gdy tylko ktoś wytrenuje tabelę dostawcy i kliknie *Save Rules*, zapisane reguły zastępują tabelę AI dla tego dostawcy; wiersze pojawiają się wtedy w zakładce *Extracted table* zamiast w zakładce *AI Extracted table*.
+* Wyjątek: kolumny oznaczone **Użyj AI** (*Use AI*) w ustawieniach kolumn tabeli wypełnia AI nawet u dostawców z zapisanymi regułami, patrz [Użyj AI dla pojedynczych kolumn](#use-ai-per-column).
 
-Poziom AI odczytujący tabelę (Fast, Full, Nexus) jest ustawiany dla organizacji i można go nadpisać dla dostawcy w _Więcej ustawień_ na ekranie walidacji, patrz [Model AI specyficzny dla dostawcy](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
+Poziom AI odczytujący tabelę (Fast, Full, Nexus) jest ustawiany dla organizacji i można go nadpisać dla dostawcy w *Więcej ustawień* na ekranie walidacji, patrz [Model AI specyficzny dla dostawcy](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## Ponowna ekstrakcja tabeli AI
 
 Użyj tej funkcji, gdy brakuje wierszy lub kolumna jest przesunięta i chcesz, aby AI spróbowało ponownie, na przykład po dodaniu [tagu](ai-table-tags.md):
 
 1. Dodaj lub zmień [tagi](ai-table-tags.md) w polu pod tabelą i kliknij **Apply**. AI odbudowuje tabelę tego dokumentu z Twoimi tagami i zmianami kolumn; nic nie jest jeszcze zapisywane dla dostawcy. Jeśli dokument ma pozycje dopasowane do PO, DocBits ostrzega, że odbudowa usunie dopasowania.
-2. Wynik jest dobry? Kliknij **Save** (_Save Rules_), aby następny dokument tego dostawcy został wyodrębniony w ten sam sposób.
-3. Aby zacząć od nowa, kliknij **Delete** (_Delete Rules_): DocBits potwierdza _Rules has been deleted successfully_ i ponownie uruchamia ekstrakcję AI bez zapisanych tagów i formatowania.
+2. Wynik jest dobry? Kliknij **Save** (*Save Rules*), aby następny dokument tego dostawcy został wyodrębniony w ten sam sposób.
+3. Aby zacząć od nowa, kliknij **Delete** (*Delete Rules*): DocBits potwierdza *Rules has been deleted successfully* i ponownie uruchamia ekstrakcję AI bez zapisanych tagów i formatowania.
 
-_Delete Rules_ usuwa tagi i reguły formatowania zapisane dla tego dostawcy, a nie konfigurację kolumn tabeli. Aby ponownie wyodrębnić cały dokument (nagłówek i tabelę) po zmianie ustawień lub kolumn przez administratora, użyj zamiast tego opcji _Restart_ (Uruchom ponownie) w menu dokumentu na pulpicie.
+*Delete Rules* usuwa tagi i reguły formatowania zapisane dla tego dostawcy, a nie konfigurację kolumn tabeli. Aby ponownie wyodrębnić cały dokument (nagłówek i tabelę) po zmianie ustawień lub kolumn przez administratora, użyj zamiast tego opcji *Restart* (Uruchom ponownie) w menu dokumentu na pulpicie.
 
 ## Użyj AI dla pojedynczych kolumn <a href="#use-ai-per-column" id="use-ai-per-column"></a>
 
-Każda kolumna tabeli ma flagę **Użyj AI** (_Use AI_, Ustawienia → Ustawienia globalne → Typy dokumentów → [Kolumny tabeli](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md)). Przy włączonej fladze AI wypełnia tę kolumnę nawet wtedy, gdy dostawca ma zapisane reguły; pozostałe kolumny nadal pochodzą z reguł. Typowe zastosowanie: kolumna opisu tekstowego, którą wytrenowane reguły przechwytują źle, albo wartość, która zmienia położenie na stronie.
+Każda kolumna tabeli ma flagę **Użyj AI** (*Use AI*, Ustawienia → Ustawienia globalne → Typy dokumentów → [Kolumny tabeli](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md)). Przy włączonej fladze AI wypełnia tę kolumnę nawet wtedy, gdy dostawca ma zapisane reguły; pozostałe kolumny nadal pochodzą z reguł. Typowe zastosowanie: kolumna opisu tekstowego, którą wytrenowane reguły przechwytują źle, albo wartość, która zmienia położenie na stronie.
 
-Pamiętaj, że AI zgaduje wtedy tę kolumnę na podstawie całego wiersza. Jeśli konsekwentnie wstawia tam niewłaściwą wartość (na przykład sumę pozycji do kolumny _Charges_), kontrola sumy pozycji nie przechodzi w żadnym wierszu. W takim przypadku wyłącz _Użyj AI_ dla tej kolumny albo dodaj tag, który mówi AI, czym jest ta kolumna.
+Pamiętaj, że AI zgaduje wtedy tę kolumnę na podstawie całego wiersza. Jeśli konsekwentnie wstawia tam niewłaściwą wartość (na przykład sumę pozycji do kolumny *Charges*), kontrola sumy pozycji nie przechodzi w żadnym wierszu. W takim przypadku wyłącz *Użyj AI* dla tej kolumny albo dodaj tag, który mówi AI, czym jest ta kolumna.
 
 ## Ekstrakcja strukturalna
 
-Przy włączonej w ustawieniach organizacji opcji **Użyj ekstrakcji strukturalnej (AI)** (_Use Structured Extraction (AI)_) AI zwraca tabelę w stałej strukturze, która mapuje się bezpośrednio na skonfigurowane kolumny tabeli, zamiast kopiować nagłówki kolumn dostawcy. Nazwy kolumn zawsze odpowiadają wtedy Twojej konfiguracji; kolumna, którą dostawca drukuje, ale której nie skonfigurowano, nie jest wyodrębniana. Poproś administratora o włączenie tej opcji, gdy nagłówki dostawców mocno się różnią i tracisz czas na ponowne mapowanie.
+Przy włączonej w ustawieniach organizacji opcji **Użyj ekstrakcji strukturalnej (AI)** (*Use Structured Extraction (AI)*) AI zwraca tabelę w stałej strukturze, która mapuje się bezpośrednio na skonfigurowane kolumny tabeli, zamiast kopiować nagłówki kolumn dostawcy. Nazwy kolumn zawsze odpowiadają wtedy Twojej konfiguracji; kolumna, którą dostawca drukuje, ale której nie skonfigurowano, nie jest wyodrębniana. Poproś administratora o włączenie tej opcji, gdy nagłówki dostawców mocno się różnią i tracisz czas na ponowne mapowanie.
 
 ## Praca z wyodrębnioną tabelą
 
@@ -50,6 +50,6 @@ Oto kluczowe możliwości i instrukcje dotyczące użytkowania:
 
 <figure><img src="../../../.gitbook/assets/ai-table4.png" alt=""><figcaption></figcaption></figure>
 
-* **Zapisywanie zmian**: **Save** obok tagów (podpowiedź _Save Rules_) zapisuje bieżące mapowanie kolumn, ukryte kolumny i tagi dla tego dostawcy. Następny dokument tego dostawcy jest wyodrębniany z ich użyciem.
+* **Zapisywanie zmian**: **Save** obok tagów (podpowiedź *Save Rules*) zapisuje bieżące mapowanie kolumn, ukryte kolumny i tagi dla tego dostawcy. Następny dokument tego dostawcy jest wyodrębniany z ich użyciem.
 
-Te funkcje dają Ci kontrolę nad wyodrębnionymi danymi. Jeśli ten sam dostawca za każdym razem wymaga tych samych poprawek, wytrenuj tabelę raz, patrz [Szkolenie pól linii / Szkolenie tabeli](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/); tabela AI nie będzie wtedy już używana dla tego dostawcy.
+Te funkcje dają Ci kontrolę nad wyodrębnionymi danymi. Jeśli ten sam dostawca za każdym razem wymaga tych samych poprawek, wytrenuj tabelę raz, patrz [Szkolenie pól linii / Szkolenie tabeli](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md); tabela AI nie będzie wtedy już używana dla tego dostawcy.

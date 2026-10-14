@@ -58,16 +58,16 @@ To start WatchDog automatically on boot:
 
 ## Command Reference
 
-| Command                       | Description                              |
-| ----------------------------- | ---------------------------------------- |
-| `WatchDog.exe -api KEY`       | Configure API Key and connect to DocBits |
-| `WatchDog.exe install`        | Install as Windows Service               |
-| `WatchDog.exe start`          | Start the service                        |
-| `WatchDog.exe stop`           | Stop the service                         |
-| `WatchDog.exe debug`          | Run in console mode for troubleshooting  |
-| `WatchDog.exe --version`      | Show current version                     |
-| `WatchDog.exe --list-folders` | List configured watch folders            |
-| `WatchDog.exe remove`         | Uninstall the service                    |
+| Command | Description |
+| :--- | :--- |
+| `WatchDog.exe -api KEY` | Configure API Key and connect to DocBits |
+| `WatchDog.exe install` | Install as Windows Service |
+| `WatchDog.exe start` | Start the service |
+| `WatchDog.exe stop` | Stop the service |
+| `WatchDog.exe debug` | Run in console mode for troubleshooting |
+| `WatchDog.exe --version` | Show current version |
+| `WatchDog.exe --list-folders` | List configured watch folders |
+| `WatchDog.exe remove` | Uninstall the service |
 
 ## Further Resources
 

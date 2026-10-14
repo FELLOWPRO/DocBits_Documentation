@@ -12,9 +12,9 @@ Używaj tego do danych głównych, które nie przychodzą jako BOD — cenników
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
 
-| Endpoint                                  | Kiedy go użyć                                                                                                                  |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `/master_data_lookup/xml/import_xml_file` | Masz dane jako **plik XML** i chcesz go przesłać.                                                                              |
+| Endpoint | Kiedy go użyć |
+| --- | --- |
+| `/master_data_lookup/xml/import_xml_file` | Masz dane jako **plik XML** i chcesz go przesłać. |
 | `/master_data_lookup/xml/import_xml_data` | Chcesz **wkleić XML** do żądania. W odróżnieniu od endpointów BOD ten przyjmuje XML jako zwykły tekst — bez opakowania w JSON. |
 
 Oba są opisane poniżej. Kroki 1 i 2 są takie same w obu przypadkach.
@@ -23,7 +23,7 @@ Oba są opisane poniżej. Kroki 1 i 2 są takie same w obu przypadkach.
 
 Będziesz potrzebować:
 
-* **Klucza API.** Zobacz [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management/), jeśli jeszcze go nie masz.
+* **Klucza API.** Zobacz [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md), jeśli jeszcze go nie masz.
 * **XML** — jako pliku albo jako treści, którą można wkleić.
 * **Typu danych** — nazwy zbioru danych lookup, do którego ma trafić zapis.
 * **Mapowań pól** — który XPath wypełnia którą kolumnę.
@@ -66,14 +66,14 @@ Kliknij **Try it out**, a następnie wypełnij formularz.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
 
-| Pole                |                                                                                                                                                           |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **data\_type**      | Wymagane. Zbiór danych lookup, do którego ma trafić zapis. Jest automatycznie zamieniany na małe litery, więc `PriceList` i `pricelist` to ten sam zbiór. |
-| **field\_mappings** | Wymagane. Obiekt JSON łączący każdą kolumnę z XPath, z którego jest odczytywana. Zobacz poniżej.                                                          |
-| **file**            | Wymagane przy `import_xml_file`. Kliknij **Choose file** i wybierz swój XML.                                                                              |
-| **xml**             | Wymagane przy `import_xml_data` zamiast pliku — wklej XML jako zwykły tekst.                                                                              |
-| **org\_id**         | Twoje Org ID — ta sama wartość, którą podałeś w **X-ORG-ID** w kroku 2.                                                                                   |
-| **sub\_org\_id**    | Potrzebne tylko wtedy, gdy importujesz do konkretnej suborganizacji.                                                                                      |
+| Pole | |
+| --- | --- |
+| **data\_type** | Wymagane. Zbiór danych lookup, do którego ma trafić zapis. Jest automatycznie zamieniany na małe litery, więc `PriceList` i `pricelist` to ten sam zbiór. |
+| **field\_mappings** | Wymagane. Obiekt JSON łączący każdą kolumnę z XPath, z którego jest odczytywana. Zobacz poniżej. |
+| **file** | Wymagane przy `import_xml_file`. Kliknij **Choose file** i wybierz swój XML. |
+| **xml** | Wymagane przy `import_xml_data` zamiast pliku — wklej XML jako zwykły tekst. |
+| **org\_id** | Twoje Org ID — ta sama wartość, którą podałeś w **X-ORG-ID** w kroku 2. |
+| **sub\_org\_id** | Potrzebne tylko wtedy, gdy importujesz do konkretnej suborganizacji. |
 
 #### Mapowania pól
 
@@ -108,9 +108,9 @@ Odrzucane są tylko **nieprawidłowo zbudowane** XPath, z błędem `400` wskazuj
 {% hint style="danger" %}
 Niektóre nazwy nie są wolne: to własne tabele danych głównych DocBits, a import do jednej z nich zapisuje prosto do niej.
 
-| Nazwa                                                                                                                                                                                           |                                                                                                         |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `purchase_order_header`, `purchase_order_address`                                                                                                                                               | Odrzucane z `RESERVED_DATASET_NAME`.                                                                    |
+| Nazwa | |
+| --- | --- |
+| `purchase_order_header`, `purchase_order_address` | Odrzucane z `RESERVED_DATASET_NAME`. |
 | `supplier`, `supplier_accounts`, `purchase_order`, `receive_delivery`, `receive_delivery_lines`, `costing_element`, `customer_erp_items`, `supplier_item_price`, `supplier_item_number_mapping` | **Przyjmowane i nadpisują prawdziwe dane główne.** Używaj ich tylko wtedy, gdy naprawdę o to Ci chodzi. |
 
 We wszystkich pozostałych przypadkach wybierz własną nazwę.
@@ -144,3 +144,5 @@ W odróżnieniu od importów BOD te endpointy zgłaszają problemy właściwym s
 * W DocBits przejdź do **Settings → Document Processing → Lookup Master Data**.
 * Wybierz po lewej **Imported**, a następnie otwórz zakładkę swojego typu danych.
 * Kolumny to nazwy użyte po lewej stronie w `field_mappings`.
+
+<!-- SCREENSHOT: Lookup Master Data with Imported selected and the new dataset open -->

@@ -56,15 +56,14 @@ Kody zapasowe są wyświetlane tylko w momencie ich wygenerowania. DocBits nie m
 
 ## Logowanie za pomocą 2FA
 
-1.  Wprowadź swój adres e-mail i hasło jak zwykle.
+1. Wprowadź swój adres e-mail i hasło jak zwykle.
 
     <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Ekran logowania. Możesz też zalogować się bez hasła za pomocą <strong>Zaloguj się za pomocą klucza dostępu</strong>.</p></figcaption></figure>
-2.  DocBits prosi o drugi składnik. Wybierz swoją metodę:
-
-    * **Aplikacja uwierzytelniająca** — wpisz bieżący 6-cyfrowy kod z aplikacji.
-    * **E-mail** — kliknij **Wyślij mi kod e-mailem**, aby otrzymać kod e-mailem, a następnie go wpisz.
-    * **Klucz dostępu** — kliknij **Użyj klucza dostępu** i potwierdź za pomocą Touch ID / Windows Hello / swojego klucza.
-    * **Kod zapasowy** — jeśli nie możesz użyć swojej zwykłej metody.
+2. DocBits prosi o drugi składnik. Wybierz swoją metodę:
+   * **Aplikacja uwierzytelniająca** — wpisz bieżący 6-cyfrowy kod z aplikacji.
+   * **E-mail** — kliknij **Wyślij mi kod e-mailem**, aby otrzymać kod e-mailem, a następnie go wpisz.
+   * **Klucz dostępu** — kliknij **Użyj klucza dostępu** i potwierdź za pomocą Touch ID / Windows Hello / swojego klucza.
+   * **Kod zapasowy** — jeśli nie możesz użyć swojej zwykłej metody.
 
     <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Po podaniu hasła DocBits prosi o drugi składnik. Zmień metodę za pomocą <strong>Użyj klucza dostępu</strong> lub <strong>Wyślij mi kod e-mailem</strong> i opcjonalnie zaufaj urządzeniu na 30 dni.</p></figcaption></figure>
 3. Po pomyślnym potwierdzeniu jesteś zalogowany.

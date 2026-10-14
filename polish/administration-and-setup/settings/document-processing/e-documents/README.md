@@ -2,8 +2,8 @@
 
 DocBits weryfikuje przychodzące faktury elektroniczne (e-faktury) względem oficjalnych standardów — **XRechnung**, **ZUGFeRD** i **Factur-X** — oraz kieruje wszelkie wykryte problemy do właściwego odbiorcy. Grupa ustawień **Dokumenty elektroniczne** (w sekcji **Przetwarzanie dokumentów**) zawiera dwie strony:
 
-* [**Reguły walidacji**](validation-rules.md) — wybierz, które wersje i profile e-faktur akceptujesz, oraz ustaw wagę każdej reguły walidacji dla swojej organizacji.
-* [**Routing powiadomień**](notification-routing.md) — przypisz wyniki walidacji do agenta AI Workforce, który ma je obsłużyć.
+* **[Reguły walidacji](validation-rules.md)** — wybierz, które wersje i profile e-faktur akceptujesz, oraz ustaw wagę każdej reguły walidacji dla swojej organizacji.
+* **[Routing powiadomień](notification-routing.md)** — przypisz wyniki walidacji do agenta AI Workforce, który ma je obsłużyć.
 
 Razem pozwalają zdecydować, **co jest uznawane za problem** na przychodzącej e-fakturze i **kto się tym zajmuje**.
 
@@ -20,6 +20,6 @@ Przejdź do **Ustawienia → Typy dokumentów → Faktura → Ustawienia zaawans
 
 > Walidacja e-faktur jest konfigurowana **dla każdego typu dokumentu**. Obecnie dotyczy typu dokumentu **Faktura**; włącz ją dla każdego typu dokumentu, który ma być walidowany.
 
-Możesz też przejść tutaj bezpośrednio za pomocą **globalnego szybkiego wyszukiwania**: naciśnij <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> w systemach Windows i Linux) w dowolnym miejscu DocBits i wpisz _e-invoice_.
+Możesz też przejść tutaj bezpośrednio za pomocą **globalnego szybkiego wyszukiwania**: naciśnij <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> w systemach Windows i Linux) w dowolnym miejscu DocBits i wpisz *e-invoice*.
 
 <figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Globalne szybkie wyszukiwanie przechodzi do Walidacji e-faktur"><figcaption><p>Wpisz „e-invoice" w szybkim wyszukiwaniu, aby przejść bezpośrednio do przełącznika.</p></figcaption></figure>

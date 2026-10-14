@@ -20,7 +20,7 @@ Każdy wynik pokazuje:
 
 Używaj strzałek góra/dół, aby zaznaczyć wynik, następnie naciśnij <kbd>Enter</kbd>, aby go otworzyć. Naciśnij <kbd>Esc</kbd>, aby zamknąć okno.
 
-Na liście wyników widoczne są tylko wpisy, do których masz uprawnienia. Wpisy zarezerwowane dla administratorów są ukryte przed pozostałymi użytkownikami.
+<mark>Na liście wyników widoczne są tylko wpisy, do których masz uprawnienia. Wpisy zarezerwowane dla administratorów są ukryte przed pozostałymi użytkownikami.</mark>
 
 ## Ostatnie wyszukiwania
 
@@ -41,9 +41,9 @@ Jeśli osiem widocznych wyników nie wystarcza, kliknij łącze **Zobacz wszystk
 
 ## Skróty klawiaturowe
 
-| Klawisz                                       | Działanie                                       |
-| --------------------------------------------- | ----------------------------------------------- |
+| Klawisz | Działanie |
+|---|---|
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Otwórz Szybkie Wyszukiwanie z dowolnego miejsca |
-| <kbd>↑</kbd> / <kbd>↓</kbd>                   | Przejdź między wynikami                         |
-| <kbd>Enter</kbd>                              | Otwórz zaznaczony wynik                         |
-| <kbd>Esc</kbd>                                | Zamknij okno                                    |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Przejdź między wynikami |
+| <kbd>Enter</kbd> | Otwórz zaznaczony wynik |
+| <kbd>Esc</kbd> | Zamknij okno |

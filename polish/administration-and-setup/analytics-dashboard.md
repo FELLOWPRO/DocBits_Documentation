@@ -32,11 +32,11 @@ Panel Analityczny jest sterowany ustawieniem modułu. Po włączeniu w lewym pas
 
 Wybierz właściwą perspektywę dla swojej analizy. Każdy typ przepływu daje inną perspektywę na te same dane.
 
-| Typ przepływu              | Cel                                                    | Kluczowe pytanie                                                      |
-| -------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------- |
-| **Status**                 | Śledzenie cyklu życia dokumentu od importu do eksportu | _„Jaki jest całkowity czas moich dokumentów od importu do eksportu?"_ |
-| **Przetwarzanie**          | Analiza wydajności modułów technicznych                | _„Które kroki przetwarzania są wąskimi gardłami?"_                    |
-| **Interakcja użytkownika** | Punkty kontaktu z człowiekiem i czas oczekiwania       | _„Jak długo dokumenty oczekują na użytkowników?"_                     |
+| Typ przepływu | Cel | Kluczowe pytanie |
+| --- | --- | --- |
+| **Status** | Śledzenie cyklu życia dokumentu od importu do eksportu | *„Jaki jest całkowity czas moich dokumentów od importu do eksportu?"* |
+| **Przetwarzanie** | Analiza wydajności modułów technicznych | *„Które kroki przetwarzania są wąskimi gardłami?"* |
+| **Interakcja użytkownika** | Punkty kontaktu z człowiekiem i czas oczekiwania | *„Jak długo dokumenty oczekują na użytkowników?"* |
 
 Użyj przełącznika **Typ przepływu** u góry panelu, aby przełączać się między perspektywami.
 
@@ -105,7 +105,7 @@ Analizuj dowolny okres od **7 dni** do **pełnego roku** lub ustaw **niestandard
 
 ## Karty kroków przepływu
 
-Każda karta reprezentuje krok przepływu na podstawie wybranego **Typu przepływu**. Karty dostosowują się do Twojego wyboru — pokazując etapy cyklu życia dla _Status_, moduły przetwarzania dla _Przetwarzanie_ lub punkty kontaktu z użytkownikiem dla _Interakcja użytkownika_.
+Każda karta reprezentuje krok przepływu na podstawie wybranego **Typu przepływu**. Karty dostosowują się do Twojego wyboru — pokazując etapy cyklu życia dla *Status*, moduły przetwarzania dla *Przetwarzanie* lub punkty kontaktu z użytkownikiem dla *Interakcja użytkownika*.
 
 Każda karta wyświetla:
 

@@ -35,4 +35,4 @@ Twoje preferencje są zapisywane automatycznie po naciśnięciu **Gotowe** i utr
 
 Gdy w przyszłej wersji do DocBits zostanie dodana nowa funkcja, dołącza do końca twojego paska bocznego z domyślną widocznością. Zmień jej położenie lub ukryj ją w trybie edycji, aby pasowała do twojej rutyny.
 
-Funkcje, do których nie masz uprawnień, nigdy nie pojawiają się na liście dostosowania — nie możesz przypadkowo włączyć czegoś, czego twoja rola nie potrafi otworzyć.
+<mark>Funkcje, do których nie masz uprawnień, nigdy nie pojawiają się na liście dostosowania — nie możesz przypadkowo włączyć czegoś, czego twoja rola nie potrafi otworzyć.</mark>

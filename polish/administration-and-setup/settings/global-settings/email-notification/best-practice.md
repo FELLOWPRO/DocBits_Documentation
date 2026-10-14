@@ -1,4 +1,4 @@
-# Best Practice
+# Najlepsze praktyki
 
 ## Oto kilka najlepszych praktyk dotyczących efektywnego korzystania z powiadomień e-mail:
 

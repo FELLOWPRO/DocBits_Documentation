@@ -1,4 +1,6 @@
-# Skrypt
+# Script
+
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.25.png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/n8NpWWIjmlA" %}
 DocBits Document Scripts Explained: Automate Custom Logic in Your Document Workflow
@@ -21,5 +23,7 @@ Skrypty w Docbits są zazwyczaj pisane w języku skryptowym obsługiwanym przez 
 
 * Zapewnia interfejs, w którym skrypty mogą być pisane i edytowane. Edytor zazwyczaj obsługuje podświetlanie składni, podświetlanie błędów i inne funkcje wspomagające rozwój skryptu.
 * **Przykładowy skrypt**: Skrypty mogą zawierać operacje takie jak iterowanie przez linie faktur w celu zweryfikowania sum lub usunięcia wpisów, które nie spełniają określonych kryteriów.
+
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2009.43.37.png" alt=""><figcaption></figcaption></figure>
 
 {% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2498" %}

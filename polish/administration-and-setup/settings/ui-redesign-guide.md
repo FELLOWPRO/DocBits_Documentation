@@ -15,15 +15,15 @@ Pełny przewodnik po porządkowaniu, ukrywaniu i przypinaniu znajdziesz w [Konfi
 
 Menu Ustawienia jest pogrupowane według zamiaru, a nie modelu danych. Jeśli pamiętasz ustawienie, ale nie potrafisz go znaleźć, spróbuj odpowiedniej grupy poniżej:
 
-| Szukasz…                                                         | Otwórz Ustawienia →                                    |
-| ---------------------------------------------------------------- | ------------------------------------------------------ |
-| Nazwa firmy, logo, strefa czasowa, kolor aplikacji               | Firma i Użytkownicy → Informacje o Firmie              |
-| Użytkownicy, grupy, uprawnienia                                  | Firma i Użytkownicy → Grupy, Użytkownicy i Uprawnienia |
-| Klucze API, połączenia ERP, konfiguracje eksportu                | Integracja                                             |
-| Typy dokumentów, pola, skrypty, EDI, trenowanie modelu           | Typy Dokumentów                                        |
-| Ustawienia OCR, drzewa decyzyjne, listy wartości, menedżer reguł | Przetwarzanie Dokumentów                               |
-| Audyt dostępu, analityka, indeks pełnotekstowy, dziennik zdarzeń | Dzienniki i Wyszukiwanie                               |
-| Portal dostawców, Watchdog                                       | Konfiguracja                                           |
+| Szukasz… | Otwórz Ustawienia → |
+|---|---|
+| Nazwa firmy, logo, strefa czasowa, kolor aplikacji | Firma i Użytkownicy → Informacje o Firmie |
+| Użytkownicy, grupy, uprawnienia | Firma i Użytkownicy → Grupy, Użytkownicy i Uprawnienia |
+| Klucze API, połączenia ERP, konfiguracje eksportu | Integracja |
+| Typy dokumentów, pola, skrypty, EDI, trenowanie modelu | Typy Dokumentów |
+| Ustawienia OCR, drzewa decyzyjne, listy wartości, menedżer reguł | Przetwarzanie Dokumentów |
+| Audyt dostępu, analityka, indeks pełnotekstowy, dziennik zdarzeń | Dzienniki i Wyszukiwanie |
+| Portal dostawców, Watchdog | Konfiguracja |
 
 W każdej grupie najczęściej używane strony są umieszczone na górze.
 

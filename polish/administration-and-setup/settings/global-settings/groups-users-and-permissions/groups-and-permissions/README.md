@@ -4,17 +4,44 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-**Składniki Sekcji Grup i Uprawnień**
+<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Groups and Permissions"><figcaption><p>Strona Groups and Permissions</p></figcaption></figure>
 
-1. **Włącz/Wyłącz Grupy i Uprawnienia**: Przełącznik, który pozwala administratorowi systemu włączać lub wyłączać korzystanie z grup i uprawnień w całej platformie. Po wyłączeniu system może przejść domyślnie do mniej szczegółowego modelu kontroli dostępu.
-2. **Lista Grup**: Pokazuje listę dostępnych grup użytkowników w organizacji. Każda grupa może być skonfigurowana z określonymi uprawnieniami. Administratorzy mogą dodawać nowe grupy, klikając przycisk "+ Nowa".
-3. **Tabela Uprawnień**:
+Groups and Permissions pozwalają kontrolować, którzy użytkownicy mają dostęp do określonych typów dokumentów i jakie czynności mogą wykonywać.
 
-* Wyświetlana po wybraniu grupy lub konfigurowaniu nowej grupy.
-* Wyświetla wszystkie rodzaje dokumentów rozpoznawanych przez system (np. FAKTURA, NOTA KREDYTOWA, NOTA DOSTAWY).
-* Dla każdego rodzaju dokumentu są dostępne pola wyboru dla różnych uprawnień:
-* **Wyświetlanie**: Uprawnienie do zobaczenia dokumentu.
-* **Aktualizacja**: Uprawnienie do modyfikacji dokumentu.
-* **Usuwanie**: Uprawnienie do usunięcia dokumentu z systemu.
-* **Pierwsza Akceptacja**: Uprawnienie do wykonania początkowej akceptacji dokumentu.
-* **Druga Akceptacja**: Uprawnienie do wykonania drugiego poziomu akceptacji (jeśli dotyczy).
+## Włączanie/wyłączanie grup i uprawnień
+
+Użyj przełącznika u góry strony, aby włączyć lub wyłączyć system grup i uprawnień. Po wyłączeniu system stosuje prostszy model dostępu bez ograniczeń opartych na grupach.
+
+## Lista grup
+
+Tabela wyświetla wszystkie skonfigurowane grupy wraz z:
+
+| Kolumna | Opis |
+|--------|-------------|
+| **Group Name** | Nazwa grupy. |
+| **Group Description** | Krótki opis przeznaczenia grupy. |
+| **Actions** | Menu z opcjami edycji lub usunięcia grupy. |
+
+Użyj paska **Search**, aby znaleźć grupy według nazwy. Kliknij **+ New**, aby utworzyć nową grupę.
+
+## Konfigurowanie uprawnień grupy
+
+Po wybraniu grupy (przez menu Actions → Edit) pojawia się tabela uprawnień, w której możesz skonfigurować dostęp dla każdego typu dokumentu:
+
+| Uprawnienie | Opis |
+|------------|-------------|
+| **View** | Uprawnienie do przeglądania dokumentów tego typu. |
+| **Update** | Uprawnienie do modyfikowania dokumentów tego typu. |
+| **Delete** | Uprawnienie do usuwania dokumentów tego typu. |
+| **First Approval** | Uprawnienie do wykonania pierwszego zatwierdzenia. |
+| **Second Approval** | Uprawnienie do wykonania drugiego poziomu zatwierdzenia (jeśli dotyczy). |
+
+Każdy wiersz tabeli uprawnień odpowiada jednemu typowi dokumentu (np. Invoice, Credit Note, Delivery Note). Zaznacz lub odznacz pola wyboru, aby przyznać lub odebrać uprawnienia tej grupie.
+
+## Tworzenie nowej grupy
+
+1. Kliknij **+ New** w prawym górnym rogu.
+2. Wpisz **Group Name** i opcjonalnie **Description**.
+3. Skonfiguruj uprawnienia dla każdego typu dokumentu.
+4. Przypisz użytkowników do grupy.
+5. Kliknij **Save**, aby zastosować.

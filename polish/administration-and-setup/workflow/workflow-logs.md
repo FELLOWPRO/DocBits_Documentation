@@ -1,4 +1,4 @@
-# Workflow Logs
+# Dzienniki Przepływu
 
 ## **Przegląd**
 

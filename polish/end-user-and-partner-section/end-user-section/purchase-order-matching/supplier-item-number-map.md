@@ -10,6 +10,7 @@ Ta funkcja pomaga zarządzać i uzgadniać numery przedmiotów pomiędzy Twoim s
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
+
 1. **Ręczne dopasowanie:**
    * Za pierwszym razem, gdy napotkasz rozbieżność pomiędzy swoim numerem przedmiotu a numerem przedmiotu dostawcy, musisz dopasować je ręcznie.
    * Możesz to zrobić, wprowadzając poprawny numer przedmiotu dostawcy odpowiadający Twojemu wewnętrznemu numerowi przedmiotu.
@@ -25,7 +26,7 @@ Ta funkcja pomaga zarządzać i uzgadniać numery przedmiotów pomiędzy Twoim s
 * **Działanie:** Opcje zarządzania mapowaniami, takie jak usuwanie niepoprawnych mapowań.
 
 {% hint style="info" %}
-Zobacz także[ Sekcję Administracyjną](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/end-user-and-partner-section/end-user-section/purchase-order-matching/broken-reference/README.md)
+Zobacz także[ Sekcję Administracyjną](broken-reference)
 {% endhint %}
 
 ## **Korzyści**

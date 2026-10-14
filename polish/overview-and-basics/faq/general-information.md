@@ -15,6 +15,8 @@
 
 </details>
 
+
+
 <details>
 
 <summary>Czy DocBits obsługuje niestandardowe typy dokumentów?</summary>
@@ -22,6 +24,8 @@
 Tak, Użytkownicy mogą tworzyć własne typy dokumentów.
 
 </details>
+
+
 
 <details>
 
@@ -37,5 +41,7 @@ Tak, Użytkownicy mogą tworzyć własne typy dokumentów.
 * .png
 
 </details>
+
+
 
 ####

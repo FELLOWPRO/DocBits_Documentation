@@ -60,14 +60,14 @@ if table:
 ## Wyjaśnienie krok po kroku
 
 1. **Pobierz tabelę faktury** z `tables_dict`
-2. **Zsumuj wszystkie wartości LINE\_TOTAL** we wierszach tabeli
+2. **Zsumuj wszystkie wartości LINE_TOTAL** we wierszach tabeli
 3. **Porównaj** obliczoną sumę z wyodrębnioną kwotą netto
 4. **Zaktualizuj lub oznacz** — albo zastąp kwotę netto, albo oznacz ją jako nieprawidłową
 
 ## Użyte funkcje
 
-* [get\_column\_value()](../functions/table-functions.md#get_column_value) — Odczyt wartości kolumn z wierszy
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczyt kwoty netto
-* [set\_amount\_value()](../functions/field-functions.md#set_amount_value) — Ustawienie poprawionej kwoty
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Oznaczenie pola jako nieprawidłowe
-* [set\_field\_as\_valid()](../functions/field-functions.md#set_field_as_valid) — Oznaczenie pola jako prawidłowe
+- [get\_column\_value()](../table-functions.md#get\_column\_value) — Odczyt wartości kolumn z wierszy
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczyt kwoty netto
+- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — Ustawienie poprawionej kwoty
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Oznaczenie pola jako nieprawidłowe
+- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — Oznaczenie pola jako prawidłowe

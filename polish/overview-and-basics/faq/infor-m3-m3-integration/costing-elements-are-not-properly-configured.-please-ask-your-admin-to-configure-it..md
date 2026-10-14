@@ -1,4 +1,4 @@
-# Elementy kosztowania nie są poprawnie skonfigurowane. Proszę poproś administratora o skonfigurowanie
+# Elementy kosztowania nie są poprawnie skonfigurowane. Proszę poproś administratora o skonfigurowanie.
 
 Jeśli napotkasz komunikat o błędzie **"Elementy kosztowania nie są poprawnie skonfigurowane. Proszę poproś administratora o skonfigurowanie,"** może to być spowodowane jednym z następujących powodów:
 

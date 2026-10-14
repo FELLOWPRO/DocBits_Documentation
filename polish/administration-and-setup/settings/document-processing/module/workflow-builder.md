@@ -31,7 +31,7 @@ Włączenie przełącznika nie tylko zmienia ustawienie — uruchamia **subskryp
 4. Otwórz sekcję **Typ dokumentu**.
 5. Znajdź **Workflow Builder** i włącz przełącznik.
 6. W oknie dialogowym wybierz swój plan DocFlow (Standard, opcjonalnie Advanced) i potwierdź. DocFlow zostaje aktywowany po utworzeniu subskrypcji.
-7. Następnie zaprojektuj swoje przepływy pracy dla dokumentów w DocFlow — zobacz sekcję [Workflow](../../../workflow/), jak je tworzyć.
+7. Następnie zaprojektuj swoje przepływy pracy dla dokumentów w DocFlow — zobacz sekcję [Workflow](../../../workflow/README.md), jak je tworzyć.
 
 ### Kiedy używać tej funkcji
 

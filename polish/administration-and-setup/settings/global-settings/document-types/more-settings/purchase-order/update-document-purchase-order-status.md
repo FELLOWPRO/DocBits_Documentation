@@ -1,5 +1,7 @@
 # Aktualizuj status zamówienia zakupu
 
+
+
 ## Przegląd
 
 Gdy jest włączone, kolumna **Status PO** na tablicy rozdzielczej jest automatycznie aktualizowana za każdym razem, gdy zmienia się status zamówienia zakupu.

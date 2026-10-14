@@ -1,13 +1,13 @@
-# Pola
+# Fields
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Fields Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_fields_overview.png" alt="Docbits Fields Overview"><figcaption></figcaption></figure>
 
 ## Overview
 
 The Fields setting provides a user interface where administrators can manage the properties and behavior of individual data fields associated with a document type. Each field can be adjusted to optimize the accuracy and efficiency of data capture and validation.
 
 {% hint style="info" %}
-[Fields with Charges](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/settings/global-settings/document-types/fields/new-fields-with-charges.md)
+[Fields with Charges](new-fields-with-charges.md)
 {% endhint %}
 
 ## Key Features and Options

@@ -1,4 +1,4 @@
-# Obliczanie Łącznych Opłat
+# Skrypt Obliczania Całkowitych Opłat dla DocBits
 
 ### Przegląd
 

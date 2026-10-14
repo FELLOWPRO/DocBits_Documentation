@@ -51,5 +51,3 @@ Then insert this Logical ID into the appropriate section of the BOD Mapping File
 Drag and drop the file into your export configuration in DocBits. This is available at Settings → Export.
 
 ![](https://lh7-us.googleusercontent.com/AqCo7QgC-kaAxbaIJD8MYeKGLBXbwGVJPGx9\_2yfUp3R2MYxJPowVAjnO80uxQ9qMDxNoXy1eY3WH-mEpaeWwatwi91edm\_0lS9Hg93FSAjQGtDAR5y7Ptce-ARfetSiXIBJKiGwujSggVXXHUhG77U)
-
-

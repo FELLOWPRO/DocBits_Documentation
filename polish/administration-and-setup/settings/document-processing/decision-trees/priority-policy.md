@@ -14,4 +14,4 @@ Jeśli kwota całkowita wynosi **1500**, ocenione reguły będą następujące:
 * **Reguła 4**: Total Amount <= 4000 (dopasowanie)
 * **Reguła 5**: Total Amount <= 5000 (dopasowanie)
 
-Ponieważ priorytet jest stosowany w kolejności **5, 4, 3, 2, 1**, dopasowaną regułą o najwyższym priorytecie będzie **Reguła 5** (**GROUP\_5**). Drzewo decyzyjne zwróci **GROUP\_5**, ponieważ **Reguła 5** ma najwyższy priorytet (priorytet 1).
+Ponieważ priorytet jest stosowany w kolejności **5, 4, 3, 2, 1**, dopasowaną regułą o najwyższym priorytecie będzie **Reguła 5** (**GROUP_5**). Drzewo decyzyjne zwróci **GROUP_5**, ponieważ **Reguła 5** ma najwyższy priorytet (priorytet 1).

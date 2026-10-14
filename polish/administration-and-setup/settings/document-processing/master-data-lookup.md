@@ -1,6 +1,7 @@
-# Wyszukiwanie danych głównych
+# Wyszukiwanie danych podstawowych
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
 **Wyszukiwanie danych podstawowych** (pasek boczny: **Lookup Master Data**) umożliwia przeglądanie danych podstawowych, których DocBits używa do walidacji danych wyodrębnionych z dokumentów względem systemu ERP, oraz zarządzanie nimi. Jest to niezbędne do precyzyjnego PO matchingu, walidacji dostawców i automatycznego uzupełniania pól. Otwórz tę stronę z poziomu **Ustawienia → Przetwarzanie dokumentów → Lookup Master Data**.
 
@@ -10,12 +11,12 @@
 
 Panel po lewej stronie wyświetla cztery kategorie źródeł danych:
 
-| Źródło                  | Opis                                                                                                                           |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **BOD Input Data**      | Dane otrzymywane za pośrednictwem komunikatów Infor BOD (Business Object Document).                                            |
-| **ERP API Data**        | Dane pobierane bezpośrednio z systemu ERP za pośrednictwem API. Kliknij ikonę koła zębatego, aby skonfigurować połączenie API. |
-| **Imported**            | Dane zaimportowane ręcznie (na przykład przez przesłanie pliku CSV). Kliknij ikonę **+**, aby dodać nowe dane.                 |
-| **DocBits Master Data** | Wewnętrzne dane podstawowe zarządzane w DocBits.                                                                               |
+| Źródło | Opis |
+|--------|------|
+| **BOD Input Data** | Dane otrzymywane za pośrednictwem komunikatów Infor BOD (Business Object Document). |
+| **ERP API Data** | Dane pobierane bezpośrednio z systemu ERP za pośrednictwem API. Kliknij ikonę koła zębatego, aby skonfigurować połączenie API. |
+| **Imported** | Dane zaimportowane ręcznie (na przykład przez przesłanie pliku CSV). Kliknij ikonę **+**, aby dodać nowe dane. |
+| **DocBits Master Data** | Wewnętrzne dane podstawowe zarządzane w DocBits. |
 
 ## Tabela danych
 

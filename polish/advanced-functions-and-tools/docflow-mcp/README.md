@@ -6,11 +6,11 @@ DocFlow udostepnia serwer **Model Context Protocol (MCP)**, ktory pozwala asyste
 
 Dzieki DocFlow MCP mozesz:
 
-* **Wyswietlac, tworzyc, aktualizowac i usuwac** zaawansowane przeplywy pracy
-* **Testowac przeplywy pracy** z prawdziwymi lub symulowanymi dokumentami
-* **Budowac niestandardowe karty** przy uzyciu Partner Card SDK
-* **Walidowac, testowac, zatwierdzac i zarzadzac** zgloszeniami kart partnerskich
-* **Importowac karty** bezposrednio z repozytoriow GitHub
+- **Wyswietlac, tworzyc, aktualizowac i usuwac** zaawansowane przeplywy pracy
+- **Testowac przeplywy pracy** z prawdziwymi lub symulowanymi dokumentami
+- **Budowac niestandardowe karty** przy uzyciu Partner Card SDK
+- **Walidowac, testowac, zatwierdzac i zarzadzac** zgloszeniami kart partnerskich
+- **Importowac karty** bezposrednio z repozytoriow GitHub
 
 ## Przeglad narzedzi
 
@@ -18,39 +18,39 @@ DocFlow MCP udostepnia **18 narzedzi** w czterech kategoriach:
 
 ### Zarzadzanie przepływami pracy
 
-| Narzedzie         | Opis                                                         |
-| ----------------- | ------------------------------------------------------------ |
-| `list_workflows`  | Wyswietla wszystkie przepływy pracy dla biezacej organizacji |
-| `get_workflow`    | Pobiera szczegoly konkretnego przepływu pracy po ID          |
-| `delete_workflow` | Usuwa przepływ pracy po ID                                   |
+| Narzedzie | Opis |
+|-----------|------|
+| `list_workflows` | Wyswietla wszystkie przepływy pracy dla biezacej organizacji |
+| `get_workflow` | Pobiera szczegoly konkretnego przepływu pracy po ID |
+| `delete_workflow` | Usuwa przepływ pracy po ID |
 
 ### Testowanie przepływow pracy
 
-| Narzedzie                | Opis                                                                      |
-| ------------------------ | ------------------------------------------------------------------------- |
+| Narzedzie | Opis |
+|-----------|------|
 | `test_advanced_workflow` | Testuje wykonanie zaawansowanego przepływu pracy z opcjonalnym dokumentem |
-| `list_test_scenarios`    | Wyswietla wszystkie scenariusze testowe przepływow pracy                  |
-| `list_cards`             | Wyswietla dostepne karty/akcje przepływow pracy                           |
+| `list_test_scenarios` | Wyswietla wszystkie scenariusze testowe przepływow pracy |
+| `list_cards` | Wyswietla dostepne karty/akcje przepływow pracy |
 
 ### Zarzadzanie Card SDK
 
-| Narzedzie                   | Opis                                                    |
-| --------------------------- | ------------------------------------------------------- |
-| `sdk_list_submissions`      | Wyswietla wszystkie zgloszenia kart partnerskich        |
-| `sdk_get_submission_status` | Pobiera status walidacji zgloszenia                     |
-| `sdk_approve_card`          | Zatwierdza zwalidowana karte partnerska (administrator) |
-| `sdk_reject_card`           | Odrzuca zgloszenie karty partnerskiej (administrator)   |
-| `sdk_delete_submission`     | Dezaktywuje lub usuwa zgloszenie (administrator)        |
-| `sdk_list_cards_picker`     | Wyswietla wszystkie wlaczone karty z flagami rol        |
+| Narzedzie | Opis |
+|-----------|------|
+| `sdk_list_submissions` | Wyswietla wszystkie zgloszenia kart partnerskich |
+| `sdk_get_submission_status` | Pobiera status walidacji zgloszenia |
+| `sdk_approve_card` | Zatwierdza zwalidowana karte partnerska (administrator) |
+| `sdk_reject_card` | Odrzuca zgloszenie karty partnerskiej (administrator) |
+| `sdk_delete_submission` | Dezaktywuje lub usuwa zgloszenie (administrator) |
+| `sdk_list_cards_picker` | Wyswietla wszystkie wlaczone karty z flagami rol |
 
 ### Rozwoj Card SDK
 
-| Narzedzie           | Opis                                           |
-| ------------------- | ---------------------------------------------- |
-| `sdk_create_card`   | Tworzy nowa karte partnerska z kodu zrodlowego |
-| `sdk_validate_card` | Uruchamia 5-etapowa walidacje bez zapisywania  |
-| `sdk_test_card`     | Wykonuje karte w srodowisku sandbox            |
-| `sdk_import_github` | Importuje aplikacje partnerska z GitHub        |
+| Narzedzie | Opis |
+|-----------|------|
+| `sdk_create_card` | Tworzy nowa karte partnerska z kodu zrodlowego |
+| `sdk_validate_card` | Uruchamia 5-etapowa walidacje bez zapisywania |
+| `sdk_test_card` | Wykonuje karte w srodowisku sandbox |
+| `sdk_import_github` | Importuje aplikacje partnerska z GitHub |
 
 ## Pierwsze kroki
 

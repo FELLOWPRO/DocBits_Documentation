@@ -38,13 +38,13 @@ System Admin jest wyjątkowy pod trzema względami:
 
 ### W skrócie
 
-|                                         | Admin                  | System Admin                        |
-| --------------------------------------- | ---------------------- | ----------------------------------- |
-| Pełny dostęp do zarządzania organizacją | Tak                    | Tak                                 |
-| Ilu można mieć                          | Tylu, ilu potrzeba     | Tylko jeden                         |
+| | Admin | System Admin |
+|---|---|---|
+| Pełny dostęp do zarządzania organizacją | Tak | Tak |
+| Ilu można mieć | Tylu, ilu potrzeba | Tylko jeden |
 | Można zmienić po utworzeniu użytkownika | Tak, w dowolnej chwili | Nie, ustawiane tylko przy tworzeniu |
-| Używany do automatycznych działań w tle | Nie                    | Tak                                 |
-| Zawsze posiada uprawnienia Admin        | —                      | Tak                                 |
+| Używany do automatycznych działań w tle | Nie | Tak |
+| Zawsze posiada uprawnienia Admin | — | Tak |
 
 ## Najlepsze praktyki w zakresie bezpieczeństwa
 

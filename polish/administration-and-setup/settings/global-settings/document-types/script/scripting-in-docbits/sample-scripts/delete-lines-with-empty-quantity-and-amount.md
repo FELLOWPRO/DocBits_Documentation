@@ -1,4 +1,4 @@
-# Usuwanie Pustych Wierszy
+# Usuwanie Linii z Pustą Ilością i Kwotą
 
 #### Część 1: Usuwanie Linii z Pustą Ilością i Kwotą
 

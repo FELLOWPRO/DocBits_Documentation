@@ -14,7 +14,7 @@ Funkcje do przeszukiwania archiwow dokumentow, znajdowania podobnych dokumentow 
 
 **Zrodlo:** `module/script/helper/document_script_functions.py`
 
-***
+---
 
 ## fulltext\_search()
 
@@ -26,28 +26,28 @@ fulltext_search(query, **kwargs)
 
 **Parametry:**
 
-| Nazwa         | Typ   | Domyslnie        | Opis                                                                                                               |
-| ------------- | ----- | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `query`       | `str` | wymagane         | Szukana fraza (przeszukiwana w tekscie OCR wszystkich dokumentow)                                                  |
+| Nazwa | Typ | Domyslnie | Opis |
+| ----- | --- | --------- | ---- |
+| `query` | `str` | wymagane | Szukana fraza (przeszukiwana w tekscie OCR wszystkich dokumentow) |
 | `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (dokladna fraza), `"fuzzy"` (tolerancja bledow, do 2 znakow roznicy), `"prefix"` (zaczyna sie od) |
-| `doc_type`    | `str` | `None`           | Filtruj po typie dokumentu (rozdzielone przecinkami, np. `"INVOICE,CREDIT_NOTE"`)                                  |
-| `status`      | `str` | `None`           | Filtruj po statusie dokumentu (rozdzielone przecinkami, np. `"ready_for_validation,exported"`)                     |
-| `vendor_name` | `str` | `None`           | Filtruj po nazwie dostawcy                                                                                         |
-| `date_range`  | `str` | `None`           | `"last_30_days"`, `"last_90_days"`, `"last_180_days"`, `"last_365_days"`                                           |
-| `size`        | `int` | `10`             | Maks. wynikow (ograniczone do 50)                                                                                  |
+| `doc_type` | `str` | `None` | Filtruj po typie dokumentu (rozdzielone przecinkami, np. `"INVOICE,CREDIT_NOTE"`) |
+| `status` | `str` | `None` | Filtruj po statusie dokumentu (rozdzielone przecinkami, np. `"ready_for_validation,exported"`) |
+| `vendor_name` | `str` | `None` | Filtruj po nazwie dostawcy |
+| `date_range` | `str` | `None` | `"last_30_days"`, `"last_90_days"`, `"last_180_days"`, `"last_365_days"` |
+| `size` | `int` | `10` | Maks. wynikow (ograniczone do 50) |
 
 **Zwraca:** `list[dict]` — Kazdy dict zawiera:
 
-| Pole           | Opis                                                      |
-| -------------- | --------------------------------------------------------- |
-| `doc_id`       | UUID dokumentu                                            |
-| `name`         | Nazwa pliku (np. `"INV-2026-001.pdf"`)                    |
-| `doc_type`     | Typ dokumentu (`"INVOICE"`, `"ORDER_CONFIRMATION"`, itp.) |
-| `vendor_name`  | Nazwa dostawcy                                            |
-| `status`       | Status dokumentu                                          |
-| `total_amount` | Kwota calkowita                                           |
-| `ocr_content`  | Dopasowany fragment tekstu z dokumentu                    |
-| `highlights`   | Dict z podswietlonymi dopasowaniami na pole               |
+| Pole | Opis |
+| ---- | ---- |
+| `doc_id` | UUID dokumentu |
+| `name` | Nazwa pliku (np. `"INV-2026-001.pdf"`) |
+| `doc_type` | Typ dokumentu (`"INVOICE"`, `"ORDER_CONFIRMATION"`, itp.) |
+| `vendor_name` | Nazwa dostawcy |
+| `status` | Status dokumentu |
+| `total_amount` | Kwota calkowita |
+| `ocr_content` | Dopasowany fragment tekstu z dokumentu |
+| `highlights` | Dict z podswietlonymi dopasowaniami na pole |
 
 **Przyklad — Wyszukiwanie dokladnej frazy:**
 
@@ -83,7 +83,7 @@ results = fulltext_search("Rechn", search_type="prefix",
 **Obsluga bledow:** Jesli usluga fulltextsearch jest nieosiagalna, funkcja zwraca `[]` i loguje ostrzezenie. **Nie** generuje wyjatku.
 {% endhint %}
 
-***
+---
 
 ## vector\_search()
 
@@ -95,19 +95,19 @@ vector_search(doc_id, **kwargs)
 
 **Parametry:**
 
-| Nazwa    | Typ   | Domyslnie | Opis                                                                |
-| -------- | ----- | --------- | ------------------------------------------------------------------- |
-| `doc_id` | `str` | wymagane  | UUID dokumentu zrodlowego (dokument, dla ktorego szukamy podobnych) |
-| `k`      | `int` | `5`       | Liczba podobnych dokumentow do zwrocenia (ograniczone do 50)        |
+| Nazwa | Typ | Domyslnie | Opis |
+| ----- | --- | --------- | ---- |
+| `doc_id` | `str` | wymagane | UUID dokumentu zrodlowego (dokument, dla ktorego szukamy podobnych) |
+| `k` | `int` | `5` | Liczba podobnych dokumentow do zwrocenia (ograniczone do 50) |
 
 **Zwraca:** `list[dict]` — Kazdy dict zawiera:
 
-| Pole                 | Opis                              |
-| -------------------- | --------------------------------- |
-| `doc_id`             | UUID podobnego dokumentu          |
-| `name`               | Nazwa pliku                       |
-| `doc_type`           | Typ dokumentu                     |
-| `similarity_score`   | Surowy wynik podobienstwa (0-1)   |
+| Pole | Opis |
+| ---- | ---- |
+| `doc_id` | UUID podobnego dokumentu |
+| `name` | Nazwa pliku |
+| `doc_type` | Typ dokumentu |
+| `similarity_score` | Surowy wynik podobienstwa (0-1) |
 | `similarity_percent` | Podobienstwo w procentach (0-100) |
 
 **Przyklad — Znajdowanie podobnych dokumentow:**
@@ -123,7 +123,7 @@ for doc in similar:
 **Jak to dziala:** Kazdy dokument jest konwertowany na wektor 384-wymiarowy podczas indeksowania. Wyszukiwanie wektorowe znajduje najblizszych sasiadow w tej przestrzeni wektorowej, co odpowiada semantycznie podobnym dokumentom.
 {% endhint %}
 
-***
+---
 
 ## fulltext\_search\_erp()
 
@@ -135,14 +135,14 @@ fulltext_search_erp(query, **kwargs)
 
 **Parametry:**
 
-| Nazwa           | Typ   | Domyslnie | Opis                                                                                                         |
-| --------------- | ----- | --------- | ------------------------------------------------------------------------------------------------------------ |
-| `query`         | `str` | wymagane  | Szukana fraza                                                                                                |
-| `entity_types`  | `str` | `None`    | Filtruj po typie encji (rozdzielone przecinkami: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
-| `vendor_number` | `str` | `None`    | Filtruj po numerze dostawcy                                                                                  |
-| `vendor_name`   | `str` | `None`    | Filtruj po nazwie dostawcy                                                                                   |
-| `company_code`  | `str` | `None`    | Filtruj po kodzie firmy                                                                                      |
-| `size`          | `int` | `10`      | Maks. wynikow (ograniczone do 50)                                                                            |
+| Nazwa | Typ | Domyslnie | Opis |
+| ----- | --- | --------- | ---- |
+| `query` | `str` | wymagane | Szukana fraza |
+| `entity_types` | `str` | `None` | Filtruj po typie encji (rozdzielone przecinkami: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
+| `vendor_number` | `str` | `None` | Filtruj po numerze dostawcy |
+| `vendor_name` | `str` | `None` | Filtruj po nazwie dostawcy |
+| `company_code` | `str` | `None` | Filtruj po kodzie firmy |
+| `size` | `int` | `10` | Maks. wynikow (ograniczone do 50) |
 
 **Zwraca:** `list[dict]` — Pola specyficzne dla typu encji (rekordy dostawcow maja `vendor_number`, `vendor_name`, itp.)
 
@@ -170,7 +170,7 @@ if po_number:
         set_field_as_valid(document_data, "purchase_order", "PO verified in ERP")
 ```
 
-***
+---
 
 ## fulltext\_suggestions()
 
@@ -182,10 +182,10 @@ fulltext_suggestions(query, **kwargs)
 
 **Parametry:**
 
-| Nazwa   | Typ   | Domyslnie | Opis                                               |
-| ------- | ----- | --------- | -------------------------------------------------- |
-| `query` | `str` | wymagane  | Prefiks / szukana fraza                            |
-| `limit` | `int` | `10`      | Maks. podpowiedzi na kategorie (ograniczone do 20) |
+| Nazwa | Typ | Domyslnie | Opis |
+| ----- | --- | --------- | ---- |
+| `query` | `str` | wymagane | Prefiks / szukana fraza |
+| `limit` | `int` | `10` | Maks. podpowiedzi na kategorie (ograniczone do 20) |
 
 **Zwraca:** `dict` z pogrupowanymi podpowiedziami:
 
@@ -208,18 +208,18 @@ vendor_list = suggestions.get("vendors", [])
 **Puste zapytanie:** Przekazanie pustego ciagu zwraca natychmiast `{}`.
 {% endhint %}
 
-***
+---
 
 ## Szybka Referencja
 
-| Funkcja                            | Cel                                             | Zwraca       |
-| ---------------------------------- | ----------------------------------------------- | ------------ |
-| `fulltext_search(query, ...)`      | Przeszukiwanie tekstu OCR wszystkich dokumentow | `list[dict]` |
-| `vector_search(doc_id, ...)`       | Znajdowanie semantycznie podobnych dokumentow   | `list[dict]` |
-| `fulltext_search_erp(query, ...)`  | Przeszukiwanie danych bazowych ERP              | `list[dict]` |
-| `fulltext_suggestions(query, ...)` | Podpowiedzi autouzupelniania                    | `dict`       |
+| Funkcja | Cel | Zwraca |
+| ------- | --- | ------ |
+| `fulltext_search(query, ...)` | Przeszukiwanie tekstu OCR wszystkich dokumentow | `list[dict]` |
+| `vector_search(doc_id, ...)` | Znajdowanie semantycznie podobnych dokumentow | `list[dict]` |
+| `fulltext_search_erp(query, ...)` | Przeszukiwanie danych bazowych ERP | `list[dict]` |
+| `fulltext_suggestions(query, ...)` | Podpowiedzi autouzupelniania | `dict` |
 
-***
+---
 
 ## Typowe Wzorce
 

@@ -23,7 +23,7 @@ DocBits wykrywa kody kreskowe podczas przetwarzania dokumentu i udostępnia ich 
 <figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="Przykładowa faktura zawierająca kilka typów kodów kreskowych"><figcaption><p>Przykładowa faktura demonstracyjna DocBits zawierająca trzy typy kodów kreskowych (kod QR → numer zamówienia, Code 128 → numer faktury, EAN-13 → GLN dostawcy), z których każdy koduje wartość możliwą do przypisania do pola.</p></figcaption></figure>
 
 {% hint style="info" %}
-To, które typy kodów kreskowych są wykrywane, określa ustawienie **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Jeśli okno dialogowe pokazuje _„no barcodes extracted found”_, upewnij się, że wyodrębnianie kodów kreskowych jest włączone i że wybrano oczekiwane typy (np. `QRCODE`, `CODE128`, `EAN13`). Zobacz [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+To, które typy kodów kreskowych są wykrywane, określa ustawienie **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Jeśli okno dialogowe pokazuje *„no barcodes extracted found”*, upewnij się, że wyodrębnianie kodów kreskowych jest włączone i że wybrano oczekiwane typy (np. `QRCODE`, `CODE128`, `EAN13`). Zobacz [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Korzystanie z okna dialogowego Przypisanie na podstawie kodu kreskowego
@@ -62,8 +62,8 @@ To, które typy kodów kreskowych są wykrywane, określa ustawienie **Bar-Code 
 
 * **Dokumenty z kodami kreskowymi**: Gdy Twoje dokumenty zawierają kody kreskowe/QR, których wartości należą do określonych pól (np. numery zamówień lub referencyjne).
 * **Ręczne procesy walidacji**: Gdy osoba przegląda dokumenty i chce szybko wypełnić pola z kodów kreskowych.
-* **Pozostaw wyłączone**, jeśli Twoje dokumenty nie mają użytecznych kodów kreskowych lub jeśli potrzebujesz tylko automatycznego **wyodrębniania** kodów kreskowych/QR — zobacz [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+* **Pozostaw wyłączone**, jeśli Twoje dokumenty nie mają użytecznych kodów kreskowych lub jeśli potrzebujesz tylko automatycznego **wyodrębniania** kodów kreskowych/QR — zobacz [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 
 {% hint style="info" %}
-**To służy do odczytania wartości kodu kreskowego/QR i przypisania jej do pola podczas walidacji.** Automatyczne wyodrębnianie ustrukturyzowanych danych z kodów płatności (takich jak Swiss QR Bill lub GiroCode) — oraz dzielenie wielostronicowego pliku w miejscach stron rozdzielających z kodem kreskowym — obsługuje **inne** ustawienie: [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+**To służy do odczytania wartości kodu kreskowego/QR i przypisania jej do pola podczas walidacji.** Automatyczne wyodrębnianie ustrukturyzowanych danych z kodów płatności (takich jak Swiss QR Bill lub GiroCode) — oraz dzielenie wielostronicowego pliku w miejscach stron rozdzielających z kodem kreskowym — obsługuje **inne** ustawienie: [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}

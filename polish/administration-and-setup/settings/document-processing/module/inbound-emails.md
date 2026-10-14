@@ -4,10 +4,10 @@
 
 DocBits może pobierać dokumenty bezpośrednio z poczty e-mail — bez ręcznego przesyłania. Istnieją **dwa sposoby** wprowadzania dokumentów z e-maili, oba w **Ustawienia → Przetwarzanie dokumentów → Import**:
 
-| Metoda                                             | Jak działa                                                                                                                                               | Najlepsza do                                                                           |
-| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| **Konto importu e-mail**                           | DocBits łączy się ze skrzynką, która należy do Ciebie (**IMAP**, **OAuth Office365** lub **OAuth Office365 – Tenant**) i importuje znalezione dokumenty. | Dedykowana skrzynka, która już odbiera Twoje dokumenty (np. `faktury@twojafirma.com`). |
-| **Przekazywane e-maile (Wiadomości przychodzące)** | DocBits udostępnia Ci unikalny adres; każdy autoryzowany nadawca może **przekazać** dokumenty na ten adres.                                              | Doraźne przekazywanie od wielu nadawców bez udostępniania danych logowania skrzynki.   |
+| Metoda | Jak działa | Najlepsza do |
+|--------|------------|--------------|
+| **Konto importu e-mail** | DocBits łączy się ze skrzynką, która należy do Ciebie (**IMAP**, **OAuth Office365** lub **OAuth Office365 – Tenant**) i importuje znalezione dokumenty. | Dedykowana skrzynka, która już odbiera Twoje dokumenty (np. `faktury@twojafirma.com`). |
+| **Przekazywane e-maile (Wiadomości przychodzące)** | DocBits udostępnia Ci unikalny adres; każdy autoryzowany nadawca może **przekazać** dokumenty na ten adres. | Doraźne przekazywanie od wielu nadawców bez udostępniania danych logowania skrzynki. |
 
 Możesz używać każdej metody osobno lub obu jednocześnie.
 
@@ -64,7 +64,7 @@ Po włączeniu w **Ustawienia → Przetwarzanie dokumentów → Import** pojawia
 Kliknij **Zapisz**, aby zastosować zmiany.
 
 {% hint style="info" %}
-**Które załączniki są importowane?** DocBits importuje obsługiwane załączniki dokumentów — pełną listę typów plików znajdziesz w [Import → Import e-mail](../import/#email-import) — oraz rozpakowuje przekazane wiadomości `.eml` i załączniki Outlook `winmail.dat` (TNEF), aby zaimportować zawarte w nich dokumenty. Rozpoznawanie opiera się również na **rzeczywistej zawartości pliku**, dzięki czemu załączniki, którym przekazujący serwer poczty nadał ogólny typ (`application/octet-stream`), są nadal importowane poprawnie. Obrazy osadzone w treści (logo w stopce / wbudowana grafika) są ignorowane.
+**Które załączniki są importowane?** DocBits importuje obsługiwane załączniki dokumentów — pełną listę typów plików znajdziesz w [Import → Import e-mail](../import/README.md#email-import) — oraz rozpakowuje przekazane wiadomości `.eml` i załączniki Outlook `winmail.dat` (TNEF), aby zaimportować zawarte w nich dokumenty. Rozpoznawanie opiera się również na **rzeczywistej zawartości pliku**, dzięki czemu załączniki, którym przekazujący serwer poczty nadał ogólny typ (`application/octet-stream`), są nadal importowane poprawnie. Obrazy osadzone w treści (logo w stopce / wbudowana grafika) są ignorowane.
 {% endhint %}
 
 ### Kiedy której metody użyć

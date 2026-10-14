@@ -65,7 +65,7 @@ if vendor_nr:
 
 ## Uzyte Funkcje
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczytaj wartosc pola
-* [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext_search_erp) — Przeszukaj dane bazowe ERP
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Pokaz blad walidacji
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Zapisz wartosc pola
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczytaj wartosc pola
+- [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext\_search\_erp) — Przeszukaj dane bazowe ERP
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Pokaz blad walidacji
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Zapisz wartosc pola

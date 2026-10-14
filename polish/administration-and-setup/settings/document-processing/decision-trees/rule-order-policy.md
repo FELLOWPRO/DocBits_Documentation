@@ -4,13 +4,13 @@ Ta polityka stosuje reguły w kolejności, w jakiej pojawiają się w drzewie de
 
 **Przykład:**
 
-| Reguła | Warunek              | Zwracana grupa |
-| ------ | -------------------- | -------------- |
-| 1      | Total Amount <= 1000 | GROUP\_1       |
-| 2      | Total Amount <= 2000 | GROUP\_2       |
-| 3      | Total Amount <= 3000 | GROUP\_3       |
-| 4      | Total Amount <= 4000 | GROUP\_4       |
-| 5      | Total Amount <= 5000 | GROUP\_5       |
+| Reguła | Warunek            | Zwracana grupa |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
 Zakładając, że wartością wejściową jest **Total Amount = 2500**, ocena reguł wyglądałaby następująco:
 
@@ -22,8 +22,8 @@ Zakładając, że wartością wejściową jest **Total Amount = 2500**, ocena re
 
 W ramach polityki **Kolejność reguł** drzewo przetwarza reguły w kolejności, w jakiej są wymienione. Dopasowanymi regułami będą zatem:
 
-* **Reguła 3**: GROUP\_3
-* **Reguła 4**: GROUP\_4
-* **Reguła 5**: GROUP\_5
+* **Reguła 3**: GROUP_3
+* **Reguła 4**: GROUP_4
+* **Reguła 5**: GROUP_5
 
-**Wynik**: **GROUP\_3**, **GROUP\_4**, **GROUP\_5**
+**Wynik**: **GROUP_3**, **GROUP_4**, **GROUP_5**

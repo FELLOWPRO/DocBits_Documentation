@@ -1,4 +1,4 @@
-# Supplier Layout
+# Układ dostawcy
 
 <figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Strona układu dostawcy</p></figcaption></figure>
 

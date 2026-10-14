@@ -1,4 +1,4 @@
-# Numery Certyfikatów Eksportowych
+# Skrypt Formatowania Numerów Referencyjnych Certyfikatów Eksportowych dla DocBits
 
 Ten dokument opisuje skrypt „Formatting Export Certificate Reference Numbers", przeznaczony do standaryzacji numerów referencyjnych w certyfikatach eksportowych w DocBits. Właściwe formatowanie zapewnia, że numery referencyjne są zgodne z wymaganiami systemów zewnętrznych lub przepisów.
 

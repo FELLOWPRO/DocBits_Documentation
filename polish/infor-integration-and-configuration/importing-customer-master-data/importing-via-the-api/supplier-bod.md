@@ -12,9 +12,9 @@ Są dwa endpointy i robią to samo. Jedyna różnica polega na tym, jak przekazu
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-endpoints.png)
 
-| Endpoint                   | Kiedy go użyć                                                                                                                                                                                                |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/import/supplier_bod`     | Masz BOD jako **plik XML** i chcesz go przesłać.                                                                                                                                                             |
+| Endpoint | Kiedy go użyć |
+| --- | --- |
+| `/import/supplier_bod` | Masz BOD jako **plik XML** i chcesz go przesłać. |
 | `/import/supplier_bod_xml` | Chcesz wysłać **treść XML** w żądaniu zamiast pliku. BOD trzeba opakować w JSON, więc nadaje się to do krótkiego XML albo do innego systemu wywołującego API — dla pełnego BOD ręcznie lepiej przesłać plik. |
 
 Oba są opisane poniżej. Kroki 1 i 2 są takie same w obu przypadkach.
@@ -23,7 +23,7 @@ Oba są opisane poniżej. Kroki 1 i 2 są takie same w obu przypadkach.
 
 Będziesz potrzebować:
 
-* **Klucza API.** Zobacz [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management/), jeśli jeszcze go nie masz.
+* **Klucza API.** Zobacz [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md), jeśli jeszcze go nie masz.
 * **BOD** — pliku XML `SyncSupplierPartyMaster` lub `SyncRemitToPartyMaster`, albo jego treści.
 * **Swojego Org ID**, z **Settings → Integration & SSO**, z sekcji **ID**.
 
@@ -69,7 +69,7 @@ Wszystko w sekcji **import** jest zablokowane, dopóki się nie autoryzujesz. Tr
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
-* Przewiń do **X-API-KEY**, wklej swój klucz API i kliknij **Authorize**. W DocBits znajdziesz go w **Settings → Integration & SSO**, w sekcji **API Key**, albo możesz [utworzyć nowy klucz](../../../administration-and-setup/settings/global-settings/integration/api-key-management/#tworzenie-klucza-api).
+* Przewiń do **X-API-KEY**, wklej swój klucz API i kliknij **Authorize**. W DocBits znajdziesz go w **Settings → Integration & SSO**, w sekcji **API Key**, albo możesz [utworzyć nowy klucz](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md#tworzenie-klucza-api).
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
@@ -91,12 +91,12 @@ Kliknij **Try it out**, a następnie wypełnij formularz wybranego endpointu.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-bod-form.png)
 
-| Pole                        |                                                                                                                                                                                                                                                                              |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **file**                    | Wymagane. Kliknij **Choose file** i wybierz swój plik XML z supplier BOD.                                                                                                                                                                                                    |
-| **org\_id**                 | Twoje Org ID — ta sama wartość, którą podałeś w **X-ORG-ID** w kroku 2. Ustawienie jej również tutaj sprawia, że żądanie jednoznacznie wskazuje, do której organizacji zapisuje. Musi to być organizacja, do której Twój klucz API ma dostęp; każda inna zostanie odrzucona. |
-| **sub\_org\_id**            | Potrzebne tylko wtedy, gdy importujesz do konkretnej suborganizacji.                                                                                                                                                                                                         |
-| **custom\_fields\_mapping** | Opcjonalne. Wczytuje dodatkowe pola z BOD do pól niestandardowych dostawcy. Zobacz [Mapowania pól niestandardowych](supplier-bod.md#mapowania-pol-niestandardowych) poniżej.                                                                                                 |
+| Pole | |
+| --- | --- |
+| **file** | Wymagane. Kliknij **Choose file** i wybierz swój plik XML z supplier BOD. |
+| **org\_id** | Twoje Org ID — ta sama wartość, którą podałeś w **X-ORG-ID** w kroku 2. Ustawienie jej również tutaj sprawia, że żądanie jednoznacznie wskazuje, do której organizacji zapisuje. Musi to być organizacja, do której Twój klucz API ma dostęp; każda inna zostanie odrzucona. |
+| **sub\_org\_id** | Potrzebne tylko wtedy, gdy importujesz do konkretnej suborganizacji. |
+| **custom\_fields\_mapping** | Opcjonalne. Wczytuje dodatkowe pola z BOD do pól niestandardowych dostawcy. Zobacz [Mapowania pól niestandardowych](#mapowania-pol-niestandardowych) poniżej. |
 
 Nie ma tu pola mapowania wierszy — dane główne dostawców nie mają wierszy.
 
@@ -164,6 +164,8 @@ Jeśli coś było nie tak z żądaniem, otrzymasz `"success": false` wraz z komu
 * W DocBits przejdź do **Settings → Document Processing → Lookup Master Data**.
 * Wybierz po lewej **BOD Input Data**, a następnie otwórz zakładkę **Supplier**.
 * Wyszukaj dostawcę ze swojego BOD.
+
+<!-- SCREENSHOT: Lookup Master Data with BOD Input Data selected and the Supplier tab open -->
 
 {% hint style="info" %}
 DocBits decyduje, co zrobić z BOD, na podstawie typu zapisanego w jego wnętrzu, a nie na podstawie użytego endpointu importu. Jeśli przez pomyłkę wyślesz tutaj purchase order BOD, zostanie on zaimportowany jako zamówienie zakupu, a nie odrzucony — sprawdź więc, czy zakładka, w której znajdujesz dane, jest tą, której oczekiwałeś.

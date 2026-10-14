@@ -53,8 +53,8 @@ else:
 
 ## Użyte funkcje
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczyt pola sterującego
-* [set\_is\_required()](../functions/field-functions.md#set_is_required) — Ustawienie pola jako obowiązkowego/opcjonalnego
-* [set\_is\_hidden()](../functions/field-functions.md#set_is_hidden) — Pokazywanie/ukrywanie pól
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Ustawienie pola kategorii
-* [delete\_tables()](../functions/table-functions.md#delete_tables) — Usuwanie tabel dla faktur kosztowych
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczyt pola sterującego
+- [set\_is\_required()](../field-functions.md#set\_is\_required) — Ustawienie pola jako obowiązkowego/opcjonalnego
+- [set\_is\_hidden()](../field-functions.md#set\_is\_hidden) — Pokazywanie/ukrywanie pól
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Ustawienie pola kategorii
+- [delete\_tables()](../table-functions.md#delete\_tables) — Usuwanie tabel dla faktur kosztowych

@@ -1,4 +1,4 @@
-# Oblicz cenę jednostkową zamówienia
+# Obliczanie ceny jednostkowej zamówienia zakupu
 
 ## **Przegląd**
 
@@ -24,11 +24,11 @@ Po aktywowaniu ustawienia cena jednostkowa pozycji zamówienia zakupu jest oblic
 
 gdzie **kwota pozycji** jest wybierana w następujący sposób:
 
-| Pozycja zamówienia zakupu zawiera                                                  | Używana kwota pozycji                     |
-| ---------------------------------------------------------------------------------- | ----------------------------------------- |
-| **kwotę netto** (`extended_amount`) większą niż 0 i nieprzekraczającą sumy pozycji | kwotę netto                               |
-| brak kwoty netto lub kwota netto przekracza sumę pozycji                           | sumę pozycji (`total_amount`)             |
-| brak dodatniej kwoty lub brak dodatniej ilości                                     | nic nie jest obliczane, cena PO pozostaje |
+| Pozycja zamówienia zakupu zawiera                                                         | Używana kwota pozycji                 |
+| ------------------------------------------------------------------------------------------ | ------------------------------------ |
+| **kwotę netto** (`extended_amount`) większą niż 0 i nieprzekraczającą sumy pozycji          | kwotę netto                          |
+| brak kwoty netto lub kwota netto przekracza sumę pozycji                                  | sumę pozycji (`total_amount`)         |
+| brak dodatniej kwoty lub brak dodatniej ilości                                            | nic nie jest obliczane, cena PO pozostaje |
 
 Dlaczego kwota netto jest wybierana jako pierwsza: Dane ERP (Infor BODs) przesyłają netto kwotę pozycji jako `extended_amount` i zawierają **podatek i opłaty dodatkowe** w `total_amount`. Podzielenie kwoty brutto przez ilość daje cenę jednostkową brutto, a każda faktura wyceniona netto wtedy pokazuje się jako _cena jednostkowa niedopasowana_, mimo że jest poprawna. Przykład z rzeczywistej pozycji zamówienia: ilość 9, kwota netto 879,84, suma 954,63 (podatek 8,5%) — cena oparta na kwocie netto to 97,76 i zgadza się z fakturą; cena oparta na sumie to 106,07.
 
@@ -46,5 +46,5 @@ W tym przypadku cena jednostkowa (bez rabatu) jest pobierana z dokumentu, podcza
 
 ## Powiązane ustawienia
 
-* [Reguły dopasowywania zamówień zakupu](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) — reguły porównują **efektywną** cenę jednostkową, która jest tą obliczoną ceną, gdy ustawienie jest włączone.
+* [Reguły dopasowywania zamówień zakupu](purchase-order-matching-rules.md) — reguły porównują **efektywną** cenę jednostkową, która jest tą obliczoną ceną, gdy ustawienie jest włączone.
 * [Ustawienia tolerancji zamówienia zakupu](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — o ile cena faktury może różnić się od ceny obliczonej.

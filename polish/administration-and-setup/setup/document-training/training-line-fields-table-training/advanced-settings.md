@@ -1,4 +1,4 @@
-# Advanced Settings
+# Ustawienia zaawansowane
 
 W niektórych dokumentach struktury tabel mogą być złożone — obejmować wiele wierszy, zawierać zgrupowane informacje lub zbędne dodatkowe wiersze. _Ustawienia zaawansowane_ w trybie trenowania pozwalają precyzyjnie dostroić ekstrakcję tabel w takich przypadkach, poprawiając dokładność i spójność.
 
@@ -46,6 +46,8 @@ Włącz opcję **Przenieś dodatkowe wiersze do kosza**, aby usunąć nadmiar:
 
 ![](https://lh7-us.googleusercontent.com/zto-P_Knp1YQmCUBU6_vCg2IEwaBiBeAao8Jvu30-89x_Sj2BLDSTQu31vUNBlaQp73DPVy2F-UZawn8j4hxycD6bpfCf_KXZYvrqH5w0cwGwsjatBelIh6gdenY-NpzmQ372jtthucHpMrsXNz3DcA)
 
+
+
 ### Minimalna liczba zgrupowanych wierszy
 
 **Użyj tej opcji, gdy wiersze muszą być grupowane razem pod jednym głównym wierszem (np. pozycje z wieloma podwierszami).**
@@ -81,6 +83,7 @@ Włącz **Grupowanie odwrócone**, grupuj według głównej kolumny (np. Kwota n
 ![](https://lh7-us.googleusercontent.com/FJNKYXmELlMFi-Zh_0Pjgc0pcKI2-_UbDhF7b4D5p7GA4f9r-FqjruzkJw3nfJH4NA0G_BC2xQpJEzl26GbOlPt9fPyOkGowtGWgRWt5GJ62Vj-Qd04rDP0kzDFiJnRlpWF13d9YQ1e-FurQI-gHJx4)
 
 **Końcowy wynik:**\\
+
 
 <figure><img src="https://lh7-us.googleusercontent.com/e8x8gIUV10Y_FmPeW_X-UZw6uJ8P7alQTDy_m5OGGLZ8Ev7Ip-C-6fqtTixiSU0ZnLMIc4VR_f0xJV6beDnl7bFBIh4U2dME8KHB3qokj__SrQGp-3BXeOsN63SabFNd5miRCtK-jlf49nzcbbe8UJw" alt=""><figcaption></figcaption></figure>
 

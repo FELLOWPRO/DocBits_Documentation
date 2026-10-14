@@ -12,9 +12,9 @@ Scenariusz testowy obejmuje przepływ pracy, przykładowe dane wejściowe oraz *
 
 ## Praca ze scenariuszami
 
-* **Add Test Scenario** — utwórz nowy scenariusz na podstawie przepływu pracy i przykładowego dokumentu.
-* **Run All Tests** — uruchom wszystkie scenariusze naraz i zobacz na pierwszy rzut oka, które przepływy pracy nadal są zaliczane.
-* **View Details** — otwórz scenariusz, aby sprawdzić jego wynik.
+- **Add Test Scenario** — utwórz nowy scenariusz na podstawie przepływu pracy i przykładowego dokumentu.
+- **Run All Tests** — uruchom wszystkie scenariusze naraz i zobacz na pierwszy rzut oka, które przepływy pracy nadal są zaliczane.
+- **View Details** — otwórz scenariusz, aby sprawdzić jego wynik.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Szczegóły scenariusza testowego przepływu pracy ze statusem, czasem uruchomienia i danymi"><figcaption><p>Szczegóły scenariusza — nazwa, status, czas uruchomienia oraz rzeczywiste i wyodrębnione dane wygenerowane przez uruchomienie.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ Widok szczegółów pokazuje nazwę scenariusza i **status**, **nazwę przepływ
 
 To dwie różne rzeczy:
 
-* **Test Manager** (ta strona) — _zapisane, powtarzalne_ scenariusze z oczekiwanymi wynikami, uruchamiane razem za pomocą **Run All Tests**. Używaj go do testów regresji po wprowadzeniu zmian.
-* **Testowanie w kreatorze** — wbudowane elementy sterujące **Validate** i **Test** wewnątrz kreatora Advanced Workflow, do szybkich kontroli podczas budowania. Zobacz [Walidacja i testowanie](advanced-workflow-builder/validation-and-testing.md).
+- **Test Manager** (ta strona) — *zapisane, powtarzalne* scenariusze z oczekiwanymi wynikami, uruchamiane razem za pomocą **Run All Tests**. Używaj go do testów regresji po wprowadzeniu zmian.
+- **Testowanie w kreatorze** — wbudowane elementy sterujące **Validate** i **Test** wewnątrz kreatora Advanced Workflow, do szybkich kontroli podczas budowania. Zobacz [Walidacja i testowanie](advanced-workflow/validation-and-testing.md).

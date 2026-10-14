@@ -1,17 +1,60 @@
-# Integracja
+# Integration & SSO
 
-The integration settings play a crucial role in the efficiency and functionality of Docbits as they allow to ensure seamless interaction with other tools and services. Here are some reasons why properly configuring the integration settings is important:
+<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="Integration & SSO"><figcaption><p>Strona Integration & SSO</p></figcaption></figure>
+
+Strona Integration & SSO służy do zarządzania kluczami API dla dostępu programistycznego, identyfikatorami organizacji oraz konfiguracją jednokrotnego logowania (Single Sign-On, SSO).
 
 ## API Key
 
-<figure><img src="https://lh7-us.googleusercontent.com/lFBSwUxiK35KkhYh46gw35BsD10rvHK6_1_Tnf449-jd2WJleDhxPzHpUmNdbP1mst5TkLBpGj5iJyiR_Dxpbta6S9p4Rb3FWj7RIc628Kw-RgqpVvLDYggagjuFI1DdLfOJqkTWHBE0JLQRolTWvOc" alt="" width="563"><figcaption></figcaption></figure>
+Zarządzaj kluczami API używanymi do programistycznego dostępu do DocBits.
 
-The integration settings play a crucial role in the efficiency and functionality of DocBits as they allow to ensure seamless interaction with other tools and services. Here are some reasons why properly configuring the integration settings is important:
+| Kolumna | Opis |
+|--------|-------------|
+| **Key** | Zamaskowana wartość klucza API. Kliknij ikonę kopiowania, aby skopiować cały klucz. |
+| **Name** | Opisowa nazwa klucza. |
+| **Expires** | Data wygaśnięcia (lub „Never”). |
+| **Last Used** | Kiedy klucz był ostatnio używany. |
+| **Status** | Active lub Inactive. |
+| **Actions** | Menu z trzema kropkami do unieważnienia lub usunięcia. |
 
-* **Increased efficiency:** Integration with other tools and services can streamline workflows and increase efficiency. For example, documents can be automatically exchanged between Docbits and a CRM system, reducing manual entry and increasing productivity
-* **Data consistency:** Integration allows data to be exchanged seamlessly between different systems, improving data consistency and accuracy. This avoids inconsistencies or duplicate data entry that could lead to errors.
-* **Real-time updates**: Integration enables real-time updates between different platforms so that users always have the latest information. This is especially important for critical business processes that require real-time information.
-* **Task automation:** Integration allows routine tasks to be automated, saving time and resources. For example, notifications can be triggered automatically when a certain event occurs in another system without the need for manual intervention.
-* **Improved user experience:** A well-configured integration ensures a seamless user experience as users do not have to switch between different systems to access relevant information. This improves user satisfaction and contributes to efficiency.
+Kliknij **+ Create API Key**, aby wygenerować nowy klucz.
 
-To properly configure the integration settings, it is important to understand the organization's requirements and ensure that the integration is seamlessly integrated into existing workflows and processes. This requires thorough planning, configuration, and monitoring of the integration to ensure that it works smoothly and delivers the desired value.
+## ID
+
+Pokazuje identyfikatory Twojej organizacji:
+
+| Pole | Opis |
+|-------|-------------|
+| **Org ID** | Unikalny identyfikator Twojej organizacji. |
+| **Sub Org ID** | Identyfikator aktualnie wybranej podorganizacji. |
+
+## SSO Service Provider Settings
+
+Wartości konfiguracji SSO DocBits potrzebne podczas konfigurowania Twojego dostawcy tożsamości (Identity Provider):
+
+| Pole | Opis |
+|-------|-------------|
+| **Entity ID** | Adres URL metadanych SAML dla DocBits. |
+| **SLO URL** | Adres URL Single Logout. |
+| **SSO URL** | Adres URL Assertion Consumer Service. |
+
+Możesz także użyć **Download Certificate** i **Download Metadata** na potrzeby konfiguracji IdP.
+
+## Identity Service Provider Settings
+
+Skonfiguruj zewnętrznego dostawcę tożsamości (IdP):
+
+| Pole | Opis |
+|-------|-------------|
+| **Tenant ID** | Identyfikator tenanta Twojego IdP. |
+| **Upload file** | Prześlij plik XML z metadanymi IdP. |
+
+Kliknij **Configure**, aby zapisać ustawienia IdP.
+
+* **Większa efektywność:** Integracja z innymi narzędziami i usługami może usprawnić przepływy pracy i zwiększyć efektywność. Na przykład dokumenty mogą być automatycznie wymieniane między DocBits a systemem CRM, co ogranicza ręczne wprowadzanie danych i zwiększa produktywność
+* **Spójność danych:** Integracja pozwala na płynną wymianę danych między różnymi systemami, poprawiając ich spójność i dokładność. Pozwala to uniknąć niespójności lub podwójnego wprowadzania danych, które mogłyby prowadzić do błędów.
+* **Aktualizacje w czasie rzeczywistym**: Integracja umożliwia aktualizacje w czasie rzeczywistym między różnymi platformami, dzięki czemu użytkownicy zawsze mają najnowsze informacje. Jest to szczególnie ważne w krytycznych procesach biznesowych, które wymagają informacji w czasie rzeczywistym.
+* **Automatyzacja zadań:** Integracja pozwala automatyzować rutynowe zadania, oszczędzając czas i zasoby. Na przykład powiadomienia mogą być wyzwalane automatycznie, gdy w innym systemie wystąpi określone zdarzenie, bez potrzeby ręcznej interwencji.
+* **Lepsze doświadczenie użytkownika:** Dobrze skonfigurowana integracja zapewnia płynne doświadczenie użytkownika, ponieważ użytkownicy nie muszą przełączać się między różnymi systemami, aby uzyskać dostęp do istotnych informacji. Poprawia to zadowolenie użytkowników i przyczynia się do efektywności.
+
+Aby prawidłowo skonfigurować ustawienia integracji, ważne jest zrozumienie wymagań organizacji i zapewnienie, że integracja jest płynnie włączona w istniejące przepływy pracy i procesy. Wymaga to dokładnego planowania, konfiguracji i monitorowania integracji, aby działała bez zakłóceń i dostarczała oczekiwaną wartość.

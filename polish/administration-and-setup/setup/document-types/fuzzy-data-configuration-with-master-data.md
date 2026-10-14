@@ -153,7 +153,13 @@ Decyduje **Obsługa konfliktów (Conflict Handler)**:
 
 We wszystkich przykładach dokument ma numer NIP i nazwę dostawcy, a oba pola są **Wyszukiwalne**.
 
-<table><thead><tr><th width="150">NIP znajduje</th><th width="150">Nazwa znajduje</th><th width="150">Dopasuj wszystko wył. + Return None</th><th width="150">Dopasuj wszystko wł. + Return None</th><th width="150">Dopasuj wszystko wył. + Best Score</th></tr></thead><tbody><tr><td>tylko A</td><td>A i B</td><td>puste</td><td><strong>A</strong></td><td><strong>A</strong></td></tr><tr><td>A i B</td><td>tylko B</td><td>puste</td><td><strong>B</strong></td><td><strong>B</strong></td></tr><tr><td>A, B i C</td><td>C, D i E</td><td>puste</td><td><strong>C</strong></td><td><strong>C</strong></td></tr><tr><td>A, B i C</td><td>B, C i D</td><td>puste</td><td>puste</td><td>B lub C, niepewne</td></tr><tr><td>tylko A</td><td>nic</td><td><strong>A</strong></td><td>puste</td><td><strong>A</strong></td></tr></tbody></table>
+<table><thead><tr><th width="150">NIP znajduje</th><th width="150">Nazwa znajduje</th><th width="150">Dopasuj wszystko wył. + Return None</th><th width="150">Dopasuj wszystko wł. + Return None</th><th width="150">Dopasuj wszystko wył. + Best Score</th></tr></thead><tbody>
+<tr><td>tylko A</td><td>A i B</td><td>puste</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A i B</td><td>tylko B</td><td>puste</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B i C</td><td>C, D i E</td><td>puste</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B i C</td><td>B, C i D</td><td>puste</td><td>puste</td><td>B lub C, niepewne</td></tr>
+<tr><td>tylko A</td><td>nic</td><td><strong>A</strong></td><td>puste</td><td><strong>A</strong></td></tr>
+</tbody></table>
 
 Jak czytać tabelę:
 

@@ -6,7 +6,7 @@ description: >-
 
 # Kontrola pól nagłówka: skąd pochodzą dane
 
-Przycisk **Kontrola pól nagłówka** znajduje się obok przycisku **Zapisz** na ekranie walidacji. Otwiera raport _Skąd pochodzi każda wartość?_: dla każdego pola nagłówka pokazuje, co było na dokumencie, co zmieniło wartość po drodze, co DocBits wyświetla teraz i dlaczego.
+Przycisk **Kontrola pól nagłówka** znajduje się obok przycisku **Zapisz** na ekranie walidacji. Otwiera raport *Skąd pochodzi każda wartość?*: dla każdego pola nagłówka pokazuje, co było na dokumencie, co zmieniło wartość po drodze, co DocBits wyświetla teraz i dlaczego.
 
 Ta strona wyjaśnia, jak powstaje wartość i co oznacza każde źródło. Nie jest potrzebna wiedza ekspercka.
 
@@ -16,12 +16,12 @@ Kontrola pól nagłówka jest częścią modułu **Analytics**. Jeśli przycisk 
 
 ## Wartość zawsze powstaje w tej kolejności
 
-| Krok                   | Co się dzieje                                                                                                                  |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **1. Odczyt**          | Wartość jest odczytywana z dokumentu — przez wytrenowaną regułę, przez AI lub bezpośrednio z e-faktury.                        |
-| **2. Przekształcenie** | Skrypty i reguły transformacji klienta zmieniają odczytaną wartość: skracają ją, uzupełniają, dostosowują format.              |
-| **3. Wyszukiwanie**    | Wartość jest wyszukiwana w danych głównych. Jeśli coś zostanie znalezione, rekord danych głównych zastępuje odczytaną wartość. |
-| **4. Wyświetlenie**    | Użytkownik widzi tylko wynik. To, co stało się po drodze, pokazuje Kontrola pól nagłówka.                                      |
+| Krok | Co się dzieje |
+| --- | --- |
+| **1. Odczyt** | Wartość jest odczytywana z dokumentu — przez wytrenowaną regułę, przez AI lub bezpośrednio z e-faktury. |
+| **2. Przekształcenie** | Skrypty i reguły transformacji klienta zmieniają odczytaną wartość: skracają ją, uzupełniają, dostosowują format. |
+| **3. Wyszukiwanie** | Wartość jest wyszukiwana w danych głównych. Jeśli coś zostanie znalezione, rekord danych głównych zastępuje odczytaną wartość. |
+| **4. Wyświetlenie** | Użytkownik widzi tylko wynik. To, co stało się po drodze, pokazuje Kontrola pól nagłówka. |
 
 Kroki 2 i 3 nie zawsze się wykonują — ale gdy się wykonują, zmieniają wartość. Właśnie stąd pochodzi większość zgłaszanych przypadków.
 
@@ -84,12 +84,12 @@ Odczytane z kodu kreskowego lub kodu QR na dokumencie.
 Gdy pole nagle zawiera wartość, która w takiej postaci nie występuje na dokumencie, prawie nigdy nie zrobiło tego AI — lecz krok 2 lub krok 3. Najczęściej jest to dopasowanie w danych głównych, które akceptuje także dopasowania częściowe: `1001` pasuje do `06O051001`, a wraz ze znalezionym zamówieniem zmienia się również dostawca.
 {% endhint %}
 
-W raporcie takie pole jest oznaczone na czerwono. Kolumna **Akcja** pokazuje rekord danych głównych wraz z czerwonym znacznikiem _tylko dopasowanie częściowe_, a pasująca część wartości jest podświetlona.
+W raporcie takie pole jest oznaczone na czerwono. Kolumna **Akcja** pokazuje rekord danych głównych wraz z czerwonym znacznikiem *tylko dopasowanie częściowe*, a pasująca część wartości jest podświetlona.
 
 ## Jak czytać raport
 
 * **Znaczniki statusu** u góry zliczają pola, które pochodziły z dokumentu bez zmian, zostały zmienione po drodze lub nie występują na dokumencie w wyświetlanej postaci. Kliknij znacznik, aby pokazać tylko te pola; kliknij ponownie, aby pokazać wszystkie.
 * **Filtr źródeł:** rząd ikon pokazuje każdą metodę ekstrakcji. Kliknij jedną, aby pokazać tylko pola, które przez nią przeszły.
 * **Akcja:** każdy krok, przez który przeszła wartość, z ikoną jego źródła. Krok, z którego pochodzi bieżąca wartość, jest podświetlony. Najedź kursorem, aby zobaczyć, co zrobił każdy krok — z jakiej wartości na jaką.
-* **Powód:** status pola. Ikona (i) wyjaśnia, dlaczego wartość jest taka, jaka jest. Jeśli widnieje _Pole nie istniało_, pola nie było na dokumencie.
+* **Powód:** status pola. Ikona (i) wyjaśnia, dlaczego wartość jest taka, jaka jest. Jeśli widnieje *Pole nie istniało*, pola nie było na dokumencie.
 * Długie wartości są skracane znakiem … — najedź kursorem, aby zobaczyć pełną wartość.

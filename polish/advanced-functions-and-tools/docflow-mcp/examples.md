@@ -89,7 +89,7 @@ Karta jest teraz aktywna i dostepna do uzycia w przepływach pracy.
 
 ### Krok 5: Zbudowanie przepływu pracy z karta
 
-Otwórz **projektanta DocFlow** w aplikacji webowej, utwórz zaawansowany przepływ pracy i dodaj zatwierdzoną kartę jako węzeł, na przykład wyzwalacz _Document Received_, kartę _High Value Check_ i węzeł _Approval_ dla gałęzi `true`. Grafy przepływów pracy tworzy się i edytuje w projektancie; MCP ich nie tworzy.
+Otwórz **projektanta DocFlow** w aplikacji webowej, utwórz zaawansowany przepływ pracy i dodaj zatwierdzoną kartę jako węzeł, na przykład wyzwalacz *Document Received*, kartę *High Value Check* i węzeł *Approval* dla gałęzi `true`. Grafy przepływów pracy tworzy się i edytuje w projektancie; MCP ich nie tworzy.
 
 Po powrocie do asystenta potwierdź, że przepływ pracy istnieje, i odczytaj jego strukturę:
 
@@ -112,7 +112,7 @@ Wywolaj `test_advanced_workflow`:
 
 Przejrzyj logi wykonania, aby sprawdzic, czy kazdy wezel wykonal sie poprawnie.
 
-***
+---
 
 ## Przykład 2: Budowanie przepływu pracy z wbudowanymi kartami
 
@@ -134,10 +134,9 @@ Wywolaj `sdk_list_cards_picker`, aby zobaczyc wszystkie dostepne karty z ich fla
 ```
 
 Filtruj wedlug roli:
-
-* `is_when: true` — Uzyj w wezlach WHEN (wyzwalacze)
-* `is_and: true` — Uzyj w wezlach AND (dodatkowe warunki)
-* `is_then: true` — Uzyj w wezlach THEN (akcje)
+- `is_when: true` — Uzyj w wezlach WHEN (wyzwalacze)
+- `is_and: true` — Uzyj w wezlach AND (dodatkowe warunki)
+- `is_then: true` — Uzyj w wezlach THEN (akcje)
 
 ### Krok 2: Utworzenie przepływu pracy
 
@@ -212,7 +211,7 @@ Filtruj wedlug roli:
 
 Tworzy to przepływ pracy: **WHEN** dokument jest faktura **AND** kwota > 1000 **THEN** ustaw status na przegladanie.
 
-***
+---
 
 ## Przykład 3: Import kart z GitHub
 

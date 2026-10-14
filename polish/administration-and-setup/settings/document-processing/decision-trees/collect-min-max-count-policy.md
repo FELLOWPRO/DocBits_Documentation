@@ -4,13 +4,13 @@ Ta polityka zbiera wszystkie dopasowane reguły i wybiera wartość **minimalną
 
 **Przykład:**
 
-| Reguła | Warunek              | Zwracana wartość |
-| ------ | -------------------- | ---------------- |
-| 1      | Total Amount <= 1000 | 1                |
-| 2      | Total Amount <= 2000 | 2                |
-| 3      | Total Amount <= 3000 | 3                |
-| 4      | Total Amount <= 4000 | 4                |
-| 5      | Total Amount <= 5000 | 5                |
+| Reguła | Warunek            | Zwracana wartość |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | 1            |
+| 2    | Total Amount <= 2000 | 2            |
+| 3    | Total Amount <= 3000 | 3            |
+| 4    | Total Amount <= 4000 | 4            |
+| 5    | Total Amount <= 5000 | 5            |
 
 1. Jeśli wybrana zostanie opcja **Zbierz (min.)**, wynikiem będzie wartość **minimalna** spośród **Return Values** dopasowanych reguł.
    * Dla wartości wejściowej **Total Amount = 2500** ocena reguł wyglądałaby następująco:

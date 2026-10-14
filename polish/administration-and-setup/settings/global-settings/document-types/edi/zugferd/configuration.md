@@ -1,7 +1,7 @@
 # Konfiguracja ZUGFeRD
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-Samouczek DocBits E-Invoice: Przetwarzanie XRechnung / ZUGFeRD (Factur-X), walidacja danych i automatyzacja przepływów pracy
+Samouczek DocBits E-Invoice: przetwarzanie XRechnung / ZUGFeRD (Factur-X), walidacja danych i automatyzacja workflowów
 {% endembed %}
 
 ## **Obsługiwane wersje ZUGFeRD**
@@ -10,64 +10,65 @@ DocBits obsługuje wszystkie główne wersje ZUGFeRD, w tym:
 
 * **1.0**
 * **2.0**
-* **2.1** (zgodnie z FACTUR-X 1.0.05)
+* **2.1** (zgodna z FACTUR-X 1.0.05)
 * **2.2**
-* **2.3** (zgodnie z FACTUR-X 1.07.2)
+* **2.3** (zgodna z FACTUR-X 1.07.2)
 * **2.3.2**
 
 #### Standardowa aktywacja i modyfikacja
 
-Standard ZUGFeRD jest zawsze aktywny domyślnie, ale w razie potrzeby można wprowadzić w nim zmiany.
+Standard ZUGFeRD jest domyślnie zawsze aktywny, ale w razie potrzeby możesz go modyfikować.
 
 ### **Kroki modyfikacji ustawień ZUGFeRD:**
 
-1. Przejdź do **Ustawienia → Ustawienia globalne → Typy dokumentów → Faktura**.
-2. Kliknij **E-Doc**.
+1. Przejdź do **Settings → Global Settings → Document Types → Invoice**.
+2. Kliknij **E-Doc**.\\
 3. Pojawi się lista wszystkich dostępnych e-dokumentów.
-4. Znajdź wersję **ZUGFeRD**, którą chcesz zmodyfikować.
+4. Znajdź wersję **ZUGFeRD**, którą chcesz zmodyfikować.\\
 
-## **Konfiguracja transformacji i ścieżki XML:**
+## **Konfiguracja transformacji i ścieżek XML:**
 
-W **ustawieniach transformacji** można zdefiniować ścieżkę do lokalizacji określonych informacji w pliku XML i zapisać je w nowej strukturze, co ułatwia dostęp do danych. <mark style="color:red;">**Uwaga**</mark>: W przypadku korzystania z tej funkcji należy używać nowo utworzonych ścieżek XML, a nie oryginalnych ścieżek XML, w **Podglądzie** i **Ścieżce ekstrakcji**.
+W **ustawieniach transformacji** możesz zdefiniować ścieżkę do konkretnych informacji w pliku XML i zapisać je w nowej strukturze, co ułatwia dostęp do danych.\
+<mark style="color:red;">**Uwaga**</mark>: Jeśli korzystasz z tej funkcji, w **Preview** i **Extraction Path** musisz używać nowo utworzonych ścieżek XML, a nie oryginalnych.
 
 ### **Kroki modyfikacji pliku transformacji:**
 
-1. Otwórz **Transformację**.
+1. Otwórz **Transformation**.
 2. Utwórz nowy szkic, klikając **ikonę ołówka**.
 3. Wybierz nowo utworzony szkic.
 4. Utwórz nowe pole lub zmodyfikuj istniejące.
-5. Ustaw żądaną ścieżkę do ekstrakcji danych.
-6. Kliknij **Zapisz**.
+5. Ustaw żądaną ścieżkę ekstrakcji danych.
+6. Kliknij **Save**.
 
 ### Ważne uwagi:
 
-* **Plik podglądu** jest używany tylko dla **FACTUR-X**, a nie dla **ZUGFeRD**. ZUGFeRD będzie korzystał z oryginalnego pliku **PDF**.
+* **Plik podglądu** jest używany tylko dla **FACTUR-X**, a nie dla **ZUGFeRD**. ZUGFeRD używa oryginalnego **PDF**.
 
 ## Konfiguracja podglądu PDF
 
-**Konfiguracja podglądu PDF** służy do generowania czytelnej dla użytkownika wersji dokumentu. Można ją dostosować za pomocą HTML do własnych potrzeb.
+**Konfiguracja podglądu PDF** służy do generowania wersji dokumentu czytelnej dla użytkownika. Możesz ją dostosować za pomocą HTML do swoich potrzeb.
 
 ### **Kroki modyfikacji pliku podglądu:**
 
-1. Otwórz **Podgląd**.
+1. Otwórz **Preview**.
 2. Utwórz nowy szkic, klikając **ikonę ołówka**.
 3. Wybierz nowo utworzony szkic.
 4. Utwórz nowe pole lub zmodyfikuj istniejące.
-5. Ustaw żądaną ścieżkę do ekstrakcji danych.
-6. Kliknij **Zapisz**.
+5. Ustaw żądaną ścieżkę ekstrakcji danych.
+6. Kliknij **Save**.
 
 ## Konfiguracja ścieżek ekstrakcji
 
-**Konfiguracja ścieżek ekstrakcji** służy do wyodrębniania danych i wypełniania pól na **ekranie walidacji**, takich jak tabela faktur lub pola skonfigurowane w układzie faktury.
+**Konfiguracja ścieżek ekstrakcji** służy do wyodrębniania danych i wypełniania pól na **ekranie walidacji**, takich jak tabela faktury lub pola skonfigurowane w układzie faktury.
 
 ### **Kroki modyfikacji** **ścieżek ekstrakcji**:
 
-1. Otwórz **Ścieżki ekstrakcji**.
+1. Otwórz **Extraction Paths**.
 2. Utwórz nowy szkic, klikając **ikonę ołówka**.
 3. Wybierz nowo utworzony szkic.
 4. Utwórz nowe pole lub zmodyfikuj istniejące.
-5. Lewa strona reprezentuje **ID pola DocBits**, które można znaleźć w **Ustawienia → Ustawienia globalne → Typy dokumentów → Faktura → Pola**.
-6. Prawa strona reprezentuje **ścieżkę do pola** utworzoną w Transformacji.
-7. Kliknij **Zapisz**.
+5. Lewa strona reprezentuje **ID pola DocBits**, które znajdziesz w **Settings → Global Settings → Document Types → Invoice → Fields**.\\
+6. Prawa strona reprezentuje **ścieżkę do pola** utworzonego w Transformation.
+7. Kliknij **Save**.
 
-Wykonując te kroki, można zapewnić dokładną ekstrakcję danych i walidację faktur ZUGFeRD.
+Wykonując te kroki, zapewnisz dokładną ekstrakcję danych i walidację faktur ZUGFeRD.

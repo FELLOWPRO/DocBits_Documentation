@@ -1,4 +1,4 @@
-# Wyszukiwanie Tekstu Zgodnosci
+# Wyszukiwanie Tekstu Zgodnosci (Reverse Charge)
 
 {% hint style="info" %}
 **Dostepne od wersji 11.48.0** — Wymaga licencji `OPENSEARCH_ENABLED`.
@@ -50,5 +50,5 @@ if rc_fuzzy:
 
 ## Uzyte Funkcje
 
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — Przeszukaj tekst OCR wszystkich dokumentow
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Zapisz wartosc pola
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — Przeszukaj tekst OCR wszystkich dokumentow
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Zapisz wartosc pola

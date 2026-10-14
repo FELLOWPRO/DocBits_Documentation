@@ -63,4 +63,4 @@ Filtry można łączyć, dzięki czemu w kilku kliknięciach zawężasz na przyk
 
 Menu karty (przycisk trzech kropek) pozwala edytować lub usuwać pomysł, który zgłosiłeś.
 
-Tablica Pomysłów służy do opinii o produkcie, a nie do zgłaszania incydentów. Do problemów blokujących twoją pracę dziś użyj zgłoszenia wsparcia.
+<mark>Tablica Pomysłów służy do opinii o produkcie, a nie do zgłaszania incydentów. Do problemów blokujących twoją pracę dziś użyj zgłoszenia wsparcia.</mark>

@@ -1,4 +1,4 @@
-# Supplier Permissions
+# Uprawnienia dostawcy
 
 ### Grupa dostawców
 

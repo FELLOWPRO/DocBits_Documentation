@@ -1,125 +1,24 @@
----
-description: Monitor workflow performance, manage workflows, and access the Card SDK
----
-
 # Dashboard
 
-Panel Workflow to centralne miejsce do zarządzania i monitorowania wszystkich przepływów pracy w DocBits. Aby uzyskać do niego dostęp, kliknij ikonę **Przepływy pracy** na lewym pasku bocznym.
+**Workflow Dashboard** to strona główna obszaru przepływów pracy. Pokazuje, jak działają Twoje przepływy pracy — łączne liczby uruchomień, wskaźniki sukcesu i niepowodzeń, wykres uruchomień w czasie oraz ostatnią aktywność — i daje dostęp do listy przepływów pracy, menedżera testów oraz Card SDK.
 
-<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard with run totals, success and fail rates, the runs chart and recent activity"><figcaption><p>Panel Workflow — łączne liczby uruchomień, wskaźniki sukcesu/niepowodzeń oraz ostatnia aktywność dla każdego przepływu pracy.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_dashboard.png" alt="Workflow Dashboard z łącznymi liczbami uruchomień, wskaźnikami sukcesu i niepowodzeń, wykresem uruchomień i ostatnią aktywnością"><figcaption><p>Workflow Dashboard — łączne liczby uruchomień, wskaźniki sukcesu/niepowodzeń i ostatnia aktywność dla każdego przepływu pracy.</p></figcaption></figure>
 
-## Zakładka Panel
+## Zakładki
 
-Zakładka Panel zapewnia szybki przegląd wydajności przepływów pracy dla wybranego okresu czasu.
+- **Dashboard** — metryki uruchomień i ostatnia aktywność (pokazane powyżej).
+- **Workflow List** — każdy przepływ pracy wraz z typem, kolejnością wykonania i wyzwalaczem. Nowy przepływ pracy utworzysz przyciskiem **New Workflow**.
+- **Test Manager List** — scenariusze testowe, które walidują Twoje przepływy pracy; uruchom je przyciskiem **Run All Tests**.
+- **License** — informacje o licencjonowaniu przepływów pracy.
+- **Card SDK** — tworzenie i przesyłanie własnych kart przepływów pracy (zobacz [Card SDK](card-sdk.md)).
 
-### Filtry
+Pasek narzędzi oferuje także **Templates**, który otwiera bibliotekę [Workflow Templates](standard-workflow-builder.md#workflow-templates), oraz **Import Workflow**, który importuje przepływ pracy z pliku JSON.
 
-* **Data początkowa / Data końcowa** — Wybierz zakres czasowy dla statystyk
-* **Nazwa przepływu pracy** — Filtruj według konkretnego przepływu pracy lub wyświetl wszystkie
-* **Porównaj** — Porównaj dwa okresy obok siebie
-* **Wyczyść** — Zresetuj wszystkie filtry
+**Test Manager** pozwala zapisywać scenariusze testowe dla każdego przepływu pracy i uruchamiać je razem, dzięki czemu możesz sprawdzić, czy Twoje przepływy pracy nadal działają poprawnie po wprowadzeniu zmian:
 
-### Karty statystyk
+<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List ze scenariuszami testowymi i przyciskiem Run All Tests"><figcaption><p>Test Manager List — każdy scenariusz pokazuje wynik powodzenia/niepowodzenia; użyj <strong>Run All Tests</strong>, aby uruchomić je wszystkie ponownie.</p></figcaption></figure>
 
-| Metryka                               | Opis                                                                  |
-| ------------------------------------- | --------------------------------------------------------------------- |
-| **Przepływy pracy wykonane dzisiaj**  | Łączna liczba uruchomień przepływów pracy dzisiaj                     |
-| **Przepływy pracy utworzone (okres)** | Nowe przepływy pracy utworzone w wybranym zakresie dat                |
-| **Łączna liczba uruchomień**          | Skumulowana liczba wykonań przepływów pracy w danym okresie           |
-| **Udane uruchomienia**                | Liczba uruchomień zakończonych bez błędów                             |
-| **Wskaźnik sukcesu**                  | Procent udanych uruchomień w stosunku do łącznej liczby uruchomień    |
-| **Wskaźnik niepowodzeń**              | Procent nieudanych uruchomień w stosunku do łącznej liczby uruchomień |
+## Następne kroki
 
-{% hint style="warning" %}
-Wysoki wskaźnik niepowodzeń (wyświetlany jako **CRITICAL** na czerwono) wskazuje, że przepływy pracy napotykają błędy. Zbadaj nieudane przepływy pracy, korzystając z dzienników wykonań w [Zaawansowanym Kreatorze Przepływów Pracy](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/workflow/advanced-workflow-builder/README.md).
-{% endhint %}
-
-### Wykres uruchomień przepływów pracy
-
-Wykres przedstawia miesięczny podział **udanych** (zielony) i **nieudanych** (czerwony/różowy) uruchomień przepływów pracy, pomagając identyfikować trendy i skoki błędów.
-
-### Ostatnia aktywność
-
-* **Ostatnie testy przepływów pracy** — Pokazuje ostatnie wykonania testów ze statusem powodzenia/niepowodzenia
-* **Ostatnie przepływy pracy** — Pokazuje ostatnio utworzone lub zmodyfikowane przepływy pracy
-
-## Zakładka Lista przepływów pracy
-
-Zakładka Lista przepływów pracy wyświetla wszystkie przepływy pracy z możliwością wyszukiwania, sortowania i zarządzania.
-
-### Kolumny
-
-| Kolumna                  | Opis                                                                       |
-| ------------------------ | -------------------------------------------------------------------------- |
-| **Status**               | Ikona przełącznika — kliknij, aby włączyć/wyłączyć przepływ pracy          |
-| **Nazwa**                | Nazwa przepływu pracy (kliknij, aby otworzyć w Kreatorze Przepływów Pracy) |
-| **Typ**                  | Znacznik wyświetlający `Advanced` dla przepływów wizualnych                |
-| **Kiedy...**             | Podsumowanie warunku wyzwalającego                                         |
-| **Zaktualizowano przez** | Użytkownik, który ostatnio zmodyfikował przepływ pracy                     |
-| **Data utworzenia**      | Data i godzina utworzenia                                                  |
-| **Zaktualizowano**       | Data i godzina ostatniej modyfikacji                                       |
-| **Akcje**                | Menu kontekstowe (usuń, duplikuj, eksportuj)                               |
-
-### Akcje
-
-* **Szukaj** — Filtruj przepływy pracy według nazwy za pomocą paska wyszukiwania
-* **+ DODAJ PRZEPŁYW PRACY** — Utwórz nowy przepływ pracy (otwiera [Zaawansowany Kreator Przepływów Pracy](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/workflow/advanced-workflow-builder/README.md))
-* **SZABLONY** — Przeglądaj i ładuj zapisane szablony przepływów pracy
-* **IMPORTUJ PRZEPŁYW PRACY** — Importuj przepływ pracy z pliku JSON
-
-## Zakładka Lista menedżera testów
-
-Zakładka Lista menedżera testów wyświetla wszystkie konfiguracje testów przepływów pracy i ich wyniki. Użyj jej do ustawiania zautomatyzowanych scenariuszy testowych dla swoich przepływów pracy.
-
-<figure><img src="../../.gitbook/assets/workflow_test_manager.png" alt="Workflow Test Manager List with test scenarios and Run All Tests"><figcaption><p>Lista menedżera testów — każdy scenariusz pokazuje wynik powodzenia/niepowodzenia; użyj przycisku <strong>Run All Tests</strong>, aby uruchomić je wszystkie ponownie.</p></figcaption></figure>
-
-## Zakładka Licencja
-
-Zakładka Licencja wyświetla aktualny status licencji DocFlow i dostępne funkcje.
-
-## Zakładka Card SDK
-
-Zakładka Card SDK umożliwia tworzenie i zarządzanie niestandardowymi kartami przepływów pracy (kartami partnerskimi), które rozszerzają wbudowane możliwości DocFlow.
-
-### Prześlij ZIP
-
-Prześlij aplikację partnerską jako plik ZIP zawierający:
-
-* `app.json` — Metadane i konfiguracja karty
-* `.docflowcompose/flow/` — Pliki definicji karty
-
-Maksymalny rozmiar pliku: **10 MB**. Kliknij **Prześlij i zweryfikuj**, aby przesłać kartę do recenzji.
-
-### Import z GitHub
-
-Importuj karty partnerskie bezpośrednio z repozytorium GitHub zamiast przesyłania pliku ZIP.
-
-### Zgłoszenia
-
-Przeglądaj i zarządzaj wszystkimi zgłoszonymi kartami partnerskimi:
-
-| Kolumna               | Opis                                           |
-| --------------------- | ---------------------------------------------- |
-| **Nazwa karty**       | Nazwa aplikacji partnerskiej i karty           |
-| **card\_type\_label** | Typ karty (`Action_card` lub `Condition_card`) |
-| **Wersja**            | Numer wersji karty                             |
-| **Zgłoszono**         | Data zgłoszenia                                |
-| **Status**            | Aktualny status recenzji                       |
-| **Akcje**             | Dostępne akcje w zależności od statusu         |
-
-#### Statusy kart
-
-| Status        | Znaczenie                                         | Dostępne akcje             |
-| ------------- | ------------------------------------------------- | -------------------------- |
-| **Validated** | Karta przeszła walidację                          | Pobierz, Zatwierdź, Odrzuć |
-| **Approved**  | Karta jest aktywna i dostępna w przepływach pracy | Pobierz, Wyłącz, Cofnij    |
-| **Rejected**  | Karta nie przeszła recenzji                       | Usuń                       |
-| **Disabled**  | Karta została dezaktywowana                       | Usuń                       |
-
-### Pobierz szablon SDK
-
-Kliknij **Pobierz szablon SDK**, aby pobrać szablon startowy do budowania własnych niestandardowych kart. Szablon zawiera wymaganą strukturę plików i przykładowe konfiguracje.
-
-{% hint style="info" %}
-Kartami partnerskimi można również zarządzać programowo za pomocą [narzędzi DocFlow MCP](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/advanced-functions-and-tools/docflow-mcp/README.md). Użyj narzędzi Card SDK MCP, aby tworzyć, walidować, zatwierdzać i testować karty z poziomu IDE lub skryptów automatyzacji.
-{% endhint %}
+- Zbuduj liniową automatyzację za pomocą buildera **Standard Workflow**.
+- Zbuduj rozgałęziony przepływ za pomocą buildera **Advanced Workflow**.

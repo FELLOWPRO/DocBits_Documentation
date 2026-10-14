@@ -54,6 +54,6 @@ RODO to rozporządzenie w prawie UE dotyczące ochrony danych i prywatności w U
 
 {% file src="../../.gitbook/assets/FELLOWPRO-GDPR-Audit-Report-2025.pdf" %}
 
-***
+---
 
 W sprawie dodatkowej dokumentacji — szablonów umów powierzenia (DPA), list sub-processorów, podsumowań testów penetracyjnych lub kwestionariuszy bezpieczeństwa — skontaktuj się z **compliance@fellowpro.com** lub ze swoim opiekunem DocBits Customer Success.

@@ -39,3 +39,5 @@ Dla każdego typu dokumentu dostępne są różne pola, które możesz dodać:
 Wybierz potrzebne pola i kliknij "Dodaj do widocznych kolumn", a następnie pojawią się one w ustawieniach kolumn.
 
 <figure><img src="../../../.gitbook/assets/change-document-colums9.png" alt="" width="281"><figcaption></figcaption></figure>
+
+<div data-full-width="true"><figure><img src="../../../.gitbook/assets/image%20(6).png" alt=""><figcaption></figcaption></figure></div>

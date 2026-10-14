@@ -6,7 +6,7 @@ Jeśli napotkasz jakiekolwiek trudności lub masz pytania dotyczące korzystania
 
 <figure><img src="../../../.gitbook/assets/docbits_purchase_order_export_9.png" alt="DocBits Zakup Zamówienie Eksport 9"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/docbits_error_approval (2).png" alt="DocBits Błąd Zatwierdzenie"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_error_approval.png" alt="DocBits Błąd Zatwierdzenie"><figcaption></figcaption></figure>
 
 Możesz również skontaktować się z nami za pośrednictwem naszej strony FELLOWPRO:
 

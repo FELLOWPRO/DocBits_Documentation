@@ -44,7 +44,7 @@ if supplier_id:
 
 ## Użyte funkcje
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczyt wartości pola
-* [get\_lookup\_records()](../functions/business-logic-functions.md#get_lookup_records) — Odpytywanie danych podstawowych
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Zapis wartości pola
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Wyświetlanie błędu walidacji
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczyt wartości pola
+- [get\_lookup\_records()](../business-logic-functions.md#get\_lookup\_records) — Odpytywanie danych podstawowych
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Zapis wartości pola
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Wyświetlanie błędu walidacji

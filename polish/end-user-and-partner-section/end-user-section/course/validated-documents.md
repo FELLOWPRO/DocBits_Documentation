@@ -1,4 +1,4 @@
-# Validated Documents
+# Zwalidowane dokumenty
 
 W tym filmie widzowie zapoznają się z przyjaznym dla użytkownika interfejsem **DocBits**, skupiając się w szczególności na walidacji dokumentów. Samouczek podkreśla prostotę systemu, w którym nie jest wymagane żadne kodowanie ani złożone formuły.
 

@@ -31,7 +31,7 @@ Włączenie tej opcji blokuje logowania hasłem członkom, którzy nie mają dru
 Pod przełącznikiem panel **Wdrożenie MFA** pokazuje, jak szeroko 2FA jest używane w Twojej organizacji, zanim je wymusisz:
 
 * ogólny **procent wdrożenia** i pasek postępu,
-* ilu Twoich członków ma włączone 2FA (np. _0 z 74 członków_),
+* ilu Twoich członków ma włączone 2FA (np. *0 z 74 członków*),
 * podział według składników — **Aplikacja uwierzytelniająca**, **E-mail** i **Klucz dostępu**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>Raport wdrożenia MFA: ogólny procent, zarejestrowani członkowie i podział według składników.</p></figcaption></figure>

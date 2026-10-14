@@ -15,7 +15,7 @@ Każda strona przebiega według tych samych pięciu kroków: otwórz link API dl
 
 ## Czego potrzebujesz
 
-* **Klucza API** — zobacz [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management/).
+* **Klucza API** — zobacz [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md).
 * **Swojego Org ID** — w **Settings → Integration & SSO**, w sekcji **ID**.
 * **Samych danych**, jako pliku XML lub jako treści XML, którą można wkleić.
 

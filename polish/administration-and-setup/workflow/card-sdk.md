@@ -6,9 +6,9 @@
 
 ## Jak to działa
 
-* **Download SDK Template** — zacznij od oficjalnego szablonu zawierającego oczekiwaną strukturę.
-* **Upload ZIP** — plik ZIP musi zawierać `app.json` oraz folder `.docflowcompose/flow/` z definicjami kart (maks. 10 MB). Upload & Validate sprawdza pakiet przed jego zaakceptowaniem.
-* **GitHub Import** — zaimportuj definicję karty bezpośrednio z repozytorium GitHub.
-* **Submissions** — śledź status przesłanych przez siebie kart.
+- **Download SDK Template** — zacznij od oficjalnego szablonu zawierającego oczekiwaną strukturę.
+- **Upload ZIP** — plik ZIP musi zawierać `app.json` oraz folder `.docflowcompose/flow/` z definicjami kart (maks. 10 MB). Upload &#x26; Validate sprawdza pakiet przed jego zaakceptowaniem.
+- **GitHub Import** — zaimportuj definicję karty bezpośrednio z repozytorium GitHub.
+- **Submissions** — śledź status przesłanych przez siebie kart.
 
 Po zweryfikowaniu i zaakceptowaniu Twoje niestandardowe karty pojawią się w bibliotece **Add Card** obok kart wbudowanych.

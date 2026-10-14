@@ -1,4 +1,4 @@
-# Podorganizacje
+# Suborganizacje
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/pl.mp4" %}
 
@@ -17,10 +17,10 @@ Suborganizacje umożliwiają utworzenie struktury hierarchicznej w DocBits w cel
 
 Tabela przedstawia wszystkie istniejące suborganizacje wraz z:
 
-| Kolumna   | Opis                                                                           |
-| --------- | ------------------------------------------------------------------------------ |
-| **Nazwa** | Nazwa suborganizacji.                                                          |
-| **Opis**  | Krótki opis przeznaczenia suborganizacji.                                      |
+| Kolumna | Opis |
+|--------|-------------|
+| **Nazwa** | Nazwa suborganizacji. |
+| **Opis** | Krótki opis przeznaczenia suborganizacji. |
 | **Akcje** | Menu z opcjami zarządzania użytkownikami, edycji lub usunięcia suborganizacji. |
 
 Skorzystaj z paska **wyszukiwania**, aby szybko znaleźć suborganizacje według nazwy.

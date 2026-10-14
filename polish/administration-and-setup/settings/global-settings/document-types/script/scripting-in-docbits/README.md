@@ -8,7 +8,7 @@ Witamy w przewodniku po skryptach Docbits! Tutaj dowiesz się, jak używać skry
 
 Skrypty w Docbits są pisane w języku Python. Wchodzą w interakcję z polami dokumentów i metadanymi, aby wykonywać szeroki zakres operacji, od prostego formatowania danych po złożoną logikę.
 
-**Kluczowe funkcje**
+#### Kluczowe funkcje
 
 * `get_field_value(fields_dict, field_name, default=None)`: Pobiera wartość określonego pola.
 * `set_field_value(fields_dict, field_name, value)`: Ustawia wartość określonego pola.
@@ -19,7 +19,7 @@ Skrypty w Docbits są pisane w języku Python. Wchodzą w interakcję z polami d
 
 Poniżej znajduje się kilka przykładów demonstrujących typowe zadania skryptowe.
 
-**Przykład 1: Mapowanie walut dla faktur**
+#### Przykład 1: Mapowanie walut dla faktur
 
 Standaryzacja symboli walut lub tekstu do kodów walut ISO.
 
@@ -37,3 +37,5 @@ if currency_value:
         currency_value = currency_map[currency_value]
     set_field_value(fields_dict, "currency", currency_value)
 ```
+
+

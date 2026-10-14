@@ -1,3 +1,2 @@
-# Ressources and Support
-
+# Zasoby i wsparcie
 

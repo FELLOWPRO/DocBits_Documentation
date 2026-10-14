@@ -6,7 +6,7 @@ Strona **Reguły walidacji** (**Dokumenty elektroniczne → Reguły**) kontroluj
 
 ## Konfiguracja walidacji
 
-Karta **Konfiguracja walidacji** pokazuje Twój bieżący profil walidacji (na przykład _B2G — Public Sector Receiver_). Kliknij **Edytuj odpowiedzi**, aby ponownie uruchomić kreatora konfiguracji i zmienić standard, względem którego prowadzona jest walidacja.
+Karta **Konfiguracja walidacji** pokazuje Twój bieżący profil walidacji (na przykład *B2G — Public Sector Receiver*). Kliknij **Edytuj odpowiedzi**, aby ponownie uruchomić kreatora konfiguracji i zmienić standard, względem którego prowadzona jest walidacja.
 
 ## Akceptowane wersje XRechnung
 
@@ -20,12 +20,12 @@ Wybierz, które **profile** akceptujesz (BASIC WL, BASIC, EN 16931 / COMFORT, EX
 
 Każda reguła walidacji ma **wagę**, która decyduje, co się dzieje po jej uruchomieniu:
 
-| Waga        | Skutek                                                                                                                                           |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **FATAL**   | Natychmiast zatrzymuje przetwarzanie. Żadna kolejna warstwa nie jest sprawdzana; dokument przechodzi w stan Błąd.                                |
-| **ERROR**   | Dokument jest odrzucany. Pozostałe wyniki dla tego samego dokumentu są nadal pokazywane; powiadomienie dostawcy (jeśli włączone) jest wyzwalane. |
-| **WARNING** | Pojawia się w raporcie walidacji, ale dokument przechodzi przez potok normalnie.                                                                 |
-| **INFO**    | Tylko dziennik audytu. Brak widocznego efektu dla użytkownika i brak odrzucenia.                                                                 |
+| Waga | Skutek |
+|------|--------|
+| **FATAL** | Natychmiast zatrzymuje przetwarzanie. Żadna kolejna warstwa nie jest sprawdzana; dokument przechodzi w stan Błąd. |
+| **ERROR** | Dokument jest odrzucany. Pozostałe wyniki dla tego samego dokumentu są nadal pokazywane; powiadomienie dostawcy (jeśli włączone) jest wyzwalane. |
+| **WARNING** | Pojawia się w raporcie walidacji, ale dokument przechodzi przez potok normalnie. |
+| **INFO** | Tylko dziennik audytu. Brak widocznego efektu dla użytkownika i brak odrzucenia. |
 
 ## Nadpisywanie wag reguł
 

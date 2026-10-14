@@ -1,4 +1,4 @@
-# Zadanie dla Wysokiej Kwoty
+# Zadanie dla Wysokiej Kwoty Faktury
 
 ## Co robi ten skrypt?
 
@@ -43,6 +43,6 @@ except ValueError:
 
 ## Użyte funkcje
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczyt wartości pola
-* [get\_group\_by\_name()](../functions/business-logic-functions.md#get_group_by_id--get_group_by_name) — Wyszukanie grupy po nazwie
-* [create\_document\_task()](../functions/business-logic-functions.md#create_document_task) — Tworzenie zadania zatwierdzenia
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczyt wartości pola
+- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Wyszukanie grupy po nazwie
+- [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Tworzenie zadania zatwierdzenia

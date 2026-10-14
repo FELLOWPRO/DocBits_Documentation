@@ -2,7 +2,7 @@
 
 Kazdy skrypt automatycznie otrzymuje nastepujace zmienne w swoim kontekscie wykonania. Nie trzeba ich importowac — sa po prostu dostepne.
 
-***
+---
 
 ## Glowne zmienne
 
@@ -151,7 +151,7 @@ user       # Obiekt UserAuthentication — do wywolan API takich jak is_supplier
 **`user` nie jest zawsze w pelni dostepny:** W kontekscie workera Celery (automatyczne przetwarzanie) `user` ma ograniczone wlasciwosci. W kontekscie UI (`ON_FIELD_CHANGE`, `ON_SAVE`) jest to pelny obiekt uzytkownika.
 {% endhint %}
 
-***
+---
 
 ## Typowe wzorce dostepu
 

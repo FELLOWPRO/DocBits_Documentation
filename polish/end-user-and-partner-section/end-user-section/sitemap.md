@@ -27,7 +27,7 @@ Stały nagłówek u góry strony zawiera pole wyszukiwania i pigułki filtrów. 
 
 Bieżące wyszukiwanie i filtr są dodawane do URL, dzięki czemu przefiltrowany widok można zapisać jako zakładkę lub udostępnić.
 
-Mapa Witryny respektuje te same uprawnienia co reszta DocBits. Strony, do których nie masz dostępu, nie pojawiają się.
+<mark>Mapa Witryny respektuje te same uprawnienia co reszta DocBits. Strony, do których nie masz dostępu, nie pojawiają się.</mark>
 
 ## Tryb dewelopera
 

@@ -60,4 +60,4 @@ Po włączeniu to ustawienie pozwala zdefiniować tolerancje dla **Transportu**,
     * **Procent:** Tolerancja jest definiowana jako procent.
     * **Wartość:** Tolerancja jest definiowana jako stała kwota.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_supplier (1).png" alt="DocBits Zakup Zamówienie Dostawca"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_supplier.png" alt="DocBits Zakup Zamówienie Dostawca"><figcaption></figcaption></figure>

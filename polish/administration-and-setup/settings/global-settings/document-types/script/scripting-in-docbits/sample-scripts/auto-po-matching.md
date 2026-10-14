@@ -39,13 +39,12 @@ if po_nr:
 ## Co się dzieje po dopasowaniu?
 
 `document_data` jest aktualizowane o:
-
-* `po_items` — Dopasowane pozycje ZZ
-* `po_match_status` — Wynik dopasowania (`"matched"`, `"partially_matched"` itp.)
-* `po_multi_matched` — Czy dopasowano wiele zamówień zakupu
+- `po_items` — Dopasowane pozycje ZZ
+- `po_match_status` — Wynik dopasowania (`"matched"`, `"partially_matched"` itp.)
+- `po_multi_matched` — Czy dopasowano wiele zamówień zakupu
 
 ## Użyte funkcje
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Odczyt wartości pola
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Zapis oczyszczonego numeru ZZ
-* [auto\_po\_match\_for\_purchase\_orders()](../functions/business-logic-functions.md#auto_po_match_for_purchase_orders) — Uruchomienie dopasowania ZZ
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Odczyt wartości pola
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Zapis oczyszczonego numeru ZZ
+- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — Uruchomienie dopasowania ZZ

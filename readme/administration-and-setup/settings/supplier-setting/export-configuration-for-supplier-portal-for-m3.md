@@ -1,23 +1,25 @@
 # Esportazione della Configurazione per il Portale Fornitori
 
-### Panoramica
+<figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Configurazione di esportazione fornitori"><figcaption><p>La pagina Configurazione di esportazione fornitori</p></figcaption></figure>
+
+## Panoramica
 
 Il file di configurazione per l'esportazione è un componente cruciale nel portale fornitori, che definisce come i dati vengono mappati tra il portale fornitori e il sistema ERP. Questa configurazione garantisce che i dati vengano trasferiti e sincronizzati accuratamente tra i sistemi, consentendo operazioni fluide ed efficienti.
 
-### Struttura del File di Configurazione
+## Struttura del File di Configurazione
 
 Il file di configurazione per l'esportazione è strutturato come un oggetto JSON che contiene più mappature. Ogni mappatura è associata a un programma specifico nel sistema ERP e definisce le azioni da eseguire, i campi da mappare e eventuali condizioni da applicare.
 
-### Componenti Chiave
+## Componenti Chiave
 
-#### 1. Programma
+### 1. Programma
 
 * **Definizione**: Specifica il programma ERP a cui si applica la mappatura.
 * **Esempio**: `"program": "CRS620MI"`
 
-#### 2. Azioni
+### 2. Azioni
 
-* **Definizione**: Definisce le azioni che possono essere eseguite, come aggiungere o aggiornare record.
+* **Definizione**: Definisce le azioni che possono essere eseguite, come l'aggiunta o l'aggiornamento di record.
 *   **Esempio**:
 
     ```json
@@ -27,9 +29,9 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
     }
     ```
 
-#### 3. Mappatura
+### 3. Mappatura
 
-• Definizione: Specifica la mappatura tra i campi nel sistema ERP e i campi nel portale fornitori.
+• Definizione: Specifica la mappatura tra i campi del sistema ERP e i campi del portale fornitori.
 
 • Componenti:
 
@@ -37,7 +39,7 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 
 • value\_field\_name: Il nome del campo corrispondente nel portale fornitori.
 
-• value: Un valore statico da utilizzare se non esiste un campo corrispondente nel portale fornitori.
+• value: Un valore statico da utilizzare se nel portale fornitori non esiste un campo corrispondente.
 
 • if\_conditions: Condizioni opzionali che determinano il valore in base a determinati criteri.
 
@@ -50,9 +52,9 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 }
 ```
 
-#### 4. Logica Condizionale (if\_conditions)
+### 4. Logica Condizionale (if\_conditions)
 
-• Definizione: Specifica le condizioni che devono essere soddisfatte affinché venga utilizzato un particolare valore.
+• Definizione: Specifica le condizioni che devono essere soddisfatte per utilizzare un determinato valore.
 
 • Componenti:
 
@@ -76,9 +78,9 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 }
 ```
 
-#### 5. Cicli (loop\_on)
+### 5. Cicli (loop\_on)
 
-• Definizione: Definisce le sezioni in cui la configurazione deve iterare su un elenco di elementi, come dettagli di indirizzo o di riferimento.
+• Definizione: Definisce le sezioni in cui la configurazione deve iterare su un elenco di elementi, come i dettagli degli indirizzi o dei riferimenti.
 
 • Esempio:
 
@@ -86,9 +88,9 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 "loop_on": "address_details"
 ```
 
-#### 6. Campi Calcolati (value\_field\_calculated)
+### 6. Campi Calcolati (value\_field\_calculated)
 
-• Definizione: Specifica i campi che devono essere calcolati durante l'esecuzione, come la generazione della data corrente.
+• Definizione: Specifica i campi che devono essere calcolati in fase di esecuzione, ad esempio per generare la data corrente.
 
 • Esempio:
 
@@ -99,9 +101,9 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 }
 ```
 
-#### 7. Mappature di Campo con Liste (mapping\_field\_name e mapping\_list)
+### 7. Mappature di Campo con Liste (mapping\_field\_name e mapping\_list)
 
-• Definizione: Mappa valori specifici dal portale fornitori ai valori corrispondenti nel sistema ERP in base a un elenco predefinito.
+• Definizione: Associa valori specifici del portale fornitori ai valori corrispondenti nel sistema ERP in base a un elenco predefinito.
 
 • Componenti:
 
@@ -126,19 +128,19 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 }
 ```
 
-### Esempio di Analisi della Configurazione
+## Esempio di Analisi della Configurazione
 
-#### Aggiunta e Aggiornamento Fornitori (CRS620MI)
+### Aggiunta e Aggiornamento Fornitori (CRS620MI)
 
 • Programma: CRS620MI
 
 • Azioni:
 
-• Aggiungi Fornitore: AddSupplier
+• Aggiungi fornitore: AddSupplier
 
-• Aggiorna Fornitore: UpdSupplier
+• Aggiorna fornitore: UpdSupplier
 
-• Campi di Mappatura:
+• Campi di mappatura:
 
 • SUNO → supplier\_number
 
@@ -150,17 +152,17 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 
 • I campi aggiuntivi includono valori statici e mappature condizionali.
 
-#### Dettagli Indirizzo (CRS620MI)
+### Dettagli degli Indirizzi (CRS620MI)
 
-• Ciclo Su: _**address\_details**_
+• Loop On: _**address\_details**_
 
 • Azioni:
 
-• Aggiungi Indirizzo: AddAddress
+• Aggiungi indirizzo: AddAddress
 
-• Aggiorna Indirizzo: AddAddress
+• Aggiorna indirizzo: AddAddress
 
-• Campi di Mappatura:
+• Campi di mappatura:
 
 • SUNO → supplier\_number
 
@@ -170,53 +172,53 @@ Il file di configurazione per l'esportazione è strutturato come un oggetto JSON
 
 • I campi aggiuntivi includono campi calcolati come now() per la data corrente.
 
-#### Dettagli di Riferimento (CRS620MI)
+### Dettagli dei Riferimenti (CRS620MI)
 
-• Ciclo Su: _**reference\_details**_
+• Loop On: _**reference\_details**_
 
 • Azioni:
 
-• Aggiungi Riferimento Fornitore: AddSupplierRef
+• Aggiungi riferimento fornitore: AddSupplierRef
 
-• Aggiorna Riferimento Fornitore: AddSupplierRef
+• Aggiorna riferimento fornitore: AddSupplierRef
 
-• Campi di Mappatura:
+• Campi di mappatura:
 
 • SUNO → supplier\_number
 
 • RFTY → reference\_type
 
-• RFID è mappato utilizzando un elenco per tradurre tipi come “PURCHASING”, “QA” e “FINANCE”.
+• RFID viene mappato tramite un elenco per tradurre tipi come “PURCHASING”, “QA” e “FINANCE”.
 
-### Utilizzo della Configurazione per l'Esportazione
+## Utilizzo della Configurazione di Esportazione
 
-#### 1. Caricamento del File di Configurazione
+### 1. Caricamento del File di Configurazione
 
-**1. Navigare alla Configurazione per l'Esportazione:**
+#### 1. Vai su Export Configuration:
 
-• Vai alla sezione Configurazione per l'Esportazione dal menu principale.
+• Vai alla sezione Export Configuration dal menu principale.
 
-**2. Caricare il File di Configurazione:**
+#### 2. Carica il File di Configurazione:
 
 • Clicca sulle sezioni ION-Mapping File o IDM Mapping File per caricare il rispettivo file di configurazione.
 
-**3. Salvare la Configurazione:**
+#### 3. Salva la Configurazione:
 
-• Dopo aver caricato, clicca sul pulsante Salva per applicare la configurazione.
+• Dopo il caricamento, clicca sul pulsante Save per applicare la configurazione.
 
-#### 2. Utilizzo dei Modelli Predefiniti
+### 2. Utilizzo dei Template Predefiniti
 
-• Clicca sul pulsante Usa Modello Predefinito se desideri tornare al modello di configurazione predefinito fornito dal sistema.
+• Clicca sul pulsante Use Default Template se desideri ripristinare il template di configurazione predefinito fornito dal sistema.
 
-#### 3. Formattazione del JSON
+### 3. Formattazione del JSON
 
-• Usa il pulsante Format per formattare automaticamente il codice JSON per una migliore leggibilità.
+• Usa il pulsante Format per formattare automaticamente il codice JSON e renderlo più leggibile.
 
-### Conclusione
+## Conclusione
 
-Questo file di configurazione è essenziale per garantire che i dati tra il portale fornitori e il sistema ERP siano correttamente mappati e sincronizzati. Comprendendo la struttura e i componenti chiave, gli amministratori possono gestire e personalizzare efficacemente il processo di esportazione per soddisfare le proprie esigenze aziendali specifiche.
+Questo file di configurazione è essenziale per garantire che i dati tra il portale fornitori e il sistema ERP siano mappati e sincronizzati correttamente. Comprendendo la struttura e i componenti chiave, gli amministratori possono gestire e personalizzare in modo efficace il processo di esportazione per soddisfare le proprie specifiche esigenze aziendali.
 
-### Esempio Completo
+## Esempio Completo&#x20;
 
 ```json
 [{

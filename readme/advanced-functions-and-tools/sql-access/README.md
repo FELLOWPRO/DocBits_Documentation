@@ -1,4 +1,3 @@
----
 # SQL Access
 
 <figure><img src="../../.gitbook/assets/sql_direct_access_settings.png" alt="Instellingen voor SQL Direct Access"><figcaption></figcaption></figure>

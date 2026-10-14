@@ -1,28 +1,90 @@
 # Module
 
-* **M3 Integratie**: Integratie met M3, een ERP-softwareoplossing, die naadloze interactie tussen DocBits en M3 mogelijk maakt voor verbeterd documentbeheer en -verwerking.
-* **PO Dashboard**: Een gecentraliseerd dashboard binnen DocBits dat specifiek is ontworpen om inkooporders te beheren en te monitoren, en inzichten en analyses biedt voor efficiënte tracking en besluitvorming.
-* **Verzendings Order Dashboard**: Vergelijkbaar met het PO Dashboard, richt deze functie zich op het beheren en monitoren van verzendorders, wat soepele logistieke operaties vergemakkelijkt.
-* **Auto-boekhouding**: DocBits biedt geautomatiseerde boekhoudfunctionaliteit, waardoor het proces van het afhandelen van financiële transacties in verband met inkooporders (PO's) en andere documenten wordt gestroomlijnd.
-* **Advance Shipment Dashboard**: Een gespecialiseerd dashboard voor geavanceerde monitoring en beheer van verzendgerelateerde activiteiten, dat diepere inzichten en functionaliteiten biedt.
-* **Factuur Dashboard:** Een gespecialiseerd dashboard voor geavanceerde monitoring en beheer van factuurgerelateerde activiteiten, dat diepere inzichten en functionaliteiten biedt.
-* **Dashboards v2**: Een bijgewerkte versie van de dashboardinterface, waarschijnlijk met een verbeterde gebruikerservaring en extra functies voor verbeterde bruikbaarheid.
-* **SQL Directe toegang:** Een directe toegang tot de database.
-* **Leverancier Portaal**: Een portaal binnen DocBits dat is gewijd aan leveranciers, waardoor zij kunnen interageren en samenwerken met het systeem, wat de communicatie en efficiëntie in de toeleveringsketen verbetert.
-* **Workflow Builder**: Een tool voor het creëren en aanpassen van workflows binnen DocBits, waarmee gebruikers specifieke processen kunnen definiëren en documentafhandeling kunnen automatiseren volgens hun unieke zakelijke vereisten.
+<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Module-instellingen"><figcaption><p>Pagina Module-instellingen</p></figcaption></figure>
 
-**Watch: Enabling Workflow Builder**
+Op de pagina Module schakelt u optionele functies in DocBits in of uit. Elk onderdeel groepeert gerelateerde modules die u aan of uit kunt zetten.
 
-{% embed url="https://youtu.be/YQC13wCqTJI" %}
+## Purchase Order
 
-* **Workflows uitvoeren in Celery:** Deze functie stelt je in staat om workflows in Celery uit te voeren.
-* **Layout Builder**: Maakt het gebruikers mogelijk om de lay-out van documenten binnen DocBits te ontwerpen en aan te passen, zodat deze in lijn zijn met branding- en bruikbaarheidsnormen.
-* **Annotatiemodus**: Een functie die gebruikers in staat stelt om documenten direct binnen de DocBits-interface te annoteren en te markeren, wat samenwerking en feedback vergemakkelijkt.
-* **Rapport tonen**: Functionaliteit om rapporten binnen DocBits te genereren en weer te geven, met inzichten en analyses over verschillende aspecten van documentverwerking en -beheer.
-* **Modellen en labels**: Tools voor het definiëren en configureren van documentherkenningsmodellen en labels binnen DocBits, wat de nauwkeurigheid en efficiëntie van documentverwerking verbetert.
-* **Documentscript**: Waarschijnlijk een functie voor het scriptmatig automatiseren van specifieke acties of processen met betrekking tot documentafhandeling binnen DocBits.
-* **Documenten scannen**: Mogelijkheid om fysieke documenten te scannen en deze in DocBits te importeren voor digitale verwerking en beheer.
-* **QR-Code extractie**: Een functie voor het extraheren van informatie uit QR-codes die in documenten zijn ingebed, waardoor geautomatiseerde gegevensverzameling en -verwerking mogelijk wordt.
-* **Aangepaste stamgegevens**: Maakt het gebruikers mogelijk om aangepaste masterdatavelden en -attributen binnen DocBits te definiëren en te beheren, waardoor het systeem kan worden afgestemd op hun specifieke zakelijke behoeften.
-* **Taken en meldingen**: Functionaliteit voor het beheren van taken en het ontvangen van meldingen binnen DocBitsGBT, wat zorgt voor tijdige actie en communicatie met betrekking tot documentverwerkingsactiviteiten.
-* **IDM ACL Updater**: Deze module houdt zich waarschijnlijk bezig met het bijwerken en beheren van toegangscontrolelijsten (ACL's) binnen DocBits, wat zorgt voor de juiste machtigingen en beveiliging voor documenttoegang en -afhandeling.
+Instellingen voor PO Matching & Validatie.
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **Auto Export if PO matched 100%** | Exporteert het document automatisch wanneer de PO-matching 100% bereikt. |
+| **PO Dashboard** | Schakelt het Purchase Order-dashboard in. Bevat een veld **PO Date Limit** om PO-gegevens op datum te beperken. |
+| **PO Shipment Order** | Schakelt de verwerking van verzendorders in die aan inkooporders zijn gekoppeld. |
+| **Shipment Order Dashboard** | Schakelt een speciaal dashboard voor verzendorders in. |
+
+## Auto Accounting
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **Auto Accounting** | Schakelt automatische boekhouding voor documenten in. Selecteer het ERP-type (bijv. LN, M3). |
+
+## Dashboards
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **Advance Shipment Dashboard** | Dashboard voor het monitoren van geavanceerde verzendactiviteiten. |
+| **Invoice Dashboard** | Dashboard voor factuurmonitoring en -analyses. |
+| **Full Text Search** | Schakelt full-text zoeken in alle documenten in. |
+| **Analytics Dashboard** | Schakelt het analyseoverzichtsdashboard in. |
+
+## Database Access
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **DB Access** | Schakelt directe databasetoegang voor de organisatie in. |
+
+## AI Dashboard
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **AI Document Warehouse** | AI-gestuurde analyses van het documentmagazijn. |
+| **Dashboard v2** | Bijgewerkt dashboard met verbeterde functies. |
+| **Clickhouse Direct Access** | Schakelt directe toegang tot de Clickhouse-database in. |
+| **Supplier Statistics** | Schakelt statistieken en rapportage op leveranciersniveau in. |
+
+## Shipping & Supplier
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **Supplier Portal** | Schakelt het leveranciersportaal in voor samenwerking met leveranciers. |
+
+## Document Type
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **Workflow Builder** | Bouw en pas workflows voor documentverwerking aan. |
+| **Annotation Mode** | Staat gebruikers toe documenten te annoteren in de validatieweergave. |
+| **Show Report** | Schakelt het genereren van rapporten voor documenten in. |
+| **Inbound Emails** | Schakelt de verwerking van inkomende e-mails per documenttype in. |
+| **Models & Labels** | Beheer AI-modellen en labels voor documentherkenning. |
+| **Document Script** | Schakelt aangepaste scripts voor documentverwerking in. |
+| **Document Scan** | Schakelt de functie voor het scannen van documenten in. |
+| **Bar-Code/QR Code Extraction** | Extraheert barcode-/QR-codegegevens uit documenten. Selecteer de ondersteunde codetypen. |
+| **Custom Master Data** | Schakelt aangepaste masterdatavelden in. |
+| **Tasks & Notifications** | Schakelt taakbeheer en notificatiefuncties in. Bevat de schakelaar **Dashboard Tasks Count**. |
+| **DocBits Operator** | Schakelt de browserautomatiseringsfunctie DocBits Operator in. |
+| **DocNet** | Schakelt DocNet-documentnetwerken in. |
+| **IDM ACL Updater** | Werkt de toegangscontrolelijsten (ACL's) van Infor Document Management bij. Upload een ION-Mapping-bestand en configureer de koppelingen van Infor-Doctype naar ACL. |
+| **Barcode Assignment** | Schakelt het toewijzen van barcodes aan documenten in. |
+| **Set Negative Sign For Credit Notes** | Past automatisch negatieve tekens toe op bedragen van creditnota's. |
+
+## BOD Connection Stream
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **BOD Connection Stream** | Schakelt de BOD-integratie (Business Object Document) in. Toont de **Stream Name** die voor de verbinding wordt gebruikt. |
+
+## Analytics
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **Use PostgreSQL for Quality Analytics** | Schakel tussen Prometheus (realtime, wordt bij elke deployment gereset) en PostgreSQL (permanent 90 dagen, trendanalyse, slechtst presterende velden). |
+
+## Vertex Tax Integration
+
+| Instelling | Beschrijving |
+|---------|-------------|
+| **Vertex Tax Integration** | Schakelt Vertex-belastingberekening in. Configureer **Base URL**, **Client ID** en **Client Secret**. Gebruik **Test Connection** om te verifiëren. |

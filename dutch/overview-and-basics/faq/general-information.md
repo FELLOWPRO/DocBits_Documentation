@@ -15,6 +15,8 @@
 
 </details>
 
+
+
 <details>
 
 <summary>Ondersteunt DocBits aangepaste documenttypen?</summary>
@@ -22,6 +24,8 @@
 Ja, Gebruikers kunnen hun eigen documenttypen maken.
 
 </details>
+
+
 
 <details>
 
@@ -38,4 +42,7 @@ Ja, Gebruikers kunnen hun eigen documenttypen maken.
 
 </details>
 
+
+
 ####
+

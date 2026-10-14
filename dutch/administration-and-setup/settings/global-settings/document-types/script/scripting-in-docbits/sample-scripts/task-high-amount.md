@@ -1,4 +1,4 @@
-# Taak bij Hoog Bedrag
+# Taak bij Hoog Factuurbedrag
 
 ## Wat doet dit script?
 
@@ -43,6 +43,6 @@ except ValueError:
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Veldwaarde lezen
-* [get\_group\_by\_name()](../functions/business-logic-functions.md#get_group_by_id--get_group_by_name) — Groep zoeken op naam
-* [create\_document\_task()](../functions/business-logic-functions.md#create_document_task) — Goedkeuringstaak aanmaken
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Veldwaarde lezen
+- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Groep zoeken op naam
+- [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Goedkeuringstaak aanmaken

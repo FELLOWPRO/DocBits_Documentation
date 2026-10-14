@@ -15,15 +15,15 @@ Voor de volledige uitleg over herrangschikken, verbergen en pinnen, zie [Aanpasb
 
 Het menu Instellingen is gegroepeerd naar bedoeling in plaats van datamodel. Als u zich een instelling herinnert maar hem niet kunt vinden, probeer de bijbehorende groep hieronder:
 
-| U zoekt…                                                          | Open Instellingen →                                        |
-| ----------------------------------------------------------------- | ---------------------------------------------------------- |
-| Bedrijfsnaam, logo, tijdzone, app-kleur                           | Bedrijf & Gebruikers → Bedrijfsinformatie                  |
-| Gebruikers, groepen, machtigingen                                 | Bedrijf & Gebruikers → Groepen, Gebruikers en Machtigingen |
-| API-sleutels, ERP-verbindingen, exportconfiguraties               | Integratie                                                 |
-| Documenttypes, velden, scripts, EDI, modeltraining                | Documenttypes                                              |
-| OCR-instellingen, beslisbomen, lijsten met waarden, regelmanager  | Documentverwerking                                         |
-| Toegangsaudit, analytics, volledige-tekstindex, gebeurtenissenlog | Logging & Zoek                                             |
-| Leveranciersportal, Watchdog                                      | Setup                                                      |
+| U zoekt… | Open Instellingen → |
+|---|---|
+| Bedrijfsnaam, logo, tijdzone, app-kleur | Bedrijf & Gebruikers → Bedrijfsinformatie |
+| Gebruikers, groepen, machtigingen | Bedrijf & Gebruikers → Groepen, Gebruikers en Machtigingen |
+| API-sleutels, ERP-verbindingen, exportconfiguraties | Integratie |
+| Documenttypes, velden, scripts, EDI, modeltraining | Documenttypes |
+| OCR-instellingen, beslisbomen, lijsten met waarden, regelmanager | Documentverwerking |
+| Toegangsaudit, analytics, volledige-tekstindex, gebeurtenissenlog | Logging & Zoek |
+| Leveranciersportal, Watchdog | Setup |
 
 Binnen elke groep staan de meest gebruikte pagina's bovenaan.
 

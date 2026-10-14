@@ -63,4 +63,4 @@ Filters combineren, dus u kunt bijvoorbeeld in enkele klikken inperken tot "Hoog
 
 Het kaartmenu (drie-stippen-knop) laat u een idee dat u hebt ingediend bewerken of verwijderen.
 
-Het Ideeënbord is voor productfeedback, niet voor incidentmeldingen. Gebruik een supportticket voor problemen die uw werk vandaag blokkeren.
+<mark>Het Ideeënbord is voor productfeedback, niet voor incidentmeldingen. Gebruik een supportticket voor problemen die uw werk vandaag blokkeren.</mark>

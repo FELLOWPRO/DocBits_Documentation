@@ -35,4 +35,4 @@ Uw voorkeuren worden automatisch opgeslagen wanneer u op **Gereed** drukt en bli
 
 Wanneer een nieuwe functie aan DocBits wordt toegevoegd in een toekomstige release, verschijnt deze aan het einde van uw zijbalk met standaard zichtbaarheid. Herrangschik of verberg het in bewerkmodus om bij uw routine te passen.
 
-Functies waarvoor u geen toestemming hebt, verschijnen nooit in de aanpassingslijst — u kunt niet per ongeluk iets activeren dat uw rol niet kan openen.
+<mark>Functies waarvoor u geen toestemming hebt, verschijnen nooit in de aanpassingslijst — u kunt niet per ongeluk iets activeren dat uw rol niet kan openen.</mark>

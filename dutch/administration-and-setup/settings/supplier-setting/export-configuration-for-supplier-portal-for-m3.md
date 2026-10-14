@@ -130,7 +130,7 @@ Het exportconfiguratiebestand is gestructureerd als een JSON-object dat meerdere
 
 ### Leverancier Toevoegen en Bijwerken (CRS620MI)
 
-• Program: CRS620MI
+•  Program: CRS620MI
 
 • Actions:
 

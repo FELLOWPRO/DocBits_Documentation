@@ -14,7 +14,7 @@ Functies voor het doorzoeken van documentarchieven, het vinden van vergelijkbare
 
 **Bron:** `module/script/helper/document_script_functions.py`
 
-***
+---
 
 ## fulltext\_search()
 
@@ -26,28 +26,28 @@ fulltext_search(query, **kwargs)
 
 **Parameters:**
 
-| Naam          | Type  | Standaard        | Beschrijving                                                                                              |
-| ------------- | ----- | ---------------- | --------------------------------------------------------------------------------------------------------- |
-| `query`       | `str` | verplicht        | Zoekterm (gezocht in OCR-tekst van alle documenten)                                                       |
+| Naam | Type | Standaard | Beschrijving |
+| ---- | ---- | --------- | ------------ |
+| `query` | `str` | verplicht | Zoekterm (gezocht in OCR-tekst van alle documenten) |
 | `search_type` | `str` | `"match_phrase"` | `"match_phrase"` (exacte frase), `"fuzzy"` (fouttolerant, tot 2 tekens verschil), `"prefix"` (begint met) |
-| `doc_type`    | `str` | `None`           | Filter op documenttype (kommagescheiden, bijv. `"INVOICE,CREDIT_NOTE"`)                                   |
-| `status`      | `str` | `None`           | Filter op documentstatus (kommagescheiden, bijv. `"ready_for_validation,exported"`)                       |
-| `vendor_name` | `str` | `None`           | Filter op leveranciersnaam                                                                                |
-| `date_range`  | `str` | `None`           | `"last_30_days"`, `"last_90_days"`, `"last_180_days"`, `"last_365_days"`                                  |
-| `size`        | `int` | `10`             | Max resultaten (begrensd op 50)                                                                           |
+| `doc_type` | `str` | `None` | Filter op documenttype (kommagescheiden, bijv. `"INVOICE,CREDIT_NOTE"`) |
+| `status` | `str` | `None` | Filter op documentstatus (kommagescheiden, bijv. `"ready_for_validation,exported"`) |
+| `vendor_name` | `str` | `None` | Filter op leveranciersnaam |
+| `date_range` | `str` | `None` | `"last_30_days"`, `"last_90_days"`, `"last_180_days"`, `"last_365_days"` |
+| `size` | `int` | `10` | Max resultaten (begrensd op 50) |
 
 **Retourneert:** `list[dict]` — Elk dict bevat:
 
-| Veld           | Beschrijving                                             |
-| -------------- | -------------------------------------------------------- |
-| `doc_id`       | Document-UUID                                            |
-| `name`         | Bestandsnaam (bijv. `"INV-2026-001.pdf"`)                |
-| `doc_type`     | Documenttype (`"INVOICE"`, `"ORDER_CONFIRMATION"`, enz.) |
-| `vendor_name`  | Leveranciersnaam                                         |
-| `status`       | Documentstatus                                           |
-| `total_amount` | Totaalbedrag                                             |
-| `ocr_content`  | Overeenkomend tekstfragment uit het document             |
-| `highlights`   | Dict met gemarkeerde overeenkomsten per veld             |
+| Veld | Beschrijving |
+| ---- | ------------ |
+| `doc_id` | Document-UUID |
+| `name` | Bestandsnaam (bijv. `"INV-2026-001.pdf"`) |
+| `doc_type` | Documenttype (`"INVOICE"`, `"ORDER_CONFIRMATION"`, enz.) |
+| `vendor_name` | Leveranciersnaam |
+| `status` | Documentstatus |
+| `total_amount` | Totaalbedrag |
+| `ocr_content` | Overeenkomend tekstfragment uit het document |
+| `highlights` | Dict met gemarkeerde overeenkomsten per veld |
 
 **Voorbeeld — Zoeken naar exacte frase:**
 
@@ -83,7 +83,7 @@ results = fulltext_search("Rechn", search_type="prefix",
 **Foutafhandeling:** Als de fulltextsearch-service onbereikbaar is, retourneert de functie `[]` en logt een waarschuwing. Er wordt **geen** uitzondering gegenereerd.
 {% endhint %}
 
-***
+---
 
 ## vector\_search()
 
@@ -95,19 +95,19 @@ vector_search(doc_id, **kwargs)
 
 **Parameters:**
 
-| Naam     | Type  | Standaard | Beschrijving                                                                                  |
-| -------- | ----- | --------- | --------------------------------------------------------------------------------------------- |
+| Naam | Type | Standaard | Beschrijving |
+| ---- | ---- | --------- | ------------ |
 | `doc_id` | `str` | verplicht | Brondocument-UUID (het document waarvoor vergelijkbare overeenkomsten gevonden moeten worden) |
-| `k`      | `int` | `5`       | Aantal vergelijkbare documenten om te retourneren (begrensd op 50)                            |
+| `k` | `int` | `5` | Aantal vergelijkbare documenten om te retourneren (begrensd op 50) |
 
 **Retourneert:** `list[dict]` — Elk dict bevat:
 
-| Veld                 | Beschrijving                      |
-| -------------------- | --------------------------------- |
-| `doc_id`             | UUID van vergelijkbaar document   |
-| `name`               | Bestandsnaam                      |
-| `doc_type`           | Documenttype                      |
-| `similarity_score`   | Ruwe gelijkenisscore (0-1)        |
+| Veld | Beschrijving |
+| ---- | ------------ |
+| `doc_id` | UUID van vergelijkbaar document |
+| `name` | Bestandsnaam |
+| `doc_type` | Documenttype |
+| `similarity_score` | Ruwe gelijkenisscore (0-1) |
 | `similarity_percent` | Gelijkenis als percentage (0-100) |
 
 **Voorbeeld — Vergelijkbare documenten vinden:**
@@ -123,7 +123,7 @@ for doc in similar:
 **Hoe het werkt:** Elk document wordt bij indexering omgezet naar een 384-dimensionale vector. De vectorzoekopdracht vindt de dichtstbijzijnde buren in deze vectorruimte, die overeenkomen met semantisch vergelijkbare documenten.
 {% endhint %}
 
-***
+---
 
 ## fulltext\_search\_erp()
 
@@ -135,14 +135,14 @@ fulltext_search_erp(query, **kwargs)
 
 **Parameters:**
 
-| Naam            | Type  | Standaard | Beschrijving                                                                                         |
-| --------------- | ----- | --------- | ---------------------------------------------------------------------------------------------------- |
-| `query`         | `str` | verplicht | Zoekterm                                                                                             |
-| `entity_types`  | `str` | `None`    | Filter op entiteittype (kommagescheiden: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
-| `vendor_number` | `str` | `None`    | Filter op leveranciersnummer                                                                         |
-| `vendor_name`   | `str` | `None`    | Filter op leveranciersnaam                                                                           |
-| `company_code`  | `str` | `None`    | Filter op bedrijfscode                                                                               |
-| `size`          | `int` | `10`      | Max resultaten (begrensd op 50)                                                                      |
+| Naam | Type | Standaard | Beschrijving |
+| ---- | ---- | --------- | ------------ |
+| `query` | `str` | verplicht | Zoekterm |
+| `entity_types` | `str` | `None` | Filter op entiteittype (kommagescheiden: `"vendor"`, `"purchase_order"`, `"customer"`, `"material"`) |
+| `vendor_number` | `str` | `None` | Filter op leveranciersnummer |
+| `vendor_name` | `str` | `None` | Filter op leveranciersnaam |
+| `company_code` | `str` | `None` | Filter op bedrijfscode |
+| `size` | `int` | `10` | Max resultaten (begrensd op 50) |
 
 **Retourneert:** `list[dict]` — Entiteittype-specifieke velden (leveranciersrecords hebben `vendor_number`, `vendor_name`, enz.)
 
@@ -170,7 +170,7 @@ if po_number:
         set_field_as_valid(document_data, "purchase_order", "PO verified in ERP")
 ```
 
-***
+---
 
 ## fulltext\_suggestions()
 
@@ -182,10 +182,10 @@ fulltext_suggestions(query, **kwargs)
 
 **Parameters:**
 
-| Naam    | Type  | Standaard | Beschrijving                                  |
-| ------- | ----- | --------- | --------------------------------------------- |
-| `query` | `str` | verplicht | Prefix / zoekterm                             |
-| `limit` | `int` | `10`      | Max suggesties per categorie (begrensd op 20) |
+| Naam | Type | Standaard | Beschrijving |
+| ---- | ---- | --------- | ------------ |
+| `query` | `str` | verplicht | Prefix / zoekterm |
+| `limit` | `int` | `10` | Max suggesties per categorie (begrensd op 20) |
 
 **Retourneert:** `dict` met gegroepeerde suggesties:
 
@@ -208,18 +208,18 @@ vendor_list = suggestions.get("vendors", [])
 **Lege zoekopdracht:** Het doorgeven van een lege string retourneert direct `{}`.
 {% endhint %}
 
-***
+---
 
 ## Snelreferentie
 
-| Functie                            | Doel                                       | Retourneert  |
-| ---------------------------------- | ------------------------------------------ | ------------ |
-| `fulltext_search(query, ...)`      | OCR-tekst doorzoeken in alle documenten    | `list[dict]` |
-| `vector_search(doc_id, ...)`       | Semantisch vergelijkbare documenten vinden | `list[dict]` |
-| `fulltext_search_erp(query, ...)`  | ERP-stamgegevens doorzoeken                | `list[dict]` |
-| `fulltext_suggestions(query, ...)` | Autocomplete-suggesties                    | `dict`       |
+| Functie | Doel | Retourneert |
+| ------- | ---- | ----------- |
+| `fulltext_search(query, ...)` | OCR-tekst doorzoeken in alle documenten | `list[dict]` |
+| `vector_search(doc_id, ...)` | Semantisch vergelijkbare documenten vinden | `list[dict]` |
+| `fulltext_search_erp(query, ...)` | ERP-stamgegevens doorzoeken | `list[dict]` |
+| `fulltext_suggestions(query, ...)` | Autocomplete-suggesties | `dict` |
 
-***
+---
 
 ## Veelvoorkomende Patronen
 

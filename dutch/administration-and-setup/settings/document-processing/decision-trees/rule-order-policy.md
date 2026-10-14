@@ -5,12 +5,12 @@ Dit beleid past regels toe in de volgorde waarin ze in de beslissingsboom versch
 **Voorbeeld:**
 
 | Regel | Voorwaarde           | Geretourneerde groep |
-| ----- | -------------------- | -------------------- |
-| 1     | Total Amount <= 1000 | GROUP\_1             |
-| 2     | Total Amount <= 2000 | GROUP\_2             |
-| 3     | Total Amount <= 3000 | GROUP\_3             |
-| 4     | Total Amount <= 4000 | GROUP\_4             |
-| 5     | Total Amount <= 5000 | GROUP\_5             |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
 Gegeven dat de invoerwaarde **Total Amount = 2500** is, zou de evaluatie van de regels als volgt zijn:
 
@@ -22,8 +22,8 @@ Gegeven dat de invoerwaarde **Total Amount = 2500** is, zou de evaluatie van de 
 
 Onder **Regelvolgorde** verwerkt de boom de regels in de volgorde waarin ze worden vermeld. De overeenkomende regels zijn dus:
 
-* **Regel 3**: GROUP\_3
-* **Regel 4**: GROUP\_4
-* **Regel 5**: GROUP\_5
+* **Regel 3**: GROUP_3
+* **Regel 4**: GROUP_4
+* **Regel 5**: GROUP_5
 
-**Resultaat**: **GROUP\_3**, **GROUP\_4**, **GROUP\_5**
+**Resultaat**: **GROUP_3**, **GROUP_4**, **GROUP_5**

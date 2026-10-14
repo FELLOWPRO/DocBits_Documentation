@@ -1,3 +1,2 @@
-# Partner Section
-
+# Partner Sectie
 

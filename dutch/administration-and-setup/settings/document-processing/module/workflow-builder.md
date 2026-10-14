@@ -31,7 +31,7 @@ De schakelaar aanzetten doet meer dan een instelling omzetten — het start een 
 4. Open de sectie **Documenttype**.
 5. Zoek **Workflow Builder** en zet de schakelaar aan.
 6. Kies in het dialoogvenster uw DocFlow-plan (Standard, optioneel Advanced) en bevestig. DocFlow wordt geactiveerd zodra het abonnement is aangemaakt.
-7. Ontwerp daarna uw documentworkflows in DocFlow — zie de sectie [Workflow](../../../workflow/) voor hoe u ze bouwt.
+7. Ontwerp daarna uw documentworkflows in DocFlow — zie de sectie [Workflow](../../../workflow/README.md) voor hoe u ze bouwt.
 
 ### Wanneer deze functie gebruiken
 

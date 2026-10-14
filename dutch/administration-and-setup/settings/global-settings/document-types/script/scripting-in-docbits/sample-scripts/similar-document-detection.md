@@ -1,4 +1,4 @@
-# Vergelijkbare Documenten Detectie
+# Vergelijkbare Documenten Detectie (Vectorzoekopdracht)
 
 {% hint style="info" %}
 **Beschikbaar vanaf versie 11.48.0** — Vereist `OPENSEARCH_ENABLED` licentie.
@@ -39,12 +39,11 @@ for doc in similar:
 De OCR-tekst van elk document wordt bij indexering omgezet naar een 384-dimensionale vectorembedding. `vector_search()` vindt de dichtstbijzijnde buren in deze vectorruimte met behulp van k-NN (k-Nearest Neighbors), en retourneert documenten waarvan de inhoud semantisch vergelijkbaar is — zelfs als de exacte woorden verschillen.
 
 **Toepassingen:**
-
-* Fraudedetectie (bijna identieke facturen van verschillende "leveranciers")
-* Duplicaatdetectie die verder gaat dan exacte tekstovereenkomst
-* Gerelateerde documenten vinden in verschillende formaten of talen
+- Fraudedetectie (bijna identieke facturen van verschillende "leveranciers")
+- Duplicaatdetectie die verder gaat dan exacte tekstovereenkomst
+- Gerelateerde documenten vinden in verschillende formaten of talen
 
 ## Gebruikte Functies
 
-* [vector\_search()](../fulltext-search-functions.md#vector_search) — Semantisch vergelijkbare documenten vinden
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Validatiefout weergeven
+- [vector\_search()](../fulltext-search-functions.md#vector\_search) — Semantisch vergelijkbare documenten vinden
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Validatiefout weergeven

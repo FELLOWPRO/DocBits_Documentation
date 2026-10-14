@@ -1,4 +1,4 @@
-# Best Practice
+# Best practice
 
 ## Hier zijn enkele best practices voor het effectief gebruiken van e-mailmeldingen:
 

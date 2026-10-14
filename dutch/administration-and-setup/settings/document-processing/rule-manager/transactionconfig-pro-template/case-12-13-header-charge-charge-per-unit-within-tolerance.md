@@ -1,4 +1,4 @@
-# Charge Per Unit Within Tolerance
+# Case 12, 13: Header Charge - Charge Per Unit Within Tolerance
 
 ## Scenario:
 

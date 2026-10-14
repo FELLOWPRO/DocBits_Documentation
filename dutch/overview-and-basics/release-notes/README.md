@@ -1,8 +1,8 @@
-# Release-opmerkingen
+# Release Notes
 
 > **Laatste hotfix release:** [Hotfixes 14 oktober 2026](incremental-updates-14-october-2026.md) (R1.0.15): de Settings Assistant op elke instellingenpagina, nieuwe AI-niveaus (Fast, Full, Nexus, Auto), de controle van kopvelden, veiliger aanmelden en social login, en matching van purchase order toeslagen. Eerder: [Hotfixes 15 september 2026](incremental-updates-15-september-2026.md). Alle hotfix-pagina's staan vermeld in de navigatie onder Release Notes.
 
-## **Release R1.0 23/24 mei 2026**
+## **Release R1.0 13/14 juni 2026**
 
 > **Sandbox-beschikbaarheid:** 28 april 2026
 
@@ -10,60 +10,88 @@
 
 * **Activity Logging / Access Audit:**\
   Gedetailleerde activiteitslogging en audit trail voor toegang in de gehele applicatie voor compliance en monitoring. Verschillende typen logging voor alle microservices en op basis van tijdsbereik.
+
 * **Globale snelzoekfunctie:**\
   Druk op Cmd+K / Ctrl+K vanaf elke plek in de app om te zoeken in meer dan 200 routes en meer dan 40 in-page functies. Toont de top 8 resultaten met fuzzy matching, navigatie met pijltoetsen en links naar de volledige App Index Page.
+
 * **Sitemap (App Index Page):**\
   Doorzoekbare indexpagina die elke navigeerbare pagina en elke in-page functie (dialogen, zijbalken, panelen) in DocBits catalogiseert. Georganiseerd in 18 categorieën met typefilters, categoriepillen, URL-gesynchroniseerd zoeken en op rechten gebaseerde vermeldingen die voor niet-beheerders als vergrendeld worden getoond.
+
 * **Analytics Dashboard:**\
   Uitgebreide analyses van documentverwerking met Executive Overview, API Metrics, Quality Metrics, Processing Performance, Document Flow Analytics, Activity Log, Event Log en Audit Trail.
+
 * **Dashboard-exportfunctionaliteit:**\
   Nieuwe dashboard-exportfunctionaliteit die het exporteren van een lijst in CSV- of XLSX-formaat mogelijk maakt.
+
 * **Full-Text Search / DocSearch:**\
   AI-gedreven vectorzoekfunctie over alle geïndexeerde documenten met realtime leveranciersfiltering, "Find Similar"-functie en configureerbare indexeringsinstellingen.
+
 * **Supplier Delivery Statistics:**\
   Nieuwe weergaven met inzichten in documentverwerkingsstatistieken met betrekking tot leveranciers.
+
 * **Debug Collector:**\
   Druk op Ctrl+Shift+P om een volledige debug-snapshot vast te leggen, inclusief API-aanroepen, WebSocket-status, fouten, console-logs, prestatiemetrics en omgevingsinformatie. Snapshots kunnen naar het klembord worden gekopieerd of direct als supportticket worden verzonden met een HTML-geformatteerd rapport en een bijgevoegd JSON-bestand.
+
 * **AI Agents (DocNet):**\
   Autonome achtergrondagenten die inkomende e-mails automatisch verwerken — documenten classificeren, extraheren en routeren zonder handmatige tussenkomst. Agenten werken zelfstandig aan toegewezen taken en escaleren via goedkeuringsverzoeken naar gebruikers wanneer menselijk oordeel nodig is. Bevat een speciaal agent-dashboard voor het monitoren van activiteit en prestaties.
+
 * **Nieuwe E-Documents:**\
   Meer dan 80 nieuwe wereldwijde e-invoice-types en meer dan 40 nieuwe formaten, waaronder XRechnung 3.0.2, ZUGFeRD 2.2/2.3.2, Factur-X-varianten en Asia-Pacific PINT Credit Notes. 100 % classificatie- en extractiedekking.
+
 * **AI Script Chat:**\
   AI-gestuurde chatassistent voor basale scriptontwikkeling met realtime streaming-antwoorden.
+
 * **Script Versioning:**\
   Volledige versiegeschiedenis voor scripts met wijzigingen traceren, vergelijken en herstellen. Biedt versiebeheer voor scripts, vergelijkbaar met hoe versies van E-Docs worden onderhouden.
+
 * **Exportgeschiedenis in Dashboard Actions:**\
   Toegang tot de exportgeschiedenis van een document direct vanuit het dashboard-actiemenu.
+
 * **Generic API Exporter (APS450, GLS840):**\
   Configureerbaar generiek API-exportdoel via een Mapping-File-configuratie, voor flexibele integratie met externe systemen. Ondersteuning voor APS450 en GLS840 is geïmplementeerd.
+
 * **Meerdere exportconfiguraties:**\
   Ondersteuning voor meerdere actieve exportconfiguraties per documenttype, met uitvoeringsvolgorde en een re-export-knop om opnieuw te proberen vanaf de mislukte stap.
+
 * **Nieuwe Watchdog-versie:**\
   Volledige herwerking van de WatchDog Settings-pagina. Nieuwe quality-of-life-functies toegevoegd, waaronder de huidige WatchDog-status, gids en commando's voor installatie, XSLT-template-configuratie en een instelling voor automatische updates. Ook is de functionaliteit geïmplementeerd waarmee WatchDog meerdere configuraties tegelijk kan afhandelen.
+
 * **Vertex-integratie:**\
   Consumer Use Tax-integratie via Vertex voor geautomatiseerde belastingberekening en compliance tijdens documentverwerking.
+
 * **UI-herontwerp & herziening van instellingen:**\
   Uitgebreide UI-vernieuwing in de gehele applicatie. Herontworpen login- en authenticatiepagina's. Herontworpen instellingengebied met inklapbare zijbalk, georganiseerde subcategorieën, ankergebaseerde navigatie, contextueel hulppaneel en status-tracking-badges. UI-wijzigingen in Document scripts. Nieuwe UI voor Document flow. Verbeterde List of Values-UI.
+
 * **Idea Board:**\
   Feature-request-bord waarop gebruikers nieuwe functies, verbeteringen, benodigde bugfixes enz. kunnen indienen, bespreken en daarop kunnen stemmen, met een rich text editor en ondersteuning voor afbeeldingen.
+
 * **API Key Management:**\
   Speciale instellingenpagina voor het aanmaken, bekijken en beheren van meerdere API-sleutels.
+
 * **Master Data Lookup-zoekfunctionaliteit:**\
   Verbeterde Master Data-zoekmogelijkheden door geschikte zoekopties te bieden op basis van de geselecteerde velden.
+
 * **User Activity Chart:**\
   Visuele grafiek die gebruikersactiviteitspatronen en engagement-statistieken toont. Dashboard voor login-activiteit met vergelijkende trendgrafieken, dagelijkse/wekelijkse aggregatie en GeoLite2-gebaseerde geolocatie.
+
 * **User Login History:**\
   Users Detail View met login-geschiedenis.
+
 * **Aanpasbare zijbalk:**\
   Drag-and-drop herordenen, show/hide-toggle en pin-to-top voor menu-items in de zijbalk. Voorkeuren worden per gebruiker opgeslagen met een "Reset to default"-optie. Respecteert feature flags.
+
 * **Video Carousel:**\
   Autoplay video-carousel op de prepare-dashboard-pagina met korte, geanimeerde productvideo's (Global Search, Keyboard Shortcuts, Document Upload, Table Customization). Indeling met twee kolommen met video's links en dashboardvoorbereiding rechts. Auto-redirect wordt gepauzeerd terwijl gebruikers door de video's bladeren.
+
 * **Advanced Workflow Designer:**\
   Visuele, op knooppunten gebaseerde automatiseringsbouwer met drag-and-drop-canvas voor meerstaps verwerkingspipelines. Ondersteunt wait steps, parallelle paden, herbruikbare templates, Or condition cards, handmatige test/run-knop, "Test from Here"-gedeeltelijke uitvoering en uitvoeringslogs per knooppunt met visuele flow-markering die precies laat zien welke knooppunten zijn uitgevoerd.
+
 * **Workflow KPI Dashboard:**\
   Dashboard met kernmetrieken voor het monitoren van workflow-uitvoering.
+
 * **Workflow Partner Card SDK:**\
   SDK voor externe ontwikkelaars om aangepaste workflow-kaarten te bouwen, met AI-gedreven review, sandbox-validatie en getting-started-documentatie.
+
 * **Workflow Test Manager:**\
   Geautomatiseerde test manager voor workflows, waarmee beheerders tests afzonderlijk of in bulk kunnen aanmaken en uitvoeren.
 
@@ -71,20 +99,28 @@
 
 * **Database (alle modules) — Migratie van ID-kolommen:**\
   Alle "ID"-databasekolommen in DocBits zijn intern gemigreerd van strings naar een speciaal ID-type (UUID7). De onderliggende Postgres-database is gemigreerd naar V18 om deze verbetering te ondersteunen.
+
 * **Documentverwerking — Verdere verbeteringen:**\
   De exportlogica met betrekking tot het maximaal aantal te overwegen pagina's is gewijzigd — nu wordt het hele document geëxporteerd. Tijdens documentvalidatie heeft de gebruiker de mogelijkheid om de standaard maximale pagina-limiet voor dat specifieke document te overschrijven. De berekening van de Pending Document Counter is verbeterd.
+
 * **Serviceversies, status & deploymentdatum:**\
   De beschikbaarheidsstatus van services wordt verstrekt in de "Service Versions"-popup.
+
 * **Taaluitbreiding:**\
   Ondersteuning uitgebreid naar 22 talen met bijgewerkte taalkiezer.
+
 * **Access Control-ontwerp op veldniveau:**\
   Herontworpen/verbeterde toegangscontrole met duidelijkere activatiestatus, toegang op veldniveau, consistente regelafhandeling en vereenvoudigde groepsgebaseerde rechten. Lost regelconflicten op tussen Access Control en View Permissions, toont de import-eigenaar in de UI en past toegangscontrole consistent toe op veldvalidatie, AI-geëxtraheerde tabellen en alle weergaven.
+
 * **Activity Stream voor alle schermen:**\
   De Activity Stream is nu beschikbaar op alle documentverwerkingsschermen (Ready for Validation, PO Matching, Accounting, Quote Details, Reject) — niet alleen op Pending Approval. Verplaatst naar een consistente positie in het rechterpaneel op alle schermen.
+
 * **Document Flow-pagina:**\
   Speciale pagina voor het visualiseren en volgen van de documentverwerkingsstroom, die statusovergangen en voortgang door de pipeline toont.
+
 * **Dual Monitor Mode (globale gebruikersinstelling):**\
   Dual Monitor Mode is verplaatst naar een globale gebruikersinstelling en blijft behouden tussen sessies.
+
 * **Layout Builder-verbeteringen:**\
   Ondersteuning voor verborgen en alleen-lezen velden met visuele indicatoren, een in grootte aanpasbare paneelverdeler en instellingen voor veldlengte. Pas de Default Layout toe op meerdere Origins zonder elke origin afzonderlijk te hoeven openen.
 
@@ -102,7 +138,7 @@
 * Een probleem opgelost waarbij exportfoutmeldingen van ION/MEC (bijv. Acknowledge.PurchaseOrder-fouten) niet werden weergegeven in DocBits, en de status "Exported" werd getoond ondanks dat de export was mislukt.
 * Een probleem opgelost waarbij de eenheidsprijs op het goedkeuringsscherm onjuist was wanneer AI-tabelextractie werd gebruikt.
 * Een probleem opgelost waarbij het Total Matching-script een fout genereerde op het validatiescherm.
-* Een probleem opgelost waarbij documentverwerking mislukte met een fout ("UserAuthentication object has no setter for 'org\_id'").
+* Een probleem opgelost waarbij documentverwerking mislukte met een fout ("UserAuthentication object has no setter for 'org_id'").
 * Een probleem opgelost waarbij tabeltraining niet werkte voor specifieke leveranciers — kolommen belandden in verborgen kolommen in plaats van in de toegewezen velden.
 * Een probleem opgelost waarbij PO Matching mislukte bij grote facturen (meer dan 10 pagina's) vanwege overschrijding van de multipart-request-groottelimiet.
 * Een probleem opgelost waarbij door script gevulde kolomwaarden niet behouden bleven na een documentherstart.
@@ -122,16 +158,22 @@
 
 * **Hybride PDF-verwerking — Door de gebruiker gestuurde XML-extractie:**\
   Wanneer een PDF ingebedde XML-gegevens bevat, kunnen gebruikers nu kiezen of DocBits de ingebedde XML moet gebruiken voor extractie of het document als een standaard PDF moet verwerken. Dit geeft organisaties volledige controle over hoe hybride documenten worden verwerkt, zodat de extractiemethode die het beste past bij hun workflow wordt toegepast.
+
 * **AP Assignment Code op het Approval-scherm:**\
   De AP Manager Approval-pagina bevat nu een AP Assignment Code-veld, geïntegreerd met Infor M3 CRS620. Dit stelt goedkeurders in staat om toewijzingscodes direct tijdens het goedkeuringsproces te controleren en te bevestigen zonder naar externe systemen te hoeven schakelen.
+
 * **PO-totaal afstemming met documenttotaal:**\
   DocBits ondersteunt nu het vergelijken van het inkoopordertotaal met het totaal op het document, wat een extra validatielaag biedt tijdens PO Matching om afwijkingen eerder in het proces te detecteren.
+
 * **Update van leveranciersartikelnummer en VPE:**\
   DocBits ondersteunt nu het bijwerken van de velden leveranciersartikelnummer en VPE (Verpackungseinheit / verpakkingseenheid) tijdens documentverwerking, waarbij de waarden bij export worden teruggesynchroniseerd naar M3.
+
 * **Verbeterde documentlayout-classificatie:**\
-  Het documentlayout-ID (tfidf\_id) wordt nu alleen gegenereerd op basis van koptekst, met uitsluiting van voettekst. Dit verbetert de classificatienauwkeurigheid door te voorkomen dat voettekstinhoud de documenttypedetectie beïnvloedt.
+  Het documentlayout-ID (tfidf_id) wordt nu alleen gegenereerd op basis van koptekst, met uitsluiting van voettekst. Dit verbetert de classificatienauwkeurigheid door te voorkomen dat voettekstinhoud de documenttypedetectie beïnvloedt.
+
 * **Export & Next-knop:**\
   Er is een nieuwe "Export & Next"-knop toegevoegd, waarmee gebruikers het huidige document kunnen exporteren en onmiddellijk naar het volgende in de wachtrij kunnen gaan, wat de beoordelings- en exportworkflow stroomlijnt.
+
 * **Goedkeuringsproces voor kostenfacturen:**\
   Het goedkeuringsproces voor kostenfacturen is verbeterd met geoptimaliseerde routering- en validatielogica.
 
@@ -183,19 +225,19 @@
 *   **Standaard Layout toepassen op alle Origins:**\
     Een nieuwe **Apply Default Layout to Origins**-knop is geïntroduceerd in het layout-configuratiescherm. Beheerders kunnen nu het standaard layout met één enkele actie naar alle origins binnen een organisatie pushen, waardoor het tijdrovende handmatige proces van het kopiëren en plakken van layout-JSON per origin vervalt. Dit is vooral nuttig bij het onboarden van nieuwe klanten waarbij meerdere origins consistent moeten worden geconfigureerd.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(5\).png)
+    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 *   **Documenttype-selectie voor FTP-import:**\
     FTP-importconfiguraties ondersteunen nu documenttype-toewijzing per map. Bij het configureren van een FTP-import kunnen gebruikers specificeren welk documenttype — zoals Factuur of Orderbevestiging — moet worden toegepast op alle documenten die uit die map worden geïmporteerd. Documenten worden automatisch geclassificeerd bij import, waardoor handmatige documenttype-toewijzing na opname overbodig wordt. Dit ondersteunt organisaties die meerdere documenttypen beheren over verschillende suborganisaties en mappen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(4\).png)
+    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 * **Export naar GLS840 voor Infor On Premise:**\
   DocBits ondersteunt nu de export van documenten naar het GLS840-programma voor Infor On Premise-klanten, waardoor het scala aan ondersteunde exportbestemmingen voor on-premise omgevingen wordt uitgebreid.
 *   **UI-verbeteringen voor Watchdog en exportconfiguratie:**\
     De Watchdog-configuratie- en exportconfiguratieschermen zijn vernieuwd met een verbeterde gebruikersinterface, met een overzichtelijkere lay-out en een intuïtievere ervaring voor beheerders die deze instellingen beheren.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(1\).png)
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(2\).png)
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Bugfixes:
 
@@ -215,15 +257,15 @@
 *   **Verbeterde aanpassing van PO-matchingregels:**\
     DocBits biedt nu meer gedetailleerde en aanpasbare controle over inkooporder-matchingregels. Beheerders kunnen precies configureren welke kolommen moeten worden geëvalueerd tijdens het matchingproces voor elk documenttype, waardoor ervoor wordt gezorgd dat alleen de meest relevante velden worden overwogen. Bovendien kunnen toleranties op kolomniveau worden gedefinieerd, wat meer flexibiliteit biedt bij het omgaan met kleine afwijkingen. Elke regel kan ook worden geconfigureerd om te worden toegepast op handmatige matching, automatische matching of beide, waardoor teams de mogelijkheid krijgen om de matchingworkflow af te stemmen op hun exacte operationele vereisten. Deze verbeteringen verbeteren de aanpasbaarheid en precisie van het inkooporder-matchingproces aanzienlijk.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_notes_12_2025_3.png)
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_3.png" alt=""><figcaption></figcaption></figure>
 *   **Ondersteuning voor meerdere financiële accounts van leveranciers:**\
     DocBits ondersteunt nu het beheren van meerdere financiële accounts voor leveranciers via de RemitToPartyMaster BOD die door Infor wordt geleverd. Deze verbetering stelt organisaties in staat om meerdere remit-to accountrecords voor een enkele leverancier bij te houden, wat de flexibiliteit en nauwkeurigheid bij betalingsverwerking verbetert. Er is een nieuwe configuratie-instelling geïntroduceerd om deze mogelijkheid in of uit te schakelen, waardoor beheerders de functie kunnen activeren op basis van hun operationele behoeften.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_notes_12_2025_1.png)
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_1.png" alt=""><figcaption></figcaption></figure>
 *   **Gebruikerstoegang toegevoegd aan OCR-extractieresultaten:**\
     De knop **OCR-weergave** op het veldvalidatiescherm is nu beschikbaar voor alle gebruikers die validatietoegang hebben, in plaats van beperkt te zijn tot beheerders. Met deze update kan elke geautoriseerde gebruiker OCR-extractieresultaten direct bekijken, waardoor het gemakkelijker wordt om de nauwkeurigheid van gegevens te valideren en de algehele OCR-prestaties te monitoren. Deze verbetering bevordert meer transparantie en verbetert de efficiëntie van de validatieworkflow.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/release_notes_12_2025_2.png)
+    <figure><img src="../../.gitbook/assets/release_notes_12_2025_2.png" alt=""><figcaption></figcaption></figure>
 * **Dynamische kolomweergave in goedkeuringsschermen:**\
   Verbeterde goedkeuringsweergaven om dynamisch alleen de kolommen weer te geven die zijn geconfigureerd voor vergelijking in de databasevoorkeuren van elke organisatie. Eerder verschenen sommige organisatie-specifieke kolommen leeg wanneer ze niet waren geconfigureerd voor vergelijking, wat verwarring veroorzaakte. Nu tonen goedkeuringsweergaven alleen velden die actief worden vergeleken. Dit biedt duidelijkere, organisatie-specifieke goedkeuringsschermen zonder lege of irrelevante kolommen.
 * **Ordertypeveld toegevoegd aan masterdataopzoekfunctie**:\
@@ -262,17 +304,17 @@
 
     De e-mail template editor is opnieuw ontworpen om een duidelijkere structuur en soepelere ervaring te bieden. Het selecteren van documentvelden is nu intuïtiever en bijlagen kunnen direct binnen templates worden toegevoegd. Deze verbeteringen maken het sneller en gemakkelijker om professionele, op maat gemaakte e-mails te creëren.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(310\).png)
+    <figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 *   **Dashboard Verbeteringen:**
 
     Het dashboard is uitgebreid om navigatie en aanpassing te verbeteren. Met nieuwe tabbladen kunnen gebruikers sneller schakelen tussen verschillende documenttypen, waardoor de tijd die wordt besteed aan het zoeken naar de juiste weergave wordt verminderd.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(474\)%20\(1\).png)
+    <figure><img src="../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
 *   **Aangepaste FilterDashboards:**\
     Daarnaast kunnen dashboards nu worden aangepast en gefilterd volgens individuele voorkeuren. Deze aangepaste dashboards kunnen ook worden gedeeld met collega's, waardoor het\
     gemakkelijker wordt om consistente teamrapportageweergaven te creëren.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(477\).png)
+    <figure><img src="../../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
 *   **E-mail Notificatie Logs:**
 
     Een nieuwe logging functie is beschikbaar voor alle e-mail notificaties. Gebruikers kunnen nu een geschiedenis van verzonden notificaties bekijken, wat het gemakkelijker maakt om afleveringen te verifiëren en problemen op te lossen als e-mails niet worden ontvangen.
@@ -283,7 +325,7 @@
 
     Duplicaat detectie is geüpgraded met twee krachtige configuratieopties. Het **Duplicaat Detectie Interval** stelt u in staat een tijdsbereik te definiëren om nauwkeuriger op duplicaten te controleren, terwijl de **Sta Export van Duplicaten Niet Toe** instelling automatisch voorkomt dat documenten die als duplicaat zijn gedetecteerd worden geëxporteerd. Samen bieden deze verbeteringen meer controle en zorgen voor hogere gegevensnauwkeurigheid.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(478\).png)
+    <figure><img src="../../.gitbook/assets/image (478).png" alt=""><figcaption></figcaption></figure>
 *   **Beslisboom Verbeteringen:**
 
     Beslisbomen zijn nu veelzijdiger, met de mogelijkheid om documentveldwaarden te retourneren. Dit maakt geavanceerdere automatiseringslogica mogelijk, waardoor workflows beslissingen kunnen nemen op basis van daadwerkelijke documentgegevens.
@@ -327,9 +369,9 @@
 *   **Meertalige Ondersteuning voor Lijsten van Waarden:**\
     We hebben de meertalige mogelijkheden uitgebreid naar de functie Lijsten van Waarden. Beheerders kunnen nu labels in meerdere talen definiëren, zodat het juiste label automatisch wordt weergegeven op basis van de systeemtaalinstellingen van de gebruiker. Deze verbetering bevordert grotere toegankelijkheid en lokalisatie, waardoor het voor gebruikers wereldwijd gemakkelijker wordt om met het platform in hun eigen taal te werken.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(1\)%20\(1\)%20\(1\).png)
+    <figure><img src="../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Verbeteringen voor Gebruikersdetails in Instellingen:**\
-  De instellingeninterface toont nu uitgebreide gebruikersinformatie. Beheerders kunnen eenvoudig groepsaffiliaties, suborganisatiedetails en aanvullende belangrijke gegevens bekijken, wat beter beheer van gebruikersrollen mogelijk maakt en een duidelijker begrip van teamstructuren biedt.
+  De instellingeninterface toont nu uitgebreide gebruikersinformatie. Beheerders kunnen eenvoudig groepsaffiliaties, suborganisatiedetails en aanvullende belangrijke gegevens bekijken, wat beter beheer van gebruikersrollen mogelijk maakt en een duidelijker begrip van teamstructuren biedt. Bovendien kunnen beheerders nu een Systeembeheerder (System Admin) voor de organisatie aanmaken.
 * **Auto Accounting Informatie op het Goedkeuringsscherm:**\
   Het goedkeuringsscherm presenteert nu automatische boekhouddetails naast factuurinformatie. Deze verbetering biedt dieper inzicht in transactiegegevens, wat soepelere beoordelingsprocessen en beter geïnformeerde besluitvorming over facturen mogelijk maakt.
 * **Taakteller voor Documenten op het Dashboardweergave:**\
@@ -344,17 +386,19 @@
 * **Implementatie van Microservices Architectuur:**\
   We hebben het platform geherstructureerd door kerncomponenten op te splitsen in specifieke microservices. Deze architectuurverschuiving verbetert schaalbaarheid, verbetert systeemprestaties en maakt snellere, meer modulaire ontwikkelings- en implementatiecycli mogelijk.
 *   **Walkthrough:**\
-    Een begeleide walkthrough is nu beschikbaar om gebruikers te helpen verschillende delen van de applicatie gemakkelijker te navigeren en begrijpen. Dit is vooral nuttig voor het inwerken van nieuwe gebruikers of het verkennen van onbekende functies.\\
+    Een begeleide walkthrough is nu beschikbaar om gebruikers te helpen verschillende delen van de applicatie gemakkelijker te navigeren en begrijpen. Dit is vooral nuttig voor het inwerken van nieuwe gebruikers of het verkennen van onbekende functies.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(431\).png)
+
+    <figure><img src="../../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
 * **Verbeteringen aan Beslisboom:**\
   Er zijn verbeteringen aangebracht aan de beslisboominterface, inclusief een intuïtievere functie voor het toevoegen van rijen — nu bovenaan de boom geplaatst — om onderhoud en bewerking te vereenvoudigen.
-* **DocOperator, DocNet en Extension Tools:**\
-  Nieuwe AI-aangedreven tools zoals DocOperator en DocNet helpen bij het automatiseren van repetitieve taken, wat de efficiëntie verbetert en handmatige inspanning bij documentworkflows vermindert.
+* **DocOperator**
+  Nieuwe AI-aangedreven tools zoals DocOperator helpen bij het automatiseren van repetitieve taken, wat de efficiëntie verbetert en handmatige inspanning bij documentworkflows vermindert.
 *   **Elektronische Document Voorbeeld Optie:**\
     Een voorbeeldfunctie is toegevoegd voor elektronische documenten (eDocs), waardoor gebruikers wijzigingen direct binnen de instellingen kunnen testen en bekijken voordat ze worden geïmplementeerd.\\
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(3\)%20\(1\)%20\(1\).png)
+
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Nieuwe Taalondersteuning – Chinees:**\
   DocBits ondersteunt nu Chinees, wat toegankelijkheid en lokalisatieopties voor gebruikers over wereldwijde markten uitbreidt.
 * **Verbeterd Taakdashboard:**\
@@ -375,21 +419,35 @@
 *   **Watchdog Verbeteringen:**\
     Watchdog-configuratie is verplaatst naar de hoofdapplicatie-UI, wat het gemakkelijker maakt om te beheren. Extra functionaliteiten zijn ook geïntroduceerd voor betere monitoring en controle.\\
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(4\)%20\(1\)%20\(1\).png)
+
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **Verbeteringen voor Regelafwijzing:**\
   Het afwijzen van een regelitem vereist nu dat gebruikers een reden opgeven, wat betere traceerbaarheid en verantwoordelijkheid in beoordelingsworkflows garandeert.
 * **Leverancier AI Model Lijst in Instellingen:**\
   Een nieuwe instellingenweergave toont de AI-modellen die zijn toegewezen aan specifieke leveranciers, samen met een optie om ze te resetten. Dit verbetert transparantie en beheerbaarheid van leverancier-gebaseerde AI-configuraties.
 *   **Verbeteringen aan Document Log:**\
-    De documentlogboeken bevatten nu meer gedetailleerde informatie om betere auditing en troubleshooting te ondersteunen.\\
+    De documentlogboeken bevatten nu meer gedetailleerde informatie om betere auditing en troubleshooting te ondersteunen.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/image%20\(5\)%20\(1\)%20\(1\).png)
+
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **PNG en JPG Ondersteuning:**\
   U kunt nu PNG- en JPG-bestanden uploaden, die automatisch worden geconverteerd naar PDF-formaat voor verwerking.
 * **IDM Export Documentformaat Configuratie:**\
   Het exportformaat voor PDF's in IDM kan nu worden geconfigureerd, wat gebruikers meer controle geeft over hoe documenten worden gegenereerd.
 * **Nieuw eDoc Type – EDIFACT INVOIC02:**\
   We ondersteunen nu het EDIFACT INVOIC02 elektronische documenttype, wat compatibiliteit met gestandaardiseerde factuurformaten uitbreidt.
+*   **E-mailnotificatie- en sjabloonopties**
+
+    DocBits biedt nu uitgebreidere controle over e-mailnotificaties, waaronder:
+
+    * **Getimede herverzending:** Notificatie-e-mails automatisch opnieuw verzenden na een gedefinieerde periode als er geen actie is ondernomen, zodat taken niet worden gemist.
+    * **Opnieuw verzenden bij hertoewijzing:** Notificaties kunnen ook worden geactiveerd wanneer taken opnieuw worden toegewezen, zodat gebruikers op de hoogte blijven van wijzigingen in verantwoordelijkheden.
+    * **Aangepaste e-mailsjablonen:** Beheerders kunnen nu e-mailsjablonen aanmaken en beheren om onderwerpregels, berichtinhoud en opmaak aan te passen. Dit maakt gepersonaliseerde, contextbewuste notificaties mogelijk die aansluiten bij de communicatiestijl van uw organisatie.
+
+    Deze toevoegingen verbeteren de communicatie-efficiëntie en verminderen vertragingen in documentverwerkingsworkflows.
+*   **PO-status op het dashboard**
+
+    Het dashboard bevat nu een optie om de **status van gekoppelde inkooporders (PO's)** direct in de documentoverzichten weer te geven. Deze verbetering geeft gebruikers in één oogopslag inzicht in de voortgang van de PO – zoals ontvangen of gefactureerd – waardoor sneller kan worden beslist en documenten en inkoopprocessen beter op elkaar zijn afgestemd.
 
 ### Bugfixes
 
@@ -408,6 +466,7 @@
 * De ClickHouse host-informatie bijgewerkt.
 * Een probleem opgelost waarbij dubbele documenten niet als duplicaten werden herkend.
 * Exportproblemen opgelost veroorzaakt door boekingsreferenties die te lang waren.
+* De voorspellingen voor auto accounting gecorrigeerd.
 * Een probleem opgelost waarbij alleen-lezen checkboxen niet alleen-lezen waren
 * Een probleem opgelost waarbij gebruikers twee keer aan een suborganisatie konden worden toegevoegd
 * Een probleem opgelost waarbij het wijzigen van de suborganisatie voor een document de toegewezen gebruiker of groep resettte
@@ -480,7 +539,7 @@ DocBits bevat nu volledige ondersteuning voor ZUGFeRD versies 2.1 en hoger, wat 
 * **Flexibiliteit**: Of u nu werkt met basis-, comfort- of uitgebreide profielen binnen de ZUGFeRD-standaard, DocBits biedt tools om elk niveau van factuurcomplexiteit te beheren.
 * **Toekomstbestendig**: Met ondersteuning voor nieuwere versies zorgt DocBits ervoor dat bedrijven voldoen aan evoluerende e-factureringsregels in EU-lidstaten en daarbuiten.
 
-Door ZUGFeRD 2.1 en nieuwere standaarden op te nemen, vereenvoudigt DocBits grensoverschrijdende transacties en sluit het aan bij moderne bedrijfsbehoeften, wat het een essentieel hulpmiddel maakt voor organisaties die prioriteit geven aan digitale transformatie en naleving van regelgeving. [Ontdek de ZUGFeRD-versies en hun DocBits-veldtoewijzingen](https://docs.docbits.com/dutch/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
+Door ZUGFeRD 2.1 en nieuwere standaarden op te nemen, vereenvoudigt DocBits grensoverschrijdende transacties en sluit het aan bij moderne bedrijfsbehoeften, wat het een essentieel hulpmiddel maakt voor organisaties die prioriteit geven aan digitale transformatie en naleving van regelgeving. [Leer meer](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/edi/zugferd)
 
 ### Externe API Integratie voor Verbeterde Documentverwerking
 
@@ -490,13 +549,13 @@ DocBits introduceert een geavanceerde mogelijkheid om externe API's te gebruiken
 
 Voor organisaties met meerdere suborganisaties ingeschakeld, introduceert DocBits nu de Cross Sub-Organisaties functie. Deze verbetering stelt administratieve gebruikers in staat hun documentbeheer te stroomlijnen over alle suborganisaties onder één paraplu. Admin-gebruikers hebben nu toegang tot en kunnen alle documenten van elke suborganisatie bekijken zonder van suborganisatie te hoeven wisselen. Deze gecentraliseerde zichtbaarheid stelt admins in staat om alle documenten voor alle suborganisaties te zien, waardoor het gemakkelijk wordt om specifieke bestanden te vinden terwijl ze toch een vogelvluchtperspectief behouden. [Leer meer](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/sub-organizations#cross-sub-organisations-access)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/CrossSubOrganisations.png)
+<figure><img src="../../.gitbook/assets/CrossSubOrganisations.png" alt=""><figcaption></figcaption></figure>
 
 ### Documentzichtbaarheid op Basis van Groepsrechten
 
 DocBits introduceert verbeterde documentzichtbaarheidscontroles, die preciezer toegangsbeheer mogelijk maken voor niet-admin gebruikers via groep-gebaseerde rechten. Deze functie stelt beheerders in staat te definiëren welke documenten zichtbaar zijn voor specifieke gebruikers of groepen, wat gestroomlijnde workflows en verbeterde gegevensbeveiliging garandeert. Admin-gebruikers kunnen documenten toewijzen aan specifieke groepen, waarbij zichtbaarheid alleen wordt verleend aan gebruikers binnen die groepen. Dit zorgt ervoor dat gebruikers alleen de documenten zien die relevant zijn voor hun rol of team, wat rommel vermindert en focus verbetert. [Leer meer](https://docs.docbits.com/administration-and-setup/settings/global-settings/groups-users-and-permissions/groups-and-permissions)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Group%20Based%20Permission.png)
+<figure><img src="../../.gitbook/assets/Group Based Permission.png" alt=""><figcaption></figcaption></figure>
 
 ### Sequentiële Workflow en Goedkeuringsgeschiedenis
 
@@ -514,17 +573,17 @@ DocBits introduceert een krachtige Sequentiële Workflow en Goedkeuringsgeschied
   * Opmerkingen of notities toegevoegd door gebruikers tijdens beoordeling
 * De geschiedenis zorgt voor transparantie en biedt een auditspoor voor naleving en troubleshooting. [Leer meer](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/approval-history)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Approval%20History.png)
+<figure><img src="../../.gitbook/assets/Approval History.png" alt=""><figcaption></figcaption></figure>
 
 ### SFTP/FTP Documenten Archief Verbetering
 
 De SFTP/FTP Documenten Archief verbetering in DocBits bouwt voort op de bestaande importfunctionaliteit en introduceert een naadloze methode voor het archiveren van bestanden nadat ze zijn verwerkt. Een nieuwe instelling in de FTP-importconfiguratie stelt gebruikers in staat bestandsarchivering in of uit te schakelen. Zodra bestanden succesvol zijn ingested en verwerkt in DocBits, worden ze automatisch gearchiveerd naar een aangewezen map op de SFTP/FTP-server als de optie is ingeschakeld. Dit zorgt ervoor dat verwerkte bestanden worden bewaard voor administratie zonder de actieve importmappen te vervuilen. [Leer meer](https://docs.docbits.com/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp)
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/SFTPArchieve.png)
+<figure><img src="../../.gitbook/assets/SFTPArchieve.png" alt=""><figcaption></figcaption></figure>
 
 ### Meerdere BTW Secties voor BTW Type en Export naar LN
 
-Deze functie verbetert mogelijkheden voor BTW-verwerking door gedetailleerde classificatie en export van BTW-informatie naar Infor LN mogelijk te maken (Volledige BTW, Verlaagde BTW, BTW Vrij). Dit maakt betere afstemming met complexe BTW-structuren mogelijk en zorgt voor naadloze integratie met boekhoudsystemen.
+Deze functie verbetert mogelijkheden voor BTW-verwerking door gedetailleerde classificatie en export van BTW-informatie naar Infor ERP / SAP mogelijk te maken (Volledige BTW, Verlaagde BTW, BTW Vrij). Dit maakt betere afstemming met complexe BTW-structuren mogelijk en zorgt voor naadloze integratie met boekhoudsystemen.
 
 **Meerdere BTW Secties per Type**:
 
@@ -539,14 +598,14 @@ Deze functie verbetert mogelijkheden voor BTW-verwerking door gedetailleerde cla
 * Op basis van de gegevens die tijdens documentverwerking zijn geëxtraheerd, worden de relevante BTW-secties automatisch weergegeven op het Auto Accounting Scherm.
 * Dit zorgt ervoor dat gebruikers BTW-invoeren snel kunnen valideren en aanpassen zonder handmatige berekening of herinvoer, wat de workflow stroomlijnt.
 
-**Export naar Infor LN**:
+**Export naar Infor ERP / SAP**:
 
-* De BTW-gegevens, inclusief alle relevante secties en classificaties, worden naadloos geëxporteerd naar Infor LN, wat consistentie garandeert tussen documentverwerking in DocBits en het ERP-systeem (Enterprise Resource Planning).
-* Geëxporteerde gegevens zijn gekoppeld aan de respectievelijke kostenregels in Infor LN, wat duidelijke traceerbaarheid en nauwkeurige financiële rapportage handhaaft.
+* De BTW-gegevens, inclusief alle relevante secties en classificaties, worden naadloos geëxporteerd naar Infor ERP / SAP, wat consistentie garandeert tussen documentverwerking in DocBits en het ERP-systeem (Enterprise Resource Planning).
+* Geëxporteerde gegevens zijn gekoppeld aan de respectievelijke kostenregels in Infor ERP / SAP, wat duidelijke traceerbaarheid en nauwkeurige financiële rapportage handhaaft.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/MultipleTaxLInes.png)
+<figure><img src="../../.gitbook/assets/MultipleTaxLInes.png" alt=""><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/MultipleTaxLineAuto%20Accounting.png)
+<figure><img src="../../.gitbook/assets/MultipleTaxLineAuto Accounting.png" alt=""><figcaption></figcaption></figure>
 
 ### Dashboard Verbeteringen
 
@@ -634,13 +693,13 @@ We hebben geavanceerde caching-strategieën over de applicatie geïmplementeerd 
 
 Geconfigureerde IMAP e-mailinstellingen om automatisch notificaties te verzenden voor importresultaten. Succesvolle importnotificaties bevestigen de verwerkte bestanden, terwijl foutmeldingen de bestandsnamen en specifieke foutdetails bevatten voor snelle troubleshooting.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/EmailImport.png)
+<figure><img src="../../.gitbook/assets/EmailImport.png" alt=""><figcaption><p>Email Import Configurations</p></figcaption></figure>
 
 #### Master Data Lookup Vernieuwing
 
 De master data lookup-instellingen zijn vernieuwd met verfijnde categorisatie, wat snellere en preciezere opvraging van diverse master data-types mogelijk maakt. Deze verbetering stroomlijnt gegevenstoegang door master data in verschillende categorieën te organiseren, wat zoekefficiëntie en nauwkeurigheid aanzienlijk verhoogt. Gebruikers kunnen nu sneller de relevante gegevens vinden, wat productiviteit en besluitvorming over de applicatie verbetert.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/MasterDataLookup.png)
+<figure><img src="../../.gitbook/assets/MasterDataLookup.png" alt=""><figcaption><p>Master Data</p></figcaption></figure>
 
 #### Prestatieverbeteringen
 
@@ -709,7 +768,7 @@ DocBits biedt nu de mogelijkheid om de OCR (Optical Character Recognition) versi
 
 [rule-manager](../../administration-and-setup/settings/document-processing/rule-manager/ "mention") biedt de flexibiliteit om conflictoplossingsregels te creëren en bewerken die zijn afgestemd op het DocBits factureringssysteem. Deze regels zijn ontworpen om automatisch discrepanties tussen factuurdetails en inkoopordergegevens (PO) af te handelen, wat nauwkeurige financiële reconciliatie garandeert. Het systeem past deze regels toe om factuurregels, kosten en belastingen te verwerken, en genereert waar nodig passende aanpassingen of notities.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/RuleManager.png)
+<figure><img src="../../.gitbook/assets/RuleManager.png" alt=""><figcaption><p>Rule Manager</p></figcaption></figure>
 
 ### Gegevens Synchroniseren met Stream
 
@@ -719,7 +778,7 @@ BOD-synchronisatie van Infor maakt gebruik van AWS Stream voor real-time gegeven
 
 DocBits verwerkt nu XRechnung (elektronische facturen) naadloos door eerst een gebruiksvriendelijke PDF te creëren, wat de factuurverwerkingsworkflow stroomlijnt en vereenvoudigt.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/XRECHNUNG.png)
+<figure><img src="../../.gitbook/assets/XRECHNUNG.png" alt=""><figcaption></figcaption></figure>
 
 ### Bugfixes:
 
@@ -879,9 +938,7 @@ DocBits verwerkt nu XRechnung (elektronische facturen) naadloos door eerst een g
 
 Het bestaande systeem mist geautomatiseerde regels voor het nauwkeurig matchen en verwerken van factuurkosten tegen inkooporders (PO's). Dit handmatige proces kan tot discrepanties leiden, zoals geïllustreerd in de screenshots, waar factuurkosten en PO's reconciliatie nodig hebben voor correcte facturering.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Bildschirmfoto%202024-06-07%20um%2017.11.37.png)
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Bildschirmfoto%202024-06-07%20um%2017.11.46.png)
+<div><figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.37.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-06-07 um 17.11.46.png" alt=""><figcaption><p>Rule Manager DocBits</p></figcaption></figure></div>
 
 ### Oplossing:
 
@@ -907,20 +964,19 @@ Deze update brengt spannende nieuwe functies en bugfixes naar Junebug:
 
 * **Geautomatiseerde Kosten Extractie:** Junebug extraheert en brengt nu automatisch kosten in kaart binnen uw Docbit-documenten. Dit elimineert handmatige gegevensinvoer en stroomlijnt uw workflow.
 * **Portal Export naar Infor IDM:** De nieuwe Portal stelt u in staat om leveranciersdocumenten moeiteloos direct naar Infor IDM te exporteren. Dit vereenvoudigt zendingsverwerking en vermindert handmatige interventie.
-*   **Oorsprong Identificatie (AI):** Junebug introduceert een krachtige AI-functie die automatisch de oorsprong van documenten leert. Dit bespaart u tijd en moeite bij documentclassificatie.
+* **Oorsprong Identificatie (AI):** Junebug introduceert een krachtige AI-functie die automatisch de oorsprong van documenten leert. Dit bespaart u tijd en moeite bij documentclassificatie.
+*
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/POShipmentTable.png)
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ApprovalScreen2.png)
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/ApprovalScreen1.png)
+```
+<div><figure><img src="../../.gitbook/assets/POShipmentTable.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/ApprovalScreen1.png" alt=""><figcaption></figcaption></figure></div>
+```
 
 **Bugfixes:**
 
 * **QR Code Fix:** Een probleem dat eerder problemen veroorzaakte met QR-codeverwerking is opgelost.
 * **Niet-EDI Document Afhandeling:** Junebug verwerkt niet-EDI documenten nu effectiever.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/EDI810-Invoice.png)
+<figure><img src="../../.gitbook/assets/EDI810-Invoice.png" alt=""><figcaption></figcaption></figure>
 
 Hotfix - 5 Juni [**Priority System**](../../end-user-and-partner-section/end-user-section/our-document-priority-system.md)
 
@@ -928,7 +984,7 @@ Hotfix - 5 Juni [**Priority System**](../../end-user-and-partner-section/end-use
 
 Sandbox Freeze - 3 juni 2024
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/Bildschirmfoto%202024-05-08%20um%2020.37.35.png)
+<figure><img src="../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 20.37.35.png" alt=""><figcaption></figcaption></figure>
 
 In de komende release zal een belangrijke verbetering aan de classificatie- en extractiemogelijkheden worden geïntroduceerd, specifiek gericht op tabelregels binnen documenten. Deze nieuwe functie stelt gebruikers in staat om te definiëren of een regel in een tabel een kost vertegenwoordigt. Deze functionaliteit is bijzonder nuttig in gedetailleerde financiële documenten, zoals facturen, waar het onderscheid maken tussen verschillende soorten transacties—zoals kosten, belastingen of vergoedingen—cruciaal is voor nauwkeurige verwerking en administratie.
 

@@ -10,6 +10,7 @@ Deze functie helpt je bij het beheren en reconciliëren van artikelnummers tusse
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
+
 1. **Handmatige Matching:**
    * De eerste keer dat je een discrepantie tegenkomt tussen jouw artikelnummer en het artikelnummer van je leverancier, moet je ze handmatig matchen.
    * Dit kun je doen door het juiste leverancier artikelnummer in te voeren dat overeenkomt met jouw interne artikelnummer.
@@ -25,7 +26,7 @@ Deze functie helpt je bij het beheren en reconciliëren van artikelnummers tusse
 * **Actie:** Opties om de mappings te beheren, zoals het verwijderen van onjuiste mappings.
 
 {% hint style="info" %}
-Zie hier ook de [Beheer Sectie](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/end-user-and-partner-section/end-user-section/purchase-order-matching/broken-reference/README.md)
+Zie hier ook de [Beheer Sectie](broken-reference)
 {% endhint %}
 
 ### **Voordelen**

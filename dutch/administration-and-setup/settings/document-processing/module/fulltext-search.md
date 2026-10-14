@@ -127,4 +127,4 @@ De prijsstelling van de module voor volledige tekstzoekopdrachten loopt via uw D
 
 * [Instellingen volledige tekstzoekopdracht](../../log-settings/fulltext-search-settings.md) — indexbeheer en schakelaar voor de vectorindex.
 * [Fulltext- en Vector Search-functies](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — scripting-API voor `fulltext_search()` en `vector_search()`.
-* [Overzicht modules](./) — volledige lijst met optionele DocBits-modules.
+* [Overzicht modules](README.md) — volledige lijst met optionele DocBits-modules.

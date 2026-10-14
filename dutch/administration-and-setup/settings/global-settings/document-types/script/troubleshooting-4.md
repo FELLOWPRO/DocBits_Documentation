@@ -8,9 +8,9 @@
 
 * Use debuggers or logging frameworks to trace the flow of your script and identify potential sources of errors.
 
-**Step-by-step execution:**&#x20;
+**Step-by-step execution:**
 
-* Run your script step-by-step and check after each step that the expected behavior occurs.&#x20;
+* Run your script step-by-step and check after each step that the expected behavior occurs.
 * This can help you pinpoint the exact time and cause of an error.
 
 **Print intermediate results:**
@@ -43,24 +43,19 @@ Make sure that external resources or libraries are installed and configured corr
 
 **Consider scaling:**
 
-* Think about the scaling of your scripts and how they behave as the load increases.&#x20;
+* Think about the scaling of your scripts and how they behave as the load increases.
 * Test your script under different load conditions to make sure it works efficiently even under heavy use.
 
 ### Documentation and knowledge sharing:
 
 **Document your troubleshooting steps:**
 
-* Keep track of the steps you took to diagnose and resolve issues.&#x20;
+* Keep track of the steps you took to diagnose and resolve issues.
 * This can help you identify and resolve similar issues more quickly in the future.
 
 **Seek resources and expertise:**
 
-* Use online resources, forums, or the documentation of the scripting language you are using to get help with troubleshooting.&#x20;
+* Use online resources, forums, or the documentation of the scripting language you are using to get help with troubleshooting.
 * Sharing experiences with other developers can also be helpful.
 
-
-
 Applying these tips will help you more effectively diagnose and resolve common scripting issues in DocBits and optimize the performance of your scripts.
-
-
-

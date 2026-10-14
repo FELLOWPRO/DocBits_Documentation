@@ -14,4 +14,4 @@ Als het totaalbedrag **1500** is, worden de volgende regels geëvalueerd:
 * **Regel 4**: Total Amount <= 4000 (komt overeen)
 * **Regel 5**: Total Amount <= 5000 (komt overeen)
 
-Aangezien de prioriteit wordt toegepast in de volgorde **5, 4, 3, 2, 1**, is de overeenkomende regel met de hoogste prioriteit **Regel 5** (**GROUP\_5**). De beslissingsboom retourneert **GROUP\_5** omdat **Regel 5** de hoogste prioriteit heeft (prioriteit 1).
+Aangezien de prioriteit wordt toegepast in de volgorde **5, 4, 3, 2, 1**, is de overeenkomende regel met de hoogste prioriteit **Regel 5** (**GROUP_5**). De beslissingsboom retourneert **GROUP_5** omdat **Regel 5** de hoogste prioriteit heeft (prioriteit 1).

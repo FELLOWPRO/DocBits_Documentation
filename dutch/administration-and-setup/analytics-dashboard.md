@@ -32,11 +32,11 @@ Het Analyse-dashboard wordt aangestuurd door een module-instelling. Zodra deze i
 
 Kies de juiste invalshoek voor uw analyse. Elk flow-type geeft u een ander perspectief op dezelfde gegevens.
 
-| Flow-type                | Doel                                                      | Kernvraag                                                            |
-| ------------------------ | --------------------------------------------------------- | -------------------------------------------------------------------- |
-| **Status**               | Volg de levenscyclus van documenten van import tot export | _"Wat is de totale tijd van mijn documenten van import tot export?"_ |
-| **Verwerking**           | Technische analyse van moduleprestaties                   | _"Welke verwerkingsstappen vormen knelpunten?"_                      |
-| **Gebruikersinteractie** | Menselijke contactpunten en wachttijden                   | _"Hoe lang wachten documenten op gebruikers?"_                       |
+| Flow-type | Doel | Kernvraag |
+| --- | --- | --- |
+| **Status** | Volg de levenscyclus van documenten van import tot export | *"Wat is de totale tijd van mijn documenten van import tot export?"* |
+| **Verwerking** | Technische analyse van moduleprestaties | *"Welke verwerkingsstappen vormen knelpunten?"* |
+| **Gebruikersinteractie** | Menselijke contactpunten en wachttijden | *"Hoe lang wachten documenten op gebruikers?"* |
 
 Gebruik de **Flow-type**-schakelaar boven aan het dashboard om tussen perspectieven te wisselen.
 
@@ -105,7 +105,7 @@ Analyseer elke periode van **7 dagen** tot een **volledig jaar**, of stel een **
 
 ## Flow-stappen-kaarten
 
-Elke kaart vertegenwoordigt een flow-stap op basis van het geselecteerde **Flow-type**. De kaarten passen zich aan uw selectie aan — met levenscyclusfasen voor _Status_, verwerkingsmodules voor _Verwerking_ of gebruikerscontactpunten voor _Gebruikersinteractie_.
+Elke kaart vertegenwoordigt een flow-stap op basis van het geselecteerde **Flow-type**. De kaarten passen zich aan uw selectie aan — met levenscyclusfasen voor *Status*, verwerkingsmodules voor *Verwerking* of gebruikerscontactpunten voor *Gebruikersinteractie*.
 
 Elke kaart toont:
 

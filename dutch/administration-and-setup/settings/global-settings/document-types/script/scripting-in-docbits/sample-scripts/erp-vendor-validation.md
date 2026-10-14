@@ -65,7 +65,7 @@ if vendor_nr:
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Veldwaarde lezen
-* [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext_search_erp) — ERP-stamgegevens doorzoeken
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Validatiefout weergeven
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Veldwaarde schrijven
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Veldwaarde lezen
+- [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext\_search\_erp) — ERP-stamgegevens doorzoeken
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Validatiefout weergeven
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Veldwaarde schrijven

@@ -30,3 +30,4 @@ Documenten samenvoegen is een belangrijke functie in een documentbeheersysteem w
 * **Een jaarverslag maken:** Meerdere afdelingen in een bedrijf werken samen om een uitgebreid jaarverslag te maken. Elke afdeling bereidt zijn eigen sectie van het verslag voor als een apart document. Deze documenten worden vervolgens samengebracht om het definitieve jaarverslag te maken.
 
 Door documenten samen te voegen, kunnen organisaties hun documentbeheerprocessen stroomlijnen, samenwerking verbeteren en efficiëntie verhogen.
+

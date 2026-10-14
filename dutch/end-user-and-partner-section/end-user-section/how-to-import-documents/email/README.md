@@ -11,7 +11,7 @@ DocBits kan op twee manieren documenten uit e-mail importeren. Beide worden geco
 
 Koppel een e-mailaccount en DocBits importeert documenten automatisch zodra er nieuwe e-mails binnenkomen. Open op de Import-pagina de sectie **E-mailimport** en klik op **+ Nieuw**.
 
-<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="Sectie E-mailimport"><figcaption><p>E-mailimport — koppel een mailbox voor automatische documentimport</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="Sectie E-mailimport"><figcaption>E-mailimport — koppel een mailbox voor automatische documentimport</figcaption></figure>
 
 Kies vervolgens het protocol van uw mailbox:
 
@@ -22,7 +22,7 @@ Kies vervolgens het protocol van uw mailbox:
 
 Stuur — of verzend rechtstreeks — e-mails naar het unieke inkomende adres van uw organisatie en DocBits importeert de bijlagen automatisch. Een mailboxkoppeling is niet nodig. Open de sectie **Inkomende e-mails** op de Import-pagina.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="Sectie Inkomende e-mails"><figcaption><p>Inkomende e-mails — stuur documenten door naar uw DocBits-adres</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="Sectie Inkomende e-mails"><figcaption>Inkomende e-mails — stuur documenten door naar uw DocBits-adres</figcaption></figure>
 
 * **Info / E-mail** — het unieke inkomende adres van uw organisatie (formaat `<org-id>@inbound.docbits.com`). Stuur uw documenten naar dit adres door; gebruik het kopieerpictogram om het te kopiëren.
 * **Documenten alleen importeren vanaf vooraf gedefinieerde e-mail(s)** — indien ingeschakeld worden alleen e-mails geïmporteerd van afzenders die u aan de witte lijst toevoegt; e-mails van andere afzenders worden genegeerd.
@@ -34,11 +34,11 @@ Stuur — of verzend rechtstreeks — e-mails naar het unieke inkomende adres va
 
 Beide e-mailimportmethoden accepteren deze documentbijlagen:
 
-| Formaat              | Bestandsextensies        | Typisch gebruik                                    |
-| -------------------- | ------------------------ | -------------------------------------------------- |
-| PDF                  | `.pdf`                   | Facturen en andere PDF-documenten                  |
-| TIFF                 | `.tif`, `.tiff`          | Gescande documenten                                |
-| XML                  | `.xml`                   | Gestructureerde elektronische documenten           |
+| Formaat | Bestandsextensies | Typisch gebruik |
+| --- | --- | --- |
+| PDF | `.pdf` | Facturen en andere PDF-documenten |
+| TIFF | `.tif`, `.tiff` | Gescande documenten |
+| XML | `.xml` | Gestructureerde elektronische documenten |
 | EDI / bestelgegevens | `.edi`, `.purchaseorder` | Elektronische gegevensuitwisseling en inkooporders |
 
 Als een doorstuurdienst een PDF-, TIFF- of XML-bestand als generieke bijlage aanduidt, kan DocBits het herkennen aan de bestandsinhoud of een bekende bestandsextensie. Doorgestuurde `.eml`-berichten kunnen ook ondersteunde documenten bevatten; DocBits haalt die bijlagen in het bericht vóór de import naar buiten.

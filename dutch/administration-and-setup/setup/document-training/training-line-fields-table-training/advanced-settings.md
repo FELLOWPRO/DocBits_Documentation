@@ -58,7 +58,7 @@ Begin met het instellen van **Aantal koptekstrijen** en de **Minimum gegroepeerd
 
 Schakel ook **Verplaats extra rijen naar prullenbak** in om irrelevante gegevens op te ruimen:
 
-<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_supplier (1).png" alt="DocBits Aankoop Bestelling Leverancier" width="522"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_purchase_order_supplier.png" alt="DocBits Aankoop Bestelling Leverancier" width="522"><figcaption></figcaption></figure>
 
 Definieer vervolgens de groeperingssleutelkolom, bijv. _Positie_:
 

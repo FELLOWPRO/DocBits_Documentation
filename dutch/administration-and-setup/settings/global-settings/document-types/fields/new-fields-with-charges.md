@@ -1,6 +1,7 @@
 # New Fields with Charges
 
-\\
+\
+
 
 ## Step 1: Access the Field Settings
 
@@ -13,6 +14,8 @@
 2\. Select Document Type:
 
 • Under the “DOCUMENT TYPES” section, select the specific document type you wish to add or modify a field for.
+
+
 
 <div><figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_1.png" alt="Docbits Add Field With Charges 1"><figcaption></figcaption></figure> <figure><img src="../../../../../.gitbook/assets/docbits_add_field_with_charges_2.png" alt="Docbits Add Field With Charges 2"><figcaption></figcaption></figure></div>
 
@@ -44,7 +47,8 @@
 
 • Select the appropriate charge type from the list (e.g., ADD ON - ORIGIN, FUEL SURCHARGE, TOTAL FREIGHT).
 
-\\
+\
+
 
 ## Step 3: Save the New Field
 
@@ -64,7 +68,8 @@
 
 • Once all desired fields are added and configured, click the “Save Settings” button at the bottom of the Field Settings page to apply your changes.
 
-\\
+\
+
 
 ## Additional Notes
 

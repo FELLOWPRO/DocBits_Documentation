@@ -13,7 +13,7 @@ Here is advice for troubleshooting common problems in a document processing syst
 ### OCR errors:
 
 * Check the quality of the scanned documents, including the readability of the text and any distortion or blurring.
-* Adjust the OCR settings, including the language, text recognition algorithm, and other parameters, to improve accuracy. Perform OCR preview or test runs to check the performance of the OCR system and identify potential sources of errors.&#x20;
+* Adjust the OCR settings, including the language, text recognition algorithm, and other parameters, to improve accuracy. Perform OCR preview or test runs to check the performance of the OCR system and identify potential sources of errors.
 * If OCR errors persist, you may want to consider implementing an advanced OCR system or looking into external OCR services.
 
 ### Validation rule issues:
@@ -23,9 +23,4 @@ Here is advice for troubleshooting common problems in a document processing syst
 * Run tests to make sure validation rules work as expected and check that they respond appropriately to unexpected data or edge cases.
 * Provide users with guidance and error messages to alert them to any validation errors and help them enter the correct data.
 
-
-
 By systematically reviewing and troubleshooting these common issues, you can improve the performance and accuracy of your document processing system and ensure that it runs smoothly and efficiently.
-
-
-

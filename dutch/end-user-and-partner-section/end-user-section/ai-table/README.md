@@ -4,27 +4,27 @@ De AI Geëxtraheerde tabel is de regelitemtabel die DocBits met AI uitleest wann
 
 ## Wanneer u de AI-tabel krijgt
 
-* Een beheerder heeft **AI-tabel extractie** ingeschakeld (Instellingen → Documentverwerking → Classificatie en extractie). Als deze uitstaat, toont het tabelgebied _AI Table will display here. Enable in …_.
-* De leverancier heeft **geen opgeslagen regels**. Zodra iemand de tabel van de leverancier traint en op _Regels opslaan_ klikt, vervangen de opgeslagen regels de AI-tabel voor die leverancier; de rijen verschijnen dan in het tabblad _Geëxtraheerde tabel_ in plaats van in het tabblad _AI Geëxtraheerde tabel_.
-* Uitzondering: kolommen met de markering **AI gebruiken** in de tabelkolominstellingen worden door de AI gevuld, ook voor leveranciers met opgeslagen regels, zie [AI gebruiken per kolom](./#ai-gebruiken-per-kolom).
+* Een beheerder heeft **AI-tabel extractie** ingeschakeld (Instellingen → Documentverwerking → Classificatie en extractie). Als deze uitstaat, toont het tabelgebied *AI Table will display here. Enable in …*.
+* De leverancier heeft **geen opgeslagen regels**. Zodra iemand de tabel van de leverancier traint en op *Regels opslaan* klikt, vervangen de opgeslagen regels de AI-tabel voor die leverancier; de rijen verschijnen dan in het tabblad *Geëxtraheerde tabel* in plaats van in het tabblad *AI Geëxtraheerde tabel*.
+* Uitzondering: kolommen met de markering **AI gebruiken** in de tabelkolominstellingen worden door de AI gevuld, ook voor leveranciers met opgeslagen regels, zie [AI gebruiken per kolom](#ai-gebruiken-per-kolom).
 
-Welke AI-tier de tabel leest (Fast, Full, Nexus) wordt per organisatie ingesteld en kan per leverancier worden overschreven onder _Meer instellingen_ op het validatiescherm, zie [Leverancierspecifiek AI-model](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
+Welke AI-tier de tabel leest (Fast, Full, Nexus) wordt per organisatie ingesteld en kan per leverancier worden overschreven onder *Meer instellingen* op het validatiescherm, zie [Leverancierspecifiek AI-model](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## De AI-tabel opnieuw extraheren
 
 Gebruik dit wanneer rijen ontbreken of een kolom verschoven is en u de AI het opnieuw wilt laten proberen, bijvoorbeeld na het toevoegen van een [tag](ai-table-tags.md):
 
 1. Voeg [tags](ai-table-tags.md) toe of wijzig ze in het veld onder de tabel en klik op **Toepassen**. De AI bouwt de tabel voor dit document opnieuw op met uw tags en kolomwijzigingen; er wordt nog niets voor de leverancier opgeslagen. Als het document PO-gematchte regels heeft, waarschuwt DocBits dat de matches door het opnieuw opbouwen worden verwijderd.
-2. Tevreden met het resultaat? Klik op **Opslaan** (_Regels opslaan_), zodat het volgende document van deze leverancier op dezelfde manier wordt geëxtraheerd.
-3. Om opnieuw te beginnen, klikt u op **Verwijderen** (_Regels verwijderen_): DocBits bevestigt _Rules has been deleted successfully_ en voert de AI-extractie opnieuw uit zonder opgeslagen tags of opmaak.
+2. Tevreden met het resultaat? Klik op **Opslaan** (*Regels opslaan*), zodat het volgende document van deze leverancier op dezelfde manier wordt geëxtraheerd.
+3. Om opnieuw te beginnen, klikt u op **Verwijderen** (*Regels verwijderen*): DocBits bevestigt *Rules has been deleted successfully* en voert de AI-extractie opnieuw uit zonder opgeslagen tags of opmaak.
 
-_Regels verwijderen_ verwijdert de tags en opmaakregels die voor deze leverancier zijn opgeslagen, niet de tabelkolomconfiguratie. Om het hele document (koptekst en tabel) opnieuw te extraheren nadat een beheerder instellingen of kolommen heeft gewijzigd, gebruikt u in plaats daarvan _Opnieuw starten_ in het documentmenu op het dashboard.
+*Regels verwijderen* verwijdert de tags en opmaakregels die voor deze leverancier zijn opgeslagen, niet de tabelkolomconfiguratie. Om het hele document (koptekst en tabel) opnieuw te extraheren nadat een beheerder instellingen of kolommen heeft gewijzigd, gebruikt u in plaats daarvan *Opnieuw starten* in het documentmenu op het dashboard.
 
 ## AI gebruiken per kolom
 
-Elke tabelkolom heeft een vlag **AI gebruiken** (Instellingen → Globale instellingen → Documenttypen → [Tabelkolommen](../../../administration-and-setup/settings/global-settings/document-types/table-columns/)). Met de vlag ingeschakeld vult de AI die kolom, ook wanneer de leverancier opgeslagen regels heeft; de andere kolommen blijven uit de regels komen. Typisch gebruik: een vrije-tekstomschrijvingskolom die getrainde regels slecht vastleggen, of een waarde die op de pagina van plaats verandert.
+Elke tabelkolom heeft een vlag **AI gebruiken** (Instellingen → Globale instellingen → Documenttypen → [Tabelkolommen](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md)). Met de vlag ingeschakeld vult de AI die kolom, ook wanneer de leverancier opgeslagen regels heeft; de andere kolommen blijven uit de regels komen. Typisch gebruik: een vrije-tekstomschrijvingskolom die getrainde regels slecht vastleggen, of een waarde die op de pagina van plaats verandert.
 
-Houd er rekening mee dat de AI die kolom dan uit de hele rij afleidt. Als de AI er consequent de verkeerde waarde in zet (bijvoorbeeld het regeltotaal in _Kosten_), mislukt de regeltotaalcontrole op elke rij. Schakel in dat geval _AI gebruiken_ voor die kolom uit, of voeg een tag toe die de AI vertelt wat de kolom is.
+Houd er rekening mee dat de AI die kolom dan uit de hele rij afleidt. Als de AI er consequent de verkeerde waarde in zet (bijvoorbeeld het regeltotaal in *Kosten*), mislukt de regeltotaalcontrole op elke rij. Schakel in dat geval *AI gebruiken* voor die kolom uit, of voeg een tag toe die de AI vertelt wat de kolom is.
 
 ## Gestructureerde extractie
 
@@ -50,6 +50,6 @@ Hier zijn de belangrijkste mogelijkheden en gebruiksinstructies:
 
 <figure><img src="../../../.gitbook/assets/ai-table4.png" alt=""><figcaption></figcaption></figure>
 
-* **Opslaan wat u hebt gewijzigd**: **Opslaan** naast de tags (tooltip _Regels opslaan_) slaat de huidige kolomkoppeling, verborgen kolommen en tags voor deze leverancier op. Het volgende document van de leverancier wordt daarmee geëxtraheerd.
+* **Opslaan wat u hebt gewijzigd**: **Opslaan** naast de tags (tooltip *Regels opslaan*) slaat de huidige kolomkoppeling, verborgen kolommen en tags voor deze leverancier op. Het volgende document van de leverancier wordt daarmee geëxtraheerd.
 
-Deze functies geven u controle over de geëxtraheerde gegevens. Wanneer dezelfde leverancier elke keer dezelfde correcties nodig heeft, train de tabel dan eenmalig, zie [Training Line Fields / Tabeltraining](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/); de AI-tabel wordt dan voor die leverancier niet meer gebruikt.
+Deze functies geven u controle over de geëxtraheerde gegevens. Wanneer dezelfde leverancier elke keer dezelfde correcties nodig heeft, train de tabel dan eenmalig, zie [Training Line Fields / Tabeltraining](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md); de AI-tabel wordt dan voor die leverancier niet meer gebruikt.

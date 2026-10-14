@@ -46,27 +46,37 @@ Zie hier toevoegen [Script in DocBits](../../../administration-and-setup/setting
 
 <figure><img src="../../../.gitbook/assets/docbits_mandatory_fields.png" alt="Docbits Mandatory Fields"><figcaption></figcaption></figure>
 
-Velden die aandacht nodig hebben, tonen een gekleurd kader of een informatiepictogram. In het onderstaande voorbeeld heeft het veld **Factuurnummer** een rood kader en een waarschuwingspictogram. De waarde is zichtbaar op de factuur rechts, maar DocBits heeft deze niet uit het document geëxtraheerd. Selecteer het nummer op het document of corrigeer het veld en sla het document vervolgens op.
+Er zijn velden die vereist zijn voor verdere bewerking, deze kunnen in de instellingen worden bewerkt.
 
-Beweeg de muis over het informatiepictogram naast een veld of selecteer het om de specifieke reden te lezen. Afhankelijk van het veld kan de melding een ontbrekende extractie, een verplichte waarde, lage betrouwbaarheid of een validatieafwijking aangeven. Als de waarschuwing de totalen betreft, vergelijk dan de bedragvelden met de factuur en gebruik [Automatische controles op het validatiescherm](automatic-checks-on-the-validation-screen.md) voor de betreffende controle.
+Gebruik de tooltips om te achterhalen of:
 
-<figure><img src="../../../.gitbook/assets/validation-required-field-nl-20261011.png" alt="Nederlands DocBits-validatiescherm met een rode waarschuwing bij het factuurnummer en het bijbehorende nummer zichtbaar op een synthetische factuur"><figcaption><p>Een veld dat aandacht nodig heeft, naast de factuur waarmee de waarde wordt gecontroleerd.</p></figcaption></figure>
+* Is het een verplicht veld (vereist)
+* Validatie vereist
+* Lage betrouwbaarheid
+* Volledig belastingbedrag mismatch
+
+**Verplichte velden:**
+
+* **Doel:** Identificeert verplichte velden binnen documenten die moeten worden ingevuld of gecorrigeerd voordat verdere verwerking plaatsvindt.
+* **Gebruiksscenario:** Zorgt ervoor dat essentiële gegevens nauwkeurig worden vastgelegd, waardoor de integriteit van de gegevens en de naleving van bedrijfsregels behouden blijven.
+
+<figure><img src="https://lh7-us.googleusercontent.com/3-ZXi-fUcWlM0nUaOAQbY7bynchbIN30JReKRdijyMFvX_GIHrnbcismANdOi6UfYa6GCPvk9wnOixya0E_rBk3V8hQduS-gBZJi4k0Kq8jeN93DxC2w5J-YRqeV9IkVB6oiH8tm0-y7gWJO_8fBplo" alt=""><figcaption></figcaption></figure>
 
 ## Geëxtraheerde tabel (regelitems)
 
 <figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Regelitemtabel op het validatiescherm met de tabelwerkbalk"><figcaption><p>De geëxtraheerde tabel onder de koptekstvelden</p></figcaption></figure>
 
-Onder de koptekstvelden toont DocBits de regelitemtabel van het document: één rij per factuurregel, één kolom per [tabelkolom](../../../administration-and-setup/settings/global-settings/document-types/table-columns/) die voor het documenttype is geconfigureerd. Wanneer een documenttype meerdere tabellen heeft (bijvoorbeeld artikelen en kosten), heeft elke tabel een eigen tabblad boven het raster.
+Onder de koptekstvelden toont DocBits de regelitemtabel van het document: één rij per factuurregel, één kolom per [tabelkolom](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md) die voor het documenttype is geconfigureerd. Wanneer een documenttype meerdere tabellen heeft (bijvoorbeeld artikelen en kosten), heeft elke tabel een eigen tabblad boven het raster.
 
 ### Waar de tabel vandaan komt
 
 Boven het raster staat één tabblad per extractiepad dat de organisatie heeft ingeschakeld:
 
-| Tabblad                    | Betekenis                                                                                                                                                                                                                                                                                                   |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Geëxtraheerde tabel**    | Regelgebaseerde extractie (instelling _Tabel extractie_). Voor een leverancier met een getrainde tabel komen deze rijen uit de opgeslagen regels en worden ze op elk document van die leverancier op dezelfde manier geëxtraheerd; voor een niet-getrainde leverancier kan het tabblad leeg zijn.           |
-| **AI Geëxtraheerde tabel** | De AI-tabelextractie (instelling _AI-tabel extractie_). Wordt gevuld wanneer de leverancier geen opgeslagen regels heeft, en voor kolommen met _AI gebruiken_ ook wanneer er regels bestaan. Een tooltip _AI table not found_ op het tabblad betekent dat de AI voor dit document niets heeft teruggegeven. |
-| **PO-tabellen**            | Alleen in de layout builder: de inkooporderregels die voor de matching worden gebruikt.                                                                                                                                                                                                                     |
+| Tabblad | Betekenis |
+|---|---|
+| **Geëxtraheerde tabel** | Regelgebaseerde extractie (instelling *Tabel extractie*). Voor een leverancier met een getrainde tabel komen deze rijen uit de opgeslagen regels en worden ze op elk document van die leverancier op dezelfde manier geëxtraheerd; voor een niet-getrainde leverancier kan het tabblad leeg zijn. |
+| **AI Geëxtraheerde tabel** | De AI-tabelextractie (instelling *AI-tabel extractie*). Wordt gevuld wanneer de leverancier geen opgeslagen regels heeft, en voor kolommen met *AI gebruiken* ook wanneer er regels bestaan. Een tooltip *AI table not found* op het tabblad betekent dat de AI voor dit document niets heeft teruggegeven. |
+| **PO-tabellen** | Alleen in de layout builder: de inkooporderregels die voor de matching worden gebruikt. |
 
 Als geen van beide tabbladen verschijnt, zijn beide tabelinstellingen voor de organisatie uitgeschakeld (Instellingen → Documentverwerking → Classificatie en extractie). Welke AI-tier de tabel leest, wordt per organisatie ingesteld en kan per leverancier worden overschreven, zie [Leverancierspecifiek AI-model](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
@@ -79,33 +89,33 @@ Als geen van beide tabbladen verschijnt, zijn beide tabelinstellingen voor de or
 * **Tabelkolom herstellen**: haalt een kolom terug die u voor dit document uit de weergave hebt verwijderd.
 * **Tabel verwijderen**: wist alle rijen van deze tabel op dit document. De configuratie blijft onaangeroerd.
 * **Nieuwe tabelkolom toevoegen** (beheerders): hetzelfde dialoogvenster als in de tabelkolominstellingen, zonder het document te verlaten.
-* **Tags** (alleen AI-tabel): korte tekstaanwijzingen voor de AI, bijvoorbeeld _"de laatste kolom is het nettobedrag"_. Zie [AI Tabel Tags](../ai-table/ai-table-tags.md).
-* **Toepassen** / **Opslaan** / **Verwijderen** naast de tags: _Toepassen_ voert de AI-tabel voor dit document opnieuw uit met de tags en kolomwijzigingen die u hebt gemaakt, zonder iets op te slaan (als het document PO-gematchte regels heeft, waarschuwt DocBits dat de matches worden verwijderd); _Regels opslaan_ slaat de huidige kolomkoppeling en tags voor deze leverancier op; _Regels verwijderen_ verwijdert ze en voert de AI-extractie voor dit document opnieuw uit.
+* **Tags** (alleen AI-tabel): korte tekstaanwijzingen voor de AI, bijvoorbeeld *"de laatste kolom is het nettobedrag"*. Zie [AI Tabel Tags](../ai-table/ai-table-tags.md).
+* **Toepassen** / **Opslaan** / **Verwijderen** naast de tags: *Toepassen* voert de AI-tabel voor dit document opnieuw uit met de tags en kolomwijzigingen die u hebt gemaakt, zonder iets op te slaan (als het document PO-gematchte regels heeft, waarschuwt DocBits dat de matches worden verwijderd); *Regels opslaan* slaat de huidige kolomkoppeling en tags voor deze leverancier op; *Regels verwijderen* verwijdert ze en voert de AI-extractie voor dit document opnieuw uit.
 * **Exporteren**: downloadt de tabel als CSV-bestand.
-* **Ga naar tabelextractieweergave**: opent de tabeltraining voor dit document. Gebruik dit wanneer dezelfde leverancier steeds verkeerd uitkomt: teken de tabel eenmalig, koppel de kolommen en klik op _Regels opslaan_; vanaf dan verschijnen de rijen in het tabblad _Geëxtraheerde tabel_. Zie [Training Line Fields / Tabeltraining](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/).
+* **Ga naar tabelextractieweergave**: opent de tabeltraining voor dit document. Gebruik dit wanneer dezelfde leverancier steeds verkeerd uitkomt: teken de tabel eenmalig, koppel de kolommen en klik op *Regels opslaan*; vanaf dan verschijnen de rijen in het tabblad *Geëxtraheerde tabel*. Zie [Training Line Fields / Tabeltraining](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
 
 {% hint style="info" %}
-Als de tabel door de AI is geëxtraheerd en u de tabeltraining opent, vraagt DocBits _Table is already extracted by AI. Do you want to train manually?_ Nadat u regels hebt opgeslagen, wordt de AI-tabel voor deze leverancier niet meer gebruikt.
+Als de tabel door de AI is geëxtraheerd en u de tabeltraining opent, vraagt DocBits *Table is already extracted by AI. Do you want to train manually?* Nadat u regels hebt opgeslagen, wordt de AI-tabel voor deze leverancier niet meer gebruikt.
 {% endhint %}
 
 ### De tabel opnieuw extraheren
 
-* **Hetzelfde document, AI-tabel:** voeg tags toe of wijzig ze en klik op **Toepassen**; de AI-tabel wordt alleen voor dit document opnieuw opgebouwd. Om ook de opgeslagen tags en opmaak van de leverancier te verwijderen, klikt u op **Verwijderen** (_Regels verwijderen_): DocBits bevestigt _Rules has been deleted successfully_ en voert de AI-extractie opnieuw uit.
-* **Hetzelfde document, getrainde regels:** open _Ga naar tabelextractieweergave_, corrigeer de tabel en klik op _Opslaan en opnieuw extraheren_.
-* **Het hele document opnieuw (koptekst en tabel):** Dashboard → documentmenu → _Opnieuw starten_. Nodig nadat een beheerder de tabelkolommen of de extractie-instellingen heeft gewijzigd.
+* **Hetzelfde document, AI-tabel:** voeg tags toe of wijzig ze en klik op **Toepassen**; de AI-tabel wordt alleen voor dit document opnieuw opgebouwd. Om ook de opgeslagen tags en opmaak van de leverancier te verwijderen, klikt u op **Verwijderen** (*Regels verwijderen*): DocBits bevestigt *Rules has been deleted successfully* en voert de AI-extractie opnieuw uit.
+* **Hetzelfde document, getrainde regels:** open *Ga naar tabelextractieweergave*, corrigeer de tabel en klik op *Opslaan en opnieuw extraheren*.
+* **Het hele document opnieuw (koptekst en tabel):** Dashboard → documentmenu → *Opnieuw starten*. Nodig nadat een beheerder de tabelkolommen of de extractie-instellingen heeft gewijzigd.
 
 ### Wat de goedkeuring blokkeert
 
 De tabel wordt gecontroleerd wanneer u opslaat of goedkeurt. Een rode cel of een melding onder de tabel betekent een van de volgende:
 
-| Melding                                                               | Oorzaak                                                                                                                                                     | Wat te doen                                                                                                                                                                                                                                                                                           |
-| --------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Verplichte kolom leeg                                                 | Een kolom met _Verplicht_ heeft in deze rij geen waarde.                                                                                                    | Vul de cel in, of vraag een beheerder of de kolom verplicht moet zijn.                                                                                                                                                                                                                                |
-| _Line total does not match quantity x unit price (expected …, got …)_ | `hoeveelheid × eenheidsprijs + kosten − korting` wijkt meer dan 0,02 af van het regeltotaal. Vaak is een van de vier waarden in de verkeerde kolom gelezen. | Corrigeer de waarde die niet klopt met het document; als een kolom zoals _Kosten_ steeds met de verkeerde waarde wordt gevuld, meld dit dan bij uw beheerder (zie [Probleemoplossing](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
-| _Line items add up to … but the net total is …_                       | De som van de regeltotalen wijkt af van het nettobedrag in de koptekst.                                                                                     | Controleer op een ontbrekende of dubbele rij, of een verkeerd gelezen kopbedrag.                                                                                                                                                                                                                      |
-| _Line Item Table is missing Mandatory column for PO_                  | PO-matching heeft artikelnummer, eenheidsprijs, hoeveelheid en totaalbedrag nodig; een daarvan is verborgen.                                                | Beheerder: maak de kolom weer zichtbaar onder Tabelkolommen.                                                                                                                                                                                                                                          |
+| Melding | Oorzaak | Wat te doen |
+|---|---|---|
+| Verplichte kolom leeg | Een kolom met *Verplicht* heeft in deze rij geen waarde. | Vul de cel in, of vraag een beheerder of de kolom verplicht moet zijn. |
+| *Line total does not match quantity x unit price (expected …, got …)* | `hoeveelheid × eenheidsprijs + kosten − korting` wijkt meer dan 0,02 af van het regeltotaal. Vaak is een van de vier waarden in de verkeerde kolom gelezen. | Corrigeer de waarde die niet klopt met het document; als een kolom zoals *Kosten* steeds met de verkeerde waarde wordt gevuld, meld dit dan bij uw beheerder (zie [Probleemoplossing](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
+| *Line items add up to … but the net total is …* | De som van de regeltotalen wijkt af van het nettobedrag in de koptekst. | Controleer op een ontbrekende of dubbele rij, of een verkeerd gelezen kopbedrag. |
+| *Line Item Table is missing Mandatory column for PO* | PO-matching heeft artikelnummer, eenheidsprijs, hoeveelheid en totaalbedrag nodig; een daarvan is verborgen. | Beheerder: maak de kolom weer zichtbaar onder Tabelkolommen. |
 
-Een beheerder kan alle tabelcontroles voor een documenttype uitschakelen met _Tabelvalidatie overslaan_ (Documenttypen → Meer instellingen); regelafwijkingen en lege verplichte kolommen worden dan niet meer gemeld.
+Een beheerder kan alle tabelcontroles voor een documenttype uitschakelen met *Tabelvalidatie overslaan* (Documenttypen → Meer instellingen); regelafwijkingen en lege verplichte kolommen worden dan niet meer gemeld.
 
 Meer over de controles: [Automatische controles op het validatiescherm](automatic-checks-on-the-validation-screen.md) en [Tabel Extractie Probleemoplossing](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
 

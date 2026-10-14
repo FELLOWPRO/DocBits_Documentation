@@ -1,10 +1,10 @@
 ---
 description: >-
-  Hoe u de API keys vindt en aanmaakt waarmee andere systemen toegang tot
-  DocBits krijgen
+  Hoe u de API keys vindt en aanmaakt waarmee andere systemen toegang tot DocBits
+  krijgen
 ---
 
-# API-sleutelbeheer
+# API Key Management
 
 Met een API key kan een ander systeem — uw ERP, een script of een partnerapplicatie — met DocBits praten zonder dat een gebruiker inlogt. Uw organisatie kan zoveel sleutels aanhouden als u nodig hebt, en elke sleutel wordt apart beheerd: geef die een eigen naam, bepaal of die verloopt, en trek die afzonderlijk in als die ooit wordt blootgesteld.
 
@@ -24,14 +24,14 @@ De sectie **API Key** bovenaan de pagina toont elke sleutel die uw organisatie h
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
 
-| Kolom         | Wat die u vertelt                                                                                                                                                                                          |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key**       | De eerste tekens van de sleutel, gevolgd door `****`. De rest wordt na het aanmaken nooit meer getoond — zie [Een API-sleutel aanmaken](api-key-management.md#een-api-sleutel-aanmaken).                   |
-| **Name**      | De naam die u de sleutel hebt gegeven, met de beschrijving eronder.                                                                                                                                        |
-| **Expires**   | De datum waarop de sleutel stopt met werken, of **Never** als u er geen hebt ingesteld.                                                                                                                    |
+| Kolom | Wat die u vertelt |
+| --- | --- |
+| **Key** | De eerste tekens van de sleutel, gevolgd door `****`. De rest wordt na het aanmaken nooit meer getoond — zie [Een API-sleutel aanmaken](#een-api-sleutel-aanmaken). |
+| **Name** | De naam die u de sleutel hebt gegeven, met de beschrijving eronder. |
+| **Expires** | De datum waarop de sleutel stopt met werken, of **Never** als u er geen hebt ingesteld. |
 | **Last Used** | Wanneer er voor het laatst een verzoek met deze sleutel binnenkwam. **Never used** betekent dat nog geen enkel systeem die heeft gebruikt — handig om sleutels op te sporen die u veilig kunt verwijderen. |
-| **Status**    | **Active** betekent dat de sleutel werkt. Een ingetrokken sleutel is permanent uitgeschakeld.                                                                                                              |
-| **Actions**   | Het menu met drie puntjes, waar u de sleutel kunt intrekken.                                                                                                                                               |
+| **Status** | **Active** betekent dat de sleutel werkt. Een ingetrokken sleutel is permanent uitgeschakeld. |
+| **Actions** | Het menu met drie puntjes, waar u de sleutel kunt intrekken. |
 
 Als u meer sleutels hebt dan er op één pagina passen, gebruik dan de paginabesturing onderaan de lijst.
 
@@ -46,11 +46,11 @@ Als u meer sleutels hebt dan er op één pagina passen, gebruik dan de paginabes
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-create-dialog.png)
 
-| Veld            | Wat in te vullen                                                                                                                                                            |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key Name**    | Verplicht. Noem die naar het systeem dat die gaat gebruiken — `M3 Production`, `Invoice Import Script` — zodat u later kunt zien bij welke integratie een sleutel hoort.    |
-| **Description** | Optioneel. Ruimte voor een notitie over waar de sleutel voor is of wie die heeft ingesteld.                                                                                 |
-| **Expiration**  | Kies een vervaldatum, of laat die op **Never expires** staan. Een vervaldatum is de veiligere keuze: de sleutel trekt zichzelf terug als de integratie ooit wordt vergeten. |
+| Veld | Wat in te vullen |
+| --- | --- |
+| **Key Name** | Verplicht. Noem die naar het systeem dat die gaat gebruiken — `M3 Production`, `Invoice Import Script` — zodat u later kunt zien bij welke integratie een sleutel hoort. |
+| **Description** | Optioneel. Ruimte voor een notitie over waar de sleutel voor is of wie die heeft ingesteld. |
+| **Expiration** | Kies een vervaldatum, of laat die op **Never expires** staan. Een vervaldatum is de veiligere keuze: de sleutel trekt zichzelf terug als de integratie ooit wordt vergeten. |
 
 3. Klik op **Create**. DocBits toont u de nieuwe sleutel:
 

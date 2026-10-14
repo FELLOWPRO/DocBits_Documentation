@@ -70,6 +70,4 @@ These tests ensure that our system can handle email importing correctly. This in
   * **Delete Imported Document:** Remove the document that was imported from the email.
   * **Delete the Email:** Delete the test email from the inbox and the target folder to keep everything clean.
 
-\
-
-
+\\

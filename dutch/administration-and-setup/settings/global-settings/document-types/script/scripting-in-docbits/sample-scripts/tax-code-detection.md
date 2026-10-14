@@ -52,6 +52,6 @@ elif net > 0:
 
 ## Gebruikte Functies
 
-* [get\_document\_content()](../functions/business-logic-functions.md#get_document_content) — OCR volledige tekst lezen
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Veldwaarden lezen
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Belastingcode instellen
+- [get\_document\_content()](../business-logic-functions.md#get\_document\_content) — OCR volledige tekst lezen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Veldwaarden lezen
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Belastingcode instellen

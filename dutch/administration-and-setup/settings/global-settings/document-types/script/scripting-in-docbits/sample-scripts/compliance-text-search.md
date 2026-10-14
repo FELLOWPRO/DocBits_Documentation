@@ -1,4 +1,4 @@
-# Compliance Tekstzoeken
+# Compliance Tekstzoeken (Reverse Charge)
 
 {% hint style="info" %}
 **Beschikbaar vanaf versie 11.48.0** — Vereist `OPENSEARCH_ENABLED` licentie.
@@ -50,5 +50,5 @@ if rc_fuzzy:
 
 ## Gebruikte Functies
 
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — OCR-tekst doorzoeken in alle documenten
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Veldwaarde schrijven
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — OCR-tekst doorzoeken in alle documenten
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Veldwaarde schrijven

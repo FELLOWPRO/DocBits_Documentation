@@ -1,76 +1,38 @@
-# Document Types
+# Documenttypen
 
-If a customer requires a new document type or additional fields to be added to an existing document type layout, this section will go through all the information required to do so.
+Documenttypen geven DocBits aan met welke soorten documenten uw organisatie werkt. Een beheerder vindt ze onder **Settings → Document Types** in het gedeelte **Document Processing** van het instellingenmenu.
 
-In DocBits you will find the SETTINGS menu in the upper bar on the DASHBOARD.
+De pagina toont eerst de **Default Document Types**, die DocBits levert en die u niet kunt verwijderen, gevolgd door de **Custom Document Types** die voor uw organisatie zijn gemaakt. Elk type heeft een eigen kaart.
 
-![](https://lh7-us.googleusercontent.com/ZIJTRkBGeJ29Iw8XSbZKJ3GQifWbtWFYPhSg7v4LjCKWJ-szz7R7nlcbiom5ZB25p201BCnqoaaCsKH3UKQfqaAQlpgf4MCe1joA8OLV8dZ6r6v4-skFkGlUw8U51jwPeGqi59GPQMgpMaLGZGwnCk4)
+<figure><img src="../../../.gitbook/assets/document-types-overview-en-20260928.png" alt="Pagina Document Types met kaarten voor Invoice en andere standaarddocumenttypen, schakelaars voor activering en extractie, instellingentandwiel en configuratielinks"><figcaption><p>Kies de kaart van een documenttype om dat type te configureren.</p></figcaption></figure>
 
-If you are logged in to DocBits as an admin, you will find all fields of a document that can be extracted under the respective document type.
+## Wat u op een kaart kunt doen
 
-Open the menu for Document Types.
+| Bedieningselement | Wat het doet |
+| --- | --- |
+| **Activate** | Maakt dit documenttype beschikbaar of niet beschikbaar in uw organisatie. Een blauwe schakelaar staat aan; een grijze schakelaar staat uit. |
+| **Extraction** | Kiest de extractiemodus: **Flex** wanneer aan of **Fix** wanneer uit. Het schakelt extractie niet simpelweg in of uit. Beweeg de muisaanwijzer over de schakelaar om de huidige modus te zien. |
+| **Settings** (tandwiel) | Opent **More Settings** voor dit type. Vouw daar een categorie uit om de opties te bekijken. De categorieën zijn afhankelijk van het documenttype. |
+| **Layouts** | Opent de layoutconfiguratie. Zie [Layout Builder](layout-builder.md) voor de vervolgstappen. |
+| **Fields** | Opent de veld- en herkenningsinstellingen voor dit type. Zie [Velden](../../settings/global-settings/document-types/fields/README.md) voor de configuratie. |
+| **Tables** | Opent de configuratie van de tabelkolommen voor dit type. |
+| **Scripts** | Opent verwerkingsscripts wanneer deze functie beschikbaar is. |
+| **Model Training** | Opent de modeltraining voor dit type. |
+| **E-Doc** | Opent de instellingen voor elektronische documenten wanneer het type die ondersteunt. |
+| **Document Sub Types** | Opent de subtypen van dit documenttype. |
 
-![](https://lh7-us.googleusercontent.com/fqNQTnQSPJ19w3YBOf6-E_sLmKo3LPBeGyRE0jqjhodZjtGxyi7YCg0yrMVfz1VQjsbyQ9S6Lllhn891A8yWD7YJ66pXJ_EsBlf_meTFf57snc3r5Ko88kmzgXUYA7DIzaPtxSJBNC3Z7Avh17l_1fo)
+Afhankelijk van de functies van uw organisatie ziet u mogelijk meer links, zoals validatie- of transformatieregels. Kies de link op de kaart van het type dat u wilt wijzigen.
 
-In the following overview you will find all standard document types available for you
+## Velden en herkenningsinstellingen bewerken
 
-![](https://lh7-us.googleusercontent.com/Syml6WLOpBNjz1NUcYv6ooJZXhqBKXYOUfWah2jdnTAceLTNr0RYYNW8mXM91wutSH7BAnQ7MVxcNaQE7mDiWtR6xlwVzz45hYzotHEEOPSzoTSFwzno9zrJe8dVCuTHiTftm7HpcSxj9YgcRXR65q0)
+Klik op een kaart op **Fields** om de veldgroepen te bekijken. Bovenaan die pagina stellen **OCR** en **Match Score** de herkenningsdrempels in, zet **Restore Defaults** die drempels terug en zoekt **Search by Name** een veld. Gebruik **Create new group** om velden te ordenen en **Create field** binnen een groep om een veld toe te voegen. **Master Data Settings** opent de bijbehorende configuratie van stamgegevens.
 
-**Activate/Extraction Type**
+Elke veldrij heeft bedieningselementen zoals **Required**, **Read Only**, **Hidden**, **Force Validation**, **Use AI**, OCR, Match Score en Formula. Raadpleeg de [handleiding Velden](../../settings/global-settings/document-types/fields/README.md) voordat u afzonderlijke waarden wijzigt. Klik op de pagina Fields op **Save Settings** om uw wijzigingen te bewaren.
 
-To the right of each document type, you will see Activate and Extraction Type sliders.
+<figure><img src="../../../.gitbook/assets/document-types-invoice-fields-en-20260928.png" alt="Pagina Invoice Fields met herkenningsinstellingen, veldgroepen, bedieningselementen per veld en Save Settings"><figcaption><p>De pagina Fields heeft een eigen knop Save Settings.</p></figcaption></figure>
 
-Activate: This document type is active in your DocBits environment.
+## Een eigen documenttype maken
 
-Extraction Type: This slider allows you to enable or disable a set of predefined rules for the document type when it is processed by DocBits. By selecting the gear icon to the right of the slider, the following menu will appear.
+Scrol naar **Custom Document Types** en klik op **+ New**. Volg [Documenttypen toevoegen/bewerken](../../settings/global-settings/document-types/adding-editing-document-types.md) om het nieuwe type in te stellen.
 
-![](https://lh7-us.googleusercontent.com/VAf5NNfmfs_EsV3-LzQmif4Vp_hSjhWOgoehrzHya-8eXgeWSRz6tArWNtQZW4SPkelwufuXFkSl5jGywDnxh5Ll5BYLSXrTmUYi2AxBOj38suzgoJiLSqX2ENYJHpGbpkt1kUX7vcATShHfG0Jw20s)
-
-To see which fields can be extracted, for example from an invoice, click on FIELDS for this document type.
-
-![](https://lh7-us.googleusercontent.com/DRJV3CLSSHjjFrqQD0LtzvMRu4n-_RZ_w5d-2d9q7MsZur-2_cj-_9VYjeOCmDIZ6_C_dZKDonfyFUip8NCqeXEkw5gch0MaK2u-5_kCGg6_zNMhYj2gW-JUXoQORzoJdUmKwa7PuMz_mnF3FuzkXDc)
-
-**Field Settings**
-
-Here you will find all the fields that can be extracted
-
-![](https://lh7-us.googleusercontent.com/NRhL2RPgVJqbdxoKnnEtcB8D1yYXfHqifMFttmiju6OQkMKdrndsZ17EFhYEOh5bJg2ctOPyzy60CwqKme0RQbDmKWhq3EBTuqGDzDzNdcx1PPMkC4a-N1yJFmbs-ZcM3kfFt_j9Z3QdofcuXJqTN7U)
-
-You can also CREATE FIELDS like freight, postage or any field with an amount you want to extract from your invoices.
-
-For each field you can check the boxes if they are:
-
-* REQUIRED: Here you can define if the field must contain a value to continue.
-* READ ONLY: Here you can define if a field can only be displayed but not edited.
-* HIDDEN: Here you can define whether a field should be hidden or displayed in the extraction view.
-* FORCE VALIDATION: Here you can define whether a field must always be validated manually, even if it has been read 100% by DocBits.
-* OCR and MATCH SCORE: Setting as described below, per field.
-* FORMULA: Creation of a formula per field.
-
-![](https://lh7-us.googleusercontent.com/rbyXMCvWQx10lEGKb4xzu7eM6-l2yNZ3SO9Mj4pIIqfAZzt68on8j1KpSnrisMgVgKKB3QhymZNDpxYEVMVQplEsesk1gWAEAeriPDaQxL5v4eWPd9oFnyYN5QiA5uymT4ED6JHEew5FAlC_bgU9Mho)
-
-If all settings are made and should be saved, please confirm this with the SAVE SETTINGS button at the bottom of the page, otherwise the settings will not be applied.
-
-![](https://lh7-us.googleusercontent.com/4nXll-tHCDUUbA_hsi_RXa7ll7qxkNFk2Htjx56-rBnIrZGu3H_VJtjjtuUlXGBFUQUcXAa8WdJXFdWZN6geHCWsUnq0MUF1Q8_RvpdpqYDq_rNoFraomSK0sUTeKAyeOo7CZ1QiSs2rnIIXak4fGG4)
-
-**Recognition Settings**
-
-![](https://lh7-us.googleusercontent.com/nEAjFqWdbJci2U0lHCL8Bv-51Uur1QxT0etiKaR4kUNp2G4jtlsbR2ikAee--XvyoKDZ8Tx5l3hLa-a-FdY1lL35lxFegwg6D8xPw27ObwrZRRBhXDOmQOa3y_1bhcwzXF418PsASkx3jjEIQXqtBnc)
-
-**OCR**
-
-Here you can set the sensitivity of the OCR (Optical Character Recognition) function for all fields at once. This value determines the sensitivity with which a field is marked in red if it could not be extracted with 100% certainty (OCR related!).
-
-**Match Score**
-
-This is where you can set the sensitivity of the MATCH SCORE function for all fields at once. This value determines when a field is marked in red if DocBits has not extracted the field with 100% probability. In this case the field needs to be validated manually.
-
-The button RESTORE DEFAULTS will set back both values to “50”.
-
-**Profile**
-
-Here you can define the profile that shall be used. Either Default or ZUGFeRD.\
-In profile ZUGFeRD there are predefined fields that are mandatory for this type of invoice.\
-If you do not explicitly use ZUGFeRD, please select “Default”.
-
-![](https://lh7-us.googleusercontent.com/jxQMt3SJdQcMD15ntBN2vowRpAZxybGYZtr_6w8ANER4XgvkDf09tN-H9wZqApYj3ka1-E-KvALZp5dw4GFK5SswWWe3MAv3eiCWcRyb3lxk0f9erN4FfOTPkPK0lburKvib5hTntUHWUFikBGBQV1Y)
+<figure><img src="../../../.gitbook/assets/document-types-custom-new-en-20260928.png" alt="Onderkant van de pagina Document Types met het gedeelte Custom Document Types en de knop New"><figcaption><p>Gebruik New onder Custom Document Types om een type aan te maken.</p></figcaption></figure>

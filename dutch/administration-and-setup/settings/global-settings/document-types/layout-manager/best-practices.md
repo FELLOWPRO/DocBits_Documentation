@@ -20,6 +20,3 @@
 ### Test and optimize:
 
 * Test the layout and data entry thoroughly to ensure that all data is captured and stored correctly. Collect feedback from users and make adjustments to continuously improve user experience and data integrity.
-
-
-

@@ -15,12 +15,14 @@ Om deze functie in te schakelen:
 
 * **Wanneer ingeschakeld**:
   * De **Purchase Order tabel** verschijnt in de **Tabelsectie** in de **Layout Builder**.
-  *   Er wordt geen melding weergegeven dat de module is uitgeschakeld.\\
+  *   Er wordt geen melding weergegeven dat de module is uitgeschakeld.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_po_table_layout_builder_disabled.png" alt="Docbits Po Table Layout Builder Disabled"><figcaption></figcaption></figure>
 * **Wanneer uitgeschakeld**:
   * Een hint geeft aan dat de module is uitgeschakeld.
-  *   De **PO-tabel** is niet zichtbaar in het **Validatiescherm**.\\
+  *   De **PO-tabel** is niet zichtbaar in het **Validatiescherm**.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_po_table_layout_builder_access.png" alt="Docbits Po Table Layout Builder Access"><figcaption></figcaption></figure>
 

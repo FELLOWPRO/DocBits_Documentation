@@ -44,7 +44,7 @@ if supplier_id:
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Veldwaarde lezen
-* [get\_lookup\_records()](../functions/business-logic-functions.md#get_lookup_records) — Stamgegevens bevragen
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Veldwaarde schrijven
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Validatiefout tonen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Veldwaarde lezen
+- [get\_lookup\_records()](../business-logic-functions.md#get\_lookup\_records) — Stamgegevens bevragen
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Veldwaarde schrijven
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Validatiefout tonen

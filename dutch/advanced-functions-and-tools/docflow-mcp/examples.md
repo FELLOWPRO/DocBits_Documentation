@@ -89,7 +89,7 @@ De kaart is nu actief en beschikbaar voor gebruik in workflows.
 
 ### Stap 5: Een workflow bouwen met de kaart
 
-Open de **DocFlow-designer** in de webapp, maak een geavanceerde workflow en voeg de goedgekeurde kaart toe als node, bijvoorbeeld een trigger _Document Received_, de kaart _High Value Check_ en een node _Approval_ voor de `true`-tak. Workflowgrafen worden in de designer aangemaakt en bewerkt; de MCP maakt ze niet aan.
+Open de **DocFlow-designer** in de webapp, maak een geavanceerde workflow en voeg de goedgekeurde kaart toe als node, bijvoorbeeld een trigger *Document Received*, de kaart *High Value Check* en een node *Approval* voor de `true`-tak. Workflowgrafen worden in de designer aangemaakt en bewerkt; de MCP maakt ze niet aan.
 
 Terug in de assistent controleert u of de workflow bestaat en leest u de structuur ervan:
 
@@ -112,7 +112,7 @@ Roep `test_advanced_workflow` aan:
 
 Bekijk de uitvoeringslogboeken om te verifiëren dat elke node correct is uitgevoerd.
 
-***
+---
 
 ## Voorbeeld 2: Een workflow bouwen met ingebouwde kaarten
 
@@ -134,10 +134,9 @@ Roep `sdk_list_cards_picker` aan om alle beschikbare kaarten met hun rolvlaggen 
 ```
 
 Filter op rol:
-
-* `is_when: true` — Gebruik in WHEN-nodes (triggers)
-* `is_and: true` — Gebruik in AND-nodes (aanvullende voorwaarden)
-* `is_then: true` — Gebruik in THEN-nodes (acties)
+- `is_when: true` — Gebruik in WHEN-nodes (triggers)
+- `is_and: true` — Gebruik in AND-nodes (aanvullende voorwaarden)
+- `is_then: true` — Gebruik in THEN-nodes (acties)
 
 ### Stap 2: De workflow aanmaken
 
@@ -212,7 +211,7 @@ Filter op rol:
 
 Dit maakt een workflow aan: **WHEN** document is een factuur **AND** bedrag > 1000 **THEN** status instellen op beoordeling.
 
-***
+---
 
 ## Voorbeeld 3: Kaarten importeren vanuit GitHub
 

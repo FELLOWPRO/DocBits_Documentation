@@ -6,7 +6,7 @@ De pagina **Validatieregels** (**E-documenten → Regels**) bepaalt hoe DocBits 
 
 ## Validatie-instellingen
 
-De kaart **Validatie-instellingen** toont uw huidige validatieprofiel (bijvoorbeeld _B2G — Public Sector Receiver_). Klik op **Antwoorden bewerken** om de installatiewizard opnieuw uit te voeren en de standaard te wijzigen waartegen u valideert.
+De kaart **Validatie-instellingen** toont uw huidige validatieprofiel (bijvoorbeeld *B2G — Public Sector Receiver*). Klik op **Antwoorden bewerken** om de installatiewizard opnieuw uit te voeren en de standaard te wijzigen waartegen u valideert.
 
 ## Geaccepteerde XRechnung-versies
 
@@ -20,12 +20,12 @@ Kies welke **profielen** u accepteert (BASIC WL, BASIC, EN 16931 / COMFORT, EXTE
 
 Elke validatieregel heeft een **ernst** die bepaalt wat er gebeurt wanneer ze afgaat:
 
-| Ernst       | Effect                                                                                                                                                            |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FATAL**   | Stopt de verwerking onmiddellijk. Geen volgende laag wordt gecontroleerd; het document gaat naar Fout.                                                            |
-| **ERROR**   | Het document wordt afgewezen. Andere bevindingen op hetzelfde document worden nog steeds getoond; de leveranciersmelding (indien ingeschakeld) wordt geactiveerd. |
-| **WARNING** | Verschijnt in het validatierapport, maar het document gaat normaal door de pijplijn.                                                                              |
-| **INFO**    | Alleen auditlog. Geen zichtbaar effect voor de gebruiker en geen afwijzing.                                                                                       |
+| Ernst | Effect |
+|-------|--------|
+| **FATAL** | Stopt de verwerking onmiddellijk. Geen volgende laag wordt gecontroleerd; het document gaat naar Fout. |
+| **ERROR** | Het document wordt afgewezen. Andere bevindingen op hetzelfde document worden nog steeds getoond; de leveranciersmelding (indien ingeschakeld) wordt geactiveerd. |
+| **WARNING** | Verschijnt in het validatierapport, maar het document gaat normaal door de pijplijn. |
+| **INFO** | Alleen auditlog. Geen zichtbaar effect voor de gebruiker en geen afwijzing. |
 
 ## De ernst van regels overschrijven
 

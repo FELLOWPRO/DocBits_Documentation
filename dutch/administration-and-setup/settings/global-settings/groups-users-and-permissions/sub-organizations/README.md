@@ -17,11 +17,11 @@ Met suborganisaties kunt u een hiërarchische structuur in DocBits opzetten om d
 
 De tabel toont alle bestaande suborganisaties met:
 
-| Kolom            | Beschrijving                                                                               |
-| ---------------- | ------------------------------------------------------------------------------------------ |
-| **Naam**         | De naam van de suborganisatie.                                                             |
-| **Beschrijving** | Een korte beschrijving van het doel van de suborganisatie.                                 |
-| **Acties**       | Menu met opties om gebruikers te beheren, de suborganisatie te bewerken of te verwijderen. |
+| Kolom | Beschrijving |
+|--------|-------------|
+| **Naam** | De naam van de suborganisatie. |
+| **Beschrijving** | Een korte beschrijving van het doel van de suborganisatie. |
+| **Acties** | Menu met opties om gebruikers te beheren, de suborganisatie te bewerken of te verwijderen. |
 
 Gebruik de **zoekbalk** om snel suborganisaties op naam te vinden.
 

@@ -12,9 +12,9 @@ Er zijn twee endpoints en ze doen hetzelfde. Het enige verschil is hoe u de BOD 
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-endpoints.png)
 
-| Endpoint                   | Wanneer u het gebruikt                                                                                                                                                                                                                                           |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/import/supplier_bod`     | U hebt de BOD als **XML-bestand** en wilt het uploaden.                                                                                                                                                                                                          |
+| Endpoint | Wanneer u het gebruikt |
+| --- | --- |
+| `/import/supplier_bod` | U hebt de BOD als **XML-bestand** en wilt het uploaden. |
 | `/import/supplier_bod_xml` | U wilt de **XML-inhoud** in het verzoek meesturen in plaats van een bestand. De BOD moet in JSON worden verpakt, dus dit past bij korte XML of bij een ander systeem dat de API aanroept — voor een volledige BOD met de hand kunt u beter het bestand uploaden. |
 
 Beide worden hieronder beschreven. Stap 1 en 2 zijn in beide gevallen hetzelfde.
@@ -91,12 +91,12 @@ Klik op **Try it out** en vul vervolgens het formulier in van het endpoint dat u
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-bod-form.png)
 
-| Veld                        |                                                                                                                                                                                                                                                         |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **file**                    | Verplicht. Klik op **Choose file** en selecteer uw XML-bestand met de supplier BOD.                                                                                                                                                                     |
-| **org\_id**                 | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet. Die hier ook invullen maakt expliciet naar welke organisatie het verzoek schrijft. Het moet een organisatie zijn waartoe uw API key toegang heeft; elke andere wordt geweigerd. |
-| **sub\_org\_id**            | Alleen nodig als u in een specifieke suborganisatie importeert.                                                                                                                                                                                         |
-| **custom\_fields\_mapping** | Optioneel. Leest extra velden uit de BOD naar de aangepaste velden van de leverancier. Zie [Aangepaste veldtoewijzingen](supplier-bod.md#aangepaste-veldtoewijzingen) hieronder.                                                                        |
+| Veld | |
+| --- | --- |
+| **file** | Verplicht. Klik op **Choose file** en selecteer uw XML-bestand met de supplier BOD. |
+| **org\_id** | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet. Die hier ook invullen maakt expliciet naar welke organisatie het verzoek schrijft. Het moet een organisatie zijn waartoe uw API key toegang heeft; elke andere wordt geweigerd. |
+| **sub\_org\_id** | Alleen nodig als u in een specifieke suborganisatie importeert. |
+| **custom\_fields\_mapping** | Optioneel. Leest extra velden uit de BOD naar de aangepaste velden van de leverancier. Zie [Aangepaste veldtoewijzingen](#aangepaste-veldtoewijzingen) hieronder. |
 
 Er is hier geen veld voor regeltoewijzingen — stamgegevens van leveranciers hebben geen regels.
 
@@ -164,6 +164,8 @@ Als er iets mis was met het verzoek, krijgt u `"success": false` met een bericht
 * Ga in DocBits naar **Settings → Document Processing → Lookup Master Data**.
 * Selecteer links **BOD Input Data** en open vervolgens het tabblad **Supplier**.
 * Zoek naar de leverancier uit uw BOD.
+
+<!-- SCREENSHOT: Lookup Master Data with BOD Input Data selected and the Supplier tab open -->
 
 {% hint style="info" %}
 DocBits bepaalt wat er met de BOD gebeurt door het type erin te lezen, niet aan de hand van het gebruikte import-endpoint. Als u hier per ongeluk een purchase order BOD verstuurt, wordt die als inkooporder geïmporteerd in plaats van geweigerd — controleer dus of het tabblad waarin u de gegevens terugvindt, het tabblad is dat u verwachtte.

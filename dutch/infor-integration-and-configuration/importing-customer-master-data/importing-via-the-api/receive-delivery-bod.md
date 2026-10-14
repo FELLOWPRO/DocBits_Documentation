@@ -10,9 +10,9 @@ Goederenontvangsten bereiken DocBits normaal gesproken automatisch via uw ION-da
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
 
-| Endpoint                           | Wanneer u het gebruikt                                                                                                                                                                                                                                           |
-| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/import/receive_delivery_bod`     | U hebt de BOD als **XML-bestand** en wilt het uploaden.                                                                                                                                                                                                          |
+| Endpoint | Wanneer u het gebruikt |
+| --- | --- |
+| `/import/receive_delivery_bod` | U hebt de BOD als **XML-bestand** en wilt het uploaden. |
 | `/import/receive_delivery_bod_xml` | U wilt de **XML-inhoud** in het verzoek meesturen in plaats van een bestand. De BOD moet in JSON worden verpakt, dus dit past bij korte XML of bij een ander systeem dat de API aanroept — voor een volledige BOD met de hand kunt u beter het bestand uploaden. |
 
 Beide worden hieronder beschreven. Stap 1 en 2 zijn in beide gevallen hetzelfde.
@@ -89,14 +89,14 @@ Klik op **Try it out** en vul vervolgens het formulier in van het endpoint dat u
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
 
-| Veld                              |                                                                                                                                                                                                                                                         |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **file**                          | Verplicht. Klik op **Choose file** en selecteer uw `SyncReceiveDelivery`-XML-bestand.                                                                                                                                                                   |
-| **org\_id**                       | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet. Die hier ook invullen maakt expliciet naar welke organisatie het verzoek schrijft. Het moet een organisatie zijn waartoe uw API key toegang heeft; elke andere wordt geweigerd. |
-| **sub\_org\_id**                  | Alleen nodig als u in een specifieke suborganisatie importeert.                                                                                                                                                                                         |
-| **custom\_fields\_mapping**       | Optioneel. Extra kopvelden. Zie [Aangepaste veldtoewijzingen](receive-delivery-bod.md#aangepaste-veldtoewijzingen) hieronder.                                                                                                                           |
-| **custom\_line\_fields\_mapping** | Optioneel. Hetzelfde, voor extra velden op de ontvangstregels.                                                                                                                                                                                          |
-| **populate\_additional\_info**    | Optioneel, standaard `false`. Zet het op `true` om DocBits na de import aanvullende ontvangstinformatie uit het ERP te laten ophalen. Laat het op `false` tenzij u weet dat u het nodig hebt — het maakt de import trager.                              |
+| Veld | |
+| --- | --- |
+| **file** | Verplicht. Klik op **Choose file** en selecteer uw `SyncReceiveDelivery`-XML-bestand. |
+| **org\_id** | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet. Die hier ook invullen maakt expliciet naar welke organisatie het verzoek schrijft. Het moet een organisatie zijn waartoe uw API key toegang heeft; elke andere wordt geweigerd. |
+| **sub\_org\_id** | Alleen nodig als u in een specifieke suborganisatie importeert. |
+| **custom\_fields\_mapping** | Optioneel. Extra kopvelden. Zie [Aangepaste veldtoewijzingen](#aangepaste-veldtoewijzingen) hieronder. |
+| **custom\_line\_fields\_mapping** | Optioneel. Hetzelfde, voor extra velden op de ontvangstregels. |
+| **populate\_additional\_info** | Optioneel, standaard `false`. Zet het op `true` om DocBits na de import aanvullende ontvangstinformatie uit het ERP te laten ophalen. Laat het op `false` tenzij u weet dat u het nodig hebt — het maakt de import trager. |
 
 {% hint style="warning" %}
 **`string` is een waarde, geen tijdelijke aanduiding.** Swagger vult de optionele velden met het woord `string`, en het wordt ongewijzigd verstuurd als u het laat staan — een import met `org_id` op `string` mislukt.
@@ -121,6 +121,8 @@ Regeltoewijzingen gebruiken dezelfde namen `custom_field_1` … `custom_field_10
 ```
 
 #### De XML plakken — `/import/receive_delivery_bod_xml`
+
+<!-- SCREENSHOT: the Try it out form of /import/receive_delivery_bod_xml -->
 
 Dit endpoint accepteert de BOD niet als eenvoudige plakactie. Het veld **xml** is een object, vooringevuld met `{"xml": "string"}`. Vervang `string` door de inhoud van uw BOD en behoud de omringende aanhalingstekens en accolades:
 
@@ -168,6 +170,8 @@ Als er iets mis was met het verzoek, krijgt u `"success": false` met een bericht
 * Ga in DocBits naar **Settings → Document Processing → Lookup Master Data**.
 * Selecteer links **BOD Input Data** en open vervolgens het tabblad van de gegevens die u hebt geïmporteerd.
 * Zoek naar de ontvangst of de inkooporder waartoe die behoort.
+
+<!-- SCREENSHOT: Lookup Master Data with BOD Input Data selected and the goods receipt data shown -->
 
 {% hint style="info" %}
 DocBits bepaalt wat er met de BOD gebeurt door het type erin te lezen, niet aan de hand van het gebruikte import-endpoint. Als u hier per ongeluk een andere BOD verstuurt, wordt die als dat type geïmporteerd in plaats van geweigerd — controleer dus of het tabblad waarin u de gegevens terugvindt, het tabblad is dat u verwachtte.

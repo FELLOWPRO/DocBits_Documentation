@@ -1,4 +1,4 @@
-# Troubleshooting
+# Problemen oplossen
 
 {% embed url="https://youtu.be/fQUIrp-qz9c" %}
 DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
@@ -119,5 +119,7 @@ DocBits Support Ticket Tutorial: Report Bugs, Attach Files & Get Help Faster
 **Updates en patches:**
 
 * Houd het systeem up-to-date door regelmatig updates en patches te installeren die bugfixes en verbeteringen bevatten.
+
+
 
 Het oplossen van problemen met de configuratie van documenttypen vereist een systematische aanpak en een zorgvuldige beoordeling van alle aspecten van de configuratie. Door de bovenstaande tips toe te passen, kunt u veelvoorkomende problemen identificeren en oplossen om de nauwkeurigheid en efficiëntie van de documentverwerking in DocBits te verbeteren.

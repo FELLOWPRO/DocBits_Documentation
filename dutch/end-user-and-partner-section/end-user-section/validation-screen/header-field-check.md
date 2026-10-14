@@ -6,7 +6,7 @@ description: >-
 
 # Koptekstveldcontrole: waar de gegevens vandaan komen
 
-De knop **Koptekstveldcontrole** staat naast **Opslaan** op het validatiescherm. Hij opent het rapport _Waar komt elke waarde vandaan?_: voor elk koptekstveld laat het zien wat er op het document stond, wat de waarde onderweg heeft veranderd, wat DocBits nu toont en waarom.
+De knop **Koptekstveldcontrole** staat naast **Opslaan** op het validatiescherm. Hij opent het rapport *Waar komt elke waarde vandaan?*: voor elk koptekstveld laat het zien wat er op het document stond, wat de waarde onderweg heeft veranderd, wat DocBits nu toont en waarom.
 
 Deze pagina legt uit hoe een waarde ontstaat en wat elke bron betekent. Er is geen expertkennis nodig.
 
@@ -16,12 +16,12 @@ De Koptekstveldcontrole maakt deel uit van de module **Analytics**. Als de knop 
 
 ## Een waarde ontstaat altijd in deze volgorde
 
-| Stap             | Wat er gebeurt                                                                                                             |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **1. Lezen**     | De waarde wordt uit het document gelezen — door een getrainde regel, door de AI of rechtstreeks uit een e-factuur.         |
-| **2. Omvormen**  | De scripts en transformatieregels van de klant wijzigen de gelezen waarde: inkorten, aanvullen, het formaat aanpassen.     |
-| **3. Opzoeken**  | De waarde wordt in de stamgegevens gezocht. Wordt er iets gevonden, dan vervangt het stamgegevensrecord de gelezen waarde. |
-| **4. Weergeven** | De gebruiker ziet alleen het resultaat. Wat er onderweg is gebeurd, toont de Koptekstveldcontrole.                         |
+| Stap | Wat er gebeurt |
+| --- | --- |
+| **1. Lezen** | De waarde wordt uit het document gelezen — door een getrainde regel, door de AI of rechtstreeks uit een e-factuur. |
+| **2. Omvormen** | De scripts en transformatieregels van de klant wijzigen de gelezen waarde: inkorten, aanvullen, het formaat aanpassen. |
+| **3. Opzoeken** | De waarde wordt in de stamgegevens gezocht. Wordt er iets gevonden, dan vervangt het stamgegevensrecord de gelezen waarde. |
+| **4. Weergeven** | De gebruiker ziet alleen het resultaat. Wat er onderweg is gebeurd, toont de Koptekstveldcontrole. |
 
 Stap 2 en 3 worden niet altijd uitgevoerd — maar als ze dat wel worden, veranderen ze de waarde. Precies daar komen de meeste gemelde gevallen vandaan.
 
@@ -84,12 +84,12 @@ Gelezen uit een barcode of QR-code op het document.
 Als een veld plotseling een waarde bevat die zo niet op het document staat, was het bijna nooit de AI — maar stap 2 of stap 3. Meestal de stamgegevenstreffer, die ook gedeeltelijke treffers accepteert: `1001` komt overeen met `06O051001`, en met de gevonden bestelling verandert ook de leverancier.
 {% endhint %}
 
-In het rapport is zo'n veld rood gemarkeerd. De kolom **Actie** toont het stamgegevensrecord samen met een rode chip _alleen gedeeltelijke treffer_, en het overeenkomende deel van de waarde is gemarkeerd.
+In het rapport is zo'n veld rood gemarkeerd. De kolom **Actie** toont het stamgegevensrecord samen met een rode chip *alleen gedeeltelijke treffer*, en het overeenkomende deel van de waarde is gemarkeerd.
 
 ## Het rapport lezen
 
 * **Statuschips** bovenaan tellen de velden die ongewijzigd uit het document kwamen, onderweg zijn veranderd of zo niet op het document staan. Klik op een chip om alleen die velden te tonen; klik opnieuw om alles te tonen.
 * **Bronfilter:** de rij pictogrammen toont elke extractiemethode. Klik op een pictogram om alleen de velden te tonen die erdoor zijn gegaan.
 * **Actie:** elke stap die de waarde heeft doorlopen, met het pictogram van de bron. De stap waar de huidige waarde vandaan komt, is gemarkeerd. Houd de muisaanwijzer erboven om te zien wat elke stap deed, van welke waarde naar welke.
-* **Reden:** de status van het veld. Het (i)-pictogram legt uit waarom de waarde is wat ze is. Staat er _Veld bestond niet_, dan was het veld niet aanwezig op het document.
+* **Reden:** de status van het veld. Het (i)-pictogram legt uit waarom de waarde is wat ze is. Staat er *Veld bestond niet*, dan was het veld niet aanwezig op het document.
 * Lange waarden worden met … ingekort — houd de muisaanwijzer erboven voor de volledige waarde.

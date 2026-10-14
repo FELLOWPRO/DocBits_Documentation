@@ -4,10 +4,10 @@
 
 DocBits kan documenten rechtstreeks uit e-mail ophalen — geen handmatig uploaden nodig. Er zijn **twee manieren** om e-maildocumenten binnen te halen, beide onder **Instellingen → Documentverwerking → Importeren**:
 
-| Methode                                       | Hoe het werkt                                                                                                                                                    | Het meest geschikt voor                                                              |
-| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| **E-mailimportaccount**                       | DocBits maakt verbinding met een postbus die van u is (**IMAP**, **OAuth Office365** of **OAuth Office365 – Tenant**) en importeert de documenten die het vindt. | Een speciale postbus die uw documenten al ontvangt (bijv. `facturen@uwbedrijf.com`). |
-| **Doorgestuurde e-mails (Inkomende e-mails)** | DocBits geeft u een uniek adres; elke geautoriseerde afzender kan documenten daarheen **doorsturen**.                                                            | Incidenteel doorsturen vanaf veel afzenders zonder postbusgegevens te delen.         |
+| Methode | Hoe het werkt | Het meest geschikt voor |
+|---------|---------------|--------------------------|
+| **E-mailimportaccount** | DocBits maakt verbinding met een postbus die van u is (**IMAP**, **OAuth Office365** of **OAuth Office365 – Tenant**) en importeert de documenten die het vindt. | Een speciale postbus die uw documenten al ontvangt (bijv. `facturen@uwbedrijf.com`). |
+| **Doorgestuurde e-mails (Inkomende e-mails)** | DocBits geeft u een uniek adres; elke geautoriseerde afzender kan documenten daarheen **doorsturen**. | Incidenteel doorsturen vanaf veel afzenders zonder postbusgegevens te delen. |
 
 U kunt elke methode afzonderlijk of beide samen gebruiken.
 
@@ -64,7 +64,7 @@ Zodra deze is ingeschakeld, verschijnt er een sectie **Inkomende e-mails** onder
 Klik op **Opslaan** om uw wijzigingen toe te passen.
 
 {% hint style="info" %}
-**Welke bijlagen worden geïmporteerd?** DocBits importeert de ondersteunde documentbijlagen — zie [Importeren → E-mail importeren](../import/#email-import) voor de volledige lijst met bestandstypen — en pakt doorgestuurde `.eml`-berichten en Outlook `winmail.dat`-bijlagen (TNEF) uit om de documenten erin te importeren. De herkenning is ook gebaseerd op de **werkelijke bestandsinhoud**, zodat bijlagen die een doorsturende mailserver van een generiek type (`application/octet-stream`) voorziet, toch correct worden geïmporteerd. Inline-afbeeldingen (handtekeninglogo's / ingesloten afbeeldingen) worden genegeerd.
+**Welke bijlagen worden geïmporteerd?** DocBits importeert de ondersteunde documentbijlagen — zie [Importeren → E-mail importeren](../import/README.md#e-mail-importeren) voor de volledige lijst met bestandstypen — en pakt doorgestuurde `.eml`-berichten en Outlook `winmail.dat`-bijlagen (TNEF) uit om de documenten erin te importeren. De herkenning is ook gebaseerd op de **werkelijke bestandsinhoud**, zodat bijlagen die een doorsturende mailserver van een generiek type (`application/octet-stream`) voorziet, toch correct worden geïmporteerd. Inline-afbeeldingen (handtekeninglogo's / ingesloten afbeeldingen) worden genegeerd.
 {% endhint %}
 
 ### Welke methode wanneer

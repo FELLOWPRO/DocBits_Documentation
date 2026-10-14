@@ -1,4 +1,4 @@
-# Lege Regels Verwijderen
+# Verwijder regels met lege hoeveelheid en bedrag
 
 #### Deel 1: Verwijder Regels met Lege Hoeveelheid en Bedrag
 
@@ -95,3 +95,5 @@ Het script zorgt effectief voor gegevensintegriteit door:
 2. De consistentie te valideren tussen de som van individuele regelbedragen en het totale factuurtotaal, waarbij afwijkingen worden gemarkeerd voor verdere actie.
 
 Deze automatisering helpt bij het onderhouden van nauwkeurige financiële gegevens en kan cruciaal zijn voor systemen zoals ERP die nauwkeurige gegevens vereisen voor boekhouding en financiële rapportage.
+
+

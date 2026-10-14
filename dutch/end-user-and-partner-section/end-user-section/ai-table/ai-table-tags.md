@@ -6,7 +6,7 @@
 
 * **Selecteer kolomnamen:** Bekijk de kolomnamen van uw tabel en beslis welke tags u wilt toevoegen.
 
-<figure><img src="../../../.gitbook/assets/image (222).png" alt="Docbits Ai Table Select Columns"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_ai_table_select_columns.png" alt="Docbits Ai Table Select Columns"><figcaption></figcaption></figure>
 
 **Stap 2:** Druk op de knop "Toepassen"
 
@@ -16,7 +16,7 @@
 
 * **Voeg tag toe:** De geselecteerde tag wordt toegevoegd aan de tabel als een extra kolom naast de bijbehorende kolom.
 
-<figure><img src="../../../.gitbook/assets/docbits_ai_table_add_tag (1).png" alt="Docbits Ai Table Add Tag"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_ai_table_add_tag.png" alt="Docbits Ai Table Add Tag"><figcaption></figcaption></figure>
 
 **Stap 4:** Sla Tag op of Verwijder Tag
 

@@ -4,7 +4,7 @@
 
 Welkom bij de module Boekhouding voor Kostfactuur en Indirecte Verkoop! Deze module is ontworpen om u te helpen uw financiële transacties binnen uw ERP-systeem efficiënt te beheren en af te stemmen. Met functies zoals automatische gegevensextractie, documentmatching en gedetailleerde tracking, kunt u ervoor zorgen dat uw financiële gegevens nauwkeurig en up-to-date zijn.
 
-<figure><img src="../../.gitbook/assets/docbits_notification_card_2 (3).png" alt="Docbits Melding Card 2"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_notification_card_2.png" alt="Docbits Melding Card 2"><figcaption></figcaption></figure>
 
 ## Aan de Slag
 

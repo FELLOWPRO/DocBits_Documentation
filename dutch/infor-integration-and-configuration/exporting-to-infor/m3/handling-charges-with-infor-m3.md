@@ -51,6 +51,4 @@ This document provides detailed information on how DocBits integrates with Infor
 | Charge Category             | Relevance needs to be defined                            |
 | Costing Operator            | Relevance needs to be defined                            |
 
-\
-
-
+\\

@@ -1,4 +1,4 @@
-# API Calls and Examples
+# API-aanroepen en voorbeelden
 
 Met een API-aanraag kan een ander programma informatie in DocBits lezen of bijwerken. Begin met een alleen-lezen-aanraag, zodat u de verbinding kunt controleren zonder documenten te wijzigen.
 
@@ -25,6 +25,6 @@ Een geslaagd antwoord bevat `success: true` en een `data`-lijst met documenttype
 
 ## De volgende bewerking vinden
 
-Zoek in de API-referentie naar wat u wilt doen, lees de beschrijving en de verplichte velden van die bewerking en controleer of deze `GET`, `POST` of een andere methode gebruikt. Gebruik het voorbeeldantwoord in de referentie om het resultaat te bevestigen. Voor een Postman-handleiding zie [Postman for DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/); controleer de oudere voorbeeld-URL's ervan aan de hand van de actuele API-referentie voordat u een aanraag verzendt.
+Zoek in de API-referentie naar wat u wilt doen, lees de beschrijving en de verplichte velden van die bewerking en controleer of deze `GET`, `POST` of een andere methode gebruikt. Gebruik het voorbeeldantwoord in de referentie om het resultaat te bevestigen. Voor een Postman-handleiding zie [Postman for DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/README.md); controleer de oudere voorbeeld-URL's ervan aan de hand van de actuele API-referentie voordat u een aanraag verzendt.
 
 De vier oudere afbeeldingen op deze pagina beschreven generieke OCR-, NLP-, bestandsconversie- en documentbeheer-API's zonder geverifieerde DocBits-eindpunten te tonen. Ze zijn verwijderd; als uitvoerbaar voorbeeld wordt alleen de hierboven documenteerde DocBits-bewerking gepresenteerd.

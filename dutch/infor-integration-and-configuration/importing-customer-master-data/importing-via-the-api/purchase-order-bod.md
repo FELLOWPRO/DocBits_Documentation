@@ -12,9 +12,9 @@ Er zijn twee endpoints en ze doen hetzelfde. Het enige verschil is hoe u de BOD 
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
 
-| Endpoint                         | Wanneer u het gebruikt                                                                                                                                                                                                                                           |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/import/purchase_order_bod`     | U hebt de BOD als **XML-bestand** en wilt het uploaden.                                                                                                                                                                                                          |
+| Endpoint | Wanneer u het gebruikt |
+| --- | --- |
+| `/import/purchase_order_bod` | U hebt de BOD als **XML-bestand** en wilt het uploaden. |
 | `/import/purchase_order_bod_xml` | U wilt de **XML-inhoud** in het verzoek meesturen in plaats van een bestand. De BOD moet in JSON worden verpakt, dus dit past bij korte XML of bij een ander systeem dat de API aanroept — voor een volledige BOD met de hand kunt u beter het bestand uploaden. |
 
 Beide worden hieronder beschreven. Stap 1 en 2 zijn in beide gevallen hetzelfde.
@@ -95,13 +95,13 @@ Klik op **Try it out** en vul vervolgens het formulier in van het endpoint dat u
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
 
-| Veld                              |                                                                                                                                                                                                                                                         |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **file**                          | Verplicht. Klik op **Choose file** en selecteer uw `SyncPurchaseOrder`-XML-bestand.                                                                                                                                                                     |
-| **org\_id**                       | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet. Die hier ook invullen maakt expliciet naar welke organisatie het verzoek schrijft. Het moet een organisatie zijn waartoe uw API key toegang heeft; elke andere wordt geweigerd. |
-| **sub\_org\_id**                  | Alleen nodig als u met suborganisaties werkt. Laat het anders leeg.                                                                                                                                                                                     |
-| **custom\_fields\_mapping**       | Optioneel. Leest extra kopvelden uit de BOD naar de aangepaste velden van de order. Zie [Aangepaste veldtoewijzingen](purchase-order-bod.md#aangepaste-veldtoewijzingen) hieronder.                                                                     |
-| **custom\_line\_fields\_mapping** | Optioneel. Hetzelfde, voor extra velden op de orderregels.                                                                                                                                                                                              |
+| Veld | |
+| --- | --- |
+| **file** | Verplicht. Klik op **Choose file** en selecteer uw `SyncPurchaseOrder`-XML-bestand. |
+| **org\_id** | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet. Die hier ook invullen maakt expliciet naar welke organisatie het verzoek schrijft. Het moet een organisatie zijn waartoe uw API key toegang heeft; elke andere wordt geweigerd. |
+| **sub\_org\_id** | Alleen nodig als u met suborganisaties werkt. Laat het anders leeg. |
+| **custom\_fields\_mapping** | Optioneel. Leest extra kopvelden uit de BOD naar de aangepaste velden van de order. Zie [Aangepaste veldtoewijzingen](#aangepaste-veldtoewijzingen) hieronder. |
+| **custom\_line\_fields\_mapping** | Optioneel. Hetzelfde, voor extra velden op de orderregels. |
 
 {% hint style="warning" %}
 **`string` is een waarde, geen tijdelijke aanduiding.** Swagger vult de optionele velden met het woord `string`, en het wordt ongewijzigd verstuurd als u het laat staan — een import met `org_id` op `string` mislukt.
@@ -189,6 +189,8 @@ Als er iets mis was met het verzoek, krijgt u `"success": false` met een bericht
 * Ga in DocBits naar **Settings → Document Processing → Lookup Master Data**.
 * Selecteer links **BOD Input Data** en open vervolgens het tabblad **Purchase Order**.
 * Zoek naar het ordernummer uit uw BOD.
+
+<!-- SCREENSHOT F: Lookup Master Data with BOD Input Data selected and the Purchase Order tab open -->
 
 Als de order in de lijst staat, is de import gelukt en is de inkooporder beschikbaar voor PO matching.
 

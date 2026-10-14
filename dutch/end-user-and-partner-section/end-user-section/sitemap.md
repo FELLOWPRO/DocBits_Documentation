@@ -27,7 +27,7 @@ De vaste kop bovenaan bevat het zoekveld en de filterpillen. Typ een paar tekens
 
 De huidige zoekopdracht en filter worden aan de URL toegevoegd, zodat een gefilterde weergave kan worden opgeslagen als bladwijzer of gedeeld.
 
-De Sitemap respecteert dezelfde rechtencontrole als de rest van DocBits. Pagina's die u niet kunt openen verschijnen niet.
+<mark>De Sitemap respecteert dezelfde rechtencontrole als de rest van DocBits. Pagina's die u niet kunt openen verschijnen niet.</mark>
 
 ## Ontwikkelaarsmodus
 

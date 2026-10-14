@@ -4,8 +4,6 @@
 
 These tests ensure that our FTP import system works correctly. We verify that we can add a new FTP import connection, test the connection, activate/deactivate it, and clean it up afterward.
 
-
-
 {% embed url="https://grafana.polydocs.io/d-solo/b6ad3a9c-260c-46a3-9ade-47691e743d4d/docbits?from=1715746603760&orgId=1&panelId=84&refresh=1m&to=1715768203760" %}
 
 ## Test Scenarios
@@ -83,6 +81,4 @@ These tests ensure that our FTP import system works correctly. We verify that we
   * **Check Connection Reactivated:** Ensure that the FTP import connection is marked as active in the list.
   * **Cleanup:** Delete the FTP import connection to clean up after the tests.
 
-\
-
-
+\\

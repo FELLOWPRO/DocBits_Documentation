@@ -57,5 +57,5 @@ set_date_value(document_data, "delivery_date", None)  # None = vandaag
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Factuurdatum lezen
-* [set\_date\_value()](../functions/field-functions.md#set_date_value) — Vervaldatum berekenen en instellen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Factuurdatum lezen
+- [set\_date\_value()](../field-functions.md#set\_date\_value) — Vervaldatum berekenen en instellen

@@ -23,7 +23,7 @@ DocBits detecteert de barcodes tijdens de documentverwerking en biedt hun gedeco
 <figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="Demofactuur met meerdere barcodetypes"><figcaption><p>Voorbeeld van een DocBits-demofactuur met drie barcodetypes (QR-code → ordernummer, Code 128 → factuurnummer, EAN-13 → leveranciers-GLN), die elk een waarde coderen die u aan een veld kunt toewijzen.</p></figcaption></figure>
 
 {% hint style="info" %}
-Welke barcodetypes worden gedetecteerd, wordt bepaald door de instelling **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Als het dialoogvenster _“no barcodes extracted found”_ toont, zorg er dan voor dat barcode-extractie is ingeschakeld en dat de verwachte types (bijv. `QRCODE`, `CODE128`, `EAN13`) zijn geselecteerd. Zie [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+Welke barcodetypes worden gedetecteerd, wordt bepaald door de instelling **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Als het dialoogvenster *“no barcodes extracted found”* toont, zorg er dan voor dat barcode-extractie is ingeschakeld en dat de verwachte types (bijv. `QRCODE`, `CODE128`, `EAN13`) zijn geselecteerd. Zie [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Het dialoogvenster Barcodetoewijzing gebruiken
@@ -62,8 +62,8 @@ Welke barcodetypes worden gedetecteerd, wordt bepaald door de instelling **Bar-C
 
 * **Documenten met barcodes**: Wanneer uw documenten barcodes/QR-codes bevatten waarvan de waarden in specifieke velden horen (bijv. order- of referentienummers).
 * **Handmatige validatieworkflows**: Wanneer iemand documenten controleert en velden snel uit barcodes wil vullen.
-* **Laat uitgeschakeld** als uw documenten geen bruikbare barcodes hebben, of als u alleen de automatische barcode-/QR-**extractie** nodig hebt — zie [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+* **Laat uitgeschakeld** als uw documenten geen bruikbare barcodes hebben, of als u alleen de automatische barcode-/QR-**extractie** nodig hebt — zie [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 
 {% hint style="info" %}
-**Dit is bedoeld om een barcode-/QR-waarde uit te lezen en deze tijdens de validatie aan een veld toe te wijzen.** Het automatisch extraheren van gestructureerde gegevens uit betaalcodes (zoals Swiss QR Bill of GiroCode) — en het splitsen van een bestand met meerdere pagina's bij barcodescheidingspagina's — worden afgehandeld door een **andere** instelling: [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+**Dit is bedoeld om een barcode-/QR-waarde uit te lezen en deze tijdens de validatie aan een veld toe te wijzen.** Het automatisch extraheren van gestructureerde gegevens uit betaalcodes (zoals Swiss QR Bill of GiroCode) — en het splitsen van een bestand met meerdere pagina's bij barcodescheidingspagina's — worden afgehandeld door een **andere** instelling: [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}

@@ -1,68 +1,78 @@
 # WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-nl.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-overview-infographic.svg" alt="Overzicht van WatchDog"><figcaption></figcaption></figure>
 
-**Installation and Settings**
+<figure><img src="../../../.gitbook/assets/watchdog-infographic-en.png" alt="Infographic over WatchDog"><figcaption></figcaption></figure>
 
-After downloading the WatchDog.exe file, search for Command Prompt → Run as administrator on your Windows device.
+**WatchDog** is een Windows-gebaseerde on-premise service die lokale mappen controleert op binnenkomende documenten, deze ter verwerking uploadt naar de DocBits Cloud en voltooide documenten terug exporteert naar lokale mappen of ERP-systemen.
 
-![](https://lh7-us.googleusercontent.com/a2kmyk7eD7HqZfPiLWmvSGFnpzg9oHejHe5TpE6gFwErFyJYYBB5BZjqopwr-cEqmlMvaW8-PgARZUGI9KMKHSkz-lU_C_w6aHrVA4Wqhwo8WBSqnBfVvCpSckqLu4PwUriGs1MxbKHBBkuQ2pPaVRM)
+## Belangrijkste functies
 
-Once this is opened, call the file by typing the path of where the WatchDog.exe file is stored on your device like below
+* **Automatische mapbewaking** — bewaakt lokale paden en UNC-netwerkpaden op nieuwe PDF's
+* **Ondersteuning voor meerdere configuraties** — meerdere import-/exportconfiguraties per instantie
+* **6 exportmethoden** — Local Folder, Infor IDM, Infor BOD, ION API, GLS840MI, REST API
+* **Auto-Update** — automatische versie-updates met rollback bij een fout
+* **Beheer op afstand** — herstarten, bijwerken en configureren via de DocBits-UI
 
-![](https://lh7-us.googleusercontent.com/W_jDgPVTtpEW96jR0w_ibnZGY2CVwF2nAN0nEjMW3liw10bgPGlADiVR_lWyEAlfGYRD--gSQMdEqboRlMW5TAEP6Ao3GOW-hP3tQimA58K9Uh-WNZf7i06YYNqk5_EgKERYkjMzPx1Xd56qH2Pw8wA)
+## Snelstart
 
-Type install after the file path and press ENTER on your keyboard
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Tabblad General van WatchDog"><figcaption></figcaption></figure>
 
-![](https://lh7-us.googleusercontent.com/vZQxNIh_wY2SFTznxNTboFOSePmEMqXQMWbhsSoO45B_mIh_6C-yjfJ4SPleBIIV4p943XBN1E-3HJBgFXRRABVfDX9Ey-dnb9c5KYaNleOmE5x1ocK32zLQ4luc71rmcbv7V_dQ8pEtH_WoWZkN0fg)
+### 1. WatchDog downloaden
 
-You should receive the following error message as it will start the application in UI mode and there is no configuration present yet.
+Download `WatchDog.exe` via **Settings → Document Processing → WatchDog → General Tab** in de DocBits-applicatie.
 
-![](https://lh7-us.googleusercontent.com/HmudHszeaiAj3xIlb1Oz1IXPh3Kz1JovUvPjkr9UI7EwSGbGWRK7xVhUNwc9LGlt3t1RRVR0l7DFLfG_Ob2b8Yxd4DffLb27Hv3z22tzf9LqDVTn577CFV-4Bzs2P_vTsGDJvtNzf8XW0wPiaWLDj2o)
+### 2. Configureren met API Key
 
-The application will automatically open up after installation. At the top, navigate to Einstellungen (Settings) and here you will see 2 separate sections.
+Open de **opdrachtprompt als beheerder** en voer uit:
 
-**Folder settings (Ordner Einstellungen)**
+```powershell
+WatchDog.exe -api YOUR_API_KEY
+```
 
-![](https://lh7-us.googleusercontent.com/8uSWIY8EJKPrKj9Zk5buY_ByE9fu2oE7mJ-shG1VB2n7QWyVLAfDfUFdj-Jv3hBq2ncf2Ls1Wh3Lm7Kf-TFqet7yFso2S6srnZev-yzVdKjUxtCMTt2IUtWvUwUU0LMGktA8ioBfIkkZGqG4f53yYHM)
+> **Opmerking:** De API Key is beschikbaar in uw DocBits-instellingen op het tabblad WatchDog General. Hiermee koppelt u WatchDog aan uw DocBits-organisatie.
 
-This is where you will configure the file pathways for where the documents will be read and processed. The read pathway will be for the documents that you want WatchDog to extract and process, whereas the processed pathway will be used to indicate which documents from the read folder where extracted and processed.
+### 3. Installeren als Windows-service
 
-**General settings (Allgemeine Einstellungen)**
+```powershell
+WatchDog.exe install
+WatchDog.exe start
+```
 
-![](https://lh7-us.googleusercontent.com/mTUxSXPBZi_TTtVEQbGQXyXNonkIuganpTjqaamkB7C7zZ7Qaodvf9Sl8nXjnp6ZpYNf8XOwvuk-MYYEyGkFcKB-SqC9lklBXehC-3jMI7G12tXqfa6ROWywPBFE4fy-p-DcuLo3QdZXy-1rjSzlu9s)
+### 4. Configuraties maken in DocBits
 
-This is where you will configure your DocBits application with WatchDog. You will be required to enter your DocBits environment, API key and the document type (as indicated above). To add more than one document type, separate the names of the document types with a comma (INVOICE,DELIVERY-NOTE,PURCHASE-ORDER, etc.)
+Alle import- en exportconfiguraties worden rechtstreeks in de **DocBits-applicatie** gemaakt:
 
-If an invalid configuration is entered for any of the fields, you will receive an error message like the one below.
+**Settings → Document Processing → WatchDog → Configurations Tab**
 
-![](https://lh7-us.googleusercontent.com/BIOMuVCPUojfwPVr-cJukzvoBdWdtxzj5XCXocWlZwbaXwkTpb4u5Gk84vKu-_Z5UxvZ2cq0asHs4aFRLklBrUOKA19d2R4nqsxyZjd3iJlh3y97f07OfzEyv6jl7JpnorANzdPIgyZfqwmCEYZOlek)
+* **Import Configurations** — definieer bewaakte mappen en documenttypen
+* **Export Configurations** — definieer exportbestemmingen, XSLT-templates en exportmethoden
 
-Once this is complete, go back to the Command Prompt area and re-run the WatchDog.exe file and this time it will be correctly installed due to the configurations now being present
+> **Belangrijk:** Voor exportconfiguraties is een **documenttype** (`doc_type`) vereist. Configuraties zonder documenttype worden geweigerd.
 
-![](https://lh7-us.googleusercontent.com/GqtwbyvQjjNb1u9DY_Eww2woOdK1nYMm0oRMFxEGWSP9oSYN51eu1kkWiDzenz1rHGLvYG-ocwosOK2bTM6ruXTI5co05kjV2HPGI-8TgEIBTVCPpTrvs37SKMk9eBWY0KEj9vCCyPeqXYgCVD0DDXw)
+### 5. Automatisch starten (optioneel)
 
-To start the application is UI mode, run the following command
+Om WatchDog automatisch bij het opstarten te laten starten:
 
-![](https://lh7-us.googleusercontent.com/LELZuaiuL8ukiKPE-pbezsOZAICffXxAomx6gSe0vOvYaIdkr8Sr7X2znc_Lb3G76bh11X6kGPizWzoA05L-nBwUcJV8NNLUgQuGOf0TyICmhyL4syhnZFGu82JP0a3dORlQXz9MnTA_f-8b6oy8v6g)
+1. Open **Services** (`Win + R` → `services.msc`)
+2. Zoek **WatchDog** in de lijst
+3. Stel **Startup Type** in op **Automatic (Delayed Start)**
 
-If you just want to start the application, run this command instead.
+## Opdrachtenoverzicht
 
-![](https://lh7-us.googleusercontent.com/yHiO-x4CPGIjC9hRx6o-Wr5lAYiwjGi0vNBp3faB91OYIqm8TTZcz3SVDgjSmq_7TN11aVCsNHoHV5sR0FHsA5DJqxJ74z3lAmXoaDkkMutl7yXj4fCoabX-9SwfsWJwOaooiVZhCvOKFXvJOCBicEA)
+| Opdracht | Beschrijving |
+| :--- | :--- |
+| `WatchDog.exe -api KEY` | API Key configureren en verbinden met DocBits |
+| `WatchDog.exe install` | Installeren als Windows-service |
+| `WatchDog.exe start` | De service starten |
+| `WatchDog.exe stop` | De service stoppen |
+| `WatchDog.exe debug` | Uitvoeren in consolemodus voor probleemoplossing |
+| `WatchDog.exe --version` | Huidige versie tonen |
+| `WatchDog.exe --list-folders` | Geconfigureerde bewaakte mappen weergeven |
+| `WatchDog.exe remove` | De service verwijderen |
 
-**Auto Start**
+## Meer informatie
 
-In order to set up the WatchDog app in a manner that allows it to automatically start once you turn your system on.
-
-Simply open “Services” in the settings of your Windows machine.
-
-![](https://lh7-us.googleusercontent.com/IEqq96LGZ9lBz2E0ApDrTz5huYutY7G1DecXLwhkdIF0pS235RN9HIqcehuJvXv5tyLdOnobhM_VNeMFA7tnMhwvWCnFRU5G14cHWN1swA4ZYF1rjvKzZtFMaCK2MDsPebvIz3MejDwjiYEiQ-_BQyg)
-
-Search for WatchDog in the local services and open the service (double-click on the entry)
-
-![](https://lh7-us.googleusercontent.com/qOtVCqR-zytJw2zifnjHmW_s5Hl6ijJt72d3PRI_euZU0H3wA-QD69mSFOnyDEnCVJXblEeA_Zbh5iQsyPa8gPJ85TY8wz-Ir0aMd2SWoKizKw1G4yi9jOmtxZG7-9EZbOvborv45OASD6zSa6lLbAk)
-
-In the above menu you will have the following options for automatic starting:
-
-* Select Automatic, the service will start on boot
-* Automatic (Delayed Start), this will wait 2 minutes after boot to start the service
+* [WatchDog-installatie](watchdog-installation.md)
+* [WatchDog-configuratie](watchdog-v2-configuration.md)
+* [WatchDog Admin FAQ](watchdog-admin-faq.md)

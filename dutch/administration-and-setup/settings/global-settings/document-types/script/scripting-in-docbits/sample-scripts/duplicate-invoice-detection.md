@@ -48,6 +48,6 @@ if inv_id and vendor:
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Veldwaarde lezen
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — OCR-tekst doorzoeken in alle documenten
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Validatiefout weergeven
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Veldwaarde lezen
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — OCR-tekst doorzoeken in alle documenten
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Validatiefout weergeven

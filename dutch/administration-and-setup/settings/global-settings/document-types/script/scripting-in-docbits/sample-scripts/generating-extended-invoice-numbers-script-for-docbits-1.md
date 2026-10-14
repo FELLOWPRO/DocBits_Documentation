@@ -1,4 +1,4 @@
-# Uitgebreide Factuurnummers
+# Script voor het Genereren van Uitgebreide Factuurnummers voor Docbits
 
 Dit document beschrijft in detail het "Generating Extended Invoice Numbers" script, dat de creatie van uitgebreide factuurnummers in Docbits automatiseert. Uitgebreide factuurnummers combineren meerdere documentidentificatoren, zoals het factuur-ID en het inkoopordernummer, tot één uitgebreide identificator. Dit script verbetert de traceerbaarheid van documenten en vereenvoudigt het bijhouden van gegevens.
 
@@ -29,3 +29,5 @@ if extended_number:
     else:
         set_field_value(fields_dict, 'invoice_extended_number', extended_number)
 ```
+
+

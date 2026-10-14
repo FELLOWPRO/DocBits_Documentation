@@ -1,7 +1,5 @@
 ---
-description: >-
-  Een script dat USD instelt als standaardvaluta en controleert of deze geldig
-  is of niet
+description: Een script dat USD instelt als standaardvaluta en controleert of deze geldig is of niet
 ---
 
 # USD als Standaardvaluta

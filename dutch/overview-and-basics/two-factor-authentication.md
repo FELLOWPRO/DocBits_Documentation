@@ -56,15 +56,14 @@ Back-upcodes worden alleen weergegeven op het moment dat ze worden gegenereerd. 
 
 ## Inloggen met 2FA
 
-1.  Voer uw e-mailadres en wachtwoord in zoals gebruikelijk.
+1. Voer uw e-mailadres en wachtwoord in zoals gebruikelijk.
 
     <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>Het inlogscherm. U kunt ook zonder wachtwoord inloggen met <strong>Aanmelden met een wachtwoord</strong>.</p></figcaption></figure>
-2.  DocBits vraagt om uw tweede factor. Kies uw methode:
-
-    * **Authenticator** — typ de huidige 6-cijferige code uit uw app.
-    * **E-mail** — klik op **E-mail mij een code** om een code per e-mail te ontvangen en typ die vervolgens in.
-    * **Passkey** — klik op **Een passkey gebruiken** en bevestig met Touch ID / Windows Hello / uw sleutel.
-    * **Back-upcode** — als u uw gebruikelijke methode niet kunt gebruiken.
+2. DocBits vraagt om uw tweede factor. Kies uw methode:
+   * **Authenticator** — typ de huidige 6-cijferige code uit uw app.
+   * **E-mail** — klik op **E-mail mij een code** om een code per e-mail te ontvangen en typ die vervolgens in.
+   * **Passkey** — klik op **Een passkey gebruiken** en bevestig met Touch ID / Windows Hello / uw sleutel.
+   * **Back-upcode** — als u uw gebruikelijke methode niet kunt gebruiken.
 
     <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Na uw wachtwoord vraagt DocBits om uw tweede factor. Wissel van methode met <strong>Een passkey gebruiken</strong> of <strong>E-mail mij een code</strong>, en vertrouw het apparaat desgewenst 30 dagen.</p></figcaption></figure>
 3. Bij succes bent u ingelogd.

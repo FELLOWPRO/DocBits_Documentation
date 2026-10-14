@@ -2,8 +2,8 @@
 
 DocBits valideert binnenkomende elektronische facturen (e-facturen) aan de hand van de officiële standaarden — **XRechnung**, **ZUGFeRD** en **Factur-X** — en routeert eventuele gevonden problemen naar de juiste verwerker. De instellingengroep **E-documenten** (onder **Documentverwerking**) heeft twee pagina's:
 
-* [**Validatieregels**](validation-rules.md) — kies welke e-factuurversies en -profielen u accepteert en stel de ernst van elke validatieregel in voor uw organisatie.
-* [**Notificatierouting**](notification-routing.md) — koppel validatiebevindingen aan de AI Workforce-agent die ze moet afhandelen.
+* **[Validatieregels](validation-rules.md)** — kies welke e-factuurversies en -profielen u accepteert en stel de ernst van elke validatieregel in voor uw organisatie.
+* **[Notificatierouting](notification-routing.md)** — koppel validatiebevindingen aan de AI Workforce-agent die ze moet afhandelen.
 
 Samen bepaalt u hiermee **wat als een probleem geldt** op een binnenkomende e-factuur en **wie het afhandelt**.
 
@@ -20,6 +20,6 @@ Ga naar **Instellingen → Documenttypen → Factuur → Geavanceerde instelling
 
 > E-factuurvalidatie wordt **per documenttype** geconfigureerd. Op dit moment geldt het voor het documenttype **Factuur**; schakel het in voor elk documenttype dat gevalideerd moet worden.
 
-U kunt ook direct hierheen springen met de **globale snelzoekfunctie**: druk op <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> op Windows en Linux) ergens in DocBits en typ _e-invoice_.
+U kunt ook direct hierheen springen met de **globale snelzoekfunctie**: druk op <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> op Windows en Linux) ergens in DocBits en typ *e-invoice*.
 
 <figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Globale snelzoekfunctie springt naar E-factuurvalidatie"><figcaption><p>Typ "e-invoice" in de snelzoekfunctie om direct naar de schakelaar te springen.</p></figcaption></figure>

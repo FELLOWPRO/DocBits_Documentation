@@ -61,3 +61,4 @@ Wanneer ingeschakeld, stelt deze instelling je in staat om toleranties voor **Vr
     * **Waarde:** De tolerantie wordt gedefinieerd als een vast bedrag.
 
 <figure><img src="../../../../../../.gitbook/assets/docbits_po_tolerance_value_fixed_def.jpg" alt="Docbits Po Tolerance Value Fixed Def"><figcaption></figcaption></figure>
+

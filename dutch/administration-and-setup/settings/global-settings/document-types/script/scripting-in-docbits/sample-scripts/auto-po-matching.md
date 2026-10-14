@@ -39,13 +39,12 @@ if po_nr:
 ## Wat gebeurt er na matching?
 
 De `document_data` wordt bijgewerkt met:
-
-* `po_items` — Gematchte PO-regelitems
-* `po_match_status` — Matchresultaat (`"matched"`, `"partially_matched"`, enz.)
-* `po_multi_matched` — Of meerdere PO's zijn gematcht
+- `po_items` — Gematchte PO-regelitems
+- `po_match_status` — Matchresultaat (`"matched"`, `"partially_matched"`, enz.)
+- `po_multi_matched` — Of meerdere PO's zijn gematcht
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Veldwaarde lezen
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Opgeschoond PO-nummer schrijven
-* [auto\_po\_match\_for\_purchase\_orders()](../functions/business-logic-functions.md#auto_po_match_for_purchase_orders) — PO-matching activeren
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Veldwaarde lezen
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Opgeschoond PO-nummer schrijven
+- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — PO-matching activeren

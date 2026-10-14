@@ -60,14 +60,14 @@ if table:
 ## Stapsgewijze Uitleg
 
 1. **Factuurtabel ophalen** uit `tables_dict`
-2. **Alle LINE\_TOTAL-waarden optellen** over de tabelrijen
+2. **Alle LINE_TOTAL-waarden optellen** over de tabelrijen
 3. **Vergelijken** van de berekende som met het geextraheerde nettobedrag
 4. **Bijwerken of markeren** — het nettobedrag vervangen of als ongeldig markeren
 
 ## Gebruikte Functies
 
-* [get\_column\_value()](../functions/table-functions.md#get_column_value) — Kolomwaarden uit rijen lezen
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Nettobedrag lezen
-* [set\_amount\_value()](../functions/field-functions.md#set_amount_value) — Gecorrigeerd bedrag instellen
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Veld als ongeldig markeren
-* [set\_field\_as\_valid()](../functions/field-functions.md#set_field_as_valid) — Veld als geldig markeren
+- [get\_column\_value()](../table-functions.md#get\_column\_value) — Kolomwaarden uit rijen lezen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Nettobedrag lezen
+- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — Gecorrigeerd bedrag instellen
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Veld als ongeldig markeren
+- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — Veld als geldig markeren

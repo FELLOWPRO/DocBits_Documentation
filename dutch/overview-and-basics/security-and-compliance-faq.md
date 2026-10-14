@@ -1,19 +1,19 @@
-# Beveiliging & Compliance FAQ
+# DocBits (FELLOWPRO AG) — Questionnaire betreffende beveiliging en naleving
 
 **Leverancier:** DocBits door FELLOWPRO AG | **Hosting:** Frankfurt, Duitsland | **ISO 27001 Gecertificeerd** | **Datum:** 2026-03-04
 
-***
+---
 
 ## Statuslegende
 
-| Symbool                  | Betekenis                                                                                                          |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| ✅ Bevestigd              | Antwoord geverifieerd uit officiële DocBits-documentatie of openbare bronnen                                       |
-| ✅ Gedeeltelijk           | Gedeeltelijk beantwoord; aanvullend detail nodig van DocBits-team                                                  |
-| ❓ Ter Bevestiging        | Geen openbare informatie beschikbaar — moet rechtstreeks met DocBits/FELLOWPRO worden bevestigd                    |
+| Symbool | Betekenis |
+|---------|-----------|
+| ✅ Bevestigd | Antwoord geverifieerd uit officiële DocBits-documentatie of openbare bronnen |
+| ✅ Gedeeltelijk | Gedeeltelijk beantwoord; aanvullend detail nodig van DocBits-team |
+| ❓ Ter Bevestiging | Geen openbare informatie beschikbaar — moet rechtstreeks met DocBits/FELLOWPRO worden bevestigd |
 | ⚠️ Verduidelijking Nodig | Openbare informatie roept vragen of onduidelijkheden op die expliciete verduidelijking van de leverancier vereisen |
 
-***
+---
 
 ## 🔹 Gegevenslocatie & Gegevenslokalisatie
 
@@ -25,7 +25,7 @@
 
 **Opmerkingen:** AWS Frankfurt bevestigd (S3 + OpenSearch). Vraag naar specifieke AWS-regiecode (eu-central-1) en of dit single of multi-AZ is.
 
-***
+---
 
 ### 2. Waar wordt de DR-omgeving (Noodherstel) gehost?
 
@@ -35,14 +35,13 @@
 
 **Opmerkingen:** Frankfurt (primair) + Amsterdam (secundair). Beide EU-locaties. Vraag naar RTO/RPO-doelstellingen en details over het failover-proces.
 
-***
+---
 
 ### 3. Waar worden back-ups opgeslagen?
 
 **Antwoord:** Back-ups opgeslagen op twee EU-locaties:
-
-* **Primair:** Frankfurt, Duitsland
-* **Secundair:** Amsterdam, Nederland
+- **Primair:** Frankfurt, Duitsland
+- **Secundair:** Amsterdam, Nederland
 
 Back-upschema: Dagelijkse, wekelijkse, driemaandelijkse en jaarlijkse back-ups.
 
@@ -50,14 +49,13 @@ Back-upschema: Dagelijkse, wekelijkse, driemaandelijkse en jaarlijkse back-ups.
 
 **Opmerkingen:** Uitgebreid back-upschema (dagelijks/wekelijks/driemaandelijks/jaarlijks) op twee EU-locaties. Alle gegevens blijven in de EU. Bevestig back-upversleuteling en hoe vaak herstel wordt getest.
 
-***
+---
 
 ### 4. Zijn er geo-partitioneringsopties beschikbaar (bijv. alleen UK)?
 
 **Antwoord:** Twee datacentregio's beschikbaar:
-
-* **Frankfurt, Duitsland** — voor alle EU-klanten
-* **New York, USA** — alleen voor Amerikaanse klanten
+- **Frankfurt, Duitsland** — voor alle EU-klanten
+- **New York, USA** — alleen voor Amerikaanse klanten
 
 Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is geen optieuitsluiting UK beschikbaar.
 
@@ -65,7 +63,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** EU-klanten zijn Frankfurt-only — geen cross-region gegevensmixing. UK-only hosting niet beschikbaar; UK-klanten zouden worden bediend vanuit Frankfurt. Verduidelijk of extra regio's op de routekaart staan.
 
-***
+---
 
 ### 5. Zijn gegevens versleuteld in rust en onderweg?
 
@@ -75,7 +73,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Bevestig specifieke versleutelingsnormen (bijv. AES-256 in rust, TLS 1.2+ onderweg).
 
-***
+---
 
 ## 🔹 AI/ML-modelverwerking
 
@@ -87,7 +85,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Mistral-modellen gehost in Frankfurt. Geen API-aanroepen van derden voor documentverwerking. Volledig zelfstandig.
 
-***
+---
 
 ### 7. Worden geëxtraheerde documenten gebruikt om bredere modellen over klanten heen te trainen?
 
@@ -97,7 +95,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Swarm intelligence leert structurele lay-outpatronen (veldcoördinaten/posities), niet documentinhoud. Dit betekent dat geen klantgegevens (factuurbedragen, leveranciersnamen, enz.) wordt gedeeld tussen huurders — alleen documentstructuurkennis.
 
-***
+---
 
 ### 8. Kunt u modeltraining beperken tot uw huurder alleen?
 
@@ -107,7 +105,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Laag risico: Gedeelde modellen leren alleen positie-/structuurgegevens (coördinaten), niet bedrijfsinhoud. Training van aangepaste documenttypen blijft huurder-gelimiteerd.
 
-***
+---
 
 ### 9. Waar worden AI/ML-modellen gehost en uitgevoerd?
 
@@ -117,7 +115,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Goed: AI-verwerking blijft in Frankfurt. Geen gegevensoverdracht naar externe AI-infrastructuur.
 
-***
+---
 
 ### 10. Welke AI/ML-technologieën worden gebruikt (OCR-engine, LLM, NLP)?
 
@@ -127,7 +125,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Vraag naar specifieke modeldetails: eigendom vs. OCR van derden, welke LLM ondersteunt Gen AI-functies.
 
-***
+---
 
 ### 11. Is er een optie voor on-premise AI-modelimplementatie?
 
@@ -137,7 +135,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Bevestig bereik van on-premise optie: Omvat het volledige AI-verwerking of alleen documentopslag?
 
-***
+---
 
 ## 🔹 Gegevenstoegang & Logboeken
 
@@ -149,7 +147,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Vraag DocBits: Exacte lijst van personeelsrollen met toegang tot onbewerkte documenten. Is toegang op basis van behoefte / op aanvraag alleen?
 
-***
+---
 
 ### 13. Welke toegangscontroles en logboeken bestaan voor personeelsleden van de leverancier?
 
@@ -159,7 +157,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Vraag naar: RBAC-details, MFA-vereisten, beheersing van bevoorrechte toegang (PAM), en of toegang wordt geregistreerd met onveranderbare audittrails.
 
-***
+---
 
 ### 14. Hoe lang worden toegangslogboeken bewaard?
 
@@ -169,7 +167,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** S3 + OpenSearch in Frankfurt. 30-daagse klantentoegang / 3-maanden interne retentie. Bevestig of logboeken onveranderbaar/tamper-proof zijn.
 
-***
+---
 
 ### 15. Hoe lang worden geüploade documenten / geëxtraheerde gegevens bewaard in DocBits?
 
@@ -179,7 +177,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Door klanten configureerbare retentie (30 dagen / 3 maanden). Bevestig: Omvat verwijdering alle kopieën (S3, OpenSearch, AI-trainingsgegevens)?
 
-***
+---
 
 ### 16. Kunnen klanten verwijdering van gegevens op aanvraag aanvragen?
 
@@ -189,7 +187,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Bevestig: Omvat verwijdering alle kopieën, inclusief back-ups en AI-trainingsgegevens die afkomstig zijn van de huurder?
 
-***
+---
 
 ### 17. Welke subverwerkers hebben toegang tot klantgegevens?
 
@@ -199,7 +197,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Vraag om volledige subprocessorlijst. Cloudflare bevestigd; vraag naar cloud hosting provider, AI-serviceproviders, enz.
 
-***
+---
 
 ### 18. Welke certificeringen en compliancekaders heeft DocBits?
 
@@ -209,25 +207,24 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Vraag: SOC 2 Type II? Penetratietestverslagen? ISO 27701 (privacy)? Jaarlijkse auditschema?
 
-***
+---
 
 ## 🔹 Integratieomvang (Infor LN)
 
 ### 19. Wat is de exacte lijst van gegevensvelden die uit LN-masters voor validatie worden opgehaald?
 
 **Antwoord:** Mastergegevens geïmporteerd via Infor BOD's:
-
-* **Leveranciers:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
-* **Inkooporders:** Sync.PurchaseOrder
-* **Rekeningschema:** Sync.CodeDefinition (ChartOfAccounts)
-* **Flex Dimensions:** Sync.CodeDefinition (FlexDimensions)
-* **Belastingcodes:** via BOD publish
+- **Leveranciers:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
+- **Inkooporders:** Sync.PurchaseOrder
+- **Rekeningschema:** Sync.CodeDefinition (ChartOfAccounts)
+- **Flex Dimensions:** Sync.CodeDefinition (FlexDimensions)
+- **Belastingcodes:** via BOD publish
 
 **Status:** ✅ Bevestigd
 
 **Opmerkingen:** Vraag DocBits om volledige BOD-lijst en documentatie op veldniveau voor uw specifieke LN-configuratie.
 
-***
+---
 
 ### 20. Welke specifieke koptekstvelden worden teruggevoerd naar LN?
 
@@ -237,7 +234,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Bekijk toewijzingsbestand voor uw specifieke omgeving. Bevestig dat alle statische velden overeenkomen met uw LN-bedrijfsinstelling.
 
-***
+---
 
 ### 21. Zijn terugschrijfbewerkingen beperkt tot AP/PO-interfaceobjecten alleen?
 
@@ -247,7 +244,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Bevestig: Schrijft DocBits ALLEEN naar AP-factuur- en PO-ontvangstobjecten? Andere LN-modules aangeraakt? Wat is het IDM-schrijfbereik?
 
-***
+---
 
 ### 22. Welke integriatiemethode wordt gebruikt (ION API, BOD's, directe DB)?
 
@@ -257,7 +254,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Goed: Geen directe DB-toegang. Alle communicatie via standaard integratilaag van Infor.
 
-***
+---
 
 ### 23. Welke authenticatie/autorisatie wordt gebruikt voor LN-connectiviteit?
 
@@ -267,7 +264,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** Zorg ervoor dat serviceaccounts het principe van minste privileges volgen. Bekijk rechten verleend aan de DocBits ION API-gebruiker.
 
-***
+---
 
 ### 24. Is gegevensoverdracht tussen DocBits en LN end-to-end versleuteld?
 
@@ -277,7 +274,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Opmerkingen:** ION API-communicatie gebruikt HTTPS/TLS. Bevestig minimale TLS-versie (1.2+).
 
-***
+---
 
 ### 25. Welke documenttypen worden ondersteund naast AP-facturen?
 

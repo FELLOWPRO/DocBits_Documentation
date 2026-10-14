@@ -1,4 +1,4 @@
-# Test: Email Import and Handling Tests
+# Test: Multi Email Import and Handling Tests
 
 ## What's Being Tested?
 
@@ -76,6 +76,4 @@ These tests ensure that our email import system works correctly. The main goals 
   * **Delete Imported Documents:** Remove the documents that were imported from the emails.
   * **Delete Emails:** Delete the test emails from the inbox and the target folder to keep everything clean.
 
-\
-
-
+\\

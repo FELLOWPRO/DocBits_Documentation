@@ -4,6 +4,7 @@
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
+
 In de **Bedrijfsvoorkeuren** kunt u belangrijke opmaak- en meldingsinstellingen voor de applicatie configureren. Deze omvatten:
 
 * Het kiezen van het **datumpatroon** dat door de hele applicatie wordt gebruikt

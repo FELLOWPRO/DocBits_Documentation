@@ -20,7 +20,7 @@ Elk resultaat toont:
 
 Gebruik de pijltjes omhoog en omlaag om een resultaat te markeren en druk dan op <kbd>Enter</kbd> om het te openen. Druk op <kbd>Esc</kbd> om het venster te sluiten.
 
-Alleen vermeldingen waarvoor u toestemming hebt verschijnen in de resultatenlijst. Alleen-beheerder vermeldingen zijn verborgen voor andere gebruikers.
+<mark>Alleen vermeldingen waarvoor u toestemming hebt verschijnen in de resultatenlijst. Alleen-beheerder vermeldingen zijn verborgen voor andere gebruikers.</mark>
 
 ## Recente zoekopdrachten
 
@@ -41,9 +41,9 @@ Als de acht zichtbare resultaten niet genoeg zijn, klik op de link **Alle result
 
 ## Toetsenbordreferentie
 
-| Toets                                         | Actie                              |
-| --------------------------------------------- | ---------------------------------- |
+| Toets | Actie |
+|---|---|
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Snelzoek vanaf elke locatie openen |
-| <kbd>↑</kbd> / <kbd>↓</kbd>                   | Tussen resultaten bewegen          |
-| <kbd>Enter</kbd>                              | Het gemarkeerde resultaat openen   |
-| <kbd>Esc</kbd>                                | Het venster sluiten                |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Tussen resultaten bewegen |
+| <kbd>Enter</kbd> | Het gemarkeerde resultaat openen |
+| <kbd>Esc</kbd> | Het venster sluiten |

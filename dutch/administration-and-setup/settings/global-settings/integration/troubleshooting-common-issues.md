@@ -1,4 +1,4 @@
-# Troubleshooting Common Issues
+# Veelvoorkomende problemen oplossen
 
 Hier zijn stappen voor het oplossen van veelvoorkomende problemen tijdens de integratie van DocBits met een Identity Service Provider (IdP) of andere diensten:
 

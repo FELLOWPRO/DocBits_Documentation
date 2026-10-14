@@ -15,10 +15,10 @@ Deze pagina biedt een gedetailleerde uitleg van alle beschikbare instellingen.
 
 ## Toegang tot Instellingen voor Classificatie en extractie
 
-Ga naar de Instellingen voor **Classificatie en Extractie** via:\
-**Instellingen → Documentverwerking → Classificatie en Extractie**
+Ga naar de Instellingen voor **Classificatie en extractie** via:\
+**Instellingen → Documentverwerking → Classificatie en extractie**
 
-<figure><img src="../../../../.gitbook/assets/dbdc863-settings-nav-nl-20261012.png" alt="Navigatie in de instellingen met Documentverwerking en Classificatie en Extractie gemarkeerd"><figcaption><p>Open <strong>Instellingen → Documentverwerking → Classificatie en Extractie</strong>.</p></figcaption></figure>
+![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_classification_and_extraction.png)
 
 ## Documenten splitsen
 
@@ -59,7 +59,7 @@ In de sectie **Bedrag opmaak** heb je twee opties:
 {% hint style="info" %}
 **Voorwaarden voor een werkende tabelextractie**
 
-* Het documenttype heeft **tabelkolommen** (Instellingen → Globale instellingen → Documenttypen → [Tabelkolommen](../../global-settings/document-types/table-columns/)). Zonder kolommen is er niets om naar te extraheren.
+* Het documenttype heeft **tabelkolommen** (Instellingen → Globale instellingen → Documenttypen → [Tabelkolommen](../../global-settings/document-types/table-columns/README.md)). Zonder kolommen is er niets om naar te extraheren.
 * **Tabel extractie** of **AI-tabel extractie** is hieronder ingeschakeld, voor de hele organisatie.
 * Het document heeft leesbare tekst: OCR is uitgevoerd, of E-Text wordt gebruikt voor digitaal aangemaakte pdf's ([OCR-instellingen](../ocr-settings.md)).
 * Training en AI-modellen gelden **per leverancier**. Een getrainde tabel geldt alleen voor documenten van de leverancier waarop ze is getraind.
@@ -67,21 +67,14 @@ In de sectie **Bedrag opmaak** heb je twee opties:
 
 Je kunt tabellen uit documenten extraheren door **Tabel extractie** of **AI-tabel extractie** in te schakelen. Een getrainde tabel (of deze nu AI-gebaseerd of handmatig is) wordt altijd gekoppeld aan een specifieke leverancier.
 
-**Tabel extractie:** Activeert regelgebaseerde tabelextractie. Tabellen worden per leverancier getraind op het validatiescherm (_Ga naar tabelextractieweergave_).\
+**Tabel extractie:** Activeert regelgebaseerde tabelextractie. Tabellen worden per leverancier getraind op het validatiescherm (*Ga naar tabelextractieweergave*).\
 Meer informatie over training vind je [hier](../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
 
 **AI-tabel extractie:** Gebruikt AI om de tabel van elke leverancier zonder training te extraheren. Als de resultaten voor één leverancier niet nauwkeurig genoeg zijn, train dan de tabel van die leverancier; de opgeslagen regels krijgen voor die leverancier dan voorrang op de AI.
 
-**Gebruik tabelextractie via visie (AI):** De AI leest de paginaafbeelding in plaats van de tekstlaag. Helpt bij gescande documenten en tabellen zonder duidelijke tekststructuur; langzamer. Het keuzemenu naast de schakelaar bepaalt hoe intensief de paginaafbeelding wordt gebruikt:
+**Gebruik Tabel extractie Vision (AI):** De AI leest de paginaafbeelding in plaats van de tekstlaag. Helpt bij gescande documenten en tabellen zonder duidelijke tekststructuur; langzamer.
 
-* **Uit (alleen tekst)** – Er wordt alleen de tekstlaag gebruikt. Dit is de standaard.
-* **Alleen afbeeldingen** – Er wordt alleen de paginaafbeelding gelezen.
-* **Hybride (tekst en afbeeldingen)** – Tekstlaag en paginaafbeelding worden in dezelfde aanvraag gecombineerd.
-* **Auto (per document beslist)** – DocBits beslist per document of de tekstlaag volstaat.
-
-De modus wordt opgeslagen onder de voorkeurssleutel `TABLE_EXTRACTION_VISION_MODE`; de oude schakelaar `TABLE_EXTRACTION_USE_VISION` blijft bestaan en betekent in de praktijk _Alleen afbeeldingen_.
-
-**Gebruik gestructureerde extractie (AI):** De AI geeft de tabel terug in een vaste structuur die direct op de geconfigureerde tabelkolommen wordt afgebeeld. Aanbevolen wanneer de kolomkoppen op de documenten sterk variëren. Als je op de instelling klikt, opent een voorbeeld van precies welke velden en kolommen er van de AI worden gevraagd: de kopvelden en de kolomvelden per regel worden weergegeven met hun bron (aangevraagde of uitgeschakelde standaardvelden) en de verwachte uitvoermodus (bijvoorbeeld _strict_ – geen extra kolommen). Velden die wel voor het documenttype zijn geconfigureerd maar zijn uitgeschakeld, worden niet bij de AI opgevraagd.
+**Gebruik gestructureerde extractie (AI):** De AI geeft de tabel terug in een vaste structuur die direct op de geconfigureerde tabelkolommen wordt afgebeeld. Aanbevolen wanneer de kolomkoppen op de documenten sterk variëren.
 
 **Tabelextractie voor kostenelement:** Wanneer ingeschakeld, kan DocBits kostenelementen uit tabellen op regelniveau extraheren en deze dienovereenkomstig classificeren.\
 Een gedetailleerde uitleg is beschikbaar [hier](table-extraction-for-costing-element.md).
@@ -89,13 +82,13 @@ Een gedetailleerde uitleg is beschikbaar [hier](table-extraction-for-costing-ele
 **Automatisch belastingcode ophalen:** Wanneer ingeschakeld, vult het systeem automatisch het veld **Belastingcode** op het Validatiescherm, mits er een belastingcodeveld is geconfigureerd.\
 Meer informatie over deze instelling vind je [hier](auto-extract-tax-code.md).
 
-**Extractieregels opslaan (alleen admin):** Alleen beheerders kunnen in de tabeltraining op _Regels opslaan_ klikken. Schakel dit in wanneer gebruikers steeds regels opslaan die de extractie van een leverancier verstoren.
+**Extractieregels opslaan (alleen admin):** Alleen beheerders kunnen in de tabeltraining op *Regels opslaan* klikken. Schakel dit in wanneer gebruikers steeds regels opslaan die de extractie van een leverancier verstoren.
 
-**AI-model:** Selecteert de AI-tier die voor tabelextractie wordt gebruikt. Er zijn zes opties beschikbaar: **Full** (hoogste nauwkeurigheid, langzaamst, 2 tokens per document), **Fast** (standaard; 1 token per document), **Nexus** en **Nexus Flash** (alternatieve modelfamilie, optioneel), plus **Auto** en **Auto Nexus**, waarbij DocBits per document beslist hoe sterk het model moet zijn. De tabel onder de keuzelijst toont:
+**AI-model:** Selecteert de AI-tier die voor tabelextractie wordt gebruikt: **Fast** (standaard), **Full** (hoogste nauwkeurigheid, langzamer) of **Nexus** (optionele derde tier). De tabel onder de keuzelijst toont:
 
 * Welke **leveranciers** welk AI-model gebruiken
-* Of ze gestructureerde extractie (AI) en E-Text gebruiken
-* Opties om een invoer te verwijderen en de leverancier zo terug te zetten naar de standaard
+* Of ze E-Text gebruiken
+* Opties om een item te verwijderen of de trainingsgegevens te resetten
 
 Deze instelling wordt in detail uitgelegd [hier](ai-model.md).
 
@@ -105,42 +98,40 @@ Alles wat DocBits over een tabel leert, wordt **per leverancier** opgeslagen:
 
 * **Opgeslagen regels** (tabeltraining): positie van de tabel en koppeling van de kolommen op de lay-out van die leverancier.
 * **AI-tabeltags en opmaakregels**: aanwijzingen die de gebruiker voor de AI-tabel van die leverancier heeft opgeslagen.
-* **Leverancierspecifiek AI-model**: de tier die voor die leverancier is gekozen onder _Meer instellingen_ op het validatiescherm.
+* **Leverancierspecifiek AI-model**: de tier die voor die leverancier is gekozen onder *Meer instellingen* op het validatiescherm.
 
-Leverancier A met opgeslagen regels toont dus een deterministische tabel in het tabblad _Geëxtraheerde tabel_ van het validatiescherm, terwijl leverancier B zonder regels de _AI Geëxtraheerde tabel_ krijgt. Om leverancier B zich als A te laten gedragen, train je de tabel van B eenmalig. Om een leverancier te resetten, verwijder je de regels op het validatiescherm of reset je de trainingsgegevens in de AI-modeltabel.
+Leverancier A met opgeslagen regels toont dus een deterministische tabel in het tabblad *Geëxtraheerde tabel* van het validatiescherm, terwijl leverancier B zonder regels de *AI Geëxtraheerde tabel* krijgt. Om leverancier B zich als A te laten gedragen, train je de tabel van B eenmalig. Om een leverancier te resetten, verwijder je de regels op het validatiescherm of reset je de trainingsgegevens in de AI-modeltabel.
 
 ### Voorkeurssleutels
 
 Elke schakelaar in deze sectie wordt opgeslagen als een organisatievoorkeur. Gebruik de sleutel wanneer je de waarde instelt via de API (`/preferences/set_preference`), een script of de DocBits MCP (`get_preference` / `set_preference`).
 
-| Instelling (UI-label)                                                   | Voorkeurssleutel               | Waarden                                                                                                                                 |
-| ----------------------------------------------------------------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Tabel extractie                                                         | `TABLE_EXTRACTION_SETTING`     | `true` / `false`                                                                                                                        |
-| AI-tabel extractie                                                      | `USE_AI_TABLE_EXTRACTION`      | `true` / `false`                                                                                                                        |
-| Gebruik tabelextractie via visie (AI)                                   | `TABLE_EXTRACTION_VISION_MODE` | `off` (standaard), `vision`, `hybrid`, `auto`                                                                                           |
-| Gebruik tabelextractie via visie (AI) – oude schakelaar                 | `TABLE_EXTRACTION_USE_VISION`  | `true` / `false`; betekent in de praktijk `vision`                                                                                      |
-| Gebruik gestructureerde extractie (AI)                                  | `USE_STRUCTURED_EXTRACTION`    | `true` / `false`                                                                                                                        |
-| Tabelextractie voor kostenelement                                       | `CHARGES_TABLE_EXTRACTION`     | `true` / `false`                                                                                                                        |
-| Automatisch belastingcode ophalen                                       | `AUTO_EXTRACT_TAX_CODE`        | `true` / `false`                                                                                                                        |
-| Extractieregels opslaan (alleen admin)                                  | `ONLY_ADMIN_CAN_SAVE_RULES`    | `true` / `false`                                                                                                                        |
-| AI-model                                                                | `AI_MODEL`                     | `gpt-6-sol` (Full), `gpt-6-luna` (Fast), `qwen3.8-max` (Nexus), `glm-5.3-flash` (Nexus Flash), `auto` (Auto), `auto-nexus` (Auto Nexus) |
-| Tabelextractieversie (bevestigingsdialoog)                              | `TBL_EXT_VERSION`              | versiestring                                                                                                                            |
-| OCR-instellingen → Gebruik AI-gegevens voor tabellen indien beschikbaar | `USE_AI_DATA_FOR_TABLE`        | `true` / `false`                                                                                                                        |
-| OCR-instellingen → Gebruik E-Text indien beschikbaar                    | `USE_ETEXT_IF_AVAILABLE`       | `true` / `false`                                                                                                                        |
+| Instelling (UI-label) | Voorkeurssleutel | Waarden |
+|---|---|---|
+| Tabel extractie | `TABLE_EXTRACTION_SETTING` | `true` / `false` |
+| AI-tabel extractie | `USE_AI_TABLE_EXTRACTION` | `true` / `false` |
+| Gebruik Tabel extractie Vision (AI) | `TABLE_EXTRACTION_USE_VISION` | `true` / `false` |
+| Gebruik gestructureerde extractie (AI) | `USE_STRUCTURED_EXTRACTION` | `true` / `false` |
+| Tabelextractie voor kostenelement | `CHARGES_TABLE_EXTRACTION` | `true` / `false` |
+| Automatisch belastingcode ophalen | `AUTO_EXTRACT_TAX_CODE` | `true` / `false` |
+| Extractieregels opslaan (alleen admin) | `ONLY_ADMIN_CAN_SAVE_RULES` | `true` / `false` |
+| AI-model | `AI_MODEL` | `gpt-5.4-mini` (Fast), `gpt-5.5` (Full), `qwen3.8-max` (Nexus) |
+| Tabelextractieversie (bevestigingsdialoog) | `TBL_EXT_VERSION` | versiestring |
+| OCR-instellingen → Gebruik AI-gegevens voor tabellen indien beschikbaar | `USE_AI_DATA_FOR_TABLE` | `true` / `false` |
+| OCR-instellingen → Gebruik E-Text indien beschikbaar | `USE_ETEXT_IF_AVAILABLE` | `true` / `false` |
 
 Opmerkingen:
 
 * Booleaanse voorkeuren worden opgeslagen als de strings `true` / `false`; een sleutel die nooit is ingesteld, telt als `false`. Als je `1` of `0` verstuurt, slaat DocBits `true` / `false` op.
 * Een niet-ingestelde `AI_MODEL` betekent **Fast**.
-* Een niet-ingestelde `TABLE_EXTRACTION_VISION_MODE` wordt afgeleid uit de oude schakelaar `TABLE_EXTRACTION_USE_VISION`: `true` geeft `vision`, elke andere waarde geeft `off`.
 * Het wijzigen van een sleutel geldt voor documenten die daarna worden verwerkt. Start een document opnieuw om het met de nieuwe instelling opnieuw te extraheren.
-* Keuzes per leverancier (E-Text, AI-model, opgeslagen regels) zijn geen organisatievoorkeuren; ze worden op het validatiescherm ingesteld onder _Meer instellingen_ bij een document van die leverancier.
+* Keuzes per leverancier (E-Text, AI-model, opgeslagen regels) zijn geen organisatievoorkeuren; ze worden op het validatiescherm ingesteld onder *Meer instellingen* bij een document van die leverancier.
 
 ## Elektronisch document
 
 **Proces Niet-ondersteund ZUGFeRD PDF:** Indien ingeschakeld, worden niet-ondersteunde **ZUGFeRD**-versies verwerkt als standaard-pdf's en wordt de ingesloten XML genegeerd.
 
-De lijst met ondersteunde **ZUGFeRD**-versies vind je [hier](../../global-settings/document-types/edi/zugferd/).
+De lijst met ondersteunde **ZUGFeRD**-versies vind je [hier](../../global-settings/document-types/edi/zugferd/README.md).
 
 ## Classificatieregels
 

@@ -1,4 +1,4 @@
-# Berekening Totale Kosten
+# Script voor het Berekenen van Totale Kosten voor Docbits
 
 Het "Calculating Total Charges" script automatiseert het proces van het optellen van verschillende kosten en extra bedragen binnen factuurdocumenten. Deze handleiding leidt u door de scriptconfiguratie, logica en toepassing om nauwkeurige totale kostenberekeningen in uw documenten te garanderen.
 

@@ -2,7 +2,7 @@
 
 ## Behoud de standaardkolommen voor bedragen en hoeveelheden
 
-De controles op regelniveau (_hoeveelheid × eenheidsprijs = regeltotaal_) en PO-matching zoeken naar de standaardkolommen `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. Als u voor deze waarden in plaats daarvan eigen kolommen aanmaakt, draaien de controles niet en meldt PO-matching ontbrekende verplichte kolommen. Hernoem de _titel_ als de formulering u niet bevalt; behoud de kolom.
+De controles op regelniveau (*hoeveelheid × eenheidsprijs = regeltotaal*) en PO-matching zoeken naar de standaardkolommen `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. Als u voor deze waarden in plaats daarvan eigen kolommen aanmaakt, draaien de controles niet en meldt PO-matching ontbrekende verplichte kolommen. Hernoem de *titel* als de formulering u niet bevalt; behoud de kolom.
 
 ## Verbergen, niet verwijderen
 
@@ -12,17 +12,17 @@ Standaardkolommen die u niet nodig hebt, worden verborgen, niet verwijderd; ze k
 
 Elke verplichte kolom moet in elke rij gevuld zijn voordat een gebruiker het document kan goedkeuren. Gebruik dit voor waarden die het ERP afwijst als ze ontbreken (bijvoorbeeld de kostenplaats in een boekhoudexport), niet voor waarden die alleen maar handig zijn.
 
-## Gebruik _Alleen-lezen_ voor opgezochte waarden
+## Gebruik *Alleen-lezen* voor opgezochte waarden
 
 Waarden die een script of een stamgegevens-lookup in de tabel schrijft (artikelomschrijving uit het artikelbestand, belastingcode van de leverancier) moeten alleen-lezen zijn, zodat gebruikers de bron corrigeren in plaats van de kopie.
 
 ## Gebruik AI per kolom, niet per leverancier
 
-Voor een leverancier met getrainde regels komen de meeste kolommen goed uit de regels. Als één kolom onbetrouwbaar is (lange omschrijvingen die afbreken, een korting die soms op een andere plek staat), schakel dan alleen voor die kolom _AI gebruiken_ in. De regels blijven de rest vullen.
+Voor een leverancier met getrainde regels komen de meeste kolommen goed uit de regels. Als één kolom onbetrouwbaar is (lange omschrijvingen die afbreken, een korting die soms op een andere plek staat), schakel dan alleen voor die kolom *AI gebruiken* in. De regels blijven de rest vullen.
 
 ## Benoem kolommen voor het ERP, niet voor het document
 
-De _Kolomnaam_ komt terecht in exportmappings en scripts. `COST_CENTRE` is gemakkelijker te mappen dan `KST` en verandert niet wanneer een leverancier het anders afdrukt.
+De *Kolomnaam* komt terecht in exportmappings en scripts. `COST_CENTRE` is gemakkelijker te mappen dan `KST` en verandert niet wanneer een leverancier het anders afdrukt.
 
 ## Test op een opnieuw gestart document
 

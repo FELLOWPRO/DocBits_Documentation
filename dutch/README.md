@@ -8,7 +8,7 @@ Welkom bij **DocBits**, uw uitgebreide bron voor documentatiestrategieën en inz
 
 {% @arcade/embed flowid="JqTpGV34UBKmI0iAumoX" url="https://app.arcade.software/share/JqTpGV34UBKmI0iAumoX" %}
 
-[**DocBits**](https://www.docbits.com) **van** [**FELLOWPRO AG**](https://www.fellowpro.com) is een geavanceerde oplossing voor intelligente documentverwerking (IDP), ontworpen om het verwerken van bedrijfsdocumenten te optimaliseren en te automatiseren.
+[**DocBits**](https://www.docbits.com) **van** [**FELLOWPRO AG**](https://www.fellowpro.com) is een geavanceerde oplossing voor intelligente documentverwerking (IDP), ontworpen om het verwerken van bedrijfsdocumenten te optimaliseren en te automatiseren. 
 
 Officiële documentatie: [docs.docbits.com](https://docs.docbits.com/)
 
@@ -32,7 +32,7 @@ Hieronder vindt u een overzicht van de unieke kenmerken en voordelen:
    * Maakt automatische boeking naar grootboekrekeningen mogelijk.
    * Staat het splitsen van bedragen per afdeling toe.
    * Ondersteunt het toewijzen van grootboekrekeningen door het team voor crediteurenbeheer.
-5. **Geïntegreerde validatie- en** [**goedkeuringsprocessen**](https://github.com/Fellow-Consulting-AG/docbits/tree/nl/readme/broken-reference/README.md)
+5. **Geïntegreerde validatie- en** [**goedkeuringsprocessen**](broken-reference)
    * Biedt geïntegreerde validatieprocessen om gegevensnauwkeurigheid te waarborgen.
    * Beschikt over goedkeurings[workflows](administration-and-setup/workflow/) om het documentbeheer te stroomlijnen.
 6. **Naadloze integratie**

@@ -2,7 +2,7 @@
 
 Elk script ontvangt automatisch de volgende variabelen in zijn uitvoeringscontext. Deze hoeven **niet** geimporteerd te worden -- ze zijn gewoon beschikbaar.
 
-***
+---
 
 ## Hoofdvariabelen
 
@@ -151,7 +151,7 @@ user       # UserAuthentication-object — voor API-aanroepen zoals is_supplier_
 **`user` is niet altijd volledig beschikbaar:** In Celery-workercontext (automatische verwerking) heeft `user` beperkte eigenschappen. In UI-context (`ON_FIELD_CHANGE`, `ON_SAVE`) is het het volledige gebruikersobject.
 {% endhint %}
 
-***
+---
 
 ## Veelvoorkomende Toegangspatronen
 

@@ -1,51 +1,74 @@
-# Definiëren van Tabellen en Kolommen
+# Tabellen en kolommen definiëren
 
-## Definieer Tabellen
+Gebruik deze handleiding om tabellen en kolommen voor de extractie van regelitems in DocBits handmatig te definiëren. Dit is vooral nuttig wanneer de automatische detectie de tabelstructuur niet volledig herkent of wanneer u eigen velden wilt toevoegen.
 
-Om tabellen en kolommen in een document te definiëren, importeer een document, open het en ga naar de tabel extractie weergave zoals al bekend (via "Regelitems").
+### 1. Open de weergave voor tabelextractie
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_1.png)
+Open uw document in DocBits en klik op de knop **“Table Training”** om de weergave voor tabelextractie te openen.
 
-Je komt terecht op het volgende scherm waar je de Trainingsmodus kunt activeren:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_1.png" alt="" width="563"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_2.png)
+### 2. Trainingsmodus activeren
 
-Via de "Bewerken" knop wordt de tabel selectiemodus geactiveerd en kun je het document aan de linkerkant bewerken:
+Om tabellen en kolommen handmatig te definiëren of te wijzigen, klikt u op **“TRAINING MODE.”**
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_3.png)
+<div align="center"><figure><img src="../../../../.gitbook/assets/define_tables_and_columns_2.png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-Over het algemeen ben je nu in staat om de functionaliteit voor het automatisch detecteren van tabellen te gebruiken en zal het systeem automatisch de tabellen op het document definiëren:
+### 3. Het tabelgebied definiëren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_4.png)
+Na het openen van de Training Mode kunt u definiëren waar de tabel zich in het document bevindt. U hebt twee opties:
 
-Als het systeem niet in staat is om de tabellen automatisch te vinden, kun je handmatig de tabellen op het document definiëren zoals getoond in de video hieronder:
+#### Optie 1: Auto-Detect gebruiken
 
-## Definieer Kolommen
+Klik op de knop **“Auto-Detect Tables”** zodat DocBits zelf probeert het tabelgebied te herkennen.
 
-Zodra de tabellen zijn gedefinieerd, kun je handmatig de kolommen definiëren via de volgende knop:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_3.png" alt="" width="375"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_5.png)
+Als de detectie slaagt, wordt de omtrek van de tabel automatisch weergegeven. Daarna kunt u verdergaan met het definiëren van de kolommen.
 
-Definieer en sorteer de kolommen via slepen en neerzetten op het document. Herhaal dit ook voor de tabellen op de andere pagina's. Als alternatief, als de tabellen op elke pagina gelijk zijn, kun je de volgende knop gebruiken om dezelfde kolom te gebruiken voor alle tabellen die in het document zijn gedefinieerd. Deze functionaliteit kopieert de kolommen die je hebt gedefinieerd naar alle andere pagina's:
+#### Optie 2: Tabel handmatig definiëren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_6.png)
+Als de automatische detectie mislukt of onnauwkeurig is, kunt u de tabel handmatig definiëren:
 
-Als het document erg verwarrend is, kan er worden ingezoomd met de "Inzoomen" en "Uitzoomen" functionaliteit. Dit is handig, bijvoorbeeld, wanneer veel informatie dicht bij elkaar staat en dit het moeilijk maakt om de kolommen te definiëren:
+1. Klik op de knop **“Edit”** om de modus voor tabelselectie te activeren.
+2. Teken een rechthoek rond het tabelgebied in de documentweergave aan de linkerkant.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_7.png)
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_4.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Als je per ongeluk een kolom hebt gedefinieerd, kan deze worden geselecteerd door erop te klikken en verwijderd via de volgende knop:
+### 4. Kolommen toevoegen en definiëren
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_8.png)
+Zodra de tabellen zijn gedefinieerd, kunt u de kolommen handmatig definiëren met de volgende knop:\
 
-Opmerking: De knop is alleen zichtbaar als de kolom is geselecteerd.
 
-Als je klaar bent met het definiëren van alle tabellen en kolommen in je document, gebruik dan de "Opslaan" knop om je wijzigingen te activeren en de gegevens uit het document te extraheren:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_5.png" alt="" width="563"><figcaption></figcaption></figure>
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_9.png)
+Definieer en sorteer de kolommen door ze op het document te slepen en neer te zetten. Herhaal dit ook voor de tabellen op de andere pagina's. Als de tabellen op elke pagina gelijk zijn, kunt u als alternatief de volgende knop gebruiken om dezelfde kolommen toe te passen op alle tabellen die in het document zijn gedefinieerd. Deze functie kopieert de kolommen die u hebt gedefinieerd ook naar alle andere pagina's:
 
-De gegevens van alle gedefinieerde gebieden zullen worden geëxtraheerd en aan de rechterkant worden getoond:
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_6.png" alt="" width="563"><figcaption></figcaption></figure>
 
-In de volgende sectie leer je hoe je de geëxtraheerde gegevens kunt aanpassen.
+Gebruik de **zoom**-functie om kolommen beter te definiëren in drukke of complexe documenten, bijvoorbeeld wanneer veel informatie dicht bij elkaar staat en het daardoor moeilijk is om de kolommen te definiëren:
 
-<figure><img src="https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/define_tables_and_columns_10.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_7.png" alt="" width="277"><figcaption></figcaption></figure>
+
+Als u per ongeluk een kolom hebt gedefinieerd, kunt u die selecteren door erop te klikken en verwijderen met de volgende knop:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_9.png" alt="" width="563"><figcaption></figcaption></figure>
+
+<mark style="color:red;">**Opmerking**</mark>: De knop is alleen zichtbaar als de kolom is geselecteerd.
+
+Als u klaar bent met het definiëren van alle tabellen en kolommen in uw document, gebruikt u de knop “Save” om uw wijzigingen te activeren en de gegevens uit het document te extraheren:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_8.png" alt="" width="563"><figcaption></figcaption></figure>
+
+De gegevens van alle gedefinieerde gebieden worden geëxtraheerd en aan de rechterkant weergegeven:
+
+<figure><img src="../../../../.gitbook/assets/define_tables_and_columns_10.png" alt="" width="375"><figcaption></figcaption></figure>
+
+### 6. Opslaan en extraheren
+
+Klik op **“Save Rules”** zodra alle tabellen en kolommen zijn gedefinieerd.
+
+* Hiermee geeft u DocBits aan waar de tabelgegevens van deze specifieke leverancier te vinden zijn.
+* De volgende keer dat een document van dezelfde leverancier wordt geüpload, extraheert DocBits de tabel automatisch met de opgeslagen regels.
+
+<mark style="color:red;">**Opmerking**</mark>: Deze training is leverancierspecifiek. Ze geldt niet voor documenten van andere leveranciers.

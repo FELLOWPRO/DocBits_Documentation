@@ -37,7 +37,8 @@ De **Voorbeeldfunctie** stelt u in staat om te testen en te bekijken hoe een ge√
 * Upload een EDI-bestand via de standaard uploadflow.
 * Kopieer de **Document-ID** van het ge√ºploade bestand.
 * Ga naar de interface van het **Structuur Descriptor Bestand**.
-*   Open de **Voorbeeldfunctie.**\\
+*   Open de **Voorbeeldfunctie.**\
+
 
     <div align="left"><img src="https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F9lddYJl2G4tzpdr9RD5F%252Fimage.png%3Falt%3Dmedia%26token%3Df7663f70-ef10-4e64-bbdc-41048ed8352a&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=36ce2b93&#x26;sv=2" alt="" width="375"></div>
 * Voer de **Document-ID** in het veld in en druk op **Test**.

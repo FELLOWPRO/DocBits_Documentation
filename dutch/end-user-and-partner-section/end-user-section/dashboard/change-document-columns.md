@@ -6,7 +6,7 @@ hidden: true
 
 Klik vanuit het Dashboard op het pictogram Geavanceerde Instellingen zoals hieronder weergegeven:
 
-<figure><img src="../../../.gitbook/assets/docbits_workflow_order_type.png" alt="Docbits Dashboard Columns Settings"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/docbits_dashboard_columns_settings.png" alt="Docbits Dashboard Columns Settings"><figcaption></figcaption></figure>
 
 Het volgende menu wordt dan weergegeven:
 

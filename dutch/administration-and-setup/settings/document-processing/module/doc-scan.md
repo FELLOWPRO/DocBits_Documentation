@@ -50,7 +50,8 @@ If you get the following error after installing and calling up the url https://l
 You may see one of the following error messages:“DNS timed out”“DNS request timed out”\
 \*Caused\*\
 For security reasons, the FRITZ!Box suppresses DNS responses that refer to IP addresses in your own home network. This is a security feature of the FRITZ!Box to protect against so-called DNS rebinding attacks.\
-If you use a FritzBox, you must first make the following settings in the FritzBox menu:\\
+If you use a FritzBox, you must first make the following settings in the FritzBox menu:\
+
 
 1. In the FRITZ!Box user interface, click on \`Heimnetz\`.
 2. \`Heimnetz\` Click in the menu \`Netzwerk\`.
@@ -73,15 +74,21 @@ Copy
 
 **Legend:**
 
+&#x20;
+
 * Yes – device works perfectly
 * No – protocol not supported by device
 * ? – device works with sane-airscan, but protocol is not reported by user
 * Space – author has no information on this mode/device combination
 
+&#x20;
+
 **Definitions:**
 
 * eSCL stands for Airscan is a SANE WebScan frontend that supports Apple’s AirScan protocol. The scanners are automatically detected and published via mDNS.
 * WSD stands for “Web Services on Devices” and is a network communication protocol used for printer discovery and management over a local area network. In WSD mode, printers can be automatically discovered and added to a computer system without requiring manual configuration or installing additional printer drivers. It enables easy setup and printing to compatible printers over a network. WSD mode is commonly used in Windows operating systems to discover and connect printers on the network.
+
+
 
 | Device                            | eSCL mode | WSD mode |
 | --------------------------------- | --------- | -------- |

@@ -1,6 +1,7 @@
 # Stamgegevens opzoeken
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
 Met **Stamgegevens opzoeken** (zijbalk: **Lookup Master Data**) kunt u de stamgegevens bekijken en beheren die DocBits gebruikt om uit documenten geëxtraheerde gegevens te valideren tegen uw ERP-systeem. Dit is essentieel voor nauwkeurige PO matching, leveranciersvalidatie en het automatisch invullen van velden. Open de pagina via **Instellingen → Documentverwerking → Lookup Master Data**.
 
@@ -10,12 +11,12 @@ Met **Stamgegevens opzoeken** (zijbalk: **Lookup Master Data**) kunt u de stamge
 
 Het linkerpaneel toont vier categorieën gegevensbronnen:
 
-| Bron                    | Beschrijving                                                                                                                                   |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **BOD Input Data**      | Gegevens die via Infor-BOD-berichten (Business Object Document) worden ontvangen.                                                              |
-| **ERP API Data**        | Gegevens die rechtstreeks via een API uit uw ERP-systeem worden opgehaald. Klik op het tandwielpictogram om de API-verbinding te configureren. |
-| **Imported**            | Handmatig geïmporteerde gegevens (bijvoorbeeld via een CSV-upload). Klik op het **+**-pictogram om nieuwe gegevens toe te voegen.              |
-| **DocBits Master Data** | Interne stamgegevens die binnen DocBits worden beheerd.                                                                                        |
+| Bron | Beschrijving |
+|------|--------------|
+| **BOD Input Data** | Gegevens die via Infor-BOD-berichten (Business Object Document) worden ontvangen. |
+| **ERP API Data** | Gegevens die rechtstreeks via een API uit uw ERP-systeem worden opgehaald. Klik op het tandwielpictogram om de API-verbinding te configureren. |
+| **Imported** | Handmatig geïmporteerde gegevens (bijvoorbeeld via een CSV-upload). Klik op het **+**-pictogram om nieuwe gegevens toe te voegen. |
+| **DocBits Master Data** | Interne stamgegevens die binnen DocBits worden beheerd. |
 
 ## Gegevenstabel
 

@@ -1,4 +1,4 @@
-# E-mailmelding
+# Email Notification
 
 {% embed url="https://youtu.be/MZoDMibM-7E" %}
 DocBits Tasks & Notifications Tutorial: Assign Work, Track Status & Handle Workflow Tasks

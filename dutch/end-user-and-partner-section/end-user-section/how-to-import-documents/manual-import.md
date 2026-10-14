@@ -6,6 +6,7 @@ Als je documenten handmatig wilt importeren in DocBits, volg dan deze eenvoudige
 DocBits Import Tutorial: Upload Documents, Drag & Drop + Manual vs Automatic Classification
 {% endembed %}
 
+
 * Klik op de Upload-knop op het DocBits Dashboard.
 * Er verschijnt een venster waar je je documenten kunt uploaden via de bestandsbrowser of door te slepen en neer te zetten. Je kunt tot 10 documenten tegelijk uploaden.
 * Om documenten te uploaden via de bestandsbrowser, klik je op de Upload Documenten-knop en selecteer je de bestanden die je wilt uploaden. Zodra je de bestanden hebt geselecteerd, klik je op Bevestigen om het uploadproces te starten.

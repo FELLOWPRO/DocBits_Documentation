@@ -12,9 +12,9 @@ Gebruik dit voor stamgegevens die niet als BOD binnenkomen — prijslijsten, kos
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
 
-| Endpoint                                  | Wanneer u het gebruikt                                                                                                                          |
-| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/master_data_lookup/xml/import_xml_file` | U hebt de gegevens als **XML-bestand** en wilt het uploaden.                                                                                    |
+| Endpoint | Wanneer u het gebruikt |
+| --- | --- |
+| `/master_data_lookup/xml/import_xml_file` | U hebt de gegevens als **XML-bestand** en wilt het uploaden. |
 | `/master_data_lookup/xml/import_xml_data` | U wilt de **XML in het verzoek plakken**. Anders dan de BOD-endpoints accepteert dit endpoint de XML als platte tekst — zonder JSON-verpakking. |
 
 Beide worden hieronder beschreven. Stap 1 en 2 zijn in beide gevallen hetzelfde.
@@ -66,14 +66,14 @@ Klik op **Try it out** en vul vervolgens het formulier in.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
 
-| Veld                |                                                                                                                                                                      |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **data\_type**      | Verplicht. De lookup-dataset waarin moet worden geschreven. Die wordt automatisch omgezet naar kleine letters, dus `PriceList` en `pricelist` zijn dezelfde dataset. |
-| **field\_mappings** | Verplicht. Een JSON-object dat elke kolom koppelt aan het XPath waaruit die wordt gelezen. Zie hieronder.                                                            |
-| **file**            | Verplicht bij `import_xml_file`. Klik op **Choose file** en selecteer uw XML.                                                                                        |
-| **xml**             | Verplicht bij `import_xml_data` in plaats van het bestand — plak de XML als platte tekst.                                                                            |
-| **org\_id**         | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet.                                                                                              |
-| **sub\_org\_id**    | Alleen nodig als u in een specifieke suborganisatie importeert.                                                                                                      |
+| Veld | |
+| --- | --- |
+| **data\_type** | Verplicht. De lookup-dataset waarin moet worden geschreven. Die wordt automatisch omgezet naar kleine letters, dus `PriceList` en `pricelist` zijn dezelfde dataset. |
+| **field\_mappings** | Verplicht. Een JSON-object dat elke kolom koppelt aan het XPath waaruit die wordt gelezen. Zie hieronder. |
+| **file** | Verplicht bij `import_xml_file`. Klik op **Choose file** en selecteer uw XML. |
+| **xml** | Verplicht bij `import_xml_data` in plaats van het bestand — plak de XML als platte tekst. |
+| **org\_id** | Uw Org ID — dezelfde waarde die u in stap 2 in **X-ORG-ID** hebt gezet. |
+| **sub\_org\_id** | Alleen nodig als u in een specifieke suborganisatie importeert. |
 
 #### Veldtoewijzingen
 
@@ -108,9 +108,9 @@ Alleen **onjuist opgebouwde** XPaths worden geweigerd, met een `400` die het vel
 {% hint style="danger" %}
 Sommige namen zijn niet vrij: het zijn DocBits' eigen stamgegevenstabellen, en importeren in zo'n tabel schrijft er rechtstreeks in.
 
-| Naam                                                                                                                                                                                            |                                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `purchase_order_header`, `purchase_order_address`                                                                                                                                               | Geweigerd met `RESERVED_DATASET_NAME`.                                                                           |
+| Naam | |
+| --- | --- |
+| `purchase_order_header`, `purchase_order_address` | Geweigerd met `RESERVED_DATASET_NAME`. |
 | `supplier`, `supplier_accounts`, `purchase_order`, `receive_delivery`, `receive_delivery_lines`, `costing_element`, `customer_erp_items`, `supplier_item_price`, `supplier_item_number_mapping` | **Geaccepteerd, en ze overschrijven echte stamgegevens.** Gebruik deze alleen als dat werkelijk uw bedoeling is. |
 
 Kies voor al het andere een eigen naam.
@@ -144,3 +144,5 @@ Anders dan de BOD-imports melden deze endpoints problemen met een echte foutstat
 * Ga in DocBits naar **Settings → Document Processing → Lookup Master Data**.
 * Selecteer links **Imported** en open vervolgens het tabblad van uw gegevenstype.
 * De kolommen zijn de namen die u aan de linkerkant van `field_mappings` hebt gebruikt.
+
+<!-- SCREENSHOT: Lookup Master Data with Imported selected and the new dataset open -->

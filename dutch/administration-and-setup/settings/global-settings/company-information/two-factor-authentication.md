@@ -31,7 +31,7 @@ Door dit in te schakelen worden wachtwoordaanmeldingen geblokkeerd voor leden di
 Onder de schakelaar toont het paneel **MFA-acceptatie** hoe breed 2FA in uw organisatie wordt gebruikt voordat u het afdwingt:
 
 * het algehele **acceptatiepercentage** en een voortgangsbalk,
-* hoeveel van uw leden 2FA hebben ingeschakeld (bijv. _0 van 74 leden_),
+* hoeveel van uw leden 2FA hebben ingeschakeld (bijv. *0 van 74 leden*),
 * een uitsplitsing per factor — **Authenticator**, **E-mail**, en **Passkey**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>Het MFA-acceptatierapport: algeheel percentage, geregistreerde leden, en een uitsplitsing per factor.</p></figcaption></figure>

@@ -1,4 +1,4 @@
-# Admin Privileges
+# Beheerdersrechten
 
 De rol van een beheerder is van cruciaal belang voor het beheren van IT-systemen, netwerken en digitale platforms binnen een organisatie. Een beheerder heeft uitgebreide rechten en verantwoordelijkheden waarmee hij verschillende aspecten van de technische infrastructuur kan aansturen en ervoor kan zorgen dat deze efficiënt en veilig functioneert. Hier zijn enkele van de belangrijkste verantwoordelijkheden van een beheerder:
 
@@ -38,13 +38,13 @@ Een System Admin is op drie manieren bijzonder:
 
 ### In één oogopslag
 
-|                                                       | Admin                    | System Admin                           |
-| ----------------------------------------------------- | ------------------------ | -------------------------------------- |
-| Volledige toegang om de organisatie te beheren        | Ja                       | Ja                                     |
-| Hoeveel u er kunt hebben                              | Zoveel als u nodig heeft | Slechts één                            |
-| Kan worden gewijzigd nadat de gebruiker is aangemaakt | Ja, op elk moment        | Nee, alleen bij het aanmaken ingesteld |
-| Gebruikt voor automatische acties op de achtergrond   | Nee                      | Ja                                     |
-| Heeft altijd Admin-rechten                            | —                        | Ja                                     |
+| | Admin | System Admin |
+|---|---|---|
+| Volledige toegang om de organisatie te beheren | Ja | Ja |
+| Hoeveel u er kunt hebben | Zoveel als u nodig heeft | Slechts één |
+| Kan worden gewijzigd nadat de gebruiker is aangemaakt | Ja, op elk moment | Nee, alleen bij het aanmaken ingesteld |
+| Gebruikt voor automatische acties op de achtergrond | Nee | Ja |
+| Heeft altijd Admin-rechten | — | Ja |
 
 ## Best practices voor beveiliging
 

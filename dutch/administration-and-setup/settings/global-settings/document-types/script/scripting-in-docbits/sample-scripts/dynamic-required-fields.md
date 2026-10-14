@@ -53,8 +53,8 @@ else:
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Sturend veld lezen
-* [set\_is\_required()](../functions/field-functions.md#set_is_required) — Veld als verplicht/optioneel instellen
-* [set\_is\_hidden()](../functions/field-functions.md#set_is_hidden) — Velden tonen/verbergen
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Categorieveld instellen
-* [delete\_tables()](../functions/table-functions.md#delete_tables) — Tabellen verwijderen voor kostenfacturen
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Sturend veld lezen
+- [set\_is\_required()](../field-functions.md#set\_is\_required) — Veld als verplicht/optioneel instellen
+- [set\_is\_hidden()](../field-functions.md#set\_is\_hidden) — Velden tonen/verbergen
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Categorieveld instellen
+- [delete\_tables()](../table-functions.md#delete\_tables) — Tabellen verwijderen voor kostenfacturen

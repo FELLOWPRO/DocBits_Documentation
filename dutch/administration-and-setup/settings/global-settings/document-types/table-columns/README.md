@@ -10,17 +10,17 @@ Tabelkolommen bepalen welke kolommen de regelitemtabel van een documenttype heef
 
 Elke rij is één kolom van één tabel. De lijst toont:
 
-| Kolom            | Betekenis                                                                                                                                                                                                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Kolomnaam**    | Technische naam, afgeleid van de titel (hoofdletters, underscores). Wordt gebruikt in scripts, exportmappings en de API. Kan achteraf niet worden gewijzigd.                                                                                                                          |
-| **Titel**        | Label dat op het validatiescherm wordt getoond. Wijzig het met het vertaalpictogram in de kolom _Acties_ (_Vertaalsleutel bijwerken_).                                                                                                                                                |
-| **Kolomtype**    | `AMOUNT`, `STRING`, `DATE`, `NUMBER`, `BOOLEAN` of `CURRENCY`. Bepaalt de validatie en de opmaak.                                                                                                                                                                                     |
-| **Tabelnaam**    | De tabel waartoe de kolom behoort, bijvoorbeeld `INVOICE_TABLE`.                                                                                                                                                                                                                      |
-| **Verplicht**    | Het document kan niet worden goedgekeurd zolang deze kolom in een rij leeg is.                                                                                                                                                                                                        |
-| **Alleen-lezen** | Gebruikers zien de waarde, maar kunnen deze niet bewerken.                                                                                                                                                                                                                            |
-| **Verborgen**    | De kolom wordt niet getoond en niet geëxporteerd. Wordt gebruikt om standaardkolommen uit te schakelen die u niet nodig hebt.                                                                                                                                                         |
-| **AI gebruiken** | De AI-tabelextractie vult deze kolom, ook wanneer een leverancier getrainde regels heeft.                                                                                                                                                                                             |
-| **Acties**       | Vertaalpictogram: de titel hernoemen. Infopictogram: waar het getoonde label vandaan komt (uw vertaling, de standaard, de sleutel). Menu met drie puntjes: _Verwijderen_, alleen voor kolommen die uw organisatie heeft aangemaakt; standaardkolommen kunnen alleen worden verborgen. |
+| Kolom | Betekenis |
+|---|---|
+| **Kolomnaam** | Technische naam, afgeleid van de titel (hoofdletters, underscores). Wordt gebruikt in scripts, exportmappings en de API. Kan achteraf niet worden gewijzigd. |
+| **Titel** | Label dat op het validatiescherm wordt getoond. Wijzig het met het vertaalpictogram in de kolom *Acties* (*Vertaalsleutel bijwerken*). |
+| **Kolomtype** | `AMOUNT`, `STRING`, `DATE`, `NUMBER`, `BOOLEAN` of `CURRENCY`. Bepaalt de validatie en de opmaak. |
+| **Tabelnaam** | De tabel waartoe de kolom behoort, bijvoorbeeld `INVOICE_TABLE`. |
+| **Verplicht** | Het document kan niet worden goedgekeurd zolang deze kolom in een rij leeg is. |
+| **Alleen-lezen** | Gebruikers zien de waarde, maar kunnen deze niet bewerken. |
+| **Verborgen** | De kolom wordt niet getoond en niet geëxporteerd. Wordt gebruikt om standaardkolommen uit te schakelen die u niet nodig hebt. |
+| **AI gebruiken** | De AI-tabelextractie vult deze kolom, ook wanneer een leverancier getrainde regels heeft. |
+| **Acties** | Vertaalpictogram: de titel hernoemen. Infopictogram: waar het getoonde label vandaan komt (uw vertaling, de standaard, de sleutel). Menu met drie puntjes: *Verwijderen*, alleen voor kolommen die uw organisatie heeft aangemaakt; standaardkolommen kunnen alleen worden verborgen. |
 
 Twee knoppen boven de lijst:
 
@@ -42,5 +42,5 @@ Elk documenttype wordt geleverd met een set standaardkolommen (voor facturen: ar
 * [Kolommen bewerken en verwijderen](editing-and-deleting-columns.md)
 * [Best practices](best-practices-2.md)
 * [Probleemoplossing](troubleshooting-1.md)
-* [Training Line Fields / Tabeltraining](../../../../setup/document-training/training-line-fields-table-training/): leer DocBits waar de tabel van een leverancier staat
-* [AI Tabel](../../../../../end-user-and-partner-section/end-user-section/ai-table/): wat de gebruiker op het validatiescherm ziet
+* [Training Line Fields / Tabeltraining](../../../../setup/document-training/training-line-fields-table-training/README.md): leer DocBits waar de tabel van een leverancier staat
+* [AI Tabel](../../../../../end-user-and-partner-section/end-user-section/ai-table/README.md): wat de gebruiker op het validatiescherm ziet

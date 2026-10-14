@@ -153,7 +153,13 @@ De **Conflictafhandeling (Conflict Handler)** beslist:
 
 In alle voorbeelden heeft het document een btw-nummer en een leveranciersnaam, en beide velden zijn **Doorzoekbaar**.
 
-<table><thead><tr><th width="150">Btw-nummer vindt</th><th width="150">Naam vindt</th><th width="150">Alles matchen uit + Return None</th><th width="150">Alles matchen aan + Return None</th><th width="150">Alles matchen uit + Best Score</th></tr></thead><tbody><tr><td>alleen A</td><td>A en B</td><td>leeg</td><td><strong>A</strong></td><td><strong>A</strong></td></tr><tr><td>A en B</td><td>alleen B</td><td>leeg</td><td><strong>B</strong></td><td><strong>B</strong></td></tr><tr><td>A, B en C</td><td>C, D en E</td><td>leeg</td><td><strong>C</strong></td><td><strong>C</strong></td></tr><tr><td>A, B en C</td><td>B, C en D</td><td>leeg</td><td>leeg</td><td>B of C, niet betrouwbaar</td></tr><tr><td>alleen A</td><td>niets</td><td><strong>A</strong></td><td>leeg</td><td><strong>A</strong></td></tr></tbody></table>
+<table><thead><tr><th width="150">Btw-nummer vindt</th><th width="150">Naam vindt</th><th width="150">Alles matchen uit + Return None</th><th width="150">Alles matchen aan + Return None</th><th width="150">Alles matchen uit + Best Score</th></tr></thead><tbody>
+<tr><td>alleen A</td><td>A en B</td><td>leeg</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A en B</td><td>alleen B</td><td>leeg</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B en C</td><td>C, D en E</td><td>leeg</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B en C</td><td>B, C en D</td><td>leeg</td><td>leeg</td><td>B of C, niet betrouwbaar</td></tr>
+<tr><td>alleen A</td><td>niets</td><td><strong>A</strong></td><td>leeg</td><td><strong>A</strong></td></tr>
+</tbody></table>
 
 Hoe u de tabel leest:
 

@@ -59,6 +59,6 @@ if po and not supplier:
 
 ## Gebruikte Functies
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Veldwaarde lezen
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — OCR-tekst doorzoeken in alle documenten
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Veldwaarde schrijven
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Veldwaarde lezen
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — OCR-tekst doorzoeken in alle documenten
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Veldwaarde schrijven

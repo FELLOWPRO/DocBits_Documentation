@@ -1,4 +1,4 @@
-# Sotto-Organizzazioni
+# Sotto-organizzazioni
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/it.mp4" %}
 
@@ -17,11 +17,11 @@ Le sotto-organizzazioni consentono di creare una struttura gerarchica in DocBits
 
 La tabella mostra tutte le sotto-organizzazioni esistenti con:
 
-| Colonna         | Descrizione                                                                                 |
-| --------------- | ------------------------------------------------------------------------------------------- |
-| **Nome**        | Il nome della sotto-organizzazione.                                                         |
-| **Descrizione** | Una breve descrizione dello scopo della sotto-organizzazione.                               |
-| **Azioni**      | Menu con le opzioni per gestire gli utenti, modificare o eliminare la sotto-organizzazione. |
+| Colonna | Descrizione |
+|--------|-------------|
+| **Nome** | Il nome della sotto-organizzazione. |
+| **Descrizione** | Una breve descrizione dello scopo della sotto-organizzazione. |
+| **Azioni** | Menu con le opzioni per gestire gli utenti, modificare o eliminare la sotto-organizzazione. |
 
 Utilizza la barra di **ricerca** per trovare rapidamente le sotto-organizzazioni in base al nome.
 

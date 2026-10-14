@@ -63,4 +63,4 @@ I filtri si combinano: puoi restringere, ad esempio, a "Miglioramenti Più votat
 
 Il menu della scheda (pulsante con tre puntini) permette di modificare o eliminare un'idea che hai inviato.
 
-La Bacheca delle Idee è per il feedback di prodotto, non per le segnalazioni di incidenti. Usa un ticket di supporto per i problemi che bloccano il tuo lavoro oggi.
+<mark>La Bacheca delle Idee è per il feedback di prodotto, non per le segnalazioni di incidenti. Usa un ticket di supporto per i problemi che bloccano il tuo lavoro oggi.</mark>

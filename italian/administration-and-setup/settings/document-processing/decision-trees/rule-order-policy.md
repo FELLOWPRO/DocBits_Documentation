@@ -5,12 +5,12 @@ Questo criterio applica le regole nell'ordine in cui appaiono nell'albero decisi
 **Esempio:**
 
 | Regola | Condizione           | Gruppo restituito |
-| ------ | -------------------- | ----------------- |
-| 1      | Total Amount <= 1000 | GROUP\_1          |
-| 2      | Total Amount <= 2000 | GROUP\_2          |
-| 3      | Total Amount <= 3000 | GROUP\_3          |
-| 4      | Total Amount <= 4000 | GROUP\_4          |
-| 5      | Total Amount <= 5000 | GROUP\_5          |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
 Dato che il valore di input è **Total Amount = 2500**, la valutazione delle regole sarebbe:
 
@@ -22,8 +22,8 @@ Dato che il valore di input è **Total Amount = 2500**, la valutazione delle reg
 
 Con **Ordine della regola**, l'albero elaborerà le regole nell'ordine in cui sono elencate. Quindi, le regole corrispondenti saranno:
 
-* **Regola 3**: GROUP\_3
-* **Regola 4**: GROUP\_4
-* **Regola 5**: GROUP\_5
+* **Regola 3**: GROUP_3
+* **Regola 4**: GROUP_4
+* **Regola 5**: GROUP_5
 
-**Risultato**: **GROUP\_3**, **GROUP\_4**, **GROUP\_5**
+**Risultato**: **GROUP_3**, **GROUP_4**, **GROUP_5**

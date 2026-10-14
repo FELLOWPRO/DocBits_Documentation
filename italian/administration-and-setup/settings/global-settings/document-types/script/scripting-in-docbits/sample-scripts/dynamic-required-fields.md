@@ -53,8 +53,8 @@ else:
 
 ## Funzioni Utilizzate
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leggere il campo di controllo
-* [set\_is\_required()](../functions/field-functions.md#set_is_required) — Impostare il campo come obbligatorio/opzionale
-* [set\_is\_hidden()](../functions/field-functions.md#set_is_hidden) — Mostrare/nascondere i campi
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Impostare il campo categoria
-* [delete\_tables()](../functions/table-functions.md#delete_tables) — Rimuovere le tabelle per le fatture di costo
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leggere il campo di controllo
+- [set\_is\_required()](../field-functions.md#set\_is\_required) — Impostare il campo come obbligatorio/opzionale
+- [set\_is\_hidden()](../field-functions.md#set\_is\_hidden) — Mostrare/nascondere i campi
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Impostare il campo categoria
+- [delete\_tables()](../table-functions.md#delete\_tables) — Rimuovere le tabelle per le fatture di costo

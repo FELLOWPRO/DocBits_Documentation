@@ -89,7 +89,7 @@ La card e' ora attiva e disponibile per l'utilizzo nei workflow.
 
 ### Passo 5: Costruire un Workflow con la Card
 
-Apri il **designer DocFlow** nell'app web, crea un workflow avanzato e aggiungi la card approvata come nodo, ad esempio un trigger _Documento ricevuto_, la card _High Value Check_ e un nodo _Approvazione_ per il ramo `true`. I grafi dei workflow vengono creati e modificati nel designer; l'MCP non li crea.
+Apri il **designer DocFlow** nell'app web, crea un workflow avanzato e aggiungi la card approvata come nodo, ad esempio un trigger *Documento ricevuto*, la card *High Value Check* e un nodo *Approvazione* per il ramo `true`. I grafi dei workflow vengono creati e modificati nel designer; l'MCP non li crea.
 
 Di nuovo nell'assistente, verifica che il workflow esista e leggine la struttura:
 
@@ -112,7 +112,7 @@ Chiama `test_advanced_workflow`:
 
 Esamina i log di esecuzione per verificare che ogni nodo sia stato eseguito correttamente.
 
-***
+---
 
 ## Esempio 2: Costruire un Workflow con Card Integrate
 
@@ -134,10 +134,9 @@ Chiama `sdk_list_cards_picker` per visualizzare tutte le card disponibili con i 
 ```
 
 Filtra per ruolo:
-
-* `is_when: true` -- Usa nei nodi WHEN (trigger)
-* `is_and: true` -- Usa nei nodi AND (condizioni aggiuntive)
-* `is_then: true` -- Usa nei nodi THEN (azioni)
+- `is_when: true` -- Usa nei nodi WHEN (trigger)
+- `is_and: true` -- Usa nei nodi AND (condizioni aggiuntive)
+- `is_then: true` -- Usa nei nodi THEN (azioni)
 
 ### Passo 2: Creare il Workflow
 
@@ -212,7 +211,7 @@ Filtra per ruolo:
 
 Questo crea un workflow: **WHEN** il documento e' una fattura **AND** l'importo > 1000 **THEN** imposta lo stato su revisione.
 
-***
+---
 
 ## Esempio 3: Importare Card da GitHub
 

@@ -1,6 +1,7 @@
-# Ricerca dei dati master
+# Ricerca dei dati anagrafici
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
 La **Ricerca dei dati anagrafici** (barra laterale: **Lookup Master Data**) consente di visualizzare e gestire i dati anagrafici che DocBits utilizza per convalidare i dati estratti dai documenti rispetto al sistema ERP. È essenziale per un PO matching accurato, la convalida dei fornitori e il completamento automatico dei campi. Aprila da **Impostazioni → Elaborazione dei documenti → Lookup Master Data**.
 
@@ -10,12 +11,12 @@ La **Ricerca dei dati anagrafici** (barra laterale: **Lookup Master Data**) cons
 
 Il pannello di sinistra elenca quattro categorie di origini dati:
 
-| Origine                 | Descrizione                                                                                                                        |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **BOD Input Data**      | Dati ricevuti tramite messaggi Infor BOD (Business Object Document).                                                               |
-| **ERP API Data**        | Dati recuperati direttamente dal sistema ERP tramite API. Fai clic sull'icona dell'ingranaggio per configurare la connessione API. |
-| **Imported**            | Dati importati manualmente (ad esempio tramite caricamento CSV). Fai clic sull'icona **+** per aggiungere nuovi dati.              |
-| **DocBits Master Data** | Dati anagrafici interni gestiti all'interno di DocBits.                                                                            |
+| Origine | Descrizione |
+|---------|-------------|
+| **BOD Input Data** | Dati ricevuti tramite messaggi Infor BOD (Business Object Document). |
+| **ERP API Data** | Dati recuperati direttamente dal sistema ERP tramite API. Fai clic sull'icona dell'ingranaggio per configurare la connessione API. |
+| **Imported** | Dati importati manualmente (ad esempio tramite caricamento CSV). Fai clic sull'icona **+** per aggiungere nuovi dati. |
+| **DocBits Master Data** | Dati anagrafici interni gestiti all'interno di DocBits. |
 
 ## Tabella dati
 

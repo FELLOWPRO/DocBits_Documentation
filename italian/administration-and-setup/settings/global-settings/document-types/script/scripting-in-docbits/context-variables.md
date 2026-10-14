@@ -2,7 +2,7 @@
 
 Ogni script riceve automaticamente le seguenti variabili nel suo contesto di esecuzione. Queste **non** devono essere importate -- sono semplicemente disponibili.
 
-***
+---
 
 ## Variabili Principali
 
@@ -151,7 +151,7 @@ user       # Oggetto UserAuthentication — per chiamate API come is_supplier_va
 **`user` non e sempre completamente disponibile:** Nel contesto del worker Celery (elaborazione automatica), `user` ha proprieta limitate. Nel contesto UI (`ON_FIELD_CHANGE`, `ON_SAVE`) e l'oggetto utente completo.
 {% endhint %}
 
-***
+---
 
 ## Pattern di Accesso Comuni
 

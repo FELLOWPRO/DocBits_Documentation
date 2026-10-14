@@ -1,13 +1,13 @@
 ---
 description: >-
-  Da dove proviene il valore di un campo di intestazione e come viene creato: la
-  spiegazione dietro il Controllo dei campi di intestazione nella schermata di
-  validazione.
+  Da dove proviene il valore di un campo di intestazione e come viene creato:
+  la spiegazione dietro il Controllo dei campi di intestazione nella schermata
+  di validazione.
 ---
 
 # Controllo dei campi di intestazione: da dove provengono i dati
 
-Il pulsante **Controllo dei campi di intestazione** si trova accanto a **Salva** nella schermata di validazione. Apre il report _Da dove viene ogni valore?_: per ogni campo di intestazione mostra cosa c'era sul documento, cosa ha modificato il valore lungo il percorso, cosa mostra ora DocBits e perché.
+Il pulsante **Controllo dei campi di intestazione** si trova accanto a **Salva** nella schermata di validazione. Apre il report *Da dove viene ogni valore?*: per ogni campo di intestazione mostra cosa c'era sul documento, cosa ha modificato il valore lungo il percorso, cosa mostra ora DocBits e perché.
 
 Questa pagina spiega come viene creato un valore e cosa significa ciascuna fonte. Non servono competenze tecniche.
 
@@ -17,12 +17,12 @@ Il Controllo dei campi di intestazione fa parte del modulo **Analytics**. Se il 
 
 ## Un valore viene sempre creato in quest'ordine
 
-| Passaggio          | Cosa succede                                                                                                                    |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Leggere**     | Il valore viene letto dal documento — da una regola addestrata, dall'IA o direttamente da una fattura elettronica.              |
+| Passaggio | Cosa succede |
+| --- | --- |
+| **1. Leggere** | Il valore viene letto dal documento — da una regola addestrata, dall'IA o direttamente da una fattura elettronica. |
 | **2. Trasformare** | Gli script e le regole di trasformazione del cliente modificano il valore letto: accorciarlo, integrarlo, adattarne il formato. |
-| **3. Cercare**     | Il valore viene cercato nei dati anagrafici. Se viene trovato qualcosa, il record anagrafico sostituisce il valore letto.       |
-| **4. Mostrare**    | L'utente vede solo il risultato. Ciò che è accaduto lungo il percorso lo mostra il Controllo dei campi di intestazione.         |
+| **3. Cercare** | Il valore viene cercato nei dati anagrafici. Se viene trovato qualcosa, il record anagrafico sostituisce il valore letto. |
+| **4. Mostrare** | L'utente vede solo il risultato. Ciò che è accaduto lungo il percorso lo mostra il Controllo dei campi di intestazione. |
 
 I passaggi 2 e 3 non vengono sempre eseguiti — ma quando lo sono, modificano il valore. È proprio da qui che provengono la maggior parte dei casi segnalati.
 
@@ -85,12 +85,12 @@ Letto da un codice a barre o da un codice QR sul documento.
 Quando un campo contiene improvvisamente un valore che sul documento non compare in quel modo, quasi mai è stata l'IA, ma il passaggio 2 o il passaggio 3. Più spesso la corrispondenza nei dati anagrafici, che accetta anche corrispondenze parziali: `1001` corrisponde a `06O051001`, e con l'ordine trovato cambia anche il fornitore.
 {% endhint %}
 
-Nel report un campo del genere è contrassegnato in rosso. La colonna **Azione** mostra il record anagrafico insieme a un chip rosso _solo corrispondenza parziale_, e la parte corrispondente del valore è evidenziata.
+Nel report un campo del genere è contrassegnato in rosso. La colonna **Azione** mostra il record anagrafico insieme a un chip rosso *solo corrispondenza parziale*, e la parte corrispondente del valore è evidenziata.
 
 ## Leggere il report
 
 * **Chip di stato** in alto contano i campi arrivati invariati dal documento, modificati lungo il percorso o non presenti sul documento così come mostrati. Cliccare su un chip per mostrare solo quei campi; cliccare di nuovo per mostrarli tutti.
 * **Filtro fonte:** la riga di icone mostra ogni metodo di estrazione. Cliccare su una per mostrare solo i campi che l'hanno attraversata.
 * **Azione:** ogni passaggio attraversato dal valore, con l'icona della sua fonte. Il passaggio da cui proviene il valore attuale è evidenziato. Passando il cursore si vede cosa ha fatto ogni passaggio, da quale valore a quale.
-* **Motivo:** lo stato del campo. L'icona (i) spiega perché il valore è quello che è. Se indica _Il campo non esisteva_, il campo non era presente sul documento.
+* **Motivo:** lo stato del campo. L'icona (i) spiega perché il valore è quello che è. Se indica *Il campo non esisteva*, il campo non era presente sul documento.
 * I valori lunghi vengono abbreviati con … — passare il cursore per vedere il valore completo.

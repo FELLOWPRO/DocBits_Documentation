@@ -35,4 +35,4 @@ Le tue preferenze vengono salvate automaticamente quando premi **Fatto** e persi
 
 Quando una nuova funzionalità viene aggiunta a DocBits in una versione futura, si aggiunge in fondo alla tua barra laterale con visibilità predefinita. Riposizionala o nascondila in modalità modifica per adattarla alla tua routine.
 
-Le funzionalità per cui non hai un permesso non compaiono mai nell'elenco di personalizzazione — non puoi riattivare per errore qualcosa che il tuo ruolo non può aprire.
+<mark>Le funzionalità per cui non hai un permesso non compaiono mai nell'elenco di personalizzazione — non puoi riattivare per errore qualcosa che il tuo ruolo non può aprire.</mark>

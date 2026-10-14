@@ -22,7 +22,7 @@ Quando abilitata, questa impostazione consente di definire tolleranze per **Quan
     * **Percentuale:** Indica una tolleranza percentuale.
     * **Valore:** Indica un importo fisso con cui il valore può differire.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_table (3).png" alt="DocBits Acquisto Ordine Tabella"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_table.png" alt="DocBits Acquisto Ordine Tabella"><figcaption></figcaption></figure>
 
 #### **Scenario di esempio:**
 
@@ -60,4 +60,4 @@ Quando abilitata, questa impostazione consente di definire tolleranze per **Spes
     * **Percentuale:** La tolleranza è definita come una percentuale.
     * **Valore:** La tolleranza è definita come un importo fisso.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_approval (3).png" alt="DocBits Approvazione"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_approval.png" alt="DocBits Approvazione"><figcaption></figcaption></figure>

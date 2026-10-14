@@ -1,29 +1,55 @@
-# Tipi di Documento
+# Document Types
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
 DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types (3).png" alt="Docbits Document Types Overview Screenshot"><figcaption><p>Document Types Screenshot</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Pagina Document Types</p></figcaption></figure>
 
-#### Overview
+## Panoramica
 
-The Document Types section lists all document types recognized and processed by Docbits. Administrators can manage various aspects such as layout, field definitions, extraction rules, and more for each type of document. This customization is key to ensuring accurate data handling and compliance with organizational standards.
+La pagina Document Types elenca tutti i tipi di documento riconosciuti ed elaborati da DocBits. È divisa in due sezioni:
 
-#### Key Features and Options
+* **Default Document Types**: tipi preconfigurati forniti da DocBits (Invoice, Credit Note, Delivery Note, Order Confirmation, Contract, ZUGFeRD, ecc.). Non possono essere eliminati.
+* **Custom Document Types**: tipi che crei per le esigenze specifiche della tua attività. Possono essere modificati ed eliminati.
 
-1. **Document Type List**:
-   * Each row represents a document type such as Invoice, Credit Note, Delivery Note, etc.
-   * Document types can be standard or custom, as indicated by labels like "Standard."
-2. **Edit layout**: This option allows administrators to modify the document layout settings, which include defining how the document appears and where data fields are located.
-3. **Document Sub Types**: If any document types have subcategories, this option lets admins configure settings specific to each subtype.
-4. **Table columns**: Customize which data columns should appear when the document type is viewed in lists or reports.
-5. **Fields**: Manage the data fields associated with the document type, including adding new fields or modifying existing ones.
-6. **Model Training**: Configure and train the model used for recognizing and extracting data from the documents. This may involve setting parameters for machine learning models that improve over time with more data.
-7. **Regex**: Set up regular expressions that are used to extract data from documents based on patterns. This is particularly useful for structured data extraction.
-8. **Scripts**: Write or modify scripts that run custom processing rules or workflows for documents of this type.
-9. **E-DOC**: Configure settings related to the exchange of documents in standardized electronic formats. You can configure XRechnung, EDI, FakturaPA or EDI
+## Controlli per tipo di documento
+
+Ogni scheda di un tipo di documento mostra:
+
+| Controllo | Descrizione |
+|---------|-------------|
+| **Activate** | Interruttore per attivare o disattivare questo tipo di documento per l'elaborazione. |
+| **Extraction** | Interruttore per attivare o disattivare l'estrazione dei dati basata sull'IA per questo tipo. |
+| **Settings** (icona a forma di ingranaggio) | Apre ulteriori opzioni di configurazione per il tipo di documento. |
+
+## Schede di configurazione
+
+Sotto ogni tipo di documento puoi accedere alle seguenti schede di configurazione:
+
+| Scheda | Descrizione |
+|-----|-------------|
+| **Labels** | Gestisce le etichette visualizzate e le traduzioni per il tipo di documento. |
+| **Edit layout** | Modifica l'aspetto del documento nella vista di validazione, comprese le posizioni dei campi. |
+| **Document Sub Types** | Configura le sottocategorie per questo tipo di documento (ad es. diversi formati di fattura). |
+| **Table columns** | Personalizza quali colonne di dati compaiono nella tabella delle righe. |
+| **Fields** | Gestisce i campi di dati estratti dal documento (aggiungere, modificare o rimuovere campi). |
+| **Model Training** | Configura e addestra il modello IA usato per riconoscere ed estrarre i dati. |
+| **Regex** | Imposta espressioni regolari per l'estrazione dei dati basata su pattern. |
+| **Scripts** | Scrivi script di elaborazione personalizzati che vengono eseguiti durante l'elaborazione del documento. |
+| **E-Doc** | Configura gli standard dei documenti elettronici (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+
+## Custom Validation Rules
+
+Apri un tipo di documento e seleziona **Custom Validation Rules** per gestirne le regole di validazione. Per riutilizzare una regola esistente senza ricrearla, segui [Duplicate a Custom Validation Rule](duplicate-a-custom-validation-rule.md). La guida spiega il nome della regola, la chiave della regola e i controlli di conferma.
+
+## Creare un tipo di documento personalizzato
+
+1. Scorri fino alla sezione **Custom Document Types**.
+2. Fai clic su **+ New**.
+3. Inserisci un nome per il nuovo tipo di documento.
+4. Configura campi, layout e impostazioni di estrazione secondo necessità.
 
 {% hint style="info" %}
-See [Setup Document Type](../../../setup/document-types/)
+Consulta [Setup Document Type](../../../setup/document-types/) per le istruzioni di configurazione dettagliate.
 {% endhint %}

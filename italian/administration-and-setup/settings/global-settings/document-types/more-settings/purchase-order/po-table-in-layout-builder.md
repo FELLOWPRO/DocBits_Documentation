@@ -15,12 +15,14 @@ Pour activer cette fonctionnalité :
 
 * **Lorsque activé** :
   * La **table de Bon de Commande** apparaît dans la **Section Table** du **Constructeur de Mise en Page**.
-  *   Aucune notification indiquant que le module est désactivé ne sera affichée.\\
+  *   Aucune notification indiquant que le module est désactivé ne sera affichée.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_supplier.png" alt="DocBits Acquisto Ordine Fornitore"><figcaption></figcaption></figure>
 * **Lorsque désactivé** :
   * Un indice indiquera que le module est désactivé.
-  *   La **table PO** ne sera pas visible dans l'**Écran de Validation**.\\
+  *   La **table PO** ne sera pas visible dans l'**Écran de Validation**.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_supplier_invoice.png" alt="DocBits Fornitore Fattura"><figcaption></figcaption></figure>
 

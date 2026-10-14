@@ -39,3 +39,5 @@ Per ogni tipo di documento ci sono diversi campi che puoi aggiungere:
 Seleziona i campi di cui hai bisogno e clicca su "Aggiungi alle Colonne Visibili", appariranno quindi nelle impostazioni delle colonne.
 
 <figure><img src="../../../.gitbook/assets/change-document-colums9.png" alt="" width="281"><figcaption></figcaption></figure>
+
+<div data-full-width="true"><figure><img src="../../../.gitbook/assets/image%20(32).png" alt=""><figcaption></figcaption></figure></div>

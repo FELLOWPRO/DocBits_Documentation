@@ -1,4 +1,4 @@
-# Documenti validati
+# Documenti convalidati
 
 In questo video, agli spettatori viene presentata l'interfaccia utente di Doc**Bit**, concentrandosi specificamente sulla convalida dei documenti. Il tutorial sottolinea la semplicità del sistema, dove non sono necessari codici o formule complesse.
 

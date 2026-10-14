@@ -1,4 +1,4 @@
-# Privilegi di Amministratore
+# Privilegi di amministratore
 
 Il ruolo di un amministratore è fondamentale per la gestione dei sistemi IT, delle reti e delle piattaforme digitali in un'organizzazione. Un amministratore dispone di permessi e responsabilità avanzati che gli consentono di controllare vari aspetti dell'infrastruttura tecnica e di garantire che venga gestita in modo efficiente e sicuro. Ecco alcune delle principali responsabilità di un amministratore:
 
@@ -38,13 +38,13 @@ Un System Admin è speciale per tre motivi:
 
 ### In sintesi
 
-|                                               | Admin                    | System Admin                        |
-| --------------------------------------------- | ------------------------ | ----------------------------------- |
-| Accesso completo per gestire l'organizzazione | Sì                       | Sì                                  |
-| Quanti puoi averne                            | Tutti quelli necessari   | Solo uno                            |
-| Modificabile dopo la creazione dell'utente    | Sì, in qualsiasi momento | No, impostabile solo alla creazione |
-| Usato per azioni automatiche dietro le quinte | No                       | Sì                                  |
-| Dispone sempre dei diritti di Admin           | —                        | Sì                                  |
+| | Admin | System Admin |
+|---|---|---|
+| Accesso completo per gestire l'organizzazione | Sì | Sì |
+| Quanti puoi averne | Tutti quelli necessari | Solo uno |
+| Modificabile dopo la creazione dell'utente | Sì, in qualsiasi momento | No, impostabile solo alla creazione |
+| Usato per azioni automatiche dietro le quinte | No | Sì |
+| Dispone sempre dei diritti di Admin | — | Sì |
 
 ## Migliori pratiche di sicurezza
 

@@ -113,5 +113,3 @@ The last icon should be empty as it is not carrying any document or information.
 Once you have added all necessary nodes to the data flow, press this button to activate the data flow
 
 ![](https://lh7-us.googleusercontent.com/WjQeGz\_effl\_RlkWC4CdJS9Dg\_9DpsIz3meKOsa7GbU9RFSrYMw3PpbXFat6cGsA4gvEGS-0D-YFrZj9K2wK3Irap-30mcQ5kr5k4Gy2gm7DLJdYpzJgeBRVInyAYfGmGXu2dCQvmX9ballRbSwyq3o)
-
-

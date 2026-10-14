@@ -1,4 +1,4 @@
-# Eliminare Righe Vuote
+# Eliminare righe con quantita e importo vuoti
 
 #### Parte 1: Eliminare Righe con Quantita e Importo Vuoti
 

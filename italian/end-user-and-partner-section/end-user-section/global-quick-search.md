@@ -20,7 +20,7 @@ Ogni risultato mostra:
 
 Usa le frecce su e giù per evidenziare un risultato, poi premi <kbd>Invio</kbd> per aprirlo. Premi <kbd>Esc</kbd> per chiudere la finestra.
 
-Nei risultati appaiono solo le voci per cui hai un permesso. Le voci riservate agli amministratori sono nascoste agli altri utenti.
+<mark>Nei risultati appaiono solo le voci per cui hai un permesso. Le voci riservate agli amministratori sono nascoste agli altri utenti.</mark>
 
 ## Ricerche recenti
 
@@ -41,9 +41,9 @@ Se gli otto risultati visibili non bastano, clicca sul link **Vedi tutti i risul
 
 ## Riferimento tastiera
 
-| Tasto                                         | Azione                            |
-| --------------------------------------------- | --------------------------------- |
+| Tasto | Azione |
+|---|---|
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Apri la Ricerca Rapida da ovunque |
-| <kbd>↑</kbd> / <kbd>↓</kbd>                   | Muoviti tra i risultati           |
-| <kbd>Invio</kbd>                              | Apri il risultato evidenziato     |
-| <kbd>Esc</kbd>                                | Chiudi la finestra                |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Muoviti tra i risultati |
+| <kbd>Invio</kbd> | Apri il risultato evidenziato |
+| <kbd>Esc</kbd> | Chiudi la finestra |

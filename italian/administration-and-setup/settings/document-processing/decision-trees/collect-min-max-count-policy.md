@@ -5,12 +5,12 @@ Questo criterio raccoglie tutte le regole corrispondenti e seleziona il **minimo
 **Esempio:**
 
 | Regola | Condizione           | Valore restituito |
-| ------ | -------------------- | ----------------- |
-| 1      | Total Amount <= 1000 | 1                 |
-| 2      | Total Amount <= 2000 | 2                 |
-| 3      | Total Amount <= 3000 | 3                 |
-| 4      | Total Amount <= 4000 | 4                 |
-| 5      | Total Amount <= 5000 | 5                 |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | 1            |
+| 2    | Total Amount <= 2000 | 2            |
+| 3    | Total Amount <= 3000 | 3            |
+| 4    | Total Amount <= 4000 | 4            |
+| 5    | Total Amount <= 5000 | 5            |
 
 1. Se è selezionata l'opzione **Raccogliere (Min)**, il risultato restituirà il **minimo** dei **Return Values** per le regole corrispondenti.
    * Per il valore di input di **Total Amount = 2500**, la valutazione delle regole sarebbe:

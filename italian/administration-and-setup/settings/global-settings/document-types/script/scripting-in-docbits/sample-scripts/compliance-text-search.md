@@ -1,4 +1,4 @@
-# Ricerca Testo di Conformita
+# Ricerca Testo di Conformita (Reverse Charge)
 
 {% hint style="info" %}
 **Disponibile dalla versione 11.48.0** — Richiede la licenza `OPENSEARCH_ENABLED`.
@@ -50,5 +50,5 @@ if rc_fuzzy:
 
 ## Funzioni Utilizzate
 
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — Cerca nel testo OCR di tutti i documenti
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Scrivi valore campo
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — Cerca nel testo OCR di tutti i documenti
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Scrivi valore campo

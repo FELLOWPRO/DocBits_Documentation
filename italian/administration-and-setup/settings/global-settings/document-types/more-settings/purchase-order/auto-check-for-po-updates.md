@@ -14,4 +14,4 @@ Quando abilitata, il sistema fornisce un **indicatore visivo** nella schermata d
 
 Per aggiornare l'ordine di acquisto, fai clic sull'**icona di aggiornamento** accanto al numero dell'ordine di acquisto (vedi immagine qui sotto).
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_settings_workflow_2 (3).png" alt="DocBits Impostazioni Flusso di lavoro 2"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_settings_workflow_2.png" alt="DocBits Impostazioni Flusso di lavoro 2"><figcaption></figcaption></figure></div>

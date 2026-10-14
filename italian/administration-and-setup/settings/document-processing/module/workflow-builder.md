@@ -31,7 +31,7 @@ Attivare l'interruttore non si limita a cambiare un'impostazione, ma avvia un **
 4. Apri la sezione **Tipo di documento**.
 5. Trova **Workflow Builder** e attiva l'interruttore.
 6. Nella finestra di dialogo, scegli il tuo piano DocFlow (Standard, facoltativamente Advanced) e conferma. DocFlow viene attivato una volta creato l'abbonamento.
-7. In seguito, progetta i tuoi flussi di lavoro documentali in DocFlow — vedi la sezione [Workflow](../../../workflow/) per sapere come crearli.
+7. In seguito, progetta i tuoi flussi di lavoro documentali in DocFlow — vedi la sezione [Workflow](../../../workflow/README.md) per sapere come crearli.
 
 ### Quando usare questa funzione
 

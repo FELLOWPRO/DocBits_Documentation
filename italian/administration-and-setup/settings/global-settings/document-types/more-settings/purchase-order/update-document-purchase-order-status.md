@@ -1,5 +1,7 @@
 # Aggiornare lo stato dell'ordine di acquisto del documento
 
+
+
 ## Panoramica
 
 Quando abilitato, la colonna **Stato PO** sulla dashboard viene aggiornata automaticamente ogni volta che lo stato dell'ordine di acquisto cambia.

@@ -59,6 +59,6 @@ if po and not supplier:
 
 ## Funzioni Utilizzate
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leggi valore campo
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — Cerca nel testo OCR di tutti i documenti
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Scrivi valore campo
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leggi valore campo
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — Cerca nel testo OCR di tutti i documenti
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Scrivi valore campo

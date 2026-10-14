@@ -1,4 +1,4 @@
-# Workflow Logs
+# Registri del Flusso di Lavoro
 
 ## **Panoramica**
 

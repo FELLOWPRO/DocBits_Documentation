@@ -10,9 +10,9 @@ Le entrate merci arrivano normalmente in DocBits in automatico attraverso il flu
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-endpoints.png)
 
-| Endpoint                           | Quando usarlo                                                                                                                                                                                                             |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/import/receive_delivery_bod`     | Si ha il BOD come **file XML** e lo si vuole caricare.                                                                                                                                                                    |
+| Endpoint | Quando usarlo |
+| --- | --- |
+| `/import/receive_delivery_bod` | Si ha il BOD come **file XML** e lo si vuole caricare. |
 | `/import/receive_delivery_bod_xml` | Si vuole inviare il **contenuto XML** nella richiesta invece di un file. Il BOD va incapsulato in JSON, quindi è adatto a XML brevi o a un altro sistema che chiama l'API — per un BOD completo a mano, caricare il file. |
 
 Entrambi sono descritti di seguito. I passaggi 1 e 2 sono identici in entrambi i casi.
@@ -89,14 +89,14 @@ Fare clic su **Try it out**, poi compilare il modulo dell'endpoint scelto.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-rd-form.png)
 
-| Campo                             |                                                                                                                                                                                                                                                                    |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **file**                          | Obbligatorio. Fare clic su **Choose file** e selezionare il proprio file XML `SyncReceiveDelivery`.                                                                                                                                                                |
-| **org\_id**                       | Il proprio Org ID — lo stesso valore inserito in **X-ORG-ID** al passaggio 2. Indicarlo anche qui rende esplicito in quale organizzazione scrive la richiesta. Deve essere un'organizzazione a cui la propria API key ha accesso; qualsiasi altra viene rifiutata. |
-| **sub\_org\_id**                  | Serve solo se si importa in una sotto-organizzazione specifica.                                                                                                                                                                                                    |
-| **custom\_fields\_mapping**       | Facoltativo. Campi di testata aggiuntivi. Vedere [Mappature dei campi personalizzati](receive-delivery-bod.md#mappature-dei-campi-personalizzati) più sotto.                                                                                                       |
-| **custom\_line\_fields\_mapping** | Facoltativo. Lo stesso, per campi aggiuntivi sulle righe dell'entrata.                                                                                                                                                                                             |
-| **populate\_additional\_info**    | Facoltativo, `false` per impostazione predefinita. Impostarlo a `true` perché DocBits recuperi informazioni aggiuntive sull'entrata dall'ERP dopo l'importazione. Lasciarlo a `false` a meno di sapere che serve — rende l'importazione più lenta.                 |
+| Campo | |
+| --- | --- |
+| **file** | Obbligatorio. Fare clic su **Choose file** e selezionare il proprio file XML `SyncReceiveDelivery`. |
+| **org\_id** | Il proprio Org ID — lo stesso valore inserito in **X-ORG-ID** al passaggio 2. Indicarlo anche qui rende esplicito in quale organizzazione scrive la richiesta. Deve essere un'organizzazione a cui la propria API key ha accesso; qualsiasi altra viene rifiutata. |
+| **sub\_org\_id** | Serve solo se si importa in una sotto-organizzazione specifica. |
+| **custom\_fields\_mapping** | Facoltativo. Campi di testata aggiuntivi. Vedere [Mappature dei campi personalizzati](#mappature-dei-campi-personalizzati) più sotto. |
+| **custom\_line\_fields\_mapping** | Facoltativo. Lo stesso, per campi aggiuntivi sulle righe dell'entrata. |
+| **populate\_additional\_info** | Facoltativo, `false` per impostazione predefinita. Impostarlo a `true` perché DocBits recuperi informazioni aggiuntive sull'entrata dall'ERP dopo l'importazione. Lasciarlo a `false` a meno di sapere che serve — rende l'importazione più lenta. |
 
 {% hint style="warning" %}
 **`string` è un valore, non un segnaposto.** Swagger riempie i campi facoltativi con la parola `string`, e viene inviata così com'è se la si lascia — un'importazione con `org_id` impostato a `string` fallirà.
@@ -121,6 +121,8 @@ Le mappature di riga usano gli stessi nomi `custom_field_1` … `custom_field_10
 ```
 
 #### Incollare l'XML — `/import/receive_delivery_bod_xml`
+
+<!-- SCREENSHOT: the Try it out form of /import/receive_delivery_bod_xml -->
 
 Questo endpoint non accetta il BOD come semplice incollaggio. Il campo **xml** è un oggetto, precompilato con `{"xml": "string"}`. Sostituire `string` con il contenuto del proprio BOD, mantenendo le virgolette e le parentesi graffe circostanti:
 
@@ -168,6 +170,8 @@ Se qualcosa non andava nella richiesta, si ottiene `"success": false` insieme a 
 * In DocBits, andare in **Settings → Document Processing → Lookup Master Data**.
 * Selezionare **BOD Input Data** a sinistra, poi aprire la scheda dei dati importati.
 * Cercare l'entrata merci o l'ordine di acquisto a cui appartiene.
+
+<!-- SCREENSHOT: Lookup Master Data with BOD Input Data selected and the goods receipt data shown -->
 
 {% hint style="info" %}
 DocBits decide cosa fare del BOD leggendo il tipo che contiene, non in base all'endpoint di importazione usato. Se si invia qui un BOD diverso per errore, viene importato come quel tipo anziché essere rifiutato — verificare quindi che la scheda in cui si trovano i dati sia quella attesa.

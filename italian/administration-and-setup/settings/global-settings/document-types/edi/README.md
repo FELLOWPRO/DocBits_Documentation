@@ -1,8 +1,10 @@
-# Documenti Elettronici
+# e-docs
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
 DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
 {% endembed %}
+
+<figure><img src="../../../../../.gitbook/assets/docbits_edi_overview.png" alt="Docbits Edi Overview"><figcaption></figcaption></figure>
 
 #### Overview
 
@@ -17,3 +19,5 @@ In Docbits, the EDI settings provide tools for defining and managing the structu
    * **Extraction Paths**: Shows the paths used to extract values from the document, which are then used to populate the EDI message.
 2. **XSLT Editor**:
    * Used for editing and validating the XSLT (eXtensible Stylesheet Language Transformations) used in the transformation process. XSLT is a powerful language designed for transforming XML documents into other XML documents or other formats like HTML, text, or even other XML structures.
+
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 09.49.59.png" alt=""><figcaption></figcaption></figure>

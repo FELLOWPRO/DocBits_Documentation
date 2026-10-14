@@ -39,13 +39,12 @@ if po_nr:
 ## Cosa succede dopo l'abbinamento?
 
 Il `document_data` viene aggiornato con:
-
-* `po_items` — Voci OA abbinate
-* `po_match_status` — Risultato dell'abbinamento (`"matched"`, `"partially_matched"`, ecc.)
-* `po_multi_matched` — Se sono stati abbinati piu OA
+- `po_items` — Voci OA abbinate
+- `po_match_status` — Risultato dell'abbinamento (`"matched"`, `"partially_matched"`, ecc.)
+- `po_multi_matched` — Se sono stati abbinati piu OA
 
 ## Funzioni Utilizzate
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leggere il valore del campo
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Scrivere il numero OA pulito
-* [auto\_po\_match\_for\_purchase\_orders()](../functions/business-logic-functions.md#auto_po_match_for_purchase_orders) — Attivare l'abbinamento OA
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leggere il valore del campo
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Scrivere il numero OA pulito
+- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — Attivare l'abbinamento OA

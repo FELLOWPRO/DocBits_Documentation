@@ -2,8 +2,8 @@
 
 DocBits convalida le fatture elettroniche in entrata (e-invoice) rispetto agli standard ufficiali — **XRechnung**, **ZUGFeRD** e **Factur-X** — e instrada eventuali problemi rilevati al gestore giusto. Il gruppo di impostazioni **Documenti elettronici** (in **Elaborazione dei documenti**) ha due pagine:
 
-* [**Regole di validazione**](validation-rules.md): scegli quali versioni e profili di fattura elettronica accetti e imposta la gravità di ogni regola di validazione per la tua organizzazione.
-* [**Instradamento delle notifiche**](notification-routing.md): assegna i risultati di validazione all'agente AI Workforce che deve gestirli.
+* **[Regole di validazione](validation-rules.md)**: scegli quali versioni e profili di fattura elettronica accetti e imposta la gravità di ogni regola di validazione per la tua organizzazione.
+* **[Instradamento delle notifiche](notification-routing.md)**: assegna i risultati di validazione all'agente AI Workforce che deve gestirli.
 
 Insieme ti permettono di decidere **cosa viene considerato un problema** su una fattura elettronica in entrata e **chi se ne occupa**.
 
@@ -20,6 +20,6 @@ Vai a **Impostazioni → Tipi di documento → Fattura → Impostazioni avanzate
 
 > La convalida delle fatture elettroniche si configura **per tipo di documento**. Attualmente si applica al tipo di documento **Fattura**; attivala su ogni tipo di documento da convalidare.
 
-Puoi anche saltare direttamente qui con la **ricerca rapida globale**: premi <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> su Windows e Linux) ovunque in DocBits e digita _e-invoice_.
+Puoi anche saltare direttamente qui con la **ricerca rapida globale**: premi <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> su Windows e Linux) ovunque in DocBits e digita *e-invoice*.
 
 <figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La ricerca rapida globale apre la Convalida fattura elettronica"><figcaption><p>Digita «e-invoice» nella ricerca rapida per saltare direttamente all'interruttore.</p></figcaption></figure>

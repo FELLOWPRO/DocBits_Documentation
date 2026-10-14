@@ -25,6 +25,6 @@ Una risposta riuscita contiene `success: true` e un elenco `data` di tipi di doc
 
 ## Trovare l'operazione successiva
 
-Nel riferimento API, cerca ciò che vuoi fare, leggi la descrizione e i campi obbligatori di quell'operazione e verifica se usa `GET`, `POST` o un altro metodo. Usa l'esempio di risposta del riferimento per confermare il risultato. Per una guida passo-passo con Postman, vedi [Postman for DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/); verifica i suoi URL di esempio più vecchi rispetto al riferimento API corrente prima di inviare una richiesta.
+Nel riferimento API, cerca ciò che vuoi fare, leggi la descrizione e i campi obbligatori di quell'operazione e verifica se usa `GET`, `POST` o un altro metodo. Usa l'esempio di risposta del riferimento per confermare il risultato. Per una guida passo-passo con Postman, vedi [Postman for DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/README.md); verifica i suoi URL di esempio più vecchi rispetto al riferimento API corrente prima di inviare una richiesta.
 
 Le quattro immagini più vecchie di questa pagina descrivevano API generiche di OCR, NLP, conversione file e gestione documentale, senza mostrare endpoint DocBits verificati. Sono state rimosse; come esempio eseguibile viene presentata solo l'operazione DocBits documentata qui sopra.

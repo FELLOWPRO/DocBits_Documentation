@@ -1,7 +1,5 @@
 ---
-description: >-
-  Uno script che imposta USD come valuta predefinita e verifica se e valida o
-  meno
+description: Uno script che imposta USD come valuta predefinita e verifica se e valida o meno
 ---
 
 # USD come Valuta Predefinita

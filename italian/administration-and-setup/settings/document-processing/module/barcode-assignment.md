@@ -10,11 +10,11 @@ Questa impostazione è **disattivata per impostazione predefinita**.
 
 Una volta attivata l'impostazione, un nuovo **pulsante codice a barre** (un'icona di codice QR) compare nella barra degli strumenti sul lato destro della **schermata di validazione** (`/field_validation_v1/…`). Questo pulsante è il punto di accesso all'intera funzione — senza l'impostazione, l'icona resta nascosta.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_icon.png" alt="L&#x27;icona codice a barre (codice QR) nella barra degli strumenti di validazione"><figcaption><p>Con l'impostazione attivata, l'icona codice a barre compare nella barra degli strumenti di validazione.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_icon.png" alt="L'icona codice a barre (codice QR) nella barra degli strumenti di validazione"><figcaption><p>Con l'impostazione attivata, l'icona codice a barre compare nella barra degli strumenti di validazione.</p></figcaption></figure>
 
 Ecco l'icona nel suo contesto, sulla schermata di validazione, accanto al documento in esame:
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Schermata di validazione con l&#x27;icona codice a barre disponibile"><figcaption><p>La schermata di validazione — l'icona codice a barre (evidenziata, barra degli strumenti di destra) è mostrata solo quando l'Assegnazione tramite codice a barre è attivata.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_validation_screen.png" alt="Schermata di validazione con l'icona codice a barre disponibile"><figcaption><p>La schermata di validazione — l'icona codice a barre (evidenziata, barra degli strumenti di destra) è mostrata solo quando l'Assegnazione tramite codice a barre è attivata.</p></figcaption></figure>
 
 ### Come vengono letti i codici a barre
 
@@ -23,7 +23,7 @@ DocBits rileva i codici a barre durante l'elaborazione del documento e offre i l
 <figure><img src="../../../../.gitbook/assets/barcode_assignment_demo_invoice.png" alt="Fattura dimostrativa contenente più tipi di codici a barre"><figcaption><p>Esempio di fattura dimostrativa DocBits contenente tre tipi di codici a barre (codice QR → numero d'ordine, Code 128 → numero di fattura, EAN-13 → GLN del fornitore), ciascuno dei quali codifica un valore assegnabile a un campo.</p></figcaption></figure>
 
 {% hint style="info" %}
-Quali tipi di codici a barre vengono rilevati è determinato dall'impostazione **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Se la finestra di dialogo mostra _«no barcodes extracted found»_, assicurati che l'estrazione dei codici a barre sia attivata e che i tipi attesi (es. `QRCODE`, `CODE128`, `EAN13`) siano selezionati. Vedi [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+Quali tipi di codici a barre vengono rilevati è determinato dall'impostazione **Bar-Code / QR Code Extraction** (`Barcode Extraction Types`). Se la finestra di dialogo mostra *«no barcodes extracted found»*, assicurati che l'estrazione dei codici a barre sia attivata e che i tipi attesi (es. `QRCODE`, `CODE128`, `EAN13`) siano selezionati. Vedi [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}
 
 ### Usare la finestra di dialogo di Assegnazione tramite codice a barre
@@ -40,7 +40,7 @@ Quali tipi di codici a barre vengono rilevati è determinato dall'impostazione *
 
 5. Non appena selezioni un campo, questo viene compilato con il valore del codice a barre.
 
-<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Codice a barre assegnato al campo Numero d&#x27;ordine"><figcaption><p>Dopo aver selezionato un campo (qui Numero d'ordine), il campo viene compilato con il valore del codice a barre.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/barcode_assignment_field_mapped.png" alt="Codice a barre assegnato al campo Numero d'ordine"><figcaption><p>Dopo aver selezionato un campo (qui Numero d'ordine), il campo viene compilato con il valore del codice a barre.</p></figcaption></figure>
 
 ### Come attivarla
 
@@ -62,8 +62,8 @@ Quali tipi di codici a barre vengono rilevati è determinato dall'impostazione *
 
 * **Documenti con codici a barre**: Quando i tuoi documenti contengono codici a barre/QR i cui valori appartengono a campi specifici (es. numeri d'ordine o di riferimento).
 * **Flussi di validazione manuale**: Quando una persona esamina i documenti e vuole compilare rapidamente i campi dai codici a barre.
-* **Lasciala disattivata** se i tuoi documenti non hanno codici a barre utilizzabili, o se ti serve solo l'**estrazione** automatica dei codici a barre/QR — vedi [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+* **Lasciala disattivata** se i tuoi documenti non hanno codici a barre utilizzabili, o se ti serve solo l'**estrazione** automatica dei codici a barre/QR — vedi [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 
 {% hint style="info" %}
-**Questo serve a leggere un valore di codice a barre/QR e ad assegnarlo a un campo durante la validazione.** L'estrazione automatica di dati strutturati dai codici di pagamento (come Swiss QR Bill o GiroCode) — e la divisione di un file di più pagine in corrispondenza delle pagine separatrici con codice a barre — sono gestite da un'impostazione **diversa**: [Bar-Code / QR Code Extraction](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/administration-and-setup/settings/document-processing/module/bar-code-qr-code-extraction/README.md).
+**Questo serve a leggere un valore di codice a barre/QR e ad assegnarlo a un campo durante la validazione.** L'estrazione automatica di dati strutturati dai codici di pagamento (come Swiss QR Bill o GiroCode) — e la divisione di un file di più pagine in corrispondenza delle pagine separatrici con codice a barre — sono gestite da un'impostazione **diversa**: [Bar-Code / QR Code Extraction](bar-code-qr-code-extraction/README.md).
 {% endhint %}

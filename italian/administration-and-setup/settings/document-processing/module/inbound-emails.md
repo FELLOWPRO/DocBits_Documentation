@@ -4,10 +4,10 @@
 
 DocBits può acquisire i documenti direttamente dall'e-mail, senza caricamento manuale. Esistono **due modi** per importare documenti via e-mail, entrambi in **Impostazioni → Elaborazione documenti → Importazione**:
 
-| Metodo                                  | Come funziona                                                                                                                                                  | Ideale per                                                                              |
-| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| **Account di importazione e-mail**      | DocBits si connette a una casella di posta di tua proprietà (**IMAP**, **OAuth Office365** o **OAuth Office365 – Tenant**) e importa i documenti che vi trova. | Una casella dedicata che riceve già i tuoi documenti (es. `fatture@tuaazienda.com`).    |
-| **E-mail inoltrate (Email in entrata)** | DocBits ti fornisce un indirizzo univoco; qualsiasi mittente autorizzato può **inoltrare** documenti ad esso.                                                  | L'inoltro occasionale da molti mittenti senza condividere le credenziali della casella. |
+| Metodo | Come funziona | Ideale per |
+|--------|---------------|------------|
+| **Account di importazione e-mail** | DocBits si connette a una casella di posta di tua proprietà (**IMAP**, **OAuth Office365** o **OAuth Office365 – Tenant**) e importa i documenti che vi trova. | Una casella dedicata che riceve già i tuoi documenti (es. `fatture@tuaazienda.com`). |
+| **E-mail inoltrate (Email in entrata)** | DocBits ti fornisce un indirizzo univoco; qualsiasi mittente autorizzato può **inoltrare** documenti ad esso. | L'inoltro occasionale da molti mittenti senza condividere le credenziali della casella. |
 
 Puoi usare ciascun metodo singolarmente o entrambi insieme.
 
@@ -64,7 +64,7 @@ Una volta attivato, nella sezione **Impostazioni → Elaborazione documenti → 
 Fai clic su **Salva** per applicare le modifiche.
 
 {% hint style="info" %}
-**Quali allegati vengono importati?** DocBits importa gli allegati di documenti supportati — consulta [Importazione → Importazione e-mail](../import/#email-import) per l'elenco completo dei tipi di file — e decomprime le e-mail `.eml` inoltrate e gli allegati Outlook `winmail.dat` (TNEF) per importare i documenti che contengono. Il riconoscimento si basa anche sul **contenuto effettivo del file**, quindi gli allegati a cui un server di posta di inoltro riassegna un tipo generico (`application/octet-stream`) vengono comunque importati correttamente. Le immagini in linea (loghi della firma / grafica incorporata) vengono ignorate.
+**Quali allegati vengono importati?** DocBits importa gli allegati di documenti supportati — consulta [Importazione → Importazione e-mail](../import/README.md#email-import) per l'elenco completo dei tipi di file — e decomprime le e-mail `.eml` inoltrate e gli allegati Outlook `winmail.dat` (TNEF) per importare i documenti che contengono. Il riconoscimento si basa anche sul **contenuto effettivo del file**, quindi gli allegati a cui un server di posta di inoltro riassegna un tipo generico (`application/octet-stream`) vengono comunque importati correttamente. Le immagini in linea (loghi della firma / grafica incorporata) vengono ignorate.
 {% endhint %}
 
 ### Quale metodo scegliere

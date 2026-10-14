@@ -1,19 +1,19 @@
-# FAQ Sicurezza e Conformità
+# DocBits (FELLOWPRO AG) — Questionario sulla Sicurezza e Conformità
 
 **Fornitore:** DocBits di FELLOWPRO AG | **Hosting:** Francoforte, Germania | **Certificazione ISO 27001** | **Data:** 2026-03-04
 
-***
+---
 
 ## Legenda dello Stato
 
-| Simbolo                  | Significato                                                                                              |
-| ------------------------ | -------------------------------------------------------------------------------------------------------- |
-| ✅ Confermato             | Risposta verificata dalla documentazione ufficiale di DocBits o da fonti pubbliche                       |
-| ✅ Parziale               | Risposta parziale; dettagli aggiuntivi necessari dal team di DocBits                                     |
-| ❓ Da Confermare          | Nessuna informazione pubblica disponibile — deve essere confermato direttamente con DocBits/FELLOWPRO    |
+| Simbolo | Significato |
+|---------|---------|
+| ✅ Confermato | Risposta verificata dalla documentazione ufficiale di DocBits o da fonti pubbliche |
+| ✅ Parziale | Risposta parziale; dettagli aggiuntivi necessari dal team di DocBits |
+| ❓ Da Confermare | Nessuna informazione pubblica disponibile — deve essere confermato direttamente con DocBits/FELLOWPRO |
 | ⚠️ Necessita Chiarimento | Le informazioni pubbliche sollevano dubbi o ambiguità che richiedono chiarimento esplicito dal fornitore |
 
-***
+---
 
 ## 🔹 Posizione dei Dati e Residenza
 
@@ -25,7 +25,7 @@
 
 **Note:** Francoforte AWS confermato (S3 + OpenSearch). Richiedere il codice della regione AWS specifica (eu-central-1) e se singola o multi-AZ.
 
-***
+---
 
 ### 2. Dove è ospitato l'ambiente di Ripristino di Emergenza (DR)?
 
@@ -35,14 +35,13 @@
 
 **Note:** Francoforte (primario) + Amsterdam (secondario). Entrambe le posizioni nell'UE. Richiedere i target RTO/RPO e i dettagli del processo di failover.
 
-***
+---
 
 ### 3. Dove sono archiviati i backup?
 
 **Risposta:** I backup sono archiviati in due posizioni nell'UE:
-
-* **Primaria:** Francoforte, Germania
-* **Secondaria:** Amsterdam, Paesi Bassi
+- **Primaria:** Francoforte, Germania
+- **Secondaria:** Amsterdam, Paesi Bassi
 
 Calendario dei backup: Backup giornalieri, settimanali, trimestrali e annuali.
 
@@ -50,14 +49,13 @@ Calendario dei backup: Backup giornalieri, settimanali, trimestrali e annuali.
 
 **Note:** Calendario completo dei backup (giornaliero/settimanale/trimestrale/annuale) su due posizioni nell'UE. Tutti i dati rimangono all'interno dell'UE. Confermare la crittografia dei backup e la frequenza del test di ripristino.
 
-***
+---
 
 ### 4. Sono disponibili opzioni di partizionamento geografico (ad es., solo UK)?
 
 **Risposta:** Due aree del data center disponibili:
-
-* **Francoforte, Germania** — per tutti i clienti dell'UE
-* **New York, USA** — solo per clienti USA
+- **Francoforte, Germania** — per tutti i clienti dell'UE
+- **New York, USA** — solo per clienti USA
 
 I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmente non è disponibile un'opzione solo per il Regno Unito.
 
@@ -65,7 +63,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Clienti dell'UE solo Francoforte — nessuna combinazione di dati tra regioni. L'hosting solo UK non è disponibile; i clienti del Regno Unito sarebbero serviti da Francoforte. Chiarire se aree aggiuntive sono sulla roadmap.
 
-***
+---
 
 ### 5. I dati sono crittografati a riposo e in transito?
 
@@ -75,7 +73,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Confermare gli standard di crittografia specifici (ad es., AES-256 a riposo, TLS 1.2+ in transito).
 
-***
+---
 
 ## 🔹 Gestione dei Modelli AI/ML
 
@@ -87,7 +85,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Modelli Mistral ospitati a Francoforte. Nessuna chiamata API di terze parti per l'elaborazione dei documenti. Completamente autonomo.
 
-***
+---
 
 ### 7. I documenti estratti sono utilizzati per addestrare modelli più ampi tra i clienti?
 
@@ -97,7 +95,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** L'intelligenza collettiva apprende i modelli di layout strutturale (coordinate/posizioni dei campi), non il contenuto del documento. Ciò significa che nessun dato cliente (importi delle fatture, nomi dei fornitori, ecc.) è condiviso tra i tenant — solo la conoscenza della struttura del documento.
 
-***
+---
 
 ### 8. Puoi limitare l'addestramento del modello al solo tuo tenant?
 
@@ -107,7 +105,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Rischio basso: i modelli condivisi apprendono solo dati posizionali/strutturali (coordinate), non il contenuto commerciale. L'addestramento del tipo di documento personalizzato rimane limitato al tenant.
 
-***
+---
 
 ### 9. Dove sono ospitati ed eseguiti i modelli AI/ML?
 
@@ -117,7 +115,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Positivo: l'elaborazione AI rimane all'interno di Francoforte. Nessun trasferimento di dati all'infrastruttura AI esterna.
 
-***
+---
 
 ### 10. Quali tecnologie AI/ML vengono utilizzate (motore OCR, LLM, NLP)?
 
@@ -127,7 +125,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Richiedere dettagli specifici del modello: OCR proprietario vs. di terze parti, quale LLM alimenta le funzioni Gen AI.
 
-***
+---
 
 ### 11. Esiste un'opzione per il deployment del modello AI in locale?
 
@@ -137,7 +135,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Confermare l'ambito dell'opzione on-premise: include l'elaborazione AI completa o solo l'archiviazione dei documenti?
 
-***
+---
 
 ## 🔹 Accesso ai Dati e Logging
 
@@ -149,7 +147,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Richiedere a DocBits: elenco esatto dei ruoli del personale con accesso ai documenti grezzi. L'accesso è basato sulla necessità / su richiesta solo?
 
-***
+---
 
 ### 13. Quali controlli di accesso e logging esistono per il personale del fornitore?
 
@@ -159,7 +157,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Richiedere: dettagli RBAC, requisiti MFA, gestione dell'accesso privilegiato (PAM), e se l'accesso è registrato con audit trail immutabili.
 
-***
+---
 
 ### 14. Quanto tempo vengono conservati i log di accesso?
 
@@ -169,7 +167,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** S3 + OpenSearch a Francoforte. Conservazione di 30 giorni per l'accesso dei clienti / 3 mesi per la conservazione interna. Confermare se i log sono immutabili/a prova di manomissione.
 
-***
+---
 
 ### 15. Quanto tempo vengono conservati i documenti caricati / i dati estratti in DocBits?
 
@@ -179,7 +177,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Conservazione configurabile dal cliente (30 giorni / 3 mesi). Confermare: l'eliminazione include tutte le copie (S3, OpenSearch, dati di addestramento AI)?
 
-***
+---
 
 ### 16. I clienti possono richiedere l'eliminazione dei dati su richiesta?
 
@@ -189,7 +187,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Confermare: l'eliminazione copre tutte le copie inclusi i backup e i dati di addestramento AI derivati dal tenant?
 
-***
+---
 
 ### 17. Quali subappaltatori hanno accesso ai dati dei clienti?
 
@@ -199,7 +197,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Richiedere l'elenco completo dei subappaltatori. Cloudflare confermato; chiedere informazioni sul provider di cloud hosting, fornitori di servizi AI, ecc.
 
-***
+---
 
 ### 18. Quali certificazioni e framework di conformità detiene DocBits?
 
@@ -209,25 +207,24 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Chiedere: SOC 2 Type II? Rapporti di penetration test? ISO 27701 (privacy)? Calendario del controllo annuale?
 
-***
+---
 
 ## 🔹 Ambito dell'Integrazione (Infor LN)
 
 ### 19. Qual è l'elenco esatto dei campi dati estratti da LN master per la convalida?
 
 **Risposta:** Dati master importati tramite Infor BOD:
-
-* **Fornitori:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
-* **Ordini di Acquisto:** Sync.PurchaseOrder
-* **Piano dei Conti:** Sync.CodeDefinition (ChartOfAccounts)
-* **Dimensioni Flex:** Sync.CodeDefinition (FlexDimensions)
-* **Codici Fiscali:** tramite BOD publish
+- **Fornitori:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
+- **Ordini di Acquisto:** Sync.PurchaseOrder
+- **Piano dei Conti:** Sync.CodeDefinition (ChartOfAccounts)
+- **Dimensioni Flex:** Sync.CodeDefinition (FlexDimensions)
+- **Codici Fiscali:** tramite BOD publish
 
 **Stato:** ✅ Confermato
 
 **Note:** Richiedere a DocBits l'elenco completo dei BOD e la documentazione del mapping a livello di campo per la configurazione LN specifica.
 
-***
+---
 
 ### 20. Quali campi di intestazione specifici vengono esportati di nuovo in LN?
 
@@ -237,7 +234,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Esaminare il file di mapping dei campi per l'ambiente specifico. Confermare che tutti i campi statici corrispondono alla configurazione LN della tua azienda.
 
-***
+---
 
 ### 21. Le operazioni di write-back sono limitate solo agli oggetti dell'interfaccia AP/PO?
 
@@ -247,7 +244,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Confermare: DocBits scrive SOLO su oggetti fattura AP e ricevuta PO? Quali altri moduli LN vengono toccati? Qual è l'ambito di scrittura di IDM?
 
-***
+---
 
 ### 22. Quale metodo di integrazione viene utilizzato (ION API, BOD, DB diretto)?
 
@@ -257,7 +254,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Positivo: nessun accesso al DB diretto. Tutta la comunicazione tramite il livello di integrazione Infor standard.
 
-***
+---
 
 ### 23. Quale autenticazione/autorizzazione viene utilizzata per la connettività LN?
 
@@ -267,7 +264,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** Assicurare che gli account di servizio seguano il principio del privilegio minimo. Esaminare i permessi concessi all'utente ION API di DocBits.
 
-***
+---
 
 ### 24. Il trasferimento dati tra DocBits e LN è crittografato end-to-end?
 
@@ -277,7 +274,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Note:** La comunicazione ION API utilizza HTTPS/TLS. Confermare la versione TLS minima (1.2+).
 
-***
+---
 
 ### 25. Quali tipi di documento sono supportati oltre alle fatture AP?
 

@@ -6,7 +6,7 @@ La pagina **Regole di validazione** (**Documenti elettronici → Regole**) contr
 
 ## Configurazione della validazione
 
-La scheda **Configurazione della validazione** mostra il tuo profilo di validazione attuale (ad esempio _B2G — Public Sector Receiver_). Fai clic su **Modifica risposte** per rieseguire la procedura guidata di configurazione e cambiare lo standard rispetto al quale convalidi.
+La scheda **Configurazione della validazione** mostra il tuo profilo di validazione attuale (ad esempio *B2G — Public Sector Receiver*). Fai clic su **Modifica risposte** per rieseguire la procedura guidata di configurazione e cambiare lo standard rispetto al quale convalidi.
 
 ## Versioni XRechnung accettate
 
@@ -20,12 +20,12 @@ Scegli quali **profili** accettare (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDE
 
 Ogni regola di validazione ha una **gravità** che decide cosa succede quando si attiva:
 
-| Gravità     | Effetto                                                                                                                                                       |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FATAL**   | Interrompe immediatamente l'elaborazione. Nessun livello successivo viene controllato; il documento passa in Errore.                                          |
-| **ERROR**   | Il documento viene rifiutato. Gli altri rilevamenti dello stesso documento vengono comunque mostrati; la notifica al fornitore (se abilitata) viene attivata. |
-| **WARNING** | Compare nel report di validazione, ma il documento prosegue normalmente nel flusso.                                                                           |
-| **INFO**    | Solo log di audit. Nessun effetto visibile all'utente né rifiuto.                                                                                             |
+| Gravità | Effetto |
+|---------|---------|
+| **FATAL** | Interrompe immediatamente l'elaborazione. Nessun livello successivo viene controllato; il documento passa in Errore. |
+| **ERROR** | Il documento viene rifiutato. Gli altri rilevamenti dello stesso documento vengono comunque mostrati; la notifica al fornitore (se abilitata) viene attivata. |
+| **WARNING** | Compare nel report di validazione, ma il documento prosegue normalmente nel flusso. |
+| **INFO** | Solo log di audit. Nessun effetto visibile all'utente né rifiuto. |
 
 ## Sovrascrivere la gravità delle regole
 

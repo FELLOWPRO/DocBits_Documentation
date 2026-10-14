@@ -1,4 +1,4 @@
-# Numeri Fattura Estesi
+# Script per la Generazione di Numeri di Fattura Estesi per Docbits
 
 Questo documento descrive in dettaglio lo script "Generating Extended Invoice Numbers", che automatizza la creazione di numeri di fattura estesi in Docbits. I numeri di fattura estesi combinano piu identificatori di documenti, come l'ID fattura e il numero dell'ordine di acquisto, in un unico identificatore completo. Questo script migliora la tracciabilita dei documenti e semplifica la tenuta dei registri.
 

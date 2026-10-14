@@ -1,4 +1,4 @@
-# Dashboard di Analisi
+# Dashboard di analisi
 
 ## Panoramica
 
@@ -32,11 +32,11 @@ La Dashboard di analisi è controllata da un'impostazione di modulo. Una volta a
 
 Scegli la prospettiva giusta per la tua analisi. Ogni tipo di flusso ti offre una visione diversa degli stessi dati.
 
-| Tipo di flusso              | Scopo                                                                     | Domanda chiave                                                                         |
-| --------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| **Stato**                   | Traccia il ciclo di vita del documento dall'importazione all'esportazione | _"Qual è il tempo complessivo dei miei documenti dall'importazione all'esportazione?"_ |
-| **Elaborazione**            | Analisi delle prestazioni tecniche dei moduli                             | _"Quali fasi di elaborazione sono colli di bottiglia?"_                                |
-| **Interazione dell'utente** | Punti di contatto umani e tempi di attesa                                 | _"Quanto tempo i documenti attendono gli utenti?"_                                     |
+| Tipo di flusso | Scopo | Domanda chiave |
+| --- | --- | --- |
+| **Stato** | Traccia il ciclo di vita del documento dall'importazione all'esportazione | *"Qual è il tempo complessivo dei miei documenti dall'importazione all'esportazione?"* |
+| **Elaborazione** | Analisi delle prestazioni tecniche dei moduli | *"Quali fasi di elaborazione sono colli di bottiglia?"* |
+| **Interazione dell'utente** | Punti di contatto umani e tempi di attesa | *"Quanto tempo i documenti attendono gli utenti?"* |
 
 Usa l'interruttore **Tipo di flusso** in cima alla dashboard per passare da una prospettiva all'altra.
 
@@ -105,7 +105,7 @@ Analizza qualsiasi periodo, da **7 giorni** fino a un **anno intero**, oppure im
 
 ## Schede delle fasi del flusso
 
-Ogni scheda rappresenta una fase del flusso in base al **Tipo di flusso** selezionato. Le schede si adattano alla tua selezione — mostrando le fasi del ciclo di vita per _Stato_, i moduli di elaborazione per _Elaborazione_, o i punti di contatto utente per _Interazione dell'utente_.
+Ogni scheda rappresenta una fase del flusso in base al **Tipo di flusso** selezionato. Le schede si adattano alla tua selezione — mostrando le fasi del ciclo di vita per *Stato*, i moduli di elaborazione per *Elaborazione*, o i punti di contatto utente per *Interazione dell'utente*.
 
 Ogni scheda mostra:
 

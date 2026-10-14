@@ -6,9 +6,9 @@ Il **Card SDK** consente a partner e sviluppatori di creare schede di workflow p
 
 ## Come funziona
 
-* **Download SDK Template** — parti dal template ufficiale che contiene la struttura prevista.
-* **Upload ZIP** — lo ZIP deve contenere `app.json` e una cartella `.docflowcompose/flow/` con le definizioni delle schede (massimo 10 MB). Upload & Validate controlla il pacchetto prima che venga accettato.
-* **GitHub Import** — importa una definizione di scheda direttamente da un repository GitHub.
-* **Submissions** — monitora lo stato delle schede che hai inviato.
+- **Download SDK Template** — parti dal template ufficiale che contiene la struttura prevista.
+- **Upload ZIP** — lo ZIP deve contenere `app.json` e una cartella `.docflowcompose/flow/` con le definizioni delle schede (massimo 10 MB). Upload &#x26; Validate controlla il pacchetto prima che venga accettato.
+- **GitHub Import** — importa una definizione di scheda direttamente da un repository GitHub.
+- **Submissions** — monitora lo stato delle schede che hai inviato.
 
 Una volta validate e accettate, le tue schede personalizzate appaiono nella libreria **Add Card** insieme alle schede integrate.

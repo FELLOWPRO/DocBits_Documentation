@@ -1,78 +1,84 @@
-# Navigare il Layout Manager
+# Aggiungere e modificare i campi
 
-## Essere in grado di navigare nel Layout Manager in DocBits e modificare gruppi e campi è fondamentale per controllare la struttura e l'aspetto dei documenti.
+## Ecco i passaggi per aggiungere un nuovo campo o modificare i campi esistenti in DocBits, compresi i dettagli su come accedere alle opzioni di configurazione avanzate:
 
-### Ecco i passaggi per utilizzare il Layout Manager e modificare gruppi e campi:
+### Aggiungere un nuovo campo
 
-### Navigare nel Layout Manager:
+* Accedi e apri la gestione dei documenti:
 
-#### Aprire il Layout Manager:
+<figure><img src="../../../../../.gitbook/assets/settings_navigation_step1.png" alt="Navigazione nelle impostazioni, passaggio 1"><figcaption><p>Impostazioni</p></figcaption></figure>
 
-* Accedi a DocBits e naviga nell'area in cui desideri utilizzare il Layout Manager.
-* Puoi trovare questa opzione in "Gestisci Tipi di Documento".
+<figure><img src="../../../../../.gitbook/assets/settings_document_types_step2.png" alt="Impostazioni Tipi di documento, passaggio 2"><figcaption><p>Impostazioni Tipi di documento</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FeebqP176qG5bOQ6YLJDX%252FBildschirmfoto%25202024-05-23%2520um%252013.35.39.png%3Falt%3Dmedia%26token%3D6aa09cc2-2df5-4495-aefe-36dec3123b51\&width=768\&dpr=4\&quality=100\&sign=82c501bb\&sv=2)
+**Aggiungi un nuovo campo:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5z8cVvWqARCkXx4AER4B%252FBildschirmfoto%25202024-05-24%2520um%252010.12.05.png%3Falt%3Dmedia%26token%3De0f8301a-9aaa-4e4a-9568-a2c372355538\&width=768\&dpr=4\&quality=100\&sign=66865b41\&sv=2)
+* Fai clic sull'opzione "Create Field".
 
-Selezionare il Tipo di Documento:
+<figure><img src="../../../../../.gitbook/assets/create_field_button.png" alt="Pulsante Create Field"><figcaption></figcaption></figure>
 
-* Seleziona il tipo di documento che desideri modificare.
-* Il Layout Manager mostrerà la struttura di quel tipo di documento.
+**Configurazione di base:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FOsXAKJo94rR3WvUfqUXk%252FBildschirmfoto%25202024-05-24%2520um%252010.16.38.png%3Falt%3Dmedia%26token%3Da7944771-aa6e-4e7c-9042-50b87ecce503\&width=768\&dpr=4\&quality=100\&sign=2f86321a\&sv=2)
+<figure><img src="../../../../../.gitbook/assets/field_basic_configuration_form.png" alt="Modulo di configurazione di base del campo" width="375"><figcaption></figcaption></figure>
 
-Navigare tra Gruppi e Campi:
+* **Name**
+  * Scegli un nome significativo e descrittivo.
+  * Il nome deve essere univoco.
+  * <mark style="color:red;">**Nota:**</mark> **Una volta creato, il nome non può più essere modificato.**
+* **Title**
+  * È il nome visualizzato del campo.
+  * Definisce come il campo appare nell'interfaccia utente.
+  * <mark style="color:red;">**Nota:**</mark> **Il titolo può essere modificato in un secondo momento, se necessario.**
+*   **Select Field Type**
 
-* Nel Layout Manager vedrai una struttura ad albero che rappresenta i gruppi e i campi del tipo di documento selezionato.
+    * Scegli il tipo di campo da un elenco a discesa.
+    * I tipi di campo disponibili comprendono diverse opzioni per soddisfare le varie esigenze di inserimento dei dati.
+    * <mark style="color:red;">**Nota:**</mark> **Una volta creato, il tipo non può più essere modificato.**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FjtiMNhQqN859bxtLsoth%252Fimage.png%3Falt%3Dmedia%26token%3Dc3224b66-3f2a-4aa2-81ee-6cde5719cf3f\&width=768\&dpr=4\&quality=100\&sign=57e2b59\&sv=2)
+    <figure><img src="../../../../../.gitbook/assets/field_type_selection.png" alt="Selezione del tipo di campo" width="375"><figcaption></figcaption></figure>
+* **Optional: Enable Charges Element**
+  * È possibile selezionare una casella di controllo denominata **Enable Charges Element**.
+  * Se è selezionata, devi scegliere un elemento di costo da un elenco a discesa.
+  * **Importante:** gli elementi di costo devono essere configurati in precedenza.
+    * [Configurazione degli elementi di costo](../../../../../infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
 
-* Puoi navigare attraverso questa struttura per modificare le aree che desideri.
+**Configurazione avanzata:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F5UpYc7uZEQzEt2LEFHzo%252Fimage.png%3Falt%3Dmedia%26token%3D4203ac3a-5487-4bfc-8aa8-4c35fe70b14a\&width=768\&dpr=4\&quality=100\&sign=adc50420\&sv=2)
+* Qui puoi impostare altre proprietà, come regole di convalida, valori di corrispondenza, modalità di sola lettura, nascondimento e impostazioni OCR.
 
-#### Modificare gruppi e campi:
+<figure><img src="../../../../../.gitbook/assets/field_advanced_configuration_tab.png" alt="Scheda di configurazione avanzata del campo"><figcaption></figcaption></figure>
 
-<mark style="color:red;">**Nota:**</mark> **quando il Titolo di un campo viene modificato, devi eliminare e riaggiungere il campo nel layout builder affinché le modifiche abbiano effetto.**
+**Salva:**
 
-Aggiungere un gruppo o campo:
+* Dopo aver effettuato tutte le configurazioni necessarie, fai clic su "Save" o su un pulsante analogo per creare il nuovo campo.
 
-* Clicca sul pulsante "Crea nuovo gruppo", a seconda che tu voglia aggiungere un nuovo gruppo o campo.
+<figure><img src="../../../../../.gitbook/assets/field_save_button_small.png" alt="Pulsante Save del campo" width="75"><figcaption></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FF9Soj6uDKKyYb8ciweHp%252FBildschirmfoto%25202024-05-24%2520um%252010.23.27.png%3Falt%3Dmedia%26token%3D797e975a-470b-4a0d-b1f1-a82b8aeb7267\&width=768\&dpr=4\&quality=100\&sign=d2e200b6\&sv=2)
+### Modificare un campo esistente
 
-* Inserisci il nome del nuovo gruppo o campo e seleziona eventuali impostazioni che desideri, come il tipo di campo (testo, numero, data, ecc.).
+**Accedi alla modifica del campo:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252F7qcF5LK6yxbcRVm57Ejz%252Fimage.png%3Falt%3Dmedia%26token%3Dec75cf2f-a834-4eb3-89c3-75a6fc70c88c\&width=768\&dpr=4\&quality=100\&sign=e93f7652\&sv=2)
+* Vai all'elenco dei campi esistenti e trova il campo che desideri modificare.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FSM5IXOG5XYfGo3ee1xzP%252Fimage.png%3Falt%3Dmedia%26token%3D57a737f0-240c-4c23-9d4a-b92e86a92b47\&width=768\&dpr=4\&quality=100\&sign=456cdcec\&sv=2)
+<figure><img src="../../../../../.gitbook/assets/field_list_view.png" alt="Vista elenco dei campi"><figcaption></figcaption></figure>
 
-Rimuovere un gruppo o campo:
+**Seleziona un campo:**
 
-* Seleziona il gruppo o campo che desideri rimuovere.
-* Clicca sul pulsante "Elimina" o usa la scorciatoia da tastiera appropriata (di solito "Elimina" o "Del").
+* Fai clic sul campo desiderato per accedere alle opzioni di modifica.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FQQjFkNb0ONiiklAQmBRU%252FBildschirmfoto%25202024-05-24%2520um%252010.35.24.png%3Falt%3Dmedia%26token%3D2fb8d92a-c5c9-449b-8179-786765ada10f\&width=768\&dpr=4\&quality=100\&sign=1ac2e12c\&sv=2)
+<figure><img src="../../../../../.gitbook/assets/field_edit_selection.png" alt="Selezione del campo da modificare"><figcaption></figcaption></figure>
 
-Modificare un gruppo o campo:
+**Modifica la configurazione:**
 
-* Fai doppio clic sul gruppo o campo che desideri modificare.
-* Cambia le proprietà che desideri, come il nome, la posizione, la dimensione o le impostazioni del tipo di campo.
+* Modifica le proprietà del campo secondo le necessità. Questo può includere la modifica del nome, del tipo di campo, l'aggiunta o la rimozione di regole di convalida, l'impostazione di valori di corrispondenza o la regolazione di altre impostazioni avanzate.
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FtdvSPyCEdIfj8j30DEe5%252Fimage.png%3Falt%3Dmedia%26token%3Dfaa32e5a-3492-499d-a0af-7fa99a583d09\&width=768\&dpr=4\&quality=100\&sign=865f9003\&sv=2)
+<mark style="color:red;">**Nota:**</mark> se modifichi il **Title** di un campo, devi eliminare e aggiungere nuovamente il campo nel layout builder affinché le modifiche abbiano effetto.
 
-Disporre gruppi e campi:
+<figure><img src="../../../../../.gitbook/assets/field_edit_configuration_form.png" alt="Modulo di configurazione per la modifica del campo"><figcaption></figcaption></figure>
 
-* Trascina e rilascia gruppi o campi per cambiare il loro ordine o posizionarli all'interno o all'esterno di altri gruppi.
+**Salva:**
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fun2twvKa1n8VJrBZzjl3%252FBildschirmfoto%25202024-05-24%2520um%252010.45.28.png%3Falt%3Dmedia%26token%3Dc090597f-b693-4308-b0ac-badec6bec466\&width=768\&dpr=4\&quality=100\&sign=af0174ad\&sv=2)
+* Fai clic su "Save" per salvare le modifiche apportate al campo.
 
-Salvare le modifiche:
+<figure><img src="../../../../../.gitbook/assets/field_save_settings_button.png" alt="Pulsante Save Settings del campo" width="260"><figcaption><p>Save Settings</p></figcaption></figure>
 
-* Non dimenticare di salvare le tue modifiche prima di lasciare il Layout Manager.
-* Clicca sul pulsante "Salva".
-
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252Fu9c6MD2mZFuAsXp7n9Ai%252FBildschirmfoto%25202024-05-24%2520um%252010.51.06.png%3Falt%3Dmedia%26token%3D613ef982-9455-4832-b2a5-5644e3bd644c\&width=768\&dpr=4\&quality=100\&sign=fb7f99d5\&sv=2)
-
-Seguendo questi passaggi, puoi navigare efficacemente nel Layout Manager di DocBits e modificare gruppi e campi all'interno di un tipo di documento. Questo ti consente di personalizzare la struttura e l'aspetto dei tuoi documenti secondo le tue esigenze.
+Grazie ai passaggi per aggiungere nuovi campi e modificare quelli esistenti, oltre all'accesso alle opzioni di configurazione avanzate, puoi massimizzare la flessibilità e l'adattabilità del tuo sistema di elaborazione dei documenti. In questo modo puoi strutturare ed elaborare i tuoi dati esattamente come ti serve.

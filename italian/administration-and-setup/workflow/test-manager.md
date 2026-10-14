@@ -12,9 +12,9 @@ Uno scenario di test cattura un workflow, un input di esempio e il **risultato a
 
 ## Lavorare con gli scenari
 
-* **Add Test Scenario** — crea un nuovo scenario a partire da un workflow e da un documento di esempio.
-* **Run All Tests** — esegui tutti gli scenari contemporaneamente e vedi a colpo d'occhio quali workflow continuano a superare il test.
-* **View Details** — apri uno scenario per esaminarne il risultato.
+- **Add Test Scenario** — crea un nuovo scenario a partire da un workflow e da un documento di esempio.
+- **Run All Tests** — esegui tutti gli scenari contemporaneamente e vedi a colpo d'occhio quali workflow continuano a superare il test.
+- **View Details** — apri uno scenario per esaminarne il risultato.
 
 <figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Dettagli dello scenario di test del workflow con stato, tempo di esecuzione e dati"><figcaption><p>Dettagli dello scenario: nome, stato, tempo di esecuzione e i dati effettivi ed estratti prodotti dall'esecuzione.</p></figcaption></figure>
 
@@ -24,5 +24,5 @@ La vista dei dettagli mostra il nome dello scenario e lo **stato**, il **nome de
 
 Sono due cose diverse:
 
-* **Test Manager** (questa pagina) — scenari _salvati e ripetibili_ con risultati attesi, eseguiti insieme con **Run All Tests**. Usalo per i test di regressione dopo le modifiche.
-* **Testing nel builder** — i controlli inline **Validate** e **Test** all'interno del builder dei Workflow Avanzati, per verifiche rapide mentre stai costruendo. Vedi [Validazione e Testing](advanced-workflow-builder/validation-and-testing.md).
+- **Test Manager** (questa pagina) — scenari *salvati e ripetibili* con risultati attesi, eseguiti insieme con **Run All Tests**. Usalo per i test di regressione dopo le modifiche.
+- **Testing nel builder** — i controlli inline **Validate** e **Test** all'interno del builder dei Workflow Avanzati, per verifiche rapide mentre stai costruendo. Vedi [Validazione e Testing](advanced-workflow/validation-and-testing.md).

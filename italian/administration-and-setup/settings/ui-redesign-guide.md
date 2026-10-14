@@ -15,15 +15,15 @@ Per la procedura completa di riordinamento, nascondimento e fissaggio, consulta 
 
 Il menu Impostazioni è raggruppato per intento invece che per modello dei dati. Se ricordi un'impostazione ma non la ritrovi, prova il gruppo corrispondente qui sotto:
 
-| Stai cercando…                                                        | Apri Impostazioni →                          |
-| --------------------------------------------------------------------- | -------------------------------------------- |
-| Nome azienda, logo, fuso orario, colore dell'app                      | Azienda e Utenti → Informazioni Azienda      |
-| Utenti, gruppi, permessi                                              | Azienda e Utenti → Gruppi, Utenti e Permessi |
-| Chiavi API, connessioni ERP, configurazioni di export                 | Integrazione                                 |
-| Tipi di documento, campi, script, EDI, addestramento del modello      | Tipi di Documento                            |
-| Impostazioni OCR, alberi decisionali, liste di valori, gestore regole | Elaborazione Documenti                       |
-| Audit di accesso, analitiche, indice a testo completo, log eventi     | Log e Ricerca                                |
-| Portale fornitori, Watchdog                                           | Configurazione                               |
+| Stai cercando… | Apri Impostazioni → |
+|---|---|
+| Nome azienda, logo, fuso orario, colore dell'app | Azienda e Utenti → Informazioni Azienda |
+| Utenti, gruppi, permessi | Azienda e Utenti → Gruppi, Utenti e Permessi |
+| Chiavi API, connessioni ERP, configurazioni di export | Integrazione |
+| Tipi di documento, campi, script, EDI, addestramento del modello | Tipi di Documento |
+| Impostazioni OCR, alberi decisionali, liste di valori, gestore regole | Elaborazione Documenti |
+| Audit di accesso, analitiche, indice a testo completo, log eventi | Log e Ricerca |
+| Portale fornitori, Watchdog | Configurazione |
 
 All'interno di ogni gruppo, le pagine più usate sono posizionate in cima.
 
@@ -35,7 +35,7 @@ Le pagine di impostazioni con molte sezioni (come le Impostazioni Globali o la c
 
 La maggior parte delle pagine di impostazioni, finestre e schermi di strumenti mostra ora una piccola icona **?** nell'intestazione.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Icona di aiuto nell&#x27;intestazione di una pagina"><figcaption><p>L'icona di aiuto apre la pagina di documentazione corrispondente in una nuova scheda.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Icona di aiuto nell'intestazione di una pagina"><figcaption><p>L'icona di aiuto apre la pagina di documentazione corrispondente in una nuova scheda.</p></figcaption></figure>
 
 Un clic apre la pagina corrispondente su `docs.docbits.com` in una nuova scheda — senza dover cercare la pagina giusta nella documentazione. L'icona rispetta la tua lingua dell'interfaccia e apre la documentazione tradotta quando esiste; altrimenti ripiega sull'inglese.
 

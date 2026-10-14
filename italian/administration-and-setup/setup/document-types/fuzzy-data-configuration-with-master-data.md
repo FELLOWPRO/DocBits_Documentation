@@ -153,7 +153,13 @@ Il **Gestore dei conflitti (Conflict Handler)** decide:
 
 In tutti gli esempi il documento ha una partita IVA e un nome di fornitore, ed entrambi i campi sono **Ricercabili**.
 
-<table><thead><tr><th width="150">La partita IVA trova</th><th width="150">Il nome trova</th><th width="150">Corrispondenza totale disattivata + Return None</th><th width="150">Corrispondenza totale attivata + Return None</th><th width="150">Corrispondenza totale disattivata + Best Score</th></tr></thead><tbody><tr><td>solo A</td><td>A e B</td><td>vuoto</td><td><strong>A</strong></td><td><strong>A</strong></td></tr><tr><td>A e B</td><td>solo B</td><td>vuoto</td><td><strong>B</strong></td><td><strong>B</strong></td></tr><tr><td>A, B e C</td><td>C, D e E</td><td>vuoto</td><td><strong>C</strong></td><td><strong>C</strong></td></tr><tr><td>A, B e C</td><td>B, C e D</td><td>vuoto</td><td>vuoto</td><td>B o C, non affidabile</td></tr><tr><td>solo A</td><td>niente</td><td><strong>A</strong></td><td>vuoto</td><td><strong>A</strong></td></tr></tbody></table>
+<table><thead><tr><th width="150">La partita IVA trova</th><th width="150">Il nome trova</th><th width="150">Corrispondenza totale disattivata + Return None</th><th width="150">Corrispondenza totale attivata + Return None</th><th width="150">Corrispondenza totale disattivata + Best Score</th></tr></thead><tbody>
+<tr><td>solo A</td><td>A e B</td><td>vuoto</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A e B</td><td>solo B</td><td>vuoto</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B e C</td><td>C, D e E</td><td>vuoto</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B e C</td><td>B, C e D</td><td>vuoto</td><td>vuoto</td><td>B o C, non affidabile</td></tr>
+<tr><td>solo A</td><td>niente</td><td><strong>A</strong></td><td>vuoto</td><td><strong>A</strong></td></tr>
+</tbody></table>
 
 Come leggere la tabella:
 

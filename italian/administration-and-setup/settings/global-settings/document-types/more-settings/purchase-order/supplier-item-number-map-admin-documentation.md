@@ -4,6 +4,7 @@
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
+
 Come amministratore, hai la possibilità di visualizzare e gestire le mappature tra i numeri di articolo interni e i numeri di articolo dei fornitori. Questa funzionalità garantisce che le discrepanze tra il tuo sistema e i sistemi dei tuoi fornitori siano gestite in modo efficiente. Puoi rivedere, modificare ed eliminare mappature errate per mantenere l'accuratezza dei dati.
 
 **Accesso alla Mappa dei Numeri di Articolo Fornitore**

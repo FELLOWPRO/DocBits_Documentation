@@ -1,4 +1,4 @@
-# Rilevamento Documenti Simili
+# Rilevamento Documenti Simili (Ricerca Vettoriale)
 
 {% hint style="info" %}
 **Disponibile dalla versione 11.48.0** — Richiede la licenza `OPENSEARCH_ENABLED`.
@@ -39,12 +39,11 @@ for doc in similar:
 Il testo OCR di ogni documento viene convertito in un embedding vettoriale a 384 dimensioni quando viene indicizzato. `vector_search()` trova i vicini piu prossimi in questo spazio vettoriale utilizzando k-NN (k-Nearest Neighbors), restituendo documenti il cui contenuto e semanticamente simile — anche se le parole esatte sono diverse.
 
 **Casi d'uso:**
-
-* Rilevamento frodi (fatture quasi identiche da "fornitori" diversi)
-* Rilevamento duplicati che va oltre la corrispondenza esatta del testo
-* Ricerca di documenti correlati in formati o lingue diverse
+- Rilevamento frodi (fatture quasi identiche da "fornitori" diversi)
+- Rilevamento duplicati che va oltre la corrispondenza esatta del testo
+- Ricerca di documenti correlati in formati o lingue diverse
 
 ## Funzioni Utilizzate
 
-* [vector\_search()](../fulltext-search-functions.md#vector_search) — Trova documenti semanticamente simili
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Mostra errore di validazione
+- [vector\_search()](../fulltext-search-functions.md#vector\_search) — Trova documenti semanticamente simili
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Mostra errore di validazione

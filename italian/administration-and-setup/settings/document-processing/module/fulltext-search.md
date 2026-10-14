@@ -19,7 +19,7 @@ Tutto ciò che non rientra in questi campi viene ignorato. Non esistono ricerca 
 
 L'attivazione della ricerca a testo completo abilita la ricerca su ogni campo estratto del documento e sostituisce la barra di ricerca della dashboard con un linguaggio di interrogazione esteso. Le query possono combinare filtri sui campi, intervalli, operatori logici, date relative e filtri intelligenti.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Barra di ricerca della dashboard con una query per intervallo e l&#x27;elenco dei documenti filtrato"><figcaption><p>La barra di ricerca della dashboard accetta il linguaggio di interrogazione esteso. Digitare una query e premere <kbd>Invio</kbd> per filtrare l'elenco dei documenti.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/fulltext-search-dashboard-query.png" alt="Barra di ricerca della dashboard con una query per intervallo e l'elenco dei documenti filtrato"><figcaption><p>La barra di ricerca della dashboard accetta il linguaggio di interrogazione esteso. Digitare una query e premere <kbd>Invio</kbd> per filtrare l'elenco dei documenti.</p></figcaption></figure>
 
 ### Query mirate per campo
 
@@ -117,7 +117,7 @@ Ricerca IA e ricerca vettoriale non sono intercambiabili: la vettoriale trova co
 3. Confermare la finestra di sottoscrizione, se compare.
 4. Attendere il completamento della prima reindicizzazione prima di affidarsi alle query a testo completo.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Pagina „Moduli“ con l&#x27;interruttore „Full text search“ sotto il gruppo Dashboards"><figcaption><p>L'interruttore <strong>Full text search</strong> si trova in <strong>Modulo → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Pagina „Moduli“ con l'interruttore „Full text search“ sotto il gruppo Dashboards"><figcaption><p>L'interruttore <strong>Full text search</strong> si trova in <strong>Modulo → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
 
 {% hint style="info" %}
 La tariffazione del modulo di ricerca a testo completo è gestita dal vostro contatto commerciale DocBits. La conferma dell'abbonamento appare alla prima attivazione del modulo.
@@ -127,4 +127,4 @@ La tariffazione del modulo di ricerca a testo completo è gestita dal vostro con
 
 * [Impostazioni ricerca a testo completo](../../log-settings/fulltext-search-settings.md) — gestione dell'indice e interruttore dell'indice vettoriale.
 * [Funzioni Fulltext e Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API di scripting per `fulltext_search()` e `vector_search()`.
-* [Panoramica dei moduli](./) — elenco completo dei moduli opzionali di DocBits.
+* [Panoramica dei moduli](README.md) — elenco completo dei moduli opzionali di DocBits.

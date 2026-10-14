@@ -52,6 +52,6 @@ elif net > 0:
 
 ## Funzioni Utilizzate
 
-* [get\_document\_content()](../functions/business-logic-functions.md#get_document_content) — Leggere il testo completo OCR
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leggere i valori dei campi
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Impostare il codice fiscale
+- [get\_document\_content()](../business-logic-functions.md#get\_document\_content) — Leggere il testo completo OCR
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leggere i valori dei campi
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Impostare il codice fiscale

@@ -11,7 +11,7 @@ DocBits può importare documenti dalla posta elettronica in due modi. Entrambi s
 
 Collega un account e-mail e DocBits importa automaticamente i documenti all'arrivo di nuove e-mail. Nella pagina di Importazione, apri la sezione **Importazione e-mail** e fai clic su **+ Nuovo**.
 
-<figure><img src="../../../../.gitbook/assets/email_import_section_it.png" alt="Sezione Importazione e-mail"><figcaption><p>Importazione e-mail — collega una casella per l'importazione automatica dei documenti</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_import_section_it.png" alt="Sezione Importazione e-mail"><figcaption>Importazione e-mail — collega una casella per l'importazione automatica dei documenti</figcaption></figure>
 
 Quindi scegli il protocollo della tua casella:
 
@@ -22,7 +22,7 @@ Quindi scegli il protocollo della tua casella:
 
 Inoltra — o invia direttamente — le e-mail all'indirizzo di ricezione univoco della tua organizzazione e DocBits importa automaticamente gli allegati. Non è necessario collegare alcuna casella. Apri la sezione **E-mail in arrivo** nella pagina di Importazione.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_section_it.png" alt="Sezione E-mail in arrivo"><figcaption><p>E-mail in arrivo — inoltra i documenti al tuo indirizzo DocBits</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_section_it.png" alt="Sezione E-mail in arrivo"><figcaption>E-mail in arrivo — inoltra i documenti al tuo indirizzo DocBits</figcaption></figure>
 
 * **Info / E-mail** — l'indirizzo di ricezione univoco della tua organizzazione (formato `<org-id>@inbound.docbits.com`). Inoltra i tuoi documenti a questo indirizzo; usa l'icona di copia per copiarlo.
 * **Importa documenti solo da e-mail predefinite** — se attivato, vengono importate solo le e-mail dei mittenti aggiunti alla whitelist; le e-mail di qualsiasi altro mittente vengono ignorate.
@@ -34,11 +34,11 @@ Inoltra — o invia direttamente — le e-mail all'indirizzo di ricezione univoc
 
 Entrambi i metodi di importazione tramite e-mail accettano questi allegati di documenti:
 
-| Formato                       | Estensioni di file       | Uso tipico                                       |
-| ----------------------------- | ------------------------ | ------------------------------------------------ |
-| PDF                           | `.pdf`                   | Fatture e altri documenti PDF                    |
-| TIFF                          | `.tif`, `.tiff`          | Documenti scansionati                            |
-| XML                           | `.xml`                   | Documenti elettronici strutturati                |
+| Formato | Estensioni di file | Uso tipico |
+| --- | --- | --- |
+| PDF | `.pdf` | Fatture e altri documenti PDF |
+| TIFF | `.tif`, `.tiff` | Documenti scansionati |
+| XML | `.xml` | Documenti elettronici strutturati |
 | EDI / dati ordine di acquisto | `.edi`, `.purchaseorder` | Scambio elettronico di dati e ordini di acquisto |
 
 Se un servizio di inoltro contrassegna un file PDF, TIFF o XML come allegato generico, DocBits può riconoscerlo dal contenuto del file o da un'estensione nota. I messaggi `.eml` inoltrati possono anch'essi contenere documenti supportati; DocBits estrae quegli allegati interni prima dell'importazione.

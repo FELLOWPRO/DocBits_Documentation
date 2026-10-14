@@ -12,6 +12,8 @@ Per domande comuni e indicazioni su come funziona DocBits, come configurare il v
 [general-information.md](general-information.md)
 {% endcontent-ref %}
 
+
+
 ## **2. Elaborazione Documenti**
 
 Tutto ciò che riguarda l'estrazione, la gestione e l'elaborazione dei documenti in DocBits.
@@ -35,3 +37,4 @@ Linee guida e FAQ relative all'integrazione di DocBits con Infor M3, importazion
 {% content-ref url="infor-m3-m3-integration/" %}
 [infor-m3-m3-integration](infor-m3-m3-integration/)
 {% endcontent-ref %}
+

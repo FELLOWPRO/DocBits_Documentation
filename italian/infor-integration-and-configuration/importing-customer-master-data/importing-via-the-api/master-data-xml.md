@@ -12,9 +12,9 @@ Usarlo per i dati master che non arrivano come BOD — listini prezzi, centri di
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
 
-| Endpoint                                  | Quando usarlo                                                                                                                                       |
-| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/master_data_lookup/xml/import_xml_file` | Si hanno i dati come **file XML** e lo si vuole caricare.                                                                                           |
+| Endpoint | Quando usarlo |
+| --- | --- |
+| `/master_data_lookup/xml/import_xml_file` | Si hanno i dati come **file XML** e lo si vuole caricare. |
 | `/master_data_lookup/xml/import_xml_data` | Si vuole **incollare l'XML** nella richiesta. A differenza degli endpoint dei BOD, questo accetta l'XML come testo semplice — senza involucro JSON. |
 
 Entrambi sono descritti di seguito. I passaggi 1 e 2 sono identici in entrambi i casi.
@@ -66,14 +66,14 @@ Fare clic su **Try it out**, poi compilare il modulo.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
 
-| Campo               |                                                                                                                                                             |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **data\_type**      | Obbligatorio. Il dataset di lookup in cui scrivere. Viene convertito automaticamente in minuscolo, quindi `PriceList` e `pricelist` sono lo stesso dataset. |
-| **field\_mappings** | Obbligatorio. Un oggetto JSON che abbina ciascuna colonna all'XPath da cui viene letta. Vedere sotto.                                                       |
-| **file**            | Obbligatorio su `import_xml_file`. Fare clic su **Choose file** e selezionare il proprio XML.                                                               |
-| **xml**             | Obbligatorio su `import_xml_data` al posto del file — incollarvi l'XML come testo semplice.                                                                 |
-| **org\_id**         | Il proprio Org ID — lo stesso valore inserito in **X-ORG-ID** al passaggio 2.                                                                               |
-| **sub\_org\_id**    | Serve solo se si importa in una sotto-organizzazione specifica.                                                                                             |
+| Campo | |
+| --- | --- |
+| **data\_type** | Obbligatorio. Il dataset di lookup in cui scrivere. Viene convertito automaticamente in minuscolo, quindi `PriceList` e `pricelist` sono lo stesso dataset. |
+| **field\_mappings** | Obbligatorio. Un oggetto JSON che abbina ciascuna colonna all'XPath da cui viene letta. Vedere sotto. |
+| **file** | Obbligatorio su `import_xml_file`. Fare clic su **Choose file** e selezionare il proprio XML. |
+| **xml** | Obbligatorio su `import_xml_data` al posto del file — incollarvi l'XML come testo semplice. |
+| **org\_id** | Il proprio Org ID — lo stesso valore inserito in **X-ORG-ID** al passaggio 2. |
+| **sub\_org\_id** | Serve solo se si importa in una sotto-organizzazione specifica. |
 
 #### Mappature dei campi
 
@@ -108,9 +108,9 @@ Vengono rifiutati solo gli XPath **malformati**, con un `400` che nomina il camp
 {% hint style="danger" %}
 Alcuni nomi non sono liberi: sono le tabelle di dati master proprie di DocBits, e importare in una di esse ci scrive direttamente dentro.
 
-| Nome                                                                                                                                                                                            |                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `purchase_order_header`, `purchase_order_address`                                                                                                                                               | Rifiutati con `RESERVED_DATASET_NAME`.                                                              |
+| Nome | |
+| --- | --- |
+| `purchase_order_header`, `purchase_order_address` | Rifiutati con `RESERVED_DATASET_NAME`. |
 | `supplier`, `supplier_accounts`, `purchase_order`, `receive_delivery`, `receive_delivery_lines`, `costing_element`, `customer_erp_items`, `supplier_item_price`, `supplier_item_number_mapping` | **Accettati, e sovrascrivono dati master reali.** Usarli solo se è davvero ciò che si intende fare. |
 
 Per tutto il resto, scegliere un nome proprio.
@@ -144,3 +144,5 @@ A differenza delle importazioni di BOD, questi endpoint segnalano i problemi con
 * In DocBits, andare in **Settings → Document Processing → Lookup Master Data**.
 * Selezionare **Imported** a sinistra, poi aprire la scheda del proprio tipo di dati.
 * Le colonne sono i nomi usati sul lato sinistro di `field_mappings`.
+
+<!-- SCREENSHOT: Lookup Master Data with Imported selected and the new dataset open -->

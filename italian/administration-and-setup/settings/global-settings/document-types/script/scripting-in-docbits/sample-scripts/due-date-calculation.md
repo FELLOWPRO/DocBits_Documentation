@@ -57,5 +57,5 @@ set_date_value(document_data, "delivery_date", None)  # None = oggi
 
 ## Funzioni Utilizzate
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leggere la data della fattura
-* [set\_date\_value()](../functions/field-functions.md#set_date_value) — Calcolare e impostare la data di scadenza
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leggere la data della fattura
+- [set\_date\_value()](../field-functions.md#set\_date\_value) — Calcolare e impostare la data di scadenza

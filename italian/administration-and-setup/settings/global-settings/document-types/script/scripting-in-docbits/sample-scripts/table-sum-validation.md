@@ -60,14 +60,14 @@ if table:
 ## Spiegazione Passo dopo Passo
 
 1. **Ottenere la tabella fattura** da `tables_dict`
-2. **Sommare tutti i valori LINE\_TOTAL** attraverso le righe della tabella
+2. **Sommare tutti i valori LINE_TOTAL** attraverso le righe della tabella
 3. **Confrontare** la somma calcolata con l'importo netto estratto
 4. **Aggiornare o segnalare** — sostituire l'importo netto o contrassegnarlo come non valido
 
 ## Funzioni Utilizzate
 
-* [get\_column\_value()](../functions/table-functions.md#get_column_value) — Leggere i valori delle colonne dalle righe
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Leggere l'importo netto
-* [set\_amount\_value()](../functions/field-functions.md#set_amount_value) — Impostare l'importo corretto
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Contrassegnare il campo come non valido
-* [set\_field\_as\_valid()](../functions/field-functions.md#set_field_as_valid) — Contrassegnare il campo come valido
+- [get\_column\_value()](../table-functions.md#get\_column\_value) — Leggere i valori delle colonne dalle righe
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Leggere l'importo netto
+- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — Impostare l'importo corretto
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Contrassegnare il campo come non valido
+- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — Contrassegnare il campo come valido

@@ -1,4 +1,4 @@
-# Gli elementi di costo non sono configurati correttamente. Si prega di chiedere all'amministratore di
+# Gli elementi di costo non sono configurati correttamente. Si prega di chiedere all'amministratore di configurarli.
 
 Se incontri il messaggio di errore **"Gli elementi di costo non sono configurati correttamente. Si prega di chiedere all'amministratore di configurarli,"** potrebbe essere dovuto a una delle seguenti ragioni:
 

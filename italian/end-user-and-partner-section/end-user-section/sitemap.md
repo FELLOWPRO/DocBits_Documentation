@@ -27,7 +27,7 @@ L'intestazione fissa in alto contiene la casella di ricerca e i filtri a forma d
 
 La ricerca e il filtro correnti vengono aggiunti all'URL, così una vista filtrata può essere salvata o condivisa.
 
-La Mappa del Sito rispetta gli stessi permessi del resto di DocBits. Le pagine a cui non hai accesso non compaiono.
+<mark>La Mappa del Sito rispetta gli stessi permessi del resto di DocBits. Le pagine a cui non hai accesso non compaiono.</mark>
 
 ## Modalità sviluppatore
 

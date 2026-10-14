@@ -14,4 +14,4 @@ Se l'importo totale è **1500**, le regole valutate saranno:
 * **Regola 4**: Total Amount <= 4000 (corrisponde)
 * **Regola 5**: Total Amount <= 5000 (corrisponde)
 
-Poiché la priorità viene applicata nell'ordine **5, 4, 3, 2, 1**, la regola corrispondente con priorità più alta sarà la **Regola 5** (**GROUP\_5**). L'albero decisionale restituirà **GROUP\_5** perché la **Regola 5** ha la priorità più alta (priorità 1).
+Poiché la priorità viene applicata nell'ordine **5, 4, 3, 2, 1**, la regola corrispondente con priorità più alta sarà la **Regola 5** (**GROUP_5**). L'albero decisionale restituirà **GROUP_5** perché la **Regola 5** ha la priorità più alta (priorità 1).

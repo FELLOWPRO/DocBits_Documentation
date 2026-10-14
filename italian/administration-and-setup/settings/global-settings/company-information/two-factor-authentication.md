@@ -31,7 +31,7 @@ Attivare questa opzione blocca gli accessi con password per i membri che non han
 Sotto l'interruttore, il pannello **Adozione della MFA** mostra quanto è diffuso l'uso della 2FA nella tua organizzazione prima di renderla obbligatoria:
 
 * la **percentuale di adozione** complessiva e una barra di avanzamento,
-* quanti dei tuoi membri hanno la 2FA abilitata (ad es. _0 di 74 membri_),
+* quanti dei tuoi membri hanno la 2FA abilitata (ad es. *0 di 74 membri*),
 * una suddivisione per fattore — **Autenticatore**, **Email** e **Passkey**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>Il rapporto sull'adozione della MFA: percentuale complessiva, membri registrati e una suddivisione per fattore.</p></figcaption></figure>

@@ -1,4 +1,4 @@
-# Calcolo degli Addebiti Totali
+# Script per il Calcolo degli Addebiti Totali per Docbits
 
 Lo script "Calculating Total Charges" automatizza il processo di somma di vari addebiti e importi aggiuntivi all'interno dei documenti di fattura. Questa guida illustra la configurazione, la logica e l'applicazione dello script per garantire calcoli accurati degli addebiti totali nei documenti.
 

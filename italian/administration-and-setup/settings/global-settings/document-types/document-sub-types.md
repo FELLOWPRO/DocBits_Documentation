@@ -1,30 +1,44 @@
-# Sottotipi di Documento
+# Document Sub Types
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_sub_types_overview.png" alt="Docbits Document Sub Types Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-21 um 10.16.14.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-08 um 08.54.08.png" alt=""><figcaption></figcaption></figure>
 
 #### Panoramica
 
-I Tipi di Documenti Secondari sono essenzialmente versioni specializzate dei principali tipi di documenti. Ad esempio, sotto il tipo di documento principale "Fattura," potrebbero esserci tipi secondari come "Fattura Standard," "Fattura Pro-forma," e "Nota di Credito," ognuno con requisiti di dati leggermente diversi o regole di elaborazione.
+I Document Sub Types (sottotipi di documento) sono essenzialmente versioni specializzate dei tipi di documento principali. Ad esempio, sotto il tipo di documento principale "Invoice" potrebbero esserci sottotipi come "Standard Invoice", "Pro-forma Invoice" e "Credit Invoice", ciascuno con requisiti di dati o regole di elaborazione leggermente diversi.
 
-#### Funzionalità Chiave e Opzioni
+**Ecco alcuni motivi per cui i sottotipi sono importanti:**
 
-1. **Elenco dei Tipi Secondari**:
+* **Requisiti di elaborazione specifici:** spesso le diverse varianti dello stesso tipo di documento richiedono modalità di elaborazione diverse. Ad esempio, diversi tipi di fattura possono richiedere campi, workflow di approvazione o regole di validazione specifici in base alle policy interne di un'azienda o ai requisiti dei partner esterni.
+* **Personalizzazione organizzativa:** i sottotipi permettono alle organizzazioni di adattare l'elaborazione dei documenti alle proprie esigenze. Possono creare sottotipi calibrati con precisione sui propri processi aziendali, invece di affidarsi a soluzioni generiche che potrebbero non soddisfare tutti i requisiti.
+* **Struttura chiara:** i sottotipi consentono di strutturare in modo più chiaro la gestione dei documenti. Gli utenti possono spostarsi più facilmente tra le diverse varianti di un tipo di documento e trovare le informazioni specifiche di cui hanno bisogno senza essere distratti da dati od opzioni irrilevanti.
+* **Coerenza e accuratezza:** i sottotipi aiutano a garantire coerenza e accuratezza nell'acquisizione e nell'elaborazione dei documenti. Standardizzando i sottotipi, le organizzazioni possono assicurarsi che tutte le informazioni rilevanti vengano acquisite e che i dati siano strutturati in modo uniforme.
+* **Elaborazione efficiente:** i sottotipi possono aumentare l'efficienza dell'elaborazione dei documenti perché gli utenti dispongono di modelli e workflow predefiniti, ottimizzati per specifici tipi di documento. Questo riduce il lavoro manuale e minimizza errori o ritardi nel processo.
 
-* Ogni riga rappresenta un tipo secondario di un tipo di documento principale.
-* Include il nome del tipo secondario e un insieme di azioni che possono essere eseguite su di esso.
+I sottotipi di documento in Docbits consentono una gestione più flessibile e su misura delle varianti dei documenti, con maggiore efficienza, accuratezza e adattabilità. Rappresentano un modo efficace per gestire la complessità dell'elaborazione dei documenti e aumentare la produttività all'interno di un'organizzazione.
 
+
+
+#### Funzionalità e opzioni principali
+
+1. **Elenco dei sottotipi**:
+   * Ogni riga rappresenta un sottotipo di un tipo di documento principale.
+   * Include il nome del sottotipo e un insieme di azioni che si possono eseguire su di esso.
 2. **Azioni**:
 
-* **Campi**: Configura quali campi dati sono inclusi nel tipo secondario e come vengono gestiti.
-* **Modifica Layout**: Modifica il layout visivo per come le informazioni vengono visualizzate e inserite per questo tipo secondario.
-* **Script**: Allega o modifica script che eseguono operazioni specifiche quando i documenti di questo tipo secondario vengono elaborati.
-* **Copia**: Duplica una configurazione di tipo secondario esistente da utilizzare come base per una nuova.
-* **Elimina**: Rimuove il tipo secondario se non è più necessario.
+<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
-3. **Aggiunta di Nuovi Tipi Secondari**:
+* **Fields**: configura quali campi dati sono inclusi nel sottotipo e come vengono gestiti.
+* **Edit Layout**: modifica il layout visivo che definisce come le informazioni vengono mostrate e inserite per questo sottotipo.
+* **Scripts**: collega o modifica script che eseguono operazioni specifiche quando vengono elaborati documenti di questo sottotipo.
+* **Copy**: duplica la configurazione di un sottotipo esistente per usarla come base per uno nuovo.
+* **Editing document Sub Type:** modifica il nome o il titolo del sottotipo.
+* **Delete**: rimuove il sottotipo se non è più necessario.
 
-* Il pulsante "+ Nuovo" consente agli amministratori di creare nuovi tipi secondari, definendo proprietà e regole uniche secondo necessità.
+**Aggiunta di nuovi sottotipi**:
 
-I Tipi di Documenti Secondari in Docbits forniscono un modo flessibile e potente per gestire una varietà di documenti all'interno di un singolo sistema, garantendo che ciascun tipo e tipo secondario venga elaborato in modo accurato ed efficiente secondo le sue specifiche uniche.
+* Il pulsante "+ New" consente agli amministratori di creare nuovi sottotipi, definendo proprietà e regole univoche secondo necessità.
 
-{% @jira/embed url="https://fellowpro.atlassian.net/browse/DOCB-2492" %}
+
+

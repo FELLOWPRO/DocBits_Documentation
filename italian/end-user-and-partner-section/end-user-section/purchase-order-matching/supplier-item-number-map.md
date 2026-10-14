@@ -10,6 +10,7 @@ Questa funzionalità ti aiuta a gestire e riconciliare i numeri degli articoli t
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
+
 1. **Corrispondenza Manuale:**
    * La prima volta che incontri una discrepanza tra il tuo numero di articolo e il numero di articolo del tuo fornitore, devi abbinarli manualmente.
    * Puoi farlo inserendo il corretto numero di articolo del fornitore corrispondente al tuo numero di articolo interno.
@@ -25,7 +26,7 @@ Questa funzionalità ti aiuta a gestire e riconciliare i numeri degli articoli t
 * **Azione:** Opzioni per gestire le mappature, come eliminare mappature errate.
 
 {% hint style="info" %}
-Vedi qui anche la [Sezione Amministratore](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/end-user-and-partner-section/end-user-section/purchase-order-matching/broken-reference/README.md)
+Vedi qui anche la [Sezione Amministratore](broken-reference)
 {% endhint %}
 
 ## **Vantaggi**

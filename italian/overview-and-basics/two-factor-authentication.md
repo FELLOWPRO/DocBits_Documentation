@@ -56,15 +56,14 @@ I codici di backup vengono mostrati solo nel momento in cui vengono generati. Do
 
 ## Accedere con la 2FA
 
-1.  Inserisci la tua email e la password come al solito.
+1. Inserisci la tua email e la password come al solito.
 
     <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>La schermata di accesso. Puoi anche accedere senza password usando <strong>Accedi con una passkey</strong>.</p></figcaption></figure>
-2.  DocBits richiede il tuo secondo fattore. Scegli il tuo metodo:
-
-    * **Autenticatore** — digita il codice a 6 cifre attuale dalla tua app.
-    * **Email** — fai clic su **Inviami un codice via email** per ricevere un codice via email, poi digitalo.
-    * **Passkey** — fai clic su **Usa una passkey** e conferma con Touch ID / Windows Hello / la tua chiave.
-    * **Codice di backup** — se non puoi usare il tuo metodo abituale.
+2. DocBits richiede il tuo secondo fattore. Scegli il tuo metodo:
+   * **Autenticatore** — digita il codice a 6 cifre attuale dalla tua app.
+   * **Email** — fai clic su **Inviami un codice via email** per ricevere un codice via email, poi digitalo.
+   * **Passkey** — fai clic su **Usa una passkey** e conferma con Touch ID / Windows Hello / la tua chiave.
+   * **Codice di backup** — se non puoi usare il tuo metodo abituale.
 
     <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Dopo la password, DocBits richiede il tuo secondo fattore. Cambia metodo con <strong>Usa una passkey</strong> o <strong>Inviami un codice via email</strong> e, se lo desideri, considera attendibile il dispositivo per 30 giorni.</p></figcaption></figure>
 3. In caso di successo hai effettuato l'accesso.

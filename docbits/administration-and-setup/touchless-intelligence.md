@@ -9,8 +9,6 @@
 
 It is a tab of the [Analytics Dashboard](analytics-dashboard.md). It does not add any work for your team: DocBits records what happens to every document in the processing pipeline and evaluates the result every 15 minutes.
 
-<figure><img src="../.gitbook/assets/touchless-overview.png" alt="The Touchless Intelligence tab with five key figures, improvement suggestions and the touchless rate chart"><figcaption><p>The Touchless Intelligence tab. This view comes from a test organisation in which no document has reached a final outcome yet, so the rates show a dash (—). In your organisation the cards show real percentages.</p></figcaption></figure>
-
 ### What you can do with it
 
 | You want to… | Use | Example |
@@ -81,8 +79,6 @@ The tab shows a **target** (70 % unless your organisation uses a different one).
 
 Click **How touchless is calculated** at the top right to open this explanation inside DocBits, with the numbers of your own period (documents in period, still in progress, excluded, measured).
 
-<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="The drawer How touchless is calculated with the six outcomes and the numbers of the period"><figcaption><p>The drawer <strong>How touchless is calculated</strong>: the formula, "Your numbers in this period" and what each outcome means.</p></figcaption></figure>
-
 ### How current are the numbers
 
 Outcomes are **recalculated every 15 minutes**. A document's outcome can still change after it first appears: the ERP may confirm an export hours later. The line **Data as of …** at the bottom of the tab shows when the numbers were last computed.
@@ -101,8 +97,6 @@ Outcomes are **recalculated every 15 minutes**. A document's outcome can still c
 The **sub-organisation** you selected at the top of DocBits narrows the key figures and the supplier queue. Issue clusters and the AI analysis always cover the whole organisation.
 
 ### The five key figures
-
-<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="The five key figures: Pure touchless, AP touchless, AP assisted, Process exceptions and Diagnosis coverage"><figcaption><p>The five key figures. Each one links to the documents behind the number.</p></figcaption></figure>
 
 | Card | Shows | Example (illustrative) |
 | --- | --- | --- |
@@ -129,8 +123,6 @@ A bar chart of **Blocked documents** per pipeline stage: the **first** stage tha
 **Example.** Bars: Supplier Identification 12, Field Validation 41, PO Line Match 7. The biggest bar tells you to look at **Field Validation** first, usually because a required field is not extracted.
 
 ### Supplier opportunities
-
-<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="The Supplier opportunities table with supplier, volume, pure rate, lost documents, root cause, recoverable, expected lift, confidence and status"><figcaption><p>The supplier queue. In a real organisation it is sorted by the documents you can win back.</p></figcaption></figure>
 
 The queue answers **"Which supplier should we fix first?"** It is sorted by **Recoverable** documents, highest first, 25 rows per page.
 
@@ -159,8 +151,6 @@ Use the search box ("Search supplier number or name") to find a supplier. Click 
 
 Click **Compare suppliers**, tick **two to five** suppliers (each is listed with its number of blocked documents) and click **Compare**.
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="The dialog Compare suppliers with a searchable list of suppliers and a Compare button"><figcaption><p>Choose up to five suppliers. The button shows how many you picked, for example <strong>Compare 3</strong>.</p></figcaption></figure>
-
 The comparison shows the suppliers side by side: **Pure rate**, **Lost documents**, **Recoverable**, **Root cause**, **Expected lift**, a bar chart of the outcomes, and a link to each **Supplier Diagnosis**.
 
 **Example.** Supplier A and B send the same invoice layout. B has a pure rate of 80 %, A only 35 %. Both have the root cause "Master data". The comparison shows that the layout is fine and that A's supplier record is incomplete. Fix A's master data instead of changing the template.
@@ -174,8 +164,6 @@ While it runs you see **Queued**, **Running**, **Done**, **Already analysed** or
 ## Supplier Diagnosis
 
 Click a supplier in the queue to open its diagnosis page.
-
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="The Supplier Diagnosis page with the outcome tiles, the trend chart and the issue clusters"><figcaption><p>The Supplier Diagnosis page of one supplier: outcome tiles, trend, issue clusters, change history and recent examples. This test supplier has no evaluated documents yet.</p></figcaption></figure>
 
 The page shows:
 
@@ -336,4 +324,5 @@ No. AI writes explanations only. A setting changes only after an administrator p
 * [Settings Assistant](settings/global-settings/company-information/settings-assistant.md)
 * [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Screenshots are real but come from a test organisation without evaluated documents, so the figures show dashes; replace them with views from an organisation with data when available. Consulting report export format not verified, so no export is described. -->
+<!-- Source notes (not shown): facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described.
+Screenshots still to add, from an organisation WITH evaluated documents (no empty-state shots): overview with key figures, trend and bottleneck chart, supplier queue, supplier diagnosis with issue clusters, compare dialog, methodology drawer. The document trace screenshot below is real data. -->

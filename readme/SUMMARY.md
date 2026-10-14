@@ -127,6 +127,7 @@
       * [Menedżer Układów](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Nawigacja w Menedżerze Układów](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Podtypy Dokumentów](administration-and-setup/settings/global-settings/document-types/document-sub-types.md)
+      * [Tworzenie nowego Podtypu](administration-and-setup/settings/global-settings/document-types/creating-a-new-sub-type.md)
       * [Kolumny Tabeli](administration-and-setup/settings/global-settings/document-types/table-columns.md)
       * [Pola](administration-and-setup/settings/global-settings/document-types/fields/README.md)
         * [Dodawanie i Edytowanie Pól](administration-and-setup/settings/global-settings/document-types/fields/adding-and-editing-fields.md)

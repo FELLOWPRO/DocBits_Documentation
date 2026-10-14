@@ -1,0 +1,43 @@
+# Détection de Factures en Double
+
+{% hint style="info" %}
+**Disponible à partir de la version 11.48.0** — Nécessite la licence `OPENSEARCH_ENABLED`.
+{% endhint %}
+
+## Que fait ce script ?
+
+Recherche dans l'archive de documents les factures existantes avec le même numéro de facture du même fournisseur. Si un doublon potentiel est trouvé, le champ numéro de facture est marqué comme invalide.
+
+## Déclencheur
+
+`AFTER_FORMATTING` sur le type de document **INVOICE**
+
+## Script Complet
+
+```python
+inv_id = get_field_value(document_data, "invoice_id", "")
+vendor = get_field_value(document_data, "supplier_name", "")
+
+if inv_id and vendor:
+    existing = fulltext_search(
+        inv_id,
+        vendor_name=vendor,
+        status="ready_for_validation,exported",
+        size=5
+    )
+    current_doc_id = document_json["doc_id"]
+    duplicates = [d for d in existing if d["doc_id"] != current_doc_id]
+
+    if duplicates:
+        dup = duplicates[0]
+        set_field_as_invalid(
+            document_data, "invoice_id",
+            f"Doublon possible : {dup['name']} ({dup.get('status', 'unknown')})"
+        )
+```
+
+## Fonctions Utilisées
+
+* [get\_field\_value()](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/field-functions.md#get_field_value)
+* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search)
+* [set\_field\_as\_invalid()](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/field-functions.md#set_field_as_invalid)

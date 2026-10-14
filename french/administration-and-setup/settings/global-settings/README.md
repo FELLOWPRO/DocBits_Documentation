@@ -1,0 +1,2 @@
+# Paramètres Globaux
+

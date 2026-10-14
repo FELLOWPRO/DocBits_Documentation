@@ -1,0 +1,2 @@
+# Infor LN (Integração LN)
+

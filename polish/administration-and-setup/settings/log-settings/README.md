@@ -1,0 +1,2 @@
+# Ustawienia Dziennika
+

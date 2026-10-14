@@ -1,0 +1,2 @@
+# Código QR Suíço
+

@@ -1,293 +1,70 @@
 # Impostazioni dei dati master
 
-## Panoramica
+Le **Impostazioni dei dati master** collegano i campi di convalida di un documento ai dati archiviati in [Ricerca dei dati master](../../../document-processing/master-data-lookup.md). Usa **Ricerca di dati anagrafici** per trovare e riprendere un record corrispondente. Usa **Dati anagrafici LOV** per proporre un elenco di valori tratti da un set di dati.
 
-Nella sezione **Impostazioni dei dati master** delle **Campi** per un specifico Tipo di documento, puoi visualizzare e configurare le mappature dei dati master ai campi utilizzati nella convalida dei campi, utilizzando i dati dalla [**Ricerca dei dati master**](../../../document-processing/master-data-lookup.md).
+## Aprire le impostazioni
 
-Queste mappature definiscono come i dati master vengono applicati ai singoli campi durante la convalida. Questa pagina fornisce una guida dettagliata su come configurare e gestire queste mappature.
+1. In **Impostazioni**, apri **Elaborazione documenti → Tipi di Documento**.
+2. Apri il tipo di documento che vuoi configurare, ad esempio **Invoice**, e seleziona **Campi**.
+3. Seleziona **Impostazioni Dei Dati Master**. La pagina contiene le due sezioni separate **Ricerca di dati anagrafici** e **Dati anagrafici LOV**. Seleziona il titolo di una sezione per espanderla.
 
-## **Accesso alle** Impostazioni dei dati master **Impostazioni**
+<figure><img src="../../../../../.gitbook/assets/dbdc202-overview-it-20261010.png" alt="Impostazioni dei dati master di un documento Invoice nella sandbox DocBits attuale, con le sezioni Ricerca di dati anagrafici e Dati anagrafici LOV"><figcaption><p>Scegli la sezione che corrisponde al tipo di campo che vuoi configurare.</p></figcaption></figure>
 
-Per accedere alle **Impostazioni dei dati master** Impostazioni:
+## Associare un record con la ricerca di dati anagrafici
 
-1.  Vai a **Impostazioni → Impostazioni globali → Tipi di documenti**
+Le configurazioni della sezione **Ricerca di dati anagrafici** interrogano un set di dati e collegano un record corrispondente ai campi del documento. L'elenco mostra il nome di ogni configurazione e se è attiva. Un badge **Predefinito** identifica una configurazione fornita da DocBits; puoi disattivarla, ma non modificarla né eliminarla.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_document_types.png)
-2.  Seleziona il **Tipo di documento** desiderato e clic su **Campi**.
+### Creare una configurazione di ricerca
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/settings_document_types_fields.png)
-3.  Clic su **Impostazioni dei dati master**
+1. Seleziona **Creare una configurazione di ricerca**.
+2. Inserisci un **Cerca nome** e scegli il **Nome del set di dati di ricerca** che contiene i record da interrogare.
+3. Scegli un **Gestore dei conflitti** per il caso in cui più record corrispondano:
+   * **Best Score** sceglie la corrispondenza più forte.
+   * **Return None** lascia il risultato vuoto, così decide un utente.
+   * **Return First** usa il primo risultato.
+4. Scegli **HEADER** per i campi del documento o **LINE** per i campi di una tabella del documento. Per **LINE**, scegli anche **Dettaglio del contesto**, cioè la tabella a cui la ricerca si applica.
+5. Attiva **Abbina tutti** se ogni campo di ricerca configurato deve corrispondere a un record. Lascialo disattivato se basta un solo campo corrispondente. Seleziona **Creare**.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_1.png)
+<figure><img src="../../../../../.gitbook/assets/dbdc202-lookup-config-it-20261010.png" alt="Finestra Creare la configurazione dei dati master con tipo di documento, cerca nome, set di dati, gestore dei conflitti, tipo di contesto e Abbina tutti"><figcaption><p>Il modulo di una configurazione di ricerca per l'intestazione di un documento Invoice.</p></figcaption></figure>
 
-## Ricerca di dati anagrafici
+**Abbina tutti** e il **Gestore dei conflitti** agiscono insieme e decidono se un fornitore viene riconosciuto automaticamente. Trovi esempi pratici in [Configurazione fuzzy dei dati con i dati master](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md).
 
-Nella sezione **Ricerca di dati anagrafici**, puoi creare configurazioni di ricerca dai tuoi dati master da usare come mappature dei campi durante la convalida dei campi.
+### Mappare i campi di una configurazione
 
-### Voci predefinite
+Espandi una configurazione per vedere i campi collegati. Nell'esempio qui sotto, **Supplier Name** è ricercabile, mentre **Supplier Number** attiva la ricerca automaticamente. Le mappature della tua organizzazione possono essere diverse.
 
-Nella sezione **Ricerca di dati anagrafici**, alcune voci predefinite sono fornite da **DocBits**. Queste voci:
+<figure><img src="../../../../../.gitbook/assets/dbdc202-supplier-fields-it-20261010.png" alt="Ricerca fornitore espansa con le colonne Campo Di Ricerca, Campo Di Convalida, Campo Genitore, Ricercabile, Trigger Automatico e Actions"><figcaption><p>Espandi una ricerca per esaminare i campi che partecipano alla corrispondenza.</p></figcaption></figure>
 
-* Non possono essere modificate o cancellate
-* Possono essere disattivate se non necessarie
+Seleziona **Creare** dentro la configurazione espansa per aggiungere una mappatura:
 
-Le voci predefinite sono chiaramente contrassegnate con un'etichetta **Default** per una facile identificazione.
+* **Campo Di Ricerca** è la colonna del set di dati da interrogare.
+* **Campo Di Convalida** è il campo del documento che riceve il risultato.
+* **Campo Genitore** verifica eventualmente il risultato rispetto a un campo correlato.
+* **Operatore di ricerca** stabilisce come viene confrontato il testo. **Smart** ignora spazi e punteggiatura; le altre scelte includono Contiene, Inizia con, Finisce con ed Esatto.
+* **Trigger automatico** avvia una ricerca quando questo campo viene compilato. **Ricercabile** consente al campo di partecipare alle ricerche e supporta la ricerca manuale durante la convalida.
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_2.png)
+Seleziona **Creare** per aggiungere la mappatura. Usa il menu **Actions** a tre punti di una riga per modificare o eliminare una mappatura modificabile. Le mappature predefinite possono solo essere visualizzate.
 
-### **Creare una configurazione di ricerca**
+<figure><img src="../../../../../.gitbook/assets/dbdc202-create-field-it-20261010.png" alt="Finestra Creare campi di dati master con Campo di ricerca, Campo di convalida, Campo genitore, Operatore di ricerca, Trigger automatico e Ricercabile"><figcaption><p>Scegli come una colonna del set di dati viene collegata a un campo del documento.</p></figcaption></figure>
 
-Per creare una nuova configurazione di ricerca per i dati master:
+Usa il menu a tre punti di una configurazione per attivarla o disattivarla, duplicarla o modificarla. Una configurazione predefinita propone **Vista** al posto di **Modifica** e non può essere eliminata. Eliminare una configurazione o un campo personalizzato rimuove la sua mappatura; verifica prima quali campi del documento ne dipendono.
 
-1. Vai alla sezione **Ricerca di dati anagrafici**.
-2.  Clic **Creare una configurazione di ricerca** nell'angolo in alto a destra.
+## Proporre un elenco con i dati anagrafici LOV
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_3.png)
-3. Configura le seguenti opzioni:
-   * **Cerca nome**\
-     Il nome della configurazione di ricerca.
-   * **Nome del set di dati di ricerca**\
-     Seleziona il set di dati che deve essere utilizzato per questa configurazione di ricerca.
-   * **Gestore dei conflitti**\
-     Un conflitto significa che la ricerca ha trovato più di un record. Questa impostazione decide cosa succede allora:
-     * **Best Score** – Usa la voce che corrisponde al maggior numero di campi. Non lascia mai il campo vuoto e può quindi scegliere il record sbagliato.
-     * **Return None** – Lascia il campo vuoto, così un utente sceglie il record giusto.
-     * **Return First** – Usa il primo valore trovato.
-   *   **Tipo di contesto**
+**Dati anagrafici LOV** crea menu a tendina a partire da un set di dati master. Puoi aggiungere anche campi filtro, in modo che una selezione precedente restringa le scelte mostrate successivamente.
 
-       Specifica dove nel documento verrà applicata la configurazione di ricerca. Scegli tra:
+Espandi **Dati anagrafici LOV**, poi seleziona **Creare la configurazione della ricerca Lov**. Se non esiste alcuna configurazione, la sezione mostra solo questo pulsante.
 
-       **HEADER**
+<figure><img src="../../../../../.gitbook/assets/dbdc202-lov-overview-it-20261010.png" alt="Sezione Dati anagrafici LOV espansa con il pulsante Creare la configurazione della ricerca Lov"><figcaption><p>Apri questa sezione quando un campo del documento deve proporre i valori di un set di dati come scelte.</p></figcaption></figure>
 
-       La ricerca è utilizzata nella convalida dei campi. Configura quanto segue:
+Nel modulo inserisci **Cerca il nome Lov**, scegli **Ricerca Lov Nome del set di dati** e imposta **Tipo di contesto** su **HEADER** o **LINE**. Per **LINE**, seleziona **Dettaglio del contesto** per identificare la tabella del documento. Scegli poi:
 
-       * **Abbina tutti**\
-         Quando abilitato, un record deve corrispondere a **tutti** i campi usati. Quando disabilitato (predefinito), basta che corrisponda **un** campo, il che restituisce un elenco più lungo.
+* **Campo etichetta di ricerca**: il valore che gli utenti vedono nel menu a tendina.
+* **Campo valore di ricerca**: il valore memorizzato per la selezione e usato per il filtraggio.
+* **Fuori campo**: il campo del documento compilato dall'etichetta selezionata.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_4.png)
+Seleziona **Creare** per salvare la configurazione. Espandila per esaminarne i campi, oppure usa il suo menu a tre punti per attivarla, duplicarla, modificarla o eliminarla.
 
-       \
-       **LINE**
+<figure><img src="../../../../../.gitbook/assets/dbdc202-lov-config-it-20261010.png" alt="Finestra Creare la configurazione dei dati master con set di dati, tipo di contesto, campo etichetta di ricerca, campo valore di ricerca e fuori campo"><figcaption><p>Collega il valore di un set di dati e la sua etichetta visibile a un campo del documento.</p></figcaption></figure>
 
-       La ricerca viene utilizzata all'interno di una tabella del documento. Configura quanto segue:
-
-       * **Dettaglio del contesto**\
-         Seleziona la tabella specifica a cui applicare la ricerca.
-       * **Abbina tutti**\
-         Quando abilitato, un record deve corrispondere a **tutti** i campi usati. Quando disabilitato (predefinito), basta che corrisponda **un** campo, il che restituisce un elenco più lungo.
-
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_5.png)
-{% hint style="info" %}
-**Abbina tutti** e il **Gestore dei conflitti** agiscono insieme e decidono se un fornitore viene riconosciuto automaticamente. La pagina di configurazione li spiega con esempi:
-
-{% content-ref url="../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md" %}
-[fuzzy-data-configuration-with-master-data](../../../../setup/document-types/fuzzy-data-configuration-with-master-data.md)
-{% endcontent-ref %}
-{% endhint %}
-
-4.  Clic **Salva** per creare la configurazione di ricerca.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_6.png)
-
-### Azioni sulla configurazione di ricerca esistente
-
-Per gestire una configurazione di ricerca esistente, clic sui tre puntini nell'angolo in alto a destra della configurazione che desideri modificare.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_7.png)
-
-Sono disponibili le seguenti azioni:
-
-* **Attivare / Disattivare**\
-  Attiva/Disattiva lo stato della configurazione di ricerca.
-  * Le configurazioni attive sono contrassegnate con un tag **Attivo**.
-  * Le configurazioni inattive sono contrassegnate con un tag **Inattivo**.
-*   **Duplicato**\
-    Dopo aver inserito un nome e clic su **Fatto**, viene creata una copia della configurazione di ricerca selezionata.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_8.png)
-* **Modifica/Vista**\
-  Consente di modificare la configurazione di ricerca selezionata.\
-  Dopo aver apportato le modifiche, clic **Salva** per applicarle.\
-  <mark style="color:red;">**Nota**</mark>: Le configurazioni di ricerca predefinite possono solo essere visualizzate, non modificate. L'opzione **Modifica** verrà sostituita da **Vista**.
-*   **Cancellare**\
-    Elimina definitivamente la configurazione di ricerca selezionata dopo la conferma.\
-    <mark style="color:red;">**Nota**</mark>: Possono essere cancellate solo le configurazioni senza il tag **Default**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_9.png)
-
-### Creare un nuovo campo
-
-Per aggiungere un nuovo campo alla tua configurazione di ricerca:
-
-1. Apri la configurazione di ricerca desiderata.
-2.  Clic **Creare** nell'angolo in alto a destra.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_10.png)
-3. Configura le opzioni necessarie.
-   * **Campo di ricerca**\
-     Il campo che verrà cercato all'interno del set di dati di ricerca selezionato.
-   * **Campo di convalida**\
-     Il campo che verrà visualizzato durante la convalida dei campi.
-   * **Campo genitore** (opzionale)\
-     Questo campo viene utilizzato per convalidare la correttezza del valore nel **Campo di convalida** assicurando che corrisponda alla voce genitore corrispondente nel set di dati di ricerca.
-   * **Operatore di ricerca** (opzionale)\
-     Scegli come **DocBits** cerca le corrispondenze nel set di dati di ricerca:
-     * **Smart** – _(Default)_ Ignora spazi e punteggiatura e cerca il termine in **qualsiasi punto** del campo. Per questo "Meier" trova anche "Meier Bau GmbH".
-     * **Contiene** – Cerca voci che contengono il termine esatto in qualsiasi punto del campo.
-     * **Finisce con** – Cerca voci che terminano con il termine specificato.
-     * **esatto** – Cerca una corrispondenza esatta dell'intero valore.
-     * **Inizia con** – Cerca voci che iniziano con il termine specificato.
-   * **Trigger automatico** (opzionale)\
-     Quando abilitato, DocBits compilerà automaticamente tutti i campi nella configurazione di ricerca non appena questo campo viene compilato.
-   *   **Ricercabile** (opzionale)\
-       Quando abilitato, gli utenti possono cercare manualmente i dati master durante la convalida dei campi **e** il campo partecipa alla ricerca automatica. Lascialo non selezionato se il campo non deve influenzare il risultato automatico.
-
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_12.png)
-
-
-
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_13.png)
-4.  Clic **Salva** per creare il nuovo campo.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_11.png)
-
-### Azioni sul campo esistente
-
-Per gestire un campo esistente, clic sui tre puntini nella colonna **Azioni** accanto al campo che desideri modificare.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_14.png)
-
-Sono disponibili le seguenti azioni:
-
-* **Modifica/Vista**\
-  Consente di modificare il campo selezionato.\
-  Dopo aver apportato le modifiche, clic **Salva** per applicarle.\
-  <mark style="color:red;">**Nota**</mark>: I campi predefiniti possono solo essere visualizzati, non modificati. In questi casi, l'opzione **Modifica** apparirà come **Vista**.
-*   **Cancellare**\
-    Elimina definitivamente il campo selezionato dopo la conferma.\
-    <mark style="color:red;">**Nota**</mark>: Possono essere cancellati solo i campi senza il tag **Default**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_9.png)
-
-## Dati anagrafici LOV
-
-La sezione **Dati anagrafici LOV** consente di creare configurazioni di dropdown utilizzando valori dai tuoi dati master. Questi dropdown possono essere autonomi o dipendenti da altri dropdown, abilitando filtri dinamici e selezioni a cascata durante la convalida dei campi.
-
-### Creare la configurazione della ricerca Lov
-
-Una configurazione di ricerca lov definisce come le opzioni del dropdown sono ottenute da una tabella di dati master e come quei valori vengono mostrati e inseriti nei campi del documento.
-
-**Per creare una nuova configurazione di ricerca LOV:**
-
-1. Vai alla sezione **Dati anagrafici LOV**.
-2.  Clic **Creare la configurazione della ricerca Lov** nell'angolo in alto a destra.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_15.png)
-3. Configura le seguenti opzioni:
-   * **Cerca il nome Lov**\
-     Il nome della configurazione di ricerca lov.
-   * **Nome del set di dati di ricerca Lov**\
-     Seleziona la tabella di dati master che deve essere utilizzata per questa configurazione di ricerca lov.
-   *   **Tipo di contesto**\
-       Specifica dove nel documento verrà applicata la configurazione di ricerca lov:
-
-       **HEADER**
-
-       La configurazione di ricerca lov è utilizzata nella convalida dei campi. Configura quanto segue:
-
-       * **Campo etichetta di ricerca**\
-         Seleziona la colonna il cui valore verrà visualizzato nel dropdown.
-       * **Campo valore di ricerca**\
-         Seleziona la colonna il cui valore verrà memorizzato internamente e utilizzato per il filtraggio quando viene effettuata una selezione. Questo valore non è mostrato all'utente.
-       * **Fuori campo**\
-         Definisce il campo nella convalida dei campi che riceverà l'etichetta selezionata dal dropdown.
-
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_16.png)
-
-       \
-       **LINE**
-
-       La configurazione di ricerca lov è utilizzata all'interno di una tabella del documento. Configura quanto segue:
-
-       * **Dettaglio del contesto**\
-         Seleziona la tabella specifica in cui questa configurazione di ricerca lov deve essere attiva.
-       * **Campo etichetta di ricerca**\
-         La colonna il cui valore verrà visualizzato nel dropdown.
-       * **Campo valore di ricerca**\
-         Seleziona la colonna il cui valore verrà memorizzato internamente e utilizzato per il filtraggio quando viene effettuata una selezione. Questo valore non è mostrato all'utente.
-       * **Fuori campo**\
-         Specifica il campo di destinazione nella tabella in cui verrà inserita l'etichetta selezionata.
-
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_17.png)
-4.  Clic **Salva** per creare la configurazione di ricerca lov.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_18.png)
-
-### Azioni sulla configurazione di ricerca esistente
-
-Per gestire una configurazione di ricerca lov esistente, clic sui tre puntini nell'angolo in alto a destra della configurazione.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_19.png)
-
-**Azioni disponibili:**
-
-* **Attivare / Disattivare**\
-  Attiva/Disattiva lo stato della configurazione di ricerca lov.
-  * Le configurazioni **Attivo** sono contrassegnate con un tag **Attivo**.
-  * Le configurazioni **Inattivo** sono contrassegnate con un tag **Inattivo**.
-*   **Duplicato**\
-    Dopo aver inserito un nome e clic su **Fatto**, viene creata una copia della configurazione di ricerca lov selezionata.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_21.png)
-* **Modifica / Vista**\
-  Modifica la configurazione selezionata. Dopo le modifiche, clic **Salva**.
-*   **Cancellare**\
-    Elimina definitivamente la configurazione dopo la conferma.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_20.png)
-
-### Creare un nuovo campo
-
-All'interno di ciascuna configurazione di ricerca lov, puoi definire campi aggiuntivi come dropdown che fungono da pre-filtri per la logica lov principale.
-
-Questi campi vengono valutati prima che il dropdown lov principale venga caricato. In base ai valori selezionati in questi campi, i risultati del campo lov principale vengono filtrati dinamicamente—abilitando dropdown dipendenti.\
-Ad esempio, selezionare un paese in un campo di pre-filtro può restringere le opzioni della città nel dropdown lov principale.
-
-Oltre a creare nuovi campi, puoi anche utilizzare campi esistenti come pre-filtri. Quando configurati in questo modo, il valore selezionato nel campo esistente filtrerà automaticamente il dropdown lov principale.
-
-**Per aggiungere un nuovo campo:**
-
-1. Apri la configurazione di ricerca lov desiderata.
-2.  Clic **Creare** nell'angolo in alto a destra.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_22.png)
-3.  Configura le opzioni necessarie.
-
-    **Opzioni di configurazione del campo (si applicano ai contesti HEADER e LINE):**
-
-    * **Campo di ricerca**\
-      La colonna da cercare nel set di dati selezionato per i valori del dropdown.
-      * **Campo filtro**\
-        Specifica il campo il cui valore viene utilizzato per pre-filtrare i risultati della configurazione di ricerca lov prima che il dropdown principale venga popolato.
-      * **Valore del filtro** (opzionale)\
-        Aggiungi filtri statici per restringere ulteriormente i risultati della ricerca.
-      * **Necessario**\
-        Quando abilitato, questo campo deve essere compilato prima che qualsiasi dropdown dipendente possa essere popolato.
-4.  Clic **Salva** per creare il nuovo campo.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_23.png)
-
-### Azioni sul campo esistente
-
-Per gestire un campo esistente all'interno di una configurazione di ricerca lov, clic sui tre puntini nella colonna **Azioni** accanto al campo.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_24.png)
-
-**Azioni disponibili:**
-
-* **Modifica**\
-  Modifica il campo selezionato. Dopo le modifiche, clic **Salva** per applicare.
-*   **Cancellare**\
-    Rimuove definitivamente il campo dopo la conferma.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/fields_master_data_settings_20.png)
+Per creare menu a tendina concatenati, seleziona **Creare** dentro una configurazione LOV espansa e scegli un **Campo Di Ricerca** e un **Campo Filtro**. Il valore del campo filtro restringe le scelte restituite dalla ricerca. Puoi anche impostare un **Valore Del Filtro** fisso e contrassegnare un campo come **Richiesto**. Usa il menu a tre punti della riga per modificare o eliminare un campo filtro personalizzato.

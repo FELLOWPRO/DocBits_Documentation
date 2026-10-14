@@ -169,3 +169,80 @@ def test_dry_run_writes_nothing(tmp_path):
 def test_every_language_has_its_own_folder():
     assert len(set(lb.LANGS.values())) == len(lb.LANGS) == 7
     assert pytest is not None
+
+
+# --- path traversal / symlink hardening -------------------------------------
+
+
+@pytest.mark.parametrize("bad", ["../../escape.md", "/etc/passwd.md", "a/../../x.md"])
+def test_unsafe_navigation_path_is_an_error(tmp_path, bad):
+    summary = SUMMARY + f"  * [Evil]({bad})\n"
+    (rep, plan), dest = run(tmp_path, GOOD, summary=summary)
+    assert any("unsafe navigation path" in e for e in rep.errors)
+    assert all(str(d).startswith(str(dest)) for d in plan)
+
+
+def test_symlinked_page_is_rejected(tmp_path):
+    secret = tmp_path / "secret.md"
+    secret.write_text("# runner secret\n")
+    readme = make_branch(tmp_path / "src", {k: v for k, v in GOOD.items() if k != "b.md"})
+    (readme / "b.md").symlink_to(secret)
+    dest = tmp_path / "dest" / "deutsch"
+    dest.mkdir(parents=True)
+    rep, plan = lb.plan_sync(readme, dest)
+    assert any("symlink" in e for e in rep.errors)
+    assert dest / "b.md" not in plan
+
+
+def test_symlinked_directory_in_page_path_is_rejected(tmp_path):
+    outside = tmp_path / "outside"
+    outside.mkdir()
+    (outside / "page-a.md").write_text("# leaked\n")
+    readme = make_branch(tmp_path / "src", {k: v for k, v in GOOD.items() if k != "a/page-a.md"})
+    (readme / "a").symlink_to(outside, target_is_directory=True)
+    dest = tmp_path / "dest" / "deutsch"
+    dest.mkdir(parents=True)
+    rep, _ = lb.plan_sync(readme, dest)
+    assert any("symlink" in e for e in rep.errors)
+
+
+def test_symlinked_asset_is_not_copied(tmp_path):
+    secret = tmp_path / "secret.png"
+    secret.write_bytes(b"secret")
+    page = "# A\n\n![](../.gitbook/assets/leak.png)\n"
+    readme = make_branch(tmp_path / "src", {**GOOD, "a/page-a.md": page})
+    (readme / ".gitbook" / "assets" / "leak.png").symlink_to(secret)
+    dest = tmp_path / "dest" / "deutsch"
+    dest.mkdir(parents=True)
+    rep, plan = lb.plan_sync(readme, dest)
+    assert rep.assets == [] and not any(d.name == "leak.png" for d in plan)
+
+
+def test_dotdot_in_image_reference_does_not_escape_assets(tmp_path):
+    page = "# A\n\n![](../.gitbook/assets/../../b.md)\n"
+    (rep, plan), _ = run(tmp_path, {**GOOD, "a/page-a.md": page})
+    assert rep.assets == []
+    assert not any(d.name == "b.md" and ".gitbook" in d.parts for d in plan)
+
+
+def test_symlinked_destination_is_rejected(tmp_path):
+    readme = make_branch(tmp_path / "src", GOOD)
+    target = tmp_path / "elsewhere"
+    target.mkdir()
+    dest = tmp_path / "dest" / "deutsch"
+    dest.mkdir(parents=True)
+    (dest / "b.md").symlink_to(target / "b.md")
+    rep, _ = lb.plan_sync(readme, dest)
+    assert any("destination is a symlink" in e for e in rep.errors)
+
+
+def test_symlinked_summary_is_rejected(tmp_path):
+    readme = make_branch(tmp_path / "src", GOOD)
+    real = tmp_path / "real-summary.md"
+    real.write_text(SUMMARY)
+    (readme / "SUMMARY.md").unlink()
+    (readme / "SUMMARY.md").symlink_to(real)
+    dest = tmp_path / "dest" / "deutsch"
+    dest.mkdir(parents=True)
+    rep, _ = lb.plan_sync(readme, dest)
+    assert rep.errors

@@ -46,7 +46,7 @@ import re
 import shutil
 import sys
 from dataclasses import dataclass, field
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 # language branch -> folder GitBook imports (installationProjectDirectory)
 LANGS = {
@@ -103,13 +103,54 @@ def lexical_path(path: Path) -> Path:
     return Path(*parts)
 
 
+def safe_rel(rel: str) -> bool:
+    """A relative path that stays below its base: not empty, not absolute, no `..`."""
+    if not rel or "\\" in rel or "\0" in rel:
+        return False
+    parts = PurePosixPath(rel).parts
+    return bool(parts) and not PurePosixPath(rel).is_absolute() and ".." not in parts
+
+
+def has_symlink(base: Path, path: Path) -> bool:
+    """True if `base` or any component of `path` below it is a symlink."""
+    if base.is_symlink():
+        return True
+    cur = base
+    for part in path.relative_to(base).parts:
+        cur = cur / part
+        if cur.is_symlink():
+            return True
+    return False
+
+
+def contained(base: Path, path: Path) -> bool:
+    """`path` is a regular, non-symlinked file that really lives below `base`."""
+    try:
+        return (
+            safe_path(base, path)
+            and path.is_file()
+            and path.resolve().is_relative_to(base.resolve())
+        )
+    except (OSError, ValueError):
+        return False
+
+
+def safe_path(base: Path, path: Path) -> bool:
+    try:
+        return not has_symlink(base, path)
+    except ValueError:
+        return False
+
+
 def resolve_asset(candidate: str, *asset_dirs: Path) -> tuple[str, Path] | None:
     """A reference like `image (83).png" alt=...` has no clean delimiter, so
     shorten it until it names a file in one of the asset directories."""
     for k in range(len(candidate), 0, -1):
         name = candidate[:k].replace("%20", " ")
+        if not safe_rel(name):
+            continue
         for d in asset_dirs:
-            if (d / name).is_file():
+            if contained(d, d / name):
                 return name, d / name
     return None
 
@@ -151,22 +192,39 @@ def plan_sync(source_readme: Path, dest_dir: Path) -> tuple[Report, dict[Path, P
     rep = Report()
     plan: dict[Path, Path] = {}  # destination file -> source file
     summary_src = source_readme / "SUMMARY.md"
-    if not summary_src.is_file():
-        rep.errors.append("source has no readme/SUMMARY.md")
+    if source_readme.is_symlink() or dest_dir.is_symlink():
+        rep.errors.append("readme/ or the destination folder is a symlink")
+        return rep, plan
+    if not contained(source_readme, summary_src):
+        rep.errors.append("source has no readme/SUMMARY.md (or it is a symlink)")
         return rep, plan
     nav = parse_summary(summary_src.read_text(encoding="utf-8"))
-    pages = list(dict.fromkeys([p for _, _, p in nav] + ["README.md"]))
+    candidates = list(dict.fromkeys([p for _, _, p in nav] + ["README.md"]))
+
+    pages: list[str] = []
+    for p in candidates:
+        if not safe_rel(p):
+            rep.errors.append(f"unsafe navigation path: {p}")
+            continue
+        if not safe_path(dest_dir, dest_dir / p):
+            rep.errors.append(f"destination is a symlink: {p}")
+            continue
+        src = source_readme / p
+        if not contained(source_readme, src):
+            if p != "README.md" or src.exists() or src.is_symlink():
+                what = "is a symlink or outside readme/" if (src.exists() or src.is_symlink()) else "without file"
+                rep.errors.append(f"navigation entry {what}: {p}")
+            continue
+        pages.append(p)
 
     for p in pages:
-        if not (source_readme / p).is_file():
-            if p != "README.md":
-                rep.errors.append(f"navigation entry without file: {p}")
-            continue
         src, dst = source_readme / p, dest_dir / p
         if not dst.is_file() or src.read_bytes() != dst.read_bytes():
             plan[dst] = src
             rep.pages.append(p)
-    if not (dest_dir / "SUMMARY.md").is_file() or summary_src.read_bytes() != (dest_dir / "SUMMARY.md").read_bytes():
+    if not safe_path(dest_dir, dest_dir / "SUMMARY.md"):
+        rep.errors.append("destination SUMMARY.md is a symlink")
+    elif not (dest_dir / "SUMMARY.md").is_file() or summary_src.read_bytes() != (dest_dir / "SUMMARY.md").read_bytes():
         plan[dest_dir / "SUMMARY.md"] = summary_src
         rep.pages.append("SUMMARY.md")
 
@@ -196,9 +254,11 @@ def plan_sync(source_readme: Path, dest_dir: Path) -> tuple[Report, dict[Path, P
             if name in seen_assets:
                 continue
             seen_assets.add(name)
-            if found.parent == src_assets:
+            if found.parent == src_assets or contained(src_assets, found):
                 dst = dst_assets / name
-                if not dst.is_file() or dst.read_bytes() != found.read_bytes():
+                if not safe_path(dest_dir, dst):
+                    rep.errors.append(f"{p}: destination asset is a symlink: {name}")
+                elif not dst.is_file() or dst.read_bytes() != found.read_bytes():
                     plan[dst] = found
                     rep.assets.append(name)
     return rep, plan
@@ -207,7 +267,7 @@ def plan_sync(source_readme: Path, dest_dir: Path) -> tuple[Report, dict[Path, P
 def apply_plan(plan: dict[Path, Path]) -> None:
     for dst, src in plan.items():
         dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(src, dst)
+        shutil.copy2(src, dst, follow_symlinks=False)
 
 
 def cmd_sync(args: argparse.Namespace) -> int:

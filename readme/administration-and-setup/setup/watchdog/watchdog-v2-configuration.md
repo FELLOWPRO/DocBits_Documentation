@@ -1,47 +1,152 @@
 # Configuration de WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-fr.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+Ce guide explique comment configurer le service WatchDog dans l'application DocBits. Toutes les configurations sont gérées directement dans **Settings → Document Processing → WatchDog**.
 
-Ce guide explique comment configurer WatchDog dans l'application DocBits.
+<figure><img src="../../../.gitbook/assets/watchdog-v2-config-infographic.svg" alt="Aperçu de la configuration de WatchDog"><figcaption></figcaption></figure>
 
-## 1. Aperçu
+---
 
-Accédez aux paramètres de WatchDog depuis le menu des paramètres de DocBits.
+## 1. Onglet General
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Aperçu de WatchDog"><figcaption></figcaption></figure>
+L'onglet General fournit les instructions d'installation, les liens de téléchargement et les paramètres de mise à jour.
 
-## 2. Paramètres des dossiers
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Onglet General de WatchDog"><figcaption></figcaption></figure>
 
-Configurez les répertoires d'entrée et de sortie pour WatchDog. Assurez-vous que ces chemins correspondent aux répertoires créés lors du processus d'installation.
+### 1.1 Téléchargement et configuration
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_02.png" alt="Paramètres des dossiers WatchDog"><figcaption></figcaption></figure>
+* Téléchargez la dernière version de `WatchDog.exe` directement depuis l'onglet General
+* Copiez l'API Key affichée
+* Exécutez la commande de configuration dans une invite de commandes administrateur :
 
-## 3. Paramètres généraux
+```powershell
+WatchDog.exe -api YOUR_API_KEY
+```
 
-Configurez les paramètres généraux tels que les types de documents et d'autres options de traitement.
+### 1.2 Auto-Update Schedule
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="Paramètres généraux de WatchDog"><figcaption></figcaption></figure>
+| Option | Intervalle |
+| :--- | :--- |
+| On Startup Only | Vérification unique au démarrage |
+| Hourly | Toutes les 3600 secondes |
+| Daily | Toutes les 86400 secondes |
+| Weekly | Toutes les 604800 secondes |
 
-## 4. Paramètres d'exportation
+---
 
-Configurez les destinations et les méthodes d'exportation.
+## 2. Onglet Configurations
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_04.png" alt="Paramètres d'exportation de WatchDog"><figcaption></figcaption></figure>
+Créez et gérez les configurations d'importation et d'exportation. Toutes les configurations sont créées directement dans DocBits — aucun fichier de configuration local n'est nécessaire.
 
-## 5. Détails de la configuration d'exportation
+<figure><img src="../../../.gitbook/assets/watchdog_v2_03.png" alt="Aperçu des configurations WatchDog"><figcaption></figcaption></figure>
 
-Affichez et gérez les configurations d'exportation spécifiques.
+### 2.1 Import Configurations
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="Détails de la configuration d'exportation de WatchDog"><figcaption></figcaption></figure>
+Définissez les emplacements que WatchDog surveille pour détecter de nouveaux documents.
 
-## 6. Configuration du mappage BOD
+<figure><img src="../../../.gitbook/assets/watchdog_v2_02.png" alt="Configuration d'importation WatchDog"><figcaption></figcaption></figure>
 
-Configurez le mappage BOD pour l'intégration avec Infor.
+| Champ | Description |
+| :--- | :--- |
+| **Name** | Nom d'affichage de cette configuration |
+| **Watch Folder** | Répertoire à surveiller pour détecter de nouveaux documents (obligatoire) |
+| **Success Folder** | Emplacement où les fichiers sont déplacés après une importation réussie |
+| **Document Type** | INVOICE, CREDIT\_NOTE, PURCHASE\_ORDER, etc. |
+| **Sub-Organisation** | Facultatif — achemine les documents vers une sous-organisation spécifique |
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Mappage BOD de WatchDog"><figcaption></figcaption></figure>
+### 2.2 Export Configurations
 
-## 7. Télécharger la configuration
+Définissez comment et où les documents traités sont exportés.
 
-Une fois configuré, téléchargez le fichier de configuration à utiliser avec l'exécutable WatchDog.
+> **Important :** les configurations d'exportation **exigent désormais un type de document** (`doc_type`). Les configurations sans type de document seront rejetées par le système.
 
-<figure><img src="../../../.gitbook/assets/watchdog_v2_07.png" alt="Télécharger la configuration de WatchDog"><figcaption></figcaption></figure>
+| Champ | Description |
+| :--- | :--- |
+| **Name** | Nom d'affichage de cette configuration |
+| **Document Type** | Obligatoire — INVOICE, CREDIT\_NOTE, etc. |
+| **Export Method** | Mode d'exportation des documents (voir ci-dessous) |
+| **Export Folder** | Répertoire cible pour les exportations vers un dossier |
+| **Execution Order** | Priorité lorsque plusieurs configurations correspondent (par défaut : 1) |
+| **XSLT Template** | Facultatif — modèle de transformation XML |
+
+### 2.3 Méthodes d'exportation
+
+| Méthode | Description |
+| :--- | :--- |
+| **Folder (watcher)** | Exporte le PDF et le XML vers un dossier local |
+| **Infor IDM** | Téléverse vers Infor Document Management |
+| **Infor BOD** | Envoie un BOD XML vers Infor ERP / M3 |
+| **ION API** | Appelle les points de terminaison de l'API Infor ION |
+| **GLS840MI** | Traitement par lots M3 (via REST API) |
+| **REST API** | Envoie vers une API externe avec authentification ION OAuth |
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_04.png" alt="Configuration d'exportation WatchDog"><figcaption></figcaption></figure>
+
+### 2.4 Options de traitement
+
+* **Barcode Divider :** divise automatiquement les documents de plusieurs pages à partir des codes-barres
+* **DocBits Operator :** active les tâches d'automatisation du navigateur
+
+---
+
+## 3. Onglet Status
+
+Surveillez l'état de santé et l'activité du service WatchDog.
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_status.png" alt="État du service WatchDog"><figcaption></figcaption></figure>
+
+### Informations d'état
+
+| Champ | Description |
+| :--- | :--- |
+| **Online/Offline** | État de connexion actuel (seuil de heartbeat de 30 s) |
+| **Version** | Version de WatchDog installée |
+| **Version First Seen** | Date à laquelle cette version a été signalée pour la première fois |
+| **Last Restart** | Horodatage du dernier redémarrage du service |
+| **Auto-Update Enabled** | Indique si les mises à jour automatiques sont actives |
+| **Latest Version** | Version disponible la plus récente |
+| **Latest Version Checked At** | Date de la dernière vérification de la version la plus récente |
+| **System Info** | Chemin d'installation, mémoire RAM disponible, espace disque disponible |
+
+### Indicateur d'état
+
+| État | Signification |
+| :--- | :--- |
+| ✅ **Online** | WatchDog est connecté et actif |
+| ⚠️ **Offline** | Aucun heartbeat reçu depuis plus de 30 secondes |
+| ❌ **Not Installed** | WatchDog ne s'est jamais connecté à cette organisation |
+
+---
+
+## 4. Onglet Logs
+
+Consultez tous les événements WatchDog stockés dans OpenSearch.
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_05.png" alt="Journaux de WatchDog"><figcaption></figcaption></figure>
+
+* Filtrez par date, type d'événement ou mots-clés
+* Types d'événements : `FILE_IMPORT_STARTED`, `FILE_IMPORT_COMPLETED`, `FILE_IMPORT_FAILED`, `EXPORT_STARTED`, `EXPORT_COMPLETED`, `EXPORT_FAILED`, `FOLDER_VALIDATION_FAILED`, `CONFIG_LOADED`, `SERVICE_RESTART_INITIATED`, `SERVICE_RESTART_COMPLETED`
+
+---
+
+## 5. Onglet XSLT Templates
+
+Gérez les modèles de transformation XSLT utilisés pour les exportations XML.
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_06.png" alt="Liste des modèles XSLT"><figcaption></figcaption></figure>
+
+* Téléversez et modifiez les modèles XSLT
+* **Validation en direct** — testez les modèles sur un XML d'exemple avec analyse des champs
+* Associez les modèles aux configurations d'exportation
+* Consultez le nombre d'utilisations (quelles configurations utilisent chaque modèle)
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_07.png" alt="Éditeur de modèles XSLT"><figcaption></figcaption></figure>
+
+---
+
+## 6. Onglet Export Configurations
+
+Vue d'ensemble de toutes les configurations d'exportation actives avec leur état de connexion.
+
+* Surveillez l'horodatage de la dernière connexion réussie
+* Gérez les configurations directement dans la liste (modifier, copier, supprimer)
+* Copiez en masse des configurations entre sous-organisations

@@ -42,25 +42,15 @@ Voir ici ajouter [Script dans DocBits](../../../administration-and-setup/setting
   * **Objectif:** Aide à identifier et corriger les champs où les données peuvent ne pas correspondre parfaitement mais sont suffisamment proches.
   * **Cas d'utilisation:** Utile dans les processus de validation de données où des correspondances exactes ne sont pas toujours possibles, comme des noms ou adresses légèrement mal orthographiés.
 
-### **Champs obligatoires:**
+### **Champs obligatoires :**
 
-<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Champs obligatoires"><figcaption></figcaption></figure>
 
-Il y a des champs requis pour une édition ultérieure, ceux-ci peuvent être modifiés dans les paramètres.
+Les champs à vérifier affichent une bordure colorée ou une icône d'information. Dans l'exemple ci-dessous, le champ **Numéro de la facture** a une bordure rouge et une icône d'avertissement. La valeur est visible sur la facture à droite, mais DocBits ne l'a pas extraite du document. Sélectionnez le numéro sur le document ou corrigez le champ, puis enregistrez le document.
 
-Utilisez l'info-bulle pour savoir si:
+Survolez ou sélectionnez l'icône d'information à côté d'un champ pour lire la raison exacte. Selon le champ, le message peut indiquer une extraction manquante, une valeur obligatoire, une confiance faible ou un écart de validation. Si l'avertissement concerne les totaux, comparez les champs de montants avec la facture et utilisez [Contrôles automatiques sur l'écran de validation](automatic-checks-on-the-validation-screen.md) pour le contrôle approprié.
 
-* Est-ce un champ obligatoire (requis)
-* Validation requise
-* Faible confiance
-* Inadéquation du montant total des taxes
-
-**Champs obligatoires:**
-
-* **Objectif :** Identifie les champs obligatoires dans les documents qui doivent être remplis ou corrigés avant un traitement ultérieur.
-* **Cas d'utilisation :** Assure que les données essentielles sont capturées avec précision, maintenant l'intégrité des données et la conformité aux règles de l'entreprise.
-
-<figure><img src="https://lh7-us.googleusercontent.com/3-ZXi-fUcWlM0nUaOAQbY7bynchbIN30JReKRdijyMFvX_GIHrnbcismANdOi6UfYa6GCPvk9wnOixya0E_rBk3V8hQduS-gBZJi4k0Kq8jeN93DxC2w5J-YRqeV9IkVB6oiH8tm0-y7gWJO_8fBplo" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation-required-field-fr-2026.png" alt="Écran de validation DocBits en français avec un avertissement rouge sur le numéro de facture et le numéro correspondant visible sur une facture synthétique"><figcaption><p>Un champ à vérifier à côté de la facture utilisée pour contrôler sa valeur.</p></figcaption></figure>
 
 ## Tableau extrait (éléments de ligne)
 

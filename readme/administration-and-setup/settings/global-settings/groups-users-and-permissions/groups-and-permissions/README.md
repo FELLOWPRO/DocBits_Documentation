@@ -1,20 +1,47 @@
-# Groupes et Autorisations
+# Groupes et autorisations
 
 {% embed url="https://youtu.be/xE4RQnbOMug" %}
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-**Composants de la Section Groupes et Autorisations**
+<figure><img src="../../../../../.gitbook/assets/groups_and_permissions.png" alt="Groupes et autorisations"><figcaption><p>Page Groups and Permissions</p></figcaption></figure>
 
-1. **Activer/Désactiver les Groupes et Autorisations** : Un interrupteur qui permet à l'administrateur système d'activer ou de désactiver l'utilisation des groupes et des autorisations sur la plateforme. Lorsqu'il est désactivé, le système peut revenir à un modèle de contrôle d'accès moins granulaire.
-2. **Liste des Groupes** : Affiche la liste des groupes d'utilisateurs disponibles au sein de l'organisation. Chaque groupe peut être configuré avec des autorisations spécifiques. Les administrateurs peuvent ajouter de nouveaux groupes en cliquant sur le bouton "+ Nouveau".
-3. **Table des Autorisations** :
+Les groupes et les autorisations vous permettent de contrôler quels utilisateurs peuvent accéder à des types de documents spécifiques et quelles actions ils peuvent effectuer.
 
-* Affichée une fois qu'un groupe est sélectionné ou qu'un nouveau groupe est en cours de configuration.
-* Liste tous les types de documents reconnus par le système (par exemple, FACTURE, NOTE DE CRÉDIT, BON DE LIVRAISON).
-* Pour chaque type de document, il existe des cases à cocher pour différentes autorisations :
-  * **Voir** : Autorisation de voir le document.
-  * **Mettre à jour** : Autorisation de modifier le document.
-  * **Supprimer** : Autorisation de supprimer le document du système.
-  * **Première Approbation** : Autorisation d'effectuer l'approbation initiale du document.
-  * **Deuxième Approbation** : Autorisation d'effectuer un deuxième niveau d'approbation (si applicable).
+## Activer/désactiver les groupes et les autorisations
+
+Utilisez le commutateur en haut de la page pour activer ou désactiver le système de groupes et d'autorisations. Lorsqu'il est désactivé, le système utilise un modèle d'accès plus simple, sans restrictions basées sur les groupes.
+
+## Liste des groupes
+
+Le tableau affiche tous les groupes configurés avec :
+
+| Colonne | Description |
+|--------|-------------|
+| **Group Name** | Le nom du groupe. |
+| **Group Description** | Une brève description de l'objectif du groupe. |
+| **Actions** | Menu avec les options pour modifier ou supprimer le groupe. |
+
+Utilisez la barre **Search** pour rechercher des groupes par nom. Cliquez sur **+ New** pour créer un nouveau groupe.
+
+## Configurer les autorisations d'un groupe
+
+Lorsque vous sélectionnez un groupe (via le menu Actions → Edit), un tableau d'autorisations apparaît, dans lequel vous pouvez configurer l'accès par type de document :
+
+| Autorisation | Description |
+|------------|-------------|
+| **View** | Autorisation de voir les documents de ce type. |
+| **Update** | Autorisation de modifier les documents de ce type. |
+| **Delete** | Autorisation de supprimer les documents de ce type. |
+| **First Approval** | Autorisation d'effectuer l'approbation initiale. |
+| **Second Approval** | Autorisation d'effectuer un second niveau d'approbation (le cas échéant). |
+
+Chaque ligne du tableau d'autorisations représente un type de document (par exemple Invoice, Credit Note, Delivery Note). Cochez ou décochez les cases pour accorder ou retirer des autorisations à ce groupe.
+
+## Créer un nouveau groupe
+
+1. Cliquez sur **+ New** en haut à droite.
+2. Saisissez un **Group Name** et, facultativement, une **Description**.
+3. Configurez les autorisations pour chaque type de document.
+4. Affectez des utilisateurs au groupe.
+5. Cliquez sur **Save** pour appliquer.

@@ -1,120 +1,222 @@
-# Règles de transformation
+# Transformation Rules
 
 ## Vue d'ensemble
 
-Les règles de transformation nettoient ou réécrivent les données extraites **automatiquement** — un champ dans l’en-tête, une colonne dans un tableau, des lignes entières d’un tableau, ou un attribut du document — à chaque fois qu’un document est traité et à chaque fois qu’il est enregistré. Elles remplacent les petits scripts que de nombreuses organisations écrivaient pour « toujours tronquer ce champ », « par défaut cette colonne à 1 », « mapper les codes unités de ce fournisseur » ou « regrouper les lignes de cet fournisseur en une seule ligne totale ».
+Les règles de transformation nettoient ou réécrivent les données extraites **automatiquement**, à chaque traitement d'un document et à chaque enregistrement. Une règle peut modifier :
 
-Une règle est définie par **type de document** et s’exécute sur chaque document de ce type. Les règles s’exécutent **avant** la validation, les scripts et la correspondance des bons de commande, de sorte que tout ce qui suit voit déjà les valeurs transformées.
+* un **champ d'en-tête** (numéro de facture, devise, numéro d'identification fiscale du fournisseur …),
+* une **colonne** dans chaque ligne d'un tableau (unité, numéro d'article, base de prix …),
+* les **lignes** d'un tableau (les vider, ajouter une ligne),
+* un **attribut du document** — aujourd'hui la sous-organisation à laquelle il appartient (**Routing**).
 
-## Comment y accéder
+Chaque règle **lit** une valeur, la fait passer par un court **pipeline** d'étapes et **réécrit** le résultat. Les règles s'exécutent **avant** la validation, les scripts et le rapprochement des bons de commande (PO matching), de sorte que tout ce qui suit voit déjà les valeurs corrigées.
 
-1. Naviguez vers **Paramètres → Paramètres globaux → Types de documents**.
-2. Ouvrez le type de document et choisissez **Règles de transformation**. La liste affiche chaque règle du type avec sa portée, sa cible, sa priorité et si elle est active.
-3. Cliquez sur **Nouvelle règle** pour ouvrir le générateur de règles, ou ouvrez une règle existante pour la modifier.
+Les règles de transformation remplacent la plupart des petits scripts que les organisations écrivaient pour « toujours supprimer les espaces de ce champ », « mapper les codes d'unité de ce fournisseur », « ajouter le préfixe attendu par notre ERP » ou « regrouper les lignes de ce fournisseur en une seule ligne de total » — avec un formulaire, un aperçu en direct et sans code.
 
-## Anatomie d’une règle
+### Problèmes qu'elles résolvent
 
-| Partie             | Ce que c’est                                                                                                                                                                                                                     |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nom / clé**      | Le nom affiché dans les listes, messages et l’historique des correspondances, et une clé technique qui reste stable lorsque vous renommez la règle.                                                                             |
-| **Portée**         | Où la règle écrit : un **champ d’en-tête**, une **colonne de tableau**, un **tableau** (lignes entières) ou un **attribut du document**. Voir ci-dessous.                                                                        |
-| **Cible**          | Le champ, la colonne (avec son tableau) ou le tableau sur lequel la règle écrit.                                                                                                                                                 |
-| **Source**         | Optionnel. D’où la règle lit son entrée au lieu de la cible elle-même : `header.<field>` pour un champ d’en-tête, `doc.<attribute>` pour un attribut du document, `row.<column>` pour une autre colonne de la même ligne (portée colonne uniquement). |
-| **Quand**          | **Toujours**, ou **seulement lorsque** une condition est vraie (voir Conditions).                                                                                                                                                |
-| **Actions**        | La liste des transformations, appliquées dans l’ordre ; la sortie d’une action est l’entrée de la suivante.                                                                                                                     |
-| **Priorité**       | Les règles de même portée s’exécutent par priorité croissante (puis par clé). Utilisez-la lorsqu’une règle doit voir le résultat d’une autre.                                                                                   |
-| **Exécuter une fois** | La règle s’applique à un document **au plus une fois**. Nécessaire pour les actions qui changeraient la valeur à chaque enregistrement (sous-chaîne, remplacement regex, extraction regex) et pour les règles de tableau qui ne doivent pas reconstruire les lignes à chaque fois. |
-| **Journaliser l’exécution** | Écrit une ligne de journal par application — utile lors de l’ajustement d’une nouvelle règle.                                                                                                                              |
-
-### Portées
-
-| Portée                | Écrit sur                                                | Règle typique                                                                            |
-| --------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| **Champ d’en-tête**   | un champ d’en-tête extrait (numéro de facture, devise, …) | tronquer et mettre en majuscules le numéro de facture ; mapper « EUR€ » en « EUR »         |
-| **Colonne de tableau** | une colonne dans chaque ligne d’un tableau               | par défaut `UNIT_PRICE_PER` à 1 ; supprimer le préfixe « Art.-Nr. » du numéro d’article    |
-| **Tableau**           | les lignes d’un tableau                                   | vider les lignes et ajouter une ligne totale pour un fournisseur qui est apparié sur le total |
-| **Attribut du document** | un attribut du document lui-même (actuellement la sous-organisation) | diriger les documents d’un fournisseur vers une sous-organisation                        |
-
-Les règles s’exécutent portée par portée dans cet ordre : en-tête → document → tableau → colonne. Une règle de colonne voit donc déjà les lignes qu’une règle de tableau a ajoutées.
-
-### Conditions (« seulement lorsque »)
-
-Une condition compare une valeur du document avec une constante. La valeur provient d’un champ d’en-tête (`header.<field>`), d’un attribut du document (`doc.<attribute>`) ou, pour les règles de colonne, d’une colonne de la ligne courante (`row.<column>`).
-
-| Opérateur                        | Signification                              |
-| -------------------------------- | ----------------------------------------- |
-| est / n’est pas                  | comparaison exacte                        |
-| est l’un de / n’est pas l’un de  | valeur dans une liste                     |
-| contient, commence par, finit par | comparaison de texte                      |
-| est vide / n’est pas vide        | aucune valeur nécessaire                  |
-| supérieur à, inférieur à, au moins, au plus | comparaison numérique             |
-| correspond                      | expression régulière                      |
-
-Les conditions peuvent être regroupées avec **toutes** (et) et **n’importe laquelle** (ou) et niées avec **pas**. Exemple : _seulement lorsque `header.supplier_id` est `20723`_ — la règle s’exécute pour un seul fournisseur.
-
-### Actions
-
-Actions pour les champs d’en-tête et les colonnes de tableau (elles forment un pipeline ; la valeur entre en haut et sort en bas) :
-
-| Action             | Effet                                                                                                              |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| `trim`             | supprimer les espaces (ou caractères donnés) à gauche, à droite ou des deux côtés                                  |
-| `case`             | majuscule, minuscule, titre ou capitaliser                                                                        |
-| `pad`              | compléter jusqu’à une longueur avec un caractère, à gauche ou à droite                                            |
-| `truncate`         | couper à une longueur maximale                                                                                     |
-| `affix`            | ajouter un préfixe ou suffixe, ou en supprimer un                                                                 |
-| `sanitize`         | ne garder qu’une classe de caractères (alphanumérique, alpha, numérique, alphanumérique + espace) ou supprimer un ensemble de caractères |
-| `substring`        | prendre une partie de la valeur par début et longueur ou fin                                                      |
-| `regex_replace`    | remplacer ce qu’une expression régulière correspond                                                              |
-| `regex_extract`    | garder ce qu’une expression régulière capture                                                                     |
-| `value_map`        | mapper des valeurs vers d’autres valeurs (optionnellement insensible à la casse, avec une valeur par défaut)       |
-| `date_format`      | reformater une date (l’entrée doit être la date ISO que DocBits stocke dans `value`)                              |
-| `number_format`    | reformater un nombre                                                                                               |
-| `default`          | définir une valeur uniquement lorsque le champ est vide                                                           |
-| `set_value`        | définir une valeur fixe, quel que soit le contenu du champ                                                        |
-| `clear`            | vider le champ                                                                                                     |
-
-Actions pour la portée **tableau** (elles agissent sur les lignes, pas sur les valeurs, et ne peuvent pas être mélangées avec les actions ci-dessus) :
-
-| Action       | Effet                                                                                                                             |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| `clear_rows` | supprimer toutes les lignes du tableau                                                                                           |
-| `add_row`    | ajouter une ligne à la fin ou au début ; chaque colonne reçoit soit une valeur fixe soit une valeur lue depuis l’en-tête (`header.<field>`) ou le document (`doc.<attribute>`) |
+| Besoin | Règle |
+| --- | --- |
+| Un fournisseur imprime le numéro de facture sans le préfixe `INV-` attendu par notre ERP | Champ d'en-tête *Invoice Number*, uniquement pour ce fournisseur : Trim → UPPERCASE → Affix : ajouter le préfixe `INV-` |
+| Des fournisseurs envoient des codes d'unité allemands (`STK`, `Std`), l'ERP attend des codes UN/ECE (`PCE`, `HUR`) | Colonne de tableau *UNIT* : Map values `STK → PCE`, `KG → KGM`, `Std → HUR` |
+| Les numéros d'article arrivent avec un préfixe tel que `Art.-Nr. 4711` | Colonne de tableau *ITEM_NUMBER* : Affix : supprimer le préfixe `Art.-Nr. ` |
+| Les numéros d'identification fiscale contiennent des espaces et des points | Champ d'en-tête *Supplier Tax ID* : Sanitise, ne garder que l'alphanumérique |
+| Un fournisseur est rapproché sur le total, pas sur les lignes | Lignes de tableau : Clear all rows → Add a row avec le montant net |
+| Tous les documents de certains fournisseurs appartiennent à une sous-organisation | Routing : définir la sous-organisation lorsque *Supplier ID is one of …* |
+| Les dates doivent être écrites dans un format fixe dans un champ de texte libre | Champ d'en-tête : Reformat date `%d.%m.%Y` |
 
 {% hint style="info" %}
-`substring`, `regex_replace` et `regex_extract` modifient une valeur à nouveau lorsqu’elles s’exécutent sur une valeur déjà transformée. Combinez-les avec **Exécuter une fois**, ou écrivez l’expression régulière de façon qu’une deuxième exécution n’ait plus rien à changer.
+Tant que la fonctionnalité est en bêta, les paramètres décrits ci-dessous n'apparaissent que si la page de paramètres **Document Types** est ouverte avec `?beta=true` ajouté à l'adresse.
 {% endhint %}
 
-## Quand les règles s’exécutent
+## Activer les règles de transformation
 
-* Pendant le traitement, après l’extraction et avant la validation, les scripts et la correspondance des bons de commande.
-* À **chaque enregistrement** du document dans lequel les données extraites ont changé. Les règles sans **Exécuter une fois** sont appliquées à nouveau à chaque enregistrement ; parce que chaque action sauf les trois ci-dessus est idempotente, une valeur déjà sous la forme cible reste telle quelle.
+Les règles de transformation sont activées **par type de document** par un **administrateur de l'organisation**.
 
-## Règles de transformation et correspondance des bons de commande
+1. Allez dans **Settings → Global Settings → Document Types**.
+2. Cliquez sur l'icône **settings** (engrenage) de la carte du type de document.
+3. Ouvrez **Transformation Rules** et activez le commutateur. Cliquez sur **Manage transformation rules** pour ouvrir la liste.
 
-Les règles de tableau et de colonne modifient ce que le moteur de correspondance des BC voit :
+<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Le commutateur Transformation Rules"><figcaption><p>Le commutateur Transformation Rules dans les paramètres supplémentaires d'un type de document</p></figcaption></figure>
 
-* Une règle de tableau qui **reconstruit** les lignes (par exemple vider toutes les lignes et ajouter une ligne totale) conserve une correspondance de bon de commande existante tant qu’elle produit **les mêmes lignes à nouveau** — les valeurs sont comparées par leur sens, donc `1.0` et `1.00` sont la même ligne. Les lignes gardent leur identité et la correspondance survit à chaque enregistrement.
-* Si une règle **remplace ou supprime des lignes qui étaient appariées**, la correspondance ne peut pas être conservée. Le document enregistre alors quelle règle l’a supprimée, l’écran de correspondance des bons de commande affiche cela comme raison (« _La correspondance du BC n’a pas pu être enregistrée : la règle de transformation "…" a reconstruit le tableau_ ») et les administrateurs reçoivent un lien vers la règle. L’**historique des correspondances** du document affiche une étape _Règles de transformation_ avant la première étape de correspondance avec les règles qui ont été exécutées.
-* Le nombre de lignes après les règles est ce que comptent les [conditions d’activation](more-settings/purchase-order/purchase-order-matching-rules.md#activation-conditions) des règles de correspondance. Une règle qui condense une facture en **une** ligne n’a de sens qu’avec une règle de correspondance sur total active pour les documents à une ligne (`[[count(table_lines)]] >= 1`).
+La carte du type de document affiche désormais un lien **Transformation Rules**, ainsi qu'un lien **Logs** pour les journaux d'exécution.
+
+## La liste des règles
+
+La liste affiche toutes les règles du type de document dans l'ordre d'exécution, chacune avec un résumé en une phrase (« When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back. »), sa portée (**Header**, **Table**, **Column**, **Routing**), le nombre d'étapes, sa source et si **Log execution** est activé. Filtrez par portée et par **Active / Inactive**, recherchez, et utilisez le menu **⋮** pour dupliquer ou supprimer une règle.
+
+Les règles proviennent de trois sources, comme pour les règles de validation : les règles **System default** livrées avec DocBits (cliquez sur **Customize** pour obtenir une copie modifiable), les règles système **Customized** (**Reset to Default** rétablit l'original) et les règles **Custom** que vous avez créées.
+
+## Créer une règle
+
+Cliquez sur **New rule**. L'éditeur comporte trois étapes à gauche et un **Live preview** à droite. En haut, il résume la règle en une phrase pendant que vous la construisez.
+
+<figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Étape 1 de l'éditeur de règles de transformation"><figcaption><p>Étape 1 : ce que la règle modifie. La phrase en haut décrit la règle en langage clair</p></figcaption></figure>
+
+### Étape 1 — What & where
+
+**What does this rule change?** — la portée :
+
+| Portée | Modifie | Cible | S'exécute |
+| --- | --- | --- | --- |
+| **Header field** | une valeur par document | un champ d'en-tête, p. ex. *Invoice Number* | une fois par document |
+| **Table rows** | des lignes entières du tableau — les vider ou en ajouter | un tableau, p. ex. `INVOICE_TABLE` | une fois par document |
+| **Table column** | une valeur dans chaque ligne du tableau | un tableau et une colonne, p. ex. `INVOICE_TABLE` / `UNIT` | une fois par ligne |
+| **Routing** | un attribut du document — aujourd'hui la sous-organisation | *sub-organisation* | une fois par document |
+
+Saisissez ensuite le **Rule Name** (la **Rule key** en est générée), choisissez le **Target field** / **Table name** / **Target column**, et éventuellement une **Description**. **Log execution** écrit une entrée de journal à chaque application — utile pendant que vous ajustez une règle.
+
+### Étape 2 — When it runs
+
+* **Always** — la règle s'exécute sur chaque document du type.
+* **Only when…** — la règle ne s'exécute que si une condition est vraie, par exemple *Supplier ID is HP0000278*. Pour les règles **Table column**, la condition peut utiliser les colonnes de la ligne courante et est vérifiée ligne par ligne. Consultez [Rule Conditions (Applies when)](rule-conditions-applies-when.md) pour tous les champs, opérateurs et exemples.
+
+Deux options contrôlent la fréquence d'application de la règle :
+
+| Option | Effet |
+| --- | --- |
+| **Run only once per document** | Normalement, les règles s'exécutent de nouveau à chaque enregistrement. Avec cette option, la règle s'applique **au plus une fois** à un document, puis en a terminé avec lui. Un passage dans lequel les conditions ne correspondent pas ne compte pas, la règle peut donc encore s'appliquer lors d'un enregistrement ultérieur. Nécessaire pour les étapes qui modifieraient de nouveau la valeur à chaque enregistrement (voir [Idempotence](#execution-unique-et-idempotence)) et pour les règles de tableau qui ne doivent pas reconstruire les lignes une nouvelle fois. |
+| **Run after lookup population (before PO match)** | *(versions récentes)* Exécute la règle dans un passage supplémentaire une fois les données de recherche (par exemple les données de base fournisseur) renseignées, et avant le rapprochement des bons de commande. À utiliser lorsque la règle a besoin d'une valeur fournie par une recherche. La règle s'exécute aussi aux étapes habituelles ; une règle « run once » avec cette option attend ce passage au lieu de s'exécuter juste après l'extraction. |
+
+### Étape 3 — The pipeline
+
+<figure><img src="../../../../.gitbook/assets/transformation-rule-pipeline.png" alt="Le pipeline avec trois étapes et l'aperçu en direct"><figcaption><p>Read → Trim → Change case → Affix → Write, avec la valeur après chaque étape dans l'aperçu en direct</p></figcaption></figure>
+
+* **Read from** — **le champ (ou la colonne) lui-même**, ou **un autre champ**. Lire depuis un autre champ permet de renseigner un champ à partir d'un autre, par exemple copier le numéro de bon de commande depuis un champ de texte libre.
+* **Steps** — la valeur traverse les étapes **de haut en bas** ; la sortie d'une étape est l'entrée de la suivante. Ajoutez des étapes avec **+ Add a step**, réorganisez-les avec les flèches, supprimez-les avec **✕**. Chaque étape affiche à sa droite la valeur intermédiaire de l'échantillon.
+* **Write to** — la cible de l'étape 1. DocBits écrit la valeur stockée et actualise ensuite automatiquement la valeur affichée.
+
+### Les étapes
+
+<figure><img src="../../../../.gitbook/assets/transformation-step-menu.png" alt="Le menu des étapes"><figcaption><p>Toutes les étapes, regroupées par fonction</p></figcaption></figure>
+
+| Étape | Paramètres | Exemple entrée → sortie |
+| --- | --- | --- |
+| **Change case** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Trim** | côté (both, left, right) ; caractères (vide = espaces) | `  4711 ` → `4711` ; avec les caractères `0` et le côté left : `004711` → `4711` |
+| **Pad** | longueur, caractère de remplissage, côté | longueur 10, `0`, left : `4711` → `0000004711` |
+| **Truncate** | longueur maximale | 10 : `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
+| **Affix** | ajouter un préfixe, ajouter un suffixe, supprimer un préfixe, supprimer un suffixe ; texte | ajouter le préfixe `INV-` : `4711` → `INV-4711` ; supprimer le préfixe `Art.-Nr. ` : `Art.-Nr. 4711` → `4711` |
+| **Sanitise** | ne garder que (alphanumeric, letters, digits, alphanumeric + space) ou supprimer les caractères indiqués | garder alphanumeric : `DE 123.456.789` → `DE123456789` |
+| **Take a slice** | début, longueur ou fin | début 0, longueur 4 : `2026-09-29` → `2026` |
+| **Extract** | motif, groupe de capture | motif `PO[- ]?(\d+)`, groupe 1 : `Order PO-45001234` → `45001234` |
+| **Find & replace** | motif, remplacer par, nombre (0 = tout) | motif `\s+`, remplacer par ` ` : `ACME    GmbH` → `ACME GmbH` |
+| **Map values** | correspondances (de → vers), valeur en l'absence de correspondance (vide = conserver l'entrée), ignorer la casse | `STK → PCE` : `stk` → `PCE` |
+| **Reformat date** | motif de sortie (`%d.%m.%Y`, `%m/%d/%Y`, `%Y-%m-%d`, `%d %b %Y`) | `%d.%m.%Y` : `2026-09-29` → `29.09.2026` |
+| **Format number** | locale (de_DE, en_US, en_GB, fr_FR), décimales min. et max. | de_DE, 2 décimales : `1234.5` → `1.234,50` |
+| **Fix value** | la valeur | écrit toujours la valeur, quel que soit le contenu du champ |
+| **Clear** | – | vide le champ |
+
+Les règles **Table rows** utilisent deux autres étapes, qui travaillent sur des lignes et non sur des valeurs :
+
+| Étape | Effet |
+| --- | --- |
+| **Clear all rows** | supprime toutes les lignes extraites. Les lignes ajoutées par une étape ultérieure sont conservées. |
+| **Add a row** | ajoute une ligne **après la dernière ligne** ou **avant la première ligne**. Pour chaque colonne, choisissez **Value** (une valeur fixe) ou **Field** (la valeur d'un champ d'en-tête). Les colonnes que vous omettez restent vides. |
+
+{% hint style="info" %}
+**Reformat date** attend la date telle que DocBits la stocke en interne (`YYYY-MM-DD`). Appliquez-la au champ lui-même, pas à un texte qui contient déjà une date formatée.
+{% endhint %}
+
+### Live preview
+
+L'aperçu en direct exécute la règle sur un échantillon pendant que vous la construisez :
+
+* **Sample input** — saisissez une valeur telle qu'elle proviendrait du document. Pour les règles de tableau, indiquez le nombre de lignes extraites (**Sample table**) et les valeurs des champs que lisent les nouvelles lignes (**Row source values**).
+* **Condition values** — pour les règles avec condition, saisissez les valeurs des champs de la condition. L'aperçu affiche **Conditions match — rule runs** ou **Conditions do not match — rule is skipped**.
+* En dessous, vous voyez la valeur après **chaque étape** et le résultat final qui serait écrit (« invoice_id → INV-230620-03A », ou « unchanged »).
+
+Rien n'est enregistré pendant que vous utilisez l'aperçu. Cliquez sur **Save** pour enregistrer la règle.
 
 ## Exemples
 
-**Nettoyer le numéro de facture** — champ d’en-tête `invoice_id`, toujours : `trim` → `case` majuscule.
+### Nettoyer le numéro de facture d'un fournisseur
 
-**Définir par défaut la base de prix** — colonne de tableau `UNIT_PRICE_PER` du tableau des lignes, toujours : `default` `1`.
+Champ d'en-tête **Invoice Number** · uniquement lorsque *Supplier ID is HP0000278* · Trim → Change case UPPERCASE → Affix ajouter le préfixe `INV-`.
+Échantillon `  230620-03a ` → `INV-230620-03A`. Voir la capture d'écran du pipeline ci-dessus.
 
-**Mapper les codes unités d’un fournisseur** — colonne de tableau `UNIT` du tableau des lignes, seulement lorsque `header.supplier_id` est `10040` : `value_map` `{ "STK": "PCE", "KG": "KGM" }`.
+### Mapper les codes d'unité
 
-**Une ligne totale pour un fournisseur apparié sur le total** — portée tableau sur le tableau des lignes, seulement lorsque `header.supplier_id` est `20723` : `clear_rows`, puis `add_row` avec `POSITION` = `001`, `UNIT_PRICE` = `1.0`, `QUANTITY` = `header.total_net_amount`, `NET_AMOUNT` = `header.total_net_amount`. À associer avec une règle de correspondance sur total dont la condition d’activation accepte un document à une ligne.
+Colonne de tableau **INVOICE_TABLE / UNIT** · toujours · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** activé, valeur sans correspondance vide (conserver l'entrée).
 
-**Diriger un fournisseur vers une sous-organisation** — attribut du document `sub_org_id`, seulement lorsque `header.supplier_id` est l’un de `[…]` : `set_value` `<id de la sous-organisation>`.
+<figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Une règle de colonne de tableau avec Map values"><figcaption><p>Map values sur la colonne UNIT : <code>stk</code> devient <code>PCE</code></p></figcaption></figure>
+
+### Une ligne de total pour un fournisseur rapproché sur le total
+
+Table rows **INVOICE_TABLE** · uniquement lorsque *Supplier ID is HP0000278* · Clear all rows → Add a row avec `POSITION` = valeur `001`, `QUANTITY` = valeur `1`, `NET_AMOUNT` = champ *Total Net Amount*.
+
+<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Une règle Table rows : supprimer toutes les lignes, puis ajouter une ligne"><figcaption><p>Trois lignes extraites sont remplacées par une ligne portant le montant net</p></figcaption></figure>
+
+L'ordre est important : **Clear all rows** doit venir **avant** **Add a row**. L'éditeur vous avertit dans le cas contraire (« Clear all rows runs after Add a row … »), et il vous avertit aussi si une étape **Add a row** n'est pas précédée de **Clear all rows**, car la règle ajouterait alors une nouvelle copie de la ligne à chaque enregistrement. Associez cette règle à une règle de PO matching sur le total, active pour les documents à une seule ligne.
+
+### Autres exemples
+
+| Objectif | Portée | Condition | Étapes |
+| --- | --- | --- | --- |
+| Supprimer les espaces et les points de l'identifiant fiscal | Header *Supplier Tax ID* | toujours | Sanitise : keep alphanumeric |
+| Supprimer le préfixe d'article | Colonne *ITEM_NUMBER* | toujours | Affix : strip prefix `Art.-Nr. ` |
+| Numéros de fournisseur à 10 chiffres | Header *Supplier ID* | toujours | Trim → Pad longueur 10 avec `0`, left |
+| Extraire le numéro de bon de commande d'un texte de référence | Header *Purchase Order*, lu depuis un autre champ | uniquement lorsque *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, groupe 1 |
+| Toujours utiliser une seule devise pour un fournisseur | Header *Currency* | uniquement lorsque *Supplier ID is 10040* | Fix value `CHF` |
+| Supprimer une valeur mal extraite | Header *Discount Term* | uniquement lorsque *Supplier ID is 20723* | Clear |
+| Base de prix par unité | Colonne *UNIT_PRICE_PER* | uniquement lorsque *row.UNIT_PRICE_PER is empty* | Fix value `1` |
+| Router des fournisseurs vers une sous-organisation | Routing | *Supplier ID is one of* `10040, 10041` | affecter une sous-organisation fixe |
+
+## Règles de routage (sous-organisation)
+
+Une règle **Routing** ne modifie pas un champ. Elle appose un attribut sur le document lorsque ses conditions correspondent — aujourd'hui la **sous-organisation**. Choisissez **Assign a fixed sub-organisation** et sélectionnez-la dans la liste, ou **Map from a field** pour associer les valeurs d'un champ extrait à des sous-organisations. Le document appartient alors à cette sous-organisation, avec ses utilisateurs, ses autorisations et ses paramètres. Une valeur qui n'est pas une sous-organisation valide n'est jamais écrite.
+
+## Quand les règles s'exécutent
+
+* **Pendant le traitement**, après l'extraction et avant la recherche dans les données de base, la validation, les scripts et le rapprochement des bons de commande.
+* À **chaque enregistrement** du document dans lequel les données extraites ont changé. Les règles sans **Run only once per document** sont appliquées de nouveau à chaque fois.
+* Au sein d'un même passage, les règles s'exécutent portée par portée dans cet ordre : **Header → Routing → Table rows → Table column**. Une règle de colonne s'applique donc aussi aux lignes qu'une règle de tableau vient d'ajouter. Au sein d'une portée, les règles s'exécutent par priorité, puis par clé.
+
+### Exécution unique et idempotence
+
+La plupart des étapes donnent le même résultat lorsqu'elles s'exécutent sur leur propre sortie — supprimer les espaces d'une valeur déjà nettoyée, mapper de nouveau `PCE`, ajouter un préfixe déjà présent. Ces règles peuvent s'exécuter sans risque à chaque enregistrement.
+
+**Take a slice**, **Extract** et **Find & replace** sont différentes : exécutées de nouveau sur leur propre résultat, elles continuent de le modifier (une tranche prend les quatre premiers caractères des quatre premiers caractères …). DocBits ne vous permet donc pas d'enregistrer une règle qui applique ces étapes à son propre champ cible. Soit :
+
+* activez **Run only once per document**, soit
+* **Read from another field**, afin que l'entrée reste inchangée.
+
+## Règles de transformation et rapprochement des bons de commande
+
+Les règles de tableau et de colonne modifient ce que voit le moteur de PO matching :
+
+* Une règle de tableau qui **reconstruit** des lignes (par exemple supprimer toutes les lignes et ajouter une ligne de total) conserve un rapprochement de bon de commande existant tant qu'elle produit **à nouveau les mêmes lignes** — les valeurs sont comparées selon leur sens, donc `1.0` et `1.00` sont la même ligne. Les lignes gardent leur identité et le rapprochement survit à chaque enregistrement.
+* Si une règle **remplace ou supprime des lignes qui avaient été rapprochées**, le rapprochement ne peut pas être conservé. Le document enregistre alors quelle règle l'a supprimé, l'écran Purchase Order Matching l'affiche comme motif (« _The PO match could not be saved: the transformation rule "…" rebuilt the table_ ») et les administrateurs obtiennent un lien vers la règle. L'**historique de rapprochement** du document affiche une étape _Transformation rules_ avant la première étape de rapprochement, avec les règles exécutées.
+* Le nombre de lignes après application des règles est ce que comptent les [conditions d'activation](more-settings/purchase-order/purchase-order-matching-rules.md#conditions-dactivation) des règles de rapprochement. Une règle qui condense une facture en **une seule** ligne n'a de sens qu'associée à une règle de rapprochement sur le total active pour les documents à une ligne (`[[count(table_lines)]] >= 1`).
+
+## Logs
+
+Avec **Log execution** activé, chaque application de la règle est écrite dans **Document Types → (type de document) → Logs**, avec le résultat (applied, no change, skipped), le document et — pour les règles ignorées — la trace de condition qui explique pourquoi. Voir [Lire la trace de condition](rule-conditions-applies-when.md#lire-la-trace-de-la-condition-dans-les-journaux).
+
+## Bonnes pratiques
+
+* **Un seul objectif par règle.** « Nettoyer le numéro de facture » et « Mapper les codes d'unité » sont deux règles, pas une.
+* **Construisez avec l'aperçu en direct**, en utilisant de vraies valeurs copiées depuis des documents, y compris les cas inhabituels (espaces, minuscules, préfixes).
+* **Limitez les règles propres à un fournisseur avec une condition** au lieu de les laisser s'exécuter sur tout.
+* **Privilégiez les étapes idempotentes.** N'utilisez l'exécution unique que là où vous en avez besoin.
+* **Surveillez le rapprochement des bons de commande** après l'ajout de règles de tableau ; vérifiez l'historique de rapprochement de quelques documents.
+* **Désactivez Log execution** une fois que la règle fonctionne.
 
 ## Dépannage
 
-| Symptôme                                                  | À vérifier                                                                                                                                                                               |
-| --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| La règle n’a rien changé                                  | Est-elle active ? Le type de document correspond-il ? La condition est-elle vraie pour ce document (comparez la valeur exacte, espaces inclus) ? Une règle avec **Exécuter une fois** a-t-elle déjà été appliquée au document ? |
-| La valeur change à nouveau à chaque enregistrement       | Le pipeline contient `substring`, `regex_replace` ou `regex_extract`. Activez **Exécuter une fois** ou rendez l’expression idempotente.                                                  |
-| La correspondance du bon de commande est perdue après enregistrement | Une règle de tableau a remplacé les lignes appariées. La raison sur le document nomme la règle ; faites en sorte que la règle reproduise les mêmes lignes, ou activez **Exécuter une fois**. |
-| Une règle de correspondance ne s’exécute jamais après la transformation | La règle a changé le nombre de lignes ; ajustez la condition d’activation de la règle de correspondance.                                                                                  |
+| Symptôme | Points à vérifier |
+| --- | --- |
+| La règle n'a rien modifié | Est-elle active, et la fonctionnalité est-elle activée pour le type de document ? La condition est-elle vraie pour ce document (valeur exacte, espaces et casse compris) ? Une règle **run once** a-t-elle déjà été appliquée au document ? Consultez la trace dans le journal. |
+| La valeur change de nouveau à chaque enregistrement | Le pipeline contient Take a slice, Extract ou Find & replace. Activez **Run only once per document**, ou lisez depuis un autre champ. |
+| Un tableau reçoit une ligne de plus à chaque enregistrement | Une étape **Add a row** sans **Clear all rows** avant elle. Ajoutez d'abord l'étape de suppression, ou activez l'exécution unique. |
+| Le rapprochement du bon de commande est perdu après l'enregistrement | Une règle de tableau a remplacé les lignes rapprochées. Le motif indiqué sur le document nomme la règle ; faites en sorte que la règle reproduise les mêmes lignes, ou réglez-la sur l'exécution unique. |
+| Une règle de rapprochement ne s'exécute jamais après la transformation | La règle a modifié le nombre de lignes ; adaptez la condition d'activation de la règle de rapprochement. |
+| La règle a besoin d'une valeur issue des données de base fournisseur, mais elle est encore vide | Activez **Run after lookup population (before PO match)**. |
+| Une date n'est pas reformatée | Reformat date attend `YYYY-MM-DD` en entrée. |
+
+## Pages associées
+
+* [Rule Conditions (Applies when)](rule-conditions-applies-when.md) — les conditions en détail
+* [Custom Validation Rules](custom-validation-rules.md) — vérifier les valeurs transformées
+* [Layout Selection Rules](layout-manager/layout-selection-rules.md) — choisir la mise en page utilisée par un document
+* [Purchase Order Matching Rules](more-settings/purchase-order/purchase-order-matching-rules.md)

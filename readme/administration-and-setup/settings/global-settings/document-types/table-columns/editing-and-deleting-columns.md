@@ -1,73 +1,46 @@
 # Modifier et supprimer des colonnes
 
-La modification et la suppression de colonnes dans une table de base de données sont des opérations importantes qui doivent être effectuées avec soin afin de garantir l'intégrité des données et de prendre en compte les impacts potentiels sur la logique applicative et les rapports.
+Tout, à l'exception du titre, se modifie directement dans la liste ; il n'y a pas de boîte de dialogue de modification.
 
-<figure><img src="../../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+**Où :** Settings → Global Settings → Document Types → Table Columns
 
-**Voici les étapes détaillées pour les deux actions :**
+## Activer ou désactiver une option
 
-## Modifier une colonne :
+Cochez ou décochez la case dans la ligne. La modification est enregistrée immédiatement (*Successfully saved*).
 
-<figure><img src="../../../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+| Option | Activée | Désactivée |
+|---|---|---|
+| **Is Required** | L'approbation est bloquée tant que la colonne est vide dans une ligne quelconque ; l'écran de validation marque la cellule. | Les cellules vides sont autorisées. |
+| **Read Only** | La valeur est affichée mais ne peut pas être écrasée. À utiliser pour les valeurs provenant d'une recherche ou d'un script. | Les utilisateurs peuvent modifier la cellule. |
+| **Hidden** | La colonne disparaît de l'écran de validation et de l'export. Ses données sont conservées. | La colonne est affichée et exportée. |
+| **Use AI** | L'extraction de tableau par IA renseigne cette colonne, y compris pour les fournisseurs disposant de règles entraînées. | La colonne est renseignée par les règles entraînées, ou par l'IA lorsqu'aucune règle n'existe. |
 
-**Modifier le titre :**
+{% hint style="info" %}
+Les options prennent effet sur les documents importés ou redémarrés **après** la modification. Les documents ouverts conservent leur tableau actuel jusqu'à leur redémarrage.
+{% endhint %}
 
-* Cliquez sur le titre de la colonne que vous souhaitez modifier ; une fenêtre s'ouvre et vous pouvez modifier le titre de la colonne.
+## Renommer le titre
 
-**Analyse des besoins :**
+Cliquez sur l'icône de traduction dans la colonne *Actions* (*Update translation key*), saisissez le nouveau libellé et confirmez. L'icône d'information à côté indique quel libellé est actuellement en vigueur et d'où il provient. Seul le libellé change ; le *Column name* technique reste le même, de sorte que les scripts, les mappings d'export et les règles entraînées continuent de fonctionner.
 
-* Identifiez la raison de la modification de la colonne. Vous devrez peut-être changer le type de données, ajouter ou supprimer des contraintes, ou modifier le nom de la colonne.
+## Modifier le type ou la table
 
-**Examen de l'impact :**
+Impossible. Masquez la colonne (ou supprimez-la s'il s'agit de la vôtre) et ajoutez-en une nouvelle avec le bon type.
 
-* Avant d'effectuer des modifications, examinez la manière dont elles affecteront les données existantes et la logique applicative. Par exemple, des changements de type de données peuvent entraîner la conversion ou la perte de données.
+## Supprimer une colonne
 
-**Sauvegarde de la base de données :**
+L'action de suppression n'est proposée que pour les colonnes créées par votre organisation. Les colonnes par défaut ne peuvent pas être supprimées, masquez-les.
 
-* Sauvegardez votre base de données afin de disposer d'une version fonctionnelle vers laquelle revenir en cas de problème.
+1. Ouvrez le menu à trois points dans la colonne *Actions* et choisissez **Delete**. L'entrée est absente pour les colonnes par défaut.
+2. Confirmez.
 
-**Exécution de l'instruction SQL :**
+Ce qui se passe :
 
-* Utilisez l'instruction SQL ALTER TABLE pour apporter les modifications souhaitées à la colonne. La syntaxe exacte dépend de la plateforme de base de données que vous utilisez et des modifications que vous souhaitez effectuer.
+* La colonne est retirée de la configuration. Les documents traités **à partir de maintenant** ne l'ont plus.
+* Les documents déjà extraits conservent la colonne et ses valeurs jusqu'à leur redémarrage.
+* Les règles entraînées qui mappaient cette colonne continuent de fonctionner pour les autres colonnes ; le mapping de la colonne supprimée est ignoré.
+* Si la colonne est référencée dans un mapping d'export ou dans un script, supprimez cette référence ; sinon l'export ou le script échoue avec une erreur de colonne manquante.
 
-**Migration des données :**
+## Annuler une suppression
 
-* Si vous modifiez le type de données d'une colonne, vous devrez peut-être effectuer une migration de données pour convertir les données existantes au nouveau format.
-
-**Tests et validation :**
-
-* Après avoir modifié la colonne, vérifiez minutieusement que votre application fonctionne correctement et que les données sont stockées et récupérées correctement.
-
-## Supprimer une colonne :
-
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 13.39.00.png" alt=""><figcaption></figcaption></figure>
-
-**Analyse des besoins :**
-
-* Assurez-vous de bien comprendre les raisons de la suppression de la colonne. La colonne n'est-elle plus pertinente ou existe-t-il d'autres moyens de la consolider ?
-
-**Examen de l'impact :**
-
-* Analysez la manière dont la suppression de la colonne affectera les données existantes, la logique applicative et les rapports. Cela peut entraîner une perte de données ou affecter les requêtes et les rapports.
-
-**Sauvegarde de la base de données :**
-
-* Effectuez une sauvegarde complète de votre base de données afin de pouvoir la restaurer en cas de problème inattendu.
-
-**Exécution de l'instruction SQL :**
-
-* Utilisez l'instruction SQL ALTER TABLE pour supprimer la colonne. La syntaxe exacte varie selon la plateforme de base de données.
-
-**Migration des données (si nécessaire) :**
-
-* Si la colonne que vous supprimez contient des données importantes, vous devrez peut-être effectuer une migration de données pour déplacer ces données vers un autre emplacement ou les supprimer.
-
-**Ajustement de la logique applicative :**
-
-* Assurez-vous que la logique de votre application est ajustée en conséquence afin qu'elle n'accède plus à la colonne supprimée.
-
-**Tests et validation :**
-
-* Vérifiez minutieusement que votre application fonctionne correctement et que toutes les fonctions de données et de reporting fonctionnent comme prévu.
-
-Lors de la modification ou de la suppression de colonnes, il est essentiel de bien comprendre l'impact de ces actions et de prendre les précautions appropriées pour préserver l'intégrité de votre base de données et garantir le bon fonctionnement de votre application.
+Une colonne supprimée ne peut pas être restaurée depuis la liste. Ajoutez-la à nouveau avec le même titre : le nom technique est dérivé du titre, donc une colonne créée avec le même titre reçoit le même *Column name* et les mappings existants correspondent de nouveau.

@@ -1,46 +1,33 @@
 # Bonnes pratiques
 
-## Les bonnes pratiques d'organisation des données dans les tables permettent de garder la structure de la base de données claire, d'améliorer l'intégrité des données et d'optimiser les performances.
+## Conserver les colonnes par défaut pour les montants et les quantités
 
-**Voici quelques bonnes pratiques :**
+Les contrôles des lignes (*quantité × prix unitaire = total de la ligne*) et le PO matching recherchent les colonnes par défaut `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. Si vous créez vos propres colonnes pour ces valeurs, les contrôles ne s'exécutent pas et le PO matching signale des colonnes obligatoires manquantes. Renommez le *titre* si la formulation ne vous convient pas ; conservez la colonne.
 
+## Masquer plutôt que supprimer
 
+Les colonnes par défaut dont vous n'avez pas besoin sont masquées, non supprimées ; elles ne peuvent de toute façon pas être supprimées. Pour vos propres colonnes, le masquage est également le choix le plus sûr tant que vous ne savez pas si un script ou un mapping d'export fait encore référence à la colonne.
 
-**Utilisez des noms de colonnes explicites :**
+## Ne marquer comme obligatoire que ce qui bloque l'export
 
-* Choisissez des noms de colonnes clairs et descriptifs pour améliorer la lisibilité et la compréhension de la structure de votre base de données. Évitez les noms abrégés ou cryptiques.
-* Nommez les colonnes de manière à refléter fidèlement le contenu ou la signification des données qui y sont stockées. Cela facilite les requêtes et les rapports ultérieurs.
+Chaque colonne obligatoire doit être renseignée dans chaque ligne avant qu'un utilisateur puisse approuver le document. Utilisez cette option pour les valeurs que l'ERP rejette lorsqu'elles manquent (par exemple le centre de coûts dans un export comptable), et non pour des valeurs simplement utiles.
 
+## Utiliser *Read Only* pour les valeurs issues d'une recherche
 
+Les valeurs qu'un script ou une recherche dans les données de base écrit dans la table (description de l'article issue de la fiche article, code de taxe issu du fournisseur) doivent être en lecture seule, afin que les utilisateurs corrigent la source plutôt que la copie.
 
-**Choisissez des types de données appropriés :**
+## Utiliser l'IA par colonne, pas par fournisseur
 
-* Utilisez le plus petit type de données possible qui répond adéquatement aux besoins de vos données afin d'économiser de l'espace de stockage et d'améliorer les performances.
-* Tenez compte du type de données stockées et choisissez le type de données en conséquence. Par exemple : utilisez INTEGER pour les entiers, VARCHAR pour les chaînes de caractères et DATE pour les dates.
+Pour un fournisseur disposant de règles entraînées, la plupart des colonnes sont correctement extraites grâce à ces règles. Si une colonne n'est pas fiable (longues descriptions sur plusieurs lignes, remise parfois située à un autre endroit), activez *Use AI* uniquement sur cette colonne. Les règles gèrent le reste.
 
+## Nommer les colonnes pour l'ERP, pas pour le document
 
+Le *Column name* se retrouve dans les mappings d'export et dans les scripts. `COST_CENTRE` est plus facile à mapper que `KST` et ne change pas lorsqu'un fournisseur l'imprime différemment.
 
-**Comprendre les colonnes obligatoires :**
+## Tester sur un document redémarré
 
-* Marquez les colonnes comme obligatoires (NOT NULL) si elles sont essentielles au bon fonctionnement de votre application et que les valeurs NULL sont inacceptables.
-* Lorsque vous décidez de marquer une colonne comme obligatoire, assurez-vous que l'application peut gérer logiquement les valeurs NULL et que celles-ci ne provoqueront pas d'erreurs inattendues.
+Après une modification, redémarrez un document existant du type de document et ouvrez-le : la nouvelle colonne apparaît, la colonne masquée a disparu, les cellules obligatoires sont marquées. Ce n'est qu'ensuite qu'il faut déployer la modification auprès des utilisateurs.
 
+## Une table par structure de lignes
 
-
-**Utilisation de clés étrangères pour les relations :**
-
-* Si votre base de données comporte des relations entre les tables, utilisez des clés étrangères pour définir ces relations. Cela améliore l'intégrité des données et permet d'appliquer des contraintes d'intégrité référentielle.
-* Pensez à indexer les clés étrangères pour optimiser les performances des requêtes qui accèdent à ces relations.
-
-
-
-**Révisez et mettez à jour régulièrement :**
-
-* Révisez régulièrement la structure de la base de données pour vous assurer qu'elle répond aux besoins évolutifs de votre application. Effectuez des mises à jour selon les besoins afin d'améliorer l'efficacité et les performances de votre base de données.&#x20;
-* Pensez à tenir compte des retours des utilisateurs et des développeurs pour identifier et mettre en œuvre les domaines d'amélioration.
-
-
-
-En appliquant ces bonnes pratiques, vous pouvez créer une structure de base de données bien organisée et efficace qui répond aux besoins de votre application et fournit une base fiable pour le stockage, l'interrogation et la production de rapports sur vos données.
-
-
+Ne créez une seconde table que si un type de document comporte réellement deux tables indépendantes (par exemple des lignes d'articles et une table distincte de frais). Les tables vides supplémentaires apparaissent sur chaque document du type.

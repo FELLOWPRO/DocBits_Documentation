@@ -224,29 +224,29 @@ De nombreux scénarios réels nécessitent la combinaison de plusieurs modèles 
 ### Exemple 1 : Traitement complet des factures
 
 ```
-1. Modèle d'intégration d'API → Récupérer les tarifs actuels
-2. Modèle de transformation des données → Calculer les totaux
-3. Modèle de rapprochement de commandes → Valider par rapport à la commande
-4. Modèle de logique de décision → Router en fonction de l'écart
-5. Modèle de gestion des tâches → Créer des tâches d'approbation
+1. API Integration Pattern → Fetch current pricing
+2. Data Transformation Pattern → Calculate totals
+3. PO Matching Pattern → Validate against PO
+4. Decision Logic Pattern → Route based on variance
+5. Task Management Pattern → Create approval tasks
 ```
 
 ### Exemple 2 : Approbation de factures de montant élevé
 
 ```
-1. Modèle de transformation des données → Calculer les montants
-2. Modèle de logique de décision → Vérifier les seuils
-3. Modèle de gestion des tâches → Approbation à plusieurs niveaux
-4. Modèle d'intégration d'API → Notifier les systèmes externes
+1. Data Transformation Pattern → Calculate amounts
+2. Decision Logic Pattern → Check thresholds
+3. Task Management Pattern → Multi-level approval
+4. API Integration Pattern → Notify external systems
 ```
 
 ### Exemple 3 : Gestion des exceptions
 
 ```
-1. Modèle de rapprochement de commandes → Détecter les écarts
-2. Modèle de logique de décision → Classer la gravité de l'exception
-3. Modèle de gestion des tâches → Créer des tâches de révision
-4. Modèle de transformation des données → Calculer l'impact
+1. PO Matching Pattern → Detect variances
+2. Decision Logic Pattern → Classify exception severity
+3. Task Management Pattern → Create review tasks
+4. Data Transformation Pattern → Calculate impact
 ```
 
 ---
@@ -255,17 +255,17 @@ De nombreux scénarios réels nécessitent la combinaison de plusieurs modèles 
 
 Chaque modèle contient ces sections standardisées :
 
-1. **Vue d'ensemble** – Ce que fait le modèle
-2. **Quand l'utiliser** – Cas d'usage appropriés
-3. **Exemple complet** – Scénario réel
-4. **Étape par étape** – Instructions de mise en œuvre
-5. **Configuration** – Gabarits de configuration des cartes
-6. **Diagramme de workflow** – Représentation visuelle
-7. **Variantes avancées** – Mises en œuvre alternatives
-8. **Gestion des erreurs** – Problèmes courants et solutions
-9. **Liste de vérification de test** – Étapes de validation
-10. **Modèles connexes** – Modèles complémentaires
-11. **Guides connexes** – Documentation de référence
+1. **Vue d'ensemble** - Ce que fait le modèle
+2. **Quand l'utiliser** - Cas d'usage appropriés
+3. **Exemple complet** - Scénario réel
+4. **Étape par étape** - Instructions de mise en œuvre
+5. **Configuration** - Gabarits de configuration des cartes
+6. **Diagramme de workflow** - Représentation visuelle
+7. **Variantes avancées** - Mises en œuvre alternatives
+8. **Gestion des erreurs** - Problèmes courants et solutions
+9. **Liste de vérification de test** - Étapes de validation
+10. **Modèles connexes** - Modèles complémentaires
+11. **Guides connexes** - Documentation de référence
 
 ---
 
@@ -277,6 +277,12 @@ Chaque modèle contient ces sections standardisées :
 - [Index complet des guides de workflow](../README.md)
 - [Guides de cartes individuels](../then/action/)
 - [Référence des cartes de condition](../and/condition-cards-complete-guide.md)
+- [Carte des liens du workflow](../../../../WORKFLOW_LINKING_MAP.md)
+
+**Ressources complémentaires :**
+- [Guide de référence rapide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- [Notes de version d'octobre 2025](../changelog/2025-10-october.md)
+- [Référence du versionnage des cartes](../../../docs/card_version.md)
 
 **Contact :**
 - Retours sur les modèles : docs@docbits.com
@@ -285,12 +291,71 @@ Chaque modèle contient ces sections standardisées :
 
 ---
 
+## Statistiques des modèles
+
+| Indicateur | Valeur |
+|--------|-------|
+| **Nombre total de modèles** | 5 |
+| **Nombre total de cartes couvertes** | 30+ |
+| **Documentation combinée** | ~1 200 lignes |
+| **Scénarios d'exemple** | 25+ |
+| **Gabarits de configuration** | 15+ |
+| **Diagrammes de workflow** | 5 diagrammes complets |
+| **Références croisées** | 87+ liens internes |
+
+---
+
+## Contribuer aux modèles
+
+Vous avez un modèle de workflow qui pourrait profiter à d'autres ?
+
+**Consignes de contribution :**
+
+1. **Documentez votre workflow**
+   - Scénario métier clair
+   - Mise en œuvre étape par étape
+   - Exemples de configuration fonctionnels
+   - Résultats de tests en conditions réelles
+
+2. **Suivez le gabarit de modèle**
+   - Utilisez la structure de sections standard
+   - Incluez tous les éléments requis
+   - Fournissez des diagrammes/exemples
+   - Ajoutez un guide de dépannage
+
+3. **Soumettez pour relecture**
+   - Envoyez un e-mail à : docs@docbits.com
+   - Joignez : description du modèle, cas d'usage, guide de mise en œuvre
+   - Nous l'examinerons et l'ajouterons éventuellement à la documentation officielle
+
+**Avantages :**
+- Aidez les autres utilisateurs de DocBits
+- Soyez reconnu dans la documentation
+- Améliorez la base de connaissances globale du produit
+- Recevez des retours sur votre mise en œuvre
+
+---
+
+## Journal des modifications
+
+### Version 1.0 (23 octobre 2025)
+- Première publication de 5 modèles de workflow complets
+- Ajout du modèle d'intégration d'API
+- Ajout du modèle de gestion des tâches
+- Ajout du modèle de rapprochement de commandes (PO Matching)
+- Ajout du modèle de logique de décision
+- Ajout du modèle de transformation des données
+- Mise en place des liens de références croisées (87 liens)
+- Création de l'aide au choix du modèle
+
+---
+
 ## Prochaines étapes
 
 **Nouveau dans les modèles de workflow ?**
-1. Commencez par le [Modèle de gestion des tâches](task-management-pattern.md) – le plus facile à comprendre
-2. Consultez le [Modèle de logique de décision](decision-logic-pattern.md) – fondamental pour tous les workflows
-3. Explorez le [Modèle d'intégration d'API](api-integration-pattern.md) – besoin d'intégration fréquent
+1. Commencez par le [Modèle de gestion des tâches](task-management-pattern.md) - le plus facile à comprendre
+2. Consultez le [Modèle de logique de décision](decision-logic-pattern.md) - fondamental pour tous les workflows
+3. Explorez le [Modèle d'intégration d'API](api-integration-pattern.md) - besoin d'intégration fréquent
 
 **Prêt à mettre en œuvre ?**
 1. Choisissez votre modèle dans la liste ci-dessus
@@ -300,6 +365,11 @@ Chaque modèle contient ces sections standardisées :
 5. Testez avec des documents d'exemple
 6. Passez en production
 7. Surveillez et optimisez
+
+**Besoin d'aide supplémentaire ?**
+- Consultez la [Vue d'ensemble de la documentation des workflows](../README.md)
+- Consultez le [Guide de référence rapide](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- Contactez l'équipe de support
 
 ---
 

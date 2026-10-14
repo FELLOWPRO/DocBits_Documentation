@@ -1,12 +1,12 @@
 # Configuration ZUGFeRD
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
-Tutoriel DocBits E-Invoice : Traiter XRechnung / ZUGFeRD (Factur-X), valider les données et automatiser les workflows
+Tutoriel DocBits E-Invoice : traiter XRechnung / ZUGFeRD (Factur-X), valider les données et automatiser les workflows
 {% endembed %}
 
-## **Versions supportées de ZUGFeRD**
+## **Versions prises en charge de ZUGFeRD**
 
-DocBits supporte toutes les versions majeures de ZUGFeRD, notamment :
+DocBits prend en charge toutes les versions majeures de ZUGFeRD, notamment :
 
 * **1.0**
 * **2.0**
@@ -15,68 +15,60 @@ DocBits supporte toutes les versions majeures de ZUGFeRD, notamment :
 * **2.3** (conforme à FACTUR-X 1.07.2)
 * **2.3.2**
 
-#### Activation et modification standard
+#### Activation et modification du standard
 
-Le standard ZUGFeRD est toujours actif par défaut, mais vous pouvez y apporter des modifications si nécessaire.
+Le standard ZUGFeRD est toujours actif par défaut, mais vous pouvez le modifier si nécessaire.
 
 ### **Étapes pour modifier les paramètres ZUGFeRD :**
 
-1. Naviguez vers **Paramètres → Paramètres globaux → Types de documents → Facture**.
-2. Cliquez sur **E-Doc**.
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_1.png" alt=""><figcaption></figcaption></figure>
-3. Une liste de tous les e-docs disponibles apparaîtra.
-4. Localisez la version **ZUGFeRD** que vous souhaitez modifier.
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_2.png" alt=""><figcaption></figcaption></figure>
+1. Accédez à **Settings → Global Settings → Document Types → Invoice**.
+2. Cliquez sur **E-Doc**.\\
+3. Une liste de tous les e-docs disponibles apparaît.
+4. Repérez la version de **ZUGFeRD** que vous souhaitez modifier.\\
 
 ## **Configuration de la transformation et du chemin XML :**
 
-Dans les **paramètres de transformation**, vous pouvez définir le chemin pour localiser des informations spécifiques dans le fichier XML et les enregistrer dans une nouvelle structure, ce qui facilite l'accès aux données.
-<mark style="color:red;">**Remarque**</mark> : Si vous utilisez cette fonctionnalité, vous devez utiliser les nouveaux chemins XML créés, et non les chemins XML originaux, dans la **Prévisualisation** et le **Chemin d'extraction**.
+Dans les **paramètres de transformation**, vous pouvez définir le chemin permettant de localiser des informations spécifiques dans le fichier XML et de les enregistrer dans une nouvelle structure, ce qui facilite l'accès aux données.\
+<mark style="color:red;">**Remarque**</mark> : si vous utilisez cette fonctionnalité, vous devez utiliser les nouveaux chemins XML créés, et non les chemins XML d'origine, dans **Preview** et **Extraction Path**.
 
 ### **Étapes pour modifier le fichier de transformation :**
 
-1. Ouvrez la **Transformation**.
-2. Créez un nouveau brouillon en cliquant sur l'**icône crayon**.
-3. Sélectionnez le brouillon nouvellement créé.
-4. Créez un nouveau champ ou modifiez-en un existant.
+1. Ouvrez **Transformation**.
+2. Créez un nouveau brouillon en cliquant sur l'**icône de crayon**.
+3. Sélectionnez le brouillon que vous venez de créer.
+4. Créez un nouveau champ ou modifiez un champ existant.
 5. Définissez le chemin souhaité pour l'extraction des données.
-6. Cliquez sur **Enregistrer**.
+6. Cliquez sur **Save**.
 
 ### Remarques importantes :
 
-* Le **fichier de prévisualisation** est utilisé uniquement pour **FACTUR-X** et non pour **ZUGFeRD**. ZUGFeRD utilisera le **PDF** original.
+* Le **fichier d'aperçu** est utilisé uniquement pour **FACTUR-X** et non pour **ZUGFeRD**. ZUGFeRD utilisera le **PDF** d'origine.
 
-## Configuration du PDF de prévisualisation
+## Configuration du PDF d'aperçu
 
-La **Configuration du PDF de prévisualisation** est utilisée pour générer une version du document lisible par l'utilisateur. Vous pouvez la personnaliser avec du HTML pour qu'elle corresponde à vos besoins.
+La **configuration du PDF d'aperçu** sert à générer une version lisible du document. Vous pouvez la personnaliser avec du HTML selon vos besoins.
 
-### **Étapes pour modifier le fichier de prévisualisation :**
+### **Étapes pour modifier le fichier d'aperçu :**
 
-1. Ouvrez la **Prévisualisation**.
-2. Créez un nouveau brouillon en cliquant sur l'**icône crayon**.
-3. Sélectionnez le brouillon nouvellement créé.
-4. Créez un nouveau champ ou modifiez-en un existant.
+1. Ouvrez **Preview**.
+2. Créez un nouveau brouillon en cliquant sur l'**icône de crayon**.
+3. Sélectionnez le brouillon que vous venez de créer.
+4. Créez un nouveau champ ou modifiez un champ existant.
 5. Définissez le chemin souhaité pour l'extraction des données.
-6. Cliquez sur **Enregistrer**.
+6. Cliquez sur **Save**.
 
 ## Configuration des chemins d'extraction
 
-La **Configuration des chemins d'extraction** est utilisée pour extraire des données et remplir des champs dans l'**écran de validation**, tels que le tableau des factures ou les champs configurés dans la mise en page de la facture.
+La **configuration des chemins d'extraction** sert à extraire des données et à renseigner des champs dans l'**écran de validation**, tels que le tableau de la facture ou les champs configurés dans la mise en page de la facture.
 
 ### **Étapes pour modifier les** **chemins d'extraction** :
 
-1. Ouvrez les **Chemins d'extraction**.
-2. Créez un nouveau brouillon en cliquant sur l'**icône crayon**.
-3. Sélectionnez le brouillon nouvellement créé.
-4. Créez un nouveau champ ou modifiez-en un existant.
-5. Le côté gauche représente l'**ID de champ DocBits**, qui se trouve dans **Paramètres → Paramètres globaux → Types de documents → Facture → Champs**.
+1. Ouvrez **Extraction Paths**.
+2. Créez un nouveau brouillon en cliquant sur l'**icône de crayon**.
+3. Sélectionnez le brouillon que vous venez de créer.
+4. Créez un nouveau champ ou modifiez un champ existant.
+5. Le côté gauche représente l'**ID de champ DocBits**, que vous trouvez sous **Settings → Global Settings → Document Types → Invoice → Fields**.\\
+6. Le côté droit représente le **chemin vers le champ** créé dans la transformation.
+7. Cliquez sur **Save**.
 
-    <figure><img src="../../../../../.gitbook/assets/zugferd_3.png" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../../.gitbook/assets/zugferd_4.png" alt=""><figcaption></figcaption></figure>
-6. Le côté droit représente le **chemin vers le champ** créé dans la Transformation.
-7. Cliquez sur **Enregistrer**.
-
-En suivant ces étapes, vous pouvez garantir une extraction et une validation précises des données pour les factures ZUGFeRD.
+En suivant ces étapes, vous garantissez une extraction et une validation précises des données pour les factures ZUGFeRD.

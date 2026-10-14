@@ -25,7 +25,7 @@ Parallèlement au `INVOICE_TYPE_CODE` brut, la XSLT TRANSFORMATION par défaut �
 
 ### Ventilation des taxes (classification par tranches)
 
-Les blocs `ApplicableTradeTax` sont distribués sur trois tranches basées sur le taux (et non sur des index positionnels) : les champs au taux standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturent les taux ≥ 19 ; les champs au taux réduit (`*_2`) capturent 0 < taux < 19 ; les champs au taux zéro (`*_3`) capturent taux = 0. Voir [Ventilation des taxes ZUGFeRD](../README.md#tax-breakdown-tier-classified) pour la liste complète des champs.
+Les blocs `ApplicableTradeTax` sont distribués sur trois tranches basées sur le taux (et non sur des index positionnels) : les champs au taux standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturent les taux ≥ 19 ; les champs au taux réduit (`*_2`) capturent 0 < taux < 19 ; les champs au taux zéro (`*_3`) capturent taux = 0. Voir [Ventilation des taxes ZUGFeRD](../README.md#ventilation-des-taxes-classification-par-tranches) pour la liste complète des champs.
 
 ### Références de documents
 

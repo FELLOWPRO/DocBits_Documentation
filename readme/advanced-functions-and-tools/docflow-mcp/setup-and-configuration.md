@@ -3,23 +3,41 @@
 ## Points de terminaison API
 
 | Environnement | Point de terminaison MCP |
-|----------------|--------------------------|
-| Développement | `https://dev.api.docbits.com/api/mcp/` |
-| Stage | `https://stage.api.docbits.com/api/mcp/` |
-| Production | `https://api.docbits.com/api/mcp/` |
+|-------------|-------------|
+| Développement | `https://dev.docflow.docbits.com/v3/mcp/` |
+| Sandbox | `https://sandbox.docflow.docbits.com/v3/mcp/` |
+| Production | `https://docflow.docbits.com/v3/mcp/` |
+
+Le slash final est important : `https://docflow.docbits.com/v3/mcp` (sans slash) ne correspondra pas à la route.
 
 ## Authentification
 
-Toutes les requêtes MCP nécessitent une clé API DocBits valide transmise en tant que jeton Bearer. Vous pouvez trouver votre clé API dans **Paramètres > Intégration** dans l'interface DocBits.
+Toutes les requêtes MCP nécessitent une clé API DocBits valide. Vous pouvez trouver votre clé API dans **Paramètres > Intégration** dans l'interface DocBits.
 
-Le jeton est envoyé via l'en-tête `Authorization` :
+Le serveur accepte la clé via l'un de ces deux en-têtes :
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
+ou
+
+```
+x-api-key: <your-api-key>
+```
+
+### Contexte d'organisation
+
+Si votre clé API est associée à plusieurs organisations, envoyez également l'en-tête `x-org-id` afin que le serveur choisisse la bonne organisation et détermine votre rôle d'administrateur :
+
+```
+x-org-id: <organization-uuid>
+```
+
+En pratique, cet en-tête est requis pour les outils réservés aux administrateurs ci-dessous : sans lui, le serveur peut se rabattre sur une vue de jeton non administrateur et rejeter la requête.
+
 {% hint style="warning" %}
-Les outils réservés aux administrateurs (`sdk_approve_card`, `sdk_reject_card`, `sdk_delete_submission`) nécessitent un jeton d'administrateur d'organisation.
+**Outils réservés aux administrateurs.** `sdk_approve_card`, `sdk_reject_card` et `sdk_delete_submission` exigent que l'utilisateur appelant soit administrateur de l'organisation. Envoyez `x-org-id` avec votre clé API pour ces appels.
 {% endhint %}
 
 ## Configuration du client
@@ -29,10 +47,11 @@ Les outils réservés aux administrateurs (`sdk_approve_card`, `sdk_reject_card`
 Ajoutez le serveur MCP DocFlow en utilisant la CLI :
 
 ```bash
-claude mcp add docflow-dev \
+claude mcp add docflow \
   --transport http \
   --header "Authorization: Bearer YOUR_API_KEY" \
-  -- https://dev.api.docbits.com/api/mcp/
+  --header "x-org-id: YOUR_ORG_UUID" \
+  -- https://docflow.docbits.com/v3/mcp/
 ```
 
 Ou ajoutez-le à votre fichier de configuration `.claude.json` :
@@ -40,11 +59,12 @@ Ou ajoutez-le à votre fichier de configuration `.claude.json` :
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -56,11 +76,12 @@ Vous pouvez également l'ajouter à un fichier `.mcp.json` au niveau du projet :
 ```json
 {
   "mcpServers": {
-    "docflow-dev": {
+    "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -76,9 +97,10 @@ Ajoutez ce qui suit à votre fichier `claude_desktop_config.json` :
   "mcpServers": {
     "docflow": {
       "type": "streamable-http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -98,9 +120,10 @@ Codex CLI prend en charge les serveurs MCP. Ajoutez à la configuration de votre
   "mcpServers": {
     "docflow": {
       "type": "http",
-      "url": "https://dev.api.docbits.com/api/mcp/",
+      "url": "https://docflow.docbits.com/v3/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_API_KEY"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "x-org-id": "YOUR_ORG_UUID"
       }
     }
   }
@@ -117,8 +140,11 @@ from mcp import ClientSession
 
 async def connect():
     async with streamablehttp_client(
-        url="https://dev.api.docbits.com/api/mcp/",
-        headers={"Authorization": "Bearer YOUR_API_KEY"},
+        url="https://docflow.docbits.com/v3/mcp/",
+        headers={
+            "Authorization": "Bearer YOUR_API_KEY",
+            "x-org-id": "YOUR_ORG_UUID",
+        },
     ) as (read_stream, write_stream, _):
         async with ClientSession(read_stream, write_stream) as session:
             await session.initialize()

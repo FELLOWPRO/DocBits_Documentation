@@ -1,63 +1,42 @@
-# Mappage des champs ZUGFeRD 2.3.2
+# Mapping des champs ZUGFeRD 2.3.2
 
 ## Aperçu
 
-ZUGFeRD 2.3.2 était la version initiale du standard. Bien qu'elle soit ancienne, de nombreux documents utilisent encore ce format. DocBits offre un support complet pour l'extraction de données à partir des fichiers XML ZUGFeRD 2.3.2.
+ZUGFeRD 2.3.2 est une version de maintenance du standard 2.3, qui garantit la compatibilité avec les dernières mises à jour de CII.
 
-## Mappage des champs d'en-tête
+## Mapping des champs d'en-tête
 
 ### Identification de la facture
 
 | Chemin ZUGFeRD CII | Champ DocBits | Champ Infor BOD | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `ExchangedDocument/ID` | `INVOICE_NUMBER` | `DocumentID` | STRING | Numéro de facture |
-| `ExchangedDocument/TypeCode` | `INVOICE_TYPE_CODE` | `DocumentType` | STRING | Code type de facture |
 | `ExchangedDocument/IssueDateTime` | `INVOICE_DATE` | `DocumentDateTime` | DATE | Date d'émission de la facture |
 
 ### Type et sous-type de document (piloté par TRA)
 
-La XSLT TRANSFORMATION par défaut émet deux champs dérivés :
+Le XSLT TRANSFORMATION par défaut produit deux champs dérivés :
 
 | Champ DocBits | Source | Logique |
 | :--- | :--- | :--- |
 | `INVOICE_TYPE` | `CrossIndustryInvoice/ExchangedDocument/TypeCode` | UNCL 1001 `381` ou `261` → **Credit Note** ; tout autre code → **Invoice** |
 | `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vide → **Purchase Invoice** ; vide/absent → **Cost Invoice** |
 
-### Ventilation des taxes (classification par tranches)
+### Ventilation des taxes (classée par niveaux)
 
-Les blocs `ApplicableTradeTax` sont distribués sur trois tranches basées sur le taux (et non sur des index positionnels `[1]`/`[2]`/`[3]`) : les champs au taux standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturent les taux ≥ 19 ; les champs au taux réduit (`*_2`) capturent 0 < taux < 19 ; les champs au taux zéro (`*_3`) capturent taux = 0. Voir [Ventilation des taxes ZUGFeRD](../README.md#tax-breakdown-tier-classified) pour la liste complète des champs.
-
-| Chemin ZUGFeRD CII | Champ DocBits | Champ Infor BOD | Type | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `ApplicableTradeTax/RateApplicablePercent` (tranche 1) | `TAX_RATE` | `TaxPercent` | NUMBER | TVA au taux standard (≥ 19) |
-| `ApplicableTradeTax/BasisAmount` (tranche 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Montant net au taux standard |
-| `ApplicableTradeTax/CalculatedAmount` (tranche 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Montant de taxe au taux standard |
-
-### Références de documents
+Les blocs `ApplicableTradeTax` sont répartis sur trois niveaux basés sur le taux (et non sur des positions `[1]`/`[2]`/`[3]`) : les champs au taux normal (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturent un taux ≥ 19 ; les champs au taux réduit (`*_2`) capturent 0 < taux < 19 ; les champs au taux zéro (`*_3`) capturent un taux = 0. Consultez [ZUGFeRD Tax Breakdown](../README.md#ventilation-des-taxes-classification-par-tranches) pour la liste complète des champs.
 
 | Chemin ZUGFeRD CII | Champ DocBits | Champ Infor BOD | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `BuyerOrderReferencedDocument/ID` | `PURCHASE_ORDER` | `CustomerOrderID` | STRING | Numéro de bon de commande |
-| `ContractReferencedDocument/ID` | `CONTRACT_NUMBER` | `ContractID` | STRING | Référence du contrat |
-| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE` | `ShipmentID` | STRING | Référence du bon de livraison |
+| `ApplicableTradeTax/RateApplicablePercent` (niveau 1) | `TAX_RATE` | `TaxPercent` | NUMBER | TVA au taux normal (≥ 19) |
+| `ApplicableTradeTax/BasisAmount` (niveau 1) | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Montant net au taux normal |
+| `ApplicableTradeTax/CalculatedAmount` (niveau 1) | `TAX_AMOUNT` | `TaxAmount` | AMOUNT | Montant de taxe au taux normal |
 
-### Informations fournisseur (vendeur)
-
-| Chemin ZUGFeRD CII | Champ DocBits | Champ Infor BOD | Type | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| `SellerTradeParty/ID` | `VENDOR_ID` | `SupplierPartyID` | STRING | ID fournisseur |
-| `SellerTradeParty/Name` | `VENDOR_NAME` | `SupplierPartyName` | STRING | Nom du fournisseur |
-| `SellerTradeParty/PostalTradeAddress/Line1` | `VENDOR_ADDRESS` | `SupplierAddress1` | STRING | Ligne d'adresse 1 |
-| `SellerTradeParty/PostalTradeAddress/PostcodeCode` | `VENDOR_POSTAL_CODE` | `SupplierPostalCode` | STRING | Code postal |
-| `SellerTradeParty/PostalTradeAddress/CityName` | `VENDOR_CITY` | `SupplierCity` | STRING | Ville |
-| `SellerTradeParty/PostalTradeAddress/CountryID` | `VENDOR_COUNTRY` | `SupplierCountryCode` | STRING | Code pays |
-
-## Mappage des lignes d'articles
+## Mapping des lignes d'articles
 
 | Chemin ZUGFeRD CII | Champ DocBits | Champ Infor BOD | Type | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `AssociatedDocumentLineDocument/LineID` | `POSITION` | `LineNumber` | STRING | Numéro de ligne |
-| `SpecifiedTradeProduct/BuyerAssignedID` | `ITEM_NUMBER` | `BuyerItemID` | STRING | Numéro d'article de l'acheteur |
 | `SpecifiedTradeProduct/Name` | `DESCRIPTION` | `ItemDescription` | STRING | Description de l'article |
 | `BilledQuantity` | `QUANTITY` | `InvoicedQuantity` | NUMBER | Quantité facturée |
 | `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE` | `UnitPrice` | AMOUNT | Prix unitaire net |

@@ -2,13 +2,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=CIGk-f4x4ZE" %}
 
+Choisissez IMAP comme protocole et saisissez les informations de votre fournisseur de messagerie : nom du serveur, port, cryptage, nom d’utilisateur, adresse e-mail et mot de passe. Les étapes suivantes permettent de définir les options et le dossier de messagerie.
 
+<figure><img src="../../../../.gitbook/assets/imap-email-server-setup-fr-20261006.png" alt="Boîte de dialogue de configuration du serveur de messagerie avec protocole IMAP, nom du serveur, port 993, cryptage SSL, nom d’utilisateur, adresse e-mail et mot de passe"><figcaption><p>Configuration du serveur avec des valeurs d’exemple. Remplacez-les par les informations de votre fournisseur de messagerie.</p></figcaption></figure>
 
-Ici, vous devez simplement entrer les informations requises pour votre fournisseur de messagerie, le cryptage, le nom du serveur, le port, le nom d'utilisateur, l'adresse e-mail, le mot de passe ainsi que le dossier de messagerie.
+À noter
 
-![](https://lh7-us.googleusercontent.com/qo1uIuPrVZ-C4myaQBjSCrK-GgtsohcmAv_trjcQvxXJ9UYYWzEoNbtXGEo1VwlC4fohGAYwlQ7LXiRYE6AoVkJaldY3fnVINoEloVbSogUpLky7Qt7ARyGLcthHaoUPVmz3W7QJRwZhp0CRVGhFMZQ)
-
-Choses à noter
-
-* Saisissez toutes les informations nécessaires dans l'interface utilisateur. D'autres informations telles que le serveur, le port, etc. dépendent de l'hôte (une recherche rapide sur Google devrait aider).
-* Le dossier et Déplacer-importé ont la même fonction ici. Le dossier ne peut pas être désactivé, mais utilisera la boîte de réception par défaut s'il est laissé vide.
+* Saisissez toutes les informations nécessaires dans l’interface. Les autres informations, comme le serveur ou le port, dépendent de l’hébergeur (une recherche rapide sur Internet peut aider).
+* Dossier et Déplacer les importés ont ici la même fonction. Le dossier ne peut pas être désactivé ; s’il reste vide, la boîte de réception est utilisée par défaut.

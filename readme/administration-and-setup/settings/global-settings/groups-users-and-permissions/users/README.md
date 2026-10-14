@@ -1,5 +1,7 @@
 # Utilisateurs
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/fr.mp4" %}
+
 <figure><img src="../../../../../.gitbook/assets/users_settings.png" alt="Gestion des utilisateurs"><figcaption><p>Page de gestion des utilisateurs</p></figcaption></figure>
 
 La page Utilisateurs permet aux administrateurs de gérer tous les comptes utilisateurs de votre organisation DocBits. Vous pouvez y ajouter de nouveaux utilisateurs, attribuer des rôles et contrôler les accès.
@@ -35,6 +37,6 @@ Consultez [Statistiques de connexion](login-analytics.md) pour le détail comple
    * **Adresse e-mail** : utilisée pour la connexion et les notifications.
    * **Mot de passe** : doit respecter les règles de sécurité de votre organisation.
    * **Rôle de l'utilisateur** : attribuez le rôle approprié (Standard User, Admin ou System Admin).
-3. Cliquez sur **Enregistrer** pour créer le compte utilisateur. Le nouvel utilisateur recevra une notification par e-mail contenant ses identifiants de connexion.
+3. Cliquez sur **Enregistrer** pour créer le compte utilisateur. Le nouvel utilisateur recevra une notification par e-mail contenant ses identifiants de connexion et un lien pour définir son premier mot de passe sur la page **Définir le mot de passe**. Voir [Accéder à DocBits et se connecter](../../../../../end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md#premier-mot-de-passe-pour-les-comptes-crees-par-un-administrateur).
 
 > **Remarque :** le rôle **System Admin** ne peut être choisi qu'au moment de la création d'un utilisateur — il ne peut pas être ajouté ni retiré par la suite. Chaque organisation ne peut avoir qu'un seul System Admin, et le choisir accorde automatiquement aussi les droits d'Admin. Consultez [Privilèges d'administration](admin-privileges.md#admin-vs-system-admin) pour savoir quand l'utiliser.

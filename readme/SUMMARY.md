@@ -10,6 +10,7 @@
 * [FAQ Bezpieczeństwo i Zgodność](overview-and-basics/security-and-compliance-faq.md)
 * [Uwierzytelnianie dwuskładnikowe (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastruktura](overview-and-basics/infor-infrastructure.md)
+* [Strategia cyklu życia wydań DocBits](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Informacje o wersji](overview-and-basics/release-notes/README.md)
   * [Aktualizacje — 21–25 czerwca 2026](overview-and-basics/release-notes/incremental-updates-21-25-june-2026.md)
   * [Aktualizacje — 26–30 czerwca 2026](overview-and-basics/release-notes/incremental-updates-26-30-june-2026.md)
@@ -39,6 +40,7 @@
 ## Sekcja użytkowników końcowych i partnerów <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sekcja użytkownika końcowego](end-user-and-partner-section/end-user-section/README.md)
+  * [Uzyskiwanie dostępu i logowanie](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Globalne Szybkie Wyszukiwanie](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Mapa Witryny](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Konfigurowalny Pasek Boczny](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
@@ -285,6 +287,8 @@
     * [Zarządzanie Zadaniami](administration-and-setup/settings/log-settings/task-management.md)
     * [Synchronizacja Danych](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Ustawienia Wyszukiwania Pełnotekstowego](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Audyt Dostępu](administration-and-setup/settings/log-settings/access-audit.md)
+    * [Analityka](administration-and-setup/settings/log-settings/analytics.md)
   * [Licencje API](administration-and-setup/settings/api-licenses.md)
   * [Ustawienia Dostawcy](administration-and-setup/settings/supplier-setting/README.md)
     * [Ustawienia ogólne dostawcy](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
@@ -484,7 +488,7 @@
     * [Importowanie Przyjęć Towarów (Receive Delivery BOD)](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/receive-delivery-bod.md)
     * [Importowanie Danych Głównych z XML](infor-integration-and-configuration/importing-customer-master-data/importing-via-the-api/master-data-xml.md)
   * [LN](infor-integration-and-configuration/importing-customer-master-data/ln/README.md)
-    * [Automatyczne Księgowanie](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
+    * [Automatyczne Księgowanie z Infor LN](infor-integration-and-configuration/importing-customer-master-data/ln/auto-accounting.md)
     * [Dostawcy i Zamówienia Zakupu](infor-integration-and-configuration/importing-customer-master-data/ln/suppliers-and-purchase-orders.md)
     * [Kody Podatkowe](infor-integration-and-configuration/importing-customer-master-data/ln/tax-codes.md)
   * [M3](infor-integration-and-configuration/importing-customer-master-data/m3/README.md)
@@ -494,7 +498,7 @@
       * [Mapowanie BOD Purchase Order](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/purchase-order-bod-mapping.md)
       * [Mapowanie BOD ReceiveDelivery](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/receivedelivery-bod.md)
       * [Auto Accounting BOD Mapping](infor-integration-and-configuration/importing-customer-master-data/m3/bod-mappings/auto-accounting-bod-mapping.md)
-    * [Automatyczne Księgowanie](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
+    * [Automatyczne Księgowanie z Infor M3](infor-integration-and-configuration/importing-customer-master-data/m3/auto-accounting.md)
     * [Dostawcy i Zamówienia Zakupu](infor-integration-and-configuration/importing-customer-master-data/m3/suppliers-and-purchase-orders.md)
     * [Jak zaimportować wszystkich dostawców](infor-integration-and-configuration/importing-customer-master-data/m3/how-to-import-all-suppliers.md)
     * [Ekstrakcja tabeli dla elementu kosztowego](infor-integration-and-configuration/importing-customer-master-data/m3/table-extraction-for-costing-element.md)
@@ -515,6 +519,7 @@
 
 ## Zaawansowane funkcje i narzędzia <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [Eksplorator grafów wiedzy](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [Postman dla DocBits](advanced-functions-and-tools/postman-for-docbits/README.md)
   * [Przetestuj swoje połączenie BOD za pomocą Postman](advanced-functions-and-tools/postman-for-docbits/test-your-bod-connection-with-postman.md)
 * [Importowanie danych dostawcy i zamówień zakupu do DocBits z plików CSV](advanced-functions-and-tools/importing-supplier-and-purchase-order-data-into-docbits-from-csv-files.md)

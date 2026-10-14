@@ -1,0 +1,2 @@
+# Impostazioni Globali
+

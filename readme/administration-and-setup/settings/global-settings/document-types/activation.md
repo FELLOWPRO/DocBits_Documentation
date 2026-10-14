@@ -1,63 +1,13 @@
-# Aktywacja
+# Aktywacja lub dezaktywacja typu dokumentu
 
-## Włączanie lub wyłączanie typów dokumentów w systemie zarządzania dokumentami, takim jak Docbits, pozwala organizacji utrzymywać aktywne tylko te typy dokumentów, których potrzebuje, aby zapewnić wydajne zarządzanie i przejrzystość.
+Administratorzy mogą wybierać, które typy dokumentów są dostępne w ich organizacji. Możesz to zmienić na stronie **Document Types** bez usuwania typu ani jego konfiguracji.
 
-### Oto kroki, aby włączyć i wyłączyć typy dokumentów, wraz z wyjaśnieniem funkcji przełączania w interfejsie użytkownika:
+1. Otwórz **Settings → Document Types**.
+2. Znajdź typ dokumentu, na przykład **Invoice**, w sekcji **Default Document Types** lub **Custom Document Types**.
+3. Użyj przełącznika **Activate** na karcie tego typu. Kolorowy przełącznik oznacza, że typ jest aktywny; szary przełącznik oznacza, że jest nieaktywny. Przed opuszczeniem strony poczekaj na komunikat potwierdzający. Dla tego przełącznika nie ma osobnego przycisku Save.
 
-#### **Uzyskaj Dostęp do Zarządzania Typami Dokumentów**
+<figure><img src="../../../../.gitbook/assets/document-type-activation-en-2026.png" alt="Angielskie ustawienia Document Types z przełącznikami Activate i Extraction na kartach Invoice, Delivery Note i Order Confirmation"><figcaption><p>Każdy typ dokumentu ma własny przełącznik Activate po prawej stronie swojej karty.</p></figcaption></figure>
 
-* Zaloguj się: Zaloguj się do DocBits z uprawnieniami administratora.
-* Nawiguj: Przejdź do Ustawień.
-* Typy Dokumentów: Znajdź sekcję Typy Dokumentów.
+Przełącznik **Extraction** obok **Activate** to inne ustawienie. Wybiera on tryb ekstrakcji (Flex lub Fix); nie aktywuje ani nie dezaktywuje typu dokumentu. Ikona koła zębatego otwiera dodatkowe ustawienia tego typu. Linki pod nazwą typu otwierają jego układy, pola, tabele, skrypty i inne dostępne obszary konfiguracji.
 
-
-
-**Uzyskaj Dostęp do Listy Typów Dokumentów**
-
-* Uzyskaj dostęp do listy istniejących typów dokumentów. Ta lista pokazuje wszystkie zdefiniowane typy dokumentów, zarówno aktywne, jak i nieaktywne.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_default_values.png" alt="Docbits Field Default Values"><figcaption></figcaption></figure>
-
-**Aktywacja lub dezaktywacja typu dokumentu Wybierz Typ Dokumentu:**
-
-* Wybierz typ dokumentu, który chcesz włączyć lub wyłączyć.&#x20;
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_enable_historization.png" alt="Docbits Field Enable Historization"><figcaption></figcaption></figure>
-
-**Użyj funkcji przełączania:**
-
-* W interfejsie użytkownika obok każdego typu dokumentu znajduje się przełącznik, który umożliwia aktywację i dezaktywację.&#x20;
-
-**Aktywacja:**
-
-* Jeśli typ dokumentu jest obecnie wyłączony, przełącznik może pokazywać pozycję szarą lub wyłączoną.&#x20;
-* Kliknij przełącznik, aby aktywować typ dokumentu. Przełącznik zmienia pozycję i kolor, wskazując aktywację.
-
-<figure><img src="../../../../.gitbook/assets/docbits_field_user_permissions.png" alt="Docbits Field User Permissions"><figcaption></figcaption></figure>
-
-**Dezaktywacja:**
-
-* Jeśli typ dokumentu jest obecnie włączony, przełącznik pokazuje pozycję kolorową lub włączoną.&#x20;
-* Kliknij przełącznik, aby dezaktywować typ dokumentu. Przełącznik zmienia pozycję i kolor, wskazując dezaktywację.
-
-<figure><img src="../../../../.gitbook/assets/docbits_deactivate_doc_type_switch.png" alt="Docbits Deactivate Doc Type Switch"><figcaption></figcaption></figure>
-
-
-
-**Zapisz:**&#x20;
-
-* Upewnij się, że wszystkie zmiany zostały zapisane. Niektóre systemy zapisują zmiany automatycznie, podczas gdy inne wymagają wyraźnego potwierdzenia.
-
-### Powiadomienia i dokumentacja
-
-**Poinformuj użytkowników:**&#x20;
-
-* Poinformuj użytkowników o aktywacji lub dezaktywacji typu dokumentu, zwłaszcza jeśli wpływa to na ich procesy pracy.
-
-**Zaktualizuj dokumentację:**&#x20;
-
-* Zaktualizuj dokumentację systemu, aby odzwierciedlić aktualny stan typów dokumentów.
-
-
-
-Wniosek Możliwość włączania lub wyłączania typów dokumentów w zależności od potrzeb organizacji jest przydatnym narzędziem do zarządzania przetwarzaniem dokumentów w Docbits. Po prostu używając funkcji przełączania w interfejsie użytkownika, administratorzy mogą reagować elastycznie i wydajnie oraz zapewnić, że system jest optymalnie dostosowany do bieżących potrzeb biznesowych.
+DocBits udostępnia domyślne typy dokumentów, których nie można usunąć. Możesz też tworzyć własne typy i nimi zarządzać. Kolejne kroki konfiguracji znajdziesz w [Adding and Editing Document Types](adding-editing-document-types.md), a konfigurację wyodrębnianych pozycji — w [Table Columns](table-columns/README.md).

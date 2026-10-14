@@ -1,63 +1,42 @@
 # Dodawanie nowej kolumny
 
-## Dodanie nowej kolumny do istniejącej tabeli wymaga starannego zaplanowania i wykonania, aby zapewnić zachowanie integralności danych i spełnienie wymagań aplikacji.
+Dodaj kolumnę, gdy dla każdej pozycji trzeba zapisać wartość, której nie obejmują kolumny domyślne, na przykład centrum kosztów, numer projektu lub wewnętrzny numer artykułu.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Ustawienia: Typy dokumentów</p></figcaption></figure>
+## Zanim zaczniesz
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.49.21.png" alt=""><figcaption><p>Kolumny tabeli</p></figcaption></figure>
+* Zdecyduj, do której **tabeli** należy kolumna. Większość typów dokumentów ma jedną tabelę (na przykład `INVOICE_TABLE`). Jeśli lista jest pusta, najpierw kliknij **Create new table**; okno prosi tylko o nazwę tabeli.
+* Zdecyduj o **typie**: `AMOUNT` dla kwot pieniężnych, `NUMBER` dla ilości, `DATE`, `BOOLEAN` dla tak/nie, `CURRENCY` dla kodu waluty ISO, `STRING` dla wszystkiego innego. Po zapisaniu nie można zmienić typu.
+* Sprawdź, czy **kolumna domyślna** o tym samym znaczeniu już istnieje, ale jest ukryta. Ukryte kolumny są wyświetlane z ustawioną flagą *Hidden*; zamiast tworzyć duplikat, odkryj ją.
 
-**Oto szczegółowe kroki, aby dodać nową kolumnę:**
+## Kroki
 
-<figure><img src="../../../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+1. Otwórz **Settings → Global Settings → Document Types → Table Columns**.
+2. Kliknij **Add new table column**.
 
-**Analiza wymagań:**
+<figure><img src="../../../../../.gitbook/assets/table-columns_add-dialog.png" alt="Okno Add new table column z polami Title, Is column required, Select column type i Select Table"><figcaption><p>Add new table column</p></figcaption></figure>
 
-* Przejrzyj wymagania swojej aplikacji i określ cel nowej kolumny. Jaki typ danych będzie przechowywany? Jak ta kolumna będzie używana w aplikacji?
+3. Wypełnij okno:
 
-<figure><img src="../../../../../.gitbook/assets/image (96).png" alt="" width="375"><figcaption><p>Dodaj nową kolumnę tabeli</p></figcaption></figure>
+| Pole | Co wpisać |
+|---|---|
+| **Title** | Etykieta widoczna dla użytkownika na ekranie walidacji, na przykład `Cost Centre`. Tylko litery i cyfry. DocBits tworzy z niej techniczną *Column name* (`COST_CENTRE`). |
+| **Is column required?** | Zaznacz, gdy dokumentu nie wolno zatwierdzić, dopóki kolumna jest pusta w którymkolwiek wierszu. |
+| **Select column type** | Zobacz listę typów powyżej. |
+| **Select Table** | Tabela, która otrzyma kolumnę. |
 
-**Wybór odpowiedniego typu kolumny:**
+4. Kliknij **Proceed**. Kolumna pojawi się na liście z niezaznaczonymi flagami *Read Only*, *Hidden* i *Use AI*. W razie potrzeby przełącz te flagi na liście, zobacz [Edytowanie i usuwanie kolumn](editing-and-deleting-columns.md).
 
-* Wybierz najbardziej odpowiedni typ kolumny w oparciu o dane, które będą w niej przechowywane. Może to być AMOUNT dla kwoty, STRING dla ciągów znaków, DATE dla dat itp.
-* Wybór właściwego typu kolumny jest ważny, aby zapewnić integralność danych i efektywnie wykorzystać przestrzeń dyskową.
+## Po dodaniu
 
-<figure><img src="../../../../../.gitbook/assets/image (97).png" alt="" width="375"><figcaption></figcaption></figure>
+* Kolumna jest **pusta w istniejących dokumentach**. Jest wypełniana w dokumentach przesłanych lub zrestartowanych po zmianie.
+* Dla dostawców z **wytrenowanymi regułami** otwórz jeden z ich dokumentów w trenowaniu tabel i zmapuj nową kolumnę, w przeciwnym razie kolumna pozostanie dla tego dostawcy pusta. Zobacz [Defining tables and columns](../../../../setup/document-training/training-line-fields-table-training/defining-tables-and-columns.md).
+* Przy **wyodrębnianiu tabel przez AI** AI wypełnia kolumnę, jeśli wartość jest rozpoznawalna w dokumencie. Oznacz kolumnę flagą *Use AI*, jeśli dostawca ma wytrenowane reguły, ale ta kolumna nadal ma pochodzić z AI.
+* Dodaj kolumnę do **mapowania eksportu**, jeśli system ERP ma ją otrzymywać, zobacz [Export](../../../document-processing/export.md).
 
-**Wybór odpowiedniej tabeli:**
+## Komunikaty
 
-* Aby wybrać poprawny typ kolumny w określonej tabeli, takiej jak tabela faktur, należy wziąć pod uwagę specyficzne wymagania danych, które mają być w niej przechowywane.
-
-<figure><img src="../../../../../.gitbook/assets/image (98).png" alt="" width="375"><figcaption></figcaption></figure>
-
-
-
-**Decydowanie o tym, czy kolumna jest wymagana:**
-
-* Zastanów się, czy nowa kolumna jest wymagana, czy też powinna dopuszczać wartości NULL. Jeśli kolumna jest obowiązkowa, powinna zostać oznaczona jako NOT NULL, aby zapewnić, że ważne dane nie będą pomijane.
-* Rozważ również, czy kolumna może stać się polem wymaganym dla Twojej aplikacji w przyszłości.
-
-
-
-**Kopia zapasowa bazy danych:**
-
-* Przed dodaniem nowej kolumny wykonaj kopię zapasową bazy danych, aby zapewnić sobie działającą wersję, do której można wrócić w razie jakichkolwiek problemów.&#x20;
-
-
-
-**Wykonanie instrukcji SQL:**
-
-*   Użyj instrukcji SQL ALTER TABLE, aby dodać nową kolumnę. Dokładna składnia zależy od używanej platformy bazodanowej, ale ogólnie instrukcja SQL wygląda następująco:&#x20;
-
-    <figure><img src="../../../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
-
-    Zastąp table\_name nazwą swojej tabeli, new\_column\_name nazwą nowej kolumny, a data\_type wybranym typem kolumny. Słowo kluczowe \[NOT NULL] wskazuje, czy kolumna jest obowiązkowa.
-
-
-
-**Testowanie i walidacja:**
-
-* Po dodaniu nowej kolumny dokładnie sprawdź, czy Twoja aplikacja działa prawidłowo. Przeprowadź testy, aby upewnić się, że dane są poprawnie przechowywane i pobierane oraz że nowa kolumna działa zgodnie z oczekiwaniami.
-
-
-
-Starannie wykonując te kroki, możesz pomyślnie i skutecznie dodać nową kolumnę do tabeli bazy danych, wybierając poprawny typ kolumny i zapewniając, że kolumna jest wymagana wtedy, gdy jest to konieczne.
+| Komunikat | Znaczenie |
+|---|---|
+| *Column name already exists* | Kolumna o tej nazwie technicznej już istnieje w tabeli. Wybierz inny tytuł. |
+| *Column name already exists – Please activate it in Table Column settings* | Ukryta kolumna domyślna ma tę nazwę. Zamiast tworzyć nową, wyłącz jej flagę *Hidden*. |
+| *No table exists. Please create table before creating columns.* | Typ dokumentu nie ma jeszcze tabeli: najpierw kliknij **Create new table**. |

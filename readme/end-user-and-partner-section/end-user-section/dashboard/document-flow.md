@@ -1,38 +1,27 @@
-# Przepływ Dokumentów
+# Przepływ dokumentu
 
-## **Przegląd:**
+**Document Flow** pokazuje etapy przetwarzania jednego dokumentu. Dzięki niemu zobaczysz, które etapy zostały ukończone, który oczekuje oraz ile trwało przetwarzanie. Poniższy przykład używa syntetycznej faktury w angielskiej wersji Sandbox.
 
-Ta strona zapewnia graficzny przegląd różnych kroków, przez które przeszedł dokument do tego momentu.
+## Otwieranie z pulpitu
 
-## **Jak uzyskać dostęp:**
+Na **Dashboard** znajdź dokument. W jego kolumnie **Actions** wybierz trzy kropki, a następnie **Document flow**. Ta opcja otwiera przepływ dla danego dokumentu; nie zmienia dokumentu.
 
-### **Opcja 1:**
+<figure><img src="../../../.gitbook/assets/document-flow-dashboard-menu-en.png" alt="Angielski Dashboard z otwartym menu Actions dla syntetycznej faktury; Document flow znajduje się poniżej pozycji Assign to."><figcaption>Wybierz Document flow z menu Actions dokumentu.</figcaption></figure>
 
-1.  Przejdź do kolumny akcji na pulpicie i kliknij trzy kropki obok dokumentu, dla którego chcesz zobaczyć przepływ dokumentu.
+## Otwieranie z Field Validation
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_1.png" alt=""><figcaption></figcaption></figure>
-2.  Wybierz **Przepływ Dokumentu**.
+Otwórz dokument. W **Field Validation** wybierz trzy kropki na prawym pasku akcji, a następnie **Document Flow** w sekcji **More options**.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_2.png" alt="" width="248"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-flow-validation-menu-en.png" alt="Angielski ekran Field Validation z menu More options i pozycją Document Flow obok syntetycznej faktury."><figcaption>Ten sam przepływ jest dostępny z widoku dokumentu.</figcaption></figure>
 
-### **Opcja 2:**
+## Odczytywanie przepływu
 
-1. Otwórz dokument, dla którego chcesz zobaczyć przepływ dokumentu.
-2.  Kliknij trzy kropki po prawej stronie Walidacji Pola.
+**Process Statistics** po lewej stronie podsumowuje liczbę etapów, etapy ukończone i oczekujące, ponowne uruchomienia, całkowity czas, bieżący status oraz ogólny postęp. Każda ponumerowana karta przedstawia etap przetwarzania i jego bieżący stan. Przewiń w dół, aby zobaczyć kolejne etapy.
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_3.png" alt=""><figcaption></figcaption></figure>
-3.  Wybierz **Przepływ Dokumentu**.
+<figure><img src="../../../.gitbook/assets/document-flow-overview-en.png" alt="Angielski Document Flow z Process Statistics po lewej i pierwszymi ponumerowanymi kartami etapów: Imported, Document Imported i OCR."><figcaption>Pierwsze etapy przepływu syntetycznej faktury.</figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_4.png" alt="" width="288"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-flow-later-steps-en.png" alt="Angielski Document Flow po przewinięciu w dół; kolejne karty to m.in. Classification, Field Extraction, Table Extraction, Transformer, Metadata Populator, Lookup Data i Validator."><figcaption>Przewiń, aby śledzić sekwencję przez dalsze etapy.</figcaption></figure>
 
-## **Opis:**
+Wybierz kartę etapu, aby otworzyć **Step Details** po lewej stronie. Zawiera moduł i jego status. Po prawej może otworzyć się także panel **Task Logs**; szczegóły logów zależą od tego, co jest dostępne dla danego zadania. Wybierz **×** w Step Details, aby zamknąć panel.
 
-Po lewej stronie ekranu zobaczysz poszczególne kroki przepływu dokumentu, wymienione od lewej do prawej.
-
-<figure><img src="../../../.gitbook/assets/DocumentFlow_6.png" alt=""><figcaption></figcaption></figure>
-
-* Kroki, które inicjują proces przepływu dokumentu (takie jak import lub ponowne uruchomienie) będą wyświetlane na zielono.
-* Aby nawigować przez kroki, po prostu przeciągnij i upuść je na ekranie.
-*   Gdy klikniesz na krok, po prawej stronie ekranu pojawi się nazwa modułu oraz informacje o tym, czy krok był udany, czy nie.
-
-    <figure><img src="../../../.gitbook/assets/DocumentFlow_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document-flow-step-details-en.png" alt="Angielski Document Flow z zaznaczoną kartą OCR; Step Details poniżej Process Statistics pokazuje Module OCR i Status Completed."><figcaption>Step Details wyjaśnia status wybranego modułu.</figcaption></figure>

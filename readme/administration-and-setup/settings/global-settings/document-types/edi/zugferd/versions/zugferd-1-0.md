@@ -25,7 +25,7 @@ Obok surowego `INVOICE_TYPE_CODE` domyślny TRANSFORMATION XSLT emituje dwa pola
 
 ### Podział podatków (klasyfikowany według poziomów)
 
-Bloki `ApplicableTradeTax` są rozdzielane na trzy poziomy oparte na stawce (nie pozycyjnie): pola stawki standardowej (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) obejmują stawkę ≥ 19; pola stawki obniżonej (`*_2`) obejmują 0 < stawka < 19; pola stawki zerowej (`*_3`) obejmują stawkę = 0. Pełną listę pól znajdziesz w [Podział podatków ZUGFeRD](../README.md#tax-breakdown-tier-classified). (ZUGFeRD 1.0 używa starszej składni CII w swoim TRANSFORMATION XSLT, ale reguły wyboru poziomów powyżej są identyczne jak w 2.x.)
+Bloki `ApplicableTradeTax` są rozdzielane na trzy poziomy oparte na stawce (nie pozycyjnie): pola stawki standardowej (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) obejmują stawkę ≥ 19; pola stawki obniżonej (`*_2`) obejmują 0 < stawka < 19; pola stawki zerowej (`*_3`) obejmują stawkę = 0. Pełną listę pól znajdziesz w [Podział podatków ZUGFeRD](../README.md#podzial-podatkow-klasyfikowany-wedlug-poziomow). (ZUGFeRD 1.0 używa starszej składni CII w swoim TRANSFORMATION XSLT, ale reguły wyboru poziomów powyżej są identyczne jak w 2.x.)
 
 ### Odniesienia do dokumentów
 

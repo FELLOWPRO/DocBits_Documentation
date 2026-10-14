@@ -33,7 +33,7 @@ O mapeamento de campos é idêntico ao [AUNZ PINT](aunz-pint.md) com a seguinte 
 - **Os papéis das partes são invertidos**: Na auto-faturação, o comprador é a parte faturadora e o fornecedor é a parte faturada
 - O `CustomizationID` contém `urn:peppol.org:pint:selfbilling-1@aunz` em vez de `billing-1@aunz`
 
-Para a tabela completa de mapeamento de campos, consulte [AUNZ PINT](aunz-pint.md#field-mapping).
+Para a tabela completa de mapeamento de campos, consulte [AUNZ PINT](aunz-pint.md#mapeamento-de-campos).
 
 ## Regra de classificação
 

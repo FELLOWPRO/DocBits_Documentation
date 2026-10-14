@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="116%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.06" flood-color="#001b3c"/>
+    </filter>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#005cad"/>
+      <stop offset="100%" stop-color="#0075d8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: Inter, system-ui, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="#f9f9ff"/>
+
+  <!-- Header -->
+  <rect width="800" height="56" rx="16" fill="url(#headerGrad)"/>
+  <rect y="40" width="800" height="16" fill="url(#headerGrad)"/>
+  <text x="400" y="36" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700" letter-spacing="0.3">WatchDog Installation Steps</text>
+
+  <!-- Timeline vertical line -->
+  <line x1="80" y1="94" x2="80" y2="430" stroke="#005cad" stroke-width="2" stroke-dasharray="6 4" opacity="0.25"/>
+
+  <!-- Step 1: Create Folders -->
+  <circle cx="80" cy="104" r="18" fill="#005cad"/>
+  <text x="80" y="110" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">1</text>
+  <rect x="116" y="80" width="460" height="72" rx="14" fill="#f0f3ff" filter="url(#shadow)"/>
+  <rect x="116" y="80" width="460" height="72" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <text x="136" y="104" fill="#1a1c1e" font-size="14" font-weight="700">Create Folders</text>
+  <g transform="translate(136, 114)">
+    <rect x="0" y="0" width="180" height="22" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">C:\WatchDog\Read</text>
+  </g>
+  <g transform="translate(330, 114)">
+    <rect x="0" y="0" width="220" height="22" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">C:\WatchDog\Processed</text>
+  </g>
+
+  <!-- Step 2: Download & Configure -->
+  <circle cx="80" cy="194" r="18" fill="#005cad"/>
+  <text x="80" y="200" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">2</text>
+  <rect x="116" y="170" width="460" height="72" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="116" y="170" width="460" height="72" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <text x="136" y="194" fill="#1a1c1e" font-size="14" font-weight="700">Download &amp; Configure</text>
+  <g transform="translate(136, 204)">
+    <rect x="0" y="0" width="130" height="22" rx="6" fill="#1a8754" opacity="0.1"/>
+    <text x="8" y="15" fill="#1a8754" font-size="11" font-weight="600">WatchDog.exe</text>
+  </g>
+  <text x="278" y="219" fill="#44474e" font-size="11" font-weight="400">+</text>
+  <g transform="translate(296, 204)">
+    <rect x="0" y="0" width="170" height="22" rx="6" fill="#1a8754" opacity="0.1"/>
+    <text x="8" y="15" fill="#1a8754" font-size="11" font-weight="600">watchdog-config.json</text>
+  </g>
+  <text x="478" y="219" fill="#44474e" font-size="11" font-weight="400">+ API Key setup</text>
+
+  <!-- Step 3: Install Service -->
+  <circle cx="80" cy="284" r="18" fill="#005cad"/>
+  <text x="80" y="290" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">3</text>
+  <rect x="116" y="260" width="460" height="72" rx="14" fill="#f0f3ff" filter="url(#shadow)"/>
+  <rect x="116" y="260" width="460" height="72" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <text x="136" y="284" fill="#1a1c1e" font-size="14" font-weight="700">Install Service</text>
+  <g transform="translate(136, 294)">
+    <rect x="0" y="0" width="190" height="22" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">WatchDog.exe install</text>
+  </g>
+  <text x="340" y="309" fill="#44474e" font-size="14" font-weight="400">&#8594;</text>
+  <g transform="translate(362, 294)">
+    <rect x="0" y="0" width="200" height="22" rx="6" fill="#005cad" opacity="0.08"/>
+    <text x="8" y="15" fill="#005cad" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">WatchDog.exe -api KEY</text>
+  </g>
+
+  <!-- Step 4: Start & Verify -->
+  <circle cx="80" cy="374" r="18" fill="#1a8754"/>
+  <text x="80" y="380" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">4</text>
+  <rect x="116" y="350" width="460" height="72" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="116" y="350" width="460" height="72" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+  <text x="136" y="374" fill="#1a1c1e" font-size="14" font-weight="700">Start &amp; Verify</text>
+  <g transform="translate(136, 384)">
+    <rect x="0" y="0" width="170" height="22" rx="6" fill="#1a8754" opacity="0.1"/>
+    <text x="8" y="15" fill="#1a8754" font-size="11" font-weight="600" font-family="'SF Mono', 'Fira Code', monospace">WatchDog.exe start</text>
+  </g>
+  <text x="320" y="399" fill="#44474e" font-size="11" font-weight="400">Set Automatic Startup in Services</text>
+  <!-- Checkmark -->
+  <circle cx="548" cy="393" r="10" fill="#1a8754" opacity="0.15"/>
+  <path d="M543 393 L546.5 396.5 L553 389" stroke="#1a8754" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right annotation panel -->
+  <rect x="600" y="80" width="172" height="342" rx="14" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="600" y="80" width="172" height="342" rx="14" fill="none" stroke="#c0c6d5" stroke-opacity="0.15"/>
+
+  <!-- Requires header -->
+  <rect x="600" y="80" width="172" height="40" rx="14" fill="#d97706" opacity="0.08"/>
+  <rect x="600" y="106" width="172" height="14" fill="#d97706" opacity="0.08"/>
+  <text x="686" y="106" text-anchor="middle" fill="#d97706" font-size="12" font-weight="700">REQUIREMENTS</text>
+
+  <!-- Warning icon -->
+  <g transform="translate(616, 134)">
+    <circle cx="10" cy="10" r="10" fill="#d97706" opacity="0.12"/>
+    <text x="10" y="15" text-anchor="middle" fill="#d97706" font-size="13" font-weight="700">!</text>
+  </g>
+  <text x="644" y="148" fill="#1a1c1e" font-size="12" font-weight="600">Admin CMD</text>
+  <text x="616" y="168" fill="#44474e" font-size="10.5" font-weight="400">Run as Administrator</text>
+
+  <line x1="620" y1="184" x2="752" y2="184" stroke="#c0c6d5" stroke-opacity="0.2"/>
+
+  <g transform="translate(616, 198)">
+    <circle cx="10" cy="10" r="10" fill="#d97706" opacity="0.12"/>
+    <text x="10" y="15" text-anchor="middle" fill="#d97706" font-size="13" font-weight="700">!</text>
+  </g>
+  <text x="644" y="212" fill="#1a1c1e" font-size="12" font-weight="600">Windows Service</text>
+  <text x="616" y="232" fill="#44474e" font-size="10.5" font-weight="400">Service permissions</text>
+  <text x="616" y="248" fill="#44474e" font-size="10.5" font-weight="400">required for install</text>
+
+  <line x1="620" y1="264" x2="752" y2="264" stroke="#c0c6d5" stroke-opacity="0.2"/>
+
+  <g transform="translate(616, 278)">
+    <circle cx="10" cy="10" r="10" fill="#005cad" opacity="0.12"/>
+    <text x="10" y="15" text-anchor="middle" fill="#005cad" font-size="11" font-weight="700">i</text>
+  </g>
+  <text x="644" y="292" fill="#1a1c1e" font-size="12" font-weight="600">API Key</text>
+  <text x="616" y="312" fill="#44474e" font-size="10.5" font-weight="400">From DocBits Settings</text>
+  <text x="616" y="328" fill="#44474e" font-size="10.5" font-weight="400">&#8594; Integration &#8594; API</text>
+
+  <line x1="620" y1="344" x2="752" y2="344" stroke="#c0c6d5" stroke-opacity="0.2"/>
+
+  <g transform="translate(616, 358)">
+    <circle cx="10" cy="10" r="10" fill="#005cad" opacity="0.12"/>
+    <text x="10" y="15" text-anchor="middle" fill="#005cad" font-size="11" font-weight="700">i</text>
+  </g>
+  <text x="644" y="372" fill="#1a1c1e" font-size="12" font-weight="600">.NET Runtime</text>
+  <text x="616" y="392" fill="#44474e" font-size="10.5" font-weight="400">Bundled with installer</text>
+
+  <!-- Bottom completion bar -->
+  <rect x="40" y="448" width="720" height="36" rx="10" fill="#1a8754" opacity="0.06"/>
+  <circle cx="66" cy="466" r="10" fill="#1a8754" opacity="0.15"/>
+  <path d="M61 466 L64.5 469.5 L71 462" stroke="#1a8754" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="84" y="471" fill="#1a8754" font-size="12" font-weight="600">Installation complete -- WatchDog will auto-start on system boot and begin monitoring folders</text>
+</svg>

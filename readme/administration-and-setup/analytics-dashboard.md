@@ -184,3 +184,7 @@ The Data Table provides full access to all underlying row data for the active fi
 <figure><img src="../.gitbook/assets/analytics_dashboard_data_table_hide_columns.png" alt="Hide Columns to Recalculate Aggregations"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/analytics_dashboard_data_table_export.png" alt="Export Data Table as CSV"><figcaption></figcaption></figure>
+
+## Touchless Intelligence
+
+The **Touchless Intelligence** tab shows how many documents run through DocBits without anyone touching them, and why the others stop. See [Touchless Intelligence](touchless-intelligence.md).

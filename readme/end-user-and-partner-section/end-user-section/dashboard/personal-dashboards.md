@@ -1,103 +1,56 @@
 # Painéis pessoais
 
-## Visão geral
+Um painel pessoal salva uma vista da lista de documentos para que você possa
+voltar aos filtros e colunas que usa com frequência. Você pode mantê-lo
+privado, torná-lo visível para todos na sua organização ou compartilhá-lo com
+grupos e usuários selecionados. Para saber como filtrar a lista de documentos
+antes de salvar uma vista, consulte [Pesquisa rápida](quick-search.md).
 
-Você pode criar e gerenciar painéis personalizados adaptados às suas necessidades específicas. Esses painéis permitem que você:
+## Criar um painel
 
-* Defina uma ordem personalizada de colunas
-* Selecione apenas as colunas relevantes para o seu caso de uso
-* Aplique e salve filtros personalizados
-* Compartilhe painéis com membros da equipe
+1. No **Painel**, defina os filtros e as colunas que deseja salvar.
+2. Selecione o emblema do painel abaixo da barra de pesquisa. Ele mostra a
+   vista atual e o número de documentos, como **Todos os documentos (10)**.
+3. Selecione **Criar novo painel**.
 
-## Criar novo painel
+<figure><img src="../../../.gitbook/assets/dbdc610-dashboard-menu-pt.png" alt="Menu do emblema do painel com Criar novo painel, Painel padrão e Salvar alterações no painel"><figcaption><p>Abra o emblema do painel atual para criar uma vista salva.</p></figcaption></figure>
 
-Para criar um novo painel:
+4. Insira um nome e escolha quem pode ver o painel:
+   * **Visível somente para mim** mantém a vista privada.
+   * **Visível para todos os usuários** disponibiliza o painel para a sua
+     organização.
+   * **Compartilhe com grupos e usuários** permite selecionar grupos ou
+     pessoas específicas.
+5. Selecione **Salvar**.
 
-1.  Clique no botão de filtro abaixo da barra de pesquisa.
+<figure><img src="../../../.gitbook/assets/dbdc610-dashboard-create-pt.png" alt="Diálogo Criar novo painel com campo de nome, opções de visibilidade e botão Salvar"><figcaption><p>Dê um nome ao painel e escolha a visibilidade antes de salvá-lo.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Clique em **Criar novo painel**.
+<figure><img src="../../../.gitbook/assets/dbdc610-dashboard-share-options-pt.png" alt="Opção de compartilhamento do painel com os campos Grupos e Selecionar usuário"><figcaption><p>Selecione grupos ou usuários quando quiser compartilhar o painel com pessoas específicas.</p></figcaption></figure>
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_2.png)
-3.  Insira um nome para o seu painel.
+## Abrir ou alterar um painel
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_3.png)
-4. Defina o nível de visibilidade desejado. Você pode escolher entre:
-   * **Visível somente para mim**: Apenas você (o usuário atualmente conectado) pode visualizar este painel.
-   * **Visível para todos os usuários**: Todos os usuários da sua organização terão acesso de visualização.
-   *   **Compartilhe com grupos e usuários**: Selecione usuários específicos ou grupos de usuários que terão acesso de visualização ao painel.
+Selecione o emblema do painel e escolha um painel salvo na lista. Selecione
+**Painel padrão** para voltar à vista padrão. O emblema mostra o nome do
+painel ativo.
 
-       ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_4.png)
-5.  Clique em **Salvar** para criar e salvar seu painel.
+Para alterar um painel seu, passe o mouse sobre o nome dele na lista e
+selecione o ícone de **lápis**. Em **Editar painel**, altere o nome ou a
+visibilidade e selecione **Salvar**. Um painel compartilhado com você por
+outra pessoa não pode ser editado pela sua conta.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_5.png)
+<figure><img src="../../../.gitbook/assets/dbdc610-dashboard-edit-controls-pt.png" alt="Linha de painel salvo com ícones de lápis para editar e lixeira para excluir visíveis ao passar o mouse"><figcaption><p>Passe o mouse sobre um painel seu para revelar os controles de edição e exclusão.</p></figcaption></figure>
 
-## Alternar entre painéis
+<figure><img src="../../../.gitbook/assets/dbdc610-dashboard-edit-dialog-pt.png" alt="Diálogo Editar painel mostrando o nome salvo e as opções de visibilidade"><figcaption><p>Use o diálogo Editar painel para renomear o painel ou alterar quem pode vê-lo.</p></figcaption></figure>
 
-Para alternar entre painéis:
+## Salvar alterações na vista atual
 
-1. Clique no botão de filtro abaixo da barra de pesquisa.
-2.  No menu suspenso, selecione um painel na lista de painéis pessoais ou compartilhados.
+Depois de alterar filtros ou colunas em um painel seu, selecione **Salvar
+alterações no painel** no menu do painel. A ação fica indisponível se nenhum
+painel estiver selecionado, se a vista não tiver sido alterada ou se o painel
+selecionado pertencer a outra pessoa.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_6.png)
+## Excluir um painel
 
-<mark style="color:red;">**Observação**</mark>: Você pode identificar se um painel é pessoal ou compartilhado verificando o ícone à frente do nome do painel.
-
-## Edição/Exclusão de um painel pessoal
-
-Para editar seu painel pessoal ou compartilhado:
-
-1.  Clique no botão de filtro abaixo da barra de pesquisa.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Clique no nome do painel pessoal que você deseja editar.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3. Faça as alterações desejadas, como:
-   * Alterar a ordem das colunas
-   * Ajustar a visibilidade das colunas
-   * Editar filtros
-
-### **Salvando alterações no painel**
-
-Depois de fazer suas alterações, clique no botão de filtro abaixo da barra de pesquisa e, em seguida, selecione **Salvar alterações no painel**.
-
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_11.png)
-
-<mark style="color:red;">**Observação**</mark>: Somente painéis pessoais podem ser editados. Painéis compartilhados só podem ser editados por seu criador original.
-
-### **Renomeando um painel**
-
-Para renomear um painel pessoal ou compartilhado:
-
-1.  Clique no botão de filtro abaixo da barra de pesquisa.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2.  Selecione o painel que você deseja renomear.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_7.png)
-3.  Selecione **Renomear painel atual**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_8.png)
-4.  Insira o novo nome e, em seguida, clique em **Salvar**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_9.png)
-
-<mark style="color:red;">**Observação**</mark>: Somente painéis pessoais podem ser renomeados. Painéis compartilhados só podem ser renomeados por seu criador original.
-
-### Excluir um painel
-
-Para excluir um painel pessoal:
-
-1.  Clique no botão de filtro abaixo da barra de pesquisa.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_1.png)
-2. Passe o mouse sobre o painel que você deseja excluir.
-3.  Clique no ícone de lixeira ao lado.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_12.png)
-4.  Confirme a exclusão clicando em **Excluir**.
-
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/personal_dashboards_13.png)
-
-<mark style="color:red;">**Observação**</mark>: Somente painéis pessoais podem ser excluídos. Painéis compartilhados só podem ser excluídos por seu criador original.
+Abra a lista de painéis, passe o mouse sobre um painel seu e selecione o
+ícone de **lixeira**. Confirme com **Excluir**. O controle de exclusão fica
+indisponível para um painel que outra pessoa compartilhou com você.

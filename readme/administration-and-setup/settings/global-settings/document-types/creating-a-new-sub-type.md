@@ -1,26 +1,23 @@
 # Tworzenie nowego Podtypu
 
-## Oto instrukcje krok po kroku, jak utworzyć nowy podtyp:
+Utwórz podtyp dokumentu, gdy jeden rodzaj dokumentu potrzebuje własnych ustawień pól, układu walidacji lub skryptów. Potrzebujesz dostępu do **Ustawienia → Typy dokumentów**.
 
-*   **Przejdź do obszaru Ustawień:** Zaloguj się do DocBits jako administrator i przejdź do obszaru Zarządzania Typami Dokumentów.
+## 1. Otwórz typ dokumentu
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_type_settings_nav.png" alt="Docbits Document Type Settings Nav"><figcaption></figcaption></figure>
+Otwórz **Ustawienia → Typy dokumentów**. W karcie odpowiedniego typu dokumentu wybierz **Podtypy dokumentów**. Poniższy przykład używa typu **Faktura**; wybierz typ pasujący do Twoich dokumentów. Inne linki w karcie prowadzą do ustawień całego typu dokumentu.
 
-*   **Wybierz opcję dodania podtypu:** Kliknij przycisk "+ Nowy", aby dodać nowy podtyp.
+<figure><img src="../../../../.gitbook/assets/new-subtype-document-type-pl.png" alt="Karta Faktura w polskich ustawieniach Typy dokumentów z linkiem Podtypy dokumentów"><figcaption><p>Otwórz podtypy typu dokumentu, który chcesz skonfigurować.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/docbits_add_subtype_button.png" alt="Docbits Add Subtype Button"><figcaption></figcaption></figure>
+## 2. Rozpocznij nowy podtyp
 
-*   **Nazwij podtyp:** Wprowadź opisową nazwę dla nowego podtypu. Nazwa ta powinna jasno opisywać cel podtypu, aby użytkownicy mogli łatwo zrozumieć, jaki rodzaj dokumentów on reprezentuje.
+Na stronie **Podtypy dokumentów** wybierz **Nowy**. Istniejące podtypy są widoczne na liście; menu **Actions** (trzy kropki) służy do istniejącego wiersza. Jeśli przycisk **Nowy** nie reaguje na kliknięcie myszą, ustaw na nim fokus klawiaturą i naciśnij **Enter**.
 
-<figure><img src="https://lh7-us.googleusercontent.com/hFxoJh9mFR52IbFtRGTstXUGjUc2u9fBzlya5kPj18REi9ampOKfek6NPaNje_fGash3brlAZkEw8MHqDPpNEPCvnb122xYiHMqwVzV35FQdoev8XLXiu7DogUuGjsoun51sum8Z8PLZo2xw9bvImRc" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-list-pl.png" alt="Polska lista Podtypy dokumentów z przyciskiem Nowy i przykładowym podtypem"><figcaption><p>Organizacja testowa dokumentacji zawiera tylko przykładowy podtyp.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/EjBS5qKWAm0SoZhLkhT2KW1q5F89vZ6FCLZ2ZzvxfJPmVE9DyyAUXieHA_56guDbKsuEvNDY9DyA-uUMx8Q1UDMSohmhyIVnnLfZaPiXrVSGsXpnjEgtpF7GtOOiRX8VsXBpu2-3lpqc0zu2LdzIYZk" alt=""><figcaption></figcaption></figure>
+## 3. Nazwij go i zapisz
 
-*   **Skonfiguruj ustawienia początkowe:** Ustaw początkowe ustawienia dla nowego podtypu, w tym domyślne pola, opcje i szablony, które mają być używane dla tego podtypu. Może to obejmować dodanie określonych pól metadanych, określenie przepływów pracy zatwierdzania lub skonfigurowanie uprawnień użytkownika.
-*   **Dokonaj opcjonalnych konfiguracji:** W zależności od wymagań Twojej firmy lub charakteru dokumentów, możesz dokonać dodatkowych konfiguracji, aby dostosować nowy podtyp do swoich konkretnych potrzeb. Może to obejmować ustawienie wartości domyślnych, reguł walidacji lub niestandardowych działań.
+Wprowadź **Name** używając liter i podkreślników, a następnie wprowadź opisowy **Title**. Oba pola są wymagane. Nazwy na tym zrzucie ekranu są tylko przykładami. Wybierz **Ratować**, aby utworzyć podtyp, lub **Anulować**, aby wyjść bez tworzenia go.
 
-<figure><img src="https://lh7-us.googleusercontent.com/d3-6iNTABnLH9KbWlM1NMu8Nsy2-KbqTd2elHgZYF1jwZOKqP17qttUCD4j676VJN3t7J0I85wHjr8TIfv3UGgLVxNvV4ns2I82EfCKHbyfIAUA8ML6IbLzoLH4Ucn57XzgUNZLO9LeCLzlk_m-M3EQ" alt=""><figcaption><p>Działanie</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-pl.png" alt="Okno Utwórz nowy typ dokumentu podrzędnego z polami Name i Title oraz przyciskami Anulować i Ratować po polsku"><figcaption><p>Podczas tworzenia wprowadzane są tylko pola Name i Title.</p></figcaption></figure>
 
-*   **Zapisz nowy podtyp:** Po wprowadzeniu wszystkich wymaganych informacji zapisz nowy podtyp, aby utworzyć go w systemie zarządzania dokumentami.
-
-Po utworzeniu nowego podtypu użytkownicy mogą dodawać i zarządzać dokumentami tego typu zgodnie z określonymi przez Ciebie ustawieniami początkowymi. Upewnij się, że poinformowałeś użytkowników o nowym podtypie i zapewniłeś szkolenie lub wskazówki, jeśli to konieczne, aby pomóc im efektywnie z niego korzystać.
+Po zapisaniu nowy podtyp pojawia się na liście. Aby ustawić jego pola, układ lub skrypty, otwórz jego menu **Actions** i postępuj zgodnie z instrukcją [Konfiguruj podtypy](configure-subtypes.md). Te ustawienia wykonuje się po utworzeniu, a nie w oknie **Nowy**.

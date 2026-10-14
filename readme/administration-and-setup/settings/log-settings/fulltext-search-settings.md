@@ -1,15 +1,16 @@
 # Paramètres de la Recherche Plein Texte
 
-<figure><img src="../../../.gitbook/assets/fulltext_search_settings.png" alt="Paramètres de la Recherche Plein Texte"><figcaption><p>Paramètres de la Recherche Plein Texte — Boîte de dialogue « Module requis »</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc735-fulltext-search-settings-module-required-fr-20261011.png" alt="Paramètres de la Recherche Plein Texte dans le bac à sable, avec une boîte de dialogue expliquant que le module est requis et les boutons « Accéder aux modules » et « Activer maintenant »"><figcaption><p>Lorsque la Recherche Plein Texte est désactivée, cette boîte de dialogue explique la marche à suivre.</p></figcaption></figure>
 
-Les Paramètres de la Recherche Plein Texte contrôlent ce que DocBits indexe et la façon dont ce contenu devient consultable dans les documents, les données de référence ERP et les modèles. La page de paramètres ne s'ouvre que lorsque le **module Recherche Plein Texte** est activé — consultez [Recherche Plein Texte](../document-processing/module/fulltext-search.md) pour le langage de requête utilisateur.
+Les Paramètres de la Recherche Plein Texte contrôlent ce que DocBits indexe et la façon dont ce contenu devient consultable dans les documents, les données de référence ERP et les modèles. La page de paramètres affiche une boîte de dialogue d'exigence tant que le **module Recherche Plein Texte** n'est pas activé — consultez [Recherche plein texte](../document-processing/module/fulltext-search.md) pour le langage de requête destiné aux utilisateurs.
 
 ## Pré-requis
 
-Le module Recherche Plein Texte doit être activé dans **Paramètres → Traitement de Document → Module → Tableaux de bord → Recherche plein texte**. Si le module n'est pas activé, une boîte de dialogue vous propose :
+Le module Recherche Plein Texte doit être activé dans **Paramètres → Module → Tableaux de bord et analyses → Recherche de texte intégral**. Si le module n'est pas activé, la boîte de dialogue propose trois actions :
 
-* **Aller aux modules** — Ouvrir la page de configuration des modules pour vérifier les réglages.
-* **Activer maintenant** — Activer le module Recherche Plein Texte directement (démarre un abonnement DocSearch).
+* **Aide (?)** — Ouvrir la documentation de la Recherche Plein Texte dans un nouvel onglet avant de modifier un paramètre.
+* **Accéder aux modules** — Ouvrir les paramètres du module Tableaux de bord et analyses pour vérifier la configuration.
+* **Activer maintenant** — Ouvrir la boîte de dialogue d'abonnement. Vérifiez et confirmez cette boîte de dialogue avant que le module ne soit activé ; cliquer sur ce bouton seul ne l'active pas.
 
 La page de paramètres elle-même devient accessible une fois le module actif.
 
@@ -51,4 +52,4 @@ Une fois activée et configurée, la Recherche Plein Texte permet aux utilisateu
 * D'accéder aux résultats directement depuis le tableau de bord.
 * D'utiliser la recherche sémantique (préfixe `vector:`) quand l'indexation vectorielle est active pour ce type de contenu.
 
-Consultez la page du module [Recherche Plein Texte](../document-processing/module/fulltext-search.md) pour la référence complète du langage de requête, y compris les requêtes par plage, les filtres intelligents et le mode de recherche IA.
+Consultez la page du module [Recherche plein texte](../document-processing/module/fulltext-search.md) pour la référence complète du langage de requête, y compris les requêtes par plage, les filtres intelligents et le mode de recherche IA.

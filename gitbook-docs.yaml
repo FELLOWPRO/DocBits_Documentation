@@ -58,3 +58,11 @@ site:
       content:
         directory: ./dutch
         language: nl
+    - type: space
+      key: space-9
+      title: Chinese
+      path: english
+      draft: true
+      content:
+        directory: ./docbits
+        language: en

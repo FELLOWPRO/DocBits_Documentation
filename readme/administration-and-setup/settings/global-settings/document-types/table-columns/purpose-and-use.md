@@ -1,44 +1,35 @@
 # Zweck und Verwendung
 
-## Die korrekte Einrichtung von Tabellenspalten ist entscheidend, um eine effiziente Datenspeicherung, Abfrage und Berichterstattung zu gewährleisten.
+Eine Tabellenspalte ist ein Feld der Positionstabelle. Alles, was DocBits mit einer Tabelle macht (Extraktion, Validierung, Bestellabgleich, Export), arbeitet mit den hier konfigurierten Spalten.
 
-**Hier sind die Hauptgründe dafür:**
+## Wo eine Spalte erscheint
 
+| Ort | Was die Spalte dort bewirkt |
+|---|---|
+| **Validierungsmaske** | Eine Spalte in der Positionstabelle. Der *Title* ist die Kopfzeile, der *Column Type* bestimmt den Editor (Betrag, Datum, Text, Ja/Nein). Ausgeblendete Spalten werden nicht angezeigt. |
+| **Tabellentraining** | Beim Training der Tabelle eines Lieferanten ordnen Sie jede erkannte Tabellenspalte einer dieser konfigurierten Spalten zu. Nur konfigurierte Spalten können zugeordnet werden. |
+| **KI-Tabellenextraktion** | Die KI füllt die konfigurierten Spalten. Eine mit *Use AI* markierte Spalte wird von der KI auch bei Lieferanten mit trainierten Regeln gefüllt. |
+| **Validierungsregeln** | Positionsprüfungen wie *Menge × Einzelpreis = Zeilensumme* laufen auf den Standardspalten `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `CHARGES`, `DISCOUNT`. |
+| **Bestellabgleich** | Benötigt die Standardspalten Artikelnummer, Einzelpreis, Menge und Gesamtbetrag. Fehlen sie, zeigt das Dokument *Line Item Table is missing Mandatory column for PO*. |
+| **Export** | Jede nicht ausgeblendete Spalte ist Teil der Positionsdaten, die an das ERP gesendet werden. Das Export-Mapping verweist auf den *Column name*. |
+| **Skripte** | Skripte lesen und schreiben Spalten über den *Column name*, zum Beispiel `row["TOTAL_AMOUNT"]`. |
 
+## Geltungsbereich
 
-**Speicherplatzoptimierung:**
+* Tabellenspalten werden **pro Tabelle** konfiguriert, und eine Tabelle gehört zu einem **Dokumenttyp**. Rechnungsspalten wirken sich nicht auf Lieferscheine aus.
+* Die Konfiguration gilt **pro Organisation**. Unterorganisationen erben sie.
+* Welche Spalten für einen bestimmten Lieferanten *gefüllt* werden, entscheidet das Training dieses Lieferanten oder die KI; die Spaltenkonfiguration legt nur fest, welche Spalten existieren.
 
-* Die sorgfältige Auswahl und Anordnung von Spalten kann Ihnen helfen, den von Ihrer Datenbank benötigten Speicherplatz zu minimieren.
-* Dies ist besonders wichtig bei der Arbeit mit großen Datenmengen, da unnötige oder redundante Spalten Ressourcen verschwenden können.
+## Typische Gründe, die Konfiguration zu ändern
 
+* Ein kundenspezifischer Wert muss pro Position erfasst werden (Kostenstelle, Projektnummer, interne Artikelnummer) → Spalte hinzufügen.
+* Eine Standardspalte wird nie verwendet und überfrachtet die Validierungsmaske → ausblenden.
+* Eine Spalte muss vor dem Export immer gefüllt sein → als *Required* markieren.
+* Ein Wert stammt aus dem ERP-Lookup und darf von Benutzern nicht bearbeitet werden → als *Read Only* markieren.
+* Die KI erfasst eine Spalte besser als die trainierten Regeln (zum Beispiel Freitextbeschreibungen) → als *Use AI* markieren.
 
+## Verwandte Seiten
 
-**Datenkonsistenz:**
-
-* Indem Sie sicherstellen, dass jede Spalte nur Daten enthält, die für ihren spezifischen Zweck relevant sind, können Sie die Konsistenz Ihrer Datenbank verbessern.
-* Dies bedeutet, dass Ihre Daten sauberer und zuverlässiger sind, was wiederum die Qualität Ihrer Berichterstattung verbessert.
-
-
-
-**Abfrageleistung:**
-
-* Gut gestaltete Tabellenspalten können die Leistung von Datenbankabfragen erheblich verbessern. Beispielsweise kann das Setzen von Indizes auf häufig abgefragte Spalten dazu beitragen, dass Abfragen schneller ausgeführt werden.
-* Das Vermeiden unnötiger Spalten in Abfrageergebnissen kann ebenfalls die Abfrageleistung erhöhen.
-
-
-
-**Einfachere Berichterstattung:**
-
-* Die Organisation Ihrer Daten in aussagekräftigen Spaltenstrukturen erleichtert die Erstellung von Berichten und Analysen.
-* Gut gestaltete Tabellenspalten können auch die Lesbarkeit von Berichten erhöhen und sicherstellen, dass wichtige Informationen leicht zu finden sind.
-
-
-
-**Zukunftssicherheit:**
-
-* Durch die korrekte Einrichtung der Tabellenspalten von Anfang an können Sie Ihre Datenbank besser auf zukünftige Anforderungen vorbereiten.
-* Sie können einfacher neue Funktionen hinzufügen und Änderungen am Datenmodell vornehmen, ohne bestehende Daten zu beeinträchtigen.
-
-
-
-Insgesamt trägt die korrekte Einrichtung von Tabellenspalten dazu bei, die Effizienz, Konsistenz und Leistung Ihrer Datenbank zu verbessern, was wiederum die Qualität Ihrer Datenspeicherung, Abfrage und Berichterstattung erhöht.
+* [Neue Spalte hinzufügen](adding-a-new-column.md)
+* [Spalten bearbeiten und löschen](editing-and-deleting-columns.md)
+* [Table Extraction Troubleshoot](../../../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md)

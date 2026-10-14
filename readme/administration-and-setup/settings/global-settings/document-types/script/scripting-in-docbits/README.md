@@ -8,7 +8,7 @@ Willkommen im Docbits Scripting Guide! Hier lernen Sie, wie Sie Skripte verwende
 
 Skripte in Docbits werden in Python geschrieben. Sie interagieren mit Dokumentfeldern und Metadaten, um eine Vielzahl von Operationen durchzuführen, von einfacher Datenformatierung bis hin zu komplexer Logik.
 
-**Wichtige Funktionen**
+#### Wichtige Funktionen
 
 * `get_field_value(fields_dict, field_name, default=None)`: Ruft den Wert eines angegebenen Feldes ab.
 * `set_field_value(fields_dict, field_name, value)`: Setzt den Wert eines angegebenen Feldes.
@@ -19,7 +19,7 @@ Skripte in Docbits werden in Python geschrieben. Sie interagieren mit Dokumentfe
 
 Im Folgenden finden Sie mehrere Beispiele, die gängige Scripting-Aufgaben demonstrieren.
 
-**Beispiel 1: Währungszuordnung für Rechnungen**
+#### Beispiel 1: Währungszuordnung für Rechnungen
 
 Standardisieren Sie Währungssymbole oder -texte zu ISO-Währungscodes.
 

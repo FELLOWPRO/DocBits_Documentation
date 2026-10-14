@@ -1,44 +1,33 @@
 # Best Practices
 
-## Best Practices für die Organisation von Daten in Tabellen tragen dazu bei, die Datenbankstruktur übersichtlich zu halten, die Datenintegrität zu verbessern und die Leistung zu optimieren.
+## Standardspalten für Beträge und Mengen beibehalten
 
-**Hier sind einige Best Practices:**
+Die Positionsprüfungen (*Menge × Einzelpreis = Zeilensumme*) und der Bestellabgleich suchen nach den Standardspalten `QUANTITY`, `UNIT_PRICE`, `TOTAL_AMOUNT`, `ITEM_NUMBER`. Wenn Sie stattdessen eigene Spalten für diese Werte anlegen, laufen die Prüfungen nicht, und der Bestellabgleich meldet fehlende Pflichtspalten. Benennen Sie den *Titel* um, wenn die Formulierung nicht passt; behalten Sie aber die Spalte.
 
+## Ausblenden statt löschen
 
+Standardspalten, die Sie nicht benötigen, werden ausgeblendet und nicht gelöscht; sie lassen sich ohnehin nicht löschen. Auch bei eigenen Spalten ist Ausblenden die sicherere Wahl, solange Sie nicht sicher wissen, ob ein Skript oder ein Export-Mapping die Spalte noch referenziert.
 
-**Aussagekräftige Spaltennamen verwenden:**
+## Nur als erforderlich markieren, was den Export blockiert
 
-* Wählen Sie Spaltennamen, die klar und beschreibend sind, um die Lesbarkeit und Verständlichkeit Ihrer Datenbankstruktur zu verbessern. Vermeiden Sie abgekürzte oder kryptische Namen.
-* Benennen Sie Spalten so, dass sie den Inhalt oder die Bedeutung der darin gespeicherten Daten genau widerspiegeln. Dies erleichtert spätere Abfragen und Berichte.
+Jede erforderliche Spalte muss in jeder Zeile gefüllt sein, bevor ein Benutzer das Dokument freigeben kann. Verwenden Sie dies für Werte, die das ERP bei Fehlen ablehnt (zum Beispiel die Kostenstelle in einem Buchungsexport), nicht für Werte, die lediglich nützlich sind.
 
+## *Read Only* für nachgeschlagene Werte verwenden
 
+Werte, die ein Skript oder ein Stammdaten-Lookup in die Tabelle schreibt (Artikelbeschreibung aus dem Artikelstamm, Steuercode vom Lieferanten), sollten schreibgeschützt sein, damit Benutzer die Quelle korrigieren statt der Kopie.
 
-**Geeignete Datentypen wählen:**
+## Use AI pro Spalte, nicht pro Lieferant
 
-* Verwenden Sie den kleinstmöglichen Datentyp, der die Anforderungen Ihrer Daten angemessen erfüllt, um Speicherplatz zu sparen und die Leistung zu verbessern.
-* Berücksichtigen Sie die Art der gespeicherten Daten und wählen Sie den Datentyp entsprechend aus. Zum Beispiel: verwenden Sie INTEGER für Ganzzahlen, VARCHAR für Zeichenfolgen und DATE für Daten.
+Bei einem Lieferanten mit trainierten Regeln kommen die meisten Spalten aus den Regeln korrekt heraus. Ist eine Spalte unzuverlässig (lange Beschreibungen mit Zeilenumbruch, ein Rabatt, der manchmal an anderer Stelle steht), setzen Sie *Use AI* nur für diese Spalte. Die Regeln behalten den Rest.
 
+## Spalten für das ERP benennen, nicht für das Dokument
 
+Der *Column name* landet in Export-Mappings und Skripten. `COST_CENTRE` lässt sich einfacher zuordnen als `KST` und ändert sich nicht, wenn ein Lieferant es anders druckt.
 
-**Notwendigkeit von Spalten verstehen (Required Columns):**
+## An einem neu gestarteten Dokument testen
 
-* Markieren Sie Spalten als erforderlich (NOT NULL), wenn sie für den ordnungsgemäßen Betrieb Ihrer Anwendung unerlässlich sind und NULL-Werte inakzeptabel sind.
-* Stellen Sie bei der Entscheidung, ob eine Spalte als erforderlich markiert werden soll, sicher, dass die Anwendung NULL-Werte logisch verarbeiten kann und dass NULL-Werte keine unerwarteten Fehler verursachen.
+Starten Sie nach einer Änderung ein bestehendes Dokument des Dokumenttyps neu und öffnen Sie es: Die neue Spalte erscheint, die ausgeblendete ist verschwunden, erforderliche Zellen sind markiert. Erst dann geben Sie die Änderung für die Benutzer frei.
 
+## Eine Tabelle pro Positionsstruktur
 
-
-**Fremdschlüssel für Beziehungen verwenden:**
-
-* Wenn Ihre Datenbank Beziehungen zwischen Tabellen aufweist, verwenden Sie Fremdschlüssel, um diese Beziehungen zu definieren. Dies verbessert die Datenintegrität und ermöglicht die Durchsetzung von referenziellen Integritätsbeschränkungen.
-* Berücksichtigen Sie unbedingt die Indizierung von Fremdschlüsseln, um die Leistung von Abfragen zu optimieren, die auf diese Beziehungen zugreifen.
-
-
-
-**Regelmäßige Überprüfung und Aktualisierung:**
-
-* Überprüfen Sie regelmäßig die Datenbankstruktur, um sicherzustellen, dass sie den sich ändernden Anforderungen Ihrer Anwendung entspricht. Nehmen Sie bei Bedarf Aktualisierungen vor, um die Effizienz und Leistung Ihrer Datenbank zu verbessern.
-* Berücksichtigen Sie unbedingt das Feedback von Benutzern und Entwicklern, um Verbesserungsmöglichkeiten zu identifizieren und umzusetzen.
-
-
-
-Durch die Anwendung dieser Best Practices können Sie eine gut organisierte und effiziente Datenbankstruktur erstellen, die den Anforderungen Ihrer Anwendung entspricht und eine zuverlässige Grundlage für das Speichern, Abfragen und Berichten Ihrer Daten bietet.
+Legen Sie eine zweite Tabelle nur an, wenn ein Dokumenttyp tatsächlich zwei voneinander unabhängige Tabellen hat (zum Beispiel Artikelzeilen und eine separate Tabelle für Nebenkosten). Zusätzliche leere Tabellen erscheinen bei jedem Dokument des Typs.

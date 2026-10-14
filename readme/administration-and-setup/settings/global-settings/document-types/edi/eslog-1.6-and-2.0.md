@@ -1,69 +1,22 @@
-# e-SLOG 1.6 und 2.0
+# eSLOG 1.6 und 2.0
 
-## Unterstützte eSLOG Rechnungsversionen
+**eSLOG 1.6** und **eSLOG 2.0** erscheinen in DocBits als getrennte Formate für elektronische Rechnungen. Wählen Sie die Version, die Ihre eingehende slowenische Rechnung verwendet. Die Screenshots unten zeigen die aktuelle englische Sandbox-Oberfläche in einer Dokumentations-Testorganisation; sie belegen nicht, dass eine Rechnung der jeweiligen Version erfolgreich verarbeitet wurde.
 
-Derzeit werden **eSLOG Rechnungsversionen 1.6 und 2.0** unterstützt.
+## Die Konfigurationen finden
 
-Offizielle eSLOG Dokumentation finden Sie [hier](https://epos.si/en).
+1. Gehen Sie zu **Settings → Document Types → Invoice → E-Doc**.
+2. Klappen Sie **E-SLOG 1.6** oder **E-SLOG 2.0** auf. Jedes Format hat seine eigenen drei Einträge.
 
-Beide eSLOG-Versionen sind standardmäßig aktiviert.
+<figure><img src="../../../../../.gitbook/assets/dbdc-142-eslog-16-en.png" alt="Englisches Sandbox-Format E-SLOG 1.6 mit den Zeilen Transformation, Preview und Extraction Paths"><figcaption>E-SLOG 1.6 in der E-Doc-Liste der Rechnung.</figcaption></figure>
 
-### Schritte zur Modifizierung der eSLOG-Konfiguration
+<figure><img src="../../../../../.gitbook/assets/dbdc-142-eslog-20-en.png" alt="Englisches Sandbox-Format E-SLOG 2.0 mit den Zeilen Transformation, Preview und Extraction Paths"><figcaption>E-SLOG 2.0 hat getrennte Konfigurationen für dieselben drei Schritte.</figcaption></figure>
 
-**eSLOG konfigurieren:**
+| Eintrag | Was er steuert | Nächste Anleitung |
+| --- | --- | --- |
+| **TRANSFORMATION (XSLT)** | Wandelt die Quelldaten des Formats in strukturiertes XML um. | [Transformation](edi/edi-transformation-file-guide.md) |
+| **PREVIEW (XSLT)** | Definiert die lesbare Dokumentansicht. | [Vorschau](edi/edi-preview-file-guide.md) |
+| **EXTRACTION PATHS (JSON)** | Ordnet XML-Werte den DocBits-Feldern und Tabellenspalten zu. | [Extraktionspfade](edi/edi-extraction-paths-file-guide.md) |
 
-* Navigieren Sie zu **Einstellungen → Globale Einstellungen → Dokumenttypen → Rechnung**.
-*   Klicken Sie auf **E-Doc**.\
+Klicken Sie auf eine Zeile, um ihre Versionen und Konfiguration zu sehen. **Default** kennzeichnet den mitgelieferten Eintrag. **Last Modified At** zeigt, wann dieser Eintrag zuletzt geändert wurde. Die Schaltfläche **New** startet einen zusätzlichen Konfigurationseintrag. Das Drei-Punkte-Menü einer Default-Zeile bietet **Customize**, wodurch eine organisationsspezifische Kopie erstellt wird, und **Delete**; prüfen Sie die ausgewählte Zeile sorgfältig, bevor Sie Delete verwenden.
 
-
-    <figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-* Eine Liste aller verfügbaren e-Dokumente wird angezeigt.
-*   Suchen Sie die eSLOG-Version, die Sie modifizieren möchten.\
-
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_purchase_order_supplier.png" alt="Bestellung Lieferant Rechnung Übersicht"><figcaption></figcaption></figure>
-
-### **Transformation und XML-Pfadkonfiguration:**
-
-In den **Transformationseinstellungen** können Sie den Pfad definieren, um spezifische Informationen innerhalb der XML-Datei zu lokalisieren und in einer neuen Struktur zu speichern, um den Zugriff auf die Daten zu erleichtern. **Hinweis:** Wenn Sie diese Funktionalität nutzen, müssen Sie die neu erstellten XML-Pfade verwenden, nicht die ursprünglichen XML-Pfade, in der **Vorschau** und im **Extraktionspfad**.
-
-#### **Schritte zur Modifizierung der Transformationsdatei:**
-
-1. Öffnen Sie die **Transformation**.
-2. Erstellen Sie einen neuen Entwurf, indem Sie auf das **Stift-Symbol** klicken.
-3. Wählen Sie den neu erstellten Entwurf aus.
-4. Erstellen Sie entweder ein neues Feld oder modifizieren Sie ein bestehendes.
-5. Setzen Sie den gewünschten Pfad für die Datenextraktion.
-6. Klicken Sie auf **Speichern**.
-
-### Vorschau-PDF-Konfiguration
-
-Die **Vorschau-PDF-Konfiguration** wird verwendet, um eine lesbare Version des Dokuments zu erstellen. Sie können sie mit HTML anpassen, um Ihren Bedürfnissen gerecht zu werden.
-
-#### **Schritte zur Modifizierung der Vorschau-Datei:**
-
-1. Öffnen Sie die **Vorschau**.
-2. Erstellen Sie einen neuen Entwurf, indem Sie auf das **Stift-Symbol** klicken.
-3. Wählen Sie den neu erstellten Entwurf aus.
-4. Erstellen Sie entweder ein neues Feld oder modifizieren Sie ein bestehendes.
-5. Setzen Sie den gewünschten Pfad für die Datenextraktion.
-6. Klicken Sie auf **Speichern**.
-
-### Konfiguration der Extraktionspfade
-
-Die **Konfiguration der Extraktionspfade** wird verwendet, um Daten zu extrahieren und Felder im **Validierungsbildschirm** auszufüllen, wie z.B. die Rechnungstabelle oder Felder, die im Rechnungslayout konfiguriert sind.
-
-#### **Schritte zur Modifizierung der Extraktionspfade:**
-
-1. Öffnen Sie die **Extraktionspfade**.
-2. Erstellen Sie einen neuen Entwurf, indem Sie auf das **Stift-Symbol** klicken.
-3. Wählen Sie den neu erstellten Entwurf aus.
-4. Erstellen Sie ein neues Feld oder modifizieren Sie ein bestehendes.
-5.  Die linke Seite repräsentiert die **DocBits-Feld-ID**, die Sie in **Einstellungen → Globale Einstellungen → Dokumenttypen → Rechnung → Felder** finden können.\
-
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_docbits_image_9.jpg" alt="DocBits Bild"><figcaption></figcaption></figure>
-
-    <figure><img src="../../../../../.gitbook/assets/docbits_docbits_image_10.jpg" alt="DocBits Bild"><figcaption></figcaption></figure>
-6. Die rechte Seite repräsentiert den **Pfad zum Feld**, das in der Transformation erstellt wurde.
-7. Klicken Sie auf **Speichern**.
+Innerhalb einer Konfiguration erstellt der Stift neben einer aktiven Version einen Entwurf. Prüfen Sie einen Entwurf mit dem Testbereich **Preview** und der ID eines repräsentativen hochgeladenen Dokuments, bevor Sie ihn mit dem Häkchen aktivieren. Das Papierkorb-Symbol eines Entwurfs entfernt diesen Entwurf. Die tatsächlichen Feldnamen und XML-Pfade hängen von Ihrer eSLOG-Datei ab; Details zum Editor finden Sie in der jeweiligen Anleitung oben.

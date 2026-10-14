@@ -180,7 +180,7 @@ Transformieren, berechnen, formatieren und anreichern Sie Dokumentdaten, um sie 
 1. Sehen Sie sich die Pattern-Beschreibungen oben an
 2. Bestimmen Sie, welches Pattern zu Ihrem Anwendungsfall passt
 3. Prüfen Sie Komplexität und geschätzte Einrichtungszeit
-4. Lesen Sie den Abschnitt „Wann verwenden" im Pattern-Leitfaden
+4. Lesen Sie den Abschnitt „Wann verwenden“ im Pattern-Leitfaden
 
 ### Schritt 2: Voraussetzungen prüfen
 
@@ -224,29 +224,29 @@ Viele reale Szenarien erfordern die Kombination mehrerer Patterns:
 ### Beispiel 1: Vollständige Rechnungsverarbeitung
 
 ```
-1. API-Integrations-Pattern → Aktuelle Preise abrufen
-2. Datentransformations-Pattern → Summen berechnen
-3. PO-Matching-Pattern → Gegen Bestellung validieren
-4. Entscheidungslogik-Pattern → Anhand der Abweichung routen
-5. Aufgabenverwaltungs-Pattern → Freigabeaufgaben erstellen
+1. API Integration Pattern → Fetch current pricing
+2. Data Transformation Pattern → Calculate totals
+3. PO Matching Pattern → Validate against PO
+4. Decision Logic Pattern → Route based on variance
+5. Task Management Pattern → Create approval tasks
 ```
 
 ### Beispiel 2: Freigabe hochwertiger Rechnungen
 
 ```
-1. Datentransformations-Pattern → Beträge berechnen
-2. Entscheidungslogik-Pattern → Schwellen prüfen
-3. Aufgabenverwaltungs-Pattern → Mehrstufige Freigabe
-4. API-Integrations-Pattern → Externe Systeme benachrichtigen
+1. Data Transformation Pattern → Calculate amounts
+2. Decision Logic Pattern → Check thresholds
+3. Task Management Pattern → Multi-level approval
+4. API Integration Pattern → Notify external systems
 ```
 
 ### Beispiel 3: Ausnahmebehandlung
 
 ```
-1. PO-Matching-Pattern → Abweichungen erkennen
-2. Entscheidungslogik-Pattern → Schweregrad der Ausnahme einstufen
-3. Aufgabenverwaltungs-Pattern → Prüfaufgaben erstellen
-4. Datentransformations-Pattern → Auswirkung berechnen
+1. PO Matching Pattern → Detect variances
+2. Decision Logic Pattern → Classify exception severity
+3. Task Management Pattern → Create review tasks
+4. Data Transformation Pattern → Calculate impact
 ```
 
 ---
@@ -255,17 +255,17 @@ Viele reale Szenarien erfordern die Kombination mehrerer Patterns:
 
 Jedes Pattern enthält diese standardisierten Abschnitte:
 
-1. **Überblick** – Was das Pattern macht
-2. **Wann verwenden** – Geeignete Anwendungsfälle
-3. **Vollständiges Beispiel** – Reales Szenario
-4. **Schritt für Schritt** – Umsetzungsanleitung
-5. **Konfiguration** – Vorlagen zur Kartenkonfiguration
-6. **Workflow-Diagramm** – Visuelle Darstellung
-7. **Erweiterte Varianten** – Alternative Umsetzungen
-8. **Fehlerbehandlung** – Häufige Probleme und Lösungen
-9. **Test-Checkliste** – Validierungsschritte
-10. **Verwandte Patterns** – Ergänzende Patterns
-11. **Verwandte Leitfäden** – Referenzdokumentation
+1. **Overview** – Was das Pattern macht
+2. **When to Use** – Geeignete Anwendungsfälle
+3. **Complete Example** – Reales Szenario
+4. **Step-by-Step** – Umsetzungsanleitung
+5. **Configuration** – Vorlagen zur Kartenkonfiguration
+6. **Workflow Diagram** – Visuelle Darstellung
+7. **Advanced Variations** – Alternative Umsetzungen
+8. **Error Handling** – Häufige Probleme und Lösungen
+9. **Testing Checklist** – Validierungsschritte
+10. **Related Patterns** – Ergänzende Patterns
+11. **Related Guides** – Referenzdokumentation
 
 ---
 
@@ -277,11 +277,76 @@ Jedes Pattern enthält diese standardisierten Abschnitte:
 - [Vollständiger Workflow-Leitfaden-Index](../README.md)
 - [Einzelne Kartenleitfäden](../then/action/)
 - [Referenz der Bedingungskarten](../and/condition-cards-complete-guide.md)
+- [Workflow Linking Map](../../../../WORKFLOW_LINKING_MAP.md)
+
+**Weitere Ressourcen:**
+- [Kurzreferenz](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- [Release Notes Oktober 2025](../changelog/2025-10-october.md)
+- [Referenz zur Kartenversionierung](../../../docs/card_version.md)
 
 **Kontakt:**
 - Pattern-Feedback: docs@docbits.com
 - Technischer Support: support@docbits.com
 - Implementierungshilfe: consulting@docbits.com
+
+---
+
+## Pattern-Statistik
+
+| Kennzahl | Wert |
+|--------|-------|
+| **Patterns gesamt** | 5 |
+| **Abgedeckte Karten gesamt** | 30+ |
+| **Dokumentation gesamt** | ca. 1.200 Zeilen |
+| **Beispielszenarien** | 25+ |
+| **Konfigurationsvorlagen** | 15+ |
+| **Workflow-Diagramme** | 5 vollständige Diagramme |
+| **Querverweise** | 87+ interne Links |
+
+---
+
+## Zu Patterns beitragen
+
+Haben Sie ein Workflow-Pattern, von dem andere profitieren würden?
+
+**Richtlinien für Pattern-Beiträge:**
+
+1. **Dokumentieren Sie Ihren Workflow**
+   - Klares Geschäftsszenario
+   - Schritt-für-Schritt-Umsetzung
+   - Funktionierende Konfigurationsbeispiele
+   - Reale Testergebnisse
+
+2. **Folgen Sie der Pattern-Vorlage**
+   - Verwenden Sie die Standard-Abschnittsstruktur
+   - Nehmen Sie alle erforderlichen Elemente auf
+   - Fügen Sie Diagramme/Beispiele bei
+   - Ergänzen Sie einen Leitfaden zur Fehlerbehebung
+
+3. **Zur Prüfung einreichen**
+   - E-Mail an: docs@docbits.com
+   - Enthalten sein sollten: Pattern-Beschreibung, Anwendungsfälle, Umsetzungsanleitung
+   - Wir prüfen den Beitrag und nehmen ihn gegebenenfalls in die offizielle Dokumentation auf
+
+**Vorteile:**
+- Helfen Sie anderen DocBits-Anwendern
+- Werden Sie in der Dokumentation genannt
+- Verbessern Sie die Wissensbasis zum Produkt insgesamt
+- Erhalten Sie Feedback zu Ihrer Umsetzung
+
+---
+
+## Änderungsprotokoll
+
+### Version 1.0 (23. Oktober 2025)
+- Erstveröffentlichung von 5 umfassenden Workflow-Patterns
+- API-Integrations-Pattern hinzugefügt
+- Aufgabenverwaltungs-Pattern hinzugefügt
+- PO-Matching-Pattern hinzugefügt
+- Entscheidungslogik-Pattern hinzugefügt
+- Datentransformations-Pattern hinzugefügt
+- Querverweise implementiert (87 Links)
+- Pattern-Auswahlhilfe erstellt
 
 ---
 
@@ -297,12 +362,17 @@ Jedes Pattern enthält diese standardisierten Abschnitte:
 2. Lesen Sie den vollständigen Pattern-Leitfaden
 3. Prüfen Sie Voraussetzungen und verwandte Leitfäden
 4. Befolgen Sie die Schritt-für-Schritt-Anleitung
-5. Testen Sie mit Beispiel-Dokumenten
+5. Testen Sie mit Beispieldokumenten
 6. Gehen Sie in Produktion
 7. Überwachen und optimieren
+
+**Benötigen Sie weitere Hilfe?**
+- Lesen Sie die [Übersicht der Workflow-Dokumentation](../README.md)
+- Schauen Sie in die [Kurzreferenz](../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+- Wenden Sie sich an das Support-Team
 
 ---
 
 **Zuletzt aktualisiert:** 23. Oktober 2025
-**Betreut von:** Dokumentations-Team
+**Betreut von:** Dokumentationsteam
 **Version:** 1.0

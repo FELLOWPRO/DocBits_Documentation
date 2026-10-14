@@ -1,33 +1,49 @@
 # Architectuur
 
-Cloud klant:
+## **DocBits Cloud-klant**
 
-<figure><img src="../../.gitbook/assets/architecture1.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_cloud_customer_architecture.png" alt="Architectuur voor DocBits Cloud-klanten"><figcaption></figcaption></figure>
 
-On premise:
+## DocBits On premise
 
-<figure><img src="../../.gitbook/assets/architecture2.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_on_premise_architecture.png" alt="Architectuur van DocBits On Premise"><figcaption></figcaption></figure>
 
 Doc**Bits** integreert naadloos met Infor LN/M3 via de ION API, ION Desk en Infor Standaard BODs. Onze API-integratie stelt ons in staat om gegevens naar Infor te exporteren en masterdata-validatie in Doc**Bits** uit te voeren.
 
+## **DocBits Operator-architectuur**
+
+Alle verbindingen tussen componenten zijn beveiligd met versleutelingsprotocollen volgens de industriestandaard. SSH, HTTPS en andere beveiligde kanalen waarborgen de integriteit en vertrouwelijkheid van gegevens in het hele systeem.
+
+**On premise:**&#x20;
+
+<figure><img src="../../.gitbook/assets/Operator_On-Prem.png" alt=""><figcaption></figcaption></figure>
+
+{% content-ref url="prefect-local-setup-requirements.md" %}
+[prefect-local-setup-requirements.md](prefect-local-setup-requirements.md)
+{% endcontent-ref %}
+
+**Cloud**:
+
+<figure><img src="../../.gitbook/assets/Operator Cloud .png" alt=""><figcaption></figcaption></figure>
+
 ## Gegevens exporteren naar Infor
 
-We gebruiken de ION API om de PDF met attributen naar IDM te sturen en de BOD Sync.CaptureDocument naar ION Desk. In ION Desk transformeren we de Sync.CaptureDocument naar de gewenste doel BODs op basis van het documenttype dat wordt verwerkt. Deze getransformeerde Infor BODs worden vervolgens automatisch geïmporteerd naar LN of M3.
+We gebruiken de ION API om de PDF met attributen naar IDM te sturen en de BOD Sync.CaptureDocument naar ION Desk. In ION Desk transformeren we de [Sync.CaptureDocument](../../infor-integration-and-configuration/exporting-in-docbits/) naar de gewenste doel-BODs, afhankelijk van het documenttype dat wordt verwerkt. Deze getransformeerde Infor BODs worden vervolgens automatisch geïmporteerd in LN of M3.
 
 {% hint style="info" %}
-Exporteer naar [Infor](../../infor-integration-and-configuration/exporting-to-infor/)
+Exporteren naar [Infor](../../infor-integration-and-configuration/exporting-to-infor/)
 {% endhint %}
 
 ## Masterdata-validatie in DocBits
 
-Om de leverancier te identificeren of inkooporderelementen te vergelijken/te matchen, activeren we een trigger in LN/M3 die de Sync.RemitToPartyMaster, Sync.SupplierPartyMaster en Sync.PurchaseOrder BODs naar Doc**Bits** stuurt. We configureren dit proces in ION Desk door de gegevensstroom naar een specifiek aansluitpunt naar Doc**Bits** te definiëren.
+Om de leverancier te identificeren of inkooporderregels te vergelijken/te matchen, activeren we in LN/M3 een trigger die de BODs Sync.RemitToPartyMaster, Sync.SupplierPartyMaster en Sync.PurchaseOrder naar Doc**Bits** stuurt. We configureren dit proces in ION Desk door de gegevensstroom naar een specifiek aansluitpunt (connection point) naar Doc**Bits** te definiëren.
 
-<figure><img src="../../.gitbook/assets/architecture3.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/docbits_architecture (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 [Masterdata-validatie](../../infor-integration-and-configuration/importing-customer-master-data/)
 {% endhint %}
 
-## E-mail Import OAuth Office365
+## E-mailimport OAuth Office365
 
-![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/o365_architecture.png)
+<figure><img src="../../.gitbook/assets/o365_architecture.png" alt=""><figcaption></figcaption></figure>

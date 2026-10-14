@@ -1,30 +1,43 @@
-# DocBits Infor on Premise Klant
+# DocBits Infor on Premise-klant
 
-Om gegevens naar de Infor onPremise klant te verzenden, bieden we twee manieren: Site2Site met IPsec of WatchDog
+Om gegevens naar een Infor onPremise-klant te sturen bieden wij twee mogelijkheden: Site2Site met IPsec of [WatchDog](https://docs.docbits.com/administration-and-setup/setup/watchdog)
 
-Gegevens verzenden naar Infor On-Premise Klant
+Gegevens verzenden naar een Infor On-Premise-klant
 
-Om gegevens naar een Infor on-premise klant te verzenden, bieden we twee manieren: Site-to-Site VPN met IPsec.
+Om gegevens naar een Infor on-premise-klant te sturen bieden wij twee mogelijkheden: Site-to-Site VPN met IPsec.
 
-## IPsec (Internet Protocol Security) Site-to-Site VPN Configuratie
+## IPsec (Internet Protocol Security) Site-to-Site VPN-configuratie
 
-### Voor een IPsec site-to-site VPN moet je de volgende poorten configureren en openen:
+### 1. Configuratiegegevens:
 
-1\. UDP poort 500: Gebruikt voor Internet Key Exchange (IKE) fase 1 en fase 2.
+| **IPSEC VPN Setup**            |                                                                 |
+| ------------------------------ | --------------------------------------------------------------- |
+|                                | **Endpoint B**                                                  |
+| **Customer**                   | _**FELLOWPRO AG**_                                              |
+| **Name of Contact**            | _**Daniel Lopez**_                                              |
+| **Mail**                       | [daniel.lopez@fellowpro.com](mailto:daniel.lopez@fellowpro.com) |
+| **Endpoint Hardware/Software** | _**StrongWAN**_                                                 |
+| **Location of Firewall**       | _**Frankfurt**_                                                 |
+| **Endpoint IP**                | _**46.101.133.158**_                                            |
+| **Network/Host 1**             | _**10.135.0.0/16**_                                             |
 
-2\. UDP poort 4500: Gebruikt voor NAT-traversal (NAT-T), waardoor VPN-verkeer door NAT (Network Address Translation) apparaten kan passeren.
+### 2. Voor een IPsec site-to-site VPN moet u de volgende poorten configureren en openen:
+
+1\. UDP-poort 500: wordt gebruikt voor Internet Key Exchange (IKE) fase 1 en fase 2.
+
+2\. UDP-poort 4500: wordt gebruikt voor NAT-traversal (NAT-T), waardoor VPN-verkeer door NAT-apparaten (Network Address Translation) kan gaan.
 
 ## Toegang tot Infor OS
 
-• Authenticatie URL: https://inforos.CustomerXYZad.net/
+• Authenticatie-URL: https://inforos.CustomerXYZad.net/
 
-• Gegevens URL: https://inforos.CustomerXYZad.net:7443/
+• Gegevens-URL: https://inforos.CustomerXYZad.net:7443/
 
 ## Samenvatting:
 
-Voor het opzetten van een IPsec site-to-site VPN, zorg ervoor dat de bovenstaande poorten en protocollen zijn geconfigureerd en geopend.
+Zorg er voor het opzetten van een IPsec site-to-site VPN voor dat de bovenstaande poorten en protocollen zijn geconfigureerd en geopend.
 
-Gebruik de verstrekte URL's om toegang te krijgen tot Infor OS voor authenticatie en gegevens.
+Gebruik de opgegeven URL's om toegang te krijgen tot Infor OS voor authenticatie en gegevens.
 
 
 

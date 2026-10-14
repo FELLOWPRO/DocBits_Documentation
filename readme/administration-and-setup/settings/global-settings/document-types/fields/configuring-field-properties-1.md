@@ -1,95 +1,34 @@
-# Configuring Field Properties
+# Veldeigenschappen configureren
 
-## Detailed instructions on setting properties such as Required, Read Only, Hidden, and OCR.
+Gebruik **Settings → Document Types → Fields** om te bepalen hoe velden zich gedragen voor een documenttype. Selecteer eerst het documenttype; het onderstaande voorbeeld toont **Invoice** in de Engelse interface.
 
-### Required:
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-overview-en.png" alt="Engelse veldinstellingen voor Invoice met herkenningsdrempels, zoekfunctie, kolommen met veldeigenschappen en Save Settings"><figcaption>Veldinstellingen voor Invoice in een DocBits-sandboxorganisatie.</figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_required_setting.png" alt="Docbits Field Required Setting"><figcaption></figcaption></figure>
+## Een veld zoeken en de eigenschappen wijzigen
 
-If a field is marked as Required, it means that this field must be filled in before the document can be saved or processed.
+1. Voer in **Search by Name** de veldnaam of het label in. Hiermee wordt de lijst gefilterd; het veld zelf wordt niet gewijzigd.
+2. Zoek de rij van het veld. **Invoice number** heeft bijvoorbeeld de technische naam `invoice_id`.
+3. Pas de bedieningselementen in die rij aan en selecteer vervolgens **Save Settings**. Dezelfde opslaanknop is beschikbaar boven en onder de tabel.
 
-**To set this property:**
+<figure><img src="../../../../../.gitbook/assets/dbdc155-field-properties-filtered-en.png" alt="Engels veld Invoice number met de bedieningselementen Required, Read Only, Hidden, Force Validation, Use AI, OCR en Match Score"><figcaption>De rij Invoice number na het zoeken naar `invoice_id`.</figcaption></figure>
 
-* Navigate to the field's settings in your DocBits system.
-* Enable the Required option for the relevant field.
+| Bedieningselement | Waarvoor u het gebruikt |
+| --- | --- |
+| **Required** | Markeer informatie die aanwezig moet zijn voor de validatie. Controleer het validatieresultaat van het document nadat u deze instelling hebt gewijzigd. |
+| **Read Only** | Toon een veld zonder dat gebruikers de waarde kunnen bewerken. |
+| **Hidden** | Houd het veld buiten de normale documentweergave. |
+| **Force Validation** | Eis dat het veld de validatie doorstaat. Configureer gedetailleerde regels apart; dit selectievakje is geen regeleditor. |
+| **Use AI** | Schakel AI-extractie voor dit veld in of uit. De rij toont of extractie is aangevraagd. |
+| **OCR** | Voer de OCR-betrouwbaarheidsdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar en geen taalinstelling. |
+| **Match Score** | Voer de matchingdrempel van het veld in. Dit is een getal, geen aan/uit-schakelaar. |
 
-**Impact:**
+De schuifregelaars **OCR** en **Match Score** onder **Recognition Settings** passen waarden toe op de hele veldenlijst. De selectievakjes direct onder de kolomtitels passen **Required**, **Read Only**, **Hidden** of **Force Validation** toe op de hele lijst. Controleer de betreffende rijen voordat u **Save Settings** selecteert. **Restore Defaults** zet de veldconfiguratie terug; gebruik dit alleen als u uw wijzigingen wilt vervangen.
 
-* This setting ensures that important information is captured and that no documents can be processed without the required data.
+## Overige bedieningselementen in deze weergave
 
-### Read Only:
+- **Create new group** en **Create field** voegen een groep of een veld toe. Zie [Velden toevoegen en bewerken](adding-and-editing-fields.md).
+- **Master Data Settings** opent de [configuratie van stamgegevens](master-data-settings.md).
+- De meest linkse selectievakjes selecteren velden. Het aangrenzende menu biedt **Reassign Field Group** voor geselecteerde velden.
+- De plusknop **Formula** opent de formule-editor voor dat veld. Het pictogram **info** toont veldinformatie. Het verwijderpictogram is niet beschikbaar voor standaardvelden.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_field_readonly_setting.png" alt="Docbits Field Readonly Setting"><figcaption></figcaption></figure>
-
-If a field is marked as Read Only, it means that users can view the contents of this field, but cannot make any changes to it.
-
-**To set this property:**
-
-* Go to the Field Options. Enable the Read Only option for the desired field.
-
-**Impact:**
-
-* This setting can be useful to protect sensitive information or to ensure that important data is not accidentally changed.
-
-### Hidden:
-
-<figure><img src="../../../../../.gitbook/assets/docbits_field_hidden_setting.png" alt="Docbits Field Hidden Setting"><figcaption></figcaption></figure>
-
-If a field is marked as "Hidden", it means that the field will be hidden in the user interface and users will not be able to see or access it.
-
-**To set this property:**
-
-* Go to the field options.
-* Enable the "Hidden" option for the corresponding field.
-
-**Impact:**
-
-* This setting is often used to hide internal or technical fields that are irrelevant to the end user or are only needed for internal processing.
-
-### OCR (Optical Character Recognition):
-
-<figure><img src="../../../../../.gitbook/assets/docbits_field_ocr_setting.png" alt="Docbits Field Ocr Setting"><figcaption></figcaption></figure>
-
-If a field is configured for OCR, it means that the system will try to extract the text from the document and insert it into this field. This setting is usually used for fields that are intended to be auto-filled.
-
-**To set this up:**
-
-* Enable the OCR option for the corresponding field.
-* If necessary, configure the OCR parameters such as language, font, etc.
-
-**Impact:**
-
-* Using OCR allows documents to be processed automatically by extracting information from texts and entering it into the appropriate fields, reducing manual effort and increasing efficiency.
-
-### Forced validation:
-
-<figure><img src="../../../../../.gitbook/assets/docbits_field_forced_validation_setting.png" alt="Docbits Field Forced Validation Setting"><figcaption></figcaption></figure>
-
-Configure the validation rules accordingly, such as numeric limits, regular expressions, or relationships with other fields.
-
-**To set this up:**
-
-* Save the changes.
-
-**Impact:**
-
-* Forced validation checks the entered data against the specified criteria to ensure it is valid. This helps to detect errors early and improve data quality.
-
-### Match Score:
-
-<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_setting.png" alt="Docbits Field Match Score Setting"><figcaption></figcaption></figure>
-
-By comparing input data with reference data, the Match Score can help confirm the accuracy and validity of the data. If the Match Score exceeds a certain threshold, the match is considered successful.
-
-**To set this up:**
-
-* Enable the Match Score option and set the desired threshold.
-* Save the changes.
-
-**Impact:**
-
-* The Match Score is used to evaluate the accuracy of matches between input data and reference values. If the score obtained exceeds the set threshold, the match is considered successful. This is especially useful for fields that require data validation or data matching, such as fields with a name, email address, or e-mail address. B. when checking customer data.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_threshold.png" alt="Docbits Field Match Score Threshold" width="258"><figcaption></figcaption></figure>
-
-By carefully configuring these field properties, you can optimize document processing workflows and ensure that your data is correctly captured, protected, and processed efficiently.
+Zie voor meer informatie over validatie en matching [Validatie en Match Score instellen](setting-validation-and-match-score.md).

@@ -1,45 +1,41 @@
-# E-mail Sjablonen Bewerken
+# E-mailsjablonen bewerken
 
+<figure><img src="../../../.gitbook/assets/supplier_email_templates.png" alt="E-mailsjablonen voor leveranciers"><figcaption><p>Pagina E-mailsjablonen voor leveranciers</p></figcaption></figure>
 
-{% embed url="https://youtu.be/R5IrCpiP__4" %}
-{% endembed %}
+### Overzicht
 
-## Overzicht
+Met de functie E-mailsjablonen kunnen beheerders e-mailcommunicatie maken en aanpassen die automatisch naar leveranciers wordt verzonden. Een van de belangrijkste elementen in deze sjablonen is de `{{magic_link}}`, die een dynamische link biedt die is afgestemd op elke ontvanger.
 
-De functie E-mail Sjablonen stelt beheerders in staat om e-mailcommunicatie te maken en aan te passen die automatisch naar leveranciers wordt gestuurd. Een van de belangrijkste elementen die in deze sjablonen worden gebruikt, is de `{{magic_link}}`, die een dynamische link biedt die is afgestemd op elke ontvanger.
+#### Wat is `{{magic_link}}`?
 
-<figure><img src="../../../.gitbook/assets/docbits_email_template_magic_link.png" alt="Docbits Email Template Magic Link"><figcaption></figcaption></figure>
+De `{{magic_link}}` is een tijdelijke aanduiding die bij het verzenden van de e-mail dynamisch wordt vervangen door een unieke URL. Deze URL leidt de ontvanger meestal naar het voltooien van een actie, zoals registratie, goedkeuring of toegang tot een specifiek deel van het leveranciersportaal.
 
-**Wat is `{{magic_link}}`?**
+### E-mailsjablonen bewerken
 
-De `{{magic_link}}` is een tijdelijke aanduiding die dynamisch wordt vervangen door een unieke URL wanneer de e-mail wordt verzonden. Deze URL leidt de ontvanger meestal naar het voltooien van een actie, zoals registratie, goedkeuring of toegang tot een specifiek deel van het leveranciersportaal.
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.35.53.png" alt=""><figcaption></figcaption></figure>
 
-## E-mail Sjablonen Bewerken
+#### Toegang tot de sjablooneditor
 
-<figure><img src="../../../.gitbook/assets/docbits_email_template_editor_access.png" alt="Docbits Email Template Editor Access"><figcaption></figcaption></figure>
+1. **Ga naar E-mailsjablonen**:
+   * Ga vanuit het hoofdmenu naar het gedeelte **Email Templates**.
+2. **Selecteer een sjabloon om te bewerken**:
+   * Kies het e-mailsjabloon dat u wilt bewerken door op de sjabloonnaam te klikken (bijv. "Supplier Invitation Email").
+3. **Bewerk het sjabloon**:
+   * In de editor kunt u zowel de HTML-code als het visuele ontwerp van de e-mail aanpassen.
+   * U kunt met de beschikbare tabbladen schakelen tussen visueel bewerken en codebewerking.
 
-**Toegang tot de E-mail Sjabloon Editor**
+<figure><img src="../../../.gitbook/assets/Bildschirmfoto 2024-08-25 um 12.36.41.png" alt=""><figcaption></figcaption></figure>
 
-1. **Navigeer naar E-mail Sjablonen**:
-   * Ga naar het **E-mail Sjablonen** gedeelte vanuit het hoofdmenu.
-2. **Selecteer een Sjabloon om te Bewerken**:
-   * Kies het e-mail sjabloon dat je wilt bewerken door op de sjabloonnaam te klikken (bijv. "Leveranciersuitnodiging E-mail").
-3. **Bewerk het Sjabloon**:
-   * De editor stelt je in staat om zowel de HTML-code als het visuele ontwerp van de e-mail aan te passen.
-   * Je kunt schakelen tussen visuele bewerking en codebewerking met behulp van de beschikbare tabbladen.
+#### `{{magic_link}}` als link definiëren
 
-<figure><img src="../../../.gitbook/assets/docbits_email_template_visual_code_toggle.png" alt="Docbits Email Template Visual Code Toggle"><figcaption></figcaption></figure>
+Om `{{magic_link}}` als klikbare link in de e-mail te definiëren, moet u ervoor zorgen dat deze correct is opgemaakt in de HTML-code van het sjabloon. Volg deze stappen:
 
-**`{{magic_link}}` als een Link Definiëren**
+1. **Zoek het linkgedeelte in de HTML-code**:
+   * Zoek in de code-editor het gedeelte waar de magic link moet verschijnen. Dit is meestal binnen een `<a>`-tag (anchor).
+2.  **Voeg de tijdelijke aanduiding `{{magic_link}}` in**:
 
-Om `{{magic_link}}` als een klikbare link in de e-mail te definiëren, moet je ervoor zorgen dat het correct is opgemaakt in de HTML-code van het sjabloon. Volg deze stappen:
-
-1. **Vind het Linkgedeelte in de HTML-code**:
-   * Zoek in de code-editor het gedeelte waar je de magic link wilt laten verschijnen. Dit is meestal binnen een `<a>` (anker) tag.
-2.  **Voeg de `{{magic_link}}` Placeholder in**:
-
-    * Vervang het `href` attribuut van de anker tag door `{{magic_link}}`.
-    * Zorg ervoor dat de link passend is gestyled voor het e-mail sjabloon. Hier is een voorbeeld:
+    * Vervang het attribuut `href` van de anchor-tag door `{{magic_link}}`.
+    * Zorg ervoor dat de link passend is opgemaakt voor het e-mailsjabloon. Hier is een voorbeeld:
 
     ```html
     <a href="{{magic_link}}" target="_blank" style="
@@ -53,34 +49,35 @@ Om `{{magic_link}}` als een klikbare link in de e-mail te definiëren, moet je e
         text-decoration: none;
         display: inline-block;
         cursor: pointer;">
-        Voltooi Registratie
+        Complete Registration
     </a>
     ```
 
-## 3. Pas de Linktekst aan:
+### 3. Pas de linktekst aan:
 
-• Wijzig de tekst tussen de opening \<a> en sluitende \</a> tags om de actie weer te geven die je wilt dat de gebruiker onderneemt. Bijvoorbeeld, “Voltooi Registratie” of “Toegang tot Uw Account”.
+• Wijzig de tekst tussen de openende \<a>- en sluitende \</a>-tags zodat deze de actie weergeeft die de gebruiker moet uitvoeren. Bijvoorbeeld “Complete Registration” of “Access Your Account”.
 
-4\. Sla op en Test het Sjabloon:
+4\. Sla het sjabloon op en test het:
 
-• Klik op de Opslaan-knop nadat je de wijzigingen hebt aangebracht.
+• Klik na het aanbrengen van de wijzigingen op de knop Save.
 
-• Je kunt de Test Verzenden-knop gebruiken om een test-e-mail te verzenden om te controleren of de link werkt zoals verwacht.
+• U kunt de knop Send Test gebruiken om een test-e-mail te verzenden en te controleren of de link werkt zoals verwacht.
 
-## Beste Praktijken voor het Gebruik van \{{magic\_link\}}
+## Best practices voor het gebruik van \{{magic\_link\}}
 
-• Link Plaatsing: Plaats de \{{magic\_link\}} prominent in de e-mail om ervoor te zorgen dat deze gemakkelijk toegankelijk is voor ontvangers.
+• Plaatsing van de link: Plaats de \{{magic\_link\}} prominent in de e-mail, zodat deze voor ontvangers gemakkelijk toegankelijk is.
 
-• Duidelijke Oproep tot Actie: De tekst binnen de link moet een duidelijke oproep tot actie zijn, zoals “Voltooi Registratie” of “Bevestig Uw E-mail.”
+• Duidelijke call-to-action: De tekst in de link moet een duidelijke call-to-action zijn, zoals “Complete Registration” of “Confirm Your Email.”
 
-• Styling: Zorg ervoor dat de link consistent is gestyled met de rest van het e-mail sjabloon en visueel opvalt.
+• Opmaak: Zorg ervoor dat de link consistent is opgemaakt met de rest van het e-mailsjabloon en visueel opvalt.
 
-• Testen: Verstuur altijd een test-e-mail na het bewerken van het sjabloon om te verifiëren dat de \{{magic\_link\}} correct oplost en de styling geschikt is.
+• Testen: Verstuur na het bewerken van het sjabloon altijd een test-e-mail om te controleren of de \{{magic\_link\}} correct wordt omgezet en de opmaak geschikt is.
 
 ## Conclusie
 
-Door de \{{magic\_link\}} correct te definiëren in je e-mail sjablonen, kun je ervoor zorgen dat ontvangers een gepersonaliseerde en actiegerichte e-mail ontvangen die hen naar de juiste taak binnen je leveranciersportaal leidt. Dit verbetert de gebruikerservaring en zorgt voor soepele onboarding- en communicatieprocessen.
+Door de \{{magic\_link\}} correct te definiëren in uw e-mailsjablonen, zorgt u ervoor dat ontvangers een gepersonaliseerde en actiegerichte e-mail ontvangen die hen naar de juiste taak in uw leveranciersportaal leidt. Dit verbetert de gebruikerservaring en zorgt voor een soepele onboarding en communicatie.
+
+\
 
 
-
-Deze documentatie biedt stapsgewijze instructies voor beheerders over hoe de \{{magic\_link\}} te definiëren en te gebruiken in e-mail sjablonen, zodat e-mails zowel functioneel als visueel aantrekkelijk zijn.
+Deze documentatie biedt beheerders stapsgewijze instructies voor het definiëren en gebruiken van de \{{magic\_link\}} in e-mailsjablonen, zodat e-mails zowel functioneel als visueel aantrekkelijk zijn.

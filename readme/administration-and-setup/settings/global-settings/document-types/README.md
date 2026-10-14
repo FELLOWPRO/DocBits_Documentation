@@ -1,33 +1,55 @@
 # Documenttypes
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
-DocBits Admin Guide: Adding, Editing & Configuring Document Types (Full Walkthrough)
+DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/docbits_document_types_overview_screenshot.png" alt="Docbits Document Types Overview Screenshot"><figcaption><p>Document Types Screenshot </p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Documenttypes"><figcaption><p>Pagina Documenttypes</p></figcaption></figure>
 
-## **Overzicht**
+## Overzicht
 
-De sectie Documenttypes vermeldt alle documenttypes die door Docbits worden herkend en verwerkt. Beheerders kunnen verschillende aspecten beheren, zoals lay-out, velddefinities, extractieregels en meer voor elk type document. Deze aanpassing is essentieel voor een nauwkeurige gegevensverwerking en naleving van de organisatorische normen.
+De pagina Documenttypes toont alle documenttypes die door DocBits worden herkend en verwerkt. De pagina is verdeeld in twee onderdelen:
 
-## **Belangrijkste Kenmerken en Opties**
+* **Default Document Types**: Vooraf geconfigureerde types die door DocBits worden geleverd (Invoice, Credit Note, Delivery Note, Order Confirmation, Contract, ZUGFeRD, enz.). Deze kunnen niet worden verwijderd.
+* **Custom Document Types**: Types die u aanmaakt voor uw specifieke zakelijke behoeften. Deze kunnen worden bewerkt en verwijderd.
 
-1. **Documenttype Lijst**:
-   * Elke rij vertegenwoordigt een documenttype zoals Factuur, Creditnota, Leveringsbon, enz.
-   * Documenttypes kunnen standaard of op maat zijn, zoals aangegeven door labels zoals "Standaard."
-2. **Lay-out bewerken**: Deze optie stelt beheerders in staat om de instellingen voor de documentlay-out te wijzigen, waaronder het definiëren van hoe het document eruitziet en waar de gegevensvelden zich bevinden.
-3. **Document Subtypes**: Als er documenttypes zijn met subcategorieën, kan deze optie beheerders in staat stellen om instellingen specifiek voor elk subtype te configureren.
-4. **Tabelkolommen**: Pas aan welke datakolommen moeten verschijnen wanneer het documenttype in lijsten of rapporten wordt bekeken.
-5. **Velden**: Beheer de gegevensvelden die aan het documenttype zijn gekoppeld, inclusief het toevoegen van nieuwe velden of het wijzigen van bestaande.
-6. **Modeltraining**: Configureer en train het model dat wordt gebruikt voor het herkennen en extraheren van gegevens uit de documenten. Dit kan inhouden dat parameters worden ingesteld voor machine learning-modellen die in de loop van de tijd verbeteren met meer gegevens.
-7. **Regex**: Stel reguliere expressies in die worden gebruikt om gegevens uit documenten te extraheren op basis van patronen. Dit is bijzonder nuttig voor gestructureerde gegevensextractie.
-8. **Scripts**: Schrijf of wijzig scripts die aangepaste verwerkingsregels of workflows voor documenten van dit type uitvoeren.
-9. **E-DOC**: Configureer instellingen met betrekking tot de uitwisseling van documenten in gestandaardiseerde elektronische formaten. U kunt XRechnung, EDI, FakturaPA of EDI configureren.
+## Bedieningselementen per documenttype
 
-#### Aangepaste validatieregels
+Elke kaart van een documenttype toont:
 
-Open een documenttype en selecteer **Aangepaste validatieregels** om de eigen validatieregels van dat type te beheren. Om een bestaande regel over te nemen zonder haar opnieuw te bouwen, volgt u de handleiding [Een aangepaste validatieregel dupliceren](duplicate-a-custom-validation-rule.md). Daarin worden de regelnaam, de regelsleutel en de bevestigingsknoppen uitgelegd.
+| Bedieningselement | Beschrijving |
+|---------|-------------|
+| **Activate** | Schakelaar om dit documenttype voor verwerking in of uit te schakelen. |
+| **Extraction** | Schakelaar om AI-gebaseerde gegevensextractie voor dit type in of uit te schakelen. |
+| **Settings** (tandwielpictogram) | Opent aanvullende configuratieopties voor het documenttype. |
+
+## Configuratietabbladen
+
+Onder elk documenttype hebt u toegang tot de volgende configuratietabbladen:
+
+| Tabblad | Beschrijving |
+|-----|-------------|
+| **Labels** | Beheer weergavelabels en vertalingen voor het documenttype. |
+| **Edit layout** | Wijzig hoe het document in de validatieweergave wordt getoond, inclusief veldposities. |
+| **Document Sub Types** | Configureer subcategorieën voor dit documenttype (bijv. verschillende factuurformaten). |
+| **Table columns** | Pas aan welke gegevenskolommen in de tabel met regelitems verschijnen. |
+| **Fields** | Beheer de gegevensvelden die uit het document worden geëxtraheerd (velden toevoegen, bewerken of verwijderen). |
+| **Model Training** | Configureer en train het AI-model dat wordt gebruikt voor het herkennen en extraheren van gegevens. |
+| **Regex** | Stel reguliere expressies in voor patroongebaseerde gegevensextractie. |
+| **Scripts** | Schrijf aangepaste verwerkingsscripts die tijdens de documentverwerking worden uitgevoerd. |
+| **E-Doc** | Configureer standaarden voor elektronische documenten (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+
+## Aangepaste validatieregels
+
+Open een documenttype en selecteer **Custom Validation Rules** om de eigen validatieregels van dat type te beheren. Om een bestaande regel te hergebruiken zonder haar opnieuw te bouwen, volgt u [Een aangepaste validatieregel dupliceren](duplicate-a-custom-validation-rule.md). De handleiding legt de regelnaam, de regelsleutel en de bevestigingsknoppen uit.
+
+## Een aangepast documenttype aanmaken
+
+1. Scroll omlaag naar het onderdeel **Custom Document Types**.
+2. Klik op **+ New**.
+3. Voer een naam in voor het nieuwe documenttype.
+4. Configureer de velden, de lay-out en de extractie-instellingen naar behoefte.
 
 {% hint style="info" %}
-See [Setup Document Type](../../../setup/document-types/)
+Zie [Documenttype instellen](../../../setup/document-types/) voor gedetailleerde installatie-instructies.
 {% endhint %}

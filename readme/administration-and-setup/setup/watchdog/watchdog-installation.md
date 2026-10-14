@@ -1,82 +1,136 @@
 # WatchDog Installatie
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-nl.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="WatchDog Installation Steps"><figcaption></figcaption></figure>
 
-### Configureren van WatchDog in DocBits
+> **Aanbevolen:** Gebruik de moderne installatie die hieronder wordt beschreven. WatchDog-configuraties worden nu rechtstreeks in de DocBits-applicatie aangemaakt, lokale configuratiebestanden zijn niet meer nodig.
 
-1. **Toegang tot WatchDog-instellingen**
-   * Navigeer naar **Instellingen → Documentverwerking → WatchDog**.
+## Vereisten
+
+* Windows Server of Windows 10/11
+* Beheerderstoegang (Administrator)
+* Netwerkverbinding met de DocBits-API
+* DocBits API Key (beschikbaar onder Instellingen → WatchDog → tabblad General)
+
+## Installatiestappen
+
+### 1. Maak de vereiste mappen aan
+
+Maak een hoofdmap en submappen voor WatchDog aan:
+
+```
+C:\WatchDog\              ← WatchDog executable
+C:\WatchDog\Import\       ← Watch folder for incoming documents
+C:\WatchDog\Processed\    ← Success folder for processed documents
+C:\WatchDog\Export\        ← Export folder for exported files
+```
+
+> **Opmerking:** Het wordt aanbevolen om lokale paden te gebruiken. UNC-netwerkpaden (bijv. `\\server\share`) worden ondersteund, maar kunnen een Polling Observer vereisen voor betrouwbare bestandsdetectie.
+
+### 2. Download WatchDog
+
+Download `WatchDog.exe` uit de DocBits-applicatie:
+
+**Instellingen → Documentverwerking → WatchDog → tabblad General → Download**
+
+Plaats het gedownloade bestand `WatchDog.exe` in `C:\WatchDog\`.
+
+### 3. Configureer de API-verbinding
+
+Open de **opdrachtprompt (CMD)** als **Administrator** en voer uit:
+
+```powershell
+cd C:\WatchDog
+WatchDog.exe -api YOUR_API_KEY
+```
+
+Hiermee wordt WatchDog gekoppeld aan uw DocBits-organisatie en worden de configuraties automatisch opgehaald.
+
+### 4. Installeren als Windows-service
+
+```powershell
+WatchDog.exe install
+```
+
+### 5. Start de service
+
+```powershell
+WatchDog.exe start
+```
+
+### 6. Maak configuraties aan in DocBits
+
+Navigeer in DocBits naar **Instellingen → Documentverwerking → WatchDog → tabblad Configurations**:
+
+* Klik op **New Import Configuration** om bewaakte mappen in te stellen
+* Klik op **New Export Configuration** om exportbestemmingen in te stellen
+
+> **Belangrijk:** Exportconfiguraties vereisen een **documenttype**. Alle configuraties worden centraal in DocBits beheerd, niet in lokale configuratiebestanden.
+
+### 7. Automatisch opstarten instellen
+
+1. Open **Services** (`Win + R` → `services.msc`)
+2. Zoek **WatchDog** in de lijst met services
+3. Dubbelklik om de eigenschappen te openen
+4. Stel **Startup Type** in op **Automatic (Delayed Start)**
+5. Klik op **OK**
+
+## Installatie controleren
+
+Controleer na de installatie de WatchDog-status in DocBits:
+
+**Instellingen → WatchDog → tabblad General**
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="WatchDog General Tab — Service Status"><figcaption></figcaption></figure>
+
+* ✅ **Online** — WatchDog is verbonden en stuurt heartbeats
+* Versie, laatste herstart en systeeminformatie moeten zichtbaar zijn
+
+## Opdrachtoverzicht
+
+| Opdracht | Beschrijving |
+| :--- | :--- |
+| `WatchDog.exe -api KEY` | API Key configureren |
+| `WatchDog.exe install` | Installeren als Windows-service |
+| `WatchDog.exe start` | De service starten |
+| `WatchDog.exe stop` | De service stoppen |
+| `WatchDog.exe debug` | Uitvoeren in consolemodus (voor probleemoplossing) |
+| `WatchDog.exe remove` | De service verwijderen |
+| `WatchDog.exe --version` | Huidige versie tonen |
+| `WatchDog.exe --list-folders` | Geconfigureerde bewaakte mappen weergeven |
+| `WatchDog.exe --add-folder PATH` | Een bewaakte map toevoegen |
+| `WatchDog.exe --remove-folder PATH` | Een bewaakte map verwijderen |
+
+---
+
+## Legacy: V1-configuratie (verouderd)
+
+De onderstaande V1-installatiemethode met lokale configuratiebestanden is **verouderd**. Gebruik in plaats daarvan de moderne, op de API gebaseerde installatie hierboven.
+
+<details>
+<summary>V1-installatie (klik om uit te klappen)</summary>
+
+### WatchDog configureren in DocBits (V1)
+
+1. **Toegang tot de WatchDog-instellingen**
+   * Navigeer naar **Instellingen → Documentverwerking → WatchDog**
 2. **Mapinstellingen**
-   * Definieer de paden waar WatchDog documenten vindt en verwerkt.
-   *   De mappaden moeten overeenkomen met die tijdens de installatie zijn aangemaakt:
+   * Definieer de paden: `C:/WatchDog/Read` en `C:/WatchDog/Processed`
 
-       * `C:/WatchDog/Read`
-       * `C:/WatchDog/Processed`
+   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="WatchDog Folder Settings"><figcaption></figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FzG1EFmtSO4AxZjWir401%252Fimage.png%3Falt%3Dmedia%26token%3Dc356e023-8cfb-4f45-b863-b27c5af1d9df&width=768&dpr=4&quality=100&sign=1b1ae0c4&sv=2)
-   * <mark style="color:red;">**Opmerking:**</mark> **Het wordt aanbevolen om lokale paden te gebruiken. Deze moeten overeenkomen met de mappen in de DocBits-installatie**
 3. **Algemene instellingen**
-   *   Selecteer de documenttypes die verwerkt moeten worden door de bijbehorende selectievakjes aan te vinken
+   * Selecteer documenttypes, configureer de exportbestemming
 
+   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="WatchDog General Settings"><figcaption></figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZbCt5UHd37PdNZsVItdt%252Fimage.png%3Falt%3Dmedia%26token%3Db3c3f203-0f60-42a0-bd56-ee70c204f5e8&width=768&dpr=4&quality=100&sign=becd5e31&sv=2)
-   * **Barcode-scheiding:** Wanneer ingeschakeld, activeert het de barcode-scheiding.
-   * **DocBits-operator:** Wanneer ingeschakeld, opent het een Chrome-browser op de achtergrond voor de DocBits-operator.
-   * **Exportbestemming:** Stelt de exportbestemming in.
-     * **Infor:** Documenten worden geëxporteerd naar Infor.
-     * **Exportmap:** Documenten worden geëxporteerd naar een gedefinieerde map die hieronder kan worden geconfigureerd.
 4. **Exportconfiguraties**
-   * Toont alle geconfigureerde exports voor **on-premise verwerking**.
-   *   Toont de tijdstempel van de **laatste succesvolle verbinding** voor elke configuratie.
+   * Toont geconfigureerde exports voor on-premise verwerking
 
+   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="WatchDog Export Configurations"><figcaption></figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FRvK5qn6EggWJxcSYNP5J%252Fimage.png%3Falt%3Dmedia%26token%3D195b9cc6-c5ac-4ee6-90da-b3ee9696ee30&width=768&dpr=4&quality=100&sign=3bc11ec5&sv=2)
-5. **bod_mapping-configuratie (Optioneel)**
-   * <mark style="color:red;">**Vereiste velden:**</mark> Voordat u aangepaste metadata-mappingen toevoegt, moet u de volgende twee waarden definiëren
-     * **`file_name`**
-     * **`pdf_path`**
-   *   Klik op **Rij toevoegen** om metadata-mappingen te definiëren.
+5. **Configuratie downloaden**
+   * Download `watchdog-config.json` en plaats het in `C:\WatchDog\`
 
+   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Download Configuration"><figcaption></figcaption></figure>
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FlzUqcr51kq18OrmYAR8X%252Fimage.png%3Falt%3Dmedia%26token%3D3035122b-f1d3-44cc-bfe6-5230943bd77d&width=768&dpr=4&quality=100&sign=e98d5a1b&sv=2)
-   * **Waarde:** Geeft de veldnaam voor de metadata aan.
-   * **Pad:** De XPath-expressie die naar de XML-gegevens wijst die aan het veld moeten worden toegewezen.
-   * **Prullenbakpictogram:** Wordt gebruikt om een specifieke rij te verwijderen.
-6. **Download de configuratie**
-   * Sla de configuratie op
-   *   Download de configuratie
-
-
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZXiz4KB7QpnaqD9XwX3o%252Fimage.png%3Falt%3Dmedia%26token%3D04c9f8dc-7d79-443f-9ce4-6d4214edc98b&width=768&dpr=4&quality=100&sign=574a4218&sv=2)
-
-### WatchDog Installatiehandleiding
-
-1. **Maak vereiste mappen aan**
-   * Maak een hoofdmap aan: `C:/WatchDog`
-   * Maak binnen `C:/WatchDog` de volgende submappen aan: **Opmerking**: deze moeten overeenkomen met de mappen in DocBits
-     * `C:/WatchDog/Read`
-     * `C:/WatchDog/Processed`
-   * <mark style="color:red;">**Opmerking:**</mark> **Het wordt aanbevolen om lokale paden te gebruiken. Deze moeten overeenkomen met de mappen in de DocBits-configuratie**
-2. **Download WatchDog**
-   * Download de nieuwste versie van `WatchDog.exe` van: [https://github.com/Fellow-Consulting-AG/WatchDog](https://github.com/Fellow-Consulting-AG/WatchDog)
-   * Plaats het gedownloade `WatchDog.exe`-bestand in `C:/WatchDog`.
-   * Plaats het gedownloade `watchdog-config.json`-bestand in `C:/WatchDog`.
-   * Open de `watchdog-config.json` en wijzig de **config_path.**
-   * In dit voorbeeld:
-     * `"config_path": "C:/WatchDog/watchdog-config.json"`
-3. **Installeer WatchDog**
-   * Open **Opdrachtprompt (CMD)** met **Administrator-rechten**.
-   * Navigeer naar de WatchDog-map
-   *   Voer de volgende opdracht uit om WatchDog te installeren:
-
-       `WatchDog.exe install`
-4. **Start de WatchDog-service**
-   *   Voer de volgende opdracht in CMD uit:
-
-       `WatchDog.exe start`
-5. **Stel opstarttype in**
-   * Open **Diensten** (Druk op `Win + R`, typ `services.msc` en druk op **Enter**).
-   * Zoek **WatchDog** in de lijst met services.
-   * Dubbelklik om de eigenschappen te openen.
-   * Stel **Opstarttype** in op **Automatisch (Vertraagd starten)**.
-   * Klik op **OK**.
+</details>

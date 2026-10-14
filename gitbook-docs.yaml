@@ -62,7 +62,6 @@ site:
       key: space-9
       title: Chinese
       path: chinese
-      draft: true
       content:
         directory: ./docbits
         language: en

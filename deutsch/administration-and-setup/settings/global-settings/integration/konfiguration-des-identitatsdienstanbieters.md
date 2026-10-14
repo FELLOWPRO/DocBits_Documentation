@@ -1,0 +1,2 @@
+# Konfiguration des Identitätsdienstanbieters
+

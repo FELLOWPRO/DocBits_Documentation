@@ -9,6 +9,8 @@
 
 It is a tab of the [Analytics Dashboard](analytics-dashboard.md). It does not add any work for your team: DocBits records what happens to every document in the processing pipeline and evaluates the result every 15 minutes.
 
+<figure><img src="../.gitbook/assets/touchless-overview.png" alt="The Touchless Intelligence tab with five key figures, improvement suggestions and the touchless rate chart"><figcaption><p>The Touchless Intelligence tab: key figures, improvements, the rate over time and the lost-first chart. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 ### What you can do with it
 
 | You want to… | Use | Example |
@@ -79,6 +81,8 @@ The tab shows a **target** (70 % unless your organisation uses a different one).
 
 Click **How touchless is calculated** at the top right to open this explanation inside DocBits, with the numbers of your own period (documents in period, still in progress, excluded, measured).
 
+<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="The drawer How touchless is calculated with the numbers of the period"><figcaption><p>The drawer <strong>How touchless is calculated</strong>: the formula, <strong>Your numbers in this period</strong> (here 2,425 documents, 2,115 still in progress, 310 measured) and what each outcome means. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 ### How current are the numbers
 
 Outcomes are **recalculated every 15 minutes**. A document's outcome can still change after it first appears: the ERP may confirm an export hours later. The line **Data as of …** at the bottom of the tab shows when the numbers were last computed.
@@ -98,6 +102,8 @@ The **sub-organisation** you selected at the top of DocBits narrows the key figu
 
 ### The five key figures
 
+<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="The five key figures: Pure touchless, AP touchless, AP assisted, Process exceptions and Diagnosis coverage"><figcaption><p>The five key figures. Here the pure rate is 50.3 % (156 documents), which is 19.7 points under the 70 % target, and diagnosis coverage is 100 %. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 | Card | Shows | Example (illustrative) |
 | --- | --- | --- |
 | **Pure touchless** | The percentage and the difference to the target | **63.2 %** · "120 documents" · "−6.8 pp vs 70 % target" (red, below target) |
@@ -112,17 +118,23 @@ The **sub-organisation** you selected at the top of DocBits narrows the key figu
 
 ### Touchless rate over time
 
+<figure><img src="../.gitbook/assets/touchless-trend.png" alt="Line chart of the pure touchless and AP touchless rate per day with the 70 percent target line"><figcaption><p>The rate per day with the target line. Here the rate stays between 40 and 60 % and drops sharply from 10 October. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 A chart with one line for **Pure touchless**, one for **AP touchless** and the **target line**. Short periods show daily points, long periods weekly points.
 
 **Example.** After you switched on automatic PO matching on 1 October, the pure rate climbs from 55 % to 68 % within two weeks. The chart shows the day the curve turns, so you can match it to your change.
 
 ### Where touchless is lost first
 
+<figure><img src="../.gitbook/assets/touchless-blocking-stages.png" alt="Bar chart of the blocked documents per first blocking stage and reason"><figcaption><p>Blocked documents by the stage and reason where they stopped first. Here <strong>Field validation: Required field missing</strong> costs the most documents (58), then <strong>Export mapping failed</strong> (46) and <strong>PO item mismatch</strong> (27). Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 A bar chart of **Blocked documents** per pipeline stage: the **first** stage that stopped a document.
 
 **Example.** Bars: Supplier Identification 12, Field Validation 41, PO Line Match 7. The biggest bar tells you to look at **Field Validation** first, usually because a required field is not extracted.
 
 ### Supplier opportunities
+
+<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="The Supplier opportunities table with volume, pure rate, lost documents, root cause, recoverable documents, expected lift, confidence and status"><figcaption><p>The supplier queue (shortened to the first four rows). The first supplier has 106 documents, a pure rate of 38.7 % and 65 recoverable documents, so fixing it is worth <strong>+21 pp</strong>. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
 
 The queue answers **"Which supplier should we fix first?"** It is sorted by **Recoverable** documents, highest first, 25 rows per page.
 
@@ -149,6 +161,8 @@ Use the search box ("Search supplier number or name") to find a supplier. Click 
 
 ### Compare suppliers
 
+<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="The Compare suppliers page with three suppliers side by side and a bar chart of their outcomes"><figcaption><p>Three suppliers side by side: pure rate, lost and recoverable documents, root cause, expected lift and a bar chart of the outcomes. Each <strong>Open</strong> leads to the Supplier Diagnosis. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 Click **Compare suppliers**, tick **two to five** suppliers (each is listed with its number of blocked documents) and click **Compare**.
 
 The comparison shows the suppliers side by side: **Pure rate**, **Lost documents**, **Recoverable**, **Root cause**, **Expected lift**, a bar chart of the outcomes, and a link to each **Supplier Diagnosis**.
@@ -165,6 +179,8 @@ While it runs you see **Queued**, **Running**, **Done**, **Already analysed** or
 
 Click a supplier in the queue to open its diagnosis page.
 
+<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="The Supplier Diagnosis page with outcome tiles, trend and two issue clusters"><figcaption><p>The Supplier Diagnosis page: outcome tiles, trend with period selector and two issue clusters ordered by expected lift. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 The page shows:
 
 * **Six outcome tiles** (Pure touchless, AP touchless, AP assisted, Process exception, In progress, Not eligible), each linked to the documents.
@@ -179,6 +195,8 @@ A short note explains an empty page, for example: *5 documents from this supplie
 ### Issue clusters
 
 A **cluster** groups the documents of one supplier that stopped for the **same first reason**. Instead of 40 single problems you see "3 problems".
+
+<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="An opened issue cluster card with first blocker, what to change and the change proposal"><figcaption><p>An opened cluster card: the first blocker, <strong>What to change</strong>, and a <strong>Change proposal</strong> with risk, scope and open questions. Here the cluster covers 58 documents and is worth +18.7 pp. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
 
 **Example cluster (illustrative).**
 
@@ -274,6 +292,8 @@ Administrators also see two sections between the key figures and the charts:
 
 ## Consulting report
 
+<figure><img src="../.gitbook/assets/touchless-consulting-report.png" alt="The Consulting report with the top three proposals, a ranking table and the problems by domain"><figcaption><p>The Consulting report: top proposals, a ranking of all blockers with documents and estimated impact per month, and the problems by domain. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
+
 Administrators find the **Consulting report** at the bottom of the tab. Click **Create report** to load it. It combines, for your organisation:
 
 * the **changes with the biggest effect**, ranked, each with the domain, the problem, the recommended action, the number of documents and the **estimated** effect per month,
@@ -324,5 +344,5 @@ No. AI writes explanations only. A setting changes only after an administrator p
 * [Settings Assistant](settings/global-settings/company-information/settings-assistant.md)
 * [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described.
+<!-- Source notes (not shown): screenshots come from the dev test organisation with synthetic demo data (seed script) and fictional supplier names; the PO matching decision flow has no screenshot yet. facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described.
 Screenshots still to add, from an organisation WITH evaluated documents (no empty-state shots): overview with key figures, trend and bottleneck chart, supplier queue, supplier diagnosis with issue clusters, compare dialog, methodology drawer. The document trace screenshot below is real data. -->

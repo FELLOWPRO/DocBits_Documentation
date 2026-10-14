@@ -7,14 +7,15 @@ Pequeña actualización para Confirmación de Pedido
 {% hint style="info" %}
 Enlace al [Archivo](../../../../../BOD-Mapping%20\(OrderConfirmation\).properties)
 {% endhint %}
+
 ```
 # BOD Mapping Order Confirmation Docbits
 # Version: 1.0.1
 # last edited by: Daniel Jordan
 # edited: 7.06.2024
-# Update Subline
+# Update Subline 
 
-#Abbriviations:
+#Abbriviations: 
 #SV=Static Value
 #a variable, that is set once and will not be changed
 #SF=Static Field:
@@ -163,24 +164,24 @@ TN_InvoiceTable=InvoiceTable
 TN_InvoiceTable_TC_QUANTITY=ConfirmedQuantity
 #corresponding IDM Attribute:
 TN_InvoiceTable_TC_ITEM_NUMBER=ItemNumber
-#corresponding IDM Attribute:
+#corresponding IDM Attribute: 
 TN_InvoiceTable_TC_DESCRIPTION=Description
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_PURCHASE_ORDER=OrdenDeCompra
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_UNIT=UnidadMedida
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_POSITION=Posición
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_SUB_LINE_NUMBER=NúmeroSublínea
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_UNIT_PRICE=PrecioUnitarioConfirmado
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_TOTAL_AMOUNT=Monto
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_NET_AMOUNT=MontoNeto
-# Atributo IDM correspondiente:
-TN_InvoiceTable_TC_LIEFERDATUM=FechaHoraEntregaPrometida
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_PURCHASE_ORDER=PurchaseOrder
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_UNIT=UnitMeasurement
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_POSITION=Position
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_SUB_LINE_NUMBER=SubLineNumber
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_UNIT_PRICE=ConfirmedUnitPrice
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_TOTAL_AMOUNT=Amount
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_NET_AMOUNT=NetAmount
+#corresponding IDM Attribute:
+TN_InvoiceTable_TC_LIEFERDATUM=PromisedDeliveryDateTime
 
 
 TableColumn_StaticFields=languageID
@@ -198,7 +199,11 @@ TN_InvoiceTable_Static_Fields=nameLanguageID,name
 TNP_InvoiceTable_nameLanguageID=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentTable\\Name\\languageID
 TNV_InvoiceTable_nameLanguageID=en-us
 TNP_InvoiceTable_name=SyncCaptureDocumentType\\DataArea\\CaptureDocument\\DocumentTable\\Name
-TNV_InvoiceTable_name=FilasFactura
+TNV_InvoiceTable_name=InvoiceRows
+```
+
+
+
 {% hint style="info" %}
-Consulte aquí una [muestra](../../../../../M3_CaptureDocumentToProcessPurchaseOrder2.xml) del flujo de trabajo de Infor OS - Actualizado el 11 de junio de 2024
+Consulte aquí una [muestra](../../../../../M3\_CaptureDocumentToProcessPurchaseOrder2.xml) del flujo de trabajo de Infor OS - Actualizado el 11 de junio de 2024
 {% endhint %}

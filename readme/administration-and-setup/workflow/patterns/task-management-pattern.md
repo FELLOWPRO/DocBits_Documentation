@@ -741,7 +741,7 @@ Dag 5: ALS nog steeds niet voltooid:
 ### Volgende Stappen
 - Voeg e-mailmeldingen toe: [E-mail Verzenden Gids](../then/action/send-email-groups-guide.md)
 - Implementeer complexe routering: [Beslissingslogica Patroon](decision-logic-pattern.md)
-- Handel fouten af: [Foutafhandeling Patroon](error-handling-pattern.md)
+- Fouten bij taken oplossen: [Foutafhandeling](#foutafhandeling) hierboven
 
 ---
 

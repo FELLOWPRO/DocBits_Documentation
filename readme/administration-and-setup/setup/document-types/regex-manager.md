@@ -1,19 +1,19 @@
 # Regex Manager
 
-This feature by DocBits gives you an alternative to model classification as it allows you to write searchable regular expressions for a document type for classification and other purposes.
+Deze functie van DocBits biedt u een alternatief voor modelclassificatie: u kunt er doorzoekbare reguliere expressies voor een documenttype mee schrijven, voor classificatie en andere doeleinden.
 
-Document Type: The Regex Manager allows you to write regular expressions and this regex will then be searched for in the document, if it finds a match to the regex of a defined document, it then classifies that document to the corresponding document type. For example, if you wrote a regular expression to find “Gutschrift”. If DocBits found this term in a document it would classify that document as a credit note.
+Documenttype: met de Regex Manager schrijft u reguliere expressies die vervolgens in het document worden gezocht. Vindt DocBits een overeenkomst met de reguliere expressie van een gedefinieerd document, dan wijst het het document toe aan het bijbehorende documenttype. Als u bijvoorbeeld een reguliere expressie schrijft om “Gutschrift” te vinden en DocBits dit woord in een document vindt, wordt het document als creditnota geclassificeerd.
 
-Document Origin: This lets DocBits know the country of origin of a document through regular expressions. For example, if a regular expression for a Spanish document contains the term “Factura”. If DocBits searches a document and finds this term then it would know that the document is of Spanish origin and classify it as such.
+Documentoorsprong: met reguliere expressies herkent DocBits ook het land van herkomst van een document. Bevat een reguliere expressie voor een Spaans document bijvoorbeeld het woord “Factura” en vindt DocBits dit woord in het document, dan weet het dat het document van Spaanse oorsprong is en classificeert het dit dienovereenkomstig.
 
-## **Accessing the Regex Manager**
+## **De Regex Manager openen**
 
-To find this feature in DocBits, from your Dashboard, navigate to Settings → Global Settings → Document Types. Within each of the created document types, there is a “Regex” option.
+Ga in DocBits naar Instellingen → Documenttypen. Klik onder “Aangepaste documenttypen” op “Nieuw”. Voer een naam voor het documenttype in, voeg eventueel een beschrijving toe en vink “Tafel beschikbaar” aan als het document een tabel bevat. Kies daarna “Regex” in plaats van “Auto” en klik op “Volgende”.
 
-![](https://lh7-us.googleusercontent.com/cbU6PI74trS4HjnxDNbx_pTFXqrliFs47ZpaFsYsLk3NynblzBIdj9pFf7D-z4pegSCi0dodyAlY9FWSFlnpb95gA4DX8B_UtPW0gLo2LIzEQ5pJVbacz9P5RNHIO3B35mnnONyQnBauTBn2GYazNnI)
+<figure><img src="../../../.gitbook/assets/regex-manager-create-nl-20261006.png" alt="Pagina voor het maken van een nieuw documenttype met naamveld, selectievakje voor een beschikbare tabel, beschrijving en de knoppen Auto en Regex"><figcaption><p>Kies “Regex” om het nieuwe documenttype met reguliere expressies te classificeren.</p></figcaption></figure>
 
-## **Adding and Removing Regex**
+## **Regex toevoegen en verwijderen**
 
-By clicking on “Regex” you will be taken to this menu, which displays the existing regex models that have been created as well as an “ADD” button for you to create new regex models.
+De stap “Regex” toont de bestaande regexmodellen, elk met oorsprong en patroon, en een knop “Toevoegen” om een nieuw regexmodel te maken. Gebruik het actiemenu aan het einde van de rij om dat item te beheren. Klik op “Volgende” om verder te gaan met “Velden en groepen”.
 
-![](https://lh7-us.googleusercontent.com/piOi41j6Lcdqi5s98KGzccKwTcoKIbjwiQT-Q2tLFL7K3YnE0pxp5cp_OM1qB9LgiwjvvBDpGs9dam4Do1dHXMtkGu1_5HrqiSCokexAiBYIYW6k5uA6TS-PE9WroKOvQBnciQzhHGUywcGbpirvIUw)
+<figure><img src="../../../.gitbook/assets/regex-manager-list-nl-20261006.png" alt="Stap Regex met de knop Toevoegen en een tabel met drie regexmodellen, met oorsprong, patroon en acties"><figcaption><p>Bestaande regexmodellen met oorsprong en patroon. “Toevoegen” maakt een nieuw model.</p></figcaption></figure>

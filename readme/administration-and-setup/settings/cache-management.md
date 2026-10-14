@@ -1,7 +1,25 @@
 # Cachebeheer
 
-<figure><img src="../../.gitbook/assets/docbits_approval_permission.png" alt="DocBits Goedkeuring Toestemming"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cache_management.png" alt="Cachebeheer"><figcaption><p>Pagina Cachebeheer</p></figcaption></figure>
 
-In de instellingen voor "Cachebeheer" kunt u de automatische wissen inschakelen voor de Ontvangen Levering Cache, Inkooporder Cache en Taak- en Notificatie Cache.&#x20;
+Cachebeheer regelt het automatisch wissen van de cache voor vaak opgevraagde gegevens. Het inschakelen van caching verbetert de prestaties doordat herhaalde API-aanroepen worden verminderd.
 
-Met de Time to live, korte TTL, kunt u configureren hoe lang het duurt voordat een cache wordt gewist.
+## Cache wissen
+
+Klik op de knop **Clear Cache** (rechtsboven) om alle gecachete gegevens direct handmatig ongeldig te maken.
+
+## Cachetabel
+
+| Kolom | Beschrijving |
+|--------|-------------|
+| **Object** | Het type gecachete gegevens (bijv. Receive Delivery Cache, Purchase Order Cache). |
+| **Status** | Schakelaar om caching voor dit object in of uit te schakelen. |
+| **TTL** | Time to Live in minuten: hoe lang gecachete gegevens geldig blijven voordat ze automatisch worden vernieuwd. Stel in op `0` om het automatisch verlopen uit te schakelen. |
+
+## Beschikbare caches
+
+| Cache | Beschrijving |
+|-------|-------------|
+| **Receive Delivery Cache** | Cachet ontvangstgegevens van leveringen die worden gebruikt tijdens PO-matching. |
+| **Purchase Order Cache** | Cachet inkoopordergegevens voor sneller opzoeken tijdens de documentverwerking. |
+| **Task and Notification Cache** | Cachet taakaantallen en notificatiegegevens die in het dashboard worden getoond. |

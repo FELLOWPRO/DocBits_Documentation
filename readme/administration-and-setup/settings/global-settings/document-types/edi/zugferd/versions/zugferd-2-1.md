@@ -25,7 +25,7 @@ Naast de ruwe `INVOICE_TYPE_CODE` geeft de standaard TRANSFORMATION-XSLT twee af
 
 ### Belastingverdeling (tier-geclassificeerd)
 
-`ApplicableTradeTax`-blokken worden verdeeld over drie tarief-gebaseerde tiers (geen positionele indexen): standaardtariefvelden (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) vangen tarief ≥ 19; verlaagd-tariefvelden (`*_2`) vangen 0 < tarief < 19; nultariefvelden (`*_3`) vangen tarief = 0. Zie [ZUGFeRD belastingverdeling](../README.md#tax-breakdown-tier-classified) voor de volledige veldlijst.
+`ApplicableTradeTax`-blokken worden verdeeld over drie tarief-gebaseerde tiers (geen positionele indexen): standaardtariefvelden (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) vangen tarief ≥ 19; verlaagd-tariefvelden (`*_2`) vangen 0 < tarief < 19; nultariefvelden (`*_3`) vangen tarief = 0. Zie [ZUGFeRD belastingverdeling](../README.md#belastingverdeling-tier-geclassificeerd) voor de volledige veldlijst.
 
 ### Documentreferenties
 

@@ -1,21 +1,30 @@
-# API Calls and Examples
+# API-aanroepen en voorbeelden
 
-In document processing, APIs can be used to automate various tasks such as extracting text from documents, analyzing document contents, converting between different file formats, and more. Here are some examples of APIs in document processing:
+Met een API-aanraag kan een ander programma informatie in DocBits lezen of bijwerken. Begin met een alleen-lezen-aanraag, zodat u de verbinding kunt controleren zonder documenten te wijzigen.
 
-* **OCR (Optical Character Recognition) API:** This type of API allows you to extract text from images or scanned documents. For example:
+## Voordat u een aanraag verzendt
 
-<figure><img src="https://lh7-us.googleusercontent.com/PMTSWY9TbPtvDQYJ_6irKyUGKdYvojdi4Is_imdFyGDffbHMR6nB8K6DBzmJlJhXdbB6HtOY2jGW-B5UbgtpNEG9_LnkjbiKBdI0iP7BH-8M4mFNbA2EfGWqPgjDmdMuCTX2mA73oXk_YN0Kdqu5rIo" alt=""><figcaption><p>This request sends an image with text to the OCR API to extract the text.</p></figcaption></figure>
+1. Vraag een organisatiebeheerder om toegang en [maak een API-sleutel](api-key-management.md) voor de integratie. Bewaar de sleutel in een kluis voor geheime gegevens; zet hem niet in een screenshot, document of bronbestand.
+2. Open de [actuele Sandbox API-referentie](https://sandbox.api.docbits.com/docs). Daar staan de beschikbare bewerkingen, de vereiste waarden en voorbeeldantwoorden voor die omgeving. Gebruik de referentie van uw eigen omgeving zodra u de Sandbox verlaat.
 
-* **NLP (Natural Language Processing) API:** This API enables analysis of text content in documents, including keyword identification, entity recognition, sentiment analysis, etc. For example:
+<figure><img src="../../../../.gitbook/assets/dbdc-384-api-key-context-nl.png" alt="Nederlandstalige DocBits-sectie API-sleutels met de knop API-sleutel aanmaken; er is geen sleutelwaarde zichtbaar"><figcaption><p>U vindt API-sleutels onder Instellingen → Integratie en SSO. De afbeelding bevat geen sleutelwaarde.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/7lrjDlrXL5gVCAokA4R7DdA5GfAhQ1mlKp4LMa0V18nvjLVNRIrJMqr75bMAvoocWMb--7s8ksi8rd0BSM1jRD2Aw8tnOTxGTUbUx1yhg6pFr7r171ICuub92JGblwKbOiD0L4EdZqA_v8NzkjZlJNE" alt=""><figcaption><p>This request sends the text of a document to the NLP API for analysis.</p></figcaption></figure>
+## Voorbeeld: documenttypen lezen
 
-* **Conversion API:** This type of API allows conversion between different file formats, for example from PDF to Word or from Word to PDF. For example:
+De Sandbox-referentie vermeldt **GET `/document_type/get_document_types`**. Deze geeft de documenttypen terug die voor uw organisatie beschikbaar zijn. `GET` leest informatie; het maakt of wijzigt geen document.
 
-<figure><img src="https://lh7-us.googleusercontent.com/0wbf26KXgcsnqvfTY4q35K6xK8e3Ema1spoA9Z7tlkQmnAZVJ3M_A7wlkXPlQbkUTHOTlejYusRhpQb456l5zkMEqBmf4WMITFksDY94Rp6Y5_YilcL6MbA9t-JKLGCMayP9dIcKTLaYqQKMhr97Pv4" alt=""><figcaption><p>This request sends a PDF file to the conversion API to convert it into a Word document.</p></figcaption></figure>
+Stel uw API-sleutel in als lokale omgevingsvariabele en verzend daarna de aanraag:
 
-* **Document Management API:** This API allows you to upload, download and manage documents in a document management system. For example:
+```sh
+curl --fail-with-body \
+  -H "X-API-KEY: ${DOCB...EY}" \
+  "https://sandbox.api.docbits.com/sandbox-api/document_type/get_document_types"
+```
 
-<figure><img src="https://lh7-us.googleusercontent.com/wkZTLICbpBPKiSbZGN_rmF9gt47eTYRdkKWnAiuwMESzvsB0SBxok_VNjVc-FjyJmBIjBxUerBlnKzqhmMcPcs6Rg2BE2VlMTZLP4wBwBv3lWvHn426BfznfUbvhRi4cBR8Zlz-VDRH6a0c3FA_lNr4" alt=""><figcaption><p>This request uploads a document to the document management system.</p></figcaption></figure>
+Een geslaagd antwoord bevat `success: true` en een `data`-lijst met documenttypen. Een `401`-antwoord betekent dat de aanraag niet is geverifieerd; controleer de sleutel en de omgeving voordat u het opnieuw probeert. De URL hierboven geldt alleen voor de Sandbox.
 
-These examples show how APIs can be used in document processing to automate various tasks and improve efficiency. The exact functionality and syntax of the API depends on the particular API and its specific features.
+## De volgende bewerking vinden
+
+Zoek in de API-referentie naar wat u wilt doen, lees de beschrijving en de verplichte velden van die bewerking en controleer of deze `GET`, `POST` of een andere methode gebruikt. Gebruik het voorbeeldantwoord in de referentie om het resultaat te bevestigen. Voor een Postman-handleiding zie [Postman for DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/README.md); controleer de oudere voorbeeld-URL's ervan aan de hand van de actuele API-referentie voordat u een aanraag verzendt.
+
+De vier oudere afbeeldingen op deze pagina beschreven generieke OCR-, NLP-, bestandsconversie- en documentbeheer-API's zonder geverifieerde DocBits-eindpunten te tonen. Ze zijn verwijderd; als uitvoerbaar voorbeeld wordt alleen de hierboven documenteerde DocBits-bewerking gepresenteerd.

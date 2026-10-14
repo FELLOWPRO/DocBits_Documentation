@@ -1,20 +1,63 @@
-# Integration
+# Integration & SSO
 
-The integration settings play a crucial role in the efficiency and functionality of Docbits as they allow to ensure seamless interaction with other tools and services. Here are some reasons why properly configuring the integration settings is important:
+<figure><img src="../../../../.gitbook/assets/integration_sso.png" alt="Integration & SSO"><figcaption><p>Página Integration & SSO</p></figcaption></figure>
+
+La página Integration & SSO gestiona las claves de API para el acceso programático, los ID de organización y la configuración de Single Sign-On (SSO).
 
 ## API Key
 
-<figure><img src="https://lh7-us.googleusercontent.com/lFBSwUxiK35KkhYh46gw35BsD10rvHK6_1_Tnf449-jd2WJleDhxPzHpUmNdbP1mst5TkLBpGj5iJyiR_Dxpbta6S9p4Rb3FWj7RIc628Kw-RgqpVvLDYggagjuFI1DdLfOJqkTWHBE0JLQRolTWvOc" alt="" width="563"><figcaption></figcaption></figure>
+Gestione las claves de API utilizadas para el acceso programático a DocBits.
 
-The integration settings play a crucial role in the efficiency and functionality of DocBits as they allow to ensure seamless interaction with other tools and services. Here are some reasons why properly configuring the integration settings is important:
+| Columna | Descripción |
+|--------|-------------|
+| **Key** | El valor enmascarado de la clave de API. Haga clic en el icono de copiar para copiar la clave completa. |
+| **Name** | Un nombre descriptivo para la clave. |
+| **Expires** | Fecha de caducidad (o "Never"). |
+| **Last Used** | Cuándo se utilizó la clave por última vez. |
+| **Status** | Active o Inactive. |
+| **Actions** | Menú de tres puntos para revocar o eliminar. |
 
-* **Increased efficiency:** Integration with other tools and services can streamline workflows and increase efficiency. For example, documents can be automatically exchanged between Docbits and a CRM system, reducing manual entry and increasing productivity
-* **Data consistency:** Integration allows data to be exchanged seamlessly between different systems, improving data consistency and accuracy. This avoids inconsistencies or duplicate data entry that could lead to errors.
-* **Real-time updates**: Integration enables real-time updates between different platforms so that users always have the latest information. This is especially important for critical business processes that require real-time information.
-* **Task automation:** Integration allows routine tasks to be automated, saving time and resources. For example, notifications can be triggered automatically when a certain event occurs in another system without the need for manual intervention.
-* **Improved user experience:** A well-configured integration ensures a seamless user experience as users do not have to switch between different systems to access relevant information. This improves user satisfaction and contributes to efficiency.
+Haga clic en **+ Create API Key** para generar una clave nueva.
 
-To properly configure the integration settings, it is important to understand the organization's requirements and ensure that the integration is seamlessly integrated into existing workflows and processes. This requires thorough planning, configuration, and monitoring of the integration to ensure that it works smoothly and delivers the desired value.
+## ID
+
+Muestra los identificadores de su organización:
+
+| Campo | Descripción |
+|-------|-------------|
+| **Org ID** | El identificador único de su organización. |
+| **Sub Org ID** | El ID de la suborganización seleccionada actualmente. |
+
+## SSO Service Provider Settings
+
+Valores de configuración de SSO de DocBits necesarios al configurar su proveedor de identidad (Identity Provider):
+
+| Campo | Descripción |
+|-------|-------------|
+| **Entity ID** | La URL de metadatos SAML de DocBits. |
+| **SLO URL** | URL de Single Logout. |
+| **SSO URL** | URL del Assertion Consumer Service. |
+
+También puede usar **Download Certificate** y **Download Metadata** para la configuración de su IdP.
+
+## Identity Service Provider Settings
+
+Configure su proveedor de identidad (IdP) externo:
+
+| Campo | Descripción |
+|-------|-------------|
+| **Tenant ID** | El identificador del tenant de su IdP. |
+| **Upload file** | Cargue el archivo XML de metadatos de su IdP. |
+
+Haga clic en **Configure** para guardar los ajustes de su IdP.
+
+* **Mayor eficiencia:** La integración con otras herramientas y servicios puede agilizar los flujos de trabajo y aumentar la eficiencia. Por ejemplo, los documentos pueden intercambiarse automáticamente entre Docbits y un sistema CRM, lo que reduce la entrada manual y aumenta la productividad
+* **Coherencia de los datos:** La integración permite intercambiar datos sin problemas entre diferentes sistemas, mejorando la coherencia y la precisión de los datos. Esto evita incoherencias o entradas de datos duplicadas que podrían provocar errores.
+* **Actualizaciones en tiempo real**: La integración permite actualizaciones en tiempo real entre diferentes plataformas, de modo que los usuarios siempre disponen de la información más reciente. Esto es especialmente importante para los procesos empresariales críticos que requieren información en tiempo real.
+* **Automatización de tareas:** La integración permite automatizar tareas rutinarias, lo que ahorra tiempo y recursos. Por ejemplo, las notificaciones pueden activarse automáticamente cuando se produce un determinado evento en otro sistema, sin necesidad de intervención manual.
+* **Mejor experiencia de usuario:** Una integración bien configurada garantiza una experiencia de usuario fluida, ya que los usuarios no tienen que cambiar entre diferentes sistemas para acceder a la información relevante. Esto mejora la satisfacción del usuario y contribuye a la eficiencia.
+
+Para configurar correctamente los ajustes de integración, es importante comprender los requisitos de la organización y asegurarse de que la integración se incorpore sin fricciones a los flujos de trabajo y procesos existentes. Esto requiere una planificación, configuración y supervisión minuciosas de la integración para garantizar que funcione sin problemas y aporte el valor deseado.
 
 
 

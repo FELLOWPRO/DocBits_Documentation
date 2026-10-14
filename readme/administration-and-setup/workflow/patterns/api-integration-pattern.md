@@ -424,7 +424,7 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Log response for debugging
 ```
 
-**Referencia de guía:** [Resolución de problemas de Call API](../then/action/call-api-guide.md#troubleshooting)
+**Referencia de guía:** [Resolución de problemas de Call API](../then/action/call-api-guide.md#resolucion-de-problemas)
 
 ---
 
@@ -592,7 +592,7 @@ Antes de desplegar este patrón:
 ## Soporte y recursos
 
 **¿Necesita ayuda?**
-- Consulte la [resolución de problemas de Call API](../then/action/call-api-guide.md#troubleshooting)
+- Consulte la [resolución de problemas de Call API](../then/action/call-api-guide.md#resolucion-de-problemas)
 - Revise los [códigos de respuesta de la API](../then/action/call-api-guide.md#response-scenarios)
 - Pruebe primero la API con Postman
 - Contacte con el soporte del proveedor de la API

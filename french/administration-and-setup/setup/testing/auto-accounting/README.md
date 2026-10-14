@@ -1,87 +1,28 @@
-# Auto Accounting
+# Test Auto Accounting
 
-Once you have configured auto accounting for your DocBits environment, it is very important that all functionalities are tested to ensure a smooth hand-over process.&#x20;
+Auto Accounting nécessite un module activé, des données comptables maîtresses et une facture avec des montants ou des lignes utilisables. Ce guide sépare les paramètres que vous pouvez vérifier avant d'ouvrir une facture des contrôles qui nécessitent une connexion LN ou M3 configurée.
 
-## How To Enable Auto Accounting
+## Vérifier les paramètres du module
 
-* From the Dashboard, navigate to Settings → Document Processing → Module.
-* Under the Purchase Order / Auto Accounting tab you will find the slider to enable the feature as well as a drop down box to select LN or M3
+1. Ouvrez **Paramètres → Module → Commande et financement** et développez **Comptabilité automatique**. L'ancien chemin **Document Processing → Module → Purchase Order / Auto Accounting** n'est plus le chemin affiché dans l'application actuelle.
+2. Choisissez le **Type** correspondant à votre système connecté (**LN** ou **M3**). Activez **Comptabilité automatique** uniquement lorsque les données maîtresses requises et la connexion sont prêtes.
+3. Une fois activé, sélectionnez la liste **Comptes** et les listes de dimensions appropriées à votre système. Pour LN, les champs visibles incluent **Dimension Range Dropdown** et **Nom de la liste de dimensions**. M3 propose d'autres champs. N'utilisez **Réinitialiser les données comptables lors de la modification d'un élément** que si un recalcul après la modification d'un élément est souhaité.
 
-&#x20;![](https://lh7-us.googleusercontent.com/c3aUKad-\_Wl1-wdhTGAweIe4LGsYZx5Bor8FDKAhALTm8UeO544o7w3VwDBYFSCgzzq37Jce5yKbRaQytI0nz95Ja73rLEAZHIuoTk0V7tn6q7F6Efx6pPlHll1Ek1ZItnmcnGUtgm3Y0GA8pbbshYU)
+<figure><img src="../../../../.gitbook/assets/dbdc-620-auto-accounting-off-fr.png" alt="Paramètres du module Commande et financement en français avec la comptabilité automatique désactivée et le Type réglé sur LN"><figcaption><p>La comptabilité automatique est désactivée dans l'organisation de test Sandbox.</p></figcaption></figure>
 
-## Accessing Auto Accounting
+<figure><img src="../../../../.gitbook/assets/dbdc-620-auto-accounting-on-fr.png" alt="Paramètres du module Commande et financement en français temporairement activés, révélant les sélecteurs de comptes et de dimensions"><figcaption><p>Les champs affichés lorsque le paramètre est activé. Il a été désactivé à nouveau après cette capture ; aucun compte ni dimension n'a été configuré.</p></figcaption></figure>
 
-After you have uploaded your document and entered the validation screen, select the following icon to enter auto accounting.
+## Tester avec une facture configurée
 
-![](https://lh7-us.googleusercontent.com/y-GgwfK7QdmuvVLGxaLhzgA-AhUNHaWfEin8iEdOFCJQE9brJzoXdIIa6B\_E0B2fXR9ahQ7ukllz\_rmI72P4Sujv0cWjEns-u0ro2EqthuwHGN8XVVnaP9or\_c3XzTQ46ZUKf84LMxvl\_yOc5BBE3qc)
+Utilisez une facture dont les lignes et les données comptables maîtresses sont disponibles. Ouvrez-la dans l'[Écran de validation](../../../../end-user-and-partner-section/end-user-section/validation-screen/README.md) et sélectionnez **Auto Accounting**. Si l'action est absente, vérifiez le paramètre du module et si cette facture est éligible. Validez la facture avant de naviguer ; l'application enregistre et valide lorsque l'action est sélectionnée.
 
-You will then be taken to this screen, this will only occur if the table has been properly trained in order to distinguish between the various line items correctly.
+Sur l'écran de comptabilisation, vérifiez les points suivants avec vos propres données LN ou M3 :
 
-![](https://lh7-us.googleusercontent.com/1z8qvnZJoqk2bhjah6HJ7E9Z\_Dhrmi6kTZuXAKSmXT7T-pWnI176DQbliroCPvCEIIhYYnezL5ae\_Az\_O2MWTeOTC6qZvtJ5rlThPYnKnDTIHoDIi6zsahnUuvsD7YtZROXZ4U44L2aWufBsE7QqbiA)
+1. Exécutez **Validate Setup** lorsque disponible et corrigez toute configuration de compte ou de dimension manquante avant de continuer. Un résultat vert décrit uniquement les contrôles de votre environnement.
+2. Vérifiez si la facture doit être attribuée par son **montant total** ou par **chaque ligne individuelle**. Comparez les montants comptabilisés avec la facture d'origine.
+3. Si vous répartissez un montant, sélectionnez le compte prévu pour chaque ligne de répartition. Saisissez des montants ou des pourcentages et vérifiez que les valeurs allouées totalisent le montant parent. Ajoutez ou supprimez une ligne uniquement lorsque cela est nécessaire.
+4. Vérifiez tout **Unsettled amount** ou avertissement de validation et corrigez-le avant d'enregistrer ou d'exporter. Confirmez le résultat dans le système connecté séparément.
 
-From here, you have two choices:
+L'organisation de test Sandbox utilisée pour les captures d'écran ci-dessus n'a aucun compte configuré, aucune liste de dimensions ni aucune ligne de facture pour ce flux. L'écran de comptabilisation, la répartition et l'export n'ont donc **pas été testés ni illustrés ici**. N'utilisez pas les captures d'écran des paramètres comme preuve que la comptabilisation ou l'export a réussi.
 
-* Split the invoice using the total amount
-* Split the invoice via each individual line item
-
-This selection is done by clicking on which option you prefer
-
-![](https://lh7-us.googleusercontent.com/Mbusr1kisZSjyU\_YJJ-8sLfwcyBOutRPUymIuuiynvEjjD1-iY\_3kACHdf9g3VcfYtHS6\_eMSFX-3RuA2Wyhq3JDjw7VsuxOijT2q9ey6DWrLzBAK7wPFXUiyapbSEK97E2Rpbop42ZAvW4zJkD-Rz4)
-
-## Prerequisites
-
-In order for the Auto Accounting feature to function, certain data and information must be configured. To assist in this process or to let you know what configuration you are missing, we have created a “Validate Setup” button which is located as shown below.
-
-![](https://lh7-us.googleusercontent.com/zCqiu\_\_deFqdYih9yBGQhxbgXYuBvLFhSd48k-gA9sQoxoBibeyUAEc9k9HQCnmuddIU2Bws7IfK3JCuXylCo6sCdyuUNOeUHRLGGH3Jvz5MJRJU5cmsyzrH5lTo0eH\_ygFTuXc9dI3BZ\_wW-ybzHKw)
-
-Once pressed, DocBits will run a check of your environment to see if everything is correctly configured.
-
-A menu that will look as follows will appear
-
-![](https://lh7-us.googleusercontent.com/v2UhbvTVO7pw29xeRb1kjWlVq8xPmYQNeoXpUZpztcvuWdpFR01u46yRaS3rKeTIhr9k0wor46wwUcoOaOwoP49CGW5VlsLI6fd15DvfnykRC9lFJkY8RN\_Y6DlHP7t4ldPROsdCqIjgg7e3dIK5J9s)
-
-All items with the green check mark in front of them mean that they are configured and working, the above image should only be used as an example and should not be followed item by item for your environment. This is due to each user having their own set of accounts, dimensions, and dimension options as categorized above.
-
-Splitting Amounts
-
-This is done by clicking on the following icon next to the total amount or specific line item
-
-![](https://lh7-us.googleusercontent.com/SzOTCQ8pox0UPXhlCeSLuqzeD\_gOfmFBkxzmae4Ms2JYLU\_GeQPgd5iITPiedpV12bNozVTFI8Z3cRtacEogkb5OU5OAiKJ4HV7li2HqDsZjYzES8WcCpPDWlYPjRrPfBo5LCGaxtd8uerJqUbmMQcg)
-
-Once you select the splitting icon, a new menu will appear underneath the selected item
-
-![](https://lh7-us.googleusercontent.com/NMyfsDFrPh7NwQNXF1FHP-oHDkBTUqoniwq48Pri7ULHiZRHuYVJ\_RTiSqt12LG1Q7ut9UTmmlQC0-y2Le5cMJ-c\_OwpWJ7s09r3kHS8I2wca75EiKfa4u2uBkYudgJ-gkEC7yK8OtweSyuqOZ2hh2Y)
-
-Accounts
-
-The first block of the new menu gives you access to a dropdown list where you can select an account/department from your pre configured accounts/departments which you would like to split the amount between. DocBits will group similar account types together, making it easier to find certain types of accounts or accounts related to one another.
-
-Amounts
-
-The second block allows you to manually type in the respective amounts for which the parent amount will be split into.
-
-Percentage Split
-
-The third and final block allows you to manually enter the percentage split you would like the parent amount to be split into, the amount is automatically set to 50% when entering the splitting menu but can be changed to suit your preferences. If you enter a percentage value in the block, the amount will automatically be calculated in the second block.
-
-Keep in mind that the new amount will only be calculated once you press the ‘Enter key’ on your keyboard and that the other percentage(s) are not altered by this change, this can result in amounts that do not add up to the parent amount. For this reason, we have created an “Unsettled amount” counter in this menu which is discussed later.
-
-Other Features
-
-Add Row
-
-A plus icon next to the splitting icon, this can be used in situations where an amount needs to be split between more than two accounts/departments.
-
-![](https://lh7-us.googleusercontent.com/AzrPkawLROoACG3XpIpXXyRgVXa8giIkgOZ8sYc4LAHwuZRqmoiFas-oYUbR04vtPWiTPAwV\_tu-idfLG57VfaC9fvQl3Zpjdm-tNxVW7YK6-Kf-UeuYpkIenmJbQhdWfg71UezLIIG5\_4bhoSRZdtk)
-
-Delete Row
-
-A trash can icon that is used to delete unwanted or incorrect rows
-
-![](https://lh7-us.googleusercontent.com/2gAuz4KkU3xQuYZ-6w5p8T43JTJu\_aUdYfWHGBpQc\_LNPXjNu7BgN3maRgfqCzSsWyZ27j8BNn7PNzA2Tj6ZZx5T5rcJjmaFlPQZ5ioXRMoB8zSbGDawsopPoxlX2yZU\_-rh-\_D02iuzCjWDYOCJ7KE)
-
-Unsettled Amount
-
-An “Unsettled amount” indicator at the bottom in case of any unaccounted value or amount outstanding from the parent amount.
-
-![](https://lh7-us.googleusercontent.com/xZ2RqteuST79CFiKJRBDLwIBBLMa2E\_vdaMmpTM3NN2qxuwCr8j208wZVHgY1Q9bg46EhRPeQpM\_K1V85yIzU88D7tGRPiP3pkpzXUBv\_vZbPrIM1S41ZeRcMMVW60nf5Whngnpbluw9M30bjDwcoQ0)
+Pour la configuration propre à chaque système, continuez avec le [guide LN](ln.md) ou le [guide M3](m3.md).

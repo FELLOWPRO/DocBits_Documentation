@@ -2,20 +2,20 @@
 hidden: true
 ---
 
-# Compare uma confirmação de pedido com um pedido de compra
+# Comparar uma confirmação de pedido com um pedido de compra
 
-Use **Compare with Purchase Order** no Workflow Builder quando uma confirmação de pedido precisar ser verificada em relação ao respectivo pedido de compra. Adicione o cartão em **And...** e escolha os dados do pedido, um operador e o que deve acontecer com o resultado. As capturas de tela abaixo mostram duas versões de cartão disponíveis na interface em inglês. Os campos ainda são marcadores; defina-os para o seu workflow antes de salvar.
+Use **Comparar com a ordem de compra** no Workflow Builder quando uma confirmação de pedido precisar de ser verificada em relação ao respetivo pedido de compra. Adicione o cartão sob **E...**, depois escolha os dados do pedido, um operador e o que deve acontecer com o resultado. As capturas de tela abaixo mostram duas versões disponíveis do cartão na interface em português. Os campos ainda são marcadores de posição; configure-os para o seu próprio fluxo de trabalho antes de guardar.
 
-## Gravar o resultado em um campo
+## Escrever o resultado num campo
 
-<figure><img src="../../../../.gitbook/assets/dbdc-133-workflow-card-write-text.png" alt="Cartão Compare with Purchase Order no Workflow Builder com os campos Order Data, Operator, Text, Field Name e Result of condition." width="563"><figcaption>Versão 2: grava um texto em um campo com base no resultado da condição.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-413-workflow-card-write-text-pt.png" alt="Cartão Comparar com a ordem de compra no Workflow Builder com os marcadores de posição Dados do pedido, Operador, Texto, Nome do campo e Resultado da condição." width="563"><figcaption>Versão 2: escrever texto num campo com base no resultado da condição.</figcaption></figure>
 
-Escolha os **Order Data** da confirmação de pedido e um **Operator** para a comparação com o pedido de compra. Informe o **Text** a gravar, selecione o **Field Name** e escolha o **Result of condition** que deve acionar a gravação.
+Escolha **Dados do pedido** na confirmação do pedido e um **Operador** para a comparação com o pedido de compra. Introduza o **Texto** a escrever, selecione o **Nome do campo** e escolha o **Resultado da condição** que deve acionar a escrita.
 
 ## Comparar os dados
 
-<figure><img src="../../../../.gitbook/assets/dbdc-133-workflow-card-compare-as.png" alt="Cartão Compare with Purchase Order no Workflow Builder com os campos Any/All, Order Data, Operator e Comparison Data." width="563"><figcaption>Versão 4: compara dados selecionados da confirmação de pedido com dados do pedido de compra.</figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dbdc-413-workflow-card-compare-as-pt.png" alt="Cartão Comparar com a ordem de compra no Workflow Builder com os marcadores de posição Qualquer/Todos, Dados do pedido, Operador e Dados de comparação." width="563"><figcaption>Versão 4: comparar dados selecionados da confirmação do pedido com os dados do pedido de compra.</figcaption></figure>
 
-Escolha **Any/All** para definir se uma ou todas as condições selecionadas devem corresponder. Em seguida, selecione os **Order Data**, o **Operator** e os **Comparison Data** para a comparação com o pedido de compra.
+Escolha **Qualquer/Todos** para decidir se uma ou todas as condições selecionadas devem corresponder. Depois selecione os **Dados do pedido**, o **Operador** e os **Dados de comparação** para a comparação com o pedido de compra.
 
-Para as etapas relacionadas, consulte [Workflow](../../README.md) e [Compare with Purchase Order](README.md).
+Para os passos seguintes, veja [Fluxo de trabalho](../../README.md) e [Comparar com a ordem de compra](README.md).

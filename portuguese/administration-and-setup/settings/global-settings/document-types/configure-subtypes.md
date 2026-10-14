@@ -1,23 +1,15 @@
 # Configurar subtipos
 
-Use um subtipo de documento quando faturas do mesmo tipo de documento precisam de campos diferentes, um layout de validação diferente ou scripts de processamento próprios. Comece por [criar um subtipo](creating-a-new-sub-type.md), depois abra **Configurações → Tipos De Documentos**, escolha o tipo de documento e abra **Subtipos De Documentos**. Na linha do subtipo, abra **Actions** (os três pontos). O menu oferece **Campos**, **Construtor de layout** e **Roteiros**; também contém [Cópia, Editar e Excluir](using-actions.md).
+A configuração de subtipos permite personalizar a estrutura e o comportamento dos documentos dentro de um tipo específico. Aqui está uma explicação de como você pode usar as opções "Campos", "Editar layout" e "Scripts" para personalizar cada subtipo para necessidades específicas:
 
-<figure><img src="../../../../.gitbook/assets/subtype-actions-menu-pt-20261011.png" alt="Menu Actions de um subtipo de documento mostrando Campos, Construtor de layout, Roteiros, Cópia, Editar e Excluir"><figcaption><p>Escolha a parte do subtipo que deseja configurar.</p></figcaption></figure>
+*   **Campos:** A opção "Campos" permite adicionar, editar ou remover campos de metadados personalizados para o subtipo. Esses campos podem conter informações sobre os documentos desse tipo, como título, autor, data, categoria, etc. Você pode usar diferentes tipos de campos, como caixas de texto, listas suspensas, valores de data, etc., para capturar os dados de acordo com seus requisitos.
 
-## Campos
+<figure><img src="https://lh7-us.googleusercontent.com/M1uaFb0tg0q-xh941cnEZgUOHbRzlOm8MgR0Mz-oeXun4Eyf45YZD-APOVUyMhJY1FmTwBqy0hTVdTGCcvXX47dDSjH8tTwybFkXr2_73G0lQk9xNXBZgdsZ7_QACEEDTiPxSARrGV3s-isT1AoO8Co" alt=""><figcaption></figcaption></figure>
 
-Selecione **Campos** para decidir quais informações os usuários veem e inserem para este subtipo. Você pode selecionar **Criar campo** dentro de um grupo, marcar um campo existente como obrigatório, somente leitura ou oculto, e ajustar as opções de reconhecimento. Selecione **Salvar configurações** depois de fazer alterações. Use [Adicionando e Editando Campos](fields/adding-and-editing-fields.md) para os passos, [Configurando Propriedades de Campo](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/settings/global-settings/document-types/fields/configuring-field-properties-1.md) para as opções de coluna, e [Configurações de dados mestre](fields/master-data-settings.md) quando um campo deve usar dados de consulta.
+*   **Editar layout:** A opção "Editar layout" permite personalizar a aparência e a disposição dos campos na interface do usuário. Você pode alterar a ordem dos campos, criar grupos de campos para agrupar informações relacionadas e ajustar o tamanho e a posição dos campos na página. Isso permite otimizar a experiência do usuário e melhorar a usabilidade.
 
-<figure><img src="../../../../.gitbook/assets/subtype-fields-pt-20261011.png" alt="Configurações de campo em português para um subtipo de fatura sintética, com grupos de campos, colunas de propriedades e Salvar configurações"><figcaption><p>Configurações de campo na organização de teste da documentação. Nenhum dado de cliente é exibido.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/thrOOaF54hZqhl1XVvgZfT1Hu4NOS1550gA9EmksjGaKTMLfKCEQct-OIM8e2qDh0E9Y9K8yf9CJ8kv1jmxgWSbqnAnk9dJpqA-fEhhU2scaMiR-xkcK_UFfiaSffvXb7e1Uvt-_y7U6fr9gAccJtfM" alt=""><figcaption></figcaption></figure>
 
-## Construtor de layout
+*   **Scripts:** A opção "Scripts" permite adicionar lógica personalizada ou automação para o subtipo. Você pode usar scripts para acionar ações específicas quando um documento desse tipo é criado, editado ou excluído. Isso pode ser útil para implementar regras de negócios complexas, realizar validações ou integrar sistemas externos.
 
-Selecione **Construtor de layout** para organizar grupos e campos na tela de validação do documento. A parte esquerda lista os elementos; a parte direita aceita um documento de exemplo para pré-visualização. Verifique o resultado e selecione **Salvar** quando o layout estiver pronto. O [guia do Construtor de Layout](../../../setup/document-types/layout-builder.md) explica os elementos, a pré-visualização do documento e como salvar um layout.
-
-<figure><img src="../../../../.gitbook/assets/subtype-layout-pt-20261011.png" alt="Construtor de layout em português para um subtipo de fatura sintética, mostrando grupos, importação de pré-visualização e Salvar"><figcaption><p>Layout do subtipo antes de adicionar um documento de exemplo.</p></figcaption></figure>
-
-## Roteiros
-
-Selecione **Roteiros** para ver os scripts deste subtipo. Selecione **Novo** para começar; a pesquisa e os filtros **Todos**, **Ativo** e **Inativo** ajudam a encontrar os scripts existentes. Siga [Criando e Editando Scripts](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/settings/global-settings/document-types/script/creating-and-editing-scripts.md) para criar um, e [Ativação e Gestão de Scripts](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/settings/global-settings/document-types/script/script-activation-and-management.md) antes de ativá-lo para o processamento.
-
-<figure><img src="../../../../.gitbook/assets/subtype-scripts-pt-20261011.png" alt="Lista de scripts em português para um subtipo de fatura sintética, com Novo e os filtros de status"><figcaption><p>Scripts existentes no subtipo de teste da documentação, ainda inativos.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/G1SlZE44I3ZrL2cJYVpexKgxeyXYHxirnExRXGo2vqG-R4cXzabxd9oMai1I0qCerGc37UKxe6PF5OCbYkLyIdPbbOR0q9LyJJ1glTPOdD0_cQCNVZ-vB3z8VQYDpsIHJxXiZzT0gqht62zkD79fmw8" alt=""><figcaption></figcaption></figure>

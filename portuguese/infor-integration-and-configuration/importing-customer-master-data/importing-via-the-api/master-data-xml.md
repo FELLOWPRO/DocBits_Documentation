@@ -1,7 +1,5 @@
 ---
-description: >-
-  Como importar dados mestres para um conjunto de dados de lookup a partir de um
-  ficheiro XML
+description: Como importar dados mestres para um conjunto de dados de lookup a partir de um ficheiro XML
 ---
 
 # Importar Dados Mestres de XML
@@ -14,9 +12,9 @@ Use isto para dados mestres que não chegam como BOD — listas de preços, cent
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
 
-| Endpoint                                  | Quando o usar                                                                                                                 |
-| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `/master_data_lookup/xml/import_xml_file` | Tem os dados como **ficheiro XML** e quer carregá-lo.                                                                         |
+| Endpoint | Quando o usar |
+| --- | --- |
+| `/master_data_lookup/xml/import_xml_file` | Tem os dados como **ficheiro XML** e quer carregá-lo. |
 | `/master_data_lookup/xml/import_xml_data` | Quer **colar o XML** no pedido. Ao contrário dos endpoints de BOD, este aceita o XML como texto simples — sem invólucro JSON. |
 
 Ambos são descritos abaixo. Os passos 1 e 2 são iguais nos dois casos.
@@ -68,14 +66,14 @@ Clique em **Try it out** e preencha depois o formulário.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
 
-| Campo               |                                                                                                                                                                  |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **data\_type**      | Obrigatório. O conjunto de dados de lookup onde escrever. É convertido automaticamente para minúsculas, pelo que `PriceList` e `pricelist` são o mesmo conjunto. |
-| **field\_mappings** | Obrigatório. Um objeto JSON que associa cada coluna ao XPath de onde é lida. Veja abaixo.                                                                        |
-| **file**            | Obrigatório em `import_xml_file`. Clique em **Choose file** e selecione o seu XML.                                                                               |
-| **xml**             | Obrigatório em `import_xml_data` em vez do ficheiro — cole aí o XML como texto simples.                                                                          |
-| **org\_id**         | O seu Org ID — o mesmo valor que colocou em **X-ORG-ID** no passo 2.                                                                                             |
-| **sub\_org\_id**    | Só é necessário se estiver a importar para uma suborganização específica.                                                                                        |
+| Campo | |
+| --- | --- |
+| **data\_type** | Obrigatório. O conjunto de dados de lookup onde escrever. É convertido automaticamente para minúsculas, pelo que `PriceList` e `pricelist` são o mesmo conjunto. |
+| **field\_mappings** | Obrigatório. Um objeto JSON que associa cada coluna ao XPath de onde é lida. Veja abaixo. |
+| **file** | Obrigatório em `import_xml_file`. Clique em **Choose file** e selecione o seu XML. |
+| **xml** | Obrigatório em `import_xml_data` em vez do ficheiro — cole aí o XML como texto simples. |
+| **org\_id** | O seu Org ID — o mesmo valor que colocou em **X-ORG-ID** no passo 2. |
+| **sub\_org\_id** | Só é necessário se estiver a importar para uma suborganização específica. |
 
 #### Mapeamentos de campos
 
@@ -110,9 +108,9 @@ Só os XPath **malformados** são rejeitados, com um `400` a nomear o campo. Um 
 {% hint style="danger" %}
 Alguns nomes não estão livres: são as próprias tabelas de dados mestres do DocBits, e importar para uma delas escreve diretamente lá dentro.
 
-| Nome                                                                                                                                                                                            |                                                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `purchase_order_header`, `purchase_order_address`                                                                                                                                               | Rejeitados com `RESERVED_DATASET_NAME`.                                                               |
+| Nome | |
+| --- | --- |
+| `purchase_order_header`, `purchase_order_address` | Rejeitados com `RESERVED_DATASET_NAME`. |
 | `supplier`, `supplier_accounts`, `purchase_order`, `receive_delivery`, `receive_delivery_lines`, `costing_element`, `customer_erp_items`, `supplier_item_price`, `supplier_item_number_mapping` | **Aceites, e sobrescrevem dados mestres reais.** Use-os apenas se for genuinamente isso que pretende. |
 
 Para tudo o resto, escolha um nome seu.
@@ -146,3 +144,5 @@ Ao contrário das importações de BOD, estes endpoints comunicam os problemas c
 * No DocBits, vá a **Settings → Document Processing → Lookup Master Data**.
 * Selecione **Imported** à esquerda e abra depois o separador do seu tipo de dados.
 * As colunas são os nomes que usou do lado esquerdo de `field_mappings`.
+
+<!-- SCREENSHOT: Lookup Master Data with Imported selected and the new dataset open -->

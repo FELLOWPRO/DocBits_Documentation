@@ -25,6 +25,6 @@ Uma resposta bem-sucedida contém `success: true` e uma lista `data` com os tipo
 
 ## Encontre a próxima operação
 
-Na referência da API, pesquise o que você quer fazer, leia a descrição e os campos obrigatórios dessa operação e verifique se ela usa `GET`, `POST` ou outro método. Use a resposta de exemplo da referência para confirmar o resultado. Para um passo a passo com Postman, veja [Postman para DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/); verifique as URLs de exemplo mais antigas dele na referência atual da API antes de enviar uma chamada.
+Na referência da API, pesquise o que você quer fazer, leia a descrição e os campos obrigatórios dessa operação e verifique se ela usa `GET`, `POST` ou outro método. Use a resposta de exemplo da referência para confirmar o resultado. Para um passo a passo com Postman, veja [Postman para DocBits](../../../../advanced-functions-and-tools/postman-for-docbits/README.md); verifique as URLs de exemplo mais antigas dele na referência atual da API antes de enviar uma chamada.
 
 As quatro imagens antigas desta página descreviam APIs genéricas de OCR, NLP, conversão de arquivos e gestão de documentos sem mostrar endpoints verificados do DocBits. Elas foram removidas; somente a operação DocBits documentada acima é apresentada como exemplo executável.

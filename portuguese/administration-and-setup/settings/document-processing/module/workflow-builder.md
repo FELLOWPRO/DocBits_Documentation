@@ -31,7 +31,7 @@ Ligar o botão não apenas altera uma configuração — ele inicia uma **assina
 4. Abra a seção **Tipo de Documento**.
 5. Encontre **Workflow Builder** e ligue o botão.
 6. Na caixa de diálogo, escolha o seu plano DocFlow (Standard, opcionalmente Advanced) e confirme. O DocFlow é ativado assim que a assinatura é criada.
-7. Depois, projete os seus fluxos de trabalho de documentos no DocFlow — consulte a seção [Workflow](../../../workflow/) para saber como criá-los.
+7. Depois, projete os seus fluxos de trabalho de documentos no DocFlow — consulte a seção [Workflow](../../../workflow/README.md) para saber como criá-los.
 
 ### Quando usar este recurso
 

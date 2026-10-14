@@ -15,15 +15,15 @@ Para a explicação completa de reordenar, ocultar e fixar, veja [Barra Lateral 
 
 O menu Configurações está agrupado por intenção, e não por modelo de dados. Se você lembra de uma configuração mas não consegue encontrá-la, tente o grupo correspondente abaixo:
 
-| Você procura…                                                                   | Abra Configurações →                               |
-| ------------------------------------------------------------------------------- | -------------------------------------------------- |
-| Nome da empresa, logotipo, fuso horário, cor do app                             | Empresa e Usuários → Informações da Empresa        |
-| Usuários, grupos, permissões                                                    | Empresa e Usuários → Grupos, Usuários e Permissões |
-| Chaves de API, conexões ERP, configurações de exportação                        | Integração                                         |
-| Tipos de documento, campos, scripts, EDI, treinamento de modelo                 | Tipos de Documento                                 |
-| Configurações OCR, árvores de decisão, listas de valores, gerenciador de regras | Processamento de Documentos                        |
-| Auditoria de acesso, analítica, índice de texto completo, log de eventos        | Logs e Pesquisa                                    |
-| Portal do fornecedor, Watchdog                                                  | Configuração                                       |
+| Você procura… | Abra Configurações → |
+|---|---|
+| Nome da empresa, logotipo, fuso horário, cor do app | Empresa e Usuários → Informações da Empresa |
+| Usuários, grupos, permissões | Empresa e Usuários → Grupos, Usuários e Permissões |
+| Chaves de API, conexões ERP, configurações de exportação | Integração |
+| Tipos de documento, campos, scripts, EDI, treinamento de modelo | Tipos de Documento |
+| Configurações OCR, árvores de decisão, listas de valores, gerenciador de regras | Processamento de Documentos |
+| Auditoria de acesso, analítica, índice de texto completo, log de eventos | Logs e Pesquisa |
+| Portal do fornecedor, Watchdog | Configuração |
 
 Dentro de cada grupo, as páginas mais usadas ficam no topo.
 

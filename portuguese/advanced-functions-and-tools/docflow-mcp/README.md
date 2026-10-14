@@ -6,11 +6,11 @@ O DocFlow expõe um servidor **Model Context Protocol (MCP)** que permite que as
 
 Com o DocFlow MCP você pode:
 
-* **Listar, criar, atualizar e excluir** workflows avançados
-* **Testar workflows** com documentos reais ou simulados
-* **Criar cards personalizados** usando o Partner Card SDK
-* **Validar, testar, aprovar e gerenciar** submissões de cards de parceiros
-* **Importar cards** diretamente de repositórios GitHub
+- **Listar, criar, atualizar e excluir** workflows avançados
+- **Testar workflows** com documentos reais ou simulados
+- **Criar cards personalizados** usando o Partner Card SDK
+- **Validar, testar, aprovar e gerenciar** submissões de cards de parceiros
+- **Importar cards** diretamente de repositórios GitHub
 
 ## Visão Geral das Ferramentas
 
@@ -18,39 +18,39 @@ O DocFlow MCP fornece **18 ferramentas** em quatro categorias:
 
 ### Gerenciamento de Workflows
 
-| Ferramenta        | Descrição                                       |
-| ----------------- | ----------------------------------------------- |
-| `list_workflows`  | Listar todos os workflows da organização atual  |
-| `get_workflow`    | Obter detalhes de um workflow específico por ID |
-| `delete_workflow` | Excluir um workflow por ID                      |
+| Ferramenta | Descrição |
+|------|-------------|
+| `list_workflows` | Listar todos os workflows da organização atual |
+| `get_workflow` | Obter detalhes de um workflow específico por ID |
+| `delete_workflow` | Excluir um workflow por ID |
 
 ### Teste de Workflows
 
-| Ferramenta               | Descrição                                                        |
-| ------------------------ | ---------------------------------------------------------------- |
+| Ferramenta | Descrição |
+|------|-------------|
 | `test_advanced_workflow` | Testar a execução de um workflow avançado com documento opcional |
-| `list_test_scenarios`    | Listar todos os cenários de teste de workflow                    |
-| `list_cards`             | Listar cards/ações de workflow disponíveis                       |
+| `list_test_scenarios` | Listar todos os cenários de teste de workflow |
+| `list_cards` | Listar cards/ações de workflow disponíveis |
 
 ### Gerenciamento do Card SDK
 
-| Ferramenta                  | Descrição                                             |
-| --------------------------- | ----------------------------------------------------- |
-| `sdk_list_submissions`      | Listar todas as submissões de cards de parceiros      |
-| `sdk_get_submission_status` | Obter o status de validação de uma submissão          |
-| `sdk_approve_card`          | Aprovar um card de parceiro validado (admin)          |
-| `sdk_reject_card`           | Rejeitar uma submissão de card de parceiro (admin)    |
-| `sdk_delete_submission`     | Desativar ou excluir uma submissão (admin)            |
-| `sdk_list_cards_picker`     | Listar todos os cards habilitados com flags de função |
+| Ferramenta | Descrição |
+|------|-------------|
+| `sdk_list_submissions` | Listar todas as submissões de cards de parceiros |
+| `sdk_get_submission_status` | Obter o status de validação de uma submissão |
+| `sdk_approve_card` | Aprovar um card de parceiro validado (admin) |
+| `sdk_reject_card` | Rejeitar uma submissão de card de parceiro (admin) |
+| `sdk_delete_submission` | Desativar ou excluir uma submissão (admin) |
+| `sdk_list_cards_picker` | Listar todos os cards habilitados com flags de função |
 
 ### Desenvolvimento do Card SDK
 
-| Ferramenta          | Descrição                                               |
-| ------------------- | ------------------------------------------------------- |
-| `sdk_create_card`   | Criar um novo card de parceiro a partir de código-fonte |
-| `sdk_validate_card` | Executar validação em 5 etapas sem salvar               |
-| `sdk_test_card`     | Executar um card em um ambiente isolado (sandbox)       |
-| `sdk_import_github` | Importar um app de parceiro do GitHub                   |
+| Ferramenta | Descrição |
+|------|-------------|
+| `sdk_create_card` | Criar um novo card de parceiro a partir de código-fonte |
+| `sdk_validate_card` | Executar validação em 5 etapas sem salvar |
+| `sdk_test_card` | Executar um card em um ambiente isolado (sandbox) |
+| `sdk_import_github` | Importar um app de parceiro do GitHub |
 
 ## Primeiros Passos
 

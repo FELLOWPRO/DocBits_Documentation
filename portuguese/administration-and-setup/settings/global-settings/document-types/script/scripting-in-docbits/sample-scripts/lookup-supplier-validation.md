@@ -44,7 +44,7 @@ if supplier_id:
 
 ## Funções Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Ler valor do campo
-* [get\_lookup\_records()](../functions/business-logic-functions.md#get_lookup_records) — Consultar dados mestre
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Escrever valor do campo
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Mostrar erro de validação
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Ler valor do campo
+- [get\_lookup\_records()](../business-logic-functions.md#get\_lookup\_records) — Consultar dados mestre
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Escrever valor do campo
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Mostrar erro de validação

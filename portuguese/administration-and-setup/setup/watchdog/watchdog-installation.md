@@ -1,78 +1,136 @@
 # Instalação do WatchDog
 
-<figure><img src="../../../.gitbook/assets/watchdog-infographic-pt.png" alt="WatchDog Infographic"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/watchdog-installation-infographic.svg" alt="Etapas de instalação do WatchDog"><figcaption></figcaption></figure>
 
-### Configurando o WatchDog no DocBits
+> **Recomendado:** Use a configuração moderna descrita abaixo. As configurações do WatchDog agora são criadas diretamente no aplicativo DocBits — não são necessários arquivos de configuração locais.
 
-1. **Acessar Configurações do WatchDog**
-   * Navegue até **Configurações → Processamento de Documentos → WatchDog**.
-2. **Configurações da Pasta**
-   * Defina os caminhos onde o WatchDog encontra e processa documentos.
-   *   Os caminhos das pastas devem corresponder àqueles criados durante a instalação:
+## Pré-requisitos
 
-       * `C:/WatchDog/Read`
-       * `C:/WatchDog/Processed`
+* Windows Server ou Windows 10/11
+* Acesso de administrador
+* Conectividade de rede com a API do DocBits
+* Chave de API do DocBits (disponível em Configurações → WatchDog → aba General)
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FzG1EFmtSO4AxZjWir401%252Fimage.png%3Falt%3Dmedia%26token%3Dc356e023-8cfb-4f45-b863-b27c5af1d9df\&width=768\&dpr=4\&quality=100\&sign=1b1ae0c4\&sv=2)
-   * <mark style="color:red;">**Nota:**</mark>**&#x20;É recomendável usar caminhos locais. Estes devem corresponder às pastas na Instalação do DocBits**
-3. **Configurações Gerais**
-   *   Selecione os tipos de documentos a serem processados marcando as caixas de seleção correspondentes.\\
+## Etapas de instalação
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZbCt5UHd37PdNZsVItdt%252Fimage.png%3Falt%3Dmedia%26token%3Db3c3f203-0f60-42a0-bd56-ee70c204f5e8\&width=768\&dpr=4\&quality=100\&sign=becd5e31\&sv=2)
-   * **Divisor de Código de Barras:** Quando ativado, habilita a divisão de código de barras.
-   * **Operador DocBits:** Quando habilitado, abre um navegador Chrome em segundo plano para o Operador DocBits.
-   * **Destino de Exportação:** Define o destino da exportação.
-     * **Infor:** Documentos são exportados para o Infor.
-     * **Pasta de Exportação:** Documentos são exportados para uma pasta definida que pode ser configurada abaixo.
-4. **Configurações de Exportação**
-   * Exibe todas as exportações configuradas para **processamento local**.
-   *   Mostra o timestamp da **última conexão bem-sucedida** para cada configuração.\\
+### 1. Criar as pastas necessárias
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FRvK5qn6EggWJxcSYNP5J%252Fimage.png%3Falt%3Dmedia%26token%3D195b9cc6-c5ac-4ee6-90da-b3ee9696ee30\&width=768\&dpr=4\&quality=100\&sign=3bc11ec5\&sv=2)
-5. **Configuração bod\_mapping (Opcional)**
-   * <mark style="color:red;">**Campos obrigatórios:**</mark> Antes de adicionar mapeamentos de metadados personalizados, você deve definir os seguintes dois valores
-     * **`file_name`**
-     * **`pdf_path`**
-   *   Clique em **Adicionar Linha** para definir mapeamentos de metadados.\\
+Crie um diretório principal e subpastas para o WatchDog:
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FlzUqcr51kq18OrmYAR8X%252Fimage.png%3Falt%3Dmedia%26token%3D3035122b-f1d3-44cc-bfe6-5230943bd77d\&width=768\&dpr=4\&quality=100\&sign=e98d5a1b\&sv=2)
-   * **Valor:** Especifica o nome do campo para os metadados.
-   * **Caminho:** A expressão XPath apontando para os dados XML que devem ser atribuídos ao campo.
-   * **Ícone de Lixeira:** Usado para excluir uma linha específica.
-6. **Baixar a Configuração**
-   * Salvar a configuração
-   *   Baixar a configuração\\
+```
+C:\WatchDog\              ← WatchDog executable
+C:\WatchDog\Import\       ← Watch folder for incoming documents
+C:\WatchDog\Processed\    ← Success folder for processed documents
+C:\WatchDog\Export\        ← Export folder for exported files
+```
 
-       ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZXiz4KB7QpnaqD9XwX3o%252Fimage.png%3Falt%3Dmedia%26token%3D04c9f8dc-7d79-443f-9ce4-6d4214edc98b\&width=768\&dpr=4\&quality=100\&sign=574a4218\&sv=2)
+> **Observação:** Recomenda-se usar caminhos locais. Caminhos de rede UNC (por exemplo, `\\server\share`) são suportados, mas podem exigir um Polling Observer para uma detecção confiável de arquivos.
 
-### Guia de Instalação do WatchDog
+### 2. Baixar o WatchDog
 
-1. **Criar Pastas Necessárias**
-   * Crie um diretório principal: `C:/WatchDog`
-   * Dentro de `C:/WatchDog`, crie as seguintes subpastas: **Nota:** estas devem corresponder às pastas no DocBits.
-     * `C:/WatchDog/Read`
-     * `C:/WatchDog/Processed`
-   * <mark style="color:red;">**Nota:**</mark>**&#x20;É recomendável usar caminhos locais. Estes devem corresponder às pastas na Configuração do DocBits**
-2. **Baixar o WatchDog**
-   * Baixe a versão mais recente do `WatchDog.exe` de: [https://github.com/Fellow-Consulting-AG/WatchDog](https://github.com/Fellow-Consulting-AG/WatchDog)
-   * Coloque o arquivo `WatchDog.exe` baixado em `C:/WatchDog`.
-   * Coloque o arquivo `watchdog-config.json` baixado em `C:/WatchDog`.
-   * Abra o `watchdog-config.json` e altere o **config\_path.**
-   * Neste exemplo:
-     * `"config_path": "C:/WatchDog/watchdog-config.json"`
-3. **Instalar o WatchDog**
-   * Abra o **Prompt de Comando (CMD)** com **direitos de Administrador**.
-   * Navegue até a pasta do WatchDog.
-   *   Execute o seguinte comando para instalar o WatchDog:
+Baixe o `WatchDog.exe` no aplicativo DocBits:
 
-       `WatchDog.exe install`
-4. **Iniciar o Serviço WatchDog**
-   *   Execute o seguinte comando no CMD:
+**Configurações → Processamento de documentos → WatchDog → aba General → Download**
 
-       `WatchDog.exe start`
-5. **Definir Tipo de Inicialização**
-   * Abra **Serviços** (Pressione `Win + R`, digite `services.msc` e pressione **Enter**).
-   * Localize **WatchDog** na lista de serviços.
-   * Clique duas vezes para abrir suas propriedades.
-   * Defina o **Tipo de Inicialização** como **Automático (Início Atrasado)**.
-   * Clique em **OK**.
+Coloque o arquivo `WatchDog.exe` baixado em `C:\WatchDog\`.
+
+### 3. Configurar a conexão com a API
+
+Abra o **Prompt de Comando (CMD)** como **Administrador** e execute:
+
+```powershell
+cd C:\WatchDog
+WatchDog.exe -api YOUR_API_KEY
+```
+
+Isso conecta o WatchDog à sua organização no DocBits e busca as configurações automaticamente.
+
+### 4. Instalar como serviço do Windows
+
+```powershell
+WatchDog.exe install
+```
+
+### 5. Iniciar o serviço
+
+```powershell
+WatchDog.exe start
+```
+
+### 6. Criar configurações no DocBits
+
+No DocBits, acesse **Configurações → Processamento de documentos → WatchDog → aba Configurations**:
+
+* Clique em **New Import Configuration** para configurar as pastas monitoradas
+* Clique em **New Export Configuration** para configurar os destinos de exportação
+
+> **Importante:** As configurações de exportação exigem um **tipo de documento**. Todas as configurações são gerenciadas de forma centralizada no DocBits, não em arquivos de configuração locais.
+
+### 7. Definir a inicialização automática
+
+1. Abra **Serviços** (`Win + R` → `services.msc`)
+2. Localize o **WatchDog** na lista de serviços
+3. Clique duas vezes para abrir as propriedades
+4. Defina o **Tipo de inicialização** como **Automático (Início atrasado)**
+5. Clique em **OK**
+
+## Verificar a instalação
+
+Após a instalação, verifique o status do WatchDog no DocBits:
+
+**Configurações → WatchDog → aba General**
+
+<figure><img src="../../../.gitbook/assets/watchdog_v2_01.png" alt="Aba General do WatchDog — status do serviço"><figcaption></figcaption></figure>
+
+* ✅ **Online** — o WatchDog está conectado e enviando heartbeats
+* A versão, a última reinicialização e as informações do sistema devem estar visíveis
+
+## Referência de comandos
+
+| Comando | Descrição |
+| :--- | :--- |
+| `WatchDog.exe -api KEY` | Configura a chave de API |
+| `WatchDog.exe install` | Instala como serviço do Windows |
+| `WatchDog.exe start` | Inicia o serviço |
+| `WatchDog.exe stop` | Para o serviço |
+| `WatchDog.exe debug` | Executa em modo console (para solução de problemas) |
+| `WatchDog.exe remove` | Desinstala o serviço |
+| `WatchDog.exe --version` | Exibe a versão atual |
+| `WatchDog.exe --list-folders` | Lista as pastas monitoradas configuradas |
+| `WatchDog.exe --add-folder PATH` | Adiciona uma pasta monitorada |
+| `WatchDog.exe --remove-folder PATH` | Remove uma pasta monitorada |
+
+---
+
+## Legado: configuração V1 (obsoleta)
+
+O método de configuração V1 abaixo, com arquivos de configuração locais, está **obsoleto**. Use a configuração moderna baseada em API descrita acima.
+
+<details>
+<summary>Configuração V1 (clique para expandir)</summary>
+
+### Configurando o WatchDog no DocBits (V1)
+
+1. **Acessar as configurações do WatchDog**
+   * Acesse **Configurações → Processamento de documentos → WatchDog**
+2. **Configurações de pasta**
+   * Defina os caminhos: `C:/WatchDog/Read` e `C:/WatchDog/Processed`
+
+   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="Configurações de pasta do WatchDog"><figcaption></figcaption></figure>
+
+3. **Configurações gerais**
+   * Selecione os tipos de documento e configure o destino de exportação
+
+   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="Configurações gerais do WatchDog"><figcaption></figcaption></figure>
+
+4. **Configurações de exportação**
+   * Mostra as exportações configuradas para processamento local
+
+   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="Configurações de exportação do WatchDog"><figcaption></figcaption></figure>
+
+5. **Baixar a configuração**
+   * Baixe o `watchdog-config.json` e coloque-o em `C:\WatchDog\`
+
+   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Baixar configuração"><figcaption></figcaption></figure>
+
+</details>

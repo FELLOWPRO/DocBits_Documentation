@@ -1,4 +1,4 @@
-# Mapeamento de campos ZUGFeRD + Swiss QR Code
+# Mapeamento de Campos ZUGFeRD + Swiss QR Code
 
 ## Visão Geral
 
@@ -15,27 +15,27 @@ Ao processar faturas em PDF que contêm tanto dados XML ZUGFeRD quanto um Swiss 
 
 ### Mapeamento de Campos Swiss QR Code → DocBits
 
-| Campo Swiss QR        | Campo DocBits                         | Descrição                            |
-| --------------------- | ------------------------------------- | ------------------------------------ |
-| IBAN                  | `supplier_iban`                       | IBAN do credor (ex: CH9300762011...) |
-| Amount                | `total_amount`                        | Valor do pagamento (ex: 1234.56)     |
-| Currency              | `currency`                            | Código da moeda (CHF ou EUR)         |
-| Reference             | `payment_reference` / `esr_reference` | Referência QR ou número ESR          |
-| Creditor.Name         | `supplier_name`                       | Nome da empresa fornecedora          |
-| Creditor.AddressLine1 | `supplier_address`                    | Endereço (rua)                       |
-| Creditor.PostalCode   | `supplier_plz`                        | Código postal                        |
-| Creditor.City         | `supplier_city`                       | Cidade                               |
-| Creditor.Country      | `supplier_country`                    | Código do país (CH)                  |
-| Debtor.Name           | `company_name`                        | Nome da empresa destinatária         |
-| Debtor.AddressLine1   | `company_street`                      | Endereço do destinatário             |
-| Debtor.PostalCode     | `company_plz`                         | Código postal do destinatário        |
-| Debtor.City           | `company_city`                        | Cidade do destinatário               |
+| Campo Swiss QR | Campo DocBits | Descrição |
+| :--- | :--- | :--- |
+| IBAN | `supplier_iban` | IBAN do credor (ex: CH9300762011...) |
+| Amount | `total_amount` | Valor do pagamento (ex: 1234.56) |
+| Currency | `currency` | Código da moeda (CHF ou EUR) |
+| Reference | `payment_reference` / `esr_reference` | Referência QR ou número ESR |
+| Creditor.Name | `supplier_name` | Nome da empresa fornecedora |
+| Creditor.AddressLine1 | `supplier_address` | Endereço (rua) |
+| Creditor.PostalCode | `supplier_plz` | Código postal |
+| Creditor.City | `supplier_city` | Cidade |
+| Creditor.Country | `supplier_country` | Código do país (CH) |
+| Debtor.Name | `company_name` | Nome da empresa destinatária |
+| Debtor.AddressLine1 | `company_street` | Endereço do destinatário |
+| Debtor.PostalCode | `company_plz` | Código postal do destinatário |
+| Debtor.City | `company_city` | Cidade do destinatário |
 
 ## Exemplo: Processamento de Fatura de Amostra
 
 ### Documento de Entrada
 
-* **PDF**: Fatura com XML ZUGFeRD 1.0 incorporado + código de barras Swiss QR Code
+*   **PDF**: Fatura com XML ZUGFeRD 1.0 incorporado + código de barras Swiss QR Code
 
 ### Dados Extraídos do Swiss QR Code
 
@@ -66,38 +66,38 @@ Ao processar faturas em PDF que contêm tanto dados XML ZUGFeRD quanto um Swiss 
 
 ### Resultados da Extração de Campos
 
-| Campo               | Valor                       | Fonte       | Método    |
-| ------------------- | --------------------------- | ----------- | --------- |
-| `supplier_iban`     | CH9300762011623852957       | ZUGFeRD XML | ED        |
-| `total_amount`      | 1234.56                     | ZUGFeRD XML | ED        |
-| `currency`          | CHF                         | ZUGFeRD XML | ED        |
-| `supplier_name`     | Sample Company GmbH         | ZUGFeRD XML | ED        |
-| `supplier_address`  | Musterstrasse 123           | ZUGFeRD XML | ED        |
-| `payment_reference` | 210000000003139471430009017 | Swiss QR    | SWISS\_QR |
-| `supplier_plz`      | 8000                        | Swiss QR    | SWISS\_QR |
-| `supplier_city`     | Zürich                      | Swiss QR    | SWISS\_QR |
+| Campo | Valor | Fonte | Método |
+| :--- | :--- | :--- | :--- |
+| `supplier_iban` | CH9300762011623852957 | ZUGFeRD XML | ED |
+| `total_amount` | 1234.56 | ZUGFeRD XML | ED |
+| `currency` | CHF | ZUGFeRD XML | ED |
+| `supplier_name` | Sample Company GmbH | ZUGFeRD XML | ED |
+| `supplier_address` | Musterstrasse 123 | ZUGFeRD XML | ED |
+| `payment_reference` | 210000000003139471430009017 | Swiss QR | SWISS_QR |
+| `supplier_plz` | 8000 | Swiss QR | SWISS_QR |
+| `supplier_city` | Zürich | Swiss QR | SWISS_QR |
 
 ## Métodos de Extração
 
-| Código do Método | Descrição                                           |
-| ---------------- | --------------------------------------------------- |
-| **ED**           | Documento Eletrônico (ZUGFeRD/XRechnung/PEPPOL XML) |
-| **SWISS\_QR**    | Extração de código de barras Swiss QR Code          |
-| **OCR**          | Reconhecimento Óptico de Caracteres                 |
-| **ML**           | Extração por Machine Learning                       |
+| Código do Método | Descrição |
+| :--- | :--- |
+| **ED** | Documento Eletrônico (ZUGFeRD/XRechnung/PEPPOL XML) |
+| **SWISS_QR** | Extração de código de barras Swiss QR Code |
+| **OCR** | Reconhecimento Óptico de Caracteres |
+| **ML** | Extração por Machine Learning |
 
 ## Prioridade de Mesclagem (Merge)
 
-1. **ZUGFeRD XML** tem a maior prioridade (dados estruturados e confiáveis)
-2. **Swiss QR Code** preenche campos vazios (garantido como preciso para dados de pagamento)
-3. **OCR/ML** usado para campos não presentes em fontes eletrônicas
+1.  **ZUGFeRD XML** tem a maior prioridade (dados estruturados e confiáveis)
+2.  **Swiss QR Code** preenche campos vazios (garantido como preciso para dados de pagamento)
+3.  **OCR/ML** usado para campos não presentes em fontes eletrônicas
 
 ## Versões de Swiss QR Code Suportadas
 
-* Formato Swiss QR Bill (ISO 20022)
-* Formato QR-IBAN (começa com 30, 31)
-* Formato IBAN Padrão
-* Com/sem referência estruturada (QRR, SCOR)
+*   Formato Swiss QR Bill (ISO 20022)
+*   Formato QR-IBAN (começa com 30, 31)
+*   Formato IBAN Padrão
+*   Com/sem referência estruturada (QRR, SCOR)
 
 ## Requisito de Versão
 
@@ -105,8 +105,9 @@ Este recurso requer **api versão 10.95.6** e **barcode versão 1.0.5** ou super
 
 ### Versões dos Componentes (Ambiente Dev)
 
-| Componente | Versão  | Descrição                                        |
-| ---------- | ------- | ------------------------------------------------ |
-| `api`      | 10.95.6 | API principal com suporte à extração ZUGFeRD 1.0 |
-| `barcode`  | 1.0.5   | Detecção e análise de Swiss QR Code              |
-| `Auth`     | 1.48.8  | Serviço de autenticação                          |
+| Componente | Versão | Descrição |
+| :--- | :--- | :--- |
+| `api` | 10.95.6 | API principal com suporte à extração ZUGFeRD 1.0 |
+| `barcode` | 1.0.5 | Detecção e análise de Swiss QR Code |
+| `Auth` | 1.48.8 | Serviço de autenticação |
+

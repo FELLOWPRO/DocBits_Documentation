@@ -31,7 +31,7 @@ Ativar isso bloqueia os logins com senha para os membros que não têm um segund
 Abaixo do botão de alternância, o painel de **adoção do MFA** mostra o quanto a 2FA é usada na sua organização antes de você exigi-la:
 
 * a **porcentagem de adoção** geral e uma barra de progresso,
-* quantos dos seus membros têm a 2FA ativada (por exemplo, _0 de 74 membros_),
+* quantos dos seus membros têm a 2FA ativada (por exemplo, *0 de 74 membros*),
 * um detalhamento por fator — **Autenticador**, **E-mail** e **Chave de acesso**.
 
 <figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="The MFA adoption report"><figcaption><p>O relatório de adoção do MFA: porcentagem geral, membros cadastrados e um detalhamento por fator.</p></figcaption></figure>

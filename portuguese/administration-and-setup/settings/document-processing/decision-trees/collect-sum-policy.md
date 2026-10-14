@@ -5,12 +5,12 @@ Esta política recolhe todas as regras correspondentes e soma os resultados. Fun
 **Exemplo:**
 
 | Regra | Condição             | Valor Devolvido |
-| ----- | -------------------- | --------------- |
-| 1     | Total Amount <= 1000 | 1               |
-| 2     | Total Amount <= 2000 | 2               |
-| 3     | Total Amount <= 3000 | 3               |
-| 4     | Total Amount <= 4000 | 4               |
-| 5     | Total Amount <= 5000 | 5               |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | 1            |
+| 2    | Total Amount <= 2000 | 2            |
+| 3    | Total Amount <= 3000 | 3            |
+| 4    | Total Amount <= 4000 | 4            |
+| 5    | Total Amount <= 5000 | 5            |
 
 Para o valor de entrada de **Total Amount = 2500**, a avaliação das regras seria:
 

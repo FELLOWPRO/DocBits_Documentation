@@ -35,4 +35,4 @@ Suas preferências são salvas automaticamente quando você pressiona **Concluí
 
 Quando uma nova funcionalidade é adicionada ao DocBits em uma versão futura, ela se junta ao final da sua barra lateral com a visibilidade padrão. Reordene-a ou oculte-a no modo de edição para se adequar à sua rotina.
 
-Funcionalidades para as quais você não tem permissão nunca aparecem na lista de personalização — você não pode reativar acidentalmente algo que sua função não consegue abrir.
+<mark>Funcionalidades para as quais você não tem permissão nunca aparecem na lista de personalização — você não pode reativar acidentalmente algo que sua função não consegue abrir.</mark>

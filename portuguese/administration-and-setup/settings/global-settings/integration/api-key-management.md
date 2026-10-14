@@ -4,7 +4,7 @@ description: >-
   DocBits
 ---
 
-# Gestão de Chaves API
+# API Key Management
 
 Uma API key permite que outro sistema — o seu ERP, um script ou uma aplicação de um parceiro — fale com o DocBits sem que um utilizador inicie sessão. A sua organização pode ter tantas chaves quantas precisar, e cada uma é gerida em separado: dê-lhe um nome próprio, decida se expira e revogue-a isoladamente se alguma vez for exposta.
 
@@ -24,14 +24,14 @@ A secção **API Key** no topo da página lista todas as chaves que a sua organi
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-list-row.png)
 
-| Coluna        | O que lhe diz                                                                                                                                                                      |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key**       | Os primeiros caracteres da chave, seguidos de `****`. O resto nunca mais é mostrado depois de a criar — consulte [Criar uma chave API](api-key-management.md#criar-uma-chave-api). |
-| **Name**      | O nome que deu à chave, com a descrição por baixo.                                                                                                                                 |
-| **Expires**   | A data em que a chave deixa de funcionar, ou **Never** se não tiver definido nenhuma.                                                                                              |
-| **Last Used** | Quando chegou pela última vez um pedido com esta chave. **Never used** significa que nenhum sistema a usou ainda — útil para detetar chaves que pode remover com segurança.        |
-| **Status**    | **Active** significa que a chave funciona. Uma chave revogada fica desligada permanentemente.                                                                                      |
-| **Actions**   | O menu de três pontos, onde pode revogar a chave.                                                                                                                                  |
+| Coluna | O que lhe diz |
+| --- | --- |
+| **Key** | Os primeiros caracteres da chave, seguidos de `****`. O resto nunca mais é mostrado depois de a criar — consulte [Criar uma chave API](#criar-uma-chave-api). |
+| **Name** | O nome que deu à chave, com a descrição por baixo. |
+| **Expires** | A data em que a chave deixa de funcionar, ou **Never** se não tiver definido nenhuma. |
+| **Last Used** | Quando chegou pela última vez um pedido com esta chave. **Never used** significa que nenhum sistema a usou ainda — útil para detetar chaves que pode remover com segurança. |
+| **Status** | **Active** significa que a chave funciona. Uma chave revogada fica desligada permanentemente. |
+| **Actions** | O menu de três pontos, onde pode revogar a chave. |
 
 Se tiver mais chaves do que cabem numa página, use os controlos de paginação no fundo da lista.
 
@@ -46,11 +46,11 @@ Se tiver mais chaves do que cabem numa página, use os controlos de paginação 
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/api-key-create-dialog.png)
 
-| Campo           | O que introduzir                                                                                                                                                                |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Key Name**    | Obrigatório. Dê-lhe o nome do sistema que a vai usar — `M3 Production`, `Invoice Import Script` — para conseguir perceber mais tarde a que integração pertence cada chave.      |
-| **Description** | Opcional. Espaço para uma nota sobre para que serve a chave ou quem a configurou.                                                                                               |
-| **Expiration**  | Escolha uma data de expiração, ou deixe em **Never expires**. Uma data de expiração é a opção mais segura: a chave reforma-se sozinha se a integração alguma vez for esquecida. |
+| Campo | O que introduzir |
+| --- | --- |
+| **Key Name** | Obrigatório. Dê-lhe o nome do sistema que a vai usar — `M3 Production`, `Invoice Import Script` — para conseguir perceber mais tarde a que integração pertence cada chave. |
+| **Description** | Opcional. Espaço para uma nota sobre para que serve a chave ou quem a configurou. |
+| **Expiration** | Escolha uma data de expiração, ou deixe em **Never expires**. Uma data de expiração é a opção mais segura: a chave reforma-se sozinha se a integração alguma vez for esquecida. |
 
 3. Clique em **Create**. O DocBits mostra-lhe a nova chave:
 

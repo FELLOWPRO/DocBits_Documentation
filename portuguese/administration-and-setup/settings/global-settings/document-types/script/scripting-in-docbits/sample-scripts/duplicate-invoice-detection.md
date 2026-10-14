@@ -48,6 +48,6 @@ if inv_id and vendor:
 
 ## Funções Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Ler valor do campo
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — Pesquisar texto OCR em todos os documentos
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Mostrar erro de validação
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Ler valor do campo
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — Pesquisar texto OCR em todos os documentos
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Mostrar erro de validação

@@ -158,5 +158,3 @@ The PUT method is mainly used to update user or organization data. It is very ea
 
 * In the body, enter “email” as the key and the new email address as the value.
 * Then just press \`Send\` and you should see “success” in the response.
-
-

@@ -1,30 +1,25 @@
-# Chave de API
+# API Key
 
-<figure><img src="../../../../.gitbook/assets/api-key-settings-page-pt.png" alt="Painel Chaves de API com o botão Criar chave de API, as colunas da lista de chaves e o prefixo da chave oculto para documentação"><figcaption><p>Configurações → Integração e SSO → Chave de API. O prefixo da chave está oculto nesta captura de ecrã.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/ulCymk1gu-de14qTaFfJwTEmAUp7DY000A40P3nTgRIb7pYXolCbh_GPJvRib5haIH75dPFewY5tJQ0xNbGP3wdSOgCxu7gdVBwlvxkHFcP_3HM3R15zuuBOZM2jEdFxlp2CpV1VDfktmLFSSw4BuLs" alt=""><figcaption></figcaption></figure>
 
-A secção **Chave de API**, no topo da página Integração e SSO, lista todas as chaves de API que a sua organização criou. Uma chave de API permite que outro sistema — o seu ERP, um script ou uma aplicação de um parceiro — aceda ao DocBits sem que um utilizador inicie sessão. Para instruções passo a passo, consulte [Gestão de Chaves API](api-key-management.md).
+### API Key
 
-### Lista de chaves de API
+* **Key:** Este é o identificador único utilizado por aplicações externas para acessar a API do DocBits. É essencial para autenticar as requisições feitas ao DocBits a partir de outros softwares.
+* Ações como visualizar, regenerar ou copiar a chave de API podem ser realizadas aqui, dependendo das necessidades específicas e dos protocolos de segurança.
 
-* **Chave:** Os primeiros caracteres da chave, seguidos de `****`. A chave completa é mostrada apenas uma vez, quando é criada, pelo que não pode ser consultada novamente mais tarde. O ícone de copiar junto à chave copia o prefixo visível para a área de transferência.
-* **Nome / Expira / Último Uso / Status:** Cada linha mostra o nome da chave, quando deixa de funcionar, quando um pedido a utilizou pela última vez e se ainda está ativa.
-* **Criar chave de API:** Abre uma janela para criar uma nova chave para uma integração. Consulte [Gestão de Chaves API](api-key-management.md) para os campos e a apresentação única da chave.
-* **Actions (menu de três pontos):** Abre as ações de uma chave, onde pode editar o nome, revogá-la ou eliminar uma chave que já tenha sido revogada. A revogação desativa a chave permanentemente.
+### SSO (Single Sign-On) Service Provider Settings
 
-### Configurações do provedor de serviços SSO (Single Sign-On)
+* **Entity ID:** Este é o identificador do DocBits como service provider na configuração de SSO. Ele identifica o DocBits de forma única dentro da estrutura de SSO.
+* **SLO (Single Logout) URL:** A URL para a qual as sessões de SSO são enviadas para encerrar a sessão simultaneamente em todas as aplicações conectadas via SSO.
+* **SSO URL: A URL** usada para iniciar o processo de single sign-on.
+* Ações como "Download Certificate" e "Download Metadata" estão disponíveis para obter os certificados de segurança e as informações de metadados necessários para configurar e manter a integração de SSO.
 
-Estes são os valores de que o seu Identity Provider precisa para permitir que os utilizadores iniciem sessão no DocBits com o login da sua empresa. Para o guia de configuração completo, consulte [Configuração de Single Sign-On (SSO)](configuring-single-sign-on-sso/).
+{% hint style="info" %}
+Consulte Setup SSO
+{% endhint %}
 
-* **ID da entidade:** O identificador do DocBits como provedor de serviços na configuração de SSO. O ícone de copiar copia o valor para a área de transferência.
-* **URL SLO (Single Logout):** O URL utilizado para terminar a sessão de um utilizador em todas as aplicações ligadas através de SSO ao mesmo tempo. O ícone de copiar copia o valor.
-* **URL do SSO:** O URL utilizado para iniciar o processo de início de sessão único. O ícone de copiar copia o valor.
-* **Baixar Certificado:** Transfere o certificado de segurança de que o seu Identity Provider precisa para confiar no DocBits.
-* **Baixar metadados:** Transfere o ficheiro de metadados SAML que pode ser importado diretamente na maioria dos Identity Providers.
+### Identity Service Provider Settings
 
-### Configurações do Provedor de Serviços de Identidade
-
-Configure o DocBits para utilizar o seu Identity Provider (IdP) externo no início de sessão. Para o guia completo, consulte [Configuração do Identity Service Provider](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/settings/global-settings/integration/identity-service-provider-configuration.md).
-
-* **ID do inquilino:** O identificador de inquilino do seu Identity Provider, utilizado quando o DocBits se integra com serviços em nuvem que gerem o acesso por inquilino.
-* **Carregar arquivo:** Carrega o ficheiro de metadados ou de configuração que recebeu do seu Identity Provider.
-* **Configurar:** Guarda as definições e aplica a configuração carregada. Introduza primeiro o ID do inquilino ou carregue o ficheiro e, em seguida, clique em **Configurar**.
+* Tenant ID: Pode ser usado quando o DocBits se integra a serviços em nuvem que exigem um identificador de tenant para gerenciar dados e configurações de acesso específicos da empresa que usa o Docbits.
+* Upload file: Permite que o administrador faça o upload de arquivos de configuração ou outros arquivos necessários que facilitam a integração com um identity provider.
+* Configure: Um botão para aplicar ou atualizar as configurações depois de fazer alterações ou de carregar novas configurações.

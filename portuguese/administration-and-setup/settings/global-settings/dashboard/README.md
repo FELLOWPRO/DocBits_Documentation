@@ -1,4 +1,4 @@
-# Cruscotto
+# Painel
 
 ## Visão Geral
 

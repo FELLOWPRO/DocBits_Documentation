@@ -39,13 +39,12 @@ if po_nr:
 ## O que acontece após a correspondência?
 
 O `document_data` é atualizado com:
-
-* `po_items` — Itens de linha da OC correspondidos
-* `po_match_status` — Resultado da correspondência (`"matched"`, `"partially_matched"`, etc.)
-* `po_multi_matched` — Se múltiplas OCs foram correspondidas
+- `po_items` — Itens de linha da OC correspondidos
+- `po_match_status` — Resultado da correspondência (`"matched"`, `"partially_matched"`, etc.)
+- `po_multi_matched` — Se múltiplas OCs foram correspondidas
 
 ## Funções Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Ler valor do campo
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Escrever número da OC limpo
-* [auto\_po\_match\_for\_purchase\_orders()](../functions/business-logic-functions.md#auto_po_match_for_purchase_orders) — Acionar correspondência de OC
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Ler valor do campo
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Escrever número da OC limpo
+- [auto\_po\_match\_for\_purchase\_orders()](../business-logic-functions.md#auto\_po\_match\_for\_purchase\_orders) — Acionar correspondência de OC

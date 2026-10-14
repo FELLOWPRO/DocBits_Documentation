@@ -15,12 +15,14 @@ Para habilitar este recurso:
 
 * **Quando habilitado**:
   * A **tabela de Pedido de Compra** aparece dentro da **Seção de Tabela** no **Construtor de Layout**.
-  *   Nenhuma notificação sobre o módulo estar desativado será exibida.\\
+  *   Nenhuma notificação sobre o módulo estar desativado será exibida.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_supplier.png" alt="DocBits Compra Pedido Fornecedor"><figcaption></figcaption></figure>
 * **Quando desabilitado**:
   * Uma dica indicará que o módulo está desativado.
-  *   A **tabela de PO** não será visível na **Tela de Validação**.\\
+  *   A **tabela de PO** não será visível na **Tela de Validação**.\
+
 
       <figure><img src="../../../../../../.gitbook/assets/docbits_supplier_invoice.png" alt="DocBits Fornecedor Fatura"><figcaption></figcaption></figure>
 

@@ -60,14 +60,14 @@ if table:
 ## Explicação Passo a Passo
 
 1. **Obter tabela de fatura** de `tables_dict`
-2. **Somar todos os valores LINE\_TOTAL** nas linhas da tabela
+2. **Somar todos os valores LINE_TOTAL** nas linhas da tabela
 3. **Comparar** a soma calculada com o valor líquido extraído
 4. **Atualizar ou sinalizar** — substituir o valor líquido ou marcá-lo como inválido
 
 ## Funções Utilizadas
 
-* [get\_column\_value()](../functions/table-functions.md#get_column_value) — Ler valores de colunas das linhas
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Ler valor líquido
-* [set\_amount\_value()](../functions/field-functions.md#set_amount_value) — Definir valor corrigido
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Marcar campo como inválido
-* [set\_field\_as\_valid()](../functions/field-functions.md#set_field_as_valid) — Marcar campo como válido
+- [get\_column\_value()](../table-functions.md#get\_column\_value) — Ler valores de colunas das linhas
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Ler valor líquido
+- [set\_amount\_value()](../field-functions.md#set\_amount\_value) — Definir valor corrigido
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Marcar campo como inválido
+- [set\_field\_as\_valid()](../field-functions.md#set\_field\_as\_valid) — Marcar campo como válido

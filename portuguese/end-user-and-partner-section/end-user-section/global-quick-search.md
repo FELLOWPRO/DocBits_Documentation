@@ -20,7 +20,7 @@ Cada resultado mostra:
 
 Use as teclas de seta para cima e para baixo para destacar um resultado e pressione <kbd>Enter</kbd> para abri-lo. Pressione <kbd>Esc</kbd> para fechar a janela.
 
-Apenas as entradas para as quais você tem permissão aparecem na lista de resultados. Entradas restritas a administradores ficam ocultas para outros usuários.
+<mark>Apenas as entradas para as quais você tem permissão aparecem na lista de resultados. Entradas restritas a administradores ficam ocultas para outros usuários.</mark>
 
 ## Pesquisas recentes
 
@@ -41,9 +41,9 @@ Se os oito resultados visíveis não forem suficientes, clique no link **Ver tod
 
 ## Referência de teclado
 
-| Tecla                                         | Ação                                      |
-| --------------------------------------------- | ----------------------------------------- |
+| Tecla | Ação |
+|---|---|
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Abrir a Pesquisa Rápida de qualquer lugar |
-| <kbd>↑</kbd> / <kbd>↓</kbd>                   | Mover entre os resultados                 |
-| <kbd>Enter</kbd>                              | Abrir o resultado destacado               |
-| <kbd>Esc</kbd>                                | Fechar a janela                           |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Mover entre os resultados |
+| <kbd>Enter</kbd> | Abrir o resultado destacado |
+| <kbd>Esc</kbd> | Fechar a janela |

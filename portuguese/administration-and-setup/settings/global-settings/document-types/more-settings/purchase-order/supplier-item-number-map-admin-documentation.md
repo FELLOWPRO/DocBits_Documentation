@@ -4,6 +4,7 @@
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
+
 Como administrador, você tem a capacidade de visualizar e gerenciar os mapeamentos entre os números de itens internos e os números de itens dos fornecedores. Este recurso garante que as discrepâncias entre seu sistema e os sistemas de seus fornecedores sejam tratadas de forma eficiente. Você pode revisar, editar e excluir mapeamentos incorretos para manter a precisão dos dados.
 
 **Acessando o Mapa de Números de Itens do Fornecedor**

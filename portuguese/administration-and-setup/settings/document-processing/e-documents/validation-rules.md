@@ -6,7 +6,7 @@ A página **Regras de validação** (**Documentos eletrónicos → Regras**) con
 
 ## Configuração da validação
 
-O cartão **Configuração da validação** mostra o seu perfil de validação atual (por exemplo, _B2G — Public Sector Receiver_). Clique em **Editar respostas** para voltar a executar o assistente de configuração e alterar o padrão face ao qual valida.
+O cartão **Configuração da validação** mostra o seu perfil de validação atual (por exemplo, *B2G — Public Sector Receiver*). Clique em **Editar respostas** para voltar a executar o assistente de configuração e alterar o padrão face ao qual valida.
 
 ## Versões XRechnung aceites
 
@@ -20,12 +20,12 @@ Escolha que **perfis** aceita (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XR
 
 Cada regra de validação tem uma **gravidade** que decide o que acontece quando é acionada:
 
-| Gravidade   | Efeito                                                                                                                                                    |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FATAL**   | Para o processamento de imediato. Nenhuma camada seguinte é verificada; o documento passa a Erro.                                                         |
-| **ERROR**   | O documento é rejeitado. Os restantes resultados do mesmo documento continuam a ser apresentados; a notificação ao fornecedor (se ativada) é despoletada. |
-| **WARNING** | Surge no relatório de validação, mas o documento prossegue normalmente no fluxo.                                                                          |
-| **INFO**    | Apenas registo de auditoria. Sem efeito visível para o utilizador nem rejeição.                                                                           |
+| Gravidade | Efeito |
+|-----------|--------|
+| **FATAL** | Para o processamento de imediato. Nenhuma camada seguinte é verificada; o documento passa a Erro. |
+| **ERROR** | O documento é rejeitado. Os restantes resultados do mesmo documento continuam a ser apresentados; a notificação ao fornecedor (se ativada) é despoletada. |
+| **WARNING** | Surge no relatório de validação, mas o documento prossegue normalmente no fluxo. |
+| **INFO** | Apenas registo de auditoria. Sem efeito visível para o utilizador nem rejeição. |
 
 ## Substituir a gravidade das regras
 

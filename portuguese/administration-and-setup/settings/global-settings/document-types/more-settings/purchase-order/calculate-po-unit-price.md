@@ -24,11 +24,11 @@ Uma vez que a configuração esteja ativada, o preço unitário de uma linha do 
 
 onde o **valor da linha** é escolhido da seguinte forma:
 
-| A linha do pedido de compra contém                                                          | Valor da linha usado                      |
-| ------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| um **valor líquido** (`extended_amount`) que é maior que 0 e não superior ao total da linha | o valor líquido                           |
-| sem valor líquido, ou valor líquido acima do total da linha                                 | o **total** da linha (`total_amount`)     |
-| sem valor positivo algum, ou sem quantidade positiva                                        | nada é calculado, o preço do PO permanece |
+| A linha do pedido de compra contém                                                           | Valor da linha usado                   |
+| -------------------------------------------------------------------------------------------- | -------------------------------------- |
+| um **valor líquido** (`extended_amount`) que é maior que 0 e não superior ao total da linha  | o valor líquido                        |
+| sem valor líquido, ou valor líquido acima do total da linha                                  | o **total** da linha (`total_amount`)  |
+| sem valor positivo algum, ou sem quantidade positiva                                         | nada é calculado, o preço do PO permanece |
 
 Por que o valor líquido vem primeiro: os feeds do ERP (Infor BODs) enviam o valor líquido da linha como `extended_amount` e carregam **impostos e encargos adicionais** em `total_amount`. Dividir um total com imposto pela quantidade gera um preço unitário bruto, e toda fatura que é precificada líquida então aparece como _preço unitário subestimado_, embora esteja correto. Exemplo de uma linha real de pedido de compra: quantidade 9, valor líquido 879,84, total 954,63 (8,5% de imposto) — o preço baseado no líquido é 97,76 e corresponde à fatura; o preço baseado no total seria 106,07.
 
@@ -46,5 +46,5 @@ Neste caso, o preço unitário (sem o desconto) é extraído do documento, enqua
 
 ## Configurações relacionadas
 
-* [Regras de Conciliação de Pedido de Compra](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) — as regras comparam o preço unitário **efetivo**, que é este preço calculado quando a configuração está ativada.
+* [Regras de Conciliação de Pedido de Compra](purchase-order-matching-rules.md) — as regras comparam o preço unitário **efetivo**, que é este preço calculado quando a configuração está ativada.
 * [Configurações de Tolerância de Pedido de Compra](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — o quanto o preço da fatura pode divergir do preço calculado.

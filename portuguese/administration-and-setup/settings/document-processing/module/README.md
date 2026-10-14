@@ -1,47 +1,90 @@
-# Módulos
+# Module
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/module_settings.png" alt="Configurações de Module"><figcaption><p>Página de configurações de Module</p></figcaption></figure>
 
-* **M3 Integration**: Integration with M3, an ERP software solution, allowing seamless interaction between DocBits and M3 for enhanced document management and processing.
-* **PO Dashboard**: A centralized dashboard within DocBits specifically designed to manage and monitor purchase orders, providing insights and analytics for efficient tracking and decision-making.
-* **Shipment Order Dashboard**: Similar to the PO Dashboard, this feature focuses on managing and monitoring shipment orders, facilitating smooth logistics operations.
+A página Module permite ativar ou desativar recursos opcionais no DocBits. Cada seção agrupa módulos relacionados que podem ser ativados ou desativados.
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+## Purchase Order
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt="Docbits Scan Doc Dashboard"><figcaption></figcaption></figure>
+Configurações de PO Matching e validação.
 
-* **Auto Accounting**: DocBits offers automated accounting functionality, streamlining the process of handling financial transactions associated with purchase orders (POs) and other documents.
+| Configuração | Descrição |
+|---------|-------------|
+| **Auto Export if PO matched 100%** | Exporta o documento automaticamente quando o PO Matching atinge 100%. |
+| **PO Dashboard** | Ativa o painel de pedidos de compra. Inclui o campo **PO Date Limit** para restringir os dados de pedidos de compra por data. |
+| **PO Shipment Order** | Ativa o processamento de ordens de remessa vinculadas a pedidos de compra. |
+| **Shipment Order Dashboard** | Ativa um painel dedicado para ordens de remessa. |
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt="Docbits Scan Doc Download"><figcaption></figcaption></figure>
+## Auto Accounting
 
-* **Advance Shipment Dashboard**: A specialized dashboard for advanced monitoring and management of shipment-related activities, offering deeper insights and functionalities.
-* **Invoice Dashboard:** A specialized dashboard for advanced monitoring and management of invoices-related activities, offering deeper insights and functionalities.
+| Configuração | Descrição |
+|---------|-------------|
+| **Auto Accounting** | Ativa a contabilização automática de documentos. Selecione o tipo de ERP (por exemplo, LN, M3). |
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt="Docbits Scan Doc Install"><figcaption></figcaption></figure>
+## Dashboards
 
-* **Dashboards v2**: An updated version of the dashboard interface, likely with improved user experience and additional features for enhanced usability.
-* [**SQL Direct access:** A direct access to the Database.](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/administration-and-setup/settings/document-processing/module/how-to-create-database-access-for-a-specific-organization-user/README.md)
+| Configuração | Descrição |
+|---------|-------------|
+| **Advance Shipment Dashboard** | Painel para monitorar atividades de remessa antecipada. |
+| **Invoice Dashboard** | Painel para monitoramento e análise de faturas. |
+| **Full Text Search** | Ativa a pesquisa de texto completo em todos os documentos. |
+| **Analytics Dashboard** | Ativa o painel de visão geral de análises. |
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt="DocBits Compra Pedido Painel 2"><figcaption></figcaption></figure>
+## Database Access
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+| Configuração | Descrição |
+|---------|-------------|
+| **DB Access** | Ativa o acesso direto ao banco de dados para a organização. |
 
-* **Supplier Portal**: A portal within DocBits dedicated to suppliers, enabling them to interact and collaborate with the system, enhancing communication and efficiency in the supply chain.
-* **Workflow Builder**: A tool for creating and customizing workflows within DocBits, allowing users to define specific processes and automate document handling according to their unique business requirements.
+## AI Dashboard
 
-**Watch: Enabling Workflow Builder**
+| Configuração | Descrição |
+|---------|-------------|
+| **AI Document Warehouse** | Análises do depósito de documentos com tecnologia de IA. |
+| **Dashboard v2** | Painel atualizado com recursos aprimorados. |
+| **Clickhouse Direct Access** | Ativa o acesso direto ao banco de dados Clickhouse. |
+| **Supplier Statistics** | Ativa estatísticas e relatórios por fornecedor. |
 
-{% embed url="https://youtu.be/YQC13wCqTJI" %}
+## Shipping & Supplier
 
-* **Run Workflows in Celery:** This feature lets you run workflows in Celery.
-* **Layout Builder**: Enables users to design and customize the layout of documents within DocBits, ensuring alignment with branding and usability standards.
-* **Inbound Emails:** This feature gives you the ability to handle your Inbound Emails.
-* **Annotation Mode**: A feature that allows users to annotate and mark up documents directly within the DocBits interface, facilitating collaboration and feedback.
-* **Show report**: Functionality to generate and display reports within DocBits, providing insights and analytics on various aspects of document processing and management.
-* **Models & Labels**: Tools for defining and configuring document recognition models and labels within DocBits, enhancing accuracy and efficiency in document processing.
-* **Document script**: Likely a feature for scripting and automating specific actions or processes related to document handling within DocBits.
-* **Document scan**: Capability to scan physical documents and import them into DocBits for digital processing and management.
-* **QR-Code extraction**: A feature for extracting information from QR codes embedded in documents, enabling automated data capture and processing.
-* **Custom Master Data**: Allows users to define and manage custom master data fields and attributes within DocBits, tailoring the system to their specific business needs.
-* **Tasks & Notifications**: Functionality for managing tasks and receiving notifications within DocBitsGBT, ensuring timely action and communication regarding document processing activities.
-* **IDM ACL Updater**: This module likely deals with updating and managing access control lists (ACLs) within DocBits, ensuring proper permissions and security for document access and handling.
+| Configuração | Descrição |
+|---------|-------------|
+| **Supplier Portal** | Ativa o portal do fornecedor para colaboração com fornecedores. |
+
+## Document Type
+
+| Configuração | Descrição |
+|---------|-------------|
+| **Workflow Builder** | Crie e personalize workflows de processamento de documentos. |
+| **Annotation Mode** | Permite que os usuários anotem documentos na tela de validação. |
+| **Show Report** | Ativa a geração de relatórios para documentos. |
+| **Inbound Emails** | Ativa o tratamento de e-mails de entrada por tipo de documento. |
+| **Models & Labels** | Gerencie modelos de IA e rótulos para o reconhecimento de documentos. |
+| **Document Script** | Ativa scripts personalizados para o processamento de documentos. |
+| **Document Scan** | Ativa a funcionalidade de digitalização de documentos. |
+| **Bar-Code/QR Code Extraction** | Extrai dados de código de barras/QR code dos documentos. Selecione os tipos de código compatíveis. |
+| **Custom Master Data** | Ativa campos personalizados de dados mestres. |
+| **Tasks & Notifications** | Ativa os recursos de gerenciamento de tarefas e de notificações. Inclui a opção **Dashboard Tasks Count**. |
+| **DocBits Operator** | Ativa o recurso de automação de navegador DocBits Operator. |
+| **DocNet** | Ativa a rede de documentos DocNet. |
+| **IDM ACL Updater** | Atualiza as listas de controle de acesso do Infor Document Management. Envie um arquivo ION-Mapping e configure os mapeamentos de Infor-Doctype para ACL. |
+| **Barcode Assignment** | Ativa a atribuição de códigos de barras a documentos. |
+| **Set Negative Sign For Credit Notes** | Aplica automaticamente sinais negativos aos valores de notas de crédito. |
+
+## BOD Connection Stream
+
+| Configuração | Descrição |
+|---------|-------------|
+| **BOD Connection Stream** | Ativa a integração de BOD (Business Object Document). Mostra o **Stream Name** usado na conexão. |
+
+## Analytics
+
+| Configuração | Descrição |
+|---------|-------------|
+| **Use PostgreSQL for Quality Analytics** | Alterna entre Prometheus (em tempo real, reinicia a cada deploy) e PostgreSQL (persistente por 90 dias, análise de tendências, campos com pior desempenho). |
+
+## Vertex Tax Integration
+
+| Configuração | Descrição |
+|---------|-------------|
+| **Vertex Tax Integration** | Ativa o cálculo de impostos do Vertex. Configure **Base URL**, **Client ID** e **Client Secret**. Use **Test Connection** para verificar. |

@@ -1,4 +1,4 @@
-# Eliminar Linhas Vazias
+# Eliminar linhas com quantidade e valor vazios
 
 #### Parte 1: Eliminar Linhas com Quantidade e Valor Vazios
 

@@ -1,6 +1,7 @@
 # Pesquisa de dados mestre
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
 A **Pesquisa de dados mestre** (barra lateral: **Lookup Master Data**) permite visualizar e gerir os dados mestre que o DocBits utiliza para validar os dados extraídos dos documentos relativamente ao seu sistema ERP. É essencial para um PO matching preciso, a validação de fornecedores e o preenchimento automático de campos. Abra-a a partir de **Definições → Processamento de documentos → Lookup Master Data**.
 
@@ -10,12 +11,12 @@ A **Pesquisa de dados mestre** (barra lateral: **Lookup Master Data**) permite v
 
 O painel esquerdo lista quatro categorias de fontes de dados:
 
-| Fonte                   | Descrição                                                                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| **BOD Input Data**      | Dados recebidos através de mensagens Infor BOD (Business Object Document).                                                      |
-| **ERP API Data**        | Dados obtidos diretamente do seu sistema ERP através de uma API. Clique no ícone de engrenagem para configurar a ligação à API. |
-| **Imported**            | Dados importados manualmente (por exemplo, através de carregamento de CSV). Clique no ícone **+** para adicionar novos dados.   |
-| **DocBits Master Data** | Dados mestre internos geridos dentro do DocBits.                                                                                |
+| Fonte | Descrição |
+|-------|-----------|
+| **BOD Input Data** | Dados recebidos através de mensagens Infor BOD (Business Object Document). |
+| **ERP API Data** | Dados obtidos diretamente do seu sistema ERP através de uma API. Clique no ícone de engrenagem para configurar a ligação à API. |
+| **Imported** | Dados importados manualmente (por exemplo, através de carregamento de CSV). Clique no ícone **+** para adicionar novos dados. |
+| **DocBits Master Data** | Dados mestre internos geridos dentro do DocBits. |
 
 ## Tabela de dados
 

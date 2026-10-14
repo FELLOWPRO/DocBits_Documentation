@@ -32,11 +32,11 @@ O Painel de Análises é controlado por uma configuração de módulo. Uma vez a
 
 Escolha a perspectiva certa para sua análise. Cada tipo de fluxo oferece uma perspectiva diferente sobre os mesmos dados.
 
-| Tipo de Fluxo            | Finalidade                                                         | Pergunta-Chave                                                           |
-| ------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| **Status**               | Acompanhar o ciclo de vida do documento da importação à exportação | _"Qual é o tempo total dos meus documentos da importação à exportação?"_ |
-| **Processamento**        | Análise técnica de desempenho do módulo                            | _"Quais etapas de processamento são gargalos?"_                          |
-| **Interação do Usuário** | Pontos de contato humano e tempos de espera                        | _"Quanto tempo os documentos esperam pelos usuários?"_                   |
+| Tipo de Fluxo | Finalidade | Pergunta-Chave |
+| --- | --- | --- |
+| **Status** | Acompanhar o ciclo de vida do documento da importação à exportação | *"Qual é o tempo total dos meus documentos da importação à exportação?"* |
+| **Processamento** | Análise técnica de desempenho do módulo | *"Quais etapas de processamento são gargalos?"* |
+| **Interação do Usuário** | Pontos de contato humano e tempos de espera | *"Quanto tempo os documentos esperam pelos usuários?"* |
 
 Use o seletor **Tipo de Fluxo** na parte superior do painel para alternar entre as perspectivas.
 
@@ -105,7 +105,7 @@ Analise qualquer período, de **7 dias** até **um ano completo**, ou defina um 
 
 ## Cartões de Etapas do Fluxo
 
-Cada cartão representa uma etapa do fluxo com base no **Tipo de Fluxo** selecionado. Os cartões se adaptam à sua seleção — mostrando estágios do ciclo de vida para _Status_, módulos de processamento para _Processamento_ ou pontos de contato do usuário para _Interação do Usuário_.
+Cada cartão representa uma etapa do fluxo com base no **Tipo de Fluxo** selecionado. Os cartões se adaptam à sua seleção — mostrando estágios do ciclo de vida para *Status*, módulos de processamento para *Processamento* ou pontos de contato do usuário para *Interação do Usuário*.
 
 Cada cartão exibe:
 

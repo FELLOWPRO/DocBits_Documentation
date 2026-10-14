@@ -1,60 +1,43 @@
-# Modelos de E-Mail
+# Modelos de e-mail
 
-## **Visão Geral**
+## **Visão geral**
 
-Os Modelos de E-mail permitem personalizar notificações de e-mail automatizadas enviadas pelo DocBits. Os modelos podem incluir campos dinâmicos (por exemplo, `{{FieldID}}`), imagens e formatação HTML.
+Os modelos de e-mail permitem personalizar os e-mails automáticos que o DocBits envia — por exemplo, lembretes de aprovação ou notificações de erro. Um modelo define a linha de assunto e o corpo e pode incluir campos dinâmicos (por exemplo, `{{InvoiceNumber}}`), imagens e formatação de texto rico.
 
-## **Acessando Modelos de E-mail**
+## **Acessando os modelos de e-mail**
 
-1.  Navegue até: **Configurações → Configurações Globais → Modelos de E-mail**
+Acesse **Settings → Communication & Notifications → Email Templates**. A lista mostra todos os modelos com **Name**, **Subject**, **Document Type**, data de **Last Modified** e **Actions** (editar ou excluir).
 
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FWzjaI1Jinpw0PQHCuwM0%252Fimage.png%3Falt%3Dmedia%26token%3D21f7af41-6ebe-4e25-952f-9ae0b11cade2\&width=768\&dpr=4\&quality=100\&sign=ae789081\&sv=2)
-2. O painel exibe todos os modelos com:
-   * **Nome**
-   * **Assunto**
-   * Data de **Última Modificação**
-   * **Ações** (Editar ou Excluir).
+<figure><img src="../../../.gitbook/assets/email_templates_dashboard_list.png" alt="Lista de Email Templates"><figcaption><p>A lista de Email Templates</p></figcaption></figure>
 
-![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FENN4zipGg75mpi2OooPP%252Fimage.png%3Falt%3Dmedia%26token%3Ddff6d8a8-e5b3-4e52-bee1-e311daba7b64\&width=768\&dpr=4\&quality=100\&sign=4202a84f\&sv=2)
+## **Criando um modelo**
 
-## **Criando um Novo Modelo**
+1. Clique em **+ New** no canto superior direito.
+2. Preencha os campos:
+   * **Name** — um identificador descritivo (por exemplo, "Document Error Notification").
+   * **Document Type** — o tipo de documento ao qual o modelo se aplica (por exemplo, `INVOICE`).
+   * **Include Document As Attachment** — ative este botão para anexar o documento de origem ao e-mail.
+   * **Subject** — a linha de assunto do e-mail. Clique no botão **+** ao lado do campo para inserir um campo dinâmico ou digite `{{FieldID}}` diretamente.
+3. Crie o corpo no editor de texto rico — formate o texto (negrito, itálico, listas, alinhamento), insira imagens com **Upload**, edite o HTML bruto com o botão `<>` e use o botão **+** para inserir campos dinâmicos.
+4. Clique em **Save**.
 
-### **1 Configuração Básica**
+<figure><img src="../../../.gitbook/assets/email_templates_4.png" alt="Editor de Email Template"><figcaption><p>O editor de modelos — nome, tipo de documento, botão de anexo, assunto e corpo em texto rico</p></figcaption></figure>
 
-* Clique em **Novo**.
-* Preencha os campos à direita:
-  * **Nome**: Identificador do modelo (por exemplo, "Erro no Documento").
-  * **Assunto**: Linha de assunto do e-mail (por exemplo, "Ação Necessária: Erro no Documento").
-  *   **Tipo de Documento**: Selecione no menu suspenso (por exemplo, "Fatura").
+## **Campos dinâmicos**
 
-      ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FXzmfZBIoyoDS7tTz1qo4%252Fimage.png%3Falt%3Dmedia%26token%3D24547984-2406-41b5-95d6-0f7f45e06258\&width=768\&dpr=4\&quality=100\&sign=f7aa9b89\&sv=2)
+Os campos dinâmicos são substituídos pelos dados do documento quando o e-mail é enviado. Insira-os com o botão **+** ou digite-os manualmente usando chaves duplas:
 
-### **2 Editor de Modelo**
+* `{{invoice_id}}` — o número da fatura
+* `{{supplier_name}}` — o nome do fornecedor
+* `{{total_amount}}` — o valor total
+* `{{status}}` — o status atual do documento
 
-* **Menu**: Formate texto, adicione links ou insira tabelas.
-* **Editor HTML**: Clique no ícone `<>` para editar HTML bruto.
-* **Adicionar Imagens**: Use a função **Upload**.
-*   **Campos Dinâmicos:** Insira valores de campos de documento por
+## **Enviando um e-mail de teste**
 
-    * **Opção de Campo Variável**: Selecione em um menu suspenso.
-    * **Entrada Manual**: Digite `{{FieldID}}` (por exemplo, `{{NumeroFatura}}`).
+Clique em **Send Test** no editor, informe um endereço em **Receiver Email** e clique em **Send**. O DocBits envia uma pré-visualização do modelo para que você verifique o layout e confirme que os campos dinâmicos são resolvidos corretamente antes de salvar.
 
-    ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/email_templates_4.png)
+<figure><img src="../../../.gitbook/assets/test_email_configuration_dialog.png" alt="Caixa de diálogo Send Test"><figcaption><p>A caixa de diálogo Send Test</p></figcaption></figure>
 
-### **3 Salvando**
+## **Usando modelos em notificações**
 
-* Clique em **Salvar** para armazenar o modelo.
-
-## **Enviando um E-mail de Teste**
-
-1.  Abra o modelo e clique em **Enviar Teste**.
-
-    ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FZTskZNsVfWj6IwBmwoR5%252Fimage.png%3Falt%3Dmedia%26token%3D62229942-2ee7-4d58-833c-eb863b18f2d3\&width=768\&dpr=4\&quality=100\&sign=b804f787\&sv=2)
-2. Insira:
-   * **E-mail do Destinatário** (obrigatório).
-   * **Valores de Campo** (opcional; dados fictícios para espaços reservados). ![](https://docs.docbits.com/~gitbook/image?url=https%3A%2F%2F578966019-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FT2n2w4uDCJvv7CJ5zrdk%252Fuploads%252FO2yw8EgefTPSCIhxUFH6%252Fimage.png%3Falt%3Dmedia%26token%3D2acc0067-3698-4565-92d8-6c4ddabe497c\&width=300\&dpr=4\&quality=100\&sign=461ae8e7\&sv=2)
-3. Revise o e-mail de teste e ajuste o modelo, se necessário.
-
-## **Usando Modelos em Notificações**
-
-Os modelos salvos podem ser vinculados aos fluxos de trabalho de [**Notificação por E-mail**](email-notification/) (por exemplo, lembretes de aprovação, atualizações de status).
+Os modelos salvos podem ser vinculados a fluxos de [**Email Notification**](email-notification/) — por exemplo, lembretes de aprovação ou atualizações de mudança de status.

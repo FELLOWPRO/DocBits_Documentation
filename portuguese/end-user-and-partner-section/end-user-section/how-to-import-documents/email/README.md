@@ -11,7 +11,7 @@ O DocBits pode importar documentos a partir do e-mail de duas formas. Ambas são
 
 Conecte uma conta de e-mail e o DocBits importa os documentos automaticamente à medida que novos e-mails chegam. Na página de Importação, abra a seção **Importação por e-mail** e clique em **+ Novo**.
 
-<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="Seção Importação por e-mail"><figcaption><p>Importação por e-mail — conecte uma caixa de correio para a importação automática de documentos</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/email_import_section.png" alt="Seção Importação por e-mail"><figcaption>Importação por e-mail — conecte uma caixa de correio para a importação automática de documentos</figcaption></figure>
 
 Em seguida, escolha o protocolo da sua caixa de correio:
 
@@ -22,7 +22,7 @@ Em seguida, escolha o protocolo da sua caixa de correio:
 
 Encaminhe — ou envie diretamente — os e-mails para o endereço de entrada exclusivo da sua organização e o DocBits importa os anexos automaticamente. Não é necessário conectar nenhuma caixa de correio. Abra a seção **E-mails recebidos** na página de Importação.
 
-<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="Seção E-mails recebidos"><figcaption><p>E-mails recebidos — encaminhe documentos para o seu endereço do DocBits</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inbound_emails_section.png" alt="Seção E-mails recebidos"><figcaption>E-mails recebidos — encaminhe documentos para o seu endereço do DocBits</figcaption></figure>
 
 * **Info / E-mail** — o endereço de entrada exclusivo da sua organização (formato `<org-id>@inbound.docbits.com`). Encaminhe seus documentos para este endereço; use o ícone de copiar para copiá-lo.
 * **Importar documentos apenas de e-mails predefinidos** — quando ativado, somente os e-mails dos remetentes adicionados à lista de permissões são importados; e-mails de qualquer outro remetente são ignorados.
@@ -34,11 +34,11 @@ Encaminhe — ou envie diretamente — os e-mails para o endereço de entrada ex
 
 Ambos os métodos de importação por e-mail aceitam estes anexos de documentos:
 
-| Formato                          | Extensões de arquivo     | Uso típico                                          |
-| -------------------------------- | ------------------------ | --------------------------------------------------- |
-| PDF                              | `.pdf`                   | Faturas e outros documentos PDF                     |
-| TIFF                             | `.tif`, `.tiff`          | Documentos digitalizados                            |
-| XML                              | `.xml`                   | Documentos eletrônicos estruturados                 |
+| Formato | Extensões de arquivo | Uso típico |
+| --- | --- | --- |
+| PDF | `.pdf` | Faturas e outros documentos PDF |
+| TIFF | `.tif`, `.tiff` | Documentos digitalizados |
+| XML | `.xml` | Documentos eletrônicos estruturados |
 | EDI / dados de pedidos de compra | `.edi`, `.purchaseorder` | Intercâmbio eletrônico de dados e pedidos de compra |
 
 Se um serviço de encaminhamento rotular um arquivo PDF, TIFF ou XML como anexo genérico, o DocBits pode identificá-lo pelo conteúdo do arquivo ou por uma extensão conhecida. Mensagens `.eml` encaminhadas também podem conter documentos suportados; o DocBits extrai esses anexos internos antes da importação.

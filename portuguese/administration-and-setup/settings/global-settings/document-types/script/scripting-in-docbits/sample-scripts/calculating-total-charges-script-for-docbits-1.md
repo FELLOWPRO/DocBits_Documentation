@@ -1,4 +1,4 @@
-# Cálculo de Encargos Totais
+# Script de Cálculo de Encargos Totais para DocBits
 
 O script "Cálculo de Encargos Totais" automatiza o processo de soma de vários encargos e valores adicionais dentro de documentos de fatura. Este guia orienta-o através da configuração, lógica e aplicação do script para garantir cálculos precisos de encargos totais nos seus documentos.
 

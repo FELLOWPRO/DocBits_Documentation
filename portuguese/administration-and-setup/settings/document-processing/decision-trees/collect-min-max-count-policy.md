@@ -5,12 +5,12 @@ Esta política recolhe todas as regras correspondentes e seleciona o **mínimo**
 **Exemplo:**
 
 | Regra | Condição             | Valor Devolvido |
-| ----- | -------------------- | --------------- |
-| 1     | Total Amount <= 1000 | 1               |
-| 2     | Total Amount <= 2000 | 2               |
-| 3     | Total Amount <= 3000 | 3               |
-| 4     | Total Amount <= 4000 | 4               |
-| 5     | Total Amount <= 5000 | 5               |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | 1            |
+| 2    | Total Amount <= 2000 | 2            |
+| 3    | Total Amount <= 3000 | 3            |
+| 4    | Total Amount <= 4000 | 4            |
+| 5    | Total Amount <= 5000 | 5            |
 
 1. Se a opção **Coletar (Min)** for selecionada, o resultado devolverá o **mínimo** dos **Return Values** das regras correspondentes.
    * Para o valor de entrada de **Total Amount = 2500**, a avaliação das regras seria:

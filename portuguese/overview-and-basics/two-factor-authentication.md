@@ -56,15 +56,14 @@ Os códigos de backup são exibidos apenas no momento em que são gerados. O Doc
 
 ## Entrar com 2FA
 
-1.  Digite o seu e-mail e senha normalmente.
+1. Digite o seu e-mail e senha normalmente.
 
     <figure><img src="../.gitbook/assets/mfa-login.png" alt="The DocBits login screen"><figcaption><p>A tela de login. Você também pode entrar sem senha usando <strong>Entrar com uma chave de acesso</strong>.</p></figcaption></figure>
-2.  O DocBits solicita o seu segundo fator. Escolha o seu método:
-
-    * **Autenticador** — digite o código atual de 6 dígitos do seu aplicativo.
-    * **E-mail** — clique em **Enviar um código por e-mail** para receber um código por e-mail e, em seguida, digite-o.
-    * **Chave de acesso** — clique em **Usar uma chave de acesso** e confirme com Touch ID / Windows Hello / a sua chave.
-    * **Código de backup** — caso você não possa usar o seu método habitual.
+2. O DocBits solicita o seu segundo fator. Escolha o seu método:
+   * **Autenticador** — digite o código atual de 6 dígitos do seu aplicativo.
+   * **E-mail** — clique em **Enviar um código por e-mail** para receber um código por e-mail e, em seguida, digite-o.
+   * **Chave de acesso** — clique em **Usar uma chave de acesso** e confirme com Touch ID / Windows Hello / a sua chave.
+   * **Código de backup** — caso você não possa usar o seu método habitual.
 
     <figure><img src="../.gitbook/assets/mfa-challenge.png" alt="The second-factor challenge screen"><figcaption><p>Depois da sua senha, o DocBits solicita o seu segundo fator. Troque de método com <strong>Usar uma chave de acesso</strong> ou <strong>Enviar um código por e-mail</strong> e, opcionalmente, confie no dispositivo por 30 dias.</p></figcaption></figure>
 3. Se tudo der certo, você estará conectado.

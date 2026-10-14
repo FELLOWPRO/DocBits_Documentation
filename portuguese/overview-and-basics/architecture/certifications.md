@@ -54,6 +54,6 @@ O GDPR é um regulamento na legislação da UE sobre proteção de dados e priva
 
 {% file src="../../.gitbook/assets/FELLOWPRO-GDPR-Audit-Report-2025.pdf" %}
 
-***
+---
 
 Para documentação adicional — modelos de DPA, listas de subcontratados (sub-processors), resumos de testes de intrusão ou questionários de segurança — entre em contato com **compliance@fellowpro.com** ou com seu responsável de DocBits Customer Success.

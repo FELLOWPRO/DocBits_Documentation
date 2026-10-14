@@ -1,4 +1,4 @@
-# Dashboard
+# Painel
 
 Neste guia de vídeo abrangente, os espectadores são apresentados ao painel **DocBits** e sua gama de funcionalidades. Desde filtrar e gerenciar documentos abertos até importar anexos por meio de vários canais, como e-mail, scanner ou API, o tutorial oferece um passo a passo.
 

@@ -10,6 +10,7 @@ Este recurso ajuda você a gerenciar e reconciliar números de itens entre seu s
 
 {% embed url="https://youtu.be/agxk8WQhtJA" %}
 
+
 1. **Correspondência Manual:**
    * A primeira vez que você encontrar uma discrepância entre seu número de item e o número de item do seu fornecedor, você precisará correspondê-los manualmente.
    * Você pode fazer isso inserindo o número de item do fornecedor correto correspondente ao seu número de item interno.
@@ -25,7 +26,7 @@ Este recurso ajuda você a gerenciar e reconciliar números de itens entre seu s
 * **Ação:** Opções para gerenciar os mapeamentos, como excluir mapeamentos incorretos.
 
 {% hint style="info" %}
-Veja também a[ Seção de Administração](https://github.com/Fellow-Consulting-AG/docbits/tree/pt/readme/end-user-and-partner-section/end-user-section/purchase-order-matching/broken-reference/README.md)
+Veja também a[ Seção de Administração](broken-reference)
 {% endhint %}
 
 ## **Benefícios**

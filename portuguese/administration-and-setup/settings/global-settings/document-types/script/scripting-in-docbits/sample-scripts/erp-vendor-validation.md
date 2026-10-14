@@ -65,7 +65,7 @@ if vendor_nr:
 
 ## Funções Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Ler valor do campo
-* [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext_search_erp) — Pesquisar dados mestre do ERP
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Mostrar erro de validação
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Escrever valor do campo
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Ler valor do campo
+- [fulltext\_search\_erp()](../fulltext-search-functions.md#fulltext\_search\_erp) — Pesquisar dados mestre do ERP
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Mostrar erro de validação
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Escrever valor do campo

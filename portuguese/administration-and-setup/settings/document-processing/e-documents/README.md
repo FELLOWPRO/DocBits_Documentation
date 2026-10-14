@@ -2,8 +2,8 @@
 
 O DocBits valida as faturas eletrónicas recebidas (e-invoices) face aos padrões oficiais — **XRechnung**, **ZUGFeRD** e **Factur-X** — e encaminha quaisquer problemas detetados para o responsável adequado. O grupo de definições **Documentos eletrónicos** (em **Processamento de documentos**) tem duas páginas:
 
-* [**Regras de validação**](validation-rules.md) — escolha que versões e perfis de fatura eletrónica aceita e defina a gravidade de cada regra de validação para a sua organização.
-* [**Encaminhamento de notificações**](notification-routing.md) — associe os resultados de validação ao agente do AI Workforce que os deve tratar.
+* **[Regras de validação](validation-rules.md)** — escolha que versões e perfis de fatura eletrónica aceita e defina a gravidade de cada regra de validação para a sua organização.
+* **[Encaminhamento de notificações](notification-routing.md)** — associe os resultados de validação ao agente do AI Workforce que os deve tratar.
 
 Em conjunto, permitem decidir **o que conta como um problema** numa fatura eletrónica recebida e **quem trata disso**.
 
@@ -20,6 +20,6 @@ Vá a **Definições → Tipos de documento → Fatura → Definições avançad
 
 > A validação de faturas eletrónicas é configurada **por tipo de documento**. Atualmente aplica-se ao tipo de documento **Fatura**; ative-a em cada tipo de documento que deva ser validado.
 
-Também pode saltar diretamente para aqui com a **pesquisa rápida global**: prima <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> no Windows e Linux) em qualquer parte do DocBits e escreva _e-invoice_.
+Também pode saltar diretamente para aqui com a **pesquisa rápida global**: prima <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> no Windows e Linux) em qualquer parte do DocBits e escreva *e-invoice*.
 
 <figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="A pesquisa rápida global abre a Validação de faturas eletrónicas"><figcaption><p>Escreva «e-invoice» na pesquisa rápida para saltar diretamente para o interruptor.</p></figcaption></figure>

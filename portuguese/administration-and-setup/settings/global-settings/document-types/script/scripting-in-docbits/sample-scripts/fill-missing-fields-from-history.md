@@ -1,4 +1,4 @@
-# Preencher Campos Ausentes do Histórico
+# Preencher Campos Ausentes do Histórico de Documentos
 
 {% hint style="info" %}
 **Disponível a partir da versão 11.48.0** — Requer licença `OPENSEARCH_ENABLED`.
@@ -59,6 +59,6 @@ if po and not supplier:
 
 ## Funções Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Ler valor do campo
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search) — Pesquisar texto OCR em todos os documentos
-* [set\_field\_value()](../functions/field-functions.md#set_field_value) — Escrever valor do campo
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Ler valor do campo
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search) — Pesquisar texto OCR em todos os documentos
+- [set\_field\_value()](../field-functions.md#set\_field\_value) — Escrever valor do campo

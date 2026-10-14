@@ -4,10 +4,10 @@
 
 O DocBits pode buscar documentos diretamente do e-mail — sem upload manual. Há **duas formas** de trazer documentos por e-mail, ambas em **Configurações → Processamento de Documentos → Importar**:
 
-| Método                                       | Como funciona                                                                                                                                         | Ideal para                                                                          |
-| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| **Conta de importação de e-mail**            | O DocBits se conecta a uma caixa de correio sua (**IMAP**, **OAuth Office365** ou **OAuth Office365 – Tenant**) e importa os documentos que encontra. | Uma caixa dedicada que já recebe seus documentos (p. ex. `faturas@suaempresa.com`). |
-| **E-mails encaminhados (E-mails recebidos)** | O DocBits fornece um endereço exclusivo; qualquer remetente autorizado pode **encaminhar** documentos para ele.                                       | Encaminhamento pontual de muitos remetentes sem compartilhar credenciais da caixa.  |
+| Método | Como funciona | Ideal para |
+|--------|---------------|------------|
+| **Conta de importação de e-mail** | O DocBits se conecta a uma caixa de correio sua (**IMAP**, **OAuth Office365** ou **OAuth Office365 – Tenant**) e importa os documentos que encontra. | Uma caixa dedicada que já recebe seus documentos (p. ex. `faturas@suaempresa.com`). |
+| **E-mails encaminhados (E-mails recebidos)** | O DocBits fornece um endereço exclusivo; qualquer remetente autorizado pode **encaminhar** documentos para ele. | Encaminhamento pontual de muitos remetentes sem compartilhar credenciais da caixa. |
 
 Você pode usar cada método separadamente ou ambos juntos.
 
@@ -64,7 +64,7 @@ Uma vez ativado, uma seção **E-mails recebidos** aparece em **Configurações 
 Clique em **Salvar** para aplicar suas alterações.
 
 {% hint style="info" %}
-**Quais anexos são importados?** O DocBits importa os anexos de documentos suportados — consulte [Importar → Importação de e-mail](../import/#email-import) para a lista completa de tipos de arquivo — e desempacota mensagens `.eml` encaminhadas e anexos `winmail.dat` (TNEF) do Outlook para importar os documentos contidos neles. A detecção também se baseia no **conteúdo real do arquivo**, portanto anexos que um servidor de e-mail de encaminhamento rotula novamente com um tipo genérico (`application/octet-stream`) ainda são importados corretamente. Imagens inline (logotipos de assinatura / gráficos incorporados) são ignoradas.
+**Quais anexos são importados?** O DocBits importa os anexos de documentos suportados — consulte [Importar → Importação de e-mail](../import/README.md#email-import) para a lista completa de tipos de arquivo — e desempacota mensagens `.eml` encaminhadas e anexos `winmail.dat` (TNEF) do Outlook para importar os documentos contidos neles. A detecção também se baseia no **conteúdo real do arquivo**, portanto anexos que um servidor de e-mail de encaminhamento rotula novamente com um tipo genérico (`application/octet-stream`) ainda são importados corretamente. Imagens inline (logotipos de assinatura / gráficos incorporados) são ignoradas.
 {% endhint %}
 
 ### Quando usar cada método

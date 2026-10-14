@@ -12,9 +12,9 @@ Existem dois endpoints e fazem a mesma coisa. A única diferença está na forma
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-endpoints.png)
 
-| Endpoint                   | Quando o usar                                                                                                                                                                                                                 |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/import/supplier_bod`     | Tem o BOD como **ficheiro XML** e quer carregá-lo.                                                                                                                                                                            |
+| Endpoint | Quando o usar |
+| --- | --- |
+| `/import/supplier_bod` | Tem o BOD como **ficheiro XML** e quer carregá-lo. |
 | `/import/supplier_bod_xml` | Quer enviar o **conteúdo XML** no pedido em vez de um ficheiro. O BOD tem de ser envolvido em JSON, pelo que isto se adequa a XML curto ou a outro sistema que chame a API — para um BOD completo à mão, carregue o ficheiro. |
 
 Ambos são descritos abaixo. Os passos 1 e 2 são iguais nos dois casos.
@@ -91,12 +91,12 @@ Clique em **Try it out** e preencha depois o formulário do endpoint que escolhe
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-supplier-bod-form.png)
 
-| Campo                       |                                                                                                                                                                                                                                                   |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **file**                    | Obrigatório. Clique em **Choose file** e selecione o seu ficheiro XML do supplier BOD.                                                                                                                                                            |
-| **org\_id**                 | O seu Org ID — o mesmo valor que colocou em **X-ORG-ID** no passo 2. Defini-lo também aqui torna explícito para que organização o pedido está a escrever. Tem de ser uma organização a que a sua API key tenha acesso; qualquer outra é recusada. |
-| **sub\_org\_id**            | Só é necessário se estiver a importar para uma suborganização específica.                                                                                                                                                                         |
-| **custom\_fields\_mapping** | Opcional. Lê campos adicionais do BOD para os campos personalizados do fornecedor. Consulte [Mapeamentos de campos personalizados](supplier-bod.md#mapeamentos-de-campos-personalizados) abaixo.                                                  |
+| Campo | |
+| --- | --- |
+| **file** | Obrigatório. Clique em **Choose file** e selecione o seu ficheiro XML do supplier BOD. |
+| **org\_id** | O seu Org ID — o mesmo valor que colocou em **X-ORG-ID** no passo 2. Defini-lo também aqui torna explícito para que organização o pedido está a escrever. Tem de ser uma organização a que a sua API key tenha acesso; qualquer outra é recusada. |
+| **sub\_org\_id** | Só é necessário se estiver a importar para uma suborganização específica. |
+| **custom\_fields\_mapping** | Opcional. Lê campos adicionais do BOD para os campos personalizados do fornecedor. Consulte [Mapeamentos de campos personalizados](#mapeamentos-de-campos-personalizados) abaixo. |
 
 Não existe aqui um campo de mapeamento de linhas — os dados mestres de fornecedores não têm linhas.
 
@@ -164,6 +164,8 @@ Se algo estava errado no pedido, obtém `"success": false` juntamente com uma me
 * No DocBits, vá a **Settings → Document Processing → Lookup Master Data**.
 * Selecione **BOD Input Data** à esquerda e abra depois o separador **Supplier**.
 * Procure o fornecedor do seu BOD.
+
+<!-- SCREENSHOT: Lookup Master Data with BOD Input Data selected and the Supplier tab open -->
 
 {% hint style="info" %}
 O DocBits decide o que fazer com o BOD lendo o tipo que está lá dentro, e não pelo endpoint de importação que usou. Se enviar aqui um purchase order BOD por engano, ele é importado como ordem de compra em vez de ser rejeitado — verifique portanto se o separador onde encontra os dados é o que esperava.

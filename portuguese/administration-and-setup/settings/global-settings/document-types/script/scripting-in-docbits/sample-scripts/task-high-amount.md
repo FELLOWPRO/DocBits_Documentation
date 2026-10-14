@@ -1,4 +1,4 @@
-# Tarefa para Valor Elevado
+# Tarefa para Valor Elevado de Fatura
 
 ## O que faz este script?
 
@@ -43,6 +43,6 @@ except ValueError:
 
 ## Funções Utilizadas
 
-* [get\_field\_value()](../functions/field-functions.md#get_field_value) — Ler valor do campo
-* [get\_group\_by\_name()](../functions/business-logic-functions.md#get_group_by_id--get_group_by_name) — Encontrar grupo pelo nome
-* [create\_document\_task()](../functions/business-logic-functions.md#create_document_task) — Criar tarefa de aprovação
+- [get\_field\_value()](../field-functions.md#get\_field\_value) — Ler valor do campo
+- [get\_group\_by\_name()](../business-logic-functions.md#get\_group\_by\_id--get\_group\_by\_name) — Encontrar grupo pelo nome
+- [create\_document\_task()](../business-logic-functions.md#create\_document\_task) — Criar tarefa de aprovação

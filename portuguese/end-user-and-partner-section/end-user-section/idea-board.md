@@ -63,4 +63,4 @@ Os filtros se combinam, então você pode restringir, por exemplo, a "Melhorias 
 
 O menu do cartão (botão de três pontos) permite editar ou excluir uma ideia que você enviou.
 
-O Quadro de Ideias é para feedback de produto, não para relatos de incidentes. Use um chamado de suporte para problemas que bloqueiam seu trabalho hoje.
+<mark>O Quadro de Ideias é para feedback de produto, não para relatos de incidentes. Use um chamado de suporte para problemas que bloqueiam seu trabalho hoje.</mark>

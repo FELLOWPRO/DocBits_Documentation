@@ -1,4 +1,4 @@
-# Números de Fatura Estendidos
+# Script de Geração de Números de Fatura Estendidos para DocBits
 
 Este documento detalha o script "Geração de Números de Fatura Estendidos", que automatiza a criação de números de fatura estendidos no DocBits. Números de fatura estendidos combinam múltiplos identificadores de documentos, como o ID da fatura e o número da ordem de compra, num único identificador abrangente. Este script melhora a rastreabilidade de documentos e simplifica a manutenção de registos.
 
@@ -29,3 +29,5 @@ if extended_number:
     else:
         set_field_value(fields_dict, 'invoice_extended_number', extended_number)
 ```
+
+

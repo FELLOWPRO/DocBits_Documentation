@@ -1,5 +1,7 @@
 # Atualizar Status do Pedido de Compra do Documento
 
+
+
 ## Visão Geral
 
 Quando ativado, a coluna **Status do PO** no painel é atualizada automaticamente sempre que o status do pedido de compra é alterado.

@@ -1,2 +1,4 @@
-# Configurações Globais
+# Global Settings
+
+
 

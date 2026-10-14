@@ -37,3 +37,5 @@ if currency_value:
         currency_value = currency_map[currency_value]
     set_field_value(fields_dict, "currency", currency_value)
 ```
+
+

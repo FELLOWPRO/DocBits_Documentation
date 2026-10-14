@@ -1,4 +1,4 @@
-# Detecção de Documentos Semelhantes
+# Detecção de Documentos Semelhantes (Pesquisa Vetorial)
 
 {% hint style="info" %}
 **Disponível a partir da versão 11.48.0** — Requer licença `OPENSEARCH_ENABLED`.
@@ -39,12 +39,11 @@ for doc in similar:
 O texto OCR de cada documento é convertido num embedding vetorial de 384 dimensões quando indexado. `vector_search()` encontra os vizinhos mais próximos neste espaço vetorial usando k-NN (k-Nearest Neighbors), retornando documentos cujo conteúdo é semanticamente semelhante — mesmo que as palavras exatas sejam diferentes.
 
 **Casos de uso:**
-
-* Detecção de fraude (faturas quase idênticas de diferentes "fornecedores")
-* Detecção de duplicados que vai além da correspondência exata de texto
-* Encontrar documentos relacionados em diferentes formatos ou idiomas
+- Detecção de fraude (faturas quase idênticas de diferentes "fornecedores")
+- Detecção de duplicados que vai além da correspondência exata de texto
+- Encontrar documentos relacionados em diferentes formatos ou idiomas
 
 ## Funções Utilizadas
 
-* [vector\_search()](../fulltext-search-functions.md#vector_search) — Encontrar documentos semanticamente semelhantes
-* [set\_field\_as\_invalid()](../functions/field-functions.md#set_field_as_invalid) — Mostrar erro de validação
+- [vector\_search()](../fulltext-search-functions.md#vector\_search) — Encontrar documentos semanticamente semelhantes
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid) — Mostrar erro de validação

@@ -153,7 +153,13 @@ O **Gestor de conflitos (Conflict Handler)** decide:
 
 Em todos os exemplos o documento tem um NIF e um nome de fornecedor, e ambos os campos são **Pesquisáveis**.
 
-<table><thead><tr><th width="150">O NIF encontra</th><th width="150">O nome encontra</th><th width="150">Corresponder a tudo desligado + Return None</th><th width="150">Corresponder a tudo ligado + Return None</th><th width="150">Corresponder a tudo desligado + Best Score</th></tr></thead><tbody><tr><td>só A</td><td>A e B</td><td>vazio</td><td><strong>A</strong></td><td><strong>A</strong></td></tr><tr><td>A e B</td><td>só B</td><td>vazio</td><td><strong>B</strong></td><td><strong>B</strong></td></tr><tr><td>A, B e C</td><td>C, D e E</td><td>vazio</td><td><strong>C</strong></td><td><strong>C</strong></td></tr><tr><td>A, B e C</td><td>B, C e D</td><td>vazio</td><td>vazio</td><td>B ou C, não fiável</td></tr><tr><td>só A</td><td>nada</td><td><strong>A</strong></td><td>vazio</td><td><strong>A</strong></td></tr></tbody></table>
+<table><thead><tr><th width="150">O NIF encontra</th><th width="150">O nome encontra</th><th width="150">Corresponder a tudo desligado + Return None</th><th width="150">Corresponder a tudo ligado + Return None</th><th width="150">Corresponder a tudo desligado + Best Score</th></tr></thead><tbody>
+<tr><td>só A</td><td>A e B</td><td>vazio</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A e B</td><td>só B</td><td>vazio</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B e C</td><td>C, D e E</td><td>vazio</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B e C</td><td>B, C e D</td><td>vazio</td><td>vazio</td><td>B ou C, não fiável</td></tr>
+<tr><td>só A</td><td>nada</td><td><strong>A</strong></td><td>vazio</td><td><strong>A</strong></td></tr>
+</tbody></table>
 
 Como ler a tabela:
 

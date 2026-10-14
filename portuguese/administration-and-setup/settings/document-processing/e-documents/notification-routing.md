@@ -8,13 +8,13 @@ A página **Encaminhamento de notificações** (**Documentos eletrónicos → A�
 
 Escolha quem trata cada tipo de problema de fatura. Tudo o que não estiver listado vai para o agente predefinido:
 
-| Rota                                      | Resultados que abrange                                                               |
-| ----------------------------------------- | ------------------------------------------------------------------------------------ |
-| **Regras de negócio colombianas**         | Resultados de regras de negócio específicas da Colômbia.                             |
-| **Regras de negócio alemãs**              | Resultados de regras de negócio específicas da Alemanha.                             |
+| Rota | Resultados que abrange |
+|------|------------------------|
+| **Regras de negócio colombianas** | Resultados de regras de negócio específicas da Colômbia. |
+| **Regras de negócio alemãs** | Resultados de regras de negócio específicas da Alemanha. |
 | **Verificações de IBAN / conta bancária** | Resultados sobre dados de pagamento (dígito de controlo do IBAN, comprimento, país). |
-| **Verificações de NIF/IVA**               | Resultados sobre o formato do NIF/IVA.                                               |
-| **Tudo o resto**                          | O recurso predefinido para tudo o que não corresponde acima.                         |
+| **Verificações de NIF/IVA** | Resultados sobre o formato do NIF/IVA. |
+| **Tudo o resto** | O recurso predefinido para tudo o que não corresponde acima. |
 
 Para cada rota, escolha o agente responsável no menu pendente. **Avançado (regras de código personalizadas)** permite encaminhar por um código de resultado exato quando precisa de um controlo mais fino.
 
@@ -24,11 +24,11 @@ Para cada rota, escolha o agente responsável no menu pendente. **Avançado (reg
 
 A secção **Agentes disponíveis** é um registo só de leitura dos agentes do AI Workforce fornecidos com a sua implementação, por exemplo:
 
-| Agente                                    | Finalidade                                                                                                          |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Agente | Finalidade |
+|--------|------------|
 | **Notificação ao fornecedor predefinida** | E-mail genérico de notificação ao fornecedor; o agente abrangente quando nenhum agente mais específico corresponde. |
-| **Banking Bot**                           | Modelo especializado para resultados de dados de pagamento (correções de IBAN/BIC).                                 |
-| **Tax Bot**                               | Notificação ao fornecedor específica para NIF/IVA.                                                                  |
-| **Compliance Bot**                        | Trata os resultados de conformidade.                                                                                |
+| **Banking Bot** | Modelo especializado para resultados de dados de pagamento (correções de IBAN/BIC). |
+| **Tax Bot** | Notificação ao fornecedor específica para NIF/IVA. |
+| **Compliance Bot** | Trata os resultados de conformidade. |
 
 Cada agente mostra a respetiva tarefa Celery e os prefixos de código de resultado que trata por predefinição.

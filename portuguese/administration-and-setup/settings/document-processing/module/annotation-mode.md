@@ -1,4 +1,4 @@
-# Modo de Anotação
+# Annotation Mode
 
 ## Overview
 
@@ -8,7 +8,7 @@ The **Annotation Mode** setting allows users to create and manage annotations di
 
 You can find this setting under: **Settings → Document Processing → Module → Document Type → Annotation Mode**
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224104758.jpg" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
@@ -21,7 +21,7 @@ DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Withou
 * Navigate to the **Validation Screen**.
 * Click on the **speech bubble** icon on the right to enter Annotation Mode.
 
-<div align="center"><figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105047.jpg" alt=""><figcaption></figcaption></figure></div>
 
 ### 2. Creating an Annotation
 
@@ -30,7 +30,7 @@ DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Withou
 * Click the **document** icon to save the annotation.
 * Click the **trash can** icon to delete the annotation.
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105556.jpg" alt=""><figcaption></figcaption></figure></div>
 
 *   Customize the text using:
 
@@ -40,7 +40,7 @@ DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Withou
     * <mark style="color:purple;">**Color**</mark>
     * **Font selection**
 
-    <div align="left"><figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure></div>
+    <div align="left"><figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105351.jpg" alt=""><figcaption></figcaption></figure></div>
 
 ### 3. Managing Annotations
 
@@ -50,7 +50,7 @@ DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Withou
 * Annotations **will be included** when exporting the document to **IDM.**
 * If a document contains annotations, the **speech bubble icon** will display a small **exclamation mark** to indicate their presence.
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224105935.jpg" alt=""><figcaption></figcaption></figure>
 
 *
 
@@ -65,6 +65,9 @@ DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Withou
   * **Download with Annotations**
   * **Download without Annotations**
 
-<figure><img src="../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250224115302.jpg" alt=""><figcaption></figcaption></figure>
 
 By enabling and using Annotation Mode, users can efficiently add, edit, and manage annotations directly on PDFs, enhancing document collaboration and review.
+
+
+

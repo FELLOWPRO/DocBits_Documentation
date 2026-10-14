@@ -27,7 +27,7 @@ O cabeçalho fixo na parte superior contém a caixa de pesquisa e os filtros em 
 
 A pesquisa e o filtro atuais são adicionados à URL, então uma visualização filtrada pode ser favoritada ou compartilhada.
 
-O Mapa do Site respeita as mesmas permissões que o restante do DocBits. Páginas que você não pode acessar não aparecem.
+<mark>O Mapa do Site respeita as mesmas permissões que o restante do DocBits. Páginas que você não pode acessar não aparecem.</mark>
 
 ## Modo desenvolvedor
 

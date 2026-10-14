@@ -6,9 +6,9 @@ O **Card SDK** permite que parceiros e programadores criem cartões de fluxo de 
 
 ## Como funciona
 
-* **Download SDK Template** — comece a partir do modelo oficial que contém a estrutura esperada.
-* **Upload ZIP** — o ZIP tem de conter `app.json` e uma pasta `.docflowcompose/flow/` com as definições dos cartões (máximo 10 MB). Upload & Validate verifica o pacote antes de ele ser aceite.
-* **GitHub Import** — importe uma definição de cartão diretamente de um repositório GitHub.
-* **Submissions** — acompanhe o estado dos cartões que submeteu.
+- **Download SDK Template** — comece a partir do modelo oficial que contém a estrutura esperada.
+- **Upload ZIP** — o ZIP tem de conter `app.json` e uma pasta `.docflowcompose/flow/` com as definições dos cartões (máximo 10 MB). Upload &#x26; Validate verifica o pacote antes de ele ser aceite.
+- **GitHub Import** — importe uma definição de cartão diretamente de um repositório GitHub.
+- **Submissions** — acompanhe o estado dos cartões que submeteu.
 
 Depois de validados e aceites, os seus cartões personalizados aparecem na biblioteca **Add Card** juntamente com os cartões integrados.

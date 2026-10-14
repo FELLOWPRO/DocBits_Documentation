@@ -57,3 +57,4 @@ site:
       path: dutch
       content:
         directory: ./dutch
+        language: nl

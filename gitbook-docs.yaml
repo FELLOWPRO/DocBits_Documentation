@@ -50,6 +50,7 @@ site:
       path: polish
       content:
         directory: ./polish
+        language: pl
     - type: space
       key: space-8
       title: 🇳🇱 Nederlands

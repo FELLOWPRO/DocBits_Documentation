@@ -741,7 +741,7 @@ Day 5: IF still not completed:
 ### Próximos pasos
 - Añadir notificaciones por correo electrónico: [Guía de envío de correo](../then/action/send-email-groups-guide.md)
 - Implementar enrutamiento complejo: [Patrón de lógica de decisión](decision-logic-pattern.md)
-- Gestionar errores: [Patrón de gestión de errores](error-handling-pattern.md)
+- Resolver errores de tareas: [Gestión de errores](#gestion-de-errores) anterior
 
 ---
 

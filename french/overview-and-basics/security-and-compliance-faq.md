@@ -1,19 +1,19 @@
-# FAQ Sécurité & Conformité
+# DocBits (FELLOWPRO AG) — Questionnaire de Sécurité et Conformité
 
 **Fournisseur:** DocBits par FELLOWPRO AG | **Hébergement:** Francfort, Allemagne | **Certifiée ISO 27001** | **Date:** 2026-03-04
 
-***
+---
 
 ## Légende du Statut
 
-| Symbole                    | Signification                                                                                                                        |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| ✅ Confirmé                 | Réponse vérifiée à partir de la documentation officielle de DocBits ou de sources publiques                                          |
-| ✅ Partiel                  | Réponse partielle ; détails supplémentaires nécessaires de la part de l'équipe DocBits                                               |
-| ❓ À Confirmer              | Aucune information publique disponible — doit être confirmée directement auprès de DocBits/FELLOWPRO                                 |
+| Symbole | Signification |
+|---------|---------|
+| ✅ Confirmé | Réponse vérifiée à partir de la documentation officielle de DocBits ou de sources publiques |
+| ✅ Partiel | Réponse partielle ; détails supplémentaires nécessaires de la part de l'équipe DocBits |
+| ❓ À Confirmer | Aucune information publique disponible — doit être confirmée directement auprès de DocBits/FELLOWPRO |
 | ⚠️ Nécessite Clarification | Les informations publiques soulèvent des préoccupations ou des ambiguïtés qui nécessitent une clarification explicite du fournisseur |
 
-***
+---
 
 ## 🔹 Localisation et Résidence des Données
 
@@ -25,7 +25,7 @@
 
 **Notes:** AWS Francfort confirmé (S3 + OpenSearch). Demander le code spécifique de la région AWS (eu-central-1) et si c'est une seule ou multi-AZ.
 
-***
+---
 
 ### 2. Où l'environnement de DR (Récupération d'Urgence) est-il hébergé?
 
@@ -35,14 +35,13 @@
 
 **Notes:** Francfort (principal) + Amsterdam (secondaire). Tous les emplacements en UE. Demander les objectifs RTO/RPO et les détails du processus de basculement.
 
-***
+---
 
 ### 3. Où les sauvegardes sont-elles stockées?
 
 **Réponse:** Les sauvegardes sont stockées dans deux localités de l'UE:
-
-* **Principal:** Francfort, Allemagne
-* **Secondaire:** Amsterdam, Pays-Bas
+- **Principal:** Francfort, Allemagne
+- **Secondaire:** Amsterdam, Pays-Bas
 
 Calendrier de sauvegarde: Sauvegardes quotidiennes, hebdomadaires, trimestrielles et annuelles.
 
@@ -50,14 +49,13 @@ Calendrier de sauvegarde: Sauvegardes quotidiennes, hebdomadaires, trimestrielle
 
 **Notes:** Calendrier complet de sauvegarde (quotidienne/hebdomadaire/trimestrielle/annuelle) sur deux localités de l'UE. Toutes les données restent au sein de l'UE. Confirmer le chiffrement des sauvegardes et la fréquence des tests de restauration.
 
-***
+---
 
 ### 4. Existe-t-il des options de partitionnement géographique (par exemple, uniquement UK)?
 
 **Réponse:** Deux régions de centre de données disponibles:
-
-* **Francfort, Allemagne** — pour tous les clients de l'UE
-* **New York, USA** — pour les clients américains uniquement
+- **Francfort, Allemagne** — pour tous les clients de l'UE
+- **New York, USA** — pour les clients américains uniquement
 
 Les données des clients de l'UE sont hébergées exclusivement à Francfort. Aucune option uniquement pour le UK n'est actuellement disponible.
 
@@ -65,7 +63,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Les clients de l'UE sont limités à Francfort — pas de mélange de données interrégionales. L'hébergement uniquement pour le UK n'est pas disponible ; les clients du UK seraient servis depuis Francfort. Clarifier si des régions supplémentaires sont prévues.
 
-***
+---
 
 ### 5. Les données sont-elles chiffrées au repos et en transit?
 
@@ -75,7 +73,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Confirmer les standards de chiffrement spécifiques (par exemple, AES-256 au repos, TLS 1.2+ en transit).
 
-***
+---
 
 ## 🔹 Gestion des Modèles IA/ML
 
@@ -87,7 +85,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Modèles Mistral hébergés à Francfort. Aucun appel d'API tiers pour le traitement des documents. Totalement autonome.
 
-***
+---
 
 ### 7. Les documents extraits sont-ils utilisés pour entraîner des modèles plus larges entre les clients?
 
@@ -97,7 +95,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** L'intelligence collective apprend les modèles de disposition structurale (coordonnées de champs/positions), pas le contenu des documents. Cela signifie qu'aucune donnée client (montants des factures, noms des fournisseurs, etc.) n'est partagée entre les locataires — uniquement la connaissance de la structure des documents.
 
-***
+---
 
 ### 8. Pouvez-vous restreindre l'entraînement du modèle à votre locataire uniquement?
 
@@ -107,7 +105,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Risque faible: Les modèles partagés apprennent uniquement les données positionnelles/structurelles (coordonnées), pas le contenu commercial. L'entraînement du type de document personnalisé reste limité au locataire.
 
-***
+---
 
 ### 9. Où les modèles IA/ML sont-ils hébergés et exécutés?
 
@@ -117,7 +115,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Bon: Le traitement de l'IA reste à Francfort. Aucun transfert de données vers l'infrastructure IA externe.
 
-***
+---
 
 ### 10. Quelles technologies IA/ML sont utilisées (moteur OCR, LLM, NLP)?
 
@@ -127,7 +125,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Demander les détails spécifiques du modèle: OCR propriétaire vs. tiers, quel LLM alimente les fonctionnalités d'IA générative.
 
-***
+---
 
 ### 11. Existe-t-il une option pour le déploiement du modèle IA sur site?
 
@@ -137,7 +135,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Confirmer la portée de l'option sur site: Inclut-elle le traitement complet de l'IA ou uniquement le stockage des documents?
 
-***
+---
 
 ## 🔹 Accès aux Données et Journalisation
 
@@ -149,7 +147,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Demander à DocBits: Liste exacte des rôles du personnel ayant accès aux documents bruts. L'accès est-il basé sur le besoin / à la demande uniquement?
 
-***
+---
 
 ### 13. Quels contrôles d'accès et journalisations existent pour le personnel du fournisseur?
 
@@ -159,7 +157,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Demander: Détails RBAC, exigences MFA, gestion des accès privilégiés (PAM), et si l'accès est enregistré avec des pistes d'audit immuables.
 
-***
+---
 
 ### 14. Combien de temps les journaux d'accès sont-ils conservés?
 
@@ -169,7 +167,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** S3 + OpenSearch à Francfort. Rétention de 30 jours client / 3 mois interne. Confirmer si les journaux sont immuables/protégés contre la falsification.
 
-***
+---
 
 ### 15. Combien de temps les documents téléchargés / données extraites sont-ils conservés dans DocBits?
 
@@ -179,7 +177,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Rétention configurable par le client (30 jours / 3 mois). Confirmer: La suppression inclut-elle toutes les copies (S3, OpenSearch, données d'entraînement IA)?
 
-***
+---
 
 ### 16. Les clients peuvent-ils demander la suppression des données à la demande?
 
@@ -189,7 +187,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Confirmer: La suppression couvre-t-elle toutes les copies, y compris les sauvegardes et les données d'entraînement IA dérivées du locataire?
 
-***
+---
 
 ### 17. Quels sous-traitants ont accès aux données des clients?
 
@@ -199,7 +197,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Demander la liste complète des sous-traitants. Cloudflare confirmé; demander le fournisseur d'hébergement cloud, les fournisseurs de services IA, etc.
 
-***
+---
 
 ### 18. Quelles certifications et cadres de conformité DocBits détient-il?
 
@@ -209,25 +207,24 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Demander: SOC 2 Type II? Rapports de test de pénétration? ISO 27701 (confidentialité)? Calendrier d'audit annuel?
 
-***
+---
 
 ## 🔹 Portée de l'Intégration (Infor LN)
 
 ### 19. Quelle est la liste exacte des champs de données extraits de LN pour la validation?
 
 **Réponse:** Données principales importées via BODs Infor:
-
-* **Fournisseurs:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
-* **Commandes d'Achat:** Sync.PurchaseOrder
-* **Plan Comptable:** Sync.CodeDefinition (ChartOfAccounts)
-* **Dimensions Flexibles:** Sync.CodeDefinition (FlexDimensions)
-* **Codes Fiscaux:** via publication BOD
+- **Fournisseurs:** Sync.SupplierPartyMaster, Sync.RemitToPartyMaster
+- **Commandes d'Achat:** Sync.PurchaseOrder
+- **Plan Comptable:** Sync.CodeDefinition (ChartOfAccounts)
+- **Dimensions Flexibles:** Sync.CodeDefinition (FlexDimensions)
+- **Codes Fiscaux:** via publication BOD
 
 **Statut:** ✅ Confirmé
 
 **Notes:** Demander à DocBits la liste BOD complète et la documentation de mappage au niveau des champs pour votre configuration LN spécifique.
 
-***
+---
 
 ### 20. Quels champs d'en-tête spécifiques sont exportés vers LN?
 
@@ -237,7 +234,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Examiner le fichier de mappage des champs pour votre environnement spécifique. Confirmer que tous les champs statiques correspondent à la configuration de votre société LN.
 
-***
+---
 
 ### 21. Les opérations d'écriture sont-elles limitées aux objets d'interface AP/PO uniquement?
 
@@ -247,7 +244,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Confirmer: DocBits écrit-il UNIQUEMENT aux objets de facture AP et de reçu de bon de commande? D'autres modules LN touchés? Quelle est la portée d'écriture IDM?
 
-***
+---
 
 ### 22. Quelle méthode d'intégration est utilisée (ION API, BODs, BD directe)?
 
@@ -257,7 +254,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Bon: Aucun accès BD direct. Toute la communication via la couche d'intégration Infor standard.
 
-***
+---
 
 ### 23. Quelle authentification/autorisation est utilisée pour la connectivité LN?
 
@@ -267,7 +264,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** Assurer que les comptes de service suivent le principe du moindre privilège. Examiner les permissions accordées à l'utilisateur ION API de DocBits.
 
-***
+---
 
 ### 24. Le transfert de données entre DocBits et LN est-il chiffré de bout en bout?
 
@@ -277,7 +274,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Notes:** La communication ION API utilise HTTPS/TLS. Confirmer la version TLS minimale (1.2+).
 
-***
+---
 
 ### 25. Quels types de documents sont supportés au-delà des factures AP?
 

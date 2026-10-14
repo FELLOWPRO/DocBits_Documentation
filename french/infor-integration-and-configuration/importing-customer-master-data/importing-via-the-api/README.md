@@ -15,7 +15,7 @@ Chaque page suit les mêmes cinq étapes : ouvrir le lien de l'API de votre envi
 
 ## Ce dont vous avez besoin
 
-* **Une API key** — voir [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management/).
+* **Une API key** — voir [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md).
 * **Votre Org ID** — sous **Settings → Integration & SSO**, dans la section **ID**.
 * **Les données elles-mêmes**, sous forme de fichier XML ou de contenu XML que vous pouvez coller.
 

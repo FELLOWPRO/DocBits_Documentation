@@ -117,7 +117,7 @@ La recherche IA et la recherche vectorielle ne sont pas interchangeables : la ve
 3. Confirmez la boîte de dialogue d'abonnement si elle s'affiche.
 4. Attendez la fin de la première réindexation avant d'utiliser les requêtes plein texte.
 
-<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Page „Modules“ avec l&#x27;interrupteur „Full text search“ sous le groupe Dashboards"><figcaption><p>L'interrupteur <strong>Full text search</strong> se trouve dans <strong>Module → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/fulltext-search-module-toggle.png" alt="Page „Modules“ avec l'interrupteur „Full text search“ sous le groupe Dashboards"><figcaption><p>L'interrupteur <strong>Full text search</strong> se trouve dans <strong>Module → Dashboards &#x26; Analytics</strong>.</p></figcaption></figure>
 
 {% hint style="info" %}
 La tarification du module de recherche plein texte est gérée par votre interlocuteur commercial DocBits. La confirmation d'abonnement apparaît lors de la première activation du module.
@@ -127,4 +127,4 @@ La tarification du module de recherche plein texte est gérée par votre interlo
 
 * [Paramètres de recherche plein texte](../../log-settings/fulltext-search-settings.md) — gestion de l'index et interrupteur de l'index vectoriel.
 * [Fonctions Fulltext & Vector Search](../../global-settings/document-types/script/scripting-in-docbits/fulltext-search-functions.md) — API de scripting pour `fulltext_search()` et `vector_search()`.
-* [Vue d'ensemble des modules](./) — liste complète des modules optionnels de DocBits.
+* [Vue d'ensemble des modules](README.md) — liste complète des modules optionnels de DocBits.

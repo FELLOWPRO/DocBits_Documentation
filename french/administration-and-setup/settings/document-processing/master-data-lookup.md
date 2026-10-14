@@ -1,6 +1,7 @@
-# Validation des données fournisseur
+# Recherche de données de référence
 
 {% embed url="https://youtu.be/hn_bkeUMxJg" %}
+{% endembed %}
 
 La **Recherche de données de référence** (barre latérale : **Lookup Master Data**) vous permet de consulter et de gérer les données de référence que DocBits utilise pour valider les données extraites des documents par rapport à votre système ERP. Elle est essentielle pour un PO matching précis, la validation des fournisseurs et la saisie automatique des champs. Ouvrez-la depuis **Paramètres → Traitement des documents → Lookup Master Data**.
 
@@ -10,12 +11,12 @@ La **Recherche de données de référence** (barre latérale : **Lookup Master D
 
 Le panneau de gauche répertorie quatre catégories de sources de données :
 
-| Source                  | Description                                                                                                                                     |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **BOD Input Data**      | Données reçues via des messages Infor BOD (Business Object Document).                                                                           |
-| **ERP API Data**        | Données récupérées directement depuis votre système ERP via une API. Cliquez sur l'icône en forme d'engrenage pour configurer la connexion API. |
-| **Imported**            | Données importées manuellement (par exemple via un téléversement CSV). Cliquez sur l'icône **+** pour ajouter de nouvelles données.             |
-| **DocBits Master Data** | Données de référence internes gérées au sein de DocBits.                                                                                        |
+| Source | Description |
+|--------|-------------|
+| **BOD Input Data** | Données reçues via des messages Infor BOD (Business Object Document). |
+| **ERP API Data** | Données récupérées directement depuis votre système ERP via une API. Cliquez sur l'icône en forme d'engrenage pour configurer la connexion API. |
+| **Imported** | Données importées manuellement (par exemple via un téléversement CSV). Cliquez sur l'icône **+** pour ajouter de nouvelles données. |
+| **DocBits Master Data** | Données de référence internes gérées au sein de DocBits. |
 
 ## Tableau de données
 

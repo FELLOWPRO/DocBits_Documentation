@@ -14,7 +14,7 @@ Ce paramètre se trouve dans **Paramètres → Paramètres globaux → Informati
 2. Ouvrez la section **Authentification à deux facteurs**.
 3. Activez **Exiger l'authentification à deux facteurs pour tous les membres** et cliquez sur **Enregistrer**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="Le commutateur d&#x27;exigence de MFA de l&#x27;organisation et le rapport d&#x27;adoption"><figcaption><p>Activez l'exigence pour tous les membres, et surveillez l'adoption ci-dessous.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mfa-admin-requirement.png" alt="Le commutateur d'exigence de MFA de l'organisation et le rapport d'adoption"><figcaption><p>Activez l'exigence pour tous les membres, et surveillez l'adoption ci-dessous.</p></figcaption></figure>
 
 Une fois enregistré, le changement prend effet en moins d'une minute. À partir de ce moment :
 
@@ -31,10 +31,10 @@ Activer ce paramètre bloque les connexions par mot de passe pour les membres qu
 Sous le commutateur, le panneau **Adoption de la MFA** montre l'ampleur de l'utilisation de la 2FA dans votre organisation avant de l'imposer :
 
 * le **pourcentage d'adoption** global et une barre de progression,
-* combien de vos membres ont la 2FA activée (par ex. _0 sur 74 membres_),
+* combien de vos membres ont la 2FA activée (par ex. *0 sur 74 membres*),
 * une répartition par facteur — **Application d'authentification**, **E-mail**, et **Clé d'accès**.
 
-<figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="Le rapport d&#x27;adoption de la MFA"><figcaption><p>Le rapport d'adoption de la MFA : pourcentage global, membres enregistrés, et une répartition par facteur.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mfa-adoption-report.png" alt="Le rapport d'adoption de la MFA"><figcaption><p>Le rapport d'adoption de la MFA : pourcentage global, membres enregistrés, et une répartition par facteur.</p></figcaption></figure>
 
 Utilisez-le pour évaluer l'état de préparation : augmentez d'abord l'adoption, puis activez l'exigence avec moins de membres bloqués à l'étape d'enregistrement.
 

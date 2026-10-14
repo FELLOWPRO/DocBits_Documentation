@@ -5,12 +5,12 @@ Plusieurs règles peuvent être vraies, mais le résultat de ces règles doit ê
 **Exemple :**
 
 | Règle | Condition            | Groupe renvoyé |
-| ----- | -------------------- | -------------- |
-| 1     | Total Amount <= 1000 | GROUP\_1       |
-| 2     | Total Amount <= 2000 | GROUP\_2       |
-| 3     | Total Amount <= 3000 | GROUP\_3       |
-| 4     | Total Amount <= 4000 | GROUP\_4       |
-| 5     | Total Amount <= 5000 | GROUP\_5       |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | GROUP_1     |
+| 2    | Total Amount <= 2000 | GROUP_2     |
+| 3    | Total Amount <= 3000 | GROUP_3     |
+| 4    | Total Amount <= 4000 | GROUP_4     |
+| 5    | Total Amount <= 5000 | GROUP_5     |
 
 Si le montant total est de **2500**, les règles évaluées seront :
 

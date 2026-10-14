@@ -1,4 +1,4 @@
-# Supplier Layout
+# Mise en page fournisseur
 
 <figure><img src="../../../.gitbook/assets/supplier_layout.png" alt="Supplier Layout"><figcaption><p>Page de mise en page fournisseur</p></figcaption></figure>
 

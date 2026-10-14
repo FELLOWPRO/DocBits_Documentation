@@ -31,7 +31,7 @@ Activer le commutateur ne fait pas que basculer un réglage : cela démarre un *
 4. Ouvrez la section **Type de document**.
 5. Repérez **Workflow Builder** et activez le commutateur.
 6. Dans la boîte de dialogue, choisissez votre formule DocFlow (Standard, en option Advanced) et confirmez. DocFlow est activé une fois l'abonnement créé.
-7. Ensuite, concevez vos flux de travail documentaires dans DocFlow — voir la section [Workflow](../../../workflow/) pour savoir comment les créer.
+7. Ensuite, concevez vos flux de travail documentaires dans DocFlow — voir la section [Workflow](../../../workflow/README.md) pour savoir comment les créer.
 
 ### Quand utiliser cette fonction
 

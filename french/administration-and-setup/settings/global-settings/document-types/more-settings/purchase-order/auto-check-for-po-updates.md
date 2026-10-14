@@ -4,7 +4,7 @@
 
 Allez à **Paramètres** → **Paramètres généraux** → **Types de documents** → **Plus de paramètres** → **Section de commande d'achat** → **Vérification automatique des mises à jour de CA** Activez le bouton pour activer ce paramètre.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_approval (3).png" alt="DocBits Approbation"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_approval.png" alt="DocBits Approbation"><figcaption></figcaption></figure>
 
 #### Comment ça fonctionne
 
@@ -14,4 +14,5 @@ Lorsqu'il est activé, le système fournit un **indicateur visuel** dans l'écra
 
 Pour actualiser la commande d'achat, cliquez sur l'**icône de rafraîchissement** à côté du numéro de commande d'achat (voir image ci-dessous).
 
-<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_settings_workflow_2 (3).png" alt="DocBits Paramètres Workflow 2"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../../../.gitbook/assets/docbits_settings_workflow_2.png" alt="DocBits Paramètres Workflow 2"><figcaption></figcaption></figure></div>
+

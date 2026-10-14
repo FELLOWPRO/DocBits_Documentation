@@ -1,4 +1,4 @@
-# Sous-Organisations
+# Sous-organisations
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/fr.mp4" %}
 
@@ -17,11 +17,11 @@ Les sous-organisations vous permettent de créer une structure hiérarchique dan
 
 Le tableau affiche toutes les sous-organisations existantes avec :
 
-| Colonne         | Description                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------------------- |
-| **Nom**         | Le nom de la sous-organisation.                                                                     |
-| **Description** | Une brève description de l'objectif de la sous-organisation.                                        |
-| **Actions**     | Menu proposant des options pour gérer les utilisateurs, modifier ou supprimer la sous-organisation. |
+| Colonne | Description |
+|--------|-------------|
+| **Nom** | Le nom de la sous-organisation. |
+| **Description** | Une brève description de l'objectif de la sous-organisation. |
+| **Actions** | Menu proposant des options pour gérer les utilisateurs, modifier ou supprimer la sous-organisation. |
 
 Utilisez la barre de **recherche** pour trouver rapidement des sous-organisations par leur nom.
 

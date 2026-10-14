@@ -1,7 +1,5 @@
 ---
-description: >-
-  Un script qui définit USD comme devise par défaut et vérifie si elle est
-  valide ou non
+description: Un script qui définit USD comme devise par défaut et vérifie si elle est valide ou non
 ---
 
 # USD comme Devise par Défaut

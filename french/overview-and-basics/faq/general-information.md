@@ -15,6 +15,8 @@
 
 </details>
 
+
+
 <details>
 
 <summary>DocBits prend-il en charge des types de documents personnalisés ?</summary>
@@ -22,6 +24,8 @@
 Oui, les utilisateurs peuvent créer leurs propres types de documents.
 
 </details>
+
+
 
 <details>
 
@@ -37,3 +41,4 @@ Oui, les utilisateurs peuvent créer leurs propres types de documents.
 * .png
 
 </details>
+

@@ -4,27 +4,27 @@ Le Tableau extrait par IA est le tableau des éléments de ligne que DocBits lit
 
 ## Quand obtenez-vous le tableau AI
 
-* Un administrateur a activé **Extraction de tableaux par IA** (Paramètres → Traitement des documents → Classification et extraction). Si l'option est désactivée, la zone du tableau affiche _AI Table will display here. Enable in …_.
-* Le fournisseur n'a **aucune règle enregistrée**. Dès que quelqu'un entraîne le tableau du fournisseur et clique sur _Enregistrer les règles_, les règles enregistrées remplacent le tableau AI pour ce fournisseur ; les lignes apparaissent alors dans l'onglet _Tableau extrait_ au lieu de l'onglet _Tableau extrait par IA_.
+* Un administrateur a activé **Extraction de tableaux par IA** (Paramètres → Traitement des documents → Classification et extraction). Si l'option est désactivée, la zone du tableau affiche *AI Table will display here. Enable in …*.
+* Le fournisseur n'a **aucune règle enregistrée**. Dès que quelqu'un entraîne le tableau du fournisseur et clique sur *Enregistrer les règles*, les règles enregistrées remplacent le tableau AI pour ce fournisseur ; les lignes apparaissent alors dans l'onglet *Tableau extrait* au lieu de l'onglet *Tableau extrait par IA*.
 * Exception : les colonnes marquées **Utiliser l'IA** dans les paramètres des colonnes de tableau sont remplies par l'IA même pour les fournisseurs disposant de règles enregistrées, voir la section « Utiliser l'IA par colonne » ci-dessous.
 
-Le niveau d'IA qui lit le tableau (Fast, Full, Nexus) est défini par organisation et peut être remplacé par fournisseur sous _Plus de paramètres_ sur l'écran de validation, voir [Modèle d'IA spécifique au fournisseur](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
+Le niveau d'IA qui lit le tableau (Fast, Full, Nexus) est défini par organisation et peut être remplacé par fournisseur sous *Plus de paramètres* sur l'écran de validation, voir [Modèle d'IA spécifique au fournisseur](../validation-screen/supplier-specific-ai-model-for-field-and-table-extraction.md).
 
 ## Réextraire le tableau AI
 
 Utilisez cette procédure lorsque des lignes manquent ou qu'une colonne est décalée et que vous souhaitez que l'IA réessaie, par exemple après avoir ajouté une [étiquette](ai-table-tags.md) :
 
 1. Ajoutez ou modifiez des [étiquettes](ai-table-tags.md) dans le champ sous le tableau et cliquez sur **Appliquer**. L'IA reconstruit le tableau pour ce document avec vos étiquettes et vos modifications de colonnes ; rien n'est encore enregistré pour le fournisseur. Si le document comporte des lignes rapprochées avec un bon de commande, DocBits avertit que la reconstruction supprime ces correspondances.
-2. Le résultat vous convient ? Cliquez sur **Enregistrer** (_Enregistrer les règles_) pour que le prochain document de ce fournisseur soit extrait de la même manière.
-3. Pour repartir de zéro, cliquez sur **Supprimer** (_Supprimer les règles_) : DocBits confirme _Rules has been deleted successfully_ et relance l'extraction par IA sans aucune étiquette ni règle de formatage enregistrée.
+2. Le résultat vous convient ? Cliquez sur **Enregistrer** (*Enregistrer les règles*) pour que le prochain document de ce fournisseur soit extrait de la même manière.
+3. Pour repartir de zéro, cliquez sur **Supprimer** (*Supprimer les règles*) : DocBits confirme *Rules has been deleted successfully* et relance l'extraction par IA sans aucune étiquette ni règle de formatage enregistrée.
 
-_Supprimer les règles_ supprime les étiquettes et les règles de formatage enregistrées pour ce fournisseur, pas la configuration des colonnes de tableau. Pour réextraire l'ensemble du document (en-tête et tableau) après qu'un administrateur a modifié des paramètres ou des colonnes, utilisez plutôt _Redémarrer_ dans le menu du document sur le tableau de bord.
+*Supprimer les règles* supprime les étiquettes et les règles de formatage enregistrées pour ce fournisseur, pas la configuration des colonnes de tableau. Pour réextraire l'ensemble du document (en-tête et tableau) après qu'un administrateur a modifié des paramètres ou des colonnes, utilisez plutôt *Redémarrer* dans le menu du document sur le tableau de bord.
 
 ## Utiliser l'IA par colonne
 
 Chaque colonne de tableau possède un indicateur **Utiliser l'IA** (Paramètres → Paramètres globaux → Types de documents → [Colonnes de tableau](../../../administration-and-setup/settings/global-settings/document-types/table-columns.md)). Lorsqu'il est activé, l'IA remplit cette colonne même si le fournisseur dispose de règles enregistrées ; les autres colonnes continuent de provenir des règles. Cas d'usage typique : une colonne de description en texte libre que les règles entraînées capturent mal, ou une valeur qui change de place sur la page.
 
-Gardez à l'esprit que l'IA devine alors cette colonne à partir de la ligne entière. Si elle y place systématiquement la mauvaise valeur (par exemple le total de ligne dans _Frais_), le contrôle du total de ligne échoue sur chaque ligne. Dans ce cas, désactivez _Utiliser l'IA_ pour cette colonne, ou ajoutez une étiquette qui indique à l'IA ce que représente la colonne.
+Gardez à l'esprit que l'IA devine alors cette colonne à partir de la ligne entière. Si elle y place systématiquement la mauvaise valeur (par exemple le total de ligne dans *Frais*), le contrôle du total de ligne échoue sur chaque ligne. Dans ce cas, désactivez *Utiliser l'IA* pour cette colonne, ou ajoutez une étiquette qui indique à l'IA ce que représente la colonne.
 
 ## Extraction structurée
 
@@ -50,6 +50,6 @@ Voici les principales capacités et instructions d'utilisation :
 
 <figure><img src="../../../.gitbook/assets/ai-table4.png" alt=""><figcaption></figcaption></figure>
 
-* **Enregistrer vos modifications** : **Enregistrer** à côté des étiquettes (info-bulle _Enregistrer les règles_) stocke le mappage de colonnes, les colonnes masquées et les étiquettes actuels pour ce fournisseur. Le prochain document du fournisseur est extrait avec ces réglages.
+* **Enregistrer vos modifications** : **Enregistrer** à côté des étiquettes (info-bulle *Enregistrer les règles*) stocke le mappage de colonnes, les colonnes masquées et les étiquettes actuels pour ce fournisseur. Le prochain document du fournisseur est extrait avec ces réglages.
 
-Ces fonctionnalités vous donnent le contrôle sur les données extraites. Lorsque le même fournisseur nécessite les mêmes corrections à chaque fois, entraînez plutôt le tableau une fois ([Training Line Fields / Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/)) ; le tableau AI n'est alors plus utilisé pour ce fournisseur.
+Ces fonctionnalités vous donnent le contrôle sur les données extraites. Lorsque le même fournisseur nécessite les mêmes corrections à chaque fois, entraînez plutôt le tableau une fois ([Training Line Fields / Table Training](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md)) ; le tableau AI n'est alors plus utilisé pour ce fournisseur.

@@ -1,4 +1,4 @@
-# Privilèges d'Administration
+# Privilèges d'administration
 
 Le rôle d'un administrateur est essentiel pour gérer les systèmes informatiques, les réseaux et les plateformes numériques au sein d'une organisation. Un administrateur dispose de permissions et de responsabilités étendues qui lui permettent de contrôler différents aspects de l'infrastructure technique et de garantir qu'elle fonctionne de manière efficace et sécurisée. Voici quelques-unes des principales responsabilités d'un administrateur :
 
@@ -38,13 +38,13 @@ Un System Admin se distingue de trois manières :
 
 ### En un coup d'œil
 
-|                                                        | Admin                 | System Admin                         |
-| ------------------------------------------------------ | --------------------- | ------------------------------------ |
-| Accès complet à la gestion de l'organisation           | Oui                   | Oui                                  |
-| Nombre possible                                        | Autant que nécessaire | Un seul                              |
-| Modifiable après la création de l'utilisateur          | Oui, à tout moment    | Non, défini uniquement à la création |
-| Utilisé pour les actions automatiques, en arrière-plan | Non                   | Oui                                  |
-| Dispose toujours des droits d'Admin                    | —                     | Oui                                  |
+| | Admin | System Admin |
+|---|---|---|
+| Accès complet à la gestion de l'organisation | Oui | Oui |
+| Nombre possible | Autant que nécessaire | Un seul |
+| Modifiable après la création de l'utilisateur | Oui, à tout moment | Non, défini uniquement à la création |
+| Utilisé pour les actions automatiques, en arrière-plan | Non | Oui |
+| Dispose toujours des droits d'Admin | — | Oui |
 
 ## Meilleures pratiques de sécurité
 

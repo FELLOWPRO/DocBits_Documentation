@@ -38,6 +38,6 @@ if inv_id and vendor:
 
 ## Fonctions Utilisées
 
-* [get\_field\_value()](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/field-functions.md#get_field_value)
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search)
-* [set\_field\_as\_invalid()](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/field-functions.md#set_field_as_invalid)
+- [get\_field\_value()](../field-functions.md#get\_field\_value)
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search)
+- [set\_field\_as\_invalid()](../field-functions.md#set\_field\_as\_invalid)

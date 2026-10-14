@@ -1,5 +1,7 @@
 # Mettre à jour le statut de la commande d'achat du document
 
+
+
 ## Aperçu
 
 Lorsqu'activé, la colonne **État de la commande** sur le tableau de bord est automatiquement mise à jour chaque fois que le statut de la commande d'achat change.

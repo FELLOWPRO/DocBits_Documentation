@@ -54,6 +54,6 @@ Le RGPD est un règlement du droit de l'UE sur la protection des données et la 
 
 {% file src="../../.gitbook/assets/FELLOWPRO-GDPR-Audit-Report-2025.pdf" %}
 
-***
+---
 
 Pour toute documentation supplémentaire — modèles de DPA, listes de sous-traitants, synthèses de tests d'intrusion ou questionnaires de sécurité — contactez **compliance@fellowpro.com** ou votre interlocuteur DocBits Customer Success.

@@ -4,24 +4,44 @@
 DocBits Groups & Permissions Tutorial: Set User Roles, Access Rights & Secure Your Workspace
 {% endembed %}
 
-L'activation ou la désactivation du système d'autorisations à l'aide de l'interrupteur a divers effets sur la fonctionnalité dans DocBits.
+L'activation ou la désactivation du système d'autorisations à l'aide du commutateur a divers effets sur les fonctionnalités de DocBits.
 
-## Activation du système d'autorisations:
+## **Activation du système d'autorisations :**
 
-<figure><img src="../../../../../.gitbook/assets/activation-permissions1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
-* Lorsque le système d'autorisations est activé, les autorisations d'accès pour les utilisateurs et les groupes sont appliquées.
-* Les utilisateurs ne se voient accorder l'accès qu'aux ressources auxquelles ils sont explicitement autorisés à accéder en fonction des autorisations attribuées.
-* Les administrateurs peuvent gérer les autorisations pour les utilisateurs et les groupes individuels et s'assurer que seules les personnes autorisées peuvent consulter ou modifier les données.
+* Lorsque le système d'autorisations est activé, les autorisations d'accès des utilisateurs et des groupes sont appliquées.
+* Les utilisateurs n'ont accès qu'aux ressources auxquelles ils sont explicitement autorisés à accéder, en fonction des autorisations attribuées.
+* Les administrateurs peuvent gérer les autorisations des utilisateurs et des groupes individuels et s'assurer que seules les personnes autorisées peuvent consulter ou modifier les données.
 
-<figure><img src="../../../../../.gitbook/assets/activation-permissions2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
-## Désactivation du système d'autorisations:
+## Only Assigned Documents
 
-<figure><img src="../../../../../.gitbook/assets/activation-permissions3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+
+Le commutateur **Only Assigned Documents** contrôle la visibilité des documents pour les utilisateurs en fonction de leurs appartenances à des groupes. Lorsqu'il est activé, les utilisateurs ne peuvent voir que les documents qui leur sont spécifiquement attribués ou qui sont attribués à un groupe auquel ils appartiennent. Lorsqu'il est désactivé, les utilisateurs disposant de l'autorisation de visualisation appropriée peuvent voir tous les documents, indépendamment de l'attribution.
+
+#### Fonctionnement
+
+* **État désactivé (par défaut)** :
+  * Lorsque le commutateur est désactivé, les utilisateurs qui font partie d'un groupe peuvent voir tous les documents s'ils disposent de l'autorisation de visualisation appropriée. L'attribution des documents n'affecte pas la visibilité.
+* **État activé** :
+  * Lorsque le commutateur est activé, les utilisateurs ne peuvent voir que les documents qui leur sont explicitement attribués ou qui sont attribués à un groupe dont ils font partie. Cela impose une visibilité des documents plus stricte, basée sur les affectations aux groupes.
+
+#### Scénario d'exemple
+
+1. **Par défaut (état désactivé)** :
+   * Un utilisateur qui fait partie du groupe « Sales » peut voir tous les documents du système qu'il a l'autorisation de consulter, même s'ils ne lui sont pas attribués.
+2. **Activé (état activé)** :
+   * Un utilisateur du groupe « Sales » ne peut voir que les documents qui lui sont attribués ou qui sont attribués au groupe « Sales », ce qui restreint l'accès aux documents en dehors de ses attributions.
+
+## Désactivation du système d'autorisations :
+
+<figure><img src="../../../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
 * Lorsque le système d'autorisations est désactivé, toutes les autorisations d'accès sont supprimées et les utilisateurs ont généralement un accès illimité à toutes les ressources.
-* Cela peut être utile lorsque la collaboration ouverte est temporairement requise sans les restrictions du contrôle d'accès.
-* Cependant, il peut y avoir un risque accru de fuite de données ou d'accès non autorisé, car les utilisateurs peuvent être en mesure d'accéder à des informations sensibles auxquelles ils ne sont pas autorisés à accéder.
+* Cela peut être utile lorsqu'une collaboration ouverte est temporairement nécessaire, sans les restrictions du contrôle d'accès.
+* Cependant, le risque de fuite de données ou d'accès non autorisé peut être accru, car les utilisateurs peuvent accéder à des informations sensibles auxquelles ils ne sont pas autorisés à accéder.
 
-L'activation ou la désactivation du système d'autorisations est une décision importante basée sur les exigences de sécurité et le fonctionnement de l'organisation. Dans les environnements où la confidentialité et le contrôle d'accès sont critiques, il est courant de laisser le système d'autorisations activé pour garantir l'intégrité et la confidentialité des données. Dans d'autres cas, la désactivation du système d'autorisations peut être temporairement nécessaire pour faciliter la collaboration, mais elle doit être utilisée avec prudence pour minimiser les risques de sécurité potentiels.
+L'activation ou la désactivation du système d'autorisations est une décision importante, fondée sur les exigences de sécurité et sur le fonctionnement de l'organisation. Dans les environnements où la confidentialité et le contrôle d'accès sont essentiels, il est courant de laisser le système d'autorisations activé afin de garantir l'intégrité et la confidentialité des données. Dans d'autres cas, la désactivation du système d'autorisations peut être temporairement nécessaire pour faciliter la collaboration, mais elle doit être utilisée avec prudence pour minimiser les risques de sécurité potentiels.

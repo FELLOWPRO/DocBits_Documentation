@@ -1,6 +1,8 @@
-# Documents validés
+# Documents Validés
 
 Dans cette vidéo, les spectateurs sont présentés à l'interface conviviale de Doc**Bit**, en mettant spécifiquement l'accent sur la validation de documents. Le tutoriel met l'accent sur la simplicité du système, où aucun codage ou formule complexe n'est requis.
+
+
 
 {% embed url="https://www.youtube.com/watch?v=FD9dC2_nvuw" %}
 

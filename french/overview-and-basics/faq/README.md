@@ -35,3 +35,4 @@ Directives et FAQ relatives à l'intégration de DocBits avec Infor M3, les impo
 {% content-ref url="infor-m3-m3-integration/" %}
 [infor-m3-m3-integration](infor-m3-m3-integration/)
 {% endcontent-ref %}
+

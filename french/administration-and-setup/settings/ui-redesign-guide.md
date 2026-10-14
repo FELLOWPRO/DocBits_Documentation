@@ -15,15 +15,15 @@ Pour la procédure complète de réorganisation, masquage et épinglage, voir [B
 
 Le menu Paramètres est regroupé par intention plutôt que par modèle de données. Si vous vous souvenez d'un paramètre mais ne le retrouvez plus, essayez le groupe correspondant ci-dessous :
 
-| Vous cherchez…                                                                | Ouvrez Paramètres →                                                |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Nom de l'entreprise, logo, fuseau horaire, couleur de l'application           | Entreprise & Utilisateurs → Informations sur l'entreprise          |
-| Utilisateurs, groupes, autorisations                                          | Entreprise & Utilisateurs → Groupes, Utilisateurs et Autorisations |
-| Clés API, connexions ERP, configurations d'export                             | Intégration                                                        |
-| Types de document, champs, scripts, EDI, entraînement de modèle               | Types de Document                                                  |
-| Paramètres OCR, arbres de décision, listes de valeurs, gestionnaire de règles | Traitement de Document                                             |
-| Audit d'accès, analytique, index plein texte, journal d'événements            | Journaux & Recherche                                               |
-| Portail fournisseur, Watchdog                                                 | Installation                                                       |
+| Vous cherchez… | Ouvrez Paramètres → |
+|---|---|
+| Nom de l'entreprise, logo, fuseau horaire, couleur de l'application | Entreprise & Utilisateurs → Informations sur l'entreprise |
+| Utilisateurs, groupes, autorisations | Entreprise & Utilisateurs → Groupes, Utilisateurs et Autorisations |
+| Clés API, connexions ERP, configurations d'export | Intégration |
+| Types de document, champs, scripts, EDI, entraînement de modèle | Types de Document |
+| Paramètres OCR, arbres de décision, listes de valeurs, gestionnaire de règles | Traitement de Document |
+| Audit d'accès, analytique, index plein texte, journal d'événements | Journaux & Recherche |
+| Portail fournisseur, Watchdog | Installation |
 
 À l'intérieur de chaque groupe, les pages les plus utilisées sont placées en haut.
 
@@ -35,7 +35,7 @@ Les pages de paramètres comportant de nombreuses sections (comme les Paramètre
 
 La plupart des pages de paramètres, des boîtes de dialogue et des écrans d'outils affichent maintenant une petite icône **?** dans l'en-tête.
 
-<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Icône d&#x27;aide dans un en-tête de page"><figcaption><p>L'icône d'aide ouvre la page de documentation correspondante dans un nouvel onglet.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ui-redesign-help-icon.png" alt="Icône d'aide dans un en-tête de page"><figcaption><p>L'icône d'aide ouvre la page de documentation correspondante dans un nouvel onglet.</p></figcaption></figure>
 
 Un clic ouvre la page correspondante sur `docs.docbits.com` dans un nouvel onglet — sans devoir chercher la bonne page dans la documentation. L'icône respecte votre langue d'interface et ouvre la documentation traduite quand elle existe ; sinon, elle bascule sur l'anglais.
 

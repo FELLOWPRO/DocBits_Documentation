@@ -1,4 +1,4 @@
-# Aperçu des documents téléchargés
+# Aperçu des Documents Téléchargés
 
 La deuxième partie du tableau de bord est un aperçu de tous les documents téléchargés. Vous pouvez afficher tous les documents ou seulement ceux qui vous sont assignés. Vous pouvez également rechercher des documents par nom.
 

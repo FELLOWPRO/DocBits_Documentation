@@ -4,6 +4,7 @@ Pour configurer vos paramètres, cliquez sur l'icône Utilisateur située dans l
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
+
 <figure><img src="../../.gitbook/assets/user-config.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/user_config_options_2.png" alt="" width="308"><figcaption></figcaption></figure>
@@ -28,7 +29,7 @@ Dans cette section, vous pouvez ajuster les préférences suivantes :
 * **Format des Montants :** Définissez votre format préféré pour les valeurs numériques.
 * **Nom :** Mettez à jour votre nom.
 * **Mot de Passe :** Changez votre mot de passe pour la sécurité de votre compte.
-* **Taille de la Police :** Ajustez la taille du texte pour une meilleure lisibilité.
+* **Taille de  la Police :** Ajustez la taille du texte pour une meilleure lisibilité.
 * **Mode Double Écran :** Activez cette fonctionnalité si vous utilisez deux moniteurs.
 
 <figure><img src="../../.gitbook/assets/user-config3.png" alt=""><figcaption></figcaption></figure>

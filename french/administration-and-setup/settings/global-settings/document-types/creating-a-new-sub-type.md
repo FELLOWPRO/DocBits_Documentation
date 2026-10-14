@@ -1,23 +1,26 @@
 # Créer un nouveau Sous-type
 
-Créez un sous-type de document lorsqu'un type de document a besoin de ses propres paramètres de champs, de sa propre mise en page de validation ou de ses propres scénarios. Vous devez avoir accès à **Paramètres → Types de Documents**.
+## Voici les instructions étape par étape pour créer un nouveau sous-type :
 
-## 1. Ouvrir le type de document
+*   **Naviguer vers la zone Paramètres :** Connectez-vous à DocBits en tant qu'administrateur et naviguez vers la zone Gestion des Types de Documents.
 
-Ouvrez **Paramètres → Types de Documents**. Dans la carte du type de document concerné, sélectionnez **Sous-types de documents**. L'exemple ci-dessous utilise **Facture** ; choisissez le type qui correspond à vos documents. Les autres liens de la carte mènent aux paramètres du type de document entier.
+<figure><img src="../../../../.gitbook/assets/docbits_document_type_settings_nav.png" alt="Docbits Document Type Settings Nav"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/new-subtype-document-type-fr.png" alt="Carte Facture dans les paramètres français Types de Documents, avec le lien Sous-types de documents"><figcaption><p>Ouvrez les sous-types du type de document que vous souhaitez configurer.</p></figcaption></figure>
+*   **Sélectionner l'option pour ajouter un sous-type :** Cliquez sur le bouton "+ Nouveau" pour ajouter un nouveau sous-type.
 
-## 2. Démarrer un nouveau sous-type
+<figure><img src="../../../../.gitbook/assets/docbits_add_subtype_button.png" alt="Docbits Add Subtype Button"><figcaption></figcaption></figure>
 
-Sur la page **Sous-Types De Documents**, sélectionnez **+ Nouveau**. Les sous-types existants apparaissent dans la liste ; le menu **Actions** à trois points concerne une ligne existante. Si **+ Nouveau** ne réagit pas à un clic de souris, donnez le focus au bouton avec le clavier et appuyez sur **Entrée**.
+*   **Nommer le sous-type :** Entrez un nom descriptif pour le nouveau sous-type. Ce nom doit décrire clairement le but du sous-type afin que les utilisateurs puissent facilement comprendre quel type de documents il représente.
 
-<figure><img src="../../../../.gitbook/assets/new-subtype-list-fr.png" alt="Liste française Sous-Types De Documents avec le bouton Nouveau et un sous-type d&#x27;exemple synthétique"><figcaption><p>L'organisation de test de la documentation ne contient qu'un sous-type d'exemple synthétique.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/hFxoJh9mFR52IbFtRGTstXUGjUc2u9fBzlya5kPj18REi9ampOKfek6NPaNje_fGash3brlAZkEw8MHqDPpNEPCvnb122xYiHMqwVzV35FQdoev8XLXiu7DogUuGjsoun51sum8Z8PLZo2xw9bvImRc" alt="" width="375"><figcaption></figcaption></figure>
 
-## 3. Le nommer et l'enregistrer
+<figure><img src="https://lh7-us.googleusercontent.com/EjBS5qKWAm0SoZhLkhT2KW1q5F89vZ6FCLZ2ZzvxfJPmVE9DyyAUXieHA_56guDbKsuEvNDY9DyA-uUMx8Q1UDMSohmhyIVnnLfZaPiXrVSGsXpnjEgtpF7GtOOiRX8VsXBpu2-3lpqc0zu2LdzIYZk" alt=""><figcaption></figcaption></figure>
 
-Saisissez un **Name** composé de lettres et de traits de soulignement, puis saisissez un **Titre** descriptif. Les deux champs sont obligatoires. Les noms affichés dans cette capture d'écran sont des exemples uniquement. Sélectionnez **Enregistrer** pour créer le sous-type, ou **Annuler** pour quitter sans le créer.
+*   **Configurer les paramètres initiaux :** Définissez les paramètres initiaux pour le nouveau sous-type, y compris les champs par défaut, les options et les modèles à utiliser pour ce sous-type. Cela peut inclure l'ajout de champs de métadonnées spécifiques, la spécification de flux de travail d'approbation ou la configuration des autorisations utilisateur.
+*   **Effectuer des configurations optionnelles :** En fonction des exigences de votre entreprise ou de la nature des documents, vous pouvez effectuer des configurations supplémentaires pour personnaliser le nouveau sous-type selon vos besoins spécifiques. Cela peut inclure la définition de valeurs par défaut, de règles de validation ou d'actions personnalisées.
 
-<figure><img src="../../../../.gitbook/assets/new-subtype-dialog-fr.png" alt="Boîte de dialogue Créer un nouveau sous-type de document en français avec Name, Titre, Annuler et Enregistrer"><figcaption><p>Seuls Name et Titre sont saisis lors de la création.</p></figcaption></figure>
+<figure><img src="https://lh7-us.googleusercontent.com/d3-6iNTABnLH9KbWlM1NMu8Nsy2-KbqTd2elHgZYF1jwZOKqP17qttUCD4j676VJN3t7J0I85wHjr8TIfv3UGgLVxNvV4ns2I82EfCKHbyfIAUA8ML6IbLzoLH4Ucn57XzgUNZLO9LeCLzlk_m-M3EQ" alt=""><figcaption><p>Action</p></figcaption></figure>
 
-Après l'enregistrement, le nouveau sous-type apparaît dans la liste. Pour définir ses champs, sa mise en page ou ses scénarios, ouvrez son menu **Actions** et suivez [Configurer les sous-types](configure-subtypes.md). Ces paramètres se définissent après la création, et non dans la boîte de dialogue **+ Nouveau**.
+*   **Enregistrer le nouveau sous-type :** Une fois que vous avez saisi toutes les informations requises, enregistrez le nouveau sous-type pour le créer dans le système de gestion de documents.
+
+Une fois le nouveau sous-type créé, les utilisateurs peuvent ajouter et gérer des documents de ce type selon les paramètres initiaux que vous avez spécifiés. Assurez-vous d'informer les utilisateurs du nouveau sous-type et fournissez une formation ou des conseils, si nécessaire, pour les aider à l'utiliser efficacement.

@@ -27,7 +27,7 @@ L'en-tête fixe en haut de la page abrite la zone de recherche et les filtres en
 
 La recherche et le filtre courants sont ajoutés à l'URL, de sorte qu'une vue filtrée peut être ajoutée aux favoris ou partagée.
 
-Le Plan du Site respecte les mêmes autorisations que le reste de DocBits. Les pages auxquelles vous n'avez pas accès n'apparaissent pas.
+<mark>Le Plan du Site respecte les mêmes autorisations que le reste de DocBits. Les pages auxquelles vous n'avez pas accès n'apparaissent pas.</mark>
 
 ## Mode développeur
 

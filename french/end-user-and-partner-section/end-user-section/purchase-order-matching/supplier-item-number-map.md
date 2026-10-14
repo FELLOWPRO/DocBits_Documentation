@@ -25,7 +25,7 @@ Cette fonctionnalité vous aide à gérer et à réconcilier les numéros d'arti
 * **Action :** Options pour gérer les correspondances, telles que la suppression des correspondances incorrectes.
 
 {% hint style="info" %}
-Voir ici la [Section Admin](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/end-user-and-partner-section/end-user-section/purchase-order-matching/broken-reference/README.md) également
+Voir ici la [Section Admin](broken-reference) également
 {% endhint %}
 
 ## **Avantages**

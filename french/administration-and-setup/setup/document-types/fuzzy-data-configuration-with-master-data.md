@@ -153,7 +153,13 @@ Le **Gestionnaire de conflits (Conflict Handler)** décide :
 
 Dans tous les exemples, le document porte un numéro de TVA et un nom de fournisseur, et les deux champs sont **Recherchables**.
 
-<table><thead><tr><th width="150">Le numéro de TVA trouve</th><th width="150">Le nom trouve</th><th width="150">Tout faire correspondre désactivé + Return None</th><th width="150">Tout faire correspondre activé + Return None</th><th width="150">Tout faire correspondre désactivé + Best Score</th></tr></thead><tbody><tr><td>seulement A</td><td>A et B</td><td>vide</td><td><strong>A</strong></td><td><strong>A</strong></td></tr><tr><td>A et B</td><td>seulement B</td><td>vide</td><td><strong>B</strong></td><td><strong>B</strong></td></tr><tr><td>A, B et C</td><td>C, D et E</td><td>vide</td><td><strong>C</strong></td><td><strong>C</strong></td></tr><tr><td>A, B et C</td><td>B, C et D</td><td>vide</td><td>vide</td><td>B ou C, peu fiable</td></tr><tr><td>seulement A</td><td>rien</td><td><strong>A</strong></td><td>vide</td><td><strong>A</strong></td></tr></tbody></table>
+<table><thead><tr><th width="150">Le numéro de TVA trouve</th><th width="150">Le nom trouve</th><th width="150">Tout faire correspondre désactivé + Return None</th><th width="150">Tout faire correspondre activé + Return None</th><th width="150">Tout faire correspondre désactivé + Best Score</th></tr></thead><tbody>
+<tr><td>seulement A</td><td>A et B</td><td>vide</td><td><strong>A</strong></td><td><strong>A</strong></td></tr>
+<tr><td>A et B</td><td>seulement B</td><td>vide</td><td><strong>B</strong></td><td><strong>B</strong></td></tr>
+<tr><td>A, B et C</td><td>C, D et E</td><td>vide</td><td><strong>C</strong></td><td><strong>C</strong></td></tr>
+<tr><td>A, B et C</td><td>B, C et D</td><td>vide</td><td>vide</td><td>B ou C, peu fiable</td></tr>
+<tr><td>seulement A</td><td>rien</td><td><strong>A</strong></td><td>vide</td><td><strong>A</strong></td></tr>
+</tbody></table>
 
 Comment lire le tableau :
 

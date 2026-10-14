@@ -6,7 +6,7 @@ La page **Règles de validation** (**Documents électroniques → Règles**) con
 
 ## Configuration de la validation
 
-La carte **Configuration de la validation** affiche votre profil de validation actuel (par exemple _B2G — Public Sector Receiver_). Cliquez sur **Modifier les réponses** pour relancer l'assistant de configuration et changer la norme par rapport à laquelle vous validez.
+La carte **Configuration de la validation** affiche votre profil de validation actuel (par exemple *B2G — Public Sector Receiver*). Cliquez sur **Modifier les réponses** pour relancer l'assistant de configuration et changer la norme par rapport à laquelle vous validez.
 
 ## Versions XRechnung acceptées
 
@@ -20,12 +20,12 @@ Choisissez les **profils** que vous acceptez (BASIC WL, BASIC, EN 16931 / COMFOR
 
 Chaque règle de validation a une **gravité** qui détermine ce qui se passe lorsqu'elle se déclenche :
 
-| Gravité     | Effet                                                                                                                                                |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **FATAL**   | Arrête immédiatement le traitement. Aucune couche suivante n'est vérifiée ; le document passe en Erreur.                                             |
-| **ERROR**   | Le document est rejeté. Les autres résultats du même document sont tout de même affichés ; la notification au fournisseur (si activée) se déclenche. |
-| **WARNING** | Apparaît dans le rapport de validation, mais le document poursuit normalement le flux.                                                               |
-| **INFO**    | Journal d'audit uniquement. Aucun effet visible pour l'utilisateur ni rejet.                                                                         |
+| Gravité | Effet |
+|---------|-------|
+| **FATAL** | Arrête immédiatement le traitement. Aucune couche suivante n'est vérifiée ; le document passe en Erreur. |
+| **ERROR** | Le document est rejeté. Les autres résultats du même document sont tout de même affichés ; la notification au fournisseur (si activée) se déclenche. |
+| **WARNING** | Apparaît dans le rapport de validation, mais le document poursuit normalement le flux. |
+| **INFO** | Journal d'audit uniquement. Aucun effet visible pour l'utilisateur ni rejet. |
 
 ## Remplacer la gravité des règles
 

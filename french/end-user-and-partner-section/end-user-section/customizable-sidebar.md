@@ -35,4 +35,4 @@ Vos préférences sont enregistrées automatiquement quand vous appuyez sur **Te
 
 Quand une nouvelle fonctionnalité est ajoutée à DocBits dans une version future, elle rejoint la fin de votre barre latérale avec la visibilité par défaut. Réorganisez-la ou masquez-la en mode édition pour l'adapter à votre routine.
 
-Les fonctionnalités pour lesquelles vous n'avez pas d'autorisation n'apparaissent jamais dans la liste de personnalisation — vous ne pouvez pas réactiver par mégarde quelque chose que votre rôle ne peut pas ouvrir.
+<mark>Les fonctionnalités pour lesquelles vous n'avez pas d'autorisation n'apparaissent jamais dans la liste de personnalisation — vous ne pouvez pas réactiver par mégarde quelque chose que votre rôle ne peut pas ouvrir.</mark>

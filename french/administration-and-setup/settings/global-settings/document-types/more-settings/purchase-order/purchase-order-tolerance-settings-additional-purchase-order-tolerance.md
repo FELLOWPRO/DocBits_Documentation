@@ -60,4 +60,4 @@ Lorsqu'il est activé, ce paramètre vous permet de définir des tolérances pou
     * **Pourcentage :** La tolérance est définie comme un pourcentage.
     * **Valeur :** La tolérance est définie comme un montant fixe.
 
-<figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_table (3).png" alt="DocBits Achat Commande Tableau"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/docbits_purchase_order_table.png" alt="DocBits Achat Commande Tableau"><figcaption></figcaption></figure>

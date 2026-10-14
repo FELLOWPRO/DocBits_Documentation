@@ -6,7 +6,7 @@ Le Tableau d'Idées est l'endroit pour soumettre des demandes de fonctionnalité
 
 Ouvrez la barre latérale et cliquez sur **Idées**, ou naviguez directement vers `/ideas`.
 
-<figure><img src="../../.gitbook/assets/idea-board-overview.png" alt="Aperçu du Tableau d&#x27;Idées"><figcaption><p>Le Tableau d'Idées, avec les chips de canal, les filtres et les cartes d'idées.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/idea-board-overview.png" alt="Aperçu du Tableau d'Idées"><figcaption><p>Le Tableau d'Idées, avec les chips de canal, les filtres et les cartes d'idées.</p></figcaption></figure>
 
 ## Canaux
 
@@ -63,4 +63,4 @@ Les filtres se combinent : vous pouvez réduire, par exemple, à « Amélioratio
 
 Le menu d'une carte (bouton à trois points) permet de modifier ou supprimer une idée que vous avez soumise.
 
-Le Tableau d'Idées sert au retour produit, pas aux rapports d'incident. Utilisez un ticket de support pour les problèmes qui bloquent votre travail aujourd'hui.
+<mark>Le Tableau d'Idées sert au retour produit, pas aux rapports d'incident. Utilisez un ticket de support pour les problèmes qui bloquent votre travail aujourd'hui.</mark>

@@ -58,7 +58,7 @@ Commencez par définir le **Nombre de lignes d'en-tête** et le **Nombre minimum
 
 Activez également **Déplacer les lignes supplémentaires vers la corbeille** pour nettoyer les données non pertinentes :
 
-<figure><img src="../../../../.gitbook/assets/docbits_approval_2 (3).png" alt="DocBits Approbation 2" width="522"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/docbits_approval_2.png" alt="DocBits Approbation 2" width="522"><figcaption></figcaption></figure>
 
 Ensuite, définissez la colonne clé de regroupement, par exemple _Position_ :
 

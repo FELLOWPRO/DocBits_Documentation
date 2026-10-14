@@ -32,11 +32,11 @@ Le Tableau de bord analytique est contrôlé par un paramètre de module. Une fo
 
 Choisissez la bonne perspective pour votre analyse. Chaque type de flux vous offre une perspective différente sur les mêmes données.
 
-| Type de flux                     | Objectif                                                            | Question clé                                                                      |
-| -------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **Statut**                       | Suivre le cycle de vie du document de l'importation à l'exportation | _« Quel est le temps total de mes documents de l'importation à l'exportation ? »_ |
-| **Traitement**                   | Analyse technique des performances des modules                      | _« Quelles étapes de traitement sont des goulots d'étranglement ? »_              |
-| **Interaction de l'utilisateur** | Points de contact humains et temps d'attente                        | _« Combien de temps les documents attendent-ils les utilisateurs ? »_             |
+| Type de flux | Objectif | Question clé |
+| --- | --- | --- |
+| **Statut** | Suivre le cycle de vie du document de l'importation à l'exportation | *« Quel est le temps total de mes documents de l'importation à l'exportation ? »* |
+| **Traitement** | Analyse technique des performances des modules | *« Quelles étapes de traitement sont des goulots d'étranglement ? »* |
+| **Interaction de l'utilisateur** | Points de contact humains et temps d'attente | *« Combien de temps les documents attendent-ils les utilisateurs ? »* |
 
 Utilisez le sélecteur **Type de flux** en haut du tableau de bord pour basculer entre les perspectives.
 
@@ -105,7 +105,7 @@ Analysez n'importe quelle période, de **7 jours** jusqu'à une **année complè
 
 ## Cartes des étapes du flux
 
-Chaque carte représente une étape de flux selon le **Type de flux** sélectionné. Les cartes s'adaptent à votre sélection — affichant les étapes du cycle de vie pour _Statut_, les modules de traitement pour _Traitement_, ou les points de contact utilisateur pour _Interaction de l'utilisateur_.
+Chaque carte représente une étape de flux selon le **Type de flux** sélectionné. Les cartes s'adaptent à votre sélection — affichant les étapes du cycle de vie pour *Statut*, les modules de traitement pour *Traitement*, ou les points de contact utilisateur pour *Interaction de l'utilisateur*.
 
 Chaque carte affiche :
 

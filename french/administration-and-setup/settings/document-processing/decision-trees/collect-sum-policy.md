@@ -5,12 +5,12 @@ Cette politique collecte toutes les règles correspondantes et additionne les r�
 **Exemple :**
 
 | Règle | Condition            | Valeur renvoyée |
-| ----- | -------------------- | --------------- |
-| 1     | Total Amount <= 1000 | 1               |
-| 2     | Total Amount <= 2000 | 2               |
-| 3     | Total Amount <= 3000 | 3               |
-| 4     | Total Amount <= 4000 | 4               |
-| 5     | Total Amount <= 5000 | 5               |
+| ---- | -------------------- | ------------ |
+| 1    | Total Amount <= 1000 | 1            |
+| 2    | Total Amount <= 2000 | 2            |
+| 3    | Total Amount <= 3000 | 3            |
+| 4    | Total Amount <= 4000 | 4            |
+| 5    | Total Amount <= 5000 | 5            |
 
 Pour la valeur d'entrée **Total Amount = 2500**, l'évaluation des règles serait :
 

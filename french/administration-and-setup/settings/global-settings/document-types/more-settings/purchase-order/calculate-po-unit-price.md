@@ -1,4 +1,4 @@
-# Calculer le prix unitaire de la commande
+# Calculer le prix unitaire du bon de commande
 
 ## **Présentation**
 
@@ -6,9 +6,15 @@ Vous pouvez choisir de calculer automatiquement le **prix unitaire** de chaque l
 
 ## **Étapes d’activation**
 
-1. Naviguez vers **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
-2. Sélectionnez le type de document souhaité et cliquez sur **Paramètres avancés**.
-3. Dans la section **Bon de commande**, activez l’option **Calculer le prix unitaire du BC**.
+1.  Naviguez vers **Paramètres** -> **Paramètres globaux** -> **Types de documents**.
+
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
+2.  Sélectionnez le type de document souhaité et cliquez sur **Paramètres avancés**.
+
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
+3.  Dans la section **Bon de commande**, activez l’option **Calculer le prix unitaire du BC**.
+
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
 
 ## Comment le prix est calculé
 
@@ -18,11 +24,11 @@ Une fois le paramètre activé, le prix unitaire d’une ligne de bon de command
 
 où le **montant de la ligne** est choisi ainsi :
 
-| La ligne de bon de commande contient                                                          | Montant de la ligne utilisé               |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| un **montant net** (`extended_amount`) supérieur à 0 et ne dépassant pas le total de la ligne | le montant net                            |
+| La ligne de bon de commande contient                                                          | Montant de la ligne utilisé             |
+| -------------------------------------------------------------------------------------------- | -------------------------------------- |
+| un **montant net** (`extended_amount`) supérieur à 0 et ne dépassant pas le total de la ligne | le montant net                         |
 | pas de montant net, ou un montant net supérieur au total de la ligne                          | le **total** de la ligne (`total_amount`) |
-| aucun montant positif, ou aucune quantité positive                                            | rien n’est calculé, le prix du BC reste   |
+| aucun montant positif, ou aucune quantité positive                                           | rien n’est calculé, le prix du BC reste |
 
 Pourquoi le montant net est prioritaire : les flux ERP (Infor BODs) envoient le montant net de la ligne sous `extended_amount` et incluent **les taxes et charges en supplément** dans `total_amount`. Diviser un total taxé par la quantité donne un prix unitaire brut, et toute facture dont le prix est net apparaît alors comme un _prix unitaire sous-évalué_ bien que correct. Exemple d’une vraie ligne de bon de commande : quantité 9, montant net 879,84, total 954,63 (8,5 % de taxe) — le prix basé sur le net est 97,76 et correspond à la facture ; le prix basé sur le total serait 106,07.
 
@@ -40,5 +46,5 @@ Dans ce cas, le prix unitaire (sans la remise) est extrait du document, tandis q
 
 ## Paramètres associés
 
-* [Règles d’appariement des bons de commande](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) — les règles comparent le prix unitaire **effectif**, qui est ce prix calculé lorsque le paramètre est activé.
+* [Règles d’appariement des bons de commande](purchase-order-matching-rules.md) — les règles comparent le prix unitaire **effectif**, qui est ce prix calculé lorsque le paramètre est activé.
 * [Paramètres de tolérance des bons de commande](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) — la marge de déviation possible entre le prix de la facture et le prix calculé.

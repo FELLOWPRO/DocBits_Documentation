@@ -4,6 +4,7 @@
 
 {% embed url="https://youtu.be/TLmAHw3EXs4" %}
 
+
 Dans les **Préférences de l'entreprise**, vous pouvez configurer des paramètres clés de formatage et de notification pour l'application. Ceux-ci incluent :
 
 * Choisir le **modèle de date** à utiliser dans toute l'application

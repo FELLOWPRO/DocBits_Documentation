@@ -1,4 +1,4 @@
-# Recherche de Texte de Conformité
+# Recherche de Texte de Conformité (Autoliquidation)
 
 {% hint style="info" %}
 **Disponible à partir de la version 11.48.0** — Nécessite la licence `OPENSEARCH_ENABLED`.
@@ -41,5 +41,5 @@ if rc_fuzzy:
 
 ## Fonctions Utilisées
 
-* [fulltext\_search()](../fulltext-search-functions.md#fulltext_search)
-* [set\_field\_value()](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/administration-and-setup/settings/global-settings/document-types/script/scripting-in-docbits/field-functions.md#set_field_value)
+- [fulltext\_search()](../fulltext-search-functions.md#fulltext\_search)
+- [set\_field\_value()](../field-functions.md#set\_field\_value)

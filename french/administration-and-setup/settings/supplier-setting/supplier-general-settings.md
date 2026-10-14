@@ -1,56 +1,58 @@
-# Paramètres Généraux du Fournisseur
+# Supplier General Settings
 
-#### Aperçu
+<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="Paramètres généraux des fournisseurs"><figcaption><p>Page des paramètres généraux des fournisseurs</p></figcaption></figure>
 
-L'interface des **Paramètres Généraux du Fournisseur** fournit aux administrateurs des outils essentiels pour personnaliser le portail des fournisseurs. Les fonctionnalités clés incluent la possibilité de télécharger un logo d'entreprise et de définir la politique et la déclaration de confidentialité. Ces paramètres sont cruciaux pour maintenir la cohérence de la marque et garantir la conformité aux exigences légales.
+### Aperçu
 
-#### Télécharger le Logo
+L'interface **Supplier General Settings** fournit aux administrateurs les outils essentiels pour personnaliser le portail fournisseur. Parmi les fonctionnalités clés figurent la possibilité de téléverser le logo de l'entreprise et de définir la politique et la déclaration de confidentialité. Ces paramètres sont essentiels pour préserver la cohérence de la marque et garantir le respect des exigences légales.
 
-**Objectif**
+### Upload Logo
 
-La fonctionnalité **Télécharger le Logo** permet aux administrateurs de personnaliser le portail des fournisseurs en téléchargeant le logo de leur entreprise. Cela améliore la reconnaissance de la marque et offre une expérience visuelle cohérente pour les utilisateurs accédant au portail.
+#### Objectif
 
-**Étapes pour Télécharger un Logo**
+La fonctionnalité **Upload Logo** permet aux administrateurs de personnaliser le portail fournisseur en téléversant le logo de leur entreprise. Cela renforce la reconnaissance de la marque et offre une expérience visuelle cohérente aux utilisateurs qui accèdent au portail.
 
-1. **Accéder aux Paramètres Généraux du Fournisseur** :
-   * Naviguez vers la section **Paramètres Généraux du Fournisseur** depuis le menu principal.
-2. **Localiser la Section Télécharger le Logo** :
-   * Faites défiler vers le bas jusqu'à la section **Télécharger le Logo** dans la page des paramètres.
-3. **Télécharger un Nouveau Logo** :
-   * Cliquez sur la zone **Télécharger le Logo** pour ouvrir la boîte de dialogue de sélection de fichiers.
-   * Sélectionnez le fichier image que vous souhaitez télécharger. Les formats pris en charge incluent généralement `.png`, `.jpg` ou `.jpeg`.
-   * Le logo téléchargé sera affiché dans la zone d'aperçu.
-4. **Enregistrer le Logo Téléchargé** :
-   * Une fois le logo téléchargé, cliquez sur le bouton **Enregistrer** pour appliquer les modifications.
-   * Le nouveau logo sera désormais affiché sur l'ensemble du portail des fournisseurs.
+#### Étapes pour téléverser un logo
 
-**Meilleures Pratiques**
+1. **Accédez à Supplier General Settings** :
+   * Accédez à la section **Supplier General Settings** depuis le menu principal.
+2. **Repérez la section Upload Logo** :
+   * Faites défiler la page des paramètres jusqu'à la section **Upload Logo**.
+3. **Téléversez un nouveau logo** :
+   * Cliquez sur la zone **Upload Logo** pour ouvrir la boîte de dialogue de sélection de fichier.
+   * Sélectionnez le fichier image à téléverser. Les formats pris en charge sont généralement `.png`, `.jpg` ou `.jpeg`.
+   * Le logo téléversé s'affiche dans la zone d'aperçu.
+4. **Enregistrez le logo téléversé** :
+   * Une fois le logo téléversé, cliquez sur le bouton **Save** pour appliquer les modifications.
+   * Le nouveau logo s'affiche alors dans l'ensemble du portail fournisseur.
 
-* **Dimensions du Logo** : Assurez-vous que les dimensions du logo sont optimisées pour les vues de bureau et mobiles. Le système peut offrir des directives ou un redimensionnement automatique.
-* **Taille du Fichier** : Utilisez un fichier image compressé pour réduire les temps de chargement et améliorer l'expérience utilisateur.
-* **Cohérence de la Marque** : Utilisez le même logo sur toutes les plateformes pour maintenir une identité de marque cohérente.
+#### Bonnes pratiques
 
-#### Politique et Déclaration de Confidentialité
+* **Dimensions du logo** : veillez à ce que les dimensions du logo soient optimisées pour les affichages sur ordinateur et sur mobile. Le système peut proposer des recommandations ou un redimensionnement automatique.
+* **Taille du fichier** : utilisez un fichier image compressé pour réduire les temps de chargement et améliorer l'expérience utilisateur.
+* **Cohérence de la marque** : utilisez le même logo sur toutes les plateformes afin de conserver une identité de marque cohérente.
 
-**Objectif**
+### Policy and Privacy Statement
 
-La section **Politique et Déclaration de Confidentialité** permet aux administrateurs de télécharger ou de définir les documents légaux qui régissent l'utilisation du portail des fournisseurs. Ces documents sont essentiels pour garantir la conformité aux exigences légales et réglementaires, en décrivant les conditions d'utilisation, les politiques de protection des données et d'autres informations essentielles pour les utilisateurs.
+#### Objectif
 
-**Étapes pour Télécharger la Politique et la Déclaration de Confidentialité**
+La section **Policy and Privacy Statement** permet aux administrateurs de téléverser ou de définir les documents juridiques qui régissent l'utilisation du portail fournisseur. Ces documents sont essentiels pour respecter les exigences légales et réglementaires ; ils décrivent les conditions d'utilisation, les politiques de protection des données et d'autres informations essentielles pour les utilisateurs.
 
-1. **Accéder aux Paramètres Généraux du Fournisseur** :
-   * Naviguez vers la section **Paramètres Généraux du Fournisseur** depuis le menu principal.
-2. **Localiser la Section Politique et Déclaration de Confidentialité** :
-   * Faites défiler vers le bas jusqu'à la section **Politique et Déclaration de Confidentialité**.
-3. **Télécharger ou Mettre à Jour les Documents** :
-   * Cliquez sur le bouton **Télécharger Document** pour sélectionner le(s) fichier(s) pertinent(s).
-   * Choisissez le fichier document depuis votre stockage local. Les formats pris en charge incluent généralement `.pdf`, `.docx` ou `.txt`.
-   * Les documents téléchargés seront listés dans cette section pour révision.
-4. **Enregistrer les Modifications** :
-   * Après avoir téléchargé ou mis à jour les documents, cliquez sur le bouton **Enregistrer** pour vous assurer que les nouvelles politiques sont appliquées.
+#### Étapes pour téléverser la politique et la déclaration de confidentialité
 
-**Meilleures Pratiques**
+1. **Accédez à Supplier General Settings** :
+   * Accédez à la section **Supplier General Settings** depuis le menu principal.
+2. **Repérez la section Policy and Privacy Statement** :
+   * Faites défiler la page jusqu'à la section **Policy and Privacy Statement**.
+3. **Téléversez ou mettez à jour les documents** :
+   * Cliquez sur le bouton **Upload Document** pour sélectionner le ou les fichiers concernés.
+   * Choisissez le fichier du document depuis votre stockage local. Les formats pris en charge sont généralement `.pdf`, `.docx` ou `.txt`.
+   * Les documents téléversés sont listés dans cette section pour contrôle.
+4. **Enregistrez les modifications** :
+   * Après avoir téléversé ou mis à jour les documents, cliquez sur le bouton **Save** afin que les nouvelles politiques soient appliquées.
 
-* **Mises à Jour Régulières** : Passez régulièrement en revue et mettez à jour la Politique et la Déclaration de Confidentialité pour garantir leur conformité avec les dernières exigences légales et politiques de l'entreprise.
-* **Clarté et Accessibilité** : Assurez-vous que les documents téléchargés sont clairs, concis et accessibles à tous les utilisateurs. Envisagez de fournir des traductions si votre base de fournisseurs est internationale.
-* **Révision Juridique** : Faites examiner tous les documents par un conseiller juridique avant de les télécharger pour garantir leur conformité avec les lois et règlements pertinents.
+#### Bonnes pratiques
+
+* **Mises à jour régulières** : passez régulièrement en revue et mettez à jour la Policy and Privacy Statement afin qu'elle respecte les dernières exigences légales et les politiques de l'entreprise.
+* **Clarté et accessibilité** : veillez à ce que les documents téléversés soient clairs, concis et accessibles à tous les utilisateurs. Envisagez de proposer des traductions si votre base de fournisseurs est internationale.
+* **Relecture juridique** : faites relire tous les documents par un conseiller juridique avant de les téléverser afin de garantir leur conformité aux lois et réglementations applicables.

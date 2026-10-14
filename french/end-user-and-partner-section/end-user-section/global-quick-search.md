@@ -20,7 +20,7 @@ Chaque résultat affiche :
 
 Utilisez les flèches haut et bas pour surligner un résultat puis appuyez sur <kbd>Entrée</kbd> pour l'ouvrir. Appuyez sur <kbd>Échap</kbd> pour fermer la fenêtre.
 
-Seules les entrées pour lesquelles vous avez une autorisation apparaissent dans la liste. Les entrées réservées aux administrateurs sont masquées pour les utilisateurs sans ce rôle.
+<mark>Seules les entrées pour lesquelles vous avez une autorisation apparaissent dans la liste. Les entrées réservées aux administrateurs sont masquées pour les utilisateurs sans ce rôle.</mark>
 
 ## Recherches récentes
 
@@ -41,9 +41,9 @@ Si les huit résultats visibles ne suffisent pas, cliquez sur le lien **Voir tou
 
 ## Référence clavier
 
-| Touche                                        | Action                                         |
-| --------------------------------------------- | ---------------------------------------------- |
+| Touche | Action |
+|---|---|
 | <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>K</kbd> | Ouvrir la Recherche Rapide depuis n'importe où |
-| <kbd>↑</kbd> / <kbd>↓</kbd>                   | Naviguer entre les résultats                   |
-| <kbd>Entrée</kbd>                             | Ouvrir le résultat surligné                    |
-| <kbd>Échap</kbd>                              | Fermer la fenêtre                              |
+| <kbd>↑</kbd> / <kbd>↓</kbd> | Naviguer entre les résultats |
+| <kbd>Entrée</kbd> | Ouvrir le résultat surligné |
+| <kbd>Échap</kbd> | Fermer la fenêtre |

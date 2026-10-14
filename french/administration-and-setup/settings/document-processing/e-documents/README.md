@@ -2,8 +2,8 @@
 
 DocBits valide les factures électroniques entrantes (e-invoices) au regard des normes officielles — **XRechnung**, **ZUGFeRD** et **Factur-X** — et achemine les problèmes détectés vers le bon responsable. Le groupe de paramètres **Documents électroniques** (sous **Traitement des documents**) comporte deux pages :
 
-* [**Règles de validation**](validation-rules.md) — choisissez les versions et profils de facture électronique que vous acceptez et définissez la gravité de chaque règle de validation pour votre organisation.
-* [**Routage des notifications**](notification-routing.md) — associez les résultats de validation à l'agent AI Workforce qui doit les traiter.
+* **[Règles de validation](validation-rules.md)** — choisissez les versions et profils de facture électronique que vous acceptez et définissez la gravité de chaque règle de validation pour votre organisation.
+* **[Routage des notifications](notification-routing.md)** — associez les résultats de validation à l'agent AI Workforce qui doit les traiter.
 
 Ensemble, elles vous permettent de décider **ce qui constitue un problème** sur une facture électronique entrante et **qui s'en charge**.
 
@@ -20,6 +20,6 @@ Accédez à **Paramètres → Types de document → Facture → Paramètres avan
 
 > La validation des factures électroniques se configure **par type de document**. Elle s'applique aujourd'hui au type de document **Facture** ; activez-la sur chaque type de document à valider.
 
-Vous pouvez aussi accéder directement ici avec la **recherche rapide globale** : appuyez sur <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> sous Windows et Linux) n'importe où dans DocBits et saisissez _e-invoice_.
+Vous pouvez aussi accéder directement ici avec la **recherche rapide globale** : appuyez sur <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> sous Windows et Linux) n'importe où dans DocBits et saisissez *e-invoice*.
 
 <figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La recherche rapide globale ouvre la Validation des factures électroniques"><figcaption><p>Saisissez « e-invoice » dans la recherche rapide pour accéder directement à l'interrupteur.</p></figcaption></figure>

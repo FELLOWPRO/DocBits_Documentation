@@ -89,7 +89,7 @@ La carte est maintenant active et disponible pour une utilisation dans les workf
 
 ### Étape 5 : Construire un workflow avec la carte
 
-Ouvrez le **concepteur DocFlow** dans l'application web, créez un workflow avancé et ajoutez la carte approuvée comme nœud, par exemple un déclencheur _Document reçu_, la carte _High Value Check_ et un nœud _Approbation_ pour la branche `true`. Les graphes de workflow sont créés et modifiés dans le concepteur ; le MCP ne les crée pas.
+Ouvrez le **concepteur DocFlow** dans l'application web, créez un workflow avancé et ajoutez la carte approuvée comme nœud, par exemple un déclencheur *Document reçu*, la carte *High Value Check* et un nœud *Approbation* pour la branche `true`. Les graphes de workflow sont créés et modifiés dans le concepteur ; le MCP ne les crée pas.
 
 De retour dans l'assistant, confirmez que le workflow existe et lisez sa structure :
 
@@ -112,7 +112,7 @@ Appelez `test_advanced_workflow` :
 
 Examinez les journaux d'exécution pour vérifier que chaque nœud s'est exécuté correctement.
 
-***
+---
 
 ## Exemple 2 : Construire un workflow avec des cartes intégrées
 
@@ -134,10 +134,9 @@ Appelez `sdk_list_cards_picker` pour voir toutes les cartes disponibles avec leu
 ```
 
 Filtrez par rôle :
-
-* `is_when: true` — Utiliser dans les nœuds WHEN (déclencheurs)
-* `is_and: true` — Utiliser dans les nœuds AND (conditions supplémentaires)
-* `is_then: true` — Utiliser dans les nœuds THEN (actions)
+- `is_when: true` — Utiliser dans les nœuds WHEN (déclencheurs)
+- `is_and: true` — Utiliser dans les nœuds AND (conditions supplémentaires)
+- `is_then: true` — Utiliser dans les nœuds THEN (actions)
 
 ### Étape 2 : Créer le workflow
 
@@ -212,7 +211,7 @@ Filtrez par rôle :
 
 Cela crée un workflow : **WHEN** le document est une facture **AND** le montant > 1000 **THEN** définir le statut sur révision.
 
-***
+---
 
 ## Exemple 3 : Importer des cartes depuis GitHub
 

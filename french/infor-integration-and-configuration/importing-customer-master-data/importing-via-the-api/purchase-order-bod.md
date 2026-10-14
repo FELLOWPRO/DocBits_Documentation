@@ -12,9 +12,9 @@ Il y a deux endpoints, et ils font la même chose. La seule différence tient à
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-endpoints.png)
 
-| Endpoint                         | Quand l'utiliser                                                                                                                                                                                                                                  |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/import/purchase_order_bod`     | Vous avez le BOD sous forme de **fichier XML** et voulez le téléverser.                                                                                                                                                                           |
+| Endpoint | Quand l'utiliser |
+| --- | --- |
+| `/import/purchase_order_bod` | Vous avez le BOD sous forme de **fichier XML** et voulez le téléverser. |
 | `/import/purchase_order_bod_xml` | Vous voulez envoyer le **contenu XML** dans la requête plutôt qu'un fichier. Le BOD doit être enveloppé dans du JSON, ce qui convient à un XML court ou à un autre système appelant l'API — pour un BOD complet à la main, téléversez le fichier. |
 
 Les deux sont décrits ci-dessous. Les étapes 1 et 2 sont identiques dans les deux cas.
@@ -23,7 +23,7 @@ Les deux sont décrits ci-dessous. Les étapes 1 et 2 sont identiques dans les d
 
 Il vous faudra :
 
-* **Une API key.** Voir [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management/) si vous n'en avez pas encore.
+* **Une API key.** Voir [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md) si vous n'en avez pas encore.
 * **Le BOD** — un fichier XML `SyncPurchaseOrder`, ou son contenu.
 * **Votre Org ID**, si vous importez dans une organisation autre que celle à laquelle appartient votre clé.
 
@@ -73,7 +73,7 @@ Tout ce qui se trouve sous **import** est verrouillé tant que vous ne vous ête
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-orgid-done.png)
 
-* Descendez jusqu'à **X-API-KEY**, collez votre API key et cliquez sur **Authorize**. Dans DocBits, vous la trouverez sous **Settings → Integration & SSO**, dans la section **API Key**, ou vous pouvez [créer une nouvelle clé](../../../administration-and-setup/settings/global-settings/integration/api-key-management/).
+* Descendez jusqu'à **X-API-KEY**, collez votre API key et cliquez sur **Authorize**. Dans DocBits, vous la trouverez sous **Settings → Integration & SSO**, dans la section **API Key**, ou vous pouvez [créer une nouvelle clé](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md).
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-authorize-apikey.png)
 
@@ -95,13 +95,13 @@ Cliquez sur **Try it out**, puis remplissez le formulaire de l'endpoint que vous
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-po-bod-form.png)
 
-| Champ                             |                                                                                                                                                                                                                                                                            |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **file**                          | Obligatoire. Cliquez sur **Choose file** et sélectionnez votre fichier XML `SyncPurchaseOrder`.                                                                                                                                                                            |
-| **org\_id**                       | Votre Org ID — la même valeur que celle saisie dans **X-ORG-ID** à l'étape 2. La renseigner ici aussi rend la requête explicite quant à l'organisation dans laquelle elle écrit. Ce doit être une organisation à laquelle votre API key a accès ; toute autre est refusée. |
-| **sub\_org\_id**                  | Nécessaire uniquement si vous travaillez avec des sous-organisations. Laissez vide sinon.                                                                                                                                                                                  |
-| **custom\_fields\_mapping**       | Facultatif. Lit des champs d'en-tête supplémentaires du BOD vers les champs personnalisés de la commande. Voir [Mappages de champs personnalisés](purchase-order-bod.md#mappages-de-champs-personnalises) ci-dessous.                                                      |
-| **custom\_line\_fields\_mapping** | Facultatif. Idem, pour des champs supplémentaires sur les lignes de commande.                                                                                                                                                                                              |
+| Champ | |
+| --- | --- |
+| **file** | Obligatoire. Cliquez sur **Choose file** et sélectionnez votre fichier XML `SyncPurchaseOrder`. |
+| **org\_id** | Votre Org ID — la même valeur que celle saisie dans **X-ORG-ID** à l'étape 2. La renseigner ici aussi rend la requête explicite quant à l'organisation dans laquelle elle écrit. Ce doit être une organisation à laquelle votre API key a accès ; toute autre est refusée. |
+| **sub\_org\_id** | Nécessaire uniquement si vous travaillez avec des sous-organisations. Laissez vide sinon. |
+| **custom\_fields\_mapping** | Facultatif. Lit des champs d'en-tête supplémentaires du BOD vers les champs personnalisés de la commande. Voir [Mappages de champs personnalisés](#mappages-de-champs-personnalises) ci-dessous. |
+| **custom\_line\_fields\_mapping** | Facultatif. Idem, pour des champs supplémentaires sur les lignes de commande. |
 
 {% hint style="warning" %}
 **`string` est une valeur, pas un espace réservé.** Swagger remplit les champs facultatifs avec le mot `string`, et il est envoyé tel quel si vous le laissez — un import avec `org_id` à `string` échouera.
@@ -189,6 +189,8 @@ Si quelque chose n'allait pas dans la requête, vous obtenez `"success": false` 
 * Dans DocBits, allez dans **Settings → Document Processing → Lookup Master Data**.
 * Sélectionnez **BOD Input Data** à gauche, puis ouvrez l'onglet **Purchase Order**.
 * Recherchez le numéro de commande de votre BOD.
+
+<!-- SCREENSHOT F: Lookup Master Data with BOD Input Data selected and the Purchase Order tab open -->
 
 Si la commande est listée, l'import a fonctionné et la commande d'achat est disponible pour le PO matching.
 

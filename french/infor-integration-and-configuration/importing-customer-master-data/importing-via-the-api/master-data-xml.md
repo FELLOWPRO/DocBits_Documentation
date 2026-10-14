@@ -1,7 +1,5 @@
 ---
-description: >-
-  Comment importer des données maîtres dans un jeu de données de recherche
-  depuis un fichier XML
+description: Comment importer des données maîtres dans un jeu de données de recherche depuis un fichier XML
 ---
 
 # Importer des Données Maîtres depuis XML
@@ -14,9 +12,9 @@ Utilisez cela pour les données maîtres qui n'arrivent pas sous forme de BOD �
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-endpoints.png)
 
-| Endpoint                                  | Quand l'utiliser                                                                                                                                |
-| ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/master_data_lookup/xml/import_xml_file` | Vous avez les données sous forme de **fichier XML** et voulez le téléverser.                                                                    |
+| Endpoint | Quand l'utiliser |
+| --- | --- |
+| `/master_data_lookup/xml/import_xml_file` | Vous avez les données sous forme de **fichier XML** et voulez le téléverser. |
 | `/master_data_lookup/xml/import_xml_data` | Vous voulez **coller le XML** dans la requête. Contrairement aux endpoints de BOD, celui-ci accepte le XML en texte brut — sans enveloppe JSON. |
 
 Les deux sont décrits ci-dessous. Les étapes 1 et 2 sont identiques dans les deux cas.
@@ -25,7 +23,7 @@ Les deux sont décrits ci-dessous. Les étapes 1 et 2 sont identiques dans les d
 
 Il vous faudra :
 
-* **Une API key.** Voir [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management/) si vous n'en avez pas encore.
+* **Une API key.** Voir [API Key Management](../../../administration-and-setup/settings/global-settings/integration/api-key-management.md) si vous n'en avez pas encore.
 * **Le XML** — sous forme de fichier ou de contenu que vous pouvez coller.
 * **Un type de données** — le nom du jeu de données de recherche dans lequel écrire.
 * **Des mappages de champs** — quel XPath remplit quelle colonne.
@@ -68,14 +66,14 @@ Cliquez sur **Try it out**, puis remplissez le formulaire.
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/import-xml-form.png)
 
-| Champ               |                                                                                                                                                              |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **data\_type**      | Obligatoire. Le jeu de données de recherche dans lequel écrire. Il est automatiquement mis en minuscules : `PriceList` et `pricelist` sont donc le même jeu. |
-| **field\_mappings** | Obligatoire. Un objet JSON associant chaque colonne au XPath depuis lequel elle est lue. Voir ci-dessous.                                                    |
-| **file**            | Obligatoire sur `import_xml_file`. Cliquez sur **Choose file** et sélectionnez votre XML.                                                                    |
-| **xml**             | Obligatoire sur `import_xml_data` à la place du fichier — collez-y le XML en texte brut.                                                                     |
-| **org\_id**         | Votre Org ID — la même valeur que celle saisie dans **X-ORG-ID** à l'étape 2.                                                                                |
-| **sub\_org\_id**    | Nécessaire uniquement si vous importez dans une sous-organisation précise.                                                                                   |
+| Champ | |
+| --- | --- |
+| **data\_type** | Obligatoire. Le jeu de données de recherche dans lequel écrire. Il est automatiquement mis en minuscules : `PriceList` et `pricelist` sont donc le même jeu. |
+| **field\_mappings** | Obligatoire. Un objet JSON associant chaque colonne au XPath depuis lequel elle est lue. Voir ci-dessous. |
+| **file** | Obligatoire sur `import_xml_file`. Cliquez sur **Choose file** et sélectionnez votre XML. |
+| **xml** | Obligatoire sur `import_xml_data` à la place du fichier — collez-y le XML en texte brut. |
+| **org\_id** | Votre Org ID — la même valeur que celle saisie dans **X-ORG-ID** à l'étape 2. |
+| **sub\_org\_id** | Nécessaire uniquement si vous importez dans une sous-organisation précise. |
 
 #### Mappages de champs
 
@@ -110,9 +108,9 @@ Seuls les XPath **mal formés** sont rejetés, avec un `400` nommant le champ. U
 {% hint style="danger" %}
 Certains noms ne sont pas libres : ce sont les propres tables de données maîtres de DocBits, et importer dans l'une d'elles écrit directement dedans.
 
-| Nom                                                                                                                                                                                             |                                                                                                             |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `purchase_order_header`, `purchase_order_address`                                                                                                                                               | Rejetés avec `RESERVED_DATASET_NAME`.                                                                       |
+| Nom | |
+| --- | --- |
+| `purchase_order_header`, `purchase_order_address` | Rejetés avec `RESERVED_DATASET_NAME`. |
 | `supplier`, `supplier_accounts`, `purchase_order`, `receive_delivery`, `receive_delivery_lines`, `costing_element`, `customer_erp_items`, `supplier_item_price`, `supplier_item_number_mapping` | **Acceptés, et ils écrasent de vraies données maîtres.** Ne les utilisez que si c'est bien votre intention. |
 
 Pour tout le reste, choisissez un nom qui vous est propre.
@@ -146,3 +144,5 @@ Contrairement aux imports de BOD, ces endpoints signalent les problèmes avec un
 * Dans DocBits, allez dans **Settings → Document Processing → Lookup Master Data**.
 * Sélectionnez **Imported** à gauche, puis ouvrez l'onglet correspondant à votre type de données.
 * Les colonnes sont les noms que vous avez utilisés à gauche dans `field_mappings`.
+
+<!-- SCREENSHOT: Lookup Master Data with Imported selected and the new dataset open -->

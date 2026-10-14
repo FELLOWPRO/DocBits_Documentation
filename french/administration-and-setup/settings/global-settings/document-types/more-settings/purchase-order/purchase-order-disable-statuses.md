@@ -1,4 +1,4 @@
-# Désactiver les statuts PO
+# Statuts de désactivation des bons de commande
 
 ## **Aperçu**
 

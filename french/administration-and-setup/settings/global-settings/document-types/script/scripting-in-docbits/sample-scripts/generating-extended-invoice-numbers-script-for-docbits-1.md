@@ -1,4 +1,4 @@
-# Script de Génération de Numéros de Facture Étendus pour Docbits
+# Script de Génération de Numéros de Facture Étendus pour DocBits
 
 Ce document détaille le script "Génération de Numéros de Facture Étendus", qui automatise la création de numéros de facture étendus dans DocBits. Les numéros de facture étendus combinent plusieurs identifiants de documents, tels que l'ID de facture et le numéro de bon de commande, en un seul identifiant complet. Ce script améliore la traçabilité des documents et simplifie la tenue des registres.
 

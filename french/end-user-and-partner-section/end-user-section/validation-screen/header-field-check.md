@@ -7,7 +7,7 @@ description: >-
 
 # Contrôle des champs d'en-tête : d'où viennent les données
 
-Le bouton **Contrôle des champs d'en-tête** se trouve à côté de **Enregistrer** sur l'écran de validation. Il ouvre le rapport _D'où vient chaque valeur ?_ : pour chaque champ d'en-tête, il montre ce qui figurait sur le document, ce qui a modifié la valeur en chemin, ce que DocBits affiche maintenant et pourquoi.
+Le bouton **Contrôle des champs d'en-tête** se trouve à côté de **Enregistrer** sur l'écran de validation. Il ouvre le rapport *D'où vient chaque valeur ?* : pour chaque champ d'en-tête, il montre ce qui figurait sur le document, ce qui a modifié la valeur en chemin, ce que DocBits affiche maintenant et pourquoi.
 
 Cette page explique comment une valeur est créée et ce que signifie chaque source. Aucune connaissance d'expert n'est nécessaire.
 
@@ -17,12 +17,12 @@ Le Contrôle des champs d'en-tête fait partie du module **Analytics**. Si le bo
 
 ## Une valeur est toujours créée dans cet ordre
 
-| Étape              | Ce qui se passe                                                                                                                              |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Lire**        | La valeur est lue dans le document — par une règle entraînée, par l'IA ou directement depuis une facture électronique.                       |
-| **2. Transformer** | Les scripts et les règles de transformation du client modifient la valeur lue : la raccourcir, la compléter, adapter son format.             |
-| **3. Rechercher**  | La valeur est recherchée dans les données de base. Si quelque chose est trouvé, l'enregistrement des données de base remplace la valeur lue. |
-| **4. Afficher**    | L'utilisateur ne voit que le résultat. Ce qui s'est passé en chemin est montré par le Contrôle des champs d'en-tête.                         |
+| Étape | Ce qui se passe |
+| --- | --- |
+| **1. Lire** | La valeur est lue dans le document — par une règle entraînée, par l'IA ou directement depuis une facture électronique. |
+| **2. Transformer** | Les scripts et les règles de transformation du client modifient la valeur lue : la raccourcir, la compléter, adapter son format. |
+| **3. Rechercher** | La valeur est recherchée dans les données de base. Si quelque chose est trouvé, l'enregistrement des données de base remplace la valeur lue. |
+| **4. Afficher** | L'utilisateur ne voit que le résultat. Ce qui s'est passé en chemin est montré par le Contrôle des champs d'en-tête. |
 
 Les étapes 2 et 3 ne s'exécutent pas toujours — mais lorsqu'elles s'exécutent, elles modifient la valeur. C'est précisément de là que viennent la plupart des cas signalés.
 
@@ -85,12 +85,12 @@ Lu à partir d'un code-barres ou d'un code QR sur le document.
 Lorsqu'un champ contient soudain une valeur qui n'apparaît pas ainsi sur le document, ce n'est presque jamais l'IA, mais l'étape 2 ou l'étape 3. Le plus souvent, la correspondance dans les données de base, qui accepte aussi les correspondances partielles : `1001` correspond à `06O051001`, et avec la commande trouvée, le fournisseur change lui aussi.
 {% endhint %}
 
-Dans le rapport, un tel champ est marqué en rouge. La colonne **Action** montre l'enregistrement des données de base avec une pastille rouge _correspondance partielle uniquement_, et la partie correspondante de la valeur est surlignée.
+Dans le rapport, un tel champ est marqué en rouge. La colonne **Action** montre l'enregistrement des données de base avec une pastille rouge *correspondance partielle uniquement*, et la partie correspondante de la valeur est surlignée.
 
 ## Lire le rapport
 
 * **Pastilles d'état** en haut comptent les champs venus tels quels du document, modifiés en chemin, ou absents du document sous cette forme. Cliquez sur une pastille pour n'afficher que ces champs ; cliquez à nouveau pour tout afficher.
 * **Filtre de source :** la rangée d'icônes montre chaque méthode d'extraction. Cliquez sur l'une d'elles pour n'afficher que les champs qui y sont passés.
 * **Action :** chaque étape que la valeur a traversée, avec l'icône de sa source. L'étape dont provient la valeur actuelle est surlignée. Survolez pour voir ce que chaque étape a fait, de quelle valeur à quelle valeur.
-* **Motif :** l'état du champ. L'icône (i) explique pourquoi la valeur est ce qu'elle est. Si elle indique _Le champ n'existait pas_, le champ n'était pas présent sur le document.
+* **Motif :** l'état du champ. L'icône (i) explique pourquoi la valeur est ce qu'elle est. Si elle indique *Le champ n'existait pas*, le champ n'était pas présent sur le document.
 * Les valeurs longues sont abrégées par … — survolez pour voir la valeur complète.

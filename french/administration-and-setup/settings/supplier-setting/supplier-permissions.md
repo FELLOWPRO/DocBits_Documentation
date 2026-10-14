@@ -1,4 +1,4 @@
-# Supplier Permissions
+# Autorisations fournisseur
 
 ### Groupe de fournisseurs
 

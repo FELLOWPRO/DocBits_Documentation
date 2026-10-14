@@ -111,5 +111,3 @@ You will be taken to the following menu, where you will need to change BOD verb 
 Once you trigger the BODs, you will get a notification confirming this.
 
 If done successfully, the Supplier and Purchase Order tables should now be available under Settings → Master Data Lookup.
-
-

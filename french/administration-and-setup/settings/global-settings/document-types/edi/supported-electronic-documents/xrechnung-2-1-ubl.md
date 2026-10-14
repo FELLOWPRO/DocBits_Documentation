@@ -1,0 +1,33 @@
+---
+description: Prise en charge du document électronique XRECHNUNG 2.1 UBL dans DocBits
+---
+
+# 🇩🇪 XRECHNUNG 2.1 UBL
+
+| Propriété              | Valeur                   |
+| ---------------------- | ------------------------ |
+| **Pays / Région**      | Germany                  |
+| **Types de documents** | Invoice, Credit Note     |
+| **Format**             | UBL                      |
+| **Norme**              | XRechnung 2.1            |
+| **Basé sur**           | EN 16931 (OASIS UBL 2.1) |
+
+XRechnung 2.1 met en œuvre la norme EN 16931 Core Invoice avec les extensions du CIUS (Core Invoice Usage Specification) allemand. Cette version a introduit une validation améliorée, avec des règles Schematron renforcées et des contrôles de conformité plus stricts.
+
+## Statut de prise en charge
+
+| Composant             | Statut      |
+| --------------------- | ----------- |
+| Aperçu                | ✅ Supported |
+| Extraction des champs | ✅ Supported |
+| Transformation        | ✅ Supported |
+
+## Aperçu par défaut
+
+<figure><img src="../../../../../../.gitbook/assets/xrechnung-ubl-preview.png" alt="Aperçu de la facture XRechnung 2.1 UBL dans DocBits"><figcaption><p>Aperçu DocBits par défaut pour une facture XRechnung 2.1 UBL allemande</p></figcaption></figure>
+
+## Pages liées
+
+* [Configuration XRechnung](../xrechnung/)
+* [Correspondance des champs XRechnung](../xrechnung/mapping-xrechnung-in-docbits/)
+* [Documents électroniques pris en charge](./)

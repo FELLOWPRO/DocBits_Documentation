@@ -1,4 +1,4 @@
-# Export Configuration for Supplier Portal for M3
+# Configuration d'export pour le portail fournisseur
 
 <figure><img src="../../../.gitbook/assets/supplier_export_configuration.png" alt="Supplier Export Configuration"><figcaption><p>Page de configuration d'export fournisseur</p></figcaption></figure>
 
@@ -218,7 +218,7 @@ Le fichier de configuration d'export est structuré sous la forme d'un objet JSO
 
 Ce fichier de configuration est essentiel pour garantir que les données entre le portail fournisseur et le système ERP sont correctement mappées et synchronisées. En comprenant la structure et les composants clés, les administrateurs peuvent gérer et personnaliser efficacement le processus d'export afin de répondre à leurs exigences métier spécifiques.
 
-## Exemple complet
+## Exemple complet&#x20;
 
 ```json
 [{

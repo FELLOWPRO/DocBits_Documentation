@@ -1,4 +1,4 @@
-# Workflow Logs
+# Journaux de flux de travail
 
 ## **Aperçu**
 

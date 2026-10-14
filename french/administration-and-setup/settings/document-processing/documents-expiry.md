@@ -1,14 +1,26 @@
-# Expiration des Documents
+# Documents Expiry
 
-<figure><img src="../../../.gitbook/assets/docbits_documents_expiry_settings.png" alt="Docbits Documents Expiry Settings"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_settings_overview.png" alt="Paramètres Documents Expiry"><figcaption><p>Paramètres Documents Expiry</p></figcaption></figure>
 
-In the "Documents Expiry" setting under the "DOCUMENT PROCESSING" section, you can configure the automatic deletion schedules for your documents within the system. This feature is particularly useful for managing data retention policies and ensuring compliance with legal or organizational standards regarding document storage.
+Sous **Document Processing → Documents Expiry**, vous définissez combien de temps DocBits conserve vos documents avant de les supprimer automatiquement. Cela vous aide à gérer l'espace de stockage, à appliquer les politiques de conservation des données et à rester en conformité avec les règles légales ou internes concernant la durée de stockage des documents.
 
-Here’s what each setting does:
+Deux paramètres contrôlent la suppression automatique :
 
-1. **Delete document after**: This dropdown allows you to set the time frame after which a document that has been processed will be automatically deleted from the system. You can choose from predefined options like 48 Hours, 1 Week, 2 Weeks, or 4 Weeks. This helps in managing space and maintaining document lifecycle policies.
-2. **Delete finished document after**: Similar to the previous setting, but specifically targets the finished or fully processed documents. It allows the same time frame options for deletion, ensuring that completed documents are not stored longer than necessary.
+| Paramètre | Ce qu'il contrôle |
+|---------|------------------|
+| **Delete document after** | Durée de conservation de tout document traité avant sa suppression automatique. |
+| **Delete finished document after** | Durée de conservation d'un document terminé (entièrement traité et exporté) avant sa suppression automatique. |
 
-Both settings ensure that documents are not kept indefinitely on your system, helping to avoid unnecessary storage use and keeping the document processing workflow clutter-free. These settings are vital for organizations needing to adhere to specific regulatory requirements about document retention.
+Pour chaque paramètre, vous choisissez une durée dans la liste déroulante :
 
-<figure><img src="../../../.gitbook/assets/docbits_documents_expiry_settings.png" alt="Docbits Documents Retention Policy"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/document_expiry_options.png" alt="Options de Documents Expiry"><figcaption><p>Durées de conservation disponibles</p></figcaption></figure>
+
+| Option | Signification |
+|--------|---------|
+| **Default** | Utilise la durée de conservation par défaut du système (aucune valeur personnalisée). |
+| **48 Hours** | Suppression 48 heures après le traitement. |
+| **1 Week** | Suppression après une semaine. |
+| **2 Weeks** | Suppression après deux semaines. |
+| **4 Weeks** | Suppression après quatre semaines. |
+
+Ces deux paramètres garantissent que les documents ne sont pas conservés dans le système plus longtemps que nécessaire, ce qui évite une consommation de stockage inutile et garde le flux de traitement des documents sans encombrement. Ils sont particulièrement importants pour les organisations qui doivent respecter des exigences réglementaires spécifiques en matière de conservation des documents.

@@ -1,4 +1,4 @@
-# Script de Calcul des Frais Totaux pour Docbits
+# Script de Calcul des Frais Totaux pour DocBits
 
 Le script "Calcul des Frais Totaux" automatise le processus de sommation de divers frais et montants supplémentaires dans les documents de facture. Ce guide vous explique la configuration, la logique et l'application du script pour garantir des calculs précis des frais totaux dans vos documents.
 

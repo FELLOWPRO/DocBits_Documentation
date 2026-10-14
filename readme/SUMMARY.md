@@ -671,7 +671,7 @@
   * [Workflow Logs](administration-and-setup/workflow/workflow-logs.md)
   * [Release](administration-and-setup/workflow/release.md)
 * [Setup](administration-and-setup/setup/README.md)
-  * [Document Types](administration-and-setup/setup/document-types/README.md)
+  * [Dokumenttypen](administration-and-setup/setup/document-types/README.md)
     * [EDI Data Transformation Process](administration-and-setup/setup/document-types/edi-data-transformation-process.md)
     * [Layout Builder](administration-and-setup/setup/document-types/layout-builder.md)
     * [Origin Layouts](administration-and-setup/setup/document-types/origin-layouts.md)

@@ -424,7 +424,7 @@ DOCUMENT ARRIVES (Invoice with Product ABC123, Price €52)
      → Log response for debugging
 ```
 
-**Referencia de guía:** [Resolución de problemas de Call API](../then/action/call-api-guide.md#troubleshooting)
+**Referencia de guía:** [Resolución de problemas de Call API](../then/action/call-api-guide.md#resolucion-de-problemas)
 
 ---
 
@@ -582,12 +582,17 @@ Antes de desplegar este patrón:
 - **ACTION_SET_FIELD_TO_TEXT**: [Guía de manipulación de campos](../then/document-field/field-manipulation-guide.md#set-field)
 - **CONDITION_COMPARE_TWO_DOCFIELD_VALUES**: [Guía de tarjetas de condición](../and/condition-cards-complete-guide.md#field-comparison)
 
+### Próximos pasos
+- Resolver errores de la API: [Gestión de errores](#gestion-de-errores) anterior
+- Añadir creación de tareas: [Patrón de gestión de tareas](task-management-pattern.md)
+- Transformar datos: [Patrón de transformación de datos](data-transformation-pattern.md)
+
 ---
 
 ## Soporte y recursos
 
 **¿Necesita ayuda?**
-- Consulte la [resolución de problemas de Call API](../then/action/call-api-guide.md#troubleshooting)
+- Consulte la [resolución de problemas de Call API](../then/action/call-api-guide.md#resolucion-de-problemas)
 - Revise los [códigos de respuesta de la API](../then/action/call-api-guide.md#response-scenarios)
 - Pruebe primero la API con Postman
 - Contacte con el soporte del proveedor de la API

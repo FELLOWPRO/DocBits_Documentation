@@ -1,56 +1,58 @@
-# Supplier General Settings
+# Ajustes generales de proveedores
 
-#### Descripción General
+<figure><img src="../../../.gitbook/assets/supplier_general_settings.png" alt="Ajustes generales de proveedores"><figcaption><p>Página de ajustes generales de proveedores</p></figcaption></figure>
 
-La interfaz de **Configuración General del Proveedor** proporciona a los administradores herramientas esenciales para personalizar el portal del proveedor. Las características clave incluyen la capacidad de cargar un logotipo de la empresa y definir la política y la declaración de privacidad. Estas configuraciones son cruciales para mantener la consistencia de la marca y garantizar el cumplimiento de los requisitos legales.
+### Descripción general
 
-#### Cargar Logotipo
+La interfaz de **Supplier General Settings** ofrece a los administradores herramientas esenciales para personalizar el portal de proveedores. Entre sus funciones principales se encuentran subir el logotipo de la empresa y definir la política y la declaración de privacidad. Estos ajustes son fundamentales para mantener la coherencia de la marca y garantizar el cumplimiento de los requisitos legales.
 
-**Propósito**
+### Subir logotipo
 
-La función de **Cargar Logotipo** permite a los administradores personalizar el portal del proveedor al cargar el logotipo de su empresa. Esto mejora el reconocimiento de la marca y proporciona una experiencia visual consistente para los usuarios que acceden al portal.
+#### Finalidad
 
-**Pasos para Cargar un Logotipo**
+La función **Upload Logo** permite a los administradores personalizar el portal de proveedores subiendo el logotipo de su empresa. Esto refuerza el reconocimiento de la marca y proporciona una experiencia visual coherente a los usuarios que acceden al portal.
 
-1. **Acceder a la Configuración General del Proveedor**:
-   * Navega a la sección de **Configuración General del Proveedor** desde el menú principal.
-2. **Localizar la Sección de Cargar Logotipo**:
-   * Desplázate hacia abajo hasta la sección de **Cargar Logotipo** dentro de la página de configuraciones.
-3. **Cargar un Nuevo Logotipo**:
-   * Haz clic en el área de **Cargar Logotipo** para abrir el diálogo de selección de archivos.
-   * Selecciona el archivo de imagen que deseas cargar. Los formatos admitidos suelen incluir `.png`, `.jpg` o `.jpeg`.
-   * El logotipo cargado se mostrará en el área de vista previa.
-4. **Guardar el Logotipo Cargado**:
-   * Una vez que el logotipo esté cargado, haz clic en el botón **Guardar** para aplicar los cambios.
-   * El nuevo logotipo se mostrará ahora en todo el portal del proveedor.
+#### Pasos para subir un logotipo
 
-**Mejores Prácticas**
+1. **Acceda a Supplier General Settings**:
+   * Vaya a la sección **Supplier General Settings** desde el menú principal.
+2. **Localice la sección Upload Logo**:
+   * Desplácese hacia abajo hasta la sección **Upload Logo** dentro de la página de ajustes.
+3. **Suba un nuevo logotipo**:
+   * Haga clic en el área **Upload Logo** para abrir el cuadro de diálogo de selección de archivos.
+   * Seleccione el archivo de imagen que desea subir. Los formatos admitidos suelen incluir `.png`, `.jpg` o `.jpeg`.
+   * El logotipo subido se mostrará en el área de vista previa.
+4. **Guarde el logotipo subido**:
+   * Una vez subido el logotipo, haga clic en el botón **Save** para aplicar los cambios.
+   * El nuevo logotipo se mostrará en todo el portal de proveedores.
 
-* **Dimensiones del Logotipo**: Asegúrate de que las dimensiones del logotipo estén optimizadas tanto para vistas de escritorio como móviles. El sistema podría ofrecer pautas o redimensionamiento automático.
-* **Tamaño del Archivo**: Utiliza un archivo de imagen comprimido para reducir los tiempos de carga y mejorar la experiencia del usuario.
-* **Consistencia de Marca**: Utiliza el mismo logotipo en todas las plataformas para mantener una identidad de marca consistente.
+#### Buenas prácticas
 
-#### Política y Declaración de Privacidad
+* **Dimensiones del logotipo**: asegúrese de que las dimensiones del logotipo estén optimizadas tanto para escritorio como para móvil. Es posible que el sistema ofrezca pautas o un redimensionamiento automático.
+* **Tamaño del archivo**: utilice un archivo de imagen comprimido para reducir los tiempos de carga y mejorar la experiencia de usuario.
+* **Coherencia de marca**: utilice el mismo logotipo en todas las plataformas para mantener una identidad de marca coherente.
 
-**Propósito**
+### Política y declaración de privacidad
 
-La sección de **Política y Declaración de Privacidad** permite a los administradores cargar o definir los documentos legales que rigen el uso del portal del proveedor. Estos documentos son críticos para el cumplimiento de los requisitos legales y regulatorios, delineando los términos de uso, las políticas de protección de datos y otra información esencial para los usuarios.
+#### Finalidad
 
-**Pasos para Cargar la Política y Declaración de Privacidad**
+La sección **Policy and Privacy Statement** permite a los administradores subir o definir los documentos legales que rigen el uso del portal de proveedores. Estos documentos son esenciales para cumplir los requisitos legales y normativos, ya que describen las condiciones de uso, las políticas de protección de datos y otra información fundamental para los usuarios.
 
-1. **Acceder a la Configuración General del Proveedor**:
-   * Navega a la sección de **Configuración General del Proveedor** desde el menú principal.
-2. **Localizar la Sección de Política y Declaración de Privacidad**:
-   * Desplázate hacia abajo hasta la sección de **Política y Declaración de Privacidad**.
-3. **Cargar o Actualizar los Documentos**:
-   * Haz clic en el botón **Cargar Documento** para seleccionar el(los) archivo(s) relevantes.
-   * Elige el archivo del documento de tu almacenamiento local. Los formatos admitidos suelen incluir `.pdf`, `.docx` o `.txt`.
-   * Los documentos cargados se enumerarán en esta sección para su revisión.
-4. **Guardar los Cambios**:
-   * Después de cargar o actualizar los documentos, haz clic en el botón **Guardar** para asegurar que las nuevas políticas se apliquen.
+#### Pasos para subir la política y la declaración de privacidad
 
-**Mejores Prácticas**
+1. **Acceda a Supplier General Settings**:
+   * Vaya a la sección **Supplier General Settings** desde el menú principal.
+2. **Localice la sección Policy and Privacy Statement**:
+   * Desplácese hacia abajo hasta la sección **Policy and Privacy Statement**.
+3. **Suba o actualice los documentos**:
+   * Haga clic en el botón **Upload Document** para seleccionar los archivos correspondientes.
+   * Elija el archivo del documento en su almacenamiento local. Los formatos admitidos suelen incluir `.pdf`, `.docx` o `.txt`.
+   * Los documentos subidos se mostrarán en esta sección para su revisión.
+4. **Guarde los cambios**:
+   * Después de subir o actualizar los documentos, haga clic en el botón **Save** para que se apliquen las nuevas políticas.
 
-* **Actualizaciones Regulares**: Revisa y actualiza regularmente la Política y Declaración de Privacidad para asegurarte de que cumplan con los últimos requisitos legales y políticas de la empresa.
-* **Claridad y Accesibilidad**: Asegúrate de que los documentos cargados sean claros, concisos y accesibles para todos los usuarios. Considera proporcionar traducciones si tu base de proveedores es internacional.
-* **Revisión Legal**: Haz que todos los documentos sean revisados por un asesor legal antes de cargarlos para asegurar el cumplimiento de las leyes y regulaciones pertinentes.
+#### Buenas prácticas
+
+* **Actualizaciones periódicas**: revise y actualice con regularidad la política y la declaración de privacidad para garantizar que cumplan los últimos requisitos legales y las políticas de la empresa.
+* **Claridad y accesibilidad**: asegúrese de que los documentos subidos sean claros, concisos y accesibles para todos los usuarios. Considere ofrecer traducciones si su base de proveedores es internacional.
+* **Revisión legal**: haga que un asesor jurídico revise todos los documentos antes de subirlos para garantizar el cumplimiento de las leyes y normativas pertinentes.

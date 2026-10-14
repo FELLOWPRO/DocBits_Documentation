@@ -125,6 +125,7 @@
       * [Gestore Layout](administration-and-setup/settings/global-settings/document-types/layout-manager/README.md)
         * [Navigare il Layout Manager](administration-and-setup/settings/global-settings/document-types/layout-manager/navigating-the-layout-manager.md)
       * [Sottotipi di Documento](administration-and-setup/settings/global-settings/document-types/document-sub-types.md)
+      * [Creare un nuovo Sottotipo](administration-and-setup/settings/global-settings/document-types/creating-a-new-sub-type.md)
       * [Using Actions](administration-and-setup/settings/global-settings/document-types/using-actions.md)
         * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)
       * [Colonne della Tabella](administration-and-setup/settings/global-settings/document-types/table-columns.md)

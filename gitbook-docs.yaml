@@ -1,0 +1,53 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: DocBits - IDP for Infor ERP
+  structure:
+    - type: space
+      key: space-1
+      title: 🇺🇸 English
+      path: docbits
+      default: true
+      content:
+        directory: ./docbits
+    - type: space
+      key: space-2
+      title: 🇩🇪 Deutsch
+      path: deutsch
+      content:
+        directory: ./deutsch
+    - type: space
+      key: space-3
+      title: 🇪🇸 Español
+      path: espanol
+      content:
+        directory: ./espanol
+    - type: space
+      key: space-4
+      title: 🇫🇷 Français
+      path: french
+      content:
+        directory: ./french
+    - type: space
+      key: space-5
+      title: 🇮🇹 Italiano
+      path: italian
+      content:
+        directory: ./italian
+    - type: space
+      key: space-6
+      title: 🇵🇹 Português
+      path: portuguese
+      content:
+        directory: ./portuguese
+    - type: space
+      key: space-7
+      title: 🇵🇱 Polski
+      path: polish
+      content:
+        directory: ./polish
+    - type: space
+      key: space-8
+      title: 🇳🇱 Nederlands
+      path: dutch
+      content:
+        directory: ./dutch

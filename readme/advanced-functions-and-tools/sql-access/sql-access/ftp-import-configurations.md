@@ -166,4 +166,3 @@ De tabel `public.ftp_import_configurations` is ontworpen om configuratiedetails 
 ```
 
 Deze documentatie biedt een uitgebreid begrip van elke kolom in de tabel `public.ftp_import_configurations`, met uitleg over het doel, de rol en de typische inhoud, gebaseerd op de verstrekte gegevens en kolomnamen.
-```

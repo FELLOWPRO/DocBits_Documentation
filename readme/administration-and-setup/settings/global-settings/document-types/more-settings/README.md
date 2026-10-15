@@ -44,6 +44,28 @@ Die Karte **Bestellung** (**PO-Abgleich & Validierung**) steuert, wie Dokumente 
 * [**Dokumentstatus für Einkaufsbestellung aktualisieren**](purchase-order/update-document-purchase-order-status.md): Aktualisiert die Spalte "PO-Status" auf dem Dashboard, sobald sich der Status der Bestellung ändert.
 * [**Automatischen Export für nicht abgleichbare Bestellpositionen zulassen**, **Automatische Zuordnung & Export sichtbar für** und **Verwenden Sie den Nettobetrag der Zeilen für den angezeigten Gesamtbetrag.**](purchase-order/auto-match-and-export-options.md): Legen fest, wer die Verknüpfungen für Auto Match & Export sieht und welche Dokumente automatisch exportiert werden dürfen.
 
+### Die Abgleichsregeln als Diagramm ansehen
+
+Die PO-Abgleichsregeln sind mehr als eine Liste. DocBits kann das aktive Regelwerk als Flussdiagramm zeichnen. Sie sehen, in welcher Reihenfolge die Regeln versucht werden und wo der Abgleich endet.
+
+1. Schalten Sie in der Karte **Bestellung** **PO-Match serverseitig** ein und klicken Sie auf **PO-Abgleichsregeln konfigurieren**.
+2. Klicken Sie oben auf der Seite auf **Regelwerk als Diagramm**. Das Diagramm öffnet sich in einem Panel neben den Regeln.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-de.png" alt="Das Regelwerk-Diagramm mit fünf Stufen vom Einzelabgleich bis zur Rückfall-Logik"><figcaption><p>Das Regelwerk als Diagramm. Fünf Stufen, von oben nach unten.</p></figcaption></figure>
+
+Lesen Sie das Diagramm von oben nach unten. DocBits versucht die Stufen in dieser Reihenfolge: **Einzelabgleich**, **Mehrfachabgleich**, **Summenabgleich**, **Abweichungsabgleich** und **Rückfall-Logik**. Jede Stufe hat bis zu drei Durchläufe: **Exakter Abgleich aller Regeln**, **Abgleich mit Toleranz** und **Abgleich mit Gebindegrößen**. Ein grüner Pfeil bedeutet, dass eine Übereinstimmung gefunden wurde und die Verarbeitung endet. Ein roter Pfeil bedeutet, dass es keine Übereinstimmung gibt, sodass DocBits mit dem nächsten Schritt weitermacht. Am Ende steht das Ergebnis **Match gefunden** oder **Kein Match gefunden**.
+
+Unter dem Diagramm listet das Panel **Regeln nach Priorität, je Stufe** auf. Zu jeder Regel sehen Sie die Spalten, die sie vergleicht, die Toleranz und die Optionen **Automatische Übereinstimmung**, **Manuelle Übereinstimmung** und **Rückfall**.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-de.png" alt="Die Liste der Regeln nach Priorität je Stufe mit den verglichenen Spalten, der Toleranz und den Regeloptionen"><figcaption><p>Unter dem Diagramm: die Regeln jeder Stufe mit den Spalten, die sie vergleichen.</p></figcaption></figure>
+
+**Beispiel.** Eine Rechnungsposition hat die Artikelnummer 4711, die Menge 10 und den Stückpreis 10.40. Die Bestellposition hat die Artikelnummer 4711, die Menge 10 und den Stückpreis 10.00. Die Toleranz für den Stückpreis beträgt 5 %.
+
+* Der Durchlauf **1.1 Exakter Abgleich aller Regeln** schlägt fehl, weil 10.40 nicht 10.00 ist. Der rote Pfeil führt zum nächsten Durchlauf.
+* Der Durchlauf **1.2 Abgleich mit Toleranz** ist erfolgreich. Die Abweichung beträgt 4 %, das liegt innerhalb von 5 %. Der grüne Pfeil führt zu **Match gefunden**, und die Verarbeitung endet.
+
+Im Diagramm ist das der Pfad 1.1, dann 1.2, dann **Match gefunden**. Den Pfad, den ein einzelnes Dokument genommen hat, finden Sie unter [Touchless Intelligence: Bestellabgleich-Diagnose](../../../../touchless-po-matching-diagnosis.md). Alle Details zur Regelseite finden Sie unter [Regeln für die Übereinstimmung von Bestellungen](purchase-order/purchase-order-matching-rules.md).
+
 ### PO-Toleranzeinstellung
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance-de.png" alt="Der Block PO-Toleranzeinstellung mit Mengen- und Einzelpreistoleranz"><figcaption><p>Toleranz für Menge und Einzelpreis.</p></figcaption></figure>

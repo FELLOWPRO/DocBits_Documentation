@@ -184,3 +184,7 @@ Die Datentabelle bietet vollständigen Zugriff auf alle zugrunde liegenden Zeile
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+Der Tab **Touchless Intelligence** zeigt, wie viele Dokumente ohne menschliches Zutun durch DocBits laufen und warum die anderen stehen bleiben. Siehe [Touchless Intelligence](touchless-intelligence.md).

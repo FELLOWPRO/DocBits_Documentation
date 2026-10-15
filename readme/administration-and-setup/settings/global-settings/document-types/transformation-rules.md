@@ -1,5 +1,7 @@
 # Regras de transformação
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pt.mp4" %}
+
 ## Visão geral
 
 As regras de transformação limpam ou reescrevem os dados extraídos **automaticamente**, toda vez que um documento é processado e toda vez que é salvo. Uma regra pode alterar:

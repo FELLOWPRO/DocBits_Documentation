@@ -14,23 +14,31 @@ This configuration page is used to define and manage the rules that determine _h
 
 ## How to Access
 
-1.  Navigate to **Settings --> Global Settings --> Document Types**
+1. Navigate to **Settings** → **Global Settings** → **Document Types**, select the document type and click **More Settings**.
+2. In the **Purchase Order** card switch **PO match server side** on.
+3. Click **Configure PO Matching Rules** next to the switch.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (454).png" alt=""><figcaption></figcaption></figure>
-2.  Select the desired document type and click on **More Settings**.
+<figure><img src="../../../../../../.gitbook/assets/doc-type-settings-po-options.png" alt="The Purchase Order card with PO match server side and Configure PO Matching Rules"><figcaption><p>The Purchase Order card. <strong>Configure PO Matching Rules</strong> sits next to <strong>PO match server side</strong>.</p></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (455).png" alt=""><figcaption></figcaption></figure>
-3.  Then go to the Section Purchase Order and Click the Button (PO match server side) after that you Click on Configure PO Matching Rules
+## The page at a glance
 
-    <figure><img src="../../../../../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-overview.png" alt="The Purchase Order Matching Rules page with toolbar, global settings and rules list"><figcaption><p>The Purchase Order Matching Rules page.</p></figcaption></figure>
+
+The page has three buttons at the top:
+
+* **Rule set as a diagram** opens a flow chart of the active rule set. See [Rule set as a diagram](#rule-set-as-a-diagram).
+* **Save Rules** saves your changes to the draft you are editing.
+* **Configure Versioning** opens the version history. See [Versions and drafts](#versions-and-drafts).
+
+Below the buttons a **Read Only** notice appears when you look at a published version: *This is a published version and cannot be edited. Clone as draft to make changes.* Below that come the **Global Settings (Base Rules)** card and the **Rules List**. Select a rule in the list to configure it in the **Rule Configuration** area under the list.
 
 ***
-
-<figure><img src="../../../../../../.gitbook/assets/Bildschirmfoto 2025-12-09 um 07.43.15.png" alt=""><figcaption></figcaption></figure>
 
 ## Global Settings (Base Rules)
 
 These settings establish the framework that applies to all matching rules:
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-global-settings.png" alt="The Global Settings card with Match Quantity On, Default Tolerance and Enable Fallback Single Match"><figcaption><p>The Global Settings (Base Rules) card, opened.</p></figcaption></figure>
 
 * **Setting:** Match Quantity On
   * **Purpose:** Defines which quantity of the purchase order line is compared with the document line — for example the ordered quantity or the **invoice open quantity** (ordered minus already invoiced), which is the usual choice for invoices.
@@ -40,12 +48,17 @@ These settings establish the framework that applies to all matching rules:
   * **Purpose:** Defines how far a numeric value on the document may deviate from the purchase order value and still count as a match. It compensates for rounding differences. It applies to **every numeric column** with "Allow Tolerance" enabled — quantity as well as unit price.
   * **Valid Value:** A decimal number. Whether it is read as an **absolute value** (0.005 = a deviation of up to 0.005 in the compared quantity or price) or as a **percentage** (0.5 = 0.5 % of the compared value) is set by the **tolerance type** of the rule set (`value` or `percent`; new rule sets use `value`). Per-item tolerances (see [Tolerance settings](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md)) override the standard tolerance for that item.
   * **Dependency:** Applies to rules that use numeric fields for matching and have the "Allow Tolerance" option enabled.
+* **Setting:** Enable Fallback Single Match
+  * **Purpose:** When enabled, a last remaining unmatched purchase order line is matched automatically even if the packing slip number differs. The match is flagged as a mismatch for your review.
+  * **Valid Values:** On or off. The default is off.
 
 ***
 
 ## Rule List
 
 The Rule List displays all available matching rules and manages their execution order.
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-rules-list.png" alt="The rules list with priority, name, description and active switch"><figcaption><p>The Rules List. The selected rule is marked <strong>Selected</strong>. A rule can be switched off with its <strong>Active</strong> switch.</p></figcaption></figure>
 
 #### Structure and Execution
 
@@ -61,6 +74,8 @@ The Rule List displays all available matching rules and manages their execution 
 
 This detailed configuration area defines the specific logic and criteria for an individual rule.
 
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-rule-configuration.png" alt="The Rule Configuration area of DefaultRule#1 with the columns match comparison"><figcaption><p>The Rule Configuration area for a single match rule. <strong>Apply</strong> keeps your changes on the draft.</p></figcaption></figure>
+
 #### Base Parameters
 
 * **Rule Type:** Specifies the matching cardinality.
@@ -71,8 +86,12 @@ This detailed configuration area defines the specific logic and criteria for an 
 | **Multi match**    | Several purchase order lines to one document line, or several document lines to one purchase order line. Quantities are **summed**, the unit price is compared as an **average**, the other columns must agree. | Split deliveries, one invoice line that covers several order lines.       |
 | **Match on total** | Compares one **amount** — usually the document line's net amount against the purchase order **total** — and matches the whole purchase order at once.                                                           | Suppliers that invoice one lump sum, service invoices, one-line invoices. |
 
-* **Automatic Match:** If enabled, the system will attempt to apply this rule entirely automatically. High confidence in the criteria is required for automatic processing.
-* **Manual Match:** If enabled, this rule can be presented or applied by a user during the manual reconciliation step, offering them a pre-defined set of comparison criteria to resolve exceptions.
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-multi-match-configuration.png" alt="The configuration of the default multi match rule"><figcaption><p>A multi match rule compares item identifier, summed quantity and average unit price.</p></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-total-match-configuration.png" alt="The configuration of the default total match rule"><figcaption><p>A match on total rule compares one amount, here the net amount with the purchase order total.</p></figcaption></figure>
+
+* **Auto match:** If enabled, the system will attempt to apply this rule entirely automatically. High confidence in the criteria is required for automatic processing.
+* **Manual match:** If enabled, this rule can be presented or applied by a user during the manual reconciliation step, offering them a pre-defined set of comparison criteria to resolve exceptions.
 * **Fallback:** A rule marked as fallback runs in a later phase, only for the line pairs that are still unmatched after all regular rules have run. Use it for the "looser" rule that should catch what the strict rules missed.
 
 #### Activation conditions
@@ -124,6 +143,37 @@ A typical stringent rule combines mandatory identity checks with value checks:
 
 ***
 
+#### Advanced Settings
+
+Click **Advanced Settings** under the column table to open two more options for the rule.
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-advanced-settings.png" alt="The Advanced Settings of a rule with Allow packages and Normalize unit before match"><figcaption><p>Advanced Settings of a rule.</p></figcaption></figure>
+
+* **Allow packages:** Lets the rule match lines where the quantity and the unit price differ by a package size. The default package sizes are 10, 20, 100 and 1000. DocBits then adjusts the document quantity and unit price by the package size before it compares them. This is the **Package criteria** step of each stage in the [rule diagram](#rule-set-as-a-diagram).
+* **Normalize unit before match:** Converts the unit of measure on both sides to the same unit before the quantity is compared. It is on by default.
+
+***
+
+## Rule set as a diagram
+
+**Rule set as a diagram** opens a panel next to the rules. It shows the rules of the active version as a flow chart, so you can see in which order DocBits tries them and where matching stops.
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram.png" alt="The rule set diagram with five stages from single match validation to fallback logic"><figcaption><p>The rule set as a diagram.</p></figcaption></figure>
+
+DocBits works through five stages from top to bottom. Each stage has up to three passes: **Exact match for all rules**, **Tolerance-based match** and **Package criteria**. The first pass that finds a match ends the process (green arrow). If a pass finds no match, DocBits carries on with the next one (red arrow).
+
+| Stage | What it does |
+| ----- | ------------ |
+| 1. Single match validation | Applies the single match rules in order of priority. |
+| 2. Multi match validation | Runs after the single match, for several lines on one side. |
+| 3. Total match validation | Runs only when nothing matched at all. Compares the purchase order total with the sum of the table lines. |
+| 4. Single mismatch validation | Applies the single match rules again, with the unit price ignored. |
+| 5. Fallback logic | Pairs the last purchase order line with the last table line when exactly one line is left on each side. |
+
+Under the chart the panel lists the rules of every stage by priority, with the columns each rule compares. A note at the top tells you where the tolerances come from: from the rule set, or, when `CUSTOM_RANGE_FOR_PO_TOLERANCE` is on, from the [document type settings](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
+
+***
+
 ## The default rule set
 
 Every organisation starts with the same default rule set. It is a good reference when you build your own:
@@ -166,8 +216,10 @@ The defined rule set directly governs the efficiency and integrity of the PO-mat
 
 ***
 
-## Customize the PO Matching Rules
+## Versions and drafts
 
-In order to edit the PO Matching rules, the default version can be cloned by clicking **"Configure Versioning"** and using **"Clone as Draft"** option from the available card options
+The matching rules are versioned. You can only edit a **draft**, and a published version can only be viewed. Click **Configure Versioning** to open the **Version History**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (458).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-version-history.png" alt="The version history with draft, approved and active versions"><figcaption><p>The Version History with all versions of the rule set.</p></figcaption></figure>
+
+Each version shows its number, the date and time and its status, for example **Draft** or **Approved**. The menu on a version offers the actions for it. To change the default rule set, clone it first: open **Configure Versioning** and choose **Clone as draft** from the card options of the version. Edit the draft, click **Apply** on each rule you changed and **Save Rules**. The changed rules take effect when the version is activated.

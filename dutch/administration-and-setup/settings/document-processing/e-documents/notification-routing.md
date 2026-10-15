@@ -1,6 +1,6 @@
 # Notificatierouting
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_routing.png" alt="Notificatieroutes"><figcaption><p>Validatiebevindingen koppelen aan agents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-routing-nl.png" alt="Notificatieroutes"><figcaption><p>Validatiebevindingen koppelen aan agents</p></figcaption></figure>
 
 De pagina **Notificatierouting** (**E-documenten → Acties**) koppelt validatiebevindingen aan **AI Workforce-agents**. Elke blokkerende bevinding activeert precies één agent — die waarvan het codeprefix het langst overeenkomt. Alles zonder match valt terug op de standaard leveranciersmelding-agent.
 
@@ -20,7 +20,7 @@ Kies voor elke route de afhandelende agent in de vervolgkeuzelijst. **Geavanceer
 
 ## Beschikbare agents
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_agents.png" alt="Register van beschikbare agents"><figcaption><p>Alleen-lezen register van AI Workforce-agents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-agents-nl.png" alt="Register van beschikbare agents"><figcaption><p>Alleen-lezen register van AI Workforce-agents</p></figcaption></figure>
 
 Het gedeelte **Beschikbare agents** is een alleen-lezen register van de AI Workforce-agents die met uw implementatie worden geleverd, bijvoorbeeld:
 

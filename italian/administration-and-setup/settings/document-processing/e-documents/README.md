@@ -15,7 +15,7 @@ Le pagine Documenti elettronici hanno effetto solo dopo che la **convalida delle
 
 Vai a **Impostazioni → Tipi di documento → Fattura → Impostazioni avanzate** e apri la sezione **Convalida fattura elettronica**.
 
-<figure><img src="../../../../.gitbook/assets/edoc_enable_validation_toggle.png" alt="Gli interruttori di convalida della fattura elettronica sul tipo di documento Fattura"><figcaption><p>Attiva o disattiva la convalida delle fatture elettroniche per tipo di documento, con notifica facoltativa al fornitore</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-enable-toggle-it.png" alt="Gli interruttori di convalida della fattura elettronica sul tipo di documento Fattura"><figcaption><p>Attiva o disattiva la convalida delle fatture elettroniche per tipo di documento, con notifica facoltativa al fornitore</p></figcaption></figure>
 
 * **Convalida le fatture elettroniche in entrata**: l'interruttore principale. Quando è **attivo**, ogni fattura caricata viene controllata con le regole Schematron KoSIT XRechnung più i controlli semantici L0 (PDF/A-3) e L4 (IBAN/IVA), usando le gravità impostate nella pagina [Validazione della fattura elettronica](validation-rules.md). Le fatture non valide vengono bloccate. Quando è **disattivato**, le fatture saltano completamente la convalida delle fatture elettroniche e le pagine Validazione della fattura elettronica e Instradamento delle notifiche non hanno effetto.
 * **Notifica al fornitore in caso di rifiuto**: appare una volta attivata la convalida. Quando è **attivo**, una fattura rifiutata invia un'email al fornitore con l'elenco dei campi mancanti o errati così da poterla riemettere. Chi riceve e gestisce ogni risultato si configura nella pagina [Instradamento delle notifiche](notification-routing.md).
@@ -24,4 +24,4 @@ Vai a **Impostazioni → Tipi di documento → Fattura → Impostazioni avanzate
 
 Puoi anche saltare direttamente qui con la **ricerca rapida globale**: premi <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> su Windows e Linux) ovunque in DocBits e digita *e-invoice*.
 
-<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La ricerca rapida globale apre la Convalida fattura elettronica"><figcaption><p>Digita «e-invoice» nella ricerca rapida per saltare direttamente all'interruttore.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-quicksearch-it.png" alt="La ricerca rapida globale apre la Convalida fattura elettronica"><figcaption><p>Digita «e-invoice» nella ricerca rapida per saltare direttamente all'interruttore.</p></figcaption></figure>

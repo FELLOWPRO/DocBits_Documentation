@@ -1,5 +1,7 @@
 # Walidacja e-faktury
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/pl.mp4" %}
+
 Strona **Walidacja e-faktury** (**Ustawienia → Dokumenty elektroniczne → Walidacja e-faktury**, ścieżka `/settings/einvoice-validation`; wcześniej nazywana *Reguły walidacji*) kontroluje sposób, w jaki DocBits weryfikuje przychodzące e-faktury. Opiera się na oficjalnym zestawie reguł **KoSIT XRechnung + ZUGFeRD** oraz wewnętrznych kodach wyników walidatora i pozwala nadpisać wagę każdej reguły dla Twojej organizacji.
 
 > Ta strona dotyczy **e-faktur** (XRechnung, ZUGFeRD, Factur-X). To coś innego niż **Reguły walidacji danych**, które sprawdzają wyodrębnione pola dokumentu.

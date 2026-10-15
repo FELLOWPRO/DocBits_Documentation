@@ -1,55 +1,60 @@
 # Testing the model
 
-## Steps to run classification tests to evaluate the accuracy and operational readiness of the model
+## Check how reliably the trained model recognises a document type
 
-To test the trained model and evaluate its accuracy and operational readiness, you can follow the steps below:
+Once a document type has training data and a trained model, you can test it with a single sample document. The test classifies that one document and shows the result. It does not change your training data, your documents, or the model itself.
 
+### Step 1: Open the model training page of the document type
 
+Go to **Settings** → **Document Types** and, in the row of the document type you want to test (for example **Invoice**), choose **Model Training**. The breadcrumb of the page shows **Document Types / Train Model**.
 
-**Preparing the test data:**&#x20;
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-model-training-en-20261013.png" alt="Model Training page of the Invoice document type: counters for Sample, Exported, Company Σ and Overall Σ, the buttons Import, Train model and Test classification, and the list of imported sample documents with a Name and an Actions column."><figcaption><p>Model Training page of the Invoice document type with its counters, the three action buttons and the list of imported sample documents.</p></figcaption></figure>
 
-* Collect a representative sample of test data covering different types of documents and scenarios that the model will handle in the field. Ensure that the test data is of high quality and correctly labeled.
+At the top the page shows four counters for this document type:
 
+* **Sample** – number of sample documents that are available for training.
+* **Exported** – number of documents that were exported after processing.
+* **Company ∑** – total number of documents of your organization in this document type.
+* **Overall ∑** – total number of documents in this document type, across all organizations.
 
+Below the counters are the three buttons of the page:
 
-**Running the classification tests:**&#x20;
+* **Import** – add sample documents. See [Import Data: Model Training](import-data-model-training.md).
+* **Train model** – train the model with the imported sample documents. See [Purpose and Use: Model Training](purpose-and-use-model-training.md).
+* **Test classification** – test the trained model with a single document. This page describes that step.
 
-* Run the classification tests on the prepared test data.&#x20;
-* Feed the test data into the model and let the model make predictions for classifying the documents.
+The table under the buttons lists the imported sample documents with their **Name** and an **Actions** column. Use the actions of a row to download or delete a sample document. See [Manage training data](manage-training-data.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (91).png" alt="" width="375"><figcaption><p>Setting</p></figcaption></figure>
+### Step 2: Start the test
 
-* Add a new one or edit an existing classification rule.
+Click **Test classification**. The test dialog opens.
 
-<figure><img src="../../../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Settings: Classification and Extraction </p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-test-dialog-en-20261013.png" alt="The Test classification dialog with the drop area labelled Drag and Drop file(s) here, an attach_file button for choosing a file and the Upload button."><figcaption><p>The Test classification dialog: drop a file into the area or choose one, then click Upload.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (90).png" alt="" width="276"><figcaption><p>Configure classification Rule</p></figcaption></figure>
+### Step 3: Add the test document
 
-**Evaluating the model accuracy:**&#x20;
+Drag a file into the area labelled **Drag and Drop file(s) here**, or click **attach_file** to choose a file from your computer. The selected file name appears in the dialog. Click **Upload** to send it for classification.
 
-* Compare the model's predictions with the actual classifications of the test data. Calculate metrics such as accuracy, precision, recall, and F1 score to evaluate the model's performance. These metrics provide insight into how well the model classified the documents and how reliable it is.
+Choose a document that was not used as training data, so the test shows how the model handles a document it has not seen before.
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 08.53.41.png" alt=""><figcaption></figcaption></figure>
+### Step 4: Read the result
 
+After the upload the dialog shows how the model classified the document.
 
+<figure><img src="../../../../../.gitbook/assets/testing-the-model-test-result-en-20261013.png" alt="The Test classification dialog after the upload: Status Success, Doc Type INVOICE, Doc Type Score 97 percent, Doc Locale en_US and Doc Locale Score 91 percent."><figcaption><p>The result of a test classification: the model assigned the document type INVOICE with a high score.</p></figcaption></figure>
 
-**Analyze errors:**&#x20;
+* **Status** – **Success** means the model assigned the same document type as the page you started the test from. If it shows **Failed**, the model assigned a different document type and the values below are not shown.
+* **Doc Type** – the document type the model assigned to the tested document.
+* **Doc Type Score** – how confident the model is about that document type, in percent. A high value means the model is very sure.
+* **Doc Locale** – the language and region the model recognised for the document, for example `en_US`.
+* **Doc Locale Score** – how confident the model is about that language and region, in percent.
 
-* Examine the errors the model made when classifying the test data and analyze their causes. Identify patterns or trends in the errors and, if necessary, make adjustments to the model to improve its performance.
+Close the dialog with **close** when you have read the result. The result belongs to this single test only; it is not stored in your training data.
 
+### Evaluate and improve the model
 
-
-**Optimize the model**:&#x20;
-
-* Based on the results of the classification tests and error analysis, you can optimize the model by adding training data, adjusting training parameters, or changing the model architecture. Repeat the testing process to check if the optimizations improved the model's performance.
-
-
-
-**Document the results:**&#x20;
-
-* Document the results of the classification tests and any adjustments or optimizations made to the model. This will help you track the model's progress over time and ensure that it is constantly improving.
-
-By regularly running classification tests and evaluating the performance of your model, you can ensure that it is suitable for use in production and delivers accurate results.
-
-
-
+* **Evaluate the accuracy.** Test several representative documents instead of a single one. The more often the status is **Success** and the higher the scores are, the more reliably the model works for that document type.
+* **Analyse errors.** If a document is classified as a different type, check whether the model already has enough comparable sample documents for the correct type. See [Manage training data](manage-training-data.md).
+* **Improve the model.** Add more or better sample documents with **Import**, train the model again with **Train model**, and repeat the test.
+* **If a document type is consistently misclassified**, review the classification rules of your document types under **Settings** → **Document Types** → **Classification and Extraction** and adjust them if necessary.
+* Keep notes about each test so you can compare results over time. See [Best practices](best-practices.md) and [Troubleshooting](troubleshooting.md).

@@ -2,7 +2,7 @@
 
 Introduzca un ID de documento en **Document ID**, o abra un documento de muestra de un clúster, para ver **qué le ocurrió a este documento**.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="La página Document Trace con la ruta del pipeline de 14 etapas y la etapa detenida Field Validation"><figcaption><p>El Document Trace: la ruta del pipeline con la etapa en la que se detuvo el documento, lo que esa etapa tenía a su disposición y, debajo, el historial de ejecuciones.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-document-trace-es.png" alt="La página Document Trace con la ruta del pipeline de 14 etapas y la etapa detenida Field Validation"><figcaption><p>El Document Trace: la ruta del pipeline con la etapa en la que se detuvo el documento, lo que esa etapa tenía a su disposición y, debajo, el historial de ejecuciones.</p></figcaption></figure>
 
 La parte superior muestra la **ruta del pipeline** con 14 etapas: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Cada casilla tiene un estado:
 

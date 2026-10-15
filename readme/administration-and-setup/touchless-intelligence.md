@@ -9,7 +9,7 @@
 
 Es una pestaña del [Panel de Análisis](analytics-dashboard.md). No añade trabajo para su equipo: DocBits registra lo que ocurre con cada documento en el pipeline de procesamiento y evalúa el resultado cada 15 minutos.
 
-<figure><img src="../.gitbook/assets/touchless-overview.png" alt="La pestaña Touchless Intelligence con cinco cifras clave, sugerencias de mejora y el gráfico de la tasa touchless"><figcaption><p>La pestaña Touchless Intelligence: cifras clave, mejoras, la tasa a lo largo del tiempo y el gráfico de dónde se pierde primero el touchless. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-overview-es.png" alt="La pestaña Touchless Intelligence con cinco cifras clave, sugerencias de mejora y el gráfico de la tasa touchless"><figcaption><p>La pestaña Touchless Intelligence: cifras clave, mejoras, la tasa a lo largo del tiempo y el gráfico de dónde se pierde primero el touchless. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 ### Qué puede hacer con ella
 
@@ -81,7 +81,7 @@ La pestaña muestra un **objetivo** (70 % salvo que su organización utilice otr
 
 Haga clic en **How touchless is calculated**, arriba a la derecha, para abrir esta explicación dentro de DocBits, con las cifras de su propio período (documentos en el período, aún in progress, excluidos, medidos).
 
-<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="El panel How touchless is calculated con las cifras del período"><figcaption><p>El panel <strong>How touchless is calculated</strong>: la fórmula, <strong>Your numbers in this period</strong> (aquí 2,425 documentos, 2,115 aún in progress, 310 medidos) y qué significa cada resultado. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology-es.png" alt="El panel How touchless is calculated con las cifras del período"><figcaption><p>El panel <strong>How touchless is calculated</strong>: la fórmula, <strong>Your numbers in this period</strong> (aquí 2,425 documentos, 2,115 aún in progress, 310 medidos) y qué significa cada resultado. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 ### Cuán actuales son las cifras
 
@@ -102,7 +102,7 @@ La **suborganización** que seleccionó en la parte superior de DocBits limita l
 
 ### Las cinco cifras clave
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="Las cinco cifras clave: Pure touchless, AP touchless, AP assisted, Process exceptions y Diagnosis coverage"><figcaption><p>Las cinco cifras clave. Aquí la tasa pura es del 50.3 % (156 documentos), es decir, 19.7 puntos por debajo del objetivo del 70 %, y la cobertura del diagnóstico es del 100 %. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-kpi-cards-es.png" alt="Las cinco cifras clave: Pure touchless, AP touchless, AP assisted, Process exceptions y Diagnosis coverage"><figcaption><p>Las cinco cifras clave. Aquí la tasa pura es del 50.3 % (156 documentos), es decir, 19.7 puntos por debajo del objetivo del 70 %, y la cobertura del diagnóstico es del 100 %. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 | Tarjeta | Muestra | Ejemplo (ilustrativo) |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ La **suborganización** que seleccionó en la parte superior de DocBits limita l
 
 ### Touchless rate over time
 
-<figure><img src="../.gitbook/assets/touchless-trend.png" alt="Gráfico de líneas de la tasa pure touchless y AP touchless por día con la línea del objetivo del 70 por ciento"><figcaption><p>La tasa por día con la línea del objetivo. Aquí la tasa se mantiene entre el 40 y el 60 % y cae bruscamente a partir del 10 de octubre. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-trend-es.png" alt="Gráfico de líneas de la tasa pure touchless y AP touchless por día con la línea del objetivo del 70 por ciento"><figcaption><p>La tasa por día con la línea del objetivo. Aquí la tasa se mantiene entre el 40 y el 60 % y cae bruscamente a partir del 10 de octubre. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 Un gráfico con una línea para **Pure touchless**, una para **AP touchless** y la **línea del objetivo**. Los períodos cortos muestran puntos diarios; los períodos largos, puntos semanales.
 
@@ -126,7 +126,7 @@ Un gráfico con una línea para **Pure touchless**, una para **AP touchless** y 
 
 ### Where touchless is lost first
 
-<figure><img src="../.gitbook/assets/touchless-blocking-stages.png" alt="Gráfico de barras de los documentos bloqueados por primera etapa de bloqueo y motivo"><figcaption><p>Documentos bloqueados según la etapa y el motivo en los que se detuvieron primero. Aquí <strong>Field validation: Required field missing</strong> cuesta más documentos (58), seguido de <strong>Export mapping failed</strong> (46) y <strong>PO item mismatch</strong> (27). Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-blocking-stages-es.png" alt="Gráfico de barras de los documentos bloqueados por primera etapa de bloqueo y motivo"><figcaption><p>Documentos bloqueados según la etapa y el motivo en los que se detuvieron primero. Aquí <strong>Field validation: Required field missing</strong> cuesta más documentos (58), seguido de <strong>Export mapping failed</strong> (46) y <strong>PO item mismatch</strong> (27). Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 Un gráfico de barras de **Blocked documents** por etapa del pipeline: la **primera** etapa que detuvo un documento.
 
@@ -134,7 +134,7 @@ Un gráfico de barras de **Blocked documents** por etapa del pipeline: la **prim
 
 ### Supplier opportunities
 
-<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="La tabla Supplier opportunities con volumen, tasa pura, documentos perdidos, causa raíz, documentos recuperables, mejora esperada, confianza y estado"><figcaption><p>La cola de proveedores (abreviada a las cuatro primeras filas). El primer proveedor tiene 106 documentos, una tasa pura del 38.7 % y 65 documentos recuperables, de modo que corregirlo vale <strong>+21 pp</strong>. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-queue-es.png" alt="La tabla Supplier opportunities con volumen, tasa pura, documentos perdidos, causa raíz, documentos recuperables, mejora esperada, confianza y estado"><figcaption><p>La cola de proveedores (abreviada a las cuatro primeras filas). El primer proveedor tiene 106 documentos, una tasa pura del 38.7 % y 65 documentos recuperables, de modo que corregirlo vale <strong>+21 pp</strong>. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 La cola responde a **"¿Qué proveedor deberíamos corregir primero?"**. Está ordenada por documentos **Recoverable**, de mayor a menor, con 25 filas por página.
 
@@ -161,7 +161,7 @@ Utilice el cuadro de búsqueda ("Search supplier number or name") para encontrar
 
 ### Compare suppliers
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="La página Compare suppliers con tres proveedores lado a lado y un gráfico de barras de sus resultados"><figcaption><p>Tres proveedores lado a lado: tasa pura, documentos perdidos y recuperables, causa raíz, mejora esperada y un gráfico de barras de los resultados. Cada <strong>Open</strong> lleva al Supplier Diagnosis. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-compare-suppliers-es.png" alt="La página Compare suppliers con tres proveedores lado a lado y un gráfico de barras de sus resultados"><figcaption><p>Tres proveedores lado a lado: tasa pura, documentos perdidos y recuperables, causa raíz, mejora esperada y un gráfico de barras de los resultados. Cada <strong>Open</strong> lleva al Supplier Diagnosis. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 Haga clic en **Compare suppliers**, marque **de dos a cinco** proveedores (cada uno aparece con su número de documentos bloqueados) y haga clic en **Compare**.
 

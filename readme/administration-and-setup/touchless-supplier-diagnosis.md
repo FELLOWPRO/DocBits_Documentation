@@ -3,7 +3,7 @@
 
 Haga clic en un proveedor de la cola para abrir su página de diagnóstico.
 
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="La página Supplier Diagnosis con bloques de resultados, tendencia y dos clústeres de problemas"><figcaption><p>La página Supplier Diagnosis: bloques de resultados, tendencia con selector de período y dos clústeres de problemas ordenados por mejora esperada. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-detail-es.png" alt="La página Supplier Diagnosis con bloques de resultados, tendencia y dos clústeres de problemas"><figcaption><p>La página Supplier Diagnosis: bloques de resultados, tendencia con selector de período y dos clústeres de problemas ordenados por mejora esperada. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 La página muestra:
 
@@ -20,7 +20,7 @@ Una breve nota explica una página vacía, por ejemplo: *5 documents from this s
 
 Un **clúster** agrupa los documentos de un proveedor que se detuvieron por el **mismo primer motivo**. En lugar de 40 problemas individuales, ve "3 problemas".
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="Una tarjeta de clúster de problemas abierta con el primer bloqueo, qué cambiar y la propuesta de cambio"><figcaption><p>Una tarjeta de clúster abierta: el primer bloqueo, <strong>What to change</strong> y una <strong>Change proposal</strong> con riesgo, alcance y preguntas abiertas. Aquí el clúster abarca 58 documentos y vale +18.7 pp. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-es.png" alt="Una tarjeta de clúster de problemas abierta con el primer bloqueo, qué cambiar y la propuesta de cambio"><figcaption><p>Una tarjeta de clúster abierta: el primer bloqueo, <strong>What to change</strong> y una <strong>Change proposal</strong> con riesgo, alcance y preguntas abiertas. Aquí el clúster abarca 58 documentos y vale +18.7 pp. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 **Clúster de ejemplo (ilustrativo).**
 

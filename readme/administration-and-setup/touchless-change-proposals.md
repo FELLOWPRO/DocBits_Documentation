@@ -21,7 +21,7 @@ Los administradores también ven dos secciones entre las cifras clave y los grá
 * **Learned rule proposals**: reglas que DocBits aprendió de las correcciones de su equipo, por ejemplo "para el proveedor X, sustituir el valor del campo Y". Antes de crear una, revise los documentos en los que sustituiría un valor que su equipo había aceptado. La sección **After activation** muestra las correcciones manuales del campo de destino antes y después de que una regla entrara en vigor.
 
 
-<figure><img src="../.gitbook/assets/touchless-consulting-report.png" alt="El Consulting report con las tres propuestas principales, una tabla de clasificación y los problemas por dominio"><figcaption><p>El Consulting report: propuestas principales, una clasificación de todos los bloqueos con documentos e impacto estimado por mes, y los problemas por dominio. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-consulting-report-es.png" alt="El Consulting report con las tres propuestas principales, una tabla de clasificación y los problemas por dominio"><figcaption><p>El Consulting report: propuestas principales, una clasificación de todos los bloqueos con documentos e impacto estimado por mes, y los problemas por dominio. Organización de ejemplo con datos de demostración; los nombres de proveedores son ficticios.</p></figcaption></figure>
 
 Los administradores encuentran el **Consulting report** al final de la pestaña. Haga clic en **Create report** para cargarlo. Combina, para su organización:
 

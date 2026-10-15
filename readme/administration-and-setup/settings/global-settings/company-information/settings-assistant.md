@@ -4,7 +4,7 @@ El **Settings Assistant** es un panel de chat dentro del área de Settings. Uste
 
 Es más útil cuando sabe **qué** quiere ("dejar de dividir documentos por códigos de barras") pero no **dónde** está el ajuste, o cuando se pregunta **por qué** algo no ocurre ("¿Por qué no está activa la coincidencia con la OC?").
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="El panel del Settings Assistant en el lado derecho del área de Settings, con un saludo para la página actual, tres preguntas de ejemplo y el campo de pregunta"><figcaption><p>El Settings Assistant en la página Company Information: un saludo para la página actual, tres preguntas de ejemplo y el campo de pregunta. Una tarjeta de aviso aparece encima del saludo cuando una importación ha dejado de funcionar (véase <a href="settings-assistant-chat.md#findings-el-asistente-le-avisa">Findings</a>).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open-es.png" alt="El panel del Settings Assistant en el lado derecho del área de Settings, con un saludo para la página actual, tres preguntas de ejemplo y el campo de pregunta"><figcaption><p>El Settings Assistant en la página Company Information: un saludo para la página actual, tres preguntas de ejemplo y el campo de pregunta. Una tarjeta de aviso aparece encima del saludo cuando una importación ha dejado de funcionar (véase <a href="settings-assistant-chat.md#findings-el-asistente-le-avisa">Findings</a>).</p></figcaption></figure>
 
 El asistente está **desactivado por defecto**. Esta página muestra dónde activarlo y cómo abrirlo. Lo que puede preguntarle y lo que puede cambiar se describe en la página [Settings Assistant: qué puede hacer el chat](settings-assistant-chat.md).
 
@@ -20,7 +20,7 @@ El asistente está **desactivado por defecto**. Esta página muestra dónde acti
 2. Abra la sección **Assistants**.
 3. Active **Enable the settings assistant**.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="La sección Assistants en Company Information con los interruptores del settings assistant, el validation assistant y la locución del explainer"><figcaption><p>La sección Assistants. El settings assistant tiene su propio interruptor. El validation assistant y la locución del explainer son funciones independientes.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-es.png" alt="La sección Assistants en Company Information con los interruptores del settings assistant, el validation assistant y la locución del explainer"><figcaption><p>La sección Assistants. El settings assistant tiene su propio interruptor. El validation assistant y la locución del explainer son funciones independientes.</p></figcaption></figure>
 
 Un breve mensaje confirma **Settings assistant enabled**. El ajuste está desactivado por defecto. Mientras esté desactivado, el panel y su botón no aparecen en ningún lugar.
 
@@ -32,7 +32,7 @@ El **Validation assistant** de la misma sección es una función distinta. Expli
 
 En todas las páginas del área de Settings encontrará un pequeño **botón con una lámpara de genio** junto al campo de búsqueda de ajustes. Haga clic en él para **mostrar** u **ocultar** el asistente.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="La página Company Information en Settings con la navegación de ajustes a la izquierda, la página en el centro y el panel del Settings Assistant a la derecha"><figcaption><p>El asistente se encuentra en el <strong>lado derecho</strong> de cada página de Settings: la navegación a la izquierda, la página en el centro y el asistente junto a ella. Aquí en <strong>Company Settings → Company Information</strong>. El botón para mostrarlo u ocultarlo es el icono de la lámpara junto a <strong>Search Settings</strong>, en la parte superior de la navegación.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-es.png" alt="La página Company Information en Settings con la navegación de ajustes a la izquierda, la página en el centro y el panel del Settings Assistant a la derecha"><figcaption><p>El asistente se encuentra en el <strong>lado derecho</strong> de cada página de Settings: la navegación a la izquierda, la página en el centro y el asistente junto a ella. Aquí en <strong>Company Settings → Company Information</strong>. El botón para mostrarlo u ocultarlo es el icono de la lámpara junto a <strong>Search Settings</strong>, en la parte superior de la navegación.</p></figcaption></figure>
 
 * El panel recuerda su elección por usuario, por lo que seguirá abierto la próxima vez que vuelva.
 * En una pantalla ancha (1280 píxeles o más) se sitúa junto a la página. Puede arrastrar su borde para cambiar el ancho.

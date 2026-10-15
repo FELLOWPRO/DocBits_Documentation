@@ -1,5 +1,7 @@
 # Touchless Intelligence
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/pl.mp4" %}
+
 ## Przegląd
 
 **Touchless Intelligence** odpowiada na dwa pytania dotyczące przetwarzania dokumentów:

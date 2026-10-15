@@ -3,7 +3,7 @@
 
 Klik op een leverancier in de wachtrij om de diagnosepagina te openen.
 
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="De pagina Leveranciersdiagnose met uitkomsttegels, trend en twee probleemclusters"><figcaption><p>De pagina Leveranciersdiagnose: uitkomsttegels, trend met periodekiezer en twee probleemclusters, gesorteerd op verwachte stijging. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-detail-nl.png" alt="De pagina Leveranciersdiagnose met uitkomsttegels, trend en twee probleemclusters"><figcaption><p>De pagina Leveranciersdiagnose: uitkomsttegels, trend met periodekiezer en twee probleemclusters, gesorteerd op verwachte stijging. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 De pagina toont:
 
@@ -20,7 +20,7 @@ Een korte opmerking verklaart een lege pagina, bijvoorbeeld: *5 documents from t
 
 Een **cluster** groepeert de documenten van één leverancier die om dezelfde **eerste reden** stopten. In plaats van 40 afzonderlijke problemen ziet u "3 problemen".
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="Een geopende clusterkaart met de eerste blokkade, wat te wijzigen en het wijzigingsvoorstel"><figcaption><p>Een geopende clusterkaart: de eerste blokkade, <strong>Wat te wijzigen</strong> en een <strong>Wijzigingsvoorstel</strong> met risico, bereik en open vragen. Hier omvat het cluster 58 documenten en is het +18,7 pp waard. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-nl.png" alt="Een geopende clusterkaart met de eerste blokkade, wat te wijzigen en het wijzigingsvoorstel"><figcaption><p>Een geopende clusterkaart: de eerste blokkade, <strong>Wat te wijzigen</strong> en een <strong>Wijzigingsvoorstel</strong> met risico, bereik en open vragen. Hier omvat het cluster 58 documenten en is het +18,7 pp waard. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 **Voorbeeldcluster (illustratief).**
 

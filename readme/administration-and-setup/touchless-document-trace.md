@@ -2,7 +2,7 @@
 
 Voer een document-ID in bij **Document-ID** (Document ID), of open een voorbeelddocument uit een cluster, om te zien **wat er met dit ene document is gebeurd**.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="De pagina Documentspoor met het pipelinetraject van 14 fasen en de gestopte fase Veldvalidatie"><figcaption><p>Het Documentspoor: het pipelinetraject met de fase waar het document stopte, wat die fase in handen had, en eronder de runhistorie.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-document-trace-nl.png" alt="De pagina Documentspoor met het pipelinetraject van 14 fasen en de gestopte fase Veldvalidatie"><figcaption><p>Het Documentspoor: het pipelinetraject met de fase waar het document stopte, wat die fase in handen had, en eronder de runhistorie.</p></figcaption></figure>
 
 Bovenaan ziet u het **pipelinetraject** met 14 fasen: Intake, Classificatie, E-documentvalidatie, Leverancieridentificatie, Tekstherkenning, Headerextractie, Tabelextractie, Veldvalidatie, PO-opzoeking, PO-regelmatch, Goedkeuring, Workflowroutering, Export, ERP-bevestiging. Elk vak heeft een status:
 

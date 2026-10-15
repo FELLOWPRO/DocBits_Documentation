@@ -4,7 +4,7 @@ De **Settings Assistant** (instellingenassistent) is een chatpaneel in het gedee
 
 Hij helpt het meest wanneer u weet **wat** u wilt ("stop met het splitsen van documenten op barcodes") maar niet **waar** de instelling staat, of wanneer u zich afvraagt **waarom** iets niet gebeurt ("Why isn't PO matching active?", waarom is PO-matching niet actief?).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="Het paneel van de Settings Assistant aan de rechterkant van het gedeelte Instellingen, met een begroeting voor de huidige pagina, drie voorbeeldvragen en het vraagveld"><figcaption><p>De Settings Assistant op de pagina Bedrijfsinformatie: een begroeting voor de huidige pagina, drie voorbeeldvragen en het vraagveld. Boven de begroeting verschijnt een waarschuwingskaart wanneer een import niet meer werkt (zie <a href="settings-assistant-chat.md#bevindingen-de-assistent-waarschuwt-u">Bevindingen</a>).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open-nl.png" alt="Het paneel van de Settings Assistant aan de rechterkant van het gedeelte Instellingen, met een begroeting voor de huidige pagina, drie voorbeeldvragen en het vraagveld"><figcaption><p>De Settings Assistant op de pagina Bedrijfsinformatie: een begroeting voor de huidige pagina, drie voorbeeldvragen en het vraagveld. Boven de begroeting verschijnt een waarschuwingskaart wanneer een import niet meer werkt (zie <a href="settings-assistant-chat.md#bevindingen-de-assistent-waarschuwt-u">Bevindingen</a>).</p></figcaption></figure>
 
 De assistent staat **standaard uit**. Deze pagina laat zien waar u hem inschakelt en hoe u hem opent. Wat u hem kunt vragen en wat hij kan wijzigen, staat op de pagina [Settings Assistant: wat de chat kan doen](settings-assistant-chat.md).
 
@@ -20,7 +20,7 @@ De assistent staat **standaard uit**. Deze pagina laat zien waar u hem inschakel
 2. Open de sectie **Assistants** (assistenten).
 3. Schakel **Enable the settings assistant** (de instellingenassistent inschakelen) in.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="De sectie Assistants in Bedrijfsinformatie met de schakelaars voor de instellingenassistent, de validatieassistent en de voice-over van de uitlegvideo's"><figcaption><p>De sectie Assistants. De instellingenassistent heeft een eigen schakelaar. De validatieassistent en de voice-over van de uitlegvideo's zijn afzonderlijke functies.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-nl.png" alt="De sectie Assistants in Bedrijfsinformatie met de schakelaars voor de instellingenassistent, de validatieassistent en de voice-over van de uitlegvideo's"><figcaption><p>De sectie Assistants. De instellingenassistent heeft een eigen schakelaar. De validatieassistent en de voice-over van de uitlegvideo's zijn afzonderlijke functies.</p></figcaption></figure>
 
 Een korte melding bevestigt **Settings assistant enabled** (instellingenassistent ingeschakeld). De instelling staat standaard uit. Zolang ze uit staat, verschijnen het paneel en de bijbehorende knop nergens.
 
@@ -32,7 +32,7 @@ De **Validation assistant** (validatieassistent) in dezelfde sectie is een ander
 
 Op elke pagina van het gedeelte Instellingen vindt u naast het zoekveld voor instellingen een kleine **knop met een geestenlamp**. Klik erop om de assistent te **tonen** of te **verbergen**.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="De pagina Bedrijfsinformatie in Instellingen met de instellingennavigatie links, de pagina in het midden en het paneel van de Settings Assistant rechts"><figcaption><p>De assistent staat aan de <strong>rechterkant</strong> van elke instellingenpagina: navigatie links, de pagina in het midden, de assistent ernaast. Hier op <strong>Company Settings → Company Information</strong>. De knop om hem te tonen of te verbergen is het lampicoon naast <strong>Search Settings</strong> bovenaan de navigatie.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-nl.png" alt="De pagina Bedrijfsinformatie in Instellingen met de instellingennavigatie links, de pagina in het midden en het paneel van de Settings Assistant rechts"><figcaption><p>De assistent staat aan de <strong>rechterkant</strong> van elke instellingenpagina: navigatie links, de pagina in het midden, de assistent ernaast. Hier op <strong>Company Settings → Company Information</strong>. De knop om hem te tonen of te verbergen is het lampicoon naast <strong>Search Settings</strong> bovenaan de navigatie.</p></figcaption></figure>
 
 * Het paneel onthoudt uw keuze per gebruiker, dus het blijft open wanneer u terugkomt.
 * Op een breed scherm (1280 pixels en meer) staat het naast de pagina. U kunt aan de rand slepen om de breedte te wijzigen.

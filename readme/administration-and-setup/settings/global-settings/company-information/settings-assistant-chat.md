@@ -41,7 +41,7 @@ Klik op een vraag en ze wordt direct verstuurd. Onder de drie vragen zegt het pa
 
 U vraagt **"How do I change our company address?"** (hoe wijzig ik ons bedrijfsadres?)
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address.png" alt="De assistent antwoordt met het pad naar het bedrijfsadres en een knop Open setting"><figcaption><p>Het antwoord noemt de plek, en de kaart geeft u het exacte pad en een knop <strong>Open setting</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-nl.png" alt="De assistent antwoordt met het pad naar het bedrijfsadres en een knop Open setting"><figcaption><p>Het antwoord noemt de plek, en de kaart geeft u het exacte pad en een knop <strong>Open setting</strong>.</p></figcaption></figure>
 
 Het antwoord zegt waar het adres staat. De kaart eronder toont het pad (**Settings / Company Settings**) en de knop **Open setting**. Klik erop: DocBits opent de pagina, scrolt naar de instelling en markeert haar een paar seconden.
 
@@ -49,7 +49,7 @@ Het antwoord zegt waar het adres staat. De kaart eronder toont het pad (**Settin
 
 U vraagt **"How do I enable barcode detection?"** (hoe schakel ik barcodedetectie in?)
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode.png" alt="De assistent legt de drie barcode-instellingen uit en wanneer u elk moet inschakelen"><figcaption><p>Wanneer een woord bij meerdere instellingen past, somt de assistent ze allemaal op met <strong>Enable when</strong> (inschakelen wanneer) en <strong>Leave off when</strong> (uit laten wanneer).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-nl.png" alt="De assistent legt de drie barcode-instellingen uit en wanneer u elk moet inschakelen"><figcaption><p>Wanneer een woord bij meerdere instellingen past, somt de assistent ze allemaal op met <strong>Enable when</strong> (inschakelen wanneer) en <strong>Leave off when</strong> (uit laten wanneer).</p></figcaption></figure>
 
 "Barcodedetectie" kan drie verschillende instellingen betekenen, dus de assistent vraagt *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* (bedoelde u: QR Code Extraction, Barcode Assignment of Split Document on Barcode?) en legt ze uit:
 
@@ -61,7 +61,7 @@ U vraagt **"How do I enable barcode detection?"** (hoe schakel ik barcodedetecti
 
 U vraagt **"Why isn't PO matching active?"** (waarom is PO-matching niet actief?)
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching.png" alt="De assistent toont de huidige waarde van elke instelling voor PO-matching"><figcaption><p>Bij een "waarom"-vraag leest de assistent uw configuratie en toont elke instelling met haar <strong>Current</strong>-waarde (huidige waarde).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-nl.png" alt="De assistent toont de huidige waarde van elke instelling voor PO-matching"><figcaption><p>Bij een "waarom"-vraag leest de assistent uw configuratie en toont elke instelling met haar <strong>Current</strong>-waarde (huidige waarde).</p></figcaption></figure>
 
 De assistent leest de instellingen van uw organisatie en meldt wat hij heeft gevonden. In dit voorbeeld staat PO-matching **On** (aan) voor alle vier de documenttypen, en de instelling **Auto export if PO matched 100%** staat **Off** (uit), dus automatische matching en export draaien niet. Elke kaart toont **Current: On / Off** en een knop **Open setting**, zodat u het meteen kunt oplossen.
 
@@ -69,7 +69,7 @@ De assistent leest de instellingen van uw organisatie en meldt wat hij heeft gev
 
 U opent **Instellingen → Documenttypen** en vraagt **"Is PO matching active for invoices?"** (is PO-matching actief voor facturen?) (deze vraag is ook een van de drie suggesties op die pagina).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="De pagina Documenttypen in Instellingen met de Settings Assistant rechts, die antwoordt dat PO-matching aan staat voor facturen en drie gerelateerde instellingen toont"><figcaption><p>De pagina <strong>Document Types</strong> met de assistent rechts. Het antwoord zegt <strong>PO Matching is active for invoices in your organisation</strong> en toont drie gerelateerde instellingen: <strong>PO Matching</strong> (Current: On), de <strong>PO match rules</strong> en <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-nl.png" alt="De pagina Documenttypen in Instellingen met de Settings Assistant rechts, die antwoordt dat PO-matching aan staat voor facturen en drie gerelateerde instellingen toont"><figcaption><p>De pagina <strong>Document Types</strong> met de assistent rechts. Het antwoord zegt <strong>PO Matching is active for invoices in your organisation</strong> en toont drie gerelateerde instellingen: <strong>PO Matching</strong> (Current: On), de <strong>PO match rules</strong> en <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 De assistent leest de instelling voor het documenttype en voegt de instellingen toe die erbij horen. In dit voorbeeld staat matching aan, maar automatische export na een match van 100 % staat uit, dus gematchte facturen wachten nog op een persoon. Elke kaart heeft een knop **Open setting**.
 
@@ -80,7 +80,7 @@ De assistent leest de instelling voor het documenttype en voegt de instellingen 
 
 Op de pagina **Instellingen → Documenttypen → Custom Validation Rules** begroet het paneel u voor deze pagina en stelt het drie vragen voor.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="De pagina Custom Validation Rules in Instellingen met de regellijst in het midden en de Settings Assistant met drie voorgestelde vragen rechts"><figcaption><p>De pagina <strong>Custom Validation Rules</strong> met de assistent rechts. De lijst met regels staat in het midden, de drie suggesties van het paneel zijn: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> en <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-nl.png" alt="De pagina Custom Validation Rules in Instellingen met de regellijst in het midden en de Settings Assistant met drie voorgestelde vragen rechts"><figcaption><p>De pagina <strong>Custom Validation Rules</strong> met de assistent rechts. De lijst met regels staat in het midden, de drie suggesties van het paneel zijn: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> en <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
 Gebruik de assistent hier om de juiste instelling te **vinden** en om te leren wat een regel doet. Om een regel te **maken of te wijzigen**, werkt u op de pagina zelf: zie [Aangepaste validatieregels](../document-types/custom-validation-rules.md) en [Een aangepaste validatieregel dupliceren](../document-types/duplicate-a-custom-validation-rule.md). Als de assistent een regel voor u aanmaakt, wordt de regel altijd **inactief** aangemaakt, en schakelt u haar zelf in.
 
@@ -111,7 +111,7 @@ Als een vraag buiten het gebied van de instellingen valt, of de assistent er nie
 
 Wanneer iets in uw configuratie niet meer werkt, verschijnt bovenaan het paneel een **rode kaart**. U hoeft niets te vragen. De assistent controleert opnieuw wanneer u het paneel opent en wanneer u terugkeert naar het browsertabblad.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded.png" alt="Een uitgeklapte bevindingskaart met één mailbox die is uitgeschakeld na drie mislukte pogingen"><figcaption><p>Een uitgeklapte bevinding: de mailbox, de status (<strong>Switched off</strong>), het aantal mislukte pogingen en de reden.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-nl.png" alt="Een uitgeklapte bevindingskaart met één mailbox die is uitgeschakeld na drie mislukte pogingen"><figcaption><p>Een uitgeklapte bevinding: de mailbox, de status (<strong>Switched off</strong>), het aantal mislukte pogingen en de reden.</p></figcaption></figure>
 
 Er zijn momenteel twee controles:
 

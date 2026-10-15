@@ -9,7 +9,7 @@
 
 Het is een tabblad van het [Analyse-dashboard](analytics-dashboard.md). Het kost uw team geen extra werk: DocBits registreert wat er met elk document in de verwerkingspipeline gebeurt en beoordeelt het resultaat elke 15 minuten.
 
-<figure><img src="../.gitbook/assets/touchless-overview.png" alt="Het tabblad Touchless Intelligence met vijf kerncijfers, verbetersuggesties en de grafiek van het touchless-percentage"><figcaption><p>Het tabblad Touchless Intelligence: kerncijfers, verbeteringen, het percentage in de tijd en de grafiek waar touchless het eerst verloren gaat. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-overview-nl.png" alt="Het tabblad Touchless Intelligence met vijf kerncijfers, verbetersuggesties en de grafiek van het touchless-percentage"><figcaption><p>Het tabblad Touchless Intelligence: kerncijfers, verbeteringen, het percentage in de tijd en de grafiek waar touchless het eerst verloren gaat. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 ### Wat u ermee kunt doen
 
@@ -81,7 +81,7 @@ Het tabblad toont een **doel** (70 %, tenzij uw organisatie een ander doel gebru
 
 Klik rechtsboven op **Hoe touchless wordt berekend** (How touchless is calculated) om deze uitleg binnen DocBits te openen, met de cijfers van uw eigen periode (documenten in de periode, nog in behandeling, uitgesloten, gemeten).
 
-<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="Het paneel Hoe touchless wordt berekend met de cijfers van de periode"><figcaption><p>Het paneel <strong>Hoe touchless wordt berekend</strong>: de formule, <strong>Uw cijfers in deze periode</strong> (hier 2.425 documenten, 2.115 nog in behandeling, 310 gemeten) en wat elke uitkomst betekent. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology-nl.png" alt="Het paneel Hoe touchless wordt berekend met de cijfers van de periode"><figcaption><p>Het paneel <strong>Hoe touchless wordt berekend</strong>: de formule, <strong>Uw cijfers in deze periode</strong> (hier 2.425 documenten, 2.115 nog in behandeling, 310 gemeten) en wat elke uitkomst betekent. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 ### Hoe actueel zijn de cijfers
 
@@ -102,7 +102,7 @@ De **suborganisatie** die u bovenaan in DocBits hebt gekozen, beperkt de kerncij
 
 ### De vijf kerncijfers
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="De vijf kerncijfers: Puur touchless, AP touchless, AP ondersteund, Procesuitzonderingen en Diagnosedekking"><figcaption><p>De vijf kerncijfers. Hier is het pure percentage 50,3 % (156 documenten), dat is 19,7 punten onder het doel van 70 %, en de diagnosedekking is 100 %. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-kpi-cards-nl.png" alt="De vijf kerncijfers: Puur touchless, AP touchless, AP ondersteund, Procesuitzonderingen en Diagnosedekking"><figcaption><p>De vijf kerncijfers. Hier is het pure percentage 50,3 % (156 documenten), dat is 19,7 punten onder het doel van 70 %, en de diagnosedekking is 100 %. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 | Kaart | Toont | Voorbeeld (illustratief) |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ De **suborganisatie** die u bovenaan in DocBits hebt gekozen, beperkt de kerncij
 
 ### Touchless-percentage in de tijd
 
-<figure><img src="../.gitbook/assets/touchless-trend.png" alt="Lijngrafiek van het percentage puur touchless en AP touchless per dag met de doellijn van 70 procent"><figcaption><p>Het percentage per dag met de doellijn. Hier blijft het percentage tussen 40 en 60 % en daalt het sterk vanaf 10 oktober. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-trend-nl.png" alt="Lijngrafiek van het percentage puur touchless en AP touchless per dag met de doellijn van 70 procent"><figcaption><p>Het percentage per dag met de doellijn. Hier blijft het percentage tussen 40 en 60 % en daalt het sterk vanaf 10 oktober. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 Een grafiek met één lijn voor **Puur touchless**, één voor **AP touchless** en de **doellijn**. Korte periodes tonen dagpunten, lange periodes weekpunten.
 
@@ -126,7 +126,7 @@ Een grafiek met één lijn voor **Puur touchless**, één voor **AP touchless** 
 
 ### Waar touchless het eerst verloren gaat
 
-<figure><img src="../.gitbook/assets/touchless-blocking-stages.png" alt="Staafdiagram van de geblokkeerde documenten per eerste blokkeringsfase en reden"><figcaption><p>Geblokkeerde documenten naar de fase en reden waar ze het eerst stopten. Hier kost <strong>Veldvalidatie: verplicht veld ontbreekt</strong> de meeste documenten (58), gevolgd door <strong>Exportmapping mislukt</strong> (46) en <strong>PO-regel komt niet overeen</strong> (27). Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-blocking-stages-nl.png" alt="Staafdiagram van de geblokkeerde documenten per eerste blokkeringsfase en reden"><figcaption><p>Geblokkeerde documenten naar de fase en reden waar ze het eerst stopten. Hier kost <strong>Veldvalidatie: verplicht veld ontbreekt</strong> de meeste documenten (58), gevolgd door <strong>Exportmapping mislukt</strong> (46) en <strong>PO-regel komt niet overeen</strong> (27). Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 Een staafdiagram van **Geblokkeerde documenten** per pipelinefase: de **eerste** fase die een document stopte.
 
@@ -134,7 +134,7 @@ Een staafdiagram van **Geblokkeerde documenten** per pipelinefase: de **eerste**
 
 ### Leverancierskansen
 
-<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="De tabel Leverancierskansen met volume, puur percentage, verloren documenten, hoofdoorzaak, herstelbare documenten, verwachte stijging, betrouwbaarheid en status"><figcaption><p>De leverancierswachtrij (ingekort tot de eerste vier rijen). De eerste leverancier heeft 106 documenten, een puur percentage van 38,7 % en 65 herstelbare documenten, dus het oplossen ervan is <strong>+21 pp</strong> waard. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-queue-nl.png" alt="De tabel Leverancierskansen met volume, puur percentage, verloren documenten, hoofdoorzaak, herstelbare documenten, verwachte stijging, betrouwbaarheid en status"><figcaption><p>De leverancierswachtrij (ingekort tot de eerste vier rijen). De eerste leverancier heeft 106 documenten, een puur percentage van 38,7 % en 65 herstelbare documenten, dus het oplossen ervan is <strong>+21 pp</strong> waard. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 De wachtrij beantwoordt de vraag **"Welke leverancier pakken we eerst aan?"** Ze is gesorteerd op **Herstelbare** documenten, het hoogste eerst, 25 rijen per pagina.
 
@@ -161,7 +161,7 @@ Gebruik het zoekvak ("Search supplier number or name", zoek op leveranciersnumme
 
 ### Leveranciers vergelijken
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="De pagina Leveranciers vergelijken met drie leveranciers naast elkaar en een staafdiagram van hun uitkomsten"><figcaption><p>Drie leveranciers naast elkaar: puur percentage, verloren en herstelbare documenten, hoofdoorzaak, verwachte stijging en een staafdiagram van de uitkomsten. Elke knop <strong>Openen</strong> leidt naar de Leveranciersdiagnose. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-compare-suppliers-nl.png" alt="De pagina Leveranciers vergelijken met drie leveranciers naast elkaar en een staafdiagram van hun uitkomsten"><figcaption><p>Drie leveranciers naast elkaar: puur percentage, verloren en herstelbare documenten, hoofdoorzaak, verwachte stijging en een staafdiagram van de uitkomsten. Elke knop <strong>Openen</strong> leidt naar de Leveranciersdiagnose. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 Klik op **Leveranciers vergelijken** (Compare suppliers), vink **twee tot vijf** leveranciers aan (elk met zijn aantal geblokkeerde documenten) en klik op **Vergelijken** (Compare).
 

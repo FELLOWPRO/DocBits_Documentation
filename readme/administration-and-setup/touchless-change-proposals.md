@@ -21,7 +21,7 @@ Beheerders zien ook twee secties tussen de kerncijfers en de grafieken:
 * **Voorstellen voor geleerde regels** (Learned rule proposals): regels die DocBits heeft geleerd van de correcties van uw team, bijvoorbeeld "vervang voor leverancier X de waarde in veld Y". Controleer voordat u er een aanmaakt de documenten waarbij de regel een waarde zou vervangen die uw team had geaccepteerd. De sectie **Na activering** (After activation) toont de handmatige correcties van het doelveld voor en nadat een regel live ging.
 
 
-<figure><img src="../.gitbook/assets/touchless-consulting-report.png" alt="Het Adviesrapport met de drie belangrijkste voorstellen, een rangschikkingstabel en de problemen per domein"><figcaption><p>Het Adviesrapport: de belangrijkste voorstellen, een rangschikking van alle blokkades met documenten en geschat effect per maand, en de problemen per domein. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-consulting-report-nl.png" alt="Het Adviesrapport met de drie belangrijkste voorstellen, een rangschikkingstabel en de problemen per domein"><figcaption><p>Het Adviesrapport: de belangrijkste voorstellen, een rangschikking van alle blokkades met documenten en geschat effect per maand, en de problemen per domein. Voorbeeldorganisatie met demogegevens; de namen van leveranciers zijn fictief.</p></figcaption></figure>
 
 Beheerders vinden het **Adviesrapport** (Consulting report) onderaan het tabblad. Klik op **Rapport maken** (Create report) om het te laden. Het combineert, voor uw organisatie:
 

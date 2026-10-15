@@ -15,7 +15,7 @@ The two E-Documents pages only take effect once **e-invoice validation is switch
 
 Go to **Settings → Document Types → Invoice → Advanced Settings** and open the **E-Invoice Validation** section.
 
-<figure><img src="../../../../.gitbook/assets/edoc_enable_validation_toggle.png" alt="The E-Invoice Validation toggles on the Invoice document type"><figcaption><p>Turn e-invoice validation on or off per document type, with optional supplier notification</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-enable-toggle.png" alt="The E-Invoice Validation toggles on the Invoice document type"><figcaption><p>Turn e-invoice validation on or off per document type, with optional supplier notification</p></figcaption></figure>
 
 * **Validate incoming e-invoices** — the master switch. When **on**, every uploaded invoice is checked against the KoSIT XRechnung Schematron rules plus the L0 PDF/A-3 and L4 IBAN/VAT semantic checks, using the severities you set on the [Validation Rules](validation-rules.md) page. Invalid invoices are blocked. When **off**, invoices skip e-invoice validation entirely and the E-Invoice Validation and Notification Routing pages have no effect.
 * **Notify supplier on rejection** — appears once validation is enabled. When **on**, a rejected invoice triggers an email to the supplier listing the missing or incorrect fields so they can reissue it. Who receives and handles each finding is configured on the [Notification Routing](notification-routing.md) page.
@@ -24,4 +24,4 @@ Go to **Settings → Document Types → Invoice → Advanced Settings** and open
 
 You can also jump straight here with **Global Quick Search**: press <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> on Windows and Linux) anywhere in DocBits and type *e-invoice*.
 
-<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Global Quick Search jumping to E-Invoice Validation"><figcaption><p>Type "e-invoice" in Quick Search to jump straight to the toggle.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-quicksearch.png" alt="Global Quick Search jumping to E-Invoice Validation"><figcaption><p>Type "e-invoice" in Quick Search to jump straight to the toggle.</p></figcaption></figure>

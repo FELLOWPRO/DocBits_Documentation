@@ -172,6 +172,8 @@ DocBits przechodzi przez pięć etapów od góry do dołu. Każdy etap ma do trz
 
 Pod wykresem panel wymienia reguły każdego etapu według priorytetu, wraz z kolumnami, które każda reguła porównuje. Uwaga u góry informuje, skąd pochodzą tolerancje: z zestawu reguł lub, gdy `CUSTOM_RANGE_FOR_PO_TOLERANCE` jest włączone, z [ustawień typu dokumentu](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
 
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-pl.png" alt="Lista reguł według priorytetu dla każdego etapu z porównywanymi kolumnami, tolerancją i opcjami reguły"><figcaption><p>Pod wykresem: reguły każdego etapu z porównywanymi kolumnami, tolerancją oraz opcjami Automatyczne dopasowanie, Dopasowanie ręczne i Awaryjny.</p></figcaption></figure>
+
 ***
 
 ## Domyślny zestaw zasad

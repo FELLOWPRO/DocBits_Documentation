@@ -2,58 +2,114 @@
 
 ## Przegląd
 
-W sekcji "Więcej ustawień" znajdziesz różne opcje związane z poszczególnymi typami dokumentów. Po aktywowaniu ustawienia będzie ono miało zastosowanie tylko do danego typu dokumentu. Ta strona zawiera krótki przegląd tego, co robi każde ustawienie.
+Sekcja **Więcej ustawień** zawiera opcje, które należą do jednego typu dokumentu, na przykład do typu Faktura. Ustawienie, które tu włączysz, obowiązuje tylko dla tego typu dokumentu. Strona składa się ze zwijanych kart, po jednej na temat. Otwórz kartę, aby zobaczyć jej ustawienia.
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-overview-pl.png" alt="Karty strony Więcej ustawień dla typu dokumentu Faktura"><figcaption><p>Karty strony Więcej ustawień, wszystkie zwinięte.</p></figcaption></figure>
 
 ## Jak uzyskać dostęp
 
-1.  Przejdź do **Ustawienia** → **Ustawienia globalne** → **Typy dokumentów**.
+1. Przejdź do **Ustawienia** → **Ustawienia globalne** → **Typy dokumentów**.
+2. Wybierz typ dokumentu i kliknij **Więcej ustawień**.
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_1.png" alt=""><figcaption></figcaption></figure>
-2.  Wybierz żądany typ dokumentu i kliknij **Więcej ustawień**.
+Ścieżka nawigacji u góry strony pokazuje **Ustawienia / Typy dokumentów / Więcej ustawień**. Asystent ustawień po prawej stronie strony wyjaśnia ustawienia otwartej karty.
 
-    <figure><img src="../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
-
-## Ekstrakcja tabeli
-
-* **Pomiń walidację tabeli**: Umożliwia pominięcie standardowego procesu walidacji danych tabeli. Ta opcja jest przydatna w scenariuszach, w których wymagana jest elastyczna obsługa danych lub gdy niektóre kroki walidacji można pominąć, aby poprawić wydajność podczas przetwarzania danych.
-
-## Wykrywanie duplikatów
-
-* [**Wykrywanie duplikatów dokumentów**](duplicate-document-handling.md): Umożliwia wykrywanie i obsługę duplikatów dokumentów.
-
-## W recenzji
-
-* **Formularz przeglądu projektu**: Skonfiguruj układ formularzy przeglądowych za pomocą **Kreatora układów**. Ten układ określa, jak treść jest prezentowana podczas procesu przeglądu dokumentu. Aby uzyskać szczegółowe instrukcje dotyczące korzystania z **Kreatora układów**, kliknij [tutaj](../../../../setup/document-types/layout-builder.md).
-
-## Odrzuć
-
-* **Formularz odrzucenia projektu**: Skonfiguruj układ za pomocą **Kreatora układów** dla formularza odrzucenia wyświetlanego podczas procesu przeglądu dokumentu. Aby uzyskać szczegółowe instrukcje dotyczące korzystania z **Kreatora układów**, kliknij [tutaj](../../../../setup/document-types/layout-builder.md).
-
-## Eksport formatu PDF
-
-* **Format pliku eksportu**: Umożliwia określenie formatu PDF, który ma być używany podczas eksportu dokumentów.
-
-## Zatwierdzenie
-
-* **Zatwierdź przed eksportem**: Zapewnia, że dokumenty muszą być zatwierdzone przed ich eksportem z systemu. Możesz również skonfigurować układ ekranu zatwierdzenia za pomocą **Kreatora układów**. Aby uzyskać szczegółowe instrukcje dotyczące korzystania z **Kreatora układów**, kliknij [tutaj](../../../../setup/document-types/layout-builder.md).
-* **Zatwierdź przed eksportem V2**: Aktywuje Aprobata V2, która wspiera użycie dynamicznych pól zamiast statycznych. Możesz również dostosować układ ekranu zatwierdzenia za pomocą **Kreatora układów**. Aby uzyskać szczegółowe instrukcje dotyczące korzystania z **Kreatora układów**, kliknij [tutaj](../../../../setup/document-types/layout-builder.md).
-* **Drugie zatwierdzenie**: Dodaje dodatkową warstwę zatwierdzenia dla lepszej walidacji i większej kontroli nad przetwarzaniem dokumentów. Możesz również dostosować układ ekranu zatwierdzenia za pomocą **Kreatora układów**. Aby uzyskać szczegółowe instrukcje dotyczące korzystania z **Kreatora układów**, kliknij [tutaj](../../../../setup/document-types/layout-builder.md).
-* [**Stempel zatwierdzenia**](approval/approval-stamp.md): Dodaje stempel do dokumentu, gdy jest on zatwierdzony.
-* [**Historia zatwierdzeń**](approval/approval-history.md): Umożliwia wyświetlanie historii zatwierdzeń zarówno na ekranie zatwierdzenia, jak i w walidacji pól.
+| Karta | Co tam ustawiasz |
+| ----- | ---------------- |
+| Zamówienie zakupu | Dopasowanie PO, tolerancje, eksport linii PO, numery pozycji dostawcy |
+| Zarządzaj układami | Przełącznik przeglądu Zarządzaj układami |
+| Niestandardowe reguły walidacji | Własne reguły walidacji dla tego typu dokumentu |
+| Zasady transformacji | Reguły, które odczytują wartość, zmieniają ją w krokach i zapisują z powrotem |
+| Zatwierdzenie i odrzucenie | Proces zatwierdzania oraz formularze przeglądu i odrzucenia |
+| [Weryfikacja podatkowa Vertex](vertex-tax-verification.md) | Projektowanie formularza weryfikacji podatku Vertex |
+| Walidacja e-faktury | Walidacja faktur XRechnung, ZUGFeRD i Factur-X |
+| Ekstrakcja tabeli | Pomijanie walidacji wyodrębnionych tabel |
+| Ustawienia eksportu | Wielokrotny eksport, format PDF, alternatywny eksport |
+| Wykrywanie duplikatów | Wykrywanie i blokowanie duplikatów dokumentów |
 
 ## Zamówienie zakupu
 
+Karta **Zamówienie zakupu** (**Dopasowanie i walidacja zamówień**) określa, jak dokumenty tego typu są dopasowywane do zamówień zakupu.
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-options-pl.png" alt="Karta Zamówienie zakupu z przełącznikami"><figcaption><p>Karta Zamówienie zakupu z jej opcjami.</p></figcaption></figure>
+
+* [**Zamówienie zakupu**](purchase-order/purchase-order.md): Przełącza, czy dokument jest przetwarzany na ekranie dopasowania zamówienia zakupu. Możesz również określić, na podstawie jakiej ilości odbywa się dopasowanie.
+* [**Serwer dopasowania PO**](purchase-order/purchase-order-matching-rules.md): Dopasowuje za pomocą konfigurowalnego zestawu reguł. **Konfiguruj reguły dopasowywania zamówień** otwiera [stronę reguł](purchase-order/purchase-order-matching-rules.md).
 * [**Tabela PO w kreatorze układów**](purchase-order/po-table-in-layout-builder.md): Umożliwia dodanie tabel zamówień zakupu w kreatorze układów dla dostosowanych układów dokumentów.
-* [**Automatyczne sprawdzanie aktualizacji PO**](purchase-order/auto-check-for-po-updates.md): Po włączeniu system wyświetla wizualny wskaźnik na ekranie dopasowania zamówienia zakupu, aby pokazać, kiedy zamówienie zakupu zostało zaktualizowane, zachęcając użytkowników do odświeżenia w celu uzyskania najnowszych informacji.
-* **Automatyczna aktualizacja danych PO**: Aktywacja tego ustawienia automatycznie zaktualizuje dane PO, gdy nowe dane będą dostępne.
-* [**Status linii PO zużytej**](purchase-order/consumed-po-line-status.md): To ustawienie poprawia ekran dopasowywania zamówienia zakupu, stosując kolorowe oznaczenia dla linii zamówienia zakupu.
-* [**Oblicz cenę jednostkową zamówienia**](purchase-order/calculate-po-unit-price.md): Umożliwia obliczenie jednostkowej ceny PO na podstawie kwoty netto i ilości, zamiast jej wydobywania.
-* [**Zamówienie zakupu**](purchase-order/purchase-order.md): Przełącza, czy dokument powinien być przetwarzany na ekranie dopasowania zamówienia zakupu. Możesz również określić, na podstawie jakiego terminu ilościowego powinien opierać się proces dopasowania.
-* [**Eksportuj niepasujące linie PO**](purchase-order/export-not-matched-po-lines.md): Ta funkcja kontroluje eksport linii zamówienia zakupu. Po wyłączeniu eksportowane są tylko dopasowane linie. Po włączeniu eksportowane są wszystkie linie zamówienia zakupu, nawet jeśli nie są dopasowane do linii potwierdzenia zamówienia.
-* [**Ustawienie tolerancji PO**](purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md): Ta funkcja pozwala ustawić poziomy tolerancji dla ilości i ceny jednostkowej, uwzględniając drobne niezgodności bez oznaczania ich jako różnice.
-* [**Dodatkowe ustawienie tolerancji PO**](purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md#ustawienie-do-konfigurowania-dodatkowych-ustawien-tolerancji-zamowienia-zakupu): Ta funkcja pozwala ustawić dodatkowe poziomy tolerancji dla frachtu, opłat i podatków, uwzględniając drobne niezgodności bez oznaczania ich jako różnice.
-* [**Alternatywny eksport**](purchase-order/alternate-export.md): Umożliwia skonfigurowanie alternatywnego eksportu dla określonych statusów.
-* [**Wyłącz statusy PO**](purchase-order/purchase-order-disable-statuses.md): Umożliwia wyłączenie określonych statusów z uwzględnienia w procesie dopasowania.
-* **Ignoruj już dopasowane linie**: Aktywacja tego ustawienia pominie linie, które już zostały dopasowane podczas nowego procesu dopasowania.
-* [**Aktualizacja dokumentu Status zamówienia zakupu**](purchase-order/update-document-purchase-order-status.md): Gdy jest włączone, kolumna Status PO na tablicy rozdzielczej jest automatycznie aktualizowana za każdym razem, gdy zmienia się status zamówienia zakupu.
-* [**Mapa numerów przedmiotów dostawcy**](purchase-order/supplier-item-number-map-admin-documentation.md): Ustawienie pomocnicze, które mapuje numery przedmiotów dostawcy na wewnętrzne numery przedmiotów, zapewniając dokładność w zarządzaniu zapasami i zamówieniami zakupu.
+* [**Automatyczne sprawdzanie aktualizacji zamówień**](purchase-order/auto-check-for-po-updates.md): Pokazuje wizualny wskaźnik na ekranie dopasowania zamówienia zakupu, gdy zamówienie zakupu zostało zaktualizowane, zachęcając użytkowników do odświeżenia.
+* **Automatyczna aktualizacja danych PO**: Automatycznie aktualizuje dane PO, gdy dostępne są nowe dane. To ustawienie należy do opcji **Automatyczne sprawdzanie aktualizacji zamówień**.
+* [**Status zużytej linii zamówienia**](purchase-order/consumed-po-line-status.md): Stosuje kolorowe oznaczenia dla linii zamówienia zakupu na ekranie dopasowania.
+* [**Oblicz cenę jednostkową zamówienia**](purchase-order/calculate-po-unit-price.md): Oblicza jednostkową cenę PO na podstawie kwoty netto i ilości, zamiast ją wyodrębniać.
+* [**Eksportuj niepasujące wiersze zamówienia**](purchase-order/export-not-matched-po-lines.md): Po wyłączeniu eksportowane są tylko dopasowane linie. Po włączeniu eksportowane są wszystkie linie zamówienia zakupu, nawet jeśli nie są dopasowane.
+* **Ignoruj już dopasowane linie**: Pomija linie, które zostały już dopasowane podczas nowego procesu dopasowania.
+* [**Aktualizacja dokumentu Status zamówienia zakupu**](purchase-order/update-document-purchase-order-status.md): Aktualizuje kolumnę Status PO na tablicy rozdzielczej za każdym razem, gdy zmienia się status zamówienia zakupu.
+* [**Zezwalaj na automatyczny eksport dla niepasujących wierszy zamówienia zakupu**, **Automatyczne dopasowanie i eksport widoczne dla** oraz **Użyj wierszy kwoty netto dla dopasowanej kwoty całkowitej widocznej dla**](purchase-order/auto-match-and-export-options.md): Określają, kto widzi skróty Automatyczne dopasowanie i eksport oraz które dokumenty mogą być eksportowane automatycznie.
+
+### Ustawienie tolerancji PO
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance-pl.png" alt="Blok Ustawienie tolerancji PO z tolerancją ilości i ceny jednostkowej"><figcaption><p>Tolerancja dla ilości i ceny jednostkowej.</p></figcaption></figure>
+
+[**Ustawienie tolerancji PO**](purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md) pozwala ustawić poziomy tolerancji dla ilości i ceny jednostkowej, tak aby drobne niezgodności nie były oznaczane jako rozbieżności. Dla każdej wartości wybierasz wielkość i jednostkę: wartość bezwzględną (**Wartość**) lub procent (**%**). Blok zawiera także [**Dodatkowe ustawienie tolerancji PO**](purchase-order/purchase-order-tolerance-settings-additional-purchase-order-tolerance.md#ustawienie-do-konfigurowania-dodatkowych-ustawien-tolerancji-zamowienia-zakupu) dla frachtu, opłat i podatków oraz [**Statusy wyłączania PO**](purchase-order/purchase-order-disable-statuses.md).
+
+{% hint style="info" %}
+Gdy atrybut typu dokumentu `CUSTOM_RANGE_FOR_PO_TOLERANCE` jest włączony, tolerancje ceny jednostkowej i ilości pochodzą z tych ustawień typu dokumentu, a nie z zestawu reguł. Diagram reguł na [stronie reguł dopasowywania PO](purchase-order/purchase-order-matching-rules.md) pokazuje w takim przypadku uwagę.
+{% endhint %}
+
+### Mapa numerów pozycji dostawcy
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-supplier-item-map-pl.png" alt="Tabela Mapa numerów pozycji dostawcy"><figcaption><p>Mapa numerów pozycji dostawcy.</p></figcaption></figure>
+
+[**Mapa numerów pozycji dostawcy**](purchase-order/supplier-item-number-map-admin-documentation.md) mapuje numery pozycji dostawcy na Twoje wewnętrzne numery pozycji, dzięki czemu linie są dopasowywane nawet wtedy, gdy dostawca używa własnych numerów. Wyszukuj według kolumny, aby znaleźć wpis.
+
+## Zarządzaj układami, Niestandardowe reguły walidacji i Zasady transformacji
+
+Bezpośrednio pod kartą Zamówienie zakupu znajdują się trzy karty:
+
+* **Zarządzaj układami** włącza przegląd Zarządzaj układami dla tego typu dokumentu. Zobacz [Layout Manager](../layout-manager/README.md).
+* **Niestandardowe reguły walidacji** włącza Twoje własne reguły walidacji. **Zarządzaj regułami walidacji** je otwiera. Zobacz [Niestandardowe reguły walidacji](../custom-validation-rules.md).
+* **Zasady transformacji** włącza reguły transformacji. **Zarządzaj regułami transformacji** je otwiera. Zobacz [Zasady transformacji](../transformation-rules.md).
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-rule-toggles-pl.png" alt="Karty Zarządzaj układami, Niestandardowe reguły walidacji i Zasady transformacji"><figcaption><p>Trzy karty z ich przełącznikami.</p></figcaption></figure>
+
+## Zatwierdzenie i odrzucenie
+
+Karta **Zatwierdzenie i odrzucenie** zawiera proces zatwierdzania oraz formularze, które użytkownicy widzą podczas przeglądu lub odrzucania dokumentu.
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-approval-pl.png" alt="Karta Zatwierdzenie i odrzucenie"><figcaption><p>Karta Zatwierdzenie &#x26; odrzucenie.</p></figcaption></figure>
+
+* **Zatwierdź przed eksportem**: Dokumenty muszą być zatwierdzone, zanim będzie można je wyeksportować. **Formularz zatwierdzenia projektu** otwiera **Kreator układów** dla ekranu zatwierdzenia.
+* **Zatwierdź przed eksportem V2**: Aktywuje Aprobata V2, która obsługuje pola dynamiczne zamiast statycznych.
+* **Drugie zatwierdzenie**: Dodaje dodatkową warstwę zatwierdzenia.
+* [**Pieczęć zatwierdzenia**](approval/approval-stamp.md): Dodaje stempel do dokumentu, gdy jest on zatwierdzony.
+* [**Historia zatwierdzeń**](approval/approval-history.md): Pokazuje historię zatwierdzeń na ekranie zatwierdzenia i w walidacji pól.
+* **Formularz przeglądu projektu**: Konfiguruje układ formularza przeglądu za pomocą **Kreatora układów**.
+* **Formularz odrzucenia projektu**: Konfiguruje układ formularza odrzucenia za pomocą **Kreatora układów**.
+
+Informacje o **Kreatorze układów** znajdziesz w [Layout Manager](../layout-manager/README.md).
+
+## Weryfikacja podatkowa Vertex
+
+Karta **Weryfikacja podatkowa Vertex** zawiera przycisk **Weryfikacja podatkowa Design Vertex**. Otwiera on Kreator układów dla formularza, który użytkownicy widzą, gdy DocBits porównuje podatek dostawcy z podatkiem obliczonym przez Vertex. Integrację, tolerancję i wynik opisuje strona [Weryfikacja podatkowa Vertex](vertex-tax-verification.md).
+
+## Walidacja e-faktury
+
+Karta **Walidacja e-faktury** włącza walidację przychodzących e-faktur i pozwala zdecydować, czy dostawca jest powiadamiany o odrzuceniu faktury. Zobacz [Walidacja e-faktury](../../../document-processing/e-documents/validation-rules.md).
+
+## Ekstrakcja tabeli
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-table-extraction-pl.png" alt="Karta Ekstrakcja tabeli"><figcaption><p>Karta Ekstrakcja tabeli.</p></figcaption></figure>
+
+* **Pomiń walidację tabeli**: Pomija standardową walidację danych tabeli. Używaj tej opcji, gdy wymagana jest elastyczna obsługa danych lub gdy niektóre kroki walidacji można pominąć, aby poprawić wydajność.
+
+## Ustawienia eksportu
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-export-settings-pl.png" alt="Karta Ustawienia eksportu"><figcaption><p>Karta Ustawienia eksportu.</p></figcaption></figure>
+
+* **Wielokrotny eksport**: Umożliwia wyeksportowanie dokumentu więcej niż raz.
+* **Eksportuj format PDF**: **Format pliku eksportowego** określa format PDF używany podczas eksportu dokumentów, na przykład **Oryginalny dokument**.
+* [**Alternatywny eksport**](purchase-order/alternate-export.md): Konfiguruje alternatywny eksport dla wybranego statusu dokumentu. Wybierz **Status** oraz **Eksportuj konfigurację**, która jest dla niego uruchamiana, a następnie włącz ustawienie.
+
+## Wykrywanie duplikatów
+
+<figure><img src="../../../../../.gitbook/assets/doc-type-settings-duplicate-detection-pl.png" alt="Karta Wykrywanie duplikatów"><figcaption><p>Karta Wykrywanie duplikatów.</p></figcaption></figure>
+
+Karta zawiera **Wykrywanie duplikatów dokumentów** z polami, które decydują, co jest duplikatem, oraz z przedziałem czasu, w którym dokumenty są porównywane, a także opcje **Wykrywanie duplikatów faktur**, **Blokuj eksport duplikatów dokumentów** i **Zignoruj linię wolną od podatku**. Wszystkie trzy mają etykietę **Zalecony**. Informacje o obsłudze oznaczonego dokumentu znajdziesz w [Wykrywanie duplikatów](duplicate-document-handling.md).

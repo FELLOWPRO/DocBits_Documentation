@@ -26,10 +26,6 @@ Reguły są definiowane dla każdego **typu dokumentu** i działają na każdym 
 | Dozwolone są tylko waluty znane Twojemu ERP | błędy eksportu w ERP | **List of Values** dla Currency |
 | Informowanie użytkowników o nietypowych wartościach bez blokowania | niemożliwe | dowolna reguła o ważności **Warning** |
 
-{% hint style="info" %}
-Dopóki funkcja jest w wersji beta, opisane poniżej ustawienia pojawiają się tylko wtedy, gdy strona ustawień **Typy dokumentów** zostanie otwarta z dopisanym do adresu `?beta=true`.
-{% endhint %}
-
 ## Włączanie niestandardowych reguł walidacji
 
 Niestandardowe reguły walidacji włącza się **dla każdego typu dokumentu**. Nie ma przełącznika obejmującego całą organizację.

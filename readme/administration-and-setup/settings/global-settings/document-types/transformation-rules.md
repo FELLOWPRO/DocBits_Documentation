@@ -1,5 +1,7 @@
 # Transformationsregeln
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4" %}
+
 ## Überblick
 
 Transformationsregeln bereinigen oder schreiben extrahierte Daten **automatisch** um, jedes Mal, wenn ein Dokument verarbeitet und jedes Mal, wenn es gespeichert wird. Eine Regel kann Folgendes ändern:

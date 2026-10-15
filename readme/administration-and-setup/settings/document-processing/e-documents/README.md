@@ -15,7 +15,7 @@ De pagina's van E-documenten werken pas zodra de **e-factuurvalidatie is ingesch
 
 Ga naar **Instellingen → Documenttypen → Factuur → Geavanceerde instellingen** en open de sectie **E-factuurvalidatie**.
 
-<figure><img src="../../../../.gitbook/assets/edoc_enable_validation_toggle.png" alt="De schakelaars voor e-factuurvalidatie op het documenttype Factuur"><figcaption><p>Schakel e-factuurvalidatie per documenttype in of uit, met optionele leveranciersnotificatie</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-enable-toggle-nl.png" alt="De schakelaars voor e-factuurvalidatie op het documenttype Factuur"><figcaption><p>Schakel e-factuurvalidatie per documenttype in of uit, met optionele leveranciersnotificatie</p></figcaption></figure>
 
 * **Binnenkomende e-facturen valideren** — de hoofdschakelaar. Wanneer **ingeschakeld** wordt elke geüploade factuur gecontroleerd aan de hand van de KoSIT XRechnung Schematron-regels plus de semantische controles L0 (PDF/A-3) en L4 (IBAN/btw), met de ernstniveaus die u op de pagina [Validatie van elektronische facturen](validation-rules.md) hebt ingesteld. Ongeldige facturen worden geblokkeerd. Wanneer **uitgeschakeld** slaan facturen de e-factuurvalidatie volledig over en hebben de pagina's Validatie van elektronische facturen en Notificatierouting geen effect.
 * **Leverancier melden bij afwijzing** — verschijnt zodra validatie is ingeschakeld. Wanneer **ingeschakeld** stuurt een afgewezen factuur een e-mail naar de leverancier met de ontbrekende of onjuiste velden, zodat hij de factuur opnieuw kan uitgeven. Wie elke bevinding ontvangt en afhandelt, configureert u op de pagina [Notificatierouting](notification-routing.md).
@@ -24,4 +24,4 @@ Ga naar **Instellingen → Documenttypen → Factuur → Geavanceerde instelling
 
 U kunt ook direct hierheen springen met de **globale snelzoekfunctie**: druk op <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> op Windows en Linux) ergens in DocBits en typ *e-invoice*.
 
-<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="Globale snelzoekfunctie springt naar E-factuurvalidatie"><figcaption><p>Typ "e-invoice" in de snelzoekfunctie om direct naar de schakelaar te springen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-quicksearch-nl.png" alt="Globale snelzoekfunctie springt naar E-factuurvalidatie"><figcaption><p>Typ "e-invoice" in de snelzoekfunctie om direct naar de schakelaar te springen.</p></figcaption></figure>

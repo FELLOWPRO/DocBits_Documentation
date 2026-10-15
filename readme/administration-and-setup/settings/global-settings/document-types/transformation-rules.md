@@ -30,10 +30,6 @@ As regras de transformação substituem a maioria dos pequenos scripts que as or
 | O número do pedido de compra tem zeros à esquerda ou um prefixo que o pedido de compra não tem | Campo de cabeçalho *Purchase Order*: Aparar `0` à esquerda ou Afixo: remover prefixo |
 | Os números de item diferem das linhas do pedido de compra em maiúsculas/minúsculas, espaços ou prefixos | Coluna de tabela *ITEM_NUMBER*: Afixo: remover prefixo → Desinfetar → UPPERCASE |
 
-{% hint style="info" %}
-Enquanto o recurso está em beta, as configurações descritas abaixo só aparecem quando a página de configurações **Document Types** é aberta com `?beta=true` anexado ao endereço.
-{% endhint %}
-
 ## Ativar as regras de transformação
 
 As regras de transformação são ativadas **por tipo de documento** por um **administrador da organização**.

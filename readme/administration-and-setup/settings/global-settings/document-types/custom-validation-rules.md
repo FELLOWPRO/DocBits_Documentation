@@ -26,9 +26,6 @@ Regels worden per **documenttype** gedefinieerd en worden uitgevoerd op elk docu
 | Alleen valuta's die uw ERP kent zijn toegestaan | exportfouten in het ERP | **List of Values** op Currency |
 | Gebruikers informeren over ongebruikelijke waarden zonder hen te blokkeren | niet mogelijk | elke regel met de ernst **Warning** |
 
-{% hint style="info" %}
-Zolang de functie in bèta is, verschijnen de hieronder beschreven instellingen alleen wanneer de instellingenpagina **Document Types** wordt geopend met `?beta=true` achter het adres.
-{% endhint %}
 
 ## Aangepaste validatieregels inschakelen
 
@@ -39,11 +36,11 @@ Aangepaste validatieregels worden **per documenttype** ingeschakeld. Er is geen 
 3. Open het gedeelte **Custom Validation Rules** en zet de schakelaar aan.
 4. Klik op **Manage validation rules** om de regellijst te openen.
 
-<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="De regelschakelaars in de aanvullende instellingen van een documenttype"><figcaption><p>De schakelaars voor Manage Layouts, Custom Validation Rules en Transformation Rules</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="De regelschakelaars in de aanvullende instellingen van een documenttype"><figcaption><p>De schakelaars voor Manage Layouts, Custom Validation Rules en Transformation Rules</p></figcaption></figure>
 
-Vanaf nu toont de kaart van het documenttype ook een link **Validation Rules** en een link **Logs** voor de uitvoeringslogboeken.
+Vanaf nu toont de kaart van het documenttype ook een link **Validation Rules**.
 
-<figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="De kaart van het documenttype met de link Validation Rules"><figcaption><p>De links op de kaart van het documenttype</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="De kaart van het documenttype met de link Validation Rules"><figcaption><p>De links op de kaart van het documenttype</p></figcaption></figure>
 
 {% hint style="warning" %}
 **De schakelaar vervangt de ingebouwde bedragcontroles.** Zolang aangepaste validatieregels voor een documenttype zijn ingeschakeld, worden de vaste controles "totaalbedrag = nettobedrag + btw-bedrag" en de controles op regelbedrag en korting daarvoor **niet** uitgevoerd; de configureerbare regels nemen hun plaats in. Maak de controles waarop u vertrouwt opnieuw aan als regels (zie de [recepten](#recepten)) voordat u de schakelaar aanzet. Door de schakelaar uit te zetten worden de ingebouwde controles hersteld. Alle andere veldvalidaties (verplichte velden, formaten, stamgegevens) blijven gewoon draaien.
@@ -53,7 +50,7 @@ Vanaf nu toont de kaart van het documenttype ook een link **Validation Rules** e
 
 **Document Types → (documenttype) → Validation Rules** toont alle regels van het documenttype.
 
-<figure><img src="../../../../.gitbook/assets/validation-rules-list.png" alt="De lijst met validatieregels"><figcaption><p>De regellijst met niveau, ernst, doelveld en bron van elke regel</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-list.png" alt="De lijst met validatieregels"><figcaption><p>De regellijst met niveau, ernst, doelveld en bron van elke regel</p></figcaption></figure>
 
 Elke kaart toont de naam en beschrijving van de regel en de badges voor het **niveau** (Header / Line / Table), de **ernst** (Error / Warning), het **veld** waaraan de fout is gekoppeld en de **bron**. Gebruik de schakelaar rechts om een regel te activeren of te deactiveren en het menu **⋮** om de regel te dupliceren of te verwijderen. Filter de lijst op niveau (**All / Header / Line / Table**) en op status (**All / Active / Inactive**), of doorzoek hem.
 
@@ -73,7 +70,7 @@ Klik op **New rule**. De builder heeft drie stappen. **Test rule** en **Save** s
 
 ### Stap 1 — Naam en bereik
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step1.png" alt="Stap 1 van de validatieregel-builder voor een regel op een headerveld"><figcaption><p>Stap 1 voor een regel op een headerveld</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step1.png" alt="Stap 1 van de validatieregel-builder voor een regel op een headerveld"><figcaption><p>Stap 1 voor een regel op een headerveld</p></figcaption></figure>
 
 | Instelling | Wat het doet |
 | --- | --- |
@@ -84,7 +81,6 @@ Klik op **New rule**. De builder heeft drie stappen. **Test rule** en **Save** s
 | **Description** | Optionele toelichting voor andere beheerders. |
 | **Table name** | *Alleen tabelregel.* De tabel waarvan de rijen worden gecontroleerd, bijvoorbeeld `INVOICE_TABLE`. |
 | **Attach error to field / column** | Het veld (of, bij tabelregels, de kolom) dat de fout op het validatiescherm toont. |
-| **Log execution** | Schrijft één logboekregel per evaluatie, inclusief de reden waarom de regel wel of niet van toepassing was. Zie [Logboeken](#logboeken). |
 
 #### Regelniveaus
 
@@ -94,17 +90,17 @@ Klik op **New rule**. De builder heeft drie stappen. **Test rule** en **Save** s
 | **Table line** | eenmaal voor elke rij van de geselecteerde tabel | de cel van de mislukte rij | `row.*` (de huidige rij), `header.*`, `doc.*` | "De hoeveelheid moet groter zijn dan nul" |
 | **Whole table** | eenmaal per document, waarbij alle rijen samen worden bekeken | een headerveld | totalen over de rijen (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | "De nettobedragen van de regels moeten optellen tot het nettobedrag" |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-step1.png" alt="Stap 1 voor een tabelregel"><figcaption><p>Een tabelregel: de tabel en de kolom die de fout toont</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-line-step1.png" alt="Stap 1 voor een tabelregel"><figcaption><p>Een tabelregel: de tabel en de kolom die de fout toont</p></figcaption></figure>
 
 ### Stap 2 — Applies when
 
 Bepaal of de regel voor elk document wordt uitgevoerd of alleen voor sommige. Laat het veld leeg om elk document te controleren. Voeg anders voorwaarderegels toe — bijvoorbeeld "Document Origin is Deutsch" en "Total Amount greater than 250" — en combineer ze met **All** / **ANY** en geneste groepen.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-nested-example.png" alt="Een Applies when-voorwaarde"><figcaption><p>De controle wordt alleen uitgevoerd voor Duitse documenten boven 250 met EUR of zonder valuta</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-applies-when.png" alt="Een Applies when-voorwaarde"><figcaption><p>De controle wordt alleen uitgevoerd voor Duitse documenten boven 250 met EUR of zonder valuta</p></figcaption></figure>
 
 Voor tabelregels kan de voorwaarde ook de kolommen van de huidige rij gebruiken en wordt hij **rij voor rij** geëvalueerd: rijen die niet overeenkomen worden eenvoudigweg niet gecontroleerd.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-row-condition.png" alt="Een rijvoorwaarde"><figcaption><p>Alleen artikelregels (rijen met een artikelnummer) worden gecontroleerd</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-row-condition.png" alt="Een rijvoorwaarde"><figcaption><p>Alleen artikelregels (rijen met een artikelnummer) worden gecontroleerd</p></figcaption></figure>
 
 Voorwaarden worden uitgebreid uitgelegd — elk veld, elke operator en elke vergelijkingsregel, met veel voorbeelden — op [Regelvoorwaarden (Applies when)](rule-conditions-applies-when.md).
 
@@ -112,9 +108,11 @@ Voorwaarden worden uitgebreid uitgelegd — elk veld, elke operator en elke verg
 
 Kies één controle. De instellingen onder de kaarten veranderen met de controle die u kiest.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step3-required.png" alt="Stap 3 met de controle Required geselecteerd"><figcaption><p>De zeven controles. Required heeft geen verdere instellingen nodig</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step3-checks.png" alt="Stap 3 met de controle Required geselecteerd"><figcaption><p>De zeven controles. Required heeft geen verdere instellingen nodig</p></figcaption></figure>
 
 #### Required — veld moet een waarde hebben
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-required.png" alt="een Required-controle"><figcaption><p>Een Required-controle: geen verdere instellingen</p></figcaption></figure>
 
 Mislukt wanneer het veld leeg is (ontbreekt of alleen spaties bevat). Geen verdere instellingen.
 
@@ -126,7 +124,7 @@ Gebruik het samen met **Applies when** om een veld **voorwaardelijk** verplicht 
 
 Een rekenkundige vergelijking. De expressie bevat precies **één** vergelijking (`==`, `!=`, `>`, `>=`, `<`, `<=`); beide zijden mogen `+ - * /`, getallen, haakjes en veldverwijzingen gebruiken.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-formula.png" alt="Een Formula-controle"><figcaption><p>Een formule voor de hele tabel met een tolerantie en plaatsaanduidingen in het bericht</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-formula.png" alt="Een Formula-controle"><figcaption><p>Een formule voor de hele tabel met een tolerantie en plaatsaanduidingen in het bericht</p></figcaption></figure>
 
 * Klik op de chips onder de expressie om functies en veldvoorvoegsels in te voegen: `sum()`, `count()`, `min()`, `max()`, `default()`, `coalesce()`, `header.`, `doc.`. Terwijl u een veldnaam typt, opent zich een lijst met passende velden.
 * `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` werken over alle rijen en zijn alleen beschikbaar op het niveau **Whole table**. `count()` telt de rijen waarin de kolom gevuld is.
@@ -147,6 +145,8 @@ Voorbeelden:
 
 #### Pattern — formaat / regex controleren
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-pattern.png" alt="een Pattern-controle"><figcaption><p>Een Pattern-controle met een reguliere expressie</p></figcaption></figure>
+
 De waarde moet overeenkomen met een **reguliere expressie**. De expressie zoekt in de waarde, dus veranker haar met `^` (begin) en `$` (einde) wanneer de hele waarde moet overeenkomen. Vink **Case-insensitive match** aan als hoofdletters er niet toe doen.
 
 | Formaat | Reguliere expressie |
@@ -161,9 +161,11 @@ De waarde moet overeenkomen met een **reguliere expressie**. De expressie zoekt 
 
 De waarde moet een getal zijn tussen **Minimum** en **Maximum** (beide inbegrepen). Vul er één of beide in. Een waarde die geen getal is, mislukt. Opgemaakte bedragen zoals `1.234,56` worden begrepen.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-range.png" alt="Een Range-controle"><figcaption><p>Range met alleen een minimum: hoeveelheden moeten minstens 0.01 zijn</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Een Range-controle"><figcaption><p>Range met alleen een minimum: hoeveelheden moeten minstens 0.01 zijn</p></figcaption></figure>
 
 #### Compare fields — bijv. vervaldatum ≥ factuurdatum
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-compare.png" alt="een Compare fields-controle"><figcaption><p>Compare fields: een veld vergelijken met een ander veld, met vandaag of een vaste waarde</p></figcaption></figure>
 
 Vergelijkt de waarde van een veld met een ander veld, met **vandaag** of met een vaste waarde, met *gelijk aan*, *niet gelijk aan*, *groter dan*, *kleiner dan*, *op of na (≥)* of *op of vóór (≤)*. Getallen worden als getallen vergeleken en datums als datums.
 
@@ -173,9 +175,13 @@ Vergelijkt de waarde van een veld met een ander veld, met **vandaag** of met een
 
 #### Allowed values — uit een vaste lijst
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="een Allowed values-controle"><figcaption><p>Allowed values: één waarde per regel, eventueel zonder onderscheid tussen hoofd- en kleine letters</p></figcaption></figure>
+
 De waarde moet een van de door u getypte waarden zijn, **één waarde per regel**. Optioneel hoofdletterongevoelig. Geschikt voor korte, stabiele lijsten (`EUR`, `CHF`, `USD`).
 
 #### List of Values — uit een benoemde LOV
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-lov.png" alt="een List of Values-controle"><figcaption><p>List of Values: de waarden komen uit een benoemde lijst uit de instellingen</p></figcaption></figure>
 
 Zoals *Allowed values*, maar de waarden komen uit een gedeelde **List of Values** die u beheert onder **Settings › List of Values**. Kies de lijst in plaats van haar opnieuw te typen; wanneer de lijst verandert, gebruikt de regel de nieuwe waarden (na een korte cachevertraging). Alleen de waarden van de lijstitems tellen, niet hun labels.
 
@@ -200,7 +206,7 @@ Het resultaat is een van drie uitkomsten:
 | **Rule passed** | De voorwaarde kwam overeen en de controle slaagde. Tabelregels tonen het resultaat per rij ("4 of 4 checked rows passed"). |
 | **Rule skipped — scope not matched** | De voorwaarde *Applies when* was onwaar voor dit document, dus er is niets gecontroleerd en er is geen fout gemeld. |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-test-result.png" alt="Test rule: regel mislukt"><figcaption><p>De Duitse factuur heeft geen btw-nummer van de leverancier: de regel mislukt met het geconfigureerde bericht</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-test-dialog.png" alt="Test rule: regel mislukt"><figcaption><p>De Duitse factuur heeft geen btw-nummer van de leverancier: de regel mislukt met het geconfigureerde bericht</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/validation-rule-test-skipped.png" alt="Test rule: regel overgeslagen"><figcaption><p>Dezelfde regel met de drempel verhoogd naar 1000: de factuur (469.18) valt buiten het bereik, dus de regel wordt overgeslagen</p></figcaption></figure>
 
@@ -217,15 +223,6 @@ Test elke nieuwe regel op minstens één document dat moet mislukken, één dat 
 * Waarschuwingen worden afzonderlijk verzameld en verbergen nooit een fout.
 * Als een regel niet kan worden geëvalueerd — bijvoorbeeld door een deling door nul in een formule — wordt hij overgeslagen. Een kapotte regel markeert een document nooit per ongeluk als ongeldig.
 
-## Logboeken
-
-Schakel **Log execution** in een regel in om elke evaluatie vast te leggen. Open **Document Types → (documenttype) → Logs** en zoek op **Rule key**, **Rule ID** of **Document**; filter op regeltype, uitkomst en datum.
-
-<figure><img src="../../../../.gitbook/assets/rule-execution-logs.png" alt="De uitvoeringslogboeken van regels"><figcaption><p>Eén rij per evaluatie, met uitkomst, bereik, document en rij</p></figcaption></figure>
-
-Open een item om de details te zien, inclusief de **conditietrace**: elke regel van *Applies when* met de verwachte waarde, de werkelijke waarde van het document en of de voorwaarde slaagde. Zie [De conditietrace in de logboeken lezen](rule-conditions-applies-when.md#het-voorwaardespoor-in-de-logboeken-lezen).
-
-Dezelfde pagina toont de logboeken van transformatieregels en lay-outselectieregels.
 
 ## Recepten
 
@@ -268,7 +265,6 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 * **Gebruik Applies when in plaats van kopieën.** Eén regel met een voorwaarde is beter dan vijf kopieën voor vijf leveranciers.
 * **Wees tolerant met geld.** Geef bedragformules altijd een tolerantie.
 * **Noem regels naar de bedrijfsregel**, niet naar de techniek ("Vervaldatum niet vóór factuurdatum", niet "Vergelijkingsregel 3").
-* **Schakel Log execution uit** zodra een regel werkt; hij schrijft bij elke keer opslaan een item.
 
 ## Probleemoplossing
 

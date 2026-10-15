@@ -26,9 +26,6 @@ Les règles sont définies par **type de document** et s'exécutent sur chaque d
 | Seules les devises connues de votre ERP sont autorisées | erreurs d'exportation dans l'ERP | **List of Values** sur Currency |
 | Informer les utilisateurs de valeurs inhabituelles sans les bloquer | impossible | toute règle avec la gravité **Warning** |
 
-{% hint style="info" %}
-Tant que la fonctionnalité est en version bêta, les paramètres décrits ci-dessous n'apparaissent que si la page de paramètres **Document Types** est ouverte avec `?beta=true` ajouté à l'adresse.
-{% endhint %}
 
 ## Activer les règles de validation personnalisées
 
@@ -39,11 +36,11 @@ Les règles de validation personnalisées s'activent **par type de document**. I
 3. Ouvrez la section **Custom Validation Rules** et activez le bouton.
 4. Cliquez sur **Manage validation rules** pour ouvrir la liste des règles.
 
-<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Les boutons de règles dans les paramètres supplémentaires d'un type de document"><figcaption><p>Les boutons pour Manage Layouts, Custom Validation Rules et Transformation Rules</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Les boutons de règles dans les paramètres supplémentaires d'un type de document"><figcaption><p>Les boutons pour Manage Layouts, Custom Validation Rules et Transformation Rules</p></figcaption></figure>
 
-Désormais, la carte du type de document affiche aussi un lien **Validation Rules**, ainsi qu'un lien **Logs** pour les journaux d'exécution.
+Désormais, la carte du type de document affiche aussi un lien **Validation Rules**.
 
-<figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="La carte du type de document avec le lien Validation Rules"><figcaption><p>Les liens sur la carte du type de document</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="La carte du type de document avec le lien Validation Rules"><figcaption><p>Les liens sur la carte du type de document</p></figcaption></figure>
 
 {% hint style="warning" %}
 **Le bouton remplace les contrôles de montants intégrés.** Tant que les règles de validation personnalisées sont activées pour un type de document, les contrôles codés en dur « montant total = montant net + montant de la taxe » ainsi que les contrôles du montant des lignes et des remises ne sont **pas** exécutés pour ce type ; les règles configurables prennent leur place. Recréez les contrôles dont vous dépendez sous forme de règles (voir les [recettes](#recettes)) avant de l'activer. Désactiver le bouton rétablit les contrôles intégrés. Toutes les autres validations de champs (champs obligatoires, formats, données de base) continuent de s'exécuter.
@@ -53,7 +50,7 @@ Désormais, la carte du type de document affiche aussi un lien **Validation Rule
 
 **Document Types → (type de document) → Validation Rules** répertorie toutes les règles du type de document.
 
-<figure><img src="../../../../.gitbook/assets/validation-rules-list.png" alt="La liste des règles de validation"><figcaption><p>La liste des règles avec le niveau, la gravité, le champ cible et la source de chaque règle</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-list.png" alt="La liste des règles de validation"><figcaption><p>La liste des règles avec le niveau, la gravité, le champ cible et la source de chaque règle</p></figcaption></figure>
 
 Chaque carte affiche le nom et la description de la règle, ainsi que les badges de son **niveau** (Header / Line / Table), de sa **gravité** (Error / Warning), du **champ** auquel l'erreur est rattachée et de sa **source**. Utilisez l'interrupteur à droite pour activer ou désactiver une règle, et le menu **⋮** pour la dupliquer ou la supprimer. Filtrez la liste par niveau (**All / Header / Line / Table**) et par état (**All / Active / Inactive**), ou effectuez une recherche.
 
@@ -73,7 +70,7 @@ Cliquez sur **New rule**. Le générateur comporte trois étapes. **Test rule** 
 
 ### Étape 1 : Nom et portée (Name & scope)
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step1.png" alt="Étape 1 du générateur de règles de validation pour une règle sur un champ d'en-tête"><figcaption><p>Étape 1 pour une règle sur un champ d'en-tête</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step1.png" alt="Étape 1 du générateur de règles de validation pour une règle sur un champ d'en-tête"><figcaption><p>Étape 1 pour une règle sur un champ d'en-tête</p></figcaption></figure>
 
 | Paramètre | Ce qu'il fait |
 | --- | --- |
@@ -84,7 +81,6 @@ Cliquez sur **New rule**. Le générateur comporte trois étapes. **Test rule** 
 | **Description** | Explication facultative pour les autres administrateurs. |
 | **Table name** | *Table line uniquement.* Le tableau dont les lignes sont contrôlées, par exemple `INVOICE_TABLE`. |
 | **Attach error to field / column** | Le champ (ou, pour les lignes de tableau, la colonne) qui affiche l'erreur sur l'écran de validation. |
-| **Log execution** | Écrit une entrée de journal par évaluation, y compris la raison pour laquelle la règle s'est appliquée ou non. Voir [Journaux](#journaux). |
 
 #### Niveaux de règle
 
@@ -94,17 +90,17 @@ Cliquez sur **New rule**. Le générateur comporte trois étapes. **Test rule** 
 | **Table line** | une fois pour chaque ligne du tableau sélectionné | la cellule de la ligne en échec | `row.*` (la ligne courante), `header.*`, `doc.*` | « La quantité doit être supérieure à zéro » |
 | **Whole table** | une fois par document, en considérant toutes les lignes ensemble | un champ d'en-tête | totaux sur les lignes (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | « Les montants nets des lignes doivent s'additionner au montant net » |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-step1.png" alt="Étape 1 pour une règle sur une ligne de tableau"><figcaption><p>Une règle sur une ligne de tableau : le tableau et la colonne qui affiche l'erreur</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-line-step1.png" alt="Étape 1 pour une règle sur une ligne de tableau"><figcaption><p>Une règle sur une ligne de tableau : le tableau et la colonne qui affiche l'erreur</p></figcaption></figure>
 
 ### Étape 2 : Applies when
 
 Décidez si la règle s'exécute pour chaque document ou seulement pour certains. Laissez vide pour contrôler tous les documents. Sinon, ajoutez des lignes de condition, par exemple « Document Origin is Deutsch » et « Total Amount greater than 250 », et combinez-les avec **All** / **ANY** et des groupes imbriqués.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-nested-example.png" alt="Une condition Applies when"><figcaption><p>Le contrôle ne s'exécute que pour les documents allemands supérieurs à 250 avec EUR ou sans devise</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-applies-when.png" alt="Une condition Applies when"><figcaption><p>Le contrôle ne s'exécute que pour les documents allemands supérieurs à 250 avec EUR ou sans devise</p></figcaption></figure>
 
 Pour les règles sur les lignes de tableau, la condition peut aussi utiliser les colonnes de la ligne courante, et elle est évaluée **ligne par ligne** : les lignes qui ne correspondent pas ne sont tout simplement pas contrôlées.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-row-condition.png" alt="Une condition de ligne"><figcaption><p>Seules les lignes d'article (lignes avec un numéro d'article) sont contrôlées</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-row-condition.png" alt="Une condition de ligne"><figcaption><p>Seules les lignes d'article (lignes avec un numéro d'article) sont contrôlées</p></figcaption></figure>
 
 Les conditions sont expliquées en détail (chaque champ, opérateur et règle de comparaison, avec de nombreux exemples) sur la page [Conditions de règle (Applies when)](rule-conditions-applies-when.md).
 
@@ -112,9 +108,11 @@ Les conditions sont expliquées en détail (chaque champ, opérateur et règle d
 
 Choisissez un contrôle. Les paramètres sous les cartes changent selon le contrôle choisi.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step3-required.png" alt="Étape 3 avec le contrôle Required sélectionné"><figcaption><p>Les sept contrôles. Required ne nécessite aucun paramètre supplémentaire</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step3-checks.png" alt="Étape 3 avec le contrôle Required sélectionné"><figcaption><p>Les sept contrôles. Required ne nécessite aucun paramètre supplémentaire</p></figcaption></figure>
 
 #### Required : le champ doit avoir une valeur
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-required.png" alt="un contrôle Required"><figcaption><p>Un contrôle Required : aucune configuration supplémentaire</p></figcaption></figure>
 
 Échoue lorsque le champ est vide (absent ou ne contenant que des espaces). Aucun paramètre supplémentaire.
 
@@ -126,7 +124,7 @@ Utilisez-le avec **Applies when** pour rendre un champ obligatoire **sous condit
 
 Une comparaison arithmétique. L'expression contient exactement **une** comparaison (`==`, `!=`, `>`, `>=`, `<`, `<=`) ; les deux côtés peuvent utiliser `+ - * /`, des nombres, des parenthèses et des références de champs.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-formula.png" alt="Un contrôle Formula"><figcaption><p>Une formule sur tout le tableau avec une tolérance et des espaces réservés dans le message</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-formula.png" alt="Un contrôle Formula"><figcaption><p>Une formule sur tout le tableau avec une tolérance et des espaces réservés dans le message</p></figcaption></figure>
 
 * Cliquez sur les puces sous l'expression pour insérer des fonctions et des préfixes de champ : `sum()`, `count()`, `min()`, `max()`, `default()`, `coalesce()`, `header.`, `doc.`. Pendant que vous saisissez un nom de champ, une liste des champs correspondants s'ouvre.
 * `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` fonctionnent sur toutes les lignes et ne sont disponibles qu'au niveau **Whole table**. `count()` compte les lignes dans lesquelles la colonne est renseignée.
@@ -147,6 +145,8 @@ Exemples :
 
 #### Pattern : correspondre à un format / une expression régulière
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-pattern.png" alt="un contrôle Pattern"><figcaption><p>Un contrôle Pattern avec une expression régulière</p></figcaption></figure>
+
 La valeur doit correspondre à une **expression régulière**. L'expression recherche dans la valeur ; ancrez-la donc avec `^` (début) et `$` (fin) lorsque la valeur entière doit correspondre. Cochez **Case-insensitive match** si la casse n'a pas d'importance.
 
 | Format | Expression régulière |
@@ -159,11 +159,13 @@ La valeur doit correspondre à une **expression régulière**. L'expression rech
 
 #### Range : entre un minimum et un maximum
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="un contrôle Range"><figcaption><p>Range avec un minimum uniquement : les quantités doivent être d'au moins 0.01</p></figcaption></figure>
+
 La valeur doit être un nombre compris entre **Minimum** et **Maximum** (inclus). Renseignez l'un des deux ou les deux. Une valeur qui n'est pas un nombre échoue. Les montants formatés tels que `1.234,56` sont compris.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-range.png" alt="Un contrôle Range"><figcaption><p>Range avec un minimum uniquement : les quantités doivent être d'au moins 0.01</p></figcaption></figure>
-
 #### Compare fields : par exemple, date d'échéance ≥ date de facture
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-compare.png" alt="un contrôle Compare fields"><figcaption><p>Compare fields : comparer un champ avec un autre champ, avec aujourd'hui ou une valeur fixe</p></figcaption></figure>
 
 Compare la valeur d'un champ avec un autre champ, avec **aujourd'hui** ou avec une valeur fixe, à l'aide de *equal to*, *not equal to*, *greater than*, *less than*, *on or after (≥)* ou *on or before (≤)*. Les nombres sont comparés comme des nombres et les dates comme des dates.
 
@@ -173,9 +175,13 @@ Compare la valeur d'un champ avec un autre champ, avec **aujourd'hui** ou avec u
 
 #### Allowed values : à partir d'une liste fixe
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="un contrôle Allowed values"><figcaption><p>Allowed values : une valeur par ligne, éventuellement sans tenir compte de la casse</p></figcaption></figure>
+
 La valeur doit être l'une des valeurs que vous saisissez, **une valeur par ligne**. Insensible à la casse en option. Idéal pour les listes courtes et stables (`EUR`, `CHF`, `USD`).
 
 #### List of Values : à partir d'une LOV nommée
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-lov.png" alt="un contrôle List of Values"><figcaption><p>List of Values : les valeurs proviennent d'une liste nommée des paramètres</p></figcaption></figure>
 
 Comme *Allowed values*, mais les valeurs proviennent d'une **List of Values** partagée, gérée sous **Settings › List of Values**. Choisissez la liste au lieu de la ressaisir ; lorsque la liste change, la règle utilise les nouvelles valeurs (après un court délai de mise en cache). Seules les valeurs des entrées de la liste comptent, pas leurs libellés.
 
@@ -200,7 +206,7 @@ Le résultat correspond à l'un des trois cas suivants :
 | **Rule passed** | La condition correspondait et le contrôle a réussi. Les règles sur les lignes de tableau affichent le résultat par ligne (« 4 of 4 checked rows passed »). |
 | **Rule skipped — scope not matched** | La condition *Applies when* était fausse pour ce document ; rien n'a donc été contrôlé et aucune erreur n'a été levée. |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-test-result.png" alt="Test rule : règle en échec"><figcaption><p>La facture allemande n'a pas de numéro fiscal du fournisseur : la règle échoue avec le message configuré</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-test-dialog.png" alt="Test rule : règle en échec"><figcaption><p>La facture allemande n'a pas de numéro fiscal du fournisseur : la règle échoue avec le message configuré</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/validation-rule-test-skipped.png" alt="Test rule : règle ignorée"><figcaption><p>La même règle avec le seuil relevé à 1000 : la facture (469.18) n'entre pas dans la portée, la règle est donc ignorée</p></figcaption></figure>
 
@@ -217,15 +223,6 @@ Testez chaque nouvelle règle sur au moins un document qui doit échouer, un qui
 * Les avertissements sont collectés séparément et ne masquent jamais une erreur.
 * Si une règle ne peut pas être évaluée (par exemple une division par zéro dans une formule), elle est ignorée. Une règle défectueuse ne marque jamais un document comme invalide par erreur.
 
-## Journaux
-
-Activez **Log execution** dans une règle pour enregistrer chaque évaluation. Ouvrez **Document Types → (type de document) → Logs** et recherchez par **Rule key**, **Rule ID** ou **Document** ; filtrez par type de règle, résultat et date.
-
-<figure><img src="../../../../.gitbook/assets/rule-execution-logs.png" alt="Les journaux d'exécution des règles"><figcaption><p>Une ligne par évaluation, avec le résultat, la portée, le document et la ligne</p></figcaption></figure>
-
-Ouvrez une entrée pour voir ses détails, y compris la **trace de condition** : chaque ligne de *Applies when* avec la valeur attendue, la valeur réelle du document et son résultat. Voir [Lire la trace de condition](rule-conditions-applies-when.md#lire-la-trace-de-la-condition-dans-les-journaux).
-
-La même page affiche les journaux des règles de transformation et de sélection de mise en page.
 
 ## Recettes
 
@@ -268,7 +265,6 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 * **Utilisez Applies when plutôt que des copies.** Une règle avec une condition vaut mieux que cinq copies pour cinq fournisseurs.
 * **Soyez tolérant avec les montants.** Donnez toujours une tolérance aux formules de montants.
 * **Nommez les règles d'après la règle métier**, pas d'après la technique (« Date d'échéance non antérieure à la date de facture », et non « Règle de comparaison 3 »).
-* **Désactivez Log execution** dès qu'une règle fonctionne ; elle écrit une entrée à chaque enregistrement.
 
 ## Dépannage
 

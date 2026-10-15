@@ -1,6 +1,6 @@
 # Routing powiadomień
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_routing.png" alt="Trasy powiadomień"><figcaption><p>Przypisywanie wyników walidacji do agentów</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-routing-pl.png" alt="Trasy powiadomień"><figcaption><p>Przypisywanie wyników walidacji do agentów</p></figcaption></figure>
 
 Strona **Routing powiadomień** (**Dokumenty elektroniczne → Akcje**) przypisuje wyniki walidacji do **agentów AI Workforce**. Każdy blokujący wynik uruchamia dokładnie jednego agenta — tego, którego prefiks kodu pasuje najdłużej. Wszystko bez dopasowania wraca do domyślnego agenta powiadomień dostawcy.
 
@@ -20,7 +20,7 @@ Dla każdej trasy wybierz obsługującego agenta z listy rozwijanej. **Zaawansow
 
 ## Dostępni agenci
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_agents.png" alt="Rejestr dostępnych agentów"><figcaption><p>Rejestr agentów AI Workforce tylko do odczytu</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-agents-pl.png" alt="Rejestr dostępnych agentów"><figcaption><p>Rejestr agentów AI Workforce tylko do odczytu</p></figcaption></figure>
 
 Sekcja **Dostępni agenci** to rejestr tylko do odczytu agentów AI Workforce dostarczonych z Twoim wdrożeniem, na przykład:
 

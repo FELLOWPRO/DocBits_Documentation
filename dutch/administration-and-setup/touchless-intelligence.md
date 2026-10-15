@@ -1,5 +1,7 @@
 # Touchless Intelligence
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/nl.mp4" %}
+
 ## Overzicht
 
 **Touchless Intelligence** beantwoordt twee vragen over uw documentverwerking:

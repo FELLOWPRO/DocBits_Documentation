@@ -1,8 +1,12 @@
-# Validation Rules
+# E-Invoice Validation
 
 <figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Validation setup and accepted versions"><figcaption><p>Validation setup and accepted XRechnung versions</p></figcaption></figure>
 
-The **Validation Rules** page (**E-Documents → Rules**) controls how DocBits validates incoming e-invoices. It is based on the official **KoSIT XRechnung + ZUGFeRD** rule set plus the validator's in-house finding codes, and lets you override the severity of each rule for your organization.
+The **E-Invoice Validation** page (**Settings → E-Documents → E-Invoice Validation**, path `/settings/einvoice-validation`; earlier called *Validation Rules*) controls how DocBits validates incoming e-invoices. It is based on the official **KoSIT XRechnung + ZUGFeRD** rule set plus the validator's in-house finding codes, and lets you override the severity of each rule for your organization.
+
+> This page is for **e-invoices** (XRechnung, ZUGFeRD, Factur-X). It is not the same as **Data Validation Rules**, which check extracted document fields.
+
+Organisation administrators also see the table **[Validation for each document type](validation-per-document-type.md)** at the top of the page and a **Change log** tab. What users see when an invoice fails is described in [Validation report](validation-report.md).
 
 ## Validation Setup
 

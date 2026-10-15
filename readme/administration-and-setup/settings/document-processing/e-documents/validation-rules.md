@@ -14,5 +14,6 @@ Die Seite **E-Rechnungs-Prüfung** (**Einstellungen → E-Dokumente → E-Rechnu
 | [Regel-Schweregrade](validation-rule-severities.md) | Die Regeltabelle: Ändern Sie den Schweregrad jeder Regel für Ihre Organisation. | Organisationsadministratoren |
 | [Prüfung je Dokumenttyp](validation-per-document-type.md) | Prüfung einschalten (**Aktiviert**) und festlegen, ob eine fehlgeschlagene Prüfung das Dokument stoppt (**Blockierend**). Jede Änderung muss bestätigt werden. | Organisationsadministratoren |
 | [Änderungsprotokoll](validation-change-log.md) | Jede Änderung der Einstellungen: wann, wer, welche Regel, von → nach. | Organisationsadministratoren |
+| [Die Fehleransicht einer abgelehnten E-Rechnung](validation-error-screen.md) | Was Sie sehen, wenn Sie eine fehlerhafte XML hochladen: die Erklärung, die fehlerhafte Zeile und der nächste Schritt. | Alle, die Rechnungen bearbeiten |
 | [Prüfbericht](validation-report.md) | Was ein Benutzer sieht, wenn eine Rechnung die Prüfung nicht besteht: die Findings in verständlicher Sprache. Er öffnet sich am Dokument, nicht auf dieser Seite. | Alle, die Rechnungen bearbeiten |
 | [Nächster Schritt und Dokument ablehnen](validation-next-step-and-reject.md) | Was Sie nach dem Lesen des Berichts tun, der Download des Berichts und **Dokument ablehnen**. | Alle, die Rechnungen bearbeiten |

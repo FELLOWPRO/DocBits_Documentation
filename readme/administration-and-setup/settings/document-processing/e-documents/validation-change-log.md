@@ -4,7 +4,7 @@ Das **Änderungsprotokoll** hält jede Änderung der Prüfungseinstellungen fest
 
 Öffnen Sie den Tab **Änderungsprotokoll** neben **Regeln und Richtlinie**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-de.png" alt="Der Tab Änderungsprotokoll mit den Spalten Zeitpunkt, Benutzer, Regel, Von → Nach und Aktion"><figcaption><p>Das Änderungsprotokoll einer Organisation ohne bisherige Änderungen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-de.png" alt="Der Tab Änderungsprotokoll mit den Spalten Zeitpunkt, Benutzer, Regel, Von → Nach und Aktion"><figcaption><p>Das Änderungsprotokoll mit vier Beispiel-Einträgen. Der Benutzername ist durch einen Beispielnamen ersetzt.</p></figcaption></figure>
 
 | Spalte | Was sie zeigt |
 | --- | --- |

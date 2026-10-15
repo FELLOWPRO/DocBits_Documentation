@@ -441,6 +441,7 @@
         * [Regel-Schweregrade](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
         * [Prüfung je Dokumenttyp](administration-and-setup/settings/document-processing/e-documents/validation-per-document-type.md)
         * [Änderungsprotokoll](administration-and-setup/settings/document-processing/e-documents/validation-change-log.md)
+        * [Die Fehleransicht einer abgelehnten E-Rechnung](administration-and-setup/settings/document-processing/e-documents/validation-error-screen.md)
         * [Prüfbericht](administration-and-setup/settings/document-processing/e-documents/validation-report.md)
         * [Nächster Schritt und Dokument ablehnen](administration-and-setup/settings/document-processing/e-documents/validation-next-step-and-reject.md)
       * [Benachrichtigungsrouting](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

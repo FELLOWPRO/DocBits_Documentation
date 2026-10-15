@@ -4,7 +4,7 @@ Op deze pagina leest u over de installatiewizard, de geaccepteerde XRechnung-ver
 
 ## Validatie-instellingen
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Validatie-instellingen en geaccepteerde versies"><figcaption><p>Validatie-instellingen en geaccepteerde XRechnung-versies</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-nl.png" alt="Validatie-instellingen en geaccepteerde versies"><figcaption><p>Validatie-instellingen en geaccepteerde XRechnung-versies</p></figcaption></figure>
 
 De kaart **Validatie-instellingen** toont uw huidige validatieprofiel (bijvoorbeeld *B2G — Public Sector Receiver*). Klik op **Antwoorden bewerken** om de installatiewizard opnieuw uit te voeren en de standaard te wijzigen waartegen u valideert.
 
@@ -14,7 +14,7 @@ De gate **Geaccepteerde XRechnung-versies** somt elke XRechnung-versie op. Vink 
 
 ## Geaccepteerde profielen en het ernstmodel
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_severity.png" alt="Geaccepteerde profielen en ernstlegenda"><figcaption><p>Geaccepteerde profielen en wat elke ernst betekent</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-nl.png" alt="Geaccepteerde profielen en ernstlegenda"><figcaption><p>Geaccepteerde profielen en wat elke ernst betekent</p></figcaption></figure>
 
 Kies welke **profielen** u accepteert (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) met **Alles accepteren** / **Wissen** en daarna **Opslaan**.
 

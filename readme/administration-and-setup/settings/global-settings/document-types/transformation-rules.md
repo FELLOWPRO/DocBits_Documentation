@@ -30,10 +30,6 @@ Las reglas de transformación sustituyen a la mayoría de los pequeños scripts 
 | El número de orden de compra lleva ceros a la izquierda o un prefijo que la orden de compra no tiene | Campo de encabezado *Purchase Order*: Recortar `0` a la izquierda, o Afijo: quitar prefijo |
 | Los números de artículo se diferencian de las líneas de la orden de compra en mayúsculas/minúsculas, espacios o prefijos | Columna de tabla *ITEM_NUMBER*: Afijo: quitar prefijo → Desinfectar → UPPERCASE |
 
-{% hint style="info" %}
-Mientras la función está en beta, los ajustes descritos a continuación solo aparecen cuando la página de ajustes **Document Types** se abre con `?beta=true` añadido a la dirección.
-{% endhint %}
-
 ## Activar las reglas de transformación
 
 Las reglas de transformación las activa **por tipo de documento** un **administrador de la organización**.

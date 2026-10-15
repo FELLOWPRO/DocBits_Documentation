@@ -22,10 +22,6 @@ El origen sigue estando disponible, como una condición más entre muchas. Una r
 | Las facturas de gran importe necesitan más campos en la pantalla de aprobación | no es posible | regla de Approval *Total Amount greater than 10000* → diseño “High value approval” |
 | El segundo aprobador debe ver una pantalla distinta de la del primero | un tipo de diseño “second approval” aparte | regla de Approval *Document Status is Pending second approval* → diseño “Second approval” |
 
-{% hint style="info" %}
-Mientras la función esté en beta, los ajustes descritos a continuación solo aparecen cuando la página de ajustes **Document Types** se abre con `?beta=true` añadido a la dirección.
-{% endhint %}
-
 ## Activar los diseños basados en reglas
 
 Los diseños basados en reglas los activa **por tipo de documento** un **administrador de la organización**.

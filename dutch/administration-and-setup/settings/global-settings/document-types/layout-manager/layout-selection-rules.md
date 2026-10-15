@@ -22,10 +22,6 @@ De herkomst blijft beschikbaar — als één voorwaarde van vele. Een regel kan 
 | Facturen met hoge waarde hebben meer velden nodig op het goedkeuringsscherm | niet mogelijk | Approval-regel *Total Amount greater than 10000* → lay-out "Goedkeuring hoge waarde" |
 | De tweede goedkeurder moet een ander scherm zien dan de eerste | apart lay-outtype "tweede goedkeuring" | Approval-regel *Document Status is Pending second approval* → lay-out "Tweede goedkeuring" |
 
-{% hint style="info" %}
-Zolang de functie in bèta is, verschijnen de hieronder beschreven instellingen alleen wanneer de instellingenpagina **Document Types** wordt geopend met `?beta=true` achter het adres.
-{% endhint %}
-
 ## Op regels gebaseerde lay-outs inschakelen
 
 Op regels gebaseerde lay-outs worden **per documenttype** ingeschakeld door een **organisatiebeheerder**.

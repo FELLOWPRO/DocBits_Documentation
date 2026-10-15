@@ -65,7 +65,30 @@ You ask **"Why isn't PO matching active?"**
 
 The assistant reads the settings of your organisation and reports what it found. In this example PO Matching is **On** for all four document types, and the setting **Auto export if PO matched 100%** is **Off**, so automatic matching and export do not run. Each card shows **Current: On / Off** and an **Open setting** button, so you can fix it right away.
 
-### Example 4: More questions to try
+### Example 4: PO matching
+
+You open **Settings → Document Types** and ask **"Is PO matching active for invoices?"** (this question is also one of the three suggestions on that page).
+
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-active.png" alt="The assistant answers that PO matching is on for invoices and shows the PO matching setting, the PO match rules and Auto export if PO matched 100 percent with their current values"><figcaption><p>The answer says <strong>PO Matching is currently on for invoices</strong> and shows three related settings: <strong>PO Matching</strong> (Current: On), the <strong>PO match rules</strong> and <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+
+The assistant reads the setting for the document type and adds the settings that belong to it. In this example matching is on, but automatic export after a 100 % match is off, so matched invoices still wait for a person. Each card has an **Open setting** button.
+
+* For the **matching rules and tolerances** use the page [Purchase Order Matching Rules](../document-types/more-settings/purchase-order/purchase-order-matching-rules.md).
+* To see **why documents of a supplier do not match** open [Touchless Intelligence: PO Matching Diagnosis](../../../touchless-po-matching-diagnosis.md). It shows the reason, the affected documents and the decision flow.
+
+### Example 5: Field validation (custom validation rules)
+
+On the page **Settings → Document Types → Custom Validation Rules** the panel greets you for this page and suggests three questions.
+
+<figure><img src="../../../../.gitbook/assets/settings-assistant-page-custom-validation-rules.png" alt="The Settings Assistant on the Custom Validation Rules page with three suggested questions"><figcaption><p>The panel on the Custom Validation Rules page. The suggestions: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> and <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
+
+Use the assistant here to **find** the right setting and to learn what a rule does. To **create or change** a rule, work on the page itself: see [Custom Validation Rules](../document-types/custom-validation-rules.md) and [Duplicate a Custom Validation Rule](../document-types/duplicate-a-custom-validation-rule.md). If the assistant creates a rule for you, the rule is always created **inactive**, and you switch it on yourself.
+
+{% hint style="info" %}
+Do not confuse **Custom Validation Rules** (rules for the fields of a document type) with **E-Invoice Validation** (the check of XRechnung, ZUGFeRD and Factur-X files). They are two different pages.
+{% endhint %}
+
+### Example 6: More questions to try
 
 * "Which AI model is used for extraction?"
 * "Is splitting documents on barcodes active for us?"
@@ -157,7 +180,7 @@ If the value changed since you opened the dialog, you see *This setting changed 
 | Rename an access group | "Rename the group Buyers to Purchasing" |
 | Search mode of a lookup field (Auto or Manual) | "Search suppliers manually instead of automatically" |
 | Delete a field | "Delete the field Cost Center" |
-| Create an inactive validation rule from a catalogue | "Create a rule that checks the invoice date is not in the future" |
+| Create an inactive validation rule from a catalogue | Open the page **Custom Validation Rules** and describe the check |
 | Create an inactive transformation rule | "Create a rule that removes dashes from the supplier VAT number" |
 | Switch off or delete an import connection | Use the buttons in the finding card |
 
@@ -203,4 +226,4 @@ A conversation keeps the last 50 turns in your browser. A question can have up t
 * [Analytics Dashboard](../../../analytics-dashboard.md)
 * [DocBits MCP](../../../../advanced-functions-and-tools/docbits-mcp/README.md)
 
-<!-- Source notes (not shown): facts read from the doc2app code on dev (SettingsAssistant, AssistantChat components) and checked in the dev UI on 14 Oct 2026. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team (CORE-6379). Strings for the apply/action cards not verified in the UI are described, not quoted. -->
+<!-- Source notes (not shown): the assistant answers for custom validation rules and for PO tolerance / "why not matched" questions are weak on dev (tracked in the CORE project, CORE-6433), so this page shows only the greeting for validation and the PO matching status answer. Re-test and add answer screenshots after the fix. facts read from the doc2app code on dev (SettingsAssistant, AssistantChat components) and checked in the dev UI on 14 Oct 2026. "Fast tier, no organisation switch" and "documentation search not configured on Sandbox yet" come from the feature team (CORE-6379). Strings for the apply/action cards not verified in the UI are described, not quoted. -->

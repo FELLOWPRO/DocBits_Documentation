@@ -4,7 +4,7 @@ Ta strona opisuje kreator konfiguracji, akceptowane wersje XRechnung oraz akcept
 
 ## Konfiguracja walidacji
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Konfiguracja walidacji i akceptowane wersje"><figcaption><p>Konfiguracja walidacji i akceptowane wersje XRechnung</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-pl.png" alt="Konfiguracja walidacji i akceptowane wersje"><figcaption><p>Konfiguracja walidacji i akceptowane wersje XRechnung</p></figcaption></figure>
 
 Karta **Konfiguracja walidacji** pokazuje Twój bieżący profil walidacji (na przykład *B2G — Public Sector Receiver*). Kliknij **Edytuj odpowiedzi**, aby ponownie uruchomić kreatora konfiguracji i zmienić standard, względem którego prowadzona jest walidacja.
 
@@ -14,7 +14,7 @@ Bramka **Akceptowane wersje XRechnung** wymienia każdą wersję XRechnung. Zazn
 
 ## Akceptowane profile i model wagi
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_severity.png" alt="Akceptowane profile i legenda wag"><figcaption><p>Akceptowane profile i znaczenie poszczególnych wag</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-pl.png" alt="Akceptowane profile i legenda wag"><figcaption><p>Akceptowane profile i znaczenie poszczególnych wag</p></figcaption></figure>
 
 Wybierz, które **profile** akceptujesz (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)), używając przycisków **Akceptuj wszystko** / **Wyczyść**, a następnie **Zapisz**.
 

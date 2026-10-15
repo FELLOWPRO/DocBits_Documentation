@@ -44,6 +44,28 @@ La scheda **Ordine di acquisto** (**Corrispondenza e convalida degli ordini di a
 * [**Aggiorna lo stato dell'ordine di acquisto del documento**](purchase-order/update-document-purchase-order-status.md): Aggiorna la colonna Stato PO sulla dashboard ogni volta che lo stato dell'ordine di acquisto cambia.
 * [**Consenti esportazione automatica per linee di ordine di acquisto non abbinabili**, **Corrispondenza automatica ed esportazione visibili a** e **Utilizzare l'importo netto delle linee per il totale corrispondente visibile a**](purchase-order/auto-match-and-export-options.md): Decidono chi vede le scorciatoie Auto Match & Export e quali documenti possono essere esportati automaticamente.
 
+### Vedere le regole di corrispondenza come diagramma
+
+Le regole di corrispondenza degli ordini di acquisto sono più di un elenco. DocBits può disegnare l'insieme di regole attivo come diagramma di flusso. Vedi in quale ordine le regole vengono tentate e dove si interrompe la corrispondenza.
+
+1. Nella scheda **Ordine di acquisto** attiva **Lato server di corrispondenza PO** e fai clic su **Configurare le regole di corrispondenza degli ordini di acquisto**.
+2. Fai clic su **Insieme di regole rappresentato come un diagramma** nella parte superiore della pagina. Il diagramma si apre in un pannello accanto alle regole.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-it.png" alt="Il diagramma dell’insieme di regole con cinque stadi, dalla Single match validation alla Fallback logic"><figcaption><p>L’insieme di regole rappresentato come un diagramma. Cinque stadi, dall’alto verso il basso.</p></figcaption></figure>
+
+Leggi il diagramma dall'alto verso il basso. DocBits tenta gli stadi in questo ordine: **Single match validation**, **Multi match validation**, **Total match validation**, **Single mismatch validation** e **Fallback logic**. Ogni stadio ha fino a tre passaggi: **Exact match for all rules**, **Tolerance-based match** e **Package criteria**. Una freccia verde significa che è stata trovata una corrispondenza e l'elaborazione si interrompe. Una freccia rossa significa nessuna corrispondenza, quindi DocBits prosegue con il passaggio successivo. Alla fine il risultato è **Corrispondenza trovata** oppure **Nessuna corrispondenza trovata**.
+
+Sotto il diagramma il pannello elenca **Regole per priorità, per fase**. Per ogni regola vedi le colonne che confronta, la tolleranza e le opzioni **Corrispondenza automatica**, **Abbinamento manuale** e **Ricaderci**.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-it.png" alt="L’elenco delle regole per priorità e per stadio con le colonne confrontate, la tolleranza e le opzioni delle regole"><figcaption><p>Sotto il diagramma: le regole di ogni stadio con le colonne che confrontano.</p></figcaption></figure>
+
+**Esempio.** Una riga della fattura ha numero articolo 4711, quantità 10 e prezzo unitario 10.40. La riga dell'ordine di acquisto ha numero articolo 4711, quantità 10 e prezzo unitario 10.00. La tolleranza per il prezzo unitario è 5 %.
+
+* Il passaggio **1.1 Exact match for all rules** non riesce, perché 10.40 non è 10.00. La freccia rossa porta al passaggio successivo.
+* Il passaggio **1.2 Tolerance-based match** riesce. La differenza è 4 %, quindi rientra nel 5 %. La freccia verde porta a **Corrispondenza trovata** e l'elaborazione si interrompe.
+
+Nel diagramma questo è il percorso 1.1, poi 1.2, poi **Corrispondenza trovata**. Per il percorso seguito da un singolo documento vedi [Touchless Intelligence: Diagnosi dell'abbinamento ordini](../../../../touchless-po-matching-diagnosis.md). Per tutti i dettagli della pagina delle regole vedi [Regole di Corrispondenza degli Ordini di Acquisto](purchase-order/purchase-order-matching-rules.md).
+
 ### Impostazione della tolleranza PO
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance-it.png" alt="Il blocco Impostazione della tolleranza PO con la tolleranza per quantità e prezzo unitario"><figcaption><p>Tolleranza per quantità e prezzo unitario.</p></figcaption></figure>

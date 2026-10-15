@@ -2,7 +2,7 @@
 
 Wpisz identyfikator dokumentu w polu **ID dokumentu** (Document ID) lub otwórz przykładowy dokument z klastra, aby zobaczyć, **co działo się z tym jednym dokumentem**.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="Strona Ślad dokumentu ze ścieżką potoku z 14 etapów i zatrzymanym etapem Walidacja pól"><figcaption><p>Ślad dokumentu (Document Trace): ścieżka potoku z etapem, na którym dokument się zatrzymał, tym, co ten etap miał do dyspozycji, oraz historią uruchomień poniżej.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-document-trace-pl.png" alt="Strona Ślad dokumentu ze ścieżką potoku z 14 etapów i zatrzymanym etapem Walidacja pól"><figcaption><p>Ślad dokumentu (Document Trace): ścieżka potoku z etapem, na którym dokument się zatrzymał, tym, co ten etap miał do dyspozycji, oraz historią uruchomień poniżej.</p></figcaption></figure>
 
 Na górze widać **ścieżkę potoku** z 14 etapami: Przyjęcie, Klasyfikacja, Walidacja e-dokumentu, Identyfikacja dostawcy, Rozpoznawanie tekstu, Ekstrakcja nagłówka, Ekstrakcja tabeli, Walidacja pól, Wyszukiwanie PO, Dopasowanie pozycji PO, Zatwierdzenie, Routing przepływu pracy, Eksport, Potwierdzenie ERP. Każde pole ma stan:
 

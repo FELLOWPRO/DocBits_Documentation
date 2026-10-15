@@ -4,7 +4,7 @@
 
 Pomaga najbardziej, gdy wiesz, **co** chcesz osiągnąć („przestań dzielić dokumenty według kodów kreskowych"), ale nie wiesz, **gdzie** znajduje się ustawienie, albo gdy zastanawiasz się, **dlaczego** coś się nie dzieje („Dlaczego dopasowanie PO nie jest aktywne?").
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="Panel Asystenta ustawień po prawej stronie obszaru Ustawień, z powitaniem dla bieżącej strony, trzema przykładowymi pytaniami i polem pytania"><figcaption><p>Asystent ustawień na stronie Informacje o firmie: powitanie dla bieżącej strony, trzy przykładowe pytania i pole pytania. Karta ostrzeżenia pojawia się nad powitaniem, gdy import przestał działać (zobacz <a href="settings-assistant-chat.md#ustalenia-asystent-cie-ostrzega">Ustalenia</a>).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open-pl.png" alt="Panel Asystenta ustawień po prawej stronie obszaru Ustawień, z powitaniem dla bieżącej strony, trzema przykładowymi pytaniami i polem pytania"><figcaption><p>Asystent ustawień na stronie Informacje o firmie: powitanie dla bieżącej strony, trzy przykładowe pytania i pole pytania. Karta ostrzeżenia pojawia się nad powitaniem, gdy import przestał działać (zobacz <a href="settings-assistant-chat.md#ustalenia-asystent-cie-ostrzega">Ustalenia</a>).</p></figcaption></figure>
 
 Asystent jest **domyślnie wyłączony**. Ta strona pokazuje, gdzie go włączyć i jak otworzyć. To, o co możesz go zapytać i co może zmienić, opisuje strona [Asystent ustawień: co potrafi czat](settings-assistant-chat.md).
 
@@ -20,7 +20,7 @@ Asystent jest **domyślnie wyłączony**. Ta strona pokazuje, gdzie go włączy�
 2. Otwórz sekcję **Asystenci** (Assistants).
 3. Włącz **Włącz asystenta ustawień** (Enable the settings assistant).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="Sekcja Asystenci w Informacjach o firmie z przełącznikami asystenta ustawień, asystenta walidacji i lektora objaśnień"><figcaption><p>Sekcja Asystenci. Asystent ustawień ma własny przełącznik. Asystent walidacji i lektor objaśnień to osobne funkcje.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-pl.png" alt="Sekcja Asystenci w Informacjach o firmie z przełącznikami asystenta ustawień, asystenta walidacji i lektora objaśnień"><figcaption><p>Sekcja Asystenci. Asystent ustawień ma własny przełącznik. Asystent walidacji i lektor objaśnień to osobne funkcje.</p></figcaption></figure>
 
 Krótki komunikat potwierdza **Settings assistant enabled** (Asystent ustawień włączony). Ustawienie jest domyślnie wyłączone. Gdy jest wyłączone, panel i jego przycisk nie pojawiają się nigdzie.
 
@@ -32,7 +32,7 @@ Krótki komunikat potwierdza **Settings assistant enabled** (Asystent ustawień 
 
 Na każdej stronie obszaru Ustawień znajdziesz mały **przycisk z lampą dżina** obok pola wyszukiwania ustawień. Kliknij go, aby **pokazać** lub **ukryć** asystenta.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="Strona Informacje o firmie w Ustawieniach z nawigacją ustawień po lewej, stroną pośrodku i panelem Asystenta ustawień po prawej"><figcaption><p>Asystent znajduje się po <strong>prawej stronie</strong> każdej strony Ustawień: nawigacja po lewej, strona pośrodku, asystent obok niej. Tutaj na stronie <strong>Company Settings → Company Information</strong>. Przycisk do pokazywania lub ukrywania to ikona lampy obok pola <strong>Search Settings</strong> (Szukaj w ustawieniach) na górze nawigacji.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-pl.png" alt="Strona Informacje o firmie w Ustawieniach z nawigacją ustawień po lewej, stroną pośrodku i panelem Asystenta ustawień po prawej"><figcaption><p>Asystent znajduje się po <strong>prawej stronie</strong> każdej strony Ustawień: nawigacja po lewej, strona pośrodku, asystent obok niej. Tutaj na stronie <strong>Company Settings → Company Information</strong>. Przycisk do pokazywania lub ukrywania to ikona lampy obok pola <strong>Search Settings</strong> (Szukaj w ustawieniach) na górze nawigacji.</p></figcaption></figure>
 
 * Panel zapamiętuje Twój wybór dla każdego użytkownika, więc przy następnej wizycie pozostaje otwarty.
 * Na szerokim ekranie (1280 pikseli i więcej) znajduje się obok strony. Możesz przeciągnąć jego krawędź, aby zmienić szerokość.

@@ -41,7 +41,7 @@ Kliknij pytanie, a zostanie wysłane od razu. Pod trzema pytaniami panel mówi *
 
 Pytasz **„Jak zmienić adres naszej firmy?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address.png" alt="Asystent odpowiada ścieżką do adresu firmy i przyciskiem Open setting"><figcaption><p>Odpowiedź wskazuje miejsce, a karta podaje dokładną ścieżkę i przycisk <strong>Open setting</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-pl.png" alt="Asystent odpowiada ścieżką do adresu firmy i przyciskiem Open setting"><figcaption><p>Odpowiedź wskazuje miejsce, a karta podaje dokładną ścieżkę i przycisk <strong>Open setting</strong>.</p></figcaption></figure>
 
 Odpowiedź mówi, gdzie znajduje się adres. Karta poniżej pokazuje ścieżkę (**Settings / Company Settings**) i przycisk **Open setting**. Kliknij go: DocBits otwiera stronę, przewija do ustawienia i podświetla je na kilka sekund.
 
@@ -49,7 +49,7 @@ Odpowiedź mówi, gdzie znajduje się adres. Karta poniżej pokazuje ścieżkę 
 
 Pytasz **„Jak włączyć wykrywanie kodów kreskowych?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode.png" alt="Asystent wyjaśnia trzy ustawienia kodów kreskowych i kiedy włączyć każde z nich"><figcaption><p>Gdy słowo pasuje do kilku ustawień, asystent wymienia każde z nich z informacją <strong>Enable when</strong> (Włącz, gdy) i <strong>Leave off when</strong> (Zostaw wyłączone, gdy).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-pl.png" alt="Asystent wyjaśnia trzy ustawienia kodów kreskowych i kiedy włączyć każde z nich"><figcaption><p>Gdy słowo pasuje do kilku ustawień, asystent wymienia każde z nich z informacją <strong>Enable when</strong> (Włącz, gdy) i <strong>Leave off when</strong> (Zostaw wyłączone, gdy).</p></figcaption></figure>
 
 „Wykrywanie kodów kreskowych" może oznaczać trzy różne ustawienia, więc asystent pyta *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* (Czy chodziło o: QR Code Extraction, Barcode Assignment czy Split Document on Barcode?) i wyjaśnia każde z nich:
 
@@ -61,7 +61,7 @@ Pytasz **„Jak włączyć wykrywanie kodów kreskowych?"**
 
 Pytasz **„Dlaczego dopasowanie PO nie jest aktywne?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching.png" alt="Asystent pokazuje bieżącą wartość każdego ustawienia dopasowania PO"><figcaption><p>Przy pytaniu „dlaczego" asystent odczytuje Twoją konfigurację i pokazuje każde ustawienie z jego wartością <strong>Current</strong> (Bieżąca).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-pl.png" alt="Asystent pokazuje bieżącą wartość każdego ustawienia dopasowania PO"><figcaption><p>Przy pytaniu „dlaczego" asystent odczytuje Twoją konfigurację i pokazuje każde ustawienie z jego wartością <strong>Current</strong> (Bieżąca).</p></figcaption></figure>
 
 Asystent odczytuje ustawienia Twojej organizacji i raportuje, co znalazł. W tym przykładzie dopasowanie PO jest **On** (włączone) dla wszystkich czterech typów dokumentów, a ustawienie **Auto export if PO matched 100%** jest **Off** (wyłączone), więc automatyczne dopasowanie i eksport nie działają. Każda karta pokazuje **Current: On / Off** i przycisk **Open setting**, więc możesz od razu to naprawić.
 
@@ -69,7 +69,7 @@ Asystent odczytuje ustawienia Twojej organizacji i raportuje, co znalazł. W tym
 
 Otwierasz **Ustawienia → Typy dokumentów** i pytasz **„Czy dopasowanie PO jest aktywne dla faktur?"** (to pytanie jest też jedną z trzech sugestii na tej stronie).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="Strona Typy dokumentów w Ustawieniach z Asystentem ustawień po prawej, odpowiadającym, że dopasowanie PO jest włączone dla faktur, i pokazującym trzy powiązane ustawienia"><figcaption><p>Strona <strong>Document Types</strong> (Typy dokumentów) z asystentem po prawej. Odpowiedź mówi, że <strong>PO Matching is active for invoices in your organisation</strong> (dopasowanie PO jest aktywne dla faktur w Twojej organizacji) i pokazuje trzy powiązane ustawienia: <strong>PO Matching</strong> (Current: On), <strong>PO match rules</strong> i <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-pl.png" alt="Strona Typy dokumentów w Ustawieniach z Asystentem ustawień po prawej, odpowiadającym, że dopasowanie PO jest włączone dla faktur, i pokazującym trzy powiązane ustawienia"><figcaption><p>Strona <strong>Document Types</strong> (Typy dokumentów) z asystentem po prawej. Odpowiedź mówi, że <strong>PO Matching is active for invoices in your organisation</strong> (dopasowanie PO jest aktywne dla faktur w Twojej organizacji) i pokazuje trzy powiązane ustawienia: <strong>PO Matching</strong> (Current: On), <strong>PO match rules</strong> i <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 Asystent odczytuje ustawienie dla typu dokumentu i dodaje ustawienia, które z nim się wiążą. W tym przykładzie dopasowanie jest włączone, ale automatyczny eksport po 100-procentowym dopasowaniu jest wyłączony, więc dopasowane faktury nadal czekają na człowieka. Każda karta ma przycisk **Open setting**.
 
@@ -80,7 +80,7 @@ Asystent odczytuje ustawienie dla typu dokumentu i dodaje ustawienia, które z n
 
 Na stronie **Ustawienia → Typy dokumentów → Niestandardowe reguły walidacji** (Custom Validation Rules) panel wita Cię w kontekście tej strony i sugeruje trzy pytania.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="Strona Niestandardowe reguły walidacji w Ustawieniach z listą reguł pośrodku i Asystentem ustawień z trzema sugerowanymi pytaniami po prawej"><figcaption><p>Strona <strong>Custom Validation Rules</strong> z asystentem po prawej. Lista reguł jest pośrodku, a trzy sugestie panelu to: <strong>Which validation rules exist for this document type?</strong> (Jakie reguły walidacji istnieją dla tego typu dokumentu?), <strong>How do I create a new validation rule?</strong> (Jak utworzyć nową regułę walidacji?) i <strong>What happens when a validation rule fails?</strong> (Co się dzieje, gdy reguła walidacji nie przechodzi?)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-pl.png" alt="Strona Niestandardowe reguły walidacji w Ustawieniach z listą reguł pośrodku i Asystentem ustawień z trzema sugerowanymi pytaniami po prawej"><figcaption><p>Strona <strong>Custom Validation Rules</strong> z asystentem po prawej. Lista reguł jest pośrodku, a trzy sugestie panelu to: <strong>Which validation rules exist for this document type?</strong> (Jakie reguły walidacji istnieją dla tego typu dokumentu?), <strong>How do I create a new validation rule?</strong> (Jak utworzyć nową regułę walidacji?) i <strong>What happens when a validation rule fails?</strong> (Co się dzieje, gdy reguła walidacji nie przechodzi?)</p></figcaption></figure>
 
 Użyj tu asystenta, aby **znaleźć** właściwe ustawienie i dowiedzieć się, co robi reguła. Aby **utworzyć lub zmienić** regułę, pracuj na samej stronie: zobacz [Niestandardowe reguły walidacji](../document-types/custom-validation-rules.md) i [Duplikowanie niestandardowej reguły walidacji](../document-types/duplicate-a-custom-validation-rule.md). Jeśli asystent utworzy dla Ciebie regułę, jest ona zawsze tworzona jako **nieaktywna**, a włączasz ją samodzielnie.
 
@@ -111,7 +111,7 @@ Jeśli pytanie wykracza poza obszar ustawień albo asystent nie znajduje nic na 
 
 Gdy coś w Twojej konfiguracji przestało działać, u góry panelu pojawia się **czerwona karta**. Nie musisz pytać. Asystent sprawdza ponownie za każdym razem, gdy otwierasz panel i gdy wracasz do karty przeglądarki.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded.png" alt="Rozwinięta karta ustalenia pokazująca jedną skrzynkę pocztową wyłączoną po trzech nieudanych próbach"><figcaption><p>Rozwinięte ustalenie: skrzynka pocztowa, jej stan (<strong>Switched off</strong>), liczba nieudanych prób i powód.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-pl.png" alt="Rozwinięta karta ustalenia pokazująca jedną skrzynkę pocztową wyłączoną po trzech nieudanych próbach"><figcaption><p>Rozwinięte ustalenie: skrzynka pocztowa, jej stan (<strong>Switched off</strong>), liczba nieudanych prób i powód.</p></figcaption></figure>
 
 Obecnie są dwie kontrole:
 

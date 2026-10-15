@@ -9,7 +9,7 @@
 
 To karta [Panelu Analitycznego](analytics-dashboard.md). Nie dodaje pracy Twojemu zespołowi: DocBits rejestruje, co dzieje się z każdym dokumentem w potoku przetwarzania, i ocenia wynik co 15 minut.
 
-<figure><img src="../.gitbook/assets/touchless-overview.png" alt="Karta Touchless Intelligence z pięcioma kluczowymi wskaźnikami, sugestiami usprawnień i wykresem wskaźnika touchless"><figcaption><p>Karta Touchless Intelligence: kluczowe wskaźniki, usprawnienia, wskaźnik w czasie i wykres pierwszej utraty. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-overview-pl.png" alt="Karta Touchless Intelligence z pięcioma kluczowymi wskaźnikami, sugestiami usprawnień i wykresem wskaźnika touchless"><figcaption><p>Karta Touchless Intelligence: kluczowe wskaźniki, usprawnienia, wskaźnik w czasie i wykres pierwszej utraty. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 ### Co możesz z tym zrobić
 
@@ -81,7 +81,7 @@ Karta pokazuje **cel** (70 %, chyba że Twoja organizacja używa innego). W tym 
 
 Kliknij **Jak obliczany jest touchless** (How touchless is calculated) w prawym górnym rogu, aby otworzyć to wyjaśnienie w DocBits, z liczbami z Twojego okresu (dokumenty w okresie, wciąż w toku, wykluczone, zmierzone).
 
-<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="Panel boczny Jak obliczany jest touchless z liczbami z okresu"><figcaption><p>Panel boczny <strong>Jak obliczany jest touchless</strong>: wzór, <strong>Twoje liczby w tym okresie</strong> (Your numbers in this period) (tutaj 2 425 dokumentów, 2 115 wciąż w toku, 310 zmierzonych) i znaczenie każdego wyniku. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology-pl.png" alt="Panel boczny Jak obliczany jest touchless z liczbami z okresu"><figcaption><p>Panel boczny <strong>Jak obliczany jest touchless</strong>: wzór, <strong>Twoje liczby w tym okresie</strong> (Your numbers in this period) (tutaj 2 425 dokumentów, 2 115 wciąż w toku, 310 zmierzonych) i znaczenie każdego wyniku. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 ### Jak aktualne są liczby
 
@@ -102,7 +102,7 @@ Wyniki są **przeliczane co 15 minut**. Wynik dokumentu może się jeszcze zmien
 
 ### Pięć kluczowych wskaźników
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="Pięć kluczowych wskaźników: Czysty touchless, AP touchless, AP wspomagany, Wyjątki procesu i Pokrycie diagnozą"><figcaption><p>Pięć kluczowych wskaźników. Tutaj czysty wskaźnik wynosi 50,3 % (156 dokumentów), czyli 19,7 punktu poniżej celu 70 %, a pokrycie diagnozą wynosi 100 %. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-kpi-cards-pl.png" alt="Pięć kluczowych wskaźników: Czysty touchless, AP touchless, AP wspomagany, Wyjątki procesu i Pokrycie diagnozą"><figcaption><p>Pięć kluczowych wskaźników. Tutaj czysty wskaźnik wynosi 50,3 % (156 dokumentów), czyli 19,7 punktu poniżej celu 70 %, a pokrycie diagnozą wynosi 100 %. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 | Kafelek | Pokazuje | Przykład (poglądowy) |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ Wyniki są **przeliczane co 15 minut**. Wynik dokumentu może się jeszcze zmien
 
 ### Wskaźnik touchless w czasie
 
-<figure><img src="../.gitbook/assets/touchless-trend.png" alt="Wykres liniowy wskaźnika czystego touchless i AP touchless na dzień z linią celu 70 procent"><figcaption><p>Wskaźnik na dzień z linią celu. Tutaj wskaźnik utrzymuje się między 40 a 60 % i gwałtownie spada od 10 października. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-trend-pl.png" alt="Wykres liniowy wskaźnika czystego touchless i AP touchless na dzień z linią celu 70 procent"><figcaption><p>Wskaźnik na dzień z linią celu. Tutaj wskaźnik utrzymuje się między 40 a 60 % i gwałtownie spada od 10 października. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 Wykres z jedną linią dla **Czystego touchless**, jedną dla **AP touchless** i **linią celu**. Krótkie okresy pokazują punkty dzienne, długie punkty tygodniowe.
 
@@ -126,7 +126,7 @@ Wykres z jedną linią dla **Czystego touchless**, jedną dla **AP touchless** i
 
 ### Gdzie touchless jest tracony najpierw
 
-<figure><img src="../.gitbook/assets/touchless-blocking-stages.png" alt="Wykres słupkowy zablokowanych dokumentów według pierwszego etapu blokady i powodu"><figcaption><p>Zablokowane dokumenty według etapu i powodu, w którym zatrzymały się najpierw. Tutaj <strong>Walidacja pól: Brak wymaganego pola</strong> kosztuje najwięcej dokumentów (58), następnie <strong>Mapowanie eksportu nie powiodło się</strong> (46) i <strong>Niezgodność pozycji PO</strong> (27). Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-blocking-stages-pl.png" alt="Wykres słupkowy zablokowanych dokumentów według pierwszego etapu blokady i powodu"><figcaption><p>Zablokowane dokumenty według etapu i powodu, w którym zatrzymały się najpierw. Tutaj <strong>Walidacja pól: Brak wymaganego pola</strong> kosztuje najwięcej dokumentów (58), następnie <strong>Mapowanie eksportu nie powiodło się</strong> (46) i <strong>Niezgodność pozycji PO</strong> (27). Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 Wykres słupkowy **Zablokowanych dokumentów** (Blocked documents) według etapu potoku: **pierwszego** etapu, który zatrzymał dokument.
 
@@ -134,7 +134,7 @@ Wykres słupkowy **Zablokowanych dokumentów** (Blocked documents) według etapu
 
 ### Możliwości u dostawców
 
-<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="Tabela Możliwości u dostawców z wolumenem, czystym wskaźnikiem, utraconymi dokumentami, główną przyczyną, możliwymi do odzyskania dokumentami, oczekiwanym wzrostem, pewnością i statusem"><figcaption><p>Kolejka dostawców (skrócona do pierwszych czterech wierszy). Pierwszy dostawca ma 106 dokumentów, czysty wskaźnik 38,7 % i 65 dokumentów możliwych do odzyskania, więc jego poprawa jest warta <strong>+21 pp</strong>. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-queue-pl.png" alt="Tabela Możliwości u dostawców z wolumenem, czystym wskaźnikiem, utraconymi dokumentami, główną przyczyną, możliwymi do odzyskania dokumentami, oczekiwanym wzrostem, pewnością i statusem"><figcaption><p>Kolejka dostawców (skrócona do pierwszych czterech wierszy). Pierwszy dostawca ma 106 dokumentów, czysty wskaźnik 38,7 % i 65 dokumentów możliwych do odzyskania, więc jego poprawa jest warta <strong>+21 pp</strong>. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 Kolejka odpowiada na pytanie **„Którego dostawcę poprawić najpierw?"**. Jest posortowana według dokumentów **Możliwych do odzyskania** (Recoverable), od największej liczby, po 25 wierszy na stronę.
 
@@ -161,7 +161,7 @@ Użyj pola wyszukiwania („Search supplier number or name"), aby znaleźć dost
 
 ### Porównaj dostawców
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="Strona Porównaj dostawców z trzema dostawcami obok siebie i wykresem słupkowym ich wyników"><figcaption><p>Trzej dostawcy obok siebie: czysty wskaźnik, utracone i możliwe do odzyskania dokumenty, główna przyczyna, oczekiwany wzrost i wykres słupkowy wyników. Każdy przycisk <strong>Otwórz</strong> (Open) prowadzi do Diagnozy dostawcy. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-compare-suppliers-pl.png" alt="Strona Porównaj dostawców z trzema dostawcami obok siebie i wykresem słupkowym ich wyników"><figcaption><p>Trzej dostawcy obok siebie: czysty wskaźnik, utracone i możliwe do odzyskania dokumenty, główna przyczyna, oczekiwany wzrost i wykres słupkowy wyników. Każdy przycisk <strong>Otwórz</strong> (Open) prowadzi do Diagnozy dostawcy. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 Kliknij **Porównaj dostawców**, zaznacz **od dwóch do pięciu** dostawców (każdy jest wymieniony z liczbą zablokowanych dokumentów) i kliknij **Porównaj** (Compare).
 

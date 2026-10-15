@@ -21,7 +21,7 @@ Administratorzy widzą też dwie sekcje między kluczowymi wskaźnikami a wykres
 * **Propozycje nauczonych reguł** (Learned rule proposals): reguły, których DocBits nauczył się z korekt Twojego zespołu, na przykład „dla dostawcy X zamień wartość w polu Y". Zanim utworzysz regułę, sprawdź dokumenty, w których zastąpiłaby wartość zaakceptowaną przez Twój zespół. Sekcja **Po aktywacji** (After activation) pokazuje ręczne korekty pola docelowego przed i po wejściu reguły w życie.
 
 
-<figure><img src="../.gitbook/assets/touchless-consulting-report.png" alt="Raport doradczy z trzema najważniejszymi propozycjami, tabelą rankingową i problemami według domeny"><figcaption><p>Raport doradczy (Consulting report): najważniejsze propozycje, ranking wszystkich blokad z dokumentami i szacowanym wpływem miesięcznie oraz problemy według domeny. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-consulting-report-pl.png" alt="Raport doradczy z trzema najważniejszymi propozycjami, tabelą rankingową i problemami według domeny"><figcaption><p>Raport doradczy (Consulting report): najważniejsze propozycje, ranking wszystkich blokad z dokumentami i szacowanym wpływem miesięcznie oraz problemy według domeny. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 Administratorzy znajdą **Raport doradczy** na dole karty. Kliknij **Utwórz raport** (Create report), aby go załadować. Łączy on dla Twojej organizacji:
 

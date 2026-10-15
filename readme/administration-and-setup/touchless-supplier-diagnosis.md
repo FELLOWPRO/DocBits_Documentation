@@ -3,7 +3,7 @@
 
 Kliknij dostawcę w kolejce, aby otworzyć stronę jego diagnozy.
 
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="Strona Diagnoza dostawcy z kafelkami wyników, trendem i dwoma klastrami problemów"><figcaption><p>Strona Diagnoza dostawcy (Supplier Diagnosis): kafelki wyników, trend z wyborem okresu i dwa klastry problemów uporządkowane według oczekiwanego wzrostu. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-detail-pl.png" alt="Strona Diagnoza dostawcy z kafelkami wyników, trendem i dwoma klastrami problemów"><figcaption><p>Strona Diagnoza dostawcy (Supplier Diagnosis): kafelki wyników, trend z wyborem okresu i dwa klastry problemów uporządkowane według oczekiwanego wzrostu. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 Strona pokazuje:
 
@@ -20,7 +20,7 @@ Krótka notatka wyjaśnia pustą stronę, na przykład: *5 documents from this s
 
 **Klaster** (cluster) grupuje dokumenty jednego dostawcy, które zatrzymały się z **tego samego pierwszego powodu**. Zamiast 40 pojedynczych problemów widzisz „3 problemy".
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="Otwarta karta klastra problemów z pierwszą blokadą, tym co zmienić i propozycją zmiany"><figcaption><p>Otwarta karta klastra: pierwsza blokada, <strong>Co zmienić</strong> (What to change) i <strong>Propozycja zmiany</strong> (Change proposal) z ryzykiem, zakresem i otwartymi pytaniami. Tutaj klaster obejmuje 58 dokumentów i jest wart +18,7 pp. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-pl.png" alt="Otwarta karta klastra problemów z pierwszą blokadą, tym co zmienić i propozycją zmiany"><figcaption><p>Otwarta karta klastra: pierwsza blokada, <strong>Co zmienić</strong> (What to change) i <strong>Propozycja zmiany</strong> (Change proposal) z ryzykiem, zakresem i otwartymi pytaniami. Tutaj klaster obejmuje 58 dokumentów i jest wart +18,7 pp. Przykładowa organizacja z danymi demonstracyjnymi; nazwy dostawców są fikcyjne.</p></figcaption></figure>
 
 **Przykładowy klaster (poglądowy).**
 

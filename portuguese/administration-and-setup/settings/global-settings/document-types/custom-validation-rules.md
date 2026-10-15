@@ -26,10 +26,6 @@ As regras são definidas por **tipo de documento** e são executadas em todos os
 | Somente moedas conhecidas pelo seu ERP são permitidas | erros de exportação no ERP | **List of Values** em Currency |
 | Avisar os usuários sobre valores incomuns sem bloqueá-los | não é possível | qualquer regra com a severidade **Warning** |
 
-{% hint style="info" %}
-Enquanto o recurso está em beta, as configurações descritas abaixo só aparecem quando a página de configurações **Document Types** é aberta com `?beta=true` adicionado ao endereço.
-{% endhint %}
-
 ## Ativar as regras de validação personalizadas
 
 As regras de validação personalizadas são ativadas **por tipo de documento**. Não existe uma chave geral para toda a organização.

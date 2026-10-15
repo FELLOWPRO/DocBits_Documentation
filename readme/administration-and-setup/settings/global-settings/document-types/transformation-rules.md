@@ -1,5 +1,7 @@
 # Zasady transformacji
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pl.mp4" %}
+
 ## Przegląd
 
 Zasady transformacji **automatycznie** oczyszczają lub przepisują wyodrębnione dane, za każdym razem, gdy dokument jest przetwarzany i za każdym razem, gdy jest zapisywany. Zasada może zmieniać:

@@ -1,34 +1,18 @@
-# Regras de validação
+# Validação de faturas eletrônicas
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Configuração de validação e versões aceites"><figcaption><p>Configuração de validação e versões XRechnung aceites</p></figcaption></figure>
+A página **Validação de faturas eletrônicas** (**Definições → Documentos eletrónicos → Validação de faturas eletrônicas**, caminho `/settings/einvoice-validation`; anteriormente chamada *Regras de validação*) controla a forma como o DocBits valida as faturas eletrónicas recebidas. Baseia-se no conjunto de regras oficial **KoSIT XRechnung + ZUGFeRD** mais os códigos de resultado internos do validador, e permite substituir a gravidade de cada regra para a sua organização.
 
-A página **Regras de validação** (**Documentos eletrónicos → Regras**) controla a forma como o DocBits valida as faturas eletrónicas recebidas. Baseia-se no conjunto de regras oficial **KoSIT XRechnung + ZUGFeRD** mais os códigos de resultado internos do validador, e permite substituir a gravidade de cada regra para a sua organização.
+> Esta página é para **faturas eletrónicas** (XRechnung, ZUGFeRD, Factur-X). Não é o mesmo que as **Regras de validação de dados**, que verificam os campos extraídos do documento.
 
-## Configuração da validação
+## O que existe nesta página
 
-O cartão **Configuração da validação** mostra o seu perfil de validação atual (por exemplo, *B2G — Public Sector Receiver*). Clique em **Editar respostas** para voltar a executar o assistente de configuração e alterar o padrão face ao qual valida.
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-pt.png" alt="A página Validação de faturas eletrônicas com a tabela Validação para cada tipo de documento"><figcaption><p>A página Validação de faturas eletrônicas. O separador <strong>Regras e políticas</strong> começa com a tabela <strong>Validação para cada tipo de documento</strong>. Organização de exemplo.</p></figcaption></figure>
 
-## Versões XRechnung aceites
-
-A barreira **Versões XRechnung aceites** lista todas as versões de XRechnung. Marque as versões que aceita — os documentos cujo CustomizationID fica fora desta lista são rejeitados com `VAL-VERSION-NOT-ALLOWED` antes de qualquer outra verificação. Uma lista vazia significa "aceitar tudo". Cada versão é marcada como **current**, **deprecated** ou **EOL** juntamente com a respetiva data de lançamento.
-
-## Perfis aceites e modelo de gravidade
-
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_severity.png" alt="Perfis aceites e legenda de gravidade"><figcaption><p>Perfis aceites e o significado de cada gravidade</p></figcaption></figure>
-
-Escolha que **perfis** aceita (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) através de **Aceitar tudo** / **Limpar** e, em seguida, **Guardar**.
-
-Cada regra de validação tem uma **gravidade** que decide o que acontece quando é acionada:
-
-| Gravidade | Efeito |
-|-----------|--------|
-| **FATAL** | Para o processamento de imediato. Nenhuma camada seguinte é verificada; o documento passa a Erro. |
-| **ERROR** | O documento é rejeitado. Os restantes resultados do mesmo documento continuam a ser apresentados; a notificação ao fornecedor (se ativada) é despoletada. |
-| **WARNING** | Surge no relatório de validação, mas o documento prossegue normalmente no fluxo. |
-| **INFO** | Apenas registo de auditoria. Sem efeito visível para o utilizador nem rejeição. |
-
-## Substituir a gravidade das regras
-
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_table.png" alt="A tabela de regras de validação"><figcaption><p>A tabela completa de regras com substituição de gravidade por regra</p></figcaption></figure>
-
-A tabela de regras lista todas as regras de validação (mais de 1.600 no total). Filtre por **Camada (Layer)**, **Perfil** ou **Versão**, ou pesquise por código ou campo. Para cada regra pode substituir a **Gravidade** no menu pendente para a ajustar à política da sua organização — por exemplo, baixar uma regra de `ERROR` para `WARNING` para que deixe de rejeitar o documento.
+| Tema | O que faz | Quem |
+| --- | --- | --- |
+| [Configuração da validação e versões aceites](validation-setup.md) | O assistente de configuração, as versões XRechnung aceites, os perfis aceites e o significado de cada gravidade. | Administradores da organização |
+| [Gravidade das regras](validation-rule-severities.md) | A tabela de regras: altere a gravidade de cada regra para a sua organização. | Administradores da organização |
+| [Validação para cada tipo de documento](validation-per-document-type.md) | Ative a validação (**Habilitado**) e decida se uma verificação falhada pára o documento (**Bloqueio**). Cada alteração precisa de confirmação. | Administradores da organização |
+| [Registo de alterações](validation-change-log.md) | Todas as alterações das definições: quando, quem, que regra, de → para. | Administradores da organização |
+| [Relatório de validação](validation-report.md) | O que o utilizador vê quando uma fatura falha: os resultados em linguagem simples. Abre-se a partir do documento, não desta página. | Todos os que processam faturas |
+| [Próximo passo e rejeitar um documento](validation-next-step-and-reject.md) | O que fazer depois de ler o relatório, transferências do relatório e **Rejeitar documento**. | Todos os que processam faturas |

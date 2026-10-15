@@ -4,7 +4,7 @@ O **Registo de alterações** regista todas as alterações das definições de 
 
 Abra o separador **Registro de alterações**, ao lado de **Regras e políticas**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pt.png" alt="O separador Registro de alterações com as colunas Quando, Quem, Regra, De → Para e Ação"><figcaption><p>O registo de alterações de uma organização ainda sem alterações</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pt.png" alt="O separador Registro de alterações com as colunas Quando, Quem, Regra, De → Para e Ação"><figcaption><p>O registo de alterações com quatro entradas de exemplo. O nome do utilizador foi substituído por um nome de exemplo.</p></figcaption></figure>
 
 | Coluna | O que mostra |
 | --- | --- |

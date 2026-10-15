@@ -1,34 +1,18 @@
-# Reguły walidacji
+# Walidacja e-faktury
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Konfiguracja walidacji i akceptowane wersje"><figcaption><p>Konfiguracja walidacji i akceptowane wersje XRechnung</p></figcaption></figure>
+Strona **Walidacja e-faktury** (**Ustawienia → Dokumenty elektroniczne → Walidacja e-faktury**, ścieżka `/settings/einvoice-validation`; wcześniej nazywana *Reguły walidacji*) kontroluje sposób, w jaki DocBits weryfikuje przychodzące e-faktury. Opiera się na oficjalnym zestawie reguł **KoSIT XRechnung + ZUGFeRD** oraz wewnętrznych kodach wyników walidatora i pozwala nadpisać wagę każdej reguły dla Twojej organizacji.
 
-Strona **Reguły walidacji** (**Dokumenty elektroniczne → Reguły**) kontroluje sposób, w jaki DocBits weryfikuje przychodzące e-faktury. Opiera się na oficjalnym zestawie reguł **KoSIT XRechnung + ZUGFeRD** oraz wewnętrznych kodach wyników walidatora i pozwala nadpisać wagę każdej reguły dla Twojej organizacji.
+> Ta strona dotyczy **e-faktur** (XRechnung, ZUGFeRD, Factur-X). To coś innego niż **Reguły walidacji danych**, które sprawdzają wyodrębnione pola dokumentu.
 
-## Konfiguracja walidacji
+## Co znajdziesz na tej stronie
 
-Karta **Konfiguracja walidacji** pokazuje Twój bieżący profil walidacji (na przykład *B2G — Public Sector Receiver*). Kliknij **Edytuj odpowiedzi**, aby ponownie uruchomić kreatora konfiguracji i zmienić standard, względem którego prowadzona jest walidacja.
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings-pl.png" alt="Strona Walidacja e-faktury z tabelą Walidacja dla każdego typu dokumentu"><figcaption><p>Strona Walidacja e-faktury. Karta <strong>Zasady i polityka</strong> zaczyna się od tabeli <strong>Walidacja dla każdego typu dokumentu</strong>. Przykładowa organizacja.</p></figcaption></figure>
 
-## Akceptowane wersje XRechnung
-
-Bramka **Akceptowane wersje XRechnung** wymienia każdą wersję XRechnung. Zaznacz wersje, które akceptujesz — dokumenty, których CustomizationID znajduje się poza tą listą, są odrzucane z kodem `VAL-VERSION-NOT-ALLOWED` przed jakąkolwiek inną kontrolą. Pusta lista oznacza „akceptuj wszystko". Każda wersja jest oznaczona jako **current**, **deprecated** lub **EOL** wraz z datą wydania.
-
-## Akceptowane profile i model wagi
-
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_severity.png" alt="Akceptowane profile i legenda wag"><figcaption><p>Akceptowane profile i znaczenie poszczególnych wag</p></figcaption></figure>
-
-Wybierz, które **profile** akceptujesz (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)), używając przycisków **Akceptuj wszystko** / **Wyczyść**, a następnie **Zapisz**.
-
-Każda reguła walidacji ma **wagę**, która decyduje, co się dzieje po jej uruchomieniu:
-
-| Waga | Skutek |
-|------|--------|
-| **FATAL** | Natychmiast zatrzymuje przetwarzanie. Żadna kolejna warstwa nie jest sprawdzana; dokument przechodzi w stan Błąd. |
-| **ERROR** | Dokument jest odrzucany. Pozostałe wyniki dla tego samego dokumentu są nadal pokazywane; powiadomienie dostawcy (jeśli włączone) jest wyzwalane. |
-| **WARNING** | Pojawia się w raporcie walidacji, ale dokument przechodzi przez potok normalnie. |
-| **INFO** | Tylko dziennik audytu. Brak widocznego efektu dla użytkownika i brak odrzucenia. |
-
-## Nadpisywanie wag reguł
-
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_table.png" alt="Tabela reguł walidacji"><figcaption><p>Pełna tabela reguł z nadpisaniem wagi dla każdej reguły</p></figcaption></figure>
-
-Tabela reguł wymienia każdą regułę walidacji (łącznie ponad 1600). Filtruj według **Warstwy (Layer)**, **Profilu** lub **Wersji** albo wyszukuj według kodu lub pola. Dla każdej reguły możesz nadpisać **Wagę** z listy rozwijanej, aby dopasować ją do polityki swojej organizacji — na przykład obniżyć regułę z `ERROR` do `WARNING`, aby nie odrzucała już dokumentu.
+| Temat | Co robi | Kto |
+| --- | --- | --- |
+| [Konfiguracja walidacji i akceptowane wersje](validation-setup.md) | Kreator konfiguracji, akceptowane wersje XRechnung, akceptowane profile i znaczenie każdej wagi. | Administratorzy organizacji |
+| [Wagi reguł](validation-rule-severities.md) | Tabela reguł: zmień wagę każdej reguły dla swojej organizacji. | Administratorzy organizacji |
+| [Walidacja dla każdego typu dokumentu](validation-per-document-type.md) | Włącz walidację (**Włączony**) i zdecyduj, czy nieudana kontrola zatrzymuje dokument (**Bloking**). Każda zmiana wymaga potwierdzenia. | Administratorzy organizacji |
+| [Dziennik zmian](validation-change-log.md) | Każda zmiana ustawień: kiedy, kto, jaka reguła, od → do. | Administratorzy organizacji |
+| [Raport walidacyjny](validation-report.md) | Co widzi użytkownik, gdy faktura nie przejdzie kontroli: wyniki prostym językiem. Raport otwiera się z dokumentu, a nie z tej strony. | Wszyscy, którzy przetwarzają faktury |
+| [Następny krok i odrzucenie dokumentu](validation-next-step-and-reject.md) | Co zrobić po przeczytaniu raportu, pobieranie raportu i **Odrzuć dokument**. | Wszyscy, którzy przetwarzają faktury |

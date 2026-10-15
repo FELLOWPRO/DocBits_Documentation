@@ -1,6 +1,6 @@
 # Validation report
 
-When DocBits rejects an e-invoice, you can read exactly why. The **validation report** lists every finding in plain language, tells you what to fix, and shows the next step. You open it from the document, not from the settings.
+When DocBits rejects an e-invoice, you can read exactly why. The **validation report** lists every finding in plain language, tells you what to fix, and shows the next step. You open it from the document, not from the settings. The screen where you find it is described in [The error screen for a rejected e-invoice](validation-error-screen.md).
 
 This page is for people who process invoices. Administrators set up the rules on the [E-Invoice Validation](validation-rules.md) page and choose per document type whether a failed check blocks the invoice, see [Validation for each document type](validation-per-document-type.md).
 

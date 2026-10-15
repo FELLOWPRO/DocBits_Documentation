@@ -14,5 +14,6 @@ The **E-Invoice Validation** page (**Settings → E-Documents → E-Invoice Vali
 | [Rule severities](validation-rule-severities.md) | The rule table: change the severity of each rule for your organisation. | Organisation administrators |
 | [Validation for each document type](validation-per-document-type.md) | Turn validation on (**Enabled**) and decide whether a failed check stops the document (**Blocking**). Every change needs a confirmation. | Organisation administrators |
 | [Change log](validation-change-log.md) | Every change of the settings: when, who, which rule, from → to. | Organisation administrators |
+| [The error screen for a rejected e-invoice](validation-error-screen.md) | What you see when you upload a wrong XML: the explanation, the faulty line and the next step. | Everyone who processes invoices |
 | [Validation report](validation-report.md) | What a user sees when an invoice fails: the findings in plain language. It opens from the document, not from this page. | Everyone who processes invoices |
 | [Next step and reject a document](validation-next-step-and-reject.md) | What to do after you read the report, downloads of the report, and **Reject document**. | Everyone who processes invoices |

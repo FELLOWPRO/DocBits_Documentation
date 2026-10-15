@@ -447,6 +447,7 @@
         * [Rule severities](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
         * [Validation for each document type](administration-and-setup/settings/document-processing/e-documents/validation-per-document-type.md)
         * [Change log](administration-and-setup/settings/document-processing/e-documents/validation-change-log.md)
+        * [The error screen for a rejected e-invoice](administration-and-setup/settings/document-processing/e-documents/validation-error-screen.md)
         * [Validation report](administration-and-setup/settings/document-processing/e-documents/validation-report.md)
         * [Next step and reject a document](administration-and-setup/settings/document-processing/e-documents/validation-next-step-and-reject.md)
       * [Notification Routing](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

@@ -4,7 +4,7 @@ The **Change log** records every change of the validation settings. It belongs t
 
 Open the tab **Change log** next to **Rules and policy**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log.png" alt="The Change log tab with the columns When, Who, Rule, From to To and Action"><figcaption><p>The change log of an organisation without changes yet</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log.png" alt="The Change log tab with the columns When, Who, Rule, From to To and Action"><figcaption><p>The change log with four example entries. The user name is replaced by an example name.</p></figcaption></figure>
 
 | Column | What it shows |
 | --- | --- |

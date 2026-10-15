@@ -413,6 +413,7 @@
         * [Best practices](administration-and-setup/settings/global-settings/document-types/more-settings/best-practices.md)
         * [Troubleshooting](administration-and-setup/settings/global-settings/document-types/more-settings/troubleshooting.md)
         * [Duplicate Detection](administration-and-setup/settings/global-settings/document-types/more-settings/duplicate-document-handling.md)
+        * [Vertex Tax Verification](administration-and-setup/settings/global-settings/document-types/more-settings/vertex-tax-verification.md)
         * [Approval](administration-and-setup/settings/global-settings/document-types/more-settings/approval/README.md)
           * [Approval Stamp](administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-stamp.md)
           * [Approval History](administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history.md)

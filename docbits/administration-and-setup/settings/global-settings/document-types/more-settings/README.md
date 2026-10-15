@@ -20,7 +20,7 @@ The breadcrumb at the top of the page shows **Settings / Document Types / More S
 | [Custom Validation Rules](#manage-layouts-custom-validation-rules-and-transformation-rules) | Your own validation rules for this document type |
 | [Transformation Rules](#manage-layouts-custom-validation-rules-and-transformation-rules) | Rules that read a value, change it in steps and write it back |
 | [Approval & Rejection](#approval-and-rejection) | Approval workflow and the in-review and reject forms |
-| Vertex Tax Verification | Design the form for the Vertex tax verification |
+| [Vertex Tax Verification](vertex-tax-verification.md) | Design the form for the Vertex tax verification |
 | [E-Invoice Validation](#e-invoice-validation) | Validation of XRechnung, ZUGFeRD and Factur-X invoices |
 | [Table Extraction](#table-extraction) | Skip the validation of extracted tables |
 | [Export Settings](#export-settings) | Multiple export, PDF format, alternate export |
@@ -85,6 +85,10 @@ The **Approval & Rejection** card holds the approval workflow and the forms that
 * **Design Reject Form**: Configures the layout of the reject form with the **Layout Builder**.
 
 For the **Layout Builder** see the [Layout Manager](../layout-manager/README.md).
+
+## Vertex Tax Verification
+
+The **Vertex Tax Verification** card holds **Design Vertex Tax Verification**. It opens the Layout Builder for the form that users see when DocBits compares the vendor tax with the tax calculated by Vertex. See [Vertex Tax Verification](vertex-tax-verification.md) for the integration, the tolerance and the result.
 
 ## E-Invoice Validation
 

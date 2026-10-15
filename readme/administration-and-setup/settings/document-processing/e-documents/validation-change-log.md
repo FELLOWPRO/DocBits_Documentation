@@ -4,7 +4,7 @@ El **Registro de cambios** registra cada cambio de los ajustes de validación. P
 
 Abra la pestaña **Registro de cambios**, junto a **Normas y políticas**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-es.png" alt="La pestaña Registro de cambios con las columnas Cuando, OMS, Regla, Desde → Hasta y Acción"><figcaption><p>El registro de cambios de una organización que todavía no tiene cambios</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-es.png" alt="La pestaña Registro de cambios con las columnas Cuando, OMS, Regla, Desde → Hasta y Acción"><figcaption><p>El registro de cambios con cuatro entradas de ejemplo. El nombre de usuario está sustituido por un nombre de ejemplo.</p></figcaption></figure>
 
 | Columna | Qué muestra |
 | --- | --- |

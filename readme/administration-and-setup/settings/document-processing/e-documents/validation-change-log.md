@@ -4,7 +4,7 @@ Het **Wijzigingslogboek** legt elke wijziging van de validatie-instellingen vast
 
 Open het tabblad **Wijzigingslogboek** naast **Regels en beleid**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-nl.png" alt="Het tabblad Wijzigingslogboek met de kolommen Wanneer, WHO, Regel, Van naar Naar en Actie"><figcaption><p>Het wijzigingslogboek van een organisatie zonder wijzigingen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-nl.png" alt="Het tabblad Wijzigingslogboek met de kolommen Wanneer, WHO, Regel, Van naar Naar en Actie"><figcaption><p>Het wijzigingslogboek met vier voorbeeldvermeldingen. De gebruikersnaam is vervangen door een voorbeeldnaam.</p></figcaption></figure>
 
 | Kolom | Wat ze toont |
 | --- | --- |

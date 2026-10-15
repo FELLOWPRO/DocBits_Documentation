@@ -14,5 +14,6 @@ De pagina **Validatie van elektronische facturen** (**Instellingen → E-documen
 | [Ernst van regels](validation-rule-severities.md) | De regeltabel: wijzig de ernst van elke regel voor uw organisatie. | Organisatiebeheerders |
 | [Validatie voor elk documenttype](validation-per-document-type.md) | Schakel validatie in (**Ingeschakeld**) en bepaal of een mislukte controle het document stopt (**Blokkeren**). Elke wijziging moet worden bevestigd. | Organisatiebeheerders |
 | [Wijzigingslogboek](validation-change-log.md) | Elke wijziging van de instellingen: wanneer, wie, welke regel, van → naar. | Organisatiebeheerders |
+| [Het foutscherm voor een afgewezen e-factuur](validation-error-screen.md) | Wat u ziet wanneer u een onjuiste XML uploadt: de uitleg, de foutieve regel en de volgende stap. | Iedereen die facturen verwerkt |
 | [Validatierapport](validation-report.md) | Wat een gebruiker ziet wanneer een factuur faalt: de bevindingen in begrijpelijke taal. Het opent vanuit het document, niet vanuit deze pagina. | Iedereen die facturen verwerkt |
 | [Volgende stap en een document afwijzen](validation-next-step-and-reject.md) | Wat u doet nadat u het rapport hebt gelezen, downloads van het rapport en **Document afwijzen**. | Iedereen die facturen verwerkt |

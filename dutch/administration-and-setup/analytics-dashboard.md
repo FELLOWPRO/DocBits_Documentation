@@ -184,3 +184,7 @@ De Datatabel biedt volledige toegang tot alle onderliggende rijgegevens voor de 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+Het tabblad **Touchless Intelligence** toont hoeveel documenten zonder aanraking door DocBits lopen en waarom de andere stoppen. Zie [Touchless Intelligence](touchless-intelligence.md).

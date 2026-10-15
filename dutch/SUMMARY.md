@@ -121,6 +121,8 @@
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)
     * [Bedrijfsinformatie](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Bedrijfsvoorkeuren](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
+      * [Settings Assistant: inschakelen](administration-and-setup/settings/global-settings/company-information/settings-assistant.md)
+        * [Settings Assistant: wat de chat kan doen](administration-and-setup/settings/global-settings/company-information/settings-assistant-chat.md)
       * [Het definiëren van App-kleur in Bedrijfsinstellingen](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)
       * [Twee-factor-authenticatie (Admin)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)
     * [Groups, Users and Permissions](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)
@@ -699,6 +701,11 @@
     * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Rapport Pagina](administration-and-setup/report-page.md)
 * [Analyse-dashboard](administration-and-setup/analytics-dashboard.md)
+  * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
+    * [Leveranciersdiagnose en probleemclusters](administration-and-setup/touchless-supplier-diagnosis.md)
+    * [PO-matchingdiagnose](administration-and-setup/touchless-po-matching-diagnosis.md)
+    * [Documentspoor](administration-and-setup/touchless-document-trace.md)
+    * [Wijzigingsvoorstellen en rapporten](administration-and-setup/touchless-change-proposals.md)
 
 ## Infor integratie en configuratie <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

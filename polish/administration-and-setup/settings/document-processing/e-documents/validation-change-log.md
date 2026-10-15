@@ -4,7 +4,7 @@
 
 Otwórz kartę **Dziennik zmian** obok karty **Zasady i polityka**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pl.png" alt="Karta Dziennik zmian z kolumnami Gdy, Kto, Reguła, Od → Do i Działanie"><figcaption><p>Dziennik zmian organizacji, w której nie było jeszcze żadnych zmian</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-pl.png" alt="Karta Dziennik zmian z kolumnami Gdy, Kto, Reguła, Od → Do i Działanie"><figcaption><p>Dziennik zmian z czterema przykładowymi wpisami. Nazwa użytkownika jest zastąpiona przykładową nazwą.</p></figcaption></figure>
 
 | Kolumna | Co pokazuje |
 | --- | --- |

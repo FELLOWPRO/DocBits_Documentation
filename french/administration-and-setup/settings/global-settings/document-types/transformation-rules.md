@@ -30,10 +30,6 @@ Les règles de transformation remplacent la plupart des petits scripts que les o
 | Le numéro de bon de commande comporte des zéros en tête ou un préfixe que le bon de commande n'a pas | Champ d'en-tête *Purchase Order* : Trim `0` à gauche, ou Affix : supprimer le préfixe |
 | Les numéros d'article diffèrent des lignes du bon de commande par la casse, les espaces ou les préfixes | Colonne du tableau *ITEM_NUMBER* : Affix : supprimer le préfixe → Sanitise → UPPERCASE |
 
-{% hint style="info" %}
-Tant que la fonctionnalité est en bêta, les paramètres décrits ci-dessous n'apparaissent que si la page de paramètres **Document Types** est ouverte avec `?beta=true` ajouté à l'adresse.
-{% endhint %}
-
 ## Activer les règles de transformation
 
 Les règles de transformation sont activées **par type de document** par un **administrateur de l'organisation**.

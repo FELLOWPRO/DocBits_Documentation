@@ -441,6 +441,7 @@
         * [Gravité des règles](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
         * [Validation pour chaque type de document](administration-and-setup/settings/document-processing/e-documents/validation-per-document-type.md)
         * [Journal des modifications](administration-and-setup/settings/document-processing/e-documents/validation-change-log.md)
+        * [L'écran d'erreur d'une facture électronique rejetée](administration-and-setup/settings/document-processing/e-documents/validation-error-screen.md)
         * [Rapport de validation](administration-and-setup/settings/document-processing/e-documents/validation-report.md)
         * [Étape suivante et rejet d'un document](administration-and-setup/settings/document-processing/e-documents/validation-next-step-and-reject.md)
       * [Routage des notifications](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

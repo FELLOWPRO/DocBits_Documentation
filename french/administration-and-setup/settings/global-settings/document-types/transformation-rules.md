@@ -1,4 +1,4 @@
-# Transformation Rules
+# Règles de transformation
 
 ## Vue d'ensemble
 
@@ -7,7 +7,7 @@ Les règles de transformation nettoient ou réécrivent les données extraites *
 * un **champ d'en-tête** (numéro de facture, devise, numéro d'identification fiscale du fournisseur …),
 * une **colonne** dans chaque ligne d'un tableau (unité, numéro d'article, base de prix …),
 * les **lignes** d'un tableau (les vider, ajouter une ligne),
-* un **attribut du document** — aujourd'hui la sous-organisation à laquelle il appartient (**Routing**).
+* un **attribut du document** — aujourd'hui la sous-organisation à laquelle il appartient (**Routage**).
 
 Chaque règle **lit** une valeur, la fait passer par un court **pipeline** d'étapes et **réécrit** le résultat. Les règles s'exécutent **avant** la validation, les scripts et le rapprochement des bons de commande (PO matching), de sorte que tout ce qui suit voit déjà les valeurs corrigées.
 
@@ -18,12 +18,15 @@ Les règles de transformation remplacent la plupart des petits scripts que les o
 | Besoin | Règle |
 | --- | --- |
 | Un fournisseur imprime le numéro de facture sans le préfixe `INV-` attendu par notre ERP | Champ d'en-tête *Invoice Number*, uniquement pour ce fournisseur : Trim → UPPERCASE → Affix : ajouter le préfixe `INV-` |
-| Des fournisseurs envoient des codes d'unité allemands (`STK`, `Std`), l'ERP attend des codes UN/ECE (`PCE`, `HUR`) | Colonne de tableau *UNIT* : Map values `STK → PCE`, `KG → KGM`, `Std → HUR` |
-| Les numéros d'article arrivent avec un préfixe tel que `Art.-Nr. 4711` | Colonne de tableau *ITEM_NUMBER* : Affix : supprimer le préfixe `Art.-Nr. ` |
+| Des fournisseurs envoient des codes d'unité allemands (`STK`, `Std`), l'ERP attend des codes UN/ECE (`PCE`, `HUR`) | Colonne du tableau *UNIT* : Map values `STK → PCE`, `KG → KGM`, `Std → HUR` |
+| Les numéros d'article arrivent avec un préfixe tel que `Art.-Nr. 4711` | Colonne du tableau *ITEM_NUMBER* : Affix : supprimer le préfixe `Art.-Nr. ` |
 | Les numéros d'identification fiscale contiennent des espaces et des points | Champ d'en-tête *Supplier Tax ID* : Sanitise, ne garder que l'alphanumérique |
-| Un fournisseur est rapproché sur le total, pas sur les lignes | Lignes de tableau : Clear all rows → Add a row avec le montant net |
-| Tous les documents de certains fournisseurs appartiennent à une sous-organisation | Routing : définir la sous-organisation lorsque *Supplier ID is one of …* |
+| Un fournisseur est rapproché sur le total, pas sur les lignes | Lignes du tableau : Clear all rows → Add a row avec le montant net |
+| Tous les documents de certains fournisseurs appartiennent à une sous-organisation | Routage : définir la sous-organisation lorsque *Supplier ID is one of …* |
 | Les dates doivent être écrites dans un format fixe dans un champ de texte libre | Champ d'en-tête : Reformat date `%d.%m.%Y` |
+| Le numéro de bon de commande se trouve dans le mauvais champ (par exemple dans *Invoice Number*) | Champ d'en-tête *Purchase Order* : lire depuis *Invoice Number*, uniquement lorsque *Purchase Order is empty* |
+| Le numéro de bon de commande comporte des zéros en tête ou un préfixe que le bon de commande n'a pas | Champ d'en-tête *Purchase Order* : Trim `0` à gauche, ou Affix : supprimer le préfixe |
+| Les numéros d'article diffèrent des lignes du bon de commande par la casse, les espaces ou les préfixes | Colonne du tableau *ITEM_NUMBER* : Affix : supprimer le préfixe → Sanitise → UPPERCASE |
 
 {% hint style="info" %}
 Tant que la fonctionnalité est en bêta, les paramètres décrits ci-dessous n'apparaissent que si la page de paramètres **Document Types** est ouverte avec `?beta=true` ajouté à l'adresse.
@@ -49,27 +52,27 @@ Les règles proviennent de trois sources, comme pour les règles de validation :
 
 ## Créer une règle
 
-Cliquez sur **New rule**. L'éditeur comporte trois étapes à gauche et un **Live preview** à droite. En haut, il résume la règle en une phrase pendant que vous la construisez.
+Cliquez sur **New rule**. L'éditeur comporte trois étapes à gauche et un **Aperçu en direct** à droite. En haut, il résume la règle en une phrase pendant que vous la construisez.
 
 <figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Étape 1 de l'éditeur de règles de transformation"><figcaption><p>Étape 1 : ce que la règle modifie. La phrase en haut décrit la règle en langage clair</p></figcaption></figure>
 
-### Étape 1 — What & where
+### Étape 1 — Quoi et où
 
-**What does this rule change?** — la portée :
+**Qu'est-ce que cette règle change ?** — la portée :
 
 | Portée | Modifie | Cible | S'exécute |
 | --- | --- | --- | --- |
-| **Header field** | une valeur par document | un champ d'en-tête, p. ex. *Invoice Number* | une fois par document |
-| **Table rows** | des lignes entières du tableau — les vider ou en ajouter | un tableau, p. ex. `INVOICE_TABLE` | une fois par document |
-| **Table column** | une valeur dans chaque ligne du tableau | un tableau et une colonne, p. ex. `INVOICE_TABLE` / `UNIT` | une fois par ligne |
-| **Routing** | un attribut du document — aujourd'hui la sous-organisation | *sub-organisation* | une fois par document |
+| **Champ d'en-tête** | une valeur par document | un champ d'en-tête, p. ex. *Invoice Number* | une fois par document |
+| **lignes du tableau** | des lignes entières du tableau — les vider ou en ajouter | un tableau, p. ex. `INVOICE_TABLE` | une fois par document |
+| **Colonne du tableau** | une valeur dans chaque ligne du tableau | un tableau et une colonne, p. ex. `INVOICE_TABLE` / `UNIT` | une fois par ligne |
+| **Routage** | un attribut du document — aujourd'hui la sous-organisation | *sous-organisation* | une fois par document |
 
-Saisissez ensuite le **Rule Name** (la **Rule key** en est générée), choisissez le **Target field** / **Table name** / **Target column**, et éventuellement une **Description**. **Log execution** écrit une entrée de journal à chaque application — utile pendant que vous ajustez une règle.
+Saisissez ensuite le **Nom de la règle** (la **Clé de règle** en est générée), choisissez le **Champ cible** / **Table name** / **Target column**, et éventuellement une **Description**. **Exécution du journal** écrit une entrée de journal à chaque application — utile pendant que vous ajustez une règle.
 
-### Étape 2 — When it runs
+### Étape 2 — Quand il fonctionne
 
-* **Always** — la règle s'exécute sur chaque document du type.
-* **Only when…** — la règle ne s'exécute que si une condition est vraie, par exemple *Supplier ID is HP0000278*. Pour les règles **Table column**, la condition peut utiliser les colonnes de la ligne courante et est vérifiée ligne par ligne. Consultez [Rule Conditions (Applies when)](rule-conditions-applies-when.md) pour tous les champs, opérateurs et exemples.
+* **Toujours** — la règle s'exécute sur chaque document du type.
+* **Seulement quand…** — la règle ne s'exécute que si une condition est vraie, par exemple *Supplier ID is HP0000278*. Pour les règles **Colonne du tableau**, la condition peut utiliser les colonnes de la ligne courante et est vérifiée ligne par ligne. Consultez [Rule Conditions (Applies when)](rule-conditions-applies-when.md) pour tous les champs, opérateurs et exemples.
 
 Deux options contrôlent la fréquence d'application de la règle :
 
@@ -107,7 +110,7 @@ Deux options contrôlent la fréquence d'application de la règle :
 | **Fix value** | la valeur | écrit toujours la valeur, quel que soit le contenu du champ |
 | **Clear** | – | vide le champ |
 
-Les règles **Table rows** utilisent deux autres étapes, qui travaillent sur des lignes et non sur des valeurs :
+Les règles **lignes du tableau** utilisent deux autres étapes, qui travaillent sur des lignes et non sur des valeurs :
 
 | Étape | Effet |
 | --- | --- |
@@ -118,80 +121,113 @@ Les règles **Table rows** utilisent deux autres étapes, qui travaillent sur de
 **Reformat date** attend la date telle que DocBits la stocke en interne (`YYYY-MM-DD`). Appliquez-la au champ lui-même, pas à un texte qui contient déjà une date formatée.
 {% endhint %}
 
-### Live preview
+### Aperçu en direct
 
 L'aperçu en direct exécute la règle sur un échantillon pendant que vous la construisez :
 
-* **Sample input** — saisissez une valeur telle qu'elle proviendrait du document. Pour les règles de tableau, indiquez le nombre de lignes extraites (**Sample table**) et les valeurs des champs que lisent les nouvelles lignes (**Row source values**).
-* **Condition values** — pour les règles avec condition, saisissez les valeurs des champs de la condition. L'aperçu affiche **Conditions match — rule runs** ou **Conditions do not match — rule is skipped**.
+* **Exemple d'entrée** — saisissez une valeur telle qu'elle proviendrait du document. Pour les règles de tableau, indiquez le nombre de lignes extraites (**Sample table**) et les valeurs des champs que lisent les nouvelles lignes (**Row source values**).
+* **Valeurs de condition** — pour les règles avec condition, saisissez les valeurs des champs de la condition. L'aperçu affiche **Les conditions correspondent — la règle s'applique** ou **Les conditions ne correspondent pas — la règle est ignorée**.
 * En dessous, vous voyez la valeur après **chaque étape** et le résultat final qui serait écrit (« invoice_id → INV-230620-03A », ou « unchanged »).
 
-Rien n'est enregistré pendant que vous utilisez l'aperçu. Cliquez sur **Save** pour enregistrer la règle.
+Rien n'est enregistré pendant que vous utilisez l'aperçu. Cliquez sur **Enregistrer** pour enregistrer la règle.
 
 ## Exemples
 
 ### Nettoyer le numéro de facture d'un fournisseur
 
 Champ d'en-tête **Invoice Number** · uniquement lorsque *Supplier ID is HP0000278* · Trim → Change case UPPERCASE → Affix ajouter le préfixe `INV-`.
-Échantillon `  230620-03a ` → `INV-230620-03A`. Voir la capture d'écran du pipeline ci-dessus.
+Exemple d'entrée `  230620-03a ` → `INV-230620-03A`. Voir la capture d'écran du pipeline ci-dessus.
 
 ### Mapper les codes d'unité
 
-Colonne de tableau **INVOICE_TABLE / UNIT** · toujours · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** activé, valeur sans correspondance vide (conserver l'entrée).
+Colonne du tableau **INVOICE_TABLE / UNIT** · toujours · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** activé, valeur sans correspondance vide (conserver l'entrée).
 
 <figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Une règle de colonne de tableau avec Map values"><figcaption><p>Map values sur la colonne UNIT : <code>stk</code> devient <code>PCE</code></p></figcaption></figure>
 
 ### Une ligne de total pour un fournisseur rapproché sur le total
 
-Table rows **INVOICE_TABLE** · uniquement lorsque *Supplier ID is HP0000278* · Clear all rows → Add a row avec `POSITION` = valeur `001`, `QUANTITY` = valeur `1`, `NET_AMOUNT` = champ *Total Net Amount*.
+Lignes du tableau **INVOICE_TABLE** · uniquement lorsque *Supplier ID is HP0000278* · Clear all rows → Add a row avec `POSITION` = valeur `001`, `QUANTITY` = valeur `1`, `NET_AMOUNT` = champ *Total Net Amount*.
 
-<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Une règle Table rows : supprimer toutes les lignes, puis ajouter une ligne"><figcaption><p>Trois lignes extraites sont remplacées par une ligne portant le montant net</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/transformation-add-row-columns.png" alt="Une règle de lignes du tableau : supprimer toutes les lignes, puis ajouter une ligne"><figcaption><p>Trois lignes extraites sont remplacées par une ligne portant le montant net</p></figcaption></figure>
 
-L'ordre est important : **Clear all rows** doit venir **avant** **Add a row**. L'éditeur vous avertit dans le cas contraire (« Clear all rows runs after Add a row … »), et il vous avertit aussi si une étape **Add a row** n'est pas précédée de **Clear all rows**, car la règle ajouterait alors une nouvelle copie de la ligne à chaque enregistrement. Associez cette règle à une règle de PO matching sur le total, active pour les documents à une seule ligne.
+L'ordre est important : **Clear all rows** doit venir **avant** **Add a row**. L'éditeur vous avertit dans le cas contraire (« Clear all rows runs after Add a row … »), et il vous avertit aussi si une étape **Add a row** n'est pas précédée de **Clear all rows**, car la règle ajouterait alors une nouvelle copie de la ligne à chaque enregistrement. Associez cette règle à une règle de rapprochement des bons de commande sur le total, active pour les documents à une seule ligne.
+
+### Renseigner le bon de commande à partir du champ numéro de facture
+
+Champ d'en-tête **Purchase Order** · uniquement lorsque *Purchase Order is empty* · **Read from** *Invoice Number* → Trim → Change case UPPERCASE.
+
+<figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-fr.png" alt="L'éditeur de règles pour la règle qui renseigne Purchase Order à partir de Invoice Number, avec l'aperçu en direct"><figcaption><p>La règle et son aperçu en direct : <code>po-4711</code> devient <code>PO-4711</code> dans <code>purchase_order</code>. Exemple de règle sur un type de document de test.</p></figcaption></figure>
+
+Certains fournisseurs impriment le numéro de commande à l'endroit où l'extraction attend le numéro de facture. **Invoice Number** contient alors le numéro de bon de commande et **Purchase Order** est vide, si bien que le moteur de rapprochement n'a rien à rapprocher. Cette règle copie la valeur avant le début du rapprochement. Lors d'un test sur un système de développement, un document présentant exactement ce problème est passé de *non rapproché* à *entièrement rapproché* (2 lignes sur 2) lorsqu'il a été enregistré avec la règle. La règle ne s'exécute que tant que **Purchase Order** est vide : elle n'écrase donc jamais un numéro extrait correctement.
+
+### Rendre les numéros d'article comparables pour le rapprochement des bons de commande
+
+Colonne du tableau **INVOICE_TABLE / ITEM_NUMBER** · toujours · Affix : supprimer le préfixe `Art.-Nr. ` → Sanitise : garder alphanumeric → Change case UPPERCASE.
+
+<figure><img src="../../../../.gitbook/assets/transformation-item-number-compare-fr.png" alt="L'éditeur de règles pour la règle des numéros d'article, avec l'aperçu en direct"><figcaption><p>L'aperçu en direct montre chaque étape : <code>Art.-Nr. ab-12/3</code> devient <code>AB123</code></p></figcaption></figure>
+
+Si la facture indique `Art.-Nr. ab-12/3` et que le bon de commande contient `AB123`, les lignes ne correspondent pas. La règle ramène la valeur de la facture à la forme utilisée dans le bon de commande. Vérifiez la forme qu'utilisent vos bons de commande et adaptez les étapes.
 
 ### Autres exemples
 
 | Objectif | Portée | Condition | Étapes |
 | --- | --- | --- | --- |
-| Supprimer les espaces et les points de l'identifiant fiscal | Header *Supplier Tax ID* | toujours | Sanitise : keep alphanumeric |
+| Supprimer les espaces et les points du numéro d'identification fiscale | Champ d'en-tête *Supplier Tax ID* | toujours | Sanitise : keep alphanumeric |
 | Supprimer le préfixe d'article | Colonne *ITEM_NUMBER* | toujours | Affix : strip prefix `Art.-Nr. ` |
-| Numéros de fournisseur à 10 chiffres | Header *Supplier ID* | toujours | Trim → Pad longueur 10 avec `0`, left |
-| Extraire le numéro de bon de commande d'un texte de référence | Header *Purchase Order*, lu depuis un autre champ | uniquement lorsque *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, groupe 1 |
-| Toujours utiliser une seule devise pour un fournisseur | Header *Currency* | uniquement lorsque *Supplier ID is 10040* | Fix value `CHF` |
-| Supprimer une valeur mal extraite | Header *Discount Term* | uniquement lorsque *Supplier ID is 20723* | Clear |
+| Numéros de fournisseur à 10 chiffres | Champ d'en-tête *Supplier ID* | toujours | Trim → Pad longueur 10 avec `0`, left |
+| Extraire le numéro de bon de commande d'un texte de référence | Champ d'en-tête *Purchase Order*, lu depuis un autre champ | uniquement lorsque *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, groupe 1 |
+| Toujours utiliser une seule devise pour un fournisseur | Champ d'en-tête *Currency* | uniquement lorsque *Supplier ID is 10040* | Fix value `CHF` |
+| Supprimer une valeur mal extraite | Champ d'en-tête *Discount Term* | uniquement lorsque *Supplier ID is 20723* | Clear |
 | Base de prix par unité | Colonne *UNIT_PRICE_PER* | uniquement lorsque *row.UNIT_PRICE_PER is empty* | Fix value `1` |
-| Router des fournisseurs vers une sous-organisation | Routing | *Supplier ID is one of* `10040, 10041` | affecter une sous-organisation fixe |
+| Router des fournisseurs vers une sous-organisation | Routage | *Supplier ID is one of* `10040, 10041` | affecter une sous-organisation fixe |
+| Supprimer les zéros en tête du numéro de bon de commande | Champ d'en-tête *Purchase Order* | toujours | Trim caractères `0`, côté left |
+| Ne garder que les chiffres du numéro de bon de commande | Champ d'en-tête *Purchase Order* | toujours | Sanitise : keep digits only (`PO-45001234` → `45001234`) |
+| Raccourcir une référence de bon de commande trop longue | Champ d'en-tête *Purchase Order* | uniquement lorsque *Supplier ID is 20723* | Truncate à 10 caractères |
+| Ajouter au numéro de bon de commande le préfixe attendu par votre ERP | Champ d'en-tête *Purchase Order* | uniquement lorsque *Supplier ID is 10040* | Affix : add prefix `4500` |
+| Écrire les montants comme votre ERP les lit | Champ d'en-tête *Total Amount* | toujours | Format number, locale `de_DE`, 2 décimales |
+| Supprimer les espaces à l'intérieur des numéros d'article | Colonne *ITEM_NUMBER* | toujours | Sanitise : strip les caractères ` ` (espace) |
+| Mettre les numéros d'article en majuscules | Colonne *ITEM_NUMBER* | toujours | Change case UPPERCASE |
+| Envoyer les bons de commande d'un site vers une sous-organisation | Routage | *Purchase Order starts with* `4500` | affecter une sous-organisation fixe |
 
 ## Règles de routage (sous-organisation)
 
-Une règle **Routing** ne modifie pas un champ. Elle appose un attribut sur le document lorsque ses conditions correspondent — aujourd'hui la **sous-organisation**. Choisissez **Assign a fixed sub-organisation** et sélectionnez-la dans la liste, ou **Map from a field** pour associer les valeurs d'un champ extrait à des sous-organisations. Le document appartient alors à cette sous-organisation, avec ses utilisateurs, ses autorisations et ses paramètres. Une valeur qui n'est pas une sous-organisation valide n'est jamais écrite.
+Une règle **Routage** ne modifie pas un champ. Elle appose un attribut sur le document lorsque ses conditions correspondent — aujourd'hui la **sous-organisation**. Choisissez **Assign a fixed sub-organisation** et sélectionnez-la dans la liste, ou **Map from a field** pour associer les valeurs d'un champ extrait à des sous-organisations. Le document appartient alors à cette sous-organisation, avec ses utilisateurs, ses autorisations et ses paramètres. Une valeur qui n'est pas une sous-organisation valide n'est jamais écrite.
 
 ## Quand les règles s'exécutent
 
 * **Pendant le traitement**, après l'extraction et avant la recherche dans les données de base, la validation, les scripts et le rapprochement des bons de commande.
 * À **chaque enregistrement** du document dans lequel les données extraites ont changé. Les règles sans **Run only once per document** sont appliquées de nouveau à chaque fois.
-* Au sein d'un même passage, les règles s'exécutent portée par portée dans cet ordre : **Header → Routing → Table rows → Table column**. Une règle de colonne s'applique donc aussi aux lignes qu'une règle de tableau vient d'ajouter. Au sein d'une portée, les règles s'exécutent par priorité, puis par clé.
+* Au sein d'un même passage, les règles s'exécutent portée par portée dans cet ordre : **Champ d'en-tête → Routage → lignes du tableau → Colonne du tableau**. Une règle de colonne s'applique donc aussi aux lignes qu'une règle de tableau vient d'ajouter. Au sein d'une portée, les règles s'exécutent par priorité, puis par clé.
 
 ### Exécution unique et idempotence
 
 La plupart des étapes donnent le même résultat lorsqu'elles s'exécutent sur leur propre sortie — supprimer les espaces d'une valeur déjà nettoyée, mapper de nouveau `PCE`, ajouter un préfixe déjà présent. Ces règles peuvent s'exécuter sans risque à chaque enregistrement.
 
-**Take a slice**, **Extract** et **Find & replace** sont différentes : exécutées de nouveau sur leur propre résultat, elles continuent de le modifier (une tranche prend les quatre premiers caractères des quatre premiers caractères …). DocBits ne vous permet donc pas d'enregistrer une règle qui applique ces étapes à son propre champ cible. Soit :
+**Take a slice**, **Extract** et **Find & replace** sont différentes : exécutées de nouveau sur leur propre résultat, elles continuent de le modifier (une tranche prend les quatre premiers caractères des quatre premiers caractères …). DocBits ne vous permet donc pas d'enregistrer une règle qui applique ces étapes à son propre champ cible. Deux solutions :
 
-* activez **Run only once per document**, soit
-* **Read from another field**, afin que l'entrée reste inchangée.
+* activez **Run only once per document**, ou
+* lisez depuis un autre champ (**Read from**), afin que l'entrée reste inchangée.
 
 ## Règles de transformation et rapprochement des bons de commande
 
-Les règles de tableau et de colonne modifient ce que voit le moteur de PO matching :
+Les règles s'exécutent **avant** le rapprochement des bons de commande ; elles peuvent donc préparer exactement ce que lit le moteur de rapprochement :
+
+| Le moteur de rapprochement lit | Une règle peut | Exemple |
+| --- | --- | --- |
+| Le numéro de bon de commande dans l'en-tête | le copier depuis un autre champ, l'extraire d'un texte, supprimer les préfixes et les zéros en tête | [Renseigner le bon de commande à partir du champ numéro de facture](#renseigner-le-bon-de-commande-a-partir-du-champ-numero-de-facture) |
+| Les numéros d'article des lignes | supprimer les préfixes, retirer les caractères spéciaux, uniformiser la casse | [Rendre les numéros d'article comparables](#rendre-les-numeros-darticle-comparables-pour-le-rapprochement-des-bons-de-commande) |
+| Les codes d'unité | mapper les codes du fournisseur vers les vôtres | [Mapper les codes d'unité](#mapper-les-codes-dunite) |
+| Le nombre de lignes | regrouper les lignes en une seule ligne de total | [Une ligne de total](#une-ligne-de-total-pour-un-fournisseur-rapproche-sur-le-total) |
+
+Les règles de tableau et de colonne modifient ce que voit le moteur de rapprochement :
 
 * Une règle de tableau qui **reconstruit** des lignes (par exemple supprimer toutes les lignes et ajouter une ligne de total) conserve un rapprochement de bon de commande existant tant qu'elle produit **à nouveau les mêmes lignes** — les valeurs sont comparées selon leur sens, donc `1.0` et `1.00` sont la même ligne. Les lignes gardent leur identité et le rapprochement survit à chaque enregistrement.
-* Si une règle **remplace ou supprime des lignes qui avaient été rapprochées**, le rapprochement ne peut pas être conservé. Le document enregistre alors quelle règle l'a supprimé, l'écran Purchase Order Matching l'affiche comme motif (« _The PO match could not be saved: the transformation rule "…" rebuilt the table_ ») et les administrateurs obtiennent un lien vers la règle. L'**historique de rapprochement** du document affiche une étape _Transformation rules_ avant la première étape de rapprochement, avec les règles exécutées.
+* Si une règle **remplace ou supprime des lignes qui avaient été rapprochées**, le rapprochement ne peut pas être conservé. Le document enregistre alors quelle règle l'a abandonné, l'écran Purchase Order Matching l'affiche comme motif (« _The PO match could not be saved: the transformation rule "…" rebuilt the table_ ») et les administrateurs obtiennent un lien vers la règle. L'**historique de rapprochement** du document affiche une étape _Transformation rules_ avant la première étape de rapprochement, avec les règles exécutées.
 * Le nombre de lignes après application des règles est ce que comptent les [conditions d'activation](more-settings/purchase-order/purchase-order-matching-rules.md#conditions-dactivation) des règles de rapprochement. Une règle qui condense une facture en **une seule** ligne n'a de sens qu'associée à une règle de rapprochement sur le total active pour les documents à une ligne (`[[count(table_lines)]] >= 1`).
 
 ## Logs
 
-Avec **Log execution** activé, chaque application de la règle est écrite dans **Document Types → (type de document) → Logs**, avec le résultat (applied, no change, skipped), le document et — pour les règles ignorées — la trace de condition qui explique pourquoi. Voir [Lire la trace de condition](rule-conditions-applies-when.md#lire-la-trace-de-la-condition-dans-les-journaux).
+Avec **Exécution du journal** activé, chaque application de la règle est écrite dans **Document Types → (type de document) → Logs**, avec le résultat (applied, no change, skipped), le document et — pour les règles ignorées — la trace de condition qui explique pourquoi. Voir [Lire la trace de condition](rule-conditions-applies-when.md#lire-la-trace-de-la-condition-dans-les-journaux).
 
 ## Bonnes pratiques
 
@@ -200,7 +236,7 @@ Avec **Log execution** activé, chaque application de la règle est écrite dans
 * **Limitez les règles propres à un fournisseur avec une condition** au lieu de les laisser s'exécuter sur tout.
 * **Privilégiez les étapes idempotentes.** N'utilisez l'exécution unique que là où vous en avez besoin.
 * **Surveillez le rapprochement des bons de commande** après l'ajout de règles de tableau ; vérifiez l'historique de rapprochement de quelques documents.
-* **Désactivez Log execution** une fois que la règle fonctionne.
+* **Désactivez Exécution du journal** une fois que la règle fonctionne.
 
 ## Dépannage
 

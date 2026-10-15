@@ -4,7 +4,7 @@ O **Assistente de Configurações** é um painel de chat dentro da área de Conf
 
 Ele ajuda mais quando você sabe **o que** quer ("parar de dividir documentos por código de barras"), mas não sabe **onde** fica a configuração, ou quando você se pergunta **por que** algo não acontece ("Por que o PO Matching não está ativo?").
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="O painel do Assistente de Configurações no lado direito da área de Configurações, com uma saudação para a página atual, três perguntas de exemplo e o campo de pergunta"><figcaption><p>O Assistente de Configurações na página Informações da empresa: uma saudação para a página atual, três perguntas de exemplo e o campo de pergunta. Um cartão de aviso aparece acima da saudação quando uma importação parou de funcionar (veja <a href="settings-assistant-chat.md#alertas-o-assistente-avisa-voce">Alertas</a>).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open-pt.png" alt="O painel do Assistente de Configurações no lado direito da área de Configurações, com uma saudação para a página atual, três perguntas de exemplo e o campo de pergunta"><figcaption><p>O Assistente de Configurações na página Informações da empresa: uma saudação para a página atual, três perguntas de exemplo e o campo de pergunta. Um cartão de aviso aparece acima da saudação quando uma importação parou de funcionar (veja <a href="settings-assistant-chat.md#alertas-o-assistente-avisa-voce">Alertas</a>).</p></figcaption></figure>
 
 O assistente vem **desativado por padrão**. Esta página mostra onde ativá-lo e como abri-lo. O que você pode perguntar e o que ele pode alterar está descrito na página [Assistente de Configurações: o que o chat pode fazer](settings-assistant-chat.md).
 
@@ -20,7 +20,7 @@ O assistente vem **desativado por padrão**. Esta página mostra onde ativá-lo 
 2. Abra a seção **Assistants** (Assistentes).
 3. Ative **Enable the settings assistant** (Habilitar o assistente de configurações).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="A seção Assistentes em Informações da empresa com as chaves do assistente de configurações, do assistente de validação e da locução do vídeo explicativo"><figcaption><p>A seção Assistentes. O assistente de configurações tem a sua própria chave. O assistente de validação e a locução do vídeo explicativo são recursos separados.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-pt.png" alt="A seção Assistentes em Informações da empresa com as chaves do assistente de configurações, do assistente de validação e da locução do vídeo explicativo"><figcaption><p>A seção Assistentes. O assistente de configurações tem a sua própria chave. O assistente de validação e a locução do vídeo explicativo são recursos separados.</p></figcaption></figure>
 
 Uma mensagem curta confirma **Settings assistant enabled** (assistente de configurações habilitado). A configuração vem desativada por padrão. Enquanto estiver desativada, o painel e o seu botão não aparecem em nenhum lugar.
 
@@ -32,7 +32,7 @@ O **Validation assistant** (assistente de validação) na mesma seção é outro
 
 Em todas as páginas da área de Configurações há um pequeno **botão em forma de lâmpada de gênio** ao lado do campo de busca de configurações. Clique nele para **mostrar** ou **ocultar** o assistente.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="A página Informações da empresa em Configurações com a navegação de configurações à esquerda, a página no meio e o painel do Assistente de Configurações à direita"><figcaption><p>O assistente fica no <strong>lado direito</strong> de cada página de Configurações: navegação à esquerda, a página no meio e o assistente ao lado dela. Aqui em <strong>Company Settings → Company Information</strong>. O botão para mostrá-lo ou ocultá-lo é o ícone de lâmpada ao lado de <strong>Search Settings</strong>, no topo da navegação.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-pt.png" alt="A página Informações da empresa em Configurações com a navegação de configurações à esquerda, a página no meio e o painel do Assistente de Configurações à direita"><figcaption><p>O assistente fica no <strong>lado direito</strong> de cada página de Configurações: navegação à esquerda, a página no meio e o assistente ao lado dela. Aqui em <strong>Company Settings → Company Information</strong>. O botão para mostrá-lo ou ocultá-lo é o ícone de lâmpada ao lado de <strong>Search Settings</strong>, no topo da navegação.</p></figcaption></figure>
 
 * O painel lembra a sua escolha por usuário, então ele continua aberto na próxima vez que você voltar.
 * Em uma tela larga (1280 pixels ou mais), ele fica ao lado da página. Você pode arrastar a borda para alterar a largura.

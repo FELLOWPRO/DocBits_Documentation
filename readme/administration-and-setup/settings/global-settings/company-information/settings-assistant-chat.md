@@ -41,7 +41,7 @@ Clique em uma pergunta e ela é enviada imediatamente. Abaixo das três pergunta
 
 Você pergunta **"How do I change our company address?"** (Como altero o endereço da empresa?).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address.png" alt="O assistente responde com o caminho até o endereço da empresa e um botão Abrir configuração"><figcaption><p>A resposta indica o local, e o cartão mostra o caminho exato e um botão <strong>Open setting</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-pt.png" alt="O assistente responde com o caminho até o endereço da empresa e um botão Abrir configuração"><figcaption><p>A resposta indica o local, e o cartão mostra o caminho exato e um botão <strong>Open setting</strong>.</p></figcaption></figure>
 
 A resposta diz onde o endereço fica. O cartão abaixo mostra o caminho (**Settings / Company Settings**) e o botão **Open setting**. Clique nele: o DocBits abre a página, rola até a configuração e a destaca por alguns segundos.
 
@@ -49,7 +49,7 @@ A resposta diz onde o endereço fica. O cartão abaixo mostra o caminho (**Setti
 
 Você pergunta **"How do I enable barcode detection?"** (Como habilito a detecção de código de barras?).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode.png" alt="O assistente explica as três configurações de código de barras e quando habilitar cada uma"><figcaption><p>Quando uma palavra corresponde a várias configurações, o assistente lista cada uma com <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-pt.png" alt="O assistente explica as três configurações de código de barras e quando habilitar cada uma"><figcaption><p>Quando uma palavra corresponde a várias configurações, o assistente lista cada uma com <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
 
 "Detecção de código de barras" pode significar três configurações diferentes. Por isso o assistente pergunta *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* e explica cada uma:
 
@@ -61,7 +61,7 @@ Você pergunta **"How do I enable barcode detection?"** (Como habilito a detecç
 
 Você pergunta **"Why isn't PO matching active?"** (Por que o PO Matching não está ativo?).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching.png" alt="O assistente mostra o valor atual de cada configuração de PO Matching"><figcaption><p>Em uma pergunta do tipo "por que", o assistente lê a sua configuração e mostra cada configuração com o seu valor <strong>Current</strong> (atual).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-pt.png" alt="O assistente mostra o valor atual de cada configuração de PO Matching"><figcaption><p>Em uma pergunta do tipo "por que", o assistente lê a sua configuração e mostra cada configuração com o seu valor <strong>Current</strong> (atual).</p></figcaption></figure>
 
 O assistente lê as configurações da sua organização e informa o que encontrou. Neste exemplo, o PO Matching está **On** (ativado) para os quatro tipos de documento, e a configuração **Auto export if PO matched 100%** está **Off** (desativada), então o matching e a exportação automáticos não são executados. Cada cartão mostra **Current: On / Off** e um botão **Open setting**, para que você possa corrigir na hora.
 
@@ -69,7 +69,7 @@ O assistente lê as configurações da sua organização e informa o que encontr
 
 Você abre **Configurações → Tipos de documento** e pergunta **"Is PO matching active for invoices?"** (O PO Matching está ativo para faturas?). Esta pergunta também é uma das três sugestões nessa página.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="A página Tipos de documento em Configurações com o Assistente de Configurações à direita, respondendo que o PO Matching está ativo para faturas e mostrando três configurações relacionadas"><figcaption><p>A página <strong>Document Types</strong> com o assistente à direita. A resposta diz <strong>PO Matching is active for invoices in your organization</strong> e mostra três configurações relacionadas: <strong>PO Matching</strong> (Current: On), as <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-pt.png" alt="A página Tipos de documento em Configurações com o Assistente de Configurações à direita, respondendo que o PO Matching está ativo para faturas e mostrando três configurações relacionadas"><figcaption><p>A página <strong>Document Types</strong> com o assistente à direita. A resposta diz <strong>PO Matching is active for invoices in your organization</strong> e mostra três configurações relacionadas: <strong>PO Matching</strong> (Current: On), as <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 O assistente lê a configuração do tipo de documento e acrescenta as configurações que pertencem a ela. Neste exemplo, o matching está ativado, mas a exportação automática após um match de 100 % está desativada, então as faturas com match continuam esperando por uma pessoa. Cada cartão tem um botão **Open setting**.
 
@@ -80,7 +80,7 @@ O assistente lê a configuração do tipo de documento e acrescenta as configura
 
 Na página **Configurações → Tipos de documento → Regras de validação personalizadas**, o painel cumprimenta você por essa página e sugere três perguntas.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="A página Regras de validação personalizadas em Configurações com a lista de regras no meio e o Assistente de Configurações com três perguntas sugeridas à direita"><figcaption><p>A página <strong>Custom Validation Rules</strong> com o assistente à direita. A lista de regras fica no meio, e as três sugestões do painel são: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-pt.png" alt="A página Regras de validação personalizadas em Configurações com a lista de regras no meio e o Assistente de Configurações com três perguntas sugeridas à direita"><figcaption><p>A página <strong>Custom Validation Rules</strong> com o assistente à direita. A lista de regras fica no meio, e as três sugestões do painel são: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
 Use o assistente aqui para **encontrar** a configuração certa e para saber o que uma regra faz. Para **criar ou alterar** uma regra, trabalhe na própria página: veja [Regras de validação personalizadas](../document-types/custom-validation-rules.md) e [Duplicar uma regra de validação personalizada](../document-types/duplicate-a-custom-validation-rule.md). Se o assistente criar uma regra para você, ela sempre é criada **inativa**, e é você quem a ativa.
 
@@ -111,7 +111,7 @@ Se uma pergunta estiver fora da área de configurações, ou se o assistente nã
 
 Quando algo na sua configuração para de funcionar, um **cartão vermelho** aparece no topo do painel. Você não precisa perguntar. O assistente verifica de novo sempre que você abre o painel e sempre que volta para a aba do navegador.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded.png" alt="Um cartão de alerta expandido mostrando uma caixa de e-mail desativada após três tentativas com falha"><figcaption><p>Um alerta expandido: a caixa de e-mail, o seu estado (<strong>Switched off</strong>), o número de tentativas com falha e o motivo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-pt.png" alt="Um cartão de alerta expandido mostrando uma caixa de e-mail desativada após três tentativas com falha"><figcaption><p>Um alerta expandido: a caixa de e-mail, o seu estado (<strong>Switched off</strong>), o número de tentativas com falha e o motivo.</p></figcaption></figure>
 
 Atualmente há duas verificações:
 

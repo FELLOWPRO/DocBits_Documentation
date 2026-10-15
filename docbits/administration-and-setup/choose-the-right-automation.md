@@ -1,5 +1,9 @@
 # Choose the Right Automation
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4" %}
+
+The video (five minutes) walks through the same topics in four parts: **0:00** where each tool runs in the document flow, **1:27** code, workflows and the comparison, **2:33** what each tool can and cannot do, **3:33** best practices and common mistakes.
+
 DocBits gives you several ways to change, check and route documents: **Transformation Rules**, **Custom Validation Rules**, **Purchase Order Matching Rules**, **Scripts**, **Standard Workflows**, **Advanced Workflows** and **Workflow SDK cards**. They overlap on purpose. This page tells you which one to pick, **when each one runs in the document flow**, and what it can and cannot do.
 
 ## The short answer

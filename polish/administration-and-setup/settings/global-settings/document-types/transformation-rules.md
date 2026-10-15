@@ -30,10 +30,6 @@ Zasady transformacji zastępują większość małych skryptów, które organiza
 | Numer zamówienia ma wiodące zera lub prefiks, których nie ma w zamówieniu zakupu | Pole nagłówka *Purchase Order*: Przycinać znak `0` z lewej strony albo Afiks: strip prefix |
 | Numery artykułów różnią się od pozycji zamówienia zakupu wielkością liter, spacjami lub prefiksami | Kolumna tabeli *ITEM_NUMBER*: Afiks: strip prefix → Dezynfekcja → UPPERCASE |
 
-{% hint style="info" %}
-Dopóki funkcja jest w wersji beta, opisane poniżej ustawienia pojawiają się tylko wtedy, gdy strona ustawień **Document Types** zostanie otwarta z dopisanym do adresu `?beta=true`.
-{% endhint %}
-
 ## Włączanie zasad transformacji
 
 Zasady transformacji włącza **administrator organizacji** **osobno dla każdego typu dokumentu**.

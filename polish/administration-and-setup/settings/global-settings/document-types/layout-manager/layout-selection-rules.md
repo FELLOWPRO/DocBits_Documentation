@@ -22,10 +22,6 @@ Pochodzenie nadal jest dostępne — jako jeden z wielu warunków. Reguła może
 | Faktury o wysokiej wartości wymagają więcej pól na ekranie akceptacji | niemożliwe | reguła Approval *Total Amount greater than 10000* → układ „Akceptacja wysokich kwot” |
 | Drugi akceptujący powinien widzieć inny ekran niż pierwszy | osobny typ układu „druga akceptacja” | reguła Approval *Document Status is Pending second approval* → układ „Druga akceptacja” |
 
-{% hint style="info" %}
-Dopóki funkcja jest w wersji beta, opisane poniżej ustawienia pojawiają się tylko wtedy, gdy strona ustawień **Typy dokumentów** zostanie otwarta z dopisanym do adresu `?beta=true`.
-{% endhint %}
-
 ## Włączanie układów opartych na regułach
 
 Układy oparte na regułach włącza się **dla każdego typu dokumentu** osobno, jako **administrator organizacji**.

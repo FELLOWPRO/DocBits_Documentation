@@ -41,7 +41,7 @@ Klicken Sie auf eine Frage, und sie wird sofort gesendet. Unter den drei Fragen 
 
 Sie fragen **„Wie ändere ich unsere Firmenadresse?“**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address.png" alt="Der Assistent antwortet mit dem Pfad zur Firmenadresse und einer Schaltfläche „Zur Einstellung“"><figcaption><p>Die Antwort nennt den Ort, und die Karte gibt Ihnen den genauen Pfad und eine Schaltfläche <strong>Zur Einstellung</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-de.png" alt="Der Assistent antwortet mit dem Pfad zur Firmenadresse und einer Schaltfläche „Zur Einstellung“"><figcaption><p>Die Antwort nennt den Ort, und die Karte gibt Ihnen den genauen Pfad und eine Schaltfläche <strong>Zur Einstellung</strong>.</p></figcaption></figure>
 
 Die Antwort sagt, wo die Adresse liegt. Die Karte darunter zeigt den Pfad (**Einstellungen / Unternehmenseinstellungen**) und die Schaltfläche **Zur Einstellung**. Klicken Sie darauf: DocBits öffnet die Seite, scrollt zur Einstellung und hebt sie einige Sekunden lang hervor.
 
@@ -49,7 +49,7 @@ Die Antwort sagt, wo die Adresse liegt. Die Karte darunter zeigt den Pfad (**Ein
 
 Sie fragen **„Wie aktiviere ich die Barcode-Erkennung?“**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode.png" alt="Der Assistent erklärt die drei Barcode-Einstellungen und wann man jede aktiviert"><figcaption><p>Passt ein Begriff auf mehrere Einstellungen, listet der Assistent jede auf, mit <strong>Aktivieren, wenn</strong> (Enable when) und <strong>Ausgeschaltet lassen, wenn</strong> (Leave off when).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-de.png" alt="Der Assistent erklärt die drei Barcode-Einstellungen und wann man jede aktiviert"><figcaption><p>Passt ein Begriff auf mehrere Einstellungen, listet der Assistent jede auf, mit <strong>Aktivieren, wenn</strong> (Enable when) und <strong>Ausgeschaltet lassen, wenn</strong> (Leave off when).</p></figcaption></figure>
 
 „Barcode-Erkennung“ kann drei verschiedene Einstellungen meinen, daher fragt der Assistent *Meinten Sie: QR Code Extraction, Barcode Assignment oder Split Document on Barcode?* und erklärt jede:
 
@@ -61,7 +61,7 @@ Sie fragen **„Wie aktiviere ich die Barcode-Erkennung?“**
 
 Sie fragen **„Warum ist der Bestellabgleich nicht aktiv?“**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching.png" alt="Der Assistent zeigt den aktuellen Wert jeder Einstellung zum Bestellabgleich"><figcaption><p>Bei einer „Warum“-Frage liest der Assistent Ihre Konfiguration und zeigt jede Einstellung mit ihrem <strong>aktuellen</strong> Wert.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-de.png" alt="Der Assistent zeigt den aktuellen Wert jeder Einstellung zum Bestellabgleich"><figcaption><p>Bei einer „Warum“-Frage liest der Assistent Ihre Konfiguration und zeigt jede Einstellung mit ihrem <strong>aktuellen</strong> Wert.</p></figcaption></figure>
 
 Der Assistent liest die Einstellungen Ihrer Organisation und berichtet, was er gefunden hat. In diesem Beispiel ist der Bestellabgleich für alle vier Dokumenttypen **An**, und die Einstellung **Auto export if PO matched 100%** ist **Aus**, daher laufen der automatische Abgleich und Export nicht. Jede Karte zeigt **Aktuell: An / Aus** und eine Schaltfläche **Zur Einstellung**, sodass Sie es gleich beheben können.
 
@@ -69,7 +69,7 @@ Der Assistent liest die Einstellungen Ihrer Organisation und berichtet, was er g
 
 Sie öffnen **Einstellungen → Dokumenttypen** und fragen **„Ist der Bestellabgleich für Rechnungen aktiv?“** (diese Frage gehört auch zu den drei Vorschlägen auf dieser Seite).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="Die Seite Dokumenttypen in den Einstellungen mit dem Einstellungs-Assistenten rechts, der antwortet, dass der Bestellabgleich für Rechnungen an ist, und drei zugehörige Einstellungen zeigt"><figcaption><p>Die Seite <strong>Dokumenttypen</strong> mit dem Assistenten rechts. Die Antwort sagt, dass der <strong>Bestellabgleich für Rechnungen in Ihrer Organisation aktiv ist</strong>, und zeigt drei zugehörige Einstellungen: <strong>PO Matching</strong> (Aktuell: An), die <strong>PO match rules</strong> und <strong>Auto export if PO matched 100%</strong> (Aktuell: Aus).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-de.png" alt="Die Seite Dokumenttypen in den Einstellungen mit dem Einstellungs-Assistenten rechts, der antwortet, dass der Bestellabgleich für Rechnungen an ist, und drei zugehörige Einstellungen zeigt"><figcaption><p>Die Seite <strong>Dokumenttypen</strong> mit dem Assistenten rechts. Die Antwort sagt, dass der <strong>Bestellabgleich für Rechnungen in Ihrer Organisation aktiv ist</strong>, und zeigt drei zugehörige Einstellungen: <strong>PO Matching</strong> (Aktuell: An), die <strong>PO match rules</strong> und <strong>Auto export if PO matched 100%</strong> (Aktuell: Aus).</p></figcaption></figure>
 
 Der Assistent liest die Einstellung für den Dokumenttyp und ergänzt die Einstellungen, die dazugehören. In diesem Beispiel ist der Abgleich an, aber der automatische Export nach einem 100-%-Treffer ist aus, daher warten abgeglichene Rechnungen weiter auf eine Person. Jede Karte hat eine Schaltfläche **Zur Einstellung**.
 
@@ -80,7 +80,7 @@ Der Assistent liest die Einstellung für den Dokumenttyp und ergänzt die Einste
 
 Auf der Seite **Einstellungen → Dokumenttypen → Benutzerdefinierte Validierungsregeln** begrüßt Sie das Panel für diese Seite und schlägt drei Fragen vor.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="Die Seite Benutzerdefinierte Validierungsregeln in den Einstellungen mit der Regelliste in der Mitte und dem Einstellungs-Assistenten mit drei vorgeschlagenen Fragen rechts"><figcaption><p>Die Seite <strong>Benutzerdefinierte Validierungsregeln</strong> mit dem Assistenten rechts. Die Regelliste steht in der Mitte, die drei Vorschläge des Panels lauten: <strong>Welche Validierungsregeln gibt es für diesen Dokumenttyp?</strong>, <strong>Wie lege ich eine neue Validierungsregel an?</strong> und <strong>Was passiert, wenn eine Validierungsregel fehlschlägt?</strong></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-de.png" alt="Die Seite Benutzerdefinierte Validierungsregeln in den Einstellungen mit der Regelliste in der Mitte und dem Einstellungs-Assistenten mit drei vorgeschlagenen Fragen rechts"><figcaption><p>Die Seite <strong>Benutzerdefinierte Validierungsregeln</strong> mit dem Assistenten rechts. Die Regelliste steht in der Mitte, die drei Vorschläge des Panels lauten: <strong>Welche Validierungsregeln gibt es für diesen Dokumenttyp?</strong>, <strong>Wie lege ich eine neue Validierungsregel an?</strong> und <strong>Was passiert, wenn eine Validierungsregel fehlschlägt?</strong></p></figcaption></figure>
 
 Nutzen Sie den Assistenten hier, um die richtige Einstellung zu **finden** und zu erfahren, was eine Regel tut. Um eine Regel zu **erstellen oder zu ändern**, arbeiten Sie auf der Seite selbst: siehe [Custom Validation Rules](../document-types/custom-validation-rules.md) und [Duplicate a Custom Validation Rule](../document-types/duplicate-a-custom-validation-rule.md). Legt der Assistent eine Regel für Sie an, wird die Regel immer **inaktiv** angelegt, und Sie schalten sie selbst ein.
 
@@ -111,7 +111,7 @@ Liegt eine Frage außerhalb des Einstellungsbereichs, oder findet der Assistent 
 
 Wenn etwas in Ihrer Konfiguration nicht mehr funktioniert, erscheint oben im Panel eine **rote Karte**. Sie müssen nicht fragen. Der Assistent prüft erneut, sobald Sie das Panel öffnen und sobald Sie zum Browser-Tab zurückkehren.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded.png" alt="Eine aufgeklappte Befund-Karte, die ein Postfach zeigt, das nach drei fehlgeschlagenen Versuchen ausgeschaltet wurde"><figcaption><p>Ein aufgeklappter Befund: das Postfach, sein Zustand (<strong>Ausgeschaltet</strong>), die Anzahl der fehlgeschlagenen Versuche und der Grund.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-de.png" alt="Eine aufgeklappte Befund-Karte, die ein Postfach zeigt, das nach drei fehlgeschlagenen Versuchen ausgeschaltet wurde"><figcaption><p>Ein aufgeklappter Befund: das Postfach, sein Zustand (<strong>Ausgeschaltet</strong>), die Anzahl der fehlgeschlagenen Versuche und der Grund.</p></figcaption></figure>
 
 Derzeit gibt es zwei Prüfungen:
 

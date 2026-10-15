@@ -9,7 +9,7 @@
 
 Touchless Intelligence ist ein Tab des [Analytics Dashboards](analytics-dashboard.md). Es verursacht keinen zusätzlichen Aufwand für Ihr Team: DocBits zeichnet auf, was in der Verarbeitungs-Pipeline mit jedem Dokument passiert, und wertet das Ergebnis alle 15 Minuten aus.
 
-<figure><img src="../.gitbook/assets/touchless-overview.png" alt="Der Tab Touchless Intelligence mit fünf Kennzahlen, Verbesserungsvorschlägen und dem Diagramm der Touchless-Quote"><figcaption><p>Der Tab Touchless Intelligence: Kennzahlen, Verbesserungen, die Quote im Zeitverlauf und das Diagramm „Wo Touchless zuerst verloren geht“. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-overview-de.png" alt="Der Tab Touchless Intelligence mit fünf Kennzahlen, Verbesserungsvorschlägen und dem Diagramm der Touchless-Quote"><figcaption><p>Der Tab Touchless Intelligence: Kennzahlen, Verbesserungen, die Quote im Zeitverlauf und das Diagramm „Wo Touchless zuerst verloren geht“. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 ### Was Sie damit tun können
 
@@ -81,7 +81,7 @@ Der Tab zeigt ein **Ziel** (70 %, sofern Ihre Organisation kein anderes verwende
 
 Klicken Sie oben rechts auf **Wie Touchless berechnet wird** (How touchless is calculated), um diese Erklärung direkt in DocBits zu öffnen, mit den Zahlen Ihres eigenen Zeitraums (Dokumente im Zeitraum, noch in Bearbeitung, ausgeschlossen, gemessen).
 
-<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="Die Seitenleiste „Wie Touchless berechnet wird“ mit den Zahlen des Zeitraums"><figcaption><p>Die Seitenleiste <strong>Wie Touchless berechnet wird</strong>: die Formel, <strong>Ihre Zahlen in diesem Zeitraum</strong> (hier 2.425 Dokumente, 2.115 noch in Bearbeitung, 310 gemessen) und was die einzelnen Ergebnisse bedeuten. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology-de.png" alt="Die Seitenleiste „Wie Touchless berechnet wird“ mit den Zahlen des Zeitraums"><figcaption><p>Die Seitenleiste <strong>Wie Touchless berechnet wird</strong>: die Formel, <strong>Ihre Zahlen in diesem Zeitraum</strong> (hier 2.425 Dokumente, 2.115 noch in Bearbeitung, 310 gemessen) und was die einzelnen Ergebnisse bedeuten. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 ### Wie aktuell sind die Zahlen
 
@@ -102,7 +102,7 @@ Die **Unterorganisation**, die Sie oben in DocBits gewählt haben, grenzt die Ke
 
 ### Die fünf Kennzahlen
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="Die fünf Kennzahlen: Pure Touchless, AP Touchless, AP mit Eingriff, Prozessausnahmen und Diagnoseabdeckung"><figcaption><p>Die fünf Kennzahlen. Hier liegt die Pure-Quote bei 50,3 % (156 Dokumente), das sind 19,7 Punkte unter dem Ziel von 70 %, und die Diagnoseabdeckung beträgt 100 %. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-kpi-cards-de.png" alt="Die fünf Kennzahlen: Pure Touchless, AP Touchless, AP mit Eingriff, Prozessausnahmen und Diagnoseabdeckung"><figcaption><p>Die fünf Kennzahlen. Hier liegt die Pure-Quote bei 50,3 % (156 Dokumente), das sind 19,7 Punkte unter dem Ziel von 70 %, und die Diagnoseabdeckung beträgt 100 %. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 | Karte | Zeigt | Beispiel (zur Veranschaulichung) |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ Die **Unterorganisation**, die Sie oben in DocBits gewählt haben, grenzt die Ke
 
 ### Touchless-Quote im Zeitverlauf
 
-<figure><img src="../.gitbook/assets/touchless-trend.png" alt="Liniendiagramm der Pure-Touchless- und der AP-Touchless-Quote pro Tag mit der Ziellinie bei 70 Prozent"><figcaption><p>Die Quote pro Tag mit der Ziellinie. Hier bleibt die Quote zwischen 40 und 60 % und fällt ab dem 10. Oktober stark ab. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-trend-de.png" alt="Liniendiagramm der Pure-Touchless- und der AP-Touchless-Quote pro Tag mit der Ziellinie bei 70 Prozent"><figcaption><p>Die Quote pro Tag mit der Ziellinie. Hier bleibt die Quote zwischen 40 und 60 % und fällt ab dem 10. Oktober stark ab. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 Ein Diagramm mit einer Linie für **Pure Touchless**, einer für **AP Touchless** und der **Ziellinie**. Kurze Zeiträume zeigen Tagespunkte, lange Zeiträume Wochenpunkte.
 
@@ -126,7 +126,7 @@ Ein Diagramm mit einer Linie für **Pure Touchless**, einer für **AP Touchless*
 
 ### Wo Touchless zuerst verloren geht
 
-<figure><img src="../.gitbook/assets/touchless-blocking-stages.png" alt="Balkendiagramm der blockierten Dokumente pro erstem blockierendem Schritt und Grund"><figcaption><p>Blockierte Dokumente nach Schritt und Grund, an dem sie zuerst stehen geblieben sind. Hier kostet <strong>Feldvalidierung: Pflichtfeld fehlt</strong> die meisten Dokumente (58), danach <strong>Export-Mapping fehlgeschlagen</strong> (46) und <strong>PO-Positionsabweichung</strong> (27). Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-blocking-stages-de.png" alt="Balkendiagramm der blockierten Dokumente pro erstem blockierendem Schritt und Grund"><figcaption><p>Blockierte Dokumente nach Schritt und Grund, an dem sie zuerst stehen geblieben sind. Hier kostet <strong>Feldvalidierung: Pflichtfeld fehlt</strong> die meisten Dokumente (58), danach <strong>Export-Mapping fehlgeschlagen</strong> (46) und <strong>PO-Positionsabweichung</strong> (27). Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 Ein Balkendiagramm der **blockierten Dokumente** pro Pipeline-Schritt: der **erste** Schritt, der ein Dokument gestoppt hat.
 
@@ -134,7 +134,7 @@ Ein Balkendiagramm der **blockierten Dokumente** pro Pipeline-Schritt: der **ers
 
 ### Lieferantenpotenziale
 
-<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="Die Tabelle Lieferantenpotenziale mit Volumen, Pure-Quote, verlorenen Dokumenten, Grundursache, rückgewinnbaren Dokumenten, erwartetem Zuwachs, Konfidenz und Status"><figcaption><p>Die Lieferanten-Warteschlange (gekürzt auf die ersten vier Zeilen). Der erste Lieferant hat 106 Dokumente, eine Pure-Quote von 38,7 % und 65 rückgewinnbare Dokumente, daher bringt seine Behebung <strong>+21 PP</strong>. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-queue-de.png" alt="Die Tabelle Lieferantenpotenziale mit Volumen, Pure-Quote, verlorenen Dokumenten, Grundursache, rückgewinnbaren Dokumenten, erwartetem Zuwachs, Konfidenz und Status"><figcaption><p>Die Lieferanten-Warteschlange (gekürzt auf die ersten vier Zeilen). Der erste Lieferant hat 106 Dokumente, eine Pure-Quote von 38,7 % und 65 rückgewinnbare Dokumente, daher bringt seine Behebung <strong>+21 PP</strong>. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 Die Warteschlange beantwortet die Frage **„Welchen Lieferanten sollten wir zuerst verbessern?“** Sie ist nach **rückgewinnbaren** Dokumenten sortiert, die höchsten zuerst, mit 25 Zeilen pro Seite.
 
@@ -161,7 +161,7 @@ Mit dem Suchfeld („Lieferantennummer oder Name suchen“) finden Sie einen Lie
 
 ### Lieferanten vergleichen
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="Die Seite „Lieferanten vergleichen“ mit drei Lieferanten nebeneinander und einem Balkendiagramm ihrer Ergebnisse"><figcaption><p>Drei Lieferanten nebeneinander: Pure-Quote, verlorene und rückgewinnbare Dokumente, Grundursache, erwarteter Zuwachs und ein Balkendiagramm der Ergebnisse. Jedes <strong>Öffnen</strong> führt zur Lieferantendiagnose. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-compare-suppliers-de.png" alt="Die Seite „Lieferanten vergleichen“ mit drei Lieferanten nebeneinander und einem Balkendiagramm ihrer Ergebnisse"><figcaption><p>Drei Lieferanten nebeneinander: Pure-Quote, verlorene und rückgewinnbare Dokumente, Grundursache, erwarteter Zuwachs und ein Balkendiagramm der Ergebnisse. Jedes <strong>Öffnen</strong> führt zur Lieferantendiagnose. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 Klicken Sie auf **Lieferanten vergleichen**, wählen Sie **zwei bis fünf** Lieferanten aus (jeder wird mit seiner Anzahl blockierter Dokumente aufgeführt) und klicken Sie auf **Vergleichen**.
 

@@ -2,7 +2,7 @@
 
 Geben Sie eine Dokument-ID in **Dokument-ID** ein oder öffnen Sie ein Beispieldokument aus einem Cluster, um zu sehen, **was mit genau diesem Dokument passiert ist**.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="Die Seite Dokumentverlauf mit dem Pipeline-Pfad aus 14 Schritten und dem gestoppten Schritt Feldvalidierung"><figcaption><p>Der Dokumentverlauf: der Pipeline-Pfad mit dem Schritt, an dem das Dokument stehen geblieben ist, den Daten, die dieser Schritt vorliegen hatte, und darunter die Laufhistorie.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-document-trace-de.png" alt="Die Seite Dokumentverlauf mit dem Pipeline-Pfad aus 14 Schritten und dem gestoppten Schritt Feldvalidierung"><figcaption><p>Der Dokumentverlauf: der Pipeline-Pfad mit dem Schritt, an dem das Dokument stehen geblieben ist, den Daten, die dieser Schritt vorliegen hatte, und darunter die Laufhistorie.</p></figcaption></figure>
 
 Oben sehen Sie den **Pipeline-Pfad** mit 14 Schritten: Eingang, Klassifizierung, E-Dokument-Validierung, Lieferantenerkennung, Texterkennung, Kopfdatenextraktion, Tabellenextraktion, Feldvalidierung, Bestellsuche, Bestellpositionsabgleich, Freigabe, Workflow-Steuerung, Export, ERP-Bestätigung. Jedes Kästchen hat einen Zustand:
 

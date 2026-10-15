@@ -3,7 +3,7 @@
 
 Klicken Sie in der Warteschlange auf einen Lieferanten, um dessen Diagnoseseite zu öffnen.
 
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="Die Seite Lieferantendiagnose mit Ergebniskacheln, Trend und zwei Fehlermustern"><figcaption><p>Die Seite Lieferantendiagnose: Ergebniskacheln, Trend mit Zeitraumauswahl und zwei Fehlermuster, nach erwartetem Zuwachs geordnet. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-detail-de.png" alt="Die Seite Lieferantendiagnose mit Ergebniskacheln, Trend und zwei Fehlermustern"><figcaption><p>Die Seite Lieferantendiagnose: Ergebniskacheln, Trend mit Zeitraumauswahl und zwei Fehlermuster, nach erwartetem Zuwachs geordnet. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 Die Seite zeigt:
 
@@ -20,7 +20,7 @@ Ein kurzer Hinweis erklärt eine leere Seite, zum Beispiel: *5 Dokumente dieses 
 
 Ein **Cluster** fasst die Dokumente eines Lieferanten zusammen, die aus dem **gleichen ersten Grund** stehen geblieben sind. Statt 40 Einzelproblemen sehen Sie „3 Probleme“.
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="Eine geöffnete Cluster-Karte mit erstem Blocker, „Was zu ändern ist“ und dem Änderungsvorschlag"><figcaption><p>Eine geöffnete Cluster-Karte: der erste Blocker, <strong>Was zu ändern ist</strong> (What to change) und ein <strong>Änderungsvorschlag</strong> (Change proposal) mit Risiko, Geltungsbereich und offenen Fragen. Hier umfasst das Cluster 58 Dokumente und ist +18,7 PP wert. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-de.png" alt="Eine geöffnete Cluster-Karte mit erstem Blocker, „Was zu ändern ist“ und dem Änderungsvorschlag"><figcaption><p>Eine geöffnete Cluster-Karte: der erste Blocker, <strong>Was zu ändern ist</strong> (What to change) und ein <strong>Änderungsvorschlag</strong> (Change proposal) mit Risiko, Geltungsbereich und offenen Fragen. Hier umfasst das Cluster 58 Dokumente und ist +18,7 PP wert. Beispielorganisation mit Demodaten; die Lieferantennamen sind frei erfunden.</p></figcaption></figure>
 
 **Beispiel-Cluster (zur Veranschaulichung).**
 

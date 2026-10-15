@@ -4,7 +4,7 @@ Der **Einstellungs-Assistent** (Settings Assistant) ist ein Chat-Panel im Bereic
 
 Am meisten hilft er, wenn Sie wissen, **was** Sie möchten („Dokumente nicht mehr an Barcodes aufteilen“), aber nicht, **wo** die Einstellung liegt, oder wenn Sie sich fragen, **warum** etwas nicht passiert („Warum ist der Bestellabgleich nicht aktiv?“).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="Das Panel des Einstellungs-Assistenten auf der rechten Seite des Einstellungsbereichs, mit einer Begrüßung für die aktuelle Seite, drei Beispielfragen und dem Fragefeld"><figcaption><p>Der Einstellungs-Assistent auf der Seite „Unternehmensinformationen“: eine Begrüßung für die aktuelle Seite, drei Beispielfragen und das Fragefeld. Eine Warnkarte erscheint über der Begrüßung, wenn ein Import nicht mehr funktioniert (siehe <a href="settings-assistant-chat.md#befunde-der-assistent-warnt-sie">Befunde</a>).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open-de.png" alt="Das Panel des Einstellungs-Assistenten auf der rechten Seite des Einstellungsbereichs, mit einer Begrüßung für die aktuelle Seite, drei Beispielfragen und dem Fragefeld"><figcaption><p>Der Einstellungs-Assistent auf der Seite „Unternehmensinformationen“: eine Begrüßung für die aktuelle Seite, drei Beispielfragen und das Fragefeld. Eine Warnkarte erscheint über der Begrüßung, wenn ein Import nicht mehr funktioniert (siehe <a href="settings-assistant-chat.md#befunde-der-assistent-warnt-sie">Befunde</a>).</p></figcaption></figure>
 
 Der Assistent ist **standardmäßig aus**. Diese Seite zeigt, wo Sie ihn einschalten und wie Sie ihn öffnen. Was Sie ihn fragen können und was er ändern kann, beschreibt die Seite [Einstellungs-Assistent: Was der Chat kann](settings-assistant-chat.md).
 
@@ -20,7 +20,7 @@ Der Assistent ist **standardmäßig aus**. Diese Seite zeigt, wo Sie ihn einscha
 2. Öffnen Sie den Abschnitt **Assistenten** (Assistants).
 3. Schalten Sie **Einstellungs-Assistent aktivieren** (Enable the settings assistant) ein.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="Der Abschnitt Assistenten in den Unternehmensinformationen mit den Schaltern für den Einstellungs-Assistenten, den Validierungsassistenten und die Erklär-Sprachausgabe"><figcaption><p>Der Abschnitt „Assistenten“. Der Einstellungs-Assistent hat einen eigenen Schalter. Der Validierungsassistent und die Erklär-Sprachausgabe sind eigene Funktionen.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-de.png" alt="Der Abschnitt Assistenten in den Unternehmensinformationen mit den Schaltern für den Einstellungs-Assistenten, den Validierungsassistenten und die Erklär-Sprachausgabe"><figcaption><p>Der Abschnitt „Assistenten“. Der Einstellungs-Assistent hat einen eigenen Schalter. Der Validierungsassistent und die Erklär-Sprachausgabe sind eigene Funktionen.</p></figcaption></figure>
 
 Eine kurze Meldung bestätigt **Einstellungs-Assistent aktiviert** (Settings assistant enabled). Die Einstellung ist standardmäßig aus. Solange sie aus ist, erscheinen das Panel und seine Schaltfläche nirgendwo.
 
@@ -32,7 +32,7 @@ Der **Validierungsassistent** (Validation assistant) im selben Abschnitt ist ein
 
 Auf jeder Seite im Bereich „Einstellungen“ finden Sie neben dem Suchfeld für Einstellungen eine kleine **Wunderlampen-Schaltfläche**. Ein Klick darauf **zeigt** den Assistenten **an** oder **blendet** ihn **aus**.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="Die Seite Unternehmensinformationen in den Einstellungen mit der Einstellungsnavigation links, der Seite in der Mitte und dem Panel des Einstellungs-Assistenten rechts"><figcaption><p>Der Assistent sitzt auf der <strong>rechten Seite</strong> jeder Einstellungsseite: Navigation links, die Seite in der Mitte, der Assistent daneben. Hier auf <strong>Unternehmenseinstellungen → Unternehmensinformationen</strong>. Die Schaltfläche zum Ein- und Ausblenden ist das Lampen-Symbol neben <strong>Sucheinstellungen</strong> (Search Settings) oben in der Navigation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-de.png" alt="Die Seite Unternehmensinformationen in den Einstellungen mit der Einstellungsnavigation links, der Seite in der Mitte und dem Panel des Einstellungs-Assistenten rechts"><figcaption><p>Der Assistent sitzt auf der <strong>rechten Seite</strong> jeder Einstellungsseite: Navigation links, die Seite in der Mitte, der Assistent daneben. Hier auf <strong>Unternehmenseinstellungen → Unternehmensinformationen</strong>. Die Schaltfläche zum Ein- und Ausblenden ist das Lampen-Symbol neben <strong>Sucheinstellungen</strong> (Search Settings) oben in der Navigation.</p></figcaption></figure>
 
 * Das Panel merkt sich Ihre Wahl pro Benutzer, sodass es beim nächsten Besuch geöffnet bleibt.
 * Auf einem breiten Bildschirm (ab 1280 Pixeln) sitzt es neben der Seite. Sie können an seinem Rand ziehen, um die Breite zu ändern.

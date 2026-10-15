@@ -44,6 +44,28 @@ La carte **Bon de commande** (**Appariement et validation des bons de commande**
 * [**Mettre à jour le statut du bon de commande du document**](purchase-order/update-document-purchase-order-status.md) : Met à jour la colonne État de la commande sur le tableau de bord chaque fois que le statut du bon de commande change.
 * [**Autoriser l'exportation automatique pour les lignes de commande non comparables**, **Correspondance automatique et exportation visibles pour** et **Utilisez le montant net des lignes pour le total correspondant visible à**](purchase-order/auto-match-and-export-options.md) : Déterminent qui voit les raccourcis Correspondance automatique et exportation et quels documents peuvent être exportés automatiquement.
 
+### Voir les règles de correspondance sous forme de diagramme
+
+Les règles de correspondance des BC sont plus qu'une liste. DocBits peut dessiner l'ensemble de règles actif sous forme d'organigramme. Vous voyez dans quel ordre les règles sont essayées et où la correspondance s'arrête.
+
+1. Dans la carte **Bon de commande**, activez **Correspondance des commandes côté serveur** et cliquez sur **Configurer les règles de correspondance des commandes d'achat**.
+2. Cliquez sur **Ensemble de règles sous forme de diagramme** en haut de la page. Le diagramme s'ouvre dans un panneau à côté des règles.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-fr.png" alt="Le diagramme de l'ensemble de règles avec cinq phases, de Single match validation à Fallback logic"><figcaption><p>L'ensemble de règles sous forme de diagramme. Cinq phases, de haut en bas.</p></figcaption></figure>
+
+Lisez le diagramme de haut en bas. DocBits essaie les phases dans cet ordre : **Single match validation**, **Multi match validation**, **Total match validation**, **Single mismatch validation** et **Fallback logic**. Chaque phase comporte jusqu'à trois passages : **Exact match for all rules**, **Tolerance-based match** et **Package criteria**. Une flèche verte signifie qu'une correspondance a été trouvée et que le traitement s'arrête. Une flèche rouge signifie qu'il n'y a pas de correspondance, donc DocBits poursuit avec l'étape suivante. À la fin, le résultat est **Correspondance trouvée** ou **Aucun résultat trouvé**.
+
+Sous le diagramme, le panneau répertorie les **Règles par ordre de priorité, par étape**. Pour chaque règle, vous voyez les colonnes comparées, la tolérance et les options **Correspondance automatique**, **Correspondance manuelle** et **Retomber**.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-fr.png" alt="La liste des règles par ordre de priorité et par phase, avec les colonnes comparées, la tolérance et les options de la règle"><figcaption><p>Sous le diagramme : les règles de chaque phase avec les colonnes qu'elles comparent.</p></figcaption></figure>
+
+**Exemple.** Une ligne de facture a le numéro d'article 4711, la quantité 10 et le prix unitaire 10.40. La ligne du bon de commande a le numéro d'article 4711, la quantité 10 et le prix unitaire 10.00. La tolérance pour le prix unitaire est de 5 %.
+
+* Le passage **1.1 Exact match for all rules** échoue, car 10.40 n'est pas 10.00. La flèche rouge mène au passage suivant.
+* Le passage **1.2 Tolerance-based match** réussit. L'écart est de 4 %, ce qui est dans la limite de 5 %. La flèche verte mène à **Correspondance trouvée**, et le traitement s'arrête.
+
+Dans le diagramme, c'est le chemin 1.1, puis 1.2, puis **Correspondance trouvée**. Pour le chemin suivi par un seul document, voir [Touchless Intelligence : Diagnostic du rapprochement avec le BC](../../../../touchless-po-matching-diagnosis.md). Pour tous les détails de la page des règles, voir [Règles de Correspondance des Bons de Commande](purchase-order/purchase-order-matching-rules.md).
+
 ### Paramètre de tolérance PO
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance-fr.png" alt="Le bloc Paramètre de tolérance PO avec la tolérance de quantité et de prix unitaire"><figcaption><p>Tolérance pour la quantité et le prix unitaire.</p></figcaption></figure>

@@ -4,7 +4,7 @@ The **Settings Assistant** is a chat panel inside the Settings area. You ask a q
 
 It helps most when you know **what** you want ("stop splitting documents on barcodes") but not **where** the setting lives, or when you wonder **why** something does not happen ("Why isn't PO matching active?").
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="The Settings Assistant panel on the right side of the Settings area, with a finding card, a greeting and three example questions"><figcaption><p>The Settings Assistant on the Company Information page: a finding at the top, a greeting for the current page, three example questions and the question field.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="The Settings Assistant panel on the right side of the Settings area, with a greeting for the current page, three example questions and the question field"><figcaption><p>The Settings Assistant on the Company Information page: a greeting for the current page, three example questions and the question field. A warning card appears above the greeting when an import has stopped working (see <a href="settings-assistant-chat.md#findings-the-assistant-warns-you">Findings</a>).</p></figcaption></figure>
 
 The assistant is **off by default**. This page shows where to turn it on and how to open it. What you can ask it, and what it can change, is described on the page [Settings Assistant: What the Chat Can Do](settings-assistant-chat.md).
 

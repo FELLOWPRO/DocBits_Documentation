@@ -22,10 +22,6 @@ The origin is still available — as one condition among many. A rule can just a
 | High-value invoices need more fields on the approval screen | not possible | Approval rule *Total Amount greater than 10000* → layout "High value approval" |
 | The second approver should see a different screen than the first | separate "second approval" layout type | Approval rule *Document Status is Pending second approval* → layout "Second approval" |
 
-{% hint style="info" %}
-While the feature is in beta, the settings described below only appear when the **Document Types** settings page is opened with `?beta=true` appended to the address.
-{% endhint %}
-
 ## Enable rule-based layouts
 
 Rule-based layouts are switched on **per document type** by an **organisation administrator**.

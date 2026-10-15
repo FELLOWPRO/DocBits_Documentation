@@ -26,10 +26,6 @@ Regeln werden pro **Dokumenttyp** definiert und laufen für jedes Dokument diese
 | Nur Währungen, die Ihr ERP kennt, sind erlaubt | Exportfehler im ERP | **List of Values** für Currency |
 | Benutzer auf ungewöhnliche Werte hinweisen, ohne sie zu blockieren | nicht möglich | jede Regel mit der Schwere **Warning** |
 
-{% hint style="info" %}
-Solange sich die Funktion in der Beta-Phase befindet, erscheinen die nachfolgend beschriebenen Einstellungen nur, wenn die Einstellungsseite **Document Types** mit angehängtem `?beta=true` in der Adresse geöffnet wird.
-{% endhint %}
-
 ## Benutzerdefinierte Validierungsregeln aktivieren
 
 Benutzerdefinierte Validierungsregeln werden **pro Dokumenttyp** eingeschaltet. Es gibt keinen organisationsweiten Schalter.
@@ -41,7 +37,7 @@ Benutzerdefinierte Validierungsregeln werden **pro Dokumenttyp** eingeschaltet. 
 
 <figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Die Regelschalter in den zusätzlichen Einstellungen eines Dokumenttyps"><figcaption><p>Die Schalter für Manage Layouts, Custom Validation Rules und Transformation Rules</p></figcaption></figure>
 
-Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validation Rules** sowie einen Link **Logs** für die Ausführungsprotokolle.
+Ab sofort zeigt die Karte des Dokumenttyps zusätzlich einen Link **Validation Rules**.
 
 <figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="Die Dokumenttyp-Karte mit dem Link Validation Rules"><figcaption><p>Die Links auf der Dokumenttyp-Karte</p></figcaption></figure>
 
@@ -79,12 +75,11 @@ Klicken Sie auf **New rule**. Der Builder besteht aus drei Schritten. **Test rul
 | --- | --- |
 | **Rule level** | Worauf die Regel schaut und wo der Fehler angezeigt wird, siehe [Regelebenen](#regelebenen). |
 | **Severity** | **Error** markiert das Feld als ungültig und blockiert die Validierung. **Warning** zeigt die Meldung an, blockiert aber nie. |
-| **Rule Name** | Wird in der Liste, in den Protokollen und für Administratoren angezeigt. Beschreiben Sie darin die Regel („Steuernummer des Lieferanten für deutsche Rechnungen erforderlich“). |
+| **Rule Name** | Wird in der Liste und für Administratoren angezeigt. Beschreiben Sie darin die Regel („Steuernummer des Lieferanten für deutsche Rechnungen erforderlich“). |
 | **Rule key** | Ein technischer Schlüssel, der aus dem Namen erzeugt wird. Er bleibt gleich, wenn Sie die Regel später umbenennen. Klicken Sie auf den Stift, um vor dem ersten Speichern einen eigenen Schlüssel zu wählen; danach ist er fest. |
 | **Description** | Optionale Erläuterung für andere Administratoren. |
 | **Table name** | *Nur Tabellenzeile.* Die Tabelle, deren Zeilen geprüft werden, zum Beispiel `INVOICE_TABLE`. |
 | **Attach error to field / column** | Das Feld (bei Tabellenzeilen die Spalte), das den Fehler auf dem Validierungsbildschirm anzeigt. |
-| **Log execution** | Schreibt pro Auswertung einen Protokolleintrag, einschließlich der Begründung, warum die Regel galt oder nicht. Siehe [Protokolle](#protokolle). |
 
 #### Regelebenen
 
@@ -100,7 +95,7 @@ Klicken Sie auf **New rule**. Der Builder besteht aus drei Schritten. **Test rul
 
 Legen Sie fest, ob die Regel für jedes Dokument oder nur für einige gilt. Lassen Sie das Feld leer, um jedes Dokument zu prüfen. Andernfalls fügen Sie Bedingungszeilen hinzu, zum Beispiel „Document Origin is Deutsch“ und „Total Amount greater than 250“, und kombinieren Sie diese mit **All** / **ANY** und verschachtelten Gruppen.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-nested-example.png" alt="Eine Applies-when-Bedingung"><figcaption><p>Die Prüfung läuft nur für deutsche Dokumente über 250 mit EUR oder ohne Währung</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-applies-when.png" alt="Eine Applies-when-Bedingung"><figcaption><p>Die Prüfung läuft nur für deutsche Dokumente über 250 mit EUR oder ohne Währung</p></figcaption></figure>
 
 Bei Tabellenzeilen-Regeln kann die Bedingung auch die Spalten der aktuellen Zeile verwenden und wird **Zeile für Zeile** ausgewertet: Zeilen, die nicht zutreffen, werden einfach nicht geprüft.
 
@@ -119,6 +114,8 @@ Wählen Sie eine Prüfung. Die Einstellungen unterhalb der Karten ändern sich j
 Schlägt fehl, wenn das Feld leer ist (fehlt oder nur Leerzeichen enthält). Keine weiteren Einstellungen.
 
 Verwenden Sie die Prüfung zusammen mit **Applies when**, um ein Feld **bedingt** zum Pflichtfeld zu machen. Ein Feld, das immer gefüllt sein muss, konfigurieren Sie besser als Pflichtfeld in den Feldeinstellungen.
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-check-required.png" alt="Die Prüfung Required"><figcaption><p>Eine Required-Prüfung: keine weiteren Einstellungen</p></figcaption></figure>
 
 > *Supplier Tax ID ist erforderlich*, Applies when *Document Origin is Deutsch* und *Total Amount greater than 250*.
 
@@ -157,11 +154,13 @@ Der Wert muss einem **regulären Ausdruck** entsprechen. Der Ausdruck durchsucht
 | Nur Ziffern | `^\d+$` |
 | IBAN (grobe Prüfung) | `^[A-Z]{2}\d{2}[A-Z0-9]{11,30}$` |
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-check-pattern.png" alt="Die Prüfung Pattern"><figcaption><p>Eine Pattern-Prüfung mit einem regulären Ausdruck</p></figcaption></figure>
+
 #### Range: zwischen Minimum und Maximum
 
 Der Wert muss eine Zahl zwischen **Minimum** und **Maximum** sein (beide eingeschlossen). Füllen Sie eines oder beide aus. Ein Wert, der keine Zahl ist, schlägt fehl. Formatierte Beträge wie `1.234,56` werden verstanden.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-range.png" alt="Eine Range-Prüfung"><figcaption><p>Range nur mit Minimum: Mengen müssen mindestens 0.01 betragen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-check-range.png" alt="Eine Range-Prüfung"><figcaption><p>Range nur mit Minimum: Mengen müssen mindestens 0.01 betragen</p></figcaption></figure>
 
 #### Compare fields: z. B. Fälligkeitsdatum ≥ Rechnungsdatum
 
@@ -171,13 +170,19 @@ Vergleicht den Wert eines Feldes mit einem anderen Feld, mit **heute** oder mit 
 * Invoice Date **on or before (≤)** heute: keine Rechnungen mit Datum in der Zukunft
 * Discount **less than** 100
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-check-compare.png" alt="Die Prüfung Compare fields"><figcaption><p>Compare fields: ein Feld mit einem anderen Feld, mit heute oder einem festen Wert vergleichen</p></figcaption></figure>
+
 #### Allowed values: aus einer festen Liste
 
 Der Wert muss einer der Werte sein, die Sie eingeben, **ein Wert pro Zeile**. Optional ohne Beachtung der Groß- und Kleinschreibung. Geeignet für kurze, stabile Listen (`EUR`, `CHF`, `USD`).
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-check-allowed.png" alt="Die Prüfung Allowed values"><figcaption><p>Allowed values: ein Wert pro Zeile, optional ohne Beachtung der Groß- und Kleinschreibung</p></figcaption></figure>
+
 #### List of Values: aus einer benannten LOV
 
 Wie *Allowed values*, aber die Werte stammen aus einer gemeinsamen **List of Values**, die unter **Settings › List of Values** verwaltet wird. Wählen Sie die Liste aus, anstatt sie erneut einzutippen; ändert sich die Liste, verwendet die Regel die neuen Werte (nach einer kurzen Verzögerung durch das Caching). Es zählen nur die Werte der Listeneinträge, nicht ihre Bezeichnungen.
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-check-lov.png" alt="Die Prüfung List of Values"><figcaption><p>List of Values: die Werte kommen aus einer benannten Liste aus den Einstellungen</p></figcaption></figure>
 
 {% hint style="info" %}
 Mit Ausnahme von **Required** **bestehen** alle Prüfungen, **wenn der Wert leer ist**. Eine Pattern-Regel für die Bestellung beanstandet keine Rechnungen ohne Bestellung. Wenn auch ein leerer Wert ein Problem darstellt, fügen Sie eine Required-Regel hinzu oder beschränken Sie die Regel mit *Applies when … is not empty*.
@@ -186,11 +191,13 @@ Mit Ausnahme von **Required** **bestehen** alle Prüfungen, **wenn der Wert leer
 #### Fehlermeldung und Fehlercode
 
 * **Error message shown to the processing user**: der Text auf dem Validierungsbildschirm. Sagen Sie, was falsch ist **und** was zu tun ist: „Die Steuernummer des Lieferanten fehlt. Deutsche Rechnungen über 250 EUR müssen sie enthalten.“
-* **Error code**: ein kurzer technischer Code, zum Beispiel `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Er erscheint in Exporten und Protokollen und ermöglicht es, Fehler zu gruppieren.
+* **Error code**: ein kurzer technischer Code, zum Beispiel `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Er erscheint in Exporten und ermöglicht es, Fehler zu gruppieren.
 
 ## Regel testen
 
 Klicken Sie auf **Test rule**, um die aktuelle Version der Regel, ob gespeichert oder nicht, an einem Dokument auszuführen. Geben Sie eine **Document ID** ein oder wechseln Sie zu **By Document JSON** und fügen Sie extrahierte Daten ein. **Es wird nichts gespeichert**, und das Dokument wird nicht verändert.
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-test-dialog.png" alt="Der Test-rule-Dialog"><figcaption><p>Test rule: die Regel an einem echten Dokument oder an eingefügten JSON-Daten prüfen</p></figcaption></figure>
 
 Das Ergebnis ist eines von drei Resultaten:
 
@@ -216,16 +223,6 @@ Testen Sie jede neue Regel an mindestens einem Dokument, das fehlschlagen soll, 
 * Regeln laufen in der Reihenfolge ihrer Priorität (danach nach Schlüssel). Ein Feld zeigt **einen** Fehler: Schlagen zwei Regeln für dasselbe Feld fehl, gewinnt die erste; spätere Regeln überschreiben sie nicht.
 * Warnungen werden separat gesammelt und verdecken nie einen Fehler.
 * Kann eine Regel nicht ausgewertet werden, zum Beispiel wegen einer Division durch null in einer Formel, wird sie übersprungen. Eine defekte Regel markiert ein Dokument nie fälschlicherweise als ungültig.
-
-## Protokolle
-
-Schalten Sie in einer Regel **Log execution** ein, um jede Auswertung aufzuzeichnen. Öffnen Sie **Document Types → (Dokumenttyp) → Logs** und suchen Sie nach **Rule key**, **Rule ID** oder **Document**; filtern Sie nach Regeltyp, Ergebnis und Datum.
-
-<figure><img src="../../../../.gitbook/assets/rule-execution-logs.png" alt="Die Regelausführungsprotokolle"><figcaption><p>Eine Zeile pro Auswertung, mit Ergebnis, Geltungsbereich, Dokument und Zeile</p></figcaption></figure>
-
-Öffnen Sie einen Eintrag, um seine Details zu sehen, einschließlich der **Bedingungsspur**: jede Zeile von *Applies when* mit dem erwarteten Wert, dem tatsächlichen Wert des Dokuments und dem Ergebnis der Prüfung. Siehe [Read the condition trace](rule-conditions-applies-when.md#die-bedingungsspur-in-den-protokollen-lesen).
-
-Dieselbe Seite zeigt auch die Protokolle der Transformationsregeln und der Layout-Auswahlregeln.
 
 ## Rezepte
 
@@ -263,12 +260,11 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 
 ## Bewährte Vorgehensweisen
 
-* **Beginnen Sie mit einer Warnung.** Speichern Sie eine neue Regel zunächst mit der Schwere **Warning**, beobachten Sie sie einige Tage (Test rule, Protokolle) und stellen Sie sie dann auf **Error** um.
+* **Beginnen Sie mit einer Warnung.** Speichern Sie eine neue Regel zunächst mit der Schwere **Warning**, beobachten Sie sie einige Tage (Test rule) und stellen Sie sie dann auf **Error** um.
 * **Eine Regel, eine Meldung.** Mehrere kleine Regeln mit klaren Meldungen sind leichter zu verstehen als eine große Formel.
 * **Verwenden Sie Applies when statt Kopien.** Eine Regel mit einer Bedingung ist besser als fünf Kopien für fünf Lieferanten.
 * **Seien Sie bei Geldbeträgen tolerant.** Geben Sie Betragsformeln immer eine Toleranz.
 * **Benennen Sie Regeln nach der Geschäftsregel**, nicht nach der Technik („Fälligkeitsdatum nicht vor Rechnungsdatum“, nicht „Vergleichsregel 3“).
-* **Schalten Sie Log execution aus**, sobald eine Regel funktioniert; es schreibt bei jedem Speichern einen Eintrag.
 
 ## Fehlerbehebung
 

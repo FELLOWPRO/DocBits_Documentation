@@ -2,7 +2,7 @@
 
 {% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/de.mp4" %}
 
-Das Video (fünf Minuten) behandelt dieselben Themen in vier Teilen: **0:00** wo jedes Werkzeug im Dokumentenfluss läuft, **1:34** Code, Workflows und der Vergleich, **2:49** was jedes Werkzeug kann und was nicht, **4:00** Best Practices und häufige Fehler.
+Das Video (knapp sechs Minuten) behandelt dieselben Themen in vier Teilen: **0:00** wo jedes Werkzeug im Dokumentenfluss läuft, **1:34** Code, Workflows und der Vergleich, **2:49** was jedes Werkzeug kann und was nicht, **4:00** Best Practices und häufige Fehler.
 
 DocBits bietet mehrere Möglichkeiten, Dokumente zu ändern, zu prüfen und weiterzuleiten: **Transformationsregeln**, **Benutzerdefinierte Validierungsregeln**, **PO-Abgleichsregeln**, **Skripte**, **Standard Workflows**, **Advanced Workflows** und **Workflow-SDK-Karten**. Sie überschneiden sich absichtlich. Diese Seite zeigt Ihnen, welches Werkzeug Sie wählen, **wann es jeweils im Dokumentenfluss läuft** und was es kann und was nicht.
 
@@ -14,8 +14,8 @@ DocBits bietet mehrere Möglichkeiten, Dokumente zu ändern, zu prüfen und weit
 | Sicherstellen, dass Daten vollständig und plausibel sind, und Dokumente stoppen, bei denen das nicht der Fall ist | [Benutzerdefinierte Validierungsregeln](settings/global-settings/document-types/custom-validation-rules.md) | Deklarative Prüfungen, Error oder Warning, blockiert den Auto-Export |
 | Rechnungspositionen mit Bestellpositionen abgleichen | [PO-Abgleichsregeln](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Regelwerke mit Toleranzen, Fallbacks und einem visuellen Diagramm |
 | Etwas tun, das eine Regel nicht ausdrücken kann: ein Lookup, eine Berechnung über Felder und Tabellen, eine Aufgabe, eine Statusänderung zu einem exakten Zeitpunkt | [Skript](settings/global-settings/document-types/script/README.md) | Python an 13 Auslösepunkten im Ablauf |
-| Entscheiden, **was als Nächstes** mit einem Dokument passiert: zuweisen, genehmigen, eine Aufgabe erstellen, eine E-Mail senden, exportieren, eine API aufrufen | [Standard Workflow](workflow/standard-workflow-builder.md) | When-/And-/Then-Karten auf Statusereignisse |
-| Dasselbe mit Verzweigungen, mehreren Bedingungen und Fehlerpfaden | [Advanced Workflow](workflow/advanced-workflow-builder.md) | Visueller Node-Graph |
+| Entscheiden, **was als Nächstes** mit einem Dokument passiert: zuweisen, genehmigen, eine Aufgabe erstellen, eine E-Mail senden, exportieren, eine API aufrufen | [Standard Workflow](workflow/standard-workflow-builder/README.md) | When-/And-/Then-Karten auf Statusereignisse |
+| Dasselbe mit Verzweigungen, mehreren Bedingungen und Fehlerpfaden | [Advanced Workflow](workflow/advanced-workflow-builder/README.md) | Visueller Node-Graph |
 | Eine Aktion benötigen, die keine eingebaute Karte bietet | [Workflow SDK (Card SDK)](workflow/card-sdk.md) | Ihre eigene Karte, von DocBits geprüft |
 
 **Faustregel: Verwenden Sie das am wenigsten mächtige Werkzeug, das die Aufgabe erledigt.** Zuerst Regeln, dann Skript, zuletzt Workflow oder SDK-Karte. Regeln sind leichter zu lesen, leichter zu testen und können ein Dokument nicht beschädigen; Code kann mehr und braucht daher mehr Sorgfalt.
@@ -104,7 +104,7 @@ Ein Workflow, der ein Feld schreibt, verhält sich wie eine Person, die das Doku
 * **Er läuft**, wenn ein Dokument einen von Ihnen gewählten Status erreicht, also nach der Validierung. Er kann auch über einen Web-Hook, einen Zeitplan oder manuell starten.
 * **Er kann** eine Kette von Karten ausführen: **When** (Start), **And** (Bedingungen, alle müssen erfüllt sein), **Then** (Aktionen der Reihe nach).
 * **Er kann nicht** verzweigen, auf mehrere Bedingungen warten oder in einem separaten Pfad auf einen Fehler einer Karte reagieren. Verwenden Sie dafür einen Advanced Workflow.
-* **Mehr dazu:** [Standard Workflow](workflow/standard-workflow-builder.md)
+* **Mehr dazu:** [Standard Workflow](workflow/standard-workflow-builder/README.md)
 
 ### Advanced Workflow
 
@@ -112,7 +112,7 @@ Ein Workflow, der ein Feld schreibt, verhält sich wie eine Person, die das Doku
 * **Er läuft** bei denselben Ereignissen wie ein Standard Workflow. Er benötigt das Abonnement DocFlow Advanced.
 * **Er kann** dieselben Karten wie ein Standard Workflow verwenden, plus Logik- und Variablenkarten, dargestellt als Graph.
 * **Er kann nicht** erledigen, was vor der Validierung geschieht: Er startet nach einer Statusänderung. Logik vor der Validierung gehört in ein Skript oder eine Regel.
-* **Mehr dazu:** [Advanced Workflow](workflow/advanced-workflow-builder.md)
+* **Mehr dazu:** [Advanced Workflow](workflow/advanced-workflow-builder/README.md)
 
 ### Workflow SDK (Card SDK)
 

@@ -1,14 +1,28 @@
 # E-Invoice Validation
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Validation setup and accepted versions"><figcaption><p>Validation setup and accepted XRechnung versions</p></figcaption></figure>
-
 The **E-Invoice Validation** page (**Settings → E-Documents → E-Invoice Validation**, path `/settings/einvoice-validation`; earlier called *Validation Rules*) controls how DocBits validates incoming e-invoices. It is based on the official **KoSIT XRechnung + ZUGFeRD** rule set plus the validator's in-house finding codes, and lets you override the severity of each rule for your organization.
 
 > This page is for **e-invoices** (XRechnung, ZUGFeRD, Factur-X). It is not the same as **Data Validation Rules**, which check extracted document fields.
 
-Organisation administrators also see the table **[Validation for each document type](validation-per-document-type.md)** at the top of the page and a **Change log** tab. What users see when an invoice fails is described in [Validation report](validation-report.md).
+## What is on this page
+
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-settings.png" alt="The E-Invoice Validation page with the table Validation for each document type"><figcaption><p>The E-Invoice Validation page. The tab <strong>Rules and policy</strong> starts with the table <strong>Validation for each document type</strong>. Example organisation.</p></figcaption></figure>
+
+| Part | What it does | Who | Details |
+| --- | --- | --- | --- |
+| **Validation for each document type** | Turn validation on (**Enabled**) and decide whether a failed check stops the document (**Blocking**) for each document type. Every change needs a confirmation. | Organisation administrators | [Validation for each document type](validation-per-document-type.md) |
+| **Change log** (tab) | Lists every change: when, who, which rule, from → to, and the action. | Organisation administrators | [Change log](validation-per-document-type.md#change-log) |
+| **Validation Setup** and **Accepted versions and profiles** | The setup wizard, the accepted XRechnung versions and ZUGFeRD / Factur-X profiles. See the sections below. | Organisation administrators | This page |
+| **Rule table** | The severity of each rule for your organisation. See the section below. | Organisation administrators | This page |
+| **Validation report** | What a user sees when an invoice fails: the findings in plain language, the next step, downloads and **Reject document**. It opens from the document, not from this page. | Everyone who processes invoices | [Validation report](validation-report.md) |
+
+<figure><img src="../../../../.gitbook/assets/einvoice-report-top.png" alt="The validation report of an e-invoice with the result for each level"><figcaption><p>The <a href="validation-report.md">validation report</a> of a document. Example invoice with fictional names.</p></figcaption></figure>
+
+Organisation administrators see all parts. Other users see the table read-only, or do not see it.
 
 ## Validation Setup
+
+<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Validation setup and accepted versions"><figcaption><p>Validation setup and accepted XRechnung versions</p></figcaption></figure>
 
 The **Validation Setup** card shows your current validation profile (for example *B2G — Public Sector Receiver*). Click **Edit answers** to re-run the setup wizard and change which standard you validate against.
 

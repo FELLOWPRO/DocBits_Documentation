@@ -26,9 +26,6 @@ Le regole sono definite per **tipo di documento** e vengono eseguite su ogni doc
 | Sono ammesse solo le valute note al tuo ERP | errori di esportazione nell'ERP | **List of Values** su Currency |
 | Segnalare agli utenti valori insoliti senza bloccarli | non possibile | qualsiasi regola con la gravità **Warning** |
 
-{% hint style="info" %}
-Finché la funzione è in beta, le impostazioni descritte di seguito compaiono solo quando la pagina delle impostazioni **Document Types** viene aperta aggiungendo `?beta=true` all'indirizzo.
-{% endhint %}
 
 ## Attivare le regole di convalida personalizzate
 
@@ -39,11 +36,11 @@ Le regole di convalida personalizzate si attivano **per tipo di documento**. Non
 3. Apri la sezione **Custom Validation Rules** e attiva l'interruttore.
 4. Clicca su **Manage validation rules** per aprire l'elenco delle regole.
 
-<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Gli interruttori delle regole nelle impostazioni aggiuntive di un tipo di documento"><figcaption><p>Gli interruttori per Manage Layouts, Custom Validation Rules e Transformation Rules</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Gli interruttori delle regole nelle impostazioni aggiuntive di un tipo di documento"><figcaption><p>Gli interruttori per Manage Layouts, Custom Validation Rules e Transformation Rules</p></figcaption></figure>
 
-Da questo momento la scheda del tipo di documento mostra anche un link **Validation Rules** e un link **Logs** per i log di esecuzione.
+Da questo momento la scheda del tipo di documento mostra anche un link **Validation Rules**.
 
-<figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="La scheda del tipo di documento con il link Validation Rules"><figcaption><p>I link sulla scheda del tipo di documento</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="La scheda del tipo di documento con il link Validation Rules"><figcaption><p>I link sulla scheda del tipo di documento</p></figcaption></figure>
 
 {% hint style="warning" %}
 **L'interruttore sostituisce i controlli integrati sugli importi.** Finché le regole di convalida personalizzate sono attive per un tipo di documento, i controlli fissi "importo totale = importo netto + imposta" e i controlli su importo di riga / sconto **non** vengono eseguiti per quel tipo; al loro posto subentrano le regole configurabili. Ricrea come regole i controlli di cui hai bisogno (vedi gli [esempi pratici](#esempi-pratici)) prima di attivare l'interruttore. Disattivandolo, i controlli integrati vengono ripristinati. Tutte le altre convalide dei campi (campi obbligatori, formati, dati anagrafici) continuano a essere eseguite.
@@ -53,7 +50,7 @@ Da questo momento la scheda del tipo di documento mostra anche un link **Validat
 
 **Document Types → (tipo di documento) → Validation Rules** elenca tutte le regole del tipo di documento.
 
-<figure><img src="../../../../.gitbook/assets/validation-rules-list.png" alt="L'elenco delle regole di convalida"><figcaption><p>L'elenco delle regole con livello, gravità, campo di destinazione e origine di ciascuna regola</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-list.png" alt="L'elenco delle regole di convalida"><figcaption><p>L'elenco delle regole con livello, gravità, campo di destinazione e origine di ciascuna regola</p></figcaption></figure>
 
 Ogni scheda mostra il nome e la descrizione della regola e i badge del suo **livello** (Header / Line / Table), della **gravità** (Error / Warning), del **campo** a cui è associato l'errore e della sua **origine**. Usa l'interruttore a destra per attivare o disattivare una regola e il menu **⋮** per duplicarla o eliminarla. Filtra l'elenco per livello (**All / Header / Line / Table**) e per stato (**All / Active / Inactive**), oppure cercalo.
 
@@ -73,18 +70,17 @@ Clicca su **New rule**. Il builder ha tre passaggi. **Test rule** e **Save** si 
 
 ### Passaggio 1 — Name & scope
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step1.png" alt="Passaggio 1 del builder delle regole di convalida per una regola su un campo di testata"><figcaption><p>Passaggio 1 per una regola su un campo di testata</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step1.png" alt="Passaggio 1 del builder delle regole di convalida per una regola su un campo di testata"><figcaption><p>Passaggio 1 per una regola su un campo di testata</p></figcaption></figure>
 
 | Impostazione | Cosa fa |
 | --- | --- |
 | **Rule level** | Cosa guarda la regola e dove viene mostrato l'errore: vedi [Livelli delle regole](#livelli-delle-regole). |
 | **Severity** | **Error** contrassegna il campo come non valido e blocca la convalida. **Warning** mostra il messaggio ma non blocca mai. |
-| **Rule Name** | Mostrato nell'elenco, nei log e agli amministratori. Scegli un nome che descriva la regola ("Partita IVA del fornitore obbligatoria per le fatture tedesche"). |
+| **Rule Name** | Mostrato nell'elenco e agli amministratori. Scegli un nome che descriva la regola ("Partita IVA del fornitore obbligatoria per le fatture tedesche"). |
 | **Rule key** | Una chiave tecnica generata dal nome. Resta invariata se in seguito rinomini la regola. Clicca sulla matita per scegliere una chiave tua prima del primo salvataggio; dopo non è più modificabile. |
 | **Description** | Spiegazione facoltativa per gli altri amministratori. |
 | **Table name** | *Solo per Table line.* La tabella di cui vengono controllate le righe, ad esempio `INVOICE_TABLE`. |
 | **Attach error to field / column** | Il campo (o, per le righe di tabella, la colonna) che mostra l'errore nella schermata di convalida. |
-| **Log execution** | Scrive una voce di log per ogni valutazione, incluso il motivo per cui la regola si è applicata o meno. Vedi [Log](#log). |
 
 #### Livelli delle regole
 
@@ -94,17 +90,17 @@ Clicca su **New rule**. Il builder ha tre passaggi. **Test rule** e **Save** si 
 | **Table line** | una volta per ogni riga della tabella selezionata | la cella della riga che non supera il controllo | `row.*` (la riga corrente), `header.*`, `doc.*` | "La quantità deve essere maggiore di zero" |
 | **Whole table** | una volta per documento, considerando tutte le righe insieme | un campo di testata | totali sulle righe (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | "Gli importi netti di riga devono tornare con l'importo netto" |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-step1.png" alt="Passaggio 1 per una regola su riga di tabella"><figcaption><p>Una regola su riga di tabella: la tabella e la colonna che mostra l'errore</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-line-step1.png" alt="Passaggio 1 per una regola su riga di tabella"><figcaption><p>Una regola su riga di tabella: la tabella e la colonna che mostra l'errore</p></figcaption></figure>
 
 ### Passaggio 2 — Applies when
 
 Decidi se la regola viene eseguita per ogni documento o solo per alcuni. Lascia il campo vuoto per controllare ogni documento. Altrimenti aggiungi righe di condizione, ad esempio "Document Origin is Deutsch" e "Total Amount greater than 250", e combinale con **All** / **ANY** e gruppi annidati.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-nested-example.png" alt="Una condizione Applies when"><figcaption><p>Il controllo viene eseguito solo per i documenti tedeschi superiori a 250 con EUR o senza valuta</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-applies-when.png" alt="Una condizione Applies when"><figcaption><p>Il controllo viene eseguito solo per i documenti tedeschi superiori a 250 con EUR o senza valuta</p></figcaption></figure>
 
 Per le regole su riga di tabella, la condizione può usare anche le colonne della riga corrente e viene valutata **riga per riga**: le righe che non corrispondono semplicemente non vengono controllate.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-row-condition.png" alt="Una condizione di riga"><figcaption><p>Vengono controllate solo le righe articolo (righe con un numero articolo)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-row-condition.png" alt="Una condizione di riga"><figcaption><p>Vengono controllate solo le righe articolo (righe con un numero articolo)</p></figcaption></figure>
 
 Le condizioni sono spiegate in dettaglio, con ogni campo, operatore e regola di confronto e molti esempi, nella pagina [Condizioni delle regole (Applies when)](rule-conditions-applies-when.md).
 
@@ -112,9 +108,11 @@ Le condizioni sono spiegate in dettaglio, con ogni campo, operatore e regola di 
 
 Scegli un controllo. Le impostazioni sotto le schede cambiano in base al controllo scelto.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step3-required.png" alt="Passaggio 3 con il controllo Required selezionato"><figcaption><p>I sette controlli. Required non richiede ulteriori impostazioni</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step3-checks.png" alt="Passaggio 3 con il controllo Required selezionato"><figcaption><p>I sette controlli. Required non richiede ulteriori impostazioni</p></figcaption></figure>
 
 #### Required — il campo deve avere un valore
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-required.png" alt="una verifica Required"><figcaption><p>Una verifica Required: nessuna configurazione aggiuntiva</p></figcaption></figure>
 
 Fallisce quando il campo è vuoto (mancante o con soli spazi). Nessuna ulteriore impostazione.
 
@@ -126,7 +124,7 @@ Usalo insieme a **Applies when** per rendere un campo obbligatorio **in modo con
 
 Un confronto aritmetico. L'espressione contiene esattamente **un** confronto (`==`, `!=`, `>`, `>=`, `<`, `<=`); entrambi i lati possono usare `+ - * /`, numeri, parentesi e riferimenti ai campi.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-formula.png" alt="Un controllo Formula"><figcaption><p>Una formula su tabella intera con tolleranza e segnaposto nel messaggio</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-formula.png" alt="Un controllo Formula"><figcaption><p>Una formula su tabella intera con tolleranza e segnaposto nel messaggio</p></figcaption></figure>
 
 * Clicca sui chip sotto l'espressione per inserire funzioni e prefissi dei campi: `sum()`, `count()`, `min()`, `max()`, `default()`, `coalesce()`, `header.`, `doc.`. Mentre digiti il nome di un campo si apre un elenco dei campi corrispondenti.
 * `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` operano su tutte le righe e sono disponibili solo al livello **Whole table**. `count()` conta le righe in cui la colonna è compilata.
@@ -147,6 +145,8 @@ Esempi:
 
 #### Pattern — corrispondenza a un formato / regex
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-pattern.png" alt="una verifica Pattern"><figcaption><p>Una verifica Pattern con un espressione regolare</p></figcaption></figure>
+
 Il valore deve corrispondere a un'**espressione regolare**. L'espressione cerca all'interno del valore, quindi ancorala con `^` (inizio) e `$` (fine) quando deve corrispondere l'intero valore. Spunta **Case-insensitive match** se maiuscole e minuscole non contano.
 
 | Formato | Espressione regolare |
@@ -161,9 +161,11 @@ Il valore deve corrispondere a un'**espressione regolare**. L'espressione cerca 
 
 Il valore deve essere un numero compreso tra **Minimum** e **Maximum** (entrambi inclusi). Compila uno o entrambi. Un valore che non è un numero non supera il controllo. Gli importi formattati come `1.234,56` vengono compresi.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-range.png" alt="Un controllo Range"><figcaption><p>Range con solo un minimo: le quantità devono essere almeno 0,01</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Un controllo Range"><figcaption><p>Range con solo un minimo: le quantità devono essere almeno 0,01</p></figcaption></figure>
 
 #### Compare fields — ad es. data di scadenza ≥ data della fattura
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-compare.png" alt="una verifica Compare fields"><figcaption><p>Compare fields: confrontare un campo con un altro campo, con oggi o con un valore fisso</p></figcaption></figure>
 
 Confronta il valore di un campo con un altro campo, con **oggi** o con un valore fisso, usando *equal to*, *not equal to*, *greater than*, *less than*, *on or after (≥)* o *on or before (≤)*. I numeri vengono confrontati come numeri e le date come date.
 
@@ -173,9 +175,13 @@ Confronta il valore di un campo con un altro campo, con **oggi** o con un valore
 
 #### Allowed values — da un elenco fisso
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="una verifica Allowed values"><figcaption><p>Allowed values: un valore per riga, eventualmente senza distinzione tra maiuscole e minuscole</p></figcaption></figure>
+
 Il valore deve essere uno di quelli che digiti, **un valore per riga**. Facoltativamente senza distinzione tra maiuscole e minuscole. Adatto a elenchi brevi e stabili (`EUR`, `CHF`, `USD`).
 
 #### List of Values — da una LOV con nome
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-lov.png" alt="una verifica List of Values"><figcaption><p>List of Values: i valori provengono da un elenco con nome delle impostazioni</p></figcaption></figure>
 
 Come *Allowed values*, ma i valori provengono da una **List of Values** condivisa, gestita in **Settings › List of Values**. Scegli l'elenco invece di digitarlo di nuovo; quando l'elenco cambia, la regola usa i nuovi valori (dopo un breve ritardo dovuto alla cache). Contano solo i valori delle voci dell'elenco, non le loro etichette.
 
@@ -186,7 +192,7 @@ Ad eccezione di **Required**, ogni controllo **viene superato quando il valore �
 #### Messaggio di errore e codice di errore
 
 * **Error message shown to the processing user** — il testo mostrato nella schermata di convalida. Indica cosa non va **e** cosa fare: "La partita IVA del fornitore manca. Le fatture tedesche superiori a 250 EUR devono riportarla."
-* **Error code** — un breve codice tecnico, ad esempio `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Compare nelle esportazioni e nei log e permette di raggruppare gli errori.
+* **Error code** — un breve codice tecnico, ad esempio `REQUIRED_CONDITIONAL`, `FORMAT_MISMATCH`, `OUT_OF_RANGE`, `DATE_ORDER`, `LINES_HEADER_MISMATCH`, `VALUE_NOT_ALLOWED`. Compare nelle esportazioni e permette di raggruppare gli errori.
 
 ## Test rule
 
@@ -200,7 +206,7 @@ Il risultato è uno di tre esiti:
 | **Rule passed** | La condizione era soddisfatta e il controllo è stato superato. Le regole su riga di tabella mostrano il risultato per riga ("4 of 4 checked rows passed"). |
 | **Rule skipped — scope not matched** | La condizione *Applies when* era falsa per questo documento, quindi non è stato controllato nulla e non è stato generato alcun errore. |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-test-result.png" alt="Test rule: regola non superata"><figcaption><p>La fattura tedesca non ha la partita IVA del fornitore: la regola fallisce con il messaggio configurato</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-test-dialog.png" alt="Test rule: regola non superata"><figcaption><p>La fattura tedesca non ha la partita IVA del fornitore: la regola fallisce con il messaggio configurato</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/validation-rule-test-skipped.png" alt="Test rule: regola saltata"><figcaption><p>La stessa regola con la soglia portata a 1000: la fattura (469,18) non rientra nell'ambito, quindi la regola viene saltata</p></figcaption></figure>
 
@@ -217,15 +223,6 @@ Testa ogni nuova regola su almeno un documento che dovrebbe fallire, uno che dov
 * Gli avvisi vengono raccolti separatamente e non nascondono mai un errore.
 * Se una regola non può essere valutata, ad esempio per una divisione per zero in una formula, viene saltata. Una regola difettosa non contrassegna mai un documento come non valido per errore.
 
-## Log
-
-Attiva **Log execution** in una regola per registrare ogni valutazione. Apri **Document Types → (tipo di documento) → Logs** e cerca per **Rule key**, **Rule ID** o **Document**; filtra per tipo di regola, esito e data.
-
-<figure><img src="../../../../.gitbook/assets/rule-execution-logs.png" alt="I log di esecuzione delle regole"><figcaption><p>Una riga per ogni valutazione, con esito, ambito, documento e riga</p></figcaption></figure>
-
-Apri una voce per vederne i dettagli, compresa la **traccia della condizione**: ogni riga di *Applies when* con il valore atteso, il valore effettivo del documento e se è stata superata. Vedi [Leggere la traccia della condizione](rule-conditions-applies-when.md#leggere-la-traccia-della-condizione-nei-log).
-
-La stessa pagina mostra anche i log delle regole di trasformazione e di selezione del layout.
 
 ## Esempi pratici
 
@@ -263,12 +260,11 @@ Header field · Error · *Purchase Order* · Applies when *Total Amount* greater
 
 ## Buone pratiche
 
-* **Inizia con un avviso.** Salva una nuova regola con la gravità **Warning**, osservala per qualche giorno (Test rule, log) e poi portala a **Error**.
+* **Inizia con un avviso.** Salva una nuova regola con la gravità **Warning**, osservala per qualche giorno (Test rule) e poi portala a **Error**.
 * **Una regola, un messaggio.** Diverse regole piccole con messaggi chiari sono più facili da capire di un'unica formula grande.
 * **Usa Applies when invece delle copie.** Una regola con una condizione è meglio di cinque copie per cinque fornitori.
 * **Sii tollerante con gli importi.** Assegna sempre una tolleranza alle formule sugli importi.
 * **Dai alle regole il nome della regola aziendale**, non della tecnica ("Data di scadenza non precedente alla data della fattura", non "Regola di confronto 3").
-* **Disattiva Log execution** quando una regola funziona; scrive una voce a ogni salvataggio.
 
 ## Risoluzione dei problemi
 

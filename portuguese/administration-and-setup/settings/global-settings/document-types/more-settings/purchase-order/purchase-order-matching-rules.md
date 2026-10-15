@@ -172,6 +172,8 @@ O DocBits percorre cinco estágios, de cima para baixo. Cada estágio tem até t
 
 Sob o gráfico, o painel lista as regras de cada estágio por prioridade, com as colunas que cada regra compara. Uma nota no topo informa de onde vêm as tolerâncias: do conjunto de regras ou, quando `CUSTOM_RANGE_FOR_PO_TOLERANCE` está ativado, das [configurações do tipo de documento](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
 
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-pt.png" alt="A lista de regras por prioridade e por etapa com as colunas comparadas, a tolerância e as opções da regra"><figcaption><p>Sob o gráfico: as regras de cada estágio com as colunas que elas comparam, a tolerância e as opções Correspondência automática, Combinação manual e Cair pra trás.</p></figcaption></figure>
+
 ***
 
 ## O conjunto de regras padrão

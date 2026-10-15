@@ -44,6 +44,28 @@ O cartão **Ordem de compra** (**Conciliação e Validação de Pedidos de Compr
 * [**Atualizar status do pedido de compra do documento**](purchase-order/update-document-purchase-order-status.md): Atualiza a coluna Status do PO no painel sempre que o status do pedido de compra muda.
 * [**Permitir exportação automática para linhas de PO não correspondentes**, **A correspondência automática e a exportação ficam visíveis para** e **Use o valor líquido das linhas para o total correspondente visível para**](purchase-order/auto-match-and-export-options.md): Definem quem vê os atalhos de Auto Match & Export e quais documentos podem ser exportados automaticamente.
 
+### Veja as regras de correspondência como um diagrama
+
+As regras de correspondência de PO são mais do que uma lista. O DocBits pode desenhar o conjunto de regras ativo como um fluxograma. Você vê em que ordem as regras são tentadas e onde a correspondência termina.
+
+1. No cartão **Ordem de compra**, ative **PO corresponde ao lado do servidor** e clique em **Configurar regras de correspondência de pedidos de compra**.
+2. Clique em **Conjunto de regras como um diagrama** no topo da página. O diagrama abre em um painel ao lado das regras.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-pt.png" alt="O diagrama do conjunto de regras com cinco estágios, da validação de partida única à lógica de fallback"><figcaption><p>O conjunto de regras como um diagrama. Cinco estágios, de cima para baixo.</p></figcaption></figure>
+
+Leia o gráfico de cima para baixo. O DocBits tenta os estágios nesta ordem: **Single match validation**, **Multi match validation**, **Total match validation**, **Single mismatch validation** e **Fallback logic**. Cada estágio tenta até três passagens: **Exact match for all rules**, **Tolerance-based match** e **Package criteria**. Uma seta verde significa que uma correspondência foi encontrada e o processamento termina. Uma seta vermelha significa que não houve correspondência, e o DocBits continua com o próximo passo. No final, o resultado é **Correspondência encontrada** ou **Nenhuma correspondência encontrada**.
+
+Sob o gráfico, o painel lista **Regras por prioridade, por etapa**. Para cada regra você vê as colunas que ela compara, a tolerância e as opções **Correspondência automática**, **Combinação manual** e **Cair pra trás**.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-pt.png" alt="A lista de regras por prioridade e por etapa com as colunas comparadas, a tolerância e as opções da regra"><figcaption><p>Sob o gráfico: as regras de cada estágio com as colunas que elas comparam.</p></figcaption></figure>
+
+**Exemplo.** Uma linha da fatura tem o número de item 4711, quantidade 10 e preço unitário 10,40. A linha do pedido de compra tem o número de item 4711, quantidade 10 e preço unitário 10,00. A tolerância para o preço unitário é de 5 %.
+
+* A passagem **1.1 Exact match for all rules** falha, porque 10,40 não é 10,00. A seta vermelha leva à próxima passagem.
+* A passagem **1.2 Tolerance-based match** tem êxito. A diferença é de 4 %, o que está dentro de 5 %. A seta verde leva a **Correspondência encontrada**, e o processamento termina.
+
+No diagrama, este é o caminho 1.1, depois 1.2, depois **Correspondência encontrada**. Para o caminho que um único documento percorreu, veja [Touchless Intelligence: diagnóstico de PO Matching](../../../../touchless-po-matching-diagnosis.md). Para todos os detalhes da página de regras, veja [Regras de Correspondência de Pedido de Compra](purchase-order/purchase-order-matching-rules.md).
+
 ### Configuração de tolerância PO
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance-pt.png" alt="O bloco Configuração de tolerância PO com tolerância de quantidade e de preço unitário"><figcaption><p>Tolerância para quantidade e preço unitário.</p></figcaption></figure>

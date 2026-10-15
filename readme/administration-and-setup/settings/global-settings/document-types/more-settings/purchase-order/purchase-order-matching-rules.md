@@ -92,7 +92,7 @@ Dieser detaillierte Konfigurationsbereich definiert die spezifische Logik und Kr
 
 * **Automatische Übereinstimmung:** Wenn aktiviert, versucht das System, diese Regel vollständig automatisch anzuwenden. Für die automatische Verarbeitung ist ein hohes Vertrauen in die Kriterien erforderlich.
 * **Manuelle Übereinstimmung:** Wenn aktiviert, kann diese Regel einem Benutzer während des manuellen Abgleichs präsentiert oder angewendet werden und bietet ihm einen vordefinierten Satz von Vergleichskriterien zur Lösung von Ausnahmen.
-* **ZURÜCKGREIFEN:** Eine als Fallback markierte Regel läuft in einer späteren Phase nur für die Positionspaare, die nach allen regulären Regeln noch nicht abgeglichen wurden. Verwenden Sie sie für die „lockerere“ Regel, die das auffangen soll, was die strengen Regeln verpasst haben.
+* **Rückfall:** Eine als Fallback markierte Regel läuft in einer späteren Phase nur für die Positionspaare, die nach allen regulären Regeln noch nicht abgeglichen wurden. Verwenden Sie sie für die „lockerere“ Regel, die das auffangen soll, was die strengen Regeln verpasst haben.
 
 #### Aktivierungsbedingungen
 
@@ -149,7 +149,7 @@ Klicken Sie unter der Spaltentabelle auf **Erweiterte Einstellungen**, um zwei w
 
 <figure><img src="../../../../../../.gitbook/assets/po-match-rules-advanced-settings-de.png" alt="Die Erweiterten Einstellungen einer Regel mit Pakete zulassen und Einheit vor dem Match normalisieren"><figcaption><p>Erweiterte Einstellungen einer Regel.</p></figcaption></figure>
 
-* **Pakete zulassen:** Lässt die Regel Positionen abgleichen, bei denen sich Menge und Stückpreis um eine Packungsgröße unterscheiden. Die Standard-Packungsgrößen sind 10, 20, 100 und 1000. DocBits passt dann die Dokumentmenge und den Stückpreis um die Packungsgröße an, bevor es sie vergleicht. Dies ist der Schritt **Package criteria** jeder Stufe im Regeldiagramm (siehe Abschnitt "Regelwerk als Diagramm").
+* **Pakete zulassen:** Lässt die Regel Positionen abgleichen, bei denen sich Menge und Stückpreis um eine Packungsgröße unterscheiden. Die Standard-Packungsgrößen sind 10, 20, 100 und 1000. DocBits passt dann die Dokumentmenge und den Stückpreis um die Packungsgröße an, bevor es sie vergleicht. Dies ist der Schritt **Abgleich mit Gebindegrößen** jeder Stufe im Regeldiagramm (siehe Abschnitt "Regelwerk als Diagramm").
 * **Einheit vor dem Match normalisieren:** Rechnet die Maßeinheit auf beiden Seiten in dieselbe Einheit um, bevor die Menge verglichen wird. Die Option ist standardmäßig aktiviert.
 
 ***
@@ -158,19 +158,21 @@ Klicken Sie unter der Spaltentabelle auf **Erweiterte Einstellungen**, um zwei w
 
 **Regelwerk als Diagramm** öffnet neben den Regeln ein Panel. Es zeigt die Regeln der aktiven Version als Flussdiagramm, sodass Sie sehen, in welcher Reihenfolge DocBits sie versucht und wo der Abgleich endet.
 
-<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-de.png" alt="Das Regelwerk-Diagramm mit fünf Stufen von der Single-Match-Validierung bis zur Fallback-Logik"><figcaption><p>Das Regelwerk als Diagramm.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-de.png" alt="Das Regelwerk-Diagramm mit fünf Stufen vom Einzelabgleich bis zur Rückfall-Logik"><figcaption><p>Das Regelwerk als Diagramm.</p></figcaption></figure>
 
-DocBits durchläuft fünf Stufen von oben nach unten. Jede Stufe hat bis zu drei Durchläufe: **Exact match for all rules**, **Tolerance-based match** und **Package criteria**. Der erste Durchlauf, der eine Übereinstimmung findet, beendet den Prozess (grüner Pfeil). Findet ein Durchlauf keine Übereinstimmung, macht DocBits mit dem nächsten weiter (roter Pfeil).
+DocBits durchläuft fünf Stufen von oben nach unten. Jede Stufe hat bis zu drei Durchläufe: **Exakter Abgleich aller Regeln**, **Abgleich mit Toleranz** und **Abgleich mit Gebindegrößen**. Der erste Durchlauf, der eine Übereinstimmung findet, beendet den Prozess (grüner Pfeil). Findet ein Durchlauf keine Übereinstimmung, macht DocBits mit dem nächsten weiter (roter Pfeil).
 
 | Stufe | Was sie bewirkt |
 | ----- | --------------- |
-| 1. Single-Match-Validierung | Wendet die Single-Match-Regeln in der Reihenfolge ihrer Priorität an. |
-| 2. Multi-Match-Validierung | Läuft nach dem Single Match, für mehrere Positionen auf einer Seite. |
-| 3. Total-Match-Validierung | Läuft nur, wenn überhaupt nichts abgeglichen wurde. Vergleicht die Bestellsumme mit der Summe der Tabellenpositionen. |
-| 4. Single-Mismatch-Validierung | Wendet die Single-Match-Regeln erneut an, wobei der Stückpreis ignoriert wird. |
-| 5. Fallback-Logik | Ordnet die letzte Bestellposition der letzten Tabellenposition zu, wenn auf jeder Seite genau eine Position übrig ist. |
+| 1. Einzelabgleich | Wendet die Regeln des Einzelabgleichs in der Reihenfolge ihrer Priorität an. |
+| 2. Mehrfachabgleich | Läuft nach dem Einzelabgleich, für mehrere Positionen auf einer Seite. |
+| 3. Summenabgleich | Läuft nur, wenn überhaupt nichts abgeglichen wurde. Vergleicht die Bestellsumme mit der Summe der Tabellenpositionen. |
+| 4. Abweichungsabgleich | Wendet die Regeln des Einzelabgleichs erneut an, wobei der Stückpreis ignoriert wird. |
+| 5. Rückfall-Logik | Ordnet die letzte Bestellposition der letzten Tabellenposition zu, wenn auf jeder Seite genau eine Position übrig ist. |
 
 Unter dem Diagramm listet das Panel die Regeln jeder Stufe nach Priorität auf, mit den Spalten, die jede Regel vergleicht. Ein Hinweis oben zeigt, woher die Toleranzen stammen: aus dem Regelwerk oder, wenn `CUSTOM_RANGE_FOR_PO_TOLERANCE` aktiviert ist, aus den [Dokumenttyp-Einstellungen](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-de.png" alt="Die Liste der Regeln nach Priorität je Stufe mit den verglichenen Spalten, der Toleranz und den Regeloptionen"><figcaption><p>Unter dem Diagramm: die Regeln jeder Stufe mit den Spalten, die sie vergleichen, der Toleranz und den Optionen Automatische Übereinstimmung, Manuelle Übereinstimmung und Rückfall.</p></figcaption></figure>
 
 ***
 

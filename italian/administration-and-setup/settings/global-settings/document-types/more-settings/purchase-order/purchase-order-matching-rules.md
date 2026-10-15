@@ -172,6 +172,8 @@ DocBits percorre cinque stadi dall’alto verso il basso. Ogni stadio ha fino a 
 
 Sotto il diagramma il pannello elenca le regole di ogni stadio per priorità, con le colonne che ciascuna regola confronta. Una nota in alto indica da dove provengono le tolleranze: dal set di regole oppure, quando `CUSTOM_RANGE_FOR_PO_TOLERANCE` è attivo, dalle [impostazioni del tipo di documento](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
 
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-it.png" alt="L’elenco delle regole per priorità e per stadio con le colonne confrontate, la tolleranza e le opzioni delle regole"><figcaption><p>Sotto il diagramma: le regole di ogni stadio con le colonne che confrontano, la tolleranza e le opzioni Corrispondenza automatica, Abbinamento manuale e Ricaderci.</p></figcaption></figure>
+
 ***
 
 ## Il set di regole predefinito

@@ -1,56 +1,39 @@
-# Import Data: Model Training
+# Voorbeeld-documenten importeren voor modeltraining
 
-Provide detailed instructions on how to import sample documents for training, including the format and document types to use.
+Gebruik deze pagina om voorbeeld-PDF's toe te voegen voor een documenttype en daarna het classificatiemodel te trainen of te testen. U hebt toegang nodig tot **Instellingen** en **Documenttypen**. Voor het doel van de trainingsfuncties, zie [Doel en gebruik: modeltraining](purpose-and-use-model-training.md).
 
-**To import sample documents for training, follow these steps:**
+## Open het documenttype
 
-* **Prepare the sample documents:** Make sure the sample documents are in a supported format, such as PDF, Word, Excel, etc. These documents should cover a variety of types and formats that may be encountered in production operations of the document processing system.
-* **Navigate to the import function:** Log in to the administration area of ​​the document processing system and navigate to the area where you can import new documents.
+1. Ga naar **Instellingen → Documenttypen**.
+2. Zoek het documenttype dat u wilt trainen. Selecteer in de rij **Modeltraining**. Het voorbeeld hieronder gebruikt **Factuur**.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_global_settings_import_nav.png" alt="Docbits Global Settings Import Nav"><figcaption><p>Global Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-650-document-types-nl-20261011.png" alt="Rij Factuur op de pagina Documenttypen met de link Modeltraining"><figcaption><p>Open Modeltraining vanaf het gekozen documenttype.</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_function_area.png" alt="Docbits Import Function Area"><figcaption></figcaption></figure>
+De andere bedieningselementen op deze kaart dienen andere doelen: **Activeren** schakelt het documenttype in, **Extraction** wijzigt de extractiemodus, het tandwiel opent de instellingen, en de overige links openen andere configuratiegebieden. U hoeft ze niet te wijzigen om alleen Modeltraining te openen.
 
-* **Select the option to import documents:** Click the button or link to import documents. There may be an option such as "Import".
+De pagina **Treinmodel** toont het aantal steekproeven en een lijst met geüploade trainingsdocumenten. In de voorbeeldorganisatie bevat de lijst documenten; uw organisatie kan andere documenten en aantallen tonen.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_documents_button.png" alt="Docbits Import Documents Button"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/dbdc-650-model-training-nl-20261011.png" alt="Pagina Treinmodel van Factuur met het aantal steekproeven, Importeren, Treinmodel, Testclassificatie en de documentlijst"><figcaption><p>De drie acties staan rechtsboven in de trainingslijst.</p></figcaption></figure>
 
-* **Select amount & date format:**
+## Voorbeeld-PDF's importeren
 
-<figure><img src="../../../../../.gitbook/assets/docbits_import_amount_date_format.png" alt="Docbits Import Amount Date Format"><figcaption></figcaption></figure>
+1. Selecteer **Importeren**.
+2. Kies de **Bedrag & Datumnotatie** die bij het voorbeelddocument hoort. Kies bijvoorbeeld **Germany** voor de Duitse conventies voor getallen en datums. Deze keuze vertelt DocBits hoe waarden in het geüploade document geïnterpreteerd moeten worden; ze verandert niet de taal van de app.
+3. Sleep PDF-bestanden in het dialoogvenster of gebruik **Uploaden** om ze te selecteren. De huidige importeur van voorbeelddocumenten accepteert **PDF-bestanden**; hij wijst andere bestandstypen af. Het selecteren van de bestanden start het uploaden.
+4. Sluit het dialoogvenster en controleer of de documenten in de trainingslijst verschijnen. Als DocBits een uploadfout meldt of een document al bestaat, corrigeer dan het bestand of kies een ander voorbeeld voordat u doorgaat.
 
-**Amount Format:**
+<figure><img src="../../../../../.gitbook/assets/dbdc-650-import-dialog-nl-20261011.png" alt="Dialoogvenster Documentuploader met de keuzelijst Bedrag & Datumnotatie, het sleep-en-neerzetgebied en het veld Uploaden"><figcaption><p>Kies een notatie voordat u de voorbeeld-PDF's selecteert.</p></figcaption></figure>
 
-The amount format may vary by region, but in general there are some common conventions:
+<figure><img src="../../../../../.gitbook/assets/dbdc-650-format-menu-nl-20261011.png" alt="Menu Bedrag & Datumnotatie met keuzes van landen en regio's, waaronder Germany en United Kingdom"><figcaption><p>Kies de notatie die in het document gebruikt wordt, niet uw gewenste interfacetaal.</p></figcaption></figure>
 
-1. Currency symbol: The currency symbol is usually provided before the amount, e.g. "$" for US dollars, "€" for euros, "£" for British pounds, etc.
-2. Thousands separator: In some countries, long numbers are separated by a thousand separator for better readability. In the US, a comma is commonly used (e.g. 1,000), while in many European countries a period is used (e.g. 1,000).
-3. Decimal separator: The decimal separator is used to separate the integer part from the decimal places. Most English-speaking countries use a period (e.g. 10.99), while many European countries use a comma (e.g. 10.99).
+Voor acties op geïmporteerde voorbeelden, zie [Trainingsgegevens beheren](manage-training-data.md).
 
-#### Date Format:
+## Train en controleer het model
 
-The date format also varies by region, with different countries having different conventions. Here are the most common formats:
+Wanneer de gewenste voorbeeld-PDF's in de lijst staan, selecteert u **Treinmodel**. DocBits kan de training op de achtergrond verwerken; wacht op het voltooiingsbericht voordat u het nieuwe model als gereed beschouwt. Het aantal steekproeven en eventuele abonnementslimiet op deze pagina behoren aan uw organisatie.
 
-1. Day-Month-Year (DD-MM-YY or DD.MM.YY): In many European countries, the date is specified in day-month-year format. For example, "21.05.24" represents May 21, 2024.
-2. Month-Day-Year (MM-DD-YY or MM/DD/YY): In the United States, the month-day-year format is often used. For example, "05/21/24" represents May 21, 2024.
-3. Year-Month-Day (YY-MM-DD or YY/MM/DD): In some other countries, the year-month-day format is preferred. For example, "24/05/21" represents May 21, 2024.
+Om de classificatie te controleren, selecteert u **Testclassificatie** en uploadt u daarna een apart voorbeeldbestand in het dialoogvenster. Na de verwerking toont DocBits of het voorspelde documenttype overeenkomt met deze pagina en rapporteert de classificatiedetails. Het lege testdialoogvenster hieronder wordt getoond zonder een bestand te uploaden.
 
-It is important to note the specific format to avoid misunderstandings, especially in international communications or financial transactions.
+<figure><img src="../../../../../.gitbook/assets/dbdc-650-test-dialog-nl-20261011.png" alt="Dialoogvenster Testclassificatie met sleep-en-neerzetgebied en veld Uploaden"><figcaption><p>Gebruik Testclassificatie om het model met een ander document te controleren.</p></figcaption></figure>
 
-* **Select the sample documents:** Select the sample documents you want to import. This can be done by uploading the files from your local computer or by selecting documents from an already connected location.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_import_select_samples.png" alt="Docbits Import Select Samples"><figcaption></figcaption></figure>
-
-* **Configure the document types and subtypes (if required):** If your system supports different document types or subtypes, assign the appropriate type to each imported document. This will help the system to categorize and process the documents correctly.
-* **Start the import process:** Confirm the selection of documents and start the import process. Depending on the size and number of documents, this process may take some time.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_import_start_process.png" alt="Docbits Import Start Process"><figcaption></figcaption></figure>
-
-* **Check the import status:** Check the status of the import process to make sure that all documents were imported successfully. Make sure that no errors occurred and that the documents were processed correctly.
-* **Train the model:** After the documents are imported, use them to train the document processing system model. Perform training according to the system's instructions to make sure it can process the sample data effectively.
-
-<figure><img src="../../../../../.gitbook/assets/docbits_train_model_action.png" alt="Docbits Train Model Action"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../../.gitbook/assets/docbits_model_training_continuous.png" alt="Docbits Model Training Continuous" width="284"><figcaption></figcaption></figure>
-
-By regularly adding sample documents for training, you can ensure that your document processing system is always up to date and provides accurate and efficient processing.
+Voor het interpreteren van het resultaat, zie [Het model testen](testing-the-model.md). Als het resultaat slecht is, bekijk dan de [trainingsgegevens](manage-training-data.md) en de [handleiding voor probleemoplossing](troubleshooting.md) voordat u meer voorbeelden toevoegt.

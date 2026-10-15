@@ -4,7 +4,7 @@ Cada regra de validação tem uma gravidade. Pode alterar a gravidade de cada re
 
 ## Substituir a gravidade das regras
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_table.png" alt="A tabela de regras de validação"><figcaption><p>A tabela completa de regras com substituição de gravidade por regra</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-rule-table-pt.png" alt="A tabela de regras de validação"><figcaption><p>A tabela completa de regras com substituição de gravidade por regra</p></figcaption></figure>
 
 A tabela de regras lista todas as regras de validação (mais de 1.600 no total). Filtre por **Camada (Layer)**, **Perfil** ou **Versão**, ou pesquise por código ou campo. Para cada regra pode substituir a **Gravidade** no menu pendente para a ajustar à política da sua organização — por exemplo, baixar uma regra de `ERROR` para `WARNING` para que deixe de rejeitar o documento.
 

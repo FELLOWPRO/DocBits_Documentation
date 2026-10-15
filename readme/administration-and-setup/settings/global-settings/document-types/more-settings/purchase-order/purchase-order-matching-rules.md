@@ -172,6 +172,8 @@ DocBits doorloopt vijf fasen van boven naar beneden. Elke fase heeft maximaal dr
 
 Onder het diagram toont het paneel de regels van elke fase op prioriteit, met de kolommen die elke regel vergelijkt. Een opmerking bovenaan vertelt je waar de toleranties vandaan komen: uit de regelset of, wanneer `CUSTOM_RANGE_FOR_PO_TOLERANCE` is ingeschakeld, uit de [instellingen van het documenttype](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
 
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-nl.png" alt="De lijst met regels op prioriteit per fase met de vergeleken kolommen, de tolerantie en de regelopties"><figcaption><p>Onder het diagram: de regels van elke fase met de kolommen die ze vergelijken, de tolerantie en de opties Automatische match, Handmatige match en Terugvaloptie.</p></figcaption></figure>
+
 ***
 
 ## De standaardregelset

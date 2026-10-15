@@ -2,7 +2,7 @@
 
 Chaque règle de validation a une gravité. Vous pouvez modifier la gravité de chaque règle pour votre organisation. Cette page fait partie de [Validation des factures électroniques](validation-rules.md). Seuls les administrateurs de l'organisation peuvent modifier les gravités.
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_table.png" alt="Le tableau des règles de validation"><figcaption><p>Le tableau complet des règles avec remplacement de gravité par règle</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-rule-table-fr.png" alt="Le tableau des règles de validation"><figcaption><p>Le tableau complet des règles avec remplacement de gravité par règle</p></figcaption></figure>
 
 Le tableau des règles répertorie toutes les règles de validation (plus de 1 600 au total). Filtrez par **Couche (Layer)**, **Profil** ou **Version**, ou recherchez par code ou champ. Pour chaque règle, vous pouvez remplacer la **Gravité** dans le menu déroulant afin de l'adapter à la politique de votre organisation — par exemple, rétrograder une règle de `ERROR` à `WARNING` pour qu'elle ne rejette plus le document.
 

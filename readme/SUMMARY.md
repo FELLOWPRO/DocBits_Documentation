@@ -441,6 +441,7 @@
         * [Wagi reguł](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
         * [Walidacja dla każdego typu dokumentu](administration-and-setup/settings/document-processing/e-documents/validation-per-document-type.md)
         * [Dziennik zmian](administration-and-setup/settings/document-processing/e-documents/validation-change-log.md)
+        * [Ekran błędu odrzuconej e-faktury](administration-and-setup/settings/document-processing/e-documents/validation-error-screen.md)
         * [Raport walidacyjny](administration-and-setup/settings/document-processing/e-documents/validation-report.md)
         * [Następny krok i odrzucenie dokumentu](administration-and-setup/settings/document-processing/e-documents/validation-next-step-and-reject.md)
       * [Routing powiadomień](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

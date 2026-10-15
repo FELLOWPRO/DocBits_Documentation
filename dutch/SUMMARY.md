@@ -441,6 +441,7 @@
         * [Ernst van regels](administration-and-setup/settings/document-processing/e-documents/validation-rule-severities.md)
         * [Validatie voor elk documenttype](administration-and-setup/settings/document-processing/e-documents/validation-per-document-type.md)
         * [Wijzigingslogboek](administration-and-setup/settings/document-processing/e-documents/validation-change-log.md)
+        * [Het foutscherm voor een afgewezen e-factuur](administration-and-setup/settings/document-processing/e-documents/validation-error-screen.md)
         * [Validatierapport](administration-and-setup/settings/document-processing/e-documents/validation-report.md)
         * [Volgende stap en een document afwijzen](administration-and-setup/settings/document-processing/e-documents/validation-next-step-and-reject.md)
       * [Notificatierouting](administration-and-setup/settings/document-processing/e-documents/notification-routing.md)

@@ -16,7 +16,7 @@ Der Assistent ist **standardmäßig aus**. Diese Seite zeigt, wo Sie ihn einscha
 
 ## Einschalten
 
-1. Gehen Sie zu **Einstellungen → Globale Einstellungen → Infos** (Company Information). Die Seitenüberschrift zeigt **Unternehmenseinstellungen** (Company Settings).
+1. Gehen Sie zu **Einstellungen → Globale Einstellungen → Unternehmensinformationen** (Company Information). Die Seitenüberschrift zeigt **Unternehmenseinstellungen** (Company Settings).
 2. Öffnen Sie den Abschnitt **Assistenten** (Assistants).
 3. Schalten Sie **Einstellungs-Assistent aktivieren** (Enable the settings assistant) ein.
 

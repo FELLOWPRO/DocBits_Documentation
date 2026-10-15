@@ -14,5 +14,6 @@ La pagina **Validazione della fattura elettronica** (**Impostazioni → Document
 | [Gravità delle regole](validation-rule-severities.md) | La tabella delle regole: cambia la gravità di ogni regola per la tua organizzazione. | Amministratori dell'organizzazione |
 | [Validazione per ogni tipo di documento](validation-per-document-type.md) | Attiva la validazione (**Abilitato**) e decidi se un controllo non superato blocca il documento (**Blocco**). Ogni modifica richiede una conferma. | Amministratori dell'organizzazione |
 | [Registro delle modifiche](validation-change-log.md) | Ogni modifica delle impostazioni: quando, chi, quale regola, da → a. | Amministratori dell'organizzazione |
+| [La schermata di errore per una fattura elettronica rifiutata](validation-error-screen.md) | Cosa vedi quando carichi un XML errato: la spiegazione, la riga errata e il passo successivo. | Chiunque elabora fatture |
 | [Rapporto di convalida](validation-report.md) | Cosa vede un utente quando una fattura non supera il controllo: i risultati in linguaggio semplice. Si apre dal documento, non da questa pagina. | Chiunque elabora fatture |
 | [Passo successivo e rifiuto di un documento](validation-next-step-and-reject.md) | Cosa fare dopo aver letto il rapporto, il download del rapporto e **Rifiuta il documento**. | Chiunque elabora fatture |

@@ -116,6 +116,7 @@
 
 ## Administración y configuración <a href="#administration-and-setup" id="administration-and-setup"></a>
 
+* [Elegir la automatización adecuada](administration-and-setup/choose-the-right-automation.md)
 * [Configuración](administration-and-setup/settings/README.md)
   * [Orientación en el Nuevo Diseño](administration-and-setup/settings/ui-redesign-guide.md)
   * [Configuración Global](administration-and-setup/settings/global-settings/README.md)

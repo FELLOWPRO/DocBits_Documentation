@@ -30,10 +30,6 @@ Transformationsregeln ersetzen die meisten der kleinen Skripte, die Organisation
 | Die Bestellnummer hat führende Nullen oder ein Präfix, das die Bestellung nicht hat | Kopffeld *Purchase Order*: Trimmen von `0` auf der linken Seite oder Affix: Präfix entfernen |
 | Artikelnummern unterscheiden sich von den Bestellzeilen in Groß-/Kleinschreibung, Leerzeichen oder Präfixen | Tabellenspalte *ITEM_NUMBER*: Affix: Präfix entfernen → Desinfektionsmittel (Sanitise) → UPPERCASE |
 
-{% hint style="info" %}
-Solange sich die Funktion in der Beta befindet, erscheinen die unten beschriebenen Einstellungen nur, wenn die Einstellungsseite **Document Types** mit angehängtem `?beta=true` an die Adresse geöffnet wird.
-{% endhint %}
-
 ## Transformationsregeln aktivieren
 
 Transformationsregeln werden **pro Dokumenttyp** von einem **Organisationsadministrator** eingeschaltet.

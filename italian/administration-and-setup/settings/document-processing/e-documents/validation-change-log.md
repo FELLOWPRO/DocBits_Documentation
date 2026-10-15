@@ -4,7 +4,7 @@ Il **Registro delle modifiche** registra ogni modifica delle impostazioni di val
 
 Apri la scheda **Registro delle modifiche** accanto a **Regole e politiche**.
 
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-it.png" alt="La scheda Registro delle modifiche con le colonne Quando, Chi, Regola, Da → A e Azione"><figcaption><p>Il registro delle modifiche di un'organizzazione senza modifiche</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log-it.png" alt="La scheda Registro delle modifiche con le colonne Quando, Chi, Regola, Da → A e Azione"><figcaption><p>Il registro delle modifiche con quattro voci di esempio. Il nome dell'utente è sostituito da un nome di esempio.</p></figcaption></figure>
 
 | Colonna | Cosa mostra |
 | --- | --- |

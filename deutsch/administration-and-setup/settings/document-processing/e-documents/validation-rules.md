@@ -1,5 +1,7 @@
 # E-Rechnungs-Prüfung
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/de.mp4" %}
+
 Die Seite **E-Rechnungs-Prüfung** (**Einstellungen → E-Dokumente → E-Rechnungs-Prüfung**, Pfad `/settings/einvoice-validation`; früher *Validierungsregeln* genannt) steuert, wie DocBits eingehende E-Rechnungen validiert. Sie basiert auf dem offiziellen **KoSIT XRechnung + ZUGFeRD**-Regelsatz sowie den internen Finding-Codes des Validators und ermöglicht es Ihnen, den Schweregrad jeder Regel für Ihre Organisation zu überschreiben.
 
 > Diese Seite gilt für **E-Rechnungen** (XRechnung, ZUGFeRD, Factur-X). Sie ist nicht dasselbe wie die **Datenvalidierungsregeln**, die extrahierte Dokumentfelder prüfen.

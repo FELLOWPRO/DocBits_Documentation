@@ -32,6 +32,8 @@ The **Validation assistant** in the same section is a different feature. It expl
 
 On every page of the Settings area you find a small **genie-lamp button** next to the settings search field. Click it to **show** or **hide** the assistant.
 
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="The Company Information page in Settings with the settings navigation on the left, the page in the middle and the Settings Assistant panel on the right"><figcaption><p>The assistant sits on the <strong>right side</strong> of every Settings page: navigation on the left, the page in the middle, the assistant next to it. Here on <strong>Company Settings → Company Information</strong>. The button to show or hide it is the lamp icon next to <strong>Search Settings</strong> at the top of the navigation.</p></figcaption></figure>
+
 * The panel remembers your choice per user, so it stays open the next time you come back.
 * On a wide screen (1280 pixels and more) it sits next to the page. You can drag its edge to change the width.
 * On a narrow screen it opens as an overlay. **Esc** or a click outside closes it.

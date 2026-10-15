@@ -69,7 +69,7 @@ The assistant reads the settings of your organisation and reports what it found.
 
 You open **Settings → Document Types** and ask **"Is PO matching active for invoices?"** (this question is also one of the three suggestions on that page).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-active.png" alt="The assistant answers that PO matching is on for invoices and shows the PO matching setting, the PO match rules and Auto export if PO matched 100 percent with their current values"><figcaption><p>The answer says <strong>PO Matching is currently on for invoices</strong> and shows three related settings: <strong>PO Matching</strong> (Current: On), the <strong>PO match rules</strong> and <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="The Document Types page in Settings with the Settings Assistant on the right, answering that PO matching is on for invoices and showing three related settings"><figcaption><p>The <strong>Document Types</strong> page with the assistant on the right. The answer says <strong>PO Matching is active for invoices in your organisation</strong> and shows three related settings: <strong>PO Matching</strong> (Current: On), the <strong>PO match rules</strong> and <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 The assistant reads the setting for the document type and adds the settings that belong to it. In this example matching is on, but automatic export after a 100 % match is off, so matched invoices still wait for a person. Each card has an **Open setting** button.
 
@@ -80,7 +80,7 @@ The assistant reads the setting for the document type and adds the settings that
 
 On the page **Settings → Document Types → Custom Validation Rules** the panel greets you for this page and suggests three questions.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-page-custom-validation-rules.png" alt="The Settings Assistant on the Custom Validation Rules page with three suggested questions"><figcaption><p>The panel on the Custom Validation Rules page. The suggestions: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> and <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="The Custom Validation Rules page in Settings with the rule list in the middle and the Settings Assistant with three suggested questions on the right"><figcaption><p>The <strong>Custom Validation Rules</strong> page with the assistant on the right. The list of rules is in the middle, the three suggestions of the panel are: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> and <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
 Use the assistant here to **find** the right setting and to learn what a rule does. To **create or change** a rule, work on the page itself: see [Custom Validation Rules](../document-types/custom-validation-rules.md) and [Duplicate a Custom Validation Rule](../document-types/duplicate-a-custom-validation-rule.md). If the assistant creates a rule for you, the rule is always created **inactive**, and you switch it on yourself.
 

@@ -30,10 +30,6 @@ Transformatieregels vervangen de meeste kleine scripts die organisaties vroeger 
 | Het PO-nummer heeft voorloopnullen of een voorvoegsel die de inkooporder niet heeft | Headerveld *Purchase Order*: Trim `0` links, of Bevestigen: voorvoegsel verwijderen |
 | Artikelnummers verschillen van de inkooporderregels in hoofdletters, spaties of voorvoegsels | Tabelkolom *ITEM_NUMBER*: Bevestigen: voorvoegsel verwijderen → Sanitise → UPPERCASE |
 
-{% hint style="info" %}
-Zolang de functie in bèta is, verschijnen de hieronder beschreven instellingen alleen wanneer de instellingenpagina **Document Types** wordt geopend met `?beta=true` achter het adres.
-{% endhint %}
-
 ## Transformatieregels inschakelen
 
 Transformatieregels worden **per documenttype** ingeschakeld door een **organisatiebeheerder**.

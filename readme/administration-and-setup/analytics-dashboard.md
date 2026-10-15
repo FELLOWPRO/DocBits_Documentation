@@ -184,3 +184,7 @@ Tabela danych zapewnia pełny dostęp do wszystkich podstawowych danych wierszy 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+Karta **Touchless Intelligence** pokazuje, ile dokumentów przechodzi przez DocBits bez niczyjej ingerencji i dlaczego pozostałe się zatrzymują. Zobacz [Touchless Intelligence](touchless-intelligence.md).

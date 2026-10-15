@@ -121,6 +121,8 @@
   * [Ustawienia Globalne](administration-and-setup/settings/global-settings/README.md)
     * [Informacje o firmie](administration-and-setup/settings/global-settings/company-information/README.md)
       * [Preferencje firmy](administration-and-setup/settings/global-settings/company-information/company-preferences.md)
+      * [Asystent ustawień: włączanie](administration-and-setup/settings/global-settings/company-information/settings-assistant.md)
+        * [Asystent ustawień: co potrafi czat](administration-and-setup/settings/global-settings/company-information/settings-assistant-chat.md)
       * [Definiowanie Aplikacja-Kolor w Ustawieniach Firmy](administration-and-setup/settings/global-settings/company-information/defining-app-color-in-company-settings.md)
       * [Uwierzytelnianie dwuskładnikowe (administrator)](administration-and-setup/settings/global-settings/company-information/two-factor-authentication.md)
     * [Grupy, Użytkownicy i Uprawnienia](administration-and-setup/settings/global-settings/groups-users-and-permissions/README.md)
@@ -699,6 +701,11 @@
     * [WatchDog Admin FAQ](administration-and-setup/setup/watchdog/watchdog-admin-faq.md)
 * [Strona Raportu](administration-and-setup/report-page.md)
 * [Panel Analityczny](administration-and-setup/analytics-dashboard.md)
+  * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
+    * [Diagnoza dostawcy i klastry problemów](administration-and-setup/touchless-supplier-diagnosis.md)
+    * [Diagnoza dopasowania PO](administration-and-setup/touchless-po-matching-diagnosis.md)
+    * [Ślad dokumentu](administration-and-setup/touchless-document-trace.md)
+    * [Propozycje zmian i raporty](administration-and-setup/touchless-change-proposals.md)
 
 ## Integracja i konfiguracja Infor <a href="#infor-integration-and-configuration" id="infor-integration-and-configuration"></a>
 

@@ -15,7 +15,7 @@ Les deux pages Documents électroniques ne prennent effet qu'une fois la **valid
 
 Accédez à **Paramètres → Types de document → Facture → Paramètres avancés** et ouvrez la section **Validation des factures électroniques**.
 
-<figure><img src="../../../../.gitbook/assets/edoc_enable_validation_toggle.png" alt="Les interrupteurs de validation des factures électroniques sur le type de document Facture"><figcaption><p>Activez ou désactivez la validation des factures électroniques par type de document, avec notification facultative du fournisseur</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-enable-toggle-fr.png" alt="Les interrupteurs de validation des factures électroniques sur le type de document Facture"><figcaption><p>Activez ou désactivez la validation des factures électroniques par type de document, avec notification facultative du fournisseur</p></figcaption></figure>
 
 * **Valider les factures électroniques entrantes** — l'interrupteur principal. Lorsqu'il est **activé**, chaque facture téléversée est vérifiée selon les règles Schematron KoSIT XRechnung ainsi que les contrôles sémantiques L0 (PDF/A-3) et L4 (IBAN/TVA), avec les gravités que vous avez définies sur la page [Validation des factures électroniques](validation-rules.md). Les factures non valides sont bloquées. Lorsqu'il est **désactivé**, les factures ignorent entièrement la validation des factures électroniques et les pages Validation des factures électroniques et Routage des notifications n'ont aucun effet.
 * **Notifier le fournisseur en cas de rejet** — apparaît une fois la validation activée. Lorsqu'il est **activé**, une facture rejetée déclenche un e-mail au fournisseur répertoriant les champs manquants ou incorrects afin qu'il puisse la réémettre. Qui reçoit et traite chaque résultat se configure sur la page [Routage des notifications](notification-routing.md).
@@ -24,4 +24,4 @@ Accédez à **Paramètres → Types de document → Facture → Paramètres avan
 
 Vous pouvez aussi accéder directement ici avec la **recherche rapide globale** : appuyez sur <kbd>Cmd</kbd> + <kbd>K</kbd> (<kbd>Ctrl</kbd> + <kbd>K</kbd> sous Windows et Linux) n'importe où dans DocBits et saisissez *e-invoice*.
 
-<figure><img src="../../../../.gitbook/assets/edoc_quicksearch_einvoice.png" alt="La recherche rapide globale ouvre la Validation des factures électroniques"><figcaption><p>Saisissez « e-invoice » dans la recherche rapide pour accéder directement à l'interrupteur.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-quicksearch-fr.png" alt="La recherche rapide globale ouvre la Validation des factures électroniques"><figcaption><p>Saisissez « e-invoice » dans la recherche rapide pour accéder directement à l'interrupteur.</p></figcaption></figure>

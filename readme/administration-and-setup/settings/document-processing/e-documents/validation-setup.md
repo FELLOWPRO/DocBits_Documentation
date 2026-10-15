@@ -4,7 +4,7 @@ Questa pagina spiega la procedura guidata di configurazione, le versioni XRechnu
 
 ## Configurazione della validazione
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Configurazione della validazione e versioni accettate"><figcaption><p>Configurazione della validazione e versioni XRechnung accettate</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-it.png" alt="Configurazione della validazione e versioni accettate"><figcaption><p>Configurazione della validazione e versioni XRechnung accettate</p></figcaption></figure>
 
 La scheda **Configurazione della validazione** mostra il tuo profilo di validazione attuale (ad esempio *B2G — Public Sector Receiver*). Fai clic su **Modifica risposte** per rieseguire la procedura guidata di configurazione e cambiare lo standard rispetto al quale convalidi.
 
@@ -14,7 +14,7 @@ Il gate **Versioni XRechnung accettate** elenca tutte le versioni di XRechnung. 
 
 ## Profili accettati e modello di gravità
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_severity.png" alt="Profili accettati e legenda delle gravità"><figcaption><p>Profili accettati e significato di ciascuna gravità</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-it.png" alt="Profili accettati e legenda delle gravità"><figcaption><p>Profili accettati e significato di ciascuna gravità</p></figcaption></figure>
 
 Scegli quali **profili** accettare (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)) tramite **Accetta tutto** / **Cancella**, quindi **Salva**.
 

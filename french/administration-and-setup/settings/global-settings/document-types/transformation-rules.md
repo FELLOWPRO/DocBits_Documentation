@@ -1,5 +1,7 @@
 # Règles de transformation
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/fr.mp4" %}
+
 ## Vue d'ensemble
 
 Les règles de transformation nettoient ou réécrivent les données extraites **automatiquement**, à chaque traitement d'un document et à chaque enregistrement. Une règle peut modifier :

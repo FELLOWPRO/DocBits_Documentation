@@ -59,7 +59,7 @@ Inside the stages DocBits tries, in this order:
 
 Each step asks **Match found?** The answer **Yes** (green) leads to **Match found** and the document continues. The answer **No match** (red) moves on to the next step, and after the last step the result is **No match found**: the document stops and needs a person.
 
-<!-- Screenshot to add: the PO matching decision flow, from an organisation with PO matching clusters. -->
+<figure><img src="../.gitbook/assets/touchless-po-matching-flow.png" alt="The PO matching decision flow: rule set header, five numbered matching stages with their passes and the end points Match found and No match found"><figcaption><p>The PO matching decision flow, opened from <strong>How this organisation matches</strong> on the Supplier Diagnosis page. The header shows the rule set (version 7, owned by this organisation) and the tolerances. Below it, the five stages with their passes run from top to bottom. Green leads to <strong>Match found</strong>, red moves on to the next step and ends in <strong>No match found</strong>. Example organisation with demo data.</p></figcaption></figure>
 
 ### What the header of the diagram tells you
 
@@ -73,6 +73,8 @@ Each step asks **Match found?** The answer **Yes** (green) leads to **Match foun
 | **Tolerance amount** | Whether the tolerances come from the document type attributes or from the rule set |
 | **Unit price tolerance** / **Quantity tolerance** | How much a price or a quantity may deviate |
 | **Default tolerance** | The tolerance for all other numeric values |
+
+In the example above, the tolerances show **not configured** and **not in force: attribute decides**. That means: the rule set itself has no own tolerance, and the **Tolerance amount** line says the tolerances come from the **document type attributes**. A tolerance only decides when it is in force. Read this line first when a price or quantity difference blocks documents: it tells you **where** to change the tolerance.
 
 The state of the rule set is shown as a note: **Active version** (these rules decide), **Approved, not active**, **Draft, not yet in force** or **Version state unknown**. Only the active version decides.
 

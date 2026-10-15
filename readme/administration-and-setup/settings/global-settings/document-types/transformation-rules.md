@@ -30,10 +30,6 @@ Le regole di trasformazione sostituiscono la maggior parte dei piccoli script ch
 | Il numero PO ha zeri iniziali o un prefisso che l'ordine di acquisto non ha | Campo di intestazione *Purchase Order*: Ordinare (Trim) `0` a sinistra, oppure Apporre: rimuovi prefisso |
 | I numeri articolo differiscono dalle righe dell'ordine di acquisto per maiuscole/minuscole, spazi o prefissi | Colonna della tabella *ITEM_NUMBER*: Apporre: rimuovi prefisso → Igienizzare → UPPERCASE |
 
-{% hint style="info" %}
-Finché la funzione è in beta, le impostazioni descritte di seguito compaiono solo quando la pagina delle impostazioni **Tipi di Documento** viene aperta con `?beta=true` aggiunto all'indirizzo.
-{% endhint %}
-
 ## Attivare le regole di trasformazione
 
 Le regole di trasformazione vengono attivate **per tipo di documento** da un **amministratore dell'organizzazione**.

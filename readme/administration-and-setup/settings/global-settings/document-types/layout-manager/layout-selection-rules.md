@@ -22,10 +22,6 @@ L'origine resta disponibile, ma come una condizione tra le tante. Una regola pu�
 | Le fatture di importo elevato richiedono più campi nella schermata di approvazione | non possibile | regola di approvazione *Total Amount greater than 10000* → layout "Approvazione importi elevati" |
 | Il secondo approvatore deve vedere una schermata diversa dal primo | tipo di layout separato "seconda approvazione" | regola di approvazione *Document Status is Pending second approval* → layout "Seconda approvazione" |
 
-{% hint style="info" %}
-Finché la funzione è in beta, le impostazioni descritte di seguito compaiono solo se la pagina delle impostazioni **Tipi di documento** viene aperta con `?beta=true` aggiunto all'indirizzo.
-{% endhint %}
-
 ## Attivare i layout basati su regole
 
 I layout basati su regole vengono attivati **per tipo di documento** da un **amministratore dell'organizzazione**.

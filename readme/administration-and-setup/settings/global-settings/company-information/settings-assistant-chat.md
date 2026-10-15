@@ -41,7 +41,7 @@ Fai clic su una domanda e viene inviata subito. Sotto le tre domande il pannello
 
 Chiedi **"How do I change our company address?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address.png" alt="L'assistente risponde con il percorso verso l'indirizzo della società e un pulsante Open setting"><figcaption><p>La risposta indica il posto, e la scheda ti dà il percorso esatto e un pulsante <strong>Open setting</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-it.png" alt="L'assistente risponde con il percorso verso l'indirizzo della società e un pulsante Open setting"><figcaption><p>La risposta indica il posto, e la scheda ti dà il percorso esatto e un pulsante <strong>Open setting</strong>.</p></figcaption></figure>
 
 La risposta dice dove si trova l'indirizzo. La scheda sotto mostra il percorso (**Settings / Company Settings**) e il pulsante **Open setting**. Fai clic: DocBits apre la pagina, scorre fino all'impostazione e la evidenzia per qualche secondo.
 
@@ -49,7 +49,7 @@ La risposta dice dove si trova l'indirizzo. La scheda sotto mostra il percorso (
 
 Chiedi **"How do I enable barcode detection?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode.png" alt="L'assistente spiega le tre impostazioni dei codici a barre e quando abilitare ciascuna"><figcaption><p>Quando una parola corrisponde a più impostazioni, l'assistente elenca ciascuna con <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-it.png" alt="L'assistente spiega le tre impostazioni dei codici a barre e quando abilitare ciascuna"><figcaption><p>Quando una parola corrisponde a più impostazioni, l'assistente elenca ciascuna con <strong>Enable when</strong> e <strong>Leave off when</strong>.</p></figcaption></figure>
 
 "Rilevamento dei codici a barre" può indicare tre impostazioni diverse, quindi l'assistente chiede *Did you mean: QR Code Extraction, Barcode Assignment, or Split Document on Barcode?* e le spiega una per una:
 
@@ -61,7 +61,7 @@ Chiedi **"How do I enable barcode detection?"**
 
 Chiedi **"Why isn't PO matching active?"**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching.png" alt="L'assistente mostra il valore attuale di ogni impostazione dell'abbinamento ordini"><figcaption><p>Per una domanda "perché" l'assistente legge la tua configurazione e mostra ogni impostazione con il suo valore <strong>Current</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-it.png" alt="L'assistente mostra il valore attuale di ogni impostazione dell'abbinamento ordini"><figcaption><p>Per una domanda "perché" l'assistente legge la tua configurazione e mostra ogni impostazione con il suo valore <strong>Current</strong>.</p></figcaption></figure>
 
 L'assistente legge le impostazioni della tua organizzazione e riferisce ciò che ha trovato. In questo esempio l'abbinamento ordini è **On** per tutti e quattro i tipi di documento, e l'impostazione **Auto export if PO matched 100%** è **Off**, quindi l'abbinamento e l'esportazione automatici non vengono eseguiti. Ogni scheda mostra **Current: On / Off** e un pulsante **Open setting**, così puoi correggere subito.
 
@@ -69,7 +69,7 @@ L'assistente legge le impostazioni della tua organizzazione e riferisce ciò che
 
 Apri **Impostazioni → Tipi di documento** e chiedi **"Is PO matching active for invoices?"** (questa domanda è anche uno dei tre suggerimenti in quella pagina).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="La pagina Document Types nelle Impostazioni con il Settings Assistant a destra, che risponde che l'abbinamento ordini è attivo per le fatture e mostra tre impostazioni correlate"><figcaption><p>La pagina <strong>Document Types</strong> con l'assistente a destra. La risposta dice <strong>PO Matching is active for invoices in your organisation</strong> e mostra tre impostazioni correlate: <strong>PO Matching</strong> (Current: On), le <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-it.png" alt="La pagina Document Types nelle Impostazioni con il Settings Assistant a destra, che risponde che l'abbinamento ordini è attivo per le fatture e mostra tre impostazioni correlate"><figcaption><p>La pagina <strong>Document Types</strong> con l'assistente a destra. La risposta dice <strong>PO Matching is active for invoices in your organisation</strong> e mostra tre impostazioni correlate: <strong>PO Matching</strong> (Current: On), le <strong>PO match rules</strong> e <strong>Auto export if PO matched 100%</strong> (Current: Off).</p></figcaption></figure>
 
 L'assistente legge l'impostazione per il tipo di documento e aggiunge le impostazioni che le appartengono. In questo esempio l'abbinamento è attivo, ma l'esportazione automatica dopo un abbinamento al 100 % è disattivata, quindi le fatture abbinate aspettano ancora una persona. Ogni scheda ha un pulsante **Open setting**.
 
@@ -80,7 +80,7 @@ L'assistente legge l'impostazione per il tipo di documento e aggiunge le imposta
 
 Nella pagina **Impostazioni → Tipi di documento → Regole di convalida personalizzate** il pannello ti saluta per questa pagina e suggerisce tre domande.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="La pagina Custom Validation Rules nelle Impostazioni con l'elenco delle regole al centro e il Settings Assistant con tre domande suggerite a destra"><figcaption><p>La pagina <strong>Custom Validation Rules</strong> con l'assistente a destra. L'elenco delle regole è al centro, i tre suggerimenti del pannello sono: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-it.png" alt="La pagina Custom Validation Rules nelle Impostazioni con l'elenco delle regole al centro e il Settings Assistant con tre domande suggerite a destra"><figcaption><p>La pagina <strong>Custom Validation Rules</strong> con l'assistente a destra. L'elenco delle regole è al centro, i tre suggerimenti del pannello sono: <strong>Which validation rules exist for this document type?</strong>, <strong>How do I create a new validation rule?</strong> e <strong>What happens when a validation rule fails?</strong></p></figcaption></figure>
 
 Usa qui l'assistente per **trovare** l'impostazione giusta e per capire cosa fa una regola. Per **creare o modificare** una regola, lavora nella pagina stessa: vedi [Regole di convalida personalizzate](../document-types/custom-validation-rules.md) e [Duplicare una regola di convalida personalizzata](../document-types/duplicate-a-custom-validation-rule.md). Se l'assistente crea una regola per te, la regola viene sempre creata **inattiva**, e la attivi tu.
 
@@ -111,7 +111,7 @@ Se una domanda è fuori dall'area delle impostazioni, o l'assistente non trova n
 
 Quando qualcosa nella tua configurazione ha smesso di funzionare, compare una **scheda rossa** in alto nel pannello. Non devi chiedere nulla. L'assistente controlla di nuovo ogni volta che apri il pannello e ogni volta che torni alla scheda del browser.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded.png" alt="Una scheda di segnalazione espansa che mostra una casella e-mail disattivata dopo tre tentativi falliti"><figcaption><p>Una segnalazione espansa: la casella, il suo stato (<strong>Switched off</strong>), il numero di tentativi falliti e il motivo.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-it.png" alt="Una scheda di segnalazione espansa che mostra una casella e-mail disattivata dopo tre tentativi falliti"><figcaption><p>Una segnalazione espansa: la casella, il suo stato (<strong>Switched off</strong>), il numero di tentativi falliti e il motivo.</p></figcaption></figure>
 
 Attualmente ci sono due controlli:
 

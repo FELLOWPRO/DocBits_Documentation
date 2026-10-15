@@ -4,7 +4,7 @@ L'**Assistente impostazioni** (Settings Assistant) è un pannello di chat all'in
 
 È molto utile quando sai **cosa** vuoi ("smettere di dividere i documenti in base ai codici a barre") ma non **dove** si trova l'impostazione, oppure quando ti chiedi **perché** qualcosa non accade ("Perché l'abbinamento ordini non è attivo?").
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="Il pannello Settings Assistant sul lato destro dell'area Impostazioni, con un saluto per la pagina corrente, tre domande di esempio e il campo della domanda"><figcaption><p>L'Assistente impostazioni nella pagina Informazioni sulla società: un saluto per la pagina corrente, tre domande di esempio e il campo della domanda. Una scheda di avviso compare sopra il saluto quando un'importazione ha smesso di funzionare (vedi <a href="settings-assistant-chat.md#segnalazioni-lassistente-ti-avvisa">Segnalazioni</a>).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open-it.png" alt="Il pannello Settings Assistant sul lato destro dell'area Impostazioni, con un saluto per la pagina corrente, tre domande di esempio e il campo della domanda"><figcaption><p>L'Assistente impostazioni nella pagina Informazioni sulla società: un saluto per la pagina corrente, tre domande di esempio e il campo della domanda. Una scheda di avviso compare sopra il saluto quando un'importazione ha smesso di funzionare (vedi <a href="settings-assistant-chat.md#segnalazioni-lassistente-ti-avvisa">Segnalazioni</a>).</p></figcaption></figure>
 
 L'assistente è **disattivato per impostazione predefinita**. Questa pagina mostra dove attivarlo e come aprirlo. Cosa puoi chiedergli e cosa può modificare è descritto nella pagina [Assistente impostazioni: cosa può fare la chat](settings-assistant-chat.md).
 
@@ -20,7 +20,7 @@ L'assistente è **disattivato per impostazione predefinita**. Questa pagina most
 2. Apri la sezione **Assistenti** (Assistants).
 3. Attiva **Abilita l'assistente impostazioni** (Enable the settings assistant).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="La sezione Assistants in Informazioni sulla società con gli interruttori per l'assistente impostazioni, l'assistente di convalida e la voce narrante delle spiegazioni"><figcaption><p>La sezione Assistenti. L'assistente impostazioni ha un proprio interruttore. L'assistente di convalida e la voce narrante delle spiegazioni sono funzioni separate.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-it.png" alt="La sezione Assistants in Informazioni sulla società con gli interruttori per l'assistente impostazioni, l'assistente di convalida e la voce narrante delle spiegazioni"><figcaption><p>La sezione Assistenti. L'assistente impostazioni ha un proprio interruttore. L'assistente di convalida e la voce narrante delle spiegazioni sono funzioni separate.</p></figcaption></figure>
 
 Un breve messaggio conferma **Settings assistant enabled**. L'impostazione è disattivata per impostazione predefinita. Finché è disattivata, il pannello e il suo pulsante non compaiono da nessuna parte.
 
@@ -32,7 +32,7 @@ L'**Assistente di convalida** (Validation assistant) nella stessa sezione è una
 
 In ogni pagina dell'area Impostazioni trovi un piccolo **pulsante a forma di lampada del genio** accanto al campo di ricerca delle impostazioni. Fai clic per **mostrare** o **nascondere** l'assistente.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="La pagina Informazioni sulla società nelle Impostazioni con la navigazione delle impostazioni a sinistra, la pagina al centro e il pannello Settings Assistant a destra"><figcaption><p>L'assistente si trova sul <strong>lato destro</strong> di ogni pagina delle Impostazioni: navigazione a sinistra, la pagina al centro, l'assistente accanto. Qui in <strong>Company Settings → Company Information</strong>. Il pulsante per mostrarlo o nasconderlo è l'icona della lampada accanto a <strong>Search Settings</strong> in alto nella navigazione.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-it.png" alt="La pagina Informazioni sulla società nelle Impostazioni con la navigazione delle impostazioni a sinistra, la pagina al centro e il pannello Settings Assistant a destra"><figcaption><p>L'assistente si trova sul <strong>lato destro</strong> di ogni pagina delle Impostazioni: navigazione a sinistra, la pagina al centro, l'assistente accanto. Qui in <strong>Company Settings → Company Information</strong>. Il pulsante per mostrarlo o nasconderlo è l'icona della lampada accanto a <strong>Search Settings</strong> in alto nella navigazione.</p></figcaption></figure>
 
 * Il pannello ricorda la tua scelta per ogni utente, quindi resta aperto la volta successiva.
 * Su uno schermo largo (1280 pixel o più) si trova accanto alla pagina. Puoi trascinarne il bordo per cambiare la larghezza.

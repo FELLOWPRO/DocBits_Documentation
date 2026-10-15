@@ -2,7 +2,7 @@
 
 Inserisci un ID documento in **ID documento** (Document ID), oppure apri un documento di esempio da un cluster, per vedere **cosa è successo a questo singolo documento**.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="La pagina Document Trace con il percorso della pipeline in 14 fasi e la fase Field Validation in cui il documento si è fermato"><figcaption><p>Il Tracciamento del documento: il percorso nella pipeline con la fase in cui il documento si è fermato, ciò che quella fase aveva a disposizione e la cronologia delle esecuzioni sotto.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-document-trace-it.png" alt="La pagina Document Trace con il percorso della pipeline in 14 fasi e la fase Field Validation in cui il documento si è fermato"><figcaption><p>Il Tracciamento del documento: il percorso nella pipeline con la fase in cui il documento si è fermato, ciò che quella fase aveva a disposizione e la cronologia delle esecuzioni sotto.</p></figcaption></figure>
 
 In alto trovi il **percorso nella pipeline** con 14 fasi: Intake (Acquisizione), Classification (Classificazione), E-Document Validation (Convalida e-documento), Supplier Identification (Identificazione fornitore), Text Recognition (Riconoscimento del testo), Header Extraction (Estrazione dell'intestazione), Table Extraction (Estrazione delle tabelle), Field Validation (Convalida dei campi), PO Lookup (Ricerca ordine), PO Line Match (Abbinamento righe ordine), Approval (Approvazione), Workflow Routing (Instradamento del flusso di lavoro), Export (Esportazione), ERP Acknowledgement (Conferma ERP). Ogni riquadro ha uno stato:
 

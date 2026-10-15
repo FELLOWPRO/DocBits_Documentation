@@ -3,7 +3,7 @@
 
 Fai clic su un fornitore nella coda per aprire la sua pagina di diagnosi.
 
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="La pagina Supplier Diagnosis con i riquadri degli esiti, l'andamento e due cluster di problemi"><figcaption><p>La pagina Diagnosi del fornitore: riquadri degli esiti, andamento con selettore del periodo e due cluster di problemi ordinati per incremento atteso. Organizzazione di esempio con dati demo; i nomi dei fornitori sono fittizi.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-detail-it.png" alt="La pagina Supplier Diagnosis con i riquadri degli esiti, l'andamento e due cluster di problemi"><figcaption><p>La pagina Diagnosi del fornitore: riquadri degli esiti, andamento con selettore del periodo e due cluster di problemi ordinati per incremento atteso. Organizzazione di esempio con dati demo; i nomi dei fornitori sono fittizi.</p></figcaption></figure>
 
 La pagina mostra:
 
@@ -20,7 +20,7 @@ Una breve nota spiega una pagina vuota, ad esempio: *5 documents from this suppl
 
 Un **cluster** raggruppa i documenti di un fornitore che si sono fermati per lo **stesso primo motivo**. Invece di 40 problemi singoli vedi "3 problemi".
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="La scheda di un cluster di problemi aperto con il primo blocco, cosa cambiare e la proposta di modifica"><figcaption><p>La scheda di un cluster aperto: il primo blocco, <strong>What to change</strong> (cosa cambiare) e una <strong>Change proposal</strong> (proposta di modifica) con rischio, ambito e domande aperte. Qui il cluster riguarda 58 documenti e vale +18,7 pp. Organizzazione di esempio con dati demo; i nomi dei fornitori sono fittizi.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-it.png" alt="La scheda di un cluster di problemi aperto con il primo blocco, cosa cambiare e la proposta di modifica"><figcaption><p>La scheda di un cluster aperto: il primo blocco, <strong>What to change</strong> (cosa cambiare) e una <strong>Change proposal</strong> (proposta di modifica) con rischio, ambito e domande aperte. Qui il cluster riguarda 58 documenti e vale +18,7 pp. Organizzazione di esempio con dati demo; i nomi dei fornitori sono fittizi.</p></figcaption></figure>
 
 **Esempio di cluster (illustrativo).**
 

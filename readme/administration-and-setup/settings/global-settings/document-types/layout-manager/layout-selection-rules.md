@@ -22,10 +22,6 @@ A origem continua disponível — como uma condição entre muitas. Uma regra ta
 | As faturas de alto valor precisam de mais campos na tela de aprovação | não é possível | regra de Approval *Total Amount greater than 10000* → layout "High value approval" |
 | O segundo aprovador deve ver uma tela diferente da do primeiro | tipo de layout separado "segunda aprovação" | regra de Approval *Document Status is Pending second approval* → layout "Second approval" |
 
-{% hint style="info" %}
-Enquanto o recurso estiver em beta, as configurações descritas abaixo só aparecem quando a página de configurações **Document Types** é aberta com `?beta=true` anexado ao endereço.
-{% endhint %}
-
 ## Ativar os layouts baseados em regras
 
 Os layouts baseados em regras são ativados **por tipo de documento** por um **administrador da organização**.

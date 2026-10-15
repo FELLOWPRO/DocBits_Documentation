@@ -44,6 +44,28 @@ The **Purchase Order** card (**PO Matching & Validation**) controls how document
 * [**Update Document Purchase Order Status**](purchase-order/update-document-purchase-order-status.md): Updates the PO Status column on the dashboard whenever the status of the purchase order changes.
 * [**Allow Auto Export For Non Matchable PO Lines**, **Auto Match & Export visible to** and **Use Lines Net Amount for Matched Total visible to**](purchase-order/auto-match-and-export-options.md): Decide who sees the Auto Match & Export shortcuts and which documents may export automatically.
 
+### See the matching rules as a diagram
+
+The PO matching rules are more than a list. DocBits can draw the active rule set as a flow chart. You see in which order the rules are tried and where matching stops.
+
+1. In the **Purchase Order** card switch **PO match server side** on and click **Configure PO Matching Rules**.
+2. Click **Rule set as a diagram** at the top of the page. The diagram opens in a panel next to the rules.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram.png" alt="The rule set diagram with five stages from single match validation to fallback logic"><figcaption><p>The rule set as a diagram. Five stages, from top to bottom.</p></figcaption></figure>
+
+Read the chart from top to bottom. DocBits tries the stages in this order: **Single match validation**, **Multi match validation**, **Total match validation**, **Single mismatch validation** and **Fallback logic**. Each stage tries up to three passes: **Exact match for all rules**, **Tolerance-based match** and **Package criteria**. A green arrow means a match was found and processing stops. A red arrow means no match, so DocBits carries on with the next step. At the end the result is **Match found** or **No match found**.
+
+Under the chart the panel lists **Rules by priority, per stage**. For every rule you see the columns it compares, the tolerance and the options **Auto match**, **Manual match** and **Fallback**.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage.png" alt="The list of rules by priority per stage with the compared columns, the tolerance and the rule options"><figcaption><p>Under the chart: the rules of each stage with the columns they compare.</p></figcaption></figure>
+
+**Example.** An invoice line has item number 4711, quantity 10 and unit price 10.40. The purchase order line has item number 4711, quantity 10 and unit price 10.00. The tolerance for the unit price is 5 %.
+
+* Pass **1.1 Exact match for all rules** fails, because 10.40 is not 10.00. The red arrow leads to the next pass.
+* Pass **1.2 Tolerance-based match** succeeds. The difference is 4 %, which is within 5 %. The green arrow leads to **Match found**, and processing stops.
+
+In the diagram this is the path 1.1, then 1.2, then **Match found**. For the path that a single document took, see [PO matching diagnosis](../../../../touchless-po-matching-diagnosis.md). For all details of the rules page see [Purchase Order Matching Rules](purchase-order/purchase-order-matching-rules.md).
+
 ### PO Tolerance Setting
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance.png" alt="The PO Tolerance Setting block with quantity and unit price tolerance"><figcaption><p>Tolerance for quantity and unit price.</p></figcaption></figure>

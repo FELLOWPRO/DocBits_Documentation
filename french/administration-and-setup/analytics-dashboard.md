@@ -184,3 +184,7 @@ Le Tableau de données donne un accès complet à toutes les données de ligne s
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_hide_columns.png)
 
 ![](https://raw.githubusercontent.com/Fellow-Consulting-AG/docbits/refs/heads/main/readme/.gitbook/assets/analytics_dashboard_data_table_export.png)
+
+## Touchless Intelligence
+
+L'onglet **Touchless Intelligence** montre combien de documents traversent DocBits sans que personne n'intervienne, et pourquoi les autres s'arrêtent. Voir [Touchless Intelligence](touchless-intelligence.md).

@@ -24,6 +24,9 @@ Transformation rules replace most of the small scripts organisations used to wri
 | A supplier is matched on the total, not on lines | Table rows: Clear all rows → Add a row with the net amount |
 | All documents of certain suppliers belong to a sub-organisation | Routing: set the sub-organisation when *Supplier ID is one of …* |
 | Dates must be written in a fixed format into a free-text field | Header field: Reformat date `%d.%m.%Y` |
+| The PO number sits in the wrong field (for example in *Invoice Number*) | Header field *Purchase Order*: read from *Invoice Number*, only when *Purchase Order is empty* |
+| The PO number carries leading zeros or a prefix that the purchase order does not have | Header field *Purchase Order*: Trim `0` on the left, or Affix: strip prefix |
+| Item numbers differ from the purchase order lines in case, spaces or prefixes | Table column *ITEM_NUMBER*: Affix: strip prefix → Sanitise → UPPERCASE |
 
 {% hint style="info" %}
 While the feature is in beta, the settings described below only appear when the **Document Types** settings page is opened with `?beta=true` appended to the address.
@@ -149,6 +152,22 @@ Table rows **INVOICE_TABLE** · only when *Supplier ID is HP0000278* · Clear al
 
 Order matters: **Clear all rows** must come **before** **Add a row**. The builder warns you if it does not ("Clear all rows runs after Add a row …"), and it also warns if an **Add a row** step is not preceded by **Clear all rows**, because the rule would then append another copy of the row on every save. Pair this rule with a match-on-total purchase order matching rule that is active for one-line documents.
 
+### Fill the purchase order from the invoice number field
+
+Header field **Purchase Order** · only when *Purchase Order is empty* · **Read from** *Invoice Number* → Trim → Change case UPPERCASE.
+
+<figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number.png" alt="The rule builder for the rule that fills Purchase Order from Invoice Number, with the live preview"><figcaption><p>The rule and its live preview: <code>po-4711</code> becomes <code>PO-4711</code> in <code>purchase_order</code>. Example rule on a test document type.</p></figcaption></figure>
+
+Some suppliers print the order number where the extraction expects the invoice number. Then **Invoice Number** holds the PO number and **Purchase Order** is empty, and the purchase order matcher finds nothing to match. This rule copies the value over before the matching starts. In a test on a development system, a document with exactly this problem went from *not matched* to *fully matched* (2 of 2 lines) when it was saved with the rule. The rule only runs while **Purchase Order** is empty, so it never overwrites a number that was extracted correctly.
+
+### Make item numbers comparable for purchase order matching
+
+Table column **INVOICE_TABLE / ITEM_NUMBER** · always · Affix: strip prefix `Art.-Nr. ` → Sanitise: keep alphanumeric → Change case UPPERCASE.
+
+<figure><img src="../../../../.gitbook/assets/transformation-item-number-compare.png" alt="The rule builder for the item number rule with the live preview"><figcaption><p>The live preview shows every step: <code>Art.-Nr. ab-12/3</code> becomes <code>AB123</code></p></figcaption></figure>
+
+If the invoice writes `Art.-Nr. ab-12/3` and the purchase order has `AB123`, the lines do not match. The rule brings the invoice value into the form of the purchase order. Check the form that your purchase orders use and adapt the steps.
+
 ### More examples
 
 | Goal | Scope | Condition | Steps |
@@ -161,6 +180,14 @@ Order matters: **Clear all rows** must come **before** **Add a row**. The builde
 | Remove a wrongly extracted value | Header *Discount Term* | only when *Supplier ID is 20723* | Clear |
 | Price basis per unit | Column *UNIT_PRICE_PER* | only when *row.UNIT_PRICE_PER is empty* | Fix value `1` |
 | Route suppliers to a sub-organisation | Routing | *Supplier ID is one of* `10040, 10041` | assign a fixed sub-organisation |
+| Remove leading zeros from the PO number | Header *Purchase Order* | always | Trim characters `0`, side left |
+| Keep only the digits of the PO number | Header *Purchase Order* | always | Sanitise: keep digits only (`PO-45001234` → `45001234`) |
+| Cut an over-long PO reference | Header *Purchase Order* | only when *Supplier ID is 20723* | Truncate to 10 characters |
+| Add the prefix your ERP expects to the PO number | Header *Purchase Order* | only when *Supplier ID is 10040* | Affix: add prefix `4500` |
+| Write amounts the way your ERP reads them | Header *Total Amount* | always | Format number, locale `de_DE`, 2 decimals |
+| Remove spaces inside item numbers | Column *ITEM_NUMBER* | always | Sanitise: strip the characters ` ` (space) |
+| Use upper case for item numbers | Column *ITEM_NUMBER* | always | Change case UPPERCASE |
+| Send POs of one plant to a sub-organisation | Routing | *Purchase Order starts with* `4500` | assign a fixed sub-organisation |
 
 ## Routing rules (sub-organisation)
 
@@ -182,6 +209,15 @@ Most steps give the same result when they run on their own output — trimming a
 * **Read from another field**, so the input stays unchanged.
 
 ## Transformation rules and purchase order matching
+
+Rules run **before** purchase order matching, so they can prepare exactly what the matcher reads:
+
+| The matcher reads | A rule can | Example |
+| --- | --- | --- |
+| The purchase order number in the header | copy it from another field, extract it from a text, remove prefixes and leading zeros | [Fill the purchase order from the invoice number field](#fill-the-purchase-order-from-the-invoice-number-field) |
+| The item numbers of the lines | strip prefixes, remove special characters, unify the case | [Make item numbers comparable](#make-item-numbers-comparable-for-purchase-order-matching) |
+| The unit codes | map the supplier's codes to yours | [Map unit codes](#map-unit-codes) |
+| The number of lines | collapse the lines into one total line | [One total line](#one-total-line-for-a-supplier-matched-on-the-total) |
 
 Table rules and column rules change what the PO matcher sees:
 

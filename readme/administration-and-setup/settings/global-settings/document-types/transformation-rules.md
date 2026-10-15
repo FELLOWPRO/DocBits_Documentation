@@ -17,13 +17,16 @@ As regras de transformação substituem a maioria dos pequenos scripts que as or
 
 | Requisito | Regra |
 | --- | --- |
-| Um fornecedor imprime o número da fatura sem o prefixo `INV-` que o nosso ERP espera | Campo de cabeçalho *Invoice Number*, somente para esse fornecedor: Trim → UPPERCASE → Affix: adicionar prefixo `INV-` |
+| Um fornecedor imprime o número da fatura sem o prefixo `INV-` que o nosso ERP espera | Campo de cabeçalho *Invoice Number*, somente para esse fornecedor: Aparar → UPPERCASE → Afixo: adicionar prefixo `INV-` |
 | Os fornecedores enviam códigos de unidade alemães (`STK`, `Std`) e o ERP espera códigos UN/ECE (`PCE`, `HUR`) | Coluna de tabela *UNIT*: Map values `STK → PCE`, `KG → KGM`, `Std → HUR` |
-| Os números de item vêm com um prefixo como `Art.-Nr. 4711` | Coluna de tabela *ITEM_NUMBER*: Affix: remover prefixo `Art.-Nr. ` |
-| Os IDs fiscais contêm espaços e pontos | Campo de cabeçalho *Supplier Tax ID*: Sanitise, manter alfanumérico |
+| Os números de item vêm com um prefixo como `Art.-Nr. 4711` | Coluna de tabela *ITEM_NUMBER*: Afixo: remover prefixo `Art.-Nr. ` |
+| Os IDs fiscais contêm espaços e pontos | Campo de cabeçalho *Supplier Tax ID*: Desinfetar, manter alfanumérico |
 | Um fornecedor é correspondido pelo total, não pelas linhas | Linhas da tabela: Clear all rows → Add a row com o valor líquido |
 | Todos os documentos de determinados fornecedores pertencem a uma suborganização | Routing: definir a suborganização quando *Supplier ID is one of …* |
 | As datas devem ser gravadas em um formato fixo em um campo de texto livre | Campo de cabeçalho: Reformat date `%d.%m.%Y` |
+| O número do pedido de compra está no campo errado (por exemplo, em *Invoice Number*) | Campo de cabeçalho *Purchase Order*: Read from *Invoice Number*, somente quando *Purchase Order is empty* |
+| O número do pedido de compra tem zeros à esquerda ou um prefixo que o pedido de compra não tem | Campo de cabeçalho *Purchase Order*: Aparar `0` à esquerda ou Afixo: remover prefixo |
+| Os números de item diferem das linhas do pedido de compra em maiúsculas/minúsculas, espaços ou prefixos | Coluna de tabela *ITEM_NUMBER*: Afixo: remover prefixo → Desinfetar → UPPERCASE |
 
 {% hint style="info" %}
 Enquanto o recurso está em beta, as configurações descritas abaixo só aparecem quando a página de configurações **Document Types** é aberta com `?beta=true` anexado ao endereço.
@@ -43,39 +46,39 @@ O cartão do tipo de documento agora exibe um link **Transformation Rules** e um
 
 ## A lista de regras
 
-A lista mostra todas as regras do tipo de documento na ordem em que são executadas, cada uma com um resumo de uma frase ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), seu escopo (**Header**, **Table**, **Column**, **Routing**), o número de etapas, sua origem e se **Log execution** está ativado. Filtre por escopo e por **Active / Inactive**, pesquise e use o menu **⋮** para duplicar ou excluir uma regra.
+A lista mostra todas as regras do tipo de documento na ordem em que são executadas, cada uma com um resumo de uma frase ("When invoice_id is abcd, take invoice_id, make it UPPERCASE, and save it back."), seu escopo (**Header**, **Table**, **Column**, **Routing**), o número de etapas, sua origem e se **Execução de logs** está ativado. Filtre por escopo e por **Active / Inactive**, pesquise e use o menu **⋮** para duplicar ou excluir uma regra.
 
 As regras vêm de três origens, como as regras de validação: regras **System default** fornecidas com o DocBits (clique em **Customize** para obter uma cópia editável), regras do sistema **Customized** (**Reset to Default** restaura o original) e regras **Custom** que você criou.
 
 ## Criar uma regra
 
-Clique em **New rule**. O construtor tem três etapas à esquerda e uma **Live preview** à direita. No topo, ele resume a regra em uma frase enquanto você a constrói.
+Clique em **New rule**. O construtor tem três etapas à esquerda e uma **Pré-visualização ao vivo** à direita. No topo, ele resume a regra em uma frase enquanto você a constrói.
 
 <figure><img src="../../../../.gitbook/assets/transformation-rule-scope.png" alt="Etapa 1 do construtor de regras de transformação"><figcaption><p>Etapa 1: o que a regra altera. A frase no topo descreve a regra em linguagem simples</p></figcaption></figure>
 
 ### Etapa 1 — O quê e onde
 
-**What does this rule change?** — o escopo:
+**O que essa regra altera?** — o escopo:
 
 | Escopo | Altera | Destino | Executa |
 | --- | --- | --- | --- |
-| **Header field** | um valor por documento | um campo de cabeçalho, por exemplo *Invoice Number* | uma vez por documento |
-| **Table rows** | linhas inteiras de itens — limpá-las ou adicionar linhas | uma tabela, por exemplo `INVOICE_TABLE` | uma vez por documento |
-| **Table column** | um valor em cada linha de itens | uma tabela e uma coluna, por exemplo `INVOICE_TABLE` / `UNIT` | uma vez por linha |
-| **Routing** | um atributo do documento — atualmente a suborganização | *suborganização* | uma vez por documento |
+| **Campo de cabeçalho** | um valor por documento | um campo de cabeçalho, por exemplo *Invoice Number* | uma vez por documento |
+| **Linhas da tabela** | linhas inteiras de itens — limpá-las ou adicionar linhas | uma tabela, por exemplo `INVOICE_TABLE` | uma vez por documento |
+| **Coluna da tabela** | um valor em cada linha de itens | uma tabela e uma coluna, por exemplo `INVOICE_TABLE` / `UNIT` | uma vez por linha |
+| **Roteamento** | um atributo do documento — atualmente a suborganização | *suborganização* | uma vez por documento |
 
-Depois, informe o **Rule Name** (a **Rule key** é gerada a partir dele), escolha o **Target field** / **Table name** / **Target column** e, opcionalmente, uma **Description**. **Log execution** grava uma entrada de log por aplicação — útil enquanto você ajusta uma regra.
+Depois, informe o **Nome da regra** (a **Chave de regras** é gerada a partir dele), escolha o **Campo alvo** / **Nome da tabela** / **Coluna alvo** e, opcionalmente, uma **Descrição**. **Execução de logs** grava uma entrada de log por aplicação — útil enquanto você ajusta uma regra.
 
-### Etapa 2 — Quando ela é executada
+### Etapa 2 — Quando ele funciona
 
-* **Always** — a regra é executada em todos os documentos do tipo.
-* **Only when…** — a regra é executada somente se uma condição for verdadeira, por exemplo *Supplier ID is HP0000278*. Para regras de **Table column**, a condição pode usar as colunas da linha atual e é verificada linha por linha. Consulte [Condições da regra (Applies when)](rule-conditions-applies-when.md) para ver todos os campos, operadores e exemplos.
+* **Sempre** — a regra é executada em todos os documentos do tipo.
+* **Só quando…** — a regra é executada somente se uma condição for verdadeira, por exemplo *Supplier ID is HP0000278*. Para regras de **Coluna da tabela**, a condição pode usar as colunas da linha atual e é verificada linha por linha. Consulte [Condições da regra (Applies when)](rule-conditions-applies-when.md) para ver todos os campos, operadores e exemplos.
 
 Duas opções controlam com que frequência a regra se aplica:
 
 | Opção | Efeito |
 | --- | --- |
-| **Run only once per document** | Normalmente, as regras são executadas novamente a cada salvamento. Com esta opção ativada, a regra se aplica **no máximo uma vez** a um documento e depois termina com ele. Uma passagem em que as condições não correspondem não conta, portanto a regra ainda pode se aplicar em um salvamento posterior. Necessário para etapas que alterariam o valor novamente a cada salvamento (consulte [Idempotência](#executar-uma-vez-e-idempotencia)) e para regras de tabela que não devem reconstruir as linhas novamente. |
+| **Executar apenas uma vez por documento** | Normalmente, as regras são executadas novamente a cada salvamento. Com esta opção ativada, a regra se aplica **no máximo uma vez** a um documento e depois termina com ele. Uma passagem em que as condições não correspondem não conta, portanto a regra ainda pode se aplicar em um salvamento posterior. Necessário para etapas que alterariam o valor novamente a cada salvamento (consulte [Idempotência](#execucao-unica-e-idempotencia)) e para regras de tabela que não devem reconstruir as linhas novamente. |
 | **Run after lookup population (before PO match)** | *(versões mais recentes)* Executa a regra em uma passagem adicional depois que os dados de consulta (por exemplo, dados mestres do fornecedor) foram preenchidos e antes da correspondência de pedidos de compra. Use quando a regra precisar de um valor fornecido por uma consulta. A regra continua sendo executada também nas etapas habituais; uma regra de execução única com esta opção aguarda esta passagem em vez de ser executada logo após a extração. |
 
 ### Etapa 3 — O pipeline
@@ -92,12 +95,12 @@ Duas opções controlam com que frequência a regra se aplica:
 
 | Etapa | Configurações | Exemplo de entrada → saída |
 | --- | --- | --- |
-| **Change case** | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
-| **Trim** | lado (ambos, esquerdo, direito); caracteres (vazio = espaço em branco) | `  4711 ` → `4711`; com o caractere `0` e lado esquerdo: `004711` → `4711` |
+| **Alterar maiúsculas/minúsculas** (Change case) | UPPERCASE, lowercase, Title Case, Capitalise first | `inv-4711` → `INV-4711` |
+| **Aparar** (Trim) | lado (ambos, esquerdo, direito); caracteres (vazio = espaço em branco) | `  4711 ` → `4711`; com o caractere `0` e lado esquerdo: `004711` → `4711` |
 | **Pad** | comprimento, caractere de preenchimento, lado | comprimento 10, `0`, esquerda: `4711` → `0000004711` |
 | **Truncate** | comprimento máximo | 10: `ABCDEFGHIJKL` → `ABCDEFGHIJ` |
-| **Affix** | adicionar prefixo, adicionar sufixo, remover prefixo, remover sufixo; texto | adicionar prefixo `INV-`: `4711` → `INV-4711`; remover prefixo `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
-| **Sanitise** | manter somente (alfanumérico, letras, dígitos, alfanumérico + espaço) ou remover os caracteres informados | manter alfanumérico: `DE 123.456.789` → `DE123456789` |
+| **Afixo** (Affix) | adicionar prefixo, adicionar sufixo, remover prefixo, remover sufixo; texto | adicionar prefixo `INV-`: `4711` → `INV-4711`; remover prefixo `Art.-Nr. `: `Art.-Nr. 4711` → `4711` |
+| **Desinfetar** (Sanitise) | manter somente (alfanumérico, letras, dígitos, alfanumérico + espaço) ou remover os caracteres informados | manter alfanumérico: `DE 123.456.789` → `DE123456789` |
 | **Take a slice** | início, comprimento ou fim | início 0, comprimento 4: `2026-09-29` → `2026` |
 | **Extract** | padrão, grupo de captura | padrão `PO[- ]?(\d+)`, grupo 1: `Order PO-45001234` → `45001234` |
 | **Find & replace** | padrão, substituir por, quantidade (0 = todas) | padrão `\s+`, substituir por ` `: `ACME    GmbH` → `ACME GmbH` |
@@ -107,7 +110,7 @@ Duas opções controlam com que frequência a regra se aplica:
 | **Fix value** | o valor | sempre grava o valor, seja qual for o conteúdo do campo |
 | **Clear** | – | esvazia o campo |
 
-As regras de **Table rows** usam duas etapas diferentes, que trabalham com linhas em vez de valores:
+As regras de **Linhas da tabela** usam duas etapas diferentes, que trabalham com linhas em vez de valores:
 
 | Etapa | Efeito |
 | --- | --- |
@@ -122,22 +125,22 @@ As regras de **Table rows** usam duas etapas diferentes, que trabalham com linha
 
 A pré-visualização ao vivo executa a regra em uma amostra enquanto você a constrói:
 
-* **Sample input** — digite um valor como ele viria do documento. Para regras de tabela, informe o número de linhas extraídas (**Sample table**) e os valores dos campos que as novas linhas leem (**Row source values**).
-* **Condition values** — para regras com condição, digite os valores dos campos da condição. A pré-visualização mostra **Conditions match — rule runs** ou **Conditions do not match — rule is skipped**.
+* **Entrada de exemplo** — digite um valor como ele viria do documento. Para regras de tabela, informe o número de linhas extraídas (**Sample table**) e os valores dos campos que as novas linhas leem (**Row source values**).
+* **Valores de condição** — para regras com condição, digite os valores dos campos da condição. A pré-visualização mostra **As condições coincidem — a regra é executada.** ou **Conditions do not match — rule is skipped**.
 * Abaixo, você vê o valor após **cada etapa** e o resultado final que seria gravado ("invoice_id → INV-230620-03A" ou "unchanged").
 
-Nada é salvo enquanto você usa a pré-visualização. Clique em **Save** para armazenar a regra.
+Nada é salvo enquanto você usa a pré-visualização. Clique em **Salvar** para armazenar a regra.
 
 ## Exemplos
 
 ### Limpar o número da fatura de um fornecedor
 
-Campo de cabeçalho **Invoice Number** · somente quando *Supplier ID is HP0000278* · Trim → Change case UPPERCASE → Affix adicionar prefixo `INV-`.
+Campo de cabeçalho **Invoice Number** · somente quando *Supplier ID is HP0000278* · Aparar → Alterar maiúsculas/minúsculas UPPERCASE → Afixo adicionar prefixo `INV-`.
 Amostra `  230620-03a ` → `INV-230620-03A`. Veja a captura de tela do pipeline acima.
 
 ### Mapear códigos de unidade
 
-Coluna de tabela **INVOICE_TABLE / UNIT** · sempre · Trim → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** ativado, valor sem correspondência vazio (manter a entrada).
+Coluna de tabela **INVOICE_TABLE / UNIT** · sempre · Aparar → Map values `STK → PCE`, `KG → KGM`, `Std → HUR`, **Ignore case when matching** ativado, valor sem correspondência vazio (manter a entrada).
 
 <figure><img src="../../../../.gitbook/assets/transformation-column-value-map.png" alt="Uma regra de coluna de tabela com Map values"><figcaption><p>Map values na coluna UNIT: <code>stk</code> vira <code>PCE</code></p></figcaption></figure>
 
@@ -149,28 +152,52 @@ Linhas da tabela **INVOICE_TABLE** · somente quando *Supplier ID is HP0000278* 
 
 A ordem importa: **Clear all rows** deve vir **antes** de **Add a row**. O construtor avisa você caso contrário ("Clear all rows runs after Add a row …") e também avisa se uma etapa **Add a row** não for precedida por **Clear all rows**, pois a regra acrescentaria outra cópia da linha a cada salvamento. Combine esta regra com uma regra de correspondência de pedidos de compra por total que esteja ativa para documentos de uma linha.
 
+### Preencher o pedido de compra a partir do campo do número da fatura
+
+Campo de cabeçalho **Purchase Order** · somente quando *Purchase Order is empty* · **Read from** *Invoice Number* → Aparar → Alterar maiúsculas/minúsculas UPPERCASE.
+
+<figure><img src="../../../../.gitbook/assets/transformation-po-from-invoice-number-pt.png" alt="O construtor de regras da regra que preenche Purchase Order a partir de Invoice Number, com a pré-visualização ao vivo"><figcaption><p>A regra e sua pré-visualização ao vivo: <code>po-4711</code> vira <code>PO-4711</code> em <code>purchase_order</code>. Regra de exemplo em um tipo de documento de teste.</p></figcaption></figure>
+
+Alguns fornecedores imprimem o número do pedido onde a extração espera o número da fatura. Nesse caso, **Invoice Number** contém o número do pedido de compra e **Purchase Order** fica vazio, e o sistema de correspondência de pedidos de compra não encontra nada para corresponder. Esta regra copia o valor antes de a correspondência começar. Em um teste em um sistema de desenvolvimento, um documento com exatamente esse problema passou de *não correspondido* para *totalmente correspondido* (2 de 2 linhas) ao ser salvo com a regra. A regra só é executada enquanto **Purchase Order** estiver vazio, portanto nunca sobrescreve um número que foi extraído corretamente.
+
+### Tornar os números de item comparáveis para a correspondência de pedidos de compra
+
+Coluna de tabela **INVOICE_TABLE / ITEM_NUMBER** · sempre · Afixo: remover prefixo `Art.-Nr. ` → Desinfetar: manter alfanumérico → Alterar maiúsculas/minúsculas UPPERCASE.
+
+<figure><img src="../../../../.gitbook/assets/transformation-item-number-compare-pt.png" alt="O construtor de regras da regra de número de item, com a pré-visualização ao vivo"><figcaption><p>A pré-visualização ao vivo mostra cada etapa: <code>Art.-Nr. ab-12/3</code> vira <code>AB123</code></p></figcaption></figure>
+
+Se a fatura traz `Art.-Nr. ab-12/3` e o pedido de compra tem `AB123`, as linhas não correspondem. A regra leva o valor da fatura à forma do pedido de compra. Verifique a forma usada nos seus pedidos de compra e adapte as etapas.
+
 ### Mais exemplos
 
 | Objetivo | Escopo | Condição | Etapas |
 | --- | --- | --- | --- |
-| Remover espaços e pontos do ID fiscal | Cabeçalho *Supplier Tax ID* | sempre | Sanitise: manter alfanumérico |
-| Remover o prefixo do artigo | Coluna *ITEM_NUMBER* | sempre | Affix: remover prefixo `Art.-Nr. ` |
-| Números de fornecedor com 10 dígitos | Cabeçalho *Supplier ID* | sempre | Trim → Pad comprimento 10 com `0`, esquerda |
+| Remover espaços e pontos do ID fiscal | Cabeçalho *Supplier Tax ID* | sempre | Desinfetar: manter alfanumérico |
+| Remover o prefixo do artigo | Coluna *ITEM_NUMBER* | sempre | Afixo: remover prefixo `Art.-Nr. ` |
+| Números de fornecedor com 10 dígitos | Cabeçalho *Supplier ID* | sempre | Aparar → Pad comprimento 10 com `0`, esquerda |
 | Extrair o número do pedido de compra de um texto de referência | Cabeçalho *Purchase Order*, lido de outro campo | somente quando *Purchase Order is empty* | Extract `PO[- ]?(\d+)`, grupo 1 |
-| Sempre usar uma moeda para um fornecedor | Cabeçalho *Currency* | somente quando *Supplier ID is 10040* | Fix value `CHF` |
+| Sempre usar uma única moeda para um fornecedor | Cabeçalho *Currency* | somente quando *Supplier ID is 10040* | Fix value `CHF` |
 | Remover um valor extraído incorretamente | Cabeçalho *Discount Term* | somente quando *Supplier ID is 20723* | Clear |
 | Base de preço por unidade | Coluna *UNIT_PRICE_PER* | somente quando *row.UNIT_PRICE_PER is empty* | Fix value `1` |
 | Direcionar fornecedores para uma suborganização | Routing | *Supplier ID is one of* `10040, 10041` | atribuir uma suborganização fixa |
+| Remover zeros à esquerda do número do pedido de compra | Cabeçalho *Purchase Order* | sempre | Aparar caracteres `0`, lado esquerdo |
+| Manter apenas os dígitos do número do pedido de compra | Cabeçalho *Purchase Order* | sempre | Desinfetar: manter somente dígitos (`PO-45001234` → `45001234`) |
+| Cortar uma referência de pedido de compra longa demais | Cabeçalho *Purchase Order* | somente quando *Supplier ID is 20723* | Truncate para 10 caracteres |
+| Adicionar ao número do pedido de compra o prefixo que o seu ERP espera | Cabeçalho *Purchase Order* | somente quando *Supplier ID is 10040* | Afixo: adicionar prefixo `4500` |
+| Gravar os valores no formato que o seu ERP lê | Cabeçalho *Total Amount* | sempre | Format number, localidade `de_DE`, 2 casas decimais |
+| Remover espaços dentro dos números de item | Coluna *ITEM_NUMBER* | sempre | Desinfetar: remover os caracteres ` ` (espaço) |
+| Usar maiúsculas nos números de item | Coluna *ITEM_NUMBER* | sempre | Alterar maiúsculas/minúsculas UPPERCASE |
+| Direcionar os pedidos de compra de uma planta para uma suborganização | Routing | *Purchase Order starts with* `4500` | atribuir uma suborganização fixa |
 
 ## Regras de roteamento (suborganização)
 
-Uma regra de **Routing** não altera um campo. Ela grava um atributo no documento quando suas condições correspondem — atualmente a **suborganização**. Escolha **Assign a fixed sub-organisation** e selecione-a na lista, ou **Map from a field** para mapear valores de um campo extraído para suborganizações. O documento passa então a pertencer a essa suborganização, com seus usuários, permissões e configurações. Um valor que não seja uma suborganização válida nunca é gravado.
+Uma regra de **Roteamento** não altera um campo. Ela grava um atributo no documento quando suas condições correspondem — atualmente a **suborganização**. Escolha **Assign a fixed sub-organisation** e selecione-a na lista, ou **Map from a field** para mapear valores de um campo extraído para suborganizações. O documento passa então a pertencer a essa suborganização, com seus usuários, permissões e configurações. Um valor que não seja uma suborganização válida nunca é gravado.
 
 ## Quando as regras são executadas
 
 * **Durante o processamento**, após a extração e antes da consulta de dados mestres, da validação, dos scripts e da correspondência de pedidos de compra.
-* Em **cada salvamento** do documento em que os dados extraídos mudaram. As regras sem **Run only once per document** são aplicadas novamente a cada vez.
-* Em uma mesma passagem, as regras são executadas escopo por escopo nesta ordem: **Header → Routing → Table rows → Table column**. Uma regra de coluna, portanto, também se aplica às linhas que uma regra de tabela acabou de adicionar. Dentro de um escopo, as regras são executadas por prioridade e depois por chave.
+* Em **cada salvamento** do documento em que os dados extraídos mudaram. As regras sem **Executar apenas uma vez por documento** são aplicadas novamente a cada vez.
+* Em uma mesma passagem, as regras são executadas escopo por escopo nesta ordem: **Campo de cabeçalho → Roteamento → Linhas da tabela → Coluna da tabela**. Uma regra de coluna, portanto, também se aplica às linhas que uma regra de tabela acabou de adicionar. Dentro de um escopo, as regras são executadas por prioridade e depois por chave.
 
 ### Execução única e idempotência
 
@@ -178,10 +205,19 @@ A maioria das etapas dá o mesmo resultado quando executada sobre a própria sa�
 
 **Take a slice**, **Extract** e **Find & replace** são diferentes: executadas novamente sobre o próprio resultado, elas continuam alterando-o (um corte pega os primeiros quatro caracteres dos primeiros quatro caracteres …). Por isso, o DocBits não permite salvar uma regra que aplique essas etapas ao seu próprio campo de destino. Você pode:
 
-* ativar **Run only once per document**, ou
-* **Read from another field**, para que a entrada permaneça inalterada.
+* ativar **Executar apenas uma vez por documento**, ou
+* usar **Read from** com outro campo, para que a entrada permaneça inalterada.
 
 ## Regras de transformação e correspondência de pedidos de compra
+
+As regras são executadas **antes** da correspondência de pedidos de compra, portanto podem preparar exatamente o que o sistema de correspondência lê:
+
+| O sistema de correspondência lê | Uma regra pode | Exemplo |
+| --- | --- | --- |
+| O número do pedido de compra no cabeçalho | copiá-lo de outro campo, extraí-lo de um texto, remover prefixos e zeros à esquerda | [Preencher o pedido de compra a partir do campo do número da fatura](#preencher-o-pedido-de-compra-a-partir-do-campo-do-numero-da-fatura) |
+| Os números de item das linhas | remover prefixos, remover caracteres especiais, uniformizar maiúsculas/minúsculas | [Tornar os números de item comparáveis](#tornar-os-numeros-de-item-comparaveis-para-a-correspondencia-de-pedidos-de-compra) |
+| Os códigos de unidade | mapear os códigos do fornecedor para os seus | [Mapear códigos de unidade](#mapear-codigos-de-unidade) |
+| O número de linhas | reduzir as linhas a uma única linha de total | [Uma linha de total](#uma-linha-de-total-para-um-fornecedor-correspondido-pelo-total) |
 
 As regras de tabela e de coluna alteram o que o sistema de correspondência de pedidos de compra enxerga:
 
@@ -191,7 +227,7 @@ As regras de tabela e de coluna alteram o que o sistema de correspondência de p
 
 ## Logs
 
-Com **Log execution** ativado, cada aplicação da regra é gravada em **Document Types → (tipo de documento) → Logs**, com o resultado (aplicada, sem alteração, ignorada), o documento e — para regras ignoradas — o rastreamento da condição que explica o motivo. Consulte [Ler o rastreamento da condição](rule-conditions-applies-when.md#ler-o-rastreamento-da-condicao-nos-logs).
+Com **Execução de logs** ativado, cada aplicação da regra é gravada em **Document Types → (tipo de documento) → Logs**, com o resultado (aplicada, sem alteração, ignorada), o documento e — para regras ignoradas — o rastreamento da condição que explica o motivo. Consulte [Ler o rastreamento da condição](rule-conditions-applies-when.md#ler-o-rastreamento-da-condicao-nos-logs).
 
 ## Melhores práticas
 
@@ -200,14 +236,14 @@ Com **Log execution** ativado, cada aplicação da regra é gravada em **Documen
 * **Limite as regras específicas de fornecedor com uma condição** em vez de deixá-las rodar em tudo.
 * **Prefira etapas idempotentes.** Use a execução única somente onde precisar.
 * **Observe a correspondência do pedido de compra** depois de adicionar regras de tabela; verifique o histórico de correspondência de alguns documentos.
-* **Desative Log execution** quando a regra estiver funcionando.
+* **Desative Execução de logs** quando a regra estiver funcionando.
 
 ## Solução de problemas
 
 | Sintoma | O que verificar |
 | --- | --- |
 | A regra não alterou nada | Ela está ativa e o recurso está ativado para o tipo de documento? A condição é verdadeira para este documento (valor exato, incluindo espaços e maiúsculas/minúsculas)? Uma regra de **execução única** já foi aplicada ao documento? Verifique o rastreamento no log. |
-| O valor muda novamente a cada salvamento | O pipeline contém Take a slice, Extract ou Find & replace. Ative **Run only once per document** ou leia de outro campo. |
+| O valor muda novamente a cada salvamento | O pipeline contém Take a slice, Extract ou Find & replace. Ative **Executar apenas uma vez por documento** ou use Read from com outro campo. |
 | Uma tabela ganha mais uma linha a cada salvamento | Uma etapa **Add a row** sem **Clear all rows** antes dela. Adicione primeiro a etapa de limpeza ou ative a execução única. |
 | A correspondência do pedido de compra é perdida após salvar | Uma regra de tabela substituiu as linhas correspondidas. O motivo no documento nomeia a regra; faça a regra reproduzir as mesmas linhas ou defina-a para execução única. |
 | Uma regra de correspondência nunca é executada após a transformação | A regra alterou o número de linhas; ajuste a condição de ativação da regra de correspondência. |

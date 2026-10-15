@@ -22,10 +22,6 @@ L'origine reste disponible — comme une condition parmi d'autres. Une règle pe
 | Les factures de montant élevé nécessitent plus de champs sur l'écran d'approbation | impossible | règle d'approbation *Le montant total est supérieur à 10000* → mise en page « Approbation montant élevé » |
 | Le second approbateur doit voir un écran différent du premier | type de mise en page distinct « seconde approbation » | règle d'approbation *Le statut du document est Pending second approval* → mise en page « Seconde approbation » |
 
-{% hint style="info" %}
-Tant que la fonction est en version bêta, les paramètres décrits ci-dessous n'apparaissent que si la page de paramètres **Types de documents** est ouverte avec `?beta=true` ajouté à l'adresse.
-{% endhint %}
-
 ## Activer les mises en page basées sur des règles
 
 Les mises en page basées sur des règles s'activent **par type de document** par un **administrateur de l'organisation**.

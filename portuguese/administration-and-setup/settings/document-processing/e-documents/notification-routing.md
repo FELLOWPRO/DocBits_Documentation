@@ -1,6 +1,6 @@
 # Encaminhamento de notificações
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_routing.png" alt="Rotas de notificação"><figcaption><p>Associação dos resultados de validação a agentes</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-routing-pt.png" alt="Rotas de notificação"><figcaption><p>Associação dos resultados de validação a agentes</p></figcaption></figure>
 
 A página **Encaminhamento de notificações** (**Documentos eletrónicos → Ações**) associa os resultados de validação aos **agentes do AI Workforce**. Cada resultado bloqueante aciona exatamente um agente — aquele cujo prefixo de código corresponde por mais tempo. Tudo o que não corresponde recai no agente de notificação ao fornecedor predefinido.
 
@@ -20,7 +20,7 @@ Para cada rota, escolha o agente responsável no menu pendente. **Avançado (reg
 
 ## Agentes disponíveis
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_agents.png" alt="Registo de agentes disponíveis"><figcaption><p>Registo só de leitura dos agentes do AI Workforce</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-agents-pt.png" alt="Registo de agentes disponíveis"><figcaption><p>Registo só de leitura dos agentes do AI Workforce</p></figcaption></figure>
 
 A secção **Agentes disponíveis** é um registo só de leitura dos agentes do AI Workforce fornecidos com a sua implementação, por exemplo:
 

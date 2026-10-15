@@ -30,10 +30,6 @@ Transformation rules replace most of the small scripts organisations used to wri
 | The PO number carries leading zeros or a prefix that the purchase order does not have | Header field *Purchase Order*: Trim `0` on the left, or Affix: strip prefix |
 | Item numbers differ from the purchase order lines in case, spaces or prefixes | Table column *ITEM_NUMBER*: Affix: strip prefix → Sanitise → UPPERCASE |
 
-{% hint style="info" %}
-While the feature is in beta, the settings described below only appear when the **Document Types** settings page is opened with `?beta=true` appended to the address.
-{% endhint %}
-
 ## Enable transformation rules
 
 Transformation rules are switched on **per document type** by an **organisation administrator**.

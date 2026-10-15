@@ -172,6 +172,8 @@ DocBits works through five stages from top to bottom. Each stage has up to three
 
 Under the chart the panel lists the rules of every stage by priority, with the columns each rule compares. A note at the top tells you where the tolerances come from: from the rule set, or, when `CUSTOM_RANGE_FOR_PO_TOLERANCE` is on, from the [document type settings](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
 
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage.png" alt="The list of rules by priority per stage with the compared columns, the tolerance and the rule options"><figcaption><p>Under the chart: the rules of each stage with the columns they compare, the tolerance and the options Auto match, Manual match and Fallback.</p></figcaption></figure>
+
 ***
 
 ## The default rule set

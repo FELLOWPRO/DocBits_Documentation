@@ -44,6 +44,28 @@ Karta **Zamówienie zakupu** (**Dopasowanie i walidacja zamówień**) określa, 
 * [**Aktualizacja dokumentu Status zamówienia zakupu**](purchase-order/update-document-purchase-order-status.md): Aktualizuje kolumnę Status PO na tablicy rozdzielczej za każdym razem, gdy zmienia się status zamówienia zakupu.
 * [**Zezwalaj na automatyczny eksport dla niepasujących wierszy zamówienia zakupu**, **Automatyczne dopasowanie i eksport widoczne dla** oraz **Użyj wierszy kwoty netto dla dopasowanej kwoty całkowitej widocznej dla**](purchase-order/auto-match-and-export-options.md): Określają, kto widzi skróty Automatyczne dopasowanie i eksport oraz które dokumenty mogą być eksportowane automatycznie.
 
+### Zobacz reguły dopasowania jako diagram
+
+Reguły dopasowania PO to coś więcej niż lista. DocBits może narysować aktywny zestaw reguł jako schemat blokowy. Widzisz, w jakiej kolejności reguły są próbowane i gdzie dopasowywanie się kończy.
+
+1. W karcie **Zamówienie zakupu** włącz **Serwer dopasowania PO** i kliknij **Konfiguruj reguły dopasowywania zamówień**.
+2. Kliknij **Zestaw reguł w formie diagramu** u góry strony. Diagram otwiera się w panelu obok reguł.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-pl.png" alt="Diagram zestawu reguł z pięcioma etapami od Single match validation do Fallback logic"><figcaption><p>Zestaw reguł w formie diagramu. Pięć etapów, od góry do dołu.</p></figcaption></figure>
+
+Czytaj wykres od góry do dołu. DocBits próbuje etapów w tej kolejności: **Single match validation**, **Multi match validation**, **Total match validation**, **Single mismatch validation** i **Fallback logic**. Każdy etap ma do trzech przebiegów: **Exact match for all rules**, **Tolerance-based match** i **Package criteria**. Zielona strzałka oznacza, że znaleziono dopasowanie, a przetwarzanie się kończy. Czerwona strzałka oznacza brak dopasowania, więc DocBits przechodzi do następnego kroku. Na końcu wynikiem jest **Znaleziono dopasowanie** albo **Nie znaleziono dopasowania**.
+
+Pod wykresem panel wymienia **Zasady według priorytetu, na etap**. Dla każdej reguły widzisz porównywane kolumny, tolerancję oraz opcje **Automatyczne dopasowanie**, **Dopasowanie ręczne** i **Awaryjny**.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-pl.png" alt="Lista reguł według priorytetu dla każdego etapu z porównywanymi kolumnami, tolerancją i opcjami reguły"><figcaption><p>Pod wykresem: reguły każdego etapu z kolumnami, które porównują.</p></figcaption></figure>
+
+**Przykład.** Linia faktury ma numer pozycji 4711, ilość 10 i cenę jednostkową 10,40. Linia zamówienia zakupu ma numer pozycji 4711, ilość 10 i cenę jednostkową 10,00. Tolerancja dla ceny jednostkowej wynosi 5 %.
+
+* Przebieg **1.1 Exact match for all rules** kończy się niepowodzeniem, ponieważ 10,40 nie jest równe 10,00. Czerwona strzałka prowadzi do następnego przebiegu.
+* Przebieg **1.2 Tolerance-based match** kończy się powodzeniem. Różnica wynosi 4 %, czyli mieści się w granicy 5 %. Zielona strzałka prowadzi do **Znaleziono dopasowanie**, a przetwarzanie się kończy.
+
+Na diagramie jest to ścieżka 1.1, następnie 1.2, następnie **Znaleziono dopasowanie**. Ścieżkę, którą przeszedł pojedynczy dokument, znajdziesz w [Touchless Intelligence: Diagnoza dopasowania PO](../../../../touchless-po-matching-diagnosis.md). Wszystkie szczegóły strony reguł opisuje [Zasady Dopasowywania Zamówień Zakupu](purchase-order/purchase-order-matching-rules.md).
+
 ### Ustawienie tolerancji PO
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance-pl.png" alt="Blok Ustawienie tolerancji PO z tolerancją ilości i ceny jednostkowej"><figcaption><p>Tolerancja dla ilości i ceny jednostkowej.</p></figcaption></figure>

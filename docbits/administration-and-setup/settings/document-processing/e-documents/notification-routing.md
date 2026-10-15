@@ -1,6 +1,6 @@
 # Notification Routing
 
-<figure><img src="../../../../.gitbook/assets/edoc_notification_routing.png" alt="Notification routes"><figcaption><p>Mapping validation findings to agents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-routing.png" alt="Notification routes"><figcaption><p>Mapping validation findings to agents</p></figcaption></figure>
 
 The **Notification Routing** page (**E-Documents → Actions**) maps validation findings to **AI Workforce agents**. Each blocking finding triggers exactly one agent — the one whose code-prefix matches the longest. Anything with no match falls back to the default supplier-notification agent.
 
@@ -20,7 +20,7 @@ For each route, pick the handling agent from the dropdown. **Advanced (custom co
 
 ## Available Agents
 
-<figure><img src="../../../../.gitbook/assets/due_date_calc_formats.png" alt="Available agents registry"><figcaption><p>Read-only registry of AI Workforce agents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-notification-agents.png" alt="Available agents registry"><figcaption><p>Read-only registry of AI Workforce agents</p></figcaption></figure>
 
 The **Available Agents** section is a read-only registry of the AI Workforce agents shipped with your deployment, for example:
 

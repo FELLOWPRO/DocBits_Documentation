@@ -99,7 +99,7 @@ Legen Sie fest, ob die Regel für jedes Dokument oder nur für einige gilt. Lass
 
 Bei Tabellenzeilen-Regeln kann die Bedingung auch die Spalten der aktuellen Zeile verwenden und wird **Zeile für Zeile** ausgewertet: Zeilen, die nicht zutreffen, werden einfach nicht geprüft.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-row-condition.png" alt="Eine Zeilenbedingung"><figcaption><p>Es werden nur Artikelzeilen (Zeilen mit einer Artikelnummer) geprüft</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-row-condition.png" alt="Eine Zeilenbedingung"><figcaption><p>Es werden nur Artikelzeilen (Zeilen mit einer Artikelnummer) geprüft</p></figcaption></figure>
 
 Bedingungen werden ausführlich, mit jedem Feld, jedem Operator und jeder Vergleichsregel sowie vielen Beispielen, auf der Seite [Rule Conditions (Applies when)](rule-conditions-applies-when.md) erklärt.
 

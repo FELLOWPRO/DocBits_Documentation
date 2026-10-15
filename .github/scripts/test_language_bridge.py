@@ -246,3 +246,35 @@ def test_symlinked_summary_is_rejected(tmp_path):
     dest.mkdir(parents=True)
     rep, _ = lb.plan_sync(readme, dest)
     assert rep.errors
+
+
+def test_changed_asset_in_branch_overwrites_the_destination(tmp_path):
+    """A re-shot screenshot keeps its filename. The sync must carry the
+    branch's new bytes across, not keep serving the destination's old copy."""
+    page = "# A\n\n![](../.gitbook/assets/shot.png)\n"
+    (rep, plan), dest = run(tmp_path, {**GOOD, "a/page-a.md": page}, assets={"shot.png": b"NEW"})
+    (dest / ".gitbook" / "assets").mkdir(parents=True, exist_ok=True)
+    (dest / ".gitbook" / "assets" / "shot.png").write_bytes(b"OLD")
+    rep, plan = lb.plan_sync(tmp_path / "src" / "readme", dest)
+    assert rep.assets == ["shot.png"]
+    assert plan[dest / ".gitbook" / "assets" / "shot.png"].read_bytes() == b"NEW"
+
+
+def test_unchanged_asset_is_not_copied_again(tmp_path):
+    page = "# A\n\n![](../.gitbook/assets/shot.png)\n"
+    (rep, plan), dest = run(tmp_path, {**GOOD, "a/page-a.md": page}, assets={"shot.png": b"SAME"})
+    (dest / ".gitbook" / "assets").mkdir(parents=True, exist_ok=True)
+    (dest / ".gitbook" / "assets" / "shot.png").write_bytes(b"SAME")
+    plan = lb.plan_sync(tmp_path / "src" / "readme", dest)[1]
+    assert dest / ".gitbook" / "assets" / "shot.png" not in plan
+
+
+def test_asset_only_on_destination_still_resolves(tmp_path):
+    """A shared asset the branch does not carry must not become a warning."""
+    page = "# A\n\n![](../.gitbook/assets/shared.png)\n"
+    (rep, plan), dest = run(tmp_path, {**GOOD, "a/page-a.md": page})
+    (dest / ".gitbook" / "assets").mkdir(parents=True, exist_ok=True)
+    (dest / ".gitbook" / "assets" / "shared.png").write_bytes(b"X")
+    rep, _ = lb.plan_sync(tmp_path / "src" / "readme", dest)
+    assert not [w for w in rep.warnings if "shared.png" in w]
+

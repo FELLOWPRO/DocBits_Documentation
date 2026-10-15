@@ -246,7 +246,14 @@ def plan_sync(source_readme: Path, dest_dir: Path) -> tuple[Report, dict[Path, P
                 rep.errors.append(f"{p}: {{% file %}} points to a missing file: {target}")
         # --- images and attachments
         for cand in ASSET_REF.findall(text):
-            hit = resolve_asset(cand, dst_assets, src_assets)
+            # Look in the BRANCH's assets first. The destination folder already
+            # holds a copy of every asset from an earlier sync, so resolving
+            # against it first made the branch's own version invisible: a
+            # re-shot screenshot with an unchanged filename never travelled
+            # across, and the page kept serving the old image. The destination
+            # is only the fallback, for an asset a page shares and the branch
+            # itself does not carry.
+            hit = resolve_asset(cand, src_assets, dst_assets)
             if hit is None:
                 rep.warnings.append(f"{p}: image not found anywhere: {cand[:50]}")
                 continue

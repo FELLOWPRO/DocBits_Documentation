@@ -35,11 +35,11 @@ Niestandardowe reguły walidacji włącza się **dla każdego typu dokumentu**. 
 3. Otwórz sekcję **Niestandardowe reguły walidacji** i włącz przełącznik.
 4. Kliknij **Zarządzaj regułami walidacji**, aby otworzyć listę reguł.
 
-<figure><img src="../../../../.gitbook/assets/doc-type-settings-rule-toggles.png" alt="Przełączniki reguł w ustawieniach dodatkowych typu dokumentu"><figcaption><p>Przełączniki Manage Layouts, Custom Validation Rules i Transformation Rules</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-toggles.png" alt="Przełączniki reguł w ustawieniach dodatkowych typu dokumentu"><figcaption><p>Przełączniki Manage Layouts, Custom Validation Rules i Transformation Rules</p></figcaption></figure>
 
-Od tej chwili karta typu dokumentu pokazuje także link **Reguły walidacji** oraz link **Logi** do dzienników wykonania.
+Od tej chwili karta typu dokumentu pokazuje także link **Reguły walidacji**.
 
-<figure><img src="../../../../.gitbook/assets/doc-types-rules-links.png" alt="Karta typu dokumentu z linkiem Reguły walidacji"><figcaption><p>Linki na karcie typu dokumentu</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-card-links.png" alt="Karta typu dokumentu z linkiem Reguły walidacji"><figcaption><p>Linki na karcie typu dokumentu</p></figcaption></figure>
 
 {% hint style="warning" %}
 **Przełącznik zastępuje wbudowane kontrole kwot.** Gdy niestandardowe reguły walidacji są włączone dla typu dokumentu, zakodowane na stałe kontrole „kwota całkowita = kwota netto + kwota podatku” oraz kontrole kwot i rabatów pozycji **nie są** dla niego uruchamiane; ich miejsce zajmują konfigurowalne reguły. Przed włączeniem odtwórz potrzebne kontrole jako reguły (zobacz [przepisy](#przepisy)). Wyłączenie przełącznika przywraca wbudowane kontrole. Wszystkie pozostałe walidacje pól (pola wymagane, formaty, dane podstawowe) nadal działają.
@@ -49,7 +49,7 @@ Od tej chwili karta typu dokumentu pokazuje także link **Reguły walidacji** or
 
 **Typy dokumentów → (typ dokumentu) → Reguły walidacji** wyświetla wszystkie reguły danego typu dokumentu.
 
-<figure><img src="../../../../.gitbook/assets/validation-rules-list.png" alt="Lista reguł walidacji"><figcaption><p>Lista reguł z poziomem, ważnością, polem docelowym i źródłem każdej reguły</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-list.png" alt="Lista reguł walidacji"><figcaption><p>Lista reguł z poziomem, ważnością, polem docelowym i źródłem każdej reguły</p></figcaption></figure>
 
 Każda karta pokazuje nazwę i opis reguły oraz plakietki jej **poziomu** (Header / Line / Table), **ważności** (Error / Warning), **pola**, do którego przypisany jest błąd, oraz jej **źródła**. Użyj przełącznika po prawej stronie, aby aktywować lub dezaktywować regułę, oraz menu **⋮**, aby ją zduplikować lub usunąć. Listę można filtrować według poziomu (**Wszystkie / Header / Line / Table**) i stanu (**Wszystkie / Aktywne / Nieaktywne**) lub przeszukiwać.
 
@@ -69,7 +69,7 @@ Kliknij **Nowa reguła**. Kreator ma trzy kroki. **Test rule** i **Save** znajdu
 
 ### Krok 1 — Nazwa i zakres
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step1.png" alt="Krok 1 kreatora reguły walidacji dla reguły pola nagłówka"><figcaption><p>Krok 1 dla reguły pola nagłówka</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step1.png" alt="Krok 1 kreatora reguły walidacji dla reguły pola nagłówka"><figcaption><p>Krok 1 dla reguły pola nagłówka</p></figcaption></figure>
 
 | Ustawienie | Co robi |
 | --- | --- |
@@ -80,7 +80,6 @@ Kliknij **Nowa reguła**. Kreator ma trzy kroki. **Test rule** i **Save** znajdu
 | **Opis** | Opcjonalne wyjaśnienie dla innych administratorów. |
 | **Nazwa tabeli** | *Tylko wiersz tabeli.* Tabela, której wiersze są sprawdzane, na przykład `INVOICE_TABLE`. |
 | **Przypisz błąd do pola / kolumny** | Pole (a dla wierszy tabeli — kolumna), które pokazuje błąd na ekranie walidacji. |
-| **Rejestruj wykonanie** | Zapisuje jeden wpis w logu dla każdej oceny, w tym informację, dlaczego reguła obowiązywała lub nie. Zobacz [Logi](#logi). |
 
 #### Poziomy reguł
 
@@ -90,17 +89,17 @@ Kliknij **Nowa reguła**. Kreator ma trzy kroki. **Test rule** i **Save** znajdu
 | **Table line** | raz dla każdego wiersza wybranej tabeli | komórce wiersza, który nie przeszedł kontroli | `row.*` (bieżący wiersz), `header.*`, `doc.*` | „Ilość musi być większa od zera” |
 | **Whole table** | raz na dokument, patrząc na wszystkie wiersze razem | polu nagłówka | sumy po wierszach (`sum()`, `count()`, `min()`, `max()`), `header.*`, `doc.*` | „Kwoty netto pozycji muszą sumować się do kwoty netto” |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-step1.png" alt="Krok 1 dla reguły wiersza tabeli"><figcaption><p>Reguła wiersza tabeli: tabela i kolumna, która pokazuje błąd</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-line-step1.png" alt="Krok 1 dla reguły wiersza tabeli"><figcaption><p>Reguła wiersza tabeli: tabela i kolumna, która pokazuje błąd</p></figcaption></figure>
 
 ### Krok 2 — Dotyczy, gdy
 
 Zdecyduj, czy reguła działa dla każdego dokumentu, czy tylko dla niektórych. Pozostaw puste, aby sprawdzać każdy dokument. W przeciwnym razie dodaj wiersze warunków — na przykład „Document Origin is Deutsch” i „Total Amount greater than 250” — i połącz je za pomocą **All** / **ANY** oraz zagnieżdżonych grup.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-nested-example.png" alt="Warunek Dotyczy, gdy"><figcaption><p>Kontrola działa tylko dla niemieckich dokumentów powyżej 250 z walutą EUR lub bez waluty</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-applies-when.png" alt="Warunek Dotyczy, gdy"><figcaption><p>Kontrola działa tylko dla niemieckich dokumentów powyżej 250 z walutą EUR lub bez waluty</p></figcaption></figure>
 
 W przypadku reguł wiersza tabeli warunek może również korzystać z kolumn bieżącego wiersza i jest oceniany **wiersz po wierszu**: wiersze, które nie pasują, po prostu nie są sprawdzane.
 
-<figure><img src="../../../../.gitbook/assets/applies-when-row-condition.png" alt="Warunek wiersza"><figcaption><p>Sprawdzane są tylko pozycje towarowe (wiersze z numerem pozycji)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-row-condition.png" alt="Warunek wiersza"><figcaption><p>Sprawdzane są tylko pozycje towarowe (wiersze z numerem pozycji)</p></figcaption></figure>
 
 Warunki są szczegółowo wyjaśnione — każde pole, operator i reguła porównania, z wieloma przykładami — na stronie [Warunki reguł (Dotyczy, gdy)](rule-conditions-applies-when.md).
 
@@ -108,9 +107,11 @@ Warunki są szczegółowo wyjaśnione — każde pole, operator i reguła porów
 
 Wybierz jedną kontrolę. Ustawienia pod kartami zmieniają się zależnie od wybranej kontroli.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-step3-required.png" alt="Krok 3 z wybraną kontrolą Required"><figcaption><p>Siedem kontroli. Required nie wymaga dalszych ustawień</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-step3-checks.png" alt="Krok 3 z wybraną kontrolą Required"><figcaption><p>Siedem kontroli. Required nie wymaga dalszych ustawień</p></figcaption></figure>
 
 #### Required — pole musi mieć wartość
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-required.png" alt="kontrola Required"><figcaption><p>Kontrola Required: bez dodatkowej konfiguracji</p></figcaption></figure>
 
 Nie przechodzi, gdy pole jest puste (brak wartości lub same spacje). Brak dalszych ustawień.
 
@@ -122,7 +123,7 @@ Użyj razem z **Dotyczy, gdy**, aby uczynić pole **warunkowo** wymaganym. Pole,
 
 Porównanie arytmetyczne. Wyrażenie zawiera dokładnie **jedno** porównanie (`==`, `!=`, `>`, `>=`, `<`, `<=`); obie strony mogą używać `+ - * /`, liczb, nawiasów i odwołań do pól.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-formula.png" alt="Kontrola Formula"><figcaption><p>Formuła całej tabeli z tolerancją i symbolami zastępczymi w komunikacie</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-formula.png" alt="Kontrola Formula"><figcaption><p>Formuła całej tabeli z tolerancją i symbolami zastępczymi w komunikacie</p></figcaption></figure>
 
 * Kliknij chipy pod wyrażeniem, aby wstawić funkcje i prefiksy pól: `sum()`, `count()`, `min()`, `max()`, `default()`, `coalesce()`, `header.`, `doc.`. Podczas wpisywania nazwy pola otwiera się lista pasujących pól.
 * `sum(row.NET_AMOUNT)`, `count(row.ITEM_NUMBER)`, `min(...)`, `max(...)` działają na wszystkich wierszach i są dostępne tylko na poziomie **Whole table**. `count()` liczy wiersze, w których kolumna jest wypełniona.
@@ -143,6 +144,8 @@ Przykłady:
 
 #### Pattern — zgodność z formatem / wyrażeniem regularnym
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-pattern.png" alt="kontrola Pattern"><figcaption><p>Kontrola Pattern z wyrażeniem regularnym</p></figcaption></figure>
+
 Wartość musi pasować do **wyrażenia regularnego**. Wyrażenie przeszukuje wartość, więc zakotwicz je za pomocą `^` (początek) i `$` (koniec), gdy musi pasować cała wartość. Zaznacz **Dopasowanie bez rozróżniania wielkości liter**, jeśli wielkość liter nie ma znaczenia.
 
 | Format | Wyrażenie regularne |
@@ -157,9 +160,11 @@ Wartość musi pasować do **wyrażenia regularnego**. Wyrażenie przeszukuje wa
 
 Wartość musi być liczbą pomiędzy **Minimum** a **Maksimum** (włącznie). Wypełnij jedno lub oba. Wartość, która nie jest liczbą, nie przechodzi kontroli. Sformatowane kwoty, takie jak `1.234,56`, są rozpoznawane.
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-line-range.png" alt="Kontrola Range"><figcaption><p>Range tylko z minimum: ilości muszą wynosić co najmniej 0,01</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-range.png" alt="Kontrola Range"><figcaption><p>Range tylko z minimum: ilości muszą wynosić co najmniej 0,01</p></figcaption></figure>
 
 #### Compare fields — np. termin płatności ≥ data faktury
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-compare.png" alt="kontrola Compare fields"><figcaption><p>Compare fields: porównanie pola z innym polem, z dniem dzisiejszym lub ze stałą wartością</p></figcaption></figure>
 
 Porównuje wartość pola z innym polem, z **dzisiejszą datą** lub ze stałą wartością, używając operatorów *równe*, *różne od*, *większe niż*, *mniejsze niż*, *w dniu lub po (≥)* albo *w dniu lub przed (≤)*. Liczby są porównywane jako liczby, a daty jako daty.
 
@@ -169,9 +174,13 @@ Porównuje wartość pola z innym polem, z **dzisiejszą datą** lub ze stałą 
 
 #### Allowed values — ze stałej listy
 
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-allowed.png" alt="kontrola Allowed values"><figcaption><p>Allowed values: jedna wartość w wierszu, opcjonalnie bez rozróżniania wielkości liter</p></figcaption></figure>
+
 Wartość musi być jedną z wpisanych przez Ciebie wartości, **jedna wartość w wierszu**. Opcjonalnie bez rozróżniania wielkości liter. Dobre dla krótkich, stabilnych list (`EUR`, `CHF`, `USD`).
 
 #### List of Values — z nazwanej listy LOV
+
+<figure><img src="../../../../.gitbook/assets/validation-cvr-an-lov.png" alt="kontrola List of Values"><figcaption><p>List of Values: wartości pochodzą z nazwanej listy z ustawień</p></figcaption></figure>
 
 Jak *Allowed values*, ale wartości pochodzą ze wspólnej **listy wartości** zarządzanej w **Ustawienia › Listy wartości**. Wybierz listę zamiast wpisywać ją ponownie; gdy lista się zmieni, reguła używa nowych wartości (po krótkim opóźnieniu wynikającym z buforowania). Liczą się tylko wartości wpisów listy, nie ich etykiety.
 
@@ -196,7 +205,7 @@ Wynik to jeden z trzech rezultatów:
 | **Rule passed** | Warunek został spełniony, a kontrola zakończyła się powodzeniem. Reguły wiersza tabeli pokazują wynik dla każdego wiersza („4 of 4 checked rows passed”). |
 | **Rule skipped — scope not matched** | Warunek *Dotyczy, gdy* był fałszywy dla tego dokumentu, więc nic nie sprawdzono i nie zgłoszono błędu. |
 
-<figure><img src="../../../../.gitbook/assets/validation-rule-test-result.png" alt="Test reguły: reguła nie przeszła"><figcaption><p>Niemiecka faktura nie ma numeru identyfikacji podatkowej dostawcy: reguła nie przechodzi ze skonfigurowanym komunikatem</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/validation-cvr-test-dialog.png" alt="Test reguły: reguła nie przeszła"><figcaption><p>Niemiecka faktura nie ma numeru identyfikacji podatkowej dostawcy: reguła nie przechodzi ze skonfigurowanym komunikatem</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/validation-rule-test-skipped.png" alt="Test reguły: reguła pominięta"><figcaption><p>Ta sama reguła z progiem podniesionym do 1000: faktura (469,18) jest poza zakresem, więc reguła jest pomijana</p></figcaption></figure>
 
@@ -213,15 +222,6 @@ Przetestuj każdą nową regułę na co najmniej jednym dokumencie, który powin
 * Ostrzeżenia są zbierane osobno i nigdy nie ukrywają błędu.
 * Jeśli reguły nie da się ocenić — na przykład z powodu dzielenia przez zero w formule — jest pomijana. Uszkodzona reguła nigdy nie oznacza dokumentu omyłkowo jako nieprawidłowego.
 
-## Logi
-
-Włącz **Rejestruj wykonanie** w regule, aby zapisywać każdą ocenę. Otwórz **Typy dokumentów → (typ dokumentu) → Logi** i wyszukuj według **klucza reguły**, **ID reguły** lub **dokumentu**; filtruj według typu reguły, wyniku i daty.
-
-<figure><img src="../../../../.gitbook/assets/rule-execution-logs.png" alt="Logi wykonania reguł"><figcaption><p>Jeden wiersz na ocenę, z wynikiem, zakresem, dokumentem i wierszem</p></figcaption></figure>
-
-Otwórz wpis, aby zobaczyć jego szczegóły, w tym **ślad warunku**: każdy wiersz *Dotyczy, gdy* z wartością oczekiwaną, rzeczywistą wartością dokumentu oraz informacją, czy warunek został spełniony. Zobacz [Odczytywanie śladu warunku](rule-conditions-applies-when.md#odczyt-sladu-warunku-w-logach).
-
-Ta sama strona pokazuje logi reguł transformacji i reguł wyboru układu.
 
 ## Przepisy
 
@@ -264,7 +264,6 @@ Header field · Error · *Purchase Order* · Dotyczy, gdy *Total Amount* greater
 * **Używaj Dotyczy, gdy zamiast kopii.** Jedna reguła z warunkiem jest lepsza niż pięć kopii dla pięciu dostawców.
 * **Bądź tolerancyjny przy kwotach.** Zawsze nadawaj formułom kwotowym tolerancję.
 * **Nazywaj reguły według reguły biznesowej**, a nie techniki („Termin płatności nie wcześniejszy niż data faktury”, a nie „Reguła porównania 3”).
-* **Wyłącz Rejestruj wykonanie**, gdy reguła działa; zapisuje wpis przy każdym zapisie.
 
 ## Rozwiązywanie problemów
 

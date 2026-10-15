@@ -44,6 +44,28 @@ La tarjeta **Orden de compra** (**Coincidencia y validación de órdenes de comp
 * [**Actualizar el estado de la orden de compra del documento**](purchase-order/update-document-purchase-order-status.md): Actualiza la columna Estado de OC en el panel cada vez que cambia el estado de la orden de compra.
 * [**Permitir exportación automática para líneas de orden de compra no coincidentes**, **Coincidencia automática y exportación visibles para** y **Utilice el importe neto de las líneas para el total coincidente visible en**](purchase-order/auto-match-and-export-options.md): Deciden quién ve los accesos directos de Auto Match & Export y qué documentos pueden exportarse automáticamente.
 
+### Ver las reglas de coincidencia como diagrama
+
+Las reglas de coincidencia de PO son más que una lista. DocBits puede dibujar el conjunto de reglas activo como un diagrama de flujo. Así ves en qué orden se intentan las reglas y dónde se detiene la coincidencia.
+
+1. En la tarjeta **Orden de compra**, activa **lado del servidor de coincidencia de PO** y haz clic en **Configurar reglas de coincidencia de órdenes de compra**.
+2. Haz clic en **Conjunto de reglas como un diagrama** en la parte superior de la página. El diagrama se abre en un panel junto a las reglas.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-es.png" alt="El diagrama del conjunto de reglas con cinco etapas, desde Single match validation hasta Fallback logic"><figcaption><p>El conjunto de reglas como diagrama. Cinco etapas, de arriba abajo.</p></figcaption></figure>
+
+Lee el diagrama de arriba abajo. DocBits prueba las etapas en este orden: **Single match validation**, **Multi match validation**, **Total match validation**, **Single mismatch validation** y **Fallback logic**. Cada etapa tiene hasta tres pasadas: **Exact match for all rules**, **Tolerance-based match** y **Package criteria**. Una flecha verde significa que se ha encontrado una coincidencia y el procesamiento se detiene. Una flecha roja significa que no hay coincidencia, así que DocBits continúa con el siguiente paso. Al final, el resultado es **Coincidencia encontrada** o **No se encontró ninguna coincidencia**.
+
+Debajo del diagrama, el panel enumera las **Reglas por prioridad, por etapa**. De cada regla ves las columnas que compara, la tolerancia y las opciones **coincidencia automática**, **coincidencia manual** y **Retroceder**.
+
+<figure><img src="../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-es.png" alt="La lista de reglas por prioridad y por etapa con las columnas comparadas, la tolerancia y las opciones de la regla"><figcaption><p>Debajo del diagrama: las reglas de cada etapa con las columnas que comparan.</p></figcaption></figure>
+
+**Ejemplo.** Una línea de factura tiene el número de artículo 4711, la cantidad 10 y el precio unitario 10.40. La línea de la orden de compra tiene el número de artículo 4711, la cantidad 10 y el precio unitario 10.00. La tolerancia para el precio unitario es del 5 %.
+
+* La pasada **1.1 Exact match for all rules** falla, porque 10.40 no es 10.00. La flecha roja lleva a la siguiente pasada.
+* La pasada **1.2 Tolerance-based match** tiene éxito. La diferencia es del 4 %, que está dentro del 5 %. La flecha verde lleva a **Coincidencia encontrada** y el procesamiento se detiene.
+
+En el diagrama, este es el camino 1.1, después 1.2 y después **Coincidencia encontrada**. Para ver el camino que siguió un solo documento, consulta [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](../../../../touchless-po-matching-diagnosis.md). Para todos los detalles de la página de reglas, consulta [Reglas de Coincidencia de Órdenes de Compra](purchase-order/purchase-order-matching-rules.md).
+
 ### Configuración de tolerancia de PO
 
 <figure><img src="../../../../../.gitbook/assets/doc-type-settings-po-tolerance-es.png" alt="El bloque Configuración de tolerancia de PO con tolerancia de cantidad y de precio unitario"><figcaption><p>Tolerancia para cantidad y precio unitario.</p></figcaption></figure>

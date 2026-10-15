@@ -158,19 +158,21 @@ Haz clic en **Ajustes avanzados** debajo de la tabla de columnas para abrir dos 
 
 **Conjunto de reglas como un diagrama** abre un panel junto a las reglas. Muestra las reglas de la versión activa como un diagrama de flujo, de modo que puedes ver en qué orden las intenta DocBits y dónde se detiene la coincidencia.
 
-<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-es.png" alt="El diagrama del conjunto de reglas con cinco etapas, desde la validación de coincidencia simple hasta la lógica de reserva"><figcaption><p>El conjunto de reglas como diagrama.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-es.png" alt="El diagrama del conjunto de reglas con cinco etapas, desde Single match validation hasta Fallback logic"><figcaption><p>El conjunto de reglas como diagrama.</p></figcaption></figure>
 
-DocBits recorre cinco etapas de arriba abajo. Cada etapa tiene hasta tres pasadas: **Coincidencia exacta para todas las reglas**, **Coincidencia basada en tolerancia** y **Criterios de paquete**. La primera pasada que encuentra una coincidencia finaliza el proceso (flecha verde). Si una pasada no encuentra ninguna coincidencia, DocBits continúa con la siguiente (flecha roja).
+DocBits recorre cinco etapas de arriba abajo. Cada etapa tiene hasta tres pasadas: **Exact match for all rules**, **Tolerance-based match** y **Package criteria**. La primera pasada que encuentra una coincidencia finaliza el proceso (flecha verde). Si una pasada no encuentra ninguna coincidencia, DocBits continúa con la siguiente (flecha roja).
 
 | Etapa | Qué hace |
 | ----- | -------- |
-| 1. Validación de coincidencia simple | Aplica las reglas de coincidencia simple por orden de prioridad. |
-| 2. Validación de coincidencia múltiple | Se ejecuta después de la coincidencia simple, para varias líneas en un lado. |
-| 3. Validación de coincidencia por total | Se ejecuta solo cuando no ha coincidido nada. Compara el total de la orden de compra con la suma de las líneas de la tabla. |
-| 4. Validación de desajuste simple | Aplica de nuevo las reglas de coincidencia simple, ignorando el precio unitario. |
-| 5. Lógica de reserva | Empareja la última línea de la orden de compra con la última línea de la tabla cuando queda exactamente una línea en cada lado. |
+| 1. Single match validation | Aplica las reglas de coincidencia simple por orden de prioridad. |
+| 2. Multi match validation | Se ejecuta después de la coincidencia simple, para varias líneas en un lado. |
+| 3. Total match validation | Se ejecuta solo cuando no ha coincidido nada. Compara el total de la orden de compra con la suma de las líneas de la tabla. |
+| 4. Single mismatch validation | Aplica de nuevo las reglas de coincidencia simple, ignorando el precio unitario. |
+| 5. Fallback logic | Empareja la última línea de la orden de compra con la última línea de la tabla cuando queda exactamente una línea en cada lado. |
 
 Debajo del diagrama, el panel enumera las reglas de cada etapa por prioridad, con las columnas que compara cada regla. Una nota en la parte superior indica de dónde proceden las tolerancias: del conjunto de reglas o, cuando `CUSTOM_RANGE_FOR_PO_TOLERANCE` está activado, de los [ajustes del tipo de documento](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-es.png" alt="La lista de reglas por prioridad y por etapa con las columnas comparadas, la tolerancia y las opciones de la regla"><figcaption><p>Debajo del diagrama: las reglas de cada etapa con las columnas que comparan, la tolerancia y las opciones coincidencia automática, coincidencia manual y Retroceder.</p></figcaption></figure>
 
 ***
 

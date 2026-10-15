@@ -14,5 +14,6 @@ La página **Validación de facturas electrónicas** (**Ajustes → Documentos e
 | [Gravedad de las reglas](validation-rule-severities.md) | La tabla de reglas: cambie la gravedad de cada regla para su organización. | Administradores de la organización |
 | [Validación para cada tipo de documento](validation-per-document-type.md) | Active la validación (**Activado**) y decida si una comprobación fallida detiene el documento (**Bloqueo**). Cada cambio necesita una confirmación. | Administradores de la organización |
 | [Registro de cambios](validation-change-log.md) | Cada cambio de los ajustes: cuándo, quién, qué regla, desde → hasta. | Administradores de la organización |
+| [La pantalla de error de una factura electrónica rechazada](validation-error-screen.md) | Lo que ve al cargar un XML incorrecto: la explicación, la línea defectuosa y el siguiente paso. | Todas las personas que procesan facturas |
 | [Informe de validación](validation-report.md) | Lo que ve un usuario cuando una factura falla: los hallazgos en lenguaje claro. Se abre desde el documento, no desde esta página. | Todas las personas que procesan facturas |
 | [Siguiente paso y rechazar un documento](validation-next-step-and-reject.md) | Qué hacer después de leer el informe, la descarga del informe y **Rechazar documento**. | Todas las personas que procesan facturas |

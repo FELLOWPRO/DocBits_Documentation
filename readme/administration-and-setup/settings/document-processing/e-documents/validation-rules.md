@@ -14,5 +14,6 @@ Strona **Walidacja e-faktury** (**Ustawienia → Dokumenty elektroniczne → Wal
 | [Wagi reguł](validation-rule-severities.md) | Tabela reguł: zmień wagę każdej reguły dla swojej organizacji. | Administratorzy organizacji |
 | [Walidacja dla każdego typu dokumentu](validation-per-document-type.md) | Włącz walidację (**Włączony**) i zdecyduj, czy nieudana kontrola zatrzymuje dokument (**Bloking**). Każda zmiana wymaga potwierdzenia. | Administratorzy organizacji |
 | [Dziennik zmian](validation-change-log.md) | Każda zmiana ustawień: kiedy, kto, jaka reguła, od → do. | Administratorzy organizacji |
+| [Ekran błędu odrzuconej e-faktury](validation-error-screen.md) | Co widzisz po wgraniu błędnego pliku XML: wyjaśnienie, błędna linia i następny krok. | Wszyscy, którzy przetwarzają faktury |
 | [Raport walidacyjny](validation-report.md) | Co widzi użytkownik, gdy faktura nie przejdzie kontroli: wyniki prostym językiem. Raport otwiera się z dokumentu, a nie z tej strony. | Wszyscy, którzy przetwarzają faktury |
 | [Następny krok i odrzucenie dokumentu](validation-next-step-and-reject.md) | Co zrobić po przeczytaniu raportu, pobieranie raportu i **Odrzuć dokument**. | Wszyscy, którzy przetwarzają faktury |

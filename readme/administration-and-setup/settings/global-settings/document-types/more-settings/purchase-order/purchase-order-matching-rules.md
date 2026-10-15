@@ -158,19 +158,21 @@ Cliquez sur **Paramètres avancés** sous le tableau des colonnes pour ouvrir de
 
 **Ensemble de règles sous forme de diagramme** ouvre un panneau à côté des règles. Il montre les règles de la version active sous forme d'organigramme, afin que vous voyiez dans quel ordre DocBits les essaie et où la correspondance s'arrête.
 
-<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-fr.png" alt="Le diagramme de l'ensemble de règles avec cinq phases, de la validation de la correspondance unique à la logique de repli"><figcaption><p>L'ensemble de règles sous forme de diagramme.</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-fr.png" alt="Le diagramme de l'ensemble de règles avec cinq phases, de Single match validation à Fallback logic"><figcaption><p>L'ensemble de règles sous forme de diagramme.</p></figcaption></figure>
 
-DocBits parcourt cinq phases de haut en bas. Chaque phase comporte jusqu'à trois passages : **Correspondance exacte pour toutes les règles**, **Correspondance basée sur la tolérance** et **Critères de paquet**. Le premier passage qui trouve une correspondance met fin au processus (flèche verte). Si un passage ne trouve aucune correspondance, DocBits poursuit avec le suivant (flèche rouge).
+DocBits parcourt cinq phases de haut en bas. Chaque phase comporte jusqu'à trois passages : **Exact match for all rules**, **Tolerance-based match** et **Package criteria**. Le premier passage qui trouve une correspondance met fin au processus (flèche verte). Si un passage ne trouve aucune correspondance, DocBits poursuit avec le suivant (flèche rouge).
 
 | Phase | Ce qu'elle fait |
 | ----- | --------------- |
-| 1. Validation de la correspondance unique | Applique les règles de correspondance simple par ordre de priorité. |
-| 2. Validation de la correspondance multiple | S'exécute après la correspondance simple, pour plusieurs lignes d'un côté. |
-| 3. Validation de la correspondance sur le total | S'exécute uniquement lorsque rien n'a été apparié. Compare le total du bon de commande avec la somme des lignes du tableau. |
-| 4. Validation de la divergence unique | Applique à nouveau les règles de correspondance simple, en ignorant le prix unitaire. |
-| 5. Logique de repli | Apparie la dernière ligne de bon de commande avec la dernière ligne du tableau lorsqu'il reste exactement une ligne de chaque côté. |
+| 1. Single match validation | Applique les règles de correspondance simple par ordre de priorité. |
+| 2. Multi match validation | S'exécute après la correspondance simple, pour plusieurs lignes d'un côté. |
+| 3. Total match validation | S'exécute uniquement lorsque rien n'a été apparié. Compare le total du bon de commande avec la somme des lignes du tableau. |
+| 4. Single mismatch validation | Applique à nouveau les règles de correspondance simple, en ignorant le prix unitaire. |
+| 5. Fallback logic | Apparie la dernière ligne de bon de commande avec la dernière ligne du tableau lorsqu'il reste exactement une ligne de chaque côté. |
 
 Sous le diagramme, le panneau répertorie les règles de chaque phase par priorité, avec les colonnes que chaque règle compare. Une remarque en haut indique d'où viennent les tolérances : de l'ensemble de règles ou, lorsque `CUSTOM_RANGE_FOR_PO_TOLERANCE` est activé, des [paramètres du type de document](purchase-order-tolerance-settings-additional-purchase-order-tolerance.md).
+
+<figure><img src="../../../../../../.gitbook/assets/po-match-rules-diagram-rules-by-stage-fr.png" alt="La liste des règles par ordre de priorité et par phase, avec les colonnes comparées, la tolérance et les options de la règle"><figcaption><p>Sous le diagramme : les règles de chaque phase avec les colonnes qu'elles comparent, la tolérance et les options Correspondance automatique, Correspondance manuelle et Retomber.</p></figcaption></figure>
 
 ***
 

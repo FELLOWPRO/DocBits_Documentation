@@ -22,10 +22,6 @@ Die Herkunft steht weiterhin zur Verfügung – als eine Bedingung unter vielen.
 | Rechnungen mit hohem Wert benötigen mehr Felder auf dem Genehmigungsbildschirm | nicht möglich | Approval-Regel *Total Amount greater than 10000* → Layout „Genehmigung hoher Beträge“ |
 | Der zweite Genehmiger soll einen anderen Bildschirm sehen als der erste | eigener Layouttyp „zweite Genehmigung“ | Approval-Regel *Document Status is Pending second approval* → Layout „Zweite Genehmigung“ |
 
-{% hint style="info" %}
-Solange sich die Funktion in der Beta-Phase befindet, erscheinen die unten beschriebenen Einstellungen nur, wenn die Einstellungsseite **Document Types** mit angehängtem `?beta=true` in der Adresse geöffnet wird.
-{% endhint %}
-
 ## Regelbasierte Layouts aktivieren
 
 Regelbasierte Layouts werden **pro Dokumenttyp** von einem **Organisationsadministrator** eingeschaltet.

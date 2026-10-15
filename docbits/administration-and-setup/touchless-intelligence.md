@@ -175,132 +175,14 @@ The button **Analyse n clusters with AI** analyses the issue clusters with the h
 
 While it runs you see **Queued**, **Running**, **Done**, **Already analysed** or **Error** for each cluster, with a link **Open cluster**. If AI is switched off or not configured in the environment, the button is disabled with the reason, and **everything else on the page keeps working**.
 
-## Supplier Diagnosis
+## Go deeper
 
-Click a supplier in the queue to open its diagnosis page.
-
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="The Supplier Diagnosis page with outcome tiles, trend and two issue clusters"><figcaption><p>The Supplier Diagnosis page: outcome tiles, trend with period selector and two issue clusters ordered by expected lift. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
-
-The page shows:
-
-* **Six outcome tiles** (Pure touchless, AP touchless, AP assisted, Process exception, In progress, Not eligible), each linked to the documents.
-* **The trend** with its own period selector: 30 days, 90 days, 6 months, 1 year or a custom range (up to two years). This changes the chart only.
-* **Issue clusters** (see below).
-* **Change history**: the changes you applied for this supplier and what they did.
-* **Recent examples**: sample documents, in two tabs: **Needed attention** and **Went touchless**.
-* **Diagnose supplier with AI**: analyses all clusters of the supplier (administrators).
-
-A short note explains an empty page, for example: *5 documents from this supplier are still being processed and have no analysis result yet.* or *All 40 completed documents from this supplier ran touchless: there is nothing to diagnose.*
-
-### Issue clusters
-
-A **cluster** groups the documents of one supplier that stopped for the **same first reason**. Instead of 40 single problems you see "3 problems".
-
-<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="An opened issue cluster card with first blocker, what to change and the change proposal"><figcaption><p>An opened cluster card: the first blocker, <strong>What to change</strong>, and a <strong>Change proposal</strong> with risk, scope and open questions. Here the cluster covers 58 documents and is worth +18.7 pp. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
-
-**Example cluster (illustrative).**
-
-* **Headline**: *Required field missing* at stage *Field Validation*
-* **Affected**: 28 documents. **Recoverable**: 28 documents. **Expected lift**: +2.8 pp
-* **Suspected cause**: the supplier prints the PO number below the table, where the extraction does not look
-* **What to change**: *Master data change*: add the layout of this supplier. **Open** takes you to the right settings page
-* **Owner**: Consultant. **Confidence**: Medium. **Source**: Hypothesis
-
-What a cluster card shows:
-
-| Part | Meaning |
+| Page | What it covers |
 | --- | --- |
-| **First blocker** and **stage** | The reason and the pipeline stage where the documents stop. There are more than 30 reasons, for example *Supplier not identified*, *Purchase order not found*, *Unit price outside PO tolerance*, *Rejected by the ERP*, *E-invoice validation failed* |
-| **Affected / Recoverable / Expected lift** | How many documents, how many can be won back, how many percentage points it would give |
-| **Suspected cause / Confirmed cause** | What DocBits thinks (or a person confirmed) is the reason |
-| **Evidence** and **Missing evidence** | What the finding is based on, and what DocBits could **not** establish. Read **Missing evidence** before you trust the rest |
-| **What to change** | Concrete steps with **Open** links to the settings. A chip tells the type: *Configuration change*, *Master data change*, *Supplier template change*, *Process change*, *Supplier action needed*, *Not fixable* |
-| **Owner** | DocBits, Customer, Consultant, Supplier or Unassigned |
-| **Sample documents** | Real documents of the cluster to look at |
-
-**Fixable in DocBits** and **Supplier action only** are shown in two groups. For *Supplier action only* nothing in DocBits changes the result: the supplier has to correct the document and send it again.
-
-### Where does a recommendation come from
-
-Every cause shows its **source**, so you can tell a derived finding from a guess:
-
-| Source | Meaning |
-| --- | --- |
-| **Deterministic** / **Rule-based** | A rule derived it from the recorded pipeline evidence. No language model was involved |
-| **Hypothesis** | A language model proposed it from the cluster evidence. Treat it as a lead and check it before you act |
-| **Confirmed** | A person reviewed the evidence and confirmed the cause |
-
-AI texts are written in your organisation's language. If a cluster was analysed in another language, use **Analyse in this language**.
-
-### PO matching decision flow
-
-For clusters about **PO matching**, the card shows how DocBits tries to match an invoice line to a purchase order line, as a diagram:
-
-1. **Single match validation**: apply the rules in order of priority
-2. **Multi match validation**: after a single match, when several lines are involved
-3. **Total match validation**: only when nothing matched at all (PO line total against the sum of the table lines)
-4. **Single mismatch validation**: the unit price is ignored
-5. **Fallback logic**: one PO line and one table line are left, so they are paired
-
-Inside the stages DocBits tries **Exact match for all rules**, then **Tolerance-based match**, then **Package criteria**. Each step asks *Match found?* **Yes** leads to **Match found**, **No match** moves on to the next step and, at the end, to **No match found**. The header lists the **rule set version**, who owns it and the **tolerances** (**Unit price tolerance**, **Quantity tolerance**).
-
-**Example.** An invoice line has a unit price of 10.40, the PO line says 10.00, the price tolerance is 5 %. The exact match fails, the tolerance match succeeds (4 % difference), the line is matched. With a tolerance of 3 % it fails, and the document stops with *Unit price outside PO tolerance*. The diagram shows exactly this path.
-
-## Change proposals: preview, apply, measure, undo
-
-A recommendation can come with a **change proposal**, a single setting change that should help. Administrators work with it in four steps:
-
-1. **Preview**: shows the change (current → proposed value) and what DocBits expects. Nothing is saved. **Apply** is only possible after you looked at a preview.
-2. **Apply**: saves exactly the previewed change. It is logged.
-3. **Measure**: DocBits compares the touchless rate of the same document type **before and after**, over equally long periods. At least **20 documents** are needed in each period, otherwise it says *not measurable*.
-4. **Undo**: takes the change back.
-
-{% hint style="warning" %}
-A before/after difference is an **observation**, not proof of cause. Other things can change at the same time (a new supplier, a seasonal peak).
-{% endhint %}
-
-**Example.** You apply *Switch on automatic PO match and export* for invoices. Two weeks later the **Change history** says: pure rate before 52 % (210 documents), after 61 % (198 documents). That is +9 pp, enough documents to be measurable.
-
-## Document Trace
-
-Enter a document ID in **Document ID**, or open a sample document from a cluster, to see **what happened to this one document**.
-
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="The Document Trace page with the 14-stage pipeline path and the stopped stage Field Validation"><figcaption><p>The Document Trace: the pipeline path with the stage where the document stopped, what that stage had in its hands, and the run history below.</p></figcaption></figure>
-
-The top shows the **pipeline path** with 14 stages: Intake, Classification, E-Document Validation, Supplier Identification, Text Recognition, Header Extraction, Table Extraction, Field Validation, PO Lookup, PO Line Match, Approval, Workflow Routing, Export, ERP Acknowledgement. Each box has a state:
-
-| State | Meaning |
-| --- | --- |
-| **passed** (green) | The stage ran fine |
-| **stopped here** (red) | The stage blocked the document |
-| **skipped or not applicable** | The stage does not apply to this document |
-| **not reached** | The document never got this far |
-| **unknown** (dashed) | Nothing was recorded for this stage |
-
-Below the path, a sentence names the cause. In the screenshot: *This document stopped at stage 8 "Field Validation", because a required field was not extracted.* The block **What this stage had in its hands** lists the facts: **Invalid field count 5** and the fields (`delivery_date`, `email`, `invoice_sub_type`, `payment_terms`, `supplier_id`), the rule (**REQUIRED**) and the validation codes. The block **Analysis** says whether it is **Rule-based** or AI-written.
-
-The **run history** below lists every run (**Run 1 · Initial run**, then each restart) with every stage and its recorded facts. If the document was corrected and restarted, a note reminds you that it **stays counted as touched**.
-
-**Example.** The documents of one supplier all stop at stage 8. In the trace you see the same five invalid fields every time. That is not an extraction problem of single documents, it is a missing default in your field configuration: fix it once and the whole cluster is recoverable.
-
-## Learned rule proposals and improvement requests
-
-Administrators also see two sections between the key figures and the charts:
-
-* **Improvement requests**: suggestions that users sent from the validation assistant, in two tabs **Open** and **History**.
-* **Learned rule proposals**: rules DocBits learned from your team's corrections, for example "for supplier X, replace the value in field Y". Before you create one, check the documents where it would replace a value your team had accepted. The section **After activation** shows the manual corrections of the target field before and after a rule went live.
-
-## Consulting report
-
-<figure><img src="../.gitbook/assets/touchless-consulting-report.png" alt="The Consulting report with the top three proposals, a ranking table and the problems by domain"><figcaption><p>The Consulting report: top proposals, a ranking of all blockers with documents and estimated impact per month, and the problems by domain. Example organisation with demo data; supplier names are fictional.</p></figcaption></figure>
-
-Administrators find the **Consulting report** at the bottom of the tab. Click **Create report** to load it. It combines, for your organisation:
-
-* the **changes with the biggest effect**, ranked, each with the domain, the problem, the recommended action, the number of documents and the **estimated** effect per month,
-* **the domain of every problem** (extraction, master data, PO matching, auto accounting, settings, process),
-* **table configuration checks**, for example *structured table output not used* or *table column type mismatch* per document type and column.
-
-The effect values are **estimates**. If the report answers *forbidden*, your role does not allow it.
+| [Supplier Diagnosis and Issue Clusters](touchless-supplier-diagnosis.md) | One supplier in detail: outcome tiles, trend, issue clusters, where a recommendation comes from |
+| [PO Matching Diagnosis](touchless-po-matching-diagnosis.md) | Why documents stop at PO lookup or PO line match, and the decision flow that shows how DocBits matches invoice lines to PO lines |
+| [Document Trace](touchless-document-trace.md) | What happened to one document, stage by stage |
+| [Change Proposals and Reports](touchless-change-proposals.md) | Preview, apply, measure and undo a change; learned rule proposals; the Consulting report |
 
 ## Work with Touchless Intelligence: a routine
 
@@ -340,9 +222,12 @@ No. AI writes explanations only. A setting changes only after an administrator p
 
 ## Related pages
 
+* [Supplier Diagnosis and Issue Clusters](touchless-supplier-diagnosis.md)
+* [PO Matching Diagnosis](touchless-po-matching-diagnosis.md)
+* [Document Trace](touchless-document-trace.md)
+* [Change Proposals and Reports](touchless-change-proposals.md)
 * [Analytics Dashboard](analytics-dashboard.md)
 * [Settings Assistant](settings/global-settings/company-information/settings-assistant.md)
 * [DocBits MCP](../advanced-functions-and-tools/docbits-mcp/README.md)
 
 <!-- Source notes (not shown): screenshots come from the dev test organisation with synthetic demo data (seed script) and fictional supplier names; the PO matching decision flow has no screenshot yet. facts read from the doc2app code (TouchlessIntelligence pages and components) and the dev UI on 14 Oct 2026; NOVA gates the tab with its own organisation flag, VESTA with the Analytics module. Consulting report export format not verified, so no export is described.
-Screenshots still to add, from an organisation WITH evaluated documents (no empty-state shots): overview with key figures, trend and bottleneck chart, supplier queue, supplier diagnosis with issue clusters, compare dialog, methodology drawer. The document trace screenshot below is real data. -->

@@ -711,6 +711,10 @@
 * [Report Page](administration-and-setup/report-page.md)
 * [Analytics Dashboard](administration-and-setup/analytics-dashboard.md)
   * [Touchless Intelligence](administration-and-setup/touchless-intelligence.md)
+    * [Supplier Diagnosis and Issue Clusters](administration-and-setup/touchless-supplier-diagnosis.md)
+    * [PO Matching Diagnosis](administration-and-setup/touchless-po-matching-diagnosis.md)
+    * [Document Trace](administration-and-setup/touchless-document-trace.md)
+    * [Change Proposals and Reports](administration-and-setup/touchless-change-proposals.md)
 
 ## Infor Integration and Configuration
 

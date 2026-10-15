@@ -4,7 +4,7 @@ L'**Assistant de paramètres** (Settings Assistant) est un panneau de discussion
 
 Il est le plus utile lorsque vous savez **ce que** vous voulez (« arrêter de scinder les documents sur les codes-barres ») mais pas **où** se trouve le paramètre, ou lorsque vous vous demandez **pourquoi** quelque chose ne se produit pas (« Pourquoi le rapprochement avec le BC n'est-il pas actif ? »).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open.png" alt="Le panneau de l'Assistant de paramètres sur le côté droit de la zone Paramètres, avec un message d'accueil pour la page actuelle, trois exemples de questions et le champ de question"><figcaption><p>L'Assistant de paramètres sur la page Informations sur l'entreprise : un message d'accueil pour la page actuelle, trois exemples de questions et le champ de question. Une carte d'avertissement apparaît au-dessus du message d'accueil lorsqu'une importation a cessé de fonctionner (voir <a href="settings-assistant-chat.md#constats-lassistant-vous-avertit">Constats</a>).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-panel-open-fr.png" alt="Le panneau de l'Assistant de paramètres sur le côté droit de la zone Paramètres, avec un message d'accueil pour la page actuelle, trois exemples de questions et le champ de question"><figcaption><p>L'Assistant de paramètres sur la page Informations sur l'entreprise : un message d'accueil pour la page actuelle, trois exemples de questions et le champ de question. Une carte d'avertissement apparaît au-dessus du message d'accueil lorsqu'une importation a cessé de fonctionner (voir <a href="settings-assistant-chat.md#constats-lassistant-vous-avertit">Constats</a>).</p></figcaption></figure>
 
 L'assistant est **désactivé par défaut**. Cette page montre où l'activer et comment l'ouvrir. Ce que vous pouvez lui demander, et ce qu'il peut modifier, est décrit dans la page [Assistant de paramètres : ce que peut faire le chat](settings-assistant-chat.md).
 
@@ -20,7 +20,7 @@ L'assistant est **désactivé par défaut**. Cette page montre où l'activer et 
 2. Ouvrez la section **Assistants**.
 3. Activez **Activer l'assistant de paramètres** (Enable the settings assistant).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch.png" alt="La section Assistants dans Informations sur l'entreprise avec les interrupteurs de l'assistant de paramètres, de l'assistant de validation et de la voix off des explications"><figcaption><p>La section Assistants. L'assistant de paramètres a son propre interrupteur. L'assistant de validation et la voix off des explications sont des fonctions distinctes.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-org-switch-fr.png" alt="La section Assistants dans Informations sur l'entreprise avec les interrupteurs de l'assistant de paramètres, de l'assistant de validation et de la voix off des explications"><figcaption><p>La section Assistants. L'assistant de paramètres a son propre interrupteur. L'assistant de validation et la voix off des explications sont des fonctions distinctes.</p></figcaption></figure>
 
 Un court message confirme **Assistant de paramètres activé** (Settings assistant enabled). Le paramètre est désactivé par défaut. Tant qu'il est désactivé, le panneau et son bouton n'apparaissent nulle part.
 
@@ -32,7 +32,7 @@ L'**Assistant de validation** de la même section est une fonction différente. 
 
 Sur chaque page de la zone Paramètres, vous trouvez un petit **bouton en forme de lampe de génie** à côté du champ de recherche des paramètres. Cliquez dessus pour **afficher** ou **masquer** l'assistant.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings.png" alt="La page Informations sur l'entreprise dans Paramètres avec la navigation des paramètres à gauche, la page au milieu et le panneau de l'Assistant de paramètres à droite"><figcaption><p>L'assistant se trouve sur le <strong>côté droit</strong> de chaque page Paramètres : la navigation à gauche, la page au milieu, l'assistant à côté. Ici sur <strong>Paramètres de l'entreprise → Informations sur l'entreprise</strong>. Le bouton pour l'afficher ou le masquer est l'icône de lampe à côté de <strong>Rechercher dans les paramètres</strong> (Search Settings) en haut de la navigation.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-company-settings-fr.png" alt="La page Informations sur l'entreprise dans Paramètres avec la navigation des paramètres à gauche, la page au milieu et le panneau de l'Assistant de paramètres à droite"><figcaption><p>L'assistant se trouve sur le <strong>côté droit</strong> de chaque page Paramètres : la navigation à gauche, la page au milieu, l'assistant à côté. Ici sur <strong>Paramètres de l'entreprise → Informations sur l'entreprise</strong>. Le bouton pour l'afficher ou le masquer est l'icône de lampe à côté de <strong>Rechercher dans les paramètres</strong> (Search Settings) en haut de la navigation.</p></figcaption></figure>
 
 * Le panneau mémorise votre choix par utilisateur, il reste donc ouvert la prochaine fois que vous revenez.
 * Sur un grand écran (1 280 pixels et plus), il se place à côté de la page. Vous pouvez faire glisser son bord pour modifier la largeur.

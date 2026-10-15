@@ -41,7 +41,7 @@ Cliquez sur une question et elle est envoyée immédiatement. Sous les trois que
 
 Vous demandez **« Comment modifier l'adresse de notre entreprise ? »**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address.png" alt="L'assistant répond avec le chemin vers l'adresse de l'entreprise et un bouton Ouvrir le paramètre"><figcaption><p>La réponse nomme l'endroit, et la carte vous donne le chemin exact et un bouton <strong>Ouvrir le paramètre</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-company-address-fr.png" alt="L'assistant répond avec le chemin vers l'adresse de l'entreprise et un bouton Ouvrir le paramètre"><figcaption><p>La réponse nomme l'endroit, et la carte vous donne le chemin exact et un bouton <strong>Ouvrir le paramètre</strong>.</p></figcaption></figure>
 
 La réponse indique où se trouve l'adresse. La carte en dessous montre le chemin (**Paramètres / Paramètres de l'entreprise**) et le bouton **Ouvrir le paramètre**. Cliquez dessus : DocBits ouvre la page, fait défiler jusqu'au paramètre et le met en évidence pendant quelques secondes.
 
@@ -49,7 +49,7 @@ La réponse indique où se trouve l'adresse. La carte en dessous montre le chemi
 
 Vous demandez **« Comment activer la détection des codes-barres ? »**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode.png" alt="L'assistant explique les trois paramètres de codes-barres et quand activer chacun"><figcaption><p>Lorsqu'un mot correspond à plusieurs paramètres, l'assistant les liste chacun avec <strong>Activer lorsque</strong> (Enable when) et <strong>Laisser désactivé lorsque</strong> (Leave off when).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-barcode-fr.png" alt="L'assistant explique les trois paramètres de codes-barres et quand activer chacun"><figcaption><p>Lorsqu'un mot correspond à plusieurs paramètres, l'assistant les liste chacun avec <strong>Activer lorsque</strong> (Enable when) et <strong>Laisser désactivé lorsque</strong> (Leave off when).</p></figcaption></figure>
 
 « Détection des codes-barres » peut désigner trois paramètres différents, l'assistant demande donc *Vouliez-vous dire : Extraction des codes QR, Attribution des codes-barres ou Scinder le document sur le code-barres ?* et explique chacun :
 
@@ -61,7 +61,7 @@ Vous demandez **« Comment activer la détection des codes-barres ? »**
 
 Vous demandez **« Pourquoi le rapprochement avec le BC n'est-il pas actif ? »**
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching.png" alt="L'assistant montre la valeur actuelle de chaque paramètre de rapprochement avec le BC"><figcaption><p>Pour une question « pourquoi », l'assistant lit votre configuration et montre chaque paramètre avec sa valeur <strong>Actuelle</strong>.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-answer-po-matching-fr.png" alt="L'assistant montre la valeur actuelle de chaque paramètre de rapprochement avec le BC"><figcaption><p>Pour une question « pourquoi », l'assistant lit votre configuration et montre chaque paramètre avec sa valeur <strong>Actuelle</strong>.</p></figcaption></figure>
 
 L'assistant lit les paramètres de votre organisation et rapporte ce qu'il a trouvé. Dans cet exemple, le rapprochement avec le BC est **activé** pour les quatre types de documents, et le paramètre **Exportation automatique si BC rapproché à 100 %** est **désactivé**, donc le rapprochement et l'exportation automatiques ne s'exécutent pas. Chaque carte affiche **Actuel : activé / désactivé** et un bouton **Ouvrir le paramètre**, pour que vous puissiez corriger tout de suite.
 
@@ -69,7 +69,7 @@ L'assistant lit les paramètres de votre organisation et rapporte ce qu'il a tro
 
 Vous ouvrez **Paramètres → Types de documents** et demandez **« Le rapprochement avec le BC est-il actif pour les factures ? »** (cette question fait aussi partie des trois suggestions de cette page).
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching.png" alt="La page Types de documents dans Paramètres avec l'Assistant de paramètres à droite, répondant que le rapprochement avec le BC est actif pour les factures et montrant trois paramètres associés"><figcaption><p>La page <strong>Types de documents</strong> avec l'assistant à droite. La réponse indique que <strong>le rapprochement avec le BC est actif pour les factures dans votre organisation</strong> et montre trois paramètres associés : <strong>Rapprochement avec le BC</strong> (Actuel : activé), les <strong>règles de rapprochement du BC</strong> et <strong>Exportation automatique si BC rapproché à 100 %</strong> (Actuel : désactivé).</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-document-types-po-matching-fr.png" alt="La page Types de documents dans Paramètres avec l'Assistant de paramètres à droite, répondant que le rapprochement avec le BC est actif pour les factures et montrant trois paramètres associés"><figcaption><p>La page <strong>Types de documents</strong> avec l'assistant à droite. La réponse indique que <strong>le rapprochement avec le BC est actif pour les factures dans votre organisation</strong> et montre trois paramètres associés : <strong>Rapprochement avec le BC</strong> (Actuel : activé), les <strong>règles de rapprochement du BC</strong> et <strong>Exportation automatique si BC rapproché à 100 %</strong> (Actuel : désactivé).</p></figcaption></figure>
 
 L'assistant lit le paramètre du type de document et ajoute les paramètres qui s'y rattachent. Dans cet exemple, le rapprochement est activé, mais l'exportation automatique après une correspondance à 100 % est désactivée, de sorte que les factures rapprochées attendent encore une personne. Chaque carte a un bouton **Ouvrir le paramètre**.
 
@@ -80,7 +80,7 @@ L'assistant lit le paramètre du type de document et ajoute les paramètres qui 
 
 Sur la page **Paramètres → Types de documents → Règles de validation personnalisées**, le panneau vous accueille pour cette page et suggère trois questions.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules.png" alt="La page Règles de validation personnalisées dans Paramètres avec la liste des règles au milieu et l'Assistant de paramètres avec trois questions suggérées à droite"><figcaption><p>La page <strong>Règles de validation personnalisées</strong> avec l'assistant à droite. La liste des règles est au milieu, les trois suggestions du panneau sont : <strong>Quelles règles de validation existent pour ce type de document ?</strong>, <strong>Comment créer une nouvelle règle de validation ?</strong> et <strong>Que se passe-t-il lorsqu'une règle de validation échoue ?</strong></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-in-custom-validation-rules-fr.png" alt="La page Règles de validation personnalisées dans Paramètres avec la liste des règles au milieu et l'Assistant de paramètres avec trois questions suggérées à droite"><figcaption><p>La page <strong>Règles de validation personnalisées</strong> avec l'assistant à droite. La liste des règles est au milieu, les trois suggestions du panneau sont : <strong>Quelles règles de validation existent pour ce type de document ?</strong>, <strong>Comment créer une nouvelle règle de validation ?</strong> et <strong>Que se passe-t-il lorsqu'une règle de validation échoue ?</strong></p></figcaption></figure>
 
 Utilisez ici l'assistant pour **trouver** le bon paramètre et pour apprendre ce que fait une règle. Pour **créer ou modifier** une règle, travaillez sur la page elle-même : voir [Règles de validation personnalisées](../document-types/custom-validation-rules.md) et [Dupliquer une règle de validation personnalisée](../document-types/duplicate-a-custom-validation-rule.md). Si l'assistant crée une règle pour vous, la règle est toujours créée **inactive**, et c'est vous qui l'activez.
 
@@ -111,7 +111,7 @@ Si une question sort de la zone des paramètres, ou si l'assistant ne trouve rie
 
 Lorsque quelque chose dans votre configuration a cessé de fonctionner, une **carte rouge** apparaît en haut du panneau. Vous n'avez pas besoin de demander. L'assistant vérifie à nouveau chaque fois que vous ouvrez le panneau et chaque fois que vous revenez à l'onglet du navigateur.
 
-<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded.png" alt="Une carte de constat développée montrant une boîte mail désactivée après trois tentatives échouées"><figcaption><p>Un constat développé : la boîte mail, son état (<strong>Désactivée</strong>), le nombre de tentatives échouées et la raison.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/settings-assistant-finding-expanded-fr.png" alt="Une carte de constat développée montrant une boîte mail désactivée après trois tentatives échouées"><figcaption><p>Un constat développé : la boîte mail, son état (<strong>Désactivée</strong>), le nombre de tentatives échouées et la raison.</p></figcaption></figure>
 
 Il existe actuellement deux contrôles :
 

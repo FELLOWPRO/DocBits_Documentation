@@ -21,7 +21,7 @@ Les administrateurs voient aussi deux sections entre les chiffres clés et les g
 * **Propositions de règles apprises** (Learned rule proposals) : des règles que DocBits a apprises des corrections de votre équipe, par exemple « pour le fournisseur X, remplacer la valeur dans le champ Y ». Avant d'en créer une, vérifiez les documents pour lesquels elle remplacerait une valeur que votre équipe avait acceptée. La section **Après l'activation** montre les corrections manuelles du champ cible avant et après la mise en service d'une règle.
 
 
-<figure><img src="../.gitbook/assets/touchless-consulting-report.png" alt="Le rapport de conseil avec les trois meilleures propositions, un tableau de classement et les problèmes par domaine"><figcaption><p>Le rapport de conseil : meilleures propositions, un classement de tous les bloqueurs avec les documents et l'impact estimé par mois, et les problèmes par domaine. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-consulting-report-fr.png" alt="Le rapport de conseil avec les trois meilleures propositions, un tableau de classement et les problèmes par domaine"><figcaption><p>Le rapport de conseil : meilleures propositions, un classement de tous les bloqueurs avec les documents et l'impact estimé par mois, et les problèmes par domaine. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 Les administrateurs trouvent le **rapport de conseil** (Consulting report) en bas de l'onglet. Cliquez sur **Créer le rapport** (Create report) pour le charger. Il combine, pour votre organisation :
 

@@ -2,7 +2,7 @@
 
 Saisissez un ID de document dans **ID du document** (Document ID), ou ouvrez un document d'exemple depuis un cluster, pour voir **ce qui est arrivé à ce document**.
 
-<figure><img src="../.gitbook/assets/touchless-document-trace.png" alt="La page Trace du document avec le parcours du pipeline en 14 étapes et l'étape arrêtée Validation des champs"><figcaption><p>La trace du document : le parcours du pipeline avec l'étape où le document s'est arrêté, ce que cette étape avait en main, et l'historique des exécutions en dessous.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-document-trace-fr.png" alt="La page Trace du document avec le parcours du pipeline en 14 étapes et l'étape arrêtée Validation des champs"><figcaption><p>La trace du document : le parcours du pipeline avec l'étape où le document s'est arrêté, ce que cette étape avait en main, et l'historique des exécutions en dessous.</p></figcaption></figure>
 
 En haut, vous voyez le **parcours du pipeline** avec 14 étapes : Réception, Classification, Validation du document électronique, Identification du fournisseur, Reconnaissance de texte, Extraction de l'en-tête, Extraction du tableau, Validation des champs, Recherche du BC, Rapprochement des lignes de BC, Approbation, Routage du workflow, Exportation, Accusé de réception de l'ERP. Chaque case a un état :
 

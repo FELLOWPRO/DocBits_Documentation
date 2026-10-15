@@ -9,7 +9,7 @@
 
 C'est un onglet du [Tableau de bord analytique](analytics-dashboard.md). Il n'ajoute aucun travail pour votre équipe : DocBits enregistre ce qui arrive à chaque document dans le pipeline de traitement et évalue le résultat toutes les 15 minutes.
 
-<figure><img src="../.gitbook/assets/touchless-overview.png" alt="L'onglet Touchless Intelligence avec cinq chiffres clés, des suggestions d'amélioration et le graphique du taux touchless"><figcaption><p>L'onglet Touchless Intelligence : chiffres clés, améliorations, le taux dans le temps et le graphique de la première perte. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-overview-fr.png" alt="L'onglet Touchless Intelligence avec cinq chiffres clés, des suggestions d'amélioration et le graphique du taux touchless"><figcaption><p>L'onglet Touchless Intelligence : chiffres clés, améliorations, le taux dans le temps et le graphique de la première perte. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 ### Ce que vous pouvez en faire
 
@@ -81,7 +81,7 @@ L'onglet affiche un **objectif** (70 % sauf si votre organisation en utilise un 
 
 Cliquez sur **Comment le touchless est calculé** (How touchless is calculated) en haut à droite pour ouvrir cette explication dans DocBits, avec les chiffres de votre propre période (documents de la période, encore en cours, exclus, mesurés).
 
-<figure><img src="../.gitbook/assets/touchless-methodology.png" alt="Le panneau Comment le touchless est calculé avec les chiffres de la période"><figcaption><p>Le panneau <strong>Comment le touchless est calculé</strong> : la formule, <strong>Vos chiffres sur cette période</strong> (Your numbers in this period ; ici 2 425 documents, 2 115 encore en cours, 310 mesurés) et la signification de chaque résultat. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-methodology-fr.png" alt="Le panneau Comment le touchless est calculé avec les chiffres de la période"><figcaption><p>Le panneau <strong>Comment le touchless est calculé</strong> : la formule, <strong>Vos chiffres sur cette période</strong> (Your numbers in this period ; ici 2 425 documents, 2 115 encore en cours, 310 mesurés) et la signification de chaque résultat. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 ### Quelle est l'actualité des chiffres
 
@@ -102,7 +102,7 @@ La **sous-organisation** que vous avez sélectionnée en haut de DocBits limite 
 
 ### Les cinq chiffres clés
 
-<figure><img src="../.gitbook/assets/touchless-kpi-cards.png" alt="Les cinq chiffres clés : Touchless pur, Touchless AP, AP assisté, Exceptions de processus et Couverture du diagnostic"><figcaption><p>Les cinq chiffres clés. Ici, le taux pur est de 50,3 % (156 documents), soit 19,7 points sous l'objectif de 70 %, et la couverture du diagnostic est de 100 %. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-kpi-cards-fr.png" alt="Les cinq chiffres clés : Touchless pur, Touchless AP, AP assisté, Exceptions de processus et Couverture du diagnostic"><figcaption><p>Les cinq chiffres clés. Ici, le taux pur est de 50,3 % (156 documents), soit 19,7 points sous l'objectif de 70 %, et la couverture du diagnostic est de 100 %. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 | Carte | Affiche | Exemple (illustratif) |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ La **sous-organisation** que vous avez sélectionnée en haut de DocBits limite 
 
 ### Taux touchless dans le temps
 
-<figure><img src="../.gitbook/assets/touchless-trend.png" alt="Graphique en courbes du taux touchless pur et touchless AP par jour avec la ligne d'objectif de 70 pour cent"><figcaption><p>Le taux par jour avec la ligne d'objectif. Ici, le taux reste entre 40 et 60 % et chute fortement à partir du 10 octobre. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-trend-fr.png" alt="Graphique en courbes du taux touchless pur et touchless AP par jour avec la ligne d'objectif de 70 pour cent"><figcaption><p>Le taux par jour avec la ligne d'objectif. Ici, le taux reste entre 40 et 60 % et chute fortement à partir du 10 octobre. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 Un graphique avec une courbe pour **Touchless pur**, une pour **Touchless AP** et la **ligne d'objectif**. Les périodes courtes affichent des points quotidiens, les périodes longues des points hebdomadaires.
 
@@ -126,7 +126,7 @@ Un graphique avec une courbe pour **Touchless pur**, une pour **Touchless AP** e
 
 ### Où le touchless est perdu en premier
 
-<figure><img src="../.gitbook/assets/touchless-blocking-stages.png" alt="Graphique en barres des documents bloqués par première étape de blocage et par motif"><figcaption><p>Documents bloqués par étape et par motif où ils se sont arrêtés en premier. Ici, <strong>Validation des champs : champ obligatoire manquant</strong> coûte le plus de documents (58), suivi de <strong>Échec du mappage d'exportation</strong> (46) et de <strong>Écart d'article du BC</strong> (27). Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-blocking-stages-fr.png" alt="Graphique en barres des documents bloqués par première étape de blocage et par motif"><figcaption><p>Documents bloqués par étape et par motif où ils se sont arrêtés en premier. Ici, <strong>Validation des champs : champ obligatoire manquant</strong> coûte le plus de documents (58), suivi de <strong>Échec du mappage d'exportation</strong> (46) et de <strong>Écart d'article du BC</strong> (27). Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 Un graphique en barres des **Documents bloqués** (Blocked documents) par étape du pipeline : la **première** étape qui a arrêté un document.
 
@@ -134,7 +134,7 @@ Un graphique en barres des **Documents bloqués** (Blocked documents) par étape
 
 ### Opportunités fournisseurs
 
-<figure><img src="../.gitbook/assets/touchless-supplier-queue.png" alt="Le tableau Opportunités fournisseurs avec volume, taux pur, documents perdus, cause racine, documents récupérables, gain attendu, confiance et statut"><figcaption><p>La file d'attente des fournisseurs (raccourcie aux quatre premières lignes). Le premier fournisseur compte 106 documents, un taux pur de 38,7 % et 65 documents récupérables ; le corriger vaut donc <strong>+21 pp</strong>. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-queue-fr.png" alt="Le tableau Opportunités fournisseurs avec volume, taux pur, documents perdus, cause racine, documents récupérables, gain attendu, confiance et statut"><figcaption><p>La file d'attente des fournisseurs (raccourcie aux quatre premières lignes). Le premier fournisseur compte 106 documents, un taux pur de 38,7 % et 65 documents récupérables ; le corriger vaut donc <strong>+21 pp</strong>. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 La file d'attente répond à la question **« Quel fournisseur devons-nous corriger en premier ? »** Elle est triée par documents **Récupérables**, du plus élevé au plus bas, avec 25 lignes par page.
 
@@ -161,7 +161,7 @@ Utilisez le champ de recherche (« Rechercher un numéro ou un nom de fournisseu
 
 ### Comparer les fournisseurs
 
-<figure><img src="../.gitbook/assets/touchless-compare-suppliers.png" alt="La page Comparer les fournisseurs avec trois fournisseurs côte à côte et un graphique en barres de leurs résultats"><figcaption><p>Trois fournisseurs côte à côte : taux pur, documents perdus et récupérables, cause racine, gain attendu et un graphique en barres des résultats. Chaque bouton <strong>Ouvrir</strong> mène au Diagnostic fournisseur. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-compare-suppliers-fr.png" alt="La page Comparer les fournisseurs avec trois fournisseurs côte à côte et un graphique en barres de leurs résultats"><figcaption><p>Trois fournisseurs côte à côte : taux pur, documents perdus et récupérables, cause racine, gain attendu et un graphique en barres des résultats. Chaque bouton <strong>Ouvrir</strong> mène au Diagnostic fournisseur. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 Cliquez sur **Comparer les fournisseurs**, cochez **deux à cinq** fournisseurs (chacun est listé avec son nombre de documents bloqués) et cliquez sur **Comparer**.
 

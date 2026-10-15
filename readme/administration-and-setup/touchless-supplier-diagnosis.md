@@ -3,7 +3,7 @@
 
 Cliquez sur un fournisseur dans la file d'attente pour ouvrir sa page de diagnostic.
 
-<figure><img src="../.gitbook/assets/touchless-supplier-detail.png" alt="La page Diagnostic fournisseur avec des tuiles de résultats, la tendance et deux clusters de problèmes"><figcaption><p>La page Diagnostic fournisseur : tuiles de résultats, tendance avec sélecteur de période et deux clusters de problèmes classés par gain attendu. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-supplier-detail-fr.png" alt="La page Diagnostic fournisseur avec des tuiles de résultats, la tendance et deux clusters de problèmes"><figcaption><p>La page Diagnostic fournisseur : tuiles de résultats, tendance avec sélecteur de période et deux clusters de problèmes classés par gain attendu. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 La page affiche :
 
@@ -20,7 +20,7 @@ Une courte note explique une page vide, par exemple : *5 documents de ce fournis
 
 Un **cluster** regroupe les documents d'un fournisseur qui se sont arrêtés pour le **même premier motif**. Au lieu de 40 problèmes isolés, vous voyez « 3 problèmes ».
 
-<figure><img src="../.gitbook/assets/touchless-issue-cluster.png" alt="Une carte de cluster de problèmes ouverte avec le premier bloqueur, que modifier et la proposition de modification"><figcaption><p>Une carte de cluster ouverte : le premier bloqueur, <strong>Que modifier</strong> (What to change) et une <strong>Proposition de modification</strong> (Change proposal) avec risque, périmètre et questions ouvertes. Ici, le cluster couvre 58 documents et vaut +18,7 pp. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/touchless-issue-cluster-fr.png" alt="Une carte de cluster de problèmes ouverte avec le premier bloqueur, que modifier et la proposition de modification"><figcaption><p>Une carte de cluster ouverte : le premier bloqueur, <strong>Que modifier</strong> (What to change) et une <strong>Proposition de modification</strong> (Change proposal) avec risque, périmètre et questions ouvertes. Ici, le cluster couvre 58 documents et vaut +18,7 pp. Organisation d'exemple avec des données de démonstration ; les noms de fournisseurs sont fictifs.</p></figcaption></figure>
 
 **Exemple de cluster (illustratif).**
 

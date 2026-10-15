@@ -4,7 +4,7 @@ Diese Seite erklärt den Setup-Assistenten, die akzeptierten XRechnung-Versionen
 
 ## Validierungs-Setup
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_setup.png" alt="Validierungs-Setup und akzeptierte Versionen"><figcaption><p>Validierungs-Setup und akzeptierte XRechnung-Versionen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-setup-versions-de.png" alt="Validierungs-Setup und akzeptierte Versionen"><figcaption><p>Validierungs-Setup und akzeptierte XRechnung-Versionen</p></figcaption></figure>
 
 Die Karte **Validierungs-Setup** zeigt Ihr aktuelles Validierungsprofil (zum Beispiel *B2G – Public Sector Receiver*). Klicken Sie auf **Antworten bearbeiten**, um den Setup-Assistenten erneut auszuführen und den Standard zu ändern, gegen den validiert wird.
 
@@ -14,7 +14,7 @@ Das Gate **Akzeptierte XRechnung-Versionen** listet jede XRechnung-Version auf. 
 
 ## Akzeptierte Profile und Schweregrad-Modell
 
-<figure><img src="../../../../.gitbook/assets/edoc_validation_rules_severity.png" alt="Akzeptierte Profile und Schweregrad-Legende"><figcaption><p>Akzeptierte Profile und die Bedeutung der Schweregrade</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/einvoice-profiles-severity-de.png" alt="Akzeptierte Profile und Schweregrad-Legende"><figcaption><p>Akzeptierte Profile und die Bedeutung der Schweregrade</p></figcaption></figure>
 
 Wählen Sie über **Alle akzeptieren** / **Leeren** und anschließend **Speichern**, welche **Profile** Sie akzeptieren (BASIC WL, BASIC, EN 16931 / COMFORT, EXTENDED, XRECHNUNG (CIUS)).
 

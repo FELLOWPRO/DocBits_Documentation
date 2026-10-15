@@ -122,6 +122,7 @@
 
 ## Administration and Setup
 
+* [Choose the Right Automation](administration-and-setup/choose-the-right-automation.md)
 * [Settings](administration-and-setup/settings/README.md)
   * [Getting Around the New Layout](administration-and-setup/settings/ui-redesign-guide.md)
   * [Global Settings](administration-and-setup/settings/global-settings/README.md)

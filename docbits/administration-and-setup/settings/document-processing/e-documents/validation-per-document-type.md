@@ -1,6 +1,6 @@
 # Validation for each document type
 
-Administrators decide for each document type whether DocBits validates incoming e-invoices and whether a failed check blocks the document. Every change is confirmed and written to a change log.
+Administrators decide for each document type whether DocBits validates incoming e-invoices and whether a failed check blocks the document. Every change is confirmed and written to the [change log](validation-change-log.md).
 
 > Only **organisation administrators** can change these settings. Other users see the table read-only, or do not see it.
 
@@ -29,28 +29,10 @@ If a document type has sub-type overrides, the table shows a note about them.
 
 If you do not have the permission, DocBits shows a message that an organisation administrator is required, and nothing changes.
 
-## Change log
-
-The tab **Change log** lists every change.
-
-<figure><img src="../../../../.gitbook/assets/einvoice-validation-change-log.png" alt="The Change log tab with the columns When, Who, Rule, From to To and Action"><figcaption><p>The change log of an organisation without changes yet</p></figcaption></figure>
-
-| Column | What it shows |
-| --- | --- |
-| **When** | The time of the change. |
-| **Who** | The user who made the change. |
-| **Rule** | The setting or rule that changed. |
-| **From → To** | The old and the new value. |
-| **Action** | The kind of change. Rows from the setup wizard can be opened to see the single changes. |
-
-The list shows 50 entries on each page.
-
-## Setup wizard
-
-The card **Validation Setup** further down the page opens a wizard with **Edit answers**. The wizard replaces the whole set of rule overrides of your organisation. DocBits warns you before you save. Check the **Review and apply** step carefully.
-
 ## Related pages
 
 * [E-Invoice Validation](validation-rules.md)
+* [Change log](validation-change-log.md)
+* [Validation setup and accepted versions](validation-setup.md)
 * [Validation report](validation-report.md)
 * [Enable or disable e-invoice validation](README.md#enable-or-disable-e-invoice-validation)

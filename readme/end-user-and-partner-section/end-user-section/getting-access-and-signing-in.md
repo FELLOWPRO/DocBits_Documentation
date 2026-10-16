@@ -46,6 +46,8 @@ Después de enviar el formulario, DocBits muestra una página de confirmación y
 
 ## Contraseña olvidada
 
+DocBits almacena las contraseñas como hashes unidireccionales con sal. Una contraseña existente no se puede recuperar a partir de su hash, por lo que este procedimiento establece una nueva. Consulte [Almacenamiento seguro de credenciales](../../overview-and-basics/secure-storage-of-credentials.md).
+
 Si olvidaste tu contraseña:
 
 1. En la pantalla de inicio de sesión, haz clic en **¿Has olvidado tu contraseña?**.

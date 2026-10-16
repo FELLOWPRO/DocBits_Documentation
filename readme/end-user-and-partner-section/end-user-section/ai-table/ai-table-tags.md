@@ -1,150 +1,54 @@
-# Tags de Tabela de IA
+# Tags e instruções da tabela de IA
 
-### Instruções passo a passo sobre como adicionar tags a uma tabela:
+As tags são a forma de dizer à IA o que fazer com uma tabela. No cartão **Instruções para a IA** abaixo da tabela de IA (veja [Tabela de IA](README.md)), você fornece dois tipos de tags:
 
-**Passo 1:** Escolha os nomes das colunas (tags)
+| Tipo | Onde você o informa | O que a IA faz com ele |
+| --- | --- | --- |
+| **Instrução** | **Prompt para a IA**, uma instrução por linha | Segue-a ao ler a tabela, por exemplo, como calcular ou qual termo usar. |
+| **Coluna** | **Colunas adicionais para a IA** | Deve retornar essa coluna além das habituais, mesmo que o documento não a rotule com clareza. |
 
-* **Selecione os nomes das colunas:** Revise os nomes das colunas da sua tabela e decida quais tags adicionar.
+Ambos são armazenados juntos como as tags de IA do fornecedor quando você usa **Salvar como treinamento**.
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-prompt-filled-pt.png" alt="Uma linha de prompt digitada no cartão Instruções para a IA"><figcaption><p>Uma instrução por linha em <strong>Prompt para a IA</strong>.</p></figcaption></figure>
 
-**Passo 2:** Pressione o botão "Aplicar"
+## Adicionar tags passo a passo
 
-* **Pressione o botão:** Depois de selecionar a tag apropriada para uma coluna, pressione o botão "Aplicar" ao lado da coluna e tag selecionadas.
+1. Abra o documento na tela de validação e permaneça na aba **Tabela extraída de IA**.
+2. Em **Prompt para a IA**, escreva o que a IA deve fazer, uma instrução por linha. Digite **@** para inserir uma coluna da sua configuração.
+3. Ou abra **Colunas adicionais para a IA** e escolha as colunas que a IA deve retornar.
+4. Não sabe o que escrever? Clique em **Sugerir com o Nexus** e use **Inserir** ou **Add column** em uma sugestão.
+5. Clique em **Alteração de teste** para comparar o resultado com a tabela atual. Nada é gravado ainda.
+6. Gostou? Clique em **Aplicar** (ou **Aplique o resultado a este documento.** na caixa de diálogo de teste) para colocar o resultado neste documento.
+7. Se todos os documentos deste fornecedor precisarem disso, clique em **Salvar como treinamento**. **Excluir** remove as tags e as regras salvas do layout do fornecedor.
 
-**Passo 3:** Adicione a tag à tabela
+{% hint style="info" %}
+Toda linha em **Prompt para a IA** é uma instrução, mesmo que seja uma única palavra (o DocBits adiciona um ponto final para que a IA não a confunda com o nome de uma coluna). As colunas pertencem a **Colunas adicionais para a IA**.
+{% endhint %}
 
-* **Adicione a tag:** A tag selecionada será adicionada à tabela como uma coluna adicional ao lado da coluna correspondente.
+## Como escrever boas instruções
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags2.png" alt=""><figcaption></figcaption></figure>
+* **Cite a coluna e o termo usado no documento.** *Preencha a coluna Valor do desconto com a coluna chamada "Rabatt".* funciona melhor do que *encontre o desconto*.
+* **Uma coisa por linha.** Linhas curtas são mais fáceis de testar e de remover.
+* **Descreva os cálculos de forma simples.** *O preço unitário é o valor líquido dividido pela quantidade.*
+* **Diga o que deve ser deixado como está.** *Ignore as linhas de frete no final da tabela.*
+* **Verifique a tabela inteira.** Um prompt alterado executa a IA novamente e pode mudar todas as colunas.
+* **Não repita o que já é conhecido.** Uma tag de coluna que duplica outra tag, ou que é igual a um campo de cabeçalho, é ignorada.
 
-**Passo 4:** Salvar ou Excluir Tag
+## Exemplos
 
-* **Salvar Tag**: Pressione o botão Salvar para salvar a tag desejada
-* **Excluir Tag:** Para excluir a tag selecionada, pressione o botão Excluir
+| Problema | Tag |
+| --- | --- |
+| A coluna de desconto fica vazia | Coluna adicional **Valor do desconto** e a instrução *Preencha a coluna Valor do desconto com a coluna chamada "Rabatt".* |
+| Quantidade e unidade estão na mesma célula | *Coloque o número em Quantidade e a unidade de medida em Unidade.* |
+| O preço unitário não está impresso | *O preço unitário é o valor líquido dividido pela quantidade.* |
+| As datas devem estar no formato ISO | *Escreva todas as datas como YYYY-MM-DD.* |
+| Valores em moeda estrangeira | *Arredonde todos os valores para duas casas decimais.* |
 
-### Aqui está uma explicação detalhada de cada coluna e as possíveis tags:
+As colunas que você pode escolher são as colunas de tabela configuradas para o tipo de documento, veja [Colunas da tabela](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md).
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags3.png" alt="" width="375"><figcaption></figcaption></figure>
+## Antes de salvar
 
-### **Posição:**
-
-**Descrição:** Posição ou ordem do item dentro do pedido.
-
-**Tag:** Inteiro
-
-**Exemplo:** 1, 2, 3...
-
-### **Descrição:**
-
-**Descrição:** Breve descrição do item.
-
-**Tag:** Texto
-
-**Exemplo:** Parafuso, Porca, Widget...
-
-### Pedido de Compra:
-
-**Descrição:** O número do pedido associado.
-
-**Tag:** Alfanumérico
-
-**Exemplo:** PO12345, PO98765...
-
-### Quantidade:
-
-**Descrição:** Número de unidades solicitadas.
-
-**Tag:** Número
-
-**Exemplo:** 100, 50, 200...
-
-### Unidade:
-
-**Descrição:** Unidade de medida (por exemplo, peça, quilograma).
-
-**Tag:** Texto
-
-**Exemplo:** Pçs, kg, l...
-
-### Preço Unitário:
-
-**Descrição:** Preço por unidade do item.
-
-**Tag:** Moeda
-
-**Exemplo:** €10,00, €5,50, €100,00...
-
-### Valor Líquido:
-
-**Descrição:** Preço total antes de deduções e impostos (calculado como quantidade \* preço unitário).
-
-**Tag:** Moeda
-
-**Exemplo:** €1.000,00, €275,00, €10.000,00...
-
-### Desconto:
-
-**Descrição:** Valor absoluto do desconto aplicado ao valor líquido.
-
-**Tag:** Moeda
-
-**Exemplo:** €50,00, €20,00, €500,00...
-
-### Percentual de Desconto:
-
-**Descrição:** Percentual de desconto aplicado ao valor líquido.
-
-**Tag:** Percentagem
-
-**Exemplo:** 5%, 10%, 15%...
-
-### IVA:
-
-**Descrição:** Valor do IVA aplicado ao item.
-
-**Tag:** Moeda
-
-**Exemplo:** €200,00, €55,00, €1.900,00...
-
-### Valor Total:
-
-**Descrição**: Valor final após o desconto ser deduzido e o IVA ser adicionado.
-
-**Tag:** Moeda
-
-**Exemplo:** €1.150,00, €310,00, €11.400,00...
-
-### País de Origem:
-
-**Descrição:** País onde o item foi fabricado ou enviado.
-
-**Tag:** Texto
-
-**Exemplo:** EUA, Alemanha, China...
-
-### Número do Item:
-
-**Descrição:** Identificador único ou SKU para o item.
-
-**Tag:** Alfanumérico
-
-**Exemplo:** 987654, A12345, Z98765...
-
-### Número da Nota de Entrega:
-
-**Descrição:** Número da nota de entrega associada.
-
-**Tag:** Alfanumérico
-
-**Exemplo:** DN56789, DN12345...
-
-### Frase (informações adicionais):
-
-**Descrição:** Comentários adicionais, códigos ou informações relevantes.
-
-**Tag:** Texto
-
-**Exemplo:** Comentário, Especificação...
-
-Com essa estrutura e tags, a tabela é mais claramente definida e as informações podem ser melhor categorizadas e processadas.
+* Use **Alteração de teste** primeiro. Ela nunca grava nada.
+* **Salvar como treinamento** vale para o layout do fornecedor, de modo que os próximos documentos são lidos com as suas tags. Verifique, no próximo documento, se o chip indica **Treinamento aplicado**.
+* Se **Salvar regras de extração (somente administrador)** estiver ativada, peça a um administrador da organização para salvar.
+* As tags mudam a forma como a IA lê a tabela. Para posições de coluna estáveis em um layout recorrente, [treine a tabela](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).

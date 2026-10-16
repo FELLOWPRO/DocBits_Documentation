@@ -4,10 +4,10 @@ name: Sync Language Folders
 # spaces import.
 #
 # The translation team and the nightly docs bots merge German, Spanish, ...
-# pages into the language branches (de, es, fr, it, pt, pl, nl) under
+# pages into the language branches (de, es, fr, it, pt, pl, nl, zh) under
 # `readme/`. The GitBook language spaces use Git Sync "GitHub -> GitBook"
 # on `main` and import `deutsch/`, `espanol/`, `french/`, `italian/`,
-# `portuguese/`, `polish/`, `dutch/`. Nothing carried a merged translation
+# `portuguese/`, `polish/`, `dutch/`, `chinese/`. Nothing carried a merged translation
 # from the branch to that folder, so it never reached GitBook.
 #
 # This workflow mirrors, per language, the pages listed in the branch's
@@ -44,7 +44,7 @@ on:
   workflow_dispatch:
     inputs:
       lang:
-        description: "Only this language (de, es, fr, it, pt, pl, nl); empty = all"
+        description: "Only this language (de, es, fr, it, pt, pl, nl, zh); empty = all"
         required: false
         default: ""
 
@@ -80,8 +80,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          declare -A FOLDER=( [de]=deutsch [es]=espanol [fr]=french [it]=italian [pt]=portuguese [pl]=polish [nl]=dutch )
-          LANGS="de es fr it pt pl nl"
+          declare -A FOLDER=( [de]=deutsch [es]=espanol [fr]=french [it]=italian [pt]=portuguese [pl]=polish [nl]=dutch [zh]=chinese )
+          LANGS="de es fr it pt pl nl zh"
           if [ -n "${ONLY_LANG}" ]; then LANGS="${ONLY_LANG}"; fi
 
           failed=""

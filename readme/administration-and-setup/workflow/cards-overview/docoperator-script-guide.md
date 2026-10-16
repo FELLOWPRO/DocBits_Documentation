@@ -131,14 +131,14 @@ Find supplier "{supplier_code}"
 **脚本定义：**
 
 ```
-Step 1: Open website https://prices.supplier-xyz.com
-Step 2: Click on "Product Lookup"
-Step 3: Enter product code: ABC-123
-Step 4: Click "Search"
-Step 5: Wait for results to load (3 seconds)
-Step 6: Extract price from the page
-Step 7: Extract available quantity
-Step 8: Return both values
+步骤 1：打开网站 https://prices.supplier-xyz.com
+步骤 2：点击“Product Lookup”
+步骤 3：输入产品代码：ABC-123
+步骤 4：点击“Search”
+步骤 5：等待结果加载（3 seconds）
+步骤 6：从页面提取价格
+步骤 7：提取可用数量
+步骤 8：返回这两个值
 ```
 
 **传入的变量：**

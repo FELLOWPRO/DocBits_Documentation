@@ -114,15 +114,15 @@ Group: [Select which group]
 #### 区别
 
 ```
-Individual Assignment:
-- One person responsible
-- That person sees "Assigned to Me"
-- Others don't see assignment
+个人分配：
+- 由一个人负责
+- 此人会看到“Assigned to Me”
+- 其他人看不到该分配
 
-Group Assignment:
-- Team responsible
-- All members see "Assigned to My Group"
-- Anyone can claim/process
+群组分配：
+- 由团队负责
+- 所有成员都会看到“Assigned to My Group”
+- 任何人都可以认领/处理
 ```
 
 ***
@@ -143,16 +143,16 @@ Group Assignment:
 #### 工作方式
 
 ```
-Decision Table Logic:
-  If Supplier = "ABC Corp" → Assign to: Procurement Team
-  If Supplier = "XYZ Inc" → Assign to: Direct Manager
-  If Amount > €10000 → Assign to: Finance Director
+决策表逻辑：
+  如果供应商 = "ABC Corp" → 分配给：采购团队
+  如果供应商 = "XYZ Inc" → 分配给：直属经理
+  如果金额 > €10000 → 分配给：财务总监
 
-Document arrives
+文档到达
     ↓
-Check: Which condition matches?
+检查：匹配哪个条件？
     ↓
-Assign accordingly
+据此分配
 ```
 
 #### 示例：按金额分配
@@ -235,19 +235,19 @@ Each must complete before next begins
 #### 示例：多级审批
 
 ```
-Invoice: €50,000
+发票：€50,000
 
-Decision Table:
-  €1k-€5k → Assign to: Finance Manager (Priority 1)
-  €5k-€20k → Then: Assign to: Finance Director (Priority 2)
-  €20k+ → Then: Assign to: CFO (Priority 3)
+决策表：
+  €1k-€5k → 分配给：财务经理（优先级 1）
+  €5k-€20k → 然后：分配给：财务总监（优先级 2）
+  €20k+ → 然后：分配给：CFO（优先级 3）
 
-Invoice Flow:
-1. Finance Manager reviews → approves
-2. Finance Director reviews → approves
-3. CFO reviews → approves final
+发票流程：
+1. 财务经理审核 → 批准
+2. 财务总监审核 → 批准
+3. CFO 审核 → 最终批准
 
-Each step depends on previous completion
+每个步骤都取决于上一步是否完成
 ```
 
 #### 参数
@@ -324,21 +324,21 @@ Step 3: Assign to Group C (Procurement)
 #### 示例
 
 ```
-New Supplier Onboarding:
+新供应商入驻：
 
-Step 1: Quality Team
-  - Evaluate supplier capability
-  - Check certifications
+步骤 1：质量团队
+  - 评估供应商能力
+  - 检查认证
 
-Step 2: Finance Team
-  - Check payment terms
-  - Verify pricing
+步骤 2：财务团队
+  - 检查付款条款
+  - 验证定价
 
-Step 3: Procurement Team
-  - Approve supplier
-  - Set up in system
+步骤 3：采购团队
+  - 批准供应商
+  - 在系统中设置
 
-Document passes through all three
+文档会依次经过全部三个步骤
 ```
 
 ***
@@ -388,14 +388,14 @@ Munich warehouse processes shipment
 #### 示例
 
 ```
-Manufacturing Order:
+制造订单：
 
-Step 1: Factory A (Manufacturing) - Build product
-Step 2: Quality Center (Testing) - Test product
-Step 3: Distribution Center (Packing) - Package
-Step 4: Warehouse (Storage) - Store
+步骤 1：Factory A（制造）- 制造产品
+步骤 2：Quality Center（测试）- 测试产品
+步骤 3：Distribution Center（包装）- 包装产品
+步骤 4：Warehouse（存储）- 存放产品
 
-Document/shipment passes through each
+文档/货物会依次经过每个环节
 ```
 
 ***

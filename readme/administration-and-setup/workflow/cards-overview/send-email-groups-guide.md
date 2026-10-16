@@ -68,21 +68,21 @@
 **模板示例：**
 
 ```
-Subject: Document {document_number} requires review
+主题：文档 {document_number} 需要审核
 
-Body:
-Dear Team,
+正文：
+团队您好：
 
-A new invoice has arrived and requires review:
-- Document: {document_number}
-- Supplier: {supplier_name}
-- Amount: {amount} {currency}
-- Date: {date}
+收到一张新发票，需要审核：
+- 文档：{document_number}
+- 供应商：{supplier_name}
+- 金额：{amount} {currency}
+- 日期：{date}
 
-Please login to DocBits to review.
+请登录 DocBits 进行审核。
 
-Best regards,
-DocBits Automation
+此致，
+DocBits 自动化
 ```
 
 ### 群组
@@ -131,64 +131,64 @@ DocBits Automation
 ### 模板 1：高金额发票提醒
 
 ```
-Subject: High-Value Invoice Alert - {document_number}
+主题：高金额发票提醒 - {document_number}
 
-Body:
-Team,
+正文：
+团队您好：
 
-An invoice exceeding €10,000 has been received:
+收到一张金额超过 €10,000 的发票：
 
-Document Number: {document_number}
-Supplier: {supplier_name}
-Amount: {amount} EUR
-Received Date: {date}
-Status: {status}
+文档编号：{document_number}
+供应商：{supplier_name}
+金额：{amount} EUR
+接收日期：{date}
+状态：{status}
 
-This requires immediate review and approval.
+此事项需要立即审核并批准。
 
 ---
-Sent automatically by DocBits
+由 DocBits 自动发送
 ```
 
 ### 模板 2：供应商状态变更
 
 ```
-Subject: Supplier Status Update - {supplier_name}
+主题：供应商状态更新 - {supplier_name}
 
-Body:
-Procurement Team,
+正文：
+采购团队您好：
 
-The following supplier's status has been updated:
+以下供应商的状态已更新：
 
-Supplier: {supplier_name}
-Supplier Code: {supplier_code}
-New Status: {status}
-Effective Date: {date}
+供应商：{supplier_name}
+供应商代码：{supplier_code}
+新状态：{status}
+生效日期：{date}
 
-Please update your systems accordingly.
+请相应地更新您的系统。
 
 ---
-Sent automatically by DocBits
+由 DocBits 自动发送
 ```
 
 ### 模板 3：文档已准备好导出
 
 ```
-Subject: Document Approved for Export - {document_number}
+主题：文档已批准，可供导出 - {document_number}
 
-Body:
-Export Team,
+正文：
+导出团队您好：
 
-The following document has been approved and is ready for export:
+以下文档已获批准，可以导出：
 
-Document Number: {document_number}
-Invoice Number: {invoice_number}
-Supplier: {supplier_name}
+文档编号：{document_number}
+发票编号：{invoice_number}
+供应商：{supplier_name}
 
-Please proceed with export to {destination_system}.
+请继续将其导出到 {destination_system}。
 
 ---
-Sent automatically by DocBits
+由 DocBits 自动发送
 ```
 
 ***
@@ -312,19 +312,19 @@ Next steps: {next_steps}
 ### 可用占位符
 
 ```
-{document_number} - Document ID
-{invoice_number} - Invoice ID
-{supplier_name} - Supplier name
-{supplier_code} - Supplier code
-{amount} - Invoice amount
-{currency} - Currency (EUR, USD, etc.)
-{date} - Document date
-{status} - Current status
-{assigned_user} - Assigned person
-{assigned_group} - Assigned group
-{next_steps} - What needs to happen next
-{reason} - Reason for exception/alert
-{comment} - Comments or notes
+{document_number} - 文档 ID
+{invoice_number} - 发票 ID
+{supplier_name} - 供应商名称
+{supplier_code} - 供应商代码
+{amount} - 发票金额
+{currency} - 货币（EUR、USD 等）
+{date} - 文档日期
+{status} - 当前状态
+{assigned_user} - 指派人员
+{assigned_group} - 指派组
+{next_steps} - 接下来需要执行的操作
+{reason} - 异常/提醒原因
+{comment} - 评论或备注
 ```
 
 ### 创建自定义占位符

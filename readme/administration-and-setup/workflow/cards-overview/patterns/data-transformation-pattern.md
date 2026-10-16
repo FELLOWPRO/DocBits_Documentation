@@ -53,11 +53,11 @@
 **数学运算：**
 
 ```
-- Addition: Quantity + Bonus_Quantity = Total_Quantity
-- Subtraction: Invoice_Total - Tax_Amount = Net_Amount
-- Multiplication: Quantity × Unit_Price = Line_Total
-- Division: Total_Amount / Quantity = Unit_Price
-- Percentage: (Discount / Subtotal) × 100 = Discount_Percent
+- 加法：Quantity + Bonus_Quantity = Total_Quantity
+- 减法：Invoice_Total - Tax_Amount = Net_Amount
+- 乘法：Quantity × Unit_Price = Line_Total
+- 除法：Total_Amount / Quantity = Unit_Price
+- 百分比：(Discount / Subtotal) × 100 = Discount_Percent
 ```
 
 ### 2. 字符串操作
@@ -366,20 +366,20 @@ Store in: GL_Account
 **示例：**
 
 ```
-Line 1:
-  Product Category: "Office Supplies"
-  Lookup → GL_Account_Mapping table
-  Result: GL Account "4200-100" (Office Expense)
+行项目 1：
+  产品类别: "Office Supplies"
+  查询 → GL_Account_Mapping 表
+  结果: 总账科目 "4200-100" (办公费用)
 
-Line 2:
-  Product Category: "IT Equipment"
-  Lookup → GL_Account_Mapping table
-  Result: GL Account "6100-200" (IT Assets)
+行项目 2：
+  产品类别: "IT Equipment"
+  查询 → GL_Account_Mapping 表
+  结果: 总账科目 "6100-200" (IT 资产)
 
-Line 3:
-  Product Category: "Services"
-  Lookup → GL_Account_Mapping table
-  Result: GL Account "5000-300" (Services Expense)
+行项目 3：
+  产品类别: "Services"
+  查询 → GL_Account_Mapping 表
+  结果: 总账科目 "5000-300" (服务费用)
 ```
 
 **指南参考：** [字段操作指南 - 主数据](../field-manipulation-guide.md)
@@ -502,33 +502,33 @@ For each line:
 **场景：** 应用批量折扣和提前付款折扣
 
 ```
-Original Subtotal: €10,000.00
+原始小计: €10,000.00
 
-Step 1: Volume Discount (10% for orders > €5,000)
-  Discount = €10,000.00 × 0.10 = €1,000.00
-  After Volume Discount = €10,000.00 - €1,000.00 = €9,000.00
+步骤 1：批量折扣（订单金额 > €5,000 时折扣 10%）
+  折扣 = €10,000.00 × 0.10 = €1,000.00
+  扣除批量折扣后 = €10,000.00 - €1,000.00 = €9,000.00
 
-Step 2: Early Payment Discount (2% if paid within 10 days)
-  Discount = €9,000.00 × 0.02 = €180.00
-  After Payment Discount = €9,000.00 - €180.00 = €8,820.00
+步骤 2：提前付款折扣（10 天内付款时折扣 2%）
+  折扣 = €9,000.00 × 0.02 = €180.00
+  扣除付款折扣后 = €9,000.00 - €180.00 = €8,820.00
 
-Step 3: Calculate Tax (on discounted amount)
-  Tax = €8,820.00 × 0.19 = €1,675.80
+步骤 3：计算税额（按折扣后金额计算）
+  税额 = €8,820.00 × 0.19 = €1,675.80
 
-Final Total = €8,820.00 + €1,675.80 = €10,495.80
+最终总额 = €8,820.00 + €1,675.80 = €10,495.80
 ```
 
 **实施方式：**
 
 ```
-1. Check order value for volume discount eligibility
-2. Calculate volume discount
-3. Apply volume discount to subtotal
-4. Check payment terms for early payment discount
-5. Calculate early payment discount
-6. Apply early payment discount
-7. Calculate tax on final discounted amount
-8. Calculate grand total
+1. 检查订单金额是否符合批量折扣条件
+2. 计算批量折扣
+3. 将批量折扣应用于小计
+4. 检查付款条款是否适用提前付款折扣
+5. 计算提前付款折扣
+6. 应用提前付款折扣
+7. 按最终折扣后金额计算税额
+8. 计算总计
 ```
 
 ***
@@ -538,22 +538,22 @@ Final Total = €8,820.00 + €1,675.80 = €10,495.80
 **场景：** 将发票计量单位换算为标准计量单位
 
 ```
-Invoice shows:
-  Product: Steel Rods
-  Quantity: 50
-  Unit: Meters
-  Unit Price: €10.00/meter
-  Line Total: €500.00
+发票显示：
+  产品: Steel Rods
+  数量: 50
+  单位: Meters
+  单价: €10.00/meter
+  行项目总额: €500.00
 
-Company standard UOM: Feet
+公司标准计量单位 (UOM): Feet
 
-Conversion:
+换算：
   1 meter = 3.28084 feet
 
-  Quantity (feet) = 50 meters × 3.28084 = 164.042 feet
-  Unit Price (feet) = €10.00/meter ÷ 3.28084 = €3.05/foot
+  数量 (feet) = 50 meters × 3.28084 = 164.042 feet
+  单价 (feet) = €10.00/meter ÷ 3.28084 = €3.05/foot
 
-  Verification: 164.042 feet × €3.05/foot ≈ €500.00 ✅
+  验证: 164.042 feet × €3.05/foot ≈ €500.00 ✅
 ```
 
 **实施方式：**
@@ -574,32 +574,32 @@ Conversion:
 **场景：** 计算付款条件和到期日
 
 ```
-Invoice Date: 2025-10-23
-Payment Terms: NET30
+发票日期: 2025-10-23
+付款条款: NET30
 
-Calculations:
-  Due Date = Invoice Date + 30 days = 2025-11-22
+计算：
+  到期日期 = 发票日期 + 30 天 = 2025-11-22
 
-  Early Payment Discount Available If:
-    Payment Date ≤ Invoice Date + 10 days
-    Discount End Date = 2025-11-02
+  提前付款折扣适用条件：
+    付款日期 ≤ 发票日期 + 10 天
+    折扣截止日期 = 2025-11-02
 
-  Days Until Due = Due Date - Today
-    If Today = 2025-10-23: Days = 30
-    If Today = 2025-11-15: Days = 7
-    If Today = 2025-11-23: Days = -1 (overdue)
+  距到期天数 = 到期日期 - 今天
+    如果今天 = 2025-10-23：天数 = 30
+    如果今天 = 2025-11-15：天数 = 7
+    如果今天 = 2025-11-23：天数 = -1 (逾期)
 ```
 
 **实施方式：**
 
 ```
-1. Extract Invoice_Date
-2. Extract Payment_Terms (e.g., "NET30", "NET60", "2/10 NET30")
-3. Parse payment terms
-4. Calculate Due_Date
-5. Calculate Discount_End_Date (if applicable)
-6. Calculate Days_Until_Due
-7. Set Status: "Current", "Due Soon", "Overdue"
+1. 提取 Invoice_Date
+2. 提取 Payment_Terms（例如，"NET30"、"NET60"、"2/10 NET30"）
+3. 解析付款条款
+4. 计算 Due_Date
+5. 计算 Discount_End_Date（如适用）
+6. 计算 Days_Until_Due
+7. 设置状态: "Current"（当前）、"Due Soon"（即将到期）、"Overdue"（逾期）
 ```
 
 ***
@@ -609,23 +609,23 @@ Calculations:
 **场景：** 从非结构化文本中提取结构化数据
 
 ```
-Original Field: "PO-2025-ABC-12345-REV2"
+原始字段: "PO-2025-ABC-12345-REV2"
 
-Extract:
-  Year: "2025"
-  Department: "ABC"
-  PO Number: "12345"
-  Revision: "2"
+提取：
+  年份: "2025"
+  部门: "ABC"
+  采购订单编号: "12345"
+  修订版本: "2"
 
-Method:
-  Split by delimiter "-"
-  Array: ["PO", "2025", "ABC", "12345", "REV2"]
+方法：
+  使用分隔符 "-" 拆分
+  数组: ["PO", "2025", "ABC", "12345", "REV2"]
 
-  Extract:
+  提取：
     Year = Array[1] = "2025"
     Department = Array[2] = "ABC"
     PO_Number = Array[3] = "12345"
-    Revision = Extract digits from Array[4] = "2"
+    Revision = 从 Array[4] 提取数字 = "2"
 ```
 
 ***
@@ -633,78 +633,78 @@ Method:
 ## 完整转换工作流图
 
 ```
-INVOICE DATA EXTRACTED
+已提取发票数据
 │
-├─ STEP 1: LINE ITEM CALCULATIONS
-│  For each line:
+├─ 步骤 1：行项目计算
+│  对每个行项目：
 │    Quantity × Unit_Price = Line_Total
-│  Result: Line totals calculated
+│  结果：已计算各行项目总额
 │
-├─ STEP 2: SUBTOTAL CALCULATION
+├─ 步骤 2：小计计算
 │  SUM(All Line_Totals) = Subtotal
-│  Result: €6,387.50
+│  结果: €6,387.50
 │
-├─ STEP 3: TAX CALCULATION
+├─ 步骤 3：税额计算
 │  Subtotal × Tax_Rate = Tax_Amount
 │  €6,387.50 × 19% = €1,213.63
 │
-├─ STEP 4: GRAND TOTAL CALCULATION
+├─ 步骤 4：总计计算
 │  Subtotal + Tax_Amount = Grand_Total
 │  €6,387.50 + €1,213.63 = €7,601.13
 │
-├─ STEP 5: CURRENCY CHECK
+├─ 步骤 5：货币检查
 │  │
-│  ├─ Currency = EUR? YES
-│  │  → Skip conversion
-│  │  → Use Grand_Total as is
+│  ├─ Currency = EUR? 是
+│  │  → 跳过换算
+│  │  → 直接使用 Grand_Total
 │  │
-│  └─ Currency ≠ EUR? NO (e.g., USD)
+│  └─ Currency ≠ EUR? 否（例如，USD）
 │     │
-│     ├─ Call Exchange Rate API
-│     │  Get: USD → EUR rate (0.92)
+│     ├─ 调用汇率 API
+│     │  获取：USD → EUR 汇率 (0.92)
 │     │
-│     ├─ Convert Amount
+│     ├─ 换算金额
 │     │  $7,601.13 × 0.92 = €6,993.04
 │     │
-│     └─ Store converted amount
+│     └─ 存储换算后的金额
 │        Grand_Total_EUR = €6,993.04
 │
-├─ STEP 6: DATA ENRICHMENT
-│  For each line:
-│    Lookup Product_Category → GL_Account
-│    Store GL_Account in line item
-│  Result: All lines have GL accounts
+├─ 步骤 6：数据丰富
+│  对每个行项目：
+│    查询 Product_Category → GL_Account
+│    将 GL_Account 存储在行项目中
+│  结果：所有行项目都已关联总账科目
 │
-├─ STEP 7: VALIDATION
+├─ 步骤 7：验证
 │  │
-│  ├─ Compare Calculated vs Invoice Total
-│  │  Variance = |Calculated - Invoice| / Invoice × 100
+│  ├─ 比较计算总额与发票总额
+│  │  差异率 = |计算金额 - 发票金额| / 发票金额 × 100
 │  │
-│  ├─ Variance ≤ 1%? ✅
-│  │  Set Validation_Status = "PASS"
-│  │  Continue processing
+│  ├─ 差异率 ≤ 1%? ✅
+│  │  设置 Validation_Status = "PASS"
+│  │  继续处理
 │  │
-│  └─ Variance > 1%? ❌
-│     Set Validation_Status = "FAIL"
-│     Create review task
-│     Flag for manual check
+│  └─ 差异率 > 1%? ❌
+│     设置 Validation_Status = "FAIL"
+│     创建审核任务
+│     标记以供人工检查
 │
-├─ STEP 8: FORMATTING
+├─ 步骤 8：格式化
 │  │
-│  ├─ Format Dates
+│  ├─ 格式化日期
 │  │  10/23/2025 → 2025-10-23
 │  │
-│  ├─ Format Numbers
-│  │  7601.13 → 7.601,13 (locale-specific)
+│  ├─ 格式化数字
+│  │  7601.13 → 7.601,13 (因区域设置而异)
 │  │
-│  ├─ Format Text
+│  ├─ 格式化文本
 │  │  "abc corp" → "ABC CORP"
 │  │
-│  └─ Format for Export
-│     All fields in ERP-compatible format
+│  └─ 格式化以供导出
+│     所有字段均采用与 ERP 兼容的格式
 │
-└─ TRANSFORMATION COMPLETE
-   Document ready for next workflow step
+└─ 转换完成
+   文档已准备好进入工作流的下一步
 ```
 
 ***

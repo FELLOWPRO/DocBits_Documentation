@@ -39,16 +39,16 @@
 #### 文档状态类型
 
 ```
-- Upload: Being uploaded
-- OCR: Being scanned
-- Classification: Type detection
-- Ready for Validation: Waiting for review
-- Workflow: In process
-- Pending Approval: Needs approval
-- Pending Second Approval: Needs secondary approval
-- Auto Accounting: Auto-booking
-- Export: Being exported
-- Error: Problem occurred
+- Upload：正在上传
+- OCR：正在扫描
+- Classification：类型检测
+- Ready for Validation：等待验证
+- Workflow：处理中
+- Pending Approval：需要审批
+- Pending Second Approval：需要二次审批
+- Auto Accounting：自动记账
+- Export：正在导出
+- Error：发生问题
 ```
 
 #### 工作方式

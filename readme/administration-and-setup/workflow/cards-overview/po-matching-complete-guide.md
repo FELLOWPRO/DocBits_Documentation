@@ -69,17 +69,17 @@ Qty: 100      Qty: 100            within tolerance)
 ### 示例
 
 ```
-PO:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+采购订单：
+- Item ABC：数量 100，单价 €50 = €5000
+- Item XYZ：数量 50，单价 €20 = €1000
+- 总计：€6000
 
-Invoice:
-- Item ABC: Qty 100, Unit Price €50 = €5000
-- Item XYZ: Qty 50, Unit Price €20 = €1000
-- Total: €6000
+发票：
+- Item ABC：数量 100，单价 €50 = €5000
+- Item XYZ：数量 50，单价 €20 = €1000
+- 总计：€6000
 
-Result: ✅ FULL MATCH
+结果：✅ 完全匹配
 ```
 
 ***
@@ -356,15 +356,15 @@ Result: ✅ MATCH
 ### 场景：如果不匹配怎么办？
 
 ```
-PO Item: ABC-123 (Copper Wire, 2mm)
-Invoice Item: ABC-124 (Steel Wire, 2mm)
+采购订单行项目：ABC-123 (Copper Wire, 2mm)
+发票行项目：ABC-124 (Steel Wire, 2mm)
 
-Result: ❌ NO MATCH
+结果：❌ 不匹配
 
-Actions:
-1. Is this a substitution? Check with procurement
-2. Is this an error? Contact supplier
-3. Is the description similar? Verify manually
+处理措施：
+1. 这是替代品吗？请与采购部门确认
+2. 这是错误吗？请联系供应商
+3. 描述是否相似？请手动验证
 ```
 
 ***
@@ -642,24 +642,24 @@ Settings:
 ## PO 匹配工作流示例
 
 ```
-Invoice Arrives
+发票到达
     ↓
-Condition: "Is amount > €5000?" → YES
+条件："Is amount > €5000?"（金额是否 > €5000？）→ YES（是）
     ↓
-Check: Full Match? → NO (10% price difference)
+检查：是否完全匹配？→ NO（否）（价格相差 10%）
     ↓
-Check: Unit Price within 5%? → NO (12% difference)
+检查：单价是否在 5% 范围内？→ NO（否）（相差 12%）
     ↓
-Check: Quantity within 5%? → YES (2% difference)
+检查：数量是否在 5% 范围内？→ YES（是）（相差 2%）
     ↓
-Decision: FAIL - Price variance too high
+决定：FAIL（失败）- 价格差异过大
     ↓
-Flag for: Manual review / Buyer approval
+标记为：手动审核 / 采购员审批
     ↓
-Wait for: Buyer comment
+等待：采购员评论
     ↓
-If Approved: Continue to Export
-If Rejected: Return to Supplier
+如果已批准：继续导出
+如果已拒绝：退回供应商
 ```
 
 ***

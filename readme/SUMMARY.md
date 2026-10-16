@@ -58,7 +58,6 @@
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Cambios en las direcciones web](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [Barra Lateral Personalizable](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
-  * [Tablero de Ideas](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Panel](end-user-and-partner-section/end-user-section/dashboard/README.md)
     * [Herramientas del Panel](end-user-and-partner-section/end-user-section/dashboard/dashboard-tools.md)
     * [Cambiar columnas del documento](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)
@@ -536,6 +535,8 @@
     * [Gestión de Tareas](administration-and-setup/settings/log-settings/task-management.md)
     * [Sincronización de Datos](administration-and-setup/settings/log-settings/data-synchronization.md)
     * [Configuración de Búsqueda de Texto Completo](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Auditoría de Acceso](administration-and-setup/settings/log-settings/access-audit.md)
+    * [Analítica](administration-and-setup/settings/log-settings/analytics.md)
   * [Licencias de API](administration-and-setup/settings/api-licenses.md)
   * [Configuración del Proveedor](administration-and-setup/settings/supplier-setting/README.md)
     * [Configuración General del Proveedor](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
@@ -783,6 +784,7 @@
 
 ## Funciones y herramientas avanzadas <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [Explorador de gráficos de conocimiento](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
   * [Configuración e instalación](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)

@@ -8,11 +8,11 @@
 
 * Iniziare selezionando il tipo di campo corretto per i propri dati.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="Docbits Field Properties Type" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_field_properties_type.png" alt="Docbits Field Properties Type" width="375"><figcaption></figcaption></figure>
 
 * Dipende dal tipo di informazioni che il campo conterrà.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="Docbits Field Properties Panel" width="139"><figcaption><p>Proprietà</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_field_properties_panel.png" alt="Docbits Field Properties Panel" width="139"><figcaption><p>Proprietà</p></figcaption></figure>
 
 * I possibili tipi di campo includono testo, numero, data, menu a discesa, casella di controllo, ecc.
 
@@ -23,24 +23,24 @@
 * Impostare regole di convalida per garantire che i dati inseriti soddisfino i criteri previsti.
 * Ciò può includere il controllo di determinati modelli di stringhe, limiti numerici, formati di data o altre condizioni.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="" width="236"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (147).png" alt="" width="236"><figcaption></figcaption></figure>
 
 #### Definire i valori predefiniti:
 
 * Se determinati campi hanno tipicamente un valore predefinito, è possibile impostarlo come valore di default.
 * Ciò semplifica l'inserimento dei dati perché gli utenti non devono inserire lo stesso valore ogni volta.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="" width="224"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (148).png" alt="" width="224"><figcaption></figcaption></figure>
 
 #### Impostare i permessi utente:
 
 * Determinare quali gruppi di utenti devono avere accesso al campo e che tipo di diritti di accesso hanno.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt=""><figcaption><p>Impostazioni: Gruppi e Permessi</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (150).png" alt=""><figcaption><p>Impostazioni: Gruppi e Permessi</p></figcaption></figure>
 
 * Ciò può includere diritti di lettura, scrittura o modifica.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt=""><figcaption><p>Visualizza Permessi</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (151).png" alt=""><figcaption><p>Visualizza Permessi</p></figcaption></figure>
 
 #### Collegamento ad altri dati:
 
@@ -52,7 +52,7 @@
 * Determinare in quali condizioni un campo deve essere visibile o nascosto.
 * Ciò può essere utile per adattare dinamicamente l'interfaccia utente in base a determinati dati o azioni dell'utente.
 
-<figure><img src="../../../../../.gitbook/assets/image (146).png" alt=""><figcaption><p>Impostazione Campi</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (149).png" alt=""><figcaption><p>Impostazione Campi</p></figcaption></figure>
 
 #### Abilitare la storicizzazione:
 

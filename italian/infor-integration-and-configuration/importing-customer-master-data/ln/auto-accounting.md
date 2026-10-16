@@ -1,4 +1,4 @@
-# Contabilità Automatica
+# Auto Accounting con Infor LN
 
 Usare questa guida quando un amministratore di Infor LN vuole che DocBits utilizzi i dati master finanziari importati per la contabilità automatica (Auto Accounting). La vecchia pagina mostrava 48 schermate di un particolare tenant Infor. Nomi dei punti di connessione, mappature, credenziali e indirizzi degli endpoint di quel tenant non sono una configurazione riutilizzabile.
 
@@ -8,9 +8,9 @@ Aprire **Impostazioni → Modulo → Ordini e finanziamenti → Contabilità aut
 
 Le seguenti schermate provengono dalla Sandbox sintetica **DocBits Documentation Test A**. In questa organizzazione era selezionato **LN** e la Contabilità auto era **disattivata**. Il menu è stato aperto senza selezionare un altro valore; nessuna impostazione è stata salvata.
 
-<figure><img src="../../../.gitbook/assets/dbdc-621-auto-accounting-off-it.png" alt="Impostazioni DocBits in italiano per Ordini e finanziamenti con Contabilità auto disattivata e tipo LN selezionato"><figcaption><p>Individuare Contabilità auto e controllare il tipo selezionato prima di attivarla.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc783-auto-accounting-settings-it-20261012.png" alt="Impostazioni DocBits in italiano per Ordini e finanziamenti con Contabilità auto disattivata e tipo LN selezionato"><figcaption><p>Individuare Contabilità auto e controllare il tipo selezionato prima di attivarla.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc767-auto-accounting-type-options-it-20261012.png" alt="Menu Tipo di Contabilità auto in DocBits con le opzioni LN e M3"><figcaption><p>LN e M3 sono i tipi disponibili in questa Sandbox; nessuna selezione è stata modificata.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc783-auto-accounting-type-options-it-20261012.png" alt="Menu Tipo di Contabilità auto in DocBits con le opzioni LN e M3"><figcaption><p>LN e M3 sono i tipi disponibili in questa Sandbox; nessuna selezione è stata modificata.</p></figcaption></figure>
 
 ## Preparare LN e ION
 

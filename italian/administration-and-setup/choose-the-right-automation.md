@@ -8,15 +8,15 @@ DocBits offre diversi modi per modificare, controllare e instradare i documenti:
 
 ## La risposta breve
 
-| Voglio …                                                                                                                                           | Usa                                                                                                                                                        | Perché                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Pulire o riscrivere un valore (rimuovere spazi, aggiungere un prefisso, formato data, mappatura unità, valore predefinito)                         | [Regole di Trasformazione](settings/global-settings/document-types/transformation-rules.md)                                                                | Nessun codice, anteprima dal vivo, viene eseguita a ogni passaggio e a ogni salvataggio |
-| Assicurarmi che i dati siano completi e plausibili e fermare i documenti che non lo sono                                                           | [Regole di convalida personalizzate](settings/global-settings/document-types/custom-validation-rules.md)                                                   | Controlli dichiarativi, errore o avviso, bloccano l'esportazione automatica             |
-| Abbinare le righe della fattura alle righe dell'ordine di acquisto                                                                                 | [Regole di Corrispondenza degli Ordini di Acquisto](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Set di regole con tolleranze, alternative e un diagramma visivo                         |
-| Fare qualcosa che una regola non può esprimere: una ricerca, un calcolo tra campi e tabelle, un'attività, un cambio di stato in un momento preciso | [Script](settings/global-settings/document-types/script/)                                                                                                  | Python in 13 punti di attivazione del flusso                                            |
-| Decidere **cosa succede dopo** con un documento: assegnare, approvare, creare un'attività, inviare un'e-mail, esportare, chiamare un'API           | [Standard Workflow](workflow/standard-workflow-builder/)                                                                                                   | Schede When / And / Then su eventi di stato                                             |
-| Fare lo stesso con rami, più condizioni e percorsi di errore                                                                                       | [Advanced Workflow](workflow/advanced-workflow-builder/)                                                                                                   | Grafo visivo di nodi                                                                    |
-| Serve un'azione che nessuna scheda integrata offre                                                                                                 | [Workflow SDK (Card SDK)](workflow/card-sdk.md)                                                                                                            | La tua scheda, verificata da DocBits                                                    |
+| Voglio … | Usa | Perché |
+| --- | --- | --- |
+| Pulire o riscrivere un valore (rimuovere spazi, aggiungere un prefisso, formato data, mappatura unità, valore predefinito) | [Regole di Trasformazione](settings/global-settings/document-types/transformation-rules.md) | Nessun codice, anteprima dal vivo, viene eseguita a ogni passaggio e a ogni salvataggio |
+| Assicurarmi che i dati siano completi e plausibili e fermare i documenti che non lo sono | [Regole di convalida personalizzate](settings/global-settings/document-types/custom-validation-rules.md) | Controlli dichiarativi, errore o avviso, bloccano l'esportazione automatica |
+| Abbinare le righe della fattura alle righe dell'ordine di acquisto | [Regole di Corrispondenza degli Ordini di Acquisto](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Set di regole con tolleranze, alternative e un diagramma visivo |
+| Fare qualcosa che una regola non può esprimere: una ricerca, un calcolo tra campi e tabelle, un'attività, un cambio di stato in un momento preciso | [Script](settings/global-settings/document-types/script/README.md) | Python in 13 punti di attivazione del flusso |
+| Decidere **cosa succede dopo** con un documento: assegnare, approvare, creare un'attività, inviare un'e-mail, esportare, chiamare un'API | [Standard Workflow](workflow/standard-workflow-builder.md) | Schede When / And / Then su eventi di stato |
+| Fare lo stesso con rami, più condizioni e percorsi di errore | [Advanced Workflow](workflow/advanced-workflow-builder.md) | Grafo visivo di nodi |
+| Serve un'azione che nessuna scheda integrata offre | [Workflow SDK (Card SDK)](workflow/card-sdk.md) | La tua scheda, verificata da DocBits |
 
 **Regola pratica: usa lo strumento meno potente che svolge il compito.** Prima le regole, poi uno Script, per ultimo un Workflow o una scheda SDK. Le regole sono più facili da leggere, più facili da testare e non possono danneggiare un documento; il codice può fare di più e richiede quindi più attenzione.
 
@@ -46,14 +46,14 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 
 <figure><img src="../.gitbook/assets/automation-reach-it.svg" alt="Confronto di ciò che può fare ogni strumento di automazione"><figcaption></figcaption></figure>
 
-|                              | Regole di Trasformazione                                | Regole di convalida personalizzate                                | Regole di Corrispondenza PO                                                                          | Script                                                                      | Standard Workflow                                                        | Advanced Workflow                               | Scheda SDK                               |
-| ---------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------- | ---------------------------------------- |
-| **Viene eseguito quando**    | A ogni passaggio di trasformazione e a ogni salvataggio | A ogni esecuzione della convalida                                 | Dopo la ricerca, **Auto PO Match**, nuovo numero PO                                                  | 13 punti di attivazione                                                     | Dopo un cambio di stato                                                  | Dopo un cambio di stato                         | Quando viene eseguito il suo workflow    |
-| **Può leggere**              | Campi di intestazione, colonne di tabella               | Campi, celle di tabella, totali sulle righe                       | Tabelle, numeri PO, righe dell'ordine di acquisto, tolleranze                                        | Tutti i dati estratti, ricerche, utenti, gruppi, ricerca fulltext           | Dati del documento, utenti, gruppi, variabili                            | Come sopra, più i risultati dei nodi precedenti | Campi, tabelle, ricerche, utenti, gruppi |
-| **Può scrivere**             | Valori di campi e colonne, righe, sotto-organizzazione  | Niente: solo indicatori valido / non valido                       | Solo dati di abbinamento                                                                             | Campi, tabelle, attività, stato                                             | Campi, stato, assegnazione, attività, esportazione, e-mail, chiamata API | Stesse schede, più logica e variabili           | Campi, tabelle, stato, attività          |
-| **Può fermare un documento** | No                                                      | Sì, gli errori bloccano l'esportazione automatica e **Convalida** | Sì, senza un abbinamento completo l'esportazione automatica attende quando l'abbinamento PO è attivo | Indirettamente: contrassegnare un campo come non valido, creare un'attività | Imposta lo stato, assegna, approva, rifiuta                              | Come sopra                                      | Come il tipo di scheda                   |
-| **Richiede codice**          | No                                                      | No                                                                | No                                                                                                   | Sì, Python con restrizioni                                                  | No                                                                       | No                                              | Sì, Python in un sandbox                 |
-| **Uso tipico**               | Normalizzare i valori                                   | Campi obbligatori, formati, totali                                | Abbinamento delle righe                                                                              | Logica speciale                                                             | Instradamento e approvazione                                             | Instradamento con rami                          | Azioni per i partner                     |
+| | Regole di Trasformazione | Regole di convalida personalizzate | Regole di Corrispondenza PO | Script | Standard Workflow | Advanced Workflow | Scheda SDK |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Viene eseguito quando** | A ogni passaggio di trasformazione e a ogni salvataggio | A ogni esecuzione della convalida | Dopo la ricerca, **Auto PO Match**, nuovo numero PO | 13 punti di attivazione | Dopo un cambio di stato | Dopo un cambio di stato | Quando viene eseguito il suo workflow |
+| **Può leggere** | Campi di intestazione, colonne di tabella | Campi, celle di tabella, totali sulle righe | Tabelle, numeri PO, righe dell'ordine di acquisto, tolleranze | Tutti i dati estratti, ricerche, utenti, gruppi, ricerca fulltext | Dati del documento, utenti, gruppi, variabili | Come sopra, più i risultati dei nodi precedenti | Campi, tabelle, ricerche, utenti, gruppi |
+| **Può scrivere** | Valori di campi e colonne, righe, sotto-organizzazione | Niente: solo indicatori valido / non valido | Solo dati di abbinamento | Campi, tabelle, attività, stato | Campi, stato, assegnazione, attività, esportazione, e-mail, chiamata API | Stesse schede, più logica e variabili | Campi, tabelle, stato, attività |
+| **Può fermare un documento** | No | Sì, gli errori bloccano l'esportazione automatica e **Convalida** | Sì, senza un abbinamento completo l'esportazione automatica attende quando l'abbinamento PO è attivo | Indirettamente: contrassegnare un campo come non valido, creare un'attività | Imposta lo stato, assegna, approva, rifiuta | Come sopra | Come il tipo di scheda |
+| **Richiede codice** | No | No | No | Sì, Python con restrizioni | No | No | Sì, Python in un sandbox |
+| **Uso tipico** | Normalizzare i valori | Campi obbligatori, formati, totali | Abbinamento delle righe | Logica speciale | Instradamento e approvazione | Instradamento con rami | Azioni per i partner |
 
 ## Decidere con quattro domande
 
@@ -96,7 +96,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 * **Viene eseguito** nei punti di attivazione che scegli: dopo l'estrazione, prima e dopo la trasformazione, prima dell'abbinamento PO, prima e dopo la convalida, alle modifiche di campi e tabelle, al salvataggio e all'approvazione.
 * **Può** leggere l'intero documento, usare ricerche nei dati anagrafici e la ricerca fulltext, modificare campi, flag e tabelle, creare attività e cambiare lo stato.
 * **Non può** importare moduli o chiamare servizi esterni. È Python con restrizioni. Un errore in uno script viene registrato e non ferma mai l'elaborazione del documento, quindi uno script **non** è un modo affidabile per bloccare un documento: contrassegna invece il campo come non valido o crea un'attività.
-* **Approfondisci:** [Script](settings/global-settings/document-types/script/)
+* **Approfondisci:** [Script](settings/global-settings/document-types/script/README.md)
 
 ### Standard Workflow
 
@@ -104,7 +104,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 * **Viene eseguito** quando un documento raggiunge uno stato che hai scelto, cioè dopo la convalida. Può anche partire da un web hook, da una pianificazione o manualmente.
 * **Può** eseguire una catena di schede: **When** (avvio), **And** (condizioni, tutte devono essere soddisfatte), **Then** (azioni in ordine).
 * **Non può** creare rami, attendere più condizioni o reagire all'errore di una scheda in un percorso separato. Per questo usa un Advanced Workflow.
-* **Approfondisci:** [Standard Workflow](workflow/standard-workflow-builder/)
+* **Approfondisci:** [Standard Workflow](workflow/standard-workflow-builder.md)
 
 ### Advanced Workflow
 
@@ -112,7 +112,7 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 * **Viene eseguito** sugli stessi eventi di uno Standard Workflow. Richiede l'abbonamento DocFlow Advanced.
 * **Può** usare le stesse schede di uno Standard Workflow, più schede di logica e variabili, disegnate come grafo.
 * **Non può** agire su ciò che accade prima della convalida: parte dopo un cambio di stato. La logica precedente alla convalida appartiene a uno Script o a una regola.
-* **Approfondisci:** [Advanced Workflow](workflow/advanced-workflow-builder/)
+* **Approfondisci:** [Advanced Workflow](workflow/advanced-workflow-builder.md)
 
 ### Workflow SDK (Card SDK)
 
@@ -135,20 +135,20 @@ Un workflow che scrive un campo si comporta come una persona che salva il docume
 
 ## Errori comuni
 
-| Errore                                                                             | Meglio                                                                          |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| Uno Script che rimuove spazi e aggiunge prefissi ai valori                         | Una Regola di Trasformazione                                                    |
-| Un workflow che imposta un campo dopo la convalida                                 | Una Regola di Trasformazione o uno Script prima della convalida                 |
-| Uno Script da cui ci si aspetta che fermi un documento non valido                  | Una Regola di convalida personalizzata                                          |
-| Una Regola di convalida personalizzata da cui ci si aspetta che corregga un valore | Una Regola di Trasformazione, poi la regola di convalida                        |
-| Riscrivere il numero PO in una regola di corrispondenza PO                         | Una Regola di Trasformazione sul campo _Purchase Order_, prima dell'abbinamento |
-| Un Advanced Workflow per un singolo _When → Then_                                  | Uno Standard Workflow                                                           |
-| Una scheda SDK per qualcosa che una scheda integrata sa fare                       | La scheda integrata                                                             |
+| Errore | Meglio |
+| --- | --- |
+| Uno Script che rimuove spazi e aggiunge prefissi ai valori | Una Regola di Trasformazione |
+| Un workflow che imposta un campo dopo la convalida | Una Regola di Trasformazione o uno Script prima della convalida |
+| Uno Script da cui ci si aspetta che fermi un documento non valido | Una Regola di convalida personalizzata |
+| Una Regola di convalida personalizzata da cui ci si aspetta che corregga un valore | Una Regola di Trasformazione, poi la regola di convalida |
+| Riscrivere il numero PO in una regola di corrispondenza PO | Una Regola di Trasformazione sul campo *Purchase Order*, prima dell'abbinamento |
+| Un Advanced Workflow per un singolo *When → Then* | Uno Standard Workflow |
+| Una scheda SDK per qualcosa che una scheda integrata sa fare | La scheda integrata |
 
 ## Pagine correlate
 
 * [Regole di Trasformazione](settings/global-settings/document-types/transformation-rules.md)
 * [Regole di convalida personalizzate](settings/global-settings/document-types/custom-validation-rules.md)
 * [Regole di Corrispondenza degli Ordini di Acquisto](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* [Script](settings/global-settings/document-types/script/)
-* [Workflow](workflow/)
+* [Script](settings/global-settings/document-types/script/README.md)
+* [Workflow](workflow/README.md)

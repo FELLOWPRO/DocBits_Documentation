@@ -20,7 +20,7 @@ Questa guida spiega come importare un template di connessione API per configurar
 
 Prima di importare, scarica il template di connessione richiesto utilizzando il file seguente:
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template.xml" %}
+{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
 
 ### Importazione del template
 

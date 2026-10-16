@@ -9,7 +9,7 @@
 * Dopo aver apportato le personalizzazioni desiderate nel Layout Manager, cercare il pulsante "Salva" per salvare le modifiche.
 * Fare clic su questo pulsante per salvare le modifiche nel Layout Manager. In questo modo si esegue il backup delle personalizzazioni del layout e ci si assicura che siano disponibili per le future sessioni di modifica.
 
-<figure><img src="../../../../../.gitbook/assets/image (131).png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
 
 #### Applicazione delle modifiche al flusso di lavoro di elaborazione dei documenti:
 

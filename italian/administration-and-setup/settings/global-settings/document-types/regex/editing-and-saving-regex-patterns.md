@@ -4,7 +4,7 @@
 
 **Per modificare i pattern regex esistenti e assicurarti che le modifiche funzionino come previsto senza compromettere le funzionalità esistenti, puoi seguire la guida qui sotto:**
 
-<figure><img src="../../../../../.gitbook/assets/image (94).png" alt=""><figcaption><p>Impostazioni: Tipo di documento</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Impostazioni: Tipo di documento</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 14.18.25.png" alt=""><figcaption></figcaption></figure>
 

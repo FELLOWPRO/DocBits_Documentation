@@ -16,9 +16,9 @@ Questa impostazione consente di definire regole che verificano se i dati inserit
 * Abilitare l'opzione Convalida forzata.
 * Definire le regole di convalida da controllare. Queste possono essere, ad esempio, limiti numerici, espressioni regolari per i campi di testo o relazioni con altri campi.
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (94).png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
 
 **Impatto:**
 
@@ -26,7 +26,7 @@ Questa impostazione consente di definire regole che verificano se i dati inserit
 
 ### Punteggio di corrispondenza (Match Score):
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="" width="116"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
 
 Questa impostazione consente di confrontare il valore inserito con un valore di riferimento predefinito.
 

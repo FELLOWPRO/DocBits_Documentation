@@ -30,6 +30,12 @@ One column fills three fields, a wrong unit price, and extra rows for freight an
 
 Discount and tax missing on Canadian and British invoices, and lines that were not shipped. About 1.4 minutes.
 
+### 5. What the AI already reads correctly
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/en.mp4" %}
+
+Five unusual invoice layouts that DocBits reads right without any help, and what to do first.
+
 ## When you get the AI table
 
 * An admin has switched on **AI Table extraction** (Settings → Document Processing → Classification and Extraction, see [Settings for admins](./#settings-for-admins)). If it is off, the table area shows _AI Table will display here. Enable in …_.

@@ -1,6 +1,61 @@
 # Notes de version
 
-> **Dernière version de correctifs :** [Correctifs du 14 octobre 2026](incremental-updates-14-october-2026.md) (R1.0.15) : le chat Settings Assistant sur chaque page de paramètres, de nouveaux niveaux d’IA (Fast, Full, Nexus, Auto), le contrôle des champs d’en-tête, une connexion et une connexion sociale plus sûres, ainsi que la correspondance des frais des bons de commande. Précédent : [Correctifs du 15 septembre 2026](incremental-updates-15-september-2026.md). Toutes les pages de correctifs sont listées dans la navigation sous Notes de version.
+Choisissez un canal de version pour voir les changements pour votre équipe. **NOVA est la version majeure avec des capacités client supplémentaires. Les correctifs VESTA améliorent la version de production actuelle.** Consultez le [cycle de vie des versions](../docbits-release-lifecycle-strategy.md) pour la disponibilité et le changement de canal.
+
+**Les anciennes fonctionnalités bêta de VESTA sont désormais incluses dans NOVA.** Toutes les fonctionnalités précédemment disponibles en bêta dans VESTA font partie de l'ensemble de fonctionnalités standard de NOVA. Elles deviendront également des fonctionnalités standard de VESTA avec le [prochain correctif VESTA, prévu pour le **11 novembre 2026**](vesta-hotfix-11-november-2026.md).
+
+| Canal de version | Notes de version | Focus |
+| --- | --- | --- |
+| **NOVA — Version majeure** | [Nouveautés pour les clients](nova-major-release-16-october-2026.md) · Instantané de version du **16 octobre 2026** | Toutes les anciennes fonctionnalités bêta de VESTA, ainsi que de nouvelles capacités et extensions par rapport à VESTA R1.0.15. |
+| **VESTA — Prochain correctif (prévu)** | [11 novembre 2026](vesta-hotfix-11-november-2026.md) | Introduit toutes les anciennes fonctionnalités bêta de VESTA dans l'ensemble de fonctionnalités standard de VESTA. |
+| **VESTA — Version de correctif** | [14 octobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Améliorations et correctifs pour la version de production VESTA actuelle. |
+
+## NOVA — Version majeure
+
+### Ce que votre équipe gagne avec NOVA
+
+* **Utilisez les anciennes fonctionnalités bêta de VESTA comme fonctionnalités standard NOVA.** Toutes les fonctionnalités précédemment offertes en bêta dans VESTA sont incluses dans NOVA, y compris les contrôles de gestion des règles et des mises en page. Les paramètres de l'organisation, les interrupteurs de type de document et les autorisations s'appliquent toujours.
+* **Résolvez les blocages de documents avec l'Assistant de validation.** Demandez ce qui bloque un document, accédez au champ concerné et examinez les corrections suggérées tout en restant sur le document.
+* **Transformez les corrections répétées en améliorations d'automatisation examinées.** Les examinateurs peuvent soumettre des demandes d'amélioration ; les administrateurs peuvent évaluer les propositions de règles apprises, examiner les documents affectés et mesurer le résultat après l'activation.
+* **Comprenez et agissez sur les erreurs de factures électroniques.** Utilisez des rapports regroupés par niveau de validation, examinez les politiques de type de document et leur historique, et rejetez une facture éligible avec une raison enregistrée.
+* **Configurez et contrôlez les imports FTP/SFTP.** Utilisez l'assistant de connexion, suivez les étapes d'import par fichier, configurez les tentatives de nouvelle exécution et les notifications d'échec, et supprimez éventuellement les fichiers sources après un import réussi.
+* **Rapprochez les lignes de livraison avec moins d'actions répétées.** Sélectionnez d'abord les lignes de document ou de bon de commande et liez-les dans les deux sens. Les exports configurés peuvent conserver les détails des sous-lignes et regrouper les enregistrements par valeurs de ligne.
+* **Gardez le travail exporté séparé du travail terminé.** Utilisez le statut Exported pour le traitement de suivi et verrouillez éventuellement les documents Finished contre une réouverture ordinaire.
+* **Accédez directement aux contrôles des règles et des mises en page.** Ouvrez les panneaux de gestion sans lien bêta, recherchez et prévisualisez les mises en page, et ouvrez l'éditeur de mise en page depuis un document.
+* **Contrôlez l'extraction et l'administration courante.** Redémarrez un document avec un nombre de pages choisi, décidez si les champs masqués sont extraits, utilisez des actions supplémentaires de l'Assistant de configuration et limitez les règles de notification à une sous-organisation.
+
+### Guides pour la configuration des règles
+
+* [**Règles de transformation**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) : nettoyez et réécrivez les valeurs extraites, créez une séquence d'étapes et prévisualisez le résultat. **Regarder :** [Vidéo en français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/fr.mp4) · [Vidéo en anglais](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4).
+* [**Règles de validation personnalisées**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) : définissez des contrôles pour les champs et les lignes de tableau, choisissez les conditions et la sévérité, et testez vos règles. **Vidéo :** [Vidéo en français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/fr.mp4) · [Vidéo en anglais](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
+* [**Règles de rapprochement des commandes**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) : configurez les types de rapprochement, les tolérances et l'ordre d'exécution, et gérez les versions des règles. **Vidéo associée — Choisir la bonne automatisation :** [Vidéo en français](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/fr.mp4) · [Vidéo en anglais](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4).
+
+[Parcourir toutes les vidéos des fonctionnalités](nova-major-release-16-october-2026.md#watch-the-feature-videos), y compris les mises en page, Touchless Intelligence, la validation des factures électroniques et la série de six vidéos sur AI Table.
+
+[Lire la comparaison complète des fonctionnalités NOVA](nova-major-release-16-october-2026.md), y compris les exigences d'activation, les améliorations supplémentaires et toutes les **16 versions de service**.
+
+**La base de référence VESTA inclut les fonctionnalités existantes et les fonctionnalités bêta :** l'Assistant de configuration original, les avertissements de base sur l'intégrité des imports, les niveaux d'IA, le Contrôle des champs d'en-tête, le tableau de bord Touchless Intelligence, les moteurs de règles, les transformations après la recherche de données de base et les journaux d'exécution de base des règles. Les notes NOVA distinguent le passage de la disponibilité bêta à la disponibilité standard des ajouts supplémentaires à ces capacités.
+
+## VESTA — Versions de correctifs <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
+
+**Prochain correctif prévu : [11 novembre 2026](vesta-hotfix-11-november-2026.md).** Toutes les fonctionnalités précédemment disponibles en version bêta dans VESTA, et désormais incluses dans NOVA, deviendront des fonctionnalités VESTA standard dans ce correctif.
+
+**Dernier correctif publié : [14 octobre 2026 — R1.0.15](incremental-updates-14-october-2026.md).** Ce correctif VESTA a introduit l'Assistant de configuration, les niveaux d'IA mis à jour, le Contrôle des champs d'en-tête, les améliorations de la connexion et les améliorations du rapprochement des frais des bons de commande.
+
+Notes des correctifs VESTA antérieurs :
+
+* [15 septembre 2026 — R1.0.13](incremental-updates-15-september-2026.md)
+* [8 septembre 2026](incremental-updates-8-september-2026.md)
+* [12–25 août 2026](incremental-updates-12-25-august-2026.md)
+* [29 juillet – 12 août 2026](incremental-updates-29-july-12-august-2026.md)
+* [14–29 juillet 2026](incremental-updates-14-29-july-2026.md)
+* [4–14 juillet 2026](incremental-updates-4-14-july-2026.md)
+* [3–4 juillet 2026](incremental-updates-3-4-july-2026.md)
+* [30 juin – 3 juillet 2026](incremental-updates-30-june-3-july-2026.md)
+* [26–30 juin 2026](incremental-updates-26-30-june-2026.md)
+* [21–25 juin 2026](incremental-updates-21-25-june-2026.md)
+
+Les annonces de version originales restent ci-dessous pour référence.
 
 ## **Release R1.0 13/14 juin 2026**
 

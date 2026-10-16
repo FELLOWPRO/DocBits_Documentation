@@ -64,4 +64,4 @@ Si tiene más claves de las que caben en una página, use los controles de pagin
 
 Trate la clave como una contraseña. Cualquiera que la tenga puede actuar sobre los documentos y los datos de su organización.
 
-Consulte [Almacenamiento seguro de credenciales](../../../../overview-and-basics/secure-storage-of-credentials.md).
+Consulte [Almacenamiento seguro de credenciales](../../../../security/secure-storage-of-credentials.md).

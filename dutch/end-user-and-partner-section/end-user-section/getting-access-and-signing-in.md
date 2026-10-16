@@ -6,7 +6,7 @@ Deze pagina legt uit hoe u een DocBits-account krijgt en hoe u inlogt wanneer u 
 * [Wachtwoord vergeten](#wachtwoord-vergeten) — stel uw wachtwoord opnieuw in met een herstellink.
 * [Eerste wachtwoord voor door de beheerder aangemaakte accounts](#eerste-wachtwoord-voor-door-de-beheerder-aangemaakte-accounts) — stel het eerste wachtwoord in voor een account dat uw beheerder voor u heeft aangemaakt.
 
-Inloggen met een bestaand account en Tweefactorauthenticatie worden behandeld in [Tweefactorauthenticatie (2FA)](../../overview-and-basics/two-factor-authentication.md). Gebruik het taalmenu rechtsboven op deze formulieren als u een andere weergavetaal nodig heeft.
+Inloggen met een bestaand account en Tweefactorauthenticatie worden behandeld in [Tweefactorauthenticatie (2FA)](../../security/two-factor-authentication.md). Gebruik het taalmenu rechtsboven op deze formulieren als u een andere weergavetaal nodig heeft.
 
 ## Registratie
 
@@ -46,7 +46,7 @@ Nadat u het formulier heeft verzonden, toont DocBits een bevestigingspagina en s
 
 ## Wachtwoord vergeten
 
-DocBits slaat inlogwachtwoorden op als eenrichtingshashes met salt. Een bestaand wachtwoord kan niet uit de hash worden teruggehaald, dus met deze procedure stelt u een nieuw wachtwoord in. Zie [Veilige opslag van inloggegevens](../../overview-and-basics/secure-storage-of-credentials.md).
+DocBits slaat inlogwachtwoorden op als eenrichtingshashes met salt. Een bestaand wachtwoord kan niet uit de hash worden teruggehaald, dus met deze procedure stelt u een nieuw wachtwoord in. Zie [Veilige opslag van inloggegevens](../../security/secure-storage-of-credentials.md).
 
 Als u uw wachtwoord bent vergeten:
 

@@ -4,7 +4,7 @@ description: Szyfrowanie danych DocBits w spoczynku na DigitalOcean, w tym bazy 
 
 # Szyfrowanie danych w spoczynku
 
-DocBits korzysta z DigitalOcean Managed Databases i DigitalOcean Spaces. Weryfikacja z **16 października 2026 r.** potwierdziła zarządzane usługi PostgreSQL, OpenSearch i Valkey dla produkcji w UE we Frankfurcie. [FAQ dotyczące bezpieczeństwa i zgodności](../overview-and-basics/security-and-compliance-faq.md) opisuje wykorzystanie Spaces do przechowywania danych.
+DocBits korzysta z DigitalOcean Managed Databases i DigitalOcean Spaces. Weryfikacja z **16 października 2026 r.** potwierdziła zarządzane usługi PostgreSQL, OpenSearch i Valkey dla produkcji w UE we Frankfurcie. [FAQ dotyczące bezpieczeństwa i zgodności](security-and-compliance-faq.md) opisuje wykorzystanie Spaces do przechowywania danych.
 
 Ta strona opisuje zabezpieczenia szyfrowania opublikowane przez DigitalOcean dla tych usług. Instalacje lokalne i kopie przechowywane w innych systemach wymagają osobnej oceny.
 
@@ -25,7 +25,7 @@ Szczegóły dotyczące baz danych i kopii pochodzą z [modelu bezpieczeństwa Ma
 
 DigitalOcean zarządza opisanym szyfrowaniem infrastruktury. Dla Managed Databases dokumentuje losowo generowany klucz dla każdej instancji i woluminu, usuwany podczas niszczenia instancji. Kopie zapasowe zarządzanych baz danych używają losowego klucza dla każdego pliku, chronionego parą kluczy RSA przypisaną do usługi.
 
-Szyfrowanie pamięci masowej chroni dane na nośnikach. Uprawnione aplikacje i użytkownicy bazy danych nadal mogą odczytywać dane za pośrednictwem usługi. Nie potwierdza to, że personel dostawcy nie może uzyskać dostępu do informacji o kontach ani że każde pole jest szyfrowane na poziomie aplikacji. Haszowanie haseł i kluczy API jest osobnym zabezpieczeniem; zobacz [Bezpieczne przechowywanie danych uwierzytelniających](../overview-and-basics/secure-storage-of-credentials.md).
+Szyfrowanie pamięci masowej chroni dane na nośnikach. Uprawnione aplikacje i użytkownicy bazy danych nadal mogą odczytywać dane za pośrednictwem usługi. Nie potwierdza to, że personel dostawcy nie może uzyskać dostępu do informacji o kontach ani że każde pole jest szyfrowane na poziomie aplikacji. Haszowanie haseł i kluczy API jest osobnym zabezpieczeniem; zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
 Spaces obsługuje również [SSE-C z kluczami dostarczonymi przez klienta](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Ta opcjonalna funkcja nie potwierdza, że DocBits używa SSE-C lub kluczy szyfrowania zarządzanych przez klienta.
 

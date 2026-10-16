@@ -40,7 +40,7 @@ Use-o para avaliar a prontidão: aumente a adoção primeiro e, em seguida, ativ
 
 ## O que os membros veem
 
-Um membro que precisa se cadastrar é direcionado para a configuração de 2FA no próximo login e escolhe um método (aplicativo autenticador, código por e-mail ou chave de acesso). As etapas para o usuário final estão descritas em [Autenticação de Dois Fatores (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Um membro que precisa se cadastrar é direcionado para a configuração de 2FA no próximo login e escolhe um método (aplicativo autenticador, código por e-mail ou chave de acesso). As etapas para o usuário final estão descritas em [Autenticação de Dois Fatores (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Controles de segurança relacionados
 

@@ -6,7 +6,7 @@ Esta página explica cómo obtener una cuenta de DocBits y cómo iniciar sesión
 * [Contraseña olvidada](#contraseña-olvidada) — restablece tu contraseña con un enlace de restablecimiento.
 * [Primera contraseña para cuentas creadas por el administrador](#primera-contraseña-para-cuentas-creadas-por-el-administrador) — establece la primera contraseña de una cuenta que tu administrador creó para ti.
 
-El inicio de sesión con una cuenta existente y la Autenticación de Dos Factores se tratan en [Autenticación de Dos Factores (2FA)](../../overview-and-basics/two-factor-authentication.md). Usa el menú de idioma en la esquina superior derecha de estos formularios si necesitas otro idioma de visualización.
+El inicio de sesión con una cuenta existente y la Autenticación de Dos Factores se tratan en [Autenticación de Dos Factores (2FA)](../../security/two-factor-authentication.md). Usa el menú de idioma en la esquina superior derecha de estos formularios si necesitas otro idioma de visualización.
 
 ## Registro
 
@@ -46,7 +46,7 @@ Después de enviar el formulario, DocBits muestra una página de confirmación y
 
 ## Contraseña olvidada
 
-DocBits almacena las contraseñas como hashes unidireccionales con sal. Una contraseña existente no se puede recuperar a partir de su hash, por lo que este procedimiento establece una nueva. Consulte [Almacenamiento seguro de credenciales](../../overview-and-basics/secure-storage-of-credentials.md).
+DocBits almacena las contraseñas como hashes unidireccionales con sal. Una contraseña existente no se puede recuperar a partir de su hash, por lo que este procedimiento establece una nueva. Consulte [Almacenamiento seguro de credenciales](../../security/secure-storage-of-credentials.md).
 
 Si olvidaste tu contraseña:
 

@@ -40,7 +40,7 @@ Utilisez-le pour évaluer l'état de préparation : augmentez d'abord l'adoption
 
 ## Ce que voient les membres
 
-Un membre tenu de s'enregistrer est dirigé vers la configuration de la 2FA lors de sa prochaine connexion et choisit une méthode (application d'authentification, code par e-mail, ou clé d'accès). Les étapes destinées à l'utilisateur final sont décrites dans [Authentification à deux facteurs (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Un membre tenu de s'enregistrer est dirigé vers la configuration de la 2FA lors de sa prochaine connexion et choisit une méthode (application d'authentification, code par e-mail, ou clé d'accès). Les étapes destinées à l'utilisateur final sont décrites dans [Authentification à deux facteurs (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Contrôles de sécurité associés
 

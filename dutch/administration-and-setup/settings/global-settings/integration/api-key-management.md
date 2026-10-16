@@ -65,4 +65,4 @@ Als u meer sleutels hebt dan er op één pagina passen, gebruik dan de paginabes
 
 Behandel de sleutel als een wachtwoord. Wie die heeft, kan handelen met de documenten en gegevens van uw organisatie.
 
-Zie [Veilige opslag van inloggegevens](../../../../overview-and-basics/secure-storage-of-credentials.md).
+Zie [Veilige opslag van inloggegevens](../../../../security/secure-storage-of-credentials.md).

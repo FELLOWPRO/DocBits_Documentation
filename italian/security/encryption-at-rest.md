@@ -4,7 +4,7 @@ description: Crittografia a riposo di DocBits su DigitalOcean, inclusi database,
 
 # Crittografia dei dati a riposo
 
-DocBits utilizza DigitalOcean Managed Databases e DigitalOcean Spaces. La verifica del **16 ottobre 2026** ha confermato servizi gestiti PostgreSQL, OpenSearch e Valkey per la produzione UE a Francoforte. Le [FAQ su sicurezza e conformità](../overview-and-basics/security-and-compliance-faq.md) documentano l’uso di Spaces per l’archiviazione.
+DocBits utilizza DigitalOcean Managed Databases e DigitalOcean Spaces. La verifica del **16 ottobre 2026** ha confermato servizi gestiti PostgreSQL, OpenSearch e Valkey per la produzione UE a Francoforte. Le [FAQ su sicurezza e conformità](security-and-compliance-faq.md) documentano l’uso di Spaces per l’archiviazione.
 
 Questa pagina descrive le misure di crittografia pubblicate da DigitalOcean per questi servizi. Le installazioni locali e le copie archiviate in altri sistemi richiedono una valutazione propria.
 
@@ -25,7 +25,7 @@ I dettagli su database e backup provengono dal [modello di sicurezza di Managed 
 
 DigitalOcean gestisce la crittografia dell’infrastruttura descritta. Per Managed Databases, documenta una chiave generata casualmente per ogni istanza e volume, eliminata alla distruzione dell’istanza. I backup dei database gestiti utilizzano una chiave casuale per file, protetta da una coppia di chiavi RSA specifica del servizio.
 
-La crittografia dell’archiviazione protegge i dati sui supporti. Le applicazioni e gli utenti autorizzati del database possono continuare a leggere i dati tramite il servizio. Questo non dimostra che il personale del fornitore non possa accedere alle informazioni degli account, né che ogni campo sia cifrato a livello applicativo. L’hashing delle password e delle chiavi API è una misura separata; vedere [Archiviazione sicura delle credenziali](../overview-and-basics/secure-storage-of-credentials.md).
+La crittografia dell’archiviazione protegge i dati sui supporti. Le applicazioni e gli utenti autorizzati del database possono continuare a leggere i dati tramite il servizio. Questo non dimostra che il personale del fornitore non possa accedere alle informazioni degli account, né che ogni campo sia cifrato a livello applicativo. L’hashing delle password e delle chiavi API è una misura separata; vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
 
 Spaces supporta anche [SSE-C con chiavi fornite dal cliente](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Questa funzionalità opzionale non dimostra che DocBits utilizzi SSE-C o chiavi di crittografia gestite dal cliente.
 

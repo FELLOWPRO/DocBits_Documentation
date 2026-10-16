@@ -4,7 +4,7 @@ description: Encryption at rest for DocBits on DigitalOcean, including databases
 
 # Encryption at Rest
 
-DocBits uses DigitalOcean Managed Databases and DigitalOcean Spaces. The review on **16 October 2026** confirmed managed PostgreSQL, OpenSearch, and Valkey services for EU production in Frankfurt. The [Security & Compliance FAQ](../overview-and-basics/security-and-compliance-faq.md) documents the use of Spaces for storage.
+DocBits uses DigitalOcean Managed Databases and DigitalOcean Spaces. The review on **16 October 2026** confirmed managed PostgreSQL, OpenSearch, and Valkey services for EU production in Frankfurt. The [Security & Compliance FAQ](security-and-compliance-faq.md) documents the use of Spaces for storage.
 
 The following describes DigitalOcean's published encryption controls for these services. On-premises installations and copies stored in other systems require their own assessment.
 
@@ -25,7 +25,7 @@ The database and backup details come from DigitalOcean's [Managed Databases secu
 
 DigitalOcean manages the infrastructure encryption described above. For Managed Databases, it documents a randomly generated key for each instance and volume, discarded when the instance is destroyed. Managed database backups use a random key per file, protected by a service-specific RSA key pair.
 
-Storage encryption protects data on storage media. Authorized applications and database users can still read data through the service. It does not establish that vendor personnel cannot access account information, or that every field has application-level encryption. Login password and API key hashing are separate controls; see [Secure Storage of Credentials](../overview-and-basics/secure-storage-of-credentials.md).
+Storage encryption protects data on storage media. Authorized applications and database users can still read data through the service. It does not establish that vendor personnel cannot access account information, or that every field has application-level encryption. Login password and API key hashing are separate controls; see [Secure Storage of Credentials](secure-storage-of-credentials.md).
 
 Spaces also supports [SSE-C with customer-provided keys](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). This optional capability does not establish that DocBits uses SSE-C or customer-managed encryption keys.
 

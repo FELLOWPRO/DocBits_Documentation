@@ -17,7 +17,7 @@ répertoriés n'ont connu aucune modification visible par le client._
   d'un appareil, et un appareil de confiance peut ignorer le second facteur
   pendant un certain temps. Chaque utilisateur peut l'activer pour lui-même ;
   les administrateurs peuvent l'imposer à toute l'organisation. Voir le
-  [guide Authentification à deux facteurs](../two-factor-authentication.md).
+  [guide Authentification à deux facteurs](../../security/two-factor-authentication.md).
 - **Tickets de support depuis l'écran d'erreur.** En cas de problème, vous
   pouvez désormais ouvrir un ticket de support directement depuis
   l'enregistrement d'erreur. Le ticket contient déjà le contexte technique ;

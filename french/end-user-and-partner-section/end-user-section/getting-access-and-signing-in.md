@@ -6,7 +6,7 @@ Cette page explique comment obtenir un compte DocBits et comment vous connecter 
 * [Mot de passe oublié](#mot-de-passe-oublie) — réinitialisez votre mot de passe avec un lien de réinitialisation.
 * [Premier mot de passe pour les comptes créés par un administrateur](#premier-mot-de-passe-pour-les-comptes-crees-par-un-administrateur) — définissez le premier mot de passe d'un compte créé pour vous par votre administrateur.
 
-La connexion avec un compte existant et l'authentification à deux facteurs sont décrites dans [Authentification à deux facteurs (2FA)](../../overview-and-basics/two-factor-authentication.md). Utilisez le menu des langues en haut à droite de ces formulaires si vous avez besoin d'une autre langue d'affichage.
+La connexion avec un compte existant et l'authentification à deux facteurs sont décrites dans [Authentification à deux facteurs (2FA)](../../security/two-factor-authentication.md). Utilisez le menu des langues en haut à droite de ces formulaires si vous avez besoin d'une autre langue d'affichage.
 
 ## Inscription
 
@@ -46,7 +46,7 @@ Après avoir soumis le formulaire, DocBits affiche une page de confirmation et e
 
 ## Mot de passe oublié
 
-DocBits stocke les mots de passe sous forme de hachages salés à sens unique. Un mot de passe existant ne peut pas être récupéré à partir de son hachage ; cette procédure en définit donc un nouveau. Voir [Stockage sécurisé des identifiants](../../overview-and-basics/secure-storage-of-credentials.md).
+DocBits stocke les mots de passe sous forme de hachages salés à sens unique. Un mot de passe existant ne peut pas être récupéré à partir de son hachage ; cette procédure en définit donc un nouveau. Voir [Stockage sécurisé des identifiants](../../security/secure-storage-of-credentials.md).
 
 Si vous avez oublié votre mot de passe :
 

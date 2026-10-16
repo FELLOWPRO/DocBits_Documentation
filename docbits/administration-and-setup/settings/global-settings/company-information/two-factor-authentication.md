@@ -40,7 +40,7 @@ Use it to gauge readiness: drive adoption up first, then switch the requirement 
 
 ## What members see
 
-A member who is required to enrol is sent to the 2FA setup on their next login and picks a method (authenticator app, email code, or passkey). The end-user steps are covered in [Two-Factor Authentication (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+A member who is required to enrol is sent to the 2FA setup on their next login and picks a method (authenticator app, email code, or passkey). The end-user steps are covered in [Two-Factor Authentication (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Related security controls
 

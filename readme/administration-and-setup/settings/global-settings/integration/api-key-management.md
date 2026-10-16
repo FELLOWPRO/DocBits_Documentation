@@ -64,4 +64,4 @@ If you have more keys than fit on one page, use the paging controls at the botto
 
 Treat the key like a password. Anyone who has it can act on your organization's documents and data.
 
-For password hashing, TLS, vendor visibility, and the distinction between DocBits keys and credentials for connected systems, see [Secure Storage of Credentials](../../../../overview-and-basics/secure-storage-of-credentials.md).
+For password hashing, TLS, vendor visibility, and the distinction between DocBits keys and credentials for connected systems, see [Secure Storage of Credentials](../../../../security/secure-storage-of-credentials.md).

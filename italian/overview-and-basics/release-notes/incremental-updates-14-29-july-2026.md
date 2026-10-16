@@ -17,7 +17,7 @@ I servizi non elencati non hanno avuto modifiche visibili ai clienti._
   smarrito, e un dispositivo attendibile può saltare il secondo fattore per un
   certo periodo. Ogni utente può attivarla per sé; gli amministratori possono
   renderla obbligatoria per l'intera organizzazione. Consultate la
-  [guida all'autenticazione a due fattori](../two-factor-authentication.md).
+  [guida all'autenticazione a due fattori](../../security/two-factor-authentication.md).
 - **Ticket di supporto dalla schermata di errore.** Quando qualcosa va storto,
   potete ora aprire un ticket di supporto direttamente dal record di errore.
   Il ticket contiene già il contesto tecnico, quindi non dovete descriverlo

@@ -40,7 +40,7 @@ Usalo per valutare la prontezza: aumenta prima l'adozione, poi attiva il requisi
 
 ## Cosa vedono i membri
 
-Un membro a cui è richiesta la registrazione viene indirizzato alla configurazione 2FA al suo prossimo accesso e sceglie un metodo (app di autenticazione, codice via email o passkey). I passaggi per l'utente finale sono descritti in [Autenticazione a due fattori (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Un membro a cui è richiesta la registrazione viene indirizzato alla configurazione 2FA al suo prossimo accesso e sceglie un metodo (app di autenticazione, codice via email o passkey). I passaggi per l'utente finale sono descritti in [Autenticazione a due fattori (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Controlli di sicurezza correlati
 

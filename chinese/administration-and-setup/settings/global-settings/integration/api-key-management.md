@@ -64,4 +64,4 @@ API 密钥可让其他系统（例如 ERP、脚本或合作伙伴应用程序）
 
 请像对待密码一样妥善保管密钥。任何持有密钥的人都可以操作您组织的文档和数据。
 
-有关密码哈希、TLS、供应商可见性，以及 DocBits 密钥与已连接系统凭据之间的区别，请参阅[凭据的安全存储](../../../../overview-and-basics/secure-storage-of-credentials.md)。
+有关密码哈希、TLS、供应商可见性，以及 DocBits 密钥与已连接系统凭据之间的区别，请参阅[凭据的安全存储](../../../../security/secure-storage-of-credentials.md)。

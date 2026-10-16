@@ -50,13 +50,13 @@
 **标题** 任务名称或主题
 
 ```
-Example: "Review Invoice #INV-2025-001 for approval"
+示例: "Review Invoice #INV-2025-001 for approval"
 ```
 
 **描述** 任务详情
 
 ```
-Example: "Invoice from Supplier ABC needs review.
+示例: "Invoice from Supplier ABC needs review.
 Amount: €5000
 Deadline: 2025-10-30
 Please verify pricing and quality."
@@ -71,14 +71,14 @@ Please verify pricing and quality."
 **分配用户** 接收任务的人员
 
 ```
-Example: John Smith (Finance Manager)
+示例: John Smith (Finance Manager)
 ```
 
 **电子邮件通知** 是否向被分配人员发送电子邮件提醒？
 
 ```
-✅ Yes: Person gets email
-❌ No: Task only in system
+✅ 是：人员会收到电子邮件
+❌ 否：任务仅显示在系统中
 ```
 
 #### 示例
@@ -113,15 +113,15 @@ Sarah 收到任务和电子邮件通知
 #### 与个人任务的区别
 
 ```
-Individual Task:
-- Only John sees it
-- John must do it
-- Others can't see it
+个人任务：
+- 只有 John 能看到
+- 必须由 John 完成
+- 其他人看不到
 
-Group Task:
-- Everyone in group sees it
-- Any group member can claim it
-- Distributed workload
+群组任务：
+- 群组中的每个人都能看到
+- 群组中的任何成员都可以认领
+- 工作量得以分配
 ```
 
 #### 工作流示例
@@ -171,13 +171,13 @@ Decision Table Returns（决策表返回）:
 #### 示例
 
 ```
-Document: Invoice from ABC Corp (Supplier A)
+文档：来自 ABC Corp (Supplier A) 的发票
     ↓
-Decision Table checks: Which supplier?
+决策表检查：供应商是哪一家？
     ↓
-Result: Supplier A → Procurement Team
+结果：Supplier A → 采购团队
     ↓
-Create and assign task to Procurement Team
+创建任务并分配给采购团队
 ```
 
 ***
@@ -197,27 +197,27 @@ Create and assign task to Procurement Team
 #### 工作方式
 
 ```
-Step 1: Create Task for Procurement Manager
-        (Priority 1)
+步骤 1：为采购经理创建任务
+        (优先级 1)
     ↓
-Step 2: Procurement Manager approves
+步骤 2：采购经理审批
     ↓
-Step 3: Create Task for Finance Manager
-        (Priority 2)
+步骤 3：为财务经理创建任务
+        (优先级 2)
     ↓
-Step 4: Finance Manager approves
+步骤 4：财务经理审批
     ↓
-Step 5: Export
+步骤 5：导出
 ```
 
 #### 优先级系统
 
 ```
-Priority 1 → Assign to: Person A
-Priority 2 → Assign to: Person B
-Priority 3 → Assign to: Person C
+优先级 1 → 分配给：Person A
+优先级 2 → 分配给：Person B
+优先级 3 → 分配给：Person C
 
-They must complete in order (1→2→3)
+必须按顺序完成 (1→2→3)
 ```
 
 #### 配置示例
@@ -252,11 +252,11 @@ Task Flow（任务流程）:
 #### 工作方式
 
 ```
-Two things happen:
-1. Document is assigned to: Person A
-2. Task is created for: Person A
+会同时发生两件事：
+1. 文档分配给：Person A
+2. 为 Person A 创建任务
 
-Both in one action
+通过一次操作完成
 ```
 
 #### 示例
@@ -319,14 +319,14 @@ ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL:
 #### 示例
 
 ```
-Document: Shipment notification
+文档：发货通知
     ↓
-Create Task for Facility Group:
-- Group: Berlin Warehouse Team
-- Task: "Prepare items for shipment"
-- Items: From document
+为设施群组创建任务：
+- 群组：Berlin Warehouse Team
+- 任务："Prepare items for shipment"
+- 行项目：来自文档
     ↓
-Berlin warehouse team gets task
+柏林仓库团队会收到任务
 ```
 
 ***
@@ -346,13 +346,13 @@ Berlin warehouse team gets task
 #### 工作方式
 
 ```
-Factory A (Step 1): Production
+工厂 A (步骤 1)：生产
     ↓
-Quality Check (Step 2): Verification
+质量检查 (步骤 2)：验证
     ↓
-Warehouse (Step 3): Packaging
+仓库 (步骤 3)：包装
     ↓
-Shipping (Step 4): Dispatch
+发货 (步骤 4)：派送
 ```
 
 #### 示例
@@ -386,15 +386,15 @@ Shipping (Step 4): Dispatch
 #### 示例
 
 ```
-Supplier status change notification
+供应商状态变更通知
     ↓
-Create Task for Procurement Group:
-- Task: "Update supplier records"
-- Supplier: ABC Corp
-- Action: Change status to 'On Hold'
-- Priority: High
+为采购群组创建任务：
+- 任务："Update supplier records"
+- 供应商：ABC Corp
+- 操作：将状态更改为 'On Hold'
+- 优先级：High
     ↓
-Procurement team is notified
+采购团队会收到通知
 ```
 
 ***
@@ -414,15 +414,15 @@ Procurement team is notified
 #### 示例
 
 ```
-Purchase Requisition received
+收到采购申请
     ↓
-Step 1: Buyer verifies (Priority 1)
+步骤 1：采购员验证 (优先级 1)
     ↓
-Step 2: Approver approves (Priority 2)
+步骤 2：审批人审批 (优先级 2)
     ↓
-Step 3: Director signs off (Priority 3)
+步骤 3：主管签字确认 (优先级 3)
     ↓
-All sign-offs complete → Release to supplier
+所有签字确认完成 → 发送给供应商
 ```
 
 ***
@@ -442,31 +442,31 @@ All sign-offs complete → Release to supplier
 #### 工作方式
 
 ```
-Document has field: "Approver Name: John Smith"
+文档包含字段："Approver Name: John Smith"
 
-Card checks: Is John in system?
-    If YES → Assign task to John
-    If NO → Assign to Fallback User (Sarah)
+卡片检查：系统中是否有 John？
+    If YES → 将任务分配给 John
+    If NO → 分配给备用用户 (Sarah)
 ```
 
 #### 示例
 
 ```
-Invoice field: "Contact: Mike Johnson"
+发票字段："Contact: Mike Johnson"
 
-Try to assign task to Mike Johnson
+尝试将任务分配给 Mike Johnson
     ↓
-If Mike doesn't exist in system:
+如果系统中不存在 Mike：
     ↓
-Use Fallback: Team Lead (Robert Brown)
+使用备用人员：团队负责人 (Robert Brown)
 ```
 
 #### 参数
 
 ```
-- Field to Read: "Approver Name"
-- Fallback User: Robert Brown
-- Task Details: Title, Description, Priority
+- 要读取的字段："Approver Name"
+- 备用用户：Robert Brown
+- 任务详情：标题、描述、优先级
 ```
 
 ***
@@ -478,19 +478,19 @@ Use Fallback: Team Lead (Robert Brown)
 #### 标题
 
 ```
-Good: "Review Invoice #INV-12345 - €5000 - Supplier ABC"
-Bad: "Approve something"
+好："Review Invoice #INV-12345 - €5000 - Supplier ABC"
+不好："Approve something"
 ```
 
 #### 描述
 
 ```
-Should include:
-✅ What to do
-✅ Deadline
-✅ Any special requirements
-✅ Who to contact
-✅ Link to document
+应包含：
+✅ 要做什么
+✅ 截止日期
+✅ 任何特殊要求
+✅ 联系谁
+✅ 文档链接
 ```
 
 #### 优先级
@@ -515,8 +515,8 @@ Should include:
 #### 截止日期（如有）
 
 ```
-When should task be completed by?
-Example: 2025-10-30 (5 days from now)
+任务应在什么时候之前完成？
+示例：2025-10-30 (从现在起 5 天)
 ```
 
 ***
@@ -526,26 +526,26 @@ Example: 2025-10-30 (5 days from now)
 ### 场景 1：简单审批
 
 ```
-Invoice Arrives (€2000)
+收到发票 (€2000)
     ↓
-Condition: Amount between €1000-€5000?
+条件：金额是否在 €1000-€5000 之间？
     ↓
-YES: Create Task for Finance Manager
+是：为财务经理创建任务
     ↓
-Finance Manager reviews and approves
+财务经理审核并批准
 ```
 
 ### 场景 2：多级审批
 
 ```
-Invoice Arrives (€50,000 - High Value)
+收到发票 (€50,000 - 高价值)
     ↓
-Create Sequential Tasks:
-1. Finance Team (Initial review)
-2. Finance Manager (Approval)
-3. Director (Final sign-off)
+创建顺序任务：
+1. 财务团队 (初步审核)
+2. 财务经理 (审批)
+3. 主管 (最终签字确认)
     ↓
-Each level completes → Next begins
+每个层级完成后 → 开始下一个层级
 ```
 
 ### 场景 3：并行任务
@@ -564,14 +564,14 @@ Each level completes → Next begins
 ### 场景 4：条件路由
 
 ```
-Invoice Arrives
+收到发票
     ↓
-Decision Table:
-  If amount > €10k → Assign to Director
-  If amount €1k-€10k → Assign to Manager
-  If amount < €1k → Assign to Team Lead
+决策表：
+  If 金额 > €10k → 分配给主管
+  If 金额 €1k-€10k → 分配给经理
+  If 金额 < €1k → 分配给团队负责人
     ↓
-Task created for correct person
+为相应人员创建任务
 ```
 
 ***

@@ -42,7 +42,7 @@ Net amount reduced = Reduced Tax amount * 100 / Vat rate reduced
 Vat rate reduced = Reduced Tax amount * 100 / Net amount reduced
 ```
 
-### 减税税额：
+### 优惠税率税额：
 
 ```
 Tax amount reduced = Reduced Tax amount + Vat rate reduced / 100

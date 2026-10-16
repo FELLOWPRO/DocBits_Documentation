@@ -54,28 +54,28 @@
 #### 工作方式
 
 ```
-Current Status: "Pending Approval"
+当前状态: "Pending Approval"
     ↓
-Check: Is status = "Pending Approval"?
+检查: 状态是否 = "Pending Approval"?
     ↓
-YES → Continue with action
-NO → Stop or do alternative action
+是 → 继续执行操作
+否 → 停止或执行其他操作
 ```
 
 #### 示例
 
 ```
-Condition: "Document status IS Pending Approval?"
+条件: "文档状态是否为 Pending Approval?"
     ↓
-If YES: Create approval task
-If NO: Do something else
+如果是: 创建审批任务
+如果否: 执行其他操作
 ```
 
 #### 参数
 
 ```
-Operator: IS / IS NOT
-Status: [Select status]
+运算符: IS / IS NOT
+状态: [选择状态]
 ```
 
 ***
@@ -94,10 +94,10 @@ Status: [Select status]
 #### 示例
 
 ```
-Condition: "Status is one of: [Pending Approval, Pending Second Approval, Workflow]?"
+条件: "状态是否为以下之一: [Pending Approval, Pending Second Approval, Workflow]?"
     ↓
-If status matches any: Continue
-If doesn't match: Stop
+如果状态与任一项匹配: 继续
+如果不匹配: 停止
 ```
 
 ***
@@ -111,34 +111,34 @@ If doesn't match: Stop
 #### 文档类型
 
 ```
-- Invoice
-- Credit Note
-- Purchase Order
-- Delivery Note
+- 发票
+- 贷项通知单
+- 采购订单
+- 交货单
 - ASN (Advanced Ship Notice)
-- Receipt
-- Return
-- Custom Types
+- 收货单
+- 退货单
+- 自定义类型
 ```
 
 #### 工作方式
 
 ```
-Document type: "Invoice"
+文档类型: "Invoice"
     ↓
-Check: Is type = "Invoice"?
+检查: 类型是否 = "Invoice"?
     ↓
-YES → Process as invoice
-NO → Process differently
+是 → 按发票处理
+否 → 采用其他方式处理
 ```
 
 #### 示例
 
 ```
-Condition: "Document type IS Invoice?"
+条件: "文档类型是否为 Invoice?"
     ↓
-If YES: Check PO match
-If NO: Skip PO validation
+如果是: 检查采购订单匹配情况
+如果否: 跳过采购订单验证
 ```
 
 ***
@@ -152,10 +152,10 @@ If NO: Skip PO validation
 #### 示例
 
 ```
-Condition: "Type is one of: [Invoice, Credit Note]?"
+条件: "类型是否为以下之一: [Invoice, Credit Note]?"
     ↓
-YES: Process financial document
-NO: Skip financial checks
+是: 处理财务文档
+否: 跳过财务检查
 ```
 
 ***
@@ -169,24 +169,24 @@ NO: Skip financial checks
 #### 组织
 
 ```
-- Finance Department
-- Procurement
-- Warehouse
-- Manufacturing
-- Quality Control
-- Distribution
-- Regional Offices
+- 财务部
+- 采购部
+- 仓库
+- 制造部
+- 质量控制部
+- 配送部
+- 区域办公室
 ```
 
 #### 示例
 
 ```
-Document belongs to: "Berlin Office"
+文档所属组织: "Berlin Office"
     ↓
-Check: Sub-Org = "Berlin Office"?
+检查: 子组织是否 = "Berlin Office"?
     ↓
-YES: Assign to Berlin team
-NO: Check other offices
+是: 分配给柏林团队
+否: 检查其他办公室
 ```
 
 ***
@@ -200,12 +200,12 @@ NO: Check other offices
 #### 工作方式
 
 ```
-PO Status: "Newly Imported" (First time seeing this PO)
+采购订单状态: "Newly Imported" (首次遇到此采购订单)
     ↓
-Check: Is new import?
+检查: 是否为新导入的采购订单?
     ↓
-YES: Do initial validation
-NO: Use cached PO data
+是: 执行初始验证
+否: 使用缓存的采购订单数据
 ```
 
 #### 使用场景
@@ -227,21 +227,21 @@ NO: Use cached PO data
 #### 工作方式
 
 ```
-Assigned to: "John Smith"
+分配给: "John Smith"
     ↓
-Check: Is assigned to "John Smith"?
+检查: 是否分配给 "John Smith"?
     ↓
-YES: Continue
-NO: Stop
+是: 继续
+否: 停止
 ```
 
 #### 示例
 
 ```
-Condition: "Assigned to IS 'Finance Manager'"?
+条件: 是否满足 "Assigned to IS 'Finance Manager'"?
     ↓
-If YES: Create approval task
-If NO: Skip approval
+如果是: 创建审批任务
+如果否: 跳过审批
 ```
 
 ***
@@ -255,10 +255,10 @@ If NO: Skip approval
 #### 示例
 
 ```
-Condition: "Assigned to one of: [John, Sarah, Mike]?"
+条件: "是否分配给以下人员之一: [John, Sarah, Mike]?"
     ↓
-YES: Continue
-NO: Stop
+是: 继续
+否: 停止
 ```
 
 ***
@@ -272,12 +272,12 @@ NO: Stop
 #### 示例
 
 ```
-Assigned to: "Finance Team" (10 members)
+分配给: "Finance Team" (10 名成员)
     ↓
-Check: Is assigned to Finance Team?
+检查: 是否分配给 Finance Team?
     ↓
-YES: Process for group
-NO: Check other groups
+是: 按组处理
+否: 检查其他组
 ```
 
 ***
@@ -291,10 +291,10 @@ NO: Check other groups
 #### 示例
 
 ```
-Condition: "Assigned to one of: [Finance, Procurement, Quality]?"
+条件: "是否分配给以下组之一: [Finance, Procurement, Quality]?"
     ↓
-YES: Continue
-NO: Stop
+是: 继续
+否: 停止
 ```
 
 ***
@@ -310,23 +310,23 @@ NO: Stop
 #### 工作方式
 
 ```
-Document Date: 2025-10-23
+文档日期: 2025-10-23
     ↓
-Check: Is date between 2025-10-01 and 2025-10-31?
+检查: 日期是否介于 2025-10-01 和 2025-10-31 之间?
     ↓
-YES (October) → Continue
-NO (Other month) → Stop
+是 (十月) → 继续
+否 (其他月份) → 停止
 ```
 
 #### 计算
 
 ```
-Formula:
-  Start Date ≤ Document Date ≤ End Date?
+公式:
+  开始日期 ≤ 文档日期 ≤ 结束日期?
 
-Example:
+示例:
   2025-01-01 ≤ 2025-10-23 ≤ 2025-10-31?
-  YES ✅ Within range
+  是 ✅ 在范围内
 ```
 
 #### 使用场景
@@ -338,18 +338,18 @@ Example:
 #### 示例
 
 ```
-Condition: "Document date between Oct 1 and Oct 31?"
+条件: "文档日期是否介于十月 1 日和十月 31 日之间?"
     ↓
-If YES: Oct invoices (monthly processing)
-If NO: Other month invoices
+如果是: 十月发票 (按月处理)
+如果否: 其他月份的发票
 ```
 
 #### 参数
 
 ```
-Start Date: [Select or enter]
-End Date: [Select or enter]
-Date Field: [Which field to check]
+开始日期: [选择或输入]
+结束日期: [选择或输入]
+日期字段: [要检查的字段]
 ```
 
 ***
@@ -363,29 +363,29 @@ Date Field: [Which field to check]
 #### 工作方式
 
 ```
-Today: 2025-10-23
+今天: 2025-10-23
     ↓
-Check: Is today > 2025-10-31?
+检查: 今天是否 > 2025-10-31?
     ↓
-NO → Deadline not passed
-YES → Deadline passed (overdue)
+否 → 截止日期尚未到
+是 → 已过截止日期 (逾期)
 ```
 
 #### 使用场景
 
 ```
-Is today past deadline? → Invoice is overdue
-Is today past promotion date? → Promotion ended
-Is today in quarter? → For quarterly reporting
+今天是否已过截止日期? → 发票已逾期
+今天是否已过促销日期? → 促销已结束
+今天是否在本季度内? → 用于季度报告
 ```
 
 #### 示例
 
 ```
-Condition: "Is today AFTER invoice due date?"
+条件: "今天是否晚于发票到期日?"
     ↓
-If YES: Invoice is overdue, escalate
-If NO: Invoice still within deadline
+如果是: 发票已逾期，升级处理
+如果否: 发票仍在截止日期内
 ```
 
 ***
@@ -399,14 +399,14 @@ If NO: Invoice still within deadline
 #### 工作方式
 
 ```
-Delivery Date from Invoice: 2025-10-25
+发票上的交货日期: 2025-10-25
     ↓
-Check Master Calendar: Is 2025-10-25 acceptable?
+检查主日历: 2025-10-25 是否可接受?
     ↓
-(Master calendar has list of acceptable dates)
+(主日历中列有可接受的日期)
     ↓
-YES: Date is acceptable
-NO: Date not in approved list
+是: 日期可接受
+否: 日期不在批准列表中
 ```
 
 #### 使用场景
@@ -418,11 +418,11 @@ NO: Date not in approved list
 #### 示例
 
 ```
-Supplier promised: 2025-10-25
-Invoice shows delivery: 2025-10-25
-Check Master Calendar: Is 2025-10-25 valid delivery date?
+供应商承诺日期: 2025-10-25
+发票显示的交货日期: 2025-10-25
+检查主日历: 2025-10-25 是否为有效交货日期?
     ↓
-YES: Delivery date acceptable ✅
+是: 交货日期可接受 ✅
 ```
 
 ***
@@ -438,12 +438,12 @@ YES: Delivery date acceptable ✅
 #### 工作方式
 
 ```
-Run Decision Table
+运行决策表
     ↓
-Does it return values?
+是否返回值?
     ↓
-YES: Data is available for next cards
-NO: No matching results
+是: 数据可供后续卡片使用
+否: 没有匹配结果
 ```
 
 #### 使用场景
@@ -455,12 +455,12 @@ NO: No matching results
 #### 示例
 
 ```
-Decision Table: "Route by supplier"
+决策表: "Route by supplier"
     ↓
-Condition: "Decision table returns data?"
+条件: "决策表是否返回数据?"
     ↓
-If YES: Use returned values for routing
-If NO: Use default routing
+如果是: 使用返回值进行路由
+如果否: 使用默认路由
 ```
 
 ***
@@ -474,11 +474,11 @@ If NO: Use default routing
 #### 工作方式
 
 ```
-Probability: 50%
+概率: 50%
     ↓
-Roll dice
+掷骰子
     ↓
-Random chance: 50% YES, 50% NO
+随机概率: 50% 是，50% 否
 ```
 
 #### 使用场景
@@ -490,22 +490,22 @@ Random chance: 50% YES, 50% NO
 #### 示例
 
 ```
-Condition: "Continue with 10% chance?"
+条件: "是否以 10% 的概率继续?"
     ↓
-90% of documents: Stop here
-10% of documents: Continue for detailed review
+90% 的文档: 在此处停止
+10% 的文档: 继续进行详细审核
 ```
 
 #### 计算
 
 ```
-If probability = 50%:
-  - 50% of documents continue
-  - 50% of documents stop
+如果概率 = 50%:
+  - 50% 的文档继续
+  - 50% 的文档停止
 
-If probability = 10%:
-  - 10% continue (1 in 10 documents)
-  - 90% stop
+如果概率 = 10%:
+  - 10% 继续 (每 10 份文档中 1 份)
+  - 90% 停止
 ```
 
 ***
@@ -519,23 +519,23 @@ If probability = 10%:
 #### 模块
 
 ```
-- PO Matching
-- Auto Accounting
+- 采购订单匹配
+- 自动会计处理
 - OCR
-- Document Classification
-- Supplier Management
-- Custom Modules
+- 文档分类
+- 供应商管理
+- 自定义模块
 ```
 
 #### 工作方式
 
 ```
-Module: "PO Matching"
+模块: "PO Matching"
     ↓
-Is PO Matching enabled?
+是否已启用 PO Matching?
     ↓
-YES: Do PO match validation
-NO: Skip PO checks
+是: 执行采购订单匹配验证
+否: 跳过采购订单检查
 ```
 
 #### 使用场景
@@ -555,34 +555,34 @@ NO: Skip PO checks
 #### 状态码
 
 ```
-200-299: ✅ Success
-300-399: ↪️ Redirect
-400-499: ❌ Client Error
-500-599: ❌ Server Error
+200-299: ✅ 成功
+300-399: ↪️ 重定向
+400-499: ❌ 客户端错误
+500-599: ❌ 服务器错误
 ```
 
 #### 工作方式
 
 ```
-Send HTTPS request
+发送 HTTPS 请求
     ↓
-Receive response code
+接收响应代码
     ↓
-Check: Was request successful (200)?
+检查: 请求是否成功 (200)?
     ↓
-YES: Continue with response data
-NO: Error handling
+是: 使用响应数据继续处理
+否: 进行错误处理
 ```
 
 #### 示例
 
 ```
-Send pricing request to API
+向 API 发送定价请求
     ↓
-Condition: "Did request return 200 (success)?"
+条件: "请求是否返回 200 (成功)?"
     ↓
-If YES: Use returned price
-If NO: Use fallback price
+如果是: 使用返回的价格
+如果否: 使用备用价格
 ```
 
 ***
@@ -596,33 +596,33 @@ If NO: Use fallback price
 #### 供应商状态
 
 ```
-✅ ACTIVE: Can do business
-⚠️ ON HOLD: Temporarily blocked
-❌ INACTIVE: No longer doing business
-⚠️ CONDITIONAL: Only for specific items
+✅ ACTIVE: 可以开展业务
+⚠️ ON HOLD: 暂时受限
+❌ INACTIVE: 不再开展业务
+⚠️ CONDITIONAL: 仅适用于特定商品
 ```
 
 #### 工作方式
 
 ```
-Supplier: ABC Corp
-Status in Database: ACTIVE
+供应商: ABC Corp
+数据库中的状态: ACTIVE
     ↓
-Check: Is status ACTIVE?
+检查: 状态是否为 ACTIVE?
     ↓
-YES: Process normally
-NO: Flag for review
+是: 正常处理
+否: 标记以供审核
 ```
 
 #### 示例
 
 ```
-Invoice from ABC Corp
+来自 ABC Corp 的发票
     ↓
-Condition: "Is supplier status ACTIVE?"
+条件: "供应商状态是否为 ACTIVE?"
     ↓
-If YES: Process normally
-If NO: Block or escalate
+如果是: 正常处理
+如果否: 阻止处理或升级处理
 ```
 
 ***
@@ -636,22 +636,22 @@ If NO: Block or escalate
 #### 供应商类型
 
 ```
-- Preferred Supplier
-- Standard Supplier
-- Spot Purchase
-- Framework Agreement
-- Strategic Partner
+- 优选供应商
+- 标准供应商
+- 临时采购
+- 框架协议
+- 战略合作伙伴
 ```
 
 #### 工作方式
 
 ```
-Supplier Type: "Preferred"
+供应商类型: "Preferred"
     ↓
-Check: Is preferred supplier?
+检查: 是否为优选供应商?
     ↓
-YES: Apply preferred supplier discounts
-NO: Standard pricing
+是: 应用优选供应商折扣
+否: 使用标准定价
 ```
 
 ***
@@ -661,47 +661,47 @@ NO: Standard pricing
 ### 流程 1：基于状态的处理
 
 ```
-Document Arrives
+文档到达
     ↓
-Check: Status = "Ready for Validation"?
+检查: 状态 = "Ready for Validation"?
     ↓
-YES: Validate document
+是: 验证文档
     ↓
-Check: Status = "Pending Approval"?
+检查: 状态 = "Pending Approval"?
     ↓
-YES: Create approval task
+是: 创建审批任务
     ↓
-Check: Status = "Error"?
+检查: 状态 = "Error"?
     ↓
-YES: Escalate to manager
+是: 升级给经理处理
 ```
 
 ### 流程 2：基于供应商的处理
 
 ```
-Invoice Arrives
+发票到达
     ↓
-Check: Supplier status ACTIVE?
+检查: 供应商状态是否为 ACTIVE?
     ↓
-NO: Block and escalate
+否: 阻止处理并升级处理
     ↓
-YES: Check: Supplier is preferred?
+是: 检查: 供应商是否为优选供应商?
     ↓
-YES: Fast track approval
-NO: Standard approval
+是: 快速审批
+否: 标准审批
 ```
 
 ### 流程 3：基于金额并检查日期
 
 ```
-Invoice Arrives
+发票到达
     ↓
-Check: Amount > €10,000?
+检查: 金额 > €10,000?
     ↓
-YES: Check: Date within Oct (fiscal period)?
+是: 检查: 日期是否在十月 (财政期间) 内?
     ↓
-YES: Assign to Finance Director
-NO: Assign to Finance Manager
+是: 分配给财务总监
+否: 分配给财务经理
 ```
 
 ***
@@ -752,14 +752,14 @@ NO: Assign to Finance Manager
 ## 组合多个条件
 
 ```
-Condition 1: Type = Invoice?
+条件 1: 类型 = Invoice?
     AND
-Condition 2: Amount > €5000?
+条件 2: 金额 > €5000?
     AND
-Condition 3: Supplier status = Active?
+条件 3: 供应商状态 = Active?
     ↓
-ALL TRUE → Process
-SOME FALSE → Stop
+全部为真 → 处理
+部分为假 → 停止
 ```
 
 ***

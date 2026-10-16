@@ -42,16 +42,14 @@ Aby uzyskać informacje dotyczące dostępności w Twoim środowisku oraz przeł
 
 Korzystaj z tych przewodników równolegle z notami wydania, aby zrozumieć powiązane funkcje i ich konfigurację. Filmy dostępne w języku polskim są podlinkowane poniżej; pozostałe filmy są wyraźnie oznaczone jako angielskie.
 
-| Temat | Film |
-| --- | --- |
-| Wybór odpowiedniej automatyzacji — w tym miejsce Reguł dopasowywania zamówień | [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
-| Zasady transformacji | [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
-| Niestandardowe reguły walidacji | [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
-| Układy i reguły selekcji | [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
-| Touchless Intelligence | [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
-| Walidacja e-faktur | [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
-| Użytkownicy i dostęp administratora | [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
-| Podorganizacje | [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
+* [Wybór odpowiedniej automatyzacji — w tym miejsce Reguł dopasowywania zamówień](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pl.mp4)
+* [Zasady transformacji](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pl.mp4)
+* [Niestandardowe reguły walidacji (Film po angielsku)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)
+* [Układy i reguły selekcji (Film po angielsku)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
+* [Touchless Intelligence](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/pl.mp4)
+* [Walidacja e-faktur](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/pl.mp4)
+* [Użytkownicy i dostęp administratora](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/pl.mp4)
+* [Podorganizacje](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/pl.mp4)
 
 ### AI Table: sześć krótkich filmów
 

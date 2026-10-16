@@ -14,15 +14,15 @@ Solange der Dienst ausgeschaltet ist, können die Filter und die Protokolltabell
 
 ## Ein Ereignis finden
 
-| Steuerelement        | Funktion                                                                            |
-| -------------------- | ----------------------------------------------------------------------------------- |
-| **Time Range**       | Beschränkt die Liste auf einen Zeitraum wie Last Hour, Today oder Last 7 Days.      |
-| **Action Type**      | Schließt die Aktionsarten **Create**, **Update** und **Delete** ein oder aus.       |
-| **Resource Type**    | Beschränkt die Ergebnisse auf einen Ressourcentyp wie Dokumente oder Einstellungen. |
-| **Search logs...**   | Durchsucht die sichtbaren Protokolleinträge nach Text.                              |
-| **Refresh**          | Lädt die neuesten passenden Einträge einmal.                                        |
-| **Auto-refresh**     | Hält die Liste automatisch aktuell, solange die Seite geöffnet ist.                 |
-| **Export**           | Lädt die aktuellen Protokolldaten als JSON-Datei herunter.                          |
-| **Records per page** | Legt fest, wie viele Einträge pro Seite angezeigt werden.                           |
+| Steuerelement | Funktion |
+|---|---|
+| **Time Range** | Beschränkt die Liste auf einen Zeitraum wie Last Hour, Today oder Last 7 Days. |
+| **Action Type** | Schließt die Aktionsarten **Create**, **Update** und **Delete** ein oder aus. |
+| **Resource Type** | Beschränkt die Ergebnisse auf einen Ressourcentyp wie Dokumente oder Einstellungen. |
+| **Search logs...** | Durchsucht die sichtbaren Protokolleinträge nach Text. |
+| **Refresh** | Lädt die neuesten passenden Einträge einmal. |
+| **Auto-refresh** | Hält die Liste automatisch aktuell, solange die Seite geöffnet ist. |
+| **Export** | Lädt die aktuellen Protokolldaten als JSON-Datei herunter. |
+| **Records per page** | Legt fest, wie viele Einträge pro Seite angezeigt werden. |
 
 Die Übersichtskarten über der Tabelle fassen die Treffer für die gewählten Filter zusammen und behalten ihre englischen Beschriftungen in der Anwendung: **Total Actions** zählt alle Ereignisse, **Created** die Erstellungen, **Updated** die Änderungen und **Deleted** die Löschungen. In der Tabelle zeigt **TIMESTAMP**, wann ein Ereignis stattgefunden hat, **USER** benennt den Akteur, **ACTION** die Änderung, **TYPE** den betroffenen Bereich (zum Beispiel Dokumente oder Einstellungen) und **RESOURCE** das konkrete Element. Öffnen Sie die Detailansicht einer Zeile, um die aufgezeichnete Änderung im Vorher-Nachher-Vergleich zu prüfen. Wenn keine Ereignisse erscheinen, prüfen Sie zuerst, ob der Dienst eingeschaltet ist, und erweitern Sie den Zeitraum, bevor Sie die übrigen Filter ändern.

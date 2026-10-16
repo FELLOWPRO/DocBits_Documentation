@@ -13,13 +13,13 @@ Der **Wissensgraph-Explorer** zeigt Ihnen die Verbindungen zwischen Lieferanten,
 
 ## Auswählen, was Sie sehen
 
-| Bedienelement                 | Was es bewirkt                                                                                                                                                                                                                                |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Navigation**                | Wechselt zwischen **Vendor Overview** (verbundene Lieferanten), **Vendor Intelligence** (eine Lieferantentabelle), **Document Journey** (Schritte und Varianten in der Dokumentenverarbeitung) und **Anomalien** (ungewöhnliche Beziehungen). |
-| **Typ**                       | Wählt die Arten von Elementen aus, auf die Sie sich konzentrieren möchten, etwa Documents, Vendors, Purchase Orders oder Invoices. Ausgewählte Typen grenzen auch die Suchergebnisse ein.                                                     |
-| **Graph-Statistiken**         | Zeigt die Anzahl der aktuell verfügbaren Knoten (Elemente) und Kanten (Verbindungen). Blenden Sie diesen Bereich nach Bedarf ein oder aus.                                                                                                    |
-| **Vertrauen**                 | Legen Sie hier die minimale Beziehungs-Konfidenz fest, die beim Erweitern eines Knotens gilt. Ein höherer Wert engt die angezeigten Verbindungen ein.                                                                                         |
-| **Graph neu berechnen**       | Startet eine neue Graphberechnung. Warten Sie, bis der Fortschritt abgeschlossen ist, bevor Sie erneut suchen.                                                                                                                                |
-| **Graph Explorer / Analytik** | Wechselt zwischen dem interaktiven Graphen und zusammenfassenden Diagrammen. **Analytik** zeigt Zahlen und Diagramme, wenn Graphdaten vorhanden sind; ein leerer Graph lässt auch **Analytik** leer.                                          |
+| Bedienelement | Was es bewirkt |
+| --- | --- |
+| **Navigation** | Wechselt zwischen **Vendor Overview** (verbundene Lieferanten), **Vendor Intelligence** (eine Lieferantentabelle), **Document Journey** (Schritte und Varianten in der Dokumentenverarbeitung) und **Anomalien** (ungewöhnliche Beziehungen). |
+| **Typ** | Wählt die Arten von Elementen aus, auf die Sie sich konzentrieren möchten, etwa Documents, Vendors, Purchase Orders oder Invoices. Ausgewählte Typen grenzen auch die Suchergebnisse ein. |
+| **Graph-Statistiken** | Zeigt die Anzahl der aktuell verfügbaren Knoten (Elemente) und Kanten (Verbindungen). Blenden Sie diesen Bereich nach Bedarf ein oder aus. |
+| **Vertrauen** | Legen Sie hier die minimale Beziehungs-Konfidenz fest, die beim Erweitern eines Knotens gilt. Ein höherer Wert engt die angezeigten Verbindungen ein. |
+| **Graph neu berechnen** | Startet eine neue Graphberechnung. Warten Sie, bis der Fortschritt abgeschlossen ist, bevor Sie erneut suchen. |
+| **Graph Explorer / Analytik** | Wechselt zwischen dem interaktiven Graphen und zusammenfassenden Diagrammen. **Analytik** zeigt Zahlen und Diagramme, wenn Graphdaten vorhanden sind; ein leerer Graph lässt auch **Analytik** leer. |
 
-Wenn Sie eine Abweichung zwischen einer Rechnung und ihrer Bestellung klären müssen, fahren Sie mit dem [Bestellnummer Abgleich Bildschirm](../end-user-and-partner-section/end-user-section/purchase-order-matching.md) fort. Für umfassendere Kennzahlen außerhalb des Graphen siehe das [Analytics Dashboard](../administration-and-setup/analytics-dashboard.md).
+Wenn Sie eine Abweichung zwischen einer Rechnung und ihrer Bestellung klären müssen, fahren Sie mit dem [Bestellnummer Abgleich Bildschirm](../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md) fort. Für umfassendere Kennzahlen außerhalb des Graphen siehe das [Analytics Dashboard](../administration-and-setup/analytics-dashboard.md).

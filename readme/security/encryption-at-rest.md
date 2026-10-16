@@ -1,10 +1,10 @@
 ---
-description: Crittografia a riposo di DocBits su DigitalOcean, inclusi database, Spaces, copertura dei backup e domanda 4.8.
+description: Crittografia a riposo di DocBits su DigitalOcean, inclusi database, Spaces e copertura dei backup.
 ---
 
 # Crittografia dei dati a riposo
 
-DocBits utilizza DigitalOcean Managed Databases e DigitalOcean Spaces. La verifica del **16 ottobre 2026** ha confermato servizi gestiti PostgreSQL, OpenSearch e Valkey per la produzione UE a Francoforte. Le [FAQ su sicurezza e conformità](security-and-compliance-faq.md) documentano l’uso di Spaces per l’archiviazione.
+DocBits utilizza DigitalOcean Managed Databases e DigitalOcean Spaces. La verifica del **16 ottobre 2026** ha confermato servizi gestiti PostgreSQL, OpenSearch e Valkey per la produzione UE a Francoforte. Le [FAQ su sicurezza e conformità](../overview-and-basics/security-and-compliance-faq.md) documentano l’uso di Spaces per l’archiviazione.
 
 Questa pagina descrive le misure di crittografia pubblicate da DigitalOcean per questi servizi. Le installazioni locali e le copie archiviate in altri sistemi richiedono una valutazione propria.
 
@@ -25,20 +25,18 @@ I dettagli su database e backup provengono dal [modello di sicurezza di Managed 
 
 DigitalOcean gestisce la crittografia dell’infrastruttura descritta. Per Managed Databases, documenta una chiave generata casualmente per ogni istanza e volume, eliminata alla distruzione dell’istanza. I backup dei database gestiti utilizzano una chiave casuale per file, protetta da una coppia di chiavi RSA specifica del servizio.
 
-La crittografia dell’archiviazione protegge i dati sui supporti. Le applicazioni e gli utenti autorizzati del database possono continuare a leggere i dati tramite il servizio. Questo non dimostra che il personale del fornitore non possa accedere alle informazioni degli account, né che ogni campo sia cifrato a livello applicativo. L’hashing delle password e delle chiavi API è una misura separata; vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
+La crittografia dell’archiviazione protegge i dati sui supporti. Le applicazioni e gli utenti autorizzati del database possono continuare a leggere i dati tramite il servizio. Questo non dimostra che il personale del fornitore non possa accedere alle informazioni degli account, né che ogni campo sia cifrato a livello applicativo. L’hashing delle password e delle chiavi API è una misura separata; vedere [Archiviazione sicura delle credenziali](../overview-and-basics/secure-storage-of-credentials.md).
 
 Spaces supporta anche [SSE-C con chiavi fornite dal cliente](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Questa funzionalità opzionale non dimostra che DocBits utilizzi SSE-C o chiavi di crittografia gestite dal cliente.
 
-## Copertura dei backup
+## Crittografia dei backup
 
-I backup dei database gestiti, gli snapshot dei volumi e i backup delle immagini dei Droplet sono prodotti diversi. Le [limitazioni dei backup dei Droplet](https://docs.digitalocean.com/products/backups/details/limits/) indicano che tali backup di immagini non sono cifrati a riposo. Questa verifica non ha stabilito che DocBits utilizzi quel prodotto di backup.
+I backup creati da DigitalOcean Managed Databases sono cifrati con AES-256-CTR e protetti dalle modifiche non rilevate tramite HMAC-SHA256. Le chiavi di crittografia dei singoli file sono protette da RSA-3072. Gli snapshot dei volumi ereditano la crittografia del volume DigitalOcean sottostante. Queste informazioni descrivono le funzioni di backup dei servizi gestiti indicati.
 
-Le misure descritte consentono quindi una dichiarazione limitata ai servizi indicati. Dump di database, file esportati, archivi a lungo termine e copie di disaster recovery aggiuntivi richiedono la conferma della destinazione di archiviazione, della crittografia e della gestione delle chiavi prima di estendere la garanzia a tutte le copie. Un calendario di backup o un’architettura cloud/serverless, da soli, non dimostrano questa copertura.
+## Tipi di crittografia a riposo
 
-## 4.8 — Tipi di crittografia a riposo
-
-Per l’ambito documentato è possibile utilizzare il testo seguente:
+Di seguito sono riepilogati i principali metodi di crittografia dei servizi indicati:
 
 > DocBits utilizza DigitalOcean Managed Databases e Spaces. I dati dei database gestiti sono cifrati a riposo a livello di intero volume tramite LUKS con AES-256-XTS (512 bit di materiale combinato di chiave XTS). I backup dei database gestiti utilizzano AES-256-CTR con protezione dell’integrità HMAC-SHA256 e RSA-3072 per proteggere le chiavi di crittografia dei singoli file. Spaces utilizza la crittografia dell’intero disco con AES-XTS a 256 bit sui supporti fisici.
 >
-> Queste misure a livello di archiviazione coprono i dati sui volumi e dischi protetti; non implicano la crittografia separata di ogni campo del database. DigitalOcean gestisce le chiavi di crittografia dell’infrastruttura. Questa dichiarazione comprende i servizi gestiti indicati. La crittografia e la gestione delle chiavi di esportazioni, archivi e copie di backup aggiuntivi richiedono una conferma separata per l’ambiente interessato.
+> Queste misure a livello di archiviazione coprono i dati sui volumi e dischi protetti; non implicano la crittografia separata di ogni campo del database. DigitalOcean gestisce le chiavi di crittografia dell’infrastruttura. Questa dichiarazione comprende i servizi gestiti indicati.

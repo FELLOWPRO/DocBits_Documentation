@@ -1,6 +1,6 @@
 # Altri controlli di sicurezza
 
-Verificato il **16 ottobre 2026** per la domanda **4.17**. Le evidenze degli audit pubblicati sono distinte dall'inventario attuale dell'infrastruttura.
+Verificato il **16 ottobre 2026**. Le evidenze degli audit pubblicati sono distinte dall'inventario attuale dell'infrastruttura.
 
 | Controllo | Ambito documentato |
 | --- | --- |
@@ -17,6 +17,6 @@ Verificato il **16 ottobre 2026** per la domanda **4.17**. Le evidenze degli aud
 
 [Certificazioni](architecture/certifications.md) contiene i report e i periodi esaminati. Gli audit storici sostengono i controlli per l'ambito valutato; l'inventario conferma risorse presenti alla data della verifica, non un audit completo della configurazione.
 
-Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md), [Cifratura a riposo](encryption-at-rest.md) e [Gestione delle vulnerabilità](vulnerability-management.md).
+Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md), [Cifratura a riposo](../security/encryption-at-rest.md) e [Gestione delle vulnerabilità](vulnerability-management.md).
 
 Per restrizioni del deployment, requisiti mobili o politiche attuali: **compliance@fellowpro.com**.

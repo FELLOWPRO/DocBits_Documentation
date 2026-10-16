@@ -2,6 +2,8 @@
 
 **Disponibilità di NOVA R1.1:** Disponibile nell’ambiente di test dal **16 ottobre 2026**. Il rilascio in produzione è previsto per il **4 novembre 2026**.
 
+**DocBits è il prodotto. NOVA indica il ciclo di rilascio.** [Guarda il video sul nuovo rilascio di DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/it.mp4) · [Sottotitoli](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/it.vtt).
+
 **Versioni dei servizi nell’ambiente di test: 16 ottobre 2026**
 
 NOVA include tutte le funzionalità precedentemente disponibili come beta in VESTA come funzionalità standard, insieme alla convalida guidata dei documenti, a più modi per migliorare l'automazione, a controlli più chiari per le fatture elettroniche e a un migliore controllo sugli import e sull'elaborazione dei documenti. Queste note descrivono le aggiunte visibili al cliente nelle versioni del servizio elencate di seguito, rispetto all'ultimo [hotfix VESTA pubblicato, R1.0.15 del 14 ottobre 2026](incremental-updates-14-october-2026.md), inclusi gli hotfix VESTA precedenti.

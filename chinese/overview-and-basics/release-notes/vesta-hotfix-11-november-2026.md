@@ -7,7 +7,7 @@
 ## 对您团队的影响
 
 * **原测试版功能成为常规 VESTA 功能。** 未使用过 VESTA 测试版的团队将通过此热修复获得这些功能的访问权限。
-* **规则和布局控制直接可用。** 这包括文档类型高级设置中的 **管理布局**、[**自定义验证规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules) 和 [**转换规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules)，无需测试版链接。
+* **规则和布局控制直接可用。** 这包括文档类型高级设置中的 **管理布局**、[**自定义验证规则**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和 [**转换规则**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)，无需测试版链接。
 * **现有配置和权限仍然适用。** 管理员继续控制组织设置和文档类型开关；用户需要适当的访问权限。
 
 | 发布版本 | 原 VESTA 测试版功能的可用性 |
@@ -17,9 +17,9 @@
 
 ## 规则设置指南
 
-* [**转换规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules)：清理和重写提取的值，构建步骤序列并预览结果。**观看：** [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4)。
-* [**自定义验证规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules)：定义字段和表格行的检查项，选择条件和严重性，并测试您的规则。**观看：** [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)。
-* [**采购订单匹配规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules)：配置匹配类型、容差和执行顺序，并管理规则版本。**相关视频 — 选择合适的自动化：** [英文视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4)。
+* [**转换规则**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)：清理和重写提取的值，构建步骤序列并预览结果。**观看：** [观看视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4)。
+* [**自定义验证规则**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md)：定义字段和表格行的检查项，选择条件和严重性，并测试您的规则。**观看：** [观看视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)。
+* [**采购订单匹配规则**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)：配置匹配类型、容差和执行顺序，并管理规则版本。**相关视频 — 选择合适的自动化：** [观看视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4)。
 
 [浏览所有功能视频](nova-major-release.md#watch-the-feature-videos)，包括布局、Touchless Intelligence、电子发票验证以及六部分 AI Table 系列。
 

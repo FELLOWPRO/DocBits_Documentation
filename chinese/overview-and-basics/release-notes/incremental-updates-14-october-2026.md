@@ -7,7 +7,7 @@
 > **下一个 VESTA 热修复版本：[2026 年 11 月 11 日（计划中）](vesta-hotfix-11-november-2026.md)。** 所有之前在 VESTA 中作为 Beta 提供的功能现在都是 NOVA 的常规功能，并将随该热修复版本成为 VESTA 的常规功能。
 
 _2026 年 10 月 14 日 DocBits 生产环境热修复版本（版本
-R1.0.15）中的变更，涵盖自 [9 月 15 日热修复版本（英文）](https://docs.docbits.com/overview-and-basics/release-notes/incremental-updates-15-september-2026) 以来的所有内容。
+R1.0.15）中的变更，涵盖自 [9 月 15 日热修复版本](incremental-updates-15-september-2026.md) 以来的所有内容。
 每个服务列出正在部署的版本，然后以通俗易懂的语言说明
 新增或修复的内容。未列出的服务没有面向客户的变更。_
 
@@ -279,7 +279,7 @@ field stores "leave empty" on its own; field suppression).
 R1.2 / R1.4: DRFS-535 (receipt availability flag), DOP-53 (UOM conversion).
 Added from the Ready for Production Release list: DRFS-742, DU-220, MAR-67, DRFS-708, DRFS-820,
 DRFS-723, DRFS-724, DRFS-726. Not on the page (no matching code in the delta, check by hand):
-MEF-169 (S/MIME invoices from one supplier not arriving, Email Service version unchanged), DMB-391.
+MEF-169（某一供应商的 S/MIME 发票未送达，Email Service 版本未变更）、DMB-391。
 Shipped although Release No. is empty or stale: OBO-156, CORE-6102, CORE-6154, CORE-6155,
 CORE-6150, CORE-6169, CORE-6181, CORE-6183, CORE-6185, CORE-6187, CORE-2606, CORE-2461,
 CORE-2457, CORE-6092 (R1.0.14 labels). -->

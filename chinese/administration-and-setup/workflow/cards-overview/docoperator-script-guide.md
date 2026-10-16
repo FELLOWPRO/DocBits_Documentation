@@ -1,0 +1,501 @@
+# 运行 DocOperator 提示（自动化脚本）
+
+***
+
+将此卡片添加到 Workflow Builder 的 **Then** 组中——当 When/And 条件匹配时运行的操作：
+
+<figure><img src="../../../.gitbook/assets/workflow_designer_cards.png" alt="Workflow Builder 画布，包含 When、And 和 Then 卡片组"><figcaption><p>通过 <strong>Add Card</strong> 将 <strong>Run DocOperator Prompt</strong> 卡片添加到 <strong>Then</strong> 组。</p></figcaption></figure>
+
+***
+
+## 📌 版本信息
+
+**当前版本：** v3（最新且推荐） **状态：** ✅ 活跃
+
+**版本历史：**
+
+* v2 → DocOperator 的原始实现
+* **v3 → 当前版本**（新增执行控制参数）
+* v4 → 已弃用（功能已回退）
+
+**变更内容：** v3 新增了可选的“执行提示”参数，以便更好地控制执行。v4 曾尝试回退此功能，但该版本已弃用。
+
+📖 [版本历史与变更](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#3-action_run_docoperator_script--) | [完整卡片数据库](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md#action_run_docoperator_script)
+
+***
+
+## 用途
+
+此卡片使用 DocOperator 运行自动化浏览器操作或脚本。可以把它想象成一个机器人，能像人一样与网站或系统交互——点击按钮、填写表单、提取数据等。
+
+**实际示例：**贵公司使用基于 Web 的采购系统。此卡片可以自动登录、搜索产品、检查库存情况并获取当前价格，全程无需人工操作。
+
+***
+
+## 何时使用此卡片
+
+在以下情况下使用此卡片：
+
+* 自动化操作没有 API 的网站
+* 从网页提取数据
+* 自动填写表单
+* 登录系统并检索信息
+* 自动执行重复性人工任务
+* 与尚未集成的旧系统交互
+
+**常见场景：**
+
+* 登录供应商网站并获取实时库存
+* 自动填写外部系统中的表单
+* 从未提供 API 的网页提取数据
+* 在快递公司网站上查询配送状态
+* 从无法通过 API 访问的系统获取价格
+
+***
+
+## 工作原理
+
+1. **触发卡片：**工作流运行到此卡片，且条件已满足
+2. **启动脚本：**DocOperator 机器人开始运行自动化脚本
+3. **机器人执行操作：**机器人执行点击、输入、滚动、提取等操作
+4. **提取数据：**机器人从网页收集信息
+5. **返回数据：**数据返回到 DocFlow，供后续卡片使用
+6. **超时处理：**如果脚本运行时间过长，则会停止并返回已获取的数据
+
+***
+
+## 参数说明
+
+### DocOperator 提示/脚本
+
+用于准确指示 DocOperator 执行哪些操作的自动化脚本
+
+**示例（自然语言）：**
+
+```
+1. Go to https://supplier.com/login
+2. Enter username: myuser
+3. Enter password: mypass
+4. Click Login button
+5. Search for product "ABC123"
+6. Extract the price
+7. Return the price
+```
+
+### 变量
+
+要传入脚本的数据
+
+**示例：**
+
+```
+product_id: "ABC123"
+supplier_code: "SUPP-001"
+```
+
+可在脚本中按如下方式使用这些变量：
+
+```
+Search for product "{product_id}"
+Find supplier "{supplier_code}"
+```
+
+### 最大步骤数
+
+允许机器人执行的操作次数
+
+**常见取值：**
+
+* 简单任务（例如获取一个价格）：10–20 步
+* 中等复杂度任务（填写表单并提取数据）：20–50 步
+* 复杂工作流（登录、搜索并验证）：50–100 步
+
+**重要原因：**防止脚本陷入无限循环或运行时间过长
+
+### 最大重试次数
+
+如果机器人执行某个操作失败，应重试多少次？
+
+**示例：**
+
+* 1：尝试一次，失败后继续
+* 3：尝试 3 次后放弃
+* 5：坚持重试 5 次
+
+***
+
+## 分步示例
+
+### 场景：从网站获取供应商价格
+
+**脚本定义：**
+
+```
+Step 1: Open website https://prices.supplier-xyz.com
+Step 2: Click on "Product Lookup"
+Step 3: Enter product code: ABC-123
+Step 4: Click "Search"
+Step 5: Wait for results to load (3 seconds)
+Step 6: Extract price from the page
+Step 7: Extract available quantity
+Step 8: Return both values
+```
+
+**传入的变量：**
+
+```
+product_code = "ABC-123"
+supplier_name = "Supplier XYZ"
+```
+
+**使用变量的脚本：**
+
+```
+Open website https://prices.{supplier_name}.com
+Enter product code: {product_code}
+Extract price and quantity
+```
+
+**预期结果：**
+
+```
+price: 45.50
+quantity_available: 500
+```
+
+***
+
+## DocOperator 可执行的操作类型
+
+### 导航
+
+* 访问 URL
+* 点击链接
+* 按下按钮
+* 滚动页面
+
+### 填写表单
+
+* 在字段中输入文本
+* 选择下拉选项
+* 勾选或取消勾选复选框
+* 点击按钮
+
+### 数据提取
+
+* 读取页面文本
+* 提取数字
+* 获取表格数据
+* 复制信息
+
+### 等待
+
+* 等待页面加载
+* 等待元素出现
+* 等待动态内容加载
+
+### 条件逻辑
+
+* 如果某项内容存在，则执行相应操作
+* 如果文本匹配，则……
+* 统计结果并据此执行操作
+
+***
+
+## 常见用例
+
+### 1. 获取实时价格
+
+**场景：**供应商没有 API，但网站上显示价格
+
+**脚本：**
+
+```
+1. Go to supplier website
+2. Search for product
+3. Extract price from results
+4. Return price to DocFlow
+5. Use price to validate invoice
+```
+
+### 2. 检查库存情况
+
+**场景：**需要了解供应商是否有库存
+
+**脚本：**
+
+```
+1. Log into supplier portal
+2. Search for product
+3. Extract availability status
+4. Extract delivery time
+5. Return both to DocFlow
+```
+
+### 3. 自动提交表单
+
+**场景：**需要在外部网站上填写表单
+
+**脚本：**
+
+```
+1. Navigate to form page
+2. Fill Company Name field
+3. Fill Contact Email field
+4. Select Country from dropdown
+5. Upload file attachment
+6. Click Submit button
+7. Capture confirmation message
+```
+
+### 4. 验证数据录入
+
+**场景：**验证两个不同系统中的数据是否一致
+
+**脚本：**
+
+```
+1. Go to System A
+2. Search for Order #123
+3. Extract order amount
+4. Go to System B
+5. Search for Order #123
+6. Extract order amount
+7. Compare amounts
+8. Return true/false if they match
+```
+
+***
+
+## 配置步骤
+
+### 步骤 1：创建脚本
+
+1. 定义要实现的目标
+2. 将任务拆分为小步骤
+3. 清晰地编写每个步骤
+4. 先手动测试（打开网站并亲自操作）
+5. 准确记录要点击的位置、要输入的内容以及要提取的数据
+
+### 步骤 2：确定变量
+
+1. 哪些数据会因文档而异？
+2. 哪些数据需要传入脚本？
+3. 定义变量名称
+4. 指定变量在脚本中的使用位置
+
+### 步骤 3：设置参数
+
+* **最大步骤数：**根据脚本复杂度设置
+* **最大重试次数：**设置机器人重试的次数
+* **超时：**设置等待页面的最长时间
+
+### 步骤 4：测试
+
+1. 使用示例数据进行测试
+2. 确认机器人可以访问网站
+3. 确认提取结果正确
+4. 检查变量是否正常工作
+
+***
+
+## 编写脚本的提示
+
+### 使用清晰的语言
+
+✅ **建议：**
+
+```
+1. Click the "Login" button
+2. Type the username in the login field
+3. Wait 2 seconds for form to process
+```
+
+❌ **不建议：**
+
+```
+1. Do the login thing
+2. Enter stuff
+3. Wait for it
+```
+
+### 使用具体的选择器
+
+✅ **建议：**
+
+```
+Click the button labeled "Submit Order"
+Type in the field with placeholder "Enter Email"
+```
+
+❌ **不建议：**
+
+```
+Click somewhere
+Type in a field
+```
+
+### 错误处理
+
+✅ **建议：**
+
+```
+1. Try to click "Next" button
+2. If button not found, extract data from current page
+3. Return what we have
+```
+
+❌ **不建议：**
+
+```
+Click "Next" (assumes it's always there)
+```
+
+***
+
+## 故障排除
+
+### “脚本超时”
+
+**原因：**脚本运行时间过长，未能及时完成
+
+**解决方案：**
+
+* [ ] 减少操作次数
+* [ ] 增大“最大步骤数”
+* [ ] 优化脚本以加快执行速度
+* [ ] 简化要提取的内容
+
+### “未找到元素”
+
+**原因：**DocOperator 未能找到指定的按钮或字段
+
+**解决方案：**
+
+* [ ] 确认按钮或字段名称完全正确
+* [ ] 检查网站布局是否已更改
+* [ ] 点击前增加等待时间
+* [ ] 检查该按钮是否只在特定条件下显示
+
+### “登录失败”
+
+**原因：**身份验证失败
+
+**解决方案：**
+
+* [ ] 确认用户名和密码正确
+* [ ] 检查密码是否包含特殊字符
+* [ ] 确认账户未被锁定
+* [ ] 检查登录流程是否已更改
+
+### “数据提取不正确”
+
+**原因：**脚本已运行，但提取的信息有误
+
+**解决方案：**
+
+* [ ] 确认选择了正确的字段
+* [ ] 检查数据是否位于预期位置
+* [ ] 手动测试提取逻辑
+* [ ] 添加调试步骤，以确认页面上显示的内容
+
+### “脚本运行缓慢”
+
+**原因：**步骤过多或网站响应缓慢
+
+**解决方案：**
+
+* [ ] 删除不必要的步骤
+* [ ] 优化等待时间
+* [ ] 检查互联网连接
+* [ ] 考虑是否有可用的 API 替代方案
+
+***
+
+## 最佳实践
+
+✅ **建议：**
+
+* 部署前彻底测试脚本
+* 保持脚本简单、专注
+* 添加注释说明每个步骤
+* 使用有意义的变量名
+* 监控脚本性能
+* 为脚本失败的情况准备备用方案
+
+❌ **不建议：**
+
+* 创建特别长的脚本（>100 步）
+* 在日志中写入敏感密码
+* 依赖精确坐标（网站可能会发生变化）
+* 创建没有退出条件的循环
+* 忽略错误消息
+
+***
+
+## 性能提示
+
+* **删除未使用的步骤** - 每个步骤都会耗费时间
+* **合并类似操作** - 将相关点击操作组合起来
+* **优化等待时间** - 仅使用必要的延迟
+* **缓存数据** - 避免重复提取相同数据
+* **并行处理** - 尽可能同时运行多个脚本
+
+***
+
+## 安全注意事项
+
+⚠️ **重要：**
+
+* 不要在 DocFlow 中存储密码
+* 使用安全方式传递凭据
+* 不要记录敏感数据
+* 监控提取的数据
+* 确保机器人活动有日志记录且可审计
+
+***
+
+## 变量示例
+
+### 可用变量：
+
+```
+{invoice_number} - From document field
+{supplier_code} - From document field
+{product_id} - From document field
+{quantity} - From document field
+{currency} - From document field
+```
+
+### 使用变量的脚本：
+
+```
+1. Go to https://supplier.com/api/lookup
+2. Enter supplier code: {supplier_code}
+3. Search for product: {product_id}
+4. Enter quantity: {quantity}
+5. Extract price in currency: {currency}
+6. Return extracted price
+```
+
+***
+
+## 对比：何时使用 DocOperator 与 API
+
+| 情况 | 使用 DocOperator | 使用 API |
+| ---------------------- | --------------- | ----------- |
+| 网站提供 API | ❌ 否 | ✅ 是 |
+| 网站支持交互操作 | ✅ 是 | ❌ 否 |
+| 需要登录 | ✅ 是 | 视情况而定 |
+| 需要极快速度 | ❌ 否 | ✅ 是 |
+| 复杂工作流 | ✅ 是 | ❌ 可能不适用 |
+| 数据每天变化 | ✅ 是 | ✅ 是 |
+
+***
+
+## 相关卡片
+
+* **CALL\_API** - 有 API 时改用此卡片
+* **ACTION\_HTTPS\_REQUEST** - 用于较简单的请求
+* **ACTION\_SET\_FIELD\_TO\_TEXT** - 使用提取的数据
+* **CONDITION\_HTTPS\_REQUEST\_STATUS** - 检查请求状态

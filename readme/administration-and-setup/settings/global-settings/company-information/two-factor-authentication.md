@@ -40,7 +40,7 @@ Gebruik het om de gereedheid in te schatten: verhoog eerst de acceptatie en scha
 
 ## Wat leden zien
 
-Een lid dat zich moet registreren, wordt bij de volgende aanmelding naar de 2FA-instellingen gestuurd en kiest een methode (authenticator-app, e-mailcode, of passkey). De stappen voor de eindgebruiker worden beschreven in [Twee-factor-authenticatie (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Een lid dat zich moet registreren, wordt bij de volgende aanmelding naar de 2FA-instellingen gestuurd en kiest een methode (authenticator-app, e-mailcode, of passkey). De stappen voor de eindgebruiker worden beschreven in [Twee-factor-authenticatie (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Gerelateerde beveiligingsmaatregelen
 

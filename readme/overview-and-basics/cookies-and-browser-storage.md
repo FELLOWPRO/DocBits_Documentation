@@ -1,6 +1,6 @@
 # Cookies en browseropslag
 
-Gecontroleerd op **16 oktober 2026** voor vraag **4.15**. De openbare website, de DocBits-applicatie en deze documentatie gebruiken verschillende cookies en diensten.
+Gecontroleerd op **16 oktober 2026**. De openbare website, de DocBits-applicatie en deze documentatie gebruiken verschillende cookies en diensten.
 
 ## Beleid en doeleinden
 

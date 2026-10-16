@@ -6,7 +6,7 @@ Esta página explica como obter uma conta DocBits e como iniciar sessão quando 
 * [Esqueceu-se da palavra-passe](#esqueceu-se-da-palavra-passe) — redefina a sua palavra-passe com uma ligação de redefinição.
 * [Primeira palavra-passe para contas criadas pelo administrador](#primeira-palavra-passe-para-contas-criadas-pelo-administrador) — defina a primeira palavra-passe de uma conta que o seu administrador criou para você.
 
-Iniciar sessão com uma conta existente e a Autenticação de Dois Fatores estão cobertos em [Autenticação de Dois Fatores (2FA)](../../overview-and-basics/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
+Iniciar sessão com uma conta existente e a Autenticação de Dois Fatores estão cobertos em [Autenticação de Dois Fatores (2FA)](../../security/two-factor-authentication.md). Use o menu de idioma no canto superior direito destes formulários se precisar de outro idioma de exibição.
 
 ## Registo
 
@@ -46,7 +46,7 @@ Depois de enviar o formulário, o DocBits mostra uma página de confirmação e 
 
 ## Esqueceu-se da palavra-passe
 
-O DocBits guarda as palavras-passe como hashes unidirecionais com salt. Uma palavra-passe existente não pode ser recuperada a partir do hash, pelo que este procedimento define uma nova. Consulte [Armazenamento seguro de credenciais](../../overview-and-basics/secure-storage-of-credentials.md).
+O DocBits guarda as palavras-passe como hashes unidirecionais com salt. Uma palavra-passe existente não pode ser recuperada a partir do hash, pelo que este procedimento define uma nova. Consulte [Armazenamento seguro de credenciais](../../security/secure-storage-of-credentials.md).
 
 Se se esqueceu da sua palavra-passe:
 

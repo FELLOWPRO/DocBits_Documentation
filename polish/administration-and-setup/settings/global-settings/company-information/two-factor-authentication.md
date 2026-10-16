@@ -40,7 +40,7 @@ Użyj go do oceny gotowości: najpierw zwiększ poziom wdrożenia, a następnie 
 
 ## Co widzą członkowie
 
-Członek, który musi się zarejestrować, zostaje przekierowany do konfiguracji 2FA przy następnym logowaniu i wybiera metodę (aplikacja uwierzytelniająca, kod e-mail lub klucz dostępu). Kroki dla użytkownika końcowego są opisane w [Uwierzytelnianie dwuskładnikowe (2FA)](../../../../overview-and-basics/two-factor-authentication.md).
+Członek, który musi się zarejestrować, zostaje przekierowany do konfiguracji 2FA przy następnym logowaniu i wybiera metodę (aplikacja uwierzytelniająca, kod e-mail lub klucz dostępu). Kroki dla użytkownika końcowego są opisane w [Uwierzytelnianie dwuskładnikowe (2FA)](../../../../security/two-factor-authentication.md).
 
 ## Powiązane mechanizmy zabezpieczeń
 

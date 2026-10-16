@@ -65,4 +65,4 @@ Se tiver mais chaves do que cabem numa página, use os controlos de paginação 
 
 Trate a chave como uma palavra-passe. Qualquer pessoa que a tenha pode atuar sobre os documentos e os dados da sua organização.
 
-Consulte [Armazenamento seguro de credenciais](../../../../overview-and-basics/secure-storage-of-credentials.md).
+Consulte [Armazenamento seguro de credenciais](../../../../security/secure-storage-of-credentials.md).

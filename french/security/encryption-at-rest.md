@@ -4,7 +4,7 @@ description: Chiffrement au repos de DocBits sur DigitalOcean, avec bases de don
 
 # Chiffrement au repos
 
-DocBits utilise DigitalOcean Managed Databases et DigitalOcean Spaces. La vérification du **16 octobre 2026** a confirmé des services gérés PostgreSQL, OpenSearch et Valkey pour la production de l’UE à Francfort. La [FAQ Sécurité et conformité](../overview-and-basics/security-and-compliance-faq.md) documente l’utilisation de Spaces pour le stockage.
+DocBits utilise DigitalOcean Managed Databases et DigitalOcean Spaces. La vérification du **16 octobre 2026** a confirmé des services gérés PostgreSQL, OpenSearch et Valkey pour la production de l’UE à Francfort. La [FAQ Sécurité et conformité](security-and-compliance-faq.md) documente l’utilisation de Spaces pour le stockage.
 
 Cette page décrit les mesures de chiffrement publiées par DigitalOcean pour ces services. Les installations sur site et les copies stockées dans d’autres systèmes nécessitent leur propre évaluation.
 
@@ -25,7 +25,7 @@ Les informations sur les bases de données et les sauvegardes proviennent du [mo
 
 DigitalOcean gère le chiffrement d’infrastructure décrit ci-dessus. Pour Managed Databases, le fournisseur documente une clé aléatoire par instance et volume, supprimée à la destruction de l’instance. Les sauvegardes de bases de données gérées utilisent une clé aléatoire par fichier, protégée par une paire de clés RSA propre au service.
 
-Le chiffrement du stockage protège les données sur les supports. Les applications et utilisateurs autorisés de la base de données peuvent toujours lire les données via le service. Cela ne démontre ni que le personnel du fournisseur ne peut accéder aux informations de compte, ni que chaque champ est chiffré au niveau applicatif. Le hachage des mots de passe et des clés API constitue une mesure distincte ; voir [Stockage sécurisé des identifiants](../overview-and-basics/secure-storage-of-credentials.md).
+Le chiffrement du stockage protège les données sur les supports. Les applications et utilisateurs autorisés de la base de données peuvent toujours lire les données via le service. Cela ne démontre ni que le personnel du fournisseur ne peut accéder aux informations de compte, ni que chaque champ est chiffré au niveau applicatif. Le hachage des mots de passe et des clés API constitue une mesure distincte ; voir [Stockage sécurisé des identifiants](secure-storage-of-credentials.md).
 
 Spaces prend également en charge [SSE-C avec des clés fournies par le client](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Cette possibilité facultative ne prouve pas que DocBits utilise SSE-C ou des clés de chiffrement gérées par le client.
 

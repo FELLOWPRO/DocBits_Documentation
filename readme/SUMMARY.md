@@ -8,12 +8,6 @@
   * [DocBits Infor on Premise Customer](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)
   * [Certifications](overview-and-basics/architecture/certifications.md)
   * [Prefect Local Setup Requirements](overview-and-basics/architecture/prefect-local-setup-requirements.md)
-* [Security & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
-* [Secure Storage of Credentials](overview-and-basics/secure-storage-of-credentials.md)
-* [Cookies and Browser Storage](overview-and-basics/cookies-and-browser-storage.md)
-* [Vulnerability Management](overview-and-basics/vulnerability-management.md)
-* [Other Security Controls](overview-and-basics/other-security-controls.md)
-* [Two-Factor Authentication (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
 * [Diagram Preview](overview-and-basics/diagram-preview/README.md)
   * [Processing Pipeline](overview-and-basics/diagram-preview/processing-pipeline.md)
@@ -53,7 +47,13 @@
 
 ## Security <a href="#security" id="security"></a>
 
+* [Security & Compliance FAQ](security/security-and-compliance-faq.md)
+* [Secure Storage of Credentials](security/secure-storage-of-credentials.md)
 * [Encryption at Rest](security/encryption-at-rest.md)
+* [Cookies and Browser Storage](security/cookies-and-browser-storage.md)
+* [Vulnerability Management](security/vulnerability-management.md)
+* [Other Security Controls](security/other-security-controls.md)
+* [Two-Factor Authentication (2FA)](security/two-factor-authentication.md)
 
 ## End User and Partner Section
 

@@ -6,7 +6,7 @@ Questa pagina spiega come ottenere un account DocBits e come accedere quando non
 * [Password dimenticata](#password-dimenticata) — reimposta la tua password con un link di reimpostazione.
 * [Prima password per gli account creati dall'amministratore](#prima-password-per-gli-account-creati-dallamministratore) — imposta la prima password di un account che il tuo amministratore ha creato per te.
 
-L'accesso con un account esistente e l'Autenticazione a Due Fattori sono trattati in [Autenticazione a Due Fattori (2FA)](../../overview-and-basics/two-factor-authentication.md). Usa il menu della lingua in alto a destra di questi moduli se ti serve un'altra lingua di visualizzazione.
+L'accesso con un account esistente e l'Autenticazione a Due Fattori sono trattati in [Autenticazione a Due Fattori (2FA)](../../security/two-factor-authentication.md). Usa il menu della lingua in alto a destra di questi moduli se ti serve un'altra lingua di visualizzazione.
 
 ## Registrazione
 
@@ -46,7 +46,7 @@ Dopo aver inviato il modulo, DocBits mostra una pagina di conferma e invia una *
 
 ## Password dimenticata
 
-DocBits memorizza le password come hash unidirezionali con salt. Una password esistente non può essere recuperata dal suo hash, quindi questa procedura ne imposta una nuova. Vedere [Archiviazione sicura delle credenziali](../../overview-and-basics/secure-storage-of-credentials.md).
+DocBits memorizza le password come hash unidirezionali con salt. Una password esistente non può essere recuperata dal suo hash, quindi questa procedura ne imposta una nuova. Vedere [Archiviazione sicura delle credenziali](../../security/secure-storage-of-credentials.md).
 
 Se hai dimenticato la tua password:
 

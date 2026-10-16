@@ -15,7 +15,7 @@ Services not listed had no customer-facing changes._
   the case of a lost device, and a trusted device can skip the second factor
   for a while. Every user can switch it on for themselves; administrators can
   require it for the whole organisation. See the
-  [Two-Factor Authentication guide](../two-factor-authentication.md).
+  [Two-Factor Authentication guide](../../security/two-factor-authentication.md).
 - **Support tickets from the error screen.** When something goes wrong, you can
   now open a support ticket directly from the error record. The ticket already
   contains the technical context, so you don't have to describe it.

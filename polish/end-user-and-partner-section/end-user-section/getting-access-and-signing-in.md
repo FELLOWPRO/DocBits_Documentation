@@ -6,7 +6,7 @@ Na tej stronie opisano, jak uzyskać konto DocBits i jak się zalogować, gdy ni
 * [Zapomniane hasło](#zapomniane-hasło) — zresetuj hasło za pomocą linku do resetowania.
 * [Pierwsze hasło dla kont utworzonych przez administratora](#pierwsze-hasło-dla-kont-utworzonych-przez-administratora) — ustaw pierwsze hasło do konta, które administrator utworzył dla Ciebie.
 
-Logowanie do istniejącego konta oraz Uwierzytelnianie dwuskładnikowe są opisane na stronie [Uwierzytelnianie dwuskładnikowe (2FA)](../../overview-and-basics/two-factor-authentication.md). Jeśli potrzebujesz innego języka wyświetlania, użyj menu języka w prawym górnym rogu tych formularzy.
+Logowanie do istniejącego konta oraz Uwierzytelnianie dwuskładnikowe są opisane na stronie [Uwierzytelnianie dwuskładnikowe (2FA)](../../security/two-factor-authentication.md). Jeśli potrzebujesz innego języka wyświetlania, użyj menu języka w prawym górnym rogu tych formularzy.
 
 ## Rejestracja
 
@@ -46,7 +46,7 @@ Po wysłaniu formularza DocBits wyświetla stronę potwierdzenia i wysyła **e-m
 
 ## Zapomniane hasło
 
-DocBits przechowuje hasła logowania jako jednokierunkowe skróty kryptograficzne z solą. Istniejącego hasła nie można odzyskać ze skrótu, dlatego ta procedura ustawia nowe hasło. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](../../overview-and-basics/secure-storage-of-credentials.md).
+DocBits przechowuje hasła logowania jako jednokierunkowe skróty kryptograficzne z solą. Istniejącego hasła nie można odzyskać ze skrótu, dlatego ta procedura ustawia nowe hasło. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](../../security/secure-storage-of-credentials.md).
 
 Jeśli zapomniałeś hasła:
 

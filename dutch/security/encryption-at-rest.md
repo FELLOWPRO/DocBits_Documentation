@@ -4,7 +4,7 @@ description: Versleuteling van opgeslagen DocBits-gegevens bij DigitalOcean, inc
 
 # Versleuteling van opgeslagen gegevens
 
-DocBits gebruikt DigitalOcean Managed Databases en DigitalOcean Spaces. De controle op **16 oktober 2026** bevestigde beheerde PostgreSQL-, OpenSearch- en Valkey-diensten voor EU-productie in Frankfurt. De [FAQ over beveiliging en compliance](../overview-and-basics/security-and-compliance-faq.md) beschrijft het gebruik van Spaces voor opslag.
+DocBits gebruikt DigitalOcean Managed Databases en DigitalOcean Spaces. De controle op **16 oktober 2026** bevestigde beheerde PostgreSQL-, OpenSearch- en Valkey-diensten voor EU-productie in Frankfurt. De [FAQ over beveiliging en compliance](security-and-compliance-faq.md) beschrijft het gebruik van Spaces voor opslag.
 
 Deze pagina beschrijft de versleutelingsmaatregelen die DigitalOcean voor deze diensten publiceert. Lokale installaties en kopieën in andere systemen vereisen een eigen beoordeling.
 
@@ -25,7 +25,7 @@ De details voor databases en back-ups komen uit het [beveiligingsmodel voor Mana
 
 DigitalOcean beheert de beschreven infrastructuurversleuteling. Voor Managed Databases documenteert de aanbieder een willekeurig gegenereerde sleutel per instantie en volume, die bij het vernietigen van de instantie wordt verwijderd. Back-ups van beheerde databases gebruiken een willekeurige sleutel per bestand, beschermd met een RSA-sleutelpaar per dienst.
 
-Opslagversleuteling beschermt gegevens op opslagmedia. Geautoriseerde applicaties en databasegebruikers kunnen de gegevens nog steeds via de dienst lezen. Dit toont niet aan dat medewerkers van de leverancier geen accountgegevens kunnen inzien of dat elk veld op applicatieniveau versleuteld is. Het hashen van wachtwoorden en API-sleutels is een afzonderlijke maatregel; zie [Veilige opslag van inloggegevens](../overview-and-basics/secure-storage-of-credentials.md).
+Opslagversleuteling beschermt gegevens op opslagmedia. Geautoriseerde applicaties en databasegebruikers kunnen de gegevens nog steeds via de dienst lezen. Dit toont niet aan dat medewerkers van de leverancier geen accountgegevens kunnen inzien of dat elk veld op applicatieniveau versleuteld is. Het hashen van wachtwoorden en API-sleutels is een afzonderlijke maatregel; zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
 
 Spaces ondersteunt ook [SSE-C met door de klant aangeleverde sleutels](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Deze optionele mogelijkheid toont niet aan dat DocBits SSE-C of door klanten beheerde versleutelingssleutels gebruikt.
 

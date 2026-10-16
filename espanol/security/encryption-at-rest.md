@@ -4,7 +4,7 @@ description: Cifrado en reposo de DocBits en DigitalOcean, incluidas bases de da
 
 # Cifrado en reposo
 
-DocBits utiliza DigitalOcean Managed Databases y DigitalOcean Spaces. La revisión del **16 de octubre de 2026** confirmó servicios gestionados de PostgreSQL, OpenSearch y Valkey para producción de la UE en Fráncfort. Las [preguntas frecuentes de seguridad y cumplimiento](../overview-and-basics/security-and-compliance-faq.md) documentan el uso de Spaces para almacenamiento.
+DocBits utiliza DigitalOcean Managed Databases y DigitalOcean Spaces. La revisión del **16 de octubre de 2026** confirmó servicios gestionados de PostgreSQL, OpenSearch y Valkey para producción de la UE en Fráncfort. Las [preguntas frecuentes de seguridad y cumplimiento](security-and-compliance-faq.md) documentan el uso de Spaces para almacenamiento.
 
 Esta página describe los controles de cifrado publicados por DigitalOcean para estos servicios. Las instalaciones locales y las copias almacenadas en otros sistemas requieren su propia evaluación.
 
@@ -25,7 +25,7 @@ Los detalles sobre bases de datos y copias proceden del [modelo de seguridad de 
 
 DigitalOcean gestiona el cifrado de infraestructura descrito. Para Managed Databases, documenta una clave aleatoria por instancia y volumen, descartada al destruir la instancia. Las copias de seguridad de bases de datos gestionadas utilizan una clave aleatoria por archivo, protegida mediante un par de claves RSA específico del servicio.
 
-El cifrado del almacenamiento protege los datos en los soportes. Las aplicaciones y los usuarios autorizados de la base de datos pueden seguir leyendo los datos a través del servicio. Esto no demuestra que el personal del proveedor no pueda acceder a información de cuentas, ni que cada campo esté cifrado en la aplicación. Los hashes de contraseñas y claves API son controles separados; consulte [Almacenamiento seguro de credenciales](../overview-and-basics/secure-storage-of-credentials.md).
+El cifrado del almacenamiento protege los datos en los soportes. Las aplicaciones y los usuarios autorizados de la base de datos pueden seguir leyendo los datos a través del servicio. Esto no demuestra que el personal del proveedor no pueda acceder a información de cuentas, ni que cada campo esté cifrado en la aplicación. Los hashes de contraseñas y claves API son controles separados; consulte [Almacenamiento seguro de credenciales](secure-storage-of-credentials.md).
 
 Spaces también admite [SSE-C con claves proporcionadas por el cliente](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Esta capacidad opcional no demuestra que DocBits utilice SSE-C o claves de cifrado gestionadas por el cliente.
 

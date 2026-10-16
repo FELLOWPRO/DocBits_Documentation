@@ -64,4 +64,4 @@ Jeśli masz więcej kluczy, niż mieści się na jednej stronie, użyj elementó
 
 Traktuj klucz jak hasło. Każdy, kto go ma, może działać na dokumentach i danych Twojej organizacji.
 
-Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](../../../../overview-and-basics/secure-storage-of-credentials.md).
+Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](../../../../security/secure-storage-of-credentials.md).

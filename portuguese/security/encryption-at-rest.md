@@ -4,7 +4,7 @@ description: Cifragem em repouso do DocBits na DigitalOcean, incluindo bases de 
 
 # Cifragem em repouso
 
-O DocBits utiliza DigitalOcean Managed Databases e DigitalOcean Spaces. A verificação de **16 de outubro de 2026** confirmou serviços geridos de PostgreSQL, OpenSearch e Valkey para produção da UE em Frankfurt. As [perguntas frequentes sobre segurança e conformidade](../overview-and-basics/security-and-compliance-faq.md) documentam a utilização de Spaces para armazenamento.
+O DocBits utiliza DigitalOcean Managed Databases e DigitalOcean Spaces. A verificação de **16 de outubro de 2026** confirmou serviços geridos de PostgreSQL, OpenSearch e Valkey para produção da UE em Frankfurt. As [perguntas frequentes sobre segurança e conformidade](security-and-compliance-faq.md) documentam a utilização de Spaces para armazenamento.
 
 Esta página descreve os controlos de cifragem publicados pela DigitalOcean para estes serviços. As instalações locais e as cópias armazenadas noutros sistemas exigem uma avaliação própria.
 
@@ -25,7 +25,7 @@ Os detalhes sobre bases de dados e cópias provêm do [modelo de segurança de M
 
 A DigitalOcean gere a cifragem de infraestrutura descrita. Para Managed Databases, documenta uma chave gerada aleatoriamente por instância e volume, eliminada quando a instância é destruída. As cópias de segurança de bases de dados geridas utilizam uma chave aleatória por ficheiro, protegida por um par de chaves RSA específico do serviço.
 
-A cifragem do armazenamento protege os dados nos suportes. As aplicações e os utilizadores autorizados da base de dados continuam a poder ler os dados através do serviço. Isto não demonstra que o pessoal do fornecedor não possa aceder a informações de conta, nem que cada campo esteja cifrado ao nível da aplicação. O hashing de palavras-passe e chaves API é um controlo separado; consulte [Armazenamento seguro de credenciais](../overview-and-basics/secure-storage-of-credentials.md).
+A cifragem do armazenamento protege os dados nos suportes. As aplicações e os utilizadores autorizados da base de dados continuam a poder ler os dados através do serviço. Isto não demonstra que o pessoal do fornecedor não possa aceder a informações de conta, nem que cada campo esteja cifrado ao nível da aplicação. O hashing de palavras-passe e chaves API é um controlo separado; consulte [Armazenamento seguro de credenciais](secure-storage-of-credentials.md).
 
 Spaces também suporta [SSE-C com chaves fornecidas pelo cliente](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Esta capacidade opcional não demonstra que o DocBits utilize SSE-C ou chaves de cifragem geridas pelo cliente.
 

@@ -6,7 +6,7 @@ Diese Seite erklärt, wie Sie ein DocBits-Konto erhalten und wie Sie sich anmeld
 * [Passwort vergessen](#passwort-vergessen) — setzen Sie Ihr Passwort mit einem Reset-Link zurück.
 * [Erstes Passwort für vom Administrator angelegte Konten](#erstes-passwort-für-vom-administrator-angelegte-konten) — legen Sie das erste Passwort für ein Konto fest, das Ihr Administrator für Sie erstellt hat.
 
-Die Anmeldung mit einem bestehenden Konto und die Zwei-Faktor-Authentifizierung werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../overview-and-basics/two-factor-authentication.md) behandelt. Verwenden Sie das Sprachmenü oben rechts auf diesen Formularen, wenn Sie eine andere Anzeigesprache benötigen.
+Die Anmeldung mit einem bestehenden Konto und die Zwei-Faktor-Authentifizierung werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../security/two-factor-authentication.md) behandelt. Verwenden Sie das Sprachmenü oben rechts auf diesen Formularen, wenn Sie eine andere Anzeigesprache benötigen.
 
 ## Registrierung
 
@@ -46,7 +46,7 @@ Nach dem Absenden des Formulars zeigt DocBits eine Bestätigungsseite an und sen
 
 ## Passwort vergessen
 
-DocBits speichert Anmeldepasswörter als gesalzene Einweg-Hashes. Ein bestehendes Passwort kann nicht aus seinem Hash abgerufen werden; mit diesem Verfahren legen Sie deshalb ein neues Passwort fest. Siehe [Sichere Speicherung von Zugangsdaten](../../overview-and-basics/secure-storage-of-credentials.md).
+DocBits speichert Anmeldepasswörter als gesalzene Einweg-Hashes. Ein bestehendes Passwort kann nicht aus seinem Hash abgerufen werden; mit diesem Verfahren legen Sie deshalb ein neues Passwort fest. Siehe [Sichere Speicherung von Zugangsdaten](../../security/secure-storage-of-credentials.md).
 
 Wenn Sie Ihr Passwort vergessen haben:
 

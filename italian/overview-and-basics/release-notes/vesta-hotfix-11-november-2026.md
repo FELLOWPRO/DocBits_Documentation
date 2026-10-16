@@ -2,7 +2,7 @@
 
 > **Canale di rilascio:** VESTA · **Stato:** Pianificato · **Data programmata:** 11 novembre 2026.
 
-Il prossimo hotfix di VESTA porta **tutte le funzionalità precedentemente disponibili come beta in VESTA nell'insieme standard delle funzionalità di VESTA**. Queste ex funzionalità beta sono già incluse come funzionalità standard nella [release principale di NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova).
+Il prossimo hotfix di VESTA porta **tutte le funzionalità precedentemente disponibili in versione beta in VESTA tra le funzionalità standard di VESTA**. Queste funzionalità sono già disponibili nell’[ambiente di test di NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova); il rilascio di NOVA in produzione è previsto per il **4 novembre 2026**.
 
 ## Cosa cambia per il tuo team
 
@@ -12,7 +12,7 @@ Il prossimo hotfix di VESTA porta **tutte le funzionalità precedentemente dispo
 
 | Rilascio | Disponibilità delle ex funzionalità beta di VESTA |
 | --- | --- |
-| **NOVA** | Ora incluso nel set di funzionalità standard. |
+| **NOVA** | Disponibile nell’ambiente di test dal 16 ottobre 2026; rilascio in produzione previsto per il 4 novembre 2026. |
 | **VESTA — hotfix dell'11 novembre 2026** | Introduzione pianificata nel set di funzionalità standard di VESTA. |
 
 ## Guide per la configurazione delle regole

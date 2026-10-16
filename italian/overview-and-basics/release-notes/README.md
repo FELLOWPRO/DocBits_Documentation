@@ -1,12 +1,14 @@
 # Note di rilascio
 
+**Disponibilità di NOVA R1.1:** Disponibile nell’ambiente di test dal **16 ottobre 2026**. Il rilascio in produzione è previsto per il **4 novembre 2026**.
+
 Scegli un canale di rilascio per vedere cosa cambia per il tuo team. **NOVA è il rilascio principale con capacità aggiuntive per i clienti. Gli hotfix di VESTA migliorano la release di produzione attuale.** Vedi il [ciclo di vita del rilascio](../docbits-release-lifecycle-strategy.md) per la disponibilità e il passaggio tra i canali.
 
-**Le ex funzionalità beta di VESTA sono ora incluse in NOVA.** Tutte le funzionalità precedentemente disponibili come beta in VESTA fanno parte del set di funzionalità standard di NOVA. Diventeranno anche funzionalità standard di VESTA con il [prossimo hotfix di VESTA, pianificato per l'**11 novembre 2026**](vesta-hotfix-11-november-2026.md).
+**Le precedenti funzionalità beta di VESTA sono incluse nell’ambiente di test di NOVA.** Tutte le funzionalità precedentemente disponibili in versione beta in VESTA fanno parte delle funzionalità standard di NOVA e possono essere provate prima del rilascio previsto in produzione. Diventeranno anche funzionalità standard di VESTA con il [prossimo hotfix, previsto per l’**11 novembre 2026**](vesta-hotfix-11-november-2026.md).
 
 | Canale di rilascio | Note di rilascio | Focus |
 | --- | --- | --- |
-| **NOVA — Rilascio principale** | [Novità per i clienti](nova-major-release-16-october-2026.md) · Snapshot della versione del **16 ottobre 2026** | Tutte le ex funzionalità beta di VESTA, più nuove capacità ed estensioni rispetto a VESTA R1.0.15. |
+| **NOVA — Rilascio principale** | [Novità per i clienti](nova-major-release-16-october-2026.md) · **4 novembre 2026 (previsto)** | Tutte le ex funzionalità beta di VESTA, più nuove capacità ed estensioni rispetto a VESTA R1.0.15. |
 | **VESTA — Prossimo hotfix (pianificato)** | [11 novembre 2026](vesta-hotfix-11-november-2026.md) | Introduce tutte le ex funzionalità beta di VESTA nel set di funzionalità standard di VESTA. |
 | **VESTA — Rilascio hotfix** | [14 ottobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Miglioramenti e correzioni per la release di produzione attuale di VESTA. |
 

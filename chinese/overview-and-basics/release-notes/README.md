@@ -1,12 +1,14 @@
 # 发布说明
 
+**NOVA R1.1 可用性：** 自 **2026 年 10 月 16 日** 起已在沙盒环境中开放。生产环境发布计划于 **2026 年 11 月 4 日** 进行。
+
 选择发布渠道以查看您的团队将发生哪些变化。**NOVA 是包含额外客户功能的主要发布版本。VESTA 热修复改进了当前的生产发布版本。** 有关可用性和渠道切换，请参阅 [发布生命周期（英文）](https://docs.docbits.com/overview-and-basics/docbits-release-lifecycle-strategy)。
 
-**原 VESTA 测试版功能现已纳入 NOVA。** 之前在 VESTA 中作为测试版提供的所有功能现在都是 NOVA 常规功能集的一部分。它们还将随着 [计划于 **2026 年 11 月 11 日** 发布的下一个 VESTA 热修复](vesta-hotfix-11-november-2026.md) 成为常规的 VESTA 功能。
+**原 VESTA 测试版功能已纳入 NOVA 沙盒。** 此前在 VESTA 中作为测试版提供的所有功能现均属于 NOVA 的常规功能，可在计划的生产环境发布之前于沙盒中测试。这些功能也将随着[计划于 **2026 年 11 月 11 日** 发布的下一个 VESTA 热修复](vesta-hotfix-11-november-2026.md)成为 VESTA 的常规功能。
 
 | 发布渠道 | 发布说明 | 重点 |
 | --- | --- | --- |
-| **NOVA — 主要发布版本** | [客户新功能](nova-major-release-16-october-2026.md) · **2026 年 10 月 16 日** 版本快照 | 所有原 VESTA 测试版功能，以及与 VESTA R1.0.15 相比的新功能和扩展。 |
+| **NOVA — 主要发布版本** | [客户新功能](nova-major-release-16-october-2026.md) · **2026 年 11 月 4 日 (计划)** | 所有原 VESTA 测试版功能，以及与 VESTA R1.0.15 相比的新功能和扩展。 |
 | **VESTA — 下一个热修复（计划中）** | [2026 年 11 月 11 日](vesta-hotfix-11-november-2026.md) | 将所有原 VESTA 测试版功能引入常规 VESTA 功能集。 |
 | **VESTA — 热修复发布版本** | [2026 年 10 月 14 日 — R1.0.15](incremental-updates-14-october-2026.md) | 针对当前 VESTA 生产发布版本的改进和修复。 |
 

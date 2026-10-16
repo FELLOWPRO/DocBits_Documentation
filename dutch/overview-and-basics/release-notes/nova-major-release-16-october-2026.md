@@ -1,6 +1,8 @@
-# NOVA — Grote release
+# NOVA — Grote release — 4 november 2026 (gepland)
 
-**Versie-snapshot: 16 oktober 2026**
+**Beschikbaarheid van NOVA R1.1:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
+
+**Serviceversies in de sandbox: stand van 16 oktober 2026**
 
 NOVA bevat alle functies die eerder als bèta in VESTA beschikbaar waren, nu als reguliere functies, naast begeleidende documentvalidatie, meer manieren om automatisering te verbeteren, duidelijkere e-factuurcontroles en betere controle over imports en documentverwerking. Deze notities beschrijven de klantgerichte toevoegingen in de hieronder vermelde serviceversies, vergeleken met de laatst gepubliceerde [VESTA hotfix, R1.0.15 van 14 oktober 2026](incremental-updates-14-october-2026.md), inclusief eerdere VESTA hotfixes.
 
@@ -8,7 +10,7 @@ De snapshot identificeert de builds die door deze notities worden gedekt. Voor b
 
 ## Voormalige VESTA bètafuncties: opgenomen in NOVA <a href="#former-vesta-beta-features-included-in-nova" id="former-vesta-beta-features-included-in-nova"></a>
 
-**Alle voormalige VESTA bètafuncties zijn nu onderdeel van de reguliere functieset van NOVA.** Voor klanten die de VESTA bèta niet hebben gebruikt, breidt dit de functies uit die beschikbaar zijn voor hun team, inclusief **Lay-outs beheren**, [**Aangepaste validatieregels**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) en [**Transformatieregels**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisatie-instellingen, schakelaars voor documenttypes en toegangsrechten blijven van toepassing.
+**Alle voormalige VESTA-bètafuncties zijn als reguliere functies opgenomen in de NOVA-sandbox.** Voor klanten die de VESTA bèta niet hebben gebruikt, breidt dit de functies uit die beschikbaar zijn voor hun team, inclusief **Lay-outs beheren**, [**Aangepaste validatieregels**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) en [**Transformatieregels**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisatie-instellingen, schakelaars voor documenttypes en toegangsrechten blijven van toepassing.
 
 Dezelfde voormalige bètafuncties worden reguliere VESTA-functies met de **volgende VESTA hotfix, gepland voor [11 november 2026](vesta-hotfix-11-november-2026.md)**. Deze aankondiging dekt de voormalige VESTA bètafuncties; de onderstaande secties beschrijven ook verdere NOVA-toevoegingen en verbeteringen.
 
@@ -184,7 +186,7 @@ Zie de [VESTA-hotfix van 14 oktober](incremental-updates-14-october-2026.md), de
 
 ## NOVA-serviceversies
 
-Dit zijn de versies en implementatietijdstempels in de **momentopname van 16 oktober 2026**. De tijdstempels beschrijven individuele service-implementaties, niet een aparte releasedatum voor elke functie.
+Dit zijn de versies en implementatietijdstempels van de **NOVA-build die sinds 16 oktober 2026 in de sandbox beschikbaar is**. De productierelease staat gepland voor **4 november 2026**; deze sandboxmomentopname bepaalt niet de definitieve productieversies. De tijdstempels beschrijven de implementatie van de afzonderlijke services.
 
 | Service | Versie | Implementatietijdstempel |
 | --- | --- | --- |

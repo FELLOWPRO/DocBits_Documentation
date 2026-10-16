@@ -1,6 +1,8 @@
-# NOVA — Hauptversion
+# NOVA — Hauptversion — 4. November 2026 (geplant)
 
-**Versionsstand: 16. Oktober 2026**
+**Verfügbarkeit von NOVA R1.1:** Seit dem **16. Oktober 2026** in der Sandbox verfügbar. Der Produktionsrelease ist für den **4. November 2026** geplant.
+
+**Sandbox-Serviceversionen: Stand 16. Oktober 2026**
 
 NOVA umfasst alle Funktionen, die zuvor als Beta in VESTA verfügbar waren, nun als reguläre Funktionen, ergänzt um geführte Dokumentenvalidierung, weitere Möglichkeiten zur Automatisierungsverbesserung, klarere E-Rechnungsprüfungen und bessere Steuerung von Importen und Dokumentenverarbeitung. Diese Hinweise beschreiben die kundenseitigen Erweiterungen in den unten aufgeführten Serviceversionen im Vergleich zum zuletzt veröffentlichten [VESTA-Hotfix, R1.0.15 vom 14. Oktober 2026](incremental-updates-14-october-2026.md), einschließlich früherer VESTA-Hotfixes.
 
@@ -8,7 +10,7 @@ Der Versionsstand nennt die Builds, auf die sich diese Hinweise beziehen. Inform
 
 ## Ehemalige VESTA-Beta-Funktionen: in NOVA enthalten <a href="#former-vesta-beta-features-included-in-nova" id="former-vesta-beta-features-included-in-nova"></a>
 
-**Alle ehemaligen VESTA-Beta-Funktionen sind nun Teil des regulären NOVA-Funktionsumfangs.** Für Kunden, die die VESTA-Beta nicht genutzt haben, erweitert dies die ihrem Team verfügbaren Funktionen, einschließlich **Layouts verwalten**, [**Benutzerdefinierte Validierungsregeln**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) und [**Transformationsregeln**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisationseinstellungen, Dokumenttyp-Schalter und Zugriffsrechte gelten weiterhin.
+**Alle ehemaligen VESTA-Beta-Funktionen sind in der NOVA-Sandbox als reguläre Funktionen enthalten.** Für Kunden, die die VESTA-Beta nicht genutzt haben, erweitert dies die ihrem Team verfügbaren Funktionen, einschließlich **Layouts verwalten**, [**Benutzerdefinierte Validierungsregeln**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) und [**Transformationsregeln**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisationseinstellungen, Dokumenttyp-Schalter und Zugriffsrechte gelten weiterhin.
 
 Dieselben ehemaligen Beta-Funktionen werden mit dem **nächsten VESTA-Hotfix, geplant für den [11. November 2026](vesta-hotfix-11-november-2026.md)**, zu regulären VESTA-Funktionen. Diese Ankündigung deckt die ehemaligen VESTA-Beta-Funktionen ab; die folgenden Abschnitte beschreiben zusätzlich weitere NOVA-Erweiterungen und -Verbesserungen.
 
@@ -184,7 +186,7 @@ Siehe den [VESTA-Hotfix vom 14. Oktober](incremental-updates-14-october-2026.md)
 
 ## NOVA-Serviceversionen
 
-Dies sind die Versionen und Bereitstellungszeitpunkte des **Versionsstands vom 16. Oktober 2026**. Die Zeitstempel beziehen sich auf die Bereitstellung der einzelnen Services, nicht auf ein eigenes Veröffentlichungsdatum jeder Funktion.
+Dies sind die Versionen und Bereitstellungszeitpunkte des **seit dem 16. Oktober 2026 verfügbaren NOVA-Sandbox-Builds**. Der Produktionsrelease ist für den **4. November 2026** geplant; dieser Sandbox-Versionsstand legt die endgültigen Produktionsversionen nicht fest. Die Zeitstempel beziehen sich auf die Bereitstellung der einzelnen Services.
 
 | Service | Version | Bereitstellungszeitstempel |
 | --- | --- | --- |

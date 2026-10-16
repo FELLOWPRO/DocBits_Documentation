@@ -2,7 +2,7 @@
 
 > **Kanał wydania:** VESTA · **Status:** Planowane · **Zaplanowana data:** 11 listopada 2026 r.
 
-Następna poprawka VESTA wprowadza **wszystkie funkcje wcześniej dostępne jako beta w VESTA do standardowego zestawu funkcji VESTA**. Te dawne funkcje beta są już zawarte jako standardowe funkcje w [wydaniu głównym NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova).
+Następna poprawka VESTA wprowadza **wszystkie funkcje dostępne wcześniej w wersji beta VESTA do standardowego zestawu funkcji VESTA**. Funkcje te są już dostępne w [środowisku testowym NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova); wydanie produkcyjne NOVA jest planowane na **4 listopada 2026 r.**
 
 ## Co zmienia się dla Twojego zespołu
 
@@ -12,7 +12,7 @@ Następna poprawka VESTA wprowadza **wszystkie funkcje wcześniej dostępne jako
 
 | Wydanie | Dostępność dawnych funkcji beta VESTA |
 | --- | --- |
-| **NOVA** | Obecnie w standardowym zestawie funkcji. |
+| **NOVA** | Dostępne w środowisku testowym od 16 października 2026 r.; wydanie produkcyjne planowane na 4 listopada 2026 r. |
 | **VESTA — hotfix z 11 listopada 2026 r.** | Planowane wdrożenie do standardowego zestawu funkcji VESTA. |
 
 ## Przewodniki dotyczące konfigurowania reguł

@@ -1,6 +1,8 @@
-# NOVA — 主要版本
+# NOVA — 主要版本 — 2026 年 11 月 4 日 (计划)
 
-**版本快照：2026 年 10 月 16 日**
+**NOVA R1.1 可用性：** 自 **2026 年 10 月 16 日** 起已在沙盒环境中开放。生产环境发布计划于 **2026 年 11 月 4 日** 进行。
+
+**沙盒服务版本快照：2026 年 10 月 16 日**
 
 NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功能，同时提供引导式文档验证、更多提升自动化的方式、更清晰的电子发票检查以及对导入和文档处理的更好控制。这些说明描述了以下服务版本中相对于最近发布的 [VESTA 热修复版本 R1.0.15（2026 年 10 月 14 日）](incremental-updates-14-october-2026.md)（包括更早的 VESTA 热修复版本）面向客户的新增内容。
 
@@ -8,7 +10,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 原 VESTA 测试版功能：已包含在 NOVA <a href="#former-vesta-beta-features-included-in-nova" id="former-vesta-beta-features-included-in-nova"></a>
 
-**所有原 VESTA 测试版功能现已成为 NOVA 常规功能集的一部分。** 对于未使用 VESTA 测试版的客户，这扩展了其团队可用的功能，包括 **管理布局**、[**自定义验证规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules) 和 [**转换规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules)。组织设置、文档类型开关和访问权限继续适用。
+**所有原 VESTA 测试版功能均已作为常规功能纳入 NOVA 沙盒。** 对于未使用 VESTA 测试版的客户，这扩展了其团队可用的功能，包括 **管理布局**、[**自定义验证规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules) 和 [**转换规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules)。组织设置、文档类型开关和访问权限继续适用。
 
 这些原测试版功能将在 **下一个 VESTA 热修复版本（计划于 [2026 年 11 月 11 日](vesta-hotfix-11-november-2026.md) 发布）** 中成为 VESTA 的正式功能。本公告说明原 VESTA 测试版功能的正式开放；以下章节还介绍了 NOVA 的其他新增功能和改进。
 
@@ -184,7 +186,7 @@ NOVA 还延续了以下列出的功能。此前仅限 VESTA 测试版访问的�
 
 ## NOVA 服务版本
 
-这些是 **2026 年 10 月 16 日快照** 中的版本和部署时间戳。时间戳描述的是单个服务的部署情况，并非每个功能的独立发布日期。
+下表列出**自 2026 年 10 月 16 日起在沙盒中可用的 NOVA 构建版本**及各服务的部署时间。生产环境发布计划于 **2026 年 11 月 4 日** 进行；此沙盒快照不代表最终的生产环境构建版本。时间戳对应各个服务的部署。
 
 | 服务 | 版本 | 部署时间戳 |
 | --- | --- | --- |

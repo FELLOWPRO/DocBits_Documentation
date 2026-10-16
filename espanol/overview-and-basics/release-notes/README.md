@@ -1,12 +1,14 @@
 # Notas de la versión
 
+**Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
+
 Elija un canal de versiones para ver qué cambios se aplican a su equipo. **NOVA es la versión principal con capacidades adicionales para clientes. Los hotfixes de VESTA mejoran la versión de producción actual.** Consulte el [ciclo de vida de versiones](../docbits-release-lifecycle-strategy.md) para conocer la disponibilidad y el cambio entre canales.
 
-**Las funciones que antes estaban en beta en VESTA ahora están incluidas en NOVA.** Todas las funciones que antes estaban disponibles como beta en VESTA forman parte del conjunto de funciones regular de NOVA. También se convertirán en funciones regulares de VESTA con el [siguiente hotfix de VESTA, planificado para el **11 de noviembre de 2026**](vesta-hotfix-11-november-2026.md).
+**Las antiguas funciones beta de VESTA están incluidas en el entorno de pruebas de NOVA.** Todas las funciones anteriormente disponibles como beta en VESTA forman parte del conjunto de funciones estándar de NOVA y pueden probarse antes del lanzamiento previsto en producción. También se incorporarán al conjunto de funciones estándar de VESTA con el [siguiente hotfix, previsto para el **11 de noviembre de 2026**](vesta-hotfix-11-november-2026.md).
 
 | Canal de versiones | Notas de la versión | Enfoque |
 | --- | --- | --- |
-| **NOVA — Versión principal** | [Novedades para clientes](nova-major-release-16-october-2026.md) · instantánea de servicio de la versión **16 de octubre de 2026** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
+| **NOVA — Versión principal** | [Novedades para clientes](nova-major-release-16-october-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
 | **VESTA — Siguiente hotfix (planificado)** | [11 de noviembre de 2026](vesta-hotfix-11-november-2026.md) | Introduce todas las funciones que antes estaban en beta en VESTA en el conjunto de funciones regular de VESTA. |
 | **VESTA — Versión hotfix** | [14 de octubre de 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Mejoras y correcciones para la versión de producción actual de VESTA. |
 

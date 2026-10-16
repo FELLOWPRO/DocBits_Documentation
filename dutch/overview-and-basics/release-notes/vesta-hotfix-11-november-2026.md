@@ -2,7 +2,7 @@
 
 > **Releasekanaal:** VESTA · **Status:** Gepland · **Geplande datum:** 11 november 2026.
 
-De volgende VESTA-hotfix brengt **alle functies die eerder als bèta in VESTA beschikbaar waren, naar de reguliere VESTA-functieset**. Deze voormalige bètafuncties zijn al opgenomen als reguliere functies in de [NOVA-major-release](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova).
+De volgende VESTA-hotfix brengt **alle functies die eerder als bèta in VESTA beschikbaar waren, naar de reguliere VESTA-functieset**. Deze functies zijn al beschikbaar in de [NOVA-sandbox](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova); de NOVA-productierelease staat gepland voor **4 november 2026**.
 
 ## Wat verandert er voor uw team
 
@@ -12,7 +12,7 @@ De volgende VESTA-hotfix brengt **alle functies die eerder als bèta in VESTA be
 
 | Release | Beschikbaarheid van de voormalige VESTA-bètafuncties |
 | --- | --- |
-| **NOVA** | Nu opgenomen in de reguliere functieset. |
+| **NOVA** | Sinds 16 oktober 2026 beschikbaar in de sandbox; productierelease gepland voor 4 november 2026. |
 | **VESTA — hotfix van 11 november 2026** | Geplande introductie in de reguliere VESTA-functieset. |
 
 ## Handleidingen voor het instellen van regels

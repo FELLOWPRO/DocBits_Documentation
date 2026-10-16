@@ -2,7 +2,7 @@
 
 > **发布渠道：** VESTA · **状态：** 计划中 · **计划日期：** 2026 年 11 月 11 日。
 
-下一个 VESTA 热修复将 **把此前在 VESTA 中作为测试版提供的所有功能纳入常规 VESTA 功能集**。这些原测试版功能已作为常规功能包含在 [NOVA 主要发布版](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova) 中。
+下一个 VESTA 热修复将**把此前在 VESTA 中作为测试版提供的所有功能纳入 VESTA 常规功能集**。这些功能已在 [NOVA 沙盒](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova)中开放；NOVA 生产环境发布计划于 **2026 年 11 月 4 日** 进行。
 
 ## 对您团队的影响
 
@@ -12,7 +12,7 @@
 
 | 发布版本 | 原 VESTA 测试版功能的可用性 |
 | --- | --- |
-| **NOVA** | 现已纳入常规功能集。 |
+| **NOVA** | 自 2026 年 10 月 16 日起在沙盒中可用；生产环境发布计划于 2026 年 11 月 4 日进行。 |
 | **VESTA — 2026 年 11 月 11 日热修复** | 计划纳入常规 VESTA 功能集。 |
 
 ## 规则设置指南

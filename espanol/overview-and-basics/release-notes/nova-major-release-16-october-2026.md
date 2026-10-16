@@ -1,6 +1,8 @@
-# NOVA — Versión principal
+# NOVA — Versión principal — 4 de noviembre de 2026 (previsto)
 
-**Instantánea de versión: 16 de octubre de 2026**
+**Disponibilidad de NOVA R1.1:** Disponible en el entorno de pruebas desde el **16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**.
+
+**Versiones de los servicios del entorno de pruebas: 16 de octubre de 2026**
 
 NOVA incluye todas las funciones que antes estaban disponibles como beta en VESTA como funciones regulares, junto con la validación guiada de documentos, más formas de mejorar la automatización, comprobaciones más claras de facturas electrónicas y un mejor control sobre las importaciones y el procesamiento de documentos. Estas notas describen las adiciones orientadas al cliente en las versiones de servicio que se enumeran a continuación, en comparación con el [último hotfix de VESTA publicado, R1.0.15 del 14 de octubre de 2026](incremental-updates-14-october-2026.md), incluidos hotfixes anteriores de VESTA.
 
@@ -8,7 +10,7 @@ La instantánea identifica las compilaciones cubiertas por estas notas. Para con
 
 ## Antiguas funciones beta de VESTA: incluidas en NOVA <a href="#former-vesta-beta-features-included-in-nova" id="former-vesta-beta-features-included-in-nova"></a>
 
-**Todas las antiguas funciones beta de VESTA forman ahora parte del conjunto de funciones regulares de NOVA.** Para los clientes que no utilizaron la beta de VESTA, esto amplía las funciones disponibles para su equipo, incluidas **Gestionar diseños**, [**Reglas de validación personalizadas**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) y [**Reglas de transformación**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). La configuración de la organización, los interruptores de tipo de documento y los permisos de acceso siguen aplicándose.
+**Todas las antiguas funciones beta de VESTA están incluidas como funciones estándar en el entorno de pruebas de NOVA.** Para los clientes que no utilizaron la beta de VESTA, esto amplía las funciones disponibles para su equipo, incluidas **Gestionar diseños**, [**Reglas de validación personalizadas**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) y [**Reglas de transformación**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). La configuración de la organización, los interruptores de tipo de documento y los permisos de acceso siguen aplicándose.
 
 Las mismas antiguas funciones beta se convertirán en funciones regulares de VESTA con el **siguiente hotfix de VESTA, previsto para el [11 de noviembre de 2026](vesta-hotfix-11-november-2026.md)**. Este anuncio cubre las antiguas funciones beta de VESTA; las secciones siguientes también describen adiciones y mejoras adicionales de NOVA.
 
@@ -184,7 +186,7 @@ Consulte el [hotfix de VESTA del 14 de octubre](incremental-updates-14-october-2
 
 ## Versiones de servicios de NOVA
 
-Estas son las versiones y marcas de tiempo de despliegue en la **instantánea del 16 de octubre de 2026**. Las marcas de tiempo describen despliegues individuales de servicios, no una fecha de lanzamiento separada para cada funcionalidad.
+Estas son las versiones y las marcas de tiempo de despliegue de la **compilación de NOVA disponible en el entorno de pruebas desde el 16 de octubre de 2026**. El lanzamiento en producción está previsto para el **4 de noviembre de 2026**; esta instantánea del entorno de pruebas no determina las versiones definitivas de producción. Las marcas de tiempo corresponden a despliegues individuales de los servicios.
 
 | Servicio | Versión | Marca de tiempo de despliegue |
 | --- | --- | --- |

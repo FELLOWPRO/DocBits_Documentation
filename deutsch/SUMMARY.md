@@ -15,7 +15,7 @@
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
 * [DocBits Release-Lebenszyklus-Strategie](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Versionshinweise](overview-and-basics/release-notes/README.md)
-  * [NOVA — Hauptversion](overview-and-basics/release-notes/nova-major-release-16-october-2026.md)
+  * [NOVA — Hauptversion — 4. November 2026 (geplant)](overview-and-basics/release-notes/nova-major-release-16-october-2026.md)
   * [VESTA Hotfix — 11. November 2026 (geplant)](overview-and-basics/release-notes/vesta-hotfix-11-november-2026.md)
   * [VESTA Hotfix — 14. Oktober 2026](overview-and-basics/release-notes/incremental-updates-14-october-2026.md)
   * [VESTA Hotfix — 15. September 2026](overview-and-basics/release-notes/incremental-updates-15-september-2026.md)

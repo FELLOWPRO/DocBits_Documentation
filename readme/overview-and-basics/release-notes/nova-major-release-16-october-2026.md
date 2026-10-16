@@ -1,6 +1,8 @@
-# NOVA — Major Release
+# NOVA — Major Release — 4 November 2026 (planned)
 
-**Version snapshot: 16 October 2026**
+**NOVA R1.1 availability:** Available in the sandbox since **16 October 2026**. The production release is planned for **4 November 2026**.
+
+**Sandbox service snapshot: 16 October 2026**
 
 NOVA includes all features previously available as beta in VESTA as regular features, alongside guided document validation, more ways to improve automation, clearer e-invoice checks and better control over imports and document processing. These notes describe the customer-facing additions in the service versions listed below, compared with the last published [VESTA hotfix, R1.0.15 of 14 October 2026](incremental-updates-14-october-2026.md), including earlier VESTA hotfixes.
 
@@ -8,7 +10,7 @@ The snapshot identifies the builds covered by these notes. For availability in y
 
 ## Former VESTA beta features: included in NOVA
 
-**All former VESTA beta features are now part of NOVA's regular feature set.** For customers who did not use the VESTA beta, this expands the features available to their team, including **Manage Layouts**, [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisation settings, document-type switches and access permissions continue to apply.
+**All former VESTA beta features are included in the NOVA sandbox as regular features.** For customers who did not use the VESTA beta, this expands the features available to their team, including **Manage Layouts**, [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisation settings, document-type switches and access permissions continue to apply.
 
 The same former beta features will become regular VESTA features with the **next VESTA hotfix, planned for [11 November 2026](vesta-hotfix-11-november-2026.md)**. This announcement covers the former VESTA beta features; the sections below also describe further NOVA additions and improvements.
 
@@ -184,7 +186,7 @@ See the [14 October VESTA hotfix](incremental-updates-14-october-2026.md), [15 S
 
 ## NOVA service versions
 
-These are the versions and deployment timestamps in the **16 October 2026 snapshot**. The timestamps describe individual service deployments, not a separate release date for every feature.
+These are the versions and deployment timestamps of the **NOVA sandbox build available on 16 October 2026**. The production release is planned for **4 November 2026**; this sandbox snapshot does not identify the final production builds. The timestamps describe individual service deployments.
 
 | Service | Version | Deployment timestamp |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 > **Canal de publication :** VESTA · **Statut :** Prévu · **Date planifiée :** 11 novembre 2026.
 
-Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemment disponibles en bêta dans VESTA dans l'ensemble de fonctionnalités standard de VESTA**. Ces anciennes fonctionnalités bêta sont déjà incluses comme fonctionnalités standard dans la [version majeure NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova).
+Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemment disponibles en bêta dans VESTA aux fonctionnalités standard de VESTA**. Ces fonctionnalités sont déjà disponibles dans l’[environnement de test de NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova) ; la mise en production de NOVA est prévue le **4 novembre 2026**.
 
 ## Ce qui change pour votre équipe
 
@@ -12,7 +12,7 @@ Le prochain correctif VESTA intègre **toutes les fonctionnalités précédemmen
 
 | Version | Disponibilité des anciennes fonctionnalités bêta VESTA |
 | --- | --- |
-| **NOVA** | Inclus désormais dans l'ensemble de fonctionnalités standard. |
+| **NOVA** | Disponible dans l’environnement de test depuis le 16 octobre 2026 ; mise en production prévue le 4 novembre 2026. |
 | **VESTA — correctif du 11 novembre 2026** | Introduction prévue dans l'ensemble de fonctionnalités standard de VESTA. |
 
 ## Guides pour la configuration des règles

@@ -1,6 +1,6 @@
 # Outros controlos de segurança
 
-Verificado em **16 de outubro de 2026** para a pergunta **4.17**. Distinguem-se as evidências de auditorias publicadas e o inventário atual da infraestrutura.
+Verificado em **16 de outubro de 2026**. Distinguem-se as evidências de auditorias publicadas e o inventário atual da infraestrutura.
 
 | Controlo | Âmbito documentado |
 | --- | --- |
@@ -17,6 +17,6 @@ Verificado em **16 de outubro de 2026** para a pergunta **4.17**. Distinguem-se 
 
 [Certificações](architecture/certifications.md) disponibiliza relatórios e períodos. As auditorias históricas sustentam os controlos no âmbito avaliado; o inventário confirma recursos presentes na data da revisão e não constitui auditoria completa da configuração.
 
-Consulte [Armazenamento seguro de credenciais](secure-storage-of-credentials.md), [Cifragem em repouso](encryption-at-rest.md) e [Gestão de vulnerabilidades](vulnerability-management.md).
+Consulte [Armazenamento seguro de credenciais](secure-storage-of-credentials.md), [Cifragem em repouso](../security/encryption-at-rest.md) e [Gestão de vulnerabilidades](vulnerability-management.md).
 
 Para restrições da implementação, requisitos móveis ou políticas atuais: **compliance@fellowpro.com**.

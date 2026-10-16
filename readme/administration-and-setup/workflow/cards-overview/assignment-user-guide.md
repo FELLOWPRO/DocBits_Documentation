@@ -40,26 +40,26 @@
 #### 工作方式
 
 ```
-Document is "assigned to" = John Smith
-Only John can see it as assigned to him
-John is responsible for this document
+文档“分配给”= John Smith
+只有 John 能在“分配给自己”中看到该文档
+John 负责处理此文档
 ```
 
 #### 示例
 
 ```
-Invoice arrives
+收到发票
     ↓
-Assign Document to: John Smith (Finance Manager)
+将文档分配给：John Smith（财务经理）
     ↓
-Only John sees "Assigned to Me"
-John must take action on it
+只有 John 能在“分配给自己”中看到该文档
+John 必须处理该文档
 ```
 
 #### 参数
 
 ```
-User: [Select which person]
+用户：[选择人员]
 ```
 
 #### 注意
@@ -89,26 +89,26 @@ User: [Select which person]
 #### 工作方式
 
 ```
-Document is "assigned to" = Finance Team (10 people)
-All 10 team members see "Assigned to My Group"
-Any team member can take action
+文档“分配给”= 财务团队（10 人）
+所有 10 名团队成员都能在“分配给我的组”中看到该文档
+任何团队成员都可以处理该文档
 ```
 
 #### 示例
 
 ```
-New vendor invoice
+收到新的供应商发票
     ↓
-Assign Document to: Procurement Team
+将文档分配给：采购团队
     ↓
-All procurement team members see it
-First available person handles it
+所有采购团队成员都能看到该文档
+由第一位有空的人员处理
 ```
 
 #### 参数
 
 ```
-Group: [Select which group]
+组：[选择组]
 ```
 
 #### 区别
@@ -158,34 +158,34 @@ Group: [Select which group]
 #### 示例：按金额分配
 
 ```
-Invoice: €2000 from ABC Corp
+发票：来自 ABC Corp 的 €2000 发票
 
-Decision Table checks:
-  Is amount > €10000? NO
-  Is amount > €5000? NO
-  Is amount > €1000? YES
+决策表检查：
+  金额是否 > €10000？否
+  金额是否 > €5000？否
+  金额是否 > €1000？是
 
-Result: Assign to: Finance Manager
+结果：分配给：财务经理
 ```
 
 #### 示例：按供应商分配
 
 ```
-Invoice from: Preferred Supplier
+来自：优选供应商的发票
 
-Decision Table:
-  If preferred supplier → Finance Team
-  If new supplier → Procurement Manager
-  If blacklisted → Director Review
+决策表：
+  如果是优选供应商 → 财务团队
+  如果是新供应商 → 采购经理
+  如果已列入黑名单 → 总监审核
 
-Result: Assign to: Finance Team
+结果：分配给：财务团队
 ```
 
 #### 参数
 
 ```
-Decision Table: [Select decision table]
-(Decision table contains assignment logic)
+决策表：[选择决策表]
+（决策表包含分配逻辑）
 ```
 
 ***
@@ -206,30 +206,30 @@ Decision Table: [Select decision table]
 #### 工作方式
 
 ```
-First Decision: Who approves first?
+第一个决策：谁先审批？
     ↓
-Assign to: Person 1
+分配给：人员 1
     ↓
-Person 1 approves
+人员 1 审批
     ↓
-Second Decision: Who approves next?
+第二个决策：接下来由谁审批？
     ↓
-Assign to: Person 2
+分配给：人员 2
     ↓
-Person 2 approves (final)
+人员 2 审批（最终审批）
     ↓
-Document Complete
+文档完成
 ```
 
 #### 优先级系统
 
 ```
-Priority 1: First assignment
-Priority 2: Second assignment
-Priority 3: Third assignment
-(etc.)
+优先级 1：第一次分配
+优先级 2：第二次分配
+优先级 3：第三次分配
+（依此类推）
 
-Each must complete before next begins
+每个步骤都必须完成后，才能开始下一步
 ```
 
 #### 示例：多级审批
@@ -253,8 +253,8 @@ Each must complete before next begins
 #### 参数
 
 ```
-Decision Table: [Select]
-Priority Order: [Determined by decision table]
+决策表：[选择]
+优先顺序：[由决策表决定]
 ```
 
 ***
@@ -274,24 +274,24 @@ Priority Order: [Determined by decision table]
 #### 工作方式
 
 ```
-Assign Document to: User A (Priority 1)
+将文档分配给：用户 A（优先级 1）
     ↓
-User A processes
+用户 A 处理
     ↓
-Then: Assign to User B (Priority 2)
+然后：分配给用户 B（优先级 2）
     ↓
-User B processes
+用户 B 处理
 ```
 
 #### 示例
 
 ```
-Invoice processing:
-1. Assign to: Accounts Payable Clerk
-2. Then: Assign to: Finance Manager
-3. Then: Assign to: Director
+发票处理：
+1. 分配给：应付账款文员
+2. 然后：分配给：财务经理
+3. 然后：分配给：总监
 
-Each person has their turn
+每个人依次处理
 ```
 
 ***
@@ -311,14 +311,14 @@ Each person has their turn
 #### 工作方式
 
 ```
-Step 1: Assign to Group A (Quality Team)
-        Quality verifies
+步骤 1：分配给组 A（质量团队）
+        质量团队进行验证
     ↓
-Step 2: Assign to Group B (Finance Team)
-        Finance reviews
+步骤 2：分配给组 B（财务团队）
+        财务团队进行审核
     ↓
-Step 3: Assign to Group C (Procurement)
-        Procurement approves
+步骤 3：分配给组 C（采购部）
+        采购部进行审批
 ```
 
 #### 示例
@@ -358,17 +358,17 @@ Step 3: Assign to Group C (Procurement)
 #### 示例
 
 ```
-Shipment notification
+发货通知
 
-Assign to: Berlin Warehouse Team
+分配给：柏林仓库团队
     ↓
-Berlin warehouse processes shipment
+柏林仓库处理发货
     ↓
-Or
+或者
 
-Assign to: Munich Warehouse Team
+分配给：慕尼黑仓库团队
     ↓
-Munich warehouse processes shipment
+慕尼黑仓库处理发货
 ```
 
 ***
@@ -415,11 +415,11 @@ Munich warehouse processes shipment
 #### 示例
 
 ```
-Vendor evaluation document
+供应商评估文档
     ↓
-Assign to: Procurement Group
+分配给：采购组
     ↓
-Procurement team evaluates vendor
+采购团队评估供应商
 ```
 
 ***
@@ -438,13 +438,13 @@ Procurement team evaluates vendor
 #### 示例
 
 ```
-Purchase Requisition:
+采购申请：
 
-Step 1: Buyer (Creates PO)
-Step 2: Approver (Reviews)
-Step 3: Director (Final sign-off)
+步骤 1：采购员（创建采购订单）
+步骤 2：审批人（审核）
+步骤 3：总监（最终签批）
 
-Each step in sequence
+每个步骤依次进行
 ```
 
 ***
@@ -464,21 +464,21 @@ Each step in sequence
 #### 工作方式
 
 ```
-Current Sub-Org: Finance Department
+当前子组织：财务部
     ↓
-Change to: Accounting Department
+更改为：会计部
     ↓
-Document now belongs to Accounting
+文档现在归属会计部
 ```
 
 #### 示例
 
 ```
-Document for: Berlin Office
+文档适用于：柏林办公室
     ↓
-Realize should be: Munich Office
+确认应为：慕尼黑办公室
     ↓
-Change Sub-Organization to: Munich Office
+将子组织更改为：慕尼黑办公室
 ```
 
 ***
@@ -498,24 +498,24 @@ Change Sub-Organization to: Munich Office
 #### 工作方式
 
 ```
-Document Field: "Delivery_Location" = "Berlin"
+文档字段：“Delivery_Location” = “Berlin”
     ↓
-Decision Table:
-  If location = "Berlin" → Assign to: Berlin Sub-Org
-  If location = "Munich" → Assign to: Munich Sub-Org
+决策表：
+  如果位置 = “Berlin” → 分配给：柏林子组织
+  如果位置 = “Munich” → 分配给：慕尼黑子组织
 
     ↓
-Document assigned to: Berlin Sub-Org
+文档已分配给：柏林子组织
 ```
 
 #### 示例
 
 ```
-Invoice field: "Cost Center: CC-Berlin-001"
+发票字段：“Cost Center: CC-Berlin-001”
     ↓
-System recognizes: Berlin location
+系统识别出：柏林位置
     ↓
-Change document to: Berlin Sub-Organization
+将文档更改为：柏林子组织
 ```
 
 ***
@@ -535,34 +535,34 @@ Change document to: Berlin Sub-Organization
 #### 工作方式
 
 ```
-Document Field: "Approver: John Smith"
+文档字段：“Approver: John Smith”
     ↓
-Try to assign to: John Smith
+尝试分配给：John Smith
     ↓
-If John doesn't exist:
+如果系统中不存在 John：
     ↓
-Use Fallback: Sarah Johnson (Manager)
+使用备用用户：Sarah Johnson（经理）
     ↓
-Document assigned to: Sarah Johnson
+文档已分配给：Sarah Johnson
 ```
 
 #### 参数
 
 ```
-Source Field: [Field containing user name]
-Fallback User: [If source user not found]
+来源字段：[包含用户名的字段]
+备用用户：[如果找不到来源用户]
 ```
 
 #### 示例
 
 ```
-Invoice has field: "Contact Person: Mike Johnson"
+发票包含字段：“Contact Person: Mike Johnson”
 
-Try to assign to: Mike Johnson
+尝试分配给：Mike Johnson
     ↓
-If Mike not in system:
+如果系统中没有 Mike：
     ↓
-Fallback to: Finance Manager (Robert)
+改为分配给：财务经理（Robert）
 ```
 
 ***
@@ -582,11 +582,11 @@ Fallback to: Finance Manager (Robert)
 #### 工作方式
 
 ```
-Document Supplier: ABC Corp
+文档供应商：ABC Corp
     ↓
-System checks: Who manages ABC Corp?
+系统检查：谁负责管理 ABC Corp？
     ↓
-Assign to: John Smith (ABC Corp Account Manager)
+分配给：John Smith（ABC Corp 客户经理）
 ```
 
 ***
@@ -596,43 +596,43 @@ Assign to: John Smith (ABC Corp Account Manager)
 ### 决策表示例 1：按金额
 
 ```
-Amount ≤ €1000
-  → Assign to: Finance Team
+金额 ≤ €1000
+  → 分配给：财务团队
 
-Amount €1000-€5000
-  → Assign to: Finance Manager
+金额 €1000-€5000
+  → 分配给：财务经理
 
-Amount €5000-€20000
-  → Assign to: Finance Director
+金额 €5000-€20000
+  → 分配给：财务总监
 
-Amount > €20000
-  → Assign to: CFO
+金额 > €20000
+  → 分配给：首席财务官
 ```
 
 ### 决策表示例 2：按供应商
 
 ```
-Supplier Type = "Preferred"
-  → Assign to: Account Manager
+供应商类型 = “Preferred”
+  → 分配给：客户经理
 
-Supplier Type = "New"
-  → Assign to: Procurement Manager
+供应商类型 = “New”
+  → 分配给：采购经理
 
-Supplier Type = "Problem"
-  → Assign to: Procurement Director
+供应商类型 = “Problem”
+  → 分配给：采购总监
 ```
 
 ### 决策表示例 3：按文档类型
 
 ```
-Document Type = "Invoice"
-  → Assign to: Accounts Payable Team
+文档类型 = “Invoice”
+  → 分配给：应付账款团队
 
-Document Type = "Credit Memo"
-  → Assign to: Finance Manager
+文档类型 = “Credit Memo”
+  → 分配给：财务经理
 
-Document Type = "PO"
-  → Assign to: Procurement Team
+文档类型 = “PO”
+  → 分配给：采购团队
 ```
 
 ***
@@ -642,56 +642,56 @@ Document Type = "PO"
 ### 示例 1：简单路由
 
 ```
-Document Arrives
+收到文档
     ↓
-Check: Supplier = "ABC Corp"? YES
+检查：供应商 = “ABC Corp”？是
     ↓
-Assign to: John Smith
-(John handles ABC Corp)
+分配给：John Smith
+（John 负责 ABC Corp）
     ↓
-John reviews and approves
+John 审核并批准
 ```
 
 ### 示例 2：顺序审批
 
 ```
-Document Arrives
+收到文档
     ↓
-Assign to: Finance Manager (Step 1)
+分配给：财务经理（步骤 1）
     ↓
-Manager reviews
+经理审核
     ↓
-Passes to: Finance Director (Step 2)
+传递给：财务总监（步骤 2）
     ↓
-Director reviews
+总监审核
     ↓
-Passes to: CFO (Step 3)
+传递给：首席财务官（步骤 3）
     ↓
-CFO approves final
+首席财务官最终批准
 ```
 
 ### 示例 3：按金额路由
 
 ```
-Invoice: €50,000
+发票：€50,000
     ↓
-Decision Table: Amount > €20k?
+决策表：金额 > €20k？
     ↓
-YES → Assign to: CFO
+是 → 分配给：首席财务官
     ↓
-CFO approves directly
+首席财务官直接批准
 ```
 
 ### 示例 4：按设施分配
 
 ```
-Shipment for: Berlin Office
+发往：柏林办公室的货物
     ↓
-Assign to: Berlin Warehouse Team
+分配给：柏林仓库团队
     ↓
-Then assign to: Berlin Distribution Team
+然后分配给：柏林配送团队
     ↓
-Both teams process in sequence
+两个团队依次处理
 ```
 
 ***

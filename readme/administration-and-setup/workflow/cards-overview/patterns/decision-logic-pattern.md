@@ -50,54 +50,54 @@
 
 ```
 IF condition:
-  → Action A
+  → 操作 A
 ELSE:
-  → Action B
+  → 操作 B
 ```
 
 **示例：**
 
 ```
 IF Amount > €10,000:
-  → Assign to Director
+  → 分配给总监
 ELSE:
-  → Assign to Manager
+  → 分配给经理
 ```
 
 ### 2. 多个条件（AND 逻辑）
 
 ```
 IF condition1 AND condition2 AND condition3:
-  → Action A
+  → 操作 A
 ELSE:
-  → Action B
+  → 操作 B
 ```
 
 **示例：**
 
 ```
 IF Amount > €10,000 AND Supplier = "New" AND Department = "IT":
-  → Assign to IT Director + CFO (dual approval)
+  → 分配给 IT 总监 + CFO（双重审批）
 ELSE:
-  → Standard approval workflow
+  → 标准审批工作流
 ```
 
 ### 3. 替代条件（OR 逻辑）
 
 ```
 IF condition1 OR condition2 OR condition3:
-  → Action A
+  → 操作 A
 ELSE:
-  → Action B
+  → 操作 B
 ```
 
 **示例：**
 
 ```
 IF Amount > €50,000 OR Supplier is "Blocked" OR Document has "Urgent" flag:
-  → Escalate immediately
+  → 立即升级处理
 ELSE:
-  → Standard processing
+  → 标准处理
 ```
 
 ### 4. 嵌套决策树
@@ -105,14 +105,14 @@ ELSE:
 ```
 IF condition1:
   IF condition2:
-    → Action A
+    → 操作 A
   ELSE:
-    → Action B
+    → 操作 B
 ELSE:
   IF condition3:
-    → Action C
+    → 操作 C
   ELSE:
-    → Action D
+    → 操作 D
 ```
 
 **示例：**
@@ -296,12 +296,12 @@ ELSE:
 **路径 A：自动审批（金额 < €1,000）**
 
 ```
-Actions:
-1. Set field "Approval_Type" = "AUTO"
-2. Set field "Approval_Level" = "0"
+操作：
+1. 将字段 "Approval_Type" 设为 "AUTO"
+2. 将字段 "Approval_Level" 设为 "0"
 3. ACTION_APPROVE_DOCUMENT
-4. Export to ERP
-5. Send confirmation email (optional)
+4. 导出到 ERP
+5. 发送确认电子邮件（可选）
 ```
 
 **路径 B：经理审批（€1,000-€10,000）**
@@ -391,10 +391,10 @@ Actions:
 **实施：**
 
 ```
-1. ACTION_CALCULATE_FIELD: Calculate risk score
-2. ACTION_SET_FIELD_TO_NUMBER: Store score
-3. CONDITION_DOC_FIELD_NUMBER: Check score thresholds
-4. Route based on score
+1. ACTION_CALCULATE_FIELD：计算风险评分
+2. ACTION_SET_FIELD_TO_NUMBER：存储评分
+3. CONDITION_DOC_FIELD_NUMBER：检查评分阈值
+4. 根据评分进行路由
 ```
 
 ***
@@ -426,10 +426,10 @@ Actions:
 **实施：**
 
 ```
-1. Check Department field
-2. Based on department, check amount threshold
-3. Route to appropriate approver
-4. Different thresholds per department
+1. 检查 Department 字段
+2. 根据部门检查金额阈值
+3. 路由到相应的审批人
+4. 为不同部门设置不同阈值
 ```
 
 ***
@@ -644,25 +644,25 @@ Actions:
 
 ```
 IF Amount > 10000:
-  → High value path
+  → 高金额路径
 ELSE:
-  → Standard path
+  → 标准路径
 ```
 
 ❌ **不良示例（过于复杂）：**
 
 ```
 IF (Amount > 10000 AND (Supplier = "A" OR Supplier = "B") AND NOT (Status = "X" OR Status = "Y") AND Department IN [1,2,3]):
-  → Complex path
+  → 复杂路径
 ```
 
 **更好的做法：拆分为多个步骤：**
 
 ```
-Step 1: IF Amount > 10000: Continue, ELSE: Standard path
-Step 2: IF Supplier in allowed list: Continue, ELSE: Review
-Step 3: IF Status valid: Continue, ELSE: Reject
-Step 4: IF Department authorized: Approve, ELSE: Escalate
+步骤 1：IF Amount > 10000：继续，否则：标准路径
+步骤 2：IF Supplier 在允许列表中：继续，否则：审核
+步骤 3：IF Status 有效：继续，否则：拒绝
+步骤 4：IF Department 已授权：批准，否则：升级处理
 ```
 
 ***

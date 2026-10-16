@@ -77,29 +77,29 @@
 **路径 1（< €1,000）的配置：**
 
 ```
-Field: Total_Amount
-Operator: IS LESS THAN
-Value: 1000
-Currency: EUR
+字段: Total_Amount
+运算符: IS LESS THAN
+值: 1000
+货币: EUR
 ```
 
 **路径 2（€1,000-€10,000）的配置：**
 
 ```
-Field: Total_Amount
-Operator: IS BETWEEN
-Value Min: 1000
-Value Max: 10000
-Currency: EUR
+字段: Total_Amount
+运算符: IS BETWEEN
+最小值: 1000
+最大值: 10000
+货币: EUR
 ```
 
 **路径 3（> €10,000）的配置：**
 
 ```
-Field: Total_Amount
-Operator: IS GREATER THAN
-Value: 10000
-Currency: EUR
+字段: Total_Amount
+运算符: IS GREATER THAN
+值: 10000
+货币: EUR
 ```
 
 **指南参考：**[条件卡片完整指南](../condition-cards-complete-guide.md)
@@ -196,30 +196,30 @@ Currency: EUR
 **选项 1：分配给特定用户**
 
 ```
-User: John.Smith@company.com
+用户: John.Smith@company.com
 OR
-User Field: {{DOCUMENT_FIELD:Approving_Manager}}
+用户字段: {{DOCUMENT_FIELD:Approving_Manager}}
 ```
 
 **选项 2：分配给群组**
 
 ```
-Group: Finance Managers
-Assignment Mode: First Available
+组: Finance Managers
+分配模式: First Available
 OR
-Assignment Mode: Round Robin
+分配模式: Round Robin
 OR
-Assignment Mode: All (everyone in group gets task)
+分配模式: All (组内每个人都会收到任务)
 ```
 
 **选项 3：依次分配**
 
 ```
-Card: ACTION_ASSIGN_SEQUENTIALLY_TO_USER
+卡片: ACTION_ASSIGN_SEQUENTIALLY_TO_USER
 
-User 1: Finance_Manager
-User 2: Finance_Director (only if User 1 approves)
-User 3: CFO (only if User 2 approves)
+用户 1: Finance_Manager
+用户 2: Finance_Director (仅当用户 1 批准时)
+用户 3: CFO (仅当用户 2 批准时)
 ```
 
 **指南参考：**[用户分配指南](../assignment-user-guide.md)
@@ -263,8 +263,8 @@ User 3: CFO (only if User 2 approves)
 **配置：**
 
 ```
-Task ID: {{CREATED_TASK_ID}}
-Status Check: IS COMPLETED
+任务 ID: {{CREATED_TASK_ID}}
+状态检查: IS COMPLETED
 ```
 
 **状态选项：**
@@ -306,11 +306,11 @@ IF TASK_STATUS = OVERDUE：
 **场景 A：任务已批准**
 
 ```
-1. Set field "Approval_Status" = "APPROVED"
-2. Set field "Approved_By" = {{TASK_COMPLETED_BY}}
-3. Set field "Approval_Date" = {{TASK_COMPLETED_DATE}}
+1. 将字段 "Approval_Status" 设置为 "APPROVED"
+2. 将字段 "Approved_By" 设置为 {{TASK_COMPLETED_BY}}
+3. 将字段 "Approval_Date" 设置为 {{TASK_COMPLETED_DATE}}
 4. ACTION_APPROVE_DOCUMENT
-5. Export document (if configured)
+5. 导出文档（如果已配置）
 ```
 
 **场景 B：任务已拒绝**
@@ -327,11 +327,11 @@ IF TASK_STATUS = OVERDUE：
 **场景 C：任务已逾期**
 
 ```
-1. Set field "Task_Status" = "OVERDUE"
-2. Create escalation task for manager
-3. Send reminder email to original assignee
-4. Send escalation email to manager
-5. Log overdue event
+1. 将字段 "Task_Status" 设置为 "OVERDUE"
+2. 为经理创建升级任务
+3. 向原受派人发送提醒邮件
+4. 向经理发送升级邮件
+5. 记录逾期事件
 ```
 
 ***
@@ -499,13 +499,13 @@ IF TASK_STATUS = OVERDUE：
 **用途：**发票必须依次经过多个审批人
 
 ```
-Level 1: Accounts Clerk (verify data)
+级别 1: Accounts Clerk（验证数据）
   → IF APPROVED:
-    Level 2: Accounts Manager (approve amount)
+    级别 2: Accounts Manager（批准金额）
       → IF APPROVED:
-        Level 3: Finance Director (final sign-off)
+        级别 3: Finance Director（最终签核）
           → IF APPROVED:
-            Document Approved ✅
+            文档已批准 ✅
 ```
 
 **实施：**
@@ -530,24 +530,24 @@ Level 1: Accounts Clerk (verify data)
 **用途：**多人必须同时审批
 
 ```
-Send to ALL approvers at once:
+同时发送给所有审批人:
 - Finance Manager
 - Procurement Manager
 - Quality Manager
 
-Document approved only when ALL approve
+仅当所有人都批准后，文档才会获批
 ```
 
 **实施：**
 
 ```
-1. Create 3 tasks simultaneously
-2. Track all 3 task statuses
-3. WAIT until ALL tasks completed
+1. 同时创建 3 个任务
+2. 跟踪所有 3 个任务的状态
+3. WAIT，直到所有任务完成
 4. IF ALL = APPROVED:
-     Approve Document
+     批准文档
    ELSE:
-     Reject Document
+     拒绝文档
 ```
 
 ***
@@ -596,12 +596,12 @@ ELSE：
 **解决方案：**
 
 ```
-1. Check user status with CONDITION_USER_IS_ISNOT
-2. IF User = INACTIVE:
-     → Assign to backup user
-     → OR Assign to user's group
-     → Log warning
-3. Send notification to admin
+1. 使用 CONDITION_USER_IS_ISNOT 检查用户状态
+2. IF 用户 = INACTIVE:
+     → 分配给备用用户
+     → OR 分配给该用户所属的组
+     → 记录警告
+3. 向管理员发送通知
 ```
 
 ***
@@ -613,12 +613,12 @@ ELSE：
 **解决方案：**
 
 ```
-1. Check task creation status
+1. 检查任务创建状态
 2. IF Failed:
-     → Retry task creation
-     → Send email notification instead
-     → Create admin alert task
-     → Log error details
+     → 重试创建任务
+     → 改为发送邮件通知
+     → 创建管理员警报任务
+     → 记录错误详情
 ```
 
 ***
@@ -630,15 +630,15 @@ ELSE：
 **解决方案：**
 
 ```
-1. Monitor task deadline
-2. Day before deadline:
-     → Send reminder email
-3. On deadline day:
-     → Send urgent reminder
-4. After deadline:
-     → Create escalation task
-     → Notify manager
-     → Log overdue event
+1. 监控任务截止日期
+2. 截止日期前一天:
+     → 发送提醒邮件
+3. 截止日期当天:
+     → 发送紧急提醒
+4. 截止日期之后:
+     → 创建升级任务
+     → 通知经理
+     → 记录逾期事件
 ```
 
 ***

@@ -124,12 +124,12 @@ Status Code: 200
 **逻辑：**
 
 ```
-IF API returns 200 (success):
-  → Continue to store data
-ELSE:
-  → Route to "API Error" handling workflow
-  → Send email notification
-  → Create manual review task
+IF API 返回 200（成功）：
+  → 继续存储数据
+ELSE：
+  → 路由到 "API Error" 处理工作流
+  → 发送电子邮件通知
+  → 创建人工审核任务
 ```
 
 **指南参考：** [条件卡片指南 - HTTP 状态](../condition-cards-complete-guide.md#condition-https-request-status)
@@ -145,25 +145,25 @@ ELSE:
 **字段 1：Current\_API\_Price**
 
 ```
-Field Name: Current_API_Price
-Field Value: {{API_RESPONSE:data.unit_price}}
-Field Type: Number
+字段名称：Current_API_Price
+字段值：{{API_RESPONSE:data.unit_price}}
+字段类型：Number
 ```
 
 **字段 2：API\_Price\_Valid\_Until**
 
 ```
-Field Name: API_Price_Valid_Until
-Field Value: {{API_RESPONSE:data.valid_until}}
-Field Type: Date
+字段名称：API_Price_Valid_Until
+字段值：{{API_RESPONSE:data.valid_until}}
+字段类型：Date
 ```
 
 **字段 3：API\_Discount\_Available**
 
 ```
-Field Name: API_Discount_Available
-Field Value: {{API_RESPONSE:data.discount_applicable}}
-Field Type: Boolean
+字段名称：API_Discount_Available
+字段值：{{API_RESPONSE:data.discount_applicable}}
+字段类型：Boolean
 ```
 
 **结果：** API 中的数据现在已存储在文档字段中，供后续使用
@@ -179,24 +179,24 @@ Field Type: Boolean
 **配置：**
 
 ```
-Field 1: Invoice_Unit_Price (from OCR extraction)
-Field 2: Current_API_Price (from API response)
-Operator: Calculate variance percentage
-Tolerance: 5%
+字段 1：Invoice_Unit_Price（来自 OCR 提取）
+字段 2：Current_API_Price（来自 API 响应）
+运算符：计算差异百分比
+容差：5%
 ```
 
 **计算：**
 
 ```
-Variance % = |(Invoice_Price - API_Price)| / API_Price × 100
+差异百分比 = |(Invoice_Price - API_Price)| / API_Price × 100
 
-Example:
-  Invoice Price: €52.00
-  API Price: €50.00
-  Variance = |52 - 50| / 50 × 100 = 4%
+示例：
+  发票价格：€52.00
+  API 价格：€50.00
+  差异 = |52 - 50| / 50 × 100 = 4%
 
-  Is 4% ≤ 5% tolerance? YES ✅
-  Result: PASS
+  4% ≤ 5% 容差吗？YES ✅
+  结果：PASS
 ```
 
 **指南参考：** [条件卡片指南 - 字段比较](../condition-cards-complete-guide.md)
@@ -469,10 +469,10 @@ Example:
 
 ```
 IF DOCUMENT_TYPE = "Invoice" AND AMOUNT > 10000:
-  → Call Pricing Validation API
-  → Verify prices
-ELSE:
-  → Skip API call (not needed for small amounts)
+  → 调用定价验证 API
+  → 验证价格
+ELSE：
+  → 跳过 API 调用（小额无需调用）
 ```
 
 ***

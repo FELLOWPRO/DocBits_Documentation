@@ -240,19 +240,19 @@
 ### 示例 2：高金额发票审批
 
 ```
-1. Data Transformation Pattern → Calculate amounts
-2. Decision Logic Pattern → Check thresholds
-3. Task Management Pattern → Multi-level approval
-4. API Integration Pattern → Notify external systems
+1. 数据转换模式 → 计算金额
+2. 决策逻辑模式 → 检查阈值
+3. 任务管理模式 → 多级审批
+4. API 集成模式 → 通知外部系统
 ```
 
 ### 示例 3：异常处理
 
 ```
-1. PO Matching Pattern → Detect variances
-2. Decision Logic Pattern → Classify exception severity
-3. Task Management Pattern → Create review tasks
-4. Data Transformation Pattern → Calculate impact
+1. 采购订单匹配模式 → 检测差异
+2. 决策逻辑模式 → 对异常严重程度进行分类
+3. 任务管理模式 → 创建审核任务
+4. 数据转换模式 → 计算影响
 ```
 
 ***

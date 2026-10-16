@@ -204,9 +204,9 @@ DocBits 自动化
 **内容：**
 
 ```
-Invoice {number} has quality issues:
-- Unit Price variance: 12% (exceeds 5% tolerance)
-- Please review and take action
+发票 {number} 存在质量问题：
+- 单价偏差：12%（超过 5% 的容差）
+- 请检查并采取措施
 ```
 
 ### 用例 2：审批通知
@@ -218,10 +218,10 @@ Invoice {number} has quality issues:
 **内容：**
 
 ```
-Document {number} is awaiting approval:
-- Amount: {amount}
-- Supplier: {supplier_name}
-- Please login to approve/reject
+文档 {number} 正在等待审批：
+- 金额：{amount}
+- 供应商：{supplier_name}
+- 请登录以批准/拒绝
 ```
 
 ### 用例 3：异常通知
@@ -233,10 +233,10 @@ Document {number} is awaiting approval:
 **内容：**
 
 ```
-Exception alert for document {number}:
-- Supplier code missing
-- Delivery date invalid
-- Manual review required
+文档 {number} 异常提醒：
+- 缺少供应商代码
+- 交付日期无效
+- 需要人工审核
 ```
 
 ### 用例 4：状态更新
@@ -248,9 +248,9 @@ Exception alert for document {number}:
 **内容：**
 
 ```
-Document {number} status changed to: {status}
-Assigned to: {assigned_user}
-Next steps: {next_steps}
+文档 {number} 状态已更改为：{status}
+分配给：{assigned_user}
+后续步骤：{next_steps}
 ```
 
 ***
@@ -382,17 +382,17 @@ Next steps: {next_steps}
 ## 典型工作流示例
 
 ```
-Document Arrives
+文档到达
     ↓
-Check Condition: "Is amount > €10,000?"
+检查条件："金额 > €10,000？"
     ↓
-YES: Send Email to Finance Team
-     "High value invoice alert"
+是：向财务团队发送电子邮件
+     "高金额发票提醒"
     ↓
-Send Email to Procurement Team
-     "New invoice from supplier"
+向采购团队发送电子邮件
+     "来自供应商的新发票"
     ↓
-Workflow Continues
+工作流继续
 ```
 
 ***

@@ -18,6 +18,12 @@ What you see on the validation screen and what each icon, column and button does
 
 How to pick the right column, give the AI instructions, test a change, and keep it for the next invoices. About 1.7 minutes.
 
+### 3. Three typical problems
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part3/v1/en.mp4" %}
+
+One column fills three fields, a wrong unit price, and extra rows for freight and surcharge. What you see, what to write, how to check. About 1.7 minutes.
+
 ## When you get the AI table
 
 * An admin has switched on **AI Table extraction** (Settings → Document Processing → Classification and Extraction, see [Settings for admins](./#settings-for-admins)). If it is off, the table area shows _AI Table will display here. Enable in …_.

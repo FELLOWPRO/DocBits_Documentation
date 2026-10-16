@@ -1,5 +1,7 @@
 # Niestandardowe reguły walidacji
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/pl.mp4" %}
+
 ## Przegląd
 
 Niestandardowe reguły walidacji pozwalają administratorowi zdefiniować **własne kontrole** danych, które DocBits ekstrahuje z dokumentu — bez pisania skryptu i bez czekania na zmianę w produkcie.

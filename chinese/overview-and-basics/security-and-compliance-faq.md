@@ -6,6 +6,8 @@
 
 静态加密详情已于 **2026 年 10 月 16 日**依据 DigitalOcean 安全文档和服务元数据审核。请参阅[静态加密](encryption-at-rest.md)，其中也包含问卷第 4.8 项。
 
+关于问卷 **4.15–4.17**，请参阅 [Cookie 与浏览器存储](cookies-and-browser-storage.md), [漏洞管理](vulnerability-management.md), [其他安全控制](other-security-controls.md).
+
 ---
 
 ## 状态图例

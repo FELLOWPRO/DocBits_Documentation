@@ -6,6 +6,8 @@ Le informazioni sull’archiviazione delle credenziali e su TLS negli endpoint p
 
 I dettagli sulla crittografia a riposo sono stati verificati il **16 ottobre 2026** sulla base della documentazione di sicurezza DigitalOcean e dei metadati dei servizi. Vedere [Crittografia dei dati a riposo](encryption-at-rest.md), inclusa la domanda 4.8.
 
+Per le domande **4.15–4.17**, consultare [Cookie e archiviazione del browser](cookies-and-browser-storage.md), [Gestione delle vulnerabilità](vulnerability-management.md), [Altri controlli di sicurezza](other-security-controls.md).
+
 ---
 
 ## Legenda dello Stato

@@ -6,6 +6,8 @@ Informacje o przechowywaniu danych uwierzytelniających i TLS w publicznych punk
 
 Szczegóły szyfrowania w spoczynku zweryfikowano **16 października 2026 r.** na podstawie dokumentacji bezpieczeństwa DigitalOcean i metadanych usług. Zobacz [Szyfrowanie danych w spoczynku](encryption-at-rest.md), w tym pytanie 4.8.
 
+Pytania **4.15–4.17** opisano na stronach [Pliki cookie i pamięć przeglądarki](cookies-and-browser-storage.md), [Zarządzanie podatnościami](vulnerability-management.md), [Pozostałe środki bezpieczeństwa](other-security-controls.md).
+
 ---
 
 ## Legenda Statusu

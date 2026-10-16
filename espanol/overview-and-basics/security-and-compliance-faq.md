@@ -6,6 +6,8 @@ La información sobre el almacenamiento de credenciales y TLS en los puntos de c
 
 Los detalles del cifrado en reposo se revisaron el **16 de octubre de 2026** con la documentación de seguridad de DigitalOcean y metadatos de servicios. Consulte [Cifrado en reposo](encryption-at-rest.md), incluida la pregunta 4.8.
 
+Para las preguntas **4.15–4.17**, consulte [Cookies y almacenamiento del navegador](cookies-and-browser-storage.md), [Gestión de vulnerabilidades](vulnerability-management.md), [Otros controles de seguridad](other-security-controls.md).
+
 ---
 
 ## Leyenda de Estado

@@ -6,6 +6,8 @@ Credential storage and public-endpoint TLS information was reviewed on **16 Octo
 
 Encryption-at-rest details were reviewed on **16 October 2026** against DigitalOcean security documentation and service metadata. See [Encryption at Rest](encryption-at-rest.md), including questionnaire item 4.8.
 
+For questionnaire items **4.15–4.17**, see [Cookies and Browser Storage](cookies-and-browser-storage.md), [Vulnerability Management](vulnerability-management.md), [Other Security Controls](other-security-controls.md).
+
 ---
 
 ## Status Legend

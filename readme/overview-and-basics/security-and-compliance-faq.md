@@ -6,6 +6,8 @@ Die Angaben zur Speicherung von Zugangsdaten und zu TLS an öffentlichen Endpunk
 
 Die Angaben zur Verschlüsselung gespeicherter Daten wurden am **16. Oktober 2026** anhand der DigitalOcean-Sicherheitsdokumentation und Dienst-Metadaten geprüft. Siehe [Verschlüsselung gespeicherter Daten](encryption-at-rest.md), einschließlich Frage 4.8.
 
+Zu den Fragen **4.15–4.17** siehe [Cookies und Browserspeicher](cookies-and-browser-storage.md), [Schwachstellenmanagement](vulnerability-management.md), [Weitere Sicherheitsmaßnahmen](other-security-controls.md).
+
 ---
 
 ## Legendenzeichen Status

@@ -6,6 +6,8 @@ Les informations sur le stockage des identifiants et TLS aux points d’accès p
 
 Les informations sur le chiffrement au repos ont été vérifiées le **16 octobre 2026** à partir de la documentation de sécurité de DigitalOcean et des métadonnées des services. Voir [Chiffrement au repos](encryption-at-rest.md), y compris la question 4.8.
 
+Pour les questions **4.15–4.17**, voir [Cookies et stockage du navigateur](cookies-and-browser-storage.md), [Gestion des vulnérabilités](vulnerability-management.md), [Autres contrôles de sécurité](other-security-controls.md).
+
 ---
 
 ## Légende du Statut

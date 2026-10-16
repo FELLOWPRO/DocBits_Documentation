@@ -1,150 +1,54 @@
-# Tag della tabella AI
+# Tag e istruzioni della tabella AI
 
-### Istruzioni passo-passo su come aggiungere tag a una tabella:
+I tag sono il modo in cui indichi all'AI cosa fare con una tabella. Nella scheda **Istruzioni per l'IA** sotto la tabella AI (vedi [Tabella AI](README.md)) puoi dare due tipi di tag:
 
-**Passo 1:** Scegli i nomi delle colonne (tag)
+| Tipo | Dove lo inserisci | Cosa ne fa l'AI |
+| --- | --- | --- |
+| **Istruzione** | **Prompt per l'IA**, una istruzione per riga | La segue durante la lettura della tabella, ad esempio come calcolare o quale dicitura usare. |
+| **Colonna** | **Colonne aggiuntive per l'IA** | Deve restituire quella colonna in aggiunta a quelle consuete, anche se il documento non la etichetta chiaramente. |
 
-* **Seleziona i nomi delle colonne:** Rivedi i nomi delle colonne della tua tabella e decidi quali tag aggiungere.
+Entrambi vengono memorizzati insieme come tag AI del fornitore quando usi **Salva come addestramento**.
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ai-table-prompt-filled-it.png" alt="Una riga di prompt digitata nella scheda Istruzioni per l'IA"><figcaption><p>Una istruzione per riga in <strong>Prompt per l'IA</strong>.</p></figcaption></figure>
 
-**Passo 2:** Premi il pulsante "Applica"
+## Aggiungere i tag passo dopo passo
 
-* **Premi il pulsante:** Una volta selezionato il tag appropriato per una colonna, premi il pulsante "Applica" accanto alla colonna e al tag selezionati.
+1. Apri il documento nella schermata di validazione e rimani nella scheda **AI Tabella estratta**.
+2. In **Prompt per l'IA** scrivi cosa deve fare l'AI, una istruzione per riga. Digita **@** per inserire una colonna dalla tua configurazione.
+3. Oppure apri **Colonne aggiuntive per l'IA** e scegli le colonne che l'AI deve restituire.
+4. Non sai cosa scrivere? Fai clic su **Suggerisci con Nexus** e usa **Inserisci** o **Aggiungi colonna** su un suggerimento.
+5. Fai clic su **Modifica del test** per confrontare il risultato con la tabella attuale. Non viene ancora scritto nulla.
+6. Il risultato ti soddisfa? Fai clic su **Applicare** (oppure **Applica il risultato a questo documento** nella finestra di test) per inserire il risultato in questo documento.
+7. Se serve a ogni documento di questo fornitore, fai clic su **Salva come addestramento**. **Cancellare** rimuove i tag e le regole salvati del layout del fornitore.
 
-**Passo 3:** Aggiungi il tag alla tabella
+{% hint style="info" %}
+Ogni riga in **Prompt per l'IA** è un'istruzione, anche una sola parola (DocBits aggiunge un punto fermo affinché l'AI non la scambi per il nome di una colonna). Le colonne vanno in **Colonne aggiuntive per l'IA**.
+{% endhint %}
 
-* **Aggiungi il tag:** Il tag selezionato verrà aggiunto alla tabella come una colonna aggiuntiva accanto alla colonna corrispondente.
+## Scrivere buone istruzioni
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags2.png" alt=""><figcaption></figcaption></figure>
+* **Indica la colonna e la dicitura del documento.** *Compila la colonna Importo dello sconto con la colonna chiamata "Rabatt".* funziona meglio di *trova lo sconto*.
+* **Una cosa per riga.** Le righe brevi sono più facili da testare e da rimuovere.
+* **Descrivi i calcoli in modo semplice.** *Il prezzo unitario è l'importo netto diviso per la quantità.*
+* **Di' cosa lasciare stare.** *Ignora le righe di spedizione in fondo alla tabella.*
+* **Controlla l'intera tabella.** Un prompt modificato riesegue l'AI e può cambiare ogni colonna.
+* **Non ripetere ciò che è già noto.** Un tag di colonna che duplica un altro tag, o che equivale a un campo di intestazione, viene ignorato.
 
-**Passo 4:** Salva o Elimina il Tag
+## Esempi
 
-* **Salva Tag**: Premi il pulsante Salva per salvare il tag desiderato
-* **Elimina Tag:** Per eliminare il tag selezionato, premi il pulsante Elimina
+| Problema | Tag |
+| --- | --- |
+| La colonna dello sconto resta vuota | Colonna aggiuntiva **Importo dello sconto** e l'istruzione *Compila la colonna Importo dello sconto con la colonna chiamata "Rabatt".* |
+| Quantità e unità sono in un'unica cella | *Inserisci il numero in Quantità e l'unità di misura in Unità.* |
+| Il prezzo unitario non è stampato | *Il prezzo unitario è l'importo netto diviso per la quantità.* |
+| Le date devono essere in formato ISO | *Scrivi tutte le date come YYYY-MM-DD.* |
+| Importi in una valuta estera | *Arrotonda tutti gli importi a due decimali.* |
 
-### Ecco una spiegazione dettagliata di ogni colonna e dei possibili tag:
+Le colonne che puoi scegliere sono le colonne della tabella configurate per il tipo di documento, vedi [Colonne della Tabella](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md).
 
-<figure><img src="../../../.gitbook/assets/ai-table-tags3.png" alt="" width="375"><figcaption></figcaption></figure>
+## Prima di salvare
 
-### **Posizione:**
-
-**Descrizione:** Posizione o ordine dell'elemento all'interno dell'ordine.
-
-**Tag:** Intero
-
-**Esempio:** 1, 2, 3...
-
-### **Descrizione:**
-
-**Descrizione:** Breve descrizione dell'elemento.
-
-**Tag:** Testo
-
-**Esempio:** Vite, Dado, Widget...
-
-### Ordine di Acquisto:
-
-**Descrizione:** Il numero dell'ordine associato.
-
-**Tag:** Alfanumerico
-
-**Esempio:** PO12345, PO98765...
-
-### Quantità:
-
-**Descrizione:** Numero di unità ordinate.
-
-**Tag:** Numero
-
-**Esempio:** 100, 50, 200...
-
-### Unità:
-
-**Descrizione:** Unità di misura (ad es., pezzo, chilogrammo).
-
-**Tag:** Testo
-
-**Esempio:** Pz, kg, l...
-
-### Prezzo Unitario:
-
-**Descrizione:** Prezzo per unità dell'elemento.
-
-**Tag:** Valuta
-
-**Esempio:** €10.00, €5.50, €100.00...
-
-### Importo Netto:
-
-**Descrizione:** Prezzo totale prima delle deduzioni e delle tasse (calcolato come quantità \* prezzo unitario).
-
-**Tag:** Valuta
-
-**Esempio:** €1,000.00, €275.00, €10,000.00...
-
-### Sconto:
-
-**Descrizione:** Importo dello sconto assoluto applicato all'importo netto.
-
-**Tag:** Valuta
-
-**Esempio:** €50.00, €20.00, €500.00...
-
-### Percentuale di Sconto:
-
-**Descrizione:** Percentuale di sconto applicata all'importo netto.
-
-**Tag:** Percentuale
-
-**Esempio:** 5%, 10%, 15%...
-
-### IVA:
-
-**Descrizione:** Importo dell'IVA applicata all'elemento.
-
-**Tag:** Valuta
-
-**Esempio:** €200.00, €55.00, €1,900.00...
-
-### Importo Totale:
-
-**Descrizione**: Importo finale dopo che lo sconto è stato dedotto e l'IVA è stata aggiunta.
-
-**Tag:** Valuta
-
-**Esempio:** €1,150.00, €310.00, €11,400.00...
-
-### Paese di Origine:
-
-**Descrizione:** Paese in cui l'elemento è stato prodotto o spedito.
-
-**Tag:** Testo
-
-**Esempio:** USA, Germania, Cina...
-
-### Numero dell'Elemento:
-
-**Descrizione:** Identificatore unico o SKU per l'elemento.
-
-**Tag:** Alfanumerico
-
-**Esempio:** 987654, A12345, Z98765...
-
-### Numero della Nota di Consegna:
-
-**Descrizione:** Numero della nota di consegna associata.
-
-**Tag:** Alfanumerico
-
-**Esempio:** DN56789, DN12345...
-
-### Frase (informazioni aggiuntive):
-
-**Descrizione:** Commenti aggiuntivi, codici o informazioni rilevanti.
-
-**Tag:** Testo
-
-**Esempio:** Commento, Specifica...
-
-Con questa struttura e questi tag, la tabella è più chiaramente definita e le informazioni possono essere meglio categorizzate e elaborate.
+* Usa prima **Modifica del test**. Non scrive mai nulla.
+* **Salva come addestramento** si applica al layout del fornitore, quindi i documenti successivi vengono letti con i tuoi tag. Verifica sul documento successivo che il chip indichi **Addestramento applicato**.
+* Se **Salva le regole di estrazione (solo amministratore)** è attivo, chiedi a un amministratore dell'organizzazione di salvare.
+* I tag cambiano il modo in cui l'AI legge la tabella. Per posizioni di colonna stabili in un layout ricorrente, [addestra invece la tabella](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).

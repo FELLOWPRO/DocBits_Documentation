@@ -2,6 +2,8 @@
 
 **Dostawca:** DocBits by FELLOWPRO AG | **Hosting:** Frankfurt, Niemcy | **ISO 27001 Certyfikowane** | **Data:** 2026-03-04
 
+Informacje o przechowywaniu danych uwierzytelniających i TLS w publicznych punktach końcowych sprawdzono **16 października 2026 r.** Poniższa strona opisuje potwierdzony zakres oraz kwestie, które wymagają jeszcze potwierdzenia dla danego wdrożenia. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
+
 ---
 
 ## Legenda Statusu
@@ -19,7 +21,7 @@
 
 ### 1. Gdzie dokładnie hostowane jest środowisko produkcyjne?
 
-**Odpowiedź:** Hostowane na infrastrukturze chmury AWS we Frankfurcie w Niemczech. Używa S3 do przechowywania i OpenSearch do indeksowania dzienników. DocBits posiada certyfikat ISO 27001. Wszystkie połączenia zabezpieczone poprzez SSH, HTTPS i standardowe protokoły szyfrowania.
+**Odpowiedź:** Hostowane na infrastrukturze chmury AWS we Frankfurcie w Niemczech. Używa S3 do przechowywania i OpenSearch do indeksowania dzienników. DocBits posiada certyfikat ISO 27001. Informacje o szyfrowaniu podczas przesyłania i zweryfikowanym zakresie zawiera strona [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
 **Status:** ✅ Potwierdzone
 
@@ -67,11 +69,11 @@ Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostęp
 
 ### 5. Czy dane są szyfrowane w spoczynku i w tranzycie?
 
-**Odpowiedź:** Wszystkie połączenia między komponentami są zabezpieczone za pomocą standardowych protokołów szyfrowania (SSH, HTTPS). Certyfikacja ISO 27001 wymaga kontroli szyfrowania.
+**Odpowiedź:** Publiczne punkty końcowe `app.docbits.com`, `auth.docbits.com` i `api.docbits.com` obsługują HTTPS z TLS 1.2 i TLS 1.3. Sprawdzenie 16 października 2026 r. potwierdziło odrzucanie TLS 1.0 i TLS 1.1. Hasła logowania i klucze utworzone w funkcji Zarządzanie kluczami API są chronione jednokierunkowym haszowaniem. Haszowanie jest odrębne od szyfrowania baz danych, magazynów danych i kopii zapasowych.
 
-**Status:** ✅ Potwierdzone
+**Status:** ✅ Częściowo potwierdzone
 
-**Notatki:** Potwierdź konkretne standardy szyfrowania (np. AES-256 w spoczynku, TLS 1.2+ w tranzycie).
+**Notatki:** Szyfrowanie wszystkich przechowywanych informacji o kontach i kopii zapasowych, metody szyfrowania, zarządzanie kluczami i ochrona każdego połączenia wewnętrznego wymagają potwierdzenia dla konkretnego wdrożenia. Sam certyfikat ISO 27001 nie potwierdza określonego algorytmu ani zakresu jego stosowania. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
 ---
 
@@ -268,11 +270,11 @@ Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostęp
 
 ### 24. Czy transfer danych między DocBits a LN jest szyfrowany end-to-end?
 
-**Odpowiedź:** Wszystkie połączenia między komponentami zabezpieczone za pomocą standardowych protokołów szyfrowania (SSH, HTTPS).
+**Odpowiedź:** Udokumentowana integracja ION API używa HTTPS. Publiczny punkt końcowy API DocBits obsługuje TLS 1.2 i TLS 1.3. Weryfikacja ta nie potwierdza szyfrowania na każdym wewnętrznym etapie przetwarzania ani polityki TLS punktu końcowego ERP klienta.
 
-**Status:** ✅ Potwierdzone
+**Status:** ✅ Częściowo potwierdzone
 
-**Notatki:** Komunikacja ION API używa HTTPS/TLS. Potwierdź minimalną wersję TLS (1.2+).
+**Notatki:** Przed zapewnieniem szyfrowania end-to-end należy potwierdzić pełną ścieżkę połączenia, wymagania TLS punktu końcowego ERP oraz walidację certyfikatów w skonfigurowanej integracji. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).
 
 ---
 
@@ -283,3 +285,15 @@ Dane klientów z UE hostowane są wyłącznie we Frankfurcie. Obecnie niedostęp
 **Status:** ✅ Potwierdzone
 
 **Notatki:** Wyjaśnij które typy dokumentów zapisują się z powrotem do LN vs. są przechowywane wyłącznie w IDM.
+
+---
+
+## Przechowywanie danych uwierzytelniających i odzyskiwanie dostępu do konta
+
+### 26. Czy dostawca może przeglądać dane uwierzytelniające klienta i co się dzieje po utracie hasła?
+
+**Odpowiedź:** Hasła logowania DocBits są przechowywane jako jednokierunkowe skróty kryptograficzne z solą. Administratorzy i pomoc techniczna DocBits nie mogą odzyskać oryginalnego hasła w postaci jawnej z zapisanego skrótu. Użytkownicy, którzy zapomnieli hasła, muszą ustawić nowe za pomocą procedury resetowania przez e-mail, aby ponownie logować się hasłem. Skonfigurowane SSO lub klucze dostępu zapewniają alternatywne metody logowania. Klucze utworzone w funkcji Zarządzanie kluczami API DocBits są pokazywane tylko raz i zapisywane jako jednokierunkowe skróty. Ani administratorzy, ani pomoc techniczna DocBits nie mogą później odzyskać pełnego klucza. Utracone klucze należy unieważnić i zastąpić nowymi.
+
+**Status:** ✅ Częściowo potwierdzone
+
+**Notatki:** Te stwierdzenia dotyczą haseł logowania i kluczy wydanych przez DocBits. Upoważnieni administratorzy organizacji mogą przeglądać dane kont. Usługa nawiązująca połączenie może potrzebować dostępu do danych uwierzytelniających integracji; dostęp personelu dostawcy wymaga osobnego potwierdzenia. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md).

@@ -46,6 +46,8 @@ After you submit the form, DocBits shows a confirmation page and sends a **verif
 
 ## Forgot password
 
+DocBits stores login passwords as salted, one-way hashes. An existing password cannot be retrieved from its hash, so this procedure sets a new password. See [Secure Storage of Credentials](../../overview-and-basics/secure-storage-of-credentials.md) for password storage and recovery details.
+
 If you forgot your password:
 
 1. On the login screen, click **Forgot password?**.

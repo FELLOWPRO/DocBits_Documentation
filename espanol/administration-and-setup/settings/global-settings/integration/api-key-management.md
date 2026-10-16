@@ -59,7 +59,9 @@ Si tiene más claves de las que caben en una página, use los controles de pagin
 5. Marque **I have copied and saved this key** y haga clic en **Done**.
 
 {% hint style="danger" %}
-**La clave completa se muestra una sola vez.** DocBits la guarda de forma cifrada que no puede revertirse al original, así que nadie — ni sus administradores ni el soporte de DocBits — puede volver a consultarla después. Si la pierde, revoque la clave y cree una nueva.
+**La clave completa se muestra una sola vez.** DocBits almacena un hash unidireccional de la clave y un prefijo corto para identificarla. Ni sus administradores ni el soporte de DocBits pueden recuperar la clave original completa a partir de ese hash. Si la pierde, revóquela y cree una nueva.
 {% endhint %}
 
 Trate la clave como una contraseña. Cualquiera que la tenga puede actuar sobre los documentos y los datos de su organización.
+
+Consulte [Almacenamiento seguro de credenciales](../../../../overview-and-basics/secure-storage-of-credentials.md).

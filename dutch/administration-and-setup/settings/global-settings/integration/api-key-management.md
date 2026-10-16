@@ -60,7 +60,9 @@ Als u meer sleutels hebt dan er op één pagina passen, gebruik dan de paginabes
 5. Vink **I have copied and saved this key** aan en klik op **Done**.
 
 {% hint style="danger" %}
-**De volledige sleutel wordt maar één keer getoond.** DocBits slaat die versleuteld op in een vorm die niet terug te rekenen is naar het origineel, dus niemand — uw beheerders niet en DocBits-support niet — kan die daarna nog opzoeken. Raakt u die kwijt, trek de sleutel dan in en maak een nieuwe aan.
+**De volledige sleutel wordt maar één keer getoond.** DocBits slaat een eenrichtingshash van de sleutel en een kort herkenningsvoorvoegsel op. Uw beheerders en DocBits-support kunnen de oorspronkelijke volledige sleutel niet uit die hash ophalen. Raakt u de sleutel kwijt, trek deze dan in en maak een nieuwe aan.
 {% endhint %}
 
 Behandel de sleutel als een wachtwoord. Wie die heeft, kan handelen met de documenten en gegevens van uw organisatie.
+
+Zie [Veilige opslag van inloggegevens](../../../../overview-and-basics/secure-storage-of-credentials.md).

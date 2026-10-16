@@ -46,6 +46,8 @@ Po wysłaniu formularza DocBits wyświetla stronę potwierdzenia i wysyła **e-m
 
 ## Zapomniane hasło
 
+DocBits przechowuje hasła logowania jako jednokierunkowe skróty kryptograficzne z solą. Istniejącego hasła nie można odzyskać ze skrótu, dlatego ta procedura ustawia nowe hasło. Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](../../overview-and-basics/secure-storage-of-credentials.md).
+
 Jeśli zapomniałeś hasła:
 
 1. Na ekranie logowania kliknij **Zapomniałeś hasła?**.

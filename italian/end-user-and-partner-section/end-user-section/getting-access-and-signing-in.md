@@ -2,9 +2,9 @@
 
 Questa pagina spiega come ottenere un account DocBits e come accedere quando non hai la tua password:
 
-* [Registrazione](getting-access-and-signing-in.md#registrazione) — crea il tuo account DocBits.
-* [Password dimenticata](getting-access-and-signing-in.md#password-dimenticata) — reimposta la tua password con un link di reimpostazione.
-* [Prima password per gli account creati dall'amministratore](getting-access-and-signing-in.md#prima-password-per-gli-account-creati-dallamministratore) — imposta la prima password di un account che il tuo amministratore ha creato per te.
+* [Registrazione](#registrazione) — crea il tuo account DocBits.
+* [Password dimenticata](#password-dimenticata) — reimposta la tua password con un link di reimpostazione.
+* [Prima password per gli account creati dall'amministratore](#prima-password-per-gli-account-creati-dallamministratore) — imposta la prima password di un account che il tuo amministratore ha creato per te.
 
 L'accesso con un account esistente e l'Autenticazione a Due Fattori sono trattati in [Autenticazione a Due Fattori (2FA)](../../overview-and-basics/two-factor-authentication.md). Usa il menu della lingua in alto a destra di questi moduli se ti serve un'altra lingua di visualizzazione.
 
@@ -51,13 +51,14 @@ DocBits memorizza le password come hash unidirezionali con salt. Una password es
 Se hai dimenticato la tua password:
 
 1. Nella schermata di accesso, fai clic su **Ha dimenticato la password?**.
-2.  Nella pagina **Password dimenticata**, inserisci il tuo indirizzo di **Posta elettronica** e fai clic su **Reimpostare la password**. Se viene mostrato un widget reCAPTCHA, completalo prima.
+2. Nella pagina **Password dimenticata**, inserisci il tuo indirizzo di **Posta elettronica** e fai clic su **Reimpostare la password**. Se viene mostrato un widget reCAPTCHA, completalo prima.
 
-    <figure><img src="../../.gitbook/assets/dbdc743-getting-access-forgot-password-form-it-20261011.png" alt="La pagina Password dimenticata con il campo dell&#x27;indirizzo email"><figcaption><p>La pagina Password dimenticata. Inserisci l'email del tuo account e DocBits ti invierà un link di reimpostazione.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc743-getting-access-forgot-password-form-it-20261011.png" alt="La pagina Password dimenticata con il campo dell'indirizzo email"><figcaption><p>La pagina Password dimenticata. Inserisci l'email del tuo account e DocBits ti invierà un link di reimpostazione.</p></figcaption></figure>
 
-    Se non vuoi reimpostare la tua password, fai clic su **Torna al login** per tornare all'accesso.
+   Se non vuoi reimpostare la tua password, fai clic su **Torna al login** per tornare all'accesso.
+
 3. DocBits ti invia per email un **link di reimpostazione della password**. Apri l'email e fai clic sul link — si apre la pagina di reimpostazione.
-4. Inserisci la tua **nuova password due volte**. Si applicano le stesse regole per la password della [registrazione](getting-access-and-signing-in.md#regole-per-la-password), e una lista di controllo mostra quali regole sono soddisfatte.
+4. Inserisci la tua **nuova password due volte**. Si applicano le stesse regole per la password della [registrazione](#regole-per-la-password), e una lista di controllo mostra quali regole sono soddisfatte.
 5. Fai clic su **Reimpostare la password**. DocBits conferma la modifica e ti riporta alla schermata di accesso, dove puoi accedere con la nuova password.
 
 {% hint style="info" %}
@@ -66,12 +67,12 @@ I link di reimpostazione scadono dopo poco tempo. Se il link non funziona più, 
 
 ## Prima password per gli account creati dall'amministratore
 
-Quando il tuo amministratore ti aggiunge come utente (vedi [Utenti](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/)), ricevi un'email con i tuoi dati di accesso e un link per impostare la tua **prima password**. Il link apre la pagina **Imposta password**:
+Quando il tuo amministratore ti aggiunge come utente (vedi [Utenti](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), ricevi un'email con i tuoi dati di accesso e un link per impostare la tua **prima password**. Il link apre la pagina **Imposta password**:
 
 <figure><img src="../../.gitbook/assets/dbdc743-getting-access-set-password-form-it-20261011.png" alt="La pagina Imposta password con il messaggio di benvenuto"><figcaption><p>La pagina Imposta password, mostrata dopo che un amministratore ha creato il tuo account.</p></figcaption></figure>
 
 1. Fai clic sul link nell'email di invito. La pagina ti accoglie con "Benvenuti su DocBits! Il tuo account è stato creato. Imposta la tua password per iniziare."
-2. Inserisci la tua password due volte — si applicano le stesse [regole per la password](getting-access-and-signing-in.md#regole-per-la-password).
+2. Inserisci la tua password due volte — si applicano le stesse [regole per la password](#regole-per-la-password).
 3. Fai clic su **Imposta password**. Puoi quindi accedere con la tua email e questa password.
 
 Le icone a forma di occhio mostrano o nascondono ciò che hai inserito. Se esci prima di impostare una password, **Vai al login** riporta alla schermata di accesso.

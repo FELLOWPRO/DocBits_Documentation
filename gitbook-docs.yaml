@@ -61,3 +61,10 @@ site:
       content:
         directory: ./dutch
         language: nl
+    - type: space
+      key: space-9
+      title: China
+      path: china
+      draft: true
+      content:
+        directory: ./china

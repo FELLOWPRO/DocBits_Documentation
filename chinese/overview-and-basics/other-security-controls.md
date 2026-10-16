@@ -1,6 +1,6 @@
 # 其他安全控制
 
-针对问卷 **4.17**，于 **2026 年 10 月 16 日**核查。本文区分已发布审计证据与当前基础设施清单。
+于 **2026 年 10 月 16 日**核查。本文区分已发布审计证据与当前基础设施清单。
 
 | 控制 | 已记录范围 |
 | --- | --- |
@@ -17,6 +17,6 @@
 
 [认证](architecture/certifications.md)提供审计报告及覆盖期间。历史审计支持其受评范围内的控制；基础设施检查仅确认核查日存在相关资源，不是完整的安全配置审计。
 
-有关加密与身份验证，请参阅[凭据的安全存储](secure-storage-of-credentials.md)和[静态数据加密](encryption-at-rest.md)；有关评估、补丁及未解决 CVE，请参阅[漏洞管理](vulnerability-management.md)。
+有关加密与身份验证，请参阅[凭据的安全存储](secure-storage-of-credentials.md)和[静态数据加密](../security/encryption-at-rest.md)；有关评估、补丁及未解决 CVE，请参阅[漏洞管理](vulnerability-management.md)。
 
 部署限制、移动设备要求及最新政策证据，请联系 **compliance@fellowpro.com**。

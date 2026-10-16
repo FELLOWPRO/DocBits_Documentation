@@ -4,9 +4,9 @@
 
 Credential storage and public-endpoint TLS information was reviewed on **16 October 2026**. See [Secure Storage of Credentials](secure-storage-of-credentials.md) for the verified scope and the deployment-specific details that still require confirmation.
 
-Encryption-at-rest details were reviewed on **16 October 2026** against DigitalOcean security documentation and service metadata. See [Encryption at Rest](encryption-at-rest.md), including questionnaire item 4.8.
+Encryption-at-rest details were reviewed on **16 October 2026** against DigitalOcean security documentation and service metadata. See [Encryption at Rest](../security/encryption-at-rest.md).
 
-For questionnaire items **4.15–4.17**, see [Cookies and Browser Storage](cookies-and-browser-storage.md), [Vulnerability Management](vulnerability-management.md), [Other Security Controls](other-security-controls.md).
+Further security information is available in [Cookies and Browser Storage](cookies-and-browser-storage.md), [Vulnerability Management](vulnerability-management.md), and [Other Security Controls](other-security-controls.md).
 
 ---
 
@@ -25,7 +25,7 @@ For questionnaire items **4.15–4.17**, see [Cookies and Browser Storage](cooki
 
 ### 1. Where exactly is the production environment hosted?
 
-**Response:** The EU production environment is hosted on DigitalOcean cloud infrastructure in Frankfurt, Germany. DocBits uses DigitalOcean Spaces for storage and managed PostgreSQL, OpenSearch, and Valkey services. DocBits is ISO 27001 certified. See [Encryption at Rest](encryption-at-rest.md) and [Secure Storage of Credentials](secure-storage-of-credentials.md) for the encryption scope.
+**Response:** The EU production environment is hosted on DigitalOcean cloud infrastructure in Frankfurt, Germany. DocBits uses DigitalOcean Spaces for storage and managed PostgreSQL, OpenSearch, and Valkey services. DocBits is ISO 27001 certified. See [Encryption at Rest](../security/encryption-at-rest.md) and [Secure Storage of Credentials](secure-storage-of-credentials.md) for the encryption scope.
 
 **Status:** ✅ Confirmed
 
@@ -53,7 +53,7 @@ Backup schedule: Daily, Weekly, Quarterly, and Yearly backups.
 
 **Status:** ✅ Confirmed
 
-**Notes:** Comprehensive backup schedule (daily/weekly/quarterly/yearly) across two EU locations. All data stays within EU. Confirm backup encryption and restore testing frequency. The encryption of provider-managed database backups is described in [Encryption at Rest](encryption-at-rest.md); this does not verify every copy in the wider backup schedule.
+**Notes:** Comprehensive backup schedule (daily/weekly/quarterly/yearly) across two EU locations. All data stays within EU. Confirm backup encryption and restore testing frequency. The encryption of provider-managed database backups is described in [Encryption at Rest](../security/encryption-at-rest.md); this does not verify every copy in the wider backup schedule.
 
 ---
 
@@ -75,7 +75,7 @@ EU customer data is hosted exclusively in Frankfurt. No UK-only option currently
 
 **Response:** The public endpoints `app.docbits.com`, `auth.docbits.com`, and `api.docbits.com` support HTTPS with TLS 1.2 and TLS 1.3. Checks on 16 October 2026 rejected TLS 1.0 and TLS 1.1. Login passwords and keys created through API Key Management are protected using one-way hashing. Hashing is separate from encryption of databases, storage, and backups.
 
-**At rest:** DigitalOcean Managed Databases use full-volume LUKS encryption with AES-256-XTS; their managed backups use AES-256-CTR. Spaces uses 256-bit AES-XTS on physical disks. See [Encryption at Rest](encryption-at-rest.md) for methods, key management, backup coverage, and the answer to questionnaire item 4.8.
+**At rest:** DigitalOcean Managed Databases use full-volume LUKS encryption with AES-256-XTS; their managed backups use AES-256-CTR. Spaces uses 256-bit AES-XTS on physical disks. See [Encryption at Rest](../security/encryption-at-rest.md) for methods, key management, and backup coverage.
 
 **Status:** ✅ Partial
 

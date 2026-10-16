@@ -1,10 +1,10 @@
 ---
-description: Verschlüsselung gespeicherter DocBits-Daten bei DigitalOcean, einschließlich Datenbanken, Spaces, Backups und Frage 4.8.
+description: Verschlüsselung gespeicherter DocBits-Daten bei DigitalOcean, einschließlich Datenbanken, Spaces und Backups.
 ---
 
 # Verschlüsselung gespeicherter Daten
 
-DocBits nutzt DigitalOcean Managed Databases und DigitalOcean Spaces. Die Prüfung am **16. Oktober 2026** bestätigte verwaltete PostgreSQL-, OpenSearch- und Valkey-Dienste für die EU-Produktion in Frankfurt. Die [Sicherheits- und Compliance-FAQ](security-and-compliance-faq.md) dokumentiert die Nutzung von Spaces als Speicher.
+DocBits nutzt DigitalOcean Managed Databases und DigitalOcean Spaces. Die Prüfung am **16. Oktober 2026** bestätigte verwaltete PostgreSQL-, OpenSearch- und Valkey-Dienste für die EU-Produktion in Frankfurt. Die [Sicherheits- und Compliance-FAQ](../overview-and-basics/security-and-compliance-faq.md) dokumentiert die Nutzung von Spaces als Speicher.
 
 Diese Seite beschreibt die von DigitalOcean veröffentlichten Verschlüsselungsmaßnahmen für diese Dienste. On-Premises-Installationen und Kopien in anderen Systemen erfordern eine eigene Bewertung.
 
@@ -25,20 +25,18 @@ Die Angaben zu Datenbanken und Backups stammen aus dem [Sicherheitsmodell für M
 
 DigitalOcean verwaltet die beschriebene Infrastrukturverschlüsselung. Für Managed Databases dokumentiert der Anbieter einen zufällig erzeugten Schlüssel je Instanz und Volume, der beim Löschen der Instanz verworfen wird. Backups verwalteter Datenbanken verwenden einen zufälligen Schlüssel pro Datei, geschützt durch ein dienstspezifisches RSA-Schlüsselpaar.
 
-Speicherverschlüsselung schützt Daten auf Speichermedien. Berechtigte Anwendungen und Datenbankbenutzer können Daten weiterhin über den Dienst lesen. Daraus folgt weder, dass Mitarbeiter des Anbieters keine Kontoinformationen einsehen können, noch, dass jedes Feld auf Anwendungsebene verschlüsselt ist. Das Hashing von Anmeldepasswörtern und API-Schlüsseln ist eine gesonderte Maßnahme; siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
+Speicherverschlüsselung schützt Daten auf Speichermedien. Berechtigte Anwendungen und Datenbankbenutzer können Daten weiterhin über den Dienst lesen. Daraus folgt weder, dass Mitarbeiter des Anbieters keine Kontoinformationen einsehen können, noch, dass jedes Feld auf Anwendungsebene verschlüsselt ist. Das Hashing von Anmeldepasswörtern und API-Schlüsseln ist eine gesonderte Maßnahme; siehe [Sichere Speicherung von Zugangsdaten](../overview-and-basics/secure-storage-of-credentials.md).
 
 Spaces unterstützt außerdem [SSE-C mit kundenseitig bereitgestellten Schlüsseln](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Diese optionale Funktion belegt nicht, dass DocBits SSE-C oder kundenseitig verwaltete Verschlüsselungsschlüssel verwendet.
 
-## Geltungsbereich für Backups
+## Verschlüsselung von Backups
 
-Backups verwalteter Datenbanken, Volume-Snapshots und Droplet-Image-Backups sind unterschiedliche Produkte. Die [Einschränkungen für Droplet-Backups](https://docs.digitalocean.com/products/backups/details/limits/) besagen, dass diese Image-Backups im Ruhezustand nicht verschlüsselt sind. Diese Prüfung hat nicht festgestellt, dass DocBits dieses Backup-Produkt nutzt.
+Backups der DigitalOcean Managed Databases werden mit AES-256-CTR verschlüsselt und durch HMAC-SHA256 gegen unbemerkte Änderungen geschützt. Die dateispezifischen Verschlüsselungsschlüssel sind durch RSA-3072 abgesichert. Volume-Snapshots übernehmen die Verschlüsselung des zugrunde liegenden DigitalOcean-Volumes. Diese Angaben beschreiben die Sicherungsfunktionen der genannten verwalteten Dienste.
 
-Die genannten Maßnahmen erlauben daher eine Aussage über die konkret benannten Dienste. Zusätzliche Datenbank-Dumps, exportierte Dateien, Langzeitarchive und Disaster-Recovery-Kopien benötigen eine Bestätigung von Speicherziel, Verschlüsselung und Schlüsselverwaltung, bevor die Zusage auf alle Kopien erweitert wird. Ein Backup-Zeitplan oder eine Cloud-/Serverless-Architektur allein belegt diesen Umfang nicht.
+## Arten der Verschlüsselung gespeicherter Daten
 
-## 4.8 — Arten der Verschlüsselung gespeicherter Daten
-
-Für den dokumentierten Umfang kann folgende Formulierung verwendet werden:
+Die wichtigsten Verschlüsselungsverfahren der genannten Dienste im Überblick:
 
 > DocBits nutzt DigitalOcean Managed Databases und Spaces. Gespeicherte Daten verwalteter Datenbanken werden auf Ebene der gesamten Volumes mit LUKS und AES-256-XTS verschlüsselt (zusammen 512 Bit XTS-Schlüsselmaterial). Backups verwalteter Datenbanken verwenden AES-256-CTR mit HMAC-SHA256 zur Integritätssicherung und RSA-3072 zum Schutz der dateispezifischen Verschlüsselungsschlüssel. Spaces verwendet vollständige Datenträgerverschlüsselung mit 256-Bit-AES-XTS auf den physischen Speichermedien.
 >
-> Diese Maßnahmen auf Speicherebene schützen die Daten auf den betreffenden Volumes und Datenträgern; sie bedeuten keine separate Verschlüsselung jedes Datenbankfeldes. DigitalOcean verwaltet die Infrastruktur-Verschlüsselungsschlüssel. Diese Aussage umfasst die genannten verwalteten Dienste. Verschlüsselung und Schlüsselverwaltung zusätzlicher Exporte, Archive und Sicherungskopien erfordern eine gesonderte Bestätigung für die jeweilige Bereitstellung.
+> Diese Maßnahmen auf Speicherebene schützen die Daten auf den betreffenden Volumes und Datenträgern; sie bedeuten keine separate Verschlüsselung jedes Datenbankfeldes. DigitalOcean verwaltet die Infrastruktur-Verschlüsselungsschlüssel. Diese Aussage umfasst die genannten verwalteten Dienste.

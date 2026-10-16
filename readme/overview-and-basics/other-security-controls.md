@@ -1,6 +1,6 @@
 # Other Security Controls
 
-Reviewed on **16 October 2026** for questionnaire item **4.17**. This page distinguishes published audit evidence from a current infrastructure inventory.
+Reviewed on **16 October 2026**. This page distinguishes published audit evidence from a current infrastructure inventory.
 
 | Control | Documented scope |
 | --- | --- |
@@ -17,6 +17,6 @@ Reviewed on **16 October 2026** for questionnaire item **4.17**. This page disti
 
 Audit reports and their reporting periods are available on [Certifications](architecture/certifications.md). Historical audits support the controls described for their assessed scope; the infrastructure check confirms resource presence on the review date and is not a complete security configuration audit.
 
-For encryption and authentication, see [Secure Storage of Credentials](secure-storage-of-credentials.md) and [Encryption at Rest](encryption-at-rest.md). For assessment, patching and open-CVE questions, see [Vulnerability Management](vulnerability-management.md).
+For encryption and authentication, see [Secure Storage of Credentials](secure-storage-of-credentials.md) and [Encryption at Rest](../security/encryption-at-rest.md). For assessment, patching and open-CVE questions, see [Vulnerability Management](vulnerability-management.md).
 
 For deployment-specific restrictions, mobile-device requirements or current policy evidence, contact **compliance@fellowpro.com**.

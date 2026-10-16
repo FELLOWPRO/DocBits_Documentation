@@ -1,6 +1,6 @@
 # Pliki cookie i pamięć przeglądarki
 
-Zweryfikowano **16 października 2026 r.** dla pytania **4.15**. Publiczna witryna, aplikacja DocBits i ta dokumentacja korzystają z różnych plików cookie i usług.
+Zweryfikowano **16 października 2026 r.**. Publiczna witryna, aplikacja DocBits i ta dokumentacja korzystają z różnych plików cookie i usług.
 
 ## Polityka i cele
 

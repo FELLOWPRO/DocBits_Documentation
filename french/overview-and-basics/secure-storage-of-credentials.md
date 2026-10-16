@@ -69,7 +69,7 @@ Cette vérification couvre les connexions à ces points d'accès publics, y comp
 
 ## Chiffrement des informations de compte stockées
 
-DigitalOcean Managed Databases utilise le chiffrement intégral des volumes avec LUKS et AES-256-XTS ; ses sauvegardes gérées utilisent AES-256-CTR. Spaces utilise AES-XTS 256 bits sur les disques physiques. [Chiffrement au repos](encryption-at-rest.md) décrit les méthodes, la gestion des clés, la couverture des sauvegardes et la réponse à la question 4.8.
+DigitalOcean Managed Databases utilise le chiffrement intégral des volumes avec LUKS et AES-256-XTS ; ses sauvegardes gérées utilisent AES-256-CTR. Spaces utilise AES-XTS 256 bits sur les disques physiques. [Chiffrement au repos](../security/encryption-at-rest.md) décrit les méthodes, la gestion des clés et la couverture des sauvegardes.
 
 Le hachage des mots de passe et des clés API est une mesure distincte du chiffrement des bases de données, volumes de stockage, objets et sauvegardes. Les contrôles décrits ne démontrent pas que chaque nom d'utilisateur, champ de compte ou secret d'intégration est chiffré individuellement, ni que toutes les données stockées utilisent un algorithme de chiffrement particulier.
 

@@ -1,6 +1,6 @@
 # Pozostałe środki bezpieczeństwa
 
-Zweryfikowano **16 października 2026 r.** dla pytania **4.17**. Rozróżniamy opublikowane dowody audytowe i aktualną inwentaryzację infrastruktury.
+Zweryfikowano **16 października 2026 r.**. Rozróżniamy opublikowane dowody audytowe i aktualną inwentaryzację infrastruktury.
 
 | Środek | Udokumentowany zakres |
 | --- | --- |
@@ -17,6 +17,6 @@ Zweryfikowano **16 października 2026 r.** dla pytania **4.17**. Rozróżniamy o
 
 [Certyfikaty](architecture/certifications.md) zawierają raporty i okresy. Historyczne audyty potwierdzają środki w ocenionym zakresie; spis potwierdza obecność zasobów w dniu weryfikacji, nie jest pełnym audytem konfiguracji.
 
-Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md), [Szyfrowanie danych w spoczynku](encryption-at-rest.md) i [Zarządzanie podatnościami](vulnerability-management.md).
+Zobacz [Bezpieczne przechowywanie danych uwierzytelniających](secure-storage-of-credentials.md), [Szyfrowanie danych w spoczynku](../security/encryption-at-rest.md) i [Zarządzanie podatnościami](vulnerability-management.md).
 
 Ograniczenia wdrożenia, wymagania mobilne i aktualne polityki: **compliance@fellowpro.com**.

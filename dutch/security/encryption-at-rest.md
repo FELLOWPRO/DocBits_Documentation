@@ -1,10 +1,10 @@
 ---
-description: Versleuteling van opgeslagen DocBits-gegevens bij DigitalOcean, inclusief databases, Spaces, back-ups en vraag 4.8.
+description: Versleuteling van opgeslagen DocBits-gegevens bij DigitalOcean, inclusief databases, Spaces en back-ups.
 ---
 
 # Versleuteling van opgeslagen gegevens
 
-DocBits gebruikt DigitalOcean Managed Databases en DigitalOcean Spaces. De controle op **16 oktober 2026** bevestigde beheerde PostgreSQL-, OpenSearch- en Valkey-diensten voor EU-productie in Frankfurt. De [FAQ over beveiliging en compliance](security-and-compliance-faq.md) beschrijft het gebruik van Spaces voor opslag.
+DocBits gebruikt DigitalOcean Managed Databases en DigitalOcean Spaces. De controle op **16 oktober 2026** bevestigde beheerde PostgreSQL-, OpenSearch- en Valkey-diensten voor EU-productie in Frankfurt. De [FAQ over beveiliging en compliance](../overview-and-basics/security-and-compliance-faq.md) beschrijft het gebruik van Spaces voor opslag.
 
 Deze pagina beschrijft de versleutelingsmaatregelen die DigitalOcean voor deze diensten publiceert. Lokale installaties en kopieën in andere systemen vereisen een eigen beoordeling.
 
@@ -25,20 +25,18 @@ De details voor databases en back-ups komen uit het [beveiligingsmodel voor Mana
 
 DigitalOcean beheert de beschreven infrastructuurversleuteling. Voor Managed Databases documenteert de aanbieder een willekeurig gegenereerde sleutel per instantie en volume, die bij het vernietigen van de instantie wordt verwijderd. Back-ups van beheerde databases gebruiken een willekeurige sleutel per bestand, beschermd met een RSA-sleutelpaar per dienst.
 
-Opslagversleuteling beschermt gegevens op opslagmedia. Geautoriseerde applicaties en databasegebruikers kunnen de gegevens nog steeds via de dienst lezen. Dit toont niet aan dat medewerkers van de leverancier geen accountgegevens kunnen inzien of dat elk veld op applicatieniveau versleuteld is. Het hashen van wachtwoorden en API-sleutels is een afzonderlijke maatregel; zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
+Opslagversleuteling beschermt gegevens op opslagmedia. Geautoriseerde applicaties en databasegebruikers kunnen de gegevens nog steeds via de dienst lezen. Dit toont niet aan dat medewerkers van de leverancier geen accountgegevens kunnen inzien of dat elk veld op applicatieniveau versleuteld is. Het hashen van wachtwoorden en API-sleutels is een afzonderlijke maatregel; zie [Veilige opslag van inloggegevens](../overview-and-basics/secure-storage-of-credentials.md).
 
 Spaces ondersteunt ook [SSE-C met door de klant aangeleverde sleutels](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Deze optionele mogelijkheid toont niet aan dat DocBits SSE-C of door klanten beheerde versleutelingssleutels gebruikt.
 
-## Dekking van back-ups
+## Versleuteling van back-ups
 
-Back-ups van beheerde databases, volumesnapshots en imageback-ups van Droplets zijn verschillende producten. De [beperkingen van Droplet-back-ups](https://docs.digitalocean.com/products/backups/details/limits/) vermelden dat deze imageback-ups niet versleuteld zijn tijdens opslag. Deze controle heeft niet vastgesteld dat DocBits dat back-upproduct gebruikt.
+Back-ups die door DigitalOcean Managed Databases worden gemaakt, zijn versleuteld met AES-256-CTR en worden met HMAC-SHA256 beschermd tegen onopgemerkte wijzigingen. De versleutelingssleutels per bestand zijn beschermd met RSA-3072. Volumesnapshots nemen de versleuteling van het onderliggende DigitalOcean-volume over. Deze informatie beschrijft de back-upfuncties van de genoemde beheerde diensten.
 
-De bovenstaande maatregelen ondersteunen daarom een verklaring voor de genoemde diensten. Aanvullende databasedumps, geëxporteerde bestanden, langetermijnarchieven en kopieën voor noodherstel vereisen bevestiging van opslagbestemming, versleuteling en sleutelbeheer voordat de garantie tot alle kopieën wordt uitgebreid. Een back-upschema of cloud-/serverlessarchitectuur alleen toont deze dekking niet aan.
+## Soorten versleuteling van opgeslagen gegevens
 
-## 4.8 — Soorten versleuteling van opgeslagen gegevens
-
-De volgende tekst kan worden gebruikt voor de gedocumenteerde reikwijdte:
+Hieronder staan de belangrijkste versleutelingsmethoden van de genoemde diensten:
 
 > DocBits gebruikt DigitalOcean Managed Databases en Spaces. Opgeslagen gegevens van beheerde databases worden op volledig volumeniveau versleuteld met LUKS en AES-256-XTS (512 bits gecombineerd XTS-sleutelmateriaal). Back-ups van beheerde databases gebruiken AES-256-CTR met HMAC-SHA256 voor integriteit en RSA-3072 voor bescherming van de versleutelingssleutels per bestand. Spaces gebruikt volledige schijfversleuteling met 256-bits AES-XTS op de fysieke opslag.
 >
-> Deze maatregelen op opslagniveau dekken de gegevens op de beschermde volumes en schijven; ze betekenen geen afzonderlijke versleuteling van elk databaseveld. DigitalOcean beheert de infrastructuurversleutelingssleutels. Deze verklaring dekt de genoemde beheerde diensten. Versleuteling en sleutelbeheer van aanvullende exports, archieven en back-upkopieën vereisen afzonderlijke bevestiging voor de betreffende omgeving.
+> Deze maatregelen op opslagniveau dekken de gegevens op de beschermde volumes en schijven; ze betekenen geen afzonderlijke versleuteling van elk databaseveld. DigitalOcean beheert de infrastructuurversleutelingssleutels. Deze verklaring dekt de genoemde beheerde diensten.

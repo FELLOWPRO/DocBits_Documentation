@@ -1,12 +1,14 @@
 # Releaseopmerkingen
 
+**Beschikbaarheid van NOVA R1.1:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
+
 Kies een releasekanaal om te zien wat er verandert voor uw team. **NOVA is de grote release met extra klantmogelijkheden. VESTA-hotfixes verbeteren de huidige productierelease.** Zie de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor beschikbaarheid en het wisselen tussen kanalen.
 
-**Voormalige VESTA-bètafuncties zijn nu opgenomen in NOVA.** Alle functies die eerder als bèta in VESTA beschikbaar waren, maken deel uit van de reguliere functieset van NOVA. Ze worden ook reguliere VESTA-functies met de [volgende VESTA-hotfix, gepland voor **11 november 2026**](vesta-hotfix-11-november-2026.md).
+**Voormalige VESTA-bètafuncties zijn opgenomen in de NOVA-sandbox.** Alle functies die eerder als bèta in VESTA beschikbaar waren, maken deel uit van de reguliere functies van NOVA en kunnen vóór de geplande productierelease in de sandbox worden getest. Ze worden ook reguliere VESTA-functies met de [volgende VESTA-hotfix, gepland voor **11 november 2026**](vesta-hotfix-11-november-2026.md).
 
 | Releasekanaal | Releaseopmerkingen | Focus |
 | --- | --- | --- |
-| **NOVA — Grote release** | [Wat is er nieuw voor klanten](nova-major-release-16-october-2026.md) · **16 oktober 2026** servicemomentopname | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
+| **NOVA — Grote release** | [Wat is er nieuw voor klanten](nova-major-release-16-october-2026.md) · **4 november 2026 (gepland)** | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
 | **VESTA — Volgende hotfix (gepland)** | [11 november 2026](vesta-hotfix-11-november-2026.md) | Introduceert alle voormalige VESTA-bètafuncties in de reguliere VESTA-functieset. |
 | **VESTA — Hotfix-release** | [14 oktober 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Verbeteringen en fixes voor de huidige VESTA-productierelease. |
 

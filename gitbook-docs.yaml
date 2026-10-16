@@ -63,11 +63,11 @@ site:
         language: nl
     - type: space
       key: space-9
-      title: China
+      title: 🇨🇳 Chinese
       localizedTitle:
         zh: Chinese
       path: chinese
       draft: true
       content:
-        directory: ./china
+        directory: ./chinese
         language: zh

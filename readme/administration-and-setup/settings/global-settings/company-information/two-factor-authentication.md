@@ -40,7 +40,7 @@ Nutzen Sie ihn, um die Bereitschaft einzuschätzen: Steigern Sie zunächst die V
 
 ## Was Mitglieder sehen
 
-Ein Mitglied, das zur Einrichtung verpflichtet ist, wird bei seiner nächsten Anmeldung zur 2FA-Einrichtung geleitet und wählt eine Methode (Authenticator-App, E-Mail-Code oder Passkey). Die Schritte für Endbenutzer werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../../../overview-and-basics/two-factor-authentication.md) beschrieben.
+Ein Mitglied, das zur Einrichtung verpflichtet ist, wird bei seiner nächsten Anmeldung zur 2FA-Einrichtung geleitet und wählt eine Methode (Authenticator-App, E-Mail-Code oder Passkey). Die Schritte für Endbenutzer werden unter [Zwei-Faktor-Authentifizierung (2FA)](../../../../security/two-factor-authentication.md) beschrieben.
 
 ## Verwandte Sicherheitskontrollen
 

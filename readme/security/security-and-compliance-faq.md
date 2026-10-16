@@ -4,7 +4,7 @@
 
 Die Angaben zur Speicherung von Zugangsdaten und zu TLS an öffentlichen Endpunkten wurden am **16. Oktober 2026** geprüft. Die folgende Seite beschreibt den bestätigten Umfang und die Angaben, die für die jeweilige Bereitstellung noch bestätigt werden müssen. Siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
-Die Angaben zur Verschlüsselung gespeicherter Daten wurden am **16. Oktober 2026** anhand der DigitalOcean-Sicherheitsdokumentation und Dienst-Metadaten geprüft. Siehe [Verschlüsselung gespeicherter Daten](../security/encryption-at-rest.md).
+Die Angaben zur Verschlüsselung gespeicherter Daten wurden am **16. Oktober 2026** anhand der DigitalOcean-Sicherheitsdokumentation und Dienst-Metadaten geprüft. Siehe [Verschlüsselung gespeicherter Daten](encryption-at-rest.md).
 
 Weitere Informationen zur Sicherheit bieten [Cookies und Browserspeicher](cookies-and-browser-storage.md), [Schwachstellenmanagement](vulnerability-management.md) und [Weitere Sicherheitsmaßnahmen](other-security-controls.md).
 
@@ -25,7 +25,7 @@ Weitere Informationen zur Sicherheit bieten [Cookies und Browserspeicher](cookie
 
 ### 1. Wo genau wird die Produktionsumgebung gehostet?
 
-**Antwort:** Die EU-Produktionsumgebung wird auf DigitalOcean-Cloud-Infrastruktur in Frankfurt, Deutschland, gehostet. DocBits nutzt DigitalOcean Spaces als Speicher sowie verwaltete PostgreSQL-, OpenSearch- und Valkey-Dienste. DocBits ist ISO 27001 zertifiziert. Den Verschlüsselungsumfang beschreiben [Verschlüsselung gespeicherter Daten](../security/encryption-at-rest.md) und [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
+**Antwort:** Die EU-Produktionsumgebung wird auf DigitalOcean-Cloud-Infrastruktur in Frankfurt, Deutschland, gehostet. DocBits nutzt DigitalOcean Spaces als Speicher sowie verwaltete PostgreSQL-, OpenSearch- und Valkey-Dienste. DocBits ist ISO 27001 zertifiziert. Den Verschlüsselungsumfang beschreiben [Verschlüsselung gespeicherter Daten](encryption-at-rest.md) und [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
 **Status:** ✅ Bestätigt
 
@@ -53,7 +53,7 @@ Backup-Zeitplan: Tägliche, wöchentliche, vierteljährliche und jährliche Sich
 
 **Status:** ✅ Bestätigt
 
-**Notizen:** Umfassender Backup-Zeitplan (täglich/wöchentlich/vierteljährlich/jährlich) über zwei EU-Standorte. Alle Daten bleiben innerhalb der EU. Bestätigen Sie die Backup-Verschlüsselung und die Häufigkeit von Wiederherstellungstests. Die Verschlüsselung der vom Anbieter verwalteten Datenbank-Backups ist unter [Verschlüsselung gespeicherter Daten](../security/encryption-at-rest.md) beschrieben; dies bestätigt nicht jede Kopie im weitergehenden Backup-Zeitplan.
+**Notizen:** Umfassender Backup-Zeitplan (täglich/wöchentlich/vierteljährlich/jährlich) über zwei EU-Standorte. Alle Daten bleiben innerhalb der EU. Bestätigen Sie die Backup-Verschlüsselung und die Häufigkeit von Wiederherstellungstests. Die Verschlüsselung der vom Anbieter verwalteten Datenbank-Backups ist unter [Verschlüsselung gespeicherter Daten](encryption-at-rest.md) beschrieben; dies bestätigt nicht jede Kopie im weitergehenden Backup-Zeitplan.
 
 ---
 
@@ -75,7 +75,7 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 
 **Antwort:** Die öffentlichen Endpunkte `app.docbits.com`, `auth.docbits.com` und `api.docbits.com` unterstützen HTTPS mit TLS 1.2 und TLS 1.3. Bei den Prüfungen am 16. Oktober 2026 wurden TLS 1.0 und TLS 1.1 abgewiesen. Anmeldepasswörter und Schlüssel aus der API-Schlüsselverwaltung werden durch Einweg-Hashing geschützt. Hashing ist von der Verschlüsselung von Datenbanken, Speichern und Backups zu unterscheiden.
 
-**Gespeicherte Daten:** DigitalOcean Managed Databases verwenden LUKS-Verschlüsselung der gesamten Volumes mit AES-256-XTS; ihre verwalteten Backups verwenden AES-256-CTR. Spaces nutzt 256-Bit-AES-XTS auf physischen Datenträgern. [Verschlüsselung gespeicherter Daten](../security/encryption-at-rest.md) beschreibt Verfahren, Schlüsselverwaltung und Backup-Umfang.
+**Gespeicherte Daten:** DigitalOcean Managed Databases verwenden LUKS-Verschlüsselung der gesamten Volumes mit AES-256-XTS; ihre verwalteten Backups verwenden AES-256-CTR. Spaces nutzt 256-Bit-AES-XTS auf physischen Datenträgern. [Verschlüsselung gespeicherter Daten](encryption-at-rest.md) beschreibt Verfahren, Schlüsselverwaltung und Backup-Umfang.
 
 **Status:** ✅ Teilweise bestätigt
 

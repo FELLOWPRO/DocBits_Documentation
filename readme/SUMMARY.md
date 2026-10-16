@@ -8,12 +8,6 @@
   * [DocBits Infor on Premise Customer](overview-and-basics/architecture/docbits-infor-on-premise-customer.md)
   * [Certifications](overview-and-basics/architecture/certifications.md)
   * [Anforderungen an die lokale Prefect-Einrichtung](overview-and-basics/architecture/prefect-local-setup-requirements.md)
-* [Sicherheit & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
-* [Sichere Speicherung von Zugangsdaten](overview-and-basics/secure-storage-of-credentials.md)
-* [Cookies und Browserspeicher](overview-and-basics/cookies-and-browser-storage.md)
-* [Schwachstellenmanagement](overview-and-basics/vulnerability-management.md)
-* [Weitere Sicherheitsmaßnahmen](overview-and-basics/other-security-controls.md)
-* [Zwei-Faktor-Authentifizierung (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
 * [DocBits Release-Lebenszyklus-Strategie](overview-and-basics/docbits-release-lifecycle-strategy.md)
 * [Versionshinweise](overview-and-basics/release-notes/README.md)
@@ -48,7 +42,13 @@
 
 ## Sicherheit <a href="#security" id="security"></a>
 
+* [Sicherheit & Compliance FAQ](security/security-and-compliance-faq.md)
+* [Sichere Speicherung von Zugangsdaten](security/secure-storage-of-credentials.md)
 * [Verschlüsselung gespeicherter Daten](security/encryption-at-rest.md)
+* [Cookies und Browserspeicher](security/cookies-and-browser-storage.md)
+* [Schwachstellenmanagement](security/vulnerability-management.md)
+* [Weitere Sicherheitsmaßnahmen](security/other-security-controls.md)
+* [Zwei-Faktor-Authentifizierung (2FA)](security/two-factor-authentication.md)
 
 ## Endnutzer und Partner Bereich <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 

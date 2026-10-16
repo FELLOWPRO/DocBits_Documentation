@@ -65,4 +65,4 @@ Wenn Sie mehr Keys haben, als auf eine Seite passen, verwenden Sie die Blättere
 
 Behandeln Sie den Key wie ein Passwort. Wer ihn hat, kann mit den Dokumenten und Daten Ihrer Organisation arbeiten.
 
-Siehe [Sichere Speicherung von Zugangsdaten](../../../../overview-and-basics/secure-storage-of-credentials.md).
+Siehe [Sichere Speicherung von Zugangsdaten](../../../../security/secure-storage-of-credentials.md).

@@ -4,7 +4,7 @@ description: Verschlüsselung gespeicherter DocBits-Daten bei DigitalOcean, eins
 
 # Verschlüsselung gespeicherter Daten
 
-DocBits nutzt DigitalOcean Managed Databases und DigitalOcean Spaces. Die Prüfung am **16. Oktober 2026** bestätigte verwaltete PostgreSQL-, OpenSearch- und Valkey-Dienste für die EU-Produktion in Frankfurt. Die [Sicherheits- und Compliance-FAQ](../overview-and-basics/security-and-compliance-faq.md) dokumentiert die Nutzung von Spaces als Speicher.
+DocBits nutzt DigitalOcean Managed Databases und DigitalOcean Spaces. Die Prüfung am **16. Oktober 2026** bestätigte verwaltete PostgreSQL-, OpenSearch- und Valkey-Dienste für die EU-Produktion in Frankfurt. Die [Sicherheits- und Compliance-FAQ](security-and-compliance-faq.md) dokumentiert die Nutzung von Spaces als Speicher.
 
 Diese Seite beschreibt die von DigitalOcean veröffentlichten Verschlüsselungsmaßnahmen für diese Dienste. On-Premises-Installationen und Kopien in anderen Systemen erfordern eine eigene Bewertung.
 
@@ -25,7 +25,7 @@ Die Angaben zu Datenbanken und Backups stammen aus dem [Sicherheitsmodell für M
 
 DigitalOcean verwaltet die beschriebene Infrastrukturverschlüsselung. Für Managed Databases dokumentiert der Anbieter einen zufällig erzeugten Schlüssel je Instanz und Volume, der beim Löschen der Instanz verworfen wird. Backups verwalteter Datenbanken verwenden einen zufälligen Schlüssel pro Datei, geschützt durch ein dienstspezifisches RSA-Schlüsselpaar.
 
-Speicherverschlüsselung schützt Daten auf Speichermedien. Berechtigte Anwendungen und Datenbankbenutzer können Daten weiterhin über den Dienst lesen. Daraus folgt weder, dass Mitarbeiter des Anbieters keine Kontoinformationen einsehen können, noch, dass jedes Feld auf Anwendungsebene verschlüsselt ist. Das Hashing von Anmeldepasswörtern und API-Schlüsseln ist eine gesonderte Maßnahme; siehe [Sichere Speicherung von Zugangsdaten](../overview-and-basics/secure-storage-of-credentials.md).
+Speicherverschlüsselung schützt Daten auf Speichermedien. Berechtigte Anwendungen und Datenbankbenutzer können Daten weiterhin über den Dienst lesen. Daraus folgt weder, dass Mitarbeiter des Anbieters keine Kontoinformationen einsehen können, noch, dass jedes Feld auf Anwendungsebene verschlüsselt ist. Das Hashing von Anmeldepasswörtern und API-Schlüsseln ist eine gesonderte Maßnahme; siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
 Spaces unterstützt außerdem [SSE-C mit kundenseitig bereitgestellten Schlüsseln](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). Diese optionale Funktion belegt nicht, dass DocBits SSE-C oder kundenseitig verwaltete Verschlüsselungsschlüssel verwendet.
 

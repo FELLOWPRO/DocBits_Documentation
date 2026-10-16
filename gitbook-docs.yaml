@@ -64,7 +64,9 @@ site:
     - type: space
       key: space-9
       title: China
-      path: china
+      localizedTitle:
+        zh: Chinese
+      path: chinese
       draft: true
       content:
         directory: ./china

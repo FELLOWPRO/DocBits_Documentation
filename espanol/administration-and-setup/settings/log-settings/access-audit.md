@@ -14,14 +14,14 @@ Mientras el servicio está desactivado, los filtros y la tabla del registro no p
 
 ## Encontrar un evento
 
-| Control                            | Qué hace                                                                       |
-| ---------------------------------- | ------------------------------------------------------------------------------ |
-| **Time Range**                     | Limita la lista a un periodo como Last Hour, Today o Last 7 Days.              |
-| **Create**, **Update**, **Delete** | Incluye o excluye esos tipos de acción.                                        |
-| **Resource Type**                  | Limita los resultados a un tipo de recurso, como documents o settings.         |
-| **Search logs**                    | Busca las entradas de auditoría visibles por texto.                            |
-| **Refresh**                        | Carga una vez las entradas coincidentes más recientes.                         |
-| **Auto-refresh**                   | Mantiene la lista actualizada automáticamente mientras la página está abierta. |
-| **Export**                         | Descarga los datos actuales del registro de auditoría como archivo JSON.       |
+| Control | Qué hace |
+|---|---|
+| **Time Range** | Limita la lista a un periodo como Last Hour, Today o Last 7 Days. |
+| **Create**, **Update**, **Delete** | Incluye o excluye esos tipos de acción. |
+| **Resource Type** | Limita los resultados a un tipo de recurso, como documents o settings. |
+| **Search logs** | Busca las entradas de auditoría visibles por texto. |
+| **Refresh** | Carga una vez las entradas coincidentes más recientes. |
+| **Auto-refresh** | Mantiene la lista actualizada automáticamente mientras la página está abierta. |
+| **Export** | Descarga los datos actuales del registro de auditoría como archivo JSON. |
 
 Las tarjetas de resumen muestran el total de acciones y las creadas, actualizadas y eliminadas para los filtros seleccionados. En la tabla, **Timestamp** indica cuándo ocurrió un evento, **User** identifica al actor, **Action** nombra el cambio y **Resource** identifica el elemento afectado. Abra el control de detalles de una fila para examinar el cambio registrado. Si no aparece ningún evento, compruebe que el servicio está activado y amplíe el rango de tiempo antes de modificar los demás filtros.

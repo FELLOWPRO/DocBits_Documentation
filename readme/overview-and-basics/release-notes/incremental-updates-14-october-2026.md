@@ -1,4 +1,10 @@
-# Notes de version DocBits — 14 octobre 2026
+# Correctif VESTA — 14 octobre 2026
+
+> **Canal de version :** VESTA · **Version :** R1.0.15.
+>
+> **Comparaison avec NOVA ?** La [comparaison des fonctionnalités de la version majeure NOVA](nova-major-release-16-october-2026.md#what-nova-adds-for-customers) couvre l'Assistant de validation, les améliorations d'automatisation révisées, les rapports de factures électroniques étendus, les nouveaux contrôles d'import et d'autres ajouts au-delà de cette version VESTA.
+>
+> **Prochain correctif VESTA : [11 novembre 2026 (prévu)](vesta-hotfix-11-november-2026.md).** Toutes les fonctionnalités précédemment disponibles en version bêta dans VESTA sont désormais des fonctionnalités NOVA régulières et deviendront des fonctionnalités VESTA standard avec ce correctif.
 
 _Ce qui change avec le correctif urgent de production DocBits du 14 octobre
 2026 (version R1.0.15), couvrant tout ce qui a été livré depuis le

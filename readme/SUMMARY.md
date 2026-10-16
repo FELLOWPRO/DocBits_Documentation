@@ -46,6 +46,7 @@
 ## Sezione Utenti finali e partner <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Sezione utente finale](end-user-and-partner-section/end-user-section/README.md)
+  * [Ottenere l'accesso e accedere](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Ricerca Rapida Globale](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Mappa del Sito](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Modifiche agli indirizzi web](end-user-and-partner-section/end-user-section/web-address-changes.md)

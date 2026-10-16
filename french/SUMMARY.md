@@ -58,7 +58,6 @@
   * [Plan du Site](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Modifications des adresses web](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [Barre Latérale Personnalisable](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
-  * [Tableau d'Idées](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Tableau de bord](end-user-and-partner-section/end-user-section/dashboard/README.md)
     * [Outils du tableau de bord](end-user-and-partner-section/end-user-section/dashboard/dashboard-tools.md)
     * [Modifier les colonnes de document](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)
@@ -535,6 +534,9 @@
   * [Paramètres de Journal](administration-and-setup/settings/log-settings/README.md)
     * [Gestion des tâches](administration-and-setup/settings/log-settings/task-management.md)
     * [Synchronisation des données](administration-and-setup/settings/log-settings/data-synchronization.md)
+    * [Paramètres de la Recherche Plein Texte](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Audit d'Accès](administration-and-setup/settings/log-settings/access-audit.md)
+    * [Analytique](administration-and-setup/settings/log-settings/analytics.md)
   * [Licences API](administration-and-setup/settings/api-licenses.md)
   * [Paramètres du Fournisseur](administration-and-setup/settings/supplier-setting/README.md)
     * [Paramètres Généraux du Fournisseur](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
@@ -782,6 +784,7 @@
 
 ## Fonctions et outils avancés <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [Explorateur de graphe de connaissances](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
   * [Installation et configuration](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)

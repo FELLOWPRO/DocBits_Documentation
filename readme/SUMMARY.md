@@ -10,6 +10,7 @@
   * [Prefect Local Setup Requirements](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [Security & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
 * [Secure Storage of Credentials](overview-and-basics/secure-storage-of-credentials.md)
+* [Encryption at Rest](overview-and-basics/encryption-at-rest.md)
 * [Two-Factor Authentication (2FA)](overview-and-basics/two-factor-authentication.md)
 * [Infor Infrastructure](overview-and-basics/infor-infrastructure.md)
 * [Diagram Preview](overview-and-basics/diagram-preview/README.md)

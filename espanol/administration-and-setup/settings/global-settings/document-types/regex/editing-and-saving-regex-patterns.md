@@ -4,7 +4,7 @@
 
 **Para editar patrones Regex existentes y asegurarse de que los cambios funcionen como se espera sin romper la funcionalidad existente, puede seguir la guía a continuación:**
 
-<figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 12.46.56.png" alt=""><figcaption><p>Configuración: Tipo de documento</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (99).png" alt=""><figcaption><p>Configuración: Tipo de documento</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/Bildschirmfoto 2024-05-22 um 14.18.25.png" alt=""><figcaption></figcaption></figure>
 

@@ -17,7 +17,7 @@ Estas tarjetas van en el grupo **Then** del Generador de flujos de trabajo: las 
 
 **Qué cambió:** v2 añadió soporte de internacionalización (i18n) con claves de traducción. La funcionalidad permanece idéntica.
 
-📖 [Version History & Changes](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/changelog/release.md#1-call_api) | [Complete Card Database](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/DocFlow/docs/card_version.md#call_api)
+📖 [Version History & Changes](../../changelog/release.md#1-call_api) | [Complete Card Database](../../../DocFlow/docs/card_version.md#call_api)
 
 ***
 

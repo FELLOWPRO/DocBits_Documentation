@@ -1,7 +1,5 @@
 # Cost Invoice - Export
 
-<figure><img src="../../../../.gitbook/assets/And1.png" alt="DocBits Compra Pedido Exportar 4"><figcaption></figcaption></figure>
-
 Este título indica que la regla está configurada específicamente para gestionar facturas de coste e implica una acción de exportación, posiblemente para la generación de informes, el procesamiento posterior o la integración con otros sistemas.
 
 #### Configuración de la regla:

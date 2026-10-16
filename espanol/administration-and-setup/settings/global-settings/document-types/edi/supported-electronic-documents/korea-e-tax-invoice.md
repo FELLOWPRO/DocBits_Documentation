@@ -15,15 +15,15 @@ Korea E-Tax Invoice es el estándar de factura fiscal electrónica gestionado po
 
 ## Estado de compatibilidad
 
-| Componente             | Estado          |
-| ---------------------- | --------------- |
-| Vista previa           | ✅ Compatible    |
-| Extracción de campos   | ✅ Compatible    |
-| Transformación         | ✅ Compatible    |
+| Componente           | Estado       |
+| -------------------- | ------------ |
+| Vista previa         | ✅ Compatible |
+| Extracción de campos | ✅ Compatible |
+| Transformación       | ✅ Compatible |
 
 ## Vista previa predeterminada
 
-<figure><img src="../../../../../../.gitbook/assets/korea-e-tax-invoice-preview.png" alt="Vista previa de Korea e-Tax Invoice en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una Korea e-Tax Invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/korea-nts-preview.png" alt="Vista previa de Korea e-Tax Invoice en DocBits"><figcaption><p>Vista previa predeterminada de DocBits para una Korea e-Tax Invoice</p></figcaption></figure>
 
 ## Relacionado
 

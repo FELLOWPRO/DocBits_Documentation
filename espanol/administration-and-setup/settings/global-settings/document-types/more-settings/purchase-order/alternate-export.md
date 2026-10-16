@@ -19,7 +19,7 @@ Esta página explica cómo configurar esta opción.
 
 Una vez que la configuración esté habilitada, puedes elegir un estado de documento y asignar una configuración de exportación predefinida.
 
-Más información sobre cómo configurar las configuraciones de exportación se puede encontrar [aquí](../../../../document-processing/export.md).
+Más información sobre cómo configurar las configuraciones de exportación se puede encontrar [aquí](../../../../document-processing/export/).
 
 Puedes elegir entre los siguientes estados:
 

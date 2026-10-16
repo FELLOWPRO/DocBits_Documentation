@@ -1,4 +1,4 @@
-# OCR Settings
+# Configuración de OCR
 
 {% embed url="https://youtu.be/5XqEP-5fq6M" %}
 DocBits OCR & E-Text Explained: Settings, Quality & Header Extraction
@@ -29,7 +29,7 @@ If a document does not meet the defined quality level, DocBits provides three op
 * **Throw Error**\
   Document processing will stop entirely, and an error message will be displayed, indicating that the document did not meet the required quality threshold.
 
-<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
 
 ## General OCR Settings
 
@@ -44,7 +44,7 @@ If a document does not meet the defined quality level, DocBits provides three op
     * You are not achieving the desired results with the currently selected version.
     * You are troubleshooting issues related to OCR performance or accuracy.
 
-    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
 
 ## OCR Settings for Tables
 

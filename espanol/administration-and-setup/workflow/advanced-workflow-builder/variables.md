@@ -8,9 +8,9 @@ Las **Variables** te permiten almacenar valores una sola vez y reutilizarlos en 
 
 Las variables se agrupan por su tipo:
 
-* **Text** — un valor de texto (p. ej. una descripción o una etiqueta fija).
-* **Yes/No** — una marca booleana (Yes / No).
-* **Document** — una referencia a un documento o a un campo de documento.
+- **Text** — un valor de texto (p. ej. una descripción o una etiqueta fija).
+- **Yes/No** — una marca booleana (Yes / No).
+- **Document** — una referencia a un documento o a un campo de documento.
 
 Usa el cuadro de búsqueda para encontrar una variable rápidamente cuando la lista crezca.
 
@@ -20,5 +20,5 @@ Haz clic en **New Variable**, asígnale un nombre y un tipo, y establece su valo
 
 ## Próximos pasos
 
-* Mira cómo los nodos usan estos valores en [Nodos](nodes.md).
-* Valida y ejecuta el flujo de trabajo en [Validación y pruebas](validation-and-testing.md).
+- Mira cómo los nodos usan estos valores en [Nodos](nodes.md).
+- Valida y ejecuta el flujo de trabajo en [Validación y pruebas](validation-and-testing.md).

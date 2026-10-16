@@ -12,7 +12,7 @@ La ventana de tolerancia define un rango de fechas aceptables en torno a la fech
 * Tolerance Days: **3**
 * Ventana de tolerancia: **6 de enero → 12 de enero**
 
-> <mark style="color:red;">Solo los</mark> <mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;">seleccionados (días de la semana) se cuentan al calcular esta ventana.</mark>
+> <mark style="color:red;">Solo los</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">seleccionados (días de la semana) se cuentan al calcular esta ventana.</mark>
 
 ### Ejemplo de línea de tiempo visual
 

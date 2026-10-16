@@ -1,5 +1,7 @@
 # AI Workforce
 
+<figure><img src="../.gitbook/assets/docnet-agents-infographic-en.png" alt="AI Workforce Agents Infographic"><figcaption><p>Sistema multiagente de DocBits para el procesamiento autónomo de documentos</p></figcaption></figure>
+
 ## Descripción general
 
 **AI Workforce** es la capa de orquestación dentro de DocBits que convierte el trabajo entrante en agentes de IA coordinados. En lugar de que una persona guíe manualmente cada paso, toma una unidad de trabajo entrante —un correo electrónico, un mensaje de chat en Microsoft Teams o Discord, una acción manual en la interfaz o una llamada a la API— y la lleva hasta su finalización: clasifica el documento, extrae y valida los campos, hace la conciliación con las órdenes de compra y los datos maestros, y exporta al ERP, con personas supervisando el proceso donde importa.

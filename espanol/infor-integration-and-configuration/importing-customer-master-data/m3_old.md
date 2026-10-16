@@ -20,7 +20,7 @@ Esta guía explica cómo importar una plantilla de conexión API para configurar
 
 Antes de importar, descargue la plantilla de conexión necesaria con el siguiente archivo:
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
+{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template.xml" %}
 
 ### Importar la plantilla
 

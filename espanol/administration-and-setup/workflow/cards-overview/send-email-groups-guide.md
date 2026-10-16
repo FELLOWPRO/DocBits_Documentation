@@ -10,7 +10,7 @@ Estas tarjetas van en el grupo **Then** del Generador de flujos de trabajo: las 
 
 **Estado:** ✅ Versión única (sin cambios incompatibles) **Última versión:** v1 (Activa) **Nota:** Esta tarjeta utiliza un modelo de versión única con soporte multilingüe mediante claves de traducción.
 
-📖 [Complete Card Database](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/DocFlow/docs/card_version.md)
+📖 [Complete Card Database](../../../DocFlow/docs/card_version.md)
 
 ***
 

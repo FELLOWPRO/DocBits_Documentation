@@ -22,6 +22,8 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Stefan Reppermund
 
+![](../../../.gitbook/assets/3.png)
+
 **Test 2: Logic Card**
 
 When: **Assignee is:** Amier Haider
@@ -30,6 +32,8 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** James Edwards
 
+![](../../../.gitbook/assets/4.png)
+
 **Test 3: Logic Card**
 
 **When:** **Assignee is:** Amier Haider
@@ -37,6 +41,8 @@ Then: **Assign document to:** James Edwards
 **And:** **Document type is:** Order Confirmation
 
 **Then:** **Assign document to:** Anian Sollinger
+
+![](../../../.gitbook/assets/5.png)
 
 También es posible, si el documento no está asignado a una sola persona, asignarlo a un empleado concreto desde el principio.
 
@@ -54,6 +60,8 @@ Para tener una visión más sencilla de lo que debe ocurrir con un documento, pu
 
 <figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Estado de albarán de entrega del Test 4 del flujo de trabajo"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/8.png)
+
 **Test 5: Logic Card**
 
 When: **Document type is:** Invoice
@@ -64,7 +72,11 @@ Then: **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Estado de aprobación de factura del Test 5 del flujo de trabajo"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/10.png)
+
 Si una factura u otro documento supera un determinado importe total que requiere revisión y aprobación previas, estos documentos pueden asignarse de inmediato a la persona adecuada.
+
+![](../../../.gitbook/assets/11.png)
 
 **Test 6: Logic Card**
 
@@ -75,6 +87,8 @@ And: Docfield **total\_amount** is **Greater than 500**
 Then: **Assign document to:** Asad Usman Khan
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Asignación por importe total del Test 6 del flujo de trabajo"><figcaption></figcaption></figure>
+
+![](../../../.gitbook/assets/13.png)
 
 También es posible introducir el estado en el flujo de trabajo, de modo que la persona asignada pueda ver de inmediato en qué estado se encuentra el documento y qué debe ocurrir a continuación con él.
 

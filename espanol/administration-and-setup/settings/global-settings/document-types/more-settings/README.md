@@ -13,18 +13,18 @@
 
 La ruta de navegación en la parte superior de la página muestra **Ajustes / Tipos de documentos / Más ajustes**. El Asistente de configuración, a la derecha de la página, explica los ajustes de la tarjeta abierta.
 
-| Tarjeta | Qué configuras ahí |
-| ------- | ------------------ |
-| Orden de compra | Coincidencia de OC, tolerancias, exportación de líneas de OC, números de artículo del proveedor |
-| Gestionar diseños | Interruptor para la vista general de Gestionar diseños |
-| Reglas de validación personalizadas | Tus propias reglas de validación para este tipo de documento |
-| Reglas de transformación | Reglas que leen un valor, lo cambian en pasos y lo escriben de nuevo |
-| Aprobación y rechazo | Flujo de aprobación y formularios en revisión y de rechazo |
-| [Verificación de impuestos de Vertex](vertex-tax-verification.md) | Diseño del formulario para la verificación de impuestos de Vertex |
-| Validación de facturas electrónicas | Validación de facturas XRechnung, ZUGFeRD y Factur-X |
-| Extracción de tabla | Omitir la validación de las tablas extraídas |
-| Configuración de exportación | Exportación múltiple, formato PDF, exportación alternativa |
-| Detección de duplicados | Detectar y bloquear documentos duplicados |
+| Tarjeta                                                           | Qué configuras ahí                                                                              |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Orden de compra                                                   | Coincidencia de OC, tolerancias, exportación de líneas de OC, números de artículo del proveedor |
+| Gestionar diseños                                                 | Interruptor para la vista general de Gestionar diseños                                          |
+| Reglas de validación personalizadas                               | Tus propias reglas de validación para este tipo de documento                                    |
+| Reglas de transformación                                          | Reglas que leen un valor, lo cambian en pasos y lo escriben de nuevo                            |
+| Aprobación y rechazo                                              | Flujo de aprobación y formularios en revisión y de rechazo                                      |
+| [Verificación de impuestos de Vertex](vertex-tax-verification.md) | Diseño del formulario para la verificación de impuestos de Vertex                               |
+| Validación de facturas electrónicas                               | Validación de facturas XRechnung, ZUGFeRD y Factur-X                                            |
+| Extracción de tabla                                               | Omitir la validación de las tablas extraídas                                                    |
+| Configuración de exportación                                      | Exportación múltiple, formato PDF, exportación alternativa                                      |
+| Detección de duplicados                                           | Detectar y bloquear documentos duplicados                                                       |
 
 ## Orden de compra
 
@@ -64,7 +64,7 @@ Debajo del diagrama, el panel enumera las **Reglas por prioridad, por etapa**. D
 * La pasada **1.1 Exact match for all rules** falla, porque 10.40 no es 10.00. La flecha roja lleva a la siguiente pasada.
 * La pasada **1.2 Tolerance-based match** tiene éxito. La diferencia es del 4 %, que está dentro del 5 %. La flecha verde lleva a **Coincidencia encontrada** y el procesamiento se detiene.
 
-En el diagrama, este es el camino 1.1, después 1.2 y después **Coincidencia encontrada**. Para ver el camino que siguió un solo documento, consulta [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](../../../../touchless-po-matching-diagnosis.md). Para todos los detalles de la página de reglas, consulta [Reglas de Coincidencia de Órdenes de Compra](purchase-order/purchase-order-matching-rules.md).
+En el diagrama, este es el camino 1.1, después 1.2 y después **Coincidencia encontrada**. Para ver el camino que siguió un solo documento, consulta [Touchless Intelligence: Diagnóstico de la coincidencia con la OC](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Para todos los detalles de la página de reglas, consulta [Reglas de Coincidencia de Órdenes de Compra](purchase-order/purchase-order-matching-rules.md).
 
 ### Configuración de tolerancia de PO
 
@@ -86,7 +86,7 @@ El [**Número de artículo del proveedor**](purchase-order/supplier-item-number-
 
 Tres tarjetas se encuentran directamente debajo de la tarjeta Orden de compra:
 
-* **Gestionar diseños** activa la vista general de Gestionar diseños para este tipo de documento. Consulta el [Gestor de Diseño](../layout-manager/README.md).
+* **Gestionar diseños** activa la vista general de Gestionar diseños para este tipo de documento. Consulta el [Gestor de Diseño](../layout-manager/).
 * **Reglas de validación personalizadas** activa tus propias reglas de validación. **Gestionar reglas de validación** las abre. Consulta [Reglas de validación personalizadas](../custom-validation-rules.md).
 * **Reglas de transformación** activa las reglas de transformación. **Gestionar las reglas de transformación** las abre. Consulta [Reglas de transformación](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ La tarjeta **Aprobación y rechazo** contiene el flujo de aprobación y los form
 * **Formulario de diseño en revisión**: Configura el diseño del formulario de revisión con el **Creador de diseño**.
 * **Diseñar el formulario de rechazo**: Configura el diseño del formulario de rechazo con el **Creador de diseño**.
 
-Para el **Creador de diseño**, consulta el [Gestor de Diseño](../layout-manager/README.md).
+Para el **Creador de diseño**, consulta el [Gestor de Diseño](../layout-manager/).
 
 ## Verificación de impuestos de Vertex
 
@@ -114,7 +114,7 @@ La tarjeta **Verificación de impuestos de Vertex** contiene **Verificación de 
 
 ## Validación de facturas electrónicas
 
-La tarjeta **Validación de facturas electrónicas** activa la validación de las facturas electrónicas entrantes y te permite decidir si se notifica al proveedor cuando se rechaza una factura. Consulta [Validación de facturas electrónicas](../../../document-processing/e-documents/validation-rules.md).
+La tarjeta **Validación de facturas electrónicas** activa la validación de las facturas electrónicas entrantes y te permite decidir si se notifica al proveedor cuando se rechaza una factura. Consulta [Validación de facturas electrónicas](../../../document-processing/e-documents/validation-rules/).
 
 ## Extracción de tabla
 

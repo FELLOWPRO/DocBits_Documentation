@@ -16,7 +16,7 @@ Estas tarjetas van en el grupo **Then** del Generador de flujos de trabajo: las 
 
 **Patrón de versión:** Todas las tarjetas de manipulación de campos siguen el patrón v1 → v2 **Cambio clave:** v2 añade soporte de internacionalización (i18n) con claves de traducción
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/changelog/release.md#-data-manipulation-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../../changelog/release.md#-data-manipulation-cards) | [Card Version Database](../../../DocFlow/docs/card_version.md)
 
 ***
 

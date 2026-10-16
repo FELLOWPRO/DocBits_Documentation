@@ -46,4 +46,4 @@ Este documento describe el flujo de trabajo para pedir materiales a los proveedo
 * Asegúrese de que todos los documentos estén verificados y archivados para su registro.
 * Las discrepancias en los detalles del pedido o de la factura deben resolverse con prontitud para evitar retrasos.
 
-<figure><img src="../../../.gitbook/assets/embed.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed (3).svg" alt=""><figcaption></figcaption></figure>

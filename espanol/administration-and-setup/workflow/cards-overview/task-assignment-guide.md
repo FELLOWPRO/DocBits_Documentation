@@ -19,7 +19,7 @@ Estas tarjetas van en el grupo **Then** del Generador de flujos de trabajo: las 
 * **Evolución v3 → v4:** Se eliminó el enfoque de árbol de decisión y se añadieron tipos genéricos de elementos de trabajo (Task, Ticket, Issue)
 * **Migración v2 → v3:** Se añadió soporte de árbol de decisión (ahora mayormente obsoleto)
 
-📖 [Complete Version History](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/changelog/release.md#-task-management-cards) | [Card Version Database](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/DocFlow/docs/card_version.md)
+📖 [Complete Version History](../../changelog/release.md#-task-management-cards) | [Card Version Database](../../../DocFlow/docs/card_version.md)
 
 ***
 

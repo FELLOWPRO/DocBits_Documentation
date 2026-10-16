@@ -1,4 +1,4 @@
-# Contabilidad automática con Infor LN
+# Contabilidad Automática
 
 Use esta guía cuando un administrador de Infor LN quiera que DocBits use los datos maestros financieros importados para la contabilidad automática. La página anterior mostraba 48 pantallas de un inquilino de Infor concreto. Los nombres de puntos de conexión, las asignaciones, las credenciales y las direcciones de punto de conexión de ese inquilino no son una configuración reutilizable.
 
@@ -8,9 +8,9 @@ Abra **Ajustes → Módulo → Pedido y Finanzas → Contabilidad automática** 
 
 Las siguientes capturas de pantalla provienen del entorno de pruebas sintético **DocBits Documentation Test A**. En esta organización, **LN** estaba seleccionado y la contabilidad automática estaba **desactivada**. El menú se abrió sin seleccionar otro valor; no se guardó ninguna configuración.
 
-<figure><img src="../../../.gitbook/assets/dbdc781-auto-accounting-settings-es-20261012.png" alt="Ajustes de DocBits de Pedido y Finanzas en español que muestran la contabilidad automática desactivada con LN seleccionado"><figcaption><p>Localice la contabilidad automática y compruebe el tipo seleccionado antes de activarla.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/testing-auto-accounting-off-es-20261010.png" alt="Ajustes de DocBits de Pedido y Finanzas en español que muestran la contabilidad automática desactivada con LN seleccionado"><figcaption><p>Localice la contabilidad automática y compruebe el tipo seleccionado antes de activarla.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc781-auto-accounting-type-options-es-20261012.png" alt="Menú Tipo de la contabilidad automática de DocBits en español con las opciones LN y M3"><figcaption><p>LN y M3 son los tipos disponibles en este entorno de pruebas; no se cambió ninguna selección.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc765-auto-accounting-type-options-es-20261011.png" alt="Menú Tipo de la contabilidad automática de DocBits en español con las opciones LN y M3"><figcaption><p>LN y M3 son los tipos disponibles en este entorno de pruebas; no se cambió ninguna selección.</p></figcaption></figure>
 
 ## Preparar LN e ION
 

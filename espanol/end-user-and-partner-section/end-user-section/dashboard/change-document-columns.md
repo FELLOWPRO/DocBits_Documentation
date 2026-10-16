@@ -6,7 +6,7 @@ hidden: true
 
 Desde el Panel de control, haz clic en el icono de Configuración Avanzada como se muestra a continuación:
 
-<figure><img src="../../../.gitbook/assets/docbits_dashboard_advanced_settings_icon.png" alt="DocBits Tablero Avanzado Configuración Icon"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/change-document-colums1.png" alt="DocBits Tablero Avanzado Configuración Icon"><figcaption></figcaption></figure>
 
 El siguiente menú se mostrará:
 
@@ -40,4 +40,4 @@ Selecciona los campos que necesitas y haz clic en "Agregar a Columnas visibles",
 
 <figure><img src="../../../.gitbook/assets/change-document-colums9.png" alt=""><figcaption></figcaption></figure>
 
-<div data-full-width="true"><figure><img src="../../../.gitbook/assets/image%20(32).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure></div>

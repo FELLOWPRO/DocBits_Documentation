@@ -19,7 +19,7 @@ Estas tarjetas van en el grupo **Then** del Generador de flujos de trabajo: las 
 
 **Qué cambió:** v3 añadió el parámetro opcional "Execute the prompt" para un mayor control. v4 intentó revertir esto pero quedó obsoleta.
 
-📖 [Version History & Changes](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/administration-and-setup/changelog/release.md#3-action_run_docoperator_script--) | [Complete Card Database](https://github.com/Fellow-Consulting-AG/docbits/tree/es/readme/DocFlow/docs/card_version.md#action_run_docoperator_script)
+📖 [Version History & Changes](../../changelog/release.md#3-action_run_docoperator_script--) | [Complete Card Database](../../../DocFlow/docs/card_version.md#action_run_docoperator_script)
 
 ***
 

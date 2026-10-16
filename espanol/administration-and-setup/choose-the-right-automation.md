@@ -8,15 +8,15 @@ DocBits ofrece varias formas de modificar, comprobar y enrutar documentos: **Tra
 
 ## La respuesta corta
 
-| Quiero … | Usar | Por qué |
-| --- | --- | --- |
-| Limpiar o reescribir un valor (recortar, prefijo, formato de fecha, mapeo de unidades, valor por defecto) | [Reglas de transformación](settings/global-settings/document-types/transformation-rules.md) | Sin código, vista previa en directo, se ejecutan en cada pasada y al guardar |
-| Asegurarme de que los datos estén completos y sean plausibles, y detener los documentos que no lo sean | [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md) | Comprobaciones declarativas, error o advertencia, bloquean la exportación automática |
-| Conciliar las líneas de factura con las líneas de la orden de compra | [Reglas de coincidencia de órdenes de compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Conjuntos de reglas con tolerancias, alternativas y un diagrama visual |
-| Hacer algo que una regla no puede expresar: una búsqueda, un cálculo entre campos y tablas, una tarea, un cambio de estado en un momento exacto | [Script](settings/global-settings/document-types/script/README.md) | Python en 13 puntos de activación del flujo |
-| Decidir **qué ocurre a continuación** con un documento: asignar, aprobar, crear una tarea, enviar un correo, exportar, llamar a una API | [Standard Workflow](workflow/standard-workflow-builder.md) | Tarjetas When / And / Then sobre eventos de estado |
-| Hacer lo mismo con ramas, varias condiciones y rutas de error | [Advanced Workflow](workflow/advanced-workflow-builder.md) | Grafo visual de nodos |
-| Necesito una acción que ninguna tarjeta integrada ofrece | [Workflow SDK (Card SDK)](workflow/card-sdk.md) | Su propia tarjeta, revisada por DocBits |
+| Quiero …                                                                                                                                        | Usar                                                                                                                                                 | Por qué                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Limpiar o reescribir un valor (recortar, prefijo, formato de fecha, mapeo de unidades, valor por defecto)                                       | [Reglas de transformación](settings/global-settings/document-types/transformation-rules.md)                                                          | Sin código, vista previa en directo, se ejecutan en cada pasada y al guardar         |
+| Asegurarme de que los datos estén completos y sean plausibles, y detener los documentos que no lo sean                                          | [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md)                                                        | Comprobaciones declarativas, error o advertencia, bloquean la exportación automática |
+| Conciliar las líneas de factura con las líneas de la orden de compra                                                                            | [Reglas de coincidencia de órdenes de compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Conjuntos de reglas con tolerancias, alternativas y un diagrama visual               |
+| Hacer algo que una regla no puede expresar: una búsqueda, un cálculo entre campos y tablas, una tarea, un cambio de estado en un momento exacto | [Script](settings/global-settings/document-types/script/)                                                                                            | Python en 13 puntos de activación del flujo                                          |
+| Decidir **qué ocurre a continuación** con un documento: asignar, aprobar, crear una tarea, enviar un correo, exportar, llamar a una API         | [Standard Workflow](workflow/standard-workflow-builder/)                                                                                             | Tarjetas When / And / Then sobre eventos de estado                                   |
+| Hacer lo mismo con ramas, varias condiciones y rutas de error                                                                                   | [Advanced Workflow](workflow/advanced-workflow-builder/)                                                                                             | Grafo visual de nodos                                                                |
+| Necesito una acción que ninguna tarjeta integrada ofrece                                                                                        | [Workflow SDK (Card SDK)](workflow/card-sdk.md)                                                                                                      | Su propia tarjeta, revisada por DocBits                                              |
 
 **Regla general: use la herramienta menos potente que resuelva el trabajo.** Primero reglas, después Script, y Workflow o tarjeta SDK en último lugar. Las reglas son más fáciles de leer, más fáciles de probar y no pueden dañar un documento; el código puede hacer más y por ello requiere más cuidado.
 
@@ -46,14 +46,14 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 
 <figure><img src="../.gitbook/assets/automation-reach-es.svg" alt="Comparación de lo que puede hacer cada herramienta de automatización"><figcaption></figcaption></figure>
 
-| | Reglas de transformación | Custom Validation Rules | Reglas de coincidencia de OC | Script | Standard Workflow | Advanced Workflow | Tarjeta SDK |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **Se ejecuta cuando** | En cada pasada de transformación y en cada guardado | En cada ejecución de validación | Tras la búsqueda, **Auto PO Match**, nuevo número de OC | 13 puntos de activación | Tras un cambio de estado | Tras un cambio de estado | Cuando se ejecuta su workflow |
-| **Puede leer** | Campos de encabezado, columnas de tabla | Campos, celdas de tabla, totales sobre filas | Tablas, números de OC, líneas de orden de compra, tolerancias | Todos los datos extraídos, búsquedas, usuarios, grupos, búsqueda de texto completo | Datos del documento, usuarios, grupos, variables | Lo mismo, más los resultados de nodos anteriores | Campos, tablas, búsquedas, usuarios, grupos |
-| **Puede escribir** | Valores de campos y columnas, filas, suborganización | Nada: solo marcas de válido / no válido | Solo datos de coincidencia | Campos, tablas, tareas, estado | Campos, estado, asignación, tareas, exportación, correo, llamada a API | Las mismas tarjetas, más lógica y variables | Campos, tablas, estado, tareas |
-| **Puede detener un documento** | No | Sí, los errores bloquean la exportación automática y **Validar** | Sí, sin una coincidencia completa la exportación automática espera cuando el PO matching está activo | Indirectamente: marcar un campo como no válido, crear una tarea | Establece el estado, asigna, aprueba, rechaza | Igual | Igual que el tipo de tarjeta |
-| **Requiere código** | No | No | No | Sí, Python restringido | No | No | Sí, Python en un sandbox |
-| **Uso típico** | Normalizar valores | Campos obligatorios, formatos, totales | Conciliación de líneas | Lógica especial | Enrutamiento y aprobación | Enrutamiento con ramas | Acciones de partners |
+|                                | Reglas de transformación                             | Custom Validation Rules                                          | Reglas de coincidencia de OC                                                                         | Script                                                                             | Standard Workflow                                                      | Advanced Workflow                                | Tarjeta SDK                                 |
+| ------------------------------ | ---------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------- |
+| **Se ejecuta cuando**          | En cada pasada de transformación y en cada guardado  | En cada ejecución de validación                                  | Tras la búsqueda, **Auto PO Match**, nuevo número de OC                                              | 13 puntos de activación                                                            | Tras un cambio de estado                                               | Tras un cambio de estado                         | Cuando se ejecuta su workflow               |
+| **Puede leer**                 | Campos de encabezado, columnas de tabla              | Campos, celdas de tabla, totales sobre filas                     | Tablas, números de OC, líneas de orden de compra, tolerancias                                        | Todos los datos extraídos, búsquedas, usuarios, grupos, búsqueda de texto completo | Datos del documento, usuarios, grupos, variables                       | Lo mismo, más los resultados de nodos anteriores | Campos, tablas, búsquedas, usuarios, grupos |
+| **Puede escribir**             | Valores de campos y columnas, filas, suborganización | Nada: solo marcas de válido / no válido                          | Solo datos de coincidencia                                                                           | Campos, tablas, tareas, estado                                                     | Campos, estado, asignación, tareas, exportación, correo, llamada a API | Las mismas tarjetas, más lógica y variables      | Campos, tablas, estado, tareas              |
+| **Puede detener un documento** | No                                                   | Sí, los errores bloquean la exportación automática y **Validar** | Sí, sin una coincidencia completa la exportación automática espera cuando el PO matching está activo | Indirectamente: marcar un campo como no válido, crear una tarea                    | Establece el estado, asigna, aprueba, rechaza                          | Igual                                            | Igual que el tipo de tarjeta                |
+| **Requiere código**            | No                                                   | No                                                               | No                                                                                                   | Sí, Python restringido                                                             | No                                                                     | No                                               | Sí, Python en un sandbox                    |
+| **Uso típico**                 | Normalizar valores                                   | Campos obligatorios, formatos, totales                           | Conciliación de líneas                                                                               | Lógica especial                                                                    | Enrutamiento y aprobación                                              | Enrutamiento con ramas                           | Acciones de partners                        |
 
 ## Decidir con cuatro preguntas
 
@@ -96,7 +96,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 * **Se ejecuta** en los puntos de activación que usted elija: tras la extracción, antes y después de la transformación, antes del PO matching, antes y después de la validación, en cambios de campo y de tabla, al guardar y al aprobar.
 * **Puede** leer todo el documento, usar búsquedas en datos maestros y búsqueda de texto completo, modificar campos, indicadores y tablas, crear tareas y cambiar el estado.
 * **No puede** importar módulos ni llamar a servicios externos. Es Python restringido. Un error en un script se registra y nunca detiene el procesamiento del documento, por lo que un script **no** es una forma fiable de bloquear un documento: marque el campo como no válido o cree una tarea.
-* **Más información:** [Script](settings/global-settings/document-types/script/README.md)
+* **Más información:** [Script](settings/global-settings/document-types/script/)
 
 ### Standard Workflow
 
@@ -104,7 +104,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 * **Se ejecuta** cuando un documento alcanza un estado que usted elija, es decir, después de la validación. También puede iniciarse desde un web hook, una programación o manualmente.
 * **Puede** ejecutar una cadena de tarjetas: **When** (inicio), **And** (condiciones, todas deben cumplirse), **Then** (acciones en orden).
 * **No puede** ramificarse, esperar varias condiciones ni reaccionar al error de una tarjeta en una ruta separada. Para eso use un Advanced Workflow.
-* **Más información:** [Standard Workflow](workflow/standard-workflow-builder.md)
+* **Más información:** [Standard Workflow](workflow/standard-workflow-builder/)
 
 ### Advanced Workflow
 
@@ -112,7 +112,7 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 * **Se ejecuta** en los mismos eventos que un Standard Workflow. Requiere la suscripción DocFlow Advanced.
 * **Puede** usar las mismas tarjetas que un Standard Workflow, más tarjetas de lógica y de variables, dibujadas como un grafo.
 * **No puede** actuar antes de la validación: se inicia tras un cambio de estado. La lógica previa a la validación pertenece a un Script o a una regla.
-* **Más información:** [Advanced Workflow](workflow/advanced-workflow-builder.md)
+* **Más información:** [Advanced Workflow](workflow/advanced-workflow-builder/)
 
 ### Workflow SDK (Card SDK)
 
@@ -135,20 +135,20 @@ Un workflow que escribe un campo se comporta como una persona que guarda el docu
 
 ## Errores comunes
 
-| Error | Mejor |
-| --- | --- |
-| Un Script que recorta y añade prefijos a los valores | Una regla de transformación |
-| Un workflow que establece un campo después de la validación | Una regla de transformación o un Script antes de la validación |
-| Un Script del que se espera que detenga un documento no válido | Una Custom Validation Rule |
-| Una Custom Validation Rule de la que se espera que corrija un valor | Una regla de transformación y después la regla de validación |
-| Reescribir el número de OC en una regla de coincidencia de órdenes de compra | Una regla de transformación sobre el campo *Purchase Order*, antes de la conciliación |
-| Un Advanced Workflow para un único *When → Then* | Un Standard Workflow |
-| Una tarjeta SDK para algo que puede hacer una tarjeta integrada | La tarjeta integrada |
+| Error                                                                        | Mejor                                                                                 |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Un Script que recorta y añade prefijos a los valores                         | Una regla de transformación                                                           |
+| Un workflow que establece un campo después de la validación                  | Una regla de transformación o un Script antes de la validación                        |
+| Un Script del que se espera que detenga un documento no válido               | Una Custom Validation Rule                                                            |
+| Una Custom Validation Rule de la que se espera que corrija un valor          | Una regla de transformación y después la regla de validación                          |
+| Reescribir el número de OC en una regla de coincidencia de órdenes de compra | Una regla de transformación sobre el campo _Purchase Order_, antes de la conciliación |
+| Un Advanced Workflow para un único _When → Then_                             | Un Standard Workflow                                                                  |
+| Una tarjeta SDK para algo que puede hacer una tarjeta integrada              | La tarjeta integrada                                                                  |
 
 ## Páginas relacionadas
 
 * [Reglas de transformación](settings/global-settings/document-types/transformation-rules.md)
 * [Custom Validation Rules](settings/global-settings/document-types/custom-validation-rules.md)
 * [Reglas de coincidencia de órdenes de compra](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* [Script](settings/global-settings/document-types/script/README.md)
-* [Workflow](workflow/README.md)
+* [Script](settings/global-settings/document-types/script/)
+* [Workflow](workflow/)

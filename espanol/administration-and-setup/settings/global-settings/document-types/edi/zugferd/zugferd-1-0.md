@@ -25,7 +25,7 @@ Junto al `INVOICE_TYPE_CODE` original, el XSLT TRANSFORMATION predeterminado emi
 
 ### Desglose de impuestos (clasificado por niveles)
 
-Los bloques `ApplicableTradeTax` se distribuyen en tres niveles basados en la tasa (no en índices posicionales): los campos de tasa estándar (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturan rate ≥ 19; los campos de tasa reducida (`*_2`) capturan 0 < rate < 19; los campos de tasa cero (`*_3`) capturan rate = 0. Véase [ZUGFeRD Tax Breakdown](./#tax-breakdown-tier-classified) para la lista completa de campos. (ZUGFeRD 1.0 utiliza el vocabulario CII heredado en su XSLT TRANSFORMATION, pero las reglas de selección por nivel anteriores son idénticas a las de 2.x.)
+Los bloques `ApplicableTradeTax` se distribuyen en tres niveles basados en la tasa (no en índices posicionales): los campos de tasa estándar (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturan rate ≥ 19; los campos de tasa reducida (`*_2`) capturan 0 < rate < 19; los campos de tasa cero (`*_3`) capturan rate = 0. Véase [ZUGFeRD Tax Breakdown](./#desglose-de-impuestos-clasificado-por-niveles) para la lista completa de campos. (ZUGFeRD 1.0 utiliza el vocabulario CII heredado en su XSLT TRANSFORMATION, pero las reglas de selección por nivel anteriores son idénticas a las de 2.x.)
 
 ### Referencias de documentos
 

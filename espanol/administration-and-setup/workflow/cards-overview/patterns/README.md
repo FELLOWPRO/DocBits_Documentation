@@ -284,12 +284,78 @@ Cada patrón incluye estas secciones estandarizadas:
 * [Índice completo de la guía de flujos de trabajo](../../)
 * [Guías de tarjetas individuales](../then/action/)
 * [Referencia de tarjetas de condición](../condition-cards-complete-guide.md)
+* [Mapa de enlaces de flujos de trabajo](../../../../../WORKFLOW_LINKING_MAP.md)
+
+**Recursos adicionales:**
+
+* [Guía de referencia rápida](../../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Notas de la versión de octubre de 2025](../../changelog/2025-10-october.md)
+* [Referencia de versiones de tarjetas](../../../../docs/card_version.md)
 
 **Contacto:**
 
 * Comentarios sobre patrones: docs@docbits.com
 * Soporte técnico: support@docbits.com
 * Ayuda con la implementación: consulting@docbits.com
+
+***
+
+## Estadísticas de patrones
+
+| Métrica                           | Valor                 |
+| --------------------------------- | --------------------- |
+| **Total de patrones**             | 5                     |
+| **Total de tarjetas cubiertas**   | 30+                   |
+| **Documentación combinada**       | \~1.200 líneas        |
+| **Escenarios de ejemplo**         | 25+                   |
+| **Plantillas de configuración**   | 15+                   |
+| **Diagramas de flujo de trabajo** | 5 diagramas completos |
+| **Referencias cruzadas**          | 87+ enlaces internos  |
+
+***
+
+## Contribuir a los patrones
+
+¿Tiene un patrón de flujo de trabajo que pueda beneficiar a otros?
+
+**Directrices para contribuir con patrones:**
+
+1. **Documente su flujo de trabajo**
+   * Escenario de negocio claro
+   * Implementación paso a paso
+   * Ejemplos de configuración que funcionen
+   * Resultados de pruebas reales
+2. **Siga la plantilla de patrón**
+   * Utilice la estructura de secciones estándar
+   * Incluya todos los elementos obligatorios
+   * Proporcione diagramas y ejemplos
+   * Añada una guía de resolución de problemas
+3. **Envíelo para su revisión**
+   * Por correo electrónico a: docs@docbits.com
+   * Incluya: descripción del patrón, casos de uso, guía de implementación
+   * Lo revisaremos y, si procede, lo añadiremos a la documentación oficial
+
+**Ventajas:**
+
+* Ayude a otros usuarios de DocBits
+* Obtenga reconocimiento en la documentación
+* Mejore la base de conocimiento general del producto
+* Reciba comentarios sobre su implementación
+
+***
+
+## Registro de cambios
+
+### Versión 1.0 (23 de octubre de 2025)
+
+* Lanzamiento inicial de 5 patrones de flujo de trabajo completos
+* Añadido el patrón de integración de API
+* Añadido el patrón de gestión de tareas
+* Añadido el patrón de PO Matching
+* Añadido el patrón de lógica de decisión
+* Añadido el patrón de transformación de datos
+* Implementados enlaces de referencias cruzadas (87 enlaces)
+* Creada la guía de selección de patrones
 
 ***
 
@@ -310,6 +376,12 @@ Cada patrón incluye estas secciones estandarizadas:
 5. Pruebe con documentos de muestra
 6. Despliegue en producción
 7. Supervise y optimice
+
+**¿Necesita más ayuda?**
+
+* Consulte la [Descripción general de la documentación de flujos de trabajo](../../)
+* Revise la [Guía de referencia rápida](../../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Póngase en contacto con el equipo de soporte
 
 ***
 

@@ -2,6 +2,16 @@
 
 The **AI Extracted table** is the line-item table that DocBits reads with AI when a supplier has no trained table rules. It appears on the validation screen below the header fields. This page explains every control around it: how to fix a wrong column, how to give the AI instructions, how to test a change before you keep it, how to see what the AI did, what the Assistant can and cannot do for you, and who is allowed to save what.
 
+## Video series
+
+Short videos for everyday users. Watch them in order, or jump to the one you need.
+
+### 1. Read the AI table
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part1/v1/en.mp4" %}
+
+What you see on the validation screen and what each icon, column and button does. About 1.5 minutes.
+
 ## When you get the AI table
 
 * An admin has switched on **AI Table extraction** (Settings → Document Processing → Classification and Extraction, see [Settings for admins](./#settings-for-admins)). If it is off, the table area shows _AI Table will display here. Enable in …_.

@@ -2,7 +2,9 @@
 
 **Disponibilidade da NOVA R1.1:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
 
-Escolha um canal de lançamento para ver o que muda para a sua equipa. **A NOVA é a versão principal com capacidades adicionais para clientes. Os hotfixes da VESTA melhoram a versão de produção atual.** Consulte o [ciclo de vida do lançamento](../docbits-release-lifecycle-strategy.md) para disponibilidade e mudança entre canais.
+**DocBits é o produto. NOVA designa o ciclo de lançamentos.** [Ver o vídeo sobre o novo lançamento do DocBits](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pt.mp4) · [Legendas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/pt.vtt).
+
+Escolha um canal de lançamento para ver o que muda para a sua equipa. **O ciclo NOVA introduz a nova versão principal do DocBits com capacidades adicionais para clientes. Os hotfixes da VESTA melhoram a versão de produção atual.** Consulte o [ciclo de vida do lançamento](../docbits-release-lifecycle-strategy.md) para disponibilidade e mudança entre canais.
 
 **As antigas funcionalidades beta da VESTA estão incluídas no ambiente de testes da NOVA.** Todas as funcionalidades anteriormente disponíveis como beta na VESTA fazem parte das funcionalidades regulares da NOVA e podem ser testadas antes da entrada em produção prevista. Passarão também a ser funcionalidades regulares da VESTA com o [próximo hotfix, previsto para **11 de novembro de 2026**](vesta-hotfix-11-november-2026.md).
 

@@ -2,6 +2,8 @@
 
 **NOVA R1.1 可用性：** 自 **2026 年 10 月 16 日** 起已在沙盒环境中开放。生产环境发布计划于 **2026 年 11 月 4 日** 进行。
 
+**DocBits 是产品名称。NOVA 是发布周期的名称。** [观看 DocBits 新版本介绍视频](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.mp4) · [字幕](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/zh.vtt).
+
 **沙盒服务版本快照：2026 年 10 月 16 日**
 
 NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功能，同时提供引导式文档验证、更多提升自动化的方式、更清晰的电子发票检查以及对导入和文档处理的更好控制。这些说明描述了以下服务版本中相对于最近发布的 [VESTA 热修复版本 R1.0.15（2026 年 10 月 14 日）](incremental-updates-14-october-2026.md)（包括更早的 VESTA 热修复版本）面向客户的新增内容。

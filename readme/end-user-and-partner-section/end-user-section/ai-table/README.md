@@ -2,6 +2,40 @@
 
 La **Tabla AI extraída** es la tabla de líneas de detalle que DocBits lee con IA cuando un proveedor no tiene reglas de tabla entrenadas. Aparece en la pantalla de validación, debajo de los campos de cabecera. Esta página explica todos los controles que la rodean: cómo corregir una columna incorrecta, cómo dar instrucciones a la IA, cómo probar un cambio antes de conservarlo, cómo ver lo que hizo la IA, qué puede y qué no puede hacer el Asistente por ti y quién puede guardar qué.
 
+## Serie de vídeos
+
+Vídeos cortos para el día a día. Míralos en orden o ve directamente al que necesites.
+
+### 1. Leer la tabla AI
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part1/v1/es.mp4" %}
+
+Qué ves en la tabla AI y qué hace cada botón. Unos 1,7 minutos.
+
+### 2. Corregir una columna y enseñar a DocBits
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part2/v1/es.mp4" %}
+
+Elegir la columna correcta, dar instrucciones a la IA, probar un cambio y conservarlo para las próximas facturas. Unos 1,9 minutos.
+
+### 3. Dos problemas típicos
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part3/v1/es.mp4" %}
+
+Precio por 1.000 o 100 y un descuento restado dos veces. Qué ves, qué escribir y cómo comprobar. Unos 1,3 minutos.
+
+### 4. Lo que la IA lee bien
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/es.mp4" %}
+
+Cinco diseños que DocBits lee bien sin ayuda y qué hacer primero. Unos 1,3 minutos.
+
+### 5. El Asistente y quién puede cambiar qué
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v1/es.mp4" %}
+
+Cómo ayuda el Asistente con la tabla AI, cómo sugerir una mejora al administrador y qué solo pueden cambiar los administradores. Unos 1,5 minutos.
+
 ## Cuándo obtienes la tabla AI
 
 * Un administrador ha activado la **Extracción de tabla de IA** (Ajustes → Procesamiento de documentos → Clasificación y extracción; consulta [Ajustes para administradores](#ajustes-para-administradores)). Si está desactivada, el área de la tabla muestra *La tabla AI se mostrará aquí. Habilitar en …*.

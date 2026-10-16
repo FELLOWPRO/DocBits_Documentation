@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Unit Price Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (68).png" alt="DocBits Zakup Zamówienie Eksport 5"><figcaption></figcaption></figure>
-
 Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim etapem zatwierdzania faktur zakupowych z naciskiem na cenę jednostkową, zapewniając jej zgodność z uzgodnionymi warunkami.
 
 #### Konfiguracja reguły:

@@ -10,8 +10,4 @@ Przepływ pracy można uruchomić za pomocą tych dwóch kart. Tutaj możesz zde
 
 \\
 
-<figure><img src="../../../../.gitbook/assets/And1 (59).png" alt="DocBits Zakup Zamówienie 4"><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/And1 (60).png" alt="DocBits Ustawienia E-mail"><figcaption></figcaption></figure>
-
 Tej karty można również użyć do określenia wielu typów dokumentów, na które przepływ pracy powinien wpływać.

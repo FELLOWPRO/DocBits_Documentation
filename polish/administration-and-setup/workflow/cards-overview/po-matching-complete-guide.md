@@ -24,7 +24,7 @@ Samouczek DocBits PO Matching: automatyczne/ręczne dopasowanie pozycji, toleran
 * **v3 → v4:** Dodanie parametrów trybu porównania
 * **v4 → v5:** Wzbogacona tolerancja z wieloma jednostkami (%, EUR, $ itp.)
 
-📖 [Pełna historia wersji](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/changelog/release.md#-po-comparison--validation-cards) | [Baza danych wersji kart](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/DocFlow/docs/card_version.md)
+📖 [Pełna historia wersji](../../changelog/release.md#-po-comparison--validation-cards) | [Baza danych wersji kart](../../../DocFlow/docs/card_version.md)
 
 ***
 

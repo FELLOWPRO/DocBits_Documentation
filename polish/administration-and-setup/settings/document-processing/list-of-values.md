@@ -1,4 +1,4 @@
-# List Of Values
+# Lista wartości
 
 ## Overview
 
@@ -10,7 +10,7 @@ These lists can be customized for different sub-organizations and support multip
 
 You can access the **List of Values** by navigating to **Settings → Document Processing → List of Values**.
 
-<figure><img src="../../../.gitbook/assets/settings_list_of_values.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 ## How to Add or Delete a List
 
@@ -23,17 +23,17 @@ You can access the **List of Values** by navigating to **Settings → Document P
 3. _(Optional)_ Select a **Sub-Organization** for which the list should be active.
 4.  Click **Save** to create the list.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 ### How to Delete a List
 
 To delete a list, click the trash can icon next to the corresponding list.
 
-<figure><img src="../../../.gitbook/assets/list_of_values_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Note**</mark>: The list will be deleted immediately. Lists marked with the [**Standard**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
 
-## How to Add, Edit, or Remove Values from an Existing List&#x20;
+## How to Add, Edit, or Remove Values from an Existing List
 
 You can manage values in an existing **List of Values** using one of the following methods:
 
@@ -44,17 +44,17 @@ You can manage values in an existing **List of Values** using one of the followi
 
 1.  Click on the list you want to modify.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 2.  Click on **Actions.**
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 3.  Click on **Add Row.**
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 Now you can specify multiple properties for each entry:
 
-<figure><img src="../../../.gitbook/assets/list_of_values_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 **Value**: This is how the item will be stored internally within **DocBits**. It remains the same across all languages and also serves as the default display text during field validation if no label is specified for the selected language.
 
@@ -71,7 +71,7 @@ For example, if **EUR** is your primary **value**, you can add EURO and € as *
 
 4.  After entering all desired properties, click the **Save** button to add the row.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_11.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 ### Import Values from a CSV File
 
@@ -79,18 +79,18 @@ To add multiple values at once via CSV import:
 
 1.  Click on the list you want to update.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_3.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 2.  Click **Actions**.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_4.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 3.  Click on **Upload CSV**.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 4. Click **File** to browse and select the CSV file you want to upload.
 5. Choose the appropriate **Delimiter** used in the CSV file (`;` or `,`).
 6.  Click **Upload** to import the values.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_8.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Existing Values
 
@@ -98,11 +98,11 @@ To add multiple values at once via CSV import:
 2. Click the three dots in the **Actions** column.
 3.  Select **Edit** from the dropdown menu.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_10.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 4. Make the required changes.
 5.  Click **Save** to apply your changes.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_11.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 ### Delete Values
 
@@ -110,7 +110,7 @@ To add multiple values at once via CSV import:
 2. Click the three dots in the **Actions** column.
 3.  Select **Delete** from the dropdown menu.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Note**</mark>: The row will be deleted immediately. Rows marked with the [**Default**](list-of-values.md#system-defined-lists-and-rows) tag cannot be deleted.
 
@@ -122,22 +122,22 @@ To add a translation:
 
 1.  Click the plus (+) icon.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_14.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 2.  Select a language from the dropdown menu.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 3.  Enter the desired translation in the **Label** field.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_16.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 4.  To add another translation, click the plus (+) icon again.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_17.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 5.  To remove a translation, click the trash can icon.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_18.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 6.  When finished, click the **Save** button to save your translations.
 
-    <figure><img src="../../../.gitbook/assets/list_of_values_19.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:red;">**Note**</mark>: If no **Label** is available for the active language, DocBits will default to displaying the **Value**.
 
@@ -145,8 +145,8 @@ To add a translation:
 
 Some lists are pre-created by the system and are marked with the **Standard** tag. These lists cannot be deleted, but you can add new rows to them and remove those newly added rows if necessary.
 
-<figure><img src="../../../.gitbook/assets/list_of_values_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>
 
 Within these standard lists, certain rows are marked with the **Default** tag—these are system-defined entries. You can add new **labels** in different languages, but these default rows cannot be deleted.
 
-<figure><img src="../../../.gitbook/assets/list_of_values_20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/list_of_values_1.png" alt=""><figcaption></figcaption></figure>

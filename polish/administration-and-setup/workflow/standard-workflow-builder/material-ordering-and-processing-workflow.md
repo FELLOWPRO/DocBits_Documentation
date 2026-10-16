@@ -46,4 +46,4 @@ Ten dokument przedstawia przepływ pracy dla zamawiania materiałów od dostawc�
 * Upewnij się, że wszystkie dokumenty są zweryfikowane i zarchiwizowane na potrzeby ewidencji.
 * Rozbieżności w szczegółach zamówienia lub faktury muszą zostać niezwłocznie rozwiązane, aby uniknąć opóźnień.
 
-<figure><img src="../../../.gitbook/assets/embed (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed (2).svg" alt=""><figcaption></figcaption></figure>

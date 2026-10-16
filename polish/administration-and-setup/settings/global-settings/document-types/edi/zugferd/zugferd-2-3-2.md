@@ -2,17 +2,16 @@
 
 ## Przegląd
 
-ZUGFeRD 2.3.2 był początkową wersją standardu. Choć jest to wersja starsza, wiele dokumentów nadal korzysta z tego formatu. DocBits zapewnia pełną obsługę wyodrębniania danych z plików XML ZUGFeRD 2.3.2.
+ZUGFeRD 2.3.2 to wydanie konserwacyjne standardu 2.3, zapewniające zgodność z najnowszymi aktualizacjami CII.
 
 ## Mapowanie pól nagłówka
 
 ### Identyfikacja faktury
 
-| Ścieżka ZUGFeRD CII               | Pole DocBits        | Pole Infor BOD     | Typ    | Opis                     |
-| --------------------------------- | ------------------- | ------------------ | ------ | ------------------------ |
-| `ExchangedDocument/ID`            | `INVOICE_NUMBER`    | `DocumentID`       | STRING | Numer faktury            |
-| `ExchangedDocument/TypeCode`      | `INVOICE_TYPE_CODE` | `DocumentType`     | STRING | Kod typu faktury         |
-| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE`      | `DocumentDateTime` | DATE   | Data wystawienia faktury |
+| Ścieżka ZUGFeRD CII               | Pole DocBits     | Pole Infor BOD     | Typ    | Opis                     |
+| --------------------------------- | ---------------- | ------------------ | ------ | ------------------------ |
+| `ExchangedDocument/ID`            | `INVOICE_NUMBER` | `DocumentID`       | STRING | Numer faktury            |
+| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE`   | `DocumentDateTime` | DATE   | Data wystawienia faktury |
 
 ### Typ i podtyp dokumentu (sterowane przez TRA)
 
@@ -25,7 +24,7 @@ Domyślny TRANSFORMATION XSLT emituje dwa pola pochodne:
 
 ### Podział podatków (klasyfikowany według poziomów)
 
-Bloki `ApplicableTradeTax` są rozdzielane na trzy poziomy oparte na stawce (nie pozycyjnie `[1]`/`[2]`/`[3]`): pola stawki standardowej (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) obejmują stawkę ≥ 19; pola stawki obniżonej (`*_2`) obejmują 0 < stawka < 19; pola stawki zerowej (`*_3`) obejmują stawkę = 0. Pełną listę pól znajdziesz w [Podział podatków ZUGFeRD](./#tax-breakdown-tier-classified).
+Bloki `ApplicableTradeTax` są rozdzielane na trzy poziomy oparte na stawce (nie pozycyjnie `[1]`/`[2]`/`[3]`): pola stawki standardowej (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) obejmują stawkę ≥ 19; pola stawki obniżonej (`*_2`) obejmują 0 < stawka < 19; pola stawki zerowej (`*_3`) obejmują stawkę = 0. Pełną listę pól znajdziesz w [Podział podatków ZUGFeRD](./#podzial-podatkow-klasyfikowany-wedlug-poziomow).
 
 | Ścieżka ZUGFeRD CII                                   | Pole DocBits | Pole Infor BOD  | Typ    | Opis                              |
 | ----------------------------------------------------- | ------------ | --------------- | ------ | --------------------------------- |
@@ -33,32 +32,12 @@ Bloki `ApplicableTradeTax` są rozdzielane na trzy poziomy oparte na stawce (nie
 | `ApplicableTradeTax/BasisAmount` (poziom 1)           | `NET_AMOUNT` | `TaxableAmount` | AMOUNT | Kwota netto stawki standardowej   |
 | `ApplicableTradeTax/CalculatedAmount` (poziom 1)      | `TAX_AMOUNT` | `TaxAmount`     | AMOUNT | Kwota podatku stawki standardowej |
 
-### Odniesienia do dokumentów
+## Mapowanie pozycji
 
-| Ścieżka ZUGFeRD CII                   | Pole DocBits      | Pole Infor BOD    | Typ    | Opis                          |
-| ------------------------------------- | ----------------- | ----------------- | ------ | ----------------------------- |
-| `BuyerOrderReferencedDocument/ID`     | `PURCHASE_ORDER`  | `CustomerOrderID` | STRING | Numer zamówienia zakupu       |
-| `ContractReferencedDocument/ID`       | `CONTRACT_NUMBER` | `ContractID`      | STRING | Odniesienie do umowy          |
-| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE`   | `ShipmentID`      | STRING | Odniesienie do dowodu dostawy |
-
-### Informacje o dostawcy (sprzedawcy)
-
-| Ścieżka ZUGFeRD CII                                | Pole DocBits         | Pole Infor BOD        | Typ    | Opis           |
-| -------------------------------------------------- | -------------------- | --------------------- | ------ | -------------- |
-| `SellerTradeParty/ID`                              | `VENDOR_ID`          | `SupplierPartyID`     | STRING | ID dostawcy    |
-| `SellerTradeParty/Name`                            | `VENDOR_NAME`        | `SupplierPartyName`   | STRING | Nazwa dostawcy |
-| `SellerTradeParty/PostalTradeAddress/Line1`        | `VENDOR_ADDRESS`     | `SupplierAddress1`    | STRING | Linia adresu 1 |
-| `SellerTradeParty/PostalTradeAddress/PostcodeCode` | `VENDOR_POSTAL_CODE` | `SupplierPostalCode`  | STRING | Kod pocztowy   |
-| `SellerTradeParty/PostalTradeAddress/CityName`     | `VENDOR_CITY`        | `SupplierCity`        | STRING | Miasto         |
-| `SellerTradeParty/PostalTradeAddress/CountryID`    | `VENDOR_COUNTRY`     | `SupplierCountryCode` | STRING | Kod kraju      |
-
-## Mapowanie pozycji liniowych
-
-| Ścieżka ZUGFeRD CII                      | Pole DocBits   | Pole Infor BOD     | Typ    | Opis                     |
-| ---------------------------------------- | -------------- | ------------------ | ------ | ------------------------ |
-| `AssociatedDocumentLineDocument/LineID`  | `POSITION`     | `LineNumber`       | STRING | Numer pozycji            |
-| `SpecifiedTradeProduct/BuyerAssignedID`  | `ITEM_NUMBER`  | `BuyerItemID`      | STRING | Numer pozycji kupującego |
-| `SpecifiedTradeProduct/Name`             | `DESCRIPTION`  | `ItemDescription`  | STRING | Opis pozycji             |
-| `BilledQuantity`                         | `QUANTITY`     | `InvoicedQuantity` | NUMBER | Ilość zafakturowana      |
-| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE`   | `UnitPrice`        | AMOUNT | Cena jednostkowa netto   |
-| `LineTotalAmount`                        | `TOTAL_AMOUNT` | `ExtendedAmount`   | AMOUNT | Suma pozycji             |
+| Ścieżka ZUGFeRD CII                      | Pole DocBits   | Pole Infor BOD     | Typ    | Opis                   |
+| ---------------------------------------- | -------------- | ------------------ | ------ | ---------------------- |
+| `AssociatedDocumentLineDocument/LineID`  | `POSITION`     | `LineNumber`       | STRING | Numer pozycji          |
+| `SpecifiedTradeProduct/Name`             | `DESCRIPTION`  | `ItemDescription`  | STRING | Opis pozycji           |
+| `BilledQuantity`                         | `QUANTITY`     | `InvoicedQuantity` | NUMBER | Ilość zafakturowana    |
+| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE`   | `UnitPrice`        | AMOUNT | Cena jednostkowa netto |
+| `LineTotalAmount`                        | `TOTAL_AMOUNT` | `ExtendedAmount`   | AMOUNT | Wartość pozycji        |

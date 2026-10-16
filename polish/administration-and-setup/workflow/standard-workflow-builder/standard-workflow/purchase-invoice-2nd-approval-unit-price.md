@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Unit Price
 
-<figure><img src="../../../../.gitbook/assets/And1 (69).png" alt="DocBits Zatwierdzenie Faktura 3"><figcaption></figcaption></figure>
-
 Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim etapem zatwierdzania faktury zakupowej, ze szczególnym naciskiem na walidację ceny jednostkowej.
 
 #### Konfiguracja reguły:

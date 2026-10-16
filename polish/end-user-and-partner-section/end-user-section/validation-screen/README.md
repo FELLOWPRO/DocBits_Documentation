@@ -1,10 +1,10 @@
-# Ekran walidacji
+# Ekran Walidacji
 
 {% embed url="https://youtu.be/CmmQIxOaF6E?si=gYE-U-Jv4dLPi2xT" %}
 
 ## Przegląd
 
-<div data-full-width="false"><figure><img src="../../../.gitbook/assets/validation_screen_overview.png" alt="Przegląd ekranu walidacji"><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../../.gitbook/assets/validation_screen1.png" alt="Przegląd ekranu walidacji"><figcaption></figcaption></figure></div>
 
 ### Pochodzenie dokumentu
 
@@ -14,7 +14,7 @@ DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
 
 ## **Przycisk Save:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_save_button.png" alt="Przycisk Save"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen2.png" alt="Przycisk Save"><figcaption></figcaption></figure>
 
 * **Przycisk Save:**
   * **Cel:** Zapisuje bieżący stan dokumentu lub skryptu, nad którym pracujesz.
@@ -22,9 +22,9 @@ DocBits Origin Setting Explained: Country Standards for Dates & Number Formats
 
 ### **Dodaj specjalne reguły:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_add_special_rules.png" alt="Przycisk Add Special Rules"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen3.png" alt="Przycisk Add Special Rules"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/validation_screen_add_script_example.png" alt="Przykład dodania skryptu"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen4.png" alt="Przykład dodania skryptu"><figcaption></figcaption></figure>
 
 * **Add Special Rules / Add Script w DocBits:**
   * **Cel:** Umożliwia użytkownikom wdrażanie określonych reguł lub skryptów, które dostosowują sposób przetwarzania dokumentów.
@@ -36,7 +36,7 @@ Zobacz tutaj dodawanie[ skryptu w DocBits](../../../administration-and-setup/set
 
 ### **Fuzzy Fields:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_fuzzy_fields.png" alt="Fuzzy Fields"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen5.png" alt="Fuzzy Fields"><figcaption></figcaption></figure>
 
 * **Fuzzy Fields:**
   * **Cel:** Pomaga w identyfikowaniu i poprawianiu pól, w których dane mogą nie być idealnie dopasowane, ale są wystarczająco bliskie.
@@ -44,7 +44,7 @@ Zobacz tutaj dodawanie[ skryptu w DocBits](../../../administration-and-setup/set
 
 ### **Pola wymagane:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Pola wymagane"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt="Pola wymagane"><figcaption></figcaption></figure>
 
 Pola wymagające uwagi mają kolorową obwódkę lub ikonę informacji. W poniższym przykładzie pole **Numer faktury** ma czerwoną obwódkę i ikonę ostrzeżenia. Wartość jest widoczna na fakturze po prawej stronie, ale DocBits nie wyodrębnił jej z dokumentu. Zaznacz numer na dokumencie albo popraw pole, a następnie zapisz dokument.
 
@@ -56,17 +56,17 @@ Najedź kursorem na ikonę informacji obok pola lub wybierz ją, aby przeczytać
 
 <figure><img src="../../../.gitbook/assets/validation_screen_line_items_table.png" alt="Tabela pozycji na ekranie walidacji z paskiem narzędzi tabeli"><figcaption><p>Wyodrębniona tabela pod polami nagłówka</p></figcaption></figure>
 
-Pod polami nagłówka DocBits wyświetla tabelę pozycji dokumentu: jeden wiersz na pozycję faktury, jedna kolumna na każdą [kolumnę tabeli](../../../administration-and-setup/settings/global-settings/document-types/table-columns/README.md) skonfigurowaną dla typu dokumentu. Jeśli typ dokumentu ma kilka tabel (na przykład pozycje i opłaty), każda tabela ma własną zakładkę nad siatką.
+Pod polami nagłówka DocBits wyświetla tabelę pozycji dokumentu: jeden wiersz na pozycję faktury, jedna kolumna na każdą [kolumnę tabeli](../../../administration-and-setup/settings/global-settings/document-types/table-columns/) skonfigurowaną dla typu dokumentu. Jeśli typ dokumentu ma kilka tabel (na przykład pozycje i opłaty), każda tabela ma własną zakładkę nad siatką.
 
 ### Skąd pochodzi tabela
 
 Nad siatką znajduje się jedna zakładka dla każdej ścieżki ekstrakcji włączonej w organizacji:
 
-| Zakładka | Znaczenie |
-|---|---|
-| **Extracted table** | Ekstrakcja oparta na regułach (ustawienie *Table Extraction*). U dostawcy z wytrenowaną tabelą wiersze pochodzą z zapisanych reguł i są wyodrębniane w ten sam sposób na każdym dokumencie tego dostawcy; u dostawcy bez treningu zakładka może być pusta. |
-| **AI Extracted table** | Ekstrakcja tabeli przez AI (ustawienie *AI Table Extraction*). Wypełniana, gdy dostawca nie ma zapisanych reguł, oraz dla kolumn oznaczonych *Use AI* nawet wtedy, gdy reguły istnieją. Podpowiedź *AI table not found* na zakładce oznacza, że AI nie zwróciło niczego dla tego dokumentu. |
-| **PO Tables** | Tylko w kreatorze układu: pozycje zamówienia zakupu używane do dopasowania. |
+| Zakładka               | Znaczenie                                                                                                                                                                                                                                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Extracted table**    | Ekstrakcja oparta na regułach (ustawienie _Table Extraction_). U dostawcy z wytrenowaną tabelą wiersze pochodzą z zapisanych reguł i są wyodrębniane w ten sam sposób na każdym dokumencie tego dostawcy; u dostawcy bez treningu zakładka może być pusta.                                  |
+| **AI Extracted table** | Ekstrakcja tabeli przez AI (ustawienie _AI Table Extraction_). Wypełniana, gdy dostawca nie ma zapisanych reguł, oraz dla kolumn oznaczonych _Use AI_ nawet wtedy, gdy reguły istnieją. Podpowiedź _AI table not found_ na zakładce oznacza, że AI nie zwróciło niczego dla tego dokumentu. |
+| **PO Tables**          | Tylko w kreatorze układu: pozycje zamówienia zakupu używane do dopasowania.                                                                                                                                                                                                                 |
 
 Jeśli nie widać żadnej z zakładek, oba ustawienia tabeli są wyłączone dla organizacji (Settings → Document Processing → Classification and Extraction). Który poziom AI odczytuje tabelę, ustawia się dla organizacji i można to nadpisać dla poszczególnego dostawcy, zobacz [Model AI specyficzny dla dostawcy](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
@@ -79,49 +79,49 @@ Jeśli nie widać żadnej z zakładek, oba ustawienia tabeli są wyłączone dla
 * **Restore Table Column**: przywraca kolumnę usuniętą z widoku dla tego dokumentu.
 * **Delete table**: czyści wszystkie wiersze tej tabeli w tym dokumencie. Konfiguracja pozostaje nietknięta.
 * **Add new table column** (administratorzy): to samo okno dialogowe co w ustawieniach kolumn tabeli, bez opuszczania dokumentu.
-* **Tags** (tylko tabela AI): krótkie wskazówki tekstowe dla AI, na przykład *„ostatnia kolumna to kwota netto"*. Zobacz [Tagi tabeli AI](../ai-table/ai-table-tags.md).
-* **Apply** / **Save** / **Delete** obok tagów: *Apply* ponownie uruchamia tabelę AI dla tego dokumentu z wprowadzonymi tagami i zmianami kolumn, bez zapisywania czegokolwiek (jeśli dokument ma pozycje dopasowane do PO, DocBits ostrzega, że dopasowania zostaną usunięte); *Save Rules* zapisuje bieżące mapowanie kolumn i tagi dla tego dostawcy; *Delete Rules* usuwa je i ponownie uruchamia ekstrakcję AI dla tego dokumentu.
+* **Tags** (tylko tabela AI): krótkie wskazówki tekstowe dla AI, na przykład _„ostatnia kolumna to kwota netto"_. Zobacz [Tagi tabeli AI](../ai-table/ai-table-tags.md).
+* **Apply** / **Save** / **Delete** obok tagów: _Apply_ ponownie uruchamia tabelę AI dla tego dokumentu z wprowadzonymi tagami i zmianami kolumn, bez zapisywania czegokolwiek (jeśli dokument ma pozycje dopasowane do PO, DocBits ostrzega, że dopasowania zostaną usunięte); _Save Rules_ zapisuje bieżące mapowanie kolumn i tagi dla tego dostawcy; _Delete Rules_ usuwa je i ponownie uruchamia ekstrakcję AI dla tego dokumentu.
 * **Export**: pobiera tabelę jako plik CSV.
-* **Go to table extraction view**: otwiera trening tabeli dla tego dokumentu. Użyj, gdy ten sam dostawca wciąż wychodzi źle: zaznacz tabelę raz, zmapuj kolumny i kliknij *Save Rules*; od tej pory wiersze pojawiają się w zakładce *Extracted table*. Zobacz [Trening pól pozycji / Trening tabeli](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+* **Go to table extraction view**: otwiera trening tabeli dla tego dokumentu. Użyj, gdy ten sam dostawca wciąż wychodzi źle: zaznacz tabelę raz, zmapuj kolumny i kliknij _Save Rules_; od tej pory wiersze pojawiają się w zakładce _Extracted table_. Zobacz [Trening pól pozycji / Trening tabeli](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/).
 
 {% hint style="info" %}
-Jeśli tabela została wyodrębniona przez AI i otworzysz trening tabeli, DocBits zapyta *Table is already extracted by AI. Do you want to train manually?* Po zapisaniu reguł tabela AI nie jest już używana dla tego dostawcy.
+Jeśli tabela została wyodrębniona przez AI i otworzysz trening tabeli, DocBits zapyta _Table is already extracted by AI. Do you want to train manually?_ Po zapisaniu reguł tabela AI nie jest już używana dla tego dostawcy.
 {% endhint %}
 
 ### Ponowna ekstrakcja tabeli
 
-* **Ten sam dokument, tabela AI:** dodaj lub zmień tagi i kliknij **Apply**; tabela AI jest odbudowywana tylko dla tego dokumentu. Aby dodatkowo usunąć zapisane tagi i formatowanie dostawcy, kliknij **Delete** (*Delete Rules*): DocBits potwierdza komunikatem *Rules has been deleted successfully* i ponownie uruchamia ekstrakcję AI.
-* **Ten sam dokument, wytrenowane reguły:** otwórz *Go to table extraction view*, popraw tabelę i kliknij *Save & re-extract*.
-* **Cały dokument ponownie (nagłówek i tabela):** Dashboard → menu dokumentu → *Restart*. Potrzebne po tym, jak administrator zmienił kolumny tabeli lub ustawienia ekstrakcji.
+* **Ten sam dokument, tabela AI:** dodaj lub zmień tagi i kliknij **Apply**; tabela AI jest odbudowywana tylko dla tego dokumentu. Aby dodatkowo usunąć zapisane tagi i formatowanie dostawcy, kliknij **Delete** (_Delete Rules_): DocBits potwierdza komunikatem _Rules has been deleted successfully_ i ponownie uruchamia ekstrakcję AI.
+* **Ten sam dokument, wytrenowane reguły:** otwórz _Go to table extraction view_, popraw tabelę i kliknij _Save & re-extract_.
+* **Cały dokument ponownie (nagłówek i tabela):** Dashboard → menu dokumentu → _Restart_. Potrzebne po tym, jak administrator zmienił kolumny tabeli lub ustawienia ekstrakcji.
 
 ### Co blokuje zatwierdzenie
 
 Tabela jest sprawdzana przy zapisie lub zatwierdzeniu. Czerwona komórka lub komunikat pod tabelą oznacza jedną z poniższych sytuacji:
 
-| Komunikat | Przyczyna | Co zrobić |
-|---|---|---|
-| Required column empty | Kolumna oznaczona *Is Required* nie ma wartości w tym wierszu. | Wypełnij komórkę lub zapytaj administratora, czy kolumna musi być wymagana. |
-| *Line total does not match quantity x unit price (expected …, got …)* | `ilość × cena jednostkowa + opłaty − rabat` różni się od sumy pozycji o więcej niż 0,02. Często jedna z czterech wartości została odczytana do niewłaściwej kolumny. | Popraw wartość, która jest błędna w dokumencie; jeśli kolumna taka jak *Charges* jest konsekwentnie wypełniana niewłaściwą wartością, powiedz o tym administratorowi (zobacz [Rozwiązywanie problemów](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
-| *Line items add up to … but the net total is …* | Suma wartości pozycji różni się od kwoty netto w nagłówku. | Sprawdź, czy nie brakuje wiersza, czy wiersz nie jest zdublowany lub czy kwota w nagłówku nie została źle odczytana. |
-| *Line Item Table is missing Mandatory column for PO* | Dopasowanie PO wymaga numeru pozycji, ceny jednostkowej, ilości i kwoty całkowitej; jedna z nich jest ukryta. | Administrator: odkryj kolumnę w Table Columns. |
+| Komunikat                                                             | Przyczyna                                                                                                                                                            | Co zrobić                                                                                                                                                                                                                                                                                                              |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Required column empty                                                 | Kolumna oznaczona _Is Required_ nie ma wartości w tym wierszu.                                                                                                       | Wypełnij komórkę lub zapytaj administratora, czy kolumna musi być wymagana.                                                                                                                                                                                                                                            |
+| _Line total does not match quantity x unit price (expected …, got …)_ | `ilość × cena jednostkowa + opłaty − rabat` różni się od sumy pozycji o więcej niż 0,02. Często jedna z czterech wartości została odczytana do niewłaściwej kolumny. | Popraw wartość, która jest błędna w dokumencie; jeśli kolumna taka jak _Charges_ jest konsekwentnie wypełniana niewłaściwą wartością, powiedz o tym administratorowi (zobacz [Rozwiązywanie problemów](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
+| _Line items add up to … but the net total is …_                       | Suma wartości pozycji różni się od kwoty netto w nagłówku.                                                                                                           | Sprawdź, czy nie brakuje wiersza, czy wiersz nie jest zdublowany lub czy kwota w nagłówku nie została źle odczytana.                                                                                                                                                                                                   |
+| _Line Item Table is missing Mandatory column for PO_                  | Dopasowanie PO wymaga numeru pozycji, ceny jednostkowej, ilości i kwoty całkowitej; jedna z nich jest ukryta.                                                        | Administrator: odkryj kolumnę w Table Columns.                                                                                                                                                                                                                                                                         |
 
-Administrator może wyłączyć wszystkie kontrole tabeli dla typu dokumentu opcją *Skip table validation* (Document Types → More Settings); niezgodności pozycji i puste kolumny wymagane nie są wtedy zgłaszane.
+Administrator może wyłączyć wszystkie kontrole tabeli dla typu dokumentu opcją _Skip table validation_ (Document Types → More Settings); niezgodności pozycji i puste kolumny wymagane nie są wtedy zgłaszane.
 
 Więcej o kontrolach: [Automatyczne kontrole na ekranie walidacji](automatic-checks-on-the-validation-screen.md) oraz [Rozwiązywanie problemów z ekstrakcją tabel](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
 
 ### **Lupa:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_magnifying_glass.png" alt="Ikona lupy" width="118"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen7.png" alt="Ikona lupy" width="118"><figcaption></figcaption></figure>
 
 * **Lupa:**
   * **Cel:** Zapewnia powiększony widok wybranego obszaru dokumentu.
   * **Przypadek użycia:** Pomaga przyjrzeć się drobnym szczegółom lub małemu tekstowi w dokumentach, zapewniając dokładność wprowadzania danych lub przeglądu.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_zoomed_view.png" alt="Powiększony widok dokumentu"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen8.png" alt="Powiększony widok dokumentu"><figcaption></figcaption></figure>
 
 ### **Otwórz w nowym oknie:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_open_new_window.png" alt="Ikona otwierania w nowym oknie" width="130"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen9.png" alt="Ikona otwierania w nowym oknie" width="130"><figcaption></figcaption></figure>
 
 * **Otwórz w nowym oknie:**
   * **Cel:** Otwiera nowe okno do porównywania dokumentów obok siebie lub do pracy wielozadaniowej.
@@ -129,7 +129,7 @@ Więcej o kontrolach: [Automatyczne kontrole na ekranie walidacji](automatic-che
 
 ### **Skróty klawiszowe:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_keyboard_shortcuts.png" alt="Ikona skrótów klawiszowych" width="145"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen10.png" alt="Ikona skrótów klawiszowych" width="145"><figcaption></figcaption></figure>
 
 1. **Skróty klawiszowe:**
    * **Cel:** Umożliwia użytkownikom szybkie wykonywanie działań za pomocą kombinacji klawiszy.
@@ -137,7 +137,7 @@ Więcej o kontrolach: [Automatyczne kontrole na ekranie walidacji](automatic-che
 
 ### **Zadania:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_tasks_button.png" alt="Przycisk Tasks" width="55"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen12.png" alt="Przycisk Tasks" width="55"><figcaption></figcaption></figure>
 
 Aby udostępnić informacje wewnętrzne, możesz tworzyć zadania i przypisywać je konkretnemu pracownikowi lub grupie w firmie.
 
@@ -145,7 +145,7 @@ Aby udostępnić informacje wewnętrzne, możesz tworzyć zadania i przypisywać
   * **Cel:** Umożliwia użytkownikom tworzenie zadań powiązanych z dokumentami i przypisywanie ich członkom zespołu.
   * **Przypadek użycia:** Ułatwia współpracę i zarządzanie zadaniami w zespołach, dzięki czemu każdy zna swoje obowiązki.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_task_creation.png" alt="Okno tworzenia zadania" width="218"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen13.png" alt="Okno tworzenia zadania" width="218"><figcaption></figcaption></figure>
 
 ### Historia zatwierdzeń
 
@@ -162,9 +162,9 @@ Aby udostępnić informacje wewnętrzne, możesz tworzyć zadania i przypisywać
 
 ### **Tryb adnotacji:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_annotation_mode.png" alt="Przycisk trybu adnotacji" width="187"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen14.png" alt="Przycisk trybu adnotacji" width="187"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Przykład trybu adnotacji"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen15.png" alt="Przykład trybu adnotacji"><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations
@@ -178,7 +178,7 @@ Możesz zostawiać adnotacje w dokumencie. Może to być pomocne, aby przekazać
 
 ### **Scal:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_merge_documents.png" alt="Przycisk scalania dokumentów" width="60"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen16.png" alt="Przycisk scalania dokumentów" width="60"><figcaption></figcaption></figure>
 
 Dokumenty można tutaj scalać, na przykład jeśli brakowało strony faktury — takie strony można później scalić w ten sposób, bez konieczności usuwania lub ponownego przesyłania całego dokumentu.
 
@@ -188,7 +188,7 @@ Dokumenty można tutaj scalać, na przykład jeśli brakowało strony faktury �
 
 ### **Widok OCR:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_ocr_view_button.png" alt="Przycisk widoku OCR" width="77"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen17.png" alt="Przycisk widoku OCR" width="77"><figcaption></figcaption></figure>
 
 W widoku OCR tekst jest automatycznie odfiltrowywany z dokumentu. Służy to do rozpoznawania istotnych cech, takich jak kod pocztowy, numer umowy, numer faktury oraz sortowanie dokumentu.
 
@@ -196,11 +196,11 @@ W widoku OCR tekst jest automatycznie odfiltrowywany z dokumentu. Służy to do 
   * **Cel:** Automatycznie rozpoznaje tekst w dokumentach za pomocą technologii optycznego rozpoznawania znaków (OCR).
   * **Przypadek użycia:** Usprawnia digitalizację tekstów drukowanych lub pisanych odręcznie, czyniąc je przeszukiwalnymi i edytowalnymi.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_ocr_view_example.png" alt="Przykład widoku OCR"><figcaption><p>OCR</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen18.png" alt="Przykład widoku OCR"><figcaption><p>OCR</p></figcaption></figure>
 
 ### **Utwórz zgłoszenie:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_button.png" alt="Przycisk Create Ticket" width="97"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen19.png" alt="Przycisk Create Ticket" width="97"><figcaption></figcaption></figure>
 
 W odróżnieniu od zadań przekazywanych wewnętrznie w firmie, to zgłoszenie do wsparcia służy do powiadomienia nas i natychmiastowego utworzenia zgłoszenia w razie błędów i/lub rozbieżności. To znacznie ułatwia proces, ponieważ możesz od razu wysłać błąd wraz z odpowiednim dokumentem. Możesz także ustawić priorytet, zrobić zrzut ekranu dokumentu lub przesłać własny.
 
@@ -208,11 +208,11 @@ W odróżnieniu od zadań przekazywanych wewnętrznie w firmie, to zgłoszenie d
   * **Cel:** Umożliwia użytkownikom zgłaszanie problemów lub rozbieżności przez utworzenie zgłoszenia do wsparcia.
   * **Przypadek użycia:** Niezbędne do szybkiego rozwiązywania problemów i błędów, pomagając utrzymać integralność i sprawne działanie systemu.
 
-<figure><img src="../../../.gitbook/assets/validation_screen_create_ticket_form.png" alt="Formularz tworzenia zgłoszenia" width="237"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen20.png" alt="Formularz tworzenia zgłoszenia" width="237"><figcaption></figcaption></figure>
 
 ### **Logi skryptów dokumentu:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_script_logs_button.png" alt="Przycisk logów skryptów dokumentu" width="160"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen21.png" alt="Przycisk logów skryptów dokumentu" width="160"><figcaption></figcaption></figure>
 
 Skrypty można tworzyć w ustawieniach w sekcji Document Types; informacje te są następnie wyświetlane tutaj.
 
@@ -220,7 +220,7 @@ Skrypty można tworzyć w ustawieniach w sekcji Document Types; informacje te s�
   * **Cel:** Wyświetla logi związane ze skryptami wdrożonymi dla różnych typów dokumentów.
   * **Przypadek użycia:** Przydatne do śledzenia i debugowania działań skryptów na dokumentach, pomagając użytkownikom zrozumieć zautomatyzowane procesy i poprawić ewentualne problemy.
 
-<figure><img src="../../../.gitbook/assets/document_script_logs_view.png" alt="Widok logów skryptów dokumentu"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen22.png" alt="Widok logów skryptów dokumentu"><figcaption></figcaption></figure>
 
 ### **Więcej ustawień:**
 

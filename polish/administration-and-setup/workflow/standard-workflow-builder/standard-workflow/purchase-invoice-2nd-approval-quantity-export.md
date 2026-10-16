@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Quantity Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (65).png" alt="DocBits Zakup Zamówienie Eksport 6"><figcaption></figcaption></figure>
-
 Ten tytuł wskazuje, że reguła została skonfigurowana do zarządzania drugim etapem zatwierdzania faktur zakupowych z naciskiem na szczegóły ilości, zapewniając, że ilości na fakturze są zgodne z tymi w oryginalnym zamówieniu zakupu.
 
 #### Konfiguracja reguły:

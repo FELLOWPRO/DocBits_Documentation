@@ -1,7 +1,5 @@
 # Above Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (63).png" alt="DocBits Faktura 2"><figcaption></figcaption></figure>
-
 Ten tytuł wskazuje, że reguła została zaprojektowana do obsługi przypadków, w których suma faktury jest większa niż maksymalna kwota, do której obsługi upoważniony jest osoba zatwierdzająca.
 
 #### Konfiguracja reguły:

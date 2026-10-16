@@ -1,6 +1,6 @@
 # Single Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1 (58).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Cel:**\
 Ta karta przepływu pracy wykonuje operacje w zależności od tego, czy zadanie lub dokument jest przypisane do określonej grupy. Wykorzystuje prosty warunek, aby wyzwalać lub blokować akcje na podstawie przypisania grupy.

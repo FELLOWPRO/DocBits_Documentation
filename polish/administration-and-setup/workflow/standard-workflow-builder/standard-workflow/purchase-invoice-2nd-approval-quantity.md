@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Quantity
 
-<figure><img src="../../../../.gitbook/assets/And1 (64).png" alt="DocBits Zatwierdzenie Faktura 4"><figcaption></figcaption></figure>
-
 Ten tytuł wskazuje, że reguła dotyczy konkretnie obsługi faktur zakupowych podczas drugiego etapu zatwierdzania, z naciskiem na weryfikację dokładności wymienionych ilości.
 
 #### Konfiguracja reguły:

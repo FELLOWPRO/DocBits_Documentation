@@ -4,7 +4,7 @@
 
 ### Oto wyjaśnienie, jak korzystać z podglądu szablonu:
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_python_example_2.png" alt="Docbits Script Python Example 2"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Python Example 2"><figcaption></figcaption></figure>
 
 #### Otwieranie podglądu szablonu:
 
@@ -17,13 +17,13 @@
 * Wybierz szablon, którego układ chcesz sprawdzić.
 * Może to być istniejący szablon, w którym chcesz wprowadzić zmiany, lub nowy szablon, który chcesz utworzyć.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_template_preview_adjust.png" alt="Docbits Template Preview Adjust" width="186"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (146).png" alt="Docbits Template Preview Adjust" width="186"><figcaption></figcaption></figure>
 
 #### Dostosowywanie ustawień układu:
 
 * Zmień ustawienia układu według potrzeb. Może to obejmować dodawanie, usuwanie lub dostosowywanie grup, pól, kolumn, wierszy, czcionek itp.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_save_name.png" alt="Docbits Script Save Name" width="271"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Save Name" width="271"><figcaption></figcaption></figure>
 
 #### Podgląd w czasie rzeczywistym:
 

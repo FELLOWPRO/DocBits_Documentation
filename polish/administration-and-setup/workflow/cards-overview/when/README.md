@@ -8,8 +8,6 @@ Karty tej kategorii w przeglądarce **Add Card** Kreatora przepływów:
 
 ## Kiedy
 
-<figure><img src="../../../../.gitbook/assets/And1 (62).png" alt="DocBits Przepływ pracy 4"><figcaption></figcaption></figure>
-
 **Zrozumienie sekcji "Kiedy" w Konfiguracjach Przepływu Pracy**
 
 **Cel sekcji "Kiedy"**

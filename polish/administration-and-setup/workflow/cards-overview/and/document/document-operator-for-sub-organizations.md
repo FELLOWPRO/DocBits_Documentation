@@ -1,6 +1,6 @@
 # Document Operator for Sub-Organizations
 
-<figure><img src="../../../../../.gitbook/assets/image (40) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (40).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Cel:
 

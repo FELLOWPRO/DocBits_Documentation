@@ -250,7 +250,7 @@ Aby utworzyć nowy eksport:
 * **Document Type** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
 * **ION Mapping File** Wybierz plik mapowania z menedżera plików.
 * **IDM Mapping File** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **LN Mapping File** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przykład Mapowania LN](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/README.md)
+* **LN Mapping File** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przykład Mapowania LN](../../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
 </details>
 
@@ -271,7 +271,7 @@ Aby utworzyć nowy eksport:
 * **Document Type** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
 * **ION Mapping File** Wybierz plik mapowania z menedżera plików.
 * **IDM Mapping File** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 Mapping File** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przykład Mapowania M3](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
+* **M3 Mapping File** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przykład Mapowania M3](../../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
 </details>
 
@@ -292,6 +292,6 @@ Aby utworzyć nowy eksport:
 * **Document Type** Lista rozwijana zawierająca wszystkie dostępne typy dokumentów. Określa, do jakiego typu dokumentu odnosi się ta konfiguracja eksportu.
 * **ION Mapping File** Wybierz plik mapowania z menedżera plików.
 * **IDM Mapping File** Wybierz plik mapowania z menedżera plików. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Mapowania IDM](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 toml Mapping File** Wybierz plik mapowania z menedżera plików lub użyj opcji wybierz Toml, aby użyć pliku toml utworzonego za pomocą menedżera reguł. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Menedżera Reguł](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/settings/document-processing/rule-manager/README.md)
+* **M3 toml Mapping File** Wybierz plik mapowania z menedżera plików lub użyj opcji wybierz Toml, aby użyć pliku toml utworzonego za pomocą menedżera reguł. [Potrzebujesz pomocy przy tworzeniu? Zobacz Przewodnik Menedżera Reguł](../rule-manager/)
 
 </details>

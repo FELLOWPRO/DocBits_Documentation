@@ -57,11 +57,11 @@ Projektant drzewa decyzyjnego umożliwia konfigurowanie reguł, które określaj
 
 To drzewo decyzyjne ocenia pole **Total Amount** i przypisuje je do różnych grup na podstawie zdefiniowanych wcześniej warunków. Każda reguła porównuje kwotę całkowitą z określoną wartością, a w zależności od tego, który warunek jest spełniony, zwracana jest odpowiednia **Group**.
 
-<figure><img src="../../../../.gitbook/assets/And1 (58).png" alt="Przykład drzewa decyzyjnego – Total Amount"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Przykład drzewa decyzyjnego – Total Amount"><figcaption></figcaption></figure>
 
 To drzewo decyzyjne ocenia dwa kluczowe warunki, aby ustalić, którą grupę należy przypisać: **Total Amount** oraz **Warehouse Status**. Drzewo wykorzystuje progi oparte na kwocie całkowitej, aby określić, która grupa jest zwracana, z dodatkowym rozróżnieniem, czy magazyn jest oznaczony jako „Warehouse Main", „Warehouse Sub", czy „Not Warehouse Main".
 
-<figure><img src="../../../../.gitbook/assets/And1 (58).png" alt="Przykład drzewa decyzyjnego – Warehouse Status"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Przykład drzewa decyzyjnego – Warehouse Status"><figcaption></figcaption></figure>
 
 Każda reguła jest oceniana sekwencyjnie.
 
@@ -88,23 +88,23 @@ Polityka drzewa decyzyjnego określa sposób przetwarzania wielu reguł w obręb
 
     * W Projektancie drzewa decyzyjnego znajdź przycisk **Test**.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (58).png" alt="Przycisk Test drzewa decyzyjnego" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Przycisk Test drzewa decyzyjnego" width="563"><figcaption></figcaption></figure>
 2.  **Otwórz okno testowe:**
 
     * Kliknij przycisk **Test**.
     * Pojawi się okno podręczne z polami wejściowymi odpowiadającymi kryteriom używanym w drzewie decyzyjnym.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (58).png" alt="Okno testowe drzewa decyzyjnego" width="421"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Okno testowe drzewa decyzyjnego" width="421"><figcaption></figcaption></figure>
 3. **Podaj wartości wejściowe:**
    *   Wprowadź wartości w polach wejściowych, aby zasymulować rzeczywisty scenariusz.
 
-       <figure><img src="../../../../.gitbook/assets/And1 (58).png" alt="Dane wejściowe testu drzewa decyzyjnego" width="428"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/And1.png" alt="Dane wejściowe testu drzewa decyzyjnego" width="428"><figcaption></figcaption></figure>
 4.  **Oceń wyniki:**
 
     * Po wprowadzeniu danych wejściowych drzewo przetwarza je na podstawie wybranej polityki.
     * System wyróżnia regułę (lub reguły), które pasują do podanych danych wejściowych.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (58).png" alt="Wynik testu drzewa decyzyjnego" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Wynik testu drzewa decyzyjnego" width="563"><figcaption></figcaption></figure>
 5. **Przejrzyj informacje zwrotne w przypadku braku dopasowania:**
    * Jeśli żadna reguła nie zostanie wyróżniona, system wyświetli informację zwrotną wyjaśniającą, dlaczego żadna reguła nie została dopasowana.
    * Skorzystaj z tej informacji zwrotnej, aby dostosować dane wejściowe lub przejrzeć konfigurację drzewa pod kątem potencjalnych problemów.

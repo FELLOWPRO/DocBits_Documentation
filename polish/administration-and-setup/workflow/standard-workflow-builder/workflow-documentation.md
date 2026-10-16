@@ -22,6 +22,8 @@ And: **Document type is:** Invoice
 
 Then: **Assign document to:** Stefan Reppermund
 
+![](../../../.gitbook/assets/3.png)
+
 **Test 2: Logic Card**
 
 When: **Assignee is:** Amier Haider
@@ -30,6 +32,8 @@ And: **Document type is:** Delivery Note
 
 Then: **Assign document to:** James Edwards
 
+![](../../../.gitbook/assets/4.png)
+
 **Test 3: Logic Card**
 
 **When:** **Assignee is:** Amier Haider
@@ -37,6 +41,8 @@ Then: **Assign document to:** James Edwards
 **And:** **Document type is:** Order Confirmation
 
 **Then:** **Assign document to:** Anian Sollinger
+
+![](../../../.gitbook/assets/5.png)
 
 Możliwe jest również, jeśli dokument nie jest przypisany do pojedynczej osoby, przypisanie go do konkretnego pracownika od samego początku.
 
@@ -54,6 +60,8 @@ Aby ułatwić przegląd tego, co powinno stać się z dokumentem, możesz ustawi
 
 <figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Workflow Test 4 Delivery Note Status"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/8.png)
+
 **Test 5: Logic Card**
 
 When: **Document type is:** Invoice
@@ -64,7 +72,11 @@ Then: **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Workflow Test 5 Invoice Approval Status"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/10.png)
+
 Jeśli faktura lub inny dokument przekracza określoną kwotę całkowitą, która wymaga wcześniejszego przeglądu i zatwierdzenia, dokumenty te mogą zostać natychmiast przypisane do właściwej osoby.
+
+![](../../../.gitbook/assets/11.png)
 
 **Test 6: Logic Card**
 
@@ -75,6 +87,8 @@ And: Docfield **total\_amount** is **Greater than 500**
 Then: **Assign document to:** Asad Usman Khan
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Workflow Test 6 Total Amount Assign"><figcaption></figcaption></figure>
+
+![](../../../.gitbook/assets/13.png)
 
 Możliwe jest również wprowadzenie statusu do przepływu pracy, dzięki czemu przypisana osoba może natychmiast zobaczyć, jaki status ma ten dokument i co powinno z nim dalej nastąpić.
 
@@ -90,7 +104,7 @@ Możliwe jest również wprowadzenie statusu do przepływu pracy, dzięki czemu 
 
 <figure><img src="../../../.gitbook/assets/workflow_test7_status_update.png" alt="Workflow Test 7 Status Update"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15.png" alt=""><figcaption></figcaption></figure>
 
 Na przykład, jeśli w dokumencie brakuje pewnych lub ważnych informacji, które są jednak istotne i muszą zostać uwzględnione do dalszego przetwarzania, możesz skonfigurować przepływ pracy tak, aby dokumenty te były natychmiast przekazywane do kupującego oraz osoby zastępującej (zastępcy).
 
@@ -127,7 +141,7 @@ Ta karta logiki jest niezbędna do zapewnienia, że szczegóły potwierdzenia za
 
 Jeśli masz inne obliczenie dla dopłat lub masz je tylko na niektórych pozycjach, możesz użyć generycznych kart obliczeń tabeli, z których niektóre umożliwiają również filtrowanie według wyrażeń regularnych.
 
-<figure><img src="../../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
 
 Powyżej znajduje się przykład obliczenia dla MTZ z filtrem dla numerów pozycji zaczynających się od 01, 06, 9, 001 lub 000.
 
@@ -135,7 +149,7 @@ W przypadku konfiguracji ręcznej zaleca się podzielenie obliczeń, które zale
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
 
 Za pomocą tej karty możesz określić nazwę przepływu pracy, który ma zostać uruchomiony po bieżącym przepływie pracy, jeśli jego warunki są spełnione, oraz po poprzednich kartach then bieżącego przepływu pracy. Chociaż priorytetowo traktuje uruchamialne, aktywne przepływy pracy, umożliwia również uruchamianie dezaktywowanych przepływów pracy, jeśli dokument spełnia warunki przepływów pracy.
 

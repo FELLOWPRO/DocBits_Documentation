@@ -1,6 +1,6 @@
 # Promised delivery date for line items in table with promised delivery date
 
-<figure><img src="../../../../../../.gitbook/assets/And1 (58).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/And1.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Cel:
 

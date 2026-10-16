@@ -16,7 +16,7 @@ Te karty trafiają do grupy **Then** w Kreatorze przepływów — akcje uruchami
 
 **Ważne:** Wersje v3 dodały obsługę drzewa decyzyjnego, ale są teraz wycofane **Zalecenie:** Użyj v2 zarówno dla DOC\_USER\_ASSIGN, jak i DOC\_GROUP\_ASSIGN
 
-📖 [Pełna historia wersji](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/administration-and-setup/changelog/release.md#-assignment--routing-cards) | [Baza danych wersji kart](https://github.com/Fellow-Consulting-AG/docbits/tree/pl/readme/DocFlow/docs/card_version.md)
+📖 [Pełna historia wersji](../../changelog/release.md#-assignment--routing-cards) | [Baza danych wersji kart](../../../DocFlow/docs/card_version.md)
 
 ***
 

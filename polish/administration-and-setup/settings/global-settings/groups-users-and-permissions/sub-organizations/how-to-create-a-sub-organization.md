@@ -1,12 +1,8 @@
-# Jak utworzyć suborganizację
+# Jak utworzyć Podorganizację
 
 ## Utwórz nową suborganizację:
 
-<div data-full-width="false">
-
-<figure><img src="../../../../../.gitbook/assets/sub_organizations_list_overview_2.png" alt="Przegląd listy suborganizacji"><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Przegląd listy suborganizacji"><figcaption></figcaption></figure></div>
 
 Kliknij przycisk `+ NOWY`.
 

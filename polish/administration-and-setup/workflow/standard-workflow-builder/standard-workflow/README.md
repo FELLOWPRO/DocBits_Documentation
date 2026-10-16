@@ -1,7 +1,5 @@
 # Workflow Examples
 
-<figure><img src="../../../../.gitbook/assets/docbits_workflow_purchase_order_4.svg" alt="DocBits Przepływ pracy Zakup Zamówienie 4"><figcaption></figcaption></figure>
-
 #### Przegląd komponentów przepływu pracy:
 
 * **AP Invoice Email**: Proces prawdopodobnie rozpoczyna się od faktury otrzymanej za pośrednictwem wiadomości e-mail.

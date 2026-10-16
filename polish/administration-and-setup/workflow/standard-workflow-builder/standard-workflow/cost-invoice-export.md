@@ -1,7 +1,5 @@
 # Cost Invoice - Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (67).png" alt="DocBits Zakup Zamówienie Eksport 4"><figcaption></figcaption></figure>
-
 Ten tytuł wskazuje, że reguła została specjalnie skonfigurowana do zarządzania fakturami kosztowymi i obejmuje akcję eksportu, prawdopodobnie na potrzeby raportowania, dalszego przetwarzania lub integracji z innymi systemami.
 
 #### Konfiguracja reguły:

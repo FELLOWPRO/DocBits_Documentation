@@ -12,7 +12,7 @@ Okno tolerancji definiuje zakres akceptowalnych dat wokół przyrzeczonej daty d
 * Tolerance Days: **3**
 * Okno tolerancji: **6 stycznia → 12 stycznia**
 
-> <mark style="color:red;">Tylko wybrane</mark> <mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;">(dni tygodnia) są liczone przy obliczaniu tego okna.</mark>
+> <mark style="color:red;">Tylko wybrane</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">(dni tygodnia) są liczone przy obliczaniu tego okna.</mark>
 
 ### Przykład wizualnej osi czasu
 

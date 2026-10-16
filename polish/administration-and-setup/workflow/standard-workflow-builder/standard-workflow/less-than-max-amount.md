@@ -1,7 +1,5 @@
 # Less than Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (66).png" alt="DocBits Faktura"><figcaption></figcaption></figure>
-
 Ten tytuł sugeruje, że konfigurowana reguła lub warunek został zaprojektowany do obsługi faktur, w których łączna kwota jest mniejsza lub równa określonej maksymalnej kwocie.
 
 #### Konfiguracja reguły:

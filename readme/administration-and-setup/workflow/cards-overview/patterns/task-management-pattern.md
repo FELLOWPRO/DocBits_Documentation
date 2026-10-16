@@ -281,20 +281,20 @@ Status Check: IS COMPLETED
 **逻辑：**
 
 ```
-IF TASK_STATUS = COMPLETED AND TASK_RESULT = APPROVED:
-  → Continue to next step (or next approval level)
-  → Update document status
-  → Log approval
+IF TASK_STATUS = COMPLETED AND TASK_RESULT = APPROVED：
+  → 继续执行下一步（或下一个审批级别）
+  → 更新文档状态
+  → 记录审批
 
-IF TASK_STATUS = COMPLETED AND TASK_RESULT = REJECTED:
-  → Stop workflow
-  → Send rejection notification
-  → Create review task for corrections
+IF TASK_STATUS = COMPLETED AND TASK_RESULT = REJECTED：
+  → 停止工作流
+  → 发送拒绝通知
+  → 创建更正审核任务
 
-IF TASK_STATUS = OVERDUE:
-  → Escalate to manager
-  → Send reminder email
-  → Create escalation task
+IF TASK_STATUS = OVERDUE：
+  → 升级给经理处理
+  → 发送提醒邮件
+  → 创建升级任务
 ```
 
 ***
@@ -316,12 +316,12 @@ IF TASK_STATUS = OVERDUE:
 **场景 B：任务已拒绝**
 
 ```
-1. Set field "Approval_Status" = "REJECTED"
-2. Set field "Rejected_By" = {{TASK_COMPLETED_BY}}
-3. Set field "Rejection_Reason" = {{TASK_REJECTION_REASON}}
+1. 将字段 "Approval_Status" 设置为 "REJECTED"
+2. 将字段 "Rejected_By" 设置为 {{TASK_COMPLETED_BY}}
+3. 将字段 "Rejection_Reason" 设置为 {{TASK_REJECTION_REASON}}
 4. ACTION_REJECT_DOCUMENT
-5. Send rejection notification to supplier
-6. Create "Correction Needed" task
+5. 向供应商发送拒绝通知
+6. 创建 "Correction Needed"（需要更正）任务
 ```
 
 **场景 C：任务已逾期**
@@ -339,104 +339,104 @@ IF TASK_STATUS = OVERDUE:
 ## 完整工作流图
 
 ```
-INVOICE ARRIVES
+发票到达
 │
-├─ CHECK AMOUNT
+├─ 检查金额
 │  │
-│  ├─ Amount < €1,000 ✅
+│  ├─ 金额 < €1,000 ✅
 │  │  │
-│  │  ├─ Set Approval_Type = "AUTO"
-│  │  └─ Auto-Approve Document
-│  │     → END (Approved)
+│  │  ├─ 将 Approval_Type 设置为 "AUTO"
+│  │  └─ 自动批准文档
+│  │     → 结束（已批准）
 │  │
-│  ├─ Amount €1,000-€10,000 ⚠️
+│  ├─ 金额 €1,000-€10,000 ⚠️
 │  │  │
-│  │  ├─ CREATE TASK: Manager Approval
-│  │  │  - Title: "Approve Invoice"
-│  │  │  - Priority: Medium
-│  │  │  - Deadline: 3 days
+│  │  ├─ 创建任务：经理审批
+│  │  │  - 标题："Approve Invoice"
+│  │  │  - 优先级：Medium
+│  │  │  - 截止时间：3 天
 │  │  │  │
-│  │  │  ├─ ASSIGN TO: Finance Manager
+│  │  │  ├─ 分配给：财务经理
 │  │  │  │
-│  │  │  ├─ SEND EMAIL: Notification
+│  │  │  ├─ 发送邮件：通知
 │  │  │  │
-│  │  │  ├─ WAIT FOR TASK COMPLETION
+│  │  │  ├─ 等待任务完成
 │  │  │  │  │
-│  │  │  │  ├─ TASK APPROVED ✅
+│  │  │  │  ├─ 任务已批准 ✅
 │  │  │  │  │  │
-│  │  │  │  │  ├─ Set Approval_Status = "APPROVED"
-│  │  │  │  │  └─ Approve Document
-│  │  │  │  │     → END (Approved)
+│  │  │  │  │  ├─ 将 Approval_Status 设置为 "APPROVED"
+│  │  │  │  │  └─ 批准文档
+│  │  │  │  │     → 结束（已批准）
 │  │  │  │  │
-│  │  │  │  ├─ TASK REJECTED ❌
+│  │  │  │  ├─ 任务已拒绝 ❌
 │  │  │  │  │  │
-│  │  │  │  │  ├─ Set Approval_Status = "REJECTED"
-│  │  │  │  │  ├─ Reject Document
-│  │  │  │  │  └─ Create Correction Task
-│  │  │  │  │     → END (Rejected)
+│  │  │  │  │  ├─ 将 Approval_Status 设置为 "REJECTED"
+│  │  │  │  │  ├─ 拒绝文档
+│  │  │  │  │  └─ 创建更正任务
+│  │  │  │  │     → 结束（已拒绝）
 │  │  │  │  │
-│  │  │  │  └─ TASK OVERDUE ⏰
+│  │  │  │  └─ 任务已逾期 ⏰
 │  │  │  │     │
-│  │  │  │     ├─ Send Reminder Email
-│  │  │  │     ├─ Escalate to Director
-│  │  │  │     └─ Create Escalation Task
-│  │  │  │        → WAIT (Escalated)
+│  │  │  │     ├─ 发送提醒邮件
+│  │  │  │     ├─ 升级给总监处理
+│  │  │  │     └─ 创建升级任务
+│  │  │  │        → 等待（已升级）
 │  │  │  │
-│  │  │  └─ [Task tracking active]
+│  │  │  └─ [任务跟踪已启用]
 │  │  │
-│  │  └─ [Manager approval path]
+│  │  └─ [经理审批路径]
 │  │
-│  └─ Amount > €10,000 🚨
+│  └─ 金额 > €10,000 🚨
 │     │
-│     ├─ CREATE TASK 1: Manager First Approval
-│     │  - Title: "URGENT: First Approval"
-│     │  - Priority: High
-│     │  - Deadline: 2 days
+│     ├─ 创建任务 1：经理首次审批
+│     │  - 标题："URGENT: First Approval"
+│     │  - 优先级：High
+│     │  - 截止时间：2 天
 │     │  │
-│     │  ├─ ASSIGN TO: Finance Manager
-│     │  ├─ SEND EMAIL: High Priority Notification
+│     │  ├─ 分配给：财务经理
+│     │  ├─ 发送邮件：高优先级通知
 │     │  │
-│     │  ├─ WAIT FOR TASK 1 COMPLETION
+│     │  ├─ 等待任务 1 完成
 │     │  │  │
-│     │  │  ├─ TASK 1 APPROVED ✅
+│     │  │  ├─ 任务 1 已批准 ✅
 │     │  │  │  │
-│     │  │  │  ├─ CREATE TASK 2: Director Final Approval
-│     │  │  │  │  - Title: "Final Approval Required"
-│     │  │  │  │  - Priority: High
-│     │  │  │  │  - Deadline: 1 day
+│     │  │  │  ├─ 创建任务 2：总监最终审批
+│     │  │  │  │  - 标题："Final Approval Required"
+│     │  │  │  │  - 优先级：High
+│     │  │  │  │  - 截止时间：1 天
 │     │  │  │  │  │
-│     │  │  │  │  ├─ ASSIGN TO: Finance Director
-│     │  │  │  │  ├─ SEND EMAIL: Final Approval Notification
+│     │  │  │  │  ├─ 分配给：财务总监
+│     │  │  │  │  ├─ 发送邮件：最终审批通知
 │     │  │  │  │  │
-│     │  │  │  │  ├─ WAIT FOR TASK 2 COMPLETION
+│     │  │  │  │  ├─ 等待任务 2 完成
 │     │  │  │  │  │  │
-│     │  │  │  │  │  ├─ TASK 2 APPROVED ✅
+│     │  │  │  │  │  ├─ 任务 2 已批准 ✅
 │     │  │  │  │  │  │  │
-│     │  │  │  │  │  │  ├─ Set Dual_Approval = "COMPLETE"
-│     │  │  │  │  │  │  └─ Approve Document
-│     │  │  │  │  │  │     → END (Dual Approved)
+│     │  │  │  │  │  │  ├─ 将 Dual_Approval 设置为 "COMPLETE"
+│     │  │  │  │  │  │  └─ 批准文档
+│     │  │  │  │  │  │     → 结束（双重审批通过）
 │     │  │  │  │  │  │
-│     │  │  │  │  │  └─ TASK 2 REJECTED ❌
+│     │  │  │  │  │  └─ 任务 2 已拒绝 ❌
 │     │  │  │  │  │     │
-│     │  │  │  │  │     ├─ Reject Document
-│     │  │  │  │  │     └─ Notify All Parties
-│     │  │  │  │  │        → END (Final Rejected)
+│     │  │  │  │  │     ├─ 拒绝文档
+│     │  │  │  │  │     └─ 通知所有相关方
+│     │  │  │  │  │        → 结束（最终审批拒绝）
 │     │  │  │  │  │
-│     │  │  │  │  └─ [Task 2 tracking]
+│     │  │  │  │  └─ [任务 2 跟踪中]
 │     │  │  │  │
-│     │  │  │  └─ [Task 2 created]
+│     │  │  │  └─ [任务 2 已创建]
 │     │  │  │
-│     │  │  └─ TASK 1 REJECTED ❌
+│     │  │  └─ 任务 1 已拒绝 ❌
 │     │  │     │
-│     │  │     ├─ Reject Document (No Task 2 created)
-│     │  │     └─ Notify Supplier
-│     │  │        → END (First Rejected)
+│     │  │     ├─ 拒绝文档（不创建任务 2）
+│     │  │     └─ 通知供应商
+│     │  │        → 结束（首次审批拒绝）
 │     │  │
-│     │  └─ [Task 1 tracking]
+│     │  └─ [任务 1 跟踪中]
 │     │
-│     └─ [Dual approval path]
+│     └─ [双重审批路径]
 │
-└─ [Amount check complete]
+└─ [金额检查完成]
 ```
 
 ***
@@ -511,16 +511,16 @@ Level 1: Accounts Clerk (verify data)
 **实施：**
 
 ```
-1. Create Task 1 for Clerk
-2. Wait for Task 1 completion
-3. IF Task 1 = APPROVED:
-     Create Task 2 for Manager
-4. Wait for Task 2 completion
-5. IF Task 2 = APPROVED:
-     Create Task 3 for Director
-6. Wait for Task 3 completion
-7. IF Task 3 = APPROVED:
-     Approve Document
+1. 为文员创建任务 1
+2. 等待任务 1 完成
+3. IF 任务 1 = APPROVED：
+     为经理创建任务 2
+4. 等待任务 2 完成
+5. IF 任务 2 = APPROVED：
+     为总监创建任务 3
+6. 等待任务 3 完成
+7. IF 任务 3 = APPROVED：
+     批准文档
 ```
 
 ***
@@ -557,14 +557,14 @@ Document approved only when ALL approve
 **用途：**根据条件创建不同任务
 
 ```
-IF Supplier = "New":
-  → Create "New Supplier Review" task
-ELSE IF Amount > €50,000:
-  → Create "High Value Approval" task
-ELSE IF Document has errors:
-  → Create "Error Correction" task
-ELSE:
-  → Create "Standard Approval" task
+IF 供应商 = "New"（新供应商）：
+  → 创建 "New Supplier Review"（新供应商审核）任务
+ELSE IF 金额 > €50,000：
+  → 创建 "High Value Approval"（高金额审批）任务
+ELSE IF 文档有错误：
+  → 创建 "Error Correction"（错误更正）任务
+ELSE：
+  → 创建 "Standard Approval"（标准审批）任务
 ```
 
 ***
@@ -574,15 +574,15 @@ ELSE:
 **用途：**任务未能按时完成时自动升级
 
 ```
-Day 0: Create task for User A (3-day deadline)
-Day 3: IF not completed:
-         → Send reminder to User A
-Day 4: IF still not completed:
-         → Create escalation task for Manager B
-         → Notify both User A and Manager B
-Day 5: IF still not completed:
-         → Create urgent task for Director C
-         → High priority notification
+第 0 天：为用户 A 创建任务（截止时间为 3 天）
+第 3 天：IF 尚未完成：
+         → 向用户 A 发送提醒
+第 4 天：IF 仍未完成：
+         → 为经理 B 创建升级任务
+         → 通知用户 A 和经理 B
+第 5 天：IF 仍未完成：
+         → 为总监 C 创建紧急任务
+         → 发送高优先级通知
 ```
 
 ***
@@ -668,15 +668,15 @@ Day 5: IF still not completed:
 **场景：**发票与采购订单不匹配，需要审核
 
 ```
-1. PO Matching fails (price variance > 5%)
-2. Create Task: "Review PO Mismatch"
-   - Assign to: Procurement Officer
-   - Priority: High
-   - Description: Include variance details
-3. Send email with comparison table
-4. Wait for task completion
-5. IF Approved: Continue processing
-   IF Rejected: Return to supplier
+1. 采购订单匹配失败（价格差异 > 5%）
+2. 创建任务："Review PO Mismatch"
+   - 分配给：采购专员
+   - 优先级：High
+   - 描述：包含差异详情
+3. 发送包含比较表格的邮件
+4. 等待任务完成
+5. IF 已批准：继续处理
+   IF 已拒绝：退回给供应商
 ```
 
 ***
@@ -686,15 +686,15 @@ Day 5: IF still not completed:
 **场景：**新供应商的发票需要特别审批
 
 ```
-1. Check if supplier is new (< 6 months old)
-2. IF New:
-     Create Task: "New Supplier Invoice Review"
-     - Assign to: Procurement Manager
-     - Include supplier details
-     - Require supplier verification
-3. After approval:
-     Add to approved supplier list
-     Continue normal workflow
+1. 检查供应商是否为新供应商（成立时间 < 6 个月）
+2. IF 是新供应商：
+     创建任务："New Supplier Invoice Review"
+     - 分配给：采购经理
+     - 包含供应商详情
+     - 要求验证供应商
+3. 批准后：
+     将供应商添加到已批准供应商列表
+     继续正常工作流
 ```
 
 ***
@@ -704,15 +704,15 @@ Day 5: IF still not completed:
 **场景：**月末发票需要紧急处理
 
 ```
-1. Check if document date in last 3 days of month
-2. IF Yes:
-     Create Task: "URGENT: Month-End Invoice"
-     - Priority: Urgent
-     - Deadline: 1 day
-     - Assign to: Finance Team (all members)
-     - Flag for expedited processing
-3. Send urgent email notification
-4. Track completion
+1. 检查文档日期是否处于月末最后 3 天
+2. IF 是：
+     创建任务："URGENT: Month-End Invoice"
+     - 优先级：Urgent
+     - 截止时间：1 天
+     - 分配给：财务团队（所有成员）
+     - 标记为加急处理
+3. 发送紧急邮件通知
+4. 跟踪完成情况
 ```
 
 ***

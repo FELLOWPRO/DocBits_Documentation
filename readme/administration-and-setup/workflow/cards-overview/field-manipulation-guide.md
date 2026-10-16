@@ -432,27 +432,27 @@ Config:
 **发票行项目计算：**
 
 ```
-Table: Invoice_Lines
+表：Invoice_Lines
 
-Row 1:
-  Quantity: 100
-  Unit Price: €25.00
-  Calculate: 100 × €25.00 = €2500.00 (Line Total)
+行 1：
+  数量：100
+  单价：€25.00
+  计算：100 × €25.00 = €2500.00（行项目总额）
 
-Row 2:
-  Quantity: 50
-  Unit Price: €40.00
-  Calculate: 50 × €40.00 = €2000.00 (Line Total)
+行 2：
+  数量：50
+  单价：€40.00
+  计算：50 × €40.00 = €2000.00（行项目总额）
 
-Row 3:
-  Quantity: 200
-  Unit Price: €10.00
-  Calculate: 200 × €10.00 = €2000.00 (Line Total)
+行 3：
+  数量：200
+  单价：€10.00
+  计算：200 × €10.00 = €2000.00（行项目总额）
 
-Subtotal: €6500.00 (sum of line totals)
-Tax (19%): €1235.00
-Shipping: €100.00
-TOTAL: €7835.00
+小计：€6500.00（行项目总额之和）
+税费（19%）：€1235.00
+运费：€100.00
+总计：€7835.00
 ```
 
 #### 参数
@@ -496,16 +496,16 @@ Result: "12345"
 **场景：商品编号中包含供应商信息**
 
 ```
-Table Column: "Article_Code"
-Values: ["SUPP001-2025-A", "SUPP002-2025-B"]
+表字段：“Article_Code”
+值：["SUPP001-2025-A", "SUPP002-2025-B"]
 
-Pattern: Extract supplier code (first 7 characters)
+模式：提取供应商代码（前 7 个字符）
     ↓
-Calculate: SUPP001, SUPP002
+计算：SUPP001、SUPP002
     ↓
-Store in: "Supplier_Code" column
+存入：“Supplier_Code”字段
 
-Result:
+结果：
 Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001
 Article_Code: SUPP002-2025-B  →  Supplier_Code: SUPP002
 ```
@@ -596,23 +596,23 @@ Final Price: €100 - €10 = €90
 ## 字段操作工作流示例
 
 ```
-Document arrives
+文档到达
     ↓
-Check condition: "Amount > €5000?"
+检查条件：“Amount > €5000?”
     ↓
-YES → Set field "Category" = "High Value"
+是 → 将字段“Category”设为“High Value”（高价值）
     ↓
-Check condition: "Supplier is preferred?"
+检查条件：“Supplier is preferred?”（供应商是否为首选？）
     ↓
-YES → Check "FastTrack" checkbox
+是 → 勾选“FastTrack”复选框
     ↓
-Copy "Delivery_Address" to "Invoice_Address"
+将“Delivery_Address”复制到“Invoice_Address”
     ↓
-In table: Calculate line totals (Qty × Price)
+在表中：计算行项目总额（Qty × Price）
     ↓
-In table: Calculate total with tax
+在表中：计算含税总额
     ↓
-Document now has all calculated and populated fields
+文档现在已填充所有计算所得字段和其他字段
 ```
 
 ***

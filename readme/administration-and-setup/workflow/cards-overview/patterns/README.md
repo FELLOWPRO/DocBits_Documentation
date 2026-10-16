@@ -230,11 +230,11 @@
 ### 示例 1：完整发票处理
 
 ```
-1. API Integration Pattern → Fetch current pricing
-2. Data Transformation Pattern → Calculate totals
-3. PO Matching Pattern → Validate against PO
-4. Decision Logic Pattern → Route based on variance
-5. Task Management Pattern → Create approval tasks
+1. API 集成模式 → 获取当前定价
+2. 数据转换模式 → 计算总额
+3. 采购订单匹配模式 → 根据采购订单进行验证
+4. 决策逻辑模式 → 根据差异进行路由
+5. 任务管理模式 → 创建审批任务
 ```
 
 ### 示例 2：高金额发票审批

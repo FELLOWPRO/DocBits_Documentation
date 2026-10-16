@@ -84,16 +84,16 @@ Example: John Smith (Finance Manager)
 #### 示例
 
 ```
-Condition: "Invoice amount > €10,000"
+Condition（条件）: "Invoice amount > €10,000"
     ↓
-Create Task:
-- Title: "High-Value Invoice Review Required"
-- Description: "Invoice #INV-2025-789 for €15,000 needs approval"
-- Priority: High
-- Assigned to: Sarah Johnson (Finance Approver)
-- Send Email: Yes
+Create Task（创建任务）:
+- Title（标题）: "High-Value Invoice Review Required"
+- Description（描述）: "Invoice #INV-2025-789 for €15,000 needs approval"
+- Priority（优先级）: High
+- Assigned to（分配给）: Sarah Johnson (Finance Approver)
+- Send Email（发送电子邮件）: Yes
     ↓
-Sarah receives task and email notification
+Sarah 收到任务和电子邮件通知
 ```
 
 ***
@@ -127,19 +127,19 @@ Group Task:
 #### 工作流示例
 
 ```
-Document arrives
+文档到达
     ↓
-Condition: "Is supplier new?"
+Condition（条件）: "Is supplier new?"
     ↓
-Create Task for Procurement Team:
-- Title: "Verify New Supplier Details"
-- Description: "Please validate supplier information"
-- Priority: Medium
-- Group: Procurement Team (10 members)
-- Notify: Yes
+为采购团队创建任务:
+- Title（标题）: "Verify New Supplier Details"
+- Description（描述）: "Please validate supplier information"
+- Priority（优先级）: Medium
+- Group（组）: Procurement Team (10 members)
+- Notify（通知）: Yes
     ↓
-All 10 procurement team members see task
-First person available takes it
+采购团队的全部 10 名成员都能看到该任务
+由第一位有空的成员接手
 ```
 
 ***
@@ -153,13 +153,13 @@ First person available takes it
 #### 工作方式
 
 ```
-Decision Table Returns:
-  If invoice from Supplier A → Assign to Procurement
-  If invoice from Supplier B → Assign to Quality Team
-  If invoice from Supplier C → Assign to Finance
+Decision Table Returns（决策表返回）:
+  如果发票来自 Supplier A → 分配给采购部门
+  如果发票来自 Supplier B → 分配给质量团队
+  如果发票来自 Supplier C → 分配给财务部门
 
-Task is automatically created and assigned
-based on which condition is true
+系统会根据满足的条件
+自动创建并分配任务
 ```
 
 #### 适用场景
@@ -223,16 +223,16 @@ They must complete in order (1→2→3)
 #### 配置示例
 
 ```
-Decision Table Returns:
+Decision Table Returns（决策表返回）:
   Level 1: Sarah Johnson (Finance)
   Level 2: Mike Smith (Manager)
   Level 3: Director (for approval)
 
-Task Flow:
-1. Sarah reviews → Comments
-2. Passes to Mike → He reviews
-3. Passes to Director → Final approval
-4. All complete → Export
+Task Flow（任务流程）:
+1. Sarah 审核 → 添加评论
+2. 转交给 Mike → 他进行审核
+3. 转交给 Director → 最终审批
+4. 全部完成 → 导出
 ```
 
 ***
@@ -262,14 +262,14 @@ Both in one action
 #### 示例
 
 ```
-High-value invoice arrives
+高金额发票到达
     ↓
 ACTION_CREATE_TASK_FOR_USER_SEQUENTIAL:
-- Assign Document to: Finance Manager
-- Create Task: "Review & Approve High Value Invoice"
-- Priority: High
+- 将文档分配给: Finance Manager
+- 创建任务: "Review & Approve High Value Invoice"
+- Priority（优先级）: High
     ↓
-Document AND task both go to Finance Manager
+文档和任务都会转交给 Finance Manager
 ```
 
 ***
@@ -289,15 +289,15 @@ Document AND task both go to Finance Manager
 #### 示例
 
 ```
-New supplier evaluation
+新供应商评估
     ↓
 ACTION_CREATE_TASK_FOR_GROUP_SEQUENTIAL:
-- Document assigned to: Supplier Management Group
-- Create Task: "Evaluate New Supplier Credentials"
-- Assign Task to: Same group
-- Priority: Medium
+- 将文档分配给: Supplier Management Group
+- 创建任务: "Evaluate New Supplier Credentials"
+- 将任务分配给: 同一组
+- Priority（优先级）: Medium
     ↓
-Group members see document and task
+组内成员都能看到文档和任务
 ```
 
 ***
@@ -358,15 +358,15 @@ Shipping (Step 4): Dispatch
 #### 示例
 
 ```
-Manufacturing Document
+制造业文档
     ↓
-Create Sequential Tasks:
-- Task 1: Factory A (Manufacturing) - Priority 1
-- Task 2: Quality Team (Testing) - Priority 2
-- Task 3: Warehouse (Packing) - Priority 3
-- Task 4: Shipping (Dispatch) - Priority 4
+创建顺序任务:
+- 任务 1: Factory A（制造）- 优先级 1
+- 任务 2: Quality Team（测试）- 优先级 2
+- 任务 3: Warehouse（打包）- 优先级 3
+- 任务 4: Shipping（发运）- 优先级 4
     ↓
-Each team completes → Passes to next
+每个团队完成后 → 转交给下一个团队
 ```
 
 ***
@@ -496,20 +496,20 @@ Should include:
 #### 优先级
 
 ```
-🔴 HIGH
-   - Action needed within hours
-   - Blocks other processes
-   - Example: Supply missing, urgent approval
+🔴 HIGH（高）
+   - 需在数小时内处理
+   - 会阻塞其他流程
+   - 示例：缺少供应物资、紧急审批
 
-🟡 MEDIUM
-   - Standard processing
-   - Normal timeline
-   - Example: Regular invoice review
+🟡 MEDIUM（中）
+   - 常规处理
+   - 正常时限
+   - 示例：常规发票审核
 
-🟢 LOW
-   - Can wait days/weeks
-   - Non-urgent
-   - Example: Archive old documents
+🟢 LOW（低）
+   - 可以等待数天/数周
+   - 非紧急
+   - 示例：归档旧文档
 ```
 
 #### 截止日期（如有）
@@ -551,14 +551,14 @@ Each level completes → Next begins
 ### 场景 3：并行任务
 
 ```
-Invoice Arrives (From New Supplier)
+发票到达（来自新供应商）
     ↓
-Create Task 1: Quality Team (verify supplier)
-Create Task 2: Finance Team (check prices)
-Create Task 3: Procurement (check contract)
+创建任务 1: 质量团队（验证供应商）
+创建任务 2: 财务团队（检查价格）
+创建任务 3: 采购部门（检查合同）
     ↓
-All teams work simultaneously
-All must complete before proceeding
+所有团队同时开展工作
+继续下一步前，所有任务都必须完成
 ```
 
 ### 场景 4：条件路由

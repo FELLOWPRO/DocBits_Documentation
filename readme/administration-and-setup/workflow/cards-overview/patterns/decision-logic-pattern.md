@@ -120,14 +120,14 @@ ELSE:
 ```
 IF Document_Type = "Invoice":
   IF Amount > €10,000:
-    → High-value invoice workflow
+    → 高金额发票工作流
   ELSE:
-    → Standard invoice workflow
+    → 标准发票工作流
 ELSE IF Document_Type = "Credit Note":
   IF Amount > €5,000:
-    → High-value credit workflow
+    → 高金额贷项通知单工作流
   ELSE:
-    → Standard credit workflow
+    → 标准贷项通知单工作流
 ```
 
 ***
@@ -148,40 +148,40 @@ ELSE IF Document_Type = "Credit Note":
 **实施：**
 
 ```
-STEP 1: Check for PO Mismatch
+步骤 1：检查采购订单不匹配
   IF PO_Match_Status = "FAIL":
-    → Route to Procurement for PO resolution
-    → After resolution, continue below
+    → 转交采购部门处理采购订单问题
+    → 问题解决后，继续以下步骤
 
-STEP 2: Check Urgent Flag
+步骤 2：检查紧急标记
   IF Urgent_Flag = TRUE:
-    → Skip amount checks
-    → Direct to highest approver
-    → Set priority = HIGH
-    → 1-day deadline
+    → 跳过金额检查
+    → 直接转交级别最高的审批人
+    → 将优先级设为 HIGH
+    → 截止时间为 1 天
 
-STEP 3: Amount-Based Routing (if not urgent)
+步骤 3：按金额路由（非紧急情况）
   IF Amount < €1,000:
-    → Auto-approve
-    → Export immediately
+    → 自动审批
+    → 立即导出
 
   ELSE IF Amount < €10,000:
-    → Create task for Manager
-    → Priority: Medium
-    → Deadline: 3 days
+    → 为经理创建任务
+    → 优先级：中
+    → 截止时间：3 天
 
   ELSE IF Amount ≥ €10,000:
-    CHECK Supplier Status:
-      IF Supplier_Age < 180 days (New):
-        → Create task for Director (Task 1)
-        → After approval, create task for CFO (Task 2)
-        → Priority: High
-        → Deadline: 2 days each
+    检查供应商状态：
+      IF Supplier_Age < 180 days（新供应商）:
+        → 为总监创建任务（任务 1）
+        → 获批后，为 CFO 创建任务（任务 2）
+        → 优先级：高
+        → 每项任务的截止时间：2 天
 
-      ELSE (Existing Supplier):
-        → Create task for Director only
-        → Priority: High
-        → Deadline: 2 days
+      ELSE（现有供应商）:
+        → 仅为总监创建任务
+        → 优先级：高
+        → 截止时间：2 天
 ```
 
 ***
@@ -234,59 +234,59 @@ Value: {{TODAY_MINUS_180_DAYS}}
 **第 1 级：文档类型**
 
 ```
-Workflow: "Invoice Processing"
+工作流："Invoice Processing"
 
 IF Document_Type = "Invoice":
-  → Continue to Level 2
+  → 继续到第 2 级
 
 ELSE IF Document_Type = "Credit Note":
-  → Branch to "Credit Note Processing"
+  → 转入 "Credit Note Processing" 工作流
 
 ELSE IF Document_Type = "Receipt":
-  → Branch to "Receipt Processing"
+  → 转入 "Receipt Processing" 工作流
 
 ELSE:
-  → Route to "Unknown Document Type" handling
+  → 转交 "Unknown Document Type" 处理流程
 ```
 
 **第 2 级：金额阈值（适用于发票）**
 
 ```
 IF Amount < €1,000:
-  → Branch to "Auto-Approve Path"
+  → 转入 "Auto-Approve Path"（自动审批路径）
 
 ELSE IF Amount < €10,000:
-  → Branch to "Manager Approval Path"
+  → 转入 "Manager Approval Path"（经理审批路径）
 
 ELSE IF Amount < €50,000:
-  → Branch to "Director Approval Path"
-  → Check Level 3 conditions
+  → 转入 "Director Approval Path"（总监审批路径）
+  → 检查第 3 级条件
 
-ELSE (Amount ≥ €50,000):
-  → Branch to "Executive Approval Path"
-  → Dual or triple approval required
+ELSE（Amount ≥ €50,000）:
+  → 转入 "Executive Approval Path"（高管审批路径）
+  → 需要双重或三重审批
 ```
 
 **第 3 级：供应商分析（适用于高金额发票）**
 
 ```
 IF Supplier_Status = "BLOCKED":
-  → STOP processing
-  → Create urgent escalation task
-  → Notify procurement and finance
+  → 停止处理
+  → 创建紧急升级任务
+  → 通知采购部门和财务部门
 
-ELSE IF Supplier_Age < 180 days (New):
-  → Additional approval required
-  → Add CFO to approval chain
-  → Enhanced verification
+ELSE IF Supplier_Age < 180 days（新供应商）:
+  → 需要额外审批
+  → 将 CFO 加入审批链
+  → 加强验证
 
 ELSE IF Supplier_Risk_Rating = "HIGH":
-  → Additional checks required
-  → Fraud detection review
-  → Manager pre-approval
+  → 需要额外检查
+  → 进行欺诈检测审查
+  → 由经理预先审批
 
 ELSE:
-  → Standard high-value workflow
+  → 标准高金额工作流
 ```
 
 ***
@@ -307,58 +307,58 @@ Actions:
 **路径 B：经理审批（€1,000-€10,000）**
 
 ```
-Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "1"
-3. tasks_create:
-   - Title: "Approve Invoice {{DOCUMENT_NUMBER}}"
-   - Assign to: Department_Manager
-   - Priority: Medium
-   - Deadline: 3 days
-4. Send email notification to manager
-5. Wait for task completion
-6. If approved: Export to ERP
-7. If rejected: Return to supplier
+操作：
+1. 将字段 "Approval_Type" 设为 "MANUAL"
+2. 将字段 "Approval_Level" 设为 "1"
+3. tasks_create：
+   - 标题："Approve Invoice {{DOCUMENT_NUMBER}}"
+   - 分配给：Department_Manager
+   - 优先级：中
+   - 截止时间：3 天
+4. 向经理发送电子邮件通知
+5. 等待任务完成
+6. 如果已批准：导出到 ERP
+7. 如果已拒绝：退回供应商
 ```
 
 **路径 C：总监审批（€10,000-€50,000）**
 
 ```
-Actions:
-1. Set field "Approval_Type" = "MANUAL"
-2. Set field "Approval_Level" = "2"
-3. Check Supplier_Age:
-   IF New (< 180 days):
-     - Create Task 1: Director approval
-     - After Task 1: Create Task 2: CFO approval
-     - Dual approval required
+操作：
+1. 将字段 "Approval_Type" 设为 "MANUAL"
+2. 将字段 "Approval_Level" 设为 "2"
+3. 检查 Supplier_Age：
+   IF 新供应商（< 180 days）：
+     - 创建任务 1：由总监审批
+     - 任务 1 完成后：创建任务 2：由 CFO 审批
+     - 需要双重审批
    ELSE:
-     - Create Task: Director approval only
-4. Priority: High
-5. Deadline: 2 days
-6. Send email notifications
-7. Wait for completion
-8. If all approved: Export
-9. If any rejected: Return to supplier
+     - 创建任务：仅由总监审批
+4. 优先级：高
+5. 截止时间：2 天
+6. 发送电子邮件通知
+7. 等待完成
+8. 如果全部获批：导出
+9. 如果有任何一项被拒绝：退回供应商
 ```
 
 **路径 D：高管审批（≥ €50,000）**
 
 ```
-Actions:
-1. Set field "Approval_Type" = "EXECUTIVE"
-2. Set field "Approval_Level" = "3"
-3. Sequential approvals:
-   - Task 1: Finance Director
-   - Task 2: CFO
-   - Task 3: CEO (if > €100,000)
-4. Priority: Urgent
-5. Deadline: 1 day each
-6. Send urgent notifications
-7. Executive dashboard update
-8. Wait for all approvals
-9. If all approved: Export
-10. If any rejected: Executive review meeting
+操作：
+1. 将字段 "Approval_Type" 设为 "EXECUTIVE"
+2. 将字段 "Approval_Level" 设为 "3"
+3. 顺序审批：
+   - 任务 1：财务总监
+   - 任务 2：CFO
+   - 任务 3：CEO（如果 > €100,000）
+4. 优先级：紧急
+5. 每项任务的截止时间：1 天
+6. 发送紧急通知
+7. 更新高管仪表板
+8. 等待所有审批完成
+9. 如果全部获批：导出
+10. 如果有任何一项被拒绝：召开高管审查会议
 ```
 
 ***
@@ -370,22 +370,22 @@ Actions:
 **计算风险评分并据此路由：**
 
 ```
-Risk Score Calculation:
-  Score = 0
+风险评分计算：
+  分数 = 0
 
-  IF Amount > €50,000: Score += 30
-  IF Supplier_Age < 180 days: Score += 25
-  IF PO_Variance > 10%: Score += 20
-  IF Supplier_Country = "High Risk Country": Score += 15
-  IF Payment_Terms < 30 days: Score += 10
+  IF Amount > €50,000: 分数 += 30
+  IF Supplier_Age < 180 days: 分数 += 25
+  IF PO_Variance > 10%: 分数 += 20
+  IF Supplier_Country = "High Risk Country": 分数 += 15
+  IF Payment_Terms < 30 days: 分数 += 10
 
-  Total Score Range: 0-100
+  总分范围：0-100
 
-Routing:
-  IF Score < 20: Auto-approve
-  IF Score 20-50: Manager approval
-  IF Score 51-75: Director approval
-  IF Score > 75: Executive approval + fraud check
+路由：
+  IF Score < 20: 自动审批
+  IF Score 20-50: 经理审批
+  IF Score 51-75: 总监审批
+  IF Score > 75: 高管审批 + 欺诈检查
 ```
 
 **实施：**
@@ -404,23 +404,23 @@ Routing:
 **按部门应用不同的审批规则：**
 
 ```
-Department Matrix:
+部门审批矩阵：
 
-  IT Department:
-    Amount < €5,000: IT Manager
-    Amount ≥ €5,000: IT Director + CIO
+  IT 部门：
+    Amount < €5,000：IT 经理
+    Amount ≥ €5,000：IT 总监 + CIO
 
-  Finance Department:
-    Amount < €10,000: Finance Manager
-    Amount ≥ €10,000: CFO
+  财务部门：
+    Amount < €10,000：财务经理
+    Amount ≥ €10,000：CFO
 
-  Operations Department:
-    Amount < €3,000: Operations Manager
-    Amount ≥ €3,000: COO
+  运营部门：
+    Amount < €3,000：运营经理
+    Amount ≥ €3,000：COO
 
-  General:
-    Amount < €2,000: Department Manager
-    Amount ≥ €2,000: Department Director
+  通用规则：
+    Amount < €2,000：部门经理
+    Amount ≥ €2,000：部门总监
 ```
 
 **实施：**
@@ -439,31 +439,31 @@ Department Matrix:
 **根据时间采用不同规则：**
 
 ```
-Month-End Processing (Last 3 days of month):
-  IF Today in last 3 days of month:
-    - Priority: URGENT
-    - Deadline: 1 day
-    - Approver: On-duty finance manager
-    - Expedited workflow
+月末处理（月末最后 3 天）：
+  IF 今天处于月末最后 3 天内：
+    - 优先级：URGENT
+    - 截止时间：1 天
+    - 审批人：当值财务经理
+    - 加急工作流
   ELSE:
-    - Standard priority
-    - Standard deadline
-    - Standard workflow
+    - 标准优先级
+    - 标准截止时间
+    - 标准工作流
 
-Business Hours vs After Hours:
-  IF Time between 9 AM - 5 PM:
-    - Assign to current shift
+工作时间与非工作时间：
+  IF 时间在 9 AM - 5 PM 之间：
+    - 分配给当前班次
   ELSE:
-    - Queue for next business day
-    - OR route to on-call approver
+    - 排入下一个工作日的队列
+    - 或转交给值班审批人
 
-Fiscal Period:
-  IF Document_Date in Current_Fiscal_Period:
-    - Standard processing
+财务期间：
+  IF Document_Date 属于 Current_Fiscal_Period：
+    - 标准处理
   ELSE:
-    - Flag as "Prior Period"
-    - Require accounting approval
-    - Additional checks
+    - 标记为 "Prior Period"
+    - 需要会计审批
+    - 进行额外检查
 ```
 
 ***
@@ -473,34 +473,34 @@ Fiscal Period:
 **单独路由异常：**
 
 ```
-Exception Detection:
+异常检测：
 
-  No Exception:
-    → Standard workflow
+  无异常：
+    → 标准工作流
 
-  Minor Exception (Auto-fixable):
-    → Auto-correct
-    → Log correction
-    → Continue standard workflow
+  轻微异常（可自动修复）：
+    → 自动更正
+    → 记录更正内容
+    → 继续标准工作流
 
-  Medium Exception (Needs review):
-    → Create review task
-    → Flag document
-    → After fix: Continue workflow
+  中等异常（需要审查）：
+    → 创建审查任务
+    → 标记文档
+    → 修复后：继续工作流
 
-  Major Exception (Requires escalation):
-    → Stop processing
-    → Create urgent task
-    → Notify multiple levels
-    → Manual intervention required
+  严重异常（需要升级处理）：
+    → 停止处理
+    → 创建紧急任务
+    → 通知多个级别的相关人员
+    → 需要人工干预
 
-Exception Types:
-  - Missing required field
-  - Invalid field value
-  - PO mismatch
-  - Duplicate invoice
-  - Supplier mismatch
-  - Amount discrepancy
+异常类型：
+  - 缺少必填字段
+  - 字段值无效
+  - 采购订单不匹配
+  - 重复发票
+  - 供应商不匹配
+  - 金额差异
 ```
 
 ***
@@ -508,130 +508,130 @@ Exception Types:
 ## 完整决策逻辑图
 
 ```
-INVOICE ARRIVES
+发票到达
 │
-├─ LEVEL 1: EXCEPTION CHECK
+├─ 第 1 级：异常检查
 │  │
-│  ├─ Has Critical Exception? (Missing PO, Duplicate, etc.)
+│  ├─ 是否存在严重异常？（缺少采购订单、重复项等）
 │  │  │
-│  │  ├─ YES → Stop & Escalate
-│  │  │        Create urgent task
-│  │  │        Notify admin
-│  │  │        → END (Exception Handling)
+│  │  ├─ 是 → 停止并升级处理
+│  │  │        创建紧急任务
+│  │  │        通知管理员
+│  │  │        → 结束（异常处理）
 │  │  │
-│  │  └─ NO → Continue to Level 2
+│  │  └─ 否 → 继续到第 2 级
 │
-├─ LEVEL 2: DOCUMENT TYPE
+├─ 第 2 级：文档类型
 │  │
-│  ├─ Type = Invoice?
-│  │  └─ YES → Continue to Level 3
+│  ├─ 类型 = Invoice？
+│  │  └─ 是 → 继续到第 3 级
 │  │
-│  ├─ Type = Credit Note?
-│  │  └─ YES → Branch to Credit Note workflow
-│  │           → END (Credit Note Path)
+│  ├─ 类型 = Credit Note？
+│  │  └─ 是 → 转入贷项通知单工作流
+│  │           → 结束（贷项通知单路径）
 │  │
-│  └─ Other Type?
-│     └─ YES → Branch to appropriate workflow
-│              → END (Other Type Path)
+│  └─ 其他类型？
+│     └─ 是 → 转入相应工作流
+│              → 结束（其他类型路径）
 │
-├─ LEVEL 3: URGENCY CHECK (for Invoices)
+├─ 第 3 级：紧急程度检查（针对发票）
 │  │
-│  ├─ Urgent Flag = TRUE?
+│  ├─ Urgent Flag = TRUE？
 │  │  │
-│  │  ├─ YES → Expedited Workflow
-│  │  │        Priority: URGENT
-│  │  │        Deadline: 1 day
-│  │  │        Assign to: Senior Approver
-│  │  │        → END (Expedited Path)
+│  │  ├─ 是 → 加急工作流
+│  │  │        优先级：URGENT
+│  │  │        截止时间：1 天
+│  │  │        分配给：高级审批人
+│  │  │        → 结束（加急路径）
 │  │  │
-│  │  └─ NO → Continue to Level 4
+│  │  └─ 否 → 继续到第 4 级
 │
-├─ LEVEL 4: AMOUNT THRESHOLDS
+├─ 第 4 级：金额阈值
 │  │
-│  ├─ Amount < €1,000?
+│  ├─ Amount < €1,000？
 │  │  │
-│  │  ├─ YES → AUTO-APPROVE PATH
-│  │  │        Set Approval_Type = "AUTO"
-│  │  │        Approve immediately
-│  │  │        Export to ERP
-│  │  │        → END (Auto-Approved)
+│  │  ├─ 是 → 自动审批路径
+│  │  │        将 Approval_Type 设为 "AUTO"
+│  │  │        立即批准
+│  │  │        导出到 ERP
+│  │  │        → 结束（自动批准）
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ 否 → 继续
 │  │
-│  ├─ Amount < €10,000?
+│  ├─ Amount < €10,000？
 │  │  │
-│  │  ├─ YES → MANAGER APPROVAL PATH
-│  │  │        Create task for Manager
-│  │  │        Priority: Medium
-│  │  │        Deadline: 3 days
-│  │  │        → WAIT for approval
-│  │  │           → END (Manager Path)
+│  │  ├─ 是 → 经理审批路径
+│  │  │        为经理创建任务
+│  │  │        优先级：中
+│  │  │        截止时间：3 天
+│  │  │        → 等待审批
+│  │  │           → 结束（经理路径）
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ 否 → 继续
 │  │
-│  ├─ Amount < €50,000?
+│  ├─ Amount < €50,000？
 │  │  │
-│  │  ├─ YES → DIRECTOR APPROVAL PATH
-│  │  │        Continue to Level 5 (Supplier Check)
+│  │  ├─ 是 → 总监审批路径
+│  │  │        继续到第 5 级（供应商检查）
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ 否 → 继续
 │  │
-│  └─ Amount ≥ €50,000?
+│  └─ Amount ≥ €50,000？
 │     │
-│     └─ YES → EXECUTIVE APPROVAL PATH
-│              Create sequential tasks:
-│              - Finance Director
+│     └─ 是 → 高管审批路径
+│              按顺序创建任务：
+│              - 财务总监
 │              - CFO
-│              - CEO (if > €100,000)
-│              Priority: URGENT
-│              Deadline: 1 day each
-│              → WAIT for all approvals
-│                 → END (Executive Path)
+│              - CEO（if > €100,000）
+│              优先级：URGENT
+│              每项任务的截止时间：1 天
+│              → 等待所有审批完成
+│                 → 结束（高管路径）
 │
-├─ LEVEL 5: SUPPLIER ANALYSIS (for €10k-€50k range)
+├─ 第 5 级：供应商分析（针对 €10k-€50k 范围）
 │  │
-│  ├─ Supplier Status = "BLOCKED"?
+│  ├─ Supplier Status = "BLOCKED"？
 │  │  │
-│  │  ├─ YES → BLOCK & ESCALATE
-│  │  │        Stop processing
-│  │  │        Create urgent task
-│  │  │        Notify procurement & finance
-│  │  │        → END (Blocked Supplier)
+│  │  ├─ 是 → 阻止并升级处理
+│  │  │        停止处理
+│  │  │        创建紧急任务
+│  │  │        通知采购部门和财务部门
+│  │  │        → 结束（供应商已阻止）
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ 否 → 继续
 │  │
-│  ├─ Supplier Age < 180 days (New)?
+│  ├─ Supplier Age < 180 days（新供应商）？
 │  │  │
-│  │  ├─ YES → DUAL APPROVAL REQUIRED
-│  │  │        Task 1: Director (2 days)
-│  │  │        → WAIT for Task 1
-│  │  │           IF Task 1 Approved:
-│  │  │             Task 2: CFO (2 days)
-│  │  │             → WAIT for Task 2
-│  │  │                → END (Dual Approved)
-│  │  │           IF Task 1 Rejected:
-│  │  │             → END (Rejected at Level 1)
+│  │  ├─ 是 → 需要双重审批
+│  │  │        任务 1：总监（2 天）
+│  │  │        → 等待任务 1
+│  │  │           IF 任务 1 已批准：
+│  │  │             任务 2：CFO（2 天）
+│  │  │             → 等待任务 2
+│  │  │                → 结束（双重审批通过）
+│  │  │           IF 任务 1 已拒绝：
+│  │  │             → 结束（在第 1 级被拒绝）
 │  │  │
-│  │  └─ NO → Continue
+│  │  └─ 否 → 继续
 │  │
-│  ├─ Supplier Risk Rating = "HIGH"?
+│  ├─ Supplier Risk Rating = "HIGH"？
 │  │  │
-│  │  ├─ YES → ENHANCED APPROVAL
-│  │  │        Additional fraud checks
-│  │  │        Director approval required
-│  │  │        Extended deadline
-│  │  │        → END (Enhanced Path)
+│  │  ├─ 是 → 加强审批
+│  │  │        进行额外欺诈检查
+│  │  │        需要总监审批
+│  │  │        延长截止时间
+│  │  │        → 结束（加强审批路径）
 │  │  │
-│  │  └─ NO → STANDARD DIRECTOR APPROVAL
-│  │           Create task for Director
-│  │           Priority: High
-│  │           Deadline: 2 days
-│  │           → WAIT for approval
-│  │              → END (Standard High-Value)
+│  │  └─ 否 → 标准总监审批
+│  │           为总监创建任务
+│  │           优先级：高
+│  │           截止时间：2 天
+│  │           → 等待审批
+│  │              → 结束（标准高金额路径）
 │  │
-│  └─ [Supplier analysis complete]
+│  └─ [供应商分析完成]
 │
-└─ [All decision levels processed]
+└─ [所有决策级别均已处理]
 ```
 
 ***
@@ -679,16 +679,16 @@ Step 4: IF Department authorized: Approve, ELSE: Escalate
 **文档示例：**
 
 ```
-Decision Point: Amount Threshold Check
-Business Rule: BR-INV-001 (Invoice Approval Matrix)
-Purpose: Route invoices based on amount thresholds per company policy
-Thresholds:
-  < €1,000: Auto-approve (CFO approved threshold)
-  €1,000-€10,000: Manager approval (Delegation matrix)
-  > €10,000: Director approval (Signature authority)
-Exceptions: Urgent invoices skip to highest level
-Updated: 2025-10-23
-Owner: Finance Department
+决策点：金额阈值检查
+业务规则：BR-INV-001（发票审批矩阵）
+用途：依据公司的政策，按金额阈值路由发票
+阈值：
+  < €1,000：自动审批（CFO 批准的阈值）
+  €1,000-€10,000：经理审批（授权矩阵）
+  > €10,000：总监审批（签字权限）
+例外情况：紧急发票跳过常规级别，直接转至最高级别
+更新日期：2025-10-23
+负责人：财务部门
 ```
 
 ***
@@ -722,22 +722,22 @@ Owner: Finance Department
 **指标示例：**
 
 ```
-Month: October 2025
-Total Invoices: 1,250
+月份：2025 年 10 月
+发票总数：1,250
 
-Decision Path Distribution:
-- Auto-approved (< €1k): 680 (54%)
-- Manager path (€1k-€10k): 420 (34%)
-- Director path (€10k-€50k): 120 (10%)
-- Executive path (> €50k): 30 (2%)
+决策路径分布：
+- 自动批准（< €1k）：680（54%）
+- 经理路径（€1k-€10k）：420（34%）
+- 总监路径（€10k-€50k）：120（10%）
+- 高管路径（> €50k）：30（2%）
 
-Processing Time:
-- Auto-approve: < 1 minute
-- Manager path: 2.5 days average
-- Director path: 1.8 days average
-- Executive path: 3.2 days average
+处理时间：
+- 自动审批：< 1 分钟
+- 经理路径：平均 2.5 天
+- 总监路径：平均 1.8 天
+- 高管路径：平均 3.2 天
 
-Exceptions: 15 (1.2%)
+异常：15（1.2%）
 ```
 
 ***

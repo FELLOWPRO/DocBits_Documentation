@@ -284,23 +284,23 @@ For each line item:
 **计算示例：**
 
 ```
-Line Item 1:
-  Product: ABC123
-  Invoice Price: €52.00
-  PO Price: €50.00
-  Variance = |52-50|/50 × 100 = 4%
-  Tolerance: 5%
-  Result: PASS ✅
+行项目 1：
+  产品：ABC123
+  发票价格：€52.00
+  采购订单价格：€50.00
+  差异 = |52-50|/50 × 100 = 4%
+  容差：5%
+  结果：通过 ✅
 
-Line Item 2:
-  Product: XYZ789
-  Invoice Price: €120.00
-  PO Price: €100.00
-  Variance = |120-100|/100 × 100 = 20%
-  Tolerance: 5%
-  Result: FAIL ❌
+行项目 2：
+  产品：XYZ789
+  发票价格：€120.00
+  采购订单价格：€100.00
+  差异 = |120-100|/100 × 100 = 20%
+  容差：5%
+  结果：未通过 ❌
 
-Overall Result: FAIL (one or more items failed)
+总体结果：未通过（一个或多个行项目未通过）
 ```
 
 **指南参考：** [PO 匹配完整指南 - 单价](../po-matching-complete-guide.md#unit-price-comparison)
@@ -325,34 +325,34 @@ Allow Over-Delivery: No (strict)
 **逻辑：**
 
 ```
-For each line item:
-  1. Get Invoice Quantity
-  2. Get PO Quantity
-  3. Calculate: Variance % = |Invoice - PO| / PO × 100
-  4. Check: Variance % ≤ 10%?
-  5. Special rules:
-     - Under-delivery: Allow within tolerance
-     - Over-delivery: Reject (or apply stricter tolerance)
+对于每个行项目：
+  1. 获取发票数量
+  2. 获取采购订单数量
+  3. 计算：差异 % = |Invoice - PO| / PO × 100
+  4. 检查：差异 % ≤ 10%？
+  5. 特殊规则：
+     - 少交货：允许在容差范围内
+     - 超交货：拒绝（或采用更严格的容差）
 ```
 
 **示例：**
 
 ```
-Line Item 1:
-  Product: ABC123
-  Invoice Qty: 98 units
-  PO Qty: 100 units
-  Variance = |98-100|/100 × 100 = 2%
-  Under-delivery: 2% (within 10% tolerance)
-  Result: PASS ✅
+行项目 1：
+  产品：ABC123
+  发票数量：98 units
+  采购订单数量：100 units
+  差异 = |98-100|/100 × 100 = 2%
+  少交货：2%（在 10% 容差范围内）
+  结果：通过 ✅
 
-Line Item 2:
-  Product: XYZ789
-  Invoice Qty: 115 units
-  PO Qty: 100 units
-  Variance = |115-100|/100 × 100 = 15%
-  Over-delivery: 15% (exceeds 10% tolerance)
-  Result: FAIL ❌ (Escalate)
+行项目 2：
+  产品：XYZ789
+  发票数量：115 units
+  采购订单数量：100 units
+  差异 = |115-100|/100 × 100 = 15%
+  超交货：15%（超出 10% 容差）
+  结果：未通过 ❌（升级处理）
 ```
 
 **指南参考：** [PO 匹配完整指南 - 数量](../po-matching-complete-guide.md#quantity-comparison)
@@ -472,33 +472,33 @@ IF PO_Match_Status = "WITHIN TOLERANCE":
 **场景 C：超出容差范围（轻微）**
 
 ```
-IF Variance < 15% (minor exceptions):
-  1. Set Match_Status = "REVIEW REQUIRED"
-  2. Create Task: "Review PO Variance"
-     - Assign to: Accounts Payable Officer
-     - Priority: Medium
-     - Deadline: 3 days
-  3. Send email with variance details
-  4. Wait for task completion
-  5. IF Approved: Continue processing
-     IF Rejected: Return to supplier
+IF 差异 < 15%（轻微异常）：
+  1. 设置 Match_Status = "REVIEW REQUIRED"（需要审核）
+  2. 创建任务："Review PO Variance"（审核采购订单差异）
+     - 分配给：应付账款专员
+     - 优先级：Medium（中）
+     - 截止时间：3 days
+  3. 发送包含差异详情的电子邮件
+  4. 等待任务完成
+  5. IF 已批准：继续处理
+     IF 已拒绝：退回给供应商
 ```
 
 **场景 D：超出容差范围（严重）**
 
 ```
-IF Variance ≥ 15% (major exceptions):
-  1. Set Match_Status = "ESCALATION REQUIRED"
-  2. Create Task: "URGENT: Major PO Variance"
-     - Assign to: Procurement Manager
-     - Priority: High
-     - Deadline: 1 day
-  3. Send urgent email to:
-     - Procurement Manager
-     - Finance Manager
-     - Supplier contact
-  4. Block document from processing
-  5. Wait for resolution
+IF 差异 ≥ 15%（重大异常）：
+  1. 设置 Match_Status = "ESCALATION REQUIRED"（需要升级处理）
+  2. 创建任务："URGENT: Major PO Variance"（紧急：重大采购订单差异）
+     - 分配给：采购经理
+     - 优先级：High（高）
+     - 截止时间：1 day
+  3. 向以下对象发送紧急电子邮件：
+     - 采购经理
+     - 财务经理
+     - 供应商联系人
+  4. 阻止文档继续处理
+  5. 等待问题解决
 ```
 
 **场景 E：缺少 PO 或未匹配**
@@ -519,143 +519,143 @@ IF PO not found OR no items match:
 ## 完整工作流图
 
 ```
-INVOICE ARRIVES
+发票到达
 │
-├─ CHECK: Does invoice have PO number?
+├─ 检查：发票是否包含采购订单编号？
 │  │
-│  ├─ NO PO NUMBER ❌
+│  ├─ 没有采购订单编号 ❌
 │  │  │
-│  │  ├─ Set Match_Status = "NO PO"
-│  │  ├─ Route to Non-PO workflow
-│  │  └─ Create manual review task
-│  │     → END (Non-PO Invoice)
+│  │  ├─ 设置 Match_Status = "NO PO"（无采购订单）
+│  │  ├─ 路由至非采购订单工作流
+│  │  └─ 创建人工审核任务
+│  │     → 结束（非采购订单发票）
 │  │
-│  └─ PO NUMBER EXISTS ✅
+│  └─ 存在采购订单编号 ✅
 │     │
-│     ├─ RETRIEVE PO DATA
-│     │  - Lookup PO by PO_Number
-│     │  - Get PO line items
-│     │  - Get PO totals
+│     ├─ 检索采购订单数据
+│     │  - 按 PO_Number 查找采购订单
+│     │  - 获取采购订单行项目
+│     │  - 获取采购订单总额
 │     │  │
-│     │  ├─ PO FOUND ✅
+│     │  ├─ 找到采购订单 ✅
 │     │  │  │
-│     │  │  ├─ STEP 1: Check Full Match
-│     │  │  │  Card: PURCHASE_ORDER_FULL_MATCH
+│     │  │  ├─ 步骤 1：检查是否完全匹配
+│     │  │  │  卡片：PURCHASE_ORDER_FULL_MATCH
 │     │  │  │  │
-│     │  │  │  ├─ FULL MATCH ✅✅✅
-│     │  │  │  │  │
-│     │  │  │  │  ├─ Set Match_Status = "FULL MATCH"
-│     │  │  │  │  ├─ Auto-Approve
-│     │  │  │  │  └─ Export to ERP
-│     │  │  │  │     → END (Perfect Match)
+│     │  │  ├─ 完全匹配 ✅✅✅
 │     │  │  │  │
-│     │  │  │  └─ NO FULL MATCH ⚠️
-│     │  │  │     │
-│     │  │  │     ├─ STEP 2: Check Unit Price Variance
-│     │  │  │     │  Card: CONDITION_DOC_TO_PO_UNIT_PRICE
-│     │  │  │     │  Tolerance: 5%
-│     │  │  │     │  │
-│     │  │  │     │  ├─ Calculate for each line:
-│     │  │  │     │  │  Variance % = |Invoice-PO|/PO × 100
-│     │  │  │     │  │
-│     │  │  │     │  ├─ PRICE VARIANCE ≤ 5% ✅
-│     │  │  │     │  │  Store variance: 3.2% (example)
-│     │  │  │     │  │  Price Check: PASS
-│     │  │  │     │  │
-│     │  │  │     │  └─ PRICE VARIANCE > 5% ❌
-│     │  │  │     │     Store variance: 12.5% (example)
-│     │  │  │     │     Price Check: FAIL
-│     │  │  │     │     → Flag for review
-│     │  │  │     │
-│     │  │  │     ├─ STEP 3: Check Quantity Variance
-│     │  │  │     │  Card: CONDITION_DOC_TO_PO_QUANTITY
-│     │  │  │     │  Tolerance: 10%
-│     │  │  │     │  │
-│     │  │  │     │  ├─ Calculate for each line:
-│     │  │  │     │  │  Variance % = |Inv Qty-PO Qty|/PO Qty × 100
-│     │  │  │     │  │
-│     │  │  │     │  ├─ QUANTITY VARIANCE ≤ 10% ✅
-│     │  │  │     │  │  Store variance: 2.0% (example)
-│     │  │  │     │  │  Quantity Check: PASS
-│     │  │  │     │  │
-│     │  │  │     │  └─ QUANTITY VARIANCE > 10% ❌
-│     │  │  │     │     Store variance: 15.0% (example)
-│     │  │  │     │     Quantity Check: FAIL
-│     │  │  │     │     → Flag for review
-│     │  │  │     │
-│     │  │  │     ├─ STEP 4: Check Tax Lines
-│     │  │  │     │  Card: CONDITION_DOC_TO_PO_TAX_LINES
-│     │  │  │     │  │
-│     │  │  │     │  ├─ TAX ALIGNED ✅
-│     │  │  │     │  │  Tax Check: PASS
-│     │  │  │     │  │
-│     │  │  │     │  └─ TAX MISMATCH ❌
-│     │  │  │     │     Tax Check: FAIL
-│     │  │  │     │     → Flag for review
-│     │  │  │     │
-│     │  │  │     ├─ EVALUATE RESULTS
-│     │  │  │     │  │
-│     │  │  │     │  ├─ ALL CHECKS PASS ✅
-│     │  │  │     │  │  (Within tolerance)
-│     │  │  │     │  │  │
-│     │  │  │     │  │  ├─ Set Match_Status = "WITHIN TOLERANCE"
-│     │  │  │     │  │  ├─ Log variance details
-│     │  │  │     │  │  ├─ Auto-Approve
-│     │  │  │     │  │  └─ Export to ERP
-│     │  │  │     │  │     → END (Approved with Variance)
-│     │  │  │     │  │
-│     │  │  │     │  ├─ MINOR FAILURES (Variance < 15%) ⚠️
-│     │  │  │     │  │  │
-│     │  │  │     │  │  ├─ Set Match_Status = "REVIEW REQUIRED"
-│     │  │  │     │  │  ├─ Create Review Task
-│     │  │  │     │  │  │  - Assign to: AP Officer
-│     │  │  │     │  │  │  - Priority: Medium
-│     │  │  │     │  │  │  - Deadline: 3 days
-│     │  │  │     │  │  ├─ Send email with details
-│     │  │  │     │  │  │
-│     │  │  │     │  │  └─ WAIT FOR TASK COMPLETION
-│     │  │  │     │  │     │
-│     │  │  │     │  │     ├─ TASK APPROVED ✅
-│     │  │  │     │  │     │  Approve & Export
-│     │  │  │     │  │     │  → END (Manual Approval)
-│     │  │  │     │  │     │
-│     │  │  │     │  │     └─ TASK REJECTED ❌
-│     │  │  │     │  │        Reject & Return to Supplier
-│     │  │  │     │  │        → END (Rejected)
-│     │  │  │     │  │
-│     │  │  │     │  └─ MAJOR FAILURES (Variance ≥ 15%) 🚨
-│     │  │  │     │     │
-│     │  │  │     │     ├─ Set Match_Status = "ESCALATION"
-│     │  │  │     │     ├─ Create Urgent Task
-│     │  │  │     │     │  - Assign to: Procurement Manager
-│     │  │  │     │     │  - Priority: High
-│     │  │  │     │     │  - Deadline: 1 day
-│     │  │  │     │     ├─ Send urgent emails to:
-│     │  │  │     │     │  * Procurement Manager
-│     │  │  │     │     │  * Finance Manager
-│     │  │  │     │     │  * Supplier
-│     │  │  │     │     ├─ Block document processing
-│     │  │  │     │     │
-│     │  │  │     │     └─ WAIT FOR RESOLUTION
-│     │  │  │     │        → END (Pending Escalation)
-│     │  │  │     │
-│     │  │  │     └─ [Variance checks complete]
+│     │  │  │  ├─ 设置 Match_Status = "FULL MATCH"（完全匹配）
+│     │  │  │  ├─ 自动批准
+│     │  │  │  └─ 导出至 ERP
+│     │  │  │     → 结束（完美匹配）
 │     │  │  │
-│     │  │  └─ [Full match check complete]
+│     │  │  └─ 不完全匹配 ⚠️
+│     │  │     │
+│     │  │     ├─ 步骤 2：检查单价差异
+│     │  │     │  卡片：CONDITION_DOC_TO_PO_UNIT_PRICE
+│     │  │     │  容差：5%
+│     │  │     │  │
+│     │  │     ├─ 计算每个行项目的差异：
+│     │  │     │  差异 % = |Invoice-PO|/PO × 100
+│     │  │     │  │
+│     │  │     ├─ 价格差异 ≤ 5% ✅
+│     │  │     │  保存差异：3.2%（示例）
+│     │  │     │  价格检查：通过
+│     │  │     │
+│     │  │     └─ 价格差异 > 5% ❌
+│     │  │        保存差异：12.5%（示例）
+│     │  │        价格检查：未通过
+│     │  │        → 标记以供审核
+│     │  │     │
+│     │  │     ├─ 步骤 3：检查数量差异
+│     │  │     │  卡片：CONDITION_DOC_TO_PO_QUANTITY
+│     │  │     │  容差：10%
+│     │  │     │  │
+│     │  │     ├─ 计算每个行项目的差异：
+│     │  │     │  差异 % = |Inv Qty-PO Qty|/PO Qty × 100
+│     │  │     │  │
+│     │  │     ├─ 数量差异 ≤ 10% ✅
+│     │  │     │  保存差异：2.0%（示例）
+│     │  │     │  数量检查：通过
+│     │  │     │
+│     │  │     └─ 数量差异 > 10% ❌
+│     │  │        保存差异：15.0%（示例）
+│     │  │        数量检查：未通过
+│     │  │        → 标记以供审核
+│     │  │     │
+│     │  │     ├─ 步骤 4：检查税费行
+│     │  │     │  卡片：CONDITION_DOC_TO_PO_TAX_LINES
+│     │  │         │
+│     │  │     ├─ 税费一致 ✅
+│     │  │     │  税费检查：通过
+│     │  │     │  │
+│     │  │     └─ 税费不匹配 ❌
+│     │  │        税费检查：未通过
+│     │  │        → 标记以供审核
+│     │  │     │
+│     │  │     ├─ 评估结果
+│     │  │     │  │
+│     │  │     ├─ 所有检查均通过 ✅
+│     │  │     │  （在容差范围内）
+│     │  │     │  │
+│     │  │     │  ├─ 设置 Match_Status = "WITHIN TOLERANCE"（在容差范围内）
+│     │  │     │  ├─ 记录差异详情
+│     │  │     │  ├─ 自动批准
+│     │  │     │  └─ 导出至 ERP
+│     │  │     │     → 结束（有差异但已批准）
+│     │  │     │
+│     │  │     ├─ 轻微未通过（差异 < 15%）⚠️
+│     │  │     │  │
+│     │  │     │  ├─ 设置 Match_Status = "REVIEW REQUIRED"（需要审核）
+│     │  │     │  ├─ 创建审核任务
+│     │  │     │  │  - 分配给：应付账款专员
+│     │  │     │  │  - 优先级：Medium（中）
+│     │  │     │  │  - 截止时间：3 days
+│     │  │     │  ├─ 发送包含详情的电子邮件
+│     │  │     │  │
+│     │  │     │  └─ 等待任务完成
+│     │  │     │     │
+│     │  │     │     ├─ 任务已批准 ✅
+│     │  │     │     │  批准并导出
+│     │  │     │     │  → 结束（人工批准）
+│     │  │     │     │
+│     │  │     │     └─ 任务已拒绝 ❌
+│     │  │     │        拒绝并退回给供应商
+│     │  │     │        → 结束（已拒绝）
+│     │  │     │
+│     │  │     └─ 重大未通过（差异 ≥ 15%）🚨
+│     │  │        │
+│     │  │        ├─ 设置 Match_Status = "ESCALATION"（升级处理）
+│     │  │        ├─ 创建紧急任务
+│     │  │        │  - 分配给：采购经理
+│     │  │        │  - 优先级：High（高）
+│     │  │        │  - 截止时间：1 day
+│     │  │        ├─ 向以下对象发送紧急电子邮件：
+│     │  │        │  * 采购经理
+│     │  │        │  * 财务经理
+│     │  │        │  * 供应商
+│     │  │        ├─ 阻止文档处理
+│     │  │        │
+│     │  │        └─ 等待问题解决
+│     │  │           → 结束（等待升级处理）
+│     │  │     │
+│     │  │     └─ [差异检查已完成]
 │     │  │
-│     │  └─ PO NOT FOUND ❌
-│     │     │
-│     │     ├─ Set Match_Status = "PO NOT FOUND"
-│     │     ├─ Create Task: "Missing PO"
-│     │     │  - Assign to: Procurement Team
-│     │     │  - Priority: High
-│     │     ├─ Send email to procurement
-│     │     └─ Block document
-│     │        → END (Missing PO)
+│     │  └─ [完全匹配检查已完成]
 │     │
-│     └─ [PO retrieval complete]
+│     └─ 未找到采购订单 ❌
+│        │
+│        ├─ 设置 Match_Status = "PO NOT FOUND"（未找到采购订单）
+│        ├─ 创建任务："Missing PO"（缺少采购订单）
+│        │  - 分配给：采购团队
+│        │  - 优先级：High（高）
+│        ├─ 向采购团队发送电子邮件
+│        └─ 阻止文档处理
+│           → 结束（缺少采购订单）
 │
-└─ [PO check complete]
+│     └─ [采购订单检索已完成]
+│
+└─ [采购订单检查已完成]
 ```
 
 ***
@@ -812,11 +812,11 @@ IF Cumulative_Invoiced_Quantity ≤ PO_Quantity:
 
 ```
 IF Invoice_Currency ≠ PO_Currency:
-  1. Get exchange rate for Invoice_Currency → PO_Currency
-  2. Convert: Invoice_Amount_Converted = Invoice_Amount × Rate
-  3. Compare: Invoice_Amount_Converted vs PO_Amount
-  4. Store: Original_Currency_Amount and Converted_Amount
-  5. Flag: "Currency_Conversion_Applied"
+  1. 获取 Invoice_Currency → PO_Currency 的汇率
+  2. 换算：Invoice_Amount_Converted = Invoice_Amount × Rate
+  3. 比较：Invoice_Amount_Converted 与 PO_Amount
+  4. 保存：Original_Currency_Amount 和 Converted_Amount
+  5. 标记："Currency_Conversion_Applied"
 ```
 
 ***
@@ -839,13 +839,13 @@ IF Invoice_Currency ≠ PO_Currency:
 
 ```
 IF PO_Type = "Blanket":
-  Calculate: Total_Invoiced_To_Date
-  Check: Total_Invoiced_To_Date + Current_Invoice ≤ PO_Total_Value
-  IF Within limit:
-    Approve invoice
-    Update: Remaining_PO_Value
+  计算：Total_Invoiced_To_Date
+  检查：Total_Invoiced_To_Date + Current_Invoice ≤ PO_Total_Value
+  IF 在限额内：
+    批准发票
+    更新：Remaining_PO_Value
   ELSE:
-    Escalate: "Blanket PO limit exceeded"
+    升级处理："Blanket PO limit exceeded"（总括采购订单额度已超出）
 ```
 
 ***
@@ -859,14 +859,14 @@ IF PO_Type = "Blanket":
 **解决方案：**
 
 ```
-1. Identify unmatched line items
-2. Calculate: Unmatched_Amount
-3. IF Unmatched_Amount < €100 (threshold):
-     Create review task (minor issue)
+1. 识别未匹配的行项目
+2. 计算：Unmatched_Amount
+3. IF Unmatched_Amount < €100（阈值）：
+     创建审核任务（轻微问题）
    ELSE:
-     Escalate immediately (major issue)
-4. Store unmatched item details
-5. Flag: "Additional_Items_Present"
+     立即升级处理（重大问题）
+4. 保存未匹配项目的详情
+5. 标记："Additional_Items_Present"
 ```
 
 ***
@@ -878,16 +878,16 @@ IF PO_Type = "Blanket":
 **解决方案：**
 
 ```
-1. Check: PO_Status = "CLOSED"
-2. Check: Invoice_Date vs PO_Close_Date
-3. IF Invoice within 30 days of close:
-     Reopen PO temporarily
-     Process invoice
-     Close PO again
+1. 检查：PO_Status = "CLOSED"
+2. 检查：Invoice_Date 与 PO_Close_Date
+3. IF 发票日期在关闭日期后的 30 天内：
+     暂时重新打开采购订单
+     处理发票
+     再次关闭采购订单
    ELSE:
-     Create task: "Late Invoice for Closed PO"
-     Assign to procurement
-     Manual decision required
+     创建任务："Late Invoice for Closed PO"（已关闭采购订单的逾期发票）
+     分配给采购部门
+     需要人工决定
 ```
 
 ***
@@ -899,13 +899,13 @@ IF PO_Type = "Blanket":
 **解决方案：**
 
 ```
-1. Parse invoice for multiple PO numbers
-2. For each PO:
-     Retrieve PO data
-     Match respective line items
-3. Aggregate match results
-4. Overall match = ALL individual POs must match
-5. Report on each PO separately
+1. 解析发票中的多个采购订单编号
+2. 对每个采购订单：
+     检索采购订单数据
+     匹配对应的行项目
+3. 汇总匹配结果
+4. 总体匹配 = 所有单个采购订单都必须匹配
+5. 分别报告每个采购订单的结果
 ```
 
 ***

@@ -46,6 +46,7 @@
 ## Eindgebruiker en partners <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 
 * [Eindgebruikerssectie](end-user-and-partner-section/end-user-section/README.md)
+  * [Toegang verkrijgen en inloggen](end-user-and-partner-section/end-user-section/getting-access-and-signing-in.md)
   * [Globale Snelzoek](end-user-and-partner-section/end-user-section/global-quick-search.md)
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Wijzigingen in webadressen](end-user-and-partner-section/end-user-section/web-address-changes.md)

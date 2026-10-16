@@ -8,11 +8,11 @@
 
 NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功能，同时提供引导式文档验证、更多提升自动化的方式、更清晰的电子发票检查以及对导入和文档处理的更好控制。这些说明描述了以下服务版本中相对于最近发布的 [VESTA 热修复版本 R1.0.15（2026 年 10 月 14 日）](incremental-updates-14-october-2026.md)（包括更早的 VESTA 热修复版本）面向客户的新增内容。
 
-该快照标识了这些说明所涵盖的构建版本。有关在您的沙盒或生产环境中的可用性以及在渠道之间切换的信息，请参阅 [DocBits 发布生命周期（英文）](https://docs.docbits.com/overview-and-basics/docbits-release-lifecycle-strategy)。具有组织或文档类型开关的功能仍需由管理员启用。
+该快照标识了这些说明所涵盖的构建版本。有关在您的沙盒或生产环境中的可用性以及在渠道之间切换的信息，请参阅 [DocBits 发布生命周期](../docbits-release-lifecycle-strategy.md)。具有组织或文档类型开关的功能仍需由管理员启用。
 
 ## 原 VESTA 测试版功能：已包含在 NOVA <a href="#former-vesta-beta-features-included-in-nova" id="former-vesta-beta-features-included-in-nova"></a>
 
-**所有原 VESTA 测试版功能均已作为常规功能纳入 NOVA 沙盒。** 对于未使用 VESTA 测试版的客户，这扩展了其团队可用的功能，包括 **管理布局**、[**自定义验证规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules) 和 [**转换规则**（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules)。组织设置、文档类型开关和访问权限继续适用。
+**所有原 VESTA 测试版功能均已作为常规功能纳入 NOVA 沙盒。** 对于未使用 VESTA 测试版的客户，这扩展了其团队可用的功能，包括 **管理布局**、[**自定义验证规则**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和 [**转换规则**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)。组织设置、文档类型开关和访问权限继续适用。
 
 这些原测试版功能将在 **下一个 VESTA 热修复版本（计划于 [2026 年 11 月 11 日](vesta-hotfix-11-november-2026.md) 发布）** 中成为 VESTA 的正式功能。本公告说明原 VESTA 测试版功能的正式开放；以下章节还介绍了 NOVA 的其他新增功能和改进。
 
@@ -40,7 +40,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 * **规则和布局控制：** 其文档类型启用开关仍然适用。NOVA 使管理面板无需 Beta 链接即可访问。
 * **可选处理行为：** 按连接配置 FTP 清理和重试。一对多子行展开和已完成文档锁定为可选启用设置。
 
-有关您环境中的可用性和发布渠道切换，请参阅[发布生命周期（英文）](https://docs.docbits.com/overview-and-basics/docbits-release-lifecycle-strategy)。
+有关您环境中的可用性和发布渠道切换，请参阅[发布生命周期](../docbits-release-lifecycle-strategy.md)。
 
 ## 观看功能视频 <a href="#watch-the-feature-videos" id="watch-the-feature-videos"></a>
 
@@ -66,7 +66,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 5. [AI 已正确识别的内容](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part5/v1/en.mp4)
 6. [助手及权限说明](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part6/v2/en.mp4)
 
-有关截图和详细操作说明，请参阅 [AI Table 指南（英文）](https://docs.docbits.com/end-user-and-partner-section/end-user-section/ai-table)。
+有关截图和详细操作说明，请参阅 [AI Table 指南](../../end-user-and-partner-section/end-user-section/ai-table/README.md)。
 
 ## 验证助手：协助处理当前文档
 
@@ -81,18 +81,18 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 将重复修正转化为自动化改进
 
-现有的 [Touchless Intelligence （英文）](https://docs.docbits.com/administration-and-setup/touchless-intelligence) 仪表板新增了审核和跟进流程：
+现有的 [Touchless Intelligence](../../administration-and-setup/touchless-intelligence.md) 仪表板新增了审核和跟进流程：
 
-* **学习到的规则建议。** 重复的手动修正可以建议一条[转换规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules)。管理员可以查看该规则将写入的内容、支持示例，以及该规则将在哪些文档上替换团队已接受的值。建议需经审核后方可成为生效规则。
+* **学习到的规则建议。** 重复的手动修正可以建议一条[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)。管理员可以查看该规则将写入的内容、支持示例，以及该规则将在哪些文档上替换团队已接受的值。建议需经审核后方可成为生效规则。
 * **来自审核者的改进请求。** 用户可以从文档助手提交改进请求，供管理员在 Touchless Intelligence 中审核。请求将说明和决策保留在一起。
 * **衡量激活后的效果。** 对于支持的转换规则，DocBits 会比较激活前后的手动修正情况，并在旁边显示无接触处理率。衡量使用 14 天周期，并在数据不足时明确标识，而非虚构改进结果。修改规则会为该修订版启动新的衡量周期。
 * **咨询报告。** 管理员可以生成跨提取、主数据、采购订单匹配、会计、设置和处理流程的改进机会排名视图。在未经衡量之前，预估影响会标注为估算值。
-* **供应商特定的匹配建议。** 重复出现的供应商和物料匹配问题可以为容差或[采购订单匹配规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules) 的建议提供依据。建议会区分采购订单缺失与规则或容差问题。
+* **供应商特定的匹配建议。** 重复出现的供应商和物料匹配问题可以为容差或[采购订单匹配规则](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) 的建议提供依据。建议会区分采购订单缺失与规则或容差问题。
 * **跟进摘要。** 每周管理员摘要汇总待处理的改进请求、主要改进机会和已完成的衡量结果（在有内容可报告时）。当衡量结果可用时，可以通知请求者。
 
 ## 设置助手：更多操作和页面说明
 
-[设置助手 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/company-information/settings-assistant)，包括主动的邮件/FTP 健康警告，已在 VESTA 中发布。NOVA 在该现有体验中增加了操作和上下文信息：
+[设置助手](../../administration-and-setup/settings/global-settings/company-information/settings-assistant.md)，包括主动的邮件/FTP 健康警告，已在 VESTA 中发布。NOVA 在该现有体验中增加了操作和上下文信息：
 
 * **从健康通知执行连接操作。** 打开受影响的连接，查看可用操作并在助手中确认。健康通知也可以被忽略。基本的按通道警告卡片及其错误/重试信息已在 VESTA 中存在。
 * **可见的停用历史。** 在有记录的情况下，已禁用的导入会显示其关闭时间和操作人。
@@ -102,7 +102,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 规则和布局：直接访问和更好的诊断
 
-* **原 Beta 控件成为正式功能。** 管理布局、[自定义验证规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules) 和[转换规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules) 在 NOVA 的文档类型高级设置中直接可见，无需 Beta 链接。其启用开关仍由管理员控制。这些控件将随所有其他原 VESTA Beta 功能一起包含在计划于 2026 年 11 月 11 日发布的 VESTA 热修复中。
+* **原 Beta 控件成为正式功能。** 管理布局、[自定义验证规则](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) 在 NOVA 的文档类型高级设置中直接可见，无需 Beta 链接。其启用开关仍由管理员控制。这些控件将随所有其他原 VESTA Beta 功能一起包含在计划于 2026 年 11 月 11 日发布的 VESTA 热修复中。
 * **更实用的规则诊断。** 布局选择规则新增了 **记录执行** 选项。规则搜索支持规则标识符，打开编辑器时会加载当前已保存的规则。现有的规则执行日志仍然是查看已执行内容的位置。
 * **选择并打开布局时获得更多上下文。** 搜索目标布局、预览其内容，并从选择规则中直接打开目标。审批选择规则可正确接受受支持的审批布局类型。管理员还可以从文档验证中获取快捷方式，直接跳转到该文档类型的布局编辑器。
 * **选择多个条件值。** 诸如 **属于以下之一** 等条件支持选择多个值。
@@ -110,7 +110,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 主数据查找后的转换、基本规则执行日志、更宽的规则编辑器以及标准规则克隆修复已在 VESTA 基线中实现。NOVA 延续了这些功能，并将原 Beta 管理控件作为常规功能提供。
 
-有关设置步骤、示例和测试，请参阅 [自定义验证规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/custom-validation-rules) 和 [转换规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/transformation-rules)。要选择文档使用的布局，请参阅 [布局选择规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules)。
+有关设置步骤、示例和测试，请参阅 [自定义验证规则](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) 和 [转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)。要选择文档使用的布局，请参阅 [布局选择规则](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md)。
 
 ## 电子发票验证：更清晰的发现结果和策略控制
 
@@ -121,7 +121,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 * **附带记录原因的拒绝。** 经授权的审核人员可以从验证报告中拒绝符合条件的文档。报告会根据其错误为审核人员准备一个原因，供其在确认前检查。
 * **更多格式修正。** EDNA 公用事业 CII 发票可被识别，XRechnung 增值税映射的修正改善了相关发票值到达 DocBits 字段的方式。
 
-请参阅 [电子文档验证规则 （英文）](https://docs.docbits.com/administration-and-setup/settings/document-processing/e-documents/validation-rules)。
+请参阅 [电子文档验证规则](../../administration-and-setup/settings/document-processing/e-documents/validation-rules.md)。
 
 ## FTP/SFTP 和电子邮件导入
 
@@ -133,7 +133,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 * **签名电子邮件支持。** 包含发票的不透明签名 S/MIME 消息可被解包而非跳过。
 * **电子邮件配置历史和状态。** 导入设置显示最后保存或激活配置的人员。入站邮件开关反映存储的激活状态，包括新保存的配置。
 
-请参阅 [FTP 导入 （英文）](https://docs.docbits.com/end-user-and-partner-section/end-user-section/how-to-import-documents/ftp) 和 [测试 FTP 导入连接 （英文）](https://docs.docbits.com/administration-and-setup/settings/document-processing/import/test-ftp-import-connection)。
+请参阅 [FTP 导入](../../end-user-and-partner-section/end-user-section/how-to-import-documents/ftp.md) 和 [测试 FTP 导入连接](../../administration-and-setup/settings/document-processing/import/test-ftp-import-connection.md)。
 
 ## 文档处理与提取
 
@@ -146,7 +146,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 采购订单匹配、审批与导出
 
-[采购订单匹配规则指南（英文）](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules) 介绍了如何启用基于规则的匹配、配置匹配类型和容差、设置执行顺序以及管理规则版本。
+[采购订单匹配规则指南](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) 介绍了如何启用基于规则的匹配、配置匹配类型和容差、设置执行顺序以及管理规则版本。
 
 * **双向匹配。** 可以选择文档行并将其连接到采购订单行，也可以从采购订单行开始。当多条交货单行对应一条采购订单行时，此功能尤为实用。
 * **保留一对多行明细。** 匹配配置现在可以在多条文档行匹配一条采购订单行时，为每条文档行保留独立的子行。此选项默认关闭。通用 API 导出可按已配置的行列对请求进行分组，支持需要独立目标记录的交货或集装箱场景。
@@ -184,7 +184,7 @@ NOVA 还延续了以下列出的功能。此前仅限 VESTA 测试版访问的�
 * 底层验证、转换和布局选择规则引擎、主数据查找后的转换以及基本的规则执行日志。
 * 早期的仪表板搜索改进、MFA、已验证的组织电子邮件域名、费用容差以及将工作流执行限制增加到 50。
 
-有关 VESTA 发布历史，请参阅 [10 月 14 日 VESTA 热修复](incremental-updates-14-october-2026.md)、[9 月 15 日热修复（英文）](https://docs.docbits.com/overview-and-basics/release-notes/incremental-updates-15-september-2026) 和 [早期发布说明](README.md#vesta-hotfix-releases)。
+有关 VESTA 发布历史，请参阅 [10 月 14 日 VESTA 热修复](incremental-updates-14-october-2026.md)、[9 月 15 日热修复](incremental-updates-15-september-2026.md) 和 [早期发布说明](README.md#vesta-hotfix-releases)。
 
 ## NOVA 服务版本
 

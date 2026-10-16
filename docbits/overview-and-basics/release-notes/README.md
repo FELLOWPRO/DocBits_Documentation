@@ -1,6 +1,43 @@
 # Release Notes
 
-> **Latest hotfix release:** [Hotfixes 14 October 2026](incremental-updates-14-october-2026.md) (R1.0.15): the Settings Assistant chat on every settings page, new AI tiers (Fast, Full, Nexus, Auto), the header field check, safer sign-in and social login, and purchase order charge matching. Previous: [Hotfixes 15 September 2026](incremental-updates-15-september-2026.md). All hotfix pages are listed in the navigation under Release Notes.
+DocBits release notes are organised by release channel. NOVA introduces the next major release; VESTA receives hotfixes for the current production release. See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for environment availability and channel switching.
+
+| Release channel | Latest release notes | What to expect |
+| --- | --- | --- |
+| **NOVA — Major Release** | [NOVA: What's new compared with VESTA](nova-major-release-16-october-2026.md) · version snapshot **16 October 2026** | Additional customer features in the supplied NOVA service versions, compared with VESTA R1.0.15. |
+| **VESTA — Hotfix Release** | [VESTA Hotfix — 14 October 2026](incremental-updates-14-october-2026.md) · **R1.0.15** | Improvements and fixes for the current VESTA production release. |
+
+## NOVA — Major Release
+
+[Read the NOVA release notes](nova-major-release-16-october-2026.md) for the full feature list and all 16 service versions. The additions include:
+
+* **Validation Assistant:** understand what blocks a document, jump to the affected fields, and review suggested corrections in context.
+* **Automation improvements:** turn repeated corrections into reviewed rule proposals, submit improvement requests, and measure the results in Touchless Intelligence.
+* **Rules and layouts:** access the rule and layout controls directly in document-type settings, run transformations after master data lookup, and inspect rule execution logs.
+* **E-Invoice Validation:** clearer reports, validation policies by document type, a change history, and rejection with a recorded reason.
+* **Import management:** a guided FTP/SFTP setup, configurable retries and notifications, source-file cleanup after successful import, and proactive import-health cards.
+* **Document processing and matching:** restart with a chosen page count, match document and purchase order lines in either direction, and distinguish Exported from Finished.
+
+The comparison does **not** count the existing Settings Assistant, AI tiers, Header Field Check or Touchless Intelligence dashboard as new NOVA features. Their NOVA extensions are described separately.
+
+## VESTA — Hotfix Releases
+
+**Latest: [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md).** This VESTA hotfix introduced the Settings Assistant, updated AI tiers, the Header Field Check, sign-in improvements and purchase order charge-matching improvements.
+
+Earlier hotfix notes:
+
+* [15 September 2026 — R1.0.13](incremental-updates-15-september-2026.md)
+* [8 September 2026](incremental-updates-8-september-2026.md)
+* [12–25 August 2026](incremental-updates-12-25-august-2026.md)
+* [29 July – 12 August 2026](incremental-updates-29-july-12-august-2026.md)
+* [14–29 July 2026](incremental-updates-14-29-july-2026.md)
+* [4–14 July 2026](incremental-updates-4-14-july-2026.md)
+* [3–4 July 2026](incremental-updates-3-4-july-2026.md)
+* [30 June – 3 July 2026](incremental-updates-30-june-3-july-2026.md)
+* [26–30 June 2026](incremental-updates-26-30-june-2026.md)
+* [21–25 June 2026](incremental-updates-21-25-june-2026.md)
+
+The original release announcements remain below for reference.
 
 ## **Release R1.0 13/14 June 2026**
 

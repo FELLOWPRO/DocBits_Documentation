@@ -1,30 +1,34 @@
 # Release Notes
 
-DocBits release notes are organised by release channel. NOVA introduces the next major release; VESTA receives hotfixes for the current production release. See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for environment availability and channel switching.
+Choose a release channel to see what changes for your team. **NOVA is the major release with additional customer capabilities. VESTA hotfixes improve the current production release.** See the [release lifecycle](../docbits-release-lifecycle-strategy.md) for availability and switching between channels.
 
-| Release channel | Latest release notes | What to expect |
+| Release channel | Latest release notes | Focus |
 | --- | --- | --- |
-| **NOVA — Major Release** | [NOVA: What's new compared with VESTA](nova-major-release-16-october-2026.md) · version snapshot **16 October 2026** | Additional customer features in the supplied NOVA service versions, compared with VESTA R1.0.15. |
-| **VESTA — Hotfix Release** | [VESTA Hotfix — 14 October 2026](incremental-updates-14-october-2026.md) · **R1.0.15** | Improvements and fixes for the current VESTA production release. |
+| **NOVA — Major Release** | [What's new for customers](nova-major-release-16-october-2026.md) · **16 October 2026** version snapshot | New capabilities and extensions compared with VESTA R1.0.15. |
+| **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
 
 ## NOVA — Major Release
 
-[Read the NOVA release notes](nova-major-release-16-october-2026.md) for the full feature list and all 16 service versions. The additions include:
+### What your team gains with NOVA
 
-* **Validation Assistant:** understand what blocks a document, jump to the affected fields, and review suggested corrections in context.
-* **Automation improvements:** turn repeated corrections into reviewed rule proposals, submit improvement requests, and measure the results in Touchless Intelligence.
-* **Rules and layouts:** access the rule and layout controls directly in document-type settings, run transformations after master data lookup, and inspect rule execution logs.
-* **E-Invoice Validation:** clearer reports, validation policies by document type, a change history, and rejection with a recorded reason.
-* **Import management:** a guided FTP/SFTP setup, configurable retries and notifications, source-file cleanup after successful import, and proactive import-health cards.
-* **Document processing and matching:** restart with a chosen page count, match document and purchase order lines in either direction, and distinguish Exported from Finished.
+* **Resolve document blockers with the Validation Assistant.** Ask what stops a document, jump to the relevant field and review suggested corrections while staying with the document.
+* **Turn repeated corrections into reviewed automation improvements.** Reviewers can submit improvement requests; administrators can assess learned rule proposals, review affected documents and measure the result after activation.
+* **Understand and act on e-invoice errors.** Use reports grouped by validation level, review document-type policies and their history, and reject an eligible invoice with a recorded reason.
+* **Set up and control FTP/SFTP imports.** Use the connection wizard, follow per-file import steps, configure retries and failure notifications, and optionally delete source files after successful import.
+* **Match delivery lines with fewer repeated actions.** Select document or purchase order lines first and link them in either direction. Configured exports can preserve sub-line details and group records by line values.
+* **Keep exported work separate from completed work.** Use the Exported status for follow-up processing and optionally lock Finished documents against ordinary reopening.
+* **Reach rule and layout controls directly.** Open the management panels without a beta link, search and preview layouts, and open the layout editor from a document.
+* **Control extraction and routine administration.** Restart a document with a chosen page count, choose whether hidden fields are extracted, use additional Settings Assistant actions and limit notification rules to a sub-organisation.
 
-The comparison does **not** count the existing Settings Assistant, AI tiers, Header Field Check or Touchless Intelligence dashboard as new NOVA features. Their NOVA extensions are described separately.
+[Read the complete NOVA feature comparison](nova-major-release-16-october-2026.md), including activation requirements, additional improvements and all **16 service versions**.
+
+**Already part of VESTA:** the original Settings Assistant, basic import-health warnings, AI tiers, Header Field Check, Touchless Intelligence dashboard, rule engines, transformations after master data lookup and basic rule-execution logs. The NOVA notes identify the additions to these existing features.
 
 ## VESTA — Hotfix Releases
 
 **Latest: [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md).** This VESTA hotfix introduced the Settings Assistant, updated AI tiers, the Header Field Check, sign-in improvements and purchase order charge-matching improvements.
 
-Earlier hotfix notes:
+Earlier VESTA hotfix notes:
 
 * [15 September 2026 — R1.0.13](incremental-updates-15-september-2026.md)
 * [8 September 2026](incremental-updates-8-september-2026.md)

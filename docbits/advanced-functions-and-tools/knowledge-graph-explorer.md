@@ -13,13 +13,13 @@ The Knowledge Graph Explorer helps you see connections between vendors, document
 
 ## Choose what you see
 
-| Control | What it does |
-| --- | --- |
-| **Navigation** | Switch between **Vendor Overview** (connected vendors), **Vendor Intelligence** (a vendor table), **Document Journey** (steps and variants in document processing), and **Anomalies** (unusual relationships). |
-| **Type** | Select the kinds of items to focus on, such as Documents, Vendors, Purchase Orders, or Invoices. Selected types also limit search results. |
-| **Graph Stats** | Shows the number of nodes (items) and edges (connections) currently available. Expand or collapse this section as needed. |
-| **Confidence** | Open this section to set the minimum relationship confidence when expanding a node. A higher value narrows the displayed connections. |
-| **Rebuild Graph** | Starts a new graph computation. Wait for its progress to finish before searching again. |
-| **Graph Explorer / Analytics** | Switch between the interactive graph and summary charts. Analytics shows counts and charts when graph data exists; an empty graph also leaves Analytics empty. |
+| Control                        | What it does                                                                                                                                                                                                   |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Navigation**                 | Switch between **Vendor Overview** (connected vendors), **Vendor Intelligence** (a vendor table), **Document Journey** (steps and variants in document processing), and **Anomalies** (unusual relationships). |
+| **Type**                       | Select the kinds of items to focus on, such as Documents, Vendors, Purchase Orders, or Invoices. Selected types also limit search results.                                                                     |
+| **Graph Stats**                | Shows the number of nodes (items) and edges (connections) currently available. Expand or collapse this section as needed.                                                                                      |
+| **Confidence**                 | Open this section to set the minimum relationship confidence when expanding a node. A higher value narrows the displayed connections.                                                                          |
+| **Rebuild Graph**              | Starts a new graph computation. Wait for its progress to finish before searching again.                                                                                                                        |
+| **Graph Explorer / Analytics** | Switch between the interactive graph and summary charts. Analytics shows counts and charts when graph data exists; an empty graph also leaves Analytics empty.                                                 |
 
-If you need to resolve a difference between an invoice and its order, continue with the [Purchase Order Matching Screen](../end-user-and-partner-section/end-user-section/purchase-order-matching/README.md). For broader metrics outside the graph, see the [Analytics Dashboard](../administration-and-setup/analytics-dashboard.md).
+If you need to resolve a difference between an invoice and its order, continue with the [Purchase Order Matching Screen](../end-user-and-partner-section/end-user-section/purchase-order-matching/). For broader metrics outside the graph, see the [Analytics Dashboard](../administration-and-setup/analytics-dashboard/).

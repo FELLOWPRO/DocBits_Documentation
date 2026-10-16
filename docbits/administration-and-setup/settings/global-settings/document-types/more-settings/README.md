@@ -13,18 +13,18 @@
 
 The breadcrumb at the top of the page shows **Settings / Document Types / More Settings**. The Settings Assistant on the right of the page explains the settings of the open card.
 
-| Card | What you set there |
-| ---- | ------------------ |
-| [Purchase Order](#purchase-order) | PO matching, tolerances, export of PO lines, supplier item numbers |
-| [Manage Layouts](#manage-layouts-custom-validation-rules-and-transformation-rules) | Switch for the Manage Layouts overview |
-| [Custom Validation Rules](#manage-layouts-custom-validation-rules-and-transformation-rules) | Your own validation rules for this document type |
-| [Transformation Rules](#manage-layouts-custom-validation-rules-and-transformation-rules) | Rules that read a value, change it in steps and write it back |
-| [Approval & Rejection](#approval-and-rejection) | Approval workflow and the in-review and reject forms |
-| [Vertex Tax Verification](vertex-tax-verification.md) | Design the form for the Vertex tax verification |
-| [E-Invoice Validation](#e-invoice-validation) | Validation of XRechnung, ZUGFeRD and Factur-X invoices |
-| [Table Extraction](#table-extraction) | Skip the validation of extracted tables |
-| [Export Settings](#export-settings) | Multiple export, PDF format, alternate export |
-| [Duplicate Detection](#duplicate-detection) | Detect and block duplicate documents |
+| Card                                                                                          | What you set there                                                 |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Purchase Order](./#purchase-order)                                                           | PO matching, tolerances, export of PO lines, supplier item numbers |
+| [Manage Layouts](./#manage-layouts-custom-validation-rules-and-transformation-rules)          | Switch for the Manage Layouts overview                             |
+| [Custom Validation Rules](./#manage-layouts-custom-validation-rules-and-transformation-rules) | Your own validation rules for this document type                   |
+| [Transformation Rules](./#manage-layouts-custom-validation-rules-and-transformation-rules)    | Rules that read a value, change it in steps and write it back      |
+| [Approval & Rejection](./#approval-and-rejection)                                             | Approval workflow and the in-review and reject forms               |
+| [Vertex Tax Verification](vertex-tax-verification.md)                                         | Design the form for the Vertex tax verification                    |
+| [E-Invoice Validation](./#e-invoice-validation)                                               | Validation of XRechnung, ZUGFeRD and Factur-X invoices             |
+| [Table Extraction](./#table-extraction)                                                       | Skip the validation of extracted tables                            |
+| [Export Settings](./#export-settings)                                                         | Multiple export, PDF format, alternate export                      |
+| [Duplicate Detection](./#duplicate-detection)                                                 | Detect and block duplicate documents                               |
 
 ## Purchase Order
 
@@ -64,7 +64,7 @@ Under the chart the panel lists **Rules by priority, per stage**. For every rule
 * Pass **1.1 Exact match for all rules** fails, because 10.40 is not 10.00. The red arrow leads to the next pass.
 * Pass **1.2 Tolerance-based match** succeeds. The difference is 4 %, which is within 5 %. The green arrow leads to **Match found**, and processing stops.
 
-In the diagram this is the path 1.1, then 1.2, then **Match found**. For the path that a single document took, see [PO matching diagnosis](../../../../touchless-po-matching-diagnosis.md). For all details of the rules page see [Purchase Order Matching Rules](purchase-order/purchase-order-matching-rules.md).
+In the diagram this is the path 1.1, then 1.2, then **Match found**. For the path that a single document took, see [PO matching diagnosis](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). For all details of the rules page see [Purchase Order Matching Rules](purchase-order/purchase-order-matching-rules.md).
 
 ### PO Tolerance Setting
 
@@ -86,7 +86,7 @@ The [**Supplier Item Number Map**](purchase-order/supplier-item-number-map-admin
 
 Three cards sit directly below the Purchase Order card:
 
-* **Manage Layouts** switches the Manage Layouts overview on for this document type. See the [Layout Manager](../layout-manager/README.md).
+* **Manage Layouts** switches the Manage Layouts overview on for this document type. See the [Layout Manager](../layout-manager/).
 * **Custom Validation Rules** switches your own validation rules on. **Manage Validation Rules** opens them. See [Custom Validation Rules](../custom-validation-rules.md).
 * **Transformation Rules** switches the transformation rules on. **Manage Transformation Rules** opens them. See [Transformation Rules](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ The **Approval & Rejection** card holds the approval workflow and the forms that
 * **Design In Review Form**: Configures the layout of the review form with the **Layout Builder**.
 * **Design Reject Form**: Configures the layout of the reject form with the **Layout Builder**.
 
-For the **Layout Builder** see the [Layout Manager](../layout-manager/README.md).
+For the **Layout Builder** see the [Layout Manager](../layout-manager/).
 
 ## Vertex Tax Verification
 
@@ -114,7 +114,7 @@ The **Vertex Tax Verification** card holds **Design Vertex Tax Verification**. I
 
 ## E-Invoice Validation
 
-The **E-Invoice Validation** card switches the validation of incoming e-invoices on and lets you decide whether the supplier is notified when an invoice is rejected. See [E-Invoice Validation](../../../document-processing/e-documents/validation-rules.md).
+The **E-Invoice Validation** card switches the validation of incoming e-invoices on and lets you decide whether the supplier is notified when an invoice is rejected. See [E-Invoice Validation](../../../document-processing/e-documents/validation-rules/).
 
 ## Table Extraction
 

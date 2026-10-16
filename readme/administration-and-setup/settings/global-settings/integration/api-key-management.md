@@ -65,4 +65,4 @@ Si vous avez plus de clés qu'il n'en tient sur une page, utilisez les commandes
 
 Traitez la clé comme un mot de passe. Quiconque la détient peut agir sur les documents et les données de votre organisation.
 
-Voir [Stockage sécurisé des identifiants](../../../../overview-and-basics/secure-storage-of-credentials.md).
+Voir [Stockage sécurisé des identifiants](../../../../security/secure-storage-of-credentials.md).

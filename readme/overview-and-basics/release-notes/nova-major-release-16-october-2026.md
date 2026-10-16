@@ -14,7 +14,7 @@ Dieselben ehemaligen Beta-Funktionen werden mit dem **nächsten VESTA-Hotfix, ge
 
 ## Was NOVA für Kunden bietet <a href="#what-nova-adds-for-customers" id="what-nova-adds-for-customers"></a>
 
-Der folgende Vergleich umfasst neu verfügbare ehemalige Beta-Funktionen, neue Fähigkeiten und Erweiterungen bestehender Funktionen. Die VESTA-Ausgangsstand enthält Funktionalität, die nur in der Beta verfügbar war; deren Aufnahme in den regulären NOVA-Funktionsumfang ist eine kundenseitige Release-Änderung.
+Der folgende Vergleich umfasst neu verfügbare ehemalige Beta-Funktionen, neue Fähigkeiten und Erweiterungen bestehender Funktionen. Der VESTA-Ausgangsstand enthält Funktionalität, die nur in der Beta verfügbar war; deren Aufnahme in den regulären NOVA-Funktionsumfang ist eine kundenseitige Release-Änderung.
 
 | Funktion | VESTA-Ausgangsstand (einschließlich Beta) | Was Kunden mit NOVA gewinnen |
 | --- | --- | --- |

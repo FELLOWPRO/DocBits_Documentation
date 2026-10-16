@@ -1,4 +1,4 @@
-# NOVA — Rilascio principale — 4 novembre 2026 (previsto)
+# NOVA – Rilascio principale 4 novembre 2026
 
 **Disponibilità di NOVA R1.1:** Disponibile nell’ambiente di test dal **16 ottobre 2026**. Il rilascio in produzione è previsto per il **4 novembre 2026**.
 

@@ -8,11 +8,11 @@ Elija un canal de versiones para ver qué cambios se aplican a su equipo. **NOVA
 
 | Canal de versiones | Notas de la versión | Enfoque |
 | --- | --- | --- |
-| **NOVA — Versión principal** | [Novedades para clientes](nova-major-release-16-october-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
+| **NOVA – Versión principal** | [Novedades para clientes](nova-major-release-16-october-2026.md) · **4 de noviembre de 2026 (previsto)** | Todas las funciones que antes estaban en beta en VESTA, además de nuevas capacidades y extensiones en comparación con VESTA R1.0.15. |
 | **VESTA — Siguiente hotfix (planificado)** | [11 de noviembre de 2026](vesta-hotfix-11-november-2026.md) | Introduce todas las funciones que antes estaban en beta en VESTA en el conjunto de funciones regular de VESTA. |
 | **VESTA — Versión hotfix** | [14 de octubre de 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Mejoras y correcciones para la versión de producción actual de VESTA. |
 
-## NOVA — Versión principal
+## NOVA – Versión principal 4 de noviembre de 2026
 
 ### Qué obtiene su equipo con NOVA
 

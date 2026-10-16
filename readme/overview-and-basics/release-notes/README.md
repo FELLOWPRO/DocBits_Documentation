@@ -8,11 +8,11 @@ Choose a release channel to see what changes for your team. **NOVA is the major 
 
 | Release channel | Release notes | Focus |
 | --- | --- | --- |
-| **NOVA — Major Release** | [What's new for customers](nova-major-release-16-october-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
+| **NOVA – Major Release** | [What's new for customers](nova-major-release-16-october-2026.md) · **4 November 2026 (planned)** | All former VESTA beta features, plus new capabilities and extensions compared with VESTA R1.0.15. |
 | **VESTA — Next Hotfix (planned)** | [11 November 2026](vesta-hotfix-11-november-2026.md) | Introduces all former VESTA beta features into the regular VESTA feature set. |
 | **VESTA — Hotfix Release** | [14 October 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Improvements and fixes for the current VESTA production release. |
 
-## NOVA — Major Release
+## NOVA – Major Release 4 November 2026
 
 ### What your team gains with NOVA
 

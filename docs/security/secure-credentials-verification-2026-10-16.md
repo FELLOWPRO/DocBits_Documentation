@@ -41,9 +41,11 @@ For TLS 1.2, both ECDSA and RSA variants of the selected AES-GCM method were off
 
 ## Remaining customer assurances
 
+The subsequent [encryption-at-rest review](encryption-at-rest-verification-2026-10-16.md) identifies the DigitalOcean managed database products in use and documents provider encryption for Managed Databases, their managed backups, and Spaces. It supplies the scoped answer to questionnaire item 4.8; broader copy coverage and application-level controls remain distinct.
+
 Before answering the entire questionnaire with an unqualified “yes”, obtain the deployment-specific evidence for:
 
-1. Encryption at rest for account databases, relevant object or volume storage, and backups, including algorithms and key management.
+1. Complete storage-path and copy coverage beyond the named managed services, including additional exports, archives, disaster-recovery copies, and any separate field-level encryption or customer-managed keys.
 2. Transport protection for internal service and database connections and for the customer's specific integration path.
 3. Which vendor roles may access account information or usable integration secrets, and the controls and audit records governing that access.
 

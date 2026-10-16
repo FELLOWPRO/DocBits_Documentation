@@ -69,6 +69,8 @@ Deze verificatie dekt verbindingen met deze openbare eindpunten, ook wanneer and
 
 ## Versleuteling van opgeslagen accountgegevens
 
+DigitalOcean Managed Databases gebruikt volledige volumeversleuteling met LUKS en AES-256-XTS; de beheerde back-ups gebruiken AES-256-CTR. Spaces gebruikt 256-bits AES-XTS op fysieke schijven. [Versleuteling van opgeslagen gegevens](encryption-at-rest.md) beschrijft methoden, sleutelbeheer, back-updekking en het antwoord op vraag 4.8.
+
 Het hashen van wachtwoorden en API-sleutels is een andere maatregel dan het versleutelen van databases, opslagvolumes, objecten en back-ups. De beschreven maatregelen tonen niet aan dat elke gebruikersnaam, elk accountveld of elk integratiegeheim afzonderlijk wordt versleuteld, of dat alle opgeslagen gegevens een bepaald versleutelingsalgoritme gebruiken.
 
 Voor een eis die alle accountgegevens van klanten omvat, vraagt u FELLOWPRO AG om een verklaring voor de specifieke omgeving over de betrokken gegevensopslag en back-ups, versleutelingsmethoden, sleutelbeheer en toegang van medewerkers. Een cloud- of serverless-hostingmodel op zichzelf toont deze eigenschappen niet aan.

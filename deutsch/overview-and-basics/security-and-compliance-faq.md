@@ -4,6 +4,8 @@
 
 Die Angaben zur Speicherung von Zugangsdaten und zu TLS an öffentlichen Endpunkten wurden am **16. Oktober 2026** geprüft. Die folgende Seite beschreibt den bestätigten Umfang und die Angaben, die für die jeweilige Bereitstellung noch bestätigt werden müssen. Siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
+Die Angaben zur Verschlüsselung gespeicherter Daten wurden am **16. Oktober 2026** anhand der DigitalOcean-Sicherheitsdokumentation und Dienst-Metadaten geprüft. Siehe [Verschlüsselung gespeicherter Daten](encryption-at-rest.md), einschließlich Frage 4.8.
+
 ---
 
 ## Legendenzeichen Status
@@ -21,11 +23,11 @@ Die Angaben zur Speicherung von Zugangsdaten und zu TLS an öffentlichen Endpunk
 
 ### 1. Wo genau wird die Produktionsumgebung gehostet?
 
-**Antwort:** Gehostet auf AWS Cloud-Infrastruktur in Frankfurt, Deutschland. Verwendet S3 für Speicherung und OpenSearch für Log-Indexierung. DocBits ist ISO 27001 zertifiziert. Informationen zur Transportverschlüsselung und zum geprüften Umfang finden Sie unter [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
+**Antwort:** Die EU-Produktionsumgebung wird auf DigitalOcean-Cloud-Infrastruktur in Frankfurt, Deutschland, gehostet. DocBits nutzt DigitalOcean Spaces als Speicher sowie verwaltete PostgreSQL-, OpenSearch- und Valkey-Dienste. DocBits ist ISO 27001 zertifiziert. Den Verschlüsselungsumfang beschreiben [Verschlüsselung gespeicherter Daten](encryption-at-rest.md) und [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
 
 **Status:** ✅ Bestätigt
 
-**Notizen:** AWS Frankfurt bestätigt (S3 + OpenSearch). Erfragen Sie den spezifischen AWS-Regionscode (eu-central-1) und ob Single oder Multi-AZ.
+**Notizen:** DigitalOcean Frankfurt: Die verwalteten Datenbankdienste wurden am 16. Oktober 2026 anhand von Infrastruktur-Metadaten bestätigt; die Nutzung von Spaces ist in dieser FAQ dokumentiert.
 
 ---
 
@@ -49,7 +51,7 @@ Backup-Zeitplan: Tägliche, wöchentliche, vierteljährliche und jährliche Sich
 
 **Status:** ✅ Bestätigt
 
-**Notizen:** Umfassender Backup-Zeitplan (täglich/wöchentlich/vierteljährlich/jährlich) über zwei EU-Standorte. Alle Daten bleiben innerhalb der EU. Bestätigen Sie die Backup-Verschlüsselung und die Häufigkeit von Wiederherstellungstests.
+**Notizen:** Umfassender Backup-Zeitplan (täglich/wöchentlich/vierteljährlich/jährlich) über zwei EU-Standorte. Alle Daten bleiben innerhalb der EU. Bestätigen Sie die Backup-Verschlüsselung und die Häufigkeit von Wiederherstellungstests. Die Verschlüsselung der vom Anbieter verwalteten Datenbank-Backups ist unter [Verschlüsselung gespeicherter Daten](encryption-at-rest.md) beschrieben; dies bestätigt nicht jede Kopie im weitergehenden Backup-Zeitplan.
 
 ---
 
@@ -71,9 +73,11 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 
 **Antwort:** Die öffentlichen Endpunkte `app.docbits.com`, `auth.docbits.com` und `api.docbits.com` unterstützen HTTPS mit TLS 1.2 und TLS 1.3. Bei den Prüfungen am 16. Oktober 2026 wurden TLS 1.0 und TLS 1.1 abgewiesen. Anmeldepasswörter und Schlüssel aus der API-Schlüsselverwaltung werden durch Einweg-Hashing geschützt. Hashing ist von der Verschlüsselung von Datenbanken, Speichern und Backups zu unterscheiden.
 
+**Gespeicherte Daten:** DigitalOcean Managed Databases verwenden LUKS-Verschlüsselung der gesamten Volumes mit AES-256-XTS; ihre verwalteten Backups verwenden AES-256-CTR. Spaces nutzt 256-Bit-AES-XTS auf physischen Datenträgern. [Verschlüsselung gespeicherter Daten](encryption-at-rest.md) beschreibt Verfahren, Schlüsselverwaltung, Backup-Umfang und die Antwort auf Frage 4.8.
+
 **Status:** ✅ Teilweise bestätigt
 
-**Notizen:** Die Verschlüsselung sämtlicher gespeicherter Kontoinformationen und Backups, Verschlüsselungsverfahren, Schlüsselverwaltung und der Schutz jeder internen Verbindung erfordern eine Bestätigung für die konkrete Bereitstellung. Eine ISO-27001-Zertifizierung allein belegt keinen bestimmten Algorithmus oder dessen Geltungsbereich. Siehe [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md).
+**Notizen:** Dies umfasst die benannten verwalteten Dienste. Zusätzliche Exporte, Archive, Sicherungskopien, eine etwaige Verschlüsselung einzelner Felder und jede interne Verbindung erfordern eine gesonderte Bestätigung für die Bereitstellung. Speicherverschlüsselung belegt keine Zugriffsbeschränkungen für Mitarbeiter. [Sichere Speicherung von Zugangsdaten](secure-storage-of-credentials.md) erläutert Hashing und die Unterschiede beim Zugriff.
 
 ---
 
@@ -163,11 +167,11 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 
 ### 14. Wie lange werden Zugriffsprotokolle beibehalten?
 
-**Antwort:** Protokolle werden auf AWS S3 in Frankfurt und OpenSearch gespeichert. Kundenzugängliche Protokolle werden 30 Tage lang beibehalten. Interne Protokolle werden 3 Monate lang beibehalten.
+**Antwort:** Protokolle werden auf DigitalOcean Spaces in Frankfurt und OpenSearch gespeichert. Kundenzugängliche Protokolle werden 30 Tage lang beibehalten. Interne Protokolle werden 3 Monate lang beibehalten.
 
 **Status:** ✅ Bestätigt
 
-**Notizen:** S3 + OpenSearch in Frankfurt. 30-Tage Kundenzugriff / 3-Monate interne Aufbewahrung. Bestätigen Sie, ob Protokolle unveränderbar/manipulationssicher sind.
+**Notizen:** DigitalOcean Spaces + OpenSearch in Frankfurt. 30-Tage Kundenzugriff / 3-Monate interne Aufbewahrung. Bestätigen Sie, ob Protokolle unveränderbar/manipulationssicher sind.
 
 ---
 
@@ -177,7 +181,7 @@ EU-Kundendaten werden ausschließlich in Frankfurt gehostet. Derzeit ist keine N
 
 **Status:** ✅ Bestätigt
 
-**Notizen:** Kundenkonfigurierbare Aufbewahrung (30 Tage / 3 Monate). Bestätigen Sie: Umfasst die Löschung alle Kopien (S3, OpenSearch, KI-Trainingsdaten)?
+**Notizen:** Kundenkonfigurierbare Aufbewahrung (30 Tage / 3 Monate). Bestätigen Sie: Umfasst die Löschung alle Kopien (DigitalOcean Spaces, OpenSearch, KI-Trainingsdaten)?
 
 ---
 

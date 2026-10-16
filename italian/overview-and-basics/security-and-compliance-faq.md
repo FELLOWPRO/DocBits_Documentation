@@ -4,6 +4,8 @@
 
 Le informazioni sull’archiviazione delle credenziali e su TLS negli endpoint pubblici sono state verificate il **16 ottobre 2026**. La pagina seguente descrive l’ambito confermato e i dettagli che richiedono ancora una conferma per lo specifico ambiente. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
 
+I dettagli sulla crittografia a riposo sono stati verificati il **16 ottobre 2026** sulla base della documentazione di sicurezza DigitalOcean e dei metadati dei servizi. Vedere [Crittografia dei dati a riposo](encryption-at-rest.md), inclusa la domanda 4.8.
+
 ---
 
 ## Legenda dello Stato
@@ -21,11 +23,11 @@ Le informazioni sull’archiviazione delle credenziali e su TLS negli endpoint p
 
 ### 1. Dove esattamente è ospitato l'ambiente di produzione?
 
-**Risposta:** Ospitato su infrastruttura cloud AWS a Francoforte, Germania. Utilizza S3 per l'archiviazione e OpenSearch per l'indicizzazione dei log. DocBits è certificato ISO 27001. Per la crittografia in transito e l’ambito verificato, vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
+**Risposta:** L’ambiente di produzione UE è ospitato sull’infrastruttura cloud DigitalOcean a Francoforte, Germania. DocBits utilizza DigitalOcean Spaces per l’archiviazione e servizi gestiti PostgreSQL, OpenSearch e Valkey. DocBits è certificato ISO 27001. Vedere [Crittografia dei dati a riposo](encryption-at-rest.md) e [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md) per l’ambito della crittografia.
 
 **Stato:** ✅ Confermato
 
-**Note:** Francoforte AWS confermato (S3 + OpenSearch). Richiedere il codice della regione AWS specifica (eu-central-1) e se singola o multi-AZ.
+**Note:** DigitalOcean Francoforte: i tipi di servizi di database gestiti sono stati confermati dai metadati dell’infrastruttura il 16 ottobre 2026; l’uso di Spaces è documentato in queste FAQ.
 
 ---
 
@@ -49,7 +51,7 @@ Calendario dei backup: Backup giornalieri, settimanali, trimestrali e annuali.
 
 **Stato:** ✅ Confermato
 
-**Note:** Calendario completo dei backup (giornaliero/settimanale/trimestrale/annuale) su due posizioni nell'UE. Tutti i dati rimangono all'interno dell'UE. Confermare la crittografia dei backup e la frequenza del test di ripristino.
+**Note:** Calendario completo dei backup (giornaliero/settimanale/trimestrale/annuale) su due posizioni nell'UE. Tutti i dati rimangono all'interno dell'UE. Confermare la crittografia dei backup e la frequenza del test di ripristino. La crittografia dei backup dei database gestiti dal fornitore è descritta in [Crittografia dei dati a riposo](encryption-at-rest.md); questo non verifica ogni copia del calendario generale dei backup.
 
 ---
 
@@ -71,9 +73,11 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Risposta:** Gli endpoint pubblici `app.docbits.com`, `auth.docbits.com` e `api.docbits.com` supportano HTTPS con TLS 1.2 e TLS 1.3. Le verifiche del 16 ottobre 2026 hanno confermato il rifiuto di TLS 1.0 e TLS 1.1. Le password e le chiavi create tramite la Gestione delle chiavi API sono protette mediante hashing unidirezionale. L’hashing è distinto dalla crittografia di database, archivi e backup.
 
+**A riposo:** DigitalOcean Managed Databases utilizza la crittografia dell’intero volume con LUKS e AES-256-XTS; i suoi backup gestiti utilizzano AES-256-CTR. Spaces utilizza AES-XTS a 256 bit sui dischi fisici. [Crittografia dei dati a riposo](encryption-at-rest.md) descrive metodi, gestione delle chiavi, copertura dei backup e risposta alla domanda 4.8.
+
 **Stato:** ✅ Parziale
 
-**Note:** La crittografia di tutte le informazioni degli account archiviate e dei backup, i metodi di crittografia, la gestione delle chiavi e la protezione di ogni connessione interna richiedono una conferma specifica per l’ambiente. La certificazione ISO 27001, da sola, non dimostra un particolare algoritmo né il suo ambito di applicazione. Vedere [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md).
+**Note:** Questo copre i servizi gestiti indicati. Esportazioni, archivi e copie aggiuntivi, l’eventuale crittografia per campo e ogni connessione interna richiedono una conferma specifica per l’ambiente. La crittografia dell’archiviazione non dimostra restrizioni di accesso per il personale. [Archiviazione sicura delle credenziali](secure-storage-of-credentials.md) spiega hashing e differenze di accesso.
 
 ---
 
@@ -163,11 +167,11 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 ### 14. Quanto tempo vengono conservati i log di accesso?
 
-**Risposta:** I log sono archiviati su AWS S3 a Francoforte e OpenSearch. I log accessibili ai clienti sono conservati per 30 giorni. I log interni sono conservati per 3 mesi.
+**Risposta:** I log sono archiviati su DigitalOcean Spaces a Francoforte e OpenSearch. I log accessibili ai clienti sono conservati per 30 giorni. I log interni sono conservati per 3 mesi.
 
 **Stato:** ✅ Confermato
 
-**Note:** S3 + OpenSearch a Francoforte. Conservazione di 30 giorni per l'accesso dei clienti / 3 mesi per la conservazione interna. Confermare se i log sono immutabili/a prova di manomissione.
+**Note:** DigitalOcean Spaces + OpenSearch a Francoforte. Conservazione di 30 giorni per l'accesso dei clienti / 3 mesi per la conservazione interna. Confermare se i log sono immutabili/a prova di manomissione.
 
 ---
 
@@ -177,7 +181,7 @@ I dati dei clienti dell'UE sono ospitati esclusivamente a Francoforte. Attualmen
 
 **Stato:** ✅ Confermato
 
-**Note:** Conservazione configurabile dal cliente (30 giorni / 3 mesi). Confermare: l'eliminazione include tutte le copie (S3, OpenSearch, dati di addestramento AI)?
+**Note:** Conservazione configurabile dal cliente (30 giorni / 3 mesi). Confermare: l'eliminazione include tutte le copie (DigitalOcean Spaces, OpenSearch, dati di addestramento AI)?
 
 ---
 

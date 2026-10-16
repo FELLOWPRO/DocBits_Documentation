@@ -2,9 +2,9 @@
 
 Esta página explica cómo obtener una cuenta de DocBits y cómo iniciar sesión cuando no tienes tu contraseña:
 
-* [Registro](getting-access-and-signing-in.md#registro) — crea tu propia cuenta de DocBits.
-* [Contraseña olvidada](getting-access-and-signing-in.md#contraseña-olvidada) — restablece tu contraseña con un enlace de restablecimiento.
-* [Primera contraseña para cuentas creadas por el administrador](getting-access-and-signing-in.md#primera-contraseña-para-cuentas-creadas-por-el-administrador) — establece la primera contraseña de una cuenta que tu administrador creó para ti.
+* [Registro](#registro) — crea tu propia cuenta de DocBits.
+* [Contraseña olvidada](#contraseña-olvidada) — restablece tu contraseña con un enlace de restablecimiento.
+* [Primera contraseña para cuentas creadas por el administrador](#primera-contraseña-para-cuentas-creadas-por-el-administrador) — establece la primera contraseña de una cuenta que tu administrador creó para ti.
 
 El inicio de sesión con una cuenta existente y la Autenticación de Dos Factores se tratan en [Autenticación de Dos Factores (2FA)](../../overview-and-basics/two-factor-authentication.md). Usa el menú de idioma en la esquina superior derecha de estos formularios si necesitas otro idioma de visualización.
 
@@ -51,13 +51,14 @@ DocBits almacena las contraseñas como hashes unidireccionales con sal. Una cont
 Si olvidaste tu contraseña:
 
 1. En la pantalla de inicio de sesión, haz clic en **¿Has olvidado tu contraseña?**.
-2.  En la página **Has olvidado tu contraseña**, introduce tu dirección de **Correo electrónico** y haz clic en **Restablecer la contraseña**. Si se muestra un widget de reCAPTCHA, complétalo primero.
+2. En la página **Has olvidado tu contraseña**, introduce tu dirección de **Correo electrónico** y haz clic en **Restablecer la contraseña**. Si se muestra un widget de reCAPTCHA, complétalo primero.
 
-    <figure><img src="../../.gitbook/assets/dbdc741-getting-access-forgot-password-form-es-20261011.png" alt="La página Has olvidado tu contraseña con el campo de correo electrónico"><figcaption><p>La página Has olvidado tu contraseña. Introduce el correo de tu cuenta y DocBits te enviará un enlace de restablecimiento.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc741-getting-access-forgot-password-form-es-20261011.png" alt="La página Has olvidado tu contraseña con el campo de correo electrónico"><figcaption><p>La página Has olvidado tu contraseña. Introduce el correo de tu cuenta y DocBits te enviará un enlace de restablecimiento.</p></figcaption></figure>
 
-    Si no quieres restablecer tu contraseña, haz clic en **Atrás para iniciar sesión** para volver al inicio de sesión.
+   Si no quieres restablecer tu contraseña, haz clic en **Atrás para iniciar sesión** para volver al inicio de sesión.
+
 3. DocBits te envía por correo un **enlace de restablecimiento de contraseña**. Abre el correo y haz clic en el enlace — se abre la página de restablecimiento.
-4. Introduce tu **nueva contraseña dos veces**. Se aplican las mismas reglas de contraseña que durante el [registro](getting-access-and-signing-in.md#reglas-de-contraseña), y una lista de verificación muestra qué reglas se cumplen.
+4. Introduce tu **nueva contraseña dos veces**. Se aplican las mismas reglas de contraseña que durante el [registro](#reglas-de-contraseña), y una lista de verificación muestra qué reglas se cumplen.
 5. Haz clic en **Restablecer la contraseña**. DocBits confirma el cambio y te devuelve a la pantalla de inicio de sesión, donde puedes iniciar sesión con la nueva contraseña.
 
 {% hint style="info" %}
@@ -66,12 +67,12 @@ Los enlaces de restablecimiento caducan tras un breve periodo. Si el enlace ya n
 
 ## Primera contraseña para cuentas creadas por el administrador
 
-Cuando tu administrador te añade como usuario (consulta [Usuarios](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/)), recibes un correo con tus datos de inicio de sesión y un enlace para establecer tu **primera contraseña**. El enlace abre la página **Establecer contraseña**:
+Cuando tu administrador te añade como usuario (consulta [Usuarios](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), recibes un correo con tus datos de inicio de sesión y un enlace para establecer tu **primera contraseña**. El enlace abre la página **Establecer contraseña**:
 
 <figure><img src="../../.gitbook/assets/dbdc741-getting-access-set-password-form-es-20261011.png" alt="La página Establecer contraseña con el mensaje de bienvenida"><figcaption><p>La página Establecer contraseña, que se muestra después de que un administrador creara tu cuenta.</p></figcaption></figure>
 
 1. Haz clic en el enlace del correo de invitación. La página te saluda con "¡Bienvenido a DocBits! Tu cuenta ha sido creada. Por favor, establece tu contraseña para comenzar."
-2. Introduce tu contraseña dos veces — se aplican las mismas [reglas de contraseña](getting-access-and-signing-in.md#reglas-de-contraseña).
+2. Introduce tu contraseña dos veces — se aplican las mismas [reglas de contraseña](#reglas-de-contraseña).
 3. Haz clic en **Establecer contraseña**. Después puedes iniciar sesión con tu correo y esta contraseña.
 
 Los iconos del ojo muestran u ocultan lo que escribiste. Si sales antes de establecer una contraseña, **Ir a Iniciar sesión** te devuelve al inicio de sesión.

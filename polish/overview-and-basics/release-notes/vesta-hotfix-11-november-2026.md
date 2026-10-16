@@ -1,0 +1,28 @@
+# Poprawka VESTA — 11 listopada 2026 r.
+
+> **Kanał wydania:** VESTA · **Status:** Planowane · **Zaplanowana data:** 11 listopada 2026 r.
+
+Następna poprawka VESTA wprowadza **wszystkie funkcje wcześniej dostępne jako beta w VESTA do standardowego zestawu funkcji VESTA**. Te dawne funkcje beta są już zawarte jako standardowe funkcje w [wydaniu głównym NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova).
+
+## Co zmienia się dla Twojego zespołu
+
+* **Dawne funkcje beta stają się standardowymi funkcjami VESTA.** Zespoły, które nie korzystały z wersji beta VESTA, uzyskają dostęp do tych możliwości dzięki tej poprawce.
+* **Kontrola reguł i układów staje się bezpośrednio dostępna.** Obejmuje to **Zarządzaj układami**, [**Niestandardowe reguły walidacji**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) i [**Zasady transformacji**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) w ustawieniach zaawansowanych typu dokumentu, bez linku beta.
+* **Istniejąca konfiguracja i uprawnienia nadal obowiązują.** Administratorzy nadal kontrolują ustawienia organizacji i przełączniki typów dokumentów; użytkownicy muszą posiadać odpowiednie prawa dostępu.
+
+| Wydanie | Dostępność dawnych funkcji beta VESTA |
+| --- | --- |
+| **NOVA** | Obecnie w standardowym zestawie funkcji. |
+| **VESTA — hotfix z 11 listopada 2026 r.** | Planowane wdrożenie do standardowego zestawu funkcji VESTA. |
+
+## Przewodniki dotyczące konfigurowania reguł
+
+* [**Zasady transformacji**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): porządkuj i przepisuj wyodrębnione wartości, twórz sekwencje kroków i podglądaj wyniki. **Obejrzyj:** [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4).
+* [**Niestandardowe reguły walidacji**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definiuj sprawdzenia dla pól i wierszy tabel, wybieraj warunki i poziomy ważności oraz testuj swoje reguły. **Obejrzyj:** [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
+* [**Reguły dopasowywania zamówień**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): konfiguruj typy dopasowań, tolerancje i kolejność wykonania oraz zarządzaj wersjami reguł. **Powiązane wideo — Wybierz właściwą automatyzację:** [Film po polsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pl.mp4) · [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4).
+
+[Przeglądaj wszystkie filmy dotyczące funkcji](nova-major-release-16-october-2026.md#watch-the-feature-videos), w tym układy, Touchless Intelligence, walidację e-faktur oraz sześcioodcinkową serię AI Table.
+
+Ten podgląd zapowiada wdrożenie funkcji, które wcześniej były w wersji beta VESTA. [Notatki do wydania NOVA](nova-major-release-16-october-2026.md) opisują również dodatkowe funkcje i ulepszenia NOVA. Wersje usługi oraz ewentualne dodatkowe poprawki dla hotfixa VESTA zostaną opublikowane po sfinalizowaniu szczegółów wydania.
+
+Zobacz [najnowszy wydany hotfix VESTA — 14 października 2026 r.](incremental-updates-14-october-2026.md) oraz [przegląd wydań](README.md).

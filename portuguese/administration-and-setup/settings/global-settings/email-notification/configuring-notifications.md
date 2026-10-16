@@ -1,6 +1,6 @@
-# Configurando Notificações
+# Configurando notificações
 
-<figure><img src="../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Bildschirmfoto 2024-05-15 um 08.56.36.png" alt=""><figcaption></figcaption></figure>
 
 #### Para acessar as configurações de notificação por e-mail, siga estas etapas:
 

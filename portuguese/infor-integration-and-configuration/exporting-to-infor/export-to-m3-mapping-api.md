@@ -1,4 +1,4 @@
-# Export to M3 Mapping (API)
+# Mapeamento de Exportação para o M3 (API)
 
 ### Seções
 
@@ -37,15 +37,15 @@ Removendo um campo:
 
 * Os campos disponíveis do M3 podem ser consultados abrindo a tela correspondente no M3.
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
 
 * Da mesma forma, você pode obter os nomes dos campos das linhas
 
 ### Header:
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
 Propriedade com a lista de campos: StaticFields
 
@@ -158,6 +158,7 @@ Campos do M3 disponíveis: consulte a API ou a interface do M3
 Campos do DocBits disponíveis: ledger\_account, dimension\_1-12, amount, quantity, quantity2, position
 
 Nova atualização
+
 
 ```
 ###########################

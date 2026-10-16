@@ -3,6 +3,7 @@
 Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao Power BI Desktop** usando o **driver ODBC do PostgreSQL**. Ele aborda a instalação do driver, a configuração do ODBC, a integração com o Power BI e a atualização agendada.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
+{% endembed %}
 
 #### 1. Instale o driver ODBC do PostgreSQL
 
@@ -15,7 +16,7 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 * Abra o **Administrador de Fonte de Dados ODBC (64 bits)** pelo Painel de Controle ou pela Pesquisa do Windows.
 * Vá para a guia **DSN do Sistema** e clique em **Adicionar**.
 * Selecione o driver **PostgreSQL Unicode(x64)** na lista e clique em **Concluir**.
-* Preencha os campos obrigatórios com as credenciais disponíveis em:\n **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
+* Preencha os campos obrigatórios com as credenciais disponíveis em:\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
 <figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
 
@@ -34,7 +35,7 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 * Abra o **Power BI Desktop**.
 *   Selecione **Obter Dados** → **ODBC** → **Conectar**.
 
-    <figure><img src="../../.gitbook/assets/clickhouse_1.png" alt="Obter dados ODBC no Power BI"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Obter dados ODBC no Power BI"><figcaption></figcaption></figure>
 * Na lista de DSN, selecione a fonte configurada (por exemplo, `Sandbox-Read_Only`).
 
 <figure><img src="../../.gitbook/assets/connect_read_only_3.png" alt=""><figcaption></figcaption></figure>
@@ -48,7 +49,7 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 * Abra o esquema **`public`**.
 * Selecione as tabelas que deseja importar.
 
-![](../../.gitbook/assets/connect_read_only_1.png)
+![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Escolha:
   * **Carregar** → importar diretamente para o Power BI
@@ -71,8 +72,8 @@ Este guia mostra como conectar o **banco de dados somente leitura do DocBits ao 
 * No Serviço do Power BI:
   * Vá para o seu conjunto de dados → **Configurações** → **Atualização agendada**
   * Mapeie o seu DSN e forneça as credenciais
-* Mais informações [aqui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
+* Mais informações [aqui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
-#### 7. Exemplos de dashboards e visualizações de dados
+#### 7. Exemplos de dashboards e visualizações de dados&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Exemplo de dashboard do Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Exemplo de dashboard do Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Exemplo de dashboard do Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Exemplo de dashboard do Power BI 4"><figcaption></figcaption></figure></div>

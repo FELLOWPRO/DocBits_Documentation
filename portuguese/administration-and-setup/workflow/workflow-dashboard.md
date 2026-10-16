@@ -1,4 +1,4 @@
-# Dashboard
+# Painel
 
 O **Workflow Dashboard** é a página inicial da área de workflows. Ele mostra o desempenho dos seus workflows — totais de execuções, taxas de sucesso e falha, um gráfico de execuções ao longo do tempo e a atividade recente — e dá acesso à lista de workflows, ao gerenciador de testes e ao Card SDK.
 
@@ -6,13 +6,13 @@ O **Workflow Dashboard** é a página inicial da área de workflows. Ele mostra 
 
 ## Abas
 
-* **Dashboard** — métricas de execução e atividade recente (mostrados acima).
-* **Workflow List** — todos os workflows com tipo, ordem de execução e gatilho. Crie um novo com **New Workflow**.
-* **Test Manager List** — cenários de teste que validam seus workflows; execute-os com **Run All Tests**.
-* **License** — informações de licenciamento dos workflows.
-* **Card SDK** — crie e envie cartões de workflow personalizados (consulte [Card SDK](card-sdk.md)).
+- **Dashboard** — métricas de execução e atividade recente (mostrados acima).
+- **Workflow List** — todos os workflows com tipo, ordem de execução e gatilho. Crie um novo com **New Workflow**.
+- **Test Manager List** — cenários de teste que validam seus workflows; execute-os com **Run All Tests**.
+- **License** — informações de licenciamento dos workflows.
+- **Card SDK** — crie e envie cartões de workflow personalizados (consulte [Card SDK](card-sdk.md)).
 
-A barra de ferramentas também oferece **Templates**, que abre a biblioteca de [Modelos de workflow](standard-workflow-builder/#workflow-templates), e **Import Workflow**, que importa um workflow a partir de um arquivo JSON.
+A barra de ferramentas também oferece **Templates**, que abre a biblioteca de [Modelos de workflow](standard-workflow-builder.md#workflow-templates), e **Import Workflow**, que importa um workflow a partir de um arquivo JSON.
 
 O **Test Manager** permite salvar cenários de teste por workflow e executá-los em conjunto, para confirmar que seus workflows continuam se comportando corretamente após alterações:
 
@@ -20,5 +20,5 @@ O **Test Manager** permite salvar cenários de teste por workflow e executá-los
 
 ## Próximos passos
 
-* Crie uma automação linear com o construtor **Standard Workflow**.
-* Crie um fluxo com ramificações com o construtor **Advanced Workflow**.
+- Crie uma automação linear com o construtor **Standard Workflow**.
+- Crie um fluxo com ramificações com o construtor **Advanced Workflow**.

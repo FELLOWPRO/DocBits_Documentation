@@ -7,6 +7,7 @@ description: Como configurar o Power BI
 Este guia mostra como conectar o **ClickHouse** ao **Power BI Desktop** usando o **driver ODBC**. Ele aborda a instalação do driver, a configuração do ODBC, a integração com o Power BI e a configuração da atualização de dados.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
+{% endembed %}
 
 #### 1. Instale o driver ODBC do ClickHouse
 
@@ -38,10 +39,12 @@ Este guia mostra como conectar o **ClickHouse** ao **Power BI Desktop** usando o
 #### 3. Conecte o ClickHouse ao Power BI
 
 * Abra o **Power BI Desktop**.
-*   Selecione **Obter Dados** → **ODBC** → **Conectar**.\\
+*   Selecione **Obter Dados** → **ODBC** → **Conectar**.\
 
-    <figure><img src="../../.gitbook/assets/clickhouse_1.png" alt="Obter dados ODBC no Power BI"><figcaption></figcaption></figure>
-*   Na lista de DSN, selecione a fonte configurada (por exemplo, `ClickHouse_Prod`).\\
+
+    <figure><img src="../../.gitbook/assets/powerbi_get_data_odbc.png" alt="Obter dados ODBC no Power BI"><figcaption></figcaption></figure>
+*   Na lista de DSN, selecione a fonte configurada (por exemplo, `ClickHouse_Prod`).\
+
 
     <figure><img src="../../.gitbook/assets/powerbi_select_dsn.png" alt="Seleção do DSN no Power BI"><figcaption></figcaption></figure>
 * Clique em **OK**. Insira as credenciais novamente, se solicitado.
@@ -51,7 +54,8 @@ Este guia mostra como conectar o **ClickHouse** ao **Power BI Desktop** usando o
 * No painel **Navegador**, navegue e selecione as tabelas ou views que deseja importar.
 * Escolha:
   * **Carregar**: para importar diretamente
-  *   **Transformar Dados**: para abrir o Power Query e moldar os dados\\
+  *   **Transformar Dados**: para abrir o Power Query e moldar os dados\
+
 
       <figure><img src="../../.gitbook/assets/powerbi_navigator_load_transform.png" alt="Navegador do Power BI com as opções Carregar e Transformar Dados"><figcaption></figcaption></figure>
 
@@ -59,8 +63,8 @@ Este guia mostra como conectar o **ClickHouse** ao **Power BI Desktop** usando o
 
 * Use a tela de relatórios para criar visualizações.
 * Arraste campos, adicione segmentações de dados, escolha tipos de gráfico e use expressões **DAX** conforme necessário.
-* Aproveite o **Editor do Power Query** para limpar ou pivotar seus dados do ClickHouse antes de criar os visuais.
-* Documentação do Power BI: [https://learn.microsoft.com/en-us/power-bi/](https://learn.microsoft.com/en-us/power-bi/)
+* &#x20;Aproveite o **Editor do Power Query** para limpar ou pivotar seus dados do ClickHouse antes de criar os visuais.
+* Documentação do Power BI:  [https://learn.microsoft.com/en-us/power-bi/](https://learn.microsoft.com/en-us/power-bi/)
 
 #### 6. Ative a atualização agendada (opcional)
 
@@ -72,8 +76,8 @@ Este guia mostra como conectar o **ClickHouse** ao **Power BI Desktop** usando o
 * No Serviço do Power BI:
   * Vá para o seu conjunto de dados → **Configurações** → **Atualização agendada**
   * Mapeie o seu DSN e forneça as credenciais
-* Mais informações [aqui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
+* Mais informações [aqui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
-#### 7. Exemplos de dashboards e visualizações de dados
+#### 7. Exemplos de dashboards e visualizações de dados&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Exemplo de dashboard do Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Exemplo de dashboard do Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Exemplo de dashboard do Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Exemplo de dashboard do Power BI 4"><figcaption></figcaption></figure></div>

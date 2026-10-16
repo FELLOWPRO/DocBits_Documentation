@@ -1,4 +1,4 @@
-# Altre impostazioni
+# Mais Configurações
 
 ## Visão Geral
 
@@ -13,18 +13,18 @@
 
 O caminho de navegação no topo da página mostra **Configurações / Tipos de documentos / Mais configurações**. O Assistente de Configurações, à direita da página, explica as configurações do cartão aberto.
 
-| Cartão                                                       | O que você define ali                                                                         |
-| ------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| Ordem de compra                                              | Correspondência de PO, tolerâncias, exportação de linhas de PO, números de item do fornecedor |
-| Gerenciar layouts                                            | Interruptor para a visão geral do Gerenciar layouts                                           |
-| Regras de Validação Personalizadas                           | Suas próprias regras de validação para este tipo de documento                                 |
-| Regras de Transformação                                      | Regras que leem um valor, alteram-no em etapas e o gravam de volta                            |
-| Aprovação e Rejeição                                         | Fluxo de aprovação e os formulários em revisão e de rejeição                                  |
-| [Verificação de impostos Vertex](vertex-tax-verification.md) | Desenhar o formulário da verificação de impostos Vertex                                       |
-| Validação de faturas eletrônicas                             | Validação de faturas XRechnung, ZUGFeRD e Factur-X                                            |
-| Extração de tabela                                           | Ignorar a validação de tabelas extraídas                                                      |
-| Configurações de exportação                                  | Exportação múltipla, formato PDF, exportação alternativa                                      |
-| Detecção de duplicatas                                       | Detectar e bloquear documentos duplicados                                                     |
+| Cartão | O que você define ali |
+| ------ | --------------------- |
+| Ordem de compra | Correspondência de PO, tolerâncias, exportação de linhas de PO, números de item do fornecedor |
+| Gerenciar layouts | Interruptor para a visão geral do Gerenciar layouts |
+| Regras de Validação Personalizadas | Suas próprias regras de validação para este tipo de documento |
+| Regras de Transformação | Regras que leem um valor, alteram-no em etapas e o gravam de volta |
+| Aprovação e Rejeição | Fluxo de aprovação e os formulários em revisão e de rejeição |
+| [Verificação de impostos Vertex](vertex-tax-verification.md) | Desenhar o formulário da verificação de impostos Vertex |
+| Validação de faturas eletrônicas | Validação de faturas XRechnung, ZUGFeRD e Factur-X |
+| Extração de tabela | Ignorar a validação de tabelas extraídas |
+| Configurações de exportação | Exportação múltipla, formato PDF, exportação alternativa |
+| Detecção de duplicatas | Detectar e bloquear documentos duplicados |
 
 ## Ordem de compra
 
@@ -64,7 +64,7 @@ Sob o gráfico, o painel lista **Regras por prioridade, por etapa**. Para cada r
 * A passagem **1.1 Exact match for all rules** falha, porque 10,40 não é 10,00. A seta vermelha leva à próxima passagem.
 * A passagem **1.2 Tolerance-based match** tem êxito. A diferença é de 4 %, o que está dentro de 5 %. A seta verde leva a **Correspondência encontrada**, e o processamento termina.
 
-No diagrama, este é o caminho 1.1, depois 1.2, depois **Correspondência encontrada**. Para o caminho que um único documento percorreu, veja [Touchless Intelligence: diagnóstico de PO Matching](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Para todos os detalhes da página de regras, veja [Regras de Correspondência de Pedido de Compra](purchase-order/purchase-order-matching-rules.md).
+No diagrama, este é o caminho 1.1, depois 1.2, depois **Correspondência encontrada**. Para o caminho que um único documento percorreu, veja [Touchless Intelligence: diagnóstico de PO Matching](../../../../touchless-po-matching-diagnosis.md). Para todos os detalhes da página de regras, veja [Regras de Correspondência de Pedido de Compra](purchase-order/purchase-order-matching-rules.md).
 
 ### Configuração de tolerância PO
 
@@ -86,7 +86,7 @@ O [**Mapa de Números de Itens do Fornecedor**](purchase-order/supplier-item-num
 
 Três cartões ficam logo abaixo do cartão Ordem de compra:
 
-* **Gerenciar layouts** ativa a visão geral do Gerenciar layouts para este tipo de documento. Veja o [Layout Manager](../layout-manager/).
+* **Gerenciar layouts** ativa a visão geral do Gerenciar layouts para este tipo de documento. Veja o [Layout Manager](../layout-manager/README.md).
 * **Regras de Validação Personalizadas** ativa suas próprias regras de validação. **Gerenciar regras de validação** as abre. Veja [Regras de Validação Personalizadas](../custom-validation-rules.md).
 * **Regras de Transformação** ativa as regras de transformação. **Gerenciar regras de transformação** as abre. Veja [Regras de Transformação](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ O cartão **Aprovação e Rejeição** contém o fluxo de aprovação e os formu
 * **Design em forma de revisão**: Configura o layout do formulário de revisão com o **Construtor de layout**.
 * **Formulário de rejeição de design**: Configura o layout do formulário de rejeição com o **Construtor de layout**.
 
-Para o **Construtor de layout**, veja o [Layout Manager](../layout-manager/).
+Para o **Construtor de layout**, veja o [Layout Manager](../layout-manager/README.md).
 
 ## Verificação de impostos Vertex
 
@@ -114,7 +114,7 @@ O cartão **Verificação de impostos Vertex** contém **Verificação de impost
 
 ## Validação de faturas eletrônicas
 
-O cartão **Validação de faturas eletrônicas** ativa a validação das faturas eletrônicas recebidas e permite decidir se o fornecedor é notificado quando uma fatura é rejeitada. Veja [Validação de faturas eletrônicas](../../../document-processing/e-documents/validation-rules/).
+O cartão **Validação de faturas eletrônicas** ativa a validação das faturas eletrônicas recebidas e permite decidir se o fornecedor é notificado quando uma fatura é rejeitada. Veja [Validação de faturas eletrônicas](../../../document-processing/e-documents/validation-rules.md).
 
 ## Extração de tabela
 

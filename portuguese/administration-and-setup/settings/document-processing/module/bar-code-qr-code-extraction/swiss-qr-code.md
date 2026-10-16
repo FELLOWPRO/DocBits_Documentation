@@ -8,7 +8,7 @@ O **Swiss QR Bill** é o padrão nacional de comprovante de pagamento que, desde
 
 As Swiss QR Bills seguem o padrão de pagamentos **ISO 20022** e são emitidas em duas versões: **v1.0** (lançamento inicial) e **v2.0** (atual). O extrator do DocBits suporta ambas. Os payloads reconhecidos são decodificados em um conjunto completo de campos — credor, devedor, IBAN / QR-IBAN, valor, moeda, tipo de referência (QRR, SCOR ou NON), mensagens estruturadas e livres, e esquemas de pagamento alternativos.
 
-<figure><img src="../../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Principais benefícios
 
@@ -20,31 +20,31 @@ As Swiss QR Bills seguem o padrão de pagamentos **ISO 20022** e são emitidas e
 
 ### Detecção
 
-* Prefixo mágico: `SPC\n0100` (v1.0) ou `SPC\n0200` (v2.0)
-* Compatível com ISO 20022
-* O parser também expõe `alt-schemes` (esquemas de pagamento alternativos) quando presentes
+- Prefixo mágico: `SPC\n0100` (v1.0) ou `SPC\n0200` (v2.0)
+- Compatível com ISO 20022
+- O parser também expõe `alt-schemes` (esquemas de pagamento alternativos) quando presentes
 
 ### Campos extraídos
 
 Todos os campos usam o prefixo `swissqr_`:
 
-| Campo                                                                                                  | Descrição                                         |
-| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
-| `swissqr_account`                                                                                      | IBAN ou QR-IBAN do credor                         |
-| `swissqr_creditor_name`                                                                                | Nome do credor                                    |
-| `swissqr_creditor_street`                                                                              | Rua / linha de endereço do credor                 |
-| `swissqr_creditor_city`                                                                                | Cidade do credor                                  |
-| `swissqr_creditor_postal_code`                                                                         | CEP do credor                                     |
-| `swissqr_creditor_country`                                                                             | País do credor (ISO 3166 alpha-2)                 |
-| `swissqr_debtor_name`                                                                                  | Nome do devedor (se impresso)                     |
-| `swissqr_debtor_street`, `swissqr_debtor_city`, `swissqr_debtor_postal_code`, `swissqr_debtor_country` | Endereço do devedor                               |
-| `swissqr_amount`                                                                                       | Valor (decimal)                                   |
-| `swissqr_currency`                                                                                     | Moeda (ISO 4217) — normalmente `CHF` ou `EUR`     |
-| `swissqr_reference`                                                                                    | Referência estruturada (QRR ou SCOR)              |
-| `swissqr_reference_type`                                                                               | `QRR`, `SCOR` ou `NON`                            |
-| `swissqr_unstructured_message`                                                                         | Texto livre de mensagem                           |
-| `swissqr_bill_information`                                                                             | Informações de cobrança estruturadas (S1 / Swico) |
-| `swissqr_alt_schemes`                                                                                  | Procedimentos alternativos (se presentes)         |
+| Campo | Descrição |
+|-------|-----------|
+| `swissqr_account` | IBAN ou QR-IBAN do credor |
+| `swissqr_creditor_name` | Nome do credor |
+| `swissqr_creditor_street` | Rua / linha de endereço do credor |
+| `swissqr_creditor_city` | Cidade do credor |
+| `swissqr_creditor_postal_code` | CEP do credor |
+| `swissqr_creditor_country` | País do credor (ISO 3166 alpha-2) |
+| `swissqr_debtor_name` | Nome do devedor (se impresso) |
+| `swissqr_debtor_street`, `swissqr_debtor_city`, `swissqr_debtor_postal_code`, `swissqr_debtor_country` | Endereço do devedor |
+| `swissqr_amount` | Valor (decimal) |
+| `swissqr_currency` | Moeda (ISO 4217) — normalmente `CHF` ou `EUR` |
+| `swissqr_reference` | Referência estruturada (QRR ou SCOR) |
+| `swissqr_reference_type` | `QRR`, `SCOR` ou `NON` |
+| `swissqr_unstructured_message` | Texto livre de mensagem |
+| `swissqr_bill_information` | Informações de cobrança estruturadas (S1 / Swico) |
+| `swissqr_alt_schemes` | Procedimentos alternativos (se presentes) |
 
 ### Exemplo de resposta da API
 
@@ -77,6 +77,6 @@ A análise do Swiss QR Bill é coberta pelo interruptor geral **Extração de c�
    * Role até a opção **Extração de códigos de barras / QR**.
    * Mova o interruptor para ativá-la.
 
-<figure><img src="../../../../../.gitbook/assets/SCreen.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
 
-Para a lista completa de padrões de QR codes de pagamento, consulte a [página de Visão geral](./).
+Para a lista completa de padrões de QR codes de pagamento, consulte a [página de Visão geral](./README.md).

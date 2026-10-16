@@ -20,7 +20,7 @@ Este guia explica como importar um template de conexão de API (API Connection T
 
 Antes de importar, baixe o template de conexão necessário usando o arquivo abaixo:
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template.xml" %}
+{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
 
 ### Importar o template
 

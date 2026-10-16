@@ -9,7 +9,7 @@
 * Depois de fazer as personalizações desejadas no Gerenciador de Layout, procure o botão “Salvar” para salvar as alterações.
 * Clique neste botão para salvar suas alterações no Gerenciador de Layout. Isso faz o backup de suas personalizações de layout e garante que elas estejam disponíveis para futuras sessões de edição.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_new_script_editor.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
 
 #### Aplicando as alterações ao fluxo de trabalho de processamento de documentos:
 

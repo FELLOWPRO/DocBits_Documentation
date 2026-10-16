@@ -1,4 +1,4 @@
-# Impostazioni OCR
+# OCR Settings
 
 {% embed url="https://youtu.be/5XqEP-5fq6M" %}
 DocBits OCR & E-Text Explained: OCR View, Debug Mode, Quality Settings, Deskew & Header Extraction
@@ -7,27 +7,25 @@ DocBits OCR & E-Text Explained: OCR View, Debug Mode, Quality Settings, Deskew &
 In this video, you’ll learn how OCR and E-text work in DocBits and how to configure them for better extraction accuracy.
 
 DocBits supports two ways to read text:
-
-* **OCR (Optical Character Recognition):** reads printed text from scanned documents and converts it into data you can validate.
-* **E-text:** uses an existing internal text layer (when available) to extract data directly—no OCR needed.
+*   **OCR (Optical Character Recognition):** reads printed text from scanned documents and converts it into data you can validate.
+*   **E-text:** uses an existing internal text layer (when available) to extract data directly—no OCR needed.
 
 **What you’ll learn:**
-
-* How to open OCR View in the Validation Screen
-* How to switch to Debug Mode to inspect OCR extraction details
-* How to compare extracted results with the original document
-* How to enable E-text for a specific supplier (Use E-text if available)
-* How DocBits behaves: E-text first, and OCR fallback if no text layer exists
-* Key OCR settings: minimum OCR quality and what happens when quality is too low
-* Enable Global E-text for all suppliers (when available)
-* Turn on DESKEW to automatically straighten tilted scans
-* Choose the best OCR version for your documents
-* Force OCR for table extraction even when E-text is present
-* **Header extraction options:**
-  * Rules extraction (your predefined rules)
-  * AI extraction (automatic detection)
-  * Execution order when both are enabled: Rules → AI
-  * Recommended: keep both enabled for best accuracy
+*   How to open OCR View in the Validation Screen
+*   How to switch to Debug Mode to inspect OCR extraction details
+*   How to compare extracted results with the original document
+*   How to enable E-text for a specific supplier (Use E-text if available)
+*   How DocBits behaves: E-text first, and OCR fallback if no text layer exists
+*   Key OCR settings: minimum OCR quality and what happens when quality is too low
+*   Enable Global E-text for all suppliers (when available)
+*   Turn on DESKEW to automatically straighten tilted scans
+*   Choose the best OCR version for your documents
+*   Force OCR for table extraction even when E-text is present
+*   **Header extraction options:**
+    *   Rules extraction (your predefined rules)
+    *   AI extraction (automatic detection)
+    *   Execution order when both are enabled: Rules → AI
+    *   Recommended: keep both enabled for best accuracy
 
 ## Overview
 
@@ -54,7 +52,7 @@ If a document does not meet the defined quality level, DocBits provides three op
 * **Throw Error**\
   Document processing will stop entirely, and an error message will be displayed, indicating that the document did not meet the required quality threshold.
 
-<figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ocr_settings_1.png" alt=""><figcaption></figcaption></figure>
 
 ## General OCR Settings
 
@@ -69,7 +67,7 @@ If a document does not meet the defined quality level, DocBits provides three op
     * You are not achieving the desired results with the currently selected version.
     * You are troubleshooting issues related to OCR performance or accuracy.
 
-    <figure><img src="../../../.gitbook/assets/settings_ocr.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/ocr_settings_2.png" alt=""><figcaption></figcaption></figure>
 
 ## OCR Settings for Tables
 

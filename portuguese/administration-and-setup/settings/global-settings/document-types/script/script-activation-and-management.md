@@ -6,7 +6,7 @@
 
 * Abra seu navegador da web e faça login no DocBits com suas credenciais.
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Field Match Score Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_setting.png" alt="Docbits Field Match Score Setting"><figcaption></figcaption></figure>
 
 **Navegue até o Gerenciamento de Scripts:**
 
@@ -20,14 +20,14 @@
 * Uma vez na interface de gerenciamento de scripts, você verá uma lista de todos os scripts existentes.
 * Aqui você pode rolar pela lista para encontrar o script desejado que deseja ativar, desativar ou editar.
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Field Match Score Threshold"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_field_match_score_threshold.png" alt="Docbits Field Match Score Threshold"><figcaption></figcaption></figure>
 
 **Ativando ou desativando um script:**
 
 * Para ativar ou desativar um script, encontre o script relevante na lista e ative ou desative o script.
 * Certifique-se de salvar as alterações após fazer suas seleções.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_edit_script_icon.png" alt="Docbits Save Script Changes"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_save_script_changes.png" alt="Docbits Save Script Changes"><figcaption></figcaption></figure>
 
 **Editando um script:**
 
@@ -38,14 +38,14 @@
 * Clique nele para abrir o editor onde você pode modificar o código do script.
 * Após fazer suas alterações, salve o script novamente.
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Force Validation Setting"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_force_validation_setting.png" alt="Docbits Force Validation Setting"><figcaption></figcaption></figure>
 
 **Revisão e teste:**
 
 * Antes de fazer alterações em um script, revise cuidadosamente o código existente e considere o impacto que suas alterações podem ter.
 * Teste o script em um ambiente de teste para garantir que ele funcione conforme o esperado.
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Validation Rules Example"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_validation_rules_example.png" alt="Docbits Validation Rules Example"><figcaption></figcaption></figure>
 
 **Documentação:**
 

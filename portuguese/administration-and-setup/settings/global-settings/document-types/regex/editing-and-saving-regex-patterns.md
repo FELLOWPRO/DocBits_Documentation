@@ -4,9 +4,9 @@
 
 **Para editar padrões regex existentes e garantir que as alterações funcionem conforme o esperado sem quebrar a funcionalidade existente, você pode seguir o guia abaixo:**
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Regex Edit Settings"><figcaption><p>Configurações: Tipo de Documento</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_regex_edit_settings.png" alt="Docbits Regex Edit Settings"><figcaption><p>Configurações: Tipo de Documento</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Regex Pattern Analysis"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_regex_pattern_analysis.png" alt="Docbits Regex Pattern Analysis"><figcaption></figcaption></figure>
 
 **Analise o padrão existente:**
 
@@ -15,21 +15,21 @@
 
 **Por exemplo: O valor da fatura deve ser lido:**
 
-*   (?<=Rechnungsbetrag:)\[\s]\*((((\d+)\[,.]{1,10})+\d{0,2})|(\d+(?!,)))
+*   (?<=Rechnungsbetrag:)[\s]*((((\d+)[,.]{1,10})+\d{0,2})|(\d+(?!,)))
 
     Rechnungsbetrag: 100.00
 *   Leia o valor com ponto de milhares, mas NÃO passe o ponto
 
-    \[\d.]_\[,\d]_
+    [\d.]_[\,\d]_
 
     Caracteres permitidos: 0123456789,
 *   O valor "P32180" deve ser lido. A palavra âncora aqui é "Invoice Date".
 
-    (?<=InvoiceDate )\[\s]\*P\d{5}
+    (?<=InvoiceDate )[\s]*P\d{5}
 
     Número do cliente Número da fatura Data da fatura P32180 613976 13/05/2019
 
-<figure><img src="../../../../../.gitbook/assets/docbits_regex_management.png" alt="Docbits Import Start Process"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_import_start_process.png" alt="Docbits Import Start Process"><figcaption></figcaption></figure>
 
 **Documente as alterações:**
 
@@ -65,6 +65,6 @@
 
 * Quando tiver certeza de que as alterações foram bem-sucedidas e funcionam conforme o esperado, salve o padrão regex atualizado em sua base de código ou arquivos de configuração para garantir que estejam disponíveis para uso futuro.
 
-<figure><img src="../../../../../.gitbook/assets/image (85) (1).png" alt="Docbits Model Training Continuous"><figcaption><p>Salvar Alterações</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_model_training_continuous.png" alt="Docbits Model Training Continuous"><figcaption><p>Salvar Alterações</p></figcaption></figure>
 
 Ao seguir estas etapas e testar cuidadosamente as alterações nos padrões regex, você pode garantir que seu padrão regex continue a funcionar corretamente enquanto atende aos novos requisitos.

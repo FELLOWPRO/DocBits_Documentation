@@ -1,4 +1,4 @@
-# Modulo di Esportazione
+# Módulo de Exportação
 
 ## Visão Geral
 
@@ -16,4 +16,4 @@ Você pode encontrá-lo em: **Configurações** → **Processamento de Documento
 
 Para instruções detalhadas sobre como configurar cada tipo de exportação, incluindo capturas de tela e descrições de campos, visite o guia completo:
 
-[Visualizar Guia de Configuração de Exportação](../../administration-and-setup/settings/document-processing/export/)
+[Visualizar Guia de Configuração de Exportação](../../administration-and-setup/settings/document-processing/export.md)

@@ -12,6 +12,12 @@ Short videos for everyday users. Watch them in order, or jump to the one you nee
 
 What you see on the validation screen and what each icon, column and button does. About 1.5 minutes.
 
+### 2. Fix a column and teach DocBits
+
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/ai-table-part2/v1/en.mp4" %}
+
+How to pick the right column, give the AI instructions, test a change, and keep it for the next invoices. About 1.7 minutes.
+
 ## When you get the AI table
 
 * An admin has switched on **AI Table extraction** (Settings → Document Processing → Classification and Extraction, see [Settings for admins](./#settings-for-admins)). If it is off, the table area shows _AI Table will display here. Enable in …_.

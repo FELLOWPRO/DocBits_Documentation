@@ -4,6 +4,8 @@
 
 Les informations sur le stockage des identifiants et TLS aux points d’accès publics ont été vérifiées le **16 octobre 2026**. La page suivante précise le périmètre confirmé et les détails qui nécessitent encore une confirmation propre au déploiement. Voir [Stockage sécurisé des identifiants](secure-storage-of-credentials.md).
 
+Les informations sur le chiffrement au repos ont été vérifiées le **16 octobre 2026** à partir de la documentation de sécurité de DigitalOcean et des métadonnées des services. Voir [Chiffrement au repos](encryption-at-rest.md), y compris la question 4.8.
+
 ---
 
 ## Légende du Statut
@@ -21,11 +23,11 @@ Les informations sur le stockage des identifiants et TLS aux points d’accès p
 
 ### 1. Où exactement l'environnement de production est-il hébergé?
 
-**Réponse:** Hébergé sur l'infrastructure cloud AWS à Francfort, Allemagne. Utilise S3 pour le stockage et OpenSearch pour l'indexation des journaux. DocBits est certifiée ISO 27001. Pour le chiffrement en transit et son périmètre vérifié, voir [Stockage sécurisé des identifiants](secure-storage-of-credentials.md).
+**Réponse:** L’environnement de production de l’UE est hébergé sur l’infrastructure cloud DigitalOcean à Francfort, en Allemagne. DocBits utilise DigitalOcean Spaces pour le stockage et des services gérés PostgreSQL, OpenSearch et Valkey. DocBits est certifié ISO 27001. Voir [Chiffrement au repos](encryption-at-rest.md) et [Stockage sécurisé des identifiants](secure-storage-of-credentials.md) pour le périmètre du chiffrement.
 
 **Statut:** ✅ Confirmé
 
-**Notes:** AWS Francfort confirmé (S3 + OpenSearch). Demander le code spécifique de la région AWS (eu-central-1) et si c'est une seule ou multi-AZ.
+**Notes:** DigitalOcean Francfort : les types de services de bases de données gérées ont été confirmés à partir des métadonnées d’infrastructure le 16 octobre 2026 ; l’utilisation de Spaces est documentée dans cette FAQ.
 
 ---
 
@@ -49,7 +51,7 @@ Calendrier de sauvegarde: Sauvegardes quotidiennes, hebdomadaires, trimestrielle
 
 **Statut:** ✅ Confirmé
 
-**Notes:** Calendrier complet de sauvegarde (quotidienne/hebdomadaire/trimestrielle/annuelle) sur deux localités de l'UE. Toutes les données restent au sein de l'UE. Confirmer le chiffrement des sauvegardes et la fréquence des tests de restauration.
+**Notes:** Calendrier complet de sauvegarde (quotidienne/hebdomadaire/trimestrielle/annuelle) sur deux localités de l'UE. Toutes les données restent au sein de l'UE. Confirmer le chiffrement des sauvegardes et la fréquence des tests de restauration. Le chiffrement des sauvegardes de bases de données gérées par le fournisseur est décrit dans [Chiffrement au repos](encryption-at-rest.md) ; cela ne vérifie pas chaque copie du calendrier général de sauvegarde.
 
 ---
 
@@ -71,9 +73,11 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Réponse:** Les points d’accès publics `app.docbits.com`, `auth.docbits.com` et `api.docbits.com` prennent en charge HTTPS avec TLS 1.2 et TLS 1.3. Les vérifications du 16 octobre 2026 ont confirmé le rejet de TLS 1.0 et TLS 1.1. Les mots de passe et les clés créées dans la Gestion des clés API sont protégés par hachage à sens unique. Le hachage est distinct du chiffrement des bases de données, du stockage et des sauvegardes.
 
+**Au repos:** DigitalOcean Managed Databases utilise le chiffrement intégral des volumes avec LUKS et AES-256-XTS ; ses sauvegardes gérées utilisent AES-256-CTR. Spaces utilise AES-XTS 256 bits sur les disques physiques. [Chiffrement au repos](encryption-at-rest.md) décrit les méthodes, la gestion des clés, la couverture des sauvegardes et la réponse à la question 4.8.
+
 **Statut:** ✅ Partiel
 
-**Notes:** Le chiffrement de toutes les informations de compte stockées et des sauvegardes, les méthodes de chiffrement, la gestion des clés et la protection de chaque connexion interne nécessitent une confirmation propre au déploiement. La certification ISO 27001 ne suffit pas à établir un algorithme particulier ni sa couverture. Voir [Stockage sécurisé des identifiants](secure-storage-of-credentials.md).
+**Notes:** Cela couvre les services gérés nommés. Les exports, archives et copies supplémentaires, un éventuel chiffrement par champ et chaque connexion interne nécessitent une confirmation propre au déploiement. Le chiffrement du stockage ne démontre pas de restrictions d’accès du personnel. [Stockage sécurisé des identifiants](secure-storage-of-credentials.md) explique le hachage et les distinctions d’accès.
 
 ---
 
@@ -163,11 +167,11 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 ### 14. Combien de temps les journaux d'accès sont-ils conservés?
 
-**Réponse:** Les journaux sont stockés sur AWS S3 à Francfort et OpenSearch. Les journaux accessibles aux clients sont retenus pendant 30 jours. Les journaux internes sont retenus pendant 3 mois.
+**Réponse:** Les journaux sont stockés sur DigitalOcean Spaces à Francfort et OpenSearch. Les journaux accessibles aux clients sont retenus pendant 30 jours. Les journaux internes sont retenus pendant 3 mois.
 
 **Statut:** ✅ Confirmé
 
-**Notes:** S3 + OpenSearch à Francfort. Rétention de 30 jours client / 3 mois interne. Confirmer si les journaux sont immuables/protégés contre la falsification.
+**Notes:** DigitalOcean Spaces + OpenSearch à Francfort. Rétention de 30 jours client / 3 mois interne. Confirmer si les journaux sont immuables/protégés contre la falsification.
 
 ---
 
@@ -177,7 +181,7 @@ Les données des clients de l'UE sont hébergées exclusivement à Francfort. Au
 
 **Statut:** ✅ Confirmé
 
-**Notes:** Rétention configurable par le client (30 jours / 3 mois). Confirmer: La suppression inclut-elle toutes les copies (S3, OpenSearch, données d'entraînement IA)?
+**Notes:** Rétention configurable par le client (30 jours / 3 mois). Confirmer: La suppression inclut-elle toutes les copies (DigitalOcean Spaces, OpenSearch, données d'entraînement IA)?
 
 ---
 

@@ -2,7 +2,9 @@
 
 **Beschikbaarheid van NOVA R1.1:** Sinds **16 oktober 2026** beschikbaar in de sandbox. De productierelease staat gepland voor **4 november 2026**.
 
-Kies een releasekanaal om te zien wat er verandert voor uw team. **NOVA is de grote release met extra klantmogelijkheden. VESTA-hotfixes verbeteren de huidige productierelease.** Zie de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor beschikbaarheid en het wisselen tussen kanalen.
+**DocBits is het product. NOVA is de naam van de releasecyclus.** [Bekijk de film over de nieuwe DocBits-release](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.mp4) · [Ondertitels](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/nova-release/v1/nl.vtt).
+
+Kies een releasekanaal om te zien wat er verandert voor uw team. **In de NOVA-cyclus verschijnt de nieuwe grote DocBits-release met extra klantmogelijkheden. VESTA-hotfixes verbeteren de huidige productierelease.** Zie de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor beschikbaarheid en het wisselen tussen kanalen.
 
 **Voormalige VESTA-bètafuncties zijn opgenomen in de NOVA-sandbox.** Alle functies die eerder als bèta in VESTA beschikbaar waren, maken deel uit van de reguliere functies van NOVA en kunnen vóór de geplande productierelease in de sandbox worden getest. Ze worden ook reguliere VESTA-functies met de [volgende VESTA-hotfix, gepland voor **11 november 2026**](vesta-hotfix-11-november-2026.md).
 

@@ -16,7 +16,7 @@
 
 **多版本卡片：** CALC\_COLUMNS (v2)、CALC\_COLUMNS\_REGEX (v2)、EDIT\_COLUMN (v2)、AI\_CALC\_MTZ\_ETZ (v2)
 
-**版本模式：** 所有字段操作卡片都遵循 v1 → v2 模式 **关键更改：** v2 增加了国际化 (i18n) 支持和翻译键
+**版本模式：** 所有字段操作卡片都遵循 v1 → v2 模式 **关键更改：** v2 增加了国际化 (i18n) 支持，使用翻译键
 
 📖 [完整版本历史](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/administration-and-setup/changelog/release.md#-data-manipulation-cards) | [卡片版本数据库](https://github.com/Fellow-Consulting-AG/docbits/tree/main/readme/DocFlow/docs/card_version.md)
 
@@ -496,14 +496,14 @@ ACTION_INVERT：切换复选框状态
 **场景：商品编号中包含供应商信息**
 
 ```
-表字段：“Article_Code”
+表格列：“Article_Code”
 值：["SUPP001-2025-A", "SUPP002-2025-B"]
 
 模式：提取供应商代码（前 7 个字符）
     ↓
 计算：SUPP001、SUPP002
     ↓
-存入：“Supplier_Code”字段
+存入：“Supplier_Code”列
 
 结果：
 Article_Code: SUPP001-2025-A  →  Supplier_Code: SUPP001

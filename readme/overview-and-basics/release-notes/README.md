@@ -585,7 +585,7 @@ DocBits 新增强大的顺序工作流和审批历史记录功能，旨在提高
   * 用户操作（例如“已审批”“已拒收”）
   * 每项操作的时间戳
   * 用户审核期间添加的评论或备注
-* 历史记录确保流程透明，并为合规和问题排查提供审计跟踪。[了解详情](https://docs.docbits.com/administration-and-setup/settings/global-settings/document-types/more-settings/approval-history)
+* 历史记录确保流程透明，并为合规和问题排查提供审计跟踪。[了解详情](../../administration-and-setup/settings/global-settings/document-types/more-settings/approval/approval-history.md)
 
 <figure><img src="../../.gitbook/assets/Approval History.png" alt=""><figcaption></figcaption></figure>
 

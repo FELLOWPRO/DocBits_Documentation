@@ -2,7 +2,7 @@
 
 > **Kanał wydania:** VESTA · **Status:** Planowane · **Zaplanowana data:** 11 listopada 2026 r.
 
-Następna poprawka VESTA wprowadza **wszystkie funkcje dostępne wcześniej w wersji beta VESTA do standardowego zestawu funkcji VESTA**. Funkcje te są już dostępne w [środowisku testowym NOVA](nova-major-release-16-october-2026.md#former-vesta-beta-features-included-in-nova); wydanie produkcyjne NOVA jest planowane na **4 listopada 2026 r.**
+Następna poprawka VESTA wprowadza **wszystkie funkcje dostępne wcześniej w wersji beta VESTA do standardowego zestawu funkcji VESTA**. Funkcje te są już dostępne w [środowisku testowym NOVA](nova-major-release.md#former-vesta-beta-features-included-in-nova); wydanie produkcyjne NOVA jest planowane na **4 listopada 2026 r.**
 
 ## Co zmienia się dla Twojego zespołu
 
@@ -21,8 +21,8 @@ Następna poprawka VESTA wprowadza **wszystkie funkcje dostępne wcześniej w we
 * [**Niestandardowe reguły walidacji**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definiuj sprawdzenia dla pól i wierszy tabel, wybieraj warunki i poziomy ważności oraz testuj swoje reguły. **Obejrzyj:** [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
 * [**Reguły dopasowywania zamówień**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): konfiguruj typy dopasowań, tolerancje i kolejność wykonania oraz zarządzaj wersjami reguł. **Powiązane wideo — Wybierz właściwą automatyzację:** [Obejrzyj film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pl.mp4).
 
-[Przeglądaj wszystkie filmy dotyczące funkcji](nova-major-release-16-october-2026.md#watch-the-feature-videos), w tym układy, Touchless Intelligence, walidację e-faktur oraz sześcioodcinkową serię AI Table.
+[Przeglądaj wszystkie filmy dotyczące funkcji](nova-major-release.md#watch-the-feature-videos), w tym układy, Touchless Intelligence, walidację e-faktur oraz sześcioodcinkową serię AI Table.
 
-Ten podgląd zapowiada wdrożenie funkcji, które wcześniej były w wersji beta VESTA. [Notatki do wydania NOVA](nova-major-release-16-october-2026.md) opisują również dodatkowe funkcje i ulepszenia NOVA. Wersje usługi oraz ewentualne dodatkowe poprawki dla hotfixa VESTA zostaną opublikowane po sfinalizowaniu szczegółów wydania.
+Ten podgląd zapowiada wdrożenie funkcji, które wcześniej były w wersji beta VESTA. [Notatki do wydania NOVA](nova-major-release.md) opisują również dodatkowe funkcje i ulepszenia NOVA. Wersje usługi oraz ewentualne dodatkowe poprawki dla hotfixa VESTA zostaną opublikowane po sfinalizowaniu szczegółów wydania.
 
 Zobacz [najnowszy wydany hotfix VESTA — 14 października 2026 r.](incremental-updates-14-october-2026.md) oraz [przegląd wydań](README.md).

@@ -83,7 +83,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 将重复修正转化为自动化改进
 
-现有的 [Touchless Intelligence](../../administration-and-setup/touchless-intelligence.md) 仪表板新增了审核和跟进流程：
+现有的 [Touchless Intelligence](../../administration-and-setup/analytics-dashboard/touchless-intelligence/README.md) 仪表板新增了审核和跟进流程：
 
 * **学习到的规则建议。** 重复的手动修正可以建议一条[转换规则](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md)。管理员可以查看该规则将写入的内容、支持示例，以及该规则将在哪些文档上替换团队已接受的值。建议需经审核后方可成为生效规则。
 * **来自审核者的改进请求。** 用户可以从文档助手提交改进请求，供管理员在 Touchless Intelligence 中审核。请求将说明和决策保留在一起。
@@ -94,7 +94,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 
 ## 设置助手：更多操作和页面说明
 
-[设置助手](../../administration-and-setup/settings/global-settings/company-information/settings-assistant.md)，包括主动的邮件/FTP 健康警告，已在 VESTA 中发布。NOVA 在该现有体验中增加了操作和上下文信息：
+[设置助手](../../administration-and-setup/settings/global-settings/company-information/settings-assistant/README.md)，包括主动的邮件/FTP 健康警告，已在 VESTA 中发布。NOVA 在该现有体验中增加了操作和上下文信息：
 
 * **从健康通知执行连接操作。** 打开受影响的连接，查看可用操作并在助手中确认。健康通知也可以被忽略。基本的按通道警告卡片及其错误/重试信息已在 VESTA 中存在。
 * **可见的停用历史。** 在有记录的情况下，已禁用的导入会显示其关闭时间和操作人。
@@ -123,7 +123,7 @@ NOVA 将之前在 VESTA 中作为测试版提供的所有功能纳入常规功�
 * **附带记录原因的拒绝。** 经授权的审核人员可以从验证报告中拒绝符合条件的文档。报告会根据其错误为审核人员准备一个原因，供其在确认前检查。
 * **更多格式修正。** EDNA 公用事业 CII 发票可被识别，XRechnung 增值税映射的修正改善了相关发票值到达 DocBits 字段的方式。
 
-请参阅 [电子文档验证规则](../../administration-and-setup/settings/document-processing/e-documents/validation-rules.md)。
+请参阅 [电子文档验证规则](../../administration-and-setup/settings/document-processing/e-documents/validation-rules/README.md)。
 
 ## FTP/SFTP 和电子邮件导入
 

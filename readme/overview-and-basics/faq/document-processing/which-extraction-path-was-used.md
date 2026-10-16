@@ -14,7 +14,7 @@
 | 没有任何表格选项卡 | 组织已关闭两项表格设置，因此没有任何内容提取表格。 |
 | *No line items yet* | 路径已运行，但未找到行（没有可读取的文本、页面上没有表格，或规则与此版式不匹配）。 |
 
-表头字段会在值旁显示各自的来源标记：*Extracted using AI*、*Learned from validated AI extraction*、*Extracted using saved rules (FELLOW_KV2)*、*Extracted from electronic document*、*Calculated from vendor master data*。这些标记描述的是表头字段，而不是表格。
+抬头字段会在值旁显示各自的来源标记：*Extracted using AI*、*Learned from validated AI extraction*、*Extracted using saved rules (FELLOW_KV2)*、*Extracted from electronic document*、*Calculated from vendor master data*。这些标记描述的是抬头字段，而不是表格。
 
 ## 2. 检查供应商的配置
 

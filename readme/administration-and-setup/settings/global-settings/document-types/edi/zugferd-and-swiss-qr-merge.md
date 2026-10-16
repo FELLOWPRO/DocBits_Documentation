@@ -26,10 +26,10 @@
 | Creditor.PostalCode | `supplier_plz` | 邮政编码 |
 | Creditor.City | `supplier_city` | 城市名称 |
 | Creditor.Country | `supplier_country` | 国家/地区代码（CH） |
-| Debtor.Name | `company_name` | 收款公司名称 |
-| Debtor.AddressLine1 | `company_street` | 收款方街道地址 |
-| Debtor.PostalCode | `company_plz` | 收款方邮政编码 |
-| Debtor.City | `company_city` | 收款方城市 |
+| Debtor.Name | `company_name` | 付款方公司名称 |
+| Debtor.AddressLine1 | `company_street` | 付款方街道地址 |
+| Debtor.PostalCode | `company_plz` | 付款方邮政编码 |
+| Debtor.City | `company_city` | 付款方城市 |
 
 ## 示例：样例发票处理
 

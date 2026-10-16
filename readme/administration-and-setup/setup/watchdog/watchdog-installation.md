@@ -9,7 +9,7 @@
 * Windows Server 或 Windows 10/11
 * 管理员权限
 * 可连接到 DocBits API 的网络
-* DocBits API 密钥（可在“设置 → WatchDog → 常规”选项卡中获取）
+* DocBits API 密钥（可在“设置 → 文档处理 → WatchDog → 常规”选项卡中获取）
 
 ## 安装步骤
 

@@ -1,5 +1,7 @@
 # Stratégie de cycle de vie des versions DocBits
 
+**Disponibilité de NOVA R1.1 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
+
 DocBits utilise deux canaux de version, **VESTA** et **NOVA**, pour introduire de nouvelles versions et laisser à votre organisation le temps de les évaluer avant de les adopter. Pendant la phase de production parallèle, vous choisissez si et quand passer à la nouvelle version. FELLOWPRO gère ensuite la bascule qui en fait la version de production commune à tous les clients.
 
 Les numéros de version utilisés dans ce guide (R1.0.x, R1.1.x et R1.2) sont donnés à titre d'exemple. Le même cycle de vie se répète pour chaque version successive ; `x` désigne les mises à jour au sein d'une série de versions.

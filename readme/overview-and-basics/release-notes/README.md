@@ -1,12 +1,14 @@
 # Notes de version
 
+**Disponibilité de NOVA R1.1 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
+
 Choisissez un canal de version pour voir les changements pour votre équipe. **NOVA est la version majeure avec des capacités client supplémentaires. Les correctifs VESTA améliorent la version de production actuelle.** Consultez le [cycle de vie des versions](../docbits-release-lifecycle-strategy.md) pour la disponibilité et le changement de canal.
 
-**Les anciennes fonctionnalités bêta de VESTA sont désormais incluses dans NOVA.** Toutes les fonctionnalités précédemment disponibles en bêta dans VESTA font partie de l'ensemble de fonctionnalités standard de NOVA. Elles deviendront également des fonctionnalités standard de VESTA avec le [prochain correctif VESTA, prévu pour le **11 novembre 2026**](vesta-hotfix-11-november-2026.md).
+**Les anciennes fonctionnalités bêta de VESTA sont incluses dans l’environnement de test de NOVA.** Toutes les fonctionnalités précédemment disponibles en bêta dans VESTA font partie des fonctionnalités standard de NOVA et peuvent être testées avant la mise en production prévue. Elles deviendront également des fonctionnalités standard de VESTA avec le [prochain correctif, prévu le **11 novembre 2026**](vesta-hotfix-11-november-2026.md).
 
 | Canal de version | Notes de version | Focus |
 | --- | --- | --- |
-| **NOVA — Version majeure** | [Nouveautés pour les clients](nova-major-release-16-october-2026.md) · Instantané de version du **16 octobre 2026** | Toutes les anciennes fonctionnalités bêta de VESTA, ainsi que de nouvelles capacités et extensions par rapport à VESTA R1.0.15. |
+| **NOVA — Version majeure** | [Nouveautés pour les clients](nova-major-release-16-october-2026.md) · **4 novembre 2026 (prévue)** | Toutes les anciennes fonctionnalités bêta de VESTA, ainsi que de nouvelles capacités et extensions par rapport à VESTA R1.0.15. |
 | **VESTA — Prochain correctif (prévu)** | [11 novembre 2026](vesta-hotfix-11-november-2026.md) | Introduit toutes les anciennes fonctionnalités bêta de VESTA dans l'ensemble de fonctionnalités standard de VESTA. |
 | **VESTA — Version de correctif** | [14 octobre 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Améliorations et correctifs pour la version de production VESTA actuelle. |
 

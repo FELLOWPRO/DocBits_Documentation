@@ -1,5 +1,7 @@
 # Feuille de route DocBits
 
+**Disponibilité de NOVA R1.1 :** Disponible dans l’environnement de test depuis le **16 octobre 2026**. La mise en production est prévue le **4 novembre 2026**.
+
 _État de la planification au 7 octobre 2026. Chaque version indique la date
 sandbox prévue (à partir de laquelle les clients peuvent la tester) et la date
 de production prévue. Les thèmes décrivent ce qui est prévu pour la version,

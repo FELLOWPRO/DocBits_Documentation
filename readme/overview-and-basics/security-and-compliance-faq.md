@@ -4,9 +4,9 @@
 
 La información sobre el almacenamiento de credenciales y TLS en los puntos de conexión públicos se revisó el **16 de octubre de 2026**. La página siguiente detalla el alcance verificado y los aspectos que aún requieren confirmación para cada despliegue. Consulte [Almacenamiento seguro de credenciales](secure-storage-of-credentials.md).
 
-Los detalles del cifrado en reposo se revisaron el **16 de octubre de 2026** con la documentación de seguridad de DigitalOcean y metadatos de servicios. Consulte [Cifrado en reposo](encryption-at-rest.md), incluida la pregunta 4.8.
+Los detalles del cifrado en reposo se revisaron el **16 de octubre de 2026** con la documentación de seguridad de DigitalOcean y metadatos de servicios. Consulte [Cifrado en reposo](../security/encryption-at-rest.md).
 
-Para las preguntas **4.15–4.17**, consulte [Cookies y almacenamiento del navegador](cookies-and-browser-storage.md), [Gestión de vulnerabilidades](vulnerability-management.md), [Otros controles de seguridad](other-security-controls.md).
+Encontrará más información sobre seguridad en [Cookies y almacenamiento del navegador](cookies-and-browser-storage.md), [Gestión de vulnerabilidades](vulnerability-management.md) y [Otros controles de seguridad](other-security-controls.md).
 
 ---
 
@@ -25,7 +25,7 @@ Para las preguntas **4.15–4.17**, consulte [Cookies y almacenamiento del naveg
 
 ### 1. ¿Exactamente dónde se aloja el entorno de producción?
 
-**Respuesta:** El entorno de producción de la UE se aloja en infraestructura de nube DigitalOcean en Fráncfort, Alemania. DocBits utiliza DigitalOcean Spaces para almacenamiento y servicios gestionados PostgreSQL, OpenSearch y Valkey. DocBits está certificado ISO 27001. Consulte [Cifrado en reposo](encryption-at-rest.md) y [Almacenamiento seguro de credenciales](secure-storage-of-credentials.md) para conocer el alcance del cifrado.
+**Respuesta:** El entorno de producción de la UE se aloja en infraestructura de nube DigitalOcean en Fráncfort, Alemania. DocBits utiliza DigitalOcean Spaces para almacenamiento y servicios gestionados PostgreSQL, OpenSearch y Valkey. DocBits está certificado ISO 27001. Consulte [Cifrado en reposo](../security/encryption-at-rest.md) y [Almacenamiento seguro de credenciales](secure-storage-of-credentials.md) para conocer el alcance del cifrado.
 
 **Estado:** ✅ Confirmado
 
@@ -53,7 +53,7 @@ Programa de copias de seguridad: Diarias, semanales, trimestrales y anuales.
 
 **Estado:** ✅ Confirmado
 
-**Notas:** Programa de copias de seguridad integral (diarias/semanales/trimestrales/anuales) en dos ubicaciones de la UE. Todos los datos permanecen dentro de la UE. Confirmar cifrado de copias de seguridad y frecuencia de pruebas de restauración. El cifrado de las copias de bases de datos gestionadas por el proveedor se describe en [Cifrado en reposo](encryption-at-rest.md); esto no verifica cada copia del calendario general de copias de seguridad.
+**Notas:** Programa de copias de seguridad integral (diarias/semanales/trimestrales/anuales) en dos ubicaciones de la UE. Todos los datos permanecen dentro de la UE. Confirmar cifrado de copias de seguridad y frecuencia de pruebas de restauración. El cifrado de las copias de bases de datos gestionadas por el proveedor se describe en [Cifrado en reposo](../security/encryption-at-rest.md); esto no verifica cada copia del calendario general de copias de seguridad.
 
 ---
 
@@ -75,7 +75,7 @@ Los datos de clientes de la UE se alojan exclusivamente en Fráncfort. Actualmen
 
 **Respuesta:** Los puntos de conexión públicos `app.docbits.com`, `auth.docbits.com` y `api.docbits.com` admiten HTTPS con TLS 1.2 y TLS 1.3. Las comprobaciones del 16 de octubre de 2026 rechazaron TLS 1.0 y TLS 1.1. Las contraseñas y las claves creadas mediante la Gestión de claves API se protegen mediante hashes unidireccionales. El uso de hashes es distinto del cifrado de bases de datos, almacenamiento y copias de seguridad.
 
-**En reposo:** DigitalOcean Managed Databases utiliza cifrado de volúmenes completos con LUKS y AES-256-XTS; sus copias gestionadas utilizan AES-256-CTR. Spaces utiliza AES-XTS de 256 bits en discos físicos. [Cifrado en reposo](encryption-at-rest.md) explica los métodos, la gestión de claves, la cobertura de las copias y la respuesta a la pregunta 4.8.
+**En reposo:** DigitalOcean Managed Databases utiliza cifrado de volúmenes completos con LUKS y AES-256-XTS; sus copias gestionadas utilizan AES-256-CTR. Spaces utiliza AES-XTS de 256 bits en discos físicos. [Cifrado en reposo](../security/encryption-at-rest.md) explica los métodos, la gestión de claves y la cobertura de las copias.
 
 **Estado:** ✅ Parcial
 

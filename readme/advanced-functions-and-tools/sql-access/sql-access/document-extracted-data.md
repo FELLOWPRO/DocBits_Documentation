@@ -16,63 +16,63 @@
 ## 分析与描述
 
 ```markdown
-# Technical Documentation for `public.document_extracted_data` Table
+# `public.document_extracted_data` 表技术文档
 
-## Introduction
+## 简介
 
-The `public.document_extracted_data` table is designed to store extracted data from various documents, likely for the purpose of document processing and analysis. Each entry in the table corresponds to a specific field extracted from a document, such as an invoice, and includes metadata about the extraction process. The table facilitates tracking and managing document data by associating it with organizations and specific documents.
+`public.document_extracted_data` 表用于存储从各种文档中提取的数据，可能用于文档处理和分析。表中的每条记录对应从某份文档（例如发票）中提取的一个特定字段，并包含有关提取过程的元数据。此表通过关联组织和特定文档，便于跟踪和管理文档数据。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each extracted data entry.
-- **Role**: Primary key.
-- **Typical Contents**: A UUID formatted string uniquely identifying the extracted data record.
+- **含义**：每条提取数据记录的唯一标识符。
+- **作用**：主键。
+- **典型内容**：采用 UUID 格式的字符串，用于唯一标识提取的数据记录。
 
 ### org_id
-- **Meaning**: Identifier for the organization associated with the document data.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID formatted string representing the organization.
+- **含义**：与文档数据关联的组织标识符。
+- **作用**：外键。
+- **典型内容**：表示组织的 UUID 格式字符串。
 
 ### doc_id
-- **Meaning**: Identifier for the document from which data has been extracted.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID formatted string representing the document.
+- **含义**：提取数据所依据的文档标识符。
+- **作用**：外键。
+- **典型内容**：表示文档的 UUID 格式字符串。
 
 ### field_name
-- **Meaning**: The name of the field extracted from the document.
-- **Role**: Descriptive field.
-- **Typical Contents**: Strings like 'invoice_id', 'invoice_date', etc., indicating the type of data extracted.
+- **含义**：从文档中提取的字段名称。
+- **作用**：描述性字段。
+- **典型内容**：如 'invoice_id'、'invoice_date' 等字符串，用于指示所提取数据的类型。
 
 ### field_value
-- **Meaning**: The value associated with the extracted field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Strings representing various data types like invoice numbers, dates, or amounts.
+- **含义**：与所提取字段关联的值。
+- **作用**：描述性字段。
+- **典型内容**：表示各种数据类型的字符串，例如发票编号、日期或金额。
 
 ### created_by
-- **Meaning**: The identifier of the user or process that created the data entry.
-- **Role**: Technical field.
-- **Typical Contents**: Integer representing a user ID or process ID.
+- **含义**：创建该数据记录的用户或流程的标识符。
+- **作用**：技术字段。
+- **典型内容**：表示用户 ID 或流程 ID 的整数。
 
 ### created_on
-- **Meaning**: The timestamp when the data entry was created.
-- **Role**: Technical field.
-- **Typical Contents**: Timestamp with timezone data indicating the creation date and time.
+- **含义**：创建该数据记录时的时间戳。
+- **作用**：技术字段。
+- **典型内容**：包含时区信息的时间戳，表示创建日期和时间。
 
 ### last_modified_on
-- **Meaning**: The timestamp of the last modification made to the data entry.
-- **Role**: Technical field.
-- **Typical Contents**: Timestamp with timezone data indicating the last modification date and time (can be null if never modified).
+- **含义**：最后一次修改该数据记录时的时间戳。
+- **作用**：技术字段。
+- **典型内容**：包含时区信息的时间戳，表示最后修改日期和时间（如果从未修改过，则可以为 null）。
 
 ### is_deleted
-- **Meaning**: A flag indicating whether the data entry has been marked as deleted.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value, with `False` indicating active entries and `True` indicating deleted entries.
+- **含义**：指示该数据记录是否已标记为删除的标志。
+- **作用**：技术字段。
+- **典型内容**：布尔值，`False` 表示记录有效，`True` 表示记录已删除。
 
 ### field_type
-- **Meaning**: The type of data stored in the `field_value` column.
-- **Role**: Descriptive field.
-- **Typical Contents**: Strings like 'date', 'AMOUNT', or null if the type is not specified.
+- **含义**：`field_value` 列中存储的数据类型。
+- **作用**：描述性字段。
+- **典型内容**：如 'date'、'AMOUNT' 等字符串；如果未指定类型，则为 null。
 
-This structured data model allows for efficient storage and retrieval of document-related data, supporting a range of applications from invoice processing to compliance management.
+此结构化数据模型能够高效地存储和检索文档相关数据，支持从发票处理到合规管理等多种应用。
 ```

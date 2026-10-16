@@ -24,102 +24,101 @@
 ## 分析与描述
 
 ```markdown
-# Technical Documentation for `public.supplier_address` Table
+# `public.supplier_address` 表的技术文档
 
-## Introduction
+## 简介
 
-The `public.supplier_address` table is designed to store information related to the addresses of suppliers. It contains various fields that capture details such as organizational IDs, customer and supplier numbers, multiple address lines, contact details, creation and modification metadata, and deletion status. This table is likely used in a system to manage supplier information and their respective addresses, which can be critical for logistics, billing, and contact purposes.
+`public.supplier_address` 表用于存储与供应商地址相关的信息。该表包含多个字段，用于记录组织 ID、客户编号和供应商编号、多行地址、联系方式、创建和修改元数据以及删除状态等详细信息。该表可能用于管理系统中的供应商信息及其对应地址，这些信息对物流、账单处理和联系供应商都可能很重要。
 
-## Column Descriptions
+## 字段说明
 
 ### org_id
-- **Meaning**: This column stores the unique identifier for the organization.
-- **Role**: Foreign key, possibly linking to an organization table.
-- **Typical Contents**: UUID representing an organization.
+- **含义**：此字段存储组织的唯一标识符。
+- **作用**：外键，可能关联到组织表。
+- **典型内容**：表示组织的 UUID。
 
 ### customer_number
-- **Meaning**: This column may store a unique number assigned to customers.
-- **Role**: Identifier for customers.
-- **Typical Contents**: Alphanumeric string representing customer numbers.
+- **含义**：此字段可能存储分配给客户的唯一编号。
+- **作用**：客户标识符。
+- **典型内容**：表示客户编号的字母数字字符串。
 
 ### supplier_number
-- **Meaning**: This column stores a unique number assigned to suppliers.
-- **Role**: Identifier for suppliers.
-- **Typical Contents**: Numeric string representing supplier numbers.
+- **含义**：此字段存储分配给供应商的唯一编号。
+- **作用**：供应商标识符。
+- **典型内容**：表示供应商编号的数字字符串。
 
 ### address_id
-- **Meaning**: This column likely stores the type of address, such as 'Discrete' or 'Text'.
-- **Role**: Descriptive field for address categorization.
-- **Typical Contents**: Values like 'Discrete', 'Text'.
+- **含义**：此字段可能存储地址类型，例如 'Discrete' 或 'Text'。
+- **作用**：用于对地址进行分类的描述性字段。
+- **典型内容**：如 'Discrete'、'Text' 这样的值。
 
 ### supplier_name
-- **Meaning**: This column stores the name of the supplier.
-- **Role**: Descriptive field for supplier identification.
-- **Typical Contents**: Name of the supplier, e.g., "Cake Corp. GmbH Qualitätsstrawberrys".
+- **含义**：此字段存储供应商名称。
+- **作用**：用于识别供应商的描述性字段。
+- **典型内容**：供应商名称，例如 "Cake Corp. GmbH Qualitätsstrawberrys"。
 
 ### address_1
-- **Meaning**: This column stores the primary line of the supplier's address.
-- **Role**: Descriptive field for address information.
-- **Typical Contents**: Street address, e.g., "Irrweg. 42, D-12345 Blastadt".
+- **含义**：此字段存储供应商地址的第一行。
+- **作用**：用于记录地址信息的描述性字段。
+- **典型内容**：街道地址，例如 "Irrweg. 42, D-12345 Blastadt"。
 
 ### address_2
-- **Meaning**: This column stores the second line of the supplier's address, if applicable.
-- **Role**: Supplementary field for address information.
-- **Typical Contents**: Additional address details, often left empty.
+- **含义**：此字段存储供应商地址的第二行（如适用）。
+- **作用**：用于记录地址信息的补充字段。
+- **典型内容**：其他地址详情，通常为空。
 
 ### address_3
-- **Meaning**: This column stores the third line of the supplier's address, if applicable.
-- **Role**: Supplementary field for address information.
-- **Typical Contents**: Additional address details, often left empty.
+- **含义**：此字段存储供应商地址的第三行（如适用）。
+- **作用**：用于记录地址信息的补充字段。
+- **典型内容**：其他地址详情，通常为空。
 
 ### address_4
-- **Meaning**: This column stores the fourth line of the supplier's address, if applicable.
-- **Role**: Supplementary field for address information.
-- **Typical Contents**: Additional address details, often left empty.
+- **含义**：此字段存储供应商地址的第四行（如适用）。
+- **作用**：用于记录地址信息的补充字段。
+- **典型内容**：其他地址详情，通常为空。
 
 ### zip_code
-- **Meaning**: This column stores the postal code for the supplier's address.
-- **Role**: Descriptive field for geographical identification.
-- **Typical Contents**: Numeric postal code, e.g., "06449".
+- **含义**：此字段存储供应商地址的邮政编码。
+- **作用**：用于地理位置识别的描述性字段。
+- **典型内容**：数字邮政编码，例如 "06449"。
 
 ### town_city
-- **Meaning**: This column stores the town or city name for the supplier's address.
-- **Role**: Descriptive field for geographical identification.
-- **Typical Contents**: Name of the town or city, e.g., "Aschersleben".
+- **含义**：此字段存储供应商地址所在城镇或城市的名称。
+- **作用**：用于地理位置识别的描述性字段。
+- **典型内容**：城镇或城市名称，例如 "Aschersleben"。
 
 ### country_code
-- **Meaning**: This column stores the ISO country code for the supplier's address.
-- **Role**: Descriptive field for country identification.
-- **Typical Contents**: Two-letter country code, e.g., "DE".
+- **含义**：此字段存储供应商地址所在国家或地区的 ISO 国家代码。
+- **作用**：用于识别国家或地区的描述性字段。
+- **典型内容**：两位字母的国家代码，例如 "DE"。
 
 ### created_by
-- **Meaning**: This column stores the identifier of the user or system that created the record.
-- **Role**: Technical field for tracking record creation.
-- **Typical Contents**: Integer representing a user ID.
+- **含义**：此字段存储创建该记录的用户或系统的标识符。
+- **作用**：用于追踪记录创建者的技术字段。
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_on
-- **Meaning**: This column stores the timestamp of when the record was created.
-- **Role**: Technical field for tracking record creation time.
-- **Typical Contents**: Timestamp with timezone, e.g., "2021-11-25 11:24:33 UTC".
+- **含义**：此字段存储记录的创建时间戳。
+- **作用**：用于追踪记录创建时间的技术字段。
+- **典型内容**：带时区的时间戳，例如 "2021-11-25 11:24:33 UTC"。
 
 ### last_modified_on
-- **Meaning**: This column stores the timestamp of the last modification of the record.
-- **Role**: Technical field for tracking the last update time.
-- **Typical Contents**: Timestamp with timezone, often left as `None`.
+- **含义**：此字段存储记录最后一次修改的时间戳。
+- **作用**：用于追踪最后更新时间的技术字段。
+- **典型内容**：带时区的时间戳，通常为 `None`。
 
 ### is_deleted
-- **Meaning**: This column indicates whether the record is marked as deleted.
-- **Role**: Technical field for soft delete functionality.
-- **Typical Contents**: Boolean value, e.g., `False`.
+- **含义**：此字段指示记录是否标记为已删除。
+- **作用**：用于软删除功能的技术字段。
+- **典型内容**：布尔值，例如 `False`。
 
 ### sub_org_id
-- **Meaning**: This column stores an identifier for a sub-organization, if applicable.
-- **Role**: Foreign key or identifier for sub-organizations.
-- **Typical Contents**: UUID, often left empty.
+- **含义**：此字段存储子组织的标识符（如适用）。
+- **作用**：子组织的外键或标识符。
+- **典型内容**：UUID，通常为空。
 
 ### id
-- **Meaning**: This column stores the unique identifier for the record.
-- **Role**: Primary key for the table.
-- **Typical Contents**: UUID representing the record.
-
+- **含义**：此字段存储记录的唯一标识符。
+- **作用**：该表的主键。
+- **典型内容**：表示记录的 UUID。
 ```

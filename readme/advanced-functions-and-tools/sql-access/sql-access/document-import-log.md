@@ -28,123 +28,123 @@
 ## 分析与说明
 
 ```markdown
-# Technical Documentation for `public.document_import_log` Table
+# `public.document_import_log` 表技术文档
 
-## Introduction
+## 简介
 
-The `public.document_import_log` table is designed to log the details of document imports into the system. It captures information about each document, including its origin, import status, and related metadata. This table is essential for tracking document import activities and diagnosing any issues that may arise during the import process.
+`public.document_import_log` 表用于记录文档导入系统的详细信息。它会记录每份文档的相关信息，包括来源、导入状态及相关元数据。此表对于跟踪文档导入活动以及诊断导入过程中可能出现的问题至关重要。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each import log entry.
-- **Role**: Primary Key
-- **Typical Contents**: Sequential integer values that uniquely identify each record.
+- **含义**：每条导入日志记录的唯一标识符。
+- **作用**：主键
+- **典型内容**：用于唯一标识每条记录的顺序整数值。
 
 ### org_id
-- **Meaning**: The identifier for the organization associated with the import.
-- **Role**: Foreign Key
-- **Typical Contents**: UUID or similar unique string identifier representing the organization.
+- **含义**：与此次导入相关的组织标识符。
+- **作用**：外键
+- **典型内容**：表示组织的 UUID 或类似的唯一字符串标识符。
 
 ### sub_org_id
-- **Meaning**: The identifier for a sub-organization or department within the main organization.
-- **Role**: Foreign Key
-- **Typical Contents**: UUID or similar unique string identifier; may be `None` if not applicable.
+- **含义**：主组织内的子组织或部门标识符。
+- **作用**：外键
+- **典型内容**：UUID 或类似的唯一字符串标识符；如不适用，则可能为 `None`。
 
 ### original_filename
-- **Meaning**: The original name of the document file as it was uploaded.
-- **Role**: Descriptive Field
-- **Typical Contents**: String representing the filename, e.g., `anton_invoice-1.pdf`.
+- **含义**：文档上传时的原始文件名。
+- **作用**：描述性字段
+- **典型内容**：表示文件名的字符串，例如 `anton_invoice-1.pdf`。
 
 ### filename
-- **Meaning**: The name of the document file after it has been processed or stored in the system.
-- **Role**: Descriptive Field
-- **Typical Contents**: String representing the filename, often identical to `original_filename`.
+- **含义**：文档经过处理或存储到系统后使用的文件名。
+- **作用**：描述性字段
+- **典型内容**：表示文件名的字符串，通常与 `original_filename` 相同。
 
 ### imported_on
-- **Meaning**: The date and time when the document was imported.
-- **Role**: Descriptive Field
-- **Typical Contents**: ISO 8601 formatted timestamp.
+- **含义**：文档导入的日期和时间。
+- **作用**：描述性字段
+- **典型内容**：采用 ISO 8601 格式的时间戳。
 
 ### source_type
-- **Meaning**: The type of source from which the document was imported.
-- **Role**: Descriptive Field
-- **Typical Contents**: String, e.g., `EMAIL`, indicating the source type.
+- **含义**：导入文档的来源类型。
+- **作用**：描述性字段
+- **典型内容**：字符串，例如 `EMAIL`，用于指示来源类型。
 
 ### source
-- **Meaning**: Detailed information about the source of the import.
-- **Role**: Descriptive Field
-- **Typical Contents**: String detailing the source, e.g., `Email:O365:demo@fellow-digital.de:Tini Test`.
+- **含义**：有关导入来源的详细信息。
+- **作用**：描述性字段
+- **典型内容**：描述来源的字符串，例如 `Email:O365:demo@fellow-digital.de:Tini Test`。
 
 ### success
-- **Meaning**: Indicates whether the import was successful.
-- **Role**: Status Field
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：指示导入是否成功。
+- **作用**：状态字段
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### created_by
-- **Meaning**: The identifier of the user who initiated the import.
-- **Role**: Foreign Key
-- **Typical Contents**: Integer representing user ID.
+- **含义**：发起导入的用户标识符。
+- **作用**：外键
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_on
-- **Meaning**: The date and time when the import log entry was created.
-- **Role**: Technical Field
-- **Typical Contents**: Timestamp with timezone.
+- **含义**：创建导入日志记录的日期和时间。
+- **作用**：技术字段
+- **典型内容**：带时区的时间戳。
 
 ### last_modified_on
-- **Meaning**: The date and time when the import log entry was last modified.
-- **Role**: Technical Field
-- **Typical Contents**: Timestamp with timezone; may be `None` if not modified.
+- **含义**：上次修改导入日志记录的日期和时间。
+- **作用**：技术字段
+- **典型内容**：带时区的时间戳；未修改时可能为 `None`。
 
 ### is_deleted
-- **Meaning**: Indicates whether the import log entry has been marked as deleted.
-- **Role**: Status Field
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：指示导入日志记录是否已标记为删除。
+- **作用**：状态字段
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### import_id
-- **Meaning**: A unique identifier for the import process.
-- **Role**: Technical Field
-- **Typical Contents**: String or text representing a unique process ID.
+- **含义**：导入流程的唯一标识符。
+- **作用**：技术字段
+- **典型内容**：表示唯一流程 ID 的字符串或文本。
 
 ### extra_data
-- **Meaning**: Additional metadata related to the import.
-- **Role**: Descriptive Field
-- **Typical Contents**: JSON string containing extra data, such as date, sender, subject, and count.
+- **含义**：与导入相关的附加元数据。
+- **作用**：描述性字段
+- **典型内容**：包含日期、发件人、主题和数量等额外数据的 JSON 字符串。
 
 ### doc_id
-- **Meaning**: The identifier for the document.
-- **Role**: Foreign Key
-- **Typical Contents**: UUID or similar unique string identifier; may be `None`.
+- **含义**：文档标识符。
+- **作用**：外键
+- **典型内容**：UUID 或类似的唯一字符串标识符；也可能为 `None`。
 
 ### email_connection_id
-- **Meaning**: The identifier for the email connection used in the import.
-- **Role**: Foreign Key
-- **Typical Contents**: Integer representing email connection ID; may be `None`.
+- **含义**：导入时使用的电子邮件连接标识符。
+- **作用**：外键
+- **典型内容**：表示电子邮件连接 ID 的整数；也可能为 `None`。
 
 ### subject
-- **Meaning**: The subject line of the email from which the document was imported.
-- **Role**: Descriptive Field
-- **Typical Contents**: String representing the email subject.
+- **含义**：导入文档所来自的电子邮件主题行。
+- **作用**：描述性字段
+- **典型内容**：表示电子邮件主题的字符串。
 
 ### body
-- **Meaning**: The body content of the email from which the document was imported.
-- **Role**: Descriptive Field
-- **Typical Contents**: Text containing the email body content; may be `None`.
+- **含义**：导入文档所来自的电子邮件正文内容。
+- **作用**：描述性字段
+- **典型内容**：包含电子邮件正文内容的文本；也可能为 `None`。
 
 ### sender
-- **Meaning**: The email address of the sender of the document.
-- **Role**: Descriptive Field
-- **Typical Contents**: String containing the sender's email address.
+- **含义**：文档发件人的电子邮件地址。
+- **作用**：描述性字段
+- **典型内容**：包含发件人电子邮件地址的字符串。
 
 ### error_resp
-- **Meaning**: Error response or message if the import failed.
-- **Role**: Status Field
-- **Typical Contents**: String containing error details; may be `None`.
+- **含义**：导入失败时返回的错误响应或消息。
+- **作用**：状态字段
+- **典型内容**：包含错误详情的字符串；也可能为 `None`。
 
 ### source_received_on
-- **Meaning**: The date and time when the document was received from the source.
-- **Role**: Descriptive Field
-- **Typical Contents**: Timestamp with timezone.
+- **含义**：从来源接收到文档的日期和时间。
+- **作用**：描述性字段
+- **典型内容**：带时区的时间戳。
 
-This documentation provides a detailed overview of the `public.document_import_log` table and its columns, which are essential for understanding and managing document imports within the system.
+本文档详细介绍了 `public.document_import_log` 表及其字段，这些信息对于理解和管理系统中的文档导入至关重要。
 ```

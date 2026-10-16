@@ -167,7 +167,7 @@ def test_dry_run_writes_nothing(tmp_path):
 
 
 def test_every_language_has_its_own_folder():
-    assert len(set(lb.LANGS.values())) == len(lb.LANGS) == 7
+    assert len(set(lb.LANGS.values())) == len(lb.LANGS) == 8
     assert pytest is not None
 
 

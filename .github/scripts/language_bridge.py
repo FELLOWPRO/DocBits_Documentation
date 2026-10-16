@@ -2,10 +2,10 @@
 """Bridge a translation branch into the folder GitBook imports.
 
 The translation team and the nightly docs bots write German, Spanish, ...
-pages to the language branches (`de`, `es`, `fr`, `it`, `pt`, `pl`, `nl`),
+pages to the language branches (`de`, `es`, `fr`, `it`, `pt`, `pl`, `nl`, `zh`),
 under `readme/`. The GitBook language spaces, however, import
 `main:<folder>/` (Git Sync, "GitHub -> GitBook"): `deutsch/`, `espanol/`,
-`french/`, `italian/`, `portuguese/`, `polish/`, `dutch/`. Without a bridge,
+`french/`, `italian/`, `portuguese/`, `polish/`, `dutch/`, `chinese/`. Without a bridge,
 a translation merged into a language branch never reaches GitBook.
 
     language_bridge.py sync --lang de --source /path/to/checkout-of-branch-de
@@ -57,6 +57,7 @@ LANGS = {
     "pt": "portuguese",
     "pl": "polish",
     "nl": "dutch",
+    "zh": "chinese",
 }
 
 NAV_LINE = re.compile(r"^(\s*)\* \[([^\]]*)\]\(([^)\s]+\.md)\)\s*$")

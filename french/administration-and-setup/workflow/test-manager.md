@@ -12,11 +12,11 @@ Un scénario de test capture un workflow, une entrée d'exemple et le **résulta
 
 ## Travailler avec les scénarios
 
-- **Add Test Scenario** — créez un nouveau scénario à partir d'un workflow et d'un document d'exemple.
-- **Run All Tests** — exécutez tous les scénarios d'un seul coup et voyez, en un coup d'œil, quels workflows réussissent toujours.
-- **View Details** — ouvrez un scénario pour en inspecter le résultat.
+* **Add Test Scenario** — créez un nouveau scénario à partir d'un workflow et d'un document d'exemple.
+* **Run All Tests** — exécutez tous les scénarios d'un seul coup et voyez, en un coup d'œil, quels workflows réussissent toujours.
+* **View Details** — ouvrez un scénario pour en inspecter le résultat.
 
-<figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Détails d'un scénario de test de workflow avec le statut, la durée d'exécution et les données"><figcaption><p>Détails du scénario — nom, statut, durée d'exécution, ainsi que les données réelles et extraites produites par l'exécution.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/workflow_test_manager_detail.png" alt="Détails d&#x27;un scénario de test de workflow avec le statut, la durée d&#x27;exécution et les données"><figcaption><p>Détails du scénario — nom, statut, durée d'exécution, ainsi que les données réelles et extraites produites par l'exécution.</p></figcaption></figure>
 
 La vue des détails affiche le nom du scénario et son **statut**, le **nom du workflow**, la **durée d'exécution**, ainsi que les **données réelles** et **données extraites** produites par l'exécution — pour que vous puissiez voir précisément pourquoi un scénario a réussi ou échoué.
 
@@ -24,5 +24,5 @@ La vue des détails affiche le nom du scénario et son **statut**, le **nom du w
 
 Ce sont deux choses différentes :
 
-- **Test Manager** (cette page) — des scénarios *enregistrés et reproductibles* avec des résultats attendus, exécutés ensemble grâce à **Run All Tests**. Utilisez-le pour les tests de régression après des modifications.
-- **Les tests dans le générateur** — les contrôles intégrés **Validate** et **Test** à l'intérieur du générateur Advanced Workflow, pour des vérifications rapides pendant que vous construisez. Voir [Validation et tests](advanced-workflow/validation-and-testing.md).
+* **Test Manager** (cette page) — des scénarios _enregistrés et reproductibles_ avec des résultats attendus, exécutés ensemble grâce à **Run All Tests**. Utilisez-le pour les tests de régression après des modifications.
+* **Les tests dans le générateur** — les contrôles intégrés **Validate** et **Test** à l'intérieur du générateur Advanced Workflow, pour des vérifications rapides pendant que vous construisez. Voir [Validation et tests](advanced-workflow-builder/validation-and-testing.md).

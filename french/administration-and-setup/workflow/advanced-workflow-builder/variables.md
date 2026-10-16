@@ -8,9 +8,9 @@ Les **Variables** vous permettent de stocker une valeur une seule fois et de la 
 
 Les variables sont regroupées selon leur type :
 
-* **Text** — une valeur de chaîne de caractères (par ex. une description ou une étiquette fixe).
-* **Yes/No** — un indicateur booléen (Yes / No).
-* **Document** — une référence à un document ou à un champ de document.
+- **Text** — une valeur de chaîne de caractères (par ex. une description ou une étiquette fixe).
+- **Yes/No** — un indicateur booléen (Yes / No).
+- **Document** — une référence à un document ou à un champ de document.
 
 Utilisez la zone de recherche pour trouver rapidement une variable lorsque la liste s'allonge.
 
@@ -20,5 +20,5 @@ Cliquez sur **New Variable**, donnez-lui un nom et un type, puis définissez sa 
 
 ## Étapes suivantes
 
-* Découvrez comment les nœuds utilisent ces valeurs dans [Nœuds](nodes.md).
-* Validez et exécutez le workflow dans [Validation & Test](validation-and-testing.md).
+- Découvrez comment les nœuds utilisent ces valeurs dans [Nœuds](nodes.md).
+- Validez et exécutez le workflow dans [Validation & Test](validation-and-testing.md).

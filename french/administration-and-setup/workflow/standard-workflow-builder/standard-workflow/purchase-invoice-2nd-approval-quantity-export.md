@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Quantity Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (34).png" alt="DocBits Achat Commande Exporter 6"><figcaption></figcaption></figure>
-
 Ce titre indique que la règle est mise en place pour gérer la seconde phase d'approbation des factures d'achat en mettant l'accent sur les détails de quantité, garantissant que les quantités figurant sur la facture correspondent à celles de la commande d'achat d'origine.
 
 #### Configuration de la règle :

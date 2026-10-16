@@ -1,6 +1,6 @@
 # Single Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1 (32).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Objectif :**\
 Cette carte de workflow exécute des opérations selon qu'une tâche ou un document est assigné à un groupe particulier. Elle utilise une condition simple pour déclencher ou empêcher des actions en fonction de l'attribution de groupe.

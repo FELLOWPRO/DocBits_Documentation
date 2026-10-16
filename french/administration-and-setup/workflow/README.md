@@ -4,14 +4,13 @@ description: Moteur de workflow DocBits
 
 # Workflow
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Workflow 3"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/And1.png" alt="DocBits Workflow 3"><figcaption></figcaption></figure>
 
 ## Moteur de workflow DocBits : Simplifier l'automatisation des processus
 
 ### Introduction
 
 {% embed url="https://youtu.be/YQC13wCqTJI" %}
-
 
 Dans le domaine de l'automatisation des processus, le moteur de workflow DocBits se distingue par son approche simple et intuitive. Ce moteur simplifie la création et la gestion des workflows grâce à une structure basée sur des règles claires et simples. Le principe fondamental de sa conception est la règle "Quand-Et-Alors facile", qui décompose le processus d'automatisation en trois composants fondamentaux : Déclencheur, Condition et Action. Ce guide explique comment chaque composant fonctionne au sein du système et comment ils collaborent pour faciliter une automatisation fluide.
 

@@ -57,11 +57,11 @@ Le concepteur d'arbre de décision vous permet de configurer les règles qui ré
 
 Cet arbre de décision évalue le champ **Total Amount** et l'attribue à différents groupes selon des conditions prédéfinies. Chaque règle compare le montant total à une valeur spécifique et, selon la condition qui est vraie, le **Group** correspondant est renvoyé.
 
-<figure><img src="../../../../.gitbook/assets/And1 (32).png" alt="Exemple d&#x27;arbre de décision Total Amount"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Exemple d&#x27;arbre de décision Total Amount"><figcaption></figcaption></figure>
 
 Cet arbre de décision évalue deux conditions clés pour déterminer quel groupe doit être attribué : **Total Amount** et **Warehouse Status**. L'arbre utilise des seuils basés sur le montant total pour définir quel groupe est renvoyé, avec la distinction supplémentaire de savoir si l'entrepôt est désigné comme « Warehouse Main », « Warehouse Sub » ou « Not Warehouse Main ».
 
-<figure><img src="../../../../.gitbook/assets/And1 (32).png" alt="Exemple d&#x27;arbre de décision Warehouse Status"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Exemple d&#x27;arbre de décision Warehouse Status"><figcaption></figcaption></figure>
 
 Chaque règle est évaluée de manière séquentielle.
 
@@ -88,23 +88,23 @@ La politique de l'arbre de décision définit la manière dont les multiples rè
 
     * Dans le concepteur d'arbre de décision, repérez le bouton **Test**.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (32).png" alt="Bouton Test de l&#x27;arbre de décision" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Bouton Test de l&#x27;arbre de décision" width="563"><figcaption></figcaption></figure>
 2.  **Ouvrir la fenêtre contextuelle de test :**
 
     * Cliquez sur le bouton **Test**.
     * Une fenêtre contextuelle apparaît, fournissant des champs de saisie correspondant aux critères utilisés dans l'arbre de décision.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (32).png" alt="Fenêtre contextuelle de test de l&#x27;arbre de décision" width="421"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Fenêtre contextuelle de test de l&#x27;arbre de décision" width="421"><figcaption></figcaption></figure>
 3. **Fournir des valeurs d'entrée :**
    *   Saisissez des valeurs dans les champs de saisie pour simuler un scénario réel.
 
-       <figure><img src="../../../../.gitbook/assets/And1 (32).png" alt="Saisie de test de l&#x27;arbre de décision" width="428"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/And1.png" alt="Saisie de test de l&#x27;arbre de décision" width="428"><figcaption></figcaption></figure>
 4.  **Évaluer les résultats :**
 
     * Après avoir saisi les entrées, l'arbre les traite selon la politique choisie.
     * Le système met en surbrillance la ou les règles qui correspondent aux entrées fournies.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (32).png" alt="Résultat de test de l&#x27;arbre de décision" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Résultat de test de l&#x27;arbre de décision" width="563"><figcaption></figcaption></figure>
 5. **Examiner le retour en l'absence de correspondance :**
    * Si aucune règle n'est mise en surbrillance, le système affichera un retour expliquant pourquoi aucune règle ne correspond.
    * Utilisez ce retour pour ajuster les entrées ou examiner la configuration de l'arbre afin d'identifier d'éventuels problèmes.

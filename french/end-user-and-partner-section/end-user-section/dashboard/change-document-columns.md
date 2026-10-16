@@ -6,7 +6,7 @@ hidden: true
 
 Depuis le tableau de bord, cliquez sur l'icône Paramètres avancés comme indiqué ci-dessous:
 
-<figure><img src="../../../.gitbook/assets/docbits_dashboard_advanced_settings_icon.png" alt="DocBits Tableau de bord Avancé Paramètres Icon"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/change-document-colums1.png" alt="DocBits Tableau de bord Avancé Paramètres Icon"><figcaption></figcaption></figure>
 
 Le menu suivant sera alors affiché:
 

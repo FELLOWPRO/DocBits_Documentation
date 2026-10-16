@@ -1,10 +1,10 @@
-# Document Types
+# Types de Document
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
 DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Document Types"><figcaption><p>Page Document Types</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Document Types"><figcaption><p>Page Document Types</p></figcaption></figure>
 
 ## Aperçu
 
@@ -17,27 +17,27 @@ La page Document Types répertorie tous les types de documents reconnus et trait
 
 Chaque carte de type de document affiche :
 
-| Contrôle | Description |
-|---------|-------------|
-| **Activate** | Interrupteur pour activer ou désactiver ce type de document pour le traitement. |
-| **Extraction** | Interrupteur pour activer ou désactiver l'extraction de données par IA pour ce type. |
-| **Settings** (icône d'engrenage) | Ouvre des options de configuration supplémentaires pour le type de document. |
+| Contrôle                         | Description                                                                          |
+| -------------------------------- | ------------------------------------------------------------------------------------ |
+| **Activate**                     | Interrupteur pour activer ou désactiver ce type de document pour le traitement.      |
+| **Extraction**                   | Interrupteur pour activer ou désactiver l'extraction de données par IA pour ce type. |
+| **Settings** (icône d'engrenage) | Ouvre des options de configuration supplémentaires pour le type de document.         |
 
 ## Onglets de configuration
 
 Sous chaque type de document, vous avez accès aux onglets de configuration suivants :
 
-| Onglet | Description |
-|-----|-------------|
-| **Labels** | Gère les libellés d'affichage et les traductions du type de document. |
-| **Edit layout** | Modifie l'affichage du document dans la vue de validation, y compris la position des champs. |
-| **Document Sub Types** | Configure les sous-catégories de ce type de document (p. ex. différents formats de facture). |
-| **Table columns** | Personnalise les colonnes de données qui apparaissent dans le tableau des lignes. |
-| **Fields** | Gère les champs de données extraits du document (ajout, modification ou suppression de champs). |
-| **Model Training** | Configure et entraîne le modèle d'IA utilisé pour reconnaître et extraire les données. |
-| **Regex** | Définit des expressions régulières pour l'extraction de données basée sur des motifs. |
-| **Scripts** | Permet d'écrire des scripts de traitement personnalisés exécutés pendant le traitement des documents. |
-| **E-Doc** | Configure les standards de documents électroniques (XRechnung, ZUGFeRD, EDI, FatturaPA). |
+| Onglet                 | Description                                                                                           |
+| ---------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Labels**             | Gère les libellés d'affichage et les traductions du type de document.                                 |
+| **Edit layout**        | Modifie l'affichage du document dans la vue de validation, y compris la position des champs.          |
+| **Document Sub Types** | Configure les sous-catégories de ce type de document (p. ex. différents formats de facture).          |
+| **Table columns**      | Personnalise les colonnes de données qui apparaissent dans le tableau des lignes.                     |
+| **Fields**             | Gère les champs de données extraits du document (ajout, modification ou suppression de champs).       |
+| **Model Training**     | Configure et entraîne le modèle d'IA utilisé pour reconnaître et extraire les données.                |
+| **Regex**              | Définit des expressions régulières pour l'extraction de données basée sur des motifs.                 |
+| **Scripts**            | Permet d'écrire des scripts de traitement personnalisés exécutés pendant le traitement des documents. |
+| **E-Doc**              | Configure les standards de documents électroniques (XRechnung, ZUGFeRD, EDI, FatturaPA).              |
 
 ## Custom Validation Rules
 

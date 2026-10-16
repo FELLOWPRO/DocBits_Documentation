@@ -22,6 +22,8 @@ And : **Document type is:** Invoice
 
 Then : **Assign document to:** Stefan Reppermund
 
+![](../../../.gitbook/assets/3.png)
+
 **Test 2 : Logic Card**
 
 When : **Assignee is:** Amier Haider
@@ -30,6 +32,8 @@ And : **Document type is:** Delivery Note
 
 Then : **Assign document to:** James Edwards
 
+![](../../../.gitbook/assets/4.png)
+
 **Test 3 : Logic Card**
 
 **When :** **Assignee is:** Amier Haider
@@ -37,6 +41,8 @@ Then : **Assign document to:** James Edwards
 **And :** **Document type is:** Order Confirmation
 
 **Then :** **Assign document to:** Anian Sollinger
+
+![](../../../.gitbook/assets/5.png)
 
 Il est également possible, si le document n'est pas assigné à une seule personne, de l'assigner dès le départ à un employé spécifique.
 
@@ -54,6 +60,8 @@ Pour avoir une vue d'ensemble plus facile de ce qui doit arriver à un document,
 
 <figure><img src="../../../.gitbook/assets/workflow_test4_delivery_note_status.png" alt="Statut du bon de livraison du test 4 du flux de travail"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/8.png)
+
 **Test 5 : Logic Card**
 
 When : **Document type is:** Invoice
@@ -64,7 +72,11 @@ Then : **Change Status to:** Pending Second Approval
 
 <figure><img src="../../../.gitbook/assets/workflow_test5_invoice_approval_status.png" alt="Statut d&#x27;approbation de la facture du test 5 du flux de travail"><figcaption></figcaption></figure>
 
+![](../../../.gitbook/assets/10.png)
+
 Si une facture ou un autre document dépasse un certain montant total qui nécessite un examen et une approbation préalables, ces documents peuvent être immédiatement assignés à la bonne personne.
+
+![](../../../.gitbook/assets/11.png)
 
 **Test 6 : Logic Card**
 
@@ -75,6 +87,8 @@ And : Docfield **total\_amount** is **Greater than 500**
 Then : **Assign document to:** Asad Usman Khan
 
 <figure><img src="../../../.gitbook/assets/workflow_test6_total_amount_assign.png" alt="Assignation par montant total du test 6 du flux de travail"><figcaption></figcaption></figure>
+
+![](../../../.gitbook/assets/13.png)
 
 Il est également possible de saisir le statut dans le flux de travail, afin que la personne assignée puisse voir immédiatement quel est le statut de ce document et ce qui doit lui arriver ensuite.
 
@@ -90,7 +104,7 @@ Il est également possible de saisir le statut dans le flux de travail, afin que
 
 <figure><img src="../../../.gitbook/assets/workflow_test7_status_update.png" alt="Mise à jour du statut du test 7 du flux de travail"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15.png" alt=""><figcaption></figcaption></figure>
 
 Par exemple, si certaines informations ou des informations importantes manquent dans un document, mais qu'elles sont importantes et doivent être incluses pour un traitement ultérieur, vous pouvez configurer le flux de travail de sorte que ces documents soient immédiatement transmis à l'acheteur et à un remplaçant (substitut).
 
@@ -127,7 +141,7 @@ Cette logic card est essentielle pour garantir que les détails d'une confirmati
 
 Si vous avez un calcul différent pour les surcharges, ou si vous ne les avez que sur certains articles, vous pouvez utiliser les cartes génériques de calcul de tableau ; certaines d'entre elles permettent également de filtrer par expressions régulières.
 
-<figure><img src="../../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
 
 Ci-dessus se trouve un exemple de calcul pour MTZ avec un filtre pour les numéros d'article commençant par 01, 06, 9, 001 ou 000.
 
@@ -135,7 +149,7 @@ Avec une configuration manuelle, il est conseillé de séparer les calculs qui d
 
 **Run Workflow**
 
-<figure><img src="../../../.gitbook/assets/20 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
 
 Avec cette carte, vous pouvez spécifier le nom d'un flux de travail à exécuter après le flux de travail actuel si ses conditions sont remplies, et après les cartes then précédentes du flux de travail actuel. Bien qu'elle priorise les flux de travail exécutables et actifs, elle vous permet également d'exécuter des flux de travail désactivés si le document remplit les conditions du flux de travail.
 

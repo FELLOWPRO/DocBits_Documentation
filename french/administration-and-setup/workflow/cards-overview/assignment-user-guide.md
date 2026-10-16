@@ -16,7 +16,7 @@ Ces cartes se placent dans le groupe **Then** du Concepteur de workflow — les 
 
 **Important :** Les versions v3 ont ajouté la prise en charge de l'arbre de décision mais sont désormais obsolètes **Recommandation :** Utilisez v2 pour DOC\_USER\_ASSIGN et DOC\_GROUP\_ASSIGN
 
-📖 [Historique complet des versions](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/administration-and-setup/changelog/release.md#-assignment--routing-cards) | [Base de données des versions de cartes](https://github.com/Fellow-Consulting-AG/docbits/tree/fr/readme/DocFlow/docs/card_version.md)
+📖 [Historique complet des versions](../../changelog/release.md#-assignment--routing-cards) | [Base de données des versions de cartes](../../../DocFlow/docs/card_version.md)
 
 ***
 

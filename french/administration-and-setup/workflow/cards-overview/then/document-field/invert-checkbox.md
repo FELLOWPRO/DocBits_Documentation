@@ -1,6 +1,6 @@
 # Invert Checkbox
 
-<figure><img src="../../../../../.gitbook/assets/And1 (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt=""><figcaption></figcaption></figure>
 
 ## **Objectif :**
 

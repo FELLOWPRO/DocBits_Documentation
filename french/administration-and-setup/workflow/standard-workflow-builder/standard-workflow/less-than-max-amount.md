@@ -1,7 +1,5 @@
 # Less than Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (35).png" alt="DocBits Facture"><figcaption></figcaption></figure>
-
 Ce titre suggère que la règle ou la condition mise en place est conçue pour gérer les factures dont le montant total est inférieur ou égal à un montant maximum spécifié.
 
 #### Configuration de la règle :

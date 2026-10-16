@@ -1,4 +1,4 @@
-# Key Concept: Tolerance Window
+# Concept clé : la fenêtre de tolérance
 
 Avant d'examiner les opérateurs, il est important de comprendre comment la fenêtre de tolérance est calculée.
 
@@ -12,7 +12,7 @@ La fenêtre de tolérance définit une plage de dates acceptables autour de la d
 * Jours de tolérance : **3**
 * Fenêtre de tolérance : **6 janvier → 12 janvier**
 
-> <mark style="color:red;">Seuls les</mark> <mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;">sélectionnés (jours de la semaine) sont comptabilisés lors du calcul de cette fenêtre.</mark>
+> <mark style="color:red;">Seuls les</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">sélectionnés (jours de la semaine) sont comptabilisés lors du calcul de cette fenêtre.</mark>
 
 ### Exemple de chronologie visuelle
 

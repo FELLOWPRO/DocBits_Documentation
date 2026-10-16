@@ -16,4 +16,4 @@ Vous pouvez le trouver sous : **Paramètres** → **Traitement de document** →
 
 Pour des instructions détaillées sur la configuration de chaque type d'exportation, y compris des captures d'écran et des descriptions de champs, consultez le guide complet :
 
-[Consulter le Guide de Configuration d'Exportation](../../administration-and-setup/settings/document-processing/export.md)
+[Consulter le Guide de Configuration d'Exportation](../../administration-and-setup/settings/document-processing/export/)

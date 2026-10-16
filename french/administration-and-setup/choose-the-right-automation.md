@@ -8,15 +8,15 @@ DocBits propose plusieurs moyens de modifier, de contrôler et d'acheminer les d
 
 ## La réponse courte
 
-| Je veux … | Utiliser | Pourquoi |
-| --- | --- | --- |
-| Nettoyer ou réécrire une valeur (suppression d'espaces, préfixe, format de date, mappage d'unités, valeur par défaut) | [Règles de transformation](settings/global-settings/document-types/transformation-rules.md) | Sans code, aperçu en direct, exécution à chaque passage et à chaque enregistrement |
-| S'assurer que les données sont complètes et plausibles, et bloquer les documents qui ne le sont pas | [Règles de validation personnalisées](settings/global-settings/document-types/custom-validation-rules.md) | Contrôles déclaratifs, erreur ou avertissement, bloquent l'export automatique |
-| Rapprocher les lignes de facture des lignes de bon de commande | [Règles de correspondance des bons de commande](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Ensembles de règles avec tolérances, solutions de repli et diagramme visuel |
-| Faire ce qu'une règle ne sait pas exprimer : une recherche, un calcul sur plusieurs champs et tableaux, une tâche, un changement de statut à un moment précis | [Script](settings/global-settings/document-types/script/README.md) | Python à 13 points de déclenchement du flux |
-| Décider **de la suite** à donner à un document : attribuer, approuver, créer une tâche, envoyer un e-mail, exporter, appeler une API | [Standard Workflow](workflow/standard-workflow-builder.md) | Cartes When / And / Then sur les événements de statut |
-| Faire de même avec des branches, plusieurs conditions et des chemins d'erreur | [Advanced Workflow](workflow/advanced-workflow-builder.md) | Graphe visuel de nœuds |
-| Besoin d'une action qu'aucune carte intégrée ne propose | [Workflow SDK (Card SDK)](workflow/card-sdk.md) | Votre propre carte, examinée par DocBits |
+| Je veux …                                                                                                                                                     | Utiliser                                                                                                                                               | Pourquoi                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| Nettoyer ou réécrire une valeur (suppression d'espaces, préfixe, format de date, mappage d'unités, valeur par défaut)                                         | [Règles de transformation](settings/global-settings/document-types/transformation-rules.md)                                                            | Sans code, aperçu en direct, exécution à chaque passage et à chaque enregistrement |
+| S'assurer que les données sont complètes et plausibles, et bloquer les documents qui ne le sont pas                                                           | [Règles de validation personnalisées](settings/global-settings/document-types/custom-validation-rules.md)                                              | Contrôles déclaratifs, erreur ou avertissement, bloquent l'export automatique      |
+| Rapprocher les lignes de facture des lignes de bon de commande                                                                                                | [Règles de correspondance des bons de commande](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Ensembles de règles avec tolérances, solutions de repli et diagramme visuel        |
+| Faire ce qu'une règle ne sait pas exprimer : une recherche, un calcul sur plusieurs champs et tableaux, une tâche, un changement de statut à un moment précis | [Script](settings/global-settings/document-types/script/)                                                                                              | Python à 13 points de déclenchement du flux                                        |
+| Décider **de la suite** à donner à un document : attribuer, approuver, créer une tâche, envoyer un e-mail, exporter, appeler une API                          | [Standard Workflow](workflow/standard-workflow-builder/)                                                                                               | Cartes When / And / Then sur les événements de statut                              |
+| Faire de même avec des branches, plusieurs conditions et des chemins d'erreur                                                                                 | [Advanced Workflow](workflow/advanced-workflow-builder/)                                                                                               | Graphe visuel de nœuds                                                             |
+| Besoin d'une action qu'aucune carte intégrée ne propose                                                                                                       | [Workflow SDK (Card SDK)](workflow/card-sdk.md)                                                                                                        | Votre propre carte, examinée par DocBits                                           |
 
 **Règle pratique : utilisez l'outil le moins puissant qui fait le travail.** D'abord les règles, ensuite un script, en dernier un workflow ou une carte SDK. Les règles sont plus faciles à lire, plus faciles à tester et ne peuvent pas endommager un document ; le code peut faire davantage et demande donc plus de soin.
 
@@ -24,7 +24,7 @@ DocBits propose plusieurs moyens de modifier, de contrôler et d'acheminer les d
 
 Chaque document traverse les mêmes étapes. Chaque outil a sa place dans ce flux, et cette place détermine ce qu'il voit et ce qu'il peut encore modifier.
 
-<figure><img src="../.gitbook/assets/automation-flow-fr.svg" alt="Où les règles de transformation, les règles de correspondance des bons de commande, les règles de validation personnalisées, les scripts et les workflows s'exécutent dans le flux du document"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-flow-fr.svg" alt="Où les règles de transformation, les règles de correspondance des bons de commande, les règles de validation personnalisées, les scripts et les workflows s&#x27;exécutent dans le flux du document"><figcaption></figcaption></figure>
 
 En clair :
 
@@ -44,20 +44,20 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 
 ## Comparer les outils
 
-<figure><img src="../.gitbook/assets/automation-reach-fr.svg" alt="Comparaison de ce que peut faire chaque outil d'automatisation"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-reach-fr.svg" alt="Comparaison de ce que peut faire chaque outil d&#x27;automatisation"><figcaption></figcaption></figure>
 
-| | Règles de transformation | Règles de validation personnalisées | Règles de correspondance BC | Script | Standard Workflow | Advanced Workflow | Carte SDK |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| **S'exécute quand** | À chaque passage de transformation et à chaque enregistrement | À chaque exécution de la validation | Après la recherche, **Auto PO Match**, nouveau numéro de bon de commande | 13 points de déclenchement | Après un changement de statut | Après un changement de statut | Quand son workflow s'exécute |
-| **Peut lire** | Champs d'en-tête, colonnes de tableau | Champs, cellules de tableau, totaux sur les lignes | Tableaux, numéros de bon de commande, lignes de bon de commande, tolérances | L'ensemble des données extraites, recherches, utilisateurs, groupes, recherche plein texte | Données du document, utilisateurs, groupes, variables | Idem, plus les résultats des nœuds précédents | Champs, tableaux, recherches, utilisateurs, groupes |
-| **Peut écrire** | Valeurs de champs et de colonnes, lignes, sous-organisation | Rien : uniquement des marqueurs valide / invalide | Uniquement les données de rapprochement | Champs, tableaux, tâches, statut | Champs, statut, attribution, tâches, export, e-mail, appel d'API | Mêmes cartes, plus logique et variables | Champs, tableaux, statut, tâches |
-| **Peut bloquer un document** | Non | Oui, les erreurs bloquent l'export automatique et **Validate** | Oui, sans rapprochement complet l'export automatique attend lorsque le rapprochement est actif | Indirectement : marquer un champ comme invalide, créer une tâche | Définit le statut, attribue, approuve, rejette | Idem | Comme le type de carte |
-| **Nécessite du code** | Non | Non | Non | Oui, Python restreint | Non | Non | Oui, Python dans un bac à sable |
-| **Usage typique** | Normaliser les valeurs | Champs obligatoires, formats, totaux | Rapprochement des lignes | Logique spécifique | Acheminement et approbation | Acheminement avec branches | Actions de partenaires |
+|                              | Règles de transformation                                      | Règles de validation personnalisées                            | Règles de correspondance BC                                                                    | Script                                                                                     | Standard Workflow                                                | Advanced Workflow                             | Carte SDK                                           |
+| ---------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------- |
+| **S'exécute quand**          | À chaque passage de transformation et à chaque enregistrement | À chaque exécution de la validation                            | Après la recherche, **Auto PO Match**, nouveau numéro de bon de commande                       | 13 points de déclenchement                                                                 | Après un changement de statut                                    | Après un changement de statut                 | Quand son workflow s'exécute                        |
+| **Peut lire**                | Champs d'en-tête, colonnes de tableau                         | Champs, cellules de tableau, totaux sur les lignes             | Tableaux, numéros de bon de commande, lignes de bon de commande, tolérances                    | L'ensemble des données extraites, recherches, utilisateurs, groupes, recherche plein texte | Données du document, utilisateurs, groupes, variables            | Idem, plus les résultats des nœuds précédents | Champs, tableaux, recherches, utilisateurs, groupes |
+| **Peut écrire**              | Valeurs de champs et de colonnes, lignes, sous-organisation   | Rien : uniquement des marqueurs valide / invalide              | Uniquement les données de rapprochement                                                        | Champs, tableaux, tâches, statut                                                           | Champs, statut, attribution, tâches, export, e-mail, appel d'API | Mêmes cartes, plus logique et variables       | Champs, tableaux, statut, tâches                    |
+| **Peut bloquer un document** | Non                                                           | Oui, les erreurs bloquent l'export automatique et **Validate** | Oui, sans rapprochement complet l'export automatique attend lorsque le rapprochement est actif | Indirectement : marquer un champ comme invalide, créer une tâche                           | Définit le statut, attribue, approuve, rejette                   | Idem                                          | Comme le type de carte                              |
+| **Nécessite du code**        | Non                                                           | Non                                                            | Non                                                                                            | Oui, Python restreint                                                                      | Non                                                              | Non                                           | Oui, Python dans un bac à sable                     |
+| **Usage typique**            | Normaliser les valeurs                                        | Champs obligatoires, formats, totaux                           | Rapprochement des lignes                                                                       | Logique spécifique                                                                         | Acheminement et approbation                                      | Acheminement avec branches                    | Actions de partenaires                              |
 
 ## Décider en quatre questions
 
-<figure><img src="../.gitbook/assets/automation-decision-fr.svg" alt="Guide de décision pour choisir le bon outil d'automatisation"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-decision-fr.svg" alt="Guide de décision pour choisir le bon outil d&#x27;automatisation"><figcaption></figcaption></figure>
 
 1. **Une valeur doit-elle changer ?** Utilisez les **règles de transformation**. Si la modification nécessite des données de base, une tâche ou un statut, utilisez un **script**.
 2. **Une valeur doit-elle être contrôlée ?** Utilisez les **règles de validation personnalisées**. Elles bloquent un document, mais ne le modifient jamais. Si le contrôle nécessite des données de base ou du code, un **script** peut marquer le champ comme invalide.
@@ -96,7 +96,7 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 * **Il s'exécute** aux points de déclenchement que vous choisissez : après l'extraction, avant et après la transformation, avant le rapprochement avec le bon de commande, avant et après la validation, lors des changements de champ et de tableau, à l'enregistrement et à l'approbation.
 * **Il peut** lire tout le document, utiliser les recherches dans les données de base et la recherche plein texte, modifier les champs, les indicateurs et les tableaux, créer des tâches et changer le statut.
 * **Il ne peut pas** importer de modules ni appeler des services externes. C'est du Python restreint. Une erreur dans un script est consignée et n'arrête jamais le traitement du document ; un script n'est donc **pas** un moyen fiable de bloquer un document : marquez plutôt le champ comme invalide ou créez une tâche.
-* **En savoir plus :** [Script](settings/global-settings/document-types/script/README.md)
+* **En savoir plus :** [Script](settings/global-settings/document-types/script/)
 
 ### Standard Workflow
 
@@ -104,7 +104,7 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 * **Il s'exécute** lorsqu'un document atteint un statut que vous avez choisi, donc après la validation. Il peut aussi démarrer depuis un web hook, une planification ou manuellement.
 * **Il peut** exécuter une chaîne de cartes : **When** (démarrage), **And** (conditions, toutes doivent être remplies), **Then** (actions dans l'ordre).
 * **Il ne peut pas** créer de branches, attendre plusieurs conditions ni réagir à l'erreur d'une carte dans un chemin distinct. Utilisez pour cela un Advanced Workflow.
-* **En savoir plus :** [Standard Workflow](workflow/standard-workflow-builder.md)
+* **En savoir plus :** [Standard Workflow](workflow/standard-workflow-builder/)
 
 ### Advanced Workflow
 
@@ -112,7 +112,7 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 * **Il s'exécute** sur les mêmes événements qu'un Standard Workflow. Il nécessite l'abonnement DocFlow Advanced.
 * **Il peut** utiliser les mêmes cartes qu'un Standard Workflow, plus des cartes de logique et de variables, représentées sous forme de graphe.
 * **Il ne peut pas** agir avant la validation : il démarre après un changement de statut. La logique préalable à la validation relève d'un script ou d'une règle.
-* **En savoir plus :** [Advanced Workflow](workflow/advanced-workflow-builder.md)
+* **En savoir plus :** [Advanced Workflow](workflow/advanced-workflow-builder/)
 
 ### Workflow SDK (Card SDK)
 
@@ -135,20 +135,20 @@ Un workflow qui écrit dans un champ se comporte comme une personne qui enregist
 
 ## Erreurs courantes
 
-| Erreur | Mieux vaut |
-| --- | --- |
-| Un script qui supprime les espaces et ajoute des préfixes | Une règle de transformation |
-| Un workflow qui renseigne un champ après la validation | Une règle de transformation ou un script avant la validation |
-| Un script censé bloquer un document invalide | Une règle de validation personnalisée |
-| Une règle de validation personnalisée censée corriger une valeur | Une règle de transformation, puis la règle de validation |
-| Réécrire le numéro de bon de commande dans une règle de correspondance | Une règle de transformation sur le champ *Purchase Order*, avant le rapprochement |
-| Un Advanced Workflow pour un simple *When → Then* | Un Standard Workflow |
-| Une carte SDK pour ce qu'une carte intégrée sait faire | La carte intégrée |
+| Erreur                                                                 | Mieux vaut                                                                        |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Un script qui supprime les espaces et ajoute des préfixes              | Une règle de transformation                                                       |
+| Un workflow qui renseigne un champ après la validation                 | Une règle de transformation ou un script avant la validation                      |
+| Un script censé bloquer un document invalide                           | Une règle de validation personnalisée                                             |
+| Une règle de validation personnalisée censée corriger une valeur       | Une règle de transformation, puis la règle de validation                          |
+| Réécrire le numéro de bon de commande dans une règle de correspondance | Une règle de transformation sur le champ _Purchase Order_, avant le rapprochement |
+| Un Advanced Workflow pour un simple _When → Then_                      | Un Standard Workflow                                                              |
+| Une carte SDK pour ce qu'une carte intégrée sait faire                 | La carte intégrée                                                                 |
 
 ## Pages associées
 
 * [Règles de transformation](settings/global-settings/document-types/transformation-rules.md)
 * [Règles de validation personnalisées](settings/global-settings/document-types/custom-validation-rules.md)
 * [Règles de correspondance des bons de commande](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* [Script](settings/global-settings/document-types/script/README.md)
-* [Workflow](workflow/README.md)
+* [Script](settings/global-settings/document-types/script/)
+* [Workflow](workflow/)

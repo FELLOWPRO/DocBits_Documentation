@@ -1,12 +1,8 @@
-# Comment créer une sous-organisation
+# Comment créer une Sous-Organisation
 
 ## Créer une nouvelle sous-organisation :
 
-<div data-full-width="false">
-
-<figure><img src="../../../../../.gitbook/assets/sub_organizations_list_overview_2.png" alt="Vue d'ensemble de la liste des sous-organisations"><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Vue d&#x27;ensemble de la liste des sous-organisations"><figcaption></figcaption></figure></div>
 
 Cliquez sur le bouton `+ NOUVEAU`.
 
@@ -14,13 +10,13 @@ Cliquez sur le bouton `+ NOUVEAU`.
 
 Le menu suivant s'affiche :
 
-<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Formulaire de création d'une sous-organisation" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/create_sub_organization_form.png" alt="Formulaire de création d&#x27;une sous-organisation" width="375"><figcaption></figcaption></figure>
 
 Saisissez les détails de la sous-organisation que vous souhaitez créer — le nom et la description — puis cliquez sur le bouton `ENREGISTRER`. Vous trouverez ensuite la sous-organisation nouvellement créée en bas de la liste des sous-organisations existantes.
 
 ## Modifier des sous-organisations
 
-<figure><img src="../../../../../.gitbook/assets/edit_sub_organization_icon.png" alt="Menu de modification d'une sous-organisation" width="161"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/edit_sub_organization_icon.png" alt="Menu de modification d&#x27;une sous-organisation" width="161"><figcaption></figcaption></figure>
 
 **Gérer les utilisateurs :**
 

@@ -25,7 +25,7 @@ Parallèlement au `INVOICE_TYPE_CODE` brut, la XSLT TRANSFORMATION par défaut �
 
 ### Ventilation des taxes (classification par tranches)
 
-Les blocs `ApplicableTradeTax` sont distribués sur trois tranches basées sur le taux (et non sur des index positionnels) : les champs au taux standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturent les taux ≥ 19 ; les champs au taux réduit (`*_2`) capturent 0 < taux < 19 ; les champs au taux zéro (`*_3`) capturent taux = 0. Voir [Ventilation des taxes ZUGFeRD](./#tax-breakdown-tier-classified) pour la liste complète des champs. (ZUGFeRD 1.0 utilise le vocabulaire CII hérité dans sa XSLT TRANSFORMATION, mais les règles de sélection de tranche ci-dessus sont identiques à 2.x.)
+Les blocs `ApplicableTradeTax` sont distribués sur trois tranches basées sur le taux (et non sur des index positionnels) : les champs au taux standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) capturent les taux ≥ 19 ; les champs au taux réduit (`*_2`) capturent 0 < taux < 19 ; les champs au taux zéro (`*_3`) capturent taux = 0. Voir [Ventilation des taxes ZUGFeRD](./#ventilation-des-taxes-classification-par-tranches) pour la liste complète des champs. (ZUGFeRD 1.0 utilise le vocabulaire CII hérité dans sa XSLT TRANSFORMATION, mais les règles de sélection de tranche ci-dessus sont identiques à 2.x.)
 
 ### Références de documents
 

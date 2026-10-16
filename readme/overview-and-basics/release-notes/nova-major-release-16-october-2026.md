@@ -8,7 +8,7 @@ The snapshot identifies the builds covered by these notes. For availability in y
 
 ## Former VESTA beta features: included in NOVA
 
-**All former VESTA beta features are now part of NOVA's regular feature set.** For customers who did not use the VESTA beta, this expands the features available to their team, including **Manage Layouts**, **Custom Validation Rules** and **Transformation Rules**. Organisation settings, document-type switches and access permissions continue to apply.
+**All former VESTA beta features are now part of NOVA's regular feature set.** For customers who did not use the VESTA beta, this expands the features available to their team, including **Manage Layouts**, [**Custom Validation Rules**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [**Transformation Rules**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Organisation settings, document-type switches and access permissions continue to apply.
 
 The same former beta features will become regular VESTA features with the **next VESTA hotfix, planned for [11 November 2026](vesta-hotfix-11-november-2026.md)**. This announcement covers the former VESTA beta features; the sections below also describe further NOVA additions and improvements.
 
@@ -53,11 +53,11 @@ An organisation administrator enables the Validation Assistant separately from t
 
 The existing [Touchless Intelligence](../../administration-and-setup/touchless-intelligence.md) dashboard gains a review and follow-up process:
 
-* **Learned rule proposals.** Repeated manual corrections can suggest a transformation rule. Administrators see what it would write, the supporting examples and the documents on which it would replace a value the team had accepted. A proposal is reviewed before becoming an active rule.
+* **Learned rule proposals.** Repeated manual corrections can suggest a [transformation rule](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). Administrators see what it would write, the supporting examples and the documents on which it would replace a value the team had accepted. A proposal is reviewed before becoming an active rule.
 * **Improvement requests from reviewers.** Users can submit an improvement from the document assistant for an administrator to review in Touchless Intelligence. The request keeps its explanation and decision together.
 * **Measure what happened after activation.** For supported transformation rules, DocBits compares manual corrections before and after activation and shows the touchless rate alongside them. Measurement uses 14-day periods and identifies insufficient data rather than inventing an improvement. Changing a rule starts a new measurement for that revision.
 * **Consulting report.** Administrators can generate a ranked view of improvement opportunities across extraction, master data, purchase order matching, accounting, settings and the processing flow. Estimated impact is labelled as an estimate until it has been measured.
-* **Supplier-specific matching advice.** Repeated supplier and item matching problems can inform proposals for tolerances or matching rules. Advice distinguishes a missing purchase order from a rule or tolerance issue.
+* **Supplier-specific matching advice.** Repeated supplier and item matching problems can inform proposals for tolerances or [PO matching rules](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md). Advice distinguishes a missing purchase order from a rule or tolerance issue.
 * **Follow-up summaries.** A weekly administrator summary brings together open improvement requests, leading opportunities and completed measurements when there is something to report. Requesters can be notified when a measured result is available.
 
 ## Settings Assistant: additional actions and page explanations
@@ -72,7 +72,7 @@ The [Settings Assistant](../../administration-and-setup/settings/global-settings
 
 ## Rules and layouts: direct access and better diagnostics
 
-* **Former beta controls become regular features.** Manage Layouts, Custom Validation Rules and Transformation Rules are visible in NOVA's document-type advanced settings without a beta link. Their enable switches remain under administrator control. These controls are included in the planned 11 November 2026 VESTA hotfix together with all other former VESTA beta features.
+* **Former beta controls become regular features.** Manage Layouts, [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) are visible in NOVA's document-type advanced settings without a beta link. Their enable switches remain under administrator control. These controls are included in the planned 11 November 2026 VESTA hotfix together with all other former VESTA beta features.
 * **More useful rule diagnostics.** Layout-selection rules gain a **Log execution** option. Rule search accepts rule identifiers, and opening an editor loads the current saved rule. The existing rule-execution log remains the place to review what ran.
 * **Choose and open layouts with more context.** Search target layouts, preview their content and open the target directly from a selection rule. Approval selection rules correctly accept the supported approval-layout types. Administrators also get a shortcut from document validation to that document type's layout editor.
 * **Select several condition values.** Conditions such as **is one of** support multiple selected values.
@@ -80,7 +80,7 @@ The [Settings Assistant](../../administration-and-setup/settings/global-settings
 
 Transformations after master data lookup, the basic rule-execution log, wider rule editors and the standard-rule cloning fixes already have implementations in the VESTA baseline. NOVA carries that functionality forward and makes the former beta management controls available as regular features.
 
-See [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md), [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) and [Layout Selection Rules](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md).
+For setup steps, examples and testing, see [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md) and [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md). To choose which layout a document uses, see [Layout Selection Rules](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md).
 
 ## E-Invoice Validation: clearer findings and policy controls
 
@@ -115,6 +115,8 @@ See [FTP Import](../../end-user-and-partner-section/end-user-section/how-to-impo
 * **Keep the value just entered.** Saving a table cell without first clicking elsewhere preserves the typed value. Dates with OCR-confused month names are handled more reliably.
 
 ## Purchase order matching, approval and export
+
+The [PO Matching Rules guide](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) explains how to enable rule-based matching, configure matching types and tolerances, set the execution order and manage rule versions.
 
 * **Match in either direction.** Select document lines and connect them to purchase order lines, or start from the purchase order lines. This is useful when many delivery-note lines relate to one purchase order line.
 * **Preserve one-to-many line detail.** A matching configuration can now retain an individual sub-line for each document line when several lines match one purchase order line. This option is off by default. Generic API export can group requests by configured line columns, supporting deliveries or containers that need separate target records.

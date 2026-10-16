@@ -31,138 +31,138 @@
 ## 分析与说明
 
 ```markdown
-# FTP Import Configurations Table Documentation
+# FTP 导入配置表文档
 
-## Introduction
+## 简介
 
-The `public.ftp_import_configurations` table is designed to store configuration details for FTP import processes. This table includes information necessary for connecting to FTP servers, managing authentication, and handling file imports. It supports both FTP and SFTP protocols and includes fields for FTP server details, authentication credentials, and operational settings, such as whether to move files after import and whether to include subfolder content.
+`public.ftp_import_configurations` 表用于存储 FTP 导入流程的配置详情。此表包含连接 FTP 服务器、管理身份验证和处理文件导入所需的信息。该表支持 FTP 和 SFTP 协议，并包含 FTP 服务器详情、身份验证凭据以及操作设置等字段，例如导入后是否移动文件，以及是否包含子文件夹中的内容。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: Unique identifier for each FTP import configuration record.
-- **Role**: Primary key.
-- **Typical Contents**: UUID format, e.g., `9862d8c6-bb61-4373-9616-d5f8c125eeb8`.
+- **含义**：每条 FTP 导入配置记录的唯一标识符。
+- **作用**：主键。
+- **典型内容**：UUID 格式，例如 `9862d8c6-bb61-4373-9616-d5f8c125eeb8`。
 
 ### org_id
-- **Meaning**: Identifier for the organization associated with this configuration.
-- **Role**: Foreign key.
-- **Typical Contents**: UUID format.
+- **含义**：与此配置关联的组织标识符。
+- **作用**：外键。
+- **典型内容**：UUID 格式。
 
 ### sub_org_id
-- **Meaning**: Identifier for a sub-organization, if applicable.
-- **Role**: Foreign key.
-- **Typical Contents**: UUID format or `null` if not applicable.
+- **含义**：子组织的标识符（如适用）。
+- **作用**：外键。
+- **典型内容**：UUID 格式；如不适用，则为 `null`。
 
 ### server_url
-- **Meaning**: The URL or IP address of the FTP server.
-- **Role**: Descriptive field.
-- **Typical Contents**: Domain name or IP address, e.g., `sftp.it.doxee.com`.
+- **含义**：FTP 服务器的 URL 或 IP 地址。
+- **作用**：描述性字段。
+- **典型内容**：域名或 IP 地址，例如 `sftp.it.doxee.com`。
 
 ### username
-- **Meaning**: Username used for authentication with the FTP server.
-- **Role**: Descriptive field.
-- **Typical Contents**: Plain text username.
+- **含义**：用于向 FTP 服务器进行身份验证的用户名。
+- **作用**：描述性字段。
+- **典型内容**：纯文本用户名。
 
 ### password
-- **Meaning**: Password used for authentication with the FTP server.
-- **Role**: Descriptive field.
-- **Typical Contents**: Encrypted password string.
+- **含义**：用于向 FTP 服务器进行身份验证的密码。
+- **作用**：描述性字段。
+- **典型内容**：加密后的密码字符串。
 
 ### is_active
-- **Meaning**: Indicates if the configuration is currently active.
-- **Role**: Status flag.
-- **Typical Contents**: `True` or `False`.
+- **含义**：指示该配置当前是否处于活动状态。
+- **作用**：状态标志。
+- **典型内容**：`True` 或 `False`。
 
 ### created_by
-- **Meaning**: Identifier for the user who created the configuration.
-- **Role**: Foreign key.
-- **Typical Contents**: Integer representing user ID.
+- **含义**：创建此配置的用户标识符。
+- **作用**：外键。
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_on
-- **Meaning**: Timestamp when the configuration was created.
-- **Role**: Audit field.
-- **Typical Contents**: Datetime with timezone information.
+- **含义**：创建此配置时的时间戳。
+- **作用**：审计字段。
+- **典型内容**：包含时区信息的日期时间。
 
 ### last_modified_on
-- **Meaning**: Timestamp of the last modification of the configuration.
-- **Role**: Audit field.
-- **Typical Contents**: Datetime with timezone information.
+- **含义**：此配置最后一次修改时的时间戳。
+- **作用**：审计字段。
+- **典型内容**：包含时区信息的日期时间。
 
 ### is_deleted
-- **Meaning**: Indicates if the configuration has been marked as deleted.
-- **Role**: Status flag.
-- **Typical Contents**: `True` or `False`.
+- **含义**：指示此配置是否已标记为已删除。
+- **作用**：状态标志。
+- **典型内容**：`True` 或 `False`。
 
 ### deleted_on
-- **Meaning**: Timestamp when the configuration was marked as deleted.
-- **Role**: Audit field.
-- **Typical Contents**: Datetime with timezone information or a default date for non-deleted records.
+- **含义**：此配置被标记为已删除时的时间戳。
+- **作用**：审计字段。
+- **典型内容**：包含时区信息的日期时间，或未删除记录使用的默认日期。
 
 ### port
-- **Meaning**: Port number used to connect to the FTP server.
-- **Role**: Descriptive field.
-- **Typical Contents**: Integer, e.g., `22` for SFTP.
+- **含义**：连接 FTP 服务器时使用的端口号。
+- **作用**：描述性字段。
+- **典型内容**：整数，例如 SFTP 使用的 `22`。
 
 ### default_directory
-- **Meaning**: The default directory path on the FTP server.
-- **Role**: Descriptive field.
-- **Typical Contents**: Directory path string.
+- **含义**：FTP 服务器上的默认目录路径。
+- **作用**：描述性字段。
+- **典型内容**：目录路径字符串。
 
 ### ftp_type
-- **Meaning**: Type of FTP protocol used (e.g., FTP, SFTP).
-- **Role**: Descriptive field.
-- **Typical Contents**: `FTP` or `SFTP`.
+- **含义**：使用的 FTP 协议类型（例如 FTP、SFTP）。
+- **作用**：描述性字段。
+- **典型内容**：`FTP` 或 `SFTP`。
 
 ### token
-- **Meaning**: Security token for additional authentication or identification.
-- **Role**: Descriptive field.
-- **Typical Contents**: Encrypted or encoded string.
+- **含义**：用于额外身份验证或标识的安全令牌。
+- **作用**：描述性字段。
+- **典型内容**：加密或编码后的字符串。
 
 ### file_name_matching_patterns
-- **Meaning**: Patterns used to match file names for import.
-- **Role**: Descriptive field.
-- **Typical Contents**: Pattern strings or `null`.
+- **含义**：用于匹配待导入文件名的模式。
+- **作用**：描述性字段。
+- **典型内容**：模式字符串或 `null`。
 
 ### last_mtime
-- **Meaning**: Last modification time of files, used for filtering imports.
-- **Role**: Descriptive field.
-- **Typical Contents**: String representing a timestamp or `null`.
+- **含义**：文件的最后修改时间，用于筛选导入文件。
+- **作用**：描述性字段。
+- **典型内容**：表示时间戳的字符串或 `null`。
 
 ### auth_failed_count
-- **Meaning**: Counter for failed authentication attempts.
-- **Role**: Descriptive field.
-- **Typical Contents**: Integer, e.g., `0` or `5`.
+- **含义**：身份验证失败次数计数器。
+- **作用**：描述性字段。
+- **典型内容**：整数，例如 `0` 或 `5`。
 
 ### auth_message
-- **Meaning**: Message describing the result of the last authentication attempt.
-- **Role**: Descriptive field.
-- **Typical Contents**: Text message or `null`.
+- **含义**：描述最近一次身份验证尝试结果的消息。
+- **作用**：描述性字段。
+- **典型内容**：文本消息或 `null`。
 
 ### ignore_certificate
-- **Meaning**: Indicates if SSL certificate validation should be ignored.
-- **Role**: Status flag.
-- **Typical Contents**: `True` or `False`.
+- **含义**：指示是否应忽略 SSL 证书验证。
+- **作用**：状态标志。
+- **典型内容**：`True` 或 `False`。
 
 ### move_after_import
-- **Meaning**: Indicates if files should be moved after import is complete.
-- **Role**: Status flag.
-- **Typical Contents**: `True` or `False`.
+- **含义**：指示导入完成后是否应移动文件。
+- **作用**：状态标志。
+- **典型内容**：`True` 或 `False`。
 
 ### destination_directory
-- **Meaning**: Directory path where files should be moved after import.
-- **Role**: Descriptive field.
-- **Typical Contents**: Directory path string or `null`.
+- **含义**：导入后用于移动文件的目标目录路径。
+- **作用**：描述性字段。
+- **典型内容**：目录路径字符串或 `null`。
 
 ### import_directory
-- **Meaning**: Directory path from which files are imported.
-- **Role**: Descriptive field.
-- **Typical Contents**: Directory path string or `null`.
+- **含义**：导入文件所在的目录路径。
+- **作用**：描述性字段。
+- **典型内容**：目录路径字符串或 `null`。
 
 ### include_subfolder_content
-- **Meaning**: Indicates if content from subfolders should be included in the import.
-- **Role**: Status flag.
-- **Typical Contents**: `True` or `False`.
+- **含义**：指示导入时是否应包含子文件夹中的内容。
+- **作用**：状态标志。
+- **典型内容**：`True` 或 `False`。
 ```
 
 本文档根据给定的数据和列名，全面说明 `public.ftp_import_configurations` 表中每一列的用途、作用和典型内容。

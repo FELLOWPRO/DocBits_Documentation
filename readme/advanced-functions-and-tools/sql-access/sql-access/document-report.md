@@ -24,100 +24,100 @@
 ## 分析与描述
 
 ```markdown
-# Document Report Table Documentation
+# 文档报告表文档
 
-## Introduction
-The `public.document_report` table is designed to store detailed information about document processing reports, specifically related to the validation and extraction of fields from documents such as invoices. The table captures metadata about the document, processing metrics, and the validation outcomes, which can be used for auditing, tracking, and improving document processing workflows.
+## 简介
+`public.document_report` 表用于存储文档处理报告的详细信息，具体涉及发票等文档中字段的验证和提取。该表记录文档元数据、处理指标和验证结果，可用于审计、跟踪并改进文档处理工作流。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: Unique identifier for each document report entry.
-- **Role**: Primary Key
-- **Typical Contents**: A UUID representing the unique document report.
+- **含义**：每条文档报告记录的唯一标识符。
+- **作用**：主键
+- **典型内容**：表示唯一文档报告的 UUID。
 
 ### org_id
-- **Meaning**: Identifier for the organization associated with the document.
-- **Role**: Foreign Key
-- **Typical Contents**: A UUID linking to an organization.
+- **含义**：与该文档关联的组织标识符。
+- **作用**：外键
+- **典型内容**：用于关联组织的 UUID。
 
 ### doc_id
-- **Meaning**: Identifier for the specific document being reported.
-- **Role**: Foreign Key
-- **Typical Contents**: A UUID representing the unique document.
+- **含义**：所报告的特定文档的标识符。
+- **作用**：外键
+- **典型内容**：表示唯一文档的 UUID。
 
 ### doc_type
-- **Meaning**: Type of the document being processed, such as an invoice.
-- **Role**: Descriptive Field
-- **Typical Contents**: Values like `INVOICE`.
+- **含义**：正在处理的文档类型，例如发票。
+- **作用**：描述性字段
+- **典型内容**：例如 `INVOICE`。
 
 ### sub_doc_type
-- **Meaning**: Subtype of the document, providing further categorization.
-- **Role**: Descriptive Field
-- **Typical Contents**: Could be `null` or specific subtypes like "Cost Invoice".
+- **含义**：文档子类型，用于进一步分类。
+- **作用**：描述性字段
+- **典型内容**：可以是 `null`，也可以是 "Cost Invoice" 等特定子类型。
 
 ### time_spent
-- **Meaning**: Time spent on the validation of the document.
-- **Role**: Metric Field
-- **Typical Contents**: Typically '0', measuring time in predefined units.
+- **含义**：对该文档进行验证所用的时间。
+- **作用**：指标字段
+- **典型内容**：通常为 '0'，时间以预定义单位计量。
 
 ### fields_total
-- **Meaning**: Total number of fields extracted from the document.
-- **Role**: Metric Field
-- **Typical Contents**: An integer representing total fields, e.g., 13.
+- **含义**：从文档中提取的字段总数。
+- **作用**：指标字段
+- **典型内容**：表示字段总数的整数，例如 13。
 
 ### fields_correct
-- **Meaning**: Number of fields correctly extracted and validated.
-- **Role**: Metric Field
-- **Typical Contents**: An integer representing correctly processed fields, e.g., 12.
+- **含义**：正确提取并验证的字段数。
+- **作用**：指标字段
+- **典型内容**：表示已正确处理字段数的整数，例如 12。
 
 ### checkbox_fields_total
-- **Meaning**: Total number of checkbox fields processed.
-- **Role**: Metric Field
-- **Typical Contents**: Usually `0`, indicating checkbox fields processed.
+- **含义**：已处理的复选框字段总数。
+- **作用**：指标字段
+- **典型内容**：通常为 `0`，表示已处理的复选框字段数。
 
 ### checkbox_fields_correct
-- **Meaning**: Number of checkbox fields correctly validated.
-- **Role**: Metric Field
-- **Typical Contents**: Usually `0`, indicating correctly validated checkbox fields.
+- **含义**：已正确验证的复选框字段数。
+- **作用**：指标字段
+- **典型内容**：通常为 `0`，表示已正确验证的复选框字段数。
 
 ### table_values_total
-- **Meaning**: Total number of table values extracted from the document.
-- **Role**: Metric Field
-- **Typical Contents**: Usually `0`, indicating total table values processed.
+- **含义**：从文档中提取的表格值总数。
+- **作用**：指标字段
+- **典型内容**：通常为 `0`，表示已处理的表格值总数。
 
 ### table_values_correct
-- **Meaning**: Number of table values correctly validated.
-- **Role**: Metric Field
-- **Typical Contents**: Usually `0`, indicating correctly validated table values.
+- **含义**：已正确验证的表格值数。
+- **作用**：指标字段
+- **典型内容**：通常为 `0`，表示已正确验证的表格值数。
 
 ### detail_report
-- **Meaning**: JSON content providing detailed report of the document fields and their validation status.
-- **Role**: Descriptive/Technical Field
-- **Typical Contents**: JSON string containing detailed field information.
+- **含义**：提供文档字段及其验证状态详细报告的 JSON 内容。
+- **作用**：描述性/技术性字段
+- **典型内容**：包含详细字段信息的 JSON 字符串。
 
 ### created_on
-- **Meaning**: Timestamp when the document report entry was created.
-- **Role**: Technical Field
-- **Typical Contents**: Timestamp in UTC, e.g., `2025-03-10 08:07:24+00`.
+- **含义**：创建文档报告记录时的时间戳。
+- **作用**：技术字段
+- **典型内容**：UTC 时间戳，例如 `2025-03-10 08:07:24+00`。
 
 ### last_modified_on
-- **Meaning**: Timestamp of the last modification to the document report.
-- **Role**: Technical Field
-- **Typical Contents**: Timestamp in UTC, indicating the last update time.
+- **含义**：文档报告最后一次修改的时间戳。
+- **作用**：技术字段
+- **典型内容**：UTC 时间戳，表示最后更新时间。
 
 ### is_deleted
-- **Meaning**: Indicates whether the document report has been marked as deleted.
-- **Role**: Technical Field
-- **Typical Contents**: Boolean value; `False` if not deleted.
+- **含义**：指示该文档报告是否已标记为删除。
+- **作用**：技术字段
+- **典型内容**：布尔值；未删除时为 `False`。
 
 ### validated_by
-- **Meaning**: Identifier of the user who validated the document.
-- **Role**: Foreign Key
-- **Typical Contents**: Integer representing the validator's ID, e.g., `1`.
+- **含义**：验证该文档的用户标识符。
+- **作用**：外键
+- **典型内容**：表示验证者 ID 的整数，例如 `1`。
 
 ### sub_org_id
-- **Meaning**: Identifier for a sub-organization related to the document.
-- **Role**: Foreign Key
-- **Typical Contents**: A UUID linking to a sub-organization.
+- **含义**：与该文档相关的子组织标识符。
+- **作用**：外键
+- **典型内容**：用于关联子组织的 UUID。
 ```

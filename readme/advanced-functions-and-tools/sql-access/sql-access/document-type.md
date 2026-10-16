@@ -20,80 +20,80 @@
 ## 分析与说明
 
 ```markdown
-# Table: public.document_type
+# 表：public.document_type
 
-## Introduction
-The `public.document_type` table is designed to store information related to various types of documents within an organization. It includes identifiers and metadata for document categorization, management, and processing, such as document keys, names, titles, translation keys, and other attributes that facilitate document handling and retrieval. The table also tracks the creation and modification of these entries, supporting both active and deleted states.
+## 简介
+`public.document_type` 表用于存储组织内各类文档的相关信息。它包含用于文档分类、管理和处理的标识符及元数据，例如文档键、名称、标题、翻译键和其他属性，以便于文档处理和检索。该表还会记录这些条目的创建和修改信息，并支持有效和已删除两种状态。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each document type entry.
-- **Role**: Primary Key.
-- **Typical Contents**: A UUID string that uniquely identifies a document type entry.
+- **含义**：每个文档类型条目的唯一标识符。
+- **作用**：主键。
+- **典型内容**：用于唯一标识文档类型条目的 UUID 字符串。
 
 ### org_id
-- **Meaning**: Identifier for the organization to which the document type belongs.
-- **Role**: Foreign Key.
-- **Typical Contents**: A UUID string referencing an organization.
+- **含义**：文档类型所属组织的标识符。
+- **作用**：外键。
+- **典型内容**：引用某个组织的 UUID 字符串。
 
 ### document_key
-- **Meaning**: A unique key for identifying the document type, potentially used in document storage or processing systems.
-- **Role**: Identifier.
-- **Typical Contents**: A string that combines document type information with the organization ID.
+- **含义**：用于标识文档类型的唯一键，可能用于文档存储或处理系统。
+- **作用**：标识符。
+- **典型内容**：由文档类型信息和组织 ID 组合而成的字符串。
 
 ### document_name
-- **Meaning**: The internal name for the document type.
-- **Role**: Descriptive Field.
-- **Typical Contents**: An uppercase string representing the document type name.
+- **含义**：文档类型的内部名称。
+- **作用**：描述性字段。
+- **典型内容**：表示文档类型名称的大写字符串。
 
 ### title
-- **Meaning**: The display title of the document type for user interfaces.
-- **Role**: Descriptive Field.
-- **Typical Contents**: A string in title case that is human-readable and descriptive of the document type.
+- **含义**：在用户界面中显示的文档类型标题。
+- **作用**：描述性字段。
+- **典型内容**：采用标题式大小写、便于阅读且能描述文档类型的字符串。
 
 ### translation_key
-- **Meaning**: A key used for localizing the document title or name into different languages.
-- **Role**: Internationalization Support.
-- **Typical Contents**: A lowercase string that serves as a reference for translation systems.
+- **含义**：用于将文档标题或名称本地化为不同语言的键。
+- **作用**：国际化支持。
+- **典型内容**：供翻译系统引用的小写字符串。
 
 ### extraction_type
-- **Meaning**: Indicates the method or process by which data is extracted from the document.
-- **Role**: Metadata Field.
-- **Typical Contents**: Currently not populated in the example data.
+- **含义**：指示从文档中提取数据所采用的方法或流程。
+- **作用**：元数据字段。
+- **典型内容**：当前示例数据中未填充。
 
 ### document_type_category
-- **Meaning**: Categorizes the document type into broader categories or classifications.
-- **Role**: Categorization Field.
-- **Typical Contents**: Currently not populated in the example data.
+- **含义**：将文档类型归入更宽泛的类别或分类。
+- **作用**：分类字段。
+- **典型内容**：当前示例数据中未填充。
 
 ### has_table
-- **Meaning**: Indicates whether the document type involves tabular data.
-- **Role**: Metadata Field.
-- **Typical Contents**: Boolean value (`True` or `False`) indicating the presence of tabular data.
+- **含义**：指示文档类型是否包含表格数据。
+- **作用**：元数据字段。
+- **典型内容**：布尔值（`True` 或 `False`），表示是否存在表格数据。
 
 ### sort_order
-- **Meaning**: Defines the order in which document types are sorted or displayed.
-- **Role**: Sorting Field.
-- **Typical Contents**: An integer representing the sequence for sorting.
+- **含义**：定义文档类型的排序或显示顺序。
+- **作用**：排序字段。
+- **典型内容**：表示排序顺序的整数。
 
 ### created_by
-- **Meaning**: Identifier for the user who created the document type entry.
-- **Role**: Metadata Field.
-- **Typical Contents**: An integer referencing a user ID.
+- **含义**：创建文档类型条目的用户标识符。
+- **作用**：元数据字段。
+- **典型内容**：引用用户 ID 的整数。
 
 ### created_on
-- **Meaning**: Timestamp indicating when the document type entry was created.
-- **Role**: Audit Field.
-- **Typical Contents**: Date and time with timezone information.
+- **含义**：指示文档类型条目创建时间的时间戳。
+- **作用**：审计字段。
+- **典型内容**：包含时区信息的日期和时间。
 
 ### last_modified_on
-- **Meaning**: Timestamp indicating the last modification date of the document type entry.
-- **Role**: Audit Field.
-- **Typical Contents**: Date and time with timezone information, `None` if never modified.
+- **含义**：指示文档类型条目最后修改时间的时间戳。
+- **作用**：审计字段。
+- **典型内容**：包含时区信息的日期和时间；如果从未修改，则为 `None`。
 
 ### is_deleted
-- **Meaning**: Indicates whether the document type entry is marked as deleted.
-- **Role**: Status Field.
-- **Typical Contents**: Boolean value (`True` or `False`) indicating the deletion status.
+- **含义**：指示文档类型条目是否已标记为删除。
+- **作用**：状态字段。
+- **典型内容**：布尔值（`True` 或 `False`），表示删除状态。
 ```

@@ -45,208 +45,208 @@
 ## 分析与说明
 
 ```markdown
-# Technical Documentation for `public.field` Table
+# `public.field` 表技术文档
 
-## Introduction
+## 简介
 
-The `public.field` table appears to be designed to manage metadata and configuration for different fields associated with documents, likely within an insurance domain. Each row in the table seems to represent a specific field configuration, including its type, label, visibility settings, and other properties that dictate how the field should be presented and processed.
+`public.field` 表似乎用于管理与文档相关的不同字段的元数据和配置，这些文档可能属于保险领域。表中的每一行似乎代表一项特定的字段配置，包括字段类型、标签、可见性设置以及决定字段如何显示和处理的其他属性。
 
-## Columns
+## 列
 
 ### id
-- **Meaning**: Unique identifier for each field configuration.
-- **Role**: Primary key.
-- **Typical Contents**: A UUID string that uniquely identifies each entry in the table.
+- **含义**：每项字段配置的唯一标识符。
+- **作用**：主键。
+- **典型内容**：用于唯一标识表中每条记录的 UUID 字符串。
 
 ### org_id
-- **Meaning**: Identifier for the organization associated with the field configuration.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID referencing an organization.
+- **含义**：与字段配置关联的组织标识符。
+- **作用**：外键。
+- **典型内容**：引用某个组织的 UUID。
 
 ### doc_type
-- **Meaning**: Specifies the document type that the field is associated with.
-- **Role**: Possibly a foreign key or a categorical identifier.
-- **Typical Contents**: A string in the format `INSURANCE_DOCUMENTS_<UUID>` indicating the document type.
+- **含义**：指定字段关联的文档类型。
+- **作用**：可能是外键或分类标识符。
+- **典型内容**：格式为 `INSURANCE_DOCUMENTS_<UUID>`、用于表示文档类型的字符串。
 
 ### is_sub_doc_type_field
-- **Meaning**: Indicates whether the field is a sub-type of the document type.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示该字段是否属于文档类型的子类型。
+- **作用**：技术字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### profile
-- **Meaning**: Potentially defines the profile or scope of the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Often empty or a brief text description.
+- **含义**：可能定义字段的配置或范围。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含简短的文本描述。
 
 ### field_name
-- **Meaning**: The internal name of the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string representing the field's name in a technical context (e.g., `Schadennummer`).
+- **含义**：字段的内部名称。
+- **作用**：描述性字段。
+- **典型内容**：在技术语境中表示字段名称的字符串（例如 `Schadennummer`）。
 
 ### field_type
-- **Meaning**: Defines the type of data the field holds.
-- **Role**: Descriptive field.
-- **Typical Contents**: Descriptive strings like `STRING`, `AMOUNT`.
+- **含义**：定义字段所保存的数据类型。
+- **作用**：描述性字段。
+- **典型内容**：如 `STRING`、`AMOUNT` 等描述性字符串。
 
 ### title
-- **Meaning**: The display title for the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Uppercase string used for displaying the field's label.
+- **含义**：字段的显示标题。
+- **作用**：描述性字段。
+- **典型内容**：用于显示字段标签的大写字符串。
 
 ### translation_key
-- **Meaning**: Key for translation into different languages.
-- **Role**: Technical field.
-- **Typical Contents**: Lowercase string representing the translation key.
+- **含义**：用于翻译成不同语言的键。
+- **作用**：技术字段。
+- **典型内容**：表示翻译键的小写字符串。
 
 ### hide_label
-- **Meaning**: Indicates if the field's label should be hidden in the UI.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示是否应在用户界面中隐藏字段标签。
+- **作用**：技术字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### input_type
-- **Meaning**: Specifies the input method for the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Can be empty or contain strings defining the input type.
+- **含义**：指定字段的输入方式。
+- **作用**：描述性字段。
+- **典型内容**：可以为空，或包含用于定义输入类型的字符串。
 
 ### input_size
-- **Meaning**: Determines the size of the input field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Can be empty or contain strings defining input size.
+- **含义**：确定输入字段的大小。
+- **作用**：描述性字段。
+- **典型内容**：可以为空，或包含用于定义输入大小的字符串。
 
 ### icon_left
-- **Meaning**: Icon to display on the left side of the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains icon identifiers.
+- **含义**：显示在字段左侧的图标。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含图标标识符。
 
 ### icon_right
-- **Meaning**: Icon to display on the right side of the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains icon identifiers.
+- **含义**：显示在字段右侧的图标。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含图标标识符。
 
 ### icon_above
-- **Meaning**: Icon to display above the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains icon identifiers.
+- **含义**：显示在字段上方的图标。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含图标标识符。
 
 ### group_id
-- **Meaning**: Identifier for the group of fields to which this field belongs.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID referencing a group of fields.
+- **含义**：字段所属字段组的标识符。
+- **作用**：外键。
+- **典型内容**：引用某个字段组的 UUID。
 
 ### row_order
-- **Meaning**: Determines the order of the field in a list or form.
-- **Role**: Technical field.
-- **Typical Contents**: Integer indicating the position.
+- **含义**：确定字段在列表或表单中的顺序。
+- **作用**：技术字段。
+- **典型内容**：表示位置的整数。
 
 ### sort_order
-- **Meaning**: Specifies sorting order for the field.
-- **Role**: Technical field.
-- **Typical Contents**: Integer that defines sorting precedence.
+- **含义**：指定字段的排序顺序。
+- **作用**：技术字段。
+- **典型内容**：用于定义排序优先级的整数。
 
 ### fuzzy_name
-- **Meaning**: An alternate name for fuzzy matching.
-- **Role**: Descriptive field.
-- **Typical Contents**: Often empty or contains a string for matching purposes.
+- **含义**：用于模糊匹配的备用名称。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含用于匹配的字符串。
 
 ### fuzzy_field
-- **Meaning**: Specifies if the field is used in fuzzy matching.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains a string.
+- **含义**：指定该字段是否用于模糊匹配。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含字符串。
 
 ### fuzzy_primary_field
-- **Meaning**: Indicates if this is the primary field for fuzzy matching.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示该字段是否为模糊匹配的主字段。
+- **作用**：技术字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### label_align
-- **Meaning**: Alignment setting for the field label.
-- **Role**: Descriptive field.
-- **Typical Contents**: Often empty or contains alignment information (e.g., left, right, center).
+- **含义**：字段标签的对齐设置。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含对齐信息（例如 left、right、center）。
 
 ### calculation_formula
-- **Meaning**: Formula used for calculations involving the field.
-- **Role**: Technical field.
-- **Typical Contents**: Text containing a formula or calculation logic.
+- **含义**：用于计算字段相关结果的公式。
+- **作用**：技术字段。
+- **典型内容**：包含公式或计算逻辑的文本。
 
 ### clean_field
-- **Meaning**: Indicates if the field should be subject to data cleaning.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示是否应对字段数据进行清理。
+- **作用**：技术字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### alphanumeric_field
-- **Meaning**: Specifies if the field should accept only alphanumeric characters.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指定字段是否只接受字母数字字符。
+- **作用**：技术字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### placeholder
-- **Meaning**: Placeholder text for the input field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Often empty or contains guiding text.
+- **含义**：输入字段的占位文本。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含引导性文本。
 
 ### coordinates
-- **Meaning**: Coordinate data associated with the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains coordinate information.
+- **含义**：与字段关联的坐标数据。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含坐标信息。
 
 ### normalized_coordinates
-- **Meaning**: Normalized version of coordinates for consistency.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains normalized coordinate data.
+- **含义**：经过规范化处理、用于保持一致性的坐标。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含规范化后的坐标数据。
 
 ### threshold
-- **Meaning**: Threshold value related to field validation or processing.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains threshold values.
+- **含义**：与字段验证或处理相关的阈值。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含阈值。
 
 ### reference_point
-- **Meaning**: Reference point used in calculations or positioning.
-- **Role**: Descriptive field.
-- **Typical Contents**: Often empty or contains reference point data.
+- **含义**：用于计算或定位的参考点。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含参考点数据。
 
 ### checkbox_group
-- **Meaning**: Grouping identifier for checkbox fields.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains group identifiers.
+- **含义**：复选框字段的分组标识符。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含分组标识符。
 
 ### list_of_values
-- **Meaning**: Specifies a list of allowed values for the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains a list of values.
+- **含义**：指定字段允许使用的值列表。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含值列表。
 
 ### enforce_list_of_values
-- **Meaning**: Indicates if the list of values should be strictly enforced.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示是否应严格限制为值列表中的值。
+- **作用**：技术字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### created_by
-- **Meaning**: Identifier for the user who created the field entry.
-- **Role**: Descriptive field.
-- **Typical Contents**: Integer referencing a user ID.
+- **含义**：创建该字段记录的用户标识符。
+- **作用**：描述性字段。
+- **典型内容**：引用用户 ID 的整数。
 
 ### created_on
-- **Meaning**: Timestamp of when the field was created.
-- **Role**: Technical field.
-- **Typical Contents**: Date and time in UTC.
+- **含义**：字段的创建时间戳。
+- **作用**：技术字段。
+- **典型内容**：UTC 日期和时间。
 
 ### last_modified_on
-- **Meaning**: Timestamp of the last modification to the field.
-- **Role**: Technical field.
-- **Typical Contents**: Date and time in UTC.
+- **含义**：字段的最后修改时间戳。
+- **作用**：技术字段。
+- **典型内容**：UTC 日期和时间。
 
 ### is_deleted
-- **Meaning**: Indicates if the field has been marked as deleted.
-- **Role**: Technical field.
-- **Typical Contents**: Boolean value (True or False).
+- **含义**：指示该字段是否已标记为已删除。
+- **作用**：技术字段。
+- **典型内容**：布尔值（True 或 False）。
 
 ### costing_element
-- **Meaning**: Costing element associated with the field.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains costing element identifiers.
+- **含义**：与字段关联的成本要素。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含成本要素标识符。
 
 ### erp_field_name
-- **Meaning**: Name of the field as used in ERP systems.
-- **Role**: Descriptive field.
-- **Typical Contents**: Generally empty or contains ERP-specific field names.
+- **含义**：字段在 ERP 系统中使用的名称。
+- **作用**：描述性字段。
+- **典型内容**：通常为空，或包含 ERP 专用字段名称。
 
-This documentation provides a detailed overview of the structure and purpose of each column within the `public.field` table. It serves as a guide for developers to understand the data model and its application in the system.
+本文档详细介绍了 `public.field` 表中各列的结构和用途，可帮助开发者理解该系统中的数据模型及其应用方式。
 ```

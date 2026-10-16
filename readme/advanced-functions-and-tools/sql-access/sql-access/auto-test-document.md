@@ -16,72 +16,71 @@
 ## 分析与描述
 
 ```markdown
-# Table Documentation: `public.auto_test_document`
+# 表文档：`public.auto_test_document`
 
-## Introduction
+## 简介
 
-The `public.auto_test_document` table is designed to store metadata and extraction results from document processing within an organization. The table captures information about documents, their types, and the data extracted from them. It includes fields for document identification, processing metadata, and status flags, which are essential for managing document workflows and ensuring data integrity.
+`public.auto_test_document` 表用于存储组织内文档处理的元数据和提取结果。该表记录文档、文档类型以及从文档中提取的数据。表中包含文档标识、处理元数据和状态标记等字段，这些信息对于管理文档工作流和确保数据完整性至关重要。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: Unique identifier for each document entry in the table.
-- **Role**: Primary key.
-- **Typical Contents**: UUID string.
-- **Note**: Serves as a unique identifier for records, ensuring each entry is distinct.
+- **含义**：表中每条文档记录的唯一标识符。
+- **作用**：主键。
+- **典型内容**：UUID 字符串。
+- **备注**：作为记录的唯一标识符，确保每条记录都不重复。
 
 ### org_id
-- **Meaning**: Identifier for the organization associated with the document.
-- **Role**: Foreign key.
-- **Typical Contents**: UUID string.
-- **Note**: Links the document to a specific organization within the system.
+- **含义**：与该文档关联的组织标识符。
+- **作用**：外键。
+- **典型内容**：UUID 字符串。
+- **备注**：将文档关联到系统中的特定组织。
 
 ### doc_id
-- **Meaning**: Identifier of the document being processed.
-- **Role**: Foreign key.
-- **Typical Contents**: UUID string.
-- **Note**: Used to associate extracted data with the original document.
+- **含义**：正在处理的文档标识符。
+- **作用**：外键。
+- **典型内容**：UUID 字符串。
+- **备注**：用于将提取的数据与原始文档关联起来。
 
 ### doc_type
-- **Meaning**: Type or category of the document.
-- **Role**: Descriptive field.
-- **Typical Contents**: String such as "MEDI_ORDER".
-- **Note**: Helps in categorizing documents for processing and analysis.
+- **含义**：文档的类型或类别。
+- **作用**：描述性字段。
+- **典型内容**：字符串，例如 "MEDI_ORDER"。
+- **备注**：有助于对文档进行分类，以便处理和分析。
 
 ### extracted_data
-- **Meaning**: JSON structure containing detailed data extracted from the document.
-- **Role**: Data field.
-- **Typical Contents**: JSON text with fields, values, and extraction metadata.
-- **Note**: Stores the results of the document's data extraction process.
+- **含义**：包含从文档中提取的详细数据的 JSON 结构。
+- **作用**：数据字段。
+- **典型内容**：包含字段、值和提取元数据的 JSON 文本。
+- **备注**：存储文档数据提取流程的结果。
 
 ### created_by
-- **Meaning**: Identifier of the user who created the document record.
-- **Role**: Descriptive field.
-- **Typical Contents**: Integer representing a user ID.
-- **Note**: Tracks which user initiated the document's entry into the system.
+- **含义**：创建该文档记录的用户标识符。
+- **作用**：描述性字段。
+- **典型内容**：表示用户 ID 的整数。
+- **备注**：记录是哪位用户发起了该文档记录在系统中的创建。
 
 ### created_on
-- **Meaning**: Timestamp indicating when the document record was created.
-- **Role**: Technical field.
-- **Typical Contents**: Date and time with timezone information.
-- **Note**: Useful for auditing and tracking the document's lifecycle.
+- **含义**：指示文档记录创建时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：包含时区信息的日期和时间。
+- **备注**：便于审计和跟踪文档的生命周期。
 
 ### last_modified_on
-- **Meaning**: Timestamp indicating the last modification made to the document record.
-- **Role**: Technical field.
-- **Typical Contents**: Date and time with timezone information.
-- **Note**: Helps track changes and updates to the document record.
+- **含义**：指示文档记录最后一次修改时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：包含时区信息的日期和时间。
+- **备注**：有助于跟踪文档记录的变更和更新。
 
 ### is_deleted
-- **Meaning**: Flag indicating if the document record has been marked as deleted.
-- **Role**: Status field.
-- **Typical Contents**: Boolean value.
-- **Note**: Facilitates soft deletion of records, allowing for recovery if needed.
+- **含义**：指示文档记录是否已标记为删除的标记。
+- **作用**：状态字段。
+- **典型内容**：布尔值。
+- **备注**：支持对记录进行软删除，以便在需要时恢复。
 
 ### filename
-- **Meaning**: Name of the file associated with the document.
-- **Role**: Descriptive field.
-- **Typical Contents**: String, e.g., "7.pdf".
-- **Note**: Provides a reference to the physical file associated with the document entry.
-
+- **含义**：与文档关联的文件名。
+- **作用**：描述性字段。
+- **典型内容**：字符串，例如 "7.pdf"。
+- **备注**：提供指向与该文档记录关联的物理文件的引用。
 ```

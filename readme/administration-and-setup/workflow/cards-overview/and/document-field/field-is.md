@@ -25,12 +25,12 @@
 *
 
 ```
-**Action Execution:**
+**操作执行：**
 ```
 
 ```
-* **Empty/Not in Document Condition:** If the field's state matches this condition (i.e., the field is either absent from the document or present but empty), the system initiates the associated actions. These may include generating alerts, flagging the document for review, or halting the workflow.
-* **In Document/Not Empty Condition:** If the field's state matches this condition (i.e., the field exists in the document and contains a value), the system triggers the associated actions. These could involve enabling subsequent workflow steps, updating records, or triggering notifications.
+* **字段为空/文档中不存在条件：** 如果字段状态符合此条件（即字段在文档中不存在，或存在但为空），系统会启动相关操作。这些操作可能包括生成提醒、标记文档以供审核，或暂停工作流。
+* **字段存在于文档中/非空条件：** 如果字段状态符合此条件（即字段存在于文档中且包含一个值），系统会触发相关操作。这些操作可能包括启用后续工作流步骤、更新记录或触发通知。
 ```
 
 ## **设置和配置：**

@@ -19,90 +19,89 @@
 ## 分析与描述
 
 ```markdown
-# Technical Documentation for Table `public.organisation_document_type`
+# 表 `public.organisation_document_type` 的技术文档
 
-## Introduction
+## 简介
 
-The `public.organisation_document_type` table is designed to manage and store information about various document types associated with organizations. This includes details such as the document type key, locale, classification methods, and the status of the document type (active, deleted, etc.). It appears to serve as a mapping between organizations and the types of documents they utilize or manage, alongside metadata about these documents.
+`public.organisation_document_type` 表用于管理和存储与组织相关的各种文档类型信息，包括文档类型键、区域设置、分类方法以及文档类型的状态（启用、已删除等）。该表似乎用于建立组织与其使用或管理的文档类型之间的映射，并存储这些文档类型的元数据。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: Unique identifier for each record in the table.
-- **Role**: Primary key.
-- **Typical Contents**: A UUID string that uniquely identifies a document type entry.
-- **Note**: Essential for distinguishing each record.
+- **含义**：表中每条记录的唯一标识符。
+- **作用**：主键。
+- **典型内容**：唯一标识一个文档类型条目的 UUID 字符串。
+- **说明**：对于区分每条记录至关重要。
 
 ### org_id
-- **Meaning**: Identifier for the organization related to the document type.
-- **Role**: Foreign key, likely referencing an organization table.
-- **Typical Contents**: A UUID string.
-- **Note**: Connects the document type to a specific organization.
+- **含义**：与该文档类型相关的组织标识符。
+- **作用**：外键，可能引用组织表。
+- **典型内容**：UUID 字符串。
+- **说明**：将文档类型关联到特定组织。
 
 ### document_type_id
-- **Meaning**: Identifier for the document type.
-- **Role**: Foreign key, possibly linked to a document types reference table.
-- **Typical Contents**: A UUID string.
-- **Note**: Allows mapping to specific document types.
+- **含义**：文档类型的标识符。
+- **作用**：外键，可能关联到文档类型参考表。
+- **典型内容**：UUID 字符串。
+- **说明**：用于映射到特定文档类型。
 
 ### document_type_key
-- **Meaning**: A key or code representing the document type.
-- **Role**: Descriptive field for document type classification.
-- **Typical Contents**: A string that acts as an identifier or label for the document type.
-- **Note**: Used to identify the document type in a human-readable form.
+- **含义**：表示文档类型的键或代码。
+- **作用**：用于文档类型分类的描述性字段。
+- **典型内容**：用作文档类型标识符或标签的字符串。
+- **说明**：用于以便于人理解的形式识别文档类型。
 
 ### document_locale
-- **Meaning**: Locale or language setting for the document type.
-- **Role**: Descriptive field for locale specification.
-- **Typical Contents**: A string, often 'auto', indicating automatic determination of locale.
-- **Note**: Useful for internationalization and localization purposes.
+- **含义**：文档类型的区域设置或语言设置。
+- **作用**：用于指定区域设置的描述性字段。
+- **典型内容**：字符串，通常为 'auto'，表示自动确定区域设置。
+- **说明**：有助于实现国际化和本地化。
 
 ### classification_method
-- **Meaning**: Method used for classifying the document type.
-- **Role**: Descriptive field indicating how the document is classified.
-- **Typical Contents**: A string, often 'auto', suggesting automatic classification.
-- **Note**: Important for understanding the classification process.
+- **含义**：用于对文档类型进行分类的方法。
+- **作用**：说明文档如何分类的描述性字段。
+- **典型内容**：字符串，通常为 'auto'，表示自动分类。
+- **说明**：对于了解分类流程很重要。
 
 ### is_active
-- **Meaning**: Status indicating if the document type is active.
-- **Role**: Boolean status field.
-- **Typical Contents**: `True` or `False`.
-- **Note**: Determines whether the document type is currently in use.
+- **含义**：表示文档类型是否启用的状态。
+- **作用**：布尔状态字段。
+- **典型内容**：`True` 或 `False`。
+- **说明**：决定该文档类型当前是否在使用。
 
 ### extraction_type
-- **Meaning**: Type of extraction method used for the document.
-- **Role**: Descriptive field for extraction process.
-- **Typical Contents**: Strings like 'FIX_COORDINATES', 'FLEX_COORDINATES', or `None`.
-- **Note**: Provides insight into how data is extracted from documents.
+- **含义**：用于该文档的提取方法类型。
+- **作用**：描述提取流程的字段。
+- **典型内容**：例如 'FIX_COORDINATES'、'FLEX_COORDINATES' 或 `None` 等字符串。
+- **说明**：用于了解如何从文档中提取数据。
 
 ### created_by
-- **Meaning**: Identifier for the user who created the record.
-- **Role**: Technical field for auditing purposes.
-- **Typical Contents**: An integer representing a user ID.
-- **Note**: Useful for tracking changes and accountability.
+- **含义**：创建该记录的用户标识符。
+- **作用**：用于审计的技术字段。
+- **典型内容**：表示用户 ID 的整数。
+- **说明**：有助于跟踪变更和明确责任。
 
 ### created_on
-- **Meaning**: Timestamp of when the record was created.
-- **Role**: Technical field for auditing purposes.
-- **Typical Contents**: A timestamp with time zone.
-- **Note**: Important for tracking the creation date and time of the record.
+- **含义**：记录的创建时间戳。
+- **作用**：用于审计的技术字段。
+- **典型内容**：带时区的时间戳。
+- **说明**：对于跟踪记录的创建日期和时间很重要。
 
 ### last_modified_on
-- **Meaning**: Timestamp of the last modification to the record.
-- **Role**: Technical field for auditing purposes.
-- **Typical Contents**: A timestamp with time zone.
-- **Note**: Useful for tracking updates and changes to the record.
+- **含义**：记录最后修改的时间戳。
+- **作用**：用于审计的技术字段。
+- **典型内容**：带时区的时间戳。
+- **说明**：有助于跟踪记录的更新和变更。
 
 ### is_deleted
-- **Meaning**: Status indicating if the record has been marked as deleted.
-- **Role**: Boolean status field.
-- **Typical Contents**: `True` or `False`.
-- **Note**: Helps in implementing soft-delete functionality.
+- **含义**：表示记录是否已标记为删除的状态。
+- **作用**：布尔状态字段。
+- **典型内容**：`True` 或 `False`。
+- **说明**：有助于实现软删除功能。
 
 ### sub_org_id
-- **Meaning**: Identifier for a sub-organization related to the document type.
-- **Role**: Possible foreign key, adding hierarchical organization structure.
-- **Typical Contents**: A UUID string or `None`.
-- **Note**: Provides additional context for organization structure.
-
+- **含义**：与该文档类型相关的子组织标识符。
+- **作用**：可能是外键，用于补充组织层级结构。
+- **典型内容**：UUID 字符串或 `None`。
+- **说明**：提供有关组织结构的更多上下文。
 ```

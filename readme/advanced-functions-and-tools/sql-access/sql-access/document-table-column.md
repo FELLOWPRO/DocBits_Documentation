@@ -21,97 +21,96 @@
 ## 分析与说明
 
 ```markdown
-# Technical Documentation for `public.document_table_column`
+# `public.document_table_column` 的技术文档
 
-## Introduction
+## 简介
 
-The `public.document_table_column` table appears to be designed to store metadata about columns in various document-related tables, such as invoice or delivery note tables. This metadata includes information about each column's name, type, and properties, as well as organizational and technical identifiers. The table supports the dynamic generation and management of document schemas within the system.
+`public.document_table_column` 表似乎用于存储各种文档相关表（例如发票或交货单表）中字段的元数据。这些元数据包括每个字段的名称、类型和属性，以及组织标识符和技术标识符。该表支持在系统中动态生成和管理文档架构。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each column entry in the table.
-- **Role**: Primary key.
-- **Note**: Typically a UUID string that uniquely identifies a row in this table.
+- **含义**：表中每条字段记录的唯一标识符。
+- **作用**：主键。
+- **说明**：通常为 UUID 字符串，用于唯一标识此表中的一行。
 
 ### document_table_id
-- **Meaning**: Refers to the table that contains the document this column is part of.
-- **Role**: Foreign key.
-- **Note**: Likely a UUID that links to another table where document tables are defined.
+- **含义**：指向包含该字段所属文档的表。
+- **作用**：外键。
+- **说明**：可能是 UUID，用于关联定义文档表的另一张表。
 
 ### table_name
-- **Meaning**: The name of the document table to which this column belongs.
-- **Role**: Descriptive field.
-- **Typical Contents**: Names like `INVOICE_TABLE`, `DELIVERY_NOTE_TABLE`.
-- **Note**: Facilitates understanding of which document structure the column belongs to.
+- **含义**：该字段所属文档表的名称。
+- **作用**：描述性字段。
+- **典型内容**：如 `INVOICE_TABLE`、`DELIVERY_NOTE_TABLE` 这样的名称。
+- **说明**：便于了解该字段所属的文档结构。
 
 ### org_id
-- **Meaning**: Identifier for the organization that owns or manages the document table.
-- **Role**: Foreign key.
-- **Note**: Typically a UUID linking to an organization entity.
+- **含义**：拥有或管理该文档表的组织标识符。
+- **作用**：外键。
+- **说明**：通常为关联到组织实体的 UUID。
 
 ### column_name
-- **Meaning**: The technical name of the column within its document table.
-- **Role**: Descriptive field.
-- **Typical Contents**: Names such as `COUNTRY_ORIGIN`, `ORDERED_QUANTITY`.
-- **Note**: Represents the actual field name in the document table.
+- **含义**：该字段在其所属文档表中的技术名称。
+- **作用**：描述性字段。
+- **典型内容**：如 `COUNTRY_ORIGIN`、`ORDERED_QUANTITY` 这样的名称。
+- **说明**：表示文档表中的实际字段名称。
 
 ### column_type
-- **Meaning**: Describes the data type of the column.
-- **Role**: Descriptive field.
-- **Typical Contents**: `STRING`, `DATE`.
-- **Note**: Indicates the kind of data stored in the column.
+- **含义**：描述字段的数据类型。
+- **作用**：描述性字段。
+- **典型内容**：`STRING`、`DATE`。
+- **说明**：表示该字段中存储的数据类型。
 
 ### title
-- **Meaning**: A human-readable title or label for the column.
-- **Role**: Descriptive field.
-- **Typical Contents**: `COUNTRY_ORIGIN`, `Ordered Quantity`.
-- **Note**: Used for displaying column names in a user-friendly manner.
+- **含义**：字段的易读标题或标签。
+- **作用**：描述性字段。
+- **典型内容**：`COUNTRY_ORIGIN`、`Ordered Quantity`。
+- **说明**：用于以便于用户理解的方式显示字段名称。
 
 ### translation_key
-- **Meaning**: Key used for internationalization and localization of the column title.
-- **Role**: Technical field.
-- **Note**: Currently empty in example data, suggesting optional use.
+- **含义**：用于对字段标题进行国际化和本地化的键。
+- **作用**：技术字段。
+- **说明**：示例数据中目前为空，表明该字段可能为可选项。
 
 ### sort_order
-- **Meaning**: Defines the order of columns when displayed.
-- **Role**: Descriptive field.
-- **Typical Contents**: Integers like `16`, `5`.
-- **Note**: Determines the sequence of columns in the document table view.
+- **含义**：定义字段的显示顺序。
+- **作用**：描述性字段。
+- **典型内容**：如 `16`、`5` 这样的整数。
+- **说明**：决定文档表视图中字段的排列顺序。
 
 ### clean_field
-- **Meaning**: Indicates if the column contains sanitized data.
-- **Role**: Boolean flag.
-- **Typical Contents**: `True` or `False`.
-- **Note**: Used for data validation or cleaning status.
+- **含义**：指示该字段是否包含经过清理的数据。
+- **作用**：布尔标记。
+- **典型内容**：`True` 或 `False`。
+- **说明**：用于数据验证或标记数据清理状态。
 
 ### alphanumeric_field
-- **Meaning**: Specifies if the column should be treated as an alphanumeric field.
-- **Role**: Boolean flag.
-- **Typical Contents**: `True` or `False`.
-- **Note**: Useful for input validation or formatting purposes.
+- **含义**：指定该字段是否应按字母数字字段处理。
+- **作用**：布尔标记。
+- **典型内容**：`True` 或 `False`。
+- **说明**：可用于输入验证或格式设置。
 
 ### created_by
-- **Meaning**: Identifier of the user who created this column entry.
-- **Role**: Foreign key.
-- **Typical Contents**: Integer values like `1`, `8`.
-- **Note**: Links to a user or system entity responsible for the creation.
+- **含义**：创建此字段记录的用户标识符。
+- **作用**：外键。
+- **典型内容**：如 `1`、`8` 这样的整数值。
+- **说明**：关联到负责创建记录的用户或系统实体。
 
 ### created_on
-- **Meaning**: Timestamp of when the column entry was created.
-- **Role**: Technical field.
-- **Typical Contents**: Date and time values in UTC.
-- **Note**: Useful for auditing and tracking changes.
+- **含义**：字段记录的创建时间戳。
+- **作用**：技术字段。
+- **典型内容**：UTC 日期和时间值。
+- **说明**：便于审计和跟踪变更。
 
 ### last_modified_on
-- **Meaning**: Timestamp of the last modification made to the column entry.
-- **Role**: Technical field.
-- **Note**: Currently `None` in example data, indicating no modification has occurred after creation.
+- **含义**：字段记录最近一次修改的时间戳。
+- **作用**：技术字段。
+- **说明**：示例数据中目前为 `None`，表示创建后尚未发生修改。
 
 ### is_deleted
-- **Meaning**: Indicates if the column entry has been logically deleted.
-- **Role**: Boolean flag.
-- **Typical Contents**: `True` or `False`.
-- **Note**: Helps in managing soft deletions without removing data physically.
-
+- **含义**：指示该字段记录是否已被逻辑删除。
+- **作用**：布尔标记。
+- **典型内容**：`True` 或 `False`。
+- **说明**：便于管理软删除，而无需从物理存储中移除数据。
 ```

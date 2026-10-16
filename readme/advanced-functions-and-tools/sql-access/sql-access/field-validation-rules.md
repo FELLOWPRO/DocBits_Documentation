@@ -27,116 +27,116 @@
 ## 分析与说明
 
 ```markdown
-# Technical Documentation for `public.field_validation_rules` Table
+# `public.field_validation_rules` 表技术文档
 
-## Introduction
+## 简介
 
-The `public.field_validation_rules` table appears to store metadata and validation rules for fields associated with various document types within an organization. It is likely used to enforce data integrity and consistency across forms or documents by specifying requirements such as whether a field is required, its length, visibility, and any validation patterns that should be applied.
+`public.field_validation_rules` 表似乎用于存储与组织内各种文档类型相关的字段元数据和验证规则。它可能通过指定字段是否必填、字段长度、可见性以及应应用的验证模式等要求，来确保表单或文档中的数据完整性和一致性。
 
-## Column Descriptions
+## 字段说明
 
 ### id
-- **Meaning**: A unique identifier for each field validation rule.
-- **Role**: Primary key.
-- **Typical Contents**: A UUID string that uniquely identifies a record.
+- **含义**：每条字段验证规则的唯一标识符。
+- **作用**：主键。
+- **典型内容**：用于唯一标识一条记录的 UUID 字符串。
 
 ### org_id
-- **Meaning**: Identifier for the organization that the validation rule applies to.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string referencing a specific organization.
+- **含义**：应用此验证规则的组织标识符。
+- **作用**：外键。
+- **典型内容**：引用特定组织的 UUID 字符串。
 
 ### field_id
-- **Meaning**: Identifier for the specific field that the validation rule is associated with.
-- **Role**: Foreign key.
-- **Typical Contents**: A UUID string referencing a specific field.
+- **含义**：与此验证规则关联的特定字段的标识符。
+- **作用**：外键。
+- **典型内容**：引用特定字段的 UUID 字符串。
 
 ### doc_type
-- **Meaning**: Specifies the document type that the field validation rule is associated with.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string indicating the type of document (e.g., `PURCHASE_ORDER_FORM`).
+- **含义**：指定与此字段验证规则关联的文档类型。
+- **作用**：描述性字段。
+- **典型内容**：表示文档类型的字符串（例如，`PURCHASE_ORDER_FORM`）。
 
 ### is_sub_doc_type_field
-- **Meaning**: Indicates whether the field is part of a sub-document type.
-- **Role**: Descriptive field.
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：指示此字段是否属于子文档类型。
+- **作用**：描述性字段。
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### profile
-- **Meaning**: Represents the profile or context in which the field validation is applied.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string such as `DEFAULT`.
+- **含义**：表示应用字段验证的配置或上下文。
+- **作用**：描述性字段。
+- **典型内容**：例如 `DEFAULT` 的字符串。
 
 ### field_name
-- **Meaning**: The name of the field for which the validation rule is defined.
-- **Role**: Descriptive field.
-- **Typical Contents**: A string representing the field name (e.g., `Test`).
+- **含义**：定义验证规则所针对的字段名称。
+- **作用**：描述性字段。
+- **典型内容**：表示字段名称的字符串（例如，`Test`）。
 
 ### field_length
-- **Meaning**: The maximum allowable length for the field's content.
-- **Role**: Descriptive field.
-- **Typical Contents**: An integer specifying the character limit.
+- **含义**：字段内容允许的最大长度。
+- **作用**：描述性字段。
+- **典型内容**：指定字符数限制的整数。
 
 ### field_label
-- **Meaning**: The label or display name for the field in the user interface.
-- **Role**: Descriptive field.
-- **Typical Contents**: Typically null in the example data.
+- **含义**：用户界面中字段的标签或显示名称。
+- **作用**：描述性字段。
+- **典型内容**：在示例数据中通常为 null。
 
 ### is_required
-- **Meaning**: Indicates if the field is mandatory for the document.
-- **Role**: Constraint indicator.
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：指示该字段对于文档是否为必填项。
+- **作用**：约束指示符。
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### is_readonly
-- **Meaning**: Specifies if the field is editable or read-only.
-- **Role**: Constraint indicator.
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：指定该字段是否可编辑或为只读。
+- **作用**：约束指示符。
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### is_hidden
-- **Meaning**: Indicates if the field should be hidden from the user interface.
-- **Role**: Constraint indicator.
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：指示是否应在用户界面中隐藏该字段。
+- **作用**：约束指示符。
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### force_validation
-- **Meaning**: Determines whether validation should be enforced regardless of other conditions.
-- **Role**: Constraint indicator.
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：确定是否无论其他条件如何都必须执行验证。
+- **作用**：约束指示符。
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### validation_pattern
-- **Meaning**: A pattern (likely regex) that the field's content must match.
-- **Role**: Validation rule.
-- **Typical Contents**: Typically null in the example data.
+- **含义**：字段内容必须匹配的模式（可能是正则表达式）。
+- **作用**：验证规则。
+- **典型内容**：在示例数据中通常为 null。
 
 ### confidence_threshold
-- **Meaning**: The minimum confidence level required for the validation of the field.
-- **Role**: Validation constraint.
-- **Typical Contents**: An integer value representing the confidence threshold.
+- **含义**：验证此字段所需的最低置信度。
+- **作用**：验证约束。
+- **典型内容**：表示置信度阈值的整数值。
 
 ### match_score_threshold
-- **Meaning**: The minimum match score required for field content validation.
-- **Role**: Validation constraint.
-- **Typical Contents**: An integer value representing the match score threshold.
+- **含义**：验证字段内容所需的最低匹配分数。
+- **作用**：验证约束。
+- **典型内容**：表示匹配分数阈值的整数值。
 
 ### created_by
-- **Meaning**: Identifier for the user who created this validation rule.
-- **Role**: Descriptive field.
-- **Typical Contents**: An integer representing the user ID.
+- **含义**：创建此验证规则的用户标识符。
+- **作用**：描述性字段。
+- **典型内容**：表示用户 ID 的整数。
 
 ### created_on
-- **Meaning**: Timestamp indicating when the validation rule was created.
-- **Role**: Technical field.
-- **Typical Contents**: A timestamp with time zone.
+- **含义**：指示创建此验证规则时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的时间戳。
 
 ### last_modified_on
-- **Meaning**: Timestamp indicating the last modification of the validation rule.
-- **Role**: Technical field.
-- **Typical Contents**: A timestamp with time zone, can be null if never modified.
+- **含义**：指示此验证规则最后修改时间的时间戳。
+- **作用**：技术字段。
+- **典型内容**：带时区的时间戳；如果从未修改，则可以为 null。
 
 ### is_deleted
-- **Meaning**: Indicates if the validation rule has been marked as deleted.
-- **Role**: Soft delete indicator.
-- **Typical Contents**: Boolean value (`True` or `False`).
+- **含义**：指示此验证规则是否已标记为删除。
+- **作用**：软删除指示符。
+- **典型内容**：布尔值（`True` 或 `False`）。
 
 ### additional_attributes
-- **Meaning**: Stores extra attributes or metadata associated with the field validation rule.
-- **Role**: Descriptive field.
-- **Typical Contents**: Text, often null in the example data.
+- **含义**：存储与此字段验证规则相关的其他属性或元数据。
+- **作用**：描述性字段。
+- **典型内容**：文本，在示例数据中通常为 null。
 ```

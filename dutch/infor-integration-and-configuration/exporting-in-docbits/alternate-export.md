@@ -16,7 +16,7 @@
    * **Document Status**: Specify the status of documents after the alternate export.
    * **Export Configuration**: Select the newly created export configuration to be used for the alternate export.
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
 
 ## Using the Alternate Export
 
@@ -24,7 +24,7 @@
 
 * After enabling the alternate export, you will have the option to select the alternate export directly in the **PO-Matching** screen.
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
 
 **With the Workflow Card**
 

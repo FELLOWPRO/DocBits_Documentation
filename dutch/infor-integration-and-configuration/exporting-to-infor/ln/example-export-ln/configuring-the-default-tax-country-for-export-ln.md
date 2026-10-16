@@ -15,9 +15,10 @@ The default Tax Country for export is set to **DE (Germany)** to prevent export 
 
 * Navigate to **DocBits → Settings → Document Processing → Export**.
 * Open the export configuration you want to modify.
-*   Click on **Download** to obtain the mapping file.\\
+*   Click on **Download** to obtain the mapping file.\
 
-    <figure><img src="../../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/iScreen Shoter - Google Chrome - 250220120028.jpg" alt=""><figcaption></figcaption></figure>
 * Open the file in a text editor.
 
 #### 2. Modify the Mapping File
@@ -52,7 +53,7 @@ StaticFields=FinancialCompany,TaxCountry
 SF_TaxCountry=FR
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
 
 **Option 2: Dynamic Mapping from DocBits Field**
 
@@ -82,7 +83,7 @@ HeaderFields=SupplierCode,TaxCountry
 HF_TaxCountry=tax_country_1
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
 
 ### Summary
 
@@ -91,3 +92,8 @@ HF_TaxCountry=tax_country_1
 * **Use a dynamic field mapping** if the Tax Country varies per document.
 
 By following these steps, you can successfully modify the Tax Country mapping to fit your needs.
+
+
+
+
+

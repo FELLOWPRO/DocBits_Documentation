@@ -8,7 +8,7 @@ De **Zwitserse QR Bill** is de nationale betalingsstandaard die sinds 30 juni 20
 
 Zwitserse QR Bills volgen de betalingsstandaard **ISO 20022** en worden in twee versies uitgegeven: **v1.0** (eerste uitrol) en **v2.0** (huidig). De DocBits-extractor ondersteunt beide. Herkende payloads worden gedecodeerd in een volledige set velden — crediteur, debiteur, IBAN / QR-IBAN, bedrag, valuta, referentietype (QRR, SCOR of NON), gestructureerde en vrije berichten, en alternatieve betalingsschema's.
 
-<figure><img src="../../../../../.gitbook/assets/image (443) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Belangrijkste Voordelen
 
@@ -20,31 +20,31 @@ Zwitserse QR Bills volgen de betalingsstandaard **ISO 20022** en worden in twee 
 
 ### Detectie
 
-* Magische prefix: `SPC\n0100` (v1.0) of `SPC\n0200` (v2.0)
-* Conform ISO 20022
-* De parser toont ook `alt-schemes` (alternatieve betalingsprocedures) indien aanwezig
+- Magische prefix: `SPC\n0100` (v1.0) of `SPC\n0200` (v2.0)
+- Conform ISO 20022
+- De parser toont ook `alt-schemes` (alternatieve betalingsprocedures) indien aanwezig
 
 ### Geëxtraheerde Velden
 
 Alle velden gebruiken de prefix `swissqr_`:
 
-| Veld                                                                                                   | Beschrijving                                   |
-| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
-| `swissqr_account`                                                                                      | IBAN of QR-IBAN van de crediteur               |
-| `swissqr_creditor_name`                                                                                | Naam van de crediteur                          |
-| `swissqr_creditor_street`                                                                              | Straat / adresregel crediteur                  |
-| `swissqr_creditor_city`                                                                                | Woonplaats crediteur                           |
-| `swissqr_creditor_postal_code`                                                                         | Postcode crediteur                             |
-| `swissqr_creditor_country`                                                                             | Land crediteur (ISO 3166 alpha-2)              |
-| `swissqr_debtor_name`                                                                                  | Naam debiteur (indien afgedrukt)               |
-| `swissqr_debtor_street`, `swissqr_debtor_city`, `swissqr_debtor_postal_code`, `swissqr_debtor_country` | Debiteuradres                                  |
-| `swissqr_amount`                                                                                       | Bedrag (decimaal)                              |
-| `swissqr_currency`                                                                                     | Valuta (ISO 4217) — meestal `CHF` of `EUR`     |
-| `swissqr_reference`                                                                                    | Gestructureerde referentie (QRR of SCOR)       |
-| `swissqr_reference_type`                                                                               | `QRR`, `SCOR` of `NON`                         |
-| `swissqr_unstructured_message`                                                                         | Vrije tekst/omschrijving                       |
-| `swissqr_bill_information`                                                                             | Gestructureerde factuurinformatie (S1 / Swico) |
-| `swissqr_alt_schemes`                                                                                  | Alternatieve procedures (indien aanwezig)      |
+| Veld | Beschrijving |
+|------|--------------|
+| `swissqr_account` | IBAN of QR-IBAN van de crediteur |
+| `swissqr_creditor_name` | Naam van de crediteur |
+| `swissqr_creditor_street` | Straat / adresregel crediteur |
+| `swissqr_creditor_city` | Woonplaats crediteur |
+| `swissqr_creditor_postal_code` | Postcode crediteur |
+| `swissqr_creditor_country` | Land crediteur (ISO 3166 alpha-2) |
+| `swissqr_debtor_name` | Naam debiteur (indien afgedrukt) |
+| `swissqr_debtor_street`, `swissqr_debtor_city`, `swissqr_debtor_postal_code`, `swissqr_debtor_country` | Debiteuradres |
+| `swissqr_amount` | Bedrag (decimaal) |
+| `swissqr_currency` | Valuta (ISO 4217) — meestal `CHF` of `EUR` |
+| `swissqr_reference` | Gestructureerde referentie (QRR of SCOR) |
+| `swissqr_reference_type` | `QRR`, `SCOR` of `NON` |
+| `swissqr_unstructured_message` | Vrije tekst/omschrijving |
+| `swissqr_bill_information` | Gestructureerde factuurinformatie (S1 / Swico) |
+| `swissqr_alt_schemes` | Alternatieve procedures (indien aanwezig) |
 
 ### Voorbeeld API-respons
 
@@ -79,4 +79,4 @@ Parsing van Zwitserse QR Bill wordt afgedekt door de algemene **Barcode / QR-Cod
 
 <figure><img src="../../../../../.gitbook/assets/image (443) (1).png" alt=""><figcaption></figcaption></figure>
 
-Voor de volledige lijst van Betalings-QR-code standaarden, zie de [Overzichtspagina](./).
+Voor de volledige lijst van Betalings-QR-code standaarden, zie de [Overzichtspagina](./README.md).

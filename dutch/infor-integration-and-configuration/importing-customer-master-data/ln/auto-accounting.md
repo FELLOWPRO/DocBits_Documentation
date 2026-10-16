@@ -1,4 +1,4 @@
-# Auto Accounting
+# Automatische boekhouding met Infor LN
 
 Gebruik deze handleiding wanneer een Infor-LN-beheerder wil dat DocBits geïmporteerde financiële stamgegevens gebruikt voor automatische boekhouding (Auto Accounting). De oude pagina toonde 48 schermen uit één specifieke Infor-tenant. Verbindingspunt-namen, mappings, inloggegevens en eindpuntadressen van die tenant zijn geen herbruikbare configuratie.
 
@@ -8,9 +8,9 @@ Open **Instellingen → Module → Bestellen & Financiering → Automatische boe
 
 De volgende Nederlandse screenshots komen uit de synthetische Sandbox **DocBits Documentation Test A**. In deze organisatie was **LN** geselecteerd en stond Automatische boekhouding **uit**. Het menu werd geopend zonder een andere waarde te selecteren; er is geen instelling opgeslagen.
 
-<figure><img src="../../../.gitbook/assets/dbdc784-auto-accounting-settings-nl-20261012.png" alt="Nederlandse DocBits-instellingen voor Bestellen &#x26; Financiering met uitgeschakelde automatische boekhouding en geselecteerd type LN"><figcaption><p>Zoek Automatische boekhouding en controleer het geselecteerde type voordat u het inschakelt.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc784-auto-accounting-settings-nl-20261012.png" alt="Nederlandse DocBits-instellingen voor Bestellen &amp; Financiering met uitgeschakelde automatische boekhouding en geselecteerd type LN"><figcaption><p>Zoek Automatische boekhouding en controleer het geselecteerde type voordat u het inschakelt.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc768-auto-accounting-type-options-nl-20261012.png" alt="Nederlands DocBits-menu Type van automatische boekhouding met de opties LN en M3"><figcaption><p>LN en M3 zijn de beschikbare typen in deze Sandbox; er is geen keuze gewijzigd.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc784-auto-accounting-type-options-nl-20261012.png" alt="Nederlands DocBits-menu Type van automatische boekhouding met de opties LN en M3"><figcaption><p>LN en M3 zijn de beschikbare typen in deze Sandbox; er is geen keuze gewijzigd.</p></figcaption></figure>
 
 ## LN en ION voorbereiden
 

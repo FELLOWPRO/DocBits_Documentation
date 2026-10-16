@@ -14,4 +14,4 @@ Wanneer ingeschakeld, biedt het systeem een **visuele indicator** in het **Aanko
 
 Om de aankooporder te vernieuwen, klik je op het **ververspictogram** naast het aankoopordernummer (zie afbeelding hieronder).
 
-![](<../../../../../../.gitbook/assets/image (64).png>)
+![](<../../../../../../.gitbook/assets/image (254).png>)

@@ -1,4 +1,4 @@
-# Bereken PO-eenheidsprijs
+# Bereken PO eenheidsprijs
 
 ## **Overzicht**
 
@@ -12,7 +12,9 @@ Je kunt ervoor kiezen om de **eenheidsprijs** van elke inkooporderregel automati
 2.  Selecteer het gewenste documenttype en klik op **Meer Instellingen**.
 
     <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_2.png" alt=""><figcaption></figcaption></figure>
-3. Schakel in de sectie **Inkooporder** de optie **Bereken PO Eenheidsprijs** in.
+3.  Schakel in de sectie **Inkooporder** de optie **Bereken PO Eenheidsprijs** in.
+
+    <figure><img src="../../../../../../.gitbook/assets/Calculate_PO_unit_price_3.png" alt=""><figcaption></figcaption></figure>
 
 ## Hoe de prijs wordt berekend
 
@@ -22,11 +24,11 @@ Zodra de instelling is geactiveerd, wordt de eenheidsprijs van een inkooporderre
 
 waarbij het **regelbedrag** als volgt wordt gekozen:
 
-| Inkooporderregel bevat                                                                              | Gebruikt regelbedrag                        |
-| --------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| een **netto bedrag** (`extended_amount`) dat groter is dan 0 en niet boven het regel totaal uitkomt | het netto bedrag                            |
-| geen netto bedrag, of een netto bedrag boven het regel totaal                                       | het regel **totaal** (`total_amount`)       |
-| geen positief bedrag, of geen positieve hoeveelheid                                                 | er wordt niets berekend, de PO-prijs blijft |
+| Inkooporderregel bevat                                                                   | Gebruikt regelbedrag                  |
+| ---------------------------------------------------------------------------------------- | ------------------------------------ |
+| een **netto bedrag** (`extended_amount`) dat groter is dan 0 en niet boven het regel totaal uitkomt | het netto bedrag                     |
+| geen netto bedrag, of een netto bedrag boven het regel totaal                            | het regel **totaal** (`total_amount`) |
+| geen positief bedrag, of geen positieve hoeveelheid                                      | er wordt niets berekend, de PO-prijs blijft |
 
 Waarom het netto bedrag eerst komt: ERP-feeds (Infor BODs) sturen het netto regelbedrag als `extended_amount` en bevatten **belasting en toeslagen erbovenop** in `total_amount`. Het delen van een belast totaal door de hoeveelheid geeft een bruto eenheidsprijs, en elke factuur die netto wordt geprijsd, toont dan als _eenheidsprijs te laag_ hoewel deze correct is. Voorbeeld van een echte inkooporderregel: hoeveelheid 9, netto bedrag 879,84, totaal 954,63 (8,5% belasting) — de netto-gebaseerde prijs is 97,76 en komt overeen met de factuur; de totaal-gebaseerde prijs zou 106,07 zijn.
 

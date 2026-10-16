@@ -27,7 +27,7 @@ L'onglet Documents traite tout ce qui concerne l'indexation des documents trait�
 * **Actions de réindexation** — lancez une réindexation complète ou incrémentale. Pendant qu'une réindexation tourne, vous voyez la progression en direct (documents par minute, temps restant estimé), l'état actuel du flux et la dernière erreur (s'il y en a une).
 * **Diagnostic de synchronisation** — diagnostic à la demande pour les cas où l'index semble désaligné du dépôt de documents sous-jacent.
 
-La réindexation n'est pas destructive — la recherche existante continue de fonctionner pendant que le nouvel index est en cours de construction.
+<mark>La réindexation n'est pas destructive — la recherche existante continue de fonctionner pendant que le nouvel index est en cours de construction.</mark>
 
 ### Onglet « ERP »
 

@@ -2,9 +2,9 @@
 
 Na tej stronie opisano, jak uzyskać konto DocBits i jak się zalogować, gdy nie masz swojego hasła:
 
-* [Rejestracja](getting-access-and-signing-in.md#rejestracja) — utwórz własne konto DocBits.
-* [Zapomniane hasło](getting-access-and-signing-in.md#zapomniane-hasło) — zresetuj hasło za pomocą linku do resetowania.
-* [Pierwsze hasło dla kont utworzonych przez administratora](getting-access-and-signing-in.md#pierwsze-hasło-dla-kont-utworzonych-przez-administratora) — ustaw pierwsze hasło do konta, które administrator utworzył dla Ciebie.
+* [Rejestracja](#rejestracja) — utwórz własne konto DocBits.
+* [Zapomniane hasło](#zapomniane-hasło) — zresetuj hasło za pomocą linku do resetowania.
+* [Pierwsze hasło dla kont utworzonych przez administratora](#pierwsze-hasło-dla-kont-utworzonych-przez-administratora) — ustaw pierwsze hasło do konta, które administrator utworzył dla Ciebie.
 
 Logowanie do istniejącego konta oraz Uwierzytelnianie dwuskładnikowe są opisane na stronie [Uwierzytelnianie dwuskładnikowe (2FA)](../../overview-and-basics/two-factor-authentication.md). Jeśli potrzebujesz innego języka wyświetlania, użyj menu języka w prawym górnym rogu tych formularzy.
 
@@ -51,13 +51,14 @@ DocBits przechowuje hasła logowania jako jednokierunkowe skróty kryptograficzn
 Jeśli zapomniałeś hasła:
 
 1. Na ekranie logowania kliknij **Zapomniałeś hasła?**.
-2.  Na stronie **Zapomniałem hasła** wpisz swój adres **E-mail** i kliknij **Zresetuj hasło**. Jeśli wyświetlany jest widget reCAPTCHA, najpierw go wypełnij.
+2. Na stronie **Zapomniałem hasła** wpisz swój adres **E-mail** i kliknij **Zresetuj hasło**. Jeśli wyświetlany jest widget reCAPTCHA, najpierw go wypełnij.
 
-    <figure><img src="../../.gitbook/assets/dbdc745-getting-access-forgot-password-form-pl-20261011.png" alt="Strona Zapomniałem hasła z polem adresu e-mail"><figcaption><p>Strona Zapomniałem hasła. Podaj e-mail swojego konta, a DocBits wyśle Ci link do resetowania hasła.</p></figcaption></figure>
+   <figure><img src="../../.gitbook/assets/dbdc745-getting-access-forgot-password-form-pl-20261011.png" alt="Strona Zapomniałem hasła z polem adresu e-mail"><figcaption><p>Strona Zapomniałem hasła. Podaj e-mail swojego konta, a DocBits wyśle Ci link do resetowania hasła.</p></figcaption></figure>
 
-    Jeśli nie chcesz resetować hasła, kliknij **Powrót do logowania**, aby wrócić do ekranu logowania.
+   Jeśli nie chcesz resetować hasła, kliknij **Powrót do logowania**, aby wrócić do ekranu logowania.
+
 3. DocBits wysyła Ci e-mailem **link do resetowania hasła**. Otwórz e-mail i kliknij link — otworzy się strona resetowania hasła.
-4. Wpisz swoje **nowe hasło dwa razy**. Obowiązują te same zasady haseł co podczas [rejestracji](getting-access-and-signing-in.md#zasady-haseł), a lista kontrolna pokazuje, które zasady są spełnione.
+4. Wpisz swoje **nowe hasło dwa razy**. Obowiązują te same zasady haseł co podczas [rejestracji](#zasady-haseł), a lista kontrolna pokazuje, które zasady są spełnione.
 5. Kliknij **Zresetuj hasło**. DocBits potwierdza zmianę i przenosi Cię z powrotem na ekran logowania, gdzie możesz zalogować się nowym hasłem.
 
 {% hint style="info" %}
@@ -66,12 +67,12 @@ Linki do resetowania hasła wygasają po krótkim czasie. Jeśli link już nie d
 
 ## Pierwsze hasło dla kont utworzonych przez administratora
 
-Gdy administrator doda Cię jako użytkownika (zobacz [Użytkownicy](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/)), otrzymasz e-mail z danymi do logowania oraz linkiem do ustawienia **pierwszego hasła**. Link otwiera stronę **Ustaw hasło**:
+Gdy administrator doda Cię jako użytkownika (zobacz [Użytkownicy](../../administration-and-setup/settings/global-settings/groups-users-and-permissions/users/README.md)), otrzymasz e-mail z danymi do logowania oraz linkiem do ustawienia **pierwszego hasła**. Link otwiera stronę **Ustaw hasło**:
 
 <figure><img src="../../.gitbook/assets/dbdc745-getting-access-set-password-form-pl-20261011.png" alt="Strona Ustaw hasło z komunikatem powitalnym"><figcaption><p>Strona Ustaw hasło, wyświetlana po utworzeniu Twojego konta przez administratora.</p></figcaption></figure>
 
 1. Kliknij link w e-mailu z zaproszeniem. Strona wita Cię komunikatem „Witamy w DocBits! Twoje konto zostało utworzone. Aby rozpocząć, ustaw hasło."
-2. Wpisz swoje hasło dwa razy — obowiązują te same [zasady haseł](getting-access-and-signing-in.md#zasady-haseł).
+2. Wpisz swoje hasło dwa razy — obowiązują te same [zasady haseł](#zasady-haseł).
 3. Kliknij **Ustaw hasło**. Następnie możesz zalogować się swoim adresem e-mail i tym hasłem.
 
 Ikony oka pokazują lub ukrywają wpisane znaki. Jeśli wyjdziesz przed ustawieniem hasła, **Przejdź do logowania** wraca do ekranu logowania.

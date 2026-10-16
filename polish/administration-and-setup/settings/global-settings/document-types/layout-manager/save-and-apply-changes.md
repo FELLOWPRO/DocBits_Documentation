@@ -9,7 +9,7 @@
 * Po wprowadzeniu żądanych dostosowań w Layout Managerze poszukaj przycisku „Zapisz”, aby zapisać zmiany.
 * Kliknij ten przycisk, aby zapisać zmiany w Layout Managerze. Powoduje to utworzenie kopii zapasowej dostosowań układu i zapewnia ich dostępność w przyszłych sesjach edycji.
 
-<figure><img src="../../../../../.gitbook/assets/docbits_script_example_2.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_script_mapping_doc_type.png" alt="Docbits Script Mapping Doc Type"><figcaption></figcaption></figure>
 
 #### Stosowanie zmian w przepływie pracy przetwarzania dokumentów:
 

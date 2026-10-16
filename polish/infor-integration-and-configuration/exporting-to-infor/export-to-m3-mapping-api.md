@@ -1,4 +1,4 @@
-# Eksport do mapowania M3 (API)
+# Eksport do M3 – mapowanie (API)
 
 ### Sekcje
 
@@ -37,15 +37,15 @@ Usuwanie pola:
 
 * Dostępne pola M3 można sprawdzić, otwierając odpowiedni ekran w M3.
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
 
 * W podobny sposób możesz uzyskać nazwy pól dla linii
 
 ### Header (Nagłówek):
 
-<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
 
 Właściwość z listą pól: StaticFields
 

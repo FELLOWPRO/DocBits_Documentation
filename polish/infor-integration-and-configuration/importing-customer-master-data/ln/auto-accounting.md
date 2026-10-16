@@ -1,4 +1,4 @@
-# Automatyczne Księgowanie
+# Auto Accounting z Infor LN
 
 Skorzystaj z tego przewodnika, gdy administrator Infor LN chce, aby DocBits używał zaimportowanych danych finansowych do automatycznej księgowości. Poprzednia strona pokazywała 48 ekranów z konkretnej dzierżawy Infor. Nazwy punktów połączeń, mapowania, dane logowania i adresy punktów końcowych z tej dzierżawy nie stanowią konfiguracji wielokrotnego użytku.
 
@@ -10,7 +10,7 @@ Poniższe zrzuty ekranu pochodzą z syntetycznej piaskownicy **DocBits Documenta
 
 <figure><img src="../../../.gitbook/assets/dbdc785-auto-accounting-settings-pl-20261012.png" alt="Polskie ustawienia DocBits dla modułu Zamówienia i finanse z wyłączonym Automatycznym rozliczaniem i wybranym typem LN"><figcaption><p>Znajdź Automatyczne rozliczanie i sprawdź wybrany typ przed jego włączeniem.</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/dbdc769-auto-accounting-type-options-pl-20261012.png" alt="Polskie menu Typ automatycznego rozliczania w DocBits z opcjami LN i M3"><figcaption><p>LN i M3 to dostępne typy w tej piaskownicy; nie zmieniono żadnego wyboru.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dbdc785-auto-accounting-type-options-pl-20261012.png" alt="Polskie menu Typ automatycznego rozliczania w DocBits z opcjami LN i M3"><figcaption><p>LN i M3 to dostępne typy w tej piaskownicy; nie zmieniono żadnego wyboru.</p></figcaption></figure>
 
 ## Przygotowanie LN i ION
 

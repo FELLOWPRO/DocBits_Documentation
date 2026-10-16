@@ -8,15 +8,15 @@ DocBits oferuje kilka sposobów zmiany, sprawdzania i kierowania dokumentów: **
 
 ## Krótka odpowiedź
 
-| Chcę …                                                                                                                                      | Użyj                                                                                                                                          | Dlaczego                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| Oczyścić lub przepisać wartość (przycięcie, prefiks, format daty, mapowanie jednostek, wartość domyślna)                                    | [Zasady transformacji](settings/global-settings/document-types/transformation-rules.md)                                                       | Bez kodu, podgląd na żywo, działają przy każdym przebiegu i zapisie       |
-| Upewnić się, że dane są kompletne i wiarygodne, oraz zatrzymać dokumenty, które takie nie są                                                | [Niestandardowe reguły walidacji](settings/global-settings/document-types/custom-validation-rules.md)                                         | Deklaratywne kontrole, błąd lub ostrzeżenie, blokują automatyczny eksport |
-| Dopasować pozycje faktury do pozycji zamówienia zakupu                                                                                      | [Zasady Dopasowywania Zamówień Zakupu](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Zestawy reguł z tolerancjami, regułami awaryjnymi i diagramem wizualnym   |
-| Zrobić coś, czego reguła nie wyrazi: wyszukiwanie, obliczenie na polach i tabelach, zadanie, zmianę statusu w dokładnie określonym momencie | [Skrypt](settings/global-settings/document-types/script/)                                                                                     | Python w 13 punktach wyzwalania w przepływie                              |
-| Zdecydować, **co dzieje się dalej** z dokumentem: przypisać, zatwierdzić, utworzyć zadanie, wysłać e-mail, wyeksportować, wywołać API       | [Standard Workflow](workflow/standard-workflow-builder/)                                                                                      | Karty When / And / Then na zdarzeniach statusu                            |
-| Zrobić to samo z rozgałęzieniami, wieloma warunkami i ścieżkami błędów                                                                      | [Advanced Workflow](workflow/advanced-workflow-builder/)                                                                                      | Wizualny graf węzłów                                                      |
-| Potrzebuję akcji, której nie oferuje żadna wbudowana karta                                                                                  | [Workflow SDK (Card SDK)](workflow/card-sdk.md)                                                                                               | Własna karta, sprawdzana przez DocBits                                    |
+| Chcę … | Użyj | Dlaczego |
+| --- | --- | --- |
+| Oczyścić lub przepisać wartość (przycięcie, prefiks, format daty, mapowanie jednostek, wartość domyślna) | [Zasady transformacji](settings/global-settings/document-types/transformation-rules.md) | Bez kodu, podgląd na żywo, działają przy każdym przebiegu i zapisie |
+| Upewnić się, że dane są kompletne i wiarygodne, oraz zatrzymać dokumenty, które takie nie są | [Niestandardowe reguły walidacji](settings/global-settings/document-types/custom-validation-rules.md) | Deklaratywne kontrole, błąd lub ostrzeżenie, blokują automatyczny eksport |
+| Dopasować pozycje faktury do pozycji zamówienia zakupu | [Zasady Dopasowywania Zamówień Zakupu](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md) | Zestawy reguł z tolerancjami, regułami awaryjnymi i diagramem wizualnym |
+| Zrobić coś, czego reguła nie wyrazi: wyszukiwanie, obliczenie na polach i tabelach, zadanie, zmianę statusu w dokładnie określonym momencie | [Skrypt](settings/global-settings/document-types/script/README.md) | Python w 13 punktach wyzwalania w przepływie |
+| Zdecydować, **co dzieje się dalej** z dokumentem: przypisać, zatwierdzić, utworzyć zadanie, wysłać e-mail, wyeksportować, wywołać API | [Standard Workflow](workflow/standard-workflow-builder.md) | Karty When / And / Then na zdarzeniach statusu |
+| Zrobić to samo z rozgałęzieniami, wieloma warunkami i ścieżkami błędów | [Advanced Workflow](workflow/advanced-workflow-builder.md) | Wizualny graf węzłów |
+| Potrzebuję akcji, której nie oferuje żadna wbudowana karta | [Workflow SDK (Card SDK)](workflow/card-sdk.md) | Własna karta, sprawdzana przez DocBits |
 
 **Zasada praktyczna: używaj najmniej zaawansowanego narzędzia, które wykonuje zadanie.** Najpierw reguły, potem Skrypt, na końcu Workflow lub karta SDK. Reguły łatwiej czytać i testować, a nie mogą zepsuć dokumentu; kod potrafi więcej, więc wymaga większej ostrożności.
 
@@ -46,14 +46,14 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 
 <figure><img src="../.gitbook/assets/automation-reach-pl.svg" alt="Porównanie tego, co potrafi każde narzędzie automatyzacji"><figcaption></figcaption></figure>
 
-|                             | Zasady transformacji                                 | Niestandardowe reguły walidacji                       | Zasady dopasowywania ZZ                                                                    | Skrypt                                                                                    | Standard Workflow                                                  | Advanced Workflow                          | Karta SDK                                      |
-| --------------------------- | ---------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------ | ---------------------------------------------- |
-| **Działa, gdy**             | Przy każdym przebiegu transformacji i każdym zapisie | Przy każdym uruchomieniu walidacji                    | Po wyszukiwaniu, **Auto PO Match**, nowy numer zamówienia                                  | 13 punktów wyzwalania                                                                     | Po zmianie statusu                                                 | Po zmianie statusu                         | Gdy działa jego Workflow                       |
-| **Może odczytać**           | Pola nagłówka, kolumny tabel                         | Pola, komórki tabel, sumy z wierszy                   | Tabele, numery zamówień, pozycje zamówienia zakupu, tolerancje                             | Wszystkie wyodrębnione dane, wyszukiwania, użytkownicy, grupy, wyszukiwanie pełnotekstowe | Dane dokumentu, użytkownicy, grupy, zmienne                        | To samo, plus wyniki wcześniejszych węzłów | Pola, tabele, wyszukiwania, użytkownicy, grupy |
-| **Może zapisać**            | Wartości pól i kolumn, wiersze, podorganizację       | Nic: tylko znaczniki poprawny / niepoprawny           | Tylko dane dopasowania                                                                     | Pola, tabele, zadania, status                                                             | Pola, status, przypisanie, zadania, eksport, e-mail, wywołanie API | Te same karty, plus logikę i zmienne       | Pola, tabele, status, zadania                  |
-| **Może zatrzymać dokument** | Nie                                                  | Tak, błędy blokują automatyczny eksport i **Waliduj** | Tak, bez pełnego dopasowania automatyczny eksport czeka, gdy dopasowywanie ZZ jest aktywne | Pośrednio: oznaczyć pole jako niepoprawne, utworzyć zadanie                               | Ustawia status, przypisuje, zatwierdza, odrzuca                    | To samo                                    | Jak typ karty                                  |
-| **Wymaga kodu**             | Nie                                                  | Nie                                                   | Nie                                                                                        | Tak, ograniczony Python                                                                   | Nie                                                                | Nie                                        | Tak, Python w piaskownicy                      |
-| **Typowe zastosowanie**     | Normalizacja wartości                                | Pola wymagane, formaty, sumy                          | Dopasowanie pozycji                                                                        | Logika specjalna                                                                          | Routing i zatwierdzanie                                            | Routing z rozgałęzieniami                  | Akcje partnerów                                |
+| | Zasady transformacji | Niestandardowe reguły walidacji | Zasady dopasowywania ZZ | Skrypt | Standard Workflow | Advanced Workflow | Karta SDK |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Działa, gdy** | Przy każdym przebiegu transformacji i każdym zapisie | Przy każdym uruchomieniu walidacji | Po wyszukiwaniu, **Auto PO Match**, nowy numer zamówienia | 13 punktów wyzwalania | Po zmianie statusu | Po zmianie statusu | Gdy działa jego Workflow |
+| **Może odczytać** | Pola nagłówka, kolumny tabel | Pola, komórki tabel, sumy z wierszy | Tabele, numery zamówień, pozycje zamówienia zakupu, tolerancje | Wszystkie wyodrębnione dane, wyszukiwania, użytkownicy, grupy, wyszukiwanie pełnotekstowe | Dane dokumentu, użytkownicy, grupy, zmienne | To samo, plus wyniki wcześniejszych węzłów | Pola, tabele, wyszukiwania, użytkownicy, grupy |
+| **Może zapisać** | Wartości pól i kolumn, wiersze, podorganizację | Nic: tylko znaczniki poprawny / niepoprawny | Tylko dane dopasowania | Pola, tabele, zadania, status | Pola, status, przypisanie, zadania, eksport, e-mail, wywołanie API | Te same karty, plus logikę i zmienne | Pola, tabele, status, zadania |
+| **Może zatrzymać dokument** | Nie | Tak, błędy blokują automatyczny eksport i **Waliduj** | Tak, bez pełnego dopasowania automatyczny eksport czeka, gdy dopasowywanie ZZ jest aktywne | Pośrednio: oznaczyć pole jako niepoprawne, utworzyć zadanie | Ustawia status, przypisuje, zatwierdza, odrzuca | To samo | Jak typ karty |
+| **Wymaga kodu** | Nie | Nie | Nie | Tak, ograniczony Python | Nie | Nie | Tak, Python w piaskownicy |
+| **Typowe zastosowanie** | Normalizacja wartości | Pola wymagane, formaty, sumy | Dopasowanie pozycji | Logika specjalna | Routing i zatwierdzanie | Routing z rozgałęzieniami | Akcje partnerów |
 
 ## Zdecyduj za pomocą czterech pytań
 
@@ -96,7 +96,7 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 * **Działa** w wybranych przez Ciebie punktach wyzwalania: po ekstrakcji, przed transformacją i po niej, przed dopasowaniem zamówienia zakupu, przed walidacją i po niej, przy zmianie pól i tabel, przy zapisie i przy zatwierdzaniu.
 * **Może** odczytać cały dokument, używać wyszukiwań danych głównych i wyszukiwania pełnotekstowego, zmieniać pola, flagi i tabele, tworzyć zadania i zmieniać status.
 * **Nie może** importować modułów ani wywoływać usług zewnętrznych. To ograniczony Python. Błąd w skrypcie jest zapisywany w logu i nigdy nie zatrzymuje przetwarzania dokumentu, więc skrypt **nie** jest niezawodnym sposobem blokowania dokumentu: zamiast tego oznacz pole jako niepoprawne lub utwórz zadanie.
-* **Więcej informacji:** [Skrypt](settings/global-settings/document-types/script/)
+* **Więcej informacji:** [Skrypt](settings/global-settings/document-types/script/README.md)
 
 ### Standard Workflow
 
@@ -104,7 +104,7 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 * **Działa**, gdy dokument osiągnie wybrany przez Ciebie status, czyli po walidacji. Może też wystartować z webhooka, według harmonogramu lub ręcznie.
 * **Może** uruchomić łańcuch kart: **When** (start), **And** (warunki, wszystkie muszą być spełnione), **Then** (akcje po kolei).
 * **Nie może** się rozgałęziać, czekać na kilka warunków ani reagować na błąd karty w osobnej ścieżce. Do tego użyj Advanced Workflow.
-* **Więcej informacji:** [Standard Workflow](workflow/standard-workflow-builder/)
+* **Więcej informacji:** [Standard Workflow](workflow/standard-workflow-builder.md)
 
 ### Advanced Workflow
 
@@ -112,7 +112,7 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 * **Działa** na tych samych zdarzeniach co Standard Workflow. Wymaga subskrypcji DocFlow Advanced.
 * **Może** używać tych samych kart co Standard Workflow, plus kart logiki i zmiennych, rysowanych jako graf.
 * **Nie może** robić tego, co dzieje się przed walidacją: startuje po zmianie statusu. Logika sprzed walidacji należy do Skryptu lub reguły.
-* **Więcej informacji:** [Advanced Workflow](workflow/advanced-workflow-builder/)
+* **Więcej informacji:** [Advanced Workflow](workflow/advanced-workflow-builder.md)
 
 ### Workflow SDK (Card SDK)
 
@@ -135,20 +135,20 @@ Workflow, który zapisuje pole, zachowuje się jak osoba zapisująca dokument: d
 
 ## Typowe błędy
 
-| Błąd                                                                         | Lepiej                                                            |
-| ---------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| Skrypt, który przycina wartości i dodaje prefiksy                            | Zasada transformacji                                              |
-| Workflow, który ustawia pole po walidacji                                    | Zasada transformacji lub Skrypt przed walidacją                   |
-| Skrypt, od którego oczekuje się zatrzymania niepoprawnego dokumentu          | Niestandardowa reguła walidacji                                   |
-| Niestandardowa reguła walidacji, od której oczekuje się poprawienia wartości | Zasada transformacji, potem reguła walidacji                      |
-| Przepisywanie numeru zamówienia zakupu w regule dopasowywania ZZ             | Zasada transformacji na polu _Purchase Order_, przed dopasowaniem |
-| Advanced Workflow dla pojedynczego _When → Then_                             | Standard Workflow                                                 |
-| Karta SDK dla czegoś, co potrafi wbudowana karta                             | Wbudowana karta                                                   |
+| Błąd | Lepiej |
+| --- | --- |
+| Skrypt, który przycina wartości i dodaje prefiksy | Zasada transformacji |
+| Workflow, który ustawia pole po walidacji | Zasada transformacji lub Skrypt przed walidacją |
+| Skrypt, od którego oczekuje się zatrzymania niepoprawnego dokumentu | Niestandardowa reguła walidacji |
+| Niestandardowa reguła walidacji, od której oczekuje się poprawienia wartości | Zasada transformacji, potem reguła walidacji |
+| Przepisywanie numeru zamówienia zakupu w regule dopasowywania ZZ | Zasada transformacji na polu *Purchase Order*, przed dopasowaniem |
+| Advanced Workflow dla pojedynczego *When → Then* | Standard Workflow |
+| Karta SDK dla czegoś, co potrafi wbudowana karta | Wbudowana karta |
 
 ## Powiązane strony
 
 * [Zasady transformacji](settings/global-settings/document-types/transformation-rules.md)
 * [Niestandardowe reguły walidacji](settings/global-settings/document-types/custom-validation-rules.md)
 * [Zasady Dopasowywania Zamówień Zakupu](settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md)
-* [Skrypt](settings/global-settings/document-types/script/)
-* [Workflow](workflow/)
+* [Skrypt](settings/global-settings/document-types/script/README.md)
+* [Workflow](workflow/README.md)

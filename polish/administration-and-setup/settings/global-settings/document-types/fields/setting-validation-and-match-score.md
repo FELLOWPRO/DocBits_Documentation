@@ -16,9 +16,9 @@ To ustawienie pozwala zdefiniować reguły sprawdzające, czy wprowadzone dane s
 * Włącz opcję Wymuszona Walidacja (Force Validation).
 * Zdefiniuj reguły walidacji do sprawdzenia. Mogą to być na przykład limity numeryczne, wyrażenia regularne dla pól tekstowych lub relacje z innymi polami.
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (94).png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/docbits_decide_column_necessity.png" alt="Docbits Decide Column Necessity" width="375"><figcaption></figcaption></figure>
 
 **Wpływ:**
 
@@ -26,7 +26,7 @@ To ustawienie pozwala zdefiniować reguły sprawdzające, czy wprowadzone dane s
 
 ### Wynik dopasowania (Match Score):
 
-<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="" width="116"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (121).png" alt="" width="116"><figcaption></figcaption></figure>
 
 To ustawienie pozwala dopasować wprowadzoną wartość do predefiniowanej wartości referencyjnej.
 

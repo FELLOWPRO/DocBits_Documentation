@@ -20,7 +20,7 @@ Ten przewodnik wyjaśnia, jak zaimportować szablon połączenia API, aby szybko
 
 Przed importem pobierz wymagany szablon połączenia za pomocą poniższego pliku:
 
-{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template.xml" %}
+{% file src="../../.gitbook/assets/DocBits-Dev-Import-Template (1).xml" %}
 
 ### Import szablonu
 

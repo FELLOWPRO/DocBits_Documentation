@@ -1,6 +1,8 @@
-# Proces Transformacji Danych EDI
+# EDI Data Transformation Process
 
 ####
+
+<figure><img src="../../../../.gitbook/assets/docbits_docbits_image_4.png" alt="DocBits DocBits Obraz 4"><figcaption></figcaption></figure>
 
 #### Step 1: Structure Descriptor
 

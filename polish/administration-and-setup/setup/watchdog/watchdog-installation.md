@@ -87,52 +87,50 @@ Po instalacji sprawdź stan WatchDog w DocBits:
 
 ## Opis poleceń
 
-| Polecenie                           | Opis                                                    |
-| ----------------------------------- | ------------------------------------------------------- |
-| `WatchDog.exe -api KEY`             | Konfiguruje klucz API                                   |
-| `WatchDog.exe install`              | Instaluje jako usługę systemu Windows                   |
-| `WatchDog.exe start`                | Uruchamia usługę                                        |
-| `WatchDog.exe stop`                 | Zatrzymuje usługę                                       |
-| `WatchDog.exe debug`                | Uruchamia w trybie konsoli (do rozwiązywania problemów) |
-| `WatchDog.exe remove`               | Odinstalowuje usługę                                    |
-| `WatchDog.exe --version`            | Pokazuje bieżącą wersję                                 |
-| `WatchDog.exe --list-folders`       | Wyświetla skonfigurowane foldery nadzorowane            |
-| `WatchDog.exe --add-folder PATH`    | Dodaje folder nadzorowany                               |
-| `WatchDog.exe --remove-folder PATH` | Usuwa folder nadzorowany                                |
+| Polecenie | Opis |
+| :--- | :--- |
+| `WatchDog.exe -api KEY` | Konfiguruje klucz API |
+| `WatchDog.exe install` | Instaluje jako usługę systemu Windows |
+| `WatchDog.exe start` | Uruchamia usługę |
+| `WatchDog.exe stop` | Zatrzymuje usługę |
+| `WatchDog.exe debug` | Uruchamia w trybie konsoli (do rozwiązywania problemów) |
+| `WatchDog.exe remove` | Odinstalowuje usługę |
+| `WatchDog.exe --version` | Pokazuje bieżącą wersję |
+| `WatchDog.exe --list-folders` | Wyświetla skonfigurowane foldery nadzorowane |
+| `WatchDog.exe --add-folder PATH` | Dodaje folder nadzorowany |
+| `WatchDog.exe --remove-folder PATH` | Usuwa folder nadzorowany |
 
-***
+---
 
 ## Starsza wersja: konfiguracja V1 (przestarzała)
 
 Poniższa metoda konfiguracji V1 z lokalnymi plikami konfiguracyjnymi jest **przestarzała**. Zamiast niej użyj nowoczesnej konfiguracji opartej na API, opisanej powyżej.
 
 <details>
-
 <summary>Konfiguracja V1 (kliknij, aby rozwinąć)</summary>
 
 ### Konfigurowanie WatchDog w DocBits (V1)
 
 1. **Dostęp do ustawień WatchDog**
    * Przejdź do **Settings → Document Processing → WatchDog**
-2.  **Ustawienia folderów**
+2. **Ustawienia folderów**
+   * Zdefiniuj ścieżki: `C:/WatchDog/Read` i `C:/WatchDog/Processed`
 
-    * Zdefiniuj ścieżki: `C:/WatchDog/Read` i `C:/WatchDog/Processed`
+   <figure><img src="../../../.gitbook/assets/watchdog_folder_settings.png" alt="Ustawienia folderów WatchDog"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/WatchDog_1.png" alt="Ustawienia folderów WatchDog"><figcaption></figcaption></figure>
-3.  **Ustawienia ogólne**
+3. **Ustawienia ogólne**
+   * Wybierz typy dokumentów, skonfiguruj miejsce docelowe eksportu
 
-    * Wybierz typy dokumentów, skonfiguruj miejsce docelowe eksportu
+   <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="Ustawienia ogólne WatchDog"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/watchdog_general_settings_doctypes.png" alt="Ustawienia ogólne WatchDog"><figcaption></figcaption></figure>
-4.  **Konfiguracje eksportu**
+4. **Konfiguracje eksportu**
+   * Pokazuje skonfigurowane eksporty dla przetwarzania lokalnego (on-premise)
 
-    * Pokazuje skonfigurowane eksporty dla przetwarzania lokalnego (on-premise)
+   <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="Konfiguracje eksportu WatchDog"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/watchdog_export_configurations_list.png" alt="Konfiguracje eksportu WatchDog"><figcaption></figcaption></figure>
-5.  **Pobierz konfigurację**
+5. **Pobierz konfigurację**
+   * Pobierz `watchdog-config.json` i umieść go w `C:\WatchDog\`
 
-    * Pobierz `watchdog-config.json` i umieść go w `C:\WatchDog\`
-
-    <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Pobierz konfigurację"><figcaption></figcaption></figure>
+   <figure><img src="../../../.gitbook/assets/watchdog_download_configuration.png" alt="Pobierz konfigurację"><figcaption></figcaption></figure>
 
 </details>

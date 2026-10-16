@@ -1,10 +1,10 @@
-# Typy Dokumentów
+# Typy dokumentów
 
 {% embed url="https://youtu.be/pFz_6tvNlU4" %}
 DocBits Document Types Explained: Create, Configure & Assign Processing Settings
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/image (78).png" alt="Typy dokumentów"><figcaption><p>Strona typów dokumentów</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/document_types.png" alt="Typy dokumentów"><figcaption><p>Strona typów dokumentów</p></figcaption></figure>
 
 ## Przegląd
 
@@ -17,27 +17,27 @@ Strona Document Types wyświetla wszystkie typy dokumentów rozpoznawane i przet
 
 Karta każdego typu dokumentu zawiera:
 
-| Element                            | Opis                                                                                 |
-| ---------------------------------- | ------------------------------------------------------------------------------------ |
-| **Activate**                       | Przełącznik włączający lub wyłączający ten typ dokumentu w przetwarzaniu.            |
-| **Extraction**                     | Przełącznik włączający lub wyłączający ekstrakcję danych opartą na AI dla tego typu. |
-| **Settings** (ikona koła zębatego) | Otwiera dodatkowe opcje konfiguracji typu dokumentu.                                 |
+| Element | Opis |
+|---------|-------------|
+| **Activate** | Przełącznik włączający lub wyłączający ten typ dokumentu w przetwarzaniu. |
+| **Extraction** | Przełącznik włączający lub wyłączający ekstrakcję danych opartą na AI dla tego typu. |
+| **Settings** (ikona koła zębatego) | Otwiera dodatkowe opcje konfiguracji typu dokumentu. |
 
 ## Karty konfiguracji
 
 Pod każdym typem dokumentu dostępne są następujące karty konfiguracji:
 
-| Karta                  | Opis                                                                                           |
-| ---------------------- | ---------------------------------------------------------------------------------------------- |
-| **Labels**             | Zarządzanie etykietami wyświetlanymi i tłumaczeniami dla typu dokumentu.                       |
-| **Edit layout**        | Modyfikowanie wyglądu dokumentu w widoku walidacji, w tym pozycji pól.                         |
-| **Document Sub Types** | Konfigurowanie podkategorii tego typu dokumentu (np. różnych formatów faktur).                 |
-| **Table columns**      | Dostosowanie, które kolumny danych pojawiają się w tabeli pozycji.                             |
-| **Fields**             | Zarządzanie polami danych wyodrębnianymi z dokumentu (dodawanie, edytowanie lub usuwanie pól). |
-| **Model Training**     | Konfigurowanie i trenowanie modelu AI używanego do rozpoznawania i ekstrakcji danych.          |
-| **Regex**              | Definiowanie wyrażeń regularnych do ekstrakcji danych opartej na wzorcach.                     |
-| **Scripts**            | Pisanie własnych skryptów przetwarzania uruchamianych podczas przetwarzania dokumentu.         |
-| **E-Doc**              | Konfigurowanie standardów dokumentów elektronicznych (XRechnung, ZUGFeRD, EDI, FatturaPA).     |
+| Karta | Opis |
+|-----|-------------|
+| **Labels** | Zarządzanie etykietami wyświetlanymi i tłumaczeniami dla typu dokumentu. |
+| **Edit layout** | Modyfikowanie wyglądu dokumentu w widoku walidacji, w tym pozycji pól. |
+| **Document Sub Types** | Konfigurowanie podkategorii tego typu dokumentu (np. różnych formatów faktur). |
+| **Table columns** | Dostosowanie, które kolumny danych pojawiają się w tabeli pozycji. |
+| **Fields** | Zarządzanie polami danych wyodrębnianymi z dokumentu (dodawanie, edytowanie lub usuwanie pól). |
+| **Model Training** | Konfigurowanie i trenowanie modelu AI używanego do rozpoznawania i ekstrakcji danych. |
+| **Regex** | Definiowanie wyrażeń regularnych do ekstrakcji danych opartej na wzorcach. |
+| **Scripts** | Pisanie własnych skryptów przetwarzania uruchamianych podczas przetwarzania dokumentu. |
+| **E-Doc** | Konfigurowanie standardów dokumentów elektronicznych (XRechnung, ZUGFeRD, EDI, FatturaPA). |
 
 ## Niestandardowe reguły walidacji
 

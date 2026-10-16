@@ -3,6 +3,7 @@
 Ten przewodnik pokazuje, jak połączyć **bazę danych tylko do odczytu DocBits z Power BI Desktop** za pomocą **sterownika ODBC PostgreSQL**. Obejmuje instalację sterownika, konfigurację ODBC, integrację z Power BI i zaplanowane odświeżanie.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
+{% endembed %}
 
 #### 1. Zainstaluj sterownik ODBC PostgreSQL
 
@@ -15,7 +16,7 @@ Ten przewodnik pokazuje, jak połączyć **bazę danych tylko do odczytu DocBits
 * Otwórz **ODBC Data Source Administrator (64-bit)** z Panelu sterowania lub przez wyszukiwarkę systemu Windows.
 * Przejdź na kartę **System DSN** i kliknij **Add**.
 * Wybierz z listy sterownik **PostgreSQL Unicode(x64)** i kliknij **Finish**.
-* Wypełnij wymagane pola danymi uwierzytelniającymi z:\n **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
+* Wypełnij wymagane pola danymi uwierzytelniającymi z:\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
 <figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
 
@@ -48,7 +49,7 @@ Ten przewodnik pokazuje, jak połączyć **bazę danych tylko do odczytu DocBits
 * Otwórz schemat **`public`**.
 * Zaznacz tabele, które chcesz zaimportować.
 
-![](../../.gitbook/assets/connect_read_only_1.png)
+![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
 
 * Wybierz:
   * **Load** → Import bezpośrednio do Power BI
@@ -71,8 +72,8 @@ Ten przewodnik pokazuje, jak połączyć **bazę danych tylko do odczytu DocBits
 * W Power BI Service:
   * Przejdź do swojego zestawu danych → **Settings** → **Scheduled Refresh**
   * Przypisz swój DSN i podaj dane uwierzytelniające
-* Więcej informacji [tutaj](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
+* Więcej informacji [tutaj](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
 
-#### 7. Przykładowe pulpity i widoki danych
+#### 7. Przykładowe pulpity i widoki danych&#x20;
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Przykładowy pulpit Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Przykładowy pulpit Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Przykładowy pulpit Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Przykładowy pulpit Power BI 4"><figcaption></figcaption></figure></div>

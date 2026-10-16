@@ -13,18 +13,18 @@ Sekcja **Więcej ustawień** zawiera opcje, które należą do jednego typu doku
 
 Ścieżka nawigacji u góry strony pokazuje **Ustawienia / Typy dokumentów / Więcej ustawień**. Asystent ustawień po prawej stronie strony wyjaśnia ustawienia otwartej karty.
 
-| Karta                                                      | Co tam ustawiasz                                                              |
-| ---------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Zamówienie zakupu                                          | Dopasowanie PO, tolerancje, eksport linii PO, numery pozycji dostawcy         |
-| Zarządzaj układami                                         | Przełącznik przeglądu Zarządzaj układami                                      |
-| Niestandardowe reguły walidacji                            | Własne reguły walidacji dla tego typu dokumentu                               |
-| Zasady transformacji                                       | Reguły, które odczytują wartość, zmieniają ją w krokach i zapisują z powrotem |
-| Zatwierdzenie i odrzucenie                                 | Proces zatwierdzania oraz formularze przeglądu i odrzucenia                   |
-| [Weryfikacja podatkowa Vertex](vertex-tax-verification.md) | Projektowanie formularza weryfikacji podatku Vertex                           |
-| Walidacja e-faktury                                        | Walidacja faktur XRechnung, ZUGFeRD i Factur-X                                |
-| Ekstrakcja tabeli                                          | Pomijanie walidacji wyodrębnionych tabel                                      |
-| Ustawienia eksportu                                        | Wielokrotny eksport, format PDF, alternatywny eksport                         |
-| Wykrywanie duplikatów                                      | Wykrywanie i blokowanie duplikatów dokumentów                                 |
+| Karta | Co tam ustawiasz |
+| ----- | ---------------- |
+| Zamówienie zakupu | Dopasowanie PO, tolerancje, eksport linii PO, numery pozycji dostawcy |
+| Zarządzaj układami | Przełącznik przeglądu Zarządzaj układami |
+| Niestandardowe reguły walidacji | Własne reguły walidacji dla tego typu dokumentu |
+| Zasady transformacji | Reguły, które odczytują wartość, zmieniają ją w krokach i zapisują z powrotem |
+| Zatwierdzenie i odrzucenie | Proces zatwierdzania oraz formularze przeglądu i odrzucenia |
+| [Weryfikacja podatkowa Vertex](vertex-tax-verification.md) | Projektowanie formularza weryfikacji podatku Vertex |
+| Walidacja e-faktury | Walidacja faktur XRechnung, ZUGFeRD i Factur-X |
+| Ekstrakcja tabeli | Pomijanie walidacji wyodrębnionych tabel |
+| Ustawienia eksportu | Wielokrotny eksport, format PDF, alternatywny eksport |
+| Wykrywanie duplikatów | Wykrywanie i blokowanie duplikatów dokumentów |
 
 ## Zamówienie zakupu
 
@@ -64,7 +64,7 @@ Pod wykresem panel wymienia **Zasady według priorytetu, na etap**. Dla każdej 
 * Przebieg **1.1 Exact match for all rules** kończy się niepowodzeniem, ponieważ 10,40 nie jest równe 10,00. Czerwona strzałka prowadzi do następnego przebiegu.
 * Przebieg **1.2 Tolerance-based match** kończy się powodzeniem. Różnica wynosi 4 %, czyli mieści się w granicy 5 %. Zielona strzałka prowadzi do **Znaleziono dopasowanie**, a przetwarzanie się kończy.
 
-Na diagramie jest to ścieżka 1.1, następnie 1.2, następnie **Znaleziono dopasowanie**. Ścieżkę, którą przeszedł pojedynczy dokument, znajdziesz w [Touchless Intelligence: Diagnoza dopasowania PO](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Wszystkie szczegóły strony reguł opisuje [Zasady Dopasowywania Zamówień Zakupu](purchase-order/purchase-order-matching-rules.md).
+Na diagramie jest to ścieżka 1.1, następnie 1.2, następnie **Znaleziono dopasowanie**. Ścieżkę, którą przeszedł pojedynczy dokument, znajdziesz w [Touchless Intelligence: Diagnoza dopasowania PO](../../../../touchless-po-matching-diagnosis.md). Wszystkie szczegóły strony reguł opisuje [Zasady Dopasowywania Zamówień Zakupu](purchase-order/purchase-order-matching-rules.md).
 
 ### Ustawienie tolerancji PO
 
@@ -86,7 +86,7 @@ Gdy atrybut typu dokumentu `CUSTOM_RANGE_FOR_PO_TOLERANCE` jest włączony, tole
 
 Bezpośrednio pod kartą Zamówienie zakupu znajdują się trzy karty:
 
-* **Zarządzaj układami** włącza przegląd Zarządzaj układami dla tego typu dokumentu. Zobacz [Layout Manager](../layout-manager/).
+* **Zarządzaj układami** włącza przegląd Zarządzaj układami dla tego typu dokumentu. Zobacz [Layout Manager](../layout-manager/README.md).
 * **Niestandardowe reguły walidacji** włącza Twoje własne reguły walidacji. **Zarządzaj regułami walidacji** je otwiera. Zobacz [Niestandardowe reguły walidacji](../custom-validation-rules.md).
 * **Zasady transformacji** włącza reguły transformacji. **Zarządzaj regułami transformacji** je otwiera. Zobacz [Zasady transformacji](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ Karta **Zatwierdzenie i odrzucenie** zawiera proces zatwierdzania oraz formularz
 * **Formularz przeglądu projektu**: Konfiguruje układ formularza przeglądu za pomocą **Kreatora układów**.
 * **Formularz odrzucenia projektu**: Konfiguruje układ formularza odrzucenia za pomocą **Kreatora układów**.
 
-Informacje o **Kreatorze układów** znajdziesz w [Layout Manager](../layout-manager/).
+Informacje o **Kreatorze układów** znajdziesz w [Layout Manager](../layout-manager/README.md).
 
 ## Weryfikacja podatkowa Vertex
 
@@ -114,7 +114,7 @@ Karta **Weryfikacja podatkowa Vertex** zawiera przycisk **Weryfikacja podatkowa 
 
 ## Walidacja e-faktury
 
-Karta **Walidacja e-faktury** włącza walidację przychodzących e-faktur i pozwala zdecydować, czy dostawca jest powiadamiany o odrzuceniu faktury. Zobacz [Walidacja e-faktury](../../../document-processing/e-documents/validation-rules/).
+Karta **Walidacja e-faktury** włącza walidację przychodzących e-faktur i pozwala zdecydować, czy dostawca jest powiadamiany o odrzuceniu faktury. Zobacz [Walidacja e-faktury](../../../document-processing/e-documents/validation-rules.md).
 
 ## Ekstrakcja tabeli
 

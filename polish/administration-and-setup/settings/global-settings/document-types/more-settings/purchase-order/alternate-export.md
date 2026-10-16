@@ -19,7 +19,7 @@ Ta strona wyjaśnia, jak skonfigurować tę opcję.
 
 Po włączeniu ustawienia możesz wybrać status dokumentu i przypisać zdefiniowaną konfigurację eksportu.
 
-Więcej informacji na temat konfigurowania konfiguracji eksportu można znaleźć [tutaj](../../../../document-processing/export/).
+Więcej informacji na temat konfigurowania konfiguracji eksportu można znaleźć [tutaj](../../../../document-processing/export.md).
 
 Możesz wybierać spośród następujących statusów:
 

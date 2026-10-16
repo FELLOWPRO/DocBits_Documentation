@@ -46,6 +46,8 @@ Dopo aver inviato il modulo, DocBits mostra una pagina di conferma e invia una *
 
 ## Password dimenticata
 
+DocBits memorizza le password come hash unidirezionali con salt. Una password esistente non può essere recuperata dal suo hash, quindi questa procedura ne imposta una nuova. Vedere [Archiviazione sicura delle credenziali](../../overview-and-basics/secure-storage-of-credentials.md).
+
 Se hai dimenticato la tua password:
 
 1. Nella schermata di accesso, fai clic su **Ha dimenticato la password?**.

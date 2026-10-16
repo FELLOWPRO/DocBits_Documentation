@@ -1,5 +1,7 @@
 # Roadmap do DocBits
 
+**Disponibilidade da NOVA R1.1:** Disponível no ambiente de testes desde **16 de outubro de 2026**. A entrada em produção está prevista para **4 de novembro de 2026**.
+
 _Estado do planeamento a 7 de outubro de 2026. Cada versão indica a data de
 sandbox planeada (quando os clientes a podem testar) e a data de produção
 planeada. Os temas descrevem o que está planeado para a versão, não o que já

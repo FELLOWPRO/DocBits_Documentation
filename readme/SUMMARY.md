@@ -58,7 +58,6 @@
   * [Sitemap](end-user-and-partner-section/end-user-section/sitemap.md)
   * [Wijzigingen in webadressen](end-user-and-partner-section/end-user-section/web-address-changes.md)
   * [Aanpasbare Zijbalk](end-user-and-partner-section/end-user-section/customizable-sidebar.md)
-  * [Ideeënbord](end-user-and-partner-section/end-user-section/idea-board.md)
   * [Dashboard](end-user-and-partner-section/end-user-section/dashboard/README.md)
     * [Dashboard-hulpmiddelen](end-user-and-partner-section/end-user-section/dashboard/dashboard-tools.md)
     * [Wijzig Document Kolommen](end-user-and-partner-section/end-user-section/dashboard/change-document-columns.md)
@@ -535,6 +534,9 @@
   * [Loginstellingen](administration-and-setup/settings/log-settings/README.md)
     * [Taakbeheer](administration-and-setup/settings/log-settings/task-management.md)
     * [Gegevenssynchronisatie](administration-and-setup/settings/log-settings/data-synchronization.md)
+    * [Volledige-Tekstzoek-Instellingen](administration-and-setup/settings/log-settings/fulltext-search-settings.md)
+    * [Toegangsaudit](administration-and-setup/settings/log-settings/access-audit.md)
+    * [Analyse](administration-and-setup/settings/log-settings/analytics.md)
   * [API-Licenties](administration-and-setup/settings/api-licenses.md)
   * [Leverancier Instelling](administration-and-setup/settings/supplier-setting/README.md)
     * [Leverancier Algemene Instellingen](administration-and-setup/settings/supplier-setting/supplier-general-settings.md)
@@ -782,6 +784,7 @@
 
 ## Geavanceerde functies en tools <a href="#advanced-functions-and-tools" id="advanced-functions-and-tools"></a>
 
+* [Kennisgrafiekverkenner](advanced-functions-and-tools/knowledge-graph-explorer.md)
 * [AI Workforce](advanced-functions-and-tools/ai_workforce/README.md)
 * [DocBits MCP](advanced-functions-and-tools/docbits-mcp/README.md)
   * [Installatie en configuratie](advanced-functions-and-tools/docbits-mcp/setup-and-configuration.md)

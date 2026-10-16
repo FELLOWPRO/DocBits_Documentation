@@ -1,4 +1,10 @@
-# Informacje o wersji DocBits — 14 października 2026
+# VESTA Hotfix — 14 października 2026
+
+> **Kanał wydania:** VESTA · **Wydanie:** R1.0.15.
+>
+> **Porównujesz z NOVA?** [Porównanie funkcji dużego wydania NOVA](nova-major-release-16-october-2026.md#what-nova-adds-for-customers) obejmuje Asystenta walidacji, zweryfikowane ulepszenia automatyzacji, rozszerzone raporty e-faktur, nowe elementy sterujące importem i inne dodatki wykraczające poza to wydanie VESTA.
+>
+> **Następna poprawka VESTA: [11 listopada 2026 (planowane)](vesta-hotfix-11-november-2026.md).** Wszystkie funkcje wcześniej dostępne w VESTA jako beta są teraz standardowymi funkcjami NOVA i staną się standardowymi funkcjami VESTA wraz z tym wydaniem poprawki.
 
 _Co zmienia się w produkcyjnym hotfixie DocBits z 14 października 2026 (wydanie
 R1.0.15), obejmującym wszystko od [hotfixu z 15 września](incremental-updates-15-september-2026.md).

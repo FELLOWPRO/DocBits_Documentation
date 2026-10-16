@@ -1,6 +1,61 @@
-# Release Notes
+# Releaseopmerkingen
 
-> **Laatste hotfix release:** [Hotfixes 14 oktober 2026](incremental-updates-14-october-2026.md) (R1.0.15): de Settings Assistant op elke instellingenpagina, nieuwe AI-niveaus (Fast, Full, Nexus, Auto), de controle van kopvelden, veiliger aanmelden en social login, en matching van purchase order toeslagen. Eerder: [Hotfixes 15 september 2026](incremental-updates-15-september-2026.md). Alle hotfix-pagina's staan vermeld in de navigatie onder Release Notes.
+Kies een releasekanaal om te zien wat er verandert voor uw team. **NOVA is de grote release met extra klantmogelijkheden. VESTA-hotfixes verbeteren de huidige productierelease.** Zie de [releaselifecycle](../docbits-release-lifecycle-strategy.md) voor beschikbaarheid en het wisselen tussen kanalen.
+
+**Voormalige VESTA-bètafuncties zijn nu opgenomen in NOVA.** Alle functies die eerder als bèta in VESTA beschikbaar waren, maken deel uit van de reguliere functieset van NOVA. Ze worden ook reguliere VESTA-functies met de [volgende VESTA-hotfix, gepland voor **11 november 2026**](vesta-hotfix-11-november-2026.md).
+
+| Releasekanaal | Releaseopmerkingen | Focus |
+| --- | --- | --- |
+| **NOVA — Grote release** | [Wat is er nieuw voor klanten](nova-major-release-16-october-2026.md) · **16 oktober 2026** servicemomentopname | Alle voormalige VESTA-bètafuncties, plus nieuwe mogelijkheden en uitbreidingen ten opzichte van VESTA R1.0.15. |
+| **VESTA — Volgende hotfix (gepland)** | [11 november 2026](vesta-hotfix-11-november-2026.md) | Introduceert alle voormalige VESTA-bètafuncties in de reguliere VESTA-functieset. |
+| **VESTA — Hotfix-release** | [14 oktober 2026 — R1.0.15](incremental-updates-14-october-2026.md) | Verbeteringen en fixes voor de huidige VESTA-productierelease. |
+
+## NOVA — Grote release
+
+### Wat uw team krijgt met NOVA
+
+* **Gebruik voormalige VESTA-bètafuncties als reguliere NOVA-functies.** Alle functies die eerder in VESTA-bèta werden aangeboden, zijn opgenomen in NOVA, inclusief de beheercontroles voor regels en lay-outs. Organisatie-instellingen, documenttypeschakelaars en machtigingen blijven van toepassing.
+* **Los documentblokkades op met de Validatieassistent.** Vraag wat een document tegenhoudt, spring naar het relevante veld en bekijk voorgestelde correcties terwijl u bij het document blijft.
+* **Zet herhaalde correcties om in beoordeelde automatiseringsverbeteringen.** Reviewers kunnen verbeterverzoeken indienen; beheerders kunnen geleerde regelvoorstellen beoordelen, getroffen documenten controleren en het resultaat na activering meten.
+* **Begrijp en handel op e-invoicefouten.** Gebruik rapporten gegroepeerd op validatieniveau, bekijk documenttypebeleid en de geschiedenis daarvan, en wijs een in aanmerking komende factuur af met een vastgelegde reden.
+* **Stel FTP/SFTP-imports in en beheer ze.** Gebruik de verbindingswizard, volg importstappen per bestand, configureer pogingen opnieuw en meldingen bij fouten, en verwijder optioneel bronbestanden na een succesvolle import.
+* **Match leveringsregels met minder herhaalde acties.** Selecteer eerst document- of inkooporderregels en koppel ze in beide richtingen. Geconfigureerde exports kunnen subregeldetails behouden en records groeperen op regelfwaarden.
+* **Houd geëxporteerde werkzaamheden gescheiden van voltooide werkzaamheden.** Gebruik de Exported-status voor opvolgbewerkingen en vergrendel optioneel Finished-documenten tegen normale heropening.
+* **Bereik regel- en lay-outcontroles direct.** Open de beheerpanelen zonder bètalink, zoek en bekijk lay-outs vooraf, en open de lay-outeditor vanuit een document.
+* **Beheer extractie en routinematig beheer.** Start een document opnieuw met een gekozen aantal pagina's, kies of verborgen velden worden geëxtraheerd, gebruik aanvullende Instellingenassistent-acties en beperk meldingsregels tot een suborganisatie.
+
+### Handleidingen voor het instellen van regels
+
+* [**Transformatieregels**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): maak geëxtraheerde waarden schoon en herschrijf ze, bouw een reeks stappen en bekijk het resultaat vooraf. **Bekijk:** [Video bekijken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/nl.mp4).
+* [**Aangepaste validatieregels**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definieer controles voor velden en tabelrijen, kies voorwaarden en ernst, en test uw regels. **Bekijk:** [Engelse video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
+* [**Inkoopordermatchingsregels**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): configureer matchingtypes, toleranties en uitvoervolgorde, en beheer regelversies. **Gerelateerde video — Kies de juiste automatisering:** [Video bekijken](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/nl.mp4).
+
+[Bekijk alle functievideos](nova-major-release-16-october-2026.md#watch-the-feature-videos), inclusief lay-outs, Touchless Intelligence, e-factuurvalidatie en de zesdelige AI Table-serie.
+
+[Lees de volledige NOVA-functievergelijking](nova-major-release-16-october-2026.md), inclusief activeringsvereisten, aanvullende verbeteringen en alle **16 serviceversies**.
+
+**De VESTA-basislijn omvat bestaande functionaliteit en bètafuncties:** de oorspronkelijke Instellingenassistent, basiswaarschuwingen voor importgezondheid, AI-niveaus, Header Field Check, Touchless Intelligence-dashboard, regel-engines, transformaties na masterdata-opzoeking en basislogboeken voor regeluitvoering. De NOVA-opmerkingen onderscheiden de overgang van bèta naar reguliere beschikbaarheid van verdere toevoegingen aan deze mogelijkheden.
+
+## VESTA — Hotfix-releases <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
+
+**Volgende geplande hotfix: [11 november 2026](vesta-hotfix-11-november-2026.md).** Alle functies die eerder als bèta in VESTA beschikbaar waren en nu in NOVA zijn opgenomen, worden in deze hotfix reguliere VESTA-functies.
+
+**Laatst uitgebrachte hotfix: [14 oktober 2026 — R1.0.15](incremental-updates-14-october-2026.md).** Deze VESTA-hotfix introduceerde de Instellingenassistent, bijgewerkte AI-niveaus, de Header Field Check, verbeteringen voor aanmelden en verbeteringen voor de matching van inkooporderkosten.
+
+Eerdere VESTA-hotfix-opmerkingen:
+
+* [15 september 2026 — R1.0.13](incremental-updates-15-september-2026.md)
+* [8 september 2026](incremental-updates-8-september-2026.md)
+* [12–25 augustus 2026](incremental-updates-12-25-august-2026.md)
+* [29 juli – 12 augustus 2026](incremental-updates-29-july-12-august-2026.md)
+* [14–29 juli 2026](incremental-updates-14-29-july-2026.md)
+* [4–14 juli 2026](incremental-updates-4-14-july-2026.md)
+* [3–4 juli 2026](incremental-updates-3-4-july-2026.md)
+* [30 juni – 3 juli 2026](incremental-updates-30-june-3-july-2026.md)
+* [26–30 juni 2026](incremental-updates-26-30-june-2026.md)
+* [21–25 juni 2026](incremental-updates-21-25-june-2026.md)
+
+De oorspronkelijke release-aankondigingen blijven hieronder ter referentie.
 
 ## **Release R1.0 13/14 juni 2026**
 

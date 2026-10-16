@@ -40,18 +40,16 @@ Para la disponibilidad en su entorno y el cambio de canal de publicación, consu
 
 ## Ver los videos de funciones <a href="#watch-the-feature-videos" id="watch-the-feature-videos"></a>
 
-Utilice estos recorridos junto con las notas de la versión para comprender las funciones relacionadas y su configuración. Los videos disponibles en español se enlazan a continuación; los demás videos están claramente etiquetados como English.
+Utilice estos recorridos junto con las notas de la versión para comprender las funciones relacionadas y su configuración. Los videos disponibles en español se enlazan a continuación; los demás videos están claramente etiquetados como vídeos en inglés.
 
-| Tema | Video |
-| --- | --- |
-| Elegir la automatización adecuada — incluido dónde encajan las Reglas de conciliación de pedidos | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
-| Reglas de transformación | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
-| Reglas de validación personalizadas | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
-| Diseños y reglas de selección | [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
-| Touchless Intelligence | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
-| Validación de facturas electrónicas | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
-| Usuarios y acceso de administrador | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
-| Suborganizaciones | [Vídeo en español](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/es.mp4) · [Vídeo en inglés](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
+* [Elegir la automatización adecuada — incluido dónde encajan las Reglas de conciliación de pedidos](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/es.mp4)
+* [Reglas de transformación](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/es.mp4)
+* [Reglas de validación personalizadas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/es.mp4)
+* [Diseños y reglas de selección (Vídeo en inglés)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
+* [Touchless Intelligence](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/es.mp4)
+* [Validación de facturas electrónicas](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/es.mp4)
+* [Usuarios y acceso de administrador](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/es.mp4)
+* [Suborganizaciones](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/es.mp4)
 
 ### AI Table: seis videos breves
 

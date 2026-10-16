@@ -42,16 +42,14 @@ Per la disponibilità nel proprio ambiente e il passaggio tra canali di rilascio
 
 Utilizzare queste guide passo-passo insieme alle note di rilascio per comprendere le funzionalità correlate e la loro configurazione. I video disponibili in italiano sono collegati di seguito; gli altri video sono chiaramente etichettati come in inglese.
 
-| Argomento | Video |
-| --- | --- |
-| Scegliere l'automazione giusta — incluso dove si inseriscono le Regole di abbinamento degli ordini di acquisto | [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
-| Regole di trasformazione | [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
-| Regole di convalida personalizzate | [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
-| Layout e regole di selezione | [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
-| Touchless Intelligence | [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
-| Convalida delle fatture elettroniche | [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
-| Utenti e accesso amministratore | [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
-| Sub-organizzazioni | [Video in italiano](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/it.mp4) · [Video in inglese](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
+* [Scegliere l'automazione giusta — incluso dove si inseriscono le Regole di abbinamento degli ordini di acquisto](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/it.mp4)
+* [Regole di trasformazione](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/it.mp4)
+* [Regole di convalida personalizzate (Video in inglese)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4)
+* [Layout e regole di selezione (Video in inglese)](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4)
+* [Touchless Intelligence](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/it.mp4)
+* [Convalida delle fatture elettroniche](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/it.mp4)
+* [Utenti e accesso amministratore](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/it.mp4)
+* [Sub-organizzazioni](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/it.mp4)
 
 ### AI Table: sei brevi video
 

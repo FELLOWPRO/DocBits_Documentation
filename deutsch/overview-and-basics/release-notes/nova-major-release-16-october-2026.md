@@ -42,16 +42,14 @@ Informationen zur Verfügbarkeit in Ihrer Umgebung und zum Wechsel des Release-K
 
 Verwenden Sie diese Walkthroughs ergänzend zu den Versionshinweisen, um die zugehörigen Funktionen und deren Konfiguration zu verstehen. Videos, die auf Deutsch verfügbar sind, sind unten verlinkt; andere Videos sind eindeutig als Englisch gekennzeichnet.
 
-| Thema | Video |
-| --- | --- |
-| Die richtige Automatisierung wählen – einschließlich der Einordnung von Bestellabgleichregeln | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/en.mp4) |
-| Transformationsregeln | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/en.mp4) |
-| Benutzerdefinierte Validierungsregeln | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4) |
-| Layouts und Auswahlregeln | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/en.mp4) |
-| Touchless Intelligence | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/en.mp4) |
-| E-Rechnungs-Validierung | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/en.mp4) |
-| Benutzer und Administratorzugriff | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/en.mp4) |
-| Unterorganisationen | [Deutsches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/de.mp4) · [Englisches Video](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/en.mp4) |
+* [Die richtige Automatisierung wählen – einschließlich der Einordnung von Bestellabgleichregeln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/de.mp4)
+* [Transformationsregeln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/de.mp4)
+* [Benutzerdefinierte Validierungsregeln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/de.mp4)
+* [Layouts und Auswahlregeln](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/layouts/v1/de.mp4)
+* [Touchless Intelligence](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/touchless-intelligence/v1/de.mp4)
+* [E-Rechnungs-Validierung](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/einvoice-validation/v1/de.mp4)
+* [Benutzer und Administratorzugriff](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/users/v1/de.mp4)
+* [Unterorganisationen](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/sub_organizations/v1/de.mp4)
 
 ### AI Table: sechs kurze Videos
 

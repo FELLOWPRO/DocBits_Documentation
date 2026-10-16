@@ -6,10 +6,10 @@ De versienummers in deze handleiding (R1.0.x, R1.1.x en R1.2) dienen ter illustr
 
 ## Releasekanalen
 
-| Kanaal    | Rol in de levenscyclus                                                                                                                                                                                    |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **VESTA** | Levert de huidige productierelease.                                                                                                                                                                       |
-| **NOVA**  | Levert de volgende release terwijl deze de fasen van ontwikkeling, testen en beschikbaarheid voor productie doorloopt. Tijdens de parallelle productie bieden NOVA en VESTA beide live productiereleases. |
+| Kanaal | Rol in de levenscyclus |
+| --- | --- |
+| **VESTA** | Levert de huidige productierelease. |
+| **NOVA** | Levert de volgende release terwijl deze de fasen van ontwikkeling, testen en beschikbaarheid voor productie doorloopt. Tijdens de parallelle productie bieden NOVA en VESTA beide live productiereleases. |
 
 ## Overzicht van de levenscyclus
 
@@ -17,11 +17,11 @@ De versienummers in deze handleiding (R1.0.x, R1.1.x en R1.2) dienen ter illustr
 
 Elke cyclus bestaat uit drie fasen. Een door FELLOWPRO beheerde rollover brengt vervolgens de NOVA-productierelease naar VESTA en start de volgende cyclus.
 
-| Fase                         | VESTA               | NOVA                 | Wat dit betekent voor uw organisatie                                                           |
-| ---------------------------- | ------------------- | -------------------- | ---------------------------------------------------------------------------------------------- |
-| **1. Ontwikkeling**          | R1.0.x in productie | R1.1 in ontwikkeling | U blijft VESTA gebruiken terwijl de volgende release wordt voorbereid.                         |
-| **2. QA en acceptatietests** | R1.0.x in productie | R1.1 in QA en UAT    | U evalueert de komende release in de NOVA-sandbox terwijl het productiewerk op VESTA doorgaat. |
-| **3. Parallelle productie**  | R1.0.x in productie | R1.1.x in productie  | U blijft op VESTA of stapt zelfstandig over naar NOVA wanneer u er klaar voor bent.            |
+| Fase | VESTA | NOVA | Wat dit betekent voor uw organisatie |
+| --- | --- | --- | --- |
+| **1. Ontwikkeling** | R1.0.x in productie | R1.1 in ontwikkeling | U blijft VESTA gebruiken terwijl de volgende release wordt voorbereid. |
+| **2. QA en acceptatietests** | R1.0.x in productie | R1.1 in QA en UAT | U evalueert de komende release in de NOVA-sandbox terwijl het productiewerk op VESTA doorgaat. |
+| **3. Parallelle productie** | R1.0.x in productie | R1.1.x in productie | U blijft op VESTA of stapt zelfstandig over naar NOVA wanneer u er klaar voor bent. |
 
 Na de rollover gebruiken alle klanten VESTA R1.1.x en wordt NOVA hergebruikt voor de ontwikkeling van R1.2. Fase 1 begint dan opnieuw met deze bijgewerkte versies.
 
@@ -59,11 +59,11 @@ FELLOWPRO kondigt de geplande rollover vooraf per e-mail aan bij alle klanten en
 
 ### Wat er verandert bij de rollover
 
-| Wijziging                                           | Resultaat                                                                                                             |
-| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **De NOVA-release wordt de VESTA-release**          | R1.1.x wordt voor alle klanten de gemeenschappelijke productierelease in VESTA.                                       |
-| **De vorige release wordt uitgefaseerd**            | R1.0.x wordt buiten gebruik gesteld en is niet langer beschikbaar via een van beide kanalen of op enige andere wijze. |
-| **NOVA wordt hergebruikt voor de volgende release** | De ontwikkeling van R1.2 begint in NOVA, waarmee fase 1 van de volgende cyclus start.                                 |
+| Wijziging | Resultaat |
+| --- | --- |
+| **De NOVA-release wordt de VESTA-release** | R1.1.x wordt voor alle klanten de gemeenschappelijke productierelease in VESTA. |
+| **De vorige release wordt uitgefaseerd** | R1.0.x wordt buiten gebruik gesteld en is niet langer beschikbaar via een van beide kanalen of op enige andere wijze. |
+| **NOVA wordt hergebruikt voor de volgende release** | De ontwikkeling van R1.2 begint in NOVA, waarmee fase 1 van de volgende cyclus start. |
 
 Dezelfde drie fasen herhalen zich vervolgens met de nieuwe versienummers.
 
@@ -81,10 +81,10 @@ FELLOWPRO communiceert elke geplande rollover vooraf. Elke indicatieve planning 
 
 ## Verantwoordelijkheden en keuzevrijheid van de klant
 
-| Overgang                                        | Wie beheert deze | Wat u kunt verwachten                                                                                                                                                                                                                       |
-| ----------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Overstap van VESTA naar NOVA tijdens fase 3** | Uw organisatie   | U evalueert NOVA in de sandbox en kiest of en wanneer u overstapt via de instelling Release Channel in de applicatie.                                                                                                                       |
-| **Rollover van NOVA R1.1.x naar VESTA R1.1.x**  | FELLOWPRO        | U leest de voorafgaande aankondiging per e-mail, maakt eventuele bedenkingen of bezwaren kenbaar en bevestigt uw acceptatie van de geplande overgang. FELLOWPRO gaat verder zodra de release gereed is en alle klanten hebben geaccepteerd. |
+| Overgang | Wie beheert deze | Wat u kunt verwachten |
+| --- | --- | --- |
+| **Overstap van VESTA naar NOVA tijdens fase 3** | Uw organisatie | U evalueert NOVA in de sandbox en kiest of en wanneer u overstapt via de instelling Release Channel in de applicatie. |
+| **Rollover van NOVA R1.1.x naar VESTA R1.1.x** | FELLOWPRO | U leest de voorafgaande aankondiging per e-mail, maakt eventuele bedenkingen of bezwaren kenbaar en bevestigt uw acceptatie van de geplande overgang. FELLOWPRO gaat verder zodra de release gereed is en alle klanten hebben geaccepteerd. |
 
 ## Veelgestelde vragen
 

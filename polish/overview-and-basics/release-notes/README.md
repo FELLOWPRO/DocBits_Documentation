@@ -1,6 +1,61 @@
-# Informacje o wersji
+# Notatki do wydania
 
-> **Najnowsza wersja hotfix:** [Hotfixy 14 października 2026](incremental-updates-14-october-2026.md) (R1.0.15): czat Settings Assistant na każdej stronie ustawień, nowe poziomy AI (Fast, Full, Nexus, Auto), kontrola pól nagłówka, bezpieczniejsze logowanie i logowanie społecznościowe oraz dopasowywanie opłat w zamówieniach zakupowych. Poprzednia: [Hotfixy 15 września 2026](incremental-updates-15-september-2026.md). Wszystkie strony hotfixów są wymienione w nawigacji pod Notatkami o wydaniu.
+Wybierz kanał wydania, aby zobaczyć zmiany dotyczące Twojego zespołu. **NOVA to główne wydanie z dodatkowymi funkcjami dla klientów. Hotfixy VESTA ulepszają bieżącą wersję produkcyjną.** Zobacz [cykl życia wydania](../docbits-release-lifecycle-strategy.md), aby poznać dostępność i możliwość przełączania między kanałami.
+
+**Funkcje, które wcześniej były w wersji beta VESTA, są teraz dostępne w NOVA.** Wszystkie funkcje wcześniej dostępne jako beta w VESTA są teraz częścią standardowego zestawu funkcji NOVA. Staną się one również standardowymi funkcjami VESTA w ramach [następnego hotfixa VESTA, planowanego na **11 listopada 2026 r.**](vesta-hotfix-11-november-2026.md).
+
+| Kanał wydania | Notatki do wydania | Zakres |
+| --- | --- | --- |
+| **NOVA — Główne wydanie** | [Nowości dla klientów](nova-major-release-16-october-2026.md) · migawka wersji z **16 października 2026 r.** | Wszystkie funkcje, które wcześniej były w wersji beta VESTA, plus nowe możliwości i rozszerzenia w porównaniu z VESTA R1.0.15. |
+| **VESTA — Następny hotfix (planowany)** | [11 listopada 2026 r.](vesta-hotfix-11-november-2026.md) | Wprowadza wszystkie funkcje, które wcześniej były w wersji beta VESTA, do standardowego zestawu funkcji VESTA. |
+| **VESTA — Wydanie hotfix** | [14 października 2026 r. — R1.0.15](incremental-updates-14-october-2026.md) | Ulepszenia i poprawki dla bieżącej wersji produkcyjnej VESTA. |
+
+## NOVA — Główne wydanie
+
+### Co zyskuje Twój zespół dzięki NOVA
+
+* **Korzystaj z funkcji, które wcześniej były w wersji beta VESTA, jako ze standardowych funkcji NOVA.** Wszystkie funkcje wcześniej oferowane w wersji beta VESTA są teraz dostępne w NOVA, w tym elementy sterujące zarządzaniem regułami i układami. Ustawienia organizacji, przełączniki typów dokumentów i uprawnienia nadal obowiązują.
+* **Rozwiązuj problemy blokujące dokumenty dzięki Asystentowi walidacji.** Dowiedz się, co blokuje dokument, przejdź do odpowiedniego pola i przejrzyj sugerowane poprawki, pozostając w widoku dokumentu.
+* **Przekształć powtarzalne poprawki w zweryfikowane ulepszenia automatyzacji.** Recenzenci mogą przesyłać wnioski o ulepszenia; administratorzy mogą oceniać wyuczone propozycje reguł, przeglądać objęte dokumenty i mierzyć wyniki po aktywacji.
+* **Rozumiej błędy e-faktur i podejmuj działania.** Korzystaj z raportów pogrupowanych według poziomu walidacji, przeglądaj polityki dotyczące typów dokumentów i ich historię oraz odrzucaj kwalifikującą się fakturę z odnotowaną przyczyną.
+* **Konfiguruj i kontroluj importy FTP/SFTP.** Korzystaj z kreatora połączeń, postępuj zgodnie z krokami importu dla poszczególnych plików, konfiguruj ponowne próby i powiadomienia o błędach oraz opcjonalnie usuwaj pliki źródłowe po pomyślnym imporcie.
+* **Dopasowuj pozycje dostaw przy mniejszej liczbie powtarzalnych czynności.** Najpierw wybierz pozycje dokumentu lub zamówienia zakupu i łącz je w dowolnym kierunku. Skonfigurowane eksporty mogą zachowywać szczegóły podpozycji i grupować rekordy według wartości pozycji.
+* **Oddzielaj eksportowaną pracę od pracy zakończonej.** Używaj statusu Exported do dalszego przetwarzania i opcjonalnie blokuj dokumenty Finished przed zwykłym ponownym otwarciem.
+* **Miej bezpośredni dostęp do elementów sterujących regułami i układami.** Otwieraj panele zarządzania bez linku beta, szukaj i podglądaj układy oraz otwieraj edytor układu z poziomu dokumentu.
+* **Kontroluj ekstrakcję i rutynową administrację.** Ponownie uruchamiaj dokument z wybraną liczbą stron, decyduj, czy wyodrębniać ukryte pola, korzystaj z dodatkowych akcji Asystenta ustawień i ograniczaj reguły powiadomień do suborganizacji.
+
+### Przewodniki dotyczące konfigurowania reguł
+
+* [**Zasady transformacji**](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md): porządkuj i przepisuj wyodrębnione wartości, twórz sekwencje kroków i podglądaj wyniki. **Obejrzyj:** [Obejrzyj film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/transformation-rules/v1/pl.mp4).
+* [**Niestandardowe reguły walidacji**](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md): definiuj sprawdzenia dla pól i wierszy tabel, wybieraj warunki i poziom ważności oraz testuj swoje reguły. **Obejrzyj:** [Film po angielsku](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/en.mp4).
+* [**Reguły dopasowywania zamówień**](../../administration-and-setup/settings/global-settings/document-types/more-settings/purchase-order/purchase-order-matching-rules.md): konfiguruj typy dopasowań, tolerancje i kolejność wykonania oraz zarządzaj wersjami reguł. **Powiązany film — Wybierz właściwą automatyzację:** [Obejrzyj film](https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/choose-automation/v1/pl.mp4).
+
+[Przeglądaj wszystkie filmy dotyczące funkcji](nova-major-release-16-october-2026.md#watch-the-feature-videos), w tym dotyczące układów, Touchless Intelligence, walidacji e-faktur oraz sześcioodcinkowej serii AI Table.
+
+[Przeczytaj pełne porównanie funkcji NOVA](nova-major-release-16-october-2026.md), w tym wymagania dotyczące aktywacji, dodatkowe ulepszenia i wszystkie **16 wersji usługi**.
+
+**Bazowa wersja VESTA obejmuje istniejące funkcje i funkcje beta:** oryginalny Asystent ustawień, podstawowe ostrzeżenia dotyczące stanu importu, poziomy AI, Kontrola pól nagłówka, pulpit Touchless Intelligence, silniki reguł, transformacje po wyszukiwaniu danych podstawowych oraz podstawowe logi wykonania reguł. Notatki dotyczące NOVA odróżniają przejście z wersji beta do regularnej dostępności od dalszych rozszerzeń tych możliwości.
+
+## VESTA — Wydania poprawek <a href="#vesta-hotfix-releases" id="vesta-hotfix-releases"></a>
+
+**Następne planowane wydanie poprawki: [11 listopada 2026](vesta-hotfix-11-november-2026.md).** Wszystkie funkcje wcześniej dostępne w VESTA jako beta, a obecnie włączone do NOVA, staną się standardowymi funkcjami VESTA w tym wydaniu poprawki.
+
+**Najnowsze wydane wydanie poprawki: [14 października 2026 — R1.0.15](incremental-updates-14-october-2026.md).** To wydanie poprawki VESTA wprowadziło Asystenta ustawień, zaktualizowane poziomy AI, Kontrolę pól nagłówka, ulepszenia logowania oraz ulepszenia dopasowywania kosztów zamówień zakupu.
+
+Wcześniejsze notatki dotyczące wydań poprawek VESTA:
+
+* [15 września 2026 — R1.0.13](incremental-updates-15-september-2026.md)
+* [8 września 2026](incremental-updates-8-september-2026.md)
+* [12–25 sierpnia 2026](incremental-updates-12-25-august-2026.md)
+* [29 lipca – 12 sierpnia 2026](incremental-updates-29-july-12-august-2026.md)
+* [14–29 lipca 2026](incremental-updates-14-29-july-2026.md)
+* [4–14 lipca 2026](incremental-updates-4-14-july-2026.md)
+* [3–4 lipca 2026](incremental-updates-3-4-july-2026.md)
+* [30 czerwca – 3 lipca 2026](incremental-updates-30-june-3-july-2026.md)
+* [26–30 czerwca 2026](incremental-updates-26-30-june-2026.md)
+* [21–25 czerwca 2026](incremental-updates-21-25-june-2026.md)
+
+Oryginalne ogłoszenia dotyczące wydań pozostają poniżej w celach referencyjnych.
 
 ## **Release R1.0 13/14 czerwca 2026**
 

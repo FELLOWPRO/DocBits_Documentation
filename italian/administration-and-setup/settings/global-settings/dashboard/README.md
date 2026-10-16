@@ -4,12 +4,11 @@
 
 Le impostazioni della Dashboard sono progettate per aiutare gli amministratori a controllare la presentazione dei dati e l'interazione all'interno della dashboard di DocBits. Queste impostazioni determinano quali informazioni sono immediatamente disponibili al momento dell'accesso, garantendo che gli utenti abbiano un accesso rapido ai dati più rilevanti per le loro attività.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Accedere alle Impostazioni della Dashboard
 
-Per accedere alle impostazioni della dashboard, vai a:
-**Impostazioni → Impostazioni Globali → Dashboard**
+Per accedere alle impostazioni della dashboard, vai a: **Impostazioni → Impostazioni Globali → Dashboard**
 
 <figure><img src="../../../../.gitbook/assets/settings_dashboard.png" alt=""><figcaption></figcaption></figure>
 
@@ -18,7 +17,7 @@ Per accedere alle impostazioni della dashboard, vai a:
 * **Reimposta filtri**: Consente di configurare quando i filtri della dashboard devono essere reimpostati, ad esempio dopo il caricamento del documento, il riavvio del documento o l'esportazione del documento. Questo aiuta a mantenere una visione pulita dei dati in base a specifiche fasi del flusso di lavoro.
 * **Dati dashboard**:
   * **Caricamento automatico upload dashboard**: Controlla se la dashboard deve caricare automaticamente i dati all'accesso dell'utente, il che può aiutare a ridurre i tempi di caricamento e migliorare l'esperienza utente caricando i dati solo quando necessario.
-  * **Esporta Dati Dashboard**: Questa funzione aggiunge un nuovo pulsante **Esporta** alla barra degli strumenti della dashboard, consentendoti di esportare la vista corrente della dashboard come file **.csv** o **.xlsx**.
+  *   **Esporta Dati Dashboard**: Questa funzione aggiunge un nuovo pulsante **Esporta** alla barra degli strumenti della dashboard, consentendoti di esportare la vista corrente della dashboard come file **.csv** o **.xlsx**.
 
       <figure><img src="../../../../.gitbook/assets/dashboard_settings_3.png" alt=""><figcaption></figcaption></figure>
 
@@ -49,19 +48,19 @@ Sono inclusi i seguenti dettagli:
   * **Solo Admin e Assegnatario**: Solo gli utenti con privilegi di Admin e l'utente assegnato possono riavviare il documento.
   * **Tutti gli Utenti**: Tutti gli utenti a cui sono state concesse le necessarie [autorizzazioni](../groups-users-and-permissions/groups-and-permissions/activating-permissions.md) possono riavviare i documenti.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## **Filtri**
 
 * **Stile filtro stato**: Determina lo stile di presentazione dei filtri di stato, che può essere impostato su predefinito o personalizzato in base al focus operativo degli utenti.
 * **Filtro stato personalizzato**: Abilita la creazione e l'applicazione di filtri personalizzati che possono mirare a specifici stati del documento come "Nuovo", "In convalida" o "In esportazione". Ciò consente agli utenti di accedere rapidamente ai documenti in specifiche fasi di elaborazione.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Dashboard Spedizioni Anticipate
 
 * **Visibilità Ordini Consegnati**: Questa funzione consente all'utente di specificare la durata per la quale gli ordini consegnati saranno visibili.
 
-<figure><img src="../../../../.gitbook/assets/dashboard_settings_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Queste impostazioni della dashboard sono cruciali per garantire che la piattaforma DocBits sia il più reattiva e utile possibile, fornendo agli utenti uno strumento potente per monitorare e gestire le attività di elaborazione dei documenti direttamente dalla dashboard.

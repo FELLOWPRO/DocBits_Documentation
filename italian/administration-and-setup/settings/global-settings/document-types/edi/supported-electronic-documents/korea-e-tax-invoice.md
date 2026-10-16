@@ -15,15 +15,15 @@ Korea E-Tax Invoice è lo standard di fattura fiscale elettronica gestito dal Na
 
 ## Stato del supporto
 
-| Componente         | Stato       |
-| ------------------ | ----------- |
-| Anteprima          | ✅ Supported |
-| Estrazione campi   | ✅ Supported |
-| Trasformazione     | ✅ Supported |
+| Componente       | Stato       |
+| ---------------- | ----------- |
+| Anteprima        | ✅ Supported |
+| Estrazione campi | ✅ Supported |
+| Trasformazione   | ✅ Supported |
 
 ## Anteprima predefinita
 
-<figure><img src="../../../../../../.gitbook/assets/korea-e-tax-invoice-preview.png" alt="Anteprima di una Korea e-Tax Invoice in DocBits"><figcaption><p>Anteprima predefinita DocBits per una Korea e-Tax Invoice</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/korea-nts-preview.png" alt="Anteprima di una Korea e-Tax Invoice in DocBits"><figcaption><p>Anteprima predefinita DocBits per una Korea e-Tax Invoice</p></figcaption></figure>
 
 ## Correlati
 

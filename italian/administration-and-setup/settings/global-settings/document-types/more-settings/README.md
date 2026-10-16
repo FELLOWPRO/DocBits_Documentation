@@ -13,18 +13,18 @@
 
 La breadcrumb in cima alla pagina mostra **Impostazioni / Tipi di Documento / Altre impostazioni**. L'Assistente Impostazioni sul lato destro della pagina spiega le impostazioni della scheda aperta.
 
-| Scheda | Cosa imposti qui |
-| ------ | ---------------- |
-| Ordine di acquisto | Corrispondenza PO, tolleranze, esportazione delle righe PO, numeri di articolo del fornitore |
-| Gestisci i layout | Interruttore per la panoramica Gestisci i layout |
-| Regole di convalida personalizzate | Le tue regole di convalida per questo tipo di documento |
-| Regole di trasformazione | Regole che leggono un valore, lo modificano in più passaggi e lo riscrivono |
-| Approvazione e rifiuto | Flusso di approvazione e moduli di revisione e di rifiuto |
-| [Verifica fiscale Vertex](vertex-tax-verification.md) | Progetta il modulo per la verifica fiscale Vertex |
-| Validazione della fattura elettronica | Convalida delle fatture XRechnung, ZUGFeRD e Factur-X |
-| Estrazione della tabella | Salta la convalida delle tabelle estratte |
-| Impostazioni di esportazione | Esportazione multipla, formato PDF, esportazione alternativa |
-| Rilevamento dei duplicati | Rileva e blocca i documenti duplicati |
+| Scheda                                                | Cosa imposti qui                                                                             |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Ordine di acquisto                                    | Corrispondenza PO, tolleranze, esportazione delle righe PO, numeri di articolo del fornitore |
+| Gestisci i layout                                     | Interruttore per la panoramica Gestisci i layout                                             |
+| Regole di convalida personalizzate                    | Le tue regole di convalida per questo tipo di documento                                      |
+| Regole di trasformazione                              | Regole che leggono un valore, lo modificano in più passaggi e lo riscrivono                  |
+| Approvazione e rifiuto                                | Flusso di approvazione e moduli di revisione e di rifiuto                                    |
+| [Verifica fiscale Vertex](vertex-tax-verification.md) | Progetta il modulo per la verifica fiscale Vertex                                            |
+| Validazione della fattura elettronica                 | Convalida delle fatture XRechnung, ZUGFeRD e Factur-X                                        |
+| Estrazione della tabella                              | Salta la convalida delle tabelle estratte                                                    |
+| Impostazioni di esportazione                          | Esportazione multipla, formato PDF, esportazione alternativa                                 |
+| Rilevamento dei duplicati                             | Rileva e blocca i documenti duplicati                                                        |
 
 ## Ordine di acquisto
 
@@ -64,7 +64,7 @@ Sotto il diagramma il pannello elenca **Regole per priorità, per fase**. Per og
 * Il passaggio **1.1 Exact match for all rules** non riesce, perché 10.40 non è 10.00. La freccia rossa porta al passaggio successivo.
 * Il passaggio **1.2 Tolerance-based match** riesce. La differenza è 4 %, quindi rientra nel 5 %. La freccia verde porta a **Corrispondenza trovata** e l'elaborazione si interrompe.
 
-Nel diagramma questo è il percorso 1.1, poi 1.2, poi **Corrispondenza trovata**. Per il percorso seguito da un singolo documento vedi [Touchless Intelligence: Diagnosi dell'abbinamento ordini](../../../../touchless-po-matching-diagnosis.md). Per tutti i dettagli della pagina delle regole vedi [Regole di Corrispondenza degli Ordini di Acquisto](purchase-order/purchase-order-matching-rules.md).
+Nel diagramma questo è il percorso 1.1, poi 1.2, poi **Corrispondenza trovata**. Per il percorso seguito da un singolo documento vedi [Touchless Intelligence: Diagnosi dell'abbinamento ordini](../../../../analytics-dashboard/touchless-intelligence/touchless-po-matching-diagnosis.md). Per tutti i dettagli della pagina delle regole vedi [Regole di Corrispondenza degli Ordini di Acquisto](purchase-order/purchase-order-matching-rules.md).
 
 ### Impostazione della tolleranza PO
 
@@ -86,7 +86,7 @@ Il [**Numero di articolo del fornitore Mappa**](purchase-order/supplier-item-num
 
 Tre schede si trovano direttamente sotto la scheda Ordine di acquisto:
 
-* **Gestisci i layout** attiva la panoramica Gestisci i layout per questo tipo di documento. Vedi il [Layout Manager](../layout-manager/README.md).
+* **Gestisci i layout** attiva la panoramica Gestisci i layout per questo tipo di documento. Vedi il [Layout Manager](../layout-manager/).
 * **Regole di convalida personalizzate** attiva le tue regole di convalida. **Gestisci le regole di convalida** le apre. Vedi [Regole di convalida personalizzate](../custom-validation-rules.md).
 * **Regole di trasformazione** attiva le regole di trasformazione. **Gestire le regole di trasformazione** le apre. Vedi [Regole di trasformazione](../transformation-rules.md).
 
@@ -106,7 +106,7 @@ La scheda **Approvazione e rifiuto** contiene il flusso di approvazione e i modu
 * **Modulo di revisione del progetto**: Configura il layout del modulo di revisione con il **Costruttore di layout**.
 * **Modulo di rifiuto del design**: Configura il layout del modulo di rifiuto con il **Costruttore di layout**.
 
-Per il **Costruttore di layout** vedi il [Layout Manager](../layout-manager/README.md).
+Per il **Costruttore di layout** vedi il [Layout Manager](../layout-manager/).
 
 ## Verifica fiscale Vertex
 
@@ -114,7 +114,7 @@ La scheda **Verifica fiscale Vertex** contiene **Verifica fiscale del vertice di
 
 ## Validazione della fattura elettronica
 
-La scheda **Validazione della fattura elettronica** attiva la convalida delle fatture elettroniche in arrivo e ti permette di decidere se il fornitore viene informato quando una fattura viene rifiutata. Vedi [Validazione della fattura elettronica](../../../document-processing/e-documents/validation-rules.md).
+La scheda **Validazione della fattura elettronica** attiva la convalida delle fatture elettroniche in arrivo e ti permette di decidere se il fornitore viene informato quando una fattura viene rifiutata. Vedi [Validazione della fattura elettronica](../../../document-processing/e-documents/validation-rules/).
 
 ## Estrazione della tabella
 

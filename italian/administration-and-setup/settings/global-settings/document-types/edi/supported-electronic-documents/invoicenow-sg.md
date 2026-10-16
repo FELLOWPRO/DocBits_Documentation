@@ -15,15 +15,15 @@ InvoiceNow SG è la localizzazione specifica per Singapore dello standard Peppol
 
 ## Stato del supporto
 
-| Componente         | Stato       |
-| ------------------ | ----------- |
-| Anteprima          | ✅ Supported |
-| Estrazione campi   | ✅ Supported |
-| Trasformazione     | ✅ Supported |
+| Componente       | Stato       |
+| ---------------- | ----------- |
+| Anteprima        | ✅ Supported |
+| Estrazione campi | ✅ Supported |
+| Trasformazione   | ✅ Supported |
 
 ## Anteprima predefinita
 
-<figure><img src="../../../../../../.gitbook/assets/invoicenow-sg-preview.png" alt="Anteprima di una fattura InvoiceNow SG in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura InvoiceNow SG di Singapore</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/invoicenow-preview.png" alt="Anteprima di una fattura InvoiceNow SG in DocBits"><figcaption><p>Anteprima predefinita DocBits per una fattura InvoiceNow SG di Singapore</p></figcaption></figure>
 
 ## Correlati
 

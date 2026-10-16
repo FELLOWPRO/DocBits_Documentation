@@ -1,10 +1,10 @@
-# Email Notification
+# Notifica Email
 
 {% embed url="https://youtu.be/MZoDMibM-7E" %}
 DocBits Tasks & Notifications Tutorial: Assign Work, Track Status & Handle Workflow Tasks
 {% endembed %}
 
-<figure><img src="../../../../.gitbook/assets/docbits_email_notifications_header.png" alt="Docbits Email Notifications Header"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (40).png" alt="Docbits Email Notifications Header"><figcaption></figcaption></figure>
 
 Configuring email notifications is critical. Email notifications in DocBits can be configured to notify users of various document-related events, such as: Processing completion, import or export errors, or user intervention requests. This tool is essential for maintaining effective communication and operational continuity in document processing environments. Here are some reasons why this is important:
 

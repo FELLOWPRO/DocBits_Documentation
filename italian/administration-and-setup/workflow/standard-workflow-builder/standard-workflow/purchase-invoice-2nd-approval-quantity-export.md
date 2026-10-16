@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Quantity Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (37).png" alt="DocBits Acquisto Ordine Esporta 6"><figcaption></figcaption></figure>
-
 Questo titolo indica che la regola è configurata per gestire la seconda fase di approvazione delle fatture d'acquisto con particolare attenzione ai dettagli sulle quantità, garantendo che le quantità sulla fattura corrispondano a quelle sull'ordine di acquisto originale.
 
 #### Configurazione della Regola:

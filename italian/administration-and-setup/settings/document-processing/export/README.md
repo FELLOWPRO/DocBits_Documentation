@@ -250,7 +250,7 @@ Per creare una nuova esportazione:
 * **Document Type** Menu a tendina che elenca tutti i tipi di documento disponibili. Questo determina a quale tipo di documento si applica questa configurazione di esportazione.
 * **ION Mapping File** Seleziona un file di mapping dal file manager.
 * **IDM Mapping File** Seleziona un file di mapping dal file manager. [Hai bisogno di aiuto per crearne uno? Consulta la Guida al Mapping IDM](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **LN Mapping File** Seleziona un file di mapping dal file manager. [Hai bisogno di aiuto per crearne uno? Consulta l'Esempio di Mapping LN](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/README.md)
+* **LN Mapping File** Seleziona un file di mapping dal file manager. [Hai bisogno di aiuto per crearne uno? Consulta l'Esempio di Mapping LN](../../../../infor-integration-and-configuration/exporting-to-infor/ln/example-export-ln/)
 
 </details>
 
@@ -271,7 +271,7 @@ Per creare una nuova esportazione:
 * **Document Type** Menu a tendina che elenca tutti i tipi di documento disponibili. Questo determina a quale tipo di documento si applica questa configurazione di esportazione.
 * **ION Mapping File** Seleziona un file di mapping dal file manager.
 * **IDM Mapping File** Seleziona un file di mapping dal file manager. [Hai bisogno di aiuto per crearne uno? Consulta la Guida al Mapping IDM](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 Mapping File** Seleziona un file di mapping dal file manager. [Hai bisogno di aiuto per crearne uno? Consulta l'Esempio di Mapping M3](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
+* **M3 Mapping File** Seleziona un file di mapping dal file manager. [Hai bisogno di aiuto per crearne uno? Consulta l'Esempio di Mapping M3](../../../../infor-integration-and-configuration/exporting-to-infor/m3/example-export-m3.md)
 
 </details>
 
@@ -292,6 +292,6 @@ Per creare una nuova esportazione:
 * **Document Type** Menu a tendina che elenca tutti i tipi di documento disponibili. Questo determina a quale tipo di documento si applica questa configurazione di esportazione.
 * **ION Mapping File** Seleziona un file di mapping dal file manager.
 * **IDM Mapping File** Seleziona un file di mapping dal file manager. [Hai bisogno di aiuto per crearne uno? Consulta la Guida al Mapping IDM](../../../../infor-integration-and-configuration/exporting-to-infor/creating-an-idm-mapping-file.md)
-* **M3 toml Mapping File** Seleziona un file di mapping dal file manager o usa l'opzione seleziona Toml per usare un toml creato con il gestore delle regole. [Hai bisogno di aiuto per crearne uno? Consulta la Guida al Gestore delle Regole](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/administration-and-setup/settings/document-processing/rule-manager/README.md)
+* **M3 toml Mapping File** Seleziona un file di mapping dal file manager o usa l'opzione seleziona Toml per usare un toml creato con il gestore delle regole. [Hai bisogno di aiuto per crearne uno? Consulta la Guida al Gestore delle Regole](../rule-manager/)
 
 </details>

@@ -16,7 +16,7 @@ Queste schede vanno nel gruppo **Then** del Generatore di workflow — le azioni
 
 **Importante:** le versioni v3 hanno aggiunto il supporto al decision tree ma sono ora deprecate **Raccomandazione:** usa v2 sia per DOC\_USER\_ASSIGN che per DOC\_GROUP\_ASSIGN
 
-📖 [Cronologia Completa delle Versioni](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/administration-and-setup/changelog/release.md#-assignment--routing-cards) | [Database delle Versioni delle Card](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/DocFlow/docs/card_version.md)
+📖 [Cronologia Completa delle Versioni](../../changelog/release.md#-assignment--routing-cards) | [Database delle Versioni delle Card](../../../DocFlow/docs/card_version.md)
 
 ***
 

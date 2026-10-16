@@ -4,12 +4,11 @@ description: DocBits Workflow Engine
 
 # Workflow
 
-<figure><img src="../../.gitbook/assets/docbits_workflow_3.png" alt="DocBits Flusso di lavoro 3"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/And1.png" alt="DocBits Flusso di lavoro 3"><figcaption></figcaption></figure>
 
 ## Motore di Workflow DocBits: Semplificazione dell'Automazione dei Processi
 
 {% embed url="https://youtu.be/YQC13wCqTJI" %}
-
 
 ### Introduzione
 

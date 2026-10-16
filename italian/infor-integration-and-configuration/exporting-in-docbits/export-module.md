@@ -16,4 +16,4 @@ Puoi trovarlo sotto: **Impostazioni** → **Elaborazione Documenti** → **Espor
 
 Per istruzioni dettagliate su come configurare ciascun tipo di esportazione, inclusi screenshot e descrizioni dei campi, visita la guida completa:
 
-[Visualizza Guida alla Configurazione di Esportazione](../../administration-and-setup/settings/document-processing/export.md)
+[Visualizza Guida alla Configurazione di Esportazione](../../administration-and-setup/settings/document-processing/export/)

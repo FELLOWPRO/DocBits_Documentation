@@ -1,12 +1,8 @@
-# Come creare una sotto-organizzazione
+# Come creare una Sotto-Organizzazione
 
 ## Creare una nuova sotto-organizzazione:
 
-<div data-full-width="false">
-
-<figure><img src="../../../../../.gitbook/assets/sub_organizations_list_overview_2.png" alt="Panoramica dell'elenco delle sotto-organizzazioni"><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../../../../.gitbook/assets/sub_organizations.png" alt="Panoramica dell&#x27;elenco delle sotto-organizzazioni"><figcaption></figcaption></figure></div>
 
 Fai clic sul pulsante `+ NUOVO`.
 

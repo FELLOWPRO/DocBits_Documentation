@@ -3,7 +3,6 @@
 Questa guida ti accompagna nel collegamento del **database in sola lettura di DocBits a Power BI Desktop** tramite il **driver ODBC di PostgreSQL**. Copre l'installazione del driver, la configurazione ODBC, l'integrazione con Power BI e l'aggiornamento pianificato.
 
 {% embed url="https://youtu.be/O1MtuXf_R_M" %}
-{% endembed %}
 
 #### 1. Installa il driver ODBC di PostgreSQL
 
@@ -16,7 +15,7 @@ Questa guida ti accompagna nel collegamento del **database in sola lettura di Do
 * Apri **ODBC Data Source Administrator (64-bit)** dal Pannello di controllo o dalla ricerca di Windows.
 * Vai alla scheda **System DSN** e fai clic su **Add**.
 * Seleziona dall'elenco il driver **PostgreSQL Unicode(x64)** e fai clic su **Finish**.
-* Compila i campi richiesti con le credenziali che trovi in:\n  **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
+* Compila i campi richiesti con le credenziali che trovi in:\n **DocBits → Settings → Document Processing → Module → AI Dashboard → Read-Only DB Access**
 
 <figure><img src="../../.gitbook/assets/connect_read_only_4.png" alt=""><figcaption></figcaption></figure>
 
@@ -49,7 +48,7 @@ Questa guida ti accompagna nel collegamento del **database in sola lettura di Do
 * Apri lo schema **`public`**.
 * Seleziona le tabelle che desideri importare.
 
-![](../../.gitbook/assets/connect_read_only_1.png)        ![](../../.gitbook/assets/connect_read_only_2.png)
+![](../../.gitbook/assets/connect_read_only_1.png)
 
 * Scegli:
   * **Load** → importa direttamente in Power BI
@@ -72,8 +71,8 @@ Questa guida ti accompagna nel collegamento del **database in sola lettura di Do
 * In Power BI Service:
   * Vai al tuo dataset → **Settings** → **Scheduled Refresh**
   * Associa il tuo DSN e fornisci le credenziali
-* Ulteriori informazioni [qui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).&#x20;
+* Ulteriori informazioni [qui](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-deployment-guidance).
 
-#### 7. Esempi di dashboard e viste dati&#x20;
+#### 7. Esempi di dashboard e viste dati
 
 <div><figure><img src="../../.gitbook/assets/powerbi_dashboard_example_1.png" alt="Esempio di dashboard Power BI 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_2.png" alt="Esempio di dashboard Power BI 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_3.png" alt="Esempio di dashboard Power BI 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/powerbi_dashboard_example_4.png" alt="Esempio di dashboard Power BI 4"><figcaption></figcaption></figure></div>

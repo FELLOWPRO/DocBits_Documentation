@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Quantity
 
-<figure><img src="../../../../.gitbook/assets/And1 (40).png" alt="DocBits Approvazione Fattura 4"><figcaption></figcaption></figure>
-
 Questo titolo indica che la regola riguarda specificamente la gestione delle fatture d'acquisto durante una fase di approvazione secondaria, con particolare attenzione alla verifica dell'accuratezza delle quantità elencate.
 
 #### Configurazione della Regola:

@@ -12,7 +12,7 @@ La finestra di tolleranza definisce un intervallo di date accettabili attorno al
 * Giorni di tolleranza: **3**
 * Finestra di tolleranza: **6 gennaio → 12 gennaio**
 
-> <mark style="color:red;">Solo gli</mark> <mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;">selezionati (giorni della settimana) vengono conteggiati nel calcolo di questa finestra.</mark>
+> <mark style="color:red;">Solo gli</mark> <mark style="color:red;"></mark><mark style="color:red;">**Allowed Tolerance Days**</mark> <mark style="color:red;"></mark><mark style="color:red;">selezionati (giorni della settimana) vengono conteggiati nel calcolo di questa finestra.</mark>
 
 ### Esempio di timeline visiva
 

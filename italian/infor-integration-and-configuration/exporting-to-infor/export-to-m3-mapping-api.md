@@ -1,4 +1,4 @@
-# Esportazione verso M3 Mapping (API)
+# Export to M3 Mapping (API)
 
 ### Sezioni
 
@@ -37,15 +37,15 @@ Rimuovere un campo:
 
 * I campi M3 disponibili si possono verificare aprendo la schermata appropriata in M3.
 
-<figure><img src="../../.gitbook/assets/aef99180-f060-497c-bd98-02d44fdd9274.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/266ad772-af8f-4aed-9cb7-c44aa8977cee.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
 
 * Allo stesso modo puoi ottenere i nomi dei campi per le righe
 
 ### Testata (Header):
 
-<figure><img src="../../.gitbook/assets/4599dd21-9d05-4a0c-8b41-1e343c063871.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/100%PO.png" alt=""><figcaption></figcaption></figure>
 
 Proprietà con l'elenco dei campi: StaticFields
 

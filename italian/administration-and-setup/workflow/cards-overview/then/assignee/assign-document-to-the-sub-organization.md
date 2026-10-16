@@ -1,6 +1,6 @@
 # Assign document to the sub organization
 
-<figure><img src="../../../../../.gitbook/assets/And1 (33).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## **Scopo:**
 

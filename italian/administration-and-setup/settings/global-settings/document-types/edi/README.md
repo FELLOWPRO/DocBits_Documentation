@@ -1,10 +1,8 @@
-# e-docs
+# Documenti Elettronici
 
 {% embed url="https://youtu.be/AxrHNEmmXtg" %}
 DocBits E-Invoice Tutorial: Process XRechnung / ZUGFeRD (Factur-X), Validate Data & Automate Workflows
 {% endembed %}
-
-<figure><img src="../../../../../.gitbook/assets/docbits_edi_overview.png" alt="Docbits Edi Overview"><figcaption></figcaption></figure>
 
 #### Overview
 

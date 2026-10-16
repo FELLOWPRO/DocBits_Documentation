@@ -284,13 +284,13 @@ Ogni pattern include queste sezioni standardizzate:
 * [Indice completo delle guide ai workflow](../../)
 * [Guide alle singole card](../then/action/)
 * [Riferimento alle card di condizione](../condition-cards-complete-guide.md)
-* [Mappa di collegamento dei workflow](https://github.com/Fellow-Consulting-AG/docbits/tree/it/WORKFLOW_LINKING_MAP.md)
+* [Mappa di collegamento dei workflow](../../../../../WORKFLOW_LINKING_MAP.md)
 
 **Risorse aggiuntive:**
 
-* [Guida di riferimento rapido](https://github.com/Fellow-Consulting-AG/docbits/tree/it/WORKFLOW_LINKING_QUICK_REFERENCE.md)
-* [Note di rilascio ottobre 2025](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/administration-and-setup/workflow/changelog/2025-10-october.md)
-* [Riferimento al versionamento delle card](https://github.com/Fellow-Consulting-AG/docbits/tree/it/readme/docs/card_version.md)
+* [Guida di riferimento rapido](../../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* [Note di rilascio ottobre 2025](../../changelog/2025-10-october.md)
+* [Riferimento al versionamento delle card](../../../../docs/card_version.md)
 
 **Contatti:**
 
@@ -380,7 +380,7 @@ Hai un pattern di workflow che potrebbe essere utile ad altri?
 **Hai bisogno di altro aiuto?**
 
 * Esamina la [Panoramica della documentazione dei workflow](../../)
-* Consulta la [Guida di riferimento rapido](https://github.com/Fellow-Consulting-AG/docbits/tree/it/WORKFLOW_LINKING_QUICK_REFERENCE.md)
+* Consulta la [Guida di riferimento rapido](../../../../../WORKFLOW_LINKING_QUICK_REFERENCE.md)
 * Contatta il team di supporto
 
 ***

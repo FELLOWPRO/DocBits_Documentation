@@ -1,7 +1,5 @@
 # Workflow Example: Conditional Export Trigger
 
-<figure><img src="../../../.gitbook/assets/docbits_settings_workflow (23).png" alt="DocBits Impostazioni Flusso di lavoro"><figcaption></figcaption></figure>
-
 Questo workflow descrive le condizioni in cui deve essere avviato un processo di esportazione. Garantisce che solo i documenti che soddisfano tutti i criteri specificati vengano elaborati per l'esportazione, migliorando l'integrità dei dati e l'allineamento con le regole aziendali.
 
 ### When:

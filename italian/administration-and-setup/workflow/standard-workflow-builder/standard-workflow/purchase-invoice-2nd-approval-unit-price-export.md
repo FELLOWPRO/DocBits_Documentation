@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Unit Price Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (36).png" alt="DocBits Acquisto Ordine Esporta 5"><figcaption></figcaption></figure>
-
 Questo titolo indica che la regola è configurata per gestire la seconda fase di approvazione delle fatture d'acquisto con particolare attenzione al prezzo unitario, garantendo che corrisponda ai termini concordati.
 
 #### Configurazione della Regola:

@@ -1,6 +1,6 @@
-# Fields
+# Campi
 
-<figure><img src="../../../../../.gitbook/assets/docbits_fields_overview.png" alt="Docbits Fields Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (114).png" alt="Docbits Fields Overview"><figcaption></figcaption></figure>
 
 ## Overview
 

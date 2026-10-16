@@ -1,7 +1,5 @@
 # Cost Invoice - Export
 
-<figure><img src="../../../../.gitbook/assets/And1 (38).png" alt="DocBits Acquisto Ordine Esporta 4"><figcaption></figcaption></figure>
-
 Questo titolo indica che la regola è configurata specificamente per la gestione delle fatture di costo e prevede un'azione di esportazione, eventualmente per la reportistica, l'ulteriore elaborazione o l'integrazione con altri sistemi.
 
 #### Configurazione della Regola:

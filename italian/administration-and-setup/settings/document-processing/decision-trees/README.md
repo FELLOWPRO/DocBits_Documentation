@@ -57,11 +57,11 @@ Il Designer dell'albero decisionale consente di configurare le regole che govern
 
 Questo albero decisionale valuta il campo **Total Amount** e lo assegna a gruppi diversi in base a condizioni predefinite. Ogni regola confronta l'importo totale con un valore specifico e, in base a quale condizione è vera, viene restituito il corrispondente **Group**.
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt="Esempio di albero decisionale Total Amount"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Esempio di albero decisionale Total Amount"><figcaption></figcaption></figure>
 
 Questo albero decisionale valuta due condizioni chiave per determinare quale gruppo deve essere assegnato: **Total Amount** e **Warehouse Status**. L'albero utilizza soglie basate sull'importo totale per definire quale gruppo viene restituito, con l'ulteriore distinzione del fatto che il magazzino sia designato come "Warehouse Main", "Warehouse Sub" o "Not Warehouse Main".
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt="Esempio di albero decisionale Warehouse Status"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/And1.png" alt="Esempio di albero decisionale Warehouse Status"><figcaption></figcaption></figure>
 
 Ogni regola viene valutata in sequenza.
 
@@ -88,23 +88,23 @@ Il criterio dell'albero decisionale definisce come vengono elaborate più regole
 
     * Nel designer dell'albero decisionale, trova il pulsante **Test**.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (33).png" alt="Pulsante Test dell&#x27;albero decisionale" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Pulsante Test dell&#x27;albero decisionale" width="563"><figcaption></figcaption></figure>
 2.  **Aprire la finestra popup di test:**
 
     * Fai clic sul pulsante **Test**.
     * Apparirà una finestra popup che fornisce campi di input corrispondenti ai criteri utilizzati nell'albero decisionale.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (33).png" alt="Popup di test dell&#x27;albero decisionale" width="421"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Popup di test dell&#x27;albero decisionale" width="421"><figcaption></figcaption></figure>
 3. **Fornire i valori di input:**
    *   Inserisci i valori nei campi di input per simulare uno scenario reale.
 
-       <figure><img src="../../../../.gitbook/assets/And1 (33).png" alt="Input di test dell&#x27;albero decisionale" width="428"><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/And1.png" alt="Input di test dell&#x27;albero decisionale" width="428"><figcaption></figcaption></figure>
 4.  **Valutare i risultati:**
 
     * Dopo aver inserito gli input, l'albero li elabora in base al criterio scelto.
     * Il sistema evidenzia la regola o le regole che corrispondono agli input forniti.
 
-    <figure><img src="../../../../.gitbook/assets/And1 (33).png" alt="Risultato di test dell&#x27;albero decisionale" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/And1.png" alt="Risultato di test dell&#x27;albero decisionale" width="563"><figcaption></figcaption></figure>
 5. **Esaminare il feedback in caso di nessuna corrispondenza:**
    * Se nessuna regola viene evidenziata, il sistema mostrerà un feedback che spiega perché nessuna regola ha corrisposto.
    * Usa questo feedback per modificare gli input o rivedere la configurazione dell'albero per individuare potenziali problemi.

@@ -1,64 +1,59 @@
 # And
 
-## Comprendere le schede "And"
+Usa una scheda **And** per decidere se un workflow deve proseguire dopo il suo trigger **When**. Aggiungi i controlli necessari prima dell'azione **Then**. Ogni scheda mostra dei campi da compilare, come **Operator**, **Field Name** o **Value**; gli screenshot mostrano i template di scheda disponibili, non regole già compilate.
 
-### **Scopo delle schede 'And':**
+Nel **Workflow Builder**, seleziona **Add Card** sotto **And...**. Scegli una categoria a sinistra oppure digita il nome di una scheda in **Search Card**. Seleziona l'anteprima di una scheda per aggiungerla al workflow. Puoi scorrere l'elenco delle anteprime per vedere altre schede. Usa **×** per chiudere il selettore senza scegliere un'altra scheda. Dopo aver configurato le schede, salva il workflow. Consulta [Workflow](../../) per i passaggi **When**, **And** e **Then** che lo circondano.
 
-* Le schede **And** fungono da schede di condizione che specificano i criteri che devono essere soddisfatti affinché il workflow prosegua. Agiscono di fatto come operatori logici "AND", il che significa che tutte le condizioni specificate in queste schede devono essere soddisfatte affinché l'azione successiva venga attivata.
+## Compare with Purchase Order
 
-#### Categorie di schede 'And'
+Usa queste schede per confrontare i dati di un ordine o di una fattura con un ordine d'acquisto, ad esempio prezzo unitario, data di consegna promessa, costi aggiuntivi o quantità. Scegli i campi, l'operatore ed eventuali tolleranze richiesti dalla scheda selezionata. Consulta [Compare with Purchase Order](compare-with-purchase-order/) per le singole schede.
 
-Dagli screenshot risulta chiaro che queste schede coprono un'ampia gamma di condizioni, tra cui:
+<figure><img src="../../../../.gitbook/assets/and-category-po-comparison-en.png" alt="Selettore delle schede And in inglese con Compare with Purchase Order selezionato; le anteprime visibili riguardano il confronto di prezzo unitario, data di consegna, costi aggiuntivi e quantità."><figcaption><p>Categoria Compare with Purchase Order nella Sandbox in inglese.</p></figcaption></figure>
 
-* **Compare with Purchase Order**:
-  * Condizioni relative alla validazione e al confronto con gli ordini d'acquisto, come il confronto delle date di consegna, dei prezzi unitari o delle differenze di quantità. Sono fondamentali per garantire che le transazioni siano conformi ai termini concordati.
+## Document Field
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+Scegli questa categoria per controllare una casella di controllo o lo stato di un campo, confrontare un campo con un valore o confrontare due campi. Compila i segnaposto **Field Name** e **Operator** sulla scheda scelta. Alcuni confronti richiedono anche una tolleranza. Consulta [Document Field](document-field/).
 
-* **Document Field**:
-  * Riguardano condizioni basate su campi specifici all'interno dei documenti, come caselle di controllo selezionate, confronto dei valori dei campi o la verifica che un campo del documento rientri in una determinata tolleranza. Questo è particolarmente importante per l'integrità dei dati e i controlli automatizzati all'interno di moduli o sistemi di gestione documentale.
+<figure><img src="../../../../.gitbook/assets/and-category-document-field-en.png" alt="Selettore delle schede And in inglese con Document Field selezionato; le anteprime visibili controllano una casella di controllo, lo stato di un campo, i valori dei campi e confronti tra due campi."><figcaption><p>I controlli Document Field usano i valori del documento corrente.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+## Date & Time
 
-* **Date & Time:**
-  * Condizioni basate su date e orari
+Usa **Date & Time** per confrontare una data o un'ora con un intervallo, oppure per confrontare **Today** con una data scelta. Seleziona l'**Operator** e i valori di data nella scheda. Consulta [Date & Time](date-and-time/).
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-date-time-en.png" alt="Selettore delle schede And in inglese con Date &#x26; Time selezionato; due anteprime confrontano una data o un&#x27;ora con un intervallo e confrontano Today con una Date."><figcaption><p>Date &#x26; Time offre un controllo su un intervallo e un controllo rispetto a oggi.</p></figcaption></figure>
 
-* **Document**:
-  * Condizioni basate sulle caratteristiche del documento, come il tipo o l'associazione a una particolare sotto-organizzazione. Queste condizioni possono indirizzare i workflow in base alla categorizzazione del documento o al coinvolgimento di un reparto.
+## Document
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+Usa queste schede quando un workflow deve dipendere dal **tipo di documento** o dalla **sotto-organizzazione**. Scegli il tipo o l'organizzazione indicati nella scheda. Consulta [Document](document/).
 
-* **Logic**:
-  * Condizioni logiche che possono comportare valutazioni come "Continua con una probabilità di X%" o l'esecuzione di richieste HTTPS, fondamentali per le integrazioni e per il processo decisionale probabilistico all'interno dei workflow.
+<figure><img src="../../../../.gitbook/assets/and-category-document-en.png" alt="Selettore delle schede And in inglese con Document selezionato; le anteprime controllano il tipo di documento e l&#x27;appartenenza a una sotto-organizzazione."><figcaption><p>Le condizioni Document controllano il tipo o la sotto-organizzazione.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+## Logic
 
-* **Status**:
-  * Concentrandosi sullo stato di documenti o attività, queste condizioni garantiscono che solo gli elementi in determinati stati attivino workflow specifici, aspetto cruciale per la gestione dei processi basata sullo stato.
+Questa categoria comprende controlli che usano una tabella decisionale, una risposta HTTPS, la disponibilità di un modulo, un prezzo di offerta di un articolo, un valore di probabilità o due valori. Apri la scheda specifica e compila i segnaposto indicati; ad esempio, la scheda HTTPS richiede un URL, un metodo e un codice di stato accettato. Consulta [Logic](logic/).
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/and-category-logic-en.png" alt="Selettore delle schede And in inglese con Logic selezionato; le anteprime comprendono tabella decisionale, richiesta HTTPS, modulo attivo, prezzo di offerta, probabilità e confronto tra valori."><figcaption><p>Logic offre diversi tipi di condizione; scegli quello che corrisponde alla tua regola.</p></figcaption></figure>
 
-* **Table**:
-  * Riguardano condizioni basate sui dati di tabella, come la corrispondenza con pattern regex o il confronto di valori all'interno di una tabella. Tali condizioni sono essenziali per validare e manipolare grandi insiemi di dati.
+## Status
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+Usa **Status** per controllare se un documento ha uno stato scelto o se il suo stato rientra in un insieme selezionato. Scegli l'**Operator** e lo **Status** nella scheda. Consulta [Status](status/).
 
-* **Assignee**:
-  * Condizioni basate sugli assegnatari di attività o documenti. Questo garantisce che le azioni vengano intraprese solo quando sono coinvolti determinati utenti, migliorando la responsabilità e la specificità delle attività.
+<figure><img src="../../../../.gitbook/assets/and-category-status-en.png" alt="Selettore delle schede And in inglese con Status selezionato; due anteprime confrontano lo stato del documento con uno Status o con un insieme di stati."><figcaption><p>Le condizioni Status controllano lo stato attuale del documento.</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/And1 (33).png" alt=""><figcaption></figcaption></figure>
+## Table
 
-### Applicazione pratica
+Queste schede esaminano le righe delle tabelle del documento. Le opzioni visibili comprendono controlli sulle date, pattern di testo, durata di conservazione e confronti tra colonne. Seleziona il **Table name** e il **Column Name** prima di scegliere un operatore o un pattern. Consulta [Table](table/).
 
-Queste schede "And" vengono configurate all'interno del workflow per eseguire controlli e validazioni che garantiscono che il processo rispetti rigorosamente le regole aziendali e gli standard di integrità dei dati. Ad esempio:
+<figure><img src="../../../../.gitbook/assets/and-category-table-en.png" alt="Selettore delle schede And in inglese con Table selezionato; le anteprime visibili comprendono data, pattern regex, durata di conservazione e confronti tra colonne della tabella."><figcaption><p>Le condizioni Table usano righe e colonne di una tabella del documento.</p></figcaption></figure>
 
-* **Un workflow potrebbe usare una scheda 'And' per verificare che l'importo totale di una fattura corrisponda all'ordine d'acquisto prima di attivare il pagamento.**
-* **Un altro workflow potrebbe usare una scheda 'And' per garantire che un documento venga revisionato da specifici membri del team prima di passare alla fase successiva.**
+## Compare with Quote Price
 
-### Conclusione
+Usa queste schede per confrontare un articolo con i dati del prezzo di offerta. Le scelte visibili riguardano ID articolo, tipo di fornitore, ID articolo del fornitore, prezzo unitario e unità di misura. L'**Operator** e i segnaposto dei dati dipendono dalla scheda selezionata.
 
-Le schede "And" sono un componente fondamentale dei sistemi di workflow che richiedono un controllo preciso sull'esecuzione del processo in base a più condizioni. Garantiscono che ogni passaggio di un workflow proceda solo quando tutti i criteri necessari sono pienamente soddisfatti, automatizzando così alberi decisionali complessi all'interno dei processi aziendali.
+<figure><img src="../../../../.gitbook/assets/and-category-quote-price-en.png" alt="Selettore delle schede And in inglese con Compare with Quote Price selezionato; cinque anteprime riguardano ID articolo, tipo di fornitore, ID articolo del fornitore, prezzo unitario e unità di misura."><figcaption><p>Compare with Quote Price è una categoria separata nell'attuale selettore delle schede.</p></figcaption></figure>
 
-Comprendere e configurare correttamente queste schede è cruciale per sfruttare appieno le capacità del tuo sistema di gestione dei workflow, al fine di migliorare efficienza, accuratezza e conformità nei processi organizzativi.
+## Assignee
+
+Usa **Assignee** quando la condizione dipende dall'utente o dal gruppo assegnato. Scegli se confrontare con un singolo utente o gruppo oppure con un insieme selezionato. Consulta [Assignee](assignee/).
+
+<figure><img src="../../../../.gitbook/assets/and-category-assignee-en.png" alt="Selettore delle schede And in inglese con Assignee selezionato; le anteprime confrontano l&#x27;utente o il gruppo assegnato con una o più scelte."><figcaption><p>Le condizioni Assignee controllano l'utente o il gruppo assegnato al documento.</p></figcaption></figure>

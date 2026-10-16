@@ -1,7 +1,5 @@
 # Purchase Invoice - 2nd Approval Unit Price
 
-<figure><img src="../../../../.gitbook/assets/And1 (39).png" alt="DocBits Approvazione Fattura 3"><figcaption></figcaption></figure>
-
 Questo titolo indica che la regola è configurata per gestire la seconda fase di approvazione di una fattura d'acquisto, con particolare attenzione alla convalida del prezzo unitario.
 
 #### Configurazione della Regola:

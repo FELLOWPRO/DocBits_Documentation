@@ -2,57 +2,45 @@
 
 ## Panoramica
 
-ZUGFeRD 2.2 è stata la versione iniziale dello standard. Sebbene sia datata, molti documenti utilizzano ancora questo formato. DocBits offre il supporto completo per l'estrazione dei dati dai file XML ZUGFeRD 2.2.
+ZUGFeRD 2.2 prosegue l'allineamento con EN 16931 e recepisce ulteriori aggiornamenti dello standard CII.
 
 ## Mappatura dei campi di intestazione
 
 ### Identificazione della fattura
 
-| Percorso ZUGFeRD CII              | Campo DocBits       | Campo Infor BOD    | Tipo   | Descrizione                     |
-| --------------------------------- | ------------------- | ------------------ | ------ | ------------------------------- |
-| `ExchangedDocument/ID`            | `INVOICE_NUMBER`    | `DocumentID`       | STRING | Numero fattura                  |
-| `ExchangedDocument/TypeCode`      | `INVOICE_TYPE_CODE` | `DocumentType`     | STRING | Codice tipo fattura             |
-| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE`      | `DocumentDateTime` | DATE   | Data di emissione della fattura |
+| Percorso CII di ZUGFeRD           | Campo DocBits    | Campo Infor BOD    | Tipo   | Descrizione                     |
+| --------------------------------- | ---------------- | ------------------ | ------ | ------------------------------- |
+| `ExchangedDocument/ID`            | `INVOICE_NUMBER` | `DocumentID`       | STRING | Numero di fattura               |
+| `ExchangedDocument/IssueDateTime` | `INVOICE_DATE`   | `DocumentDateTime` | DATE   | Data di emissione della fattura |
 
-### Tipo e sottotipo del documento (gestito da TRA)
+### Tipo e sottotipo di documento (gestiti da TRA)
 
-L'XSLT di TRANSFORMATION predefinito emette due campi derivati:
+L'XSLT di TRANSFORMATION predefinito genera due campi derivati:
 
-| Campo DocBits      | Sorgente                                                                                                   | Logica                                                                          |
+| Campo DocBits      | Origine                                                                                                    | Logica                                                                          |
 | ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | `INVOICE_TYPE`     | `CrossIndustryInvoice/ExchangedDocument/TypeCode`                                                          | UNCL 1001 `381` o `261` → **Credit Note**; qualsiasi altro codice → **Invoice** |
-| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Non vuoto → **Purchase Invoice**; vuoto/assente → **Cost Invoice**              |
+| `INVOICE_SUB_TYPE` | `SupplyChainTradeTransaction/ApplicableHeaderTradeAgreement/BuyerOrderReferencedDocument/IssuerAssignedID` | Valorizzato → **Purchase Invoice**; vuoto o assente → **Cost Invoice**          |
 
 ### Ripartizione fiscale (classificata per fascia)
 
-I blocchi `ApplicableTradeTax` vengono distribuiti su tre fasce basate sull'aliquota (non su indici posizionali): i campi ad aliquota standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) catturano aliquote ≥ 19; i campi ad aliquota ridotta (`*_2`) catturano 0 < aliquota < 19; i campi ad aliquota zero (`*_3`) catturano aliquota = 0. Vedi [Ripartizione fiscale ZUGFeRD](./#tax-breakdown-tier-classified) per l'elenco completo dei campi.
+I blocchi `ApplicableTradeTax` vengono distribuiti su tre fasce basate sull'aliquota (non su indici posizionali): i campi per l'aliquota standard (`TAX_RATE` / `NET_AMOUNT` / `TAX_AMOUNT`) raccolgono le aliquote ≥ 19; i campi per l'aliquota ridotta (`*_2`) raccolgono 0 < aliquota < 19; i campi per l'aliquota zero (`*_3`) raccolgono aliquota = 0. Per l'elenco completo dei campi consulta [Ripartizione fiscale di ZUGFeRD](./#ripartizione-fiscale-classificata-per-fascia).
 
-### Riferimenti ai documenti
+### Valuta e importi
 
-| Percorso ZUGFeRD CII                  | Campo DocBits     | Campo Infor BOD   | Tipo   | Descrizione                   |
-| ------------------------------------- | ----------------- | ----------------- | ------ | ----------------------------- |
-| `BuyerOrderReferencedDocument/ID`     | `PURCHASE_ORDER`  | `CustomerOrderID` | STRING | Numero ordine di acquisto     |
-| `ContractReferencedDocument/ID`       | `CONTRACT_NUMBER` | `ContractID`      | STRING | Riferimento contratto         |
-| `DespatchAdviceReferencedDocument/ID` | `DELIVERY_NOTE`   | `ShipmentID`      | STRING | Riferimento bolla di consegna |
+| Percorso CII di ZUGFeRD | Campo DocBits      | Campo Infor BOD       | Tipo   | Descrizione          |
+| ----------------------- | ------------------ | --------------------- | ------ | -------------------- |
+| `InvoiceCurrencyCode`   | `CURRENCY`         | `CurrencyCode`        | STRING | Valuta della fattura |
+| `TaxBasisTotalAmount`   | `TOTAL_NET_AMOUNT` | `TaxBasisTotalAmount` | AMOUNT | Totale netto         |
+| `TaxTotalAmount`        | `TOTAL_TAX_AMOUNT` | `TaxTotalAmount`      | AMOUNT | Totale imposte       |
+| `GrandTotalAmount`      | `TOTAL_AMOUNT`     | `GrandTotalAmount`    | AMOUNT | Totale complessivo   |
 
-### Informazioni sul fornitore (venditore)
+## Mappatura delle righe
 
-| Percorso ZUGFeRD CII                               | Campo DocBits        | Campo Infor BOD       | Tipo   | Descrizione      |
-| -------------------------------------------------- | -------------------- | --------------------- | ------ | ---------------- |
-| `SellerTradeParty/ID`                              | `VENDOR_ID`          | `SupplierPartyID`     | STRING | ID fornitore     |
-| `SellerTradeParty/Name`                            | `VENDOR_NAME`        | `SupplierPartyName`   | STRING | Nome fornitore   |
-| `SellerTradeParty/PostalTradeAddress/Line1`        | `VENDOR_ADDRESS`     | `SupplierAddress1`    | STRING | Indirizzo riga 1 |
-| `SellerTradeParty/PostalTradeAddress/PostcodeCode` | `VENDOR_POSTAL_CODE` | `SupplierPostalCode`  | STRING | Codice postale   |
-| `SellerTradeParty/PostalTradeAddress/CityName`     | `VENDOR_CITY`        | `SupplierCity`        | STRING | Città            |
-| `SellerTradeParty/PostalTradeAddress/CountryID`    | `VENDOR_COUNTRY`     | `SupplierCountryCode` | STRING | Codice paese     |
-
-## Mappatura delle voci di riga
-
-| Percorso ZUGFeRD CII                     | Campo DocBits  | Campo Infor BOD    | Tipo   | Descrizione                     |
-| ---------------------------------------- | -------------- | ------------------ | ------ | ------------------------------- |
-| `AssociatedDocumentLineDocument/LineID`  | `POSITION`     | `LineNumber`       | STRING | Numero di riga                  |
-| `SpecifiedTradeProduct/BuyerAssignedID`  | `ITEM_NUMBER`  | `BuyerItemID`      | STRING | Numero articolo dell'acquirente |
-| `SpecifiedTradeProduct/Name`             | `DESCRIPTION`  | `ItemDescription`  | STRING | Descrizione dell'articolo       |
-| `BilledQuantity`                         | `QUANTITY`     | `InvoicedQuantity` | NUMBER | Quantità fatturata              |
-| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE`   | `UnitPrice`        | AMOUNT | Prezzo unitario netto           |
-| `LineTotalAmount`                        | `TOTAL_AMOUNT` | `ExtendedAmount`   | AMOUNT | Totale riga                     |
+| Percorso CII di ZUGFeRD                  | Campo DocBits  | Campo Infor BOD    | Tipo   | Descrizione               |
+| ---------------------------------------- | -------------- | ------------------ | ------ | ------------------------- |
+| `AssociatedDocumentLineDocument/LineID`  | `POSITION`     | `LineNumber`       | STRING | Numero di riga            |
+| `SpecifiedTradeProduct/Name`             | `DESCRIPTION`  | `ItemDescription`  | STRING | Descrizione dell'articolo |
+| `BilledQuantity`                         | `QUANTITY`     | `InvoicedQuantity` | NUMBER | Quantità fatturata        |
+| `NetPriceProductTradePrice/ChargeAmount` | `UNIT_PRICE`   | `UnitPrice`        | AMOUNT | Prezzo unitario netto     |
+| `LineTotalAmount`                        | `TOTAL_AMOUNT` | `ExtendedAmount`   | AMOUNT | Totale della riga         |

@@ -1,6 +1,6 @@
 # Single Assigned User Condition
 
-<figure><img src="../../../../../.gitbook/assets/And1 (33).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/And1.png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Scopo:**\
 Questa scheda di workflow esegue operazioni in base al fatto che un'attività o un documento sia assegnato a un determinato gruppo. Utilizza una condizione semplice per attivare o impedire azioni in base all'assegnazione del gruppo.

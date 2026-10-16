@@ -46,4 +46,4 @@ Questo documento illustra il workflow per l'ordinazione dei materiali dai fornit
 * Assicurati che tutti i documenti siano verificati e archiviati per la conservazione dei registri.
 * Le discrepanze nei dettagli dell'ordine o della fattura devono essere risolte tempestivamente per evitare ritardi.
 
-<figure><img src="../../../.gitbook/assets/embed (2).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/embed (3).svg" alt=""><figcaption></figcaption></figure>

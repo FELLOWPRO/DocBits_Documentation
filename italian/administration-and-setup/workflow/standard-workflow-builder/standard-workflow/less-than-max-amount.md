@@ -1,7 +1,5 @@
 # Less than Max Amount
 
-<figure><img src="../../../../.gitbook/assets/And1 (35).png" alt="DocBits Fattura"><figcaption></figcaption></figure>
-
 Questo titolo suggerisce che la regola o condizione in fase di configurazione è progettata per gestire le fatture in cui l'importo totale è minore o uguale a un importo massimo specificato.
 
 #### Configurazione della Regola:

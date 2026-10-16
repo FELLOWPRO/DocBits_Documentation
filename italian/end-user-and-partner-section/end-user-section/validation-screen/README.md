@@ -44,7 +44,7 @@ Vedi qui aggiungi [Script in DocBits](../../../administration-and-setup/settings
 
 ### **Campi obbligatori:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_required_fields.png" alt="Campi obbligatori"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/validation_screen6.png" alt="Campi obbligatori"><figcaption></figcaption></figure>
 
 I campi da controllare mostrano un bordo colorato o un'icona informativa. Nell'esempio seguente, il campo **Numero di fattura** ha un bordo rosso e un'icona di avviso. Il valore è visibile sulla fattura a destra, ma DocBits non lo ha estratto dal documento. Seleziona il numero sul documento o correggi il campo, quindi salva il documento.
 
@@ -62,11 +62,11 @@ Sotto i campi di intestazione DocBits mostra la tabella delle voci di riga del d
 
 Sopra la griglia c'è una scheda per ogni percorso di estrazione che l'organizzazione ha attivato:
 
-| Scheda | Significato |
-|---|---|
-| **Tabella estratta** | Estrazione basata su regole (impostazione *Estrazione delle tabelle*). Per un fornitore con una tabella addestrata, queste righe provengono dalle regole salvate e vengono estratte allo stesso modo su ogni documento di quel fornitore; per un fornitore non addestrato la scheda può essere vuota. |
-| **Tabella estratta dall'AI** | L'estrazione AI della tabella (impostazione *Estrazione AI delle tabelle*). Viene compilata quando il fornitore non ha regole salvate, e per le colonne contrassegnate *Usa AI* anche quando le regole esistono. Un tooltip *AI table not found* sulla scheda significa che l'AI non ha restituito nulla per questo documento. |
-| **Tabelle PO** | Solo nel costruttore di layout: le righe dell'ordine di acquisto usate per l'abbinamento. |
+| Scheda                       | Significato                                                                                                                                                                                                                                                                                                                    |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Tabella estratta**         | Estrazione basata su regole (impostazione _Estrazione delle tabelle_). Per un fornitore con una tabella addestrata, queste righe provengono dalle regole salvate e vengono estratte allo stesso modo su ogni documento di quel fornitore; per un fornitore non addestrato la scheda può essere vuota.                          |
+| **Tabella estratta dall'AI** | L'estrazione AI della tabella (impostazione _Estrazione AI delle tabelle_). Viene compilata quando il fornitore non ha regole salvate, e per le colonne contrassegnate _Usa AI_ anche quando le regole esistono. Un tooltip _AI table not found_ sulla scheda significa che l'AI non ha restituito nulla per questo documento. |
+| **Tabelle PO**               | Solo nel costruttore di layout: le righe dell'ordine di acquisto usate per l'abbinamento.                                                                                                                                                                                                                                      |
 
 Se non compare nessuna delle due schede, entrambe le impostazioni delle tabelle sono disattivate per l'organizzazione (Impostazioni → Elaborazione del documento → Classificazione ed estrazione). Il livello AI che legge la tabella è impostato per organizzazione e può essere sovrascritto per fornitore, vedi [Modello di IA specifico per fornitore](supplier-specific-ai-model-for-field-and-table-extraction.md).
 
@@ -79,33 +79,33 @@ Se non compare nessuna delle due schede, entrambe le impostazioni delle tabelle 
 * **Ripristina colonna della tabella**: riporta una colonna che avevi rimosso dalla vista per questo documento.
 * **Elimina tabella**: cancella tutte le righe di questa tabella su questo documento. La configurazione non viene toccata.
 * **Aggiungi nuova colonna della tabella** (amministratori): la stessa finestra di dialogo delle impostazioni delle colonne della tabella, senza uscire dal documento.
-* **Tag** (solo tabella AI): brevi suggerimenti testuali per l'AI, ad esempio *"l'ultima colonna è l'importo netto"*. Vedi [Tag della tabella AI](../ai-table/ai-table-tags.md).
-* **Applica** / **Salva** / **Elimina** accanto ai tag: *Applica* esegue di nuovo la tabella AI per questo documento con i tag e le modifiche alle colonne che hai fatto, senza memorizzare nulla (se il documento ha righe abbinate a un PO, DocBits avvisa che gli abbinamenti vengono rimossi); *Salva regole* memorizza la mappatura delle colonne e i tag attuali per questo fornitore; *Elimina regole* li rimuove ed esegue di nuovo l'estrazione AI per questo documento.
+* **Tag** (solo tabella AI): brevi suggerimenti testuali per l'AI, ad esempio _"l'ultima colonna è l'importo netto"_. Vedi [Tag della tabella AI](../ai-table/ai-table-tags.md).
+* **Applica** / **Salva** / **Elimina** accanto ai tag: _Applica_ esegue di nuovo la tabella AI per questo documento con i tag e le modifiche alle colonne che hai fatto, senza memorizzare nulla (se il documento ha righe abbinate a un PO, DocBits avvisa che gli abbinamenti vengono rimossi); _Salva regole_ memorizza la mappatura delle colonne e i tag attuali per questo fornitore; _Elimina regole_ li rimuove ed esegue di nuovo l'estrazione AI per questo documento.
 * **Esporta**: scarica la tabella come file CSV.
-* **Vai alla vista di estrazione delle tabelle**: apre l'addestramento della tabella per questo documento. Usalo quando lo stesso fornitore continua a dare risultati sbagliati: disegna la tabella una volta, mappa le colonne e fai clic su *Salva regole*; da quel momento le righe compaiono nella scheda *Tabella estratta*. Vedi [Campi di addestramento Linee/Tabella di addestramento](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/README.md).
+* **Vai alla vista di estrazione delle tabelle**: apre l'addestramento della tabella per questo documento. Usalo quando lo stesso fornitore continua a dare risultati sbagliati: disegna la tabella una volta, mappa le colonne e fai clic su _Salva regole_; da quel momento le righe compaiono nella scheda _Tabella estratta_. Vedi [Campi di addestramento Linee/Tabella di addestramento](../../../administration-and-setup/setup/document-training/training-line-fields-table-training/).
 
 {% hint style="info" %}
-Se la tabella è stata estratta dall'AI e apri l'addestramento della tabella, DocBits chiede *Table is already extracted by AI. Do you want to train manually?* Dopo aver salvato le regole, la tabella AI non viene più usata per questo fornitore.
+Se la tabella è stata estratta dall'AI e apri l'addestramento della tabella, DocBits chiede _Table is already extracted by AI. Do you want to train manually?_ Dopo aver salvato le regole, la tabella AI non viene più usata per questo fornitore.
 {% endhint %}
 
 ### Estrarre di nuovo la tabella
 
-* **Stesso documento, tabella AI:** aggiungi o modifica i tag e fai clic su **Applica**; la tabella AI viene ricostruita solo per questo documento. Per eliminare anche i tag e la formattazione salvati per il fornitore, fai clic su **Elimina** (*Elimina regole*): DocBits conferma *Rules has been deleted successfully* ed esegue di nuovo l'estrazione AI.
-* **Stesso documento, regole addestrate:** apri *Vai alla vista di estrazione delle tabelle*, correggi la tabella e fai clic su *Salva e ri-estrai*.
-* **Intero documento di nuovo (intestazione e tabella):** Dashboard → menu del documento → *Riavvia*. Necessario dopo che un amministratore ha modificato le colonne della tabella o le impostazioni di estrazione.
+* **Stesso documento, tabella AI:** aggiungi o modifica i tag e fai clic su **Applica**; la tabella AI viene ricostruita solo per questo documento. Per eliminare anche i tag e la formattazione salvati per il fornitore, fai clic su **Elimina** (_Elimina regole_): DocBits conferma _Rules has been deleted successfully_ ed esegue di nuovo l'estrazione AI.
+* **Stesso documento, regole addestrate:** apri _Vai alla vista di estrazione delle tabelle_, correggi la tabella e fai clic su _Salva e ri-estrai_.
+* **Intero documento di nuovo (intestazione e tabella):** Dashboard → menu del documento → _Riavvia_. Necessario dopo che un amministratore ha modificato le colonne della tabella o le impostazioni di estrazione.
 
 ### Cosa blocca l'approvazione
 
 La tabella viene controllata quando salvi o approvi. Una cella rossa o un messaggio sotto la tabella indica uno di questi casi:
 
-| Messaggio | Causa | Cosa fare |
-|---|---|---|
-| Colonna obbligatoria vuota | Una colonna contrassegnata *Obbligatoria* non ha valore in questa riga. | Compila la cella, oppure chiedi a un amministratore se la colonna debba davvero essere obbligatoria. |
-| *Line total does not match quantity x unit price (expected …, got …)* | `quantità × prezzo unitario + oneri − sconto` differisce dal totale della riga di più di 0,02. Spesso uno dei quattro valori è stato letto nella colonna sbagliata. | Correggi il valore che non corrisponde al documento; se una colonna come *Oneri* viene compilata sistematicamente con il valore sbagliato, avvisa il tuo amministratore (vedi [Risoluzione dei problemi](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
-| *Line items add up to … but the net total is …* | La somma dei totali di riga differisce dall'importo netto nell'intestazione. | Verifica se manca una riga, se una riga è duplicata o se un importo dell'intestazione è stato letto male. |
-| *Line Item Table is missing Mandatory column for PO* | Il PO matching richiede numero articolo, prezzo unitario, quantità e importo totale; una di queste colonne è nascosta. | Amministratore: rendi di nuovo visibile la colonna in Colonne della Tabella. |
+| Messaggio                                                             | Causa                                                                                                                                                               | Cosa fare                                                                                                                                                                                                                                                                                                                |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Colonna obbligatoria vuota                                            | Una colonna contrassegnata _Obbligatoria_ non ha valore in questa riga.                                                                                             | Compila la cella, oppure chiedi a un amministratore se la colonna debba davvero essere obbligatoria.                                                                                                                                                                                                                     |
+| _Line total does not match quantity x unit price (expected …, got …)_ | `quantità × prezzo unitario + oneri − sconto` differisce dal totale della riga di più di 0,02. Spesso uno dei quattro valori è stato letto nella colonna sbagliata. | Correggi il valore che non corrisponde al documento; se una colonna come _Oneri_ viene compilata sistematicamente con il valore sbagliato, avvisa il tuo amministratore (vedi [Risoluzione dei problemi](../../../administration-and-setup/settings/global-settings/document-types/table-columns/troubleshooting-1.md)). |
+| _Line items add up to … but the net total is …_                       | La somma dei totali di riga differisce dall'importo netto nell'intestazione.                                                                                        | Verifica se manca una riga, se una riga è duplicata o se un importo dell'intestazione è stato letto male.                                                                                                                                                                                                                |
+| _Line Item Table is missing Mandatory column for PO_                  | Il PO matching richiede numero articolo, prezzo unitario, quantità e importo totale; una di queste colonne è nascosta.                                              | Amministratore: rendi di nuovo visibile la colonna in Colonne della Tabella.                                                                                                                                                                                                                                             |
 
-Un amministratore può disattivare tutti i controlli sulla tabella per un tipo di documento con *Salta la validazione della tabella* (Tipi di Documento → Altre impostazioni); le discrepanze di riga e le colonne obbligatorie vuote non vengono più segnalate.
+Un amministratore può disattivare tutti i controlli sulla tabella per un tipo di documento con _Salta la validazione della tabella_ (Tipi di Documento → Altre impostazioni); le discrepanze di riga e le colonne obbligatorie vuote non vengono più segnalate.
 
 Maggiori informazioni sui controlli: [Controlli automatici nella schermata di validazione](automatic-checks-on-the-validation-screen.md) e [Risoluzione dei Problemi di Estrazione delle Tabelle](../../../overview-and-basics/faq/document-processing/table-extraction-troubleshoot.md).
 
@@ -151,9 +151,9 @@ Per condividere informazioni interne, puoi creare compiti e assegnarli a un dipe
 
 ### **Modalità annotazione:**
 
-<figure><img src="../../../.gitbook/assets/validation_screen_annotation_mode.png" alt="Annotation Mode Button" width="187"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34).png" alt="Annotation Mode Button" width="187"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/annotation_mode_example.png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34).png" alt="Annotation Mode Example"><figcaption></figcaption></figure>
 
 {% embed url="https://youtu.be/ay0gGtwlqRE" %}
 DocBits Annotation Mode Tutorial: Add Notes in Validation & Download With/Without Annotations

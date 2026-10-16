@@ -1,5 +1,7 @@
 # Règles de validation personnalisées
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/fr.mp4" %}
+
 ## Vue d'ensemble
 
 Les règles de validation personnalisées permettent à un administrateur de définir **ses propres contrôles** sur les données que DocBits extrait d'un document, sans écrire de script et sans attendre une évolution du produit.

@@ -2,16 +2,23 @@
 
 **Version snapshot: 16 October 2026**
 
-NOVA adds guided document validation, more ways to improve automation, clearer e-invoice checks and better control over imports and document processing. These notes describe the customer-facing additions in the service versions listed below, compared with the last published [VESTA hotfix, R1.0.15 of 14 October 2026](incremental-updates-14-october-2026.md), including earlier VESTA hotfixes.
+NOVA includes all features previously available as beta in VESTA as regular features, alongside guided document validation, more ways to improve automation, clearer e-invoice checks and better control over imports and document processing. These notes describe the customer-facing additions in the service versions listed below, compared with the last published [VESTA hotfix, R1.0.15 of 14 October 2026](incremental-updates-14-october-2026.md), including earlier VESTA hotfixes.
 
 The snapshot identifies the builds covered by these notes. For availability in your sandbox or production environment and switching between channels, see the [DocBits release lifecycle](../docbits-release-lifecycle-strategy.md). Features that have an organisation or document-type switch still need to be enabled by an administrator.
 
+## Former VESTA beta features: included in NOVA
+
+**All former VESTA beta features are now part of NOVA's regular feature set.** For customers who did not use the VESTA beta, this expands the features available to their team, including **Manage Layouts**, **Custom Validation Rules** and **Transformation Rules**. Organisation settings, document-type switches and access permissions continue to apply.
+
+The same former beta features will become regular VESTA features with the **next VESTA hotfix, planned for [11 November 2026](vesta-hotfix-11-november-2026.md)**. This announcement covers the former VESTA beta features; the sections below also describe further NOVA additions and improvements.
+
 ## What NOVA adds for customers
 
-The comparison below separates new capabilities from extensions to features that VESTA already provides.
+The comparison below covers newly available former beta features, new capabilities and extensions to existing features. The VESTA baseline includes functionality that was only available in beta; its inclusion in NOVA's regular feature set is a customer-facing release change.
 
-| Capability | Already in VESTA | What customers gain with NOVA |
+| Capability | VESTA baseline (including beta) | What customers gain with NOVA |
 | --- | --- | --- |
+| **Use former beta features** | Features available through VESTA beta | **Regular NOVA features:** all former VESTA beta features are included. Their regular VESTA introduction is planned for the 11 November 2026 hotfix. |
 | **Help while validating a document** | Settings Assistant and Header Field Check | **New Validation Assistant:** identify blocking fields, jump to the relevant value, review suggested corrections and keep the chat in a separate window. |
 | **Improve automation from everyday corrections** | Touchless Intelligence dashboard, supplier diagnosis and change proposals | **New review and measurement process:** submit improvement requests, review learned rule proposals, see affected-document evidence, rank opportunities and measure results after activation. |
 | **Understand and resolve e-invoice errors** | E-document checks, rule catalogue and XML viewer | **Expanded E-Invoice Validation:** reports grouped by validation level, policy controls and change history, rejection from the report and XML inspection inside supported PDF invoices. |
@@ -65,13 +72,13 @@ The [Settings Assistant](../../administration-and-setup/settings/global-settings
 
 ## Rules and layouts: direct access and better diagnostics
 
-* **Management controls without a beta link.** Manage Layouts, Custom Validation Rules and Transformation Rules are visible in NOVA's document-type advanced settings. Their enable switches remain under administrator control. The underlying rule engines are not new to NOVA; the wider access and refinements are.
+* **Former beta controls become regular features.** Manage Layouts, Custom Validation Rules and Transformation Rules are visible in NOVA's document-type advanced settings without a beta link. Their enable switches remain under administrator control. These controls are included in the planned 11 November 2026 VESTA hotfix together with all other former VESTA beta features.
 * **More useful rule diagnostics.** Layout-selection rules gain a **Log execution** option. Rule search accepts rule identifiers, and opening an editor loads the current saved rule. The existing rule-execution log remains the place to review what ran.
 * **Choose and open layouts with more context.** Search target layouts, preview their content and open the target directly from a selection rule. Approval selection rules correctly accept the supported approval-layout types. Administrators also get a shortcut from document validation to that document type's layout editor.
 * **Select several condition values.** Conditions such as **is one of** support multiple selected values.
 * **Find duplicate-detection fields faster.** The field selector in the document type's duplicate settings is searchable.
 
-Transformations after master data lookup, the basic rule-execution log, wider rule editors and the standard-rule cloning fixes are already present in the VESTA baseline. NOVA carries those capabilities forward.
+Transformations after master data lookup, the basic rule-execution log, wider rule editors and the standard-rule cloning fixes already have implementations in the VESTA baseline. NOVA carries that functionality forward and makes the former beta management controls available as regular features.
 
 See [Custom Validation Rules](../../administration-and-setup/settings/global-settings/document-types/custom-validation-rules.md), [Transformation Rules](../../administration-and-setup/settings/global-settings/document-types/transformation-rules.md) and [Layout Selection Rules](../../administration-and-setup/settings/global-settings/document-types/layout-manager/layout-selection-rules.md).
 
@@ -136,7 +143,7 @@ For organisations and partners using the DocBits MCP integration, NOVA adds tool
 
 ## Capabilities already present in VESTA
 
-NOVA also carries existing capabilities. The following are **not** being announced as new in this major release:
+NOVA also carries forward the functionality listed below. Where access was previously limited to VESTA beta, regular availability is part of this NOVA release and is planned for the VESTA hotfix on 11 November 2026. The list describes the earlier functionality, alongside the availability changes and enhancements explained above:
 
 * The original Settings Assistant, its documentation search, basic preview/confirm/undo flow and proactive email/FTP import-health warnings.
 * Fast, Full, Nexus and Auto AI tiers and the vision-mode setting.

@@ -69,7 +69,7 @@ Esta verificación cubre las conexiones a estos puntos de conexión públicos, i
 
 ## Cifrado de la información almacenada de las cuentas
 
-DigitalOcean Managed Databases utiliza cifrado de volúmenes completos con LUKS y AES-256-XTS; sus copias gestionadas utilizan AES-256-CTR. Spaces utiliza AES-XTS de 256 bits en discos físicos. [Cifrado en reposo](encryption-at-rest.md) explica los métodos, la gestión de claves, la cobertura de las copias y la respuesta a la pregunta 4.8.
+DigitalOcean Managed Databases utiliza cifrado de volúmenes completos con LUKS y AES-256-XTS; sus copias gestionadas utilizan AES-256-CTR. Spaces utiliza AES-XTS de 256 bits en discos físicos. [Cifrado en reposo](../security/encryption-at-rest.md) explica los métodos, la gestión de claves y la cobertura de las copias.
 
 El uso de hashes para contraseñas y claves API es un control distinto del cifrado de bases de datos, volúmenes de almacenamiento, objetos y copias de seguridad. Los controles descritos no demuestran que cada nombre de usuario, campo de cuenta o secreto de integración se cifre individualmente, ni que todos los datos almacenados utilicen un algoritmo de cifrado determinado.
 

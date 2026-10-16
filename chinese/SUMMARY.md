@@ -10,7 +10,6 @@
   * [Prefect 本地设置要求](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [DocBits (FELLOWPRO AG) — 安全与合规问卷](overview-and-basics/security-and-compliance-faq.md)
 * [凭据的安全存储](overview-and-basics/secure-storage-of-credentials.md)
-* [静态数据加密](overview-and-basics/encryption-at-rest.md)
 * [Cookie 与浏览器存储](overview-and-basics/cookies-and-browser-storage.md)
 * [漏洞管理](overview-and-basics/vulnerability-management.md)
 * [其他安全控制](overview-and-basics/other-security-controls.md)
@@ -51,6 +50,10 @@
     * [成本要素配置不正确。请联系管理员进行配置。](overview-and-basics/faq/infor-m3-m3-integration/costing-elements-are-not-properly-configured.-please-ask-your-admin-to-configure-it..md)
     * [M3 API 导出诊断指南](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [法国 2026 年电子发票：必须使用 PDP/PPF 渠道，PEPPOL 仅作为传输方式](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
+
+## 安全 <a href="#security" id="security"></a>
+
+* [静态数据加密](security/encryption-at-rest.md)
 
 ## 最终用户与合作伙伴
 

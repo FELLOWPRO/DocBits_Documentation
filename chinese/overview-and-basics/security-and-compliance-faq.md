@@ -4,9 +4,9 @@
 
 凭据存储和公共端点 TLS 信息已于 **2026 年 10 月 16 日**审核。请参阅[凭据的安全存储](secure-storage-of-credentials.md)，了解已核实的范围以及仍需确认的部署特定详情。
 
-静态加密详情已于 **2026 年 10 月 16 日**依据 DigitalOcean 安全文档和服务元数据审核。请参阅[静态加密](encryption-at-rest.md)，其中也包含问卷第 4.8 项。
+静态加密详情已于 **2026 年 10 月 16 日**依据 DigitalOcean 安全文档和服务元数据审核。请参阅[静态加密](../security/encryption-at-rest.md)。
 
-关于问卷 **4.15–4.17**，请参阅 [Cookie 与浏览器存储](cookies-and-browser-storage.md), [漏洞管理](vulnerability-management.md), [其他安全控制](other-security-controls.md).
+有关安全的更多信息，请参阅 [Cookie 与浏览器存储](cookies-and-browser-storage.md)、[漏洞管理](vulnerability-management.md)和[其他安全控制](other-security-controls.md)。
 
 ---
 
@@ -25,7 +25,7 @@
 
 ### 1. 生产环境具体托管在哪里？
 
-**答复：** 欧盟生产环境托管在德国法兰克福的 DigitalOcean 云基础设施上。DocBits 使用 DigitalOcean Spaces 进行存储，并使用托管 PostgreSQL、OpenSearch 和 Valkey 服务。DocBits 已通过 ISO 27001 认证。有关加密范围，请参阅[静态加密](encryption-at-rest.md)和[凭据的安全存储](secure-storage-of-credentials.md)。
+**答复：** 欧盟生产环境托管在德国法兰克福的 DigitalOcean 云基础设施上。DocBits 使用 DigitalOcean Spaces 进行存储，并使用托管 PostgreSQL、OpenSearch 和 Valkey 服务。DocBits 已通过 ISO 27001 认证。有关加密范围，请参阅[静态加密](../security/encryption-at-rest.md)和[凭据的安全存储](secure-storage-of-credentials.md)。
 
 **状态：** ✅ 已确认
 
@@ -53,7 +53,7 @@
 
 **状态：** ✅ 已确认
 
-**备注：** 在欧盟两个位置执行完整的备份计划（每日/每周/每季度/每年）。所有数据均保留在欧盟境内。请确认备份加密和恢复测试频率。托管数据库备份的加密方式见[静态加密](encryption-at-rest.md)；这并不能验证更广泛备份计划中的每一份副本。
+**备注：** 在欧盟两个位置执行完整的备份计划（每日/每周/每季度/每年）。所有数据均保留在欧盟境内。请确认备份加密和恢复测试频率。托管数据库备份的加密方式见[静态加密](../security/encryption-at-rest.md)；这并不能验证更广泛备份计划中的每一份副本。
 
 ---
 
@@ -75,7 +75,7 @@
 
 **答复：** 公共端点 `app.docbits.com`、`auth.docbits.com` 和 `api.docbits.com` 支持使用 TLS 1.2 和 TLS 1.3 的 HTTPS。2026 年 10 月 16 日的检查确认不接受 TLS 1.0 和 TLS 1.1。登录密码以及通过 API Key Management 创建的密钥均使用单向哈希保护。哈希与数据库、存储和备份的加密是不同的机制。
 
-**静态存储：** DigitalOcean Managed Databases 使用 AES-256-XTS 全卷 LUKS 加密；其托管备份使用 AES-256-CTR。Spaces 在物理磁盘上使用 256 位 AES-XTS。有关加密方法、密钥管理、备份覆盖范围以及问卷第 4.8 项的答复，请参阅[静态加密](encryption-at-rest.md)。
+**静态存储：** DigitalOcean Managed Databases 使用 AES-256-XTS 全卷 LUKS 加密；其托管备份使用 AES-256-CTR。Spaces 在物理磁盘上使用 256 位 AES-XTS。有关加密方法、密钥管理、备份覆盖范围，请参阅[静态加密](../security/encryption-at-rest.md)。
 
 **状态：** ✅ 部分确认
 

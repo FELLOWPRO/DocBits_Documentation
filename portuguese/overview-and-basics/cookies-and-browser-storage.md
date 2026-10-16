@@ -1,6 +1,6 @@
 # Cookies e armazenamento do navegador
 
-Verificado em **16 de outubro de 2026** para a pergunta **4.15**. O site público, a aplicação DocBits e esta documentação utilizam cookies e serviços diferentes.
+Verificado em **16 de outubro de 2026**. O site público, a aplicação DocBits e esta documentação utilizam cookies e serviços diferentes.
 
 ## Política e finalidades
 

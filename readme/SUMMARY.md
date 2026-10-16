@@ -10,7 +10,6 @@
   * [Prefect Local Setup Requirements](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [Security & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
 * [Secure Storage of Credentials](overview-and-basics/secure-storage-of-credentials.md)
-* [Encryption at Rest](overview-and-basics/encryption-at-rest.md)
 * [Cookies and Browser Storage](overview-and-basics/cookies-and-browser-storage.md)
 * [Vulnerability Management](overview-and-basics/vulnerability-management.md)
 * [Other Security Controls](overview-and-basics/other-security-controls.md)
@@ -51,6 +50,10 @@
     * [Costing elements are not properly configured. Please ask your admin to configure it.](overview-and-basics/faq/infor-m3-m3-integration/costing-elements-are-not-properly-configured.-please-ask-your-admin-to-configure-it..md)
     * [M3 API Export Diagnostic Guide](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Mandatory PDP/PPF Channels – PEPPOL as Transport Only for France’s 2026 E-Invoicing](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
+
+## Security <a href="#security" id="security"></a>
+
+* [Encryption at Rest](security/encryption-at-rest.md)
 
 ## End User and Partner Section
 

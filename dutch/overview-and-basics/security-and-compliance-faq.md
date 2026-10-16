@@ -4,9 +4,9 @@
 
 De informatie over de opslag van inloggegevens en TLS bij openbare eindpunten is gecontroleerd op **16 oktober 2026**. De volgende pagina beschrijft de bevestigde reikwijdte en de details die nog per omgeving moeten worden bevestigd. Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md).
 
-De informatie over versleuteling van opgeslagen gegevens is op **16 oktober 2026** gecontroleerd aan de hand van beveiligingsdocumentatie van DigitalOcean en metadata van de diensten. Zie [Versleuteling van opgeslagen gegevens](encryption-at-rest.md), inclusief vraag 4.8.
+De informatie over versleuteling van opgeslagen gegevens is op **16 oktober 2026** gecontroleerd aan de hand van beveiligingsdocumentatie van DigitalOcean en metadata van de diensten. Zie [Versleuteling van opgeslagen gegevens](../security/encryption-at-rest.md).
 
-Voor vragen **4.15–4.17**, zie [Cookies en browseropslag](cookies-and-browser-storage.md), [Kwetsbaarhedenbeheer](vulnerability-management.md), [Overige beveiligingsmaatregelen](other-security-controls.md).
+Meer informatie over beveiliging vindt u in [Cookies en browseropslag](cookies-and-browser-storage.md), [Kwetsbaarhedenbeheer](vulnerability-management.md) en [Overige beveiligingsmaatregelen](other-security-controls.md).
 
 ---
 
@@ -25,7 +25,7 @@ Voor vragen **4.15–4.17**, zie [Cookies en browseropslag](cookies-and-browser-
 
 ### 1. Waar precies wordt de productieomgeving gehost?
 
-**Antwoord:** De EU-productieomgeving wordt gehost op DigitalOcean-cloudinfrastructuur in Frankfurt, Duitsland. DocBits gebruikt DigitalOcean Spaces voor opslag en beheerde PostgreSQL-, OpenSearch- en Valkey-diensten. DocBits is ISO 27001 gecertificeerd. Zie [Versleuteling van opgeslagen gegevens](encryption-at-rest.md) en [Veilige opslag van inloggegevens](secure-storage-of-credentials.md) voor de reikwijdte van de versleuteling.
+**Antwoord:** De EU-productieomgeving wordt gehost op DigitalOcean-cloudinfrastructuur in Frankfurt, Duitsland. DocBits gebruikt DigitalOcean Spaces voor opslag en beheerde PostgreSQL-, OpenSearch- en Valkey-diensten. DocBits is ISO 27001 gecertificeerd. Zie [Versleuteling van opgeslagen gegevens](../security/encryption-at-rest.md) en [Veilige opslag van inloggegevens](secure-storage-of-credentials.md) voor de reikwijdte van de versleuteling.
 
 **Status:** ✅ Bevestigd
 
@@ -53,7 +53,7 @@ Back-upschema: Dagelijkse, wekelijkse, driemaandelijkse en jaarlijkse back-ups.
 
 **Status:** ✅ Bevestigd
 
-**Opmerkingen:** Uitgebreid back-upschema (dagelijks/wekelijks/driemaandelijks/jaarlijks) op twee EU-locaties. Alle gegevens blijven in de EU. Bevestig back-upversleuteling en hoe vaak herstel wordt getest. De versleuteling van door de aanbieder beheerde databaseback-ups staat beschreven in [Versleuteling van opgeslagen gegevens](encryption-at-rest.md); dit verifieert niet elke kopie in het bredere back-upschema.
+**Opmerkingen:** Uitgebreid back-upschema (dagelijks/wekelijks/driemaandelijks/jaarlijks) op twee EU-locaties. Alle gegevens blijven in de EU. Bevestig back-upversleuteling en hoe vaak herstel wordt getest. De versleuteling van door de aanbieder beheerde databaseback-ups staat beschreven in [Versleuteling van opgeslagen gegevens](../security/encryption-at-rest.md); dit verifieert niet elke kopie in het bredere back-upschema.
 
 ---
 
@@ -75,7 +75,7 @@ Gegevens van EU-klanten worden uitsluitend in Frankfurt gehost. Momenteel is gee
 
 **Antwoord:** De openbare eindpunten `app.docbits.com`, `auth.docbits.com` en `api.docbits.com` ondersteunen HTTPS met TLS 1.2 en TLS 1.3. Bij de controles op 16 oktober 2026 werden TLS 1.0 en TLS 1.1 geweigerd. Inlogwachtwoorden en sleutels uit API-sleutelbeheer worden beschermd met eenrichtingshashes. Hashing is een andere maatregel dan versleuteling van databases, opslag en back-ups.
 
-**Tijdens opslag:** DigitalOcean Managed Databases gebruikt volledige volumeversleuteling met LUKS en AES-256-XTS; de beheerde back-ups gebruiken AES-256-CTR. Spaces gebruikt 256-bits AES-XTS op fysieke schijven. [Versleuteling van opgeslagen gegevens](encryption-at-rest.md) beschrijft methoden, sleutelbeheer, back-updekking en het antwoord op vraag 4.8.
+**Tijdens opslag:** DigitalOcean Managed Databases gebruikt volledige volumeversleuteling met LUKS en AES-256-XTS; de beheerde back-ups gebruiken AES-256-CTR. Spaces gebruikt 256-bits AES-XTS op fysieke schijven. [Versleuteling van opgeslagen gegevens](../security/encryption-at-rest.md) beschrijft methoden, sleutelbeheer en back-updekking.
 
 **Status:** ✅ Gedeeltelijk
 

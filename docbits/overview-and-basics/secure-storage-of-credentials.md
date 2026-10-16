@@ -69,7 +69,7 @@ This verification covers connections to these public endpoints, including client
 
 ## Encryption of stored account information
 
-DigitalOcean Managed Databases use full-volume LUKS encryption with AES-256-XTS; their managed backups use AES-256-CTR. Spaces uses 256-bit AES-XTS on physical disks. See [Encryption at Rest](encryption-at-rest.md) for methods, key management, backup coverage, and the answer to questionnaire item 4.8.
+DigitalOcean Managed Databases use full-volume LUKS encryption with AES-256-XTS; their managed backups use AES-256-CTR. Spaces uses 256-bit AES-XTS on physical disks. See [Encryption at Rest](../security/encryption-at-rest.md) for methods, key management, and backup coverage.
 
 Password hashing and API key hashing are separate controls from encryption of databases, storage volumes, objects, and backups. The controls described above do not establish that every username, account field, or integration secret is individually encrypted, or that all stored data uses a particular encryption algorithm.
 

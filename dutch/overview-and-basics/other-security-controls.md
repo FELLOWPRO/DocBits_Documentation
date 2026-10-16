@@ -1,6 +1,6 @@
 # Overige beveiligingsmaatregelen
 
-Gecontroleerd op **16 oktober 2026** voor vraag **4.17**. Gepubliceerd auditbewijs wordt onderscheiden van de actuele infrastructuurinventaris.
+Gecontroleerd op **16 oktober 2026**. Gepubliceerd auditbewijs wordt onderscheiden van de actuele infrastructuurinventaris.
 
 | Maatregel | Gedocumenteerd bereik |
 | --- | --- |
@@ -17,6 +17,6 @@ Gecontroleerd op **16 oktober 2026** voor vraag **4.17**. Gepubliceerd auditbewi
 
 [Certificeringen](architecture/certifications.md) bevat rapporten en perioden. Historische audits onderbouwen de maatregelen voor hun onderzochte bereik; de inventaris bevestigt aanwezige resources op de controledatum en is geen volledige configuratieaudit.
 
-Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md), [Versleuteling van opgeslagen gegevens](encryption-at-rest.md) en [Kwetsbaarhedenbeheer](vulnerability-management.md).
+Zie [Veilige opslag van inloggegevens](secure-storage-of-credentials.md), [Versleuteling van opgeslagen gegevens](../security/encryption-at-rest.md) en [Kwetsbaarhedenbeheer](vulnerability-management.md).
 
 Voor deploymentbeperkingen, mobiele vereisten of actueel beleid: **compliance@fellowpro.com**.

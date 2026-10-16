@@ -1,6 +1,6 @@
 # Otros controles de seguridad
 
-Revisado el **16 de octubre de 2026** para la pregunta **4.17**. Se distinguen los informes de auditoría publicados del inventario actual de infraestructura.
+Revisado el **16 de octubre de 2026**. Se distinguen los informes de auditoría publicados del inventario actual de infraestructura.
 
 | Control | Alcance documentado |
 | --- | --- |
@@ -17,6 +17,6 @@ Revisado el **16 de octubre de 2026** para la pregunta **4.17**. Se distinguen l
 
 [Certificaciones](architecture/certifications.md) contiene los informes y sus periodos. Las auditorías históricas respaldan los controles para el alcance evaluado; el inventario confirma recursos presentes en la fecha de revisión y no es una auditoría completa de configuración.
 
-Consulte [Almacenamiento seguro de credenciales](secure-storage-of-credentials.md), [Cifrado en reposo](encryption-at-rest.md) y [Gestión de vulnerabilidades](vulnerability-management.md).
+Consulte [Almacenamiento seguro de credenciales](secure-storage-of-credentials.md), [Cifrado en reposo](../security/encryption-at-rest.md) y [Gestión de vulnerabilidades](vulnerability-management.md).
 
 Para restricciones del despliegue, requisitos de móviles o políticas actualizadas: **compliance@fellowpro.com**.

@@ -10,7 +10,6 @@
   * [Vereisten voor lokale Prefect-installatie](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [Beveiliging & Compliance FAQ](overview-and-basics/security-and-compliance-faq.md)
 * [Veilige opslag van inloggegevens](overview-and-basics/secure-storage-of-credentials.md)
-* [Versleuteling van opgeslagen gegevens](overview-and-basics/encryption-at-rest.md)
 * [Cookies en browseropslag](overview-and-basics/cookies-and-browser-storage.md)
 * [Kwetsbaarhedenbeheer](overview-and-basics/vulnerability-management.md)
 * [Overige beveiligingsmaatregelen](overview-and-basics/other-security-controls.md)
@@ -46,6 +45,10 @@
     * [Kostenelementen zijn niet correct geconfigureerd. Vraag uw beheerder om het te configureren.](overview-and-basics/faq/infor-m3-m3-integration/costing-elements-are-not-properly-configured.-please-ask-your-admin-to-configure-it..md)
     * [M3 API Export Diagnostic Guide](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Mandatory PDP/PPF Channels – PEPPOL as Transport Only for France’s 2026 E-Invoicing](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
+
+## Beveiliging <a href="#security" id="security"></a>
+
+* [Versleuteling van opgeslagen gegevens](security/encryption-at-rest.md)
 
 ## Eindgebruiker en partners <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 

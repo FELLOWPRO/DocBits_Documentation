@@ -1,6 +1,6 @@
 # Cookies and Browser Storage
 
-Reviewed on **16 October 2026** for questionnaire item **4.15**. The public website, the DocBits application, and this documentation have different cookies and services.
+Reviewed on **16 October 2026**. The public website, the DocBits application, and this documentation have different cookies and services.
 
 ## Policy and purposes
 

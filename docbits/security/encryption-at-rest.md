@@ -1,10 +1,10 @@
 ---
-description: Encryption at rest for DocBits on DigitalOcean, including databases, Spaces, backup coverage, and questionnaire item 4.8.
+description: Encryption at rest for DocBits on DigitalOcean, including databases, Spaces, and backup coverage.
 ---
 
 # Encryption at Rest
 
-DocBits uses DigitalOcean Managed Databases and DigitalOcean Spaces. The review on **16 October 2026** confirmed managed PostgreSQL, OpenSearch, and Valkey services for EU production in Frankfurt. The [Security & Compliance FAQ](security-and-compliance-faq.md) documents the use of Spaces for storage.
+DocBits uses DigitalOcean Managed Databases and DigitalOcean Spaces. The review on **16 October 2026** confirmed managed PostgreSQL, OpenSearch, and Valkey services for EU production in Frankfurt. The [Security & Compliance FAQ](../overview-and-basics/security-and-compliance-faq.md) documents the use of Spaces for storage.
 
 The following describes DigitalOcean's published encryption controls for these services. On-premises installations and copies stored in other systems require their own assessment.
 
@@ -25,20 +25,18 @@ The database and backup details come from DigitalOcean's [Managed Databases secu
 
 DigitalOcean manages the infrastructure encryption described above. For Managed Databases, it documents a randomly generated key for each instance and volume, discarded when the instance is destroyed. Managed database backups use a random key per file, protected by a service-specific RSA key pair.
 
-Storage encryption protects data on storage media. Authorized applications and database users can still read data through the service. It does not establish that vendor personnel cannot access account information, or that every field has application-level encryption. Login password and API key hashing are separate controls; see [Secure Storage of Credentials](secure-storage-of-credentials.md).
+Storage encryption protects data on storage media. Authorized applications and database users can still read data through the service. It does not establish that vendor personnel cannot access account information, or that every field has application-level encryption. Login password and API key hashing are separate controls; see [Secure Storage of Credentials](../overview-and-basics/secure-storage-of-credentials.md).
 
 Spaces also supports [SSE-C with customer-provided keys](https://docs.digitalocean.com/products/spaces/reference/s3-compatibility/). This optional capability does not establish that DocBits uses SSE-C or customer-managed encryption keys.
 
-## Backup coverage
+## Backup encryption
 
-Managed database backups, volume snapshots, and Droplet image backups are different products. DigitalOcean's [Droplet backup limitations](https://docs.digitalocean.com/products/backups/details/limits/) state that those image backups are not encrypted at rest. This review did not establish that DocBits uses that backup product.
+Backups created by DigitalOcean Managed Databases are encrypted with AES-256-CTR and protected against undetected changes with HMAC-SHA256. The per-file encryption keys are protected by RSA-3072. Volume snapshots inherit the encryption of the underlying DigitalOcean volume. These details describe the backup capabilities of the named managed services.
 
-The controls above therefore support a scoped statement about the named services. Additional database dumps, exported files, long-term archives, and disaster-recovery copies need confirmation of their storage destination, encryption, and key management before extending the assurance to all copies. A backup schedule or a cloud/serverless architecture alone does not establish this coverage.
+## Types of Encryption at Rest
 
-## 4.8 — Types of Encryption at Rest
-
-The following wording can be used for the documented scope:
+The main encryption methods used by the named services are summarized below:
 
 > DocBits uses DigitalOcean Managed Databases and Spaces. Managed database data is encrypted at rest at the full-volume level using LUKS with AES-256-XTS (512-bit combined XTS key material). Managed database backups use AES-256-CTR with HMAC-SHA256 integrity protection and RSA-3072 protection of the per-file encryption keys. Spaces uses 256-bit AES-XTS full-disk encryption on its physical storage.
 >
-> These are storage-level controls covering the data on the protected volumes and disks; they do not imply separate encryption of every database field. DigitalOcean manages the infrastructure encryption keys. This statement covers the named managed services. Encryption and key management for additional exports, archives, and backup copies require separate confirmation for the relevant deployment.
+> These are storage-level controls covering the data on the protected volumes and disks; they do not imply separate encryption of every database field. DigitalOcean manages the infrastructure encryption keys. This statement covers the named managed services.

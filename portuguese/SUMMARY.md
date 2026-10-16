@@ -10,7 +10,6 @@
   * [Requisitos para a Configuração Local do Prefect](overview-and-basics/architecture/prefect-local-setup-requirements.md)
 * [FAQ Segurança e Conformidade](overview-and-basics/security-and-compliance-faq.md)
 * [Armazenamento seguro de credenciais](overview-and-basics/secure-storage-of-credentials.md)
-* [Cifragem em repouso](overview-and-basics/encryption-at-rest.md)
 * [Cookies e armazenamento do navegador](overview-and-basics/cookies-and-browser-storage.md)
 * [Gestão de vulnerabilidades](overview-and-basics/vulnerability-management.md)
 * [Outros controlos de segurança](overview-and-basics/other-security-controls.md)
@@ -46,6 +45,10 @@
     * [Gli elementi di costo non sono configurati correttamente. Si prega di chiedere all'amministratore di](overview-and-basics/faq/infor-m3-m3-integration/costing-elements-are-not-properly-configured.-please-ask-your-admin-to-configure-it..md)
     * [Guida diagnostica all'esportazione dell'API M3](overview-and-basics/faq/infor-m3-m3-integration/m3-api-export-diagnostic-guide.md)
   * [Canais PDP/PPF Obrigatórios – PEPPOL Apenas como Transporte na Fatura Eletrônica de 2026 da França](overview-and-basics/faq/mandatory-pdp-ppf-channels-peppol-as-transport-only-for-frances-2026-e-invoicing.md)
+
+## Segurança <a href="#security" id="security"></a>
+
+* [Cifragem em repouso](security/encryption-at-rest.md)
 
 ## Seção de usuários finais e parceiros <a href="#end-user-and-partner-section" id="end-user-and-partner-section"></a>
 

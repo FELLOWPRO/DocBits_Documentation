@@ -69,7 +69,7 @@ Die Prüfung umfasst Verbindungen zu diesen öffentlichen Endpunkten, auch wenn 
 
 ## Verschlüsselung gespeicherter Kontoinformationen
 
-DigitalOcean Managed Databases verwenden LUKS-Verschlüsselung der gesamten Volumes mit AES-256-XTS; ihre verwalteten Backups verwenden AES-256-CTR. Spaces nutzt 256-Bit-AES-XTS auf physischen Datenträgern. [Verschlüsselung gespeicherter Daten](encryption-at-rest.md) beschreibt Verfahren, Schlüsselverwaltung, Backup-Umfang und die Antwort auf Frage 4.8.
+DigitalOcean Managed Databases verwenden LUKS-Verschlüsselung der gesamten Volumes mit AES-256-XTS; ihre verwalteten Backups verwenden AES-256-CTR. Spaces nutzt 256-Bit-AES-XTS auf physischen Datenträgern. [Verschlüsselung gespeicherter Daten](../security/encryption-at-rest.md) beschreibt Verfahren, Schlüsselverwaltung und Backup-Umfang.
 
 Das Hashing von Passwörtern und API-Schlüsseln ist eine andere Schutzmaßnahme als die Verschlüsselung von Datenbanken, Speichervolumes, Objekten und Backups. Die oben beschriebenen Maßnahmen belegen weder, dass jeder Benutzername, jedes Kontofeld oder jedes Integrationsgeheimnis einzeln verschlüsselt wird, noch, dass alle gespeicherten Daten einen bestimmten Verschlüsselungsalgorithmus verwenden.
 

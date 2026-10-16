@@ -1,6 +1,6 @@
 # Cookies und Browserspeicher
 
-Geprüft am **16. Oktober 2026** für Frage **4.15**. Die öffentliche Website, die DocBits-Anwendung und diese Dokumentation verwenden unterschiedliche Cookies und Dienste.
+Geprüft am **16. Oktober 2026**. Die öffentliche Website, die DocBits-Anwendung und diese Dokumentation verwenden unterschiedliche Cookies und Dienste.
 
 ## Richtlinie und Verwendungszwecke
 

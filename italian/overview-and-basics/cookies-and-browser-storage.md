@@ -1,6 +1,6 @@
 # Cookie e archiviazione del browser
 
-Verificato il **16 ottobre 2026** per la domanda **4.15**. Il sito pubblico, l'applicazione DocBits e questa documentazione utilizzano cookie e servizi differenti.
+Verificato il **16 ottobre 2026**. Il sito pubblico, l'applicazione DocBits e questa documentazione utilizzano cookie e servizi differenti.
 
 ## Informativa e finalità
 

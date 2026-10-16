@@ -1,5 +1,7 @@
 # Benutzerdefinierte Validierungsregeln
 
+{% embed url="https://docbits-videos.fra1.cdn.digitaloceanspaces.com/settings-assistant/custom-validation-rules/v1/de.mp4" %}
+
 ## Überblick
 
 Mit benutzerdefinierten Validierungsregeln können Administratoren **eigene Prüfungen** für die Daten definieren, die DocBits aus einem Dokument extrahiert, ohne ein Skript zu schreiben und ohne auf eine Produktänderung zu warten.
